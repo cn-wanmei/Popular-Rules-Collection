@@ -1,0 +1,21 @@
+version: 1
+
+clients:
+  mihomo:
+    dir: generated/mihomo
+    extensions: [yaml, list]
+  sing-box:
+    dir: generated/sing-box
+    extensions: [json]
+  surge:
+    dir: generated/surge
+    extensions: [list]
+  shadowrocket:
+    dir: generated/shadowrocket
+    extensions: [list]
+  quantumult-x:
+    dir: generated/quantumult-x
+    extensions: [list]
+  egern:
+    dir: generated/egern
+    extensions: [yaml]

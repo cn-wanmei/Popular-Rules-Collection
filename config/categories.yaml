@@ -1,0 +1,24 @@
+version: 1
+
+categories:
+  - id: network
+    name: Network / Infrastructure
+    children: [China, Private, LAN, DNS]
+  - id: service
+    name: Internet Services
+    children: [Apple, Google, Microsoft, GitHub, Alibaba]
+  - id: ai
+    name: AI
+    children: [OpenAI, Claude, Gemini, Grok, Copilot]
+  - id: streaming
+    name: Streaming / Media
+    children: [Netflix, YouTube, Disney, Bilibili]
+  - id: social
+    name: Social
+    children: [Telegram, Discord, Twitter, TikTok]
+  - id: game
+    name: Game
+    children: [Steam]
+  - id: adblock
+    name: AdBlock / Privacy
+    children: [AdBlock, anti-AD, Hagezi]
