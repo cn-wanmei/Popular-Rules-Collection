@@ -1,0 +1,64 @@
+[
+  {
+    "level": "LOW",
+    "kind": "EXACT_CROSS_SERVICE",
+    "value": "7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe",
+    "type": "domain",
+    "services": [
+      "apple",
+      "microsoft",
+      "openai",
+      "telegram"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "EXACT_CROSS_SERVICE",
+    "value": "deepmind.com",
+    "type": "domain_suffix",
+    "services": [
+      "google",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "EXACT_CROSS_SERVICE",
+    "value": "172.110.32.0/21",
+    "type": "ip_cidr",
+    "services": [
+      "google",
+      "youtube"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "EXACT_CROSS_SERVICE",
+    "value": "216.73.80.0/20",
+    "type": "ip_cidr",
+    "services": [
+      "google",
+      "youtube"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "EXACT_CROSS_SERVICE",
+    "value": "2620:120:e000::/40",
+    "type": "ip_cidr6",
+    "services": [
+      "google",
+      "youtube"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "EXACT_CROSS_SERVICE",
+    "value": "grok.com",
+    "type": "domain_suffix",
+    "services": [
+      "openai",
+      "twitter"
+    ]
+  }
+]

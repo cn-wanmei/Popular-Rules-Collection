@@ -1,10 +1,42 @@
 sources:
   sukkaw:
-    last_attempt: '2026-08-25T10:07:53.813091+00:00'
-    last_success: '2026-08-25T10:07:53.813117+00:00'
+    last_attempt: '2026-08-25T11:01:30.928314+00:00'
+    last_success: '2026-08-25T11:01:30.928333+00:00'
     failure_count: 0
     status: healthy
     files_ok: 8
     files_failed: 0
     empty_blocked: 0
-updated_at: '2026-08-25T10:07:54.930395+00:00'
+  blackmatrix7:
+    last_attempt: '2026-08-25T11:01:28.151336+00:00'
+    last_success: '2026-08-25T11:01:28.151353+00:00'
+    failure_count: 0
+    status: healthy
+    files_ok: 17
+    files_failed: 0
+    empty_blocked: 0
+  loyalsoldier:
+    last_attempt: '2026-08-25T11:01:28.874480+00:00'
+    last_success: '2026-08-25T11:01:28.874493+00:00'
+    failure_count: 0
+    status: healthy
+    files_ok: 14
+    files_failed: 0
+    empty_blocked: 0
+  anti-ad:
+    last_attempt: '2026-08-25T11:01:29.664716+00:00'
+    last_success: '2026-08-25T11:01:29.664728+00:00'
+    failure_count: 0
+    status: healthy
+    files_ok: 3
+    files_failed: 0
+    empty_blocked: 0
+  hagezi:
+    last_attempt: '2026-08-25T11:01:30.192242+00:00'
+    last_success: '2026-08-25T11:01:30.192260+00:00'
+    failure_count: 0
+    status: healthy
+    files_ok: 3
+    files_failed: 0
+    empty_blocked: 0
+updated_at: '2026-08-25T11:01:30.929111+00:00'

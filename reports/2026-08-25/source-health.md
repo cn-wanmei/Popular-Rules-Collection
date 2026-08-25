@@ -1,0 +1,66 @@
+# Data Health — 2026-08-25
+
+| Metric | Value |
+|--------|------:|
+| Services | 19 |
+| Domain lines | 559660 |
+| IP/CIDR lines | 5971 |
+| Invalid CIDR | 0 |
+| Suspicious domains | 0 |
+| Generated files | 151 |
+| Empty generated | 0 |
+| Errors | 0 |
+| Warnings | 0 |
+
+## Errors
+- none
+
+## Warnings
+- none
+
+## Source Health
+
+```yaml
+sources:
+  sukkaw:
+    last_attempt: '2026-08-25T11:01:30.928314+00:00'
+    last_success: '2026-08-25T11:01:30.928333+00:00'
+    failure_count: 0
+    status: healthy
+    files_ok: 8
+    files_failed: 0
+    empty_blocked: 0
+  blackmatrix7:
+    last_attempt: '2026-08-25T11:01:28.151336+00:00'
+    last_success: '2026-08-25T11:01:28.151353+00:00'
+    failure_count: 0
+    status: healthy
+    files_ok: 17
+    files_failed: 0
+    empty_blocked: 0
+  loyalsoldier:
+    last_attempt: '2026-08-25T11:01:28.874480+00:00'
+    last_success: '2026-08-25T11:01:28.874493+00:00'
+    failure_count: 0
+    status: healthy
+    files_ok: 14
+    files_failed: 0
+    empty_blocked: 0
+  anti-ad:
+    last_attempt: '2026-08-25T11:01:29.664716+00:00'
+    last_success: '2026-08-25T11:01:29.664728+00:00'
+    failure_count: 0
+    status: healthy
+    files_ok: 3
+    files_failed: 0
+    empty_blocked: 0
+  hagezi:
+    last_attempt: '2026-08-25T11:01:30.192242+00:00'
+    last_success: '2026-08-25T11:01:30.192260+00:00'
+    failure_count: 0
+    status: healthy
+    files_ok: 3
+    files_failed: 0
+    empty_blocked: 0
+updated_at: '2026-08-25T11:01:30.929111+00:00'
+```
