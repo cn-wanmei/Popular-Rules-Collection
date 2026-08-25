@@ -1,4 +1,8 @@
-version: 1
+# Source Registry — single source of truth for upstream collection
+# collect.py reads: enabled, fetch, files
+# normalize.py maps local name → service via FILE_TO_SERVICE (or file.service)
+
+version: 2
 last_updated: "2026-08-25"
 
 sources:
@@ -8,15 +12,64 @@ sources:
     enabled: true
     priority: 95
     trust: high
+    score_hint: 95
     formats: [clash, surge, quantumultx, shadowrocket, loon]
+    notes: Largest curated multi-client rule set. High coverage.
+    fetch:
+      type: github_raw
+      owner: blackmatrix7
+      repo: ios_rule_script
+      branch: master
+    files:
+      - { path: rule/Clash/Apple/Apple.yaml, name: Clash_Apple.yaml, service: apple }
+      - { path: rule/Clash/Google/Google.yaml, name: Clash_Google.yaml, service: google }
+      - { path: rule/Clash/Telegram/Telegram.yaml, name: Clash_Telegram.yaml, service: telegram }
+      - { path: rule/Clash/Netflix/Netflix.yaml, name: Clash_Netflix.yaml, service: netflix }
+      - { path: rule/Clash/GitHub/GitHub.yaml, name: Clash_GitHub.yaml, service: github }
+      - { path: rule/Clash/Microsoft/Microsoft.yaml, name: Clash_Microsoft.yaml, service: microsoft }
+      - { path: rule/Clash/Discord/Discord.yaml, name: Clash_Discord.yaml, service: discord }
+      - { path: rule/Clash/OpenAI/OpenAI.yaml, name: Clash_OpenAI.yaml, service: openai }
+      - { path: rule/Clash/YouTube/YouTube.yaml, name: Clash_YouTube.yaml, service: youtube }
+      - { path: rule/Clash/BiliBili/BiliBili.yaml, name: Clash_BiliBili.yaml, service: bilibili }
+      - { path: rule/Clash/Steam/Steam.yaml, name: Clash_Steam.yaml, service: steam }
+      - { path: rule/Clash/TikTok/TikTok.yaml, name: Clash_TikTok.yaml, service: tiktok }
+      - { path: rule/Clash/Twitter/Twitter.yaml, name: Clash_Twitter.yaml, service: twitter }
+      - { path: rule/Clash/Disney/Disney.yaml, name: Clash_Disney.yaml, service: disney }
+      - { path: rule/Clash/China/China.yaml, name: Clash_China.yaml, service: china }
+      - { path: rule/Surge/Apple/Apple.list, name: Surge_Apple.list, service: apple }
+      - { path: rule/Surge/Google/Google.list, name: Surge_Google.list, service: google }
 
   - id: loyalsoldier
-    name: Loyalsoldier clash-rules
+    name: Loyalsoldier clash-rules / v2ray-rules-dat
     url: https://github.com/Loyalsoldier/clash-rules
     enabled: true
     priority: 98
     trust: high
+    score_hint: 98
     formats: [clash, geosite, geoip]
+    related:
+      - https://github.com/Loyalsoldier/v2ray-rules-dat
+    notes: Excellent China / GFW / geosite quality. Preferred for geo data.
+    fetch:
+      type: github_raw
+      owner: Loyalsoldier
+      repo: clash-rules
+      branch: release
+    files:
+      - { path: reject.txt, name: reject.txt, service: adblock }
+      - { path: icloud.txt, name: icloud.txt, service: apple }
+      - { path: apple.txt, name: apple.txt, service: apple }
+      - { path: google.txt, name: google.txt, service: google }
+      - { path: proxy.txt, name: proxy.txt, service: proxy }
+      - { path: direct.txt, name: direct.txt, service: china }
+      - { path: private.txt, name: private.txt, service: private }
+      - { path: gfw.txt, name: gfw.txt, service: gfw }
+      - { path: greatfire.txt, name: greatfire.txt, service: gfw }
+      - { path: tld-not-cn.txt, name: tld-not-cn.txt, service: proxy }
+      - { path: telegramcidr.txt, name: telegramcidr.txt, service: telegram }
+      - { path: cncidr.txt, name: cncidr.txt, service: china }
+      - { path: lancidr.txt, name: lancidr.txt, service: private }
+      - { path: applications.txt, name: applications.txt, service: applications }
 
   - id: anti-ad
     name: anti-AD
@@ -24,7 +77,18 @@ sources:
     enabled: true
     priority: 90
     trust: high
+    score_hint: 92
     formats: [hosts, dnsmasq, surge, clash]
+    notes: Strong ad/privacy domain list. Prefer for AdBlock domain layer.
+    fetch:
+      type: github_raw
+      owner: privacy-protection-tools
+      repo: anti-AD
+      branch: master
+    files:
+      - { path: anti-ad-domains.txt, name: anti-ad-domains.txt, service: adblock }
+      - { path: anti-ad-surge.txt, name: anti-ad-surge.txt, service: adblock }
+      - { path: anti-ad-clash.yaml, name: anti-ad-clash.yaml, service: adblock }
 
   - id: hagezi
     name: hagezi DNS Blocklists
@@ -32,12 +96,18 @@ sources:
     enabled: true
     priority: 93
     trust: high
+    score_hint: 97
+    formats: [hosts, adblock, domains]
+    notes: High-quality multi-tier ad/tracker lists. Excellent for AdBlock.
     fetch:
       type: github_raw
       owner: hagezi
       repo: dns-blocklists
       branch: main
-    formats: [hosts, adblock, domains]
+    files:
+      - { path: adblock/ultimate.txt, name: adblock-ultimate.txt, service: adblock }
+      - { path: adblock/pro.txt, name: adblock-pro.txt, service: adblock }
+      - { path: adblock/light.txt, name: adblock-light.txt, service: adblock }
 
   - id: sukkaw
     name: SukkaW Surge Ruleset
@@ -45,10 +115,20 @@ sources:
     enabled: true
     priority: 88
     trust: high
+    score_hint: 90
+    formats: [surge, clash, sing-box]
+    notes: Rules served from ruleset.skk.moe CDN (not GitHub raw).
     fetch:
       type: cdn
       bases:
         - https://ruleset.skk.moe
         - https://ruleset-mirror.skk.moe
-    notes: Rules served from ruleset.skk.moe CDN (not GitHub raw).
-    formats: [surge, clash, sing-box]
+    files:
+      - { path: List/non_ip/apple_services.conf, name: non_ip_apple_services.conf, service: apple }
+      - { path: List/non_ip/microsoft.conf, name: non_ip_microsoft.conf, service: microsoft }
+      - { path: List/non_ip/ai.conf, name: non_ip_ai.conf, service: openai }
+      - { path: List/non_ip/global.conf, name: non_ip_global.conf, service: proxy }
+      - { path: List/non_ip/reject.conf, name: non_ip_reject.conf, service: adblock }
+      - { path: List/ip/telegram.conf, name: ip_telegram.conf, service: telegram }
+      - { path: List/ip/china_ip.conf, name: ip_china.conf, service: china }
+      - { path: List/domainset/reject.conf, name: domainset_reject.conf, service: adblock }
