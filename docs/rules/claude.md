@@ -1,0 +1,60 @@
+# Claude
+
+> 用于匹配 **Claude** 相关域名/IP 的分流规则（上游标准化合并）。
+
+| 项目 | 内容 |
+|------|------|
+| Rule ID | `claude` |
+| 分类 | ai |
+| 类型 | domain |
+| Domains | 3 |
+| CIDR | 0 |
+| 最后更新 | 2026-08-25 |
+| Sources | blackmatrix7 |
+| Confidence | HIGH |
+
+## 用途
+
+用于匹配 **Claude** 相关域名/IP 的分流规则（上游标准化合并）。
+
+支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+
+## 一键订阅
+
+| 客户端 | 路径 | 链接 |
+|--------|------|------|
+| Mihomo | `generated/mihomo/claude.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/claude.yaml) |
+| sing-box | `generated/sing-box/claude.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/claude.json) |
+| Surge | `generated/surge/claude.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/claude.list) |
+| Shadowrocket | `generated/shadowrocket/claude.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/claude.list) |
+| Quantumult X | `generated/quantumult-x/claude.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/claude.list) |
+| Egern | `generated/egern/claude.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/claude.yaml) |
+| Loon | `generated/loon/claude.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/claude.list) |
+
+## CDN 镜像（Mihomo）
+
+| 镜像 | 链接 |
+|------|------|
+| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/claude.yaml |
+| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/claude.yaml |
+| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/claude.yaml |
+| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/claude.yaml |
+
+## 官方网站
+
+[官方站点](https://claude.ai)
+
+## 规则来源（Provenance）
+
+- `blackmatrix7`
+
+由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
+
+## 数据位置
+
+- Schema: `database/services/claude.yaml`
+- Domains: `database/domains/claude.txt`
+- IPs: `database/ips/claude.txt`（若有）
+
+---
+_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

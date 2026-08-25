@@ -819,6 +819,42 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "vercel-analytics.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "vercel"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "vercel-insights.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "vercel"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "2mdn.net"
     },
     "policy": "proxy",
@@ -1045,6 +1081,23 @@
     "services": [
       "adblock-pro",
       "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bntrace.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "binance"
     ]
   },
   {
@@ -8468,54 +8521,6 @@
     "match": {
       "type": "domain_suffix",
       "value": "chromecast.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "loyalsoldier"
-    ],
-    "services": [
-      "google"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "chromeexperiments.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "loyalsoldier"
-    ],
-    "services": [
-      "google"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "chromeos.dev"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "loyalsoldier"
-    ],
-    "services": [
-      "google"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "chromercise.com"
     },
     "policy": "proxy",
     "sources": [

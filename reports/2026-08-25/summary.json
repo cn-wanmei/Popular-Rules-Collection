@@ -1,14 +1,14 @@
 {
   "date": "2026-08-25",
   "sources": 5,
-  "services": 52,
-  "domains": 817025,
-  "cidr": 6070,
+  "services": 61,
+  "domains": 817527,
+  "cidr": 6109,
   "conflicts": {
     "critical": 0,
     "high": 0,
     "medium": 0,
-    "low": 1761
+    "low": 1764
   },
   "build": {
     "mihomo": "success",

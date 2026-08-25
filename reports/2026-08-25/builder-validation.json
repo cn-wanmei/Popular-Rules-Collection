@@ -88,6 +88,18 @@
       }
     },
     {
+      "service": "battlenet",
+      "database": 62,
+      "clients": {
+        "mihomo": 124,
+        "sing-box": 73,
+        "surge": 101,
+        "shadowrocket": 124,
+        "quantumult-x": 86,
+        "egern": 85
+      }
+    },
+    {
       "service": "bilibili",
       "database": 123,
       "clients": {
@@ -97,6 +109,18 @@
         "shadowrocket": 246,
         "quantumult-x": 132,
         "egern": 131
+      }
+    },
+    {
+      "service": "binance",
+      "database": 12,
+      "clients": {
+        "mihomo": 24,
+        "sing-box": 21,
+        "surge": 24,
+        "shadowrocket": 24,
+        "quantumult-x": 13,
+        "egern": 12
       }
     },
     {
@@ -181,6 +205,18 @@
         "shadowrocket": 344,
         "quantumult-x": 173,
         "egern": 172
+      }
+    },
+    {
+      "service": "docker",
+      "database": 7,
+      "clients": {
+        "mihomo": 14,
+        "sing-box": 18,
+        "surge": 14,
+        "shadowrocket": 14,
+        "quantumult-x": 8,
+        "egern": 7
       }
     },
     {
@@ -388,6 +424,18 @@
       }
     },
     {
+      "service": "okx",
+      "database": 3,
+      "clients": {
+        "mihomo": 6,
+        "sing-box": 12,
+        "surge": 6,
+        "shadowrocket": 6,
+        "quantumult-x": 4,
+        "egern": 3
+      }
+    },
+    {
       "service": "onedrive",
       "database": 13,
       "clients": {
@@ -409,6 +457,18 @@
         "shadowrocket": 67,
         "quantumult-x": 37,
         "egern": 36
+      }
+    },
+    {
+      "service": "paramountplus",
+      "database": 9,
+      "clients": {
+        "mihomo": 18,
+        "sing-box": 20,
+        "surge": 18,
+        "shadowrocket": 18,
+        "quantumult-x": 10,
+        "egern": 9
       }
     },
     {
@@ -484,6 +544,18 @@
       }
     },
     {
+      "service": "riotgames",
+      "database": 55,
+      "clients": {
+        "mihomo": 110,
+        "sing-box": 64,
+        "surge": 110,
+        "shadowrocket": 110,
+        "quantumult-x": 56,
+        "egern": 55
+      }
+    },
+    {
       "service": "rockstar",
       "database": 5,
       "clients": {
@@ -529,6 +601,30 @@
         "shadowrocket": 105,
         "quantumult-x": 55,
         "egern": 54
+      }
+    },
+    {
+      "service": "stripe",
+      "database": 0,
+      "clients": {
+        "mihomo": 2,
+        "sing-box": 10,
+        "surge": 1,
+        "shadowrocket": 1,
+        "quantumult-x": 2,
+        "egern": 1
+      }
+    },
+    {
+      "service": "stun",
+      "database": 366,
+      "clients": {
+        "mihomo": 732,
+        "sing-box": 377,
+        "surge": 716,
+        "shadowrocket": 732,
+        "quantumult-x": 383,
+        "egern": 382
       }
     },
     {
@@ -589,6 +685,18 @@
         "shadowrocket": 2,
         "quantumult-x": 2,
         "egern": 1
+      }
+    },
+    {
+      "service": "vercel",
+      "database": 27,
+      "clients": {
+        "mihomo": 54,
+        "sing-box": 36,
+        "surge": 54,
+        "shadowrocket": 54,
+        "quantumult-x": 28,
+        "egern": 27
       }
     },
     {

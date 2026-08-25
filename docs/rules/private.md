@@ -1,0 +1,60 @@
+# Private / LAN
+
+> 用于匹配 **Private / LAN** 相关域名/IP 的分流规则（上游标准化合并）。
+
+| 项目 | 内容 |
+|------|------|
+| Rule ID | `private` |
+| 分类 | network |
+| 类型 | mixed |
+| Domains | 130 |
+| CIDR | 18 |
+| 最后更新 | 2026-08-25 |
+| Sources | loyalsoldier |
+| Confidence | HIGH |
+
+## 用途
+
+用于匹配 **Private / LAN** 相关域名/IP 的分流规则（上游标准化合并）。
+
+支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+
+## 一键订阅
+
+| 客户端 | 路径 | 链接 |
+|--------|------|------|
+| Mihomo | `generated/mihomo/private.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/private.yaml) |
+| sing-box | `generated/sing-box/private.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/private.json) |
+| Surge | `generated/surge/private.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/private.list) |
+| Shadowrocket | `generated/shadowrocket/private.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/private.list) |
+| Quantumult X | `generated/quantumult-x/private.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/private.list) |
+| Egern | `generated/egern/private.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/private.yaml) |
+| Loon | `generated/loon/private.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/private.list) |
+
+## CDN 镜像（Mihomo）
+
+| 镜像 | 链接 |
+|------|------|
+| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/private.yaml |
+| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/private.yaml |
+| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/private.yaml |
+| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/private.yaml |
+
+## 官方网站
+
+_未在 config/official_sites.yaml 配置_
+
+## 规则来源（Provenance）
+
+- `loyalsoldier`
+
+由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
+
+## 数据位置
+
+- Schema: `database/services/private.yaml`
+- Domains: `database/domains/private.txt`
+- IPs: `database/ips/private.txt`（若有）
+
+---
+_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
