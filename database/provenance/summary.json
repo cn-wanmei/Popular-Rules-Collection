@@ -1,0 +1,19 @@
+{
+  "date": "2026-08-25",
+  "domains": 551199,
+  "shards_written": 256,
+  "max_shard_bytes": 157236,
+  "max_shard_mb": 0.15,
+  "sources": 5,
+  "services": 19,
+  "multi_source_domains": 550772,
+  "schema": {
+    "line": {
+      "d": "domain",
+      "s": "source indexes",
+      "r": "service indexes",
+      "t": "type"
+    },
+    "lookup": "sources.json / services.json"
+  }
+}

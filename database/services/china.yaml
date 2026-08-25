@@ -4,9 +4,12 @@ category: network
 type: mixed
 version: 1
 source:
-- id: blackmatrix7
 - id: loyalsoldier
+  priority: 98
+- id: blackmatrix7
+  priority: 95
 - id: sukkaw
+  priority: 88
 rules: []
 metadata:
   priority: high
@@ -17,3 +20,4 @@ metadata:
     domain_count: 111519
     ip_count: 5848
     total: 117367
+canonical_source: loyalsoldier

@@ -1,0 +1,235 @@
+{
+  "date": "2026-08-25",
+  "failures": [],
+  "warnings": [],
+  "rows": [
+    {
+      "service": "adblock",
+      "database": 413065,
+      "clients": {
+        "mihomo": -1,
+        "sing-box": -1,
+        "surge": -1,
+        "shadowrocket": 826083,
+        "quantumult-x": 413066,
+        "egern": 413065
+      }
+    },
+    {
+      "service": "apple",
+      "database": 244,
+      "clients": {
+        "mihomo": 502,
+        "sing-box": 266,
+        "surge": 482,
+        "shadowrocket": 495,
+        "quantumult-x": 265,
+        "egern": 264
+      }
+    },
+    {
+      "service": "bilibili",
+      "database": 123,
+      "clients": {
+        "mihomo": 246,
+        "sing-box": 136,
+        "surge": 238,
+        "shadowrocket": 246,
+        "quantumult-x": 132,
+        "egern": 131
+      }
+    },
+    {
+      "service": "china",
+      "database": 117358,
+      "clients": {
+        "mihomo": -1,
+        "sing-box": -1,
+        "surge": -1,
+        "shadowrocket": 228868,
+        "quantumult-x": 117359,
+        "egern": 117358
+      }
+    },
+    {
+      "service": "discord",
+      "database": 29,
+      "clients": {
+        "mihomo": 58,
+        "sing-box": 38,
+        "surge": 58,
+        "shadowrocket": 58,
+        "quantumult-x": 30,
+        "egern": 29
+      }
+    },
+    {
+      "service": "disney",
+      "database": 172,
+      "clients": {
+        "mihomo": 344,
+        "sing-box": 181,
+        "surge": 344,
+        "shadowrocket": 344,
+        "quantumult-x": 173,
+        "egern": 172
+      }
+    },
+    {
+      "service": "gfw",
+      "database": 4387,
+      "clients": {
+        "mihomo": -1,
+        "sing-box": -1,
+        "surge": -1,
+        "shadowrocket": 8774,
+        "quantumult-x": 4388,
+        "egern": 4387
+      }
+    },
+    {
+      "service": "github",
+      "database": 30,
+      "clients": {
+        "mihomo": 62,
+        "sing-box": 42,
+        "surge": 61,
+        "shadowrocket": 61,
+        "quantumult-x": 32,
+        "egern": 31
+      }
+    },
+    {
+      "service": "google",
+      "database": 745,
+      "clients": {
+        "mihomo": 1500,
+        "sing-box": 765,
+        "surge": 1490,
+        "shadowrocket": 1495,
+        "quantumult-x": 756,
+        "egern": 755
+      }
+    },
+    {
+      "service": "microsoft",
+      "database": 666,
+      "clients": {
+        "mihomo": 1342,
+        "sing-box": 684,
+        "surge": 1337,
+        "shadowrocket": 1337,
+        "quantumult-x": 672,
+        "egern": 671
+      }
+    },
+    {
+      "service": "netflix",
+      "database": 32,
+      "clients": {
+        "mihomo": 74,
+        "sing-box": 50,
+        "surge": 70,
+        "shadowrocket": 70,
+        "quantumult-x": 38,
+        "egern": 37
+      }
+    },
+    {
+      "service": "openai",
+      "database": 78,
+      "clients": {
+        "mihomo": 160,
+        "sing-box": 95,
+        "surge": 156,
+        "shadowrocket": 158,
+        "quantumult-x": 83,
+        "egern": 82
+      }
+    },
+    {
+      "service": "private",
+      "database": 148,
+      "clients": {
+        "mihomo": 296,
+        "sing-box": 159,
+        "surge": 278,
+        "shadowrocket": 296,
+        "quantumult-x": 167,
+        "egern": 166
+      }
+    },
+    {
+      "service": "proxy",
+      "database": 28211,
+      "clients": {
+        "mihomo": -1,
+        "sing-box": -1,
+        "surge": -1,
+        "shadowrocket": 56422,
+        "quantumult-x": 28212,
+        "egern": 28211
+      }
+    },
+    {
+      "service": "steam",
+      "database": 51,
+      "clients": {
+        "mihomo": 108,
+        "sing-box": 65,
+        "surge": 105,
+        "shadowrocket": 105,
+        "quantumult-x": 55,
+        "egern": 54
+      }
+    },
+    {
+      "service": "telegram",
+      "database": 46,
+      "clients": {
+        "mihomo": 94,
+        "sing-box": 62,
+        "surge": 72,
+        "shadowrocket": 93,
+        "quantumult-x": 69,
+        "egern": 68
+      }
+    },
+    {
+      "service": "tiktok",
+      "database": 29,
+      "clients": {
+        "mihomo": 62,
+        "sing-box": 44,
+        "surge": 60,
+        "shadowrocket": 60,
+        "quantumult-x": 32,
+        "egern": 31
+      }
+    },
+    {
+      "service": "twitter",
+      "database": 32,
+      "clients": {
+        "mihomo": 66,
+        "sing-box": 46,
+        "surge": 59,
+        "shadowrocket": 65,
+        "quantumult-x": 40,
+        "egern": 39
+      }
+    },
+    {
+      "service": "youtube",
+      "database": 182,
+      "clients": {
+        "mihomo": 366,
+        "sing-box": 196,
+        "surge": 362,
+        "shadowrocket": 365,
+        "quantumult-x": 187,
+        "egern": 186
+      }
+    }
+  ]
+}

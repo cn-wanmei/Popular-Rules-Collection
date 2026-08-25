@@ -1,0 +1,8258 @@
+[
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain",
+      "value": "7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple",
+      "microsoft",
+      "openai",
+      "telegram"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_keyword",
+      "value": "apple-support.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_keyword",
+      "value": "apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_keyword",
+      "value": "apple.com.edgekey.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_keyword",
+      "value": "buy.itunes.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_keyword",
+      "value": "icloud.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_keyword",
+      "value": "smp-device"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_keyword",
+      "value": "testflight"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "a1.mzstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "a2.mzstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "a3.mzstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "a4.mzstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "a5.mzstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "aaplimg.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adcdownload.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adcdownload.apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "amp-api-updates.apps.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "amp-api.media.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "app-site-association.cdn-apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "appldnld.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "appldnld.g.aaplimg.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "apple-cloudkit.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "apple-dns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "apple-icloud.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "apple-mapkit.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "apple.co"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "apple.news"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "appleicloud.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "appleid.cdn-apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "applemx-icloud.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "apps.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "apps.mzstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "appsto.re"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "appstore.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bag-cdn.itunes-apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cdn-apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cdn-cn1.apple-mapkit.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cdn-cn2.apple-mapkit.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cdn-cn3.apple-mapkit.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cdn-cn4.apple-mapkit.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cdn.apple-mapkit.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cdn1.apple-mapkit.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cdn2.apple-mapkit.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cdn3.apple-mapkit.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cdn4.apple-mapkit.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cds-cdn.v.aaplimg.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cds.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cds.apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cdsassets.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "certs.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cl1-cdn.origin-apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cl1.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cl2-cn.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cl2.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cl2.apple.com.edgekey.net.globalredir.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cl3-cdn.origin-apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cl3.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cl4-cdn.origin-apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cl4-cn.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cl4.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cl5-cdn.origin-apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cl5.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "clientflow.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "clientflow.apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cn-smp-paymentservices.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "configuration.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "configuration.apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "crl.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cstat.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cstat.cdn-apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "dd-cdn.origin-apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "dejavu.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "devimages-cdn.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "devstreaming-cdn.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "download.developer.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "experiments.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gs-loc-cn.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gs-loc.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gsp10-ssl-cn.ls.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gsp11-cn.ls.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gsp12-cn.ls.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gsp13-cn.ls.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gsp4-cn.ls.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gsp5-cn.ls.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gsp85-cn-ssl.ls.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gspe19-2-cn-ssl.ls-apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gspe19-2-cn-ssl.ls.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gspe19-cn-ssl.ls.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gspe19-cn.ls-apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gspe19-cn.ls.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gspe21-ssl.ls.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gspe35-ssl.ls.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gspe79-cn-ssl.ls.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "guzzoni-apple-com.v.aaplimg.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "guzzoni.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "guzzoni.smoot.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "iadsdk.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud-apple.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud-content.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud-content.com.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud-isupport.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud-sandbox.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.ch"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.com.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.de"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.ee"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.fi"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.fr"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.hu"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.ie"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.is"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.jp"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.lv"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.net.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.om"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.org"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.pt"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.ro"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.se"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.si"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.sk"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloud.vn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloudads.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloudapple.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloudbox.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloudbrowser.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloude.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloudhome.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloudmail.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloudmusic.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloudnet.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloudo.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloudo.de"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloudo.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloudos.de"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloudos.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloudpay.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloudsecure.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "icloudsetup.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "images.apple.com.edgekey.net.globalredir.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "init-kt.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "init-p01md-lb.push-apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "init-p01md.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "init-p01st-lb.push-apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "init-p01st.push.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "init-s01st-lb.push-apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "init-s01st.push.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "init.ess.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ios-icloud.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "iosapps.itunes.g.aaplimg.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ipcdn.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "iphone-ld.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "iphone-ld.origin-apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "is-ssl.mzstatic.com-cn-lb.itunes-apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "is1-ssl.mzstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "is1.mzstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "is2-ssl.mzstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "is2.mzstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "is3-ssl.mzstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "is3.mzstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "is4-ssl.mzstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "is4.mzstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "is5-ssl.mzstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "is5.mzstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "itunes-apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "itunes.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "itunes.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "itunesconnect.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "me.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "mensura.cdn-apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "mesu-cdn.apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "mesu-china.apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "mesu.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ml.cdn-apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "music.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "myicloud.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "mylcloud.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ocsp.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ocsp2.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "organicfruitapps.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "oscdn.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "oscdn.origin-apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "osxapps.itunes.g.aaplimg.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "pancake.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "pba0.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "probe.siri.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "prod-support.apple-support.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "publicassets.cdn-apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "push-apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "s.mzstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "seed-sequoia.siri.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "seed-swallow.siri.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "seed.siri.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "sequoia.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "sh-pod2-smp-device.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "shazam-insights.cdn-apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "smp-device-content.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "static.gc.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "stocks-sparkline-lb.apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "stocks-sparkline.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "store.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "store.apple.com.edgekey.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "store.apple.com.edgekey.net.globalredir.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "store.storeimages.apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "store.storeimages.cdn-apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "support-china.apple-support.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "support.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "swallow-apple-com.v.aaplimg.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "swallow.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "swcatalog-cdn.apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "swcatalog.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "swcdn.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "swcdn.g.aaplimg.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "swdist.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "swdist.apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "swscan-cdn.apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "swscan.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "sylvan.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "tj-pod1-smp-device.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "updates-http.cdn-apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "updates-http.cdn-apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "updates.cdn-apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "valid.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "valid.origin-apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "weather-data.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "weather-data.apple.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "weather-map.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "weather-map2.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "weatherkit.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "www-cdn.icloud.com.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "www.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "www.apple.com.edgekey.net.globalredir.akadns.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "wwwicloud.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "xp.apple.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "ip_cidr",
+      "value": "139.178.128.0/18"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "ip_cidr",
+      "value": "144.178.0.0/19"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "ip_cidr",
+      "value": "144.178.36.0/22"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "ip_cidr",
+      "value": "144.178.48.0/20"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "ip_cidr",
+      "value": "17.0.0.0/8"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "ip_cidr",
+      "value": "192.35.50.0/24"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "ip_cidr",
+      "value": "198.183.17.0/24"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "ip_cidr",
+      "value": "205.180.175.0/24"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "ip_cidr",
+      "value": "63.92.224.0/19"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "ip_cidr",
+      "value": "65.199.22.0/23"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "ip_cidr6",
+      "value": "2403:300::/32"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "ip_cidr6",
+      "value": "2620:149::/32"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "ip_cidr6",
+      "value": "2a01:b740::/32"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "apple"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain",
+      "value": "voice.telephony.goog"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_keyword",
+      "value": "appspot"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_keyword",
+      "value": "blogspot"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_keyword",
+      "value": "gmail"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_keyword",
+      "value": "google"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_keyword",
+      "value": "recaptcha"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "0emm.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "1e100.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "1ucrs.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "265.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "2mdn-cn.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "2mdn.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "466453.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "abc.xyz"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adgoogle.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "admeld.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "admob-cn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "admob.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adsense.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adsensecustomsearchads.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adsenseformobileapps.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adservice.google.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "advertisercommunity.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "advertiserscommunity.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adwords-community.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adwords.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adwordsexpress.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "amp.dev"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ampproject.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ampproject.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ampproject.org"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "android.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "androidify.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "androidtv.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "angulardart.org"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "api.ai"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "apigee.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "app-analytics-services.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "app-measurement-cn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "app-measurement.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "app-measurement.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "appbridge.ca"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "appbridge.io"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "appbridge.it"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "apps5.oingo.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "appspot.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "apture.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "area120.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "asp-cc.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "autodraw.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "avail.googleflights.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bandpage.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "baselinestudy.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "baselinestudy.org"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bazel.build"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bdn.dev"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "beacons.gcp.gvt2.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "beacons.gvt2.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "beacons2.gvt2.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "beacons3.gvt2.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "beatthatquote.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blink.org"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blog.google"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogblog.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogger.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.ae"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.al"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.am"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.ba"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.be"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.bg"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.bj"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.ca"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.cf"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.ch"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.cl"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.co.at"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.co.id"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.co.il"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.co.ke"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.co.nz"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.co.uk"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.co.za"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.com.ar"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.com.au"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.com.br"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.com.by"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.com.co"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.com.cy"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.com.ee"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.com.eg"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.com.es"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.com.mt"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.com.ng"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.com.tr"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.com.uy"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.cv"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.cz"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.de"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.dk"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.fi"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.fr"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.gr"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.hk"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.hr"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.hu"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.ie"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.in"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.is"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.it"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.jp"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.kr"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.li"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.lt"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.lu"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.md"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.mk"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.mx"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.my"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.nl"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.no"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.pe"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.pt"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.qa"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.re"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.ro"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.rs"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.ru"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.se"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.sg"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.si"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.sk"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.sn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.td"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.tw"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.ug"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.vn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "brocaproject.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "brotli.org"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bumpshare.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bumptop.ca"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bumptop.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bumptop.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bumptop.org"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bumptunes.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "c.admob.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "c.android.clients.google.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "c.gle"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "c.pki.goog"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cache-management-prod.google.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cache.pack.google.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "campuslondon.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "capitalg.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "certificate-transparency.dev"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "certificate-transparency.org"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "charlestonroadregistry.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "chat.gle"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "checkin.gstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "chrome.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "chromebook.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "chromecast.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "chromeexperiments.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "chromeos.dev"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "chromercise.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "chromestatus.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "chromium.org"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "chronicle.security"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "chroniclesec.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "clickserve.cc-dt.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "clickserve.dartsearch.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "clickserver.googleads.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "clientservices.googleapis.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cloudburstresearch.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cloudfunctions.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cloudproxy.app"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cloudrobotics.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cn.widevine.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cobrasearch.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "codespot.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "connectivitycheck.gstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "conscrypt.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "conscrypt.org"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cookiechoices.org"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "coova.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "coova.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "coova.org"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "crashlytics.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "crashlyticsreports-pa.googleapis.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "crbug.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "creativelab5.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "crl.pki.goog"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "crossmediapanel.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "crr.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "crrev.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cs4hs.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "csi.gstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "dart.dev"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "dartlang.org"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "dartpad.dev"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "dartsearch-cn.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "dartsearch.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "data-vocabulary.org"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "dataliberation.org"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "debug.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "debugproject.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "deepmind.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier",
+      "sukkaw"
+    ],
+    "services": [
+      "google",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "deja.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "deps.dev"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "deps.info"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "devsitetest.how"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "dg-meta.video.google.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "dialogflow.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "digisfera.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "digitalassetlinks.org"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "digitalattackmap.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "dl.google.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "dl.l.google.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "doubleclick-cn.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "doubleclick.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "doubleclick.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "download.mlcc.google.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "download.tensorflow.google.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "episodic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "fastlane.ci"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "fastlane.tools"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "feedburner.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "fflick.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "financeleadsonline.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "firebase-settings.crashlytics.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "firebaseapp.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "firebaseio.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "flutter.dev"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "flutterapp.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "fontfiles.googleapis.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "fonts.googleapis.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "fonts.gstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "foofle.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "froogle.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "fuchsia.dev"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "g-tun.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "g.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "g.co"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "g.dev"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "g.page"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "g0.gstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "g1.gstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "g2.gstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "g3.gstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "loyalsoldier"
+    ],
+    "services": [
+      "google"
+    ]
+  }
+]

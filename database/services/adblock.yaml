@@ -4,10 +4,14 @@ category: adblock
 type: mixed
 version: 1
 source:
-- id: anti-ad
-- id: hagezi
 - id: loyalsoldier
+  priority: 98
+- id: hagezi
+  priority: 93
+- id: anti-ad
+  priority: 90
 - id: sukkaw
+  priority: 88
 rules: []
 metadata:
   priority: high
@@ -18,3 +22,4 @@ metadata:
     domain_count: 413234
     ip_count: 47
     total: 413281
+canonical_source: loyalsoldier

@@ -5,7 +5,9 @@ type: domain
 version: 1
 source:
 - id: loyalsoldier
+  priority: 98
 - id: sukkaw
+  priority: 88
 rules: []
 metadata:
   priority: high
@@ -16,3 +18,4 @@ metadata:
     domain_count: 28221
     ip_count: 0
     total: 28221
+canonical_source: loyalsoldier
