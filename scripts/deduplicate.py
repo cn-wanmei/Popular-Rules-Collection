@@ -1,68 +1,86 @@
 #!/usr/bin/env python3
-"""deduplicate.py — V1.1 three-level conflict detection (EXACT / SEMANTIC / PARENT_CHILD)."""
+"""deduplicate.py — canonical domain/ip sets (mutates database/canonical + domains/ips)."""
 
 from __future__ import annotations
 
 import argparse
 import json
-from collections import defaultdict
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
 
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from registry_map import source_priority  # noqa: E402
+
+DOMAINS = ROOT / "database" / "domains"
+IPS = ROOT / "database" / "ips"
 SERVICES = ROOT / "database" / "services"
-REPORTS = ROOT / "reports"
+CANON = ROOT / "database" / "canonical"
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--date", default=datetime.now(timezone.utc).strftime("%Y-%m-%d"))
     args = parser.parse_args()
-    day = REPORTS / args.date / "conflicts"
-    day.mkdir(parents=True, exist_ok=True)
+    CANON.mkdir(parents=True, exist_ok=True)
+    (CANON / "domains").mkdir(exist_ok=True)
+    (CANON / "ips").mkdir(exist_ok=True)
+    prio = source_priority()
+    stats = {"services": 0, "domains_in": 0, "domains_out": 0, "ips_in": 0, "ips_out": 0}
 
-    records = []
+    for path in sorted(DOMAINS.glob("*.txt")):
+        sid = path.stem
+        lines = [ln.strip() for ln in path.read_text(encoding="utf-8", errors="replace").splitlines() if ln.strip()]
+        stats["domains_in"] += len(lines)
+        seen: dict[str, str] = {}
+        for ln in lines:
+            k = ln.lower()
+            if k not in seen or len(ln) < len(seen[k]):
+                seen[k] = ln
+        out_lines = sorted(seen.values(), key=str.lower)
+        stats["domains_out"] += len(out_lines)
+        text = "\n".join(out_lines) + ("\n" if out_lines else "")
+        (CANON / "domains" / f"{sid}.txt").write_text(text, encoding="utf-8")
+        path.write_text(text, encoding="utf-8")
+        stats["services"] += 1
+
+    for path in sorted(IPS.glob("*.txt")):
+        lines = [ln.strip() for ln in path.read_text(encoding="utf-8", errors="replace").splitlines() if ln.strip()]
+        stats["ips_in"] += len(lines)
+        seen = sorted(set(lines))
+        stats["ips_out"] += len(seen)
+        text = "\n".join(seen) + ("\n" if seen else "")
+        (CANON / "ips" / path.name).write_text(text, encoding="utf-8")
+        path.write_text(text, encoding="utf-8")
+
     for path in sorted(SERVICES.glob("*.yaml")):
         if path.name.startswith("example"):
             continue
         doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
-        sid = doc.get("id") or path.stem
-        sources = [s.get("id") for s in doc.get("source") or []]
-        for r in doc.get("rules") or []:
-            records.append({"service": sid, "type": r.get("type"), "value": r.get("value"), "sources": sources})
+        srcs = doc.get("source") or []
+        if isinstance(srcs, list) and srcs:
+            for s in srcs:
+                if isinstance(s, dict) and "priority" not in s:
+                    s["priority"] = prio.get(s.get("id", ""), 50)
+            srcs.sort(key=lambda x: -int((x or {}).get("priority") or 50))
+            doc["source"] = srcs
+            doc["canonical_source"] = srcs[0].get("id") if isinstance(srcs[0], dict) else None
+            path.write_text(
+                yaml.dump(doc, allow_unicode=True, sort_keys=False, default_flow_style=False),
+                encoding="utf-8",
+            )
 
-    by_value: dict[str, list] = defaultdict(list)
-    for r in records:
-        if r.get("value"):
-            by_value[r["value"].lower()].append(r)
-
-    exact, semantic, multi = [], [], []
-    for val, items in by_value.items():
-        types = {i["type"] for i in items}
-        services = {i["service"] for i in items}
-        all_sources = set()
-        for i in items:
-            all_sources.update(i.get("sources") or [])
-        type_counts: dict[str, int] = defaultdict(int)
-        for i in items:
-            type_counts[i["type"] or ""] += 1
-        for t, c in type_counts.items():
-            if c > 1:
-                exact.append({"level": "LOW", "kind": "EXACT_CROSS_SERVICE", "value": val, "type": t, "services": sorted(services)})
-        if "domain" in types and "domain_suffix" in types:
-            semantic.append({"level": "MEDIUM", "kind": "SEMANTIC_DOMAIN_VS_SUFFIX", "value": val, "action": "KEEP_ALL"})
-        if len(all_sources) > 1:
-            multi.append({"level": "LOW", "kind": "MULTI_SOURCE", "value": val, "sources": sorted(all_sources)})
-
-    (day / "exact.json").write_text(json.dumps(exact[:500], indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    (day / "semantic.json").write_text(json.dumps(semantic[:500], indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    (day / "multi_source.json").write_text(json.dumps(multi[:500], indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    summary = f"# Conflicts {args.date}\n\nexact={len(exact)} semantic={len(semantic)} multi_source={len(multi)} critical=0\n"
-    (day / "summary.md").write_text(summary, encoding="utf-8")
-    print(summary)
+    meta = {
+        "date": args.date,
+        **stats,
+        "domain_removed": stats["domains_in"] - stats["domains_out"],
+        "ip_removed": stats["ips_in"] - stats["ips_out"],
+    }
+    (CANON / "meta.json").write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps(meta))
     return 0
 
 

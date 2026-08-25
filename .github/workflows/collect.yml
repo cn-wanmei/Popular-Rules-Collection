@@ -1,9 +1,5 @@
 name: Collect Upstream
 
-# Full pipeline: collect → normalize → build → commit database/ + generated/
-# Manual: Actions → Collect Upstream → Run workflow
-# Daily: 22:00 UTC
-
 on:
   schedule:
     - cron: "0 22 * * *"
@@ -26,89 +22,60 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+      - run: pip install -r requirements.txt
 
       - name: Collect upstream
         run: python scripts/collect.py
-        env:
-          PYTHONUNBUFFERED: "1"
 
-      - name: Normalize → database/
+      - name: Normalize
         run: |
           if [ "${{ inputs.skip_large }}" = "true" ]; then
             python scripts/normalize.py --skip-large
           else
             python scripts/normalize.py
           fi
-        env:
-          PYTHONUNBUFFERED: "1"
 
-      - name: Conflict / deduplicate report
+      - name: Canonical deduplicate
         run: python scripts/deduplicate.py
+
+      - name: Conflict detector
+        run: python scripts/conflict_detector.py
         continue-on-error: true
 
-      - name: Build Mihomo
-        run: python scripts/build_mihomo.py
+      - name: Provenance
+        run: python scripts/provenance.py
+        continue-on-error: true
 
-      - name: Build sing-box
-        run: python scripts/build_singbox.py
-
-      - name: Build Surge
-        run: python scripts/build_surge.py
-
-      - name: Build Shadowrocket
-        run: python scripts/build_shadowrocket.py
-
-      - name: Build Quantumult X
-        run: python scripts/build_quantumultx.py
-
-      - name: Build Egern
-        run: python scripts/build_egern.py
+      - run: python scripts/build_mihomo.py
+      - run: python scripts/build_singbox.py
+      - run: python scripts/build_surge.py
+      - run: python scripts/build_shadowrocket.py
+      - run: python scripts/build_quantumultx.py
+      - run: python scripts/build_egern.py
 
       - name: Validate
         run: python scripts/validate.py
         continue-on-error: true
 
-      - name: Commit database + generated + reports
+      - name: Builder validation
+        run: python scripts/builder_validate.py
+        continue-on-error: true
+
+      - name: Statistics
+        run: python scripts/statistics.py
+        continue-on-error: true
+
+      - name: Commit
         run: |
-          set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           DAY=$(date -u +%Y-%m-%d)
-          git add -A database/ generated/ sources/health.yaml || true
-          git add reports/ || true
-          git add backup/*/manifests/ || true
-          git add backup/ || true
-
-          if git diff --staged --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "chore(pipeline): collect+normalize+build ${DAY}"
-            git push
-            echo "Pushed pipeline results for ${DAY}"
-          fi
-
-      - name: Summary
-        if: always()
-        run: |
-          echo "## Pipeline summary" >> "$GITHUB_STEP_SUMMARY"
-          echo "- Date (UTC): $(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_STEP_SUMMARY"
-          echo "- database/services: $(find database/services -name '*.yaml' 2>/dev/null | wc -l)" >> "$GITHUB_STEP_SUMMARY"
-          echo "- database/domains: $(find database/domains -name '*.txt' 2>/dev/null | wc -l)" >> "$GITHUB_STEP_SUMMARY"
-          echo "- generated files: $(find generated -type f 2>/dev/null | wc -l)" >> "$GITHUB_STEP_SUMMARY"
-          du -sh database generated backup 2>/dev/null || true
+          git add -A database/ generated/ sources/health.yaml reports/ || true
+          git add backup/*/manifests/ backup/ || true
+          git diff --staged --quiet || git commit -m "chore(pipeline): collect+normalize+build ${DAY}"
+          git push
