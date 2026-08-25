@@ -34,21 +34,14 @@ secrets/
 *.token
 .github_token
 
-# Large upstream raw backups (re-collect via scripts/collect.py)
-backup/**/sources/hagezi/adblock-*.txt
-backup/**/sources/anti-ad/
-backup/**/sources/loyalsoldier/reject.txt
-backup/**/sources/loyalsoldier/direct.txt
-backup/**/sources/loyalsoldier/proxy.txt
-backup/**/sources/sukkaw/domainset_reject.conf
-
-# Mega generated lists (rebuild with scripts/build_*.py)
-generated/**/adblock.*
-generated/**/adblock_domain.list
-generated/**/china.*
-generated/**/china_domain.list
-generated/**/proxy.*
-generated/**/proxy_domain.list
-
 # Optional local
 .venv/
+
+# CI commits database/ and generated/ (including mega lists).
+# Only the heaviest raw upstream backups are ignored; re-fetch via collect.py
+backup/**/sources/hagezi/adblock-ultimate.txt
+backup/**/sources/hagezi/adblock-pro.txt
+backup/**/sources/anti-ad/anti-ad-domains.txt
+backup/**/sources/loyalsoldier/reject.txt
+backup/**/sources/loyalsoldier/proxy.txt
+backup/**/sources/sukkaw/domainset_reject.conf

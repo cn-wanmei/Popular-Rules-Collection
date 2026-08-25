@@ -1,30 +1,31 @@
 name: Normalize
 
+# Optional standalone; full pipeline is "Collect Upstream"
 on:
-  workflow_run:
-    workflows: ["Collect Upstream"]
-    types: [completed]
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   normalize:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install deps
-        run: pip install pyyaml requests
+      - run: pip install -r requirements.txt
       - name: Normalize
         run: python scripts/normalize.py
       - name: Deduplicate
         run: python scripts/deduplicate.py
+        continue-on-error: true
       - name: Commit database
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add database/
-          git diff --staged --quiet || git commit -m "chore(normalize): update intermediate database $(date -u +%Y-%m-%d)"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database/ reports/ || true
+          git diff --staged --quiet || git commit -m "chore(normalize): update database $(date -u +%Y-%m-%d)"
           git push
