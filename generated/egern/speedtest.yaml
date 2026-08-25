@@ -1,0 +1,11 @@
+# name: Speedtest
+# id: speedtest
+# count: 5
+no_resolve: true
+domain_suffix_set:
+- fast.com
+- ooklaserver.net
+- speed.cloudflare.com
+- speed.dler.io
+domain_keyword_set:
+- speedtest

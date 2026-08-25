@@ -2,12 +2,12 @@
 
 | Metric | Value |
 |--------|------:|
-| Services | 19 |
-| Domain lines | 559657 |
-| IP/CIDR lines | 5971 |
+| Services | 52 |
+| Domain lines | 817025 |
+| IP/CIDR lines | 6070 |
 | Invalid CIDR | 0 |
 | Suspicious domains | 0 |
-| Generated files | 170 |
+| Generated files | 500 |
 | Empty generated | 0 |
 | Errors | 0 |
 | Warnings | 0 |
@@ -23,8 +23,8 @@
 ```yaml
 sources:
   sukkaw:
-    last_attempt: '2026-08-25T12:06:51.206733+00:00'
-    last_success: '2026-08-25T12:06:51.206748+00:00'
+    last_attempt: '2026-08-25T12:17:16.172467+00:00'
+    last_success: '2026-08-25T12:17:16.172485+00:00'
     failure_count: 0
     status: healthy
     files_ok: 8
@@ -32,8 +32,8 @@ sources:
     empty_blocked: 0
     rules_declared: 8
   blackmatrix7:
-    last_attempt: '2026-08-25T12:06:46.274949+00:00'
-    last_success: '2026-08-25T12:06:46.274969+00:00'
+    last_attempt: '2026-08-25T12:17:13.532556+00:00'
+    last_success: '2026-08-25T12:17:13.532583+00:00'
     failure_count: 0
     status: healthy
     files_ok: 47
@@ -41,8 +41,8 @@ sources:
     empty_blocked: 0
     rules_declared: 47
   loyalsoldier:
-    last_attempt: '2026-08-25T12:06:48.794494+00:00'
-    last_success: '2026-08-25T12:06:48.794508+00:00'
+    last_attempt: '2026-08-25T12:17:14.020944+00:00'
+    last_success: '2026-08-25T12:17:14.020963+00:00'
     failure_count: 0
     status: healthy
     files_ok: 14
@@ -50,8 +50,8 @@ sources:
     empty_blocked: 0
     rules_declared: 14
   anti-ad:
-    last_attempt: '2026-08-25T12:06:50.038517+00:00'
-    last_success: '2026-08-25T12:06:50.038530+00:00'
+    last_attempt: '2026-08-25T12:17:14.531415+00:00'
+    last_success: '2026-08-25T12:17:14.531433+00:00'
     failure_count: 0
     status: healthy
     files_ok: 3
@@ -59,13 +59,13 @@ sources:
     empty_blocked: 0
     rules_declared: 3
   hagezi:
-    last_attempt: '2026-08-25T12:06:50.400406+00:00'
-    last_success: '2026-08-25T12:06:50.400419+00:00'
+    last_attempt: '2026-08-25T12:17:15.088746+00:00'
+    last_success: '2026-08-25T12:17:15.088763+00:00'
     failure_count: 0
     status: healthy
     files_ok: 3
     files_failed: 0
     empty_blocked: 0
     rules_declared: 3
-updated_at: '2026-08-25T12:06:51.207854+00:00'
+updated_at: '2026-08-25T12:17:16.173717+00:00'
 ```

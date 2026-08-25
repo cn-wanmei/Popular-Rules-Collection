@@ -1,0 +1,9 @@
+# name: Claude
+# id: claude
+# count: 3
+no_resolve: true
+domain_set:
+- cdn.usefathom.com
+domain_suffix_set:
+- anthropic.com
+- claude.ai

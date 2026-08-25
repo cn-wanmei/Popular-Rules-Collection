@@ -1,0 +1,15 @@
+# name: Apple Music
+# id: applemusic
+# count: 9
+no_resolve: true
+domain_set:
+- aod-ssl.itunes.apple.com
+- aod.itunes.apple.com
+- audio-ssl.itunes.apple.com
+- audio.itunes.apple.com
+- mvod.itunes.apple.com
+- streamingaudio.itunes.apple.com
+domain_suffix_set:
+- applemusic.com
+- blobstore.apple.com
+- music.apple.com
