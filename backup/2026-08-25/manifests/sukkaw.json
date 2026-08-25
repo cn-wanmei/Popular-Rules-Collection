@@ -1,7 +1,7 @@
 {
   "source": "sukkaw",
   "fetch": "cdn",
-  "timestamp": "2026-08-25T13:20:58.781844+00:00",
+  "timestamp": "2026-08-25T22:27:38.803698+00:00",
   "files_ok": 8,
   "files_failed": 0,
   "empty_blocked": 0,
@@ -74,7 +74,7 @@
       "service": "china",
       "local": "sources/sukkaw/ip_china.conf",
       "size": 92786,
-      "sha256": "b135c2654a99d938869b21785cf6e4bbfc6fafaa6fdba0d3b6bd5b806614e519",
+      "sha256": "d6a42ef3b5a0d81ae4e401b1a730f79be8951ed94760a5be401721cc11332cfe",
       "status": "ok"
     },
     {
@@ -83,8 +83,8 @@
       "url": "https://ruleset.skk.moe/List/domainset/reject.conf",
       "service": "adblock",
       "local": "sources/sukkaw/domainset_reject.conf",
-      "size": 3006034,
-      "sha256": "22cfaf7cc2dd84a6255197487a17e83d739de7f17aa08cb3eee2eb983a35e599",
+      "size": 3009315,
+      "sha256": "f0378634f41fe2aafcfe64ea282c328d6e0c37aa31ac0eef95a456b47fe6ede2",
       "status": "ok"
     }
   ],

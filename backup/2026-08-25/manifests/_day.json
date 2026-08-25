@@ -1,12 +1,12 @@
 {
   "date": "2026-08-25",
-  "timestamp": "2026-08-25T13:20:59.624814+00:00",
+  "timestamp": "2026-08-25T22:27:40.354931+00:00",
   "registry_version": 3,
   "sources": [
     {
       "source": "blackmatrix7",
       "fetch": "github_raw",
-      "timestamp": "2026-08-25T13:20:55.193655+00:00",
+      "timestamp": "2026-08-25T22:27:36.879172+00:00",
       "files_ok": 75,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -169,7 +169,7 @@
           "service": "apple",
           "local": "sources/blackmatrix7/Surge_Apple.list",
           "size": 1805,
-          "sha256": "96d12d098ac0a7292aa4d742b4de39fdabbb110cfe61d5eb3a793e1297c22ee4",
+          "sha256": "4c61c31824f43b8588a13c00969361cd8d7f8189a14e77b4f64a0df9a87bc62e",
           "status": "ok"
         },
         {
@@ -489,7 +489,7 @@
           "service": "battlenet",
           "local": "sources/blackmatrix7/Clash_Blizzard.yaml",
           "size": 2308,
-          "sha256": "4fdb4a67a9f60543fc4828e8a76ba7e71e0d5164f3a8c2ea3538a5a4bd52a00d",
+          "sha256": "3d003d066c148cc5e283417c726269bfabae887a99a94734c80fd8798732a8d5",
           "status": "ok"
         },
         {
@@ -769,7 +769,7 @@
     {
       "source": "loyalsoldier",
       "fetch": "github_raw",
-      "timestamp": "2026-08-25T13:20:55.973964+00:00",
+      "timestamp": "2026-08-25T22:27:37.211303+00:00",
       "files_ok": 14,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -922,7 +922,7 @@
     {
       "source": "anti-ad",
       "fetch": "github_raw",
-      "timestamp": "2026-08-25T13:20:57.053123+00:00",
+      "timestamp": "2026-08-25T22:27:37.696180+00:00",
       "files_ok": 3,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -934,8 +934,8 @@
           "url": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt",
           "service": "adblock",
           "local": "sources/anti-ad/anti-ad-domains.txt",
-          "size": 2080541,
-          "sha256": "6e72e1f63319c77e74618b103ab45c37624d83bff3572d03f4712ade262cd6f5",
+          "size": 2072828,
+          "sha256": "157bc6b33b91c742d853e7ba3e4ac3ec2a472fcc24a97b86ec32e1e52950d8c6",
           "status": "ok"
         },
         {
@@ -944,8 +944,8 @@
           "url": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt",
           "service": "adblock",
           "local": "sources/anti-ad/anti-ad-surge.txt",
-          "size": 3325805,
-          "sha256": "fe8059c7306c628b59293dddd5e0d2267726548fdd36f4ecd4814979ed6a5697",
+          "size": 3312986,
+          "sha256": "2771c0c928a292761b80787184bce85a6bb1c46d1cd86c9cca659eebadf75557",
           "status": "ok"
         },
         {
@@ -954,8 +954,8 @@
           "url": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml",
           "service": "adblock",
           "local": "sources/anti-ad/anti-ad-clash.yaml",
-          "size": 2722479,
-          "sha256": "42fe513a50ed97e9efc70e64a9b4eaf5e3678e9b2063015c21b9e0e39e189a18",
+          "size": 2711856,
+          "sha256": "74ec931f283a6c6b76eb0897ae99476fe4d1a0ffc1af5ad16d2202d07b64ed44",
           "status": "ok"
         }
       ],
@@ -965,7 +965,7 @@
     {
       "source": "hagezi",
       "fetch": "github_raw",
-      "timestamp": "2026-08-25T13:20:57.343287+00:00",
+      "timestamp": "2026-08-25T22:27:37.801444+00:00",
       "files_ok": 3,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -1008,7 +1008,7 @@
     {
       "source": "sukkaw",
       "fetch": "cdn",
-      "timestamp": "2026-08-25T13:20:58.781844+00:00",
+      "timestamp": "2026-08-25T22:27:38.803698+00:00",
       "files_ok": 8,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -1081,7 +1081,7 @@
           "service": "china",
           "local": "sources/sukkaw/ip_china.conf",
           "size": 92786,
-          "sha256": "b135c2654a99d938869b21785cf6e4bbfc6fafaa6fdba0d3b6bd5b806614e519",
+          "sha256": "d6a42ef3b5a0d81ae4e401b1a730f79be8951ed94760a5be401721cc11332cfe",
           "status": "ok"
         },
         {
@@ -1090,8 +1090,8 @@
           "url": "https://ruleset.skk.moe/List/domainset/reject.conf",
           "service": "adblock",
           "local": "sources/sukkaw/domainset_reject.conf",
-          "size": 3006034,
-          "sha256": "22cfaf7cc2dd84a6255197487a17e83d739de7f17aa08cb3eee2eb983a35e599",
+          "size": 3009315,
+          "sha256": "f0378634f41fe2aafcfe64ea282c328d6e0c37aa31ac0eef95a456b47fe6ede2",
           "status": "ok"
         }
       ],
@@ -1101,7 +1101,7 @@
     {
       "source": "metacubex",
       "fetch": "github_raw",
-      "timestamp": "2026-08-25T13:20:59.624608+00:00",
+      "timestamp": "2026-08-25T22:27:40.354758+00:00",
       "files_ok": 8,
       "files_failed": 0,
       "empty_blocked": 0,

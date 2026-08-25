@@ -3,8 +3,8 @@
 | Metric | Value |
 |--------|------:|
 | Services | 81 |
-| Domain lines | 820789 |
-| IP/CIDR lines | 6246 |
+| Domain lines | 820686 |
+| IP/CIDR lines | 6243 |
 | Invalid CIDR | 0 |
 | Suspicious domains | 0 |
 | Generated files | 790 |
@@ -24,8 +24,8 @@
 ```yaml
 sources:
   sukkaw:
-    last_attempt: '2026-08-25T13:20:58.781821+00:00'
-    last_success: '2026-08-25T13:20:58.781839+00:00'
+    last_attempt: '2026-08-25T22:27:38.803679+00:00'
+    last_success: '2026-08-25T22:27:38.803694+00:00'
     failure_count: 0
     status: healthy
     files_ok: 8
@@ -33,8 +33,8 @@ sources:
     empty_blocked: 0
     rules_declared: 8
   blackmatrix7:
-    last_attempt: '2026-08-25T13:20:55.193631+00:00'
-    last_success: '2026-08-25T13:20:55.193650+00:00'
+    last_attempt: '2026-08-25T22:27:36.879137+00:00'
+    last_success: '2026-08-25T22:27:36.879153+00:00'
     failure_count: 0
     status: healthy
     files_ok: 75
@@ -42,8 +42,8 @@ sources:
     empty_blocked: 0
     rules_declared: 75
   loyalsoldier:
-    last_attempt: '2026-08-25T13:20:55.973941+00:00'
-    last_success: '2026-08-25T13:20:55.973959+00:00'
+    last_attempt: '2026-08-25T22:27:37.211285+00:00'
+    last_success: '2026-08-25T22:27:37.211299+00:00'
     failure_count: 0
     status: healthy
     files_ok: 14
@@ -51,8 +51,8 @@ sources:
     empty_blocked: 0
     rules_declared: 14
   anti-ad:
-    last_attempt: '2026-08-25T13:20:57.053101+00:00'
-    last_success: '2026-08-25T13:20:57.053119+00:00'
+    last_attempt: '2026-08-25T22:27:37.696162+00:00'
+    last_success: '2026-08-25T22:27:37.696177+00:00'
     failure_count: 0
     status: healthy
     files_ok: 3
@@ -60,8 +60,8 @@ sources:
     empty_blocked: 0
     rules_declared: 3
   hagezi:
-    last_attempt: '2026-08-25T13:20:57.343236+00:00'
-    last_success: '2026-08-25T13:20:57.343256+00:00'
+    last_attempt: '2026-08-25T22:27:37.801426+00:00'
+    last_success: '2026-08-25T22:27:37.801441+00:00'
     failure_count: 0
     status: healthy
     files_ok: 3
@@ -69,13 +69,13 @@ sources:
     empty_blocked: 0
     rules_declared: 3
   metacubex:
-    last_attempt: '2026-08-25T13:20:59.624588+00:00'
+    last_attempt: '2026-08-25T22:27:40.354740+00:00'
     files_ok: 8
     files_failed: 0
     empty_blocked: 0
     rules_declared: 8
-    last_success: '2026-08-25T13:20:59.624604+00:00'
+    last_success: '2026-08-25T22:27:40.354754+00:00'
     failure_count: 0
     status: healthy
-updated_at: '2026-08-25T13:20:59.626092+00:00'
+updated_at: '2026-08-25T22:27:40.355915+00:00'
 ```

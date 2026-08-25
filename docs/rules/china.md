@@ -8,7 +8,7 @@
 | 分类 | network |
 | 类型 | mixed |
 | Domains | 111519 |
-| CIDR | 5848 |
+| CIDR | 5845 |
 | 最后更新 | 2026-08-25 |
 | Sources | loyalsoldier / blackmatrix7 / sukkaw |
 | Confidence | HIGH |

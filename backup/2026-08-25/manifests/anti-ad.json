@@ -1,7 +1,7 @@
 {
   "source": "anti-ad",
   "fetch": "github_raw",
-  "timestamp": "2026-08-25T13:20:57.053123+00:00",
+  "timestamp": "2026-08-25T22:27:37.696180+00:00",
   "files_ok": 3,
   "files_failed": 0,
   "empty_blocked": 0,
@@ -13,8 +13,8 @@
       "url": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt",
       "service": "adblock",
       "local": "sources/anti-ad/anti-ad-domains.txt",
-      "size": 2080541,
-      "sha256": "6e72e1f63319c77e74618b103ab45c37624d83bff3572d03f4712ade262cd6f5",
+      "size": 2072828,
+      "sha256": "157bc6b33b91c742d853e7ba3e4ac3ec2a472fcc24a97b86ec32e1e52950d8c6",
       "status": "ok"
     },
     {
@@ -23,8 +23,8 @@
       "url": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt",
       "service": "adblock",
       "local": "sources/anti-ad/anti-ad-surge.txt",
-      "size": 3325805,
-      "sha256": "fe8059c7306c628b59293dddd5e0d2267726548fdd36f4ecd4814979ed6a5697",
+      "size": 3312986,
+      "sha256": "2771c0c928a292761b80787184bce85a6bb1c46d1cd86c9cca659eebadf75557",
       "status": "ok"
     },
     {
@@ -33,8 +33,8 @@
       "url": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml",
       "service": "adblock",
       "local": "sources/anti-ad/anti-ad-clash.yaml",
-      "size": 2722479,
-      "sha256": "42fe513a50ed97e9efc70e64a9b4eaf5e3678e9b2063015c21b9e0e39e189a18",
+      "size": 2711856,
+      "sha256": "74ec931f283a6c6b76eb0897ae99476fe4d1a0ffc1af5ad16d2202d07b64ed44",
       "status": "ok"
     }
   ],
