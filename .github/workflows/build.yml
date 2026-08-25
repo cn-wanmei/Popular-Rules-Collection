@@ -1,0 +1,38 @@
+name: Build Client Rules
+
+on:
+  workflow_run:
+    workflows: ["Normalize"]
+    types: [completed]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install deps
+        run: pip install pyyaml requests
+      - name: Build Mihomo
+        run: python scripts/build_mihomo.py
+      - name: Build sing-box
+        run: python scripts/build_singbox.py
+      - name: Build Surge
+        run: python scripts/build_surge.py
+      - name: Build Shadowrocket
+        run: python scripts/build_shadowrocket.py
+      - name: Build Quantumult X
+        run: python scripts/build_quantumultx.py
+      - name: Build Egern
+        run: python scripts/build_egern.py
+      - name: Commit generated
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add generated/
+          git diff --staged --quiet || git commit -m "chore(build): regenerate client rules $(date -u +%Y-%m-%d)"
+          git push
