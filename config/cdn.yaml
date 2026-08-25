@@ -1,0 +1,8 @@
+owner: cn-wanmei
+repo: Popular-Rules-Collection
+branch: main
+mirrors:
+  raw: "https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}"
+  jsdelivr: "https://cdn.jsdelivr.net/gh/{owner}/{repo}@{branch}/{path}"
+  fastly: "https://fastly.jsdelivr.net/gh/{owner}/{repo}@{branch}/{path}"
+  cloudflare: "https://ghproxy.net/https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}"
