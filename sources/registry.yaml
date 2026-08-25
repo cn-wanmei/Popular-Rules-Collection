@@ -38,6 +38,37 @@ sources:
       - { path: rule/Clash/China/China.yaml, name: china, local: Clash_China.yaml }
       - { path: rule/Surge/Apple/Apple.list, name: apple, local: Surge_Apple.list }
       - { path: rule/Surge/Google/Google.list, name: google, local: Surge_Google.list }
+      # --- S-batch 2026-08-25 ---
+      - { path: rule/Clash/Claude/Claude.yaml, name: claude, local: Clash_Claude.yaml }
+      - { path: rule/Clash/Gemini/Gemini.yaml, name: gemini, local: Clash_Gemini.yaml }
+      - { path: rule/Clash/Copilot/Copilot.yaml, name: copilot, local: Clash_Copilot.yaml }
+      - { path: rule/Clash/Spotify/Spotify.yaml, name: spotify, local: Clash_Spotify.yaml }
+      - { path: rule/Clash/Twitch/Twitch.yaml, name: twitch, local: Clash_Twitch.yaml }
+      - { path: rule/Clash/HBO/HBO.yaml, name: hbo, local: Clash_HBO.yaml }
+      - { path: rule/Clash/Hulu/Hulu.yaml, name: hulu, local: Clash_Hulu.yaml }
+      - { path: rule/Clash/AmazonPrimeVideo/AmazonPrimeVideo.yaml, name: primevideo, local: Clash_AmazonPrimeVideo.yaml }
+      - { path: rule/Clash/AppleTV/AppleTV.yaml, name: appletv, local: Clash_AppleTV.yaml }
+      - { path: rule/Clash/Reddit/Reddit.yaml, name: reddit, local: Clash_Reddit.yaml }
+      - { path: rule/Clash/Facebook/Facebook.yaml, name: facebook, local: Clash_Facebook.yaml }
+      - { path: rule/Clash/Instagram/Instagram.yaml, name: instagram, local: Clash_Instagram.yaml }
+      - { path: rule/Clash/Whatsapp/Whatsapp.yaml, name: whatsapp, local: Clash_Whatsapp.yaml }
+      - { path: rule/Clash/OneDrive/OneDrive.yaml, name: onedrive, local: Clash_OneDrive.yaml }
+      - { path: rule/Clash/GoogleFCM/GoogleFCM.yaml, name: googlefcm, local: Clash_GoogleFCM.yaml }
+      - { path: rule/Clash/PayPal/PayPal.yaml, name: paypal, local: Clash_PayPal.yaml }
+      - { path: rule/Clash/Epic/Epic.yaml, name: epic, local: Clash_Epic.yaml }
+      - { path: rule/Clash/Nintendo/Nintendo.yaml, name: nintendo, local: Clash_Nintendo.yaml }
+      - { path: rule/Clash/Xbox/Xbox.yaml, name: xbox, local: Clash_Xbox.yaml }
+      - { path: rule/Clash/PlayStation/PlayStation.yaml, name: playstation, local: Clash_PlayStation.yaml }
+      - { path: rule/Clash/EA/EA.yaml, name: ea, local: Clash_EA.yaml }
+      - { path: rule/Clash/Ubisoft/Ubisoft.yaml, name: ubisoft, local: Clash_Ubisoft.yaml }
+      - { path: rule/Clash/Rockstar/Rockstar.yaml, name: rockstar, local: Clash_Rockstar.yaml }
+      - { path: rule/Clash/HoYoverse/HoYoverse.yaml, name: hoyoverse, local: Clash_HoYoverse.yaml }
+      - { path: rule/Clash/Cloudflare/Cloudflare.yaml, name: cloudflare, local: Clash_Cloudflare.yaml }
+      - { path: rule/Clash/GitLab/GitLab.yaml, name: gitlab, local: Clash_GitLab.yaml }
+      - { path: rule/Clash/Developer/Developer.yaml, name: developer, local: Clash_Developer.yaml }
+      - { path: rule/Clash/Speedtest/Speedtest.yaml, name: speedtest, local: Clash_Speedtest.yaml }
+      - { path: rule/Clash/iCloud/iCloud.yaml, name: icloud, local: Clash_iCloud.yaml }
+      - { path: rule/Clash/AppleMusic/AppleMusic.yaml, name: applemusic, local: Clash_AppleMusic.yaml }
 
   - id: loyalsoldier
     name: Loyalsoldier clash-rules / v2ray-rules-dat
@@ -97,7 +128,7 @@ sources:
     trust: high
     score_hint: 97
     formats: [hosts, adblock, domains]
-    notes: Collects Light + Pro + Ultimate into adblock service (union). Profiles later.
+    notes: Ultimate→adblock (primary); Pro/Light as adblock-pro / adblock-light profiles.
     fetch:
       type: github_raw
       owner: hagezi
@@ -105,8 +136,8 @@ sources:
       branch: main
     rules:
       - { path: adblock/ultimate.txt, name: adblock, local: adblock-ultimate.txt }
-      - { path: adblock/pro.txt, name: adblock, local: adblock-pro.txt }
-      - { path: adblock/light.txt, name: adblock, local: adblock-light.txt }
+      - { path: adblock/pro.txt, name: adblock-pro, local: adblock-pro.txt }
+      - { path: adblock/light.txt, name: adblock-light, local: adblock-light.txt }
 
   - id: sukkaw
     name: SukkaW Surge Ruleset
@@ -125,7 +156,7 @@ sources:
     rules:
       - { path: List/non_ip/apple_services.conf, name: apple, local: non_ip_apple_services.conf }
       - { path: List/non_ip/microsoft.conf, name: microsoft, local: non_ip_microsoft.conf }
-      - { path: List/non_ip/ai.conf, name: openai, local: non_ip_ai.conf }
+      - { path: List/non_ip/ai.conf, name: ai, local: non_ip_ai.conf }
       - { path: List/non_ip/global.conf, name: proxy, local: non_ip_global.conf }
       - { path: List/non_ip/reject.conf, name: adblock, local: non_ip_reject.conf }
       - { path: List/ip/telegram.conf, name: telegram, local: ip_telegram.conf }
