@@ -2,6 +2,7 @@
 """
 normalize.py — V1.1 memory-efficient upstream → Universal Rule Schema
 - Streaming parse for large adblock lists
+- File→service mapping loaded from registry.yaml (no hardcoded list)
 - Full provenance only for non-adblock services
 - AdBlock written as domain aggregates + light metadata
 """
@@ -25,53 +26,29 @@ SERVICES = DATABASE / "services"
 DOMAINS = DATABASE / "domains"
 IPS = DATABASE / "ips"
 
-FILE_TO_SERVICE: dict[str, str] = {
-    "Clash_Apple.yaml": "apple",
-    "Surge_Apple.list": "apple",
-    "apple.txt": "apple",
-    "icloud.txt": "apple",
-    "Clash_Google.yaml": "google",
-    "Surge_Google.list": "google",
-    "google.txt": "google",
-    "Clash_Telegram.yaml": "telegram",
-    "telegramcidr.txt": "telegram",
-    "Clash_Netflix.yaml": "netflix",
-    "Clash_GitHub.yaml": "github",
-    "Clash_Microsoft.yaml": "microsoft",
-    "Clash_Discord.yaml": "discord",
-    "Clash_OpenAI.yaml": "openai",
-    "Clash_YouTube.yaml": "youtube",
-    "Clash_BiliBili.yaml": "bilibili",
-    "Clash_Steam.yaml": "steam",
-    "Clash_TikTok.yaml": "tiktok",
-    "Clash_Twitter.yaml": "twitter",
-    "Clash_Disney.yaml": "disney",
-    "Clash_China.yaml": "china",
-    "cncidr.txt": "china",
-    "direct.txt": "china",
-    "private.txt": "private",
-    "lancidr.txt": "private",
-    "reject.txt": "adblock",
-    "anti-ad-domains.txt": "adblock",
-    "anti-ad-surge.txt": "adblock",
-    "anti-ad-clash.yaml": "adblock",
-    "adblock-ultimate.txt": "adblock",
-    "adblock-pro.txt": "adblock",
-    "adblock-light.txt": "adblock",
-    "gfw.txt": "gfw",
-    "greatfire.txt": "gfw",
-    "proxy.txt": "proxy",
-    "tld-not-cn.txt": "proxy",
-    "applications.txt": "applications",
-    "non_ip_apple_services.conf": "apple",
-    "non_ip_microsoft.conf": "microsoft",
-    "non_ip_ai.conf": "openai",
-    "non_ip_global.conf": "proxy",
-    "non_ip_reject.conf": "adblock",
-    "ip_telegram.conf": "telegram",
-    "ip_china.conf": "china",
-    "domainset_reject.conf": "adblock",
-}
+
+def load_file_to_service() -> dict[str, str]:
+    """Build local-filename → service id strictly from registry.yaml."""
+    reg_path = ROOT / "sources" / "registry.yaml"
+    reg = yaml.safe_load(reg_path.read_text(encoding="utf-8")) or {}
+    mapping: dict[str, str] = {}
+    for src in reg.get("sources") or []:
+        for r in src.get("rules") or []:
+            name = r.get("name")
+            if not name:
+                continue
+            local = r.get("local")
+            path = r.get("path") or ""
+            if local:
+                mapping[local] = name
+            base = path.rsplit("/", 1)[-1] if path else ""
+            if base:
+                mapping[base] = name
+    return mapping
+
+
+FILE_TO_SERVICE: dict[str, str] = {}
+
 
 SERVICE_META: dict[str, dict[str, str]] = {
     "apple": {"name": "Apple", "category": "service"},
@@ -94,6 +71,39 @@ SERVICE_META: dict[str, dict[str, str]] = {
     "gfw": {"name": "GFW", "category": "network"},
     "proxy": {"name": "Proxy", "category": "network"},
     "applications": {"name": "Applications", "category": "other"},
+    "ai": {"name": "AI (aggregate)", "category": "ai"},
+    "claude": {"name": "Claude", "category": "ai"},
+    "gemini": {"name": "Gemini", "category": "ai"},
+    "copilot": {"name": "Copilot", "category": "ai"},
+    "spotify": {"name": "Spotify", "category": "streaming"},
+    "twitch": {"name": "Twitch", "category": "streaming"},
+    "hbo": {"name": "HBO / Max", "category": "streaming"},
+    "hulu": {"name": "Hulu", "category": "streaming"},
+    "primevideo": {"name": "Prime Video", "category": "streaming"},
+    "appletv": {"name": "Apple TV+", "category": "streaming"},
+    "reddit": {"name": "Reddit", "category": "social"},
+    "facebook": {"name": "Facebook", "category": "social"},
+    "instagram": {"name": "Instagram", "category": "social"},
+    "whatsapp": {"name": "WhatsApp", "category": "social"},
+    "onedrive": {"name": "OneDrive", "category": "service"},
+    "googlefcm": {"name": "Google FCM", "category": "service"},
+    "paypal": {"name": "PayPal", "category": "finance"},
+    "epic": {"name": "Epic Games", "category": "game"},
+    "nintendo": {"name": "Nintendo", "category": "game"},
+    "xbox": {"name": "Xbox", "category": "game"},
+    "playstation": {"name": "PlayStation", "category": "game"},
+    "ea": {"name": "EA", "category": "game"},
+    "ubisoft": {"name": "Ubisoft", "category": "game"},
+    "rockstar": {"name": "Rockstar", "category": "game"},
+    "hoyoverse": {"name": "HoYoverse", "category": "game"},
+    "cloudflare": {"name": "Cloudflare", "category": "developer"},
+    "gitlab": {"name": "GitLab", "category": "developer"},
+    "developer": {"name": "Developer", "category": "developer"},
+    "speedtest": {"name": "Speedtest", "category": "network"},
+    "icloud": {"name": "iCloud", "category": "service"},
+    "applemusic": {"name": "Apple Music", "category": "streaming"},
+    "adblock-pro": {"name": "AdBlock Pro", "category": "adblock"},
+    "adblock-light": {"name": "AdBlock Light", "category": "adblock"},
 }
 
 LARGE_SERVICES = {"adblock", "proxy", "china", "gfw"}
@@ -157,7 +167,9 @@ def parse_line(line: str) -> list[tuple[str, str]]:
         d = d[:-1]
     if d.startswith("@@"):
         return []
-    if PLAIN_DOMAIN.match(d) or (d and "." in d and " " not in d and "/" not in d and not d.startswith("-")):
+    if PLAIN_DOMAIN.match(d) or (
+        d and "." in d and " " not in d and "/" not in d and not d.startswith("-")
+    ):
         return [("domain_suffix", d)]
     return []
 
@@ -198,6 +210,9 @@ def main() -> int:
         print(f"[normalize] missing {day}")
         return 1
 
+    global FILE_TO_SERVICE
+    FILE_TO_SERVICE = load_file_to_service()
+    print(f"[normalize] registry file→service mappings: {len(FILE_TO_SERVICE)}")
     reg = yaml.safe_load((ROOT / "sources" / "registry.yaml").read_text(encoding="utf-8"))
     prio = {s["id"]: s.get("priority", 50) for s in reg.get("sources", [])}
 
