@@ -1,47 +1,5 @@
-# OS
-.DS_Store
-Thumbs.db
-
-# IDE / Editor
-.idea/
-.vscode/
-*.swp
-*.swo
-*~
-
-# Python
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
+*.pyc
 .venv/
-venv/
-env/
-.env
-*.egg-info/
-dist/
-build/
-
-# Temporary / Cache
-tmp/
-.cache/
-*.tmp
-*.log
-
-# Local secrets / tokens
-secrets/
-*.token
-.github_token
-
-# Optional local
-.venv/
-
-# CI commits database/ and generated/ (including mega lists).
-# Only the heaviest raw upstream backups are ignored; re-fetch via collect.py
-backup/**/sources/hagezi/adblock-ultimate.txt
-backup/**/sources/hagezi/adblock-pro.txt
-backup/**/sources/anti-ad/anti-ad-domains.txt
-backup/**/sources/loyalsoldier/reject.txt
-backup/**/sources/loyalsoldier/proxy.txt
-backup/**/sources/sukkaw/domainset_reject.conf
+# Legacy monolithic provenance — never commit (GitHub 100MB limit)
+database/provenance/domains.jsonl

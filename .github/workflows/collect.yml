@@ -40,7 +40,6 @@ jobs:
       - run: python scripts/conflict_detector.py
         continue-on-error: true
       - run: python scripts/provenance.py
-        continue-on-error: true
       - run: python scripts/build_mihomo.py
       - run: python scripts/build_singbox.py
       - run: python scripts/build_surge.py
@@ -54,12 +53,16 @@ jobs:
         continue-on-error: true
       - run: python scripts/statistics.py
         continue-on-error: true
+      - name: Size gate (90MB)
+        run: python scripts/size_gate.py --max-mb 90
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           DAY=$(date -u +%Y-%m-%d)
+          rm -f database/provenance/domains.jsonl
           git add -A database/ generated/ sources/health.yaml reports/ || true
           git add backup/*/manifests/ backup/ || true
+          python scripts/size_gate.py --max-mb 90
           git diff --staged --quiet || git commit -m "chore(pipeline): collect+normalize+build ${DAY}"
           git push
