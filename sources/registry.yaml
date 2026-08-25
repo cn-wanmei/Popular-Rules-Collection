@@ -1,6 +1,5 @@
 # Registry V3 — Source + Fetcher + Collection Manifest
 # Add a service: append under sources[].rules (path + name)
-# name = canonical service id; local = optional backup filename
 
 version: 3
 last_updated: "2026-08-25"
@@ -38,7 +37,6 @@ sources:
       - { path: rule/Clash/China/China.yaml, name: china, local: Clash_China.yaml }
       - { path: rule/Surge/Apple/Apple.list, name: apple, local: Surge_Apple.list }
       - { path: rule/Surge/Google/Google.list, name: google, local: Surge_Google.list }
-      # --- S-batch 2026-08-25 ---
       - { path: rule/Clash/Claude/Claude.yaml, name: claude, local: Clash_Claude.yaml }
       - { path: rule/Clash/Gemini/Gemini.yaml, name: gemini, local: Clash_Gemini.yaml }
       - { path: rule/Clash/Copilot/Copilot.yaml, name: copilot, local: Clash_Copilot.yaml }
@@ -69,6 +67,16 @@ sources:
       - { path: rule/Clash/Speedtest/Speedtest.yaml, name: speedtest, local: Clash_Speedtest.yaml }
       - { path: rule/Clash/iCloud/iCloud.yaml, name: icloud, local: Clash_iCloud.yaml }
       - { path: rule/Clash/AppleMusic/AppleMusic.yaml, name: applemusic, local: Clash_AppleMusic.yaml }
+      # --- batch2 ---
+      - { path: rule/Clash/Blizzard/Blizzard.yaml, name: battlenet, local: Clash_Blizzard.yaml }
+      - { path: rule/Clash/Riot/Riot.yaml, name: riotgames, local: Clash_Riot.yaml }
+      - { path: rule/Clash/Docker/Docker.yaml, name: docker, local: Clash_Docker.yaml }
+      - { path: rule/Clash/Vercel/Vercel.yaml, name: vercel, local: Clash_Vercel.yaml }
+      - { path: rule/Clash/Stripe/Stripe.yaml, name: stripe, local: Clash_Stripe.yaml }
+      - { path: rule/Clash/Binance/Binance.yaml, name: binance, local: Clash_Binance.yaml }
+      - { path: rule/Clash/OKX/OKX.yaml, name: okx, local: Clash_OKX.yaml }
+      - { path: rule/Clash/STUN/STUN.yaml, name: stun, local: Clash_STUN.yaml }
+      - { path: rule/Clash/ParamountPlus/ParamountPlus.yaml, name: paramountplus, local: Clash_ParamountPlus.yaml }
 
   - id: loyalsoldier
     name: Loyalsoldier clash-rules / v2ray-rules-dat
@@ -128,7 +136,7 @@ sources:
     trust: high
     score_hint: 97
     formats: [hosts, adblock, domains]
-    notes: Ultimate→adblock (primary); Pro/Light as adblock-pro / adblock-light profiles.
+    notes: Ultimate→adblock; Pro/Light as adblock-pro / adblock-light.
     fetch:
       type: github_raw
       owner: hagezi
@@ -147,7 +155,7 @@ sources:
     trust: high
     score_hint: 90
     formats: [surge, clash, sing-box]
-    notes: Rules served from ruleset.skk.moe CDN (not GitHub raw).
+    notes: Rules served from ruleset.skk.moe CDN.
     fetch:
       type: cdn
       bases:
