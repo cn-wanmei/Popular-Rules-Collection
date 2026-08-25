@@ -1,0 +1,54 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.env
+*.egg-info/
+dist/
+build/
+
+# Temporary / Cache
+tmp/
+.cache/
+*.tmp
+*.log
+
+# Local secrets / tokens
+secrets/
+*.token
+.github_token
+
+# Large upstream raw backups (re-collect via scripts/collect.py)
+backup/**/sources/hagezi/adblock-*.txt
+backup/**/sources/anti-ad/
+backup/**/sources/loyalsoldier/reject.txt
+backup/**/sources/loyalsoldier/direct.txt
+backup/**/sources/loyalsoldier/proxy.txt
+backup/**/sources/sukkaw/domainset_reject.conf
+
+# Mega generated lists (rebuild with scripts/build_*.py)
+generated/**/adblock.*
+generated/**/adblock_domain.list
+generated/**/china.*
+generated/**/china_domain.list
+generated/**/proxy.*
+generated/**/proxy_domain.list
+
+# Optional local
+.venv/
