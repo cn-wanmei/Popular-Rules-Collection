@@ -1,4 +1,55 @@
 {
+  "12306": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/12306.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/12306.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/12306.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/12306.yaml",
+      "path": "generated/mihomo/12306.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/12306.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/12306.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/12306.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/12306.json",
+      "path": "generated/sing-box/12306.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/12306.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/12306.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/12306.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/12306.list",
+      "path": "generated/surge/12306.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/12306.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/12306.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/12306.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/12306.list",
+      "path": "generated/shadowrocket/12306.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/12306.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/12306.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/12306.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/12306.list",
+      "path": "generated/quantumult-x/12306.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/12306.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/12306.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/12306.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/12306.yaml",
+      "path": "generated/egern/12306.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/12306.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/12306.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/12306.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/12306.list",
+      "path": "generated/loon/12306.list"
+    }
+  },
   "adblock-light": {
     "mihomo": {
       "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/adblock-light.yaml",
@@ -203,6 +254,159 @@
       "path": "generated/loon/ai.list"
     }
   },
+  "alibaba": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/alibaba.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/alibaba.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/alibaba.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/alibaba.yaml",
+      "path": "generated/mihomo/alibaba.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/alibaba.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/alibaba.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/alibaba.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/alibaba.json",
+      "path": "generated/sing-box/alibaba.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/alibaba.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/alibaba.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/alibaba.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/alibaba.list",
+      "path": "generated/surge/alibaba.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/alibaba.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/alibaba.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/alibaba.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/alibaba.list",
+      "path": "generated/shadowrocket/alibaba.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/alibaba.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/alibaba.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/alibaba.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/alibaba.list",
+      "path": "generated/quantumult-x/alibaba.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/alibaba.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/alibaba.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/alibaba.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/alibaba.yaml",
+      "path": "generated/egern/alibaba.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/alibaba.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/alibaba.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/alibaba.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/alibaba.list",
+      "path": "generated/loon/alibaba.list"
+    }
+  },
+  "alibabacloud": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/alibabacloud.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/alibabacloud.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/alibabacloud.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/alibabacloud.yaml",
+      "path": "generated/mihomo/alibabacloud.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/alibabacloud.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/alibabacloud.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/alibabacloud.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/alibabacloud.json",
+      "path": "generated/sing-box/alibabacloud.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/alibabacloud.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/alibabacloud.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/alibabacloud.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/alibabacloud.list",
+      "path": "generated/surge/alibabacloud.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/alibabacloud.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/alibabacloud.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/alibabacloud.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/alibabacloud.list",
+      "path": "generated/shadowrocket/alibabacloud.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/alibabacloud.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/alibabacloud.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/alibabacloud.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/alibabacloud.list",
+      "path": "generated/quantumult-x/alibabacloud.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/alibabacloud.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/alibabacloud.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/alibabacloud.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/alibabacloud.yaml",
+      "path": "generated/egern/alibabacloud.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/alibabacloud.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/alibabacloud.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/alibabacloud.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/alibabacloud.list",
+      "path": "generated/loon/alibabacloud.list"
+    }
+  },
+  "alipay": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/alipay.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/alipay.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/alipay.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/alipay.yaml",
+      "path": "generated/mihomo/alipay.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/alipay.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/alipay.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/alipay.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/alipay.json",
+      "path": "generated/sing-box/alipay.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/alipay.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/alipay.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/alipay.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/alipay.list",
+      "path": "generated/surge/alipay.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/alipay.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/alipay.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/alipay.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/alipay.list",
+      "path": "generated/shadowrocket/alipay.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/alipay.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/alipay.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/alipay.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/alipay.list",
+      "path": "generated/quantumult-x/alipay.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/alipay.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/alipay.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/alipay.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/alipay.yaml",
+      "path": "generated/egern/alipay.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/alipay.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/alipay.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/alipay.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/alipay.list",
+      "path": "generated/loon/alipay.list"
+    }
+  },
   "apple": {
     "mihomo": {
       "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/apple.yaml",
@@ -354,6 +558,57 @@
       "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/appletv.list",
       "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/appletv.list",
       "path": "generated/loon/appletv.list"
+    }
+  },
+  "baidu": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/baidu.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/baidu.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/baidu.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/baidu.yaml",
+      "path": "generated/mihomo/baidu.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/baidu.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/baidu.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/baidu.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/baidu.json",
+      "path": "generated/sing-box/baidu.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/baidu.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/baidu.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/baidu.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/baidu.list",
+      "path": "generated/surge/baidu.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/baidu.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/baidu.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/baidu.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/baidu.list",
+      "path": "generated/shadowrocket/baidu.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/baidu.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/baidu.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/baidu.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/baidu.list",
+      "path": "generated/quantumult-x/baidu.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/baidu.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/baidu.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/baidu.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/baidu.yaml",
+      "path": "generated/egern/baidu.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/baidu.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/baidu.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/baidu.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/baidu.list",
+      "path": "generated/loon/baidu.list"
     }
   },
   "battlenet": {
@@ -509,6 +764,57 @@
       "path": "generated/loon/binance.list"
     }
   },
+  "bytedance": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/bytedance.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/bytedance.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/bytedance.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/bytedance.yaml",
+      "path": "generated/mihomo/bytedance.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/bytedance.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/bytedance.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/bytedance.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/bytedance.json",
+      "path": "generated/sing-box/bytedance.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/bytedance.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/bytedance.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/bytedance.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/bytedance.list",
+      "path": "generated/surge/bytedance.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/bytedance.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/bytedance.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/bytedance.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/bytedance.list",
+      "path": "generated/shadowrocket/bytedance.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/bytedance.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/bytedance.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/bytedance.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/bytedance.list",
+      "path": "generated/quantumult-x/bytedance.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/bytedance.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/bytedance.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/bytedance.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/bytedance.yaml",
+      "path": "generated/egern/bytedance.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/bytedance.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/bytedance.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/bytedance.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/bytedance.list",
+      "path": "generated/loon/bytedance.list"
+    }
+  },
   "china": {
     "mihomo": {
       "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/china.yaml",
@@ -558,6 +864,159 @@
       "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/china.list",
       "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/china.list",
       "path": "generated/loon/china.list"
+    }
+  },
+  "chinamobile": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/chinamobile.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/chinamobile.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/chinamobile.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/chinamobile.yaml",
+      "path": "generated/mihomo/chinamobile.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/chinamobile.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/chinamobile.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/chinamobile.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/chinamobile.json",
+      "path": "generated/sing-box/chinamobile.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/chinamobile.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/chinamobile.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/chinamobile.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/chinamobile.list",
+      "path": "generated/surge/chinamobile.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/chinamobile.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/chinamobile.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/chinamobile.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/chinamobile.list",
+      "path": "generated/shadowrocket/chinamobile.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/chinamobile.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/chinamobile.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/chinamobile.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/chinamobile.list",
+      "path": "generated/quantumult-x/chinamobile.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/chinamobile.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/chinamobile.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/chinamobile.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/chinamobile.yaml",
+      "path": "generated/egern/chinamobile.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/chinamobile.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/chinamobile.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/chinamobile.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/chinamobile.list",
+      "path": "generated/loon/chinamobile.list"
+    }
+  },
+  "chinatelecom": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/chinatelecom.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/chinatelecom.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/chinatelecom.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/chinatelecom.yaml",
+      "path": "generated/mihomo/chinatelecom.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/chinatelecom.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/chinatelecom.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/chinatelecom.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/chinatelecom.json",
+      "path": "generated/sing-box/chinatelecom.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/chinatelecom.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/chinatelecom.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/chinatelecom.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/chinatelecom.list",
+      "path": "generated/surge/chinatelecom.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/chinatelecom.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/chinatelecom.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/chinatelecom.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/chinatelecom.list",
+      "path": "generated/shadowrocket/chinatelecom.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/chinatelecom.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/chinatelecom.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/chinatelecom.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/chinatelecom.list",
+      "path": "generated/quantumult-x/chinatelecom.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/chinatelecom.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/chinatelecom.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/chinatelecom.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/chinatelecom.yaml",
+      "path": "generated/egern/chinatelecom.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/chinatelecom.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/chinatelecom.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/chinatelecom.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/chinatelecom.list",
+      "path": "generated/loon/chinatelecom.list"
+    }
+  },
+  "chinaunicom": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/chinaunicom.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/chinaunicom.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/chinaunicom.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/chinaunicom.yaml",
+      "path": "generated/mihomo/chinaunicom.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/chinaunicom.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/chinaunicom.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/chinaunicom.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/chinaunicom.json",
+      "path": "generated/sing-box/chinaunicom.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/chinaunicom.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/chinaunicom.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/chinaunicom.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/chinaunicom.list",
+      "path": "generated/surge/chinaunicom.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/chinaunicom.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/chinaunicom.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/chinaunicom.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/chinaunicom.list",
+      "path": "generated/shadowrocket/chinaunicom.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/chinaunicom.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/chinaunicom.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/chinaunicom.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/chinaunicom.list",
+      "path": "generated/quantumult-x/chinaunicom.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/chinaunicom.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/chinaunicom.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/chinaunicom.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/chinaunicom.yaml",
+      "path": "generated/egern/chinaunicom.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/chinaunicom.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/chinaunicom.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/chinaunicom.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/chinaunicom.list",
+      "path": "generated/loon/chinaunicom.list"
     }
   },
   "claude": {
@@ -764,6 +1223,57 @@
       "path": "generated/loon/developer.list"
     }
   },
+  "didi": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/didi.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/didi.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/didi.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/didi.yaml",
+      "path": "generated/mihomo/didi.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/didi.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/didi.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/didi.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/didi.json",
+      "path": "generated/sing-box/didi.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/didi.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/didi.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/didi.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/didi.list",
+      "path": "generated/surge/didi.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/didi.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/didi.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/didi.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/didi.list",
+      "path": "generated/shadowrocket/didi.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/didi.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/didi.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/didi.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/didi.list",
+      "path": "generated/quantumult-x/didi.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/didi.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/didi.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/didi.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/didi.yaml",
+      "path": "generated/egern/didi.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/didi.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/didi.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/didi.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/didi.list",
+      "path": "generated/loon/didi.list"
+    }
+  },
   "discord": {
     "mihomo": {
       "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/discord.yaml",
@@ -915,6 +1425,57 @@
       "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/docker.list",
       "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/docker.list",
       "path": "generated/loon/docker.list"
+    }
+  },
+  "douyin": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/douyin.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/douyin.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/douyin.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/douyin.yaml",
+      "path": "generated/mihomo/douyin.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/douyin.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/douyin.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/douyin.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/douyin.json",
+      "path": "generated/sing-box/douyin.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/douyin.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/douyin.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/douyin.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/douyin.list",
+      "path": "generated/surge/douyin.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/douyin.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/douyin.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/douyin.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/douyin.list",
+      "path": "generated/shadowrocket/douyin.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/douyin.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/douyin.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/douyin.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/douyin.list",
+      "path": "generated/quantumult-x/douyin.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/douyin.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/douyin.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/douyin.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/douyin.yaml",
+      "path": "generated/egern/douyin.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/douyin.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/douyin.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/douyin.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/douyin.list",
+      "path": "generated/loon/douyin.list"
     }
   },
   "ea": {
@@ -1631,6 +2192,108 @@
       "path": "generated/loon/instagram.list"
     }
   },
+  "jingdong": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/jingdong.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/jingdong.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/jingdong.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/jingdong.yaml",
+      "path": "generated/mihomo/jingdong.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/jingdong.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/jingdong.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/jingdong.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/jingdong.json",
+      "path": "generated/sing-box/jingdong.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/jingdong.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/jingdong.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/jingdong.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/jingdong.list",
+      "path": "generated/surge/jingdong.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/jingdong.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/jingdong.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/jingdong.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/jingdong.list",
+      "path": "generated/shadowrocket/jingdong.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/jingdong.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/jingdong.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/jingdong.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/jingdong.list",
+      "path": "generated/quantumult-x/jingdong.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/jingdong.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/jingdong.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/jingdong.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/jingdong.yaml",
+      "path": "generated/egern/jingdong.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/jingdong.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/jingdong.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/jingdong.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/jingdong.list",
+      "path": "generated/loon/jingdong.list"
+    }
+  },
+  "meituan": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/meituan.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/meituan.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/meituan.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/meituan.yaml",
+      "path": "generated/mihomo/meituan.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/meituan.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/meituan.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/meituan.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/meituan.json",
+      "path": "generated/sing-box/meituan.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/meituan.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/meituan.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/meituan.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/meituan.list",
+      "path": "generated/surge/meituan.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/meituan.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/meituan.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/meituan.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/meituan.list",
+      "path": "generated/shadowrocket/meituan.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/meituan.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/meituan.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/meituan.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/meituan.list",
+      "path": "generated/quantumult-x/meituan.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/meituan.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/meituan.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/meituan.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/meituan.yaml",
+      "path": "generated/egern/meituan.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/meituan.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/meituan.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/meituan.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/meituan.list",
+      "path": "generated/loon/meituan.list"
+    }
+  },
   "microsoft": {
     "mihomo": {
       "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/microsoft.yaml",
@@ -1680,6 +2343,57 @@
       "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/microsoft.list",
       "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/microsoft.list",
       "path": "generated/loon/microsoft.list"
+    }
+  },
+  "netease": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/netease.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/netease.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/netease.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/netease.yaml",
+      "path": "generated/mihomo/netease.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/netease.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/netease.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/netease.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/netease.json",
+      "path": "generated/sing-box/netease.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/netease.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/netease.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/netease.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/netease.list",
+      "path": "generated/surge/netease.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/netease.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/netease.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/netease.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/netease.list",
+      "path": "generated/shadowrocket/netease.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/netease.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/netease.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/netease.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/netease.list",
+      "path": "generated/quantumult-x/netease.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/netease.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/netease.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/netease.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/netease.yaml",
+      "path": "generated/egern/netease.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/netease.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/netease.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/netease.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/netease.list",
+      "path": "generated/loon/netease.list"
     }
   },
   "netflix": {
@@ -2037,6 +2751,57 @@
       "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/paypal.list",
       "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/paypal.list",
       "path": "generated/loon/paypal.list"
+    }
+  },
+  "pinduoduo": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/pinduoduo.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/pinduoduo.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/pinduoduo.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/pinduoduo.yaml",
+      "path": "generated/mihomo/pinduoduo.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/pinduoduo.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/pinduoduo.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/pinduoduo.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/pinduoduo.json",
+      "path": "generated/sing-box/pinduoduo.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/pinduoduo.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/pinduoduo.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/pinduoduo.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/pinduoduo.list",
+      "path": "generated/surge/pinduoduo.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/pinduoduo.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/pinduoduo.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/pinduoduo.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/pinduoduo.list",
+      "path": "generated/shadowrocket/pinduoduo.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/pinduoduo.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/pinduoduo.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/pinduoduo.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/pinduoduo.list",
+      "path": "generated/quantumult-x/pinduoduo.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/pinduoduo.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/pinduoduo.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/pinduoduo.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/pinduoduo.yaml",
+      "path": "generated/egern/pinduoduo.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/pinduoduo.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/pinduoduo.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/pinduoduo.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/pinduoduo.list",
+      "path": "generated/loon/pinduoduo.list"
     }
   },
   "playstation": {
@@ -2702,6 +3467,108 @@
       "path": "generated/loon/telegram.list"
     }
   },
+  "tencent": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/tencent.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/tencent.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/tencent.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/tencent.yaml",
+      "path": "generated/mihomo/tencent.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/tencent.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/tencent.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/tencent.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/tencent.json",
+      "path": "generated/sing-box/tencent.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/tencent.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/tencent.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/tencent.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/tencent.list",
+      "path": "generated/surge/tencent.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/tencent.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/tencent.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/tencent.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/tencent.list",
+      "path": "generated/shadowrocket/tencent.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/tencent.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/tencent.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/tencent.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/tencent.list",
+      "path": "generated/quantumult-x/tencent.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/tencent.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/tencent.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/tencent.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/tencent.yaml",
+      "path": "generated/egern/tencent.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/tencent.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/tencent.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/tencent.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/tencent.list",
+      "path": "generated/loon/tencent.list"
+    }
+  },
+  "tencentvideo": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/tencentvideo.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/tencentvideo.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/tencentvideo.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/tencentvideo.yaml",
+      "path": "generated/mihomo/tencentvideo.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/tencentvideo.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/tencentvideo.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/tencentvideo.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/tencentvideo.json",
+      "path": "generated/sing-box/tencentvideo.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/tencentvideo.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/tencentvideo.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/tencentvideo.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/tencentvideo.list",
+      "path": "generated/surge/tencentvideo.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/tencentvideo.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/tencentvideo.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/tencentvideo.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/tencentvideo.list",
+      "path": "generated/shadowrocket/tencentvideo.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/tencentvideo.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/tencentvideo.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/tencentvideo.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/tencentvideo.list",
+      "path": "generated/quantumult-x/tencentvideo.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/tencentvideo.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/tencentvideo.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/tencentvideo.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/tencentvideo.yaml",
+      "path": "generated/egern/tencentvideo.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/tencentvideo.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/tencentvideo.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/tencentvideo.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/tencentvideo.list",
+      "path": "generated/loon/tencentvideo.list"
+    }
+  },
   "tiktok": {
     "mihomo": {
       "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/tiktok.yaml",
@@ -2906,6 +3773,57 @@
       "path": "generated/loon/ubisoft.list"
     }
   },
+  "unionpay": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/unionpay.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/unionpay.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/unionpay.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/unionpay.yaml",
+      "path": "generated/mihomo/unionpay.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/unionpay.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/unionpay.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/unionpay.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/unionpay.json",
+      "path": "generated/sing-box/unionpay.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/unionpay.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/unionpay.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/unionpay.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/unionpay.list",
+      "path": "generated/surge/unionpay.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/unionpay.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/unionpay.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/unionpay.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/unionpay.list",
+      "path": "generated/shadowrocket/unionpay.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/unionpay.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/unionpay.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/unionpay.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/unionpay.list",
+      "path": "generated/quantumult-x/unionpay.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/unionpay.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/unionpay.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/unionpay.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/unionpay.yaml",
+      "path": "generated/egern/unionpay.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/unionpay.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/unionpay.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/unionpay.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/unionpay.list",
+      "path": "generated/loon/unionpay.list"
+    }
+  },
   "vercel": {
     "mihomo": {
       "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/vercel.yaml",
@@ -2955,6 +3873,57 @@
       "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/vercel.list",
       "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/vercel.list",
       "path": "generated/loon/vercel.list"
+    }
+  },
+  "wechat": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/wechat.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/wechat.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/wechat.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/wechat.yaml",
+      "path": "generated/mihomo/wechat.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/wechat.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/wechat.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/wechat.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/wechat.json",
+      "path": "generated/sing-box/wechat.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/wechat.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/wechat.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/wechat.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/wechat.list",
+      "path": "generated/surge/wechat.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/wechat.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/wechat.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/wechat.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/wechat.list",
+      "path": "generated/shadowrocket/wechat.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/wechat.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/wechat.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/wechat.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/wechat.list",
+      "path": "generated/quantumult-x/wechat.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/wechat.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/wechat.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/wechat.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/wechat.yaml",
+      "path": "generated/egern/wechat.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/wechat.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/wechat.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/wechat.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/wechat.list",
+      "path": "generated/loon/wechat.list"
     }
   },
   "whatsapp": {
@@ -3057,6 +4026,57 @@
       "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/xbox.list",
       "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/xbox.list",
       "path": "generated/loon/xbox.list"
+    }
+  },
+  "xiaohongshu": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/xiaohongshu.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/xiaohongshu.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/xiaohongshu.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/xiaohongshu.yaml",
+      "path": "generated/mihomo/xiaohongshu.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/xiaohongshu.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/xiaohongshu.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/xiaohongshu.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/xiaohongshu.json",
+      "path": "generated/sing-box/xiaohongshu.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/xiaohongshu.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/xiaohongshu.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/xiaohongshu.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/xiaohongshu.list",
+      "path": "generated/surge/xiaohongshu.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/xiaohongshu.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/xiaohongshu.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/xiaohongshu.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/xiaohongshu.list",
+      "path": "generated/shadowrocket/xiaohongshu.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/xiaohongshu.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/xiaohongshu.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/xiaohongshu.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/xiaohongshu.list",
+      "path": "generated/quantumult-x/xiaohongshu.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/xiaohongshu.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/xiaohongshu.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/xiaohongshu.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/xiaohongshu.yaml",
+      "path": "generated/egern/xiaohongshu.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/xiaohongshu.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/xiaohongshu.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/xiaohongshu.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/xiaohongshu.list",
+      "path": "generated/loon/xiaohongshu.list"
     }
   },
   "youtube": {

@@ -4,6 +4,18 @@
   "warnings": [],
   "rows": [
     {
+      "service": "12306",
+      "database": 15,
+      "clients": {
+        "mihomo": 30,
+        "sing-box": 24,
+        "surge": 30,
+        "shadowrocket": 30,
+        "quantumult-x": 16,
+        "egern": 15
+      }
+    },
+    {
       "service": "adblock-light",
       "database": 42098,
       "clients": {
@@ -52,6 +64,42 @@
       }
     },
     {
+      "service": "alibaba",
+      "database": 517,
+      "clients": {
+        "mihomo": 1034,
+        "sing-box": 528,
+        "surge": 980,
+        "shadowrocket": 1034,
+        "quantumult-x": 572,
+        "egern": 571
+      }
+    },
+    {
+      "service": "alibabacloud",
+      "database": 12,
+      "clients": {
+        "mihomo": 24,
+        "sing-box": 21,
+        "surge": 24,
+        "shadowrocket": 24,
+        "quantumult-x": 13,
+        "egern": 12
+      }
+    },
+    {
+      "service": "alipay",
+      "database": 21,
+      "clients": {
+        "mihomo": 42,
+        "sing-box": 30,
+        "surge": 42,
+        "shadowrocket": 42,
+        "quantumult-x": 22,
+        "egern": 21
+      }
+    },
+    {
       "service": "apple",
       "database": 244,
       "clients": {
@@ -88,6 +136,18 @@
       }
     },
     {
+      "service": "baidu",
+      "database": 324,
+      "clients": {
+        "mihomo": 648,
+        "sing-box": 333,
+        "surge": 648,
+        "shadowrocket": 648,
+        "quantumult-x": 325,
+        "egern": 324
+      }
+    },
+    {
       "service": "battlenet",
       "database": 62,
       "clients": {
@@ -101,14 +161,14 @@
     },
     {
       "service": "bilibili",
-      "database": 123,
+      "database": 128,
       "clients": {
-        "mihomo": 246,
-        "sing-box": 136,
-        "surge": 238,
-        "shadowrocket": 246,
-        "quantumult-x": 132,
-        "egern": 131
+        "mihomo": 256,
+        "sing-box": 141,
+        "surge": 248,
+        "shadowrocket": 256,
+        "quantumult-x": 137,
+        "egern": 136
       }
     },
     {
@@ -124,6 +184,18 @@
       }
     },
     {
+      "service": "bytedance",
+      "database": 1075,
+      "clients": {
+        "mihomo": 2150,
+        "sing-box": 1086,
+        "surge": 2149,
+        "shadowrocket": 2150,
+        "quantumult-x": 1077,
+        "egern": 1076
+      }
+    },
+    {
       "service": "china",
       "database": 117358,
       "clients": {
@@ -133,6 +205,42 @@
         "shadowrocket": 228868,
         "quantumult-x": 117359,
         "egern": 117358
+      }
+    },
+    {
+      "service": "chinamobile",
+      "database": 36,
+      "clients": {
+        "mihomo": 72,
+        "sing-box": 47,
+        "surge": 71,
+        "shadowrocket": 72,
+        "quantumult-x": 38,
+        "egern": 37
+      }
+    },
+    {
+      "service": "chinatelecom",
+      "database": 83,
+      "clients": {
+        "mihomo": 166,
+        "sing-box": 92,
+        "surge": 166,
+        "shadowrocket": 166,
+        "quantumult-x": 84,
+        "egern": 83
+      }
+    },
+    {
+      "service": "chinaunicom",
+      "database": 34,
+      "clients": {
+        "mihomo": 68,
+        "sing-box": 45,
+        "surge": 67,
+        "shadowrocket": 68,
+        "quantumult-x": 36,
+        "egern": 35
       }
     },
     {
@@ -184,6 +292,18 @@
       }
     },
     {
+      "service": "didi",
+      "database": 25,
+      "clients": {
+        "mihomo": 50,
+        "sing-box": 34,
+        "surge": 50,
+        "shadowrocket": 50,
+        "quantumult-x": 26,
+        "egern": 25
+      }
+    },
+    {
       "service": "discord",
       "database": 29,
       "clients": {
@@ -217,6 +337,18 @@
         "shadowrocket": 14,
         "quantumult-x": 8,
         "egern": 7
+      }
+    },
+    {
+      "service": "douyin",
+      "database": 13,
+      "clients": {
+        "mihomo": 26,
+        "sing-box": 24,
+        "surge": 26,
+        "shadowrocket": 26,
+        "quantumult-x": 14,
+        "egern": 13
       }
     },
     {
@@ -388,6 +520,30 @@
       }
     },
     {
+      "service": "jingdong",
+      "database": 265,
+      "clients": {
+        "mihomo": 530,
+        "sing-box": 274,
+        "surge": 530,
+        "shadowrocket": 530,
+        "quantumult-x": 266,
+        "egern": 265
+      }
+    },
+    {
+      "service": "meituan",
+      "database": 7,
+      "clients": {
+        "mihomo": 14,
+        "sing-box": 16,
+        "surge": 14,
+        "shadowrocket": 14,
+        "quantumult-x": 8,
+        "egern": 7
+      }
+    },
+    {
       "service": "microsoft",
       "database": 666,
       "clients": {
@@ -397,6 +553,18 @@
         "shadowrocket": 1337,
         "quantumult-x": 672,
         "egern": 671
+      }
+    },
+    {
+      "service": "netease",
+      "database": 165,
+      "clients": {
+        "mihomo": 330,
+        "sing-box": 178,
+        "surge": 302,
+        "shadowrocket": 330,
+        "quantumult-x": 194,
+        "egern": 193
       }
     },
     {
@@ -481,6 +649,18 @@
         "shadowrocket": 493,
         "quantumult-x": 248,
         "egern": 247
+      }
+    },
+    {
+      "service": "pinduoduo",
+      "database": 3,
+      "clients": {
+        "mihomo": 6,
+        "sing-box": 12,
+        "surge": 6,
+        "shadowrocket": 6,
+        "quantumult-x": 4,
+        "egern": 3
       }
     },
     {
@@ -640,6 +820,30 @@
       }
     },
     {
+      "service": "tencent",
+      "database": 698,
+      "clients": {
+        "mihomo": 1396,
+        "sing-box": 709,
+        "surge": 1376,
+        "shadowrocket": 1396,
+        "quantumult-x": 719,
+        "egern": 718
+      }
+    },
+    {
+      "service": "tencentvideo",
+      "database": 51,
+      "clients": {
+        "mihomo": 102,
+        "sing-box": 64,
+        "surge": 70,
+        "shadowrocket": 102,
+        "quantumult-x": 84,
+        "egern": 83
+      }
+    },
+    {
       "service": "tiktok",
       "database": 29,
       "clients": {
@@ -688,6 +892,18 @@
       }
     },
     {
+      "service": "unionpay",
+      "database": 16,
+      "clients": {
+        "mihomo": 32,
+        "sing-box": 25,
+        "surge": 32,
+        "shadowrocket": 32,
+        "quantumult-x": 17,
+        "egern": 16
+      }
+    },
+    {
       "service": "vercel",
       "database": 27,
       "clients": {
@@ -697,6 +913,18 @@
         "shadowrocket": 54,
         "quantumult-x": 28,
         "egern": 27
+      }
+    },
+    {
+      "service": "wechat",
+      "database": 30,
+      "clients": {
+        "mihomo": 60,
+        "sing-box": 41,
+        "surge": 60,
+        "shadowrocket": 60,
+        "quantumult-x": 31,
+        "egern": 30
       }
     },
     {
@@ -721,6 +949,18 @@
         "shadowrocket": 84,
         "quantumult-x": 43,
         "egern": 42
+      }
+    },
+    {
+      "service": "xiaohongshu",
+      "database": 4,
+      "clients": {
+        "mihomo": 8,
+        "sing-box": 13,
+        "surge": 8,
+        "shadowrocket": 8,
+        "quantumult-x": 5,
+        "egern": 4
       }
     },
     {

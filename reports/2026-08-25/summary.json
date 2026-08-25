@@ -1,14 +1,14 @@
 {
   "date": "2026-08-25",
-  "sources": 5,
-  "services": 61,
-  "domains": 817527,
-  "cidr": 6109,
+  "sources": 6,
+  "services": 81,
+  "domains": 820789,
+  "cidr": 6246,
   "conflicts": {
     "critical": 0,
     "high": 0,
     "medium": 0,
-    "low": 1764
+    "low": 4938
   },
   "build": {
     "mihomo": "success",
@@ -23,6 +23,7 @@
     "blackmatrix7": "healthy",
     "loyalsoldier": "healthy",
     "anti-ad": "healthy",
-    "hagezi": "healthy"
+    "hagezi": "healthy",
+    "metacubex": "healthy"
   }
 }

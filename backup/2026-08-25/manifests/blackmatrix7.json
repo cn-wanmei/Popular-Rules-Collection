@@ -1,11 +1,11 @@
 {
   "source": "blackmatrix7",
   "fetch": "github_raw",
-  "timestamp": "2026-08-25T12:47:55.558884+00:00",
-  "files_ok": 56,
+  "timestamp": "2026-08-25T13:20:55.193655+00:00",
+  "files_ok": 75,
   "files_failed": 0,
   "empty_blocked": 0,
-  "rules_declared": 56,
+  "rules_declared": 75,
   "files": [
     {
       "name": "Clash_Apple.yaml",
@@ -565,6 +565,196 @@
       "local": "sources/blackmatrix7/Clash_ParamountPlus.yaml",
       "size": 496,
       "sha256": "5985fa97cf0ccee3ac9b428c0d3ddc63bcfa9713a77165cde328156c33cec199",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Alibaba.yaml",
+      "path": "rule/Clash/Alibaba/Alibaba.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Alibaba/Alibaba.yaml",
+      "service": "alibaba",
+      "local": "sources/blackmatrix7/Clash_Alibaba.yaml",
+      "size": 1697,
+      "sha256": "032960207f577289598d8153ae3e6e3d03f9a2e3f835496752c3c6b3c3fdaf97",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_AliPay.yaml",
+      "path": "rule/Clash/AliPay/AliPay.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AliPay/AliPay.yaml",
+      "service": "alipay",
+      "local": "sources/blackmatrix7/Clash_AliPay.yaml",
+      "size": 842,
+      "sha256": "0bad2e7ba4a5f12d4e2e3956805512517e47fe611c7927633fd4f18265db40e4",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Tencent.yaml",
+      "path": "rule/Clash/Tencent/Tencent.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tencent/Tencent.yaml",
+      "service": "tencent",
+      "local": "sources/blackmatrix7/Clash_Tencent.yaml",
+      "size": 753,
+      "sha256": "0a5f578e2b837c757de278bed80e6a5092aa22741d723ffc722095f4ba99b420",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_WeChat.yaml",
+      "path": "rule/Clash/WeChat/WeChat.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml",
+      "service": "wechat",
+      "local": "sources/blackmatrix7/Clash_WeChat.yaml",
+      "size": 1145,
+      "sha256": "10a541b6a4a2d13b47c61bc67fca72c78ba9c0a024bc439e3d83f8e398abb60a",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_ByteDance.yaml",
+      "path": "rule/Clash/ByteDance/ByteDance.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ByteDance/ByteDance.yaml",
+      "service": "bytedance",
+      "local": "sources/blackmatrix7/Clash_ByteDance.yaml",
+      "size": 12233,
+      "sha256": "7f0d32aacbe266ce4f1462d21e117ad1656617e0a1eb8f29c6dff6e5a5e99082",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_DouYin.yaml",
+      "path": "rule/Clash/DouYin/DouYin.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DouYin/DouYin.yaml",
+      "service": "douyin",
+      "local": "sources/blackmatrix7/Clash_DouYin.yaml",
+      "size": 594,
+      "sha256": "fdfe20393b17988455f7715a8be15166b097c071551b938049874d39675dee41",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Baidu.yaml",
+      "path": "rule/Clash/Baidu/Baidu.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Baidu/Baidu.yaml",
+      "service": "baidu",
+      "local": "sources/blackmatrix7/Clash_Baidu.yaml",
+      "size": 7994,
+      "sha256": "178ccb2d030efb23039388ad62de8d20a7579620a1ce69389fd27eef97bda9db",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_JingDong.yaml",
+      "path": "rule/Clash/JingDong/JingDong.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/JingDong/JingDong.yaml",
+      "service": "jingdong",
+      "local": "sources/blackmatrix7/Clash_JingDong.yaml",
+      "size": 8249,
+      "sha256": "20a052bb10e0601f25afca13df5cae1448c022ed148f9d523870fd075f9c9c5e",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_NetEase.yaml",
+      "path": "rule/Clash/NetEase/NetEase.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/NetEase/NetEase.yaml",
+      "service": "netease",
+      "local": "sources/blackmatrix7/Clash_NetEase.yaml",
+      "size": 4571,
+      "sha256": "6042ebc1538821bc358a577146f3c50984d1f00fbeea6aae3506855609e344b4",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_ChinaMobile.yaml",
+      "path": "rule/Clash/ChinaMobile/ChinaMobile.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMobile/ChinaMobile.yaml",
+      "service": "chinamobile",
+      "local": "sources/blackmatrix7/Clash_ChinaMobile.yaml",
+      "size": 1280,
+      "sha256": "01cc2bb566d4f3d5dd4ddf68e24c015364210470e482317aedaedeab260a2bcb",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_ChinaUnicom.yaml",
+      "path": "rule/Clash/ChinaUnicom/ChinaUnicom.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaUnicom/ChinaUnicom.yaml",
+      "service": "chinaunicom",
+      "local": "sources/blackmatrix7/Clash_ChinaUnicom.yaml",
+      "size": 1248,
+      "sha256": "aa293341b3223130cba1138a776cb6882f40e856567a50df9befcd004688c15c",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_ChinaTelecom.yaml",
+      "path": "rule/Clash/ChinaTelecom/ChinaTelecom.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaTelecom/ChinaTelecom.yaml",
+      "service": "chinatelecom",
+      "local": "sources/blackmatrix7/Clash_ChinaTelecom.yaml",
+      "size": 2676,
+      "sha256": "0f4029bc5a473c5dbbbfa910242b7c80ca01030407bd848128827f9755d9f8b9",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_12306.yaml",
+      "path": "rule/Clash/12306/12306.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/12306/12306.yaml",
+      "service": "12306",
+      "local": "sources/blackmatrix7/Clash_12306.yaml",
+      "size": 612,
+      "sha256": "b8c7201b36e7ddb8913562912ae812a4cbd76e8d4d3998c1377222b74e0a0acd",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_UnionPay.yaml",
+      "path": "rule/Clash/UnionPay/UnionPay.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/UnionPay/UnionPay.yaml",
+      "service": "unionpay",
+      "local": "sources/blackmatrix7/Clash_UnionPay.yaml",
+      "size": 689,
+      "sha256": "ec00aadea470ca813aea3952f78a2fedcbe43bdf4bfe00404877efd392ccce51",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_DiDi.yaml",
+      "path": "rule/Clash/DiDi/DiDi.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DiDi/DiDi.yaml",
+      "service": "didi",
+      "local": "sources/blackmatrix7/Clash_DiDi.yaml",
+      "size": 972,
+      "sha256": "ba6dc39684ec5a5df8e065a59d031f1ea2a3292e6f58cb28a2d6742e9a0ac73a",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Pinduoduo.yaml",
+      "path": "rule/Clash/Pinduoduo/Pinduoduo.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Pinduoduo/Pinduoduo.yaml",
+      "service": "pinduoduo",
+      "local": "sources/blackmatrix7/Clash_Pinduoduo.yaml",
+      "size": 260,
+      "sha256": "9c022acf368bd6bcdfadf9f7445e84c2d13c586209b192e25643a9ffc8720473",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_MeiTuan.yaml",
+      "path": "rule/Clash/MeiTuan/MeiTuan.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MeiTuan/MeiTuan.yaml",
+      "service": "meituan",
+      "local": "sources/blackmatrix7/Clash_MeiTuan.yaml",
+      "size": 371,
+      "sha256": "a7238babc4f9385cfe0d02002ab98d834744843b8ade2684728fcfb02acd1990",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_XiaoHongShu.yaml",
+      "path": "rule/Clash/XiaoHongShu/XiaoHongShu.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/XiaoHongShu/XiaoHongShu.yaml",
+      "service": "xiaohongshu",
+      "local": "sources/blackmatrix7/Clash_XiaoHongShu.yaml",
+      "size": 297,
+      "sha256": "f475fb523fdffc68b311e7eba595effe060a11c8226355c012ba8caefe4a976b",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_TencentVideo.yaml",
+      "path": "rule/Clash/TencentVideo/TencentVideo.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TencentVideo/TencentVideo.yaml",
+      "service": "tencentvideo",
+      "local": "sources/blackmatrix7/Clash_TencentVideo.yaml",
+      "size": 2131,
+      "sha256": "bce56e741ff1e17d6c0e9131353f16f19ae7d0e821a303b7794e512778d541cb",
       "status": "ok"
     }
   ],
