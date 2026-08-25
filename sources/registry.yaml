@@ -1,6 +1,4 @@
 # Registry V3 — Source + Fetcher + Collection Manifest
-# Add a service: append under sources[].rules (path + name)
-
 version: 3
 last_updated: "2026-08-25"
 
@@ -67,7 +65,6 @@ sources:
       - { path: rule/Clash/Speedtest/Speedtest.yaml, name: speedtest, local: Clash_Speedtest.yaml }
       - { path: rule/Clash/iCloud/iCloud.yaml, name: icloud, local: Clash_iCloud.yaml }
       - { path: rule/Clash/AppleMusic/AppleMusic.yaml, name: applemusic, local: Clash_AppleMusic.yaml }
-      # --- batch2 ---
       - { path: rule/Clash/Blizzard/Blizzard.yaml, name: battlenet, local: Clash_Blizzard.yaml }
       - { path: rule/Clash/Riot/Riot.yaml, name: riotgames, local: Clash_Riot.yaml }
       - { path: rule/Clash/Docker/Docker.yaml, name: docker, local: Clash_Docker.yaml }
@@ -77,6 +74,26 @@ sources:
       - { path: rule/Clash/OKX/OKX.yaml, name: okx, local: Clash_OKX.yaml }
       - { path: rule/Clash/STUN/STUN.yaml, name: stun, local: Clash_STUN.yaml }
       - { path: rule/Clash/ParamountPlus/ParamountPlus.yaml, name: paramountplus, local: Clash_ParamountPlus.yaml }
+      # --- China domestic P0 ---
+      - { path: rule/Clash/Alibaba/Alibaba.yaml, name: alibaba, local: Clash_Alibaba.yaml }
+      - { path: rule/Clash/AliPay/AliPay.yaml, name: alipay, local: Clash_AliPay.yaml }
+      - { path: rule/Clash/Tencent/Tencent.yaml, name: tencent, local: Clash_Tencent.yaml }
+      - { path: rule/Clash/WeChat/WeChat.yaml, name: wechat, local: Clash_WeChat.yaml }
+      - { path: rule/Clash/ByteDance/ByteDance.yaml, name: bytedance, local: Clash_ByteDance.yaml }
+      - { path: rule/Clash/DouYin/DouYin.yaml, name: douyin, local: Clash_DouYin.yaml }
+      - { path: rule/Clash/Baidu/Baidu.yaml, name: baidu, local: Clash_Baidu.yaml }
+      - { path: rule/Clash/JingDong/JingDong.yaml, name: jingdong, local: Clash_JingDong.yaml }
+      - { path: rule/Clash/NetEase/NetEase.yaml, name: netease, local: Clash_NetEase.yaml }
+      - { path: rule/Clash/ChinaMobile/ChinaMobile.yaml, name: chinamobile, local: Clash_ChinaMobile.yaml }
+      - { path: rule/Clash/ChinaUnicom/ChinaUnicom.yaml, name: chinaunicom, local: Clash_ChinaUnicom.yaml }
+      - { path: rule/Clash/ChinaTelecom/ChinaTelecom.yaml, name: chinatelecom, local: Clash_ChinaTelecom.yaml }
+      - { path: rule/Clash/12306/12306.yaml, name: "12306", local: Clash_12306.yaml }
+      - { path: rule/Clash/UnionPay/UnionPay.yaml, name: unionpay, local: Clash_UnionPay.yaml }
+      - { path: rule/Clash/DiDi/DiDi.yaml, name: didi, local: Clash_DiDi.yaml }
+      - { path: rule/Clash/Pinduoduo/Pinduoduo.yaml, name: pinduoduo, local: Clash_Pinduoduo.yaml }
+      - { path: rule/Clash/MeiTuan/MeiTuan.yaml, name: meituan, local: Clash_MeiTuan.yaml }
+      - { path: rule/Clash/XiaoHongShu/XiaoHongShu.yaml, name: xiaohongshu, local: Clash_XiaoHongShu.yaml }
+      - { path: rule/Clash/TencentVideo/TencentVideo.yaml, name: tencentvideo, local: Clash_TencentVideo.yaml }
 
   - id: loyalsoldier
     name: Loyalsoldier clash-rules / v2ray-rules-dat
@@ -86,8 +103,7 @@ sources:
     trust: high
     score_hint: 98
     formats: [clash, geosite, geoip]
-    related: [https://github.com/Loyalsoldier/v2ray-rules-dat]
-    notes: Excellent China / GFW / geosite quality. Preferred for geo data.
+    notes: Excellent China / GFW / geosite quality.
     fetch:
       type: github_raw
       owner: Loyalsoldier
@@ -117,7 +133,7 @@ sources:
     trust: high
     score_hint: 92
     formats: [hosts, dnsmasq, surge, clash]
-    notes: Strong ad/privacy domain list. Prefer for AdBlock domain layer.
+    notes: Strong ad/privacy domain list.
     fetch:
       type: github_raw
       owner: privacy-protection-tools
@@ -136,7 +152,7 @@ sources:
     trust: high
     score_hint: 97
     formats: [hosts, adblock, domains]
-    notes: Ultimate→adblock; Pro/Light as adblock-pro / adblock-light.
+    notes: Ultimate→adblock; Pro/Light as profiles.
     fetch:
       type: github_raw
       owner: hagezi
@@ -155,7 +171,7 @@ sources:
     trust: high
     score_hint: 90
     formats: [surge, clash, sing-box]
-    notes: Rules served from ruleset.skk.moe CDN.
+    notes: CDN ruleset.skk.moe
     fetch:
       type: cdn
       bases:
@@ -170,3 +186,30 @@ sources:
       - { path: List/ip/telegram.conf, name: telegram, local: ip_telegram.conf }
       - { path: List/ip/china_ip.conf, name: china, local: ip_china.conf }
       - { path: List/domainset/reject.conf, name: adblock, local: domainset_reject.conf }
+
+  - id: metacubex
+    name: MetaCubeX meta-rules-dat
+    url: https://github.com/MetaCubeX/meta-rules-dat
+    enabled: true
+    priority: 92
+    trust: high
+    score_hint: 94
+    formats: [geosite, list, yaml, mrs]
+    notes: >-
+      Daily geosite classical lists. Best public source for company-level CN tags
+      (alibaba/tencent/baidu/bytedance/jd) when BM has no taobao/qq dirs.
+      Built from v2fly domain-list-community + enhancements.
+    fetch:
+      type: github_raw
+      owner: MetaCubeX
+      repo: meta-rules-dat
+      branch: meta
+    rules:
+      - { path: geo/geosite/alibaba.list, name: alibaba, local: geosite_alibaba.list }
+      - { path: geo/geosite/alibabacloud.list, name: alibabacloud, local: geosite_alibabacloud.list }
+      - { path: geo/geosite/tencent.list, name: tencent, local: geosite_tencent.list }
+      - { path: geo/geosite/baidu.list, name: baidu, local: geosite_baidu.list }
+      - { path: geo/geosite/bytedance.list, name: bytedance, local: geosite_bytedance.list }
+      - { path: geo/geosite/jd.list, name: jingdong, local: geosite_jd.list }
+      - { path: geo/geosite/netease.list, name: netease, local: geosite_netease.list }
+      - { path: geo/geosite/bilibili.list, name: bilibili, local: geosite_bilibili.list }
