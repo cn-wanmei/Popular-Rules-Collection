@@ -1,0 +1,54 @@
+version: 1
+last_updated: "2026-08-25"
+
+sources:
+  - id: blackmatrix7
+    name: BlackMatrix7 ios_rule_script
+    url: https://github.com/blackmatrix7/ios_rule_script
+    enabled: true
+    priority: 95
+    trust: high
+    formats: [clash, surge, quantumultx, shadowrocket, loon]
+
+  - id: loyalsoldier
+    name: Loyalsoldier clash-rules
+    url: https://github.com/Loyalsoldier/clash-rules
+    enabled: true
+    priority: 98
+    trust: high
+    formats: [clash, geosite, geoip]
+
+  - id: anti-ad
+    name: anti-AD
+    url: https://github.com/privacy-protection-tools/anti-AD
+    enabled: true
+    priority: 90
+    trust: high
+    formats: [hosts, dnsmasq, surge, clash]
+
+  - id: hagezi
+    name: hagezi DNS Blocklists
+    url: https://github.com/hagezi/dns-blocklists
+    enabled: true
+    priority: 93
+    trust: high
+    fetch:
+      type: github_raw
+      owner: hagezi
+      repo: dns-blocklists
+      branch: main
+    formats: [hosts, adblock, domains]
+
+  - id: sukkaw
+    name: SukkaW Surge Ruleset
+    url: https://github.com/SukkaW/Surge
+    enabled: true
+    priority: 88
+    trust: high
+    fetch:
+      type: cdn
+      bases:
+        - https://ruleset.skk.moe
+        - https://ruleset-mirror.skk.moe
+    notes: Rules served from ruleset.skk.moe CDN (not GitHub raw).
+    formats: [surge, clash, sing-box]

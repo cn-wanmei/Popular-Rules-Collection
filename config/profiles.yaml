@@ -1,0 +1,39 @@
+version: 1
+
+profiles:
+  minimal:
+    description: China + private + light adblock + core services
+    services:
+      - china
+      - private
+      - adblock
+      - apple
+      - google
+
+  balanced:
+    description: Minimal + AI + streaming + social
+    includes: [minimal]
+    services:
+      - openai
+      - youtube
+      - netflix
+      - disney
+      - telegram
+      - discord
+      - twitter
+      - tiktok
+      - microsoft
+      - github
+
+  full:
+    description: Balanced + games + proxy/gfw layers
+    includes: [balanced]
+    services:
+      - steam
+      - bilibili
+      - proxy
+      - gfw
+
+  ultimate:
+    description: All generated services
+    services: "*"

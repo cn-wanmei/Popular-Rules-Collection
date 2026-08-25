@@ -1,0 +1,17 @@
+version: 1
+
+weights:
+  update_activity: 0.25
+  rule_quality: 0.25
+  coverage: 0.20
+  community_usage: 0.15
+  uniqueness: 0.10
+  maintenance_stability: 0.05
+
+conflict_policy:
+  exact_duplicate: drop_lower
+  semantic_overlap: keep_all
+  parent_child: keep_all
+  action_conflict: keep_all
+
+default_policy: PROXY
