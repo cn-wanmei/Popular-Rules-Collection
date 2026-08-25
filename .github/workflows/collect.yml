@@ -28,10 +28,7 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
-
-      - name: Collect upstream
-        run: python scripts/collect.py
-
+      - run: python scripts/collect.py
       - name: Normalize
         run: |
           if [ "${{ inputs.skip_large }}" = "true" ]; then
@@ -39,37 +36,24 @@ jobs:
           else
             python scripts/normalize.py
           fi
-
-      - name: Canonical deduplicate
-        run: python scripts/deduplicate.py
-
-      - name: Conflict detector
-        run: python scripts/conflict_detector.py
+      - run: python scripts/deduplicate.py
+      - run: python scripts/conflict_detector.py
         continue-on-error: true
-
-      - name: Provenance
-        run: python scripts/provenance.py
+      - run: python scripts/provenance.py
         continue-on-error: true
-
       - run: python scripts/build_mihomo.py
       - run: python scripts/build_singbox.py
       - run: python scripts/build_surge.py
       - run: python scripts/build_shadowrocket.py
       - run: python scripts/build_quantumultx.py
       - run: python scripts/build_egern.py
-
-      - name: Validate
-        run: python scripts/validate.py
+      - run: python scripts/build_loon.py
+      - run: python scripts/validate.py
         continue-on-error: true
-
-      - name: Builder validation
-        run: python scripts/builder_validate.py
+      - run: python scripts/builder_validate.py
         continue-on-error: true
-
-      - name: Statistics
-        run: python scripts/statistics.py
+      - run: python scripts/statistics.py
         continue-on-error: true
-
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
