@@ -1,0 +1,30 @@
+id: private
+name: Private
+primary_category: network
+categories:
+- network
+service_type: service
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: private.list
+  domain: private_domain.list
+  ip: private_ip.list
+statistics:
+  domains: 130
+  ipv4_or_cidr: 18
+  mixed: 148
+sources:
+- loyalsoldier
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

@@ -1,0 +1,31 @@
+id: google
+name: Google
+primary_category: google
+categories:
+- google
+service_type: aggregate
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: google.list
+  domain: google_domain.list
+  ip: google_ip.list
+statistics:
+  domains: 740
+  ipv4_or_cidr: 5
+  mixed: 745
+sources:
+- loyalsoldier
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

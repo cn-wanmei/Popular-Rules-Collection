@@ -9,7 +9,7 @@
 | 类型 | mixed |
 | Domains | 1074 |
 | CIDR | 1 |
-| 最后更新 | 2026-08-25 |
+| 最后更新 | 2026-08-26 |
 | Sources | blackmatrix7 / metacubex |
 | Confidence | HIGH |
 

@@ -1,0 +1,30 @@
+id: discord
+name: Discord
+primary_category: social
+categories:
+- social
+service_type: service
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: discord.list
+  domain: discord_domain.list
+  ip: null
+statistics:
+  domains: 29
+  ipv4_or_cidr: 0
+  mixed: 29
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

@@ -1,0 +1,31 @@
+id: googlefcm
+name: GoogleFCM
+primary_category: google
+categories:
+- google
+- network
+service_type: service
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: googlefcm.list
+  domain: googlefcm_domain.list
+  ip: googlefcm_ip.list
+statistics:
+  domains: 15
+  ipv4_or_cidr: 26
+  mixed: 41
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

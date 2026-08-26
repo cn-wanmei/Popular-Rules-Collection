@@ -7,9 +7,9 @@
 | Rule ID | `proxy` |
 | 分类 | network |
 | 类型 | domain |
-| Domains | 28221 |
+| Domains | 28225 |
 | CIDR | 0 |
-| 最后更新 | 2026-08-25 |
+| 最后更新 | 2026-08-26 |
 | Sources | loyalsoldier / sukkaw |
 | Confidence | HIGH |
 

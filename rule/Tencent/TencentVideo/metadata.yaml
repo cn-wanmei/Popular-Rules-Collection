@@ -1,0 +1,32 @@
+id: tencentvideo
+name: TencentVideo
+primary_category: tencent
+categories:
+- tencent
+- china
+- streaming
+service_type: service
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: tencentvideo.list
+  domain: tencentvideo_domain.list
+  ip: tencentvideo_ip.list
+statistics:
+  domains: 19
+  ipv4_or_cidr: 32
+  mixed: 51
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

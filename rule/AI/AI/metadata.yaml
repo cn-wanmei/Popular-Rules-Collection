@@ -1,0 +1,30 @@
+id: ai
+name: AI
+primary_category: ai
+categories:
+- ai
+service_type: aggregate
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: ai.list
+  domain: ai_domain.list
+  ip: null
+statistics:
+  domains: 48
+  ipv4_or_cidr: 0
+  mixed: 48
+sources:
+- sukkaw
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

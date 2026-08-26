@@ -1,0 +1,30 @@
+id: hbo
+name: HBO
+primary_category: streaming
+categories:
+- streaming
+service_type: service
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: hbo.list
+  domain: hbo_domain.list
+  ip: null
+statistics:
+  domains: 47
+  ipv4_or_cidr: 0
+  mixed: 47
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

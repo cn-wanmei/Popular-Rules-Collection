@@ -1,0 +1,30 @@
+id: openai
+name: OpenAI
+primary_category: ai
+categories:
+- ai
+service_type: service
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: openai.list
+  domain: openai_domain.list
+  ip: openai_ip.list
+statistics:
+  domains: 31
+  ipv4_or_cidr: 2
+  mixed: 33
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

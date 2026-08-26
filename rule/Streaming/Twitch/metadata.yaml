@@ -1,0 +1,30 @@
+id: twitch
+name: Twitch
+primary_category: streaming
+categories:
+- streaming
+service_type: service
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: twitch.list
+  domain: twitch_domain.list
+  ip: twitch_ip.list
+statistics:
+  domains: 8
+  ipv4_or_cidr: 12
+  mixed: 20
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

@@ -1,0 +1,31 @@
+id: chinamobile
+name: ChinaMobile
+primary_category: chinamobile
+categories:
+- china
+- network
+service_type: service
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: chinamobile.list
+  domain: chinamobile_domain.list
+  ip: chinamobile_ip.list
+statistics:
+  domains: 35
+  ipv4_or_cidr: 1
+  mixed: 36
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

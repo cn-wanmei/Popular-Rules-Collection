@@ -1,0 +1,32 @@
+id: baidu
+name: Baidu
+primary_category: baidu
+categories:
+- baidu
+- china
+service_type: aggregate
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: baidu.list
+  domain: baidu_domain.list
+  ip: null
+statistics:
+  domains: 324
+  ipv4_or_cidr: 0
+  mixed: 324
+sources:
+- blackmatrix7
+- metacubex
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

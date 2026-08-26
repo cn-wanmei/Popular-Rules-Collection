@@ -1,0 +1,32 @@
+id: china
+name: China
+primary_category: china
+categories:
+- china
+service_type: aggregate
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: china.list
+  domain: china_domain.list
+  ip: china_ip.list
+statistics:
+  domains: 111510
+  ipv4_or_cidr: 5845
+  mixed: 117355
+sources:
+- loyalsoldier
+- blackmatrix7
+- sukkaw
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

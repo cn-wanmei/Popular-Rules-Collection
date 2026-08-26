@@ -1,0 +1,31 @@
+id: youtube
+name: YouTube
+primary_category: google
+categories:
+- google
+- streaming
+service_type: service
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: youtube.list
+  domain: youtube_domain.list
+  ip: youtube_ip.list
+statistics:
+  domains: 179
+  ipv4_or_cidr: 3
+  mixed: 182
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

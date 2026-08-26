@@ -1,0 +1,31 @@
+id: proxy
+name: Proxy
+primary_category: network
+categories:
+- network
+service_type: service
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: proxy.list
+  domain: proxy_domain.list
+  ip: null
+statistics:
+  domains: 28215
+  ipv4_or_cidr: 0
+  mixed: 28215
+sources:
+- loyalsoldier
+- sukkaw
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

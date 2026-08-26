@@ -1,0 +1,32 @@
+id: bytedance
+name: ByteDance
+primary_category: bytedance
+categories:
+- bytedance
+- china
+service_type: aggregate
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: bytedance.list
+  domain: bytedance_domain.list
+  ip: bytedance_ip.list
+statistics:
+  domains: 1074
+  ipv4_or_cidr: 1
+  mixed: 1075
+sources:
+- blackmatrix7
+- metacubex
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

@@ -1,0 +1,31 @@
+id: cloudflare
+name: Cloudflare
+primary_category: developer
+categories:
+- developer
+- network
+service_type: service
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: cloudflare.list
+  domain: cloudflare_domain.list
+  ip: cloudflare_ip.list
+statistics:
+  domains: 43
+  ipv4_or_cidr: 22
+  mixed: 65
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

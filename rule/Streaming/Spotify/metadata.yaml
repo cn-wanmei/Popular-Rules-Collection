@@ -1,0 +1,30 @@
+id: spotify
+name: Spotify
+primary_category: streaming
+categories:
+- streaming
+service_type: service
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: spotify.list
+  domain: spotify_domain.list
+  ip: spotify_ip.list
+statistics:
+  domains: 26
+  ipv4_or_cidr: 2
+  mixed: 28
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

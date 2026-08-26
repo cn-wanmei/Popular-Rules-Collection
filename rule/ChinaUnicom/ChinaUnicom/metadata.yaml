@@ -1,0 +1,31 @@
+id: chinaunicom
+name: ChinaUnicom
+primary_category: chinaunicom
+categories:
+- china
+- network
+service_type: service
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: chinaunicom.list
+  domain: chinaunicom_domain.list
+  ip: chinaunicom_ip.list
+statistics:
+  domains: 33
+  ipv4_or_cidr: 1
+  mixed: 34
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

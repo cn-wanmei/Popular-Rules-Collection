@@ -1,0 +1,30 @@
+id: battlenet
+name: BattleNet
+primary_category: gaming
+categories:
+- gaming
+service_type: service
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: battlenet.list
+  domain: battlenet_domain.list
+  ip: battlenet_ip.list
+statistics:
+  domains: 39
+  ipv4_or_cidr: 23
+  mixed: 62
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

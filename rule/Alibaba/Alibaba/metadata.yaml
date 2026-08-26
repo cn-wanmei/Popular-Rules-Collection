@@ -1,0 +1,32 @@
+id: alibaba
+name: Alibaba
+primary_category: alibaba
+categories:
+- alibaba
+- china
+service_type: aggregate
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: alibaba.list
+  domain: alibaba_domain.list
+  ip: alibaba_ip.list
+statistics:
+  domains: 463
+  ipv4_or_cidr: 54
+  mixed: 517
+sources:
+- blackmatrix7
+- metacubex
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

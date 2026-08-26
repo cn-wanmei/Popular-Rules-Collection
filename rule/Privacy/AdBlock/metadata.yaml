@@ -1,0 +1,33 @@
+id: adblock
+name: AdBlock
+primary_category: privacy
+categories:
+- privacy
+service_type: aggregate
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: adblock.list
+  domain: adblock_domain.list
+  ip: adblock_ip.list
+statistics:
+  domains: 401768
+  ipv4_or_cidr: 47
+  mixed: 401815
+sources:
+- loyalsoldier
+- hagezi
+- anti-ad
+- sukkaw
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

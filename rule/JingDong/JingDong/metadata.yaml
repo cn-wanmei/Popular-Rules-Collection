@@ -1,0 +1,32 @@
+id: jingdong
+name: JingDong
+primary_category: jingdong
+categories:
+- jingdong
+- china
+service_type: aggregate
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: jingdong.list
+  domain: jingdong_domain.list
+  ip: null
+statistics:
+  domains: 265
+  ipv4_or_cidr: 0
+  mixed: 265
+sources:
+- blackmatrix7
+- metacubex
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

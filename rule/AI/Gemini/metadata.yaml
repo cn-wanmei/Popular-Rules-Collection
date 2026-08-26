@@ -1,0 +1,30 @@
+id: gemini
+name: Gemini
+primary_category: ai
+categories:
+- ai
+service_type: service
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: gemini.list
+  domain: gemini_domain.list
+  ip: null
+statistics:
+  domains: 10
+  ipv4_or_cidr: 0
+  mixed: 10
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

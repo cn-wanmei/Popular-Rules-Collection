@@ -1,0 +1,30 @@
+id: stun
+name: STUN
+primary_category: network
+categories:
+- network
+service_type: service
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: stun.list
+  domain: stun_domain.list
+  ip: stun_ip.list
+statistics:
+  domains: 350
+  ipv4_or_cidr: 16
+  mixed: 366
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

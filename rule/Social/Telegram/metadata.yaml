@@ -1,0 +1,32 @@
+id: telegram
+name: Telegram
+primary_category: social
+categories:
+- social
+service_type: service
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: telegram.list
+  domain: telegram_domain.list
+  ip: telegram_ip.list
+statistics:
+  domains: 25
+  ipv4_or_cidr: 21
+  mixed: 46
+sources:
+- loyalsoldier
+- blackmatrix7
+- sukkaw
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

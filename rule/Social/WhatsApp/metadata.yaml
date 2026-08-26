@@ -1,0 +1,30 @@
+id: whatsapp
+name: WhatsApp
+primary_category: social
+categories:
+- social
+service_type: service
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: whatsapp.list
+  domain: whatsapp_domain.list
+  ip: whatsapp_ip.list
+statistics:
+  domains: 5
+  ipv4_or_cidr: 11
+  mixed: 16
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

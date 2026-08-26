@@ -1,0 +1,32 @@
+id: bilibili
+name: BiliBili
+primary_category: china
+categories:
+- china
+- streaming
+service_type: service
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: bilibili.list
+  domain: bilibili_domain.list
+  ip: bilibili_ip.list
+statistics:
+  domains: 120
+  ipv4_or_cidr: 8
+  mixed: 128
+sources:
+- blackmatrix7
+- metacubex
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

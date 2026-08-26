@@ -1,0 +1,30 @@
+id: binance
+name: Binance
+primary_category: finance
+categories:
+- finance
+service_type: service
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: binance.list
+  domain: binance_domain.list
+  ip: null
+statistics:
+  domains: 12
+  ipv4_or_cidr: 0
+  mixed: 12
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

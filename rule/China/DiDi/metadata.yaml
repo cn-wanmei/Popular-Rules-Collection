@@ -1,0 +1,30 @@
+id: didi
+name: DiDi
+primary_category: china
+categories:
+- china
+service_type: service
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: didi.list
+  domain: didi_domain.list
+  ip: null
+statistics:
+  domains: 25
+  ipv4_or_cidr: 0
+  mixed: 25
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

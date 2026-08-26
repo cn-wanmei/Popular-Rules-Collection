@@ -1,0 +1,31 @@
+id: copilot
+name: Copilot
+primary_category: ai
+categories:
+- ai
+- microsoft
+service_type: service
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: copilot.list
+  domain: copilot_domain.list
+  ip: copilot_ip.list
+statistics:
+  domains: 46
+  ipv4_or_cidr: 2
+  mixed: 48
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

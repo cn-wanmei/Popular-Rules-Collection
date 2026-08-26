@@ -7,9 +7,9 @@
 | Rule ID | `adblock-pro` |
 | 分类 | adblock |
 | 类型 | domain |
-| Domains | 225346 |
+| Domains | 225958 |
 | CIDR | 0 |
-| 最后更新 | 2026-08-25 |
+| 最后更新 | 2026-08-26 |
 | Sources | hagezi |
 | Confidence | HIGH |
 

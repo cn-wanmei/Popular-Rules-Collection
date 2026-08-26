@@ -1,0 +1,32 @@
+id: tencent
+name: Tencent
+primary_category: tencent
+categories:
+- tencent
+- china
+service_type: aggregate
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: tencent.list
+  domain: tencent_domain.list
+  ip: tencent_ip.list
+statistics:
+  domains: 678
+  ipv4_or_cidr: 20
+  mixed: 698
+sources:
+- blackmatrix7
+- metacubex
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

@@ -1,0 +1,31 @@
+id: netease
+name: NetEase
+primary_category: china
+categories:
+- china
+service_type: service
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: netease.list
+  domain: netease_domain.list
+  ip: netease_ip.list
+statistics:
+  domains: 137
+  ipv4_or_cidr: 28
+  mixed: 165
+sources:
+- blackmatrix7
+- metacubex
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

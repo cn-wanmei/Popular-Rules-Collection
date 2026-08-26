@@ -1,0 +1,30 @@
+id: adblock-pro
+name: AdBlock-Pro
+primary_category: privacy
+categories:
+- privacy
+service_type: service
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: adblock-pro.list
+  domain: adblock-pro_domain.list
+  ip: null
+statistics:
+  domains: 225958
+  ipv4_or_cidr: 0
+  mixed: 225958
+sources:
+- hagezi
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

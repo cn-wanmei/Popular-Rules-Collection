@@ -1,0 +1,31 @@
+id: xbox
+name: Xbox
+primary_category: microsoft
+categories:
+- microsoft
+- gaming
+service_type: service
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: xbox.list
+  domain: xbox_domain.list
+  ip: null
+statistics:
+  domains: 42
+  ipv4_or_cidr: 0
+  mixed: 42
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

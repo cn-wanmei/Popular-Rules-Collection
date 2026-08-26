@@ -1,0 +1,43 @@
+{
+  "source": "anti-ad",
+  "fetch": "github_raw",
+  "timestamp": "2026-08-26T12:12:39.998938+00:00",
+  "files_ok": 3,
+  "files_failed": 0,
+  "empty_blocked": 0,
+  "rules_declared": 3,
+  "files": [
+    {
+      "name": "anti-ad-domains.txt",
+      "path": "anti-ad-domains.txt",
+      "url": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt",
+      "service": "adblock",
+      "local": "sources/anti-ad/anti-ad-domains.txt",
+      "size": 2072828,
+      "sha256": "157bc6b33b91c742d853e7ba3e4ac3ec2a472fcc24a97b86ec32e1e52950d8c6",
+      "status": "ok"
+    },
+    {
+      "name": "anti-ad-surge.txt",
+      "path": "anti-ad-surge.txt",
+      "url": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt",
+      "service": "adblock",
+      "local": "sources/anti-ad/anti-ad-surge.txt",
+      "size": 3312986,
+      "sha256": "2771c0c928a292761b80787184bce85a6bb1c46d1cd86c9cca659eebadf75557",
+      "status": "ok"
+    },
+    {
+      "name": "anti-ad-clash.yaml",
+      "path": "anti-ad-clash.yaml",
+      "url": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml",
+      "service": "adblock",
+      "local": "sources/anti-ad/anti-ad-clash.yaml",
+      "size": 2711856,
+      "sha256": "74ec931f283a6c6b76eb0897ae99476fe4d1a0ffc1af5ad16d2202d07b64ed44",
+      "status": "ok"
+    }
+  ],
+  "registry_priority": 90,
+  "registry_trust": "high"
+}

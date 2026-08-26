@@ -1,0 +1,576 @@
+generated_at: '2026-08-26T12:27:31.871256+00:00'
+categories:
+  '12306':
+    display_name: '12306'
+    order: 140
+    rules:
+    - id: '12306'
+      name: '12306'
+      path: rule/12306/12306
+      service_type: service
+      domains: 15
+      ips: 0
+  privacy:
+    display_name: Privacy
+    order: 180
+    rules:
+    - id: adblock
+      name: AdBlock
+      path: rule/Privacy/AdBlock
+      service_type: aggregate
+      domains: 401768
+      ips: 47
+    - id: adblock-light
+      name: AdBlock-Light
+      path: rule/Privacy/AdBlock-Light
+      service_type: service
+      domains: 42107
+      ips: 0
+    - id: adblock-pro
+      name: AdBlock-Pro
+      path: rule/Privacy/AdBlock-Pro
+      service_type: service
+      domains: 225958
+      ips: 0
+  ai:
+    display_name: AI
+    order: 10
+    rules:
+    - id: ai
+      name: AI
+      path: rule/AI/AI
+      service_type: aggregate
+      domains: 48
+      ips: 0
+    - id: claude
+      name: Claude
+      path: rule/AI/Claude
+      service_type: service
+      domains: 3
+      ips: 0
+    - id: copilot
+      name: Copilot
+      path: rule/AI/Copilot
+      service_type: service
+      domains: 46
+      ips: 2
+    - id: gemini
+      name: Gemini
+      path: rule/AI/Gemini
+      service_type: service
+      domains: 10
+      ips: 0
+    - id: openai
+      name: OpenAI
+      path: rule/AI/OpenAI
+      service_type: service
+      domains: 31
+      ips: 2
+  alibaba:
+    display_name: Alibaba
+    order: 30
+    rules:
+    - id: alibaba
+      name: Alibaba
+      path: rule/Alibaba/Alibaba
+      service_type: aggregate
+      domains: 463
+      ips: 54
+    - id: alibabacloud
+      name: AlibabaCloud
+      path: rule/Alibaba/AlibabaCloud
+      service_type: service
+      domains: 12
+      ips: 0
+    - id: alipay
+      name: Alipay
+      path: rule/Alibaba/Alipay
+      service_type: service
+      domains: 21
+      ips: 0
+  apple:
+    display_name: Apple
+    order: 20
+    rules:
+    - id: apple
+      name: Apple
+      path: rule/Apple/Apple
+      service_type: aggregate
+      domains: 231
+      ips: 13
+    - id: applemusic
+      name: AppleMusic
+      path: rule/Apple/AppleMusic
+      service_type: service
+      domains: 9
+      ips: 0
+    - id: appletv
+      name: AppleTV
+      path: rule/Apple/AppleTV
+      service_type: service
+      domains: 7
+      ips: 0
+    - id: icloud
+      name: iCloud
+      path: rule/Apple/iCloud
+      service_type: service
+      domains: 60
+      ips: 0
+  baidu:
+    display_name: Baidu
+    order: 50
+    rules:
+    - id: baidu
+      name: Baidu
+      path: rule/Baidu/Baidu
+      service_type: aggregate
+      domains: 324
+      ips: 0
+  gaming:
+    display_name: Gaming
+    order: 170
+    rules:
+    - id: battlenet
+      name: BattleNet
+      path: rule/Gaming/BattleNet
+      service_type: service
+      domains: 39
+      ips: 23
+    - id: ea
+      name: EA
+      path: rule/Gaming/EA
+      service_type: service
+      domains: 165
+      ips: 0
+    - id: epic
+      name: Epic
+      path: rule/Gaming/Epic
+      service_type: service
+      domains: 15
+      ips: 0
+    - id: hoyoverse
+      name: HoYoverse
+      path: rule/Gaming/HoYoverse
+      service_type: service
+      domains: 11
+      ips: 0
+    - id: nintendo
+      name: Nintendo
+      path: rule/Gaming/Nintendo
+      service_type: service
+      domains: 125
+      ips: 1
+    - id: playstation
+      name: PlayStation
+      path: rule/Gaming/PlayStation
+      service_type: service
+      domains: 4
+      ips: 0
+    - id: riotgames
+      name: RiotGames
+      path: rule/Gaming/RiotGames
+      service_type: service
+      domains: 55
+      ips: 0
+    - id: rockstar
+      name: Rockstar
+      path: rule/Gaming/Rockstar
+      service_type: service
+      domains: 5
+      ips: 0
+    - id: steam
+      name: Steam
+      path: rule/Gaming/Steam
+      service_type: service
+      domains: 51
+      ips: 0
+    - id: ubisoft
+      name: Ubisoft
+      path: rule/Gaming/Ubisoft
+      service_type: service
+      domains: 1
+      ips: 0
+  china:
+    display_name: China
+    order: 150
+    rules:
+    - id: bilibili
+      name: BiliBili
+      path: rule/China/BiliBili
+      service_type: service
+      domains: 120
+      ips: 8
+    - id: china
+      name: China
+      path: rule/China/China
+      service_type: aggregate
+      domains: 111510
+      ips: 5845
+    - id: didi
+      name: DiDi
+      path: rule/China/DiDi
+      service_type: service
+      domains: 25
+      ips: 0
+    - id: meituan
+      name: MeiTuan
+      path: rule/China/MeiTuan
+      service_type: service
+      domains: 7
+      ips: 0
+    - id: netease
+      name: NetEase
+      path: rule/China/NetEase
+      service_type: service
+      domains: 137
+      ips: 28
+    - id: pinduoduo
+      name: Pinduoduo
+      path: rule/China/Pinduoduo
+      service_type: service
+      domains: 3
+      ips: 0
+    - id: xiaohongshu
+      name: XiaoHongShu
+      path: rule/China/XiaoHongShu
+      service_type: service
+      domains: 4
+      ips: 0
+  finance:
+    display_name: Finance
+    order: 220
+    rules:
+    - id: binance
+      name: Binance
+      path: rule/Finance/Binance
+      service_type: service
+      domains: 12
+      ips: 0
+    - id: okx
+      name: OKX
+      path: rule/Finance/OKX
+      service_type: service
+      domains: 3
+      ips: 0
+    - id: paypal
+      name: PayPal
+      path: rule/Finance/PayPal
+      service_type: service
+      domains: 246
+      ips: 0
+    - id: stripe
+      name: Stripe
+      path: rule/Finance/Stripe
+      service_type: service
+      domains: 1
+      ips: 0
+  bytedance:
+    display_name: ByteDance
+    order: 60
+    rules:
+    - id: bytedance
+      name: ByteDance
+      path: rule/ByteDance/ByteDance
+      service_type: aggregate
+      domains: 1074
+      ips: 1
+    - id: douyin
+      name: Douyin
+      path: rule/ByteDance/Douyin
+      service_type: service
+      domains: 13
+      ips: 0
+  chinamobile:
+    display_name: ChinaMobile
+    order: 110
+    rules:
+    - id: chinamobile
+      name: ChinaMobile
+      path: rule/ChinaMobile/ChinaMobile
+      service_type: service
+      domains: 35
+      ips: 1
+  chinatelecom:
+    display_name: ChinaTelecom
+    order: 130
+    rules:
+    - id: chinatelecom
+      name: ChinaTelecom
+      path: rule/ChinaTelecom/ChinaTelecom
+      service_type: service
+      domains: 83
+      ips: 0
+  chinaunicom:
+    display_name: ChinaUnicom
+    order: 120
+    rules:
+    - id: chinaunicom
+      name: ChinaUnicom
+      path: rule/ChinaUnicom/ChinaUnicom
+      service_type: service
+      domains: 33
+      ips: 1
+  developer:
+    display_name: Developer
+    order: 160
+    rules:
+    - id: cloudflare
+      name: Cloudflare
+      path: rule/Developer/Cloudflare
+      service_type: service
+      domains: 43
+      ips: 22
+    - id: developer
+      name: Developer
+      path: rule/Developer/Developer
+      service_type: aggregate
+      domains: 70
+      ips: 0
+    - id: docker
+      name: Docker
+      path: rule/Developer/Docker
+      service_type: service
+      domains: 7
+      ips: 0
+    - id: gitlab
+      name: GitLab
+      path: rule/Developer/GitLab
+      service_type: service
+      domains: 6
+      ips: 0
+    - id: vercel
+      name: Vercel
+      path: rule/Developer/Vercel
+      service_type: service
+      domains: 27
+      ips: 0
+  social:
+    display_name: Social
+    order: 190
+    rules:
+    - id: discord
+      name: Discord
+      path: rule/Social/Discord
+      service_type: service
+      domains: 29
+      ips: 0
+    - id: facebook
+      name: Facebook
+      path: rule/Social/Facebook
+      service_type: service
+      domains: 544
+      ips: 23
+    - id: instagram
+      name: Instagram
+      path: rule/Social/Instagram
+      service_type: service
+      domains: 3
+      ips: 0
+    - id: reddit
+      name: Reddit
+      path: rule/Social/Reddit
+      service_type: service
+      domains: 8
+      ips: 0
+    - id: telegram
+      name: Telegram
+      path: rule/Social/Telegram
+      service_type: service
+      domains: 25
+      ips: 21
+    - id: tiktok
+      name: TikTok
+      path: rule/Social/TikTok
+      service_type: service
+      domains: 29
+      ips: 0
+    - id: twitter
+      name: Twitter
+      path: rule/Social/Twitter
+      service_type: service
+      domains: 26
+      ips: 6
+    - id: whatsapp
+      name: WhatsApp
+      path: rule/Social/WhatsApp
+      service_type: service
+      domains: 5
+      ips: 11
+  streaming:
+    display_name: Streaming
+    order: 200
+    rules:
+    - id: disney
+      name: Disney
+      path: rule/Streaming/Disney
+      service_type: service
+      domains: 172
+      ips: 0
+    - id: hbo
+      name: HBO
+      path: rule/Streaming/HBO
+      service_type: service
+      domains: 47
+      ips: 0
+    - id: hulu
+      name: Hulu
+      path: rule/Streaming/Hulu
+      service_type: service
+      domains: 58
+      ips: 0
+    - id: netflix
+      name: Netflix
+      path: rule/Streaming/Netflix
+      service_type: service
+      domains: 32
+      ips: 0
+    - id: paramountplus
+      name: ParamountPlus
+      path: rule/Streaming/ParamountPlus
+      service_type: service
+      domains: 9
+      ips: 0
+    - id: primevideo
+      name: PrimeVideo
+      path: rule/Streaming/PrimeVideo
+      service_type: service
+      domains: 24
+      ips: 0
+    - id: spotify
+      name: Spotify
+      path: rule/Streaming/Spotify
+      service_type: service
+      domains: 26
+      ips: 2
+    - id: twitch
+      name: Twitch
+      path: rule/Streaming/Twitch
+      service_type: service
+      domains: 8
+      ips: 12
+  network:
+    display_name: Network
+    order: 210
+    rules:
+    - id: gfw
+      name: GFW
+      path: rule/Network/GFW
+      service_type: service
+      domains: 4387
+      ips: 0
+    - id: private
+      name: Private
+      path: rule/Network/Private
+      service_type: service
+      domains: 130
+      ips: 18
+    - id: proxy
+      name: Proxy
+      path: rule/Network/Proxy
+      service_type: service
+      domains: 28215
+      ips: 0
+    - id: speedtest
+      name: Speedtest
+      path: rule/Network/Speedtest
+      service_type: service
+      domains: 4
+      ips: 0
+    - id: stun
+      name: STUN
+      path: rule/Network/STUN
+      service_type: service
+      domains: 350
+      ips: 16
+  microsoft:
+    display_name: Microsoft
+    order: 80
+    rules:
+    - id: github
+      name: GitHub
+      path: rule/Microsoft/GitHub
+      service_type: service
+      domains: 30
+      ips: 0
+    - id: microsoft
+      name: Microsoft
+      path: rule/Microsoft/Microsoft
+      service_type: aggregate
+      domains: 666
+      ips: 0
+    - id: onedrive
+      name: OneDrive
+      path: rule/Microsoft/OneDrive
+      service_type: service
+      domains: 13
+      ips: 0
+    - id: xbox
+      name: Xbox
+      path: rule/Microsoft/Xbox
+      service_type: service
+      domains: 42
+      ips: 0
+  google:
+    display_name: Google
+    order: 90
+    rules:
+    - id: google
+      name: Google
+      path: rule/Google/Google
+      service_type: aggregate
+      domains: 740
+      ips: 5
+    - id: googlefcm
+      name: GoogleFCM
+      path: rule/Google/GoogleFCM
+      service_type: service
+      domains: 15
+      ips: 26
+    - id: youtube
+      name: YouTube
+      path: rule/Google/YouTube
+      service_type: service
+      domains: 179
+      ips: 3
+  jingdong:
+    display_name: JingDong
+    order: 70
+    rules:
+    - id: jingdong
+      name: JingDong
+      path: rule/JingDong/JingDong
+      service_type: aggregate
+      domains: 265
+      ips: 0
+  tencent:
+    display_name: Tencent
+    order: 40
+    rules:
+    - id: tencent
+      name: Tencent
+      path: rule/Tencent/Tencent
+      service_type: aggregate
+      domains: 678
+      ips: 20
+    - id: tencentvideo
+      name: TencentVideo
+      path: rule/Tencent/TencentVideo
+      service_type: service
+      domains: 19
+      ips: 32
+    - id: wechat
+      name: WeChat
+      path: rule/Tencent/WeChat
+      service_type: service
+      domains: 30
+      ips: 0
+  unionpay:
+    display_name: UnionPay
+    order: 100
+    rules:
+    - id: unionpay
+      name: UnionPay
+      path: rule/UnionPay/UnionPay
+      service_type: aggregate
+      domains: 16
+      ips: 0

@@ -1,0 +1,30 @@
+id: adblock-light
+name: AdBlock-Light
+primary_category: privacy
+categories:
+- privacy
+service_type: service
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: adblock-light.list
+  domain: adblock-light_domain.list
+  ip: null
+statistics:
+  domains: 42107
+  ipv4_or_cidr: 0
+  mixed: 42107
+sources:
+- hagezi
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

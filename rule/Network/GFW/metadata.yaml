@@ -1,0 +1,30 @@
+id: gfw
+name: GFW
+primary_category: network
+categories:
+- network
+service_type: service
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: gfw.list
+  domain: gfw_domain.list
+  ip: null
+statistics:
+  domains: 4387
+  ipv4_or_cidr: 0
+  mixed: 4387
+sources:
+- loyalsoldier
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

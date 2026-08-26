@@ -1,0 +1,32 @@
+id: apple
+name: Apple
+primary_category: apple
+categories:
+- apple
+service_type: aggregate
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: apple.list
+  domain: apple_domain.list
+  ip: apple_ip.list
+statistics:
+  domains: 231
+  ipv4_or_cidr: 13
+  mixed: 244
+sources:
+- loyalsoldier
+- blackmatrix7
+- sukkaw
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true
