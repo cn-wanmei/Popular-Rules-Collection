@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""build_shadowrocket.py — Shadowrocket RULE-SET / DOMAIN-SET lists (streaming for large sets)."""
+"""build_shadowrocket.py — Shadowrocket RULE-SET / DOMAIN-SET lists.
+Only write *_domain.list when domain_set is non-empty; remove stale empties.
+"""
 
 from __future__ import annotations
 
@@ -16,11 +18,19 @@ OUT = ROOT / "generated" / "shadowrocket"
 LARGE = {"adblock", "china", "proxy", "gfw"}
 
 
+def write_or_unlink(path: Path, lines: list[str]) -> None:
+    if lines:
+        path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    elif path.exists():
+        path.unlink()
+
+
 def write_from_aggregates(sid: str) -> tuple[int, int]:
     rules_path = OUT / f"{sid}.list"
     domain_path = OUT / f"{sid}_domain.list"
     n_rules = n_dom = 0
-    with rules_path.open("w", encoding="utf-8") as rf, domain_path.open("w", encoding="utf-8") as df:
+    domain_buf: list[str] = []
+    with rules_path.open("w", encoding="utf-8") as rf:
         dfile = DOMAINS / f"{sid}.txt"
         if dfile.exists():
             with dfile.open(encoding="utf-8") as f:
@@ -29,7 +39,7 @@ def write_from_aggregates(sid: str) -> tuple[int, int]:
                     if not d:
                         continue
                     rf.write(f"DOMAIN-SUFFIX,{d}\n")
-                    df.write(f".{d}\n")
+                    domain_buf.append(f".{d}")
                     n_rules += 1
                     n_dom += 1
         ifile = IPS / f"{sid}.txt"
@@ -44,6 +54,7 @@ def write_from_aggregates(sid: str) -> tuple[int, int]:
                     else:
                         rf.write(f"IP-CIDR,{ip},no-resolve\n")
                     n_rules += 1
+    write_or_unlink(domain_path, domain_buf)
     return n_rules, n_dom
 
 
@@ -83,8 +94,8 @@ def write_from_service(doc: dict) -> tuple[int, int]:
             if not ip:
                 continue
             lines.append(f"IP-CIDR6,{ip},no-resolve" if ":" in ip else f"IP-CIDR,{ip},no-resolve")
-    (OUT / f"{sid}.list").write_text("\n".join(lines) + ("\n" if lines else ""), encoding="utf-8")
-    (OUT / f"{sid}_domain.list").write_text("\n".join(ds) + ("\n" if ds else ""), encoding="utf-8")
+    write_or_unlink(OUT / f"{sid}.list", lines)
+    write_or_unlink(OUT / f"{sid}_domain.list", ds)
     return len(lines), len(ds)
 
 
@@ -104,6 +115,10 @@ def main() -> int:
             continue
         print(f"  shadowrocket {sid}: rules={n_r} domain_set={n_d}")
         count += 1
+    for p in OUT.glob("*_domain.list"):
+        if p.stat().st_size == 0:
+            p.unlink()
+            print(f"  removed stale empty {p.name}")
     print(f"[build_shadowrocket] wrote {count} → {OUT}")
     return 0 if count else 1
 
