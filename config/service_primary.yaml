@@ -3,408 +3,529 @@ updated: '2026-08-26'
 defaults:
   service_type: service
 services:
+  # ---- AI ----
   openai:
     primary_category: ai
     display_name: OpenAI
     categories: [ai]
-    service_type: service
+    parent: ai
   claude:
     primary_category: ai
     display_name: Claude
     categories: [ai]
-    service_type: service
+    parent: ai
   gemini:
     primary_category: ai
     display_name: Gemini
     categories: [ai]
-    service_type: service
+    parent: ai
   copilot:
     primary_category: ai
     display_name: Copilot
     categories: [ai, microsoft]
-    service_type: service
+    parent: ai
   ai:
     primary_category: ai
     display_name: AI
     categories: [ai]
     service_type: aggregate
+    children: [openai, claude, gemini, copilot]
+
+  # ---- Apple ----
   apple:
     primary_category: apple
     display_name: Apple
     categories: [apple]
     service_type: aggregate
+    children: [applemusic, appletv, icloud]
   applemusic:
     primary_category: apple
     display_name: AppleMusic
     categories: [apple, streaming]
-    service_type: service
+    parent: apple
   appletv:
     primary_category: apple
     display_name: AppleTV
     categories: [apple, streaming]
-    service_type: service
+    parent: apple
   icloud:
     primary_category: apple
     display_name: iCloud
     categories: [apple]
-    service_type: service
+    parent: apple
+
+  # ---- Alibaba ----
   alibaba:
     primary_category: alibaba
     display_name: Alibaba
     categories: [alibaba, china]
     service_type: aggregate
+    children: [alibabacloud, alipay, taobao, youku]
   alibabacloud:
     primary_category: alibaba
     display_name: AlibabaCloud
     categories: [alibaba, china]
-    service_type: service
+    parent: alibaba
   alipay:
     primary_category: alibaba
     display_name: Alipay
     categories: [alibaba, china, finance]
-    service_type: service
+    parent: alibaba
+  taobao:
+    primary_category: alibaba
+    display_name: TaoBao
+    categories: [alibaba, china]
+    parent: alibaba
+  youku:
+    primary_category: alibaba
+    display_name: Youku
+    categories: [alibaba, china, streaming]
+    parent: alibaba
+
+  # ---- Tencent ----
   tencent:
     primary_category: tencent
     display_name: Tencent
     categories: [tencent, china]
     service_type: aggregate
+    children: [wechat, tencentvideo, qq]
   wechat:
     primary_category: tencent
     display_name: WeChat
     categories: [tencent, china, social]
-    service_type: service
+    parent: tencent
   tencentvideo:
     primary_category: tencent
     display_name: TencentVideo
     categories: [tencent, china, streaming]
-    service_type: service
+    parent: tencent
+  qq:
+    primary_category: tencent
+    display_name: QQ
+    categories: [tencent, china, social]
+    parent: tencent
+
+  # ---- Baidu ----
   baidu:
     primary_category: baidu
     display_name: Baidu
     categories: [baidu, china]
     service_type: aggregate
+
+  # ---- ByteDance ----
   bytedance:
     primary_category: bytedance
     display_name: ByteDance
     categories: [bytedance, china]
     service_type: aggregate
+    children: [douyin, tiktok]
   douyin:
     primary_category: bytedance
     display_name: Douyin
     categories: [bytedance, china, social]
-    service_type: service
+    parent: bytedance
+
+  # ---- JingDong ----
   jingdong:
     primary_category: jingdong
     display_name: JingDong
     categories: [jingdong, china]
     service_type: aggregate
+
+  # ---- Microsoft ----
   microsoft:
     primary_category: microsoft
     display_name: Microsoft
     categories: [microsoft]
     service_type: aggregate
+    children: [onedrive, xbox, github, teams]
   onedrive:
     primary_category: microsoft
     display_name: OneDrive
     categories: [microsoft]
-    service_type: service
+    parent: microsoft
   xbox:
     primary_category: microsoft
     display_name: Xbox
     categories: [microsoft, gaming]
-    service_type: service
+    parent: microsoft
   github:
     primary_category: microsoft
     display_name: GitHub
     categories: [microsoft, developer]
-    service_type: service
+    parent: microsoft
+  teams:
+    primary_category: microsoft
+    display_name: Teams
+    categories: [microsoft]
+    parent: microsoft
+
+  # ---- Google ----
   google:
     primary_category: google
     display_name: Google
     categories: [google]
     service_type: aggregate
+    children: [youtube, googlefcm]
   youtube:
     primary_category: google
     display_name: YouTube
     categories: [google, streaming]
-    service_type: service
+    parent: google
   googlefcm:
     primary_category: google
     display_name: GoogleFCM
     categories: [google, network]
-    service_type: service
+    parent: google
+
+  # ---- UnionPay + banks ----
   unionpay:
     primary_category: unionpay
     display_name: UnionPay
     categories: [finance, china]
     service_type: aggregate
+    children: [icbc, abc, ccb, boc, cmb]
+  icbc:
+    primary_category: unionpay
+    display_name: ICBC
+    categories: [finance, china]
+    parent: unionpay
+  abc:
+    primary_category: unionpay
+    display_name: ABC
+    categories: [finance, china]
+    parent: unionpay
+  ccb:
+    primary_category: unionpay
+    display_name: CCB
+    categories: [finance, china]
+    parent: unionpay
+  boc:
+    primary_category: unionpay
+    display_name: BOC
+    categories: [finance, china]
+    parent: unionpay
+  cmb:
+    primary_category: unionpay
+    display_name: CMB
+    categories: [finance, china]
+    parent: unionpay
+
+  # ---- Operators / 12306 ----
   chinamobile:
     primary_category: chinamobile
     display_name: ChinaMobile
     categories: [china, network]
-    service_type: service
   chinaunicom:
     primary_category: chinaunicom
     display_name: ChinaUnicom
     categories: [china, network]
-    service_type: service
   chinatelecom:
     primary_category: chinatelecom
     display_name: ChinaTelecom
     categories: [china, network]
-    service_type: service
   '12306':
     primary_category: '12306'
     display_name: '12306'
     categories: [china, network]
-    service_type: service
+
+  # ---- China residual ----
   china:
     primary_category: china
     display_name: China
     categories: [china]
     service_type: aggregate
+    children: [meituan, pinduoduo, xiaohongshu, didi, netease, bilibili, weibo, zhihu, iqiyi, kuaishou]
   meituan:
     primary_category: china
     display_name: MeiTuan
     categories: [china]
-    service_type: service
+    parent: china
   pinduoduo:
     primary_category: china
     display_name: Pinduoduo
     categories: [china]
-    service_type: service
+    parent: china
   xiaohongshu:
     primary_category: china
     display_name: XiaoHongShu
     categories: [china, social]
-    service_type: service
+    parent: china
   didi:
     primary_category: china
     display_name: DiDi
     categories: [china]
-    service_type: service
+    parent: china
   netease:
     primary_category: china
     display_name: NetEase
     categories: [china]
-    service_type: service
+    parent: china
   bilibili:
     primary_category: china
     display_name: BiliBili
     categories: [china, streaming]
-    service_type: service
+    parent: china
+  weibo:
+    primary_category: china
+    display_name: Weibo
+    categories: [china, social]
+    parent: china
+  zhihu:
+    primary_category: china
+    display_name: Zhihu
+    categories: [china, social]
+    parent: china
+  iqiyi:
+    primary_category: china
+    display_name: iQIYI
+    categories: [china, streaming]
+    parent: china
+  kuaishou:
+    primary_category: china
+    display_name: Kuaishou
+    categories: [china, social]
+    parent: china
+
+  # ---- Developer ----
   developer:
     primary_category: developer
     display_name: Developer
     categories: [developer]
     service_type: aggregate
+    children: [docker, gitlab, vercel, cloudflare, amazonaws, adobe, akamai, dropbox, notion, figma]
   docker:
     primary_category: developer
     display_name: Docker
     categories: [developer]
-    service_type: service
+    parent: developer
   gitlab:
     primary_category: developer
     display_name: GitLab
     categories: [developer]
-    service_type: service
+    parent: developer
   vercel:
     primary_category: developer
     display_name: Vercel
     categories: [developer]
-    service_type: service
+    parent: developer
   cloudflare:
     primary_category: developer
     display_name: Cloudflare
     categories: [developer, network]
-    service_type: service
+    parent: developer
+  amazonaws:
+    primary_category: developer
+    display_name: AmazonAWS
+    categories: [developer, network]
+    parent: developer
+  adobe:
+    primary_category: developer
+    display_name: Adobe
+    categories: [developer]
+    parent: developer
+  akamai:
+    primary_category: developer
+    display_name: Akamai
+    categories: [developer, network]
+    parent: developer
+  dropbox:
+    primary_category: developer
+    display_name: Dropbox
+    categories: [developer]
+    parent: developer
+  notion:
+    primary_category: developer
+    display_name: Notion
+    categories: [developer]
+    parent: developer
+  figma:
+    primary_category: developer
+    display_name: Figma
+    categories: [developer]
+    parent: developer
+
+  # ---- Gaming ----
   steam:
     primary_category: gaming
     display_name: Steam
     categories: [gaming]
-    service_type: service
   epic:
     primary_category: gaming
     display_name: Epic
     categories: [gaming]
-    service_type: service
   nintendo:
     primary_category: gaming
     display_name: Nintendo
     categories: [gaming]
-    service_type: service
   playstation:
     primary_category: gaming
     display_name: PlayStation
     categories: [gaming]
-    service_type: service
   ea:
     primary_category: gaming
     display_name: EA
     categories: [gaming]
-    service_type: service
   ubisoft:
     primary_category: gaming
     display_name: Ubisoft
     categories: [gaming]
-    service_type: service
   rockstar:
     primary_category: gaming
     display_name: Rockstar
     categories: [gaming]
-    service_type: service
   riotgames:
     primary_category: gaming
     display_name: RiotGames
     categories: [gaming]
-    service_type: service
   hoyoverse:
     primary_category: gaming
     display_name: HoYoverse
     categories: [gaming]
-    service_type: service
   battlenet:
     primary_category: gaming
     display_name: BattleNet
     categories: [gaming]
-    service_type: service
+
+  # ---- Privacy ----
   adblock:
     primary_category: privacy
     display_name: AdBlock
     categories: [privacy]
     service_type: aggregate
+    children: [adblock-pro, adblock-light]
   adblock-pro:
     primary_category: privacy
     display_name: AdBlock-Pro
     categories: [privacy]
-    service_type: service
+    parent: adblock
   adblock-light:
     primary_category: privacy
     display_name: AdBlock-Light
     categories: [privacy]
-    service_type: service
+    parent: adblock
+
+  # ---- Social ----
   telegram:
     primary_category: social
     display_name: Telegram
     categories: [social]
-    service_type: service
   discord:
     primary_category: social
     display_name: Discord
     categories: [social]
-    service_type: service
   twitter:
     primary_category: social
     display_name: Twitter
     categories: [social]
-    service_type: service
   tiktok:
     primary_category: social
     display_name: TikTok
     categories: [social]
-    service_type: service
+    parent: bytedance
   facebook:
     primary_category: social
     display_name: Facebook
     categories: [social]
-    service_type: service
   instagram:
     primary_category: social
     display_name: Instagram
     categories: [social]
-    service_type: service
   whatsapp:
     primary_category: social
     display_name: WhatsApp
     categories: [social]
-    service_type: service
   reddit:
     primary_category: social
     display_name: Reddit
     categories: [social]
-    service_type: service
+  linkedin:
+    primary_category: social
+    display_name: LinkedIn
+    categories: [social]
+  pinterest:
+    primary_category: social
+    display_name: Pinterest
+    categories: [social]
+  snapchat:
+    primary_category: social
+    display_name: Snapchat
+    categories: [social]
+
+  # ---- Streaming ----
   netflix:
     primary_category: streaming
     display_name: Netflix
     categories: [streaming]
-    service_type: service
   disney:
     primary_category: streaming
     display_name: Disney
     categories: [streaming]
-    service_type: service
   hbo:
     primary_category: streaming
     display_name: HBO
     categories: [streaming]
-    service_type: service
   hulu:
     primary_category: streaming
     display_name: Hulu
     categories: [streaming]
-    service_type: service
   primevideo:
     primary_category: streaming
     display_name: PrimeVideo
     categories: [streaming]
-    service_type: service
   paramountplus:
     primary_category: streaming
     display_name: ParamountPlus
     categories: [streaming]
-    service_type: service
   spotify:
     primary_category: streaming
     display_name: Spotify
     categories: [streaming]
-    service_type: service
   twitch:
     primary_category: streaming
     display_name: Twitch
     categories: [streaming]
-    service_type: service
+  amazon:
+    primary_category: streaming
+    display_name: Amazon
+    categories: [streaming]
+
+  # ---- Network ----
   private:
     primary_category: network
     display_name: Private
     categories: [network]
-    service_type: service
   proxy:
     primary_category: network
     display_name: Proxy
     categories: [network]
-    service_type: service
   gfw:
     primary_category: network
     display_name: GFW
     categories: [network]
-    service_type: service
   stun:
     primary_category: network
     display_name: STUN
     categories: [network]
-    service_type: service
   speedtest:
     primary_category: network
     display_name: Speedtest
     categories: [network]
-    service_type: service
+
+  # ---- Finance (non-UnionPay) ----
   paypal:
     primary_category: finance
     display_name: PayPal
     categories: [finance]
-    service_type: service
   stripe:
     primary_category: finance
     display_name: Stripe
     categories: [finance]
-    service_type: service
   binance:
     primary_category: finance
     display_name: Binance
     categories: [finance]
-    service_type: service
   okx:
     primary_category: finance
     display_name: OKX
     categories: [finance]
-    service_type: service
