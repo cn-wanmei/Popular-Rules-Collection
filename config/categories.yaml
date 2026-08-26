@@ -1,78 +1,78 @@
-# Primary Ecosystem registry (schema-driven rule/ layout)
-# id is the only allowed value for service.primary_category
 version: 2
-updated: "2026-08-26"
-
+updated: '2026-08-26'
 categories:
-  - id: ai
-    display_name: AI
-    order: 10
-  - id: apple
-    display_name: Apple
-    order: 20
-  - id: alibaba
-    display_name: Alibaba
-    order: 30
-  - id: tencent
-    display_name: Tencent
-    order: 40
-  - id: baidu
-    display_name: Baidu
-    order: 50
-  - id: bytedance
-    display_name: ByteDance
-    order: 60
-  - id: jingdong
-    display_name: JingDong
-    order: 70
-  - id: microsoft
-    display_name: Microsoft
-    order: 80
-  - id: google
-    display_name: Google
-    order: 90
-  - id: unionpay
-    display_name: UnionPay
-    order: 100
-    notes: "银联及银行类服务展示集合；银行域名并不属于银联实体"
-  - id: chinamobile
-    display_name: ChinaMobile
-    order: 110
-  - id: chinaunicom
-    display_name: ChinaUnicom
-    order: 120
-  - id: chinatelecom
-    display_name: ChinaTelecom
-    order: 130
-  - id: "12306"
-    display_name: "12306"
-    order: 140
-  - id: china
-    display_name: China
-    order: 150
-    notes: "无法归入独立生态的中国区域服务"
-  - id: developer
-    display_name: Developer
-    order: 160
-  - id: gaming
-    display_name: Gaming
-    order: 170
-  - id: privacy
-    display_name: Privacy
-    order: 180
-  - id: social
-    display_name: Social
-    order: 190
-  - id: streaming
-    display_name: Streaming
-    order: 200
-  - id: network
-    display_name: Network
-    order: 210
-  - id: finance
-    display_name: Finance
-    order: 220
-    notes: "非银联/大厂的金融服务"
-  - id: other
-    display_name: Other
-    order: 999
+- id: ai
+  display_name: AI
+  order: 10
+- id: apple
+  display_name: Apple
+  order: 20
+- id: alibaba
+  display_name: Alibaba
+  order: 30
+- id: tencent
+  display_name: Tencent
+  order: 40
+- id: baidu
+  display_name: Baidu
+  order: 50
+- id: bytedance
+  display_name: ByteDance
+  order: 60
+- id: jingdong
+  display_name: JingDong
+  order: 70
+- id: microsoft
+  display_name: Microsoft
+  order: 80
+- id: google
+  display_name: Google
+  order: 90
+- id: amazon
+  display_name: Amazon
+  order: 95
+- id: unionpay
+  display_name: UnionPay
+  order: 100
+  notes: 银联及银行类服务展示集合；银行域名并不属于银联实体
+- id: chinamobile
+  display_name: ChinaMobile
+  order: 110
+- id: chinaunicom
+  display_name: ChinaUnicom
+  order: 120
+- id: chinatelecom
+  display_name: ChinaTelecom
+  order: 130
+- id: '12306'
+  display_name: '12306'
+  order: 140
+- id: china
+  display_name: China
+  order: 150
+  notes: 无法归入独立生态的中国区域服务
+- id: developer
+  display_name: Developer
+  order: 160
+- id: gaming
+  display_name: Gaming
+  order: 170
+- id: privacy
+  display_name: Privacy
+  order: 180
+- id: social
+  display_name: Social
+  order: 190
+- id: streaming
+  display_name: Streaming
+  order: 200
+- id: network
+  display_name: Network
+  order: 210
+- id: finance
+  display_name: Finance
+  order: 220
+  notes: 非银联/大厂的金融服务
+- id: other
+  display_name: Other
+  order: 999
