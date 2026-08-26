@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
-"""build_egern.py — Egern native rule_set YAML (streaming for large sets)."""
+"""
+build_egern.py — Egern native rule_set YAML (streaming for large sets).
+
+rules:
+  - rule_set:
+      match: "https://.../generated/egern/google.yaml"
+      policy: Proxy
+      update_interval: 86400
+"""
 
 from __future__ import annotations
 
@@ -17,6 +25,7 @@ LARGE = {"adblock", "china", "proxy", "gfw"}
 
 
 def write_large(sid: str, name: str) -> int:
+    """Stream domains/ips into Egern YAML without loading all into RAM as one list dump cost."""
     path = OUT / f"{sid}.yaml"
     n = 0
     with path.open("w", encoding="utf-8") as out:
@@ -35,7 +44,8 @@ def write_large(sid: str, name: str) -> int:
                             out.write(f"  - {d}\n")
                         n += 1
         ifile = IPS / f"{sid}.txt"
-        v4, v6 = [], []
+        v4: list[str] = []
+        v6: list[str] = []
         if ifile.exists():
             with ifile.open(encoding="utf-8") as f:
                 for line in f:
@@ -65,9 +75,11 @@ def write_small(doc: dict) -> int:
         if not t or not v:
             continue
         if t == "domain":
-            domain.append(v); seen.add(v.lower())
+            domain.append(v)
+            seen.add(v.lower())
         elif t == "domain_suffix":
-            suffix.append(v); seen.add(v.lower())
+            suffix.append(v)
+            seen.add(v.lower())
         elif t == "domain_keyword":
             keyword.append(v)
         elif t == "ip_cidr":
@@ -79,7 +91,8 @@ def write_small(doc: dict) -> int:
         for line in dfile.read_text(encoding="utf-8").splitlines():
             d = line.strip()
             if d and d.lower() not in seen:
-                suffix.append(d); seen.add(d.lower())
+                suffix.append(d)
+                seen.add(d.lower())
     ifile = IPS / f"{sid}.txt"
     if ifile.exists():
         for line in ifile.read_text(encoding="utf-8").splitlines():
@@ -100,7 +113,10 @@ def write_small(doc: dict) -> int:
         body["ip_cidr6_set"] = v6
     total = sum(len(body[k]) for k in body if isinstance(body[k], list))
     header = f"# name: {name}\n# id: {sid}\n# count: {total}\n"
-    (OUT / f"{sid}.yaml").write_text(header + yaml.dump(body, allow_unicode=True, sort_keys=False, default_flow_style=False), encoding="utf-8")
+    (OUT / f"{sid}.yaml").write_text(
+        header + yaml.dump(body, allow_unicode=True, sort_keys=False, default_flow_style=False),
+        encoding="utf-8",
+    )
     return total
 
 
@@ -113,7 +129,10 @@ def main() -> int:
         doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
         sid = doc.get("id") or path.stem
         name = doc.get("name", sid)
-        n = write_large(sid, name) if sid in LARGE else write_small(doc)
+        if sid in LARGE:
+            n = write_large(sid, name)
+        else:
+            n = write_small(doc)
         if n <= 0:
             continue
         print(f"  egern {sid}: {n}")
