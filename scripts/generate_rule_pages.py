@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""generate_rule_pages — Primary Ecosystem product pages under rule/"""
+"""generate_rule_pages — Primary Ecosystem product pages under rule/.
+
+STRICT by default: every service must have primary_category in service_primary.yaml
+and categories.yaml. No fallback to legacy database category.
+"""
 from __future__ import annotations
 import argparse, shutil, sys
 from datetime import datetime, timezone
@@ -101,50 +105,98 @@ def readme(meta, cat_display, mixed, domains, ips, sources, cdn, official, notes
     return "\n".join(lines)
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("--clean", action="store_true"); ap.add_argument("--strict", action="store_true"); args = ap.parse_args()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--clean", action="store_true")
+    ap.add_argument("--strict", action="store_true", default=True)
+    ap.add_argument("--no-strict", action="store_true")
+    args = ap.parse_args()
+    if args.no_strict:
+        args.strict = False
     categories, pmap, cdn, official_map = cats(), primary_map(), load(CDN_P) or {}, load(OFF_P) or {}
-    if not SERVICES.is_dir(): print("ERROR: database/services missing", file=sys.stderr); return 1
-    if args.clean and RULE.exists(): shutil.rmtree(RULE)
+    if not SERVICES.is_dir():
+        print("ERROR: database/services missing", file=sys.stderr)
+        return 1
+    if args.clean and RULE.exists():
+        shutil.rmtree(RULE)
     errors, index, path_used, count = [], {"generated_at": datetime.now(timezone.utc).isoformat(), "categories": {}}, set(), 0
     for path in sorted(SERVICES.glob("*.yaml")):
         doc = load_header(path) if path.stat().st_size > 512_000 else (load(path) or {})
         sid = str(doc.get("id") or path.stem)
-        if sid not in pmap and args.strict: errors.append(f"{sid}: missing mapping"); continue
-        pm = pmap.get(sid) or {}
-        pc = str(pm.get("primary_category") or doc.get("category") or "other")
-        if pc not in categories: pc = "other"
+        if sid not in pmap:
+            msg = f"{sid}: missing from service_primary.yaml"
+            if args.strict:
+                errors.append(msg)
+                continue
+            print("WARN", msg, file=sys.stderr)
+            continue
+        pm = pmap[sid]
+        pc = str(pm.get("primary_category") or "")
+        if not pc or pc not in categories:
+            errors.append(f"{sid}: primary_category '{pc}' invalid")
+            continue
         st = str(pm.get("service_type") or "service")
-        if st not in ("service", "aggregate"): errors.append(f"{sid}: bad service_type"); continue
+        if st not in ("service", "aggregate"):
+            errors.append(f"{sid}: bad service_type")
+            continue
         display = str(pm.get("display_name") or doc.get("name") or sid)
         tags = list(pm.get("categories") or [])
-        cat = categories[pc]; cat_display = cat["display_name"].replace("/", "-"); svc_folder = display.replace("/", "-")
+        cat = categories[pc]
+        cat_display = cat["display_name"].replace("/", "-")
+        svc_folder = display.replace("/", "-")
         rel = f"{cat_display}/{svc_folder}"
-        if rel in path_used: errors.append(f"path conflict {rel}"); continue
+        if rel in path_used:
+            errors.append(f"path conflict {rel}")
+            continue
         path_used.add(rel)
-        out = RULE / cat_display / svc_folder; out.mkdir(parents=True, exist_ok=True)
+        out = RULE / cat_display / svc_folder
+        out.mkdir(parents=True, exist_ok=True)
         mixed, domains, ips = classical(doc)
         sources = []
         for s in doc.get("source") or []:
-            if isinstance(s, dict) and s.get("id"): sources.append(str(s["id"]))
-            elif isinstance(s, str): sources.append(s)
+            if isinstance(s, dict) and s.get("id"):
+                sources.append(str(s["id"]))
+            elif isinstance(s, str):
+                sources.append(s)
         write_list(out / f"{sid}.list", mixed, f"{sid} mixed")
-        if domains: write_list(out / f"{sid}_domain.list", domains, f"{sid} domain")
-        if ips: write_list(out / f"{sid}_ip.list", ips, f"{sid} ip")
-        page = {"id": sid, "name": display, "primary_category": pc, "categories": tags, "service_type": st, "rule": {"has_domain": bool(domains), "has_ip": bool(ips), "mixed": True}, "generated_files": {"mixed": f"{sid}.list", "domain": f"{sid}_domain.list" if domains else None, "ip": f"{sid}_ip.list" if ips else None}, "statistics": {"domains": len(domains), "ipv4_or_cidr": len(ips), "mixed": len(mixed)}, "sources": sources, "clients": [c[0] for c in CLIENTS], "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "auto_generated": True}
+        if domains:
+            write_list(out / f"{sid}_domain.list", domains, f"{sid} domain")
+        if ips:
+            write_list(out / f"{sid}_ip.list", ips, f"{sid} ip")
+        page = {
+            "id": sid, "name": display, "primary_category": pc, "categories": tags,
+            "service_type": st, "parent": pm.get("parent"), "children": pm.get("children"),
+            "rule": {"has_domain": bool(domains), "has_ip": bool(ips), "mixed": True},
+            "generated_files": {
+                "mixed": f"{sid}.list",
+                "domain": f"{sid}_domain.list" if domains else None,
+                "ip": f"{sid}_ip.list" if ips else None,
+            },
+            "statistics": {"domains": len(domains), "ipv4_or_cidr": len(ips), "mixed": len(mixed)},
+            "sources": sources, "clients": [c[0] for c in CLIENTS],
+            "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "auto_generated": True,
+        }
         (out / "metadata.yaml").write_text(yaml.dump(page, allow_unicode=True, sort_keys=False), encoding="utf-8")
         meta = {"id": sid, "name": display, "primary_category": pc, "service_type": st}
-        (out / "README.md").write_text(readme(meta, cat_display, mixed, domains, ips, sources, cdn, str(official_map.get(sid) or ""), cat.get("notes") or ""), encoding="utf-8")
+        (out / "README.md").write_text(
+            readme(meta, cat_display, mixed, domains, ips, sources, cdn, str(official_map.get(sid) or ""), cat.get("notes") or ""),
+            encoding="utf-8",
+        )
         index["categories"].setdefault(pc, {"display_name": cat_display, "order": cat["order"], "rules": []})
-        index["categories"][pc]["rules"].append({"id": sid, "name": display, "path": f"rule/{rel}", "service_type": st, "domains": len(domains), "ips": len(ips)})
+        index["categories"][pc]["rules"].append({
+            "id": sid, "name": display, "path": f"rule/{rel}", "service_type": st,
+            "domains": len(domains), "ips": len(ips),
+        })
         count += 1
-    for v in index["categories"].values(): v["rules"] = sorted(v["rules"], key=lambda x: x["id"])
+    for v in index["categories"].values():
+        v["rules"] = sorted(v["rules"], key=lambda x: x["id"])
     RULE.mkdir(parents=True, exist_ok=True)
     (RULE / "_index.yaml").write_text(yaml.dump(index, allow_unicode=True, sort_keys=False), encoding="utf-8")
     if errors:
-        print("VALIDATION:", file=sys.stderr)
-        for e in errors: print(" -", e, file=sys.stderr)
-        if args.strict: return 1
-    print(f"OK generate_rule_pages: {count} services → rule/")
+        print("VALIDATION ERRORS:", file=sys.stderr)
+        for e in errors:
+            print(" -", e, file=sys.stderr)
+        return 1
+    print(f"OK generate_rule_pages: {count} services → rule/ (strict={args.strict})")
     return 0
 
 if __name__ == "__main__":
