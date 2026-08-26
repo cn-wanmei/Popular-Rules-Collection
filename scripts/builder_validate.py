@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
-"""builder_validate.py — Client output completeness vs Canonical DB (loss ratio).
+"""builder_validate.py — Client output completeness vs database (loss ratio).
 
 Does NOT check empty domain-set semantics (that is validate.py).
 Focus: for each service with DB rules, each client should emit non-empty main output.
 
-sing-box JSON is headless rule-set:
-  {"version": 2, "rules": [{"domain_suffix": [...], ...}]}
-Count must walk nested rules[], not only top-level keys.
+count_db prefers domains/ips text files; falls back to services yaml rules.
+count_json_rules understands sing-box nested {"version":2,"rules":[{...}]} and top-level.
 """
 from __future__ import annotations
 
@@ -35,15 +34,6 @@ CLIENTS = {
     "loon": ["{id}.list"],
 }
 
-JSON_RULE_KEYS = (
-    "domain",
-    "domain_suffix",
-    "domain_keyword",
-    "domain_regex",
-    "ip_cidr",
-    "ip_cidr6",
-)
-
 
 def count_lines(p: Path) -> int:
     if not p.exists() or p.stat().st_size == 0:
@@ -56,30 +46,8 @@ def count_lines(p: Path) -> int:
     return n
 
 
-def count_json_rules(data: object) -> int:
-    """Count rule items in sing-box (nested or flat) JSON."""
-    total = 0
-    if isinstance(data, list):
-        return len(data)
-    if not isinstance(data, dict):
-        return 0
-    for k in JSON_RULE_KEYS:
-        v = data.get(k)
-        if isinstance(v, list):
-            total += len(v)
-    for rule in data.get("rules") or []:
-        if isinstance(rule, dict):
-            for k in JSON_RULE_KEYS:
-                v = rule.get(k)
-                if isinstance(v, list):
-                    total += len(v)
-        elif isinstance(rule, str):
-            total += 1
-    return total
-
-
 def count_db(sid: str) -> int:
-    """Canonical count: domains.txt + ips.txt, else yaml rules length."""
+    """Prefer domains/ips aggregates; fallback to yaml rules count."""
     n = 0
     d, i = DOMAINS / f"{sid}.txt", IPS / f"{sid}.txt"
     if d.exists():
@@ -98,6 +66,50 @@ def count_db(sid: str) -> int:
     return len(doc.get("rules") or [])
 
 
+def count_json_rules(data: object) -> int:
+    """Count rules in sing-box JSON (nested rules[] or top-level keys)."""
+    total = 0
+    if isinstance(data, list):
+        for item in data:
+            total += count_json_rules(item)
+        return total
+    if not isinstance(data, dict):
+        return 0
+    # Nested: {"version": 2, "rules": [{domain: [...], ...}]}
+    rules = data.get("rules")
+    if isinstance(rules, list):
+        for item in rules:
+            if isinstance(item, dict):
+                for k in (
+                    "domain",
+                    "domain_suffix",
+                    "domain_keyword",
+                    "domain_regex",
+                    "ip_cidr",
+                    "ip_cidr6",
+                ):
+                    v = item.get(k)
+                    if isinstance(v, list):
+                        total += len(v)
+            elif isinstance(item, str):
+                total += 1
+        if total:
+            return total
+    # Top-level fallback
+    for k in (
+        "domain",
+        "domain_suffix",
+        "domain_keyword",
+        "domain_regex",
+        "ip_cidr",
+        "ip_cidr6",
+    ):
+        v = data.get(k)
+        if isinstance(v, list):
+            total += len(v)
+    return total
+
+
 def count_client(client: str, sid: str) -> int:
     total = 0
     found = False
@@ -114,9 +126,13 @@ def count_client(client: str, sid: str) -> int:
                 total += count_lines(p)
         elif p.suffix == ".yaml":
             text = p.read_text(encoding="utf-8", errors="replace")
-            # payload list or egern domain_suffix_set lines
-            total += sum(1 for ln in text.splitlines() if ln.strip().startswith("- "))
-            if total == 0:
+            # Mihomo: count payload list items (lines starting with "- ")
+            n_payload = sum(
+                1 for ln in text.splitlines() if ln.strip().startswith("- ")
+            )
+            if n_payload:
+                total += n_payload
+            else:
                 total += count_lines(p)
         else:
             total += count_lines(p)
@@ -125,18 +141,20 @@ def count_client(client: str, sid: str) -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--date", default=datetime.now(timezone.utc).strftime("%Y-%m-%d"))
+    parser.add_argument(
+        "--date", default=datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    )
     args = parser.parse_args()
     services = [
         p.stem
         for p in sorted(SERVICES.glob("*.yaml"))
         if not p.name.startswith("example")
     ]
-    report = {"date": args.date, "failures": [], "warnings": [], "rows": []}
+    report: dict = {"date": args.date, "failures": [], "warnings": [], "rows": []}
     fatal = False
     for sid in services:
         db_n = count_db(sid)
-        row = {"service": sid, "database": db_n, "clients": {}}
+        row: dict = {"service": sid, "database": db_n, "clients": {}}
         for c in CLIENTS:
             n = count_client(c, sid)
             row["clients"][c] = n
