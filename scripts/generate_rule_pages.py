@@ -42,7 +42,13 @@ def cats():
 
 def primary_map():
     raw = load(PRIM) or {}
-    defaults, services, out = raw.get("defaults") or {}, raw.get("services") or {}, {}
+    defaults, services, out = raw.get("defaults") or {}, dict(raw.get("services") or {}), {}
+    extra = load(ROOT / "config" / "service_primary_extra.yaml") or {}
+    services.update(extra.get("services") or {})
+    for sid, ov in (extra.get("aggregate_overrides") or {}).items():
+        base = services.get(sid) or {}
+        base.update(ov)
+        services[sid] = base
     for sid, meta in services.items():
         m = dict(defaults)
         if isinstance(meta, dict): m.update(meta)
