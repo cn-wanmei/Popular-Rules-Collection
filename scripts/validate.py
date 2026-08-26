@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""validate.py — V1.1 data health + build validation"""
+"""validate.py — data health + expected-output generated validation.
+
+Empty files are errors only when that output was *expected*.
+Derived domain-set files must not exist when empty (stale).
+"""
 
 from __future__ import annotations
 
@@ -17,6 +21,8 @@ DOMAINS = ROOT / "database" / "domains"
 IPS = ROOT / "database" / "ips"
 GENERATED = ROOT / "generated"
 
+DOMAIN_SET_CLIENTS = {"surge", "shadowrocket"}
+
 
 def check_cidr(s: str) -> bool:
     try:
@@ -24,6 +30,41 @@ def check_cidr(s: str) -> bool:
         return True
     except ValueError:
         return False
+
+
+def service_caps(doc: dict) -> dict:
+    has_domain = False
+    has_keyword = False
+    has_ip = False
+    has_any = False
+    for r in doc.get("rules") or []:
+        if not isinstance(r, dict):
+            continue
+        t = (r.get("type") or "").lower()
+        if not r.get("value"):
+            continue
+        has_any = True
+        if t in ("domain", "domain_suffix"):
+            has_domain = True
+        elif t == "domain_keyword":
+            has_keyword = True
+        elif t in ("ip_cidr", "ip_cidr6", "ipcidr", "ipcidr6"):
+            has_ip = True
+    sid = doc.get("id")
+    if sid and (DOMAINS / f"{sid}.txt").exists():
+        if (DOMAINS / f"{sid}.txt").stat().st_size > 0:
+            has_domain = True
+            has_any = True
+    if sid and (IPS / f"{sid}.txt").exists():
+        if (IPS / f"{sid}.txt").stat().st_size > 0:
+            has_ip = True
+            has_any = True
+    return {
+        "has_any": has_any,
+        "expects_domain_set": has_domain,
+        "expects_main": has_any,
+        "has_keyword_only": has_keyword and not has_domain and not has_ip,
+    }
 
 
 def main() -> int:
@@ -41,7 +82,10 @@ def main() -> int:
         "invalid_cidrs": 0,
         "empty_generated": 0,
         "generated_files": 0,
+        "stale_domain_set": 0,
     }
+
+    caps_by_id: dict[str, dict] = {}
 
     for path in sorted(SERVICES.glob("*.yaml")):
         if path.name.startswith("example"):
@@ -55,10 +99,12 @@ def main() -> int:
             errors.append(f"missing id: {path.name}")
             continue
         stats["services"] += 1
-        dfile = DOMAINS / f"{doc['id']}.txt"
+        sid = doc["id"]
+        caps_by_id[sid] = service_caps(doc)
+        dfile = DOMAINS / f"{sid}.txt"
         if (doc.get("metadata") or {}).get("stats", {}).get("total", 0) == 0:
             if not dfile.exists() or dfile.stat().st_size == 0:
-                warnings.append(f"empty service: {doc['id']}")
+                warnings.append(f"empty service: {sid}")
 
     for path in DOMAINS.glob("*.txt"):
         for i, line in enumerate(path.read_text(encoding="utf-8", errors="replace").splitlines(), 1):
@@ -81,16 +127,55 @@ def main() -> int:
                 stats["invalid_cidrs"] += 1
                 errors.append(f"invalid CIDR {path.name}:{i}: {line}")
 
-    for client_dir in GENERATED.iterdir():
-        if not client_dir.is_dir():
-            continue
-        for f in client_dir.iterdir():
-            if not f.is_file():
+    if GENERATED.is_dir():
+        for client_dir in sorted(GENERATED.iterdir()):
+            if not client_dir.is_dir():
                 continue
-            stats["generated_files"] += 1
-            if f.stat().st_size == 0:
-                stats["empty_generated"] += 1
-                errors.append(f"empty generated: {f.relative_to(ROOT)}")
+            client = client_dir.name
+            for f in sorted(client_dir.iterdir()):
+                if not f.is_file():
+                    continue
+                stats["generated_files"] += 1
+                size = f.stat().st_size
+                name = f.name
+
+                if name.endswith("_domain.list"):
+                    sid = name[: -len("_domain.list")]
+                    is_domain_set = True
+                elif name.endswith(".list"):
+                    sid = name[: -len(".list")]
+                    is_domain_set = False
+                elif name.endswith(".yaml"):
+                    sid = name[: -len(".yaml")]
+                    is_domain_set = False
+                elif name.endswith(".json"):
+                    sid = name[: -len(".json")]
+                    is_domain_set = False
+                else:
+                    sid = name.rsplit(".", 1)[0]
+                    is_domain_set = False
+
+                caps = caps_by_id.get(sid)
+
+                if is_domain_set and client in DOMAIN_SET_CLIENTS:
+                    if size == 0:
+                        stats["empty_generated"] += 1
+                        stats["stale_domain_set"] += 1
+                        errors.append(
+                            f"stale empty domain-set (should not exist): {f.relative_to(ROOT)}"
+                        )
+                    elif caps and not caps["expects_domain_set"]:
+                        warnings.append(
+                            f"unexpected domain-set for keyword/ip-only service: {f.relative_to(ROOT)}"
+                        )
+                    continue
+
+                if size == 0:
+                    stats["empty_generated"] += 1
+                    if caps and caps["expects_main"]:
+                        errors.append(f"empty generated (expected output): {f.relative_to(ROOT)}")
+                    else:
+                        warnings.append(f"empty generated (no expected rules): {f.relative_to(ROOT)}")
 
     report = f"""# Data Health — {args.date}
 
@@ -103,6 +188,7 @@ def main() -> int:
 | Suspicious domains | {stats['invalid_domains']} |
 | Generated files | {stats['generated_files']} |
 | Empty generated | {stats['empty_generated']} |
+| Stale domain-set | {stats['stale_domain_set']} |
 | Errors | {len(errors)} |
 | Warnings | {len(warnings)} |
 
