@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
-"""builder_validate.py — Rule Loss Ratio; FAIL if generated empty while DB non-empty."""
+"""builder_validate.py — Client output completeness vs database (loss ratio).
 
+Does NOT check empty domain-set semantics (that is validate.py).
+Focus: for each service with DB rules, each client should emit non-empty main output.
+"""
 from __future__ import annotations
 
 import argparse
@@ -9,49 +12,83 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+import yaml
+
 ROOT = Path(__file__).resolve().parents[1]
-LARGE = {"adblock", "china", "proxy", "gfw"}
+SERVICES = ROOT / "database" / "services"
+DOMAINS = ROOT / "database" / "domains"
+IPS = ROOT / "database" / "ips"
+GENERATED = ROOT / "generated"
+LARGE = {"adblock", "china", "proxy", "gfw", "adblock-pro", "adblock-light"}
+
+CLIENTS = {
+    "mihomo": ["{id}.yaml"],
+    "sing-box": ["{id}.json"],
+    "surge": ["{id}.list"],
+    "shadowrocket": ["{id}.list"],
+    "quantumult-x": ["{id}.list"],
+    "egern": ["{id}.yaml"],
+    "loon": ["{id}.list"],
+}
 
 
 def count_lines(p: Path) -> int:
-    if not p.exists():
+    if not p.exists() or p.stat().st_size == 0:
         return 0
-    return sum(1 for ln in p.read_text(encoding="utf-8", errors="replace").splitlines() if ln.strip())
+    n = 0
+    with p.open(encoding="utf-8", errors="replace") as f:
+        for line in f:
+            if line.strip() and not line.strip().startswith("#"):
+                n += 1
+    return n
 
 
-def count_service_db(sid: str) -> int:
-    return count_lines(ROOT / "database" / "domains" / f"{sid}.txt") + count_lines(
-        ROOT / "database" / "ips" / f"{sid}.txt"
-    )
+def count_db(sid: str) -> int:
+    n = 0
+    d, i = DOMAINS / f"{sid}.txt", IPS / f"{sid}.txt"
+    if d.exists():
+        n += count_lines(d)
+    if i.exists():
+        n += count_lines(i)
+    if n:
+        return n
+    sp = SERVICES / f"{sid}.yaml"
+    if not sp.exists():
+        return 0
+    try:
+        doc = yaml.safe_load(sp.read_text(encoding="utf-8")) or {}
+    except Exception:
+        return 0
+    return len(doc.get("rules") or [])
 
 
-def count_generated(client: str, sid: str) -> int:
-    base = ROOT / "generated" / client
-    candidates = [base / f"{sid}.list", base / f"{sid}.yaml", base / f"{sid}.json", base / f"{sid}_domain.list"]
+def count_client(client: str, sid: str) -> int:
     total = 0
     found = False
-    for p in candidates:
-        if p.exists() and p.stat().st_size > 0:
-            found = True
-            if p.suffix == "json":
-                try:
-                    data = json.loads(p.read_text(encoding="utf-8"))
-                    if isinstance(data, dict):
-                        for k in ("domain", "domain_suffix", "domain_keyword", "ip_cidr", "ip_cidr6"):
-                            v = data.get(k)
-                            if isinstance(v, list):
-                                total += len(v)
-                    elif isinstance(data, list):
-                        total += len(data)
-                except json.JSONDecodeError:
-                    total += count_lines(p)
-            elif p.suffix == ".yaml":
-                text = p.read_text(encoding="utf-8", errors="replace")
-                total += sum(1 for ln in text.splitlines() if ln.strip().startswith("- "))
-                if total == 0:
-                    total += count_lines(p)
-            else:
+    for pat in CLIENTS.get(client, []):
+        p = GENERATED / client / pat.format(id=sid)
+        if not p.exists():
+            continue
+        found = True
+        if p.suffix == ".json":
+            try:
+                data = json.loads(p.read_text(encoding="utf-8"))
+                if isinstance(data, dict):
+                    for k in ("domain", "domain_suffix", "domain_keyword", "ip_cidr", "ip_cidr6"):
+                        v = data.get(k)
+                        if isinstance(v, list):
+                            total += len(v)
+                elif isinstance(data, list):
+                    total += len(data)
+            except json.JSONDecodeError:
                 total += count_lines(p)
+        elif p.suffix == ".yaml":
+            text = p.read_text(encoding="utf-8", errors="replace")
+            total += sum(1 for ln in text.splitlines() if ln.strip().startswith("- "))
+            if total == 0:
+                total += count_lines(p)
+        else:
+            total += count_lines(p)
     return total if found else -1
 
 
@@ -59,18 +96,24 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--date", default=datetime.now(timezone.utc).strftime("%Y-%m-%d"))
     args = parser.parse_args()
-    services = [p.stem for p in sorted((ROOT / "database" / "services").glob("*.yaml")) if not p.name.startswith("example")]
-    clients = ["mihomo", "sing-box", "surge", "shadowrocket", "quantumult-x", "egern"]
+    services = [
+        p.stem
+        for p in sorted(SERVICES.glob("*.yaml"))
+        if not p.name.startswith("example")
+    ]
     report = {"date": args.date, "failures": [], "warnings": [], "rows": []}
     fatal = False
     for sid in services:
-        db_n = count_service_db(sid)
+        db_n = count_db(sid)
         row = {"service": sid, "database": db_n, "clients": {}}
-        for c in clients:
-            n = count_generated(c, sid)
+        for c in CLIENTS:
+            n = count_client(c, sid)
             row["clients"][c] = n
             if db_n > 0 and n == 0:
                 report["failures"].append(f"{sid}/{c}: database={db_n} generated=0")
+                fatal = True
+            elif db_n > 0 and n == -1:
+                report["failures"].append(f"{sid}/{c}: missing generated file")
                 fatal = True
             elif db_n > 0 and n > 0 and sid not in LARGE:
                 loss = max(0, db_n - n) / db_n
@@ -81,6 +124,8 @@ def main() -> int:
     out.mkdir(parents=True, exist_ok=True)
     (out / "builder-validation.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(f"[builder_validate] failures={len(report['failures'])} warnings={len(report['warnings'])}")
+    for f in report["failures"][:20]:
+        print("  FAIL", f)
     return 1 if fatal else 0
 
 
