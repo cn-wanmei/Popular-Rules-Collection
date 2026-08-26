@@ -29,7 +29,9 @@ def main() -> int:
         for f in base.rglob("*"):
             if not f.is_file():
                 continue
+            # skip local-only caches
             if f.name == "domains.jsonl" and "provenance" in str(f):
+                # legacy — always flag
                 pass
             size = f.stat().st_size
             if size > limit:

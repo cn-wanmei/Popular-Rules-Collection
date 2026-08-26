@@ -54,6 +54,7 @@ def main() -> int:
                         errors.append(f"{sid}: child '{c}' not defined in service_primary")
                     else:
                         child = services[c]
+                        # child should prefer same ecosystem or documented parent
                         if child.get("parent") and child.get("parent") != sid:
                             warnings.append(f"{sid}: child {c} parent={child.get('parent')} mismatch")
         elif children:
@@ -65,6 +66,7 @@ def main() -> int:
             elif services[parent].get("service_type") != "aggregate":
                 errors.append(f"{sid}: parent '{parent}' is not aggregate")
 
+    # database services should be mapped when present
     if SERVICES.is_dir():
         for p in SERVICES.glob("*.yaml"):
             if p.name.startswith("example"):
