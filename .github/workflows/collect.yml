@@ -57,6 +57,8 @@ jobs:
         continue-on-error: true
       - run: python scripts/generate_docs.py
         continue-on-error: true
+      - name: Generate rule product pages
+        run: python scripts/generate_rule_pages.py --clean
       - name: Size gate (90MB)
         run: python scripts/size_gate.py --max-mb 90
       - name: Commit
@@ -65,7 +67,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           DAY=$(date -u +%Y-%m-%d)
           rm -f database/provenance/domains.jsonl
-          git add -A database/ generated/ sources/health.yaml reports/ docs/ config/ || true
+          git add -A database/ generated/ rule/ sources/health.yaml reports/ docs/ config/ || true
           git add backup/*/manifests/ backup/ || true
           python scripts/size_gate.py --max-mb 90
           git diff --staged --quiet || git commit -m "chore(pipeline): collect+normalize+build ${DAY}"
