@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""size_gate.py — fail CI if any artifact exceeds safety threshold (default 90MB)."""
+"""size_gate.py — fail CI if any tracked artifact exceeds safety threshold (default 90MB)."""
 
 from __future__ import annotations
 
@@ -8,7 +8,13 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SCAN = [ROOT / "database", ROOT / "generated", ROOT / "reports", ROOT / "backup"]
+SCAN = [
+    ROOT / "database",
+    ROOT / "generated",
+    ROOT / "reports",
+    ROOT / "backup",
+]
+SKIP_SUFFIX = {".git"}
 
 
 def main() -> int:
@@ -23,6 +29,8 @@ def main() -> int:
         for f in base.rglob("*"):
             if not f.is_file():
                 continue
+            if f.name == "domains.jsonl" and "provenance" in str(f):
+                pass
             size = f.stat().st_size
             if size > limit:
                 bad.append((str(f.relative_to(ROOT)), size))
