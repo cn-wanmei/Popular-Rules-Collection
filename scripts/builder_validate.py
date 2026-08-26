@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
-"""builder_validate.py — Client output completeness vs database (loss ratio).
+"""builder_validate.py — Client output completeness vs Canonical DB (loss ratio).
 
 Does NOT check empty domain-set semantics (that is validate.py).
 Focus: for each service with DB rules, each client should emit non-empty main output.
+
+sing-box JSON is headless rule-set:
+  {"version": 2, "rules": [{"domain_suffix": [...], ...}]}
+Count must walk nested rules[], not only top-level keys.
 """
 from __future__ import annotations
 
@@ -31,6 +35,15 @@ CLIENTS = {
     "loon": ["{id}.list"],
 }
 
+JSON_RULE_KEYS = (
+    "domain",
+    "domain_suffix",
+    "domain_keyword",
+    "domain_regex",
+    "ip_cidr",
+    "ip_cidr6",
+)
+
 
 def count_lines(p: Path) -> int:
     if not p.exists() or p.stat().st_size == 0:
@@ -43,7 +56,30 @@ def count_lines(p: Path) -> int:
     return n
 
 
+def count_json_rules(data: object) -> int:
+    """Count rule items in sing-box (nested or flat) JSON."""
+    total = 0
+    if isinstance(data, list):
+        return len(data)
+    if not isinstance(data, dict):
+        return 0
+    for k in JSON_RULE_KEYS:
+        v = data.get(k)
+        if isinstance(v, list):
+            total += len(v)
+    for rule in data.get("rules") or []:
+        if isinstance(rule, dict):
+            for k in JSON_RULE_KEYS:
+                v = rule.get(k)
+                if isinstance(v, list):
+                    total += len(v)
+        elif isinstance(rule, str):
+            total += 1
+    return total
+
+
 def count_db(sid: str) -> int:
+    """Canonical count: domains.txt + ips.txt, else yaml rules length."""
     n = 0
     d, i = DOMAINS / f"{sid}.txt", IPS / f"{sid}.txt"
     if d.exists():
@@ -73,17 +109,12 @@ def count_client(client: str, sid: str) -> int:
         if p.suffix == ".json":
             try:
                 data = json.loads(p.read_text(encoding="utf-8"))
-                if isinstance(data, dict):
-                    for k in ("domain", "domain_suffix", "domain_keyword", "ip_cidr", "ip_cidr6"):
-                        v = data.get(k)
-                        if isinstance(v, list):
-                            total += len(v)
-                elif isinstance(data, list):
-                    total += len(data)
+                total += count_json_rules(data)
             except json.JSONDecodeError:
                 total += count_lines(p)
         elif p.suffix == ".yaml":
             text = p.read_text(encoding="utf-8", errors="replace")
+            # payload list or egern domain_suffix_set lines
             total += sum(1 for ln in text.splitlines() if ln.strip().startswith("- "))
             if total == 0:
                 total += count_lines(p)
@@ -118,14 +149,23 @@ def main() -> int:
             elif db_n > 0 and n > 0 and sid not in LARGE:
                 loss = max(0, db_n - n) / db_n
                 if loss > 0.05:
-                    report["warnings"].append(f"{sid}/{c}: loss_ratio={loss:.1%} db={db_n} out={n}")
+                    report["warnings"].append(
+                        f"{sid}/{c}: loss_ratio={loss:.1%} db={db_n} out={n}"
+                    )
         report["rows"].append(row)
     out = ROOT / "reports" / args.date
     out.mkdir(parents=True, exist_ok=True)
-    (out / "builder-validation.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-    print(f"[builder_validate] failures={len(report['failures'])} warnings={len(report['warnings'])}")
-    for f in report["failures"][:20]:
+    (out / "builder-validation.json").write_text(
+        json.dumps(report, indent=2) + "\n", encoding="utf-8"
+    )
+    print(
+        f"[builder_validate] failures={len(report['failures'])} "
+        f"warnings={len(report['warnings'])}"
+    )
+    for f in report["failures"][:30]:
         print("  FAIL", f)
+    for w in report["warnings"][:20]:
+        print("  WARN", w)
     return 1 if fatal else 0
 
 
