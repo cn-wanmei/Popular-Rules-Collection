@@ -5,6 +5,13 @@ categories:
 - finance
 - china
 service_type: aggregate
+parent: null
+children:
+- icbc
+- abc
+- ccb
+- boc
+- cmb
 rule:
   has_domain: true
   has_ip: false

@@ -4,6 +4,18 @@ primary_category: china
 categories:
 - china
 service_type: aggregate
+parent: null
+children:
+- meituan
+- pinduoduo
+- xiaohongshu
+- didi
+- netease
+- bilibili
+- weibo
+- zhihu
+- iqiyi
+- kuaishou
 rule:
   has_domain: true
   has_ip: true

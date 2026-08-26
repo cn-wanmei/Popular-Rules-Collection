@@ -4,6 +4,18 @@ primary_category: developer
 categories:
 - developer
 service_type: aggregate
+parent: null
+children:
+- docker
+- gitlab
+- vercel
+- cloudflare
+- amazonaws
+- adobe
+- akamai
+- dropbox
+- notion
+- figma
 rule:
   has_domain: true
   has_ip: false

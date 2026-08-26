@@ -5,6 +5,10 @@ categories:
 - bytedance
 - china
 service_type: aggregate
+parent: null
+children:
+- douyin
+- tiktok
 rule:
   has_domain: true
   has_ip: true

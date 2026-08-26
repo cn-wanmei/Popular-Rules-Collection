@@ -4,6 +4,8 @@ primary_category: ai
 categories:
 - ai
 service_type: service
+parent: ai
+children: null
 rule:
   has_domain: true
   has_ip: true

@@ -4,6 +4,11 @@ primary_category: apple
 categories:
 - apple
 service_type: aggregate
+parent: null
+children:
+- applemusic
+- appletv
+- icloud
 rule:
   has_domain: true
   has_ip: true

@@ -5,6 +5,8 @@ categories:
 - alibaba
 - china
 service_type: service
+parent: alibaba
+children: null
 rule:
   has_domain: true
   has_ip: false

@@ -1,0 +1,10 @@
+# name: Weibo
+# id: weibo
+# count: 4
+no_resolve: true
+domain_suffix_set:
+- weibo.cn
+- weibo.com
+- weibocdn.com
+domain_keyword_set:
+- weibo

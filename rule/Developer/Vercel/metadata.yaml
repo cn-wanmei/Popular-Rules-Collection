@@ -4,6 +4,8 @@ primary_category: developer
 categories:
 - developer
 service_type: service
+parent: developer
+children: null
 rule:
   has_domain: true
   has_ip: false

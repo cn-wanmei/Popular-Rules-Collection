@@ -5,6 +5,11 @@ categories:
 - tencent
 - china
 service_type: aggregate
+parent: null
+children:
+- wechat
+- tencentvideo
+- qq
 rule:
   has_domain: true
   has_ip: true

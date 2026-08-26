@@ -1,0 +1,33 @@
+id: weibo
+name: Weibo
+primary_category: china
+categories:
+- china
+- social
+service_type: service
+parent: china
+children: null
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: weibo.list
+  domain: weibo_domain.list
+  ip: null
+statistics:
+  domains: 3
+  ipv4_or_cidr: 0
+  mixed: 3
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

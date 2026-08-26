@@ -5,6 +5,8 @@ categories:
 - apple
 - streaming
 service_type: service
+parent: apple
+children: null
 rule:
   has_domain: true
   has_ip: false

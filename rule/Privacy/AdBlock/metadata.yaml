@@ -4,6 +4,10 @@ primary_category: privacy
 categories:
 - privacy
 service_type: aggregate
+parent: null
+children:
+- adblock-pro
+- adblock-light
 rule:
   has_domain: true
   has_ip: true

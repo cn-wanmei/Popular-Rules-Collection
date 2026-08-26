@@ -5,6 +5,12 @@ categories:
 - alibaba
 - china
 service_type: aggregate
+parent: null
+children:
+- alibabacloud
+- alipay
+- taobao
+- youku
 rule:
   has_domain: true
   has_ip: true

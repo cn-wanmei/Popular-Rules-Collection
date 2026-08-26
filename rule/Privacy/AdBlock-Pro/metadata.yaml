@@ -4,6 +4,8 @@ primary_category: privacy
 categories:
 - privacy
 service_type: service
+parent: adblock
+children: null
 rule:
   has_domain: true
   has_ip: false

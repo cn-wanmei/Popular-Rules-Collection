@@ -4,6 +4,12 @@ primary_category: ai
 categories:
 - ai
 service_type: aggregate
+parent: null
+children:
+- openai
+- claude
+- gemini
+- copilot
 rule:
   has_domain: true
   has_ip: false

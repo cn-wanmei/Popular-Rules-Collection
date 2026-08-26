@@ -6,6 +6,8 @@ categories:
 - china
 - social
 service_type: service
+parent: bytedance
+children: null
 rule:
   has_domain: true
   has_ip: false

@@ -1,4 +1,4 @@
-generated_at: '2026-08-26T13:01:16.888265+00:00'
+generated_at: '2026-08-26T13:50:27.258654+00:00'
 categories:
   '12306':
     display_name: '12306'
@@ -9,6 +9,46 @@ categories:
       path: rule/12306/12306
       service_type: service
       domains: 15
+      ips: 0
+  unionpay:
+    display_name: UnionPay
+    order: 100
+    rules:
+    - id: abc
+      name: ABC
+      path: rule/UnionPay/ABC
+      service_type: service
+      domains: 6
+      ips: 0
+    - id: boc
+      name: BOC
+      path: rule/UnionPay/BOC
+      service_type: service
+      domains: 22
+      ips: 0
+    - id: ccb
+      name: CCB
+      path: rule/UnionPay/CCB
+      service_type: service
+      domains: 18
+      ips: 0
+    - id: cmb
+      name: CMB
+      path: rule/UnionPay/CMB
+      service_type: service
+      domains: 38
+      ips: 0
+    - id: icbc
+      name: ICBC
+      path: rule/UnionPay/ICBC
+      service_type: service
+      domains: 58
+      ips: 0
+    - id: unionpay
+      name: UnionPay
+      path: rule/UnionPay/UnionPay
+      service_type: aggregate
+      domains: 16
       ips: 0
   privacy:
     display_name: Privacy
@@ -31,6 +71,70 @@ categories:
       path: rule/Privacy/AdBlock-Pro
       service_type: service
       domains: 225958
+      ips: 0
+  developer:
+    display_name: Developer
+    order: 160
+    rules:
+    - id: adobe
+      name: Adobe
+      path: rule/Developer/Adobe
+      service_type: service
+      domains: 136
+      ips: 0
+    - id: akamai
+      name: Akamai
+      path: rule/Developer/Akamai
+      service_type: service
+      domains: 6
+      ips: 0
+    - id: cloudflare
+      name: Cloudflare
+      path: rule/Developer/Cloudflare
+      service_type: service
+      domains: 43
+      ips: 22
+    - id: developer
+      name: Developer
+      path: rule/Developer/Developer
+      service_type: aggregate
+      domains: 70
+      ips: 0
+    - id: docker
+      name: Docker
+      path: rule/Developer/Docker
+      service_type: service
+      domains: 7
+      ips: 0
+    - id: dropbox
+      name: Dropbox
+      path: rule/Developer/Dropbox
+      service_type: service
+      domains: 17
+      ips: 0
+    - id: figma
+      name: Figma
+      path: rule/Developer/Figma
+      service_type: service
+      domains: 1
+      ips: 0
+    - id: gitlab
+      name: GitLab
+      path: rule/Developer/GitLab
+      service_type: service
+      domains: 6
+      ips: 0
+    - id: notion
+      name: Notion
+      path: rule/Developer/Notion
+      service_type: service
+      domains: 6
+      ips: 0
+    - id: vercel
+      name: Vercel
+      path: rule/Developer/Vercel
+      service_type: service
+      domains: 27
       ips: 0
   ai:
     display_name: AI
@@ -88,6 +192,70 @@ categories:
       service_type: service
       domains: 21
       ips: 0
+    - id: youku
+      name: Youku
+      path: rule/Alibaba/Youku
+      service_type: service
+      domains: 34
+      ips: 1
+  streaming:
+    display_name: Streaming
+    order: 200
+    rules:
+    - id: amazon
+      name: Amazon
+      path: rule/Streaming/Amazon
+      service_type: service
+      domains: 186
+      ips: 15
+    - id: disney
+      name: Disney
+      path: rule/Streaming/Disney
+      service_type: service
+      domains: 172
+      ips: 0
+    - id: hbo
+      name: HBO
+      path: rule/Streaming/HBO
+      service_type: service
+      domains: 47
+      ips: 0
+    - id: hulu
+      name: Hulu
+      path: rule/Streaming/Hulu
+      service_type: service
+      domains: 58
+      ips: 0
+    - id: netflix
+      name: Netflix
+      path: rule/Streaming/Netflix
+      service_type: service
+      domains: 32
+      ips: 0
+    - id: paramountplus
+      name: ParamountPlus
+      path: rule/Streaming/ParamountPlus
+      service_type: service
+      domains: 9
+      ips: 0
+    - id: primevideo
+      name: PrimeVideo
+      path: rule/Streaming/PrimeVideo
+      service_type: service
+      domains: 24
+      ips: 0
+    - id: spotify
+      name: Spotify
+      path: rule/Streaming/Spotify
+      service_type: service
+      domains: 26
+      ips: 2
+    - id: twitch
+      name: Twitch
+      path: rule/Streaming/Twitch
+      service_type: service
+      domains: 8
+      ips: 12
   apple:
     display_name: Apple
     order: 20
@@ -212,6 +380,18 @@ categories:
       service_type: service
       domains: 25
       ips: 0
+    - id: iqiyi
+      name: iQIYI
+      path: rule/China/iQIYI
+      service_type: service
+      domains: 34
+      ips: 21
+    - id: kuaishou
+      name: Kuaishou
+      path: rule/China/Kuaishou
+      service_type: service
+      domains: 678
+      ips: 0
     - id: meituan
       name: MeiTuan
       path: rule/China/MeiTuan
@@ -230,12 +410,24 @@ categories:
       service_type: service
       domains: 3
       ips: 0
+    - id: weibo
+      name: Weibo
+      path: rule/China/Weibo
+      service_type: service
+      domains: 3
+      ips: 0
     - id: xiaohongshu
       name: XiaoHongShu
       path: rule/China/XiaoHongShu
       service_type: service
       domains: 4
       ips: 0
+    - id: zhihu
+      name: Zhihu
+      path: rule/China/Zhihu
+      service_type: service
+      domains: 2
+      ips: 5
   finance:
     display_name: Finance
     order: 220
@@ -310,40 +502,6 @@ categories:
       service_type: service
       domains: 33
       ips: 1
-  developer:
-    display_name: Developer
-    order: 160
-    rules:
-    - id: cloudflare
-      name: Cloudflare
-      path: rule/Developer/Cloudflare
-      service_type: service
-      domains: 43
-      ips: 22
-    - id: developer
-      name: Developer
-      path: rule/Developer/Developer
-      service_type: aggregate
-      domains: 70
-      ips: 0
-    - id: docker
-      name: Docker
-      path: rule/Developer/Docker
-      service_type: service
-      domains: 7
-      ips: 0
-    - id: gitlab
-      name: GitLab
-      path: rule/Developer/GitLab
-      service_type: service
-      domains: 6
-      ips: 0
-    - id: vercel
-      name: Vercel
-      path: rule/Developer/Vercel
-      service_type: service
-      domains: 27
-      ips: 0
   social:
     display_name: Social
     order: 190
@@ -365,6 +523,18 @@ categories:
       path: rule/Social/Instagram
       service_type: service
       domains: 3
+      ips: 0
+    - id: linkedin
+      name: LinkedIn
+      path: rule/Social/LinkedIn
+      service_type: service
+      domains: 12
+      ips: 0
+    - id: pinterest
+      name: Pinterest
+      path: rule/Social/Pinterest
+      service_type: service
+      domains: 23
       ips: 0
     - id: reddit
       name: Reddit
@@ -396,58 +566,6 @@ categories:
       service_type: service
       domains: 5
       ips: 11
-  streaming:
-    display_name: Streaming
-    order: 200
-    rules:
-    - id: disney
-      name: Disney
-      path: rule/Streaming/Disney
-      service_type: service
-      domains: 172
-      ips: 0
-    - id: hbo
-      name: HBO
-      path: rule/Streaming/HBO
-      service_type: service
-      domains: 47
-      ips: 0
-    - id: hulu
-      name: Hulu
-      path: rule/Streaming/Hulu
-      service_type: service
-      domains: 58
-      ips: 0
-    - id: netflix
-      name: Netflix
-      path: rule/Streaming/Netflix
-      service_type: service
-      domains: 32
-      ips: 0
-    - id: paramountplus
-      name: ParamountPlus
-      path: rule/Streaming/ParamountPlus
-      service_type: service
-      domains: 9
-      ips: 0
-    - id: primevideo
-      name: PrimeVideo
-      path: rule/Streaming/PrimeVideo
-      service_type: service
-      domains: 24
-      ips: 0
-    - id: spotify
-      name: Spotify
-      path: rule/Streaming/Spotify
-      service_type: service
-      domains: 26
-      ips: 2
-    - id: twitch
-      name: Twitch
-      path: rule/Streaming/Twitch
-      service_type: service
-      domains: 8
-      ips: 12
   network:
     display_name: Network
     order: 210
@@ -503,6 +621,12 @@ categories:
       path: rule/Microsoft/OneDrive
       service_type: service
       domains: 13
+      ips: 0
+    - id: teams
+      name: Teams
+      path: rule/Microsoft/Teams
+      service_type: service
+      domains: 4
       ips: 0
     - id: xbox
       name: Xbox
@@ -563,14 +687,4 @@ categories:
       path: rule/Tencent/WeChat
       service_type: service
       domains: 30
-      ips: 0
-  unionpay:
-    display_name: UnionPay
-    order: 100
-    rules:
-    - id: unionpay
-      name: UnionPay
-      path: rule/UnionPay/UnionPay
-      service_type: aggregate
-      domains: 16
       ips: 0

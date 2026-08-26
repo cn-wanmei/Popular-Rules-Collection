@@ -4,6 +4,10 @@ primary_category: google
 categories:
 - google
 service_type: aggregate
+parent: null
+children:
+- youtube
+- googlefcm
 rule:
   has_domain: true
   has_ip: true

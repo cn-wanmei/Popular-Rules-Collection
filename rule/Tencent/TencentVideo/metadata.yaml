@@ -6,6 +6,8 @@ categories:
 - china
 - streaming
 service_type: service
+parent: tencent
+children: null
 rule:
   has_domain: true
   has_ip: true

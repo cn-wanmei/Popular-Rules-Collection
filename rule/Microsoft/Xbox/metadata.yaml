@@ -5,6 +5,8 @@ categories:
 - microsoft
 - gaming
 service_type: service
+parent: microsoft
+children: null
 rule:
   has_domain: true
   has_ip: false

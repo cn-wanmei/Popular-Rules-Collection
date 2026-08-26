@@ -1,11 +1,11 @@
 {
   "source": "blackmatrix7",
   "fetch": "github_raw",
-  "timestamp": "2026-08-26T12:46:19.106690+00:00",
-  "files_ok": 75,
-  "files_failed": 0,
+  "timestamp": "2026-08-26T13:35:34.789648+00:00",
+  "files_ok": 94,
+  "files_failed": 4,
   "empty_blocked": 0,
-  "rules_declared": 75,
+  "rules_declared": 98,
   "files": [
     {
       "name": "Clash_Apple.yaml",
@@ -755,6 +755,228 @@
       "local": "sources/blackmatrix7/Clash_TencentVideo.yaml",
       "size": 2131,
       "sha256": "bce56e741ff1e17d6c0e9131353f16f19ae7d0e821a303b7794e512778d541cb",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_TaoBao.yaml",
+      "path": "rule/Clash/TaoBao/TaoBao.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TaoBao/TaoBao.yaml",
+      "service": "taobao",
+      "status": "failed",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "Clash_Youku.yaml",
+      "path": "rule/Clash/Youku/Youku.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Youku/Youku.yaml",
+      "service": "youku",
+      "local": "sources/blackmatrix7/Clash_Youku.yaml",
+      "size": 1250,
+      "sha256": "ae16b5c263e8e916086871c2b6c28687707bff3963a069804561b0a5f594b0c9",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Weibo.yaml",
+      "path": "rule/Clash/Weibo/Weibo.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Weibo/Weibo.yaml",
+      "service": "weibo",
+      "local": "sources/blackmatrix7/Clash_Weibo.yaml",
+      "size": 294,
+      "sha256": "5cf5800ad6e4deebf0f10a8a095df9ecd9bb305a023db879ae526fd959993cb8",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Zhihu.yaml",
+      "path": "rule/Clash/Zhihu/Zhihu.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Zhihu/Zhihu.yaml",
+      "service": "zhihu",
+      "local": "sources/blackmatrix7/Clash_Zhihu.yaml",
+      "size": 420,
+      "sha256": "e7ec2f8854196964b2da78ebddb00edd7ef6cc81ccaa73b6c04ce17677498a40",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_iQIYI.yaml",
+      "path": "rule/Clash/iQIYI/iQIYI.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/iQIYI/iQIYI.yaml",
+      "service": "iqiyi",
+      "local": "sources/blackmatrix7/Clash_iQIYI.yaml",
+      "size": 1874,
+      "sha256": "46dae845399159d1145a65fc11ce94cbef73cf3d65ac5cd32be8bd71928ea496",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_KuaiShou.yaml",
+      "path": "rule/Clash/KuaiShou/KuaiShou.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/KuaiShou/KuaiShou.yaml",
+      "service": "kuaishou",
+      "local": "sources/blackmatrix7/Clash_KuaiShou.yaml",
+      "size": 22085,
+      "sha256": "a61ac9ceb3ff56c49beb176daeb93371951563828b0ee89a173d7e8b72155fbe",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_QQ.yaml",
+      "path": "rule/Clash/QQ/QQ.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/QQ/QQ.yaml",
+      "service": "qq",
+      "status": "failed",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "Clash_ICBC.yaml",
+      "path": "rule/Clash/ICBC/ICBC.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ICBC/ICBC.yaml",
+      "service": "icbc",
+      "local": "sources/blackmatrix7/Clash_ICBC.yaml",
+      "size": 1942,
+      "sha256": "dd8927892fd1ec7dc648aea876e2a05a374fe532a692ba08230f2790894b3481",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_ABC.yaml",
+      "path": "rule/Clash/ABC/ABC.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ABC/ABC.yaml",
+      "service": "abc",
+      "local": "sources/blackmatrix7/Clash_ABC.yaml",
+      "size": 344,
+      "sha256": "733f7e8c36990aa36e22cf4f8442359a51354e27204b2a16e2df18de6dab0bf6",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_CCB.yaml",
+      "path": "rule/Clash/CCB/CCB.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/CCB/CCB.yaml",
+      "service": "ccb",
+      "local": "sources/blackmatrix7/Clash_CCB.yaml",
+      "size": 719,
+      "sha256": "8dbcd1ca632a6333a40bb6eea0e119205fc67468a41f2a5c6b725e30c5dde809",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_BOC.yaml",
+      "path": "rule/Clash/BOC/BOC.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BOC/BOC.yaml",
+      "service": "boc",
+      "local": "sources/blackmatrix7/Clash_BOC.yaml",
+      "size": 863,
+      "sha256": "8edbc9c9027bb0ff77da182b6ef693309aa0eb0a3bbc4b42f3574c4ca335e3a1",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_CMB.yaml",
+      "path": "rule/Clash/CMB/CMB.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/CMB/CMB.yaml",
+      "service": "cmb",
+      "local": "sources/blackmatrix7/Clash_CMB.yaml",
+      "size": 1328,
+      "sha256": "a29c06083145367fd1cebf42ce8ec9e4ed4690a74064c0b6c68543454b326237",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Amazon.yaml",
+      "path": "rule/Clash/Amazon/Amazon.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Amazon/Amazon.yaml",
+      "service": "amazon",
+      "local": "sources/blackmatrix7/Clash_Amazon.yaml",
+      "size": 6972,
+      "sha256": "b027faaea79923ba80ec1f7828aecb99f647774e1e1676fd74d6d05c8e4b6853",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_AmazonAWS.yaml",
+      "path": "rule/Clash/AmazonAWS/AmazonAWS.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AmazonAWS/AmazonAWS.yaml",
+      "service": "amazonaws",
+      "status": "failed",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "Clash_Adobe.yaml",
+      "path": "rule/Clash/Adobe/Adobe.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Adobe/Adobe.yaml",
+      "service": "adobe",
+      "local": "sources/blackmatrix7/Clash_Adobe.yaml",
+      "size": 4773,
+      "sha256": "5a97843a1a9f24dd484f968773cb3fee042f67c2117262b2b2be1dd4578f6cb4",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Akamai.yaml",
+      "path": "rule/Clash/Akamai/Akamai.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Akamai/Akamai.yaml",
+      "service": "akamai",
+      "local": "sources/blackmatrix7/Clash_Akamai.yaml",
+      "size": 353,
+      "sha256": "ecd2a8f2ce28720154e1c185b0e2b382783f4cd3e94a55eb683436cedafc64ed",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Dropbox.yaml",
+      "path": "rule/Clash/Dropbox/Dropbox.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Dropbox/Dropbox.yaml",
+      "service": "dropbox",
+      "local": "sources/blackmatrix7/Clash_Dropbox.yaml",
+      "size": 776,
+      "sha256": "8dc09c2d1173000d9544cc7d0b1be5392d9d12887328b5c57e37804fdd8cbc2a",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Notion.yaml",
+      "path": "rule/Clash/Notion/Notion.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Notion/Notion.yaml",
+      "service": "notion",
+      "local": "sources/blackmatrix7/Clash_Notion.yaml",
+      "size": 374,
+      "sha256": "b92f5bdc0ac6a51ac3f5a7e53fd308aaecac4bfd4ad78605feb3db62aeb0e250",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Figma.yaml",
+      "path": "rule/Clash/Figma/Figma.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Figma/Figma.yaml",
+      "service": "figma",
+      "local": "sources/blackmatrix7/Clash_Figma.yaml",
+      "size": 191,
+      "sha256": "2d9cdc42a6ed097e24c1c955bdf409bf0616d3cfc67192ecfee37b4ef28cb5f9",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_LinkedIn.yaml",
+      "path": "rule/Clash/LinkedIn/LinkedIn.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/LinkedIn/LinkedIn.yaml",
+      "service": "linkedin",
+      "local": "sources/blackmatrix7/Clash_LinkedIn.yaml",
+      "size": 566,
+      "sha256": "bfc6b0113cb1c871598c1c33c080f88b3bf1cc8d3dfcb064da0b571ec7c615d2",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Pinterest.yaml",
+      "path": "rule/Clash/Pinterest/Pinterest.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Pinterest/Pinterest.yaml",
+      "service": "pinterest",
+      "local": "sources/blackmatrix7/Clash_Pinterest.yaml",
+      "size": 895,
+      "sha256": "9640bad23218a8f0c9471b2c34173fce8161c98757a6f579afa44f788368bcbd",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Snapchat.yaml",
+      "path": "rule/Clash/Snapchat/Snapchat.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Snapchat/Snapchat.yaml",
+      "service": "snapchat",
+      "status": "failed",
+      "error": "HTTP 404"
+    },
+    {
+      "name": "Clash_Teams.yaml",
+      "path": "rule/Clash/Teams/Teams.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Teams/Teams.yaml",
+      "service": "teams",
+      "local": "sources/blackmatrix7/Clash_Teams.yaml",
+      "size": 326,
+      "sha256": "b6037bb812b2a816407c293f64b182bab3d8d8a71fc343062e05cdd69a9b395f",
       "status": "ok"
     }
   ],

@@ -4,6 +4,12 @@ primary_category: microsoft
 categories:
 - microsoft
 service_type: aggregate
+parent: null
+children:
+- onedrive
+- xbox
+- github
+- teams
 rule:
   has_domain: true
   has_ip: false

@@ -5,6 +5,8 @@ categories:
 - baidu
 - china
 service_type: aggregate
+parent: null
+children: null
 rule:
   has_domain: true
   has_ip: false

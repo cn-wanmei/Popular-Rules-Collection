@@ -1,0 +1,33 @@
+id: akamai
+name: Akamai
+primary_category: developer
+categories:
+- developer
+- network
+service_type: service
+parent: developer
+children: null
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: akamai.list
+  domain: akamai_domain.list
+  ip: null
+statistics:
+  domains: 6
+  ipv4_or_cidr: 0
+  mixed: 6
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-26'
+auto_generated: true

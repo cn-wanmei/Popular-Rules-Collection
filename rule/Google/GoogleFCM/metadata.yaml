@@ -5,6 +5,8 @@ categories:
 - google
 - network
 service_type: service
+parent: google
+children: null
 rule:
   has_domain: true
   has_ip: true

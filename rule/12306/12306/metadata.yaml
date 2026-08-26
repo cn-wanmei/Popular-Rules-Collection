@@ -5,6 +5,8 @@ categories:
 - china
 - network
 service_type: service
+parent: null
+children: null
 rule:
   has_domain: true
   has_ip: false
