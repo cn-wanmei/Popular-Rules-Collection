@@ -19,7 +19,16 @@ def main() -> int:
     if not cat_ids:
         errors.append("categories.yaml empty")
     prim = yaml.safe_load(PRIM.read_text(encoding="utf-8")) or {}
-    services = prim.get("services") or {}
+    services = dict(prim.get("services") or {})
+    extra_path = ROOT / "config" / "service_primary_extra.yaml"
+    if extra_path.exists():
+        extra = yaml.safe_load(extra_path.read_text(encoding="utf-8")) or {}
+        services.update(extra.get("services") or {})
+        for sid, ov in (extra.get("aggregate_overrides") or {}).items():
+            if sid in services:
+                services[sid].update(ov)
+            else:
+                services[sid] = ov
     if not services:
         errors.append("service_primary.yaml empty")
 
