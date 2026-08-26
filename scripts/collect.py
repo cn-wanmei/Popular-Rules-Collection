@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""collect.py — V1.3 Registry = Source + Fetcher + Collection Manifest (rules:)"""
+"""
+collect.py — V1.3
+Registry = Source + Fetcher + Collection Manifest
+
+sources/registry.yaml:
+  sources[].fetch
+  sources[].rules[]: { path, name, local? }
+"""
 
 from __future__ import annotations
 
@@ -58,6 +65,7 @@ def fetcher_cfg_for(src: dict[str, Any]) -> dict[str, Any]:
 
 
 def rules_for(src: dict[str, Any]) -> list[dict[str, str]]:
+    """Prefer rules: []; accept legacy files: for one release."""
     raw = src.get("rules") or src.get("files") or []
     out: list[dict[str, str]] = []
     for i, e in enumerate(raw):
@@ -85,32 +93,46 @@ def collect_source(src: dict[str, Any], day_dir: Path, health: dict[str, Any]) -
     out_dir.mkdir(parents=True, exist_ok=True)
     cfg = fetcher_cfg_for(src)
     fetcher = get_fetcher(cfg)
+
     files_meta: list[dict[str, Any]] = []
     ok = fail = empty_blocked = 0
+
     for entry in entries:
         result = fetcher.fetch_one({"path": entry["path"], "name": entry["name"]})
         result.source_id = sid
         name = entry["name"]
         local = out_dir / name
+
         if not result.ok or not result.content:
-            files_meta.append({"name": name, "path": entry["path"], "url": result.url,
-                "service": entry["service"], "status": "failed", "error": result.error})
+            files_meta.append({
+                "name": name, "path": entry["path"], "url": result.url,
+                "service": entry["service"], "status": "failed",
+                "error": result.error, "status_code": result.status_code,
+            })
             fail += 1
             print(f"  FAIL {sid}/{name}: {result.error}")
             continue
         if len(result.content.strip()) == 0:
-            files_meta.append({"name": name, "path": entry["path"], "url": result.url,
-                "service": entry["service"], "status": "blocked_empty", "error": "empty body"})
+            files_meta.append({
+                "name": name, "path": entry["path"], "url": result.url,
+                "service": entry["service"], "status": "blocked_empty",
+                "error": "empty body",
+            })
             empty_blocked += 1
             fail += 1
             print(f"  BLOCK empty {sid}/{name}")
             continue
+
         local.write_bytes(result.content)
-        files_meta.append({"name": name, "path": entry["path"], "url": result.url,
-            "service": entry["service"], "local": str(local.relative_to(day_dir)),
-            "size": result.size, "sha256": result.sha256, "status": "ok"})
+        files_meta.append({
+            "name": name, "path": entry["path"], "url": result.url,
+            "service": entry["service"],
+            "local": str(local.relative_to(day_dir)),
+            "size": result.size, "sha256": result.sha256, "status": "ok",
+        })
         ok += 1
         print(f"  OK   {sid}/{name} → service={entry['service']} ({result.size}B)")
+
     hs = health.setdefault("sources", {}).setdefault(sid, {})
     hs["last_attempt"] = utc_now().isoformat()
     hs["files_ok"] = ok
@@ -130,10 +152,19 @@ def collect_source(src: dict[str, Any], day_dir: Path, health: dict[str, Any]) -
         hs["failure_count"] = int(hs.get("failure_count") or 0) + 1
         hs["status"] = "down"
         hs["reason"] = "all fetches failed" if entries else "no rules in registry"
-    return {"source": sid, "fetch": cfg.get("type"), "timestamp": utc_now().isoformat(),
-            "files_ok": ok, "files_failed": fail, "empty_blocked": empty_blocked,
-            "rules_declared": len(entries), "files": files_meta,
-            "registry_priority": src.get("priority"), "registry_trust": src.get("trust")}
+
+    return {
+        "source": sid,
+        "fetch": cfg.get("type"),
+        "timestamp": utc_now().isoformat(),
+        "files_ok": ok,
+        "files_failed": fail,
+        "empty_blocked": empty_blocked,
+        "rules_declared": len(entries),
+        "files": files_meta,
+        "registry_priority": src.get("priority"),
+        "registry_trust": src.get("trust"),
+    }
 
 
 def main() -> int:
@@ -142,8 +173,10 @@ def main() -> int:
     parser.add_argument("--source", action="append")
     parser.add_argument("--list", action="store_true")
     args = parser.parse_args()
+
     registry = load_registry()
     sources = [s for s in registry.get("sources", []) if s.get("enabled")]
+
     if args.list:
         for s in registry.get("sources", []):
             n = len(s.get("rules") or s.get("files") or [])
@@ -151,12 +184,15 @@ def main() -> int:
             ft = (s.get("fetch") or {}).get("type")
             print(f"  [{flag}] {s['id']:16} rules={n:3} priority={s.get('priority')} fetch={ft}")
         return 0
+
     if args.source:
         sources = [s for s in sources if s["id"] in args.source]
+
     day_dir = BACKUP_ROOT / args.date
     (day_dir / "sources").mkdir(parents=True, exist_ok=True)
     manifests_dir = day_dir / "manifests"
     manifests_dir.mkdir(parents=True, exist_ok=True)
+
     health = load_health()
     print(f"[collect] registry v{registry.get('version')} date={args.date} sources={len(sources)}")
     summary = []
@@ -171,11 +207,18 @@ def main() -> int:
         man = collect_source(src, day_dir, health)
         summary.append(man)
         (manifests_dir / f"{src['id']}.json").write_text(
-            json.dumps(man, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    (manifests_dir / "_day.json").write_text(json.dumps({
-        "date": args.date, "timestamp": utc_now().isoformat(),
-        "registry_version": registry.get("version"), "sources": summary,
-    }, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+            json.dumps(man, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+        )
+
+    (manifests_dir / "_day.json").write_text(
+        json.dumps({
+            "date": args.date,
+            "timestamp": utc_now().isoformat(),
+            "registry_version": registry.get("version"),
+            "sources": summary,
+        }, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
     save_health(health)
     total_ok = sum(s["files_ok"] for s in summary)
     total_fail = sum(s["files_failed"] for s in summary)
