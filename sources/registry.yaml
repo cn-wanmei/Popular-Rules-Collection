@@ -1,6 +1,6 @@
 # Registry V3 — Source + Fetcher + Collection Manifest
 version: 3
-last_updated: "2026-08-25"
+last_updated: "2026-08-26"
 
 sources:
   - id: blackmatrix7
@@ -94,6 +94,30 @@ sources:
       - { path: rule/Clash/MeiTuan/MeiTuan.yaml, name: meituan, local: Clash_MeiTuan.yaml }
       - { path: rule/Clash/XiaoHongShu/XiaoHongShu.yaml, name: xiaohongshu, local: Clash_XiaoHongShu.yaml }
       - { path: rule/Clash/TencentVideo/TencentVideo.yaml, name: tencentvideo, local: Clash_TencentVideo.yaml }
+      # --- Batch expand: CN apps / banks / dev / social ---
+      - { path: rule/Clash/TaoBao/TaoBao.yaml, name: taobao, local: Clash_TaoBao.yaml }
+      - { path: rule/Clash/Youku/Youku.yaml, name: youku, local: Clash_Youku.yaml }
+      - { path: rule/Clash/Weibo/Weibo.yaml, name: weibo, local: Clash_Weibo.yaml }
+      - { path: rule/Clash/Zhihu/Zhihu.yaml, name: zhihu, local: Clash_Zhihu.yaml }
+      - { path: rule/Clash/iQIYI/iQIYI.yaml, name: iqiyi, local: Clash_iQIYI.yaml }
+      - { path: rule/Clash/KuaiShou/KuaiShou.yaml, name: kuaishou, local: Clash_KuaiShou.yaml }
+      - { path: rule/Clash/QQ/QQ.yaml, name: qq, local: Clash_QQ.yaml }
+      - { path: rule/Clash/ICBC/ICBC.yaml, name: icbc, local: Clash_ICBC.yaml }
+      - { path: rule/Clash/ABC/ABC.yaml, name: abc, local: Clash_ABC.yaml }
+      - { path: rule/Clash/CCB/CCB.yaml, name: ccb, local: Clash_CCB.yaml }
+      - { path: rule/Clash/BOC/BOC.yaml, name: boc, local: Clash_BOC.yaml }
+      - { path: rule/Clash/CMB/CMB.yaml, name: cmb, local: Clash_CMB.yaml }
+      - { path: rule/Clash/Amazon/Amazon.yaml, name: amazon, local: Clash_Amazon.yaml }
+      - { path: rule/Clash/AmazonAWS/AmazonAWS.yaml, name: amazonaws, local: Clash_AmazonAWS.yaml }
+      - { path: rule/Clash/Adobe/Adobe.yaml, name: adobe, local: Clash_Adobe.yaml }
+      - { path: rule/Clash/Akamai/Akamai.yaml, name: akamai, local: Clash_Akamai.yaml }
+      - { path: rule/Clash/Dropbox/Dropbox.yaml, name: dropbox, local: Clash_Dropbox.yaml }
+      - { path: rule/Clash/Notion/Notion.yaml, name: notion, local: Clash_Notion.yaml }
+      - { path: rule/Clash/Figma/Figma.yaml, name: figma, local: Clash_Figma.yaml }
+      - { path: rule/Clash/LinkedIn/LinkedIn.yaml, name: linkedin, local: Clash_LinkedIn.yaml }
+      - { path: rule/Clash/Pinterest/Pinterest.yaml, name: pinterest, local: Clash_Pinterest.yaml }
+      - { path: rule/Clash/Snapchat/Snapchat.yaml, name: snapchat, local: Clash_Snapchat.yaml }
+      - { path: rule/Clash/Teams/Teams.yaml, name: teams, local: Clash_Teams.yaml }
 
   - id: loyalsoldier
     name: Loyalsoldier clash-rules / v2ray-rules-dat
