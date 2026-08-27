@@ -210,3 +210,92 @@ sources:
   - {path: geo/geosite/mojang.list, name: minecraft, local: geosite_mojang.list}
   - {path: geo/geosite/elevenlabs.list, name: elevenlabs, local: geosite_elevenlabs.list}
   - {path: geo/geosite/snap.list, name: snapchat, local: geosite_snap.list}
+- id: v2fly
+  name: v2fly domain-list-community
+  url: https://github.com/v2fly/domain-list-community
+  enabled: true
+  priority: 85
+  trust: high
+  score_hint: 88
+  role: production
+  formats:
+  - v2fly
+  - list
+  notes: Community domain database; whitelist only. include expanded at normalize.
+  fetch:
+    type: github_raw
+    owner: v2fly
+    repo: domain-list-community
+    branch: master
+  rules:
+  - {path: data/deepseek, name: deepseek, local: v2fly_deepseek}
+  - {path: data/elevenlabs, name: elevenlabs, local: v2fly_elevenlabs}
+  - {path: data/huggingface, name: huggingface, local: v2fly_huggingface}
+  - {path: data/perplexity, name: perplexity, local: v2fly_perplexity}
+  - {path: data/anthropic, name: anthropic, local: v2fly_anthropic}
+  - {path: data/signal, name: signal, local: v2fly_signal}
+  - {path: data/roblox, name: roblox, local: v2fly_roblox}
+  - {path: data/notion, name: notion, local: v2fly_notion}
+  - {path: data/figma, name: figma, local: v2fly_figma}
+  - {path: data/shopify, name: shopify, local: v2fly_shopify}
+  - {path: data/uber, name: uber, local: v2fly_uber}
+  - {path: data/airbnb, name: airbnb, local: v2fly_airbnb}
+  - {path: data/booking, name: booking, local: v2fly_booking}
+  - {path: data/openai, name: openai, local: v2fly_openai}
+  - {path: data/telegram, name: telegram, local: v2fly_telegram}
+  - {path: data/discord, name: discord, local: v2fly_discord}
+  - {path: data/spotify, name: spotify, local: v2fly_spotify}
+  - {path: data/steam, name: steam, local: v2fly_steam}
+  - {path: data/netflix, name: netflix, local: v2fly_netflix}
+  - {path: data/github, name: github, local: v2fly_github}
+  - {path: data/tiktok, name: tiktok, local: v2fly_tiktok}
+  - {path: data/twitter, name: twitter, local: v2fly_twitter}
+  - {path: data/facebook, name: facebook, local: v2fly_facebook}
+  - {path: data/instagram, name: instagram, local: v2fly_instagram}
+  - {path: data/whatsapp, name: whatsapp, local: v2fly_whatsapp}
+  - {path: data/line, name: line, local: v2fly_line}
+  - {path: data/cloudflare, name: cloudflare, local: v2fly_cloudflare}
+  - {path: data/ebay, name: ebay, local: v2fly_ebay}
+  - {path: data/alibaba, name: alibaba, local: v2fly_alibaba}
+  - {path: data/aliyun, name: alibabacloud, local: v2fly_aliyun}
+  - {path: data/baidu, name: baidu, local: v2fly_baidu}
+  - {path: data/bytedance, name: bytedance, local: v2fly_bytedance}
+  - {path: data/tencent, name: tencent, local: v2fly_tencent}
+  - {path: data/bilibili, name: bilibili, local: v2fly_bilibili}
+- id: dler
+  name: Dler Rules
+  url: https://github.com/dler-io/Rules
+  enabled: true
+  priority: 80
+  trust: high
+  score_hint: 85
+  role: production
+  formats:
+  - clash
+  notes: Multi-client rules; whitelist Provider files. Paths may contain spaces.
+  fetch:
+    type: github_raw
+    owner: dler-io
+    repo: Rules
+    branch: main
+  rules:
+  - {path: Clash/Provider/AI Suite.yaml, name: aisuite, local: Dler_AI_Suite.yaml}
+  - {path: Clash/Provider/Apple.yaml, name: apple, local: Dler_Apple.yaml}
+  - {path: Clash/Provider/Microsoft.yaml, name: microsoft, local: Dler_Microsoft.yaml}
+  - {path: Clash/Provider/Telegram.yaml, name: telegram, local: Dler_Telegram.yaml}
+  - {path: Clash/Provider/Discord.yaml, name: discord, local: Dler_Discord.yaml}
+  - {path: Clash/Provider/Steam.yaml, name: steam, local: Dler_Steam.yaml}
+  - {path: Clash/Provider/TikTok.yaml, name: tiktok, local: Dler_TikTok.yaml}
+  - {path: Clash/Provider/PayPal.yaml, name: paypal, local: Dler_PayPal.yaml}
+  - {path: Clash/Provider/Scholar.yaml, name: scholar, local: Dler_Scholar.yaml}
+  - {path: Clash/Provider/Google FCM.yaml, name: googlefcm, local: Dler_Google_FCM.yaml}
+  - {path: Clash/Provider/Douyin.yaml, name: douyin, local: Dler_Douyin.yaml}
+  - {path: Clash/Provider/miHoYo.yaml, name: hoyoverse, local: Dler_miHoYo.yaml}
+  - {path: Clash/Provider/Media/Netflix.yaml, name: netflix, local: Dler_Netflix.yaml}
+  - {path: Clash/Provider/Media/Spotify.yaml, name: spotify, local: Dler_Spotify.yaml}
+  - {path: Clash/Provider/Media/YouTube.yaml, name: youtube, local: Dler_YouTube.yaml}
+  - {path: Clash/Provider/Media/Disney Plus.yaml, name: disney, local: Dler_Disney.yaml}
+  - {path: Clash/Provider/Media/Bilibili.yaml, name: bilibili, local: Dler_Bilibili.yaml}
+  - {path: Clash/Provider/Media/Soundcloud.yaml, name: soundcloud, local: Dler_Soundcloud.yaml}
+  - {path: Clash/Provider/Media/YouTube Music.yaml, name: youtubemusic, local: Dler_YouTubeMusic.yaml}
+  - {path: Clash/Provider/Media/BBC iPlayer.yaml, name: bbc, local: Dler_BBC.yaml}
