@@ -59,6 +59,14 @@ jobs:
         continue-on-error: true
       - run: python scripts/statistics.py
         continue-on-error: true
+      - run: python scripts/source_snapshot.py
+        continue-on-error: true
+      - run: python scripts/generated_manifest.py
+        continue-on-error: true
+      - run: python scripts/release_snapshot.py
+        continue-on-error: true
+      - run: python scripts/service_score.py
+        continue-on-error: true
       - run: python scripts/generate_links.py
         continue-on-error: true
       - run: python scripts/generate_docs.py
