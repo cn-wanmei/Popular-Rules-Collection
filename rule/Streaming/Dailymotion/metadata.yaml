@@ -1,0 +1,32 @@
+id: dailymotion
+name: Dailymotion
+primary_category: streaming
+categories:
+- streaming
+service_type: service
+parent: null
+children: null
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: dailymotion.list
+  domain: dailymotion_domain.list
+  ip: null
+statistics:
+  domains: 5
+  ipv4_or_cidr: 0
+  mixed: 5
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-27'
+auto_generated: true

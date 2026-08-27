@@ -19,6 +19,8 @@ children:
 - iqiyi
 - kugoukuwo
 - steamcn
+- ctrip
+- tongcheng
 rule:
   has_domain: false
   has_ip: true

@@ -2,46 +2,32 @@
   "date": "2026-08-27",
   "version": 2,
   "service_coverage": {
-    "registered": 158,
-    "materialized": 118,
-    "intentional_unmaterialized": 6,
+    "registered": 184,
+    "materialized": 153,
+    "intentional_unmaterialized": 11,
     "unexpected_missing": [
       "amazonaws",
       "applications",
       "bbc",
-      "bocom",
-      "ceb",
       "dingtalk",
       "discoveryplus",
-      "eleme",
       "emby",
-      "gaode",
-      "googledrive",
       "huawei",
-      "jetbrains",
       "kugoukuwo",
       "lan",
       "naver",
-      "npm",
       "ntp",
       "oppo",
       "origin",
-      "pingan",
-      "psbc",
-      "qq",
       "scholar",
       "sina",
       "siri",
-      "snapchat",
       "steamcn",
-      "taobao",
-      "threads",
       "vivo",
       "wikipedia",
-      "xianyu",
       "xiaomi"
     ],
-    "coverage": 0.7468
+    "coverage": 0.8315
   },
   "intentional_unmaterialized": {
     "mistral": "no_verified_upstream",
@@ -49,12 +35,17 @@
     "supabase": "no_verified_upstream",
     "roblox": "no_verified_upstream",
     "minecraft": "no_verified_upstream",
-    "blizzard": "maps_to_battlenet"
+    "blizzard": "maps_to_battlenet",
+    "taobao": "no_verified_upstream_dead_bm_path_covered_by_alibaba",
+    "qq": "no_verified_upstream_dead_bm_path_covered_by_tencent",
+    "snapchat": "no_verified_upstream",
+    "npm": "no_verified_upstream",
+    "googledrive": "no_dedicated_upstream_use_google_aggregate"
   },
   "rule_coverage": {
-    "domains": 712190,
+    "domains": 712601,
     "ips": 447,
-    "database_services": 118
+    "database_services": 153
   },
   "source_health": {
     "enabled_sources": 2,
@@ -70,31 +61,31 @@
   },
   "builder_coverage": {
     "mihomo": {
-      "files": 236,
+      "files": 306,
       "status": "ok"
     },
     "sing-box": {
-      "files": 118,
+      "files": 153,
       "status": "ok"
     },
     "surge": {
-      "files": 233,
+      "files": 303,
       "status": "ok"
     },
     "shadowrocket": {
-      "files": 233,
+      "files": 303,
       "status": "ok"
     },
     "quantumult-x": {
-      "files": 118,
+      "files": 153,
       "status": "ok"
     },
     "egern": {
-      "files": 118,
+      "files": 153,
       "status": "ok"
     },
     "loon": {
-      "files": 118,
+      "files": 153,
       "status": "ok"
     }
   },
@@ -108,13 +99,14 @@
       "coverage": 1.0
     },
     "ai": {
-      "registered": 11,
-      "materialized": 10,
+      "registered": 12,
+      "materialized": 11,
       "ids": [
         "ai",
         "anthropic",
         "claude",
         "copilot",
+        "deepseek",
         "gemini",
         "groq",
         "huggingface",
@@ -123,15 +115,16 @@
         "perplexity",
         "xai"
       ],
-      "coverage": 0.9091
+      "coverage": 0.9167
     },
     "alibaba": {
-      "registered": 9,
-      "materialized": 4,
+      "registered": 10,
+      "materialized": 8,
       "ids": [
         "alibaba",
         "alibabacloud",
         "alipay",
+        "amap",
         "dingtalk",
         "eleme",
         "gaode",
@@ -139,7 +132,7 @@
         "xianyu",
         "youku"
       ],
-      "coverage": 0.4444
+      "coverage": 0.8
     },
     "amazon": {
       "registered": 3,
@@ -172,20 +165,22 @@
       "coverage": 1.0
     },
     "bytedance": {
-      "registered": 2,
-      "materialized": 2,
+      "registered": 3,
+      "materialized": 3,
       "ids": [
         "bytedance",
+        "doubao",
         "douyin"
       ],
       "coverage": 1.0
     },
     "china": {
-      "registered": 18,
-      "materialized": 11,
+      "registered": 20,
+      "materialized": 13,
       "ids": [
         "bilibili",
         "china",
+        "ctrip",
         "didi",
         "huawei",
         "iqiyi",
@@ -197,13 +192,14 @@
         "pinduoduo",
         "sina",
         "steamcn",
+        "tongcheng",
         "vivo",
         "weibo",
         "xiaohongshu",
         "xiaomi",
         "zhihu"
       ],
-      "coverage": 0.6111
+      "coverage": 0.65
     },
     "chinamobile": {
       "registered": 1,
@@ -230,13 +226,14 @@
       "coverage": 1.0
     },
     "developer": {
-      "registered": 18,
-      "materialized": 15,
+      "registered": 21,
+      "materialized": 19,
       "ids": [
         "akamai",
         "atlassian",
         "azure",
         "cloudflare",
+        "cursor",
         "developer",
         "digitalocean",
         "docker",
@@ -245,23 +242,26 @@
         "hashicorp",
         "heroku",
         "jetbrains",
+        "netlify",
         "notion",
         "npm",
         "oracle",
         "slack",
         "supabase",
+        "trello",
         "vercel"
       ],
-      "coverage": 0.8333
+      "coverage": 0.9048
     },
     "finance": {
-      "registered": 4,
-      "materialized": 4,
+      "registered": 5,
+      "materialized": 5,
       "ids": [
         "binance",
         "okx",
         "paypal",
-        "stripe"
+        "stripe",
+        "wise"
       ],
       "coverage": 1.0
     },
@@ -335,17 +335,24 @@
       "coverage": 0.7143
     },
     "other": {
-      "registered": 6,
-      "materialized": 2,
+      "registered": 13,
+      "materialized": 9,
       "ids": [
         "adobe",
+        "airbnb",
         "applications",
+        "booking",
+        "canva",
         "dropbox",
+        "ebay",
         "naver",
         "scholar",
+        "shopify",
+        "uber",
+        "walmart",
         "wikipedia"
       ],
-      "coverage": 0.3333
+      "coverage": 0.6923
     },
     "privacy": {
       "registered": 3,
@@ -358,17 +365,20 @@
       "coverage": 1.0
     },
     "social": {
-      "registered": 15,
-      "materialized": 13,
+      "registered": 18,
+      "materialized": 17,
       "ids": [
+        "bluesky",
         "discord",
         "facebook",
         "instagram",
         "kakaotalk",
         "line",
         "linkedin",
+        "messenger",
         "pinterest",
         "reddit",
+        "signal",
         "snapchat",
         "telegram",
         "threads",
@@ -377,13 +387,15 @@
         "whatsapp",
         "zoom"
       ],
-      "coverage": 0.8667
+      "coverage": 0.9444
     },
     "streaming": {
-      "registered": 11,
-      "materialized": 8,
+      "registered": 18,
+      "materialized": 15,
       "ids": [
         "bbc",
+        "dailymotion",
+        "deezer",
         "discoveryplus",
         "disney",
         "emby",
@@ -391,11 +403,16 @@
         "hulu",
         "netflix",
         "paramountplus",
+        "peacock",
         "primevideo",
+        "soundcloud",
         "spotify",
-        "twitch"
+        "tidal",
+        "twitch",
+        "vimeo",
+        "youtubemusic"
       ],
-      "coverage": 0.7273
+      "coverage": 0.8333
     },
     "tencent": {
       "registered": 4,
@@ -410,7 +427,7 @@
     },
     "unionpay": {
       "registered": 10,
-      "materialized": 6,
+      "materialized": 10,
       "ids": [
         "abc",
         "boc",
@@ -423,7 +440,7 @@
         "psbc",
         "unionpay"
       ],
-      "coverage": 0.6
+      "coverage": 1.0
     }
   },
   "validation": {
@@ -436,11 +453,11 @@
     "critical": 0,
     "high": 0,
     "medium": 0,
-    "low": 3369
+    "low": 3379
   },
   "sources": 2,
-  "services": 118,
-  "domains": 712190,
+  "services": 153,
+  "domains": 712601,
   "cidr": 447,
   "build": {
     "mihomo": "ok",

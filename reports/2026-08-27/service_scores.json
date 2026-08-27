@@ -1,13 +1,29 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-27T13:51:30.905620+00:00",
+  "generated_at": "2026-08-27T14:43:20.921560+00:00",
   "date": "2026-08-27",
   "services": {
+    "uber": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "shopify": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "facebook": {
       "score": 90.0,
       "band": "stable"
     },
     "garena": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "tongcheng": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "deezer": {
       "score": 90.0,
       "band": "stable"
     },
@@ -27,6 +43,10 @@
       "score": 90.0,
       "band": "stable"
     },
+    "peacock": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "xiaohongshu": {
       "score": 90.0,
       "band": "stable"
@@ -40,6 +60,10 @@
       "band": "stable"
     },
     "didi": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "walmart": {
       "score": 90.0,
       "band": "stable"
     },
@@ -67,11 +91,23 @@
       "score": 90.0,
       "band": "stable"
     },
+    "ceb": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "youtube": {
       "score": 90.0,
       "band": "stable"
     },
+    "xianyu": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "applemusic": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "doubao": {
       "score": 90.0,
       "band": "stable"
     },
@@ -80,6 +116,10 @@
       "band": "stable"
     },
     "battlenet": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "signal": {
       "score": 90.0,
       "band": "stable"
     },
@@ -100,6 +140,10 @@
       "band": "stable"
     },
     "speedtest": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "bocom": {
       "score": 90.0,
       "band": "stable"
     },
@@ -131,7 +175,15 @@
       "score": 90.0,
       "band": "stable"
     },
+    "deepseek": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "chinatelecom": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "booking": {
       "score": 90.0,
       "band": "stable"
     },
@@ -191,6 +243,10 @@
       "score": 90.0,
       "band": "stable"
     },
+    "bluesky": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "rockstar": {
       "score": 90.0,
       "band": "stable"
@@ -200,6 +256,10 @@
       "band": "stable"
     },
     "kakaotalk": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "dailymotion": {
       "score": 90.0,
       "band": "stable"
     },
@@ -227,6 +287,10 @@
       "score": 90.0,
       "band": "stable"
     },
+    "eleme": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "meituan": {
       "score": 90.0,
       "band": "stable"
@@ -243,11 +307,27 @@
       "score": 90.0,
       "band": "stable"
     },
+    "jetbrains": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "messenger": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "abc": {
       "score": 90.0,
       "band": "stable"
     },
     "kuaishou": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "threads": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "psbc": {
       "score": 90.0,
       "band": "stable"
     },
@@ -279,7 +359,19 @@
       "score": 90.0,
       "band": "stable"
     },
+    "tidal": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "weibo": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "youtubemusic": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "gaode": {
       "score": 90.0,
       "band": "stable"
     },
@@ -288,6 +380,18 @@
       "band": "stable"
     },
     "stripe": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "netlify": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "vimeo": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "amap": {
       "score": 90.0,
       "band": "stable"
     },
@@ -312,6 +416,10 @@
       "band": "stable"
     },
     "openai": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "soundcloud": {
       "score": 90.0,
       "band": "stable"
     },
@@ -351,7 +459,15 @@
       "score": 90.0,
       "band": "stable"
     },
+    "trello": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "bilibili": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "ctrip": {
       "score": 90.0,
       "band": "stable"
     },
@@ -360,6 +476,14 @@
       "band": "stable"
     },
     "china": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "wise": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "airbnb": {
       "score": 90.0,
       "band": "stable"
     },
@@ -387,7 +511,15 @@
       "score": 90.0,
       "band": "stable"
     },
+    "cursor": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "figma": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "canva": {
       "score": 90.0,
       "band": "stable"
     },
@@ -416,6 +548,10 @@
       "band": "stable"
     },
     "spotify": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "ebay": {
       "score": 90.0,
       "band": "stable"
     },
@@ -460,6 +596,10 @@
       "band": "stable"
     },
     "icloud": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "pingan": {
       "score": 90.0,
       "band": "stable"
     },

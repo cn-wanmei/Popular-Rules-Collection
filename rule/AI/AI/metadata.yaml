@@ -16,6 +16,7 @@ children:
 - groq
 - xai
 - mistral
+- deepseek
 rule:
   has_domain: true
   has_ip: false

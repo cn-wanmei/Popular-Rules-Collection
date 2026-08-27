@@ -21,6 +21,9 @@ children:
 - azure
 - hashicorp
 - supabase
+- cursor
+- netlify
+- trello
 rule:
   has_domain: true
   has_ip: false

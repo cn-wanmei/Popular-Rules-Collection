@@ -22,6 +22,24 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "40017.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tongcheng"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "71.am"
     },
     "policy": "proxy",
@@ -222,7 +240,8 @@
     "services": [
       "adblock-light",
       "adblock-pro",
-      "alibaba"
+      "alibaba",
+      "amap"
     ]
   },
   {
@@ -1253,6 +1272,24 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "dm-event.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "dailymotion"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "doubleclick-cn.net"
     },
     "policy": "proxy",
@@ -1300,7 +1337,8 @@
     "services": [
       "adblock-light",
       "adblock-pro",
-      "alibaba"
+      "alibaba",
+      "amap"
     ]
   },
   {
@@ -1339,6 +1377,24 @@
       "adblock-light",
       "adblock-pro",
       "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ebayrtm.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "ebay"
     ]
   },
   {
@@ -2174,7 +2230,8 @@
     "services": [
       "adblock-light",
       "adblock-pro",
-      "alibaba"
+      "alibaba",
+      "amap"
     ]
   },
   {
@@ -2513,7 +2570,8 @@
     "services": [
       "adblock-light",
       "adblock-pro",
-      "alibaba"
+      "alibaba",
+      "amap"
     ]
   },
   {
@@ -4401,6 +4459,23 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "dmxleo.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "dailymotion"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "duapp.com"
     },
     "policy": "proxy",
@@ -5591,7 +5666,8 @@
     ],
     "services": [
       "adblock-pro",
-      "alibaba"
+      "alibaba",
+      "amap"
     ]
   },
   {
@@ -6174,7 +6250,9 @@
       "metacubex"
     ],
     "services": [
-      "alibaba"
+      "alibaba",
+      "amap",
+      "gaode"
     ]
   },
   {
@@ -6190,7 +6268,9 @@
       "metacubex"
     ],
     "services": [
-      "alibaba"
+      "alibaba",
+      "amap",
+      "gaode"
     ]
   },
   {
@@ -6206,7 +6286,9 @@
       "metacubex"
     ],
     "services": [
-      "alibaba"
+      "alibaba",
+      "amap",
+      "gaode"
     ]
   },
   {
@@ -6222,7 +6304,9 @@
       "metacubex"
     ],
     "services": [
-      "alibaba"
+      "alibaba",
+      "amap",
+      "gaode"
     ]
   },
   {
@@ -6287,7 +6371,8 @@
       "metacubex"
     ],
     "services": [
-      "alibaba"
+      "alibaba",
+      "amap"
     ]
   },
   {
@@ -8017,7 +8102,9 @@
       "metacubex"
     ],
     "services": [
-      "alibaba"
+      "alibaba",
+      "amap",
+      "gaode"
     ]
   },
   {
@@ -8033,7 +8120,8 @@
       "metacubex"
     ],
     "services": [
-      "alibaba"
+      "alibaba",
+      "amap"
     ]
   },
   {
@@ -8049,7 +8137,9 @@
       "metacubex"
     ],
     "services": [
-      "alibaba"
+      "alibaba",
+      "amap",
+      "gaode"
     ]
   },
   {
@@ -8065,7 +8155,9 @@
       "metacubex"
     ],
     "services": [
-      "alibaba"
+      "alibaba",
+      "amap",
+      "gaode"
     ]
   },
   {
@@ -8322,7 +8414,9 @@
       "metacubex"
     ],
     "services": [
-      "alibaba"
+      "alibaba",
+      "amap",
+      "gaode"
     ]
   },
   {
@@ -8684,70 +8778,6 @@
     "match": {
       "type": "domain_suffix",
       "value": "cueme.cn"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "metacubex"
-    ],
-    "services": [
-      "alibaba"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "damai.cn"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "metacubex"
-    ],
-    "services": [
-      "alibaba"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "danniao.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "metacubex"
-    ],
-    "services": [
-      "alibaba"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "dayu.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "metacubex"
-    ],
-    "services": [
-      "alibaba"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "ddurl.to"
     },
     "policy": "proxy",
     "sources": [
