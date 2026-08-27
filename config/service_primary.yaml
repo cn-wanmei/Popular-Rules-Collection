@@ -35,7 +35,7 @@ services:
   tencentvideo: {primary_category: tencent, display_name: TencentVideo, categories: [tencent, china], service_type: service, parent: tencent}
   alipay: {primary_category: alibaba, display_name: Alipay, categories: [alibaba, china, finance], service_type: service, parent: alibaba}
   douyin: {primary_category: bytedance, display_name: Douyin, categories: [bytedance, china], service_type: service, parent: bytedance}
-  adblock: {primary_category: privacy, display_name: AdBlock, categories: [privacy], service_type: service, parent: adblock}
+  adblock: {primary_category: privacy, display_name: AdBlock, categories: [privacy], service_type: aggregate, children: [adblock-pro, adblock-light]}
   proxy: {primary_category: network, display_name: Proxy, categories: [network], service_type: service}
   gfw: {primary_category: network, display_name: GFW, categories: [network], service_type: service}
   private: {primary_category: network, display_name: Private, categories: [network], service_type: service}
