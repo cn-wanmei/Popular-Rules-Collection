@@ -27,3 +27,37 @@ services:
   kakaotalk: { name_tokens: [KakaoTalk, Kakao] }
   adobe: { name_tokens: [Adobe] }
   oracle: { name_tokens: [Oracle] }
+  gaode: { name_tokens: [GaoDe, Gaode] }
+  eleme: { name_tokens: [Eleme] }
+  xianyu: { name_tokens: [XianYu, Xianyu] }
+  ctrip: { name_tokens: [XieCheng, Ctrip] }
+  tongcheng: { name_tokens: [TongCheng] }
+  pingan: { name_tokens: [PingAn, Pingan] }
+  bocom: { name_tokens: [BOCOM] }
+  ceb: { name_tokens: [CEB] }
+  psbc: { name_tokens: [PSBC] }
+  threads: { name_tokens: [Threads] }
+  jetbrains: { name_tokens: [Jetbrains, JetBrains] }
+  ebay: { name_tokens: [eBay, Ebay] }
+  shopify: { name_tokens: [Shopify] }
+  soundcloud: { name_tokens: [SoundCloud] }
+  vimeo: { name_tokens: [Vimeo] }
+  dailymotion: { name_tokens: [Dailymotion] }
+  deezer: { name_tokens: [Deezer] }
+  peacock: { name_tokens: [Peacock] }
+  youtubemusic: { name_tokens: [YouTubeMusic] }
+  doubao: { name_tokens: [Doubao] }
+  deepseek: { name_tokens: [DeepSeek] }
+  cursor: { name_tokens: [Cursor] }
+  signal: { name_tokens: [Signal] }
+  messenger: { name_tokens: [Messenger] }
+  bluesky: { name_tokens: [Bluesky] }
+  canva: { name_tokens: [Canva] }
+  netlify: { name_tokens: [Netlify] }
+  trello: { name_tokens: [Trello] }
+  walmart: { name_tokens: [Walmart] }
+  uber: { name_tokens: [Uber] }
+  airbnb: { name_tokens: [Airbnb] }
+  booking: { name_tokens: [Booking] }
+  wise: { name_tokens: [Wise] }
+  tidal: { name_tokens: [Tidal] }
