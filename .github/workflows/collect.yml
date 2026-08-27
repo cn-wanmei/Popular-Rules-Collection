@@ -28,7 +28,6 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
-      # Registry ⊆ Primary before expensive work
       - run: python scripts/validate_registry.py
       - run: python scripts/collect.py
       - name: Normalize
@@ -49,11 +48,13 @@ jobs:
       - run: python scripts/build_quantumultx.py
       - run: python scripts/build_egern.py
       - run: python scripts/build_loon.py
-      # --- data correctness gates (HARD) ---
       - run: python scripts/schema_validate.py
       - run: python scripts/validate.py
       - run: python scripts/builder_validate.py
-      # --- derived artifacts (SOFT) ---
+      - run: python scripts/identity_validate.py
+        continue-on-error: true
+      - run: python scripts/rule_count_drift.py
+        continue-on-error: true
       - run: python scripts/statistics.py
         continue-on-error: true
       - run: python scripts/generate_links.py
@@ -74,7 +75,5 @@ jobs:
           git add backup/*/manifests/ backup/ || true
           python scripts/size_gate.py --max-mb 90
           git diff --staged --quiet || git commit -m "chore(pipeline): collect+normalize+build ${DAY}"
-          # Absorb any commits that landed on main while this job ran
-          # (docs/registry pushes, concurrent schedule, etc.)
           git pull --rebase origin main
           git push
