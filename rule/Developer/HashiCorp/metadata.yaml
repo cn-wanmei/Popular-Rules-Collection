@@ -1,0 +1,32 @@
+id: hashicorp
+name: HashiCorp
+primary_category: developer
+categories:
+- developer
+service_type: service
+parent: developer
+children: null
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: hashicorp.list
+  domain: hashicorp_domain.list
+  ip: null
+statistics:
+  domains: 8
+  ipv4_or_cidr: 0
+  mixed: 8
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-27'
+auto_generated: true

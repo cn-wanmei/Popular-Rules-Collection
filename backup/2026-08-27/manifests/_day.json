@@ -1,16 +1,16 @@
 {
   "date": "2026-08-27",
-  "timestamp": "2026-08-27T03:45:02.851621+00:00",
+  "timestamp": "2026-08-27T04:42:21.527100+00:00",
   "registry_version": 3,
   "sources": [
     {
       "source": "blackmatrix7",
       "fetch": "github_raw",
-      "timestamp": "2026-08-27T03:44:57.278855+00:00",
-      "files_ok": 94,
+      "timestamp": "2026-08-27T04:42:15.379495+00:00",
+      "files_ok": 96,
       "files_failed": 4,
       "empty_blocked": 0,
-      "rules_declared": 98,
+      "rules_declared": 100,
       "files": [
         {
           "name": "Clash_Apple.yaml",
@@ -987,6 +987,26 @@
           "size": 326,
           "sha256": "b6037bb812b2a816407c293f64b182bab3d8d8a71fc343062e05cdd69a9b395f",
           "status": "ok"
+        },
+        {
+          "name": "Clash_Heroku.yaml",
+          "path": "rule/Clash/Heroku/Heroku.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Heroku/Heroku.yaml",
+          "service": "heroku",
+          "local": "sources/blackmatrix7/Clash_Heroku.yaml",
+          "size": 536,
+          "sha256": "d332eb050b4b226b62b6613e87179a600faa337dd797a7c645c45a5de0b6fb13",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_HashiCorp.yaml",
+          "path": "rule/Clash/HashiCorp/HashiCorp.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HashiCorp/HashiCorp.yaml",
+          "service": "hashicorp",
+          "local": "sources/blackmatrix7/Clash_HashiCorp.yaml",
+          "size": 421,
+          "sha256": "f2d2602a5747ce2f1925dbd0052c03d7f86fd0b0c0d6899446655d06cf68d21e",
+          "status": "ok"
         }
       ],
       "registry_priority": 95,
@@ -995,7 +1015,7 @@
     {
       "source": "loyalsoldier",
       "fetch": "github_raw",
-      "timestamp": "2026-08-27T03:44:58.611690+00:00",
+      "timestamp": "2026-08-27T04:42:15.893597+00:00",
       "files_ok": 14,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -1148,7 +1168,7 @@
     {
       "source": "anti-ad",
       "fetch": "github_raw",
-      "timestamp": "2026-08-27T03:44:59.514949+00:00",
+      "timestamp": "2026-08-27T04:42:17.147791+00:00",
       "files_ok": 3,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -1191,7 +1211,7 @@
     {
       "source": "hagezi",
       "fetch": "github_raw",
-      "timestamp": "2026-08-27T03:44:59.950324+00:00",
+      "timestamp": "2026-08-27T04:42:19.128663+00:00",
       "files_ok": 3,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -1234,7 +1254,7 @@
     {
       "source": "sukkaw",
       "fetch": "cdn",
-      "timestamp": "2026-08-27T03:45:01.339963+00:00",
+      "timestamp": "2026-08-27T04:42:20.112567+00:00",
       "files_ok": 8,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -1327,11 +1347,11 @@
     {
       "source": "metacubex",
       "fetch": "github_raw",
-      "timestamp": "2026-08-27T03:45:02.851377+00:00",
-      "files_ok": 8,
+      "timestamp": "2026-08-27T04:42:21.526801+00:00",
+      "files_ok": 13,
       "files_failed": 0,
       "empty_blocked": 0,
-      "rules_declared": 8,
+      "rules_declared": 13,
       "files": [
         {
           "name": "geosite_alibaba.list",
@@ -1411,6 +1431,56 @@
           "local": "sources/metacubex/geosite_bilibili.list",
           "size": 778,
           "sha256": "d1d76d33c08b2bfaea6b1f661c87eeb2064f6ebd7c5dbe8e1f2bb8ab5b4acc98",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_azure.list",
+          "path": "geo/geosite/azure.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/azure.list",
+          "service": "azure",
+          "local": "sources/metacubex/geosite_azure.list",
+          "size": 2844,
+          "sha256": "8294f7e677491cd0a5db5e425141f88c3a998646386afcccf51b4c823b41054a",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_aws.list",
+          "path": "geo/geosite/aws.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/aws.list",
+          "service": "aws",
+          "local": "sources/metacubex/geosite_aws.list",
+          "size": 1402,
+          "sha256": "a1fc684ef754d2558f592cdbbe1894f5c4709da4c8ed6b751628d23e10750fa1",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_huggingface.list",
+          "path": "geo/geosite/huggingface.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/huggingface.list",
+          "service": "huggingface",
+          "local": "sources/metacubex/geosite_huggingface.list",
+          "size": 35,
+          "sha256": "8ee30c1014ac23d5e0481ef3263177078c917d2d21fea7bf6d5760efbd0df678",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_zoom.list",
+          "path": "geo/geosite/zoom.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/zoom.list",
+          "service": "zoom",
+          "local": "sources/metacubex/geosite_zoom.list",
+          "size": 34,
+          "sha256": "c69383665bf35295bd13deebe3f8e0d5eb63059e456c431dca334f04d6e3729d",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_heroku.list",
+          "path": "geo/geosite/heroku.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/heroku.list",
+          "service": "heroku",
+          "local": "sources/metacubex/geosite_heroku.list",
+          "size": 177,
+          "sha256": "d7d7220c784ad6b746cdc132307c8006a2f8afc08e8d0c1333cb2e273ce4f4b6",
           "status": "ok"
         }
       ],

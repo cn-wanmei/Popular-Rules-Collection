@@ -17,6 +17,9 @@ children:
 - digitalocean
 - akamai
 - figma
+- heroku
+- azure
+- hashicorp
 rule:
   has_domain: true
   has_ip: false

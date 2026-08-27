@@ -1,4 +1,4 @@
-generated_at: '2026-08-27T04:00:44.108775+00:00'
+generated_at: '2026-08-27T04:57:50.692192+00:00'
 categories:
   '12306':
     display_name: '12306'
@@ -116,6 +116,12 @@ categories:
       service_type: service
       domains: 10
       ips: 0
+    - id: huggingface
+      name: HuggingFace
+      path: rule/AI/HuggingFace
+      service_type: service
+      domains: 3
+      ips: 0
     - id: openai
       name: OpenAI
       path: rule/AI/OpenAI
@@ -131,6 +137,12 @@ categories:
       path: rule/Developer/Akamai
       service_type: service
       domains: 6
+      ips: 0
+    - id: azure
+      name: Azure
+      path: rule/Developer/Azure
+      service_type: service
+      domains: 151
       ips: 0
     - id: cloudflare
       name: Cloudflare
@@ -161,6 +173,18 @@ categories:
       path: rule/Developer/GitLab
       service_type: service
       domains: 6
+      ips: 0
+    - id: hashicorp
+      name: HashiCorp
+      path: rule/Developer/HashiCorp
+      service_type: service
+      domains: 8
+      ips: 0
+    - id: heroku
+      name: Heroku
+      path: rule/Developer/Heroku
+      service_type: service
+      domains: 12
       ips: 0
     - id: notion
       name: Notion
@@ -212,6 +236,12 @@ categories:
       service_type: service
       domains: 186
       ips: 15
+    - id: aws
+      name: AWS
+      path: rule/Amazon/AWS
+      service_type: service
+      domains: 77
+      ips: 0
   apple:
     display_name: Apple
     order: 20
@@ -522,6 +552,12 @@ categories:
       service_type: service
       domains: 5
       ips: 11
+    - id: zoom
+      name: Zoom
+      path: rule/Social/Zoom
+      service_type: service
+      domains: 3
+      ips: 0
   streaming:
     display_name: Streaming
     order: 200

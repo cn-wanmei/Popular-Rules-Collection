@@ -1,11 +1,11 @@
 {
   "source": "metacubex",
   "fetch": "github_raw",
-  "timestamp": "2026-08-27T03:45:02.851377+00:00",
-  "files_ok": 8,
+  "timestamp": "2026-08-27T04:42:21.526801+00:00",
+  "files_ok": 13,
   "files_failed": 0,
   "empty_blocked": 0,
-  "rules_declared": 8,
+  "rules_declared": 13,
   "files": [
     {
       "name": "geosite_alibaba.list",
@@ -85,6 +85,56 @@
       "local": "sources/metacubex/geosite_bilibili.list",
       "size": 778,
       "sha256": "d1d76d33c08b2bfaea6b1f661c87eeb2064f6ebd7c5dbe8e1f2bb8ab5b4acc98",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_azure.list",
+      "path": "geo/geosite/azure.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/azure.list",
+      "service": "azure",
+      "local": "sources/metacubex/geosite_azure.list",
+      "size": 2844,
+      "sha256": "8294f7e677491cd0a5db5e425141f88c3a998646386afcccf51b4c823b41054a",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_aws.list",
+      "path": "geo/geosite/aws.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/aws.list",
+      "service": "aws",
+      "local": "sources/metacubex/geosite_aws.list",
+      "size": 1402,
+      "sha256": "a1fc684ef754d2558f592cdbbe1894f5c4709da4c8ed6b751628d23e10750fa1",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_huggingface.list",
+      "path": "geo/geosite/huggingface.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/huggingface.list",
+      "service": "huggingface",
+      "local": "sources/metacubex/geosite_huggingface.list",
+      "size": 35,
+      "sha256": "8ee30c1014ac23d5e0481ef3263177078c917d2d21fea7bf6d5760efbd0df678",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_zoom.list",
+      "path": "geo/geosite/zoom.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/zoom.list",
+      "service": "zoom",
+      "local": "sources/metacubex/geosite_zoom.list",
+      "size": 34,
+      "sha256": "c69383665bf35295bd13deebe3f8e0d5eb63059e456c431dca334f04d6e3729d",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_heroku.list",
+      "path": "geo/geosite/heroku.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/heroku.list",
+      "service": "heroku",
+      "local": "sources/metacubex/geosite_heroku.list",
+      "size": 177,
+      "sha256": "d7d7220c784ad6b746cdc132307c8006a2f8afc08e8d0c1333cb2e273ce4f4b6",
       "status": "ok"
     }
   ],

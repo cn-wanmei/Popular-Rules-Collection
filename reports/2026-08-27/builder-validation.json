@@ -199,6 +199,32 @@
       }
     },
     {
+      "service": "aws",
+      "database": 77,
+      "clients": {
+        "mihomo": 77,
+        "sing-box": 77,
+        "surge": 77,
+        "shadowrocket": 77,
+        "quantumult-x": 77,
+        "egern": 77,
+        "loon": 77
+      }
+    },
+    {
+      "service": "azure",
+      "database": 151,
+      "clients": {
+        "mihomo": 151,
+        "sing-box": 151,
+        "surge": 151,
+        "shadowrocket": 151,
+        "quantumult-x": 151,
+        "egern": 151,
+        "loon": 151
+      }
+    },
+    {
       "service": "baidu",
       "database": 324,
       "clients": {
@@ -615,6 +641,19 @@
       }
     },
     {
+      "service": "hashicorp",
+      "database": 8,
+      "clients": {
+        "mihomo": 8,
+        "sing-box": 8,
+        "surge": 8,
+        "shadowrocket": 8,
+        "quantumult-x": 8,
+        "egern": 8,
+        "loon": 8
+      }
+    },
+    {
       "service": "hbo",
       "database": 47,
       "clients": {
@@ -628,6 +667,19 @@
       }
     },
     {
+      "service": "heroku",
+      "database": 12,
+      "clients": {
+        "mihomo": 12,
+        "sing-box": 12,
+        "surge": 12,
+        "shadowrocket": 12,
+        "quantumult-x": 12,
+        "egern": 12,
+        "loon": 12
+      }
+    },
+    {
       "service": "hoyoverse",
       "database": 11,
       "clients": {
@@ -638,6 +690,19 @@
         "quantumult-x": 11,
         "egern": 11,
         "loon": 11
+      }
+    },
+    {
+      "service": "huggingface",
+      "database": 3,
+      "clients": {
+        "mihomo": 3,
+        "sing-box": 3,
+        "surge": 3,
+        "shadowrocket": 3,
+        "quantumult-x": 3,
+        "egern": 3,
+        "loon": 3
       }
     },
     {
@@ -1301,6 +1366,19 @@
         "quantumult-x": 12,
         "egern": 12,
         "loon": 12
+      }
+    },
+    {
+      "service": "zoom",
+      "database": 3,
+      "clients": {
+        "mihomo": 3,
+        "sing-box": 3,
+        "surge": 3,
+        "shadowrocket": 3,
+        "quantumult-x": 3,
+        "egern": 3,
+        "loon": 3
       }
     }
   ]

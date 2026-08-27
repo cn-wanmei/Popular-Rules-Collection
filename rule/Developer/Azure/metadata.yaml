@@ -1,0 +1,33 @@
+id: azure
+name: Azure
+primary_category: developer
+categories:
+- developer
+- cloud
+service_type: service
+parent: developer
+children: null
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: azure.list
+  domain: azure_domain.list
+  ip: null
+statistics:
+  domains: 151
+  ipv4_or_cidr: 0
+  mixed: 151
+sources:
+- metacubex
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-27'
+auto_generated: true

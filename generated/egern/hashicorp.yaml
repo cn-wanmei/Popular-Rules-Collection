@@ -1,0 +1,13 @@
+# name: Hashicorp
+# id: hashicorp
+# count: 8
+no_resolve: true
+domain_suffix_set:
+- consul.io
+- hashicorp.com
+- nomadproject.io
+- packer.io
+- terraform.io
+- vagrantcloud.com
+- vagrantup.com
+- vaultproject.io

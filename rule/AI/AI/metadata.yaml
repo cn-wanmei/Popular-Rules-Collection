@@ -11,6 +11,7 @@ children:
 - gemini
 - copilot
 - anthropic
+- huggingface
 rule:
   has_domain: true
   has_ip: false
