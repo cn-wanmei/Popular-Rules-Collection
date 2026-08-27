@@ -55,6 +55,8 @@ jobs:
         continue-on-error: true
       - run: python scripts/rule_count_drift.py
         continue-on-error: true
+      - run: python scripts/quality_validate.py
+        continue-on-error: true
       - run: python scripts/statistics.py
         continue-on-error: true
       - run: python scripts/generate_links.py
