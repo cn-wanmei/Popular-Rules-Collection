@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""deduplicate.py — canonical domain/ip sets (mutates database/canonical + domains/ips)."""
+"""deduplicate.py — V1.1: canonical domain/ip sets + typed service rule dedup meta."""
 
 from __future__ import annotations
 
@@ -20,6 +20,14 @@ IPS = ROOT / "database" / "ips"
 SERVICES = ROOT / "database" / "services"
 CANON = ROOT / "database" / "canonical"
 
+TYPED = ("domain", "domain_suffix", "domain_keyword", "domain_regex", "ip_cidr", "ip_cidr6")
+
+
+def _norm(rule_type: str, value: str) -> str:
+    if rule_type.startswith("domain"):
+        return value.lower().strip()
+    return value.strip()
+
 
 def main() -> int:
     parser = argparse.ArgumentParser()
@@ -29,11 +37,24 @@ def main() -> int:
     (CANON / "domains").mkdir(exist_ok=True)
     (CANON / "ips").mkdir(exist_ok=True)
     prio = source_priority()
-    stats = {"services": 0, "domains_in": 0, "domains_out": 0, "ips_in": 0, "ips_out": 0}
+    stats = {
+        "services": 0,
+        "domains_in": 0,
+        "domains_out": 0,
+        "ips_in": 0,
+        "ips_out": 0,
+        "typed_rules_in": 0,
+        "typed_rules_out": 0,
+        "typed_dupes_removed": 0,
+    }
 
     for path in sorted(DOMAINS.glob("*.txt")):
         sid = path.stem
-        lines = [ln.strip() for ln in path.read_text(encoding="utf-8", errors="replace").splitlines() if ln.strip()]
+        lines = [
+            ln.strip()
+            for ln in path.read_text(encoding="utf-8", errors="replace").splitlines()
+            if ln.strip()
+        ]
         stats["domains_in"] += len(lines)
         seen: dict[str, str] = {}
         for ln in lines:
@@ -48,9 +69,18 @@ def main() -> int:
         stats["services"] += 1
 
     for path in sorted(IPS.glob("*.txt")):
-        lines = [ln.strip() for ln in path.read_text(encoding="utf-8", errors="replace").splitlines() if ln.strip()]
+        lines = [
+            ln.strip()
+            for ln in path.read_text(encoding="utf-8", errors="replace").splitlines()
+            if ln.strip()
+        ]
         stats["ips_in"] += len(lines)
-        seen = sorted(set(lines))
+        seen_ip: dict[str, str] = {}
+        for ln in lines:
+            k = ln.lower() if ":" in ln else ln
+            if k not in seen_ip:
+                seen_ip[k] = ln
+        seen = sorted(seen_ip.values())
         stats["ips_out"] += len(seen)
         text = "\n".join(seen) + ("\n" if seen else "")
         (CANON / "ips" / path.name).write_text(text, encoding="utf-8")
@@ -60,6 +90,27 @@ def main() -> int:
         if path.name.startswith("example"):
             continue
         doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        rules = doc.get("rules") or []
+        if isinstance(rules, list) and rules:
+            stats["typed_rules_in"] += len(rules)
+            seen_t: dict[str, set[str]] = {t: set() for t in TYPED}
+            new_rules = []
+            for r in rules:
+                if not isinstance(r, dict):
+                    continue
+                t, v = r.get("type"), r.get("value")
+                if not t or not v or t not in seen_t:
+                    new_rules.append(r)
+                    continue
+                key = _norm(str(t), str(v))
+                if key in seen_t[str(t)]:
+                    stats["typed_dupes_removed"] += 1
+                    continue
+                seen_t[str(t)].add(key)
+                new_rules.append(r)
+            doc["rules"] = new_rules
+            stats["typed_rules_out"] += len(new_rules)
+
         srcs = doc.get("source") or []
         if isinstance(srcs, list) and srcs:
             for s in srcs:
@@ -68,10 +119,10 @@ def main() -> int:
             srcs.sort(key=lambda x: -int((x or {}).get("priority") or 50))
             doc["source"] = srcs
             doc["canonical_source"] = srcs[0].get("id") if isinstance(srcs[0], dict) else None
-            path.write_text(
-                yaml.dump(doc, allow_unicode=True, sort_keys=False, default_flow_style=False),
-                encoding="utf-8",
-            )
+        path.write_text(
+            yaml.dump(doc, allow_unicode=True, sort_keys=False, default_flow_style=False),
+            encoding="utf-8",
+        )
 
     meta = {
         "date": args.date,
