@@ -1,7 +1,6 @@
-# Intentional unmaterialized SSOT
-# code: NO_UPSTREAM | COVERED_BY_AGGREGATE | MAPS_TO | DEFERRED_PROFILE | KEYWORD_ONLY | SOURCE_DRIFT
 version: 1
-updated: '2026-08-27'
+updated: '2026-08-28'
+audit_note: 'daily_coverage_final_audit_2026-08-28: BM/MCX re-probed; 16 materialize; CN AI remain NO_UPSTREAM'
 services:
   mistral:
     code: NO_UPSTREAM
@@ -10,12 +9,6 @@ services:
     code: NO_UPSTREAM
     reason: no_verified_upstream
   supabase:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  roblox:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  minecraft:
     code: NO_UPSTREAM
     reason: no_verified_upstream
   blizzard:
@@ -47,7 +40,7 @@ services:
     reason: no_verified_upstream_covered_by_baidu
   qwen:
     code: NO_UPSTREAM
-    reason: no_verified_upstream
+    reason: no_verified_dedicated_upstream_aliyun_is_not_qwen
   kimi:
     code: NO_UPSTREAM
     reason: no_verified_upstream
@@ -55,9 +48,6 @@ services:
     code: NO_UPSTREAM
     reason: no_verified_upstream
   wenxiaoyan:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  snapchat:
     code: NO_UPSTREAM
     reason: no_verified_upstream
   quickpass:
@@ -76,8 +66,8 @@ services:
     code: COVERED_BY_AGGREGATE
     reason: no_dedicated_upstream_use_google_aggregate
   temu:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
+    code: COVERED_BY_AGGREGATE
+    reason: no_dedicated_temu_use_pinduoduo_aggregate
   aliexpress:
     code: NO_UPSTREAM
     reason: no_verified_upstream
@@ -99,12 +89,6 @@ services:
   midjourney:
     code: NO_UPSTREAM
     reason: no_verified_upstream
-  elevenlabs:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  dewu:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
   bosszhipin:
     code: NO_UPSTREAM
     reason: no_verified_upstream
@@ -114,64 +98,30 @@ services:
   revolut:
     code: NO_UPSTREAM
     reason: no_verified_upstream
-  # P2-3: former unexpected_missing (in primary, no dedicated upstream)
   amazonaws:
     code: COVERED_BY_AGGREGATE
     reason: covered_by_aws_amazon_aggregate
   applications:
     code: NO_UPSTREAM
     reason: generic_bucket_no_dedicated_upstream
-  bbc:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
   dingtalk:
     code: COVERED_BY_AGGREGATE
     reason: covered_by_alibaba_aggregate
   discoveryplus:
     code: NO_UPSTREAM
     reason: no_verified_upstream
-  emby:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  huawei:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  kugoukuwo:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
   lan:
     code: NO_UPSTREAM
     reason: local_network_no_public_upstream
-  naver:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
   ntp:
     code: NO_UPSTREAM
     reason: protocol_service_no_domain_ruleset
-  oppo:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
   origin:
     code: MAPS_TO
     reason: maps_to_ea
-  scholar:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  sina:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
   siri:
     code: COVERED_BY_AGGREGATE
     reason: covered_by_apple_aggregate
   steamcn:
     code: COVERED_BY_AGGREGATE
     reason: covered_by_steam_china_paths
-  vivo:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  wikipedia:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  xiaomi:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream

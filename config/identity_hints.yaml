@@ -18,7 +18,6 @@ services:
   copilot: { name_tokens: [Copilot] }
   battlenet: { name_tokens: [Blizzard, BattleNet, Battlenet] }
   riotgames: { name_tokens: [Riot, RiotGames] }
-  # Phase 3C batch (2026-08-27)
   anthropic: { name_tokens: [Anthropic] }
   digitalocean: { name_tokens: [DigitalOcean] }
   atlassian: { name_tokens: [Atlassian] }
@@ -61,3 +60,19 @@ services:
   booking: { name_tokens: [Booking] }
   wise: { name_tokens: [Wise] }
   tidal: { name_tokens: [Tidal] }
+  huawei: { name_tokens: [HuaWei, Huawei] }
+  xiaomi: { name_tokens: [XiaoMi, Xiaomi] }
+  oppo: { name_tokens: [OPPO, Oppo] }
+  vivo: { name_tokens: [Vivo] }
+  kugoukuwo: { name_tokens: [KugouKuwo, KuGou, Kuwo] }
+  naver: { name_tokens: [Naver, NAVER] }
+  wikipedia: { name_tokens: [Wikipedia] }
+  sina: { name_tokens: [Sina] }
+  bbc: { name_tokens: [BBC] }
+  emby: { name_tokens: [Emby] }
+  scholar: { name_tokens: [Scholar] }
+  dewu: { name_tokens: [DeWu, Dewu] }
+  roblox: { name_tokens: [Roblox] }
+  minecraft: { name_tokens: [Minecraft, Mojang] }
+  elevenlabs: { name_tokens: [ElevenLabs] }
+  snapchat: { name_tokens: [Snapchat, Snap] }
