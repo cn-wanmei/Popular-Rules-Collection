@@ -34,16 +34,19 @@ Do **not** hand-edit `rule/`.
 
 ### Intentional unmaterialized
 
+SSOT: **`config/intentional_unmaterialized.yaml`** (loaded by `statistics.py` / `source_snapshot.py`).
+
 ```text
 Primary ✓  +  Registry ✗  →  intentional_unmaterialized
-reason: no_verified_upstream
 ```
 
-| id | note |
-|----|------|
-| mistral / gcp / supabase | no verified upstream |
-| roblox / minecraft | no BM / MetaCubeX path (2026-08-27) |
-| blizzard | maps to battlenet |
+| id | reason |
+|----|--------|
+| mistral / gcp / supabase | no_verified_upstream |
+| roblox / minecraft | no_verified_upstream |
+| blizzard | maps_to_battlenet |
+| stripe | keyword_only_empty_domain_set |
+| adblock-light / adblock-pro | hagezi_profile_deferred |
 
 ---
 
@@ -103,6 +106,25 @@ Hard gates stay fail-closed. Soft QC never hides Source Health degradation.
 | garena | BM `rule/Clash/Garena/Garena.yaml` | registered (materialize on next collect) |
 | roblox | — | intentional_unmaterialized |
 | minecraft | — | intentional_unmaterialized |
+
+---
+
+## Phase 3C next batch (verified BM only)
+
+See `reports/candidates/batch_3c_2026-08-27.md`.
+
+| id | category | BM path |
+|----|----------|---------|
+| anthropic | ai | rule/Clash/Anthropic/Anthropic.yaml |
+| digitalocean | developer | rule/Clash/DigitalOcean/DigitalOcean.yaml |
+| atlassian | developer | rule/Clash/Atlassian/Atlassian.yaml |
+| slack | developer | rule/Clash/Slack/Slack.yaml |
+| line | social | rule/Clash/Line/Line.yaml |
+| kakaotalk | social | rule/Clash/KakaoTalk/KakaoTalk.yaml |
+| adobe | other | rule/Clash/Adobe/Adobe.yaml |
+| oracle | developer | rule/Clash/Oracle/Oracle.yaml |
+
+Apply: append to `sources/registry.yaml` → collect → soft QC.
 
 ---
 

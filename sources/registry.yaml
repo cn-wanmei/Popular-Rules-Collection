@@ -118,6 +118,14 @@ sources:
   - {path: rule/Clash/GoogleFCM/GoogleFCM.yaml, name: googlefcm, local: Clash_GoogleFCM.yaml}
   - {path: rule/Clash/PrivateTracker/PrivateTracker.yaml, name: private, local: Clash_PrivateTracker.yaml}
   - {path: rule/Clash/Garena/Garena.yaml, name: garena, local: Clash_Garena.yaml}
+  - {path: rule/Clash/Anthropic/Anthropic.yaml, name: anthropic, local: Clash_Anthropic.yaml}
+  - {path: rule/Clash/DigitalOcean/DigitalOcean.yaml, name: digitalocean, local: Clash_DigitalOcean.yaml}
+  - {path: rule/Clash/Atlassian/Atlassian.yaml, name: atlassian, local: Clash_Atlassian.yaml}
+  - {path: rule/Clash/Slack/Slack.yaml, name: slack, local: Clash_Slack.yaml}
+  - {path: rule/Clash/Line/Line.yaml, name: line, local: Clash_Line.yaml}
+  - {path: rule/Clash/KakaoTalk/KakaoTalk.yaml, name: kakaotalk, local: Clash_KakaoTalk.yaml}
+  - {path: rule/Clash/Adobe/Adobe.yaml, name: adobe, local: Clash_Adobe.yaml}
+  - {path: rule/Clash/Oracle/Oracle.yaml, name: oracle, local: Clash_Oracle.yaml}
 - id: metacubex
   name: MetaCubeX meta-rules-dat
   url: https://github.com/MetaCubeX/meta-rules-dat
