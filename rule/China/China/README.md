@@ -7,16 +7,15 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 111965 |
-| IP/CIDR | 5846 |
-| Mixed | 117811 |
-| Sources | loyalsoldier, blackmatrix7, sukkaw |
+| Domains | 0 |
+| IP/CIDR | 21 |
+| Mixed | 21 |
+| Sources | blackmatrix7 |
 | Updated | 2026-08-27 |
 
 ## 基础规则（Classical）
 
 - 混合：[`china.list`](./china.list)
-- 域名：[`china_domain.list`](./china_domain.list)
 - IP：[`china_ip.list`](./china_ip.list)
 
 ## 客户端订阅
@@ -38,7 +37,7 @@
 
 ## 来源
 
-`loyalsoldier`, `blackmatrix7`, `sukkaw`
+`blackmatrix7`
 
 ## 分类说明
 

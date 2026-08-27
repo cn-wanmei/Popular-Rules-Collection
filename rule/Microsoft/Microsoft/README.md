@@ -7,10 +7,10 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 666 |
+| Domains | 664 |
 | IP/CIDR | 0 |
-| Mixed | 666 |
-| Sources | blackmatrix7, sukkaw |
+| Mixed | 664 |
+| Sources | blackmatrix7 |
 | Updated | 2026-08-27 |
 
 ## 基础规则（Classical）
@@ -37,7 +37,7 @@
 
 ## 来源
 
-`blackmatrix7`, `sukkaw`
+`blackmatrix7`
 
 ## 官方
 

@@ -1,11 +1,11 @@
 {
   "source": "metacubex",
   "fetch": "github_raw",
-  "timestamp": "2026-08-27T04:42:21.526801+00:00",
-  "files_ok": 13,
+  "timestamp": "2026-08-27T05:32:31.763795+00:00",
+  "files_ok": 17,
   "files_failed": 0,
   "empty_blocked": 0,
-  "rules_declared": 13,
+  "rules_declared": 17,
   "files": [
     {
       "name": "geosite_alibaba.list",
@@ -136,8 +136,48 @@
       "size": 177,
       "sha256": "d7d7220c784ad6b746cdc132307c8006a2f8afc08e8d0c1333cb2e273ce4f4b6",
       "status": "ok"
+    },
+    {
+      "name": "geosite_perplexity.list",
+      "path": "geo/geosite/perplexity.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/perplexity.list",
+      "service": "perplexity",
+      "local": "sources/metacubex/geosite_perplexity.list",
+      "size": 102,
+      "sha256": "f07ed9821d704b8a42efcf9f7965e1a1418a9c5a12f35dcbdfbe3d4925d69201",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_groq.list",
+      "path": "geo/geosite/groq.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/groq.list",
+      "service": "groq",
+      "local": "sources/metacubex/geosite_groq.list",
+      "size": 10,
+      "sha256": "7b15edad3da6fcfc18dc648c1a072636b5fa8116fc51538f4d1e9583ebf21ea4",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_xai.list",
+      "path": "geo/geosite/xai.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/xai.list",
+      "service": "xai",
+      "local": "sources/metacubex/geosite_xai.list",
+      "size": 47,
+      "sha256": "558bd1eecd925c0033f61b6c96a35d32aad380effdb1d4143d24d1ada20bb13d",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_firebase.list",
+      "path": "geo/geosite/firebase.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/firebase.list",
+      "service": "firebase",
+      "local": "sources/metacubex/geosite_firebase.list",
+      "size": 585,
+      "sha256": "00404507eaac7c68e4dc7c03e4c0910dee5fe1360f91873c782ca206a2c06152",
+      "status": "ok"
     }
   ],
-  "registry_priority": 92,
+  "registry_priority": 90,
   "registry_trust": "high"
 }

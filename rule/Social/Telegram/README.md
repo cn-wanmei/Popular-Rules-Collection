@@ -7,10 +7,10 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 25 |
-| IP/CIDR | 21 |
-| Mixed | 46 |
-| Sources | loyalsoldier, blackmatrix7, sukkaw |
+| Domains | 24 |
+| IP/CIDR | 10 |
+| Mixed | 34 |
+| Sources | blackmatrix7 |
 | Updated | 2026-08-27 |
 
 ## 基础规则（Classical）
@@ -38,7 +38,7 @@
 
 ## 来源
 
-`loyalsoldier`, `blackmatrix7`, `sukkaw`
+`blackmatrix7`
 
 ## 官方
 

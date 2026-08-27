@@ -15,13 +15,11 @@ generated_files:
   domain: telegram_domain.list
   ip: telegram_ip.list
 statistics:
-  domains: 25
-  ipv4_or_cidr: 21
-  mixed: 46
+  domains: 24
+  ipv4_or_cidr: 10
+  mixed: 34
 sources:
-- loyalsoldier
 - blackmatrix7
-- sukkaw
 clients:
 - Mihomo
 - sing-box

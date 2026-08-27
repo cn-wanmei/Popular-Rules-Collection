@@ -1,0 +1,32 @@
+id: xai
+name: xAI
+primary_category: ai
+categories:
+- ai
+service_type: service
+parent: ai
+children: null
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: xai.list
+  domain: xai_domain.list
+  ip: null
+statistics:
+  domains: 4
+  ipv4_or_cidr: 0
+  mixed: 4
+sources:
+- metacubex
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-27'
+auto_generated: true

@@ -12,6 +12,10 @@ children:
 - copilot
 - anthropic
 - huggingface
+- perplexity
+- groq
+- xai
+- mistral
 rule:
   has_domain: true
   has_ip: false

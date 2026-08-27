@@ -1,0 +1,9 @@
+# name: Xai
+# id: xai
+# count: 4
+no_resolve: true
+domain_suffix_set:
+- grok.com
+- grok.x.com
+- grokipedia.com
+- x.ai

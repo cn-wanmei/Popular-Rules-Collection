@@ -9,10 +9,10 @@
 | Service Type | aggregate |
 | Tags | china |
 | 类型 | mixed |
-| Domains | 111974 |
-| CIDR | 5846 |
+| Domains | 9 |
+| CIDR | 21 |
 | 最后更新 | 2026-08-27 |
-| Sources | loyalsoldier / blackmatrix7 / sukkaw |
+| Sources | blackmatrix7 |
 | Confidence | HIGH |
 
 ## 用途
@@ -48,9 +48,7 @@ _未在 config/official_sites.yaml 配置_
 
 ## 规则来源（Provenance）
 
-- `loyalsoldier`
 - `blackmatrix7`
-- `sukkaw`
 
 由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
 

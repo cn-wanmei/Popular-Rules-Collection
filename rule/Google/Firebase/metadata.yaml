@@ -1,0 +1,33 @@
+id: firebase
+name: Firebase
+primary_category: google
+categories:
+- google
+- developer
+service_type: service
+parent: google
+children: null
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: firebase.list
+  domain: firebase_domain.list
+  ip: null
+statistics:
+  domains: 20
+  ipv4_or_cidr: 0
+  mixed: 20
+sources:
+- metacubex
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-27'
+auto_generated: true

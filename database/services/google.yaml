@@ -4,16 +4,12 @@ category: service
 type: mixed
 version: 1
 source:
-- id: loyalsoldier
-  priority: 98
 - id: blackmatrix7
   priority: 95
 rules:
 - type: domain
   value: voice.telephony.goog
   sources: &id001
-  - id: loyalsoldier
-    priority: 98
   - id: blackmatrix7
     priority: 95
 - type: domain_keyword
@@ -75,9 +71,6 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: adsenseformobileapps.com
-  sources: *id001
-- type: domain_suffix
-  value: adservice.google.com
   sources: *id001
 - type: domain_suffix
   value: advertisercommunity.com
@@ -180,9 +173,6 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: bdn.dev
-  sources: *id001
-- type: domain_suffix
-  value: beacons.gcp.gvt2.com
   sources: *id001
 - type: domain_suffix
   value: beacons.gvt2.com
@@ -452,22 +442,7 @@ rules:
   value: bumptunes.com
   sources: *id001
 - type: domain_suffix
-  value: c.admob.com
-  sources: *id001
-- type: domain_suffix
-  value: c.android.clients.google.com
-  sources: *id001
-- type: domain_suffix
   value: c.gle
-  sources: *id001
-- type: domain_suffix
-  value: c.pki.goog
-  sources: *id001
-- type: domain_suffix
-  value: cache-management-prod.google.com
-  sources: *id001
-- type: domain_suffix
-  value: cache.pack.google.com
   sources: *id001
 - type: domain_suffix
   value: campuslondon.com
@@ -486,9 +461,6 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: chat.gle
-  sources: *id001
-- type: domain_suffix
-  value: checkin.gstatic.com
   sources: *id001
 - type: domain_suffix
   value: chrome.com
@@ -524,13 +496,7 @@ rules:
   value: clickserve.cc-dt.com
   sources: *id001
 - type: domain_suffix
-  value: clickserve.dartsearch.net
-  sources: *id001
-- type: domain_suffix
   value: clickserver.googleads.com
-  sources: *id001
-- type: domain_suffix
-  value: clientservices.googleapis.com
   sources: *id001
 - type: domain_suffix
   value: cloudburstresearch.com
@@ -545,16 +511,10 @@ rules:
   value: cloudrobotics.com
   sources: *id001
 - type: domain_suffix
-  value: cn.widevine.com
-  sources: *id001
-- type: domain_suffix
   value: cobrasearch.com
   sources: *id001
 - type: domain_suffix
   value: codespot.com
-  sources: *id001
-- type: domain_suffix
-  value: connectivitycheck.gstatic.com
   sources: *id001
 - type: domain_suffix
   value: conscrypt.com
@@ -578,16 +538,10 @@ rules:
   value: crashlytics.com
   sources: *id001
 - type: domain_suffix
-  value: crashlyticsreports-pa.googleapis.com
-  sources: *id001
-- type: domain_suffix
   value: crbug.com
   sources: *id001
 - type: domain_suffix
   value: creativelab5.com
-  sources: *id001
-- type: domain_suffix
-  value: crl.pki.goog
   sources: *id001
 - type: domain_suffix
   value: crossmediapanel.com
@@ -600,9 +554,6 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: cs4hs.com
-  sources: *id001
-- type: domain_suffix
-  value: csi.gstatic.com
   sources: *id001
 - type: domain_suffix
   value: dart.dev
@@ -647,9 +598,6 @@ rules:
   value: devsitetest.how
   sources: *id001
 - type: domain_suffix
-  value: dg-meta.video.google.com
-  sources: *id001
-- type: domain_suffix
   value: dialogflow.com
   sources: *id001
 - type: domain_suffix
@@ -662,12 +610,6 @@ rules:
   value: digitalattackmap.com
   sources: *id001
 - type: domain_suffix
-  value: dl.google.com
-  sources: *id001
-- type: domain_suffix
-  value: dl.l.google.com
-  sources: *id001
-- type: domain_suffix
   value: doubleclick-cn.net
   sources: *id001
 - type: domain_suffix
@@ -675,12 +617,6 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: doubleclick.net
-  sources: *id001
-- type: domain_suffix
-  value: download.mlcc.google.com
-  sources: *id001
-- type: domain_suffix
-  value: download.tensorflow.google.com
   sources: *id001
 - type: domain_suffix
   value: episodic.com
@@ -701,9 +637,6 @@ rules:
   value: financeleadsonline.com
   sources: *id001
 - type: domain_suffix
-  value: firebase-settings.crashlytics.com
-  sources: *id001
-- type: domain_suffix
   value: firebaseapp.com
   sources: *id001
 - type: domain_suffix
@@ -714,15 +647,6 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: flutterapp.com
-  sources: *id001
-- type: domain_suffix
-  value: fontfiles.googleapis.com
-  sources: *id001
-- type: domain_suffix
-  value: fonts.googleapis.com
-  sources: *id001
-- type: domain_suffix
-  value: fonts.gstatic.com
   sources: *id001
 - type: domain_suffix
   value: foofle.com
@@ -747,18 +671,6 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: g.page
-  sources: *id001
-- type: domain_suffix
-  value: g0.gstatic.com
-  sources: *id001
-- type: domain_suffix
-  value: g1.gstatic.com
-  sources: *id001
-- type: domain_suffix
-  value: g2.gstatic.com
-  sources: *id001
-- type: domain_suffix
-  value: g3.gstatic.com
   sources: *id001
 - type: domain_suffix
   value: gateway.dev
@@ -1634,16 +1546,10 @@ rules:
   value: gstatic.com
   sources: *id001
 - type: domain_suffix
-  value: gstaticadssl.l.google.com
-  sources: *id001
-- type: domain_suffix
   value: gstaticcnapps.cn
   sources: *id001
 - type: domain_suffix
   value: gsuite.com
-  sources: *id001
-- type: domain_suffix
-  value: gtm.oasisfeng.com
   sources: *id001
 - type: domain_suffix
   value: gv.com
@@ -1701,9 +1607,6 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: igoogle.com
-  sources: *id001
-- type: domain_suffix
-  value: imasdk.googleapis.com
   sources: *id001
 - type: domain_suffix
   value: impermium.com
@@ -1781,9 +1684,6 @@ rules:
   value: oauthz.com
   sources: *id001
 - type: domain_suffix
-  value: ocsp.pki.goog
-  sources: *id001
-- type: domain_suffix
   value: ok.gle
   sources: *id001
 - type: domain_suffix
@@ -1820,9 +1720,6 @@ rules:
   value: page.link
   sources: *id001
 - type: domain_suffix
-  value: pagead-googlehosted.l.google.com
-  sources: *id001
-- type: domain_suffix
   value: pagespeedmobilizer.com
   sources: *id001
 - type: domain_suffix
@@ -1836,9 +1733,6 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: paxlicense.org
-  sources: *id001
-- type: domain_suffix
-  value: performanceparameters.googleapis.com
   sources: *id001
 - type: domain_suffix
   value: picasa.com
@@ -1860,9 +1754,6 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: pixate.com
-  sources: *id001
-- type: domain_suffix
-  value: pki-goog.l.google.com
   sources: *id001
 - type: domain_suffix
   value: pki.goog
@@ -1925,24 +1816,6 @@ rules:
   value: redhotlabs.com
   sources: *id001
 - type: domain_suffix
-  value: redirector.bdn.dev
-  sources: *id001
-- type: domain_suffix
-  value: redirector.c.chat.google.com
-  sources: *id001
-- type: domain_suffix
-  value: redirector.c.mail.google.com
-  sources: *id001
-- type: domain_suffix
-  value: redirector.c.pack.google.com
-  sources: *id001
-- type: domain_suffix
-  value: redirector.c.play.google.com
-  sources: *id001
-- type: domain_suffix
-  value: redirector.c.youtubeeducation.com
-  sources: *id001
-- type: domain_suffix
   value: redirector.gcpcdn.gvt1.com
   sources: *id001
 - type: domain_suffix
@@ -1955,9 +1828,6 @@ rules:
   value: redirector.snap.gvt1.com
   sources: *id001
 - type: domain_suffix
-  value: redirector.xn--ngstr-lra8j.com
-  sources: *id001
-- type: domain_suffix
   value: registry.google
   sources: *id001
 - type: domain_suffix
@@ -1968,12 +1838,6 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: run.app
-  sources: *id001
-- type: domain_suffix
-  value: safebrowsing-cache.google.com
-  sources: *id001
-- type: domain_suffix
-  value: safebrowsing.googleapis.com
   sources: *id001
 - type: domain_suffix
   value: savethedate.foo
@@ -1994,9 +1858,6 @@ rules:
   value: screenwisetrendspanel.com
   sources: *id001
 - type: domain_suffix
-  value: service.urchin.com
-  sources: *id001
-- type: domain_suffix
   value: shattered.io
   sources: *id001
 - type: domain_suffix
@@ -2004,12 +1865,6 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: solveforx.com
-  sources: *id001
-- type: domain_suffix
-  value: ssl-google-analytics.l.google.com
-  sources: *id001
-- type: domain_suffix
-  value: ssl.gstatic.com
   sources: *id001
 - type: domain_suffix
   value: stadia.dev
@@ -2051,9 +1906,6 @@ rules:
   value: synergyse.com
   sources: *id001
 - type: domain_suffix
-  value: tac.googleapis.com
-  sources: *id001
-- type: domain_suffix
   value: teachparentstech.org
   sources: *id001
 - type: domain_suffix
@@ -2081,9 +1933,6 @@ rules:
   value: tiltbrush.com
   sources: *id001
 - type: domain_suffix
-  value: tools.google.com
-  sources: *id001
-- type: domain_suffix
   value: txcloud.net
   sources: *id001
 - type: domain_suffix
@@ -2091,12 +1940,6 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: unfiltered.news
-  sources: *id001
-- type: domain_suffix
-  value: update.crashlytics.com
-  sources: *id001
-- type: domain_suffix
-  value: update.googleapis.com
   sources: *id001
 - type: domain_suffix
   value: urchin.com
@@ -2147,9 +1990,6 @@ rules:
   value: waze.com
   sources: *id001
 - type: domain_suffix
-  value: wear.googleapis.com
-  sources: *id001
-- type: domain_suffix
   value: web.app
   sources: *id001
 - type: domain_suffix
@@ -2195,16 +2035,7 @@ rules:
   value: womenwill.mx
   sources: *id001
 - type: domain_suffix
-  value: www-google-analytics.l.google.com
-  sources: *id001
-- type: domain_suffix
-  value: www-googletagmanager.l.google.com
-  sources: *id001
-- type: domain_suffix
   value: www.destinationurl.com
-  sources: *id001
-- type: domain_suffix
-  value: www.gstatic.com
   sources: *id001
 - type: domain_suffix
   value: www.pxcc.com
@@ -2266,10 +2097,10 @@ rules:
 metadata:
   priority: high
   confidence: high
-  last_updated: '2026-08-27T04:43:09.481147+00:00'
+  last_updated: '2026-08-27T05:32:32.582866+00:00'
   notes: Generated by normalize.py V1.1
   stats:
-    domain_count: 745
+    domain_count: 690
     ip_count: 5
-    total: 750
-canonical_source: loyalsoldier
+    total: 695
+canonical_source: blackmatrix7

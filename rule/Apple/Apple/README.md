@@ -7,16 +7,15 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 232 |
+| Domains | 0 |
 | IP/CIDR | 13 |
-| Mixed | 245 |
-| Sources | loyalsoldier, blackmatrix7, sukkaw |
+| Mixed | 13 |
+| Sources | blackmatrix7 |
 | Updated | 2026-08-27 |
 
 ## 基础规则（Classical）
 
 - 混合：[`apple.list`](./apple.list)
-- 域名：[`apple_domain.list`](./apple_domain.list)
 - IP：[`apple_ip.list`](./apple_ip.list)
 
 ## 客户端订阅
@@ -38,7 +37,7 @@
 
 ## 来源
 
-`loyalsoldier`, `blackmatrix7`, `sukkaw`
+`blackmatrix7`
 
 ## 官方
 

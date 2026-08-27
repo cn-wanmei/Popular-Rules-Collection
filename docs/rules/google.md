@@ -9,10 +9,10 @@
 | Service Type | aggregate |
 | Tags | google |
 | 类型 | mixed |
-| Domains | 745 |
+| Domains | 690 |
 | CIDR | 5 |
 | 最后更新 | 2026-08-27 |
-| Sources | loyalsoldier / blackmatrix7 |
+| Sources | blackmatrix7 |
 | Confidence | HIGH |
 
 ## 用途
@@ -48,7 +48,6 @@
 
 ## 规则来源（Provenance）
 
-- `loyalsoldier`
 - `blackmatrix7`
 
 由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**

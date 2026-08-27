@@ -19,12 +19,11 @@ generated_files:
   domain: microsoft_domain.list
   ip: null
 statistics:
-  domains: 666
+  domains: 664
   ipv4_or_cidr: 0
-  mixed: 666
+  mixed: 664
 sources:
 - blackmatrix7
-- sukkaw
 clients:
 - Mihomo
 - sing-box

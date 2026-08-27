@@ -9,10 +9,10 @@
 | Service Type | service |
 | Tags | network |
 | 类型 | mixed |
-| Domains | 130 |
-| CIDR | 18 |
+| Domains | 245 |
+| CIDR | 3 |
 | 最后更新 | 2026-08-27 |
-| Sources | loyalsoldier |
+| Sources | blackmatrix7 |
 | Confidence | HIGH |
 
 ## 用途
@@ -48,7 +48,7 @@ _未在 config/official_sites.yaml 配置_
 
 ## 规则来源（Provenance）
 
-- `loyalsoldier`
+- `blackmatrix7`
 
 由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
 

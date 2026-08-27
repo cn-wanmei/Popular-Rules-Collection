@@ -9,8 +9,8 @@
 | Service Type | service |
 | Tags | china |
 | 类型 | mixed |
-| Domains | 137 |
-| CIDR | 28 |
+| Domains | 63 |
+| CIDR | 18 |
 | 最后更新 | 2026-08-27 |
 | Sources | blackmatrix7 / metacubex |
 | Confidence | HIGH |

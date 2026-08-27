@@ -1,4 +1,4 @@
-generated_at: '2026-08-27T04:57:50.692192+00:00'
+generated_at: '2026-08-27T05:46:28.856353+00:00'
 categories:
   '12306':
     display_name: '12306'
@@ -116,6 +116,12 @@ categories:
       service_type: service
       domains: 10
       ips: 0
+    - id: groq
+      name: Groq
+      path: rule/AI/Groq
+      service_type: service
+      domains: 1
+      ips: 0
     - id: huggingface
       name: HuggingFace
       path: rule/AI/HuggingFace
@@ -128,6 +134,18 @@ categories:
       service_type: service
       domains: 31
       ips: 2
+    - id: perplexity
+      name: Perplexity
+      path: rule/AI/Perplexity
+      service_type: service
+      domains: 5
+      ips: 0
+    - id: xai
+      name: xAI
+      path: rule/AI/xAI
+      service_type: service
+      domains: 4
+      ips: 0
   developer:
     display_name: Developer
     order: 160
@@ -250,7 +268,7 @@ categories:
       name: Apple
       path: rule/Apple/Apple
       service_type: aggregate
-      domains: 232
+      domains: 0
       ips: 13
     - id: applemusic
       name: AppleMusic
@@ -358,8 +376,8 @@ categories:
       name: China
       path: rule/China/China
       service_type: aggregate
-      domains: 111965
-      ips: 5846
+      domains: 0
+      ips: 21
     - id: didi
       name: DiDi
       path: rule/China/DiDi
@@ -388,8 +406,8 @@ categories:
       name: NetEase
       path: rule/China/NetEase
       service_type: service
-      domains: 137
-      ips: 28
+      domains: 63
+      ips: 18
     - id: pinduoduo
       name: Pinduoduo
       path: rule/China/Pinduoduo
@@ -532,8 +550,8 @@ categories:
       name: Telegram
       path: rule/Social/Telegram
       service_type: service
-      domains: 25
-      ips: 21
+      domains: 24
+      ips: 10
     - id: tiktok
       name: TikTok
       path: rule/Social/TikTok
@@ -610,6 +628,34 @@ categories:
       service_type: service
       domains: 8
       ips: 12
+  google:
+    display_name: Google
+    order: 90
+    rules:
+    - id: firebase
+      name: Firebase
+      path: rule/Google/Firebase
+      service_type: service
+      domains: 20
+      ips: 0
+    - id: google
+      name: Google
+      path: rule/Google/Google
+      service_type: aggregate
+      domains: 685
+      ips: 5
+    - id: googlefcm
+      name: GoogleFCM
+      path: rule/Google/GoogleFCM
+      service_type: service
+      domains: 15
+      ips: 26
+    - id: youtube
+      name: YouTube
+      path: rule/Google/YouTube
+      service_type: service
+      domains: 179
+      ips: 3
   network:
     display_name: Network
     order: 210
@@ -624,8 +670,8 @@ categories:
       name: Private
       path: rule/Network/Private
       service_type: service
-      domains: 130
-      ips: 18
+      domains: 241
+      ips: 3
     - id: proxy
       name: Proxy
       path: rule/Network/Proxy
@@ -658,7 +704,7 @@ categories:
       name: Microsoft
       path: rule/Microsoft/Microsoft
       service_type: aggregate
-      domains: 666
+      domains: 664
       ips: 0
     - id: onedrive
       name: OneDrive
@@ -678,28 +724,6 @@ categories:
       service_type: service
       domains: 42
       ips: 0
-  google:
-    display_name: Google
-    order: 90
-    rules:
-    - id: google
-      name: Google
-      path: rule/Google/Google
-      service_type: aggregate
-      domains: 740
-      ips: 5
-    - id: googlefcm
-      name: GoogleFCM
-      path: rule/Google/GoogleFCM
-      service_type: service
-      domains: 15
-      ips: 26
-    - id: youtube
-      name: YouTube
-      path: rule/Google/YouTube
-      service_type: service
-      domains: 179
-      ips: 3
   jingdong:
     display_name: JingDong
     order: 70
@@ -708,7 +732,7 @@ categories:
       name: JingDong
       path: rule/JingDong/JingDong
       service_type: aggregate
-      domains: 265
+      domains: 243
       ips: 0
   tencent:
     display_name: Tencent

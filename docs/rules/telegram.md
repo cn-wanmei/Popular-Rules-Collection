@@ -9,10 +9,10 @@
 | Service Type | service |
 | Tags | social |
 | 类型 | mixed |
-| Domains | 26 |
-| CIDR | 21 |
+| Domains | 25 |
+| CIDR | 10 |
 | 最后更新 | 2026-08-27 |
-| Sources | loyalsoldier / blackmatrix7 / sukkaw |
+| Sources | blackmatrix7 |
 | Confidence | HIGH |
 
 ## 用途
@@ -48,9 +48,7 @@
 
 ## 规则来源（Provenance）
 
-- `loyalsoldier`
 - `blackmatrix7`
-- `sukkaw`
 
 由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
 

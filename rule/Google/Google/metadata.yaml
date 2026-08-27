@@ -9,6 +9,8 @@ children:
 - youtube
 - googlefcm
 - googledrive
+- firebase
+- gcp
 rule:
   has_domain: true
   has_ip: true
@@ -18,11 +20,10 @@ generated_files:
   domain: google_domain.list
   ip: google_ip.list
 statistics:
-  domains: 740
+  domains: 685
   ipv4_or_cidr: 5
-  mixed: 745
+  mixed: 690
 sources:
-- loyalsoldier
 - blackmatrix7
 clients:
 - Mihomo

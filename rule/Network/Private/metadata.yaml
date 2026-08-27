@@ -15,11 +15,11 @@ generated_files:
   domain: private_domain.list
   ip: private_ip.list
 statistics:
-  domains: 130
-  ipv4_or_cidr: 18
-  mixed: 148
+  domains: 241
+  ipv4_or_cidr: 3
+  mixed: 244
 sources:
-- loyalsoldier
+- blackmatrix7
 clients:
 - Mihomo
 - sing-box

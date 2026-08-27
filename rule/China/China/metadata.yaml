@@ -20,21 +20,19 @@ children:
 - kugoukuwo
 - steamcn
 rule:
-  has_domain: true
+  has_domain: false
   has_ip: true
   mixed: true
 generated_files:
   mixed: china.list
-  domain: china_domain.list
+  domain: null
   ip: china_ip.list
 statistics:
-  domains: 111965
-  ipv4_or_cidr: 5846
-  mixed: 117811
+  domains: 0
+  ipv4_or_cidr: 21
+  mixed: 21
 sources:
-- loyalsoldier
 - blackmatrix7
-- sukkaw
 clients:
 - Mihomo
 - sing-box

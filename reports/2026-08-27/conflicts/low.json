@@ -9,8 +9,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -368,8 +367,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -387,8 +385,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -575,8 +572,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -594,8 +590,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -784,8 +779,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -803,8 +797,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -822,8 +815,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -841,8 +833,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -1044,25 +1035,6 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
-      "value": "clarity.ms"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "hagezi",
-      "sukkaw"
-    ],
-    "services": [
-      "adblock-light",
-      "adblock-pro",
-      "microsoft"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
       "value": "click-url.com"
     },
     "policy": "proxy",
@@ -1215,8 +1187,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -1269,8 +1240,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -1288,8 +1258,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -1439,8 +1408,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "sukkaw"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -1588,7 +1556,6 @@
     },
     "policy": "proxy",
     "sources": [
-      "blackmatrix7",
       "hagezi",
       "metacubex"
     ],
@@ -1608,8 +1575,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -1627,8 +1593,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -1646,8 +1611,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -1665,8 +1629,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -1684,8 +1647,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -1703,8 +1665,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -1722,8 +1683,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -1945,26 +1905,6 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
-      "value": "iadsdk.apple.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "hagezi",
-      "loyalsoldier",
-      "sukkaw"
-    ],
-    "services": [
-      "adblock-light",
-      "adblock-pro",
-      "apple"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
       "value": "id6.me"
     },
     "policy": "proxy",
@@ -2006,7 +1946,6 @@
     },
     "policy": "proxy",
     "sources": [
-      "blackmatrix7",
       "hagezi",
       "metacubex"
     ],
@@ -2134,8 +2073,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "sukkaw"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -2217,6 +2155,25 @@
       "adblock-light",
       "adblock-pro",
       "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "mam.netease.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "netease"
     ]
   },
   {
@@ -2418,8 +2375,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "sukkaw"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -2626,8 +2582,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-light",
@@ -3623,8 +3578,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -3713,8 +3667,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -3765,7 +3718,6 @@
     },
     "policy": "proxy",
     "sources": [
-      "blackmatrix7",
       "hagezi",
       "metacubex"
     ],
@@ -3784,8 +3736,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -3838,8 +3789,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -3856,8 +3806,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -3874,8 +3823,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -3953,6 +3901,24 @@
       "adblock-pro",
       "alibaba",
       "alipay"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "api.iplay.163.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-pro",
+      "netease"
     ]
   },
   {
@@ -4053,8 +4019,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "sukkaw"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -4071,8 +4036,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -4089,8 +4053,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -4107,8 +4070,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -4125,8 +4087,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -4143,8 +4104,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -4286,10 +4246,11 @@
     "sources": [
       "blackmatrix7",
       "hagezi",
-      "loyalsoldier"
+      "metacubex"
     ],
     "services": [
       "adblock-pro",
+      "firebase",
       "google"
     ]
   },
@@ -4302,13 +4263,12 @@
     },
     "policy": "proxy",
     "sources": [
-      "blackmatrix7",
       "hagezi",
-      "loyalsoldier"
+      "metacubex"
     ],
     "services": [
       "adblock-pro",
-      "google"
+      "firebase"
     ]
   },
   {
@@ -4339,8 +4299,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -4475,25 +4434,6 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
-      "value": "experiments.apple.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "hagezi",
-      "loyalsoldier",
-      "sukkaw"
-    ],
-    "services": [
-      "adblock-pro",
-      "apple"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
       "value": "extlog.snssdk.com"
     },
     "policy": "proxy",
@@ -4563,6 +4503,40 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "firebaselogging-pa.googleapis.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-pro",
+      "firebase"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "firebaselogging.googleapis.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-pro",
+      "firebase"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "fls-na.amazon.com"
     },
     "policy": "proxy",
@@ -4585,8 +4559,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "sukkaw"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -4638,8 +4611,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -4656,8 +4628,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -4674,8 +4645,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -4692,8 +4662,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -4710,8 +4679,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -4728,8 +4696,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -4746,8 +4713,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -4764,8 +4730,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -4794,31 +4759,12 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
-      "value": "gtm.oasisfeng.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
-    ],
-    "services": [
-      "adblock-pro",
-      "google"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
       "value": "gvt2-cn.com"
     },
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -4852,8 +4798,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -5120,8 +5065,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -5138,8 +5082,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "sukkaw"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -5197,24 +5140,6 @@
     "services": [
       "adblock-pro",
       "bytedance"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "pagead-googlehosted.l.google.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
-    ],
-    "services": [
-      "adblock-pro",
-      "google"
     ]
   },
   {
@@ -5474,24 +5399,6 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
-      "value": "ssl-google-analytics.l.google.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
-    ],
-    "services": [
-      "adblock-pro",
-      "google"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
       "value": "statis.api.3g.youku.com"
     },
     "policy": "proxy",
@@ -5606,8 +5513,7 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
+      "hagezi"
     ],
     "services": [
       "adblock-pro",
@@ -5709,24 +5615,6 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
-      "value": "www-google-analytics.l.google.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "hagezi",
-      "loyalsoldier"
-    ],
-    "services": [
-      "adblock-pro",
-      "google"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
       "value": "youkuhonor.com"
     },
     "policy": "proxy",
@@ -5774,43 +5662,6 @@
     "services": [
       "adblock-pro",
       "alibaba"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "omniroot.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "sukkaw"
-    ],
-    "services": [
-      "adobe",
-      "microsoft"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain",
-      "value": "7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "loyalsoldier",
-      "sukkaw"
-    ],
-    "services": [
-      "ai",
-      "apple",
-      "microsoft",
-      "telegram"
     ]
   },
   {
@@ -5943,7 +5794,6 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "loyalsoldier",
       "sukkaw"
     ],
     "services": [
@@ -6013,11 +5863,30 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
+      "metacubex",
       "sukkaw"
     ],
     "services": [
       "ai",
-      "twitter"
+      "twitter",
+      "xai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "groq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "groq"
     ]
   },
   {
@@ -6043,6 +5912,23 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "perplexity.ai"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "perplexity"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "proactivebackend-pa.googleapis.com"
     },
     "policy": "proxy",
@@ -6053,6 +5939,23 @@
     "services": [
       "ai",
       "gemini"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "x.ai"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "xai"
     ]
   },
   {
@@ -8803,6 +8706,38 @@
     "match": {
       "type": "domain_suffix",
       "value": "dfkhgj.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex"
+    ],
+    "services": [
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "dianwoda.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex"
+    ],
+    "services": [
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "dianwoda.com"
     },
     "policy": "proxy",
     "sources": [

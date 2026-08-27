@@ -11,21 +11,19 @@ children:
 - icloud
 - siri
 rule:
-  has_domain: true
+  has_domain: false
   has_ip: true
   mixed: true
 generated_files:
   mixed: apple.list
-  domain: apple_domain.list
+  domain: null
   ip: apple_ip.list
 statistics:
-  domains: 232
+  domains: 0
   ipv4_or_cidr: 13
-  mixed: 245
+  mixed: 13
 sources:
-- loyalsoldier
 - blackmatrix7
-- sukkaw
 clients:
 - Mihomo
 - sing-box

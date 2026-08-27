@@ -20,6 +20,7 @@ children:
 - heroku
 - azure
 - hashicorp
+- supabase
 rule:
   has_domain: true
   has_ip: false
