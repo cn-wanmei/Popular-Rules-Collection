@@ -28,6 +28,8 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
+      # Registry ⊆ Primary before expensive work
+      - run: python scripts/validate_registry.py
       - run: python scripts/collect.py
       - name: Normalize
         run: |
