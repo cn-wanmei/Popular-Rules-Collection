@@ -18,3 +18,12 @@ services:
   copilot: { name_tokens: [Copilot] }
   battlenet: { name_tokens: [Blizzard, BattleNet, Battlenet] }
   riotgames: { name_tokens: [Riot, RiotGames] }
+  # Phase 3C batch (2026-08-27)
+  anthropic: { name_tokens: [Anthropic] }
+  digitalocean: { name_tokens: [DigitalOcean] }
+  atlassian: { name_tokens: [Atlassian] }
+  slack: { name_tokens: [Slack] }
+  line: { name_tokens: [Line] }
+  kakaotalk: { name_tokens: [KakaoTalk, Kakao] }
+  adobe: { name_tokens: [Adobe] }
+  oracle: { name_tokens: [Oracle] }

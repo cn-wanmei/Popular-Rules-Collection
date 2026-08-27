@@ -23,6 +23,15 @@
 
 Batch **4–8**, Tier-0 first, no fake upstream.
 
+## Progress (2026-08-27)
+
+| Phase | Status |
+|-------|--------|
+| 3A | ✅ scripts + CI soft; local verify OK |
+| 3B | ✅ intentional YAML SSOT; statistics loads SSOT (fixed hardcoded) |
+| 3C | 📋 batch ready: anthropic, digitalocean, atlassian, slack, line, kakaotalk, adobe, oracle |
+| 3D | ✅ service_score v1 scaffold |
+
 ## Progress metrics
 
 稳定性 ↑ · 可追溯性 ↑ · Source Health ↑ · Rule Quality ↑ · Ecosystem Coverage ↑ · 人工成本 ↓

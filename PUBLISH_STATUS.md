@@ -37,10 +37,17 @@ Hard gates: `validate_registry`, `schema_validate`, `validate`, `builder_validat
 
 ## Intentional unmaterialized
 
-mistral, gcp, supabase, roblox, minecraft — `no_verified_upstream`  
-blizzard → battlenet
+SSOT: `config/intentional_unmaterialized.yaml`  
+mistral / gcp / supabase / roblox / minecraft — `no_verified_upstream`  
+blizzard → `maps_to_battlenet` · stripe · adblock-light/pro (deferred)
 
 ## Gaming
 
 - **garena** — BM registered  
 - **roblox / minecraft** — no verified BM/MetaCubeX path as of 2026-08-27  
+
+## Phase 3
+
+- **3A/3B** — release_snapshot / generated_manifest / source_snapshot / service_score + intentional SSOT ✅  
+- **3C next batch** — anthropic, digitalocean, atlassian, slack, line, kakaotalk, adobe, oracle (verified BM)  
+  → `reports/candidates/batch_3c_2026-08-27.md`  

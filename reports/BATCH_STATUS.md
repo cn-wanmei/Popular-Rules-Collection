@@ -1,4 +1,4 @@
-# Batch Status — 2026-08-27 (QC P1 complete)
+# Batch Status — 2026-08-27 (Phase 3A/3B locked · 3C ready)
 
 ## Release
 
@@ -23,6 +23,23 @@ See **`docs/RELEASE_AND_QC.md`**.
 | 2B-3 intentional_unmaterialized | ✅ |
 | **2B-4 Gaming** | ✅ Garena registered; Roblox/Minecraft no upstream |
 
+## Phase 3
+
+| Step | Status |
+|------|--------|
+| **3A** Release snapshot / manifest / source snapshot | ✅ scripts + CI soft |
+| **3B** intentional SSOT + lifecycle + identity/drift | ✅ config SSOT; stats now loads YAML |
+| **3C** next batch (4–8 verified) | 📋 ready — see `reports/candidates/batch_3c_2026-08-27.md` |
+| **3D** service_score v1 | ✅ scaffold (heuristic); multi-source agreement later |
+
+### 3C candidate batch (verified BM 200)
+
+`anthropic` · `digitalocean` · `atlassian` · `slack` · `line` · `kakaotalk` · `adobe` · `oracle`
+
+### Fix applied
+
+- `scripts/statistics.py` now loads `config/intentional_unmaterialized.yaml` as SSOT (was hardcoded 4 entries → 9).
+
 ## QC P1
 
 | ID | Status |
@@ -34,5 +51,6 @@ See **`docs/RELEASE_AND_QC.md`**.
 
 ## Next (ops)
 
-- Observe soft warnings for 1–2 weeks before promoting any to hard gate  
-- Expand services only with verified upstream paths  
+1. Append 8 registry rules → trigger collect  
+2. Observe soft warnings 1–2 weeks before any hard-gate promotion  
+3. Expand only with verified upstream paths  
