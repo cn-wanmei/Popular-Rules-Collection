@@ -117,6 +117,7 @@ sources:
   - {path: rule/Clash/Teams/Teams.yaml, name: teams, local: Clash_Teams.yaml}
   - {path: rule/Clash/GoogleFCM/GoogleFCM.yaml, name: googlefcm, local: Clash_GoogleFCM.yaml}
   - {path: rule/Clash/PrivateTracker/PrivateTracker.yaml, name: private, local: Clash_PrivateTracker.yaml}
+  - {path: rule/Clash/Garena/Garena.yaml, name: garena, local: Clash_Garena.yaml}
 - id: metacubex
   name: MetaCubeX meta-rules-dat
   url: https://github.com/MetaCubeX/meta-rules-dat
