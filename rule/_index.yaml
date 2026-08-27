@@ -1,4 +1,4 @@
-generated_at: '2026-08-27T03:12:53.930447+00:00'
+generated_at: '2026-08-27T04:00:44.108775+00:00'
 categories:
   '12306':
     display_name: '12306'
@@ -58,7 +58,7 @@ categories:
       name: AdBlock
       path: rule/Privacy/AdBlock
       service_type: aggregate
-      domains: 401959
+      domains: 402068
       ips: 47
     - id: adblock-light
       name: AdBlock-Light
@@ -220,7 +220,7 @@ categories:
       name: Apple
       path: rule/Apple/Apple
       service_type: aggregate
-      domains: 231
+      domains: 232
       ips: 13
     - id: applemusic
       name: AppleMusic
@@ -328,7 +328,7 @@ categories:
       name: China
       path: rule/China/China
       service_type: aggregate
-      domains: 111510
+      domains: 111965
       ips: 5846
     - id: didi
       name: DiDi
@@ -594,7 +594,7 @@ categories:
       name: Proxy
       path: rule/Network/Proxy
       service_type: service
-      domains: 28215
+      domains: 28217
       ips: 0
     - id: speedtest
       name: Speedtest

@@ -7,9 +7,9 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 231 |
+| Domains | 232 |
 | IP/CIDR | 13 |
-| Mixed | 244 |
+| Mixed | 245 |
 | Sources | loyalsoldier, blackmatrix7, sukkaw |
 | Updated | 2026-08-27 |
 

@@ -7,9 +7,9 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 111510 |
+| Domains | 111965 |
 | IP/CIDR | 5846 |
-| Mixed | 117356 |
+| Mixed | 117811 |
 | Sources | loyalsoldier, blackmatrix7, sukkaw |
 | Updated | 2026-08-27 |
 

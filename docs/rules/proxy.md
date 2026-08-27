@@ -9,7 +9,7 @@
 | Service Type | service |
 | Tags | network |
 | 类型 | domain |
-| Domains | 28225 |
+| Domains | 28227 |
 | CIDR | 0 |
 | 最后更新 | 2026-08-27 |
 | Sources | loyalsoldier / sukkaw |

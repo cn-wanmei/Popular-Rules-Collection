@@ -1,7 +1,7 @@
 {
   "source": "loyalsoldier",
   "fetch": "github_raw",
-  "timestamp": "2026-08-27T02:58:09.498392+00:00",
+  "timestamp": "2026-08-27T03:44:58.611690+00:00",
   "files_ok": 14,
   "files_failed": 0,
   "empty_blocked": 0,
@@ -13,8 +13,8 @@
       "url": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt",
       "service": "adblock",
       "local": "sources/loyalsoldier/reject.txt",
-      "size": 5370093,
-      "sha256": "106bc6dfae726634b21bd9112da80f679419b71009af8e6a376915404f6992a5",
+      "size": 5379267,
+      "sha256": "28227772750f05088344e922d915296be8675b6ebff6a6506df13813b6094591",
       "status": "ok"
     },
     {
@@ -33,8 +33,8 @@
       "url": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt",
       "service": "apple",
       "local": "sources/loyalsoldier/apple.txt",
-      "size": 5387,
-      "sha256": "70f9f77e0022fc1e79d597d2fca5a3bbfa8bfe0f7542694b455f8a70004f5ba3",
+      "size": 5424,
+      "sha256": "a47d516880dcf65f51d3b40e6a71c33253e0774bdc4a7ec0a0d0a09a4dd522a2",
       "status": "ok"
     },
     {
@@ -53,8 +53,8 @@
       "url": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt",
       "service": "proxy",
       "local": "sources/loyalsoldier/proxy.txt",
-      "size": 617150,
-      "sha256": "fcc09ad6348f5e232111a2b1390295b494e01fbfae53877dbcf67ccd2fd9868b",
+      "size": 617186,
+      "sha256": "6915f0d04ab9a58aa6a371b86703a712be3747b7d766c308358a9b2eab553b13",
       "status": "ok"
     },
     {
@@ -63,8 +63,8 @@
       "url": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt",
       "service": "china",
       "local": "sources/loyalsoldier/direct.txt",
-      "size": 2308878,
-      "sha256": "555003affe662bc61f668aaa4efba5ede7b43921efc0331faeda33dc8d0852cf",
+      "size": 2318218,
+      "sha256": "a2261cd9df0e0a79efc8f4ea3c2db45a453045ac255356a8ee9ee08bcfbc9503",
       "status": "ok"
     },
     {
@@ -104,7 +104,7 @@
       "service": "proxy",
       "local": "sources/loyalsoldier/tld-not-cn.txt",
       "size": 11820,
-      "sha256": "330816293887779168d577a95f606c33702322654249e4c00051a3827830e310",
+      "sha256": "67ada67716332c39e0afea361dd4b2ad66f55d0a92d3d1b90a7a1d4d47283f62",
       "status": "ok"
     },
     {

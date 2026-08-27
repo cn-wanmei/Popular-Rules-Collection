@@ -7,9 +7,9 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 401959 |
+| Domains | 402068 |
 | IP/CIDR | 47 |
-| Mixed | 402006 |
+| Mixed | 402115 |
 | Sources | loyalsoldier, hagezi, anti-ad, sukkaw |
 | Updated | 2026-08-27 |
 

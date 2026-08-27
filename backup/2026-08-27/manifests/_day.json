@@ -1,12 +1,12 @@
 {
   "date": "2026-08-27",
-  "timestamp": "2026-08-27T02:58:12.160143+00:00",
+  "timestamp": "2026-08-27T03:45:02.851621+00:00",
   "registry_version": 3,
   "sources": [
     {
       "source": "blackmatrix7",
       "fetch": "github_raw",
-      "timestamp": "2026-08-27T02:58:08.561321+00:00",
+      "timestamp": "2026-08-27T03:44:57.278855+00:00",
       "files_ok": 94,
       "files_failed": 4,
       "empty_blocked": 0,
@@ -995,7 +995,7 @@
     {
       "source": "loyalsoldier",
       "fetch": "github_raw",
-      "timestamp": "2026-08-27T02:58:09.498392+00:00",
+      "timestamp": "2026-08-27T03:44:58.611690+00:00",
       "files_ok": 14,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -1007,8 +1007,8 @@
           "url": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt",
           "service": "adblock",
           "local": "sources/loyalsoldier/reject.txt",
-          "size": 5370093,
-          "sha256": "106bc6dfae726634b21bd9112da80f679419b71009af8e6a376915404f6992a5",
+          "size": 5379267,
+          "sha256": "28227772750f05088344e922d915296be8675b6ebff6a6506df13813b6094591",
           "status": "ok"
         },
         {
@@ -1027,8 +1027,8 @@
           "url": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt",
           "service": "apple",
           "local": "sources/loyalsoldier/apple.txt",
-          "size": 5387,
-          "sha256": "70f9f77e0022fc1e79d597d2fca5a3bbfa8bfe0f7542694b455f8a70004f5ba3",
+          "size": 5424,
+          "sha256": "a47d516880dcf65f51d3b40e6a71c33253e0774bdc4a7ec0a0d0a09a4dd522a2",
           "status": "ok"
         },
         {
@@ -1047,8 +1047,8 @@
           "url": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt",
           "service": "proxy",
           "local": "sources/loyalsoldier/proxy.txt",
-          "size": 617150,
-          "sha256": "fcc09ad6348f5e232111a2b1390295b494e01fbfae53877dbcf67ccd2fd9868b",
+          "size": 617186,
+          "sha256": "6915f0d04ab9a58aa6a371b86703a712be3747b7d766c308358a9b2eab553b13",
           "status": "ok"
         },
         {
@@ -1057,8 +1057,8 @@
           "url": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt",
           "service": "china",
           "local": "sources/loyalsoldier/direct.txt",
-          "size": 2308878,
-          "sha256": "555003affe662bc61f668aaa4efba5ede7b43921efc0331faeda33dc8d0852cf",
+          "size": 2318218,
+          "sha256": "a2261cd9df0e0a79efc8f4ea3c2db45a453045ac255356a8ee9ee08bcfbc9503",
           "status": "ok"
         },
         {
@@ -1098,7 +1098,7 @@
           "service": "proxy",
           "local": "sources/loyalsoldier/tld-not-cn.txt",
           "size": 11820,
-          "sha256": "330816293887779168d577a95f606c33702322654249e4c00051a3827830e310",
+          "sha256": "67ada67716332c39e0afea361dd4b2ad66f55d0a92d3d1b90a7a1d4d47283f62",
           "status": "ok"
         },
         {
@@ -1148,7 +1148,7 @@
     {
       "source": "anti-ad",
       "fetch": "github_raw",
-      "timestamp": "2026-08-27T02:58:10.202454+00:00",
+      "timestamp": "2026-08-27T03:44:59.514949+00:00",
       "files_ok": 3,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -1191,7 +1191,7 @@
     {
       "source": "hagezi",
       "fetch": "github_raw",
-      "timestamp": "2026-08-27T02:58:10.834885+00:00",
+      "timestamp": "2026-08-27T03:44:59.950324+00:00",
       "files_ok": 3,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -1234,7 +1234,7 @@
     {
       "source": "sukkaw",
       "fetch": "cdn",
-      "timestamp": "2026-08-27T02:58:11.577478+00:00",
+      "timestamp": "2026-08-27T03:45:01.339963+00:00",
       "files_ok": 8,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -1327,7 +1327,7 @@
     {
       "source": "metacubex",
       "fetch": "github_raw",
-      "timestamp": "2026-08-27T02:58:12.159915+00:00",
+      "timestamp": "2026-08-27T03:45:02.851377+00:00",
       "files_ok": 8,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -1340,7 +1340,7 @@
           "service": "alibaba",
           "local": "sources/metacubex/geosite_alibaba.list",
           "size": 7962,
-          "sha256": "976d676a80cfccf7145ce4e7d7188c7a18ee64e64011d4ad781db1fc09e58190",
+          "sha256": "9280988b2179ccb626e1a7fb92e6afd697ecacf6730be1ec5091a3383a4c4b98",
           "status": "ok"
         },
         {
@@ -1360,7 +1360,7 @@
           "service": "tencent",
           "local": "sources/metacubex/geosite_tencent.list",
           "size": 11324,
-          "sha256": "d9fe0740766229d2c138692d5b6d17eb251477f84bc353e9eff159d9d50ca9c6",
+          "sha256": "3dec36f210ec987bb8b2b3435382e2ad2055879616391609b15b149c83b771d4",
           "status": "ok"
         },
         {
@@ -1380,7 +1380,7 @@
           "service": "bytedance",
           "local": "sources/metacubex/geosite_bytedance.list",
           "size": 16263,
-          "sha256": "d6314c589c8b24d6266d1e05b08c74fd355d248f539d1a76d10dc703fc459866",
+          "sha256": "2b6613fef437bba4887afeb6fa367b439a6079ccdb3804906f6360de52c0806b",
           "status": "ok"
         },
         {

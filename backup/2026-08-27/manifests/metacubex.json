@@ -1,7 +1,7 @@
 {
   "source": "metacubex",
   "fetch": "github_raw",
-  "timestamp": "2026-08-27T02:58:12.159915+00:00",
+  "timestamp": "2026-08-27T03:45:02.851377+00:00",
   "files_ok": 8,
   "files_failed": 0,
   "empty_blocked": 0,
@@ -14,7 +14,7 @@
       "service": "alibaba",
       "local": "sources/metacubex/geosite_alibaba.list",
       "size": 7962,
-      "sha256": "976d676a80cfccf7145ce4e7d7188c7a18ee64e64011d4ad781db1fc09e58190",
+      "sha256": "9280988b2179ccb626e1a7fb92e6afd697ecacf6730be1ec5091a3383a4c4b98",
       "status": "ok"
     },
     {
@@ -34,7 +34,7 @@
       "service": "tencent",
       "local": "sources/metacubex/geosite_tencent.list",
       "size": 11324,
-      "sha256": "d9fe0740766229d2c138692d5b6d17eb251477f84bc353e9eff159d9d50ca9c6",
+      "sha256": "3dec36f210ec987bb8b2b3435382e2ad2055879616391609b15b149c83b771d4",
       "status": "ok"
     },
     {
@@ -54,7 +54,7 @@
       "service": "bytedance",
       "local": "sources/metacubex/geosite_bytedance.list",
       "size": 16263,
-      "sha256": "d6314c589c8b24d6266d1e05b08c74fd355d248f539d1a76d10dc703fc459866",
+      "sha256": "2b6613fef437bba4887afeb6fa367b439a6079ccdb3804906f6360de52c0806b",
       "status": "ok"
     },
     {

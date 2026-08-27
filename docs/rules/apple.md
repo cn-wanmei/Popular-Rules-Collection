@@ -9,7 +9,7 @@
 | Service Type | aggregate |
 | Tags | apple |
 | 类型 | mixed |
-| Domains | 238 |
+| Domains | 239 |
 | CIDR | 13 |
 | 最后更新 | 2026-08-27 |
 | Sources | loyalsoldier / blackmatrix7 / sukkaw |

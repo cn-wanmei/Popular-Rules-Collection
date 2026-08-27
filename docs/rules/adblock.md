@@ -9,7 +9,7 @@
 | Service Type | aggregate |
 | Tags | privacy |
 | 类型 | mixed |
-| Domains | 402175 |
+| Domains | 402284 |
 | CIDR | 47 |
 | 最后更新 | 2026-08-27 |
 | Sources | loyalsoldier / hagezi / anti-ad / sukkaw |

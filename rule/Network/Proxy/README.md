@@ -7,9 +7,9 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 28215 |
+| Domains | 28217 |
 | IP/CIDR | 0 |
-| Mixed | 28215 |
+| Mixed | 28217 |
 | Sources | loyalsoldier, sukkaw |
 | Updated | 2026-08-27 |
 
