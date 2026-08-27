@@ -8,10 +8,39 @@
 |-------|--------|
 | Collect → Normalize → Canonical → Builder ×7 | ✅ structural validation |
 | Generated client outputs | ✅ production-usable |
-| Semantic / historical validation | ✅ P1-0…P1-3 landed (soft) |
+| Semantic / historical validation | ✅ P1-0…P1-3 + engineering P0–P2 |
 
 Authoritative artifacts: `generated/{client}/` on `main`.  
 Do **not** hand-edit `rule/`.
+
+---
+
+## Daily Service Coverage (definition)
+
+**Goal is not “every brand name has its own ruleset file”.**
+
+A popular daily service is **covered** when any of:
+
+1. **Materialized** — dedicated rules in `database/` + `generated/{client}/`
+2. **Aggregate-covered** — parent ecosystem ruleset is sufficient (e.g. Taobao → Alibaba, Drive → Google)
+3. **Intentional-unmaterialized** — listed in `config/intentional_unmaterialized.yaml` with a reason code
+
+```text
+Daily Coverage = (materialized + intentional_unmaterialized) / registered
+```
+
+Raw `coverage` (materialized / registered) remains for engineering; **daily_coverage** is the product KPI.
+
+### Service expansion gate (P2-4)
+
+New Service requires **all** of:
+
+1. Clear user value beyond an existing aggregate
+2. Verified public upstream (BM / MetaCubeX / equivalent)
+3. Registry path HTTP 200 at registration time
+4. Identity tokens if BM Clash `# NAME:` is non-obvious
+
+Otherwise: intentional entry only — **no fake domains**.
 
 ---
 
@@ -20,33 +49,47 @@ Do **not** hand-edit `rule/`.
 1. Subscribe to `generated/{mihomo|sing-box|surge|shadowrocket|quantumult-x|egern|loon}/{id}.*`
 2. GitHub Raw is source of truth; CDN is acceleration only
 3. Typical interval: 86400s
-4. Only **materialized** services resolve; see intentional unmaterialized
+4. Only **materialized** services resolve; intentional means “not a gap, no dedicated file by design”
 
 ### KPI (quality ≠ line count)
 
-- Service / Ecosystem coverage & materialization rate  
-- Source Health (`healthy` / `degraded`, `files_ok` / `files_failed`)  
-- Builder Coverage (×7)  
-- Validation (schema / validate / builder_validate)  
+- **Daily coverage** & materialization rate  
+- Source Health split: `configured` / `enabled` / `collected_this_run` / `historical_in_health`  
+- Builder Coverage (**×7**, including Loon)  
+- Validation (`schema_validate` / `validate` / `builder_validate` = pass|fail)  
 - Identity warnings / Rule-count drift / Quality flags (soft)
 
 `domain` vs `domain_suffix` stay distinct in the Canonical loader.
 
 ### Intentional unmaterialized
 
-SSOT: **`config/intentional_unmaterialized.yaml`** (loaded by `statistics.py` / `source_snapshot.py`).
+SSOT: **`config/intentional_unmaterialized.yaml`**
 
-```text
-Primary ✓  +  Registry ✗  →  intentional_unmaterialized
-```
+| code | meaning |
+|------|---------|
+| `NO_UPSTREAM` | no verified dedicated ruleset |
+| `COVERED_BY_AGGREGATE` | use parent ecosystem rules |
+| `MAPS_TO` | alias of another service id |
+| `DEFERRED_PROFILE` | profile intentionally postponed |
+| `KEYWORD_ONLY` | no usable domain set |
+| `SOURCE_DRIFT` | upstream path moved; pending registry fix |
 
-| id | reason |
-|----|--------|
-| mistral / gcp / supabase | no_verified_upstream |
-| roblox / minecraft | no_verified_upstream |
-| blizzard | maps_to_battlenet |
-| stripe | keyword_only_empty_domain_set |
-| adblock-light / adblock-pro | hagezi_profile_deferred |
+---
+
+## Release metadata semantics
+
+`reports/latest_release.json` (and `reports/<date>/release.json`):
+
+| field | meaning |
+|-------|---------|
+| `commit` | **pipeline input SHA** when `release_snapshot.py` ran (before collect’s git commit) |
+| `commit_role` | always `pipeline_input` |
+| `validation.*` | `pass` / `fail` / `unknown` from gate artifacts |
+
+After collect pushes, **HEAD advances by one commit** that *contains* this release file.  
+Therefore `latest_release.commit` may lag `HEAD` by one pipeline commit — **by design**, not drift.
+
+Do not treat `latest_release.commit == HEAD` as a hard requirement unless a post-commit rewrite job is added.
 
 ---
 
@@ -67,64 +110,69 @@ Primary long-term risk: **Source Drift**, not Builder.
 
 ## Pipeline
 
+### Primary: Collect Upstream (`collect.yml`)
+
 ```text
 Upstream → collect → normalize → database/
-  → rule_loader → build ×7 → generated/
-  → schema_validate (P1-0) → validate (P1-3 quality warns)
-  → builder_validate
-  → identity_validate (P1-1 soft) → rule_count_drift (P1-2 soft)
-  → statistics → generate_rule_pages --strict → size_gate
-  → commit → git pull --rebase origin main → push
+  → rule_loader → build ×7 (incl. loon) → generated/
+  → schema_validate (hard, writes schema_validate.json)
+  → validate (hard, writes validation_report.json)
+  → builder_validate (hard)
+  → identity / drift / quality (soft)
+  → statistics → release_snapshot → …
+  → commit → git pull --rebase → push
 ```
+
+### Optional: Build Client Rules (`build.yml`)
+
+Standalone rebuild of `generated/`. Must also run **Builder ×7 including Loon**, then:
+
+```text
+build ×7 → schema_validate → validate → builder_validate → commit
+```
+
+### Secondary: Validate workflow
+
+Triggers on **Build Client Rules** and **Collect Upstream** completion, plus PR / manual.
 
 Hard gates stay fail-closed. Soft QC never hides Source Health degradation.
 
 ---
 
-## QC P1 (implemented)
+## QC modules
 
 | ID | Module | Behavior |
 |----|--------|----------|
-| **P1-0** | `schema_validate.py` | `id==filename`, canonical types, non-empty values — **hard** |
-| **P1-1** | `identity_validate.py` + `config/identity_hints.yaml` | BM `# NAME:` vs expected tokens — **soft** |
-| **P1-2** | `rule_count_drift.py` | per-service ±20/50/80% vs prior day — **soft** |
-| **P1-3** | `validate.py` `domain_quality_issues` | bare TLD / ultra-short / pathological — **soft** |
+| **P1-0** | `schema_validate.py` | `id==filename`, canonical types — **hard** + JSON artifact |
+| **P1-1** | `identity_validate.py` | BM `# NAME:` tokens — **soft** |
+| **P1-2** | `rule_count_drift.py` | ±20/50/80% vs prior day — **soft** |
+| **P1-3** | `quality_validate.py` / validate domain quality | bare TLD / empty generated / large sets — **soft** |
+| **P0** | `build.yml` Loon + pre-commit validate | contract = ×7 |
+| **P0** | `release_snapshot` real validation | no long-lived `unknown` when artifacts exist |
 
 ### Non-goals
 
 - ❌ Builder / rule_loader / Primary rewrites for coverage optics  
 - ❌ Collector path fuzzy matching  
 - ❌ Fake upstream for intentional_unmaterialized  
-- ❌ Mega service dumps (50–100) without upstream audit  
+- ❌ Mega service dumps without upstream audit  
 
 ---
 
-## Gaming expansion (2B-4)
+## Engineering changelog (P0–P2, 2026-08-27)
 
-| id | upstream | status |
-|----|----------|--------|
-| garena | BM `rule/Clash/Garena/Garena.yaml` | registered (materialize on next collect) |
-| roblox | — | intentional_unmaterialized |
-| minecraft | — | intentional_unmaterialized |
-
----
-
-## Phase 3C next batch (verified BM only)
-
-See `reports/candidates/batch_3c_2026-08-27.md`.
-
-| id | category | BM path |
-|----|----------|---------|
-| anthropic | ai | rule/Clash/Anthropic/Anthropic.yaml |
-| digitalocean | developer | rule/Clash/DigitalOcean/DigitalOcean.yaml |
-| atlassian | developer | rule/Clash/Atlassian/Atlassian.yaml |
-| slack | developer | rule/Clash/Slack/Slack.yaml |
-| line | social | rule/Clash/Line/Line.yaml |
-| kakaotalk | social | rule/Clash/KakaoTalk/KakaoTalk.yaml |
-| adobe | other | rule/Clash/Adobe/Adobe.yaml |
-| oracle | developer | rule/Clash/Oracle/Oracle.yaml |
-
-Apply: append to `sources/registry.yaml` → collect → soft QC.
+| ID | Change |
+|----|--------|
+| P0-1 | `build.yml`: add `build_loon.py` |
+| P0-2 | `release_snapshot` + gate JSON artifacts; commit semantics documented |
+| P0-3 | Daily Coverage definition locked in this doc |
+| P1-1 | `build.yml`: validate before commit |
+| P1-2 | `validate.yml`: also on Collect Upstream |
+| P1-4 | quality: empty generated + large-set hints |
+| P2-1 | statistics: configured / enabled / collected / historical |
+| P2-2 | intentional `code` enum |
+| P2-3 | unexpected_missing → intentional entries |
+| P2-4 | expansion gate above |
 
 ---
 
