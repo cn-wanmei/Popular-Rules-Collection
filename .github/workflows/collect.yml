@@ -47,11 +47,11 @@ jobs:
       - run: python scripts/build_quantumultx.py
       - run: python scripts/build_egern.py
       - run: python scripts/build_loon.py
+      # --- data correctness gates (HARD) ---
       - run: python scripts/schema_validate.py
       - run: python scripts/validate.py
-        continue-on-error: true
       - run: python scripts/builder_validate.py
-        continue-on-error: true
+      # --- derived artifacts (SOFT) ---
       - run: python scripts/statistics.py
         continue-on-error: true
       - run: python scripts/generate_links.py
