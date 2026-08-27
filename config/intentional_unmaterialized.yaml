@@ -1,0 +1,13 @@
+# Single source of truth for intentional non-materialization (Phase 3B)
+version: 1
+updated: "2026-08-27"
+services:
+  mistral: { reason: no_verified_upstream }
+  gcp: { reason: no_verified_upstream }
+  supabase: { reason: no_verified_upstream }
+  roblox: { reason: no_verified_upstream }
+  minecraft: { reason: no_verified_upstream }
+  blizzard: { reason: maps_to_battlenet }
+  stripe: { reason: keyword_only_empty_domain_set }
+  adblock-light: { reason: hagezi_profile_deferred }
+  adblock-pro: { reason: hagezi_profile_deferred }
