@@ -1,6 +1,6 @@
 # Registry V3 — Source + Fetcher + Collection Manifest
 version: 3
-last_updated: '2026-08-27'
+last_updated: '2026-08-28'
 sources:
 - id: blackmatrix7
   name: BlackMatrix7 ios_rule_script
@@ -145,6 +145,17 @@ sources:
   - {path: rule/Clash/Deezer/Deezer.yaml, name: deezer, local: Clash_Deezer.yaml}
   - {path: rule/Clash/Peacock/Peacock.yaml, name: peacock, local: Clash_Peacock.yaml}
   - {path: rule/Clash/YouTubeMusic/YouTubeMusic.yaml, name: youtubemusic, local: Clash_YouTubeMusic.yaml}
+  - {path: rule/Clash/Huawei/Huawei.yaml, name: huawei, local: Clash_Huawei.yaml}
+  - {path: rule/Clash/XiaoMi/XiaoMi.yaml, name: xiaomi, local: Clash_XiaoMi.yaml}
+  - {path: rule/Clash/OPPO/OPPO.yaml, name: oppo, local: Clash_OPPO.yaml}
+  - {path: rule/Clash/Vivo/Vivo.yaml, name: vivo, local: Clash_Vivo.yaml}
+  - {path: rule/Clash/KugouKuwo/KugouKuwo.yaml, name: kugoukuwo, local: Clash_KugouKuwo.yaml}
+  - {path: rule/Clash/Naver/Naver.yaml, name: naver, local: Clash_Naver.yaml}
+  - {path: rule/Clash/Wikipedia/Wikipedia.yaml, name: wikipedia, local: Clash_Wikipedia.yaml}
+  - {path: rule/Clash/Sina/Sina.yaml, name: sina, local: Clash_Sina.yaml}
+  - {path: rule/Clash/BBC/BBC.yaml, name: bbc, local: Clash_BBC.yaml}
+  - {path: rule/Clash/Emby/Emby.yaml, name: emby, local: Clash_Emby.yaml}
+  - {path: rule/Clash/Scholar/Scholar.yaml, name: scholar, local: Clash_Scholar.yaml}
 - id: metacubex
   name: MetaCubeX meta-rules-dat
   url: https://github.com/MetaCubeX/meta-rules-dat
@@ -194,3 +205,8 @@ sources:
   - {path: geo/geosite/wise.list, name: wise, local: geosite_wise.list}
   - {path: geo/geosite/tidal.list, name: tidal, local: geosite_tidal.list}
   - {path: geo/geosite/amap.list, name: amap, local: geosite_amap.list}
+  - {path: geo/geosite/dewu.list, name: dewu, local: geosite_dewu.list}
+  - {path: geo/geosite/roblox.list, name: roblox, local: geosite_roblox.list}
+  - {path: geo/geosite/mojang.list, name: minecraft, local: geosite_mojang.list}
+  - {path: geo/geosite/elevenlabs.list, name: elevenlabs, local: geosite_elevenlabs.list}
+  - {path: geo/geosite/snap.list, name: snapchat, local: geosite_snap.list}
