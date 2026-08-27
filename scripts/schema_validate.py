@@ -1,14 +1,81 @@
 #!/usr/bin/env python3
-"""schema_validate.py — categories + service_primary + aggregate children + strict path rules."""
+"""schema_validate.py — Primary mapping + database service rule schema (P1-0).
+
+categories + service_primary + aggregate children
++ database/services/{id}.yaml: id==stem, canonical types, non-empty values
+"""
 from __future__ import annotations
+
 import sys
 from pathlib import Path
+
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 CAT = ROOT / "config" / "categories.yaml"
 PRIM = ROOT / "config" / "service_primary.yaml"
 SERVICES = ROOT / "database" / "services"
+DOMAINS = ROOT / "database" / "domains"
+IPS = ROOT / "database" / "ips"
+
+CANONICAL_TYPES = frozenset(
+    {
+        "domain",
+        "domain_suffix",
+        "domain_keyword",
+        "ip_cidr",
+        "ip_cidr6",
+        "process_name",
+    }
+)
+
+
+def validate_service_file(path: Path, errors: list[str], warnings: list[str]) -> None:
+    """P1-0: structural integrity of one database service YAML."""
+    sid = path.stem
+    try:
+        doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    except Exception as e:
+        errors.append(f"{sid}: invalid YAML ({e})")
+        return
+    if not isinstance(doc, dict):
+        errors.append(f"{sid}: document must be a mapping")
+        return
+
+    rid = doc.get("id")
+    if not rid:
+        errors.append(f"{sid}: missing id")
+    elif str(rid) != sid:
+        errors.append(f"{sid}: id '{rid}' != filename stem")
+
+    rules = doc.get("rules")
+    if rules is None:
+        warnings.append(f"{sid}: missing rules key (expected list, possibly empty)")
+        rules = []
+    elif not isinstance(rules, list):
+        errors.append(f"{sid}: rules must be a list")
+        return
+
+    for i, r in enumerate(rules):
+        if not isinstance(r, dict):
+            errors.append(f"{sid}: rules[{i}] must be object")
+            continue
+        t = (r.get("type") or "").lower().strip()
+        v = r.get("value")
+        if not t:
+            errors.append(f"{sid}: rules[{i}] missing type")
+        elif t not in CANONICAL_TYPES:
+            errors.append(f"{sid}: rules[{i}] type '{t}' not in canonical set")
+        if v is None or (isinstance(v, str) and not v.strip()):
+            errors.append(f"{sid}: rules[{i}] empty value")
+
+    has_sidecar = False
+    if (DOMAINS / f"{sid}.txt").exists() and (DOMAINS / f"{sid}.txt").stat().st_size > 0:
+        has_sidecar = True
+    if (IPS / f"{sid}.txt").exists() and (IPS / f"{sid}.txt").stat().st_size > 0:
+        has_sidecar = True
+    if not rules and not has_sidecar:
+        warnings.append(f"{sid}: empty rules and no domains/ips sidecar")
 
 
 def main() -> int:
@@ -54,9 +121,10 @@ def main() -> int:
                         errors.append(f"{sid}: child '{c}' not defined in service_primary")
                     else:
                         child = services[c]
-                        # child should prefer same ecosystem or documented parent
                         if child.get("parent") and child.get("parent") != sid:
-                            warnings.append(f"{sid}: child {c} parent={child.get('parent')} mismatch")
+                            warnings.append(
+                                f"{sid}: child {c} parent={child.get('parent')} mismatch"
+                            )
         elif children:
             errors.append(f"{sid}: service_type=service must not have children")
         parent = meta.get("parent")
@@ -66,14 +134,15 @@ def main() -> int:
             elif services[parent].get("service_type") != "aggregate":
                 errors.append(f"{sid}: parent '{parent}' is not aggregate")
 
-    # database services should be mapped when present
+    # database services: primary mapping + P1-0 rule schema
     if SERVICES.is_dir():
-        for p in SERVICES.glob("*.yaml"):
+        for p in sorted(SERVICES.glob("*.yaml")):
             if p.name.startswith("example"):
                 continue
             sid = p.stem
             if sid not in services:
                 errors.append(f"database service '{sid}' missing from service_primary.yaml")
+            validate_service_file(p, errors, warnings)
 
     print(f"[schema_validate] errors={len(errors)} warnings={len(warnings)}")
     for e in errors[:40]:
