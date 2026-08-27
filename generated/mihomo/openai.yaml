@@ -6,7 +6,6 @@ payload:
 - openaicomproductionae4b.blob.core.windows.net
 - production-openaicom-storage.azureedge.net
 - static.cloudflareinsights.com
-- DOMAIN-KEYWORD,openai
 - +.ai.com
 - +.algolia.net
 - +.api.statsig.com
@@ -31,5 +30,13 @@ payload:
 - +.sentry.io
 - +.stripe.com
 - +.turn.livekit.cloud
-- IP-CIDR,24.199.123.28/32
-- IP-CIDR,64.23.132.171/32
+- +.browser-intake-datadoghq.com
+- +.chat.openai.com.cdn.cloudflare.net
+- +.openai-api.arkoselabs.com
+- +.openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+- +.openaicomproductionae4b.blob.core.windows.net
+- +.production-openaicom-storage.azureedge.net
+- +.static.cloudflareinsights.com
+- "DOMAIN-KEYWORD,openai"
+- "IP-CIDR,24.199.123.28/32"
+- "IP-CIDR,64.23.132.171/32"

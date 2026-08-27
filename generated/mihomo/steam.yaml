@@ -1,7 +1,4 @@
 payload:
-- DOMAIN-KEYWORD,steambroadcast
-- DOMAIN-KEYWORD,steamstore
-- DOMAIN-KEYWORD,steamuserimages
 - +.cdn-ali.content.steamchina.com
 - +.cdn-qc.content.steamchina.com
 - +.cdn-ws.content.steamchina.com
@@ -53,3 +50,6 @@ payload:
 - +.underlords.com
 - +.valvesoftware.com
 - +.wmsjsteam.com
+- "DOMAIN-KEYWORD,steambroadcast"
+- "DOMAIN-KEYWORD,steamstore"
+- "DOMAIN-KEYWORD,steamuserimages"

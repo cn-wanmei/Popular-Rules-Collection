@@ -8,10 +8,14 @@ service_type: aggregate
 parent: null
 children:
 - icbc
-- abc
 - ccb
+- abc
 - boc
 - cmb
+- psbc
+- ceb
+- bocom
+- pingan
 rule:
   has_domain: true
   has_ip: false
@@ -34,5 +38,5 @@ clients:
 - Quantumult X
 - Egern
 - Loon
-updated_at: '2026-08-26'
+updated_at: '2026-08-27'
 auto_generated: true

@@ -14,8 +14,11 @@ children:
 - bilibili
 - weibo
 - zhihu
-- iqiyi
 - kuaishou
+- sina
+- iqiyi
+- kugoukuwo
+- steamcn
 rule:
   has_domain: true
   has_ip: true
@@ -26,8 +29,8 @@ generated_files:
   ip: china_ip.list
 statistics:
   domains: 111510
-  ipv4_or_cidr: 5845
-  mixed: 117355
+  ipv4_or_cidr: 5846
+  mixed: 117356
 sources:
 - loyalsoldier
 - blackmatrix7
@@ -40,5 +43,5 @@ clients:
 - Quantumult X
 - Egern
 - Loon
-updated_at: '2026-08-26'
+updated_at: '2026-08-27'
 auto_generated: true

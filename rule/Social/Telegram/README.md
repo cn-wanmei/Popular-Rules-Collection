@@ -11,7 +11,7 @@
 | IP/CIDR | 21 |
 | Mixed | 46 |
 | Sources | loyalsoldier, blackmatrix7, sukkaw |
-| Updated | 2026-08-26 |
+| Updated | 2026-08-27 |
 
 ## 基础规则（Classical）
 

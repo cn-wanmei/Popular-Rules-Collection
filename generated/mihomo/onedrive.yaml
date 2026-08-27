@@ -1,7 +1,4 @@
 payload:
-- DOMAIN-KEYWORD,1drv
-- DOMAIN-KEYWORD,onedrive
-- DOMAIN-KEYWORD,skydrive
 - +.1drv.com
 - +.livefilestore.com
 - +.microsoftpersonalcontent.com
@@ -15,3 +12,6 @@ payload:
 - +.spoprod-a.akamaihd.net
 - +.storage.live.com
 - +.storage.msn.com
+- "DOMAIN-KEYWORD,1drv"
+- "DOMAIN-KEYWORD,onedrive"
+- "DOMAIN-KEYWORD,skydrive"

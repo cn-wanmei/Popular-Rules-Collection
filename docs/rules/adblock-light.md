@@ -7,9 +7,9 @@
 | Rule ID | `adblock-light` |
 | 分类 | adblock |
 | 类型 | domain |
-| Domains | 42107 |
+| Domains | 42106 |
 | CIDR | 0 |
-| 最后更新 | 2026-08-26 |
+| 最后更新 | 2026-08-27 |
 | Sources | hagezi |
 | Confidence | HIGH |
 

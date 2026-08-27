@@ -8,10 +8,10 @@
 | 项目 | 数值 |
 |------|------|
 | Domains | 111510 |
-| IP/CIDR | 5845 |
-| Mixed | 117355 |
+| IP/CIDR | 5846 |
+| Mixed | 117356 |
 | Sources | loyalsoldier, blackmatrix7, sukkaw |
-| Updated | 2026-08-26 |
+| Updated | 2026-08-27 |
 
 ## 基础规则（Classical）
 

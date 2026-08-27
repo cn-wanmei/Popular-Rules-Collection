@@ -11,7 +11,7 @@
 | IP/CIDR | 28 |
 | Mixed | 165 |
 | Sources | blackmatrix7, metacubex |
-| Updated | 2026-08-26 |
+| Updated | 2026-08-27 |
 
 ## 基础规则（Classical）
 

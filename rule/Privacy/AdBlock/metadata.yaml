@@ -17,9 +17,9 @@ generated_files:
   domain: adblock_domain.list
   ip: adblock_ip.list
 statistics:
-  domains: 401768
+  domains: 401959
   ipv4_or_cidr: 47
-  mixed: 401815
+  mixed: 402006
 sources:
 - loyalsoldier
 - hagezi
@@ -33,5 +33,5 @@ clients:
 - Quantumult X
 - Egern
 - Loon
-updated_at: '2026-08-26'
+updated_at: '2026-08-27'
 auto_generated: true

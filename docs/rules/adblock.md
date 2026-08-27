@@ -7,9 +7,9 @@
 | Rule ID | `adblock` |
 | 分类 | adblock |
 | 类型 | mixed |
-| Domains | 401984 |
+| Domains | 402175 |
 | CIDR | 47 |
-| 最后更新 | 2026-08-26 |
+| 最后更新 | 2026-08-27 |
 | Sources | loyalsoldier / hagezi / anti-ad / sukkaw |
 | Confidence | HIGH |
 

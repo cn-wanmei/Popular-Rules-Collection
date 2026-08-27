@@ -1,10 +1,5 @@
 payload:
 - voice.telephony.goog
-- DOMAIN-KEYWORD,appspot
-- DOMAIN-KEYWORD,blogspot
-- DOMAIN-KEYWORD,gmail
-- DOMAIN-KEYWORD,google
-- DOMAIN-KEYWORD,recaptcha
 - +.0emm.com
 - +.1e100.net
 - +.1ucrs.com
@@ -744,8 +739,14 @@ payload:
 - +.xplr.co
 - +.zukunftswerkstatt.de
 - +.zynamics.com
-- IP-CIDR,172.110.32.0/21
-- IP-CIDR,173.194.0.0/16
-- IP-CIDR,216.73.80.0/20
-- IP-CIDR,74.125.0.0/16
-- IP-CIDR6,2620:120:e000::/40
+- +.voice.telephony.goog
+- "DOMAIN-KEYWORD,appspot"
+- "DOMAIN-KEYWORD,blogspot"
+- "DOMAIN-KEYWORD,gmail"
+- "DOMAIN-KEYWORD,google"
+- "DOMAIN-KEYWORD,recaptcha"
+- "IP-CIDR,172.110.32.0/21"
+- "IP-CIDR,173.194.0.0/16"
+- "IP-CIDR,216.73.80.0/20"
+- "IP-CIDR,74.125.0.0/16"
+- "IP-CIDR6,2620:120:e000::/40"

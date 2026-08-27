@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-27",
+  "sources": 6,
+  "services": 100,
+  "domains": 823477,
+  "cidr": 6286,
+  "conflicts": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 4951
+  },
+  "build": {
+    "mihomo": "success",
+    "sing-box": "success",
+    "surge": "success",
+    "shadowrocket": "success",
+    "quantumult-x": "success",
+    "egern": "success"
+  },
+  "source_health": {
+    "sukkaw": "healthy",
+    "blackmatrix7": "degraded",
+    "loyalsoldier": "healthy",
+    "anti-ad": "healthy",
+    "hagezi": "healthy",
+    "metacubex": "healthy"
+  }
+}

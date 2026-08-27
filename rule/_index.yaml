@@ -1,4 +1,4 @@
-generated_at: '2026-08-26T13:50:27.258654+00:00'
+generated_at: '2026-08-27T00:57:52.362380+00:00'
 categories:
   '12306':
     display_name: '12306'
@@ -58,83 +58,35 @@ categories:
       name: AdBlock
       path: rule/Privacy/AdBlock
       service_type: aggregate
-      domains: 401768
+      domains: 401959
       ips: 47
     - id: adblock-light
       name: AdBlock-Light
       path: rule/Privacy/AdBlock-Light
       service_type: service
-      domains: 42107
+      domains: 42106
       ips: 0
     - id: adblock-pro
       name: AdBlock-Pro
       path: rule/Privacy/AdBlock-Pro
       service_type: service
-      domains: 225958
+      domains: 226095
       ips: 0
-  developer:
-    display_name: Developer
-    order: 160
+  other:
+    display_name: Other
+    order: 999
     rules:
     - id: adobe
       name: Adobe
-      path: rule/Developer/Adobe
+      path: rule/Other/Adobe
       service_type: service
       domains: 136
       ips: 0
-    - id: akamai
-      name: Akamai
-      path: rule/Developer/Akamai
-      service_type: service
-      domains: 6
-      ips: 0
-    - id: cloudflare
-      name: Cloudflare
-      path: rule/Developer/Cloudflare
-      service_type: service
-      domains: 43
-      ips: 22
-    - id: developer
-      name: Developer
-      path: rule/Developer/Developer
-      service_type: aggregate
-      domains: 70
-      ips: 0
-    - id: docker
-      name: Docker
-      path: rule/Developer/Docker
-      service_type: service
-      domains: 7
-      ips: 0
     - id: dropbox
       name: Dropbox
-      path: rule/Developer/Dropbox
+      path: rule/Other/Dropbox
       service_type: service
       domains: 17
-      ips: 0
-    - id: figma
-      name: Figma
-      path: rule/Developer/Figma
-      service_type: service
-      domains: 1
-      ips: 0
-    - id: gitlab
-      name: GitLab
-      path: rule/Developer/GitLab
-      service_type: service
-      domains: 6
-      ips: 0
-    - id: notion
-      name: Notion
-      path: rule/Developer/Notion
-      service_type: service
-      domains: 6
-      ips: 0
-    - id: vercel
-      name: Vercel
-      path: rule/Developer/Vercel
-      service_type: service
-      domains: 27
       ips: 0
   ai:
     display_name: AI
@@ -170,6 +122,58 @@ categories:
       service_type: service
       domains: 31
       ips: 2
+  developer:
+    display_name: Developer
+    order: 160
+    rules:
+    - id: akamai
+      name: Akamai
+      path: rule/Developer/Akamai
+      service_type: service
+      domains: 6
+      ips: 0
+    - id: cloudflare
+      name: Cloudflare
+      path: rule/Developer/Cloudflare
+      service_type: service
+      domains: 43
+      ips: 22
+    - id: developer
+      name: Developer
+      path: rule/Developer/Developer
+      service_type: aggregate
+      domains: 70
+      ips: 0
+    - id: docker
+      name: Docker
+      path: rule/Developer/Docker
+      service_type: service
+      domains: 7
+      ips: 0
+    - id: figma
+      name: Figma
+      path: rule/Developer/Figma
+      service_type: service
+      domains: 1
+      ips: 0
+    - id: gitlab
+      name: GitLab
+      path: rule/Developer/GitLab
+      service_type: service
+      domains: 6
+      ips: 0
+    - id: notion
+      name: Notion
+      path: rule/Developer/Notion
+      service_type: service
+      domains: 6
+      ips: 0
+    - id: vercel
+      name: Vercel
+      path: rule/Developer/Vercel
+      service_type: service
+      domains: 27
+      ips: 0
   alibaba:
     display_name: Alibaba
     order: 30
@@ -198,64 +202,16 @@ categories:
       service_type: service
       domains: 34
       ips: 1
-  streaming:
-    display_name: Streaming
-    order: 200
+  amazon:
+    display_name: Amazon
+    order: 95
     rules:
     - id: amazon
       name: Amazon
-      path: rule/Streaming/Amazon
+      path: rule/Amazon/Amazon
       service_type: service
       domains: 186
       ips: 15
-    - id: disney
-      name: Disney
-      path: rule/Streaming/Disney
-      service_type: service
-      domains: 172
-      ips: 0
-    - id: hbo
-      name: HBO
-      path: rule/Streaming/HBO
-      service_type: service
-      domains: 47
-      ips: 0
-    - id: hulu
-      name: Hulu
-      path: rule/Streaming/Hulu
-      service_type: service
-      domains: 58
-      ips: 0
-    - id: netflix
-      name: Netflix
-      path: rule/Streaming/Netflix
-      service_type: service
-      domains: 32
-      ips: 0
-    - id: paramountplus
-      name: ParamountPlus
-      path: rule/Streaming/ParamountPlus
-      service_type: service
-      domains: 9
-      ips: 0
-    - id: primevideo
-      name: PrimeVideo
-      path: rule/Streaming/PrimeVideo
-      service_type: service
-      domains: 24
-      ips: 0
-    - id: spotify
-      name: Spotify
-      path: rule/Streaming/Spotify
-      service_type: service
-      domains: 26
-      ips: 2
-    - id: twitch
-      name: Twitch
-      path: rule/Streaming/Twitch
-      service_type: service
-      domains: 8
-      ips: 12
   apple:
     display_name: Apple
     order: 20
@@ -373,7 +329,7 @@ categories:
       path: rule/China/China
       service_type: aggregate
       domains: 111510
-      ips: 5845
+      ips: 5846
     - id: didi
       name: DiDi
       path: rule/China/DiDi
@@ -387,8 +343,8 @@ categories:
       domains: 34
       ips: 21
     - id: kuaishou
-      name: Kuaishou
-      path: rule/China/Kuaishou
+      name: KuaiShou
+      path: rule/China/KuaiShou
       service_type: service
       domains: 678
       ips: 0
@@ -566,6 +522,58 @@ categories:
       service_type: service
       domains: 5
       ips: 11
+  streaming:
+    display_name: Streaming
+    order: 200
+    rules:
+    - id: disney
+      name: Disney
+      path: rule/Streaming/Disney
+      service_type: service
+      domains: 172
+      ips: 0
+    - id: hbo
+      name: HBO
+      path: rule/Streaming/HBO
+      service_type: service
+      domains: 47
+      ips: 0
+    - id: hulu
+      name: Hulu
+      path: rule/Streaming/Hulu
+      service_type: service
+      domains: 58
+      ips: 0
+    - id: netflix
+      name: Netflix
+      path: rule/Streaming/Netflix
+      service_type: service
+      domains: 32
+      ips: 0
+    - id: paramountplus
+      name: ParamountPlus
+      path: rule/Streaming/ParamountPlus
+      service_type: service
+      domains: 9
+      ips: 0
+    - id: primevideo
+      name: PrimeVideo
+      path: rule/Streaming/PrimeVideo
+      service_type: service
+      domains: 24
+      ips: 0
+    - id: spotify
+      name: Spotify
+      path: rule/Streaming/Spotify
+      service_type: service
+      domains: 26
+      ips: 2
+    - id: twitch
+      name: Twitch
+      path: rule/Streaming/Twitch
+      service_type: service
+      domains: 8
+      ips: 12
   network:
     display_name: Network
     order: 210

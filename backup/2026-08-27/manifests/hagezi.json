@@ -1,0 +1,43 @@
+{
+  "source": "hagezi",
+  "fetch": "github_raw",
+  "timestamp": "2026-08-27T00:42:02.320533+00:00",
+  "files_ok": 3,
+  "files_failed": 0,
+  "empty_blocked": 0,
+  "rules_declared": 3,
+  "files": [
+    {
+      "name": "adblock-ultimate.txt",
+      "path": "adblock/ultimate.txt",
+      "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/ultimate.txt",
+      "service": "adblock",
+      "local": "sources/hagezi/adblock-ultimate.txt",
+      "size": 5977487,
+      "sha256": "6e4900f89f7df2f68c4ad582a54a63d1b9410906afe5cae0087891d6a7670830",
+      "status": "ok"
+    },
+    {
+      "name": "adblock-pro.txt",
+      "path": "adblock/pro.txt",
+      "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
+      "service": "adblock-pro",
+      "local": "sources/hagezi/adblock-pro.txt",
+      "size": 4973828,
+      "sha256": "ff68632467bf5be0fa5da50039f2d550765f299ffb9ac10cd069712b30835156",
+      "status": "ok"
+    },
+    {
+      "name": "adblock-light.txt",
+      "path": "adblock/light.txt",
+      "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt",
+      "service": "adblock-light",
+      "local": "sources/hagezi/adblock-light.txt",
+      "size": 937892,
+      "sha256": "016931c39bc7a27faeadaf62c3415bdf5da911fec47a921ca064a4808ffa844f",
+      "status": "ok"
+    }
+  ],
+  "registry_priority": 93,
+  "registry_trust": "high"
+}

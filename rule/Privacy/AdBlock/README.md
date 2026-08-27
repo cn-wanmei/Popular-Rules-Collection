@@ -7,11 +7,11 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 401768 |
+| Domains | 401959 |
 | IP/CIDR | 47 |
-| Mixed | 401815 |
+| Mixed | 402006 |
 | Sources | loyalsoldier, hagezi, anti-ad, sukkaw |
-| Updated | 2026-08-26 |
+| Updated | 2026-08-27 |
 
 ## 基础规则（Classical）
 

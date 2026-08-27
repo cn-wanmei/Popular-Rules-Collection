@@ -1,0 +1,93 @@
+{
+  "source": "metacubex",
+  "fetch": "github_raw",
+  "timestamp": "2026-08-27T00:42:03.654460+00:00",
+  "files_ok": 8,
+  "files_failed": 0,
+  "empty_blocked": 0,
+  "rules_declared": 8,
+  "files": [
+    {
+      "name": "geosite_alibaba.list",
+      "path": "geo/geosite/alibaba.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/alibaba.list",
+      "service": "alibaba",
+      "local": "sources/metacubex/geosite_alibaba.list",
+      "size": 7962,
+      "sha256": "976d676a80cfccf7145ce4e7d7188c7a18ee64e64011d4ad781db1fc09e58190",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_alibabacloud.list",
+      "path": "geo/geosite/alibabacloud.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/alibabacloud.list",
+      "service": "alibabacloud",
+      "local": "sources/metacubex/geosite_alibabacloud.list",
+      "size": 257,
+      "sha256": "3ade01da88be899e5161139a57fe7cce350eede74a462fb24bb0c5ceddb76098",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_tencent.list",
+      "path": "geo/geosite/tencent.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tencent.list",
+      "service": "tencent",
+      "local": "sources/metacubex/geosite_tencent.list",
+      "size": 11324,
+      "sha256": "d9fe0740766229d2c138692d5b6d17eb251477f84bc353e9eff159d9d50ca9c6",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_baidu.list",
+      "path": "geo/geosite/baidu.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/baidu.list",
+      "service": "baidu",
+      "local": "sources/metacubex/geosite_baidu.list",
+      "size": 2200,
+      "sha256": "292937d5019e72cb1d9c5a057a212ce600ae5b3e52bbcf31c7b93e0b6d7b7882",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_bytedance.list",
+      "path": "geo/geosite/bytedance.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bytedance.list",
+      "service": "bytedance",
+      "local": "sources/metacubex/geosite_bytedance.list",
+      "size": 16263,
+      "sha256": "d6314c589c8b24d6266d1e05b08c74fd355d248f539d1a76d10dc703fc459866",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_jd.list",
+      "path": "geo/geosite/jd.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/jd.list",
+      "service": "jingdong",
+      "local": "sources/metacubex/geosite_jd.list",
+      "size": 3995,
+      "sha256": "6438df20561540e0debe673b593fb6b232e7dd69bba5fe7ff1ff762821d4108b",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_netease.list",
+      "path": "geo/geosite/netease.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netease.list",
+      "service": "netease",
+      "local": "sources/metacubex/geosite_netease.list",
+      "size": 818,
+      "sha256": "0eedbc347c56f9acec10a64831ab3174f853d85c6f9dfa21552f4e3f3b173ec4",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_bilibili.list",
+      "path": "geo/geosite/bilibili.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.list",
+      "service": "bilibili",
+      "local": "sources/metacubex/geosite_bilibili.list",
+      "size": 778,
+      "sha256": "d1d76d33c08b2bfaea6b1f661c87eeb2064f6ebd7c5dbe8e1f2bb8ab5b4acc98",
+      "status": "ok"
+    }
+  ],
+  "registry_priority": 92,
+  "registry_trust": "high"
+}

@@ -235,7 +235,8 @@
         "www.apple.com",
         "www.apple.com.edgekey.net.globalredir.akadns.net",
         "wwwicloud.com",
-        "xp.apple.com"
+        "xp.apple.com",
+        "7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe"
       ],
       "domain_keyword": [
         "apple-support.akadns.net",
@@ -255,11 +256,13 @@
         "192.35.50.0/24",
         "198.183.17.0/24",
         "205.180.175.0/24",
-        "2403:300::/32",
-        "2620:149::/32",
-        "2a01:b740::/32",
         "63.92.224.0/19",
         "65.199.22.0/23"
+      ],
+      "ip_cidr6": [
+        "2403:300::/32",
+        "2620:149::/32",
+        "2a01:b740::/32"
       ]
     }
   ]

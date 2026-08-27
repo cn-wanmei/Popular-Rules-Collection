@@ -7,11 +7,11 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 225958 |
+| Domains | 226095 |
 | IP/CIDR | 0 |
-| Mixed | 225958 |
+| Mixed | 226095 |
 | Sources | hagezi |
-| Updated | 2026-08-26 |
+| Updated | 2026-08-27 |
 
 ## 基础规则（Classical）
 
