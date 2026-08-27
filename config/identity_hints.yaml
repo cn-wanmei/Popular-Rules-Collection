@@ -76,3 +76,4 @@ services:
   minecraft: { name_tokens: [Minecraft, Mojang] }
   elevenlabs: { name_tokens: [ElevenLabs] }
   snapchat: { name_tokens: [Snapchat, Snap] }
+  aisuite: { name_tokens: [AI Suite, AI-Suite, aisuite] }
