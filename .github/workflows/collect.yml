@@ -74,4 +74,7 @@ jobs:
           git add backup/*/manifests/ backup/ || true
           python scripts/size_gate.py --max-mb 90
           git diff --staged --quiet || git commit -m "chore(pipeline): collect+normalize+build ${DAY}"
+          # Absorb any commits that landed on main while this job ran
+          # (docs/registry pushes, concurrent schedule, etc.)
+          git pull --rebase origin main
           git push
