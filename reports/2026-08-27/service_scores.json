@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-27T22:19:15.078352+00:00",
+  "generated_at": "2026-08-27T23:04:27.708972+00:00",
   "date": "2026-08-27",
   "services": {
     "uber": {
@@ -147,6 +147,10 @@
       "score": 90.0,
       "band": "stable"
     },
+    "huawei": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "gemini": {
       "score": 90.0,
       "band": "stable"
@@ -172,6 +176,10 @@
       "band": "stable"
     },
     "docker": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "sina": {
       "score": 90.0,
       "band": "stable"
     },
@@ -216,6 +224,10 @@
       "band": "stable"
     },
     "oracle": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "minecraft": {
       "score": 90.0,
       "band": "stable"
     },
@@ -271,6 +283,10 @@
       "score": 90.0,
       "band": "stable"
     },
+    "oppo": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "twitch": {
       "score": 90.0,
       "band": "stable"
@@ -280,6 +296,10 @@
       "band": "stable"
     },
     "12306": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "elevenlabs": {
       "score": 90.0,
       "band": "stable"
     },
@@ -296,6 +316,10 @@
       "band": "stable"
     },
     "ai": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "dewu": {
       "score": 90.0,
       "band": "stable"
     },
@@ -316,6 +340,14 @@
       "band": "stable"
     },
     "abc": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "wikipedia": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "emby": {
       "score": 90.0,
       "band": "stable"
     },
@@ -367,6 +399,10 @@
       "score": 90.0,
       "band": "stable"
     },
+    "naver": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "youtubemusic": {
       "score": 90.0,
       "band": "stable"
@@ -415,6 +451,10 @@
       "score": 90.0,
       "band": "stable"
     },
+    "vivo": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "openai": {
       "score": 90.0,
       "band": "stable"
@@ -428,6 +468,10 @@
       "band": "stable"
     },
     "xai": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "bbc": {
       "score": 90.0,
       "band": "stable"
     },
@@ -475,11 +519,19 @@
       "score": 90.0,
       "band": "stable"
     },
+    "xiaomi": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "china": {
       "score": 90.0,
       "band": "stable"
     },
     "wise": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "roblox": {
       "score": 90.0,
       "band": "stable"
     },
@@ -500,6 +552,10 @@
       "band": "stable"
     },
     "digitalocean": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "scholar": {
       "score": 90.0,
       "band": "stable"
     },
@@ -540,6 +596,10 @@
       "band": "stable"
     },
     "vercel": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "snapchat": {
       "score": 90.0,
       "band": "stable"
     },
@@ -596,6 +656,10 @@
       "band": "stable"
     },
     "icloud": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "kugoukuwo": {
       "score": 90.0,
       "band": "stable"
     },

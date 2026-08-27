@@ -303,6 +303,19 @@
       }
     },
     {
+      "service": "bbc",
+      "database": 26,
+      "clients": {
+        "mihomo": 39,
+        "sing-box": 39,
+        "surge": 39,
+        "shadowrocket": 28,
+        "quantumult-x": 28,
+        "egern": 28,
+        "loon": 28
+      }
+    },
+    {
       "service": "bilibili",
       "database": 128,
       "clients": {
@@ -615,6 +628,19 @@
       }
     },
     {
+      "service": "dewu",
+      "database": 45,
+      "clients": {
+        "mihomo": 45,
+        "sing-box": 45,
+        "surge": 45,
+        "shadowrocket": 45,
+        "quantumult-x": 45,
+        "egern": 45,
+        "loon": 45
+      }
+    },
+    {
       "service": "didi",
       "database": 25,
       "clients": {
@@ -755,6 +781,32 @@
         "quantumult-x": 13,
         "egern": 13,
         "loon": 13
+      }
+    },
+    {
+      "service": "elevenlabs",
+      "database": 2,
+      "clients": {
+        "mihomo": 2,
+        "sing-box": 2,
+        "surge": 2,
+        "shadowrocket": 2,
+        "quantumult-x": 2,
+        "egern": 2,
+        "loon": 2
+      }
+    },
+    {
+      "service": "emby",
+      "database": 48,
+      "clients": {
+        "mihomo": 54,
+        "sing-box": 54,
+        "surge": 54,
+        "shadowrocket": 51,
+        "quantumult-x": 51,
+        "egern": 51,
+        "loon": 51
       }
     },
     {
@@ -979,6 +1031,19 @@
       }
     },
     {
+      "service": "huawei",
+      "database": 160,
+      "clients": {
+        "mihomo": 160,
+        "sing-box": 160,
+        "surge": 160,
+        "shadowrocket": 160,
+        "quantumult-x": 160,
+        "egern": 160,
+        "loon": 160
+      }
+    },
+    {
       "service": "huggingface",
       "database": 3,
       "clients": {
@@ -1109,6 +1174,19 @@
       }
     },
     {
+      "service": "kugoukuwo",
+      "database": 109,
+      "clients": {
+        "mihomo": 109,
+        "sing-box": 109,
+        "surge": 109,
+        "shadowrocket": 199,
+        "quantumult-x": 199,
+        "egern": 199,
+        "loon": 199
+      }
+    },
+    {
       "service": "line",
       "database": 24,
       "clients": {
@@ -1171,6 +1249,32 @@
         "quantumult-x": 668,
         "egern": 668,
         "loon": 668
+      }
+    },
+    {
+      "service": "minecraft",
+      "database": 6,
+      "clients": {
+        "mihomo": 6,
+        "sing-box": 6,
+        "surge": 6,
+        "shadowrocket": 6,
+        "quantumult-x": 6,
+        "egern": 6,
+        "loon": 6
+      }
+    },
+    {
+      "service": "naver",
+      "database": 59,
+      "clients": {
+        "mihomo": 61,
+        "sing-box": 61,
+        "surge": 61,
+        "shadowrocket": 92,
+        "quantumult-x": 92,
+        "egern": 92,
+        "loon": 92
       }
     },
     {
@@ -1275,6 +1379,19 @@
         "quantumult-x": 36,
         "egern": 36,
         "loon": 36
+      }
+    },
+    {
+      "service": "oppo",
+      "database": 56,
+      "clients": {
+        "mihomo": 56,
+        "sing-box": 56,
+        "surge": 56,
+        "shadowrocket": 56,
+        "quantumult-x": 56,
+        "egern": 56,
+        "loon": 56
       }
     },
     {
@@ -1473,6 +1590,19 @@
       }
     },
     {
+      "service": "roblox",
+      "database": 48,
+      "clients": {
+        "mihomo": 48,
+        "sing-box": 48,
+        "surge": 48,
+        "shadowrocket": 48,
+        "quantumult-x": 48,
+        "egern": 48,
+        "loon": 48
+      }
+    },
+    {
       "service": "rockstar",
       "database": 5,
       "clients": {
@@ -1483,6 +1613,19 @@
         "quantumult-x": 5,
         "egern": 5,
         "loon": 5
+      }
+    },
+    {
+      "service": "scholar",
+      "database": 231,
+      "clients": {
+        "mihomo": 232,
+        "sing-box": 232,
+        "surge": 232,
+        "shadowrocket": 231,
+        "quantumult-x": 231,
+        "egern": 231,
+        "loon": 231
       }
     },
     {
@@ -1512,6 +1655,19 @@
       }
     },
     {
+      "service": "sina",
+      "database": 107,
+      "clients": {
+        "mihomo": 108,
+        "sing-box": 108,
+        "surge": 108,
+        "shadowrocket": 108,
+        "quantumult-x": 108,
+        "egern": 108,
+        "loon": 108
+      }
+    },
+    {
       "service": "slack",
       "database": 11,
       "clients": {
@@ -1522,6 +1678,19 @@
         "quantumult-x": 11,
         "egern": 11,
         "loon": 11
+      }
+    },
+    {
+      "service": "snapchat",
+      "database": 9,
+      "clients": {
+        "mihomo": 9,
+        "sing-box": 9,
+        "surge": 9,
+        "shadowrocket": 9,
+        "quantumult-x": 9,
+        "egern": 9,
+        "loon": 9
       }
     },
     {
@@ -1811,6 +1980,19 @@
       }
     },
     {
+      "service": "vivo",
+      "database": 14,
+      "clients": {
+        "mihomo": 14,
+        "sing-box": 14,
+        "surge": 14,
+        "shadowrocket": 14,
+        "quantumult-x": 14,
+        "egern": 14,
+        "loon": 14
+      }
+    },
+    {
       "service": "walmart",
       "database": 10,
       "clients": {
@@ -1860,6 +2042,19 @@
         "quantumult-x": 28,
         "egern": 28,
         "loon": 28
+      }
+    },
+    {
+      "service": "wikipedia",
+      "database": 12,
+      "clients": {
+        "mihomo": 12,
+        "sing-box": 12,
+        "surge": 12,
+        "shadowrocket": 12,
+        "quantumult-x": 12,
+        "egern": 12,
+        "loon": 12
       }
     },
     {
@@ -1925,6 +2120,19 @@
         "quantumult-x": 4,
         "egern": 4,
         "loon": 4
+      }
+    },
+    {
+      "service": "xiaomi",
+      "database": 157,
+      "clients": {
+        "mihomo": 157,
+        "sing-box": 157,
+        "surge": 157,
+        "shadowrocket": 166,
+        "quantumult-x": 166,
+        "egern": 166,
+        "loon": 166
       }
     },
     {

@@ -1,11 +1,11 @@
 {
   "source": "metacubex",
   "fetch": "github_raw",
-  "timestamp": "2026-08-27T22:02:32.969564+00:00",
-  "files_ok": 33,
+  "timestamp": "2026-08-27T22:46:53.518384+00:00",
+  "files_ok": 38,
   "files_failed": 0,
   "empty_blocked": 0,
-  "rules_declared": 33,
+  "rules_declared": 38,
   "files": [
     {
       "name": "geosite_alibaba.list",
@@ -335,6 +335,56 @@
       "local": "sources/metacubex/geosite_amap.list",
       "size": 250,
       "sha256": "f4dd8b146e7ad206be0f0070da98e6b3cc3f82a6430f4c03a557fbff8b36c9c0",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_dewu.list",
+      "path": "geo/geosite/dewu.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/dewu.list",
+      "service": "dewu",
+      "local": "sources/metacubex/geosite_dewu.list",
+      "size": 689,
+      "sha256": "b0a7bf9e2a5e627fa1a2a3ee7f298dea8a4389398d87ea47704f368bfb390c00",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_roblox.list",
+      "path": "geo/geosite/roblox.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/roblox.list",
+      "service": "roblox",
+      "local": "sources/metacubex/geosite_roblox.list",
+      "size": 740,
+      "sha256": "d739c312372b6a837446227442f1030c55bc78f861c54bdfdc744f634ce8b12f",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_mojang.list",
+      "path": "geo/geosite/mojang.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/mojang.list",
+      "service": "minecraft",
+      "local": "sources/metacubex/geosite_mojang.list",
+      "size": 115,
+      "sha256": "878ab93174af5a606bd7bba790cf6ada58d31a41464e5491ef42d7e2ce8e814d",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_elevenlabs.list",
+      "path": "geo/geosite/elevenlabs.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/elevenlabs.list",
+      "service": "elevenlabs",
+      "local": "sources/metacubex/geosite_elevenlabs.list",
+      "size": 32,
+      "sha256": "f57d6a18669fa9fd0f5bc580b64315d2de9579e07dff9ac61eedd704179cbb59",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_snap.list",
+      "path": "geo/geosite/snap.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/snap.list",
+      "service": "snapchat",
+      "local": "sources/metacubex/geosite_snap.list",
+      "size": 149,
+      "sha256": "3987498d3882be2bcf425787b9de87387f6006adc5e076bed0fa6d2c537d40db",
       "status": "ok"
     }
   ],

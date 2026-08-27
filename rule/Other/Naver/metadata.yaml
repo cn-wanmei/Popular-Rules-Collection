@@ -1,0 +1,32 @@
+id: naver
+name: Naver
+primary_category: other
+categories:
+- other
+service_type: service
+parent: null
+children: null
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: naver.list
+  domain: naver_domain.list
+  ip: naver_ip.list
+statistics:
+  domains: 26
+  ipv4_or_cidr: 33
+  mixed: 59
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-27'
+auto_generated: true

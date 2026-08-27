@@ -1,0 +1,32 @@
+id: scholar
+name: Scholar
+primary_category: other
+categories:
+- other
+service_type: service
+parent: null
+children: null
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: scholar.list
+  domain: scholar_domain.list
+  ip: null
+statistics:
+  domains: 231
+  ipv4_or_cidr: 0
+  mixed: 231
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-27'
+auto_generated: true

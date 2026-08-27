@@ -2,12 +2,12 @@
 
 | Metric | Value |
 |--------|------:|
-| Services | 153 |
-| Domain lines | 712601 |
-| IP/CIDR lines | 447 |
+| Services | 169 |
+| Domain lines | 713558 |
+| IP/CIDR lines | 579 |
 | Invalid CIDR | 0 |
 | Suspicious domains | 0 |
-| Generated files | 1524 |
+| Generated files | 1684 |
 | Empty generated | 0 |
 | Stale domain-set | 0 |
 | Errors | 0 |
@@ -33,14 +33,14 @@ sources:
     empty_blocked: 0
     rules_declared: 8
   blackmatrix7:
-    last_attempt: '2026-08-27T22:02:30.359036+00:00'
-    last_success: '2026-08-27T22:02:30.359056+00:00'
+    last_attempt: '2026-08-27T22:46:47.487720+00:00'
+    last_success: '2026-08-27T22:46:47.487735+00:00'
     failure_count: 0
     status: healthy
-    files_ok: 123
+    files_ok: 134
     files_failed: 0
     empty_blocked: 0
-    rules_declared: 123
+    rules_declared: 134
   loyalsoldier:
     last_attempt: '2026-08-27T04:42:15.893581+00:00'
     last_success: '2026-08-27T04:42:15.893593+00:00'
@@ -69,13 +69,13 @@ sources:
     empty_blocked: 0
     rules_declared: 3
   metacubex:
-    last_attempt: '2026-08-27T22:02:32.969540+00:00'
-    files_ok: 33
+    last_attempt: '2026-08-27T22:46:53.518363+00:00'
+    files_ok: 38
     files_failed: 0
     empty_blocked: 0
-    rules_declared: 33
-    last_success: '2026-08-27T22:02:32.969559+00:00'
+    rules_declared: 38
+    last_success: '2026-08-27T22:46:53.518379+00:00'
     failure_count: 0
     status: healthy
-updated_at: '2026-08-27T22:02:32.971634+00:00'
+updated_at: '2026-08-27T22:46:53.520633+00:00'
 ```

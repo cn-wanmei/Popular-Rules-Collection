@@ -1,0 +1,32 @@
+id: huawei
+name: Huawei
+primary_category: china
+categories:
+- china
+service_type: service
+parent: china
+children: null
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: huawei.list
+  domain: huawei_domain.list
+  ip: null
+statistics:
+  domains: 160
+  ipv4_or_cidr: 0
+  mixed: 160
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-27'
+auto_generated: true

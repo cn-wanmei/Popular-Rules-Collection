@@ -1,4 +1,4 @@
-generated_at: '2026-08-27T22:20:12.980182+00:00'
+generated_at: '2026-08-27T23:05:30.122562+00:00'
 categories:
   '12306':
     display_name: '12306'
@@ -136,6 +136,18 @@ categories:
       service_type: service
       domains: 44
       ips: 0
+    - id: naver
+      name: Naver
+      path: rule/Other/Naver
+      service_type: service
+      domains: 26
+      ips: 33
+    - id: scholar
+      name: Scholar
+      path: rule/Other/Scholar
+      service_type: service
+      domains: 231
+      ips: 0
     - id: shopify
       name: Shopify
       path: rule/Other/Shopify
@@ -153,6 +165,12 @@ categories:
       path: rule/Other/Walmart
       service_type: service
       domains: 10
+      ips: 0
+    - id: wikipedia
+      name: Wikipedia
+      path: rule/Other/Wikipedia
+      service_type: service
+      domains: 12
       ips: 0
   ai:
     display_name: AI
@@ -187,6 +205,12 @@ categories:
       path: rule/AI/DeepSeek
       service_type: service
       domains: 1
+      ips: 0
+    - id: elevenlabs
+      name: ElevenLabs
+      path: rule/AI/ElevenLabs
+      service_type: service
+      domains: 2
       ips: 0
     - id: gemini
       name: Gemini
@@ -482,6 +506,12 @@ categories:
       service_type: service
       domains: 11
       ips: 0
+    - id: minecraft
+      name: Minecraft
+      path: rule/Gaming/Minecraft
+      service_type: service
+      domains: 6
+      ips: 0
     - id: nintendo
       name: Nintendo
       path: rule/Gaming/Nintendo
@@ -500,6 +530,12 @@ categories:
       service_type: service
       domains: 55
       ips: 0
+    - id: roblox
+      name: Roblox
+      path: rule/Gaming/Roblox
+      service_type: service
+      domains: 48
+      ips: 0
     - id: rockstar
       name: Rockstar
       path: rule/Gaming/Rockstar
@@ -515,6 +551,112 @@ categories:
     - id: ubisoft
       name: Ubisoft
       path: rule/Gaming/Ubisoft
+      service_type: service
+      domains: 1
+      ips: 0
+  streaming:
+    display_name: Streaming
+    order: 200
+    rules:
+    - id: bbc
+      name: BBC
+      path: rule/Streaming/BBC
+      service_type: service
+      domains: 26
+      ips: 0
+    - id: dailymotion
+      name: Dailymotion
+      path: rule/Streaming/Dailymotion
+      service_type: service
+      domains: 5
+      ips: 0
+    - id: deezer
+      name: Deezer
+      path: rule/Streaming/Deezer
+      service_type: service
+      domains: 2
+      ips: 0
+    - id: disney
+      name: Disney
+      path: rule/Streaming/Disney
+      service_type: service
+      domains: 172
+      ips: 0
+    - id: emby
+      name: Emby
+      path: rule/Streaming/Emby
+      service_type: service
+      domains: 48
+      ips: 0
+    - id: hbo
+      name: HBO
+      path: rule/Streaming/HBO
+      service_type: service
+      domains: 47
+      ips: 0
+    - id: hulu
+      name: Hulu
+      path: rule/Streaming/Hulu
+      service_type: service
+      domains: 58
+      ips: 0
+    - id: netflix
+      name: Netflix
+      path: rule/Streaming/Netflix
+      service_type: service
+      domains: 32
+      ips: 0
+    - id: paramountplus
+      name: ParamountPlus
+      path: rule/Streaming/ParamountPlus
+      service_type: service
+      domains: 9
+      ips: 0
+    - id: peacock
+      name: Peacock
+      path: rule/Streaming/Peacock
+      service_type: service
+      domains: 1
+      ips: 0
+    - id: primevideo
+      name: PrimeVideo
+      path: rule/Streaming/PrimeVideo
+      service_type: service
+      domains: 24
+      ips: 0
+    - id: soundcloud
+      name: SoundCloud
+      path: rule/Streaming/SoundCloud
+      service_type: service
+      domains: 3
+      ips: 0
+    - id: spotify
+      name: Spotify
+      path: rule/Streaming/Spotify
+      service_type: service
+      domains: 26
+      ips: 2
+    - id: tidal
+      name: Tidal
+      path: rule/Streaming/Tidal
+      service_type: service
+      domains: 3
+      ips: 0
+    - id: twitch
+      name: Twitch
+      path: rule/Streaming/Twitch
+      service_type: service
+      domains: 8
+      ips: 12
+    - id: vimeo
+      name: Vimeo
+      path: rule/Streaming/Vimeo
+      service_type: service
+      domains: 16
+      ips: 0
+    - id: youtubemusic
+      name: YouTubeMusic
+      path: rule/Streaming/YouTubeMusic
       service_type: service
       domains: 1
       ips: 0
@@ -540,11 +682,23 @@ categories:
       service_type: service
       domains: 29
       ips: 0
+    - id: dewu
+      name: DeWu
+      path: rule/China/DeWu
+      service_type: service
+      domains: 45
+      ips: 0
     - id: didi
       name: DiDi
       path: rule/China/DiDi
       service_type: service
       domains: 25
+      ips: 0
+    - id: huawei
+      name: Huawei
+      path: rule/China/Huawei
+      service_type: service
+      domains: 160
       ips: 0
     - id: iqiyi
       name: iQIYI
@@ -558,6 +712,12 @@ categories:
       service_type: service
       domains: 678
       ips: 0
+    - id: kugoukuwo
+      name: KugouKuwo
+      path: rule/China/KugouKuwo
+      service_type: service
+      domains: 19
+      ips: 90
     - id: meituan
       name: MeiTuan
       path: rule/China/MeiTuan
@@ -570,17 +730,35 @@ categories:
       service_type: service
       domains: 63
       ips: 18
+    - id: oppo
+      name: OPPO
+      path: rule/China/OPPO
+      service_type: service
+      domains: 56
+      ips: 0
     - id: pinduoduo
       name: Pinduoduo
       path: rule/China/Pinduoduo
       service_type: service
       domains: 3
       ips: 0
+    - id: sina
+      name: Sina
+      path: rule/China/Sina
+      service_type: service
+      domains: 107
+      ips: 0
     - id: tongcheng
       name: Tongcheng
       path: rule/China/Tongcheng
       service_type: service
       domains: 8
+      ips: 0
+    - id: vivo
+      name: Vivo
+      path: rule/China/Vivo
+      service_type: service
+      domains: 14
       ips: 0
     - id: weibo
       name: Weibo
@@ -594,6 +772,12 @@ categories:
       service_type: service
       domains: 4
       ips: 0
+    - id: xiaomi
+      name: XiaoMi
+      path: rule/China/XiaoMi
+      service_type: service
+      domains: 148
+      ips: 9
     - id: zhihu
       name: Zhihu
       path: rule/China/Zhihu
@@ -704,6 +888,12 @@ categories:
       service_type: service
       domains: 8
       ips: 0
+    - id: snapchat
+      name: Snapchat
+      path: rule/Social/Snapchat
+      service_type: service
+      domains: 9
+      ips: 0
     - id: telegram
       name: Telegram
       path: rule/Social/Telegram
@@ -792,100 +982,6 @@ categories:
       service_type: service
       domains: 33
       ips: 1
-  streaming:
-    display_name: Streaming
-    order: 200
-    rules:
-    - id: dailymotion
-      name: Dailymotion
-      path: rule/Streaming/Dailymotion
-      service_type: service
-      domains: 5
-      ips: 0
-    - id: deezer
-      name: Deezer
-      path: rule/Streaming/Deezer
-      service_type: service
-      domains: 2
-      ips: 0
-    - id: disney
-      name: Disney
-      path: rule/Streaming/Disney
-      service_type: service
-      domains: 172
-      ips: 0
-    - id: hbo
-      name: HBO
-      path: rule/Streaming/HBO
-      service_type: service
-      domains: 47
-      ips: 0
-    - id: hulu
-      name: Hulu
-      path: rule/Streaming/Hulu
-      service_type: service
-      domains: 58
-      ips: 0
-    - id: netflix
-      name: Netflix
-      path: rule/Streaming/Netflix
-      service_type: service
-      domains: 32
-      ips: 0
-    - id: paramountplus
-      name: ParamountPlus
-      path: rule/Streaming/ParamountPlus
-      service_type: service
-      domains: 9
-      ips: 0
-    - id: peacock
-      name: Peacock
-      path: rule/Streaming/Peacock
-      service_type: service
-      domains: 1
-      ips: 0
-    - id: primevideo
-      name: PrimeVideo
-      path: rule/Streaming/PrimeVideo
-      service_type: service
-      domains: 24
-      ips: 0
-    - id: soundcloud
-      name: SoundCloud
-      path: rule/Streaming/SoundCloud
-      service_type: service
-      domains: 3
-      ips: 0
-    - id: spotify
-      name: Spotify
-      path: rule/Streaming/Spotify
-      service_type: service
-      domains: 26
-      ips: 2
-    - id: tidal
-      name: Tidal
-      path: rule/Streaming/Tidal
-      service_type: service
-      domains: 3
-      ips: 0
-    - id: twitch
-      name: Twitch
-      path: rule/Streaming/Twitch
-      service_type: service
-      domains: 8
-      ips: 12
-    - id: vimeo
-      name: Vimeo
-      path: rule/Streaming/Vimeo
-      service_type: service
-      domains: 16
-      ips: 0
-    - id: youtubemusic
-      name: YouTubeMusic
-      path: rule/Streaming/YouTubeMusic
-      service_type: service
-      domains: 1
-      ips: 0
   google:
     display_name: Google
     order: 90

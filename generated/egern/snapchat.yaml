@@ -1,0 +1,14 @@
+# name: Snapchat
+# id: snapchat
+# count: 9
+no_resolve: true
+domain_suffix_set:
+- impala-media-production.s3.amazonaws.com
+- sc-cdn.net
+- sc-gw.com
+- sc-static.net
+- snap-dev.net
+- snap.com
+- snapads.com
+- snapchat.com
+- snapkit.co

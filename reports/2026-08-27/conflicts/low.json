@@ -2100,6 +2100,7 @@
     "services": [
       "adblock-light",
       "adblock-pro",
+      "kugoukuwo",
       "tencent"
     ]
   },
@@ -2326,6 +2327,42 @@
       "adblock-light",
       "adblock-pro",
       "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "miav-cse.avlyun.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "xiaomi"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "miui-fxcse.avlyun.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "xiaomi"
     ]
   },
   {
@@ -2880,6 +2917,24 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "rbxtrk.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "roblox"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "report.qqweb.qq.com"
     },
     "policy": "proxy",
@@ -2892,6 +2947,24 @@
       "adblock-light",
       "adblock-pro",
       "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "res.mi.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "xiaomi"
     ]
   },
   {
@@ -3012,6 +3085,24 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "sc-static.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "snapchat"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "sf3-ttcdn-tos.pstatp.com"
     },
     "policy": "proxy",
@@ -3061,6 +3152,24 @@
       "adblock-light",
       "adblock-pro",
       "paypal"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "snapads.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "snapchat"
     ]
   },
   {
@@ -4022,6 +4131,23 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "altmetric.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "scholar"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "api.iplay.163.com"
     },
     "policy": "proxy",
@@ -4103,6 +4229,23 @@
     "services": [
       "adblock-pro",
       "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bbc.co"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "bbc"
     ]
   },
   {
@@ -5361,6 +5504,23 @@
     "services": [
       "adblock-pro",
       "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "robloxlabs.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-pro",
+      "roblox"
     ]
   },
   {
@@ -8633,151 +8793,6 @@
     "match": {
       "type": "domain_suffix",
       "value": "cn-chengdu.aliyuncs.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "metacubex"
-    ],
-    "services": [
-      "alibaba"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "cn-guangzhou.aliyuncs.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "metacubex"
-    ],
-    "services": [
-      "alibaba"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "cn-hangzhou.aliyuncs.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "metacubex"
-    ],
-    "services": [
-      "alibaba"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "cn-hongkong.aliyuncs.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "metacubex"
-    ],
-    "services": [
-      "alibaba"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "cn-shanghai.aliyuncs.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "metacubex"
-    ],
-    "services": [
-      "alibaba"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "cn.alibabacloud.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "metacubex"
-    ],
-    "services": [
-      "alibaba",
-      "alibabacloud"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "cnlogs.umeng.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "metacubex"
-    ],
-    "services": [
-      "alibaba"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "cnlogs.umengcloud.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "metacubex"
-    ],
-    "services": [
-      "alibaba"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "cnzz.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "metacubex"
-    ],
-    "services": [
-      "alibaba"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "cueme.cn"
     },
     "policy": "proxy",
     "sources": [

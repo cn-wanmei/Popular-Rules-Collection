@@ -2,45 +2,31 @@
   "date": "2026-08-27",
   "version": 3,
   "service_coverage": {
-    "registered": 184,
-    "materialized": 153,
-    "intentional_unmaterialized": 31,
+    "registered": 186,
+    "materialized": 169,
+    "intentional_unmaterialized": 17,
     "unexpected_missing": [],
-    "coverage": 0.8315,
+    "coverage": 0.9086,
     "daily_coverage": 1.0
   },
   "intentional_unmaterialized": {
     "mistral": "no_verified_upstream",
     "gcp": "no_verified_upstream",
     "supabase": "no_verified_upstream",
-    "roblox": "no_verified_upstream",
-    "minecraft": "no_verified_upstream",
     "blizzard": "maps_to_battlenet",
     "taobao": "no_verified_upstream_dead_bm_path_covered_by_alibaba",
     "qq": "no_verified_upstream_dead_bm_path_covered_by_tencent",
-    "snapchat": "no_verified_upstream",
     "npm": "no_verified_upstream",
     "googledrive": "no_dedicated_upstream_use_google_aggregate",
     "amazonaws": "covered_by_aws_amazon_aggregate",
     "applications": "generic_bucket_no_dedicated_upstream",
-    "bbc": "no_verified_upstream",
     "dingtalk": "covered_by_alibaba_aggregate",
     "discoveryplus": "no_verified_upstream",
-    "emby": "no_verified_upstream",
-    "huawei": "no_verified_upstream",
-    "kugoukuwo": "no_verified_upstream",
     "lan": "local_network_no_public_upstream",
-    "naver": "no_verified_upstream",
     "ntp": "protocol_service_no_domain_ruleset",
-    "oppo": "no_verified_upstream",
     "origin": "maps_to_ea",
-    "scholar": "no_verified_upstream",
-    "sina": "no_verified_upstream",
     "siri": "covered_by_apple_aggregate",
-    "steamcn": "covered_by_steam_china_paths",
-    "vivo": "no_verified_upstream",
-    "wikipedia": "no_verified_upstream",
-    "xiaomi": "no_verified_upstream"
+    "steamcn": "covered_by_steam_china_paths"
   },
   "intentional_detail": {
     "mistral": {
@@ -55,14 +41,6 @@
       "reason": "no_verified_upstream",
       "code": "NO_UPSTREAM"
     },
-    "roblox": {
-      "reason": "no_verified_upstream",
-      "code": "NO_UPSTREAM"
-    },
-    "minecraft": {
-      "reason": "no_verified_upstream",
-      "code": "NO_UPSTREAM"
-    },
     "blizzard": {
       "reason": "maps_to_battlenet",
       "code": "MAPS_TO"
@@ -74,10 +52,6 @@
     "qq": {
       "reason": "no_verified_upstream_dead_bm_path_covered_by_tencent",
       "code": "COVERED_BY_AGGREGATE"
-    },
-    "snapchat": {
-      "reason": "no_verified_upstream",
-      "code": "NO_UPSTREAM"
     },
     "npm": {
       "reason": "no_verified_upstream",
@@ -95,10 +69,6 @@
       "reason": "generic_bucket_no_dedicated_upstream",
       "code": "NO_UPSTREAM"
     },
-    "bbc": {
-      "reason": "no_verified_upstream",
-      "code": "NO_UPSTREAM"
-    },
     "dingtalk": {
       "reason": "covered_by_alibaba_aggregate",
       "code": "COVERED_BY_AGGREGATE"
@@ -107,45 +77,17 @@
       "reason": "no_verified_upstream",
       "code": "NO_UPSTREAM"
     },
-    "emby": {
-      "reason": "no_verified_upstream",
-      "code": "NO_UPSTREAM"
-    },
-    "huawei": {
-      "reason": "no_verified_upstream",
-      "code": "NO_UPSTREAM"
-    },
-    "kugoukuwo": {
-      "reason": "no_verified_upstream",
-      "code": "NO_UPSTREAM"
-    },
     "lan": {
       "reason": "local_network_no_public_upstream",
-      "code": "NO_UPSTREAM"
-    },
-    "naver": {
-      "reason": "no_verified_upstream",
       "code": "NO_UPSTREAM"
     },
     "ntp": {
       "reason": "protocol_service_no_domain_ruleset",
       "code": "NO_UPSTREAM"
     },
-    "oppo": {
-      "reason": "no_verified_upstream",
-      "code": "NO_UPSTREAM"
-    },
     "origin": {
       "reason": "maps_to_ea",
       "code": "MAPS_TO"
-    },
-    "scholar": {
-      "reason": "no_verified_upstream",
-      "code": "NO_UPSTREAM"
-    },
-    "sina": {
-      "reason": "no_verified_upstream",
-      "code": "NO_UPSTREAM"
     },
     "siri": {
       "reason": "covered_by_apple_aggregate",
@@ -154,44 +96,18 @@
     "steamcn": {
       "reason": "covered_by_steam_china_paths",
       "code": "COVERED_BY_AGGREGATE"
-    },
-    "vivo": {
-      "reason": "no_verified_upstream",
-      "code": "NO_UPSTREAM"
-    },
-    "wikipedia": {
-      "reason": "no_verified_upstream",
-      "code": "NO_UPSTREAM"
-    },
-    "xiaomi": {
-      "reason": "no_verified_upstream",
-      "code": "NO_UPSTREAM"
     }
   },
   "intentional_by_code": {
     "NO_UPSTREAM": [
       "applications",
-      "bbc",
       "discoveryplus",
-      "emby",
       "gcp",
-      "huawei",
-      "kugoukuwo",
       "lan",
-      "minecraft",
       "mistral",
-      "naver",
       "npm",
       "ntp",
-      "oppo",
-      "roblox",
-      "scholar",
-      "sina",
-      "snapchat",
-      "supabase",
-      "vivo",
-      "wikipedia",
-      "xiaomi"
+      "supabase"
     ],
     "MAPS_TO": [
       "blizzard",
@@ -208,9 +124,9 @@
     ]
   },
   "rule_coverage": {
-    "domains": 712601,
-    "ips": 447,
-    "database_services": 153
+    "domains": 713558,
+    "ips": 579,
+    "database_services": 169
   },
   "source_health": {
     "configured_sources": 2,
@@ -241,31 +157,31 @@
   },
   "builder_coverage": {
     "mihomo": {
-      "files": 306,
+      "files": 338,
       "status": "ok"
     },
     "sing-box": {
-      "files": 153,
+      "files": 169,
       "status": "ok"
     },
     "surge": {
-      "files": 303,
+      "files": 335,
       "status": "ok"
     },
     "shadowrocket": {
-      "files": 303,
+      "files": 335,
       "status": "ok"
     },
     "quantumult-x": {
-      "files": 153,
+      "files": 169,
       "status": "ok"
     },
     "egern": {
-      "files": 153,
+      "files": 169,
       "status": "ok"
     },
     "loon": {
-      "files": 153,
+      "files": 169,
       "status": "ok"
     }
   },
@@ -279,14 +195,15 @@
       "coverage": 1.0
     },
     "ai": {
-      "registered": 12,
-      "materialized": 11,
+      "registered": 13,
+      "materialized": 12,
       "ids": [
         "ai",
         "anthropic",
         "claude",
         "copilot",
         "deepseek",
+        "elevenlabs",
         "gemini",
         "groq",
         "huggingface",
@@ -295,7 +212,7 @@
         "perplexity",
         "xai"
       ],
-      "coverage": 0.9167
+      "coverage": 0.9231
     },
     "alibaba": {
       "registered": 10,
@@ -355,12 +272,13 @@
       "coverage": 1.0
     },
     "china": {
-      "registered": 20,
-      "materialized": 13,
+      "registered": 21,
+      "materialized": 20,
       "ids": [
         "bilibili",
         "china",
         "ctrip",
+        "dewu",
         "didi",
         "huawei",
         "iqiyi",
@@ -379,7 +297,7 @@
         "xiaomi",
         "zhihu"
       ],
-      "coverage": 0.65
+      "coverage": 0.9524
     },
     "chinamobile": {
       "registered": 1,
@@ -447,7 +365,7 @@
     },
     "gaming": {
       "registered": 15,
-      "materialized": 11,
+      "materialized": 13,
       "ids": [
         "battlenet",
         "blizzard",
@@ -465,7 +383,7 @@
         "steam",
         "ubisoft"
       ],
-      "coverage": 0.7333
+      "coverage": 0.8667
     },
     "google": {
       "registered": 6,
@@ -516,7 +434,7 @@
     },
     "other": {
       "registered": 13,
-      "materialized": 9,
+      "materialized": 12,
       "ids": [
         "adobe",
         "airbnb",
@@ -532,7 +450,7 @@
         "walmart",
         "wikipedia"
       ],
-      "coverage": 0.6923
+      "coverage": 0.9231
     },
     "privacy": {
       "registered": 3,
@@ -546,7 +464,7 @@
     },
     "social": {
       "registered": 18,
-      "materialized": 17,
+      "materialized": 18,
       "ids": [
         "bluesky",
         "discord",
@@ -567,11 +485,11 @@
         "whatsapp",
         "zoom"
       ],
-      "coverage": 0.9444
+      "coverage": 1.0
     },
     "streaming": {
       "registered": 18,
-      "materialized": 15,
+      "materialized": 17,
       "ids": [
         "bbc",
         "dailymotion",
@@ -592,7 +510,7 @@
         "vimeo",
         "youtubemusic"
       ],
-      "coverage": 0.8333
+      "coverage": 0.9444
     },
     "tencent": {
       "registered": 4,
@@ -633,12 +551,12 @@
     "critical": 0,
     "high": 0,
     "medium": 0,
-    "low": 3379
+    "low": 3392
   },
   "sources": 2,
-  "services": 153,
-  "domains": 712601,
-  "cidr": 447,
+  "services": 169,
+  "domains": 713558,
+  "cidr": 579,
   "build": {
     "mihomo": "ok",
     "sing-box": "ok",

@@ -17,6 +17,7 @@ children:
 - xai
 - mistral
 - deepseek
+- elevenlabs
 rule:
   has_domain: true
   has_ip: false

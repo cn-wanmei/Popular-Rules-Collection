@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "phase": "3A",
-  "generated_at": "2026-08-27T22:19:15.023385+00:00",
+  "generated_at": "2026-08-27T23:04:27.652694+00:00",
   "date": "2026-08-27",
-  "commit": "399bbcbdccea14ec0c3dfaa1fb53e0ffd902b3a1",
+  "commit": "15f065824bb8e0a4cdd8ff8ab5bfc5b475d04ef2",
   "commit_role": "pipeline_input",
   "commit_note": "SHA observed when release_snapshot ran (before collect's git commit). HEAD after push is the commit that contains this file + generated artifacts.",
   "source_status": {
@@ -19,14 +19,14 @@
         "rules_declared": 8
       },
       "blackmatrix7": {
-        "last_attempt": "2026-08-27T22:02:30.359036+00:00",
-        "last_success": "2026-08-27T22:02:30.359056+00:00",
+        "last_attempt": "2026-08-27T22:46:47.487720+00:00",
+        "last_success": "2026-08-27T22:46:47.487735+00:00",
         "failure_count": 0,
         "status": "healthy",
-        "files_ok": 123,
+        "files_ok": 134,
         "files_failed": 0,
         "empty_blocked": 0,
-        "rules_declared": 123
+        "rules_declared": 134
       },
       "loyalsoldier": {
         "last_attempt": "2026-08-27T04:42:15.893581+00:00",
@@ -59,12 +59,12 @@
         "rules_declared": 3
       },
       "metacubex": {
-        "last_attempt": "2026-08-27T22:02:32.969540+00:00",
-        "files_ok": 33,
+        "last_attempt": "2026-08-27T22:46:53.518363+00:00",
+        "files_ok": 38,
         "files_failed": 0,
         "empty_blocked": 0,
-        "rules_declared": 33,
-        "last_success": "2026-08-27T22:02:32.969559+00:00",
+        "rules_declared": 38,
+        "last_success": "2026-08-27T22:46:53.518379+00:00",
         "failure_count": 0,
         "status": "healthy"
       }
@@ -76,32 +76,32 @@
     "historical_in_health": 6,
     "snapshot": {
       "schema_version": 1,
-      "generated_at": "2026-08-27T22:19:10.921757+00:00",
+      "generated_at": "2026-08-27T23:04:23.559684+00:00",
       "date": "2026-08-27",
       "sources": [
         {
           "id": "blackmatrix7",
           "enabled": true,
           "priority": 95,
-          "rules_declared": 123,
-          "files_ok": 123,
+          "rules_declared": 134,
+          "files_ok": 134,
           "files_failed": 0,
           "health_status": "healthy",
           "lifecycle": "active",
-          "last_success": "2026-08-27T22:02:30.359056+00:00",
-          "last_attempt": "2026-08-27T22:02:30.359036+00:00"
+          "last_success": "2026-08-27T22:46:47.487735+00:00",
+          "last_attempt": "2026-08-27T22:46:47.487720+00:00"
         },
         {
           "id": "metacubex",
           "enabled": true,
           "priority": 90,
-          "rules_declared": 33,
-          "files_ok": 33,
+          "rules_declared": 38,
+          "files_ok": 38,
           "files_failed": 0,
           "health_status": "healthy",
           "lifecycle": "active",
-          "last_success": "2026-08-27T22:02:32.969559+00:00",
-          "last_attempt": "2026-08-27T22:02:32.969540+00:00"
+          "last_success": "2026-08-27T22:46:53.518379+00:00",
+          "last_attempt": "2026-08-27T22:46:53.518363+00:00"
         }
       ],
       "intentional_unmaterialized": {
@@ -114,14 +114,6 @@
           "reason": "no_verified_upstream"
         },
         "supabase": {
-          "code": "NO_UPSTREAM",
-          "reason": "no_verified_upstream"
-        },
-        "roblox": {
-          "code": "NO_UPSTREAM",
-          "reason": "no_verified_upstream"
-        },
-        "minecraft": {
           "code": "NO_UPSTREAM",
           "reason": "no_verified_upstream"
         },
@@ -163,7 +155,7 @@
         },
         "qwen": {
           "code": "NO_UPSTREAM",
-          "reason": "no_verified_upstream"
+          "reason": "no_verified_dedicated_upstream_aliyun_is_not_qwen"
         },
         "kimi": {
           "code": "NO_UPSTREAM",
@@ -174,10 +166,6 @@
           "reason": "no_verified_upstream"
         },
         "wenxiaoyan": {
-          "code": "NO_UPSTREAM",
-          "reason": "no_verified_upstream"
-        },
-        "snapchat": {
           "code": "NO_UPSTREAM",
           "reason": "no_verified_upstream"
         },
@@ -202,8 +190,8 @@
           "reason": "no_dedicated_upstream_use_google_aggregate"
         },
         "temu": {
-          "code": "NO_UPSTREAM",
-          "reason": "no_verified_upstream"
+          "code": "COVERED_BY_AGGREGATE",
+          "reason": "no_dedicated_temu_use_pinduoduo_aggregate"
         },
         "aliexpress": {
           "code": "NO_UPSTREAM",
@@ -233,14 +221,6 @@
           "code": "NO_UPSTREAM",
           "reason": "no_verified_upstream"
         },
-        "elevenlabs": {
-          "code": "NO_UPSTREAM",
-          "reason": "no_verified_upstream"
-        },
-        "dewu": {
-          "code": "NO_UPSTREAM",
-          "reason": "no_verified_upstream"
-        },
         "bosszhipin": {
           "code": "NO_UPSTREAM",
           "reason": "no_verified_upstream"
@@ -261,10 +241,6 @@
           "code": "NO_UPSTREAM",
           "reason": "generic_bucket_no_dedicated_upstream"
         },
-        "bbc": {
-          "code": "NO_UPSTREAM",
-          "reason": "no_verified_upstream"
-        },
         "dingtalk": {
           "code": "COVERED_BY_AGGREGATE",
           "reason": "covered_by_alibaba_aggregate"
@@ -273,45 +249,17 @@
           "code": "NO_UPSTREAM",
           "reason": "no_verified_upstream"
         },
-        "emby": {
-          "code": "NO_UPSTREAM",
-          "reason": "no_verified_upstream"
-        },
-        "huawei": {
-          "code": "NO_UPSTREAM",
-          "reason": "no_verified_upstream"
-        },
-        "kugoukuwo": {
-          "code": "NO_UPSTREAM",
-          "reason": "no_verified_upstream"
-        },
         "lan": {
           "code": "NO_UPSTREAM",
           "reason": "local_network_no_public_upstream"
-        },
-        "naver": {
-          "code": "NO_UPSTREAM",
-          "reason": "no_verified_upstream"
         },
         "ntp": {
           "code": "NO_UPSTREAM",
           "reason": "protocol_service_no_domain_ruleset"
         },
-        "oppo": {
-          "code": "NO_UPSTREAM",
-          "reason": "no_verified_upstream"
-        },
         "origin": {
           "code": "MAPS_TO",
           "reason": "maps_to_ea"
-        },
-        "scholar": {
-          "code": "NO_UPSTREAM",
-          "reason": "no_verified_upstream"
-        },
-        "sina": {
-          "code": "NO_UPSTREAM",
-          "reason": "no_verified_upstream"
         },
         "siri": {
           "code": "COVERED_BY_AGGREGATE",
@@ -320,18 +268,6 @@
         "steamcn": {
           "code": "COVERED_BY_AGGREGATE",
           "reason": "covered_by_steam_china_paths"
-        },
-        "vivo": {
-          "code": "NO_UPSTREAM",
-          "reason": "no_verified_upstream"
-        },
-        "wikipedia": {
-          "code": "NO_UPSTREAM",
-          "reason": "no_verified_upstream"
-        },
-        "xiaomi": {
-          "code": "NO_UPSTREAM",
-          "reason": "no_verified_upstream"
         }
       },
       "lifecycle_enum": [
@@ -343,39 +279,39 @@
       ]
     }
   },
-  "service_count": 184,
-  "materialized_count": 153,
-  "intentional_unmaterialized": 31,
-  "domain_count": 712601,
-  "ip_count": 447,
+  "service_count": 186,
+  "materialized_count": 169,
+  "intentional_unmaterialized": 17,
+  "domain_count": 713558,
+  "ip_count": 579,
   "builder_count": 7,
   "builder_coverage": {
     "mihomo": {
-      "files": 306,
+      "files": 338,
       "status": "ok"
     },
     "sing-box": {
-      "files": 153,
+      "files": 169,
       "status": "ok"
     },
     "surge": {
-      "files": 303,
+      "files": 335,
       "status": "ok"
     },
     "shadowrocket": {
-      "files": 303,
+      "files": 335,
       "status": "ok"
     },
     "quantumult-x": {
-      "files": 153,
+      "files": 169,
       "status": "ok"
     },
     "egern": {
-      "files": 153,
+      "files": 169,
       "status": "ok"
     },
     "loon": {
-      "files": 153,
+      "files": 169,
       "status": "ok"
     }
   },
@@ -408,7 +344,7 @@
     "checked": null,
     "warnings": 0
   },
-  "rule_counts_total": 713342,
+  "rule_counts_total": 714437,
   "artifacts": {
     "statistics": "reports/2026-08-27/statistics.json",
     "rule_counts": "reports/2026-08-27/rule_counts.json",
