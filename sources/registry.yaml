@@ -84,7 +84,7 @@ sources:
   - {path: rule/Clash/WeChat/WeChat.yaml, name: wechat, local: Clash_WeChat.yaml}
   - {path: rule/Clash/ByteDance/ByteDance.yaml, name: bytedance, local: Clash_ByteDance.yaml}
   - {path: rule/Clash/Baidu/Baidu.yaml, name: baidu, local: Clash_Baidu.yaml}
-  - {path: rule/Clash/JD/JD.yaml, name: jingdong, local: Clash_JD.yaml}
+  - {path: rule/Clash/JingDong/JingDong.yaml, name: jingdong, local: Clash_JingDong.yaml}
   - {path: rule/Clash/NetEaseMusic/NetEaseMusic.yaml, name: netease, local: Clash_NetEaseMusic.yaml}
   - {path: rule/Clash/MeiTuan/MeiTuan.yaml, name: meituan, local: Clash_MeiTuan.yaml}
   - {path: rule/Clash/DiDi/DiDi.yaml, name: didi, local: Clash_DiDi.yaml}
@@ -92,7 +92,7 @@ sources:
   - {path: rule/Clash/XiaoHongShu/XiaoHongShu.yaml, name: xiaohongshu, local: Clash_XiaoHongShu.yaml}
   - {path: rule/Clash/Zhihu/Zhihu.yaml, name: zhihu, local: Clash_Zhihu.yaml}
   - {path: rule/Clash/Weibo/Weibo.yaml, name: weibo, local: Clash_Weibo.yaml}
-  - {path: rule/Clash/iQiyi/iQiyi.yaml, name: iqiyi, local: Clash_iQiyi.yaml}
+  - {path: rule/Clash/iQIYI/iQIYI.yaml, name: iqiyi, local: Clash_iQIYI.yaml}
   - {path: rule/Clash/Youku/Youku.yaml, name: youku, local: Clash_Youku.yaml}
   - {path: rule/Clash/TencentVideo/TencentVideo.yaml, name: tencentvideo, local: Clash_TencentVideo.yaml}
   - {path: rule/Clash/KuaiShou/KuaiShou.yaml, name: kuaishou, local: Clash_KuaiShou.yaml}
