@@ -1,13 +1,77 @@
-# Single source of truth for intentional non-materialization (Phase 3B)
 version: 1
-updated: "2026-08-27"
+updated: '2026-08-27'
 services:
-  mistral: { reason: no_verified_upstream }
-  gcp: { reason: no_verified_upstream }
-  supabase: { reason: no_verified_upstream }
-  roblox: { reason: no_verified_upstream }
-  minecraft: { reason: no_verified_upstream }
-  blizzard: { reason: maps_to_battlenet }
-  stripe: { reason: keyword_only_empty_domain_set }
-  adblock-light: { reason: hagezi_profile_deferred }
-  adblock-pro: { reason: hagezi_profile_deferred }
+  mistral:
+    reason: no_verified_upstream
+  gcp:
+    reason: no_verified_upstream
+  supabase:
+    reason: no_verified_upstream
+  roblox:
+    reason: no_verified_upstream
+  minecraft:
+    reason: no_verified_upstream
+  blizzard:
+    reason: maps_to_battlenet
+  stripe:
+    reason: keyword_only_empty_domain_set
+  adblock-light:
+    reason: hagezi_profile_deferred
+  adblock-pro:
+    reason: hagezi_profile_deferred
+  taobao:
+    reason: no_verified_upstream_dead_bm_path_covered_by_alibaba
+  qq:
+    reason: no_verified_upstream_dead_bm_path_covered_by_tencent
+  qqmusic:
+    reason: no_verified_upstream
+  baidumap:
+    reason: no_verified_upstream_covered_by_baidu
+  baidupan:
+    reason: no_verified_upstream_covered_by_baidu
+  qwen:
+    reason: no_verified_upstream
+  kimi:
+    reason: no_verified_upstream
+  yuanbao:
+    reason: no_verified_upstream
+  wenxiaoyan:
+    reason: no_verified_upstream
+  snapchat:
+    reason: no_verified_upstream
+  quickpass:
+    reason: no_verified_upstream_covered_by_unionpay
+  npm:
+    reason: no_verified_upstream
+  pypi:
+    reason: no_verified_upstream
+  googledrive:
+    reason: no_dedicated_upstream_use_google_aggregate
+  googlemaps:
+    reason: no_dedicated_upstream_use_google_aggregate
+  temu:
+    reason: no_verified_upstream
+  aliexpress:
+    reason: no_verified_upstream
+  etsy:
+    reason: no_verified_upstream
+  asana:
+    reason: no_verified_upstream
+  crunchyroll:
+    reason: no_verified_upstream
+  lyft:
+    reason: no_verified_upstream
+  expedia:
+    reason: no_verified_upstream
+  midjourney:
+    reason: no_verified_upstream
+  elevenlabs:
+    reason: no_verified_upstream
+  dewu:
+    reason: no_verified_upstream
+  bosszhipin:
+    reason: no_verified_upstream
+  jdfinance:
+    reason: no_verified_upstream_covered_by_jingdong
+  revolut:
+    reason: no_verified_upstream
