@@ -1,52 +1,66 @@
-# Batch Status — 2026-08-26
+# Batch Status — 2026-08-27 (Phase 2B)
 
-## Closed
+## Phase 2B SOP (locked)
+
+```
+Primary → Registry → Upstream → Materialize → Build ×7 → Validate
+```
+
+Fault taxonomy:
+- Primary ✗ → 未规划
+- Primary ✓ / Registry ✗ → intentional_unmaterialized (no_verified_upstream)
+- Registry ✓ / Upstream ✗ → registry drift
+- Upstream ✓ / Database ✗ → collect/normalize
+- Database ✓ / Generated ✗ → builder
+- Generated ✓ / Validate ✗ → format/schema
+
+## Closed (Batch 1–6)
 
 | Batch | Scope | Result |
 |-------|--------|--------|
-| P0 | Builder freeze (rule_loader + mihomo/sing-box/surge + builder_validate) | ✅ |
-| 1 | Core ecosystems (Tencent/Alibaba/ByteDance/Baidu/JingDong/Amazon/…) | ✅ |
-| 2 | ChinaMobile/Unicom/Telecom + 12306 + UnionPay | ✅ |
-| UnionPay audit | Bank ownership / aggregate semantic boundary | ✅ PASS |
-| 3 | AI + Developer | ✅ |
-| 4 | Gaming | ✅ (blizzard unmaterialized — upstream maps to battlenet) |
-| 5 | Streaming / Social | ✅ |
-| 6 | Long-tail (china/other/network/finance/privacy) | ✅ |
+| P0 | Builder freeze | ✅ |
+| 1–6 | Core / CN / AI / Gaming / Streaming / Long-tail | ✅ |
+| UnionPay audit | Bank ownership boundary | ✅ PASS |
 
-## Validation
+## Phase 2B in progress
 
-```
-builder_validate  failures=0 warnings=0
-validate          Errors=0 Warnings=0
-schema_validate   errors=0  (expected warnings: baidu, jingdong aggregate)
-Source Health     100%
-Builder Coverage  100%
-```
+| Step | Scope | Status |
+|------|--------|--------|
+| 2B-0 | HEAD audit (no Builder/Loader/Primary regression) | ✅ |
+| **2B-1** | BM7 Registry drift: JingDong + iQIYI paths | ✅ commit `3cf41b7` |
+| 2B-1.5 | Identity: HTTP 200 + NAME match + rules>0 | ✅ pre-CI (360buy* / iqiyi*) |
+| 2B-0 CI | Full collect workflow_dispatch | 🔄 run 33044773318 |
+| 2B-2 | Tier0 materialize: perplexity/groq/xai/aws/firebase | ⏳ after CI |
+| 2B-3 | intentional_unmaterialized: mistral/gcp/supabase | ⏳ document only |
+| 2B-4 | Roblox / Minecraft expansion | 🚫 after 2B-0–2B-2 green |
 
-## Metrics
+### 2B-1 path fixes
 
-```
-Service Coverage     133 / 137
-Materialization Rate ~97.1%
-Rule Coverage        domains≈354,695  ips≈6,457
-```
+| service | old path | new path |
+|---------|----------|----------|
+| jingdong | `rule/Clash/JD/JD.yaml` (404) | `rule/Clash/JingDong/JingDong.yaml` |
+| iqiyi | `rule/Clash/iQiyi/iQiyi.yaml` (404) | `rule/Clash/iQIYI/iQIYI.yaml` |
 
-## Unmaterialized (registered, no invent)
+No Collector fuzzy matching. Registry is path source of truth.
 
-| id | reason |
-|----|--------|
-| adblock-light | no_database_yaml (hagezi upstream available later) |
-| adblock-pro | no_database_yaml |
-| blizzard | no separate upstream (BM Blizzard → battlenet) |
-| stripe | keyword-only / empty domain set |
+### Intentional unmaterialized (terminology)
 
-## Architecture freeze
+Use `intentional_unmaterialized` + `reason: no_verified_upstream` — **not** "blocked".
 
-```
-registry → collect → normalize → database
-  → rule_loader (canonical)
-  → Builder ×7 → generated/
-  → generate_rule_pages --strict → rule/<PrimaryEcosystem>/<Service>/
-```
+| id | primary | registry | reason |
+|----|---------|----------|--------|
+| mistral | ✓ | ✗ | no_verified_upstream |
+| gcp | ✓ | ✗ | no_verified_upstream |
+| supabase | ✓ | ✗ | no_verified_upstream |
+| blizzard | ✓ | maps→battlenet | no separate upstream |
 
-CI (`collect.yml`) rebuilds database/generated/rule on schedule / workflow_dispatch.
+### NetEase note
+
+`NetEaseMusic` path is valid; semantic scope is music-only. Keep until explicit product decision for full `NetEase` ecosystem.
+
+## Do not
+
+- Change Builder / rule_loader / Primary architecture
+- Auto path fuzzy match in Collector
+- Invent sources for mistral/gcp/supabase
+- Expand 50–100 services in one batch
