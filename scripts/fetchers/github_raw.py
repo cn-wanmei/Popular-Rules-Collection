@@ -1,10 +1,17 @@
 from __future__ import annotations
 
+from urllib.parse import quote
+
 import requests
 from .base import BaseFetcher, FetchResult
 
 SESSION = requests.Session()
-SESSION.headers.update({"User-Agent": "Popular-Rules-Collection/1.1"})
+SESSION.headers.update({"User-Agent": "Popular-Rules-Collection/1.2"})
+
+
+def _encode_path(path: str) -> str:
+    """Encode each path segment (spaces, unicode) for raw.githubusercontent.com."""
+    return "/".join(quote(seg, safe="") for seg in path.split("/"))
 
 
 class GitHubRawFetcher(BaseFetcher):
@@ -14,7 +21,7 @@ class GitHubRawFetcher(BaseFetcher):
         branch = self.cfg.get("branch", "master")
         path = entry["path"]
         name = entry.get("name") or path.replace("/", "_")
-        url = f"https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}"
+        url = f"https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{_encode_path(path)}"
         try:
             r = SESSION.get(url, timeout=90)
             if r.status_code != 200:
