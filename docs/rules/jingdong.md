@@ -1,11 +1,13 @@
-# Jingdong
+# JingDong
 
-> 用于匹配 **Jingdong** 相关域名/IP 的分流规则（上游标准化合并）。
+> 用于匹配 **JingDong** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `jingdong` |
-| 分类 | other |
+| Primary Ecosystem | **JingDong** (`jingdong`) |
+| Service Type | aggregate |
+| Tags | jingdong, china |
 | 类型 | domain |
 | Domains | 265 |
 | CIDR | 0 |
@@ -15,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **Jingdong** 相关域名/IP 的分流规则（上游标准化合并）。
+用于匹配 **JingDong** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 
@@ -56,6 +58,7 @@ _未在 config/official_sites.yaml 配置_
 - Schema: `database/services/jingdong.yaml`
 - Domains: `database/domains/jingdong.txt`
 - IPs: `database/ips/jingdong.txt`（若有）
+- Product page: `rule/JingDong/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

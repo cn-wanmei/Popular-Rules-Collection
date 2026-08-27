@@ -1,11 +1,13 @@
 # Alibaba
 
-> 用于匹配 **Alibaba** 相关域名/IP 的分流规则（上游标准化合并）。
+> 用于匹配 **Alibaba** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `alibaba` |
-| 分类 | other |
+| Primary Ecosystem | **Alibaba** (`alibaba`) |
+| Service Type | aggregate |
+| Tags | alibaba, china |
 | 类型 | mixed |
 | Domains | 463 |
 | CIDR | 54 |
@@ -15,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **Alibaba** 相关域名/IP 的分流规则（上游标准化合并）。
+用于匹配 **Alibaba** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 
@@ -56,6 +58,7 @@ _未在 config/official_sites.yaml 配置_
 - Schema: `database/services/alibaba.yaml`
 - Domains: `database/domains/alibaba.txt`
 - IPs: `database/ips/alibaba.txt`（若有）
+- Product page: `rule/Alibaba/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

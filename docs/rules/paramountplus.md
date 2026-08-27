@@ -1,11 +1,13 @@
-# Paramountplus
+# ParamountPlus
 
-> 用于匹配 **Paramountplus** 相关域名/IP 的分流规则（上游标准化合并）。
+> 用于匹配 **ParamountPlus** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `paramountplus` |
-| 分类 | other |
+| Primary Ecosystem | **Streaming** (`streaming`) |
+| Service Type | service |
+| Tags | streaming |
 | 类型 | domain |
 | Domains | 9 |
 | CIDR | 0 |
@@ -15,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **Paramountplus** 相关域名/IP 的分流规则（上游标准化合并）。
+用于匹配 **ParamountPlus** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 
@@ -55,6 +57,7 @@
 - Schema: `database/services/paramountplus.yaml`
 - Domains: `database/domains/paramountplus.txt`
 - IPs: `database/ips/paramountplus.txt`（若有）
+- Product page: `rule/Streaming/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

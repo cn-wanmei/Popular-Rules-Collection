@@ -1,11 +1,13 @@
-# Google FCM
+# GoogleFCM
 
-> 用于匹配 **Google FCM** 相关域名/IP 的分流规则（上游标准化合并）。
+> 用于匹配 **GoogleFCM** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `googlefcm` |
-| 分类 | service |
+| Primary Ecosystem | **Google** (`google`) |
+| Service Type | service |
+| Tags | google, network |
 | 类型 | mixed |
 | Domains | 15 |
 | CIDR | 26 |
@@ -15,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **Google FCM** 相关域名/IP 的分流规则（上游标准化合并）。
+用于匹配 **GoogleFCM** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 
@@ -55,6 +57,7 @@
 - Schema: `database/services/googlefcm.yaml`
 - Domains: `database/domains/googlefcm.txt`
 - IPs: `database/ips/googlefcm.txt`（若有）
+- Product page: `rule/Google/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

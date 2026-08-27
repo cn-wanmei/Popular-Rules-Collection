@@ -1,11 +1,13 @@
 # Stripe
 
-> 用于匹配 **Stripe** 相关域名/IP 的分流规则（上游标准化合并）。
+> 用于匹配 **Stripe** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `stripe` |
-| 分类 | other |
+| Primary Ecosystem | **Finance** (`finance`) |
+| Service Type | service |
+| Tags | finance |
 | 类型 | domain |
 | Domains | 1 |
 | CIDR | 0 |
@@ -15,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **Stripe** 相关域名/IP 的分流规则（上游标准化合并）。
+用于匹配 **Stripe** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 
@@ -55,6 +57,7 @@
 - Schema: `database/services/stripe.yaml`
 - Domains: `database/domains/stripe.txt`
 - IPs: `database/ips/stripe.txt`（若有）
+- Product page: `rule/Finance/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

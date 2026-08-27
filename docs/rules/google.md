@@ -1,11 +1,13 @@
 # Google
 
-> 用于匹配 **Google** 相关域名/IP 的分流规则（上游标准化合并）。
+> 用于匹配 **Google** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `google` |
-| 分类 | service |
+| Primary Ecosystem | **Google** (`google`) |
+| Service Type | aggregate |
+| Tags | google |
 | 类型 | mixed |
 | Domains | 745 |
 | CIDR | 5 |
@@ -15,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **Google** 相关域名/IP 的分流规则（上游标准化合并）。
+用于匹配 **Google** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 
@@ -56,6 +58,7 @@
 - Schema: `database/services/google.yaml`
 - Domains: `database/domains/google.txt`
 - IPs: `database/ips/google.txt`（若有）
+- Product page: `rule/Google/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

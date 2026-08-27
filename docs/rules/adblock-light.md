@@ -1,11 +1,13 @@
-# AdBlock Light
+# AdBlock-Light
 
-> 用于匹配 **AdBlock Light** 相关域名/IP 的分流规则（上游标准化合并）。
+> 用于匹配 **AdBlock-Light** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `adblock-light` |
-| 分类 | adblock |
+| Primary Ecosystem | **Privacy** (`privacy`) |
+| Service Type | service |
+| Tags | privacy |
 | 类型 | domain |
 | Domains | 42106 |
 | CIDR | 0 |
@@ -15,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **AdBlock Light** 相关域名/IP 的分流规则（上游标准化合并）。
+用于匹配 **AdBlock-Light** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 
@@ -55,6 +57,7 @@ _未在 config/official_sites.yaml 配置_
 - Schema: `database/services/adblock-light.yaml`
 - Domains: `database/domains/adblock-light.txt`
 - IPs: `database/ips/adblock-light.txt`（若有）
+- Product page: `rule/Privacy/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

@@ -1,11 +1,13 @@
-# Alibabacloud
+# AlibabaCloud
 
-> 用于匹配 **Alibabacloud** 相关域名/IP 的分流规则（上游标准化合并）。
+> 用于匹配 **AlibabaCloud** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `alibabacloud` |
-| 分类 | other |
+| Primary Ecosystem | **Alibaba** (`alibaba`) |
+| Service Type | service |
+| Tags | alibaba, china |
 | 类型 | domain |
 | Domains | 12 |
 | CIDR | 0 |
@@ -15,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **Alibabacloud** 相关域名/IP 的分流规则（上游标准化合并）。
+用于匹配 **AlibabaCloud** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 
@@ -55,6 +57,7 @@ _未在 config/official_sites.yaml 配置_
 - Schema: `database/services/alibabacloud.yaml`
 - Domains: `database/domains/alibabacloud.txt`
 - IPs: `database/ips/alibabacloud.txt`（若有）
+- Product page: `rule/Alibaba/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

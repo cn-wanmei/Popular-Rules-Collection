@@ -1,11 +1,13 @@
-# Stun
+# STUN
 
-> 用于匹配 **Stun** 相关域名/IP 的分流规则（上游标准化合并）。
+> 用于匹配 **STUN** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `stun` |
-| 分类 | other |
+| Primary Ecosystem | **Network** (`network`) |
+| Service Type | service |
+| Tags | network |
 | 类型 | mixed |
 | Domains | 350 |
 | CIDR | 16 |
@@ -15,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **Stun** 相关域名/IP 的分流规则（上游标准化合并）。
+用于匹配 **STUN** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 
@@ -55,6 +57,7 @@ _未在 config/official_sites.yaml 配置_
 - Schema: `database/services/stun.yaml`
 - Domains: `database/domains/stun.txt`
 - IPs: `database/ips/stun.txt`（若有）
+- Product page: `rule/Network/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

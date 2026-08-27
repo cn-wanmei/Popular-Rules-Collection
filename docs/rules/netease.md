@@ -1,11 +1,13 @@
-# Netease
+# NetEase
 
-> 用于匹配 **Netease** 相关域名/IP 的分流规则（上游标准化合并）。
+> 用于匹配 **NetEase** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `netease` |
-| 分类 | other |
+| Primary Ecosystem | **China** (`china`) |
+| Service Type | service |
+| Tags | china |
 | 类型 | mixed |
 | Domains | 137 |
 | CIDR | 28 |
@@ -15,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **Netease** 相关域名/IP 的分流规则（上游标准化合并）。
+用于匹配 **NetEase** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 
@@ -56,6 +58,7 @@ _未在 config/official_sites.yaml 配置_
 - Schema: `database/services/netease.yaml`
 - Domains: `database/domains/netease.txt`
 - IPs: `database/ips/netease.txt`（若有）
+- Product page: `rule/China/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

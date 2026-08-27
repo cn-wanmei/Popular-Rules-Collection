@@ -1,11 +1,13 @@
 # Apple
 
-> 用于匹配 **Apple** 相关域名/IP 的分流规则（上游标准化合并）。
+> 用于匹配 **Apple** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `apple` |
-| 分类 | service |
+| Primary Ecosystem | **Apple** (`apple`) |
+| Service Type | aggregate |
+| Tags | apple |
 | 类型 | mixed |
 | Domains | 238 |
 | CIDR | 13 |
@@ -15,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **Apple** 相关域名/IP 的分流规则（上游标准化合并）。
+用于匹配 **Apple** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 
@@ -57,6 +59,7 @@
 - Schema: `database/services/apple.yaml`
 - Domains: `database/domains/apple.txt`
 - IPs: `database/ips/apple.txt`（若有）
+- Product page: `rule/Apple/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

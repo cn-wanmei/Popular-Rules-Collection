@@ -1,11 +1,13 @@
-# Chinatelecom
+# ChinaTelecom
 
-> 用于匹配 **Chinatelecom** 相关域名/IP 的分流规则（上游标准化合并）。
+> 用于匹配 **ChinaTelecom** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `chinatelecom` |
-| 分类 | other |
+| Primary Ecosystem | **ChinaTelecom** (`chinatelecom`) |
+| Service Type | service |
+| Tags | china |
 | 类型 | domain |
 | Domains | 83 |
 | CIDR | 0 |
@@ -15,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **Chinatelecom** 相关域名/IP 的分流规则（上游标准化合并）。
+用于匹配 **ChinaTelecom** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 
@@ -55,6 +57,7 @@ _未在 config/official_sites.yaml 配置_
 - Schema: `database/services/chinatelecom.yaml`
 - Domains: `database/domains/chinatelecom.txt`
 - IPs: `database/ips/chinatelecom.txt`（若有）
+- Product page: `rule/ChinaTelecom/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

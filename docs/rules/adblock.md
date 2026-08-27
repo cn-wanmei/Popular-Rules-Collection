@@ -1,11 +1,13 @@
 # AdBlock
 
-> 用于匹配 **AdBlock** 相关域名/IP 的分流规则（上游标准化合并）。
+> 用于匹配 **AdBlock** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `adblock` |
-| 分类 | adblock |
+| Primary Ecosystem | **Privacy** (`privacy`) |
+| Service Type | aggregate |
+| Tags | privacy |
 | 类型 | mixed |
 | Domains | 402175 |
 | CIDR | 47 |
@@ -15,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **AdBlock** 相关域名/IP 的分流规则（上游标准化合并）。
+用于匹配 **AdBlock** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 
@@ -58,6 +60,7 @@ _未在 config/official_sites.yaml 配置_
 - Schema: `database/services/adblock.yaml`
 - Domains: `database/domains/adblock.txt`
 - IPs: `database/ips/adblock.txt`（若有）
+- Product page: `rule/Privacy/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

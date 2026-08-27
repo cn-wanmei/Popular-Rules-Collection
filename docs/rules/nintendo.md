@@ -1,11 +1,13 @@
 # Nintendo
 
-> 用于匹配 **Nintendo** 相关域名/IP 的分流规则（上游标准化合并）。
+> 用于匹配 **Nintendo** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `nintendo` |
-| 分类 | game |
+| Primary Ecosystem | **Gaming** (`gaming`) |
+| Service Type | service |
+| Tags | gaming |
 | 类型 | mixed |
 | Domains | 125 |
 | CIDR | 1 |
@@ -15,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **Nintendo** 相关域名/IP 的分流规则（上游标准化合并）。
+用于匹配 **Nintendo** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 
@@ -55,6 +57,7 @@
 - Schema: `database/services/nintendo.yaml`
 - Domains: `database/domains/nintendo.txt`
 - IPs: `database/ips/nintendo.txt`（若有）
+- Product page: `rule/Gaming/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

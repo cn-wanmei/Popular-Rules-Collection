@@ -1,11 +1,13 @@
 # YouTube
 
-> 用于匹配 **YouTube** 相关域名/IP 的分流规则（上游标准化合并）。
+> 用于匹配 **YouTube** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `youtube` |
-| 分类 | streaming |
+| Primary Ecosystem | **Google** (`google`) |
+| Service Type | service |
+| Tags | google, streaming |
 | 类型 | mixed |
 | Domains | 180 |
 | CIDR | 3 |
@@ -15,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **YouTube** 相关域名/IP 的分流规则（上游标准化合并）。
+用于匹配 **YouTube** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 
@@ -55,6 +57,7 @@
 - Schema: `database/services/youtube.yaml`
 - Domains: `database/domains/youtube.txt`
 - IPs: `database/ips/youtube.txt`（若有）
+- Product page: `rule/Google/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

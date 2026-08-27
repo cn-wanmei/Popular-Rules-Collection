@@ -1,11 +1,13 @@
 # Disney
 
-> 用于匹配 **Disney** 相关域名/IP 的分流规则（上游标准化合并）。
+> 用于匹配 **Disney** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `disney` |
-| 分类 | streaming |
+| Primary Ecosystem | **Streaming** (`streaming`) |
+| Service Type | service |
+| Tags | streaming |
 | 类型 | domain |
 | Domains | 172 |
 | CIDR | 0 |
@@ -15,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **Disney** 相关域名/IP 的分流规则（上游标准化合并）。
+用于匹配 **Disney** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 
@@ -55,6 +57,7 @@
 - Schema: `database/services/disney.yaml`
 - Domains: `database/domains/disney.txt`
 - IPs: `database/ips/disney.txt`（若有）
+- Product page: `rule/Streaming/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

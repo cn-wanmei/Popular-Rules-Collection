@@ -1,11 +1,13 @@
 # China
 
-> 用于匹配 **China** 相关域名/IP 的分流规则（上游标准化合并）。
+> 用于匹配 **China** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `china` |
-| 分类 | network |
+| Primary Ecosystem | **China** (`china`) |
+| Service Type | aggregate |
+| Tags | china |
 | 类型 | mixed |
 | Domains | 111519 |
 | CIDR | 5846 |
@@ -15,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **China** 相关域名/IP 的分流规则（上游标准化合并）。
+用于匹配 **China** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 
@@ -57,6 +59,7 @@ _未在 config/official_sites.yaml 配置_
 - Schema: `database/services/china.yaml`
 - Domains: `database/domains/china.txt`
 - IPs: `database/ips/china.txt`（若有）
+- Product page: `rule/China/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

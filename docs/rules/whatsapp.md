@@ -1,11 +1,13 @@
 # WhatsApp
 
-> 用于匹配 **WhatsApp** 相关域名/IP 的分流规则（上游标准化合并）。
+> 用于匹配 **WhatsApp** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `whatsapp` |
-| 分类 | social |
+| Primary Ecosystem | **Social** (`social`) |
+| Service Type | service |
+| Tags | social |
 | 类型 | mixed |
 | Domains | 6 |
 | CIDR | 11 |
@@ -15,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **WhatsApp** 相关域名/IP 的分流规则（上游标准化合并）。
+用于匹配 **WhatsApp** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 
@@ -55,6 +57,7 @@
 - Schema: `database/services/whatsapp.yaml`
 - Domains: `database/domains/whatsapp.txt`
 - IPs: `database/ips/whatsapp.txt`（若有）
+- Product page: `rule/Social/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
