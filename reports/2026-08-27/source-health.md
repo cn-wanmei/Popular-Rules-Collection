@@ -3,7 +3,7 @@
 | Metric | Value |
 |--------|------:|
 | Services | 110 |
-| Domain lines | 712088 |
+| Domain lines | 712110 |
 | IP/CIDR lines | 425 |
 | Invalid CIDR | 0 |
 | Suspicious domains | 0 |
@@ -33,15 +33,14 @@ sources:
     empty_blocked: 0
     rules_declared: 8
   blackmatrix7:
-    last_attempt: '2026-08-27T05:32:29.862312+00:00'
-    last_success: '2026-08-27T05:32:29.862359+00:00'
+    last_attempt: '2026-08-27T08:40:58.585706+00:00'
+    last_success: '2026-08-27T08:40:58.585718+00:00'
     failure_count: 0
-    status: degraded
-    files_ok: 93
-    files_failed: 2
+    status: healthy
+    files_ok: 95
+    files_failed: 0
     empty_blocked: 0
     rules_declared: 95
-    reason: 2 file(s) failed
   loyalsoldier:
     last_attempt: '2026-08-27T04:42:15.893581+00:00'
     last_success: '2026-08-27T04:42:15.893593+00:00'
@@ -70,13 +69,13 @@ sources:
     empty_blocked: 0
     rules_declared: 3
   metacubex:
-    last_attempt: '2026-08-27T05:32:31.763773+00:00'
+    last_attempt: '2026-08-27T08:40:59.808864+00:00'
     files_ok: 17
     files_failed: 0
     empty_blocked: 0
     rules_declared: 17
-    last_success: '2026-08-27T05:32:31.763790+00:00'
+    last_success: '2026-08-27T08:40:59.808873+00:00'
     failure_count: 0
     status: healthy
-updated_at: '2026-08-27T05:32:31.765495+00:00'
+updated_at: '2026-08-27T08:40:59.810335+00:00'
 ```

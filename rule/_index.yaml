@@ -1,4 +1,4 @@
-generated_at: '2026-08-27T05:46:28.856353+00:00'
+generated_at: '2026-08-27T08:55:39.367153+00:00'
 categories:
   '12306':
     display_name: '12306'
@@ -732,7 +732,7 @@ categories:
       name: JingDong
       path: rule/JingDong/JingDong
       service_type: aggregate
-      domains: 243
+      domains: 265
       ips: 0
   tencent:
     display_name: Tencent

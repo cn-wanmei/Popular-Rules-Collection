@@ -974,9 +974,9 @@
 {"d":"qiao-cn.com","s":[0,2,4],"r":[48,81],"t":"domain_suffix"}
 {"d":"203.74.95.139/32","s":[0],"r":[60],"t":"ip_cidr"}
 {"d":"203.74.95.153/32","s":[0],"r":[60],"t":"ip_cidr"}
-{"d":"cloud-shenzhen.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"cloudhefei.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"yhd.com","s":[1,2,3,4,5],"r":[4,61],"t":"domain_suffix"}
+{"d":"cloud-shenzhen.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"cloudhefei.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"yhd.com","s":[0,1,2,3,4,5],"r":[4,61],"t":"domain_suffix"}
 {"d":"767qkdj34u.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"8u7q5l9gox.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"k8azeicxy4idx.com","s":[0],"r":[62],"t":"domain_suffix"}

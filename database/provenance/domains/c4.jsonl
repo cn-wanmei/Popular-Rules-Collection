@@ -890,9 +890,10 @@
 {"d":"icloud-sandbox.com","s":[0,2,4],"r":[58,81],"t":"domain_suffix"}
 {"d":"pps.tv","s":[0],"r":[60],"t":"domain_suffix"}
 {"d":"118.26.120.0/24","s":[0],"r":[60],"t":"ip_cidr"}
-{"d":"jcloudimg.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"jingdong.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"yiyaojd.com","s":[5],"r":[61],"t":"domain_suffix"}
+{"d":"jcloudimg.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"jdfeijing.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"jingdong.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"yiyaojd.com","s":[0,5],"r":[61],"t":"domain_suffix"}
 {"d":"ec07yxgd11.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"urpwcei.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"msn.com.cn","s":[0],"r":[65],"t":"domain_suffix"}

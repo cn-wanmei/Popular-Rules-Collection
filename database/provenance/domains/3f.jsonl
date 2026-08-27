@@ -921,9 +921,9 @@
 {"d":"verilystudyhub.com","s":[0,2,4],"r":[48,81],"t":"domain_suffix"}
 {"d":"hbounify-prod.evergent.com","s":[0],"r":[52],"t":"domain_suffix"}
 {"d":"icbc.ae","s":[0],"r":[57],"t":"domain_suffix"}
-{"d":"jd-ex.net","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"jd.hk","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"jdcloudcs.com","s":[5],"r":[61],"t":"domain_suffix"}
+{"d":"jd-ex.net","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"jd.hk","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"jdcloudcs.com","s":[0,5],"r":[61],"t":"domain_suffix"}
 {"d":"microsoftsqlserver.com","s":[0,2,4],"r":[65,81],"t":"domain_suffix"}
 {"d":"msftnet.org","s":[0,2,4],"r":[65,81],"t":"domain_suffix"}
 {"d":"39.105.63.80/32","s":[0,5],"r":[66],"t":"ip_cidr"}

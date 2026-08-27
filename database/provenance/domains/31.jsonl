@@ -975,7 +975,8 @@
 {"d":"blogspot.jp","s":[0,2,4],"r":[45,48,81],"t":"domain_suffix"}
 {"d":"googlecode.com","s":[0,2,4],"r":[45,48,81],"t":"domain_suffix"}
 {"d":"172.110.32.0/21","s":[0],"r":[48,107],"t":"ip_cidr"}
-{"d":"cloudyuncheng.com","s":[5],"r":[61],"t":"domain_suffix"}
+{"d":"cloudyuncheng.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"jdfinance.com","s":[0,5],"r":[61],"t":"domain_suffix"}
 {"d":"kuaishougroup.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"microsoft.de","s":[0,2,4],"r":[65,81],"t":"domain_suffix"}
 {"d":"126.link","s":[0,5],"r":[66],"t":"domain_suffix"}

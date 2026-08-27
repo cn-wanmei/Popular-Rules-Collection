@@ -16,10 +16,11 @@ generated_files:
   domain: jingdong_domain.list
   ip: null
 statistics:
-  domains: 243
+  domains: 265
   ipv4_or_cidr: 0
-  mixed: 243
+  mixed: 265
 sources:
+- blackmatrix7
 - metacubex
 clients:
 - Mihomo

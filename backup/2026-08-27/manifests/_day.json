@@ -1,14 +1,14 @@
 {
   "date": "2026-08-27",
-  "timestamp": "2026-08-27T05:32:31.764137+00:00",
+  "timestamp": "2026-08-27T08:40:59.809151+00:00",
   "registry_version": 3,
   "sources": [
     {
       "source": "blackmatrix7",
       "fetch": "github_raw",
-      "timestamp": "2026-08-27T05:32:29.862364+00:00",
-      "files_ok": 93,
-      "files_failed": 2,
+      "timestamp": "2026-08-27T08:40:58.585722+00:00",
+      "files_ok": 95,
+      "files_failed": 0,
       "empty_blocked": 0,
       "rules_declared": 95,
       "files": [
@@ -633,13 +633,14 @@
           "status": "ok"
         },
         {
-          "name": "Clash_JD.yaml",
-          "path": "rule/Clash/JD/JD.yaml",
-          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/JD/JD.yaml",
+          "name": "Clash_JingDong.yaml",
+          "path": "rule/Clash/JingDong/JingDong.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/JingDong/JingDong.yaml",
           "service": "jingdong",
-          "status": "failed",
-          "error": "HTTP 404",
-          "status_code": 404
+          "local": "sources/blackmatrix7/Clash_JingDong.yaml",
+          "size": 8249,
+          "sha256": "20a052bb10e0601f25afca13df5cae1448c022ed148f9d523870fd075f9c9c5e",
+          "status": "ok"
         },
         {
           "name": "Clash_NetEaseMusic.yaml",
@@ -712,13 +713,14 @@
           "status": "ok"
         },
         {
-          "name": "Clash_iQiyi.yaml",
-          "path": "rule/Clash/iQiyi/iQiyi.yaml",
-          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/iQiyi/iQiyi.yaml",
+          "name": "Clash_iQIYI.yaml",
+          "path": "rule/Clash/iQIYI/iQIYI.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/iQIYI/iQIYI.yaml",
           "service": "iqiyi",
-          "status": "failed",
-          "error": "HTTP 404",
-          "status_code": 404
+          "local": "sources/blackmatrix7/Clash_iQIYI.yaml",
+          "size": 1874,
+          "sha256": "46dae845399159d1145a65fc11ce94cbef73cf3d65ac5cd32be8bd71928ea496",
+          "status": "ok"
         },
         {
           "name": "Clash_Youku.yaml",
@@ -967,7 +969,7 @@
     {
       "source": "metacubex",
       "fetch": "github_raw",
-      "timestamp": "2026-08-27T05:32:31.763795+00:00",
+      "timestamp": "2026-08-27T08:40:59.808876+00:00",
       "files_ok": 17,
       "files_failed": 0,
       "empty_blocked": 0,

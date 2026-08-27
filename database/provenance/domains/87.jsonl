@@ -917,9 +917,9 @@
 {"d":"119.235.224.0/24","s":[0],"r":[41],"t":"ip_cidr"}
 {"d":"npmjs.org","s":[0,2,4],"r":[46,81],"t":"domain_suffix"}
 {"d":"financeleadsonline.com","s":[0,2,4],"r":[48,81],"t":"domain_suffix"}
-{"d":"360buy.cn","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"cloudyanan.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"dao123.com","s":[5],"r":[61],"t":"domain_suffix"}
+{"d":"360buy.cn","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"cloudyanan.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"dao123.com","s":[0,5],"r":[61],"t":"domain_suffix"}
 {"d":"osf5xep778.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"outlook.cn","s":[0],"r":[65],"t":"domain_suffix"}
 {"d":"tracker.qingwapt.org","s":[0],"r":[80],"t":"domain"}

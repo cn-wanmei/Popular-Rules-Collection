@@ -942,8 +942,8 @@
 {"d":"keytransparency.foo","s":[0,2,4],"r":[48,81],"t":"domain_suffix"}
 {"d":"pagespeedmobilizer.com","s":[0,1,2,3,4],"r":[4,48,81],"t":"domain_suffix"}
 {"d":"web.app","s":[0,2,4],"r":[48,81],"t":"domain_suffix"}
-{"d":"360buyinternational.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"jdfw1.com","s":[5],"r":[61],"t":"domain_suffix"}
+{"d":"360buyinternational.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"jdfw1.com","s":[0,5],"r":[61],"t":"domain_suffix"}
 {"d":"kmpwgxzy.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"sturmdcp.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"apiproxy-device-prod-nlb-","s":[0],"r":[67],"t":"domain_keyword"}

@@ -941,9 +941,9 @@
 {"d":"googleplus.com","s":[0,2,4],"r":[45,48,81],"t":"domain_suffix"}
 {"d":"hjholdings.jp","s":[0],"r":[56],"t":"domain_suffix"}
 {"d":"119.176.0.0/12","s":[0],"r":[60],"t":"ip_cidr"}
-{"d":"jcloud-cache.net","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"jdcloud-mail.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"mayshijia.com","s":[5],"r":[61],"t":"domain_suffix"}
+{"d":"jcloud-cache.net","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"jdcloud-mail.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"mayshijia.com","s":[0,5],"r":[61],"t":"domain_suffix"}
 {"d":"83iiq501o2.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"onyy255q8c.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"joinms.com","s":[0],"r":[65],"t":"domain_suffix"}

@@ -901,9 +901,9 @@
 {"d":"64.233.186.188/32","s":[0],"r":[49],"t":"ip_cidr"}
 {"d":"hbo.map.fastly.net","s":[0],"r":[52],"t":"domain_suffix"}
 {"d":"icbc","s":[0],"r":[57],"t":"domain_suffix"}
-{"d":"c-nfa.jd.com","s":[1,2,3,4,5],"r":[4,61],"t":"domain_suffix"}
-{"d":"cloud-hebi.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"jdcloudcdn.net","s":[5],"r":[61],"t":"domain_suffix"}
+{"d":"c-nfa.jd.com","s":[0,1,2,3,4,5],"r":[4,61],"t":"domain_suffix"}
+{"d":"cloud-hebi.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"jdcloudcdn.net","s":[0,5],"r":[61],"t":"domain_suffix"}
 {"d":"47oupy0408.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"hmx3556y0o.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"ssrcdn.com","s":[0],"r":[62],"t":"domain_suffix"}

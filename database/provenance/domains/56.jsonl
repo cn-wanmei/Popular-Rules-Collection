@@ -916,8 +916,8 @@
 {"d":"google.co.cr","s":[0,2,4],"r":[45,48,81],"t":"domain_suffix"}
 {"d":"64.233.189.188/32","s":[0],"r":[49],"t":"ip_cidr"}
 {"d":"myhulu.com","s":[0,2,4],"r":[56,81],"t":"domain_suffix"}
-{"d":"jdcloudcdn.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"jdpay.com","s":[5],"r":[61],"t":"domain_suffix"}
+{"d":"jdcloudcdn.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"jdpay.com","s":[0,5],"r":[61],"t":"domain_suffix"}
 {"d":"etoote.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"i77p94y6yi.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"onedrive","s":[0],"r":[65,71],"t":"domain_keyword"}

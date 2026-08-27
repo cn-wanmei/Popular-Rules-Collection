@@ -1016,9 +1016,9 @@
 {"d":"35.157.217.255/32","s":[0],"r":[41],"t":"ip_cidr"}
 {"d":"github","s":[0],"r":[46],"t":"domain_keyword"}
 {"d":"appbridge.ca","s":[0,2,4],"r":[48,81],"t":"domain_suffix"}
-{"d":"cloudhengshui.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"cloudxiangtan.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"jdcloud.com","s":[5],"r":[61],"t":"domain_suffix"}
+{"d":"cloudhengshui.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"cloudxiangtan.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"jdcloud.com","s":[0,5],"r":[61],"t":"domain_suffix"}
 {"d":"1r0zwootq4.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"eqoavtbu.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"tegvzpvz.com","s":[0],"r":[62],"t":"domain_suffix"}

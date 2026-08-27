@@ -905,8 +905,9 @@
 {"d":"picasaweb.org","s":[0,2,4],"r":[48,81],"t":"domain_suffix"}
 {"d":"74.125.203.188/32","s":[0],"r":[49],"t":"ip_cidr"}
 {"d":"jiangbing.cn","s":[0],"r":[60],"t":"domain_suffix"}
-{"d":"cloudlijiang.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"jdbusiness.com","s":[5],"r":[61],"t":"domain_suffix"}
+{"d":"cloudlijiang.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"jdbusiness.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"yihaomall.com","s":[0,5],"r":[61],"t":"domain_suffix"}
 {"d":"kwaigroup.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"po7ryumvkx34.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"zwaztizp.com","s":[0],"r":[62],"t":"domain_suffix"}

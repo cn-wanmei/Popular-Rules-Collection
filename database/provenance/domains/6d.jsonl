@@ -931,10 +931,11 @@
 {"d":"gvt1-cn.com","s":[0,2,4],"r":[48,81],"t":"domain_suffix"}
 {"d":"velostrata.com","s":[0,2,4],"r":[48,81],"t":"domain_suffix"}
 {"d":"icbc.co.jp","s":[0],"r":[57],"t":"domain_suffix"}
-{"d":"cloudkunming.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"cloudluohe.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"jdh.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"xianjiqun.com","s":[5],"r":[61],"t":"domain_suffix"}
+{"d":"cloudkunming.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"cloudluohe.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"jcloudwaftest.net","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"jdh.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"xianjiqun.com","s":[0,5],"r":[61],"t":"domain_suffix"}
 {"d":"267pd1841t.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"bingworld.com","s":[0,2,4],"r":[65,81],"t":"domain_suffix"}
 {"d":"charticulator.com","s":[0,2,4],"r":[65,81],"t":"domain_suffix"}

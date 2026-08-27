@@ -909,9 +909,9 @@
 {"d":"fbbmarket.com","s":[0,2,4],"r":[41,81],"t":"domain_suffix"}
 {"d":"partylikeits1986.org","s":[0,2,4],"r":[48,81],"t":"domain_suffix"}
 {"d":"74.125.0.0/16","s":[0],"r":[48],"t":"ip_cidr"}
-{"d":"cloud-xian.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"cloudhaidong.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"vipmro.net","s":[5],"r":[61],"t":"domain_suffix"}
+{"d":"cloud-xian.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"cloudhaidong.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"vipmro.net","s":[0,5],"r":[61],"t":"domain_suffix"}
 {"d":"666kuaishou.net","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"9qd0wul789.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"itakutf.com","s":[0],"r":[62],"t":"domain_suffix"}

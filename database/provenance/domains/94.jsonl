@@ -911,7 +911,8 @@
 {"d":"google.com.au","s":[0,2,4],"r":[45,48,81],"t":"domain_suffix"}
 {"d":"shattered.io","s":[0,2,4],"r":[45,48,81],"t":"domain_suffix"}
 {"d":"icloud.hu","s":[0,2,4],"r":[58,81],"t":"domain_suffix"}
-{"d":"jdcloudedge.net","s":[5],"r":[61],"t":"domain_suffix"}
+{"d":"jcloudwaftest.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"jdcloudedge.net","s":[0,5],"r":[61],"t":"domain_suffix"}
 {"d":"1blx503444.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"microsoftcloud.com","s":[0,2,4],"r":[65,81],"t":"domain_suffix"}
 {"d":"microsoftstore.com.cn","s":[0],"r":[65],"t":"domain_suffix"}

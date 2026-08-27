@@ -57,7 +57,7 @@
     "blizzard": "no separate upstream (BM Blizzard → battlenet)"
   },
   "rule_coverage": {
-    "domains": 712088,
+    "domains": 712110,
     "ips": 425,
     "database_services": 110
   },
@@ -65,13 +65,13 @@
     "enabled_sources": 2,
     "statuses": {
       "sukkaw": "healthy",
-      "blackmatrix7": "degraded",
+      "blackmatrix7": "healthy",
       "loyalsoldier": "healthy",
       "anti-ad": "healthy",
       "hagezi": "healthy",
       "metacubex": "healthy"
     },
-    "healthy_ratio": 0.8333333333333334
+    "healthy_ratio": 1.0
   },
   "builder_coverage": {
     "mihomo": {
@@ -438,11 +438,11 @@
     "critical": 0,
     "high": 0,
     "medium": 0,
-    "low": 3104
+    "low": 3366
   },
   "sources": 2,
   "services": 110,
-  "domains": 712088,
+  "domains": 712110,
   "cidr": 425,
   "build": {
     "mihomo": "ok",

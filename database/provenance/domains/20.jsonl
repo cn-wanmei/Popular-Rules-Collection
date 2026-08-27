@@ -933,8 +933,8 @@
 {"d":"googel.com","s":[0,2,4],"r":[48,81],"t":"domain_suffix"}
 {"d":"google.co.bw","s":[0,2,4],"r":[45,48,81],"t":"domain_suffix"}
 {"d":"74.125.23.188/32","s":[0],"r":[49],"t":"ip_cidr"}
-{"d":"jcloudlive.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"ocwms.com","s":[5],"r":[61],"t":"domain_suffix"}
+{"d":"jcloudlive.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"ocwms.com","s":[0,5],"r":[61],"t":"domain_suffix"}
 {"d":"83mo7n9giq.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"kwaizt.cn","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"mt22q4s3w5.com","s":[0],"r":[62],"t":"domain_suffix"}

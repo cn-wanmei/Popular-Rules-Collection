@@ -897,7 +897,9 @@
 {"d":"gipscorp.com","s":[0,2,4],"r":[48,81],"t":"domain_suffix"}
 {"d":"howtogetmo.co.uk","s":[0,2,4],"r":[48,81],"t":"domain_suffix"}
 {"d":"103.44.56.0/22","s":[0],"r":[60],"t":"ip_cidr"}
-{"d":"jdcloudstatus.net","s":[5],"r":[61],"t":"domain_suffix"}
+{"d":"jdcloudstatus.net","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"jddtv.cn","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"wanggou.com","s":[0,5],"r":[61],"t":"domain_suffix"}
 {"d":"acfunchina.cn","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"ch6k5zd77f.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"q89850n302.com","s":[0],"r":[62],"t":"domain_suffix"}

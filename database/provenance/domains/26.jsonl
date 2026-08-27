@@ -67,7 +67,7 @@
 {"d":"flywayshackees.qpon","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
 {"d":"galeaeevovae.com","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
 {"d":"gau.groobee.io","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
-{"d":"gia.jd.com","s":[1,2,3,4,5],"r":[2,3,4,61],"t":"domain_suffix"}
+{"d":"gia.jd.com","s":[0,1,2,3,4,5],"r":[2,3,4,61],"t":"domain_suffix"}
 {"d":"goodfoodtours.com","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
 {"d":"grapeshot.co.uk","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
 {"d":"greengoplatform.com","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
@@ -979,7 +979,9 @@
 {"d":"google.gr","s":[0,2,4],"r":[45,48,81],"t":"domain_suffix"}
 {"d":"google.ms","s":[0,2,4],"r":[45,48,81],"t":"domain_suffix"}
 {"d":"cf-images.ap-southeast-1.prod.boltdns.net","s":[0],"r":[52],"t":"domain_suffix"}
-{"d":"jcloudlb.com","s":[5],"r":[61],"t":"domain_suffix"}
+{"d":"ibaitiao.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"jcloudlb.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"tjjt360.com","s":[0,5],"r":[61],"t":"domain_suffix"}
 {"d":"kwaitv.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"kumo.com","s":[0,2,4],"r":[65,81],"t":"domain_suffix"}
 {"d":"microsofttranslator.com","s":[0,2,4],"r":[65,81],"t":"domain_suffix"}

@@ -915,7 +915,7 @@
 {"d":"google.no","s":[0,2,4],"r":[45,48,81],"t":"domain_suffix"}
 {"d":"216.73.80.0/20","s":[0],"r":[48,107],"t":"ip_cidr"}
 {"d":"cws-hulu.conviva.com","s":[0],"r":[56],"t":"domain_suffix"}
-{"d":"jdcloudstatic.net","s":[5],"r":[61],"t":"domain_suffix"}
+{"d":"jdcloudstatic.net","s":[0,5],"r":[61],"t":"domain_suffix"}
 {"d":"dianmiao.cn","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"bingsandbox.com","s":[0,2,4],"r":[65,81],"t":"domain_suffix"}
 {"d":"microsoftsilverlight.org","s":[0,2,4],"r":[65,81],"t":"domain_suffix"}

@@ -224,7 +224,7 @@
 {"d":"adplushub.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"adpro.com.ua","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"ads-splash-i1.xhscdn.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
-{"d":"ads-union.jd.com","s":[1,2,3,4,5],"r":[3,4,61],"t":"domain_suffix"}
+{"d":"ads-union.jd.com","s":[0,1,2,3,4,5],"r":[3,4,61],"t":"domain_suffix"}
 {"d":"ads.fs.lsapp.tech","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"ads.gettools.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"ads.horsehero.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
@@ -987,8 +987,8 @@
 {"d":"google.me","s":[0,2,4],"r":[45,48,81],"t":"domain_suffix"}
 {"d":"lanternal.com","s":[0,2,4],"r":[48,81],"t":"domain_suffix"}
 {"d":"savethedate.foo","s":[0,2,4],"r":[45,48,81],"t":"domain_suffix"}
-{"d":"cloudsuqian.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"jdcloud-api.com","s":[5],"r":[61],"t":"domain_suffix"}
+{"d":"cloudsuqian.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"jdcloud-api.com","s":[0,5],"r":[61],"t":"domain_suffix"}
 {"d":"zgvmxma.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"microsoft.net","s":[0,2,4],"r":[65,81],"t":"domain_suffix"}
 {"d":"msminico.cn","s":[0],"r":[65],"t":"domain_suffix"}

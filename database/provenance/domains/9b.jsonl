@@ -908,8 +908,9 @@
 {"d":"chrome.com","s":[0,2,4],"r":[45,48,81],"t":"domain_suffix"}
 {"d":"icbcme.ae","s":[0],"r":[57],"t":"domain_suffix"}
 {"d":"myicloud.net","s":[0,2,4],"r":[58,81],"t":"domain_suffix"}
-{"d":"cloudsiping.com","s":[5],"r":[61],"t":"domain_suffix"}
-{"d":"cloudtongliang.com","s":[5],"r":[61],"t":"domain_suffix"}
+{"d":"cloudsiping.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"cloudtongliang.com","s":[0,5],"r":[61],"t":"domain_suffix"}
+{"d":"jdd-global.com","s":[0,5],"r":[61],"t":"domain_suffix"}
 {"d":"e84p8174c7.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"kwairga8upiycbiv.com","s":[0],"r":[62],"t":"domain_suffix"}
 {"d":"mwquicio.com","s":[0],"r":[62],"t":"domain_suffix"}
