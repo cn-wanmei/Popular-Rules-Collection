@@ -1,33 +1,13 @@
 {
   "date": "2026-08-27",
-  "version": 2,
+  "version": 3,
   "service_coverage": {
     "registered": 184,
     "materialized": 153,
-    "intentional_unmaterialized": 11,
-    "unexpected_missing": [
-      "amazonaws",
-      "applications",
-      "bbc",
-      "dingtalk",
-      "discoveryplus",
-      "emby",
-      "huawei",
-      "kugoukuwo",
-      "lan",
-      "naver",
-      "ntp",
-      "oppo",
-      "origin",
-      "scholar",
-      "sina",
-      "siri",
-      "steamcn",
-      "vivo",
-      "wikipedia",
-      "xiaomi"
-    ],
-    "coverage": 0.8315
+    "intentional_unmaterialized": 31,
+    "unexpected_missing": [],
+    "coverage": 0.8315,
+    "daily_coverage": 1.0
   },
   "intentional_unmaterialized": {
     "mistral": "no_verified_upstream",
@@ -40,7 +20,192 @@
     "qq": "no_verified_upstream_dead_bm_path_covered_by_tencent",
     "snapchat": "no_verified_upstream",
     "npm": "no_verified_upstream",
-    "googledrive": "no_dedicated_upstream_use_google_aggregate"
+    "googledrive": "no_dedicated_upstream_use_google_aggregate",
+    "amazonaws": "covered_by_aws_amazon_aggregate",
+    "applications": "generic_bucket_no_dedicated_upstream",
+    "bbc": "no_verified_upstream",
+    "dingtalk": "covered_by_alibaba_aggregate",
+    "discoveryplus": "no_verified_upstream",
+    "emby": "no_verified_upstream",
+    "huawei": "no_verified_upstream",
+    "kugoukuwo": "no_verified_upstream",
+    "lan": "local_network_no_public_upstream",
+    "naver": "no_verified_upstream",
+    "ntp": "protocol_service_no_domain_ruleset",
+    "oppo": "no_verified_upstream",
+    "origin": "maps_to_ea",
+    "scholar": "no_verified_upstream",
+    "sina": "no_verified_upstream",
+    "siri": "covered_by_apple_aggregate",
+    "steamcn": "covered_by_steam_china_paths",
+    "vivo": "no_verified_upstream",
+    "wikipedia": "no_verified_upstream",
+    "xiaomi": "no_verified_upstream"
+  },
+  "intentional_detail": {
+    "mistral": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "gcp": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "supabase": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "roblox": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "minecraft": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "blizzard": {
+      "reason": "maps_to_battlenet",
+      "code": "MAPS_TO"
+    },
+    "taobao": {
+      "reason": "no_verified_upstream_dead_bm_path_covered_by_alibaba",
+      "code": "COVERED_BY_AGGREGATE"
+    },
+    "qq": {
+      "reason": "no_verified_upstream_dead_bm_path_covered_by_tencent",
+      "code": "COVERED_BY_AGGREGATE"
+    },
+    "snapchat": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "npm": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "googledrive": {
+      "reason": "no_dedicated_upstream_use_google_aggregate",
+      "code": "COVERED_BY_AGGREGATE"
+    },
+    "amazonaws": {
+      "reason": "covered_by_aws_amazon_aggregate",
+      "code": "COVERED_BY_AGGREGATE"
+    },
+    "applications": {
+      "reason": "generic_bucket_no_dedicated_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "bbc": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "dingtalk": {
+      "reason": "covered_by_alibaba_aggregate",
+      "code": "COVERED_BY_AGGREGATE"
+    },
+    "discoveryplus": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "emby": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "huawei": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "kugoukuwo": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "lan": {
+      "reason": "local_network_no_public_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "naver": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "ntp": {
+      "reason": "protocol_service_no_domain_ruleset",
+      "code": "NO_UPSTREAM"
+    },
+    "oppo": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "origin": {
+      "reason": "maps_to_ea",
+      "code": "MAPS_TO"
+    },
+    "scholar": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "sina": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "siri": {
+      "reason": "covered_by_apple_aggregate",
+      "code": "COVERED_BY_AGGREGATE"
+    },
+    "steamcn": {
+      "reason": "covered_by_steam_china_paths",
+      "code": "COVERED_BY_AGGREGATE"
+    },
+    "vivo": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "wikipedia": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "xiaomi": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    }
+  },
+  "intentional_by_code": {
+    "NO_UPSTREAM": [
+      "applications",
+      "bbc",
+      "discoveryplus",
+      "emby",
+      "gcp",
+      "huawei",
+      "kugoukuwo",
+      "lan",
+      "minecraft",
+      "mistral",
+      "naver",
+      "npm",
+      "ntp",
+      "oppo",
+      "roblox",
+      "scholar",
+      "sina",
+      "snapchat",
+      "supabase",
+      "vivo",
+      "wikipedia",
+      "xiaomi"
+    ],
+    "MAPS_TO": [
+      "blizzard",
+      "origin"
+    ],
+    "COVERED_BY_AGGREGATE": [
+      "amazonaws",
+      "dingtalk",
+      "googledrive",
+      "qq",
+      "siri",
+      "steamcn",
+      "taobao"
+    ]
   },
   "rule_coverage": {
     "domains": 712601,
@@ -48,7 +213,22 @@
     "database_services": 153
   },
   "source_health": {
+    "configured_sources": 2,
     "enabled_sources": 2,
+    "collected_this_run": 2,
+    "historical_in_health": 6,
+    "enabled_ids": [
+      "blackmatrix7",
+      "metacubex"
+    ],
+    "historical_ids": [
+      "anti-ad",
+      "blackmatrix7",
+      "hagezi",
+      "loyalsoldier",
+      "metacubex",
+      "sukkaw"
+    ],
     "statuses": {
       "sukkaw": "healthy",
       "blackmatrix7": "healthy",
@@ -444,9 +624,9 @@
     }
   },
   "validation": {
-    "schema_validate": "unknown",
+    "schema_validate": "pass",
     "builder_validate": "pass",
-    "validate": "unknown",
+    "validate": "pass",
     "builder_failures": 0
   },
   "conflicts": {
