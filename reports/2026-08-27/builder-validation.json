@@ -160,6 +160,19 @@
       }
     },
     {
+      "service": "anthropic",
+      "database": 3,
+      "clients": {
+        "mihomo": 4,
+        "sing-box": 4,
+        "surge": 4,
+        "shadowrocket": 3,
+        "quantumult-x": 3,
+        "egern": 3,
+        "loon": 3
+      }
+    },
+    {
       "service": "apple",
       "database": 13,
       "clients": {
@@ -196,6 +209,19 @@
         "quantumult-x": 7,
         "egern": 7,
         "loon": 7
+      }
+    },
+    {
+      "service": "atlassian",
+      "database": 5,
+      "clients": {
+        "mihomo": 5,
+        "sing-box": 5,
+        "surge": 5,
+        "shadowrocket": 5,
+        "quantumult-x": 5,
+        "egern": 5,
+        "loon": 5
       }
     },
     {
@@ -443,6 +469,19 @@
         "quantumult-x": 25,
         "egern": 25,
         "loon": 25
+      }
+    },
+    {
+      "service": "digitalocean",
+      "database": 4,
+      "clients": {
+        "mihomo": 4,
+        "sing-box": 4,
+        "surge": 4,
+        "shadowrocket": 4,
+        "quantumult-x": 4,
+        "egern": 4,
+        "loon": 4
       }
     },
     {
@@ -823,6 +862,19 @@
       }
     },
     {
+      "service": "kakaotalk",
+      "database": 15,
+      "clients": {
+        "mihomo": 15,
+        "sing-box": 15,
+        "surge": 15,
+        "shadowrocket": 21,
+        "quantumult-x": 21,
+        "egern": 21,
+        "loon": 21
+      }
+    },
+    {
       "service": "kuaishou",
       "database": 678,
       "clients": {
@@ -833,6 +885,19 @@
         "quantumult-x": 678,
         "egern": 678,
         "loon": 678
+      }
+    },
+    {
+      "service": "line",
+      "database": 24,
+      "clients": {
+        "mihomo": 24,
+        "sing-box": 24,
+        "surge": 24,
+        "shadowrocket": 40,
+        "quantumult-x": 40,
+        "egern": 40,
+        "loon": 40
       }
     },
     {
@@ -963,6 +1028,19 @@
         "quantumult-x": 36,
         "egern": 36,
         "loon": 36
+      }
+    },
+    {
+      "service": "oracle",
+      "database": 25,
+      "clients": {
+        "mihomo": 25,
+        "sing-box": 25,
+        "surge": 25,
+        "shadowrocket": 25,
+        "quantumult-x": 25,
+        "egern": 25,
+        "loon": 25
       }
     },
     {
@@ -1119,6 +1197,19 @@
         "quantumult-x": 5,
         "egern": 5,
         "loon": 5
+      }
+    },
+    {
+      "service": "slack",
+      "database": 11,
+      "clients": {
+        "mihomo": 11,
+        "sing-box": 11,
+        "surge": 11,
+        "shadowrocket": 11,
+        "quantumult-x": 11,
+        "egern": 11,
+        "loon": 11
       }
     },
     {

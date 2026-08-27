@@ -1,0 +1,9 @@
+# name: Digitalocean
+# id: digitalocean
+# count: 4
+no_resolve: true
+domain_suffix_set:
+- digitalocean.com
+- digitaloceanspaces.com
+- do.co
+- nginxconfig.io

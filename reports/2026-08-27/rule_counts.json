@@ -28,6 +28,7 @@
     "speedtest": 5,
     "gemini": 13,
     "apple": 20,
+    "line": 24,
     "alibaba": 517,
     "iqiyi": 56,
     "copilot": 49,
@@ -40,6 +41,7 @@
     "baidu": 324,
     "icbc": 58,
     "telegram": 35,
+    "oracle": 25,
     "discord": 29,
     "tencent": 698,
     "twitter": 33,
@@ -47,6 +49,8 @@
     "whatsapp": 17,
     "github": 31,
     "rockstar": 5,
+    "slack": 11,
+    "kakaotalk": 15,
     "ea": 165,
     "gfw": 4387,
     "twitch": 21,
@@ -61,6 +65,7 @@
     "kuaishou": 678,
     "pinterest": 23,
     "riotgames": 55,
+    "anthropic": 3,
     "adblock-pro": 226095,
     "nintendo": 126,
     "pinduoduo": 3,
@@ -89,6 +94,7 @@
     "teams": 4,
     "proxy": 28227,
     "netease": 81,
+    "digitalocean": 4,
     "onedrive": 16,
     "binance": 12,
     "figma": 1,
@@ -103,6 +109,7 @@
     "paypal": 247,
     "private": 248,
     "wechat": 30,
+    "atlassian": 5,
     "ubisoft": 1,
     "primevideo": 25,
     "zoom": 3,
@@ -113,6 +120,6 @@
     "adblock-light": 42106,
     "hashicorp": 8
   },
-  "service_count": 111,
-  "total_rules": 712844
+  "service_count": 118,
+  "total_rules": 712931
 }

@@ -344,6 +344,24 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "addthisedge.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "oracle"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "adkwai.com"
     },
     "policy": "proxy",
@@ -2503,6 +2521,24 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "oracleinfinity.io"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "oracle"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "p3-ad-sign.byteimg.com"
     },
     "policy": "proxy",
@@ -3639,6 +3675,23 @@
     "services": [
       "adblock-pro",
       "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "addthiscdn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "oracle"
     ]
   },
   {
@@ -5732,6 +5785,7 @@
     ],
     "services": [
       "ai",
+      "anthropic",
       "claude"
     ]
   },
@@ -5784,6 +5838,7 @@
     ],
     "services": [
       "ai",
+      "anthropic",
       "claude"
     ]
   },
@@ -8693,54 +8748,6 @@
     "match": {
       "type": "domain_suffix",
       "value": "ddurl.to"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "metacubex"
-    ],
-    "services": [
-      "alibaba"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "dfkhgj.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "metacubex"
-    ],
-    "services": [
-      "alibaba"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "dianwoda.cn"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "metacubex"
-    ],
-    "services": [
-      "alibaba"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "dianwoda.com"
     },
     "policy": "proxy",
     "sources": [

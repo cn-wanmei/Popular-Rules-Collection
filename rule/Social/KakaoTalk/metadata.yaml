@@ -1,0 +1,32 @@
+id: kakaotalk
+name: KakaoTalk
+primary_category: social
+categories:
+- social
+service_type: service
+parent: null
+children: null
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: kakaotalk.list
+  domain: kakaotalk_domain.list
+  ip: kakaotalk_ip.list
+statistics:
+  domains: 9
+  ipv4_or_cidr: 6
+  mixed: 15
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-27'
+auto_generated: true

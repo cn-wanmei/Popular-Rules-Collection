@@ -3,49 +3,37 @@
   "version": 2,
   "service_coverage": {
     "registered": 158,
-    "materialized": 111,
-    "intentional_unmaterialized": 1,
+    "materialized": 118,
+    "intentional_unmaterialized": 6,
     "unexpected_missing": [
       "amazonaws",
-      "anthropic",
       "applications",
-      "atlassian",
       "bbc",
       "bocom",
       "ceb",
-      "digitalocean",
       "dingtalk",
       "discoveryplus",
       "eleme",
       "emby",
       "gaode",
-      "gcp",
       "googledrive",
       "huawei",
       "jetbrains",
-      "kakaotalk",
       "kugoukuwo",
       "lan",
-      "line",
-      "minecraft",
-      "mistral",
       "naver",
       "npm",
       "ntp",
       "oppo",
-      "oracle",
       "origin",
       "pingan",
       "psbc",
       "qq",
-      "roblox",
       "scholar",
       "sina",
       "siri",
-      "slack",
       "snapchat",
       "steamcn",
-      "supabase",
       "taobao",
       "threads",
       "vivo",
@@ -53,15 +41,20 @@
       "xianyu",
       "xiaomi"
     ],
-    "coverage": 0.7025
+    "coverage": 0.7468
   },
   "intentional_unmaterialized": {
-    "blizzard": "no separate upstream (BM Blizzard → battlenet)"
+    "mistral": "no_verified_upstream",
+    "gcp": "no_verified_upstream",
+    "supabase": "no_verified_upstream",
+    "roblox": "no_verified_upstream",
+    "minecraft": "no_verified_upstream",
+    "blizzard": "maps_to_battlenet"
   },
   "rule_coverage": {
-    "domains": 712125,
-    "ips": 425,
-    "database_services": 111
+    "domains": 712190,
+    "ips": 447,
+    "database_services": 118
   },
   "source_health": {
     "enabled_sources": 2,
@@ -77,31 +70,31 @@
   },
   "builder_coverage": {
     "mihomo": {
-      "files": 222,
+      "files": 236,
       "status": "ok"
     },
     "sing-box": {
-      "files": 111,
+      "files": 118,
       "status": "ok"
     },
     "surge": {
-      "files": 219,
+      "files": 233,
       "status": "ok"
     },
     "shadowrocket": {
-      "files": 219,
+      "files": 233,
       "status": "ok"
     },
     "quantumult-x": {
-      "files": 111,
+      "files": 118,
       "status": "ok"
     },
     "egern": {
-      "files": 111,
+      "files": 118,
       "status": "ok"
     },
     "loon": {
-      "files": 111,
+      "files": 118,
       "status": "ok"
     }
   },
@@ -116,7 +109,7 @@
     },
     "ai": {
       "registered": 11,
-      "materialized": 9,
+      "materialized": 10,
       "ids": [
         "ai",
         "anthropic",
@@ -130,7 +123,7 @@
         "perplexity",
         "xai"
       ],
-      "coverage": 0.8182
+      "coverage": 0.9091
     },
     "alibaba": {
       "registered": 9,
@@ -238,7 +231,7 @@
     },
     "developer": {
       "registered": 18,
-      "materialized": 11,
+      "materialized": 15,
       "ids": [
         "akamai",
         "atlassian",
@@ -259,7 +252,7 @@
         "supabase",
         "vercel"
       ],
-      "coverage": 0.6111
+      "coverage": 0.8333
     },
     "finance": {
       "registered": 4,
@@ -366,7 +359,7 @@
     },
     "social": {
       "registered": 15,
-      "materialized": 11,
+      "materialized": 13,
       "ids": [
         "discord",
         "facebook",
@@ -384,7 +377,7 @@
         "whatsapp",
         "zoom"
       ],
-      "coverage": 0.7333
+      "coverage": 0.8667
     },
     "streaming": {
       "registered": 11,
@@ -443,12 +436,12 @@
     "critical": 0,
     "high": 0,
     "medium": 0,
-    "low": 3366
+    "low": 3369
   },
   "sources": 2,
-  "services": 111,
-  "domains": 712125,
-  "cidr": 425,
+  "services": 118,
+  "domains": 712190,
+  "cidr": 447,
   "build": {
     "mihomo": "ok",
     "sing-box": "ok",

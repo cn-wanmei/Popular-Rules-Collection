@@ -1,4 +1,4 @@
-generated_at: '2026-08-27T12:21:55.139686+00:00'
+generated_at: '2026-08-27T13:52:17.386896+00:00'
 categories:
   '12306':
     display_name: '12306'
@@ -98,6 +98,12 @@ categories:
       service_type: aggregate
       domains: 48
       ips: 0
+    - id: anthropic
+      name: Anthropic
+      path: rule/AI/Anthropic
+      service_type: service
+      domains: 3
+      ips: 0
     - id: claude
       name: Claude
       path: rule/AI/Claude
@@ -156,6 +162,12 @@ categories:
       service_type: service
       domains: 6
       ips: 0
+    - id: atlassian
+      name: Atlassian
+      path: rule/Developer/Atlassian
+      service_type: service
+      domains: 5
+      ips: 0
     - id: azure
       name: Azure
       path: rule/Developer/Azure
@@ -173,6 +185,12 @@ categories:
       path: rule/Developer/Developer
       service_type: aggregate
       domains: 70
+      ips: 0
+    - id: digitalocean
+      name: DigitalOcean
+      path: rule/Developer/DigitalOcean
+      service_type: service
+      domains: 4
       ips: 0
     - id: docker
       name: Docker
@@ -209,6 +227,18 @@ categories:
       path: rule/Developer/Notion
       service_type: service
       domains: 6
+      ips: 0
+    - id: oracle
+      name: Oracle
+      path: rule/Developer/Oracle
+      service_type: service
+      domains: 25
+      ips: 0
+    - id: slack
+      name: Slack
+      path: rule/Developer/Slack
+      service_type: service
+      domains: 11
       ips: 0
     - id: vercel
       name: Vercel
@@ -534,6 +564,18 @@ categories:
       service_type: service
       domains: 3
       ips: 0
+    - id: kakaotalk
+      name: KakaoTalk
+      path: rule/Social/KakaoTalk
+      service_type: service
+      domains: 9
+      ips: 6
+    - id: line
+      name: Line
+      path: rule/Social/Line
+      service_type: service
+      domains: 8
+      ips: 16
     - id: linkedin
       name: LinkedIn
       path: rule/Social/LinkedIn

@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "phase": "3A",
+  "generated_at": "2026-08-27T13:51:30.857771+00:00",
+  "date": "2026-08-27",
+  "commit": "ada9e66c482f7b7959ea0d09f10b49dfb79231ec",
+  "source_status": {
+    "health": {
+      "sukkaw": {
+        "last_attempt": "2026-08-27T04:42:20.112551+00:00",
+        "last_success": "2026-08-27T04:42:20.112563+00:00",
+        "failure_count": 0,
+        "status": "healthy",
+        "files_ok": 8,
+        "files_failed": 0,
+        "empty_blocked": 0,
+        "rules_declared": 8
+      },
+      "blackmatrix7": {
+        "last_attempt": "2026-08-27T13:38:11.955726+00:00",
+        "last_success": "2026-08-27T13:38:11.955743+00:00",
+        "failure_count": 0,
+        "status": "healthy",
+        "files_ok": 104,
+        "files_failed": 0,
+        "empty_blocked": 0,
+        "rules_declared": 104
+      },
+      "loyalsoldier": {
+        "last_attempt": "2026-08-27T04:42:15.893581+00:00",
+        "last_success": "2026-08-27T04:42:15.893593+00:00",
+        "failure_count": 0,
+        "status": "healthy",
+        "files_ok": 14,
+        "files_failed": 0,
+        "empty_blocked": 0,
+        "rules_declared": 14
+      },
+      "anti-ad": {
+        "last_attempt": "2026-08-27T04:42:17.147775+00:00",
+        "last_success": "2026-08-27T04:42:17.147787+00:00",
+        "failure_count": 0,
+        "status": "healthy",
+        "files_ok": 3,
+        "files_failed": 0,
+        "empty_blocked": 0,
+        "rules_declared": 3
+      },
+      "hagezi": {
+        "last_attempt": "2026-08-27T04:42:19.128645+00:00",
+        "last_success": "2026-08-27T04:42:19.128658+00:00",
+        "failure_count": 0,
+        "status": "healthy",
+        "files_ok": 3,
+        "files_failed": 0,
+        "empty_blocked": 0,
+        "rules_declared": 3
+      },
+      "metacubex": {
+        "last_attempt": "2026-08-27T13:38:13.053248+00:00",
+        "files_ok": 17,
+        "files_failed": 0,
+        "empty_blocked": 0,
+        "rules_declared": 17,
+        "last_success": "2026-08-27T13:38:13.053265+00:00",
+        "failure_count": 0,
+        "status": "healthy"
+      }
+    },
+    "healthy_ratio": 1.0,
+    "enabled_sources": 2,
+    "snapshot": {
+      "schema_version": 1,
+      "generated_at": "2026-08-27T13:51:27.703283+00:00",
+      "date": "2026-08-27",
+      "sources": [
+        {
+          "id": "blackmatrix7",
+          "enabled": true,
+          "priority": 95,
+          "rules_declared": 104,
+          "files_ok": 104,
+          "files_failed": 0,
+          "health_status": "healthy",
+          "lifecycle": "active",
+          "last_success": "2026-08-27T13:38:11.955743+00:00",
+          "last_attempt": "2026-08-27T13:38:11.955726+00:00"
+        },
+        {
+          "id": "metacubex",
+          "enabled": true,
+          "priority": 90,
+          "rules_declared": 17,
+          "files_ok": 17,
+          "files_failed": 0,
+          "health_status": "healthy",
+          "lifecycle": "active",
+          "last_success": "2026-08-27T13:38:13.053265+00:00",
+          "last_attempt": "2026-08-27T13:38:13.053248+00:00"
+        }
+      ],
+      "intentional_unmaterialized": {
+        "mistral": {
+          "reason": "no_verified_upstream"
+        },
+        "gcp": {
+          "reason": "no_verified_upstream"
+        },
+        "supabase": {
+          "reason": "no_verified_upstream"
+        },
+        "roblox": {
+          "reason": "no_verified_upstream"
+        },
+        "minecraft": {
+          "reason": "no_verified_upstream"
+        },
+        "blizzard": {
+          "reason": "maps_to_battlenet"
+        },
+        "stripe": {
+          "reason": "keyword_only_empty_domain_set"
+        },
+        "adblock-light": {
+          "reason": "hagezi_profile_deferred"
+        },
+        "adblock-pro": {
+          "reason": "hagezi_profile_deferred"
+        }
+      },
+      "lifecycle_enum": [
+        "active",
+        "degraded",
+        "unmaterialized",
+        "review",
+        "retired"
+      ]
+    }
+  },
+  "service_count": 158,
+  "materialized_count": 118,
+  "intentional_unmaterialized": 6,
+  "domain_count": 712190,
+  "ip_count": 447,
+  "builder_count": 7,
+  "builder_coverage": {
+    "mihomo": {
+      "files": 236,
+      "status": "ok"
+    },
+    "sing-box": {
+      "files": 118,
+      "status": "ok"
+    },
+    "surge": {
+      "files": 233,
+      "status": "ok"
+    },
+    "shadowrocket": {
+      "files": 233,
+      "status": "ok"
+    },
+    "quantumult-x": {
+      "files": 118,
+      "status": "ok"
+    },
+    "egern": {
+      "files": 118,
+      "status": "ok"
+    },
+    "loon": {
+      "files": 118,
+      "status": "ok"
+    }
+  },
+  "validation": {
+    "schema_validate": "unknown",
+    "builder_validate": "pass",
+    "validate": "unknown",
+    "builder_failures": 0
+  },
+  "quality": {
+    "flags": null,
+    "shown": null
+  },
+  "drift": {
+    "warn": 0,
+    "high": 0,
+    "review": 0,
+    "baseline_compared": null
+  },
+  "identity": {
+    "checked": null,
+    "warnings": 0
+  },
+  "rule_counts_total": 712931,
+  "artifacts": {
+    "statistics": "reports/2026-08-27/statistics.json",
+    "rule_counts": "reports/2026-08-27/rule_counts.json",
+    "manifest": "generated/manifest.json"
+  }
+}

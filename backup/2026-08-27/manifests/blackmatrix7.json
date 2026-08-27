@@ -1,11 +1,11 @@
 {
   "source": "blackmatrix7",
   "fetch": "github_raw",
-  "timestamp": "2026-08-27T12:07:37.656910+00:00",
-  "files_ok": 96,
+  "timestamp": "2026-08-27T13:38:11.955747+00:00",
+  "files_ok": 104,
   "files_failed": 0,
   "empty_blocked": 0,
-  "rules_declared": 96,
+  "rules_declared": 104,
   "files": [
     {
       "name": "Clash_Apple.yaml",
@@ -965,6 +965,86 @@
       "local": "sources/blackmatrix7/Clash_Garena.yaml",
       "size": 661,
       "sha256": "5e4c4a2757ebb6e09f0b166a1c73f3f5c0802bec3706af6f3f2264db025cecaf",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Anthropic.yaml",
+      "path": "rule/Clash/Anthropic/Anthropic.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Anthropic/Anthropic.yaml",
+      "service": "anthropic",
+      "local": "sources/blackmatrix7/Clash_Anthropic.yaml",
+      "size": 284,
+      "sha256": "af16ff9b3d5d587f93fa1761292401c8cc716fd52e7263f8ced577b90d7507c5",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_DigitalOcean.yaml",
+      "path": "rule/Clash/DigitalOcean/DigitalOcean.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DigitalOcean/DigitalOcean.yaml",
+      "service": "digitalocean",
+      "local": "sources/blackmatrix7/Clash_DigitalOcean.yaml",
+      "size": 303,
+      "sha256": "9e4d0554deb27c37b2812b8b35d43832009fdf84f1dab2298a5fc7467dcb829c",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Atlassian.yaml",
+      "path": "rule/Clash/Atlassian/Atlassian.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Atlassian/Atlassian.yaml",
+      "service": "atlassian",
+      "local": "sources/blackmatrix7/Clash_Atlassian.yaml",
+      "size": 324,
+      "sha256": "109fd0bbdf8f56a7abf64341f749250a18ee5bb22b7d16ee33edde97103b5702",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Slack.yaml",
+      "path": "rule/Clash/Slack/Slack.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Slack/Slack.yaml",
+      "service": "slack",
+      "local": "sources/blackmatrix7/Clash_Slack.yaml",
+      "size": 521,
+      "sha256": "afce83215850f474ba424af8522fc40f1af42a05ae8048c7536283762a72674c",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Line.yaml",
+      "path": "rule/Clash/Line/Line.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Line/Line.yaml",
+      "service": "line",
+      "local": "sources/blackmatrix7/Clash_Line.yaml",
+      "size": 867,
+      "sha256": "23af95c3f877d0754cd663ba3d4179aae821dc693be3b37cf7e98a02d0cb46b4",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_KakaoTalk.yaml",
+      "path": "rule/Clash/KakaoTalk/KakaoTalk.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/KakaoTalk/KakaoTalk.yaml",
+      "service": "kakaotalk",
+      "local": "sources/blackmatrix7/Clash_KakaoTalk.yaml",
+      "size": 620,
+      "sha256": "4623ea42c2d45b1b8067d09cc856470741bafd9e9840eca36035e9e3615bb2f0",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Adobe.yaml",
+      "path": "rule/Clash/Adobe/Adobe.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Adobe/Adobe.yaml",
+      "service": "adobe",
+      "local": "sources/blackmatrix7/Clash_Adobe.yaml",
+      "size": 4773,
+      "sha256": "5a97843a1a9f24dd484f968773cb3fee042f67c2117262b2b2be1dd4578f6cb4",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Oracle.yaml",
+      "path": "rule/Clash/Oracle/Oracle.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Oracle/Oracle.yaml",
+      "service": "oracle",
+      "local": "sources/blackmatrix7/Clash_Oracle.yaml",
+      "size": 1011,
+      "sha256": "a89d8dc6e50507c2e8c07bd7e88b0fe01fdc2e51b2c33f12ebead3cf9497f51d",
       "status": "ok"
     }
   ],

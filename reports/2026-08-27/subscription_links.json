@@ -611,6 +611,57 @@
       "path": "generated/loon/amazon.list"
     }
   },
+  "anthropic": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/anthropic.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/anthropic.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/anthropic.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/anthropic.yaml",
+      "path": "generated/mihomo/anthropic.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/anthropic.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/anthropic.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/anthropic.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/anthropic.json",
+      "path": "generated/sing-box/anthropic.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/anthropic.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/anthropic.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/anthropic.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/anthropic.list",
+      "path": "generated/surge/anthropic.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/anthropic.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/anthropic.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/anthropic.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/anthropic.list",
+      "path": "generated/shadowrocket/anthropic.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/anthropic.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/anthropic.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/anthropic.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/anthropic.list",
+      "path": "generated/quantumult-x/anthropic.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/anthropic.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/anthropic.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/anthropic.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/anthropic.yaml",
+      "path": "generated/egern/anthropic.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/anthropic.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/anthropic.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/anthropic.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/anthropic.list",
+      "path": "generated/loon/anthropic.list"
+    }
+  },
   "apple": {
     "mihomo": {
       "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/apple.yaml",
@@ -762,6 +813,57 @@
       "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/appletv.list",
       "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/appletv.list",
       "path": "generated/loon/appletv.list"
+    }
+  },
+  "atlassian": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/atlassian.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/atlassian.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/atlassian.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/atlassian.yaml",
+      "path": "generated/mihomo/atlassian.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/atlassian.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/atlassian.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/atlassian.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/atlassian.json",
+      "path": "generated/sing-box/atlassian.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/atlassian.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/atlassian.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/atlassian.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/atlassian.list",
+      "path": "generated/surge/atlassian.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/atlassian.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/atlassian.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/atlassian.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/atlassian.list",
+      "path": "generated/shadowrocket/atlassian.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/atlassian.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/atlassian.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/atlassian.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/atlassian.list",
+      "path": "generated/quantumult-x/atlassian.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/atlassian.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/atlassian.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/atlassian.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/atlassian.yaml",
+      "path": "generated/egern/atlassian.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/atlassian.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/atlassian.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/atlassian.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/atlassian.list",
+      "path": "generated/loon/atlassian.list"
     }
   },
   "aws": {
@@ -1731,6 +1833,57 @@
       "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/didi.list",
       "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/didi.list",
       "path": "generated/loon/didi.list"
+    }
+  },
+  "digitalocean": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/digitalocean.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/digitalocean.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/digitalocean.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/digitalocean.yaml",
+      "path": "generated/mihomo/digitalocean.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/digitalocean.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/digitalocean.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/digitalocean.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/digitalocean.json",
+      "path": "generated/sing-box/digitalocean.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/digitalocean.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/digitalocean.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/digitalocean.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/digitalocean.list",
+      "path": "generated/surge/digitalocean.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/digitalocean.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/digitalocean.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/digitalocean.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/digitalocean.list",
+      "path": "generated/shadowrocket/digitalocean.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/digitalocean.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/digitalocean.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/digitalocean.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/digitalocean.list",
+      "path": "generated/quantumult-x/digitalocean.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/digitalocean.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/digitalocean.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/digitalocean.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/digitalocean.yaml",
+      "path": "generated/egern/digitalocean.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/digitalocean.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/digitalocean.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/digitalocean.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/digitalocean.list",
+      "path": "generated/loon/digitalocean.list"
     }
   },
   "discord": {
@@ -3212,6 +3365,57 @@
       "path": "generated/loon/jingdong.list"
     }
   },
+  "kakaotalk": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/kakaotalk.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/kakaotalk.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/kakaotalk.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/kakaotalk.yaml",
+      "path": "generated/mihomo/kakaotalk.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/kakaotalk.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/kakaotalk.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/kakaotalk.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/kakaotalk.json",
+      "path": "generated/sing-box/kakaotalk.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/kakaotalk.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/kakaotalk.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/kakaotalk.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/kakaotalk.list",
+      "path": "generated/surge/kakaotalk.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/kakaotalk.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/kakaotalk.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/kakaotalk.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/kakaotalk.list",
+      "path": "generated/shadowrocket/kakaotalk.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/kakaotalk.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/kakaotalk.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/kakaotalk.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/kakaotalk.list",
+      "path": "generated/quantumult-x/kakaotalk.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/kakaotalk.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/kakaotalk.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/kakaotalk.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/kakaotalk.yaml",
+      "path": "generated/egern/kakaotalk.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/kakaotalk.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/kakaotalk.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/kakaotalk.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/kakaotalk.list",
+      "path": "generated/loon/kakaotalk.list"
+    }
+  },
   "kuaishou": {
     "mihomo": {
       "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/kuaishou.yaml",
@@ -3261,6 +3465,57 @@
       "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/kuaishou.list",
       "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/kuaishou.list",
       "path": "generated/loon/kuaishou.list"
+    }
+  },
+  "line": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/line.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/line.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/line.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/line.yaml",
+      "path": "generated/mihomo/line.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/line.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/line.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/line.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/line.json",
+      "path": "generated/sing-box/line.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/line.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/line.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/line.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/line.list",
+      "path": "generated/surge/line.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/line.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/line.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/line.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/line.list",
+      "path": "generated/shadowrocket/line.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/line.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/line.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/line.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/line.list",
+      "path": "generated/quantumult-x/line.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/line.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/line.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/line.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/line.yaml",
+      "path": "generated/egern/line.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/line.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/line.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/line.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/line.list",
+      "path": "generated/loon/line.list"
     }
   },
   "linkedin": {
@@ -3771,6 +4026,57 @@
       "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/openai.list",
       "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/openai.list",
       "path": "generated/loon/openai.list"
+    }
+  },
+  "oracle": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/oracle.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/oracle.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/oracle.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/oracle.yaml",
+      "path": "generated/mihomo/oracle.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/oracle.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/oracle.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/oracle.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/oracle.json",
+      "path": "generated/sing-box/oracle.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/oracle.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/oracle.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/oracle.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/oracle.list",
+      "path": "generated/surge/oracle.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/oracle.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/oracle.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/oracle.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/oracle.list",
+      "path": "generated/shadowrocket/oracle.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/oracle.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/oracle.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/oracle.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/oracle.list",
+      "path": "generated/quantumult-x/oracle.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/oracle.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/oracle.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/oracle.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/oracle.yaml",
+      "path": "generated/egern/oracle.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/oracle.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/oracle.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/oracle.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/oracle.list",
+      "path": "generated/loon/oracle.list"
     }
   },
   "paramountplus": {
@@ -4383,6 +4689,57 @@
       "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/rockstar.list",
       "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/rockstar.list",
       "path": "generated/loon/rockstar.list"
+    }
+  },
+  "slack": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/slack.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/slack.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/slack.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/slack.yaml",
+      "path": "generated/mihomo/slack.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/slack.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/slack.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/slack.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/slack.json",
+      "path": "generated/sing-box/slack.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/slack.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/slack.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/slack.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/slack.list",
+      "path": "generated/surge/slack.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/slack.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/slack.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/slack.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/slack.list",
+      "path": "generated/shadowrocket/slack.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/slack.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/slack.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/slack.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/slack.list",
+      "path": "generated/quantumult-x/slack.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/slack.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/slack.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/slack.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/slack.yaml",
+      "path": "generated/egern/slack.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/slack.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/slack.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/slack.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/slack.list",
+      "path": "generated/loon/slack.list"
     }
   },
   "speedtest": {

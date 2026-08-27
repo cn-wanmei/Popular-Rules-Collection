@@ -1,0 +1,16 @@
+version: 1
+updated: '2026-08-27'
+states:
+  blackmatrix7: active
+  metacubex: active
+enum:
+- active
+- degraded
+- unmaterialized
+- review
+- retired
+policy:
+  active: files_failed==0 and enabled
+  degraded: files_failed>0 — keep visible, fix registry path explicitly
+  retired: enabled:false — do not auto-delete history
+  unmaterialized: see intentional_unmaterialized.yaml
