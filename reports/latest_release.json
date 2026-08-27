@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "phase": "3A",
-  "generated_at": "2026-08-27T15:54:12.791460+00:00",
+  "generated_at": "2026-08-27T22:19:15.023385+00:00",
   "date": "2026-08-27",
-  "commit": "497b8c387a580bd52eba3dcf6d7e822faf08dd20",
+  "commit": "399bbcbdccea14ec0c3dfaa1fb53e0ffd902b3a1",
   "commit_role": "pipeline_input",
   "commit_note": "SHA observed when release_snapshot ran (before collect's git commit). HEAD after push is the commit that contains this file + generated artifacts.",
   "source_status": {
@@ -19,8 +19,8 @@
         "rules_declared": 8
       },
       "blackmatrix7": {
-        "last_attempt": "2026-08-27T15:38:02.277583+00:00",
-        "last_success": "2026-08-27T15:38:02.277605+00:00",
+        "last_attempt": "2026-08-27T22:02:30.359036+00:00",
+        "last_success": "2026-08-27T22:02:30.359056+00:00",
         "failure_count": 0,
         "status": "healthy",
         "files_ok": 123,
@@ -59,12 +59,12 @@
         "rules_declared": 3
       },
       "metacubex": {
-        "last_attempt": "2026-08-27T15:38:04.339353+00:00",
+        "last_attempt": "2026-08-27T22:02:32.969540+00:00",
         "files_ok": 33,
         "files_failed": 0,
         "empty_blocked": 0,
         "rules_declared": 33,
-        "last_success": "2026-08-27T15:38:04.339371+00:00",
+        "last_success": "2026-08-27T22:02:32.969559+00:00",
         "failure_count": 0,
         "status": "healthy"
       }
@@ -76,7 +76,7 @@
     "historical_in_health": 6,
     "snapshot": {
       "schema_version": 1,
-      "generated_at": "2026-08-27T15:54:08.713500+00:00",
+      "generated_at": "2026-08-27T22:19:10.921757+00:00",
       "date": "2026-08-27",
       "sources": [
         {
@@ -88,8 +88,8 @@
           "files_failed": 0,
           "health_status": "healthy",
           "lifecycle": "active",
-          "last_success": "2026-08-27T15:38:02.277605+00:00",
-          "last_attempt": "2026-08-27T15:38:02.277583+00:00"
+          "last_success": "2026-08-27T22:02:30.359056+00:00",
+          "last_attempt": "2026-08-27T22:02:30.359036+00:00"
         },
         {
           "id": "metacubex",
@@ -100,8 +100,8 @@
           "files_failed": 0,
           "health_status": "healthy",
           "lifecycle": "active",
-          "last_success": "2026-08-27T15:38:04.339371+00:00",
-          "last_attempt": "2026-08-27T15:38:04.339353+00:00"
+          "last_success": "2026-08-27T22:02:32.969559+00:00",
+          "last_attempt": "2026-08-27T22:02:32.969540+00:00"
         }
       ],
       "intentional_unmaterialized": {
