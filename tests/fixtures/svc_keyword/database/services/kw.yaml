@@ -1,0 +1,6 @@
+id: kw
+name: Keyword
+category: other
+rules:
+  - type: domain_keyword
+    value: stripe

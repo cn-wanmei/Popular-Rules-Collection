@@ -1,3 +1,4 @@
-# Runtime dependencies (to be expanded)
+# Runtime dependencies
 PyYAML>=6.0
 requests>=2.31
+pytest>=7.0

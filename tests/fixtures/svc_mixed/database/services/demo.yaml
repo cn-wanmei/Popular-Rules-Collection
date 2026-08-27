@@ -1,0 +1,12 @@
+id: demo
+name: Demo
+category: other
+rules:
+  - type: domain
+    value: example.com
+  - type: domain_suffix
+    value: example.com
+  - type: ip_cidr
+    value: 1.2.3.4/32
+  - type: ip_cidr6
+    value: 2001:db8::/32
