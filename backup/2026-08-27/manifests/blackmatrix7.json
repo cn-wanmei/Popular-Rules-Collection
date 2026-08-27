@@ -1,11 +1,11 @@
 {
   "source": "blackmatrix7",
   "fetch": "github_raw",
-  "timestamp": "2026-08-27T08:40:58.585722+00:00",
-  "files_ok": 95,
+  "timestamp": "2026-08-27T12:07:37.656910+00:00",
+  "files_ok": 96,
   "files_failed": 0,
   "empty_blocked": 0,
-  "rules_declared": 95,
+  "rules_declared": 96,
   "files": [
     {
       "name": "Clash_Apple.yaml",
@@ -955,6 +955,16 @@
       "local": "sources/blackmatrix7/Clash_PrivateTracker.yaml",
       "size": 7802,
       "sha256": "12285a4c3cf08148a0dff6221ae1713bd3856c5b87b4fb3959123ee6cd89d511",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Garena.yaml",
+      "path": "rule/Clash/Garena/Garena.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Garena/Garena.yaml",
+      "service": "garena",
+      "local": "sources/blackmatrix7/Clash_Garena.yaml",
+      "size": 661,
+      "sha256": "5e4c4a2757ebb6e09f0b166a1c73f3f5c0802bec3706af6f3f2264db025cecaf",
       "status": "ok"
     }
   ],

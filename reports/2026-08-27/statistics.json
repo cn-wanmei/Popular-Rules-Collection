@@ -2,8 +2,8 @@
   "date": "2026-08-27",
   "version": 2,
   "service_coverage": {
-    "registered": 155,
-    "materialized": 110,
+    "registered": 158,
+    "materialized": 111,
     "intentional_unmaterialized": 1,
     "unexpected_missing": [
       "amazonaws",
@@ -27,6 +27,7 @@
       "kugoukuwo",
       "lan",
       "line",
+      "minecraft",
       "mistral",
       "naver",
       "npm",
@@ -37,6 +38,7 @@
       "pingan",
       "psbc",
       "qq",
+      "roblox",
       "scholar",
       "sina",
       "siri",
@@ -51,15 +53,15 @@
       "xianyu",
       "xiaomi"
     ],
-    "coverage": 0.7097
+    "coverage": 0.7025
   },
   "intentional_unmaterialized": {
     "blizzard": "no separate upstream (BM Blizzard → battlenet)"
   },
   "rule_coverage": {
-    "domains": 712110,
+    "domains": 712125,
     "ips": 425,
-    "database_services": 110
+    "database_services": 111
   },
   "source_health": {
     "enabled_sources": 2,
@@ -75,31 +77,31 @@
   },
   "builder_coverage": {
     "mihomo": {
-      "files": 220,
+      "files": 222,
       "status": "ok"
     },
     "sing-box": {
-      "files": 110,
+      "files": 111,
       "status": "ok"
     },
     "surge": {
-      "files": 217,
+      "files": 219,
       "status": "ok"
     },
     "shadowrocket": {
-      "files": 217,
+      "files": 219,
       "status": "ok"
     },
     "quantumult-x": {
-      "files": 110,
+      "files": 111,
       "status": "ok"
     },
     "egern": {
-      "files": 110,
+      "files": 111,
       "status": "ok"
     },
     "loon": {
-      "files": 110,
+      "files": 111,
       "status": "ok"
     }
   },
@@ -271,23 +273,26 @@
       "coverage": 1.0
     },
     "gaming": {
-      "registered": 12,
-      "materialized": 10,
+      "registered": 15,
+      "materialized": 11,
       "ids": [
         "battlenet",
         "blizzard",
         "ea",
         "epic",
+        "garena",
         "hoyoverse",
+        "minecraft",
         "nintendo",
         "origin",
         "playstation",
         "riotgames",
+        "roblox",
         "rockstar",
         "steam",
         "ubisoft"
       ],
-      "coverage": 0.8333
+      "coverage": 0.7333
     },
     "google": {
       "registered": 6,
@@ -441,8 +446,8 @@
     "low": 3366
   },
   "sources": 2,
-  "services": 110,
-  "domains": 712110,
+  "services": 111,
+  "domains": 712125,
   "cidr": 425,
   "build": {
     "mihomo": "ok",

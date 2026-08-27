@@ -576,6 +576,19 @@
       }
     },
     {
+      "service": "garena",
+      "database": 15,
+      "clients": {
+        "mihomo": 15,
+        "sing-box": 15,
+        "surge": 15,
+        "shadowrocket": 15,
+        "quantumult-x": 15,
+        "egern": 15,
+        "loon": 15
+      }
+    },
+    {
       "service": "gemini",
       "database": 10,
       "clients": {

@@ -1,4 +1,4 @@
-generated_at: '2026-08-27T08:55:39.367153+00:00'
+generated_at: '2026-08-27T12:21:55.139686+00:00'
 categories:
   '12306':
     display_name: '12306'
@@ -317,6 +317,12 @@ categories:
     - id: epic
       name: Epic
       path: rule/Gaming/Epic
+      service_type: service
+      domains: 15
+      ips: 0
+    - id: garena
+      name: Garena
+      path: rule/Gaming/Garena
       service_type: service
       domains: 15
       ips: 0

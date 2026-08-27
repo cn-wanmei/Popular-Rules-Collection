@@ -2243,6 +2243,57 @@
       "path": "generated/loon/firebase.list"
     }
   },
+  "garena": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/garena.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/garena.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/garena.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/garena.yaml",
+      "path": "generated/mihomo/garena.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/garena.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/garena.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/garena.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/garena.json",
+      "path": "generated/sing-box/garena.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/garena.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/garena.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/garena.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/garena.list",
+      "path": "generated/surge/garena.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/garena.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/garena.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/garena.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/garena.list",
+      "path": "generated/shadowrocket/garena.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/garena.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/garena.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/garena.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/garena.list",
+      "path": "generated/quantumult-x/garena.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/garena.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/garena.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/garena.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/garena.yaml",
+      "path": "generated/egern/garena.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/garena.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/garena.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/garena.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/garena.list",
+      "path": "generated/loon/garena.list"
+    }
+  },
   "gemini": {
     "mihomo": {
       "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/gemini.yaml",

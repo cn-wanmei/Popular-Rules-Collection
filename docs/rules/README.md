@@ -46,6 +46,7 @@
 - [Facebook](facebook.md) (`facebook` · social)
 - [Figma](figma.md) (`figma` · developer)
 - [Firebase](firebase.md) (`firebase` · google)
+- [Garena](garena.md) (`garena` · gaming)
 - [Gemini](gemini.md) (`gemini` · ai)
 - [GFW](gfw.md) (`gfw` · network)
 - [GitHub](github.md) (`github` · microsoft)
