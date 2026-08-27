@@ -2,7 +2,7 @@ version: 2
 updated: '2026-08-26'
 defaults: {service_type: service}
 services:
-  ai: {primary_category: ai, display_name: AI, categories: [ai], service_type: aggregate, children: [openai, claude, gemini, copilot, anthropic]}
+  ai: {primary_category: ai, display_name: AI, categories: [ai], service_type: aggregate, children: [openai, claude, gemini, copilot, anthropic, perplexity, groq, xai, mistral, huggingface]}
   apple: {primary_category: apple, display_name: Apple, categories: [apple], service_type: aggregate, children: [applemusic, appletv, icloud, siri]}
   alibaba: {primary_category: alibaba, display_name: Alibaba, categories: [alibaba, china], service_type: aggregate, children: [alipay, alibabacloud, dingtalk, eleme, xianyu, youku, gaode]}
   tencent: {primary_category: tencent, display_name: Tencent, categories: [tencent, china], service_type: aggregate, children: [wechat, tencentvideo]}
@@ -10,7 +10,7 @@ services:
   bytedance: {primary_category: bytedance, display_name: ByteDance, categories: [bytedance, china], service_type: aggregate, children: [douyin]}
   jingdong: {primary_category: jingdong, display_name: JingDong, categories: [jingdong, china], service_type: aggregate}
   microsoft: {primary_category: microsoft, display_name: Microsoft, categories: [microsoft], service_type: aggregate, children: [onedrive, xbox, github, teams]}
-  google: {primary_category: google, display_name: Google, categories: [google], service_type: aggregate, children: [youtube, googlefcm, googledrive]}
+  google: {primary_category: google, display_name: Google, categories: [google], service_type: aggregate, children: [youtube, googlefcm, googledrive, firebase, gcp]}
   amazon: {primary_category: amazon, display_name: Amazon, categories: [amazon, streaming], service_type: service}
   unionpay: {primary_category: unionpay, display_name: UnionPay, categories: [finance, china], service_type: aggregate, children: [icbc, ccb, abc, boc, cmb, psbc, ceb, bocom, pingan]}
   chinamobile: {primary_category: chinamobile, display_name: ChinaMobile, categories: [china], service_type: service}
@@ -18,7 +18,7 @@ services:
   chinatelecom: {primary_category: chinatelecom, display_name: ChinaTelecom, categories: [china], service_type: service}
   "12306": {primary_category: "12306", display_name: "12306", categories: [china], service_type: service}
   china: {primary_category: china, display_name: China, categories: [china], service_type: aggregate, children: [meituan, pinduoduo, xiaohongshu, didi, netease, bilibili, weibo, zhihu, kuaishou, sina, iqiyi, kugoukuwo, steamcn]}
-  developer: {primary_category: developer, display_name: Developer, categories: [developer], service_type: aggregate, children: [docker, gitlab, vercel, cloudflare, atlassian, jetbrains, npm, oracle, digitalocean, akamai, notion, slack]}
+  developer: {primary_category: developer, display_name: Developer, categories: [developer], service_type: aggregate, children: [docker, gitlab, vercel, cloudflare, atlassian, jetbrains, npm, oracle, digitalocean, akamai, notion, slack, supabase, heroku, hashicorp, azure, figma]}
   openai: {primary_category: ai, display_name: OpenAI, categories: [ai], service_type: service, parent: ai}
   claude: {primary_category: ai, display_name: Claude, categories: [ai], service_type: service, parent: ai}
   gemini: {primary_category: ai, display_name: Gemini, categories: [ai], service_type: service, parent: ai}
@@ -35,7 +35,7 @@ services:
   tencentvideo: {primary_category: tencent, display_name: TencentVideo, categories: [tencent, china], service_type: service, parent: tencent}
   alipay: {primary_category: alibaba, display_name: Alipay, categories: [alibaba, china, finance], service_type: service, parent: alibaba}
   douyin: {primary_category: bytedance, display_name: Douyin, categories: [bytedance, china], service_type: service, parent: bytedance}
-  adblock: {primary_category: privacy, display_name: AdBlock, categories: [privacy], service_type: aggregate, children: [adblock-pro, adblock-light]}
+  adblock: {primary_category: privacy, display_name: AdBlock, categories: [privacy], service_type: service, parent: adblock}
   proxy: {primary_category: network, display_name: Proxy, categories: [network], service_type: service}
   gfw: {primary_category: network, display_name: GFW, categories: [network], service_type: service}
   private: {primary_category: network, display_name: Private, categories: [network], service_type: service}
