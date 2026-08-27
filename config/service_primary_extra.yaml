@@ -149,9 +149,10 @@ services:
   amap: {primary_category: alibaba, display_name: Amap, categories: [alibaba, china], service_type: service, parent: alibaba}
   dewu: {primary_category: china, display_name: DeWu, categories: [china], service_type: service, parent: china}
   elevenlabs: {primary_category: ai, display_name: ElevenLabs, categories: [ai], service_type: service, parent: ai}
+  aisuite: {primary_category: ai, display_name: AI-Suite, categories: [ai], service_type: service, parent: ai}
 aggregate_overrides:
   adblock: {primary_category: privacy, display_name: AdBlock, categories: [privacy], service_type: aggregate, children: [adblock-pro, adblock-light]}
-  ai: {primary_category: ai, display_name: AI, categories: [ai], service_type: aggregate, children: [openai, claude, gemini, copilot, anthropic, huggingface, perplexity, groq, xai, mistral, deepseek, elevenlabs]}
+  ai: {primary_category: ai, display_name: AI, categories: [ai], service_type: aggregate, children: [openai, claude, gemini, copilot, anthropic, huggingface, perplexity, groq, xai, mistral, deepseek, elevenlabs, aisuite]}
   alibaba: {primary_category: alibaba, display_name: Alibaba, categories: [alibaba, china], service_type: aggregate, children: [alipay, alibabacloud, dingtalk, eleme, xianyu, youku, gaode, taobao]}
   apple: {primary_category: apple, display_name: Apple, categories: [apple], service_type: aggregate, children: [applemusic, appletv, icloud, siri]}
   bytedance: {primary_category: bytedance, display_name: ByteDance, categories: [bytedance, china], service_type: aggregate, children: [douyin, doubao]}
