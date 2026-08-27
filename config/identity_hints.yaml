@@ -1,0 +1,20 @@
+# Optional Source → Service identity hints (P1-1)
+# name_tokens: accepted upstream # NAME: values (BlackMatrix7 Clash YAML)
+version: 1
+services:
+  openai: { name_tokens: [OpenAI, openai] }
+  jingdong: { name_tokens: [JingDong, JD, Jingdong, jingdong] }
+  iqiyi: { name_tokens: [iQIYI, iQiyi, IQIYI, iqiyi] }
+  netease: { name_tokens: [NetEaseMusic, NetEase, Netease] }
+  github: { name_tokens: [GitHub, Github] }
+  youtube: { name_tokens: [YouTube, Youtube] }
+  bilibili: { name_tokens: [BiliBili, Bilibili] }
+  telegram: { name_tokens: [Telegram] }
+  microsoft: { name_tokens: [Microsoft] }
+  google: { name_tokens: [Google] }
+  apple: { name_tokens: [Apple] }
+  claude: { name_tokens: [Claude] }
+  gemini: { name_tokens: [Gemini] }
+  copilot: { name_tokens: [Copilot] }
+  battlenet: { name_tokens: [Blizzard, BattleNet, Battlenet] }
+  riotgames: { name_tokens: [Riot, RiotGames] }
