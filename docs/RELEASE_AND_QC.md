@@ -6,32 +6,31 @@
 
 | Layer | Status |
 |-------|--------|
-| Collect → Normalize → Canonical → Builder ×7 | ✅ structural validation in place |
-| Generated client outputs | ✅ usable for production routing |
-| Semantic / historical validation | 🔄 Phase 2B QC (P1) |
+| Collect → Normalize → Canonical → Builder ×7 | ✅ structural validation |
+| Generated client outputs | ✅ production-usable |
+| Semantic / historical validation | ✅ P1-0…P1-3 landed (soft) |
 
-Authoritative artifacts: `generated/{client}/` on branch `main`.
-Do **not** hand-edit `rule/` (generated product pages).
+Authoritative artifacts: `generated/{client}/` on `main`.  
+Do **not** hand-edit `rule/`.
 
 ---
 
 ## Production use
 
 1. Subscribe to `generated/{mihomo|sing-box|surge|shadowrocket|quantumult-x|egern|loon}/{id}.*`
-2. Prefer GitHub Raw as source of truth; CDN mirrors are acceleration only
-3. Update interval: typically 86400s
-4. Only **materialized** services are expected to resolve; see intentional unmaterialized below
+2. GitHub Raw is source of truth; CDN is acceleration only
+3. Typical interval: 86400s
+4. Only **materialized** services resolve; see intentional unmaterialized
 
-### KPI (quality, not raw rule count)
+### KPI (quality ≠ line count)
 
-- Service Coverage / Materialization rate
-- Ecosystem Coverage
-- Source Health (`healthy` vs `degraded`, `files_ok` / `files_failed`)
-- Builder Coverage (7 clients)
-- Validation (schema / validate / builder_validate)
+- Service / Ecosystem coverage & materialization rate  
+- Source Health (`healthy` / `degraded`, `files_ok` / `files_failed`)  
+- Builder Coverage (×7)  
+- Validation (schema / validate / builder_validate)  
+- Identity warnings / Rule-count drift / Quality flags (soft)
 
-**Not a KPI:** “more domain lines is better.”  
-`domain` and `domain_suffix` remain distinct in the Canonical loader — do not merge for prettier dedup counts.
+`domain` vs `domain_suffix` stay distinct in the Canonical loader.
 
 ### Intentional unmaterialized
 
@@ -40,98 +39,73 @@ Primary ✓  +  Registry ✗  →  intentional_unmaterialized
 reason: no_verified_upstream
 ```
 
-Examples: `mistral`, `gcp`, `supabase`. Do not invent fake registry sources for coverage optics.
+| id | note |
+|----|------|
+| mistral / gcp / supabase | no verified upstream |
+| roblox / minecraft | no BM / MetaCubeX path (2026-08-27) |
+| blizzard | maps to battlenet |
 
 ---
 
-## Fault taxonomy (five layers)
+## Fault taxonomy
 
-| Layer | Fail means |
-|-------|------------|
-| ① Primary ✗ | Service not planned |
-| ② Primary ✓ / Registry ✗ | intentional_unmaterialized / no_verified_upstream |
-| ③ Registry ✓ / Upstream ✗ | **registry drift** (fix path explicitly; never fuzzy-match in Collector) |
-| ④ Upstream ✓ / Database ✗ | collect / normalize defect |
-| ⑤ Database ✓ / Generated ✗ | builder defect |
-| ⑥ Generated ✓ / Validate ✗ | format / schema / expected-output |
+| Layer | Meaning |
+|-------|---------|
+| Primary ✗ | not planned |
+| Primary ✓ / Registry ✗ | intentional_unmaterialized |
+| Registry ✓ / Upstream ✗ | **registry drift** — fix path explicitly |
+| Upstream ✓ / Database ✗ | collect / normalize |
+| Database ✓ / Generated ✗ | builder |
+| Generated ✓ / Validate ✗ | format / schema / expected-output |
 
-Primary long-term risk is **Source Drift**, not Builder regression.
+Primary long-term risk: **Source Drift**, not Builder.
 
 ---
 
-## Pipeline (structural)
+## Pipeline
 
 ```text
 Upstream → collect → normalize → database/
-  → rule_loader (canonical)
-  → build ×7 → generated/
-  → schema_validate → validate → builder_validate
-  → generate_rule_pages --strict → size_gate → commit
+  → rule_loader → build ×7 → generated/
+  → schema_validate (P1-0) → validate (P1-3 quality warns)
+  → builder_validate
+  → identity_validate (P1-1 soft) → rule_count_drift (P1-2 soft)
+  → statistics → generate_rule_pages --strict → size_gate
+  → commit → git pull --rebase origin main → push
 ```
 
-Hard gates must stay fail-closed. Soft: statistics / docs / links.
-
-Commit step must `git pull --rebase origin main` before `git push` to absorb concurrent main updates.
+Hard gates stay fail-closed. Soft QC never hides Source Health degradation.
 
 ---
 
-## Phase 2B QC roadmap (do not expand Builders)
+## QC P1 (implemented)
 
-Focus shifts from “how many services” to “stable, trusted, maintainable.”
+| ID | Module | Behavior |
+|----|--------|----------|
+| **P1-0** | `schema_validate.py` | `id==filename`, canonical types, non-empty values — **hard** |
+| **P1-1** | `identity_validate.py` + `config/identity_hints.yaml` | BM `# NAME:` vs expected tokens — **soft** |
+| **P1-2** | `rule_count_drift.py` | per-service ±20/50/80% vs prior day — **soft** |
+| **P1-3** | `validate.py` `domain_quality_issues` | bare TLD / ultra-short / pathological — **soft** |
 
-### P1-0 Rule Schema Test — **in progress**
+### Non-goals
 
-Every `database/services/{id}.yaml`:
-
-- `id` present and `id == filename stem`
-- `rules` is a list (may be empty when domains/ips sidecars hold bulk data)
-- each rule: `type ∈ canonical types`, `value` non-empty
-
-Implemented in `scripts/schema_validate.py` (hard errors on corrupt rows).
-
-### P1-1 Source → Service Identity
-
-HTTP 200 ≠ correct service identity.
-
-Plan:
-
-- Optional registry field: `identity: { service: <id> }` or `expected_name`
-- Validator checks upstream markers / sample domains after collect
-- Start as **warnings**; promote to gate only after low false-positive rate
-- Never auto-guess paths in Collector
-
-### P1-2 Rule Count Drift
-
-Silent collapse example: OpenAI 101 → 7 with validate still green.
-
-Plan:
-
-- Per-service baseline in `reports/rule_counts/` (or summary history)
-- Thresholds (default, non-Error): ±20% warn · ±50% high · ±80% review
-- Tunable per large natural-volatility sets (adblock, china)
-
-### P1-3 Rule Quality / abnormal width
-
-Beyond format checks in `validate.py`:
-
-- Extreme short suffixes, bare TLD, pathological wildcards, absurd CIDR
-- Start as **warnings + report**; avoid hard-fail false kills
-
-### Explicit non-goals (this phase)
-
-- ❌ Change Builder / rule_loader / Primary architecture for coverage optics
-- ❌ Collector path fuzzy matching
-- ❌ Fake upstream for mistral/gcp/supabase
-- ❌ 50–100 service dumps per batch
+- ❌ Builder / rule_loader / Primary rewrites for coverage optics  
+- ❌ Collector path fuzzy matching  
+- ❌ Fake upstream for intentional_unmaterialized  
+- ❌ Mega service dumps (50–100) without upstream audit  
 
 ---
 
-## Definition of “long-running production-grade automation”
+## Gaming expansion (2B-4)
 
-Only after:
+| id | upstream | status |
+|----|----------|--------|
+| garena | BM `rule/Clash/Garena/Garena.yaml` | registered (materialize on next collect) |
+| roblox | — | intentional_unmaterialized |
+| minecraft | — | intentional_unmaterialized |
 
-1. Identity checks running on daily collect
-2. Count-drift alerts observed across ≥2 weeks of upstream noise
-3. BM-class path drift continues to surface via health + explicit registry fixes
+---
 
-Until then: **releasable for production routing of materialized sets**, with operational monitoring of Actions + `sources/health.yaml`.
+## Long-running production-grade bar
+
+After identity + drift signals have been observed across ≥2 weeks of upstream noise, with BM-class drift still fixed via explicit registry edits only.

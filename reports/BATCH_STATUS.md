@@ -1,44 +1,38 @@
-# Batch Status — 2026-08-27 (Phase 2B QC locked)
+# Batch Status — 2026-08-27 (QC P1 complete)
 
-## Release definition (locked)
+## Release
 
 See **`docs/RELEASE_AND_QC.md`**.
 
-> 规则生成已达到可发布/可使用标准；规则数据治理进入持续质量控制阶段。
+> 规则生成可发布/可使用；数据治理进入持续 QC。
 
-## CI snapshot
+## CI
 
 | Item | Status |
 |------|--------|
-| Collect run #19 | ✅ success |
-| BM health | ✅ `files_ok=95` `files_failed=0` healthy |
-| JingDong / iQIYI path fix | ✅ in registry + re-collected |
-| Commit race (`pull --rebase`) | ✅ workflow fixed |
+| Collect #19 | ✅ success |
+| BM health | ✅ files_failed=0 |
+| push race fix | ✅ pull --rebase |
 
 ## Phase 2B
 
 | Step | Status |
 |------|--------|
-| 2B-0 HEAD / no Builder regression | ✅ |
-| 2B-1 Registry drift JingDong + iQIYI | ✅ |
-| 2B-1.5 Identity pre-check | ✅ |
-| 2B-0 full CI after fix | ✅ #19 |
-| 2B-2 Tier0 materialize audit | ✅ (perplexity/groq/xai/aws/firebase present) |
-| 2B-3 intentional_unmaterialized | ✅ mistral/gcp/supabase (no fake sources) |
-| 2B-4 Roblox/Minecraft | ⏳ optional expansion after QC P1-0 |
+| 2B-1 JingDong / iQIYI drift | ✅ |
+| 2B-2 Tier0 AI/Cloud | ✅ materialized where upstream exists |
+| 2B-3 intentional_unmaterialized | ✅ |
+| **2B-4 Gaming** | ✅ Garena registered; Roblox/Minecraft no upstream |
 
-## QC P1 (post-release)
+## QC P1
 
-| ID | Scope | Status |
-|----|--------|--------|
-| P1-0 | Rule schema test in schema_validate | ✅ landed |
-| P1-1 | Source → Service identity | 📋 next |
-| P1-2 | Rule count drift | 📋 planned |
-| P1-3 | Abnormal width / quality warnings | 📋 planned |
+| ID | Status |
+|----|--------|
+| P1-0 Rule schema | ✅ hard gate |
+| P1-1 Identity | ✅ soft (`identity_validate.py`) |
+| P1-2 Count drift | ✅ soft (`rule_count_drift.py`) |
+| P1-3 Quality width | ✅ soft (`validate.py`) |
 
-## Do not
+## Next (ops)
 
-- Change Builder / rule_loader / Primary for coverage optics
-- Collector path fuzzy matching
-- Invent upstream for intentional_unmaterialized
-- Mega-batches of 50–100 services
+- Observe soft warnings for 1–2 weeks before promoting any to hard gate  
+- Expand services only with verified upstream paths  
