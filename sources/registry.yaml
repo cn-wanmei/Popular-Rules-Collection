@@ -1,0 +1,50 @@
+# Registry V3 — Source + Fetcher + Collection Manifest
+version: 3
+last_updated: '2026-08-28'
+sources:
+- id: blackmatrix7
+  name: BlackMatrix7 ios_rule_script
+  url: https://github.com/blackmatrix7/ios_rule_script
+  enabled: true
+  priority: 95
+  trust: high
+  score_hint: 95
+  formats:
+  - clash
+  - surge
+  - quantumultx
+  - shadowrocket
+  - loon
+  notes: Largest curated multi-client rule set. High coverage.
+  fetch:
+    type: github_raw
+    owner: blackmatrix7
+    repo: ios_rule_script
+    branch: master
+  rules:
+  - {path: rule/Clash/Apple/Apple.yaml, name: apple, local: Clash_Apple.yaml}
+  - {path: rule/Clash/Google/Google.yaml, name: google, local: Clash_Google.yaml}
+  - {path: rule/Clash/Telegram/Telegram.yaml, name: telegram, local: Clash_Telegram.yaml}
+  - {path: rule/Clash/Netflix/Netflix.yaml, name: netflix, local: Clash_Netflix.yaml}
+  - {path: rule/Clash/GitHub/GitHub.yaml, name: github, local: Clash_GitHub.yaml}
+  - {path: rule/Clash/Microsoft/Microsoft.yaml, name: microsoft, local: Clash_Microsoft.yaml}
+  - {path: rule/Clash/Discord/Discord.yaml, name: discord, local: Clash_Discord.yaml}
+  - {path: rule/Clash/OpenAI/OpenAI.yaml, name: openai, local: Clash_OpenAI.yaml}
+  - {path: rule/Clash/YouTube/YouTube.yaml, name: youtube, local: Clash_YouTube.yaml}
+  - {path: rule/Clash/BiliBili/BiliBili.yaml, name: bilibili, local: Clash_BiliBili.yaml}
+  - {path: rule/Clash/Steam/Steam.yaml, name: steam, local: Clash_Steam.yaml}
+  - {path: rule/Clash/TikTok/TikTok.yaml, name: tiktok, local: Clash_TikTok.yaml}
+  - {path: rule/Clash/Twitter/Twitter.yaml, name: twitter, local: Clash_Twitter.yaml}
+  - {path: rule/Clash/Disney/Disney.yaml, name: disney, local: Clash_Disney.yaml}
+  - {path: rule/Clash/ChinaMax/ChinaMax_Domain.yaml, name: china, local: Clash_ChinaMax_Domain.yaml}
+  - {path: rule/Surge/Apple/Apple.list, name: apple, local: Surge_Apple.list}
+  - {path: rule/Surge/Google/Google.list, name: google, local: Surge_Google.list}
+  - {path: rule/Clash/Claude/Claude.yaml, name: claude, local: Clash_Claude.yaml}
+  - {path: rule/Clash/Gemini/Gemini.yaml, name: gemini, local: Clash_Gemini.yaml}
+  - {path: rule/Clash/Copilot/Copilot.yaml, name: copilot, local: Clash_Copilot.yaml}
+  - {path: rule/Clash/Spotify/Spotify.yaml, name: spotify, local: Clash_Spotify.yaml}
+  - {path: rule/Clash/Twitch/Twitch.yaml, name: twitch, local: Clash_Twitch.yaml}
+  - {path: rule/Clash/HBO/HBO.yaml, name: hbo, local: Clash_HBO.yaml}
+  - {path: rule/Clash/Hulu/Hulu.yaml, name: hulu, local: Clash_Hulu.yaml}
+  - {path: rule/Clash/AmazonPrimeVideo/AmazonPrimeVideo.yaml, name: primevideo, local: Clash_AmazonPrimeVideo.yaml}
+  - {path: rule/Clash/AppleTV/AppleTV.yaml, name: appletv, local: Clash_AppleTV.yaml}
