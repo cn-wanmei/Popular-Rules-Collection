@@ -73,7 +73,7 @@ categories:
 - id: other
   display_name: Other
   order: 230
-- id: adult
-  display_name: Adult
+- id: restricted
+  display_name: Restricted
   order: 250
-  notes: 18+ NSFW aggregate from trusted geosite category-porn only
+  notes: Restricted media domain aggregate (trusted upstream only)

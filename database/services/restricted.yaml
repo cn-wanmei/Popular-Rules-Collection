@@ -1,0 +1,26 @@
+id: restricted
+name: Restricted
+category: restricted
+type: aggregate
+version: 1
+source:
+- id: metacubex
+  priority: 90
+- id: v2fly
+  priority: 85
+rules: []
+metadata:
+  priority: medium
+  confidence: high
+  last_updated: '2026-08-28T13:40:00+00:00'
+  notes: >-
+    Restricted media domain aggregate from MetaCubeX/v2fly category lists.
+    Large list materializes to database/domains/restricted.txt after Collect.
+    Policy: typically PROXY.
+  stats:
+    domain_count: 0
+    ip_count: 0
+    total: 0
+  tags:
+  - restricted
+canonical_source: metacubex-category-porn
