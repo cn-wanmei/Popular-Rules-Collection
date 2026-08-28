@@ -156,6 +156,12 @@ sources:
   - {path: rule/Clash/BBC/BBC.yaml, name: bbc, local: Clash_BBC.yaml}
   - {path: rule/Clash/Emby/Emby.yaml, name: emby, local: Clash_Emby.yaml}
   - {path: rule/Clash/Scholar/Scholar.yaml, name: scholar, local: Clash_Scholar.yaml}
+  - {path: rule/Clash/AppStore/AppStore.yaml, name: apple, local: Clash_AppStore.yaml}
+  - {path: rule/Clash/TestFlight/TestFlight.yaml, name: apple, local: Clash_TestFlight.yaml}
+  - {path: rule/Clash/AppleDev/AppleDev.yaml, name: apple, local: Clash_AppleDev.yaml}
+  - {path: rule/Clash/FindMy/FindMy.yaml, name: apple, local: Clash_FindMy.yaml}
+  - {path: rule/Clash/AppleMedia/AppleMedia.yaml, name: apple, local: Clash_AppleMedia.yaml}
+  - {path: rule/Clash/AppleNews/AppleNews.yaml, name: apple, local: Clash_AppleNews.yaml}
 - id: metacubex
   name: MetaCubeX meta-rules-dat
   url: https://github.com/MetaCubeX/meta-rules-dat
@@ -211,6 +217,24 @@ sources:
   - {path: geo/geosite/elevenlabs.list, name: elevenlabs, local: geosite_elevenlabs.list}
   - {path: geo/geosite/snap.list, name: snapchat, local: geosite_snap.list}
   - {path: geo/geosite/cn.yaml, name: china, local: geosite_cn.yaml}
+  - {path: geo/geosite/apple.list, name: apple, local: geosite_apple.list}
+  - {path: geo/geosite/apple-dev.list, name: apple, local: geosite_apple_dev.list}
+  - {path: geo/geosite/apple-update.list, name: apple, local: geosite_apple_update.list}
+  - {path: geo/geosite/icloud.list, name: icloud, local: geosite_icloud.list}
+  - {path: geo/geosite/google.list, name: google, local: geosite_google.list}
+  - {path: geo/geosite/youtube.list, name: youtube, local: geosite_youtube.list}
+  - {path: geo/geosite/microsoft.list, name: microsoft, local: geosite_microsoft.list}
+  - {path: geo/geosite/github.list, name: github, local: geosite_github.list}
+  - {path: geo/geosite/cloudflare.list, name: cloudflare, local: geosite_cloudflare.list}
+  - {path: geo/geosite/amazon.list, name: amazon, local: geosite_amazon.list}
+  - {path: geo/geosite/facebook.list, name: facebook, local: geosite_facebook.list}
+  - {path: geo/geosite/instagram.list, name: instagram, local: geosite_instagram.list}
+  - {path: geo/geosite/twitter.list, name: twitter, local: geosite_twitter.list}
+  - {path: geo/geosite/tiktok.list, name: tiktok, local: geosite_tiktok.list}
+  - {path: geo/geosite/whatsapp.list, name: whatsapp, local: geosite_whatsapp.list}
+  - {path: geo/geosite/reddit.list, name: reddit, local: geosite_reddit.list}
+  - {path: geo/geosite/docker.list, name: docker, local: geosite_docker.list}
+  - {path: geo/geosite/category-dev.list, name: developer, local: geosite_category_dev.list}
 - id: v2fly
   name: v2fly domain-list-community
   url: https://github.com/v2fly/domain-list-community
@@ -263,6 +287,23 @@ sources:
   - {path: data/bytedance, name: bytedance, local: v2fly_bytedance}
   - {path: data/tencent, name: tencent, local: v2fly_tencent}
   - {path: data/bilibili, name: bilibili, local: v2fly_bilibili}
+  - {path: data/apple, name: apple, local: v2fly_apple}
+  - {path: data/icloud, name: icloud, local: v2fly_icloud}
+  - {path: data/google, name: google, local: v2fly_google}
+  - {path: data/youtube, name: youtube, local: v2fly_youtube}
+  - {path: data/microsoft, name: microsoft, local: v2fly_microsoft}
+  - {path: data/amazon, name: amazon, local: v2fly_amazon}
+  - {path: data/aws, name: aws, local: v2fly_aws}
+  - {path: data/docker, name: docker, local: v2fly_docker}
+  - {path: data/jetbrains, name: jetbrains, local: v2fly_jetbrains}
+  - {path: data/atlassian, name: atlassian, local: v2fly_atlassian}
+  - {path: data/slack, name: slack, local: v2fly_slack}
+  - {path: data/zoom, name: zoom, local: v2fly_zoom}
+  - {path: data/adobe, name: adobe, local: v2fly_adobe}
+  - {path: data/oracle, name: oracle, local: v2fly_oracle}
+  - {path: data/digitalocean, name: digitalocean, local: v2fly_digitalocean}
+  - {path: data/reddit, name: reddit, local: v2fly_reddit}
+  - {path: data/mojang, name: minecraft, local: v2fly_mojang}
 - id: dler
   name: Dler Rules
   url: https://github.com/dler-io/Rules
