@@ -1,0 +1,24 @@
+{
+  "maps_to": "chinaunicom",
+  "updated_at": "2026-08-28T01:41:23.438291+00:00",
+  "cidr_count": 3725,
+  "existing_lines_before": 1,
+  "incoming_lines": 3725,
+  "contributions": [
+    {
+      "source_id": "china-operator-unicom",
+      "scope": "carrier",
+      "path": "unicom.txt",
+      "fetch": {
+        "type": "github_raw",
+        "owner": "gaoyifan",
+        "repo": "china-operator-ip",
+        "branch": "ip-lists"
+      },
+      "lines_in": 3725,
+      "fetched_at": "2026-08-28T01:41:23.438291+00:00",
+      "notes": ""
+    }
+  ],
+  "why": "Mapped via ip_registry maps_to; scope enforced by validate_ip_registry. Country/carrier only — not product service attribution."
+}

@@ -247,5 +247,12 @@
     "quantumult-x": "ok",
     "egern": "ok",
     "loon": "ok"
+  },
+  "ip_track": {
+    "registry_sources": 4,
+    "enabled_sources": 3,
+    "sidecar_files": 36,
+    "cidr_lines": 591,
+    "note": "Prefer health/scope correctness over raw CIDR count"
   }
 }
