@@ -15,3 +15,17 @@ datasets:
     scope: network
     path: database/network/private.txt
     policy_hint: direct
+  - id: dns
+    name: Public DNS resolver domains
+    enabled: true
+    scope: network
+    path: database/network/dns.txt
+    policy_hint: direct
+    notes: Well-known DoH/DoT resolver hostnames; not Service rules.
+  - id: ntp
+    name: Public NTP hostnames
+    enabled: true
+    scope: network
+    path: database/network/ntp.txt
+    policy_hint: direct
+    notes: Well-known time servers; not Service rules.
