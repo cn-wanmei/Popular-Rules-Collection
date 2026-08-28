@@ -64,3 +64,20 @@ asns:
     owner: IBM
     scope: provider
     country: US
+  - asn: 45102
+    name: Alibaba US
+    owner: Alibaba
+    scope: provider
+    country: US
+    note: Provider cloud — not Taobao product auto-map
+  - asn: 132203
+    name: Tencent
+    owner: Tencent
+    scope: provider
+    country: CN
+    note: Provider cloud — not WeChat/QQ product auto-map
+  - asn: 55960
+    name: Bytedance
+    owner: ByteDance
+    scope: provider
+    country: CN

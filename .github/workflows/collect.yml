@@ -40,6 +40,14 @@ jobs:
       - run: python scripts/build_network_datasets.py
       - run: python scripts/dataset_diff.py
       - run: python scripts/dataset_quality.py
+      - run: python scripts/coverage_matrix.py
+        continue-on-error: true
+      - run: python scripts/hot_missing_audit.py
+        continue-on-error: true
+      - run: python scripts/collect_providers.py
+        continue-on-error: true
+      - run: python scripts/build_provider_datasets.py
+        continue-on-error: true
       - name: Normalize
         run: |
           if [ "${{ inputs.skip_large }}" = "true" ]; then
