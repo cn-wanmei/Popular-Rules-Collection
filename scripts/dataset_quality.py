@@ -36,6 +36,16 @@ EXPECTED_EXPORTS = [
     ("database/provider/cloudflare.txt", "generated/provider/cloudflare.txt"),
 ]
 
+# When geoip/cn is healthy, shrink of these sidecars is WARN (collect_ip restores).
+IP_REGISTRY_SOFT_SHRINK = frozenset(
+    {
+        "database/ips/china.txt",
+        "database/ips/chinaunicom.txt",
+        "database/ips/chinamobile.txt",
+        "database/ips/chinatelecom.txt",
+    }
+)
+
 DOMAIN_RE = re.compile(
     r"^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,}$", re.I
 )
@@ -98,6 +108,10 @@ def check_clash_list(path: Path) -> list[str]:
     if bad > 5:
         issues.append(f"format issues in {path.relative_to(ROOT)}: bad_prefix={bad}")
     return issues
+
+
+def geoip_cn_healthy() -> bool:
+    return len(load_lines(ROOT / "database/geoip/cn.txt")) > 1000
 
 
 def main() -> int:
@@ -240,10 +254,17 @@ def main() -> int:
             if d.get("status") == "missing" and oc >= 50:
                 hard.append(f"dataset disappeared: {rel} old_count={oc}")
             if oc >= 50 and sr >= SHRINK_HARD:
-                hard.append(
+                msg = (
                     f"unexpected shrink>={int(SHRINK_HARD*100)}%: {rel} "
                     f"{oc}->{nc} (-{sr:.0%})"
                 )
+                if rel in IP_REGISTRY_SOFT_SHRINK and geoip_cn_healthy():
+                    warn.append(
+                        msg
+                        + " (ip_registry sidecar; geoip/cn healthy — collect_ip will restore)"
+                    )
+                else:
+                    hard.append(msg)
             elif oc >= 50 and sr >= SHRINK_WARN:
                 warn.append(
                     f"shrink>={int(SHRINK_WARN*100)}%: {rel} {oc}->{nc} (-{sr:.0%})"
