@@ -36,6 +36,8 @@ jobs:
         continue-on-error: true
       - run: python scripts/validate_dataset_registry.py
       - run: python scripts/build_network_lan.py
+      - run: python scripts/collect_datasets.py
+      - run: python scripts/build_network_datasets.py
       - name: Normalize
         run: |
           if [ "${{ inputs.skip_large }}" = "true" ]; then
