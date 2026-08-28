@@ -1,10 +1,11 @@
 {
   "date": "2026-08-28",
+  "version": 2,
   "matrix": [
     {
       "dataset": "service_rules",
       "data_available": true,
-      "export_available": true,
+      "note": "per-service domain rules",
       "clients": {
         "mihomo": {
           "capability": true,
@@ -46,7 +47,7 @@
     {
       "dataset": "service_ip",
       "data_available": true,
-      "export_available": true,
+      "note": "per-service IP sidecars (verified service-owned only)",
       "clients": {
         "mihomo": {
           "capability": true,
@@ -88,7 +89,7 @@
     {
       "dataset": "lan",
       "data_available": true,
-      "export_available": true,
+      "note": null,
       "clients": {
         "mihomo": {
           "capability": true,
@@ -128,9 +129,9 @@
       }
     },
     {
-      "dataset": "geosite",
+      "dataset": "geosite_policy",
       "data_available": true,
-      "export_available": true,
+      "note": "derived direct/proxy policy lists — NOT full geosite catalog",
       "clients": {
         "mihomo": {
           "capability": true,
@@ -172,7 +173,7 @@
     {
       "dataset": "geoip_country",
       "data_available": true,
-      "export_available": true,
+      "note": null,
       "clients": {
         "mihomo": {
           "capability": true,
@@ -214,7 +215,7 @@
     {
       "dataset": "geoip_mmdb",
       "data_available": true,
-      "export_available": true,
+      "note": "published artifact; source fetch lands in generated/mmdb",
       "clients": {
         "mihomo": {
           "capability": true,
@@ -256,7 +257,7 @@
     {
       "dataset": "provider",
       "data_available": true,
-      "export_available": true,
+      "note": "Provider ≠ Service — never map AWS ranges to Amazon retail",
       "clients": {
         "mihomo": {
           "capability": true,
@@ -296,9 +297,9 @@
       }
     },
     {
-      "dataset": "asn",
+      "dataset": "asn_metadata",
       "data_available": true,
-      "export_available": true,
+      "note": "metadata only — not routable CIDR rules",
       "clients": {
         "mihomo": {
           "capability": false,
@@ -340,7 +341,7 @@
     {
       "dataset": "policy",
       "data_available": true,
-      "export_available": true,
+      "note": null,
       "clients": {
         "mihomo": {
           "capability": false,
@@ -438,37 +439,37 @@
       "gap": "no_capability"
     },
     {
-      "dataset": "asn",
+      "dataset": "asn_metadata",
       "client": "mihomo",
       "gap": "no_capability"
     },
     {
-      "dataset": "asn",
+      "dataset": "asn_metadata",
       "client": "sing-box",
       "gap": "no_capability"
     },
     {
-      "dataset": "asn",
+      "dataset": "asn_metadata",
       "client": "surge",
       "gap": "no_capability"
     },
     {
-      "dataset": "asn",
+      "dataset": "asn_metadata",
       "client": "shadowrocket",
       "gap": "no_capability"
     },
     {
-      "dataset": "asn",
+      "dataset": "asn_metadata",
       "client": "quantumult-x",
       "gap": "no_capability"
     },
     {
-      "dataset": "asn",
+      "dataset": "asn_metadata",
       "client": "egern",
       "gap": "no_capability"
     },
     {
-      "dataset": "asn",
+      "dataset": "asn_metadata",
       "client": "loon",
       "gap": "no_capability"
     },

@@ -1,557 +1,557 @@
 {
   "date": "2026-08-28",
-  "compared_to": null,
+  "compared_to": "2026-08-28",
   "dataset_count": 50,
   "diffs": {
     "database/network/lan.txt": {
-      "old_count": 0,
+      "old_count": 21,
       "new_count": 21,
-      "added": 21,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/network/private.txt": {
-      "old_count": 0,
+      "old_count": 7,
       "new_count": 7,
-      "added": 7,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/geosite/direct.txt": {
-      "old_count": 0,
+      "old_count": 111540,
       "new_count": 111540,
-      "added": 111540,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/geosite/proxy.txt": {
-      "old_count": 0,
+      "old_count": 27220,
       "new_count": 27220,
-      "added": 27220,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/geoip/cn.txt": {
-      "old_count": 0,
+      "old_count": 9651,
       "new_count": 9651,
-      "added": 9651,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/geoip/hk.txt": {
-      "old_count": 0,
+      "old_count": 15649,
       "new_count": 15649,
-      "added": 15649,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/geoip/jp.txt": {
-      "old_count": 0,
+      "old_count": 17725,
       "new_count": 17725,
-      "added": 17725,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/geoip/kr.txt": {
-      "old_count": 0,
+      "old_count": 5440,
       "new_count": 5440,
-      "added": 5440,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/geoip/sg.txt": {
-      "old_count": 0,
+      "old_count": 13656,
       "new_count": 13656,
-      "added": 13656,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/geoip/tw.txt": {
-      "old_count": 0,
+      "old_count": 4795,
       "new_count": 4795,
-      "added": 4795,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/asn/metadata.yaml": {
-      "old_count": 0,
+      "old_count": 82,
       "new_count": 82,
-      "added": 82,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/policies/direct/manifest.yaml": {
-      "old_count": 0,
+      "old_count": 17,
       "new_count": 17,
-      "added": 17,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/policies/dns/servers.yaml": {
-      "old_count": 0,
+      "old_count": 39,
       "new_count": 39,
-      "added": 39,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/policies/proxy/manifest.yaml": {
-      "old_count": 0,
+      "old_count": 8,
       "new_count": 8,
-      "added": 8,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/adblock.txt": {
-      "old_count": 0,
+      "old_count": 47,
       "new_count": 47,
-      "added": 47,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/alibaba.txt": {
-      "old_count": 0,
+      "old_count": 54,
       "new_count": 54,
-      "added": 54,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/amazon.txt": {
-      "old_count": 0,
+      "old_count": 15,
       "new_count": 15,
-      "added": 15,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/apple.txt": {
-      "old_count": 0,
+      "old_count": 13,
       "new_count": 13,
-      "added": 13,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/battlenet.txt": {
-      "old_count": 0,
+      "old_count": 23,
       "new_count": 23,
-      "added": 23,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/bilibili.txt": {
-      "old_count": 0,
+      "old_count": 8,
       "new_count": 8,
-      "added": 8,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/bytedance.txt": {
-      "old_count": 0,
+      "old_count": 1,
       "new_count": 1,
-      "added": 1,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/china.txt": {
-      "old_count": 0,
+      "old_count": 9661,
       "new_count": 9661,
-      "added": 9661,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/chinamobile.txt": {
-      "old_count": 0,
+      "old_count": 1,
       "new_count": 1,
-      "added": 1,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/chinaunicom.txt": {
-      "old_count": 0,
+      "old_count": 3725,
       "new_count": 3725,
-      "added": 3725,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/cloudflare.txt": {
-      "old_count": 0,
+      "old_count": 22,
       "new_count": 22,
-      "added": 22,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/copilot.txt": {
-      "old_count": 0,
+      "old_count": 2,
       "new_count": 2,
-      "added": 2,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/facebook.txt": {
-      "old_count": 0,
+      "old_count": 23,
       "new_count": 23,
-      "added": 23,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/google.txt": {
-      "old_count": 0,
+      "old_count": 5,
       "new_count": 5,
-      "added": 5,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/googlefcm.txt": {
-      "old_count": 0,
+      "old_count": 26,
       "new_count": 26,
-      "added": 26,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/iqiyi.txt": {
-      "old_count": 0,
+      "old_count": 21,
       "new_count": 21,
-      "added": 21,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/kakaotalk.txt": {
-      "old_count": 0,
+      "old_count": 6,
       "new_count": 6,
-      "added": 6,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/kugoukuwo.txt": {
-      "old_count": 0,
+      "old_count": 90,
       "new_count": 90,
-      "added": 90,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/line.txt": {
-      "old_count": 0,
+      "old_count": 16,
       "new_count": 16,
-      "added": 16,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/naver.txt": {
-      "old_count": 0,
+      "old_count": 33,
       "new_count": 33,
-      "added": 33,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/netease.txt": {
-      "old_count": 0,
+      "old_count": 18,
       "new_count": 18,
-      "added": 18,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/nintendo.txt": {
-      "old_count": 0,
+      "old_count": 1,
       "new_count": 1,
-      "added": 1,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/openai.txt": {
-      "old_count": 0,
+      "old_count": 2,
       "new_count": 2,
-      "added": 2,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/private.txt": {
-      "old_count": 0,
+      "old_count": 3,
       "new_count": 3,
-      "added": 3,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/spotify.txt": {
-      "old_count": 0,
+      "old_count": 2,
       "new_count": 2,
-      "added": 2,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/stun.txt": {
-      "old_count": 0,
+      "old_count": 16,
       "new_count": 16,
-      "added": 16,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/telegram.txt": {
-      "old_count": 0,
+      "old_count": 22,
       "new_count": 22,
-      "added": 22,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/tencent.txt": {
-      "old_count": 0,
+      "old_count": 20,
       "new_count": 20,
-      "added": 20,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/tencentvideo.txt": {
-      "old_count": 0,
+      "old_count": 32,
       "new_count": 32,
-      "added": 32,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/twitch.txt": {
-      "old_count": 0,
+      "old_count": 12,
       "new_count": 12,
-      "added": 12,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/twitter.txt": {
-      "old_count": 0,
+      "old_count": 6,
       "new_count": 6,
-      "added": 6,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/whatsapp.txt": {
-      "old_count": 0,
+      "old_count": 11,
       "new_count": 11,
-      "added": 11,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/xiaomi.txt": {
-      "old_count": 0,
+      "old_count": 9,
       "new_count": 9,
-      "added": 9,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/youku.txt": {
-      "old_count": 0,
+      "old_count": 1,
       "new_count": 1,
-      "added": 1,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/youtube.txt": {
-      "old_count": 0,
+      "old_count": 3,
       "new_count": 3,
-      "added": 3,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/zhihu.txt": {
-      "old_count": 0,
+      "old_count": 5,
       "new_count": 5,
-      "added": 5,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     }
   }
 }
