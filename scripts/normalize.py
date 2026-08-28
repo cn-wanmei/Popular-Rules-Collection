@@ -5,6 +5,7 @@ normalize.py — V1.1 memory-efficient upstream → Universal Rule Schema
 - File→service mapping loaded from registry.yaml (no hardcoded list)
 - Full provenance only for non-adblock services
 - AdBlock written as domain aggregates + light metadata
+- v2fly domain-list-community via v2fly_parser
 """
 
 from __future__ import annotations
@@ -18,6 +19,13 @@ from pathlib import Path
 from typing import Any, Iterable
 
 import yaml
+
+from v2fly_parser import (  # noqa: E402
+    V2FLY_PREFIX,
+    expand_v2fly_file,
+    looks_like_v2fly,
+    parse_v2fly_line,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 BACKUP = ROOT / "backup"
@@ -179,6 +187,9 @@ def iter_rules_from_file(path: Path) -> Iterable[tuple[str, str]]:
         text = path.read_text(encoding="utf-8", errors="replace")
     except OSError:
         return
+    if looks_like_v2fly(text, path) and path.suffix not in {".yaml", ".yml"}:
+        yield from expand_v2fly_file(path)
+        return
     is_yamlish = path.suffix in {".yaml", ".yml"} or text.lstrip().startswith("payload:")
     if is_yamlish:
         try:
@@ -196,7 +207,11 @@ def iter_rules_from_file(path: Path) -> Iterable[tuple[str, str]]:
         except yaml.YAMLError:
             pass
     for line in text.splitlines():
-        yield from parse_line(line)
+        stripped = line.strip().split(" #", 1)[0].strip() if " #" in line else line.strip()
+        if V2FLY_PREFIX.match(stripped):
+            yield from parse_v2fly_line(line)
+        else:
+            yield from parse_line(line)
 
 
 def main() -> int:
