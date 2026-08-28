@@ -12,54 +12,64 @@ rule_loader                      dedicated dataset loaders (no load_everything)
 ×7 client builders               Capability Matrix (not all datasets × 7)
 ```
 
-## Capability Matrix (initial)
+## Capability Matrix
 
-| Dataset | mihomo | sing-box | surge | others | notes |
-|---------|--------|----------|-------|--------|-------|
-| Service rules | list | json | list | list | existing |
-| Service IP sidecar | IP-CIDR | ip_cidr | IP-CIDR | … | existing |
-| LAN / private | IP-CIDR | ip_cidr | IP-CIDR | … | P0 `generated/network/` |
-| Geosite | rule-set / geosite | geosite | DOMAIN sets | optional | P1 |
-| GeoIP country list | IP-CIDR | ip_cidr | IP-CIDR | optional | P1 |
-| GeoIP MMDB | binary | binary | — | — | artifact only |
-| ASN metadata | meta | meta | — | — | P1 |
-| Proxy/Direct policy | P2 | P2 | P2 | P2 | policy domain |
-| DNS policy | P2 | P2 | P2 | P2 | not full config gen |
+| Dataset | mihomo | sing-box | surge | notes |
+|---------|--------|----------|-------|-------|
+| Service rules | list | json | list | existing ×7 |
+| LAN / private | list | cidr | list | `generated/network/` |
+| Geosite direct/proxy | DOMAIN-SUFFIX | domains | list | `generated/geosite/` |
+| GeoIP country | IP-CIDR | cidr | list | `generated/geoip/` |
+| GeoIP MMDB | binary | binary | — | `generated/mmdb/` artifact only |
+| ASN metadata | yaml | yaml | — | provider scope only |
+| Proxy/Direct policy | manifest | manifest | — | references datasets |
+| DNS servers | yaml | yaml | — | registry only, not full config |
 
 ## Directory contract
 
 ```
 database/
-  services/ domains/ ips/     # Service Rules (frozen path contract)
-  network/                    # LAN, private, multicast
-  geosite/                    # category domain lists (future)
-  geoip/                      # country CIDR lists (future)
-  asn/                        # metadata (future)
-  policies/                   # proxy/direct/dns (P2)
+  services/ domains/ ips/     # Service Rules (frozen)
+  network/                    # LAN, private
+  geosite/                    # category domain lists
+  geoip/                      # country CIDR lists
+  asn/                        # metadata
+  policies/                   # proxy/direct/dns
+  datasets_provenance/
 generated/
-  mihomo/ … loon/             # Service client rules (unchanged)
-  network/                    # Network dataset client exports
-  mmdb/                       # MMDB artifacts only (never expanded to ips/)
-sources/
-  registry.yaml
-  ip_registry.yaml
-  datasets/
-    network.yaml
-    geosite.yaml
-    geoip.yaml
-    asn.yaml
+  mihomo/ … loon/             # Service client rules
+  network/ geosite/ geoip/    # Network exports
+  mmdb/                       # MMDB artifacts (never expanded to ips/)
+  policies/
+sources/datasets/
+  network.yaml geosite.yaml geoip.yaml asn.yaml policy.yaml
 ```
 
-## Priority
+## Pipeline
 
-- **P0**: LAN/private + dataset registry + docs + validate (this commit)
-- **P1**: Geosite/GeoIP materialization, MMDB as artifact, ASN metadata
-- **P2**: Proxy/Direct/DNS policy datasets
-- **Out of scope here**: full proxy config generator (separate project if ever)
+```
+validate_dataset_registry
+  → build_network_lan
+  → collect_datasets
+  → build_network_datasets
+```
+
+Isolated from Service `collect → normalize → ×7 builders`.
+
+## Status (2026-08-28)
+
+| Track | Status |
+|-------|--------|
+| P0 LAN/private | **done** |
+| P1 Geosite direct/proxy | **done** |
+| P1 GeoIP cn/jp/hk/sg/kr | **done** |
+| P1 Country.mmdb artifact | **done** (CI fetch) |
+| P1 ASN metadata | **done** |
+| P2 Proxy/Direct/DNS policy | **done** (manifests + DNS server registry) |
 
 ## Non-goals
 
-- Do not route AWS ASN into Amazon service lists
-- Do not explode MMDB into `database/ips/`
-- Do not treat geosite `category-social` as a single Service
-- Do not replace Primary Ecosystem / Service Canonical with Geosite ids
+- AWS ASN → Amazon service lists
+- Explode MMDB into `database/ips/`
+- Geosite category = Service id
+- Full proxy config generator (separate project if ever)
