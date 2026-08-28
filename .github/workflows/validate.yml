@@ -12,12 +12,10 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    # Skip re-run noise when collect already hard-gated; still useful for PR/Build
     if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' || github.event.workflow_run.conclusion == 'failure' }}
     steps:
       - uses: actions/checkout@v4
         with:
-          # For workflow_run, checkout the triggering commit when available
           ref: ${{ github.event.workflow_run.head_sha || github.sha }}
       - uses: actions/setup-python@v5
         with:
@@ -32,3 +30,7 @@ jobs:
         run: python scripts/validate.py
       - name: Builder validate
         run: python scripts/builder_validate.py
+      - name: Dataset quality gate
+        run: |
+          python scripts/dataset_diff.py
+          python scripts/dataset_quality.py
