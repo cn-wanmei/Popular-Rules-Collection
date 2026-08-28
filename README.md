@@ -3,7 +3,42 @@
 > **规则数据供应链 + 标准化中间库 + 多客户端构建系统**
 > Rules Data Supply Chain · Universal Rule Database · Multi-format Build System
 
-自动采集、标准化、智能去重、冲突检测、版本追踪，并向 **Mihomo / Clash Meta / sing-box / Surge / Shadowrocket / Quantumult X / Egern** 输出规则集。
+自动采集、标准化、智能去重、冲突检测、版本追踪，并向 **Mihomo / Clash Meta / sing-box / Surge / Shadowrocket / Quantumult X / Egern / Loon** 输出规则集。
+
+## 我该怎么用？
+
+1. 打开 **[使用指南 docs/USAGE.md](docs/USAGE.md)** — 选规则、订阅读、策略顺序  
+2. 查 **[规则目录 docs/RULE_CATALOG.md](docs/RULE_CATALOG.md)** — 每条规则的说明与使用场景  
+3. 单服务 Raw 链接见 **[docs/rules/](docs/rules/)**
+
+### 30 秒示例（Mihomo）
+
+```yaml
+rule-providers:
+  china:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/china.yaml"
+    interval: 86400
+  openai:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/openai.yaml"
+    interval: 86400
+rules:
+  - RULE-SET,china,DIRECT
+  - RULE-SET,openai,PROXY
+  - GEOIP,CN,DIRECT
+  - MATCH,PROXY
+```
+
+| 场景 | 规则 ID | 建议 |
+|------|---------|------|
+| 国内直连 | `china` | DIRECT |
+| ChatGPT | `openai` / `ai` | PROXY |
+| YouTube | `youtube` | PROXY |
+| 微信/支付宝 | `wechat` / `alipay` | DIRECT |
+| 广告拦截 | `adblock-light` | REJECT |
 
 ## 架构
 
@@ -19,54 +54,53 @@ Dataset Sources (sources/datasets/*)
   → database/{network,geosite,geoip,provider,asn,policies}
   → build_network_* / build_provider_* → generated/{network,geosite,geoip,provider}
 
-Quality Gate (dataset_diff + dataset_quality) → Hard/Warn
-Coverage / HOT_MISSING / Client Capability Matrix → reports/
+Quality Gate → Coverage / HOT_MISSING / Client Capability Matrix → reports/
 ```
-
-文档：`docs/PHASE3_QUALITY.md` · `docs/PHASE3BC.md` · `docs/PHASE4_CAPABILITY.md` · `docs/NETWORK_DATASETS.md`
 
 ## 目录
 
 | 路径 | 用途 |
 |------|------|
-| `rule/` | 人读浏览 |
-| `database/` | Schema 中间库（services + network datasets） |
-| `generated/` | 客户端产物 + network/provider 导出 |
-| `sources/` | registry · ip_registry · datasets/* · health |
-| `scripts/` | 采集 / 标准化 / 构建 / Quality Gate / Matrix |
-| `config/` | primary · client_capabilities · intentional_unmaterialized |
-| `reports/` | coverage · quality · capability · HOT_MISSING |
-| `tests/` | 关键路径契约测试 |
+| `rule/` | 人读浏览（Primary 生态路径） |
+| `database/` | Schema 中间库（services + network） |
+| `generated/` | 客户端可订阅产物 |
+| `sources/` | registry · ip_registry · datasets · health |
+| `docs/` | **USAGE · RULE_CATALOG · 架构与质检** |
+| `docs/rules/` | 每服务说明 + Raw/CDN 链接 |
+| `config/` | primary · capabilities · intentional |
+| `reports/` | 覆盖率 / 质量 / 能力矩阵 |
+| `tests/` | 契约测试 |
 
-## 快速开始
+## 文档索引
+
+| 文档 | 说明 |
+|------|------|
+| [docs/USAGE.md](docs/USAGE.md) | 订阅方式、策略顺序、China 说明 |
+| [docs/RULE_CATALOG.md](docs/RULE_CATALOG.md) | **全部规则：说明 + 场景 + 建议策略** |
+| [docs/NETWORK_DATASETS.md](docs/NETWORK_DATASETS.md) | GeoSite / GeoIP / Provider / LAN |
+| [docs/PHASE4_CAPABILITY.md](docs/PHASE4_CAPABILITY.md) | 客户端能力矩阵 |
+| [docs/PHASE3_QUALITY.md](docs/PHASE3_QUALITY.md) | Quality Gate |
+| [docs/RELEASE_AND_QC.md](docs/RELEASE_AND_QC.md) | 发布与质检 |
+| [docs/rules/README.md](docs/rules/README.md) | 单服务文档索引 |
+
+## 快速开始（开发者）
 
 ```bash
 pip install -r requirements.txt
 python scripts/collect.py
-python scripts/normalize.py --skip-large
+python scripts/normalize.py          # 完整 China 不要加 --skip-large
 python scripts/deduplicate.py
 python scripts/build_mihomo.py
-python scripts/build_surge.py
-python scripts/build_singbox.py
-python scripts/build_shadowrocket.py
-python scripts/build_quantumultx.py
-python scripts/build_egern.py
-python scripts/validate.py
+# … 其他 build_* / validate
 ```
 
 ## 订阅约定
 
-- **Primary**: GitHub Raw
-- **Mirror**: jsDelivr / Fastly / Cloudflare（仅加速，非权威）
+- **Primary**: GitHub Raw  
+- **Mirror**: jsDelivr / Fastly（仅加速，非权威）
 
-Example (Egern):
-
-```yaml
-rules:
-  - rule_set:
-      match: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/google.yaml"
-      policy: Proxy
-      update_interval: 86400
+```text
+.../generated/<client>/<service_id>.yaml|list|json
 ```
 
 ## License
