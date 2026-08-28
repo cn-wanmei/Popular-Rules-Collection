@@ -1,5 +1,5 @@
 version: 2
-updated: '2026-08-26'
+updated: '2026-08-28'
 categories:
 - id: ai
   display_name: AI
@@ -34,7 +34,6 @@ categories:
 - id: unionpay
   display_name: UnionPay
   order: 100
-  notes: 银联及银行类服务展示集合；银行域名并不属于银联实体
 - id: chinamobile
   display_name: ChinaMobile
   order: 110
@@ -50,29 +49,31 @@ categories:
 - id: china
   display_name: China
   order: 150
-  notes: 无法归入独立生态的中国区域服务
-- id: developer
-  display_name: Developer
-  order: 160
-- id: gaming
-  display_name: Gaming
-  order: 170
-- id: privacy
-  display_name: Privacy
-  order: 180
-- id: social
-  display_name: Social
-  order: 190
 - id: streaming
   display_name: Streaming
+  order: 160
+- id: social
+  display_name: Social
+  order: 170
+- id: gaming
+  display_name: Gaming
+  order: 180
+- id: developer
+  display_name: Developer
+  order: 190
+- id: privacy
+  display_name: Privacy
   order: 200
-- id: network
-  display_name: Network
-  order: 210
 - id: finance
   display_name: Finance
+  order: 210
+- id: network
+  display_name: Network
   order: 220
-  notes: 非银联/大厂的金融服务
 - id: other
   display_name: Other
-  order: 999
+  order: 230
+- id: adult
+  display_name: Adult
+  order: 250
+  notes: 18+ NSFW aggregate from trusted geosite category-porn only
