@@ -214,10 +214,10 @@ sources:
   - {path: geo/geosite/anthropic.list, name: anthropic, local: geosite_anthropic.list}
   - {path: geo/geosite/netflix.list, name: netflix, local: geosite_netflix.list}
   - {path: geo/geosite/category-ai-!cn.list, name: ai, local: geosite_category_ai.list}
-  - {path: geo/geosite/category-porn.list, name: adult, local: geosite_category_porn.list}
-  - {path: geo/geosite/pornhub.list, name: adult, local: geosite_pornhub.list}
-  - {path: geo/geosite/xvideos.list, name: adult, local: geosite_xvideos.list}
-  - {path: geo/geosite/ehentai.list, name: adult, local: geosite_ehentai.list}
+  - {path: geo/geosite/category-porn.list, name: restricted, local: geosite_category_porn.list}
+  - {path: geo/geosite/pornhub.list, name: restricted, local: geosite_pornhub.list}
+  - {path: geo/geosite/xvideos.list, name: restricted, local: geosite_xvideos.list}
+  - {path: geo/geosite/ehentai.list, name: restricted, local: geosite_ehentai.list}
 - id: v2fly
   name: v2fly domain-list-community
   url: https://github.com/v2fly/domain-list-community
@@ -282,10 +282,10 @@ sources:
   - {path: data/reddit, name: reddit, local: v2fly_reddit}
   - {path: data/mojang, name: minecraft, local: v2fly_mojang}
   - {path: data/huawei, name: huawei, local: v2fly_huawei}
-  - {path: data/category-porn, name: adult, local: v2fly_category_porn}
-  - {path: data/pornhub, name: adult, local: v2fly_pornhub}
-  - {path: data/xvideos, name: adult, local: v2fly_xvideos}
-  - {path: data/ehentai, name: adult, local: v2fly_ehentai}
+  - {path: data/category-porn, name: restricted, local: v2fly_category_porn}
+  - {path: data/pornhub, name: restricted, local: v2fly_pornhub}
+  - {path: data/xvideos, name: restricted, local: v2fly_xvideos}
+  - {path: data/ehentai, name: restricted, local: v2fly_ehentai}
 - id: dler
   name: Dler Rules
   url: https://github.com/dler-io/Rules
