@@ -167,6 +167,17 @@ services:
   gfw: {primary_category: privacy, display_name: GFW, categories: [privacy], service_type: service}
   proxy: {primary_category: privacy, display_name: Proxy, categories: [privacy], service_type: service}
   restricted: {primary_category: restricted, display_name: Restricted, categories: [restricted], service_type: aggregate}
+  oppo: {primary_category: other, display_name: OPPO, categories: [other, china], service_type: service}
+  vivo: {primary_category: other, display_name: Vivo, categories: [other, china], service_type: service}
+  siri: {primary_category: apple, display_name: Siri, categories: [apple], service_type: service, parent: apple}
+  dingtalk: {primary_category: alibaba, display_name: DingTalk, categories: [alibaba, china], service_type: service, parent: alibaba}
+  googledrive: {primary_category: google, display_name: GoogleDrive, categories: [google], service_type: service, parent: google}
+  gcp: {primary_category: google, display_name: GCP, categories: [google, developer], service_type: service, parent: google}
+  kugoukuwo: {primary_category: china, display_name: KugouKuwo, categories: [china], service_type: service, parent: china}
+  steamcn: {primary_category: china, display_name: SteamCN, categories: [china, gaming], service_type: service, parent: china}
+  paramountplus: {primary_category: streaming, display_name: ParamountPlus, categories: [streaming], service_type: service}
+  peacock: {primary_category: streaming, display_name: Peacock, categories: [streaming], service_type: service}
+  vimeo: {primary_category: streaming, display_name: Vimeo, categories: [streaming], service_type: service}
 aggregate_overrides:
   adblock: {primary_category: privacy, display_name: AdBlock, categories: [privacy], service_type: aggregate, children: [adblock-pro, adblock-light]}
   ai: {primary_category: ai, display_name: AI, categories: [ai], service_type: aggregate, children: [openai, claude, gemini, copilot, anthropic, huggingface, perplexity, groq, xai, mistral, deepseek, elevenlabs, aisuite]}
