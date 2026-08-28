@@ -16,11 +16,12 @@ generated_files:
   domain: youtube_domain.list
   ip: youtube_ip.list
 statistics:
-  domains: 179
+  domains: 180
   ipv4_or_cidr: 3
-  mixed: 182
+  mixed: 183
 sources:
 - blackmatrix7
+- dler
 clients:
 - Mihomo
 - sing-box
@@ -29,5 +30,5 @@ clients:
 - Quantumult X
 - Egern
 - Loon
-updated_at: '2026-08-27'
+updated_at: '2026-08-28'
 auto_generated: true

@@ -11,8 +11,8 @@
 | 类型 | domain |
 | Domains | 8 |
 | CIDR | 0 |
-| 最后更新 | 2026-08-27 |
-| Sources | metacubex |
+| 最后更新 | 2026-08-28 |
+| Sources | metacubex / v2fly |
 | Confidence | HIGH |
 
 ## 用途
@@ -49,6 +49,7 @@ _未在 config/official_sites.yaml 配置_
 ## 规则来源（Provenance）
 
 - `metacubex`
+- `v2fly`
 
 由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
 

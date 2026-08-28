@@ -15,11 +15,13 @@ generated_files:
   domain: steam_domain.list
   ip: null
 statistics:
-  domains: 51
+  domains: 69
   ipv4_or_cidr: 0
-  mixed: 51
+  mixed: 69
 sources:
 - blackmatrix7
+- v2fly
+- dler
 clients:
 - Mihomo
 - sing-box
@@ -28,5 +30,5 @@ clients:
 - Quantumult X
 - Egern
 - Loon
-updated_at: '2026-08-27'
+updated_at: '2026-08-28'
 auto_generated: true

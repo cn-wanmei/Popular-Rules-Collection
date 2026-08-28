@@ -10,8 +10,8 @@
 | Domains | 1 |
 | IP/CIDR | 0 |
 | Mixed | 1 |
-| Sources | metacubex |
-| Updated | 2026-08-27 |
+| Sources | metacubex, v2fly |
+| Updated | 2026-08-28 |
 
 ## 基础规则（Classical）
 
@@ -37,7 +37,7 @@
 
 ## 来源
 
-`metacubex`
+`metacubex`, `v2fly`
 
 ---
 

@@ -11,8 +11,8 @@
 | 类型 | domain |
 | Domains | 247 |
 | CIDR | 0 |
-| 最后更新 | 2026-08-27 |
-| Sources | blackmatrix7 |
+| 最后更新 | 2026-08-28 |
+| Sources | blackmatrix7 / dler |
 | Confidence | HIGH |
 
 ## 用途
@@ -49,6 +49,7 @@
 ## 规则来源（Provenance）
 
 - `blackmatrix7`
+- `dler`
 
 由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
 

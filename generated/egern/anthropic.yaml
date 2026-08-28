@@ -1,9 +1,14 @@
 # name: Anthropic
 # id: anthropic
-# count: 3
+# count: 8
 no_resolve: true
 domain_set:
 - servd-anthropic-website.b-cdn.net
 domain_suffix_set:
 - anthropic.com
+- clau.de
 - claude.ai
+- claude.com
+- claudemcpclient.com
+- claudemcpcontent.com
+- claudeusercontent.com

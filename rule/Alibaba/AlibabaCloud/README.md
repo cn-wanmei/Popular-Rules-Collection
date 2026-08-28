@@ -7,11 +7,11 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 12 |
+| Domains | 100 |
 | IP/CIDR | 0 |
-| Mixed | 12 |
-| Sources | metacubex |
-| Updated | 2026-08-27 |
+| Mixed | 100 |
+| Sources | metacubex, v2fly |
+| Updated | 2026-08-28 |
 
 ## 基础规则（Classical）
 
@@ -37,7 +37,7 @@
 
 ## 来源
 
-`metacubex`
+`metacubex`, `v2fly`
 
 ---
 

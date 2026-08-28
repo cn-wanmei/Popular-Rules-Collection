@@ -1,0 +1,28 @@
+{
+  "date": "2026-08-28",
+  "baseline_compared": true,
+  "warn": [
+    "cloudflare: 65 → 93 (+43.1%)",
+    "hoyoverse: 11 → 15 (+36.4%)",
+    "notion: 6 → 8 (+33.3%)",
+    "openai: 34 → 46 (+35.3%)",
+    "perplexity: 5 → 7 (+40.0%)",
+    "spotify: 29 → 37 (+27.6%)",
+    "telegram: 35 → 51 (+45.7%)"
+  ],
+  "high": [
+    "apple: 20 → 34 (+70.0%)",
+    "line: 24 → 37 (+54.2%)",
+    "soundcloud: 3 → 5 (+66.7%)",
+    "steam: 54 → 84 (+55.6%)",
+    "tiktok: 31 → 55 (+77.4%)",
+    "whatsapp: 17 → 28 (+64.7%)"
+  ],
+  "review": [
+    "alibabacloud: 12 → 100 (+733.3%)",
+    "anthropic: 3 → 8 (+166.7%)",
+    "ebay: 44 → 370 (+740.9%)",
+    "github: 31 → 65 (+109.7%)",
+    "instagram: 4 → 76 (+1800.0%)"
+  ]
+}

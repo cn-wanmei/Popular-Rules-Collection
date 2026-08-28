@@ -15,11 +15,12 @@ generated_files:
   domain: notion_domain.list
   ip: null
 statistics:
-  domains: 6
+  domains: 8
   ipv4_or_cidr: 0
-  mixed: 6
+  mixed: 8
 sources:
 - blackmatrix7
+- v2fly
 clients:
 - Mihomo
 - sing-box
@@ -28,5 +29,5 @@ clients:
 - Quantumult X
 - Egern
 - Loon
-updated_at: '2026-08-27'
+updated_at: '2026-08-28'
 auto_generated: true

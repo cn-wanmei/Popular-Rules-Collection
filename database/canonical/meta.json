@@ -1,10 +1,13 @@
 {
-  "date": "2026-08-27",
-  "services": 169,
-  "domains_in": 713558,
-  "domains_out": 713558,
-  "ips_in": 579,
-  "ips_out": 579,
-  "domain_removed": 0,
+  "date": "2026-08-28",
+  "services": 170,
+  "domains_in": 714345,
+  "domains_out": 714343,
+  "ips_in": 591,
+  "ips_out": 591,
+  "typed_rules_in": 280303,
+  "typed_rules_out": 280301,
+  "typed_dupes_removed": 2,
+  "domain_removed": 2,
   "ip_removed": 0
 }

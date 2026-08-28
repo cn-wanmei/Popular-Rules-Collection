@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "errors": 0,
+  "warnings": 0,
+  "stats": {
+    "services": 170,
+    "domains": 714343,
+    "ips": 591,
+    "invalid_domains": 0,
+    "invalid_cidrs": 0,
+    "empty_generated": 0,
+    "generated_files": 1696,
+    "stale_domain_set": 0
+  },
+  "error_samples": [],
+  "warning_samples": []
+}

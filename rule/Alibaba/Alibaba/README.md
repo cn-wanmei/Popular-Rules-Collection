@@ -10,8 +10,8 @@
 | Domains | 463 |
 | IP/CIDR | 54 |
 | Mixed | 517 |
-| Sources | blackmatrix7, metacubex |
-| Updated | 2026-08-27 |
+| Sources | blackmatrix7, metacubex, v2fly |
+| Updated | 2026-08-28 |
 
 ## 基础规则（Classical）
 
@@ -38,7 +38,7 @@
 
 ## 来源
 
-`blackmatrix7`, `metacubex`
+`blackmatrix7`, `metacubex`, `v2fly`
 
 ---
 

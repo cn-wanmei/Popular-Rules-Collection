@@ -1,7 +1,9 @@
 # name: Facebook
 # id: facebook
-# count: 592
+# count: 598
 no_resolve: true
+domain_set:
+- fbcdn-a.akamaihd.net
 domain_suffix_set:
 - aboutfacebook.com
 - accessfacebookfromschool.com
@@ -13,6 +15,7 @@ domain_suffix_set:
 - acheterdesfollowersinstagram.com
 - acheterfollowersinstagram.com
 - advancediddetection.com
+- analytics.facebook.com
 - askfacebook.net
 - askfacebook.org
 - atdmt2.com
@@ -297,7 +300,9 @@ domain_suffix_set:
 - faycbok.com
 - fb.careers
 - fb.com
+- fb.gg
 - fb.me
+- fb.watch
 - fbacebook.com
 - fbaddins.com
 - fbbmarket.com
@@ -326,6 +331,7 @@ domain_suffix_set:
 - fbthirdpartypixel.net
 - fbthirdpartypixel.org
 - fburl.com
+- fbwat.ch
 - fbworkmail.com
 - fcacebook.com
 - fcaebook.com
@@ -500,6 +506,7 @@ domain_suffix_set:
 - opengraphprotocol.com
 - opengraphprotocol.org
 - parse.com
+- pixel.facebook.com
 - powersunitedvr.com
 - pyrobot.org
 - reachtheworldonfacebook.com

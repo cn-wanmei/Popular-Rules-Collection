@@ -11,7 +11,7 @@
 | 类型 | domain |
 | Domains | 3 |
 | CIDR | 0 |
-| 最后更新 | 2026-08-27 |
+| 最后更新 | 2026-08-28 |
 | Sources | metacubex |
 | Confidence | HIGH |
 

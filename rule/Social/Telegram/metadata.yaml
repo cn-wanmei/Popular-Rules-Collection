@@ -15,11 +15,13 @@ generated_files:
   domain: telegram_domain.list
   ip: telegram_ip.list
 statistics:
-  domains: 24
-  ipv4_or_cidr: 10
-  mixed: 34
+  domains: 27
+  ipv4_or_cidr: 22
+  mixed: 49
 sources:
 - blackmatrix7
+- v2fly
+- dler
 clients:
 - Mihomo
 - sing-box
@@ -28,5 +30,5 @@ clients:
 - Quantumult X
 - Egern
 - Loon
-updated_at: '2026-08-27'
+updated_at: '2026-08-28'
 auto_generated: true

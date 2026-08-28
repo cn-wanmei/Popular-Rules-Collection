@@ -16,12 +16,14 @@ generated_files:
   domain: bilibili_domain.list
   ip: bilibili_ip.list
 statistics:
-  domains: 120
+  domains: 121
   ipv4_or_cidr: 8
-  mixed: 128
+  mixed: 129
 sources:
 - blackmatrix7
 - metacubex
+- v2fly
+- dler
 clients:
 - Mihomo
 - sing-box
@@ -30,5 +32,5 @@ clients:
 - Quantumult X
 - Egern
 - Loon
-updated_at: '2026-08-27'
+updated_at: '2026-08-28'
 auto_generated: true

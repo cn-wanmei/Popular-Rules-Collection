@@ -10,6 +10,7 @@
 - [Adobe](adobe.md) (`adobe` · other)
 - [AI](ai.md) (`ai` · ai)
 - [Airbnb](airbnb.md) (`airbnb` · other)
+- [AI-Suite](aisuite.md) (`aisuite` · ai)
 - [Akamai](akamai.md) (`akamai` · developer)
 - [Alibaba](alibaba.md) (`alibaba` · alibaba)
 - [AlibabaCloud](alibabacloud.md) (`alibabacloud` · alibaba)

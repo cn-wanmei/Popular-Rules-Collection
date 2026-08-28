@@ -1,6 +1,6 @@
 # name: Bbc
 # id: bbc
-# count: 28
+# count: 29
 no_resolve: true
 domain_set:
 - aod-dash-uk-live.akamaized.net
@@ -31,5 +31,6 @@ domain_suffix_set:
 - bbcverticals.com
 - bidi.net.uk
 domain_keyword_set:
+- -uk-live.akamaized.net
 - bbcfmt
 - uk-live

@@ -1,7 +1,9 @@
 # Notion — Quantumult X filter
 host, http-inputs-notion.splunkcloud.com
 host-suffix, notion-static.com
+host-suffix, notion-status.com
 host-suffix, notion.com
 host-suffix, notion.new
 host-suffix, notion.site
 host-suffix, notion.so
+host-suffix, notionusercontent.com

@@ -1,8 +1,10 @@
 # name: Soundcloud
 # id: soundcloud
-# count: 3
+# count: 5
 no_resolve: true
 domain_suffix_set:
 - p-cdn.us
 - sndcdn.com
+- soundcloud.app.goo.gl
 - soundcloud.com
+- soundcloudmail.com

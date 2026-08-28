@@ -19,11 +19,12 @@ generated_files:
   domain: microsoft_domain.list
   ip: null
 statistics:
-  domains: 664
+  domains: 685
   ipv4_or_cidr: 0
-  mixed: 664
+  mixed: 685
 sources:
 - blackmatrix7
+- dler
 clients:
 - Mihomo
 - sing-box
@@ -32,5 +33,5 @@ clients:
 - Quantumult X
 - Egern
 - Loon
-updated_at: '2026-08-27'
+updated_at: '2026-08-28'
 auto_generated: true

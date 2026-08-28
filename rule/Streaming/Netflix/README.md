@@ -10,8 +10,8 @@
 | Domains | 32 |
 | IP/CIDR | 0 |
 | Mixed | 32 |
-| Sources | blackmatrix7 |
-| Updated | 2026-08-27 |
+| Sources | blackmatrix7, v2fly, dler |
+| Updated | 2026-08-28 |
 
 ## 基础规则（Classical）
 
@@ -37,7 +37,7 @@
 
 ## 来源
 
-`blackmatrix7`
+`blackmatrix7`, `v2fly`, `dler`
 
 ## 官方
 

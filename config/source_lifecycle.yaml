@@ -1,8 +1,10 @@
 version: 1
-updated: '2026-08-27'
+updated: '2026-08-28'
 states:
   blackmatrix7: active
   metacubex: active
+  v2fly: active
+  dler: active
 enum:
 - active
 - degraded

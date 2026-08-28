@@ -15,11 +15,12 @@ generated_files:
   domain: line_domain.list
   ip: line_ip.list
 statistics:
-  domains: 8
+  domains: 21
   ipv4_or_cidr: 16
-  mixed: 24
+  mixed: 37
 sources:
 - blackmatrix7
+- v2fly
 clients:
 - Mihomo
 - sing-box
@@ -28,5 +29,5 @@ clients:
 - Quantumult X
 - Egern
 - Loon
-updated_at: '2026-08-27'
+updated_at: '2026-08-28'
 auto_generated: true

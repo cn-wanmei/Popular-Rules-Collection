@@ -1,14 +1,25 @@
 # name: WhatsApp
 # id: whatsapp
-# count: 28
+# count: 39
 no_resolve: true
 domain_set:
 - graph.facebook.com
 domain_suffix_set:
 - bintray.com
+- graph.whatsapp.com
+- graph.whatsapp.net
+- wa.me
+- whatsapp-plus.info
+- whatsapp-plus.me
+- whatsapp-plus.net
 - whatsapp.biz
+- whatsapp.cc
 - whatsapp.com
+- whatsapp.info
 - whatsapp.net
+- whatsapp.org
+- whatsapp.tv
+- whatsappbrand.com
 domain_keyword_set:
 - whatsapp
 ip_cidr_set:

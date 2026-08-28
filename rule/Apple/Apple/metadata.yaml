@@ -11,19 +11,20 @@ children:
 - icloud
 - siri
 rule:
-  has_domain: false
+  has_domain: true
   has_ip: true
   mixed: true
 generated_files:
   mixed: apple.list
-  domain: null
+  domain: apple_domain.list
   ip: apple_ip.list
 statistics:
-  domains: 0
+  domains: 14
   ipv4_or_cidr: 13
-  mixed: 13
+  mixed: 27
 sources:
 - blackmatrix7
+- dler
 clients:
 - Mihomo
 - sing-box
@@ -32,5 +33,5 @@ clients:
 - Quantumult X
 - Egern
 - Loon
-updated_at: '2026-08-27'
+updated_at: '2026-08-28'
 auto_generated: true

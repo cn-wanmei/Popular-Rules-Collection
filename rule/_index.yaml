@@ -1,4 +1,4 @@
-generated_at: '2026-08-27T23:05:30.122562+00:00'
+generated_at: '2026-08-28T00:43:56.691661+00:00'
 categories:
   '12306':
     display_name: '12306'
@@ -134,7 +134,7 @@ categories:
       name: eBay
       path: rule/Other/eBay
       service_type: service
-      domains: 44
+      domains: 370
       ips: 0
     - id: naver
       name: Naver
@@ -182,11 +182,17 @@ categories:
       service_type: aggregate
       domains: 48
       ips: 0
+    - id: aisuite
+      name: AI-Suite
+      path: rule/AI/AI-Suite
+      service_type: service
+      domains: 95
+      ips: 0
     - id: anthropic
       name: Anthropic
       path: rule/AI/Anthropic
       service_type: service
-      domains: 3
+      domains: 8
       ips: 0
     - id: claude
       name: Claude
@@ -234,7 +240,7 @@ categories:
       name: OpenAI
       path: rule/AI/OpenAI
       service_type: service
-      domains: 31
+      domains: 40
       ips: 2
     - id: perplexity
       name: Perplexity
@@ -274,7 +280,7 @@ categories:
       name: Cloudflare
       path: rule/Developer/Cloudflare
       service_type: service
-      domains: 43
+      domains: 71
       ips: 22
     - id: cursor
       name: Cursor
@@ -340,7 +346,7 @@ categories:
       name: Notion
       path: rule/Developer/Notion
       service_type: service
-      domains: 6
+      domains: 8
       ips: 0
     - id: oracle
       name: Oracle
@@ -380,7 +386,7 @@ categories:
       name: AlibabaCloud
       path: rule/Alibaba/AlibabaCloud
       service_type: service
-      domains: 12
+      domains: 100
       ips: 0
     - id: alipay
       name: Alipay
@@ -442,7 +448,7 @@ categories:
       name: Apple
       path: rule/Apple/Apple
       service_type: aggregate
-      domains: 0
+      domains: 14
       ips: 13
     - id: applemusic
       name: AppleMusic
@@ -504,7 +510,7 @@ categories:
       name: HoYoverse
       path: rule/Gaming/HoYoverse
       service_type: service
-      domains: 11
+      domains: 15
       ips: 0
     - id: minecraft
       name: Minecraft
@@ -546,7 +552,7 @@ categories:
       name: Steam
       path: rule/Gaming/Steam
       service_type: service
-      domains: 51
+      domains: 69
       ips: 0
     - id: ubisoft
       name: Ubisoft
@@ -580,7 +586,7 @@ categories:
       name: Disney
       path: rule/Streaming/Disney
       service_type: service
-      domains: 172
+      domains: 175
       ips: 0
     - id: emby
       name: Emby
@@ -628,13 +634,13 @@ categories:
       name: SoundCloud
       path: rule/Streaming/SoundCloud
       service_type: service
-      domains: 3
+      domains: 5
       ips: 0
     - id: spotify
       name: Spotify
       path: rule/Streaming/Spotify
       service_type: service
-      domains: 26
+      domains: 32
       ips: 2
     - id: tidal
       name: Tidal
@@ -668,7 +674,7 @@ categories:
       name: BiliBili
       path: rule/China/BiliBili
       service_type: service
-      domains: 120
+      domains: 121
       ips: 8
     - id: china
       name: China
@@ -838,13 +844,13 @@ categories:
       name: Facebook
       path: rule/Social/Facebook
       service_type: service
-      domains: 544
+      domains: 549
       ips: 23
     - id: instagram
       name: Instagram
       path: rule/Social/Instagram
       service_type: service
-      domains: 3
+      domains: 75
       ips: 0
     - id: kakaotalk
       name: KakaoTalk
@@ -856,7 +862,7 @@ categories:
       name: Line
       path: rule/Social/Line
       service_type: service
-      domains: 8
+      domains: 21
       ips: 16
     - id: linkedin
       name: LinkedIn
@@ -898,8 +904,8 @@ categories:
       name: Telegram
       path: rule/Social/Telegram
       service_type: service
-      domains: 24
-      ips: 10
+      domains: 27
+      ips: 22
     - id: threads
       name: Threads
       path: rule/Social/Threads
@@ -910,19 +916,19 @@ categories:
       name: TikTok
       path: rule/Social/TikTok
       service_type: service
-      domains: 29
+      domains: 53
       ips: 0
     - id: twitter
       name: Twitter
       path: rule/Social/Twitter
       service_type: service
-      domains: 26
+      domains: 27
       ips: 6
     - id: whatsapp
       name: WhatsApp
       path: rule/Social/WhatsApp
       service_type: service
-      domains: 5
+      domains: 16
       ips: 11
     - id: zoom
       name: Zoom
@@ -1008,7 +1014,7 @@ categories:
       name: YouTube
       path: rule/Google/YouTube
       service_type: service
-      domains: 179
+      domains: 180
       ips: 3
   network:
     display_name: Network
@@ -1052,13 +1058,13 @@ categories:
       name: GitHub
       path: rule/Microsoft/GitHub
       service_type: service
-      domains: 30
+      domains: 63
       ips: 0
     - id: microsoft
       name: Microsoft
       path: rule/Microsoft/Microsoft
       service_type: aggregate
-      domains: 664
+      domains: 685
       ips: 0
     - id: onedrive
       name: OneDrive

@@ -1,7 +1,14 @@
 # name: Bytedance
 # id: bytedance
-# count: 1076
+# count: 1082
 no_resolve: true
+domain_set:
+- bytedance.map.fastly.net
+- p16-tiktokcdn-com.akamaized.net
+- roovza-launches.appsflyersdk.com
+- roovza.inapps.appsflyersdk.com
+- roovza.launches.appsflyersdk.com
+- roovza.skadsdk.appsflyersdk.com
 domain_suffix_set:
 - 2333333333333.com
 - 365yg.com

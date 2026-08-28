@@ -1,0 +1,576 @@
+{
+  "date": "2026-08-28",
+  "version": 3,
+  "service_coverage": {
+    "registered": 187,
+    "materialized": 170,
+    "intentional_unmaterialized": 17,
+    "unexpected_missing": [],
+    "coverage": 0.9091,
+    "daily_coverage": 1.0
+  },
+  "intentional_unmaterialized": {
+    "mistral": "no_verified_upstream",
+    "gcp": "no_verified_upstream",
+    "supabase": "no_verified_upstream",
+    "blizzard": "maps_to_battlenet",
+    "taobao": "no_verified_upstream_dead_bm_path_covered_by_alibaba",
+    "qq": "no_verified_upstream_dead_bm_path_covered_by_tencent",
+    "npm": "no_verified_upstream",
+    "googledrive": "no_dedicated_upstream_use_google_aggregate",
+    "amazonaws": "covered_by_aws_amazon_aggregate",
+    "applications": "generic_bucket_no_dedicated_upstream",
+    "dingtalk": "covered_by_alibaba_aggregate",
+    "discoveryplus": "no_verified_upstream",
+    "lan": "local_network_no_public_upstream",
+    "ntp": "protocol_service_no_domain_ruleset",
+    "origin": "maps_to_ea",
+    "siri": "covered_by_apple_aggregate",
+    "steamcn": "covered_by_steam_china_paths"
+  },
+  "intentional_detail": {
+    "mistral": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "gcp": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "supabase": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "blizzard": {
+      "reason": "maps_to_battlenet",
+      "code": "MAPS_TO"
+    },
+    "taobao": {
+      "reason": "no_verified_upstream_dead_bm_path_covered_by_alibaba",
+      "code": "COVERED_BY_AGGREGATE"
+    },
+    "qq": {
+      "reason": "no_verified_upstream_dead_bm_path_covered_by_tencent",
+      "code": "COVERED_BY_AGGREGATE"
+    },
+    "npm": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "googledrive": {
+      "reason": "no_dedicated_upstream_use_google_aggregate",
+      "code": "COVERED_BY_AGGREGATE"
+    },
+    "amazonaws": {
+      "reason": "covered_by_aws_amazon_aggregate",
+      "code": "COVERED_BY_AGGREGATE"
+    },
+    "applications": {
+      "reason": "generic_bucket_no_dedicated_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "dingtalk": {
+      "reason": "covered_by_alibaba_aggregate",
+      "code": "COVERED_BY_AGGREGATE"
+    },
+    "discoveryplus": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "lan": {
+      "reason": "local_network_no_public_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "ntp": {
+      "reason": "protocol_service_no_domain_ruleset",
+      "code": "NO_UPSTREAM"
+    },
+    "origin": {
+      "reason": "maps_to_ea",
+      "code": "MAPS_TO"
+    },
+    "siri": {
+      "reason": "covered_by_apple_aggregate",
+      "code": "COVERED_BY_AGGREGATE"
+    },
+    "steamcn": {
+      "reason": "covered_by_steam_china_paths",
+      "code": "COVERED_BY_AGGREGATE"
+    }
+  },
+  "intentional_by_code": {
+    "NO_UPSTREAM": [
+      "applications",
+      "discoveryplus",
+      "gcp",
+      "lan",
+      "mistral",
+      "npm",
+      "ntp",
+      "supabase"
+    ],
+    "MAPS_TO": [
+      "blizzard",
+      "origin"
+    ],
+    "COVERED_BY_AGGREGATE": [
+      "amazonaws",
+      "dingtalk",
+      "googledrive",
+      "qq",
+      "siri",
+      "steamcn",
+      "taobao"
+    ]
+  },
+  "rule_coverage": {
+    "domains": 714343,
+    "ips": 591,
+    "database_services": 170
+  },
+  "source_health": {
+    "configured_sources": 4,
+    "enabled_sources": 4,
+    "collected_this_run": 4,
+    "historical_in_health": 8,
+    "enabled_ids": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly",
+      "dler"
+    ],
+    "historical_ids": [
+      "anti-ad",
+      "blackmatrix7",
+      "dler",
+      "hagezi",
+      "loyalsoldier",
+      "metacubex",
+      "sukkaw",
+      "v2fly"
+    ],
+    "statuses": {
+      "sukkaw": "healthy",
+      "blackmatrix7": "healthy",
+      "loyalsoldier": "healthy",
+      "anti-ad": "healthy",
+      "hagezi": "healthy",
+      "metacubex": "healthy",
+      "v2fly": "healthy",
+      "dler": "healthy"
+    },
+    "healthy_ratio": 1.0
+  },
+  "builder_coverage": {
+    "mihomo": {
+      "files": 340,
+      "status": "ok"
+    },
+    "sing-box": {
+      "files": 170,
+      "status": "ok"
+    },
+    "surge": {
+      "files": 338,
+      "status": "ok"
+    },
+    "shadowrocket": {
+      "files": 338,
+      "status": "ok"
+    },
+    "quantumult-x": {
+      "files": 170,
+      "status": "ok"
+    },
+    "egern": {
+      "files": 170,
+      "status": "ok"
+    },
+    "loon": {
+      "files": 170,
+      "status": "ok"
+    }
+  },
+  "ecosystem_coverage": {
+    "12306": {
+      "registered": 1,
+      "materialized": 1,
+      "ids": [
+        "12306"
+      ],
+      "coverage": 1.0
+    },
+    "ai": {
+      "registered": 14,
+      "materialized": 13,
+      "ids": [
+        "ai",
+        "aisuite",
+        "anthropic",
+        "claude",
+        "copilot",
+        "deepseek",
+        "elevenlabs",
+        "gemini",
+        "groq",
+        "huggingface",
+        "mistral",
+        "openai",
+        "perplexity",
+        "xai"
+      ],
+      "coverage": 0.9286
+    },
+    "alibaba": {
+      "registered": 10,
+      "materialized": 8,
+      "ids": [
+        "alibaba",
+        "alibabacloud",
+        "alipay",
+        "amap",
+        "dingtalk",
+        "eleme",
+        "gaode",
+        "taobao",
+        "xianyu",
+        "youku"
+      ],
+      "coverage": 0.8
+    },
+    "amazon": {
+      "registered": 3,
+      "materialized": 2,
+      "ids": [
+        "amazon",
+        "amazonaws",
+        "aws"
+      ],
+      "coverage": 0.6667
+    },
+    "apple": {
+      "registered": 5,
+      "materialized": 4,
+      "ids": [
+        "apple",
+        "applemusic",
+        "appletv",
+        "icloud",
+        "siri"
+      ],
+      "coverage": 0.8
+    },
+    "baidu": {
+      "registered": 1,
+      "materialized": 1,
+      "ids": [
+        "baidu"
+      ],
+      "coverage": 1.0
+    },
+    "bytedance": {
+      "registered": 3,
+      "materialized": 3,
+      "ids": [
+        "bytedance",
+        "doubao",
+        "douyin"
+      ],
+      "coverage": 1.0
+    },
+    "china": {
+      "registered": 21,
+      "materialized": 20,
+      "ids": [
+        "bilibili",
+        "china",
+        "ctrip",
+        "dewu",
+        "didi",
+        "huawei",
+        "iqiyi",
+        "kuaishou",
+        "kugoukuwo",
+        "meituan",
+        "netease",
+        "oppo",
+        "pinduoduo",
+        "sina",
+        "steamcn",
+        "tongcheng",
+        "vivo",
+        "weibo",
+        "xiaohongshu",
+        "xiaomi",
+        "zhihu"
+      ],
+      "coverage": 0.9524
+    },
+    "chinamobile": {
+      "registered": 1,
+      "materialized": 1,
+      "ids": [
+        "chinamobile"
+      ],
+      "coverage": 1.0
+    },
+    "chinatelecom": {
+      "registered": 1,
+      "materialized": 1,
+      "ids": [
+        "chinatelecom"
+      ],
+      "coverage": 1.0
+    },
+    "chinaunicom": {
+      "registered": 1,
+      "materialized": 1,
+      "ids": [
+        "chinaunicom"
+      ],
+      "coverage": 1.0
+    },
+    "developer": {
+      "registered": 21,
+      "materialized": 19,
+      "ids": [
+        "akamai",
+        "atlassian",
+        "azure",
+        "cloudflare",
+        "cursor",
+        "developer",
+        "digitalocean",
+        "docker",
+        "figma",
+        "gitlab",
+        "hashicorp",
+        "heroku",
+        "jetbrains",
+        "netlify",
+        "notion",
+        "npm",
+        "oracle",
+        "slack",
+        "supabase",
+        "trello",
+        "vercel"
+      ],
+      "coverage": 0.9048
+    },
+    "finance": {
+      "registered": 5,
+      "materialized": 5,
+      "ids": [
+        "binance",
+        "okx",
+        "paypal",
+        "stripe",
+        "wise"
+      ],
+      "coverage": 1.0
+    },
+    "gaming": {
+      "registered": 15,
+      "materialized": 13,
+      "ids": [
+        "battlenet",
+        "blizzard",
+        "ea",
+        "epic",
+        "garena",
+        "hoyoverse",
+        "minecraft",
+        "nintendo",
+        "origin",
+        "playstation",
+        "riotgames",
+        "roblox",
+        "rockstar",
+        "steam",
+        "ubisoft"
+      ],
+      "coverage": 0.8667
+    },
+    "google": {
+      "registered": 6,
+      "materialized": 4,
+      "ids": [
+        "firebase",
+        "gcp",
+        "google",
+        "googledrive",
+        "googlefcm",
+        "youtube"
+      ],
+      "coverage": 0.6667
+    },
+    "jingdong": {
+      "registered": 1,
+      "materialized": 1,
+      "ids": [
+        "jingdong"
+      ],
+      "coverage": 1.0
+    },
+    "microsoft": {
+      "registered": 5,
+      "materialized": 5,
+      "ids": [
+        "github",
+        "microsoft",
+        "onedrive",
+        "teams",
+        "xbox"
+      ],
+      "coverage": 1.0
+    },
+    "network": {
+      "registered": 7,
+      "materialized": 5,
+      "ids": [
+        "gfw",
+        "lan",
+        "ntp",
+        "private",
+        "proxy",
+        "speedtest",
+        "stun"
+      ],
+      "coverage": 0.7143
+    },
+    "other": {
+      "registered": 13,
+      "materialized": 12,
+      "ids": [
+        "adobe",
+        "airbnb",
+        "applications",
+        "booking",
+        "canva",
+        "dropbox",
+        "ebay",
+        "naver",
+        "scholar",
+        "shopify",
+        "uber",
+        "walmart",
+        "wikipedia"
+      ],
+      "coverage": 0.9231
+    },
+    "privacy": {
+      "registered": 3,
+      "materialized": 3,
+      "ids": [
+        "adblock",
+        "adblock-light",
+        "adblock-pro"
+      ],
+      "coverage": 1.0
+    },
+    "social": {
+      "registered": 18,
+      "materialized": 18,
+      "ids": [
+        "bluesky",
+        "discord",
+        "facebook",
+        "instagram",
+        "kakaotalk",
+        "line",
+        "linkedin",
+        "messenger",
+        "pinterest",
+        "reddit",
+        "signal",
+        "snapchat",
+        "telegram",
+        "threads",
+        "tiktok",
+        "twitter",
+        "whatsapp",
+        "zoom"
+      ],
+      "coverage": 1.0
+    },
+    "streaming": {
+      "registered": 18,
+      "materialized": 17,
+      "ids": [
+        "bbc",
+        "dailymotion",
+        "deezer",
+        "discoveryplus",
+        "disney",
+        "emby",
+        "hbo",
+        "hulu",
+        "netflix",
+        "paramountplus",
+        "peacock",
+        "primevideo",
+        "soundcloud",
+        "spotify",
+        "tidal",
+        "twitch",
+        "vimeo",
+        "youtubemusic"
+      ],
+      "coverage": 0.9444
+    },
+    "tencent": {
+      "registered": 4,
+      "materialized": 3,
+      "ids": [
+        "qq",
+        "tencent",
+        "tencentvideo",
+        "wechat"
+      ],
+      "coverage": 0.75
+    },
+    "unionpay": {
+      "registered": 10,
+      "materialized": 10,
+      "ids": [
+        "abc",
+        "boc",
+        "bocom",
+        "ccb",
+        "ceb",
+        "cmb",
+        "icbc",
+        "pingan",
+        "psbc",
+        "unionpay"
+      ],
+      "coverage": 1.0
+    }
+  },
+  "validation": {
+    "schema_validate": "pass",
+    "builder_validate": "pass",
+    "validate": "pass",
+    "builder_failures": 0
+  },
+  "conflicts": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 6590
+  },
+  "sources": 4,
+  "services": 170,
+  "domains": 714343,
+  "cidr": 591,
+  "build": {
+    "mihomo": "ok",
+    "sing-box": "ok",
+    "surge": "ok",
+    "shadowrocket": "ok",
+    "quantumult-x": "ok",
+    "egern": "ok",
+    "loon": "ok"
+  }
+}

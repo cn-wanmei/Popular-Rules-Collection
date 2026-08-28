@@ -1,7 +1,10 @@
 # name: Perplexity
 # id: perplexity
-# count: 5
+# count: 7
 no_resolve: true
+domain_set:
+- ppl-ai-file-upload.s3.amazonaws.com
+- pplx-res.cloudinary.com
 domain_suffix_set:
 - perplexity.ai
 - perplexity.com

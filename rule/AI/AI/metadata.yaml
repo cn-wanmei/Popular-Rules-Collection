@@ -18,6 +18,7 @@ children:
 - mistral
 - deepseek
 - elevenlabs
+- aisuite
 rule:
   has_domain: true
   has_ip: false
@@ -40,5 +41,5 @@ clients:
 - Quantumult X
 - Egern
 - Loon
-updated_at: '2026-08-27'
+updated_at: '2026-08-28'
 auto_generated: true

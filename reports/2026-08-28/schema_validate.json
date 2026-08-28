@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "errors": 0,
+  "warnings": 2,
+  "error_samples": [],
+  "warning_samples": [
+    "baidu: aggregate without children (display-only aggregate)",
+    "jingdong: aggregate without children (display-only aggregate)"
+  ]
+}

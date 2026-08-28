@@ -2,6 +2,10 @@
   "version": 2,
   "rules": [
     {
+      "domain": [
+        "discord-attachments-uploads-prd.storage.googleapis.com",
+        "hammerandchisel.ssl.zendesk.com"
+      ],
       "domain_suffix": [
         "airhorn.solutions",
         "airhornbot.com",

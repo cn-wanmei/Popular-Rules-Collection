@@ -1,7 +1,10 @@
 # name: Discord
 # id: discord
-# count: 29
+# count: 31
 no_resolve: true
+domain_set:
+- discord-attachments-uploads-prd.storage.googleapis.com
+- hammerandchisel.ssl.zendesk.com
 domain_suffix_set:
 - airhorn.solutions
 - airhornbot.com

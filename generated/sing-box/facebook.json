@@ -2,6 +2,9 @@
   "version": 2,
   "rules": [
     {
+      "domain": [
+        "fbcdn-a.akamaihd.net"
+      ],
       "domain_suffix": [
         "aboutfacebook.com",
         "accessfacebookfromschool.com",
@@ -13,6 +16,7 @@
         "acheterdesfollowersinstagram.com",
         "acheterfollowersinstagram.com",
         "advancediddetection.com",
+        "analytics.facebook.com",
         "askfacebook.net",
         "askfacebook.org",
         "atdmt2.com",
@@ -297,7 +301,9 @@
         "faycbok.com",
         "fb.careers",
         "fb.com",
+        "fb.gg",
         "fb.me",
+        "fb.watch",
         "fbacebook.com",
         "fbaddins.com",
         "fbbmarket.com",
@@ -326,6 +332,7 @@
         "fbthirdpartypixel.net",
         "fbthirdpartypixel.org",
         "fburl.com",
+        "fbwat.ch",
         "fbworkmail.com",
         "fcacebook.com",
         "fcaebook.com",
@@ -500,6 +507,7 @@
         "opengraphprotocol.com",
         "opengraphprotocol.org",
         "parse.com",
+        "pixel.facebook.com",
         "powersunitedvr.com",
         "pyrobot.org",
         "reachtheworldonfacebook.com",

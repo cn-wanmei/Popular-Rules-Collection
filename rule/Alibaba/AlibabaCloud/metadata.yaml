@@ -16,11 +16,12 @@ generated_files:
   domain: alibabacloud_domain.list
   ip: null
 statistics:
-  domains: 12
+  domains: 100
   ipv4_or_cidr: 0
-  mixed: 12
+  mixed: 100
 sources:
 - metacubex
+- v2fly
 clients:
 - Mihomo
 - sing-box
@@ -29,5 +30,5 @@ clients:
 - Quantumult X
 - Egern
 - Loon
-updated_at: '2026-08-27'
+updated_at: '2026-08-28'
 auto_generated: true

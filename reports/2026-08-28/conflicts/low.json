@@ -1,0 +1,9181 @@
+[
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "2mdn-cn.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "40017.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tongcheng"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "71.am"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "iqiyi"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "acjs.aliyun.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba",
+      "alibabacloud"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ad.tencentmusic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ad.toutiao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ad.weixin.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adash-emas.cn-hangzhou.aliyuncs.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba",
+      "alibabacloud"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adash.m.taobao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adashbc.m.taobao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adashbc.ut.taobao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adashx.m.taobao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adashx.ut.amap.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba",
+      "amap"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adashx.ut.ele.me"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adashx.ut.youku.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adashx4ae.ut.taobao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adashx4yt.m.taobao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adashxgc.ut.taobao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adbehavior.ximalaya.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "addthisedge.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "oracle"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adkwai.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "kuaishou"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "admeld.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "admob.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adobetag.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "adobe"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ads-twitter.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "twitter"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ads.service.kugou.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ads3-normal-hl.zijieapi.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ads3-normal.zijieapi.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ads5-normal-hl.zijieapi.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ads5-normal.zijieapi.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adse.wsa.ximalaya.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adse.ximalaya.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adsense.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adsensecustomsearchads.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adserviceretry.kugou.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adsfile.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adstats.tencentmusic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adtrack.quark.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adver.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "afd.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "alimama.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "analytics.163.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "netease"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "analytics.facebook.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "facebook"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "analytics.tiktok.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "bytedance",
+      "tiktok"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "app-analytics-services.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "app-measurement.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "apps5.oingo.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "apture.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "badjs.weixinbridge.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "baichuan-sdk.alicdn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba",
+      "alibabacloud"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "baidustatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "beacon.cdn.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "beacon.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "beaconcdn.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bizographics.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "linkedin"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "btrace.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bzclk.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cbjs.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "click-url.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "facebook"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cloudflareinsights.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "cloudflare"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "collector.github.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "github"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "conviva.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "disney"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cpro.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cpu.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cstm.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ctobsnssdk.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "d9.flashtalking.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "disney"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "deja.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "demandbase.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "adobe"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "disney.demdex.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "disney"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "dm-event.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "dailymotion"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "doubleclick-cn.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "doubleclick.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "dualstack-logs.amap.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba",
+      "amap"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "duapps.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "e.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ebayadvertising.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "ebay"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ebayclassifiedsgroup.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "ebay"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ebayrtm.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "ebay"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "eclick.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ecma.bdimg.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ecmb.bdimg.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "events.statsigapi.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "copilot",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "fabric.io"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "microsoft"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "facedbook.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "facebook"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "fbthirdpartypixel.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "facebook"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "fclick.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "fclog.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "fourier.taobao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "g.163.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "netease"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gdtimg.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gia.jd.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "jingdong"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "google-analytics.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "googleadservices-cn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "googleanalytics.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "googleoptimize.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "googletagservices-cn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "googletraveladservices.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "googlevads-cn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "h-adashx.ut.ele.me"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "h-adashx.ut.taobao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "h2tcbox.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "hao222.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "hm.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "hmma.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "htrace.wetvinfo.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "i.snssdk.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "iadmat.nosdn.127.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "netease"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "iadmusicmat.music.126.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "netease"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "iadmusicmatvideo.music.126.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "netease"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "id6.me"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "chinatelecom"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "iemiq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "img-x.jd.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "jingdong"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "instagrem.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "facebook",
+      "instagram"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "isnssdk.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tiktok"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "js-agent.newrelic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "disney"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "koowo.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "kugoukuwo",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "liverail.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "facebook"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "lnstagram-help.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "facebook",
+      "instagram"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "localytics.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "microsoft"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "log-global.aliyuncs.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba",
+      "alibabacloud"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "log.tbs.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "log.zijieapi.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "logs.amap.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba",
+      "amap"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "mam.netease.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "netease"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "marketo.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "adobe"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "mcs.snssdk.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "mdt.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "miaowu.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "miav-cse.avlyun.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "xiaomi"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "miui-fxcse.avlyun.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "xiaomi"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "mmstat.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "mobads-logs.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "mobads-pre-config.cdn.bcebos.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "mobads.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "monitor.music.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "mountain.zhidao.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "msads.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "microsoft"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "mtrace.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "nbsdk-baichuan.alicdn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba",
+      "alibabacloud"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "nbsdk-baichuan.taobao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "nsclick.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "omniture.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "adobe"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "optimus-ads.amap.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba",
+      "amap"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "oracleinfinity.io"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "oracle"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "p3-ad-sign.byteimg.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "pangolin-sdk-toutiao-b.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "pangolin-sdk-toutiao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "pangolin-sdk-toutiao1.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "panoramio.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "paypa1.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "paypal"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "paypal-team.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "paypal"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "pgdt.gtimg.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent",
+      "tencentvideo"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "pglstatp-toutiao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "pimlog.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "pingjs.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "pixel.facebook.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "facebook"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "pmir.3g.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "pos.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "puata.info"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "qqdata.ab.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "rbxtrk.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "roblox"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "report.qqweb.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "res.mi.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "xiaomi"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "retcode.taobao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "rmonitor.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "roovza-launches.appsflyersdk.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "rumt-sg.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "rumt-us.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "rumt-zh.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "sc-static.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "snapchat"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "sf3-ttcdn-tos.pstatp.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "shuqistat.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "simility.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "paypal"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "snapads.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "snapchat"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "stat.y.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "steamunlocked.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "steam"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "tcbox.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "tce.alicdn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba",
+      "alibabacloud"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "tellapart.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "twitter"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "theta.sogoucdn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "tmead.y.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "tmeadcomm.y.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "tns.simba.taobao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "toutiaopage.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "tpstelemetry.tencent.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "trace.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "track.lc.quark.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ugdtimg.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "umeng.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "umengcloud.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "umsns.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "umtrack.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "union.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "up-hl.3g.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "wechat"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "uyunad.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "vercel-analytics.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "vercel"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "vercel-insights.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "vercel"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "vnet.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "chinatelecom"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "volceapplog.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "w.cnzz.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "wkctj.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ykad-data.youku.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "youku.tv"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "yun-hl.3g.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "wechat"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "yunos.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "zz.bdstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "2mdn.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "a.youdao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-pro",
+      "netease"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ad.api.3g.youku.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ad.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "addthiscdn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "oracle"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adfilter.imtt.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "admob-cn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "admusicpic.music.126.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-pro",
+      "netease"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adobetarget.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "adobe"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ads-union.jd.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-pro",
+      "jingdong"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adsenseformobileapps.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adslvfile.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adsview.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "advertisercommunity.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adwords-community.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adwords.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adx.xiaodutv.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "afdconf.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "alimama.alicdn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "alibaba",
+      "alibabacloud"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "alipaylog.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "alibaba",
+      "alipay"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "altmetric.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "scholar"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "api.iplay.163.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-pro",
+      "netease"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "assoc-amazon.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "amazon"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "atanx.alicdn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "alibaba",
+      "alibabacloud"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "atlasdmt.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "facebook"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "baifen.music.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bbc.co"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "bbc"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bds.snssdk.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bingads.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "microsoft"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.ba"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.bg"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.lu"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.sk"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "blogspot.tw"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bntrace.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "binance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "braze.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "disney"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bugly.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "byteadverts.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cb.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cm.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "crash.163.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-pro",
+      "netease"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "crashlytics.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-pro",
+      "firebase",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "crashlyticsreports-pa.googleapis.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-pro",
+      "firebase"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "csjplatform.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "data-vocabulary.org"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "demdex.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "adobe"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "disneyplus.com.ssl.sc.omtrdc.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "disney"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "dmxleo.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "dailymotion"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "duapp.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ecmc.bdimg.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "eduad.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "eiv.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "espndotcom.tt.omtrdc.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "disney"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "extlog.snssdk.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "facebgook.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "facebook"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "facebooik.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "facebook"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "facebookads.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "facebook"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "firebaselogging-pa.googleapis.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-pro",
+      "firebase"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "firebaselogging.googleapis.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-pro",
+      "firebase"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "fls-na.amazon.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "primevideo"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "footprintdns.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "microsoft"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gdt.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ggpht.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "youtube"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "google-analytics-cn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "googleadapis.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "googlecommerce.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "googleflights-cn.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "googleoptimize-cn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "googlesyndication-cn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "googlesyndication.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "googletagmanager-cn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gskwai.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "kuaishou"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gvt2-cn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gvt2.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "youtube"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gvt3.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "h-adashx.ut.youku.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "h-adashx4yt.ut.taobao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "hao123union.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "hq-tracking.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "hulu.sc.omtrdc.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "hulu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "iadmatapk.nosdn.127.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-pro",
+      "netease"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "imgstat.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "isdspeed.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "kwai.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "kuaishou"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "log3-applog-hl.fqnovel.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "log3-applog.fqnovel.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "log5-applog-hl.fqnovel.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "log5-applog.fqnovel.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "lstat.youku.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "mdialog.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "microsoftadvertising.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "microsoft"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "mipcache.bdstatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "newrelic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "adobe"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "p9-ad-sign.byteimg.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "pangle.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "pangolin-dsp-toutiao-b.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "pangolin-dsp-toutiao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "pangolin.snssdk.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "report.tencentmusic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "robloxlabs.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "roblox"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "rtlog3-applog-hl.fqnovel.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "rtlog3-applog.fqnovel.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "rtlog5-applog-hl.fqnovel.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "rtlog5-applog.fqnovel.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "sclick.baidu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "sentry.io"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "copilot",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "sentry.music.163.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-pro",
+      "netease"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "shujupie.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "sngmta.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "statis.api.3g.youku.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "statsigapi.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "aisuite"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "syh.zybang.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "tudou.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "alibaba",
+      "youku"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ucfly.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "uczzd.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "uranus.sogou.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "urchin.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-pro",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "v6-adashx.ut.amap.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "alibaba",
+      "amap"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "v6-adashx.ut.taobao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "v6-adashx.ut.youku.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "volctrack.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "bytedance"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "wit.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "tencent"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "youkuhonor.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "yunjiasu.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "z.gds.cnzz.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adobedtm.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler"
+    ],
+    "services": [
+      "adobe",
+      "disney"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bam.nr-data.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler"
+    ],
+    "services": [
+      "adobe",
+      "disney"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "omniroot.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler"
+    ],
+    "services": [
+      "adobe",
+      "microsoft"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain",
+      "value": "ai.google.dev"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite",
+      "gemini"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain",
+      "value": "alkalicore-pa.clients6.google.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain",
+      "value": "api.github.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain",
+      "value": "gateway.ai.cloudflare.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_keyword",
+      "value": "alkalimakersuite-pa.clients6.google.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_keyword",
+      "value": "openai"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "sukkaw",
+      "v2fly"
+    ],
+    "services": [
+      "ai",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ai.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "sukkaw",
+      "v2fly"
+    ],
+    "services": [
+      "ai",
+      "aisuite",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "aistudio.google.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "anthropic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "sukkaw",
+      "v2fly"
+    ],
+    "services": [
+      "ai",
+      "aisuite",
+      "anthropic",
+      "claude"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "bard.google.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite",
+      "gemini"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "chat.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "sukkaw",
+      "v2fly"
+    ],
+    "services": [
+      "ai",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "chatgpt.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "sukkaw",
+      "v2fly"
+    ],
+    "services": [
+      "ai",
+      "aisuite",
+      "copilot",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "chatgpt.site"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "sukkaw",
+      "v2fly"
+    ],
+    "services": [
+      "ai",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "claude.ai"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "sukkaw",
+      "v2fly"
+    ],
+    "services": [
+      "ai",
+      "aisuite",
+      "anthropic",
+      "claude"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "claude.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "sukkaw",
+      "v2fly"
+    ],
+    "services": [
+      "ai",
+      "aisuite",
+      "anthropic"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "clipdrop.co"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "deepmind.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite",
+      "gemini",
+      "google"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "deepmind.google"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite",
+      "gemini"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "dify.ai"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "geller-pa.googleapis.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gemini.google"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "gemini.google.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite",
+      "gemini"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "generativeai.google"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite",
+      "gemini"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "generativelanguage.googleapis.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "grok.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "metacubex",
+      "sukkaw",
+      "v2fly"
+    ],
+    "services": [
+      "ai",
+      "aisuite",
+      "twitter",
+      "xai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "groq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "metacubex",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite",
+      "groq"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "jasper.ai"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "makersuite.google.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "meta.ai"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "notebooklm.google"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "notebooklm.google.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "oaistatic.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "sukkaw",
+      "v2fly"
+    ],
+    "services": [
+      "ai",
+      "aisuite",
+      "copilot",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "openart.ai"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "perplexity.ai"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "metacubex",
+      "sukkaw",
+      "v2fly"
+    ],
+    "services": [
+      "ai",
+      "aisuite",
+      "perplexity"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "poe.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "proactivebackend-pa.googleapis.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite",
+      "gemini"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "sora.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "sukkaw",
+      "v2fly"
+    ],
+    "services": [
+      "ai",
+      "aisuite",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "x.ai"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "metacubex",
+      "sukkaw"
+    ],
+    "services": [
+      "ai",
+      "aisuite",
+      "xai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "abb.travel"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "accomable.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.ae"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.al"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.am"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.at"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.az"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.ba"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.be"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.ca"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.cat"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.ch"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.cl"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.co.cr"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.co.id"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.co.il"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.co.in"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.co.kr"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.co.nz"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.co.uk"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.co.ve"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.co.za"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.ar"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.au"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.bo"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.br"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.bz"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.co"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.ec"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.ee"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.gt"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.hk"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.hn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.hr"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.kh"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.mt"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.my"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.ni"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.pa"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.pe"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.ph"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.py"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.ro"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.sg"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.sv"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.tr"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.tw"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.ua"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.com.vn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.cz"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.de"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.dk"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.es"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.fi"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.fr"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.gr"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.gy"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.hu"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.ie"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.is"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.it"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.jp"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.la"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.lt"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.lu"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.lv"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.me"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.mx"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.nl"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.no"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.org"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.pl"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.pt"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.rs"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.ru"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.se"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.si"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.tools"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "airbnb.travel"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "muscache.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "vamo.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "airbnb"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain",
+      "value": "chat.openai.com.cdn.cloudflare.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "v2fly"
+    ],
+    "services": [
+      "aisuite",
+      "copilot",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain",
+      "value": "copilot.microsoft.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler"
+    ],
+    "services": [
+      "aisuite",
+      "copilot"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain",
+      "value": "o33249.ingest.sentry.io"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "v2fly"
+    ],
+    "services": [
+      "aisuite",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain",
+      "value": "openaiapi-site.azureedge.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "v2fly"
+    ],
+    "services": [
+      "aisuite",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain",
+      "value": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "v2fly"
+    ],
+    "services": [
+      "aisuite",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain",
+      "value": "openaicomproductionae4b.blob.core.windows.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "v2fly"
+    ],
+    "services": [
+      "aisuite",
+      "copilot",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain",
+      "value": "production-openaicom-storage.azureedge.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "v2fly"
+    ],
+    "services": [
+      "aisuite",
+      "copilot",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "apis.google.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler"
+    ],
+    "services": [
+      "aisuite",
+      "gemini"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "claudeusercontent.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "v2fly"
+    ],
+    "services": [
+      "aisuite",
+      "anthropic"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "cursor.sh"
+    },
+    "policy": "proxy",
+    "sources": [
+      "dler",
+      "metacubex"
+    ],
+    "services": [
+      "aisuite",
+      "cursor"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "featuregates.org"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "v2fly"
+    ],
+    "services": [
+      "aisuite",
+      "copilot",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "githubcopilot.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "v2fly"
+    ],
+    "services": [
+      "aisuite",
+      "github"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "intercom.io"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "v2fly"
+    ],
+    "services": [
+      "aisuite",
+      "copilot",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "intercomcdn.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "v2fly"
+    ],
+    "services": [
+      "aisuite",
+      "copilot",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "jetbrains.ai"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler"
+    ],
+    "services": [
+      "aisuite",
+      "jetbrains"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "meta.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "v2fly"
+    ],
+    "services": [
+      "aisuite",
+      "facebook"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "microsoftonline.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler"
+    ],
+    "services": [
+      "aisuite",
+      "microsoft"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "oaiusercontent.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "v2fly"
+    ],
+    "services": [
+      "aisuite",
+      "copilot",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "openai.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "v2fly"
+    ],
+    "services": [
+      "aisuite",
+      "copilot",
+      "developer",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "trae.ai"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "dler",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "aisuite",
+      "bytedance",
+      "tiktok"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "11222.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "1688.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "25pp.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "56che.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "56xiniao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "88cha.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "95095.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "9game.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "9xsecndns.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba",
+      "youku"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "a-map.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba",
+      "amap",
+      "gaode"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "a-map.co"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba",
+      "amap",
+      "gaode"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "a-map.link"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba",
+      "amap",
+      "gaode"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "a-map.vip"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba",
+      "amap",
+      "gaode"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "a.alimama.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "aaid.umeng.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "account-cn.alibabacloud.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba",
+      "alibabacloud"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "acloudrender.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba",
+      "amap"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ad.api.mobile.youku.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ad.mobile.youku.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adash-c.m.taobao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adash-c.ut.taobao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adash.man.aliyuncs.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba",
+      "alibabacloud"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ads.uc.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adsh.m.taobao.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "alibaba"
+    ]
+  }
+]

@@ -7,15 +7,16 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 0 |
+| Domains | 14 |
 | IP/CIDR | 13 |
-| Mixed | 13 |
-| Sources | blackmatrix7 |
-| Updated | 2026-08-27 |
+| Mixed | 27 |
+| Sources | blackmatrix7, dler |
+| Updated | 2026-08-28 |
 
 ## 基础规则（Classical）
 
 - 混合：[`apple.list`](./apple.list)
+- 域名：[`apple_domain.list`](./apple_domain.list)
 - IP：[`apple_ip.list`](./apple_ip.list)
 
 ## 客户端订阅
@@ -37,7 +38,7 @@
 
 ## 来源
 
-`blackmatrix7`
+`blackmatrix7`, `dler`
 
 ## 官方
 

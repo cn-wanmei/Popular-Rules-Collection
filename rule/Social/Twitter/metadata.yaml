@@ -15,11 +15,12 @@ generated_files:
   domain: twitter_domain.list
   ip: twitter_ip.list
 statistics:
-  domains: 26
+  domains: 27
   ipv4_or_cidr: 6
-  mixed: 32
+  mixed: 33
 sources:
 - blackmatrix7
+- v2fly
 clients:
 - Mihomo
 - sing-box
@@ -28,5 +29,5 @@ clients:
 - Quantumult X
 - Egern
 - Loon
-updated_at: '2026-08-27'
+updated_at: '2026-08-28'
 auto_generated: true

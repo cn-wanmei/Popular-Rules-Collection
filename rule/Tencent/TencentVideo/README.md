@@ -11,7 +11,7 @@
 | IP/CIDR | 32 |
 | Mixed | 51 |
 | Sources | blackmatrix7 |
-| Updated | 2026-08-27 |
+| Updated | 2026-08-28 |
 
 ## 基础规则（Classical）
 

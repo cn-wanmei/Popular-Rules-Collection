@@ -6,12 +6,16 @@ version: 1
 source:
 - id: blackmatrix7
   priority: 95
+- id: dler
+  priority: 80
 rules:
 - type: domain
   value: vsmarketplacebadge.apphb.com
   sources: &id001
   - id: blackmatrix7
     priority: 95
+  - id: dler
+    priority: 80
 - type: domain_keyword
   value: 1drv
   sources: *id001
@@ -38,6 +42,12 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: 21vbluecloud.net
+  sources: *id001
+- type: domain_suffix
+  value: Applicationinsights.io
+  sources: *id001
+- type: domain_suffix
+  value: Applicationinsights.net
   sources: *id001
 - type: domain_suffix
   value: a-msedge.net
@@ -92,12 +102,6 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: appcenter.ms
-  sources: *id001
-- type: domain_suffix
-  value: applicationinsights.io
-  sources: *id001
-- type: domain_suffix
-  value: applicationinsights.net
   sources: *id001
 - type: domain_suffix
   value: appserviceenvironment.cn
@@ -193,6 +197,9 @@ rules:
   value: azure.com
   sources: *id001
 - type: domain_suffix
+  value: azure.microsoft.com
+  sources: *id001
+- type: domain_suffix
   value: azure.net
   sources: *id001
 - type: domain_suffix
@@ -269,6 +276,9 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: azureiotsuite.com
+  sources: *id001
+- type: domain_suffix
+  value: azuremarketplace.microsoft.com
   sources: *id001
 - type: domain_suffix
   value: azuremresolver.cn
@@ -421,6 +431,9 @@ rules:
   value: biying.com.cn
   sources: *id001
 - type: domain_suffix
+  value: bj1.api.bing.com
+  sources: *id001
+- type: domain_suffix
   value: blazor.net
   sources: *id001
 - type: domain_suffix
@@ -484,6 +497,12 @@ rules:
   value: cloudappsecurity.com
   sources: *id001
 - type: domain_suffix
+  value: cn.bing.com
+  sources: *id001
+- type: domain_suffix
+  value: cn.bing.net
+  sources: *id001
+- type: domain_suffix
   value: codethemicrobit.com
   sources: *id001
 - type: domain_suffix
@@ -517,6 +536,9 @@ rules:
   value: cs9.wac.phicdn.net
   sources: *id001
 - type: domain_suffix
+  value: developer.microsoft.com
+  sources: *id001
+- type: domain_suffix
   value: devopsassessment.net
   sources: *id001
 - type: domain_suffix
@@ -529,6 +551,9 @@ rules:
   value: discoverbing.com
   sources: *id001
 - type: domain_suffix
+  value: ditu.live.com
+  sources: *id001
+- type: domain_suffix
   value: docs.com
   sources: *id001
 - type: domain_suffix
@@ -536,6 +561,9 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: dot.net
+  sources: *id001
+- type: domain_suffix
+  value: dtlgalleryint.cloudapp.net
   sources: *id001
 - type: domain_suffix
   value: dwh5.com
@@ -557,6 +585,9 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: elderscrolls.com
+  sources: *id001
+- type: domain_suffix
+  value: emoi-cncdn.bing.com
   sources: *id001
 - type: domain_suffix
   value: engkoo.com
@@ -694,6 +725,9 @@ rules:
   value: imaginecup.pl
   sources: *id001
 - type: domain_suffix
+  value: img-prod-cms-rt-microsoft-com
+  sources: *id001
+- type: domain_suffix
   value: img-prod-cms-rt-microsoft-com.akamaized.net
   sources: *id001
 - type: domain_suffix
@@ -743,6 +777,9 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: live.com
+  sources: *id001
+- type: domain_suffix
+  value: live.com.akadns.net
   sources: *id001
 - type: domain_suffix
   value: live.com.au
@@ -880,6 +917,9 @@ rules:
   value: microsoft.com
   sources: *id001
 - type: domain_suffix
+  value: microsoft.com.akadns.net
+  sources: *id001
+- type: domain_suffix
   value: microsoft.com.nsatc.net
   sources: *id001
 - type: domain_suffix
@@ -995,6 +1035,9 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: microsoftapp.net
+  sources: *id001
+- type: domain_suffix
+  value: microsoftapps.azurewebsites.net
   sources: *id001
 - type: domain_suffix
   value: microsoftazuread-sso.com
@@ -1471,6 +1514,9 @@ rules:
   value: oaspapps.com
   sources: *id001
 - type: domain_suffix
+  value: oaspapps.com.akadns.net
+  sources: *id001
+- type: domain_suffix
   value: office
   sources: *id001
 - type: domain_suffix
@@ -1516,6 +1562,9 @@ rules:
   value: onecollector.cloudapp.aria
   sources: *id001
 - type: domain_suffix
+  value: onecollector.cloudapp.aria.akadns.net
+  sources: *id001
+- type: domain_suffix
   value: onedrive.co
   sources: *id001
 - type: domain_suffix
@@ -1526,6 +1575,9 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: onedrive.eu
+  sources: *id001
+- type: domain_suffix
+  value: onedrive.live.com
   sources: *id001
 - type: domain_suffix
   value: onedrive.net
@@ -1600,6 +1652,9 @@ rules:
   value: playfabcn.com
   sources: *id001
 - type: domain_suffix
+  value: poshtestgallery.cloudapp.net
+  sources: *id001
+- type: domain_suffix
   value: poshtestgallery.com
   sources: *id001
 - type: domain_suffix
@@ -1634,6 +1689,12 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: projectsangam.com
+  sources: *id001
+- type: domain_suffix
+  value: psg-int-centralus.cloudapp.net
+  sources: *id001
+- type: domain_suffix
+  value: psg-int-eastus.cloudapp.net
   sources: *id001
 - type: domain_suffix
   value: public-trust.com
@@ -1742,6 +1803,9 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: statics-marketingsites-wcus-ms-com.akamaized.net
+  sources: *id001
+- type: domain_suffix
+  value: storage.live.com
   sources: *id001
 - type: domain_suffix
   value: successwithteams.com
@@ -1888,6 +1952,9 @@ rules:
   value: windows.com
   sources: *id001
 - type: domain_suffix
+  value: windows.com.akadns.net
+  sources: *id001
+- type: domain_suffix
   value: windows.net
   sources: *id001
 - type: domain_suffix
@@ -2016,10 +2083,10 @@ rules:
 metadata:
   priority: high
   confidence: high
-  last_updated: '2026-08-27T22:46:54.887096+00:00'
+  last_updated: '2026-08-28T00:25:59.400497+00:00'
   notes: Generated by normalize.py V1.1
   stats:
-    domain_count: 668
+    domain_count: 691
     ip_count: 0
-    total: 668
+    total: 691
 canonical_source: blackmatrix7
