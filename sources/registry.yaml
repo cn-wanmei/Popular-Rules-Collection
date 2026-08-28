@@ -141,6 +141,17 @@ sources:
   - {path: rule/Clash/FindMy/FindMy.yaml, name: apple, local: Clash_FindMy.yaml}
   - {path: rule/Clash/AppleMedia/AppleMedia.yaml, name: apple, local: Clash_AppleMedia.yaml}
   - {path: rule/Clash/AppleNews/AppleNews.yaml, name: apple, local: Clash_AppleNews.yaml}
+  - {path: rule/Clash/PPTV/PPTV.yaml, name: pptv, local: Clash_PPTV.yaml}
+  - {path: rule/Clash/AcFun/AcFun.yaml, name: acfun, local: Clash_AcFun.yaml}
+  - {path: rule/Clash/CCTV/CCTV.yaml, name: cctv, local: Clash_CCTV.yaml}
+  - {path: rule/Clash/HuYa/HuYa.yaml, name: huya, local: Clash_HuYa.yaml}
+  - {path: rule/Clash/Douyu/Douyu.yaml, name: douyu, local: Clash_Douyu.yaml}
+  - {path: rule/Clash/Himalaya/Himalaya.yaml, name: himalaya, local: Clash_Himalaya.yaml}
+  - {path: rule/Clash/WeTV/WeTV.yaml, name: wetv, local: Clash_WeTV.yaml}
+  - {path: rule/Clash/Sohu/Sohu.yaml, name: sohu, local: Clash_Sohu.yaml}
+  - {path: rule/Clash/LeTV/LeTV.yaml, name: letv, local: Clash_LeTV.yaml}
+  - {path: rule/Clash/Bahamut/Bahamut.yaml, name: bahamut, local: Clash_Bahamut.yaml}
+  - {path: rule/Clash/Emby/Emby.yaml, name: emby, local: Clash_Emby.yaml}
 - id: metacubex
   name: MetaCubeX meta-rules-dat
   url: https://github.com/MetaCubeX/meta-rules-dat
@@ -218,6 +229,15 @@ sources:
   - {path: geo/geosite/pornhub.list, name: restricted, local: geosite_pornhub.list}
   - {path: geo/geosite/xvideos.list, name: restricted, local: geosite_xvideos.list}
   - {path: geo/geosite/ehentai.list, name: restricted, local: geosite_ehentai.list}
+  - {path: geo/geosite/kugou.list, name: kugou, local: geosite_kugou.list}
+  - {path: geo/geosite/kuwo.list, name: kuwo, local: geosite_kuwo.list}
+  - {path: geo/geosite/ximalaya.list, name: ximalaya, local: geosite_ximalaya.list}
+  - {path: geo/geosite/acfun.list, name: acfun, local: geosite_acfun.list}
+  - {path: geo/geosite/cctv.list, name: cctv, local: geosite_cctv.list}
+  - {path: geo/geosite/huya.list, name: huya, local: geosite_huya.list}
+  - {path: geo/geosite/douyu.list, name: douyu, local: geosite_douyu.list}
+  - {path: geo/geosite/iqiyi.list, name: iqiyi, local: geosite_iqiyi.list}
+  - {path: geo/geosite/youku.list, name: youku, local: geosite_youku.list}
 - id: v2fly
   name: v2fly domain-list-community
   url: https://github.com/v2fly/domain-list-community
