@@ -47,15 +47,28 @@ See `sources/ip_registry.yaml` (independent from domain `sources/registry.yaml`)
 ## Pipeline
 
 ```
-ip_registry → collect_ip → ip_cidr normalize/dedup → database/ips/{id}.txt
-                                                      ↓
-                                              rule_loader / ×7 builders
+ip_registry → validate_ip_registry → collect_ip → ip_cidr normalize/dedup
+     → database/ips/{id}.txt + database/ips_provenance/{id}.json
+     → rule_loader / ×7 builders
 ```
 
 ## P0 / P1 / P2 (IP track)
 
-- **P0**: schema + registry + CIDR tools + country/carrier seed (CN)
+- **P0**: schema + registry + CIDR tools + country/carrier seed (CN) + quality gate
 - **P1**: more country lists; operator lists; never auto-map GeoIP country → service
 - **P2**: verified *service*-owned ranges only (OpenAI/Google/… after manual proof)
 
 Domain hot-service gaps remain a **separate** track.
+
+## IP Quality Gate (P0 completion)
+
+```text
+validate_ip_registry.py   # hard maps_to / scope rules
+collect_ip.py             # fetch + merge + provenance
+ip_quality_audit.py       # invalid=0, unscoped flags
+```
+
+Provenance: `database/ips_provenance/{maps_to}.json` answers:
+source id, scope, path, fetched_at, why maps_to.
+
+KPI: source health + invalid_cidr=0 + scope correctness — **not** raw CIDR count.

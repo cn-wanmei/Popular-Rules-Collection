@@ -26,6 +26,8 @@ jobs:
         run: pip install pyyaml requests
       - name: Schema validate
         run: python scripts/schema_validate.py
+      - name: IP registry validate
+        run: python scripts/validate_ip_registry.py
       - name: Validate
         run: python scripts/validate.py
       - name: Builder validate

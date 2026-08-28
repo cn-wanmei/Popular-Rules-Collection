@@ -30,8 +30,10 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python scripts/validate_registry.py
       - run: python scripts/collect.py
-      # Phase 2B-IP: country/carrier CIDR (separate from domain registry)
+      - run: python scripts/validate_ip_registry.py
       - run: python scripts/collect_ip.py
+      - run: python scripts/ip_quality_audit.py
+        continue-on-error: true
       - name: Normalize
         run: |
           if [ "${{ inputs.skip_large }}" = "true" ]; then
