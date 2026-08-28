@@ -62,7 +62,7 @@ def main() -> int:
         print(f"  geosite/{name}: {n}")
 
     ipdir = ROOT / "generated" / "geoip"
-    for name in ("cn", "jp", "hk", "sg", "kr"):
+    for name in ("cn", "jp", "hk", "sg", "kr", "tw"):
         n = copy_txt(ROOT / "database" / "geoip" / f"{name}.txt", ipdir / f"{name}.txt")
         cidr_to_clash(
             ROOT / "database" / "geoip" / f"{name}.txt", ipdir / f"{name}_mihomo.list"

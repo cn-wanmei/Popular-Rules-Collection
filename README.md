@@ -7,23 +7,36 @@
 
 ## 架构
 
+双轨数据供应链（Service Rules **与** Network Datasets 隔离）：
+
 ```
-Upstream → collect (Fetcher) → backup + manifest
-        → normalize → database/
-        → deduplicate / conflicts
-        → build_* → generated/{mihomo,sing-box,surge,shadowrocket,quantumult-x,egern}
+Service Sources (registry.yaml)
+  → collect → normalize → database/services|domains|ips
+  → build_×7 → generated/{mihomo,sing-box,...}
+
+Dataset Sources (sources/datasets/*)
+  → collect_datasets / collect_ip / collect_providers
+  → database/{network,geosite,geoip,provider,asn,policies}
+  → build_network_* / build_provider_* → generated/{network,geosite,geoip,provider}
+
+Quality Gate (dataset_diff + dataset_quality) → Hard/Warn
+Coverage / HOT_MISSING / Client Capability Matrix → reports/
 ```
+
+文档：`docs/PHASE3_QUALITY.md` · `docs/PHASE3BC.md` · `docs/PHASE4_CAPABILITY.md` · `docs/NETWORK_DATASETS.md`
 
 ## 目录
 
 | 路径 | 用途 |
 |------|------|
 | `rule/` | 人读浏览 |
-| `database/` | Schema 中间库 |
-| `generated/` | 客户端产物 |
-| `sources/` | registry + health |
-| `scripts/` | 采集/标准化/构建 |
-| `config/` | categories / profiles / formats |
+| `database/` | Schema 中间库（services + network datasets） |
+| `generated/` | 客户端产物 + network/provider 导出 |
+| `sources/` | registry · ip_registry · datasets/* · health |
+| `scripts/` | 采集 / 标准化 / 构建 / Quality Gate / Matrix |
+| `config/` | primary · client_capabilities · intentional_unmaterialized |
+| `reports/` | coverage · quality · capability · HOT_MISSING |
+| `tests/` | 关键路径契约测试 |
 
 ## 快速开始
 

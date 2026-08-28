@@ -27,6 +27,17 @@ Source Health → Collection → Dataset Health → Build Health → Release Hea
 
 Single upstream 404 must not fail the pipeline if the dataset still materializes.
 
+## Network Dataset scope (P0 extension)
+
+Gate also checks:
+
+- required LAN/private non-empty
+- GeoSite/GeoIP/Provider CIDR and domain samples
+- expected exports (`database/X` → `generated/X`) when source non-empty
+- mihomo list prefix format (DOMAIN-SUFFIX / IP-CIDR)
+- ASN metadata YAML validity (metadata only)
+- Provider isolation under `database/provider/`
+
 ## Non-goals (3A)
 
 - No Builder / Primary changes
