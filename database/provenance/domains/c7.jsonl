@@ -908,7 +908,7 @@
 {"d":"wangmeng.baidu.com","s":[0,1,2,3,4,5,6],"r":[4,22],"t":"domain_suffix"}
 {"d":"yjs-cdn.com","s":[0,5,6],"r":[22,35],"t":"domain_suffix"}
 {"d":"bdns-boe.net","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
-{"d":"huoshangroup.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
+{"d":"huoshangroup.com","s":[0,5,6,7],"r":[31,35,56],"t":"domain_suffix"}
 {"d":"iga-pages.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"trae.guru","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"veefdev.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
@@ -930,7 +930,8 @@
 {"d":"265.com","s":[0,1,2,3,4,5,6],"r":[4,35,73,119],"t":"domain_suffix"}
 {"d":"mtalk4.google.com","s":[0,2,4,5,6,7],"r":[73,74,119],"t":"domain"}
 {"d":"womenwill.com.br","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
-{"d":"hisilicon.com.cn","s":[0],"r":[80],"t":"domain_suffix"}
+{"d":"cdnhwcsux118.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"hisilicon.com.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"daumcdn.net","s":[0,2,4],"r":[89,119],"t":"domain_suffix"}
 {"d":"7eo8cc932r.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"btei6pis99.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}

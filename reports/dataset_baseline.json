@@ -1,6 +1,14 @@
 {
   "date": "2026-08-28",
   "items": {
+    "database/network/dns.txt": {
+      "kind": "network",
+      "path": "database/network/dns.txt",
+      "count": 18,
+      "sha256": "e02667deb5ecae8e23f7b8ab25cc327d8f5f942bd8624f68a3dc3828bb9d1b97",
+      "bytes": 267,
+      "lines_sample_hash": "d5f42b32b073321c76d14367ab85c8ea5fa261ed4ae843ba65f0e46339b7853b"
+    },
     "database/network/lan.txt": {
       "kind": "network",
       "path": "database/network/lan.txt",
@@ -8,6 +16,14 @@
       "sha256": "66e300191d16a07f27412a93b73220d4c8ad4bb2fb6ddcc5b64ad9eb6b9d3598",
       "bytes": 466,
       "lines_sample_hash": "08934f116d0f31a68ad9a9e9f0dc1a62a97168296ea547210e10c6cc29928172"
+    },
+    "database/network/ntp.txt": {
+      "kind": "network",
+      "path": "database/network/ntp.txt",
+      "count": 12,
+      "sha256": "31e872223362df5c66952e4ed56365f61b66819d8d423712bcfd526f3be33c1a",
+      "bytes": 189,
+      "lines_sample_hash": "3b11c6db82872fb06938f50c9b1090a661d19c292f0a635c12922a8872441e20"
     },
     "database/network/private.txt": {
       "kind": "network",

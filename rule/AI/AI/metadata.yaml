@@ -28,11 +28,11 @@ generated_files:
   domain: ai_domain.list
   ip: null
 statistics:
-  domains: 48
+  domains: 179
   ipv4_or_cidr: 0
-  mixed: 48
+  mixed: 179
 sources:
-- sukkaw
+- metacubex
 clients:
 - Mihomo
 - sing-box

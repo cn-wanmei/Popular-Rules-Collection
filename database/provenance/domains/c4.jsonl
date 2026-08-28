@@ -871,6 +871,7 @@
 {"d":"zdacscswc.w8510.com","s":[1],"r":[3],"t":"domain_suffix"}
 {"d":"zeyang.net","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zularo.de","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
+{"d":"lovart.ai","s":[2,4,6],"r":[6,70,119],"t":"domain_suffix"}
 {"d":"airbnb.no","s":[2,4,5,6],"r":[7,119],"t":"domain_suffix"}
 {"d":"kunlunhuf.com","s":[0,5,6],"r":[10,11,35],"t":"domain_suffix"}
 {"d":"oss-ap-southeast-5.aliyuncs.com","s":[0,5,6],"r":[10,11],"t":"domain_suffix"}
@@ -889,7 +890,7 @@
 {"d":"ja-cloud.com","s":[0,5,6],"r":[22,35],"t":"domain_suffix"}
 {"d":"byteacctimg.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"byteimg.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
-{"d":"huoshanparty.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
+{"d":"huoshanparty.com","s":[0,5,6,7],"r":[31,35,56],"t":"domain_suffix"}
 {"d":"qualitycloud.top","s":[0,5,6],"r":[31],"t":"domain_suffix"}
 {"d":"temaiapi.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"vireala.net","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
@@ -900,8 +901,10 @@
 {"d":"whyfacebook.com","s":[0,2,4,5,6],"r":[64,119],"t":"domain_suffix"}
 {"d":"get.rsvp","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"picasa.com","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
-{"d":"huawei.cn","s":[0],"r":[80],"t":"domain_suffix"}
-{"d":"huaweicloudsite.com","s":[0,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"huawei.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"huaweicloudsite.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"kfomn.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"km9g.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"findyourlimits.com","s":[0,2,4],"r":[82,119],"t":"domain_suffix"}
 {"d":"hulu.com","s":[0,2,4],"r":[70,82,119],"t":"domain_suffix"}
 {"d":"mushymush.tv","s":[0,2,4],"r":[82,119],"t":"domain_suffix"}
@@ -2064,7 +2067,6 @@
 {"d":"firearmsworld.net","s":[2,4],"r":[70,119],"t":"domain_suffix"}
 {"d":"gnews.org","s":[2,4],"r":[70,119],"t":"domain_suffix"}
 {"d":"hkcoc.weather.com.hk","s":[2,4],"r":[70,119],"t":"domain_suffix"}
-{"d":"lovart.ai","s":[2,4],"r":[70,119],"t":"domain_suffix"}
 {"d":"udn.com","s":[2,4],"r":[70,119],"t":"domain_suffix"}
 {"d":"wenyunchao.com","s":[2,4],"r":[70,119],"t":"domain_suffix"}
 {"d":"xxxymovies.com","s":[2,4],"r":[70,119],"t":"domain_suffix"}

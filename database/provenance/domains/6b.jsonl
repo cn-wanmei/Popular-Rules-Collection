@@ -955,7 +955,8 @@
 {"d":"pki.google.com","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"scholar.google.es","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"173.194.175.188/32","s":[0,7],"r":[74],"t":"ip_cidr"}
-{"d":"huaweicloudwaf.cn","s":[0],"r":[80],"t":"domain_suffix"}
+{"d":"huaweicloudwaf.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"myhuaweicloud-koodrive.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
 {"d":"joinmaidez.com","s":[0,2,4],"r":[82,119],"t":"domain_suffix"}
 {"d":"5tjps9c62j.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"c4sy726by8.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
@@ -1949,7 +1950,6 @@
 {"d":"motanku.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"mpsoft.net","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"mydnser.com","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"myhuaweicloud-koodrive.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"nahuiyi.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"nanjianggroup.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"nbmylike.com","s":[0,6],"r":[35],"t":"domain_suffix"}

@@ -915,13 +915,13 @@
 {"d":"nhmuni.com","s":[0,5,6],"r":[22,35],"t":"domain_suffix"}
 {"d":"xiaoduzaijia.cn","s":[0,5,6],"r":[22],"t":"domain_suffix"}
 {"d":"applogcdn.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
-{"d":"awemeugwave.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
+{"d":"awemeugwave.com","s":[0,5,6,7],"r":[31,35,56],"t":"domain_suffix"}
 {"d":"bdns-restore.net","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"p2-juejin.byteimg.com","s":[0,5,6],"r":[31],"t":"domain_suffix"}
 {"d":"wukongwenda.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"ccbfutures.cn","s":[0],"r":[33],"t":"domain_suffix"}
 {"d":"ccbfutures.com","s":[0,6],"r":[33,35],"t":"domain_suffix"}
-{"d":"api.statsig.com","s":[0,1,2,3,4,5],"r":[4,42,106],"t":"domain_suffix"}
+{"d":"api.statsig.com","s":[0,1,2,3,4,5,6],"r":[4,42,106],"t":"domain_suffix"}
 {"d":"freebsd.org","s":[0,2,4,6],"r":[48,119],"t":"domain_suffix"}
 {"d":"hashicorp.com","s":[0,2,4,6],"r":[48,76,119],"t":"domain_suffix"}
 {"d":"jetbrains.ru","s":[0,2,4,5,6],"r":[48,87,119],"t":"domain_suffix"}
@@ -934,7 +934,8 @@
 {"d":"gstatic-cn.com","s":[0,2,4,5,6],"r":[35,73,119],"t":"domain_suffix"}
 {"d":"google.al","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"youtube.com.au","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
-{"d":"hwclouds.com.cn","s":[0],"r":[80],"t":"domain_suffix"}
+{"d":"b2bgo.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"hwclouds.com.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"info-insur.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"jcloudwaf.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"miawycxs.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
@@ -1727,7 +1728,6 @@
 {"d":"axatp.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"axmro.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"ayguge.com","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"b2bgo.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"bagxs.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"bankofchangsha.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"bashan.com","s":[0,6],"r":[35],"t":"domain_suffix"}

@@ -910,7 +910,7 @@
 {"d":"animetamashi.com","s":[0,5,6,7],"r":[25,35],"t":"domain_suffix"}
 {"d":"flgff.cn","s":[0,5,6],"r":[31],"t":"domain_suffix"}
 {"d":"gifshow.com","s":[0,5,6],"r":[31,35,90],"t":"domain_suffix"}
-{"d":"supercachenode.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
+{"d":"supercachenode.com","s":[0,5,6,7],"r":[31,35,56],"t":"domain_suffix"}
 {"d":"zijieurl.net","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"cxzx10086.cn","s":[0],"r":[36],"t":"domain_suffix"}
 {"d":"macosicons.com","s":[0,6],"r":[48],"t":"domain_suffix"}
@@ -923,7 +923,7 @@
 {"d":"facebook4business.com","s":[0,2,4,5,6],"r":[64,119],"t":"domain_suffix"}
 {"d":"facebookclub.com","s":[0,2,4,5,6],"r":[64,119],"t":"domain_suffix"}
 {"d":"marketingplatform.google.com","s":[0,1,2,3,4,5,6],"r":[4,73],"t":"domain_suffix"}
-{"d":"powerapp.com.cn","s":[0],"r":[80],"t":"domain_suffix"}
+{"d":"powerapp.com.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"thehulubraintrust.com","s":[0,2,4],"r":[82,119],"t":"domain_suffix"}
 {"d":"3m099cey43.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"52yitian.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
@@ -933,7 +933,7 @@
 {"d":"vk6oqcevmd1a.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"223.111.183.0/24","s":[0],"r":[91],"t":"ip_cidr"}
 {"d":"193.112.159.225/32","s":[0,6],"r":[99],"t":"ip_cidr"}
-{"d":"nflxvideo.net","s":[0,2,4,5,7],"r":[70,100,119],"t":"domain_suffix"}
+{"d":"nflxvideo.net","s":[0,2,4,5,6,7],"r":[70,100,119],"t":"domain_suffix"}
 {"d":"nintendoswitchtogether.com","s":[0,2,4],"r":[102,119],"t":"domain_suffix"}
 {"d":"anfutong.cn","s":[0,7],"r":[110],"t":"domain_suffix"}
 {"d":"braintreepayments.tv","s":[0,2,4,7],"r":[110,119],"t":"domain_suffix"}

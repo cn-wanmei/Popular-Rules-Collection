@@ -966,8 +966,9 @@
 {"d":"google.com.hk","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"scholar.google.com.ua","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"zynamics.com","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
-{"d":"cdnhwc1.cn","s":[0],"r":[80],"t":"domain_suffix"}
-{"d":"huaweiita.com","s":[0,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"cdnhwc1.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"huaweiapaas.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"huaweiita.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
 {"d":"icbkfs.com","s":[0,6],"r":[35,83],"t":"domain_suffix"}
 {"d":"cloudganzhou.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"57273vy9x0.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
@@ -1864,7 +1865,6 @@
 {"d":"hrbyafeng.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"hsslab.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"huahengrobot.com","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"huaweiapaas.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"huazhuangshi.net","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"huluo.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"hy123.com","s":[0,6],"r":[35],"t":"domain_suffix"}

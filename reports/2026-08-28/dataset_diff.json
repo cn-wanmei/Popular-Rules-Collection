@@ -1,8 +1,19 @@
 {
   "date": "2026-08-28",
   "compared_to": "2026-08-28",
-  "dataset_count": 50,
+  "dataset_count": 52,
   "diffs": {
+    "database/network/dns.txt": {
+      "old_count": 0,
+      "new_count": 18,
+      "added": 18,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
+    },
     "database/network/lan.txt": {
       "old_count": 21,
       "new_count": 21,
@@ -13,6 +24,17 @@
       "growth_ratio": 0.0,
       "sha_changed": false,
       "status": "unchanged"
+    },
+    "database/network/ntp.txt": {
+      "old_count": 0,
+      "new_count": 12,
+      "added": 12,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
     },
     "database/network/private.txt": {
       "old_count": 7,

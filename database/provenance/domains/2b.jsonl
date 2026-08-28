@@ -46,7 +46,7 @@
 {"d":"craommunications.demdex.net","s":[1],"r":[2],"t":"domain_suffix"}
 {"d":"d2qcsi-cdn-settings.appsflyersdk.com","s":[1],"r":[2],"t":"domain_suffix"}
 {"d":"digitalpush.org","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
-{"d":"dt.dbankcloud.ru","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
+{"d":"dt.dbankcloud.ru","s":[0,1,2,3,4,5,6],"r":[2,3,4,80],"t":"domain_suffix"}
 {"d":"eevegh-register.appsflyersdk.com","s":[1],"r":[2],"t":"domain_suffix"}
 {"d":"effectivedisplayformat.com","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
 {"d":"efrcbrvsoplfx.online","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
@@ -875,7 +875,8 @@
 {"d":"zxsvveyeixhmm.space","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zyhk17.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zzhlssowvzfds.online","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
-{"d":"featuregates.org","s":[0,1,2,3,4,5,7],"r":[4,8,42,106],"t":"domain_suffix"}
+{"d":"antigravity.googleapis.com","s":[0,2,4,5,6],"r":[6,73,119],"t":"domain_suffix"}
+{"d":"featuregates.org","s":[0,1,2,3,4,5,6,7],"r":[4,8,42,106],"t":"domain_suffix"}
 {"d":"aliyun-iot-share.com","s":[0,5,6],"r":[10,11,35],"t":"domain_suffix"}
 {"d":"alyms.cn","s":[0,5,6],"r":[10],"t":"domain_suffix"}
 {"d":"kunluncan.com","s":[0,5,6],"r":[10,11,35],"t":"domain_suffix"}
@@ -889,8 +890,8 @@
 {"d":"bcedns.net","s":[0,5,6],"r":[22,35],"t":"domain_suffix"}
 {"d":"bdycdn.cn","s":[0,5,6],"r":[22],"t":"domain_suffix"}
 {"d":"bdgslb.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
-{"d":"kolbuyer.cn","s":[0,5,6],"r":[31],"t":"domain_suffix"}
-{"d":"qishuimusic.cn","s":[0,5,6],"r":[31],"t":"domain_suffix"}
+{"d":"kolbuyer.cn","s":[0,5,6,7],"r":[31,56],"t":"domain_suffix"}
+{"d":"qishuimusic.cn","s":[0,5,6,7],"r":[31,56],"t":"domain_suffix"}
 {"d":"toutiaolite1.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"visactor.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"xiaohe.cn","s":[0,5,6],"r":[31],"t":"domain_suffix"}
@@ -907,10 +908,10 @@
 {"d":"facebooktv.net","s":[0,2,4,5,6],"r":[64,119],"t":"domain_suffix"}
 {"d":"web-instagram.net","s":[0,2,4,5,6],"r":[64,85,119],"t":"domain_suffix"}
 {"d":"54.162.243.80/32","s":[0,5,6],"r":[64],"t":"ip_cidr"}
-{"d":"antigravity.googleapis.com","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"google.iq","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"scholar.google.co.cr","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"youtube.gt","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
+{"d":"cdnhwcztu09.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
 {"d":"kuai-ying.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"o365weve-ppe.com","s":[0,2,4,5,6,7],"r":[96,119],"t":"domain_suffix"}
 {"d":"xboxstudios.com","s":[0,2,4,5,6,7],"r":[96,119,161],"t":"domain_suffix"}
@@ -1722,7 +1723,6 @@
 {"d":"ccrc.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdfsunrise.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdnclouds.net","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"cdnhwcztu09.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdzk.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cgejournal.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"ch999img.com","s":[0,6],"r":[35],"t":"domain_suffix"}

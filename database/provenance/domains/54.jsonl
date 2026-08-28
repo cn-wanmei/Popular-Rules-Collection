@@ -921,6 +921,7 @@
 {"d":"zxmcm.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"globalsign.com","s":[0,5],"r":[5],"t":"domain_suffix"}
 {"d":"alkalimakersuite-pa.clients6.google.com","s":[0,2,4,5,6,7],"r":[6,8,69,73,119],"t":"domain_suffix"}
+{"d":"cursorapi.com","s":[2,4,6],"r":[6,44,119],"t":"domain_suffix"}
 {"d":"lazada.com","s":[0,5,6],"r":[10,35],"t":"domain_suffix"}
 {"d":"a3.mzstatic.com","s":[0,5,6,7],"r":[16],"t":"domain_suffix"}
 {"d":"is2-ssl.mzstatic.com","s":[0,5,6,7],"r":[16],"t":"domain_suffix"}
@@ -940,7 +941,6 @@
 {"d":"bocifunds.com","s":[0,6],"r":[28,35],"t":"domain_suffix"}
 {"d":"p4-juejin.byteimg.com","s":[0,5,6],"r":[31],"t":"domain_suffix"}
 {"d":"zlinkurl.cn","s":[0,5,6],"r":[31],"t":"domain_suffix"}
-{"d":"cursorapi.com","s":[2,4,6],"r":[44,119],"t":"domain_suffix"}
 {"d":"codeberg.org","s":[0,2,4,6],"r":[48,119],"t":"domain_suffix"}
 {"d":"firebasedynamiclinks-ipv4.googleapis.com","s":[0,2,4,5,6],"r":[48,66,73,119],"t":"domain_suffix"}
 {"d":"opengraphprotocol.org","s":[0,2,4,5,6],"r":[48,64,119],"t":"domain_suffix"}
@@ -958,7 +958,9 @@
 {"d":"gstaticcnapps.cn","s":[0,5,6],"r":[73],"t":"domain_suffix"}
 {"d":"madewithcode.com","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"youtube.nl","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
-{"d":"huaweisre.cn","s":[0],"r":[80],"t":"domain_suffix"}
+{"d":"cdnhwcrgg07.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"huaweisre.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"la-south-2.myhuaweicloud.com","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"110.76.140.0/22","s":[0],"r":[89],"t":"ip_cidr"}
 {"d":"tkqpggvx.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"ykugyph.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}

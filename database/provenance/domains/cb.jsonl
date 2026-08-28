@@ -35,7 +35,7 @@
 {"d":"cloudguppy.com","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
 {"d":"cookiex.ngd.yahoo.com","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
 {"d":"coosync.com","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
-{"d":"copilot-telemetry.githubusercontent.com","s":[0,1,2,3,4,5,6,7],"r":[2,3,4,48,71,96],"t":"domain_suffix"}
+{"d":"copilot-telemetry.githubusercontent.com","s":[0,1,2,3,4,5,6,7],"r":[2,3,4,6,48,71,96],"t":"domain_suffix"}
 {"d":"cozytryst.com","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
 {"d":"craftychain.pro","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
 {"d":"d2fj3s7h83rb61.cloudfront.net","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
@@ -899,8 +899,8 @@
 {"d":"zumbarekcore.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zvdvxrykeaetq.website","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zyns.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
-{"d":"openaicomproductionae4b.blob.core.windows.net","s":[0,2,4,5,7],"r":[8,42,106,119],"t":"domain"}
-{"d":"jetbrains.ai","s":[0,2,4,5,6,7],"r":[8,48,87,119],"t":"domain_suffix"}
+{"d":"jetbrains.ai","s":[0,2,4,5,6,7],"r":[6,8,48,87,119],"t":"domain_suffix"}
+{"d":"openaicomproductionae4b.blob.core.windows.net","s":[0,2,4,5,6,7],"r":[6,8,42,106,119],"t":"domain_suffix"}
 {"d":"pailitao.com","s":[0,5,6],"r":[10,35],"t":"domain_suffix"}
 {"d":"amazon","s":[0,2,4,5,6],"r":[14,119],"t":"domain_suffix"}
 {"d":"amazon.jobs","s":[0,2,4,5,6],"r":[14,119],"t":"domain_suffix"}

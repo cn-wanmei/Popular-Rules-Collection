@@ -997,7 +997,9 @@
 {"d":"google.co.ke","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"google.sh","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"webmproject.org","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
-{"d":"cdnhwc6.cn","s":[0],"r":[80],"t":"domain_suffix"}
+{"d":"cdnhwc6.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"cdnhwcgrb01.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"cdnhwcjog12.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
 {"d":"yb.uncn.jp","s":[0],"r":[82],"t":"domain_suffix"}
 {"d":"cloudzhuhai.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"jcloud-cdn.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
@@ -1798,7 +1800,6 @@
 {"d":"capatue.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cauvet.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdfeimi.com","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"cdnhwcjog12.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"chaopx.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"china-light-guides.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"chinacqme.com","s":[0,6],"r":[35],"t":"domain_suffix"}

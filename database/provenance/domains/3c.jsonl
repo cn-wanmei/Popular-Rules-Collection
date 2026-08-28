@@ -906,7 +906,7 @@
 {"d":"drmcmm.baidu.com","s":[0,1,2,3,4,5,6],"r":[4,22],"t":"domain_suffix"}
 {"d":"duxiaomanfund.com","s":[0,5,6],"r":[22,35],"t":"domain_suffix"}
 {"d":"dcarstatic.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
-{"d":"huoshanzhibo.cn","s":[0,5,6],"r":[31],"t":"domain_suffix"}
+{"d":"huoshanzhibo.cn","s":[0,5,6,7],"r":[31,56],"t":"domain_suffix"}
 {"d":"volcfcdndvs3.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"volcfcdnplus.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"affinity.studio","s":[2,4,6],"r":[32,119],"t":"domain_suffix"}
@@ -924,8 +924,10 @@
 {"d":"redhotlabs.com","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"youtube.lu","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
 {"d":"now.com","s":[0,2,4],"r":[70,77,119],"t":"domain_suffix"}
-{"d":"agconnect.link","s":[0,6],"r":[35,80],"t":"domain_suffix"}
-{"d":"huaweiief.com","s":[0,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"agconnect.link","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"cdnhwclxu105.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"huaweiief.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"huaweimarketplace.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
 {"d":"v84z6a854d.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"bing","s":[0,2,4,5,6,7],"r":[96,119],"t":"domain_suffix"}
 {"d":"live.net","s":[0,2,4,5,6,7],"r":[96,119],"t":"domain_suffix"}
@@ -1752,7 +1754,6 @@
 {"d":"ccmn.net","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"ccoymc.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdea4d2cb10261.beer","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"cdnhwclxu105.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"centauriglobal.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"centec.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cfc365.com","s":[0,6],"r":[35],"t":"domain_suffix"}
@@ -1852,7 +1853,6 @@
 {"d":"huahuizhineng.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"hualingjiangong.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"huari.com","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"huaweimarketplace.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"huidagroup.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"hwangda.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"hy439.com","s":[0,6],"r":[35],"t":"domain_suffix"}

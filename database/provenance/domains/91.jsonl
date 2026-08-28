@@ -917,7 +917,7 @@
 {"d":"205.180.175.0/24","s":[0,5,6,7],"r":[16],"t":"ip_cidr"}
 {"d":"911dns.com.cn","s":[0,5,6],"r":[22],"t":"domain_suffix"}
 {"d":"haluan2u.com","s":[0,5,6],"r":[22,35],"t":"domain_suffix"}
-{"d":"amemv.cn","s":[0,5,6],"r":[31],"t":"domain_suffix"}
+{"d":"amemv.cn","s":[0,5,6,7],"r":[31,56],"t":"domain_suffix"}
 {"d":"building.fun","s":[0,5,6],"r":[31,35,55],"t":"domain_suffix"}
 {"d":"gogokid.com.cn","s":[0,5,6],"r":[31],"t":"domain_suffix"}
 {"d":"larkofficeboe.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}

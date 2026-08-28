@@ -972,7 +972,7 @@
 {"d":"137.221.105.2/32","s":[0],"r":[23],"t":"ip_cidr"}
 {"d":"bytecdn.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"bytexns.cn","s":[0,5,6],"r":[31],"t":"domain_suffix"}
-{"d":"iesdouyin.net","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
+{"d":"iesdouyin.net","s":[0,5,6,7],"r":[31,35,56],"t":"domain_suffix"}
 {"d":"qznovelvod.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"scientificlinux.org","s":[0,2,4,6],"r":[48,119],"t":"domain_suffix"}
 {"d":"paper-attachments.s3.amazonaws.com","s":[0,2,4],"r":[57,119],"t":"domain_suffix"}
@@ -986,6 +986,8 @@
 {"d":"scholar.google.com.ar","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"scholar.google.com.pe","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"wide-youtube.l.google.com","s":[0,5,6,7],"r":[73,166],"t":"domain_suffix"}
+{"d":"cdnhwcohm19.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"myhuaweicloud-custom.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"2z96vx20bx.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"smsvifv.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"uoevtxmx.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
@@ -1821,7 +1823,6 @@
 {"d":"cbd263.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cd-zc.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cd658ad6a610b9a5.com","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"cdnhwcohm19.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdsxlc.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cecgw.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"championasia.hk","s":[0,6],"r":[35],"t":"domain_suffix"}

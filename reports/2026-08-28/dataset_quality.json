@@ -21,12 +21,14 @@
     "policy direct files=1",
     "policy proxy files=1",
     "policy dns files=1",
-    "mmdb artifact ok"
+    "mmdb artifact ok",
+    "new dataset: database/network/dns.txt count=18",
+    "new dataset: database/network/ntp.txt count=12"
   ],
   "counts": {
     "hard": 0,
     "warn": 0,
-    "info": 18
+    "info": 20
   },
   "thresholds": {
     "shrink_hard": 0.9,

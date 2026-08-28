@@ -929,7 +929,8 @@
 {"d":"zupcrxfechrmx.store","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zustimmen.de","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"gostorego.com","s":[0,2,4,5],"r":[5,119],"t":"domain_suffix"}
-{"d":"oaiusercontent.com","s":[0,2,4,5,7],"r":[8,42,106,119],"t":"domain_suffix"}
+{"d":"aicode.googleapis.com","s":[6],"r":[6],"t":"domain_suffix"}
+{"d":"oaiusercontent.com","s":[0,2,4,5,6,7],"r":[6,8,42,106,119],"t":"domain_suffix"}
 {"d":"9game.cn","s":[0,5,6],"r":[10],"t":"domain_suffix"}
 {"d":"alibabafoundation.com","s":[0,5,6],"r":[10,35],"t":"domain_suffix"}
 {"d":"freshippo.com","s":[0,5,6],"r":[10,35],"t":"domain_suffix"}
@@ -955,7 +956,10 @@
 {"d":"youtube.com.gh","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
 {"d":"108.177.125.188/32","s":[0,7],"r":[74],"t":"ip_cidr"}
 {"d":"hbolb.onwardsmg.com","s":[0],"r":[77],"t":"domain_suffix"}
-{"d":"myhuaweicloud.com","s":[0,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"ap-southeast-202.myhuaweicloud.com","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"cdnhwclkl04.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"cdnhwcxsi14.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"myhuaweicloud.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
 {"d":"jcloudvideo.net","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"44iuno85gr.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"gvmocpc.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}

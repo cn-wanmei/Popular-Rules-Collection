@@ -937,9 +937,10 @@
 {"d":"faebookc.com","s":[0,2,4,5,6],"r":[64,119],"t":"domain_suffix"}
 {"d":"messenger.com","s":[0,2,4,5,6],"r":[64,70,95,119],"t":"domain_suffix"}
 {"d":"onefifteen.net","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
-{"d":"gneec4.com","s":[0,6],"r":[35,80],"t":"domain_suffix"}
-{"d":"hwccpc.com","s":[0,6],"r":[35,80],"t":"domain_suffix"}
-{"d":"hwgis.cn","s":[0],"r":[80],"t":"domain_suffix"}
+{"d":"gneec4.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"hwccpc.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"hwgis.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"mle5p.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"icbc-at.com","s":[0,6],"r":[35,83],"t":"domain_suffix"}
 {"d":"cloudchaozhou.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"jcloud-oss.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
@@ -952,7 +953,7 @@
 {"d":"msnewskids.com","s":[0,2,4,5,6,7],"r":[96,119],"t":"domain_suffix"}
 {"d":"msnewskids.net","s":[0,2,4,5,6,7],"r":[96,119],"t":"domain_suffix"}
 {"d":"onenote.net","s":[0,2,4,5,6,7],"r":[96,119],"t":"domain_suffix"}
-{"d":"netflixstudios.com","s":[0,5,7],"r":[100],"t":"domain_suffix"}
+{"d":"netflixstudios.com","s":[0,5,6,7],"r":[100],"t":"domain_suffix"}
 {"d":"nintendo.se","s":[0,2,4],"r":[102,119],"t":"domain_suffix"}
 {"d":"paypal-login.info","s":[0,2,4,7],"r":[110,119],"t":"domain_suffix"}
 {"d":"paypal-retail.com","s":[0,2,4,7],"r":[110,119],"t":"domain_suffix"}

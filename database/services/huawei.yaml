@@ -6,12 +6,74 @@ version: 1
 source:
 - id: blackmatrix7
   priority: 95
+- id: metacubex
+  priority: 90
+- id: v2fly
+  priority: 85
 rules:
 - type: domain_suffix
-  value: abhouses.com
+  value: 26r9y.cn
   sources: &id001
   - id: blackmatrix7
     priority: 95
+  - id: metacubex
+    priority: 90
+  - id: v2fly
+    priority: 85
+- type: domain_suffix
+  value: 2gkjr.cn
+  sources: *id001
+- type: domain_suffix
+  value: 3ili6.cn
+  sources: *id001
+- type: domain_suffix
+  value: 576nt.cn
+  sources: *id001
+- type: domain_suffix
+  value: 59bob.cn
+  sources: *id001
+- type: domain_suffix
+  value: 6ts7c.cn
+  sources: *id001
+- type: domain_suffix
+  value: 7k2k1.cn
+  sources: *id001
+- type: domain_suffix
+  value: 8gcdp.cn
+  sources: *id001
+- type: domain_suffix
+  value: 8n82b.cn
+  sources: *id001
+- type: domain_suffix
+  value: 9coof.cn
+  sources: *id001
+- type: domain_suffix
+  value: aadcloud.cn
+  sources: *id001
+- type: domain_suffix
+  value: aadcloud.com
+  sources: *id001
+- type: domain_suffix
+  value: abhouses.com
+  sources: *id001
+- type: domain_suffix
+  value: acgab.cn
+  sources: *id001
+- type: domain_suffix
+  value: ae-ad-1.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: af-east-201.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: af-north-1.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: af-south-1.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: af-west-202.myhuaweicloud.com
+  sources: *id001
 - type: domain_suffix
   value: agconnect.link
   sources: *id001
@@ -19,7 +81,37 @@ rules:
   value: aicccloud.com
   sources: *id001
 - type: domain_suffix
+  value: ami-alliance.org.cn
+  sources: *id001
+- type: domain_suffix
   value: androidga.com
+  sources: *id001
+- type: domain_suffix
+  value: ap-northeast-201.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: ap-southeast-1.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: ap-southeast-2.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: ap-southeast-201.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: ap-southeast-202.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: ap-southeast-203.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: ap-southeast-3.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: ap-southeast-4.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: ap-southeast-5.myhuaweicloud.com
   sources: *id001
 - type: domain_suffix
   value: apifabric.cn
@@ -31,10 +123,28 @@ rules:
   value: apifabric.net
   sources: *id001
 - type: domain_suffix
+  value: as-south-0.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: as-south-201.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: as-south-205.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: as-south-207.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
   value: attendees.cn
   sources: *id001
 - type: domain_suffix
   value: attendees.link
+  sources: *id001
+- type: domain_suffix
+  value: azkr2.cn
+  sources: *id001
+- type: domain_suffix
+  value: b2bgo.com
   sources: *id001
 - type: domain_suffix
   value: bescloud.com
@@ -49,10 +159,22 @@ rules:
   value: bishengcompiler.cn
   sources: *id001
 - type: domain_suffix
+  value: buf35.cn
+  sources: *id001
+- type: domain_suffix
+  value: ca-east-201.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
   value: cdnhwc1.cn
   sources: *id001
 - type: domain_suffix
   value: cdnhwc1.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwc10.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwc10.com
   sources: *id001
 - type: domain_suffix
   value: cdnhwc2.cn
@@ -65,6 +187,12 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: cdnhwc3.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwc4.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwc4.com
   sources: *id001
 - type: domain_suffix
   value: cdnhwc5.cn
@@ -85,13 +213,316 @@ rules:
   value: cdnhwc7.com
   sources: *id001
 - type: domain_suffix
+  value: cdnhwc8.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwc8.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwc9.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwc9.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcaip122.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcajk17.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcaoc115.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcatq08.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcbie120.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcbni108.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcbqs106.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcbvo20.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcbzj102.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcchh18.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwccmz121.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwccvo19.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcdkd21.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcdvg22.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcead111.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcedi10.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcedt124.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwceft18.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwceod109.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcfzp15.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcggk22.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcgnc118.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcgqa21.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcgrb01.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcgvs16.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwchcg02.com
+  sources: *id001
+- type: domain_suffix
   value: cdnhwcibv122.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcick110.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcidu117.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcjbj05.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcjkl10.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcjlg112.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcjog12.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcjqv17.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcjsb120.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwckbw08.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwckfd24.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwckfz116.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwckon103.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcljk104.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwclkl04.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcllh11.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwclnh23.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwclrd102.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwclsl119.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwclxu105.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwclxw05.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcoem01.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcofl101.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcogx108.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcohm19.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcojn124.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwconz06.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcoph123.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcozb112.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcpcw110.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcpqh13.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcprh113.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcpsd13.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcqgw115.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcqir15.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcqrr114.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcqve117.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcqvk105.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcqwg14.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcrgg07.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcrpp12.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcscc123.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcsjs09.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcsux118.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwctmz11.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwctnm107.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwctxz24.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwctyd116.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcuim119.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcupf06.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcurq03.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcurr103.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcuwd107.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcuxc121.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcvix16.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcwqz113.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcxcy07.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcxsi14.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcywp03.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcyxb02.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwczba04.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwczic111.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwczid104.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwczjt20.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwczks109.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwczmn114.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwczoy106.cn
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwczth23.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwcztu09.com
+  sources: *id001
+- type: domain_suffix
+  value: cdnhwczxh101.com
+  sources: *id001
+- type: domain_suffix
+  value: chaspark.com
   sources: *id001
 - type: domain_suffix
   value: cloudnet-ecloud.com.cn
   sources: *id001
 - type: domain_suffix
   value: cloudnetb2b.com
+  sources: *id001
+- type: domain_suffix
+  value: cza84.cn
   sources: *id001
 - type: domain_suffix
   value: dbank.com
@@ -112,6 +543,9 @@ rules:
   value: dbankcloud.com
   sources: *id001
 - type: domain_suffix
+  value: dbankcloud.ru
+  sources: *id001
+- type: domain_suffix
   value: dbankedge.asia
   sources: *id001
 - type: domain_suffix
@@ -127,7 +561,40 @@ rules:
   value: devui.design
   sources: *id001
 - type: domain_suffix
+  value: dt.dbankcloud.ru
+  sources: *id001
+- type: domain_suffix
+  value: eduapaashwc.com
+  sources: *id001
+- type: domain_suffix
+  value: eu-central-201.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: eu-central-202.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: eu-north-201.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: eu-west-0.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: eu-west-1.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: eu-west-101.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: eu-west-201.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
   value: ewindcloud.com.cn
+  sources: *id001
+- type: domain_suffix
+  value: fpxyo.cn
+  sources: *id001
+- type: domain_suffix
+  value: functiongraph.run
   sources: *id001
 - type: domain_suffix
   value: gneec.com
@@ -163,6 +630,9 @@ rules:
   value: hc-cdn.com
   sources: *id001
 - type: domain_suffix
+  value: hc-sre.com
+  sources: *id001
+- type: domain_suffix
   value: hiascend.cn
   sources: *id001
 - type: domain_suffix
@@ -181,13 +651,28 @@ rules:
   value: hihonor.com
   sources: *id001
 - type: domain_suffix
+  value: hikunpeng.cn
+  sources: *id001
+- type: domain_suffix
   value: hikunpeng.com
+  sources: *id001
+- type: domain_suffix
+  value: hikunpeng.com.cn
+  sources: *id001
+- type: domain_suffix
+  value: hikunpeng.net
+  sources: *id001
+- type: domain_suffix
+  value: hima.auto
   sources: *id001
 - type: domain_suffix
   value: hisilicon.com
   sources: *id001
 - type: domain_suffix
   value: hisilicon.com.cn
+  sources: *id001
+- type: domain_suffix
+  value: hiu58.cn
   sources: *id001
 - type: domain_suffix
   value: huawei.cn
@@ -200,6 +685,12 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: huaweiacad.com
+  sources: *id001
+- type: domain_suffix
+  value: huaweiapaas.cn
+  sources: *id001
+- type: domain_suffix
+  value: huaweiapaas.com
   sources: *id001
 - type: domain_suffix
   value: huaweiapi.com
@@ -215,6 +706,27 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: huaweicloud-dns.org
+  sources: *id001
+- type: domain_suffix
+  value: huaweicloud-idme.cn
+  sources: *id001
+- type: domain_suffix
+  value: huaweicloud-idme.com
+  sources: *id001
+- type: domain_suffix
+  value: huaweicloud-koophone.cn
+  sources: *id001
+- type: domain_suffix
+  value: huaweicloud-koophone.com
+  sources: *id001
+- type: domain_suffix
+  value: huaweicloud-smn.cn
+  sources: *id001
+- type: domain_suffix
+  value: huaweicloud-smn.com
+  sources: *id001
+- type: domain_suffix
+  value: huaweicloud-smn.net
   sources: *id001
 - type: domain_suffix
   value: huaweicloud.cn
@@ -268,6 +780,15 @@ rules:
   value: huaweimarine.com
   sources: *id001
 - type: domain_suffix
+  value: huaweimarketplace.com
+  sources: *id001
+- type: domain_suffix
+  value: huaweioneaccess.cn
+  sources: *id001
+- type: domain_suffix
+  value: huaweioneaccess.com
+  sources: *id001
+- type: domain_suffix
   value: huaweirtc.cn
   sources: *id001
 - type: domain_suffix
@@ -304,10 +825,22 @@ rules:
   value: hwad.net
   sources: *id001
 - type: domain_suffix
+  value: hwastro.cn
+  sources: *id001
+- type: domain_suffix
+  value: hwastro.com
+  sources: *id001
+- type: domain_suffix
   value: hwccpc.cn
   sources: *id001
 - type: domain_suffix
   value: hwccpc.com
+  sources: *id001
+- type: domain_suffix
+  value: hwcdnsre.cn
+  sources: *id001
+- type: domain_suffix
+  value: hwcdnsre.com
   sources: *id001
 - type: domain_suffix
   value: hwcloudlive.com
@@ -361,6 +894,12 @@ rules:
   value: hwcloudvis.com
   sources: *id001
 - type: domain_suffix
+  value: hweventgrid.cn
+  sources: *id001
+- type: domain_suffix
+  value: hweventgrid.com
+  sources: *id001
+- type: domain_suffix
   value: hwgis.cn
   sources: *id001
 - type: domain_suffix
@@ -394,22 +933,139 @@ rules:
   value: hwtrip.com
   sources: *id001
 - type: domain_suffix
+  value: idonguapi.cn
+  sources: *id001
+- type: domain_suffix
+  value: idonguapi.com
+  sources: *id001
+- type: domain_suffix
   value: imc-oneaccess.cn
   sources: *id001
 - type: domain_suffix
   value: imcapptest.com
   sources: *id001
 - type: domain_suffix
+  value: inanguapi.cn
+  sources: *id001
+- type: domain_suffix
+  value: inanguapi.com
+  sources: *id001
+- type: domain_suffix
   value: italentclc.com
+  sources: *id001
+- type: domain_suffix
+  value: ivwi3.cn
+  sources: *id001
+- type: domain_suffix
+  value: ixiguapi.com
+  sources: *id001
+- type: domain_suffix
+  value: ka9bv.cn
+  sources: *id001
+- type: domain_suffix
+  value: kfomn.cn
+  sources: *id001
+- type: domain_suffix
+  value: km6g.cn
+  sources: *id001
+- type: domain_suffix
+  value: km7g.cn
+  sources: *id001
+- type: domain_suffix
+  value: km8g.cn
+  sources: *id001
+- type: domain_suffix
+  value: km9g.cn
+  sources: *id001
+- type: domain_suffix
+  value: kma1g.cn
+  sources: *id001
+- type: domain_suffix
+  value: kmcb-cn-east-3.cn
+  sources: *id001
+- type: domain_suffix
+  value: kmcb-cn-north-4.cn
+  sources: *id001
+- type: domain_suffix
+  value: kmop-cn-east-3.cn
+  sources: *id001
+- type: domain_suffix
+  value: kmop-cn-north-4.cn
+  sources: *id001
+- type: domain_suffix
+  value: la-north-2.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: la-north-205.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: la-south-2.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: le5vb.cn
   sources: *id001
 - type: domain_suffix
   value: livehwc3.cn
   sources: *id001
 - type: domain_suffix
+  value: lu1da.cn
+  sources: *id001
+- type: domain_suffix
+  value: me-east-1.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: me-east-205.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: me-east-208.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: me-east-209.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
   value: mindspore.cn
   sources: *id001
 - type: domain_suffix
+  value: mle5p.cn
+  sources: *id001
+- type: domain_suffix
+  value: modelarts-infer.cn
+  sources: *id001
+- type: domain_suffix
+  value: modelarts-infer.com
+  sources: *id001
+- type: domain_suffix
+  value: modelarts-maas.cn
+  sources: *id001
+- type: domain_suffix
+  value: modelarts-maas.com
+  sources: *id001
+- type: domain_suffix
+  value: ms2tg.cn
+  sources: *id001
+- type: domain_suffix
   value: msg5.cn
+  sources: *id001
+- type: domain_suffix
+  value: my-kualalumpur-1.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: myhuaweicloud-custom.cn
+  sources: *id001
+- type: domain_suffix
+  value: myhuaweicloud-custom.com
+  sources: *id001
+- type: domain_suffix
+  value: myhuaweicloud-koodrive.cn
+  sources: *id001
+- type: domain_suffix
+  value: myhuaweicloud-koodrive.com
+  sources: *id001
+- type: domain_suffix
+  value: myhuaweicloud-obs.cn
+  sources: *id001
+- type: domain_suffix
+  value: myhuaweicloud-obs.com
   sources: *id001
 - type: domain_suffix
   value: myhuaweicloud.cn
@@ -439,6 +1095,18 @@ rules:
   value: myhwclouds.net
   sources: *id001
 - type: domain_suffix
+  value: na-east-0.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: na-mexico-1.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: ns95c.cn
+  sources: *id001
+- type: domain_suffix
+  value: o7mu8.cn
+  sources: *id001
+- type: domain_suffix
   value: openarkcompiler.cn
   sources: *id001
 - type: domain_suffix
@@ -446,6 +1114,18 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: owsgo.com
+  sources: *id001
+- type: domain_suffix
+  value: pagescube.cn
+  sources: *id001
+- type: domain_suffix
+  value: pagescube.com
+  sources: *id001
+- type: domain_suffix
+  value: petalmail.com
+  sources: *id001
+- type: domain_suffix
+  value: petalmaps.com
   sources: *id001
 - type: domain_suffix
   value: pmallstore.com
@@ -460,13 +1140,31 @@ rules:
   value: powerapp.io
   sources: *id001
 - type: domain_suffix
+  value: r8zc9.cn
+  sources: *id001
+- type: domain_suffix
   value: router-hwtest.cn
   sources: *id001
 - type: domain_suffix
   value: router-test.cn
   sources: *id001
 - type: domain_suffix
+  value: ru-moscow-1.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: ru-northwest-2.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: ru-northwest-201.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: sa-brazil-1.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
   value: saasops.tech
+  sources: *id001
+- type: domain_suffix
+  value: shanhaitujian.com
   sources: *id001
 - type: domain_suffix
   value: smartcom.cc
@@ -475,7 +1173,31 @@ rules:
   value: speedvr.cn
   sources: *id001
 - type: domain_suffix
+  value: tc3bl.cn
+  sources: *id001
+- type: domain_suffix
   value: teleows.com
+  sources: *id001
+- type: domain_suffix
+  value: tm2a8.cn
+  sources: *id001
+- type: domain_suffix
+  value: tm7sg.cn
+  sources: *id001
+- type: domain_suffix
+  value: tr-west-1.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: tzygd.cn
+  sources: *id001
+- type: domain_suffix
+  value: us-east-1.myhuaweicloud.com
+  sources: *id001
+- type: domain_suffix
+  value: uwtmy.cn
+  sources: *id001
+- type: domain_suffix
+  value: vm45e.cn
   sources: *id001
 - type: domain_suffix
   value: vmall-hw.com
@@ -487,15 +1209,27 @@ rules:
   value: vmallres.com
   sources: *id001
 - type: domain_suffix
+  value: vo6z2.cn
+  sources: *id001
+- type: domain_suffix
   value: vrbt.mobi
+  sources: *id001
+- type: domain_suffix
+  value: x9exk.cn
+  sources: *id001
+- type: domain_suffix
+  value: y43f6.cn
+  sources: *id001
+- type: domain_suffix
+  value: z95rr.cn
   sources: *id001
 metadata:
   priority: high
   confidence: high
-  last_updated: '2026-08-28T12:17:39.598041+00:00'
+  last_updated: '2026-08-28T13:11:57.883204+00:00'
   notes: Generated by normalize.py V1.1
   stats:
-    domain_count: 160
+    domain_count: 402
     ip_count: 0
-    total: 160
+    total: 402
 canonical_source: blackmatrix7

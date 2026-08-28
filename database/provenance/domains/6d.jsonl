@@ -923,7 +923,7 @@
 {"d":"fanqiesdk.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"neihanshequ.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"samasty.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
-{"d":"ulpay.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
+{"d":"ulpay.com","s":[0,5,6,7],"r":[31,35,56],"t":"domain_suffix"}
 {"d":"volcgslb-b.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"volcmagicpage.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"ebf.com.cn","s":[0],"r":[34],"t":"domain_suffix"}
@@ -944,7 +944,8 @@
 {"d":"gvt1-cn.com","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"scholar.google.nl","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"velostrata.com","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
-{"d":"gneec.com.cn","s":[0],"r":[80],"t":"domain_suffix"}
+{"d":"cdnhwcupf06.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"gneec.com.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"icbc.co.jp","s":[0,6],"r":[35,83],"t":"domain_suffix"}
 {"d":"cloudkunming.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"cloudluohe.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
@@ -1746,7 +1747,6 @@
 {"d":"bzkad.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"caifuxingketang.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"ccia-cleaning.org","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"cdnhwcupf06.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"chenghen.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"chgi.net","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"china-bme.com","s":[0,6],"r":[35],"t":"domain_suffix"}

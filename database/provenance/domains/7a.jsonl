@@ -32,7 +32,7 @@
 {"d":"cocoonelectronicsconfined.com","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
 {"d":"col.idealista.it","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
 {"d":"compado.com","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
-{"d":"copilot-telemetry-service.githubusercontent.com","s":[0,1,2,3,4,5,6,7],"r":[2,3,4,48,71,96],"t":"domain_suffix"}
+{"d":"copilot-telemetry-service.githubusercontent.com","s":[0,1,2,3,4,5,6,7],"r":[2,3,4,6,48,71,96],"t":"domain_suffix"}
 {"d":"count.xxxssk.com","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
 {"d":"covidlake.com","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
 {"d":"cpt.itv.com","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
@@ -918,7 +918,9 @@
 {"d":"zzsiemens.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zzsssy.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"enablementadobe.com","s":[0,2,4,5],"r":[5,119],"t":"domain_suffix"}
-{"d":"meta.ai","s":[2,4,7],"r":[6,8,119],"t":"domain_suffix"}
+{"d":"cursor.com","s":[2,4,6],"r":[6,44,119],"t":"domain_suffix"}
+{"d":"labs.google","s":[6],"r":[6],"t":"domain_suffix"}
+{"d":"meta.ai","s":[2,4,6,7],"r":[6,8,119],"t":"domain_suffix"}
 {"d":"47.250.0.0/15","s":[0,5,6],"r":[10],"t":"ip_cidr"}
 {"d":"imdb.com","s":[0,2,4,5,6],"r":[14,119],"t":"domain_suffix"}
 {"d":"beatsbydreformall2013-nl.com","s":[0,2,4,5,6,7],"r":[16,119],"t":"domain_suffix"}
@@ -930,12 +932,12 @@
 {"d":"1gr5dgmttgha1hcj38yzdkco.ourdvsss.com","s":[0,5,6,7],"r":[25],"t":"domain"}
 {"d":"baka.im","s":[0,5,6,7],"r":[25,35],"t":"domain_suffix"}
 {"d":"activity03.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
-{"d":"cursor.com","s":[2,4,6],"r":[44,119],"t":"domain_suffix"}
 {"d":"01.org","s":[0,2,4,6],"r":[48,119],"t":"domain_suffix"}
 {"d":"openvino.ai","s":[0,2,4,6],"r":[48,119],"t":"domain_suffix"}
 {"d":"disney.dk","s":[0,2,4,7],"r":[53,119],"t":"domain_suffix"}
 {"d":"ig.me","s":[0,2,4,5,6],"r":[64,85,119],"t":"domain_suffix"}
 {"d":"sportstream.com","s":[0,2,4,5,6],"r":[64,119],"t":"domain_suffix"}
+{"d":"cdnhwcllh11.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
 {"d":"hulutv.com","s":[0,2,4],"r":[82,119],"t":"domain_suffix"}
 {"d":"icbcnz.com","s":[0,6],"r":[35,83],"t":"domain_suffix"}
 {"d":"iwork.apple.com","s":[0,5,6],"r":[84],"t":"domain_suffix"}
@@ -1731,7 +1733,6 @@
 {"d":"ccngx.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cddgg.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cddlkj.net","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"cdnhwcllh11.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdrqxh.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cfchi.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"chinaembassy.at","s":[0,6],"r":[35],"t":"domain_suffix"}

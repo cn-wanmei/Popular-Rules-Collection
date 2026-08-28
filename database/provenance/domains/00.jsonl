@@ -867,6 +867,8 @@
 {"d":"znbdr.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"ztvlz.fapnado.xxx","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zw.marcidknaves.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
+{"d":"dreamgen.com","s":[2,4,6],"r":[6,119],"t":"domain_suffix"}
+{"d":"poecdn.net","s":[2,4,6],"r":[6,119],"t":"domain_suffix"}
 {"d":"doservice.com","s":[0,5,6],"r":[10,35],"t":"domain_suffix"}
 {"d":"tmalltv.com","s":[0,5,6],"r":[10,35],"t":"domain_suffix"}
 {"d":"40shopping.com","s":[0,2,4,5,6,7],"r":[16,119],"t":"domain_suffix"}
@@ -904,11 +906,12 @@
 {"d":"picnik.com","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"tenor.com","s":[0,2,4,5,6,7],"r":[70,73,96,119],"t":"domain_suffix"}
 {"d":"xplr.co","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
+{"d":"cdnhwconz06.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"cloudjingzhou.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"jcloudec.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"59.47.73.0/24","s":[0],"r":[91],"t":"ip_cidr"}
 {"d":"skydrive","s":[0,5,6,7],"r":[96,105],"t":"domain_keyword"}
-{"d":"(^|\\.)apiproxy-device-prod-nlb-.+\\.amazonaws\\.com$","s":[0,5,7],"r":[100],"t":"domain_regex"}
+{"d":"(^|\\.)apiproxy-device-prod-nlb-.+\\.amazonaws\\.com$","s":[0,5,6,7],"r":[100],"t":"domain_regex"}
 {"d":"paypalbeacon.com","s":[0,2,4,7],"r":[110,119],"t":"domain_suffix"}
 {"d":"paypalgivingfund.org","s":[0,2,4,7],"r":[110,119],"t":"domain_suffix"}
 {"d":"roblox.vn","s":[2,4,5,6],"r":[119,123],"t":"domain_suffix"}
@@ -2080,7 +2083,6 @@
 {"d":"czechstreets.com","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"dell.dk","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"dettol.hu","s":[2,4],"r":[119],"t":"domain_suffix"}
-{"d":"dreamgen.com","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"e-estate.jp","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"eft-store.com","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"erogazoufactory.com","s":[2,4],"r":[119],"t":"domain_suffix"}
@@ -2115,7 +2117,6 @@
 {"d":"mr-tireman.jp","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"ohsexfilm.com","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"op7979.com","s":[2,4],"r":[119],"t":"domain_suffix"}
-{"d":"poecdn.net","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"priceless.org","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"ptt2.cc","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"qualcomm-inc.com","s":[2,4],"r":[119],"t":"domain_suffix"}

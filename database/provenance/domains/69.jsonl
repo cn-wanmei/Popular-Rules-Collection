@@ -912,8 +912,10 @@
 {"d":"alt3-mtalk.google.com","s":[0,2,4,5,6,7],"r":[73,74,119],"t":"domain"}
 {"d":"google.co.id","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"google.ie","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
-{"d":"bisheng.cn","s":[0],"r":[80],"t":"domain_suffix"}
-{"d":"goldenear.club","s":[0,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"bisheng.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"goldenear.club","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"kmop-cn-north-4.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"me-east-208.myhuaweicloud.com","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"icbc.be","s":[0,6],"r":[35,83],"t":"domain_suffix"}
 {"d":"eckgxbfa.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"keouaxbw.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}

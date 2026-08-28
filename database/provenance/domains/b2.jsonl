@@ -950,7 +950,9 @@
 {"d":"xn--9trs65b.com","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"2620:120:e000::/40","s":[0,5,6,7],"r":[73,166],"t":"ip_cidr6"}
 {"d":"bcbolthboa-a.akamaihd.net","s":[0],"r":[77],"t":"domain_suffix"}
-{"d":"cdnhwc3.cn","s":[0],"r":[80],"t":"domain_suffix"}
+{"d":"cdnhwc3.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"eu-west-1.myhuaweicloud.com","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"kmcb-cn-north-4.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"baiying.com","s":[0,6],"r":[35,86],"t":"domain_suffix"}
 {"d":"clouddatong.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"kgrestrg.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}

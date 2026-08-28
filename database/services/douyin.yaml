@@ -6,6 +6,8 @@ version: 1
 source:
 - id: blackmatrix7
   priority: 95
+- id: metacubex
+  priority: 90
 - id: dler
   priority: 80
 rules:
@@ -14,16 +16,75 @@ rules:
   sources: &id001
   - id: blackmatrix7
     priority: 95
+  - id: metacubex
+    priority: 90
   - id: dler
     priority: 80
 - type: domain
   value: v5-dy-o-abtest.zjcdn.com
   sources: *id001
 - type: domain_suffix
+  value: activity-wbsj.com
+  sources: *id001
+- type: domain_suffix
+  value: aihst8.com
+  sources: *id001
+- type: domain_suffix
+  value: amemv.cn
+  sources: *id001
+- type: domain_suffix
   value: amemv.com
   sources: *id001
 - type: domain_suffix
+  value: amemv.net
+  sources: *id001
+- type: domain_suffix
+  value: awemeughun.com
+  sources: *id001
+- type: domain_suffix
+  value: awemeuglang.com
+  sources: *id001
+- type: domain_suffix
+  value: awemeugsoul.com
+  sources: *id001
+- type: domain_suffix
+  value: awemeugwave.com
+  sources: *id001
+- type: domain_suffix
+  value: betastar.cn
+  sources: *id001
+- type: domain_suffix
+  value: boxdouyin.com
+  sources: *id001
+- type: domain_suffix
+  value: cookicut.com
+  sources: *id001
+- type: domain_suffix
+  value: douyin.com
+  sources: *id001
+- type: domain_suffix
+  value: douyinact.com
+  sources: *id001
+- type: domain_suffix
+  value: douyinact.net
+  sources: *id001
+- type: domain_suffix
   value: douyincdn.com
+  sources: *id001
+- type: domain_suffix
+  value: douyinec.com
+  sources: *id001
+- type: domain_suffix
+  value: douyinfe.com
+  sources: *id001
+- type: domain_suffix
+  value: douyinliving.com
+  sources: *id001
+- type: domain_suffix
+  value: douyinmusicpromotion.com
+  sources: *id001
+- type: domain_suffix
+  value: douyinpay.com
   sources: *id001
 - type: domain_suffix
   value: douyinpic.com
@@ -35,7 +96,97 @@ rules:
   value: douyinvod.com
   sources: *id001
 - type: domain_suffix
+  value: duoshan.com
+  sources: *id001
+- type: domain_suffix
+  value: huoshan.com
+  sources: *id001
+- type: domain_suffix
+  value: huoshancdn.com
+  sources: *id001
+- type: domain_suffix
+  value: huoshangroup.com
+  sources: *id001
+- type: domain_suffix
+  value: huoshanimg.com
+  sources: *id001
+- type: domain_suffix
+  value: huoshanlive.com
+  sources: *id001
+- type: domain_suffix
+  value: huoshanparty.com
+  sources: *id001
+- type: domain_suffix
+  value: huoshanstatic.com
+  sources: *id001
+- type: domain_suffix
+  value: huoshante8.com
+  sources: *id001
+- type: domain_suffix
+  value: huoshanvideo.cn
+  sources: *id001
+- type: domain_suffix
+  value: huoshanvideo.net
+  sources: *id001
+- type: domain_suffix
+  value: huoshanvod.com
+  sources: *id001
+- type: domain_suffix
+  value: huoshanxiaoshipin.cn
+  sources: *id001
+- type: domain_suffix
+  value: huoshanxiaoshipin.net
+  sources: *id001
+- type: domain_suffix
+  value: huoshanzhibo.cn
+  sources: *id001
+- type: domain_suffix
+  value: huoshanzhibo.com
+  sources: *id001
+- type: domain_suffix
+  value: huoshanzhibo.net
+  sources: *id001
+- type: domain_suffix
+  value: hypercachenode.com
+  sources: *id001
+- type: domain_suffix
+  value: idouyinliving.com
+  sources: *id001
+- type: domain_suffix
+  value: idouyinpic.com
+  sources: *id001
+- type: domain_suffix
+  value: idouyinstatic.com
+  sources: *id001
+- type: domain_suffix
   value: idouyinvod.com
+  sources: *id001
+- type: domain_suffix
+  value: iesdouyin.com
+  sources: *id001
+- type: domain_suffix
+  value: iesdouyin.net
+  sources: *id001
+- type: domain_suffix
+  value: ieshuodong.cn
+  sources: *id001
+- type: domain_suffix
+  value: ieshuodong.net
+  sources: *id001
+- type: domain_suffix
+  value: ihst8.com
+  sources: *id001
+- type: domain_suffix
+  value: ihuoshanimg.com
+  sources: *id001
+- type: domain_suffix
+  value: ihuoshanlive.com
+  sources: *id001
+- type: domain_suffix
+  value: ihuoshanstatic.com
+  sources: *id001
+- type: domain_suffix
+  value: ihuoshanvod.com
   sources: *id001
 - type: domain_suffix
   value: ixigua.com
@@ -44,21 +195,69 @@ rules:
   value: ixiguavideo.com
   sources: *id001
 - type: domain_suffix
+  value: kolbuyer.cn
+  sources: *id001
+- type: domain_suffix
+  value: lifexue.com
+  sources: *id001
+- type: domain_suffix
+  value: nextvid.net
+  sources: *id001
+- type: domain_suffix
+  value: open-douyin.com
+  sources: *id001
+- type: domain_suffix
+  value: ppkankan01.com
+  sources: *id001
+- type: domain_suffix
   value: pstatp.com
+  sources: *id001
+- type: domain_suffix
+  value: qishui.cn
+  sources: *id001
+- type: domain_suffix
+  value: qishui.com
+  sources: *id001
+- type: domain_suffix
+  value: qishui.com.cn
+  sources: *id001
+- type: domain_suffix
+  value: qishuimusic.cn
+  sources: *id001
+- type: domain_suffix
+  value: qishuimusic.com.cn
   sources: *id001
 - type: domain_suffix
   value: snssdk.com
   sources: *id001
 - type: domain_suffix
+  value: supercachenet.com
+  sources: *id001
+- type: domain_suffix
+  value: supercachenode.com
+  sources: *id001
+- type: domain_suffix
   value: toutiao.com
+  sources: *id001
+- type: domain_suffix
+  value: ulpay.com
+  sources: *id001
+- type: domain_suffix
+  value: ultracachenode.com
+  sources: *id001
+- type: domain_suffix
+  value: woaihuoshan.com
+  sources: *id001
+- type: domain_suffix
+  value: wohst8.com
   sources: *id001
 metadata:
   priority: high
   confidence: high
-  last_updated: '2026-08-28T12:17:39.322268+00:00'
+  last_updated: '2026-08-28T13:11:57.683062+00:00'
   notes: Generated by normalize.py V1.1
   stats:
-    domain_count: 13
+    domain_count: 78
     ip_count: 0
-    total: 13
+    total: 78
 canonical_source: blackmatrix7

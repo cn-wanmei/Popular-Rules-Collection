@@ -1476,6 +1476,7 @@
     "services": [
       "adblock-light",
       "adblock-pro",
+      "ai",
       "developer",
       "github",
       "microsoft"
@@ -1499,6 +1500,7 @@
     "services": [
       "adblock-light",
       "adblock-pro",
+      "ai",
       "developer",
       "github",
       "microsoft"
@@ -1722,6 +1724,26 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "dt.dbankcloud.ru"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "huawei"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "dualstack-logs.amap.com"
     },
     "policy": "proxy",
@@ -1906,6 +1928,7 @@
     "sources": [
       "blackmatrix7",
       "hagezi",
+      "metacubex",
       "v2fly"
     ],
     "services": [
@@ -5249,6 +5272,26 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "browser-intake-datadoghq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "ai",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "bugly.qq.com"
     },
     "policy": "proxy",
@@ -6485,6 +6528,26 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "openai.qualtrics.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex",
+      "v2fly"
+    ],
+    "services": [
+      "adblock-pro",
+      "ai",
+      "openai"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "p9-ad-sign.byteimg.com"
     },
     "policy": "proxy",
@@ -6858,6 +6921,23 @@
     "services": [
       "adblock-pro",
       "alibaba"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "sider.ai"
+    },
+    "policy": "proxy",
+    "sources": [
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-pro",
+      "ai"
     ]
   },
   {
@@ -9236,70 +9316,6 @@
     "match": {
       "type": "domain_suffix",
       "value": "toutapp.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "typekit.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "typekit.net"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "verisign.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "votolia.com"
     },
     "policy": "proxy",
     "sources": [

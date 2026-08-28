@@ -945,6 +945,7 @@
 {"d":"zw-google.hl.cn","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zyvbvqvjjkjkb.top","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"ccpsx.com","s":[0,2,4,5],"r":[5,119],"t":"domain_suffix"}
+{"d":"ai.studio","s":[0,2,4,5,6],"r":[6,70,73,119],"t":"domain_suffix"}
 {"d":"alicdn.com","s":[0,5,6],"r":[10,11,35],"t":"domain_suffix"}
 {"d":"aliyuncdn.net","s":[0,5,6],"r":[10,11,35],"t":"domain_suffix"}
 {"d":"iconfont.cn","s":[0,5,6],"r":[10],"t":"domain_suffix"}
@@ -966,7 +967,7 @@
 {"d":"baidupcs.com","s":[0,5,6],"r":[22,35],"t":"domain_suffix"}
 {"d":"99uri.cn","s":[0,5,6],"r":[31],"t":"domain_suffix"}
 {"d":"feelgood.cn","s":[0,5,6],"r":[31],"t":"domain_suffix"}
-{"d":"huoshanvod.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
+{"d":"huoshanvod.com","s":[0,5,6,7],"r":[31,35,56],"t":"domain_suffix"}
 {"d":"neyetwatcher.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"volccdn.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"zjbyte.net","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
@@ -982,7 +983,6 @@
 {"d":"fscebook.com","s":[0,2,4,5,6],"r":[64,119],"t":"domain_suffix"}
 {"d":"beacons3.gvt2.com","s":[0,5,6],"r":[35,73],"t":"domain_suffix"}
 {"d":"g0.gstatic.com","s":[0,5,6],"r":[73],"t":"domain_suffix"}
-{"d":"ai.studio","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"alt8-mtalk.google.com","s":[0,2,4,5,6,7],"r":[73,74,119],"t":"domain"}
 {"d":"google.com.tj","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"google.fi","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
@@ -991,7 +991,8 @@
 {"d":"youtube.mk","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
 {"d":"youtubego.co.id","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
 {"d":"players.brightcove.net","s":[0],"r":[77],"t":"domain_suffix"}
-{"d":"huaweiyun.com","s":[0,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"8n82b.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"huaweiyun.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
 {"d":"iqiyi.demo.uwp","s":[0,6],"r":[35,86],"t":"domain_suffix"}
 {"d":"cloud-beijing.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"yizhitou.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}

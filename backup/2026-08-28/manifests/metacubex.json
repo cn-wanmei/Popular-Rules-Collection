@@ -1,11 +1,11 @@
 {
   "source": "metacubex",
   "fetch": "github_raw",
-  "timestamp": "2026-08-28T12:14:09.463667+00:00",
-  "files_ok": 57,
+  "timestamp": "2026-08-28T13:09:09.932352+00:00",
+  "files_ok": 63,
   "files_failed": 0,
   "empty_blocked": 0,
-  "rules_declared": 57,
+  "rules_declared": 63,
   "files": [
     {
       "name": "geosite_alibaba.list",
@@ -575,6 +575,66 @@
       "local": "sources/metacubex/geosite_category_dev.list",
       "size": 12383,
       "sha256": "c2bf9920c87188b6e386f3c7404db15ecdb7709e2a14a9ebacccc976eb3aaf1f",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_huawei.list",
+      "path": "geo/geosite/huawei.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/huawei.list",
+      "service": "huawei",
+      "local": "sources/metacubex/geosite_huawei.list",
+      "size": 6355,
+      "sha256": "db2bc2f2adc13c0f203a4f6abb41886036ccf6d1bf27d68f1ea43c8e22564133",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_douyin.list",
+      "path": "geo/geosite/douyin.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/douyin.list",
+      "service": "douyin",
+      "local": "sources/metacubex/geosite_douyin.list",
+      "size": 1208,
+      "sha256": "b3cf1b6906d1f45454599955e681d4980d7434411f1d976d37550eefb6c9066d",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_openai.list",
+      "path": "geo/geosite/openai.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/openai.list",
+      "service": "openai",
+      "local": "sources/metacubex/geosite_openai.list",
+      "size": 522,
+      "sha256": "9c3c755ad42fa75196e5d37705d0d5bfff5f60bc0d9a1f017272e70eafde7645",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_anthropic.list",
+      "path": "geo/geosite/anthropic.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/anthropic.list",
+      "service": "anthropic",
+      "local": "sources/metacubex/geosite_anthropic.list",
+      "size": 153,
+      "sha256": "0155b69f43c57d61fa8152ae3372233b0660affd6d2b2c01315290f53a311b7f",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_netflix.list",
+      "path": "geo/geosite/netflix.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.list",
+      "service": "netflix",
+      "local": "sources/metacubex/geosite_netflix.list",
+      "size": 452,
+      "sha256": "980ec18a1c566850622523310feb9ed38cd562c82e697c3da7f756b816f337d8",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_category_ai.list",
+      "path": "geo/geosite/category-ai-!cn.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-%21cn.list",
+      "service": "ai",
+      "local": "sources/metacubex/geosite_category_ai.list",
+      "size": 3431,
+      "sha256": "f8de16d4486addb5f616137d771945c8c9562f61d92d906b0eb90dfd8e976d23",
       "status": "ok"
     }
   ],

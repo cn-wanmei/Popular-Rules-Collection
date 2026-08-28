@@ -913,7 +913,7 @@
 {"d":"dongchedi.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"thelarkcloud.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"tiktok-row.net","s":[0,2,4,5,6,7],"r":[31,119,143],"t":"domain_suffix"}
-{"d":"64.23.132.171/32","s":[0,5],"r":[42,106],"t":"ip_cidr"}
+{"d":"64.23.132.171/32","s":[0,5,6],"r":[42,106],"t":"ip_cidr"}
 {"d":"nugettest.org","s":[0,2,4,5,6,7],"r":[48,96,119],"t":"domain_suffix"}
 {"d":"productionresultssa3.blob.core.windows.net","s":[0,2,4,5,6,7],"r":[48,71,96,119],"t":"domain_suffix"}
 {"d":"discordapp.com","s":[0,2,4,5,7],"r":[52,70,119],"t":"domain_suffix"}
@@ -924,7 +924,8 @@
 {"d":"google.co.zm","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"youtubefanfest.com","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
 {"d":"hboasia4-i.akamaihd.net","s":[0],"r":[77],"t":"domain_suffix"}
-{"d":"hicloud.com","s":[0,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"cdnhwcpqh13.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"hicloud.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
 {"d":"icbcparis.fr","s":[0,6],"r":[35,83],"t":"domain_suffix"}
 {"d":"suike.cn","s":[0],"r":[86],"t":"domain_suffix"}
 {"d":"jcloudgslb.net","s":[0,6],"r":[35,88],"t":"domain_suffix"}

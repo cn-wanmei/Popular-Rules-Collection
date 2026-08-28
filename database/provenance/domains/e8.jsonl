@@ -931,7 +931,8 @@
 {"d":"zouwang.vip","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zukunfttreuhand.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"marketo.com","s":[0,1,2,3,4,5],"r":[4,5,119],"t":"domain_suffix"}
-{"d":"production-openaicom-storage.azureedge.net","s":[0,2,4,5,7],"r":[8,42,106,119],"t":"domain"}
+{"d":"h2o.ai","s":[2,4,6],"r":[6,119],"t":"domain_suffix"}
+{"d":"production-openaicom-storage.azureedge.net","s":[0,2,4,5,6,7],"r":[6,8,42,106,119],"t":"domain_suffix"}
 {"d":"augment.com","s":[7],"r":[8],"t":"domain_suffix"}
 {"d":"amazon-lantern.com","s":[0,2,4,5,6],"r":[14,119],"t":"domain_suffix"}
 {"d":"amzn.com","s":[0,2,4,5,6],"r":[14,119],"t":"domain_suffix"}
@@ -974,6 +975,7 @@
 {"d":"scholar.google.fr","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"youtube.by","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
 {"d":"youtube.com.jo","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
+{"d":"acgab.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"hulupurchase.com","s":[0,2,4],"r":[82,119],"t":"domain_suffix"}
 {"d":"kwaiadapp.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"kwaitv.cn","s":[0],"r":[90],"t":"domain_suffix"}
@@ -2167,7 +2169,6 @@
 {"d":"freessl.com","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"gazprombank.ru","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"gettyimages.com","s":[2,4],"r":[119],"t":"domain_suffix"}
-{"d":"h2o.ai","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"hentai2.net","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"hiporn.net","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"hkt.com","s":[2,4],"r":[119],"t":"domain_suffix"}

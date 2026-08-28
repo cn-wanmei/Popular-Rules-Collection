@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-28T12:34:07.583760+00:00",
+  "generated_at": "2026-08-28T13:25:33.483775+00:00",
   "date": "2026-08-28",
   "services": {
     "uber": {
@@ -75,10 +75,6 @@
       "score": 90.0,
       "band": "stable"
     },
-    "douyin": {
-      "score": 90.0,
-      "band": "stable"
-    },
     "linkedin": {
       "score": 90.0,
       "band": "stable"
@@ -124,10 +120,6 @@
       "band": "stable"
     },
     "bocom": {
-      "score": 90.0,
-      "band": "stable"
-    },
-    "huawei": {
       "score": 90.0,
       "band": "stable"
     },
@@ -256,10 +248,6 @@
       "band": "stable"
     },
     "meituan": {
-      "score": 90.0,
-      "band": "stable"
-    },
-    "ai": {
       "score": 90.0,
       "band": "stable"
     },
@@ -587,10 +575,6 @@
       "score": 85.0,
       "band": "maintained"
     },
-    "openai": {
-      "score": 85.0,
-      "band": "maintained"
-    },
     "microsoft": {
       "score": 85.0,
       "band": "maintained"
@@ -627,6 +611,10 @@
       "score": 78.0,
       "band": "maintained"
     },
+    "openai": {
+      "score": 78.0,
+      "band": "maintained"
+    },
     "soundcloud": {
       "score": 78.0,
       "band": "maintained"
@@ -638,6 +626,10 @@
     "google": {
       "score": 78.0,
       "band": "maintained"
+    },
+    "douyin": {
+      "score": 65.0,
+      "band": "review"
     },
     "alibabacloud": {
       "score": 65.0,
@@ -651,6 +643,10 @@
       "score": 65.0,
       "band": "review"
     },
+    "huawei": {
+      "score": 65.0,
+      "band": "review"
+    },
     "apple": {
       "score": 65.0,
       "band": "review"
@@ -660,6 +656,10 @@
       "band": "review"
     },
     "github": {
+      "score": 65.0,
+      "band": "review"
+    },
+    "ai": {
       "score": 65.0,
       "band": "review"
     },

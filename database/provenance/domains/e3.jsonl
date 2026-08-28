@@ -940,7 +940,7 @@
 {"d":"azure-dns-3.cn","s":[0,5,6,7],"r":[21,96],"t":"domain_suffix"}
 {"d":"azuremresolver.cn","s":[0,5,6,7],"r":[21,96],"t":"domain_suffix"}
 {"d":"baidu-cdn.com","s":[0,5,6],"r":[22,35],"t":"domain_suffix"}
-{"d":"douyinpay.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
+{"d":"douyinpay.com","s":[0,5,6,7],"r":[31,35,56],"t":"domain_suffix"}
 {"d":"108.162.192.0/18","s":[0,5,6],"r":[40],"t":"ip_cidr"}
 {"d":"discourse.group","s":[0,2,4,6],"r":[48,119],"t":"domain_suffix"}
 {"d":"fastlane.tools","s":[0,2,4,5,6],"r":[48,73,119],"t":"domain_suffix"}
@@ -951,7 +951,9 @@
 {"d":"blog.google","s":[0,5,6],"r":[73],"t":"domain_suffix"}
 {"d":"g.cn","s":[0,5,6],"r":[73],"t":"domain_suffix"}
 {"d":"google.to","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
-{"d":"dcia.org.cn","s":[0],"r":[80],"t":"domain_suffix"}
+{"d":"cdnhwcgvs16.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"dcia.org.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"petalmail.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
 {"d":"icbc.com.au","s":[0,6],"r":[35,83],"t":"domain_suffix"}
 {"d":"cloud-ningbo.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"jingdonghealth.cn","s":[0,6],"r":[88],"t":"domain_suffix"}
@@ -1963,7 +1965,6 @@
 {"d":"ovupre.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"ozonbigsell.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"penhuijiqi.com","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"petalmail.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"piaohua.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"pkcity.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"psvalve.com","s":[0,6],"r":[35],"t":"domain_suffix"}

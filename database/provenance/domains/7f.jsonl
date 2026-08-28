@@ -908,6 +908,7 @@
 {"d":"gipscorp.com","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"howtogetmo.co.uk","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"youtube.it","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
+{"d":"modelarts-maas.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
 {"d":"103.44.56.0/22","s":[0],"r":[86],"t":"ip_cidr"}
 {"d":"jdcloudstatus.net","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"jddtv.cn","s":[0,6],"r":[88],"t":"domain_suffix"}
@@ -919,7 +920,7 @@
 {"d":"licdn.cn","s":[0],"r":[93],"t":"domain_suffix"}
 {"d":"asp.net","s":[0,2,4,5,6,7],"r":[96,119],"t":"domain_suffix"}
 {"d":"windows-int.net","s":[0,2,4,5,6,7],"r":[96,119],"t":"domain_suffix"}
-{"d":"(^|\\.)dualstack\\.apiproxy-.+\\.amazonaws\\.com$","s":[0,5,7],"r":[100],"t":"domain_regex"}
+{"d":"(^|\\.)dualstack\\.apiproxy-.+\\.amazonaws\\.com$","s":[0,5,6,7],"r":[100],"t":"domain_regex"}
 {"d":"bluekai.com","s":[0,1,2,3,4,5],"r":[4,108],"t":"domain_suffix"}
 {"d":"pinterest.com.au","s":[0,2,4],"r":[70,115,119],"t":"domain_suffix"}
 {"d":"torrentday.com","s":[0],"r":[118],"t":"domain_suffix"}
@@ -1888,7 +1889,6 @@
 {"d":"mk-yiliao.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"mmsk.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"mnwww.com","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"modelarts-maas.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"modelscope.ai","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"molemon.fun","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"mupao.com","s":[0,6],"r":[35],"t":"domain_suffix"}

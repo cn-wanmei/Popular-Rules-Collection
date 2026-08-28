@@ -4,70 +4,67 @@ category: ai
 type: domain
 version: 1
 source:
-- id: sukkaw
-  priority: 88
+- id: metacubex
+  priority: 90
 rules:
-- type: domain
-  value: 7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
+- type: domain_suffix
+  value: agentclientprotocol.com
   sources: &id001
-  - id: sukkaw
-    priority: 88
-- type: domain
+  - id: metacubex
+    priority: 90
+- type: domain_suffix
   value: ai.google.dev
   sources: *id001
-- type: domain
-  value: aida.googleapis.com
-  sources: *id001
-- type: domain
-  value: aisandbox-pa.googleapis.com
-  sources: *id001
-- type: domain
-  value: alkalicore-pa.clients6.google.com
-  sources: *id001
-- type: domain
-  value: antigravity-unleash.goog
-  sources: *id001
-- type: domain
-  value: antigravity.google
-  sources: *id001
-- type: domain
-  value: api.github.com
-  sources: *id001
-- type: domain
-  value: api.jetbrains.ai
-  sources: *id001
-- type: domain
-  value: daily-cloudcode-pa.googleapis.com
-  sources: *id001
-- type: domain
-  value: gateway.ai.cloudflare.com
-  sources: *id001
-- type: domain
-  value: jules.google.com
-  sources: *id001
-- type: domain
-  value: openrouter.ai
-  sources: *id001
-- type: domain
-  value: robinfrontend-pa.googleapis.com
-  sources: *id001
-- type: domain_keyword
-  value: alkalimakersuite-pa.clients6.google.com
-  sources: *id001
-- type: domain_keyword
-  value: openai
+- type: domain_suffix
+  value: ai.studio
   sources: *id001
 - type: domain_suffix
-  value: ai.com
+  value: aicode.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: aida.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: aisandbox-pa.googleapis.com
   sources: *id001
 - type: domain_suffix
   value: aistudio.google.com
   sources: *id001
 - type: domain_suffix
+  value: alkalicore-pa.clients6.google.com
+  sources: *id001
+- type: domain_suffix
+  value: alkalimakersuite-pa.clients6.google.com
+  sources: *id001
+- type: domain_suffix
   value: anthropic.com
   sources: *id001
 - type: domain_suffix
+  value: antigravity-pa.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: antigravity-unleash.goog
+  sources: *id001
+- type: domain_suffix
+  value: antigravity.google
+  sources: *id001
+- type: domain_suffix
+  value: antigravity.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: anythingllm.com
+  sources: *id001
+- type: domain_suffix
+  value: arena.ai
+  sources: *id001
+- type: domain_suffix
   value: bard.google.com
+  sources: *id001
+- type: domain_suffix
+  value: browser-intake-datadoghq.com
+  sources: *id001
+- type: domain_suffix
+  value: cerebras.ai
   sources: *id001
 - type: domain_suffix
   value: chat.com
@@ -76,7 +73,25 @@ rules:
   value: chatgpt.com
   sources: *id001
 - type: domain_suffix
+  value: chatgpt.livekit.cloud
+  sources: *id001
+- type: domain_suffix
   value: chatgpt.site
+  sources: *id001
+- type: domain_suffix
+  value: chutes.ai
+  sources: *id001
+- type: domain_suffix
+  value: cici.com
+  sources: *id001
+- type: domain_suffix
+  value: ciciai.com
+  sources: *id001
+- type: domain_suffix
+  value: ciciaicdn.com
+  sources: *id001
+- type: domain_suffix
+  value: clau.de
   sources: *id001
 - type: domain_suffix
   value: claude.ai
@@ -85,10 +100,103 @@ rules:
   value: claude.com
   sources: *id001
 - type: domain_suffix
+  value: claudemcpclient.com
+  sources: *id001
+- type: domain_suffix
+  value: claudemcpcontent.com
+  sources: *id001
+- type: domain_suffix
+  value: claudeusercontent.com
+  sources: *id001
+- type: domain_suffix
+  value: clawhub.ai
+  sources: *id001
+- type: domain_suffix
   value: clipdrop.co
   sources: *id001
 - type: domain_suffix
+  value: cloudaicompanion.googleapis.com
+  sources: *id001
+- type: domain_suffix
   value: cloudcode-pa.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: codeium.com
+  sources: *id001
+- type: domain_suffix
+  value: codeiumdata.com
+  sources: *id001
+- type: domain_suffix
+  value: coderabbit.ai
+  sources: *id001
+- type: domain_suffix
+  value: coderabbit.gallery.vsassets.io
+  sources: *id001
+- type: domain_suffix
+  value: cohere.ai
+  sources: *id001
+- type: domain_suffix
+  value: cohere.com
+  sources: *id001
+- type: domain_suffix
+  value: comfy.org
+  sources: *id001
+- type: domain_suffix
+  value: comfyci.org
+  sources: *id001
+- type: domain_suffix
+  value: comfyregistry.org
+  sources: *id001
+- type: domain_suffix
+  value: copilot-proxy.githubusercontent.com
+  sources: *id001
+- type: domain_suffix
+  value: copilot-stg.com
+  sources: *id001
+- type: domain_suffix
+  value: copilot-telemetry-service.githubusercontent.com
+  sources: *id001
+- type: domain_suffix
+  value: copilot-telemetry.githubusercontent.com
+  sources: *id001
+- type: domain_suffix
+  value: copilot-workspace.githubnext.com
+  sources: *id001
+- type: domain_suffix
+  value: copilot.cloud.microsoft
+  sources: *id001
+- type: domain_suffix
+  value: copilot.com
+  sources: *id001
+- type: domain_suffix
+  value: copilot.microsoft.com
+  sources: *id001
+- type: domain_suffix
+  value: copilotprodattachments.blob.core.windows.net
+  sources: *id001
+- type: domain_suffix
+  value: coze.com
+  sources: *id001
+- type: domain_suffix
+  value: crewai.com
+  sources: *id001
+- type: domain_suffix
+  value: crixet.com
+  sources: *id001
+- type: domain_suffix
+  value: cursor-cdn.com
+  sources: *id001
+- type: domain_suffix
+  value: cursor.com
+  sources: *id001
+- type: domain_suffix
+  value: cursor.sh
+  sources: *id001
+- type: domain_suffix
+  value: cursorapi.com
+  sources: *id001
+- type: domain_suffix
+  value: daily-cloudcode-pa.googleapis.com
   sources: *id001
 - type: domain_suffix
   value: deepmind.com
@@ -97,10 +205,52 @@ rules:
   value: deepmind.google
   sources: *id001
 - type: domain_suffix
+  value: deepwiki.com
+  sources: *id001
+- type: domain_suffix
+  value: deepwiki.org
+  sources: *id001
+- type: domain_suffix
+  value: devin.ai
+  sources: *id001
+- type: domain_suffix
+  value: diabrowser.com
+  sources: *id001
+- type: domain_suffix
+  value: diabrowser.engineering
+  sources: *id001
+- type: domain_suffix
   value: dify.ai
   sources: *id001
 - type: domain_suffix
-  value: g.ai
+  value: dola.com
+  sources: *id001
+- type: domain_suffix
+  value: dreamgen.com
+  sources: *id001
+- type: domain_suffix
+  value: duck.ai
+  sources: *id001
+- type: domain_suffix
+  value: elevenlabs.com
+  sources: *id001
+- type: domain_suffix
+  value: elevenlabs.io
+  sources: *id001
+- type: domain_suffix
+  value: envato-static.com
+  sources: *id001
+- type: domain_suffix
+  value: envato.com
+  sources: *id001
+- type: domain_suffix
+  value: envatousercontent.com
+  sources: *id001
+- type: domain_suffix
+  value: flow.google
+  sources: *id001
+- type: domain_suffix
+  value: gateway.ai.cloudflare.com
   sources: *id001
 - type: domain_suffix
   value: geller-pa.googleapis.com
@@ -112,25 +262,124 @@ rules:
   value: gemini.google.com
   sources: *id001
 - type: domain_suffix
+  value: gemini.gstatic.com
+  sources: *id001
+- type: domain_suffix
   value: generativeai.google
   sources: *id001
 - type: domain_suffix
   value: generativelanguage.googleapis.com
   sources: *id001
 - type: domain_suffix
+  value: githubcopilot.com
+  sources: *id001
+- type: domain_suffix
+  value: grazie.ai
+  sources: *id001
+- type: domain_suffix
+  value: grazie.aws.intellij.net
+  sources: *id001
+- type: domain_suffix
   value: grok.com
+  sources: *id001
+- type: domain_suffix
+  value: grok.x.com
+  sources: *id001
+- type: domain_suffix
+  value: grokipedia.com
   sources: *id001
 - type: domain_suffix
   value: groq.com
   sources: *id001
 - type: domain_suffix
+  value: h2o.ai
+  sources: *id001
+- type: domain_suffix
+  value: hf.co
+  sources: *id001
+- type: domain_suffix
+  value: hf.space
+  sources: *id001
+- type: domain_suffix
+  value: host.livekit.cloud
+  sources: *id001
+- type: domain_suffix
+  value: huggingface.co
+  sources: *id001
+- type: domain_suffix
   value: jasper.ai
+  sources: *id001
+- type: domain_suffix
+  value: jetbrains.ai
+  sources: *id001
+- type: domain_suffix
+  value: jules.google
+  sources: *id001
+- type: domain_suffix
+  value: jules.google.com
+  sources: *id001
+- type: domain_suffix
+  value: kimi.ai
+  sources: *id001
+- type: domain_suffix
+  value: kiro.dev
+  sources: *id001
+- type: domain_suffix
+  value: labs.google
+  sources: *id001
+- type: domain_suffix
+  value: labs.google.com
+  sources: *id001
+- type: domain_suffix
+  value: langchain.com
+  sources: *id001
+- type: domain_suffix
+  value: liveperson.net
+  sources: *id001
+- type: domain_suffix
+  value: lmstudio.ai
+  sources: *id001
+- type: domain_suffix
+  value: lovart.ai
+  sources: *id001
+- type: domain_suffix
+  value: lpsnmedia.net
   sources: *id001
 - type: domain_suffix
   value: makersuite.google.com
   sources: *id001
 - type: domain_suffix
+  value: manus.im
+  sources: *id001
+- type: domain_suffix
+  value: manuscdn.com
+  sources: *id001
+- type: domain_suffix
+  value: marscode.com
+  sources: *id001
+- type: domain_suffix
   value: meta.ai
+  sources: *id001
+- type: domain_suffix
+  value: midjourney.com
+  sources: *id001
+- type: domain_suffix
+  value: minimax.io
+  sources: *id001
+- type: domain_suffix
+  value: mistral.ai
+  sources: *id001
+- type: domain_suffix
+  value: moonshot.ai
+  sources: *id001
+- type: domain_suffix
+  value: mozilla.ai
+  sources: *id001
+- type: domain_suffix
+  value: notebook.google.com
+  sources: *id001
+- type: domain_suffix
+  value: notebooklm-pa.googleapis.com
   sources: *id001
 - type: domain_suffix
   value: notebooklm.google
@@ -139,33 +388,171 @@ rules:
   value: notebooklm.google.com
   sources: *id001
 - type: domain_suffix
+  value: notebooklm.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: notegpt.io
+  sources: *id001
+- type: domain_suffix
+  value: novelai.net
+  sources: *id001
+- type: domain_suffix
+  value: o33249.ingest.sentry.io
+  sources: *id001
+- type: domain_suffix
   value: oaistatic.com
+  sources: *id001
+- type: domain_suffix
+  value: oaistatsig.com
+  sources: *id001
+- type: domain_suffix
+  value: oaiusercontent.com
+  sources: *id001
+- type: domain_suffix
+  value: ollama.com
+  sources: *id001
+- type: domain_suffix
+  value: opal.google
+  sources: *id001
+- type: domain_suffix
+  value: opal.google.com
+  sources: *id001
+- type: domain_suffix
+  value: openai.com
+  sources: *id001
+- type: domain_suffix
+  value: openai.com.cdn.cloudflare.net
+  sources: *id001
+- type: domain_suffix
+  value: openai.qualtrics.com
+  sources: *id001
+- type: domain_suffix
+  value: openaiapi-site.azureedge.net
+  sources: *id001
+- type: domain_suffix
+  value: openaiassets.blob.core.windows.net
+  sources: *id001
+- type: domain_suffix
+  value: openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+  sources: *id001
+- type: domain_suffix
+  value: openaicom.imgix.net
+  sources: *id001
+- type: domain_suffix
+  value: openaicomproductionae4b.blob.core.windows.net
   sources: *id001
 - type: domain_suffix
   value: openart.ai
   sources: *id001
 - type: domain_suffix
+  value: openclaw.ai
+  sources: *id001
+- type: domain_suffix
+  value: openrouter.ai
+  sources: *id001
+- type: domain_suffix
+  value: openspec.dev
+  sources: *id001
+- type: domain_suffix
+  value: oystermercury.top
+  sources: *id001
+- type: domain_suffix
   value: perplexity.ai
+  sources: *id001
+- type: domain_suffix
+  value: perplexity.com
+  sources: *id001
+- type: domain_suffix
+  value: plannotator.ai
   sources: *id001
 - type: domain_suffix
   value: poe.com
   sources: *id001
 - type: domain_suffix
+  value: poecdn.net
+  sources: *id001
+- type: domain_suffix
+  value: ppl-ai-file-upload.s3.amazonaws.com
+  sources: *id001
+- type: domain_suffix
+  value: pplx-res.cloudinary.com
+  sources: *id001
+- type: domain_suffix
+  value: pplx.ai
+  sources: *id001
+- type: domain_suffix
   value: proactivebackend-pa.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: production-openaicom-storage.azureedge.net
+  sources: *id001
+- type: domain_suffix
+  value: qoder.com
+  sources: *id001
+- type: domain_suffix
+  value: robinfrontend-pa.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: servd-anthropic-website.b-cdn.net
+  sources: *id001
+- type: domain_suffix
+  value: sider.ai
   sources: *id001
 - type: domain_suffix
   value: sora.com
   sources: *id001
 - type: domain_suffix
+  value: spicywriter.com
+  sources: *id001
+- type: domain_suffix
+  value: stitch.withgoogle.com
+  sources: *id001
+- type: domain_suffix
+  value: talkai.info
+  sources: *id001
+- type: domain_suffix
+  value: tapnow.ai
+  sources: *id001
+- type: domain_suffix
+  value: themeforest.net
+  sources: *id001
+- type: domain_suffix
+  value: trae.ai
+  sources: *id001
+- type: domain_suffix
+  value: tripo3d.ai
+  sources: *id001
+- type: domain_suffix
+  value: turn.livekit.cloud
+  sources: *id001
+- type: domain_suffix
+  value: webchannel-alkalimakersuite-pa.clients6.google.com
+  sources: *id001
+- type: domain_suffix
+  value: windsurf.build
+  sources: *id001
+- type: domain_suffix
+  value: windsurf.com
+  sources: *id001
+- type: domain_suffix
   value: x.ai
+  sources: *id001
+- type: domain_suffix
+  value: youmind.ai
+  sources: *id001
+- type: domain_suffix
+  value: youmind.com
+  sources: *id001
+- type: domain_suffix
+  value: youmind.site
   sources: *id001
 metadata:
   priority: high
   confidence: high
-  last_updated: '2026-08-27T04:43:08.900393+00:00'
+  last_updated: '2026-08-28T13:11:57.090863+00:00'
   notes: Generated by normalize.py V1.1
   stats:
-    domain_count: 50
+    domain_count: 179
     ip_count: 0
-    total: 50
-canonical_source: sukkaw
+    total: 179
+canonical_source: metacubex

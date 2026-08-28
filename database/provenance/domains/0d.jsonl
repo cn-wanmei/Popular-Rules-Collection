@@ -998,13 +998,15 @@
 {"d":"lanternal.com","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"savethedate.foo","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"youtube.is","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
-{"d":"hikunpeng.com","s":[0,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"hikunpeng.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"idonguapi.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"myhuaweicloud-obs.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
 {"d":"cloudsuqian.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"jdcloud-api.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"zgvmxma.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"microsoft.net","s":[0,2,4,5,6,7],"r":[96,119],"t":"domain_suffix"}
 {"d":"msminico.cn","s":[0,5,6,7],"r":[96],"t":"domain_suffix"}
-{"d":"netflixdnstest2.com","s":[0,2,4,5,7],"r":[100,119],"t":"domain_suffix"}
+{"d":"netflixdnstest2.com","s":[0,2,4,5,6,7],"r":[100,119],"t":"domain_suffix"}
 {"d":"mingyuanfund.com","s":[0,6],"r":[35,114],"t":"domain_suffix"}
 {"d":"animetorrents.me","s":[0,6],"r":[35,118],"t":"domain_suffix"}
 {"d":"rbxcdn.com","s":[2,4,5,6],"r":[119,123],"t":"domain_suffix"}
@@ -1939,7 +1941,6 @@
 {"d":"mobeehome.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"molibaike.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"my-cpaas.com","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"myhuaweicloud-obs.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"newkunhua.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"nhzhaopin.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"nineya.com","s":[0,6],"r":[35],"t":"domain_suffix"}

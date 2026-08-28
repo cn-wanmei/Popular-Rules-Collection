@@ -1,43 +1,43 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-28T12:34:02.568427+00:00",
+  "generated_at": "2026-08-28T13:25:29.632151+00:00",
   "date": "2026-08-28",
   "sources": [
     {
       "id": "blackmatrix7",
       "enabled": true,
       "priority": 95,
-      "rules_declared": 140,
-      "files_ok": 140,
+      "rules_declared": 128,
+      "files_ok": 128,
       "files_failed": 0,
       "health_status": "healthy",
       "lifecycle": "active",
-      "last_success": "2026-08-28T12:13:58.369169+00:00",
-      "last_attempt": "2026-08-28T12:13:58.369151+00:00"
+      "last_success": "2026-08-28T13:09:03.386357+00:00",
+      "last_attempt": "2026-08-28T13:09:03.386340+00:00"
     },
     {
       "id": "metacubex",
       "enabled": true,
       "priority": 90,
-      "rules_declared": 57,
-      "files_ok": 57,
+      "rules_declared": 63,
+      "files_ok": 63,
       "files_failed": 0,
       "health_status": "healthy",
       "lifecycle": "active",
-      "last_success": "2026-08-28T12:14:09.463663+00:00",
-      "last_attempt": "2026-08-28T12:14:09.463646+00:00"
+      "last_success": "2026-08-28T13:09:09.932348+00:00",
+      "last_attempt": "2026-08-28T13:09:09.932332+00:00"
     },
     {
       "id": "v2fly",
       "enabled": true,
       "priority": 85,
-      "rules_declared": 51,
-      "files_ok": 51,
+      "rules_declared": 52,
+      "files_ok": 52,
       "files_failed": 0,
       "health_status": "healthy",
       "lifecycle": "active",
-      "last_success": "2026-08-28T12:14:15.705326+00:00",
-      "last_attempt": "2026-08-28T12:14:15.705310+00:00"
+      "last_success": "2026-08-28T13:09:17.505741+00:00",
+      "last_attempt": "2026-08-28T13:09:17.505724+00:00"
     },
     {
       "id": "dler",
@@ -48,8 +48,8 @@
       "files_failed": 0,
       "health_status": "healthy",
       "lifecycle": "active",
-      "last_success": "2026-08-28T12:14:17.776846+00:00",
-      "last_attempt": "2026-08-28T12:14:17.776830+00:00"
+      "last_success": "2026-08-28T13:09:19.530240+00:00",
+      "last_attempt": "2026-08-28T13:09:19.530223+00:00"
     }
   ],
   "intentional_unmaterialized": {

@@ -975,7 +975,7 @@
 {"d":"zzkls.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zzzjkf.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"adobecontent.io","s":[0,2,4,5],"r":[5,119],"t":"domain_suffix"}
-{"d":"openart.ai","s":[2,4,7],"r":[6,8,70,119],"t":"domain_suffix"}
+{"d":"openart.ai","s":[2,4,6,7],"r":[6,8,70,119],"t":"domain_suffix"}
 {"d":"airbnb.fr","s":[2,4,5,6],"r":[7,119],"t":"domain_suffix"}
 {"d":"airbnb.pt","s":[2,4,5,6],"r":[7,119],"t":"domain_suffix"}
 {"d":"43.242.168.0/22","s":[0,5,6],"r":[10],"t":"ip_cidr"}
@@ -990,7 +990,7 @@
 {"d":"192.35.50.0/24","s":[0,5,6,7],"r":[16],"t":"ip_cidr"}
 {"d":"azurestaticapps.net","s":[0,2,4,5,6,7],"r":[21,96,119],"t":"domain_suffix"}
 {"d":"tradaquan.com","s":[0,5,6],"r":[22,35],"t":"domain_suffix"}
-{"d":"amemv.net","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
+{"d":"amemv.net","s":[0,5,6,7],"r":[31,35,56],"t":"domain_suffix"}
 {"d":"byte008.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"feishumeetings.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"larksuiteimg-boe.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
@@ -998,7 +998,7 @@
 {"d":"volcecr.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"volciad.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"volcspaceeduc.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
-{"d":"woaihuoshan.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
+{"d":"woaihuoshan.com","s":[0,5,6,7],"r":[31,35,56],"t":"domain_suffix"}
 {"d":"cloudflareok.com","s":[0,2,4,5,6],"r":[40,119],"t":"domain_suffix"}
 {"d":"brew.sh","s":[0,2,4,6],"r":[48,119],"t":"domain_suffix"}
 {"d":"github-production-user-asset-6210df.s3.amazonaws.com","s":[0,2,4,5,6,7],"r":[48,71,96,119],"t":"domain_suffix"}
@@ -1010,7 +1010,9 @@
 {"d":"fasebokk.com","s":[0,2,4,5,6],"r":[64,119],"t":"domain_suffix"}
 {"d":"scholar.google.cz","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"youtube.soy","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
-{"d":"myhwclouds.cn","s":[0],"r":[80],"t":"domain_suffix"}
+{"d":"cdnhwc10.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"myhuaweicloud-custom.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"myhwclouds.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"icbcmy.com","s":[0,6],"r":[35,83],"t":"domain_suffix"}
 {"d":"mvmaster.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"pxtzirma.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
@@ -2006,7 +2008,6 @@
 {"d":"moetu.org","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"mulyclub.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"mydor.com","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"myhuaweicloud-custom.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"mysticalcard.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"myunke.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"mzfile.com","s":[0,6],"r":[35],"t":"domain_suffix"}

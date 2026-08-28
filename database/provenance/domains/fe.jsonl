@@ -938,7 +938,7 @@
 {"d":"gmnetworks.net","s":[0,2,4,5,6,7],"r":[16,119],"t":"domain_suffix"}
 {"d":"icloudo.de","s":[0,2,4,5,6,7],"r":[16,84,119],"t":"domain_suffix"}
 {"d":"ipad.host","s":[0,2,4,5,6,7],"r":[16,119],"t":"domain_suffix"}
-{"d":"huoshanxiaoshipin.cn","s":[0,5,6],"r":[31],"t":"domain_suffix"}
+{"d":"huoshanxiaoshipin.cn","s":[0,5,6,7],"r":[31,56],"t":"domain_suffix"}
 {"d":"pglstatp-toutiao-b.com","s":[0,1,2,3,4,5,6],"r":[4,31,35],"t":"domain_suffix"}
 {"d":"toutiao12.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"volcdsagslb.net","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
@@ -953,7 +953,7 @@
 {"d":"gvt0.com","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"thinkwithgoogle.com","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"youtube.com.pe","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
-{"d":"pmallstore.com","s":[0,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"pmallstore.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
 {"d":"139.215.187.0/24","s":[0],"r":[91],"t":"ip_cidr"}
 {"d":"microsoft-ppe.com","s":[0,2,4,5,6,7],"r":[96,119],"t":"domain_suffix"}
 {"d":"vsallin.net","s":[0,2,4,5,6,7],"r":[96,119],"t":"domain_suffix"}

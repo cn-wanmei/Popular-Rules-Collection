@@ -893,8 +893,9 @@
 {"d":"zv.bodleanarcho.com","s":[1],"r":[3],"t":"domain_suffix"}
 {"d":"zycrian.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zzkuxvnjwcghi.space","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
-{"d":"gemini.google.com","s":[0,4,7],"r":[6,8,69],"t":"domain_suffix"}
-{"d":"githubcopilot.com","s":[0,2,4,5,6,7],"r":[8,48,70,71,96,119],"t":"domain_suffix"}
+{"d":"gemini.google.com","s":[0,6,7],"r":[6,8,69],"t":"domain_suffix"}
+{"d":"githubcopilot.com","s":[0,2,4,5,6,7],"r":[6,8,48,70,71,96,119],"t":"domain_suffix"}
+{"d":"pplx-res.cloudinary.com","s":[2,4,5,6],"r":[6,112,119],"t":"domain_suffix"}
 {"d":"alibabacloud.com.sg","s":[0,2,4,5,6],"r":[10,11,35,119],"t":"domain_suffix"}
 {"d":"110.173.192.0/19","s":[0,5,6],"r":[10],"t":"ip_cidr"}
 {"d":"weather-map2.apple.com","s":[0,5,6,7],"r":[16],"t":"domain_suffix"}
@@ -925,6 +926,7 @@
 {"d":"119.235.236.0/23","s":[0,5,6],"r":[64,92,98],"t":"ip_cidr"}
 {"d":"g.page","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"gvt5.com","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
+{"d":"dbankcloud.ru","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
 {"d":"360buy.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"chicalot.cn","s":[0,6],"r":[88],"t":"domain_suffix"}
 {"d":"17l18w9s1z.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
@@ -934,7 +936,6 @@
 {"d":"hotmail.com","s":[0,2,4,5,6,7],"r":[96,119],"t":"domain_suffix"}
 {"d":"mojang.com","s":[0,2,4,5,6,7],"r":[96,97,119,161],"t":"domain_suffix"}
 {"d":"103.126.92.132/31","s":[0,6],"r":[99],"t":"ip_cidr"}
-{"d":"pplx-res.cloudinary.com","s":[2,4,5,6],"r":[112,119],"t":"domain_suffix"}
 {"d":"stun.alpirsbacher.de","s":[0],"r":[136],"t":"domain"}
 {"d":"chatwrite.net","s":[0,5,6],"r":[139],"t":"domain_suffix"}
 {"d":"xiangrikuijianzhan.com","s":[0,5,6],"r":[35,139],"t":"domain_suffix"}
@@ -1712,7 +1713,6 @@
 {"d":"daanjiexi.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"dayehome.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"dayuntongzhou.com","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"dbankcloud.ru","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"deeptrip.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"dexinhr.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"dexxg.com","s":[0,6],"r":[35],"t":"domain_suffix"}

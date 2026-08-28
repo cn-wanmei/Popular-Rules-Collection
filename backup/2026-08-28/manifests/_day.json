@@ -1,16 +1,16 @@
 {
   "date": "2026-08-28",
-  "timestamp": "2026-08-28T12:14:17.777237+00:00",
+  "timestamp": "2026-08-28T13:09:19.530502+00:00",
   "registry_version": 3,
   "sources": [
     {
       "source": "blackmatrix7",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T12:13:58.369174+00:00",
-      "files_ok": 140,
+      "timestamp": "2026-08-28T13:09:03.386361+00:00",
+      "files_ok": 128,
       "files_failed": 0,
       "empty_blocked": 0,
-      "rules_declared": 140,
+      "rules_declared": 128,
       "files": [
         {
           "name": "Clash_Apple.yaml",
@@ -160,26 +160,6 @@
           "local": "sources/blackmatrix7/Clash_ChinaMax_Domain.yaml",
           "size": 2319798,
           "sha256": "3da5e5eab4245ccde1666921bc65cbba4e159ef6330c569f8057f53a7d169989",
-          "status": "ok"
-        },
-        {
-          "name": "Surge_Apple.list",
-          "path": "rule/Surge/Apple/Apple.list",
-          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list",
-          "service": "apple",
-          "local": "sources/blackmatrix7/Surge_Apple.list",
-          "size": 1805,
-          "sha256": "ff61400b802f0189d857acd9253e8871206e9d2a07457d2f8d54b84892d7ef70",
-          "status": "ok"
-        },
-        {
-          "name": "Surge_Google.list",
-          "path": "rule/Surge/Google/Google.list",
-          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list",
-          "service": "google",
-          "local": "sources/blackmatrix7/Surge_Google.list",
-          "size": 19985,
-          "sha256": "4b08fd3ef47e2668d2a4bb79777773e2408394fdda60ac36014e1a4d3456ba6f",
           "status": "ok"
         },
         {
@@ -560,16 +540,6 @@
           "local": "sources/blackmatrix7/Clash_STUN.yaml",
           "size": 10845,
           "sha256": "c96aea7a9d335ffd1d1425aaf7145e47e4c44ac239190f4b06af5441b88841f9",
-          "status": "ok"
-        },
-        {
-          "name": "Clash_ParamountPlus.yaml",
-          "path": "rule/Clash/ParamountPlus/ParamountPlus.yaml",
-          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ParamountPlus/ParamountPlus.yaml",
-          "service": "paramountplus",
-          "local": "sources/blackmatrix7/Clash_ParamountPlus.yaml",
-          "size": 496,
-          "sha256": "5985fa97cf0ccee3ac9b428c0d3ddc63bcfa9713a77165cde328156c33cec199",
           "status": "ok"
         },
         {
@@ -1193,56 +1163,6 @@
           "status": "ok"
         },
         {
-          "name": "Clash_Vimeo.yaml",
-          "path": "rule/Clash/Vimeo/Vimeo.yaml",
-          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Vimeo/Vimeo.yaml",
-          "service": "vimeo",
-          "local": "sources/blackmatrix7/Clash_Vimeo.yaml",
-          "size": 666,
-          "sha256": "1cf73f88cce78eb49d769d919978954fac9d9643143ce2718c4dd2e2542fc360",
-          "status": "ok"
-        },
-        {
-          "name": "Clash_Dailymotion.yaml",
-          "path": "rule/Clash/Dailymotion/Dailymotion.yaml",
-          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Dailymotion/Dailymotion.yaml",
-          "service": "dailymotion",
-          "local": "sources/blackmatrix7/Clash_Dailymotion.yaml",
-          "size": 316,
-          "sha256": "88f6cab1233364c09b7f10e38ba9e945986fd312bc55077ce9c64afed1ec6793",
-          "status": "ok"
-        },
-        {
-          "name": "Clash_Deezer.yaml",
-          "path": "rule/Clash/Deezer/Deezer.yaml",
-          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Deezer/Deezer.yaml",
-          "service": "deezer",
-          "local": "sources/blackmatrix7/Clash_Deezer.yaml",
-          "size": 221,
-          "sha256": "975ba76d8787401c693810ecab8997dc3adbff89129d31e60cb704725c42d427",
-          "status": "ok"
-        },
-        {
-          "name": "Clash_Peacock.yaml",
-          "path": "rule/Clash/Peacock/Peacock.yaml",
-          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Peacock/Peacock.yaml",
-          "service": "peacock",
-          "local": "sources/blackmatrix7/Clash_Peacock.yaml",
-          "size": 197,
-          "sha256": "9ec680f8e8782b755f0c5ed8b36da216feb4d6c5438656440484272f27d28372",
-          "status": "ok"
-        },
-        {
-          "name": "Clash_YouTubeMusic.yaml",
-          "path": "rule/Clash/YouTubeMusic/YouTubeMusic.yaml",
-          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTubeMusic/YouTubeMusic.yaml",
-          "service": "youtubemusic",
-          "local": "sources/blackmatrix7/Clash_YouTubeMusic.yaml",
-          "size": 192,
-          "sha256": "226e55117e8363b1ee23e1777b5254d5767503dc0ec9ae94c283c04ead784786",
-          "status": "ok"
-        },
-        {
           "name": "Clash_Huawei.yaml",
           "path": "rule/Clash/Huawei/Huawei.yaml",
           "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Huawei/Huawei.yaml",
@@ -1283,26 +1203,6 @@
           "status": "ok"
         },
         {
-          "name": "Clash_KugouKuwo.yaml",
-          "path": "rule/Clash/KugouKuwo/KugouKuwo.yaml",
-          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/KugouKuwo/KugouKuwo.yaml",
-          "service": "kugoukuwo",
-          "local": "sources/blackmatrix7/Clash_KugouKuwo.yaml",
-          "size": 3236,
-          "sha256": "747eaadb1eb8f5b6bf71d8062ab1764858f357c67c4edc49b3b11970014b4b66",
-          "status": "ok"
-        },
-        {
-          "name": "Clash_Naver.yaml",
-          "path": "rule/Clash/Naver/Naver.yaml",
-          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Naver/Naver.yaml",
-          "service": "naver",
-          "local": "sources/blackmatrix7/Clash_Naver.yaml",
-          "size": 2015,
-          "sha256": "f3f58a73dd023c0f9bab0a5568a3cb428679baee33bd1a86cc9dcea588593a94",
-          "status": "ok"
-        },
-        {
           "name": "Clash_Wikipedia.yaml",
           "path": "rule/Clash/Wikipedia/Wikipedia.yaml",
           "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Wikipedia/Wikipedia.yaml",
@@ -1313,16 +1213,6 @@
           "status": "ok"
         },
         {
-          "name": "Clash_Sina.yaml",
-          "path": "rule/Clash/Sina/Sina.yaml",
-          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Sina/Sina.yaml",
-          "service": "sina",
-          "local": "sources/blackmatrix7/Clash_Sina.yaml",
-          "size": 3435,
-          "sha256": "033124117b8a8d380c731fa5c62a741f91643fc6a2ad7e9f52828a9d037e6163",
-          "status": "ok"
-        },
-        {
           "name": "Clash_BBC.yaml",
           "path": "rule/Clash/BBC/BBC.yaml",
           "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BBC/BBC.yaml",
@@ -1330,16 +1220,6 @@
           "local": "sources/blackmatrix7/Clash_BBC.yaml",
           "size": 1160,
           "sha256": "c1b8d93c30bae6083a1a1167785b80b8896cbd3bbf32115958fc11b8e6828cd4",
-          "status": "ok"
-        },
-        {
-          "name": "Clash_Emby.yaml",
-          "path": "rule/Clash/Emby/Emby.yaml",
-          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Emby/Emby.yaml",
-          "service": "emby",
-          "local": "sources/blackmatrix7/Clash_Emby.yaml",
-          "size": 1892,
-          "sha256": "bd2b9c2a96c12aba29a522246f7a51ae98a78731a0df805f01d8d4f0c98df519",
           "status": "ok"
         },
         {
@@ -1419,11 +1299,11 @@
     {
       "source": "metacubex",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T12:14:09.463667+00:00",
-      "files_ok": 57,
+      "timestamp": "2026-08-28T13:09:09.932352+00:00",
+      "files_ok": 63,
       "files_failed": 0,
       "empty_blocked": 0,
-      "rules_declared": 57,
+      "rules_declared": 63,
       "files": [
         {
           "name": "geosite_alibaba.list",
@@ -1994,6 +1874,66 @@
           "size": 12383,
           "sha256": "c2bf9920c87188b6e386f3c7404db15ecdb7709e2a14a9ebacccc976eb3aaf1f",
           "status": "ok"
+        },
+        {
+          "name": "geosite_huawei.list",
+          "path": "geo/geosite/huawei.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/huawei.list",
+          "service": "huawei",
+          "local": "sources/metacubex/geosite_huawei.list",
+          "size": 6355,
+          "sha256": "db2bc2f2adc13c0f203a4f6abb41886036ccf6d1bf27d68f1ea43c8e22564133",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_douyin.list",
+          "path": "geo/geosite/douyin.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/douyin.list",
+          "service": "douyin",
+          "local": "sources/metacubex/geosite_douyin.list",
+          "size": 1208,
+          "sha256": "b3cf1b6906d1f45454599955e681d4980d7434411f1d976d37550eefb6c9066d",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_openai.list",
+          "path": "geo/geosite/openai.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/openai.list",
+          "service": "openai",
+          "local": "sources/metacubex/geosite_openai.list",
+          "size": 522,
+          "sha256": "9c3c755ad42fa75196e5d37705d0d5bfff5f60bc0d9a1f017272e70eafde7645",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_anthropic.list",
+          "path": "geo/geosite/anthropic.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/anthropic.list",
+          "service": "anthropic",
+          "local": "sources/metacubex/geosite_anthropic.list",
+          "size": 153,
+          "sha256": "0155b69f43c57d61fa8152ae3372233b0660affd6d2b2c01315290f53a311b7f",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_netflix.list",
+          "path": "geo/geosite/netflix.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.list",
+          "service": "netflix",
+          "local": "sources/metacubex/geosite_netflix.list",
+          "size": 452,
+          "sha256": "980ec18a1c566850622523310feb9ed38cd562c82e697c3da7f756b816f337d8",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_category_ai.list",
+          "path": "geo/geosite/category-ai-!cn.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-%21cn.list",
+          "service": "ai",
+          "local": "sources/metacubex/geosite_category_ai.list",
+          "size": 3431,
+          "sha256": "f8de16d4486addb5f616137d771945c8c9562f61d92d906b0eb90dfd8e976d23",
+          "status": "ok"
         }
       ],
       "registry_priority": 90,
@@ -2002,11 +1942,11 @@
     {
       "source": "v2fly",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T12:14:15.705330+00:00",
-      "files_ok": 51,
+      "timestamp": "2026-08-28T13:09:17.505744+00:00",
+      "files_ok": 52,
       "files_failed": 0,
       "empty_blocked": 0,
-      "rules_declared": 51,
+      "rules_declared": 52,
       "files": [
         {
           "name": "v2fly_deepseek",
@@ -2517,6 +2457,16 @@
           "size": 104,
           "sha256": "ffc054b4b5bb01aa9e25c23444282740f0befea2b2fc8eb3e8ad53156a632757",
           "status": "ok"
+        },
+        {
+          "name": "v2fly_huawei",
+          "path": "data/huawei",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/huawei",
+          "service": "huawei",
+          "local": "sources/v2fly/v2fly_huawei",
+          "size": 479,
+          "sha256": "5e2aa1cc680fea6594c17cf9e26111fe35be8283332e4dc2c3c1917aca335080",
+          "status": "ok"
         }
       ],
       "registry_priority": 85,
@@ -2525,7 +2475,7 @@
     {
       "source": "dler",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T12:14:17.776851+00:00",
+      "timestamp": "2026-08-28T13:09:19.530244+00:00",
       "files_ok": 20,
       "files_failed": 0,
       "empty_blocked": 0,

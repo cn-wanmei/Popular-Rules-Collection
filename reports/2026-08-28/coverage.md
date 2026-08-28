@@ -13,7 +13,7 @@
 | adblock | Y (402068) | Y (47) | 7/7 |  |
 | adblock-light | Y (84212) | n (0) | 7/7 | DEFERRED_PROFILE |
 | adblock-pro | Y (452190) | n (0) | 7/7 | DEFERRED_PROFILE |
-| adobe | Y (273) | n (0) | 7/7 |  |
+| adobe | Y (279) | n (0) | 7/7 |  |
 | ai | Y (98) | n (0) | 7/7 |  |
 | airbnb | Y (166) | n (0) | 7/7 |  |
 | aisuite | Y (191) | n (0) | 7/7 |  |
@@ -22,15 +22,15 @@
 | alibabacloud | Y (200) | n (0) | 7/7 |  |
 | alipay | Y (42) | n (0) | 7/7 |  |
 | amap | Y (32) | n (0) | 7/7 |  |
-| amazon | Y (388) | Y (15) | 7/7 |  |
+| amazon | Y (531) | Y (15) | 7/7 |  |
 | amazonaws | n (0) | n (0) | 0/7 | COVERED_BY_AGGREGATE |
 | anthropic | Y (16) | n (0) | 7/7 |  |
-| apple | Y (80) | Y (13) | 7/7 |  |
+| apple | Y (3829) | Y (13) | 7/7 |  |
 | applemusic | Y (18) | n (0) | 7/7 |  |
 | appletv | Y (14) | n (0) | 7/7 |  |
 | applications | n (0) | n (0) | 0/7 | NO_UPSTREAM |
-| atlassian | Y (10) | n (0) | 7/7 |  |
-| aws | Y (154) | n (0) | 7/7 |  |
+| atlassian | Y (22) | n (0) | 7/7 |  |
+| aws | Y (155) | n (0) | 7/7 |  |
 | azure | Y (302) | n (0) | 7/7 |  |
 | baidu | Y (648) | n (0) | 7/7 |  |
 | battlenet | Y (101) | Y (23) | 7/7 |  |
@@ -51,7 +51,7 @@
 | chinatelecom | Y (166) | n (0) | 7/7 |  |
 | chinaunicom | Y (67) | Y (3725) | 7/7 |  |
 | claude | Y (6) | n (0) | 7/7 |  |
-| cloudflare | Y (164) | Y (22) | 7/7 |  |
+| cloudflare | Y (174) | Y (22) | 7/7 |  |
 | cmb | Y (76) | n (0) | 7/7 |  |
 | copilot | Y (95) | Y (2) | 7/7 |  |
 | ctrip | Y (58) | n (0) | 7/7 |  |
@@ -59,15 +59,15 @@
 | dailymotion | Y (10) | n (0) | 7/7 |  |
 | deepseek | Y (2) | n (0) | 7/7 |  |
 | deezer | Y (4) | n (0) | 7/7 |  |
-| developer | Y (140) | n (0) | 7/7 |  |
+| developer | Y (1360) | n (0) | 7/7 |  |
 | dewu | Y (90) | n (0) | 7/7 |  |
 | didi | Y (50) | n (0) | 7/7 |  |
-| digitalocean | Y (8) | n (0) | 7/7 |  |
+| digitalocean | Y (12) | n (0) | 7/7 |  |
 | dingtalk | n (0) | n (0) | 0/7 | COVERED_BY_AGGREGATE |
 | discord | Y (60) | n (0) | 7/7 |  |
 | discoveryplus | n (0) | n (0) | 0/7 | NO_UPSTREAM |
 | disney | Y (350) | n (0) | 7/7 |  |
-| docker | Y (14) | n (0) | 7/7 |  |
+| docker | Y (22) | n (0) | 7/7 |  |
 | doubao | Y (64) | n (0) | 7/7 |  |
 | douyin | Y (26) | n (0) | 7/7 |  |
 | dropbox | Y (34) | n (0) | 7/7 |  |
@@ -85,9 +85,9 @@
 | gcp | n (0) | n (0) | 0/7 | NO_UPSTREAM |
 | gemini | Y (23) | n (0) | 7/7 |  |
 | gfw | Y (4387) | n (0) | 7/7 |  |
-| github | Y (128) | n (0) | 7/7 |  |
+| github | Y (164) | n (0) | 7/7 |  |
 | gitlab | Y (12) | n (0) | 7/7 |  |
-| google | Y (1380) | Y (5) | 7/7 |  |
+| google | Y (2304) | Y (5) | 7/7 |  |
 | googledrive | n (0) | n (0) | 0/7 | COVERED_BY_AGGREGATE |
 | googlefcm | Y (56) | Y (26) | 7/7 |  |
 | groq | Y (2) | n (0) | 7/7 |  |
@@ -99,10 +99,10 @@
 | huggingface | Y (6) | n (0) | 7/7 |  |
 | hulu | Y (116) | n (0) | 7/7 |  |
 | icbc | Y (116) | n (0) | 7/7 |  |
-| icloud | Y (121) | n (0) | 7/7 |  |
+| icloud | Y (122) | n (0) | 7/7 |  |
 | instagram | Y (151) | n (0) | 7/7 |  |
 | iqiyi | Y (90) | Y (21) | 7/7 |  |
-| jetbrains | Y (28) | n (0) | 7/7 |  |
+| jetbrains | Y (50) | n (0) | 7/7 |  |
 | jingdong | Y (530) | n (0) | 7/7 |  |
 | kakaotalk | Y (24) | Y (6) | 7/7 |  |
 | kuaishou | Y (1356) | n (0) | 7/7 |  |
@@ -112,7 +112,7 @@
 | linkedin | Y (24) | n (0) | 7/7 |  |
 | meituan | Y (14) | n (0) | 7/7 |  |
 | messenger | Y (8) | n (0) | 7/7 |  |
-| microsoft | Y (1374) | n (0) | 7/7 |  |
+| microsoft | Y (1855) | n (0) | 7/7 |  |
 | minecraft | Y (12) | n (0) | 7/7 |  |
 | mistral | n (0) | n (0) | 0/7 | NO_UPSTREAM |
 | naver | Y (85) | Y (33) | 7/7 |  |
@@ -127,7 +127,7 @@
 | onedrive | Y (29) | n (0) | 7/7 |  |
 | openai | Y (86) | Y (2) | 7/7 |  |
 | oppo | Y (112) | n (0) | 7/7 |  |
-| oracle | Y (50) | n (0) | 7/7 |  |
+| oracle | Y (54) | n (0) | 7/7 |  |
 | origin | n (0) | n (0) | 0/7 | MAPS_TO |
 | paramountplus | Y (18) | n (0) | 7/7 |  |
 | paypal | Y (493) | n (0) | 7/7 |  |
@@ -142,7 +142,7 @@
 | proxy | Y (28217) | n (0) | 7/7 |  |
 | psbc | Y (6) | n (0) | 7/7 |  |
 | qq | n (0) | n (0) | 0/7 | COVERED_BY_AGGREGATE |
-| reddit | Y (16) | n (0) | 7/7 |  |
+| reddit | Y (30) | n (0) | 7/7 |  |
 | riotgames | Y (110) | n (0) | 7/7 |  |
 | roblox | Y (100) | n (0) | 7/7 |  |
 | rockstar | Y (10) | n (0) | 7/7 |  |
@@ -168,7 +168,7 @@
 | tencentvideo | Y (70) | Y (32) | 7/7 |  |
 | threads | Y (2) | n (0) | 7/7 |  |
 | tidal | Y (6) | n (0) | 7/7 |  |
-| tiktok | Y (108) | n (0) | 7/7 |  |
+| tiktok | Y (113) | n (0) | 7/7 |  |
 | tongcheng | Y (16) | n (0) | 7/7 |  |
 | trello | Y (4) | n (0) | 7/7 |  |
 | twitch | Y (29) | Y (12) | 7/7 |  |
@@ -191,7 +191,7 @@
 | xiaohongshu | Y (8) | n (0) | 7/7 |  |
 | xiaomi | Y (305) | Y (9) | 7/7 |  |
 | youku | Y (69) | Y (1) | 7/7 |  |
-| youtube | Y (364) | Y (3) | 7/7 |  |
+| youtube | Y (369) | Y (3) | 7/7 |  |
 | youtubemusic | Y (2) | n (0) | 7/7 |  |
 | zhihu | Y (9) | Y (5) | 7/7 |  |
 | zoom | Y (6) | n (0) | 7/7 |  |

@@ -892,6 +892,7 @@
 {"d":"zt1.me.zing.vn","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zusammenmitthule.de","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zxmkhbsmmuikc.online","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
+{"d":"ppl-ai-file-upload.s3.amazonaws.com","s":[2,4,5,6],"r":[6,112,119],"t":"domain_suffix"}
 {"d":"cdn.openaimerge.com","s":[7],"r":[8],"t":"domain"}
 {"d":"awsbraket.com","s":[0,2,4,5,6],"r":[14,20,119],"t":"domain_suffix"}
 {"d":"gspe19-cn-ssl.ls.apple.com","s":[0,5,6,7],"r":[16],"t":"domain_suffix"}
@@ -902,8 +903,8 @@
 {"d":"monsterbeatssydneyaustralia.com","s":[0,2,4,5,6,7],"r":[16,119],"t":"domain_suffix"}
 {"d":"17swan.com","s":[0,5,6],"r":[22,35],"t":"domain_suffix"}
 {"d":"yunjiasu-dns.com","s":[0,5,6],"r":[22,35],"t":"domain_suffix"}
-{"d":"betastar.cn","s":[0,5,6],"r":[31],"t":"domain_suffix"}
-{"d":"ihuoshanstatic.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
+{"d":"betastar.cn","s":[0,5,6,7],"r":[31,56],"t":"domain_suffix"}
+{"d":"ihuoshanstatic.com","s":[0,5,6,7],"r":[31,35,56],"t":"domain_suffix"}
 {"d":"livesaascdn.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"p6-ad-sign.byteimg.com","s":[0,1,2,3,4,5,6],"r":[4,31],"t":"domain_suffix"}
 {"d":"tiktokglobalshopv.com","s":[0,2,4,5,6,7],"r":[31,119,143],"t":"domain_suffix"}
@@ -925,8 +926,9 @@
 {"d":"youtube.com.uy","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
 {"d":"heroku.com","s":[0,2,4,6],"r":[78,119],"t":"domain_suffix"}
 {"d":"heroku.me","s":[0,2,4,6],"r":[78,119],"t":"domain_suffix"}
-{"d":"powerapp.io","s":[0,6],"r":[35,80],"t":"domain_suffix"}
-{"d":"speedvr.cn","s":[0],"r":[80],"t":"domain_suffix"}
+{"d":"powerapp.io","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"speedvr.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"tc3bl.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"kvrmicit.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"p24p75149p.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"ttvmexmk.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
@@ -941,7 +943,6 @@
 {"d":"wlxrs.com","s":[0,5,6,7],"r":[96],"t":"domain_suffix"}
 {"d":"nintendo-europe.com","s":[0,2,4],"r":[102,119],"t":"domain_suffix"}
 {"d":"anfutong.com","s":[0,2,4,7],"r":[110,119],"t":"domain_suffix"}
-{"d":"ppl-ai-file-upload.s3.amazonaws.com","s":[2,4,5,6],"r":[112,119],"t":"domain_suffix"}
 {"d":"leet-tracker.moe","s":[0],"r":[118],"t":"domain"}
 {"d":"stun.liveo.fr","s":[0],"r":[136],"t":"domain"}
 {"d":"2001:b28:f23d::/48","s":[0,5,7],"r":[138],"t":"ip_cidr6"}

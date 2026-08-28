@@ -852,12 +852,12 @@
 {"d":"dnsproxy.com.cn","s":[0,5,6],"r":[22],"t":"domain_suffix"}
 {"d":"bvglb.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"pangolin-lq.snssdk.com","s":[0,1,2,3,4,5,6],"r":[4,31],"t":"domain_suffix"}
-{"d":"wohst8.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
+{"d":"wohst8.com","s":[0,5,6,7],"r":[31,35,56],"t":"domain_suffix"}
 {"d":"almalinux.org","s":[0,2,4,6],"r":[48,119],"t":"domain_suffix"}
 {"d":"braveux.com","s":[0,2,4,6],"r":[48,119],"t":"domain_suffix"}
 {"d":"developers.facebook.com","s":[0,2,4,6],"r":[48,119],"t":"domain_suffix"}
 {"d":"strikingly.com","s":[0,2,4,6],"r":[48,119],"t":"domain_suffix"}
-{"d":"v5-dy-o-abtest.zjcdn.com","s":[0,7],"r":[56],"t":"domain"}
+{"d":"v5-dy-o-abtest.zjcdn.com","s":[0,6,7],"r":[56],"t":"domain"}
 {"d":"speedhunters.com","s":[0,2,4],"r":[58,119],"t":"domain_suffix"}
 {"d":"ebayt.com","s":[0,2,4,5],"r":[59,119],"t":"domain_suffix"}
 {"d":"faceobk.com","s":[0,2,4,5,6],"r":[64,119],"t":"domain_suffix"}
@@ -868,7 +868,7 @@
 {"d":"saynow.com","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"youtube.com.hk","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
 {"d":"hbogoasia.ph","s":[0,2,4],"r":[77,119],"t":"domain_suffix"}
-{"d":"cdnhwc1.com","s":[0,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"cdnhwc1.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
 {"d":"c052kzyp55.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"59.48.165.0/24","s":[0],"r":[91],"t":"ip_cidr"}
 {"d":"office.com","s":[0,2,4,5,6,7],"r":[96,119],"t":"domain_suffix"}

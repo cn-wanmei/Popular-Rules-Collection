@@ -842,6 +842,7 @@
 {"d":"zxcv1.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zxjnlsqprjjqo.space","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zynazcswjjssp.website","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
+{"d":"youmind.com","s":[2,4,6],"r":[6,70,119],"t":"domain_suffix"}
 {"d":"ialicdn.com","s":[0,5,6],"r":[10,35],"t":"domain_suffix"}
 {"d":"koubei.com","s":[0,5,6],"r":[10,35],"t":"domain_suffix"}
 {"d":"oss-cn-hongkong.aliyuncs.com","s":[0,5,6],"r":[10,11],"t":"domain_suffix"}
@@ -868,7 +869,9 @@
 {"d":"privacysandbox.com","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"hbogo.com","s":[0,2,4],"r":[77,119],"t":"domain_suffix"}
 {"d":"n0vadesktop.com","s":[0,2,4,6,7],"r":[35,79,119],"t":"domain_suffix"}
-{"d":"huaweicloudwaf.com","s":[0,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"cdnhwcqgw115.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"huaweicloudwaf.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"tzygd.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"123.66.30.0/24","s":[0],"r":[91],"t":"ip_cidr"}
 {"d":"msocdn.com","s":[0,2,4,5,6,7],"r":[96,119],"t":"domain_suffix"}
 {"d":"prodforza.blob.core.windows.net","s":[0,2,4,5,6,7],"r":[96,119],"t":"domain_suffix"}
@@ -1687,7 +1690,6 @@
 {"d":"brighost.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"bsxyzsdec.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"ccmodel.com","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"cdnhwcqgw115.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdsns.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"ceramicschina.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cewud.com","s":[0,6],"r":[35],"t":"domain_suffix"}
@@ -2067,7 +2069,6 @@
 {"d":"viber.com","s":[2,4],"r":[70,119],"t":"domain_suffix"}
 {"d":"wbrks.com","s":[2,4],"r":[70,119],"t":"domain_suffix"}
 {"d":"woeser.com","s":[2,4],"r":[70,119],"t":"domain_suffix"}
-{"d":"youmind.com","s":[2,4],"r":[70,119],"t":"domain_suffix"}
 {"d":"47news.jp","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"6-ar.com","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"66wwmm.com","s":[2,4],"r":[119],"t":"domain_suffix"}

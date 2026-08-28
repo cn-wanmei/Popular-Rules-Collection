@@ -860,7 +860,7 @@
 {"d":"218.95.139.0/24","s":[0],"r":[91],"t":"ip_cidr"}
 {"d":"nhncorp.jp","s":[0,2,4,5],"r":[92,98,119],"t":"domain_suffix"}
 {"d":"msproduct.download.prss.microsoft.com","s":[0,5,6,7],"r":[35,96],"t":"domain_suffix"}
-{"d":"(^|\\.)dualstack\\.ichnaea-web-.+\\.amazonaws\\.com$","s":[0,5,7],"r":[100],"t":"domain_regex"}
+{"d":"(^|\\.)dualstack\\.ichnaea-web-.+\\.amazonaws\\.com$","s":[0,5,6,7],"r":[100],"t":"domain_regex"}
 {"d":"notion.new","s":[0,2,4,5],"r":[103,119],"t":"domain_suffix"}
 {"d":"paypal","s":[0,7],"r":[110],"t":"domain_keyword"}
 {"d":"paypal-cash.com","s":[0,2,4,7],"r":[110,119],"t":"domain_suffix"}

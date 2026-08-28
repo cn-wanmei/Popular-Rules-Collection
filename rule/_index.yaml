@@ -1,4 +1,4 @@
-generated_at: '2026-08-28T12:35:03.900782+00:00'
+generated_at: '2026-08-28T13:26:17.178925+00:00'
 categories:
   '12306':
     display_name: '12306'
@@ -180,7 +180,7 @@ categories:
       name: AI
       path: rule/AI/AI
       service_type: aggregate
-      domains: 48
+      domains: 179
       ips: 0
     - id: aisuite
       name: AI-Suite
@@ -704,7 +704,7 @@ categories:
       name: Huawei
       path: rule/China/Huawei
       service_type: service
-      domains: 160
+      domains: 402
       ips: 0
     - id: iqiyi
       name: iQIYI
@@ -956,7 +956,7 @@ categories:
       name: Douyin
       path: rule/ByteDance/Douyin
       service_type: service
-      domains: 13
+      domains: 78
       ips: 0
   chinamobile:
     display_name: ChinaMobile

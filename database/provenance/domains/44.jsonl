@@ -895,7 +895,7 @@
 {"d":"zgqsc3shr.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"ziddu.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zu9srbxg0t.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
-{"d":"chat.openai.com.cdn.cloudflare.net","s":[0,5,7],"r":[8,42,106],"t":"domain"}
+{"d":"chat.openai.com.cdn.cloudflare.net","s":[0,5,6,7],"r":[8,42,106],"t":"domain"}
 {"d":"waa-pa.clients6.google.com","s":[7],"r":[8],"t":"domain"}
 {"d":"akamaistream.net","s":[0,2,4],"r":[9,119],"t":"domain_suffix"}
 {"d":"cn.alibabacloud.com","s":[0,5,6],"r":[10,11],"t":"domain_suffix"}
@@ -920,7 +920,7 @@
 {"d":"p.bstarstatic.com","s":[0,5,6,7],"r":[25,35],"t":"domain"}
 {"d":"bytedeliver.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"ecombdimg.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
-{"d":"hypercachenode.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
+{"d":"hypercachenode.com","s":[0,5,6,7],"r":[31,35,56],"t":"domain_suffix"}
 {"d":"sinf-test.net","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"zijieapi.cn","s":[0,5,6],"r":[31],"t":"domain_suffix"}
 {"d":"ctycdn.com","s":[0,6],"r":[35,37],"t":"domain_suffix"}
@@ -933,6 +933,7 @@
 {"d":"google.com.ni","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"google.ru","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"googlesverige.com","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
+{"d":"cdnhwcbni108.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
 {"d":"cloudyancheng.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"rgzxraiu.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"dreamspark.download.prss.microsoft.com","s":[0,5,6,7],"r":[35,96],"t":"domain_suffix"}
@@ -1768,7 +1769,6 @@
 {"d":"cctv-peiyin.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdliangwang.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdn.fun","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"cdnhwcbni108.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdzvan.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cencimeter.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cgwang.com","s":[0,6],"r":[35],"t":"domain_suffix"}

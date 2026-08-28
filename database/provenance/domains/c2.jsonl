@@ -858,6 +858,7 @@
 {"d":"zwbufziw6o4q92.s3.amazonaws.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zxyemuurmkjcel.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"adobelogin.com","s":[0,2,4,5],"r":[5,119],"t":"domain_suffix"}
+{"d":"agentclientprotocol.com","s":[2,4,6],"r":[6,119],"t":"domain_suffix"}
 {"d":"airbnb.com.bz","s":[2,4,5,6],"r":[7,119],"t":"domain_suffix"}
 {"d":"amazon.de","s":[0,2,4,5,6],"r":[14,119],"t":"domain_suffix"}
 {"d":"amazonlending.com.cn","s":[0,5,6],"r":[14],"t":"domain_suffix"}
@@ -885,7 +886,10 @@
 {"d":"google.hr","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"ocsp.pki.goog","s":[0,5,6],"r":[35,73],"t":"domain_suffix"}
 {"d":"scholar.google.co.kr","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
-{"d":"myhwcdn.cn","s":[0],"r":[80],"t":"domain_suffix"}
+{"d":"cdnhwcedi10.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"cdnhwcojn124.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"eu-north-201.myhuaweicloud.com","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"myhwcdn.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"icbccs.com.cn","s":[0],"r":[83],"t":"domain_suffix"}
 {"d":"icbcmoscow.ru","s":[0,6],"r":[35,83],"t":"domain_suffix"}
 {"d":"ibkstore.com","s":[0,6],"r":[35,86],"t":"domain_suffix"}
@@ -1702,7 +1706,6 @@
 {"d":"cdn-cdn.net","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdn86.net","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdnet110.com","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"cdnhwcedi10.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdnidc.net","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdnjson.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cg-schools.com","s":[0,6],"r":[35],"t":"domain_suffix"}
@@ -2045,7 +2048,6 @@
 {"d":"2023aga.oen.tw","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"adidas.de","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"adskcloud.net","s":[2,4],"r":[119],"t":"domain_suffix"}
-{"d":"agentclientprotocol.com","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"alienware.eu","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"aol.com","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"bcvcdn.com","s":[2,4],"r":[119],"t":"domain_suffix"}

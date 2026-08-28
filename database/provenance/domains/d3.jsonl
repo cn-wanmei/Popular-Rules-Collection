@@ -912,7 +912,8 @@
 {"d":"zujz.cn","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zuxzvxmibplsk.website","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zythera.info","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
-{"d":"anthropic.com","s":[0,2,4,5,7],"r":[6,8,15,39,70,119],"t":"domain_suffix"}
+{"d":"anthropic.com","s":[0,2,4,5,6,7],"r":[6,8,15,39,70,119],"t":"domain_suffix"}
+{"d":"crixet.com","s":[0,2,4,5,6],"r":[6,106,119],"t":"domain_suffix"}
 {"d":"airbnb.co.nz","s":[2,4,5,6],"r":[7,119],"t":"domain_suffix"}
 {"d":"account-cn.alibabacloud.com","s":[0,5,6],"r":[10,11],"t":"domain_suffix"}
 {"d":"adslot.uc.cn","s":[0,1,2,3,4,5,6],"r":[4,10],"t":"domain_suffix"}
@@ -929,7 +930,7 @@
 {"d":"211.234.110.1/32","s":[0],"r":[23],"t":"ip_cidr"}
 {"d":"bytedns4.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"bytemedi.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
-{"d":"douyinfe.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
+{"d":"douyinfe.com","s":[0,5,6,7],"r":[31,35,56],"t":"domain_suffix"}
 {"d":"hijackorg.net","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"vedcdnlb.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"volcmedialive.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
@@ -954,6 +955,8 @@
 {"d":"youtube.sk","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
 {"d":"hboasia2-i.akamaihd.net","s":[0],"r":[77],"t":"domain_suffix"}
 {"d":"heroku-charge.com","s":[0,2,4,6],"r":[78,119],"t":"domain_suffix"}
+{"d":"cdnhwclrd102.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"eduapaashwc.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
 {"d":"gitv.cn","s":[0],"r":[86],"t":"domain_suffix"}
 {"d":"jcloudlv.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"missjia.net","s":[0,6],"r":[35,88],"t":"domain_suffix"}
@@ -963,8 +966,7 @@
 {"d":"103.6.174.0/23","s":[0],"r":[98],"t":"ip_cidr"}
 {"d":"music.126.com","s":[0,6],"r":[99],"t":"domain_suffix"}
 {"d":"yysls.cn","s":[0,6],"r":[99],"t":"domain_suffix"}
-{"d":"netflixdnstest6.com","s":[0,2,4,5,7],"r":[100,119],"t":"domain_suffix"}
-{"d":"crixet.com","s":[0,2,4,5],"r":[106,119],"t":"domain_suffix"}
+{"d":"netflixdnstest6.com","s":[0,2,4,5,6,7],"r":[100,119],"t":"domain_suffix"}
 {"d":"loanbuilder.com","s":[0,2,4,7],"r":[110,119],"t":"domain_suffix"}
 {"d":"paypal-marketing.com","s":[0,2,4,7],"r":[110,119],"t":"domain_suffix"}
 {"d":"paypal-online.info","s":[0,2,4,7],"r":[110,119],"t":"domain_suffix"}
@@ -1815,7 +1817,6 @@
 {"d":"dunjiaodu.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"duuchin.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"ecr-global.com","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"eduapaashwc.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"eeban.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"eecnt.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"ehclglobal.com","s":[0,6],"r":[35],"t":"domain_suffix"}

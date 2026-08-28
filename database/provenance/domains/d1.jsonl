@@ -945,7 +945,7 @@
 {"d":"larkrooms.cn","s":[0,5,6],"r":[31],"t":"domain_suffix"}
 {"d":"volces.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"cloudflare.app","s":[0,2,4,5,6],"r":[40,119],"t":"domain_suffix"}
-{"d":"static.cloudflareinsights.com","s":[0,5],"r":[42,106],"t":"domain"}
+{"d":"static.cloudflareinsights.com","s":[0,5,6],"r":[42,106],"t":"domain"}
 {"d":"acebooik.com","s":[0,2,4,5,6],"r":[64,119],"t":"domain_suffix"}
 {"d":"facebookmanager.info","s":[0,2,4,5,6],"r":[64,119],"t":"domain_suffix"}
 {"d":"alt7-mtalk.google.com","s":[0,2,4,5,6,7],"r":[73,74,119],"t":"domain"}
@@ -953,6 +953,8 @@
 {"d":"google.lu","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"google.sc","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"scholar.google.fi","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
+{"d":"cdnhwczmn114.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"eu-central-201.myhuaweicloud.com","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"jclouddns.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"at7790s887.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"msn.cn","s":[0,5,6,7],"r":[96],"t":"domain_suffix"}
@@ -1790,7 +1792,6 @@
 {"d":"catchingdoll.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cccclc-gd.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdn90.com","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"cdnhwczmn114.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cguiw.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"chalieco.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"chbdunt.com","s":[0,6],"r":[35],"t":"domain_suffix"}

@@ -16,11 +16,12 @@ generated_files:
   domain: douyin_domain.list
   ip: null
 statistics:
-  domains: 13
+  domains: 78
   ipv4_or_cidr: 0
-  mixed: 13
+  mixed: 78
 sources:
 - blackmatrix7
+- metacubex
 - dler
 clients:
 - Mihomo

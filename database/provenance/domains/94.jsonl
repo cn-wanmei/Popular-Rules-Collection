@@ -58,7 +58,7 @@
 {"d":"epicshow.net","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
 {"d":"epimetheus.navigator.gmx.net","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
 {"d":"escortsecret.com","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
-{"d":"events.statsigapi.net","s":[0,1,2,3,4,5],"r":[2,4,42,106],"t":"domain_suffix"}
+{"d":"events.statsigapi.net","s":[0,1,2,3,4,5,6],"r":[2,4,42,106],"t":"domain_suffix"}
 {"d":"fibpc1-cdn-settings.appsflyersdk.com","s":[1],"r":[2],"t":"domain_suffix"}
 {"d":"fijzm.rarecarat.com","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
 {"d":"fmpride.com","s":[1,2,3,4],"r":[2,3,4],"t":"domain_suffix"}
@@ -926,6 +926,10 @@
 {"d":"google.com.au","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"shattered.io","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"youtube.co.il","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
+{"d":"af-north-1.myhuaweicloud.com","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"cdnhwcead111.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"cdnhwcoem01.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"me-east-1.myhuaweicloud.com","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"jcloudwaftest.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"jdcloudedge.net","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"1blx503444.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
@@ -1726,8 +1730,6 @@
 {"d":"bw40.net","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"bzsanguo.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"ccic-lab.com","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"cdnhwcead111.com","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"cdnhwcoem01.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdnvpn.net","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cellprotek.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"chaoshengxin.com","s":[0,6],"r":[35],"t":"domain_suffix"}

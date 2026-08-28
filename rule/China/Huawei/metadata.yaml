@@ -15,11 +15,13 @@ generated_files:
   domain: huawei_domain.list
   ip: null
 statistics:
-  domains: 160
+  domains: 402
   ipv4_or_cidr: 0
-  mixed: 160
+  mixed: 402
 sources:
 - blackmatrix7
+- metacubex
+- v2fly
 clients:
 - Mihomo
 - sing-box

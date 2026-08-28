@@ -894,7 +894,7 @@
 {"d":"zsy10161yok.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zzhengre.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zzpgiredutflq.space","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
-{"d":"notebooklm.google","s":[4,7],"r":[6,8],"t":"domain_suffix"}
+{"d":"notebooklm.google","s":[6,7],"r":[6,8],"t":"domain_suffix"}
 {"d":"ads.uc.cn","s":[0,1,2,3,4,5,6],"r":[4,10],"t":"domain_suffix"}
 {"d":"alipay.com","s":[0,5,6],"r":[10,12,35],"t":"domain_suffix"}
 {"d":"oss-cn-shenzhen.aliyuncs.com","s":[0,5,6],"r":[10,11],"t":"domain_suffix"}
@@ -925,6 +925,10 @@
 {"d":"voice.telephony.goog","s":[0,5,6],"r":[73],"t":"domain"}
 {"d":"crr.com","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"74.125.28.188/32","s":[0,7],"r":[74],"t":"ip_cidr"}
+{"d":"576nt.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"af-south-1.myhuaweicloud.com","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"cdnhwcljk104.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"chaspark.com","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"64oak78y99.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"eckwai.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"gatymciu.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
@@ -1647,7 +1651,6 @@
 {"d":"c-canyin.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdfcn.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdndo.com","s":[0,6],"r":[35],"t":"domain_suffix"}
-{"d":"cdnhwcljk104.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"cdysxy.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"ceda-fluid.com","s":[0,6],"r":[35],"t":"domain_suffix"}
 {"d":"ceicsz.net","s":[0,6],"r":[35],"t":"domain_suffix"}

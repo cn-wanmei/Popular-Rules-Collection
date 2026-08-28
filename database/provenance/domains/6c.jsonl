@@ -888,6 +888,7 @@
 {"d":"zxpvebhtojfvgu.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zyplerohv-app.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"fptolia.com","s":[0,2,4,5],"r":[5,119],"t":"domain_suffix"}
+{"d":"deepwiki.com","s":[2,4,6],"r":[6,119],"t":"domain_suffix"}
 {"d":"airbnb.com.br","s":[2,4,5,6],"r":[7,119],"t":"domain_suffix"}
 {"d":"alicloud.com","s":[0,2,4,5,6],"r":[10,11,35,119],"t":"domain_suffix"}
 {"d":"xiami.com","s":[0,5,6],"r":[10,35],"t":"domain_suffix"}
@@ -926,13 +927,15 @@
 {"d":"scholar.google.hn","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"youtube.com.tn","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
 {"d":"142.250.96.188/32","s":[0,7],"r":[74],"t":"ip_cidr"}
+{"d":"huaweicloud-smn.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"na-east-0.myhuaweicloud.com","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"21fv52efm1.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"aqawzxeg.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}
 {"d":"linegame.jp","s":[0,2,4,5],"r":[92,98,119],"t":"domain_suffix"}
 {"d":"windbg.download.prss.microsoft.com","s":[0,5,6,7],"r":[35,96],"t":"domain_suffix"}
 {"d":"microsoftnews.net","s":[0,2,4,5,6,7],"r":[96,119],"t":"domain_suffix"}
 {"d":"203.104.158.0/24","s":[0],"r":[98],"t":"ip_cidr"}
-{"d":"nflxext.com","s":[0,2,4,5,7],"r":[70,100,119],"t":"domain_suffix"}
+{"d":"nflxext.com","s":[0,2,4,5,6,7],"r":[70,100,119],"t":"domain_suffix"}
 {"d":"d33wubrfki0l68.cloudfront.net","s":[2,4,6],"r":[101,119],"t":"domain_suffix"}
 {"d":"pokemon-moon.com","s":[0,2,4],"r":[102,119],"t":"domain_suffix"}
 {"d":"paypalbrasil.com","s":[0,2,4,7],"r":[110,119],"t":"domain_suffix"}
@@ -2100,7 +2103,6 @@
 {"d":"createwhatsnext.com","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"daddyslilangel.com","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"ddpjwstwtpszg.cloudfront.net","s":[2,4],"r":[119],"t":"domain_suffix"}
-{"d":"deepwiki.com","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"ebsco.com","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"freeassange.tech","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"fullfuli.com","s":[2,4],"r":[119],"t":"domain_suffix"}

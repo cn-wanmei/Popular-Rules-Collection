@@ -968,6 +968,7 @@
 {"d":"zrhcawvkdttmo.website","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zyiis.net","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"fotiolia.com","s":[0,2,4,5],"r":[5,119],"t":"domain_suffix"}
+{"d":"ollama.com","s":[2,4,6],"r":[6,119],"t":"domain_suffix"}
 {"d":"js.stripe.com","s":[7],"r":[8],"t":"domain"}
 {"d":"kunlungr.com","s":[0,5,6],"r":[10,11,35],"t":"domain_suffix"}
 {"d":"phpwind.net","s":[0,5,6],"r":[10,35],"t":"domain_suffix"}
@@ -1004,8 +1005,8 @@
 {"d":"fsacebok.com","s":[0,2,4,5,6],"r":[64,119],"t":"domain_suffix"}
 {"d":"173.252.64.0/18","s":[0,5,6],"r":[64],"t":"ip_cidr"}
 {"d":"google.com.sg","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
-{"d":"hwclouds.net","s":[0,6],"r":[35,80],"t":"domain_suffix"}
-{"d":"hwclouds.org","s":[0,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"hwclouds.net","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"hwclouds.org","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
 {"d":"hooloo.tv","s":[0,2,4],"r":[82,119],"t":"domain_suffix"}
 {"d":"hulufree.com","s":[0,2,4],"r":[82,119],"t":"domain_suffix"}
 {"d":"113.61.104.0/22","s":[0],"r":[89],"t":"ip_cidr"}
@@ -2179,7 +2180,6 @@
 {"d":"nativeincolour.com.au","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"ntp.ripe.net","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"o2action.co.kr","s":[2,4],"r":[119],"t":"domain_suffix"}
-{"d":"ollama.com","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"opentable.com","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"plutotv.net","s":[2,4],"r":[119],"t":"domain_suffix"}
 {"d":"pornjav.org","s":[2,4],"r":[119],"t":"domain_suffix"}

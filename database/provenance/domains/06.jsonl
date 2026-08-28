@@ -878,6 +878,7 @@
 {"d":"zzqhb.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zzynmuog.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"mkto-c0100.com","s":[0,2,4,5],"r":[5,119],"t":"domain_suffix"}
+{"d":"antigravity-pa.googleapis.com","s":[0,2,4,5,6],"r":[6,73,119],"t":"domain_suffix"}
 {"d":"gspe1-ssl.ls.apple.com","s":[0,5,6,7],"r":[8,16],"t":"domain"}
 {"d":"atanx2.alicdn.com","s":[0,1,2,3,4,5,6],"r":[4,10,11],"t":"domain_suffix"}
 {"d":"amazon.cn","s":[0,5,6],"r":[14],"t":"domain_suffix"}
@@ -889,7 +890,7 @@
 {"d":"203.69.111.4/32","s":[0],"r":[23],"t":"ip_cidr"}
 {"d":"boc.cn","s":[0],"r":[28],"t":"domain_suffix"}
 {"d":"99uri.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
-{"d":"awemeughun.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
+{"d":"awemeughun.com","s":[0,5,6,7],"r":[31,35,56],"t":"domain_suffix"}
 {"d":"bytednsdoc.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"coze.cn","s":[0,5,6],"r":[31,55],"t":"domain_suffix"}
 {"d":"feishuvc.cn","s":[0,5,6],"r":[31],"t":"domain_suffix"}
@@ -902,10 +903,10 @@
 {"d":"wasmer.io","s":[0,2,4,6],"r":[48,119],"t":"domain_suffix"}
 {"d":"pandarzli.com","s":[6],"r":[49],"t":"domain_suffix"}
 {"d":"ebayaustralia.com","s":[0,2,4,5],"r":[59,119],"t":"domain_suffix"}
-{"d":"antigravity-pa.googleapis.com","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"blogspot.lt","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"get.new","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"google.gm","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
+{"d":"ap-southeast-203.myhuaweicloud.com","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"203.74.95.131/32","s":[0],"r":[86],"t":"ip_cidr"}
 {"d":"jddj.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"8hy7q32i4q.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}

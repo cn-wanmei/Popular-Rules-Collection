@@ -849,7 +849,7 @@
 {"d":"zrouimweexxno.online","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"zsheslkhbagaco.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"ai.google.dev","s":[0,2,4,5,6,7],"r":[6,8,69,73,119],"t":"domain_suffix"}
-{"d":"chat.com","s":[0,2,4,5],"r":[6,70,106,119],"t":"domain_suffix"}
+{"d":"chat.com","s":[0,2,4,5,6],"r":[6,70,106,119],"t":"domain_suffix"}
 {"d":"miaostreet.com","s":[0,5,6],"r":[10,35],"t":"domain_suffix"}
 {"d":"alipaydev.com","s":[0,6],"r":[12,35],"t":"domain_suffix"}
 {"d":"amazon.sg","s":[0,2,4,5,6],"r":[14,119],"t":"domain_suffix"}
@@ -882,7 +882,8 @@
 {"d":"dl.l.google.com","s":[0,5,6],"r":[73],"t":"domain_suffix"}
 {"d":"google.com.om","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"google.com.sa","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
-{"d":"huaweimarine.com","s":[0,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"huaweimarine.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"ivwi3.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"icbc.com.mo","s":[0,6],"r":[35,83],"t":"domain_suffix"}
 {"d":"aiqiyicloud-mgmt.com","s":[0,6],"r":[35,86],"t":"domain_suffix"}
 {"d":"218.61.106.0/24","s":[0],"r":[91],"t":"ip_cidr"}

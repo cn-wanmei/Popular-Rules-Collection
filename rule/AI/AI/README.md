@@ -7,10 +7,10 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 48 |
+| Domains | 179 |
 | IP/CIDR | 0 |
-| Mixed | 48 |
-| Sources | sukkaw |
+| Mixed | 179 |
+| Sources | metacubex |
 | Updated | 2026-08-28 |
 
 ## 基础规则（Classical）
@@ -37,7 +37,7 @@
 
 ## 来源
 
-`sukkaw`
+`metacubex`
 
 ---
 

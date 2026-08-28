@@ -124,7 +124,7 @@
     ]
   },
   "rule_coverage": {
-    "domains": 829608,
+    "domains": 830046,
     "ips": 13955,
     "database_services": 170
   },
@@ -233,11 +233,11 @@
     "critical": 0,
     "high": 0,
     "medium": 0,
-    "low": 10606
+    "low": 11021
   },
   "sources": 4,
   "services": 170,
-  "domains": 829608,
+  "domains": 830046,
   "cidr": 13955,
   "build": {
     "mihomo": "ok",

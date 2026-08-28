@@ -946,7 +946,7 @@
 {"d":"iphone-vip2.com","s":[0,2,4,5,6,7],"r":[16,119],"t":"domain_suffix"}
 {"d":"monsterbeats365buy.com","s":[0,2,4,5,6,7],"r":[16,119],"t":"domain_suffix"}
 {"d":"celersyn.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
-{"d":"douyinliving.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
+{"d":"douyinliving.com","s":[0,5,6,7],"r":[31,35,56],"t":"domain_suffix"}
 {"d":"feishudoc.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"goofy-edge.cn","s":[0,5,6],"r":[31],"t":"domain_suffix"}
 {"d":"mcbaas.work","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
@@ -963,7 +963,8 @@
 {"d":"kaggle.com","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"youtube.pl","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
 {"d":"74.125.137.188/32","s":[0,7],"r":[74],"t":"ip_cidr"}
-{"d":"hwclouds.cn","s":[0],"r":[80],"t":"domain_suffix"}
+{"d":"ap-southeast-1.myhuaweicloud.com","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"hwclouds.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"jetbrains.io","s":[0,5],"r":[87],"t":"domain_suffix"}
 {"d":"jdgslb.net","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"kuai666trqtauks5ht6x.com","s":[0,6],"r":[35,90],"t":"domain_suffix"}

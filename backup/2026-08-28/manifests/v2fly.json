@@ -1,11 +1,11 @@
 {
   "source": "v2fly",
   "fetch": "github_raw",
-  "timestamp": "2026-08-28T12:14:15.705330+00:00",
-  "files_ok": 51,
+  "timestamp": "2026-08-28T13:09:17.505744+00:00",
+  "files_ok": 52,
   "files_failed": 0,
   "empty_blocked": 0,
-  "rules_declared": 51,
+  "rules_declared": 52,
   "files": [
     {
       "name": "v2fly_deepseek",
@@ -515,6 +515,16 @@
       "local": "sources/v2fly/v2fly_mojang",
       "size": 104,
       "sha256": "ffc054b4b5bb01aa9e25c23444282740f0befea2b2fc8eb3e8ad53156a632757",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_huawei",
+      "path": "data/huawei",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/huawei",
+      "service": "huawei",
+      "local": "sources/v2fly/v2fly_huawei",
+      "size": 479,
+      "sha256": "5e2aa1cc680fea6594c17cf9e26111fe35be8283332e4dc2c3c1917aca335080",
       "status": "ok"
     }
   ],

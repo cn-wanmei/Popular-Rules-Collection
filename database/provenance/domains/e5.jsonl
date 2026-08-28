@@ -908,7 +908,7 @@
 {"d":"nflhotsalejerseys.com","s":[0,2,4,5,6,7],"r":[16,119],"t":"domain_suffix"}
 {"d":"videomind.cloud","s":[0,5,6],"r":[22,35],"t":"domain_suffix"}
 {"d":"byteoversea.com","s":[0,5,6,7],"r":[31,143],"t":"domain_suffix"}
-{"d":"douyinact.net","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
+{"d":"douyinact.net","s":[0,5,6,7],"r":[31,35,56],"t":"domain_suffix"}
 {"d":"feiliao.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"luckforcalendar.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
 {"d":"veicplive.com","s":[0,5,6],"r":[31,35],"t":"domain_suffix"}
@@ -928,8 +928,9 @@
 {"d":"google.no","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"scholar.google.hr","s":[0,2,4,5,6],"r":[73,119],"t":"domain_suffix"}
 {"d":"216.73.80.0/20","s":[0,5,6,7],"r":[73,166],"t":"ip_cidr"}
-{"d":"huawei.com","s":[0,6],"r":[35,80],"t":"domain_suffix"}
-{"d":"hwclouds.org.cn","s":[0],"r":[80],"t":"domain_suffix"}
+{"d":"as-south-207.myhuaweicloud.com","s":[0,5,6],"r":[80],"t":"domain_suffix"}
+{"d":"huawei.com","s":[0,5,6],"r":[35,80],"t":"domain_suffix"}
+{"d":"hwclouds.org.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"cws-hulu.conviva.com","s":[0],"r":[82],"t":"domain_suffix"}
 {"d":"jdcloudstatic.net","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"dianmiao.cn","s":[0],"r":[90],"t":"domain_suffix"}

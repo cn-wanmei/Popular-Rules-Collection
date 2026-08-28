@@ -591,7 +591,7 @@
 {"d":"on-glamour.xyz","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"on.lariidclee.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"onyxsalons.info","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
-{"d":"openai.qualtrics.com","s":[0,1,2,3,4,5],"r":[3,4,106],"t":"domain"}
+{"d":"openai.qualtrics.com","s":[0,1,2,3,4,5,6],"r":[3,4,6,106],"t":"domain_suffix"}
 {"d":"openunder.net","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"opxgaiqbatgwjqg.com","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
 {"d":"orkimgrevthaalst.top","s":[1,2,3,4],"r":[3,4],"t":"domain_suffix"}
@@ -918,6 +918,7 @@
 {"d":"google.com.kw","s":[0,2,4,5,6],"r":[70,73,119],"t":"domain_suffix"}
 {"d":"youtube.com.by","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
 {"d":"youtube.pk","s":[0,2,4,5,6,7],"r":[73,119,166],"t":"domain_suffix"}
+{"d":"cdnhwcpcw110.cn","s":[0,5,6],"r":[80],"t":"domain_suffix"}
 {"d":"icbc.com.kw","s":[0,6],"r":[35,83],"t":"domain_suffix"}
 {"d":"cloudshanghai.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}
 {"d":"jd-app.com","s":[0,6],"r":[35,88],"t":"domain_suffix"}

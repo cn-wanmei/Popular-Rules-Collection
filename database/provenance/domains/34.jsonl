@@ -871,8 +871,8 @@
 {"d":"adobehiddentreasures.com","s":[0,2,4,5],"r":[5,119],"t":"domain_suffix"}
 {"d":"mobilemarketo.com","s":[0,2,4,5],"r":[5,119],"t":"domain_suffix"}
 {"d":"verisign.com","s":[0,2,4,5],"r":[5,119],"t":"domain_suffix"}
-{"d":"aisandbox-pa.googleapis.com","s":[4,7],"r":[6,8],"t":"domain_suffix"}
-{"d":"proactivebackend-pa.googleapis.com","s":[0,4,7],"r":[6,8,69],"t":"domain_suffix"}
+{"d":"aisandbox-pa.googleapis.com","s":[6,7],"r":[6,8],"t":"domain_suffix"}
+{"d":"proactivebackend-pa.googleapis.com","s":[0,6,7],"r":[6,8,69],"t":"domain_suffix"}
 {"d":"ykimg.com","s":[0,5,6],"r":[10,35,165],"t":"domain_suffix"}
 {"d":"2400:b200::/32","s":[0,5,6],"r":[10],"t":"ip_cidr6"}
 {"d":"cl2-cn.apple.com","s":[0,5,6,7],"r":[16],"t":"domain_suffix"}
@@ -892,7 +892,7 @@
 {"d":"cloudflare-gateway.com","s":[0,2,4,5,6],"r":[40,119],"t":"domain_suffix"}
 {"d":"cloudflarecp.com","s":[0,2,4,5,6],"r":[40,119],"t":"domain_suffix"}
 {"d":"198.41.128.0/17","s":[0,5,6],"r":[40],"t":"ip_cidr"}
-{"d":"algolia.net","s":[0,5],"r":[42,106],"t":"domain_suffix"}
+{"d":"algolia.net","s":[0,5,6],"r":[42,106],"t":"domain_suffix"}
 {"d":"androidify.com","s":[0,2,4,5,6],"r":[48,70,73,119],"t":"domain_suffix"}
 {"d":"ius.io","s":[0,2,4,6],"r":[48,119],"t":"domain_suffix"}
 {"d":"microsoftreactor.info","s":[0,2,4,5,6,7],"r":[48,96,119],"t":"domain_suffix"}
