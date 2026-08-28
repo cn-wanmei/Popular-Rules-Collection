@@ -178,6 +178,10 @@ services:
   paramountplus: {primary_category: streaming, display_name: ParamountPlus, categories: [streaming], service_type: service}
   peacock: {primary_category: streaming, display_name: Peacock, categories: [streaming], service_type: service}
   vimeo: {primary_category: streaming, display_name: Vimeo, categories: [streaming], service_type: service}
+  dailymotion: {primary_category: streaming, display_name: Dailymotion, categories: [streaming], service_type: service}
+  deezer: {primary_category: streaming, display_name: Deezer, categories: [streaming], service_type: service}
+  emby: {primary_category: streaming, display_name: Emby, categories: [streaming], service_type: service}
+  naver: {primary_category: other, display_name: Naver, categories: [other], service_type: service}
 aggregate_overrides:
   adblock: {primary_category: privacy, display_name: AdBlock, categories: [privacy], service_type: aggregate, children: [adblock-pro, adblock-light]}
   ai: {primary_category: ai, display_name: AI, categories: [ai], service_type: aggregate, children: [openai, claude, gemini, copilot, anthropic, huggingface, perplexity, groq, xai, mistral, deepseek, elevenlabs, aisuite]}
