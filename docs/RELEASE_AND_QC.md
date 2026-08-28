@@ -1,163 +1,61 @@
-# Release Definition & Quality Control (locked 2026-08-27)
+# Release & QC — Popular Rules Collection
 
-## Status
-
-**规则生成已达到可发布/可使用标准；规则数据治理进入持续质量控制阶段。**
-
-| Layer | Status |
-|-------|--------|
-| Collect → Normalize → Canonical → Builder ×7 | ✅ structural validation |
-| Generated client outputs | ✅ production-usable |
-| Semantic / historical validation | ✅ P1-0…P1-3 + engineering P0–P2 |
-
-Authoritative artifacts: `generated/{client}/` on `main`.  
-Do **not** hand-edit `rule/`.
-
----
-
-## Daily Service Coverage (definition)
-
-**Goal is not “every brand name has its own ruleset file”.**
-
-A popular daily service is **covered** when any of:
-
-1. **Materialized** — dedicated rules in `database/` + `generated/{client}/`
-2. **Aggregate-covered** — parent ecosystem ruleset is sufficient (e.g. Taobao → Alibaba, Drive → Google)
-3. **Intentional-unmaterialized** — listed in `config/intentional_unmaterialized.yaml` with a reason code
+## Release Candidate standard
 
 ```text
-Daily Coverage = (materialized + intentional_unmaterialized) / registered
+Service Coverage (Daily) ≥ 90% of target daily services
+Source Health (enabled)  ≥ 95% when upstream reachable
+Builder Coverage         100% (×7 clients)
+Validation Errors        0
+Schema Errors            0
+Generated Empty          0
+Stale Files              0
+Broken Links             0
 ```
 
-Raw `coverage` (materialized / registered) remains for engineering; **daily_coverage** is the product KPI.
+Source health distinguishes `healthy` / `degraded` / `blocked`. Occasional upstream 404 is **not** project failure.
 
-### Service expansion gate (P2-4)
+## Daily Coverage (user-facing)
 
-New Service requires **all** of:
+Do **not** report raw `materialized/registered` as “missing coverage”.
 
-1. Clear user value beyond an existing aggregate
-2. Verified public upstream (BM / MetaCubeX / equivalent)
-3. Registry path HTTP 200 at registration time
-4. Identity tokens if BM Clash `# NAME:` is non-obvious
+```text
+Daily Coverage =
+  (materialized + intentional_unmaterialized) / registered
+```
 
-Otherwise: intentional entry only — **no fake domains**.
+Intentional codes (SSOT: `config/intentional_unmaterialized.yaml`):
 
----
-
-## Production use
-
-1. Subscribe to `generated/{mihomo|sing-box|surge|shadowrocket|quantumult-x|egern|loon}/{id}.*`
-2. GitHub Raw is source of truth; CDN is acceleration only
-3. Typical interval: 86400s
-4. Only **materialized** services resolve; intentional means “not a gap, no dedicated file by design”
-
-### KPI (quality ≠ line count)
-
-- **Daily coverage** & materialization rate  
-- Source Health split: `configured` / `enabled` / `collected_this_run` / `historical_in_health`  
-- Builder Coverage (**×7**, including Loon)  
-- Validation (`schema_validate` / `validate` / `builder_validate` = pass|fail)  
-- Identity warnings / Rule-count drift / Quality flags (soft)
-
-`domain` vs `domain_suffix` stay distinct in the Canonical loader.
-
-### Intentional unmaterialized
-
-SSOT: **`config/intentional_unmaterialized.yaml`**
-
-| code | meaning |
+| Code | Meaning |
 |------|---------|
 | `NO_UPSTREAM` | no verified dedicated ruleset |
-| `COVERED_BY_AGGREGATE` | use parent ecosystem rules |
+| `COVERED_BY_AGGREGATE` | covered by parent ecosystem rules |
 | `MAPS_TO` | alias of another service id |
 | `DEFERRED_PROFILE` | profile intentionally postponed |
-| `KEYWORD_ONLY` | no usable domain set |
-| `SOURCE_DRIFT` | upstream path moved; pending registry fix |
+| `KEYWORD_ONLY` | keyword-only / empty domain set by design |
+| `SOURCE_DRIFT` | upstream path moved; pending re-bind |
 
----
+**No fake domains** for intentional entries.
 
-## Release metadata semantics
+## Expansion criteria
 
-`reports/latest_release.json` (and `reports/<date>/release.json`):
+Only materialize when:
 
-| field | meaning |
-|-------|---------|
-| `commit` | **pipeline input SHA** when `release_snapshot.py` ran (before collect’s git commit) |
-| `commit_role` | always `pipeline_input` |
-| `validation.*` | `pass` / `fail` / `unknown` from gate artifacts |
+1. Verified upstream HTTP 200 with non-empty rules
+2. Primary mapping exists **before** registry append
+3. Not better expressed as aggregate coverage
 
-After collect pushes, **HEAD advances by one commit** that *contains* this release file.  
-Therefore `latest_release.commit` may lag `HEAD` by one pipeline commit — **by design**, not drift.
+## Release commit semantics
 
-Do not treat `latest_release.commit == HEAD` as a hard requirement unless a post-commit rewrite job is added.
+`reports/latest_release.json` `commit` is **pipeline_input** SHA (snapshot before collect commit). HEAD after push contains the snapshot and may differ by one commit — by design.
 
----
+## Soft QC (P1)
 
-## Fault taxonomy
-
-| Layer | Meaning |
-|-------|---------|
-| Primary ✗ | not planned |
-| Primary ✓ / Registry ✗ | intentional_unmaterialized |
-| Registry ✓ / Upstream ✗ | **registry drift** — fix path explicitly |
-| Upstream ✓ / Database ✗ | collect / normalize |
-| Database ✓ / Generated ✗ | builder |
-| Generated ✓ / Validate ✗ | format / schema / expected-output |
-
-Primary long-term risk: **Source Drift**, not Builder.
-
----
-
-## Pipeline
-
-### Primary: Collect Upstream (`collect.yml`)
-
-```text
-Upstream → collect → normalize → database/
-  → rule_loader → build ×7 (incl. loon) → generated/
-  → schema_validate (hard, writes schema_validate.json)
-  → validate (hard, writes validation_report.json)
-  → builder_validate (hard)
-  → identity / drift / quality (soft)
-  → statistics → release_snapshot → …
-  → commit → git pull --rebase → push
-```
-
-### Optional: Build Client Rules (`build.yml`)
-
-Standalone rebuild of `generated/`. Must also run **Builder ×7 including Loon**, then:
-
-```text
-build ×7 → schema_validate → validate → builder_validate → commit
-```
-
-### Secondary: Validate workflow
-
-Triggers on **Build Client Rules** and **Collect Upstream** completion, plus PR / manual.
-
-Hard gates stay fail-closed. Soft QC never hides Source Health degradation.
-
----
-
-## QC modules
-
-| ID | Module | Behavior |
-|----|--------|----------|
-| **P1-0** | `schema_validate.py` | `id==filename`, canonical types — **hard** + JSON artifact |
-| **P1-1** | `identity_validate.py` | BM `# NAME:` tokens — **soft** |
-| **P1-2** | `rule_count_drift.py` | ±20/50/80% vs prior day — **soft** |
-| **P1-3** | `quality_validate.py` / validate domain quality | bare TLD / empty generated / large sets — **soft** |
-| **P0** | `build.yml` Loon + pre-commit validate | contract = ×7 |
-| **P0** | `release_snapshot` real validation | no long-lived `unknown` when artifacts exist |
-
-### Non-goals
-
-- ❌ Builder / rule_loader / Primary rewrites for coverage optics  
-- ❌ Collector path fuzzy matching  
-- ❌ Fake upstream for intentional_unmaterialized  
-- ❌ Mega service dumps without upstream audit  
-
----
+| Gate | Script |
+|------|--------|
+| P1-1 | `identity_validate.py` |
+| P1-2 | `rule_count_drift.py` |
+| P1-3 | `quality_validate.py` |
 
 ## Engineering changelog (P0–P2, 2026-08-27)
 
@@ -179,3 +77,12 @@ Hard gates stay fail-closed. Soft QC never hides Source Health degradation.
 ## Long-running production-grade bar
 
 After identity + drift signals have been observed across ≥2 weeks of upstream noise, with BM-class drift still fixed via explicit registry edits only.
+
+## Phase 2B-IP (2026-08-28)
+
+Domain and IP tracks are **separate**:
+
+- Domain: whitelist materialization only with verified upstream.
+- IP: `sources/ip_registry.yaml` + `scripts/collect_ip.py` + `scripts/ip_cidr.py`.
+- Hard rule: provider/CDN ranges must not be attributed to product services.
+- See `docs/IP_ARCHITECTURE.md`.
