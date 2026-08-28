@@ -18,11 +18,13 @@ SERVICES = ROOT / "database" / "services"
 DOMAINS = ROOT / "database" / "domains"
 IPS = ROOT / "database" / "ips"
 
+# Keep in sync with scripts/rule_loader.py TYPED_KEYS (+ process_name for future)
 CANONICAL_TYPES = frozenset(
     {
         "domain",
         "domain_suffix",
         "domain_keyword",
+        "domain_regex",
         "ip_cidr",
         "ip_cidr6",
         "process_name",
