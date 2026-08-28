@@ -93,19 +93,7 @@ def load_intentional_unmaterialized() -> dict[str, dict]:
     }
 
 
-def primary_map() -> dict[str, dict]:
-    prim = load_yaml(ROOT / "config" / "service_primary.yaml")
-    services = dict(prim.get("services") or {})
-    extra = load_yaml(ROOT / "config" / "service_primary_extra.yaml")
-    services.update(extra.get("services") or {})
-    for sid, ov in (extra.get("aggregate_overrides") or {}).items():
-        base = dict(services.get(sid) or {})
-        base.update(ov)
-        services[sid] = base
-    return {str(k): (v if isinstance(v, dict) else {}) for k, v in services.items()}
-
-
-def _gate_status(path: Path, fail_key: str = "failures") -> str:
+def _gate_status(path: Path) -> str:
     if not path.exists():
         return "unknown"
     try:
@@ -114,26 +102,39 @@ def _gate_status(path: Path, fail_key: str = "failures") -> str:
         return "unknown"
     if "status" in rep:
         return str(rep["status"])
-    if fail_key in rep:
-        return "fail" if rep.get(fail_key) else "pass"
+    if "failures" in rep:
+        return "fail" if rep.get("failures") else "pass"
+    if "errors" in rep:
+        return "fail" if rep.get("errors") else "pass"
     return "unknown"
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--date", default=datetime.now(timezone.utc).strftime("%Y-%m-%d"))
-    args = parser.parse_args()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--date", default=datetime.now(timezone.utc).strftime("%Y-%m-%d"))
+    args = ap.parse_args()
     day = ROOT / "reports" / args.date
     day.mkdir(parents=True, exist_ok=True)
 
-    P = primary_map()
-    registered = set(P.keys())
-    db_dir = ROOT / "database" / "services"
-    materialized = {
-        p.stem
-        for p in db_dir.glob("*.yaml")
-        if not p.name.startswith("example")
-    } if db_dir.is_dir() else set()
+    prim = load_yaml(ROOT / "config" / "service_primary.yaml")
+    extra = load_yaml(ROOT / "config" / "service_primary_extra.yaml")
+    services = dict(prim.get("services") or {})
+    services.update(extra.get("services") or {})
+    for sid, ov in (extra.get("aggregate_overrides") or {}).items():
+        base = dict(services.get(sid) or {})
+        base.update(ov)
+        services[sid] = base
+
+    registered = set(services.keys())
+    reg_n = len(registered)
+
+    materialized = set()
+    services_dir = ROOT / "database" / "services"
+    if services_dir.is_dir():
+        for p in services_dir.glob("*.yaml"):
+            if not p.name.startswith("example"):
+                materialized.add(p.stem)
+    mat_n = len(materialized)
 
     intentional_ssot = load_intentional_unmaterialized()
     intentional = {
@@ -142,12 +143,12 @@ def main() -> int:
         if sid in registered and sid not in materialized
     }
     intentional_reasons = {
-        sid: (meta.get("reason") if isinstance(meta, dict) else str(meta))
+        sid: meta.get("reason", "")
         for sid, meta in intentional.items()
     }
     intentional_by_code: dict[str, list] = {}
     for sid, meta in intentional.items():
-        code = (meta.get("code") if isinstance(meta, dict) else "NO_UPSTREAM") or "NO_UPSTREAM"
+        code = meta.get("code") or "NO_UPSTREAM"
         intentional_by_code.setdefault(code, []).append(sid)
     for k in intentional_by_code:
         intentional_by_code[k] = sorted(intentional_by_code[k])
@@ -155,36 +156,37 @@ def main() -> int:
     unexpected_missing = sorted(
         (registered - materialized) - set(intentional.keys())
     )
-    reg_n = len(registered)
-    mat_n = len(materialized & registered)
+
     cov = (mat_n / reg_n) if reg_n else 0.0
     daily_cov = ((mat_n + len(intentional)) / reg_n) if reg_n else 0.0
 
-    ecosystem: dict[str, dict] = {}
-    for sid, meta in P.items():
-        eco = str(meta.get("primary_category") or "other")
-        slot = ecosystem.setdefault(eco, {"registered": 0, "materialized": 0, "ids": []})
-        slot["registered"] += 1
-        slot["ids"].append(sid)
-        if sid in materialized:
-            slot["materialized"] += 1
-    for eco, slot in ecosystem.items():
-        slot["ids"] = sorted(slot["ids"])
-        r, m = slot["registered"], slot["materialized"]
-        slot["coverage"] = round(m / r, 4) if r else 0.0
+    domains = 0
+    cidr = 0
+    ddir = ROOT / "database" / "domains"
+    idir = ROOT / "database" / "ips"
+    if ddir.is_dir():
+        for p in ddir.glob("*.txt"):
+            domains += count_lines(p)
+    if idir.is_dir():
+        for p in idir.glob("*.txt"):
+            cidr += count_lines(p)
 
-    domains = sum(count_lines(p) for p in (ROOT / "database" / "domains").glob("*.txt"))
-    cidr = sum(count_lines(p) for p in (ROOT / "database" / "ips").glob("*.txt"))
-
-    builder_coverage: dict[str, dict] = {}
-    for client in CLIENTS:
-        d = ROOT / "generated" / client
-        files = list(d.iterdir()) if d.is_dir() else []
-        n = sum(1 for f in files if f.is_file())
-        builder_coverage[client] = {
+    builder_coverage = {}
+    gen = ROOT / "generated"
+    for c in CLIENTS:
+        d = gen / c
+        n = len(list(d.glob("*"))) if d.is_dir() else 0
+        builder_coverage[c] = {
             "files": n,
             "status": "ok" if n > 0 else "missing",
         }
+
+    ecosystem: dict[str, int] = {}
+    for sid, meta in services.items():
+        if not isinstance(meta, dict):
+            continue
+        pc = meta.get("primary_category") or "other"
+        ecosystem[str(pc)] = ecosystem.get(str(pc), 0) + 1
 
     reg = load_yaml(ROOT / "sources" / "registry.yaml")
     all_sources = list(reg.get("sources") or [])
@@ -192,9 +194,10 @@ def main() -> int:
     enabled_ids = [s.get("id") for s in all_sources if s.get("enabled")]
     sources_on = len(enabled_ids)
     health = load_yaml(ROOT / "sources" / "health.yaml")
+    health_sources = health.get("sources") or {}
     source_health = {
         k: (v or {}).get("status")
-        for k, v in (health.get("sources") or {}).items()
+        for k, v in health_sources.items()
     }
     historical_ids = sorted(source_health.keys())
     healthy = sum(1 for s in source_health.values() if s == "healthy")
@@ -203,6 +206,15 @@ def main() -> int:
         health_ratio = sum(1 for s in enabled_health if s == "healthy") / len(enabled_health)
     else:
         health_ratio = (healthy / len(source_health)) if source_health else None
+    # collected_this_run: enabled sources with successful fetch evidence (not merely enabled)
+    collected_ids = []
+    for sid in enabled_ids:
+        meta = health_sources.get(sid) or {}
+        if meta.get("status") == "healthy" and int(meta.get("files_ok") or 0) > 0:
+            collected_ids.append(sid)
+        elif meta.get("last_success") and int(meta.get("files_failed") or 0) == 0 and int(meta.get("files_ok") or 0) > 0:
+            collected_ids.append(sid)
+    collected_this_run = len(collected_ids)
 
     conflicts = {"critical": 0, "high": 0, "medium": 0, "low": 0}
     cpath = day / "conflicts" / "summary.json"
@@ -248,7 +260,8 @@ def main() -> int:
         "source_health": {
             "configured_sources": configured_sources,
             "enabled_sources": sources_on,
-            "collected_this_run": sources_on,
+            "collected_this_run": collected_this_run,
+            "collected_ids": collected_ids,
             "historical_in_health": len(historical_ids),
             "enabled_ids": enabled_ids,
             "historical_ids": historical_ids,
@@ -285,7 +298,7 @@ def main() -> int:
     )
     print(
         f"  sources configured={configured_sources} enabled={sources_on} "
-        f"historical_health={len(historical_ids)}"
+        f"collected={collected_this_run} historical_health={len(historical_ids)}"
     )
     if unexpected_missing:
         print(f"  WARN unexpected_missing={unexpected_missing}")
