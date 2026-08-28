@@ -12,15 +12,12 @@ rules: []
 metadata:
   priority: medium
   confidence: high
-  last_updated: '2026-08-28T13:40:00+00:00'
-  notes: >-
-    Restricted media domain aggregate from MetaCubeX/v2fly category lists.
-    Large list materializes to database/domains/restricted.txt after Collect.
-    Policy: typically PROXY.
+  last_updated: '2026-08-28T14:20:00+00:00'
+  notes: Restricted media aggregate; domains in database/domains/restricted.txt
   stats:
-    domain_count: 0
+    domain_count: 6519
     ip_count: 0
-    total: 0
+    total: 6519
   tags:
   - restricted
 canonical_source: metacubex-category-porn
