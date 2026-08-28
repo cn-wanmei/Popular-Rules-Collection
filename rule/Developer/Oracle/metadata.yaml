@@ -15,11 +15,12 @@ generated_files:
   domain: oracle_domain.list
   ip: null
 statistics:
-  domains: 25
+  domains: 27
   ipv4_or_cidr: 0
-  mixed: 25
+  mixed: 27
 sources:
 - blackmatrix7
+- v2fly
 clients:
 - Mihomo
 - sing-box

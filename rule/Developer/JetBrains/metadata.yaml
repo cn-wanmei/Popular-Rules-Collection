@@ -15,11 +15,12 @@ generated_files:
   domain: jetbrains_domain.list
   ip: null
 statistics:
-  domains: 14
+  domains: 25
   ipv4_or_cidr: 0
-  mixed: 14
+  mixed: 25
 sources:
 - blackmatrix7
+- v2fly
 clients:
 - Mihomo
 - sing-box

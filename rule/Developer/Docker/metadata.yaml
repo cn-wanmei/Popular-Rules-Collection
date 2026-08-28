@@ -15,11 +15,13 @@ generated_files:
   domain: docker_domain.list
   ip: null
 statistics:
-  domains: 7
+  domains: 10
   ipv4_or_cidr: 0
-  mixed: 7
+  mixed: 10
 sources:
 - blackmatrix7
+- metacubex
+- v2fly
 clients:
 - Mihomo
 - sing-box

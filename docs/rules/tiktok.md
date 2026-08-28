@@ -9,10 +9,10 @@
 | Service Type | service |
 | Tags | social |
 | 类型 | domain |
-| Domains | 55 |
+| Domains | 60 |
 | CIDR | 0 |
 | 最后更新 | 2026-08-28 |
-| Sources | blackmatrix7 / v2fly / dler |
+| Sources | blackmatrix7 / metacubex / v2fly / dler |
 | Confidence | HIGH |
 
 ## 用途
@@ -49,6 +49,7 @@
 ## 规则来源（Provenance）
 
 - `blackmatrix7`
+- `metacubex`
 - `v2fly`
 - `dler`
 

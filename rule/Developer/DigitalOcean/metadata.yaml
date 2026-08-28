@@ -15,11 +15,12 @@ generated_files:
   domain: digitalocean_domain.list
   ip: null
 statistics:
-  domains: 4
+  domains: 6
   ipv4_or_cidr: 0
-  mixed: 4
+  mixed: 6
 sources:
 - blackmatrix7
+- v2fly
 clients:
 - Mihomo
 - sing-box

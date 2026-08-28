@@ -15,11 +15,13 @@ generated_files:
   domain: reddit_domain.list
   ip: null
 statistics:
-  domains: 8
+  domains: 15
   ipv4_or_cidr: 0
-  mixed: 8
+  mixed: 15
 sources:
 - blackmatrix7
+- metacubex
+- v2fly
 clients:
 - Mihomo
 - sing-box

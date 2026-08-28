@@ -3,10 +3,12 @@
   "rules": [
     {
       "domain_suffix": [
+        "digitalocean-ui.com",
         "digitalocean.com",
         "digitaloceanspaces.com",
         "do.co",
-        "nginxconfig.io"
+        "nginxconfig.io",
+        "ondigitalocean.com"
       ]
     }
   ]

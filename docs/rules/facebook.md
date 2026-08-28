@@ -12,7 +12,7 @@
 | Domains | 552 |
 | CIDR | 23 |
 | 最后更新 | 2026-08-28 |
-| Sources | blackmatrix7 / v2fly |
+| Sources | blackmatrix7 / metacubex / v2fly |
 | Confidence | HIGH |
 
 ## 用途
@@ -49,6 +49,7 @@
 ## 规则来源（Provenance）
 
 - `blackmatrix7`
+- `metacubex`
 - `v2fly`
 
 由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**

@@ -2,7 +2,7 @@
   "date": "2026-08-28",
   "registered": 187,
   "materialized": 170,
-  "with_domain": 169,
+  "with_domain": 170,
   "with_ip": 36,
   "with_any_client": 171,
   "dataset_globals": {
@@ -649,7 +649,7 @@
       "materialized": true,
       "domain": {
         "available": true,
-        "count": 48
+        "count": 80
       },
       "ip": {
         "available": true,
@@ -1425,8 +1425,8 @@
       "service_type": "aggregate",
       "materialized": true,
       "domain": {
-        "available": false,
-        "count": 0
+        "available": true,
+        "count": 112124
       },
       "ip": {
         "available": true,

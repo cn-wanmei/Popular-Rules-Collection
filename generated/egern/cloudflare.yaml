@@ -1,10 +1,11 @@
 # name: Cloudflare
 # id: cloudflare
-# count: 115
+# count: 120
 no_resolve: true
 domain_suffix_set:
 - argotunnel.com
 - browser.run
+- cf-china.info
 - cf-ipfs.com
 - cf-ns.com
 - cf-ns.net
@@ -32,17 +33,21 @@ domain_suffix_set:
 - cloudflare.pay
 - cloudflare.tv
 - cloudflareaccess.com
+- cloudflareanycast.net
 - cloudflareapps.com
 - cloudflarebolt.com
 - cloudflarebrowser.com
 - cloudflarechallenge.com
+- cloudflarechina.cn
 - cloudflareclient.com
 - cloudflarecn.net
 - cloudflarecp.com
+- cloudflareglobal.net
 - cloudflareinsights-cn.com
 - cloudflareinsights.com
 - cloudflareok.com
 - cloudflarepartners.com
+- cloudflareperf.com
 - cloudflareportal.com
 - cloudflarepreview.com
 - cloudflareprod.com

@@ -33,11 +33,12 @@ generated_files:
   domain: developer_domain.list
   ip: null
 statistics:
-  domains: 70
+  domains: 680
   ipv4_or_cidr: 0
-  mixed: 70
+  mixed: 680
 sources:
 - blackmatrix7
+- metacubex
 clients:
 - Mihomo
 - sing-box

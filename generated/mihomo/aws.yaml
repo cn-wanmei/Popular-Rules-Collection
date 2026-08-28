@@ -76,3 +76,4 @@ payload:
 - +.route53.cn
 - +.sagemaker.com.cn
 - +.thinkboxsoftware.com
+- "DOMAIN-REGEX,.+\\.awsdns-[0-9][0-9]\\.(co\\.uk|com|net|org)$"

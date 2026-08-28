@@ -16,11 +16,13 @@ generated_files:
   domain: amazon_domain.list
   ip: amazon_ip.list
 statistics:
-  domains: 186
+  domains: 256
   ipv4_or_cidr: 15
-  mixed: 201
+  mixed: 271
 sources:
 - blackmatrix7
+- metacubex
+- v2fly
 clients:
 - Mihomo
 - sing-box

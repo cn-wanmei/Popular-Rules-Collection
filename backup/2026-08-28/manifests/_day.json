@@ -1,16 +1,16 @@
 {
   "date": "2026-08-28",
-  "timestamp": "2026-08-28T10:56:56.540642+00:00",
+  "timestamp": "2026-08-28T12:14:17.777237+00:00",
   "registry_version": 3,
   "sources": [
     {
       "source": "blackmatrix7",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T10:56:43.080838+00:00",
-      "files_ok": 134,
+      "timestamp": "2026-08-28T12:13:58.369174+00:00",
+      "files_ok": 140,
       "files_failed": 0,
       "empty_blocked": 0,
-      "rules_declared": 134,
+      "rules_declared": 140,
       "files": [
         {
           "name": "Clash_Apple.yaml",
@@ -1351,6 +1351,66 @@
           "size": 7595,
           "sha256": "35ca7ffb814c4f55f5381fd1ed35f4e8ca732a3c79fb47921ff4232fea22ea19",
           "status": "ok"
+        },
+        {
+          "name": "Clash_AppStore.yaml",
+          "path": "rule/Clash/AppStore/AppStore.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppStore/AppStore.yaml",
+          "service": "apple",
+          "local": "sources/blackmatrix7/Clash_AppStore.yaml",
+          "size": 213,
+          "sha256": "96b8bdfd20cd3937ab08b2eaba286eac7e83e3e580c1e967861f7622ad9d43bf",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_TestFlight.yaml",
+          "path": "rule/Clash/TestFlight/TestFlight.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TestFlight/TestFlight.yaml",
+          "service": "apple",
+          "local": "sources/blackmatrix7/Clash_TestFlight.yaml",
+          "size": 269,
+          "sha256": "efe991b49a7571a81fcd7fcc9c5c9d2fad9b98e892341ee64c3a230db45fbab9",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_AppleDev.yaml",
+          "path": "rule/Clash/AppleDev/AppleDev.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleDev/AppleDev.yaml",
+          "service": "apple",
+          "local": "sources/blackmatrix7/Clash_AppleDev.yaml",
+          "size": 1710,
+          "sha256": "205666f4e5678428ba4bb79400c8b15d421b7752ff0b52318bbf27941df420eb",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_FindMy.yaml",
+          "path": "rule/Clash/FindMy/FindMy.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/FindMy/FindMy.yaml",
+          "service": "apple",
+          "local": "sources/blackmatrix7/Clash_FindMy.yaml",
+          "size": 252,
+          "sha256": "356a86e54dd3806b63a66f4cad93aa726c22e7b430e94fb429d02e1c1b5df61f",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_AppleMedia.yaml",
+          "path": "rule/Clash/AppleMedia/AppleMedia.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleMedia/AppleMedia.yaml",
+          "service": "apple",
+          "local": "sources/blackmatrix7/Clash_AppleMedia.yaml",
+          "size": 1984,
+          "sha256": "991459ec6d4672f45251b8d488b6c2798ecb4803616a28be80b23b2cd23183bc",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_AppleNews.yaml",
+          "path": "rule/Clash/AppleNews/AppleNews.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleNews/AppleNews.yaml",
+          "service": "apple",
+          "local": "sources/blackmatrix7/Clash_AppleNews.yaml",
+          "size": 234,
+          "sha256": "f45b1892d69cac07cbf55d3d498fbaebb22eb686e55f5485e4f697c2ed0eeb54",
+          "status": "ok"
         }
       ],
       "registry_priority": 95,
@@ -1359,11 +1419,11 @@
     {
       "source": "metacubex",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T10:56:48.566194+00:00",
-      "files_ok": 39,
+      "timestamp": "2026-08-28T12:14:09.463667+00:00",
+      "files_ok": 57,
       "files_failed": 0,
       "empty_blocked": 0,
-      "rules_declared": 39,
+      "rules_declared": 57,
       "files": [
         {
           "name": "geosite_alibaba.list",
@@ -1754,6 +1814,186 @@
           "size": 2311341,
           "sha256": "763abbe5bd7d2cd1eae0f88a2423a4e8e04ae9861c6a375ca7ab832abcb495f4",
           "status": "ok"
+        },
+        {
+          "name": "geosite_apple.list",
+          "path": "geo/geosite/apple.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.list",
+          "service": "apple",
+          "local": "sources/metacubex/geosite_apple.list",
+          "size": 36860,
+          "sha256": "7c33aa7be62662e3944d1251c5ffc18292acfc8a57ac8ac56033e614a3b7e664",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_apple_dev.list",
+          "path": "geo/geosite/apple-dev.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-dev.list",
+          "service": "apple",
+          "local": "sources/metacubex/geosite_apple_dev.list",
+          "size": 1037,
+          "sha256": "028f0ab6829bcee63ac28e5046a10d36094c604b99f2e0b713f31ce85e03bb6c",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_apple_update.list",
+          "path": "geo/geosite/apple-update.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-update.list",
+          "service": "apple",
+          "local": "sources/metacubex/geosite_apple_update.list",
+          "size": 426,
+          "sha256": "1026268082ce0c7dd331c89009cfa2016269d2a5919f0a207e54a2189f377c4b",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_icloud.list",
+          "path": "geo/geosite/icloud.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/icloud.list",
+          "service": "icloud",
+          "local": "sources/metacubex/geosite_icloud.list",
+          "size": 811,
+          "sha256": "7e2416b79f7b3f0e8ec625870c2d297d730c454ea831fd3111e46e19b19675ce",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_google.list",
+          "path": "geo/geosite/google.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.list",
+          "service": "google",
+          "local": "sources/metacubex/geosite_google.list",
+          "size": 18231,
+          "sha256": "d311d31a26a1bc413f63ecf1353b86cd034c3e98bd00ed95a96126ac0607b453",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_youtube.list",
+          "path": "geo/geosite/youtube.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.list",
+          "service": "youtube",
+          "local": "sources/metacubex/geosite_youtube.list",
+          "size": 2743,
+          "sha256": "e95f241fa4357918fc1066390c352aad750b571ddea15e3421d30c84e947ac10",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_microsoft.list",
+          "path": "geo/geosite/microsoft.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.list",
+          "service": "microsoft",
+          "local": "sources/metacubex/geosite_microsoft.list",
+          "size": 15481,
+          "sha256": "7abdcf214eeb71ba83ad0bfbf07718fe95df3e815188b019c83c2f87cfc3b93e",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_github.list",
+          "path": "geo/geosite/github.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.list",
+          "service": "github",
+          "local": "sources/metacubex/geosite_github.list",
+          "size": 1924,
+          "sha256": "f5d67e6e0c8799bd292c8a012d579c8af37ee6a0af771299dd6500db4d1202fd",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_cloudflare.list",
+          "path": "geo/geosite/cloudflare.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cloudflare.list",
+          "service": "cloudflare",
+          "local": "sources/metacubex/geosite_cloudflare.list",
+          "size": 1488,
+          "sha256": "ce050890a31f78d22732569a351ec857ab575089a86877a52aecb2f12eff024f",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_amazon.list",
+          "path": "geo/geosite/amazon.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/amazon.list",
+          "service": "amazon",
+          "local": "sources/metacubex/geosite_amazon.list",
+          "size": 4424,
+          "sha256": "fdad90dc373db211aca3e4164db6046e53f977b7812d6af18ba259f49293cd40",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_facebook.list",
+          "path": "geo/geosite/facebook.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/facebook.list",
+          "service": "facebook",
+          "local": "sources/metacubex/geosite_facebook.list",
+          "size": 7120,
+          "sha256": "c596908eb3c2227cd9d7b9974f8fed38ad4439118a0a10c4f63c69181313fd9e",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_instagram.list",
+          "path": "geo/geosite/instagram.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/instagram.list",
+          "service": "instagram",
+          "local": "sources/metacubex/geosite_instagram.list",
+          "size": 1447,
+          "sha256": "e5cba6ce4fa5a0dddbd4710d9dd5b6693c249e6f5be4179401843109ecbca228",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_twitter.list",
+          "path": "geo/geosite/twitter.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitter.list",
+          "service": "twitter",
+          "local": "sources/metacubex/geosite_twitter.list",
+          "size": 369,
+          "sha256": "7bc17d19d2fa089b36993e56275eb0eb7355963f3e90a711364086442fd369c0",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_tiktok.list",
+          "path": "geo/geosite/tiktok.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.list",
+          "service": "tiktok",
+          "local": "sources/metacubex/geosite_tiktok.list",
+          "size": 730,
+          "sha256": "892f03350bb9c1d5e2fa15b417ac6759f13b12f558208d979d9f4d4cec310003",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_whatsapp.list",
+          "path": "geo/geosite/whatsapp.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/whatsapp.list",
+          "service": "whatsapp",
+          "local": "sources/metacubex/geosite_whatsapp.list",
+          "size": 218,
+          "sha256": "5554ce8069e2b3ca3222f112b2192652e96e5574be9096f71579191c8d498bfc",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_reddit.list",
+          "path": "geo/geosite/reddit.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/reddit.list",
+          "service": "reddit",
+          "local": "sources/metacubex/geosite_reddit.list",
+          "size": 205,
+          "sha256": "bbfb9746c59c64d225d9126f23dc1f4d376edbafab2ac297415be9e9a059af16",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_docker.list",
+          "path": "geo/geosite/docker.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/docker.list",
+          "service": "docker",
+          "local": "sources/metacubex/geosite_docker.list",
+          "size": 177,
+          "sha256": "6432dc0a4e52aca177e053c54274d2107bff56c21af21eeb6ccbf6169df3d251",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_category_dev.list",
+          "path": "geo/geosite/category-dev.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-dev.list",
+          "service": "developer",
+          "local": "sources/metacubex/geosite_category_dev.list",
+          "size": 12383,
+          "sha256": "c2bf9920c87188b6e386f3c7404db15ecdb7709e2a14a9ebacccc976eb3aaf1f",
+          "status": "ok"
         }
       ],
       "registry_priority": 90,
@@ -1762,11 +2002,11 @@
     {
       "source": "v2fly",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T10:56:53.943546+00:00",
-      "files_ok": 34,
+      "timestamp": "2026-08-28T12:14:15.705330+00:00",
+      "files_ok": 51,
       "files_failed": 0,
       "empty_blocked": 0,
-      "rules_declared": 34,
+      "rules_declared": 51,
       "files": [
         {
           "name": "v2fly_deepseek",
@@ -2107,6 +2347,176 @@
           "size": 486,
           "sha256": "dbe560654836a368cf5c36ed3962f5fe983f07d0f160aa8ca7e48f63cbec527b",
           "status": "ok"
+        },
+        {
+          "name": "v2fly_apple",
+          "path": "data/apple",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/apple",
+          "service": "apple",
+          "local": "sources/v2fly/v2fly_apple",
+          "size": 17100,
+          "sha256": "d46d18afe2f2d51bd48ddd239c43f460a32a9d605b384baa2cd6c70ec29cf29f",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_icloud",
+          "path": "data/icloud",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/icloud",
+          "service": "icloud",
+          "local": "sources/v2fly/v2fly_icloud",
+          "size": 774,
+          "sha256": "c46ade14884382a65b8bb9f1b6b8e484be639ffe17abcf2ec6f50464cb56f04f",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_google",
+          "path": "data/google",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/google",
+          "service": "google",
+          "local": "sources/v2fly/v2fly_google",
+          "size": 12516,
+          "sha256": "5a85d201b8fb4b03486515618da4c164a0ce0c59341cb2dee6d1b0bdca176653",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_youtube",
+          "path": "data/youtube",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/youtube",
+          "service": "youtube",
+          "local": "sources/v2fly/v2fly_youtube",
+          "size": 2444,
+          "sha256": "9ffb657176fdffed567953749c137bb3d8a216ce4e839b3831b626c752902213",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_microsoft",
+          "path": "data/microsoft",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/microsoft",
+          "service": "microsoft",
+          "local": "sources/v2fly/v2fly_microsoft",
+          "size": 7801,
+          "sha256": "b033d7375c45b2613f5230046ef190d0f2d2c83c1eba7a082d41a0c6088286f4",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_amazon",
+          "path": "data/amazon",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/amazon",
+          "service": "amazon",
+          "local": "sources/v2fly/v2fly_amazon",
+          "size": 2149,
+          "sha256": "f1b24bcc1d576f30a09731b10cf55ba50822fd433b8f35568c77bbb45bdd5f0b",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_aws",
+          "path": "data/aws",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/aws",
+          "service": "aws",
+          "local": "sources/v2fly/v2fly_aws",
+          "size": 976,
+          "sha256": "cdb3797a5ba28abc72a82bb6334a6ec777100469994e6a50d3840fb8e1ced802",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_docker",
+          "path": "data/docker",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/docker",
+          "service": "docker",
+          "local": "sources/v2fly/v2fly_docker",
+          "size": 181,
+          "sha256": "f1b27237e9b861d88aaf80399af5088781e177780ecc7b30dd7795fea404546e",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_jetbrains",
+          "path": "data/jetbrains",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/jetbrains",
+          "service": "jetbrains",
+          "local": "sources/v2fly/v2fly_jetbrains",
+          "size": 378,
+          "sha256": "e582f14220308511a9e584612d21fa01d76c552fcfba2838b4aeedd53adb17f7",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_atlassian",
+          "path": "data/atlassian",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/atlassian",
+          "service": "atlassian",
+          "local": "sources/v2fly/v2fly_atlassian",
+          "size": 136,
+          "sha256": "3ee60d83f78b67f6fa5b80281cbeda40d800ee28e705a7b179c0d27823ecfeda",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_slack",
+          "path": "data/slack",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/slack",
+          "service": "slack",
+          "local": "sources/v2fly/v2fly_slack",
+          "size": 158,
+          "sha256": "0c1db5d6d7343fd4b423109be5396dea7a0b2769b9e150f1a3a49b1dde04ddec",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_zoom",
+          "path": "data/zoom",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/zoom",
+          "service": "zoom",
+          "local": "sources/v2fly/v2fly_zoom",
+          "size": 29,
+          "sha256": "bf9535bd84985865b4f8a8768ff9b6ec916b28e364fa157cfe30ee1ee6bb06e1",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_adobe",
+          "path": "data/adobe",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/adobe",
+          "service": "adobe",
+          "local": "sources/v2fly/v2fly_adobe",
+          "size": 2157,
+          "sha256": "454162729a6834f24f32524afc743b38d80a31a95f80ff4d7fd1f09c76e522e1",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_oracle",
+          "path": "data/oracle",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/oracle",
+          "service": "oracle",
+          "local": "sources/v2fly/v2fly_oracle",
+          "size": 233,
+          "sha256": "b4b1b50561a4e0d9d4cc1a7e0b6fbb1e7ba07b80ba5a94d1692f0b6cb898288f",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_digitalocean",
+          "path": "data/digitalocean",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/digitalocean",
+          "service": "digitalocean",
+          "local": "sources/v2fly/v2fly_digitalocean",
+          "size": 100,
+          "sha256": "05a81eb92baf04558e0db3f32889f046cc7b587090f0ca7742e951b0fb17b3cc",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_reddit",
+          "path": "data/reddit",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/reddit",
+          "service": "reddit",
+          "local": "sources/v2fly/v2fly_reddit",
+          "size": 182,
+          "sha256": "c9a8f8d31c03484cad62527e65d47b101a657d3293b9adead66a2eecf80fbce9",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_mojang",
+          "path": "data/mojang",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/mojang",
+          "service": "minecraft",
+          "local": "sources/v2fly/v2fly_mojang",
+          "size": 104,
+          "sha256": "ffc054b4b5bb01aa9e25c23444282740f0befea2b2fc8eb3e8ad53156a632757",
+          "status": "ok"
         }
       ],
       "registry_priority": 85,
@@ -2115,7 +2525,7 @@
     {
       "source": "dler",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T10:56:56.540282+00:00",
+      "timestamp": "2026-08-28T12:14:17.776851+00:00",
       "files_ok": 20,
       "files_failed": 0,
       "empty_blocked": 0,

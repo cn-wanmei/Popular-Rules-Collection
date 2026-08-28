@@ -16,11 +16,13 @@ generated_files:
   domain: youtube_domain.list
   ip: youtube_ip.list
 statistics:
-  domains: 180
+  domains: 182
   ipv4_or_cidr: 3
-  mixed: 183
+  mixed: 185
 sources:
 - blackmatrix7
+- metacubex
+- v2fly
 - dler
 clients:
 - Mihomo

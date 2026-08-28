@@ -7,10 +7,10 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 186 |
+| Domains | 256 |
 | IP/CIDR | 15 |
-| Mixed | 201 |
-| Sources | blackmatrix7 |
+| Mixed | 271 |
+| Sources | blackmatrix7, metacubex, v2fly |
 | Updated | 2026-08-28 |
 
 ## 基础规则（Classical）
@@ -38,7 +38,7 @@
 
 ## 来源
 
-`blackmatrix7`
+`blackmatrix7`, `metacubex`, `v2fly`
 
 ---
 

@@ -6,12 +6,338 @@ version: 1
 source:
 - id: blackmatrix7
   priority: 95
+- id: metacubex
+  priority: 90
+- id: v2fly
+  priority: 85
 rules:
 - type: domain
-  value: voice.telephony.goog
+  value: 2mdn-cn.net
   sources: &id001
   - id: blackmatrix7
     priority: 95
+  - id: metacubex
+    priority: 90
+  - id: v2fly
+    priority: 85
+- type: domain
+  value: 2mdn.net
+  sources: *id001
+- type: domain
+  value: admob-cn.com
+  sources: *id001
+- type: domain
+  value: adservice.google.com
+  sources: *id001
+- type: domain
+  value: analytics.google.com
+  sources: *id001
+- type: domain
+  value: app-analytics-services.com
+  sources: *id001
+- type: domain
+  value: app-measurement-cn.com
+  sources: *id001
+- type: domain
+  value: app-measurement.com
+  sources: *id001
+- type: domain
+  value: apps5.oingo.com
+  sources: *id001
+- type: domain
+  value: avail.googleflights.net
+  sources: *id001
+- type: domain
+  value: beacons.gcp.gvt2.com
+  sources: *id001
+- type: domain
+  value: beacons.gvt2.com
+  sources: *id001
+- type: domain
+  value: beacons2.gvt2.com
+  sources: *id001
+- type: domain
+  value: beacons3.gvt2.com
+  sources: *id001
+- type: domain
+  value: c.admob.com
+  sources: *id001
+- type: domain
+  value: c.android.clients.google.com
+  sources: *id001
+- type: domain
+  value: cache-management-prod.google.com
+  sources: *id001
+- type: domain
+  value: cache.pack.google.com
+  sources: *id001
+- type: domain
+  value: checkin.gstatic.com
+  sources: *id001
+- type: domain
+  value: clickserve.cc-dt.com
+  sources: *id001
+- type: domain
+  value: clickserve.dartsearch.net
+  sources: *id001
+- type: domain
+  value: clickserver.googleads.com
+  sources: *id001
+- type: domain
+  value: clientservices.googleapis.com
+  sources: *id001
+- type: domain
+  value: cn.widevine.com
+  sources: *id001
+- type: domain
+  value: connectivitycheck.gstatic.com
+  sources: *id001
+- type: domain
+  value: csi.gstatic.com
+  sources: *id001
+- type: domain
+  value: dartsearch-cn.net
+  sources: *id001
+- type: domain
+  value: dg-meta.video.google.com
+  sources: *id001
+- type: domain
+  value: dl.google.com
+  sources: *id001
+- type: domain
+  value: dl.l.google.com
+  sources: *id001
+- type: domain
+  value: doubleclick-cn.net
+  sources: *id001
+- type: domain
+  value: doubleclick.net
+  sources: *id001
+- type: domain
+  value: download.mlcc.google.com
+  sources: *id001
+- type: domain
+  value: download.tensorflow.google.com
+  sources: *id001
+- type: domain
+  value: fontfiles.googleapis.com
+  sources: *id001
+- type: domain
+  value: fonts.googleapis.com
+  sources: *id001
+- type: domain
+  value: fonts.gstatic.com
+  sources: *id001
+- type: domain
+  value: g0.gstatic.com
+  sources: *id001
+- type: domain
+  value: g1.gstatic.com
+  sources: *id001
+- type: domain
+  value: g2.gstatic.com
+  sources: *id001
+- type: domain
+  value: g3.gstatic.com
+  sources: *id001
+- type: domain
+  value: gonglchuangl.net
+  sources: *id001
+- type: domain
+  value: gongyichuangyi.net
+  sources: *id001
+- type: domain
+  value: google-analytics-cn.com
+  sources: *id001
+- type: domain
+  value: google-analytics.com
+  sources: *id001
+- type: domain
+  value: google-ohttp-relay-safebrowsing.fastly-edge.com
+  sources: *id001
+- type: domain
+  value: googleadservices-cn.com
+  sources: *id001
+- type: domain
+  value: googleadservices.com
+  sources: *id001
+- type: domain
+  value: googleanalytics.com
+  sources: *id001
+- type: domain
+  value: googleapis-cn.com
+  sources: *id001
+- type: domain
+  value: googleapps-cn.com
+  sources: *id001
+- type: domain
+  value: googleflights-cn.net
+  sources: *id001
+- type: domain
+  value: googleoptimize-cn.com
+  sources: *id001
+- type: domain
+  value: googleoptimize.com
+  sources: *id001
+- type: domain
+  value: googlesyndication-cn.com
+  sources: *id001
+- type: domain
+  value: googlesyndication.com
+  sources: *id001
+- type: domain
+  value: googletagmanager-cn.com
+  sources: *id001
+- type: domain
+  value: googletagmanager.com
+  sources: *id001
+- type: domain
+  value: googletagservices-cn.com
+  sources: *id001
+- type: domain
+  value: googletagservices.com
+  sources: *id001
+- type: domain
+  value: googletraveladservices-cn.com
+  sources: *id001
+- type: domain
+  value: googletraveladservices.com
+  sources: *id001
+- type: domain
+  value: googlevads-cn.com
+  sources: *id001
+- type: domain
+  value: gstatic-cn.com
+  sources: *id001
+- type: domain
+  value: gstaticadssl.l.google.com
+  sources: *id001
+- type: domain
+  value: gtm.oasisfeng.com
+  sources: *id001
+- type: domain
+  value: imasdk.googleapis.com
+  sources: *id001
+- type: domain
+  value: pagead-googlehosted.l.google.com
+  sources: *id001
+- type: domain
+  value: performanceparameters.googleapis.com
+  sources: *id001
+- type: domain
+  value: prod-controlbe.floonet.goog
+  sources: *id001
+- type: domain
+  value: prod-databe.floonet.goog
+  sources: *id001
+- type: domain
+  value: prod.databe.floonet.goog
+  sources: *id001
+- type: domain
+  value: qiao-cn.com
+  sources: *id001
+- type: domain
+  value: qpx.googleflights.net
+  sources: *id001
+- type: domain
+  value: recaptcha-cn.net
+  sources: *id001
+- type: domain
+  value: recaptcha.net
+  sources: *id001
+- type: domain
+  value: redirector.bdn.dev
+  sources: *id001
+- type: domain
+  value: redirector.c.chat.google.com
+  sources: *id001
+- type: domain
+  value: redirector.c.mail.google.com
+  sources: *id001
+- type: domain
+  value: redirector.c.pack.google.com
+  sources: *id001
+- type: domain
+  value: redirector.c.youtubeeducation.com
+  sources: *id001
+- type: domain
+  value: redirector.gcpcdn.gvt1.com
+  sources: *id001
+- type: domain
+  value: redirector.gvt1.com
+  sources: *id001
+- type: domain
+  value: redirector.offline-maps.gvt1.com
+  sources: *id001
+- type: domain
+  value: redirector.snap.gvt1.com
+  sources: *id001
+- type: domain
+  value: redirector.xn--ngstr-lra8j.com
+  sources: *id001
+- type: domain
+  value: safebrowsing-cache.google.com
+  sources: *id001
+- type: domain
+  value: safebrowsing.googleapis.com
+  sources: *id001
+- type: domain
+  value: service.urchin.com
+  sources: *id001
+- type: domain
+  value: ssl-google-analytics.l.google.com
+  sources: *id001
+- type: domain
+  value: ssl.gstatic.com
+  sources: *id001
+- type: domain
+  value: staging-controlbe.floonet.goog
+  sources: *id001
+- type: domain
+  value: staging-databe.floonet.goog
+  sources: *id001
+- type: domain
+  value: staging.databe.floonet.goog
+  sources: *id001
+- type: domain
+  value: tac.googleapis.com
+  sources: *id001
+- type: domain
+  value: tools.google.com
+  sources: *id001
+- type: domain
+  value: update.googleapis.com
+  sources: *id001
+- type: domain
+  value: voice.telephony.goog
+  sources: *id001
+- type: domain
+  value: wear.googleapis.com
+  sources: *id001
+- type: domain
+  value: www-google-analytics.l.google.com
+  sources: *id001
+- type: domain
+  value: www-googletagmanager.l.google.com
+  sources: *id001
+- type: domain
+  value: www.destinationurl.com
+  sources: *id001
+- type: domain
+  value: www.gstatic.com
+  sources: *id001
+- type: domain
+  value: www.pxcc.com
+  sources: *id001
+- type: domain
+  value: www.recaptcha-cn.net
+  sources: *id001
+- type: domain
+  value: www.recaptcha.net
+  sources: *id001
+- type: domain
+  value: yt3.googleusercontent.com
+  sources: *id001
 - type: domain_keyword
   value: appspot
   sources: *id001
@@ -52,6 +378,9 @@ rules:
   value: abc.xyz
   sources: *id001
 - type: domain_suffix
+  value: actifio.com
+  sources: *id001
+- type: domain_suffix
   value: adgoogle.net
   sources: *id001
 - type: domain_suffix
@@ -64,6 +393,9 @@ rules:
   value: admob.com
   sources: *id001
 - type: domain_suffix
+  value: ads.youtube.com
+  sources: *id001
+- type: domain_suffix
   value: adsense.com
   sources: *id001
 - type: domain_suffix
@@ -71,6 +403,12 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: adsenseformobileapps.com
+  sources: *id001
+- type: domain_suffix
+  value: adservice.google.com
+  sources: *id001
+- type: domain_suffix
+  value: adtrafficquality.google
   sources: *id001
 - type: domain_suffix
   value: advertisercommunity.com
@@ -88,6 +426,42 @@ rules:
   value: adwordsexpress.com
   sources: *id001
 - type: domain_suffix
+  value: ai.google.dev
+  sources: *id001
+- type: domain_suffix
+  value: ai.studio
+  sources: *id001
+- type: domain_suffix
+  value: alkalicore-pa.clients6.google.com
+  sources: *id001
+- type: domain_suffix
+  value: alkalimakersuite-pa.clients6.google.com
+  sources: *id001
+- type: domain_suffix
+  value: alt1-mtalk.google.com
+  sources: *id001
+- type: domain_suffix
+  value: alt2-mtalk.google.com
+  sources: *id001
+- type: domain_suffix
+  value: alt3-mtalk.google.com
+  sources: *id001
+- type: domain_suffix
+  value: alt4-mtalk.google.com
+  sources: *id001
+- type: domain_suffix
+  value: alt5-mtalk.google.com
+  sources: *id001
+- type: domain_suffix
+  value: alt6-mtalk.google.com
+  sources: *id001
+- type: domain_suffix
+  value: alt7-mtalk.google.com
+  sources: *id001
+- type: domain_suffix
+  value: alt8-mtalk.google.com
+  sources: *id001
+- type: domain_suffix
   value: amp.dev
   sources: *id001
 - type: domain_suffix
@@ -100,7 +474,19 @@ rules:
   value: ampproject.org
   sources: *id001
 - type: domain_suffix
+  value: analytics-alv.google.com
+  sources: *id001
+- type: domain_suffix
+  value: analytics.google.com
+  sources: *id001
+- type: domain_suffix
+  value: android
+  sources: *id001
+- type: domain_suffix
   value: android.com
+  sources: *id001
+- type: domain_suffix
+  value: android.googlesource.com
   sources: *id001
 - type: domain_suffix
   value: androidify.com
@@ -112,10 +498,22 @@ rules:
   value: angulardart.org
   sources: *id001
 - type: domain_suffix
+  value: antigravity-pa.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: antigravity.googleapis.com
+  sources: *id001
+- type: domain_suffix
   value: api.ai
   sources: *id001
 - type: domain_suffix
   value: apigee.com
+  sources: *id001
+- type: domain_suffix
+  value: app-ads-services.com
+  sources: *id001
+- type: domain_suffix
+  value: app-analytics-services-att.com
   sources: *id001
 - type: domain_suffix
   value: app-analytics-services.com
@@ -173,6 +571,9 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: bdn.dev
+  sources: *id001
+- type: domain_suffix
+  value: beacons.gcp.gvt2.com
   sources: *id001
 - type: domain_suffix
   value: beacons.gvt2.com
@@ -442,7 +843,22 @@ rules:
   value: bumptunes.com
   sources: *id001
 - type: domain_suffix
+  value: c.admob.com
+  sources: *id001
+- type: domain_suffix
+  value: c.android.clients.google.com
+  sources: *id001
+- type: domain_suffix
   value: c.gle
+  sources: *id001
+- type: domain_suffix
+  value: c.pki.goog
+  sources: *id001
+- type: domain_suffix
+  value: cache-management-prod.google.com
+  sources: *id001
+- type: domain_suffix
+  value: cache.pack.google.com
   sources: *id001
 - type: domain_suffix
   value: campuslondon.com
@@ -461,6 +877,12 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: chat.gle
+  sources: *id001
+- type: domain_suffix
+  value: checkin.gstatic.com
+  sources: *id001
+- type: domain_suffix
+  value: chrome
   sources: *id001
 - type: domain_suffix
   value: chrome.com
@@ -496,10 +918,25 @@ rules:
   value: clickserve.cc-dt.com
   sources: *id001
 - type: domain_suffix
+  value: clickserve.dartsearch.net
+  sources: *id001
+- type: domain_suffix
   value: clickserver.googleads.com
   sources: *id001
 - type: domain_suffix
+  value: clients1.google.com
+  sources: *id001
+- type: domain_suffix
+  value: clientservices.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: cloudaicompanion.googleapis.com
+  sources: *id001
+- type: domain_suffix
   value: cloudburstresearch.com
+  sources: *id001
+- type: domain_suffix
+  value: cloudcode-pa.googleapis.com
   sources: *id001
 - type: domain_suffix
   value: cloudfunctions.net
@@ -511,10 +948,16 @@ rules:
   value: cloudrobotics.com
   sources: *id001
 - type: domain_suffix
+  value: cn.widevine.com
+  sources: *id001
+- type: domain_suffix
   value: cobrasearch.com
   sources: *id001
 - type: domain_suffix
   value: codespot.com
+  sources: *id001
+- type: domain_suffix
+  value: connectivitycheck.gstatic.com
   sources: *id001
 - type: domain_suffix
   value: conscrypt.com
@@ -538,10 +981,19 @@ rules:
   value: crashlytics.com
   sources: *id001
 - type: domain_suffix
+  value: crashlyticsreports-pa.googleapis.com
+  sources: *id001
+- type: domain_suffix
   value: crbug.com
   sources: *id001
 - type: domain_suffix
   value: creativelab5.com
+  sources: *id001
+- type: domain_suffix
+  value: crl.pki.goog
+  sources: *id001
+- type: domain_suffix
+  value: crls.pki.goog
   sources: *id001
 - type: domain_suffix
   value: crossmediapanel.com
@@ -554,6 +1006,12 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: cs4hs.com
+  sources: *id001
+- type: domain_suffix
+  value: csi.gstatic.com
+  sources: *id001
+- type: domain_suffix
+  value: daily-cloudcode-pa.googleapis.com
   sources: *id001
 - type: domain_suffix
   value: dart.dev
@@ -577,6 +1035,9 @@ rules:
   value: dataliberation.org
   sources: *id001
 - type: domain_suffix
+  value: dclk
+  sources: *id001
+- type: domain_suffix
   value: debug.com
   sources: *id001
 - type: domain_suffix
@@ -598,6 +1059,9 @@ rules:
   value: devsitetest.how
   sources: *id001
 - type: domain_suffix
+  value: dg-meta.video.google.com
+  sources: *id001
+- type: domain_suffix
   value: dialogflow.com
   sources: *id001
 - type: domain_suffix
@@ -610,13 +1074,31 @@ rules:
   value: digitalattackmap.com
   sources: *id001
 - type: domain_suffix
+  value: dl.google.com
+  sources: *id001
+- type: domain_suffix
+  value: dl.l.google.com
+  sources: *id001
+- type: domain_suffix
+  value: docs.new
+  sources: *id001
+- type: domain_suffix
   value: doubleclick-cn.net
+  sources: *id001
+- type: domain_suffix
+  value: doubleclick.cn
   sources: *id001
 - type: domain_suffix
   value: doubleclick.com
   sources: *id001
 - type: domain_suffix
   value: doubleclick.net
+  sources: *id001
+- type: domain_suffix
+  value: download.mlcc.google.com
+  sources: *id001
+- type: domain_suffix
+  value: download.tensorflow.google.com
   sources: *id001
 - type: domain_suffix
   value: episodic.com
@@ -628,6 +1110,9 @@ rules:
   value: fastlane.tools
   sources: *id001
 - type: domain_suffix
+  value: fcmatch.google.com
+  sources: *id001
+- type: domain_suffix
   value: feedburner.com
   sources: *id001
 - type: domain_suffix
@@ -637,16 +1122,73 @@ rules:
   value: financeleadsonline.com
   sources: *id001
 - type: domain_suffix
+  value: firebase-settings.crashlytics.com
+  sources: *id001
+- type: domain_suffix
+  value: firebase.com
+  sources: *id001
+- type: domain_suffix
+  value: firebase.google.com
+  sources: *id001
+- type: domain_suffix
+  value: firebase.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: firebase.io
+  sources: *id001
+- type: domain_suffix
   value: firebaseapp.com
   sources: *id001
 - type: domain_suffix
+  value: firebaseappcheck.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: firebasedynamiclinks-ipv4.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: firebasedynamiclinks-ipv6.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: firebasedynamiclinks.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: firebaseinappmessaging.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: firebaseinstallations.googleapis.com
+  sources: *id001
+- type: domain_suffix
   value: firebaseio.com
+  sources: *id001
+- type: domain_suffix
+  value: firebaselogging-pa.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: firebaselogging.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: firebaseperusertopics-pa.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: firebaseremoteconfig.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: fitbit.com
   sources: *id001
 - type: domain_suffix
   value: flutter.dev
   sources: *id001
 - type: domain_suffix
   value: flutterapp.com
+  sources: *id001
+- type: domain_suffix
+  value: fontfiles.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: fonts.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: fonts.gstatic.com
   sources: *id001
 - type: domain_suffix
   value: foofle.com
@@ -673,7 +1215,22 @@ rules:
   value: g.page
   sources: *id001
 - type: domain_suffix
+  value: g0.gstatic.com
+  sources: *id001
+- type: domain_suffix
+  value: g1.gstatic.com
+  sources: *id001
+- type: domain_suffix
+  value: g2.gstatic.com
+  sources: *id001
+- type: domain_suffix
+  value: g3.gstatic.com
+  sources: *id001
+- type: domain_suffix
   value: gateway.dev
+  sources: *id001
+- type: domain_suffix
+  value: gbiz
   sources: *id001
 - type: domain_suffix
   value: gcp.gvt2.com
@@ -694,7 +1251,13 @@ rules:
   value: get.how
   sources: *id001
 - type: domain_suffix
+  value: get.new
+  sources: *id001
+- type: domain_suffix
   value: get.page
+  sources: *id001
+- type: domain_suffix
+  value: get.rsvp
   sources: *id001
 - type: domain_suffix
   value: getbumptop.com
@@ -709,13 +1272,25 @@ rules:
   value: ggoogle.com
   sources: *id001
 - type: domain_suffix
+  value: ggpht.cn
+  sources: *id001
+- type: domain_suffix
+  value: ggpht.com
+  sources: *id001
+- type: domain_suffix
   value: gipscorp.com
   sources: *id001
 - type: domain_suffix
   value: gkecnapps.cn
   sources: *id001
 - type: domain_suffix
+  value: gle
+  sources: *id001
+- type: domain_suffix
   value: globaledu.org
+  sources: *id001
+- type: domain_suffix
+  value: gmail
   sources: *id001
 - type: domain_suffix
   value: gmail.com
@@ -763,6 +1338,9 @@ rules:
   value: goo.gl
   sources: *id001
 - type: domain_suffix
+  value: goog
+  sources: *id001
+- type: domain_suffix
   value: googel.com
   sources: *id001
 - type: domain_suffix
@@ -772,10 +1350,19 @@ rules:
   value: googl.com
   sources: *id001
 - type: domain_suffix
+  value: google
+  sources: *id001
+- type: domain_suffix
+  value: google-access.net
+  sources: *id001
+- type: domain_suffix
   value: google-analytics-cn.com
   sources: *id001
 - type: domain_suffix
   value: google-analytics.com
+  sources: *id001
+- type: domain_suffix
+  value: google-ohttp-relay-safebrowsing.fastly-edge.com
   sources: *id001
 - type: domain_suffix
   value: google-syndication.com
@@ -860,6 +1447,9 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: google.cn
+  sources: *id001
+- type: domain_suffix
+  value: google.co
   sources: *id001
 - type: domain_suffix
   value: google.co.ao
@@ -1372,10 +1962,22 @@ rules:
   value: googleadapis.com
   sources: *id001
 - type: domain_suffix
+  value: googleadapis.l.google.com
+  sources: *id001
+- type: domain_suffix
+  value: googleads-cn.com
+  sources: *id001
+- type: domain_suffix
+  value: googleads.com
+  sources: *id001
+- type: domain_suffix
   value: googleadservices-cn.com
   sources: *id001
 - type: domain_suffix
   value: googleadservices.com
+  sources: *id001
+- type: domain_suffix
+  value: googleadsserving.cn
   sources: *id001
 - type: domain_suffix
   value: googleanalytics.com
@@ -1522,6 +2124,12 @@ rules:
   value: googleventures.com
   sources: *id001
 - type: domain_suffix
+  value: googlevideo.com
+  sources: *id001
+- type: domain_suffix
+  value: googlezip.net
+  sources: *id001
+- type: domain_suffix
   value: googlr.com
   sources: *id001
 - type: domain_suffix
@@ -1546,10 +2154,19 @@ rules:
   value: gstatic.com
   sources: *id001
 - type: domain_suffix
+  value: gstaticadssl.l.google.com
+  sources: *id001
+- type: domain_suffix
   value: gstaticcnapps.cn
   sources: *id001
 - type: domain_suffix
   value: gsuite.com
+  sources: *id001
+- type: domain_suffix
+  value: gtm.oasisfeng.com
+  sources: *id001
+- type: domain_suffix
+  value: guge
   sources: *id001
 - type: domain_suffix
   value: gv.com
@@ -1561,7 +2178,13 @@ rules:
   value: gvt1-cn.com
   sources: *id001
 - type: domain_suffix
+  value: gvt1.com
+  sources: *id001
+- type: domain_suffix
   value: gvt2-cn.com
+  sources: *id001
+- type: domain_suffix
+  value: gvt2.com
   sources: *id001
 - type: domain_suffix
   value: gvt3.com
@@ -1582,7 +2205,16 @@ rules:
   value: gwtproject.org
   sources: *id001
 - type: domain_suffix
+  value: hangout
+  sources: *id001
+- type: domain_suffix
+  value: haplorrhini.com
+  sources: *id001
+- type: domain_suffix
   value: hdrplusdata.org
+  sources: *id001
+- type: domain_suffix
+  value: hey.boo
   sources: *id001
 - type: domain_suffix
   value: hey.gle
@@ -1600,13 +2232,22 @@ rules:
   value: hwgo.com
   sources: *id001
 - type: domain_suffix
+  value: i.pki.goog
+  sources: *id001
+- type: domain_suffix
   value: iam.soy
   sources: *id001
 - type: domain_suffix
   value: iamremarkable.org
   sources: *id001
 - type: domain_suffix
+  value: idx.dev
+  sources: *id001
+- type: domain_suffix
   value: igoogle.com
+  sources: *id001
+- type: domain_suffix
+  value: imasdk.googleapis.com
   sources: *id001
 - type: domain_suffix
   value: impermium.com
@@ -1625,6 +2266,12 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: kaggle.io
+  sources: *id001
+- type: domain_suffix
+  value: kaggle.net
+  sources: *id001
+- type: domain_suffix
+  value: kaggleusercontent.com
   sources: *id001
 - type: domain_suffix
   value: keyhole.com
@@ -1648,6 +2295,12 @@ rules:
   value: madewithcode.com
   sources: *id001
 - type: domain_suffix
+  value: mail-ads.google.com
+  sources: *id001
+- type: domain_suffix
+  value: marketingplatform.google.com
+  sources: *id001
+- type: domain_suffix
   value: material.io
   sources: *id001
 - type: domain_suffix
@@ -1660,10 +2313,25 @@ rules:
   value: mfg-inspector.com
   sources: *id001
 - type: domain_suffix
+  value: mobileads.google.com
+  sources: *id001
+- type: domain_suffix
   value: mobileview.page
   sources: *id001
 - type: domain_suffix
   value: moodstocks.com
+  sources: *id001
+- type: domain_suffix
+  value: mtalk-dev.google.com
+  sources: *id001
+- type: domain_suffix
+  value: mtalk-staging.google.com
+  sources: *id001
+- type: domain_suffix
+  value: mtalk.google.com
+  sources: *id001
+- type: domain_suffix
+  value: mtalk4.google.com
   sources: *id001
 - type: domain_suffix
   value: near.by
@@ -1675,13 +2343,31 @@ rules:
   value: neverware.com
   sources: *id001
 - type: domain_suffix
+  value: new.day
+  sources: *id001
+- type: domain_suffix
+  value: nexus
+  sources: *id001
+- type: domain_suffix
   value: nomulus.foo
+  sources: *id001
+- type: domain_suffix
+  value: notebooklm-pa.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: notebooklm.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: o.pki.goog
   sources: *id001
 - type: domain_suffix
   value: oasisfeng.com
   sources: *id001
 - type: domain_suffix
   value: oauthz.com
+  sources: *id001
+- type: domain_suffix
+  value: ocsp.pki.goog
   sources: *id001
 - type: domain_suffix
   value: ok.gle
@@ -1714,10 +2400,19 @@ rules:
   value: openweave.io
   sources: *id001
 - type: domain_suffix
+  value: openxla.org
+  sources: *id001
+- type: domain_suffix
   value: orbitera.com
   sources: *id001
 - type: domain_suffix
   value: page.link
+  sources: *id001
+- type: domain_suffix
+  value: pagead-googlehosted.l.google.com
+  sources: *id001
+- type: domain_suffix
+  value: pagead.l.google.com
   sources: *id001
 - type: domain_suffix
   value: pagespeedmobilizer.com
@@ -1729,10 +2424,16 @@ rules:
   value: panoramio.com
   sources: *id001
 - type: domain_suffix
+  value: partnerad.l.google.com
+  sources: *id001
+- type: domain_suffix
   value: partylikeits1986.org
   sources: *id001
 - type: domain_suffix
   value: paxlicense.org
+  sources: *id001
+- type: domain_suffix
+  value: performanceparameters.googleapis.com
   sources: *id001
 - type: domain_suffix
   value: picasa.com
@@ -1756,7 +2457,13 @@ rules:
   value: pixate.com
   sources: *id001
 - type: domain_suffix
+  value: pki-goog.l.google.com
+  sources: *id001
+- type: domain_suffix
   value: pki.goog
+  sources: *id001
+- type: domain_suffix
+  value: pki.google.com
   sources: *id001
 - type: domain_suffix
   value: plus.codes
@@ -1769,6 +2476,9 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: postini.com
+  sources: *id001
+- type: domain_suffix
+  value: preprod-publicca.googleapis.com
   sources: *id001
 - type: domain_suffix
   value: privacysandbox.com
@@ -1787,6 +2497,12 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: projectbaseline.com
+  sources: *id001
+- type: domain_suffix
+  value: pub.dev
+  sources: *id001
+- type: domain_suffix
+  value: publicca.googleapis.com
   sources: *id001
 - type: domain_suffix
   value: publishproxy.com
@@ -1816,6 +2532,24 @@ rules:
   value: redhotlabs.com
   sources: *id001
 - type: domain_suffix
+  value: redirector.bdn.dev
+  sources: *id001
+- type: domain_suffix
+  value: redirector.c.chat.google.com
+  sources: *id001
+- type: domain_suffix
+  value: redirector.c.mail.google.com
+  sources: *id001
+- type: domain_suffix
+  value: redirector.c.pack.google.com
+  sources: *id001
+- type: domain_suffix
+  value: redirector.c.play.google.com
+  sources: *id001
+- type: domain_suffix
+  value: redirector.c.youtubeeducation.com
+  sources: *id001
+- type: domain_suffix
   value: redirector.gcpcdn.gvt1.com
   sources: *id001
 - type: domain_suffix
@@ -1826,6 +2560,9 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: redirector.snap.gvt1.com
+  sources: *id001
+- type: domain_suffix
+  value: redirector.xn--ngstr-lra8j.com
   sources: *id001
 - type: domain_suffix
   value: registry.google
@@ -1840,6 +2577,12 @@ rules:
   value: run.app
   sources: *id001
 - type: domain_suffix
+  value: safebrowsing-cache.google.com
+  sources: *id001
+- type: domain_suffix
+  value: safebrowsing.googleapis.com
+  sources: *id001
+- type: domain_suffix
   value: savethedate.foo
   sources: *id001
 - type: domain_suffix
@@ -1852,19 +2595,262 @@ rules:
   value: schemer.com
   sources: *id001
 - type: domain_suffix
+  value: scholar.google.ae
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.at
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.be
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.bg
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.ca
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.cat
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.ch
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.cl
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.cn
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.co.cr
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.co.id
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.co.il
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.co.in
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.co.jp
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.co.kr
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.co.nz
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.co.th
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.co.uk
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.co.ve
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.co.za
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.ar
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.au
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.bo
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.br
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.co
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.cu
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.do
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.ec
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.eg
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.gt
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.hk
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.ly
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.mx
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.my
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.ni
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.pa
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.pe
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.ph
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.pk
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.pr
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.py
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.sg
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.sv
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.tr
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.tw
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.ua
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.uy
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.com.vn
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.cz
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.de
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.dk
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.es
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.fi
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.fr
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.gr
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.hn
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.hr
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.hu
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.is
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.it
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.li
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.lt
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.lu
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.lv
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.nl
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.no
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.pl
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.pt
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.ro
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.ru
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.se
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.si
+  sources: *id001
+- type: domain_suffix
+  value: scholar.google.sk
+  sources: *id001
+- type: domain_suffix
+  value: scholar.googleusercontent.com
+  sources: *id001
+- type: domain_suffix
+  value: scholar.l.google.com
+  sources: *id001
+- type: domain_suffix
   value: screenwisetrends.com
   sources: *id001
 - type: domain_suffix
   value: screenwisetrendspanel.com
   sources: *id001
 - type: domain_suffix
+  value: service.urchin.com
+  sources: *id001
+- type: domain_suffix
   value: shattered.io
+  sources: *id001
+- type: domain_suffix
+  value: sheets.new
+  sources: *id001
+- type: domain_suffix
+  value: slides.new
   sources: *id001
 - type: domain_suffix
   value: snapseed.com
   sources: *id001
 - type: domain_suffix
   value: solveforx.com
+  sources: *id001
+- type: domain_suffix
+  value: ssl-google-analytics.l.google.com
+  sources: *id001
+- type: domain_suffix
+  value: ssl.gstatic.com
   sources: *id001
 - type: domain_suffix
   value: stadia.dev
@@ -1906,7 +2892,13 @@ rules:
   value: synergyse.com
   sources: *id001
 - type: domain_suffix
+  value: tac.googleapis.com
+  sources: *id001
+- type: domain_suffix
   value: teachparentstech.org
+  sources: *id001
+- type: domain_suffix
+  value: tenor.com
   sources: *id001
 - type: domain_suffix
   value: tensorflow.org
@@ -1933,6 +2925,9 @@ rules:
   value: tiltbrush.com
   sources: *id001
 - type: domain_suffix
+  value: tools.google.com
+  sources: *id001
+- type: domain_suffix
   value: txcloud.net
   sources: *id001
 - type: domain_suffix
@@ -1940,6 +2935,12 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: unfiltered.news
+  sources: *id001
+- type: domain_suffix
+  value: update.crashlytics.com
+  sources: *id001
+- type: domain_suffix
+  value: update.googleapis.com
   sources: *id001
 - type: domain_suffix
   value: urchin.com
@@ -1990,6 +2991,9 @@ rules:
   value: waze.com
   sources: *id001
 - type: domain_suffix
+  value: wear.googleapis.com
+  sources: *id001
+- type: domain_suffix
   value: web.app
   sources: *id001
 - type: domain_suffix
@@ -1997,6 +3001,9 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: webappfieldguide.com
+  sources: *id001
+- type: domain_suffix
+  value: webchannel-alkalimakersuite-pa.clients6.google.com
   sources: *id001
 - type: domain_suffix
   value: webmproject.org
@@ -2014,10 +3021,19 @@ rules:
   value: whatbrowser.org
   sources: *id001
 - type: domain_suffix
+  value: whats.new
+  sources: *id001
+- type: domain_suffix
+  value: wide-youtube.l.google.com
+  sources: *id001
+- type: domain_suffix
   value: widevine.com
   sources: *id001
 - type: domain_suffix
   value: withgoogle.com
+  sources: *id001
+- type: domain_suffix
+  value: withyoutube.com
   sources: *id001
 - type: domain_suffix
   value: womenwill.com
@@ -2035,10 +3051,25 @@ rules:
   value: womenwill.mx
   sources: *id001
 - type: domain_suffix
+  value: www-google-analytics.l.google.com
+  sources: *id001
+- type: domain_suffix
+  value: www-googletagmanager.l.google.com
+  sources: *id001
+- type: domain_suffix
   value: www.destinationurl.com
   sources: *id001
 - type: domain_suffix
+  value: www.gstatic.com
+  sources: *id001
+- type: domain_suffix
   value: www.pxcc.com
+  sources: *id001
+- type: domain_suffix
+  value: www.recaptcha-cn.net
+  sources: *id001
+- type: domain_suffix
+  value: www.recaptcha.net
   sources: *id001
 - type: domain_suffix
   value: x.company
@@ -2051,6 +3082,9 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: xn--9trs65b.com
+  sources: *id001
+- type: domain_suffix
+  value: xn--flw351e
   sources: *id001
 - type: domain_suffix
   value: xn--flw351e.com
@@ -2071,7 +3105,526 @@ rules:
   value: xn--p8j9a0d9c9a.xn--q9jyb4c
   sources: *id001
 - type: domain_suffix
+  value: xn--qcka1pmc
+  sources: *id001
+- type: domain_suffix
   value: xplr.co
+  sources: *id001
+- type: domain_suffix
+  value: youtu.be
+  sources: *id001
+- type: domain_suffix
+  value: youtube
+  sources: *id001
+- type: domain_suffix
+  value: youtube-nocookie.com
+  sources: *id001
+- type: domain_suffix
+  value: youtube-ui.l.google.com
+  sources: *id001
+- type: domain_suffix
+  value: youtube.ae
+  sources: *id001
+- type: domain_suffix
+  value: youtube.al
+  sources: *id001
+- type: domain_suffix
+  value: youtube.am
+  sources: *id001
+- type: domain_suffix
+  value: youtube.at
+  sources: *id001
+- type: domain_suffix
+  value: youtube.az
+  sources: *id001
+- type: domain_suffix
+  value: youtube.ba
+  sources: *id001
+- type: domain_suffix
+  value: youtube.be
+  sources: *id001
+- type: domain_suffix
+  value: youtube.bg
+  sources: *id001
+- type: domain_suffix
+  value: youtube.bh
+  sources: *id001
+- type: domain_suffix
+  value: youtube.bo
+  sources: *id001
+- type: domain_suffix
+  value: youtube.by
+  sources: *id001
+- type: domain_suffix
+  value: youtube.ca
+  sources: *id001
+- type: domain_suffix
+  value: youtube.cat
+  sources: *id001
+- type: domain_suffix
+  value: youtube.ch
+  sources: *id001
+- type: domain_suffix
+  value: youtube.cl
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co.ae
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co.at
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co.cr
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co.hu
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co.id
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co.il
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co.in
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co.jp
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co.ke
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co.kr
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co.ma
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co.nz
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co.th
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co.tz
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co.ug
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co.uk
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co.ve
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co.za
+  sources: *id001
+- type: domain_suffix
+  value: youtube.co.zw
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.ar
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.au
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.az
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.bd
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.bh
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.bo
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.br
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.by
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.co
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.do
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.ec
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.ee
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.eg
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.es
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.gh
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.gr
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.gt
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.hk
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.hn
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.hr
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.jm
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.jo
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.kw
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.lb
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.lv
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.ly
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.mk
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.mt
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.mx
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.my
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.ng
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.ni
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.om
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.pa
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.pe
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.ph
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.pk
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.pt
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.py
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.qa
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.ro
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.sa
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.sg
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.sv
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.tn
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.tr
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.tw
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.ua
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.uy
+  sources: *id001
+- type: domain_suffix
+  value: youtube.com.ve
+  sources: *id001
+- type: domain_suffix
+  value: youtube.cr
+  sources: *id001
+- type: domain_suffix
+  value: youtube.cz
+  sources: *id001
+- type: domain_suffix
+  value: youtube.de
+  sources: *id001
+- type: domain_suffix
+  value: youtube.dk
+  sources: *id001
+- type: domain_suffix
+  value: youtube.ee
+  sources: *id001
+- type: domain_suffix
+  value: youtube.es
+  sources: *id001
+- type: domain_suffix
+  value: youtube.fi
+  sources: *id001
+- type: domain_suffix
+  value: youtube.fr
+  sources: *id001
+- type: domain_suffix
+  value: youtube.ge
+  sources: *id001
+- type: domain_suffix
+  value: youtube.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: youtube.gr
+  sources: *id001
+- type: domain_suffix
+  value: youtube.gt
+  sources: *id001
+- type: domain_suffix
+  value: youtube.hk
+  sources: *id001
+- type: domain_suffix
+  value: youtube.hr
+  sources: *id001
+- type: domain_suffix
+  value: youtube.hu
+  sources: *id001
+- type: domain_suffix
+  value: youtube.ie
+  sources: *id001
+- type: domain_suffix
+  value: youtube.in
+  sources: *id001
+- type: domain_suffix
+  value: youtube.iq
+  sources: *id001
+- type: domain_suffix
+  value: youtube.is
+  sources: *id001
+- type: domain_suffix
+  value: youtube.it
+  sources: *id001
+- type: domain_suffix
+  value: youtube.jo
+  sources: *id001
+- type: domain_suffix
+  value: youtube.jp
+  sources: *id001
+- type: domain_suffix
+  value: youtube.kr
+  sources: *id001
+- type: domain_suffix
+  value: youtube.kz
+  sources: *id001
+- type: domain_suffix
+  value: youtube.la
+  sources: *id001
+- type: domain_suffix
+  value: youtube.lk
+  sources: *id001
+- type: domain_suffix
+  value: youtube.lt
+  sources: *id001
+- type: domain_suffix
+  value: youtube.lu
+  sources: *id001
+- type: domain_suffix
+  value: youtube.lv
+  sources: *id001
+- type: domain_suffix
+  value: youtube.ly
+  sources: *id001
+- type: domain_suffix
+  value: youtube.ma
+  sources: *id001
+- type: domain_suffix
+  value: youtube.md
+  sources: *id001
+- type: domain_suffix
+  value: youtube.me
+  sources: *id001
+- type: domain_suffix
+  value: youtube.mk
+  sources: *id001
+- type: domain_suffix
+  value: youtube.mn
+  sources: *id001
+- type: domain_suffix
+  value: youtube.mx
+  sources: *id001
+- type: domain_suffix
+  value: youtube.my
+  sources: *id001
+- type: domain_suffix
+  value: youtube.ng
+  sources: *id001
+- type: domain_suffix
+  value: youtube.ni
+  sources: *id001
+- type: domain_suffix
+  value: youtube.nl
+  sources: *id001
+- type: domain_suffix
+  value: youtube.no
+  sources: *id001
+- type: domain_suffix
+  value: youtube.pa
+  sources: *id001
+- type: domain_suffix
+  value: youtube.pe
+  sources: *id001
+- type: domain_suffix
+  value: youtube.ph
+  sources: *id001
+- type: domain_suffix
+  value: youtube.pk
+  sources: *id001
+- type: domain_suffix
+  value: youtube.pl
+  sources: *id001
+- type: domain_suffix
+  value: youtube.pr
+  sources: *id001
+- type: domain_suffix
+  value: youtube.pt
+  sources: *id001
+- type: domain_suffix
+  value: youtube.qa
+  sources: *id001
+- type: domain_suffix
+  value: youtube.ro
+  sources: *id001
+- type: domain_suffix
+  value: youtube.rs
+  sources: *id001
+- type: domain_suffix
+  value: youtube.ru
+  sources: *id001
+- type: domain_suffix
+  value: youtube.sa
+  sources: *id001
+- type: domain_suffix
+  value: youtube.se
+  sources: *id001
+- type: domain_suffix
+  value: youtube.sg
+  sources: *id001
+- type: domain_suffix
+  value: youtube.si
+  sources: *id001
+- type: domain_suffix
+  value: youtube.sk
+  sources: *id001
+- type: domain_suffix
+  value: youtube.sn
+  sources: *id001
+- type: domain_suffix
+  value: youtube.soy
+  sources: *id001
+- type: domain_suffix
+  value: youtube.sv
+  sources: *id001
+- type: domain_suffix
+  value: youtube.tn
+  sources: *id001
+- type: domain_suffix
+  value: youtube.tv
+  sources: *id001
+- type: domain_suffix
+  value: youtube.ua
+  sources: *id001
+- type: domain_suffix
+  value: youtube.ug
+  sources: *id001
+- type: domain_suffix
+  value: youtube.uy
+  sources: *id001
+- type: domain_suffix
+  value: youtube.vn
+  sources: *id001
+- type: domain_suffix
+  value: youtubeeducation.com
+  sources: *id001
+- type: domain_suffix
+  value: youtubeembeddedplayer.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: youtubefanfest.com
+  sources: *id001
+- type: domain_suffix
+  value: youtubegaming.com
+  sources: *id001
+- type: domain_suffix
+  value: youtubego.co.id
+  sources: *id001
+- type: domain_suffix
+  value: youtubego.co.in
+  sources: *id001
+- type: domain_suffix
+  value: youtubego.com
+  sources: *id001
+- type: domain_suffix
+  value: youtubego.com.br
+  sources: *id001
+- type: domain_suffix
+  value: youtubego.id
+  sources: *id001
+- type: domain_suffix
+  value: youtubego.in
+  sources: *id001
+- type: domain_suffix
+  value: youtubei.googleapis.com
+  sources: *id001
+- type: domain_suffix
+  value: youtubekids.com
+  sources: *id001
+- type: domain_suffix
+  value: youtubemobilesupport.com
+  sources: *id001
+- type: domain_suffix
+  value: yt.be
+  sources: *id001
+- type: domain_suffix
+  value: yt3.googleusercontent.com
+  sources: *id001
+- type: domain_suffix
+  value: ytimg.com
   sources: *id001
 - type: domain_suffix
   value: zukunftswerkstatt.de
@@ -2097,10 +3650,10 @@ rules:
 metadata:
   priority: high
   confidence: high
-  last_updated: '2026-08-28T11:00:37.153803+00:00'
+  last_updated: '2026-08-28T12:17:39.465227+00:00'
   notes: Generated by normalize.py V1.1
   stats:
-    domain_count: 690
+    domain_count: 1205
     ip_count: 5
-    total: 695
+    total: 1210
 canonical_source: blackmatrix7

@@ -15,11 +15,12 @@ generated_files:
   domain: atlassian_domain.list
   ip: null
 statistics:
-  domains: 5
+  domains: 11
   ipv4_or_cidr: 0
-  mixed: 5
+  mixed: 11
 sources:
 - blackmatrix7
+- v2fly
 clients:
 - Mihomo
 - sing-box

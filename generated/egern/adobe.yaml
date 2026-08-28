@@ -1,6 +1,6 @@
 # name: Adobe
 # id: adobe
-# count: 137
+# count: 140
 no_resolve: true
 domain_set:
 - cc-ext-prod-pkgs.s3.amazonaws.com
@@ -43,6 +43,7 @@ domain_suffix_set:
 - adobesigncdn.com
 - adobespark.com
 - adobess.com
+- adobestats.io
 - adobestock.com
 - adobetag.com
 - adobetarget.com
@@ -51,6 +52,7 @@ domain_suffix_set:
 - adobetechcommcallback.com
 - adobetechcommdemo.com
 - adobexdplatform.com
+- advertising.adobe.com
 - assetsadobe.com
 - authorxml.com
 - bam.nr-data.net
@@ -134,6 +136,7 @@ domain_suffix_set:
 - tenbyfotolia.com
 - thawte.com
 - toutapp.com
+- tubemogul.com
 - typekit.com
 - typekit.net
 - verisign.com

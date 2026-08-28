@@ -1,11 +1,11 @@
 {
   "source": "v2fly",
   "fetch": "github_raw",
-  "timestamp": "2026-08-28T10:56:53.943546+00:00",
-  "files_ok": 34,
+  "timestamp": "2026-08-28T12:14:15.705330+00:00",
+  "files_ok": 51,
   "files_failed": 0,
   "empty_blocked": 0,
-  "rules_declared": 34,
+  "rules_declared": 51,
   "files": [
     {
       "name": "v2fly_deepseek",
@@ -345,6 +345,176 @@
       "local": "sources/v2fly/v2fly_bilibili",
       "size": 486,
       "sha256": "dbe560654836a368cf5c36ed3962f5fe983f07d0f160aa8ca7e48f63cbec527b",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_apple",
+      "path": "data/apple",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/apple",
+      "service": "apple",
+      "local": "sources/v2fly/v2fly_apple",
+      "size": 17100,
+      "sha256": "d46d18afe2f2d51bd48ddd239c43f460a32a9d605b384baa2cd6c70ec29cf29f",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_icloud",
+      "path": "data/icloud",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/icloud",
+      "service": "icloud",
+      "local": "sources/v2fly/v2fly_icloud",
+      "size": 774,
+      "sha256": "c46ade14884382a65b8bb9f1b6b8e484be639ffe17abcf2ec6f50464cb56f04f",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_google",
+      "path": "data/google",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/google",
+      "service": "google",
+      "local": "sources/v2fly/v2fly_google",
+      "size": 12516,
+      "sha256": "5a85d201b8fb4b03486515618da4c164a0ce0c59341cb2dee6d1b0bdca176653",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_youtube",
+      "path": "data/youtube",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/youtube",
+      "service": "youtube",
+      "local": "sources/v2fly/v2fly_youtube",
+      "size": 2444,
+      "sha256": "9ffb657176fdffed567953749c137bb3d8a216ce4e839b3831b626c752902213",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_microsoft",
+      "path": "data/microsoft",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/microsoft",
+      "service": "microsoft",
+      "local": "sources/v2fly/v2fly_microsoft",
+      "size": 7801,
+      "sha256": "b033d7375c45b2613f5230046ef190d0f2d2c83c1eba7a082d41a0c6088286f4",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_amazon",
+      "path": "data/amazon",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/amazon",
+      "service": "amazon",
+      "local": "sources/v2fly/v2fly_amazon",
+      "size": 2149,
+      "sha256": "f1b24bcc1d576f30a09731b10cf55ba50822fd433b8f35568c77bbb45bdd5f0b",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_aws",
+      "path": "data/aws",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/aws",
+      "service": "aws",
+      "local": "sources/v2fly/v2fly_aws",
+      "size": 976,
+      "sha256": "cdb3797a5ba28abc72a82bb6334a6ec777100469994e6a50d3840fb8e1ced802",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_docker",
+      "path": "data/docker",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/docker",
+      "service": "docker",
+      "local": "sources/v2fly/v2fly_docker",
+      "size": 181,
+      "sha256": "f1b27237e9b861d88aaf80399af5088781e177780ecc7b30dd7795fea404546e",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_jetbrains",
+      "path": "data/jetbrains",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/jetbrains",
+      "service": "jetbrains",
+      "local": "sources/v2fly/v2fly_jetbrains",
+      "size": 378,
+      "sha256": "e582f14220308511a9e584612d21fa01d76c552fcfba2838b4aeedd53adb17f7",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_atlassian",
+      "path": "data/atlassian",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/atlassian",
+      "service": "atlassian",
+      "local": "sources/v2fly/v2fly_atlassian",
+      "size": 136,
+      "sha256": "3ee60d83f78b67f6fa5b80281cbeda40d800ee28e705a7b179c0d27823ecfeda",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_slack",
+      "path": "data/slack",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/slack",
+      "service": "slack",
+      "local": "sources/v2fly/v2fly_slack",
+      "size": 158,
+      "sha256": "0c1db5d6d7343fd4b423109be5396dea7a0b2769b9e150f1a3a49b1dde04ddec",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_zoom",
+      "path": "data/zoom",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/zoom",
+      "service": "zoom",
+      "local": "sources/v2fly/v2fly_zoom",
+      "size": 29,
+      "sha256": "bf9535bd84985865b4f8a8768ff9b6ec916b28e364fa157cfe30ee1ee6bb06e1",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_adobe",
+      "path": "data/adobe",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/adobe",
+      "service": "adobe",
+      "local": "sources/v2fly/v2fly_adobe",
+      "size": 2157,
+      "sha256": "454162729a6834f24f32524afc743b38d80a31a95f80ff4d7fd1f09c76e522e1",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_oracle",
+      "path": "data/oracle",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/oracle",
+      "service": "oracle",
+      "local": "sources/v2fly/v2fly_oracle",
+      "size": 233,
+      "sha256": "b4b1b50561a4e0d9d4cc1a7e0b6fbb1e7ba07b80ba5a94d1692f0b6cb898288f",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_digitalocean",
+      "path": "data/digitalocean",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/digitalocean",
+      "service": "digitalocean",
+      "local": "sources/v2fly/v2fly_digitalocean",
+      "size": 100,
+      "sha256": "05a81eb92baf04558e0db3f32889f046cc7b587090f0ca7742e951b0fb17b3cc",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_reddit",
+      "path": "data/reddit",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/reddit",
+      "service": "reddit",
+      "local": "sources/v2fly/v2fly_reddit",
+      "size": 182,
+      "sha256": "c9a8f8d31c03484cad62527e65d47b101a657d3293b9adead66a2eecf80fbce9",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_mojang",
+      "path": "data/mojang",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/mojang",
+      "service": "minecraft",
+      "local": "sources/v2fly/v2fly_mojang",
+      "size": 104,
+      "sha256": "ffc054b4b5bb01aa9e25c23444282740f0befea2b2fc8eb3e8ad53156a632757",
       "status": "ok"
     }
   ],

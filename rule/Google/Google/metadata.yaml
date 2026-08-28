@@ -20,11 +20,13 @@ generated_files:
   domain: google_domain.list
   ip: google_ip.list
 statistics:
-  domains: 685
+  domains: 1094
   ipv4_or_cidr: 5
-  mixed: 690
+  mixed: 1099
 sources:
 - blackmatrix7
+- metacubex
+- v2fly
 clients:
 - Mihomo
 - sing-box

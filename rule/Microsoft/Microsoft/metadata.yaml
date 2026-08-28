@@ -19,11 +19,13 @@ generated_files:
   domain: microsoft_domain.list
   ip: null
 statistics:
-  domains: 685
+  domains: 884
   ipv4_or_cidr: 0
-  mixed: 685
+  mixed: 884
 sources:
 - blackmatrix7
+- metacubex
+- v2fly
 - dler
 clients:
 - Mihomo

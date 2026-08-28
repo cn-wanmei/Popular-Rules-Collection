@@ -7,10 +7,10 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 136 |
+| Domains | 139 |
 | IP/CIDR | 0 |
-| Mixed | 136 |
-| Sources | blackmatrix7 |
+| Mixed | 139 |
+| Sources | blackmatrix7, v2fly |
 | Updated | 2026-08-28 |
 
 ## 基础规则（Classical）
@@ -37,7 +37,7 @@
 
 ## 来源
 
-`blackmatrix7`
+`blackmatrix7`, `v2fly`
 
 ---
 

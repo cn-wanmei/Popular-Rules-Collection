@@ -1,4 +1,4 @@
-generated_at: '2026-08-28T11:19:55.267768+00:00'
+generated_at: '2026-08-28T12:35:03.900782+00:00'
 categories:
   '12306':
     display_name: '12306'
@@ -104,7 +104,7 @@ categories:
       name: Adobe
       path: rule/Other/Adobe
       service_type: service
-      domains: 136
+      domains: 139
       ips: 0
     - id: airbnb
       name: Airbnb
@@ -268,7 +268,7 @@ categories:
       name: Atlassian
       path: rule/Developer/Atlassian
       service_type: service
-      domains: 5
+      domains: 11
       ips: 0
     - id: azure
       name: Azure
@@ -280,7 +280,7 @@ categories:
       name: Cloudflare
       path: rule/Developer/Cloudflare
       service_type: service
-      domains: 71
+      domains: 76
       ips: 22
     - id: cursor
       name: Cursor
@@ -292,19 +292,19 @@ categories:
       name: Developer
       path: rule/Developer/Developer
       service_type: aggregate
-      domains: 70
+      domains: 680
       ips: 0
     - id: digitalocean
       name: DigitalOcean
       path: rule/Developer/DigitalOcean
       service_type: service
-      domains: 4
+      domains: 6
       ips: 0
     - id: docker
       name: Docker
       path: rule/Developer/Docker
       service_type: service
-      domains: 7
+      domains: 10
       ips: 0
     - id: figma
       name: Figma
@@ -334,7 +334,7 @@ categories:
       name: JetBrains
       path: rule/Developer/JetBrains
       service_type: service
-      domains: 14
+      domains: 25
       ips: 0
     - id: netlify
       name: Netlify
@@ -352,7 +352,7 @@ categories:
       name: Oracle
       path: rule/Developer/Oracle
       service_type: service
-      domains: 25
+      domains: 27
       ips: 0
     - id: slack
       name: Slack
@@ -432,7 +432,7 @@ categories:
       name: Amazon
       path: rule/Amazon/Amazon
       service_type: service
-      domains: 186
+      domains: 256
       ips: 15
     - id: aws
       name: AWS
@@ -448,7 +448,7 @@ categories:
       name: Apple
       path: rule/Apple/Apple
       service_type: aggregate
-      domains: 14
+      domains: 1821
       ips: 13
     - id: applemusic
       name: AppleMusic
@@ -886,7 +886,7 @@ categories:
       name: Reddit
       path: rule/Social/Reddit
       service_type: service
-      domains: 8
+      domains: 15
       ips: 0
     - id: signal
       name: Signal
@@ -1002,7 +1002,7 @@ categories:
       name: Google
       path: rule/Google/Google
       service_type: aggregate
-      domains: 685
+      domains: 1094
       ips: 5
     - id: googlefcm
       name: GoogleFCM
@@ -1014,7 +1014,7 @@ categories:
       name: YouTube
       path: rule/Google/YouTube
       service_type: service
-      domains: 180
+      domains: 182
       ips: 3
   network:
     display_name: Network
@@ -1058,13 +1058,13 @@ categories:
       name: GitHub
       path: rule/Microsoft/GitHub
       service_type: service
-      domains: 63
+      domains: 68
       ips: 0
     - id: microsoft
       name: Microsoft
       path: rule/Microsoft/Microsoft
       service_type: aggregate
-      domains: 685
+      domains: 884
       ips: 0
     - id: onedrive
       name: OneDrive

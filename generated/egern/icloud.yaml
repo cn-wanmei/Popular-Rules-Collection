@@ -1,7 +1,9 @@
 # name: iCloud
 # id: icloud
-# count: 61
+# count: 62
 no_resolve: true
+domain_set:
+- www-cdn.icloud.com.akadns.net
 domain_suffix_set:
 - apple-cloudkit.com
 - apple-icloud.cn

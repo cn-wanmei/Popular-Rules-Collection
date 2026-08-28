@@ -2,6 +2,9 @@
   "version": 2,
   "rules": [
     {
+      "domain": [
+        "www-cdn.icloud.com.akadns.net"
+      ],
       "domain_suffix": [
         "apple-cloudkit.com",
         "apple-icloud.cn",

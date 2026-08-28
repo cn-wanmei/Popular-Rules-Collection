@@ -1,8 +1,11 @@
 # name: YouTube
 # id: youtube
-# count: 187
+# count: 190
 no_resolve: true
+domain_set:
+- yt3.googleusercontent.com
 domain_suffix_set:
+- ads.youtube.com
 - ggpht.cn
 - ggpht.com
 - googlevideo.com
@@ -182,6 +185,7 @@ domain_suffix_set:
 - youtubemobilesupport.com
 - yt.be
 - yt3.ggpht.com
+- yt3.googleusercontent.com
 - ytimg.com
 domain_keyword_set:
 - youtube

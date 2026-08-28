@@ -1,10 +1,16 @@
 # name: Atlassian
 # id: atlassian
-# count: 5
+# count: 11
 no_resolve: true
 domain_suffix_set:
+- atl-paas.net
+- atlassian-dev.net
 - atlassian.com
+- atlassian.net
+- bitbucket.io
 - bitbucket.org
+- jira.com
+- ss-inf.net
 - statuspage.io
 - trello.com
 - trellocdn.com

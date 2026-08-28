@@ -75,3 +75,4 @@ DOMAIN-SUFFIX,nwcdinfosec.cn
 DOMAIN-SUFFIX,route53.cn
 DOMAIN-SUFFIX,sagemaker.com.cn
 DOMAIN-SUFFIX,thinkboxsoftware.com
+DOMAIN-REGEX,.+\.awsdns-[0-9][0-9]\.(co\.uk|com|net|org)$

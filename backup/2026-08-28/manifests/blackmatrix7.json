@@ -1,11 +1,11 @@
 {
   "source": "blackmatrix7",
   "fetch": "github_raw",
-  "timestamp": "2026-08-28T10:56:43.080838+00:00",
-  "files_ok": 134,
+  "timestamp": "2026-08-28T12:13:58.369174+00:00",
+  "files_ok": 140,
   "files_failed": 0,
   "empty_blocked": 0,
-  "rules_declared": 134,
+  "rules_declared": 140,
   "files": [
     {
       "name": "Clash_Apple.yaml",
@@ -1345,6 +1345,66 @@
       "local": "sources/blackmatrix7/Clash_Scholar.yaml",
       "size": 7595,
       "sha256": "35ca7ffb814c4f55f5381fd1ed35f4e8ca732a3c79fb47921ff4232fea22ea19",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_AppStore.yaml",
+      "path": "rule/Clash/AppStore/AppStore.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppStore/AppStore.yaml",
+      "service": "apple",
+      "local": "sources/blackmatrix7/Clash_AppStore.yaml",
+      "size": 213,
+      "sha256": "96b8bdfd20cd3937ab08b2eaba286eac7e83e3e580c1e967861f7622ad9d43bf",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_TestFlight.yaml",
+      "path": "rule/Clash/TestFlight/TestFlight.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TestFlight/TestFlight.yaml",
+      "service": "apple",
+      "local": "sources/blackmatrix7/Clash_TestFlight.yaml",
+      "size": 269,
+      "sha256": "efe991b49a7571a81fcd7fcc9c5c9d2fad9b98e892341ee64c3a230db45fbab9",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_AppleDev.yaml",
+      "path": "rule/Clash/AppleDev/AppleDev.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleDev/AppleDev.yaml",
+      "service": "apple",
+      "local": "sources/blackmatrix7/Clash_AppleDev.yaml",
+      "size": 1710,
+      "sha256": "205666f4e5678428ba4bb79400c8b15d421b7752ff0b52318bbf27941df420eb",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_FindMy.yaml",
+      "path": "rule/Clash/FindMy/FindMy.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/FindMy/FindMy.yaml",
+      "service": "apple",
+      "local": "sources/blackmatrix7/Clash_FindMy.yaml",
+      "size": 252,
+      "sha256": "356a86e54dd3806b63a66f4cad93aa726c22e7b430e94fb429d02e1c1b5df61f",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_AppleMedia.yaml",
+      "path": "rule/Clash/AppleMedia/AppleMedia.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleMedia/AppleMedia.yaml",
+      "service": "apple",
+      "local": "sources/blackmatrix7/Clash_AppleMedia.yaml",
+      "size": 1984,
+      "sha256": "991459ec6d4672f45251b8d488b6c2798ecb4803616a28be80b23b2cd23183bc",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_AppleNews.yaml",
+      "path": "rule/Clash/AppleNews/AppleNews.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleNews/AppleNews.yaml",
+      "service": "apple",
+      "local": "sources/blackmatrix7/Clash_AppleNews.yaml",
+      "size": 234,
+      "sha256": "f45b1892d69cac07cbf55d3d498fbaebb22eb686e55f5485e4f697c2ed0eeb54",
       "status": "ok"
     }
   ],

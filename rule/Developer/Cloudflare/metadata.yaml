@@ -16,11 +16,12 @@ generated_files:
   domain: cloudflare_domain.list
   ip: cloudflare_ip.list
 statistics:
-  domains: 71
+  domains: 76
   ipv4_or_cidr: 22
-  mixed: 93
+  mixed: 98
 sources:
 - blackmatrix7
+- metacubex
 - v2fly
 clients:
 - Mihomo

@@ -16,11 +16,12 @@ generated_files:
   domain: github_domain.list
   ip: null
 statistics:
-  domains: 63
+  domains: 68
   ipv4_or_cidr: 0
-  mixed: 63
+  mixed: 68
 sources:
 - blackmatrix7
+- metacubex
 - v2fly
 clients:
 - Mihomo

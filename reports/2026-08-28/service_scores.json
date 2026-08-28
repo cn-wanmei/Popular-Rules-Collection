@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-28T11:18:53.509568+00:00",
+  "generated_at": "2026-08-28T12:34:07.583760+00:00",
   "date": "2026-08-28",
   "services": {
     "uber": {
@@ -147,10 +147,6 @@
       "score": 90.0,
       "band": "stable"
     },
-    "docker": {
-      "score": 90.0,
-      "band": "stable"
-    },
     "sina": {
       "score": 90.0,
       "band": "stable"
@@ -164,10 +160,6 @@
       "band": "stable"
     },
     "booking": {
-      "score": 90.0,
-      "band": "stable"
-    },
-    "amazon": {
       "score": 90.0,
       "band": "stable"
     },
@@ -204,10 +196,6 @@
       "band": "stable"
     },
     "twitter": {
-      "score": 90.0,
-      "band": "stable"
-    },
-    "reddit": {
       "score": 90.0,
       "band": "stable"
     },
@@ -284,10 +272,6 @@
       "band": "stable"
     },
     "huggingface": {
-      "score": 90.0,
-      "band": "stable"
-    },
-    "jetbrains": {
       "score": 90.0,
       "band": "stable"
     },
@@ -419,15 +403,7 @@
       "score": 90.0,
       "band": "stable"
     },
-    "developer": {
-      "score": 90.0,
-      "band": "stable"
-    },
     "unionpay": {
-      "score": 90.0,
-      "band": "stable"
-    },
-    "microsoft": {
       "score": 90.0,
       "band": "stable"
     },
@@ -491,10 +467,6 @@
       "score": 90.0,
       "band": "stable"
     },
-    "digitalocean": {
-      "score": 90.0,
-      "band": "stable"
-    },
     "scholar": {
       "score": 90.0,
       "band": "stable"
@@ -531,10 +503,6 @@
       "score": 90.0,
       "band": "stable"
     },
-    "google": {
-      "score": 90.0,
-      "band": "stable"
-    },
     "vercel": {
       "score": 90.0,
       "band": "stable"
@@ -560,10 +528,6 @@
       "band": "stable"
     },
     "wechat": {
-      "score": 90.0,
-      "band": "stable"
-    },
-    "atlassian": {
       "score": 90.0,
       "band": "stable"
     },
@@ -615,7 +579,7 @@
       "score": 85.0,
       "band": "maintained"
     },
-    "cloudflare": {
+    "amazon": {
       "score": 85.0,
       "band": "maintained"
     },
@@ -627,6 +591,10 @@
       "score": 85.0,
       "band": "maintained"
     },
+    "microsoft": {
+      "score": 85.0,
+      "band": "maintained"
+    },
     "spotify": {
       "score": 85.0,
       "band": "maintained"
@@ -635,19 +603,23 @@
       "score": 85.0,
       "band": "maintained"
     },
-    "tiktok": {
-      "score": 78.0,
-      "band": "maintained"
-    },
-    "apple": {
-      "score": 78.0,
-      "band": "maintained"
-    },
     "line": {
       "score": 78.0,
       "band": "maintained"
     },
+    "docker": {
+      "score": 78.0,
+      "band": "maintained"
+    },
+    "cloudflare": {
+      "score": 78.0,
+      "band": "maintained"
+    },
     "whatsapp": {
+      "score": 78.0,
+      "band": "maintained"
+    },
+    "jetbrains": {
       "score": 78.0,
       "band": "maintained"
     },
@@ -659,11 +631,31 @@
       "score": 78.0,
       "band": "maintained"
     },
+    "digitalocean": {
+      "score": 78.0,
+      "band": "maintained"
+    },
+    "google": {
+      "score": 78.0,
+      "band": "maintained"
+    },
     "alibabacloud": {
       "score": 65.0,
       "band": "review"
     },
     "instagram": {
+      "score": 65.0,
+      "band": "review"
+    },
+    "tiktok": {
+      "score": 65.0,
+      "band": "review"
+    },
+    "apple": {
+      "score": 65.0,
+      "band": "review"
+    },
+    "reddit": {
       "score": 65.0,
       "band": "review"
     },
@@ -675,11 +667,19 @@
       "score": 65.0,
       "band": "review"
     },
+    "developer": {
+      "score": 65.0,
+      "band": "review"
+    },
     "china": {
       "score": 65.0,
       "band": "review"
     },
     "ebay": {
+      "score": 65.0,
+      "band": "review"
+    },
+    "atlassian": {
       "score": 65.0,
       "band": "review"
     }

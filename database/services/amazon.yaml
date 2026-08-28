@@ -6,14 +6,34 @@ version: 1
 source:
 - id: blackmatrix7
   priority: 95
+- id: metacubex
+  priority: 90
+- id: v2fly
+  priority: 85
 rules:
-- type: domain_keyword
-  value: avoddashs
+- type: domain
+  value: images-cn-8.ssl-images-amazon.com
   sources: &id001
   - id: blackmatrix7
     priority: 95
+  - id: metacubex
+    priority: 90
+  - id: v2fly
+    priority: 85
+- type: domain
+  value: images-cn.ssl-images-amazon.com
+  sources: *id001
+- type: domain_keyword
+  value: avoddashs
+  sources: *id001
+- type: domain_regex
+  value: .+\.awsdns-[0-9][0-9]\.(co\.uk|com|net|org)$
+  sources: *id001
 - type: domain_suffix
   value: a2z.com
+  sources: *id001
+- type: domain_suffix
+  value: a2z.org.cn
   sources: *id001
 - type: domain_suffix
   value: aboutamazon.cn
@@ -50,6 +70,9 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: aboutamazon.pl
+  sources: *id001
+- type: domain_suffix
+  value: aboutamazon.sg
   sources: *id001
 - type: domain_suffix
   value: acmvalidations.com
@@ -103,6 +126,9 @@ rules:
   value: amazon.ca
   sources: *id001
 - type: domain_suffix
+  value: amazon.cl
+  sources: *id001
+- type: domain_suffix
   value: amazon.cn
   sources: *id001
 - type: domain_suffix
@@ -112,16 +138,28 @@ rules:
   value: amazon.co.uk
   sources: *id001
 - type: domain_suffix
+  value: amazon.co.za
+  sources: *id001
+- type: domain_suffix
   value: amazon.com
   sources: *id001
 - type: domain_suffix
   value: amazon.com.au
   sources: *id001
 - type: domain_suffix
+  value: amazon.com.be
+  sources: *id001
+- type: domain_suffix
   value: amazon.com.br
   sources: *id001
 - type: domain_suffix
+  value: amazon.com.co
+  sources: *id001
+- type: domain_suffix
   value: amazon.com.mx
+  sources: *id001
+- type: domain_suffix
+  value: amazon.com.ng
   sources: *id001
 - type: domain_suffix
   value: amazon.com.tr
@@ -130,10 +168,19 @@ rules:
   value: amazon.de
   sources: *id001
 - type: domain_suffix
+  value: amazon.dev
+  sources: *id001
+- type: domain_suffix
+  value: amazon.eg
+  sources: *id001
+- type: domain_suffix
   value: amazon.es
   sources: *id001
 - type: domain_suffix
   value: amazon.fr
+  sources: *id001
+- type: domain_suffix
+  value: amazon.ie
   sources: *id001
 - type: domain_suffix
   value: amazon.in
@@ -148,10 +195,22 @@ rules:
   value: amazon.jp
   sources: *id001
 - type: domain_suffix
+  value: amazon.lu
+  sources: *id001
+- type: domain_suffix
   value: amazon.nl
   sources: *id001
 - type: domain_suffix
+  value: amazon.pl
+  sources: *id001
+- type: domain_suffix
   value: amazon.red
+  sources: *id001
+- type: domain_suffix
+  value: amazon.sa
+  sources: *id001
+- type: domain_suffix
+  value: amazon.se
   sources: *id001
 - type: domain_suffix
   value: amazon.sg
@@ -166,6 +225,12 @@ rules:
   value: amazonaws-china.com
   sources: *id001
 - type: domain_suffix
+  value: amazonaws.biz
+  sources: *id001
+- type: domain_suffix
+  value: amazonaws.cn
+  sources: *id001
+- type: domain_suffix
   value: amazonaws.co.uk
   sources: *id001
 - type: domain_suffix
@@ -173,6 +238,15 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: amazonaws.com.cn
+  sources: *id001
+- type: domain_suffix
+  value: amazonaws.info
+  sources: *id001
+- type: domain_suffix
+  value: amazonaws.net
+  sources: *id001
+- type: domain_suffix
+  value: amazonaws.org
   sources: *id001
 - type: domain_suffix
   value: amazonaws.tv
@@ -200,6 +274,9 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: amazonchoices.com.cn
+  sources: *id001
+- type: domain_suffix
+  value: amazoncognito.com
   sources: *id001
 - type: domain_suffix
   value: amazondevicesupport.com
@@ -262,6 +339,9 @@ rules:
   value: amazonsdi.com
   sources: *id001
 - type: domain_suffix
+  value: amazonses.com
+  sources: *id001
+- type: domain_suffix
   value: amazonstudiosguilds.com
   sources: *id001
 - type: domain_suffix
@@ -284,6 +364,15 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: amazonvideodirect.com
+  sources: *id001
+- type: domain_suffix
+  value: amazonwebservices.cn
+  sources: *id001
+- type: domain_suffix
+  value: amazonwebservices.com
+  sources: *id001
+- type: domain_suffix
+  value: amazonwebservices.com.cn
   sources: *id001
 - type: domain_suffix
   value: amazonworkdocs.cn
@@ -310,7 +399,34 @@ rules:
   value: amzn.to
   sources: *id001
 - type: domain_suffix
+  value: amzndns-cn.biz
+  sources: *id001
+- type: domain_suffix
+  value: amzndns-cn.cn
+  sources: *id001
+- type: domain_suffix
+  value: amzndns-cn.com
+  sources: *id001
+- type: domain_suffix
+  value: amzndns-cn.net
+  sources: *id001
+- type: domain_suffix
+  value: amzndns.co.uk
+  sources: *id001
+- type: domain_suffix
+  value: amzndns.com
+  sources: *id001
+- type: domain_suffix
+  value: amzndns.net
+  sources: *id001
+- type: domain_suffix
+  value: amzndns.org
+  sources: *id001
+- type: domain_suffix
   value: amznl.com
+  sources: *id001
+- type: domain_suffix
+  value: asfiovnxocqpcry.com.cn
   sources: *id001
 - type: domain_suffix
   value: assoc-amazon.cn
@@ -328,7 +444,37 @@ rules:
   value: aws
   sources: *id001
 - type: domain_suffix
+  value: aws-border.cn
+  sources: *id001
+- type: domain_suffix
+  value: aws-icp-domain-manager.cn
+  sources: *id001
+- type: domain_suffix
   value: aws-iot-hackathon.com
+  sources: *id001
+- type: domain_suffix
+  value: aws.a2z.com
+  sources: *id001
+- type: domain_suffix
+  value: aws.amazon.com
+  sources: *id001
+- type: domain_suffix
+  value: aws.com
+  sources: *id001
+- type: domain_suffix
+  value: aws.dev
+  sources: *id001
+- type: domain_suffix
+  value: awsapprunner.com
+  sources: *id001
+- type: domain_suffix
+  value: awsapps.cn
+  sources: *id001
+- type: domain_suffix
+  value: awsapps.com
+  sources: *id001
+- type: domain_suffix
+  value: awsapps.com.cn
   sources: *id001
 - type: domain_suffix
   value: awsautopilot.com
@@ -358,6 +504,9 @@ rules:
   value: awseducate.org
   sources: *id001
 - type: domain_suffix
+  value: awsglobalaccelerator.com
+  sources: *id001
+- type: domain_suffix
   value: awsloft-johannesburg.com
   sources: *id001
 - type: domain_suffix
@@ -365,6 +514,9 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: awssecworkshops.com
+  sources: *id001
+- type: domain_suffix
+  value: awsstatic.cn
   sources: *id001
 - type: domain_suffix
   value: awsstatic.com
@@ -379,10 +531,25 @@ rules:
   value: awstrust.com
   sources: *id001
 - type: domain_suffix
+  value: awswaf.com
+  sources: *id001
+- type: domain_suffix
   value: boxofficemojo.com
   sources: *id001
 - type: domain_suffix
   value: cdkworkshop.com
+  sources: *id001
+- type: domain_suffix
+  value: cloudfront-cn.net
+  sources: *id001
+- type: domain_suffix
+  value: cloudfront-test.cn
+  sources: *id001
+- type: domain_suffix
+  value: cloudfront.cn
+  sources: *id001
+- type: domain_suffix
+  value: cloudfront.com
   sources: *id001
 - type: domain_suffix
   value: cloudfront.net
@@ -392,6 +559,21 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: createspace.com
+  sources: *id001
+- type: domain_suffix
+  value: d1v5ir2lpwr8os.cloudfront.net
+  sources: *id001
+- type: domain_suffix
+  value: d22qjgkvxw22r6.cloudfront.net
+  sources: *id001
+- type: domain_suffix
+  value: d25xi40x97liuc.cloudfront.net
+  sources: *id001
+- type: domain_suffix
+  value: d27xxe7juh1us6.cloudfront.net
+  sources: *id001
+- type: domain_suffix
+  value: dmqdd6hw24ucf.cloudfront.net
   sources: *id001
 - type: domain_suffix
   value: elasticbeanstalk.com
@@ -404,6 +586,21 @@ rules:
   sources: *id001
 - type: domain_suffix
   value: images-amazon.com
+  sources: *id001
+- type: domain_suffix
+  value: images-cn-8.ssl-images-amazon.com
+  sources: *id001
+- type: domain_suffix
+  value: images-cn.ssl-images-amazon.com
+  sources: *id001
+- type: domain_suffix
+  value: images-eu.ssl-images-amazon.com
+  sources: *id001
+- type: domain_suffix
+  value: images-fe.ssl-images-amazon.com
+  sources: *id001
+- type: domain_suffix
+  value: images-na.ssl-images-amazon.com
   sources: *id001
 - type: domain_suffix
   value: imdb
@@ -484,6 +681,21 @@ rules:
   value: media-imdb.com
   sources: *id001
 - type: domain_suffix
+  value: msh.amazon.co.uk
+  sources: *id001
+- type: domain_suffix
+  value: nwcdcloud.cn
+  sources: *id001
+- type: domain_suffix
+  value: nwcdcloud.com.cn
+  sources: *id001
+- type: domain_suffix
+  value: nwcddns.cn
+  sources: *id001
+- type: domain_suffix
+  value: nwcdinfosec.cn
+  sources: *id001
+- type: domain_suffix
   value: prime-video.com
   sources: *id001
 - type: domain_suffix
@@ -514,13 +726,28 @@ rules:
   value: pv-cdn.net
   sources: *id001
 - type: domain_suffix
+  value: route53.cn
+  sources: *id001
+- type: domain_suffix
+  value: sagemaker.com.cn
+  sources: *id001
+- type: domain_suffix
   value: seattlespheres.com
+  sources: *id001
+- type: domain_suffix
+  value: serving-sys.com
   sources: *id001
 - type: domain_suffix
   value: siege-amazon.com
   sources: *id001
 - type: domain_suffix
+  value: ss2.us
+  sources: *id001
+- type: domain_suffix
   value: ssl-images-amazon.com
+  sources: *id001
+- type: domain_suffix
+  value: static.siege-amazon.com
   sources: *id001
 - type: domain_suffix
   value: thinkboxsoftware.com
@@ -618,10 +845,10 @@ rules:
 metadata:
   priority: high
   confidence: high
-  last_updated: '2026-08-28T11:00:36.532427+00:00'
+  last_updated: '2026-08-28T12:17:38.612965+00:00'
   notes: Generated by normalize.py V1.1
   stats:
-    domain_count: 187
+    domain_count: 260
     ip_count: 15
-    total: 202
+    total: 275
 canonical_source: blackmatrix7

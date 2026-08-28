@@ -2,7 +2,7 @@
 
 - registered: **187**
 - materialized: **170**
-- with domain rules: **169**
+- with domain rules: **170**
 - with IP sidecar: **36**
 - with ≥1 client artifact: **171**
 
@@ -25,7 +25,7 @@
 | amazon | Y (388) | Y (15) | 7/7 |  |
 | amazonaws | n (0) | n (0) | 0/7 | COVERED_BY_AGGREGATE |
 | anthropic | Y (16) | n (0) | 7/7 |  |
-| apple | Y (48) | Y (13) | 7/7 |  |
+| apple | Y (80) | Y (13) | 7/7 |  |
 | applemusic | Y (18) | n (0) | 7/7 |  |
 | appletv | Y (14) | n (0) | 7/7 |  |
 | applications | n (0) | n (0) | 0/7 | NO_UPSTREAM |
@@ -46,7 +46,7 @@
 | canva | Y (12) | n (0) | 7/7 |  |
 | ccb | Y (36) | n (0) | 7/7 |  |
 | ceb | Y (30) | n (0) | 7/7 |  |
-| china | n (0) | Y (9661) | 7/7 |  |
+| china | Y (112124) | Y (9661) | 7/7 |  |
 | chinamobile | Y (71) | Y (1) | 7/7 |  |
 | chinatelecom | Y (166) | n (0) | 7/7 |  |
 | chinaunicom | Y (67) | Y (3725) | 7/7 |  |
