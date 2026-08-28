@@ -1,11 +1,11 @@
 {
   "source": "v2fly",
   "fetch": "github_raw",
-  "timestamp": "2026-08-28T13:09:17.505744+00:00",
-  "files_ok": 52,
+  "timestamp": "2026-08-28T14:38:05.637695+00:00",
+  "files_ok": 56,
   "files_failed": 0,
   "empty_blocked": 0,
-  "rules_declared": 52,
+  "rules_declared": 56,
   "files": [
     {
       "name": "v2fly_deepseek",
@@ -525,6 +525,46 @@
       "local": "sources/v2fly/v2fly_huawei",
       "size": 479,
       "sha256": "5e2aa1cc680fea6594c17cf9e26111fe35be8283332e4dc2c3c1917aca335080",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_category_porn",
+      "path": "data/category-porn",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-porn",
+      "service": "restricted",
+      "local": "sources/v2fly/v2fly_category_porn",
+      "size": 92745,
+      "sha256": "c4c8362d3b67d6351491950a82e434cfc89febf8aacbcf01f3e17f11d798e97e",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_pornhub",
+      "path": "data/pornhub",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/pornhub",
+      "service": "restricted",
+      "local": "sources/v2fly/v2fly_pornhub",
+      "size": 129,
+      "sha256": "2fc9e05935457d9e08e1d8d8cda16adfcb82645c661d9a3233ffcb5ede0a206e",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_xvideos",
+      "path": "data/xvideos",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/xvideos",
+      "service": "restricted",
+      "local": "sources/v2fly/v2fly_xvideos",
+      "size": 71,
+      "sha256": "cb33a352b459aa462c1e7cd5f60b17474ff5beec973c312019af33d3d4057040",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_ehentai",
+      "path": "data/ehentai",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/ehentai",
+      "service": "restricted",
+      "local": "sources/v2fly/v2fly_ehentai",
+      "size": 106,
+      "sha256": "e662f5137041b52538abfc590d9a42dd688571f890aa0d055de41dcc8cdd5dd2",
       "status": "ok"
     }
   ],

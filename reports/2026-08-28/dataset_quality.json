@@ -14,21 +14,19 @@
     "export ok generated/geosite/proxy.txt",
     "export ok generated/geoip/cn.txt",
     "export ok generated/provider/cloudflare.txt",
-    "provider dataset present: aws.txt count=10940",
+    "provider dataset present: aws.txt count=10941",
     "provider dataset present: cloudflare6.txt count=7",
     "provider dataset present: cloudflare.txt count=15",
     "asn_metadata entries=15",
     "policy direct files=1",
     "policy proxy files=1",
     "policy dns files=1",
-    "mmdb artifact ok",
-    "new dataset: database/network/dns.txt count=18",
-    "new dataset: database/network/ntp.txt count=12"
+    "mmdb artifact ok"
   ],
   "counts": {
     "hard": 0,
     "warn": 0,
-    "info": 20
+    "info": 18
   },
   "thresholds": {
     "shrink_hard": 0.9,

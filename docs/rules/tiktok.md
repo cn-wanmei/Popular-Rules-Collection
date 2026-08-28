@@ -5,9 +5,9 @@
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `tiktok` |
-| Primary Ecosystem | **Social** (`social`) |
+| Primary Ecosystem | **ByteDance** (`bytedance`) |
 | Service Type | service |
-| Tags | social |
+| Tags | bytedance, social |
 | 类型 | domain |
 | Domains | 60 |
 | CIDR | 0 |
@@ -60,7 +60,7 @@
 - Schema: `database/services/tiktok.yaml`
 - Domains: `database/domains/tiktok.txt`
 - IPs: `database/ips/tiktok.txt`（若有）
-- Product page: `rule/Social/…`（见 generate_rule_pages）
+- Product page: `rule/ByteDance/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

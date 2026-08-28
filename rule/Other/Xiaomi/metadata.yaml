@@ -1,0 +1,33 @@
+id: xiaomi
+name: Xiaomi
+primary_category: other
+categories:
+- other
+- china
+service_type: service
+parent: null
+children: null
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: xiaomi.list
+  domain: xiaomi_domain.list
+  ip: xiaomi_ip.list
+statistics:
+  domains: 148
+  ipv4_or_cidr: 9
+  mixed: 157
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-28'
+auto_generated: true

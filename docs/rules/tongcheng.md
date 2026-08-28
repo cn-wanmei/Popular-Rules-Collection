@@ -7,7 +7,7 @@
 | Rule ID | `tongcheng` |
 | Primary Ecosystem | **China** (`china`) |
 | Service Type | service |
-| Tags | china, travel |
+| Tags | china |
 | 类型 | domain |
 | Domains | 8 |
 | CIDR | 0 |

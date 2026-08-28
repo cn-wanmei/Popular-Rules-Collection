@@ -8,7 +8,7 @@
       "scope": "provider",
       "path": "database/provider/cloudflare.txt",
       "lines": 15,
-      "fetched_at": "2026-08-28T13:11:50.917523+00:00",
+      "fetched_at": "2026-08-28T14:41:48.752285+00:00",
       "source_url": "https://www.cloudflare.com/ips-v4",
       "notes": "Provider infrastructure \u2014 not product service list."
     },
@@ -17,7 +17,7 @@
       "scope": "provider",
       "path": "database/provider/cloudflare6.txt",
       "lines": 7,
-      "fetched_at": "2026-08-28T13:11:50.917523+00:00",
+      "fetched_at": "2026-08-28T14:41:48.752285+00:00",
       "source_url": "https://www.cloudflare.com/ips-v6",
       "notes": "Provider \u2260 Service"
     },
@@ -25,8 +25,8 @@
       "id": "provider-aws",
       "scope": "provider",
       "path": "database/provider/aws.txt",
-      "lines": 10941,
-      "fetched_at": "2026-08-28T13:11:50.917523+00:00",
+      "lines": 10942,
+      "fetched_at": "2026-08-28T14:41:48.752285+00:00",
       "source_url": "https://ip-ranges.amazonaws.com/ip-ranges.json",
       "notes": "NEVER map entire set to Amazon retail service."
     }

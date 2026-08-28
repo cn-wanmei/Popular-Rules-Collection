@@ -5,9 +5,9 @@
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `slack` |
-| Primary Ecosystem | **Developer** (`developer`) |
+| Primary Ecosystem | **Other** (`other`) |
 | Service Type | service |
-| Tags | developer |
+| Tags | other |
 | 类型 | domain |
 | Domains | 11 |
 | CIDR | 0 |
@@ -58,7 +58,7 @@ _未在 config/official_sites.yaml 配置_
 - Schema: `database/services/slack.yaml`
 - Domains: `database/domains/slack.txt`
 - IPs: `database/ips/slack.txt`（若有）
-- Product page: `rule/Developer/…`（见 generate_rule_pages）
+- Product page: `rule/Other/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

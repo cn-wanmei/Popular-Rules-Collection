@@ -7,7 +7,7 @@
 | Rule ID | `youku` |
 | Primary Ecosystem | **Alibaba** (`alibaba`) |
 | Service Type | service |
-| Tags | alibaba, china, streaming |
+| Tags | alibaba, china |
 | 类型 | mixed |
 | Domains | 34 |
 | CIDR | 1 |

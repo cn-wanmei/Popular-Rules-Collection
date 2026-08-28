@@ -7,7 +7,7 @@
 | Rule ID | `huggingface` |
 | Primary Ecosystem | **AI** (`ai`) |
 | Service Type | service |
-| Tags | ai, developer |
+| Tags | ai |
 | 类型 | domain |
 | Domains | 3 |
 | CIDR | 0 |

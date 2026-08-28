@@ -5,9 +5,9 @@
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `huawei` |
-| Primary Ecosystem | **China** (`china`) |
+| Primary Ecosystem | **Other** (`other`) |
 | Service Type | service |
-| Tags | china |
+| Tags | other, china |
 | 类型 | domain |
 | Domains | 402 |
 | CIDR | 0 |
@@ -59,7 +59,7 @@ _未在 config/official_sites.yaml 配置_
 - Schema: `database/services/huawei.yaml`
 - Domains: `database/domains/huawei.txt`
 - IPs: `database/ips/huawei.txt`（若有）
-- Product page: `rule/China/…`（见 generate_rule_pages）
+- Product page: `rule/Other/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

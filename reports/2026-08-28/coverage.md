@@ -1,10 +1,10 @@
 # Coverage Matrix (2026-08-28)
 
-- registered: **187**
-- materialized: **170**
+- registered: **182**
+- materialized: **171**
 - with domain rules: **170**
 - with IP sidecar: **36**
-- with ≥1 client artifact: **171**
+- with ≥1 client artifact: **170**
 
 | service | domain | ip | clients | intentional |
 |---------|--------|----|---------|-------------|
@@ -14,7 +14,7 @@
 | adblock-light | Y (84212) | n (0) | 7/7 | DEFERRED_PROFILE |
 | adblock-pro | Y (452190) | n (0) | 7/7 | DEFERRED_PROFILE |
 | adobe | Y (279) | n (0) | 7/7 |  |
-| ai | Y (98) | n (0) | 7/7 |  |
+| ai | Y (358) | n (0) | 7/7 |  |
 | airbnb | Y (166) | n (0) | 7/7 |  |
 | aisuite | Y (191) | n (0) | 7/7 |  |
 | akamai | Y (12) | n (0) | 7/7 |  |
@@ -24,11 +24,10 @@
 | amap | Y (32) | n (0) | 7/7 |  |
 | amazon | Y (531) | Y (15) | 7/7 |  |
 | amazonaws | n (0) | n (0) | 0/7 | COVERED_BY_AGGREGATE |
-| anthropic | Y (16) | n (0) | 7/7 |  |
+| anthropic | Y (17) | n (0) | 7/7 |  |
 | apple | Y (3829) | Y (13) | 7/7 |  |
 | applemusic | Y (18) | n (0) | 7/7 |  |
 | appletv | Y (14) | n (0) | 7/7 |  |
-| applications | n (0) | n (0) | 0/7 | NO_UPSTREAM |
 | atlassian | Y (22) | n (0) | 7/7 |  |
 | aws | Y (155) | n (0) | 7/7 |  |
 | azure | Y (302) | n (0) | 7/7 |  |
@@ -37,7 +36,6 @@
 | bbc | Y (55) | n (0) | 7/7 |  |
 | bilibili | Y (251) | Y (8) | 7/7 |  |
 | binance | Y (24) | n (0) | 7/7 |  |
-| blizzard | n (0) | n (0) | 0/7 | MAPS_TO |
 | bluesky | Y (6) | n (0) | 7/7 |  |
 | boc | Y (44) | n (0) | 7/7 |  |
 | bocom | Y (12) | n (0) | 7/7 |  |
@@ -65,11 +63,10 @@
 | digitalocean | Y (12) | n (0) | 7/7 |  |
 | dingtalk | n (0) | n (0) | 0/7 | COVERED_BY_AGGREGATE |
 | discord | Y (60) | n (0) | 7/7 |  |
-| discoveryplus | n (0) | n (0) | 0/7 | NO_UPSTREAM |
 | disney | Y (350) | n (0) | 7/7 |  |
 | docker | Y (22) | n (0) | 7/7 |  |
 | doubao | Y (64) | n (0) | 7/7 |  |
-| douyin | Y (26) | n (0) | 7/7 |  |
+| douyin | Y (156) | n (0) | 7/7 |  |
 | dropbox | Y (34) | n (0) | 7/7 |  |
 | ea | Y (330) | n (0) | 7/7 |  |
 | ebay | Y (740) | n (0) | 7/7 |  |
@@ -95,7 +92,7 @@
 | hbo | Y (94) | n (0) | 7/7 |  |
 | heroku | Y (24) | n (0) | 7/7 |  |
 | hoyoverse | Y (30) | n (0) | 7/7 |  |
-| huawei | Y (320) | n (0) | 7/7 |  |
+| huawei | Y (804) | n (0) | 7/7 |  |
 | huggingface | Y (6) | n (0) | 7/7 |  |
 | hulu | Y (116) | n (0) | 7/7 |  |
 | icbc | Y (116) | n (0) | 7/7 |  |
@@ -107,7 +104,6 @@
 | kakaotalk | Y (24) | Y (6) | 7/7 |  |
 | kuaishou | Y (1356) | n (0) | 7/7 |  |
 | kugoukuwo | Y (128) | Y (90) | 7/7 |  |
-| lan | n (0) | n (0) | 0/7 | NO_UPSTREAM |
 | line | Y (58) | Y (16) | 7/7 |  |
 | linkedin | Y (24) | n (0) | 7/7 |  |
 | meituan | Y (14) | n (0) | 7/7 |  |
@@ -122,13 +118,11 @@
 | nintendo | Y (251) | Y (1) | 7/7 |  |
 | notion | Y (16) | n (0) | 7/7 |  |
 | npm | n (0) | n (0) | 0/7 | NO_UPSTREAM |
-| ntp | n (0) | n (0) | 7/7 | NO_UPSTREAM |
 | okx | Y (6) | n (0) | 7/7 |  |
 | onedrive | Y (29) | n (0) | 7/7 |  |
-| openai | Y (86) | Y (2) | 7/7 |  |
+| openai | Y (93) | Y (2) | 7/7 |  |
 | oppo | Y (112) | n (0) | 7/7 |  |
 | oracle | Y (54) | n (0) | 7/7 |  |
-| origin | n (0) | n (0) | 0/7 | MAPS_TO |
 | paramountplus | Y (18) | n (0) | 7/7 |  |
 | paypal | Y (493) | n (0) | 7/7 |  |
 | peacock | Y (2) | n (0) | 7/7 |  |
@@ -143,6 +137,7 @@
 | psbc | Y (6) | n (0) | 7/7 |  |
 | qq | n (0) | n (0) | 0/7 | COVERED_BY_AGGREGATE |
 | reddit | Y (30) | n (0) | 7/7 |  |
+| restricted | n (0) | n (0) | 0/7 |  |
 | riotgames | Y (110) | n (0) | 7/7 |  |
 | roblox | Y (100) | n (0) | 7/7 |  |
 | rockstar | Y (10) | n (0) | 7/7 |  |

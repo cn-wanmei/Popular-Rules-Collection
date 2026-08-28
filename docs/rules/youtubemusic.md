@@ -5,9 +5,9 @@
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `youtubemusic` |
-| Primary Ecosystem | **Streaming** (`streaming`) |
+| Primary Ecosystem | **Google** (`google`) |
 | Service Type | service |
-| Tags | streaming, google |
+| Tags | google, streaming |
 | 类型 | domain |
 | Domains | 1 |
 | CIDR | 0 |
@@ -58,7 +58,7 @@ _未在 config/official_sites.yaml 配置_
 - Schema: `database/services/youtubemusic.yaml`
 - Domains: `database/domains/youtubemusic.txt`
 - IPs: `database/ips/youtubemusic.txt`（若有）
-- Product page: `rule/Streaming/…`（见 generate_rule_pages）
+- Product page: `rule/Google/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

@@ -7,7 +7,7 @@
 | Rule ID | `azure` |
 | Primary Ecosystem | **Developer** (`developer`) |
 | Service Type | service |
-| Tags | developer, cloud |
+| Tags | developer, microsoft |
 | 类型 | domain |
 | Domains | 151 |
 | CIDR | 0 |

@@ -5,9 +5,9 @@
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `private` |
-| Primary Ecosystem | **Network** (`network`) |
+| Primary Ecosystem | **Privacy** (`privacy`) |
 | Service Type | service |
-| Tags | network |
+| Tags | privacy |
 | 类型 | mixed |
 | Domains | 245 |
 | CIDR | 3 |
@@ -57,7 +57,7 @@ _未在 config/official_sites.yaml 配置_
 - Schema: `database/services/private.yaml`
 - Domains: `database/domains/private.txt`
 - IPs: `database/ips/private.txt`（若有）
-- Product page: `rule/Network/…`（见 generate_rule_pages）
+- Product page: `rule/Privacy/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

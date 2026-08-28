@@ -1,13 +1,13 @@
-# KuaiShou
+# Kuaishou
 
-> 用于匹配 **KuaiShou** 相关域名/IP 的分流规则（来自上游标准化合并）。
+> 用于匹配 **Kuaishou** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `kuaishou` |
 | Primary Ecosystem | **China** (`china`) |
 | Service Type | service |
-| Tags | china, social |
+| Tags | china |
 | 类型 | domain |
 | Domains | 678 |
 | CIDR | 0 |
@@ -17,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **KuaiShou** 相关域名/IP 的分流规则（来自上游标准化合并）。
+用于匹配 **Kuaishou** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-28T13:25:29.632151+00:00",
+  "generated_at": "2026-08-28T15:01:55.598172+00:00",
   "date": "2026-08-28",
   "sources": [
     {
@@ -12,32 +12,32 @@
       "files_failed": 0,
       "health_status": "healthy",
       "lifecycle": "active",
-      "last_success": "2026-08-28T13:09:03.386357+00:00",
-      "last_attempt": "2026-08-28T13:09:03.386340+00:00"
+      "last_success": "2026-08-28T14:37:46.392572+00:00",
+      "last_attempt": "2026-08-28T14:37:46.392550+00:00"
     },
     {
       "id": "metacubex",
       "enabled": true,
       "priority": 90,
-      "rules_declared": 63,
-      "files_ok": 63,
+      "rules_declared": 67,
+      "files_ok": 67,
       "files_failed": 0,
       "health_status": "healthy",
       "lifecycle": "active",
-      "last_success": "2026-08-28T13:09:09.932348+00:00",
-      "last_attempt": "2026-08-28T13:09:09.932332+00:00"
+      "last_success": "2026-08-28T14:37:57.022437+00:00",
+      "last_attempt": "2026-08-28T14:37:57.022421+00:00"
     },
     {
       "id": "v2fly",
       "enabled": true,
       "priority": 85,
-      "rules_declared": 52,
-      "files_ok": 52,
+      "rules_declared": 56,
+      "files_ok": 56,
       "files_failed": 0,
       "health_status": "healthy",
       "lifecycle": "active",
-      "last_success": "2026-08-28T13:09:17.505741+00:00",
-      "last_attempt": "2026-08-28T13:09:17.505724+00:00"
+      "last_success": "2026-08-28T14:38:05.637690+00:00",
+      "last_attempt": "2026-08-28T14:38:05.637675+00:00"
     },
     {
       "id": "dler",
@@ -48,8 +48,8 @@
       "files_failed": 0,
       "health_status": "healthy",
       "lifecycle": "active",
-      "last_success": "2026-08-28T13:09:19.530240+00:00",
-      "last_attempt": "2026-08-28T13:09:19.530223+00:00"
+      "last_success": "2026-08-28T14:38:07.921052+00:00",
+      "last_attempt": "2026-08-28T14:38:07.921037+00:00"
     }
   ],
   "intentional_unmaterialized": {

@@ -1,4 +1,4 @@
-generated_at: '2026-08-28T13:26:17.178925+00:00'
+generated_at: '2026-08-28T15:03:07.000564+00:00'
 categories:
   '12306':
     display_name: '12306'
@@ -76,7 +76,7 @@ categories:
       ips: 0
   privacy:
     display_name: Privacy
-    order: 180
+    order: 200
     rules:
     - id: adblock
       name: AdBlock
@@ -96,9 +96,27 @@ categories:
       service_type: service
       domains: 226095
       ips: 0
+    - id: gfw
+      name: GFW
+      path: rule/Privacy/GFW
+      service_type: service
+      domains: 4387
+      ips: 0
+    - id: private
+      name: Private
+      path: rule/Privacy/Private
+      service_type: service
+      domains: 241
+      ips: 3
+    - id: proxy
+      name: Proxy
+      path: rule/Privacy/Proxy
+      service_type: service
+      domains: 28217
+      ips: 0
   other:
     display_name: Other
-    order: 999
+    order: 230
     rules:
     - id: adobe
       name: Adobe
@@ -136,12 +154,30 @@ categories:
       service_type: service
       domains: 370
       ips: 0
+    - id: huawei
+      name: Huawei
+      path: rule/Other/Huawei
+      service_type: service
+      domains: 402
+      ips: 0
     - id: naver
       name: Naver
       path: rule/Other/Naver
       service_type: service
       domains: 26
       ips: 33
+    - id: notion
+      name: Notion
+      path: rule/Other/Notion
+      service_type: service
+      domains: 8
+      ips: 0
+    - id: oppo
+      name: OPPO
+      path: rule/Other/OPPO
+      service_type: service
+      domains: 56
+      ips: 0
     - id: scholar
       name: Scholar
       path: rule/Other/Scholar
@@ -154,11 +190,23 @@ categories:
       service_type: service
       domains: 8
       ips: 0
+    - id: slack
+      name: Slack
+      path: rule/Other/Slack
+      service_type: service
+      domains: 11
+      ips: 0
     - id: uber
       name: Uber
       path: rule/Other/Uber
       service_type: service
       domains: 3
+      ips: 0
+    - id: vivo
+      name: Vivo
+      path: rule/Other/Vivo
+      service_type: service
+      domains: 14
       ips: 0
     - id: walmart
       name: Walmart
@@ -171,6 +219,18 @@ categories:
       path: rule/Other/Wikipedia
       service_type: service
       domains: 12
+      ips: 0
+    - id: xiaomi
+      name: Xiaomi
+      path: rule/Other/Xiaomi
+      service_type: service
+      domains: 148
+      ips: 9
+    - id: zoom
+      name: Zoom
+      path: rule/Other/Zoom
+      service_type: service
+      domains: 3
       ips: 0
   ai:
     display_name: AI
@@ -256,7 +316,7 @@ categories:
       ips: 0
   developer:
     display_name: Developer
-    order: 160
+    order: 190
     rules:
     - id: akamai
       name: Akamai
@@ -342,23 +402,11 @@ categories:
       service_type: service
       domains: 10
       ips: 0
-    - id: notion
-      name: Notion
-      path: rule/Developer/Notion
-      service_type: service
-      domains: 8
-      ips: 0
     - id: oracle
       name: Oracle
       path: rule/Developer/Oracle
       service_type: service
       domains: 27
-      ips: 0
-    - id: slack
-      name: Slack
-      path: rule/Developer/Slack
-      service_type: service
-      domains: 11
       ips: 0
     - id: trello
       name: Trello
@@ -407,14 +455,14 @@ categories:
       domains: 13
       ips: 0
     - id: gaode
-      name: GaoDe
-      path: rule/Alibaba/GaoDe
+      name: Gaode
+      path: rule/Alibaba/Gaode
       service_type: service
       domains: 9
       ips: 0
     - id: xianyu
-      name: XianYu
-      path: rule/Alibaba/XianYu
+      name: Xianyu
+      path: rule/Alibaba/Xianyu
       service_type: service
       domains: 16
       ips: 0
@@ -480,7 +528,7 @@ categories:
       ips: 0
   gaming:
     display_name: Gaming
-    order: 170
+    order: 180
     rules:
     - id: battlenet
       name: BattleNet
@@ -562,7 +610,7 @@ categories:
       ips: 0
   streaming:
     display_name: Streaming
-    order: 200
+    order: 160
     rules:
     - id: bbc
       name: BBC
@@ -660,12 +708,6 @@ categories:
       service_type: service
       domains: 16
       ips: 0
-    - id: youtubemusic
-      name: YouTubeMusic
-      path: rule/Streaming/YouTubeMusic
-      service_type: service
-      domains: 1
-      ips: 0
   china:
     display_name: China
     order: 150
@@ -700,12 +742,6 @@ categories:
       service_type: service
       domains: 25
       ips: 0
-    - id: huawei
-      name: Huawei
-      path: rule/China/Huawei
-      service_type: service
-      domains: 402
-      ips: 0
     - id: iqiyi
       name: iQIYI
       path: rule/China/iQIYI
@@ -713,8 +749,8 @@ categories:
       domains: 34
       ips: 21
     - id: kuaishou
-      name: KuaiShou
-      path: rule/China/KuaiShou
+      name: Kuaishou
+      path: rule/China/Kuaishou
       service_type: service
       domains: 678
       ips: 0
@@ -725,8 +761,8 @@ categories:
       domains: 19
       ips: 90
     - id: meituan
-      name: MeiTuan
-      path: rule/China/MeiTuan
+      name: Meituan
+      path: rule/China/Meituan
       service_type: service
       domains: 7
       ips: 0
@@ -736,12 +772,6 @@ categories:
       service_type: service
       domains: 63
       ips: 18
-    - id: oppo
-      name: OPPO
-      path: rule/China/OPPO
-      service_type: service
-      domains: 56
-      ips: 0
     - id: pinduoduo
       name: Pinduoduo
       path: rule/China/Pinduoduo
@@ -760,12 +790,6 @@ categories:
       service_type: service
       domains: 8
       ips: 0
-    - id: vivo
-      name: Vivo
-      path: rule/China/Vivo
-      service_type: service
-      domains: 14
-      ips: 0
     - id: weibo
       name: Weibo
       path: rule/China/Weibo
@@ -773,17 +797,11 @@ categories:
       domains: 3
       ips: 0
     - id: xiaohongshu
-      name: XiaoHongShu
-      path: rule/China/XiaoHongShu
+      name: Xiaohongshu
+      path: rule/China/Xiaohongshu
       service_type: service
       domains: 4
       ips: 0
-    - id: xiaomi
-      name: XiaoMi
-      path: rule/China/XiaoMi
-      service_type: service
-      domains: 148
-      ips: 9
     - id: zhihu
       name: Zhihu
       path: rule/China/Zhihu
@@ -792,7 +810,7 @@ categories:
       ips: 5
   finance:
     display_name: Finance
-    order: 220
+    order: 210
     rules:
     - id: binance
       name: Binance
@@ -826,7 +844,7 @@ categories:
       ips: 0
   social:
     display_name: Social
-    order: 190
+    order: 170
     rules:
     - id: bluesky
       name: Bluesky
@@ -912,12 +930,6 @@ categories:
       service_type: service
       domains: 1
       ips: 0
-    - id: tiktok
-      name: TikTok
-      path: rule/Social/TikTok
-      service_type: service
-      domains: 53
-      ips: 0
     - id: twitter
       name: Twitter
       path: rule/Social/Twitter
@@ -930,12 +942,6 @@ categories:
       service_type: service
       domains: 16
       ips: 11
-    - id: zoom
-      name: Zoom
-      path: rule/Social/Zoom
-      service_type: service
-      domains: 3
-      ips: 0
   bytedance:
     display_name: ByteDance
     order: 60
@@ -957,6 +963,12 @@ categories:
       path: rule/ByteDance/Douyin
       service_type: service
       domains: 78
+      ips: 0
+    - id: tiktok
+      name: TikTok
+      path: rule/ByteDance/TikTok
+      service_type: service
+      domains: 53
       ips: 0
   chinamobile:
     display_name: ChinaMobile
@@ -1016,40 +1028,12 @@ categories:
       service_type: service
       domains: 182
       ips: 3
-  network:
-    display_name: Network
-    order: 210
-    rules:
-    - id: gfw
-      name: GFW
-      path: rule/Network/GFW
+    - id: youtubemusic
+      name: YouTubeMusic
+      path: rule/Google/YouTubeMusic
       service_type: service
-      domains: 4387
+      domains: 1
       ips: 0
-    - id: private
-      name: Private
-      path: rule/Network/Private
-      service_type: service
-      domains: 241
-      ips: 3
-    - id: proxy
-      name: Proxy
-      path: rule/Network/Proxy
-      service_type: service
-      domains: 28217
-      ips: 0
-    - id: speedtest
-      name: Speedtest
-      path: rule/Network/Speedtest
-      service_type: service
-      domains: 4
-      ips: 0
-    - id: stun
-      name: STUN
-      path: rule/Network/STUN
-      service_type: service
-      domains: 350
-      ips: 16
   microsoft:
     display_name: Microsoft
     order: 80
@@ -1094,6 +1078,32 @@ categories:
       service_type: aggregate
       domains: 265
       ips: 0
+  restricted:
+    display_name: Restricted
+    order: 250
+    rules:
+    - id: restricted
+      name: Restricted
+      path: rule/Restricted/Restricted
+      service_type: aggregate
+      domains: 6519
+      ips: 0
+  network:
+    display_name: Network
+    order: 220
+    rules:
+    - id: speedtest
+      name: Speedtest
+      path: rule/Network/Speedtest
+      service_type: service
+      domains: 4
+      ips: 0
+    - id: stun
+      name: STUN
+      path: rule/Network/STUN
+      service_type: service
+      domains: 350
+      ips: 16
   tencent:
     display_name: Tencent
     order: 40

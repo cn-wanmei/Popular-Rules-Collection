@@ -7,7 +7,7 @@
 | Rule ID | `alipay` |
 | Primary Ecosystem | **Alibaba** (`alibaba`) |
 | Service Type | service |
-| Tags | alibaba, china, finance |
+| Tags | alibaba, china |
 | 类型 | domain |
 | Domains | 21 |
 | CIDR | 0 |

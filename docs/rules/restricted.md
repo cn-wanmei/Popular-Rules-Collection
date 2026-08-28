@@ -1,18 +1,64 @@
 # Restricted
 
+> 用于匹配 **Restricted** 相关域名/IP 的分流规则（来自上游标准化合并）。
+
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `restricted` |
-| 建议策略 | **PROXY** |
-| Domains | ~6500+ |
+| Primary Ecosystem | **Restricted** (`restricted`) |
+| Service Type | aggregate |
+| Tags | restricted |
+| 类型 | domain |
+| Domains | 6657 |
+| CIDR | 0 |
+| 最后更新 | 2026-08-28 |
 | Sources | metacubex / v2fly |
+| Confidence | HIGH |
 
-## 订阅
+## 用途
 
-| 客户端 | 链接 |
-|--------|------|
-| Mihomo | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/restricted.yaml) |
-| Surge | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/restricted.list) |
-| sing-box | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/restricted.json) |
+用于匹配 **Restricted** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
-详见 [RESTRICTED_CATEGORY.md](../RESTRICTED_CATEGORY.md)
+支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+
+## 一键订阅
+
+| 客户端 | 路径 | 链接 |
+|--------|------|------|
+| Mihomo | `generated/mihomo/restricted.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/restricted.yaml) |
+| sing-box | `generated/sing-box/restricted.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/restricted.json) |
+| Surge | `generated/surge/restricted.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/restricted.list) |
+| Shadowrocket | `generated/shadowrocket/restricted.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/restricted.list) |
+| Quantumult X | `generated/quantumult-x/restricted.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/restricted.list) |
+| Egern | `generated/egern/restricted.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/restricted.yaml) |
+| Loon | `generated/loon/restricted.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/restricted.list) |
+
+## CDN 镜像（Mihomo）
+
+| 镜像 | 链接 |
+|------|------|
+| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/restricted.yaml |
+| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/restricted.yaml |
+| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/restricted.yaml |
+| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/restricted.yaml |
+
+## 官方网站
+
+_未在 config/official_sites.yaml 配置_
+
+## 规则来源（Provenance）
+
+- `metacubex`
+- `v2fly`
+
+由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
+
+## 数据位置
+
+- Schema: `database/services/restricted.yaml`
+- Domains: `database/domains/restricted.txt`
+- IPs: `database/ips/restricted.txt`（若有）
+- Product page: `rule/Restricted/…`（见 generate_rule_pages）
+
+---
+_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

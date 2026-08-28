@@ -7,7 +7,7 @@
 | Rule ID | `bilibili` |
 | Primary Ecosystem | **China** (`china`) |
 | Service Type | service |
-| Tags | china, streaming |
+| Tags | china |
 | 类型 | mixed |
 | Domains | 122 |
 | CIDR | 8 |

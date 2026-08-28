@@ -1,0 +1,33 @@
+id: gaode
+name: Gaode
+primary_category: alibaba
+categories:
+- alibaba
+- china
+service_type: service
+parent: alibaba
+children: null
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: gaode.list
+  domain: gaode_domain.list
+  ip: null
+statistics:
+  domains: 9
+  ipv4_or_cidr: 0
+  mixed: 9
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-28'
+auto_generated: true

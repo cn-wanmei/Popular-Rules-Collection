@@ -1590,6 +1590,19 @@
       }
     },
     {
+      "service": "restricted",
+      "database": 6519,
+      "clients": {
+        "mihomo": 6657,
+        "sing-box": 6657,
+        "surge": 6657,
+        "shadowrocket": 6520,
+        "quantumult-x": 6520,
+        "egern": 6520,
+        "loon": 6520
+      }
+    },
+    {
       "service": "riotgames",
       "database": 55,
       "clients": {

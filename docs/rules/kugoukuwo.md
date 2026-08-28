@@ -7,7 +7,7 @@
 | Rule ID | `kugoukuwo` |
 | Primary Ecosystem | **China** (`china`) |
 | Service Type | service |
-| Tags | china, streaming |
+| Tags | china |
 | 类型 | mixed |
 | Domains | 19 |
 | CIDR | 90 |

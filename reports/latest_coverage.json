@@ -1,10 +1,10 @@
 {
   "date": "2026-08-28",
-  "registered": 187,
-  "materialized": 170,
+  "registered": 182,
+  "materialized": 171,
   "with_domain": 170,
   "with_ip": 36,
-  "with_any_client": 171,
+  "with_any_client": 170,
   "dataset_globals": {
     "geosite_direct": 111540,
     "geosite_proxy": 27220,
@@ -242,7 +242,7 @@
       "materialized": true,
       "domain": {
         "available": true,
-        "count": 98
+        "count": 358
       },
       "ip": {
         "available": false,
@@ -612,7 +612,7 @@
       "materialized": true,
       "domain": {
         "available": true,
-        "count": 16
+        "count": 17
       },
       "ip": {
         "available": false,
@@ -752,43 +752,6 @@
       },
       "client_any": true,
       "intentional_code": null
-    },
-    {
-      "service": "applications",
-      "primary_category": "other",
-      "service_type": "service",
-      "materialized": false,
-      "domain": {
-        "available": false,
-        "count": 0
-      },
-      "ip": {
-        "available": false,
-        "count": 0
-      },
-      "geosite": {
-        "available": true
-      },
-      "geoip": {
-        "available": true
-      },
-      "asn": {
-        "available": true
-      },
-      "lan": {
-        "available": true
-      },
-      "clients": {
-        "mihomo": false,
-        "sing-box": false,
-        "surge": false,
-        "shadowrocket": false,
-        "quantumult-x": false,
-        "egern": false,
-        "loon": false
-      },
-      "client_any": false,
-      "intentional_code": "NO_UPSTREAM"
     },
     {
       "service": "atlassian",
@@ -1085,43 +1048,6 @@
       },
       "client_any": true,
       "intentional_code": null
-    },
-    {
-      "service": "blizzard",
-      "primary_category": "gaming",
-      "service_type": "service",
-      "materialized": false,
-      "domain": {
-        "available": false,
-        "count": 0
-      },
-      "ip": {
-        "available": false,
-        "count": 0
-      },
-      "geosite": {
-        "available": true
-      },
-      "geoip": {
-        "available": true
-      },
-      "asn": {
-        "available": true
-      },
-      "lan": {
-        "available": true
-      },
-      "clients": {
-        "mihomo": false,
-        "sing-box": false,
-        "surge": false,
-        "shadowrocket": false,
-        "quantumult-x": false,
-        "egern": false,
-        "loon": false
-      },
-      "client_any": false,
-      "intentional_code": "MAPS_TO"
     },
     {
       "service": "bluesky",
@@ -2123,43 +2049,6 @@
       "intentional_code": null
     },
     {
-      "service": "discoveryplus",
-      "primary_category": "streaming",
-      "service_type": "service",
-      "materialized": false,
-      "domain": {
-        "available": false,
-        "count": 0
-      },
-      "ip": {
-        "available": false,
-        "count": 0
-      },
-      "geosite": {
-        "available": true
-      },
-      "geoip": {
-        "available": true
-      },
-      "asn": {
-        "available": true
-      },
-      "lan": {
-        "available": true
-      },
-      "clients": {
-        "mihomo": false,
-        "sing-box": false,
-        "surge": false,
-        "shadowrocket": false,
-        "quantumult-x": false,
-        "egern": false,
-        "loon": false
-      },
-      "client_any": false,
-      "intentional_code": "NO_UPSTREAM"
-    },
-    {
       "service": "disney",
       "primary_category": "streaming",
       "service_type": "service",
@@ -2277,7 +2166,7 @@
       "materialized": true,
       "domain": {
         "available": true,
-        "count": 26
+        "count": 156
       },
       "ip": {
         "available": false,
@@ -2827,7 +2716,7 @@
     },
     {
       "service": "gfw",
-      "primary_category": "network",
+      "primary_category": "privacy",
       "service_type": "service",
       "materialized": true,
       "domain": {
@@ -3234,12 +3123,12 @@
     },
     {
       "service": "huawei",
-      "primary_category": "china",
+      "primary_category": "other",
       "service_type": "service",
       "materialized": true,
       "domain": {
         "available": true,
-        "count": 320
+        "count": 804
       },
       "ip": {
         "available": false,
@@ -3675,43 +3564,6 @@
       },
       "client_any": true,
       "intentional_code": null
-    },
-    {
-      "service": "lan",
-      "primary_category": "network",
-      "service_type": "service",
-      "materialized": false,
-      "domain": {
-        "available": false,
-        "count": 0
-      },
-      "ip": {
-        "available": false,
-        "count": 0
-      },
-      "geosite": {
-        "available": true
-      },
-      "geoip": {
-        "available": true
-      },
-      "asn": {
-        "available": true
-      },
-      "lan": {
-        "available": true
-      },
-      "clients": {
-        "mihomo": false,
-        "sing-box": false,
-        "surge": false,
-        "shadowrocket": false,
-        "quantumult-x": false,
-        "egern": false,
-        "loon": false
-      },
-      "client_any": false,
-      "intentional_code": "NO_UPSTREAM"
     },
     {
       "service": "line",
@@ -4159,7 +4011,7 @@
     },
     {
       "service": "notion",
-      "primary_category": "developer",
+      "primary_category": "other",
       "service_type": "service",
       "materialized": true,
       "domain": {
@@ -4229,43 +4081,6 @@
         "loon": false
       },
       "client_any": false,
-      "intentional_code": "NO_UPSTREAM"
-    },
-    {
-      "service": "ntp",
-      "primary_category": "network",
-      "service_type": "service",
-      "materialized": false,
-      "domain": {
-        "available": false,
-        "count": 0
-      },
-      "ip": {
-        "available": false,
-        "count": 0
-      },
-      "geosite": {
-        "available": true
-      },
-      "geoip": {
-        "available": true
-      },
-      "asn": {
-        "available": true
-      },
-      "lan": {
-        "available": true
-      },
-      "clients": {
-        "mihomo": true,
-        "sing-box": true,
-        "surge": true,
-        "shadowrocket": true,
-        "quantumult-x": true,
-        "egern": true,
-        "loon": true
-      },
-      "client_any": true,
       "intentional_code": "NO_UPSTREAM"
     },
     {
@@ -4349,7 +4164,7 @@
       "materialized": true,
       "domain": {
         "available": true,
-        "count": 86
+        "count": 93
       },
       "ip": {
         "available": true,
@@ -4381,7 +4196,7 @@
     },
     {
       "service": "oppo",
-      "primary_category": "china",
+      "primary_category": "other",
       "service_type": "service",
       "materialized": true,
       "domain": {
@@ -4452,43 +4267,6 @@
       },
       "client_any": true,
       "intentional_code": null
-    },
-    {
-      "service": "origin",
-      "primary_category": "gaming",
-      "service_type": "service",
-      "materialized": false,
-      "domain": {
-        "available": false,
-        "count": 0
-      },
-      "ip": {
-        "available": false,
-        "count": 0
-      },
-      "geosite": {
-        "available": true
-      },
-      "geoip": {
-        "available": true
-      },
-      "asn": {
-        "available": true
-      },
-      "lan": {
-        "available": true
-      },
-      "clients": {
-        "mihomo": false,
-        "sing-box": false,
-        "surge": false,
-        "shadowrocket": false,
-        "quantumult-x": false,
-        "egern": false,
-        "loon": false
-      },
-      "client_any": false,
-      "intentional_code": "MAPS_TO"
     },
     {
       "service": "paramountplus",
@@ -4825,7 +4603,7 @@
     },
     {
       "service": "private",
-      "primary_category": "network",
+      "primary_category": "privacy",
       "service_type": "service",
       "materialized": true,
       "domain": {
@@ -4862,7 +4640,7 @@
     },
     {
       "service": "proxy",
-      "primary_category": "network",
+      "primary_category": "privacy",
       "service_type": "service",
       "materialized": true,
       "domain": {
@@ -5006,6 +4784,43 @@
         "loon": true
       },
       "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "restricted",
+      "primary_category": "restricted",
+      "service_type": "aggregate",
+      "materialized": true,
+      "domain": {
+        "available": false,
+        "count": 0
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
       "intentional_code": null
     },
     {
@@ -5306,7 +5121,7 @@
     },
     {
       "service": "slack",
-      "primary_category": "developer",
+      "primary_category": "other",
       "service_type": "service",
       "materialized": true,
       "domain": {
@@ -5935,7 +5750,7 @@
     },
     {
       "service": "tiktok",
-      "primary_category": "social",
+      "primary_category": "bytedance",
       "service_type": "service",
       "materialized": true,
       "domain": {
@@ -6305,7 +6120,7 @@
     },
     {
       "service": "vivo",
-      "primary_category": "china",
+      "primary_category": "other",
       "service_type": "service",
       "materialized": true,
       "domain": {
@@ -6712,7 +6527,7 @@
     },
     {
       "service": "xiaomi",
-      "primary_category": "china",
+      "primary_category": "other",
       "service_type": "service",
       "materialized": true,
       "domain": {
@@ -6823,7 +6638,7 @@
     },
     {
       "service": "youtubemusic",
-      "primary_category": "streaming",
+      "primary_category": "google",
       "service_type": "service",
       "materialized": true,
       "domain": {
@@ -6897,7 +6712,7 @@
     },
     {
       "service": "zoom",
-      "primary_category": "social",
+      "primary_category": "other",
       "service_type": "service",
       "materialized": true,
       "domain": {

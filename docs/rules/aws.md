@@ -7,7 +7,7 @@
 | Rule ID | `aws` |
 | Primary Ecosystem | **Amazon** (`amazon`) |
 | Service Type | service |
-| Tags | amazon, developer, cloud |
+| Tags | amazon, developer |
 | 类型 | domain |
 | Domains | 78 |
 | CIDR | 0 |

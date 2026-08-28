@@ -7,7 +7,7 @@
 | Rule ID | `ctrip` |
 | Primary Ecosystem | **China** (`china`) |
 | Service Type | service |
-| Tags | china, travel |
+| Tags | china |
 | 类型 | domain |
 | Domains | 29 |
 | CIDR | 0 |

@@ -1,0 +1,33 @@
+id: restricted
+name: Restricted
+primary_category: restricted
+categories:
+- restricted
+service_type: aggregate
+parent: null
+children: null
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: restricted.list
+  domain: restricted_domain.list
+  ip: null
+statistics:
+  domains: 6519
+  ipv4_or_cidr: 0
+  mixed: 6519
+sources:
+- metacubex
+- v2fly
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-28'
+auto_generated: true

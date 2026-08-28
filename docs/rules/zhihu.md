@@ -7,7 +7,7 @@
 | Rule ID | `zhihu` |
 | Primary Ecosystem | **China** (`china`) |
 | Service Type | service |
-| Tags | china, social |
+| Tags | china |
 | 类型 | mixed |
 | Domains | 2 |
 | CIDR | 5 |

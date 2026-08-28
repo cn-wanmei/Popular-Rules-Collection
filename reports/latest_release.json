@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "phase": "3A",
-  "generated_at": "2026-08-28T13:25:33.440103+00:00",
+  "generated_at": "2026-08-28T15:02:00.395112+00:00",
   "date": "2026-08-28",
-  "commit": "9fab50de24fe662c389fc078e08b93b5cd1e4c82",
+  "commit": "1acfe218e71ed2f150d8932b0d6fbd8eb7276f94",
   "commit_role": "pipeline_input",
   "commit_note": "SHA observed when release_snapshot ran (before collect's git commit). HEAD after push is the commit that contains this file + generated artifacts.",
   "source_status": {
@@ -19,8 +19,8 @@
         "rules_declared": 8
       },
       "blackmatrix7": {
-        "last_attempt": "2026-08-28T13:09:03.386340+00:00",
-        "last_success": "2026-08-28T13:09:03.386357+00:00",
+        "last_attempt": "2026-08-28T14:37:46.392550+00:00",
+        "last_success": "2026-08-28T14:37:46.392572+00:00",
         "failure_count": 0,
         "status": "healthy",
         "files_ok": 128,
@@ -59,32 +59,32 @@
         "rules_declared": 3
       },
       "metacubex": {
-        "last_attempt": "2026-08-28T13:09:09.932332+00:00",
-        "files_ok": 63,
+        "last_attempt": "2026-08-28T14:37:57.022421+00:00",
+        "files_ok": 67,
         "files_failed": 0,
         "empty_blocked": 0,
-        "rules_declared": 63,
-        "last_success": "2026-08-28T13:09:09.932348+00:00",
+        "rules_declared": 67,
+        "last_success": "2026-08-28T14:37:57.022437+00:00",
         "failure_count": 0,
         "status": "healthy"
       },
       "v2fly": {
-        "last_attempt": "2026-08-28T13:09:17.505724+00:00",
-        "files_ok": 52,
+        "last_attempt": "2026-08-28T14:38:05.637675+00:00",
+        "files_ok": 56,
         "files_failed": 0,
         "empty_blocked": 0,
-        "rules_declared": 52,
-        "last_success": "2026-08-28T13:09:17.505741+00:00",
+        "rules_declared": 56,
+        "last_success": "2026-08-28T14:38:05.637690+00:00",
         "failure_count": 0,
         "status": "healthy"
       },
       "dler": {
-        "last_attempt": "2026-08-28T13:09:19.530223+00:00",
+        "last_attempt": "2026-08-28T14:38:07.921037+00:00",
         "files_ok": 20,
         "files_failed": 0,
         "empty_blocked": 0,
         "rules_declared": 20,
-        "last_success": "2026-08-28T13:09:19.530240+00:00",
+        "last_success": "2026-08-28T14:38:07.921052+00:00",
         "failure_count": 0,
         "status": "healthy"
       }
@@ -96,7 +96,7 @@
     "historical_in_health": 8,
     "snapshot": {
       "schema_version": 1,
-      "generated_at": "2026-08-28T13:25:29.632151+00:00",
+      "generated_at": "2026-08-28T15:01:55.598172+00:00",
       "date": "2026-08-28",
       "sources": [
         {
@@ -108,32 +108,32 @@
           "files_failed": 0,
           "health_status": "healthy",
           "lifecycle": "active",
-          "last_success": "2026-08-28T13:09:03.386357+00:00",
-          "last_attempt": "2026-08-28T13:09:03.386340+00:00"
+          "last_success": "2026-08-28T14:37:46.392572+00:00",
+          "last_attempt": "2026-08-28T14:37:46.392550+00:00"
         },
         {
           "id": "metacubex",
           "enabled": true,
           "priority": 90,
-          "rules_declared": 63,
-          "files_ok": 63,
+          "rules_declared": 67,
+          "files_ok": 67,
           "files_failed": 0,
           "health_status": "healthy",
           "lifecycle": "active",
-          "last_success": "2026-08-28T13:09:09.932348+00:00",
-          "last_attempt": "2026-08-28T13:09:09.932332+00:00"
+          "last_success": "2026-08-28T14:37:57.022437+00:00",
+          "last_attempt": "2026-08-28T14:37:57.022421+00:00"
         },
         {
           "id": "v2fly",
           "enabled": true,
           "priority": 85,
-          "rules_declared": 52,
-          "files_ok": 52,
+          "rules_declared": 56,
+          "files_ok": 56,
           "files_failed": 0,
           "health_status": "healthy",
           "lifecycle": "active",
-          "last_success": "2026-08-28T13:09:17.505741+00:00",
-          "last_attempt": "2026-08-28T13:09:17.505724+00:00"
+          "last_success": "2026-08-28T14:38:05.637690+00:00",
+          "last_attempt": "2026-08-28T14:38:05.637675+00:00"
         },
         {
           "id": "dler",
@@ -144,8 +144,8 @@
           "files_failed": 0,
           "health_status": "healthy",
           "lifecycle": "active",
-          "last_success": "2026-08-28T13:09:19.530240+00:00",
-          "last_attempt": "2026-08-28T13:09:19.530223+00:00"
+          "last_success": "2026-08-28T14:38:07.921052+00:00",
+          "last_attempt": "2026-08-28T14:38:07.921037+00:00"
         }
       ],
       "intentional_unmaterialized": {
@@ -323,39 +323,39 @@
       ]
     }
   },
-  "service_count": 187,
-  "materialized_count": 170,
-  "intentional_unmaterialized": 17,
-  "domain_count": 830046,
+  "service_count": 182,
+  "materialized_count": 171,
+  "intentional_unmaterialized": 11,
+  "domain_count": 836565,
   "ip_count": 13955,
   "builder_count": 7,
   "builder_coverage": {
     "mihomo": {
-      "files": 340,
+      "files": 343,
       "status": "ok"
     },
     "sing-box": {
-      "files": 170,
+      "files": 172,
       "status": "ok"
     },
     "surge": {
-      "files": 339,
+      "files": 342,
       "status": "ok"
     },
     "shadowrocket": {
-      "files": 339,
+      "files": 342,
       "status": "ok"
     },
     "quantumult-x": {
-      "files": 170,
+      "files": 172,
       "status": "ok"
     },
     "egern": {
-      "files": 170,
+      "files": 172,
       "status": "ok"
     },
     "loon": {
-      "files": 170,
+      "files": 172,
       "status": "ok"
     }
   },
@@ -388,7 +388,7 @@
     "checked": null,
     "warnings": 0
   },
-  "rule_counts_total": 831352,
+  "rule_counts_total": 838009,
   "artifacts": {
     "statistics": "reports/2026-08-28/statistics.json",
     "rule_counts": "reports/2026-08-28/rule_counts.json",

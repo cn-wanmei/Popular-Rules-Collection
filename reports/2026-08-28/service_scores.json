@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-28T13:25:33.483775+00:00",
+  "generated_at": "2026-08-28T15:02:00.453493+00:00",
   "date": "2026-08-28",
   "services": {
     "uber": {
@@ -196,6 +196,10 @@
       "band": "stable"
     },
     "rockstar": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "restricted": {
       "score": 90.0,
       "band": "stable"
     },

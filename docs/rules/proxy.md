@@ -5,9 +5,9 @@
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `proxy` |
-| Primary Ecosystem | **Network** (`network`) |
+| Primary Ecosystem | **Privacy** (`privacy`) |
 | Service Type | service |
-| Tags | network |
+| Tags | privacy |
 | 类型 | domain |
 | Domains | 28227 |
 | CIDR | 0 |
@@ -58,7 +58,7 @@ _未在 config/official_sites.yaml 配置_
 - Schema: `database/services/proxy.yaml`
 - Domains: `database/domains/proxy.txt`
 - IPs: `database/ips/proxy.txt`（若有）
-- Product page: `rule/Network/…`（见 generate_rule_pages）
+- Product page: `rule/Privacy/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

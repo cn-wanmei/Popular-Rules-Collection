@@ -7,7 +7,7 @@
 | Rule ID | `weibo` |
 | Primary Ecosystem | **China** (`china`) |
 | Service Type | service |
-| Tags | china, social |
+| Tags | china |
 | 类型 | domain |
 | Domains | 4 |
 | CIDR | 0 |

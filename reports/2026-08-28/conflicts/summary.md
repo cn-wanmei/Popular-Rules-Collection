@@ -5,4 +5,4 @@
 | CRITICAL | 0 |
 | HIGH | 0 |
 | MEDIUM | 0 |
-| LOW | 11021 |
+| LOW | 17678 |

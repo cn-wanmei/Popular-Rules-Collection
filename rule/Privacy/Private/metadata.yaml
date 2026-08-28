@@ -1,0 +1,32 @@
+id: private
+name: Private
+primary_category: privacy
+categories:
+- privacy
+service_type: service
+parent: null
+children: null
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: private.list
+  domain: private_domain.list
+  ip: private_ip.list
+statistics:
+  domains: 241
+  ipv4_or_cidr: 3
+  mixed: 244
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-28'
+auto_generated: true

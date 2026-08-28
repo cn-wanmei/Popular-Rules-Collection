@@ -7,7 +7,7 @@
 | Rule ID | `heroku` |
 | Primary Ecosystem | **Developer** (`developer`) |
 | Service Type | service |
-| Tags | developer, cloud |
+| Tags | developer |
 | 类型 | domain |
 | Domains | 12 |
 | CIDR | 0 |

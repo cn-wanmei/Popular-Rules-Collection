@@ -7,7 +7,7 @@
 | Rule ID | `airbnb` |
 | Primary Ecosystem | **Other** (`other`) |
 | Service Type | service |
-| Tags | other, travel |
+| Tags | other |
 | 类型 | domain |
 | Domains | 83 |
 | CIDR | 0 |

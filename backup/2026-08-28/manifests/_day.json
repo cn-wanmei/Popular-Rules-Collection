@@ -1,12 +1,12 @@
 {
   "date": "2026-08-28",
-  "timestamp": "2026-08-28T13:09:19.530502+00:00",
+  "timestamp": "2026-08-28T14:38:07.921451+00:00",
   "registry_version": 3,
   "sources": [
     {
       "source": "blackmatrix7",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T13:09:03.386361+00:00",
+      "timestamp": "2026-08-28T14:37:46.392579+00:00",
       "files_ok": 128,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -1299,11 +1299,11 @@
     {
       "source": "metacubex",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T13:09:09.932352+00:00",
-      "files_ok": 63,
+      "timestamp": "2026-08-28T14:37:57.022442+00:00",
+      "files_ok": 67,
       "files_failed": 0,
       "empty_blocked": 0,
-      "rules_declared": 63,
+      "rules_declared": 67,
       "files": [
         {
           "name": "geosite_alibaba.list",
@@ -1934,6 +1934,46 @@
           "size": 3431,
           "sha256": "f8de16d4486addb5f616137d771945c8c9562f61d92d906b0eb90dfd8e976d23",
           "status": "ok"
+        },
+        {
+          "name": "geosite_category_porn.list",
+          "path": "geo/geosite/category-porn.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-porn.list",
+          "service": "restricted",
+          "local": "sources/metacubex/geosite_category_porn.list",
+          "size": 107168,
+          "sha256": "90352c1bd74bd0f3c6662419a6aacff3a668891c856725b8d1413df6d6ff35b0",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_pornhub.list",
+          "path": "geo/geosite/pornhub.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/pornhub.list",
+          "service": "restricted",
+          "local": "sources/metacubex/geosite_pornhub.list",
+          "size": 146,
+          "sha256": "2dd1f683df80e0f7119a573f6370f757d8b927162037d6b7305d42c6bb94fda5",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_xvideos.list",
+          "path": "geo/geosite/xvideos.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/xvideos.list",
+          "service": "restricted",
+          "local": "sources/metacubex/geosite_xvideos.list",
+          "size": 80,
+          "sha256": "b2401049361ad8023e7e72b6e436d1d8f232452cdc5500347f71e5b1572729f9",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_ehentai.list",
+          "path": "geo/geosite/ehentai.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ehentai.list",
+          "service": "restricted",
+          "local": "sources/metacubex/geosite_ehentai.list",
+          "size": 121,
+          "sha256": "b0465da3d078db69bef733acbfd6a81ba5eb527b281ab45dfc93fab02e956e0e",
+          "status": "ok"
         }
       ],
       "registry_priority": 90,
@@ -1942,11 +1982,11 @@
     {
       "source": "v2fly",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T13:09:17.505744+00:00",
-      "files_ok": 52,
+      "timestamp": "2026-08-28T14:38:05.637695+00:00",
+      "files_ok": 56,
       "files_failed": 0,
       "empty_blocked": 0,
-      "rules_declared": 52,
+      "rules_declared": 56,
       "files": [
         {
           "name": "v2fly_deepseek",
@@ -2467,6 +2507,46 @@
           "size": 479,
           "sha256": "5e2aa1cc680fea6594c17cf9e26111fe35be8283332e4dc2c3c1917aca335080",
           "status": "ok"
+        },
+        {
+          "name": "v2fly_category_porn",
+          "path": "data/category-porn",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-porn",
+          "service": "restricted",
+          "local": "sources/v2fly/v2fly_category_porn",
+          "size": 92745,
+          "sha256": "c4c8362d3b67d6351491950a82e434cfc89febf8aacbcf01f3e17f11d798e97e",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_pornhub",
+          "path": "data/pornhub",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/pornhub",
+          "service": "restricted",
+          "local": "sources/v2fly/v2fly_pornhub",
+          "size": 129,
+          "sha256": "2fc9e05935457d9e08e1d8d8cda16adfcb82645c661d9a3233ffcb5ede0a206e",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_xvideos",
+          "path": "data/xvideos",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/xvideos",
+          "service": "restricted",
+          "local": "sources/v2fly/v2fly_xvideos",
+          "size": 71,
+          "sha256": "cb33a352b459aa462c1e7cd5f60b17474ff5beec973c312019af33d3d4057040",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_ehentai",
+          "path": "data/ehentai",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/ehentai",
+          "service": "restricted",
+          "local": "sources/v2fly/v2fly_ehentai",
+          "size": 106,
+          "sha256": "e662f5137041b52538abfc590d9a42dd688571f890aa0d055de41dcc8cdd5dd2",
+          "status": "ok"
         }
       ],
       "registry_priority": 85,
@@ -2475,7 +2555,7 @@
     {
       "source": "dler",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T13:09:19.530244+00:00",
+      "timestamp": "2026-08-28T14:38:07.921056+00:00",
       "files_ok": 20,
       "files_failed": 0,
       "empty_blocked": 0,

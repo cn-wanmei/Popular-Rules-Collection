@@ -7,7 +7,7 @@
 | Rule ID | `googlefcm` |
 | Primary Ecosystem | **Google** (`google`) |
 | Service Type | service |
-| Tags | google, network |
+| Tags | google |
 | 类型 | mixed |
 | Domains | 15 |
 | CIDR | 26 |

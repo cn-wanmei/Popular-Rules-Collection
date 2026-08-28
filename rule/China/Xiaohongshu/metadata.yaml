@@ -1,0 +1,32 @@
+id: xiaohongshu
+name: Xiaohongshu
+primary_category: china
+categories:
+- china
+service_type: service
+parent: china
+children: null
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: xiaohongshu.list
+  domain: xiaohongshu_domain.list
+  ip: null
+statistics:
+  domains: 4
+  ipv4_or_cidr: 0
+  mixed: 4
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-28'
+auto_generated: true

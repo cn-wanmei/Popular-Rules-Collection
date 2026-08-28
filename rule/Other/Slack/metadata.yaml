@@ -1,0 +1,33 @@
+id: slack
+name: Slack
+primary_category: other
+categories:
+- other
+service_type: service
+parent: null
+children: null
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: slack.list
+  domain: slack_domain.list
+  ip: null
+statistics:
+  domains: 11
+  ipv4_or_cidr: 0
+  mixed: 11
+sources:
+- blackmatrix7
+- v2fly
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-28'
+auto_generated: true

@@ -7,7 +7,7 @@
 | Rule ID | `amazon` |
 | Primary Ecosystem | **Amazon** (`amazon`) |
 | Service Type | service |
-| Tags | amazon, streaming |
+| Tags | amazon |
 | 类型 | mixed |
 | Domains | 260 |
 | CIDR | 15 |

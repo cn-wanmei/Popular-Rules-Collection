@@ -6221,6 +6221,57 @@
       "path": "generated/loon/reddit.list"
     }
   },
+  "restricted": {
+    "mihomo": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/restricted.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/restricted.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/restricted.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/restricted.yaml",
+      "path": "generated/mihomo/restricted.yaml"
+    },
+    "sing-box": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/restricted.json",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/restricted.json",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/sing-box/restricted.json",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/restricted.json",
+      "path": "generated/sing-box/restricted.json"
+    },
+    "surge": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/restricted.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/restricted.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/surge/restricted.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/restricted.list",
+      "path": "generated/surge/restricted.list"
+    },
+    "shadowrocket": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/restricted.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/restricted.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/shadowrocket/restricted.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/restricted.list",
+      "path": "generated/shadowrocket/restricted.list"
+    },
+    "quantumult-x": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/restricted.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/restricted.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/quantumult-x/restricted.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/restricted.list",
+      "path": "generated/quantumult-x/restricted.list"
+    },
+    "egern": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/restricted.yaml",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/restricted.yaml",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/egern/restricted.yaml",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/restricted.yaml",
+      "path": "generated/egern/restricted.yaml"
+    },
+    "loon": {
+      "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/restricted.list",
+      "jsdelivr": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/restricted.list",
+      "fastly": "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/loon/restricted.list",
+      "cloudflare": "https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/restricted.list",
+      "path": "generated/loon/restricted.list"
+    }
+  },
   "riotgames": {
     "mihomo": {
       "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/riotgames.yaml",

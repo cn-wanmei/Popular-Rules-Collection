@@ -5,9 +5,9 @@
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `zoom` |
-| Primary Ecosystem | **Social** (`social`) |
+| Primary Ecosystem | **Other** (`other`) |
 | Service Type | service |
-| Tags | social, communication |
+| Tags | other |
 | 类型 | domain |
 | Domains | 3 |
 | CIDR | 0 |
@@ -58,7 +58,7 @@ _未在 config/official_sites.yaml 配置_
 - Schema: `database/services/zoom.yaml`
 - Domains: `database/domains/zoom.txt`
 - IPs: `database/ips/zoom.txt`（若有）
-- Product page: `rule/Social/…`（见 generate_rule_pages）
+- Product page: `rule/Other/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_

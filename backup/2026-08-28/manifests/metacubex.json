@@ -1,11 +1,11 @@
 {
   "source": "metacubex",
   "fetch": "github_raw",
-  "timestamp": "2026-08-28T13:09:09.932352+00:00",
-  "files_ok": 63,
+  "timestamp": "2026-08-28T14:37:57.022442+00:00",
+  "files_ok": 67,
   "files_failed": 0,
   "empty_blocked": 0,
-  "rules_declared": 63,
+  "rules_declared": 67,
   "files": [
     {
       "name": "geosite_alibaba.list",
@@ -635,6 +635,46 @@
       "local": "sources/metacubex/geosite_category_ai.list",
       "size": 3431,
       "sha256": "f8de16d4486addb5f616137d771945c8c9562f61d92d906b0eb90dfd8e976d23",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_category_porn.list",
+      "path": "geo/geosite/category-porn.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-porn.list",
+      "service": "restricted",
+      "local": "sources/metacubex/geosite_category_porn.list",
+      "size": 107168,
+      "sha256": "90352c1bd74bd0f3c6662419a6aacff3a668891c856725b8d1413df6d6ff35b0",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_pornhub.list",
+      "path": "geo/geosite/pornhub.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/pornhub.list",
+      "service": "restricted",
+      "local": "sources/metacubex/geosite_pornhub.list",
+      "size": 146,
+      "sha256": "2dd1f683df80e0f7119a573f6370f757d8b927162037d6b7305d42c6bb94fda5",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_xvideos.list",
+      "path": "geo/geosite/xvideos.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/xvideos.list",
+      "service": "restricted",
+      "local": "sources/metacubex/geosite_xvideos.list",
+      "size": 80,
+      "sha256": "b2401049361ad8023e7e72b6e436d1d8f232452cdc5500347f71e5b1572729f9",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_ehentai.list",
+      "path": "geo/geosite/ehentai.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ehentai.list",
+      "service": "restricted",
+      "local": "sources/metacubex/geosite_ehentai.list",
+      "size": 121,
+      "sha256": "b0465da3d078db69bef733acbfd6a81ba5eb527b281ab45dfc93fab02e956e0e",
       "status": "ok"
     }
   ],

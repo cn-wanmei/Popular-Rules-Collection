@@ -2,29 +2,23 @@
   "date": "2026-08-28",
   "version": 3,
   "service_coverage": {
-    "registered": 187,
-    "materialized": 170,
-    "intentional_unmaterialized": 17,
+    "registered": 182,
+    "materialized": 171,
+    "intentional_unmaterialized": 11,
     "unexpected_missing": [],
-    "coverage": 0.9091,
+    "coverage": 0.9396,
     "daily_coverage": 1.0
   },
   "intentional_unmaterialized": {
     "mistral": "no_verified_upstream",
     "gcp": "no_verified_upstream",
     "supabase": "no_verified_upstream",
-    "blizzard": "maps_to_battlenet",
     "taobao": "no_verified_upstream_dead_bm_path_covered_by_alibaba",
     "qq": "no_verified_upstream_dead_bm_path_covered_by_tencent",
     "npm": "no_verified_upstream",
     "googledrive": "no_dedicated_upstream_use_google_aggregate",
     "amazonaws": "covered_by_aws_amazon_aggregate",
-    "applications": "generic_bucket_no_dedicated_upstream",
     "dingtalk": "covered_by_alibaba_aggregate",
-    "discoveryplus": "no_verified_upstream",
-    "lan": "local_network_no_public_upstream",
-    "ntp": "protocol_service_no_domain_ruleset",
-    "origin": "maps_to_ea",
     "siri": "covered_by_apple_aggregate",
     "steamcn": "covered_by_steam_china_paths"
   },
@@ -40,10 +34,6 @@
     "supabase": {
       "reason": "no_verified_upstream",
       "code": "NO_UPSTREAM"
-    },
-    "blizzard": {
-      "reason": "maps_to_battlenet",
-      "code": "MAPS_TO"
     },
     "taobao": {
       "reason": "no_verified_upstream_dead_bm_path_covered_by_alibaba",
@@ -65,29 +55,9 @@
       "reason": "covered_by_aws_amazon_aggregate",
       "code": "COVERED_BY_AGGREGATE"
     },
-    "applications": {
-      "reason": "generic_bucket_no_dedicated_upstream",
-      "code": "NO_UPSTREAM"
-    },
     "dingtalk": {
       "reason": "covered_by_alibaba_aggregate",
       "code": "COVERED_BY_AGGREGATE"
-    },
-    "discoveryplus": {
-      "reason": "no_verified_upstream",
-      "code": "NO_UPSTREAM"
-    },
-    "lan": {
-      "reason": "local_network_no_public_upstream",
-      "code": "NO_UPSTREAM"
-    },
-    "ntp": {
-      "reason": "protocol_service_no_domain_ruleset",
-      "code": "NO_UPSTREAM"
-    },
-    "origin": {
-      "reason": "maps_to_ea",
-      "code": "MAPS_TO"
     },
     "siri": {
       "reason": "covered_by_apple_aggregate",
@@ -100,18 +70,10 @@
   },
   "intentional_by_code": {
     "NO_UPSTREAM": [
-      "applications",
-      "discoveryplus",
       "gcp",
-      "lan",
       "mistral",
       "npm",
-      "ntp",
       "supabase"
-    ],
-    "MAPS_TO": [
-      "blizzard",
-      "origin"
     ],
     "COVERED_BY_AGGREGATE": [
       "amazonaws",
@@ -124,9 +86,9 @@
     ]
   },
   "rule_coverage": {
-    "domains": 830046,
+    "domains": 836565,
     "ips": 13955,
-    "database_services": 170
+    "database_services": 171
   },
   "source_health": {
     "configured_sources": 4,
@@ -169,31 +131,31 @@
   },
   "builder_coverage": {
     "mihomo": {
-      "files": 340,
+      "files": 343,
       "status": "ok"
     },
     "sing-box": {
-      "files": 170,
+      "files": 172,
       "status": "ok"
     },
     "surge": {
-      "files": 339,
+      "files": 342,
       "status": "ok"
     },
     "shadowrocket": {
-      "files": 339,
+      "files": 342,
       "status": "ok"
     },
     "quantumult-x": {
-      "files": 170,
+      "files": 172,
       "status": "ok"
     },
     "egern": {
-      "files": 170,
+      "files": 172,
       "status": "ok"
     },
     "loon": {
-      "files": 170,
+      "files": 172,
       "status": "ok"
     }
   },
@@ -204,22 +166,23 @@
     "amazon": 3,
     "apple": 5,
     "baidu": 1,
-    "bytedance": 3,
-    "china": 21,
+    "bytedance": 4,
+    "china": 17,
     "chinamobile": 1,
     "chinatelecom": 1,
     "chinaunicom": 1,
-    "developer": 21,
+    "developer": 19,
     "finance": 5,
-    "gaming": 15,
-    "google": 6,
+    "gaming": 13,
+    "google": 7,
     "jingdong": 1,
     "microsoft": 5,
-    "network": 7,
-    "other": 13,
-    "privacy": 3,
-    "social": 18,
-    "streaming": 18,
+    "network": 2,
+    "other": 19,
+    "privacy": 6,
+    "restricted": 1,
+    "social": 16,
+    "streaming": 16,
     "tencent": 4,
     "unionpay": 10
   },
@@ -233,11 +196,11 @@
     "critical": 0,
     "high": 0,
     "medium": 0,
-    "low": 11021
+    "low": 17678
   },
   "sources": 4,
-  "services": 170,
-  "domains": 830046,
+  "services": 171,
+  "domains": 836565,
   "cidr": 13955,
   "build": {
     "mihomo": "ok",

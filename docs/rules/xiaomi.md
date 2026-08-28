@@ -1,13 +1,13 @@
-# XiaoMi
+# Xiaomi
 
-> 用于匹配 **XiaoMi** 相关域名/IP 的分流规则（来自上游标准化合并）。
+> 用于匹配 **Xiaomi** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `xiaomi` |
-| Primary Ecosystem | **China** (`china`) |
+| Primary Ecosystem | **Other** (`other`) |
 | Service Type | service |
-| Tags | china |
+| Tags | other, china |
 | 类型 | mixed |
 | Domains | 148 |
 | CIDR | 9 |
@@ -17,7 +17,7 @@
 
 ## 用途
 
-用于匹配 **XiaoMi** 相关域名/IP 的分流规则（来自上游标准化合并）。
+用于匹配 **Xiaomi** 相关域名/IP 的分流规则（来自上游标准化合并）。
 
 支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
 
@@ -57,7 +57,7 @@ _未在 config/official_sites.yaml 配置_
 - Schema: `database/services/xiaomi.yaml`
 - Domains: `database/domains/xiaomi.txt`
 - IPs: `database/ips/xiaomi.txt`（若有）
-- Product page: `rule/China/…`（见 generate_rule_pages）
+- Product page: `rule/Other/…`（见 generate_rule_pages）
 
 ---
 _由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
