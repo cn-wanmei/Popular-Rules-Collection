@@ -1,7 +1,7 @@
 {
   "date": "2026-08-28",
   "compared_to": "2026-08-28",
-  "dataset_count": 52,
+  "dataset_count": 67,
   "diffs": {
     "database/network/dns.txt": {
       "old_count": 18,
@@ -47,6 +47,39 @@
       "sha_changed": false,
       "status": "unchanged"
     },
+    "database/network/stun.txt": {
+      "old_count": 0,
+      "new_count": 9,
+      "added": 9,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
+    },
+    "database/geosite/apple-cn.txt": {
+      "old_count": 0,
+      "new_count": 165,
+      "added": 165,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
+    },
+    "database/geosite/china.txt": {
+      "old_count": 0,
+      "new_count": 110878,
+      "added": 110878,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
+    },
     "database/geosite/direct.txt": {
       "old_count": 111540,
       "new_count": 111540,
@@ -57,6 +90,17 @@
       "growth_ratio": 0.0,
       "sha_changed": false,
       "status": "unchanged"
+    },
+    "database/geosite/google-cn.txt": {
+      "old_count": 0,
+      "new_count": 112,
+      "added": 112,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
     },
     "database/geosite/proxy.txt": {
       "old_count": 27220,
@@ -69,6 +113,28 @@
       "sha_changed": false,
       "status": "unchanged"
     },
+    "database/geosite/reject.txt": {
+      "old_count": 0,
+      "new_count": 187424,
+      "added": 187424,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
+    },
+    "database/geoip/au.txt": {
+      "old_count": 0,
+      "new_count": 17420,
+      "added": 17420,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
+    },
     "database/geoip/cn.txt": {
       "old_count": 9651,
       "new_count": 9651,
@@ -80,6 +146,28 @@
       "sha_changed": false,
       "status": "unchanged"
     },
+    "database/geoip/de.txt": {
+      "old_count": 0,
+      "new_count": 71845,
+      "added": 71845,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
+    },
+    "database/geoip/gb.txt": {
+      "old_count": 0,
+      "new_count": 50297,
+      "added": 50297,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
+    },
     "database/geoip/hk.txt": {
       "old_count": 15649,
       "new_count": 15649,
@@ -90,6 +178,28 @@
       "growth_ratio": 0.0,
       "sha_changed": false,
       "status": "unchanged"
+    },
+    "database/geoip/id.txt": {
+      "old_count": 0,
+      "new_count": 10714,
+      "added": 10714,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
+    },
+    "database/geoip/in.txt": {
+      "old_count": 0,
+      "new_count": 20656,
+      "added": 20656,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
     },
     "database/geoip/jp.txt": {
       "old_count": 17725,
@@ -113,6 +223,28 @@
       "sha_changed": false,
       "status": "unchanged"
     },
+    "database/geoip/my.txt": {
+      "old_count": 0,
+      "new_count": 3862,
+      "added": 3862,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
+    },
+    "database/geoip/private.txt": {
+      "old_count": 0,
+      "new_count": 18,
+      "added": 18,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
+    },
     "database/geoip/sg.txt": {
       "old_count": 13656,
       "new_count": 13656,
@@ -123,6 +255,17 @@
       "growth_ratio": 0.0,
       "sha_changed": false,
       "status": "unchanged"
+    },
+    "database/geoip/th.txt": {
+      "old_count": 0,
+      "new_count": 3464,
+      "added": 3464,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
     },
     "database/geoip/tw.txt": {
       "old_count": 4795,
@@ -135,16 +278,38 @@
       "sha_changed": false,
       "status": "unchanged"
     },
-    "database/asn/metadata.yaml": {
-      "old_count": 82,
-      "new_count": 82,
-      "added": 0,
+    "database/geoip/us.txt": {
+      "old_count": 0,
+      "new_count": 302340,
+      "added": 302340,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": false,
-      "status": "unchanged"
+      "sha_changed": true,
+      "status": "new"
+    },
+    "database/geoip/vn.txt": {
+      "old_count": 0,
+      "new_count": 3765,
+      "added": 3765,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
+    },
+    "database/asn/metadata.yaml": {
+      "old_count": 82,
+      "new_count": 107,
+      "added": 25,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.3049,
+      "sha_changed": true,
+      "status": "updated"
     },
     "database/policies/direct/manifest.yaml": {
       "old_count": 17,
@@ -258,14 +423,14 @@
     },
     "database/ips/china.txt": {
       "old_count": 9661,
-      "new_count": 9661,
-      "added": 0,
+      "new_count": 9662,
+      "added": 1,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
-      "growth_ratio": 0.0,
-      "sha_changed": false,
-      "status": "unchanged"
+      "growth_ratio": 0.0001,
+      "sha_changed": true,
+      "status": "updated"
     },
     "database/ips/chinamobile.txt": {
       "old_count": 1,
@@ -280,14 +445,14 @@
     },
     "database/ips/chinaunicom.txt": {
       "old_count": 3725,
-      "new_count": 3725,
-      "added": 0,
+      "new_count": 3728,
+      "added": 3,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
-      "growth_ratio": 0.0,
-      "sha_changed": false,
-      "status": "unchanged"
+      "growth_ratio": 0.0008,
+      "sha_changed": true,
+      "status": "updated"
     },
     "database/ips/cloudflare.txt": {
       "old_count": 22,

@@ -1,4 +1,4 @@
-generated_at: '2026-08-28T15:03:07.000564+00:00'
+generated_at: '2026-08-28T15:32:54.465085+00:00'
 categories:
   '12306':
     display_name: '12306'
@@ -723,7 +723,7 @@ categories:
       path: rule/China/China
       service_type: aggregate
       domains: 112124
-      ips: 9661
+      ips: 9662
     - id: ctrip
       name: Ctrip
       path: rule/China/Ctrip
@@ -999,7 +999,7 @@ categories:
       path: rule/ChinaUnicom/ChinaUnicom
       service_type: service
       domains: 33
-      ips: 3725
+      ips: 3728
   google:
     display_name: Google
     order: 90

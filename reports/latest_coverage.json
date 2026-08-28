@@ -2,15 +2,15 @@
   "date": "2026-08-28",
   "registered": 182,
   "materialized": 171,
-  "with_domain": 170,
+  "with_domain": 171,
   "with_ip": 36,
-  "with_any_client": 170,
+  "with_any_client": 171,
   "dataset_globals": {
     "geosite_direct": 111540,
     "geosite_proxy": 27220,
     "geoip_cn": 9651,
     "lan": 21,
-    "asn_entries": 15
+    "asn_entries": 20
   },
   "services": [
     {
@@ -1356,7 +1356,7 @@
       },
       "ip": {
         "available": true,
-        "count": 9661
+        "count": 9662
       },
       "geosite": {
         "available": true
@@ -1467,7 +1467,7 @@
       },
       "ip": {
         "available": true,
-        "count": 3725
+        "count": 3728
       },
       "geosite": {
         "available": true
@@ -4792,8 +4792,8 @@
       "service_type": "aggregate",
       "materialized": true,
       "domain": {
-        "available": false,
-        "count": 0
+        "available": true,
+        "count": 13176
       },
       "ip": {
         "available": false,
@@ -4812,15 +4812,15 @@
         "available": true
       },
       "clients": {
-        "mihomo": false,
-        "sing-box": false,
-        "surge": false,
-        "shadowrocket": false,
-        "quantumult-x": false,
-        "egern": false,
-        "loon": false
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
       },
-      "client_any": false,
+      "client_any": true,
       "intentional_code": null
     },
     {

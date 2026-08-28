@@ -4,10 +4,10 @@
 |--------|------:|
 | Services | 171 |
 | Domain lines | 836565 |
-| IP/CIDR lines | 13955 |
+| IP/CIDR lines | 13959 |
 | Invalid CIDR | 0 |
 | Suspicious domains | 0 |
-| Generated files | 1745 |
+| Generated files | 1755 |
 | Empty generated | 0 |
 | Stale domain-set | 0 |
 | Errors | 0 |
@@ -33,8 +33,8 @@ sources:
     empty_blocked: 0
     rules_declared: 8
   blackmatrix7:
-    last_attempt: '2026-08-28T14:37:46.392550+00:00'
-    last_success: '2026-08-28T14:37:46.392572+00:00'
+    last_attempt: '2026-08-28T15:09:56.894590+00:00'
+    last_success: '2026-08-28T15:09:56.894607+00:00'
     failure_count: 0
     status: healthy
     files_ok: 128
@@ -69,31 +69,31 @@ sources:
     empty_blocked: 0
     rules_declared: 3
   metacubex:
-    last_attempt: '2026-08-28T14:37:57.022421+00:00'
+    last_attempt: '2026-08-28T15:10:00.775099+00:00'
     files_ok: 67
     files_failed: 0
     empty_blocked: 0
     rules_declared: 67
-    last_success: '2026-08-28T14:37:57.022437+00:00'
+    last_success: '2026-08-28T15:10:00.775115+00:00'
     failure_count: 0
     status: healthy
   v2fly:
-    last_attempt: '2026-08-28T14:38:05.637675+00:00'
+    last_attempt: '2026-08-28T15:10:05.983344+00:00'
     files_ok: 56
     files_failed: 0
     empty_blocked: 0
     rules_declared: 56
-    last_success: '2026-08-28T14:38:05.637690+00:00'
+    last_success: '2026-08-28T15:10:05.983360+00:00'
     failure_count: 0
     status: healthy
   dler:
-    last_attempt: '2026-08-28T14:38:07.921037+00:00'
+    last_attempt: '2026-08-28T15:10:07.186332+00:00'
     files_ok: 20
     files_failed: 0
     empty_blocked: 0
     rules_declared: 20
-    last_success: '2026-08-28T14:38:07.921052+00:00'
+    last_success: '2026-08-28T15:10:07.186346+00:00'
     failure_count: 0
     status: healthy
-updated_at: '2026-08-28T14:38:07.924001+00:00'
+updated_at: '2026-08-28T15:10:07.189207+00:00'
 ```

@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "phase": "3A",
-  "generated_at": "2026-08-28T15:02:00.395112+00:00",
+  "generated_at": "2026-08-28T15:31:55.781399+00:00",
   "date": "2026-08-28",
-  "commit": "1acfe218e71ed2f150d8932b0d6fbd8eb7276f94",
+  "commit": "02a06733747fb3d9bbf0196e7d45a798dfc2f4e7",
   "commit_role": "pipeline_input",
   "commit_note": "SHA observed when release_snapshot ran (before collect's git commit). HEAD after push is the commit that contains this file + generated artifacts.",
   "source_status": {
@@ -19,8 +19,8 @@
         "rules_declared": 8
       },
       "blackmatrix7": {
-        "last_attempt": "2026-08-28T14:37:46.392550+00:00",
-        "last_success": "2026-08-28T14:37:46.392572+00:00",
+        "last_attempt": "2026-08-28T15:09:56.894590+00:00",
+        "last_success": "2026-08-28T15:09:56.894607+00:00",
         "failure_count": 0,
         "status": "healthy",
         "files_ok": 128,
@@ -59,32 +59,32 @@
         "rules_declared": 3
       },
       "metacubex": {
-        "last_attempt": "2026-08-28T14:37:57.022421+00:00",
+        "last_attempt": "2026-08-28T15:10:00.775099+00:00",
         "files_ok": 67,
         "files_failed": 0,
         "empty_blocked": 0,
         "rules_declared": 67,
-        "last_success": "2026-08-28T14:37:57.022437+00:00",
+        "last_success": "2026-08-28T15:10:00.775115+00:00",
         "failure_count": 0,
         "status": "healthy"
       },
       "v2fly": {
-        "last_attempt": "2026-08-28T14:38:05.637675+00:00",
+        "last_attempt": "2026-08-28T15:10:05.983344+00:00",
         "files_ok": 56,
         "files_failed": 0,
         "empty_blocked": 0,
         "rules_declared": 56,
-        "last_success": "2026-08-28T14:38:05.637690+00:00",
+        "last_success": "2026-08-28T15:10:05.983360+00:00",
         "failure_count": 0,
         "status": "healthy"
       },
       "dler": {
-        "last_attempt": "2026-08-28T14:38:07.921037+00:00",
+        "last_attempt": "2026-08-28T15:10:07.186332+00:00",
         "files_ok": 20,
         "files_failed": 0,
         "empty_blocked": 0,
         "rules_declared": 20,
-        "last_success": "2026-08-28T14:38:07.921052+00:00",
+        "last_success": "2026-08-28T15:10:07.186346+00:00",
         "failure_count": 0,
         "status": "healthy"
       }
@@ -96,7 +96,7 @@
     "historical_in_health": 8,
     "snapshot": {
       "schema_version": 1,
-      "generated_at": "2026-08-28T15:01:55.598172+00:00",
+      "generated_at": "2026-08-28T15:31:50.934699+00:00",
       "date": "2026-08-28",
       "sources": [
         {
@@ -108,8 +108,8 @@
           "files_failed": 0,
           "health_status": "healthy",
           "lifecycle": "active",
-          "last_success": "2026-08-28T14:37:46.392572+00:00",
-          "last_attempt": "2026-08-28T14:37:46.392550+00:00"
+          "last_success": "2026-08-28T15:09:56.894607+00:00",
+          "last_attempt": "2026-08-28T15:09:56.894590+00:00"
         },
         {
           "id": "metacubex",
@@ -120,8 +120,8 @@
           "files_failed": 0,
           "health_status": "healthy",
           "lifecycle": "active",
-          "last_success": "2026-08-28T14:37:57.022437+00:00",
-          "last_attempt": "2026-08-28T14:37:57.022421+00:00"
+          "last_success": "2026-08-28T15:10:00.775115+00:00",
+          "last_attempt": "2026-08-28T15:10:00.775099+00:00"
         },
         {
           "id": "v2fly",
@@ -132,8 +132,8 @@
           "files_failed": 0,
           "health_status": "healthy",
           "lifecycle": "active",
-          "last_success": "2026-08-28T14:38:05.637690+00:00",
-          "last_attempt": "2026-08-28T14:38:05.637675+00:00"
+          "last_success": "2026-08-28T15:10:05.983360+00:00",
+          "last_attempt": "2026-08-28T15:10:05.983344+00:00"
         },
         {
           "id": "dler",
@@ -144,8 +144,8 @@
           "files_failed": 0,
           "health_status": "healthy",
           "lifecycle": "active",
-          "last_success": "2026-08-28T14:38:07.921052+00:00",
-          "last_attempt": "2026-08-28T14:38:07.921037+00:00"
+          "last_success": "2026-08-28T15:10:07.186346+00:00",
+          "last_attempt": "2026-08-28T15:10:07.186332+00:00"
         }
       ],
       "intentional_unmaterialized": {
@@ -327,7 +327,7 @@
   "materialized_count": 171,
   "intentional_unmaterialized": 11,
   "domain_count": 836565,
-  "ip_count": 13955,
+  "ip_count": 13959,
   "builder_count": 7,
   "builder_coverage": {
     "mihomo": {

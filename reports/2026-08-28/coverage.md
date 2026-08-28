@@ -2,9 +2,9 @@
 
 - registered: **182**
 - materialized: **171**
-- with domain rules: **170**
+- with domain rules: **171**
 - with IP sidecar: **36**
-- with ≥1 client artifact: **170**
+- with ≥1 client artifact: **171**
 
 | service | domain | ip | clients | intentional |
 |---------|--------|----|---------|-------------|
@@ -44,10 +44,10 @@
 | canva | Y (12) | n (0) | 7/7 |  |
 | ccb | Y (36) | n (0) | 7/7 |  |
 | ceb | Y (30) | n (0) | 7/7 |  |
-| china | Y (112124) | Y (9661) | 7/7 |  |
+| china | Y (112124) | Y (9662) | 7/7 |  |
 | chinamobile | Y (71) | Y (1) | 7/7 |  |
 | chinatelecom | Y (166) | n (0) | 7/7 |  |
-| chinaunicom | Y (67) | Y (3725) | 7/7 |  |
+| chinaunicom | Y (67) | Y (3728) | 7/7 |  |
 | claude | Y (6) | n (0) | 7/7 |  |
 | cloudflare | Y (174) | Y (22) | 7/7 |  |
 | cmb | Y (76) | n (0) | 7/7 |  |
@@ -137,7 +137,7 @@
 | psbc | Y (6) | n (0) | 7/7 |  |
 | qq | n (0) | n (0) | 0/7 | COVERED_BY_AGGREGATE |
 | reddit | Y (30) | n (0) | 7/7 |  |
-| restricted | n (0) | n (0) | 0/7 |  |
+| restricted | Y (13176) | n (0) | 7/7 |  |
 | riotgames | Y (110) | n (0) | 7/7 |  |
 | roblox | Y (100) | n (0) | 7/7 |  |
 | rockstar | Y (10) | n (0) | 7/7 |  |
