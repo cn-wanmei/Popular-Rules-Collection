@@ -1,11 +1,11 @@
 {
   "source": "metacubex",
   "fetch": "github_raw",
-  "timestamp": "2026-08-28T15:10:00.775119+00:00",
-  "files_ok": 67,
+  "timestamp": "2026-08-28T22:05:32.600562+00:00",
+  "files_ok": 76,
   "files_failed": 0,
   "empty_blocked": 0,
-  "rules_declared": 67,
+  "rules_declared": 76,
   "files": [
     {
       "name": "geosite_alibaba.list",
@@ -675,6 +675,96 @@
       "local": "sources/metacubex/geosite_ehentai.list",
       "size": 121,
       "sha256": "b0465da3d078db69bef733acbfd6a81ba5eb527b281ab45dfc93fab02e956e0e",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_kugou.list",
+      "path": "geo/geosite/kugou.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/kugou.list",
+      "service": "kugou",
+      "local": "sources/metacubex/geosite_kugou.list",
+      "size": 326,
+      "sha256": "7259ab825d9e4797294f668211e03dc9438de818094cee6d0d48f2ad8b3a8d72",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_kuwo.list",
+      "path": "geo/geosite/kuwo.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/kuwo.list",
+      "service": "kuwo",
+      "local": "sources/metacubex/geosite_kuwo.list",
+      "size": 32,
+      "sha256": "79fd18dbb0f7331144a336689c8c5944bd1fbbeefd491993f4372290c686ee42",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_ximalaya.list",
+      "path": "geo/geosite/ximalaya.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ximalaya.list",
+      "service": "ximalaya",
+      "local": "sources/metacubex/geosite_ximalaya.list",
+      "size": 96,
+      "sha256": "8cb96625b022e68952814b928d741bf93fbbd27d9e0820b4a4885888aaad9ef2",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_acfun.list",
+      "path": "geo/geosite/acfun.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/acfun.list",
+      "service": "acfun",
+      "local": "sources/metacubex/geosite_acfun.list",
+      "size": 115,
+      "sha256": "381d6708e23c62d500120f3f59e584b3a629c30e33b9046043ad6d7c8032a590",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_cctv.list",
+      "path": "geo/geosite/cctv.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cctv.list",
+      "service": "cctv",
+      "local": "sources/metacubex/geosite_cctv.list",
+      "size": 768,
+      "sha256": "02adf1300afbee1b60bf5a459cd82e2fba6f75ec939490c5341393bc08c8cb33",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_huya.list",
+      "path": "geo/geosite/huya.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/huya.list",
+      "service": "huya",
+      "local": "sources/metacubex/geosite_huya.list",
+      "size": 25,
+      "sha256": "9a3fba1811696bd60fadf41175c96785972adb21efd6989af4e300742eeb9128",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_douyu.list",
+      "path": "geo/geosite/douyu.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/douyu.list",
+      "service": "douyu",
+      "local": "sources/metacubex/geosite_douyu.list",
+      "size": 95,
+      "sha256": "2e9a737eb9b80f1c2716a4624642fac3fefe13b777e826fe3dd4e85f90b28101",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_iqiyi.list",
+      "path": "geo/geosite/iqiyi.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/iqiyi.list",
+      "service": "iqiyi",
+      "local": "sources/metacubex/geosite_iqiyi.list",
+      "size": 311,
+      "sha256": "35e8445d1ef99470d25c6ab535b7d101dc87b0a4c905a48daf6ba116528e4c3f",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_youku.list",
+      "path": "geo/geosite/youku.list",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youku.list",
+      "service": "youku",
+      "local": "sources/metacubex/geosite_youku.list",
+      "size": 575,
+      "sha256": "78232642b3df18f6c51ab07828c84824a179b74ee9c6d4022e9823f29b03459f",
       "status": "ok"
     }
   ],

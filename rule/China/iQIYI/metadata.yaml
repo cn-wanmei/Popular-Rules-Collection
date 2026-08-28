@@ -3,6 +3,7 @@ name: iQIYI
 primary_category: china
 categories:
 - china
+- streaming
 service_type: service
 parent: china
 children: null
@@ -15,11 +16,12 @@ generated_files:
   domain: iqiyi_domain.list
   ip: iqiyi_ip.list
 statistics:
-  domains: 34
+  domains: 44
   ipv4_or_cidr: 21
-  mixed: 55
+  mixed: 65
 sources:
 - blackmatrix7
+- metacubex
 clients:
 - Mihomo
 - sing-box

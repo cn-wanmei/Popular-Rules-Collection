@@ -1,15 +1,16 @@
 # Coverage Matrix (2026-08-28)
 
-- registered: **182**
+- registered: **195**
 - materialized: **171**
-- with domain rules: **171**
+- with domain rules: **184**
 - with IP sidecar: **36**
-- with ≥1 client artifact: **171**
+- with ≥1 client artifact: **174**
 
 | service | domain | ip | clients | intentional |
 |---------|--------|----|---------|-------------|
 | 12306 | Y (30) | n (0) | 7/7 |  |
 | abc | Y (12) | n (0) | 7/7 |  |
+| acfun | Y (8) | n (0) | 0/7 |  |
 | adblock | Y (402068) | Y (47) | 7/7 |  |
 | adblock-light | Y (84212) | n (0) | 7/7 | DEFERRED_PROFILE |
 | adblock-pro | Y (452190) | n (0) | 7/7 | DEFERRED_PROFILE |
@@ -31,6 +32,7 @@
 | atlassian | Y (22) | n (0) | 7/7 |  |
 | aws | Y (155) | n (0) | 7/7 |  |
 | azure | Y (302) | n (0) | 7/7 |  |
+| bahamut | Y (3) | n (0) | 0/7 |  |
 | baidu | Y (648) | n (0) | 7/7 |  |
 | battlenet | Y (101) | Y (23) | 7/7 |  |
 | bbc | Y (55) | n (0) | 7/7 |  |
@@ -43,6 +45,7 @@
 | bytedance | Y (2155) | Y (1) | 7/7 |  |
 | canva | Y (12) | n (0) | 7/7 |  |
 | ccb | Y (36) | n (0) | 7/7 |  |
+| cctv | Y (44) | n (0) | 0/7 |  |
 | ceb | Y (30) | n (0) | 7/7 |  |
 | china | Y (112124) | Y (9662) | 7/7 |  |
 | chinamobile | Y (71) | Y (1) | 7/7 |  |
@@ -67,6 +70,7 @@
 | docker | Y (22) | n (0) | 7/7 |  |
 | doubao | Y (64) | n (0) | 7/7 |  |
 | douyin | Y (156) | n (0) | 7/7 |  |
+| douyu | Y (13) | n (0) | 0/7 |  |
 | dropbox | Y (34) | n (0) | 7/7 |  |
 | ea | Y (330) | n (0) | 7/7 |  |
 | ebay | Y (740) | n (0) | 7/7 |  |
@@ -91,19 +95,24 @@
 | hashicorp | Y (16) | n (0) | 7/7 |  |
 | hbo | Y (94) | n (0) | 7/7 |  |
 | heroku | Y (24) | n (0) | 7/7 |  |
+| himalaya | Y (17) | n (0) | 0/7 |  |
 | hoyoverse | Y (30) | n (0) | 7/7 |  |
 | huawei | Y (804) | n (0) | 7/7 |  |
 | huggingface | Y (6) | n (0) | 7/7 |  |
 | hulu | Y (116) | n (0) | 7/7 |  |
+| huya | Y (3) | n (0) | 0/7 |  |
 | icbc | Y (116) | n (0) | 7/7 |  |
 | icloud | Y (122) | n (0) | 7/7 |  |
 | instagram | Y (151) | n (0) | 7/7 |  |
-| iqiyi | Y (90) | Y (21) | 7/7 |  |
+| iqiyi | Y (100) | Y (21) | 7/7 |  |
 | jetbrains | Y (50) | n (0) | 7/7 |  |
 | jingdong | Y (530) | n (0) | 7/7 |  |
 | kakaotalk | Y (24) | Y (6) | 7/7 |  |
 | kuaishou | Y (1356) | n (0) | 7/7 |  |
-| kugoukuwo | Y (128) | Y (90) | 7/7 |  |
+| kugou | Y (19) | n (0) | 7/7 |  |
+| kugoukuwo | Y (131) | Y (90) | 7/7 |  |
+| kuwo | Y (1) | n (0) | 7/7 |  |
+| letv | Y (13) | n (0) | 7/7 |  |
 | line | Y (58) | Y (16) | 7/7 |  |
 | linkedin | Y (24) | n (0) | 7/7 |  |
 | meituan | Y (14) | n (0) | 7/7 |  |
@@ -131,6 +140,7 @@
 | pingan | Y (54) | n (0) | 7/7 |  |
 | pinterest | Y (46) | n (0) | 7/7 |  |
 | playstation | Y (8) | n (0) | 7/7 |  |
+| pptv | Y (19) | n (0) | 0/7 |  |
 | primevideo | Y (49) | n (0) | 7/7 |  |
 | private | Y (489) | Y (3) | 7/7 |  |
 | proxy | Y (28217) | n (0) | 7/7 |  |
@@ -148,6 +158,7 @@
 | siri | n (0) | n (0) | 0/7 | COVERED_BY_AGGREGATE |
 | slack | Y (22) | n (0) | 7/7 |  |
 | snapchat | Y (18) | n (0) | 7/7 |  |
+| sohu | Y (53) | n (0) | 0/7 |  |
 | soundcloud | Y (10) | n (0) | 7/7 |  |
 | speedtest | Y (9) | n (0) | 7/7 |  |
 | spotify | Y (69) | Y (2) | 7/7 |  |
@@ -177,6 +188,7 @@
 | walmart | Y (20) | n (0) | 7/7 |  |
 | wechat | Y (60) | n (0) | 7/7 |  |
 | weibo | Y (7) | n (0) | 7/7 |  |
+| wetv | Y (3) | n (0) | 0/7 |  |
 | whatsapp | Y (44) | Y (11) | 7/7 |  |
 | wikipedia | Y (24) | n (0) | 7/7 |  |
 | wise | Y (4) | n (0) | 7/7 |  |
@@ -185,7 +197,8 @@
 | xianyu | Y (32) | n (0) | 7/7 |  |
 | xiaohongshu | Y (8) | n (0) | 7/7 |  |
 | xiaomi | Y (305) | Y (9) | 7/7 |  |
-| youku | Y (69) | Y (1) | 7/7 |  |
+| ximalaya | Y (4) | n (0) | 0/7 |  |
+| youku | Y (94) | Y (1) | 7/7 |  |
 | youtube | Y (369) | Y (3) | 7/7 |  |
 | youtubemusic | Y (2) | n (0) | 7/7 |  |
 | zhihu | Y (9) | Y (5) | 7/7 |  |

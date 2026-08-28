@@ -1,9 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-28T15:31:55.837049+00:00",
+  "generated_at": "2026-08-28T22:27:57.723772+00:00",
   "date": "2026-08-28",
   "services": {
     "uber": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "pptv": {
       "score": 90.0,
       "band": "stable"
     },
@@ -103,6 +107,10 @@
       "score": 90.0,
       "band": "stable"
     },
+    "wetv": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "battlenet": {
       "score": 90.0,
       "band": "stable"
@@ -131,6 +139,10 @@
       "score": 90.0,
       "band": "stable"
     },
+    "bahamut": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "iqiyi": {
       "score": 90.0,
       "band": "stable"
@@ -152,10 +164,6 @@
       "band": "stable"
     },
     "booking": {
-      "score": 90.0,
-      "band": "stable"
-    },
-    "youku": {
       "score": 90.0,
       "band": "stable"
     },
@@ -227,6 +235,10 @@
       "score": 90.0,
       "band": "stable"
     },
+    "kugou": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "twitch": {
       "score": 90.0,
       "band": "stable"
@@ -256,6 +268,18 @@
       "band": "stable"
     },
     "dewu": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "huya": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "douyu": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "acfun": {
       "score": 90.0,
       "band": "stable"
     },
@@ -336,6 +360,10 @@
       "band": "stable"
     },
     "gaode": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "himalaya": {
       "score": 90.0,
       "band": "stable"
     },
@@ -435,11 +463,19 @@
       "score": 90.0,
       "band": "stable"
     },
+    "ximalaya": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "wise": {
       "score": 90.0,
       "band": "stable"
     },
     "roblox": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "sohu": {
       "score": 90.0,
       "band": "stable"
     },
@@ -467,7 +503,15 @@
       "score": 90.0,
       "band": "stable"
     },
+    "cctv": {
+      "score": 90.0,
+      "band": "stable"
+    },
     "binance": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "kuwo": {
       "score": 90.0,
       "band": "stable"
     },
@@ -504,6 +548,10 @@
       "band": "stable"
     },
     "hbo": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "letv": {
       "score": 90.0,
       "band": "stable"
     },
@@ -596,6 +644,10 @@
       "band": "maintained"
     },
     "docker": {
+      "score": 78.0,
+      "band": "maintained"
+    },
+    "youku": {
       "score": 78.0,
       "band": "maintained"
     },

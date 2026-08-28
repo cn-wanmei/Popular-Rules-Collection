@@ -1,0 +1,34 @@
+id: cctv
+name: CCTV
+primary_category: china
+categories:
+- china
+- streaming
+service_type: service
+parent: china
+children: null
+rule:
+  has_domain: true
+  has_ip: false
+  mixed: true
+generated_files:
+  mixed: cctv.list
+  domain: cctv_domain.list
+  ip: null
+statistics:
+  domains: 44
+  ipv4_or_cidr: 0
+  mixed: 44
+sources:
+- blackmatrix7
+- metacubex
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-28'
+auto_generated: true

@@ -1,0 +1,15 @@
+# name: Wetv
+# id: wetv
+# count: 8
+no_resolve: true
+domain_set:
+- wetv.qq.com
+domain_suffix_set:
+- iflix-images.akamaized.net
+- iflix.com
+- vv.video.qq.com
+- wetv.vip
+- wetvinfo.com
+ip_cidr_set:
+- 150.109.28.51/32
+- 150.109.28.51/32

@@ -3,6 +3,7 @@ name: KugouKuwo
 primary_category: china
 categories:
 - china
+- streaming
 service_type: service
 parent: china
 children: null
@@ -15,9 +16,9 @@ generated_files:
   domain: kugoukuwo_domain.list
   ip: kugoukuwo_ip.list
 statistics:
-  domains: 19
+  domains: 22
   ipv4_or_cidr: 90
-  mixed: 109
+  mixed: 112
 sources:
 - blackmatrix7
 clients:

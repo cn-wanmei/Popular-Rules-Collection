@@ -45,10 +45,23 @@ Reason codes: `MATERIALIZED` / `NO_UPSTREAM` / `COVERED_BY_AGGREGATE` / `MAPS_TO
 
 - **NO_UPSTREAM**: 23
 - **MATERIALIZED**: 19
+- **UNEXPECTED_MISSING**: 13
 - **COVERED_BY_AGGREGATE**: 13
 - **NOT_REGISTERED**: 3
 - **MAPS_TO**: 2
 
 ## Unexpected missing
 
-- (none)
+- `acfun`
+- `bahamut`
+- `cctv`
+- `douyu`
+- `himalaya`
+- `huya`
+- `kugou`
+- `kuwo`
+- `letv`
+- `pptv`
+- `sohu`
+- `wetv`
+- `ximalaya`

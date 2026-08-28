@@ -1,0 +1,34 @@
+id: wetv
+name: WeTV
+primary_category: tencent
+categories:
+- tencent
+- china
+- streaming
+service_type: service
+parent: tencent
+children: null
+rule:
+  has_domain: true
+  has_ip: true
+  mixed: true
+generated_files:
+  mixed: wetv.list
+  domain: wetv_domain.list
+  ip: wetv_ip.list
+statistics:
+  domains: 6
+  ipv4_or_cidr: 1
+  mixed: 7
+sources:
+- blackmatrix7
+clients:
+- Mihomo
+- sing-box
+- Surge
+- Shadowrocket
+- Quantumult X
+- Egern
+- Loon
+updated_at: '2026-08-28'
+auto_generated: true

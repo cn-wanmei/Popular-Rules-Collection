@@ -7,7 +7,7 @@
 | Rule ID | `tencentvideo` |
 | Primary Ecosystem | **Tencent** (`tencent`) |
 | Service Type | service |
-| Tags | tencent, china |
+| Tags | tencent, china, streaming |
 | 类型 | mixed |
 | Domains | 19 |
 | CIDR | 32 |

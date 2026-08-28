@@ -1,11 +1,11 @@
 {
   "source": "blackmatrix7",
   "fetch": "github_raw",
-  "timestamp": "2026-08-28T15:09:56.894612+00:00",
-  "files_ok": 128,
+  "timestamp": "2026-08-28T22:05:25.857265+00:00",
+  "files_ok": 139,
   "files_failed": 0,
   "empty_blocked": 0,
-  "rules_declared": 128,
+  "rules_declared": 139,
   "files": [
     {
       "name": "Clash_Apple.yaml",
@@ -1285,6 +1285,116 @@
       "local": "sources/blackmatrix7/Clash_AppleNews.yaml",
       "size": 234,
       "sha256": "f45b1892d69cac07cbf55d3d498fbaebb22eb686e55f5485e4f697c2ed0eeb54",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_PPTV.yaml",
+      "path": "rule/Clash/PPTV/PPTV.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PPTV/PPTV.yaml",
+      "service": "pptv",
+      "local": "sources/blackmatrix7/Clash_PPTV.yaml",
+      "size": 715,
+      "sha256": "20e10645ed2edccc9d29252c9b6151618fc6c2baf0bdb15507d86f2e08040d0a",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_AcFun.yaml",
+      "path": "rule/Clash/AcFun/AcFun.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AcFun/AcFun.yaml",
+      "service": "acfun",
+      "local": "sources/blackmatrix7/Clash_AcFun.yaml",
+      "size": 275,
+      "sha256": "8ebab71305e051894f603826be6144788c1452e48fe5a4e8782360f0a1e51f7f",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_CCTV.yaml",
+      "path": "rule/Clash/CCTV/CCTV.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/CCTV/CCTV.yaml",
+      "service": "cctv",
+      "local": "sources/blackmatrix7/Clash_CCTV.yaml",
+      "size": 1431,
+      "sha256": "4e5604afbdb701bec93bc56b00961bbe329f9340840465767338a39c018effab",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_HuYa.yaml",
+      "path": "rule/Clash/HuYa/HuYa.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HuYa/HuYa.yaml",
+      "service": "huya",
+      "local": "sources/blackmatrix7/Clash_HuYa.yaml",
+      "size": 281,
+      "sha256": "cb4acc769b2af26e6c3732f3302bad7afdc424571decec4c465e98bd12d1cd95",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Douyu.yaml",
+      "path": "rule/Clash/Douyu/Douyu.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Douyu/Douyu.yaml",
+      "service": "douyu",
+      "local": "sources/blackmatrix7/Clash_Douyu.yaml",
+      "size": 556,
+      "sha256": "4f6e0a84f37a57f6fc1a18e2ef9efd8a6d6dff8153268102ff489922c883caff",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Himalaya.yaml",
+      "path": "rule/Clash/Himalaya/Himalaya.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Himalaya/Himalaya.yaml",
+      "service": "himalaya",
+      "local": "sources/blackmatrix7/Clash_Himalaya.yaml",
+      "size": 693,
+      "sha256": "7bbf3680b73a444821443d2d7a7cae7ea15efec97499fc9e48e688098e0cdc82",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_WeTV.yaml",
+      "path": "rule/Clash/WeTV/WeTV.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeTV/WeTV.yaml",
+      "service": "wetv",
+      "local": "sources/blackmatrix7/Clash_WeTV.yaml",
+      "size": 505,
+      "sha256": "4752268e0f2840fd1a7095f1dd636479448788d1be9cdb113a2e8029b8d536c4",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Sohu.yaml",
+      "path": "rule/Clash/Sohu/Sohu.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Sohu/Sohu.yaml",
+      "service": "sohu",
+      "local": "sources/blackmatrix7/Clash_Sohu.yaml",
+      "size": 1697,
+      "sha256": "e6b393d9cd24cf01bd34f0f16118d12f048b744cdded1fcab897692b08725cd6",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_LeTV.yaml",
+      "path": "rule/Clash/LeTV/LeTV.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/LeTV/LeTV.yaml",
+      "service": "letv",
+      "local": "sources/blackmatrix7/Clash_LeTV.yaml",
+      "size": 552,
+      "sha256": "e8ef477db8aac75fbc619fa4ecaebc3cd1e3749576345ebbe0d8b2fb30fb985a",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Bahamut.yaml",
+      "path": "rule/Clash/Bahamut/Bahamut.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bahamut/Bahamut.yaml",
+      "service": "bahamut",
+      "local": "sources/blackmatrix7/Clash_Bahamut.yaml",
+      "size": 390,
+      "sha256": "5194da93d0b6a441f1c6c294c93619540a72237bf443a247ba7d2ceb07e2ef92",
+      "status": "ok"
+    },
+    {
+      "name": "Clash_Emby.yaml",
+      "path": "rule/Clash/Emby/Emby.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Emby/Emby.yaml",
+      "service": "emby",
+      "local": "sources/blackmatrix7/Clash_Emby.yaml",
+      "size": 1892,
+      "sha256": "bd2b9c2a96c12aba29a522246f7a51ae98a78731a0df805f01d8d4f0c98df519",
       "status": "ok"
     }
   ],

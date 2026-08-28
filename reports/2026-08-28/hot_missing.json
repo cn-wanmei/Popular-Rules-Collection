@@ -208,6 +208,12 @@
   ],
   "all_audited": [
     {
+      "service": "acfun",
+      "status": "UNEXPECTED_MISSING",
+      "code": "UNEXPECTED_MISSING",
+      "reason": "in primary, not materialized, not in intentional_unmaterialized"
+    },
+    {
       "service": "adblock-light",
       "status": "MATERIALIZED",
       "code": "MATERIALIZED",
@@ -244,6 +250,12 @@
       "reason": "no_verified_upstream"
     },
     {
+      "service": "bahamut",
+      "status": "UNEXPECTED_MISSING",
+      "code": "UNEXPECTED_MISSING",
+      "reason": "in primary, not materialized, not in intentional_unmaterialized"
+    },
+    {
       "service": "baidumap",
       "status": "INTENTIONAL_UNMATERIALIZED",
       "code": "COVERED_BY_AGGREGATE",
@@ -272,6 +284,12 @@
       "status": "INTENTIONAL_UNMATERIALIZED",
       "code": "NO_UPSTREAM",
       "reason": "no_verified_upstream"
+    },
+    {
+      "service": "cctv",
+      "status": "UNEXPECTED_MISSING",
+      "code": "UNEXPECTED_MISSING",
+      "reason": "in primary, not materialized, not in intentional_unmaterialized"
     },
     {
       "service": "claude",
@@ -316,6 +334,12 @@
       "reason": "ok"
     },
     {
+      "service": "douyu",
+      "status": "UNEXPECTED_MISSING",
+      "code": "UNEXPECTED_MISSING",
+      "reason": "in primary, not materialized, not in intentional_unmaterialized"
+    },
+    {
       "service": "etsy",
       "status": "INTENTIONAL_UNMATERIALIZED",
       "code": "NO_UPSTREAM",
@@ -358,6 +382,18 @@
       "reason": "ok"
     },
     {
+      "service": "himalaya",
+      "status": "UNEXPECTED_MISSING",
+      "code": "UNEXPECTED_MISSING",
+      "reason": "in primary, not materialized, not in intentional_unmaterialized"
+    },
+    {
+      "service": "huya",
+      "status": "UNEXPECTED_MISSING",
+      "code": "UNEXPECTED_MISSING",
+      "reason": "in primary, not materialized, not in intentional_unmaterialized"
+    },
+    {
       "service": "jdfinance",
       "status": "INTENTIONAL_UNMATERIALIZED",
       "code": "COVERED_BY_AGGREGATE",
@@ -370,6 +406,18 @@
       "reason": "no_verified_upstream"
     },
     {
+      "service": "kugou",
+      "status": "UNEXPECTED_MISSING",
+      "code": "UNEXPECTED_MISSING",
+      "reason": "in primary, not materialized, not in intentional_unmaterialized"
+    },
+    {
+      "service": "kuwo",
+      "status": "UNEXPECTED_MISSING",
+      "code": "UNEXPECTED_MISSING",
+      "reason": "in primary, not materialized, not in intentional_unmaterialized"
+    },
+    {
       "service": "lan",
       "status": "INTENTIONAL_UNMATERIALIZED",
       "code": "NO_UPSTREAM",
@@ -380,6 +428,12 @@
       "status": "NOT_IN_PRIMARY",
       "code": "NOT_REGISTERED",
       "reason": "not in service_primary"
+    },
+    {
+      "service": "letv",
+      "status": "UNEXPECTED_MISSING",
+      "code": "UNEXPECTED_MISSING",
+      "reason": "in primary, not materialized, not in intentional_unmaterialized"
     },
     {
       "service": "lyft",
@@ -440,6 +494,12 @@
       "status": "MATERIALIZED",
       "code": "MATERIALIZED",
       "reason": "ok"
+    },
+    {
+      "service": "pptv",
+      "status": "UNEXPECTED_MISSING",
+      "code": "UNEXPECTED_MISSING",
+      "reason": "in primary, not materialized, not in intentional_unmaterialized"
     },
     {
       "service": "pypi",
@@ -508,6 +568,12 @@
       "reason": "ok"
     },
     {
+      "service": "sohu",
+      "status": "UNEXPECTED_MISSING",
+      "code": "UNEXPECTED_MISSING",
+      "reason": "in primary, not materialized, not in intentional_unmaterialized"
+    },
+    {
       "service": "steamcn",
       "status": "INTENTIONAL_UNMATERIALIZED",
       "code": "COVERED_BY_AGGREGATE",
@@ -556,10 +622,22 @@
       "reason": "no_verified_upstream"
     },
     {
+      "service": "wetv",
+      "status": "UNEXPECTED_MISSING",
+      "code": "UNEXPECTED_MISSING",
+      "reason": "in primary, not materialized, not in intentional_unmaterialized"
+    },
+    {
       "service": "xai",
       "status": "MATERIALIZED",
       "code": "MATERIALIZED",
       "reason": "ok"
+    },
+    {
+      "service": "ximalaya",
+      "status": "UNEXPECTED_MISSING",
+      "code": "UNEXPECTED_MISSING",
+      "reason": "in primary, not materialized, not in intentional_unmaterialized"
     },
     {
       "service": "yuanbao",
@@ -569,6 +647,21 @@
     }
   ],
   "by_code": {
+    "UNEXPECTED_MISSING": [
+      "acfun",
+      "bahamut",
+      "cctv",
+      "douyu",
+      "himalaya",
+      "huya",
+      "kugou",
+      "kuwo",
+      "letv",
+      "pptv",
+      "sohu",
+      "wetv",
+      "ximalaya"
+    ],
     "MATERIALIZED": [
       "adblock-light",
       "adblock-pro",
@@ -641,6 +734,7 @@
     ]
   },
   "counts": {
+    "UNEXPECTED_MISSING": 13,
     "MATERIALIZED": 19,
     "NO_UPSTREAM": 23,
     "COVERED_BY_AGGREGATE": 13,

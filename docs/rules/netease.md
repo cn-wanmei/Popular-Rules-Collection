@@ -7,7 +7,7 @@
 | Rule ID | `netease` |
 | Primary Ecosystem | **China** (`china`) |
 | Service Type | service |
-| Tags | china |
+| Tags | china, streaming |
 | 类型 | mixed |
 | Domains | 63 |
 | CIDR | 18 |

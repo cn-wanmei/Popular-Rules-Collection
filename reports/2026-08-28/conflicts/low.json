@@ -4,6 +4,175 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "ac.fun"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex"
+    ],
+    "services": [
+      "acfun"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "acfun.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex"
+    ],
+    "services": [
+      "acfun",
+      "kuaishou"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "acfun.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex"
+    ],
+    "services": [
+      "acfun",
+      "kuaishou"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "acfun.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex"
+    ],
+    "services": [
+      "acfun"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "acfun.tv"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex"
+    ],
+    "services": [
+      "acfun",
+      "kuaishou"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "acfunchina.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex"
+    ],
+    "services": [
+      "acfun",
+      "kuaishou"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "acfunchina.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex"
+    ],
+    "services": [
+      "acfun",
+      "kuaishou"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "acfunchina.net"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex"
+    ],
+    "services": [
+      "acfun",
+      "kuaishou"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "aixifan.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "metacubex"
+    ],
+    "services": [
+      "acfun",
+      "kuaishou"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "apilog-web.acfun.cn"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "acfun",
+      "adblock-pro"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "10bet.com"
     },
     "policy": "proxy",
@@ -85,7 +254,8 @@
     "policy": "proxy",
     "sources": [
       "blackmatrix7",
-      "hagezi"
+      "hagezi",
+      "metacubex"
     ],
     "services": [
       "adblock-light",
@@ -112,6 +282,25 @@
       "adblock-pro",
       "alibaba",
       "alibabacloud"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "ad.cctv.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "cctv"
     ]
   },
   {
@@ -333,7 +522,8 @@
     "services": [
       "adblock-light",
       "adblock-pro",
-      "alibaba"
+      "alibaba",
+      "youku"
     ]
   },
   {
@@ -413,7 +603,8 @@
     "services": [
       "adblock-light",
       "adblock-pro",
-      "tencent"
+      "tencent",
+      "ximalaya"
     ]
   },
   {
@@ -549,6 +740,7 @@
     "services": [
       "adblock-light",
       "adblock-pro",
+      "kugou",
       "tencent"
     ]
   },
@@ -671,7 +863,8 @@
     "services": [
       "adblock-light",
       "adblock-pro",
-      "tencent"
+      "tencent",
+      "ximalaya"
     ]
   },
   {
@@ -691,7 +884,8 @@
     "services": [
       "adblock-light",
       "adblock-pro",
-      "tencent"
+      "tencent",
+      "ximalaya"
     ]
   },
   {
@@ -751,6 +945,7 @@
     "services": [
       "adblock-light",
       "adblock-pro",
+      "kugou",
       "tencent"
     ]
   },
@@ -2844,6 +3039,25 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "ifacelog.iqiyi.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "iqiyi"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "igetnaughty.com"
     },
     "policy": "proxy",
@@ -2993,6 +3207,7 @@
       "adblock-light",
       "adblock-pro",
       "kugoukuwo",
+      "kuwo",
       "tencent"
     ]
   },
@@ -3972,6 +4187,25 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "policy.video.iqiyi.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "iqiyi"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "pornogrund.com"
     },
     "policy": "proxy",
@@ -4460,6 +4694,24 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "synacast.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "pptv"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "tcbox.baidu.com"
     },
     "policy": "proxy",
@@ -4932,6 +5184,24 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "vv.video.qq.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi"
+    ],
+    "services": [
+      "adblock-light",
+      "adblock-pro",
+      "wetv"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "w.cnzz.com"
     },
     "policy": "proxy",
@@ -5003,7 +5273,8 @@
     "services": [
       "adblock-light",
       "adblock-pro",
-      "alibaba"
+      "alibaba",
+      "youku"
     ]
   },
   {
@@ -5023,7 +5294,8 @@
     "services": [
       "adblock-light",
       "adblock-pro",
-      "alibaba"
+      "alibaba",
+      "youku"
     ]
   },
   {
@@ -5209,7 +5481,8 @@
     ],
     "services": [
       "adblock-pro",
-      "alibaba"
+      "alibaba",
+      "youku"
     ]
   },
   {
@@ -6213,6 +6486,24 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
+      "value": "cupid.iqiyi.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-pro",
+      "iqiyi"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
       "value": "data-vocabulary.org"
     },
     "policy": "proxy",
@@ -7018,7 +7309,8 @@
     ],
     "services": [
       "adblock-pro",
-      "alibaba"
+      "alibaba",
+      "youku"
     ]
   },
   {
@@ -7424,7 +7716,8 @@
     ],
     "services": [
       "adblock-pro",
-      "alibaba"
+      "alibaba",
+      "youku"
     ]
   },
   {
@@ -7443,6 +7736,24 @@
     "services": [
       "adblock-pro",
       "restricted"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "mbdlog.iqiyi.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-pro",
+      "iqiyi"
     ]
   },
   {
@@ -7519,6 +7830,24 @@
     "services": [
       "adblock-pro",
       "baidu"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "msg.video.qiyi.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "hagezi",
+      "metacubex"
+    ],
+    "services": [
+      "adblock-pro",
+      "iqiyi"
     ]
   },
   {
@@ -8300,7 +8629,8 @@
     ],
     "services": [
       "adblock-pro",
-      "alibaba"
+      "alibaba",
+      "youku"
     ]
   },
   {
@@ -8616,7 +8946,8 @@
     ],
     "services": [
       "adblock-pro",
-      "alibaba"
+      "alibaba",
+      "youku"
     ]
   },
   {
@@ -8782,7 +9113,8 @@
     ],
     "services": [
       "adblock-pro",
-      "alibaba"
+      "alibaba",
+      "youku"
     ]
   },
   {
@@ -9225,294 +9557,6 @@
     "services": [
       "adobe",
       "disney"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "adobeexchange.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "adobeexperienceawards.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "adobegov.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "adobehiddentreasures.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "adobejanus.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "adobeku.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "adobelanding.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "adobelogin.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "adobeoobe.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "adobeplatinumclub.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "adobeprojectm.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "adobesc.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "adobesign.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "adobesigncdn.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "adobespark.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "adobess.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "adobestats.io"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
-      "value": "adobestock.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "v2fly"
-    ],
-    "services": [
-      "adobe"
     ]
   }
 ]

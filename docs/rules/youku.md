@@ -7,12 +7,12 @@
 | Rule ID | `youku` |
 | Primary Ecosystem | **Alibaba** (`alibaba`) |
 | Service Type | service |
-| Tags | alibaba, china |
+| Tags | alibaba, china, streaming |
 | 类型 | mixed |
-| Domains | 34 |
+| Domains | 59 |
 | CIDR | 1 |
 | 最后更新 | 2026-08-28 |
-| Sources | blackmatrix7 |
+| Sources | blackmatrix7 / metacubex |
 | Confidence | HIGH |
 
 ## 用途
@@ -49,6 +49,7 @@ _未在 config/official_sites.yaml 配置_
 ## 规则来源（Provenance）
 
 - `blackmatrix7`
+- `metacubex`
 
 由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
 

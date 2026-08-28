@@ -1,21 +1,27 @@
 # name: Iqiyi
 # id: iqiyi
-# count: 77
+# count: 87
 no_resolve: true
 domain_suffix_set:
 - 71.am
 - 71.am.com
 - 71edge.com
 - 71edge.net
+- ad.m.iqiyi.com
+- afp.iqiyi.com
 - aianno.cn
 - aianno.com
 - aiqiyicloud-mgmt.com
 - aiqiyicloud.com
 - aiqiyicloud.net
 - baiying.com
+- c.uaa.iqiyi.com
+- cloudpush.iqiyi.com
+- cupid.iqiyi.com
 - gitv.cn
 - gitv.tv
 - ibkstore.com
+- ifacelog.iqiyi.com
 - iq.com
 - iqiyi.com
 - iqiyi.demo.uwp
@@ -23,6 +29,10 @@ domain_suffix_set:
 - iqiyiedge.net
 - iqiyipic.com
 - jiangbing.cn
+- mbdlog.iqiyi.com
+- msg.video.qiyi.com
+- msg2.video.qiyi.com
+- policy.video.iqiyi.com
 - pps.tv
 - ppsimg.com
 - ppstream.cn

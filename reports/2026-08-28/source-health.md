@@ -2,12 +2,12 @@
 
 | Metric | Value |
 |--------|------:|
-| Services | 171 |
-| Domain lines | 836565 |
-| IP/CIDR lines | 13959 |
+| Services | 184 |
+| Domain lines | 836817 |
+| IP/CIDR lines | 13960 |
 | Invalid CIDR | 0 |
 | Suspicious domains | 0 |
-| Generated files | 1755 |
+| Generated files | 1885 |
 | Empty generated | 0 |
 | Stale domain-set | 0 |
 | Errors | 0 |
@@ -33,14 +33,14 @@ sources:
     empty_blocked: 0
     rules_declared: 8
   blackmatrix7:
-    last_attempt: '2026-08-28T15:09:56.894590+00:00'
-    last_success: '2026-08-28T15:09:56.894607+00:00'
+    last_attempt: '2026-08-28T22:05:25.857241+00:00'
+    last_success: '2026-08-28T22:05:25.857259+00:00'
     failure_count: 0
     status: healthy
-    files_ok: 128
+    files_ok: 139
     files_failed: 0
     empty_blocked: 0
-    rules_declared: 128
+    rules_declared: 139
   loyalsoldier:
     last_attempt: '2026-08-27T04:42:15.893581+00:00'
     last_success: '2026-08-27T04:42:15.893593+00:00'
@@ -69,31 +69,31 @@ sources:
     empty_blocked: 0
     rules_declared: 3
   metacubex:
-    last_attempt: '2026-08-28T15:10:00.775099+00:00'
-    files_ok: 67
+    last_attempt: '2026-08-28T22:05:32.600522+00:00'
+    files_ok: 76
     files_failed: 0
     empty_blocked: 0
-    rules_declared: 67
-    last_success: '2026-08-28T15:10:00.775115+00:00'
+    rules_declared: 76
+    last_success: '2026-08-28T22:05:32.600557+00:00'
     failure_count: 0
     status: healthy
   v2fly:
-    last_attempt: '2026-08-28T15:10:05.983344+00:00'
+    last_attempt: '2026-08-28T22:05:40.042149+00:00'
     files_ok: 56
     files_failed: 0
     empty_blocked: 0
     rules_declared: 56
-    last_success: '2026-08-28T15:10:05.983360+00:00'
+    last_success: '2026-08-28T22:05:40.042165+00:00'
     failure_count: 0
     status: healthy
   dler:
-    last_attempt: '2026-08-28T15:10:07.186332+00:00'
+    last_attempt: '2026-08-28T22:05:41.640755+00:00'
     files_ok: 20
     files_failed: 0
     empty_blocked: 0
     rules_declared: 20
-    last_success: '2026-08-28T15:10:07.186346+00:00'
+    last_success: '2026-08-28T22:05:41.640771+00:00'
     failure_count: 0
     status: healthy
-updated_at: '2026-08-28T15:10:07.189207+00:00'
+updated_at: '2026-08-28T22:05:41.643808+00:00'
 ```

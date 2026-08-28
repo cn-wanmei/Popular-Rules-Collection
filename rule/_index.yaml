@@ -1,4 +1,4 @@
-generated_at: '2026-08-28T15:32:54.465085+00:00'
+generated_at: '2026-08-28T22:28:56.977388+00:00'
 categories:
   '12306':
     display_name: '12306'
@@ -74,6 +74,172 @@ categories:
       service_type: aggregate
       domains: 16
       ips: 0
+  china:
+    display_name: China
+    order: 150
+    rules:
+    - id: acfun
+      name: AcFun
+      path: rule/China/AcFun
+      service_type: service
+      domains: 10
+      ips: 0
+    - id: bilibili
+      name: BiliBili
+      path: rule/China/BiliBili
+      service_type: service
+      domains: 121
+      ips: 8
+    - id: cctv
+      name: CCTV
+      path: rule/China/CCTV
+      service_type: service
+      domains: 44
+      ips: 0
+    - id: china
+      name: China
+      path: rule/China/China
+      service_type: aggregate
+      domains: 112124
+      ips: 9662
+    - id: ctrip
+      name: Ctrip
+      path: rule/China/Ctrip
+      service_type: service
+      domains: 29
+      ips: 0
+    - id: dewu
+      name: DeWu
+      path: rule/China/DeWu
+      service_type: service
+      domains: 45
+      ips: 0
+    - id: didi
+      name: DiDi
+      path: rule/China/DiDi
+      service_type: service
+      domains: 25
+      ips: 0
+    - id: douyu
+      name: Douyu
+      path: rule/China/Douyu
+      service_type: service
+      domains: 13
+      ips: 0
+    - id: himalaya
+      name: Himalaya
+      path: rule/China/Himalaya
+      service_type: service
+      domains: 17
+      ips: 0
+    - id: huya
+      name: HuYa
+      path: rule/China/HuYa
+      service_type: service
+      domains: 5
+      ips: 0
+    - id: iqiyi
+      name: iQIYI
+      path: rule/China/iQIYI
+      service_type: service
+      domains: 44
+      ips: 21
+    - id: kuaishou
+      name: Kuaishou
+      path: rule/China/Kuaishou
+      service_type: service
+      domains: 678
+      ips: 0
+    - id: kugou
+      name: Kugou
+      path: rule/China/Kugou
+      service_type: service
+      domains: 19
+      ips: 0
+    - id: kugoukuwo
+      name: KugouKuwo
+      path: rule/China/KugouKuwo
+      service_type: service
+      domains: 22
+      ips: 90
+    - id: kuwo
+      name: Kuwo
+      path: rule/China/Kuwo
+      service_type: service
+      domains: 3
+      ips: 0
+    - id: letv
+      name: LeTV
+      path: rule/China/LeTV
+      service_type: service
+      domains: 13
+      ips: 0
+    - id: meituan
+      name: Meituan
+      path: rule/China/Meituan
+      service_type: service
+      domains: 7
+      ips: 0
+    - id: netease
+      name: NetEase
+      path: rule/China/NetEase
+      service_type: service
+      domains: 63
+      ips: 18
+    - id: pinduoduo
+      name: Pinduoduo
+      path: rule/China/Pinduoduo
+      service_type: service
+      domains: 3
+      ips: 0
+    - id: pptv
+      name: PPTV
+      path: rule/China/PPTV
+      service_type: service
+      domains: 19
+      ips: 0
+    - id: sina
+      name: Sina
+      path: rule/China/Sina
+      service_type: service
+      domains: 107
+      ips: 0
+    - id: sohu
+      name: Sohu
+      path: rule/China/Sohu
+      service_type: service
+      domains: 53
+      ips: 0
+    - id: tongcheng
+      name: Tongcheng
+      path: rule/China/Tongcheng
+      service_type: service
+      domains: 8
+      ips: 0
+    - id: weibo
+      name: Weibo
+      path: rule/China/Weibo
+      service_type: service
+      domains: 3
+      ips: 0
+    - id: xiaohongshu
+      name: Xiaohongshu
+      path: rule/China/Xiaohongshu
+      service_type: service
+      domains: 4
+      ips: 0
+    - id: ximalaya
+      name: Ximalaya
+      path: rule/China/Ximalaya
+      service_type: service
+      domains: 5
+      ips: 0
+    - id: zhihu
+      name: Zhihu
+      path: rule/China/Zhihu
+      service_type: service
+      domains: 2
+      ips: 5
   privacy:
     display_name: Privacy
     order: 200
@@ -470,7 +636,7 @@ categories:
       name: Youku
       path: rule/Alibaba/Youku
       service_type: service
-      domains: 34
+      domains: 59
       ips: 1
   amazon:
     display_name: Amazon
@@ -516,102 +682,16 @@ categories:
       service_type: service
       domains: 60
       ips: 0
-  baidu:
-    display_name: Baidu
-    order: 50
-    rules:
-    - id: baidu
-      name: Baidu
-      path: rule/Baidu/Baidu
-      service_type: aggregate
-      domains: 324
-      ips: 0
-  gaming:
-    display_name: Gaming
-    order: 180
-    rules:
-    - id: battlenet
-      name: BattleNet
-      path: rule/Gaming/BattleNet
-      service_type: service
-      domains: 39
-      ips: 23
-    - id: ea
-      name: EA
-      path: rule/Gaming/EA
-      service_type: service
-      domains: 165
-      ips: 0
-    - id: epic
-      name: Epic
-      path: rule/Gaming/Epic
-      service_type: service
-      domains: 15
-      ips: 0
-    - id: garena
-      name: Garena
-      path: rule/Gaming/Garena
-      service_type: service
-      domains: 15
-      ips: 0
-    - id: hoyoverse
-      name: HoYoverse
-      path: rule/Gaming/HoYoverse
-      service_type: service
-      domains: 15
-      ips: 0
-    - id: minecraft
-      name: Minecraft
-      path: rule/Gaming/Minecraft
-      service_type: service
-      domains: 6
-      ips: 0
-    - id: nintendo
-      name: Nintendo
-      path: rule/Gaming/Nintendo
-      service_type: service
-      domains: 125
-      ips: 1
-    - id: playstation
-      name: PlayStation
-      path: rule/Gaming/PlayStation
-      service_type: service
-      domains: 4
-      ips: 0
-    - id: riotgames
-      name: RiotGames
-      path: rule/Gaming/RiotGames
-      service_type: service
-      domains: 55
-      ips: 0
-    - id: roblox
-      name: Roblox
-      path: rule/Gaming/Roblox
-      service_type: service
-      domains: 48
-      ips: 0
-    - id: rockstar
-      name: Rockstar
-      path: rule/Gaming/Rockstar
-      service_type: service
-      domains: 5
-      ips: 0
-    - id: steam
-      name: Steam
-      path: rule/Gaming/Steam
-      service_type: service
-      domains: 69
-      ips: 0
-    - id: ubisoft
-      name: Ubisoft
-      path: rule/Gaming/Ubisoft
-      service_type: service
-      domains: 1
-      ips: 0
   streaming:
     display_name: Streaming
     order: 160
     rules:
+    - id: bahamut
+      name: Bahamut
+      path: rule/Streaming/Bahamut
+      service_type: service
+      domains: 7
+      ips: 0
     - id: bbc
       name: BBC
       path: rule/Streaming/BBC
@@ -708,106 +788,98 @@ categories:
       service_type: service
       domains: 16
       ips: 0
-  china:
-    display_name: China
-    order: 150
+  baidu:
+    display_name: Baidu
+    order: 50
     rules:
-    - id: bilibili
-      name: BiliBili
-      path: rule/China/BiliBili
-      service_type: service
-      domains: 121
-      ips: 8
-    - id: china
-      name: China
-      path: rule/China/China
+    - id: baidu
+      name: Baidu
+      path: rule/Baidu/Baidu
       service_type: aggregate
-      domains: 112124
-      ips: 9662
-    - id: ctrip
-      name: Ctrip
-      path: rule/China/Ctrip
-      service_type: service
-      domains: 29
+      domains: 324
       ips: 0
-    - id: dewu
-      name: DeWu
-      path: rule/China/DeWu
+  gaming:
+    display_name: Gaming
+    order: 180
+    rules:
+    - id: battlenet
+      name: BattleNet
+      path: rule/Gaming/BattleNet
       service_type: service
-      domains: 45
+      domains: 39
+      ips: 23
+    - id: ea
+      name: EA
+      path: rule/Gaming/EA
+      service_type: service
+      domains: 165
       ips: 0
-    - id: didi
-      name: DiDi
-      path: rule/China/DiDi
+    - id: epic
+      name: Epic
+      path: rule/Gaming/Epic
       service_type: service
-      domains: 25
+      domains: 15
       ips: 0
-    - id: iqiyi
-      name: iQIYI
-      path: rule/China/iQIYI
+    - id: garena
+      name: Garena
+      path: rule/Gaming/Garena
       service_type: service
-      domains: 34
-      ips: 21
-    - id: kuaishou
-      name: Kuaishou
-      path: rule/China/Kuaishou
-      service_type: service
-      domains: 678
+      domains: 15
       ips: 0
-    - id: kugoukuwo
-      name: KugouKuwo
-      path: rule/China/KugouKuwo
+    - id: hoyoverse
+      name: HoYoverse
+      path: rule/Gaming/HoYoverse
       service_type: service
-      domains: 19
-      ips: 90
-    - id: meituan
-      name: Meituan
-      path: rule/China/Meituan
-      service_type: service
-      domains: 7
+      domains: 15
       ips: 0
-    - id: netease
-      name: NetEase
-      path: rule/China/NetEase
+    - id: minecraft
+      name: Minecraft
+      path: rule/Gaming/Minecraft
       service_type: service
-      domains: 63
-      ips: 18
-    - id: pinduoduo
-      name: Pinduoduo
-      path: rule/China/Pinduoduo
-      service_type: service
-      domains: 3
+      domains: 6
       ips: 0
-    - id: sina
-      name: Sina
-      path: rule/China/Sina
+    - id: nintendo
+      name: Nintendo
+      path: rule/Gaming/Nintendo
       service_type: service
-      domains: 107
-      ips: 0
-    - id: tongcheng
-      name: Tongcheng
-      path: rule/China/Tongcheng
-      service_type: service
-      domains: 8
-      ips: 0
-    - id: weibo
-      name: Weibo
-      path: rule/China/Weibo
-      service_type: service
-      domains: 3
-      ips: 0
-    - id: xiaohongshu
-      name: Xiaohongshu
-      path: rule/China/Xiaohongshu
+      domains: 125
+      ips: 1
+    - id: playstation
+      name: PlayStation
+      path: rule/Gaming/PlayStation
       service_type: service
       domains: 4
       ips: 0
-    - id: zhihu
-      name: Zhihu
-      path: rule/China/Zhihu
+    - id: riotgames
+      name: RiotGames
+      path: rule/Gaming/RiotGames
       service_type: service
-      domains: 2
-      ips: 5
+      domains: 55
+      ips: 0
+    - id: roblox
+      name: Roblox
+      path: rule/Gaming/Roblox
+      service_type: service
+      domains: 48
+      ips: 0
+    - id: rockstar
+      name: Rockstar
+      path: rule/Gaming/Rockstar
+      service_type: service
+      domains: 5
+      ips: 0
+    - id: steam
+      name: Steam
+      path: rule/Gaming/Steam
+      service_type: service
+      domains: 69
+      ips: 0
+    - id: ubisoft
+      name: Ubisoft
+      path: rule/Gaming/Ubisoft
+      service_type: service
+      domains: 1
+      ips: 0
   finance:
     display_name: Finance
     order: 210
@@ -1126,3 +1198,9 @@ categories:
       service_type: service
       domains: 30
       ips: 0
+    - id: wetv
+      name: WeTV
+      path: rule/Tencent/WeTV
+      service_type: service
+      domains: 6
+      ips: 1

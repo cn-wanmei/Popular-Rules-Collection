@@ -7,7 +7,7 @@
       "scope": "provider",
       "path": "database/provider/cloudflare.txt",
       "lines": 15,
-      "fetched_at": "2026-08-28T15:13:39.616040+00:00",
+      "fetched_at": "2026-08-28T22:09:17.464567+00:00",
       "source_url": "https://www.cloudflare.com/ips-v4",
       "notes": "Provider \u2260 Service"
     },
@@ -16,7 +16,7 @@
       "scope": "provider",
       "path": "database/provider/cloudflare6.txt",
       "lines": 7,
-      "fetched_at": "2026-08-28T15:13:39.616040+00:00",
+      "fetched_at": "2026-08-28T22:09:17.464567+00:00",
       "source_url": "https://www.cloudflare.com/ips-v6",
       "notes": "Provider \u2260 Service"
     },
@@ -24,8 +24,8 @@
       "id": "provider-aws",
       "scope": "provider",
       "path": "database/provider/aws.txt",
-      "lines": 10942,
-      "fetched_at": "2026-08-28T15:13:39.616040+00:00",
+      "lines": 10944,
+      "fetched_at": "2026-08-28T22:09:17.464567+00:00",
       "source_url": "https://ip-ranges.amazonaws.com/ip-ranges.json",
       "notes": "NEVER map to Amazon retail service."
     },
@@ -34,7 +34,7 @@
       "scope": "provider",
       "path": "database/provider/googlecloud.txt",
       "lines": 1098,
-      "fetched_at": "2026-08-28T15:13:39.616040+00:00",
+      "fetched_at": "2026-08-28T22:09:17.464567+00:00",
       "source_url": "https://www.gstatic.com/ipranges/cloud.json",
       "notes": "GCP \u2260 Google Search/YouTube product."
     },
@@ -43,7 +43,7 @@
       "scope": "provider",
       "path": "database/provider/goog.txt",
       "lines": 145,
-      "fetched_at": "2026-08-28T15:13:39.616040+00:00",
+      "fetched_at": "2026-08-28T22:09:17.464567+00:00",
       "source_url": "https://www.gstatic.com/ipranges/goog.json",
       "notes": "Provider \u2260 Service"
     },
@@ -52,7 +52,7 @@
       "scope": "provider",
       "path": "database/provider/oracle.txt",
       "lines": 1107,
-      "fetched_at": "2026-08-28T15:13:39.616040+00:00",
+      "fetched_at": "2026-08-28T22:09:17.464567+00:00",
       "source_url": "https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json",
       "notes": "Provider \u2260 Service"
     }

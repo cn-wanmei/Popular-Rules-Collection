@@ -22,6 +22,17 @@ children:
 - ctrip
 - tongcheng
 - dewu
+- pptv
+- acfun
+- cctv
+- huya
+- douyu
+- himalaya
+- ximalaya
+- sohu
+- letv
+- kugou
+- kuwo
 rule:
   has_domain: true
   has_ip: true

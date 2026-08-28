@@ -1,10 +1,10 @@
 {
   "date": "2026-08-28",
-  "registered": 182,
+  "registered": 195,
   "materialized": 171,
-  "with_domain": 171,
+  "with_domain": 184,
   "with_ip": 36,
-  "with_any_client": 171,
+  "with_any_client": 174,
   "dataset_globals": {
     "geosite_direct": 111540,
     "geosite_proxy": 27220,
@@ -85,6 +85,43 @@
         "loon": true
       },
       "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "acfun",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": true,
+        "count": 8
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
       "intentional_code": null
     },
     {
@@ -865,6 +902,43 @@
       "intentional_code": null
     },
     {
+      "service": "bahamut",
+      "primary_category": "streaming",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": true,
+        "count": 3
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": null
+    },
+    {
       "service": "baidu",
       "primary_category": "baidu",
       "service_type": "aggregate",
@@ -1306,6 +1380,43 @@
         "loon": true
       },
       "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "cctv",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": true,
+        "count": 44
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
       "intentional_code": null
     },
     {
@@ -2197,6 +2308,43 @@
       "intentional_code": null
     },
     {
+      "service": "douyu",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": true,
+        "count": 13
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": null
+    },
+    {
       "service": "dropbox",
       "primary_category": "other",
       "service_type": "service",
@@ -3085,6 +3233,43 @@
       "intentional_code": null
     },
     {
+      "service": "himalaya",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": true,
+        "count": 17
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": null
+    },
+    {
       "service": "hoyoverse",
       "primary_category": "gaming",
       "service_type": "service",
@@ -3233,6 +3418,43 @@
       "intentional_code": null
     },
     {
+      "service": "huya",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": true,
+        "count": 3
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": null
+    },
+    {
       "service": "icbc",
       "primary_category": "unionpay",
       "service_type": "service",
@@ -3350,7 +3572,7 @@
       "materialized": true,
       "domain": {
         "available": true,
-        "count": 90
+        "count": 100
       },
       "ip": {
         "available": true,
@@ -3529,17 +3751,128 @@
       "intentional_code": null
     },
     {
+      "service": "kugou",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": true,
+        "count": 19
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
       "service": "kugoukuwo",
       "primary_category": "china",
       "service_type": "service",
       "materialized": true,
       "domain": {
         "available": true,
-        "count": 128
+        "count": 131
       },
       "ip": {
         "available": true,
         "count": 90
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "kuwo",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": true,
+        "count": 1
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "letv",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": true,
+        "count": 13
+      },
+      "ip": {
+        "available": false,
+        "count": 0
       },
       "geosite": {
         "available": true
@@ -4565,6 +4898,43 @@
       "intentional_code": null
     },
     {
+      "service": "pptv",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": true,
+        "count": 19
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": null
+    },
+    {
       "service": "primevideo",
       "primary_category": "streaming",
       "service_type": "service",
@@ -5191,6 +5561,43 @@
         "loon": true
       },
       "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "sohu",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": true,
+        "count": 53
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
       "intentional_code": null
     },
     {
@@ -6267,6 +6674,43 @@
       "intentional_code": null
     },
     {
+      "service": "wetv",
+      "primary_category": "tencent",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": true,
+        "count": 3
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": null
+    },
+    {
       "service": "whatsapp",
       "primary_category": "social",
       "service_type": "service",
@@ -6563,13 +7007,50 @@
       "intentional_code": null
     },
     {
+      "service": "ximalaya",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": true,
+        "count": 4
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": null
+    },
+    {
       "service": "youku",
       "primary_category": "alibaba",
       "service_type": "service",
       "materialized": true,
       "domain": {
         "available": true,
-        "count": 69
+        "count": 94
       },
       "ip": {
         "available": true,

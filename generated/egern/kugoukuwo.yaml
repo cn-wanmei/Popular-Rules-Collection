@@ -1,6 +1,6 @@
 # name: Kugoukuwo
 # id: kugoukuwo
-# count: 199
+# count: 211
 no_resolve: true
 domain_suffix_set:
 - 2496.cn
@@ -22,6 +22,18 @@ domain_suffix_set:
 - shuoba.me
 - shuoba.org
 - tingkanbao.com
+- ads.service.kugou.com
+- adserviceretry.kglink.cn
+- adserviceretry.kugou.com
+- fanxingliveshow.com
+- kugouaudio.com
+- kugoukid.com
+- kugouliveshow.com
+- kugouringtone.com
+- kugousenior.com
+- kugoustore.com
+- kugouvoice.com
+- kugouyouth.com
 ip_cidr_set:
 - 1.82.220.0/24
 - 101.71.122.0/24

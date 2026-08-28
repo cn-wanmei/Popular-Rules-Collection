@@ -2,11 +2,11 @@
   "date": "2026-08-28",
   "version": 3,
   "service_coverage": {
-    "registered": 182,
-    "materialized": 171,
+    "registered": 195,
+    "materialized": 184,
     "intentional_unmaterialized": 11,
     "unexpected_missing": [],
-    "coverage": 0.9396,
+    "coverage": 0.9436,
     "daily_coverage": 1.0
   },
   "intentional_unmaterialized": {
@@ -86,9 +86,9 @@
     ]
   },
   "rule_coverage": {
-    "domains": 836565,
-    "ips": 13959,
-    "database_services": 171
+    "domains": 836817,
+    "ips": 13960,
+    "database_services": 184
   },
   "source_health": {
     "configured_sources": 4,
@@ -131,31 +131,31 @@
   },
   "builder_coverage": {
     "mihomo": {
-      "files": 343,
+      "files": 369,
       "status": "ok"
     },
     "sing-box": {
-      "files": 172,
+      "files": 185,
       "status": "ok"
     },
     "surge": {
-      "files": 342,
+      "files": 368,
       "status": "ok"
     },
     "shadowrocket": {
-      "files": 342,
+      "files": 368,
       "status": "ok"
     },
     "quantumult-x": {
-      "files": 172,
+      "files": 185,
       "status": "ok"
     },
     "egern": {
-      "files": 172,
+      "files": 185,
       "status": "ok"
     },
     "loon": {
-      "files": 172,
+      "files": 185,
       "status": "ok"
     }
   },
@@ -167,7 +167,7 @@
     "apple": 5,
     "baidu": 1,
     "bytedance": 4,
-    "china": 17,
+    "china": 28,
     "chinamobile": 1,
     "chinatelecom": 1,
     "chinaunicom": 1,
@@ -182,8 +182,8 @@
     "privacy": 6,
     "restricted": 1,
     "social": 16,
-    "streaming": 16,
-    "tencent": 4,
+    "streaming": 17,
+    "tencent": 5,
     "unionpay": 10
   },
   "validation": {
@@ -196,12 +196,12 @@
     "critical": 0,
     "high": 0,
     "medium": 0,
-    "low": 17678
+    "low": 17844
   },
   "sources": 4,
-  "services": 171,
-  "domains": 836565,
-  "cidr": 13959,
+  "services": 184,
+  "domains": 836817,
+  "cidr": 13960,
   "build": {
     "mihomo": "ok",
     "sing-box": "ok",
@@ -214,8 +214,8 @@
   "ip_track": {
     "registry_sources": 4,
     "enabled_sources": 3,
-    "sidecar_files": 36,
-    "cidr_lines": 13959,
+    "sidecar_files": 37,
+    "cidr_lines": 13960,
     "note": "Prefer health/scope correctness over raw CIDR count"
   }
 }
