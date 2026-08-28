@@ -125,7 +125,7 @@
   },
   "rule_coverage": {
     "domains": 714343,
-    "ips": 591,
+    "ips": 13955,
     "database_services": 170
   },
   "source_health": {
@@ -238,7 +238,7 @@
   "sources": 4,
   "services": 170,
   "domains": 714343,
-  "cidr": 591,
+  "cidr": 13955,
   "build": {
     "mihomo": "ok",
     "sing-box": "ok",
@@ -252,7 +252,7 @@
     "registry_sources": 4,
     "enabled_sources": 3,
     "sidecar_files": 36,
-    "cidr_lines": 591,
+    "cidr_lines": 13955,
     "note": "Prefer health/scope correctness over raw CIDR count"
   }
 }
