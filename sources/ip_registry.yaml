@@ -1,0 +1,67 @@
+# IP Source Registry — independent from domain sources/registry.yaml
+# scope: service | provider | country | carrier | infrastructure
+version: 1
+updated: "2026-08-28"
+sources:
+  - id: loyalsoldier-geoip-cn
+    name: Loyalsoldier geoip cn.txt
+    enabled: true
+    priority: 90
+    trust: high
+    scope: country
+    maps_to: china
+    notes: Country CN prefixes only. Never attribute to a product service.
+    fetch:
+      type: github_raw
+      owner: Loyalsoldier
+      repo: geoip
+      branch: release
+    path: text/cn.txt
+    local: ip_cn_loyalsoldier.txt
+
+  - id: china-operator-cn
+    name: gaoyifan china-operator-ip china
+    enabled: true
+    priority: 85
+    trust: high
+    scope: country
+    maps_to: china
+    notes: Alternate CN aggregate; merged + containment-deduped into china.
+    fetch:
+      type: github_raw
+      owner: gaoyifan
+      repo: china-operator-ip
+      branch: ip-lists
+    path: china.txt
+    local: ip_cn_operator.txt
+
+  - id: china-operator-unicom
+    name: gaoyifan china-operator-ip unicom
+    enabled: true
+    priority: 80
+    trust: medium
+    scope: carrier
+    maps_to: chinaunicom
+    fetch:
+      type: github_raw
+      owner: gaoyifan
+      repo: china-operator-ip
+      branch: ip-lists
+    path: unicom.txt
+    local: ip_unicom_operator.txt
+
+  - id: china-operator-cernet
+    name: gaoyifan china-operator-ip cernet
+    enabled: false
+    priority: 70
+    trust: medium
+    scope: carrier
+    maps_to: china
+    notes: Optional education network; disabled by default.
+    fetch:
+      type: github_raw
+      owner: gaoyifan
+      repo: china-operator-ip
+      branch: ip-lists
+    path: cernet.txt
+    local: ip_cernet_operator.txt
