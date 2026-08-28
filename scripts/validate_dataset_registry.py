@@ -12,7 +12,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 DS = ROOT / "sources" / "datasets"
-VALID_KINDS = frozenset({"network", "geosite", "geoip", "asn", "policy"})
+VALID_KINDS = frozenset({"network", "geosite", "geoip", "asn", "policy", "provider"})
 FORBIDDEN_SERVICE_COLLISION = frozenset(
     {"amazon", "google", "microsoft", "openai", "netflix", "discord"}
 )
@@ -48,9 +48,9 @@ def main() -> int:
             p = ds.get("path")
             if p and str(p).startswith("database/services"):
                 errors.append(f"{did}: dataset path must not use database/services/")
-            if p and str(p).startswith("database/ips/") and kind in ("geoip", "asn"):
+            if p and str(p).startswith("database/ips/") and kind in ("geoip", "asn", "provider"):
                 warnings.append(
-                    f"{did}: prefer database/geoip or database/asn over database/ips "
+                    f"{did}: prefer database/geoip|provider|asn over database/ips "
                     "(service sidecar is for verified service-owned ranges)"
                 )
             if ds.get("enabled") and p:
