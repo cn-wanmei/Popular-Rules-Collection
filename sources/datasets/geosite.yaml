@@ -10,14 +10,8 @@ datasets:
     maps_category: direct
     path: database/geosite/direct.txt
     policy_hint: direct
-    fetch:
-      type: github_raw
-      owner: Loyalsoldier
-      repo: v2ray-rules-dat
-      branch: release
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: v2ray-rules-dat, branch: release}
     remote_path: direct-list.txt
-    notes: Dataset category for DIRECT routing; not a Service id.
-
   - id: geosite-proxy
     name: Loyalsoldier proxy-list
     enabled: true
@@ -25,10 +19,42 @@ datasets:
     maps_category: proxy
     path: database/geosite/proxy.txt
     policy_hint: proxy
-    fetch:
-      type: github_raw
-      owner: Loyalsoldier
-      repo: v2ray-rules-dat
-      branch: release
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: v2ray-rules-dat, branch: release}
     remote_path: proxy-list.txt
-    notes: Dataset category for PROXY routing; not a Service id.
+  - id: geosite-reject
+    name: Loyalsoldier reject-list
+    enabled: true
+    scope: geosite
+    maps_category: reject
+    path: database/geosite/reject.txt
+    policy_hint: reject
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: v2ray-rules-dat, branch: release}
+    remote_path: reject-list.txt
+  - id: geosite-china
+    name: Loyalsoldier china-list
+    enabled: true
+    scope: geosite
+    maps_category: china
+    path: database/geosite/china.txt
+    policy_hint: direct
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: v2ray-rules-dat, branch: release}
+    remote_path: china-list.txt
+    notes: Parallel to Service china (ChinaMax); not the same SSOT.
+  - id: geosite-apple-cn
+    name: Apple CN-optimized domains
+    enabled: true
+    scope: geosite
+    maps_category: apple-cn
+    path: database/geosite/apple-cn.txt
+    policy_hint: direct
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: v2ray-rules-dat, branch: release}
+    remote_path: apple-cn.txt
+  - id: geosite-google-cn
+    name: Google CN-optimized domains
+    enabled: true
+    scope: geosite
+    maps_category: google-cn
+    path: database/geosite/google-cn.txt
+    policy_hint: direct
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: v2ray-rules-dat, branch: release}
+    remote_path: google-cn.txt

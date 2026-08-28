@@ -8,82 +8,119 @@ datasets:
     enabled: true
     scope: country
     path: database/geoip/cn.txt
-    fetch:
-      type: github_raw
-      owner: Loyalsoldier
-      repo: geoip
-      branch: release
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: geoip, branch: release}
     remote_path: text/cn.txt
-
-  - id: geoip-jp
-    name: Country JP CIDRs
-    enabled: true
-    scope: country
-    path: database/geoip/jp.txt
-    fetch:
-      type: github_raw
-      owner: Loyalsoldier
-      repo: geoip
-      branch: release
-    remote_path: text/jp.txt
-
   - id: geoip-hk
     name: Country HK CIDRs
     enabled: true
     scope: country
     path: database/geoip/hk.txt
-    fetch:
-      type: github_raw
-      owner: Loyalsoldier
-      repo: geoip
-      branch: release
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: geoip, branch: release}
     remote_path: text/hk.txt
-
-  - id: geoip-sg
-    name: Country SG CIDRs
-    enabled: true
-    scope: country
-    path: database/geoip/sg.txt
-    fetch:
-      type: github_raw
-      owner: Loyalsoldier
-      repo: geoip
-      branch: release
-    remote_path: text/sg.txt
-
-  - id: geoip-kr
-    name: Country KR CIDRs
-    enabled: true
-    scope: country
-    path: database/geoip/kr.txt
-    fetch:
-      type: github_raw
-      owner: Loyalsoldier
-      repo: geoip
-      branch: release
-    remote_path: text/kr.txt
-
   - id: geoip-tw
     name: Country TW CIDRs
     enabled: true
     scope: country
     path: database/geoip/tw.txt
-    fetch:
-      type: github_raw
-      owner: Loyalsoldier
-      repo: geoip
-      branch: release
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: geoip, branch: release}
     remote_path: text/tw.txt
-
+  - id: geoip-jp
+    name: Country JP CIDRs
+    enabled: true
+    scope: country
+    path: database/geoip/jp.txt
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: geoip, branch: release}
+    remote_path: text/jp.txt
+  - id: geoip-kr
+    name: Country KR CIDRs
+    enabled: true
+    scope: country
+    path: database/geoip/kr.txt
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: geoip, branch: release}
+    remote_path: text/kr.txt
+  - id: geoip-sg
+    name: Country SG CIDRs
+    enabled: true
+    scope: country
+    path: database/geoip/sg.txt
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: geoip, branch: release}
+    remote_path: text/sg.txt
+  - id: geoip-us
+    name: Country US CIDRs
+    enabled: true
+    scope: country
+    path: database/geoip/us.txt
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: geoip, branch: release}
+    remote_path: text/us.txt
+  - id: geoip-de
+    name: Country DE CIDRs
+    enabled: true
+    scope: country
+    path: database/geoip/de.txt
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: geoip, branch: release}
+    remote_path: text/de.txt
+  - id: geoip-gb
+    name: Country GB CIDRs
+    enabled: true
+    scope: country
+    path: database/geoip/gb.txt
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: geoip, branch: release}
+    remote_path: text/gb.txt
+  - id: geoip-au
+    name: Country AU CIDRs
+    enabled: true
+    scope: country
+    path: database/geoip/au.txt
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: geoip, branch: release}
+    remote_path: text/au.txt
+  - id: geoip-my
+    name: Country MY CIDRs
+    enabled: true
+    scope: country
+    path: database/geoip/my.txt
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: geoip, branch: release}
+    remote_path: text/my.txt
+  - id: geoip-in
+    name: Country IN CIDRs
+    enabled: true
+    scope: country
+    path: database/geoip/in.txt
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: geoip, branch: release}
+    remote_path: text/in.txt
+  - id: geoip-id
+    name: Country ID CIDRs
+    enabled: true
+    scope: country
+    path: database/geoip/id.txt
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: geoip, branch: release}
+    remote_path: text/id.txt
+  - id: geoip-vn
+    name: Country VN CIDRs
+    enabled: true
+    scope: country
+    path: database/geoip/vn.txt
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: geoip, branch: release}
+    remote_path: text/vn.txt
+  - id: geoip-th
+    name: Country TH CIDRs
+    enabled: true
+    scope: country
+    path: database/geoip/th.txt
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: geoip, branch: release}
+    remote_path: text/th.txt
+  - id: geoip-private
+    name: Private / reserved IP ranges (Loyalsoldier)
+    enabled: true
+    scope: country
+    path: database/geoip/private.txt
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: geoip, branch: release}
+    remote_path: text/private.txt
+    notes: Complements database/network/lan.txt; still Network scope.
   - id: geoip-mmdb
     name: Loyalsoldier Country.mmdb artifact
     enabled: true
     scope: artifact
     artifact: generated/mmdb/Country.mmdb
-    fetch:
-      type: github_raw
-      owner: Loyalsoldier
-      repo: geoip
-      branch: release
+    fetch: {type: github_raw, owner: Loyalsoldier, repo: geoip, branch: release}
     remote_path: Country.mmdb
     notes: MMDB stays binary artifact — never explode into database/ips/.

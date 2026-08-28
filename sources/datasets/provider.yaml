@@ -8,27 +8,40 @@ datasets:
     enabled: true
     scope: provider
     path: database/provider/cloudflare.txt
-    fetch:
-      type: http
-      url: https://www.cloudflare.com/ips-v4
-    notes: Provider infrastructure — not product service list.
-
+    fetch: {type: http, url: https://www.cloudflare.com/ips-v4}
   - id: provider-cloudflare-v6
     name: Cloudflare IPv6 CIDRs
     enabled: true
     scope: provider
     path: database/provider/cloudflare6.txt
-    fetch:
-      type: http
-      url: https://www.cloudflare.com/ips-v6
-
+    fetch: {type: http, url: https://www.cloudflare.com/ips-v6}
   - id: provider-aws
     name: AWS ip-ranges.json
     enabled: true
     scope: provider
     path: database/provider/aws.txt
-    fetch:
-      type: http
-      url: https://ip-ranges.amazonaws.com/ip-ranges.json
+    fetch: {type: http, url: https://ip-ranges.amazonaws.com/ip-ranges.json}
     format: aws_json
-    notes: NEVER map entire set to Amazon retail service.
+    notes: NEVER map to Amazon retail service.
+  - id: provider-googlecloud
+    name: Google Cloud public IP ranges
+    enabled: true
+    scope: provider
+    path: database/provider/googlecloud.txt
+    fetch: {type: http, url: https://www.gstatic.com/ipranges/cloud.json}
+    format: google_cloud_json
+    notes: GCP ≠ Google Search/YouTube product.
+  - id: provider-goog
+    name: Google services IP ranges
+    enabled: true
+    scope: provider
+    path: database/provider/goog.txt
+    fetch: {type: http, url: https://www.gstatic.com/ipranges/goog.json}
+    format: google_cloud_json
+  - id: provider-oracle
+    name: Oracle Cloud public IP ranges
+    enabled: true
+    scope: provider
+    path: database/provider/oracle.txt
+    fetch: {type: http, url: https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json}
+    format: oracle_json
