@@ -1,0 +1,517 @@
+{
+  "date": "2026-08-28",
+  "matrix": [
+    {
+      "dataset": "service_rules",
+      "data_available": true,
+      "export_available": true,
+      "clients": {
+        "mihomo": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "sing-box": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "surge": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "shadowrocket": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "quantumult-x": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "egern": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "loon": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        }
+      }
+    },
+    {
+      "dataset": "service_ip",
+      "data_available": true,
+      "export_available": true,
+      "clients": {
+        "mihomo": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "sing-box": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "surge": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "shadowrocket": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "quantumult-x": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "egern": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "loon": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        }
+      }
+    },
+    {
+      "dataset": "lan",
+      "data_available": true,
+      "export_available": true,
+      "clients": {
+        "mihomo": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "sing-box": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "surge": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "shadowrocket": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "quantumult-x": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "egern": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "loon": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        }
+      }
+    },
+    {
+      "dataset": "geosite",
+      "data_available": true,
+      "export_available": true,
+      "clients": {
+        "mihomo": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "sing-box": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "surge": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "shadowrocket": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "quantumult-x": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "egern": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "loon": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        }
+      }
+    },
+    {
+      "dataset": "geoip_country",
+      "data_available": true,
+      "export_available": true,
+      "clients": {
+        "mihomo": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "sing-box": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "surge": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "shadowrocket": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "quantumult-x": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "egern": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "loon": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        }
+      }
+    },
+    {
+      "dataset": "geoip_mmdb",
+      "data_available": true,
+      "export_available": true,
+      "clients": {
+        "mihomo": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "sing-box": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "surge": {
+          "capability": false,
+          "export": false,
+          "gap": "no_capability"
+        },
+        "shadowrocket": {
+          "capability": false,
+          "export": false,
+          "gap": "no_capability"
+        },
+        "quantumult-x": {
+          "capability": false,
+          "export": false,
+          "gap": "no_capability"
+        },
+        "egern": {
+          "capability": false,
+          "export": false,
+          "gap": "no_capability"
+        },
+        "loon": {
+          "capability": false,
+          "export": false,
+          "gap": "no_capability"
+        }
+      }
+    },
+    {
+      "dataset": "provider",
+      "data_available": true,
+      "export_available": true,
+      "clients": {
+        "mihomo": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "sing-box": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "surge": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "shadowrocket": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "quantumult-x": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "egern": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        },
+        "loon": {
+          "capability": true,
+          "export": true,
+          "gap": "none"
+        }
+      }
+    },
+    {
+      "dataset": "asn",
+      "data_available": true,
+      "export_available": true,
+      "clients": {
+        "mihomo": {
+          "capability": false,
+          "export": false,
+          "gap": "no_capability"
+        },
+        "sing-box": {
+          "capability": false,
+          "export": false,
+          "gap": "no_capability"
+        },
+        "surge": {
+          "capability": false,
+          "export": false,
+          "gap": "no_capability"
+        },
+        "shadowrocket": {
+          "capability": false,
+          "export": false,
+          "gap": "no_capability"
+        },
+        "quantumult-x": {
+          "capability": false,
+          "export": false,
+          "gap": "no_capability"
+        },
+        "egern": {
+          "capability": false,
+          "export": false,
+          "gap": "no_capability"
+        },
+        "loon": {
+          "capability": false,
+          "export": false,
+          "gap": "no_capability"
+        }
+      }
+    },
+    {
+      "dataset": "policy",
+      "data_available": true,
+      "export_available": true,
+      "clients": {
+        "mihomo": {
+          "capability": false,
+          "export": false,
+          "gap": "no_capability"
+        },
+        "sing-box": {
+          "capability": false,
+          "export": false,
+          "gap": "no_capability"
+        },
+        "surge": {
+          "capability": false,
+          "export": false,
+          "gap": "no_capability"
+        },
+        "shadowrocket": {
+          "capability": false,
+          "export": false,
+          "gap": "no_capability"
+        },
+        "quantumult-x": {
+          "capability": false,
+          "export": false,
+          "gap": "no_capability"
+        },
+        "egern": {
+          "capability": false,
+          "export": false,
+          "gap": "no_capability"
+        },
+        "loon": {
+          "capability": false,
+          "export": false,
+          "gap": "no_capability"
+        }
+      }
+    }
+  ],
+  "builders": {
+    "mihomo": {
+      "script": "build_mihomo.py",
+      "present": true
+    },
+    "sing-box": {
+      "script": "build_singbox.py",
+      "present": true
+    },
+    "surge": {
+      "script": "build_surge.py",
+      "present": true
+    },
+    "shadowrocket": {
+      "script": "build_shadowrocket.py",
+      "present": true
+    },
+    "quantumult-x": {
+      "script": "build_quantumultx.py",
+      "present": true
+    },
+    "egern": {
+      "script": "build_egern.py",
+      "present": true
+    },
+    "loon": {
+      "script": "build_loon.py",
+      "present": true
+    }
+  },
+  "gap_count": 19,
+  "gaps_sample": [
+    {
+      "dataset": "geoip_mmdb",
+      "client": "surge",
+      "gap": "no_capability"
+    },
+    {
+      "dataset": "geoip_mmdb",
+      "client": "shadowrocket",
+      "gap": "no_capability"
+    },
+    {
+      "dataset": "geoip_mmdb",
+      "client": "quantumult-x",
+      "gap": "no_capability"
+    },
+    {
+      "dataset": "geoip_mmdb",
+      "client": "egern",
+      "gap": "no_capability"
+    },
+    {
+      "dataset": "geoip_mmdb",
+      "client": "loon",
+      "gap": "no_capability"
+    },
+    {
+      "dataset": "asn",
+      "client": "mihomo",
+      "gap": "no_capability"
+    },
+    {
+      "dataset": "asn",
+      "client": "sing-box",
+      "gap": "no_capability"
+    },
+    {
+      "dataset": "asn",
+      "client": "surge",
+      "gap": "no_capability"
+    },
+    {
+      "dataset": "asn",
+      "client": "shadowrocket",
+      "gap": "no_capability"
+    },
+    {
+      "dataset": "asn",
+      "client": "quantumult-x",
+      "gap": "no_capability"
+    },
+    {
+      "dataset": "asn",
+      "client": "egern",
+      "gap": "no_capability"
+    },
+    {
+      "dataset": "asn",
+      "client": "loon",
+      "gap": "no_capability"
+    },
+    {
+      "dataset": "policy",
+      "client": "mihomo",
+      "gap": "no_capability"
+    },
+    {
+      "dataset": "policy",
+      "client": "sing-box",
+      "gap": "no_capability"
+    },
+    {
+      "dataset": "policy",
+      "client": "surge",
+      "gap": "no_capability"
+    },
+    {
+      "dataset": "policy",
+      "client": "shadowrocket",
+      "gap": "no_capability"
+    },
+    {
+      "dataset": "policy",
+      "client": "quantumult-x",
+      "gap": "no_capability"
+    },
+    {
+      "dataset": "policy",
+      "client": "egern",
+      "gap": "no_capability"
+    },
+    {
+      "dataset": "policy",
+      "client": "loon",
+      "gap": "no_capability"
+    }
+  ],
+  "summary": {
+    "clients": 7,
+    "datasets": 9,
+    "gaps": 19,
+    "builders_ok": 7
+  }
+}

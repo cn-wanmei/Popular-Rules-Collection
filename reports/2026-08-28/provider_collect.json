@@ -1,0 +1,34 @@
+{
+  "date": "2026-08-28",
+  "ok": 3,
+  "failed": 0,
+  "results": {
+    "provider-cloudflare": {
+      "id": "provider-cloudflare",
+      "scope": "provider",
+      "path": "database/provider/cloudflare.txt",
+      "lines": 15,
+      "fetched_at": "2026-08-28T07:27:07.523786+00:00",
+      "source_url": "https://www.cloudflare.com/ips-v4",
+      "notes": "Provider infrastructure \u2014 not product service list."
+    },
+    "provider-cloudflare-v6": {
+      "id": "provider-cloudflare-v6",
+      "scope": "provider",
+      "path": "database/provider/cloudflare6.txt",
+      "lines": 7,
+      "fetched_at": "2026-08-28T07:27:07.523786+00:00",
+      "source_url": "https://www.cloudflare.com/ips-v6",
+      "notes": "Provider \u2260 Service"
+    },
+    "provider-aws": {
+      "id": "provider-aws",
+      "scope": "provider",
+      "path": "database/provider/aws.txt",
+      "lines": 10941,
+      "fetched_at": "2026-08-28T07:27:07.523786+00:00",
+      "source_url": "https://ip-ranges.amazonaws.com/ip-ranges.json",
+      "notes": "NEVER map entire set to Amazon retail service."
+    }
+  }
+}

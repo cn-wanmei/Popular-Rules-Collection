@@ -1,0 +1,16 @@
+{
+  "id": "geoip-tw",
+  "kind": "geoip",
+  "scope": "country",
+  "path": "database/geoip/tw.txt",
+  "lines": 4795,
+  "sha256_source": "f56fd24160a9706733ae5fe5c65bb85656f0e0df969b78384c41d9ef3ef2e99a",
+  "fetched_at": "2026-08-28T07:25:03.054964+00:00",
+  "source": {
+    "owner": "Loyalsoldier",
+    "repo": "geoip",
+    "branch": "release",
+    "path": "text/tw.txt"
+  },
+  "notes": ""
+}

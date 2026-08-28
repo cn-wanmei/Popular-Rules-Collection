@@ -1,0 +1,9 @@
+{
+  "id": "provider-aws",
+  "scope": "provider",
+  "path": "database/provider/aws.txt",
+  "lines": 10941,
+  "fetched_at": "2026-08-28T07:27:07.523786+00:00",
+  "source_url": "https://ip-ranges.amazonaws.com/ip-ranges.json",
+  "notes": "NEVER map entire set to Amazon retail service."
+}

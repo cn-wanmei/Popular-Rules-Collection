@@ -1,0 +1,6936 @@
+{
+  "date": "2026-08-28",
+  "registered": 187,
+  "materialized": 170,
+  "with_domain": 169,
+  "with_ip": 36,
+  "with_any_client": 171,
+  "dataset_globals": {
+    "geosite_direct": 111540,
+    "geosite_proxy": 27220,
+    "geoip_cn": 9651,
+    "lan": 21,
+    "asn_entries": 15
+  },
+  "services": [
+    {
+      "service": "12306",
+      "primary_category": "12306",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 30
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "abc",
+      "primary_category": "unionpay",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 12
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "adblock",
+      "primary_category": "privacy",
+      "service_type": "aggregate",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 402068
+      },
+      "ip": {
+        "available": true,
+        "count": 47
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "adblock-light",
+      "primary_category": "privacy",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 84212
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": "DEFERRED_PROFILE"
+    },
+    {
+      "service": "adblock-pro",
+      "primary_category": "privacy",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 452190
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": "DEFERRED_PROFILE"
+    },
+    {
+      "service": "adobe",
+      "primary_category": "other",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 273
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "ai",
+      "primary_category": "ai",
+      "service_type": "aggregate",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 98
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "airbnb",
+      "primary_category": "other",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 166
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "aisuite",
+      "primary_category": "ai",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 191
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "akamai",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 12
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "alibaba",
+      "primary_category": "alibaba",
+      "service_type": "aggregate",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 980
+      },
+      "ip": {
+        "available": true,
+        "count": 54
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "alibabacloud",
+      "primary_category": "alibaba",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 200
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "alipay",
+      "primary_category": "alibaba",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 42
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "amap",
+      "primary_category": "alibaba",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 32
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "amazon",
+      "primary_category": "amazon",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 388
+      },
+      "ip": {
+        "available": true,
+        "count": 15
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "amazonaws",
+      "primary_category": "amazon",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": false,
+        "count": 0
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": "COVERED_BY_AGGREGATE"
+    },
+    {
+      "service": "anthropic",
+      "primary_category": "ai",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 16
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "apple",
+      "primary_category": "apple",
+      "service_type": "aggregate",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 48
+      },
+      "ip": {
+        "available": true,
+        "count": 13
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "applemusic",
+      "primary_category": "apple",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 18
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "appletv",
+      "primary_category": "apple",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 14
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "applications",
+      "primary_category": "other",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": false,
+        "count": 0
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": "NO_UPSTREAM"
+    },
+    {
+      "service": "atlassian",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 10
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "aws",
+      "primary_category": "amazon",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 154
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "azure",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 302
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "baidu",
+      "primary_category": "baidu",
+      "service_type": "aggregate",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 648
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "battlenet",
+      "primary_category": "gaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 101
+      },
+      "ip": {
+        "available": true,
+        "count": 23
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "bbc",
+      "primary_category": "streaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 55
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "bilibili",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 251
+      },
+      "ip": {
+        "available": true,
+        "count": 8
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "binance",
+      "primary_category": "finance",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 24
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "blizzard",
+      "primary_category": "gaming",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": false,
+        "count": 0
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": "MAPS_TO"
+    },
+    {
+      "service": "bluesky",
+      "primary_category": "social",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 6
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "boc",
+      "primary_category": "unionpay",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 44
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "bocom",
+      "primary_category": "unionpay",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 12
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "booking",
+      "primary_category": "other",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 6
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "bytedance",
+      "primary_category": "bytedance",
+      "service_type": "aggregate",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 2155
+      },
+      "ip": {
+        "available": true,
+        "count": 1
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "canva",
+      "primary_category": "other",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 12
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "ccb",
+      "primary_category": "unionpay",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 36
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "ceb",
+      "primary_category": "unionpay",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 30
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "china",
+      "primary_category": "china",
+      "service_type": "aggregate",
+      "materialized": true,
+      "domain": {
+        "available": false,
+        "count": 0
+      },
+      "ip": {
+        "available": true,
+        "count": 9661
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "chinamobile",
+      "primary_category": "chinamobile",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 71
+      },
+      "ip": {
+        "available": true,
+        "count": 1
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "chinatelecom",
+      "primary_category": "chinatelecom",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 166
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "chinaunicom",
+      "primary_category": "chinaunicom",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 67
+      },
+      "ip": {
+        "available": true,
+        "count": 3725
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "claude",
+      "primary_category": "ai",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 6
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "cloudflare",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 164
+      },
+      "ip": {
+        "available": true,
+        "count": 22
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "cmb",
+      "primary_category": "unionpay",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 76
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "copilot",
+      "primary_category": "ai",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 95
+      },
+      "ip": {
+        "available": true,
+        "count": 2
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "ctrip",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 58
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "cursor",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 8
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "dailymotion",
+      "primary_category": "streaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 10
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "deepseek",
+      "primary_category": "ai",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 2
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "deezer",
+      "primary_category": "streaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 4
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "developer",
+      "primary_category": "developer",
+      "service_type": "aggregate",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 140
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "dewu",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 90
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "didi",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 50
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "digitalocean",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 8
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "dingtalk",
+      "primary_category": "alibaba",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": false,
+        "count": 0
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": "COVERED_BY_AGGREGATE"
+    },
+    {
+      "service": "discord",
+      "primary_category": "social",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 60
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "discoveryplus",
+      "primary_category": "streaming",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": false,
+        "count": 0
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": "NO_UPSTREAM"
+    },
+    {
+      "service": "disney",
+      "primary_category": "streaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 350
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "docker",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 14
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "doubao",
+      "primary_category": "bytedance",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 64
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "douyin",
+      "primary_category": "bytedance",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 26
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "dropbox",
+      "primary_category": "other",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 34
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "ea",
+      "primary_category": "gaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 330
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "ebay",
+      "primary_category": "other",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 740
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "eleme",
+      "primary_category": "alibaba",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 26
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "elevenlabs",
+      "primary_category": "ai",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 4
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "emby",
+      "primary_category": "streaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 99
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "epic",
+      "primary_category": "gaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 30
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "facebook",
+      "primary_category": "social",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 1124
+      },
+      "ip": {
+        "available": true,
+        "count": 23
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "figma",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 2
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "firebase",
+      "primary_category": "google",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 40
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "gaode",
+      "primary_category": "alibaba",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 18
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "garena",
+      "primary_category": "gaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 30
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "gcp",
+      "primary_category": "google",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": false,
+        "count": 0
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": "NO_UPSTREAM"
+    },
+    {
+      "service": "gemini",
+      "primary_category": "ai",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 23
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "gfw",
+      "primary_category": "network",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 4387
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "github",
+      "primary_category": "microsoft",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 128
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "gitlab",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 12
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "google",
+      "primary_category": "google",
+      "service_type": "aggregate",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 1380
+      },
+      "ip": {
+        "available": true,
+        "count": 5
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "googledrive",
+      "primary_category": "google",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": false,
+        "count": 0
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": "COVERED_BY_AGGREGATE"
+    },
+    {
+      "service": "googlefcm",
+      "primary_category": "google",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 56
+      },
+      "ip": {
+        "available": true,
+        "count": 26
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "groq",
+      "primary_category": "ai",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 2
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "hashicorp",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 16
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "hbo",
+      "primary_category": "streaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 94
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "heroku",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 24
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "hoyoverse",
+      "primary_category": "gaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 30
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "huawei",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 320
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "huggingface",
+      "primary_category": "ai",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 6
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "hulu",
+      "primary_category": "streaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 116
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "icbc",
+      "primary_category": "unionpay",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 116
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "icloud",
+      "primary_category": "apple",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 121
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "instagram",
+      "primary_category": "social",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 151
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "iqiyi",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 90
+      },
+      "ip": {
+        "available": true,
+        "count": 21
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "jetbrains",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 28
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "jingdong",
+      "primary_category": "jingdong",
+      "service_type": "aggregate",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 530
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "kakaotalk",
+      "primary_category": "social",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 24
+      },
+      "ip": {
+        "available": true,
+        "count": 6
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "kuaishou",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 1356
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "kugoukuwo",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 128
+      },
+      "ip": {
+        "available": true,
+        "count": 90
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "lan",
+      "primary_category": "network",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": false,
+        "count": 0
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": "NO_UPSTREAM"
+    },
+    {
+      "service": "line",
+      "primary_category": "social",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 58
+      },
+      "ip": {
+        "available": true,
+        "count": 16
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "linkedin",
+      "primary_category": "social",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 24
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "meituan",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 14
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "messenger",
+      "primary_category": "social",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 8
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "microsoft",
+      "primary_category": "microsoft",
+      "service_type": "aggregate",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 1374
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "minecraft",
+      "primary_category": "gaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 12
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "mistral",
+      "primary_category": "ai",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": false,
+        "count": 0
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": "NO_UPSTREAM"
+    },
+    {
+      "service": "naver",
+      "primary_category": "other",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 85
+      },
+      "ip": {
+        "available": true,
+        "count": 33
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "netease",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 144
+      },
+      "ip": {
+        "available": true,
+        "count": 18
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "netflix",
+      "primary_category": "streaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 73
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "netlify",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 20
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "nintendo",
+      "primary_category": "gaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 251
+      },
+      "ip": {
+        "available": true,
+        "count": 1
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "notion",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 16
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "npm",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": false,
+        "count": 0
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": "NO_UPSTREAM"
+    },
+    {
+      "service": "ntp",
+      "primary_category": "network",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": false,
+        "count": 0
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": "NO_UPSTREAM"
+    },
+    {
+      "service": "okx",
+      "primary_category": "finance",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 6
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "onedrive",
+      "primary_category": "microsoft",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 29
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "openai",
+      "primary_category": "ai",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 86
+      },
+      "ip": {
+        "available": true,
+        "count": 2
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "oppo",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 112
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "oracle",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 50
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "origin",
+      "primary_category": "gaming",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": false,
+        "count": 0
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": "MAPS_TO"
+    },
+    {
+      "service": "paramountplus",
+      "primary_category": "streaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 18
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "paypal",
+      "primary_category": "finance",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 493
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "peacock",
+      "primary_category": "streaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 2
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "perplexity",
+      "primary_category": "ai",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 12
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "pinduoduo",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 6
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "pingan",
+      "primary_category": "unionpay",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 54
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "pinterest",
+      "primary_category": "social",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 46
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "playstation",
+      "primary_category": "gaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 8
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "primevideo",
+      "primary_category": "streaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 49
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "private",
+      "primary_category": "network",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 489
+      },
+      "ip": {
+        "available": true,
+        "count": 3
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "proxy",
+      "primary_category": "network",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 28217
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "psbc",
+      "primary_category": "unionpay",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 6
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "qq",
+      "primary_category": "tencent",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": false,
+        "count": 0
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": "COVERED_BY_AGGREGATE"
+    },
+    {
+      "service": "reddit",
+      "primary_category": "social",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 16
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "riotgames",
+      "primary_category": "gaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 110
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "roblox",
+      "primary_category": "gaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 100
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "rockstar",
+      "primary_category": "gaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 10
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "scholar",
+      "primary_category": "other",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 462
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "shopify",
+      "primary_category": "other",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 16
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "signal",
+      "primary_category": "social",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 16
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "sina",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 215
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "siri",
+      "primary_category": "apple",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": false,
+        "count": 0
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": "COVERED_BY_AGGREGATE"
+    },
+    {
+      "service": "slack",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 22
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "snapchat",
+      "primary_category": "social",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 18
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "soundcloud",
+      "primary_category": "streaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 10
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "speedtest",
+      "primary_category": "network",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 9
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "spotify",
+      "primary_category": "streaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 69
+      },
+      "ip": {
+        "available": true,
+        "count": 2
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "steam",
+      "primary_category": "gaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 153
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "steamcn",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": false,
+        "count": 0
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": "COVERED_BY_AGGREGATE"
+    },
+    {
+      "service": "stripe",
+      "primary_category": "finance",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 1
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": "KEYWORD_ONLY"
+    },
+    {
+      "service": "stun",
+      "primary_category": "network",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 716
+      },
+      "ip": {
+        "available": true,
+        "count": 16
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "supabase",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": false,
+        "count": 0
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": "NO_UPSTREAM"
+    },
+    {
+      "service": "taobao",
+      "primary_category": "alibaba",
+      "service_type": "service",
+      "materialized": false,
+      "domain": {
+        "available": false,
+        "count": 0
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": false,
+        "sing-box": false,
+        "surge": false,
+        "shadowrocket": false,
+        "quantumult-x": false,
+        "egern": false,
+        "loon": false
+      },
+      "client_any": false,
+      "intentional_code": "COVERED_BY_AGGREGATE"
+    },
+    {
+      "service": "teams",
+      "primary_category": "microsoft",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 8
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "telegram",
+      "primary_category": "social",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 78
+      },
+      "ip": {
+        "available": true,
+        "count": 22
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "tencent",
+      "primary_category": "tencent",
+      "service_type": "aggregate",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 1377
+      },
+      "ip": {
+        "available": true,
+        "count": 20
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "tencentvideo",
+      "primary_category": "tencent",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 70
+      },
+      "ip": {
+        "available": true,
+        "count": 32
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "threads",
+      "primary_category": "social",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 2
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "tidal",
+      "primary_category": "streaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 6
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "tiktok",
+      "primary_category": "social",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 108
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "tongcheng",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 16
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "trello",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 4
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "twitch",
+      "primary_category": "streaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 29
+      },
+      "ip": {
+        "available": true,
+        "count": 12
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "twitter",
+      "primary_category": "social",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 61
+      },
+      "ip": {
+        "available": true,
+        "count": 6
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "uber",
+      "primary_category": "other",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 6
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "ubisoft",
+      "primary_category": "gaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 2
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "unionpay",
+      "primary_category": "unionpay",
+      "service_type": "aggregate",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 32
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "vercel",
+      "primary_category": "developer",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 54
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "vimeo",
+      "primary_category": "streaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 32
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "vivo",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 28
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "walmart",
+      "primary_category": "other",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 20
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "wechat",
+      "primary_category": "tencent",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 60
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "weibo",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 7
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "whatsapp",
+      "primary_category": "social",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 44
+      },
+      "ip": {
+        "available": true,
+        "count": 11
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "wikipedia",
+      "primary_category": "other",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 24
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "wise",
+      "primary_category": "finance",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 4
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "xai",
+      "primary_category": "ai",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 8
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "xbox",
+      "primary_category": "microsoft",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 84
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "xianyu",
+      "primary_category": "alibaba",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 32
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "xiaohongshu",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 8
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "xiaomi",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 305
+      },
+      "ip": {
+        "available": true,
+        "count": 9
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "youku",
+      "primary_category": "alibaba",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 69
+      },
+      "ip": {
+        "available": true,
+        "count": 1
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "youtube",
+      "primary_category": "google",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 364
+      },
+      "ip": {
+        "available": true,
+        "count": 3
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "youtubemusic",
+      "primary_category": "streaming",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 2
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "zhihu",
+      "primary_category": "china",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 9
+      },
+      "ip": {
+        "available": true,
+        "count": 5
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    },
+    {
+      "service": "zoom",
+      "primary_category": "social",
+      "service_type": "service",
+      "materialized": true,
+      "domain": {
+        "available": true,
+        "count": 6
+      },
+      "ip": {
+        "available": false,
+        "count": 0
+      },
+      "geosite": {
+        "available": true
+      },
+      "geoip": {
+        "available": true
+      },
+      "asn": {
+        "available": true
+      },
+      "lan": {
+        "available": true
+      },
+      "clients": {
+        "mihomo": true,
+        "sing-box": true,
+        "surge": true,
+        "shadowrocket": true,
+        "quantumult-x": true,
+        "egern": true,
+        "loon": true
+      },
+      "client_any": true,
+      "intentional_code": null
+    }
+  ]
+}
