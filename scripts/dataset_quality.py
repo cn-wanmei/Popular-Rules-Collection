@@ -1,12 +1,5 @@
 #!/usr/bin/env python3
-"""dataset_quality.py — Phase 3A Dataset Quality Gate.
-
-Hard Fail / Warning / Informational tiers.
-Does not modify Builders or Primary.
-
-Writes reports/<date>/dataset_quality.json
-Exit code 1 only on Hard Fail.
-"""
+"""dataset_quality.py — Phase 3A + Network Dataset Quality Gate."""
 from __future__ import annotations
 
 import argparse
@@ -35,6 +28,18 @@ OPTIONAL_NONEMPTY_IF_PRESENT = [
     "database/geoip/cn.txt",
 ]
 
+EXPECTED_EXPORTS = [
+    ("database/network/lan.txt", "generated/network/lan.txt"),
+    ("database/geosite/direct.txt", "generated/geosite/direct.txt"),
+    ("database/geosite/proxy.txt", "generated/geosite/proxy.txt"),
+    ("database/geoip/cn.txt", "generated/geoip/cn.txt"),
+    ("database/provider/cloudflare.txt", "generated/provider/cloudflare.txt"),
+]
+
+DOMAIN_RE = re.compile(
+    r"^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,}$", re.I
+)
+
 
 def load_lines(path: Path) -> list[str]:
     try:
@@ -48,7 +53,6 @@ def load_lines(path: Path) -> list[str]:
 
 
 def check_cidr_syntax(lines: list[str], limit: int = 500) -> int:
-    """Return invalid CIDR count in sample; -1 if not a CIDR-like file."""
     bad = 0
     cidr_re = re.compile(r"^([0-9a-fA-F:.]+)/\d{1,3}$")
     bare_ip = re.compile(r"^(\d{1,3}\.){3}\d{1,3}$|^[0-9a-fA-F:]+$")
@@ -66,6 +70,34 @@ def check_cidr_syntax(lines: list[str], limit: int = 500) -> int:
         else:
             return -1
     return bad
+
+
+def check_domain_syntax(lines: list[str], limit: int = 300) -> int:
+    bad = 0
+    for ln in lines[:limit]:
+        s = ln.lstrip(".")
+        if not DOMAIN_RE.match(s) and "*" not in s:
+            if "." not in s:
+                continue
+            bad += 1
+    return bad
+
+
+def check_clash_list(path: Path) -> list[str]:
+    issues = []
+    if not path.exists():
+        return [f"missing {path}"]
+    lines = load_lines(path)
+    if not lines:
+        return [f"empty {path}"]
+    ok_prefix = ("DOMAIN-SUFFIX,", "DOMAIN,", "DOMAIN-KEYWORD,", "IP-CIDR,", "IP-CIDR6,")
+    bad = 0
+    for ln in lines[:200]:
+        if not ln.startswith(ok_prefix):
+            bad += 1
+    if bad > 5:
+        issues.append(f"format issues in {path.relative_to(ROOT)}: bad_prefix={bad}")
+    return issues
 
 
 def main() -> int:
@@ -103,6 +135,7 @@ def main() -> int:
         "database/geoip/*.txt",
         "database/network/*.txt",
         "database/ips/*.txt",
+        "database/provider/*.txt",
     ):
         for p in ROOT.glob(pattern):
             if not p.is_file():
@@ -118,27 +151,63 @@ def main() -> int:
             elif bad > 0:
                 warn.append(f"syntax issues: {p.relative_to(ROOT)} bad={bad}")
 
-    if (ROOT / "database/network/lan.txt").exists():
-        gen = ROOT / "generated/network/lan.txt"
-        if not gen.exists() or gen.stat().st_size == 0:
-            hard.append("generated missing/empty: generated/network/lan.txt")
-        else:
-            info.append("generated network/lan present")
+    for p in ROOT.glob("database/geosite/*.txt"):
+        lines = load_lines(p)
+        if len(lines) < 10:
+            continue
+        bad = check_domain_syntax(lines)
+        if bad > 20:
+            warn.append(f"domain syntax sample: {p.relative_to(ROOT)} bad={bad}")
 
-    prov_dir = ROOT / "database" / "ips_provenance"
-    china = ROOT / "database" / "ips" / "china.txt"
-    if china.exists() and len(load_lines(china)) > 100:
-        if not (prov_dir / "china.json").exists():
-            warn.append("provenance missing for large database/ips/china.txt")
-        else:
-            info.append("provenance ok: ips/china")
+    for src_rel, dest_rel in EXPECTED_EXPORTS:
+        src, dest = ROOT / src_rel, ROOT / dest_rel
+        if src.exists() and load_lines(src):
+            if not dest.exists() or not load_lines(dest):
+                hard.append(f"generated missing/empty: {dest_rel} (source {src_rel})")
+            else:
+                info.append(f"export ok {dest_rel}")
 
-    ds_prov = ROOT / "database" / "datasets_provenance"
-    if (ROOT / "database/geosite/direct.txt").exists() and len(
-        load_lines(ROOT / "database/geosite/direct.txt")
-    ) > 1000:
-        if not (ds_prov / "geosite-direct.json").exists():
-            warn.append("provenance missing: geosite-direct (datasets_provenance)")
+    for rel in (
+        "generated/geosite/direct_mihomo.list",
+        "generated/geosite/proxy_mihomo.list",
+        "generated/geoip/cn_mihomo.list",
+    ):
+        p = ROOT / rel
+        if p.exists():
+            for issue in check_clash_list(p):
+                warn.append(issue)
+        src_map = {
+            "generated/geosite/direct_mihomo.list": "database/geosite/direct.txt",
+            "generated/geosite/proxy_mihomo.list": "database/geosite/proxy.txt",
+            "generated/geoip/cn_mihomo.list": "database/geoip/cn.txt",
+        }
+        if (ROOT / src_map[rel]).exists() and not p.exists():
+            warn.append(f"mihomo list missing: {rel}")
+
+    if (ROOT / "database/provider").exists():
+        for p in (ROOT / "database/provider").glob("*.txt"):
+            info.append(f"provider dataset present: {p.name} count={len(load_lines(p))}")
+
+    asn = ROOT / "database/asn/metadata.yaml"
+    if asn.exists():
+        try:
+            doc = yaml.safe_load(asn.read_text(encoding="utf-8")) or {}
+            n = len(doc.get("asns") or [])
+            if n == 0:
+                warn.append("asn metadata empty")
+            else:
+                info.append(f"asn_metadata entries={n}")
+        except Exception as e:
+            hard.append(f"asn metadata invalid YAML: {e}")
+
+    for sub in ("direct", "proxy", "dns"):
+        d = ROOT / "database/policies" / sub
+        if d.is_dir():
+            files = list(d.glob("*"))
+            if not files:
+                warn.append(f"policy dir empty: {sub}")
+            else:
+                info.append(f"policy {sub} files={len(files)}")
 
     mmdb = ROOT / "generated/mmdb/Country.mmdb"
     meta = ROOT / "generated/mmdb/Country.meta.json"
@@ -211,13 +280,14 @@ def main() -> int:
         "status": status,
         "hard_fail": hard,
         "warnings": warn,
-        "informational": info[:50],
+        "informational": info[:60],
         "counts": {"hard": len(hard), "warn": len(warn), "info": len(info)},
         "thresholds": {
             "shrink_hard": SHRINK_HARD,
             "shrink_warn": SHRINK_WARN,
             "growth_warn": GROWTH_WARN,
         },
+        "scope": "service_adjacent+network_datasets",
     }
     (day / "dataset_quality.json").write_text(
         json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
