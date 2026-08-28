@@ -48,3 +48,255 @@ sources:
   - {path: rule/Clash/Hulu/Hulu.yaml, name: hulu, local: Clash_Hulu.yaml}
   - {path: rule/Clash/AmazonPrimeVideo/AmazonPrimeVideo.yaml, name: primevideo, local: Clash_AmazonPrimeVideo.yaml}
   - {path: rule/Clash/AppleTV/AppleTV.yaml, name: appletv, local: Clash_AppleTV.yaml}
+  - {path: rule/Clash/Reddit/Reddit.yaml, name: reddit, local: Clash_Reddit.yaml}
+  - {path: rule/Clash/Facebook/Facebook.yaml, name: facebook, local: Clash_Facebook.yaml}
+  - {path: rule/Clash/Instagram/Instagram.yaml, name: instagram, local: Clash_Instagram.yaml}
+  - {path: rule/Clash/Whatsapp/Whatsapp.yaml, name: whatsapp, local: Clash_Whatsapp.yaml}
+  - {path: rule/Clash/OneDrive/OneDrive.yaml, name: onedrive, local: Clash_OneDrive.yaml}
+  - {path: rule/Clash/LinkedIn/LinkedIn.yaml, name: linkedin, local: Clash_LinkedIn.yaml}
+  - {path: rule/Clash/PayPal/PayPal.yaml, name: paypal, local: Clash_PayPal.yaml}
+  - {path: rule/Clash/Epic/Epic.yaml, name: epic, local: Clash_Epic.yaml}
+  - {path: rule/Clash/Nintendo/Nintendo.yaml, name: nintendo, local: Clash_Nintendo.yaml}
+  - {path: rule/Clash/Xbox/Xbox.yaml, name: xbox, local: Clash_Xbox.yaml}
+  - {path: rule/Clash/PlayStation/PlayStation.yaml, name: playstation, local: Clash_PlayStation.yaml}
+  - {path: rule/Clash/EA/EA.yaml, name: ea, local: Clash_EA.yaml}
+  - {path: rule/Clash/Ubisoft/Ubisoft.yaml, name: ubisoft, local: Clash_Ubisoft.yaml}
+  - {path: rule/Clash/Rockstar/Rockstar.yaml, name: rockstar, local: Clash_Rockstar.yaml}
+  - {path: rule/Clash/HoYoverse/HoYoverse.yaml, name: hoyoverse, local: Clash_HoYoverse.yaml}
+  - {path: rule/Clash/Cloudflare/Cloudflare.yaml, name: cloudflare, local: Clash_Cloudflare.yaml}
+  - {path: rule/Clash/GitLab/GitLab.yaml, name: gitlab, local: Clash_GitLab.yaml}
+  - {path: rule/Clash/Developer/Developer.yaml, name: developer, local: Clash_Developer.yaml}
+  - {path: rule/Clash/Speedtest/Speedtest.yaml, name: speedtest, local: Clash_Speedtest.yaml}
+  - {path: rule/Clash/iCloud/iCloud.yaml, name: icloud, local: Clash_iCloud.yaml}
+  - {path: rule/Clash/AppleMusic/AppleMusic.yaml, name: applemusic, local: Clash_AppleMusic.yaml}
+  - {path: rule/Clash/Blizzard/Blizzard.yaml, name: battlenet, local: Clash_Blizzard.yaml}
+  - {path: rule/Clash/Riot/Riot.yaml, name: riotgames, local: Clash_Riot.yaml}
+  - {path: rule/Clash/Docker/Docker.yaml, name: docker, local: Clash_Docker.yaml}
+  - {path: rule/Clash/Vercel/Vercel.yaml, name: vercel, local: Clash_Vercel.yaml}
+  - {path: rule/Clash/Stripe/Stripe.yaml, name: stripe, local: Clash_Stripe.yaml}
+  - {path: rule/Clash/Binance/Binance.yaml, name: binance, local: Clash_Binance.yaml}
+  - {path: rule/Clash/OKX/OKX.yaml, name: okx, local: Clash_OKX.yaml}
+  - {path: rule/Clash/STUN/STUN.yaml, name: stun, local: Clash_STUN.yaml}
+  - {path: rule/Clash/ParamountPlus/ParamountPlus.yaml, name: paramountplus, local: Clash_ParamountPlus.yaml}
+  - {path: rule/Clash/Alibaba/Alibaba.yaml, name: alibaba, local: Clash_Alibaba.yaml}
+  - {path: rule/Clash/AliPay/AliPay.yaml, name: alipay, local: Clash_AliPay.yaml}
+  - {path: rule/Clash/Tencent/Tencent.yaml, name: tencent, local: Clash_Tencent.yaml}
+  - {path: rule/Clash/WeChat/WeChat.yaml, name: wechat, local: Clash_WeChat.yaml}
+  - {path: rule/Clash/ByteDance/ByteDance.yaml, name: bytedance, local: Clash_ByteDance.yaml}
+  - {path: rule/Clash/Baidu/Baidu.yaml, name: baidu, local: Clash_Baidu.yaml}
+  - {path: rule/Clash/JingDong/JingDong.yaml, name: jingdong, local: Clash_JingDong.yaml}
+  - {path: rule/Clash/NetEaseMusic/NetEaseMusic.yaml, name: netease, local: Clash_NetEaseMusic.yaml}
+  - {path: rule/Clash/MeiTuan/MeiTuan.yaml, name: meituan, local: Clash_MeiTuan.yaml}
+  - {path: rule/Clash/DiDi/DiDi.yaml, name: didi, local: Clash_DiDi.yaml}
+  - {path: rule/Clash/Pinduoduo/Pinduoduo.yaml, name: pinduoduo, local: Clash_Pinduoduo.yaml}
+  - {path: rule/Clash/XiaoHongShu/XiaoHongShu.yaml, name: xiaohongshu, local: Clash_XiaoHongShu.yaml}
+  - {path: rule/Clash/Zhihu/Zhihu.yaml, name: zhihu, local: Clash_Zhihu.yaml}
+  - {path: rule/Clash/Weibo/Weibo.yaml, name: weibo, local: Clash_Weibo.yaml}
+  - {path: rule/Clash/iQIYI/iQIYI.yaml, name: iqiyi, local: Clash_iQIYI.yaml}
+  - {path: rule/Clash/Youku/Youku.yaml, name: youku, local: Clash_Youku.yaml}
+  - {path: rule/Clash/TencentVideo/TencentVideo.yaml, name: tencentvideo, local: Clash_TencentVideo.yaml}
+  - {path: rule/Clash/KuaiShou/KuaiShou.yaml, name: kuaishou, local: Clash_KuaiShou.yaml}
+  - {path: rule/Clash/DouYin/DouYin.yaml, name: douyin, local: Clash_DouYin.yaml}
+  - {path: rule/Clash/Amazon/Amazon.yaml, name: amazon, local: Clash_Amazon.yaml}
+  - {path: rule/Clash/ChinaMobile/ChinaMobile.yaml, name: chinamobile, local: Clash_ChinaMobile.yaml}
+  - {path: rule/Clash/ChinaUnicom/ChinaUnicom.yaml, name: chinaunicom, local: Clash_ChinaUnicom.yaml}
+  - {path: rule/Clash/ChinaTelecom/ChinaTelecom.yaml, name: chinatelecom, local: Clash_ChinaTelecom.yaml}
+  - {path: rule/Clash/12306/12306.yaml, name: '12306', local: Clash_12306.yaml}
+  - {path: rule/Clash/UnionPay/UnionPay.yaml, name: unionpay, local: Clash_UnionPay.yaml}
+  - {path: rule/Clash/ICBC/ICBC.yaml, name: icbc, local: Clash_ICBC.yaml}
+  - {path: rule/Clash/CCB/CCB.yaml, name: ccb, local: Clash_CCB.yaml}
+  - {path: rule/Clash/ABC/ABC.yaml, name: abc, local: Clash_ABC.yaml}
+  - {path: rule/Clash/BOC/BOC.yaml, name: boc, local: Clash_BOC.yaml}
+  - {path: rule/Clash/CMB/CMB.yaml, name: cmb, local: Clash_CMB.yaml}
+  - {path: rule/Clash/Heroku/Heroku.yaml, name: heroku, local: Clash_Heroku.yaml}
+  - {path: rule/Clash/HashiCorp/HashiCorp.yaml, name: hashicorp, local: Clash_HashiCorp.yaml}
+  - {path: rule/Clash/Figma/Figma.yaml, name: figma, local: Clash_Figma.yaml}
+  - {path: rule/Clash/Notion/Notion.yaml, name: notion, local: Clash_Notion.yaml}
+  - {path: rule/Clash/Dropbox/Dropbox.yaml, name: dropbox, local: Clash_Dropbox.yaml}
+  - {path: rule/Clash/Pinterest/Pinterest.yaml, name: pinterest, local: Clash_Pinterest.yaml}
+  - {path: rule/Clash/Teams/Teams.yaml, name: teams, local: Clash_Teams.yaml}
+  - {path: rule/Clash/GoogleFCM/GoogleFCM.yaml, name: googlefcm, local: Clash_GoogleFCM.yaml}
+  - {path: rule/Clash/PrivateTracker/PrivateTracker.yaml, name: private, local: Clash_PrivateTracker.yaml}
+  - {path: rule/Clash/Garena/Garena.yaml, name: garena, local: Clash_Garena.yaml}
+  - {path: rule/Clash/Anthropic/Anthropic.yaml, name: anthropic, local: Clash_Anthropic.yaml}
+  - {path: rule/Clash/DigitalOcean/DigitalOcean.yaml, name: digitalocean, local: Clash_DigitalOcean.yaml}
+  - {path: rule/Clash/Atlassian/Atlassian.yaml, name: atlassian, local: Clash_Atlassian.yaml}
+  - {path: rule/Clash/Slack/Slack.yaml, name: slack, local: Clash_Slack.yaml}
+  - {path: rule/Clash/Line/Line.yaml, name: line, local: Clash_Line.yaml}
+  - {path: rule/Clash/KakaoTalk/KakaoTalk.yaml, name: kakaotalk, local: Clash_KakaoTalk.yaml}
+  - {path: rule/Clash/Adobe/Adobe.yaml, name: adobe, local: Clash_Adobe.yaml}
+  - {path: rule/Clash/Oracle/Oracle.yaml, name: oracle, local: Clash_Oracle.yaml}
+  - {path: rule/Clash/GaoDe/GaoDe.yaml, name: gaode, local: Clash_GaoDe.yaml}
+  - {path: rule/Clash/Eleme/Eleme.yaml, name: eleme, local: Clash_Eleme.yaml}
+  - {path: rule/Clash/XianYu/XianYu.yaml, name: xianyu, local: Clash_XianYu.yaml}
+  - {path: rule/Clash/XieCheng/XieCheng.yaml, name: ctrip, local: Clash_XieCheng.yaml}
+  - {path: rule/Clash/TongCheng/TongCheng.yaml, name: tongcheng, local: Clash_TongCheng.yaml}
+  - {path: rule/Clash/PingAn/PingAn.yaml, name: pingan, local: Clash_PingAn.yaml}
+  - {path: rule/Clash/BOCOM/BOCOM.yaml, name: bocom, local: Clash_BOCOM.yaml}
+  - {path: rule/Clash/CEB/CEB.yaml, name: ceb, local: Clash_CEB.yaml}
+  - {path: rule/Clash/PSBC/PSBC.yaml, name: psbc, local: Clash_PSBC.yaml}
+  - {path: rule/Clash/Threads/Threads.yaml, name: threads, local: Clash_Threads.yaml}
+  - {path: rule/Clash/Jetbrains/Jetbrains.yaml, name: jetbrains, local: Clash_Jetbrains.yaml}
+  - {path: rule/Clash/eBay/eBay.yaml, name: ebay, local: Clash_eBay.yaml}
+  - {path: rule/Clash/Shopify/Shopify.yaml, name: shopify, local: Clash_Shopify.yaml}
+  - {path: rule/Clash/SoundCloud/SoundCloud.yaml, name: soundcloud, local: Clash_SoundCloud.yaml}
+  - {path: rule/Clash/Vimeo/Vimeo.yaml, name: vimeo, local: Clash_Vimeo.yaml}
+  - {path: rule/Clash/Dailymotion/Dailymotion.yaml, name: dailymotion, local: Clash_Dailymotion.yaml}
+  - {path: rule/Clash/Deezer/Deezer.yaml, name: deezer, local: Clash_Deezer.yaml}
+  - {path: rule/Clash/Peacock/Peacock.yaml, name: peacock, local: Clash_Peacock.yaml}
+  - {path: rule/Clash/YouTubeMusic/YouTubeMusic.yaml, name: youtubemusic, local: Clash_YouTubeMusic.yaml}
+  - {path: rule/Clash/Huawei/Huawei.yaml, name: huawei, local: Clash_Huawei.yaml}
+  - {path: rule/Clash/XiaoMi/XiaoMi.yaml, name: xiaomi, local: Clash_XiaoMi.yaml}
+  - {path: rule/Clash/OPPO/OPPO.yaml, name: oppo, local: Clash_OPPO.yaml}
+  - {path: rule/Clash/Vivo/Vivo.yaml, name: vivo, local: Clash_Vivo.yaml}
+  - {path: rule/Clash/KugouKuwo/KugouKuwo.yaml, name: kugoukuwo, local: Clash_KugouKuwo.yaml}
+  - {path: rule/Clash/Naver/Naver.yaml, name: naver, local: Clash_Naver.yaml}
+  - {path: rule/Clash/Wikipedia/Wikipedia.yaml, name: wikipedia, local: Clash_Wikipedia.yaml}
+  - {path: rule/Clash/Sina/Sina.yaml, name: sina, local: Clash_Sina.yaml}
+  - {path: rule/Clash/BBC/BBC.yaml, name: bbc, local: Clash_BBC.yaml}
+  - {path: rule/Clash/Emby/Emby.yaml, name: emby, local: Clash_Emby.yaml}
+  - {path: rule/Clash/Scholar/Scholar.yaml, name: scholar, local: Clash_Scholar.yaml}
+- id: metacubex
+  name: MetaCubeX meta-rules-dat
+  url: https://github.com/MetaCubeX/meta-rules-dat
+  enabled: true
+  priority: 90
+  trust: high
+  score_hint: 90
+  formats:
+  - list
+  notes: Geosite lists for CN big-tech and cloud.
+  fetch:
+    type: github_raw
+    owner: MetaCubeX
+    repo: meta-rules-dat
+    branch: meta
+  rules:
+  - {path: geo/geosite/alibaba.list, name: alibaba, local: geosite_alibaba.list}
+  - {path: geo/geosite/alibabacloud.list, name: alibabacloud, local: geosite_alibabacloud.list}
+  - {path: geo/geosite/tencent.list, name: tencent, local: geosite_tencent.list}
+  - {path: geo/geosite/baidu.list, name: baidu, local: geosite_baidu.list}
+  - {path: geo/geosite/bytedance.list, name: bytedance, local: geosite_bytedance.list}
+  - {path: geo/geosite/jd.list, name: jingdong, local: geosite_jd.list}
+  - {path: geo/geosite/netease.list, name: netease, local: geosite_netease.list}
+  - {path: geo/geosite/bilibili.list, name: bilibili, local: geosite_bilibili.list}
+  - {path: geo/geosite/azure.list, name: azure, local: geosite_azure.list}
+  - {path: geo/geosite/aws.list, name: aws, local: geosite_aws.list}
+  - {path: geo/geosite/huggingface.list, name: huggingface, local: geosite_huggingface.list}
+  - {path: geo/geosite/zoom.list, name: zoom, local: geosite_zoom.list}
+  - {path: geo/geosite/heroku.list, name: heroku, local: geosite_heroku.list}
+  - {path: geo/geosite/perplexity.list, name: perplexity, local: geosite_perplexity.list}
+  - {path: geo/geosite/groq.list, name: groq, local: geosite_groq.list}
+  - {path: geo/geosite/xai.list, name: xai, local: geosite_xai.list}
+  - {path: geo/geosite/firebase.list, name: firebase, local: geosite_firebase.list}
+  - {path: geo/geosite/doubao.list, name: doubao, local: geosite_doubao.list}
+  - {path: geo/geosite/deepseek.list, name: deepseek, local: geosite_deepseek.list}
+  - {path: geo/geosite/cursor.list, name: cursor, local: geosite_cursor.list}
+  - {path: geo/geosite/signal.list, name: signal, local: geosite_signal.list}
+  - {path: geo/geosite/messenger.list, name: messenger, local: geosite_messenger.list}
+  - {path: geo/geosite/bluesky.list, name: bluesky, local: geosite_bluesky.list}
+  - {path: geo/geosite/canva.list, name: canva, local: geosite_canva.list}
+  - {path: geo/geosite/netlify.list, name: netlify, local: geosite_netlify.list}
+  - {path: geo/geosite/trello.list, name: trello, local: geosite_trello.list}
+  - {path: geo/geosite/walmart.list, name: walmart, local: geosite_walmart.list}
+  - {path: geo/geosite/uber.list, name: uber, local: geosite_uber.list}
+  - {path: geo/geosite/airbnb.list, name: airbnb, local: geosite_airbnb.list}
+  - {path: geo/geosite/booking.list, name: booking, local: geosite_booking.list}
+  - {path: geo/geosite/wise.list, name: wise, local: geosite_wise.list}
+  - {path: geo/geosite/tidal.list, name: tidal, local: geosite_tidal.list}
+  - {path: geo/geosite/amap.list, name: amap, local: geosite_amap.list}
+  - {path: geo/geosite/dewu.list, name: dewu, local: geosite_dewu.list}
+  - {path: geo/geosite/roblox.list, name: roblox, local: geosite_roblox.list}
+  - {path: geo/geosite/mojang.list, name: minecraft, local: geosite_mojang.list}
+  - {path: geo/geosite/elevenlabs.list, name: elevenlabs, local: geosite_elevenlabs.list}
+  - {path: geo/geosite/snap.list, name: snapchat, local: geosite_snap.list}
+  - {path: geo/geosite/cn.yaml, name: china, local: geosite_cn.yaml}
+- id: v2fly
+  name: v2fly domain-list-community
+  url: https://github.com/v2fly/domain-list-community
+  enabled: true
+  priority: 85
+  trust: high
+  score_hint: 88
+  role: production
+  formats:
+  - v2fly
+  - list
+  notes: Community domain database; whitelist only. include expanded at normalize.
+  fetch:
+    type: github_raw
+    owner: v2fly
+    repo: domain-list-community
+    branch: master
+  rules:
+  - {path: data/deepseek, name: deepseek, local: v2fly_deepseek}
+  - {path: data/elevenlabs, name: elevenlabs, local: v2fly_elevenlabs}
+  - {path: data/huggingface, name: huggingface, local: v2fly_huggingface}
+  - {path: data/perplexity, name: perplexity, local: v2fly_perplexity}
+  - {path: data/anthropic, name: anthropic, local: v2fly_anthropic}
+  - {path: data/signal, name: signal, local: v2fly_signal}
+  - {path: data/roblox, name: roblox, local: v2fly_roblox}
+  - {path: data/notion, name: notion, local: v2fly_notion}
+  - {path: data/figma, name: figma, local: v2fly_figma}
+  - {path: data/shopify, name: shopify, local: v2fly_shopify}
+  - {path: data/uber, name: uber, local: v2fly_uber}
+  - {path: data/airbnb, name: airbnb, local: v2fly_airbnb}
+  - {path: data/booking, name: booking, local: v2fly_booking}
+  - {path: data/openai, name: openai, local: v2fly_openai}
+  - {path: data/telegram, name: telegram, local: v2fly_telegram}
+  - {path: data/discord, name: discord, local: v2fly_discord}
+  - {path: data/spotify, name: spotify, local: v2fly_spotify}
+  - {path: data/steam, name: steam, local: v2fly_steam}
+  - {path: data/netflix, name: netflix, local: v2fly_netflix}
+  - {path: data/github, name: github, local: v2fly_github}
+  - {path: data/tiktok, name: tiktok, local: v2fly_tiktok}
+  - {path: data/twitter, name: twitter, local: v2fly_twitter}
+  - {path: data/facebook, name: facebook, local: v2fly_facebook}
+  - {path: data/instagram, name: instagram, local: v2fly_instagram}
+  - {path: data/whatsapp, name: whatsapp, local: v2fly_whatsapp}
+  - {path: data/line, name: line, local: v2fly_line}
+  - {path: data/cloudflare, name: cloudflare, local: v2fly_cloudflare}
+  - {path: data/ebay, name: ebay, local: v2fly_ebay}
+  - {path: data/alibaba, name: alibaba, local: v2fly_alibaba}
+  - {path: data/aliyun, name: alibabacloud, local: v2fly_aliyun}
+  - {path: data/baidu, name: baidu, local: v2fly_baidu}
+  - {path: data/bytedance, name: bytedance, local: v2fly_bytedance}
+  - {path: data/tencent, name: tencent, local: v2fly_tencent}
+  - {path: data/bilibili, name: bilibili, local: v2fly_bilibili}
+- id: dler
+  name: Dler Rules
+  url: https://github.com/dler-io/Rules
+  enabled: true
+  priority: 80
+  trust: high
+  score_hint: 85
+  role: production
+  formats:
+  - clash
+  notes: Multi-client rules; whitelist Provider files. Paths may contain spaces.
+  fetch:
+    type: github_raw
+    owner: dler-io
+    repo: Rules
+    branch: main
+  rules:
+  - {path: Clash/Provider/AI Suite.yaml, name: aisuite, local: Dler_AI_Suite.yaml}
+  - {path: Clash/Provider/Apple.yaml, name: apple, local: Dler_Apple.yaml}
+  - {path: Clash/Provider/Microsoft.yaml, name: microsoft, local: Dler_Microsoft.yaml}
+  - {path: Clash/Provider/Telegram.yaml, name: telegram, local: Dler_Telegram.yaml}
+  - {path: Clash/Provider/Discord.yaml, name: discord, local: Dler_Discord.yaml}
+  - {path: Clash/Provider/Steam.yaml, name: steam, local: Dler_Steam.yaml}
+  - {path: Clash/Provider/TikTok.yaml, name: tiktok, local: Dler_TikTok.yaml}
+  - {path: Clash/Provider/PayPal.yaml, name: paypal, local: Dler_PayPal.yaml}
+  - {path: Clash/Provider/Scholar.yaml, name: scholar, local: Dler_Scholar.yaml}
+  - {path: Clash/Provider/Google FCM.yaml, name: googlefcm, local: Dler_Google_FCM.yaml}
+  - {path: Clash/Provider/Douyin.yaml, name: douyin, local: Dler_Douyin.yaml}
+  - {path: Clash/Provider/miHoYo.yaml, name: hoyoverse, local: Dler_miHoYo.yaml}
+  - {path: Clash/Provider/Media/Netflix.yaml, name: netflix, local: Dler_Netflix.yaml}
+  - {path: Clash/Provider/Media/Spotify.yaml, name: spotify, local: Dler_Spotify.yaml}
+  - {path: Clash/Provider/Media/YouTube.yaml, name: youtube, local: Dler_YouTube.yaml}
+  - {path: Clash/Provider/Media/Disney Plus.yaml, name: disney, local: Dler_Disney.yaml}
+  - {path: Clash/Provider/Media/Bilibili.yaml, name: bilibili, local: Dler_Bilibili.yaml}
+  - {path: Clash/Provider/Media/Soundcloud.yaml, name: soundcloud, local: Dler_Soundcloud.yaml}
+  - {path: Clash/Provider/Media/YouTube Music.yaml, name: youtubemusic, local: Dler_YouTubeMusic.yaml}
+  - {path: Clash/Provider/Media/BBC iPlayer.yaml, name: bbc, local: Dler_BBC.yaml}
