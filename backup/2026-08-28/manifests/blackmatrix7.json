@@ -1,7 +1,7 @@
 {
   "source": "blackmatrix7",
   "fetch": "github_raw",
-  "timestamp": "2026-08-28T01:41:14.384625+00:00",
+  "timestamp": "2026-08-28T05:58:43.856837+00:00",
   "files_ok": 134,
   "files_failed": 0,
   "empty_blocked": 0,
@@ -164,7 +164,7 @@
       "service": "apple",
       "local": "sources/blackmatrix7/Surge_Apple.list",
       "size": 1805,
-      "sha256": "4c61c31824f43b8588a13c00969361cd8d7f8189a14e77b4f64a0df9a87bc62e",
+      "sha256": "ff61400b802f0189d857acd9253e8871206e9d2a07457d2f8d54b84892d7ef70",
       "status": "ok"
     },
     {
@@ -484,7 +484,7 @@
       "service": "battlenet",
       "local": "sources/blackmatrix7/Clash_Blizzard.yaml",
       "size": 2308,
-      "sha256": "3d003d066c148cc5e283417c726269bfabae887a99a94734c80fd8798732a8d5",
+      "sha256": "228921801cc52d57927677f880f2a8d250e4775460bd366ffc177f2a5adec4d3",
       "status": "ok"
     },
     {
