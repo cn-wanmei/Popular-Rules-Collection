@@ -1,0 +1,11 @@
+# ASN metadata — provider attribution, not Service ownership
+version: 1
+updated: "2026-08-28"
+kind: asn
+datasets:
+  - id: asn-meta
+    name: ASN metadata registry
+    enabled: false
+    scope: provider
+    path: database/asn/metadata.yaml
+    notes: AS16509 = AWS provider, never auto-map to Amazon product service.

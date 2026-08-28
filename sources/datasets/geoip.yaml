@@ -1,0 +1,19 @@
+# GeoIP datasets — country/region (≠ Service IP ownership)
+version: 1
+updated: "2026-08-28"
+kind: geoip
+# Country CIDR lists live under database/geoip/ when enabled.
+# MMDB artifacts (if added) go to generated/mmdb/ — never explode into database/ips/.
+datasets:
+  - id: geoip-cn
+    name: Country CN prefixes
+    enabled: false
+    scope: country
+    path: database/geoip/cn.txt
+    notes: Prefer ip_registry china maps_to for CN; this is the Dataset-domain mirror for GeoIP consumers.
+  - id: geoip-mmdb
+    name: GeoIP MMDB artifact
+    enabled: false
+    scope: artifact
+    artifact: generated/mmdb/geoip.mmdb
+    notes: MMDB is an artifact with checksum/version — not a rule list.

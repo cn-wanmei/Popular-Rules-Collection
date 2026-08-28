@@ -1,0 +1,19 @@
+# Network datasets — LAN / private / multicast (not Service Rules)
+version: 1
+updated: "2026-08-28"
+kind: network
+datasets:
+  - id: lan
+    name: LAN / Private / Special-purpose CIDRs
+    enabled: true
+    scope: network
+    path: database/network/lan.txt
+    policy_hint: direct
+    notes: Static RFC ranges; no upstream fetch required.
+  - id: private
+    name: Core private ranges
+    enabled: true
+    scope: network
+    path: database/network/private.txt
+    policy_hint: direct
+    notes: Subset of lan for clients that only want RFC1918 + ULA.

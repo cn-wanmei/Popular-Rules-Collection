@@ -1,0 +1,18 @@
+# Geosite datasets — domain classification categories (≠ Service Identity)
+version: 1
+updated: "2026-08-28"
+kind: geosite
+# P0 scaffold only: registry contract. Materialization is P1.
+datasets:
+  - id: geosite-cn
+    name: Geosite CN category
+    enabled: false
+    scope: geosite
+    maps_category: cn
+    notes: Enable after verified upstream (e.g. v2fly domain-list-community). Never overwrite Service Registry.
+  - id: geosite-geolocation-not-cn
+    name: Geosite geolocation-!cn
+    enabled: false
+    scope: geosite
+    maps_category: geolocation-!cn
+    notes: Dataset category, not a service id.
