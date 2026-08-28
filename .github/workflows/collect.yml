@@ -48,6 +48,8 @@ jobs:
         continue-on-error: true
       - run: python scripts/build_provider_datasets.py
         continue-on-error: true
+      - run: python scripts/client_capability_matrix.py
+        continue-on-error: true
       - name: Normalize
         run: |
           if [ "${{ inputs.skip_large }}" = "true" ]; then
