@@ -124,7 +124,7 @@
     ]
   },
   "rule_coverage": {
-    "domains": 714343,
+    "domains": 826467,
     "ips": 13955,
     "database_services": 170
   },
@@ -177,11 +177,11 @@
       "status": "ok"
     },
     "surge": {
-      "files": 338,
+      "files": 339,
       "status": "ok"
     },
     "shadowrocket": {
-      "files": 338,
+      "files": 339,
       "status": "ok"
     },
     "quantumult-x": {
@@ -237,7 +237,7 @@
   },
   "sources": 4,
   "services": 170,
-  "domains": 714343,
+  "domains": 826467,
   "cidr": 13955,
   "build": {
     "mihomo": "ok",

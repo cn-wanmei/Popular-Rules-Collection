@@ -1,12 +1,12 @@
 {
   "date": "2026-08-28",
-  "timestamp": "2026-08-28T10:11:13.911733+00:00",
+  "timestamp": "2026-08-28T10:56:56.540642+00:00",
   "registry_version": 3,
   "sources": [
     {
       "source": "blackmatrix7",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T10:11:03.536873+00:00",
+      "timestamp": "2026-08-28T10:56:43.080838+00:00",
       "files_ok": 134,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -153,13 +153,13 @@
           "status": "ok"
         },
         {
-          "name": "Clash_China.yaml",
-          "path": "rule/Clash/China/China.yaml",
-          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China.yaml",
+          "name": "Clash_ChinaMax_Domain.yaml",
+          "path": "rule/Clash/ChinaMax/ChinaMax_Domain.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Domain.yaml",
           "service": "china",
-          "local": "sources/blackmatrix7/Clash_China.yaml",
-          "size": 1062,
-          "sha256": "51c5809d65d1eaa98e8d644523b30d566bffa262ff43888313f18edb87cc44b3",
+          "local": "sources/blackmatrix7/Clash_ChinaMax_Domain.yaml",
+          "size": 2319798,
+          "sha256": "3da5e5eab4245ccde1666921bc65cbba4e159ef6330c569f8057f53a7d169989",
           "status": "ok"
         },
         {
@@ -1359,11 +1359,11 @@
     {
       "source": "metacubex",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T10:11:07.151535+00:00",
-      "files_ok": 38,
+      "timestamp": "2026-08-28T10:56:48.566194+00:00",
+      "files_ok": 39,
       "files_failed": 0,
       "empty_blocked": 0,
-      "rules_declared": 38,
+      "rules_declared": 39,
       "files": [
         {
           "name": "geosite_alibaba.list",
@@ -1744,6 +1744,16 @@
           "size": 149,
           "sha256": "3987498d3882be2bcf425787b9de87387f6006adc5e076bed0fa6d2c537d40db",
           "status": "ok"
+        },
+        {
+          "name": "geosite_cn.yaml",
+          "path": "geo/geosite/cn.yaml",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml",
+          "service": "china",
+          "local": "sources/metacubex/geosite_cn.yaml",
+          "size": 2311341,
+          "sha256": "763abbe5bd7d2cd1eae0f88a2423a4e8e04ae9861c6a375ca7ab832abcb495f4",
+          "status": "ok"
         }
       ],
       "registry_priority": 90,
@@ -1752,7 +1762,7 @@
     {
       "source": "v2fly",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T10:11:11.796765+00:00",
+      "timestamp": "2026-08-28T10:56:53.943546+00:00",
       "files_ok": 34,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -2105,7 +2115,7 @@
     {
       "source": "dler",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T10:11:13.911347+00:00",
+      "timestamp": "2026-08-28T10:56:56.540282+00:00",
       "files_ok": 20,
       "files_failed": 0,
       "empty_blocked": 0,

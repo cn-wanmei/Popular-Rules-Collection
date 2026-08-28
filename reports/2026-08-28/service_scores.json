@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-28T10:31:58.808439+00:00",
+  "generated_at": "2026-08-28T11:18:53.509568+00:00",
   "date": "2026-08-28",
   "services": {
     "uber": {
@@ -467,10 +467,6 @@
       "score": 90.0,
       "band": "stable"
     },
-    "china": {
-      "score": 90.0,
-      "band": "stable"
-    },
     "wise": {
       "score": 90.0,
       "band": "stable"
@@ -676,6 +672,10 @@
       "band": "review"
     },
     "anthropic": {
+      "score": 65.0,
+      "band": "review"
+    },
+    "china": {
       "score": 65.0,
       "band": "review"
     },

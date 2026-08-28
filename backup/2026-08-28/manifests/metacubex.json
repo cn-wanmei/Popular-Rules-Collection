@@ -1,11 +1,11 @@
 {
   "source": "metacubex",
   "fetch": "github_raw",
-  "timestamp": "2026-08-28T10:11:07.151535+00:00",
-  "files_ok": 38,
+  "timestamp": "2026-08-28T10:56:48.566194+00:00",
+  "files_ok": 39,
   "files_failed": 0,
   "empty_blocked": 0,
-  "rules_declared": 38,
+  "rules_declared": 39,
   "files": [
     {
       "name": "geosite_alibaba.list",
@@ -385,6 +385,16 @@
       "local": "sources/metacubex/geosite_snap.list",
       "size": 149,
       "sha256": "3987498d3882be2bcf425787b9de87387f6006adc5e076bed0fa6d2c537d40db",
+      "status": "ok"
+    },
+    {
+      "name": "geosite_cn.yaml",
+      "path": "geo/geosite/cn.yaml",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml",
+      "service": "china",
+      "local": "sources/metacubex/geosite_cn.yaml",
+      "size": 2311341,
+      "sha256": "763abbe5bd7d2cd1eae0f88a2423a4e8e04ae9861c6a375ca7ab832abcb495f4",
       "status": "ok"
     }
   ],

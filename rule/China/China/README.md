@@ -7,15 +7,16 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 0 |
+| Domains | 112124 |
 | IP/CIDR | 9661 |
-| Mixed | 9661 |
-| Sources | blackmatrix7 |
+| Mixed | 121785 |
+| Sources | blackmatrix7, metacubex |
 | Updated | 2026-08-28 |
 
 ## 基础规则（Classical）
 
 - 混合：[`china.list`](./china.list)
+- 域名：[`china_domain.list`](./china_domain.list)
 - IP：[`china_ip.list`](./china_ip.list)
 
 ## 客户端订阅
@@ -37,7 +38,7 @@
 
 ## 来源
 
-`blackmatrix7`
+`blackmatrix7`, `metacubex`
 
 ## 分类说明
 

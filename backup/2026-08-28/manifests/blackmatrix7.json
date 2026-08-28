@@ -1,7 +1,7 @@
 {
   "source": "blackmatrix7",
   "fetch": "github_raw",
-  "timestamp": "2026-08-28T10:11:03.536873+00:00",
+  "timestamp": "2026-08-28T10:56:43.080838+00:00",
   "files_ok": 134,
   "files_failed": 0,
   "empty_blocked": 0,
@@ -148,13 +148,13 @@
       "status": "ok"
     },
     {
-      "name": "Clash_China.yaml",
-      "path": "rule/Clash/China/China.yaml",
-      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China.yaml",
+      "name": "Clash_ChinaMax_Domain.yaml",
+      "path": "rule/Clash/ChinaMax/ChinaMax_Domain.yaml",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Domain.yaml",
       "service": "china",
-      "local": "sources/blackmatrix7/Clash_China.yaml",
-      "size": 1062,
-      "sha256": "51c5809d65d1eaa98e8d644523b30d566bffa262ff43888313f18edb87cc44b3",
+      "local": "sources/blackmatrix7/Clash_ChinaMax_Domain.yaml",
+      "size": 2319798,
+      "sha256": "3da5e5eab4245ccde1666921bc65cbba4e159ef6330c569f8057f53a7d169989",
       "status": "ok"
     },
     {

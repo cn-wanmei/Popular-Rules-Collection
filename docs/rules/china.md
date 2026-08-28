@@ -8,11 +8,11 @@
 | Primary Ecosystem | **China** (`china`) |
 | Service Type | aggregate |
 | Tags | china |
-| 类型 | mixed |
-| Domains | 9 |
-| CIDR | 21 |
+| 类型 | domain |
+| Domains | 112124 |
+| CIDR | 9661 |
 | 最后更新 | 2026-08-28 |
-| Sources | blackmatrix7 |
+| Sources | blackmatrix7 / metacubex |
 | Confidence | HIGH |
 
 ## 用途
@@ -49,6 +49,7 @@ _未在 config/official_sites.yaml 配置_
 ## 规则来源（Provenance）
 
 - `blackmatrix7`
+- `metacubex`
 
 由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
 
