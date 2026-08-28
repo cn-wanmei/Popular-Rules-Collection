@@ -1,0 +1,28 @@
+id: adult
+name: Adult
+category: adult
+type: aggregate
+version: 1
+source:
+- id: metacubex
+  priority: 90
+- id: v2fly
+  priority: 85
+rules: []
+metadata:
+  priority: medium
+  confidence: high
+  last_updated: '2026-08-28T13:20:00+00:00'
+  notes: >-
+    18+ NSFW aggregate from MetaCubeX category-porn + v2fly category-porn
+    (+ pornhub/xvideos/ehentai sidecars). Large list in database/domains/adult.txt.
+    No invented domains. Policy: typically PROXY.
+  stats:
+    domain_count: 6519
+    ip_count: 0
+    total: 6519
+  tags:
+  - nsfw
+  - adult
+  - 18+
+canonical_source: metacubex-category-porn
