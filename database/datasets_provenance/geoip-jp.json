@@ -1,0 +1,16 @@
+{
+  "id": "geoip-jp",
+  "kind": "geoip",
+  "scope": "country",
+  "path": "database/geoip/jp.txt",
+  "lines": 17725,
+  "sha256_source": "a4db942a0daa4ea7fdc3a74ead9973b645fbd36540de3f5f2b20b9d5c37f49aa",
+  "fetched_at": "2026-08-28T06:37:56.485281+00:00",
+  "source": {
+    "owner": "Loyalsoldier",
+    "repo": "geoip",
+    "branch": "release",
+    "path": "text/jp.txt"
+  },
+  "notes": ""
+}

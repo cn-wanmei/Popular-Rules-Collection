@@ -1,0 +1,8 @@
+version: 1
+id: policy-proxy
+description: PROXY routing composition
+includes:
+  - kind: geosite
+    id: geosite-proxy
+    path: database/geosite/proxy.txt
+notes: Category-level proxy domains; does not replace per-Service rules.

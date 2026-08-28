@@ -1,0 +1,17 @@
+version: 1
+id: policy-direct
+description: DIRECT routing composition (dataset references only)
+includes:
+  - kind: network
+    id: lan
+    path: database/network/lan.txt
+  - kind: network
+    id: private
+    path: database/network/private.txt
+  - kind: geosite
+    id: geosite-direct
+    path: database/geosite/direct.txt
+  - kind: geoip
+    id: geoip-cn
+    path: database/geoip/cn.txt
+notes: Clients should load these as rule-sets / geoip — not treat as one Service.

@@ -1,12 +1,12 @@
 {
   "date": "2026-08-28",
-  "timestamp": "2026-08-28T05:58:51.521414+00:00",
+  "timestamp": "2026-08-28T06:36:44.445748+00:00",
   "registry_version": 3,
   "sources": [
     {
       "source": "blackmatrix7",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T05:58:43.856837+00:00",
+      "timestamp": "2026-08-28T06:36:30.946928+00:00",
       "files_ok": 134,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -1359,7 +1359,7 @@
     {
       "source": "metacubex",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T05:58:46.528782+00:00",
+      "timestamp": "2026-08-28T06:36:36.757180+00:00",
       "files_ok": 38,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -1372,7 +1372,7 @@
           "service": "alibaba",
           "local": "sources/metacubex/geosite_alibaba.list",
           "size": 7962,
-          "sha256": "9280988b2179ccb626e1a7fb92e6afd697ecacf6730be1ec5091a3383a4c4b98",
+          "sha256": "b5e7a3f4665af11630344829213c33e9326c79b72e224eae30e60b5fa443069a",
           "status": "ok"
         },
         {
@@ -1392,7 +1392,7 @@
           "service": "tencent",
           "local": "sources/metacubex/geosite_tencent.list",
           "size": 11324,
-          "sha256": "3dec36f210ec987bb8b2b3435382e2ad2055879616391609b15b149c83b771d4",
+          "sha256": "d96cfb8e426eb1b7094f406b8c5511ed72a4161aa87cb9b16eb8b737f0aded6d",
           "status": "ok"
         },
         {
@@ -1412,7 +1412,7 @@
           "service": "bytedance",
           "local": "sources/metacubex/geosite_bytedance.list",
           "size": 16263,
-          "sha256": "2b6613fef437bba4887afeb6fa367b439a6079ccdb3804906f6360de52c0806b",
+          "sha256": "9c75a07e4d4e31834223ab51e2289a73db91280c351e54eaac2b0f739f20f08d",
           "status": "ok"
         },
         {
@@ -1752,7 +1752,7 @@
     {
       "source": "v2fly",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T05:58:50.405953+00:00",
+      "timestamp": "2026-08-28T06:36:42.089411+00:00",
       "files_ok": 34,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -2105,7 +2105,7 @@
     {
       "source": "dler",
       "fetch": "github_raw",
-      "timestamp": "2026-08-28T05:58:51.521059+00:00",
+      "timestamp": "2026-08-28T06:36:44.445432+00:00",
       "files_ok": 20,
       "files_failed": 0,
       "empty_blocked": 0,
