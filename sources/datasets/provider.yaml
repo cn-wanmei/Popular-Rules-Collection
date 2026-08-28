@@ -1,0 +1,34 @@
+# Cloud / CDN provider CIDRs — scope=provider (≠ Service ownership)
+version: 1
+updated: "2026-08-28"
+kind: provider
+datasets:
+  - id: provider-cloudflare
+    name: Cloudflare anycast CIDRs
+    enabled: true
+    scope: provider
+    path: database/provider/cloudflare.txt
+    fetch:
+      type: http
+      url: https://www.cloudflare.com/ips-v4
+    notes: Provider infrastructure — not product service list.
+
+  - id: provider-cloudflare-v6
+    name: Cloudflare IPv6 CIDRs
+    enabled: true
+    scope: provider
+    path: database/provider/cloudflare6.txt
+    fetch:
+      type: http
+      url: https://www.cloudflare.com/ips-v6
+
+  - id: provider-aws
+    name: AWS ip-ranges.json
+    enabled: true
+    scope: provider
+    path: database/provider/aws.txt
+    fetch:
+      type: http
+      url: https://ip-ranges.amazonaws.com/ip-ranges.json
+    format: aws_json
+    notes: NEVER map entire set to Amazon retail service.
