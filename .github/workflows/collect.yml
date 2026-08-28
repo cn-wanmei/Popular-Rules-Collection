@@ -57,6 +57,8 @@ jobs:
           else
             python scripts/normalize.py
           fi
+      # Re-apply country/carrier IP after normalize (normalize must not clobber)
+      - run: python scripts/collect_ip.py
       - run: python scripts/deduplicate.py
       - run: python scripts/conflict_detector.py
         continue-on-error: true
