@@ -14,7 +14,6 @@ datasets:
       repo: geoip
       branch: release
     remote_path: text/cn.txt
-    notes: Country dataset under database/geoip — not database/ips service sidecars.
 
   - id: geoip-jp
     name: Country JP CIDRs
@@ -63,6 +62,18 @@ datasets:
       repo: geoip
       branch: release
     remote_path: text/kr.txt
+
+  - id: geoip-tw
+    name: Country TW CIDRs
+    enabled: true
+    scope: country
+    path: database/geoip/tw.txt
+    fetch:
+      type: github_raw
+      owner: Loyalsoldier
+      repo: geoip
+      branch: release
+    remote_path: text/tw.txt
 
   - id: geoip-mmdb
     name: Loyalsoldier Country.mmdb artifact
