@@ -1,0 +1,25 @@
+# Policy datasets — routing hints, not full proxy configs
+version: 1
+updated: "2026-08-28"
+kind: policy
+datasets:
+  - id: policy-direct
+    name: Direct policy composition
+    enabled: true
+    scope: policy
+    path: database/policies/direct/manifest.yaml
+    notes: References network + geosite datasets; not a config generator.
+
+  - id: policy-proxy
+    name: Proxy policy composition
+    enabled: true
+    scope: policy
+    path: database/policies/proxy/manifest.yaml
+    notes: References geosite-proxy; clients compose rule-sets.
+
+  - id: policy-dns
+    name: DNS server registry (dataset only)
+    enabled: true
+    scope: policy
+    path: database/policies/dns/servers.yaml
+    notes: DNS servers registry — not full DoH/Fake-IP config generator.

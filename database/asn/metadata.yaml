@@ -1,0 +1,66 @@
+# ASN metadata — provider scope only (never auto-map to product Service)
+version: 1
+updated: "2026-08-28"
+asns:
+  - asn: 4134
+    name: China Telecom Backbone
+    owner: China Telecom
+    scope: carrier
+    country: CN
+  - asn: 4837
+    name: China Unicom Backbone
+    owner: China Unicom
+    scope: carrier
+    country: CN
+  - asn: 9808
+    name: China Mobile
+    owner: China Mobile
+    scope: carrier
+    country: CN
+  - asn: 15169
+    name: Google
+    owner: Google
+    scope: provider
+    country: US
+    note: Provider ≠ Google Search/YouTube product services
+  - asn: 8075
+    name: Microsoft
+    owner: Microsoft
+    scope: provider
+    country: US
+  - asn: 16509
+    name: Amazon.com
+    owner: Amazon
+    scope: provider
+    country: US
+    note: AWS — must NOT map to Amazon retail service rules
+  - asn: 13335
+    name: Cloudflare
+    owner: Cloudflare
+    scope: provider
+    country: US
+  - asn: 32934
+    name: Facebook
+    owner: Meta
+    scope: provider
+    country: US
+  - asn: 54113
+    name: Fastly
+    owner: Fastly
+    scope: provider
+    country: US
+  - asn: 20940
+    name: Akamai
+    owner: Akamai
+    scope: provider
+    country: US
+  - asn: 714
+    name: Apple
+    owner: Apple
+    scope: provider
+    country: US
+  - asn: 36351
+    name: SoftLayer / IBM Cloud
+    owner: IBM
+    scope: provider
+    country: US

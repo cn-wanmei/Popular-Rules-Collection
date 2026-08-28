@@ -1,18 +1,34 @@
-# Geosite datasets — domain classification categories (≠ Service Identity)
+# Geosite — domain classification (≠ Service Identity)
 version: 1
 updated: "2026-08-28"
 kind: geosite
-# P0 scaffold only: registry contract. Materialization is P1.
 datasets:
-  - id: geosite-cn
-    name: Geosite CN category
-    enabled: false
+  - id: geosite-direct
+    name: Loyalsoldier direct-list (CN-oriented)
+    enabled: true
     scope: geosite
-    maps_category: cn
-    notes: Enable after verified upstream (e.g. v2fly domain-list-community). Never overwrite Service Registry.
-  - id: geosite-geolocation-not-cn
-    name: Geosite geolocation-!cn
-    enabled: false
+    maps_category: direct
+    path: database/geosite/direct.txt
+    policy_hint: direct
+    fetch:
+      type: github_raw
+      owner: Loyalsoldier
+      repo: v2ray-rules-dat
+      branch: release
+    remote_path: direct-list.txt
+    notes: Dataset category for DIRECT routing; not a Service id.
+
+  - id: geosite-proxy
+    name: Loyalsoldier proxy-list
+    enabled: true
     scope: geosite
-    maps_category: geolocation-!cn
-    notes: Dataset category, not a service id.
+    maps_category: proxy
+    path: database/geosite/proxy.txt
+    policy_hint: proxy
+    fetch:
+      type: github_raw
+      owner: Loyalsoldier
+      repo: v2ray-rules-dat
+      branch: release
+    remote_path: proxy-list.txt
+    notes: Dataset category for PROXY routing; not a Service id.
