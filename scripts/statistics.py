@@ -14,7 +14,6 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 
-# Fallback only — SSOT is config/intentional_unmaterialized.yaml (Phase 3B)
 _INTENTIONAL_FALLBACK = {
     "adblock-light": "hagezi_profile_deferred",
     "adblock-pro": "hagezi_profile_deferred",
@@ -72,7 +71,6 @@ def _infer_code(reason: str) -> str:
 
 
 def load_intentional_unmaterialized() -> dict[str, dict]:
-    """Load SSOT; returns {sid: {reason, code}}."""
     cfg = load_yaml(ROOT / "config" / "intentional_unmaterialized.yaml")
     services = cfg.get("services") if isinstance(cfg, dict) else None
     if isinstance(services, dict) and services:
@@ -142,10 +140,7 @@ def main() -> int:
         for sid, meta in intentional_ssot.items()
         if sid in registered and sid not in materialized
     }
-    intentional_reasons = {
-        sid: meta.get("reason", "")
-        for sid, meta in intentional.items()
-    }
+    intentional_reasons = {sid: meta.get("reason", "") for sid, meta in intentional.items()}
     intentional_by_code: dict[str, list] = {}
     for sid, meta in intentional.items():
         code = meta.get("code") or "NO_UPSTREAM"
@@ -153,9 +148,7 @@ def main() -> int:
     for k in intentional_by_code:
         intentional_by_code[k] = sorted(intentional_by_code[k])
 
-    unexpected_missing = sorted(
-        (registered - materialized) - set(intentional.keys())
-    )
+    unexpected_missing = sorted((registered - materialized) - set(intentional.keys()))
 
     cov = (mat_n / reg_n) if reg_n else 0.0
     daily_cov = ((mat_n + len(intentional)) / reg_n) if reg_n else 0.0
@@ -176,10 +169,7 @@ def main() -> int:
     for c in CLIENTS:
         d = gen / c
         n = len(list(d.glob("*"))) if d.is_dir() else 0
-        builder_coverage[c] = {
-            "files": n,
-            "status": "ok" if n > 0 else "missing",
-        }
+        builder_coverage[c] = {"files": n, "status": "ok" if n > 0 else "missing"}
 
     ecosystem: dict[str, int] = {}
     for sid, meta in services.items():
@@ -195,10 +185,7 @@ def main() -> int:
     sources_on = len(enabled_ids)
     health = load_yaml(ROOT / "sources" / "health.yaml")
     health_sources = health.get("sources") or {}
-    source_health = {
-        k: (v or {}).get("status")
-        for k, v in health_sources.items()
-    }
+    source_health = {k: (v or {}).get("status") for k, v in health_sources.items()}
     historical_ids = sorted(source_health.keys())
     healthy = sum(1 for s in source_health.values() if s == "healthy")
     enabled_health = [source_health.get(i) for i in enabled_ids if i in source_health]
@@ -206,7 +193,6 @@ def main() -> int:
         health_ratio = sum(1 for s in enabled_health if s == "healthy") / len(enabled_health)
     else:
         health_ratio = (healthy / len(source_health)) if source_health else None
-    # collected_this_run: enabled sources with successful fetch evidence (not merely enabled)
     collected_ids = []
     for sid in enabled_ids:
         meta = health_sources.get(sid) or {}
@@ -232,9 +218,7 @@ def main() -> int:
             rep = json.loads(bv.read_text(encoding="utf-8"))
             validation["builder_failures"] = len(rep.get("failures") or [])
             if validation["builder_validate"] == "unknown":
-                validation["builder_validate"] = (
-                    "pass" if not rep.get("failures") else "fail"
-                )
+                validation["builder_validate"] = "pass" if not rep.get("failures") else "fail"
         except Exception:
             pass
 
@@ -284,6 +268,26 @@ def main() -> int:
         "build": {c: v["status"] for c, v in builder_coverage.items()},
     }
 
+    ip_files = 0
+    ip_lines = 0
+    ip_dir = ROOT / "database" / "ips"
+    if ip_dir.is_dir():
+        for fp in ip_dir.glob("*.txt"):
+            if fp.name.startswith("_"):
+                continue
+            ip_files += 1
+            ip_lines += count_lines(fp)
+    ip_reg = load_yaml(ROOT / "sources" / "ip_registry.yaml")
+    ip_srcs = [s for s in (ip_reg.get("sources") or []) if isinstance(s, dict)]
+    ip_enabled = sum(1 for s in ip_srcs if s.get("enabled"))
+    stats["ip_track"] = {
+        "registry_sources": len(ip_srcs),
+        "enabled_sources": ip_enabled,
+        "sidecar_files": ip_files,
+        "cidr_lines": ip_lines,
+        "note": "Prefer health/scope correctness over raw CIDR count",
+    }
+
     (day / "statistics.json").write_text(
         json.dumps(stats, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
@@ -300,6 +304,7 @@ def main() -> int:
         f"  sources configured={configured_sources} enabled={sources_on} "
         f"collected={collected_this_run} historical_health={len(historical_ids)}"
     )
+    print(f"  ip_track files={ip_files} cidrs={ip_lines} ip_sources_enabled={ip_enabled}")
     if unexpected_missing:
         print(f"  WARN unexpected_missing={unexpected_missing}")
     return 0
