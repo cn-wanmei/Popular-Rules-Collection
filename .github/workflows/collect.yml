@@ -50,6 +50,9 @@ jobs:
         continue-on-error: true
       - run: python scripts/client_capability_matrix.py
         continue-on-error: true
+      - name: Icon governance P0-P4
+        continue-on-error: true
+        run: python scripts/icon_governance_apply.py
       - name: Sync service icons (Simple Icons)
         continue-on-error: true
         run: python scripts/sync_service_icons.py
@@ -62,6 +65,9 @@ jobs:
       - name: Icon validate (soft)
         continue-on-error: true
         run: python scripts/icon_validate.py
+      - name: Icon identity audit (soft)
+        continue-on-error: true
+        run: python scripts/icon_identity_audit.py
       - name: Icon visual regression (soft)
         continue-on-error: true
         run: |
