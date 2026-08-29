@@ -36,7 +36,6 @@ EXPECTED_EXPORTS = [
     ("database/provider/cloudflare.txt", "generated/provider/cloudflare.txt"),
 ]
 
-# When geoip/cn is healthy, shrink of these sidecars is WARN (collect_ip restores).
 IP_REGISTRY_SOFT_SHRINK = frozenset(
     {
         "database/ips/china.txt",
@@ -239,6 +238,21 @@ def main() -> int:
                 warn.append("mmdb meta unreadable")
         else:
             warn.append("mmdb present but meta.json missing")
+
+    for name, min_bytes in (
+        ("ASN.mmdb", 1_000_000),
+        ("geoip-lite.dat", 50_000),
+        ("geoip.dat", 1_000_000),
+        ("geosite.dat", 1_000_000),
+    ):
+        f = ROOT / "generated" / "mmdb" / name
+        if not f.exists():
+            warn.append(f"optional binary missing: {name} (run collect_datasets)")
+            continue
+        if f.stat().st_size < min_bytes:
+            hard.append(f"checksum/size anomaly: {name} too small")
+        else:
+            info.append(f"binary ok: {name} bytes={f.stat().st_size}")
 
     diff_path = day / "dataset_diff.json"
     if diff_path.exists():
