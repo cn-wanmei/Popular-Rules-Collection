@@ -63,6 +63,9 @@ jobs:
           pip install pillow cairosvg -q || true
           python scripts/build_icons.py --force || true
           python scripts/build_icons.py --force --monochrome || true
+      - name: Icon registry build
+        continue-on-error: true
+        run: python scripts/icon_registry_build.py
       - name: Icon validate (soft)
         continue-on-error: true
         run: python scripts/icon_validate.py
