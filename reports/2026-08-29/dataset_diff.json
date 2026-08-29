@@ -423,14 +423,14 @@
     },
     "database/ips/china.txt": {
       "old_count": 9662,
-      "new_count": 9662,
-      "added": 0,
+      "new_count": 9665,
+      "added": 3,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
-      "growth_ratio": 0.0,
-      "sha_changed": false,
-      "status": "unchanged"
+      "growth_ratio": 0.0003,
+      "sha_changed": true,
+      "status": "updated"
     },
     "database/ips/chinamobile.txt": {
       "old_count": 1,

@@ -121,9 +121,9 @@
     },
     "airbnb": {
       "opaque_ratio": 0.2654,
-      "color_ratio": 0.0,
+      "color_ratio": 0.0189,
       "dark_ratio": 0.0,
-      "unique_buckets": 1,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -157,9 +157,9 @@
     },
     "applemusic": {
       "opaque_ratio": 0.826,
-      "color_ratio": 0.0,
+      "color_ratio": 0.0001,
       "dark_ratio": 0.0,
-      "unique_buckets": 1,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -229,9 +229,9 @@
     },
     "cloudflare": {
       "opaque_ratio": 0.2864,
-      "color_ratio": 0.0,
+      "color_ratio": 0.0092,
       "dark_ratio": 0.0,
-      "unique_buckets": 1,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -239,7 +239,7 @@
     "copilot": {
       "opaque_ratio": 0.3293,
       "color_ratio": 0.0,
-      "dark_ratio": 0.0,
+      "dark_ratio": 1.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -292,9 +292,9 @@
     },
     "dropbox": {
       "opaque_ratio": 0.4066,
-      "color_ratio": 0.0,
+      "color_ratio": 0.0008,
       "dark_ratio": 0.0,
-      "unique_buckets": 1,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -302,7 +302,7 @@
     "ea": {
       "opaque_ratio": 0.2356,
       "color_ratio": 0.0,
-      "dark_ratio": 0.0,
+      "dark_ratio": 1.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -346,18 +346,18 @@
     },
     "figma": {
       "opaque_ratio": 0.2639,
-      "color_ratio": 0.0,
+      "color_ratio": 0.0024,
       "dark_ratio": 0.0,
-      "unique_buckets": 1,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "firebase": {
       "opaque_ratio": 0.2592,
-      "color_ratio": 0.0,
+      "color_ratio": 0.001,
       "dark_ratio": 0.0,
-      "unique_buckets": 1,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -383,7 +383,7 @@
     "hashicorp": {
       "opaque_ratio": 0.4861,
       "color_ratio": 0.0,
-      "dark_ratio": 0.0,
+      "dark_ratio": 1.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -392,7 +392,7 @@
     "hbo": {
       "opaque_ratio": 0.3216,
       "color_ratio": 0.0,
-      "dark_ratio": 0.0,
+      "dark_ratio": 1.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -437,7 +437,7 @@
     "jetbrains": {
       "opaque_ratio": 0.4747,
       "color_ratio": 0.0,
-      "dark_ratio": 0.0,
+      "dark_ratio": 1.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -509,7 +509,7 @@
     "notion": {
       "opaque_ratio": 0.4964,
       "color_ratio": 0.0,
-      "dark_ratio": 0.0,
+      "dark_ratio": 1.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -518,7 +518,7 @@
     "okx": {
       "opaque_ratio": 0.1835,
       "color_ratio": 0.0,
-      "dark_ratio": 0.0,
+      "dark_ratio": 1.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -590,7 +590,7 @@
     "roblox": {
       "opaque_ratio": 0.6197,
       "color_ratio": 0.0,
-      "dark_ratio": 0.0,
+      "dark_ratio": 1.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -607,9 +607,9 @@
     },
     "shopify": {
       "opaque_ratio": 0.5388,
-      "color_ratio": 0.0,
+      "color_ratio": 0.0002,
       "dark_ratio": 0.0,
-      "unique_buckets": 1,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -671,7 +671,7 @@
     "steam": {
       "opaque_ratio": 0.5842,
       "color_ratio": 0.0,
-      "dark_ratio": 0.0,
+      "dark_ratio": 1.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -698,7 +698,7 @@
     "threads": {
       "opaque_ratio": 0.4313,
       "color_ratio": 0.0,
-      "dark_ratio": 0.0,
+      "dark_ratio": 1.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -707,7 +707,7 @@
     "tidal": {
       "opaque_ratio": 0.2276,
       "color_ratio": 0.0,
-      "dark_ratio": 0.0,
+      "dark_ratio": 1.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -716,7 +716,7 @@
     "tiktok": {
       "opaque_ratio": 0.3617,
       "color_ratio": 0.0,
-      "dark_ratio": 0.0,
+      "dark_ratio": 1.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -743,7 +743,7 @@
     "twitter": {
       "opaque_ratio": 0.2551,
       "color_ratio": 0.0,
-      "dark_ratio": 0.0,
+      "dark_ratio": 1.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -752,7 +752,7 @@
     "uber": {
       "opaque_ratio": 0.1307,
       "color_ratio": 0.0,
-      "dark_ratio": 0.0,
+      "dark_ratio": 1.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -761,7 +761,7 @@
     "ubisoft": {
       "opaque_ratio": 0.4832,
       "color_ratio": 0.0,
-      "dark_ratio": 0.0,
+      "dark_ratio": 1.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -770,7 +770,7 @@
     "vercel": {
       "opaque_ratio": 0.4364,
       "color_ratio": 0.0,
-      "dark_ratio": 0.0,
+      "dark_ratio": 1.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -824,7 +824,7 @@
     "wikipedia": {
       "opaque_ratio": 0.1871,
       "color_ratio": 0.0,
-      "dark_ratio": 0.0,
+      "dark_ratio": 1.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -832,9 +832,9 @@
     },
     "wise": {
       "opaque_ratio": 0.4167,
-      "color_ratio": 0.0,
+      "color_ratio": 0.006,
       "dark_ratio": 0.0,
-      "unique_buckets": 1,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -877,9 +877,9 @@
     },
     "zoom": {
       "opaque_ratio": 0.116,
-      "color_ratio": 0.0,
+      "color_ratio": 0.0009,
       "dark_ratio": 0.0,
-      "unique_buckets": 1,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -981,6 +981,42 @@
       "unique_buckets": 2,
       "multi_significant": 2,
       "likely_mono": false,
+      "likely_blank": false
+    },
+    "global": {
+      "opaque_ratio": 0.6632,
+      "color_ratio": 0.0015,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "network": {
+      "opaque_ratio": 0.6632,
+      "color_ratio": 0.0018,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "booking": {
+      "opaque_ratio": 0.8896,
+      "color_ratio": 0.0,
+      "dark_ratio": 0.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "cursor": {
+      "opaque_ratio": 0.4821,
+      "color_ratio": 0.0,
+      "dark_ratio": 1.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
       "likely_blank": false
     }
   }

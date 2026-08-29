@@ -4,28 +4,17 @@
   "hard": [],
   "warnings": [],
   "info": [
-    "google: sourced (trademark review pending)",
-    "apple: sourced (trademark review pending)",
-    "github: sourced (trademark review pending)",
     "airbnb: sourced (trademark review pending)",
-    "alibaba: sourced (trademark review pending)",
-    "alipay: sourced (trademark review pending)",
-    "anthropic: sourced (trademark review pending)",
     "applemusic: sourced (trademark review pending)",
     "appletv: sourced (trademark review pending)",
     "atlassian: sourced (trademark review pending)",
-    "baidu: sourced (trademark review pending)",
-    "bilibili: sourced (trademark review pending)",
     "binance: sourced (trademark review pending)",
     "bluesky: sourced (trademark review pending)",
-    "claude: sourced (trademark review pending)",
     "cloudflare: sourced (trademark review pending)",
     "copilot: sourced (trademark review pending)",
     "deezer: sourced (trademark review pending)",
     "digitalocean: sourced (trademark review pending)",
-    "discord: sourced (trademark review pending)",
     "docker: sourced (trademark review pending)",
-    "douyin: sourced (trademark review pending)",
     "dropbox: sourced (trademark review pending)",
     "ea: sourced (trademark review pending)",
     "ebay: sourced (trademark review pending)",
@@ -34,27 +23,40 @@
     "facebook: sourced (trademark review pending)",
     "figma: sourced (trademark review pending)",
     "firebase: sourced (trademark review pending)",
-    "gemini: sourced (trademark review pending)",
     "gitlab: sourced (trademark review pending)",
     "hashicorp: sourced (trademark review pending)",
     "hbo: sourced (trademark review pending)",
-    "huawei: sourced (trademark review pending)",
-    "huggingface: sourced (trademark review pending)",
     "icloud: sourced (trademark review pending)",
     "instagram: sourced (trademark review pending)",
     "jetbrains: sourced (trademark review pending)",
-    "kakaotalk: sourced (trademark review pending)"
+    "kakaotalk: sourced (trademark review pending)",
+    "line: sourced (trademark review pending)",
+    "messenger: sourced (trademark review pending)",
+    "naver: sourced (trademark review pending)",
+    "netlify: sourced (trademark review pending)",
+    "notion: sourced (trademark review pending)",
+    "okx: sourced (trademark review pending)",
+    "oppo: sourced (trademark review pending)",
+    "paramountplus: sourced (trademark review pending)",
+    "paypal: sourced (trademark review pending)",
+    "pinterest: sourced (trademark review pending)",
+    "playstation: sourced (trademark review pending)",
+    "reddit: sourced (trademark review pending)",
+    "roblox: sourced (trademark review pending)",
+    "rockstar: sourced (trademark review pending)"
   ],
   "counts": {
-    "icons": 109,
+    "icons": 113,
     "hard": 0,
     "warn": 0
   },
   "provenance": {
-    "project": 10,
-    "simple-icons": 99
+    "project": 19,
+    "official-colors": 26,
+    "third_party": 68
   },
   "color_mode": {
-    "?": 109
+    "color": 43,
+    "monochrome": 70
   }
 }

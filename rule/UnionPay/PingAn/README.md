@@ -1,5 +1,7 @@
 # PingAn
 
+![icon](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/128/placeholder.png)
+
 **UnionPay** · `pingan` · service
 
 

@@ -1,4 +1,4 @@
-generated_at: '2026-08-29T08:57:25.423228+00:00'
+generated_at: '2026-08-29T11:04:01.849254+00:00'
 categories:
   '12306':
     display_name: '12306'
@@ -101,7 +101,7 @@ categories:
       path: rule/China/China
       service_type: aggregate
       domains: 112124
-      ips: 9662
+      ips: 9665
     - id: ctrip
       name: Ctrip
       path: rule/China/Ctrip

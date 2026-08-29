@@ -1,7 +1,7 @@
 {
   "date": "2026-08-29",
   "files": 37,
-  "total_lines": 13960,
+  "total_lines": 13963,
   "invalid_cidr": 0,
   "exact_duplicate_lines": 0,
   "unscoped_large": [
@@ -72,8 +72,8 @@
       "registry_sources": []
     },
     "china": {
-      "unique": 9662,
-      "after_containment": 9662,
+      "unique": 9665,
+      "after_containment": 9665,
       "containment_reducible": 0,
       "exact_dupes": 0,
       "registry_sources": [

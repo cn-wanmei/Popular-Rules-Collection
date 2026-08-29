@@ -1,5 +1,7 @@
 # 12306
 
+![icon](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/128/placeholder.png)
+
 **12306** · `12306` · service
 
 

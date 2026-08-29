@@ -1,13 +1,15 @@
 {
   "date": "2026-08-29",
-  "status": "pass",
+  "status": "warn",
   "hard": [],
-  "warnings": [],
+  "warnings": [
+    "douyin: official-colors but near-black mono dark_ratio=0.9234 color_ratio=0.0767"
+  ],
   "regressions": [],
   "counts": {
-    "icons_measured": 109,
+    "icons_measured": 113,
     "hard": 0,
-    "warn": 0,
+    "warn": 1,
     "regressions": 0
   }
 }
