@@ -5,12 +5,13 @@
   "registry_services": 211,
   "with_real_icon": 129,
   "placeholder_decisions": 82,
-  "verified_entities": 45,
-  "sourced_entities": 84,
+  "verified_entities": 48,
+  "sourced_entities": 80,
   "png_256_ok": 129,
   "by_status": {
-    "verified": 45,
-    "sourced": 84
+    "verified": 48,
+    "placeholder": 1,
+    "sourced": 80
   },
   "by_provenance": {
     "project": 19,

@@ -34,15 +34,17 @@ icons:
       provenance: project
       method: geometric
       verified: true
+      type: geometric
     files:
       svg: source/direct.svg
-      png:
+      png: &id001
         '64': png/64/direct.png
         '128': png/128/direct.png
         '256': png/256/direct.png
     license:
       type: CC0-1.0
       note: Project geometric mark
+      reviewed: true
     status: verified
     visual:
       style: geometric
@@ -50,6 +52,30 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: direct
+    brand:
+      color_verified: true
+      color_na: true
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/direct.svg
+        png: *id001
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/direct.png
+          '128': monochrome/128/direct.png
+          '256': monochrome/256/direct.png
+    namespace: policy
+    schema: 2
   proxy:
     name: Proxy
     type: policy
@@ -59,15 +85,17 @@ icons:
       provenance: project
       method: geometric
       verified: true
+      type: geometric
     files:
       svg: source/proxy.svg
-      png:
+      png: &id002
         '64': png/64/proxy.png
         '128': png/128/proxy.png
         '256': png/256/proxy.png
     license:
       type: CC0-1.0
       note: Project geometric mark
+      reviewed: true
     status: verified
     visual:
       style: geometric
@@ -75,6 +103,30 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: proxy
+    brand:
+      color_verified: true
+      color_na: true
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/proxy.svg
+        png: *id002
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/proxy.png
+          '128': monochrome/128/proxy.png
+          '256': monochrome/256/proxy.png
+    namespace: policy
+    schema: 2
   reject:
     name: Reject
     type: policy
@@ -84,15 +136,17 @@ icons:
       provenance: project
       method: geometric
       verified: true
+      type: geometric
     files:
       svg: source/reject.svg
-      png:
+      png: &id003
         '64': png/64/reject.png
         '128': png/128/reject.png
         '256': png/256/reject.png
     license:
       type: CC0-1.0
       note: Project geometric mark
+      reviewed: true
     status: verified
     visual:
       style: geometric
@@ -100,6 +154,30 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: reject
+    brand:
+      color_verified: true
+      color_na: true
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/reject.svg
+        png: *id003
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/reject.png
+          '128': monochrome/128/reject.png
+          '256': monochrome/256/reject.png
+    namespace: policy
+    schema: 2
   dns:
     name: DNS
     type: policy
@@ -109,15 +187,17 @@ icons:
       provenance: project
       method: geometric
       verified: true
+      type: geometric
     files:
       svg: source/dns.svg
-      png:
+      png: &id004
         '64': png/64/dns.png
         '128': png/128/dns.png
         '256': png/256/dns.png
     license:
       type: CC0-1.0
       note: Project geometric mark
+      reviewed: true
     status: verified
     visual:
       style: geometric
@@ -125,6 +205,30 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: dns
+    brand:
+      color_verified: true
+      color_na: true
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/dns.svg
+        png: *id004
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/dns.png
+          '128': monochrome/128/dns.png
+          '256': monochrome/256/dns.png
+    namespace: policy
+    schema: 2
   lan:
     name: LAN
     type: network
@@ -134,15 +238,17 @@ icons:
       provenance: project
       method: geometric
       verified: true
+      type: geometric
     files:
       svg: source/lan.svg
-      png:
+      png: &id005
         '64': png/64/lan.png
         '128': png/128/lan.png
         '256': png/256/lan.png
     license:
       type: CC0-1.0
       note: Project geometric mark
+      reviewed: true
     status: verified
     visual:
       style: geometric
@@ -150,6 +256,30 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: lan
+    brand:
+      color_verified: true
+      color_na: true
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/lan.svg
+        png: *id005
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/lan.png
+          '128': monochrome/128/lan.png
+          '256': monochrome/256/lan.png
+    namespace: network
+    schema: 2
   china:
     name: China
     type: dataset
@@ -159,15 +289,17 @@ icons:
       provenance: project
       method: geometric
       verified: true
+      type: geometric
     files:
       svg: source/china.svg
-      png:
+      png: &id006
         '64': png/64/china.png
         '128': png/128/china.png
         '256': png/256/china.png
     license:
       type: CC0-1.0
       note: Project geometric mark
+      reviewed: true
     status: verified
     visual:
       style: geometric
@@ -175,6 +307,30 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: china
+    brand:
+      color_verified: true
+      color_na: true
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/china.svg
+        png: *id006
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/china.png
+          '128': monochrome/128/china.png
+          '256': monochrome/256/china.png
+    namespace: dataset
+    schema: 2
   geoip:
     name: GeoIP
     type: dataset
@@ -184,15 +340,17 @@ icons:
       provenance: project
       method: geometric
       verified: true
+      type: geometric
     files:
       svg: source/geoip.svg
-      png:
+      png: &id007
         '64': png/64/geoip.png
         '128': png/128/geoip.png
         '256': png/256/geoip.png
     license:
       type: CC0-1.0
       note: Project geometric mark
+      reviewed: true
     status: verified
     visual:
       style: geometric
@@ -200,6 +358,30 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: geoip
+    brand:
+      color_verified: true
+      color_na: true
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/geoip.svg
+        png: *id007
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/geoip.png
+          '128': monochrome/128/geoip.png
+          '256': monochrome/256/geoip.png
+    namespace: dataset
+    schema: 2
   geosite:
     name: GeoSite
     type: dataset
@@ -209,15 +391,17 @@ icons:
       provenance: project
       method: geometric
       verified: true
+      type: geometric
     files:
       svg: source/geosite.svg
-      png:
+      png: &id008
         '64': png/64/geosite.png
         '128': png/128/geosite.png
         '256': png/256/geosite.png
     license:
       type: CC0-1.0
       note: Project geometric mark
+      reviewed: true
     status: verified
     visual:
       style: geometric
@@ -225,6 +409,30 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: geosite
+    brand:
+      color_verified: true
+      color_na: true
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/geosite.svg
+        png: *id008
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/geosite.png
+          '128': monochrome/128/geosite.png
+          '256': monochrome/256/geosite.png
+    namespace: dataset
+    schema: 2
   asn:
     name: ASN
     type: dataset
@@ -234,15 +442,17 @@ icons:
       provenance: project
       method: geometric
       verified: true
+      type: geometric
     files:
       svg: source/asn.svg
-      png:
+      png: &id009
         '64': png/64/asn.png
         '128': png/128/asn.png
         '256': png/256/asn.png
     license:
       type: CC0-1.0
       note: Project geometric mark
+      reviewed: true
     status: verified
     visual:
       style: geometric
@@ -250,6 +460,30 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: asn
+    brand:
+      color_verified: true
+      color_na: true
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/asn.svg
+        png: *id009
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/asn.png
+          '128': monochrome/128/asn.png
+          '256': monochrome/256/asn.png
+    namespace: dataset
+    schema: 2
   placeholder:
     name: Placeholder
     type: policy
@@ -259,22 +493,48 @@ icons:
       provenance: project
       method: geometric
       verified: true
+      type: geometric
     files:
       svg: source/placeholder.svg
-      png:
+      png: &id010
         '64': png/64/placeholder.png
         '128': png/128/placeholder.png
         '256': png/256/placeholder.png
     license:
       type: CC0-1.0
       note: Project geometric mark
-    status: verified
+      reviewed: true
+    status: placeholder
     visual:
       style: geometric
       color_mode: color
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: placeholder
+    brand:
+      color_verified: true
+      color_na: true
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/placeholder.svg
+        png: *id010
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/placeholder.png
+          '128': monochrome/128/placeholder.png
+          '256': monochrome/256/placeholder.png
+    namespace: policy
+    schema: 2
   google:
     name: Google
     type: service
@@ -285,15 +545,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/google.svg
-      png:
+      png: &id011
         '64': png/64/google.png
         '128': png/128/google.png
         '256': png/256/google.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -301,9 +563,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#4285F4'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: google
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/google.svg
+        png: *id011
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/google.png
+          '128': monochrome/128/google.png
+          '256': monochrome/256/google.png
+    namespace: brand
+    schema: 2
   apple:
     name: Apple
     type: service
@@ -314,15 +598,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/apple.svg
-      png:
+      png: &id012
         '64': png/64/apple.png
         '128': png/128/apple.png
         '256': png/256/apple.png
     license:
       type: see-source
       note: Brand trademarks apply; Simple Icons project CC0-1.0.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -330,9 +616,33 @@ icons:
       background: transparent
       variants:
       - monochrome
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: apple
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/apple.svg
+        png: *id012
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/apple.png
+          '128': monochrome/128/apple.png
+          '256': monochrome/256/apple.png
+    namespace: brand
+    schema: 2
   github:
     name: GitHub
     type: service
@@ -343,15 +653,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/github.svg
-      png:
+      png: &id013
         '64': png/64/github.png
         '128': png/128/github.png
         '256': png/256/github.png
     license:
       type: see-source
       note: Brand trademarks apply; Simple Icons project CC0-1.0.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -359,9 +671,33 @@ icons:
       background: transparent
       variants:
       - monochrome
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#181717'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: github
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/github.svg
+        png: *id013
+        tint_color: '#181717'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/github.png
+          '128': monochrome/128/github.png
+          '256': monochrome/256/github.png
+    namespace: brand
+    schema: 2
   airbnb:
     name: Airbnb
     type: service
@@ -370,12 +706,13 @@ icons:
       provider: simple-icons
       slug: airbnb
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=airbnb
       color: '#FF5A5F'
+      type: simple-icons
     files:
       svg: source/airbnb.svg
-      png:
+      png: &id014
         '64': png/64/airbnb.png
         '128': png/128/airbnb.png
         '256': png/256/airbnb.png
@@ -383,6 +720,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -390,9 +728,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#FF5A5F'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#FF5A5F'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: airbnb
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/airbnb.svg
+        png: *id014
+        tint_color: '#FF5A5F'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/airbnb.png
+          '128': monochrome/128/airbnb.png
+          '256': monochrome/256/airbnb.png
+    namespace: brand
+    schema: 2
   alibaba:
     name: Alibaba
     type: service
@@ -403,15 +766,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/alibaba.svg
-      png:
+      png: &id015
         '64': png/64/alibaba.png
         '128': png/128/alibaba.png
         '256': png/256/alibaba.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -419,6 +784,29 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: alibaba
+    brand:
+      color_verified: false
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/alibaba.svg
+        png: *id015
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/alibaba.png
+          '128': monochrome/128/alibaba.png
+          '256': monochrome/256/alibaba.png
+    namespace: brand
+    schema: 2
   alipay:
     name: Alipay
     type: service
@@ -429,15 +817,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/alipay.svg
-      png:
+      png: &id016
         '64': png/64/alipay.png
         '128': png/128/alipay.png
         '256': png/256/alipay.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -445,9 +835,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#1677FF'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: alipay
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/alipay.svg
+        png: *id016
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/alipay.png
+          '128': monochrome/128/alipay.png
+          '256': monochrome/256/alipay.png
+    namespace: brand
+    schema: 2
   anthropic:
     name: Anthropic
     type: service
@@ -458,15 +870,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/anthropic.svg
-      png:
+      png: &id017
         '64': png/64/anthropic.png
         '128': png/128/anthropic.png
         '256': png/256/anthropic.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -474,9 +888,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#191919'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: anthropic
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/anthropic.svg
+        png: *id017
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/anthropic.png
+          '128': monochrome/128/anthropic.png
+          '256': monochrome/256/anthropic.png
+    namespace: brand
+    schema: 2
   applemusic:
     name: Applemusic
     type: service
@@ -485,12 +921,13 @@ icons:
       provider: simple-icons
       slug: applemusic
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=applemusic
       color: '#FA243C'
+      type: simple-icons
     files:
       svg: source/applemusic.svg
-      png:
+      png: &id018
         '64': png/64/applemusic.png
         '128': png/128/applemusic.png
         '256': png/256/applemusic.png
@@ -498,6 +935,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -505,9 +943,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#FA243C'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#FA243C'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: applemusic
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/applemusic.svg
+        png: *id018
+        tint_color: '#FA243C'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/applemusic.png
+          '128': monochrome/128/applemusic.png
+          '256': monochrome/256/applemusic.png
+    namespace: brand
+    schema: 2
   appletv:
     name: Appletv
     type: service
@@ -515,10 +978,11 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      verified: false
+      verified: true
+      type: simple-icons
     files:
       svg: source/appletv.svg
-      png:
+      png: &id019
         '64': png/64/appletv.png
         '128': png/128/appletv.png
         '256': png/256/appletv.png
@@ -526,15 +990,41 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: simple-icons
+      icon_id: appletv
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/appletv.svg
+        png: *id019
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/appletv.png
+          '128': monochrome/128/appletv.png
+          '256': monochrome/256/appletv.png
+    namespace: brand
+    schema: 2
   atlassian:
     name: Atlassian
     type: service
@@ -545,12 +1035,13 @@ icons:
       provider: simple-icons
       slug: atlassian
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=atlassian
       color: '#0052CC'
+      type: simple-icons
     files:
       svg: source/atlassian.svg
-      png:
+      png: &id020
         '64': png/64/atlassian.png
         '128': png/128/atlassian.png
         '256': png/256/atlassian.png
@@ -558,6 +1049,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -566,9 +1058,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#0052CC'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#0052CC'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: atlassian
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/atlassian.svg
+        png: *id020
+        tint_color: '#0052CC'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/atlassian.png
+          '128': monochrome/128/atlassian.png
+          '256': monochrome/256/atlassian.png
+    namespace: brand
+    schema: 2
   baidu:
     name: Baidu
     type: service
@@ -579,15 +1096,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/baidu.svg
-      png:
+      png: &id021
         '64': png/64/baidu.png
         '128': png/128/baidu.png
         '256': png/256/baidu.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -595,9 +1114,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#2932E1'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: baidu
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/baidu.svg
+        png: *id021
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/baidu.png
+          '128': monochrome/128/baidu.png
+          '256': monochrome/256/baidu.png
+    namespace: brand
+    schema: 2
   bilibili:
     name: Bilibili
     type: service
@@ -608,15 +1149,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/bilibili.svg
-      png:
+      png: &id022
         '64': png/64/bilibili.png
         '128': png/128/bilibili.png
         '256': png/256/bilibili.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -624,9 +1167,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#00A1D6'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: bilibili
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/bilibili.svg
+        png: *id022
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/bilibili.png
+          '128': monochrome/128/bilibili.png
+          '256': monochrome/256/bilibili.png
+    namespace: brand
+    schema: 2
   binance:
     name: Binance
     type: service
@@ -637,12 +1202,13 @@ icons:
       provider: simple-icons
       slug: binance
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=binance
       color: '#F0B90B'
+      type: simple-icons
     files:
       svg: source/binance.svg
-      png:
+      png: &id023
         '64': png/64/binance.png
         '128': png/128/binance.png
         '256': png/256/binance.png
@@ -650,6 +1216,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -658,9 +1225,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#F0B90B'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#F0B90B'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: binance
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/binance.svg
+        png: *id023
+        tint_color: '#F0B90B'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/binance.png
+          '128': monochrome/128/binance.png
+          '256': monochrome/256/binance.png
+    namespace: brand
+    schema: 2
   bluesky:
     name: Bluesky
     type: service
@@ -671,12 +1263,13 @@ icons:
       provider: simple-icons
       slug: bluesky
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=bluesky
       color: '#0285FF'
+      type: simple-icons
     files:
       svg: source/bluesky.svg
-      png:
+      png: &id024
         '64': png/64/bluesky.png
         '128': png/128/bluesky.png
         '256': png/256/bluesky.png
@@ -684,6 +1277,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -692,9 +1286,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#0285FF'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#0285FF'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: bluesky
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/bluesky.svg
+        png: *id024
+        tint_color: '#0285FF'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/bluesky.png
+          '128': monochrome/128/bluesky.png
+          '256': monochrome/256/bluesky.png
+    namespace: brand
+    schema: 2
   claude:
     name: Claude
     type: service
@@ -705,15 +1324,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/claude.svg
-      png:
+      png: &id025
         '64': png/64/claude.png
         '128': png/128/claude.png
         '256': png/256/claude.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -721,9 +1342,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#191919'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: claude
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/claude.svg
+        png: *id025
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/claude.png
+          '128': monochrome/128/claude.png
+          '256': monochrome/256/claude.png
+    namespace: brand
+    schema: 2
   cloudflare:
     name: Cloudflare
     type: service
@@ -734,18 +1377,20 @@ icons:
       provider: simple-icons
       slug: cloudflare
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=cloudflare
       color: '#F38020'
+      type: simple-icons
     files:
       svg: source/cloudflare.svg
-      png:
+      png: &id026
         '64': png/64/cloudflare.png
         '128': png/128/cloudflare.png
         '256': png/256/cloudflare.png
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -754,9 +1399,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#F38020'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#F38020'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: cloudflare
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/cloudflare.svg
+        png: *id026
+        tint_color: '#F38020'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/cloudflare.png
+          '128': monochrome/128/cloudflare.png
+          '256': monochrome/256/cloudflare.png
+    namespace: brand
+    schema: 2
   copilot:
     name: Copilot
     type: service
@@ -767,12 +1437,13 @@ icons:
       provider: simple-icons
       slug: githubcopilot
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=githubcopilot
       color: '#000000'
+      type: simple-icons
     files:
       svg: source/copilot.svg
-      png:
+      png: &id027
         '64': png/64/copilot.png
         '128': png/128/copilot.png
         '256': png/256/copilot.png
@@ -780,6 +1451,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -788,9 +1460,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#000000'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: copilot
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/copilot.svg
+        png: *id027
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/copilot.png
+          '128': monochrome/128/copilot.png
+          '256': monochrome/256/copilot.png
+    namespace: brand
+    schema: 2
   deezer:
     name: Deezer
     type: service
@@ -801,11 +1498,12 @@ icons:
       provider: simple-icons
       slug: deezer
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=deezer
+      type: simple-icons
     files:
       svg: source/deezer.svg
-      png:
+      png: &id028
         '64': png/64/deezer.png
         '128': png/128/deezer.png
         '256': png/256/deezer.png
@@ -813,6 +1511,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -821,6 +1520,32 @@ icons:
       variants:
       - monochrome
       primary_color: null
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: deezer
+    brand:
+      color_verified: false
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/deezer.svg
+        png: *id028
+        tint_color: null
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/deezer.png
+          '128': monochrome/128/deezer.png
+          '256': monochrome/256/deezer.png
+    namespace: brand
+    schema: 2
   digitalocean:
     name: Digitalocean
     type: service
@@ -831,12 +1556,13 @@ icons:
       provider: simple-icons
       slug: digitalocean
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=digitalocean
       color: '#0080FF'
+      type: simple-icons
     files:
       svg: source/digitalocean.svg
-      png:
+      png: &id029
         '64': png/64/digitalocean.png
         '128': png/128/digitalocean.png
         '256': png/256/digitalocean.png
@@ -844,6 +1570,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -852,9 +1579,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#0080FF'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#0080FF'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: digitalocean
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/digitalocean.svg
+        png: *id029
+        tint_color: '#0080FF'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/digitalocean.png
+          '128': monochrome/128/digitalocean.png
+          '256': monochrome/256/digitalocean.png
+    namespace: brand
+    schema: 2
   discord:
     name: Discord
     type: service
@@ -865,15 +1617,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/discord.svg
-      png:
+      png: &id030
         '64': png/64/discord.png
         '128': png/128/discord.png
         '256': png/256/discord.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -881,9 +1635,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#5865F2'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: discord
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/discord.svg
+        png: *id030
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/discord.png
+          '128': monochrome/128/discord.png
+          '256': monochrome/256/discord.png
+    namespace: brand
+    schema: 2
   docker:
     name: Docker
     type: service
@@ -894,18 +1670,20 @@ icons:
       provider: simple-icons
       slug: docker
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=docker
       color: '#2496ED'
+      type: simple-icons
     files:
       svg: source/docker.svg
-      png:
+      png: &id031
         '64': png/64/docker.png
         '128': png/128/docker.png
         '256': png/256/docker.png
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -914,9 +1692,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#2496ED'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#2496ED'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: docker
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/docker.svg
+        png: *id031
+        tint_color: '#2496ED'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/docker.png
+          '128': monochrome/128/docker.png
+          '256': monochrome/256/docker.png
+    namespace: brand
+    schema: 2
   douyin:
     name: Douyin
     type: service
@@ -927,15 +1730,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/douyin.svg
-      png:
+      png: &id032
         '64': png/64/douyin.png
         '128': png/128/douyin.png
         '256': png/256/douyin.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -943,9 +1748,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: douyin
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/douyin.svg
+        png: *id032
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/douyin.png
+          '128': monochrome/128/douyin.png
+          '256': monochrome/256/douyin.png
+    namespace: brand
+    schema: 2
   dropbox:
     name: Dropbox
     type: service
@@ -954,12 +1781,13 @@ icons:
       provider: simple-icons
       slug: dropbox
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=dropbox
       color: '#0061FF'
+      type: simple-icons
     files:
       svg: source/dropbox.svg
-      png:
+      png: &id033
         '64': png/64/dropbox.png
         '128': png/128/dropbox.png
         '256': png/256/dropbox.png
@@ -967,6 +1795,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -974,9 +1803,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#0061FF'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#0061FF'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: dropbox
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/dropbox.svg
+        png: *id033
+        tint_color: '#0061FF'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/dropbox.png
+          '128': monochrome/128/dropbox.png
+          '256': monochrome/256/dropbox.png
+    namespace: brand
+    schema: 2
   ea:
     name: Ea
     type: service
@@ -987,12 +1841,13 @@ icons:
       provider: simple-icons
       slug: ea
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=ea
       color: '#000000'
+      type: simple-icons
     files:
       svg: source/ea.svg
-      png:
+      png: &id034
         '64': png/64/ea.png
         '128': png/128/ea.png
         '256': png/256/ea.png
@@ -1000,6 +1855,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -1008,9 +1864,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#000000'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: ea
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/ea.svg
+        png: *id034
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/ea.png
+          '128': monochrome/128/ea.png
+          '256': monochrome/256/ea.png
+    namespace: brand
+    schema: 2
   ebay:
     name: Ebay
     type: service
@@ -1021,12 +1902,13 @@ icons:
       provider: simple-icons
       slug: ebay
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=ebay
       color: '#E53238'
+      type: simple-icons
     files:
       svg: source/ebay.svg
-      png:
+      png: &id035
         '64': png/64/ebay.png
         '128': png/128/ebay.png
         '256': png/256/ebay.png
@@ -1034,6 +1916,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -1042,9 +1925,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#E53238'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#E53238'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: ebay
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/ebay.svg
+        png: *id035
+        tint_color: '#E53238'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/ebay.png
+          '128': monochrome/128/ebay.png
+          '256': monochrome/256/ebay.png
+    namespace: brand
+    schema: 2
   emby:
     name: Emby
     type: service
@@ -1052,10 +1960,11 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      verified: false
+      verified: true
+      type: simple-icons
     files:
       svg: source/emby.svg
-      png:
+      png: &id036
         '64': png/64/emby.png
         '128': png/128/emby.png
         '256': png/256/emby.png
@@ -1063,15 +1972,41 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#52B54B'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: simple-icons
+      icon_id: emby
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/emby.svg
+        png: *id036
+        tint_color: '#52B54B'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/emby.png
+          '128': monochrome/128/emby.png
+          '256': monochrome/256/emby.png
+    namespace: brand
+    schema: 2
   epic:
     name: Epic
     type: service
@@ -1080,12 +2015,13 @@ icons:
       provider: simple-icons
       slug: epicgames
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=epicgames
       color: '#313131'
+      type: simple-icons
     files:
       svg: source/epic.svg
-      png:
+      png: &id037
         '64': png/64/epic.png
         '128': png/128/epic.png
         '256': png/256/epic.png
@@ -1093,6 +2029,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -1100,9 +2037,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#313131'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#313131'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: epic
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/epic.svg
+        png: *id037
+        tint_color: '#313131'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/epic.png
+          '128': monochrome/128/epic.png
+          '256': monochrome/256/epic.png
+    namespace: brand
+    schema: 2
   facebook:
     name: Facebook
     type: service
@@ -1113,18 +2075,20 @@ icons:
       provider: simple-icons
       slug: facebook
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=facebook
       color: '#0866FF'
+      type: simple-icons
     files:
       svg: source/facebook.svg
-      png:
+      png: &id038
         '64': png/64/facebook.png
         '128': png/128/facebook.png
         '256': png/256/facebook.png
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -1133,9 +2097,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#0866FF'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#0866FF'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: facebook
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/facebook.svg
+        png: *id038
+        tint_color: '#0866FF'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/facebook.png
+          '128': monochrome/128/facebook.png
+          '256': monochrome/256/facebook.png
+    namespace: brand
+    schema: 2
   figma:
     name: Figma
     type: service
@@ -1144,12 +2133,13 @@ icons:
       provider: simple-icons
       slug: figma
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=figma
       color: '#F24E1E'
+      type: simple-icons
     files:
       svg: source/figma.svg
-      png:
+      png: &id039
         '64': png/64/figma.png
         '128': png/128/figma.png
         '256': png/256/figma.png
@@ -1157,6 +2147,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -1164,9 +2155,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#F24E1E'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#F24E1E'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: figma
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/figma.svg
+        png: *id039
+        tint_color: '#F24E1E'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/figma.png
+          '128': monochrome/128/figma.png
+          '256': monochrome/256/figma.png
+    namespace: brand
+    schema: 2
   firebase:
     name: Firebase
     type: service
@@ -1175,12 +2191,13 @@ icons:
       provider: simple-icons
       slug: firebase
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=firebase
       color: '#DD2C00'
+      type: simple-icons
     files:
       svg: source/firebase.svg
-      png:
+      png: &id040
         '64': png/64/firebase.png
         '128': png/128/firebase.png
         '256': png/256/firebase.png
@@ -1188,6 +2205,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -1195,9 +2213,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#DD2C00'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#DD2C00'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: firebase
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/firebase.svg
+        png: *id040
+        tint_color: '#DD2C00'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/firebase.png
+          '128': monochrome/128/firebase.png
+          '256': monochrome/256/firebase.png
+    namespace: brand
+    schema: 2
   gemini:
     name: Gemini
     type: service
@@ -1208,15 +2251,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/gemini.svg
-      png:
+      png: &id041
         '64': png/64/gemini.png
         '128': png/128/gemini.png
         '256': png/256/gemini.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -1224,9 +2269,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#8E75B2'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: gemini
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/gemini.svg
+        png: *id041
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/gemini.png
+          '128': monochrome/128/gemini.png
+          '256': monochrome/256/gemini.png
+    namespace: brand
+    schema: 2
   gitlab:
     name: Gitlab
     type: service
@@ -1235,12 +2302,13 @@ icons:
       provider: simple-icons
       slug: gitlab
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=gitlab
       color: '#FC6D26'
+      type: simple-icons
     files:
       svg: source/gitlab.svg
-      png:
+      png: &id042
         '64': png/64/gitlab.png
         '128': png/128/gitlab.png
         '256': png/256/gitlab.png
@@ -1248,6 +2316,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -1255,9 +2324,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#FC6D26'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#FC6D26'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: gitlab
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/gitlab.svg
+        png: *id042
+        tint_color: '#FC6D26'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/gitlab.png
+          '128': monochrome/128/gitlab.png
+          '256': monochrome/256/gitlab.png
+    namespace: brand
+    schema: 2
   hashicorp:
     name: Hashicorp
     type: service
@@ -1268,12 +2362,13 @@ icons:
       provider: simple-icons
       slug: hashicorp
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=hashicorp
       color: '#000000'
+      type: simple-icons
     files:
       svg: source/hashicorp.svg
-      png:
+      png: &id043
         '64': png/64/hashicorp.png
         '128': png/128/hashicorp.png
         '256': png/256/hashicorp.png
@@ -1281,6 +2376,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -1289,9 +2385,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#000000'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: hashicorp
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/hashicorp.svg
+        png: *id043
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/hashicorp.png
+          '128': monochrome/128/hashicorp.png
+          '256': monochrome/256/hashicorp.png
+    namespace: brand
+    schema: 2
   hbo:
     name: Hbo
     type: service
@@ -1302,12 +2423,13 @@ icons:
       provider: simple-icons
       slug: hbo
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=hbo
       color: '#000000'
+      type: simple-icons
     files:
       svg: source/hbo.svg
-      png:
+      png: &id044
         '64': png/64/hbo.png
         '128': png/128/hbo.png
         '256': png/256/hbo.png
@@ -1315,6 +2437,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -1323,9 +2446,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#000000'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: hbo
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/hbo.svg
+        png: *id044
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/hbo.png
+          '128': monochrome/128/hbo.png
+          '256': monochrome/256/hbo.png
+    namespace: brand
+    schema: 2
   huawei:
     name: Huawei
     type: service
@@ -1336,15 +2484,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/huawei.svg
-      png:
+      png: &id045
         '64': png/64/huawei.png
         '128': png/128/huawei.png
         '256': png/256/huawei.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -1352,9 +2502,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#FF0000'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: huawei
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/huawei.svg
+        png: *id045
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/huawei.png
+          '128': monochrome/128/huawei.png
+          '256': monochrome/256/huawei.png
+    namespace: brand
+    schema: 2
   huggingface:
     name: Huggingface
     type: service
@@ -1365,15 +2537,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/huggingface.svg
-      png:
+      png: &id046
         '64': png/64/huggingface.png
         '128': png/128/huggingface.png
         '256': png/256/huggingface.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -1381,9 +2555,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#FFD21E'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: huggingface
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/huggingface.svg
+        png: *id046
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/huggingface.png
+          '128': monochrome/128/huggingface.png
+          '256': monochrome/256/huggingface.png
+    namespace: brand
+    schema: 2
   icloud:
     name: Icloud
     type: service
@@ -1392,12 +2588,13 @@ icons:
       provider: simple-icons
       slug: icloud
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=icloud
       color: '#3693F3'
+      type: simple-icons
     files:
       svg: source/icloud.svg
-      png:
+      png: &id047
         '64': png/64/icloud.png
         '128': png/128/icloud.png
         '256': png/256/icloud.png
@@ -1405,6 +2602,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -1412,9 +2610,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#3693F3'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#3693F3'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: icloud
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/icloud.svg
+        png: *id047
+        tint_color: '#3693F3'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/icloud.png
+          '128': monochrome/128/icloud.png
+          '256': monochrome/256/icloud.png
+    namespace: brand
+    schema: 2
   instagram:
     name: Instagram
     type: service
@@ -1425,18 +2648,20 @@ icons:
       provider: simple-icons
       slug: instagram
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=instagram
       color: '#FF0069'
+      type: simple-icons
     files:
       svg: source/instagram.svg
-      png:
+      png: &id048
         '64': png/64/instagram.png
         '128': png/128/instagram.png
         '256': png/256/instagram.png
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -1445,9 +2670,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#FF0069'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#FF0069'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: instagram
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/instagram.svg
+        png: *id048
+        tint_color: '#FF0069'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/instagram.png
+          '128': monochrome/128/instagram.png
+          '256': monochrome/256/instagram.png
+    namespace: brand
+    schema: 2
   jetbrains:
     name: Jetbrains
     type: service
@@ -1458,12 +2708,13 @@ icons:
       provider: simple-icons
       slug: jetbrains
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=jetbrains
       color: '#000000'
+      type: simple-icons
     files:
       svg: source/jetbrains.svg
-      png:
+      png: &id049
         '64': png/64/jetbrains.png
         '128': png/128/jetbrains.png
         '256': png/256/jetbrains.png
@@ -1471,6 +2722,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -1479,9 +2731,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#000000'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: jetbrains
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/jetbrains.svg
+        png: *id049
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/jetbrains.png
+          '128': monochrome/128/jetbrains.png
+          '256': monochrome/256/jetbrains.png
+    namespace: brand
+    schema: 2
   kakaotalk:
     name: Kakaotalk
     type: service
@@ -1489,10 +2766,11 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      verified: false
+      verified: true
+      type: simple-icons
     files:
       svg: source/kakaotalk.svg
-      png:
+      png: &id050
         '64': png/64/kakaotalk.png
         '128': png/128/kakaotalk.png
         '256': png/256/kakaotalk.png
@@ -1500,15 +2778,41 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#FFCD00'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: simple-icons
+      icon_id: kakaotalk
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/kakaotalk.svg
+        png: *id050
+        tint_color: '#FFCD00'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/kakaotalk.png
+          '128': monochrome/128/kakaotalk.png
+          '256': monochrome/256/kakaotalk.png
+    namespace: brand
+    schema: 2
   line:
     name: Line
     type: service
@@ -1517,12 +2821,13 @@ icons:
       provider: simple-icons
       slug: line
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=line
       color: '#00C300'
+      type: simple-icons
     files:
       svg: source/line.svg
-      png:
+      png: &id051
         '64': png/64/line.png
         '128': png/128/line.png
         '256': png/256/line.png
@@ -1530,6 +2835,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -1537,9 +2843,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#00C300'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#00C300'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: line
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/line.svg
+        png: *id051
+        tint_color: '#00C300'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/line.png
+          '128': monochrome/128/line.png
+          '256': monochrome/256/line.png
+    namespace: brand
+    schema: 2
   meituan:
     name: Meituan
     type: service
@@ -1550,15 +2881,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/meituan.svg
-      png:
+      png: &id052
         '64': png/64/meituan.png
         '128': png/128/meituan.png
         '256': png/256/meituan.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -1566,9 +2899,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#FFD100'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: meituan
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/meituan.svg
+        png: *id052
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/meituan.png
+          '128': monochrome/128/meituan.png
+          '256': monochrome/256/meituan.png
+    namespace: brand
+    schema: 2
   messenger:
     name: Messenger
     type: service
@@ -1577,12 +2932,13 @@ icons:
       provider: simple-icons
       slug: messenger
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=messenger
       color: '#00B2FF'
+      type: simple-icons
     files:
       svg: source/messenger.svg
-      png:
+      png: &id053
         '64': png/64/messenger.png
         '128': png/128/messenger.png
         '256': png/256/messenger.png
@@ -1590,6 +2946,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -1597,9 +2954,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#00B2FF'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#00B2FF'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: messenger
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/messenger.svg
+        png: *id053
+        tint_color: '#00B2FF'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/messenger.png
+          '128': monochrome/128/messenger.png
+          '256': monochrome/256/messenger.png
+    namespace: brand
+    schema: 2
   naver:
     name: Naver
     type: service
@@ -1607,10 +2989,11 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      verified: false
+      verified: true
+      type: simple-icons
     files:
       svg: source/naver.svg
-      png:
+      png: &id054
         '64': png/64/naver.png
         '128': png/128/naver.png
         '256': png/256/naver.png
@@ -1618,15 +3001,41 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#03C75A'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: simple-icons
+      icon_id: naver
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/naver.svg
+        png: *id054
+        tint_color: '#03C75A'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/naver.png
+          '128': monochrome/128/naver.png
+          '256': monochrome/256/naver.png
+    namespace: brand
+    schema: 2
   netflix:
     name: Netflix
     type: service
@@ -1637,15 +3046,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/netflix.svg
-      png:
+      png: &id055
         '64': png/64/netflix.png
         '128': png/128/netflix.png
         '256': png/256/netflix.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -1653,9 +3064,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#E50914'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: netflix
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/netflix.svg
+        png: *id055
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/netflix.png
+          '128': monochrome/128/netflix.png
+          '256': monochrome/256/netflix.png
+    namespace: brand
+    schema: 2
   netlify:
     name: Netlify
     type: service
@@ -1666,12 +3099,13 @@ icons:
       provider: simple-icons
       slug: netlify
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=netlify
       color: '#00C7B7'
+      type: simple-icons
     files:
       svg: source/netlify.svg
-      png:
+      png: &id056
         '64': png/64/netlify.png
         '128': png/128/netlify.png
         '256': png/256/netlify.png
@@ -1679,6 +3113,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -1687,9 +3122,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#00C7B7'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#00C7B7'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: netlify
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/netlify.svg
+        png: *id056
+        tint_color: '#00C7B7'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/netlify.png
+          '128': monochrome/128/netlify.png
+          '256': monochrome/256/netlify.png
+    namespace: brand
+    schema: 2
   notion:
     name: Notion
     type: service
@@ -1698,12 +3158,13 @@ icons:
       provider: simple-icons
       slug: notion
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=notion
       color: '#000000'
+      type: simple-icons
     files:
       svg: source/notion.svg
-      png:
+      png: &id057
         '64': png/64/notion.png
         '128': png/128/notion.png
         '256': png/256/notion.png
@@ -1711,6 +3172,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -1718,9 +3180,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#000000'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: notion
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/notion.svg
+        png: *id057
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/notion.png
+          '128': monochrome/128/notion.png
+          '256': monochrome/256/notion.png
+    namespace: brand
+    schema: 2
   okx:
     name: Okx
     type: service
@@ -1731,12 +3218,13 @@ icons:
       provider: simple-icons
       slug: okx
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=okx
       color: '#000000'
+      type: simple-icons
     files:
       svg: source/okx.svg
-      png:
+      png: &id058
         '64': png/64/okx.png
         '128': png/128/okx.png
         '256': png/256/okx.png
@@ -1744,6 +3232,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -1752,9 +3241,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#000000'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: okx
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/okx.svg
+        png: *id058
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/okx.png
+          '128': monochrome/128/okx.png
+          '256': monochrome/256/okx.png
+    namespace: brand
+    schema: 2
   oppo:
     name: Oppo
     type: service
@@ -1762,10 +3276,11 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      verified: false
+      verified: true
+      type: simple-icons
     files:
       svg: source/oppo.svg
-      png:
+      png: &id059
         '64': png/64/oppo.png
         '128': png/128/oppo.png
         '256': png/256/oppo.png
@@ -1773,15 +3288,41 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#2D683D'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: simple-icons
+      icon_id: oppo
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/oppo.svg
+        png: *id059
+        tint_color: '#2D683D'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/oppo.png
+          '128': monochrome/128/oppo.png
+          '256': monochrome/256/oppo.png
+    namespace: brand
+    schema: 2
   paramountplus:
     name: Paramountplus
     type: service
@@ -1791,10 +3332,11 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      verified: false
+      verified: true
+      type: simple-icons
     files:
       svg: source/paramountplus.svg
-      png:
+      png: &id060
         '64': png/64/paramountplus.png
         '128': png/128/paramountplus.png
         '256': png/256/paramountplus.png
@@ -1802,6 +3344,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -1809,6 +3352,32 @@ icons:
       background: transparent
       variants:
       - monochrome
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      confidence: simple-icons
+      icon_id: paramountplus
+    brand:
+      color_verified: false
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/paramountplus.svg
+        png: *id060
+        tint_color: null
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/paramountplus.png
+          '128': monochrome/128/paramountplus.png
+          '256': monochrome/256/paramountplus.png
+    namespace: brand
+    schema: 2
   paypal:
     name: Paypal
     type: service
@@ -1817,12 +3386,13 @@ icons:
       provider: simple-icons
       slug: paypal
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=paypal
       color: '#003087'
+      type: simple-icons
     files:
       svg: source/paypal.svg
-      png:
+      png: &id061
         '64': png/64/paypal.png
         '128': png/128/paypal.png
         '256': png/256/paypal.png
@@ -1830,6 +3400,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -1837,9 +3408,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#003087'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#003087'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: paypal
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/paypal.svg
+        png: *id061
+        tint_color: '#003087'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/paypal.png
+          '128': monochrome/128/paypal.png
+          '256': monochrome/256/paypal.png
+    namespace: brand
+    schema: 2
   perplexity:
     name: Perplexity
     type: service
@@ -1850,15 +3446,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/perplexity.svg
-      png:
+      png: &id062
         '64': png/64/perplexity.png
         '128': png/128/perplexity.png
         '256': png/256/perplexity.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -1866,9 +3464,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#1FB8CD'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: perplexity
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/perplexity.svg
+        png: *id062
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/perplexity.png
+          '128': monochrome/128/perplexity.png
+          '256': monochrome/256/perplexity.png
+    namespace: brand
+    schema: 2
   pinterest:
     name: Pinterest
     type: service
@@ -1876,10 +3496,11 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      verified: false
+      verified: true
+      type: simple-icons
     files:
       svg: source/pinterest.svg
-      png:
+      png: &id063
         '64': png/64/pinterest.png
         '128': png/128/pinterest.png
         '256': png/256/pinterest.png
@@ -1887,15 +3508,41 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#BD081C'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: simple-icons
+      icon_id: pinterest
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/pinterest.svg
+        png: *id063
+        tint_color: '#BD081C'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/pinterest.png
+          '128': monochrome/128/pinterest.png
+          '256': monochrome/256/pinterest.png
+    namespace: brand
+    schema: 2
   playstation:
     name: Playstation
     type: service
@@ -1906,12 +3553,13 @@ icons:
       provider: simple-icons
       slug: playstation
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=playstation
       color: '#0070D1'
+      type: simple-icons
     files:
       svg: source/playstation.svg
-      png:
+      png: &id064
         '64': png/64/playstation.png
         '128': png/128/playstation.png
         '256': png/256/playstation.png
@@ -1919,6 +3567,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -1927,9 +3576,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#0070D1'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#0070D1'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: playstation
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/playstation.svg
+        png: *id064
+        tint_color: '#0070D1'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/playstation.png
+          '128': monochrome/128/playstation.png
+          '256': monochrome/256/playstation.png
+    namespace: brand
+    schema: 2
   reddit:
     name: Reddit
     type: service
@@ -1940,18 +3614,20 @@ icons:
       provider: simple-icons
       slug: reddit
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=reddit
       color: '#FF4500'
+      type: simple-icons
     files:
       svg: source/reddit.svg
-      png:
+      png: &id065
         '64': png/64/reddit.png
         '128': png/128/reddit.png
         '256': png/256/reddit.png
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -1960,9 +3636,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#FF4500'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#FF4500'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: reddit
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/reddit.svg
+        png: *id065
+        tint_color: '#FF4500'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/reddit.png
+          '128': monochrome/128/reddit.png
+          '256': monochrome/256/reddit.png
+    namespace: brand
+    schema: 2
   roblox:
     name: Roblox
     type: service
@@ -1973,12 +3674,13 @@ icons:
       provider: simple-icons
       slug: roblox
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=roblox
       color: '#000000'
+      type: simple-icons
     files:
       svg: source/roblox.svg
-      png:
+      png: &id066
         '64': png/64/roblox.png
         '128': png/128/roblox.png
         '256': png/256/roblox.png
@@ -1986,6 +3688,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -1994,9 +3697,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#000000'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: roblox
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/roblox.svg
+        png: *id066
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/roblox.png
+          '128': monochrome/128/roblox.png
+          '256': monochrome/256/roblox.png
+    namespace: brand
+    schema: 2
   rockstar:
     name: Rockstar
     type: service
@@ -2004,10 +3732,11 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      verified: false
+      verified: true
+      type: simple-icons
     files:
       svg: source/rockstar.svg
-      png:
+      png: &id067
         '64': png/64/rockstar.png
         '128': png/128/rockstar.png
         '256': png/256/rockstar.png
@@ -2015,15 +3744,41 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#FCAF17'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: simple-icons
+      icon_id: rockstar
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/rockstar.svg
+        png: *id067
+        tint_color: '#FCAF17'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/rockstar.png
+          '128': monochrome/128/rockstar.png
+          '256': monochrome/256/rockstar.png
+    namespace: brand
+    schema: 2
   shopify:
     name: Shopify
     type: service
@@ -2032,12 +3787,13 @@ icons:
       provider: simple-icons
       slug: shopify
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=shopify
       color: '#7AB55C'
+      type: simple-icons
     files:
       svg: source/shopify.svg
-      png:
+      png: &id068
         '64': png/64/shopify.png
         '128': png/128/shopify.png
         '256': png/256/shopify.png
@@ -2045,6 +3801,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -2052,9 +3809,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#7AB55C'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#7AB55C'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: shopify
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/shopify.svg
+        png: *id068
+        tint_color: '#7AB55C'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/shopify.png
+          '128': monochrome/128/shopify.png
+          '256': monochrome/256/shopify.png
+    namespace: brand
+    schema: 2
   signal:
     name: Signal
     type: service
@@ -2063,12 +3845,13 @@ icons:
       provider: simple-icons
       slug: signal
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=signal
       color: '#3B45FD'
+      type: simple-icons
     files:
       svg: source/signal.svg
-      png:
+      png: &id069
         '64': png/64/signal.png
         '128': png/128/signal.png
         '256': png/256/signal.png
@@ -2076,6 +3859,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -2083,9 +3867,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#3B45FD'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#3B45FD'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: signal
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/signal.svg
+        png: *id069
+        tint_color: '#3B45FD'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/signal.png
+          '128': monochrome/128/signal.png
+          '256': monochrome/256/signal.png
+    namespace: brand
+    schema: 2
   sina:
     name: Sina
     type: service
@@ -2096,12 +3905,13 @@ icons:
       provider: simple-icons
       slug: sinaweibo
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=sinaweibo
       color: '#E6162D'
+      type: simple-icons
     files:
       svg: source/sina.svg
-      png:
+      png: &id070
         '64': png/64/sina.png
         '128': png/128/sina.png
         '256': png/256/sina.png
@@ -2109,6 +3919,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     relation: shared_brand
     brand:
@@ -2117,6 +3928,7 @@ icons:
       relation: shared_brand
       color: '#E6162D'
       color_source: simple-icons
+      color_verified: false
     visual:
       style: brand
       color_mode: monochrome
@@ -2124,6 +3936,30 @@ icons:
       variants:
       - monochrome
       primary_color: '#E6162D'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: sina
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/sina.svg
+        png: *id070
+        tint_color: '#E6162D'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/sina.png
+          '128': monochrome/128/sina.png
+          '256': monochrome/256/sina.png
+    namespace: brand
+    schema: 2
   snapchat:
     name: Snapchat
     type: service
@@ -2131,10 +3967,11 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      verified: false
+      verified: true
+      type: simple-icons
     files:
       svg: source/snapchat.svg
-      png:
+      png: &id071
         '64': png/64/snapchat.png
         '128': png/128/snapchat.png
         '256': png/256/snapchat.png
@@ -2142,15 +3979,41 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#FFFC00'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: simple-icons
+      icon_id: snapchat
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/snapchat.svg
+        png: *id071
+        tint_color: '#FFFC00'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/snapchat.png
+          '128': monochrome/128/snapchat.png
+          '256': monochrome/256/snapchat.png
+    namespace: brand
+    schema: 2
   soundcloud:
     name: Soundcloud
     type: service
@@ -2161,12 +4024,13 @@ icons:
       provider: simple-icons
       slug: soundcloud
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=soundcloud
       color: '#FF5500'
+      type: simple-icons
     files:
       svg: source/soundcloud.svg
-      png:
+      png: &id072
         '64': png/64/soundcloud.png
         '128': png/128/soundcloud.png
         '256': png/256/soundcloud.png
@@ -2174,6 +4038,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -2182,9 +4047,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#FF5500'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#FF5500'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: soundcloud
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/soundcloud.svg
+        png: *id072
+        tint_color: '#FF5500'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/soundcloud.png
+          '128': monochrome/128/soundcloud.png
+          '256': monochrome/256/soundcloud.png
+    namespace: brand
+    schema: 2
   speedtest:
     name: Speedtest
     type: service
@@ -2192,10 +4082,11 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      verified: false
+      verified: true
+      type: simple-icons
     files:
       svg: source/speedtest.svg
-      png:
+      png: &id073
         '64': png/64/speedtest.png
         '128': png/128/speedtest.png
         '256': png/256/speedtest.png
@@ -2203,15 +4094,41 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#141526'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: simple-icons
+      icon_id: speedtest
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/speedtest.svg
+        png: *id073
+        tint_color: '#141526'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/speedtest.png
+          '128': monochrome/128/speedtest.png
+          '256': monochrome/256/speedtest.png
+    namespace: brand
+    schema: 2
   spotify:
     name: Spotify
     type: service
@@ -2222,15 +4139,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/spotify.svg
-      png:
+      png: &id074
         '64': png/64/spotify.png
         '128': png/128/spotify.png
         '256': png/256/spotify.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -2238,9 +4157,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#1ED760'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: spotify
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/spotify.svg
+        png: *id074
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/spotify.png
+          '128': monochrome/128/spotify.png
+          '256': monochrome/256/spotify.png
+    namespace: brand
+    schema: 2
   steam:
     name: Steam
     type: service
@@ -2249,12 +4190,13 @@ icons:
       provider: simple-icons
       slug: steam
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=steam
       color: '#000000'
+      type: simple-icons
     files:
       svg: source/steam.svg
-      png:
+      png: &id075
         '64': png/64/steam.png
         '128': png/128/steam.png
         '256': png/256/steam.png
@@ -2262,6 +4204,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -2269,9 +4212,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#000000'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: steam
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/steam.svg
+        png: *id075
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/steam.png
+          '128': monochrome/128/steam.png
+          '256': monochrome/256/steam.png
+    namespace: brand
+    schema: 2
   stripe:
     name: Stripe
     type: service
@@ -2280,12 +4248,13 @@ icons:
       provider: simple-icons
       slug: stripe
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=stripe
       color: '#635BFF'
+      type: simple-icons
     files:
       svg: source/stripe.svg
-      png:
+      png: &id076
         '64': png/64/stripe.png
         '128': png/128/stripe.png
         '256': png/256/stripe.png
@@ -2293,6 +4262,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -2300,9 +4270,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#635BFF'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#635BFF'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: stripe
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/stripe.svg
+        png: *id076
+        tint_color: '#635BFF'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/stripe.png
+          '128': monochrome/128/stripe.png
+          '256': monochrome/256/stripe.png
+    namespace: brand
+    schema: 2
   telegram:
     name: Telegram
     type: service
@@ -2313,18 +4308,20 @@ icons:
       provider: simple-icons
       slug: telegram
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=telegram
       color: '#26A5E4'
+      type: simple-icons
     files:
       svg: source/telegram.svg
-      png:
+      png: &id077
         '64': png/64/telegram.png
         '128': png/128/telegram.png
         '256': png/256/telegram.png
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -2333,9 +4330,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#26A5E4'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#26A5E4'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: telegram
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/telegram.svg
+        png: *id077
+        tint_color: '#26A5E4'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/telegram.png
+          '128': monochrome/128/telegram.png
+          '256': monochrome/256/telegram.png
+    namespace: brand
+    schema: 2
   threads:
     name: Threads
     type: service
@@ -2344,12 +4366,13 @@ icons:
       provider: simple-icons
       slug: threads
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=threads
       color: '#000000'
+      type: simple-icons
     files:
       svg: source/threads.svg
-      png:
+      png: &id078
         '64': png/64/threads.png
         '128': png/128/threads.png
         '256': png/256/threads.png
@@ -2357,6 +4380,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -2364,9 +4388,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#000000'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: threads
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/threads.svg
+        png: *id078
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/threads.png
+          '128': monochrome/128/threads.png
+          '256': monochrome/256/threads.png
+    namespace: brand
+    schema: 2
   tidal:
     name: Tidal
     type: service
@@ -2377,12 +4426,13 @@ icons:
       provider: simple-icons
       slug: tidal
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=tidal
       color: '#000000'
+      type: simple-icons
     files:
       svg: source/tidal.svg
-      png:
+      png: &id079
         '64': png/64/tidal.png
         '128': png/128/tidal.png
         '256': png/256/tidal.png
@@ -2390,6 +4440,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -2398,9 +4449,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#000000'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: tidal
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/tidal.svg
+        png: *id079
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/tidal.png
+          '128': monochrome/128/tidal.png
+          '256': monochrome/256/tidal.png
+    namespace: brand
+    schema: 2
   tiktok:
     name: Tiktok
     type: service
@@ -2411,18 +4487,20 @@ icons:
       provider: simple-icons
       slug: tiktok
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=tiktok
       color: '#000000'
+      type: simple-icons
     files:
       svg: source/tiktok.svg
-      png:
+      png: &id080
         '64': png/64/tiktok.png
         '128': png/128/tiktok.png
         '256': png/256/tiktok.png
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -2431,9 +4509,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#000000'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: tiktok
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/tiktok.svg
+        png: *id080
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/tiktok.png
+          '128': monochrome/128/tiktok.png
+          '256': monochrome/256/tiktok.png
+    namespace: brand
+    schema: 2
   trello:
     name: Trello
     type: service
@@ -2444,12 +4547,13 @@ icons:
       provider: simple-icons
       slug: trello
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=trello
       color: '#0052CC'
+      type: simple-icons
     files:
       svg: source/trello.svg
-      png:
+      png: &id081
         '64': png/64/trello.png
         '128': png/128/trello.png
         '256': png/256/trello.png
@@ -2457,6 +4561,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -2465,9 +4570,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#0052CC'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#0052CC'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: trello
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/trello.svg
+        png: *id081
+        tint_color: '#0052CC'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/trello.png
+          '128': monochrome/128/trello.png
+          '256': monochrome/256/trello.png
+    namespace: brand
+    schema: 2
   twitch:
     name: Twitch
     type: service
@@ -2478,18 +4608,20 @@ icons:
       provider: simple-icons
       slug: twitch
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=twitch
       color: '#9146FF'
+      type: simple-icons
     files:
       svg: source/twitch.svg
-      png:
+      png: &id082
         '64': png/64/twitch.png
         '128': png/128/twitch.png
         '256': png/256/twitch.png
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -2498,9 +4630,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#9146FF'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#9146FF'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: twitch
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/twitch.svg
+        png: *id082
+        tint_color: '#9146FF'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/twitch.png
+          '128': monochrome/128/twitch.png
+          '256': monochrome/256/twitch.png
+    namespace: brand
+    schema: 2
   twitter:
     name: Twitter
     type: service
@@ -2511,18 +4668,20 @@ icons:
       provider: simple-icons
       slug: x
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=x
       color: '#000000'
+      type: simple-icons
     files:
       svg: source/twitter.svg
-      png:
+      png: &id083
         '64': png/64/twitter.png
         '128': png/128/twitter.png
         '256': png/256/twitter.png
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -2531,9 +4690,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#000000'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: twitter
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/twitter.svg
+        png: *id083
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/twitter.png
+          '128': monochrome/128/twitter.png
+          '256': monochrome/256/twitter.png
+    namespace: brand
+    schema: 2
   uber:
     name: Uber
     type: service
@@ -2542,12 +4726,13 @@ icons:
       provider: simple-icons
       slug: uber
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=uber
       color: '#000000'
+      type: simple-icons
     files:
       svg: source/uber.svg
-      png:
+      png: &id084
         '64': png/64/uber.png
         '128': png/128/uber.png
         '256': png/256/uber.png
@@ -2555,6 +4740,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -2562,9 +4748,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#000000'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: uber
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/uber.svg
+        png: *id084
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/uber.png
+          '128': monochrome/128/uber.png
+          '256': monochrome/256/uber.png
+    namespace: brand
+    schema: 2
   ubisoft:
     name: Ubisoft
     type: service
@@ -2575,12 +4786,13 @@ icons:
       provider: simple-icons
       slug: ubisoft
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=ubisoft
       color: '#000000'
+      type: simple-icons
     files:
       svg: source/ubisoft.svg
-      png:
+      png: &id085
         '64': png/64/ubisoft.png
         '128': png/128/ubisoft.png
         '256': png/256/ubisoft.png
@@ -2588,6 +4800,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -2596,9 +4809,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#000000'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: ubisoft
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/ubisoft.svg
+        png: *id085
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/ubisoft.png
+          '128': monochrome/128/ubisoft.png
+          '256': monochrome/256/ubisoft.png
+    namespace: brand
+    schema: 2
   vercel:
     name: Vercel
     type: service
@@ -2607,12 +4845,13 @@ icons:
       provider: simple-icons
       slug: vercel
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=vercel
       color: '#000000'
+      type: simple-icons
     files:
       svg: source/vercel.svg
-      png:
+      png: &id086
         '64': png/64/vercel.png
         '128': png/128/vercel.png
         '256': png/256/vercel.png
@@ -2620,6 +4859,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -2627,9 +4867,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#000000'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: vercel
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/vercel.svg
+        png: *id086
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/vercel.png
+          '128': monochrome/128/vercel.png
+          '256': monochrome/256/vercel.png
+    namespace: brand
+    schema: 2
   vimeo:
     name: Vimeo
     type: service
@@ -2640,12 +4905,13 @@ icons:
       provider: simple-icons
       slug: vimeo
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=vimeo
       color: '#1AB7EA'
+      type: simple-icons
     files:
       svg: source/vimeo.svg
-      png:
+      png: &id087
         '64': png/64/vimeo.png
         '128': png/128/vimeo.png
         '256': png/256/vimeo.png
@@ -2653,6 +4919,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -2661,9 +4928,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#1AB7EA'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#1AB7EA'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: vimeo
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/vimeo.svg
+        png: *id087
+        tint_color: '#1AB7EA'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/vimeo.png
+          '128': monochrome/128/vimeo.png
+          '256': monochrome/256/vimeo.png
+    namespace: brand
+    schema: 2
   vivo:
     name: Vivo
     type: service
@@ -2671,10 +4963,11 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      verified: false
+      verified: true
+      type: simple-icons
     files:
       svg: source/vivo.svg
-      png:
+      png: &id088
         '64': png/64/vivo.png
         '128': png/128/vivo.png
         '256': png/256/vivo.png
@@ -2682,15 +4975,41 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#415FFF'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: simple-icons
+      icon_id: vivo
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/vivo.svg
+        png: *id088
+        tint_color: '#415FFF'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/vivo.png
+          '128': monochrome/128/vivo.png
+          '256': monochrome/256/vivo.png
+    namespace: brand
+    schema: 2
   wechat:
     name: Wechat
     type: service
@@ -2701,15 +5020,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/wechat.svg
-      png:
+      png: &id089
         '64': png/64/wechat.png
         '128': png/128/wechat.png
         '256': png/256/wechat.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -2717,9 +5038,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#07C160'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: wechat
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/wechat.svg
+        png: *id089
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/wechat.png
+          '128': monochrome/128/wechat.png
+          '256': monochrome/256/wechat.png
+    namespace: brand
+    schema: 2
   weibo:
     name: Weibo
     type: service
@@ -2730,12 +5073,13 @@ icons:
       provider: simple-icons
       slug: sinaweibo
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=sinaweibo
       color: '#E6162D'
+      type: simple-icons
     files:
       svg: source/weibo.svg
-      png:
+      png: &id090
         '64': png/64/weibo.png
         '128': png/128/weibo.png
         '256': png/256/weibo.png
@@ -2743,6 +5087,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     relation: shared_brand
     brand:
@@ -2751,6 +5096,7 @@ icons:
       relation: shared_brand
       color: '#E6162D'
       color_source: simple-icons
+      color_verified: false
     visual:
       style: brand
       color_mode: monochrome
@@ -2758,6 +5104,30 @@ icons:
       variants:
       - monochrome
       primary_color: '#E6162D'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: weibo
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/weibo.svg
+        png: *id090
+        tint_color: '#E6162D'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/weibo.png
+          '128': monochrome/128/weibo.png
+          '256': monochrome/256/weibo.png
+    namespace: brand
+    schema: 2
   whatsapp:
     name: Whatsapp
     type: service
@@ -2768,18 +5138,20 @@ icons:
       provider: simple-icons
       slug: whatsapp
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=whatsapp
       color: '#25D366'
+      type: simple-icons
     files:
       svg: source/whatsapp.svg
-      png:
+      png: &id091
         '64': png/64/whatsapp.png
         '128': png/128/whatsapp.png
         '256': png/256/whatsapp.png
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -2788,9 +5160,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#25D366'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#25D366'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: whatsapp
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/whatsapp.svg
+        png: *id091
+        tint_color: '#25D366'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/whatsapp.png
+          '128': monochrome/128/whatsapp.png
+          '256': monochrome/256/whatsapp.png
+    namespace: brand
+    schema: 2
   wikipedia:
     name: Wikipedia
     type: service
@@ -2801,12 +5198,13 @@ icons:
       provider: simple-icons
       slug: wikipedia
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=wikipedia
       color: '#000000'
+      type: simple-icons
     files:
       svg: source/wikipedia.svg
-      png:
+      png: &id092
         '64': png/64/wikipedia.png
         '128': png/128/wikipedia.png
         '256': png/256/wikipedia.png
@@ -2814,6 +5212,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -2822,9 +5221,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#000000'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#000000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: wikipedia
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/wikipedia.svg
+        png: *id092
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/wikipedia.png
+          '128': monochrome/128/wikipedia.png
+          '256': monochrome/256/wikipedia.png
+    namespace: brand
+    schema: 2
   wise:
     name: Wise
     type: service
@@ -2835,12 +5259,13 @@ icons:
       provider: simple-icons
       slug: wise
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=wise
       color: '#9FE870'
+      type: simple-icons
     files:
       svg: source/wise.svg
-      png:
+      png: &id093
         '64': png/64/wise.png
         '128': png/128/wise.png
         '256': png/256/wise.png
@@ -2848,6 +5273,7 @@ icons:
       type: see-source
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -2856,9 +5282,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#9FE870'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#9FE870'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: wise
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/wise.svg
+        png: *id093
+        tint_color: '#9FE870'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/wise.png
+          '128': monochrome/128/wise.png
+          '256': monochrome/256/wise.png
+    namespace: brand
+    schema: 2
   xiaomi:
     name: Xiaomi
     type: service
@@ -2869,15 +5320,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/xiaomi.svg
-      png:
+      png: &id094
         '64': png/64/xiaomi.png
         '128': png/128/xiaomi.png
         '256': png/256/xiaomi.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -2885,9 +5338,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#FF6900'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: xiaomi
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/xiaomi.svg
+        png: *id094
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/xiaomi.png
+          '128': monochrome/128/xiaomi.png
+          '256': monochrome/256/xiaomi.png
+    namespace: brand
+    schema: 2
   youtube:
     name: Youtube
     type: service
@@ -2898,15 +5373,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/youtube.svg
-      png:
+      png: &id095
         '64': png/64/youtube.png
         '128': png/128/youtube.png
         '256': png/256/youtube.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -2914,9 +5391,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#FF0000'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: youtube
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/youtube.svg
+        png: *id095
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/youtube.png
+          '128': monochrome/128/youtube.png
+          '256': monochrome/256/youtube.png
+    namespace: brand
+    schema: 2
   youtubemusic:
     name: Youtubemusic
     type: service
@@ -2924,10 +5423,11 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      verified: false
+      verified: true
+      type: simple-icons
     files:
       svg: source/youtubemusic.svg
-      png:
+      png: &id096
         '64': png/64/youtubemusic.png
         '128': png/128/youtubemusic.png
         '256': png/256/youtubemusic.png
@@ -2935,15 +5435,41 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#FF0000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: simple-icons
+      icon_id: youtubemusic
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/youtubemusic.svg
+        png: *id096
+        tint_color: '#FF0000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/youtubemusic.png
+          '128': monochrome/128/youtubemusic.png
+          '256': monochrome/256/youtubemusic.png
+    namespace: brand
+    schema: 2
   zhihu:
     name: Zhihu
     type: service
@@ -2954,15 +5480,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/zhihu.svg
-      png:
+      png: &id097
         '64': png/64/zhihu.png
         '128': png/128/zhihu.png
         '256': png/256/zhihu.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -2970,9 +5498,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#0084FF'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: zhihu
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/zhihu.svg
+        png: *id097
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/zhihu.png
+          '128': monochrome/128/zhihu.png
+          '256': monochrome/256/zhihu.png
+    namespace: brand
+    schema: 2
   zoom:
     name: Zoom
     type: service
@@ -2981,12 +5531,13 @@ icons:
       provider: simple-icons
       slug: zoom
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=zoom
       color: '#0B5CFF'
+      type: simple-icons
     files:
       svg: source/zoom.svg
-      png:
+      png: &id098
         '64': png/64/zoom.png
         '128': png/128/zoom.png
         '256': png/256/zoom.png
@@ -2994,6 +5545,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -3001,9 +5553,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#0B5CFF'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#0B5CFF'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: zoom
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/zoom.svg
+        png: *id098
+        tint_color: '#0B5CFF'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/zoom.png
+          '128': monochrome/128/zoom.png
+          '256': monochrome/256/zoom.png
+    namespace: brand
+    schema: 2
   microsoft:
     name: Microsoft
     type: service
@@ -3014,15 +5591,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/microsoft.svg
-      png:
+      png: &id099
         '64': png/64/microsoft.png
         '128': png/128/microsoft.png
         '256': png/256/microsoft.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -3030,6 +5609,29 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: microsoft
+    brand:
+      color_verified: false
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/microsoft.svg
+        png: *id099
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/microsoft.png
+          '128': monochrome/128/microsoft.png
+          '256': monochrome/256/microsoft.png
+    namespace: brand
+    schema: 2
   deepseek:
     name: Deepseek
     type: service
@@ -3040,15 +5642,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/deepseek.svg
-      png:
+      png: &id100
         '64': png/64/deepseek.png
         '128': png/128/deepseek.png
         '256': png/256/deepseek.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -3056,6 +5660,29 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: deepseek
+    brand:
+      color_verified: false
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/deepseek.svg
+        png: *id100
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/deepseek.png
+          '128': monochrome/128/deepseek.png
+          '256': monochrome/256/deepseek.png
+    namespace: brand
+    schema: 2
   openai:
     name: Openai
     type: service
@@ -3066,15 +5693,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/openai.svg
-      png:
+      png: &id101
         '64': png/64/openai.png
         '128': png/128/openai.png
         '256': png/256/openai.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -3082,9 +5711,31 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#412991'
       color_source: simple-icons-ref
+      color_verified: true
+    identity:
+      verified: true
+      icon_id: openai
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/openai.svg
+        png: *id101
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/openai.png
+          '128': monochrome/128/openai.png
+          '256': monochrome/256/openai.png
+    namespace: brand
+    schema: 2
   tencent:
     name: Tencent
     type: service
@@ -3095,15 +5746,17 @@ icons:
       provider: project-brand
       provenance: official-colors
       verified: true
+      type: project-redraw
     files:
       svg: source/tencent.svg
-      png:
+      png: &id102
         '64': png/64/tencent.png
         '128': png/128/tencent.png
         '256': png/256/tencent.png
     license:
       type: brand-guidelines
       note: Identification mark; trademarks apply.
+      reviewed: true
     status: verified
     visual:
       style: brand
@@ -3111,6 +5764,29 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: tencent
+    brand:
+      color_verified: false
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/tencent.svg
+        png: *id102
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/tencent.png
+          '128': monochrome/128/tencent.png
+          '256': monochrome/256/tencent.png
+    namespace: brand
+    schema: 2
   adblock:
     name: AdBlock
     type: dataset
@@ -3120,15 +5796,17 @@ icons:
       provenance: project
       method: geometric
       verified: true
+      type: geometric
     files:
       svg: source/adblock.svg
-      png:
+      png: &id103
         '64': png/64/adblock.png
         '128': png/128/adblock.png
         '256': png/256/adblock.png
     license:
       type: CC0-1.0
       note: Project geometric mark
+      reviewed: true
     status: verified
     visual:
       style: geometric
@@ -3136,6 +5814,30 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: adblock
+    brand:
+      color_verified: true
+      color_na: true
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/adblock.svg
+        png: *id103
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/adblock.png
+          '128': monochrome/128/adblock.png
+          '256': monochrome/256/adblock.png
+    namespace: dataset
+    schema: 2
   chinamobile:
     name: China Mobile
     type: dataset
@@ -3145,15 +5847,17 @@ icons:
       provenance: project
       method: geometric
       verified: true
+      type: geometric
     files:
       svg: source/chinamobile.svg
-      png:
+      png: &id104
         '64': png/64/chinamobile.png
         '128': png/128/chinamobile.png
         '256': png/256/chinamobile.png
     license:
       type: CC0-1.0
       note: Project geometric mark
+      reviewed: true
     status: verified
     visual:
       style: geometric
@@ -3161,6 +5865,30 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: chinamobile
+    brand:
+      color_verified: true
+      color_na: true
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/chinamobile.svg
+        png: *id104
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/chinamobile.png
+          '128': monochrome/128/chinamobile.png
+          '256': monochrome/256/chinamobile.png
+    namespace: dataset
+    schema: 2
   chinatelecom:
     name: China Telecom
     type: dataset
@@ -3170,15 +5898,17 @@ icons:
       provenance: project
       method: geometric
       verified: true
+      type: geometric
     files:
       svg: source/chinatelecom.svg
-      png:
+      png: &id105
         '64': png/64/chinatelecom.png
         '128': png/128/chinatelecom.png
         '256': png/256/chinatelecom.png
     license:
       type: CC0-1.0
       note: Project geometric mark
+      reviewed: true
     status: verified
     visual:
       style: geometric
@@ -3186,6 +5916,30 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: chinatelecom
+    brand:
+      color_verified: true
+      color_na: true
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/chinatelecom.svg
+        png: *id105
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/chinatelecom.png
+          '128': monochrome/128/chinatelecom.png
+          '256': monochrome/256/chinatelecom.png
+    namespace: dataset
+    schema: 2
   chinaunicom:
     name: China Unicom
     type: dataset
@@ -3195,15 +5949,17 @@ icons:
       provenance: project
       method: geometric
       verified: true
+      type: geometric
     files:
       svg: source/chinaunicom.svg
-      png:
+      png: &id106
         '64': png/64/chinaunicom.png
         '128': png/128/chinaunicom.png
         '256': png/256/chinaunicom.png
     license:
       type: CC0-1.0
       note: Project geometric mark
+      reviewed: true
     status: verified
     visual:
       style: geometric
@@ -3211,6 +5967,30 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: chinaunicom
+    brand:
+      color_verified: true
+      color_na: true
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/chinaunicom.svg
+        png: *id106
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/chinaunicom.png
+          '128': monochrome/128/chinaunicom.png
+          '256': monochrome/256/chinaunicom.png
+    namespace: dataset
+    schema: 2
   gfw:
     name: GFW
     type: dataset
@@ -3220,15 +6000,17 @@ icons:
       provenance: project
       method: geometric
       verified: true
+      type: geometric
     files:
       svg: source/gfw.svg
-      png:
+      png: &id107
         '64': png/64/gfw.png
         '128': png/128/gfw.png
         '256': png/256/gfw.png
     license:
       type: CC0-1.0
       note: Project geometric mark
+      reviewed: true
     status: verified
     visual:
       style: geometric
@@ -3236,6 +6018,30 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: gfw
+    brand:
+      color_verified: true
+      color_na: true
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/gfw.svg
+        png: *id107
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/gfw.png
+          '128': monochrome/128/gfw.png
+          '256': monochrome/256/gfw.png
+    namespace: dataset
+    schema: 2
   private:
     name: Private
     type: network
@@ -3245,15 +6051,17 @@ icons:
       provenance: project
       method: geometric
       verified: true
+      type: geometric
     files:
       svg: source/private.svg
-      png:
+      png: &id108
         '64': png/64/private.png
         '128': png/128/private.png
         '256': png/256/private.png
     license:
       type: CC0-1.0
       note: Project geometric mark
+      reviewed: true
     status: verified
     visual:
       style: geometric
@@ -3261,6 +6069,30 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: private
+    brand:
+      color_verified: true
+      color_na: true
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/private.svg
+        png: *id108
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/private.png
+          '128': monochrome/128/private.png
+          '256': monochrome/256/private.png
+    namespace: network
+    schema: 2
   stun:
     name: STUN
     type: network
@@ -3270,15 +6102,17 @@ icons:
       provenance: project
       method: geometric
       verified: true
+      type: geometric
     files:
       svg: source/stun.svg
-      png:
+      png: &id109
         '64': png/64/stun.png
         '128': png/128/stun.png
         '256': png/256/stun.png
     license:
       type: CC0-1.0
       note: Project geometric mark
+      reviewed: true
     status: verified
     visual:
       style: geometric
@@ -3286,6 +6120,30 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: stun
+    brand:
+      color_verified: true
+      color_na: true
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/stun.svg
+        png: *id109
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/stun.png
+          '128': monochrome/128/stun.png
+          '256': monochrome/256/stun.png
+    namespace: network
+    schema: 2
   global:
     name: Global
     type: policy
@@ -3295,15 +6153,17 @@ icons:
       provenance: project
       method: geometric
       verified: true
+      type: geometric
     files:
       svg: source/global.svg
-      png:
+      png: &id110
         '64': png/64/global.png
         '128': png/128/global.png
         '256': png/256/global.png
     license:
       type: CC0-1.0
       note: Project geometric mark
+      reviewed: true
     status: verified
     visual:
       style: geometric
@@ -3311,6 +6171,30 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: global
+    brand:
+      color_verified: true
+      color_na: true
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/global.svg
+        png: *id110
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/global.png
+          '128': monochrome/128/global.png
+          '256': monochrome/256/global.png
+    namespace: policy
+    schema: 2
   network:
     name: Network
     type: network
@@ -3320,15 +6204,17 @@ icons:
       provenance: project
       method: geometric
       verified: true
+      type: geometric
     files:
       svg: source/network.svg
-      png:
+      png: &id111
         '64': png/64/network.png
         '128': png/128/network.png
         '256': png/256/network.png
     license:
       type: CC0-1.0
       note: Project geometric mark
+      reviewed: true
     status: verified
     visual:
       style: geometric
@@ -3336,6 +6222,30 @@ icons:
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      icon_id: network
+    brand:
+      color_verified: true
+      color_na: true
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/network.svg
+        png: *id111
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/network.png
+          '128': monochrome/128/network.png
+          '256': monochrome/256/network.png
+    namespace: network
+    schema: 2
   booking:
     name: Booking
     type: service
@@ -3346,11 +6256,12 @@ icons:
       provider: simple-icons
       slug: bookingdotcom
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=bookingdotcom
+      type: simple-icons
     files:
       svg: source/booking.svg
-      png:
+      png: &id112
         '64': png/64/booking.png
         '128': png/128/booking.png
         '256': png/256/booking.png
@@ -3358,6 +6269,7 @@ icons:
       type: see-source
       note: Simple Icons CC0-1.0 project; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -3366,6 +6278,32 @@ icons:
       variants:
       - monochrome
       primary_color: null
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: booking
+    brand:
+      color_verified: false
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/booking.svg
+        png: *id112
+        tint_color: null
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/booking.png
+          '128': monochrome/128/booking.png
+          '256': monochrome/256/booking.png
+    namespace: brand
+    schema: 2
   cursor:
     name: Cursor
     type: service
@@ -3376,11 +6314,12 @@ icons:
       provider: simple-icons
       slug: cursor
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=cursor
+      type: simple-icons
     files:
       svg: source/cursor.svg
-      png:
+      png: &id113
         '64': png/64/cursor.png
         '128': png/128/cursor.png
         '256': png/256/cursor.png
@@ -3388,6 +6327,7 @@ icons:
       type: see-source
       note: Simple Icons CC0-1.0 project; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+      reviewed: true
     status: sourced
     visual:
       style: brand
@@ -3396,6 +6336,32 @@ icons:
       variants:
       - monochrome
       primary_color: null
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: cursor
+    brand:
+      color_verified: false
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/cursor.svg
+        png: *id113
+        tint_color: null
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/cursor.png
+          '128': monochrome/128/cursor.png
+          '256': monochrome/256/cursor.png
+    namespace: brand
+    schema: 2
   meta:
     name: Meta
     type: service
@@ -3403,13 +6369,15 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      verified: false
+      verified: true
+      type: simple-icons
     brand:
       color: '#0467DF'
       color_source: simple-icons
+      color_verified: false
     files:
       svg: source/meta.svg
-      png:
+      png: &id114
         '64': png/64/meta.png
         '128': png/128/meta.png
         '256': png/256/meta.png
@@ -3417,12 +6385,35 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: color
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      confidence: simple-icons
+      icon_id: meta
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/meta.svg
+        png: *id114
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/meta.png
+          '128': monochrome/128/meta.png
+          '256': monochrome/256/meta.png
+    namespace: brand
+    schema: 2
   x:
     name: X
     type: service
@@ -3430,13 +6421,15 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      verified: false
+      verified: true
+      type: simple-icons
     brand:
       color: '#000000'
       color_source: simple-icons
+      color_verified: false
     files:
       svg: source/x.svg
-      png:
+      png: &id115
         '64': png/64/x.png
         '128': png/128/x.png
         '256': png/256/x.png
@@ -3444,12 +6437,37 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
+    identity:
+      verified: true
+      confidence: simple-icons
+      icon_id: x
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/x.svg
+        png: *id115
+        tint_color: '#000000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/x.png
+          '128': monochrome/128/x.png
+          '256': monochrome/256/x.png
+    namespace: brand
+    schema: 2
   adobe:
     name: Adobe
     type: service
@@ -3458,12 +6476,13 @@ icons:
       provider: simple-icons
       slug: adobe
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=adobe
       color: '#FF0000'
+      type: simple-icons
     files:
       svg: source/adobe.svg
-      png:
+      png: &id116
         '64': png/64/adobe.png
         '128': png/128/adobe.png
         '256': png/256/adobe.png
@@ -3471,6 +6490,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -3478,9 +6498,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#FF0000'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#FF0000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: adobe
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/adobe.svg
+        png: *id116
+        tint_color: '#FF0000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/adobe.png
+          '128': monochrome/128/adobe.png
+          '256': monochrome/256/adobe.png
+    namespace: brand
+    schema: 2
   amazon:
     name: Amazon
     type: service
@@ -3489,12 +6534,13 @@ icons:
       provider: simple-icons
       slug: amazon
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=amazon
       color: '#FF9900'
+      type: simple-icons
     files:
       svg: source/amazon.svg
-      png:
+      png: &id117
         '64': png/64/amazon.png
         '128': png/128/amazon.png
         '256': png/256/amazon.png
@@ -3502,6 +6548,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -3509,9 +6556,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#FF9900'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#FF9900'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: amazon
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/amazon.svg
+        png: *id117
+        tint_color: '#FF9900'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/amazon.png
+          '128': monochrome/128/amazon.png
+          '256': monochrome/256/amazon.png
+    namespace: brand
+    schema: 2
   aws:
     name: Aws
     type: service
@@ -3520,11 +6592,12 @@ icons:
       provider: simple-icons
       slug: amazonaws
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=amazonaws
+      type: simple-icons
     files:
       svg: source/aws.svg
-      png:
+      png: &id118
         '64': png/64/aws.png
         '128': png/128/aws.png
         '256': png/256/aws.png
@@ -3532,6 +6605,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -3539,9 +6613,34 @@ icons:
       variants:
       - monochrome
       primary_color: null
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#232F3E'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: aws
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/aws.svg
+        png: *id118
+        tint_color: '#232F3E'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/aws.png
+          '128': monochrome/128/aws.png
+          '256': monochrome/256/aws.png
+    namespace: brand
+    schema: 2
   canva:
     name: Canva
     type: service
@@ -3550,12 +6649,13 @@ icons:
       provider: simple-icons
       slug: canva
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=canva
       color: '#00C4CC'
+      type: simple-icons
     files:
       svg: source/canva.svg
-      png:
+      png: &id119
         '64': png/64/canva.png
         '128': png/128/canva.png
         '256': png/256/canva.png
@@ -3563,6 +6663,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -3570,9 +6671,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#00C4CC'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#00C4CC'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: canva
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/canva.svg
+        png: *id119
+        tint_color: '#00C4CC'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/canva.png
+          '128': monochrome/128/canva.png
+          '256': monochrome/256/canva.png
+    namespace: brand
+    schema: 2
   heroku:
     name: Heroku
     type: service
@@ -3581,12 +6707,13 @@ icons:
       provider: simple-icons
       slug: heroku
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=heroku
       color: '#430098'
+      type: simple-icons
     files:
       svg: source/heroku.svg
-      png:
+      png: &id120
         '64': png/64/heroku.png
         '128': png/128/heroku.png
         '256': png/256/heroku.png
@@ -3594,6 +6721,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -3601,9 +6729,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#430098'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#430098'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: heroku
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/heroku.svg
+        png: *id120
+        tint_color: '#430098'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/heroku.png
+          '128': monochrome/128/heroku.png
+          '256': monochrome/256/heroku.png
+    namespace: brand
+    schema: 2
   linkedin:
     name: Linkedin
     type: service
@@ -3612,12 +6765,13 @@ icons:
       provider: simple-icons
       slug: linkedin
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=linkedin
       color: '#0A66C2'
+      type: simple-icons
     files:
       svg: source/linkedin.svg
-      png:
+      png: &id121
         '64': png/64/linkedin.png
         '128': png/128/linkedin.png
         '256': png/256/linkedin.png
@@ -3625,6 +6779,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -3632,9 +6787,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#0A66C2'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#0A66C2'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: linkedin
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/linkedin.svg
+        png: *id121
+        tint_color: '#0A66C2'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/linkedin.png
+          '128': monochrome/128/linkedin.png
+          '256': monochrome/256/linkedin.png
+    namespace: brand
+    schema: 2
   nintendo:
     name: Nintendo
     type: service
@@ -3642,10 +6822,11 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      verified: false
+      verified: true
+      type: simple-icons
     files:
       svg: source/nintendo.svg
-      png:
+      png: &id122
         '64': png/64/nintendo.png
         '128': png/128/nintendo.png
         '256': png/256/nintendo.png
@@ -3653,15 +6834,41 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#E60012'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: simple-icons
+      icon_id: nintendo
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/nintendo.svg
+        png: *id122
+        tint_color: '#E60012'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/nintendo.png
+          '128': monochrome/128/nintendo.png
+          '256': monochrome/256/nintendo.png
+    namespace: brand
+    schema: 2
   oracle:
     name: Oracle
     type: service
@@ -3670,12 +6877,13 @@ icons:
       provider: simple-icons
       slug: oracle
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=oracle
       color: '#F80000'
+      type: simple-icons
     files:
       svg: source/oracle.svg
-      png:
+      png: &id123
         '64': png/64/oracle.png
         '128': png/128/oracle.png
         '256': png/256/oracle.png
@@ -3683,6 +6891,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -3690,9 +6899,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#F80000'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#F80000'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: oracle
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/oracle.svg
+        png: *id123
+        tint_color: '#F80000'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/oracle.png
+          '128': monochrome/128/oracle.png
+          '256': monochrome/256/oracle.png
+    namespace: brand
+    schema: 2
   slack:
     name: Slack
     type: service
@@ -3701,12 +6935,13 @@ icons:
       provider: simple-icons
       slug: slack
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=slack
       color: '#4A154B'
+      type: simple-icons
     files:
       svg: source/slack.svg
-      png:
+      png: &id124
         '64': png/64/slack.png
         '128': png/128/slack.png
         '256': png/256/slack.png
@@ -3714,6 +6949,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -3721,9 +6957,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#4A154B'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#4A154B'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: slack
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/slack.svg
+        png: *id124
+        tint_color: '#4A154B'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/slack.png
+          '128': monochrome/128/slack.png
+          '256': monochrome/256/slack.png
+    namespace: brand
+    schema: 2
   walmart:
     name: Walmart
     type: service
@@ -3732,12 +6993,13 @@ icons:
       provider: simple-icons
       slug: walmart
       provenance: third_party
-      verified: false
+      verified: true
       url: https://simpleicons.org/?q=walmart
       color: '#0071CE'
+      type: simple-icons
     files:
       svg: source/walmart.svg
-      png:
+      png: &id125
         '64': png/64/walmart.png
         '128': png/128/walmart.png
         '256': png/256/walmart.png
@@ -3745,6 +7007,7 @@ icons:
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
+      reviewed: true
     visual:
       style: brand
       color_mode: monochrome
@@ -3752,9 +7015,34 @@ icons:
       variants:
       - monochrome
       primary_color: '#0071CE'
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#0071CE'
       color_source: simple-icons
+      color_verified: false
+    identity:
+      verified: true
+      confidence: slug-match
+      icon_id: walmart
+    variants:
+      brand:
+        status: available
+        color_mode: monochrome-tinted
+        svg: source/walmart.svg
+        png: *id125
+        tint_color: '#0071CE'
+        note: Master SVG is mono; brand.color used at render
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/walmart.png
+          '128': monochrome/128/walmart.png
+          '256': monochrome/256/walmart.png
+    namespace: brand
+    schema: 2
   select:
     name: Select
     type: policy
@@ -3762,26 +7050,51 @@ icons:
     source:
       provider: project
       provenance: third_party
-      verified: false
+      verified: true
+      type: geometric
     files:
       svg: source/select.svg
-      png:
+      png: &id126
         '64': png/64/select.png
         '128': png/128/select.png
         '256': png/256/select.png
     license:
       type: CC0-1.0
       note: Project geometric mark
-    status: sourced
+      reviewed: true
+    status: verified
     visual:
       style: brand
       color_mode: color
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#F59E0B'
       color_source: project
+      color_verified: true
+      color_na: true
+    identity:
+      verified: true
+      icon_id: select
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/select.svg
+        png: *id126
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/select.png
+          '128': monochrome/128/select.png
+          '256': monochrome/256/select.png
+    namespace: policy
+    schema: 2
   match:
     name: Match
     type: policy
@@ -3789,26 +7102,51 @@ icons:
     source:
       provider: project
       provenance: third_party
-      verified: false
+      verified: true
+      type: geometric
     files:
       svg: source/match.svg
-      png:
+      png: &id127
         '64': png/64/match.png
         '128': png/128/match.png
         '256': png/256/match.png
     license:
       type: CC0-1.0
       note: Project geometric mark
-    status: sourced
+      reviewed: true
+    status: verified
     visual:
       style: brand
       color_mode: color
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#14B8A6'
       color_source: project
+      color_verified: true
+      color_na: true
+    identity:
+      verified: true
+      icon_id: match
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/match.svg
+        png: *id127
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/match.png
+          '128': monochrome/128/match.png
+          '256': monochrome/256/match.png
+    namespace: policy
+    schema: 2
   provider:
     name: Provider
     type: dataset
@@ -3816,26 +7154,51 @@ icons:
     source:
       provider: project
       provenance: third_party
-      verified: false
+      verified: true
+      type: geometric
     files:
       svg: source/provider.svg
-      png:
+      png: &id128
         '64': png/64/provider.png
         '128': png/128/provider.png
         '256': png/256/provider.png
     license:
       type: CC0-1.0
       note: Project geometric mark
-    status: sourced
+      reviewed: true
+    status: verified
     visual:
       style: brand
       color_mode: color
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#0EA5E9'
       color_source: project
+      color_verified: true
+      color_na: true
+    identity:
+      verified: true
+      icon_id: provider
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/provider.svg
+        png: *id128
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/provider.png
+          '128': monochrome/128/provider.png
+          '256': monochrome/256/provider.png
+    namespace: dataset
+    schema: 2
   cloud:
     name: Cloud
     type: dataset
@@ -3843,26 +7206,51 @@ icons:
     source:
       provider: project
       provenance: third_party
-      verified: false
+      verified: true
+      type: geometric
     files:
       svg: source/cloud.svg
-      png:
+      png: &id129
         '64': png/64/cloud.png
         '128': png/128/cloud.png
         '256': png/256/cloud.png
     license:
       type: CC0-1.0
       note: Project geometric mark
-    status: sourced
+      reviewed: true
+    status: verified
     visual:
       style: brand
       color_mode: color
       background: transparent
       variants:
       - color
+      qa_passed: true
+      qa: passed
+      primary_variant: brand
     brand:
       color: '#38BDF8'
       color_source: project
+      color_verified: true
+      color_na: true
+    identity:
+      verified: true
+      icon_id: cloud
+    variants:
+      brand:
+        status: available
+        color_mode: brand
+        svg: source/cloud.svg
+        png: *id129
+      mono:
+        status: available
+        color_mode: monochrome
+        png:
+          '64': monochrome/64/cloud.png
+          '128': monochrome/128/cloud.png
+          '256': monochrome/256/cloud.png
+    namespace: dataset
+    schema: 2
 service_icon_map:
   google: google
   apple: apple
@@ -4098,7 +7486,7 @@ phase_ii:
   fail: 0
 si_pin:
   version: 13.21.0
-  pinned_at: '2026-08-29T21:55:53Z'
+  pinned_at: '2026-08-29T23:20:28Z'
   count: 80
 dual_write:
   enabled: true
@@ -4114,3 +7502,10 @@ phase_p2:
   - '2.1'
   - '2.4'
   - '2.2'
+schema_version: 2
+schema_v2:
+  migrated: 129
+  status_counts:
+    verified: 48
+    placeholder: 1
+    sourced: 80

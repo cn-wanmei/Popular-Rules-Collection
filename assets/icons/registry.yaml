@@ -3394,7 +3394,7 @@ variants:
     png:
       '256': monochrome/256/cloud.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: cloud
   cloudflare-simple:
     type: simple
@@ -4194,7 +4194,7 @@ variants:
     png:
       '256': monochrome/256/match.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: match
   meituan-brand:
     type: brand
@@ -4614,7 +4614,7 @@ variants:
     png:
       '256': monochrome/256/provider.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: provider
   proxy-network:
     type: network
@@ -4734,7 +4734,7 @@ variants:
     png:
       '256': monochrome/256/select.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: select
   shopify-simple:
     type: simple
