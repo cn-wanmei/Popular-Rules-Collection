@@ -6,7 +6,7 @@
   "informational": [
     "ok database/network/lan.txt count=21",
     "ok database/network/private.txt count=7",
-    "ok database/geosite/direct.txt count=111540",
+    "ok database/geosite/direct.txt count=111304",
     "ok database/geosite/proxy.txt count=27220",
     "ok database/geoip/cn.txt count=9651",
     "export ok generated/network/lan.txt",
@@ -28,13 +28,12 @@
     "binary ok: ASN.mmdb bytes=12079074",
     "binary ok: geoip-lite.dat bytes=207729",
     "binary ok: geoip.dat bytes=17224069",
-    "binary ok: geosite.dat bytes=4254460",
-    "new dataset: database/ips/wetv.txt count=1"
+    "binary ok: geosite.dat bytes=4254460"
   ],
   "counts": {
     "hard": 0,
     "warn": 0,
-    "info": 26
+    "info": 25
   },
   "thresholds": {
     "shrink_hard": 0.9,
