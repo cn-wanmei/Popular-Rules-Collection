@@ -1956,6 +1956,26 @@ icons:
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
     status: sourced
+  microsoft:
+    name: Microsoft
+    type: service
+    icon_key: microsoft
+    service_ids:
+    - microsoft
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/microsoft.svg
+      png:
+        '64': png/64/microsoft.png
+        '128': png/128/microsoft.png
+        '256': png/256/microsoft.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
 service_icon_map:
   google: google
   apple: apple
@@ -2045,3 +2065,4 @@ service_icon_map:
   youtubemusic: youtubemusic
   zhihu: zhihu
   zoom: zoom
+  microsoft: microsoft
