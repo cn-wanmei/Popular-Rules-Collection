@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""icon_qa.py — Icon Quality Gate (Phase I). Near-black WARN unless approved_mono."""
+"""icon_qa.py — Icon Quality Gate. Near-black + content-ratio WARN."""
 from __future__ import annotations
 
 import json
@@ -65,6 +65,19 @@ def main() -> int:
                     if ent.get("approved_mono"):
                         approved.add(key)
                     break
+            xs, ys = [], []
+            for y in range(h):
+                for x in range(w):
+                    a = im.getpixel((x, y))[3]
+                    if a >= 32:
+                        xs.append(x)
+                        ys.append(y)
+            if xs and ys:
+                bw = max(xs) - min(xs) + 1
+                bh = max(ys) - min(ys) + 1
+                content_ratio = opaque / max(1, bw * bh)
+                if content_ratio < 0.08 and cat == "brand":
+                    warn.append(f"{key}: content_ratio={content_ratio:.3f} (glyph too small)")
             if dark_ratio >= 0.9 and key not in approved and cat == "brand":
                 status = str(meta.get("status") or "")
                 prov = str(((meta.get("source") or {}).get("provenance") or ""))

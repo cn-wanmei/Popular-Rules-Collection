@@ -2,47 +2,59 @@ version: 1
 updated: '2026-08-29'
 description: Per-client Icon Profile + URL templates
 default_profile: client
+cdn:
+  primary: jsdelivr
+  url_template: https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/assets/icons/png/{size}/{icon_key}.png
+  fallback_raw: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+  mono_template: https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/assets/icons/monochrome/{size}/{icon_key}.png
 clients:
   surge:
     profile: client
-    formats:
-    - png
+    formats: [png]
     preferred_size: 256
-    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+    url_template: https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/assets/icons/png/{size}/{icon_key}.png
+    url_template_fallback: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+    mono_url_template: https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/assets/icons/monochrome/{size}/{icon_key}.png
   loon:
     profile: client
-    formats:
-    - png
+    formats: [png]
     preferred_size: 256
-    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+    url_template: https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/assets/icons/png/{size}/{icon_key}.png
+    url_template_fallback: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+    mono_url_template: https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/assets/icons/monochrome/{size}/{icon_key}.png
   egern:
     profile: client
-    formats:
-    - png
+    formats: [png]
     preferred_size: 256
-    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+    url_template: https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/assets/icons/png/{size}/{icon_key}.png
+    url_template_fallback: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+    mono_url_template: https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/assets/icons/monochrome/{size}/{icon_key}.png
   mihomo:
     profile: client
-    formats:
-    - png
+    formats: [png]
     preferred_size: 128
-    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+    url_template: https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/assets/icons/png/{size}/{icon_key}.png
+    url_template_fallback: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+    mono_url_template: https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/assets/icons/monochrome/{size}/{icon_key}.png
   singbox:
     profile: client
-    formats:
-    - png
+    formats: [png]
     preferred_size: 128
-    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+    url_template: https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/assets/icons/png/{size}/{icon_key}.png
+    url_template_fallback: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+    mono_url_template: https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/assets/icons/monochrome/{size}/{icon_key}.png
   shadowrocket:
     profile: client
-    formats:
-    - png
+    formats: [png]
     preferred_size: 256
-    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+    url_template: https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/assets/icons/png/{size}/{icon_key}.png
+    url_template_fallback: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+    mono_url_template: https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/assets/icons/monochrome/{size}/{icon_key}.png
   quantumultx:
     profile: client
-    formats:
-    - png
+    formats: [png]
     preferred_size: 256
-    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+    url_template: https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/assets/icons/png/{size}/{icon_key}.png
+    url_template_fallback: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+    mono_url_template: https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/assets/icons/monochrome/{size}/{icon_key}.png
 resolver: python scripts/icon_resolver.py {service_id} --profile client
