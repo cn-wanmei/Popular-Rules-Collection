@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""Statistics 2.0 — coverage / ecosystem / intentional-unmaterialized metrics.
-
-Emits reports/YYYY-MM-DD/statistics.json (+ summary.json alias).
-"""
+"""Statistics 2.0 — coverage / ecosystem / intentional-unmaterialized / icon metrics."""
 from __future__ import annotations
 
 import argparse
@@ -70,11 +67,11 @@ def _infer_code(reason: str) -> str:
     return "NO_UPSTREAM"
 
 
-def load_intentional_unmaterialized() -> dict[str, dict]:
+def load_intentional_unmaterialized() -> dict:
     cfg = load_yaml(ROOT / "config" / "intentional_unmaterialized.yaml")
     services = cfg.get("services") if isinstance(cfg, dict) else None
     if isinstance(services, dict) and services:
-        out: dict[str, dict] = {}
+        out = {}
         for sid, meta in services.items():
             if isinstance(meta, dict):
                 reason = str(meta.get("reason") or "intentional")
@@ -86,9 +83,7 @@ def load_intentional_unmaterialized() -> dict[str, dict]:
                 reason = str(meta)
                 out[str(sid)] = {"reason": reason, "code": _infer_code(reason)}
         return out
-    return {
-        k: {"reason": v, "code": _infer_code(v)} for k, v in _INTENTIONAL_FALLBACK.items()
-    }
+    return {k: {"reason": v, "code": _infer_code(v)} for k, v in _INTENTIONAL_FALLBACK.items()}
 
 
 def _gate_status(path: Path) -> str:
@@ -141,7 +136,7 @@ def main() -> int:
         if sid in registered and sid not in materialized
     }
     intentional_reasons = {sid: meta.get("reason", "") for sid, meta in intentional.items()}
-    intentional_by_code: dict[str, list] = {}
+    intentional_by_code: dict = {}
     for sid, meta in intentional.items():
         code = meta.get("code") or "NO_UPSTREAM"
         intentional_by_code.setdefault(code, []).append(sid)
@@ -149,7 +144,6 @@ def main() -> int:
         intentional_by_code[k] = sorted(intentional_by_code[k])
 
     unexpected_missing = sorted((registered - materialized) - set(intentional.keys()))
-
     cov = (mat_n / reg_n) if reg_n else 0.0
     daily_cov = ((mat_n + len(intentional)) / reg_n) if reg_n else 0.0
 
@@ -165,13 +159,20 @@ def main() -> int:
             cidr += count_lines(p)
 
     builder_coverage = {}
+    try:
+        from icon_stats_hook import collect_icon_coverage
+
+        icon_coverage = collect_icon_coverage()
+    except Exception as _e:
+        icon_coverage = {"status": "error", "error": str(_e)}
+
     gen = ROOT / "generated"
     for c in CLIENTS:
         d = gen / c
         n = len(list(d.glob("*"))) if d.is_dir() else 0
         builder_coverage[c] = {"files": n, "status": "ok" if n > 0 else "missing"}
 
-    ecosystem: dict[str, int] = {}
+    ecosystem: dict = {}
     for sid, meta in services.items():
         if not isinstance(meta, dict):
             continue
@@ -254,6 +255,7 @@ def main() -> int:
         },
         "builder_coverage": builder_coverage,
         "ecosystem_coverage": dict(sorted(ecosystem.items())),
+        "icon_coverage": icon_coverage,
         "validation": validation,
         "conflicts": {
             "critical": conflicts.get("critical", 0),
@@ -305,6 +307,12 @@ def main() -> int:
         f"collected={collected_this_run} historical_health={len(historical_ids)}"
     )
     print(f"  ip_track files={ip_files} cidrs={ip_lines} ip_sources_enabled={ip_enabled}")
+    ic = stats.get("icon_coverage") or {}
+    if isinstance(ic, dict) and "real_icons" in ic:
+        print(
+            f"  icon_coverage real={ic.get('real_icons')} placeholder={ic.get('placeholder')} "
+            f"verified={ic.get('verified')} png256={ic.get('png256')}"
+        )
     if unexpected_missing:
         print(f"  WARN unexpected_missing={unexpected_missing}")
     return 0
