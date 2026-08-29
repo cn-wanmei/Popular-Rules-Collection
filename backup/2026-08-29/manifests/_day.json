@@ -1,12 +1,12 @@
 {
   "date": "2026-08-29",
-  "timestamp": "2026-08-29T03:32:32.402804+00:00",
+  "timestamp": "2026-08-29T04:04:56.244923+00:00",
   "registry_version": 3,
   "sources": [
     {
       "source": "blackmatrix7",
       "fetch": "github_raw",
-      "timestamp": "2026-08-29T03:32:21.807862+00:00",
+      "timestamp": "2026-08-29T04:04:39.303314+00:00",
       "files_ok": 139,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -1409,7 +1409,7 @@
     {
       "source": "metacubex",
       "fetch": "github_raw",
-      "timestamp": "2026-08-29T03:32:25.793158+00:00",
+      "timestamp": "2026-08-29T04:04:47.623984+00:00",
       "files_ok": 76,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -1422,7 +1422,7 @@
           "service": "alibaba",
           "local": "sources/metacubex/geosite_alibaba.list",
           "size": 7962,
-          "sha256": "b5e7a3f4665af11630344829213c33e9326c79b72e224eae30e60b5fa443069a",
+          "sha256": "601cd89563befd1bb8e5a6c80c874e9b25faf3ff90c51bf7ae9e2d898aff7454",
           "status": "ok"
         },
         {
@@ -1442,7 +1442,7 @@
           "service": "tencent",
           "local": "sources/metacubex/geosite_tencent.list",
           "size": 11324,
-          "sha256": "d96cfb8e426eb1b7094f406b8c5511ed72a4161aa87cb9b16eb8b737f0aded6d",
+          "sha256": "d6a7042059b635dbf02dd1a18d28d76077469dcf3fac3d05d5a89dcea56d4135",
           "status": "ok"
         },
         {
@@ -1462,7 +1462,7 @@
           "service": "bytedance",
           "local": "sources/metacubex/geosite_bytedance.list",
           "size": 16263,
-          "sha256": "9c75a07e4d4e31834223ab51e2289a73db91280c351e54eaac2b0f739f20f08d",
+          "sha256": "fbcda2d7e0fcc4ca1fb8a337288e542a8d9b15c11f0cb49f092e705905b02e7e",
           "status": "ok"
         },
         {
@@ -1812,7 +1812,7 @@
           "service": "apple",
           "local": "sources/metacubex/geosite_apple.list",
           "size": 36860,
-          "sha256": "7c33aa7be62662e3944d1251c5ffc18292acfc8a57ac8ac56033e614a3b7e664",
+          "sha256": "c364e76e1efdd2f8a4071670b38c966dfad2d40cba17f6aec8b7e104bc43ca4c",
           "status": "ok"
         },
         {
@@ -1852,7 +1852,7 @@
           "service": "google",
           "local": "sources/metacubex/geosite_google.list",
           "size": 18231,
-          "sha256": "d311d31a26a1bc413f63ecf1353b86cd034c3e98bd00ed95a96126ac0607b453",
+          "sha256": "392ec869f91b651fed33d4dd17eba80fb1492e458884511b80e11345338c5b15",
           "status": "ok"
         },
         {
@@ -1872,7 +1872,7 @@
           "service": "microsoft",
           "local": "sources/metacubex/geosite_microsoft.list",
           "size": 15481,
-          "sha256": "7abdcf214eeb71ba83ad0bfbf07718fe95df3e815188b019c83c2f87cfc3b93e",
+          "sha256": "2fe1cec309f44192ee38160228770c1488ee45cd491aee1a0b700efdd798ea7d",
           "status": "ok"
         },
         {
@@ -1882,7 +1882,7 @@
           "service": "github",
           "local": "sources/metacubex/geosite_github.list",
           "size": 1924,
-          "sha256": "f5d67e6e0c8799bd292c8a012d579c8af37ee6a0af771299dd6500db4d1202fd",
+          "sha256": "a7c82a082fdd3f2a7051a75dbb1a2fee64e69db2f7001094187d2349563cb93f",
           "status": "ok"
         },
         {
@@ -1902,7 +1902,7 @@
           "service": "amazon",
           "local": "sources/metacubex/geosite_amazon.list",
           "size": 4424,
-          "sha256": "fdad90dc373db211aca3e4164db6046e53f977b7812d6af18ba259f49293cd40",
+          "sha256": "7757265f6c05c6b04d67e55eae8259db340df78cb13a8008de5dc5e3eba1efef",
           "status": "ok"
         },
         {
@@ -1982,7 +1982,7 @@
           "service": "developer",
           "local": "sources/metacubex/geosite_category_dev.list",
           "size": 12383,
-          "sha256": "c2bf9920c87188b6e386f3c7404db15ecdb7709e2a14a9ebacccc976eb3aaf1f",
+          "sha256": "3214e7a29d3d52fff8731475abdce6e5ef89ea6c9f5b6a854abad87329f7acce",
           "status": "ok"
         },
         {
@@ -2042,7 +2042,7 @@
           "service": "ai",
           "local": "sources/metacubex/geosite_category_ai.list",
           "size": 3431,
-          "sha256": "f8de16d4486addb5f616137d771945c8c9562f61d92d906b0eb90dfd8e976d23",
+          "sha256": "988a71e643b1ff42cea0d14ad3d61ad72a3f0e695ca1e14a8f95b9716175cd2c",
           "status": "ok"
         },
         {
@@ -2052,7 +2052,7 @@
           "service": "restricted",
           "local": "sources/metacubex/geosite_category_porn.list",
           "size": 107168,
-          "sha256": "90352c1bd74bd0f3c6662419a6aacff3a668891c856725b8d1413df6d6ff35b0",
+          "sha256": "67c79f4fa26a47d314f1cf0704b4424702cbadfc45ae8656fd10c6328ef39504",
           "status": "ok"
         },
         {
@@ -2182,7 +2182,7 @@
     {
       "source": "v2fly",
       "fetch": "github_raw",
-      "timestamp": "2026-08-29T03:32:31.334972+00:00",
+      "timestamp": "2026-08-29T04:04:54.576105+00:00",
       "files_ok": 56,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -2755,7 +2755,7 @@
     {
       "source": "dler",
       "fetch": "github_raw",
-      "timestamp": "2026-08-29T03:32:32.402471+00:00",
+      "timestamp": "2026-08-29T04:04:56.244571+00:00",
       "files_ok": 20,
       "files_failed": 0,
       "empty_blocked": 0,

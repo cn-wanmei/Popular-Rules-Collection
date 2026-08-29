@@ -70,26 +70,26 @@
       "status": "unchanged"
     },
     "database/geosite/china.txt": {
-      "old_count": 110878,
+      "old_count": 110642,
       "new_count": 110642,
       "added": 0,
-      "removed": 236,
+      "removed": 0,
       "changed": 0,
-      "shrink_ratio": 0.0021,
+      "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "updated"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/geosite/direct.txt": {
-      "old_count": 111540,
+      "old_count": 111304,
       "new_count": 111304,
       "added": 0,
-      "removed": 236,
+      "removed": 0,
       "changed": 0,
-      "shrink_ratio": 0.0021,
+      "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "updated"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/geosite/google-cn.txt": {
       "old_count": 112,
@@ -114,15 +114,15 @@
       "status": "unchanged"
     },
     "database/geosite/reject.txt": {
-      "old_count": 187424,
+      "old_count": 187695,
       "new_count": 187695,
-      "added": 271,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
-      "growth_ratio": 0.0014,
-      "sha_changed": true,
-      "status": "updated"
+      "growth_ratio": 0.0,
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/geoip/au.txt": {
       "old_count": 17420,
