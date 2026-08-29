@@ -1,0 +1,3619 @@
+version: 1
+updated: '2026-08-29'
+description: service_id → icon_id binding SSOT (binaries in assets/icons/)
+architecture:
+  service_ne_icon_file: true
+  categories:
+  - brand
+  - strategy
+  - dataset
+  - pending
+prohibitions:
+- Service auto-search for logos
+- Builder guessing logos
+- favicon as permanent primary asset
+- Unverified icons marked verified
+- Black/white conversion overwriting official brand colors
+- Mixing strategy icons with brand logos
+- Dataset icons using corporate logos
+- Fake icons solely for coverage metrics
+- Embedding icons into sing-box rule JSON
+- Storing icon binaries inside database/
+approved_mono_brands:
+- apple
+- github
+- notion
+- steam
+- threads
+- twitter
+- uber
+- vercel
+- x
+icons:
+  '12306':
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  abc:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  acfun:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  adblock:
+    icon_id: adblock
+    category: dataset
+    status: verified
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  adblock-light:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  adblock-pro:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  adobe:
+    icon_id: adobe
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: adobe
+      verified: false
+    brand_color: '#FF0000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  ai:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  airbnb:
+    icon_id: airbnb
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: airbnb
+      verified: false
+    brand_color: '#FF5A5F'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  aisuite:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  akamai:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  alibaba:
+    icon_id: alibaba
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  alibabacloud:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  alipay:
+    icon_id: alipay
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#1677FF'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  amap:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  amazon:
+    icon_id: amazon
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: amazon
+      verified: false
+    brand_color: '#FF9900'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  amazonaws:
+    icon_id: aws
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: amazonaws
+      verified: false
+    brand_color: '#232F3E'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  anthropic:
+    icon_id: anthropic
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#191919'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  apple:
+    icon_id: apple
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: true
+  applemusic:
+    icon_id: applemusic
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: applemusic
+      verified: false
+    brand_color: '#FA243C'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  appletv:
+    icon_id: appletv
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: null
+      verified: false
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  asn:
+    icon_id: asn
+    category: dataset
+    status: verified
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  atlassian:
+    icon_id: atlassian
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: atlassian
+      verified: false
+    brand_color: '#0052CC'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  aws:
+    icon_id: aws
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: amazonaws
+      verified: false
+    brand_color: '#232F3E'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  azure:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  bahamut:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  baidu:
+    icon_id: baidu
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#2932E1'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  battlenet:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  bbc:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  bilibili:
+    icon_id: bilibili
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#00A1D6'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  binance:
+    icon_id: binance
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: binance
+      verified: false
+    brand_color: '#F0B90B'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  bluesky:
+    icon_id: bluesky
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: bluesky
+      verified: false
+    brand_color: '#0285FF'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  boc:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  bocom:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  booking:
+    icon_id: booking
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: bookingdotcom
+      verified: false
+    brand_color: null
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  bytedance:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  canva:
+    icon_id: canva
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: canva
+      verified: false
+    brand_color: '#00C4CC'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  ccb:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  cctv:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  ceb:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  china:
+    icon_id: china
+    category: dataset
+    status: verified
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  chinamobile:
+    icon_id: chinamobile
+    category: dataset
+    status: verified
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  chinatelecom:
+    icon_id: chinatelecom
+    category: dataset
+    status: verified
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  chinaunicom:
+    icon_id: chinaunicom
+    category: dataset
+    status: verified
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  claude:
+    icon_id: claude
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#191919'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  cloud:
+    icon_id: cloud
+    category: dataset
+    status: sourced
+    source:
+      provider: project
+      provenance: third_party
+      slug: null
+      verified: false
+    brand_color: '#38BDF8'
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  cloudflare:
+    icon_id: cloudflare
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: cloudflare
+      verified: false
+    brand_color: '#F38020'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  cmb:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  copilot:
+    icon_id: copilot
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: githubcopilot
+      verified: false
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  ctrip:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  cursor:
+    icon_id: cursor
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: cursor
+      verified: false
+    brand_color: null
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  dailymotion:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  deepseek:
+    icon_id: deepseek
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  deezer:
+    icon_id: deezer
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: deezer
+      verified: false
+    brand_color: null
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  developer:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  dewu:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  didi:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  digitalocean:
+    icon_id: digitalocean
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: digitalocean
+      verified: false
+    brand_color: '#0080FF'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  dingtalk:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  direct:
+    icon_id: direct
+    category: strategy
+    status: verified
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  discord:
+    icon_id: discord
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#5865F2'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  disney:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  dns:
+    icon_id: dns
+    category: strategy
+    status: verified
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  docker:
+    icon_id: docker
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: docker
+      verified: false
+    brand_color: '#2496ED'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  doubao:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  douyin:
+    icon_id: douyin
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  douyu:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  dropbox:
+    icon_id: dropbox
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: dropbox
+      verified: false
+    brand_color: '#0061FF'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  ea:
+    icon_id: ea
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: ea
+      verified: false
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  ebay:
+    icon_id: ebay
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: ebay
+      verified: false
+    brand_color: '#E53238'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  eleme:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  elevenlabs:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  emby:
+    icon_id: emby
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: null
+      verified: false
+    brand_color: '#52B54B'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  epic:
+    icon_id: epic
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: epicgames
+      verified: false
+    brand_color: '#313131'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  facebook:
+    icon_id: facebook
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: facebook
+      verified: false
+    brand_color: '#0866FF'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  figma:
+    icon_id: figma
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: figma
+      verified: false
+    brand_color: '#F24E1E'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  firebase:
+    icon_id: firebase
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: firebase
+      verified: false
+    brand_color: '#DD2C00'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  gaode:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  garena:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  gcp:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  gemini:
+    icon_id: gemini
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#8E75B2'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  geoip:
+    icon_id: geoip
+    category: dataset
+    status: verified
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  geosite:
+    icon_id: geosite
+    category: dataset
+    status: verified
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  gfw:
+    icon_id: gfw
+    category: dataset
+    status: verified
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  github:
+    icon_id: github
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#181717'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: true
+  gitlab:
+    icon_id: gitlab
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: gitlab
+      verified: false
+    brand_color: '#FC6D26'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  global:
+    icon_id: global
+    category: strategy
+    status: verified
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  google:
+    icon_id: google
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#4285F4'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  googledrive:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  googlefcm:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  groq:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  hashicorp:
+    icon_id: hashicorp
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: hashicorp
+      verified: false
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  hbo:
+    icon_id: hbo
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: hbo
+      verified: false
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  heroku:
+    icon_id: heroku
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: heroku
+      verified: false
+    brand_color: '#430098'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  himalaya:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  hoyoverse:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  huawei:
+    icon_id: huawei
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#FF0000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  huggingface:
+    icon_id: huggingface
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#FFD21E'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  hulu:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  huya:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  icbc:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  icloud:
+    icon_id: icloud
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: icloud
+      verified: false
+    brand_color: '#3693F3'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  instagram:
+    icon_id: instagram
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: instagram
+      verified: false
+    brand_color: '#FF0069'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  iqiyi:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  jetbrains:
+    icon_id: jetbrains
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: jetbrains
+      verified: false
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  jingdong:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  kakaotalk:
+    icon_id: kakaotalk
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: null
+      verified: false
+    brand_color: '#FFCD00'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  kuaishou:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  kugou:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  kugoukuwo:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  kuwo:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  lan:
+    icon_id: lan
+    category: dataset
+    status: verified
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  letv:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  line:
+    icon_id: line
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: line
+      verified: false
+    brand_color: '#00C300'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  linkedin:
+    icon_id: linkedin
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: linkedin
+      verified: false
+    brand_color: '#0A66C2'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  match:
+    icon_id: match
+    category: strategy
+    status: sourced
+    source:
+      provider: project
+      provenance: third_party
+      slug: null
+      verified: false
+    brand_color: '#14B8A6'
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  meituan:
+    icon_id: meituan
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#FFD100'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  messenger:
+    icon_id: messenger
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: messenger
+      verified: false
+    brand_color: '#00B2FF'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  meta:
+    icon_id: meta
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: null
+      verified: false
+    brand_color: '#0467DF'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  microsoft:
+    icon_id: microsoft
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  minecraft:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  mistral:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  naver:
+    icon_id: naver
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: null
+      verified: false
+    brand_color: '#03C75A'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  netease:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  netflix:
+    icon_id: netflix
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#E50914'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  netlify:
+    icon_id: netlify
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: netlify
+      verified: false
+    brand_color: '#00C7B7'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  network:
+    icon_id: network
+    category: dataset
+    status: verified
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  nintendo:
+    icon_id: nintendo
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: null
+      verified: false
+    brand_color: '#E60012'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  notion:
+    icon_id: notion
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: notion
+      verified: false
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: true
+  npm:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  okx:
+    icon_id: okx
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: okx
+      verified: false
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  onedrive:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  openai:
+    icon_id: openai
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#412991'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  oppo:
+    icon_id: oppo
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: null
+      verified: false
+    brand_color: '#2D683D'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  oracle:
+    icon_id: oracle
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: oracle
+      verified: false
+    brand_color: '#F80000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  paramountplus:
+    icon_id: paramountplus
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: null
+      verified: false
+    brand_color: null
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  paypal:
+    icon_id: paypal
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: paypal
+      verified: false
+    brand_color: '#003087'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  peacock:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  perplexity:
+    icon_id: perplexity
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#1FB8CD'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  pinduoduo:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  pingan:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  pinterest:
+    icon_id: pinterest
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: null
+      verified: false
+    brand_color: '#BD081C'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  placeholder:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  playstation:
+    icon_id: playstation
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: playstation
+      verified: false
+    brand_color: '#0070D1'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  pptv:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  primevideo:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  private:
+    icon_id: private
+    category: dataset
+    status: verified
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  provider:
+    icon_id: provider
+    category: dataset
+    status: sourced
+    source:
+      provider: project
+      provenance: third_party
+      slug: null
+      verified: false
+    brand_color: '#0EA5E9'
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  proxy:
+    icon_id: proxy
+    category: strategy
+    status: verified
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  psbc:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  qq:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  reddit:
+    icon_id: reddit
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: reddit
+      verified: false
+    brand_color: '#FF4500'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  reject:
+    icon_id: reject
+    category: strategy
+    status: verified
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  restricted:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  riotgames:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  roblox:
+    icon_id: roblox
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: roblox
+      verified: false
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  rockstar:
+    icon_id: rockstar
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: null
+      verified: false
+    brand_color: '#FCAF17'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  scholar:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  select:
+    icon_id: select
+    category: strategy
+    status: sourced
+    source:
+      provider: project
+      provenance: third_party
+      slug: null
+      verified: false
+    brand_color: '#F59E0B'
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  shopify:
+    icon_id: shopify
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: shopify
+      verified: false
+    brand_color: '#7AB55C'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  signal:
+    icon_id: signal
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: signal
+      verified: false
+    brand_color: '#3B45FD'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  sina:
+    icon_id: sina
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: sinaweibo
+      verified: false
+    brand_color: '#E6162D'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  siri:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  slack:
+    icon_id: slack
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: slack
+      verified: false
+    brand_color: '#4A154B'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  snapchat:
+    icon_id: snapchat
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: null
+      verified: false
+    brand_color: '#FFFC00'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  sohu:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  soundcloud:
+    icon_id: soundcloud
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: soundcloud
+      verified: false
+    brand_color: '#FF5500'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  speedtest:
+    icon_id: speedtest
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: null
+      verified: false
+    brand_color: '#141526'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  spotify:
+    icon_id: spotify
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#1ED760'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  steam:
+    icon_id: steam
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: steam
+      verified: false
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: true
+  steamcn:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  stripe:
+    icon_id: stripe
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: stripe
+      verified: false
+    brand_color: '#635BFF'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  stun:
+    icon_id: stun
+    category: dataset
+    status: verified
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  supabase:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  taobao:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  teams:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  telegram:
+    icon_id: telegram
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: telegram
+      verified: false
+    brand_color: '#26A5E4'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  tencent:
+    icon_id: tencent
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  tencentvideo:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  threads:
+    icon_id: threads
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: threads
+      verified: false
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: true
+  tidal:
+    icon_id: tidal
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: tidal
+      verified: false
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  tiktok:
+    icon_id: tiktok
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: tiktok
+      verified: false
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  tongcheng:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  trello:
+    icon_id: trello
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: trello
+      verified: false
+    brand_color: '#0052CC'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  twitch:
+    icon_id: twitch
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: twitch
+      verified: false
+    brand_color: '#9146FF'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  twitter:
+    icon_id: twitter
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: x
+      verified: false
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: true
+  uber:
+    icon_id: uber
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: uber
+      verified: false
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: true
+  ubisoft:
+    icon_id: ubisoft
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: ubisoft
+      verified: false
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  unionpay:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  vercel:
+    icon_id: vercel
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: vercel
+      verified: false
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: true
+  vimeo:
+    icon_id: vimeo
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: vimeo
+      verified: false
+    brand_color: '#1AB7EA'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  vivo:
+    icon_id: vivo
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: null
+      verified: false
+    brand_color: '#415FFF'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  walmart:
+    icon_id: walmart
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: walmart
+      verified: false
+    brand_color: '#0071CE'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  wechat:
+    icon_id: wechat
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#07C160'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  weibo:
+    icon_id: weibo
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: sinaweibo
+      verified: false
+    brand_color: '#E6162D'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  wetv:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  whatsapp:
+    icon_id: whatsapp
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: whatsapp
+      verified: false
+    brand_color: '#25D366'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  wikipedia:
+    icon_id: wikipedia
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: wikipedia
+      verified: false
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  wise:
+    icon_id: wise
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: wise
+      verified: false
+    brand_color: '#9FE870'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  x:
+    icon_id: x
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: null
+      verified: false
+    brand_color: '#000000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: true
+  xai:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  xbox:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  xianyu:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  xiaohongshu:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  xiaomi:
+    icon_id: xiaomi
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#FF6900'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  ximalaya:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  youku:
+    icon_id: placeholder
+    category: pending
+    status: placeholder
+    source:
+      provider: project
+      provenance: project
+      slug: null
+      verified: true
+    brand_color: null
+    variants:
+      brand: false
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  youtube:
+    icon_id: youtube
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#FF0000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  youtubemusic:
+    icon_id: youtubemusic
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: null
+      verified: false
+    brand_color: '#FF0000'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  zhihu:
+    icon_id: zhihu
+    category: brand
+    status: verified
+    source:
+      provider: project-brand
+      provenance: official-colors
+      slug: null
+      verified: true
+    brand_color: '#0084FF'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false
+  zoom:
+    icon_id: zoom
+    category: brand
+    status: sourced
+    source:
+      provider: simple-icons
+      provenance: third_party
+      slug: zoom
+      verified: false
+    brand_color: '#0B5CFF'
+    variants:
+      brand: true
+      mono: true
+      dark: false
+      light: false
+      compact: false
+    approved_mono: false

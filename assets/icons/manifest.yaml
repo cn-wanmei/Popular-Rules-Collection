@@ -301,6 +301,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#4285F4'
+      color_source: simple-icons-ref
   apple:
     name: Apple
     type: service
@@ -327,6 +330,9 @@ icons:
       background: transparent
       variants:
       - monochrome
+    brand:
+      color: '#000000'
+      color_source: simple-icons-ref
   github:
     name: GitHub
     type: service
@@ -353,6 +359,9 @@ icons:
       background: transparent
       variants:
       - monochrome
+    brand:
+      color: '#181717'
+      color_source: simple-icons-ref
   airbnb:
     name: Airbnb
     type: service
@@ -436,6 +445,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#1677FF'
+      color_source: simple-icons-ref
   anthropic:
     name: Anthropic
     type: service
@@ -462,6 +474,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#191919'
+      color_source: simple-icons-ref
   applemusic:
     name: Applemusic
     type: service
@@ -580,6 +595,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#2932E1'
+      color_source: simple-icons-ref
   bilibili:
     name: Bilibili
     type: service
@@ -606,6 +624,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#00A1D6'
+      color_source: simple-icons-ref
   binance:
     name: Binance
     type: service
@@ -700,6 +721,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#191919'
+      color_source: simple-icons-ref
   cloudflare:
     name: Cloudflare
     type: service
@@ -857,6 +881,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#5865F2'
+      color_source: simple-icons-ref
   docker:
     name: Docker
     type: service
@@ -916,6 +943,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#000000'
+      color_source: simple-icons-ref
   dropbox:
     name: Dropbox
     type: service
@@ -1194,6 +1224,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#8E75B2'
+      color_source: simple-icons-ref
   gitlab:
     name: Gitlab
     type: service
@@ -1319,6 +1352,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#FF0000'
+      color_source: simple-icons-ref
   huggingface:
     name: Huggingface
     type: service
@@ -1345,6 +1381,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#FFD21E'
+      color_source: simple-icons-ref
   icloud:
     name: Icloud
     type: service
@@ -1527,6 +1566,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#FFD100'
+      color_source: simple-icons-ref
   messenger:
     name: Messenger
     type: service
@@ -1611,6 +1653,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#E50914'
+      color_source: simple-icons-ref
   netlify:
     name: Netlify
     type: service
@@ -1821,6 +1866,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#1FB8CD'
+      color_source: simple-icons-ref
   pinterest:
     name: Pinterest
     type: service
@@ -2190,6 +2238,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#1ED760'
+      color_source: simple-icons-ref
   steam:
     name: Steam
     type: service
@@ -2666,6 +2717,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#07C160'
+      color_source: simple-icons-ref
   weibo:
     name: Weibo
     type: service
@@ -2831,6 +2885,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#FF6900'
+      color_source: simple-icons-ref
   youtube:
     name: Youtube
     type: service
@@ -2857,6 +2914,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#FF0000'
+      color_source: simple-icons-ref
   youtubemusic:
     name: Youtubemusic
     type: service
@@ -2910,6 +2970,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#0084FF'
+      color_source: simple-icons-ref
   zoom:
     name: Zoom
     type: service
@@ -3019,6 +3082,9 @@ icons:
       background: transparent
       variants:
       - color
+    brand:
+      color: '#412991'
+      color_source: simple-icons-ref
   tencent:
     name: Tencent
     type: service
@@ -3689,6 +3755,114 @@ icons:
     brand:
       color: '#0071CE'
       color_source: simple-icons
+  select:
+    name: Select
+    type: policy
+    icon_key: select
+    source:
+      provider: project
+      provenance: third_party
+      verified: false
+    files:
+      svg: source/select.svg
+      png:
+        '64': png/64/select.png
+        '128': png/128/select.png
+        '256': png/256/select.png
+    license:
+      type: CC0-1.0
+      note: Project geometric mark
+    status: sourced
+    visual:
+      style: brand
+      color_mode: color
+      background: transparent
+      variants:
+      - color
+    brand:
+      color: '#F59E0B'
+      color_source: project
+  match:
+    name: Match
+    type: policy
+    icon_key: match
+    source:
+      provider: project
+      provenance: third_party
+      verified: false
+    files:
+      svg: source/match.svg
+      png:
+        '64': png/64/match.png
+        '128': png/128/match.png
+        '256': png/256/match.png
+    license:
+      type: CC0-1.0
+      note: Project geometric mark
+    status: sourced
+    visual:
+      style: brand
+      color_mode: color
+      background: transparent
+      variants:
+      - color
+    brand:
+      color: '#14B8A6'
+      color_source: project
+  provider:
+    name: Provider
+    type: dataset
+    icon_key: provider
+    source:
+      provider: project
+      provenance: third_party
+      verified: false
+    files:
+      svg: source/provider.svg
+      png:
+        '64': png/64/provider.png
+        '128': png/128/provider.png
+        '256': png/256/provider.png
+    license:
+      type: CC0-1.0
+      note: Project geometric mark
+    status: sourced
+    visual:
+      style: brand
+      color_mode: color
+      background: transparent
+      variants:
+      - color
+    brand:
+      color: '#0EA5E9'
+      color_source: project
+  cloud:
+    name: Cloud
+    type: dataset
+    icon_key: cloud
+    source:
+      provider: project
+      provenance: third_party
+      verified: false
+    files:
+      svg: source/cloud.svg
+      png:
+        '64': png/64/cloud.png
+        '128': png/128/cloud.png
+        '256': png/256/cloud.png
+    license:
+      type: CC0-1.0
+      note: Project geometric mark
+    status: sourced
+    visual:
+      style: brand
+      color_mode: color
+      background: transparent
+      variants:
+      - color
+    brand:
+      color: '#38BDF8'
+      color_source: project
 service_icon_map:
   google: google
   apple: apple
@@ -3897,6 +4071,10 @@ service_icon_map:
   placeholder: placeholder
   meta: meta
   x: x
+  select: select
+  match: match
+  provider: provider
+  cloud: cloud
 governance:
   decision_coverage_target: 100%
   placeholder_allowed: true
@@ -3905,3 +4083,16 @@ governance:
   - P1_provenance
   - P2_network
   - P3_shared_brand
+phase_iii_v:
+  strategy: 8
+  dataset: 15
+  variants:
+    brand: default
+    mono: monochrome/{size}/
+    compact: png/64
+    dark: deferred
+    light: deferred
+phase_ii:
+  core: 57
+  ok: 0
+  fail: 0

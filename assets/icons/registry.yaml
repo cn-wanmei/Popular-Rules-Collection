@@ -622,6 +622,20 @@ services:
       monochrome: claude-mono
       network: claude-brand
       client: claude-brand
+  cloud:
+    icon_key: cloud
+    variants:
+      network: cloud-network
+      default: cloud-network
+      mono: cloud-mono
+    default: cloud-network
+    default_by_profile:
+      brand: cloud-network
+      colorful: cloud-network
+      minimal: cloud-network
+      monochrome: cloud-mono
+      network: cloud-network
+      client: cloud-network
   cloudflare:
     icon_key: cloudflare
     variants:
@@ -1558,6 +1572,20 @@ services:
       monochrome: linkedin-mono
       network: linkedin-simple
       client: linkedin-simple
+  match:
+    icon_key: match
+    variants:
+      network: match-network
+      default: match-network
+      mono: match-mono
+    default: match-network
+    default_by_profile:
+      brand: match-network
+      colorful: match-network
+      minimal: match-network
+      monochrome: match-mono
+      network: match-network
+      client: match-network
   meituan:
     icon_key: meituan
     variants:
@@ -1981,6 +2009,20 @@ services:
       monochrome: private-mono
       network: private-network
       client: private-network
+  provider:
+    icon_key: provider
+    variants:
+      network: provider-network
+      default: provider-network
+      mono: provider-mono
+    default: provider-network
+    default_by_profile:
+      brand: provider-network
+      colorful: provider-network
+      minimal: provider-network
+      monochrome: provider-mono
+      network: provider-network
+      client: provider-network
   proxy:
     icon_key: proxy
     variants:
@@ -2116,6 +2158,20 @@ services:
       monochrome: placeholder-network
       network: placeholder-network
       client: placeholder-network
+  select:
+    icon_key: select
+    variants:
+      network: select-network
+      default: select-network
+      mono: select-mono
+    default: select-network
+    default_by_profile:
+      brand: select-network
+      colorful: select-network
+      minimal: select-network
+      monochrome: select-mono
+      network: select-network
+      client: select-network
   shopify:
     icon_key: shopify
     variants:
@@ -3320,6 +3376,26 @@ variants:
     color_mode: monochrome
     status: verified
     service_icon_key: claude
+  cloud-network:
+    type: network
+    source: project
+    path: source/cloud.svg
+    png:
+      '256': png/256/cloud.png
+      '128': png/128/cloud.png
+      '64': png/64/cloud.png
+    color_mode: color
+    status: verified
+    service_icon_key: cloud
+  cloud-mono:
+    type: monochrome
+    source: project-render
+    path: source/cloud.svg
+    png:
+      '256': monochrome/256/cloud.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: cloud
   cloudflare-simple:
     type: simple
     source: simple-icons
@@ -4100,6 +4176,26 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: linkedin
+  match-network:
+    type: network
+    source: project
+    path: source/match.svg
+    png:
+      '256': png/256/match.png
+      '128': png/128/match.png
+      '64': png/64/match.png
+    color_mode: color
+    status: verified
+    service_icon_key: match
+  match-mono:
+    type: monochrome
+    source: project-render
+    path: source/match.svg
+    png:
+      '256': monochrome/256/match.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: match
   meituan-brand:
     type: brand
     source: project-brand
@@ -4500,6 +4596,26 @@ variants:
     color_mode: monochrome
     status: verified
     service_icon_key: private
+  provider-network:
+    type: network
+    source: project
+    path: source/provider.svg
+    png:
+      '256': png/256/provider.png
+      '128': png/128/provider.png
+      '64': png/64/provider.png
+    color_mode: color
+    status: verified
+    service_icon_key: provider
+  provider-mono:
+    type: monochrome
+    source: project-render
+    path: source/provider.svg
+    png:
+      '256': monochrome/256/provider.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: provider
   proxy-network:
     type: network
     source: project
@@ -4600,6 +4716,26 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: rockstar
+  select-network:
+    type: network
+    source: project
+    path: source/select.svg
+    png:
+      '256': png/256/select.png
+      '128': png/128/select.png
+      '64': png/64/select.png
+    color_mode: color
+    status: verified
+    service_icon_key: select
+  select-mono:
+    type: monochrome
+    source: project-render
+    path: source/select.svg
+    png:
+      '256': monochrome/256/select.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: select
   shopify-simple:
     type: simple
     source: simple-icons
