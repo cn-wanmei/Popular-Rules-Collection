@@ -1,0 +1,4935 @@
+version: 1
+updated: '2026-08-29'
+description: Service → Icon Variant roles (shared paths until dedicated sources exist)
+limits:
+  max_variants_per_service: 5
+  roles:
+  - brand
+  - simple
+  - flat
+  - mono
+  - network
+  - placeholder
+  - default
+services:
+  '12306':
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  abc:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  acfun:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  adblock:
+    icon_key: adblock
+    variants:
+      network: adblock-network
+      default: adblock-network
+      mono: adblock-mono
+    default: adblock-network
+    default_by_profile:
+      brand: adblock-network
+      colorful: adblock-network
+      minimal: adblock-network
+      monochrome: adblock-mono
+      network: adblock-network
+      client: adblock-network
+  adblock-light:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  adblock-pro:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  adobe:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  ai:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  airbnb:
+    icon_key: airbnb
+    variants:
+      simple: airbnb-simple
+      default: airbnb-simple
+      mono: airbnb-mono
+    default: airbnb-simple
+    default_by_profile:
+      brand: airbnb-simple
+      colorful: airbnb-simple
+      minimal: airbnb-simple
+      monochrome: airbnb-mono
+      network: airbnb-simple
+      client: airbnb-simple
+  aisuite:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  akamai:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  alibaba:
+    icon_key: alibaba
+    variants:
+      brand: alibaba-brand
+      default: alibaba-brand
+      mono: alibaba-mono
+    default: alibaba-brand
+    default_by_profile:
+      brand: alibaba-brand
+      colorful: alibaba-brand
+      minimal: alibaba-brand
+      monochrome: alibaba-mono
+      network: alibaba-brand
+      client: alibaba-brand
+  alibabacloud:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  alipay:
+    icon_key: alipay
+    variants:
+      brand: alipay-brand
+      default: alipay-brand
+      mono: alipay-mono
+    default: alipay-brand
+    default_by_profile:
+      brand: alipay-brand
+      colorful: alipay-brand
+      minimal: alipay-brand
+      monochrome: alipay-mono
+      network: alipay-brand
+      client: alipay-brand
+  amap:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  amazon:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  amazonaws:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  anthropic:
+    icon_key: anthropic
+    variants:
+      brand: anthropic-brand
+      default: anthropic-brand
+      mono: anthropic-mono
+    default: anthropic-brand
+    default_by_profile:
+      brand: anthropic-brand
+      colorful: anthropic-brand
+      minimal: anthropic-brand
+      monochrome: anthropic-mono
+      network: anthropic-brand
+      client: anthropic-brand
+  apple:
+    icon_key: apple
+    variants:
+      brand: apple-brand
+      default: apple-brand
+      mono: apple-mono
+    default: apple-brand
+    default_by_profile:
+      brand: apple-brand
+      colorful: apple-brand
+      minimal: apple-brand
+      monochrome: apple-mono
+      network: apple-brand
+      client: apple-brand
+  applemusic:
+    icon_key: applemusic
+    variants:
+      simple: applemusic-simple
+      default: applemusic-simple
+      mono: applemusic-mono
+    default: applemusic-simple
+    default_by_profile:
+      brand: applemusic-simple
+      colorful: applemusic-simple
+      minimal: applemusic-simple
+      monochrome: applemusic-mono
+      network: applemusic-simple
+      client: applemusic-simple
+  appletv:
+    icon_key: appletv
+    variants:
+      simple: appletv-simple
+      default: appletv-simple
+      mono: appletv-mono
+    default: appletv-simple
+    default_by_profile:
+      brand: appletv-simple
+      colorful: appletv-simple
+      minimal: appletv-simple
+      monochrome: appletv-mono
+      network: appletv-simple
+      client: appletv-simple
+  atlassian:
+    icon_key: atlassian
+    variants:
+      simple: atlassian-simple
+      default: atlassian-simple
+      mono: atlassian-mono
+    default: atlassian-simple
+    default_by_profile:
+      brand: atlassian-simple
+      colorful: atlassian-simple
+      minimal: atlassian-simple
+      monochrome: atlassian-mono
+      network: atlassian-simple
+      client: atlassian-simple
+  aws:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  azure:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  bahamut:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  baidu:
+    icon_key: baidu
+    variants:
+      brand: baidu-brand
+      default: baidu-brand
+      mono: baidu-mono
+    default: baidu-brand
+    default_by_profile:
+      brand: baidu-brand
+      colorful: baidu-brand
+      minimal: baidu-brand
+      monochrome: baidu-mono
+      network: baidu-brand
+      client: baidu-brand
+  battlenet:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  bbc:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  bilibili:
+    icon_key: bilibili
+    variants:
+      brand: bilibili-brand
+      default: bilibili-brand
+      mono: bilibili-mono
+    default: bilibili-brand
+    default_by_profile:
+      brand: bilibili-brand
+      colorful: bilibili-brand
+      minimal: bilibili-brand
+      monochrome: bilibili-mono
+      network: bilibili-brand
+      client: bilibili-brand
+  binance:
+    icon_key: binance
+    variants:
+      simple: binance-simple
+      default: binance-simple
+      mono: binance-mono
+    default: binance-simple
+    default_by_profile:
+      brand: binance-simple
+      colorful: binance-simple
+      minimal: binance-simple
+      monochrome: binance-mono
+      network: binance-simple
+      client: binance-simple
+  bluesky:
+    icon_key: bluesky
+    variants:
+      simple: bluesky-simple
+      default: bluesky-simple
+      mono: bluesky-mono
+    default: bluesky-simple
+    default_by_profile:
+      brand: bluesky-simple
+      colorful: bluesky-simple
+      minimal: bluesky-simple
+      monochrome: bluesky-mono
+      network: bluesky-simple
+      client: bluesky-simple
+  boc:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  bocom:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  booking:
+    icon_key: booking
+    variants:
+      simple: booking-simple
+      default: booking-simple
+      mono: booking-mono
+    default: booking-simple
+    default_by_profile:
+      brand: booking-simple
+      colorful: booking-simple
+      minimal: booking-simple
+      monochrome: booking-mono
+      network: booking-simple
+      client: booking-simple
+  bytedance:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  canva:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  ccb:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  cctv:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  ceb:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  china:
+    icon_key: china
+    variants:
+      network: china-network
+      default: china-network
+      mono: china-mono
+    default: china-network
+    default_by_profile:
+      brand: china-network
+      colorful: china-network
+      minimal: china-network
+      monochrome: china-mono
+      network: china-network
+      client: china-network
+  chinamobile:
+    icon_key: chinamobile
+    variants:
+      network: chinamobile-network
+      default: chinamobile-network
+      mono: chinamobile-mono
+    default: chinamobile-network
+    default_by_profile:
+      brand: chinamobile-network
+      colorful: chinamobile-network
+      minimal: chinamobile-network
+      monochrome: chinamobile-mono
+      network: chinamobile-network
+      client: chinamobile-network
+  chinatelecom:
+    icon_key: chinatelecom
+    variants:
+      network: chinatelecom-network
+      default: chinatelecom-network
+      mono: chinatelecom-mono
+    default: chinatelecom-network
+    default_by_profile:
+      brand: chinatelecom-network
+      colorful: chinatelecom-network
+      minimal: chinatelecom-network
+      monochrome: chinatelecom-mono
+      network: chinatelecom-network
+      client: chinatelecom-network
+  chinaunicom:
+    icon_key: chinaunicom
+    variants:
+      network: chinaunicom-network
+      default: chinaunicom-network
+      mono: chinaunicom-mono
+    default: chinaunicom-network
+    default_by_profile:
+      brand: chinaunicom-network
+      colorful: chinaunicom-network
+      minimal: chinaunicom-network
+      monochrome: chinaunicom-mono
+      network: chinaunicom-network
+      client: chinaunicom-network
+  claude:
+    icon_key: claude
+    variants:
+      brand: claude-brand
+      default: claude-brand
+      mono: claude-mono
+    default: claude-brand
+    default_by_profile:
+      brand: claude-brand
+      colorful: claude-brand
+      minimal: claude-brand
+      monochrome: claude-mono
+      network: claude-brand
+      client: claude-brand
+  cloudflare:
+    icon_key: cloudflare
+    variants:
+      simple: cloudflare-simple
+      default: cloudflare-simple
+      mono: cloudflare-mono
+    default: cloudflare-simple
+    default_by_profile:
+      brand: cloudflare-simple
+      colorful: cloudflare-simple
+      minimal: cloudflare-simple
+      monochrome: cloudflare-mono
+      network: cloudflare-simple
+      client: cloudflare-simple
+  cmb:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  copilot:
+    icon_key: copilot
+    variants:
+      simple: copilot-simple
+      default: copilot-simple
+      mono: copilot-mono
+    default: copilot-simple
+    default_by_profile:
+      brand: copilot-simple
+      colorful: copilot-simple
+      minimal: copilot-simple
+      monochrome: copilot-mono
+      network: copilot-simple
+      client: copilot-simple
+  ctrip:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  cursor:
+    icon_key: cursor
+    variants:
+      simple: cursor-simple
+      default: cursor-simple
+      mono: cursor-mono
+    default: cursor-simple
+    default_by_profile:
+      brand: cursor-simple
+      colorful: cursor-simple
+      minimal: cursor-simple
+      monochrome: cursor-mono
+      network: cursor-simple
+      client: cursor-simple
+  dailymotion:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  deepseek:
+    icon_key: deepseek
+    variants:
+      brand: deepseek-brand
+      default: deepseek-brand
+      mono: deepseek-mono
+    default: deepseek-brand
+    default_by_profile:
+      brand: deepseek-brand
+      colorful: deepseek-brand
+      minimal: deepseek-brand
+      monochrome: deepseek-mono
+      network: deepseek-brand
+      client: deepseek-brand
+  deezer:
+    icon_key: deezer
+    variants:
+      simple: deezer-simple
+      default: deezer-simple
+      mono: deezer-mono
+    default: deezer-simple
+    default_by_profile:
+      brand: deezer-simple
+      colorful: deezer-simple
+      minimal: deezer-simple
+      monochrome: deezer-mono
+      network: deezer-simple
+      client: deezer-simple
+  developer:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  dewu:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  didi:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  digitalocean:
+    icon_key: digitalocean
+    variants:
+      simple: digitalocean-simple
+      default: digitalocean-simple
+      mono: digitalocean-mono
+    default: digitalocean-simple
+    default_by_profile:
+      brand: digitalocean-simple
+      colorful: digitalocean-simple
+      minimal: digitalocean-simple
+      monochrome: digitalocean-mono
+      network: digitalocean-simple
+      client: digitalocean-simple
+  dingtalk:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  discord:
+    icon_key: discord
+    variants:
+      brand: discord-brand
+      default: discord-brand
+      mono: discord-mono
+    default: discord-brand
+    default_by_profile:
+      brand: discord-brand
+      colorful: discord-brand
+      minimal: discord-brand
+      monochrome: discord-mono
+      network: discord-brand
+      client: discord-brand
+  disney:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  docker:
+    icon_key: docker
+    variants:
+      simple: docker-simple
+      default: docker-simple
+      mono: docker-mono
+    default: docker-simple
+    default_by_profile:
+      brand: docker-simple
+      colorful: docker-simple
+      minimal: docker-simple
+      monochrome: docker-mono
+      network: docker-simple
+      client: docker-simple
+  doubao:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  douyin:
+    icon_key: douyin
+    variants:
+      brand: douyin-brand
+      default: douyin-brand
+      mono: douyin-mono
+    default: douyin-brand
+    default_by_profile:
+      brand: douyin-brand
+      colorful: douyin-brand
+      minimal: douyin-brand
+      monochrome: douyin-mono
+      network: douyin-brand
+      client: douyin-brand
+  douyu:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  dropbox:
+    icon_key: dropbox
+    variants:
+      simple: dropbox-simple
+      default: dropbox-simple
+      mono: dropbox-mono
+    default: dropbox-simple
+    default_by_profile:
+      brand: dropbox-simple
+      colorful: dropbox-simple
+      minimal: dropbox-simple
+      monochrome: dropbox-mono
+      network: dropbox-simple
+      client: dropbox-simple
+  ea:
+    icon_key: ea
+    variants:
+      simple: ea-simple
+      default: ea-simple
+      mono: ea-mono
+    default: ea-simple
+    default_by_profile:
+      brand: ea-simple
+      colorful: ea-simple
+      minimal: ea-simple
+      monochrome: ea-mono
+      network: ea-simple
+      client: ea-simple
+  ebay:
+    icon_key: ebay
+    variants:
+      simple: ebay-simple
+      default: ebay-simple
+      mono: ebay-mono
+    default: ebay-simple
+    default_by_profile:
+      brand: ebay-simple
+      colorful: ebay-simple
+      minimal: ebay-simple
+      monochrome: ebay-mono
+      network: ebay-simple
+      client: ebay-simple
+  eleme:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  elevenlabs:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  emby:
+    icon_key: emby
+    variants:
+      simple: emby-simple
+      default: emby-simple
+      mono: emby-mono
+    default: emby-simple
+    default_by_profile:
+      brand: emby-simple
+      colorful: emby-simple
+      minimal: emby-simple
+      monochrome: emby-mono
+      network: emby-simple
+      client: emby-simple
+  epic:
+    icon_key: epic
+    variants:
+      simple: epic-simple
+      default: epic-simple
+      mono: epic-mono
+    default: epic-simple
+    default_by_profile:
+      brand: epic-simple
+      colorful: epic-simple
+      minimal: epic-simple
+      monochrome: epic-mono
+      network: epic-simple
+      client: epic-simple
+  facebook:
+    icon_key: facebook
+    variants:
+      simple: facebook-simple
+      default: facebook-simple
+      mono: facebook-mono
+    default: facebook-simple
+    default_by_profile:
+      brand: facebook-simple
+      colorful: facebook-simple
+      minimal: facebook-simple
+      monochrome: facebook-mono
+      network: facebook-simple
+      client: facebook-simple
+  figma:
+    icon_key: figma
+    variants:
+      simple: figma-simple
+      default: figma-simple
+      mono: figma-mono
+    default: figma-simple
+    default_by_profile:
+      brand: figma-simple
+      colorful: figma-simple
+      minimal: figma-simple
+      monochrome: figma-mono
+      network: figma-simple
+      client: figma-simple
+  firebase:
+    icon_key: firebase
+    variants:
+      simple: firebase-simple
+      default: firebase-simple
+      mono: firebase-mono
+    default: firebase-simple
+    default_by_profile:
+      brand: firebase-simple
+      colorful: firebase-simple
+      minimal: firebase-simple
+      monochrome: firebase-mono
+      network: firebase-simple
+      client: firebase-simple
+  gaode:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  garena:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  gcp:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  gemini:
+    icon_key: gemini
+    variants:
+      brand: gemini-brand
+      default: gemini-brand
+      mono: gemini-mono
+    default: gemini-brand
+    default_by_profile:
+      brand: gemini-brand
+      colorful: gemini-brand
+      minimal: gemini-brand
+      monochrome: gemini-mono
+      network: gemini-brand
+      client: gemini-brand
+  gfw:
+    icon_key: gfw
+    variants:
+      network: gfw-network
+      default: gfw-network
+      mono: gfw-mono
+    default: gfw-network
+    default_by_profile:
+      brand: gfw-network
+      colorful: gfw-network
+      minimal: gfw-network
+      monochrome: gfw-mono
+      network: gfw-network
+      client: gfw-network
+  github:
+    icon_key: github
+    variants:
+      brand: github-brand
+      default: github-brand
+      mono: github-mono
+    default: github-brand
+    default_by_profile:
+      brand: github-brand
+      colorful: github-brand
+      minimal: github-brand
+      monochrome: github-mono
+      network: github-brand
+      client: github-brand
+  gitlab:
+    icon_key: gitlab
+    variants:
+      simple: gitlab-simple
+      default: gitlab-simple
+      mono: gitlab-mono
+    default: gitlab-simple
+    default_by_profile:
+      brand: gitlab-simple
+      colorful: gitlab-simple
+      minimal: gitlab-simple
+      monochrome: gitlab-mono
+      network: gitlab-simple
+      client: gitlab-simple
+  google:
+    icon_key: google
+    variants:
+      brand: google-brand
+      default: google-brand
+      mono: google-mono
+    default: google-brand
+    default_by_profile:
+      brand: google-brand
+      colorful: google-brand
+      minimal: google-brand
+      monochrome: google-mono
+      network: google-brand
+      client: google-brand
+  googledrive:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  googlefcm:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  groq:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  hashicorp:
+    icon_key: hashicorp
+    variants:
+      simple: hashicorp-simple
+      default: hashicorp-simple
+      mono: hashicorp-mono
+    default: hashicorp-simple
+    default_by_profile:
+      brand: hashicorp-simple
+      colorful: hashicorp-simple
+      minimal: hashicorp-simple
+      monochrome: hashicorp-mono
+      network: hashicorp-simple
+      client: hashicorp-simple
+  hbo:
+    icon_key: hbo
+    variants:
+      simple: hbo-simple
+      default: hbo-simple
+      mono: hbo-mono
+    default: hbo-simple
+    default_by_profile:
+      brand: hbo-simple
+      colorful: hbo-simple
+      minimal: hbo-simple
+      monochrome: hbo-mono
+      network: hbo-simple
+      client: hbo-simple
+  heroku:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  himalaya:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  hoyoverse:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  huawei:
+    icon_key: huawei
+    variants:
+      brand: huawei-brand
+      default: huawei-brand
+      mono: huawei-mono
+    default: huawei-brand
+    default_by_profile:
+      brand: huawei-brand
+      colorful: huawei-brand
+      minimal: huawei-brand
+      monochrome: huawei-mono
+      network: huawei-brand
+      client: huawei-brand
+  huggingface:
+    icon_key: huggingface
+    variants:
+      brand: huggingface-brand
+      default: huggingface-brand
+      mono: huggingface-mono
+    default: huggingface-brand
+    default_by_profile:
+      brand: huggingface-brand
+      colorful: huggingface-brand
+      minimal: huggingface-brand
+      monochrome: huggingface-mono
+      network: huggingface-brand
+      client: huggingface-brand
+  hulu:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  huya:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  icbc:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  icloud:
+    icon_key: icloud
+    variants:
+      simple: icloud-simple
+      default: icloud-simple
+      mono: icloud-mono
+    default: icloud-simple
+    default_by_profile:
+      brand: icloud-simple
+      colorful: icloud-simple
+      minimal: icloud-simple
+      monochrome: icloud-mono
+      network: icloud-simple
+      client: icloud-simple
+  instagram:
+    icon_key: instagram
+    variants:
+      simple: instagram-simple
+      default: instagram-simple
+      mono: instagram-mono
+    default: instagram-simple
+    default_by_profile:
+      brand: instagram-simple
+      colorful: instagram-simple
+      minimal: instagram-simple
+      monochrome: instagram-mono
+      network: instagram-simple
+      client: instagram-simple
+  iqiyi:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  jetbrains:
+    icon_key: jetbrains
+    variants:
+      simple: jetbrains-simple
+      default: jetbrains-simple
+      mono: jetbrains-mono
+    default: jetbrains-simple
+    default_by_profile:
+      brand: jetbrains-simple
+      colorful: jetbrains-simple
+      minimal: jetbrains-simple
+      monochrome: jetbrains-mono
+      network: jetbrains-simple
+      client: jetbrains-simple
+  jingdong:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  kakaotalk:
+    icon_key: kakaotalk
+    variants:
+      simple: kakaotalk-simple
+      default: kakaotalk-simple
+      mono: kakaotalk-mono
+    default: kakaotalk-simple
+    default_by_profile:
+      brand: kakaotalk-simple
+      colorful: kakaotalk-simple
+      minimal: kakaotalk-simple
+      monochrome: kakaotalk-mono
+      network: kakaotalk-simple
+      client: kakaotalk-simple
+  kuaishou:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  kugou:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  kugoukuwo:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  kuwo:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  letv:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  line:
+    icon_key: line
+    variants:
+      simple: line-simple
+      default: line-simple
+      mono: line-mono
+    default: line-simple
+    default_by_profile:
+      brand: line-simple
+      colorful: line-simple
+      minimal: line-simple
+      monochrome: line-mono
+      network: line-simple
+      client: line-simple
+  linkedin:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  meituan:
+    icon_key: meituan
+    variants:
+      brand: meituan-brand
+      default: meituan-brand
+      mono: meituan-mono
+    default: meituan-brand
+    default_by_profile:
+      brand: meituan-brand
+      colorful: meituan-brand
+      minimal: meituan-brand
+      monochrome: meituan-mono
+      network: meituan-brand
+      client: meituan-brand
+  messenger:
+    icon_key: messenger
+    variants:
+      simple: messenger-simple
+      default: messenger-simple
+      mono: messenger-mono
+    default: messenger-simple
+    default_by_profile:
+      brand: messenger-simple
+      colorful: messenger-simple
+      minimal: messenger-simple
+      monochrome: messenger-mono
+      network: messenger-simple
+      client: messenger-simple
+  microsoft:
+    icon_key: microsoft
+    variants:
+      brand: microsoft-brand
+      default: microsoft-brand
+      mono: microsoft-mono
+    default: microsoft-brand
+    default_by_profile:
+      brand: microsoft-brand
+      colorful: microsoft-brand
+      minimal: microsoft-brand
+      monochrome: microsoft-mono
+      network: microsoft-brand
+      client: microsoft-brand
+  minecraft:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  mistral:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  naver:
+    icon_key: naver
+    variants:
+      simple: naver-simple
+      default: naver-simple
+      mono: naver-mono
+    default: naver-simple
+    default_by_profile:
+      brand: naver-simple
+      colorful: naver-simple
+      minimal: naver-simple
+      monochrome: naver-mono
+      network: naver-simple
+      client: naver-simple
+  netease:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  netflix:
+    icon_key: netflix
+    variants:
+      brand: netflix-brand
+      default: netflix-brand
+      mono: netflix-mono
+    default: netflix-brand
+    default_by_profile:
+      brand: netflix-brand
+      colorful: netflix-brand
+      minimal: netflix-brand
+      monochrome: netflix-mono
+      network: netflix-brand
+      client: netflix-brand
+  netlify:
+    icon_key: netlify
+    variants:
+      simple: netlify-simple
+      default: netlify-simple
+      mono: netlify-mono
+    default: netlify-simple
+    default_by_profile:
+      brand: netlify-simple
+      colorful: netlify-simple
+      minimal: netlify-simple
+      monochrome: netlify-mono
+      network: netlify-simple
+      client: netlify-simple
+  nintendo:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  notion:
+    icon_key: notion
+    variants:
+      simple: notion-simple
+      default: notion-simple
+      mono: notion-mono
+    default: notion-simple
+    default_by_profile:
+      brand: notion-simple
+      colorful: notion-simple
+      minimal: notion-simple
+      monochrome: notion-mono
+      network: notion-simple
+      client: notion-simple
+  npm:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  okx:
+    icon_key: okx
+    variants:
+      simple: okx-simple
+      default: okx-simple
+      mono: okx-mono
+    default: okx-simple
+    default_by_profile:
+      brand: okx-simple
+      colorful: okx-simple
+      minimal: okx-simple
+      monochrome: okx-mono
+      network: okx-simple
+      client: okx-simple
+  onedrive:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  openai:
+    icon_key: openai
+    variants:
+      brand: openai-brand
+      default: openai-brand
+      mono: openai-mono
+    default: openai-brand
+    default_by_profile:
+      brand: openai-brand
+      colorful: openai-brand
+      minimal: openai-brand
+      monochrome: openai-mono
+      network: openai-brand
+      client: openai-brand
+  oppo:
+    icon_key: oppo
+    variants:
+      simple: oppo-simple
+      default: oppo-simple
+      mono: oppo-mono
+    default: oppo-simple
+    default_by_profile:
+      brand: oppo-simple
+      colorful: oppo-simple
+      minimal: oppo-simple
+      monochrome: oppo-mono
+      network: oppo-simple
+      client: oppo-simple
+  oracle:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  paramountplus:
+    icon_key: paramountplus
+    variants:
+      simple: paramountplus-simple
+      default: paramountplus-simple
+      mono: paramountplus-mono
+    default: paramountplus-simple
+    default_by_profile:
+      brand: paramountplus-simple
+      colorful: paramountplus-simple
+      minimal: paramountplus-simple
+      monochrome: paramountplus-mono
+      network: paramountplus-simple
+      client: paramountplus-simple
+  paypal:
+    icon_key: paypal
+    variants:
+      simple: paypal-simple
+      default: paypal-simple
+      mono: paypal-mono
+    default: paypal-simple
+    default_by_profile:
+      brand: paypal-simple
+      colorful: paypal-simple
+      minimal: paypal-simple
+      monochrome: paypal-mono
+      network: paypal-simple
+      client: paypal-simple
+  peacock:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  perplexity:
+    icon_key: perplexity
+    variants:
+      brand: perplexity-brand
+      default: perplexity-brand
+      mono: perplexity-mono
+    default: perplexity-brand
+    default_by_profile:
+      brand: perplexity-brand
+      colorful: perplexity-brand
+      minimal: perplexity-brand
+      monochrome: perplexity-mono
+      network: perplexity-brand
+      client: perplexity-brand
+  pinduoduo:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  pingan:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  pinterest:
+    icon_key: pinterest
+    variants:
+      simple: pinterest-simple
+      default: pinterest-simple
+      mono: pinterest-mono
+    default: pinterest-simple
+    default_by_profile:
+      brand: pinterest-simple
+      colorful: pinterest-simple
+      minimal: pinterest-simple
+      monochrome: pinterest-mono
+      network: pinterest-simple
+      client: pinterest-simple
+  playstation:
+    icon_key: playstation
+    variants:
+      simple: playstation-simple
+      default: playstation-simple
+      mono: playstation-mono
+    default: playstation-simple
+    default_by_profile:
+      brand: playstation-simple
+      colorful: playstation-simple
+      minimal: playstation-simple
+      monochrome: playstation-mono
+      network: playstation-simple
+      client: playstation-simple
+  pptv:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  primevideo:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  private:
+    icon_key: private
+    variants:
+      network: private-network
+      default: private-network
+      mono: private-mono
+    default: private-network
+    default_by_profile:
+      brand: private-network
+      colorful: private-network
+      minimal: private-network
+      monochrome: private-mono
+      network: private-network
+      client: private-network
+  proxy:
+    icon_key: proxy
+    variants:
+      network: proxy-network
+      default: proxy-network
+      mono: proxy-mono
+    default: proxy-network
+    default_by_profile:
+      brand: proxy-network
+      colorful: proxy-network
+      minimal: proxy-network
+      monochrome: proxy-mono
+      network: proxy-network
+      client: proxy-network
+  psbc:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  qq:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  reddit:
+    icon_key: reddit
+    variants:
+      simple: reddit-simple
+      default: reddit-simple
+      mono: reddit-mono
+    default: reddit-simple
+    default_by_profile:
+      brand: reddit-simple
+      colorful: reddit-simple
+      minimal: reddit-simple
+      monochrome: reddit-mono
+      network: reddit-simple
+      client: reddit-simple
+  restricted:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  riotgames:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  roblox:
+    icon_key: roblox
+    variants:
+      simple: roblox-simple
+      default: roblox-simple
+      mono: roblox-mono
+    default: roblox-simple
+    default_by_profile:
+      brand: roblox-simple
+      colorful: roblox-simple
+      minimal: roblox-simple
+      monochrome: roblox-mono
+      network: roblox-simple
+      client: roblox-simple
+  rockstar:
+    icon_key: rockstar
+    variants:
+      simple: rockstar-simple
+      default: rockstar-simple
+      mono: rockstar-mono
+    default: rockstar-simple
+    default_by_profile:
+      brand: rockstar-simple
+      colorful: rockstar-simple
+      minimal: rockstar-simple
+      monochrome: rockstar-mono
+      network: rockstar-simple
+      client: rockstar-simple
+  scholar:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  shopify:
+    icon_key: shopify
+    variants:
+      simple: shopify-simple
+      default: shopify-simple
+      mono: shopify-mono
+    default: shopify-simple
+    default_by_profile:
+      brand: shopify-simple
+      colorful: shopify-simple
+      minimal: shopify-simple
+      monochrome: shopify-mono
+      network: shopify-simple
+      client: shopify-simple
+  signal:
+    icon_key: signal
+    variants:
+      simple: signal-simple
+      default: signal-simple
+      mono: signal-mono
+    default: signal-simple
+    default_by_profile:
+      brand: signal-simple
+      colorful: signal-simple
+      minimal: signal-simple
+      monochrome: signal-mono
+      network: signal-simple
+      client: signal-simple
+  sina:
+    icon_key: sina
+    variants:
+      simple: sina-simple
+      default: sina-simple
+      mono: sina-mono
+    default: sina-simple
+    default_by_profile:
+      brand: sina-simple
+      colorful: sina-simple
+      minimal: sina-simple
+      monochrome: sina-mono
+      network: sina-simple
+      client: sina-simple
+  siri:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  slack:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  snapchat:
+    icon_key: snapchat
+    variants:
+      simple: snapchat-simple
+      default: snapchat-simple
+      mono: snapchat-mono
+    default: snapchat-simple
+    default_by_profile:
+      brand: snapchat-simple
+      colorful: snapchat-simple
+      minimal: snapchat-simple
+      monochrome: snapchat-mono
+      network: snapchat-simple
+      client: snapchat-simple
+  sohu:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  soundcloud:
+    icon_key: soundcloud
+    variants:
+      simple: soundcloud-simple
+      default: soundcloud-simple
+      mono: soundcloud-mono
+    default: soundcloud-simple
+    default_by_profile:
+      brand: soundcloud-simple
+      colorful: soundcloud-simple
+      minimal: soundcloud-simple
+      monochrome: soundcloud-mono
+      network: soundcloud-simple
+      client: soundcloud-simple
+  speedtest:
+    icon_key: speedtest
+    variants:
+      simple: speedtest-simple
+      default: speedtest-simple
+      mono: speedtest-mono
+    default: speedtest-simple
+    default_by_profile:
+      brand: speedtest-simple
+      colorful: speedtest-simple
+      minimal: speedtest-simple
+      monochrome: speedtest-mono
+      network: speedtest-simple
+      client: speedtest-simple
+  spotify:
+    icon_key: spotify
+    variants:
+      brand: spotify-brand
+      default: spotify-brand
+      mono: spotify-mono
+    default: spotify-brand
+    default_by_profile:
+      brand: spotify-brand
+      colorful: spotify-brand
+      minimal: spotify-brand
+      monochrome: spotify-mono
+      network: spotify-brand
+      client: spotify-brand
+  steam:
+    icon_key: steam
+    variants:
+      simple: steam-simple
+      default: steam-simple
+      mono: steam-mono
+    default: steam-simple
+    default_by_profile:
+      brand: steam-simple
+      colorful: steam-simple
+      minimal: steam-simple
+      monochrome: steam-mono
+      network: steam-simple
+      client: steam-simple
+  steamcn:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  stripe:
+    icon_key: stripe
+    variants:
+      simple: stripe-simple
+      default: stripe-simple
+      mono: stripe-mono
+    default: stripe-simple
+    default_by_profile:
+      brand: stripe-simple
+      colorful: stripe-simple
+      minimal: stripe-simple
+      monochrome: stripe-mono
+      network: stripe-simple
+      client: stripe-simple
+  stun:
+    icon_key: stun
+    variants:
+      network: stun-network
+      default: stun-network
+      mono: stun-mono
+    default: stun-network
+    default_by_profile:
+      brand: stun-network
+      colorful: stun-network
+      minimal: stun-network
+      monochrome: stun-mono
+      network: stun-network
+      client: stun-network
+  supabase:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  taobao:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  teams:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  telegram:
+    icon_key: telegram
+    variants:
+      simple: telegram-simple
+      default: telegram-simple
+      mono: telegram-mono
+    default: telegram-simple
+    default_by_profile:
+      brand: telegram-simple
+      colorful: telegram-simple
+      minimal: telegram-simple
+      monochrome: telegram-mono
+      network: telegram-simple
+      client: telegram-simple
+  tencent:
+    icon_key: tencent
+    variants:
+      brand: tencent-brand
+      default: tencent-brand
+      mono: tencent-mono
+    default: tencent-brand
+    default_by_profile:
+      brand: tencent-brand
+      colorful: tencent-brand
+      minimal: tencent-brand
+      monochrome: tencent-mono
+      network: tencent-brand
+      client: tencent-brand
+  tencentvideo:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  threads:
+    icon_key: threads
+    variants:
+      simple: threads-simple
+      default: threads-simple
+      mono: threads-mono
+    default: threads-simple
+    default_by_profile:
+      brand: threads-simple
+      colorful: threads-simple
+      minimal: threads-simple
+      monochrome: threads-mono
+      network: threads-simple
+      client: threads-simple
+  tidal:
+    icon_key: tidal
+    variants:
+      simple: tidal-simple
+      default: tidal-simple
+      mono: tidal-mono
+    default: tidal-simple
+    default_by_profile:
+      brand: tidal-simple
+      colorful: tidal-simple
+      minimal: tidal-simple
+      monochrome: tidal-mono
+      network: tidal-simple
+      client: tidal-simple
+  tiktok:
+    icon_key: tiktok
+    variants:
+      simple: tiktok-simple
+      default: tiktok-simple
+      mono: tiktok-mono
+    default: tiktok-simple
+    default_by_profile:
+      brand: tiktok-simple
+      colorful: tiktok-simple
+      minimal: tiktok-simple
+      monochrome: tiktok-mono
+      network: tiktok-simple
+      client: tiktok-simple
+  tongcheng:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  trello:
+    icon_key: trello
+    variants:
+      simple: trello-simple
+      default: trello-simple
+      mono: trello-mono
+    default: trello-simple
+    default_by_profile:
+      brand: trello-simple
+      colorful: trello-simple
+      minimal: trello-simple
+      monochrome: trello-mono
+      network: trello-simple
+      client: trello-simple
+  twitch:
+    icon_key: twitch
+    variants:
+      simple: twitch-simple
+      default: twitch-simple
+      mono: twitch-mono
+    default: twitch-simple
+    default_by_profile:
+      brand: twitch-simple
+      colorful: twitch-simple
+      minimal: twitch-simple
+      monochrome: twitch-mono
+      network: twitch-simple
+      client: twitch-simple
+  twitter:
+    icon_key: twitter
+    variants:
+      simple: twitter-simple
+      default: twitter-simple
+      mono: twitter-mono
+    default: twitter-simple
+    default_by_profile:
+      brand: twitter-simple
+      colorful: twitter-simple
+      minimal: twitter-simple
+      monochrome: twitter-mono
+      network: twitter-simple
+      client: twitter-simple
+  uber:
+    icon_key: uber
+    variants:
+      simple: uber-simple
+      default: uber-simple
+      mono: uber-mono
+    default: uber-simple
+    default_by_profile:
+      brand: uber-simple
+      colorful: uber-simple
+      minimal: uber-simple
+      monochrome: uber-mono
+      network: uber-simple
+      client: uber-simple
+  ubisoft:
+    icon_key: ubisoft
+    variants:
+      simple: ubisoft-simple
+      default: ubisoft-simple
+      mono: ubisoft-mono
+    default: ubisoft-simple
+    default_by_profile:
+      brand: ubisoft-simple
+      colorful: ubisoft-simple
+      minimal: ubisoft-simple
+      monochrome: ubisoft-mono
+      network: ubisoft-simple
+      client: ubisoft-simple
+  unionpay:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  vercel:
+    icon_key: vercel
+    variants:
+      simple: vercel-simple
+      default: vercel-simple
+      mono: vercel-mono
+    default: vercel-simple
+    default_by_profile:
+      brand: vercel-simple
+      colorful: vercel-simple
+      minimal: vercel-simple
+      monochrome: vercel-mono
+      network: vercel-simple
+      client: vercel-simple
+  vimeo:
+    icon_key: vimeo
+    variants:
+      simple: vimeo-simple
+      default: vimeo-simple
+      mono: vimeo-mono
+    default: vimeo-simple
+    default_by_profile:
+      brand: vimeo-simple
+      colorful: vimeo-simple
+      minimal: vimeo-simple
+      monochrome: vimeo-mono
+      network: vimeo-simple
+      client: vimeo-simple
+  vivo:
+    icon_key: vivo
+    variants:
+      simple: vivo-simple
+      default: vivo-simple
+      mono: vivo-mono
+    default: vivo-simple
+    default_by_profile:
+      brand: vivo-simple
+      colorful: vivo-simple
+      minimal: vivo-simple
+      monochrome: vivo-mono
+      network: vivo-simple
+      client: vivo-simple
+  walmart:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  wechat:
+    icon_key: wechat
+    variants:
+      brand: wechat-brand
+      default: wechat-brand
+      mono: wechat-mono
+    default: wechat-brand
+    default_by_profile:
+      brand: wechat-brand
+      colorful: wechat-brand
+      minimal: wechat-brand
+      monochrome: wechat-mono
+      network: wechat-brand
+      client: wechat-brand
+  weibo:
+    icon_key: weibo
+    variants:
+      simple: weibo-simple
+      default: weibo-simple
+      mono: weibo-mono
+    default: weibo-simple
+    default_by_profile:
+      brand: weibo-simple
+      colorful: weibo-simple
+      minimal: weibo-simple
+      monochrome: weibo-mono
+      network: weibo-simple
+      client: weibo-simple
+  wetv:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  whatsapp:
+    icon_key: whatsapp
+    variants:
+      simple: whatsapp-simple
+      default: whatsapp-simple
+      mono: whatsapp-mono
+    default: whatsapp-simple
+    default_by_profile:
+      brand: whatsapp-simple
+      colorful: whatsapp-simple
+      minimal: whatsapp-simple
+      monochrome: whatsapp-mono
+      network: whatsapp-simple
+      client: whatsapp-simple
+  wikipedia:
+    icon_key: wikipedia
+    variants:
+      simple: wikipedia-simple
+      default: wikipedia-simple
+      mono: wikipedia-mono
+    default: wikipedia-simple
+    default_by_profile:
+      brand: wikipedia-simple
+      colorful: wikipedia-simple
+      minimal: wikipedia-simple
+      monochrome: wikipedia-mono
+      network: wikipedia-simple
+      client: wikipedia-simple
+  wise:
+    icon_key: wise
+    variants:
+      simple: wise-simple
+      default: wise-simple
+      mono: wise-mono
+    default: wise-simple
+    default_by_profile:
+      brand: wise-simple
+      colorful: wise-simple
+      minimal: wise-simple
+      monochrome: wise-mono
+      network: wise-simple
+      client: wise-simple
+  xai:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  xbox:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  xianyu:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  xiaohongshu:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  xiaomi:
+    icon_key: xiaomi
+    variants:
+      brand: xiaomi-brand
+      default: xiaomi-brand
+      mono: xiaomi-mono
+    default: xiaomi-brand
+    default_by_profile:
+      brand: xiaomi-brand
+      colorful: xiaomi-brand
+      minimal: xiaomi-brand
+      monochrome: xiaomi-mono
+      network: xiaomi-brand
+      client: xiaomi-brand
+  ximalaya:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  youku:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  youtube:
+    icon_key: youtube
+    variants:
+      brand: youtube-brand
+      default: youtube-brand
+      mono: youtube-mono
+    default: youtube-brand
+    default_by_profile:
+      brand: youtube-brand
+      colorful: youtube-brand
+      minimal: youtube-brand
+      monochrome: youtube-mono
+      network: youtube-brand
+      client: youtube-brand
+  youtubemusic:
+    icon_key: youtubemusic
+    variants:
+      simple: youtubemusic-simple
+      default: youtubemusic-simple
+      mono: youtubemusic-mono
+    default: youtubemusic-simple
+    default_by_profile:
+      brand: youtubemusic-simple
+      colorful: youtubemusic-simple
+      minimal: youtubemusic-simple
+      monochrome: youtubemusic-mono
+      network: youtubemusic-simple
+      client: youtubemusic-simple
+  zhihu:
+    icon_key: zhihu
+    variants:
+      brand: zhihu-brand
+      default: zhihu-brand
+      mono: zhihu-mono
+    default: zhihu-brand
+    default_by_profile:
+      brand: zhihu-brand
+      colorful: zhihu-brand
+      minimal: zhihu-brand
+      monochrome: zhihu-mono
+      network: zhihu-brand
+      client: zhihu-brand
+  zoom:
+    icon_key: zoom
+    variants:
+      simple: zoom-simple
+      default: zoom-simple
+      mono: zoom-mono
+    default: zoom-simple
+    default_by_profile:
+      brand: zoom-simple
+      colorful: zoom-simple
+      minimal: zoom-simple
+      monochrome: zoom-mono
+      network: zoom-simple
+      client: zoom-simple
+  direct:
+    icon_key: direct
+    variants:
+      network: direct-network
+      default: direct-network
+    default: direct-network
+    default_by_profile:
+      brand: direct-network
+      colorful: direct-network
+      minimal: direct-network
+      monochrome: direct-network
+      network: direct-network
+      client: direct-network
+  reject:
+    icon_key: reject
+    variants:
+      network: reject-network
+      default: reject-network
+    default: reject-network
+    default_by_profile:
+      brand: reject-network
+      colorful: reject-network
+      minimal: reject-network
+      monochrome: reject-network
+      network: reject-network
+      client: reject-network
+  dns:
+    icon_key: dns
+    variants:
+      network: dns-network
+      default: dns-network
+    default: dns-network
+    default_by_profile:
+      brand: dns-network
+      colorful: dns-network
+      minimal: dns-network
+      monochrome: dns-network
+      network: dns-network
+      client: dns-network
+  lan:
+    icon_key: lan
+    variants:
+      network: lan-network
+      default: lan-network
+    default: lan-network
+    default_by_profile:
+      brand: lan-network
+      colorful: lan-network
+      minimal: lan-network
+      monochrome: lan-network
+      network: lan-network
+      client: lan-network
+  geoip:
+    icon_key: geoip
+    variants:
+      network: geoip-network
+      default: geoip-network
+    default: geoip-network
+    default_by_profile:
+      brand: geoip-network
+      colorful: geoip-network
+      minimal: geoip-network
+      monochrome: geoip-network
+      network: geoip-network
+      client: geoip-network
+  geosite:
+    icon_key: geosite
+    variants:
+      network: geosite-network
+      default: geosite-network
+    default: geosite-network
+    default_by_profile:
+      brand: geosite-network
+      colorful: geosite-network
+      minimal: geosite-network
+      monochrome: geosite-network
+      network: geosite-network
+      client: geosite-network
+  asn:
+    icon_key: asn
+    variants:
+      network: asn-network
+      default: asn-network
+    default: asn-network
+    default_by_profile:
+      brand: asn-network
+      colorful: asn-network
+      minimal: asn-network
+      monochrome: asn-network
+      network: asn-network
+      client: asn-network
+  placeholder:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
+  global:
+    icon_key: global
+    variants:
+      network: global-network
+      default: global-network
+    default: global-network
+    default_by_profile:
+      brand: global-network
+      colorful: global-network
+      minimal: global-network
+      monochrome: global-network
+      network: global-network
+      client: global-network
+  network:
+    icon_key: network
+    variants:
+      network: network-network
+      default: network-network
+    default: network-network
+    default_by_profile:
+      brand: network-network
+      colorful: network-network
+      minimal: network-network
+      monochrome: network-network
+      network: network-network
+      client: network-network
+variants:
+  placeholder-network:
+    type: network
+    source: project
+    path: source/placeholder.svg
+    png:
+      '256': png/256/placeholder.png
+      '128': png/128/placeholder.png
+      '64': png/64/placeholder.png
+    color_mode: color
+    status: verified
+    service_icon_key: placeholder
+  adblock-network:
+    type: network
+    source: project
+    path: source/adblock.svg
+    png:
+      '256': png/256/adblock.png
+      '128': png/128/adblock.png
+      '64': png/64/adblock.png
+    color_mode: color
+    status: verified
+    service_icon_key: adblock
+  adblock-mono:
+    type: monochrome
+    source: project-render
+    path: source/adblock.svg
+    png:
+      '256': monochrome/256/adblock.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: adblock
+  airbnb-simple:
+    type: simple
+    source: simple-icons
+    slug: airbnb
+    path: source/airbnb.svg
+    png:
+      '256': png/256/airbnb.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#FF5A5F'
+    service_icon_key: airbnb
+  airbnb-mono:
+    type: monochrome
+    source: project-render
+    path: source/airbnb.svg
+    png:
+      '256': monochrome/256/airbnb.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: airbnb
+  alibaba-brand:
+    type: brand
+    source: project-brand
+    path: source/alibaba.svg
+    png:
+      '256': png/256/alibaba.png
+      '128': png/128/alibaba.png
+      '64': png/64/alibaba.png
+    color_mode: color
+    status: verified
+    service_icon_key: alibaba
+  alibaba-mono:
+    type: monochrome
+    source: project-render
+    path: source/alibaba.svg
+    png:
+      '256': monochrome/256/alibaba.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: alibaba
+  alipay-brand:
+    type: brand
+    source: project-brand
+    path: source/alipay.svg
+    png:
+      '256': png/256/alipay.png
+      '128': png/128/alipay.png
+      '64': png/64/alipay.png
+    color_mode: color
+    status: verified
+    service_icon_key: alipay
+  alipay-mono:
+    type: monochrome
+    source: project-render
+    path: source/alipay.svg
+    png:
+      '256': monochrome/256/alipay.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: alipay
+  anthropic-brand:
+    type: brand
+    source: project-brand
+    path: source/anthropic.svg
+    png:
+      '256': png/256/anthropic.png
+      '128': png/128/anthropic.png
+      '64': png/64/anthropic.png
+    color_mode: color
+    status: verified
+    service_icon_key: anthropic
+  anthropic-mono:
+    type: monochrome
+    source: project-render
+    path: source/anthropic.svg
+    png:
+      '256': monochrome/256/anthropic.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: anthropic
+  apple-brand:
+    type: brand
+    source: project-brand
+    path: source/apple.svg
+    png:
+      '256': png/256/apple.png
+      '128': png/128/apple.png
+      '64': png/64/apple.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: apple
+  apple-mono:
+    type: monochrome
+    source: project-render
+    path: source/apple.svg
+    png:
+      '256': monochrome/256/apple.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: apple
+  applemusic-simple:
+    type: simple
+    source: simple-icons
+    slug: applemusic
+    path: source/applemusic.svg
+    png:
+      '256': png/256/applemusic.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#FA243C'
+    service_icon_key: applemusic
+  applemusic-mono:
+    type: monochrome
+    source: project-render
+    path: source/applemusic.svg
+    png:
+      '256': monochrome/256/applemusic.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: applemusic
+  appletv-simple:
+    type: simple
+    source: simple-icons
+    slug: null
+    path: source/appletv.svg
+    png:
+      '256': png/256/appletv.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: null
+    service_icon_key: appletv
+  appletv-mono:
+    type: monochrome
+    source: project-render
+    path: source/appletv.svg
+    png:
+      '256': monochrome/256/appletv.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: appletv
+  atlassian-simple:
+    type: simple
+    source: simple-icons
+    slug: atlassian
+    path: source/atlassian.svg
+    png:
+      '256': png/256/atlassian.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#0052CC'
+    service_icon_key: atlassian
+  atlassian-mono:
+    type: monochrome
+    source: project-render
+    path: source/atlassian.svg
+    png:
+      '256': monochrome/256/atlassian.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: atlassian
+  baidu-brand:
+    type: brand
+    source: project-brand
+    path: source/baidu.svg
+    png:
+      '256': png/256/baidu.png
+      '128': png/128/baidu.png
+      '64': png/64/baidu.png
+    color_mode: color
+    status: verified
+    service_icon_key: baidu
+  baidu-mono:
+    type: monochrome
+    source: project-render
+    path: source/baidu.svg
+    png:
+      '256': monochrome/256/baidu.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: baidu
+  bilibili-brand:
+    type: brand
+    source: project-brand
+    path: source/bilibili.svg
+    png:
+      '256': png/256/bilibili.png
+      '128': png/128/bilibili.png
+      '64': png/64/bilibili.png
+    color_mode: color
+    status: verified
+    service_icon_key: bilibili
+  bilibili-mono:
+    type: monochrome
+    source: project-render
+    path: source/bilibili.svg
+    png:
+      '256': monochrome/256/bilibili.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: bilibili
+  binance-simple:
+    type: simple
+    source: simple-icons
+    slug: binance
+    path: source/binance.svg
+    png:
+      '256': png/256/binance.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#F0B90B'
+    service_icon_key: binance
+  binance-mono:
+    type: monochrome
+    source: project-render
+    path: source/binance.svg
+    png:
+      '256': monochrome/256/binance.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: binance
+  bluesky-simple:
+    type: simple
+    source: simple-icons
+    slug: bluesky
+    path: source/bluesky.svg
+    png:
+      '256': png/256/bluesky.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#0285FF'
+    service_icon_key: bluesky
+  bluesky-mono:
+    type: monochrome
+    source: project-render
+    path: source/bluesky.svg
+    png:
+      '256': monochrome/256/bluesky.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: bluesky
+  booking-simple:
+    type: simple
+    source: simple-icons
+    slug: bookingdotcom
+    path: source/booking.svg
+    png:
+      '256': png/256/booking.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: null
+    service_icon_key: booking
+  booking-mono:
+    type: monochrome
+    source: project-render
+    path: source/booking.svg
+    png:
+      '256': monochrome/256/booking.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: booking
+  china-network:
+    type: network
+    source: project
+    path: source/china.svg
+    png:
+      '256': png/256/china.png
+      '128': png/128/china.png
+      '64': png/64/china.png
+    color_mode: color
+    status: verified
+    service_icon_key: china
+  china-mono:
+    type: monochrome
+    source: project-render
+    path: source/china.svg
+    png:
+      '256': monochrome/256/china.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: china
+  chinamobile-network:
+    type: network
+    source: project
+    path: source/chinamobile.svg
+    png:
+      '256': png/256/chinamobile.png
+      '128': png/128/chinamobile.png
+      '64': png/64/chinamobile.png
+    color_mode: color
+    status: verified
+    service_icon_key: chinamobile
+  chinamobile-mono:
+    type: monochrome
+    source: project-render
+    path: source/chinamobile.svg
+    png:
+      '256': monochrome/256/chinamobile.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: chinamobile
+  chinatelecom-network:
+    type: network
+    source: project
+    path: source/chinatelecom.svg
+    png:
+      '256': png/256/chinatelecom.png
+      '128': png/128/chinatelecom.png
+      '64': png/64/chinatelecom.png
+    color_mode: color
+    status: verified
+    service_icon_key: chinatelecom
+  chinatelecom-mono:
+    type: monochrome
+    source: project-render
+    path: source/chinatelecom.svg
+    png:
+      '256': monochrome/256/chinatelecom.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: chinatelecom
+  chinaunicom-network:
+    type: network
+    source: project
+    path: source/chinaunicom.svg
+    png:
+      '256': png/256/chinaunicom.png
+      '128': png/128/chinaunicom.png
+      '64': png/64/chinaunicom.png
+    color_mode: color
+    status: verified
+    service_icon_key: chinaunicom
+  chinaunicom-mono:
+    type: monochrome
+    source: project-render
+    path: source/chinaunicom.svg
+    png:
+      '256': monochrome/256/chinaunicom.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: chinaunicom
+  claude-brand:
+    type: brand
+    source: project-brand
+    path: source/claude.svg
+    png:
+      '256': png/256/claude.png
+      '128': png/128/claude.png
+      '64': png/64/claude.png
+    color_mode: color
+    status: verified
+    service_icon_key: claude
+  claude-mono:
+    type: monochrome
+    source: project-render
+    path: source/claude.svg
+    png:
+      '256': monochrome/256/claude.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: claude
+  cloudflare-simple:
+    type: simple
+    source: simple-icons
+    slug: cloudflare
+    path: source/cloudflare.svg
+    png:
+      '256': png/256/cloudflare.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#F38020'
+    service_icon_key: cloudflare
+  cloudflare-mono:
+    type: monochrome
+    source: project-render
+    path: source/cloudflare.svg
+    png:
+      '256': monochrome/256/cloudflare.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: cloudflare
+  copilot-simple:
+    type: simple
+    source: simple-icons
+    slug: githubcopilot
+    path: source/copilot.svg
+    png:
+      '256': png/256/copilot.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#000000'
+    service_icon_key: copilot
+  copilot-mono:
+    type: monochrome
+    source: project-render
+    path: source/copilot.svg
+    png:
+      '256': monochrome/256/copilot.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: copilot
+  cursor-simple:
+    type: simple
+    source: simple-icons
+    slug: cursor
+    path: source/cursor.svg
+    png:
+      '256': png/256/cursor.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: null
+    service_icon_key: cursor
+  cursor-mono:
+    type: monochrome
+    source: project-render
+    path: source/cursor.svg
+    png:
+      '256': monochrome/256/cursor.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: cursor
+  deepseek-brand:
+    type: brand
+    source: project-brand
+    path: source/deepseek.svg
+    png:
+      '256': png/256/deepseek.png
+      '128': png/128/deepseek.png
+      '64': png/64/deepseek.png
+    color_mode: color
+    status: verified
+    service_icon_key: deepseek
+  deepseek-mono:
+    type: monochrome
+    source: project-render
+    path: source/deepseek.svg
+    png:
+      '256': monochrome/256/deepseek.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: deepseek
+  deezer-simple:
+    type: simple
+    source: simple-icons
+    slug: deezer
+    path: source/deezer.svg
+    png:
+      '256': png/256/deezer.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: null
+    service_icon_key: deezer
+  deezer-mono:
+    type: monochrome
+    source: project-render
+    path: source/deezer.svg
+    png:
+      '256': monochrome/256/deezer.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: deezer
+  digitalocean-simple:
+    type: simple
+    source: simple-icons
+    slug: digitalocean
+    path: source/digitalocean.svg
+    png:
+      '256': png/256/digitalocean.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#0080FF'
+    service_icon_key: digitalocean
+  digitalocean-mono:
+    type: monochrome
+    source: project-render
+    path: source/digitalocean.svg
+    png:
+      '256': monochrome/256/digitalocean.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: digitalocean
+  discord-brand:
+    type: brand
+    source: project-brand
+    path: source/discord.svg
+    png:
+      '256': png/256/discord.png
+      '128': png/128/discord.png
+      '64': png/64/discord.png
+    color_mode: color
+    status: verified
+    service_icon_key: discord
+  discord-mono:
+    type: monochrome
+    source: project-render
+    path: source/discord.svg
+    png:
+      '256': monochrome/256/discord.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: discord
+  docker-simple:
+    type: simple
+    source: simple-icons
+    slug: docker
+    path: source/docker.svg
+    png:
+      '256': png/256/docker.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#2496ED'
+    service_icon_key: docker
+  docker-mono:
+    type: monochrome
+    source: project-render
+    path: source/docker.svg
+    png:
+      '256': monochrome/256/docker.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: docker
+  douyin-brand:
+    type: brand
+    source: project-brand
+    path: source/douyin.svg
+    png:
+      '256': png/256/douyin.png
+      '128': png/128/douyin.png
+      '64': png/64/douyin.png
+    color_mode: color
+    status: verified
+    service_icon_key: douyin
+  douyin-mono:
+    type: monochrome
+    source: project-render
+    path: source/douyin.svg
+    png:
+      '256': monochrome/256/douyin.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: douyin
+  dropbox-simple:
+    type: simple
+    source: simple-icons
+    slug: dropbox
+    path: source/dropbox.svg
+    png:
+      '256': png/256/dropbox.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#0061FF'
+    service_icon_key: dropbox
+  dropbox-mono:
+    type: monochrome
+    source: project-render
+    path: source/dropbox.svg
+    png:
+      '256': monochrome/256/dropbox.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: dropbox
+  ea-simple:
+    type: simple
+    source: simple-icons
+    slug: ea
+    path: source/ea.svg
+    png:
+      '256': png/256/ea.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#000000'
+    service_icon_key: ea
+  ea-mono:
+    type: monochrome
+    source: project-render
+    path: source/ea.svg
+    png:
+      '256': monochrome/256/ea.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: ea
+  ebay-simple:
+    type: simple
+    source: simple-icons
+    slug: ebay
+    path: source/ebay.svg
+    png:
+      '256': png/256/ebay.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#E53238'
+    service_icon_key: ebay
+  ebay-mono:
+    type: monochrome
+    source: project-render
+    path: source/ebay.svg
+    png:
+      '256': monochrome/256/ebay.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: ebay
+  emby-simple:
+    type: simple
+    source: simple-icons
+    slug: null
+    path: source/emby.svg
+    png:
+      '256': png/256/emby.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: null
+    service_icon_key: emby
+  emby-mono:
+    type: monochrome
+    source: project-render
+    path: source/emby.svg
+    png:
+      '256': monochrome/256/emby.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: emby
+  epic-simple:
+    type: simple
+    source: simple-icons
+    slug: epicgames
+    path: source/epic.svg
+    png:
+      '256': png/256/epic.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#313131'
+    service_icon_key: epic
+  epic-mono:
+    type: monochrome
+    source: project-render
+    path: source/epic.svg
+    png:
+      '256': monochrome/256/epic.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: epic
+  facebook-simple:
+    type: simple
+    source: simple-icons
+    slug: facebook
+    path: source/facebook.svg
+    png:
+      '256': png/256/facebook.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#0866FF'
+    service_icon_key: facebook
+  facebook-mono:
+    type: monochrome
+    source: project-render
+    path: source/facebook.svg
+    png:
+      '256': monochrome/256/facebook.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: facebook
+  figma-simple:
+    type: simple
+    source: simple-icons
+    slug: figma
+    path: source/figma.svg
+    png:
+      '256': png/256/figma.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#F24E1E'
+    service_icon_key: figma
+  figma-mono:
+    type: monochrome
+    source: project-render
+    path: source/figma.svg
+    png:
+      '256': monochrome/256/figma.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: figma
+  firebase-simple:
+    type: simple
+    source: simple-icons
+    slug: firebase
+    path: source/firebase.svg
+    png:
+      '256': png/256/firebase.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#DD2C00'
+    service_icon_key: firebase
+  firebase-mono:
+    type: monochrome
+    source: project-render
+    path: source/firebase.svg
+    png:
+      '256': monochrome/256/firebase.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: firebase
+  gemini-brand:
+    type: brand
+    source: project-brand
+    path: source/gemini.svg
+    png:
+      '256': png/256/gemini.png
+      '128': png/128/gemini.png
+      '64': png/64/gemini.png
+    color_mode: color
+    status: verified
+    service_icon_key: gemini
+  gemini-mono:
+    type: monochrome
+    source: project-render
+    path: source/gemini.svg
+    png:
+      '256': monochrome/256/gemini.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: gemini
+  gfw-network:
+    type: network
+    source: project
+    path: source/gfw.svg
+    png:
+      '256': png/256/gfw.png
+      '128': png/128/gfw.png
+      '64': png/64/gfw.png
+    color_mode: color
+    status: verified
+    service_icon_key: gfw
+  gfw-mono:
+    type: monochrome
+    source: project-render
+    path: source/gfw.svg
+    png:
+      '256': monochrome/256/gfw.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: gfw
+  github-brand:
+    type: brand
+    source: project-brand
+    path: source/github.svg
+    png:
+      '256': png/256/github.png
+      '128': png/128/github.png
+      '64': png/64/github.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: github
+  github-mono:
+    type: monochrome
+    source: project-render
+    path: source/github.svg
+    png:
+      '256': monochrome/256/github.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: github
+  gitlab-simple:
+    type: simple
+    source: simple-icons
+    slug: gitlab
+    path: source/gitlab.svg
+    png:
+      '256': png/256/gitlab.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#FC6D26'
+    service_icon_key: gitlab
+  gitlab-mono:
+    type: monochrome
+    source: project-render
+    path: source/gitlab.svg
+    png:
+      '256': monochrome/256/gitlab.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: gitlab
+  google-brand:
+    type: brand
+    source: project-brand
+    path: source/google.svg
+    png:
+      '256': png/256/google.png
+      '128': png/128/google.png
+      '64': png/64/google.png
+    color_mode: color
+    status: verified
+    service_icon_key: google
+  google-mono:
+    type: monochrome
+    source: project-render
+    path: source/google.svg
+    png:
+      '256': monochrome/256/google.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: google
+  hashicorp-simple:
+    type: simple
+    source: simple-icons
+    slug: hashicorp
+    path: source/hashicorp.svg
+    png:
+      '256': png/256/hashicorp.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#000000'
+    service_icon_key: hashicorp
+  hashicorp-mono:
+    type: monochrome
+    source: project-render
+    path: source/hashicorp.svg
+    png:
+      '256': monochrome/256/hashicorp.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: hashicorp
+  hbo-simple:
+    type: simple
+    source: simple-icons
+    slug: hbo
+    path: source/hbo.svg
+    png:
+      '256': png/256/hbo.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#000000'
+    service_icon_key: hbo
+  hbo-mono:
+    type: monochrome
+    source: project-render
+    path: source/hbo.svg
+    png:
+      '256': monochrome/256/hbo.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: hbo
+  huawei-brand:
+    type: brand
+    source: project-brand
+    path: source/huawei.svg
+    png:
+      '256': png/256/huawei.png
+      '128': png/128/huawei.png
+      '64': png/64/huawei.png
+    color_mode: color
+    status: verified
+    service_icon_key: huawei
+  huawei-mono:
+    type: monochrome
+    source: project-render
+    path: source/huawei.svg
+    png:
+      '256': monochrome/256/huawei.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: huawei
+  huggingface-brand:
+    type: brand
+    source: project-brand
+    path: source/huggingface.svg
+    png:
+      '256': png/256/huggingface.png
+      '128': png/128/huggingface.png
+      '64': png/64/huggingface.png
+    color_mode: color
+    status: verified
+    service_icon_key: huggingface
+  huggingface-mono:
+    type: monochrome
+    source: project-render
+    path: source/huggingface.svg
+    png:
+      '256': monochrome/256/huggingface.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: huggingface
+  icloud-simple:
+    type: simple
+    source: simple-icons
+    slug: icloud
+    path: source/icloud.svg
+    png:
+      '256': png/256/icloud.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#3693F3'
+    service_icon_key: icloud
+  icloud-mono:
+    type: monochrome
+    source: project-render
+    path: source/icloud.svg
+    png:
+      '256': monochrome/256/icloud.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: icloud
+  instagram-simple:
+    type: simple
+    source: simple-icons
+    slug: instagram
+    path: source/instagram.svg
+    png:
+      '256': png/256/instagram.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#FF0069'
+    service_icon_key: instagram
+  instagram-mono:
+    type: monochrome
+    source: project-render
+    path: source/instagram.svg
+    png:
+      '256': monochrome/256/instagram.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: instagram
+  jetbrains-simple:
+    type: simple
+    source: simple-icons
+    slug: jetbrains
+    path: source/jetbrains.svg
+    png:
+      '256': png/256/jetbrains.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#000000'
+    service_icon_key: jetbrains
+  jetbrains-mono:
+    type: monochrome
+    source: project-render
+    path: source/jetbrains.svg
+    png:
+      '256': monochrome/256/jetbrains.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: jetbrains
+  kakaotalk-simple:
+    type: simple
+    source: simple-icons
+    slug: null
+    path: source/kakaotalk.svg
+    png:
+      '256': png/256/kakaotalk.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: null
+    service_icon_key: kakaotalk
+  kakaotalk-mono:
+    type: monochrome
+    source: project-render
+    path: source/kakaotalk.svg
+    png:
+      '256': monochrome/256/kakaotalk.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: kakaotalk
+  line-simple:
+    type: simple
+    source: simple-icons
+    slug: line
+    path: source/line.svg
+    png:
+      '256': png/256/line.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#00C300'
+    service_icon_key: line
+  line-mono:
+    type: monochrome
+    source: project-render
+    path: source/line.svg
+    png:
+      '256': monochrome/256/line.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: line
+  meituan-brand:
+    type: brand
+    source: project-brand
+    path: source/meituan.svg
+    png:
+      '256': png/256/meituan.png
+      '128': png/128/meituan.png
+      '64': png/64/meituan.png
+    color_mode: color
+    status: verified
+    service_icon_key: meituan
+  meituan-mono:
+    type: monochrome
+    source: project-render
+    path: source/meituan.svg
+    png:
+      '256': monochrome/256/meituan.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: meituan
+  messenger-simple:
+    type: simple
+    source: simple-icons
+    slug: messenger
+    path: source/messenger.svg
+    png:
+      '256': png/256/messenger.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#00B2FF'
+    service_icon_key: messenger
+  messenger-mono:
+    type: monochrome
+    source: project-render
+    path: source/messenger.svg
+    png:
+      '256': monochrome/256/messenger.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: messenger
+  microsoft-brand:
+    type: brand
+    source: project-brand
+    path: source/microsoft.svg
+    png:
+      '256': png/256/microsoft.png
+      '128': png/128/microsoft.png
+      '64': png/64/microsoft.png
+    color_mode: color
+    status: verified
+    service_icon_key: microsoft
+  microsoft-mono:
+    type: monochrome
+    source: project-render
+    path: source/microsoft.svg
+    png:
+      '256': monochrome/256/microsoft.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: microsoft
+  naver-simple:
+    type: simple
+    source: simple-icons
+    slug: null
+    path: source/naver.svg
+    png:
+      '256': png/256/naver.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: null
+    service_icon_key: naver
+  naver-mono:
+    type: monochrome
+    source: project-render
+    path: source/naver.svg
+    png:
+      '256': monochrome/256/naver.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: naver
+  netflix-brand:
+    type: brand
+    source: project-brand
+    path: source/netflix.svg
+    png:
+      '256': png/256/netflix.png
+      '128': png/128/netflix.png
+      '64': png/64/netflix.png
+    color_mode: color
+    status: verified
+    service_icon_key: netflix
+  netflix-mono:
+    type: monochrome
+    source: project-render
+    path: source/netflix.svg
+    png:
+      '256': monochrome/256/netflix.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: netflix
+  netlify-simple:
+    type: simple
+    source: simple-icons
+    slug: netlify
+    path: source/netlify.svg
+    png:
+      '256': png/256/netlify.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#00C7B7'
+    service_icon_key: netlify
+  netlify-mono:
+    type: monochrome
+    source: project-render
+    path: source/netlify.svg
+    png:
+      '256': monochrome/256/netlify.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: netlify
+  notion-simple:
+    type: simple
+    source: simple-icons
+    slug: notion
+    path: source/notion.svg
+    png:
+      '256': png/256/notion.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#000000'
+    service_icon_key: notion
+  notion-mono:
+    type: monochrome
+    source: project-render
+    path: source/notion.svg
+    png:
+      '256': monochrome/256/notion.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: notion
+  okx-simple:
+    type: simple
+    source: simple-icons
+    slug: okx
+    path: source/okx.svg
+    png:
+      '256': png/256/okx.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#000000'
+    service_icon_key: okx
+  okx-mono:
+    type: monochrome
+    source: project-render
+    path: source/okx.svg
+    png:
+      '256': monochrome/256/okx.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: okx
+  openai-brand:
+    type: brand
+    source: project-brand
+    path: source/openai.svg
+    png:
+      '256': png/256/openai.png
+      '128': png/128/openai.png
+      '64': png/64/openai.png
+    color_mode: color
+    status: verified
+    service_icon_key: openai
+  openai-mono:
+    type: monochrome
+    source: project-render
+    path: source/openai.svg
+    png:
+      '256': monochrome/256/openai.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: openai
+  oppo-simple:
+    type: simple
+    source: simple-icons
+    slug: null
+    path: source/oppo.svg
+    png:
+      '256': png/256/oppo.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: null
+    service_icon_key: oppo
+  oppo-mono:
+    type: monochrome
+    source: project-render
+    path: source/oppo.svg
+    png:
+      '256': monochrome/256/oppo.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: oppo
+  paramountplus-simple:
+    type: simple
+    source: simple-icons
+    slug: null
+    path: source/paramountplus.svg
+    png:
+      '256': png/256/paramountplus.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: null
+    service_icon_key: paramountplus
+  paramountplus-mono:
+    type: monochrome
+    source: project-render
+    path: source/paramountplus.svg
+    png:
+      '256': monochrome/256/paramountplus.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: paramountplus
+  paypal-simple:
+    type: simple
+    source: simple-icons
+    slug: paypal
+    path: source/paypal.svg
+    png:
+      '256': png/256/paypal.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#003087'
+    service_icon_key: paypal
+  paypal-mono:
+    type: monochrome
+    source: project-render
+    path: source/paypal.svg
+    png:
+      '256': monochrome/256/paypal.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: paypal
+  perplexity-brand:
+    type: brand
+    source: project-brand
+    path: source/perplexity.svg
+    png:
+      '256': png/256/perplexity.png
+      '128': png/128/perplexity.png
+      '64': png/64/perplexity.png
+    color_mode: color
+    status: verified
+    service_icon_key: perplexity
+  perplexity-mono:
+    type: monochrome
+    source: project-render
+    path: source/perplexity.svg
+    png:
+      '256': monochrome/256/perplexity.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: perplexity
+  pinterest-simple:
+    type: simple
+    source: simple-icons
+    slug: null
+    path: source/pinterest.svg
+    png:
+      '256': png/256/pinterest.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: null
+    service_icon_key: pinterest
+  pinterest-mono:
+    type: monochrome
+    source: project-render
+    path: source/pinterest.svg
+    png:
+      '256': monochrome/256/pinterest.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: pinterest
+  playstation-simple:
+    type: simple
+    source: simple-icons
+    slug: playstation
+    path: source/playstation.svg
+    png:
+      '256': png/256/playstation.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#0070D1'
+    service_icon_key: playstation
+  playstation-mono:
+    type: monochrome
+    source: project-render
+    path: source/playstation.svg
+    png:
+      '256': monochrome/256/playstation.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: playstation
+  private-network:
+    type: network
+    source: project
+    path: source/private.svg
+    png:
+      '256': png/256/private.png
+      '128': png/128/private.png
+      '64': png/64/private.png
+    color_mode: color
+    status: verified
+    service_icon_key: private
+  private-mono:
+    type: monochrome
+    source: project-render
+    path: source/private.svg
+    png:
+      '256': monochrome/256/private.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: private
+  proxy-network:
+    type: network
+    source: project
+    path: source/proxy.svg
+    png:
+      '256': png/256/proxy.png
+      '128': png/128/proxy.png
+      '64': png/64/proxy.png
+    color_mode: color
+    status: verified
+    service_icon_key: proxy
+  proxy-mono:
+    type: monochrome
+    source: project-render
+    path: source/proxy.svg
+    png:
+      '256': monochrome/256/proxy.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: proxy
+  reddit-simple:
+    type: simple
+    source: simple-icons
+    slug: reddit
+    path: source/reddit.svg
+    png:
+      '256': png/256/reddit.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#FF4500'
+    service_icon_key: reddit
+  reddit-mono:
+    type: monochrome
+    source: project-render
+    path: source/reddit.svg
+    png:
+      '256': monochrome/256/reddit.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: reddit
+  roblox-simple:
+    type: simple
+    source: simple-icons
+    slug: roblox
+    path: source/roblox.svg
+    png:
+      '256': png/256/roblox.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#000000'
+    service_icon_key: roblox
+  roblox-mono:
+    type: monochrome
+    source: project-render
+    path: source/roblox.svg
+    png:
+      '256': monochrome/256/roblox.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: roblox
+  rockstar-simple:
+    type: simple
+    source: simple-icons
+    slug: null
+    path: source/rockstar.svg
+    png:
+      '256': png/256/rockstar.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: null
+    service_icon_key: rockstar
+  rockstar-mono:
+    type: monochrome
+    source: project-render
+    path: source/rockstar.svg
+    png:
+      '256': monochrome/256/rockstar.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: rockstar
+  shopify-simple:
+    type: simple
+    source: simple-icons
+    slug: shopify
+    path: source/shopify.svg
+    png:
+      '256': png/256/shopify.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#7AB55C'
+    service_icon_key: shopify
+  shopify-mono:
+    type: monochrome
+    source: project-render
+    path: source/shopify.svg
+    png:
+      '256': monochrome/256/shopify.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: shopify
+  signal-simple:
+    type: simple
+    source: simple-icons
+    slug: signal
+    path: source/signal.svg
+    png:
+      '256': png/256/signal.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#3B45FD'
+    service_icon_key: signal
+  signal-mono:
+    type: monochrome
+    source: project-render
+    path: source/signal.svg
+    png:
+      '256': monochrome/256/signal.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: signal
+  sina-simple:
+    type: simple
+    source: simple-icons
+    slug: sinaweibo
+    path: source/sina.svg
+    png:
+      '256': png/256/sina.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#E6162D'
+    service_icon_key: sina
+  sina-mono:
+    type: monochrome
+    source: project-render
+    path: source/sina.svg
+    png:
+      '256': monochrome/256/sina.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: sina
+  snapchat-simple:
+    type: simple
+    source: simple-icons
+    slug: null
+    path: source/snapchat.svg
+    png:
+      '256': png/256/snapchat.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: null
+    service_icon_key: snapchat
+  snapchat-mono:
+    type: monochrome
+    source: project-render
+    path: source/snapchat.svg
+    png:
+      '256': monochrome/256/snapchat.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: snapchat
+  soundcloud-simple:
+    type: simple
+    source: simple-icons
+    slug: soundcloud
+    path: source/soundcloud.svg
+    png:
+      '256': png/256/soundcloud.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#FF5500'
+    service_icon_key: soundcloud
+  soundcloud-mono:
+    type: monochrome
+    source: project-render
+    path: source/soundcloud.svg
+    png:
+      '256': monochrome/256/soundcloud.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: soundcloud
+  speedtest-simple:
+    type: simple
+    source: simple-icons
+    slug: null
+    path: source/speedtest.svg
+    png:
+      '256': png/256/speedtest.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: null
+    service_icon_key: speedtest
+  speedtest-mono:
+    type: monochrome
+    source: project-render
+    path: source/speedtest.svg
+    png:
+      '256': monochrome/256/speedtest.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: speedtest
+  spotify-brand:
+    type: brand
+    source: project-brand
+    path: source/spotify.svg
+    png:
+      '256': png/256/spotify.png
+      '128': png/128/spotify.png
+      '64': png/64/spotify.png
+    color_mode: color
+    status: verified
+    service_icon_key: spotify
+  spotify-mono:
+    type: monochrome
+    source: project-render
+    path: source/spotify.svg
+    png:
+      '256': monochrome/256/spotify.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: spotify
+  steam-simple:
+    type: simple
+    source: simple-icons
+    slug: steam
+    path: source/steam.svg
+    png:
+      '256': png/256/steam.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#000000'
+    service_icon_key: steam
+  steam-mono:
+    type: monochrome
+    source: project-render
+    path: source/steam.svg
+    png:
+      '256': monochrome/256/steam.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: steam
+  stripe-simple:
+    type: simple
+    source: simple-icons
+    slug: stripe
+    path: source/stripe.svg
+    png:
+      '256': png/256/stripe.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#635BFF'
+    service_icon_key: stripe
+  stripe-mono:
+    type: monochrome
+    source: project-render
+    path: source/stripe.svg
+    png:
+      '256': monochrome/256/stripe.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: stripe
+  stun-network:
+    type: network
+    source: project
+    path: source/stun.svg
+    png:
+      '256': png/256/stun.png
+      '128': png/128/stun.png
+      '64': png/64/stun.png
+    color_mode: color
+    status: verified
+    service_icon_key: stun
+  stun-mono:
+    type: monochrome
+    source: project-render
+    path: source/stun.svg
+    png:
+      '256': monochrome/256/stun.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: stun
+  telegram-simple:
+    type: simple
+    source: simple-icons
+    slug: telegram
+    path: source/telegram.svg
+    png:
+      '256': png/256/telegram.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#26A5E4'
+    service_icon_key: telegram
+  telegram-mono:
+    type: monochrome
+    source: project-render
+    path: source/telegram.svg
+    png:
+      '256': monochrome/256/telegram.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: telegram
+  tencent-brand:
+    type: brand
+    source: project-brand
+    path: source/tencent.svg
+    png:
+      '256': png/256/tencent.png
+      '128': png/128/tencent.png
+      '64': png/64/tencent.png
+    color_mode: color
+    status: verified
+    service_icon_key: tencent
+  tencent-mono:
+    type: monochrome
+    source: project-render
+    path: source/tencent.svg
+    png:
+      '256': monochrome/256/tencent.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: tencent
+  threads-simple:
+    type: simple
+    source: simple-icons
+    slug: threads
+    path: source/threads.svg
+    png:
+      '256': png/256/threads.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#000000'
+    service_icon_key: threads
+  threads-mono:
+    type: monochrome
+    source: project-render
+    path: source/threads.svg
+    png:
+      '256': monochrome/256/threads.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: threads
+  tidal-simple:
+    type: simple
+    source: simple-icons
+    slug: tidal
+    path: source/tidal.svg
+    png:
+      '256': png/256/tidal.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#000000'
+    service_icon_key: tidal
+  tidal-mono:
+    type: monochrome
+    source: project-render
+    path: source/tidal.svg
+    png:
+      '256': monochrome/256/tidal.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: tidal
+  tiktok-simple:
+    type: simple
+    source: simple-icons
+    slug: tiktok
+    path: source/tiktok.svg
+    png:
+      '256': png/256/tiktok.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#000000'
+    service_icon_key: tiktok
+  tiktok-mono:
+    type: monochrome
+    source: project-render
+    path: source/tiktok.svg
+    png:
+      '256': monochrome/256/tiktok.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: tiktok
+  trello-simple:
+    type: simple
+    source: simple-icons
+    slug: trello
+    path: source/trello.svg
+    png:
+      '256': png/256/trello.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#0052CC'
+    service_icon_key: trello
+  trello-mono:
+    type: monochrome
+    source: project-render
+    path: source/trello.svg
+    png:
+      '256': monochrome/256/trello.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: trello
+  twitch-simple:
+    type: simple
+    source: simple-icons
+    slug: twitch
+    path: source/twitch.svg
+    png:
+      '256': png/256/twitch.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#9146FF'
+    service_icon_key: twitch
+  twitch-mono:
+    type: monochrome
+    source: project-render
+    path: source/twitch.svg
+    png:
+      '256': monochrome/256/twitch.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: twitch
+  twitter-simple:
+    type: simple
+    source: simple-icons
+    slug: x
+    path: source/twitter.svg
+    png:
+      '256': png/256/twitter.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#000000'
+    service_icon_key: twitter
+  twitter-mono:
+    type: monochrome
+    source: project-render
+    path: source/twitter.svg
+    png:
+      '256': monochrome/256/twitter.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: twitter
+  uber-simple:
+    type: simple
+    source: simple-icons
+    slug: uber
+    path: source/uber.svg
+    png:
+      '256': png/256/uber.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#000000'
+    service_icon_key: uber
+  uber-mono:
+    type: monochrome
+    source: project-render
+    path: source/uber.svg
+    png:
+      '256': monochrome/256/uber.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: uber
+  ubisoft-simple:
+    type: simple
+    source: simple-icons
+    slug: ubisoft
+    path: source/ubisoft.svg
+    png:
+      '256': png/256/ubisoft.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#000000'
+    service_icon_key: ubisoft
+  ubisoft-mono:
+    type: monochrome
+    source: project-render
+    path: source/ubisoft.svg
+    png:
+      '256': monochrome/256/ubisoft.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: ubisoft
+  vercel-simple:
+    type: simple
+    source: simple-icons
+    slug: vercel
+    path: source/vercel.svg
+    png:
+      '256': png/256/vercel.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#000000'
+    service_icon_key: vercel
+  vercel-mono:
+    type: monochrome
+    source: project-render
+    path: source/vercel.svg
+    png:
+      '256': monochrome/256/vercel.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: vercel
+  vimeo-simple:
+    type: simple
+    source: simple-icons
+    slug: vimeo
+    path: source/vimeo.svg
+    png:
+      '256': png/256/vimeo.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#1AB7EA'
+    service_icon_key: vimeo
+  vimeo-mono:
+    type: monochrome
+    source: project-render
+    path: source/vimeo.svg
+    png:
+      '256': monochrome/256/vimeo.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: vimeo
+  vivo-simple:
+    type: simple
+    source: simple-icons
+    slug: null
+    path: source/vivo.svg
+    png:
+      '256': png/256/vivo.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: null
+    service_icon_key: vivo
+  vivo-mono:
+    type: monochrome
+    source: project-render
+    path: source/vivo.svg
+    png:
+      '256': monochrome/256/vivo.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: vivo
+  wechat-brand:
+    type: brand
+    source: project-brand
+    path: source/wechat.svg
+    png:
+      '256': png/256/wechat.png
+      '128': png/128/wechat.png
+      '64': png/64/wechat.png
+    color_mode: color
+    status: verified
+    service_icon_key: wechat
+  wechat-mono:
+    type: monochrome
+    source: project-render
+    path: source/wechat.svg
+    png:
+      '256': monochrome/256/wechat.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: wechat
+  weibo-simple:
+    type: simple
+    source: simple-icons
+    slug: sinaweibo
+    path: source/weibo.svg
+    png:
+      '256': png/256/weibo.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#E6162D'
+    service_icon_key: weibo
+  weibo-mono:
+    type: monochrome
+    source: project-render
+    path: source/weibo.svg
+    png:
+      '256': monochrome/256/weibo.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: weibo
+  whatsapp-simple:
+    type: simple
+    source: simple-icons
+    slug: whatsapp
+    path: source/whatsapp.svg
+    png:
+      '256': png/256/whatsapp.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#25D366'
+    service_icon_key: whatsapp
+  whatsapp-mono:
+    type: monochrome
+    source: project-render
+    path: source/whatsapp.svg
+    png:
+      '256': monochrome/256/whatsapp.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: whatsapp
+  wikipedia-simple:
+    type: simple
+    source: simple-icons
+    slug: wikipedia
+    path: source/wikipedia.svg
+    png:
+      '256': png/256/wikipedia.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#000000'
+    service_icon_key: wikipedia
+  wikipedia-mono:
+    type: monochrome
+    source: project-render
+    path: source/wikipedia.svg
+    png:
+      '256': monochrome/256/wikipedia.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: wikipedia
+  wise-simple:
+    type: simple
+    source: simple-icons
+    slug: wise
+    path: source/wise.svg
+    png:
+      '256': png/256/wise.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#9FE870'
+    service_icon_key: wise
+  wise-mono:
+    type: monochrome
+    source: project-render
+    path: source/wise.svg
+    png:
+      '256': monochrome/256/wise.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: wise
+  xiaomi-brand:
+    type: brand
+    source: project-brand
+    path: source/xiaomi.svg
+    png:
+      '256': png/256/xiaomi.png
+      '128': png/128/xiaomi.png
+      '64': png/64/xiaomi.png
+    color_mode: color
+    status: verified
+    service_icon_key: xiaomi
+  xiaomi-mono:
+    type: monochrome
+    source: project-render
+    path: source/xiaomi.svg
+    png:
+      '256': monochrome/256/xiaomi.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: xiaomi
+  youtube-brand:
+    type: brand
+    source: project-brand
+    path: source/youtube.svg
+    png:
+      '256': png/256/youtube.png
+      '128': png/128/youtube.png
+      '64': png/64/youtube.png
+    color_mode: color
+    status: verified
+    service_icon_key: youtube
+  youtube-mono:
+    type: monochrome
+    source: project-render
+    path: source/youtube.svg
+    png:
+      '256': monochrome/256/youtube.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: youtube
+  youtubemusic-simple:
+    type: simple
+    source: simple-icons
+    slug: null
+    path: source/youtubemusic.svg
+    png:
+      '256': png/256/youtubemusic.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: null
+    service_icon_key: youtubemusic
+  youtubemusic-mono:
+    type: monochrome
+    source: project-render
+    path: source/youtubemusic.svg
+    png:
+      '256': monochrome/256/youtubemusic.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: youtubemusic
+  zhihu-brand:
+    type: brand
+    source: project-brand
+    path: source/zhihu.svg
+    png:
+      '256': png/256/zhihu.png
+      '128': png/128/zhihu.png
+      '64': png/64/zhihu.png
+    color_mode: color
+    status: verified
+    service_icon_key: zhihu
+  zhihu-mono:
+    type: monochrome
+    source: project-render
+    path: source/zhihu.svg
+    png:
+      '256': monochrome/256/zhihu.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: zhihu
+  zoom-simple:
+    type: simple
+    source: simple-icons
+    slug: zoom
+    path: source/zoom.svg
+    png:
+      '256': png/256/zoom.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#0B5CFF'
+    service_icon_key: zoom
+  zoom-mono:
+    type: monochrome
+    source: project-render
+    path: source/zoom.svg
+    png:
+      '256': monochrome/256/zoom.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: zoom
+  direct-network:
+    type: network
+    source: project
+    path: source/direct.svg
+    png:
+      '256': png/256/direct.png
+    color_mode: color
+    status: verified
+    service_icon_key: direct
+  reject-network:
+    type: network
+    source: project
+    path: source/reject.svg
+    png:
+      '256': png/256/reject.png
+    color_mode: color
+    status: verified
+    service_icon_key: reject
+  dns-network:
+    type: network
+    source: project
+    path: source/dns.svg
+    png:
+      '256': png/256/dns.png
+    color_mode: color
+    status: verified
+    service_icon_key: dns
+  lan-network:
+    type: network
+    source: project
+    path: source/lan.svg
+    png:
+      '256': png/256/lan.png
+    color_mode: color
+    status: verified
+    service_icon_key: lan
+  geoip-network:
+    type: network
+    source: project
+    path: source/geoip.svg
+    png:
+      '256': png/256/geoip.png
+    color_mode: color
+    status: verified
+    service_icon_key: geoip
+  geosite-network:
+    type: network
+    source: project
+    path: source/geosite.svg
+    png:
+      '256': png/256/geosite.png
+    color_mode: color
+    status: verified
+    service_icon_key: geosite
+  asn-network:
+    type: network
+    source: project
+    path: source/asn.svg
+    png:
+      '256': png/256/asn.png
+    color_mode: color
+    status: verified
+    service_icon_key: asn
+  global-network:
+    type: network
+    source: project
+    path: source/global.svg
+    png:
+      '256': png/256/global.png
+    color_mode: color
+    status: verified
+    service_icon_key: global
+  network-network:
+    type: network
+    source: project
+    path: source/network.svg
+    png:
+      '256': png/256/network.png
+    color_mode: color
+    status: verified
+    service_icon_key: network
