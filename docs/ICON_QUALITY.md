@@ -1,28 +1,19 @@
 # Icon Quality（产品质量阶段）
 
-> 不改 Rule / Primary / Builder。图标进入 **Quality / Delivery**，不是重新设计架构。
-
-## 现状结论
-
-| 层 | 评价 |
-|----|------|
-| Icon Schema / manifest | 已有 SSOT |
-| Simple Icons 批量 | 工程可用，**视觉偏单色** |
-| Policy / Dataset 几何标 | 方向正确，保持 project |
-| 真彩色品牌 | 需 P0 精选升级，禁止无脑扩 mono PNG |
+> 不改 Rule / Primary / Builder。图标进入 **Quality / Delivery**。
 
 ## 来源优先级
 
 ```text
-P0  官方色 / 项目维护的品牌色标（identification）
+P0  project-brand / official-colors（识别用品牌色）
 P1  高质量彩色第三方
-P2  Simple Icons（monochrome third_party）
+P2  Simple Icons → third_party + monochrome
 P3  placeholder
 ```
 
-**不强制一切彩色**：Apple / GitHub 等官方常为单色 → `color_mode: monochrome` 合法。
+不强制一切彩色：Apple / GitHub / xAI / Copilot 可为 `monochrome`。
 
-## Manifest 字段（B）
+## Manifest
 
 ```yaml
 source:
@@ -33,24 +24,30 @@ visual:
   style: brand | geometric
   color_mode: color | monochrome
   background: transparent
-  variants: [color, monochrome]
 ```
 
-## 阶段
+## CN / AI 高频彩色
 
-| Phase | 内容 | 状态 |
-|-------|------|------|
-| A Audit | `reports/*/icon_audit.json` | 进行中 |
-| B Schema | visual + provenance | 进行中 |
-| C P0 彩色 | Google/Microsoft/YouTube/… | 首批已写入 |
-| D 产品化 | Rule Page / CDN / regression | 部分（Rule Page 已挂图） |
+- 国内：wechat, baidu, bilibili, alibaba, alipay, zhihu, douyin, huawei, xiaomi, meituan, tencent
+- AI：openai, anthropic, claude, gemini, deepseek, perplexity, huggingface
+- 故意 mono：copilot, xai, apple, github
+
+## 视觉回归
+
+```bash
+python scripts/icon_visual_regression.py --write-baseline
+python scripts/icon_visual_regression.py
+```
+
+- `color_ratio`：多色丰富度（Google 四色高，微信单绿低但合法）
+- `dark_ratio`：近黑占比；official-colors + color 且 dark≥0.85 → WARN
+- baseline 骤降 → visual regression WARN
 
 ## 命令
 
 ```bash
-python scripts/sync_service_icons.py   # 仅补缺，不覆盖 project-brand
-python scripts/build_icons.py --force  # 需 cairosvg
+python scripts/sync_service_icons.py    # 不覆盖 official-colors
+python scripts/build_icons.py --force # 需 cairosvg
 python scripts/icon_validate.py
+python scripts/icon_visual_regression.py
 ```
-
-`sync_service_icons` **不得覆盖** `provenance: official-colors` 的 SVG。
