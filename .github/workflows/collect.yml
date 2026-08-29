@@ -72,9 +72,15 @@ jobs:
       - name: Icon registry build
         continue-on-error: true
         run: python scripts/icon_registry_build.py
+      - name: Icon config sync (soft)
+        continue-on-error: true
+        run: python scripts/icon_config_sync.py
       - name: Icon validate (soft)
         continue-on-error: true
         run: python scripts/icon_validate.py
+      - name: Icon QA (soft)
+        continue-on-error: true
+        run: python scripts/icon_qa.py
       - name: Icon identity audit (soft)
         continue-on-error: true
         run: python scripts/icon_identity_audit.py
