@@ -186,6 +186,14 @@
     "tencent": 5,
     "unionpay": 10
   },
+  "icon_coverage": {
+    "mapped_services": 211,
+    "real_icons": 129,
+    "placeholder": 82,
+    "verified": 45,
+    "png256": 129,
+    "config_bindings": 211
+  },
   "validation": {
     "schema_validate": "pass",
     "builder_validate": "pass",

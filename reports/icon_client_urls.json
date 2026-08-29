@@ -1,47 +1,66 @@
 {
-  "version": 1,
+  "version": 2,
+  "cdn": {
+    "primary": "jsdelivr",
+    "url_template": "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/assets/icons/png/{size}/{icon_key}.png",
+    "fallback_raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png"
+  },
   "clients": {
     "surge": {
       "profile": "client",
       "size": 256,
       "url_template": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
-      "note": "Resolve icon_key via icon_resolver; do not embed in rule lists"
+      "url_template_fallback": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
+      "mono_url_template": null,
+      "note": "CDN primary; raw fallback. Do not embed icons in rule lists."
     },
     "loon": {
       "profile": "client",
       "size": 256,
       "url_template": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
-      "note": "Resolve icon_key via icon_resolver; do not embed in rule lists"
+      "url_template_fallback": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
+      "mono_url_template": null,
+      "note": "CDN primary; raw fallback. Do not embed icons in rule lists."
     },
     "egern": {
       "profile": "client",
       "size": 256,
       "url_template": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
-      "note": "Resolve icon_key via icon_resolver; do not embed in rule lists"
+      "url_template_fallback": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
+      "mono_url_template": null,
+      "note": "CDN primary; raw fallback. Do not embed icons in rule lists."
     },
     "mihomo": {
       "profile": "client",
       "size": 128,
       "url_template": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
-      "note": "Resolve icon_key via icon_resolver; do not embed in rule lists"
+      "url_template_fallback": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
+      "mono_url_template": null,
+      "note": "CDN primary; raw fallback. Do not embed icons in rule lists."
     },
     "singbox": {
       "profile": "client",
       "size": 128,
       "url_template": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
-      "note": "Resolve icon_key via icon_resolver; do not embed in rule lists"
+      "url_template_fallback": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
+      "mono_url_template": null,
+      "note": "CDN primary; raw fallback. Do not embed icons in rule lists."
     },
     "shadowrocket": {
       "profile": "client",
       "size": 256,
       "url_template": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
-      "note": "Resolve icon_key via icon_resolver; do not embed in rule lists"
+      "url_template_fallback": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
+      "mono_url_template": null,
+      "note": "CDN primary; raw fallback. Do not embed icons in rule lists."
     },
     "quantumultx": {
       "profile": "client",
       "size": 256,
       "url_template": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
-      "note": "Resolve icon_key via icon_resolver; do not embed in rule lists"
+      "url_template_fallback": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
+      "mono_url_template": null,
+      "note": "CDN primary; raw fallback. Do not embed icons in rule lists."
     }
   },
   "samples": {

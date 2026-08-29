@@ -2,7 +2,7 @@
 
 date: 2026-08-29
 
-- fetched=0 skip=57 fail=0 color_fill=22
+- fetched=0 skip=57 fail=0 color_fill=0
 
 - `adobe`: sourced
 - `alibaba`: protected/verified
