@@ -1,0 +1,44 @@
+version: 1
+updated: '2026-08-29'
+description: Per-client default Icon Profile + URL templates (rules builders do not embed icons)
+default_profile: client
+clients:
+  surge:
+    profile: client
+    formats: [png]
+    preferred_size: 256
+    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+    mono_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/monochrome/{size}/{icon_key}.png
+    note: Use icon-url on policy groups; resolve via icon_resolver.py
+  loon:
+    profile: client
+    formats: [png]
+    preferred_size: 256
+    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+  egern:
+    profile: client
+    formats: [png]
+    preferred_size: 256
+    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+  mihomo:
+    profile: client
+    formats: [png]
+    preferred_size: 128
+    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+    note: Panel/UI consumption; not written into rule lists
+  singbox:
+    profile: client
+    formats: [png]
+    preferred_size: 128
+    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+  shadowrocket:
+    profile: client
+    formats: [png]
+    preferred_size: 256
+    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+  quantumultx:
+    profile: client
+    formats: [png]
+    preferred_size: 256
+    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+resolver: python scripts/icon_resolver.py {service_id} --profile client
