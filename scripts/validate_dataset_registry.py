@@ -12,7 +12,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 DS = ROOT / "sources" / "datasets"
-VALID_KINDS = frozenset({"network", "geosite", "geoip", "asn", "policy", "provider"})
+VALID_KINDS = frozenset({"network", "geosite", "geoip", "asn", "policy", "provider", "binary"})
 FORBIDDEN_SERVICE_COLLISION = frozenset(
     {"amazon", "google", "microsoft", "openai", "netflix", "discord"}
 )
