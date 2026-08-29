@@ -51,17 +51,21 @@ Service Registry
 
 ## Phase
 
-- **I**：config/icons.yaml + QA（本阶段）  
-- **II**：核心 brand 有源升档  
+- **I** ✅：config/icons.yaml + QA  
+- **II** ✅：核心 ~50 brand 有源升档（SI=`sourced`，官方色不覆盖）  
 - **III**：strategy/dataset 统一视觉  
 - **IV**：QA 驱动替换错配  
 - **V**：dark/light/compact 按需  
 
-**不进入「全部批量补齐」。**
+## Phase II 状态
+
+- 核心约 50+ brand 均有 icon_id 与 SVG/PNG  
+- Simple Icons 保持 `status: sourced`  
+- `official-colors` / project 几何标不覆盖  
+- 报告：`reports/phase2_core_icons.md`  
 
 ```bash
+python scripts/icon_phase2_core.py
 python scripts/icon_config_sync.py
 python scripts/icon_qa.py
-python scripts/icon_coverage.py
-python scripts/icon_identity_audit.py
 ```
