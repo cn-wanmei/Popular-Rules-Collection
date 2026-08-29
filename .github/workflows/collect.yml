@@ -62,6 +62,11 @@ jobs:
       - name: Icon validate (soft)
         continue-on-error: true
         run: python scripts/icon_validate.py
+      - name: Icon visual regression (soft)
+        continue-on-error: true
+        run: |
+          python scripts/icon_visual_regression.py --write-baseline || true
+          python scripts/icon_visual_regression.py || true
       - name: Normalize
         run: |
           if [ "${{ inputs.skip_large }}" = "true" ]; then
