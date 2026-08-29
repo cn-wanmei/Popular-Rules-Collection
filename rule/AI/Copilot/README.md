@@ -1,5 +1,7 @@
 # Copilot
 
+![icon](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/128/copilot.png)
+
 **AI** · `copilot` · service
 
 

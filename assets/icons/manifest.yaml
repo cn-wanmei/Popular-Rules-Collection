@@ -1,129 +1,216 @@
 version: 1
-updated: "2026-08-29"
+updated: '2026-08-29'
 description: Icon Dataset SSOT — Service / Dataset / Policy / Network icons
 defaults:
-  png_sizes: [64, 128, 256]
-  formats: [svg, png]
-  optional_formats: [ico, webp]
+  png_sizes:
+  - 64
+  - 128
+  - 256
+  formats:
+  - svg
+  - png
+  optional_formats:
+  - ico
+  - webp
   base_path: assets/icons
-  raw_url_template: "https://raw.githubusercontent.com/{owner}/{repo}/{branch}/assets/icons/{path}"
+  raw_url_template: https://raw.githubusercontent.com/{owner}/{repo}/{branch}/assets/icons/{path}
   owner: cn-wanmei
   repo: Popular-Rules-Collection
   branch: main
-status_enum: [verified, sourced, placeholder, missing, review, deprecated]
+status_enum:
+- verified
+- sourced
+- placeholder
+- missing
+- review
+- deprecated
 icons:
   direct:
     name: Direct
     type: policy
     icon_key: direct
-    source: {provider: project, method: geometric}
+    source:
+      provider: project
+      method: geometric
     files:
       svg: source/direct.svg
-      png: {'64': png/64/direct.png, '128': png/128/direct.png, '256': png/256/direct.png}
-    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+      png:
+        '64': png/64/direct.png
+        '128': png/128/direct.png
+        '256': png/256/direct.png
+    license:
+      type: CC0-1.0
+      note: Original geometric mark for Popular-Rules-Collection
     status: verified
   proxy:
     name: Proxy
     type: policy
     icon_key: proxy
-    source: {provider: project, method: geometric}
+    source:
+      provider: project
+      method: geometric
     files:
       svg: source/proxy.svg
-      png: {'64': png/64/proxy.png, '128': png/128/proxy.png, '256': png/256/proxy.png}
-    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+      png:
+        '64': png/64/proxy.png
+        '128': png/128/proxy.png
+        '256': png/256/proxy.png
+    license:
+      type: CC0-1.0
+      note: Original geometric mark for Popular-Rules-Collection
     status: verified
   reject:
     name: Reject
     type: policy
     icon_key: reject
-    source: {provider: project, method: geometric}
+    source:
+      provider: project
+      method: geometric
     files:
       svg: source/reject.svg
-      png: {'64': png/64/reject.png, '128': png/128/reject.png, '256': png/256/reject.png}
-    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+      png:
+        '64': png/64/reject.png
+        '128': png/128/reject.png
+        '256': png/256/reject.png
+    license:
+      type: CC0-1.0
+      note: Original geometric mark for Popular-Rules-Collection
     status: verified
   dns:
     name: DNS
     type: policy
     icon_key: dns
-    source: {provider: project, method: geometric}
+    source:
+      provider: project
+      method: geometric
     files:
       svg: source/dns.svg
-      png: {'64': png/64/dns.png, '128': png/128/dns.png, '256': png/256/dns.png}
-    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+      png:
+        '64': png/64/dns.png
+        '128': png/128/dns.png
+        '256': png/256/dns.png
+    license:
+      type: CC0-1.0
+      note: Original geometric mark for Popular-Rules-Collection
     status: verified
   lan:
     name: LAN
     type: network
     icon_key: lan
-    source: {provider: project, method: geometric}
+    source:
+      provider: project
+      method: geometric
     files:
       svg: source/lan.svg
-      png: {'64': png/64/lan.png, '128': png/128/lan.png, '256': png/256/lan.png}
-    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+      png:
+        '64': png/64/lan.png
+        '128': png/128/lan.png
+        '256': png/256/lan.png
+    license:
+      type: CC0-1.0
+      note: Original geometric mark for Popular-Rules-Collection
     status: verified
   china:
     name: China
     type: dataset
     icon_key: china
-    source: {provider: project, method: geometric}
+    source:
+      provider: project
+      method: geometric
     files:
       svg: source/china.svg
-      png: {'64': png/64/china.png, '128': png/128/china.png, '256': png/256/china.png}
-    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+      png:
+        '64': png/64/china.png
+        '128': png/128/china.png
+        '256': png/256/china.png
+    license:
+      type: CC0-1.0
+      note: Original geometric mark for Popular-Rules-Collection
     status: verified
   geoip:
     name: GeoIP
     type: dataset
     icon_key: geoip
-    source: {provider: project, method: geometric}
+    source:
+      provider: project
+      method: geometric
     files:
       svg: source/geoip.svg
-      png: {'64': png/64/geoip.png, '128': png/128/geoip.png, '256': png/256/geoip.png}
-    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+      png:
+        '64': png/64/geoip.png
+        '128': png/128/geoip.png
+        '256': png/256/geoip.png
+    license:
+      type: CC0-1.0
+      note: Original geometric mark for Popular-Rules-Collection
     status: verified
   geosite:
     name: GeoSite
     type: dataset
     icon_key: geosite
-    source: {provider: project, method: geometric}
+    source:
+      provider: project
+      method: geometric
     files:
       svg: source/geosite.svg
-      png: {'64': png/64/geosite.png, '128': png/128/geosite.png, '256': png/256/geosite.png}
-    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+      png:
+        '64': png/64/geosite.png
+        '128': png/128/geosite.png
+        '256': png/256/geosite.png
+    license:
+      type: CC0-1.0
+      note: Original geometric mark for Popular-Rules-Collection
     status: verified
   asn:
     name: ASN
     type: dataset
     icon_key: asn
-    source: {provider: project, method: geometric}
+    source:
+      provider: project
+      method: geometric
     files:
       svg: source/asn.svg
-      png: {'64': png/64/asn.png, '128': png/128/asn.png, '256': png/256/asn.png}
-    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+      png:
+        '64': png/64/asn.png
+        '128': png/128/asn.png
+        '256': png/256/asn.png
+    license:
+      type: CC0-1.0
+      note: Original geometric mark for Popular-Rules-Collection
     status: verified
   placeholder:
     name: Placeholder
     type: policy
     icon_key: placeholder
-    source: {provider: project, method: geometric}
+    source:
+      provider: project
+      method: geometric
     files:
       svg: source/placeholder.svg
-      png: {'64': png/64/placeholder.png, '128': png/128/placeholder.png, '256': png/256/placeholder.png}
-    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+      png:
+        '64': png/64/placeholder.png
+        '128': png/128/placeholder.png
+        '256': png/256/placeholder.png
+    license:
+      type: CC0-1.0
+      note: Original geometric mark for Popular-Rules-Collection
     status: verified
   google:
     name: Google
     type: service
     icon_key: google
-    service_ids: [google]
+    service_ids:
+    - google
     source:
       provider: simple-icons
       slug: google
       url: https://github.com/simple-icons/simple-icons/blob/master/icons/google.svg
     files:
       svg: source/google.svg
-      png: {'64': png/64/google.png, '128': png/128/google.png, '256': png/256/google.png}
+      png:
+        '64': png/64/google.png
+        '128': png/128/google.png
+        '256': png/256/google.png
     license:
       type: see-source
       note: Simple Icons project is CC0-1.0; brand trademarks still apply.
@@ -133,25 +220,1828 @@ icons:
     name: Apple
     type: service
     icon_key: apple
-    service_ids: [apple]
-    source: {provider: simple-icons, slug: apple, url: https://github.com/simple-icons/simple-icons/blob/master/icons/apple.svg}
+    service_ids:
+    - apple
+    source:
+      provider: simple-icons
+      slug: apple
+      url: https://github.com/simple-icons/simple-icons/blob/master/icons/apple.svg
     files:
       svg: source/apple.svg
-      png: {'64': png/64/apple.png, '128': png/128/apple.png, '256': png/256/apple.png}
-    license: {type: see-source, note: Brand trademarks apply; Simple Icons project CC0-1.0.}
+      png:
+        '64': png/64/apple.png
+        '128': png/128/apple.png
+        '256': png/256/apple.png
+    license:
+      type: see-source
+      note: Brand trademarks apply; Simple Icons project CC0-1.0.
     status: sourced
   github:
     name: GitHub
     type: service
     icon_key: github
-    service_ids: [github]
-    source: {provider: simple-icons, slug: github, url: https://github.com/simple-icons/simple-icons/blob/master/icons/github.svg}
+    service_ids:
+    - github
+    source:
+      provider: simple-icons
+      slug: github
+      url: https://github.com/simple-icons/simple-icons/blob/master/icons/github.svg
     files:
       svg: source/github.svg
-      png: {'64': png/64/github.png, '128': png/128/github.png, '256': png/256/github.png}
-    license: {type: see-source, note: Brand trademarks apply; Simple Icons project CC0-1.0.}
+      png:
+        '64': png/64/github.png
+        '128': png/128/github.png
+        '256': png/256/github.png
+    license:
+      type: see-source
+      note: Brand trademarks apply; Simple Icons project CC0-1.0.
+    status: sourced
+  airbnb:
+    name: Airbnb
+    type: service
+    icon_key: airbnb
+    service_ids:
+    - airbnb
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/airbnb.svg
+      png:
+        '64': png/64/airbnb.png
+        '128': png/128/airbnb.png
+        '256': png/256/airbnb.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  alibaba:
+    name: Alibaba
+    type: service
+    icon_key: alibaba
+    service_ids:
+    - alibaba
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/alibaba.svg
+      png:
+        '64': png/64/alibaba.png
+        '128': png/128/alibaba.png
+        '256': png/256/alibaba.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  alipay:
+    name: Alipay
+    type: service
+    icon_key: alipay
+    service_ids:
+    - alipay
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/alipay.svg
+      png:
+        '64': png/64/alipay.png
+        '128': png/128/alipay.png
+        '256': png/256/alipay.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  anthropic:
+    name: Anthropic
+    type: service
+    icon_key: anthropic
+    service_ids:
+    - anthropic
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/anthropic.svg
+      png:
+        '64': png/64/anthropic.png
+        '128': png/128/anthropic.png
+        '256': png/256/anthropic.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  applemusic:
+    name: Applemusic
+    type: service
+    icon_key: applemusic
+    service_ids:
+    - applemusic
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/applemusic.svg
+      png:
+        '64': png/64/applemusic.png
+        '128': png/128/applemusic.png
+        '256': png/256/applemusic.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  appletv:
+    name: Appletv
+    type: service
+    icon_key: appletv
+    service_ids:
+    - appletv
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/appletv.svg
+      png:
+        '64': png/64/appletv.png
+        '128': png/128/appletv.png
+        '256': png/256/appletv.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  atlassian:
+    name: Atlassian
+    type: service
+    icon_key: atlassian
+    service_ids:
+    - atlassian
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/atlassian.svg
+      png:
+        '64': png/64/atlassian.png
+        '128': png/128/atlassian.png
+        '256': png/256/atlassian.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  baidu:
+    name: Baidu
+    type: service
+    icon_key: baidu
+    service_ids:
+    - baidu
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/baidu.svg
+      png:
+        '64': png/64/baidu.png
+        '128': png/128/baidu.png
+        '256': png/256/baidu.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  bilibili:
+    name: Bilibili
+    type: service
+    icon_key: bilibili
+    service_ids:
+    - bilibili
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/bilibili.svg
+      png:
+        '64': png/64/bilibili.png
+        '128': png/128/bilibili.png
+        '256': png/256/bilibili.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  binance:
+    name: Binance
+    type: service
+    icon_key: binance
+    service_ids:
+    - binance
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/binance.svg
+      png:
+        '64': png/64/binance.png
+        '128': png/128/binance.png
+        '256': png/256/binance.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  bluesky:
+    name: Bluesky
+    type: service
+    icon_key: bluesky
+    service_ids:
+    - bluesky
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/bluesky.svg
+      png:
+        '64': png/64/bluesky.png
+        '128': png/128/bluesky.png
+        '256': png/256/bluesky.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  claude:
+    name: Claude
+    type: service
+    icon_key: claude
+    service_ids:
+    - claude
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/claude.svg
+      png:
+        '64': png/64/claude.png
+        '128': png/128/claude.png
+        '256': png/256/claude.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  cloudflare:
+    name: Cloudflare
+    type: service
+    icon_key: cloudflare
+    service_ids:
+    - cloudflare
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/cloudflare.svg
+      png:
+        '64': png/64/cloudflare.png
+        '128': png/128/cloudflare.png
+        '256': png/256/cloudflare.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  copilot:
+    name: Copilot
+    type: service
+    icon_key: copilot
+    service_ids:
+    - copilot
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/copilot.svg
+      png:
+        '64': png/64/copilot.png
+        '128': png/128/copilot.png
+        '256': png/256/copilot.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  deezer:
+    name: Deezer
+    type: service
+    icon_key: deezer
+    service_ids:
+    - deezer
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/deezer.svg
+      png:
+        '64': png/64/deezer.png
+        '128': png/128/deezer.png
+        '256': png/256/deezer.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  digitalocean:
+    name: Digitalocean
+    type: service
+    icon_key: digitalocean
+    service_ids:
+    - digitalocean
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/digitalocean.svg
+      png:
+        '64': png/64/digitalocean.png
+        '128': png/128/digitalocean.png
+        '256': png/256/digitalocean.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  discord:
+    name: Discord
+    type: service
+    icon_key: discord
+    service_ids:
+    - discord
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/discord.svg
+      png:
+        '64': png/64/discord.png
+        '128': png/128/discord.png
+        '256': png/256/discord.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  docker:
+    name: Docker
+    type: service
+    icon_key: docker
+    service_ids:
+    - docker
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/docker.svg
+      png:
+        '64': png/64/docker.png
+        '128': png/128/docker.png
+        '256': png/256/docker.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  douyin:
+    name: Douyin
+    type: service
+    icon_key: douyin
+    service_ids:
+    - douyin
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/douyin.svg
+      png:
+        '64': png/64/douyin.png
+        '128': png/128/douyin.png
+        '256': png/256/douyin.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  dropbox:
+    name: Dropbox
+    type: service
+    icon_key: dropbox
+    service_ids:
+    - dropbox
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/dropbox.svg
+      png:
+        '64': png/64/dropbox.png
+        '128': png/128/dropbox.png
+        '256': png/256/dropbox.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  ea:
+    name: Ea
+    type: service
+    icon_key: ea
+    service_ids:
+    - ea
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/ea.svg
+      png:
+        '64': png/64/ea.png
+        '128': png/128/ea.png
+        '256': png/256/ea.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  ebay:
+    name: Ebay
+    type: service
+    icon_key: ebay
+    service_ids:
+    - ebay
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/ebay.svg
+      png:
+        '64': png/64/ebay.png
+        '128': png/128/ebay.png
+        '256': png/256/ebay.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  emby:
+    name: Emby
+    type: service
+    icon_key: emby
+    service_ids:
+    - emby
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/emby.svg
+      png:
+        '64': png/64/emby.png
+        '128': png/128/emby.png
+        '256': png/256/emby.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  epic:
+    name: Epic
+    type: service
+    icon_key: epic
+    service_ids:
+    - epic
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/epic.svg
+      png:
+        '64': png/64/epic.png
+        '128': png/128/epic.png
+        '256': png/256/epic.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  facebook:
+    name: Facebook
+    type: service
+    icon_key: facebook
+    service_ids:
+    - facebook
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/facebook.svg
+      png:
+        '64': png/64/facebook.png
+        '128': png/128/facebook.png
+        '256': png/256/facebook.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  figma:
+    name: Figma
+    type: service
+    icon_key: figma
+    service_ids:
+    - figma
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/figma.svg
+      png:
+        '64': png/64/figma.png
+        '128': png/128/figma.png
+        '256': png/256/figma.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  firebase:
+    name: Firebase
+    type: service
+    icon_key: firebase
+    service_ids:
+    - firebase
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/firebase.svg
+      png:
+        '64': png/64/firebase.png
+        '128': png/128/firebase.png
+        '256': png/256/firebase.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  gemini:
+    name: Gemini
+    type: service
+    icon_key: gemini
+    service_ids:
+    - gemini
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/gemini.svg
+      png:
+        '64': png/64/gemini.png
+        '128': png/128/gemini.png
+        '256': png/256/gemini.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  gitlab:
+    name: Gitlab
+    type: service
+    icon_key: gitlab
+    service_ids:
+    - gitlab
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/gitlab.svg
+      png:
+        '64': png/64/gitlab.png
+        '128': png/128/gitlab.png
+        '256': png/256/gitlab.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  hashicorp:
+    name: Hashicorp
+    type: service
+    icon_key: hashicorp
+    service_ids:
+    - hashicorp
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/hashicorp.svg
+      png:
+        '64': png/64/hashicorp.png
+        '128': png/128/hashicorp.png
+        '256': png/256/hashicorp.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  hbo:
+    name: Hbo
+    type: service
+    icon_key: hbo
+    service_ids:
+    - hbo
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/hbo.svg
+      png:
+        '64': png/64/hbo.png
+        '128': png/128/hbo.png
+        '256': png/256/hbo.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  huawei:
+    name: Huawei
+    type: service
+    icon_key: huawei
+    service_ids:
+    - huawei
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/huawei.svg
+      png:
+        '64': png/64/huawei.png
+        '128': png/128/huawei.png
+        '256': png/256/huawei.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  huggingface:
+    name: Huggingface
+    type: service
+    icon_key: huggingface
+    service_ids:
+    - huggingface
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/huggingface.svg
+      png:
+        '64': png/64/huggingface.png
+        '128': png/128/huggingface.png
+        '256': png/256/huggingface.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  icloud:
+    name: Icloud
+    type: service
+    icon_key: icloud
+    service_ids:
+    - icloud
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/icloud.svg
+      png:
+        '64': png/64/icloud.png
+        '128': png/128/icloud.png
+        '256': png/256/icloud.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  instagram:
+    name: Instagram
+    type: service
+    icon_key: instagram
+    service_ids:
+    - instagram
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/instagram.svg
+      png:
+        '64': png/64/instagram.png
+        '128': png/128/instagram.png
+        '256': png/256/instagram.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  jetbrains:
+    name: Jetbrains
+    type: service
+    icon_key: jetbrains
+    service_ids:
+    - jetbrains
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/jetbrains.svg
+      png:
+        '64': png/64/jetbrains.png
+        '128': png/128/jetbrains.png
+        '256': png/256/jetbrains.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  kakaotalk:
+    name: Kakaotalk
+    type: service
+    icon_key: kakaotalk
+    service_ids:
+    - kakaotalk
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/kakaotalk.svg
+      png:
+        '64': png/64/kakaotalk.png
+        '128': png/128/kakaotalk.png
+        '256': png/256/kakaotalk.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  line:
+    name: Line
+    type: service
+    icon_key: line
+    service_ids:
+    - line
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/line.svg
+      png:
+        '64': png/64/line.png
+        '128': png/128/line.png
+        '256': png/256/line.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  meituan:
+    name: Meituan
+    type: service
+    icon_key: meituan
+    service_ids:
+    - meituan
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/meituan.svg
+      png:
+        '64': png/64/meituan.png
+        '128': png/128/meituan.png
+        '256': png/256/meituan.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  messenger:
+    name: Messenger
+    type: service
+    icon_key: messenger
+    service_ids:
+    - messenger
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/messenger.svg
+      png:
+        '64': png/64/messenger.png
+        '128': png/128/messenger.png
+        '256': png/256/messenger.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  naver:
+    name: Naver
+    type: service
+    icon_key: naver
+    service_ids:
+    - naver
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/naver.svg
+      png:
+        '64': png/64/naver.png
+        '128': png/128/naver.png
+        '256': png/256/naver.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  netflix:
+    name: Netflix
+    type: service
+    icon_key: netflix
+    service_ids:
+    - netflix
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/netflix.svg
+      png:
+        '64': png/64/netflix.png
+        '128': png/128/netflix.png
+        '256': png/256/netflix.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  netlify:
+    name: Netlify
+    type: service
+    icon_key: netlify
+    service_ids:
+    - netlify
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/netlify.svg
+      png:
+        '64': png/64/netlify.png
+        '128': png/128/netlify.png
+        '256': png/256/netlify.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  notion:
+    name: Notion
+    type: service
+    icon_key: notion
+    service_ids:
+    - notion
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/notion.svg
+      png:
+        '64': png/64/notion.png
+        '128': png/128/notion.png
+        '256': png/256/notion.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  okx:
+    name: Okx
+    type: service
+    icon_key: okx
+    service_ids:
+    - okx
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/okx.svg
+      png:
+        '64': png/64/okx.png
+        '128': png/128/okx.png
+        '256': png/256/okx.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  oppo:
+    name: Oppo
+    type: service
+    icon_key: oppo
+    service_ids:
+    - oppo
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/oppo.svg
+      png:
+        '64': png/64/oppo.png
+        '128': png/128/oppo.png
+        '256': png/256/oppo.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  paramountplus:
+    name: Paramountplus
+    type: service
+    icon_key: paramountplus
+    service_ids:
+    - paramountplus
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/paramountplus.svg
+      png:
+        '64': png/64/paramountplus.png
+        '128': png/128/paramountplus.png
+        '256': png/256/paramountplus.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  paypal:
+    name: Paypal
+    type: service
+    icon_key: paypal
+    service_ids:
+    - paypal
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/paypal.svg
+      png:
+        '64': png/64/paypal.png
+        '128': png/128/paypal.png
+        '256': png/256/paypal.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  perplexity:
+    name: Perplexity
+    type: service
+    icon_key: perplexity
+    service_ids:
+    - perplexity
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/perplexity.svg
+      png:
+        '64': png/64/perplexity.png
+        '128': png/128/perplexity.png
+        '256': png/256/perplexity.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  pinterest:
+    name: Pinterest
+    type: service
+    icon_key: pinterest
+    service_ids:
+    - pinterest
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/pinterest.svg
+      png:
+        '64': png/64/pinterest.png
+        '128': png/128/pinterest.png
+        '256': png/256/pinterest.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  playstation:
+    name: Playstation
+    type: service
+    icon_key: playstation
+    service_ids:
+    - playstation
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/playstation.svg
+      png:
+        '64': png/64/playstation.png
+        '128': png/128/playstation.png
+        '256': png/256/playstation.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  reddit:
+    name: Reddit
+    type: service
+    icon_key: reddit
+    service_ids:
+    - reddit
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/reddit.svg
+      png:
+        '64': png/64/reddit.png
+        '128': png/128/reddit.png
+        '256': png/256/reddit.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  roblox:
+    name: Roblox
+    type: service
+    icon_key: roblox
+    service_ids:
+    - roblox
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/roblox.svg
+      png:
+        '64': png/64/roblox.png
+        '128': png/128/roblox.png
+        '256': png/256/roblox.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  rockstar:
+    name: Rockstar
+    type: service
+    icon_key: rockstar
+    service_ids:
+    - rockstar
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/rockstar.svg
+      png:
+        '64': png/64/rockstar.png
+        '128': png/128/rockstar.png
+        '256': png/256/rockstar.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  shopify:
+    name: Shopify
+    type: service
+    icon_key: shopify
+    service_ids:
+    - shopify
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/shopify.svg
+      png:
+        '64': png/64/shopify.png
+        '128': png/128/shopify.png
+        '256': png/256/shopify.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  signal:
+    name: Signal
+    type: service
+    icon_key: signal
+    service_ids:
+    - signal
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/signal.svg
+      png:
+        '64': png/64/signal.png
+        '128': png/128/signal.png
+        '256': png/256/signal.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  sina:
+    name: Sina
+    type: service
+    icon_key: sina
+    service_ids:
+    - sina
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/sina.svg
+      png:
+        '64': png/64/sina.png
+        '128': png/128/sina.png
+        '256': png/256/sina.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  snapchat:
+    name: Snapchat
+    type: service
+    icon_key: snapchat
+    service_ids:
+    - snapchat
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/snapchat.svg
+      png:
+        '64': png/64/snapchat.png
+        '128': png/128/snapchat.png
+        '256': png/256/snapchat.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  soundcloud:
+    name: Soundcloud
+    type: service
+    icon_key: soundcloud
+    service_ids:
+    - soundcloud
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/soundcloud.svg
+      png:
+        '64': png/64/soundcloud.png
+        '128': png/128/soundcloud.png
+        '256': png/256/soundcloud.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  speedtest:
+    name: Speedtest
+    type: service
+    icon_key: speedtest
+    service_ids:
+    - speedtest
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/speedtest.svg
+      png:
+        '64': png/64/speedtest.png
+        '128': png/128/speedtest.png
+        '256': png/256/speedtest.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  spotify:
+    name: Spotify
+    type: service
+    icon_key: spotify
+    service_ids:
+    - spotify
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/spotify.svg
+      png:
+        '64': png/64/spotify.png
+        '128': png/128/spotify.png
+        '256': png/256/spotify.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  steam:
+    name: Steam
+    type: service
+    icon_key: steam
+    service_ids:
+    - steam
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/steam.svg
+      png:
+        '64': png/64/steam.png
+        '128': png/128/steam.png
+        '256': png/256/steam.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  stripe:
+    name: Stripe
+    type: service
+    icon_key: stripe
+    service_ids:
+    - stripe
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/stripe.svg
+      png:
+        '64': png/64/stripe.png
+        '128': png/128/stripe.png
+        '256': png/256/stripe.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  telegram:
+    name: Telegram
+    type: service
+    icon_key: telegram
+    service_ids:
+    - telegram
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/telegram.svg
+      png:
+        '64': png/64/telegram.png
+        '128': png/128/telegram.png
+        '256': png/256/telegram.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  threads:
+    name: Threads
+    type: service
+    icon_key: threads
+    service_ids:
+    - threads
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/threads.svg
+      png:
+        '64': png/64/threads.png
+        '128': png/128/threads.png
+        '256': png/256/threads.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  tidal:
+    name: Tidal
+    type: service
+    icon_key: tidal
+    service_ids:
+    - tidal
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/tidal.svg
+      png:
+        '64': png/64/tidal.png
+        '128': png/128/tidal.png
+        '256': png/256/tidal.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  tiktok:
+    name: Tiktok
+    type: service
+    icon_key: tiktok
+    service_ids:
+    - tiktok
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/tiktok.svg
+      png:
+        '64': png/64/tiktok.png
+        '128': png/128/tiktok.png
+        '256': png/256/tiktok.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  trello:
+    name: Trello
+    type: service
+    icon_key: trello
+    service_ids:
+    - trello
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/trello.svg
+      png:
+        '64': png/64/trello.png
+        '128': png/128/trello.png
+        '256': png/256/trello.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  twitch:
+    name: Twitch
+    type: service
+    icon_key: twitch
+    service_ids:
+    - twitch
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/twitch.svg
+      png:
+        '64': png/64/twitch.png
+        '128': png/128/twitch.png
+        '256': png/256/twitch.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  twitter:
+    name: Twitter
+    type: service
+    icon_key: twitter
+    service_ids:
+    - twitter
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/twitter.svg
+      png:
+        '64': png/64/twitter.png
+        '128': png/128/twitter.png
+        '256': png/256/twitter.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  uber:
+    name: Uber
+    type: service
+    icon_key: uber
+    service_ids:
+    - uber
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/uber.svg
+      png:
+        '64': png/64/uber.png
+        '128': png/128/uber.png
+        '256': png/256/uber.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  ubisoft:
+    name: Ubisoft
+    type: service
+    icon_key: ubisoft
+    service_ids:
+    - ubisoft
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/ubisoft.svg
+      png:
+        '64': png/64/ubisoft.png
+        '128': png/128/ubisoft.png
+        '256': png/256/ubisoft.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  vercel:
+    name: Vercel
+    type: service
+    icon_key: vercel
+    service_ids:
+    - vercel
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/vercel.svg
+      png:
+        '64': png/64/vercel.png
+        '128': png/128/vercel.png
+        '256': png/256/vercel.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  vimeo:
+    name: Vimeo
+    type: service
+    icon_key: vimeo
+    service_ids:
+    - vimeo
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/vimeo.svg
+      png:
+        '64': png/64/vimeo.png
+        '128': png/128/vimeo.png
+        '256': png/256/vimeo.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  vivo:
+    name: Vivo
+    type: service
+    icon_key: vivo
+    service_ids:
+    - vivo
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/vivo.svg
+      png:
+        '64': png/64/vivo.png
+        '128': png/128/vivo.png
+        '256': png/256/vivo.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  wechat:
+    name: Wechat
+    type: service
+    icon_key: wechat
+    service_ids:
+    - wechat
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/wechat.svg
+      png:
+        '64': png/64/wechat.png
+        '128': png/128/wechat.png
+        '256': png/256/wechat.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  weibo:
+    name: Weibo
+    type: service
+    icon_key: weibo
+    service_ids:
+    - weibo
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/weibo.svg
+      png:
+        '64': png/64/weibo.png
+        '128': png/128/weibo.png
+        '256': png/256/weibo.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  whatsapp:
+    name: Whatsapp
+    type: service
+    icon_key: whatsapp
+    service_ids:
+    - whatsapp
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/whatsapp.svg
+      png:
+        '64': png/64/whatsapp.png
+        '128': png/128/whatsapp.png
+        '256': png/256/whatsapp.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  wikipedia:
+    name: Wikipedia
+    type: service
+    icon_key: wikipedia
+    service_ids:
+    - wikipedia
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/wikipedia.svg
+      png:
+        '64': png/64/wikipedia.png
+        '128': png/128/wikipedia.png
+        '256': png/256/wikipedia.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  wise:
+    name: Wise
+    type: service
+    icon_key: wise
+    service_ids:
+    - wise
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/wise.svg
+      png:
+        '64': png/64/wise.png
+        '128': png/128/wise.png
+        '256': png/256/wise.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  xiaomi:
+    name: Xiaomi
+    type: service
+    icon_key: xiaomi
+    service_ids:
+    - xiaomi
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/xiaomi.svg
+      png:
+        '64': png/64/xiaomi.png
+        '128': png/128/xiaomi.png
+        '256': png/256/xiaomi.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  youtube:
+    name: Youtube
+    type: service
+    icon_key: youtube
+    service_ids:
+    - youtube
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/youtube.svg
+      png:
+        '64': png/64/youtube.png
+        '128': png/128/youtube.png
+        '256': png/256/youtube.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  youtubemusic:
+    name: Youtubemusic
+    type: service
+    icon_key: youtubemusic
+    service_ids:
+    - youtubemusic
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/youtubemusic.svg
+      png:
+        '64': png/64/youtubemusic.png
+        '128': png/128/youtubemusic.png
+        '256': png/256/youtubemusic.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  zhihu:
+    name: Zhihu
+    type: service
+    icon_key: zhihu
+    service_ids:
+    - zhihu
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/zhihu.svg
+      png:
+        '64': png/64/zhihu.png
+        '128': png/128/zhihu.png
+        '256': png/256/zhihu.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  zoom:
+    name: Zoom
+    type: service
+    icon_key: zoom
+    service_ids:
+    - zoom
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/zoom.svg
+      png:
+        '64': png/64/zoom.png
+        '128': png/128/zoom.png
+        '256': png/256/zoom.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
     status: sourced
 service_icon_map:
   google: google
   apple: apple
   github: github
+  airbnb: airbnb
+  alibaba: alibaba
+  alipay: alipay
+  anthropic: anthropic
+  applemusic: applemusic
+  appletv: appletv
+  atlassian: atlassian
+  baidu: baidu
+  bilibili: bilibili
+  binance: binance
+  bluesky: bluesky
+  claude: claude
+  cloudflare: cloudflare
+  copilot: copilot
+  deezer: deezer
+  digitalocean: digitalocean
+  discord: discord
+  docker: docker
+  douyin: douyin
+  dropbox: dropbox
+  ea: ea
+  ebay: ebay
+  emby: emby
+  epic: epic
+  facebook: facebook
+  figma: figma
+  firebase: firebase
+  gemini: gemini
+  gitlab: gitlab
+  hashicorp: hashicorp
+  hbo: hbo
+  huawei: huawei
+  huggingface: huggingface
+  icloud: icloud
+  instagram: instagram
+  jetbrains: jetbrains
+  kakaotalk: kakaotalk
+  line: line
+  meituan: meituan
+  messenger: messenger
+  naver: naver
+  netflix: netflix
+  netlify: netlify
+  notion: notion
+  okx: okx
+  oppo: oppo
+  paramountplus: paramountplus
+  paypal: paypal
+  perplexity: perplexity
+  pinterest: pinterest
+  playstation: playstation
+  reddit: reddit
+  roblox: roblox
+  rockstar: rockstar
+  shopify: shopify
+  signal: signal
+  sina: sina
+  snapchat: snapchat
+  soundcloud: soundcloud
+  speedtest: speedtest
+  spotify: spotify
+  steam: steam
+  stripe: stripe
+  telegram: telegram
+  threads: threads
+  tidal: tidal
+  tiktok: tiktok
+  trello: trello
+  twitch: twitch
+  twitter: twitter
+  uber: uber
+  ubisoft: ubisoft
+  vercel: vercel
+  vimeo: vimeo
+  vivo: vivo
+  wechat: wechat
+  weibo: weibo
+  whatsapp: whatsapp
+  wikipedia: wikipedia
+  wise: wise
+  xiaomi: xiaomi
+  youtube: youtube
+  youtubemusic: youtubemusic
+  zhihu: zhihu
+  zoom: zoom

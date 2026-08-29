@@ -1,5 +1,7 @@
 # Zhihu
 
+![icon](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/128/zhihu.png)
+
 **China** · `zhihu` · service
 
 

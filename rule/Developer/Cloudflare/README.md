@@ -1,5 +1,7 @@
 # Cloudflare
 
+![icon](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/128/cloudflare.png)
+
 **Developer** · `cloudflare` · service
 
 

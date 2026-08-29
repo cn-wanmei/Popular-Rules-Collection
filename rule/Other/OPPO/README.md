@@ -1,5 +1,7 @@
 # OPPO
 
+![icon](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/128/oppo.png)
+
 **Other** · `oppo` · service
 
 

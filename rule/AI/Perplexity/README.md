@@ -1,5 +1,7 @@
 # Perplexity
 
+![icon](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/128/perplexity.png)
+
 **AI** · `perplexity` · service
 
 

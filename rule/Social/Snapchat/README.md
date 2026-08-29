@@ -1,5 +1,7 @@
 # Snapchat
 
+![icon](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/128/snapchat.png)
+
 **Social** · `snapchat` · service
 
 

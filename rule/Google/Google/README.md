@@ -1,5 +1,7 @@
 # Google
 
+![icon](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/128/google.png)
+
 **Google** · `google` · aggregate
 
 

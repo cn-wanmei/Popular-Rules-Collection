@@ -1,5 +1,7 @@
 # Discord
 
+![icon](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/128/discord.png)
+
 **Social** · `discord` · service
 
 

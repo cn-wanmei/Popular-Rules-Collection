@@ -1,5 +1,7 @@
 # Stripe
 
+![icon](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/128/stripe.png)
+
 **Finance** · `stripe` · service
 
 

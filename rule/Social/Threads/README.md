@@ -1,5 +1,7 @@
 # Threads
 
+![icon](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/128/threads.png)
+
 **Social** · `threads` · service
 
 

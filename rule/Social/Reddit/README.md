@@ -1,5 +1,7 @@
 # Reddit
 
+![icon](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/128/reddit.png)
+
 **Social** · `reddit` · service
 
 

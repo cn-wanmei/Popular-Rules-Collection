@@ -1,5 +1,7 @@
 # Baidu
 
+![icon](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/128/baidu.png)
+
 **Baidu** · `baidu` · aggregate
 
 

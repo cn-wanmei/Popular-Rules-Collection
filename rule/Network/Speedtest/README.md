@@ -1,5 +1,7 @@
 # Speedtest
 
+![icon](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/128/speedtest.png)
+
 **Network** · `speedtest` · service
 
 

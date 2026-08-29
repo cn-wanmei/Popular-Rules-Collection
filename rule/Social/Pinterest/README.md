@@ -1,5 +1,7 @@
 # Pinterest
 
+![icon](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/128/pinterest.png)
+
 **Social** · `pinterest` · service
 
 
