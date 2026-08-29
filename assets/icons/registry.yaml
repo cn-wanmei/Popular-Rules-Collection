@@ -293,6 +293,20 @@ services:
       monochrome: appletv-mono
       network: appletv-simple
       client: appletv-simple
+  asn:
+    icon_key: asn
+    variants:
+      network: asn-network
+      default: asn-network
+      mono: asn-mono
+    default: asn-network
+    default_by_profile:
+      brand: asn-network
+      colorful: asn-network
+      minimal: asn-network
+      monochrome: asn-mono
+      network: asn-network
+      client: asn-network
   atlassian:
     icon_key: atlassian
     variants:
@@ -778,6 +792,20 @@ services:
       monochrome: placeholder-network
       network: placeholder-network
       client: placeholder-network
+  direct:
+    icon_key: direct
+    variants:
+      network: direct-network
+      default: direct-network
+      mono: direct-mono
+    default: direct-network
+    default_by_profile:
+      brand: direct-network
+      colorful: direct-network
+      minimal: direct-network
+      monochrome: direct-mono
+      network: direct-network
+      client: direct-network
   discord:
     icon_key: discord
     variants:
@@ -805,6 +833,20 @@ services:
       monochrome: placeholder-network
       network: placeholder-network
       client: placeholder-network
+  dns:
+    icon_key: dns
+    variants:
+      network: dns-network
+      default: dns-network
+      mono: dns-mono
+    default: dns-network
+    default_by_profile:
+      brand: dns-network
+      colorful: dns-network
+      minimal: dns-network
+      monochrome: dns-mono
+      network: dns-network
+      client: dns-network
   docker:
     icon_key: docker
     variants:
@@ -1050,6 +1092,34 @@ services:
       monochrome: gemini-mono
       network: gemini-brand
       client: gemini-brand
+  geoip:
+    icon_key: geoip
+    variants:
+      network: geoip-network
+      default: geoip-network
+      mono: geoip-mono
+    default: geoip-network
+    default_by_profile:
+      brand: geoip-network
+      colorful: geoip-network
+      minimal: geoip-network
+      monochrome: geoip-mono
+      network: geoip-network
+      client: geoip-network
+  geosite:
+    icon_key: geosite
+    variants:
+      network: geosite-network
+      default: geosite-network
+      mono: geosite-mono
+    default: geosite-network
+    default_by_profile:
+      brand: geosite-network
+      colorful: geosite-network
+      minimal: geosite-network
+      monochrome: geosite-mono
+      network: geosite-network
+      client: geosite-network
   gfw:
     icon_key: gfw
     variants:
@@ -1092,6 +1162,20 @@ services:
       monochrome: gitlab-mono
       network: gitlab-simple
       client: gitlab-simple
+  global:
+    icon_key: global
+    variants:
+      network: global-network
+      default: global-network
+      mono: global-mono
+    default: global-network
+    default_by_profile:
+      brand: global-network
+      colorful: global-network
+      minimal: global-network
+      monochrome: global-mono
+      network: global-network
+      client: global-network
   google:
     icon_key: google
     variants:
@@ -1413,6 +1497,20 @@ services:
       monochrome: placeholder-network
       network: placeholder-network
       client: placeholder-network
+  lan:
+    icon_key: lan
+    variants:
+      network: lan-network
+      default: lan-network
+      mono: lan-mono
+    default: lan-network
+    default_by_profile:
+      brand: lan-network
+      colorful: lan-network
+      minimal: lan-network
+      monochrome: lan-mono
+      network: lan-network
+      client: lan-network
   letv:
     icon_key: placeholder
     variants:
@@ -1481,6 +1579,20 @@ services:
       monochrome: messenger-mono
       network: messenger-simple
       client: messenger-simple
+  meta:
+    icon_key: meta
+    variants:
+      simple: meta-simple
+      default: meta-simple
+      mono: meta-mono
+    default: meta-simple
+    default_by_profile:
+      brand: meta-simple
+      colorful: meta-simple
+      minimal: meta-simple
+      monochrome: meta-mono
+      network: meta-simple
+      client: meta-simple
   microsoft:
     icon_key: microsoft
     variants:
@@ -1576,6 +1688,20 @@ services:
       monochrome: netlify-mono
       network: netlify-simple
       client: netlify-simple
+  network:
+    icon_key: network
+    variants:
+      network: network-network
+      default: network-network
+      mono: network-mono
+    default: network-network
+    default_by_profile:
+      brand: network-network
+      colorful: network-network
+      minimal: network-network
+      monochrome: network-mono
+      network: network-network
+      client: network-network
   nintendo:
     icon_key: placeholder
     variants:
@@ -1779,6 +1905,19 @@ services:
       monochrome: pinterest-mono
       network: pinterest-simple
       client: pinterest-simple
+  placeholder:
+    icon_key: placeholder
+    variants:
+      network: placeholder-network
+      default: placeholder-network
+    default: placeholder-network
+    default_by_profile:
+      brand: placeholder-network
+      colorful: placeholder-network
+      minimal: placeholder-network
+      monochrome: placeholder-network
+      network: placeholder-network
+      client: placeholder-network
   playstation:
     icon_key: playstation
     variants:
@@ -1887,6 +2026,20 @@ services:
       monochrome: reddit-mono
       network: reddit-simple
       client: reddit-simple
+  reject:
+    icon_key: reject
+    variants:
+      network: reject-network
+      default: reject-network
+      mono: reject-mono
+    default: reject-network
+    default_by_profile:
+      brand: reject-network
+      colorful: reject-network
+      minimal: reject-network
+      monochrome: reject-mono
+      network: reject-network
+      client: reject-network
   restricted:
     icon_key: placeholder
     variants:
@@ -2502,6 +2655,20 @@ services:
       monochrome: wise-mono
       network: wise-simple
       client: wise-simple
+  x:
+    icon_key: x
+    variants:
+      simple: x-simple
+      default: x-simple
+      mono: x-mono
+    default: x-simple
+    default_by_profile:
+      brand: x-simple
+      colorful: x-simple
+      minimal: x-simple
+      monochrome: x-mono
+      network: x-simple
+      client: x-simple
   xai:
     icon_key: placeholder
     variants:
@@ -2650,136 +2817,6 @@ services:
       monochrome: zoom-mono
       network: zoom-simple
       client: zoom-simple
-  direct:
-    icon_key: direct
-    variants:
-      network: direct-network
-      default: direct-network
-    default: direct-network
-    default_by_profile:
-      brand: direct-network
-      colorful: direct-network
-      minimal: direct-network
-      monochrome: direct-network
-      network: direct-network
-      client: direct-network
-  reject:
-    icon_key: reject
-    variants:
-      network: reject-network
-      default: reject-network
-    default: reject-network
-    default_by_profile:
-      brand: reject-network
-      colorful: reject-network
-      minimal: reject-network
-      monochrome: reject-network
-      network: reject-network
-      client: reject-network
-  dns:
-    icon_key: dns
-    variants:
-      network: dns-network
-      default: dns-network
-    default: dns-network
-    default_by_profile:
-      brand: dns-network
-      colorful: dns-network
-      minimal: dns-network
-      monochrome: dns-network
-      network: dns-network
-      client: dns-network
-  lan:
-    icon_key: lan
-    variants:
-      network: lan-network
-      default: lan-network
-    default: lan-network
-    default_by_profile:
-      brand: lan-network
-      colorful: lan-network
-      minimal: lan-network
-      monochrome: lan-network
-      network: lan-network
-      client: lan-network
-  geoip:
-    icon_key: geoip
-    variants:
-      network: geoip-network
-      default: geoip-network
-    default: geoip-network
-    default_by_profile:
-      brand: geoip-network
-      colorful: geoip-network
-      minimal: geoip-network
-      monochrome: geoip-network
-      network: geoip-network
-      client: geoip-network
-  geosite:
-    icon_key: geosite
-    variants:
-      network: geosite-network
-      default: geosite-network
-    default: geosite-network
-    default_by_profile:
-      brand: geosite-network
-      colorful: geosite-network
-      minimal: geosite-network
-      monochrome: geosite-network
-      network: geosite-network
-      client: geosite-network
-  asn:
-    icon_key: asn
-    variants:
-      network: asn-network
-      default: asn-network
-    default: asn-network
-    default_by_profile:
-      brand: asn-network
-      colorful: asn-network
-      minimal: asn-network
-      monochrome: asn-network
-      network: asn-network
-      client: asn-network
-  placeholder:
-    icon_key: placeholder
-    variants:
-      network: placeholder-network
-      default: placeholder-network
-    default: placeholder-network
-    default_by_profile:
-      brand: placeholder-network
-      colorful: placeholder-network
-      minimal: placeholder-network
-      monochrome: placeholder-network
-      network: placeholder-network
-      client: placeholder-network
-  global:
-    icon_key: global
-    variants:
-      network: global-network
-      default: global-network
-    default: global-network
-    default_by_profile:
-      brand: global-network
-      colorful: global-network
-      minimal: global-network
-      monochrome: global-network
-      network: global-network
-      client: global-network
-  network:
-    icon_key: network
-    variants:
-      network: network-network
-      default: network-network
-    default: network-network
-    default_by_profile:
-      brand: network-network
-      colorful: network-network
-      minimal: network-network
-      monochrome: network-network
-      network: network-network
-      client: network-network
 variants:
   placeholder-network:
     type: network
@@ -2952,6 +2989,26 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: appletv
+  asn-network:
+    type: network
+    source: project
+    path: source/asn.svg
+    png:
+      '256': png/256/asn.png
+      '128': png/128/asn.png
+      '64': png/64/asn.png
+    color_mode: color
+    status: verified
+    service_icon_key: asn
+  asn-mono:
+    type: monochrome
+    source: project-render
+    path: source/asn.svg
+    png:
+      '256': monochrome/256/asn.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: asn
   atlassian-simple:
     type: simple
     source: simple-icons
@@ -3292,6 +3349,26 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: digitalocean
+  direct-network:
+    type: network
+    source: project
+    path: source/direct.svg
+    png:
+      '256': png/256/direct.png
+      '128': png/128/direct.png
+      '64': png/64/direct.png
+    color_mode: color
+    status: verified
+    service_icon_key: direct
+  direct-mono:
+    type: monochrome
+    source: project-render
+    path: source/direct.svg
+    png:
+      '256': monochrome/256/direct.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: direct
   discord-brand:
     type: brand
     source: project-brand
@@ -3312,6 +3389,26 @@ variants:
     color_mode: monochrome
     status: verified
     service_icon_key: discord
+  dns-network:
+    type: network
+    source: project
+    path: source/dns.svg
+    png:
+      '256': png/256/dns.png
+      '128': png/128/dns.png
+      '64': png/64/dns.png
+    color_mode: color
+    status: verified
+    service_icon_key: dns
+  dns-mono:
+    type: monochrome
+    source: project-render
+    path: source/dns.svg
+    png:
+      '256': monochrome/256/dns.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: dns
   docker-simple:
     type: simple
     source: simple-icons
@@ -3532,6 +3629,46 @@ variants:
     color_mode: monochrome
     status: verified
     service_icon_key: gemini
+  geoip-network:
+    type: network
+    source: project
+    path: source/geoip.svg
+    png:
+      '256': png/256/geoip.png
+      '128': png/128/geoip.png
+      '64': png/64/geoip.png
+    color_mode: color
+    status: verified
+    service_icon_key: geoip
+  geoip-mono:
+    type: monochrome
+    source: project-render
+    path: source/geoip.svg
+    png:
+      '256': monochrome/256/geoip.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: geoip
+  geosite-network:
+    type: network
+    source: project
+    path: source/geosite.svg
+    png:
+      '256': png/256/geosite.png
+      '128': png/128/geosite.png
+      '64': png/64/geosite.png
+    color_mode: color
+    status: verified
+    service_icon_key: geosite
+  geosite-mono:
+    type: monochrome
+    source: project-render
+    path: source/geosite.svg
+    png:
+      '256': monochrome/256/geosite.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: geosite
   gfw-network:
     type: network
     source: project
@@ -3592,6 +3729,26 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: gitlab
+  global-network:
+    type: network
+    source: project
+    path: source/global.svg
+    png:
+      '256': png/256/global.png
+      '128': png/128/global.png
+      '64': png/64/global.png
+    color_mode: color
+    status: verified
+    service_icon_key: global
+  global-mono:
+    type: monochrome
+    source: project-render
+    path: source/global.svg
+    png:
+      '256': monochrome/256/global.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: global
   google-brand:
     type: brand
     source: project-brand
@@ -3772,6 +3929,26 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: kakaotalk
+  lan-network:
+    type: network
+    source: project
+    path: source/lan.svg
+    png:
+      '256': png/256/lan.png
+      '128': png/128/lan.png
+      '64': png/64/lan.png
+    color_mode: color
+    status: verified
+    service_icon_key: lan
+  lan-mono:
+    type: monochrome
+    source: project-render
+    path: source/lan.svg
+    png:
+      '256': monochrome/256/lan.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: lan
   line-simple:
     type: simple
     source: simple-icons
@@ -3832,6 +4009,26 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: messenger
+  meta-simple:
+    type: simple
+    source: simple-icons
+    slug: null
+    path: source/meta.svg
+    png:
+      '256': png/256/meta.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#0467DF'
+    service_icon_key: meta
+  meta-mono:
+    type: monochrome
+    source: project-render
+    path: source/meta.svg
+    png:
+      '256': monochrome/256/meta.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: meta
   microsoft-brand:
     type: brand
     source: project-brand
@@ -3912,6 +4109,26 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: netlify
+  network-network:
+    type: network
+    source: project
+    path: source/network.svg
+    png:
+      '256': png/256/network.png
+      '128': png/128/network.png
+      '64': png/64/network.png
+    color_mode: color
+    status: verified
+    service_icon_key: network
+  network-mono:
+    type: monochrome
+    source: project-render
+    path: source/network.svg
+    png:
+      '256': monochrome/256/network.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: network
   notion-simple:
     type: simple
     source: simple-icons
@@ -4152,6 +4369,26 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: reddit
+  reject-network:
+    type: network
+    source: project
+    path: source/reject.svg
+    png:
+      '256': png/256/reject.png
+      '128': png/128/reject.png
+      '64': png/64/reject.png
+    color_mode: color
+    status: verified
+    service_icon_key: reject
+  reject-mono:
+    type: monochrome
+    source: project-render
+    path: source/reject.svg
+    png:
+      '256': monochrome/256/reject.png
+    color_mode: monochrome
+    status: verified
+    service_icon_key: reject
   roblox-simple:
     type: simple
     source: simple-icons
@@ -4752,6 +4989,26 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: wise
+  x-simple:
+    type: simple
+    source: simple-icons
+    slug: null
+    path: source/x.svg
+    png:
+      '256': png/256/x.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#000000'
+    service_icon_key: x
+  x-mono:
+    type: monochrome
+    source: project-render
+    path: source/x.svg
+    png:
+      '256': monochrome/256/x.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: x
   xiaomi-brand:
     type: brand
     source: project-brand
@@ -4852,84 +5109,3 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: zoom
-  direct-network:
-    type: network
-    source: project
-    path: source/direct.svg
-    png:
-      '256': png/256/direct.png
-    color_mode: color
-    status: verified
-    service_icon_key: direct
-  reject-network:
-    type: network
-    source: project
-    path: source/reject.svg
-    png:
-      '256': png/256/reject.png
-    color_mode: color
-    status: verified
-    service_icon_key: reject
-  dns-network:
-    type: network
-    source: project
-    path: source/dns.svg
-    png:
-      '256': png/256/dns.png
-    color_mode: color
-    status: verified
-    service_icon_key: dns
-  lan-network:
-    type: network
-    source: project
-    path: source/lan.svg
-    png:
-      '256': png/256/lan.png
-    color_mode: color
-    status: verified
-    service_icon_key: lan
-  geoip-network:
-    type: network
-    source: project
-    path: source/geoip.svg
-    png:
-      '256': png/256/geoip.png
-    color_mode: color
-    status: verified
-    service_icon_key: geoip
-  geosite-network:
-    type: network
-    source: project
-    path: source/geosite.svg
-    png:
-      '256': png/256/geosite.png
-    color_mode: color
-    status: verified
-    service_icon_key: geosite
-  asn-network:
-    type: network
-    source: project
-    path: source/asn.svg
-    png:
-      '256': png/256/asn.png
-    color_mode: color
-    status: verified
-    service_icon_key: asn
-  global-network:
-    type: network
-    source: project
-    path: source/global.svg
-    png:
-      '256': png/256/global.png
-    color_mode: color
-    status: verified
-    service_icon_key: global
-  network-network:
-    type: network
-    source: project
-    path: source/network.svg
-    png:
-      '256': png/256/network.png
-    color_mode: color
-    status: verified
-    service_icon_key: network

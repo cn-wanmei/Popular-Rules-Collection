@@ -1018,6 +1018,24 @@
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
+    },
+    "meta": {
+      "opaque_ratio": 0.3083,
+      "color_ratio": 0.0138,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "x": {
+      "opaque_ratio": 0.2551,
+      "color_ratio": 0.0,
+      "dark_ratio": 1.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
     }
   }
 }
