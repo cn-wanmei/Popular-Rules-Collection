@@ -81,6 +81,9 @@ jobs:
           pip install pillow cairosvg -q || true
           python scripts/build_icons.py --force || true
           python scripts/build_icons.py --force --monochrome || true
+      - name: Icon Schema V2 migrate
+        continue-on-error: true
+        run: python scripts/icon_schema_v2_migrate.py
       - name: Icon registry build
         continue-on-error: true
         run: python scripts/icon_registry_build.py
@@ -93,6 +96,9 @@ jobs:
       - name: Icon QA (soft)
         continue-on-error: true
         run: python scripts/icon_qa.py
+      - name: Icon service bidirectional (soft)
+        continue-on-error: true
+        run: python scripts/icon_service_bidirectional.py
       - name: Icon identity audit (soft)
         continue-on-error: true
         run: python scripts/icon_identity_audit.py
