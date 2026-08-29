@@ -1,0 +1,21 @@
+{
+  "flags": 5,
+  "shown": 5,
+  "empty_generated": 0,
+  "empty_generated_samples": [],
+  "large_sets": {
+    "china": 112124,
+    "gfw": 4387,
+    "proxy": 28217,
+    "adblock": 402068,
+    "adblock-pro": 226095,
+    "adblock-light": 42106
+  },
+  "samples": [
+    "large-set china: 112124 lines (threshold 50000)",
+    "large-set proxy: 28217 lines (threshold 10000)",
+    "large-set adblock: 402068 lines (threshold 5000)",
+    "large-set adblock-pro: 226095 lines (threshold 5000)",
+    "large-set adblock-light: 42106 lines (threshold 2000)"
+  ]
+}

@@ -5,12 +5,13 @@
   "path": "database/geosite/apple-cn.txt",
   "lines": 165,
   "sha256_source": "9fbb3bc9b6c9d81c4b1887ce4c81f816a676618592c3dbd2a8c742e14fbba32b",
-  "fetched_at": "2026-08-28T22:07:08.914246+00:00",
+  "fetched_at": "2026-08-29T02:39:01.532015+00:00",
   "source": {
     "owner": "Loyalsoldier",
     "repo": "v2ray-rules-dat",
     "branch": "release",
-    "path": "apple-cn.txt"
+    "path": "apple-cn.txt",
+    "url": "apple-cn.txt"
   },
   "notes": ""
 }

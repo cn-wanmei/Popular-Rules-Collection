@@ -5,12 +5,13 @@
   "path": "database/geosite/reject.txt",
   "lines": 187424,
   "sha256_source": "4ca427969844552cad0a1de9878a3acedac32442744d2c455d58fd581633f6ed",
-  "fetched_at": "2026-08-28T22:07:08.914246+00:00",
+  "fetched_at": "2026-08-29T02:39:01.532015+00:00",
   "source": {
     "owner": "Loyalsoldier",
     "repo": "v2ray-rules-dat",
     "branch": "release",
-    "path": "reject-list.txt"
+    "path": "reject-list.txt",
+    "url": "reject-list.txt"
   },
   "notes": ""
 }

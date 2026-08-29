@@ -11,7 +11,7 @@
 | IP/CIDR | 0 |
 | Mixed | 77 |
 | Sources | metacubex, v2fly |
-| Updated | 2026-08-28 |
+| Updated | 2026-08-29 |
 
 ## 基础规则（Classical）
 

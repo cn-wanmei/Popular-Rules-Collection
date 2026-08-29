@@ -3,10 +3,14 @@
   "kind": "binary",
   "scope": "artifact",
   "path": "generated/mmdb/geoip.dat",
-  "sha256": "0d5d2ba0c5a5",
+  "sha256": "0d5d2ba0c5a5c58027fd1347a6afd57c9470799b6bb3cbc274fd4657ed8de382",
   "bytes": 17224069,
-  "fetched_at": "2026-08-29T02:32:07+00:00",
+  "fetched_at": "2026-08-29T02:39:01.532015+00:00",
   "source": {
+    "owner": null,
+    "repo": null,
+    "branch": null,
+    "path": "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat",
     "url": "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
   }
 }

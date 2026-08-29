@@ -5,12 +5,13 @@
   "path": "database/geoip/th.txt",
   "lines": 3464,
   "sha256_source": "a2c2106e41b51aad18e6a407290ff175120e9442eac4488e4f4ac2d84478eaba",
-  "fetched_at": "2026-08-28T22:07:08.914246+00:00",
+  "fetched_at": "2026-08-29T02:39:01.532015+00:00",
   "source": {
     "owner": "Loyalsoldier",
     "repo": "geoip",
     "branch": "release",
-    "path": "text/th.txt"
+    "path": "text/th.txt",
+    "url": "text/th.txt"
   },
   "notes": ""
 }

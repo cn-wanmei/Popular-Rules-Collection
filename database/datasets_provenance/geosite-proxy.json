@@ -5,12 +5,13 @@
   "path": "database/geosite/proxy.txt",
   "lines": 27220,
   "sha256_source": "0496fdfb6277cf8dc3ed7d74ec596a36e317050e91adffd01bbd3e0a9fd489cc",
-  "fetched_at": "2026-08-28T22:07:08.914246+00:00",
+  "fetched_at": "2026-08-29T02:39:01.532015+00:00",
   "source": {
     "owner": "Loyalsoldier",
     "repo": "v2ray-rules-dat",
     "branch": "release",
-    "path": "proxy-list.txt"
+    "path": "proxy-list.txt",
+    "url": "proxy-list.txt"
   },
   "notes": ""
 }

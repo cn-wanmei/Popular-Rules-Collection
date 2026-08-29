@@ -1,0 +1,221 @@
+{
+  "date": "2026-08-29",
+  "version": 3,
+  "service_coverage": {
+    "registered": 195,
+    "materialized": 184,
+    "intentional_unmaterialized": 11,
+    "unexpected_missing": [],
+    "coverage": 0.9436,
+    "daily_coverage": 1.0
+  },
+  "intentional_unmaterialized": {
+    "mistral": "no_verified_upstream",
+    "gcp": "no_verified_upstream",
+    "supabase": "no_verified_upstream",
+    "taobao": "no_verified_upstream_dead_bm_path_covered_by_alibaba",
+    "qq": "no_verified_upstream_dead_bm_path_covered_by_tencent",
+    "npm": "no_verified_upstream",
+    "googledrive": "no_dedicated_upstream_use_google_aggregate",
+    "amazonaws": "covered_by_aws_amazon_aggregate",
+    "dingtalk": "covered_by_alibaba_aggregate",
+    "siri": "covered_by_apple_aggregate",
+    "steamcn": "covered_by_steam_china_paths"
+  },
+  "intentional_detail": {
+    "mistral": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "gcp": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "supabase": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "taobao": {
+      "reason": "no_verified_upstream_dead_bm_path_covered_by_alibaba",
+      "code": "COVERED_BY_AGGREGATE"
+    },
+    "qq": {
+      "reason": "no_verified_upstream_dead_bm_path_covered_by_tencent",
+      "code": "COVERED_BY_AGGREGATE"
+    },
+    "npm": {
+      "reason": "no_verified_upstream",
+      "code": "NO_UPSTREAM"
+    },
+    "googledrive": {
+      "reason": "no_dedicated_upstream_use_google_aggregate",
+      "code": "COVERED_BY_AGGREGATE"
+    },
+    "amazonaws": {
+      "reason": "covered_by_aws_amazon_aggregate",
+      "code": "COVERED_BY_AGGREGATE"
+    },
+    "dingtalk": {
+      "reason": "covered_by_alibaba_aggregate",
+      "code": "COVERED_BY_AGGREGATE"
+    },
+    "siri": {
+      "reason": "covered_by_apple_aggregate",
+      "code": "COVERED_BY_AGGREGATE"
+    },
+    "steamcn": {
+      "reason": "covered_by_steam_china_paths",
+      "code": "COVERED_BY_AGGREGATE"
+    }
+  },
+  "intentional_by_code": {
+    "NO_UPSTREAM": [
+      "gcp",
+      "mistral",
+      "npm",
+      "supabase"
+    ],
+    "COVERED_BY_AGGREGATE": [
+      "amazonaws",
+      "dingtalk",
+      "googledrive",
+      "qq",
+      "siri",
+      "steamcn",
+      "taobao"
+    ]
+  },
+  "rule_coverage": {
+    "domains": 836817,
+    "ips": 13960,
+    "database_services": 184
+  },
+  "source_health": {
+    "configured_sources": 4,
+    "enabled_sources": 4,
+    "collected_this_run": 4,
+    "collected_ids": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly",
+      "dler"
+    ],
+    "historical_in_health": 8,
+    "enabled_ids": [
+      "blackmatrix7",
+      "metacubex",
+      "v2fly",
+      "dler"
+    ],
+    "historical_ids": [
+      "anti-ad",
+      "blackmatrix7",
+      "dler",
+      "hagezi",
+      "loyalsoldier",
+      "metacubex",
+      "sukkaw",
+      "v2fly"
+    ],
+    "statuses": {
+      "sukkaw": "healthy",
+      "blackmatrix7": "healthy",
+      "loyalsoldier": "healthy",
+      "anti-ad": "healthy",
+      "hagezi": "healthy",
+      "metacubex": "healthy",
+      "v2fly": "healthy",
+      "dler": "healthy"
+    },
+    "healthy_ratio": 1.0
+  },
+  "builder_coverage": {
+    "mihomo": {
+      "files": 369,
+      "status": "ok"
+    },
+    "sing-box": {
+      "files": 185,
+      "status": "ok"
+    },
+    "surge": {
+      "files": 368,
+      "status": "ok"
+    },
+    "shadowrocket": {
+      "files": 368,
+      "status": "ok"
+    },
+    "quantumult-x": {
+      "files": 185,
+      "status": "ok"
+    },
+    "egern": {
+      "files": 185,
+      "status": "ok"
+    },
+    "loon": {
+      "files": 185,
+      "status": "ok"
+    }
+  },
+  "ecosystem_coverage": {
+    "12306": 1,
+    "ai": 14,
+    "alibaba": 10,
+    "amazon": 3,
+    "apple": 5,
+    "baidu": 1,
+    "bytedance": 4,
+    "china": 28,
+    "chinamobile": 1,
+    "chinatelecom": 1,
+    "chinaunicom": 1,
+    "developer": 19,
+    "finance": 5,
+    "gaming": 13,
+    "google": 7,
+    "jingdong": 1,
+    "microsoft": 5,
+    "network": 2,
+    "other": 19,
+    "privacy": 6,
+    "restricted": 1,
+    "social": 16,
+    "streaming": 17,
+    "tencent": 5,
+    "unionpay": 10
+  },
+  "validation": {
+    "schema_validate": "pass",
+    "builder_validate": "pass",
+    "validate": "pass",
+    "builder_failures": 0
+  },
+  "conflicts": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 17844
+  },
+  "sources": 4,
+  "services": 184,
+  "domains": 836817,
+  "cidr": 13960,
+  "build": {
+    "mihomo": "ok",
+    "sing-box": "ok",
+    "surge": "ok",
+    "shadowrocket": "ok",
+    "quantumult-x": "ok",
+    "egern": "ok",
+    "loon": "ok"
+  },
+  "ip_track": {
+    "registry_sources": 4,
+    "enabled_sources": 3,
+    "sidecar_files": 37,
+    "cidr_lines": 13960,
+    "note": "Prefer health/scope correctness over raw CIDR count"
+  }
+}

@@ -5,12 +5,13 @@
   "path": "database/geosite/china.txt",
   "lines": 110878,
   "sha256_source": "3f3633d42020357a561692d06127ac1303f8e5528d4ad16ca3b3f3a88a28215d",
-  "fetched_at": "2026-08-28T22:07:08.914246+00:00",
+  "fetched_at": "2026-08-29T02:39:01.532015+00:00",
   "source": {
     "owner": "Loyalsoldier",
     "repo": "v2ray-rules-dat",
     "branch": "release",
-    "path": "china-list.txt"
+    "path": "china-list.txt",
+    "url": "china-list.txt"
   },
   "notes": "Parallel to Service china (ChinaMax); not the same SSOT."
 }

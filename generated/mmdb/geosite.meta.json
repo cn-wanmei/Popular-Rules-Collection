@@ -3,10 +3,14 @@
   "kind": "binary",
   "scope": "artifact",
   "path": "generated/mmdb/geosite.dat",
-  "sha256": "c819c98e4699",
+  "sha256": "c819c98e4699c96441713584ebbbeacb06d7c5e56c4f31d6fcd99b0c9b4756b6",
   "bytes": 4254460,
-  "fetched_at": "2026-08-29T02:32:07+00:00",
+  "fetched_at": "2026-08-29T02:39:01.532015+00:00",
   "source": {
+    "owner": null,
+    "repo": null,
+    "branch": null,
+    "path": "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat",
     "url": "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
   }
 }

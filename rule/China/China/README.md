@@ -11,7 +11,7 @@
 | IP/CIDR | 9662 |
 | Mixed | 121786 |
 | Sources | blackmatrix7, metacubex |
-| Updated | 2026-08-28 |
+| Updated | 2026-08-29 |
 
 ## 基础规则（Classical）
 

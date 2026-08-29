@@ -5,12 +5,13 @@
   "path": "database/geoip/private.txt",
   "lines": 18,
   "sha256_source": "a481dce4e9cc8318eafb3e0132cede0f936b7b8045a4ecb7795008dbeb7432d9",
-  "fetched_at": "2026-08-28T22:07:08.914246+00:00",
+  "fetched_at": "2026-08-29T02:39:01.532015+00:00",
   "source": {
     "owner": "Loyalsoldier",
     "repo": "geoip",
     "branch": "release",
-    "path": "text/private.txt"
+    "path": "text/private.txt",
+    "url": "text/private.txt"
   },
   "notes": "Complements database/network/lan.txt; still Network scope."
 }
