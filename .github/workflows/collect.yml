@@ -50,6 +50,17 @@ jobs:
         continue-on-error: true
       - run: python scripts/client_capability_matrix.py
         continue-on-error: true
+      - name: Sync service icons (Simple Icons)
+        continue-on-error: true
+        run: python scripts/sync_service_icons.py
+      - name: Icon build (optional)
+        continue-on-error: true
+        run: |
+          pip install pillow -q || true
+          python scripts/build_icons.py || true
+      - name: Icon validate (soft)
+        continue-on-error: true
+        run: python scripts/icon_validate.py
       - name: Normalize
         run: |
           if [ "${{ inputs.skip_large }}" = "true" ]; then
@@ -57,7 +68,6 @@ jobs:
           else
             python scripts/normalize.py
           fi
-      # Re-apply country/carrier IP after normalize (normalize must not clobber)
       - run: python scripts/collect_ip.py
       - run: python scripts/deduplicate.py
       - run: python scripts/conflict_detector.py
@@ -103,7 +113,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           DAY=$(date -u +%Y-%m-%d)
           rm -f database/provenance/domains.jsonl
-          git add -A database/ generated/ rule/ sources/health.yaml reports/ docs/ config/ || true
+          git add -A database/ generated/ rule/ sources/health.yaml reports/ docs/ config/ assets/ || true
           git add backup/*/manifests/ backup/ || true
           python scripts/size_gate.py --max-mb 90
           git diff --staged --quiet || git commit -m "chore(pipeline): collect+normalize+build ${DAY}"
