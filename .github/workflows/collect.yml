@@ -56,8 +56,9 @@ jobs:
       - name: Icon build (optional)
         continue-on-error: true
         run: |
-          pip install pillow -q || true
-          python scripts/build_icons.py || true
+          sudo apt-get update -qq && sudo apt-get install -y -qq libcairo2 2>/dev/null || true
+          pip install pillow cairosvg -q || true
+          python scripts/build_icons.py --force || true
       - name: Icon validate (soft)
         continue-on-error: true
         run: python scripts/icon_validate.py
