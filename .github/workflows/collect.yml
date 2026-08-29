@@ -50,6 +50,9 @@ jobs:
         continue-on-error: true
       - run: python scripts/client_capability_matrix.py
         continue-on-error: true
+      - name: Icon Phase II core brands
+        continue-on-error: true
+        run: python scripts/icon_phase2_core.py
       - name: Icon upgrade HOT via Simple Icons
         continue-on-error: true
         run: python scripts/icon_upgrade_hot_si.py
