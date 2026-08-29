@@ -1976,6 +1976,66 @@ icons:
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
     status: sourced
+  deepseek:
+    name: Deepseek
+    type: service
+    icon_key: deepseek
+    service_ids:
+    - deepseek
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/deepseek.svg
+      png:
+        '64': png/64/deepseek.png
+        '128': png/128/deepseek.png
+        '256': png/256/deepseek.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  openai:
+    name: Openai
+    type: service
+    icon_key: openai
+    service_ids:
+    - openai
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/openai.svg
+      png:
+        '64': png/64/openai.png
+        '128': png/128/openai.png
+        '256': png/256/openai.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  tencent:
+    name: Tencent
+    type: service
+    icon_key: tencent
+    service_ids:
+    - tencent
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/tencent.svg
+      png:
+        '64': png/64/tencent.png
+        '128': png/128/tencent.png
+        '256': png/256/tencent.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
 service_icon_map:
   google: google
   apple: apple
@@ -2066,3 +2126,6 @@ service_icon_map:
   zhihu: zhihu
   zoom: zoom
   microsoft: microsoft
+  deepseek: deepseek
+  openai: openai
+  tencent: tencent
