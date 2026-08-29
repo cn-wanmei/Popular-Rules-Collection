@@ -50,6 +50,12 @@ jobs:
         continue-on-error: true
       - run: python scripts/client_capability_matrix.py
         continue-on-error: true
+      - name: Icon P2 apply
+        continue-on-error: true
+        run: python scripts/icon_p2_apply.py
+      - name: Icon P0/P1 apply
+        continue-on-error: true
+        run: python scripts/icon_p0_p1_apply.py
       - name: Icon Phase III–V final
         continue-on-error: true
         run: python scripts/icon_phase3_to_final.py
