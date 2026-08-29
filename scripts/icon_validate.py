@@ -16,7 +16,16 @@ ICON_ROOT = ROOT / "assets" / "icons"
 DOMAINS = ROOT / "database" / "domains"
 REPORTS = ROOT / "reports"
 VALID_STATUS = frozenset(
-    {"verified", "sourced", "placeholder", "missing", "review", "deprecated"}
+    {
+        "verified",
+        "sourced",
+        "placeholder",
+        "missing",
+        "review",
+        "deprecated",
+        "identity-review",
+        "visual-review",
+    }
 )
 VALID_TYPES = frozenset({"service", "dataset", "network", "policy"})
 
@@ -58,6 +67,11 @@ def main() -> int:
             warn.append(f"{key}: missing license block")
         if not meta.get("source"):
             warn.append(f"{key}: missing source block")
+        if (doc.get("schema_version") or 1) >= 2:
+            if not meta.get("identity"):
+                warn.append(f"{key}: missing identity (v2)")
+            if not meta.get("variants"):
+                warn.append(f"{key}: missing variants (v2)")
         files = meta.get("files") or {}
         svg_rel = files.get("svg")
         has_svg = False
@@ -87,7 +101,7 @@ def main() -> int:
             elif pp.stat().st_size < 10:
                 hard.append(f"{key}: empty png {rel}")
         if st == "sourced":
-            info.append(f"{key}: sourced (trademark review pending)")
+            info.append(f"{key}: sourced (SI upstream; not brand-kit verified)")
 
     for sid, ik in smap.items():
         if ik not in icons:
@@ -114,7 +128,8 @@ def main() -> int:
             continue
         prov[
             str(
-                ((meta.get("source") or {}).get("provenance"))
+                ((meta.get("source") or {}).get("type"))
+                or ((meta.get("source") or {}).get("provenance"))
                 or ((meta.get("source") or {}).get("provider"))
                 or "?"
             )
@@ -124,6 +139,7 @@ def main() -> int:
     report = {
         "date": day,
         "status": status,
+        "schema_version": doc.get("schema_version"),
         "hard": hard,
         "warnings": warn[:80],
         "info": info[:40],
