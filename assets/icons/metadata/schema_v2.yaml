@@ -1,0 +1,28 @@
+version: 2
+updated: '2026-08-30'
+description: Icon Registry Schema V2
+status_pipeline:
+  - missing
+  - sourced
+  - identity-review
+  - visual-review
+  - verified
+  - placeholder
+  - deprecated
+source_types:
+  - official-source
+  - official-guideline
+  - simple-icons
+  - project-redraw
+  - project-generated
+  - community
+  - geometric
+namespaces:
+  - brand
+  - policy
+  - dataset
+  - network
+variants:
+  required_p0: [brand]
+  optional_p1: [mono]
+  optional_p2: [dark, light]
