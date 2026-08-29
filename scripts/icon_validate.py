@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -105,6 +106,21 @@ def main() -> int:
     day = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     rep_dir = REPORTS / day
     rep_dir.mkdir(parents=True, exist_ok=True)
+
+    prov = Counter()
+    cmode = Counter()
+    for _k, meta in icons.items():
+        if not isinstance(meta, dict):
+            continue
+        prov[
+            str(
+                ((meta.get("source") or {}).get("provenance"))
+                or ((meta.get("source") or {}).get("provider"))
+                or "?"
+            )
+        ] += 1
+        cmode[str(((meta.get("visual") or {}).get("color_mode") or "?"))] += 1
+
     report = {
         "date": day,
         "status": status,
@@ -112,6 +128,8 @@ def main() -> int:
         "warnings": warn[:80],
         "info": info[:40],
         "counts": {"icons": len(icons), "hard": len(hard), "warn": len(warn)},
+        "provenance": dict(prov),
+        "color_mode": dict(cmode),
     }
     (rep_dir / "icon_validate.json").write_text(
         json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
@@ -120,6 +138,8 @@ def main() -> int:
         f"[icon_validate] status={status} icons={len(icons)} "
         f"hard={len(hard)} warn={len(warn)}"
     )
+    print(f"  provenance={dict(prov)}")
+    print(f"  color_mode={dict(cmode)}")
     for e in hard[:25]:
         print(f"  HARD  {e}")
     for w in warn[:25]:
