@@ -1,0 +1,96 @@
+#!/usr/bin/env python3
+"""icon_qa.py — Icon Quality Gate (Phase I). Near-black WARN unless approved_mono."""
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+import yaml
+
+ROOT = Path(__file__).resolve().parents[1]
+ICON = ROOT / "assets" / "icons"
+MAN = ICON / "manifest.yaml"
+CFG = ROOT / "config" / "icons.yaml"
+OUT = ROOT / "reports" / "latest_icon_qa.json"
+
+
+def main() -> int:
+    man = yaml.safe_load(MAN.read_text(encoding="utf-8")) if MAN.exists() else {}
+    cfg = yaml.safe_load(CFG.read_text(encoding="utf-8")) if CFG.exists() else {}
+    icons = man.get("icons") or {}
+    approved = set(cfg.get("approved_mono_brands") or [])
+    hard: list[str] = []
+    warn: list[str] = []
+
+    for key, meta in icons.items():
+        if not isinstance(meta, dict):
+            continue
+        files = meta.get("files") or {}
+        svg_rel = files.get("svg") or f"source/{key}.svg"
+        svg = ICON / svg_rel
+        if not svg.exists() or svg.stat().st_size < 40:
+            hard.append(f"{key}: missing/empty svg")
+            continue
+        text = svg.read_text(encoding="utf-8", errors="replace")
+        if "<svg" not in text.lower():
+            hard.append(f"{key}: invalid svg")
+        if "viewbox" not in text.lower():
+            warn.append(f"{key}: missing viewBox")
+        png = ICON / (files.get("png") or {}).get("256", f"png/256/{key}.png")
+        if not png.exists() or png.stat().st_size < 200:
+            hard.append(f"{key}: missing png/256")
+            continue
+        try:
+            from PIL import Image
+
+            im = Image.open(png).convert("RGBA")
+            w, h = im.size
+            if (w, h) != (256, 256):
+                warn.append(f"{key}: png size {w}x{h} != 256x256")
+            dark = opaque = 0
+            for r, g, b, a in im.getdata():
+                if a < 32:
+                    continue
+                opaque += 1
+                if r + g + b < 60:
+                    dark += 1
+            if opaque == 0:
+                hard.append(f"{key}: blank png")
+                continue
+            dark_ratio = dark / opaque
+            cat = "brand"
+            for _sid, ent in (cfg.get("icons") or {}).items():
+                if isinstance(ent, dict) and ent.get("icon_id") == key:
+                    cat = str(ent.get("category") or "brand")
+                    if ent.get("approved_mono"):
+                        approved.add(key)
+                    break
+            if dark_ratio >= 0.9 and key not in approved and cat == "brand":
+                status = str(meta.get("status") or "")
+                prov = str(((meta.get("source") or {}).get("provenance") or ""))
+                if status == "verified" or prov == "official-colors":
+                    warn.append(f"{key}: near-black brand dark_ratio={dark_ratio:.2f}")
+        except Exception as e:
+            warn.append(f"{key}: png read {e}")
+
+    for sid, ent in (cfg.get("icons") or {}).items():
+        if not isinstance(ent, dict):
+            continue
+        iid = str(ent.get("icon_id") or "")
+        if iid and iid not in icons and iid != "placeholder":
+            hard.append(f"{sid}: icon_id {iid} not in manifest")
+
+    status = "fail" if hard else ("warn" if warn else "pass")
+    doc = {"status": status, "hard": hard, "warn": warn, "icons": len(icons)}
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    OUT.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"[icon_qa] status={status} hard={len(hard)} warn={len(warn)}")
+    for x in hard[:20]:
+        print(f"  HARD  {x}")
+    for x in warn[:15]:
+        print(f"  WARN  {x}")
+    return 1 if hard else 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
