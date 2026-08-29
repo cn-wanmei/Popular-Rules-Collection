@@ -1,0 +1,12 @@
+{
+  "id": "dat-geoip",
+  "kind": "binary",
+  "scope": "artifact",
+  "path": "generated/mmdb/geoip.dat",
+  "sha256": "0d5d2ba0c5a5",
+  "bytes": 17224069,
+  "fetched_at": "2026-08-29T02:32:07+00:00",
+  "source": {
+    "url": "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
+  }
+}
