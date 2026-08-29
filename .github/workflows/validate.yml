@@ -30,6 +30,9 @@ jobs:
         run: python scripts/validate.py
       - name: Builder validate
         run: python scripts/builder_validate.py
+      - name: Icon validate (soft)
+        continue-on-error: true
+        run: python scripts/icon_validate.py
       - name: Dataset quality gate
         run: |
           python scripts/dataset_diff.py
