@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""icon_qa.py — Icon Quality Gate. Near-black + content-ratio WARN."""
+"""icon_qa.py — Icon Quality Gate. content-ratio + near-black; levels from qa.yaml."""
 from __future__ import annotations
 
 import json
@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ICON = ROOT / "assets" / "icons"
 MAN = ICON / "manifest.yaml"
 CFG = ROOT / "config" / "icons.yaml"
+QA_CFG = ICON / "metadata" / "qa.yaml"
 OUT = ROOT / "reports" / "latest_icon_qa.json"
 
 
@@ -19,6 +20,13 @@ def main() -> int:
     cfg = yaml.safe_load(CFG.read_text(encoding="utf-8")) if CFG.exists() else {}
     icons = man.get("icons") or {}
     approved = set(cfg.get("approved_mono_brands") or [])
+    qa = yaml.safe_load(QA_CFG.read_text(encoding="utf-8")) if QA_CFG.exists() else {}
+    cr = qa.get("content_ratio") or {}
+    nb = qa.get("near_black") or {}
+    cr_level = str(cr.get("level") or "warn")
+    nb_level = str(nb.get("level") or "warn")
+    cr_thr = float(cr.get("threshold") or 0.08)
+    nb_thr = float(nb.get("threshold") or 0.9)
     hard: list[str] = []
     warn: list[str] = []
 
@@ -76,13 +84,15 @@ def main() -> int:
                 bw = max(xs) - min(xs) + 1
                 bh = max(ys) - min(ys) + 1
                 content_ratio = opaque / max(1, bw * bh)
-                if content_ratio < 0.08 and cat == "brand":
-                    warn.append(f"{key}: content_ratio={content_ratio:.3f} (glyph too small)")
-            if dark_ratio >= 0.9 and key not in approved and cat == "brand":
+                if content_ratio < cr_thr and cat == "brand":
+                    msg = f"{key}: content_ratio={content_ratio:.3f} (glyph too small)"
+                    (hard if cr_level == "hard" else warn).append(msg)
+            if dark_ratio >= nb_thr and key not in approved and cat == "brand":
                 status = str(meta.get("status") or "")
                 prov = str(((meta.get("source") or {}).get("provenance") or ""))
                 if status == "verified" or prov == "official-colors":
-                    warn.append(f"{key}: near-black brand dark_ratio={dark_ratio:.2f}")
+                    msg = f"{key}: near-black brand dark_ratio={dark_ratio:.2f}"
+                    (hard if nb_level == "hard" else warn).append(msg)
         except Exception as e:
             warn.append(f"{key}: png read {e}")
 
