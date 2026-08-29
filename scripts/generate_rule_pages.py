@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SERVICES, DOMAINS, IPS = ROOT/"database"/"services", ROOT/"database"/"domains", ROOT/"database"/"ips"
 RULE, CAT, PRIM = ROOT/"rule", ROOT/"config"/"categories.yaml", ROOT/"config"/"service_primary.yaml"
 CDN_P, OFF_P = ROOT/"config"/"cdn.yaml", ROOT/"config"/"official_sites.yaml"
+ICON_MAN = ROOT / "assets" / "icons" / "manifest.yaml"
 CLIENTS = [("Mihomo","generated/mihomo/{id}.yaml"),("sing-box","generated/sing-box/{id}.json"),("Surge","generated/surge/{id}.list"),("Shadowrocket","generated/shadowrocket/{id}.list"),("Quantumult X","generated/quantumult-x/{id}.list"),("Egern","generated/egern/{id}.yaml"),("Loon","generated/loon/{id}.list")]
 TYPE_MAP = {"domain":"DOMAIN","domain_suffix":"DOMAIN-SUFFIX","domain_keyword":"DOMAIN-KEYWORD","ip_cidr":"IP-CIDR","ipcidr":"IP-CIDR","cidr":"IP-CIDR","ip_cidr6":"IP-CIDR6","ipcidr6":"IP-CIDR6"}
 
@@ -96,12 +97,43 @@ def write_list(path, lines, header):
     body = "\n".join(lines)
     path.write_text(f"# {header}\n# AUTO-GENERATED — do not edit\n{body}\n" if body else f"# {header}\n# AUTO-GENERATED — empty\n", encoding="utf-8")
 
-def readme(meta, cat_display, mixed, domains, ips, sources, cdn, official, notes):
+def load_icon_manifest():
+    return load(ICON_MAN) or {}
+
+def icon_url_for(sid: str, icon_doc: dict, size: int = 128):
+    """Resolve service_id → raw icon URL from Icon Registry (PNG preferred, else SVG)."""
+    if not icon_doc:
+        return None
+    defaults = icon_doc.get("defaults") or {}
+    smap = icon_doc.get("service_icon_map") or {}
+    icons = icon_doc.get("icons") or {}
+    key = smap.get(sid) or (sid if sid in icons else None)
+    if not key or key not in icons:
+        return None
+    meta = icons.get(key) or {}
+    files = (meta.get("files") or {}).get("png") or {}
+    rel = files.get(str(size)) or files.get(size) or files.get("128") or files.get(128)
+    if not rel:
+        rel = (meta.get("files") or {}).get("svg")
+    if not rel:
+        return None
+    tmpl = defaults.get("raw_url_template") or (
+        "https://raw.githubusercontent.com/{owner}/{repo}/{branch}/assets/icons/{path}"
+    )
+    return tmpl.format(
+        owner=defaults.get("owner", "cn-wanmei"),
+        repo=defaults.get("repo", "Popular-Rules-Collection"),
+        branch=defaults.get("branch", "main"),
+        path=rel,
+    )
+
+def readme(meta, cat_display, mixed, domains, ips, sources, cdn, official, notes, icon_url=None):
     sid, name, day = meta["id"], meta["name"], datetime.now(timezone.utc).strftime("%Y-%m-%d")
     base = f"rule/{cat_display}/{name}"
     rows = [f"| {lab} | [Raw]({mirror(cdn, pat.format(id=sid), 'raw')}) | [jsDelivr]({mirror(cdn, pat.format(id=sid), 'jsdelivr')}) |" for lab, pat in CLIENTS]
     un = "\n> **说明：** 本目录集中管理银联及银行类服务规则；银行域名并不属于银联实体。\n" if meta["primary_category"]=="unionpay" else ""
-    lines = [f"# {name}", "", f"**{cat_display}** · `{sid}` · {meta['service_type']}", "", un, "## 统计", "", "| 项目 | 数值 |", "|------|------|", f"| Domains | {len(domains)} |", f"| IP/CIDR | {len(ips)} |", f"| Mixed | {len(mixed)} |", f"| Sources | {', '.join(sources) or '—'} |", f"| Updated | {day} |", "", "## 基础规则（Classical）", "", f"- 混合：[`{sid}.list`](./{sid}.list)"]
+    icon_block = (f"![icon]({icon_url})\n\n" if icon_url else "")
+    lines = [f"# {name}", "", icon_block + f"**{cat_display}** · `{sid}` · {meta['service_type']}", "", un, "## 统计", "", "| 项目 | 数值 |", "|------|------|", f"| Domains | {len(domains)} |", f"| IP/CIDR | {len(ips)} |", f"| Mixed | {len(mixed)} |", f"| Sources | {', '.join(sources) or '—'} |", f"| Updated | {day} |", "", "## 基础规则（Classical）", "", f"- 混合：[`{sid}.list`](./{sid}.list)"]
     if domains: lines.append(f"- 域名：[`{sid}_domain.list`](./{sid}_domain.list)")
     if ips: lines.append(f"- IP：[`{sid}_ip.list`](./{sid}_ip.list)")
     lines += ["", "## 客户端订阅", "", "| 客户端 | Raw | jsDelivr |", "|--------|-----|----------|", *rows, "", "## CDN", "", f"- Raw: {mirror(cdn, base+'/'+sid+'.list', 'raw')}", f"- jsDelivr: {mirror(cdn, base+'/'+sid+'.list', 'jsdelivr')}", "", "## 来源", "", ", ".join(f"`{s}`" for s in sources) or "—", ""]
@@ -119,6 +151,7 @@ def main():
     if args.no_strict:
         args.strict = False
     categories, pmap, cdn, official_map = cats(), primary_map(), load(CDN_P) or {}, load(OFF_P) or {}
+    icon_doc = load_icon_manifest()
     if not SERVICES.is_dir():
         print("ERROR: database/services missing", file=sys.stderr)
         return 1
@@ -184,7 +217,7 @@ def main():
         (out / "metadata.yaml").write_text(yaml.dump(page, allow_unicode=True, sort_keys=False), encoding="utf-8")
         meta = {"id": sid, "name": display, "primary_category": pc, "service_type": st}
         (out / "README.md").write_text(
-            readme(meta, cat_display, mixed, domains, ips, sources, cdn, str(official_map.get(sid) or ""), cat.get("notes") or ""),
+            readme(meta, cat_display, mixed, domains, ips, sources, cdn, str(official_map.get(sid) or ""), cat.get("notes") or "", icon_url_for(sid, icon_doc)),
             encoding="utf-8",
         )
         index["categories"].setdefault(pc, {"display_name": cat_display, "order": cat["order"], "rules": []})
