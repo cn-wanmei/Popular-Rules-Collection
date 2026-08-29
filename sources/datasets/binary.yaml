@@ -1,0 +1,63 @@
+# Binary Network Datasets — MMDB / DAT (≠ Service Rules)
+# Mirror upstream into generated/mmdb for stable client URLs.
+version: 1
+updated: "2026-08-29"
+kind: binary
+datasets:
+  - id: mmdb-country
+    name: Country GeoIP MMDB (Loyalsoldier)
+    enabled: true
+    scope: artifact
+    artifact: generated/mmdb/Country.mmdb
+    fetch:
+      type: github_raw
+      owner: Loyalsoldier
+      repo: geoip
+      branch: release
+    remote_path: Country.mmdb
+    notes: Primary geoip_db_url for clients.
+
+  - id: mmdb-asn
+    name: GeoLite2 ASN MMDB (Loyalsoldier mirror)
+    enabled: true
+    scope: artifact
+    artifact: generated/mmdb/ASN.mmdb
+    fetch:
+      type: github_raw
+      owner: Loyalsoldier
+      repo: geoip
+      branch: release
+    remote_path: GeoLite2-ASN.mmdb
+    notes: asn_db_url stable mirror. Provider≠Service.
+
+  - id: dat-geoip-lite
+    name: MetaCubeX geoip-lite.dat
+    enabled: true
+    scope: artifact
+    artifact: generated/mmdb/geoip-lite.dat
+    fetch:
+      type: http
+      url: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat
+    remote_path: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat
+    notes: Lightweight geoip.dat for Clash/Mihomo.
+
+  - id: dat-geoip
+    name: MetaCubeX geoip.dat
+    enabled: true
+    scope: artifact
+    artifact: generated/mmdb/geoip.dat
+    fetch:
+      type: http
+      url: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat
+    remote_path: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat
+
+  - id: dat-geosite
+    name: MetaCubeX geosite.dat
+    enabled: true
+    scope: artifact
+    artifact: generated/mmdb/geosite.dat
+    fetch:
+      type: http
+      url: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
+    remote_path: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
+    notes: geosite.dat category database (≠ Service SSOT)

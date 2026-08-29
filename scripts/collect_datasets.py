@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""collect_datasets.py — fetch Network Dataset sources (geosite/geoip/mmdb).
+"""collect_datasets.py — fetch Network Dataset sources (geosite/geoip/mmdb/dat).
 
 Isolated from Service Rules collect. Writes database/{geosite,geoip}/ and
 generated/mmdb artifacts + provenance. Never writes into database/services.
@@ -62,13 +62,16 @@ def main() -> int:
             continue
 
         remote_path = ds.get("remote_path") or ds.get("path_remote")
-        if not remote_path:
-            print(f"  SKIP {did}: missing remote_path")
+        if not remote_path and not (fetch or {}).get("url"):
+            print(f"  SKIP {did}: missing remote_path/url")
             fail += 1
             continue
+        if not remote_path:
+            remote_path = str((fetch or {}).get("url"))
 
         fetcher = get_fetcher(fetch)
-        fr = fetcher.fetch_one({"path": remote_path, "name": did, "local": f"{did}.bin"})
+        url = (fetch or {}).get("url") or remote_path
+        fr = fetcher.fetch_one({"path": remote_path, "url": url, "name": did, "local": f"{did}.bin"})
         if not fr.ok or not fr.content:
             print(f"  FAIL {did}: {fr.error}")
             fail += 1
@@ -101,6 +104,7 @@ def main() -> int:
                     "repo": fetch.get("repo"),
                     "branch": fetch.get("branch"),
                     "path": remote_path,
+                    "url": (fetch or {}).get("url") or remote_path,
                 },
             }
             meta_path = art.parent / f"{art.stem}.meta.json"
@@ -166,6 +170,7 @@ def main() -> int:
                 "repo": fetch.get("repo"),
                 "branch": fetch.get("branch"),
                 "path": remote_path,
+                "url": (fetch or {}).get("url") or remote_path,
             },
             "notes": ds.get("notes") or "",
         }
@@ -180,15 +185,14 @@ def main() -> int:
     rep_dir.mkdir(parents=True, exist_ok=True)
     (rep_dir / "dataset_collect.json").write_text(
         json.dumps(
-            {"date": day, "ok": ok, "failed": fail, "skipped": skip, "results": results},
+            {"ok": ok, "failed": fail, "skipped": skip, "results": results},
             indent=2,
-            ensure_ascii=False,
         )
         + "\n",
         encoding="utf-8",
     )
     print(f"[collect_datasets] ok={ok} failed={fail} skipped={skip}")
-    return 0 if fail == 0 or ok > 0 else 1
+    return 0 if fail == 0 else 1
 
 
 if __name__ == "__main__":
