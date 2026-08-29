@@ -919,6 +919,69 @@
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
+    },
+    "adblock": {
+      "opaque_ratio": 0.6632,
+      "color_ratio": 0.0,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "chinamobile": {
+      "opaque_ratio": 0.6632,
+      "color_ratio": 0.0,
+      "dark_ratio": 0.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "chinatelecom": {
+      "opaque_ratio": 0.6632,
+      "color_ratio": 0.0,
+      "dark_ratio": 0.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "chinaunicom": {
+      "opaque_ratio": 0.6632,
+      "color_ratio": 0.0001,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "gfw": {
+      "opaque_ratio": 0.6632,
+      "color_ratio": 0.0,
+      "dark_ratio": 0.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "private": {
+      "opaque_ratio": 0.6632,
+      "color_ratio": 0.0,
+      "dark_ratio": 0.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "stun": {
+      "opaque_ratio": 0.6632,
+      "color_ratio": 0.168,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
+      "multi_significant": 2,
+      "likely_mono": false,
+      "likely_blank": false
     }
   }
 }

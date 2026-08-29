@@ -2036,6 +2036,146 @@ icons:
       note: Simple Icons project CC0-1.0; brand trademarks still apply.
       project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
     status: sourced
+  adblock:
+    name: Adblock
+    type: service
+    icon_key: adblock
+    service_ids:
+    - adblock
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/adblock.svg
+      png:
+        '64': png/64/adblock.png
+        '128': png/128/adblock.png
+        '256': png/256/adblock.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  chinamobile:
+    name: Chinamobile
+    type: service
+    icon_key: chinamobile
+    service_ids:
+    - chinamobile
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/chinamobile.svg
+      png:
+        '64': png/64/chinamobile.png
+        '128': png/128/chinamobile.png
+        '256': png/256/chinamobile.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  chinatelecom:
+    name: Chinatelecom
+    type: service
+    icon_key: chinatelecom
+    service_ids:
+    - chinatelecom
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/chinatelecom.svg
+      png:
+        '64': png/64/chinatelecom.png
+        '128': png/128/chinatelecom.png
+        '256': png/256/chinatelecom.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  chinaunicom:
+    name: Chinaunicom
+    type: service
+    icon_key: chinaunicom
+    service_ids:
+    - chinaunicom
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/chinaunicom.svg
+      png:
+        '64': png/64/chinaunicom.png
+        '128': png/128/chinaunicom.png
+        '256': png/256/chinaunicom.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  gfw:
+    name: Gfw
+    type: service
+    icon_key: gfw
+    service_ids:
+    - gfw
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/gfw.svg
+      png:
+        '64': png/64/gfw.png
+        '128': png/128/gfw.png
+        '256': png/256/gfw.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  private:
+    name: Private
+    type: service
+    icon_key: private
+    service_ids:
+    - private
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/private.svg
+      png:
+        '64': png/64/private.png
+        '128': png/128/private.png
+        '256': png/256/private.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  stun:
+    name: Stun
+    type: service
+    icon_key: stun
+    service_ids:
+    - stun
+    source:
+      provider: simple-icons
+      url: https://github.com/simple-icons/simple-icons
+    files:
+      svg: source/stun.svg
+      png:
+        '64': png/64/stun.png
+        '128': png/128/stun.png
+        '256': png/256/stun.png
+    license:
+      type: see-source
+      note: Simple Icons project CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
 service_icon_map:
   google: google
   apple: apple
@@ -2129,3 +2269,10 @@ service_icon_map:
   deepseek: deepseek
   openai: openai
   tencent: tencent
+  adblock: adblock
+  chinamobile: chinamobile
+  chinatelecom: chinatelecom
+  chinaunicom: chinaunicom
+  gfw: gfw
+  private: private
+  stun: stun

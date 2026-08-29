@@ -1,5 +1,7 @@
 # ChinaUnicom
 
+![icon](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/128/chinaunicom.png)
+
 **ChinaUnicom** · `chinaunicom` · service
 
 
