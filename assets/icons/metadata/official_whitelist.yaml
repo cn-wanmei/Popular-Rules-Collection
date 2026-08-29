@@ -1,0 +1,81 @@
+version: 1
+updated: '2026-08-29'
+description: Official media-kit whitelist. Only listed brands may be status=verified with provenance official-colors. CN_PENDING require human pack — no search invent.
+verified_official:
+  google:
+    kit: Google Brand Resource Center
+    note: multi-color G
+  youtube:
+    kit: YouTube Brand Resources
+  microsoft:
+    kit: Microsoft Brand
+  apple:
+    kit: Apple Marketing Guidelines
+    approved_mono: true
+  github:
+    kit: GitHub Logos
+    approved_mono: true
+  openai:
+    kit: OpenAI Brand
+  anthropic:
+    kit: Anthropic
+  claude:
+    kit: Anthropic
+  discord:
+    kit: Discord Brand
+  spotify:
+    kit: Spotify Brand
+  netflix:
+    kit: Netflix Brand
+  wechat:
+    kit: WeChat Brand (Tencent)
+  tencent:
+    kit: Tencent Brand
+  alibaba:
+    kit: Alibaba Brand
+  alipay:
+    kit: Alipay Brand
+  baidu:
+    kit: Baidu Brand
+  bilibili:
+    kit: Bilibili Brand
+  douyin:
+    kit: Douyin/TikTok Brand
+  huawei:
+    kit: Huawei Brand
+  xiaomi:
+    kit: Xiaomi Brand
+  meituan:
+    kit: Meituan Brand
+  zhihu:
+    kit: Zhihu Brand
+  deepseek:
+    kit: DeepSeek Brand
+  gemini:
+    kit: Google Gemini
+  perplexity:
+    kit: Perplexity
+  huggingface:
+    kit: Hugging Face
+cn_pending_official_pack:
+- qq
+- taobao
+- xianyu
+- eleme
+- gaode
+- iqiyi
+- youku
+- pinduoduo
+- jingdong
+- ctrip
+- didi
+- netease
+- xiaohongshu
+- kimi
+- doubao
+- dewu
+- bosszhipin
+rules:
+- Do not mark SI third_party as verified
+- Do not use favicon as permanent asset
+- CN logos only via official pack or explicit project geometric

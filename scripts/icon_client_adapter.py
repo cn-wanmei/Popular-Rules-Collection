@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""icon_client_adapter.py — per-client icon URL templates + sample resolves."""
+"""icon_client_adapter.py — per-client icon URL templates (CDN primary + raw fallback)."""
 from __future__ import annotations
 
 import json
@@ -17,22 +17,37 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from icon_resolver import resolve  # noqa: E402
 
 SAMPLES = ("google", "wechat", "apple", "direct", "lan", "proxy", "china", "12306")
+DEFAULT_CDN = "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/assets/icons/png/{size}/{icon_key}.png"
+DEFAULT_RAW = "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png"
 
 
 def main() -> int:
-    clients = (yaml.safe_load(CLIENT.read_text(encoding="utf-8")) or {}).get("clients") or {}
-    out = {"version": 1, "clients": {}, "samples": {}}
+    doc = yaml.safe_load(CLIENT.read_text(encoding="utf-8")) or {}
+    clients = doc.get("clients") or {}
+    cdn = doc.get("cdn") or {}
+    out = {
+        "version": 2,
+        "cdn": {
+            "primary": cdn.get("primary") or "jsdelivr",
+            "url_template": cdn.get("url_template") or DEFAULT_CDN,
+            "fallback_raw": cdn.get("fallback_raw") or DEFAULT_RAW,
+        },
+        "clients": {},
+        "samples": {},
+    }
     for cname, cmeta in clients.items():
-        profile = str((cmeta or {}).get("profile") or "client")
-        size = int((cmeta or {}).get("preferred_size") or 256)
-        tmpl = (cmeta or {}).get("url_template") or (
-            "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png"
-        )
+        cmeta = cmeta or {}
+        profile = str(cmeta.get("profile") or "client")
+        size = int(cmeta.get("preferred_size") or 256)
+        tmpl = cmeta.get("url_template") or cdn.get("url_template") or DEFAULT_CDN
+        fb = cmeta.get("url_template_fallback") or cdn.get("fallback_raw") or DEFAULT_RAW
         out["clients"][cname] = {
             "profile": profile,
             "size": size,
             "url_template": tmpl,
-            "note": "Resolve icon_key via icon_resolver; do not embed in rule lists",
+            "url_template_fallback": fb,
+            "mono_url_template": cmeta.get("mono_url_template") or cdn.get("mono_template"),
+            "note": "CDN primary; raw fallback. Do not embed icons in rule lists.",
         }
     for sid in SAMPLES:
         out["samples"][sid] = resolve(sid, profile="client")
