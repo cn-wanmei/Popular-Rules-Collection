@@ -50,6 +50,9 @@ jobs:
         continue-on-error: true
       - run: python scripts/client_capability_matrix.py
         continue-on-error: true
+      - name: Icon upgrade HOT via Simple Icons
+        continue-on-error: true
+        run: python scripts/icon_upgrade_hot_si.py
       - name: Icon P1-P4 apply
         continue-on-error: true
         run: python scripts/icon_p1_p4_apply.py
