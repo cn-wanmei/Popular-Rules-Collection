@@ -15,7 +15,7 @@ permissions:
 
 concurrency:
   group: pipeline-main
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   pipeline:
@@ -136,5 +136,38 @@ jobs:
           git add backup/*/manifests/ backup/ || true
           python scripts/size_gate.py --max-mb 90
           git diff --staged --quiet || git commit -m "chore(pipeline): collect+normalize+build ${DAY}"
+          set +e
           git pull --rebase origin main
+          rc=$?
+          if [ $rc -ne 0 ]; then
+            echo "::warning::rebase conflict — auto-resolve generated health/assets"
+            for f in sources/health.yaml; do
+              git checkout --theirs -- "$f" 2>/dev/null || true
+              git add -- "$f" 2>/dev/null || true
+            done
+            git diff --name-only --diff-filter=U | while read -r uf; do
+              git checkout --theirs -- "$uf" 2>/dev/null || true
+              git add -- "$uf" 2>/dev/null || true
+            done
+            GIT_EDITOR=true git rebase --continue
+            rc=$?
+          fi
+          set -e
+          if [ $rc -ne 0 ]; then
+            echo "::error::rebase still failed after auto-resolve"
+            git status || true
+            exit 1
+          fi
+          for i in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            echo "push rejected, retry pull --rebase ($i)"
+            git pull --rebase origin main || {
+              git checkout --theirs -- sources/health.yaml 2>/dev/null || true
+              git add sources/health.yaml 2>/dev/null || true
+              GIT_EDITOR=true git rebase --continue || true
+            }
+            sleep 5
+          done
           git push
