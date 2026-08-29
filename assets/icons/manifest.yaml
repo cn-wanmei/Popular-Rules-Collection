@@ -1,0 +1,157 @@
+version: 1
+updated: "2026-08-29"
+description: Icon Dataset SSOT — Service / Dataset / Policy / Network icons
+defaults:
+  png_sizes: [64, 128, 256]
+  formats: [svg, png]
+  optional_formats: [ico, webp]
+  base_path: assets/icons
+  raw_url_template: "https://raw.githubusercontent.com/{owner}/{repo}/{branch}/assets/icons/{path}"
+  owner: cn-wanmei
+  repo: Popular-Rules-Collection
+  branch: main
+status_enum: [verified, sourced, placeholder, missing, review, deprecated]
+icons:
+  direct:
+    name: Direct
+    type: policy
+    icon_key: direct
+    source: {provider: project, method: geometric}
+    files:
+      svg: source/direct.svg
+      png: {'64': png/64/direct.png, '128': png/128/direct.png, '256': png/256/direct.png}
+    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+    status: verified
+  proxy:
+    name: Proxy
+    type: policy
+    icon_key: proxy
+    source: {provider: project, method: geometric}
+    files:
+      svg: source/proxy.svg
+      png: {'64': png/64/proxy.png, '128': png/128/proxy.png, '256': png/256/proxy.png}
+    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+    status: verified
+  reject:
+    name: Reject
+    type: policy
+    icon_key: reject
+    source: {provider: project, method: geometric}
+    files:
+      svg: source/reject.svg
+      png: {'64': png/64/reject.png, '128': png/128/reject.png, '256': png/256/reject.png}
+    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+    status: verified
+  dns:
+    name: DNS
+    type: policy
+    icon_key: dns
+    source: {provider: project, method: geometric}
+    files:
+      svg: source/dns.svg
+      png: {'64': png/64/dns.png, '128': png/128/dns.png, '256': png/256/dns.png}
+    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+    status: verified
+  lan:
+    name: LAN
+    type: network
+    icon_key: lan
+    source: {provider: project, method: geometric}
+    files:
+      svg: source/lan.svg
+      png: {'64': png/64/lan.png, '128': png/128/lan.png, '256': png/256/lan.png}
+    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+    status: verified
+  china:
+    name: China
+    type: dataset
+    icon_key: china
+    source: {provider: project, method: geometric}
+    files:
+      svg: source/china.svg
+      png: {'64': png/64/china.png, '128': png/128/china.png, '256': png/256/china.png}
+    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+    status: verified
+  geoip:
+    name: GeoIP
+    type: dataset
+    icon_key: geoip
+    source: {provider: project, method: geometric}
+    files:
+      svg: source/geoip.svg
+      png: {'64': png/64/geoip.png, '128': png/128/geoip.png, '256': png/256/geoip.png}
+    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+    status: verified
+  geosite:
+    name: GeoSite
+    type: dataset
+    icon_key: geosite
+    source: {provider: project, method: geometric}
+    files:
+      svg: source/geosite.svg
+      png: {'64': png/64/geosite.png, '128': png/128/geosite.png, '256': png/256/geosite.png}
+    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+    status: verified
+  asn:
+    name: ASN
+    type: dataset
+    icon_key: asn
+    source: {provider: project, method: geometric}
+    files:
+      svg: source/asn.svg
+      png: {'64': png/64/asn.png, '128': png/128/asn.png, '256': png/256/asn.png}
+    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+    status: verified
+  placeholder:
+    name: Placeholder
+    type: policy
+    icon_key: placeholder
+    source: {provider: project, method: geometric}
+    files:
+      svg: source/placeholder.svg
+      png: {'64': png/64/placeholder.png, '128': png/128/placeholder.png, '256': png/256/placeholder.png}
+    license: {type: CC0-1.0, note: Original geometric mark for Popular-Rules-Collection}
+    status: verified
+  google:
+    name: Google
+    type: service
+    icon_key: google
+    service_ids: [google]
+    source:
+      provider: simple-icons
+      slug: google
+      url: https://github.com/simple-icons/simple-icons/blob/master/icons/google.svg
+    files:
+      svg: source/google.svg
+      png: {'64': png/64/google.png, '128': png/128/google.png, '256': png/256/google.png}
+    license:
+      type: see-source
+      note: Simple Icons project is CC0-1.0; brand trademarks still apply.
+      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+    status: sourced
+  apple:
+    name: Apple
+    type: service
+    icon_key: apple
+    service_ids: [apple]
+    source: {provider: simple-icons, slug: apple, url: https://github.com/simple-icons/simple-icons/blob/master/icons/apple.svg}
+    files:
+      svg: source/apple.svg
+      png: {'64': png/64/apple.png, '128': png/128/apple.png, '256': png/256/apple.png}
+    license: {type: see-source, note: Brand trademarks apply; Simple Icons project CC0-1.0.}
+    status: sourced
+  github:
+    name: GitHub
+    type: service
+    icon_key: github
+    service_ids: [github]
+    source: {provider: simple-icons, slug: github, url: https://github.com/simple-icons/simple-icons/blob/master/icons/github.svg}
+    files:
+      svg: source/github.svg
+      png: {'64': png/64/github.png, '128': png/128/github.png, '256': png/256/github.png}
+    license: {type: see-source, note: Brand trademarks apply; Simple Icons project CC0-1.0.}
+    status: sourced
+service_icon_map:
+  google: google
+  apple: apple
+  github: github
