@@ -75,6 +75,12 @@ jobs:
       - name: Icon identity audit (soft)
         continue-on-error: true
         run: python scripts/icon_identity_audit.py
+      - name: Icon coverage (soft)
+        continue-on-error: true
+        run: python scripts/icon_coverage.py
+      - name: Icon client adapter (soft)
+        continue-on-error: true
+        run: python scripts/icon_client_adapter.py
       - name: Icon visual regression (soft)
         continue-on-error: true
         run: |
