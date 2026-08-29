@@ -1,0 +1,26 @@
+# Icon Source Priority (locked) — never let builders guess logos
+version: 1
+priority:
+  - id: P0
+    name: official
+    description: Official brand guidelines / media kit
+  - id: P1
+    name: simple-icons
+    description: Simple Icons (CC0 project; brand trademarks still apply)
+  - id: P2
+    name: trusted-third-party
+    description: Explicitly reviewed third-party (not auto-search)
+  - id: P3
+    name: project
+    description: Project geometric / strategy / dataset marks
+  - id: P4
+    name: placeholder
+    description: Explicit decision when no trusted mark exists
+rules:
+  - no_generator_guess: true
+  - service_id_to_icon_id_explicit: true
+  - mono_not_default_for_brand: true
+  - strategy_dataset_not_brand_logo: true
+  - no_jpg_as_standard: true
+  - master_format: svg
+  - client_format: png
