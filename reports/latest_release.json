@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "phase": "3A",
-  "generated_at": "2026-08-29T16:33:55.915097+00:00",
+  "generated_at": "2026-08-29T22:15:46.166536+00:00",
   "date": "2026-08-29",
-  "commit": "e5193de530020b7f8bef7b708b40ee64c5b844e6",
+  "commit": "db747cf63ad24163ed175e086877a442dfa3f7fd",
   "commit_role": "pipeline_input",
   "commit_note": "SHA observed when release_snapshot ran (before collect's git commit). HEAD after push is the commit that contains this file + generated artifacts.",
   "source_status": {
@@ -19,8 +19,8 @@
         "rules_declared": 8
       },
       "blackmatrix7": {
-        "last_attempt": "2026-08-29T16:10:33.831102+00:00",
-        "last_success": "2026-08-29T16:10:33.831128+00:00",
+        "last_attempt": "2026-08-29T21:51:54.050032+00:00",
+        "last_success": "2026-08-29T21:51:54.050047+00:00",
         "failure_count": 0,
         "status": "healthy",
         "files_ok": 139,
@@ -59,32 +59,32 @@
         "rules_declared": 3
       },
       "metacubex": {
-        "last_attempt": "2026-08-29T16:10:38.450862+00:00",
+        "last_attempt": "2026-08-29T21:51:59.332869+00:00",
         "files_ok": 76,
         "files_failed": 0,
         "empty_blocked": 0,
         "rules_declared": 76,
-        "last_success": "2026-08-29T16:10:38.450883+00:00",
+        "last_success": "2026-08-29T21:51:59.332883+00:00",
         "failure_count": 0,
         "status": "healthy"
       },
       "v2fly": {
-        "last_attempt": "2026-08-29T16:10:44.325665+00:00",
+        "last_attempt": "2026-08-29T21:52:05.023565+00:00",
         "files_ok": 56,
         "files_failed": 0,
         "empty_blocked": 0,
         "rules_declared": 56,
-        "last_success": "2026-08-29T16:10:44.325682+00:00",
+        "last_success": "2026-08-29T21:52:05.023581+00:00",
         "failure_count": 0,
         "status": "healthy"
       },
       "dler": {
-        "last_attempt": "2026-08-29T16:10:45.401498+00:00",
+        "last_attempt": "2026-08-29T21:52:06.126125+00:00",
         "files_ok": 20,
         "files_failed": 0,
         "empty_blocked": 0,
         "rules_declared": 20,
-        "last_success": "2026-08-29T16:10:45.401514+00:00",
+        "last_success": "2026-08-29T21:52:06.126140+00:00",
         "failure_count": 0,
         "status": "healthy"
       }
@@ -96,7 +96,7 @@
     "historical_in_health": 8,
     "snapshot": {
       "schema_version": 1,
-      "generated_at": "2026-08-29T16:33:51.077252+00:00",
+      "generated_at": "2026-08-29T22:15:41.404282+00:00",
       "date": "2026-08-29",
       "sources": [
         {
@@ -108,8 +108,8 @@
           "files_failed": 0,
           "health_status": "healthy",
           "lifecycle": "active",
-          "last_success": "2026-08-29T16:10:33.831128+00:00",
-          "last_attempt": "2026-08-29T16:10:33.831102+00:00"
+          "last_success": "2026-08-29T21:51:54.050047+00:00",
+          "last_attempt": "2026-08-29T21:51:54.050032+00:00"
         },
         {
           "id": "metacubex",
@@ -120,8 +120,8 @@
           "files_failed": 0,
           "health_status": "healthy",
           "lifecycle": "active",
-          "last_success": "2026-08-29T16:10:38.450883+00:00",
-          "last_attempt": "2026-08-29T16:10:38.450862+00:00"
+          "last_success": "2026-08-29T21:51:59.332883+00:00",
+          "last_attempt": "2026-08-29T21:51:59.332869+00:00"
         },
         {
           "id": "v2fly",
@@ -132,8 +132,8 @@
           "files_failed": 0,
           "health_status": "healthy",
           "lifecycle": "active",
-          "last_success": "2026-08-29T16:10:44.325682+00:00",
-          "last_attempt": "2026-08-29T16:10:44.325665+00:00"
+          "last_success": "2026-08-29T21:52:05.023581+00:00",
+          "last_attempt": "2026-08-29T21:52:05.023565+00:00"
         },
         {
           "id": "dler",
@@ -144,8 +144,8 @@
           "files_failed": 0,
           "health_status": "healthy",
           "lifecycle": "active",
-          "last_success": "2026-08-29T16:10:45.401514+00:00",
-          "last_attempt": "2026-08-29T16:10:45.401498+00:00"
+          "last_success": "2026-08-29T21:52:06.126140+00:00",
+          "last_attempt": "2026-08-29T21:52:06.126125+00:00"
         }
       ],
       "intentional_unmaterialized": {

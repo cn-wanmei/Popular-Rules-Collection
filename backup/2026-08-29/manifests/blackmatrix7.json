@@ -1,7 +1,7 @@
 {
   "source": "blackmatrix7",
   "fetch": "github_raw",
-  "timestamp": "2026-08-29T16:10:33.831134+00:00",
+  "timestamp": "2026-08-29T21:51:54.050052+00:00",
   "files_ok": 139,
   "files_failed": 0,
   "empty_blocked": 0,
@@ -153,8 +153,8 @@
       "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Domain.yaml",
       "service": "china",
       "local": "sources/blackmatrix7/Clash_ChinaMax_Domain.yaml",
-      "size": 2319798,
-      "sha256": "3da5e5eab4245ccde1666921bc65cbba4e159ef6330c569f8057f53a7d169989",
+      "size": 2306709,
+      "sha256": "bff456d54de999aa8417fb451c703b4ac089d58b65243f645bb1285ef4419c4e",
       "status": "ok"
     },
     {
@@ -464,7 +464,7 @@
       "service": "battlenet",
       "local": "sources/blackmatrix7/Clash_Blizzard.yaml",
       "size": 2308,
-      "sha256": "228921801cc52d57927677f880f2a8d250e4775460bd366ffc177f2a5adec4d3",
+      "sha256": "0aa4bd1cfd818471ea878fc213960b7b98670c0210bbf32cf1bceb2371ff44ba",
       "status": "ok"
     },
     {

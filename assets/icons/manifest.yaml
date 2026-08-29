@@ -4096,3 +4096,21 @@ phase_ii:
   core: 57
   ok: 0
   fail: 0
+si_pin:
+  version: 13.21.0
+  pinned_at: '2026-08-29T21:55:53Z'
+  count: 80
+dual_write:
+  enabled: true
+  legacy_primary: true
+  brands_opt_in: P2_DUAL_BRANDS=1
+  count: 23
+phase_p2:
+  si_version: 13.21.0
+  date: '2026-08-29'
+  steps:
+  - '2.3'
+  - '2.5'
+  - '2.1'
+  - '2.4'
+  - '2.2'
