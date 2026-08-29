@@ -1,0 +1,11 @@
+version: 1
+updated: '2026-08-30'
+content_ratio:
+  enabled: true
+  threshold: 0.08
+  level: warn
+near_black:
+  enabled: true
+  threshold: 0.9
+  level: warn
+  skip_approved_mono: true
