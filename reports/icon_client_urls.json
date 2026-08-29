@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "clients": {
+    "surge": {
+      "profile": "client",
+      "size": 256,
+      "url_template": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
+      "note": "Resolve icon_key via icon_resolver; do not embed in rule lists"
+    },
+    "loon": {
+      "profile": "client",
+      "size": 256,
+      "url_template": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
+      "note": "Resolve icon_key via icon_resolver; do not embed in rule lists"
+    },
+    "egern": {
+      "profile": "client",
+      "size": 256,
+      "url_template": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
+      "note": "Resolve icon_key via icon_resolver; do not embed in rule lists"
+    },
+    "mihomo": {
+      "profile": "client",
+      "size": 128,
+      "url_template": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
+      "note": "Resolve icon_key via icon_resolver; do not embed in rule lists"
+    },
+    "singbox": {
+      "profile": "client",
+      "size": 128,
+      "url_template": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
+      "note": "Resolve icon_key via icon_resolver; do not embed in rule lists"
+    },
+    "shadowrocket": {
+      "profile": "client",
+      "size": 256,
+      "url_template": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
+      "note": "Resolve icon_key via icon_resolver; do not embed in rule lists"
+    },
+    "quantumultx": {
+      "profile": "client",
+      "size": 256,
+      "url_template": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png",
+      "note": "Resolve icon_key via icon_resolver; do not embed in rule lists"
+    }
+  },
+  "samples": {
+    "google": {
+      "service_id": "google",
+      "profile": "client",
+      "theme": null,
+      "variant_id": "google-brand",
+      "role": "brand",
+      "path_svg": "source/google.svg",
+      "path_png_256": "png/256/google.png",
+      "url_png_256": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/256/google.png",
+      "url_svg": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/source/google.svg",
+      "color_mode": "color",
+      "status": "verified",
+      "ok": true
+    },
+    "wechat": {
+      "service_id": "wechat",
+      "profile": "client",
+      "theme": null,
+      "variant_id": "wechat-brand",
+      "role": "brand",
+      "path_svg": "source/wechat.svg",
+      "path_png_256": "png/256/wechat.png",
+      "url_png_256": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/256/wechat.png",
+      "url_svg": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/source/wechat.svg",
+      "color_mode": "color",
+      "status": "verified",
+      "ok": true
+    },
+    "apple": {
+      "service_id": "apple",
+      "profile": "client",
+      "theme": null,
+      "variant_id": "apple-brand",
+      "role": "brand",
+      "path_svg": "source/apple.svg",
+      "path_png_256": "png/256/apple.png",
+      "url_png_256": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/256/apple.png",
+      "url_svg": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/source/apple.svg",
+      "color_mode": "monochrome",
+      "status": "verified",
+      "ok": true
+    },
+    "direct": {
+      "service_id": "direct",
+      "profile": "client",
+      "theme": null,
+      "variant_id": "direct-network",
+      "role": "network",
+      "path_svg": "source/direct.svg",
+      "path_png_256": "png/256/direct.png",
+      "url_png_256": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/256/direct.png",
+      "url_svg": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/source/direct.svg",
+      "color_mode": "color",
+      "status": "verified",
+      "ok": true
+    },
+    "lan": {
+      "service_id": "lan",
+      "profile": "client",
+      "theme": null,
+      "variant_id": "lan-network",
+      "role": "network",
+      "path_svg": "source/lan.svg",
+      "path_png_256": "png/256/lan.png",
+      "url_png_256": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/256/lan.png",
+      "url_svg": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/source/lan.svg",
+      "color_mode": "color",
+      "status": "verified",
+      "ok": true
+    },
+    "proxy": {
+      "service_id": "proxy",
+      "profile": "client",
+      "theme": null,
+      "variant_id": "proxy-network",
+      "role": "network",
+      "path_svg": "source/proxy.svg",
+      "path_png_256": "png/256/proxy.png",
+      "url_png_256": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/256/proxy.png",
+      "url_svg": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/source/proxy.svg",
+      "color_mode": "color",
+      "status": "verified",
+      "ok": true
+    },
+    "china": {
+      "service_id": "china",
+      "profile": "client",
+      "theme": null,
+      "variant_id": "china-network",
+      "role": "network",
+      "path_svg": "source/china.svg",
+      "path_png_256": "png/256/china.png",
+      "url_png_256": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/256/china.png",
+      "url_svg": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/source/china.svg",
+      "color_mode": "color",
+      "status": "verified",
+      "ok": true
+    },
+    "12306": {
+      "service_id": "12306",
+      "profile": "client",
+      "theme": null,
+      "variant_id": "placeholder-network",
+      "role": "network",
+      "path_svg": "source/placeholder.svg",
+      "path_png_256": "png/256/placeholder.png",
+      "url_png_256": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/256/placeholder.png",
+      "url_svg": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/source/placeholder.svg",
+      "color_mode": "color",
+      "status": "verified",
+      "ok": true
+    }
+  }
+}

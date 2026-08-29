@@ -1,6 +1,6 @@
 # Heroku
 
-![icon](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/128/placeholder.png)
+![icon](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/128/heroku.png)
 
 **Developer** · `heroku` · service
 

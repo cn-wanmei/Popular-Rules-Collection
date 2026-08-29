@@ -92,18 +92,19 @@ services:
       network: placeholder-network
       client: placeholder-network
   adobe:
-    icon_key: placeholder
+    icon_key: adobe
     variants:
-      network: placeholder-network
-      default: placeholder-network
-    default: placeholder-network
+      simple: adobe-simple
+      default: adobe-simple
+      mono: adobe-mono
+    default: adobe-simple
     default_by_profile:
-      brand: placeholder-network
-      colorful: placeholder-network
-      minimal: placeholder-network
-      monochrome: placeholder-network
-      network: placeholder-network
-      client: placeholder-network
+      brand: adobe-simple
+      colorful: adobe-simple
+      minimal: adobe-simple
+      monochrome: adobe-mono
+      network: adobe-simple
+      client: adobe-simple
   ai:
     icon_key: placeholder
     variants:
@@ -212,31 +213,33 @@ services:
       network: placeholder-network
       client: placeholder-network
   amazon:
-    icon_key: placeholder
+    icon_key: amazon
     variants:
-      network: placeholder-network
-      default: placeholder-network
-    default: placeholder-network
+      simple: amazon-simple
+      default: amazon-simple
+      mono: amazon-mono
+    default: amazon-simple
     default_by_profile:
-      brand: placeholder-network
-      colorful: placeholder-network
-      minimal: placeholder-network
-      monochrome: placeholder-network
-      network: placeholder-network
-      client: placeholder-network
+      brand: amazon-simple
+      colorful: amazon-simple
+      minimal: amazon-simple
+      monochrome: amazon-mono
+      network: amazon-simple
+      client: amazon-simple
   amazonaws:
-    icon_key: placeholder
+    icon_key: aws
     variants:
-      network: placeholder-network
-      default: placeholder-network
-    default: placeholder-network
+      simple: aws-simple
+      default: aws-simple
+      mono: aws-mono
+    default: aws-simple
     default_by_profile:
-      brand: placeholder-network
-      colorful: placeholder-network
-      minimal: placeholder-network
-      monochrome: placeholder-network
-      network: placeholder-network
-      client: placeholder-network
+      brand: aws-simple
+      colorful: aws-simple
+      minimal: aws-simple
+      monochrome: aws-mono
+      network: aws-simple
+      client: aws-simple
   anthropic:
     icon_key: anthropic
     variants:
@@ -322,18 +325,19 @@ services:
       network: atlassian-simple
       client: atlassian-simple
   aws:
-    icon_key: placeholder
+    icon_key: aws
     variants:
-      network: placeholder-network
-      default: placeholder-network
-    default: placeholder-network
+      simple: aws-simple
+      default: aws-simple
+      mono: aws-mono
+    default: aws-simple
     default_by_profile:
-      brand: placeholder-network
-      colorful: placeholder-network
-      minimal: placeholder-network
-      monochrome: placeholder-network
-      network: placeholder-network
-      client: placeholder-network
+      brand: aws-simple
+      colorful: aws-simple
+      minimal: aws-simple
+      monochrome: aws-mono
+      network: aws-simple
+      client: aws-simple
   azure:
     icon_key: placeholder
     variants:
@@ -496,18 +500,19 @@ services:
       network: placeholder-network
       client: placeholder-network
   canva:
-    icon_key: placeholder
+    icon_key: canva
     variants:
-      network: placeholder-network
-      default: placeholder-network
-    default: placeholder-network
+      simple: canva-simple
+      default: canva-simple
+      mono: canva-mono
+    default: canva-simple
     default_by_profile:
-      brand: placeholder-network
-      colorful: placeholder-network
-      minimal: placeholder-network
-      monochrome: placeholder-network
-      network: placeholder-network
-      client: placeholder-network
+      brand: canva-simple
+      colorful: canva-simple
+      minimal: canva-simple
+      monochrome: canva-mono
+      network: canva-simple
+      client: canva-simple
   ccb:
     icon_key: placeholder
     variants:
@@ -1258,18 +1263,19 @@ services:
       network: hbo-simple
       client: hbo-simple
   heroku:
-    icon_key: placeholder
+    icon_key: heroku
     variants:
-      network: placeholder-network
-      default: placeholder-network
-    default: placeholder-network
+      simple: heroku-simple
+      default: heroku-simple
+      mono: heroku-mono
+    default: heroku-simple
     default_by_profile:
-      brand: placeholder-network
-      colorful: placeholder-network
-      minimal: placeholder-network
-      monochrome: placeholder-network
-      network: placeholder-network
-      client: placeholder-network
+      brand: heroku-simple
+      colorful: heroku-simple
+      minimal: heroku-simple
+      monochrome: heroku-mono
+      network: heroku-simple
+      client: heroku-simple
   himalaya:
     icon_key: placeholder
     variants:
@@ -1539,18 +1545,19 @@ services:
       network: line-simple
       client: line-simple
   linkedin:
-    icon_key: placeholder
+    icon_key: linkedin
     variants:
-      network: placeholder-network
-      default: placeholder-network
-    default: placeholder-network
+      simple: linkedin-simple
+      default: linkedin-simple
+      mono: linkedin-mono
+    default: linkedin-simple
     default_by_profile:
-      brand: placeholder-network
-      colorful: placeholder-network
-      minimal: placeholder-network
-      monochrome: placeholder-network
-      network: placeholder-network
-      client: placeholder-network
+      brand: linkedin-simple
+      colorful: linkedin-simple
+      minimal: linkedin-simple
+      monochrome: linkedin-mono
+      network: linkedin-simple
+      client: linkedin-simple
   meituan:
     icon_key: meituan
     variants:
@@ -1703,18 +1710,19 @@ services:
       network: network-network
       client: network-network
   nintendo:
-    icon_key: placeholder
+    icon_key: nintendo
     variants:
-      network: placeholder-network
-      default: placeholder-network
-    default: placeholder-network
+      simple: nintendo-simple
+      default: nintendo-simple
+      mono: nintendo-mono
+    default: nintendo-simple
     default_by_profile:
-      brand: placeholder-network
-      colorful: placeholder-network
-      minimal: placeholder-network
-      monochrome: placeholder-network
-      network: placeholder-network
-      client: placeholder-network
+      brand: nintendo-simple
+      colorful: nintendo-simple
+      minimal: nintendo-simple
+      monochrome: nintendo-mono
+      network: nintendo-simple
+      client: nintendo-simple
   notion:
     icon_key: notion
     variants:
@@ -1798,18 +1806,19 @@ services:
       network: oppo-simple
       client: oppo-simple
   oracle:
-    icon_key: placeholder
+    icon_key: oracle
     variants:
-      network: placeholder-network
-      default: placeholder-network
-    default: placeholder-network
+      simple: oracle-simple
+      default: oracle-simple
+      mono: oracle-mono
+    default: oracle-simple
     default_by_profile:
-      brand: placeholder-network
-      colorful: placeholder-network
-      minimal: placeholder-network
-      monochrome: placeholder-network
-      network: placeholder-network
-      client: placeholder-network
+      brand: oracle-simple
+      colorful: oracle-simple
+      minimal: oracle-simple
+      monochrome: oracle-mono
+      network: oracle-simple
+      client: oracle-simple
   paramountplus:
     icon_key: paramountplus
     variants:
@@ -2163,18 +2172,19 @@ services:
       network: placeholder-network
       client: placeholder-network
   slack:
-    icon_key: placeholder
+    icon_key: slack
     variants:
-      network: placeholder-network
-      default: placeholder-network
-    default: placeholder-network
+      simple: slack-simple
+      default: slack-simple
+      mono: slack-mono
+    default: slack-simple
     default_by_profile:
-      brand: placeholder-network
-      colorful: placeholder-network
-      minimal: placeholder-network
-      monochrome: placeholder-network
-      network: placeholder-network
-      client: placeholder-network
+      brand: slack-simple
+      colorful: slack-simple
+      minimal: slack-simple
+      monochrome: slack-mono
+      network: slack-simple
+      client: slack-simple
   snapchat:
     icon_key: snapchat
     variants:
@@ -2560,18 +2570,19 @@ services:
       network: vivo-simple
       client: vivo-simple
   walmart:
-    icon_key: placeholder
+    icon_key: walmart
     variants:
-      network: placeholder-network
-      default: placeholder-network
-    default: placeholder-network
+      simple: walmart-simple
+      default: walmart-simple
+      mono: walmart-mono
+    default: walmart-simple
     default_by_profile:
-      brand: placeholder-network
-      colorful: placeholder-network
-      minimal: placeholder-network
-      monochrome: placeholder-network
-      network: placeholder-network
-      client: placeholder-network
+      brand: walmart-simple
+      colorful: walmart-simple
+      minimal: walmart-simple
+      monochrome: walmart-mono
+      network: walmart-simple
+      client: walmart-simple
   wechat:
     icon_key: wechat
     variants:
@@ -2849,6 +2860,26 @@ variants:
     color_mode: monochrome
     status: verified
     service_icon_key: adblock
+  adobe-simple:
+    type: simple
+    source: simple-icons
+    slug: adobe
+    path: source/adobe.svg
+    png:
+      '256': png/256/adobe.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#FF0000'
+    service_icon_key: adobe
+  adobe-mono:
+    type: monochrome
+    source: project-render
+    path: source/adobe.svg
+    png:
+      '256': monochrome/256/adobe.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: adobe
   airbnb-simple:
     type: simple
     source: simple-icons
@@ -2909,6 +2940,46 @@ variants:
     color_mode: monochrome
     status: verified
     service_icon_key: alipay
+  amazon-simple:
+    type: simple
+    source: simple-icons
+    slug: amazon
+    path: source/amazon.svg
+    png:
+      '256': png/256/amazon.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#FF9900'
+    service_icon_key: amazon
+  amazon-mono:
+    type: monochrome
+    source: project-render
+    path: source/amazon.svg
+    png:
+      '256': monochrome/256/amazon.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: amazon
+  aws-simple:
+    type: simple
+    source: simple-icons
+    slug: amazonaws
+    path: source/aws.svg
+    png:
+      '256': png/256/aws.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#232F3E'
+    service_icon_key: aws
+  aws-mono:
+    type: monochrome
+    source: project-render
+    path: source/aws.svg
+    png:
+      '256': monochrome/256/aws.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: aws
   anthropic-brand:
     type: brand
     source: project-brand
@@ -2978,7 +3049,7 @@ variants:
       '256': png/256/appletv.png
     color_mode: monochrome
     status: sourced
-    brand_color: null
+    brand_color: '#000000'
     service_icon_key: appletv
   appletv-mono:
     type: monochrome
@@ -3129,6 +3200,26 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: booking
+  canva-simple:
+    type: simple
+    source: simple-icons
+    slug: canva
+    path: source/canva.svg
+    png:
+      '256': png/256/canva.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#00C4CC'
+    service_icon_key: canva
+  canva-mono:
+    type: monochrome
+    source: project-render
+    path: source/canva.svg
+    png:
+      '256': monochrome/256/canva.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: canva
   china-network:
     type: network
     source: project
@@ -3518,7 +3609,7 @@ variants:
       '256': png/256/emby.png
     color_mode: monochrome
     status: sourced
-    brand_color: null
+    brand_color: '#52B54B'
     service_icon_key: emby
   emby-mono:
     type: monochrome
@@ -3809,6 +3900,26 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: hbo
+  heroku-simple:
+    type: simple
+    source: simple-icons
+    slug: heroku
+    path: source/heroku.svg
+    png:
+      '256': png/256/heroku.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#430098'
+    service_icon_key: heroku
+  heroku-mono:
+    type: monochrome
+    source: project-render
+    path: source/heroku.svg
+    png:
+      '256': monochrome/256/heroku.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: heroku
   huawei-brand:
     type: brand
     source: project-brand
@@ -3918,7 +4029,7 @@ variants:
       '256': png/256/kakaotalk.png
     color_mode: monochrome
     status: sourced
-    brand_color: null
+    brand_color: '#FFCD00'
     service_icon_key: kakaotalk
   kakaotalk-mono:
     type: monochrome
@@ -3969,6 +4080,26 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: line
+  linkedin-simple:
+    type: simple
+    source: simple-icons
+    slug: linkedin
+    path: source/linkedin.svg
+    png:
+      '256': png/256/linkedin.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#0A66C2'
+    service_icon_key: linkedin
+  linkedin-mono:
+    type: monochrome
+    source: project-render
+    path: source/linkedin.svg
+    png:
+      '256': monochrome/256/linkedin.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: linkedin
   meituan-brand:
     type: brand
     source: project-brand
@@ -4058,7 +4189,7 @@ variants:
       '256': png/256/naver.png
     color_mode: monochrome
     status: sourced
-    brand_color: null
+    brand_color: '#03C75A'
     service_icon_key: naver
   naver-mono:
     type: monochrome
@@ -4129,6 +4260,26 @@ variants:
     color_mode: monochrome
     status: verified
     service_icon_key: network
+  nintendo-simple:
+    type: simple
+    source: simple-icons
+    slug: null
+    path: source/nintendo.svg
+    png:
+      '256': png/256/nintendo.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#E60012'
+    service_icon_key: nintendo
+  nintendo-mono:
+    type: monochrome
+    source: project-render
+    path: source/nintendo.svg
+    png:
+      '256': monochrome/256/nintendo.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: nintendo
   notion-simple:
     type: simple
     source: simple-icons
@@ -4198,7 +4349,7 @@ variants:
       '256': png/256/oppo.png
     color_mode: monochrome
     status: sourced
-    brand_color: null
+    brand_color: '#2D683D'
     service_icon_key: oppo
   oppo-mono:
     type: monochrome
@@ -4209,6 +4360,26 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: oppo
+  oracle-simple:
+    type: simple
+    source: simple-icons
+    slug: oracle
+    path: source/oracle.svg
+    png:
+      '256': png/256/oracle.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#F80000'
+    service_icon_key: oracle
+  oracle-mono:
+    type: monochrome
+    source: project-render
+    path: source/oracle.svg
+    png:
+      '256': monochrome/256/oracle.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: oracle
   paramountplus-simple:
     type: simple
     source: simple-icons
@@ -4278,7 +4449,7 @@ variants:
       '256': png/256/pinterest.png
     color_mode: monochrome
     status: sourced
-    brand_color: null
+    brand_color: '#BD081C'
     service_icon_key: pinterest
   pinterest-mono:
     type: monochrome
@@ -4418,7 +4589,7 @@ variants:
       '256': png/256/rockstar.png
     color_mode: monochrome
     status: sourced
-    brand_color: null
+    brand_color: '#FCAF17'
     service_icon_key: rockstar
   rockstar-mono:
     type: monochrome
@@ -4489,6 +4660,26 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: sina
+  slack-simple:
+    type: simple
+    source: simple-icons
+    slug: slack
+    path: source/slack.svg
+    png:
+      '256': png/256/slack.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#4A154B'
+    service_icon_key: slack
+  slack-mono:
+    type: monochrome
+    source: project-render
+    path: source/slack.svg
+    png:
+      '256': monochrome/256/slack.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: slack
   snapchat-simple:
     type: simple
     source: simple-icons
@@ -4498,7 +4689,7 @@ variants:
       '256': png/256/snapchat.png
     color_mode: monochrome
     status: sourced
-    brand_color: null
+    brand_color: '#FFFC00'
     service_icon_key: snapchat
   snapchat-mono:
     type: monochrome
@@ -4538,7 +4729,7 @@ variants:
       '256': png/256/speedtest.png
     color_mode: monochrome
     status: sourced
-    brand_color: null
+    brand_color: '#141526'
     service_icon_key: speedtest
   speedtest-mono:
     type: monochrome
@@ -4878,7 +5069,7 @@ variants:
       '256': png/256/vivo.png
     color_mode: monochrome
     status: sourced
-    brand_color: null
+    brand_color: '#415FFF'
     service_icon_key: vivo
   vivo-mono:
     type: monochrome
@@ -4889,6 +5080,26 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: vivo
+  walmart-simple:
+    type: simple
+    source: simple-icons
+    slug: walmart
+    path: source/walmart.svg
+    png:
+      '256': png/256/walmart.png
+    color_mode: monochrome
+    status: sourced
+    brand_color: '#0071CE'
+    service_icon_key: walmart
+  walmart-mono:
+    type: monochrome
+    source: project-render
+    path: source/walmart.svg
+    png:
+      '256': monochrome/256/walmart.png
+    color_mode: monochrome
+    status: sourced
+    service_icon_key: walmart
   wechat-brand:
     type: brand
     source: project-brand
@@ -5058,7 +5269,7 @@ variants:
       '256': png/256/youtubemusic.png
     color_mode: monochrome
     status: sourced
-    brand_color: null
+    brand_color: '#FF0000'
     service_icon_key: youtubemusic
   youtubemusic-mono:
     type: monochrome

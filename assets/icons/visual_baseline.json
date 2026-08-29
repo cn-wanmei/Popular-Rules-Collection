@@ -167,7 +167,7 @@
     "appletv": {
       "opaque_ratio": 0.2131,
       "color_ratio": 0.0,
-      "dark_ratio": 0.0,
+      "dark_ratio": 1.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -471,7 +471,7 @@
       "likely_blank": false
     },
     "messenger": {
-      "opaque_ratio": 0.6879,
+      "opaque_ratio": 0.6981,
       "color_ratio": 0.0,
       "dark_ratio": 0.0,
       "unique_buckets": 1,
@@ -526,9 +526,9 @@
     },
     "oppo": {
       "opaque_ratio": 0.0891,
-      "color_ratio": 0.0,
+      "color_ratio": 0.0034,
       "dark_ratio": 0.0,
-      "unique_buckets": 1,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -543,7 +543,7 @@
       "likely_blank": false
     },
     "paypal": {
-      "opaque_ratio": 0.5188,
+      "opaque_ratio": 0.5068,
       "color_ratio": 0.0,
       "dark_ratio": 0.0,
       "unique_buckets": 1,
@@ -562,9 +562,9 @@
     },
     "pinterest": {
       "opaque_ratio": 0.5893,
-      "color_ratio": 0.0,
+      "color_ratio": 0.0004,
       "dark_ratio": 0.0,
-      "unique_buckets": 1,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -696,7 +696,7 @@
       "likely_blank": false
     },
     "threads": {
-      "opaque_ratio": 0.4313,
+      "opaque_ratio": 0.3665,
       "color_ratio": 0.0,
       "dark_ratio": 1.0,
       "unique_buckets": 1,
@@ -768,7 +768,7 @@
       "likely_blank": false
     },
     "vercel": {
-      "opaque_ratio": 0.4364,
+      "opaque_ratio": 0.4442,
       "color_ratio": 0.0,
       "dark_ratio": 1.0,
       "unique_buckets": 1,
@@ -787,10 +787,10 @@
     },
     "vivo": {
       "opaque_ratio": 0.0817,
-      "color_ratio": 0.0,
+      "color_ratio": 0.0342,
       "dark_ratio": 0.0,
-      "unique_buckets": 1,
-      "multi_significant": 1,
+      "unique_buckets": 4,
+      "multi_significant": 2,
       "likely_mono": true,
       "likely_blank": false
     },
@@ -1032,6 +1032,96 @@
       "opaque_ratio": 0.2551,
       "color_ratio": 0.0,
       "dark_ratio": 1.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "adobe": {
+      "opaque_ratio": 0.4234,
+      "color_ratio": 0.0,
+      "dark_ratio": 0.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "amazon": {
+      "opaque_ratio": 0.2728,
+      "color_ratio": 0.0,
+      "dark_ratio": 0.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "aws": {
+      "opaque_ratio": 0.203,
+      "color_ratio": 0.008,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "canva": {
+      "opaque_ratio": 0.7442,
+      "color_ratio": 0.0,
+      "dark_ratio": 0.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "heroku": {
+      "opaque_ratio": 0.3159,
+      "color_ratio": 0.0,
+      "dark_ratio": 0.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "linkedin": {
+      "opaque_ratio": 0.7474,
+      "color_ratio": 0.0001,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "nintendo": {
+      "opaque_ratio": 0.5967,
+      "color_ratio": 0.0,
+      "dark_ratio": 0.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "oracle": {
+      "opaque_ratio": 0.2784,
+      "color_ratio": 0.0,
+      "dark_ratio": 0.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "slack": {
+      "opaque_ratio": 0.5172,
+      "color_ratio": 0.0,
+      "dark_ratio": 0.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "walmart": {
+      "opaque_ratio": 0.0705,
+      "color_ratio": 0.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,

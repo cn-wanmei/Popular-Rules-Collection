@@ -1,15 +1,24 @@
 updated: '2026-08-29'
 source: simple-icons
 colors:
+  adobe:
+    slug: adobe
+    hex: '#FF0000'
   airbnb:
     slug: airbnb
     hex: '#FF5A5F'
+  amazon:
+    slug: amazon
+    hex: '#FF9900'
   applemusic:
     slug: applemusic
     hex: '#FA243C'
   atlassian:
     slug: atlassian
     hex: '#0052CC'
+  aws:
+    slug: amazonaws
+    hex: null
   binance:
     slug: binance
     hex: '#F0B90B'
@@ -19,6 +28,9 @@ colors:
   booking:
     slug: bookingdotcom
     hex: null
+  canva:
+    slug: canva
+    hex: '#00C4CC'
   cloudflare:
     slug: cloudflare
     hex: '#F38020'
@@ -67,6 +79,9 @@ colors:
   hbo:
     slug: hbo
     hex: '#000000'
+  heroku:
+    slug: heroku
+    hex: '#430098'
   icloud:
     slug: icloud
     hex: '#3693F3'
@@ -79,6 +94,9 @@ colors:
   line:
     slug: line
     hex: '#00C300'
+  linkedin:
+    slug: linkedin
+    hex: '#0A66C2'
   messenger:
     slug: messenger
     hex: '#00B2FF'
@@ -91,6 +109,9 @@ colors:
   okx:
     slug: okx
     hex: '#000000'
+  oracle:
+    slug: oracle
+    hex: '#F80000'
   paypal:
     slug: paypal
     hex: '#003087'
@@ -112,6 +133,9 @@ colors:
   sina:
     slug: sinaweibo
     hex: '#E6162D'
+  slack:
+    slug: slack
+    hex: '#4A154B'
   soundcloud:
     slug: soundcloud
     hex: '#FF5500'
@@ -154,6 +178,9 @@ colors:
   vimeo:
     slug: vimeo
     hex: '#1AB7EA'
+  walmart:
+    slug: walmart
+    hex: '#0071CE'
   weibo:
     slug: sinaweibo
     hex: '#E6162D'

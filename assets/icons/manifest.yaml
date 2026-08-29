@@ -357,8 +357,6 @@ icons:
     name: Airbnb
     type: service
     icon_key: airbnb
-    service_ids:
-    - airbnb
     source:
       provider: simple-icons
       slug: airbnb
@@ -372,10 +370,10 @@ icons:
         '64': png/64/airbnb.png
         '128': png/128/airbnb.png
         '256': png/256/airbnb.png
+    status: sourced
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
-    status: sourced
     visual:
       style: brand
       color_mode: monochrome
@@ -468,8 +466,6 @@ icons:
     name: Applemusic
     type: service
     icon_key: applemusic
-    service_ids:
-    - applemusic
     source:
       provider: simple-icons
       slug: applemusic
@@ -483,10 +479,10 @@ icons:
         '64': png/64/applemusic.png
         '128': png/128/applemusic.png
         '256': png/256/applemusic.png
+    status: sourced
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
-    status: sourced
     visual:
       style: brand
       color_mode: monochrome
@@ -501,8 +497,6 @@ icons:
     name: Appletv
     type: service
     icon_key: appletv
-    service_ids:
-    - appletv
     source:
       provider: simple-icons
       provenance: third_party
@@ -513,17 +507,19 @@ icons:
         '64': png/64/appletv.png
         '128': png/128/appletv.png
         '256': png/256/appletv.png
+    status: sourced
     license:
       type: see-source
-      note: Simple Icons project CC0-1.0; brand trademarks still apply.
-      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
-    status: sourced
+      note: Simple Icons; brand trademarks apply.
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+    brand:
+      color: '#000000'
+      color_source: simple-icons
   atlassian:
     name: Atlassian
     type: service
@@ -924,8 +920,6 @@ icons:
     name: Dropbox
     type: service
     icon_key: dropbox
-    service_ids:
-    - dropbox
     source:
       provider: simple-icons
       slug: dropbox
@@ -939,10 +933,10 @@ icons:
         '64': png/64/dropbox.png
         '128': png/128/dropbox.png
         '256': png/256/dropbox.png
+    status: sourced
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
-    status: sourced
     visual:
       style: brand
       color_mode: monochrome
@@ -1025,8 +1019,6 @@ icons:
     name: Emby
     type: service
     icon_key: emby
-    service_ids:
-    - emby
     source:
       provider: simple-icons
       provenance: third_party
@@ -1037,23 +1029,23 @@ icons:
         '64': png/64/emby.png
         '128': png/128/emby.png
         '256': png/256/emby.png
+    status: sourced
     license:
       type: see-source
-      note: Simple Icons project CC0-1.0; brand trademarks still apply.
-      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
-    status: sourced
+      note: Simple Icons; brand trademarks apply.
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+    brand:
+      color: '#52B54B'
+      color_source: simple-icons
   epic:
     name: Epic
     type: service
     icon_key: epic
-    service_ids:
-    - epic
     source:
       provider: simple-icons
       slug: epicgames
@@ -1067,10 +1059,10 @@ icons:
         '64': png/64/epic.png
         '128': png/128/epic.png
         '256': png/256/epic.png
+    status: sourced
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
-    status: sourced
     visual:
       style: brand
       color_mode: monochrome
@@ -1118,8 +1110,6 @@ icons:
     name: Figma
     type: service
     icon_key: figma
-    service_ids:
-    - figma
     source:
       provider: simple-icons
       slug: figma
@@ -1133,10 +1123,10 @@ icons:
         '64': png/64/figma.png
         '128': png/128/figma.png
         '256': png/256/figma.png
+    status: sourced
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
-    status: sourced
     visual:
       style: brand
       color_mode: monochrome
@@ -1151,8 +1141,6 @@ icons:
     name: Firebase
     type: service
     icon_key: firebase
-    service_ids:
-    - firebase
     source:
       provider: simple-icons
       slug: firebase
@@ -1166,10 +1154,10 @@ icons:
         '64': png/64/firebase.png
         '128': png/128/firebase.png
         '256': png/256/firebase.png
+    status: sourced
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
-    status: sourced
     visual:
       style: brand
       color_mode: monochrome
@@ -1210,8 +1198,6 @@ icons:
     name: Gitlab
     type: service
     icon_key: gitlab
-    service_ids:
-    - gitlab
     source:
       provider: simple-icons
       slug: gitlab
@@ -1225,10 +1211,10 @@ icons:
         '64': png/64/gitlab.png
         '128': png/128/gitlab.png
         '256': png/256/gitlab.png
+    status: sourced
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
-    status: sourced
     visual:
       style: brand
       color_mode: monochrome
@@ -1363,8 +1349,6 @@ icons:
     name: Icloud
     type: service
     icon_key: icloud
-    service_ids:
-    - icloud
     source:
       provider: simple-icons
       slug: icloud
@@ -1378,10 +1362,10 @@ icons:
         '64': png/64/icloud.png
         '128': png/128/icloud.png
         '256': png/256/icloud.png
+    status: sourced
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
-    status: sourced
     visual:
       style: brand
       color_mode: monochrome
@@ -1463,8 +1447,6 @@ icons:
     name: Kakaotalk
     type: service
     icon_key: kakaotalk
-    service_ids:
-    - kakaotalk
     source:
       provider: simple-icons
       provenance: third_party
@@ -1475,23 +1457,23 @@ icons:
         '64': png/64/kakaotalk.png
         '128': png/128/kakaotalk.png
         '256': png/256/kakaotalk.png
+    status: sourced
     license:
       type: see-source
-      note: Simple Icons project CC0-1.0; brand trademarks still apply.
-      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
-    status: sourced
+      note: Simple Icons; brand trademarks apply.
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+    brand:
+      color: '#FFCD00'
+      color_source: simple-icons
   line:
     name: Line
     type: service
     icon_key: line
-    service_ids:
-    - line
     source:
       provider: simple-icons
       slug: line
@@ -1505,11 +1487,10 @@ icons:
         '64': png/64/line.png
         '128': png/128/line.png
         '256': png/256/line.png
+    status: sourced
     license:
       type: see-source
-      note: Simple Icons project CC0-1.0; brand trademarks still apply.
-      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
-    status: sourced
+      note: Simple Icons; brand trademarks apply.
     visual:
       style: brand
       color_mode: monochrome
@@ -1550,8 +1531,6 @@ icons:
     name: Messenger
     type: service
     icon_key: messenger
-    service_ids:
-    - messenger
     source:
       provider: simple-icons
       slug: messenger
@@ -1565,10 +1544,10 @@ icons:
         '64': png/64/messenger.png
         '128': png/128/messenger.png
         '256': png/256/messenger.png
+    status: sourced
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
-    status: sourced
     visual:
       style: brand
       color_mode: monochrome
@@ -1583,8 +1562,6 @@ icons:
     name: Naver
     type: service
     icon_key: naver
-    service_ids:
-    - naver
     source:
       provider: simple-icons
       provenance: third_party
@@ -1595,17 +1572,19 @@ icons:
         '64': png/64/naver.png
         '128': png/128/naver.png
         '256': png/256/naver.png
+    status: sourced
     license:
       type: see-source
-      note: Simple Icons project CC0-1.0; brand trademarks still apply.
-      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
-    status: sourced
+      note: Simple Icons; brand trademarks apply.
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+    brand:
+      color: '#03C75A'
+      color_source: simple-icons
   netflix:
     name: Netflix
     type: service
@@ -1670,8 +1649,6 @@ icons:
     name: Notion
     type: service
     icon_key: notion
-    service_ids:
-    - notion
     source:
       provider: simple-icons
       slug: notion
@@ -1685,10 +1662,10 @@ icons:
         '64': png/64/notion.png
         '128': png/128/notion.png
         '256': png/256/notion.png
+    status: sourced
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
-    status: sourced
     visual:
       style: brand
       color_mode: monochrome
@@ -1737,8 +1714,6 @@ icons:
     name: Oppo
     type: service
     icon_key: oppo
-    service_ids:
-    - oppo
     source:
       provider: simple-icons
       provenance: third_party
@@ -1749,17 +1724,19 @@ icons:
         '64': png/64/oppo.png
         '128': png/128/oppo.png
         '256': png/256/oppo.png
+    status: sourced
     license:
       type: see-source
-      note: Simple Icons project CC0-1.0; brand trademarks still apply.
-      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
-    status: sourced
+      note: Simple Icons; brand trademarks apply.
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+    brand:
+      color: '#2D683D'
+      color_source: simple-icons
   paramountplus:
     name: Paramountplus
     type: service
@@ -1791,8 +1768,6 @@ icons:
     name: Paypal
     type: service
     icon_key: paypal
-    service_ids:
-    - paypal
     source:
       provider: simple-icons
       slug: paypal
@@ -1806,10 +1781,10 @@ icons:
         '64': png/64/paypal.png
         '128': png/128/paypal.png
         '256': png/256/paypal.png
+    status: sourced
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
-    status: sourced
     visual:
       style: brand
       color_mode: monochrome
@@ -1850,8 +1825,6 @@ icons:
     name: Pinterest
     type: service
     icon_key: pinterest
-    service_ids:
-    - pinterest
     source:
       provider: simple-icons
       provenance: third_party
@@ -1862,17 +1835,19 @@ icons:
         '64': png/64/pinterest.png
         '128': png/128/pinterest.png
         '256': png/256/pinterest.png
+    status: sourced
     license:
       type: see-source
-      note: Simple Icons project CC0-1.0; brand trademarks still apply.
-      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
-    status: sourced
+      note: Simple Icons; brand trademarks apply.
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+    brand:
+      color: '#BD081C'
+      color_source: simple-icons
   playstation:
     name: Playstation
     type: service
@@ -1978,8 +1953,6 @@ icons:
     name: Rockstar
     type: service
     icon_key: rockstar
-    service_ids:
-    - rockstar
     source:
       provider: simple-icons
       provenance: third_party
@@ -1990,23 +1963,23 @@ icons:
         '64': png/64/rockstar.png
         '128': png/128/rockstar.png
         '256': png/256/rockstar.png
+    status: sourced
     license:
       type: see-source
-      note: Simple Icons project CC0-1.0; brand trademarks still apply.
-      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
-    status: sourced
+      note: Simple Icons; brand trademarks apply.
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+    brand:
+      color: '#FCAF17'
+      color_source: simple-icons
   shopify:
     name: Shopify
     type: service
     icon_key: shopify
-    service_ids:
-    - shopify
     source:
       provider: simple-icons
       slug: shopify
@@ -2020,10 +1993,10 @@ icons:
         '64': png/64/shopify.png
         '128': png/128/shopify.png
         '256': png/256/shopify.png
+    status: sourced
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
-    status: sourced
     visual:
       style: brand
       color_mode: monochrome
@@ -2038,8 +2011,6 @@ icons:
     name: Signal
     type: service
     icon_key: signal
-    service_ids:
-    - signal
     source:
       provider: simple-icons
       slug: signal
@@ -2053,11 +2024,10 @@ icons:
         '64': png/64/signal.png
         '128': png/128/signal.png
         '256': png/256/signal.png
+    status: sourced
     license:
       type: see-source
-      note: Simple Icons project CC0-1.0; brand trademarks still apply.
-      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
-    status: sourced
+      note: Simple Icons; brand trademarks apply.
     visual:
       style: brand
       color_mode: monochrome
@@ -2110,8 +2080,6 @@ icons:
     name: Snapchat
     type: service
     icon_key: snapchat
-    service_ids:
-    - snapchat
     source:
       provider: simple-icons
       provenance: third_party
@@ -2122,17 +2090,19 @@ icons:
         '64': png/64/snapchat.png
         '128': png/128/snapchat.png
         '256': png/256/snapchat.png
+    status: sourced
     license:
       type: see-source
-      note: Simple Icons project CC0-1.0; brand trademarks still apply.
-      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
-    status: sourced
+      note: Simple Icons; brand trademarks apply.
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+    brand:
+      color: '#FFFC00'
+      color_source: simple-icons
   soundcloud:
     name: Soundcloud
     type: service
@@ -2171,8 +2141,6 @@ icons:
     name: Speedtest
     type: service
     icon_key: speedtest
-    service_ids:
-    - speedtest
     source:
       provider: simple-icons
       provenance: third_party
@@ -2183,17 +2151,19 @@ icons:
         '64': png/64/speedtest.png
         '128': png/128/speedtest.png
         '256': png/256/speedtest.png
+    status: sourced
     license:
       type: see-source
-      note: Simple Icons project CC0-1.0; brand trademarks still apply.
-      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
-    status: sourced
+      note: Simple Icons; brand trademarks apply.
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+    brand:
+      color: '#141526'
+      color_source: simple-icons
   spotify:
     name: Spotify
     type: service
@@ -2224,8 +2194,6 @@ icons:
     name: Steam
     type: service
     icon_key: steam
-    service_ids:
-    - steam
     source:
       provider: simple-icons
       slug: steam
@@ -2239,10 +2207,10 @@ icons:
         '64': png/64/steam.png
         '128': png/128/steam.png
         '256': png/256/steam.png
+    status: sourced
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
-    status: sourced
     visual:
       style: brand
       color_mode: monochrome
@@ -2257,8 +2225,6 @@ icons:
     name: Stripe
     type: service
     icon_key: stripe
-    service_ids:
-    - stripe
     source:
       provider: simple-icons
       slug: stripe
@@ -2272,10 +2238,10 @@ icons:
         '64': png/64/stripe.png
         '128': png/128/stripe.png
         '256': png/256/stripe.png
+    status: sourced
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
-    status: sourced
     visual:
       style: brand
       color_mode: monochrome
@@ -2323,8 +2289,6 @@ icons:
     name: Threads
     type: service
     icon_key: threads
-    service_ids:
-    - threads
     source:
       provider: simple-icons
       slug: threads
@@ -2338,11 +2302,10 @@ icons:
         '64': png/64/threads.png
         '128': png/128/threads.png
         '256': png/256/threads.png
+    status: sourced
     license:
       type: see-source
-      note: Simple Icons project CC0-1.0; brand trademarks still apply.
-      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
-    status: sourced
+      note: Simple Icons; brand trademarks apply.
     visual:
       style: brand
       color_mode: monochrome
@@ -2524,8 +2487,6 @@ icons:
     name: Uber
     type: service
     icon_key: uber
-    service_ids:
-    - uber
     source:
       provider: simple-icons
       slug: uber
@@ -2539,10 +2500,10 @@ icons:
         '64': png/64/uber.png
         '128': png/128/uber.png
         '256': png/256/uber.png
+    status: sourced
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
-    status: sourced
     visual:
       style: brand
       color_mode: monochrome
@@ -2591,8 +2552,6 @@ icons:
     name: Vercel
     type: service
     icon_key: vercel
-    service_ids:
-    - vercel
     source:
       provider: simple-icons
       slug: vercel
@@ -2606,10 +2565,10 @@ icons:
         '64': png/64/vercel.png
         '128': png/128/vercel.png
         '256': png/256/vercel.png
+    status: sourced
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
-    status: sourced
     visual:
       style: brand
       color_mode: monochrome
@@ -2658,8 +2617,6 @@ icons:
     name: Vivo
     type: service
     icon_key: vivo
-    service_ids:
-    - vivo
     source:
       provider: simple-icons
       provenance: third_party
@@ -2670,17 +2627,19 @@ icons:
         '64': png/64/vivo.png
         '128': png/128/vivo.png
         '256': png/256/vivo.png
+    status: sourced
     license:
       type: see-source
-      note: Simple Icons project CC0-1.0; brand trademarks still apply.
-      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
-    status: sourced
+      note: Simple Icons; brand trademarks apply.
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+    brand:
+      color: '#415FFF'
+      color_source: simple-icons
   wechat:
     name: Wechat
     type: service
@@ -2902,8 +2861,6 @@ icons:
     name: Youtubemusic
     type: service
     icon_key: youtubemusic
-    service_ids:
-    - youtubemusic
     source:
       provider: simple-icons
       provenance: third_party
@@ -2914,17 +2871,19 @@ icons:
         '64': png/64/youtubemusic.png
         '128': png/128/youtubemusic.png
         '256': png/256/youtubemusic.png
+    status: sourced
     license:
       type: see-source
-      note: Simple Icons project CC0-1.0; brand trademarks still apply.
-      project: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
-    status: sourced
+      note: Simple Icons; brand trademarks apply.
     visual:
       style: brand
       color_mode: monochrome
       background: transparent
       variants:
       - monochrome
+    brand:
+      color: '#FF0000'
+      color_source: simple-icons
   zhihu:
     name: Zhihu
     type: service
@@ -2955,8 +2914,6 @@ icons:
     name: Zoom
     type: service
     icon_key: zoom
-    service_ids:
-    - zoom
     source:
       provider: simple-icons
       slug: zoom
@@ -2970,10 +2927,10 @@ icons:
         '64': png/64/zoom.png
         '128': png/128/zoom.png
         '256': png/256/zoom.png
+    status: sourced
     license:
       type: see-source
       note: Simple Icons; brand trademarks apply.
-    status: sourced
     visual:
       style: brand
       color_mode: monochrome
@@ -3427,6 +3384,311 @@ icons:
       background: transparent
       variants:
       - monochrome
+  adobe:
+    name: Adobe
+    type: service
+    icon_key: adobe
+    source:
+      provider: simple-icons
+      slug: adobe
+      provenance: third_party
+      verified: false
+      url: https://simpleicons.org/?q=adobe
+      color: '#FF0000'
+    files:
+      svg: source/adobe.svg
+      png:
+        '64': png/64/adobe.png
+        '128': png/128/adobe.png
+        '256': png/256/adobe.png
+    status: sourced
+    license:
+      type: see-source
+      note: Simple Icons; brand trademarks apply.
+    visual:
+      style: brand
+      color_mode: monochrome
+      background: transparent
+      variants:
+      - monochrome
+      primary_color: '#FF0000'
+    brand:
+      color: '#FF0000'
+      color_source: simple-icons
+  amazon:
+    name: Amazon
+    type: service
+    icon_key: amazon
+    source:
+      provider: simple-icons
+      slug: amazon
+      provenance: third_party
+      verified: false
+      url: https://simpleicons.org/?q=amazon
+      color: '#FF9900'
+    files:
+      svg: source/amazon.svg
+      png:
+        '64': png/64/amazon.png
+        '128': png/128/amazon.png
+        '256': png/256/amazon.png
+    status: sourced
+    license:
+      type: see-source
+      note: Simple Icons; brand trademarks apply.
+    visual:
+      style: brand
+      color_mode: monochrome
+      background: transparent
+      variants:
+      - monochrome
+      primary_color: '#FF9900'
+    brand:
+      color: '#FF9900'
+      color_source: simple-icons
+  aws:
+    name: Aws
+    type: service
+    icon_key: aws
+    source:
+      provider: simple-icons
+      slug: amazonaws
+      provenance: third_party
+      verified: false
+      url: https://simpleicons.org/?q=amazonaws
+    files:
+      svg: source/aws.svg
+      png:
+        '64': png/64/aws.png
+        '128': png/128/aws.png
+        '256': png/256/aws.png
+    status: sourced
+    license:
+      type: see-source
+      note: Simple Icons; brand trademarks apply.
+    visual:
+      style: brand
+      color_mode: monochrome
+      background: transparent
+      variants:
+      - monochrome
+      primary_color: null
+    brand:
+      color: '#232F3E'
+      color_source: simple-icons
+  canva:
+    name: Canva
+    type: service
+    icon_key: canva
+    source:
+      provider: simple-icons
+      slug: canva
+      provenance: third_party
+      verified: false
+      url: https://simpleicons.org/?q=canva
+      color: '#00C4CC'
+    files:
+      svg: source/canva.svg
+      png:
+        '64': png/64/canva.png
+        '128': png/128/canva.png
+        '256': png/256/canva.png
+    status: sourced
+    license:
+      type: see-source
+      note: Simple Icons; brand trademarks apply.
+    visual:
+      style: brand
+      color_mode: monochrome
+      background: transparent
+      variants:
+      - monochrome
+      primary_color: '#00C4CC'
+    brand:
+      color: '#00C4CC'
+      color_source: simple-icons
+  heroku:
+    name: Heroku
+    type: service
+    icon_key: heroku
+    source:
+      provider: simple-icons
+      slug: heroku
+      provenance: third_party
+      verified: false
+      url: https://simpleicons.org/?q=heroku
+      color: '#430098'
+    files:
+      svg: source/heroku.svg
+      png:
+        '64': png/64/heroku.png
+        '128': png/128/heroku.png
+        '256': png/256/heroku.png
+    status: sourced
+    license:
+      type: see-source
+      note: Simple Icons; brand trademarks apply.
+    visual:
+      style: brand
+      color_mode: monochrome
+      background: transparent
+      variants:
+      - monochrome
+      primary_color: '#430098'
+    brand:
+      color: '#430098'
+      color_source: simple-icons
+  linkedin:
+    name: Linkedin
+    type: service
+    icon_key: linkedin
+    source:
+      provider: simple-icons
+      slug: linkedin
+      provenance: third_party
+      verified: false
+      url: https://simpleicons.org/?q=linkedin
+      color: '#0A66C2'
+    files:
+      svg: source/linkedin.svg
+      png:
+        '64': png/64/linkedin.png
+        '128': png/128/linkedin.png
+        '256': png/256/linkedin.png
+    status: sourced
+    license:
+      type: see-source
+      note: Simple Icons; brand trademarks apply.
+    visual:
+      style: brand
+      color_mode: monochrome
+      background: transparent
+      variants:
+      - monochrome
+      primary_color: '#0A66C2'
+    brand:
+      color: '#0A66C2'
+      color_source: simple-icons
+  nintendo:
+    name: Nintendo
+    type: service
+    icon_key: nintendo
+    source:
+      provider: simple-icons
+      provenance: third_party
+      verified: false
+    files:
+      svg: source/nintendo.svg
+      png:
+        '64': png/64/nintendo.png
+        '128': png/128/nintendo.png
+        '256': png/256/nintendo.png
+    status: sourced
+    license:
+      type: see-source
+      note: Simple Icons; brand trademarks apply.
+    visual:
+      style: brand
+      color_mode: monochrome
+      background: transparent
+      variants:
+      - monochrome
+    brand:
+      color: '#E60012'
+      color_source: simple-icons
+  oracle:
+    name: Oracle
+    type: service
+    icon_key: oracle
+    source:
+      provider: simple-icons
+      slug: oracle
+      provenance: third_party
+      verified: false
+      url: https://simpleicons.org/?q=oracle
+      color: '#F80000'
+    files:
+      svg: source/oracle.svg
+      png:
+        '64': png/64/oracle.png
+        '128': png/128/oracle.png
+        '256': png/256/oracle.png
+    status: sourced
+    license:
+      type: see-source
+      note: Simple Icons; brand trademarks apply.
+    visual:
+      style: brand
+      color_mode: monochrome
+      background: transparent
+      variants:
+      - monochrome
+      primary_color: '#F80000'
+    brand:
+      color: '#F80000'
+      color_source: simple-icons
+  slack:
+    name: Slack
+    type: service
+    icon_key: slack
+    source:
+      provider: simple-icons
+      slug: slack
+      provenance: third_party
+      verified: false
+      url: https://simpleicons.org/?q=slack
+      color: '#4A154B'
+    files:
+      svg: source/slack.svg
+      png:
+        '64': png/64/slack.png
+        '128': png/128/slack.png
+        '256': png/256/slack.png
+    status: sourced
+    license:
+      type: see-source
+      note: Simple Icons; brand trademarks apply.
+    visual:
+      style: brand
+      color_mode: monochrome
+      background: transparent
+      variants:
+      - monochrome
+      primary_color: '#4A154B'
+    brand:
+      color: '#4A154B'
+      color_source: simple-icons
+  walmart:
+    name: Walmart
+    type: service
+    icon_key: walmart
+    source:
+      provider: simple-icons
+      slug: walmart
+      provenance: third_party
+      verified: false
+      url: https://simpleicons.org/?q=walmart
+      color: '#0071CE'
+    files:
+      svg: source/walmart.svg
+      png:
+        '64': png/64/walmart.png
+        '128': png/128/walmart.png
+        '256': png/256/walmart.png
+    status: sourced
+    license:
+      type: see-source
+      note: Simple Icons; brand trademarks apply.
+    visual:
+      style: brand
+      color_mode: monochrome
+      background: transparent
+      variants:
+      - monochrome
+      primary_color: '#0071CE'
+    brand:
+      color: '#0071CE'
+      color_source: simple-icons
 service_icon_map:
   google: google
   apple: apple
@@ -3532,15 +3794,15 @@ service_icon_map:
   acfun: placeholder
   adblock-light: placeholder
   adblock-pro: placeholder
-  adobe: placeholder
+  adobe: adobe
   ai: placeholder
   aisuite: placeholder
   akamai: placeholder
   alibabacloud: placeholder
   amap: placeholder
-  amazon: placeholder
-  amazonaws: placeholder
-  aws: placeholder
+  amazon: amazon
+  amazonaws: aws
+  aws: aws
   azure: placeholder
   bahamut: placeholder
   battlenet: placeholder
@@ -3549,7 +3811,7 @@ service_icon_map:
   bocom: placeholder
   booking: booking
   bytedance: placeholder
-  canva: placeholder
+  canva: canva
   ccb: placeholder
   cctv: placeholder
   ceb: placeholder
@@ -3573,7 +3835,7 @@ service_icon_map:
   googledrive: placeholder
   googlefcm: placeholder
   groq: placeholder
-  heroku: placeholder
+  heroku: heroku
   himalaya: placeholder
   hoyoverse: placeholder
   hulu: placeholder
@@ -3586,14 +3848,14 @@ service_icon_map:
   kugoukuwo: placeholder
   kuwo: placeholder
   letv: placeholder
-  linkedin: placeholder
+  linkedin: linkedin
   minecraft: placeholder
   mistral: placeholder
   netease: placeholder
-  nintendo: placeholder
+  nintendo: nintendo
   npm: placeholder
   onedrive: placeholder
-  oracle: placeholder
+  oracle: oracle
   peacock: placeholder
   pinduoduo: placeholder
   pingan: placeholder
@@ -3606,7 +3868,7 @@ service_icon_map:
   riotgames: placeholder
   scholar: placeholder
   siri: placeholder
-  slack: placeholder
+  slack: slack
   sohu: placeholder
   steamcn: placeholder
   supabase: placeholder
@@ -3615,7 +3877,7 @@ service_icon_map:
   tencentvideo: placeholder
   tongcheng: placeholder
   unionpay: placeholder
-  walmart: placeholder
+  walmart: walmart
   wetv: placeholder
   xai: placeholder
   xbox: placeholder

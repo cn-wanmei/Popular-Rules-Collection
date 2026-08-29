@@ -3,16 +3,16 @@
   "phase": 1,
   "summary": {
     "expected_services": 195,
-    "manifest_icons": 115,
-    "source_svgs": 115,
-    "png_256": 115,
+    "manifest_icons": 125,
+    "source_svgs": 125,
+    "png_256": 125,
     "mapped_services": 195,
     "missing_service_icons": 0,
     "orphan_icons": 0,
     "duplicate_hash_groups": 1,
     "parent_reuse_without_relation": 0,
-    "mono_svgs": 110,
-    "blackish_svgs": 70,
+    "mono_svgs": 120,
+    "blackish_svgs": 80,
     "no_provenance": 0,
     "should_prefer_official": 9,
     "network_need_project_icon": 0
@@ -28,7 +28,7 @@
   "should_prefer_official": [
     {
       "id": "amazon",
-      "reason": "missing source svg"
+      "reason": "high-freq still blackish third_party"
     },
     {
       "id": "cloudflare",
