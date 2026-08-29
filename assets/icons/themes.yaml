@@ -1,0 +1,19 @@
+version: 1
+updated: '2026-08-29'
+description: Icon Theme = profile binding for UI packs
+themes:
+  official:
+    profile: brand
+    note: 官方品牌优先
+  colorful:
+    profile: colorful
+    note: 彩色品牌
+  minimal:
+    profile: minimal
+    note: 极简/扁平
+  monochrome:
+    profile: monochrome
+    note: 单色
+  network:
+    profile: network
+    note: 网络策略专用
