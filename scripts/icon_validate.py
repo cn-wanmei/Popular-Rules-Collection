@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""icon_validate.py — Icon Dataset quality gate (soft for main Collect pipeline).
-
-Hard: broken paths, duplicate keys, unreadable SVG/PNG
-Warn: missing license, sourced-not-verified, missing sizes, orphan service without icon
-"""
+"""icon_validate.py — Icon Dataset quality gate (soft for main Collect pipeline)."""
 from __future__ import annotations
 
 import argparse
@@ -26,19 +22,14 @@ VALID_TYPES = frozenset({"service", "dataset", "network", "policy"})
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--strict", action="store_true", help="warnings become failure")
-    ap.add_argument(
-        "--require-all-services",
-        action="store_true",
-        help="WARN every domains/*.txt without icon map",
-    )
+    ap.add_argument("--strict", action="store_true")
+    ap.add_argument("--require-all-services", action="store_true")
     args = ap.parse_args()
     hard: list[str] = []
     warn: list[str] = []
     info: list[str] = []
 
     if not MANIFEST.exists():
-        hard.append("missing assets/icons/manifest.yaml")
         print("[icon_validate] HARD missing manifest")
         return 1
 
@@ -68,31 +59,34 @@ def main() -> int:
             warn.append(f"{key}: missing source block")
         files = meta.get("files") or {}
         svg_rel = files.get("svg")
+        has_svg = False
         if svg_rel:
             p = ICON_ROOT / svg_rel
             if not p.exists():
                 hard.append(f"{key}: missing svg {svg_rel}")
             elif p.stat().st_size < 20:
                 hard.append(f"{key}: svg too small")
-        else:
-            if st not in ("missing", "deprecated"):
-                warn.append(f"{key}: no svg in files")
+            else:
+                has_svg = True
+        elif st not in ("missing", "deprecated"):
+            warn.append(f"{key}: no svg in files")
         png = files.get("png") or {}
         for size in (64, 128, 256):
             rel = png.get(str(size)) or png.get(size)
             if not rel:
-                if st in ("verified", "sourced"):
-                    warn.append(f"{key}: missing png/{size} path")
+                if st in ("verified", "sourced") and has_svg:
+                    warn.append(f"{key}: missing png/{size} path in manifest")
                 continue
             pp = ICON_ROOT / rel
             if not pp.exists():
-                hard.append(f"{key}: missing file {rel}")
+                if has_svg:
+                    warn.append(f"{key}: missing png {rel} (run build_icons.py)")
+                else:
+                    hard.append(f"{key}: missing file {rel}")
             elif pp.stat().st_size < 10:
                 hard.append(f"{key}: empty png {rel}")
         if st == "sourced":
             info.append(f"{key}: sourced (trademark review pending)")
-        if st == "placeholder":
-            info.append(f"{key}: placeholder")
 
     for sid, ik in smap.items():
         if ik not in icons:
