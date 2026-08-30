@@ -13,7 +13,7 @@
 | IP/CIDR | 12 |
 | Mixed | 20 |
 | Sources | blackmatrix7 |
-| Updated | 2026-08-29 |
+| Updated | 2026-08-30 |
 
 ## 基础规则（Classical）
 

@@ -13,7 +13,7 @@
 | IP/CIDR | 47 |
 | Mixed | 402115 |
 | Sources | loyalsoldier, hagezi, anti-ad, sukkaw |
-| Updated | 2026-08-29 |
+| Updated | 2026-08-30 |
 
 ## 基础规则（Classical）
 

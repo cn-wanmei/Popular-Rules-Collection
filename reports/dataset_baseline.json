@@ -52,18 +52,18 @@
     "database/geosite/china.txt": {
       "kind": "geosite",
       "path": "database/geosite/china.txt",
-      "count": 110642,
-      "sha256": "e2237c4c37faa71adbc08fb7188dfd653d12a08a8e8c336da3a457970298362a",
-      "bytes": 1402592,
-      "lines_sample_hash": "01294a07ef8acaa77f9daaf08d11659e71036553e4665d736c62943cde61aaac"
+      "count": 110624,
+      "sha256": "797197a15ae5df31fc5e7116a389c49376ef023b23eab442b5d03b2403413118",
+      "bytes": 1402306,
+      "lines_sample_hash": "ce76f0ecba8d040662272c9679882c6859470b563146f6f409754cecf801816d"
     },
     "database/geosite/direct.txt": {
       "kind": "geosite",
       "path": "database/geosite/direct.txt",
-      "count": 111304,
-      "sha256": "f0c8069be499a156ab89dcbd2cc1a3ebbfdd8b27a6fb94d7938d3fd9bc37bfbe",
-      "bytes": 1413278,
-      "lines_sample_hash": "6e5aab4d36c50ef0ee198aa71f374cb84b02a0b6526301c3ec66d13c84bb65a1"
+      "count": 111280,
+      "sha256": "f3d704df5b511c87de4adc72bd83d12e2757d9919c41147c875bedd87a62e81a",
+      "bytes": 1412917,
+      "lines_sample_hash": "522c80c693b3c17e2911cc09353257206ceef15b41c26b08c744dc0707f4759a"
     },
     "database/geosite/google-cn.txt": {
       "kind": "geosite",
@@ -84,10 +84,10 @@
     "database/geosite/reject.txt": {
       "kind": "geosite",
       "path": "database/geosite/reject.txt",
-      "count": 187695,
-      "sha256": "cf3ba568a7318712d9c3cbbce666f2e86be080519cf2b07b1cccd14fca326654",
-      "bytes": 3894308,
-      "lines_sample_hash": "dbe5f42bdb823844a3ced1753a2ba2421f42b9dcb2b50888ca573cb5241741b8"
+      "count": 187945,
+      "sha256": "f9ef4b881d40a341300673ad9c1774bab27baddb3e30798dd83c66809f0f5250",
+      "bytes": 3899137,
+      "lines_sample_hash": "8c5b24da67b782ab2e0b80e5768325be43bdef153ce80339fe89a61d47b2cfeb"
     },
     "database/geoip/au.txt": {
       "kind": "geoip",

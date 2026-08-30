@@ -13,7 +13,7 @@
 | IP/CIDR | 18 |
 | Mixed | 81 |
 | Sources | blackmatrix7, metacubex |
-| Updated | 2026-08-29 |
+| Updated | 2026-08-30 |
 
 ## 基础规则（Classical）
 

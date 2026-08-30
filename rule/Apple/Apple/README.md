@@ -13,7 +13,7 @@
 | IP/CIDR | 13 |
 | Mixed | 1834 |
 | Sources | blackmatrix7, metacubex, v2fly, dler |
-| Updated | 2026-08-29 |
+| Updated | 2026-08-30 |
 
 ## 基础规则（Classical）
 

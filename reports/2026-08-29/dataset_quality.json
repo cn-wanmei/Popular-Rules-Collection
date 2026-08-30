@@ -6,7 +6,7 @@
   "informational": [
     "ok database/network/lan.txt count=21",
     "ok database/network/private.txt count=7",
-    "ok database/geosite/direct.txt count=111304",
+    "ok database/geosite/direct.txt count=111280",
     "ok database/geosite/proxy.txt count=27220",
     "ok database/geoip/cn.txt count=9651",
     "export ok generated/network/lan.txt",
@@ -16,7 +16,7 @@
     "export ok generated/provider/cloudflare.txt",
     "provider dataset present: goog.txt count=152",
     "provider dataset present: oracle.txt count=1398",
-    "provider dataset present: aws.txt count=11146",
+    "provider dataset present: aws.txt count=11145",
     "provider dataset present: googlecloud.txt count=1154",
     "provider dataset present: cloudflare6.txt count=7",
     "provider dataset present: cloudflare.txt count=15",

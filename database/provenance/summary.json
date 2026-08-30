@@ -1,12 +1,12 @@
 {
-  "date": "2026-08-29",
-  "domains": 556876,
+  "date": "2026-08-30",
+  "domains": 556957,
   "shards_written": 256,
-  "max_shard_bytes": 161322,
+  "max_shard_bytes": 161378,
   "max_shard_mb": 0.154,
   "sources": 8,
   "services": 184,
-  "multi_source_domains": 543653,
+  "multi_source_domains": 543734,
   "schema": {
     "line": {
       "d": "domain",

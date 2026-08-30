@@ -548,7 +548,7 @@ icons:
       type: project-redraw
     files:
       svg: source/google.svg
-      png: &id011
+      png:
         '64': png/64/google.png
         '128': png/128/google.png
         '256': png/256/google.png
@@ -578,7 +578,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/google.svg
-        png: *id011
+        png:
+          '64': png/64/google.png
+          '128': png/128/google.png
+          '256': png/256/google.png
       mono:
         status: available
         color_mode: monochrome
@@ -601,7 +604,7 @@ icons:
       type: project-redraw
     files:
       svg: source/apple.svg
-      png: &id012
+      png:
         '64': png/64/apple.png
         '128': png/128/apple.png
         '256': png/256/apple.png
@@ -631,7 +634,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/apple.svg
-        png: *id012
+        png:
+          '64': png/64/apple.png
+          '128': png/128/apple.png
+          '256': png/256/apple.png
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -656,7 +662,7 @@ icons:
       type: project-redraw
     files:
       svg: source/github.svg
-      png: &id013
+      png:
         '64': png/64/github.png
         '128': png/128/github.png
         '256': png/256/github.png
@@ -686,7 +692,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/github.svg
-        png: *id013
+        png:
+          '64': png/64/github.png
+          '128': png/128/github.png
+          '256': png/256/github.png
         tint_color: '#181717'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -712,7 +721,7 @@ icons:
       type: simple-icons
     files:
       svg: source/airbnb.svg
-      png: &id014
+      png: &id011
         '64': png/64/airbnb.png
         '128': png/128/airbnb.png
         '256': png/256/airbnb.png
@@ -744,7 +753,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/airbnb.svg
-        png: *id014
+        png: *id011
         tint_color: '#FF5A5F'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -769,7 +778,7 @@ icons:
       type: project-redraw
     files:
       svg: source/alibaba.svg
-      png: &id015
+      png:
         '64': png/64/alibaba.png
         '128': png/128/alibaba.png
         '256': png/256/alibaba.png
@@ -797,7 +806,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/alibaba.svg
-        png: *id015
+        png:
+          '64': png/64/alibaba.png
+          '128': png/128/alibaba.png
+          '256': png/256/alibaba.png
       mono:
         status: available
         color_mode: monochrome
@@ -820,7 +832,7 @@ icons:
       type: project-redraw
     files:
       svg: source/alipay.svg
-      png: &id016
+      png:
         '64': png/64/alipay.png
         '128': png/128/alipay.png
         '256': png/256/alipay.png
@@ -850,7 +862,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/alipay.svg
-        png: *id016
+        png:
+          '64': png/64/alipay.png
+          '128': png/128/alipay.png
+          '256': png/256/alipay.png
       mono:
         status: available
         color_mode: monochrome
@@ -873,7 +888,7 @@ icons:
       type: project-redraw
     files:
       svg: source/anthropic.svg
-      png: &id017
+      png:
         '64': png/64/anthropic.png
         '128': png/128/anthropic.png
         '256': png/256/anthropic.png
@@ -903,7 +918,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/anthropic.svg
-        png: *id017
+        png:
+          '64': png/64/anthropic.png
+          '128': png/128/anthropic.png
+          '256': png/256/anthropic.png
       mono:
         status: available
         color_mode: monochrome
@@ -927,7 +945,7 @@ icons:
       type: simple-icons
     files:
       svg: source/applemusic.svg
-      png: &id018
+      png: &id012
         '64': png/64/applemusic.png
         '128': png/128/applemusic.png
         '256': png/256/applemusic.png
@@ -959,7 +977,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/applemusic.svg
-        png: *id018
+        png: *id012
         tint_color: '#FA243C'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -982,7 +1000,7 @@ icons:
       type: simple-icons
     files:
       svg: source/appletv.svg
-      png: &id019
+      png: &id013
         '64': png/64/appletv.png
         '128': png/128/appletv.png
         '256': png/256/appletv.png
@@ -1013,7 +1031,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/appletv.svg
-        png: *id019
+        png: *id013
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -1041,7 +1059,7 @@ icons:
       type: simple-icons
     files:
       svg: source/atlassian.svg
-      png: &id020
+      png:
         '64': png/64/atlassian.png
         '128': png/128/atlassian.png
         '256': png/256/atlassian.png
@@ -1074,7 +1092,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/atlassian.svg
-        png: *id020
+        png:
+          '64': png/64/atlassian.png
+          '128': png/128/atlassian.png
+          '256': png/256/atlassian.png
         tint_color: '#0052CC'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -1099,7 +1120,7 @@ icons:
       type: project-redraw
     files:
       svg: source/baidu.svg
-      png: &id021
+      png:
         '64': png/64/baidu.png
         '128': png/128/baidu.png
         '256': png/256/baidu.png
@@ -1129,7 +1150,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/baidu.svg
-        png: *id021
+        png:
+          '64': png/64/baidu.png
+          '128': png/128/baidu.png
+          '256': png/256/baidu.png
       mono:
         status: available
         color_mode: monochrome
@@ -1152,7 +1176,7 @@ icons:
       type: project-redraw
     files:
       svg: source/bilibili.svg
-      png: &id022
+      png:
         '64': png/64/bilibili.png
         '128': png/128/bilibili.png
         '256': png/256/bilibili.png
@@ -1182,7 +1206,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/bilibili.svg
-        png: *id022
+        png:
+          '64': png/64/bilibili.png
+          '128': png/128/bilibili.png
+          '256': png/256/bilibili.png
       mono:
         status: available
         color_mode: monochrome
@@ -1208,7 +1235,7 @@ icons:
       type: simple-icons
     files:
       svg: source/binance.svg
-      png: &id023
+      png:
         '64': png/64/binance.png
         '128': png/128/binance.png
         '256': png/256/binance.png
@@ -1241,7 +1268,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/binance.svg
-        png: *id023
+        png:
+          '64': png/64/binance.png
+          '128': png/128/binance.png
+          '256': png/256/binance.png
         tint_color: '#F0B90B'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -1269,7 +1299,7 @@ icons:
       type: simple-icons
     files:
       svg: source/bluesky.svg
-      png: &id024
+      png:
         '64': png/64/bluesky.png
         '128': png/128/bluesky.png
         '256': png/256/bluesky.png
@@ -1302,7 +1332,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/bluesky.svg
-        png: *id024
+        png:
+          '64': png/64/bluesky.png
+          '128': png/128/bluesky.png
+          '256': png/256/bluesky.png
         tint_color: '#0285FF'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -1327,7 +1360,7 @@ icons:
       type: project-redraw
     files:
       svg: source/claude.svg
-      png: &id025
+      png:
         '64': png/64/claude.png
         '128': png/128/claude.png
         '256': png/256/claude.png
@@ -1357,7 +1390,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/claude.svg
-        png: *id025
+        png:
+          '64': png/64/claude.png
+          '128': png/128/claude.png
+          '256': png/256/claude.png
       mono:
         status: available
         color_mode: monochrome
@@ -1383,7 +1419,7 @@ icons:
       type: simple-icons
     files:
       svg: source/cloudflare.svg
-      png: &id026
+      png:
         '64': png/64/cloudflare.png
         '128': png/128/cloudflare.png
         '256': png/256/cloudflare.png
@@ -1415,7 +1451,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/cloudflare.svg
-        png: *id026
+        png:
+          '64': png/64/cloudflare.png
+          '128': png/128/cloudflare.png
+          '256': png/256/cloudflare.png
         tint_color: '#F38020'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -1443,7 +1482,7 @@ icons:
       type: simple-icons
     files:
       svg: source/copilot.svg
-      png: &id027
+      png:
         '64': png/64/copilot.png
         '128': png/128/copilot.png
         '256': png/256/copilot.png
@@ -1476,7 +1515,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/copilot.svg
-        png: *id027
+        png:
+          '64': png/64/copilot.png
+          '128': png/128/copilot.png
+          '256': png/256/copilot.png
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -1503,7 +1545,7 @@ icons:
       type: simple-icons
     files:
       svg: source/deezer.svg
-      png: &id028
+      png:
         '64': png/64/deezer.png
         '128': png/128/deezer.png
         '256': png/256/deezer.png
@@ -1534,7 +1576,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/deezer.svg
-        png: *id028
+        png:
+          '64': png/64/deezer.png
+          '128': png/128/deezer.png
+          '256': png/256/deezer.png
         tint_color: null
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -1562,7 +1607,7 @@ icons:
       type: simple-icons
     files:
       svg: source/digitalocean.svg
-      png: &id029
+      png:
         '64': png/64/digitalocean.png
         '128': png/128/digitalocean.png
         '256': png/256/digitalocean.png
@@ -1595,7 +1640,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/digitalocean.svg
-        png: *id029
+        png:
+          '64': png/64/digitalocean.png
+          '128': png/128/digitalocean.png
+          '256': png/256/digitalocean.png
         tint_color: '#0080FF'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -1620,7 +1668,7 @@ icons:
       type: project-redraw
     files:
       svg: source/discord.svg
-      png: &id030
+      png:
         '64': png/64/discord.png
         '128': png/128/discord.png
         '256': png/256/discord.png
@@ -1650,7 +1698,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/discord.svg
-        png: *id030
+        png:
+          '64': png/64/discord.png
+          '128': png/128/discord.png
+          '256': png/256/discord.png
       mono:
         status: available
         color_mode: monochrome
@@ -1676,7 +1727,7 @@ icons:
       type: simple-icons
     files:
       svg: source/docker.svg
-      png: &id031
+      png:
         '64': png/64/docker.png
         '128': png/128/docker.png
         '256': png/256/docker.png
@@ -1708,7 +1759,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/docker.svg
-        png: *id031
+        png:
+          '64': png/64/docker.png
+          '128': png/128/docker.png
+          '256': png/256/docker.png
         tint_color: '#2496ED'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -1733,7 +1787,7 @@ icons:
       type: project-redraw
     files:
       svg: source/douyin.svg
-      png: &id032
+      png:
         '64': png/64/douyin.png
         '128': png/128/douyin.png
         '256': png/256/douyin.png
@@ -1763,7 +1817,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/douyin.svg
-        png: *id032
+        png:
+          '64': png/64/douyin.png
+          '128': png/128/douyin.png
+          '256': png/256/douyin.png
       mono:
         status: available
         color_mode: monochrome
@@ -1787,7 +1844,7 @@ icons:
       type: simple-icons
     files:
       svg: source/dropbox.svg
-      png: &id033
+      png: &id014
         '64': png/64/dropbox.png
         '128': png/128/dropbox.png
         '256': png/256/dropbox.png
@@ -1819,7 +1876,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/dropbox.svg
-        png: *id033
+        png: *id014
         tint_color: '#0061FF'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -1847,7 +1904,7 @@ icons:
       type: simple-icons
     files:
       svg: source/ea.svg
-      png: &id034
+      png:
         '64': png/64/ea.png
         '128': png/128/ea.png
         '256': png/256/ea.png
@@ -1880,7 +1937,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/ea.svg
-        png: *id034
+        png:
+          '64': png/64/ea.png
+          '128': png/128/ea.png
+          '256': png/256/ea.png
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -1908,7 +1968,7 @@ icons:
       type: simple-icons
     files:
       svg: source/ebay.svg
-      png: &id035
+      png:
         '64': png/64/ebay.png
         '128': png/128/ebay.png
         '256': png/256/ebay.png
@@ -1941,7 +2001,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/ebay.svg
-        png: *id035
+        png:
+          '64': png/64/ebay.png
+          '128': png/128/ebay.png
+          '256': png/256/ebay.png
         tint_color: '#E53238'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -1964,7 +2027,7 @@ icons:
       type: simple-icons
     files:
       svg: source/emby.svg
-      png: &id036
+      png: &id015
         '64': png/64/emby.png
         '128': png/128/emby.png
         '256': png/256/emby.png
@@ -1995,7 +2058,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/emby.svg
-        png: *id036
+        png: *id015
         tint_color: '#52B54B'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -2021,7 +2084,7 @@ icons:
       type: simple-icons
     files:
       svg: source/epic.svg
-      png: &id037
+      png: &id016
         '64': png/64/epic.png
         '128': png/128/epic.png
         '256': png/256/epic.png
@@ -2053,7 +2116,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/epic.svg
-        png: *id037
+        png: *id016
         tint_color: '#313131'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -2081,7 +2144,7 @@ icons:
       type: simple-icons
     files:
       svg: source/facebook.svg
-      png: &id038
+      png:
         '64': png/64/facebook.png
         '128': png/128/facebook.png
         '256': png/256/facebook.png
@@ -2113,7 +2176,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/facebook.svg
-        png: *id038
+        png:
+          '64': png/64/facebook.png
+          '128': png/128/facebook.png
+          '256': png/256/facebook.png
         tint_color: '#0866FF'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -2139,7 +2205,7 @@ icons:
       type: simple-icons
     files:
       svg: source/figma.svg
-      png: &id039
+      png: &id017
         '64': png/64/figma.png
         '128': png/128/figma.png
         '256': png/256/figma.png
@@ -2171,7 +2237,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/figma.svg
-        png: *id039
+        png: *id017
         tint_color: '#F24E1E'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -2197,7 +2263,7 @@ icons:
       type: simple-icons
     files:
       svg: source/firebase.svg
-      png: &id040
+      png: &id018
         '64': png/64/firebase.png
         '128': png/128/firebase.png
         '256': png/256/firebase.png
@@ -2229,7 +2295,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/firebase.svg
-        png: *id040
+        png: *id018
         tint_color: '#DD2C00'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -2254,7 +2320,7 @@ icons:
       type: project-redraw
     files:
       svg: source/gemini.svg
-      png: &id041
+      png:
         '64': png/64/gemini.png
         '128': png/128/gemini.png
         '256': png/256/gemini.png
@@ -2284,7 +2350,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/gemini.svg
-        png: *id041
+        png:
+          '64': png/64/gemini.png
+          '128': png/128/gemini.png
+          '256': png/256/gemini.png
       mono:
         status: available
         color_mode: monochrome
@@ -2308,7 +2377,7 @@ icons:
       type: simple-icons
     files:
       svg: source/gitlab.svg
-      png: &id042
+      png: &id019
         '64': png/64/gitlab.png
         '128': png/128/gitlab.png
         '256': png/256/gitlab.png
@@ -2340,7 +2409,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/gitlab.svg
-        png: *id042
+        png: *id019
         tint_color: '#FC6D26'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -2368,7 +2437,7 @@ icons:
       type: simple-icons
     files:
       svg: source/hashicorp.svg
-      png: &id043
+      png:
         '64': png/64/hashicorp.png
         '128': png/128/hashicorp.png
         '256': png/256/hashicorp.png
@@ -2401,7 +2470,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/hashicorp.svg
-        png: *id043
+        png:
+          '64': png/64/hashicorp.png
+          '128': png/128/hashicorp.png
+          '256': png/256/hashicorp.png
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -2429,7 +2501,7 @@ icons:
       type: simple-icons
     files:
       svg: source/hbo.svg
-      png: &id044
+      png:
         '64': png/64/hbo.png
         '128': png/128/hbo.png
         '256': png/256/hbo.png
@@ -2462,7 +2534,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/hbo.svg
-        png: *id044
+        png:
+          '64': png/64/hbo.png
+          '128': png/128/hbo.png
+          '256': png/256/hbo.png
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -2487,7 +2562,7 @@ icons:
       type: project-redraw
     files:
       svg: source/huawei.svg
-      png: &id045
+      png:
         '64': png/64/huawei.png
         '128': png/128/huawei.png
         '256': png/256/huawei.png
@@ -2517,7 +2592,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/huawei.svg
-        png: *id045
+        png:
+          '64': png/64/huawei.png
+          '128': png/128/huawei.png
+          '256': png/256/huawei.png
       mono:
         status: available
         color_mode: monochrome
@@ -2540,7 +2618,7 @@ icons:
       type: project-redraw
     files:
       svg: source/huggingface.svg
-      png: &id046
+      png:
         '64': png/64/huggingface.png
         '128': png/128/huggingface.png
         '256': png/256/huggingface.png
@@ -2570,7 +2648,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/huggingface.svg
-        png: *id046
+        png:
+          '64': png/64/huggingface.png
+          '128': png/128/huggingface.png
+          '256': png/256/huggingface.png
       mono:
         status: available
         color_mode: monochrome
@@ -2594,7 +2675,7 @@ icons:
       type: simple-icons
     files:
       svg: source/icloud.svg
-      png: &id047
+      png: &id020
         '64': png/64/icloud.png
         '128': png/128/icloud.png
         '256': png/256/icloud.png
@@ -2626,7 +2707,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/icloud.svg
-        png: *id047
+        png: *id020
         tint_color: '#3693F3'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -2654,7 +2735,7 @@ icons:
       type: simple-icons
     files:
       svg: source/instagram.svg
-      png: &id048
+      png:
         '64': png/64/instagram.png
         '128': png/128/instagram.png
         '256': png/256/instagram.png
@@ -2686,7 +2767,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/instagram.svg
-        png: *id048
+        png:
+          '64': png/64/instagram.png
+          '128': png/128/instagram.png
+          '256': png/256/instagram.png
         tint_color: '#FF0069'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -2714,7 +2798,7 @@ icons:
       type: simple-icons
     files:
       svg: source/jetbrains.svg
-      png: &id049
+      png:
         '64': png/64/jetbrains.png
         '128': png/128/jetbrains.png
         '256': png/256/jetbrains.png
@@ -2747,7 +2831,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/jetbrains.svg
-        png: *id049
+        png:
+          '64': png/64/jetbrains.png
+          '128': png/128/jetbrains.png
+          '256': png/256/jetbrains.png
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -2770,7 +2857,7 @@ icons:
       type: simple-icons
     files:
       svg: source/kakaotalk.svg
-      png: &id050
+      png: &id021
         '64': png/64/kakaotalk.png
         '128': png/128/kakaotalk.png
         '256': png/256/kakaotalk.png
@@ -2801,7 +2888,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/kakaotalk.svg
-        png: *id050
+        png: *id021
         tint_color: '#FFCD00'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -2827,7 +2914,7 @@ icons:
       type: simple-icons
     files:
       svg: source/line.svg
-      png: &id051
+      png: &id022
         '64': png/64/line.png
         '128': png/128/line.png
         '256': png/256/line.png
@@ -2859,7 +2946,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/line.svg
-        png: *id051
+        png: *id022
         tint_color: '#00C300'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -2884,7 +2971,7 @@ icons:
       type: project-redraw
     files:
       svg: source/meituan.svg
-      png: &id052
+      png:
         '64': png/64/meituan.png
         '128': png/128/meituan.png
         '256': png/256/meituan.png
@@ -2914,7 +3001,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/meituan.svg
-        png: *id052
+        png:
+          '64': png/64/meituan.png
+          '128': png/128/meituan.png
+          '256': png/256/meituan.png
       mono:
         status: available
         color_mode: monochrome
@@ -2938,7 +3028,7 @@ icons:
       type: simple-icons
     files:
       svg: source/messenger.svg
-      png: &id053
+      png: &id023
         '64': png/64/messenger.png
         '128': png/128/messenger.png
         '256': png/256/messenger.png
@@ -2970,7 +3060,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/messenger.svg
-        png: *id053
+        png: *id023
         tint_color: '#00B2FF'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -2993,7 +3083,7 @@ icons:
       type: simple-icons
     files:
       svg: source/naver.svg
-      png: &id054
+      png: &id024
         '64': png/64/naver.png
         '128': png/128/naver.png
         '256': png/256/naver.png
@@ -3024,7 +3114,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/naver.svg
-        png: *id054
+        png: *id024
         tint_color: '#03C75A'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -3049,7 +3139,7 @@ icons:
       type: project-redraw
     files:
       svg: source/netflix.svg
-      png: &id055
+      png:
         '64': png/64/netflix.png
         '128': png/128/netflix.png
         '256': png/256/netflix.png
@@ -3079,7 +3169,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/netflix.svg
-        png: *id055
+        png:
+          '64': png/64/netflix.png
+          '128': png/128/netflix.png
+          '256': png/256/netflix.png
       mono:
         status: available
         color_mode: monochrome
@@ -3105,7 +3198,7 @@ icons:
       type: simple-icons
     files:
       svg: source/netlify.svg
-      png: &id056
+      png:
         '64': png/64/netlify.png
         '128': png/128/netlify.png
         '256': png/256/netlify.png
@@ -3138,7 +3231,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/netlify.svg
-        png: *id056
+        png:
+          '64': png/64/netlify.png
+          '128': png/128/netlify.png
+          '256': png/256/netlify.png
         tint_color: '#00C7B7'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -3164,7 +3260,7 @@ icons:
       type: simple-icons
     files:
       svg: source/notion.svg
-      png: &id057
+      png: &id025
         '64': png/64/notion.png
         '128': png/128/notion.png
         '256': png/256/notion.png
@@ -3196,7 +3292,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/notion.svg
-        png: *id057
+        png: *id025
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -3224,7 +3320,7 @@ icons:
       type: simple-icons
     files:
       svg: source/okx.svg
-      png: &id058
+      png:
         '64': png/64/okx.png
         '128': png/128/okx.png
         '256': png/256/okx.png
@@ -3257,7 +3353,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/okx.svg
-        png: *id058
+        png:
+          '64': png/64/okx.png
+          '128': png/128/okx.png
+          '256': png/256/okx.png
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -3280,7 +3379,7 @@ icons:
       type: simple-icons
     files:
       svg: source/oppo.svg
-      png: &id059
+      png: &id026
         '64': png/64/oppo.png
         '128': png/128/oppo.png
         '256': png/256/oppo.png
@@ -3311,7 +3410,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/oppo.svg
-        png: *id059
+        png: *id026
         tint_color: '#2D683D'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -3336,7 +3435,7 @@ icons:
       type: simple-icons
     files:
       svg: source/paramountplus.svg
-      png: &id060
+      png:
         '64': png/64/paramountplus.png
         '128': png/128/paramountplus.png
         '256': png/256/paramountplus.png
@@ -3366,7 +3465,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/paramountplus.svg
-        png: *id060
+        png:
+          '64': png/64/paramountplus.png
+          '128': png/128/paramountplus.png
+          '256': png/256/paramountplus.png
         tint_color: null
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -3392,7 +3494,7 @@ icons:
       type: simple-icons
     files:
       svg: source/paypal.svg
-      png: &id061
+      png: &id027
         '64': png/64/paypal.png
         '128': png/128/paypal.png
         '256': png/256/paypal.png
@@ -3424,7 +3526,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/paypal.svg
-        png: *id061
+        png: *id027
         tint_color: '#003087'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -3449,7 +3551,7 @@ icons:
       type: project-redraw
     files:
       svg: source/perplexity.svg
-      png: &id062
+      png:
         '64': png/64/perplexity.png
         '128': png/128/perplexity.png
         '256': png/256/perplexity.png
@@ -3479,7 +3581,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/perplexity.svg
-        png: *id062
+        png:
+          '64': png/64/perplexity.png
+          '128': png/128/perplexity.png
+          '256': png/256/perplexity.png
       mono:
         status: available
         color_mode: monochrome
@@ -3500,7 +3605,7 @@ icons:
       type: simple-icons
     files:
       svg: source/pinterest.svg
-      png: &id063
+      png: &id028
         '64': png/64/pinterest.png
         '128': png/128/pinterest.png
         '256': png/256/pinterest.png
@@ -3531,7 +3636,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/pinterest.svg
-        png: *id063
+        png: *id028
         tint_color: '#BD081C'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -3559,7 +3664,7 @@ icons:
       type: simple-icons
     files:
       svg: source/playstation.svg
-      png: &id064
+      png:
         '64': png/64/playstation.png
         '128': png/128/playstation.png
         '256': png/256/playstation.png
@@ -3592,7 +3697,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/playstation.svg
-        png: *id064
+        png:
+          '64': png/64/playstation.png
+          '128': png/128/playstation.png
+          '256': png/256/playstation.png
         tint_color: '#0070D1'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -3620,7 +3728,7 @@ icons:
       type: simple-icons
     files:
       svg: source/reddit.svg
-      png: &id065
+      png:
         '64': png/64/reddit.png
         '128': png/128/reddit.png
         '256': png/256/reddit.png
@@ -3652,7 +3760,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/reddit.svg
-        png: *id065
+        png:
+          '64': png/64/reddit.png
+          '128': png/128/reddit.png
+          '256': png/256/reddit.png
         tint_color: '#FF4500'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -3680,7 +3791,7 @@ icons:
       type: simple-icons
     files:
       svg: source/roblox.svg
-      png: &id066
+      png:
         '64': png/64/roblox.png
         '128': png/128/roblox.png
         '256': png/256/roblox.png
@@ -3713,7 +3824,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/roblox.svg
-        png: *id066
+        png:
+          '64': png/64/roblox.png
+          '128': png/128/roblox.png
+          '256': png/256/roblox.png
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -3736,7 +3850,7 @@ icons:
       type: simple-icons
     files:
       svg: source/rockstar.svg
-      png: &id067
+      png: &id029
         '64': png/64/rockstar.png
         '128': png/128/rockstar.png
         '256': png/256/rockstar.png
@@ -3767,7 +3881,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/rockstar.svg
-        png: *id067
+        png: *id029
         tint_color: '#FCAF17'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -3793,7 +3907,7 @@ icons:
       type: simple-icons
     files:
       svg: source/shopify.svg
-      png: &id068
+      png: &id030
         '64': png/64/shopify.png
         '128': png/128/shopify.png
         '256': png/256/shopify.png
@@ -3825,7 +3939,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/shopify.svg
-        png: *id068
+        png: *id030
         tint_color: '#7AB55C'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -3851,7 +3965,7 @@ icons:
       type: simple-icons
     files:
       svg: source/signal.svg
-      png: &id069
+      png: &id031
         '64': png/64/signal.png
         '128': png/128/signal.png
         '256': png/256/signal.png
@@ -3883,7 +3997,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/signal.svg
-        png: *id069
+        png: *id031
         tint_color: '#3B45FD'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -3911,7 +4025,7 @@ icons:
       type: simple-icons
     files:
       svg: source/sina.svg
-      png: &id070
+      png:
         '64': png/64/sina.png
         '128': png/128/sina.png
         '256': png/256/sina.png
@@ -3948,7 +4062,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/sina.svg
-        png: *id070
+        png:
+          '64': png/64/sina.png
+          '128': png/128/sina.png
+          '256': png/256/sina.png
         tint_color: '#E6162D'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -3971,7 +4088,7 @@ icons:
       type: simple-icons
     files:
       svg: source/snapchat.svg
-      png: &id071
+      png: &id032
         '64': png/64/snapchat.png
         '128': png/128/snapchat.png
         '256': png/256/snapchat.png
@@ -4002,7 +4119,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/snapchat.svg
-        png: *id071
+        png: *id032
         tint_color: '#FFFC00'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -4030,7 +4147,7 @@ icons:
       type: simple-icons
     files:
       svg: source/soundcloud.svg
-      png: &id072
+      png:
         '64': png/64/soundcloud.png
         '128': png/128/soundcloud.png
         '256': png/256/soundcloud.png
@@ -4063,7 +4180,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/soundcloud.svg
-        png: *id072
+        png:
+          '64': png/64/soundcloud.png
+          '128': png/128/soundcloud.png
+          '256': png/256/soundcloud.png
         tint_color: '#FF5500'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -4086,7 +4206,7 @@ icons:
       type: simple-icons
     files:
       svg: source/speedtest.svg
-      png: &id073
+      png: &id033
         '64': png/64/speedtest.png
         '128': png/128/speedtest.png
         '256': png/256/speedtest.png
@@ -4117,7 +4237,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/speedtest.svg
-        png: *id073
+        png: *id033
         tint_color: '#141526'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -4142,7 +4262,7 @@ icons:
       type: project-redraw
     files:
       svg: source/spotify.svg
-      png: &id074
+      png:
         '64': png/64/spotify.png
         '128': png/128/spotify.png
         '256': png/256/spotify.png
@@ -4172,7 +4292,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/spotify.svg
-        png: *id074
+        png:
+          '64': png/64/spotify.png
+          '128': png/128/spotify.png
+          '256': png/256/spotify.png
       mono:
         status: available
         color_mode: monochrome
@@ -4196,7 +4319,7 @@ icons:
       type: simple-icons
     files:
       svg: source/steam.svg
-      png: &id075
+      png: &id034
         '64': png/64/steam.png
         '128': png/128/steam.png
         '256': png/256/steam.png
@@ -4228,7 +4351,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/steam.svg
-        png: *id075
+        png: *id034
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -4254,7 +4377,7 @@ icons:
       type: simple-icons
     files:
       svg: source/stripe.svg
-      png: &id076
+      png: &id035
         '64': png/64/stripe.png
         '128': png/128/stripe.png
         '256': png/256/stripe.png
@@ -4286,7 +4409,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/stripe.svg
-        png: *id076
+        png: *id035
         tint_color: '#635BFF'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -4314,7 +4437,7 @@ icons:
       type: simple-icons
     files:
       svg: source/telegram.svg
-      png: &id077
+      png:
         '64': png/64/telegram.png
         '128': png/128/telegram.png
         '256': png/256/telegram.png
@@ -4346,7 +4469,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/telegram.svg
-        png: *id077
+        png:
+          '64': png/64/telegram.png
+          '128': png/128/telegram.png
+          '256': png/256/telegram.png
         tint_color: '#26A5E4'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -4372,7 +4498,7 @@ icons:
       type: simple-icons
     files:
       svg: source/threads.svg
-      png: &id078
+      png: &id036
         '64': png/64/threads.png
         '128': png/128/threads.png
         '256': png/256/threads.png
@@ -4404,7 +4530,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/threads.svg
-        png: *id078
+        png: *id036
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -4432,7 +4558,7 @@ icons:
       type: simple-icons
     files:
       svg: source/tidal.svg
-      png: &id079
+      png:
         '64': png/64/tidal.png
         '128': png/128/tidal.png
         '256': png/256/tidal.png
@@ -4465,7 +4591,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/tidal.svg
-        png: *id079
+        png:
+          '64': png/64/tidal.png
+          '128': png/128/tidal.png
+          '256': png/256/tidal.png
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -4493,7 +4622,7 @@ icons:
       type: simple-icons
     files:
       svg: source/tiktok.svg
-      png: &id080
+      png:
         '64': png/64/tiktok.png
         '128': png/128/tiktok.png
         '256': png/256/tiktok.png
@@ -4525,7 +4654,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/tiktok.svg
-        png: *id080
+        png:
+          '64': png/64/tiktok.png
+          '128': png/128/tiktok.png
+          '256': png/256/tiktok.png
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -4553,7 +4685,7 @@ icons:
       type: simple-icons
     files:
       svg: source/trello.svg
-      png: &id081
+      png:
         '64': png/64/trello.png
         '128': png/128/trello.png
         '256': png/256/trello.png
@@ -4586,7 +4718,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/trello.svg
-        png: *id081
+        png:
+          '64': png/64/trello.png
+          '128': png/128/trello.png
+          '256': png/256/trello.png
         tint_color: '#0052CC'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -4614,7 +4749,7 @@ icons:
       type: simple-icons
     files:
       svg: source/twitch.svg
-      png: &id082
+      png:
         '64': png/64/twitch.png
         '128': png/128/twitch.png
         '256': png/256/twitch.png
@@ -4646,7 +4781,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/twitch.svg
-        png: *id082
+        png:
+          '64': png/64/twitch.png
+          '128': png/128/twitch.png
+          '256': png/256/twitch.png
         tint_color: '#9146FF'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -4674,7 +4812,7 @@ icons:
       type: simple-icons
     files:
       svg: source/twitter.svg
-      png: &id083
+      png:
         '64': png/64/twitter.png
         '128': png/128/twitter.png
         '256': png/256/twitter.png
@@ -4706,7 +4844,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/twitter.svg
-        png: *id083
+        png:
+          '64': png/64/twitter.png
+          '128': png/128/twitter.png
+          '256': png/256/twitter.png
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -4732,7 +4873,7 @@ icons:
       type: simple-icons
     files:
       svg: source/uber.svg
-      png: &id084
+      png: &id037
         '64': png/64/uber.png
         '128': png/128/uber.png
         '256': png/256/uber.png
@@ -4764,7 +4905,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/uber.svg
-        png: *id084
+        png: *id037
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -4792,7 +4933,7 @@ icons:
       type: simple-icons
     files:
       svg: source/ubisoft.svg
-      png: &id085
+      png:
         '64': png/64/ubisoft.png
         '128': png/128/ubisoft.png
         '256': png/256/ubisoft.png
@@ -4825,7 +4966,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/ubisoft.svg
-        png: *id085
+        png:
+          '64': png/64/ubisoft.png
+          '128': png/128/ubisoft.png
+          '256': png/256/ubisoft.png
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -4851,7 +4995,7 @@ icons:
       type: simple-icons
     files:
       svg: source/vercel.svg
-      png: &id086
+      png: &id038
         '64': png/64/vercel.png
         '128': png/128/vercel.png
         '256': png/256/vercel.png
@@ -4883,7 +5027,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/vercel.svg
-        png: *id086
+        png: *id038
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -4911,7 +5055,7 @@ icons:
       type: simple-icons
     files:
       svg: source/vimeo.svg
-      png: &id087
+      png:
         '64': png/64/vimeo.png
         '128': png/128/vimeo.png
         '256': png/256/vimeo.png
@@ -4944,7 +5088,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/vimeo.svg
-        png: *id087
+        png:
+          '64': png/64/vimeo.png
+          '128': png/128/vimeo.png
+          '256': png/256/vimeo.png
         tint_color: '#1AB7EA'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -4967,7 +5114,7 @@ icons:
       type: simple-icons
     files:
       svg: source/vivo.svg
-      png: &id088
+      png: &id039
         '64': png/64/vivo.png
         '128': png/128/vivo.png
         '256': png/256/vivo.png
@@ -4998,7 +5145,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/vivo.svg
-        png: *id088
+        png: *id039
         tint_color: '#415FFF'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -5023,7 +5170,7 @@ icons:
       type: project-redraw
     files:
       svg: source/wechat.svg
-      png: &id089
+      png:
         '64': png/64/wechat.png
         '128': png/128/wechat.png
         '256': png/256/wechat.png
@@ -5053,7 +5200,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/wechat.svg
-        png: *id089
+        png:
+          '64': png/64/wechat.png
+          '128': png/128/wechat.png
+          '256': png/256/wechat.png
       mono:
         status: available
         color_mode: monochrome
@@ -5079,7 +5229,7 @@ icons:
       type: simple-icons
     files:
       svg: source/weibo.svg
-      png: &id090
+      png:
         '64': png/64/weibo.png
         '128': png/128/weibo.png
         '256': png/256/weibo.png
@@ -5116,7 +5266,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/weibo.svg
-        png: *id090
+        png:
+          '64': png/64/weibo.png
+          '128': png/128/weibo.png
+          '256': png/256/weibo.png
         tint_color: '#E6162D'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -5144,7 +5297,7 @@ icons:
       type: simple-icons
     files:
       svg: source/whatsapp.svg
-      png: &id091
+      png:
         '64': png/64/whatsapp.png
         '128': png/128/whatsapp.png
         '256': png/256/whatsapp.png
@@ -5176,7 +5329,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/whatsapp.svg
-        png: *id091
+        png:
+          '64': png/64/whatsapp.png
+          '128': png/128/whatsapp.png
+          '256': png/256/whatsapp.png
         tint_color: '#25D366'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -5204,7 +5360,7 @@ icons:
       type: simple-icons
     files:
       svg: source/wikipedia.svg
-      png: &id092
+      png:
         '64': png/64/wikipedia.png
         '128': png/128/wikipedia.png
         '256': png/256/wikipedia.png
@@ -5237,7 +5393,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/wikipedia.svg
-        png: *id092
+        png:
+          '64': png/64/wikipedia.png
+          '128': png/128/wikipedia.png
+          '256': png/256/wikipedia.png
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -5265,7 +5424,7 @@ icons:
       type: simple-icons
     files:
       svg: source/wise.svg
-      png: &id093
+      png:
         '64': png/64/wise.png
         '128': png/128/wise.png
         '256': png/256/wise.png
@@ -5298,7 +5457,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/wise.svg
-        png: *id093
+        png:
+          '64': png/64/wise.png
+          '128': png/128/wise.png
+          '256': png/256/wise.png
         tint_color: '#9FE870'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -5323,7 +5485,7 @@ icons:
       type: project-redraw
     files:
       svg: source/xiaomi.svg
-      png: &id094
+      png:
         '64': png/64/xiaomi.png
         '128': png/128/xiaomi.png
         '256': png/256/xiaomi.png
@@ -5353,7 +5515,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/xiaomi.svg
-        png: *id094
+        png:
+          '64': png/64/xiaomi.png
+          '128': png/128/xiaomi.png
+          '256': png/256/xiaomi.png
       mono:
         status: available
         color_mode: monochrome
@@ -5376,7 +5541,7 @@ icons:
       type: project-redraw
     files:
       svg: source/youtube.svg
-      png: &id095
+      png:
         '64': png/64/youtube.png
         '128': png/128/youtube.png
         '256': png/256/youtube.png
@@ -5406,7 +5571,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/youtube.svg
-        png: *id095
+        png:
+          '64': png/64/youtube.png
+          '128': png/128/youtube.png
+          '256': png/256/youtube.png
       mono:
         status: available
         color_mode: monochrome
@@ -5427,7 +5595,7 @@ icons:
       type: simple-icons
     files:
       svg: source/youtubemusic.svg
-      png: &id096
+      png: &id040
         '64': png/64/youtubemusic.png
         '128': png/128/youtubemusic.png
         '256': png/256/youtubemusic.png
@@ -5458,7 +5626,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/youtubemusic.svg
-        png: *id096
+        png: *id040
         tint_color: '#FF0000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -5483,7 +5651,7 @@ icons:
       type: project-redraw
     files:
       svg: source/zhihu.svg
-      png: &id097
+      png:
         '64': png/64/zhihu.png
         '128': png/128/zhihu.png
         '256': png/256/zhihu.png
@@ -5513,7 +5681,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/zhihu.svg
-        png: *id097
+        png:
+          '64': png/64/zhihu.png
+          '128': png/128/zhihu.png
+          '256': png/256/zhihu.png
       mono:
         status: available
         color_mode: monochrome
@@ -5537,7 +5708,7 @@ icons:
       type: simple-icons
     files:
       svg: source/zoom.svg
-      png: &id098
+      png: &id041
         '64': png/64/zoom.png
         '128': png/128/zoom.png
         '256': png/256/zoom.png
@@ -5569,7 +5740,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/zoom.svg
-        png: *id098
+        png: *id041
         tint_color: '#0B5CFF'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -5594,7 +5765,7 @@ icons:
       type: project-redraw
     files:
       svg: source/microsoft.svg
-      png: &id099
+      png:
         '64': png/64/microsoft.png
         '128': png/128/microsoft.png
         '256': png/256/microsoft.png
@@ -5622,7 +5793,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/microsoft.svg
-        png: *id099
+        png:
+          '64': png/64/microsoft.png
+          '128': png/128/microsoft.png
+          '256': png/256/microsoft.png
       mono:
         status: available
         color_mode: monochrome
@@ -5645,7 +5819,7 @@ icons:
       type: project-redraw
     files:
       svg: source/deepseek.svg
-      png: &id100
+      png:
         '64': png/64/deepseek.png
         '128': png/128/deepseek.png
         '256': png/256/deepseek.png
@@ -5673,7 +5847,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/deepseek.svg
-        png: *id100
+        png:
+          '64': png/64/deepseek.png
+          '128': png/128/deepseek.png
+          '256': png/256/deepseek.png
       mono:
         status: available
         color_mode: monochrome
@@ -5696,7 +5873,7 @@ icons:
       type: project-redraw
     files:
       svg: source/openai.svg
-      png: &id101
+      png:
         '64': png/64/openai.png
         '128': png/128/openai.png
         '256': png/256/openai.png
@@ -5726,7 +5903,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/openai.svg
-        png: *id101
+        png:
+          '64': png/64/openai.png
+          '128': png/128/openai.png
+          '256': png/256/openai.png
       mono:
         status: available
         color_mode: monochrome
@@ -5749,7 +5929,7 @@ icons:
       type: project-redraw
     files:
       svg: source/tencent.svg
-      png: &id102
+      png:
         '64': png/64/tencent.png
         '128': png/128/tencent.png
         '256': png/256/tencent.png
@@ -5777,7 +5957,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/tencent.svg
-        png: *id102
+        png:
+          '64': png/64/tencent.png
+          '128': png/128/tencent.png
+          '256': png/256/tencent.png
       mono:
         status: available
         color_mode: monochrome
@@ -5799,7 +5982,7 @@ icons:
       type: geometric
     files:
       svg: source/adblock.svg
-      png: &id103
+      png: &id042
         '64': png/64/adblock.png
         '128': png/128/adblock.png
         '256': png/256/adblock.png
@@ -5828,7 +6011,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/adblock.svg
-        png: *id103
+        png: *id042
       mono:
         status: available
         color_mode: monochrome
@@ -5850,7 +6033,7 @@ icons:
       type: geometric
     files:
       svg: source/chinamobile.svg
-      png: &id104
+      png: &id043
         '64': png/64/chinamobile.png
         '128': png/128/chinamobile.png
         '256': png/256/chinamobile.png
@@ -5879,7 +6062,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/chinamobile.svg
-        png: *id104
+        png: *id043
       mono:
         status: available
         color_mode: monochrome
@@ -5901,7 +6084,7 @@ icons:
       type: geometric
     files:
       svg: source/chinatelecom.svg
-      png: &id105
+      png: &id044
         '64': png/64/chinatelecom.png
         '128': png/128/chinatelecom.png
         '256': png/256/chinatelecom.png
@@ -5930,7 +6113,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/chinatelecom.svg
-        png: *id105
+        png: *id044
       mono:
         status: available
         color_mode: monochrome
@@ -5952,7 +6135,7 @@ icons:
       type: geometric
     files:
       svg: source/chinaunicom.svg
-      png: &id106
+      png: &id045
         '64': png/64/chinaunicom.png
         '128': png/128/chinaunicom.png
         '256': png/256/chinaunicom.png
@@ -5981,7 +6164,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/chinaunicom.svg
-        png: *id106
+        png: *id045
       mono:
         status: available
         color_mode: monochrome
@@ -6003,7 +6186,7 @@ icons:
       type: geometric
     files:
       svg: source/gfw.svg
-      png: &id107
+      png: &id046
         '64': png/64/gfw.png
         '128': png/128/gfw.png
         '256': png/256/gfw.png
@@ -6032,7 +6215,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/gfw.svg
-        png: *id107
+        png: *id046
       mono:
         status: available
         color_mode: monochrome
@@ -6054,7 +6237,7 @@ icons:
       type: geometric
     files:
       svg: source/private.svg
-      png: &id108
+      png: &id047
         '64': png/64/private.png
         '128': png/128/private.png
         '256': png/256/private.png
@@ -6083,7 +6266,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/private.svg
-        png: *id108
+        png: *id047
       mono:
         status: available
         color_mode: monochrome
@@ -6105,7 +6288,7 @@ icons:
       type: geometric
     files:
       svg: source/stun.svg
-      png: &id109
+      png: &id048
         '64': png/64/stun.png
         '128': png/128/stun.png
         '256': png/256/stun.png
@@ -6134,7 +6317,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/stun.svg
-        png: *id109
+        png: *id048
       mono:
         status: available
         color_mode: monochrome
@@ -6156,7 +6339,7 @@ icons:
       type: geometric
     files:
       svg: source/global.svg
-      png: &id110
+      png: &id049
         '64': png/64/global.png
         '128': png/128/global.png
         '256': png/256/global.png
@@ -6185,7 +6368,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/global.svg
-        png: *id110
+        png: *id049
       mono:
         status: available
         color_mode: monochrome
@@ -6207,7 +6390,7 @@ icons:
       type: geometric
     files:
       svg: source/network.svg
-      png: &id111
+      png: &id050
         '64': png/64/network.png
         '128': png/128/network.png
         '256': png/256/network.png
@@ -6236,7 +6419,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/network.svg
-        png: *id111
+        png: *id050
       mono:
         status: available
         color_mode: monochrome
@@ -6261,7 +6444,7 @@ icons:
       type: simple-icons
     files:
       svg: source/booking.svg
-      png: &id112
+      png:
         '64': png/64/booking.png
         '128': png/128/booking.png
         '256': png/256/booking.png
@@ -6292,7 +6475,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/booking.svg
-        png: *id112
+        png:
+          '64': png/64/booking.png
+          '128': png/128/booking.png
+          '256': png/256/booking.png
         tint_color: null
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -6319,7 +6505,7 @@ icons:
       type: simple-icons
     files:
       svg: source/cursor.svg
-      png: &id113
+      png:
         '64': png/64/cursor.png
         '128': png/128/cursor.png
         '256': png/256/cursor.png
@@ -6350,7 +6536,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/cursor.svg
-        png: *id113
+        png:
+          '64': png/64/cursor.png
+          '128': png/128/cursor.png
+          '256': png/256/cursor.png
         tint_color: null
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -6377,7 +6566,7 @@ icons:
       color_verified: false
     files:
       svg: source/meta.svg
-      png: &id114
+      png:
         '64': png/64/meta.png
         '128': png/128/meta.png
         '256': png/256/meta.png
@@ -6404,7 +6593,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/meta.svg
-        png: *id114
+        png:
+          '64': png/64/meta.png
+          '128': png/128/meta.png
+          '256': png/256/meta.png
       mono:
         status: available
         color_mode: monochrome
@@ -6429,7 +6621,7 @@ icons:
       color_verified: false
     files:
       svg: source/x.svg
-      png: &id115
+      png:
         '64': png/64/x.png
         '128': png/128/x.png
         '256': png/256/x.png
@@ -6456,7 +6648,10 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/x.svg
-        png: *id115
+        png:
+          '64': png/64/x.png
+          '128': png/128/x.png
+          '256': png/256/x.png
         tint_color: '#000000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -6482,7 +6677,7 @@ icons:
       type: simple-icons
     files:
       svg: source/adobe.svg
-      png: &id116
+      png: &id051
         '64': png/64/adobe.png
         '128': png/128/adobe.png
         '256': png/256/adobe.png
@@ -6514,7 +6709,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/adobe.svg
-        png: *id116
+        png: *id051
         tint_color: '#FF0000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -6540,7 +6735,7 @@ icons:
       type: simple-icons
     files:
       svg: source/amazon.svg
-      png: &id117
+      png: &id052
         '64': png/64/amazon.png
         '128': png/128/amazon.png
         '256': png/256/amazon.png
@@ -6572,7 +6767,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/amazon.svg
-        png: *id117
+        png: *id052
         tint_color: '#FF9900'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -6597,7 +6792,7 @@ icons:
       type: simple-icons
     files:
       svg: source/aws.svg
-      png: &id118
+      png: &id053
         '64': png/64/aws.png
         '128': png/128/aws.png
         '256': png/256/aws.png
@@ -6629,7 +6824,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/aws.svg
-        png: *id118
+        png: *id053
         tint_color: '#232F3E'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -6655,7 +6850,7 @@ icons:
       type: simple-icons
     files:
       svg: source/canva.svg
-      png: &id119
+      png: &id054
         '64': png/64/canva.png
         '128': png/128/canva.png
         '256': png/256/canva.png
@@ -6687,7 +6882,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/canva.svg
-        png: *id119
+        png: *id054
         tint_color: '#00C4CC'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -6713,7 +6908,7 @@ icons:
       type: simple-icons
     files:
       svg: source/heroku.svg
-      png: &id120
+      png: &id055
         '64': png/64/heroku.png
         '128': png/128/heroku.png
         '256': png/256/heroku.png
@@ -6745,7 +6940,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/heroku.svg
-        png: *id120
+        png: *id055
         tint_color: '#430098'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -6771,7 +6966,7 @@ icons:
       type: simple-icons
     files:
       svg: source/linkedin.svg
-      png: &id121
+      png: &id056
         '64': png/64/linkedin.png
         '128': png/128/linkedin.png
         '256': png/256/linkedin.png
@@ -6803,7 +6998,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/linkedin.svg
-        png: *id121
+        png: *id056
         tint_color: '#0A66C2'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -6826,7 +7021,7 @@ icons:
       type: simple-icons
     files:
       svg: source/nintendo.svg
-      png: &id122
+      png: &id057
         '64': png/64/nintendo.png
         '128': png/128/nintendo.png
         '256': png/256/nintendo.png
@@ -6857,7 +7052,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/nintendo.svg
-        png: *id122
+        png: *id057
         tint_color: '#E60012'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -6883,7 +7078,7 @@ icons:
       type: simple-icons
     files:
       svg: source/oracle.svg
-      png: &id123
+      png: &id058
         '64': png/64/oracle.png
         '128': png/128/oracle.png
         '256': png/256/oracle.png
@@ -6915,7 +7110,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/oracle.svg
-        png: *id123
+        png: *id058
         tint_color: '#F80000'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -6941,7 +7136,7 @@ icons:
       type: simple-icons
     files:
       svg: source/slack.svg
-      png: &id124
+      png: &id059
         '64': png/64/slack.png
         '128': png/128/slack.png
         '256': png/256/slack.png
@@ -6973,7 +7168,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/slack.svg
-        png: *id124
+        png: *id059
         tint_color: '#4A154B'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -6999,7 +7194,7 @@ icons:
       type: simple-icons
     files:
       svg: source/walmart.svg
-      png: &id125
+      png: &id060
         '64': png/64/walmart.png
         '128': png/128/walmart.png
         '256': png/256/walmart.png
@@ -7031,7 +7226,7 @@ icons:
         status: available
         color_mode: monochrome-tinted
         svg: source/walmart.svg
-        png: *id125
+        png: *id060
         tint_color: '#0071CE'
         note: Master SVG is mono; brand.color used at render
       mono:
@@ -7054,7 +7249,7 @@ icons:
       type: geometric
     files:
       svg: source/select.svg
-      png: &id126
+      png: &id061
         '64': png/64/select.png
         '128': png/128/select.png
         '256': png/256/select.png
@@ -7085,7 +7280,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/select.svg
-        png: *id126
+        png: *id061
       mono:
         status: available
         color_mode: monochrome
@@ -7106,7 +7301,7 @@ icons:
       type: geometric
     files:
       svg: source/match.svg
-      png: &id127
+      png: &id062
         '64': png/64/match.png
         '128': png/128/match.png
         '256': png/256/match.png
@@ -7137,7 +7332,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/match.svg
-        png: *id127
+        png: *id062
       mono:
         status: available
         color_mode: monochrome
@@ -7158,7 +7353,7 @@ icons:
       type: geometric
     files:
       svg: source/provider.svg
-      png: &id128
+      png: &id063
         '64': png/64/provider.png
         '128': png/128/provider.png
         '256': png/256/provider.png
@@ -7189,7 +7384,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/provider.svg
-        png: *id128
+        png: *id063
       mono:
         status: available
         color_mode: monochrome
@@ -7210,7 +7405,7 @@ icons:
       type: geometric
     files:
       svg: source/cloud.svg
-      png: &id129
+      png: &id064
         '64': png/64/cloud.png
         '128': png/128/cloud.png
         '256': png/256/cloud.png
@@ -7241,7 +7436,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/cloud.svg
-        png: *id129
+        png: *id064
       mono:
         status: available
         color_mode: monochrome
@@ -7486,7 +7681,7 @@ phase_ii:
   fail: 0
 si_pin:
   version: 13.21.0
-  pinned_at: '2026-08-29T23:20:28Z'
+  pinned_at: '2026-08-29T23:58:52Z'
   count: 80
 dual_write:
   enabled: true

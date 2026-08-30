@@ -13,7 +13,7 @@
 | IP/CIDR | 22 |
 | Mixed | 98 |
 | Sources | blackmatrix7, metacubex, v2fly |
-| Updated | 2026-08-29 |
+| Updated | 2026-08-30 |
 
 ## 基础规则（Classical）
 
