@@ -1,6 +1,6 @@
 # name: Chinaunicom
 # id: chinaunicom
-# count: 3762
+# count: 3763
 no_resolve: true
 domain_suffix_set:
 - 10010.cn
@@ -346,6 +346,7 @@ ip_cidr_set:
 - 103.94.200.0/22
 - 103.95.252.0/22
 - 103.98.44.0/22
+- 106.116.139.0/24
 - 106.124.16.0/24
 - 106.13.244.0/22
 - 106.13.248.0/23

@@ -10,7 +10,7 @@
 | Tags | china |
 | 类型 | domain |
 | Domains | 112205 |
-| CIDR | 9665 |
+| CIDR | 9669 |
 | 最后更新 | 2026-08-29 |
 | Sources | blackmatrix7 / metacubex |
 | Confidence | HIGH |
