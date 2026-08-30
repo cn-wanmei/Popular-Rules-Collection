@@ -11,7 +11,7 @@
 | 类型 | domain |
 | Domains | 6657 |
 | CIDR | 0 |
-| 最后更新 | 2026-08-29 |
+| 最后更新 | 2026-08-30 |
 | Sources | metacubex / v2fly |
 | Confidence | HIGH |
 

@@ -1,4 +1,4 @@
-# Icon Coverage 2026-08-29
+# Icon Coverage 2026-08-30
 
 - service_map_entries: **211**
 - with_real_icon: **129** (61.14%)

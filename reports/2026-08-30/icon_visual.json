@@ -1,0 +1,15 @@
+{
+  "date": "2026-08-30",
+  "status": "warn",
+  "hard": [],
+  "warnings": [
+    "douyin: official-colors but near-black mono dark_ratio=0.9234 color_ratio=0.0767"
+  ],
+  "regressions": [],
+  "counts": {
+    "icons_measured": 129,
+    "hard": 0,
+    "warn": 1,
+    "regressions": 0
+  }
+}

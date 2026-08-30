@@ -1,0 +1,90 @@
+{
+  "date": "2026-08-30",
+  "phase": 1,
+  "summary": {
+    "expected_services": 195,
+    "manifest_icons": 129,
+    "source_svgs": 129,
+    "png_256": 129,
+    "mapped_services": 195,
+    "missing_service_icons": 0,
+    "orphan_icons": 0,
+    "duplicate_hash_groups": 1,
+    "parent_reuse_without_relation": 0,
+    "mono_svgs": 124,
+    "blackish_svgs": 80,
+    "no_provenance": 0,
+    "should_prefer_official": 9,
+    "network_need_project_icon": 0
+  },
+  "parent_reuse": [],
+  "duplicate_groups": {
+    "44facf47c6bfa06c": [
+      "weibo",
+      "sina"
+    ]
+  },
+  "missing_service_icons": [],
+  "should_prefer_official": [
+    {
+      "id": "amazon",
+      "reason": "high-freq still blackish third_party"
+    },
+    {
+      "id": "cloudflare",
+      "reason": "high-freq still blackish third_party"
+    },
+    {
+      "id": "docker",
+      "reason": "high-freq still blackish third_party"
+    },
+    {
+      "id": "facebook",
+      "reason": "high-freq still blackish third_party"
+    },
+    {
+      "id": "instagram",
+      "reason": "high-freq still blackish third_party"
+    },
+    {
+      "id": "steam",
+      "reason": "high-freq still blackish third_party"
+    },
+    {
+      "id": "telegram",
+      "reason": "high-freq still blackish third_party"
+    },
+    {
+      "id": "tiktok",
+      "reason": "high-freq still blackish third_party"
+    },
+    {
+      "id": "twitter",
+      "reason": "high-freq still blackish third_party"
+    }
+  ],
+  "network_need_project_icon": [],
+  "backlog": {
+    "P0_fix_identity": [],
+    "P1_high_freq_color": [
+      "amazon",
+      "cloudflare",
+      "docker",
+      "facebook",
+      "instagram",
+      "steam",
+      "telegram",
+      "tiktok",
+      "twitter"
+    ],
+    "P2_missing_services": [],
+    "P3_network_project_icons": [],
+    "P4_dedupe_review": [
+      [
+        "weibo",
+        "sina"
+      ]
+    ],
+    "P5_write_provenance": []
+  }
+}

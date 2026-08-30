@@ -1,5 +1,5 @@
 version: 1
-updated: '2026-08-29'
+updated: '2026-08-30'
 description: Icon Dataset SSOT — Service / Dataset / Policy / Network icons
 defaults:
   png_sizes:
@@ -7681,7 +7681,7 @@ phase_ii:
   fail: 0
 si_pin:
   version: 13.21.0
-  pinned_at: '2026-08-29T23:58:52Z'
+  pinned_at: '2026-08-30T00:42:14Z'
   count: 80
 dual_write:
   enabled: true
@@ -7690,7 +7690,7 @@ dual_write:
   count: 23
 phase_p2:
   si_version: 13.21.0
-  date: '2026-08-29'
+  date: '2026-08-30'
   steps:
   - '2.3'
   - '2.5'
