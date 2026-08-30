@@ -3,13 +3,14 @@
   "status": "warn",
   "hard": [],
   "warnings": [
-    "douyin: official-colors but near-black mono dark_ratio=0.9234 color_ratio=0.0767"
+    "douyin: official-colors but near-black mono dark_ratio=0.9228 color_ratio=0.0774",
+    "walmart: very low opaque_ratio=0.0479"
   ],
   "regressions": [],
   "counts": {
     "icons_measured": 129,
     "hard": 0,
-    "warn": 1,
+    "warn": 2,
     "regressions": 0
   }
 }

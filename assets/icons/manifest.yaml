@@ -55,6 +55,16 @@ icons:
       qa_passed: true
       qa: passed
       primary_variant: brand
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: direct
@@ -106,6 +116,16 @@ icons:
       qa_passed: true
       qa: passed
       primary_variant: brand
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: proxy
@@ -157,6 +177,16 @@ icons:
       qa_passed: true
       qa: passed
       primary_variant: brand
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: reject
@@ -208,6 +238,16 @@ icons:
       qa_passed: true
       qa: passed
       primary_variant: brand
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: dns
@@ -259,6 +299,16 @@ icons:
       qa_passed: true
       qa: passed
       primary_variant: brand
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: lan
@@ -310,6 +360,16 @@ icons:
       qa_passed: true
       qa: passed
       primary_variant: brand
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: china
@@ -361,6 +421,16 @@ icons:
       qa_passed: true
       qa: passed
       primary_variant: brand
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: geoip
@@ -412,6 +482,16 @@ icons:
       qa_passed: true
       qa: passed
       primary_variant: brand
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: geosite
@@ -463,6 +543,16 @@ icons:
       qa_passed: true
       qa: passed
       primary_variant: brand
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: asn
@@ -514,6 +604,16 @@ icons:
       qa_passed: true
       qa: passed
       primary_variant: brand
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: placeholder
@@ -591,6 +691,16 @@ icons:
           '256': monochrome/256/google.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   apple:
     name: Apple
     type: service
@@ -649,6 +759,16 @@ icons:
           '256': monochrome/256/apple.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   github:
     name: GitHub
     type: service
@@ -707,6 +827,16 @@ icons:
           '256': monochrome/256/github.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   airbnb:
     name: Airbnb
     type: service
@@ -744,6 +874,16 @@ icons:
       color: '#FF5A5F'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -819,6 +959,16 @@ icons:
           '256': monochrome/256/alibaba.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   alipay:
     name: Alipay
     type: service
@@ -875,6 +1025,16 @@ icons:
           '256': monochrome/256/alipay.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   anthropic:
     name: Anthropic
     type: service
@@ -931,6 +1091,16 @@ icons:
           '256': monochrome/256/anthropic.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   applemusic:
     name: Applemusic
     type: service
@@ -968,6 +1138,16 @@ icons:
       color: '#FA243C'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -1022,6 +1202,16 @@ icons:
       color: '#000000'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: simple-icons
@@ -1107,6 +1297,16 @@ icons:
           '256': monochrome/256/atlassian.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   baidu:
     name: Baidu
     type: service
@@ -1163,6 +1363,16 @@ icons:
           '256': monochrome/256/baidu.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   bilibili:
     name: Bilibili
     type: service
@@ -1219,6 +1429,16 @@ icons:
           '256': monochrome/256/bilibili.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   binance:
     name: Binance
     type: service
@@ -1283,6 +1503,16 @@ icons:
           '256': monochrome/256/binance.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   bluesky:
     name: Bluesky
     type: service
@@ -1347,6 +1577,16 @@ icons:
           '256': monochrome/256/bluesky.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   claude:
     name: Claude
     type: service
@@ -1403,6 +1643,16 @@ icons:
           '256': monochrome/256/claude.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   cloudflare:
     name: Cloudflare
     type: service
@@ -1466,6 +1716,16 @@ icons:
           '256': monochrome/256/cloudflare.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   copilot:
     name: Copilot
     type: service
@@ -1530,6 +1790,16 @@ icons:
           '256': monochrome/256/copilot.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   deezer:
     name: Deezer
     type: service
@@ -1591,6 +1861,16 @@ icons:
           '256': monochrome/256/deezer.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   digitalocean:
     name: Digitalocean
     type: service
@@ -1655,6 +1935,16 @@ icons:
           '256': monochrome/256/digitalocean.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   discord:
     name: Discord
     type: service
@@ -1711,6 +2001,16 @@ icons:
           '256': monochrome/256/discord.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   docker:
     name: Docker
     type: service
@@ -1774,6 +2074,16 @@ icons:
           '256': monochrome/256/docker.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   douyin:
     name: Douyin
     type: service
@@ -1830,6 +2140,16 @@ icons:
           '256': monochrome/256/douyin.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   dropbox:
     name: Dropbox
     type: service
@@ -1867,6 +2187,16 @@ icons:
       color: '#0061FF'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -1952,6 +2282,16 @@ icons:
           '256': monochrome/256/ea.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   ebay:
     name: Ebay
     type: service
@@ -2016,6 +2356,16 @@ icons:
           '256': monochrome/256/ebay.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   emby:
     name: Emby
     type: service
@@ -2049,6 +2399,16 @@ icons:
       color: '#52B54B'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: simple-icons
@@ -2107,6 +2467,16 @@ icons:
       color: '#313131'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -2191,6 +2561,16 @@ icons:
           '256': monochrome/256/facebook.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   figma:
     name: Figma
     type: service
@@ -2228,6 +2608,16 @@ icons:
       color: '#F24E1E'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -2286,6 +2676,16 @@ icons:
       color: '#DD2C00'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -2363,6 +2763,16 @@ icons:
           '256': monochrome/256/gemini.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   gitlab:
     name: Gitlab
     type: service
@@ -2400,6 +2810,16 @@ icons:
       color: '#FC6D26'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -2485,6 +2905,16 @@ icons:
           '256': monochrome/256/hashicorp.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   hbo:
     name: Hbo
     type: service
@@ -2549,6 +2979,16 @@ icons:
           '256': monochrome/256/hbo.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   huawei:
     name: Huawei
     type: service
@@ -2605,6 +3045,16 @@ icons:
           '256': monochrome/256/huawei.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   huggingface:
     name: Huggingface
     type: service
@@ -2661,6 +3111,16 @@ icons:
           '256': monochrome/256/huggingface.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   icloud:
     name: Icloud
     type: service
@@ -2698,6 +3158,16 @@ icons:
       color: '#3693F3'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -2782,6 +3252,16 @@ icons:
           '256': monochrome/256/instagram.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   jetbrains:
     name: Jetbrains
     type: service
@@ -2846,6 +3326,16 @@ icons:
           '256': monochrome/256/jetbrains.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   kakaotalk:
     name: Kakaotalk
     type: service
@@ -2879,6 +3369,16 @@ icons:
       color: '#FFCD00'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: simple-icons
@@ -2937,6 +3437,16 @@ icons:
       color: '#00C300'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -3014,6 +3524,16 @@ icons:
           '256': monochrome/256/meituan.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   messenger:
     name: Messenger
     type: service
@@ -3051,6 +3571,16 @@ icons:
       color: '#00B2FF'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -3105,6 +3635,16 @@ icons:
       color: '#03C75A'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: simple-icons
@@ -3182,6 +3722,16 @@ icons:
           '256': monochrome/256/netflix.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   netlify:
     name: Netlify
     type: service
@@ -3246,6 +3796,16 @@ icons:
           '256': monochrome/256/netlify.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   notion:
     name: Notion
     type: service
@@ -3283,6 +3843,16 @@ icons:
       color: '#000000'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -3368,6 +3938,16 @@ icons:
           '256': monochrome/256/okx.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   oppo:
     name: Oppo
     type: service
@@ -3401,6 +3981,16 @@ icons:
       color: '#2D683D'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: simple-icons
@@ -3480,6 +4070,16 @@ icons:
           '256': monochrome/256/paramountplus.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   paypal:
     name: Paypal
     type: service
@@ -3517,6 +4117,16 @@ icons:
       color: '#003087'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -3594,6 +4204,16 @@ icons:
           '256': monochrome/256/perplexity.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   pinterest:
     name: Pinterest
     type: service
@@ -3627,6 +4247,16 @@ icons:
       color: '#BD081C'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: simple-icons
@@ -3712,6 +4342,16 @@ icons:
           '256': monochrome/256/playstation.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   reddit:
     name: Reddit
     type: service
@@ -3775,6 +4415,16 @@ icons:
           '256': monochrome/256/reddit.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   roblox:
     name: Roblox
     type: service
@@ -3839,6 +4489,16 @@ icons:
           '256': monochrome/256/roblox.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   rockstar:
     name: Rockstar
     type: service
@@ -3872,6 +4532,16 @@ icons:
       color: '#FCAF17'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: simple-icons
@@ -3930,6 +4600,16 @@ icons:
       color: '#7AB55C'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -3988,6 +4668,16 @@ icons:
       color: '#3B45FD'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -4077,6 +4767,16 @@ icons:
           '256': monochrome/256/sina.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   snapchat:
     name: Snapchat
     type: service
@@ -4110,6 +4810,16 @@ icons:
       color: '#FFFC00'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: simple-icons
@@ -4195,6 +4905,16 @@ icons:
           '256': monochrome/256/soundcloud.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   speedtest:
     name: Speedtest
     type: service
@@ -4228,6 +4948,16 @@ icons:
       color: '#141526'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: simple-icons
@@ -4305,6 +5035,16 @@ icons:
           '256': monochrome/256/spotify.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   steam:
     name: Steam
     type: service
@@ -4342,6 +5082,16 @@ icons:
       color: '#000000'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -4400,6 +5150,16 @@ icons:
       color: '#635BFF'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -4484,6 +5244,16 @@ icons:
           '256': monochrome/256/telegram.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   threads:
     name: Threads
     type: service
@@ -4521,6 +5291,16 @@ icons:
       color: '#000000'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -4606,6 +5386,16 @@ icons:
           '256': monochrome/256/tidal.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   tiktok:
     name: Tiktok
     type: service
@@ -4669,6 +5459,16 @@ icons:
           '256': monochrome/256/tiktok.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   trello:
     name: Trello
     type: service
@@ -4733,6 +5533,16 @@ icons:
           '256': monochrome/256/trello.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   twitch:
     name: Twitch
     type: service
@@ -4796,6 +5606,16 @@ icons:
           '256': monochrome/256/twitch.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   twitter:
     name: Twitter
     type: service
@@ -4859,6 +5679,16 @@ icons:
           '256': monochrome/256/twitter.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   uber:
     name: Uber
     type: service
@@ -4896,6 +5726,16 @@ icons:
       color: '#000000'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -4981,6 +5821,16 @@ icons:
           '256': monochrome/256/ubisoft.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   vercel:
     name: Vercel
     type: service
@@ -5018,6 +5868,16 @@ icons:
       color: '#000000'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -5103,6 +5963,16 @@ icons:
           '256': monochrome/256/vimeo.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   vivo:
     name: Vivo
     type: service
@@ -5136,6 +6006,16 @@ icons:
       color: '#415FFF'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: simple-icons
@@ -5213,6 +6093,16 @@ icons:
           '256': monochrome/256/wechat.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   weibo:
     name: Weibo
     type: service
@@ -5281,6 +6171,16 @@ icons:
           '256': monochrome/256/weibo.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   whatsapp:
     name: Whatsapp
     type: service
@@ -5344,6 +6244,16 @@ icons:
           '256': monochrome/256/whatsapp.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   wikipedia:
     name: Wikipedia
     type: service
@@ -5408,6 +6318,16 @@ icons:
           '256': monochrome/256/wikipedia.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   wise:
     name: Wise
     type: service
@@ -5472,6 +6392,16 @@ icons:
           '256': monochrome/256/wise.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   xiaomi:
     name: Xiaomi
     type: service
@@ -5528,6 +6458,16 @@ icons:
           '256': monochrome/256/xiaomi.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   youtube:
     name: Youtube
     type: service
@@ -5584,6 +6524,16 @@ icons:
           '256': monochrome/256/youtube.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   youtubemusic:
     name: Youtubemusic
     type: service
@@ -5617,6 +6567,16 @@ icons:
       color: '#FF0000'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: simple-icons
@@ -5694,6 +6654,16 @@ icons:
           '256': monochrome/256/zhihu.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   zoom:
     name: Zoom
     type: service
@@ -5731,6 +6701,16 @@ icons:
       color: '#0B5CFF'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -5806,6 +6786,16 @@ icons:
           '256': monochrome/256/microsoft.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   deepseek:
     name: Deepseek
     type: service
@@ -5860,6 +6850,16 @@ icons:
           '256': monochrome/256/deepseek.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   openai:
     name: Openai
     type: service
@@ -5916,6 +6916,16 @@ icons:
           '256': monochrome/256/openai.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   tencent:
     name: Tencent
     type: service
@@ -5970,6 +6980,16 @@ icons:
           '256': monochrome/256/tencent.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   adblock:
     name: AdBlock
     type: dataset
@@ -6000,6 +7020,16 @@ icons:
       qa_passed: true
       qa: passed
       primary_variant: brand
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: adblock
@@ -6051,6 +7081,16 @@ icons:
       qa_passed: true
       qa: passed
       primary_variant: brand
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: chinamobile
@@ -6102,6 +7142,16 @@ icons:
       qa_passed: true
       qa: passed
       primary_variant: brand
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: chinatelecom
@@ -6153,6 +7203,16 @@ icons:
       qa_passed: true
       qa: passed
       primary_variant: brand
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: chinaunicom
@@ -6204,6 +7264,16 @@ icons:
       qa_passed: true
       qa: passed
       primary_variant: brand
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: gfw
@@ -6255,6 +7325,16 @@ icons:
       qa_passed: true
       qa: passed
       primary_variant: brand
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: private
@@ -6306,6 +7386,16 @@ icons:
       qa_passed: true
       qa: passed
       primary_variant: brand
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: stun
@@ -6357,6 +7447,16 @@ icons:
       qa_passed: true
       qa: passed
       primary_variant: brand
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: global
@@ -6408,6 +7508,16 @@ icons:
       qa_passed: true
       qa: passed
       primary_variant: brand
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: network
@@ -6490,6 +7600,16 @@ icons:
           '256': monochrome/256/booking.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   cursor:
     name: Cursor
     type: service
@@ -6551,6 +7671,16 @@ icons:
           '256': monochrome/256/cursor.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   meta:
     name: Meta
     type: service
@@ -6606,6 +7736,16 @@ icons:
           '256': monochrome/256/meta.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   x:
     name: X
     type: service
@@ -6663,6 +7803,16 @@ icons:
           '256': monochrome/256/x.png
     namespace: brand
     schema: 2
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
   adobe:
     name: Adobe
     type: service
@@ -6700,6 +7850,16 @@ icons:
       color: '#FF0000'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -6758,6 +7918,16 @@ icons:
       color: '#FF9900'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -6815,6 +7985,16 @@ icons:
       color: '#232F3E'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -6873,6 +8053,16 @@ icons:
       color: '#00C4CC'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -6931,6 +8121,16 @@ icons:
       color: '#430098'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -6989,6 +8189,16 @@ icons:
       color: '#0A66C2'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -7043,6 +8253,16 @@ icons:
       color: '#E60012'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: simple-icons
@@ -7101,6 +8321,16 @@ icons:
       color: '#F80000'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -7159,6 +8389,16 @@ icons:
       color: '#4A154B'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -7217,6 +8457,16 @@ icons:
       color: '#0071CE'
       color_source: simple-icons
       color_verified: false
+    render:
+      mode: brand_preserve
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       confidence: slug-match
@@ -7272,6 +8522,16 @@ icons:
       color_source: project
       color_verified: true
       color_na: true
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: select
@@ -7324,6 +8584,16 @@ icons:
       color_source: project
       color_verified: true
       color_na: true
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: match
@@ -7376,6 +8646,16 @@ icons:
       color_source: project
       color_verified: true
       color_na: true
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: provider
@@ -7428,6 +8708,16 @@ icons:
       color_source: project
       color_verified: true
       color_na: true
+    render:
+      mode: semantic
+      canvas: 512
+      safe_area: 0.82
+      variants:
+      - transparent
+      - light
+      - dark
+      - monochrome
+      engine: prc-icon-engine-1
     identity:
       verified: true
       icon_id: cloud
@@ -7681,7 +8971,7 @@ phase_ii:
   fail: 0
 si_pin:
   version: 13.21.0
-  pinned_at: '2026-08-30T00:42:14Z'
+  pinned_at: '2026-08-30T06:54:10Z'
   count: 80
 dual_write:
   enabled: true
@@ -7704,3 +8994,7 @@ schema_v2:
     verified: 48
     placeholder: 1
     sourced: 80
+icon_engine:
+  version: 1
+  canvas: 512
+  safe_area: 0.82
