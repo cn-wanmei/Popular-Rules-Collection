@@ -81,6 +81,8 @@ jobs:
           pip install pillow cairosvg -q || true
           python scripts/build_icons.py --force || true
           python scripts/build_icons.py --force --monochrome || true
+          python scripts/icon_engine.py --force || true
+          python scripts/icon_contact_sheet.py || true
       - name: Icon Schema V2 migrate
         continue-on-error: true
         run: python scripts/icon_schema_v2_migrate.py
