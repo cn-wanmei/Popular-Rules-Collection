@@ -84,9 +84,9 @@ jobs:
           python scripts/icon_color_identity_fix.py || true
           python scripts/icon_no_black.py || true
           python scripts/build_icons.py --force || true
-          python scripts/build_icons.py --force --monochrome || true
           python scripts/icon_engine.py --force || true
           python scripts/icon_contact_sheet.py || true
+          python scripts/icon_cleanup_dirs.py || true
       - name: Icon Schema V2 migrate
         continue-on-error: true
         run: python scripts/icon_schema_v2_migrate.py
