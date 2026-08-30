@@ -1,28 +1,28 @@
 {
   "date": "2026-08-30",
-  "service_map_entries": 211,
-  "icon_entities": 129,
-  "registry_services": 211,
-  "with_real_icon": 129,
+  "service_map_entries": 216,
+  "icon_entities": 134,
+  "registry_services": 216,
+  "with_real_icon": 134,
   "placeholder_decisions": 82,
-  "verified_entities": 48,
-  "sourced_entities": 80,
-  "png_256_ok": 129,
+  "verified_entities": 33,
+  "sourced_entities": 100,
+  "png_256_ok": 134,
   "by_status": {
-    "verified": 48,
+    "verified": 33,
     "placeholder": 1,
-    "sourced": 80
+    "sourced": 100
   },
   "by_provenance": {
-    "project": 19,
-    "official-colors": 26,
-    "third_party": 84
+    "project": 28,
+    "third_party": 100,
+    "official-colors": 6
   },
   "by_type": {
-    "policy": 8,
+    "policy": 13,
     "network": 4,
     "dataset": 11,
     "service": 106
   },
-  "non_placeholder_pct": 61.14
+  "non_placeholder_pct": 62.04
 }

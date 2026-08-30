@@ -3,108 +3,108 @@
   "size": 256,
   "icons": {
     "direct": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.0123,
-      "dark_ratio": 0.0,
-      "unique_buckets": 15,
+      "opaque_ratio": 0.0957,
+      "color_ratio": 0.0,
+      "dark_ratio": 1.0,
+      "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "proxy": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.0106,
-      "dark_ratio": 0.0,
-      "unique_buckets": 27,
+      "opaque_ratio": 0.191,
+      "color_ratio": 0.0,
+      "dark_ratio": 1.0,
+      "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "reject": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.0104,
-      "dark_ratio": 0.0,
-      "unique_buckets": 25,
-      "multi_significant": 1,
-      "likely_mono": true,
+      "opaque_ratio": 0.2999,
+      "color_ratio": 0.0933,
+      "dark_ratio": 0.9066,
+      "unique_buckets": 8,
+      "multi_significant": 2,
+      "likely_mono": false,
       "likely_blank": false
     },
     "dns": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.0166,
-      "dark_ratio": 0.0,
-      "unique_buckets": 35,
-      "multi_significant": 1,
-      "likely_mono": true,
+      "opaque_ratio": 0.333,
+      "color_ratio": 0.1378,
+      "dark_ratio": 0.8614,
+      "unique_buckets": 8,
+      "multi_significant": 2,
+      "likely_mono": false,
       "likely_blank": false
     },
     "lan": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.0057,
-      "dark_ratio": 0.0,
-      "unique_buckets": 9,
+      "opaque_ratio": 0.1764,
+      "color_ratio": 0.0,
+      "dark_ratio": 1.0,
+      "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "china": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.0141,
+      "opaque_ratio": 0.4486,
+      "color_ratio": 0.0262,
       "dark_ratio": 0.0,
-      "unique_buckets": 8,
+      "unique_buckets": 7,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "geoip": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.0088,
-      "dark_ratio": 0.0,
-      "unique_buckets": 11,
+      "opaque_ratio": 0.2044,
+      "color_ratio": 0.0,
+      "dark_ratio": 1.0,
+      "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "geosite": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.4143,
-      "dark_ratio": 0.0,
-      "unique_buckets": 35,
+      "opaque_ratio": 0.3046,
+      "color_ratio": 0.3209,
+      "dark_ratio": 0.6649,
+      "unique_buckets": 8,
       "multi_significant": 2,
       "likely_mono": false,
       "likely_blank": false
     },
     "asn": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.0128,
-      "dark_ratio": 0.0,
-      "unique_buckets": 44,
+      "opaque_ratio": 0.1672,
+      "color_ratio": 0.0,
+      "dark_ratio": 1.0,
+      "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "placeholder": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.0094,
-      "dark_ratio": 0.0,
-      "unique_buckets": 44,
-      "multi_significant": 1,
+      "opaque_ratio": 0.2999,
+      "color_ratio": 0.0639,
+      "dark_ratio": 0.9358,
+      "unique_buckets": 8,
+      "multi_significant": 2,
       "likely_mono": true,
       "likely_blank": false
     },
     "google": {
-      "opaque_ratio": 0.2924,
-      "color_ratio": 0.7028,
+      "opaque_ratio": 0.2622,
+      "color_ratio": 0.0,
       "dark_ratio": 0.0,
-      "unique_buckets": 19,
-      "multi_significant": 4,
-      "likely_mono": false,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
       "likely_blank": false
     },
     "apple": {
       "opaque_ratio": 0.351,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -113,7 +113,7 @@
     "github": {
       "opaque_ratio": 0.2952,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -121,15 +121,15 @@
     },
     "airbnb": {
       "opaque_ratio": 0.1803,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
-      "multi_significant": 1,
+      "color_ratio": 0.0245,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
+      "multi_significant": 2,
       "likely_mono": true,
       "likely_blank": false
     },
     "alibaba": {
-      "opaque_ratio": 0.0886,
+      "opaque_ratio": 0.0952,
       "color_ratio": 0.0,
       "dark_ratio": 0.0,
       "unique_buckets": 1,
@@ -138,7 +138,7 @@
       "likely_blank": false
     },
     "alipay": {
-      "opaque_ratio": 0.3747,
+      "opaque_ratio": 0.5145,
       "color_ratio": 0.0,
       "dark_ratio": 0.0,
       "unique_buckets": 1,
@@ -147,8 +147,8 @@
       "likely_blank": false
     },
     "anthropic": {
-      "opaque_ratio": 0.1451,
-      "color_ratio": 0.0311,
+      "opaque_ratio": 0.2348,
+      "color_ratio": 0.03,
       "dark_ratio": 0.0,
       "unique_buckets": 3,
       "multi_significant": 2,
@@ -157,18 +157,18 @@
     },
     "applemusic": {
       "opaque_ratio": 0.5572,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
+      "color_ratio": 0.0001,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "appletv": {
       "opaque_ratio": 0.145,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
+      "color_ratio": 0.0013,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -176,15 +176,15 @@
     "atlassian": {
       "opaque_ratio": 0.3226,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "baidu": {
-      "opaque_ratio": 0.1291,
-      "color_ratio": 0.0012,
+      "opaque_ratio": 0.3194,
+      "color_ratio": 0.0019,
       "dark_ratio": 0.0,
       "unique_buckets": 2,
       "multi_significant": 1,
@@ -192,8 +192,8 @@
       "likely_blank": false
     },
     "bilibili": {
-      "opaque_ratio": 0.326,
-      "color_ratio": 0.0007,
+      "opaque_ratio": 0.2582,
+      "color_ratio": 0.0021,
       "dark_ratio": 0.0,
       "unique_buckets": 2,
       "multi_significant": 1,
@@ -203,16 +203,16 @@
     "binance": {
       "opaque_ratio": 0.2106,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "bluesky": {
-      "opaque_ratio": 0.3999,
+      "opaque_ratio": 0.4059,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -229,9 +229,9 @@
     },
     "cloudflare": {
       "opaque_ratio": 0.1948,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
+      "color_ratio": 0.0113,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -239,16 +239,16 @@
     "copilot": {
       "opaque_ratio": 0.2222,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "deezer": {
-      "opaque_ratio": 0.3847,
+      "opaque_ratio": 0.1903,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -257,7 +257,7 @@
     "digitalocean": {
       "opaque_ratio": 0.304,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -275,26 +275,26 @@
     "docker": {
       "opaque_ratio": 0.2595,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "douyin": {
-      "opaque_ratio": 0.1938,
-      "color_ratio": 0.0774,
-      "dark_ratio": 0.9228,
-      "unique_buckets": 10,
-      "multi_significant": 2,
+      "opaque_ratio": 0.2452,
+      "color_ratio": 0.0,
+      "dark_ratio": 0.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "dropbox": {
       "opaque_ratio": 0.2745,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
+      "color_ratio": 0.0022,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -302,7 +302,7 @@
     "ea": {
       "opaque_ratio": 0.1573,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -311,7 +311,7 @@
     "ebay": {
       "opaque_ratio": 0.0905,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -320,7 +320,7 @@
     "emby": {
       "opaque_ratio": 0.3039,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -329,7 +329,7 @@
     "epic": {
       "opaque_ratio": 0.4154,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -338,7 +338,7 @@
     "facebook": {
       "opaque_ratio": 0.3991,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -346,35 +346,35 @@
     },
     "figma": {
       "opaque_ratio": 0.181,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
+      "color_ratio": 0.0024,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "firebase": {
-      "opaque_ratio": 0.1758,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
+      "opaque_ratio": 0.2907,
+      "color_ratio": 0.0005,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "gemini": {
       "opaque_ratio": 0.0734,
-      "color_ratio": 0.2479,
+      "color_ratio": 0.0,
       "dark_ratio": 0.0,
-      "unique_buckets": 14,
-      "multi_significant": 2,
-      "likely_mono": false,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
       "likely_blank": false
     },
     "gitlab": {
       "opaque_ratio": 0.3842,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -383,7 +383,7 @@
     "hashicorp": {
       "opaque_ratio": 0.334,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -392,14 +392,14 @@
     "hbo": {
       "opaque_ratio": 0.2186,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "huawei": {
-      "opaque_ratio": 0.1234,
+      "opaque_ratio": 0.2878,
       "color_ratio": 0.0,
       "dark_ratio": 0.0,
       "unique_buckets": 1,
@@ -419,7 +419,7 @@
     "icloud": {
       "opaque_ratio": 0.3268,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -428,7 +428,7 @@
     "instagram": {
       "opaque_ratio": 0.2921,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -437,7 +437,7 @@
     "jetbrains": {
       "opaque_ratio": 0.3183,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -446,7 +446,7 @@
     "kakaotalk": {
       "opaque_ratio": 0.4376,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -454,18 +454,18 @@
     },
     "line": {
       "opaque_ratio": 0.393,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
+      "color_ratio": 0.0003,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "meituan": {
-      "opaque_ratio": 0.3029,
-      "color_ratio": 0.0004,
+      "opaque_ratio": 0.5531,
+      "color_ratio": 0.0,
       "dark_ratio": 0.0,
-      "unique_buckets": 2,
+      "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -473,7 +473,7 @@
     "messenger": {
       "opaque_ratio": 0.4703,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -482,14 +482,14 @@
     "naver": {
       "opaque_ratio": 0.5421,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "netflix": {
-      "opaque_ratio": 0.2979,
+      "opaque_ratio": 0.3159,
       "color_ratio": 0.0,
       "dark_ratio": 0.0,
       "unique_buckets": 1,
@@ -500,7 +500,7 @@
     "netlify": {
       "opaque_ratio": 0.108,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -508,9 +508,9 @@
     },
     "notion": {
       "opaque_ratio": 0.3371,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
+      "color_ratio": 0.0018,
+      "dark_ratio": 0.0,
+      "unique_buckets": 3,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -518,7 +518,7 @@
     "okx": {
       "opaque_ratio": 0.1255,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -527,7 +527,7 @@
     "oppo": {
       "opaque_ratio": 0.0611,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -544,16 +544,16 @@
     },
     "paypal": {
       "opaque_ratio": 0.3416,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
+      "color_ratio": 0.0008,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "perplexity": {
       "opaque_ratio": 0.3257,
-      "color_ratio": 0.0082,
+      "color_ratio": 0.0068,
       "dark_ratio": 0.0,
       "unique_buckets": 2,
       "multi_significant": 1,
@@ -562,9 +562,9 @@
     },
     "pinterest": {
       "opaque_ratio": 0.3981,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
+      "color_ratio": 0.0003,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -572,7 +572,7 @@
     "playstation": {
       "opaque_ratio": 0.2088,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -581,7 +581,7 @@
     "reddit": {
       "opaque_ratio": 0.3625,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -590,7 +590,7 @@
     "roblox": {
       "opaque_ratio": 0.4175,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -599,7 +599,7 @@
     "rockstar": {
       "opaque_ratio": 0.2229,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -607,17 +607,17 @@
     },
     "shopify": {
       "opaque_ratio": 0.364,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
+      "color_ratio": 0.0002,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "signal": {
-      "opaque_ratio": 0.4489,
+      "opaque_ratio": 0.4455,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -626,7 +626,7 @@
     "sina": {
       "opaque_ratio": 0.2505,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -635,16 +635,16 @@
     "snapchat": {
       "opaque_ratio": 0.3695,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "soundcloud": {
-      "opaque_ratio": 0.1745,
+      "opaque_ratio": 0.1816,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -653,7 +653,7 @@
     "speedtest": {
       "opaque_ratio": 0.1741,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -661,18 +661,18 @@
     },
     "spotify": {
       "opaque_ratio": 0.4402,
-      "color_ratio": 0.0116,
+      "color_ratio": 0.0001,
       "dark_ratio": 0.0,
-      "unique_buckets": 3,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "steam": {
       "opaque_ratio": 0.3948,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
+      "color_ratio": 0.0111,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -680,7 +680,7 @@
     "stripe": {
       "opaque_ratio": 0.3294,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -689,7 +689,7 @@
     "telegram": {
       "opaque_ratio": 0.4577,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -697,9 +697,9 @@
     },
     "threads": {
       "opaque_ratio": 0.2479,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
+      "color_ratio": 0.0007,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -707,7 +707,7 @@
     "tidal": {
       "opaque_ratio": 0.1538,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -716,7 +716,7 @@
     "tiktok": {
       "opaque_ratio": 0.2452,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -725,7 +725,7 @@
     "trello": {
       "opaque_ratio": 0.5174,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -734,17 +734,17 @@
     "twitch": {
       "opaque_ratio": 0.2595,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "twitter": {
-      "opaque_ratio": 0.1729,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
+      "opaque_ratio": 0.2261,
+      "color_ratio": 0.0009,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -752,7 +752,7 @@
     "uber": {
       "opaque_ratio": 0.0892,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -761,7 +761,7 @@
     "ubisoft": {
       "opaque_ratio": 0.3265,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -770,7 +770,7 @@
     "vercel": {
       "opaque_ratio": 0.297,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -779,7 +779,7 @@
     "vimeo": {
       "opaque_ratio": 0.2955,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -787,16 +787,16 @@
     },
     "vivo": {
       "opaque_ratio": 0.0564,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
-      "multi_significant": 1,
+      "color_ratio": 0.053,
+      "dark_ratio": 0.0,
+      "unique_buckets": 4,
+      "multi_significant": 2,
       "likely_mono": true,
       "likely_blank": false
     },
     "wechat": {
-      "opaque_ratio": 0.2389,
-      "color_ratio": 0.0085,
+      "opaque_ratio": 0.3399,
+      "color_ratio": 0.0117,
       "dark_ratio": 0.0,
       "unique_buckets": 4,
       "multi_significant": 1,
@@ -806,7 +806,7 @@
     "weibo": {
       "opaque_ratio": 0.2505,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -815,7 +815,7 @@
     "whatsapp": {
       "opaque_ratio": 0.2354,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -824,7 +824,7 @@
     "wikipedia": {
       "opaque_ratio": 0.1275,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -832,15 +832,15 @@
     },
     "wise": {
       "opaque_ratio": 0.2814,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
-      "multi_significant": 1,
+      "color_ratio": 0.0239,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
+      "multi_significant": 2,
       "likely_mono": true,
       "likely_blank": false
     },
     "xiaomi": {
-      "opaque_ratio": 0.1155,
+      "opaque_ratio": 0.5,
       "color_ratio": 0.0,
       "dark_ratio": 0.0,
       "unique_buckets": 1,
@@ -849,18 +849,18 @@
       "likely_blank": false
     },
     "youtube": {
-      "opaque_ratio": 0.4499,
-      "color_ratio": 0.0613,
+      "opaque_ratio": 0.4242,
+      "color_ratio": 0.0,
       "dark_ratio": 0.0,
-      "unique_buckets": 8,
-      "multi_significant": 2,
+      "unique_buckets": 1,
+      "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "youtubemusic": {
       "opaque_ratio": 0.4676,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -877,20 +877,20 @@
     },
     "zoom": {
       "opaque_ratio": 0.0789,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
+      "color_ratio": 0.0004,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "microsoft": {
-      "opaque_ratio": 0.4832,
-      "color_ratio": 0.75,
+      "opaque_ratio": 0.6104,
+      "color_ratio": 0.0,
       "dark_ratio": 0.0,
-      "unique_buckets": 5,
-      "multi_significant": 4,
-      "likely_mono": false,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
       "likely_blank": false
     },
     "deepseek": {
@@ -903,16 +903,16 @@
       "likely_blank": false
     },
     "openai": {
-      "opaque_ratio": 0.3833,
-      "color_ratio": 0.0162,
+      "opaque_ratio": 0.2678,
+      "color_ratio": 0.0039,
       "dark_ratio": 0.0,
-      "unique_buckets": 3,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "tencent": {
-      "opaque_ratio": 0.2182,
+      "opaque_ratio": 0.2918,
       "color_ratio": 0.0,
       "dark_ratio": 0.0,
       "unique_buckets": 1,
@@ -921,11 +921,11 @@
       "likely_blank": false
     },
     "adblock": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.0116,
-      "dark_ratio": 0.0,
-      "unique_buckets": 28,
-      "multi_significant": 1,
+      "opaque_ratio": 0.3245,
+      "color_ratio": 0.0717,
+      "dark_ratio": 0.9283,
+      "unique_buckets": 7,
+      "multi_significant": 2,
       "likely_mono": true,
       "likely_blank": false
     },
@@ -957,54 +957,54 @@
       "likely_blank": false
     },
     "gfw": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.017,
-      "dark_ratio": 0.0,
-      "unique_buckets": 27,
-      "multi_significant": 1,
-      "likely_mono": true,
+      "opaque_ratio": 0.2205,
+      "color_ratio": 0.2713,
+      "dark_ratio": 0.7287,
+      "unique_buckets": 5,
+      "multi_significant": 3,
+      "likely_mono": false,
       "likely_blank": false
     },
     "private": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.0107,
-      "dark_ratio": 0.0,
-      "unique_buckets": 24,
+      "opaque_ratio": 0.2143,
+      "color_ratio": 0.0,
+      "dark_ratio": 1.0,
+      "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "stun": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.4119,
-      "dark_ratio": 0.0,
-      "unique_buckets": 27,
+      "opaque_ratio": 0.1859,
+      "color_ratio": 0.0,
+      "dark_ratio": 1.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "global": {
+      "opaque_ratio": 0.3051,
+      "color_ratio": 0.3468,
+      "dark_ratio": 0.6505,
+      "unique_buckets": 8,
       "multi_significant": 2,
       "likely_mono": false,
       "likely_blank": false
     },
-    "global": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.0107,
-      "dark_ratio": 0.0,
-      "unique_buckets": 16,
-      "multi_significant": 1,
-      "likely_mono": true,
-      "likely_blank": false
-    },
     "network": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.0249,
-      "dark_ratio": 0.0,
-      "unique_buckets": 51,
-      "multi_significant": 1,
-      "likely_mono": true,
+      "opaque_ratio": 0.1095,
+      "color_ratio": 0.3563,
+      "dark_ratio": 0.6437,
+      "unique_buckets": 9,
+      "multi_significant": 2,
+      "likely_mono": false,
       "likely_blank": false
     },
     "booking": {
       "opaque_ratio": 0.6005,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -1012,27 +1012,27 @@
     },
     "cursor": {
       "opaque_ratio": 0.3234,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
+      "color_ratio": 0.0006,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "meta": {
       "opaque_ratio": 0.2089,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
+      "color_ratio": 0.0193,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "x": {
-      "opaque_ratio": 0.1729,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
+      "opaque_ratio": 0.2261,
+      "color_ratio": 0.0009,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -1040,7 +1040,7 @@
     "adobe": {
       "opaque_ratio": 0.2842,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -1049,7 +1049,7 @@
     "amazon": {
       "opaque_ratio": 0.1837,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -1058,7 +1058,7 @@
     "aws": {
       "opaque_ratio": 0.138,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -1067,7 +1067,7 @@
     "canva": {
       "opaque_ratio": 0.5018,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -1076,7 +1076,7 @@
     "heroku": {
       "opaque_ratio": 0.2231,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -1084,9 +1084,9 @@
     },
     "linkedin": {
       "opaque_ratio": 0.5043,
-      "color_ratio": 0.0,
-      "dark_ratio": 1.0,
-      "unique_buckets": 1,
+      "color_ratio": 0.0002,
+      "dark_ratio": 0.0,
+      "unique_buckets": 2,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
@@ -1094,7 +1094,7 @@
     "nintendo": {
       "opaque_ratio": 0.3972,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -1103,7 +1103,7 @@
     "oracle": {
       "opaque_ratio": 0.1883,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -1112,7 +1112,7 @@
     "slack": {
       "opaque_ratio": 0.3516,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
@@ -1121,46 +1121,91 @@
     "walmart": {
       "opaque_ratio": 0.0479,
       "color_ratio": 0.0,
-      "dark_ratio": 1.0,
+      "dark_ratio": 0.0,
       "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "select": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.0101,
-      "dark_ratio": 0.0,
-      "unique_buckets": 10,
+      "opaque_ratio": 0.0511,
+      "color_ratio": 0.0,
+      "dark_ratio": 1.0,
+      "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "match": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.0139,
-      "dark_ratio": 0.0,
-      "unique_buckets": 12,
+      "opaque_ratio": 0.0588,
+      "color_ratio": 0.0,
+      "dark_ratio": 1.0,
+      "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
       "likely_blank": false
     },
     "provider": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.0118,
-      "dark_ratio": 0.0,
-      "unique_buckets": 14,
-      "multi_significant": 1,
+      "opaque_ratio": 0.2556,
+      "color_ratio": 0.0596,
+      "dark_ratio": 0.9404,
+      "unique_buckets": 8,
+      "multi_significant": 2,
       "likely_mono": true,
       "likely_blank": false
     },
     "cloud": {
-      "opaque_ratio": 0.5043,
-      "color_ratio": 0.011,
-      "dark_ratio": 0.0,
-      "unique_buckets": 25,
+      "opaque_ratio": 0.2331,
+      "color_ratio": 0.0,
+      "dark_ratio": 1.0,
+      "unique_buckets": 1,
       "multi_significant": 1,
       "likely_mono": true,
+      "likely_blank": false
+    },
+    "auto": {
+      "opaque_ratio": 0.0869,
+      "color_ratio": 0.3897,
+      "dark_ratio": 0.3897,
+      "unique_buckets": 2,
+      "multi_significant": 2,
+      "likely_mono": false,
+      "likely_blank": false
+    },
+    "urltest": {
+      "opaque_ratio": 0.0681,
+      "color_ratio": 0.0,
+      "dark_ratio": 1.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "fallback": {
+      "opaque_ratio": 0.1432,
+      "color_ratio": 0.0,
+      "dark_ratio": 1.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "loadbalance": {
+      "opaque_ratio": 0.1699,
+      "color_ratio": 0.0,
+      "dark_ratio": 1.0,
+      "unique_buckets": 1,
+      "multi_significant": 1,
+      "likely_mono": true,
+      "likely_blank": false
+    },
+    "final": {
+      "opaque_ratio": 0.2953,
+      "color_ratio": 0.2504,
+      "dark_ratio": 0.7495,
+      "unique_buckets": 7,
+      "multi_significant": 2,
+      "likely_mono": false,
       "likely_blank": false
     }
   }
