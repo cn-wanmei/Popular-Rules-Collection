@@ -35,8 +35,10 @@ intent:
     layer: category
     optional: true
   explicit_service:
-    action: SERVICE
+    # Service is a LAYER, not an Action. Final action must be DIRECT|PROXY|REJECT.
+    action: PROXY
     layer: service
+    note: "Default service-layer action; domestic services may resolve DIRECT via routing_emit"
   unknown:
     action: PROXY
     layer: fallback
