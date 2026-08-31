@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""PRC Icon Engine: Source -> Normalize -> Render (Final Freeze)."""
+"""PRC Icon Engine: Source -> Normalize -> Render (Final Freeze + P2 optical)."""
 from __future__ import annotations
 
 import argparse
@@ -14,6 +14,7 @@ MAN = ICON / "manifest.yaml"
 LEGACY_PNG = ICON / "png"
 RENDERED = ICON / "rendered"
 NORMALIZED = ICON / "normalized"
+OPTICAL = ICON / "metadata" / "optical_overrides.yaml"
 SIZES = (64, 128, 256)
 CANVAS = 512
 SAFE = 0.82
@@ -21,6 +22,22 @@ SAFE = 0.82
 
 def load_man():
     return yaml.safe_load(MAN.read_text(encoding="utf-8")) if MAN.exists() else {}
+
+
+def load_optical() -> dict:
+    if not OPTICAL.exists():
+        return {}
+    doc = yaml.safe_load(OPTICAL.read_text(encoding="utf-8")) or {}
+    return doc.get("overrides") or {}
+
+
+def scale_for(key: str, overrides: dict) -> float:
+    ent = overrides.get(key) or {}
+    try:
+        s = float(ent.get("scale") or 1.0)
+    except (TypeError, ValueError):
+        s = 1.0
+    return max(0.7, min(1.2, s))
 
 
 def brand_color(meta):
@@ -49,11 +66,12 @@ def inner_content(svg_text):
     return m.group(1).strip() if m else t.strip()
 
 
-def normalize_svg(svg_text):
+def normalize_svg(svg_text, scale: float = 1.0):
     vb = extract_viewbox(svg_text)
     inner = inner_content(svg_text)
-    pad = (1.0 - SAFE) / 2.0 * CANVAS
-    size = SAFE * CANVAS
+    safe = max(0.55, min(0.95, SAFE * scale))
+    pad = (1.0 - safe) / 2.0 * CANVAS
+    size = safe * CANVAS
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {CANVAS} {CANVAS}" '
@@ -98,8 +116,7 @@ def apply_tint_if_mono_black(svg_text, color, keep_black):
     )
     if "fill=" not in out.lower():
         out = out.replace("<svg ", f'<svg fill="{c}" ', 1)
-    if f'fill="{c}"' in out or "fill=" not in out.lower():
-        out = re.sub(r"<path\b(?![^>]*fill=)", f'<path fill="{c}"', out)
+    out = re.sub(r"<path\b(?![^>]*fill=)", f'<path fill="{c}"', out)
     return out
 
 
@@ -155,12 +172,11 @@ def process_one(key, meta, force):
     if not svg_path.exists():
         return "miss"
     raw = svg_path.read_text(encoding="utf-8", errors="replace")
-    mode = render_mode(meta)
     color = brand_color(meta)
-    keep_black = False  # Final Freeze: no pure-black delivery
     if color:
-        raw = apply_tint_if_mono_black(raw, color, keep_black)
-    norm = normalize_svg(raw)
+        raw = apply_tint_if_mono_black(raw, color, False)
+    scale = scale_for(key, load_optical())
+    norm = normalize_svg(raw, scale=scale)
     if color:
         norm = apply_tint_if_mono_black(norm, color, False)
     NORMALIZED.mkdir(parents=True, exist_ok=True)
@@ -206,6 +222,7 @@ def main():
             meta["render"]["mode"] = render_mode(meta)
             meta["render"]["canvas"] = CANVAS
             meta["render"]["safe_area"] = SAFE
+            meta["render"]["optical_scale"] = scale_for(key, load_optical())
             meta["render"]["variants"] = ["transparent", "light", "dark"]
             meta["render"]["engine"] = "prc-icon-engine-1"
             icons[key] = meta
