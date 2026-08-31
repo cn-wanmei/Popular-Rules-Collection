@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
-"""V2.7 resolve_hierarchy — all provider aggregates."""
+"""Hierarchy resolve — post-normalize; src.core identity; recursive group expand."""
 from __future__ import annotations
 
 import hashlib
 import json
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from src.core.models.rule import identity_key  # noqa: E402
+
 SM = ROOT / "config" / "service_model"
 OUT = ROOT / "reports" / "hierarchy"
+MAX_EXPAND_DEPTH = 8
 
 
 def load_yaml(name: str) -> dict:
@@ -19,14 +24,6 @@ def load_yaml(name: str) -> dict:
     if not p.exists():
         return {}
     return yaml.safe_load(p.read_text(encoding="utf-8")) or {}
-
-
-def normalize_value(typ: str, value: str) -> str:
-    return (value or "").strip().lower().rstrip(".")
-
-
-def identity_key(typ: str, value: str) -> str:
-    return f"{typ}|{normalize_value(typ, value)}"
 
 
 def rules_from_service_yaml(sid: str) -> list:
@@ -48,21 +45,27 @@ def rules_from_service_yaml(sid: str) -> list:
     return out
 
 
-def expand_members(agg, services, groups):
-    members = list(agg.get("members") or [])
+def expand_members(agg: dict, services: dict, groups: dict) -> list:
+    roots = list(agg.get("members") or [])
     exclude = set(agg.get("exclude") or [])
-    expanded = []
-    for m in members:
-        if m in groups:
-            for s in (groups[m] or {}).get("members") or []:
-                if s not in expanded:
-                    expanded.append(s)
-        elif m not in expanded:
-            expanded.append(m)
+    expanded, seen = [], set()
+
+    def walk(node: str, depth: int) -> None:
+        if node in seen or depth > MAX_EXPAND_DEPTH:
+            return
+        seen.add(node)
+        if node in groups:
+            for child in (groups[node] or {}).get("members") or []:
+                walk(child, depth + 1)
+        elif node not in expanded:
+            expanded.append(node)
+
+    for m in roots:
+        walk(m, 0)
     return [m for m in expanded if m not in exclude]
 
 
-def file_sid_for_member(mid, services):
+def file_sid_for_member(mid: str, services: dict) -> str:
     s = services.get(mid) or {}
     if s.get("legacy_body"):
         return str(s["legacy_body"])
@@ -82,21 +85,22 @@ def resolve_aggregate(view_id: str) -> dict:
     rule_map, per_member = {}, {}
     for mid in member_ids:
         rules = rules_from_service_yaml(file_sid_for_member(mid, services))
-        n = 0
         for r in rules:
             if r["identity_key"] not in rule_map:
                 rule_map[r["identity_key"]] = r
-                n += 1
         per_member[mid] = len(rules)
     ordered = sorted(rule_map.values(), key=lambda r: r["identity_key"])
     sha = hashlib.sha256("\n".join(r["identity_key"] for r in ordered).encode()).hexdigest()
-    manifest = {
-        "view": view_id, "kind": "aggregate", "schema": 1, "resolver_version": "v2.7.0",
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "members": member_ids, "per_member_rule_rows": per_member,
-        "canonical_rule_count": len(ordered), "sha256": sha,
+    return {
+        "manifest": {
+            "view": view_id, "kind": "aggregate", "schema": 1, "resolver_version": "v3.0.1",
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "members": member_ids, "per_member_rule_rows": per_member,
+            "canonical_rule_count": len(ordered), "sha256": sha,
+            "note": "legacy_body migration mapping until Canonical Store",
+        },
+        "rules": ordered,
     }
-    return {"manifest": manifest, "rules": ordered}
 
 
 def main() -> int:
