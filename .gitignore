@@ -3,3 +3,5 @@ __pycache__/
 .venv/
 # Legacy monolithic provenance — never commit (GitHub 100MB limit)
 database/provenance/domains.jsonl
+# V2.1 local/CI release pack carrier
+dist/
