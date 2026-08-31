@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Unstage release_globs after git add (V2.1 transition)."""
+"""Unstage release_globs after git add and restore worktree (V2.1).
+
+Leaving modified-but-unstaged release paths dirty causes:
+  error: cannot pull with rebase: You have unstaged changes.
+"""
 from __future__ import annotations
 
 import fnmatch
@@ -17,15 +21,28 @@ def main() -> int:
         return 0
     globs = (yaml.safe_load(LAYOUT.read_text(encoding="utf-8")) or {}).get("release_globs") or []
     try:
-        staged = subprocess.check_output(["git", "diff", "--cached", "--name-only"], cwd=ROOT, text=True).splitlines()
+        staged = subprocess.check_output(
+            ["git", "diff", "--cached", "--name-only"], cwd=ROOT, text=True
+        ).splitlines()
     except subprocess.CalledProcessError:
-        return 0
+        staged = []
+
     drop = [p for p in staged if any(fnmatch.fnmatch(p, g) for g in globs)]
-    if not drop:
-        print("[git_skip_release] none")
-        return 0
-    subprocess.run(["git", "reset", "HEAD", "--"] + drop, cwd=ROOT, check=False)
-    print(f"[git_skip_release] unstaged {len(drop)} paths")
+    if drop:
+        subprocess.run(["git", "reset", "HEAD", "--"] + drop, cwd=ROOT, check=False)
+        subprocess.run(["git", "restore", "--worktree", "--"] + drop, cwd=ROOT, check=False)
+        print(f"[git_skip_release] unstaged+restored {len(drop)} paths")
+    else:
+        print("[git_skip_release] none staged")
+
+    try:
+        dirty = subprocess.check_output(["git", "diff", "--name-only"], cwd=ROOT, text=True).splitlines()
+    except subprocess.CalledProcessError:
+        dirty = []
+    dirty_drop = [p for p in dirty if any(fnmatch.fnmatch(p, g) for g in globs)]
+    if dirty_drop:
+        subprocess.run(["git", "restore", "--worktree", "--"] + dirty_drop, cwd=ROOT, check=False)
+        print(f"[git_skip_release] restored dirty {len(dirty_drop)} paths")
     return 0
 
 
