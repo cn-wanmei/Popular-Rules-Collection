@@ -1,31 +1,38 @@
-version: 1
+version: 2
 updated: "2026-08-31"
 builders:
   mihomo:
     script: scripts/build_mihomo.py
+    module: src.adapters.mihomo.build
     extensions: [".yaml", ".list"]
     out_dir: generated/mihomo
   sing-box:
     script: scripts/build_singbox.py
+    module: src.adapters.singbox.build
     extensions: [".json"]
     out_dir: generated/sing-box
   surge:
     script: scripts/build_surge.py
+    module: src.adapters.surge.build
     extensions: [".list"]
     out_dir: generated/surge
   shadowrocket:
     script: scripts/build_shadowrocket.py
+    module: src.adapters.shadowrocket.build
     extensions: [".list"]
     out_dir: generated/shadowrocket
   quantumult-x:
     script: scripts/build_quantumultx.py
+    module: src.adapters.quantumultx.build
     extensions: [".list"]
     out_dir: generated/quantumult-x
   egern:
     script: scripts/build_egern.py
+    module: src.adapters.egern.build
     extensions: [".yaml"]
     out_dir: generated/egern
   loon:
     script: scripts/build_loon.py
+    module: src.adapters.loon.build
     extensions: [".list"]
     out_dir: generated/loon
