@@ -1,0 +1,31 @@
+# DNS / Resolution Policy — orthogonal to routing actions (DIRECT|PROXY|REJECT)
+version: 1
+updated: "2026-08-31"
+
+principle: >
+  Routing decides where traffic goes. Resolution decides how names are resolved.
+  Mixing them in one priority ladder causes DNS leak and CDN mismatch.
+
+intents:
+  domestic:
+    preferred_tags: [cn, doh]
+    example_servers: [alidns-doh, dnspod-doh]
+    note: Prefer CN recursive for domestic domain intent
+  foreign:
+    preferred_tags: [public, doh]
+    example_servers: [cloudflare-doh, google-doh, quad9-doh]
+    note: Prefer public/security DoH for foreign / proxy-bound domains
+  secure:
+    preferred_tags: [security, doh]
+    example_servers: [quad9-doh]
+  fallback:
+    preferred_tags: [public, udp]
+    example_servers: [cloudflare-udp, google-udp]
+
+leak_guidance:
+  - "Do not resolve proxy-bound foreign domains exclusively via local ISP DNS when pollution is expected"
+  - "Do not force all CN domains through foreign DoH when localization/CDN affinity matters"
+  - "Fake-IP / TUN / redir-host are client config — not this dataset"
+
+registry: database/policies/dns/servers.yaml
+routing_orthogonal: true

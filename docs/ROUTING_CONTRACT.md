@@ -6,47 +6,30 @@
 
 | 文件 | 职责 |
 |------|------|
-| `config/priority.yaml` | **Source Ranking**（来源质量） |
-| `config/routing_priority.yaml` | **Routing Precedence**（最终动作） |
-| `config/routing_contract.yaml` | 动作集合、层级、冲突、终结策略 |
+| `config/priority.yaml` | **Source Ranking** |
+| `config/routing_priority.yaml` | **Routing Precedence** |
+| `config/routing_contract.yaml` | 动作、层级、冲突、终结 |
+| `config/resolution_policy.yaml` | DNS（与 routing 正交） |
 
-Dataset 层 `action_conflict: keep_all` 允许同一域名多标签；  
-**生成客户端规则时必须 resolve 为唯一** `DIRECT | PROXY | REJECT`。
+Dataset 层可多标签；**最终交付必须唯一** `DIRECT \| PROXY \| REJECT`。
 
 ## 优先级（高 → 低）
 
 ```text
-Explicit Override
-  → System (LAN / private / reserved)
-  → Service
-  → Security
-  → Category
-  → GeoSite
-  → GeoIP
-  → Network
-  → Default = PROXY
+Explicit → System → Service → Security → Category
+  → GeoSite → GeoIP → Network → Default = PROXY
 ```
 
-## 原则
+## P1
 
-- Service 信息密度 > Region
-- Domain > GeoIP
-- CN 地理 ≠ 所有中国公司国际业务一律 DIRECT
-- DNS 为 **resolution**，与 routing 正交（见 `database/policies/dns/`）
-- IPv4/IPv6 系统网段应对称
-
-## Policies
-
-| Policy | 路径 |
-|--------|------|
-| DIRECT | `database/policies/direct/` |
-| PROXY | `database/policies/proxy/` |
-| REJECT | `database/policies/reject/` |
-| Overrides | `database/policies/overrides/` (`force_*`) |
-| DNS | `database/policies/dns/` |
-
-## 校验
+| 项 | 状态 |
+|----|------|
+| Service > Category > GeoSite > GeoIP | ✅ + `routing_resolve.py` |
+| Explicit Override | ✅ `policies/overrides/` |
+| DNS = Resolution | ✅ `resolution_policy.yaml` |
+| IPv6 / QUIC / SNI 边界 | ✅ `ROUTING_CAPABILITIES.md` |
 
 ```bash
 python scripts/routing_contract_validate.py
+python scripts/routing_resolve.py --demo
 ```
