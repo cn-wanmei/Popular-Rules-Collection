@@ -1,0 +1,9 @@
+version: 1
+id: reject-security
+layer: security
+action: REJECT
+enabled: false
+entries: []
+notes: >
+  Phase-1 skeleton. Populate only from trusted malware/phishing upstreams.
+  Do NOT auto-merge adblock here.

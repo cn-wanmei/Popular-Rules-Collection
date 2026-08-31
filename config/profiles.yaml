@@ -1,18 +1,35 @@
-version: 1
+version: 2
+updated: "2026-08-31"
 
 profiles:
   minimal:
-    description: China + private + light adblock + core services
+    description: System safety + China direct base + light ad + core platforms
+    routing:
+      terminal: PROXY
+    datasets:
+      - system
+      - china
     services:
       - china
       - private
-      - adblock
+      - adblock-light
       - apple
       - google
+    policies:
+      reject: []
+    resolution:
+      mode: recommended
+      domestic: cn-doh
+      foreign: public-doh
 
   balanced:
     description: Minimal + AI + streaming + social
     includes: [minimal]
+    routing:
+      terminal: PROXY
+    datasets:
+      - system
+      - china
     services:
       - openai
       - youtube
@@ -24,16 +41,41 @@ profiles:
       - tiktok
       - microsoft
       - github
+    policies:
+      reject: []
+    resolution:
+      mode: recommended
 
   full:
-    description: Balanced + games + proxy/gfw layers
+    description: Balanced + gaming + proxy/gfw datasets
     includes: [balanced]
+    routing:
+      terminal: PROXY
+    datasets:
+      - system
+      - china
+      - gfw
+      - proxy
     services:
       - steam
       - bilibili
-      - proxy
-      - gfw
+    policies:
+      reject: []
+    resolution:
+      mode: recommended
 
   ultimate:
-    description: All generated services
+    description: All generated services; optional reject-security when available
+    routing:
+      terminal: PROXY
+    datasets:
+      - system
+      - china
+      - gfw
+      - proxy
     services: "*"
+    policies:
+      reject:
+        - security
+    resolution:
+      mode: recommended

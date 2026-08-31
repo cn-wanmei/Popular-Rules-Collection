@@ -1,19 +1,16 @@
 version: 1
 id: policy-reject
-description: >
-  REJECT routing composition (security / ad / tracker layers).
-  Prefer profile-gated subsets; do not force all clients to reject ads by default.
+description: REJECT composition — security first; ad/tracker profile-optional
 includes:
-  - kind: service
-    id: adblock-pro
-    path: database/services/adblock-pro.yaml
+  - kind: policy
+    id: reject-security
+    path: database/policies/reject/security.yaml
+    tag: reject-security
     optional: true
-    tag: reject-ad
   - kind: service
     id: adblock-light
     path: database/services/adblock-light.yaml
-    optional: true
     tag: reject-ad
+    optional: true
 notes: >
-  Security blocklists (malware/phishing) should be added as dedicated services when upstream is trusted.
-  Profiles decide whether reject-ad / reject-tracker / reject-security are enabled.
+  Default decision SSOT does not absorb adblock.
