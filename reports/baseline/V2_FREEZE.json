@@ -1,0 +1,22 @@
+{
+  "frozen_at": "2026-08-31T16:08:05.212543+00:00",
+  "commit": "bfb66b86d21b59ddc474e40ad65c25297a38d95e",
+  "label": "V2_FREEZE_BASELINE",
+  "policy": {
+    "v2_status": "legacy_production_oracle",
+    "v3_status": "greenfield_parallel_no_v2_import",
+    "forbidden": [
+      "V3 runtime import from scripts/*",
+      "legacy_body in V3 domain model",
+      "incremental script-to-src half-migration",
+      "delete V2 subscription URLs at cutover without compat layer"
+    ]
+  },
+  "counts": {
+    "services_yaml": 184
+  },
+  "v2_adapter_modules_on_disk": [
+    "egern", "loon", "mihomo", "quantumultx", "shadowrocket", "singbox", "surge"
+  ],
+  "production_entry": "scripts/ + .github/workflows/collect.yml"
+}

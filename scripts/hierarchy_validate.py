@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""V2.5 hierarchy_validate."""
+"""V2 hierarchy_validate (frozen baseline — self-contained)."""
 from __future__ import annotations
 
 from pathlib import Path
