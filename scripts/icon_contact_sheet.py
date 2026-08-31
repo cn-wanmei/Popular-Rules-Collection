@@ -1,13 +1,5 @@
 #!/usr/bin/env python3
-"""Modern Brand Icon Grid v2 — contact sheet (audit display only).
-
-Tightened rules:
-  - Light canvas #F7F7F8
-  - Unified cards, subtle border, 8pt grid
-  - Optical center + weight via alpha bbox (no brand redraw)
-  - Brand section vs Semantic section (no rainbow frames in brand grid)
-  - Client PNG paths unchanged
-"""
+"""Modern Brand Icon Grid v2 — contact sheet (audit display only)."""
 from __future__ import annotations
 
 from pathlib import Path
@@ -53,15 +45,17 @@ def load_icons():
     return brand, semantic
 
 
-def load_logo(key: str):
+def load_logo(key: str, surface: str = "transparent"):
+    """Prefer rendered (Final Freeze optical result); fallback legacy png/."""
     from PIL import Image
 
     for size in (128, 256, 64):
-        p = ICON / "png" / str(size) / f"{key}.png"
-        if not p.exists():
-            p = ICON / "rendered" / "transparent" / str(size) / f"{key}.png"
-        if p.exists():
-            return Image.open(p).convert("RGBA")
+        for path in (
+            ICON / "rendered" / surface / str(size) / f"{key}.png",
+            ICON / "png" / str(size) / f"{key}.png",
+        ):
+            if path.exists():
+                return Image.open(path).convert("RGBA")
     return None
 
 
