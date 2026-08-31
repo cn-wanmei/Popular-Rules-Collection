@@ -910,8 +910,8 @@
 {"d":"mobilemsg.youku.com","s":[0,1,2,3,4,5,6],"r":[5,11,179],"t":"domain_suffix"}
 {"d":"npmmirror.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"shenjing.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
-{"d":"gspe21-ssl.ls.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
-{"d":"store.apple.com.edgekey.net.globalredir.akadns.net","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"gspe21-ssl.ls.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
+{"d":"store.apple.com.edgekey.net.globalredir.akadns.net","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"beatsheadphonestudio.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"icloud-apple.cn","s":[0,1,6,7],"r":[17,90],"t":"domain_suffix"}
 {"d":"itunes.rio","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -923,8 +923,8 @@
 {"d":"bcedocument.com","s":[0,1,6],"r":[24,38],"t":"domain_suffix"}
 {"d":"duxiaoman-int.com","s":[0,1,6],"r":[24,38],"t":"domain_suffix"}
 {"d":"mipcdn.com","s":[0,1,6],"r":[24,38],"t":"domain_suffix"}
-{"d":"1gr5dgmttgha1hcj38yzdkpe.ourdvsss.com","s":[0,1,6,7],"r":[27],"t":"domain"}
-{"d":"apiintl.biliapi.net","s":[0,1,6,7],"r":[27],"t":"domain"}
+{"d":"1gr5dgmttgha1hcj38yzdkpe.ourdvsss.com","s":[0,1,6,7],"r":[27,193],"t":"domain"}
+{"d":"apiintl.biliapi.net","s":[0,1,6,7],"r":[27,193],"t":"domain"}
 {"d":"bilicdn3.com","s":[0,1,6,7],"r":[27,38],"t":"domain_suffix"}
 {"d":"cozetest.cn","s":[0,1,6],"r":[33,58],"t":"domain_suffix"}
 {"d":"feishuhuiyi.cn","s":[0,1,6],"r":[33],"t":"domain_suffix"}
@@ -935,7 +935,7 @@
 {"d":"ebfortune.com","s":[0,1],"r":[37,38],"t":"domain_suffix"}
 {"d":"migucc.cn","s":[0],"r":[39],"t":"domain_suffix"}
 {"d":"ctlcdn.com","s":[0,1],"r":[38,40],"t":"domain_suffix"}
-{"d":"openai-api.arkoselabs.com","s":[0,1,6],"r":[45,115],"t":"domain"}
+{"d":"openai-api.arkoselabs.com","s":[0,1,6],"r":[45,115,196,215],"t":"domain"}
 {"d":"githubapp.com","s":[0,1,3,5,6,7],"r":[51,75,105,129],"t":"domain_suffix"}
 {"d":"discord.tools","s":[0,3,5,6,7],"r":[55,129],"t":"domain_suffix"}
 {"d":"disneyinflight.com","s":[0,3,5,7],"r":[56,129],"t":"domain_suffix"}
@@ -943,7 +943,7 @@
 {"d":"ebayuae.net","s":[0,3,5,6],"r":[63,129],"t":"domain_suffix"}
 {"d":"fb.watch","s":[0,1,3,5,6],"r":[68,74,129],"t":"domain_suffix"}
 {"d":"fbaddins.com","s":[0,1,3,5,6],"r":[68,74,129],"t":"domain_suffix"}
-{"d":"cn.widevine.com","s":[0,1,6],"r":[38,77],"t":"domain_suffix"}
+{"d":"cn.widevine.com","s":[0,1,6],"r":[38,77,206],"t":"domain_suffix"}
 {"d":"google.ga","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"youtube.iq","s":[0,1,3,5,6,7],"r":[77,129,180],"t":"domain_suffix"}
 {"d":"aicccloud.com","s":[0,1,6],"r":[38,85],"t":"domain_suffix"}
@@ -952,7 +952,7 @@
 {"d":"jdcloud-openapi.com","s":[0,1],"r":[38,94],"t":"domain_suffix"}
 {"d":"p4wtpoqzihi8v.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"line-apps.com","s":[0,3,5,6],"r":[74,101,107,129],"t":"domain_suffix"}
-{"d":"f.c2r.ts.cdn.office.net","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
+{"d":"f.c2r.ts.cdn.office.net","s":[0,1,6,7],"r":[105,211],"t":"domain_suffix"}
 {"d":"microsoftadvertisingregionalawards.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"syncshop.cn","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"kada.com","s":[0,1],"r":[38,108],"t":"domain_suffix"}
@@ -987,7 +987,7 @@
 {"d":"japanknowledge.com","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
 {"d":"ilangqu.cn","s":[0],"r":[139],"t":"domain_suffix"}
 {"d":"slack-core.com","s":[0,3,5,6],"r":[129,140],"t":"domain_suffix"}
-{"d":"stun.deepfinesse.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.deepfinesse.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"essurl.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"06362.com","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}
 {"d":"144.net.easyjet.com","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}

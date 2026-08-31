@@ -9,16 +9,15 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 350 |
+| Domains | 0 |
 | IP/CIDR | 16 |
-| Mixed | 366 |
+| Mixed | 16 |
 | Sources | blackmatrix7 |
 | Updated | 2026-08-31 |
 
 ## 基础规则（Classical）
 
 - 混合：[`stun.list`](./stun.list)
-- 域名：[`stun_domain.list`](./stun_domain.list)
 - IP：[`stun_ip.list`](./stun_ip.list)
 
 ## 客户端订阅

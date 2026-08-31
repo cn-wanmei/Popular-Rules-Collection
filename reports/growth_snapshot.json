@@ -1,0 +1,740 @@
+{
+  "counts": {
+    "uber": {
+      "lines": 3,
+      "bytes": 607
+    },
+    "pptv": {
+      "lines": 19,
+      "bytes": 1515
+    },
+    "shopify": {
+      "lines": 8,
+      "bytes": 941
+    },
+    "facebook": {
+      "lines": 575,
+      "bytes": 37714
+    },
+    "garena": {
+      "lines": 15,
+      "bytes": 1339
+    },
+    "tongcheng": {
+      "lines": 8,
+      "bytes": 856
+    },
+    "deezer": {
+      "lines": 2,
+      "bytes": 496
+    },
+    "adblock": {
+      "lines": 402068,
+      "bytes": 8032579
+    },
+    "netflix": {
+      "lines": 41,
+      "bytes": 3419
+    },
+    "stun": {
+      "lines": 366,
+      "bytes": 22394
+    },
+    "groq": {
+      "lines": 1,
+      "bytes": 415
+    },
+    "peacock": {
+      "lines": 1,
+      "bytes": 435
+    },
+    "xiaohongshu": {
+      "lines": 4,
+      "bytes": 639
+    },
+    "perplexity": {
+      "lines": 7,
+      "bytes": 920
+    },
+    "zhihu": {
+      "lines": 7,
+      "bytes": 821
+    },
+    "didi": {
+      "lines": 25,
+      "bytes": 1958
+    },
+    "walmart": {
+      "lines": 10,
+      "bytes": 983
+    },
+    "firebase": {
+      "lines": 20,
+      "bytes": 1930
+    },
+    "epic": {
+      "lines": 15,
+      "bytes": 1338
+    },
+    "cmb": {
+      "lines": 38,
+      "bytes": 2716
+    },
+    "douyin": {
+      "lines": 78,
+      "bytes": 5488
+    },
+    "linkedin": {
+      "lines": 12,
+      "bytes": 1142
+    },
+    "jingdong": {
+      "lines": 265,
+      "bytes": 17237
+    },
+    "ceb": {
+      "lines": 15,
+      "bytes": 1302
+    },
+    "youtube": {
+      "lines": 187,
+      "bytes": 12229
+    },
+    "xianyu": {
+      "lines": 16,
+      "bytes": 1344
+    },
+    "applemusic": {
+      "lines": 9,
+      "bytes": 990
+    },
+    "doubao": {
+      "lines": 32,
+      "bytes": 2381
+    },
+    "alibabacloud": {
+      "lines": 100,
+      "bytes": 7392
+    },
+    "wetv": {
+      "lines": 7,
+      "bytes": 806
+    },
+    "battlenet": {
+      "lines": 62,
+      "bytes": 4433
+    },
+    "signal": {
+      "lines": 8,
+      "bytes": 922
+    },
+    "instagram": {
+      "lines": 76,
+      "bytes": 5556
+    },
+    "chinaunicom": {
+      "lines": 34,
+      "bytes": 2506
+    },
+    "tiktok": {
+      "lines": 60,
+      "bytes": 4573
+    },
+    "notion": {
+      "lines": 8,
+      "bytes": 957
+    },
+    "speedtest": {
+      "lines": 5,
+      "bytes": 701
+    },
+    "bocom": {
+      "lines": 6,
+      "bytes": 755
+    },
+    "huawei": {
+      "lines": 402,
+      "bytes": 26671
+    },
+    "gemini": {
+      "lines": 13,
+      "bytes": 1248
+    },
+    "apple": {
+      "lines": 2008,
+      "bytes": 136497
+    },
+    "line": {
+      "lines": 37,
+      "bytes": 2700
+    },
+    "alibaba": {
+      "lines": 517,
+      "bytes": 33360
+    },
+    "bahamut": {
+      "lines": 7,
+      "bytes": 809
+    },
+    "iqiyi": {
+      "lines": 66,
+      "bytes": 4473
+    },
+    "copilot": {
+      "lines": 49,
+      "bytes": 3628
+    },
+    "docker": {
+      "lines": 12,
+      "bytes": 1446
+    },
+    "sina": {
+      "lines": 108,
+      "bytes": 6974
+    },
+    "deepseek": {
+      "lines": 1,
+      "bytes": 485
+    },
+    "chinatelecom": {
+      "lines": 83,
+      "bytes": 5468
+    },
+    "booking": {
+      "lines": 3,
+      "bytes": 610
+    },
+    "amazon": {
+      "lines": 275,
+      "bytes": 18318
+    },
+    "youku": {
+      "lines": 60,
+      "bytes": 4277
+    },
+    "aws": {
+      "lines": 78,
+      "bytes": 5537
+    },
+    "cloudflare": {
+      "lines": 98,
+      "bytes": 6865
+    },
+    "baidu": {
+      "lines": 324,
+      "bytes": 20872
+    },
+    "icbc": {
+      "lines": 58,
+      "bytes": 3951
+    },
+    "telegram": {
+      "lines": 51,
+      "bytes": 3563
+    },
+    "oracle": {
+      "lines": 27,
+      "bytes": 2183
+    },
+    "minecraft": {
+      "lines": 6,
+      "bytes": 830
+    },
+    "discord": {
+      "lines": 31,
+      "bytes": 2600
+    },
+    "tencent": {
+      "lines": 699,
+      "bytes": 44942
+    },
+    "twitter": {
+      "lines": 34,
+      "bytes": 2591
+    },
+    "reddit": {
+      "lines": 15,
+      "bytes": 1513
+    },
+    "whatsapp": {
+      "lines": 28,
+      "bytes": 2236
+    },
+    "github": {
+      "lines": 96,
+      "bytes": 8221
+    },
+    "bluesky": {
+      "lines": 3,
+      "bytes": 551
+    },
+    "rockstar": {
+      "lines": 5,
+      "bytes": 773
+    },
+    "restricted": {
+      "lines": 6657,
+      "bytes": 424543
+    },
+    "slack": {
+      "lines": 11,
+      "bytes": 1132
+    },
+    "kakaotalk": {
+      "lines": 15,
+      "bytes": 1287
+    },
+    "dailymotion": {
+      "lines": 5,
+      "bytes": 689
+    },
+    "ea": {
+      "lines": 165,
+      "bytes": 11290
+    },
+    "gfw": {
+      "lines": 4387,
+      "bytes": 59509
+    },
+    "oppo": {
+      "lines": 56,
+      "bytes": 3840
+    },
+    "kugou": {
+      "lines": 19,
+      "bytes": 1588
+    },
+    "twitch": {
+      "lines": 21,
+      "bytes": 1645
+    },
+    "heroku": {
+      "lines": 12,
+      "bytes": 1187
+    },
+    "12306": {
+      "lines": 15,
+      "bytes": 1293
+    },
+    "elevenlabs": {
+      "lines": 2,
+      "bytes": 561
+    },
+    "disney": {
+      "lines": 175,
+      "bytes": 12068
+    },
+    "eleme": {
+      "lines": 13,
+      "bytes": 1176
+    },
+    "meituan": {
+      "lines": 7,
+      "bytes": 802
+    },
+    "ai": {
+      "lines": 179,
+      "bytes": 12274
+    },
+    "dewu": {
+      "lines": 45,
+      "bytes": 3171
+    },
+    "huya": {
+      "lines": 5,
+      "bytes": 744
+    },
+    "douyu": {
+      "lines": 13,
+      "bytes": 1237
+    },
+    "acfun": {
+      "lines": 10,
+      "bytes": 1054
+    },
+    "tencentvideo": {
+      "lines": 51,
+      "bytes": 3891
+    },
+    "huggingface": {
+      "lines": 3,
+      "bytes": 613
+    },
+    "jetbrains": {
+      "lines": 25,
+      "bytes": 2007
+    },
+    "messenger": {
+      "lines": 4,
+      "bytes": 616
+    },
+    "abc": {
+      "lines": 6,
+      "bytes": 740
+    },
+    "wikipedia": {
+      "lines": 12,
+      "bytes": 1144
+    },
+    "emby": {
+      "lines": 51,
+      "bytes": 3609
+    },
+    "kuaishou": {
+      "lines": 678,
+      "bytes": 43318
+    },
+    "threads": {
+      "lines": 1,
+      "bytes": 433
+    },
+    "psbc": {
+      "lines": 3,
+      "bytes": 553
+    },
+    "pinterest": {
+      "lines": 23,
+      "bytes": 1824
+    },
+    "riotgames": {
+      "lines": 55,
+      "bytes": 3959
+    },
+    "anthropic": {
+      "lines": 9,
+      "bytes": 1115
+    },
+    "adblock-pro": {
+      "lines": 226095,
+      "bytes": 15373921
+    },
+    "nintendo": {
+      "lines": 126,
+      "bytes": 8728
+    },
+    "aisuite": {
+      "lines": 96,
+      "bytes": 6697
+    },
+    "pinduoduo": {
+      "lines": 3,
+      "bytes": 569
+    },
+    "steam": {
+      "lines": 84,
+      "bytes": 6334
+    },
+    "tidal": {
+      "lines": 3,
+      "bytes": 551
+    },
+    "weibo": {
+      "lines": 4,
+      "bytes": 610
+    },
+    "naver": {
+      "lines": 59,
+      "bytes": 3961
+    },
+    "youtubemusic": {
+      "lines": 1,
+      "bytes": 498
+    },
+    "gaode": {
+      "lines": 9,
+      "bytes": 909
+    },
+    "himalaya": {
+      "lines": 17,
+      "bytes": 1435
+    },
+    "appletv": {
+      "lines": 7,
+      "bytes": 840
+    },
+    "stripe": {
+      "lines": 1,
+      "bytes": 427
+    },
+    "netlify": {
+      "lines": 10,
+      "bytes": 1081
+    },
+    "vimeo": {
+      "lines": 16,
+      "bytes": 1374
+    },
+    "amap": {
+      "lines": 16,
+      "bytes": 1369
+    },
+    "paramountplus": {
+      "lines": 9,
+      "bytes": 983
+    },
+    "dropbox": {
+      "lines": 17,
+      "bytes": 1517
+    },
+    "okx": {
+      "lines": 3,
+      "bytes": 546
+    },
+    "playstation": {
+      "lines": 4,
+      "bytes": 666
+    },
+    "hulu": {
+      "lines": 58,
+      "bytes": 4066
+    },
+    "vivo": {
+      "lines": 14,
+      "bytes": 1216
+    },
+    "openai": {
+      "lines": 53,
+      "bytes": 4196
+    },
+    "soundcloud": {
+      "lines": 5,
+      "bytes": 762
+    },
+    "claude": {
+      "lines": 3,
+      "bytes": 556
+    },
+    "xai": {
+      "lines": 4,
+      "bytes": 598
+    },
+    "bbc": {
+      "lines": 29,
+      "bytes": 2334
+    },
+    "developer": {
+      "lines": 679,
+      "bytes": 45224
+    },
+    "unionpay": {
+      "lines": 16,
+      "bytes": 1400
+    },
+    "microsoft": {
+      "lines": 971,
+      "bytes": 67200
+    },
+    "chinamobile": {
+      "lines": 36,
+      "bytes": 2600
+    },
+    "adobe": {
+      "lines": 140,
+      "bytes": 9455
+    },
+    "boc": {
+      "lines": 22,
+      "bytes": 1755
+    },
+    "azure": {
+      "lines": 151,
+      "bytes": 10316
+    },
+    "trello": {
+      "lines": 2,
+      "bytes": 491
+    },
+    "bilibili": {
+      "lines": 130,
+      "bytes": 9469
+    },
+    "ctrip": {
+      "lines": 29,
+      "bytes": 2137
+    },
+    "googlefcm": {
+      "lines": 41,
+      "bytes": 3016
+    },
+    "xiaomi": {
+      "lines": 157,
+      "bytes": 10284
+    },
+    "ximalaya": {
+      "lines": 5,
+      "bytes": 704
+    },
+    "china": {
+      "lines": 111496,
+      "bytes": 1415452
+    },
+    "wise": {
+      "lines": 2,
+      "bytes": 488
+    },
+    "roblox": {
+      "lines": 52,
+      "bytes": 3750
+    },
+    "sohu": {
+      "lines": 53,
+      "bytes": 3551
+    },
+    "airbnb": {
+      "lines": 83,
+      "bytes": 5477
+    },
+    "teams": {
+      "lines": 4,
+      "bytes": 650
+    },
+    "proxy": {
+      "lines": 28217,
+      "bytes": 412281
+    },
+    "netease": {
+      "lines": 81,
+      "bytes": 5477
+    },
+    "digitalocean": {
+      "lines": 6,
+      "bytes": 841
+    },
+    "scholar": {
+      "lines": 231,
+      "bytes": 15014
+    },
+    "onedrive": {
+      "lines": 16,
+      "bytes": 1432
+    },
+    "cctv": {
+      "lines": 44,
+      "bytes": 3278
+    },
+    "binance": {
+      "lines": 12,
+      "bytes": 1125
+    },
+    "kuwo": {
+      "lines": 3,
+      "bytes": 538
+    },
+    "cursor": {
+      "lines": 4,
+      "bytes": 614
+    },
+    "figma": {
+      "lines": 1,
+      "bytes": 485
+    },
+    "canva": {
+      "lines": 6,
+      "bytes": 798
+    },
+    "xbox": {
+      "lines": 42,
+      "bytes": 3054
+    },
+    "akamai": {
+      "lines": 6,
+      "bytes": 752
+    },
+    "alipay": {
+      "lines": 21,
+      "bytes": 1706
+    },
+    "google": {
+      "lines": 1210,
+      "bytes": 78284
+    },
+    "vercel": {
+      "lines": 27,
+      "bytes": 2042
+    },
+    "snapchat": {
+      "lines": 9,
+      "bytes": 947
+    },
+    "hbo": {
+      "lines": 47,
+      "bytes": 3555
+    },
+    "letv": {
+      "lines": 13,
+      "bytes": 1166
+    },
+    "spotify": {
+      "lines": 37,
+      "bytes": 3004
+    },
+    "ebay": {
+      "lines": 370,
+      "bytes": 23988
+    },
+    "bytedance": {
+      "lines": 1081,
+      "bytes": 69789
+    },
+    "paypal": {
+      "lines": 247,
+      "bytes": 16729
+    },
+    "private": {
+      "lines": 248,
+      "bytes": 15657
+    },
+    "wechat": {
+      "lines": 30,
+      "bytes": 2246
+    },
+    "atlassian": {
+      "lines": 11,
+      "bytes": 1127
+    },
+    "ubisoft": {
+      "lines": 1,
+      "bytes": 443
+    },
+    "primevideo": {
+      "lines": 25,
+      "bytes": 2059
+    },
+    "zoom": {
+      "lines": 3,
+      "bytes": 598
+    },
+    "gitlab": {
+      "lines": 6,
+      "bytes": 786
+    },
+    "ccb": {
+      "lines": 18,
+      "bytes": 1487
+    },
+    "icloud": {
+      "lines": 62,
+      "bytes": 4412
+    },
+    "kugoukuwo": {
+      "lines": 109,
+      "bytes": 6817
+    },
+    "pingan": {
+      "lines": 27,
+      "bytes": 2061
+    },
+    "hoyoverse": {
+      "lines": 15,
+      "bytes": 1382
+    },
+    "adblock-light": {
+      "lines": 42106,
+      "bytes": 2874489
+    },
+    "hashicorp": {
+      "lines": 8,
+      "bytes": 885
+    }
+  }
+}

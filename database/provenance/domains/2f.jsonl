@@ -928,8 +928,8 @@
 {"d":"oystermercury.top","s":[1,3,5],"r":[7,129],"t":"domain_suffix"}
 {"d":"alifanyi.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"amazonlaunchpad.com","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
-{"d":"init-p01st.push.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
-{"d":"init-s01st-lb.push-apple.com.akadns.net","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"init-p01st.push.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
+{"d":"init-s01st-lb.push-apple.com.akadns.net","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"ipodnano.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"jetfuelapps.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"macappsto.re","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -965,7 +965,7 @@
 {"d":"icbcpl.com","s":[0,1],"r":[38,89],"t":"domain_suffix"}
 {"d":"kwaiad.cn","s":[0],"r":[96],"t":"domain_suffix"}
 {"d":"l-0005.dc-msedge.net","s":[0,3,5],"r":[102,129],"t":"domain_suffix"}
-{"d":"azurestackhub.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105],"t":"domain_suffix"}
+{"d":"azurestackhub.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105,211],"t":"domain_suffix"}
 {"d":"binf.com","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"nintendo.com.hk","s":[0,3,5],"r":[111,129],"t":"domain_suffix"}
 {"d":"paypal-here.com","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
@@ -996,8 +996,8 @@
 {"d":"xn--x-qeu1ji09tzlg.net","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"xnxxpornvid.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"xxxengine.net","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
-{"d":"stun.lebendigefluesse.at","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.next-gen.ro","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.lebendigefluesse.at","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.next-gen.ro","s":[0],"r":[148,224],"t":"domain"}
 {"d":"tcloudbase.net","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"wannianqingjianzhan.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"elong.com","s":[0,1],"r":[38,156],"t":"domain_suffix"}

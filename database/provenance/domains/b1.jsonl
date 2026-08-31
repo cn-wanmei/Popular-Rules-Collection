@@ -1001,8 +1001,8 @@
 {"d":"woaihuoshan.com","s":[0,1,6,7],"r":[33,38,59],"t":"domain_suffix"}
 {"d":"cloudflareok.com","s":[0,1,3,5,6],"r":[43,129],"t":"domain_suffix"}
 {"d":"brew.sh","s":[0,1,3,5],"r":[51,129],"t":"domain_suffix"}
-{"d":"github-production-user-asset-6210df.s3.amazonaws.com","s":[0,1,3,5,6,7],"r":[51,75,105,129],"t":"domain_suffix"}
-{"d":"productionresultssa13.blob.core.windows.net","s":[0,1,3,5,6,7],"r":[51,75,105,129],"t":"domain_suffix"}
+{"d":"github-production-user-asset-6210df.s3.amazonaws.com","s":[0,1,3,5,6,7],"r":[51,75,105,129,205,211],"t":"domain_suffix"}
+{"d":"productionresultssa13.blob.core.windows.net","s":[0,1,3,5,6,7],"r":[51,75,105,129,205,211],"t":"domain_suffix"}
 {"d":"disneymusicpromotion.com","s":[0,3,5,7],"r":[56,129],"t":"domain_suffix"}
 {"d":"dicela.net","s":[0,3,5],"r":[62,129],"t":"domain_suffix"}
 {"d":"needforspeedtherun.com","s":[0,3,5],"r":[62,129],"t":"domain_suffix"}
@@ -1049,8 +1049,8 @@
 {"d":"tube.bz","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"wowgirls.com","s":[1,3,5,6],"r":[74,129,132],"t":"domain_suffix"}
 {"d":"sinas3.com","s":[0,1],"r":[38,139],"t":"domain_suffix"}
-{"d":"steamcommunity-a.akamaihd.net","s":[0,1,3,5,6,7],"r":[38,129,146],"t":"domain_suffix"}
-{"d":"stun.gravitel.ru","s":[0],"r":[148],"t":"domain"}
+{"d":"steamcommunity-a.akamaihd.net","s":[0,1,3,5,6,7],"r":[38,129,146,223],"t":"domain_suffix"}
+{"d":"stun.gravitel.ru","s":[0],"r":[148,224],"t":"domain"}
 {"d":"bkclouds.cc","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"qeodns.net","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"tefscloud.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

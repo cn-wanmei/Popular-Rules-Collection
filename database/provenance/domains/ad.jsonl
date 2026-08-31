@@ -911,7 +911,7 @@
 {"d":"fackebook.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"fbreg.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"fgacebook.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
-{"d":"redirector.gcpcdn.gvt1.com","s":[0,1,6],"r":[38,77],"t":"domain_suffix"}
+{"d":"redirector.gcpcdn.gvt1.com","s":[0,1,6],"r":[38,77,206],"t":"domain_suffix"}
 {"d":"gerritcodereview.com","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
 {"d":"execute-api.ap-southeast-1.amazonaws.com","s":[0],"r":[81],"t":"domain_suffix"}
 {"d":"cdnhwcvix16.com","s":[0,1,6],"r":[38,85],"t":"domain_suffix"}
@@ -923,8 +923,8 @@
 {"d":"minecraft.net","s":[0,1,3,5,6,7],"r":[105,106,129,174],"t":"domain_suffix"}
 {"d":"windows8.hk","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"paypalprepagata.com","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
-{"d":"021912.xyz","s":[0],"r":[128],"t":"domain"}
-{"d":"bt2.archive.org","s":[0],"r":[128],"t":"domain"}
+{"d":"021912.xyz","s":[0],"r":[128,218],"t":"domain"}
+{"d":"bt2.archive.org","s":[0],"r":[128,218],"t":"domain"}
 {"d":"dicmusic.club","s":[0],"r":[128],"t":"domain_suffix"}
 {"d":"(^|\\.)twav[1-9]\\.xyz$","s":[1,6],"r":[132],"t":"domain_regex"}
 {"d":"angelweb.jp","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -951,8 +951,8 @@
 {"d":"evise.com","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
 {"d":"ilangqu.com","s":[0,1],"r":[38,139],"t":"domain_suffix"}
 {"d":"qingmail.cn","s":[0],"r":[139],"t":"domain_suffix"}
-{"d":"stun.dls.net","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.nonoh.net","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.dls.net","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.nonoh.net","s":[0],"r":[148,224],"t":"domain"}
 {"d":"109.239.140.0/24","s":[0,6,7],"r":[150],"t":"ip_cidr"}
 {"d":"igtm.pub","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"qclouder.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

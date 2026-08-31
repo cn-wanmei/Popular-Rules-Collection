@@ -10,8 +10,8 @@
 | 项目 | 数值 |
 |------|------|
 | Domains | 111496 |
-| IP/CIDR | 9669 |
-| Mixed | 121165 |
+| IP/CIDR | 9670 |
+| Mixed | 121166 |
 | Sources | blackmatrix7, metacubex |
 | Updated | 2026-08-31 |
 

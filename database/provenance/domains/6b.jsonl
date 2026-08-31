@@ -925,8 +925,8 @@
 {"d":"zpv7v3olgl7el9b.rest","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"zqy0jcfipu.com","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"adobesign.com","s":[0,3,5,6],"r":[6,129],"t":"domain_suffix"}
-{"d":"prod-support.apple-support.akadns.net","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
-{"d":"weather-data.apple.com.akadns.net","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"prod-support.apple-support.akadns.net","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
+{"d":"weather-data.apple.com.akadns.net","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"cheapdrebeats8.net","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"itunesessentials.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"cdp.cloud.unity3d.com","s":[0,1,2,3,4,5],"r":[5,25,51],"t":"domain_suffix"}
@@ -951,7 +951,7 @@
 {"d":"tnt-ea.com","s":[0,3,5],"r":[62,129],"t":"domain_suffix"}
 {"d":"asebay.com","s":[0,3,5,6],"r":[63,129],"t":"domain_suffix"}
 {"d":"garena.my","s":[0,3,5],"r":[72,129],"t":"domain_suffix"}
-{"d":"safebrowsing.googleapis.com","s":[0,1,6],"r":[77],"t":"domain_suffix"}
+{"d":"safebrowsing.googleapis.com","s":[0,1,6],"r":[77,206],"t":"domain_suffix"}
 {"d":"pki.google.com","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
 {"d":"scholar.google.es","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
 {"d":"173.194.175.188/32","s":[0,7],"r":[78],"t":"ip_cidr"}
@@ -988,8 +988,8 @@
 {"d":"xn--x-qeu1ji09tzlg.biz","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"ukwhoswho.com","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
 {"d":"shopifystatus.com","s":[0,3,5,6],"r":[129,137],"t":"domain_suffix"}
-{"d":"stun.avigora.fr","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.it1.hr","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.avigora.fr","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.it1.hr","s":[0],"r":[148,224],"t":"domain"}
 {"d":"dcloudvod.net","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"zhihu.com","s":[0,1],"r":[38,182],"t":"domain_suffix"}
 {"d":"0593info.com","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}

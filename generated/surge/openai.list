@@ -47,9 +47,6 @@ DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,turn.livekit.cloud
-DOMAIN-SUFFIX,chat.openai.com.cdn.cloudflare.net
-DOMAIN-SUFFIX,openai-api.arkoselabs.com
-DOMAIN-SUFFIX,static.cloudflareinsights.com
 DOMAIN-KEYWORD,openai
 DOMAIN-REGEX,^chatgpt-async-webps-prod-\S+-\d+\.webpubsub\.azure\.com$
 IP-CIDR,24.199.123.28/32,no-resolve

@@ -63,7 +63,7 @@
 {"d":"ggbetapk.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"gjttaamibpysxadlgatx.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"goldbergcoins.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
-{"d":"googleoptimize.com","s":[0,1,2,3,4,5,6],"r":[3,4,5,77,129],"t":"domain_suffix"}
+{"d":"googleoptimize.com","s":[0,1,2,3,4,5,6],"r":[3,4,5,77,129,206],"t":"domain_suffix"}
 {"d":"gulftimetable.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"hillierbandala.qpon","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"hits.theguardian.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
@@ -930,7 +930,7 @@
 {"d":"adobeaemcloud.com","s":[0,3,5,6],"r":[6,129],"t":"domain_suffix"}
 {"d":"alikunlun.net","s":[0,1,6],"r":[11,12,38],"t":"domain_suffix"}
 {"d":"oss-cn-nanjing.aliyuncs.com","s":[0,1,6],"r":[11,12],"t":"domain_suffix"}
-{"d":"sh-pod2-smp-device.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"sh-pod2-smp-device.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"applestore.ph","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"appstore.my","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"crl-lb.apple.com.akadns.net","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
@@ -945,10 +945,10 @@
 {"d":"larkrooms.cn","s":[0,1,6],"r":[33],"t":"domain_suffix"}
 {"d":"volces.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
 {"d":"cloudflare.app","s":[0,1,3,5,6],"r":[43,129],"t":"domain_suffix"}
-{"d":"static.cloudflareinsights.com","s":[0,1,6],"r":[45,115],"t":"domain"}
+{"d":"static.cloudflareinsights.com","s":[0,1,6],"r":[45,115,196,215],"t":"domain"}
 {"d":"acebooik.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"facebookmanager.info","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
-{"d":"alt7-mtalk.google.com","s":[0,1,3,5,6,7],"r":[77,78,129],"t":"domain"}
+{"d":"alt7-mtalk.google.com","s":[0,1,3,5,6,7],"r":[77,78,129,207],"t":"domain"}
 {"d":"getbumptop.com","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
 {"d":"google.lu","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"google.sc","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
@@ -999,9 +999,9 @@
 {"d":"sciencedirect.com","s":[0,1,3,5,7],"r":[38,129,136],"t":"domain_suffix"}
 {"d":"wanfangdata.com.cn","s":[0,7],"r":[136],"t":"domain_suffix"}
 {"d":"valvesoftware.com","s":[0,3,5,6,7],"r":[129,146],"t":"domain_suffix"}
-{"d":"stun.muoversi.net","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.ppdi.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.siplogin.de","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.muoversi.net","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.ppdi.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.siplogin.de","s":[0],"r":[148,224],"t":"domain"}
 {"d":"telegram.dog","s":[0,3,5,6,7],"r":[74,129,150],"t":"domain_suffix"}
 {"d":"fyeds1.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"gcloudsdk.com","s":[0,1,2,3,4,5,6],"r":[5,38,151],"t":"domain_suffix"}

@@ -9,9 +9,9 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 16 |
+| Domains | 15 |
 | IP/CIDR | 11 |
-| Mixed | 27 |
+| Mixed | 26 |
 | Sources | blackmatrix7, metacubex, v2fly |
 | Updated | 2026-08-31 |
 

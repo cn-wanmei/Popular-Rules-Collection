@@ -928,7 +928,7 @@
 {"d":"elemecdn.cn","s":[0,1,6],"r":[11,64],"t":"domain_suffix"}
 {"d":"tmall.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"amazonaws.org","s":[0,1,3,5,6],"r":[15,21,129],"t":"domain_suffix"}
-{"d":"cds.apple.com.akadns.net","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"cds.apple.com.akadns.net","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"2drdrebeats.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"beatsmusic.wang","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"buyaapl.net","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -970,7 +970,7 @@
 {"d":"wiiugamepad.com","s":[0,3,5],"r":[111,129],"t":"domain_suffix"}
 {"d":"coloros.net","s":[0,1],"r":[38,116],"t":"domain_suffix"}
 {"d":"myoppo.com","s":[0,1],"r":[38,116],"t":"domain_suffix"}
-{"d":"tracker.gcrenwp.top","s":[0],"r":[128],"t":"domain"}
+{"d":"tracker.gcrenwp.top","s":[0],"r":[128,218],"t":"domain"}
 {"d":"(^|\\.)91wang[1-9]\\.com$","s":[1,6],"r":[132],"t":"domain_regex"}
 {"d":"(^|\\.)989[a-z]?\\.tv$","s":[1,6],"r":[132],"t":"domain_regex"}
 {"d":"bestialityvideo.us","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -991,8 +991,8 @@
 {"d":"topchats.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"webgirlsonline.net","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"signal.org","s":[1,3,5,6],"r":[74,129,138],"t":"domain_suffix"}
-{"d":"stun.splicecom.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.voicetrading.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.splicecom.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.voicetrading.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"2001:b28:f23c::/47","s":[0,6,7],"r":[150],"t":"ip_cidr6"}
 {"d":"yufuid.com.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"twitteroauth.com","s":[0,1,3,5,6],"r":[129,159],"t":"domain_suffix"}

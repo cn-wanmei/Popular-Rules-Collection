@@ -869,8 +869,8 @@
 {"d":"103.38.56.0/22","s":[0,1,6],"r":[11],"t":"ip_cidr"}
 {"d":"amazonwebservices.cn","s":[0,1,6],"r":[15,21],"t":"domain_suffix"}
 {"d":"llnwd.net","s":[0,1,3,5,6],"r":[15,127,129],"t":"domain_suffix"}
-{"d":"cl1.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
-{"d":"gspe12-cn-ssl.ls.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"cl1.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
+{"d":"gspe12-cn-ssl.ls.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"12diasdepresentesdeitunes.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"2013cheapestbeats.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"apple-pay.rs","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -902,7 +902,7 @@
 {"d":"office365.cn","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"haowu.link","s":[0,1],"r":[38,108],"t":"domain_suffix"}
 {"d":"nintendonetwork.net","s":[0,3,5],"r":[111,129],"t":"domain_suffix"}
-{"d":"tracker.yemekyedim.com","s":[0],"r":[128],"t":"domain"}
+{"d":"tracker.yemekyedim.com","s":[0],"r":[128,218],"t":"domain"}
 {"d":"69femdom.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"88manhua.top","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"alohatube.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -939,8 +939,8 @@
 {"d":"xxxgames.biz","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"uq.h5p.com","s":[0,7],"r":[136],"t":"domain_suffix"}
 {"d":"sohu.com","s":[0,1],"r":[38,142],"t":"domain_suffix"}
-{"d":"stun.sipgate.net","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.voipgate.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.sipgate.net","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.voipgate.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"usercontent.dev","s":[0,3,5,6,7],"r":[129,150],"t":"domain_suffix"}
 {"d":"eu-moscow.tencentcos.com","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"23.160.0.0/24","s":[0],"r":[158],"t":"ip_cidr"}

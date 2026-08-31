@@ -1,0 +1,95 @@
+{
+  "structural": [
+    {
+      "service": "openai",
+      "pass": true
+    },
+    {
+      "service": "github",
+      "pass": true
+    },
+    {
+      "service": "telegram",
+      "pass": true
+    },
+    {
+      "service": "apple",
+      "pass": true
+    },
+    {
+      "service": "google",
+      "pass": true
+    }
+  ],
+  "semantic": [
+    {
+      "service": "openai",
+      "pass": true,
+      "jaccard": 1.0,
+      "cover_classic": 1.0
+    },
+    {
+      "service": "github",
+      "pass": true,
+      "jaccard": 1.0,
+      "cover_classic": 1.0
+    },
+    {
+      "service": "telegram",
+      "pass": true,
+      "jaccard": 1.0,
+      "cover_classic": 1.0
+    },
+    {
+      "service": "apple",
+      "pass": true,
+      "jaccard": 1.0,
+      "cover_classic": 1.0
+    },
+    {
+      "service": "google",
+      "pass": true,
+      "jaccard": 1.0,
+      "cover_classic": 1.0
+    }
+  ],
+  "behavioral": [
+    {
+      "host": "chat.openai.com",
+      "service": "openai",
+      "expect_action": "PROXY",
+      "matched_in_ir": true,
+      "pass": true
+    },
+    {
+      "host": "api.github.com",
+      "service": "github",
+      "expect_action": "PROXY",
+      "matched_in_ir": true,
+      "pass": true
+    },
+    {
+      "host": "web.telegram.org",
+      "service": "telegram",
+      "expect_action": "PROXY",
+      "matched_in_ir": true,
+      "pass": true
+    },
+    {
+      "host": "apple.com",
+      "service": "apple",
+      "expect_action": "PROXY",
+      "matched_in_ir": true,
+      "pass": true
+    },
+    {
+      "host": "google.com",
+      "service": "google",
+      "expect_action": "PROXY",
+      "matched_in_ir": true,
+      "pass": true
+    }
+  ],
+  "hard_failures": 0,
+  "pass": true
+}

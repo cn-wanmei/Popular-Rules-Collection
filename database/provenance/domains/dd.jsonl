@@ -916,7 +916,7 @@
 {"d":"atl-paas.net","s":[0,3,5,6],"r":[20,129],"t":"domain_suffix"}
 {"d":"botframework.com","s":[0,1,3,5,6,7],"r":[22,51,105,129],"t":"domain_suffix"}
 {"d":"yjs-cdn8.com","s":[0,1,6],"r":[24,38],"t":"domain_suffix"}
-{"d":"vod-thumb-ww-live.akamaized.net","s":[0,3,5,7],"r":[26,129],"t":"domain"}
+{"d":"vod-thumb-ww-live.akamaized.net","s":[0,3,5,7],"r":[26,129,192],"t":"domain"}
 {"d":"byte-test.cn","s":[0,1,6],"r":[33],"t":"domain_suffix"}
 {"d":"cdn-build.net","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
 {"d":"dongchediapp.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
@@ -949,7 +949,7 @@
 {"d":"us-west-2.amazonaws.com","s":[0,1,6,7],"r":[109],"t":"domain_suffix"}
 {"d":"ekapay.cn","s":[0],"r":[123],"t":"domain_suffix"}
 {"d":"pinterest.ca","s":[0,3,5],"r":[74,124,129],"t":"domain_suffix"}
-{"d":"aboutbeautifulgallopinghorsesinthegreenpasture.online","s":[0],"r":[128],"t":"domain"}
+{"d":"aboutbeautifulgallopinghorsesinthegreenpasture.online","s":[0],"r":[128,218],"t":"domain"}
 {"d":"(^|\\.)syjc1[1-6]\\.xyz$","s":[1,6],"r":[132],"t":"domain_regex"}
 {"d":"3danimeworld.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"3naked.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -972,8 +972,8 @@
 {"d":"zoophilist.net","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"talldns.net","s":[0,1],"r":[38,139],"t":"domain_suffix"}
 {"d":"dota2.com.cn","s":[0,6,7],"r":[146],"t":"domain_suffix"}
-{"d":"stun.goldfish.ie","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.powervoip.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.goldfish.ie","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.powervoip.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"fyeds9.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"tcdlive.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"tdnsv6.net","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

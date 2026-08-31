@@ -892,7 +892,7 @@
 {"d":"oss-ap-southeast-7.aliyuncs.com","s":[0,1,6],"r":[11,12],"t":"domain_suffix"}
 {"d":"audible.com","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
 {"d":"images-fe.ssl-images-amazon.com","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
-{"d":"s5.mzstatic.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"s5.mzstatic.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"applemusicfestival.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"beatsdre.net","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"cheapheadsetshop.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -964,9 +964,9 @@
 {"d":"lolusercontent.com","s":[0,3,5],"r":[129,133],"t":"domain_suffix"}
 {"d":"b-ok.africa","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
 {"d":"steamchina.com","s":[0,6,7],"r":[146],"t":"domain_suffix"}
-{"d":"stun.eoni.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.freecall.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.l.google.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.eoni.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.freecall.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.l.google.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"anticheatexpert.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"nagcloudcs.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"qcloudsmartiot.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

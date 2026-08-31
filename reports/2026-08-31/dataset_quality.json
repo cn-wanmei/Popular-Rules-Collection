@@ -16,7 +16,7 @@
     "export ok generated/provider/cloudflare.txt",
     "provider dataset present: goog.txt count=152",
     "provider dataset present: oracle.txt count=1398",
-    "provider dataset present: aws.txt count=11145",
+    "provider dataset present: aws.txt count=11146",
     "provider dataset present: googlecloud.txt count=1154",
     "provider dataset present: cloudflare6.txt count=7",
     "provider dataset present: cloudflare.txt count=15",
@@ -28,18 +28,12 @@
     "binary ok: ASN.mmdb bytes=12079074",
     "binary ok: geoip-lite.dat bytes=207729",
     "binary ok: geoip.dat bytes=17224069",
-    "binary ok: geosite.dat bytes=4246547",
-    "new dataset: database/policies/overrides/force_direct.yaml count=4",
-    "new dataset: database/policies/overrides/force_proxy.yaml count=4",
-    "new dataset: database/policies/overrides/force_reject.yaml count=4",
-    "new dataset: database/policies/overrides/manifest.yaml count=10",
-    "new dataset: database/policies/reject/manifest.yaml count=16",
-    "new dataset: database/policies/reject/security.yaml count=9"
+    "binary ok: geosite.dat bytes=4246547"
   ],
   "counts": {
     "hard": 0,
     "warn": 0,
-    "info": 31
+    "info": 25
   },
   "thresholds": {
     "shrink_hard": 0.9,

@@ -952,7 +952,7 @@
 {"d":"amap.com","s":[0,1,6],"r":[11,14,38,71],"t":"domain_suffix"}
 {"d":"bazai.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"msg.youku.com","s":[0,1,2,3,4,5,6],"r":[5,11,179],"t":"domain_suffix"}
-{"d":"guzzoni.smoot.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"guzzoni.smoot.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"imac.gr","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"bytexns.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
 {"d":"huoshanstatic.com","s":[0,1,6,7],"r":[33,38,59],"t":"domain_suffix"}
@@ -967,7 +967,7 @@
 {"d":"easyanticheat.net","s":[0,3,5],"r":[67,129],"t":"domain_suffix"}
 {"d":"thefacebook.net","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"avatargarenanow-a.akamaihd.net","s":[0,3,5],"r":[72,129],"t":"domain_suffix"}
-{"d":"redirector.offline-maps.gvt1.com","s":[0,1,6],"r":[38,77],"t":"domain_suffix"}
+{"d":"redirector.offline-maps.gvt1.com","s":[0,1,6],"r":[38,77,206],"t":"domain_suffix"}
 {"d":"blogspot.com.uy","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"feedburner.com","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"googleusercontent.com","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
@@ -1012,9 +1012,9 @@
 {"d":"yourporn.sexy","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"zzdh.biz","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"routledgehandbooks.com","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
-{"d":"stun.axeos.nl","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.technosens.fr","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.yollacalls.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.axeos.nl","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.technosens.fr","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.yollacalls.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"ovscdns.net","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"tdnsv8.net","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"whatsapp","s":[0,1,6],"r":[170],"t":"domain_keyword"}

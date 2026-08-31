@@ -959,7 +959,7 @@
 {"d":"amazonchoice.cn","s":[0,1,6],"r":[15],"t":"domain_suffix"}
 {"d":"amazondevicesupport.com","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
 {"d":"images-amazon.com","s":[0,1,3,5,6],"r":[15,38,129],"t":"domain_suffix"}
-{"d":"s2.mzstatic.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"s2.mzstatic.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"apple.cn","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
 {"d":"applewatch.tw","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"applewatchsport.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -983,7 +983,7 @@
 {"d":"fbsbx.net","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"groups.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"online-deals.net","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
-{"d":"staging.databe.floonet.goog","s":[0,1,6],"r":[38,77],"t":"domain_suffix"}
+{"d":"staging.databe.floonet.goog","s":[0,1,6],"r":[38,77,206],"t":"domain_suffix"}
 {"d":"google.es","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"googlearth.com","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"hbonow.com","s":[0,3,5],"r":[81,129],"t":"domain_suffix"}
@@ -994,7 +994,7 @@
 {"d":"duolabao.com","s":[0,1],"r":[38,94],"t":"domain_suffix"}
 {"d":"56nb6oo06g.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"iotmrvr.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
-{"d":"officecdn.microsoft.com","s":[0,1,6,7],"r":[38,105],"t":"domain_suffix"}
+{"d":"officecdn.microsoft.com","s":[0,1,6,7],"r":[38,105,211],"t":"domain_suffix"}
 {"d":"bing.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"msappproxy.net","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"msft.info","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
@@ -1005,7 +1005,7 @@
 {"d":"pokemon-sunmoon.com","s":[0,3,5],"r":[111,129],"t":"domain_suffix"}
 {"d":"oppo.mobi","s":[0,1],"r":[38,116],"t":"domain_suffix"}
 {"d":"paypal-redeem.com","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
-{"d":"tracker.manager.v6.navy","s":[0],"r":[128],"t":"domain"}
+{"d":"tracker.manager.v6.navy","s":[0],"r":[128,218],"t":"domain"}
 {"d":"(^|\\.)supxxx[0-9]{0,2}\\.com$","s":[1,6],"r":[132],"t":"domain_regex"}
 {"d":"anime-tube.pw","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"biaoqs.xyz","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -1037,7 +1037,7 @@
 {"d":"senderline.net","s":[0,1],"r":[38,139],"t":"domain_suffix"}
 {"d":"pinyin.cn","s":[0,1,6],"r":[142,151],"t":"domain_suffix"}
 {"d":"csgo.wmsj.cn","s":[0,6,7],"r":[146],"t":"domain_suffix"}
-{"d":"stun.actionvoip.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.actionvoip.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"adslvseed.qq.com","s":[0,1,2,3,4,5,6],"r":[5,151],"t":"domain_suffix"}
 {"d":"dnse5.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"tencentcloudclub.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

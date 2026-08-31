@@ -15,9 +15,9 @@ generated_files:
   domain: telegram_domain.list
   ip: telegram_ip.list
 statistics:
-  domains: 27
+  domains: 25
   ipv4_or_cidr: 22
-  mixed: 49
+  mixed: 47
 sources:
 - blackmatrix7
 - v2fly

@@ -15,9 +15,9 @@ generated_files:
   domain: whatsapp_domain.list
   ip: whatsapp_ip.list
 statistics:
-  domains: 16
+  domains: 15
   ipv4_or_cidr: 11
-  mixed: 27
+  mixed: 26
 sources:
 - blackmatrix7
 - metacubex

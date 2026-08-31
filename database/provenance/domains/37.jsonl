@@ -937,7 +937,7 @@
 {"d":"saee.org.cn","s":[0,1,6],"r":[11],"t":"domain_suffix"}
 {"d":"amazonliterarypartnership.com","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
 {"d":"gdansk-amazon.com","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
-{"d":"discussionschinese.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"discussionschinese.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"apple.eu","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"apple.ie","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"apple.tw","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -964,7 +964,7 @@
 {"d":"cloudflare.pay","s":[0,1,3,5,6],"r":[43,129],"t":"domain_suffix"}
 {"d":"ctripteam.com","s":[0,1],"r":[38,46],"t":"domain_suffix"}
 {"d":"github1s.com","s":[0,1,3,5],"r":[51,129],"t":"domain_suffix"}
-{"d":"productionresultssa15.blob.core.windows.net","s":[0,1,3,5,6,7],"r":[51,75,105,129],"t":"domain_suffix"}
+{"d":"productionresultssa15.blob.core.windows.net","s":[0,1,3,5,6,7],"r":[51,75,105,129,205,211],"t":"domain_suffix"}
 {"d":"ubuntuforums.org","s":[0,1,3,5],"r":[51,129],"t":"domain_suffix"}
 {"d":"giftatdw.com","s":[1],"r":[52],"t":"domain_suffix"}
 {"d":"discord.gg","s":[0,3,5,6,7],"r":[55,74,129],"t":"domain_suffix"}
@@ -1016,8 +1016,8 @@
 {"d":"yoyoav.net","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"leagueoflegends.net","s":[0,3,5],"r":[129,133],"t":"domain_suffix"}
 {"d":"sinaimg.com","s":[0,1],"r":[38,139],"t":"domain_suffix"}
-{"d":"stun.acquageraci.it","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.var6.cn","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.acquageraci.it","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.var6.cn","s":[0],"r":[148,224],"t":"domain"}
 {"d":"ap-bangkok.tencentcos.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"goto-game.net.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"pb.i.sogou.com","s":[0,1,2,3,4,5,6],"r":[5,151],"t":"domain_suffix"}

@@ -894,7 +894,7 @@
 {"d":"alibabaplanet.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"myquark.cn","s":[0,1,6],"r":[11],"t":"domain_suffix"}
 {"d":"amazon.com.co","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
-{"d":"smp-device-content.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"smp-device-content.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"beats1.tv","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"custombeatsforcheap.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"dremonsterbeatsoutlets.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -904,7 +904,7 @@
 {"d":"azureprivatedns.cn","s":[0,1,6,7],"r":[22,105],"t":"domain_suffix"}
 {"d":"windowsazure.com","s":[0,1,3,5,6,7],"r":[22,105,129],"t":"domain_suffix"}
 {"d":"zuoyebang.com","s":[0,1,6],"r":[24,38],"t":"domain_suffix"}
-{"d":"1gr4uqmtt8y41hcjigazdqco.ourdvsss.com","s":[0,1,6,7],"r":[27],"t":"domain"}
+{"d":"1gr4uqmtt8y41hcjigazdqco.ourdvsss.com","s":[0,1,6,7],"r":[27,193],"t":"domain"}
 {"d":"ifeilian.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
 {"d":"panplayable-toutiao-b.com","s":[0,1,2,3,4,5,6],"r":[5,33],"t":"domain_suffix"}
 {"d":"ycy100.cn","s":[0],"r":[40],"t":"domain_suffix"}
@@ -968,8 +968,8 @@
 {"d":"xxxpornotuber.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"yaoiotaku.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"zlibcdn.com","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
-{"d":"stun.signalwire.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.sparvoip.de","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.signalwire.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.sparvoip.de","s":[0],"r":[148,224],"t":"domain"}
 {"d":"dnsapi.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"tencenttid.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"vercel.com","s":[0,3,5],"r":[129,163],"t":"domain_suffix"}

@@ -868,9 +868,9 @@
 {"d":"zxcpt.com","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"marketing-nirvana.com","s":[0,3,5,6],"r":[6,129],"t":"domain_suffix"}
 {"d":"scene7.com","s":[0,3,5,6],"r":[6,129],"t":"domain_suffix"}
-{"d":"images.workoscdn.com","s":[7],"r":[9],"t":"domain"}
+{"d":"images.workoscdn.com","s":[7],"r":[9,185],"t":"domain"}
 {"d":"42.120.0.0/16","s":[0,1,6],"r":[11],"t":"ip_cidr"}
-{"d":"appldnld.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"appldnld.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"apple.dk","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"applemusic.co","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"applenews.hamburg","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -887,7 +887,7 @@
 {"d":"ebasset.com","s":[0,1],"r":[37,38],"t":"domain_suffix"}
 {"d":"cloudflareapps.com","s":[0,1,3,5,6],"r":[43,129],"t":"domain_suffix"}
 {"d":"fedoraproject.org","s":[0,1,3,5],"r":[51,129],"t":"domain_suffix"}
-{"d":"github-production-upload-manifest-file-7fdce7.s3.amazonaws.com","s":[0,1,3,5,6,7],"r":[51,75,105,129],"t":"domain_suffix"}
+{"d":"github-production-upload-manifest-file-7fdce7.s3.amazonaws.com","s":[0,1,3,5,6,7],"r":[51,75,105,129,205,211],"t":"domain_suffix"}
 {"d":"mcrouter.org","s":[0,1,3,5,6],"r":[51,68,129],"t":"domain_suffix"}
 {"d":"mochajs.org","s":[0,1,3,5],"r":[51,129],"t":"domain_suffix"}
 {"d":"dewuhd.cn","s":[1],"r":[52],"t":"domain_suffix"}
@@ -906,7 +906,7 @@
 {"d":"1.201.0.0/24","s":[0],"r":[95],"t":"ip_cidr"}
 {"d":"92oz46nne1.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"goxytrbz.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
-{"d":"lex.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105],"t":"domain_suffix"}
+{"d":"lex.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105,211],"t":"domain_suffix"}
 {"d":"microsoft.eu","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"microsoftstore.com.hk","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"beibao.com","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
@@ -936,8 +936,8 @@
 {"d":"lolshop.co.kr","s":[0,3,5],"r":[129,133],"t":"domain_suffix"}
 {"d":"3lib.net","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
 {"d":"sinaurl.cn","s":[0],"r":[139],"t":"domain_suffix"}
-{"d":"stun.carlovizzini.it","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.h4v.eu","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.carlovizzini.it","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.h4v.eu","s":[0],"r":[148,224],"t":"domain"}
 {"d":"196.55.216.167/32","s":[0,6,7],"r":[150],"t":"ip_cidr"}
 {"d":"cdnv2.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"eu-moscow.tencentcos.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}

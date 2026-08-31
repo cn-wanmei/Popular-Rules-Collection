@@ -1,0 +1,4787 @@
+{
+  "exact_hosts": 1090,
+  "suffix_hosts": 249926,
+  "exact_also_suffix": 459,
+  "samples": [
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "fbcdn-a.akamaihd.net",
+      "exact_services": [
+        "facebook"
+      ],
+      "suffix_services": [
+        "facebook"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "netflix.com.edgesuite.net",
+      "exact_services": [
+        "netflix"
+      ],
+      "suffix_services": [
+        "netflix"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "stun.hitv.com",
+      "exact_services": [
+        "stun"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "ppl-ai-file-upload.s3.amazonaws.com",
+      "exact_services": [
+        "perplexity"
+      ],
+      "suffix_services": [
+        "ai",
+        "perplexity"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "pplx-res.cloudinary.com",
+      "exact_services": [
+        "perplexity"
+      ],
+      "suffix_services": [
+        "ai",
+        "perplexity"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "linkedin.sc.omtrdc.net",
+      "exact_services": [
+        "linkedin"
+      ],
+      "suffix_services": [
+        "adblock-pro"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "yt3.googleusercontent.com",
+      "exact_services": [
+        "google",
+        "youtube"
+      ],
+      "suffix_services": [
+        "google",
+        "youtube"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "aod-ssl.itunes.apple.com",
+      "exact_services": [
+        "applemusic"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "aod.itunes.apple.com",
+      "exact_services": [
+        "applemusic"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "audio-ssl.itunes.apple.com",
+      "exact_services": [
+        "applemusic"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "audio.itunes.apple.com",
+      "exact_services": [
+        "applemusic"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "mvod.itunes.apple.com",
+      "exact_services": [
+        "applemusic"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "streamingaudio.itunes.apple.com",
+      "exact_services": [
+        "applemusic"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "wetv.qq.com",
+      "exact_services": [
+        "tencent",
+        "wetv"
+      ],
+      "suffix_services": [
+        "tencent"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "p16-tiktokcdn-com.akamaized.net",
+      "exact_services": [
+        "bytedance",
+        "tiktok"
+      ],
+      "suffix_services": [
+        "bytedance",
+        "tiktok"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "roovza-launches.appsflyersdk.com",
+      "exact_services": [
+        "bytedance",
+        "tiktok"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "bytedance",
+        "tiktok"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "roovza.inapps.appsflyersdk.com",
+      "exact_services": [
+        "bytedance",
+        "tiktok"
+      ],
+      "suffix_services": [
+        "bytedance",
+        "tiktok"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "roovza.launches.appsflyersdk.com",
+      "exact_services": [
+        "bytedance",
+        "tiktok"
+      ],
+      "suffix_services": [
+        "bytedance",
+        "tiktok"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "roovza.skadsdk.appsflyersdk.com",
+      "exact_services": [
+        "bytedance",
+        "tiktok"
+      ],
+      "suffix_services": [
+        "bytedance",
+        "tiktok"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "http-inputs-notion.splunkcloud.com",
+      "exact_services": [
+        "notion"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "ai.google.dev",
+      "exact_services": [
+        "aisuite",
+        "gemini"
+      ],
+      "suffix_services": [
+        "ai",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "alkalimakersuite-pa.clients6.google.com",
+      "exact_services": [
+        "gemini"
+      ],
+      "suffix_services": [
+        "ai",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "makersuite.google.com",
+      "exact_services": [
+        "gemini"
+      ],
+      "suffix_services": [
+        "ai",
+        "aisuite"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "a1.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "a2.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "a3.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "a4.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "a5.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "adcdownload.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "adcdownload.apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "amp-api-edge.apps.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "amp-api-search-edge.apps.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "amp-api-updates.apps.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "amp-api.apps.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "aisuite",
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "amp-api.media.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "api-edge.apps.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "app-site-association.cdn-apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "appldnld.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "appldnld.g.aaplimg.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple",
+        "developer"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "appleid.cdn-apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "apps.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cds-cdn.v.aaplimg.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cds.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cds.apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cdsassets.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cl1-cdn.origin-apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cl1.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cl2-cdn.origin-apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cl2-cn.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cl2.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cl2.apple.com.edgekey.net.globalredir.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cl3-cdn.origin-apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cl3.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cl4-cdn.origin-apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cl4-cn.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cl4.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cl5-cdn.origin-apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cl5.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "clientflow.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "clientflow.apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cn-smp-paymentservices.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "communities.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "configuration-lb.ls-apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "configuration.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "configuration.apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cstat.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cstat.cdn-apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "dd-cdn.origin-apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "dejavu.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "devimages-cdn.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple",
+        "developer"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "devstreaming-cdn.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple",
+        "developer"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "discussionschinese.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "download.developer.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "experiments.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "adblock-pro",
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "fides-pol.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gs-loc-cn.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gs-loc.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gsp10-ssl-cn.ls.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gsp11-cn.ls.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gsp12-cn.ls.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gsp13-cn.ls.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gsp4-cn.ls.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gsp5-cn.ls.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gsp85-cn-ssl.ls.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gspe1-ssl.ls.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "aisuite"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gspe11-2-cn-ssl.ls.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gspe12-cn-ssl.ls.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gspe19-2-cn-ssl.ls-apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gspe19-2-cn-ssl.ls.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gspe19-cn-ssl.ls.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gspe19-cn.ls-apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gspe19-cn.ls.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gspe21-ssl.ls.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gspe35-ssl.ls.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gspe79-cn-ssl.ls.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gspe85-cn-ssl.ls.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "guzzoni-apple-com.v.aaplimg.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "guzzoni.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "aisuite",
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "guzzoni.smoot.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "images.apple.com.edgekey.net.globalredir.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "init-kt.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "init-p01md-lb.push-apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "init-p01md.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "init-p01st-lb.push-apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "init-p01st.push.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "init-s01st-lb.push-apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "init-s01st.push.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "init.ess.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "init.gc-lb.apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "init.gc.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "ipcdn.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "iphone-ld.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "iphone-ld.origin-apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "is1-ssl.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "is1.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "is2-ssl.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "is2.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "is3-ssl.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "is3.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "is4-ssl.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "is4.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "is5-ssl.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "is5.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "itunes.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "km.support.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "maps.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "mensura.cdn-apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "mesu-cdn.apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "mesu-china.apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "mesu.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "ml.cdn-apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "oscdn.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "oscdn.origin-apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "pancake.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "pba0.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "probe.siri.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "prod-support.apple-support.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "publicassets.cdn-apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "push-apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple",
+        "developer"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "s.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "s1.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "s2.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "s3.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "s4.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "s5.mzstatic.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "seed-sequoia.siri.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "seed-swallow.siri.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "seed.siri.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "sequoia.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "sh-pod2-smp-device.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "shazam-insights.cdn-apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "smp-device-content.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "static.gc.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "stocks-sparkline-lb.apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "stocks-sparkline.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "store.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "store.apple.com.edgekey.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "store.apple.com.edgekey.net.globalredir.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "store.storeimages.apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "store.storeimages.cdn-apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "support-china.apple-support.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "support.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "swallow-apple-com.v.aaplimg.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "swallow.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "swcatalog-cdn.apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "swcatalog.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "swcdn.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "swcdn.g.aaplimg.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "swdist.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "swdist.apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "swscan-cdn.apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "swscan.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "sylvan.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "tj-pod1-smp-device.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "tj-pod2-smp-device.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "tj-pod3-smp-device.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "updates-http.cdn-apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "updates-http.cdn-apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "updates.cdn-apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "aisuite",
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "weather-data.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "weather-data.apple.com.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "weather-map.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "weather-map2.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "weatherkit.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "www-cdn.icloud.com.akadns.net",
+      "exact_services": [
+        "apple",
+        "icloud"
+      ],
+      "suffix_services": [
+        "apple",
+        "icloud"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "www.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "www.apple.com.edgekey.net.globalredir.akadns.net",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "www.support.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "xp.apple.com",
+      "exact_services": [
+        "apple"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "api.statsig.com",
+      "exact_services": [
+        "copilot"
+      ],
+      "suffix_services": [
+        "openai"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "browser-intake-datadoghq.com",
+      "exact_services": [
+        "copilot",
+        "openai"
+      ],
+      "suffix_services": [
+        "adblock-pro",
+        "ai",
+        "openai"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "copilot.microsoft.com",
+      "exact_services": [
+        "aisuite",
+        "copilot"
+      ],
+      "suffix_services": [
+        "ai"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "in.appcenter.ms",
+      "exact_services": [
+        "copilot"
+      ],
+      "suffix_services": [
+        "adblock-pro"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "location.microsoft.com",
+      "exact_services": [
+        "copilot"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "openaicomproductionae4b.blob.core.windows.net",
+      "exact_services": [
+        "aisuite",
+        "copilot",
+        "openai"
+      ],
+      "suffix_services": [
+        "ai",
+        "openai"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "production-openaicom-storage.azureedge.net",
+      "exact_services": [
+        "aisuite",
+        "copilot",
+        "openai"
+      ],
+      "suffix_services": [
+        "ai",
+        "openai"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "r.bing.com",
+      "exact_services": [
+        "copilot"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "docker-images-prod.6aa30f8b08e16409b46e0173d6de2f56.r2.cloudflarestorage.com",
+      "exact_services": [
+        "docker"
+      ],
+      "suffix_services": [
+        "developer",
+        "docker"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "docker-pinata-support.s3.amazonaws.com",
+      "exact_services": [
+        "docker"
+      ],
+      "suffix_services": [
+        "developer",
+        "docker"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "images-cn-8.ssl-images-amazon.com",
+      "exact_services": [
+        "amazon"
+      ],
+      "suffix_services": [
+        "amazon"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "images-cn.ssl-images-amazon.com",
+      "exact_services": [
+        "amazon"
+      ],
+      "suffix_services": [
+        "amazon"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "discord-attachments-uploads-prd.storage.googleapis.com",
+      "exact_services": [
+        "discord"
+      ],
+      "suffix_services": [
+        "discord"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "hammerandchisel.ssl.zendesk.com",
+      "exact_services": [
+        "discord"
+      ],
+      "suffix_services": [
+        "discord"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "github-api.arkoselabs.com",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "github-cloud.s3.amazonaws.com",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "github-production-release-asset-2e65be.s3.amazonaws.com",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "github-production-repository-file-5c1aeb.s3.amazonaws.com",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "github-production-repository-image-32fea6.s3.amazonaws.com",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "github-production-upload-manifest-file-7fdce7.s3.amazonaws.com",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "github-production-user-asset-6210df.s3.amazonaws.com",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa0.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa1.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa10.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa11.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa12.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa13.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa14.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa15.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa16.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa17.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa18.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa19.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa2.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa3.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa4.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa5.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa6.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa7.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa8.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "productionresultssa9.blob.core.windows.net",
+      "exact_services": [
+        "github",
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "github",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "anime-rule34-world.b-cdn.net",
+      "exact_services": [
+        "restricted"
+      ],
+      "suffix_services": [
+        "restricted"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "apd-pcdnvodstat.teg.tencent-cloud.net",
+      "exact_services": [
+        "tencentvideo"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "rdelivery.qq.com",
+      "exact_services": [
+        "tencentvideo"
+      ],
+      "suffix_services": [
+        "adblock-pro"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "servd-anthropic-website.b-cdn.net",
+      "exact_services": [
+        "anthropic"
+      ],
+      "suffix_services": [
+        "ai",
+        "anthropic"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "alkalicore-pa.clients6.google.com",
+      "exact_services": [
+        "aisuite"
+      ],
+      "suffix_services": [
+        "ai",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "challenges.cloudflare.com",
+      "exact_services": [
+        "aisuite"
+      ],
+      "suffix_services": [
+        "copilot"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gateway.ai.cloudflare.com",
+      "exact_services": [
+        "aisuite"
+      ],
+      "suffix_services": [
+        "ai"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "o33249.ingest.sentry.io",
+      "exact_services": [
+        "aisuite",
+        "openai"
+      ],
+      "suffix_services": [
+        "ai",
+        "openai"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "openaiapi-site.azureedge.net",
+      "exact_services": [
+        "aisuite",
+        "openai"
+      ],
+      "suffix_services": [
+        "ai",
+        "copilot",
+        "openai"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net",
+      "exact_services": [
+        "aisuite",
+        "openai"
+      ],
+      "suffix_services": [
+        "ai",
+        "openai"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "f3b7q2p3.ssl.hwcdn.net",
+      "exact_services": [
+        "steam"
+      ],
+      "suffix_services": [
+        "steam"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "steambroadcast.akamaized.net",
+      "exact_services": [
+        "steam"
+      ],
+      "suffix_services": [
+        "steam"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "steamcdn-a.akamaihd.net",
+      "exact_services": [
+        "steam"
+      ],
+      "suffix_services": [
+        "steam"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "steamcommunity-a.akamaihd.net",
+      "exact_services": [
+        "steam"
+      ],
+      "suffix_services": [
+        "steam"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "steammobile.akamaized.net",
+      "exact_services": [
+        "steam"
+      ],
+      "suffix_services": [
+        "steam"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "steampipe-kr.akamaized.net",
+      "exact_services": [
+        "steam"
+      ],
+      "suffix_services": [
+        "steam"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "steampipe-partner.akamaized.net",
+      "exact_services": [
+        "steam"
+      ],
+      "suffix_services": [
+        "steam"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "steampipe.akamaized.net",
+      "exact_services": [
+        "steam"
+      ],
+      "suffix_services": [
+        "steam"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "steamstore-a.akamaihd.net",
+      "exact_services": [
+        "steam"
+      ],
+      "suffix_services": [
+        "steam"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "steamusercontent-a.akamaihd.net",
+      "exact_services": [
+        "steam"
+      ],
+      "suffix_services": [
+        "steam"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "steamuserimages-a.akamaihd.net",
+      "exact_services": [
+        "steam"
+      ],
+      "suffix_services": [
+        "steam"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "steamvideo-a.akamaihd.net",
+      "exact_services": [
+        "steam"
+      ],
+      "suffix_services": [
+        "steam"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "hls-amt.itunes.apple.com",
+      "exact_services": [
+        "appletv"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "hls.itunes.apple.com",
+      "exact_services": [
+        "appletv"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "np-edge.itunes.apple.com",
+      "exact_services": [
+        "appletv"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "play-edge.itunes.apple.com",
+      "exact_services": [
+        "appletv"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "tv.applemusic.com",
+      "exact_services": [
+        "appletv"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "uts-api.itunes.apple.com",
+      "exact_services": [
+        "appletv"
+      ],
+      "suffix_services": [
+        "apple"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "openai.qualtrics.com",
+      "exact_services": [
+        "openai"
+      ],
+      "suffix_services": [
+        "adblock-pro",
+        "ai",
+        "openai"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "openaiassets.blob.core.windows.net",
+      "exact_services": [
+        "openai"
+      ],
+      "suffix_services": [
+        "ai",
+        "openai"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "openaicom.imgix.net",
+      "exact_services": [
+        "openai"
+      ],
+      "suffix_services": [
+        "ai",
+        "copilot",
+        "openai"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cdn.usefathom.com",
+      "exact_services": [
+        "claude"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "azuremigrate.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "azuremigratetest.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "azurestackhub.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "azurestackhubuat.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "b.c2r.ts.cdn.office.net",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cbdstest.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cn.windowssearch.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "collaborate.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "collaborateppe.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "ctldl.windowsupdate.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "developer.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "download.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "dreamspark.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "dreamsparkuat.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "f.c2r.ts.cdn.office.net",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "img-prod-cms-rt-microsoft-com.akamaized.net",
+      "exact_services": [
+        "microsoft",
+        "xbox"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "img-s-msn-com.akamaized.net",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "itacademy.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "itacademyuat.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "lex.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "lexuat.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "mbs.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "mpnbenefits.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "mpnbenefitsrtl.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "mpnbenefitsrtluat.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "msdn.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "msdprod-ad.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "msproduct.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "mwf-service.akamaized.net",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "myvs.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "oemsoc.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "oemsocuat.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "officecdn-microsoft-com.akamaized.net",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "officecdn.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "officemkt.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "officemktuat.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "osrelease.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "rsm.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "sdx.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "shell.cdn.office.net",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "software.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "statics-marketingsites-eas-ms-com.akamaized.net",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "statics-marketingsites-eus-ms-com.akamaized.net",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "statics-marketingsites-wcus-ms-com.akamaized.net",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "statics.teams.cdn.office.net",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "storecorefulfillment.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "storeedge.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "storeedgefd.dsx.mp.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "surface.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "surface.downloads.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "vlportal.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "volic.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "vscode.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "vsmarketplacebadge.apphb.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "developer",
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "vz.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "windbg.download.prss.microsoft.com",
+      "exact_services": [
+        "microsoft"
+      ],
+      "suffix_services": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "upos-hz-mirrorakam.akamaized.net",
+      "exact_services": [
+        "bilibili"
+      ],
+      "suffix_services": [
+        "bilibili"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "alt1-mtalk.google.com",
+      "exact_services": [
+        "googlefcm"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "alt2-mtalk.google.com",
+      "exact_services": [
+        "googlefcm"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "alt3-mtalk.google.com",
+      "exact_services": [
+        "googlefcm"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "alt4-mtalk.google.com",
+      "exact_services": [
+        "googlefcm"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "alt5-mtalk.google.com",
+      "exact_services": [
+        "googlefcm"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "alt6-mtalk.google.com",
+      "exact_services": [
+        "googlefcm"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "alt7-mtalk.google.com",
+      "exact_services": [
+        "googlefcm"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "alt8-mtalk.google.com",
+      "exact_services": [
+        "googlefcm"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "firebaseinstallations.googleapis.com",
+      "exact_services": [
+        "googlefcm"
+      ],
+      "suffix_services": [
+        "developer",
+        "firebase",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "mtalk-dev.google.com",
+      "exact_services": [
+        "googlefcm"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "mtalk-staging.google.com",
+      "exact_services": [
+        "googlefcm"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "mtalk.google.com",
+      "exact_services": [
+        "googlefcm"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "mtalk4.google.com",
+      "exact_services": [
+        "googlefcm"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "d1unuk07s6td74.cloudfront.net",
+      "exact_services": [
+        "roblox"
+      ],
+      "suffix_services": [
+        "roblox"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "roblox-load-generator-configuration.s3.us-east-2.amazonaws.com",
+      "exact_services": [
+        "roblox"
+      ],
+      "suffix_services": [
+        "roblox"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "roblox-poc.global.ssl.fastly.net",
+      "exact_services": [
+        "roblox"
+      ],
+      "suffix_services": [
+        "roblox"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "robloxcorp.s.llnwi.net",
+      "exact_services": [
+        "roblox"
+      ],
+      "suffix_services": [
+        "roblox"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "teams.events.data.microsoft.com",
+      "exact_services": [
+        "teams"
+      ],
+      "suffix_services": [
+        "adblock-pro"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "scholar.google.com",
+      "exact_services": [
+        "scholar"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "2mdn-cn.net",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "2mdn.net",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "admob-cn.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "adservice.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "analytics.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "app-analytics-services.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "app-measurement-cn.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "app-measurement.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "apps5.oingo.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "avail.googleflights.net",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "beacons.gcp.gvt2.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "beacons.gvt2.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "beacons2.gvt2.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "beacons3.gvt2.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "c.admob.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "c.android.clients.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cache-management-prod.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cache.pack.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "checkin.gstatic.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "clickserve.cc-dt.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "clickserve.dartsearch.net",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "clickserver.googleads.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "clientservices.googleapis.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "cn.widevine.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "connectivitycheck.gstatic.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "csi.gstatic.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "dartsearch-cn.net",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "dg-meta.video.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "dl.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "dl.l.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "doubleclick-cn.net",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "doubleclick.net",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "download.mlcc.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "download.tensorflow.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "fontfiles.googleapis.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "fonts.googleapis.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "fonts.gstatic.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "g0.gstatic.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "g1.gstatic.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "g2.gstatic.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "g3.gstatic.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gonglchuangl.net",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gongyichuangyi.net",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "google-analytics-cn.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "google-analytics.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "google-ohttp-relay-safebrowsing.fastly-edge.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "googleadservices-cn.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "googleadservices.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "googleanalytics.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "googleapis-cn.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "googleapps-cn.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "googleflights-cn.net",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "googleoptimize-cn.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "googleoptimize.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "googlesyndication-cn.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "googlesyndication.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "googletagmanager-cn.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "googletagmanager.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "googletagservices-cn.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "googletagservices.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "googletraveladservices-cn.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "googletraveladservices.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "googlevads-cn.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gstatic-cn.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gstaticadssl.l.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "gtm.oasisfeng.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "imasdk.googleapis.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "pagead-googlehosted.l.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "performanceparameters.googleapis.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "prod-controlbe.floonet.goog",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "prod-databe.floonet.goog",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "prod.databe.floonet.goog",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "qiao-cn.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "qpx.googleflights.net",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "recaptcha-cn.net",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "recaptcha.net",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "redirector.bdn.dev",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "redirector.c.chat.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "redirector.c.mail.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "redirector.c.pack.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "redirector.c.youtubeeducation.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "redirector.gcpcdn.gvt1.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "redirector.gvt1.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "redirector.offline-maps.gvt1.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "redirector.snap.gvt1.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "redirector.xn--ngstr-lra8j.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "safebrowsing-cache.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "safebrowsing.googleapis.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "service.urchin.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "ssl-google-analytics.l.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "ssl.gstatic.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "staging-controlbe.floonet.goog",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "staging-databe.floonet.goog",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "staging.databe.floonet.goog",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "tac.googleapis.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "tools.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "update.googleapis.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "wear.googleapis.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "www-google-analytics.l.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "adblock-pro",
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "www-googletagmanager.l.google.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "www.destinationurl.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "www.gstatic.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "www.pxcc.com",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "www.recaptcha-cn.net",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "www.recaptcha.net",
+      "exact_services": [
+        "google"
+      ],
+      "suffix_services": [
+        "google"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "adeventtracker.spotify.com",
+      "exact_services": [
+        "spotify"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "audio-ak-spotify-com.akamaized.net",
+      "exact_services": [
+        "spotify"
+      ],
+      "suffix_services": [
+        "spotify"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "bloodhound.spotify.com",
+      "exact_services": [
+        "spotify"
+      ],
+      "suffix_services": [
+        "adblock-pro"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "heads4-ak-spotify-com.akamaized.net",
+      "exact_services": [
+        "spotify"
+      ],
+      "suffix_services": [
+        "spotify"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "bytedance.map.fastly.net",
+      "exact_services": [
+        "bytedance"
+      ],
+      "suffix_services": [
+        "bytedance"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "apd-pcdnwxlogin.teg.tencent-cloud.net",
+      "exact_services": [
+        "wechat"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "btrace.qq.com",
+      "exact_services": [
+        "wechat"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro",
+        "tencent"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "soup.v.qq.com",
+      "exact_services": [
+        "wechat"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "wup.imtt.qq.com",
+      "exact_services": [
+        "wechat"
+      ],
+      "suffix_services": [
+        "adblock-light",
+        "adblock-pro"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "d1v5ir2lpwr8os.cloudfront.net",
+      "exact_services": [
+        "primevideo"
+      ],
+      "suffix_services": [
+        "amazon"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "d22qjgkvxw22r6.cloudfront.net",
+      "exact_services": [
+        "primevideo"
+      ],
+      "suffix_services": [
+        "amazon"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "d25xi40x97liuc.cloudfront.net",
+      "exact_services": [
+        "primevideo"
+      ],
+      "suffix_services": [
+        "amazon"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "d27xxe7juh1us6.cloudfront.net",
+      "exact_services": [
+        "primevideo"
+      ],
+      "suffix_services": [
+        "amazon"
+      ]
+    },
+    {
+      "kind": "EXACT_ALSO_SUFFIX",
+      "value": "dmqdd6hw24ucf.cloudfront.net",
+      "exact_services": [
+        "primevideo"
+      ],
+      "suffix_services": [
+        "amazon"
+      ]
+    }
+  ]
+}

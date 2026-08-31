@@ -1,0 +1,493 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-31T14:46:56.126670+00:00",
+  "truth_layer": "artifact_manifest",
+  "distribution_note": "Release is carrier only",
+  "layout_version": 1,
+  "artifact_count": 77,
+  "artifacts": [
+    {
+      "path": "generated/routing/decisions.jsonl",
+      "bytes": 18133311,
+      "sha256": "8239df4b1eeb0c714972963a6419c8ea0b72db1dbde1b7410680a1ae5355ce61",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-29/datasets/dat-geoip.bin",
+      "bytes": 17224069,
+      "sha256": "0d5d2ba0c5a5c58027fd1347a6afd57c9470799b6bb3cbc274fd4657ed8de382",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-30/datasets/dat-geoip.bin",
+      "bytes": 17224069,
+      "sha256": "0d5d2ba0c5a5c58027fd1347a6afd57c9470799b6bb3cbc274fd4657ed8de382",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-31/datasets/dat-geoip.bin",
+      "bytes": 17224069,
+      "sha256": "0d5d2ba0c5a5c58027fd1347a6afd57c9470799b6bb3cbc274fd4657ed8de382",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/mmdb/geoip.dat",
+      "bytes": 17224069,
+      "sha256": "0d5d2ba0c5a5c58027fd1347a6afd57c9470799b6bb3cbc274fd4657ed8de382",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "database/services/adblock-pro.yaml",
+      "bytes": 15373921,
+      "sha256": "33cfb2813bad94aef45d84f78fb21873a1e53ec79716d47a3cad646e302eefbd",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/loon/adblock.list",
+      "bytes": 13662858,
+      "sha256": "3a6ff5bf9cfdc618029db2f7bcf46f058d6540a58ca17410e22ec6030225c1af",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/surge/adblock.list",
+      "bytes": 13662813,
+      "sha256": "9d4b45b1dc899ffe7f00e8fa207d074fbe31622284d39851dd3df53a5e108d30",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/shadowrocket/adblock.list",
+      "bytes": 13662813,
+      "sha256": "77ba82a6b984add7a88e1a3f92c431cfdc9bffc4fea2eea2b65d537541a68d75",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/mihomo/adblock.list",
+      "bytes": 13662813,
+      "sha256": "9d4b45b1dc899ffe7f00e8fa207d074fbe31622284d39851dd3df53a5e108d30",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "rule/Privacy/AdBlock/adblock.list",
+      "bytes": 13662345,
+      "sha256": "789329e95e8aaac72f7ac98584030e191864157ebe750e0ebc8ed461421d984f",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "rule/Privacy/AdBlock/adblock_domain.list",
+      "bytes": 13661086,
+      "sha256": "4186ee05afd0e077fa3c815ad7be6f40654b927c0a2df83819a48c9931cfbdf4",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/quantumult-x/adblock.list",
+      "bytes": 13260309,
+      "sha256": "24c1d9cdb4860384e91637853d671885879d0f2d929c3454c02c67c9e840632e",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/sing-box/adblock.json",
+      "bytes": 12456365,
+      "sha256": "171eae769fbe508358bba0da269293ce25af575aab829bd34250e7dc9c0cb5a0",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-29/datasets/mmdb-asn.bin",
+      "bytes": 12079074,
+      "sha256": "93456017eef970e7e60ab66312402b2130bb233af792a5aa30b2ff4de854c5cf",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-30/datasets/mmdb-asn.bin",
+      "bytes": 12079074,
+      "sha256": "93456017eef970e7e60ab66312402b2130bb233af792a5aa30b2ff4de854c5cf",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-31/datasets/mmdb-asn.bin",
+      "bytes": 12079074,
+      "sha256": "93456017eef970e7e60ab66312402b2130bb233af792a5aa30b2ff4de854c5cf",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/mmdb/ASN.mmdb",
+      "bytes": 12079074,
+      "sha256": "93456017eef970e7e60ab66312402b2130bb233af792a5aa30b2ff4de854c5cf",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/mihomo/adblock.yaml",
+      "bytes": 9641813,
+      "sha256": "db8576b2347b9da40a3d4ce1d7c826c25fc0debb945a5a4c552b1d70681addc8",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/egern/adblock.yaml",
+      "bytes": 9641517,
+      "sha256": "5ee897971b6db5e22bfddf54f8123d75a4e24a958994b64304401f0d78e1885b",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/surge/adblock_domain.list",
+      "bytes": 8434152,
+      "sha256": "9926fab54ea4f525b5808f6c0fcd84c345326aa7f6895a9c0bc032615c81c31c",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/shadowrocket/adblock_domain.list",
+      "bytes": 8434152,
+      "sha256": "9926fab54ea4f525b5808f6c0fcd84c345326aa7f6895a9c0bc032615c81c31c",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "database/domains/adblock.txt",
+      "bytes": 8032084,
+      "sha256": "fee53f0a97b8d4396c594d86a89b2fe37f2118dbc0beee6f15ae66624fa127ae",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "database/canonical/domains/adblock.txt",
+      "bytes": 8032084,
+      "sha256": "fee53f0a97b8d4396c594d86a89b2fe37f2118dbc0beee6f15ae66624fa127ae",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-29/datasets/geoip-mmdb.bin",
+      "bytes": 7866385,
+      "sha256": "fe721d5e47d320b2a23db4eafddb796a22026ef01899bbe7007fc0274016e5f4",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-29/datasets/mmdb-country.bin",
+      "bytes": 7866385,
+      "sha256": "fe721d5e47d320b2a23db4eafddb796a22026ef01899bbe7007fc0274016e5f4",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-30/datasets/geoip-mmdb.bin",
+      "bytes": 7866385,
+      "sha256": "fe721d5e47d320b2a23db4eafddb796a22026ef01899bbe7007fc0274016e5f4",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-30/datasets/mmdb-country.bin",
+      "bytes": 7866385,
+      "sha256": "fe721d5e47d320b2a23db4eafddb796a22026ef01899bbe7007fc0274016e5f4",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-28/datasets/geoip-mmdb.bin",
+      "bytes": 7866385,
+      "sha256": "fe721d5e47d320b2a23db4eafddb796a22026ef01899bbe7007fc0274016e5f4",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-31/datasets/geoip-mmdb.bin",
+      "bytes": 7866385,
+      "sha256": "fe721d5e47d320b2a23db4eafddb796a22026ef01899bbe7007fc0274016e5f4",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-31/datasets/mmdb-country.bin",
+      "bytes": 7866385,
+      "sha256": "fe721d5e47d320b2a23db4eafddb796a22026ef01899bbe7007fc0274016e5f4",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/mmdb/Country.mmdb",
+      "bytes": 7866385,
+      "sha256": "fe721d5e47d320b2a23db4eafddb796a22026ef01899bbe7007fc0274016e5f4",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "rule/Privacy/AdBlock-Pro/adblock-pro_domain.list",
+      "bytes": 7460269,
+      "sha256": "245f5073b99b2017c32d3a9a1bcf5a3d4a7d885a9fc855e97c44b46fd8bb6a56",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/loon/adblock-pro.list",
+      "bytes": 7460268,
+      "sha256": "a8a2be281449d8ae13792784c45ef759ce2027700130f181430dc51fa6420259",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "rule/Privacy/AdBlock-Pro/adblock-pro.list",
+      "bytes": 7460268,
+      "sha256": "ba4666c58ef8068e4b83b90ed9f23adbd6648db3d57ba5ffd6a3daf17fcc32ba",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/surge/adblock-pro.list",
+      "bytes": 7460215,
+      "sha256": "462e705e244a9811d22bcbfde80b2fee371b69776910cbe9574ab28edef55e86",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/shadowrocket/adblock-pro.list",
+      "bytes": 7460215,
+      "sha256": "462e705e244a9811d22bcbfde80b2fee371b69776910cbe9574ab28edef55e86",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/mihomo/adblock-pro.list",
+      "bytes": 7460215,
+      "sha256": "462e705e244a9811d22bcbfde80b2fee371b69776910cbe9574ab28edef55e86",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/quantumult-x/adblock-pro.list",
+      "bytes": 7234158,
+      "sha256": "3dd77ee202f0131334a3ecdd0ff2d6599e41063824e96974849e1efc406ee6b7",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/sing-box/adblock-pro.json",
+      "bytes": 6782011,
+      "sha256": "fcabd4881de7d8842cc1404efb8231da759e9aa03b974eab1a6d5dab23a2b04b",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-27/sources/hagezi/adblock-ultimate.txt",
+      "bytes": 5977487,
+      "sha256": "6e4900f89f7df2f68c4ad582a54a63d1b9410906afe5cae0087891d6a7670830",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-26/sources/hagezi/adblock-ultimate.txt",
+      "bytes": 5974529,
+      "sha256": "89c7122ad5e5266307a7483d8a5fbb692f8894f8b102c619327622e7c75126a3",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-25/sources/hagezi/adblock-ultimate.txt",
+      "bytes": 5959098,
+      "sha256": "6ce2829e4c425425263dce3f7c47a10e331390dc05e78ed13b10c8d4c9c6e3ec",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-29/datasets/geoip-us.bin",
+      "bytes": 5787378,
+      "sha256": "f2299f17c55c1d68d78759b5124edf6952b9002913c6c34c40240cc0d553cfee",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-30/datasets/geoip-us.bin",
+      "bytes": 5787378,
+      "sha256": "f2299f17c55c1d68d78759b5124edf6952b9002913c6c34c40240cc0d553cfee",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-28/datasets/geoip-us.bin",
+      "bytes": 5787378,
+      "sha256": "f2299f17c55c1d68d78759b5124edf6952b9002913c6c34c40240cc0d553cfee",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-31/datasets/geoip-us.bin",
+      "bytes": 5787378,
+      "sha256": "f2299f17c55c1d68d78759b5124edf6952b9002913c6c34c40240cc0d553cfee",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "database/geoip/us.txt",
+      "bytes": 5787378,
+      "sha256": "f2299f17c55c1d68d78759b5124edf6952b9002913c6c34c40240cc0d553cfee",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-27/sources/loyalsoldier/reject.txt",
+      "bytes": 5379267,
+      "sha256": "28227772750f05088344e922d915296be8675b6ebff6a6506df13813b6094591",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-26/sources/loyalsoldier/reject.txt",
+      "bytes": 5370093,
+      "sha256": "106bc6dfae726634b21bd9112da80f679419b71009af8e6a376915404f6992a5",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-08-25/sources/loyalsoldier/reject.txt",
+      "bytes": 5361561,
+      "sha256": "eee7b9b45860da21d3742e63638c72113652189d2761c4efeed7660cb7af4912",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/mihomo/adblock-pro.yaml",
+      "bytes": 5199274,
+      "sha256": "6e86f81402677edd3563ba6c22e1a861ab746541181a058e761cf4a1736f8625",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/egern/adblock-pro.yaml",
+      "bytes": 4747165,
+      "sha256": "30c47265a5ca0d033d45fb353f590979d92e950a8f9f1be29845f6226c3256dc",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/surge/adblock-pro_domain.list",
+      "bytes": 4520980,
+      "sha256": "42947892c384ac074cc5f40ce1b4341e29c0ad38a97a60c0a20ce0455156d11e",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/shadowrocket/adblock-pro_domain.list",
+      "bytes": 4520980,
+      "sha256": "42947892c384ac074cc5f40ce1b4341e29c0ad38a97a60c0a20ce0455156d11e",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/mmdb/geosite.dat",
+      "bytes": 4246547,
+      "sha256": "13b7cde1c317da9b65a145c1678587ab0dff88c3bd9738e5d1faa0af5ee17c12",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/loon/china.list",
+      "bytes": 3317205,
+      "sha256": "2d0c72d3b08d4f73f27cf434db122b03c1f092749b85d912db8d19efe2b351f0",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/surge/china.list",
+      "bytes": 3317164,
+      "sha256": "f4aa68af706953a85f3fc51d6249b65f1d42e1d12ae91c2737ed59ea4c3dbf3c",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/shadowrocket/china.list",
+      "bytes": 3317164,
+      "sha256": "eb2fd9d4ec6a90bb597d65d0937b267d837a018f1bf36fa0b6efb587bf3bbb06",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/mihomo/china.list",
+      "bytes": 3317164,
+      "sha256": "f4aa68af706953a85f3fc51d6249b65f1d42e1d12ae91c2737ed59ea4c3dbf3c",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/quantumult-x/china.list",
+      "bytes": 3109010,
+      "sha256": "b7c1ffd0bb8f2e604db7350f064cf2fccfa7692f47cb38c1c41bf33c1c569705",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/loon/adblock-light.list",
+      "bytes": 1400453,
+      "sha256": "7e7ee3fb72471351a5bfbb8f683b63fe7fcb2ef0eb5a4c92f3178e318a63432f",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/surge/adblock-light.list",
+      "bytes": 1400396,
+      "sha256": "e5509672b760b204353ac8afbe618d1f84bcc9374fa340aaf17ea472b56db4bf",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/shadowrocket/adblock-light.list",
+      "bytes": 1400396,
+      "sha256": "e5509672b760b204353ac8afbe618d1f84bcc9374fa340aaf17ea472b56db4bf",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/mihomo/adblock-light.list",
+      "bytes": 1400396,
+      "sha256": "e5509672b760b204353ac8afbe618d1f84bcc9374fa340aaf17ea472b56db4bf",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/quantumult-x/adblock-light.list",
+      "bytes": 1358330,
+      "sha256": "a89c81100b9d9d19d94a2665977b4f72520eab391a902c73f69d89dc7fc8175f",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/sing-box/adblock-light.json",
+      "bytes": 1274159,
+      "sha256": "854ba831825340293e6ecdf595638110a91acf33c507444fcb6f6cc2c49bb298",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/mihomo/adblock-light.yaml",
+      "bytes": 979345,
+      "sha256": "166b0fd47e17e47b094f2814943503845b38f259950edae23f6799e0ca420bfc",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/egern/adblock-light.yaml",
+      "bytes": 895217,
+      "sha256": "35e56d84fd84ea3f1f5c6da761e1a8e84b644b5bd357ec6a66197241f52bac9d",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/surge/adblock-light_domain.list",
+      "bytes": 853018,
+      "sha256": "95f3f709a1ee3f0bc154c04bbd4a6fa5d7b5526ccaadb410b1fa22a9fe66fb65",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/shadowrocket/adblock-light_domain.list",
+      "bytes": 853018,
+      "sha256": "95f3f709a1ee3f0bc154c04bbd4a6fa5d7b5526ccaadb410b1fa22a9fe66fb65",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/mmdb/geoip-lite.dat",
+      "bytes": 207729,
+      "sha256": "3d8321374104c82b1d9f572d9c66d177be2457e245a71d4c52dab2850b3aa931",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/mmdb/geoip-lite.meta.json",
+      "bytes": 538,
+      "sha256": "233d2180f9e12cfe9d7ebea8f3793ecf419815255fbab157cd3f9644b07b3a89",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/mmdb/geosite.meta.json",
+      "bytes": 527,
+      "sha256": "d60ed6fabf7333242874fba323655d9d2cd3cb619b2b69cc41f565e4f1e8e00a",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/mmdb/geoip.meta.json",
+      "bytes": 520,
+      "sha256": "a883b6273fae87abc5622a109d6c3d7ebc6b43863e460e9682329c4f9ca84121",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/mmdb/ASN.meta.json",
+      "bytes": 414,
+      "sha256": "c72d4e3ee494f956c779551b435165079dd553afd30ad06b1806662f602b601c",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "generated/mmdb/Country.meta.json",
+      "bytes": 408,
+      "sha256": "f04c53e7cd67d726baa9dcca4b8332448ad6763a02fb1a7d7a84eee5836a55e3",
+      "channel": "release_preferred"
+    }
+  ],
+  "decision_meta": {
+    "contract_version": 2,
+    "engine": "routing_emit-1",
+    "generated_at": "2026-08-31T14:46:54.833154+00:00",
+    "decision_digest": "8239df4b1eeb0c714972963a6419c8ea0b72db1dbde1b7410680a1ae5355ce61",
+    "counts": {
+      "domains": 142130,
+      "direct": 112206,
+      "proxy": 29924,
+      "reject": 0,
+      "conflicts": 1299
+    },
+    "ssot": "generated/routing/decisions.jsonl",
+    "derivatives": [
+      "direct.list",
+      "proxy.list",
+      "reject.list",
+      "conflicts.json"
+    ],
+    "semantic_uniqueness": true
+  }
+}

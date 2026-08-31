@@ -962,8 +962,8 @@
 {"d":"paypal-knowledge.com","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
 {"d":"paypal.jp","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
 {"d":"pypl.tv","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
-{"d":"tracker.fnix.net","s":[0],"r":[128],"t":"domain"}
-{"d":"tracker4.itzmx.com","s":[0],"r":[128],"t":"domain"}
+{"d":"tracker.fnix.net","s":[0],"r":[128,218],"t":"domain"}
+{"d":"tracker4.itzmx.com","s":[0],"r":[128,218],"t":"domain"}
 {"d":"animebytes.tv","s":[0,1],"r":[38,128],"t":"domain_suffix"}
 {"d":"(^|\\.)mdyy[0-1][0-9]\\.com$","s":[1,6],"r":[132],"t":"domain_regex"}
 {"d":"7mm.tv","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -992,8 +992,8 @@
 {"d":"slackhq.com","s":[0,3,5,6],"r":[129,140],"t":"domain_suffix"}
 {"d":"spotify.com","s":[0,3,5,6,7],"r":[74,129,145],"t":"domain_suffix"}
 {"d":"st.dl.bscstorage.net","s":[0,6,7],"r":[146],"t":"domain_suffix"}
-{"d":"stun.cellmail.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.kanojo.de","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.cellmail.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.kanojo.de","s":[0],"r":[148,224],"t":"domain"}
 {"d":"ludoworld.net","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"onexmail.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"xiaomicorp.net","s":[0,1],"r":[38,177],"t":"domain_suffix"}

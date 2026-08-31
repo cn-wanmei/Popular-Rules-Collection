@@ -910,8 +910,8 @@
 {"d":"adsh.m.taobao.com","s":[0,1,2,3,4,5,6],"r":[5,11],"t":"domain_suffix"}
 {"d":"alibabacloud.co.in","s":[0,1,3,5,6],"r":[11,12,38,129],"t":"domain_suffix"}
 {"d":"amzn.asia","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
-{"d":"cl2.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
-{"d":"is5-ssl.mzstatic.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"cl2.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
+{"d":"is5-ssl.mzstatic.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"applecentre.com.au","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"ipad3.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"mylcloud.net","s":[0,1,3,5,6,7],"r":[17,90,129],"t":"domain_suffix"}
@@ -928,7 +928,7 @@
 {"d":"disneytickets.co.uk","s":[0,3,5,7],"r":[56,129],"t":"domain_suffix"}
 {"d":"facebookook.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"facebookphoto.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
-{"d":"redirector.c.mail.google.com","s":[0,1,6],"r":[77],"t":"domain_suffix"}
+{"d":"redirector.c.mail.google.com","s":[0,1,6],"r":[77,206],"t":"domain_suffix"}
 {"d":"on2.com","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"youtube.com.hn","s":[0,1,3,5,6,7],"r":[77,129,180],"t":"domain_suffix"}
 {"d":"172.217.219.188/32","s":[0,7],"r":[78],"t":"ip_cidr"}
@@ -942,7 +942,7 @@
 {"d":"download.windowsupdate.com","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"microsoft.se","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"msftauth.net","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
-{"d":"tracker.t-1.org","s":[0],"r":[128],"t":"domain"}
+{"d":"tracker.t-1.org","s":[0],"r":[128,218],"t":"domain"}
 {"d":"dxdhd.com","s":[0],"r":[128],"t":"domain_suffix"}
 {"d":"(^|\\.)69bag[0-1][1-9]?\\.com$","s":[1,6],"r":[132],"t":"domain_regex"}
 {"d":"(^|\\.)spankwire[1-9]\\.com$","s":[1,6],"r":[132],"t":"domain_regex"}
@@ -979,10 +979,10 @@
 {"d":"sohusce.com","s":[0,1],"r":[38,142],"t":"domain_suffix"}
 {"d":"spotifycodes.com","s":[0,3,5,6,7],"r":[129,145],"t":"domain_suffix"}
 {"d":"steamstatic.com","s":[0,3,5,6,7],"r":[74,129,146],"t":"domain_suffix"}
-{"d":"stun.futurasp.es","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.newrocktech.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.futurasp.es","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.newrocktech.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"cloudbase.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
-{"d":"video-public-1258344701.shiply-cdn.qq.com","s":[0],"r":[152],"t":"domain"}
+{"d":"video-public-1258344701.shiply-cdn.qq.com","s":[0],"r":[152,228],"t":"domain"}
 {"d":"vhx.tv","s":[0,3,5],"r":[129,164],"t":"domain_suffix"}
 {"d":"api-mifit.huami.com","s":[0],"r":[177],"t":"domain_suffix"}
 {"d":"123movies.to","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}

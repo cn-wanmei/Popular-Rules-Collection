@@ -849,7 +849,7 @@
 {"d":"coderabbit.gallery.vsassets.io","s":[1],"r":[7],"t":"domain_suffix"}
 {"d":"copilotprodattachments.blob.core.windows.net","s":[0,1,3,5,6,7],"r":[7,51,75,105,129],"t":"domain_suffix"}
 {"d":"shuqiread.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
-{"d":"init.ess.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"init.ess.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"apple.co","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"beatsbydrecolors.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"beatsshop-usa.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -857,10 +857,10 @@
 {"d":"ipod.hk","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"powerbeats2wireless.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"spektral.cc","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
-{"d":"streamingaudio.itunes.apple.com","s":[0,1,6,7],"r":[17,18],"t":"domain"}
+{"d":"streamingaudio.itunes.apple.com","s":[0,1,6,7],"r":[17,18,189],"t":"domain"}
 {"d":"azure.cn","s":[0,1,6,7],"r":[22,105],"t":"domain_suffix"}
 {"d":"wow.nosdn.127.net","s":[0],"r":[25],"t":"domain_suffix"}
-{"d":"aod-hls-uk-live.akamaized.net","s":[0,7],"r":[26],"t":"domain"}
+{"d":"aod-hls-uk-live.akamaized.net","s":[0,7],"r":[26,192],"t":"domain"}
 {"d":"bilibili.co","s":[0,1,6,7],"r":[27,38],"t":"domain_suffix"}
 {"d":"im9.com","s":[0,1,6,7],"r":[27,38],"t":"domain_suffix"}
 {"d":"ibdxiguaimg.com","s":[0,1,6],"r":[33],"t":"domain_suffix"}
@@ -886,7 +886,7 @@
 {"d":"jdgslb.com","s":[0,1],"r":[38,94],"t":"domain_suffix"}
 {"d":"kwailine.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"otqyzk7mx2t8.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
-{"d":"sdx.microsoft.com","s":[0,1,6,7],"r":[38,105],"t":"domain_suffix"}
+{"d":"sdx.microsoft.com","s":[0,1,6,7],"r":[38,105,211],"t":"domain_suffix"}
 {"d":"mscrl.microsoft.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"paypal-gifts.com","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
 {"d":"pplive.com","s":[0,1],"r":[38,126],"t":"domain_suffix"}
@@ -921,8 +921,8 @@
 {"d":"applinzi.com","s":[0,1],"r":[38,139],"t":"domain_suffix"}
 {"d":"slackdemo.com","s":[0,3,5,6],"r":[129,140],"t":"domain_suffix"}
 {"d":"sogou.net","s":[0,1,6],"r":[38,142,151],"t":"domain_suffix"}
-{"d":"stun.tel2.co.uk","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.voipgain.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.tel2.co.uk","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.voipgain.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"na-siliconvalley.myqcloud.com","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"tgovcloud.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"tlivesource.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

@@ -15,9 +15,9 @@ generated_files:
   domain: spotify_domain.list
   ip: spotify_ip.list
 statistics:
-  domains: 32
+  domains: 23
   ipv4_or_cidr: 2
-  mixed: 34
+  mixed: 25
 sources:
 - blackmatrix7
 - v2fly

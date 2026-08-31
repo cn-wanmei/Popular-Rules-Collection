@@ -954,12 +954,12 @@
 {"d":"cdn-apple.com","s":[0,1,3,5,6,7],"r":[17,90,129],"t":"domain_suffix"}
 {"d":"cheapcustombeatsbydre.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"cheapnewbeatsbydre.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
-{"d":"hls.itunes.apple.com","s":[0,1,3,5,6,7],"r":[17,19,129],"t":"domain"}
+{"d":"hls.itunes.apple.com","s":[0,1,3,5,6,7],"r":[17,19,129,190],"t":"domain"}
 {"d":"insidear.cn","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
 {"d":"macbookair.com.cn","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
 {"d":"macossierra.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"yoojia.com","s":[0,1,6],"r":[24,38],"t":"domain_suffix"}
-{"d":"113-219-145-1.ksyungslb.com","s":[0,1,6,7],"r":[27],"t":"domain"}
+{"d":"113-219-145-1.ksyungslb.com","s":[0,1,6,7],"r":[27,193],"t":"domain"}
 {"d":"anitama.cn","s":[0,1,6,7],"r":[27],"t":"domain_suffix"}
 {"d":"biliplus.com","s":[0,1,3,5,6,7],"r":[27,38,129],"t":"domain_suffix"}
 {"d":"activity05.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
@@ -1014,9 +1014,9 @@
 {"d":"ywoos.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"zoo-xnxx.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"libguides.com","s":[0,1,7],"r":[38,136],"t":"domain_suffix"}
-{"d":"stun.acronis.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.acronis.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"in.th","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
-{"d":"dldir1.qq.com","s":[0],"r":[152,167],"t":"domain"}
+{"d":"dldir1.qq.com","s":[0],"r":[152,167,228,231],"t":"domain"}
 {"d":"::ffff:198.18.6.81/128","s":[0],"r":[152],"t":"ip_cidr6"}
 {"d":"sgpstatp.com","s":[0,1,6,7],"r":[155],"t":"domain_suffix"}
 {"d":"17usoft.net","s":[0,1],"r":[38,156],"t":"domain_suffix"}

@@ -913,7 +913,7 @@
 {"d":"personeelsland.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"baiduyundns.cn","s":[0,1,6],"r":[24],"t":"domain_suffix"}
 {"d":"diabloimmortal.com","s":[0,3,5],"r":[25,129],"t":"domain_suffix"}
-{"d":"1gr4uqmtt8y41hcjigazdqca.ourdvsss.com","s":[0,1,6,7],"r":[27],"t":"domain"}
+{"d":"1gr4uqmtt8y41hcjigazdqca.ourdvsss.com","s":[0,1,6,7],"r":[27,193],"t":"domain"}
 {"d":"bytedancehermestest.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
 {"d":"byteics.net","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
 {"d":"myimis.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
@@ -931,7 +931,7 @@
 {"d":"emby.neko.edu.rs","s":[0],"r":[66],"t":"domain_suffix"}
 {"d":"facbebook.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"faceboooik.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
-{"d":"service.urchin.com","s":[0,1,2,3,4,5,6],"r":[5,38,77],"t":"domain_suffix"}
+{"d":"service.urchin.com","s":[0,1,2,3,4,5,6],"r":[5,38,77,206],"t":"domain_suffix"}
 {"d":"autodraw.com","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"google.vg","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"youtube.com.ar","s":[0,1,3,5,6,7],"r":[77,129,180],"t":"domain_suffix"}
@@ -943,14 +943,14 @@
 {"d":"rgaxobcs.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"t8703hd304.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"linkedin.com","s":[0,3,5],"r":[74,102,129],"t":"domain_suffix"}
-{"d":"azuremigratetest.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105],"t":"domain_suffix"}
+{"d":"azuremigratetest.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105,211],"t":"domain_suffix"}
 {"d":"assets-yammer.com","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"microsoftapp.net","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"onedrive.co.uk","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"osdinfra.net","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"videobreakdown.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"paily.net","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
-{"d":"bt.okmp3.ru","s":[0],"r":[128],"t":"domain"}
+{"d":"bt.okmp3.ru","s":[0],"r":[128,218],"t":"domain"}
 {"d":"(^|\\.)aipa(111|222|333|444|555|666|777|888|999)\\.life$","s":[1,6],"r":[132],"t":"domain_regex"}
 {"d":"adultsexgame.biz","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"bigassporn.tv","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -985,8 +985,8 @@
 {"d":"youpornru.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"zzgays.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"riotgames.net","s":[0,3,5],"r":[129,133],"t":"domain_suffix"}
-{"d":"stun.intervoip.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.istitutogramscisiciliano.it","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.intervoip.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.istitutogramscisiciliano.it","s":[0],"r":[148,224],"t":"domain"}
 {"d":"2a03:2880:f084:1:face:b00c:0:24d9","s":[0],"r":[148],"t":"ip_cidr6"}
 {"d":"apaas-zone-test.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"tourismshow.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}

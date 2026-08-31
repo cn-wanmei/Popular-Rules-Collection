@@ -171,7 +171,7 @@
 {"d":"wildcommittee.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"wpnetwork.eu","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"wtradv.market.xiaomi.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
-{"d":"wup.imtt.qq.com","s":[0,2,3,4,5],"r":[3,4,5,167],"t":"domain"}
+{"d":"wup.imtt.qq.com","s":[0,2,3,4,5],"r":[3,4,5,167,231],"t":"domain"}
 {"d":"www.171starbucks.com","s":[2],"r":[3],"t":"domain_suffix"}
 {"d":"www.360anquan.cn","s":[2],"r":[3],"t":"domain_suffix"}
 {"d":"www.breadpro.com","s":[2],"r":[3],"t":"domain_suffix"}
@@ -924,8 +924,8 @@
 {"d":"guanggaoad.youku.com","s":[0,1,2,3,4,5,6],"r":[5,11,179],"t":"domain_suffix"}
 {"d":"amazonlumberyard.wang","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
 {"d":"kindle.co.uk","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
-{"d":"configuration-lb.ls-apple.com.akadns.net","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
-{"d":"s4.mzstatic.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"configuration-lb.ls-apple.com.akadns.net","s":[0,1,3,5,6,7],"r":[17,129,188],"t":"domain_suffix"}
+{"d":"s4.mzstatic.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"apple.com.pr","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"applemusic.com.au","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"applepaysupplies.com.cn","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
@@ -936,8 +936,8 @@
 {"d":"azurehdinsight.cn","s":[0,1,6,7],"r":[22,105],"t":"domain_suffix"}
 {"d":"hongmeiti.com","s":[0,1,6],"r":[24,38],"t":"domain_suffix"}
 {"d":"sanguows.com","s":[0,1,6],"r":[24,38],"t":"domain_suffix"}
-{"d":"vod-dash-ww-live.akamaized.net","s":[0,3,5,7],"r":[26,129],"t":"domain"}
-{"d":"vod-thumb-uk-live.akamaized.net","s":[0,3,5,7],"r":[26,129],"t":"domain"}
+{"d":"vod-dash-ww-live.akamaized.net","s":[0,3,5,7],"r":[26,129,192],"t":"domain"}
+{"d":"vod-thumb-uk-live.akamaized.net","s":[0,3,5,7],"r":[26,129,192],"t":"domain"}
 {"d":"bbc.in","s":[0,3,5,7],"r":[26,129],"t":"domain_suffix"}
 {"d":"bocichina.cn","s":[0],"r":[30],"t":"domain_suffix"}
 {"d":"obriccloud.com","s":[0,1,6],"r":[33,38,58],"t":"domain_suffix"}
@@ -946,7 +946,7 @@
 {"d":"cftest8.com","s":[0,1,6],"r":[38,43],"t":"domain_suffix"}
 {"d":"ctrip.my","s":[0,1],"r":[38,46],"t":"domain_suffix"}
 {"d":"debian.com","s":[0,1],"r":[51],"t":"domain_suffix"}
-{"d":"docker-images-prod.6aa30f8b08e16409b46e0173d6de2f56.r2.cloudflarestorage.com","s":[0,1,3,5,6],"r":[51,57,129],"t":"domain_suffix"}
+{"d":"docker-images-prod.6aa30f8b08e16409b46e0173d6de2f56.r2.cloudflarestorage.com","s":[0,1,3,5,6],"r":[51,57,129,198],"t":"domain_suffix"}
 {"d":"futunited.com","s":[0,3,5],"r":[62,129],"t":"domain_suffix"}
 {"d":"mirrorsedge2d.com","s":[0,3,5],"r":[62,129],"t":"domain_suffix"}
 {"d":"needforspeed.com","s":[0,3,5],"r":[62,129],"t":"domain_suffix"}

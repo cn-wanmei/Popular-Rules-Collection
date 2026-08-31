@@ -933,7 +933,7 @@
 {"d":"21fv52efm1.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"aqawzxeg.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"linegame.jp","s":[0,3,5,6],"r":[101,107,129],"t":"domain_suffix"}
-{"d":"windbg.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105],"t":"domain_suffix"}
+{"d":"windbg.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105,211],"t":"domain_suffix"}
 {"d":"microsoftnews.net","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"203.104.158.0/24","s":[0],"r":[107],"t":"ip_cidr"}
 {"d":"nflxext.com","s":[0,1,3,5,6,7],"r":[74,109,129],"t":"domain_suffix"}
@@ -972,9 +972,9 @@
 {"d":"xvideos-india.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"riotgames.com","s":[0,3,5],"r":[129,133],"t":"domain_suffix"}
 {"d":"vshoucang.com","s":[0,1],"r":[38,139],"t":"domain_suffix"}
-{"d":"stun.connecteddata.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.swrag.de","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.totalcom.info","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.connecteddata.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.swrag.de","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.totalcom.info","s":[0],"r":[148,224],"t":"domain"}
 {"d":"comments.app","s":[0,3,5,6,7],"r":[74,129,150],"t":"domain_suffix"}
 {"d":"5.28.195.2/32","s":[0,6,7],"r":[150],"t":"ip_cidr"}
 {"d":"adshmmsg.qq.com","s":[0,1,2,3,4,5,6],"r":[5,151],"t":"domain_suffix"}
@@ -983,7 +983,7 @@
 {"d":"tcloudbaseapp.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"tdnsv10.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"txyscdn.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
-{"d":"ins-eeww7kom.ias.tencent-cloud.net","s":[0],"r":[152],"t":"domain"}
+{"d":"ins-eeww7kom.ias.tencent-cloud.net","s":[0],"r":[152,228],"t":"domain"}
 {"d":"2402:2a80::/32","s":[0],"r":[158],"t":"ip_cidr6"}
 {"d":"misrm.com","s":[0,1],"r":[38,177],"t":"domain_suffix"}
 {"d":"08aa393741.700d5deaa5.com","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}

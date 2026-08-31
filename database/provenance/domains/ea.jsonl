@@ -866,8 +866,8 @@
 {"d":"tb.cn","s":[0,1,6],"r":[11],"t":"domain_suffix"}
 {"d":"aboutamazon.co.uk","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
 {"d":"awscommandlineinterface.com","s":[0,1,3,5,6],"r":[15,21,129],"t":"domain_suffix"}
-{"d":"d25xi40x97liuc.cloudfront.net","s":[0,1,3,5,6],"r":[15,127,129],"t":"domain"}
-{"d":"download.developer.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"d25xi40x97liuc.cloudfront.net","s":[0,1,3,5,6],"r":[15,127,129,217],"t":"domain"}
+{"d":"download.developer.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"apple.news","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"appleone.film","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"appleonline.net","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -910,8 +910,8 @@
 {"d":"bingtoolbar.com","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"biying.com.cn","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"paypal.info","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
-{"d":"tracker.renfei.net","s":[0],"r":[128],"t":"domain"}
-{"d":"tracker.torrent.eu.org","s":[0],"r":[128],"t":"domain"}
+{"d":"tracker.renfei.net","s":[0],"r":[128,218],"t":"domain"}
+{"d":"tracker.torrent.eu.org","s":[0],"r":[128,218],"t":"domain"}
 {"d":"avbebe.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"avdudu.top","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"badvirtue.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -945,10 +945,10 @@
 {"d":"zzycdz.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"wbimg.com","s":[0,1],"r":[38,139],"t":"domain_suffix"}
 {"d":"spotify.link","s":[0,3,5,6,7],"r":[129,145],"t":"domain_suffix"}
-{"d":"stun.counterpath.net","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.komsa.de","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.openjobs.hu","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.sonetel.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.counterpath.net","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.komsa.de","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.openjobs.hu","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.sonetel.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"tdnsv14.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"vercel-status.com","s":[0,3,5],"r":[129,163],"t":"domain_suffix"}
 {"d":"wx.qq.com","s":[0],"r":[167],"t":"domain_suffix"}

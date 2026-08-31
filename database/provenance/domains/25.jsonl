@@ -936,7 +936,7 @@
 {"d":"dl.delivery.mp.microsoft.com","s":[0,1,6,7],"r":[38,105],"t":"domain_suffix"}
 {"d":"microsoftcloudworkshop.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"windowsphone-int.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
-{"d":"netflix.com.edgesuite.net","s":[0,1,3,5,6,7],"r":[109,129],"t":"domain_suffix"}
+{"d":"netflix.com.edgesuite.net","s":[0,1,3,5,6,7],"r":[109,129,213],"t":"domain_suffix"}
 {"d":"andes.tech","s":[0,1],"r":[38,116],"t":"domain_suffix"}
 {"d":"avgv.cc","s":[0],"r":[128],"t":"domain_suffix"}
 {"d":"ahorsecock.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -960,9 +960,9 @@
 {"d":"shenshi-cha.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"ymhsf1.top","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"rblx.com","s":[1,3,5,6],"r":[129,134],"t":"domain_suffix"}
-{"d":"stun.dus.net","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.lovense.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.verbo.be","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.dus.net","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.lovense.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.verbo.be","s":[0],"r":[148,224],"t":"domain"}
 {"d":"2404:6800:400b:c005::7f","s":[0],"r":[148],"t":"ip_cidr6"}
 {"d":"cncqcloud.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"dnsv5.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

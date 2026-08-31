@@ -20,7 +20,7 @@
 {"d":"api.bluecore.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"api.eu-game-sdk.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"api.meta.almamedia.tech","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
-{"d":"app-analytics-services.com","s":[0,1,2,3,4,5,6],"r":[3,4,5,38,77,129],"t":"domain_suffix"}
+{"d":"app-analytics-services.com","s":[0,1,2,3,4,5,6],"r":[3,4,5,38,77,129,206],"t":"domain_suffix"}
 {"d":"askme4date.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"ateam-ad.jp","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"bitchat.live","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
@@ -928,9 +928,9 @@
 {"d":"zunlen.com","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"zyynxbfkwms.com","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"notebook.google.com","s":[1],"r":[7],"t":"domain_suffix"}
-{"d":"o33249.ingest.sentry.io","s":[0,1,2,3,4,5,6,7],"r":[5,7,9,115],"t":"domain_suffix"}
+{"d":"o33249.ingest.sentry.io","s":[0,1,2,3,4,5,6,7],"r":[5,7,9,115,185,215],"t":"domain_suffix"}
 {"d":"airbnb.com.ro","s":[1,3,5,6],"r":[8,129],"t":"domain_suffix"}
-{"d":"tj-pod3-smp-device.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"tj-pod3-smp-device.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"apple.com.py","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"applecomputer-imac.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"applefilmmaker.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -965,7 +965,7 @@
 {"d":"kwairr9aw56vso581r.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"218.78.185.0/24","s":[0],"r":[98],"t":"ip_cidr"}
 {"d":"203.104.103.0/24","s":[0,6],"r":[101,107],"t":"ip_cidr"}
-{"d":"officemktuat.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105],"t":"domain_suffix"}
+{"d":"officemktuat.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105,211],"t":"domain_suffix"}
 {"d":"microsoftsiteselection.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"msopentech.cn","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"allawnfs.com","s":[0,1],"r":[38,116],"t":"domain_suffix"}
@@ -1003,7 +1003,7 @@
 {"d":"silverchair-cdn.com","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
 {"d":"tencent.com.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"url.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
-{"d":"iacc.qq.com","s":[0,2,3,4,5],"r":[5,152],"t":"domain"}
+{"d":"iacc.qq.com","s":[0,2,3,4,5],"r":[5,152,228],"t":"domain"}
 {"d":"01daa.lutci.com","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}
 {"d":"0525e2dec3a618a29309a7ca27557dc65832cc6c.com","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}
 {"d":"114study.adsame.com","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}

@@ -1,7 +1,11 @@
 {
   "date": "2026-08-31",
+  "decision_ssot_domains": 142130,
+  "rows": 291190,
   "critical": 0,
   "high": 0,
   "medium": 0,
-  "low": 17843
+  "low": 17846,
+  "policy_source": "decision_ssot+service_heuristic",
+  "note": "V2: no longer default all services to proxy"
 }

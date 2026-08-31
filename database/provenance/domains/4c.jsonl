@@ -38,7 +38,7 @@
 {"d":"canteenlupulusmahar.cyou","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"catcut.net","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"cattailpectinselected.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
-{"d":"cdn.usefathom.com","s":[0,2,3,4,5],"r":[3,4,5,42],"t":"domain"}
+{"d":"cdn.usefathom.com","s":[0,2,3,4,5],"r":[3,4,5,42,195],"t":"domain"}
 {"d":"censingshlocks.cfd","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"chat-gpt-pc.online","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"chattgpt.cc","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
@@ -906,7 +906,7 @@
 {"d":"cainiaoyizhan.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"dongting.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"amazontrust.com","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
-{"d":"api-edge.apps.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"api-edge.apps.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"applecomputers.co.nz","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"beats-soaho.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"casquebeatsmer.net","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -921,7 +921,7 @@
 {"d":"ugshare-img.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
 {"d":"suanya.com","s":[0,1],"r":[38,46],"t":"domain_suffix"}
 {"d":"mingw.org","s":[0,1,3,5],"r":[51,129],"t":"domain_suffix"}
-{"d":"productionresultssa14.blob.core.windows.net","s":[0,1,3,5,6,7],"r":[51,75,105,129],"t":"domain_suffix"}
+{"d":"productionresultssa14.blob.core.windows.net","s":[0,1,3,5,6,7],"r":[51,75,105,129,205,211],"t":"domain_suffix"}
 {"d":"didi.xin","s":[0,1],"r":[38,53],"t":"domain_suffix"}
 {"d":"disneyiejobs.com","s":[0,3,5,7],"r":[56,129],"t":"domain_suffix"}
 {"d":"disneylatino.com","s":[0,3,5,7],"r":[56,129],"t":"domain_suffix"}
@@ -942,7 +942,7 @@
 {"d":"paypal-apps.com","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
 {"d":"paypal-login.us","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
 {"d":"yqbimg.net","s":[0,1],"r":[38,123],"t":"domain_suffix"}
-{"d":"tracker.qu.ax","s":[0],"r":[128],"t":"domain"}
+{"d":"tracker.qu.ax","s":[0],"r":[128,218],"t":"domain"}
 {"d":"(^|\\.)kpkuang\\.(bond|fun|info|one|us)$","s":[1,6],"r":[132],"t":"domain_regex"}
 {"d":"darksidemagazine.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"dldshare.net","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -974,14 +974,14 @@
 {"d":"xvidzz.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"annualreviews.org","s":[0,1,3,5,7],"r":[38,129,136],"t":"domain_suffix"}
 {"d":"jbc.org","s":[0,7],"r":[136],"t":"domain_suffix"}
-{"d":"steampipe.akamaized.net","s":[0,3,5,6,7],"r":[129,146],"t":"domain_suffix"}
-{"d":"stun.files.fm","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.teliax.com","s":[0],"r":[148],"t":"domain"}
+{"d":"steampipe.akamaized.net","s":[0,3,5,6,7],"r":[129,146,223],"t":"domain_suffix"}
+{"d":"stun.files.fm","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.teliax.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"goto-game.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"m1.run","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"tdnsv4.net","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"tdnsv7.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
-{"d":"ios.video.mpush.qq.com","s":[0],"r":[152],"t":"domain"}
+{"d":"ios.video.mpush.qq.com","s":[0],"r":[152,228],"t":"domain"}
 {"d":"mikge.com","s":[0,1],"r":[38,177],"t":"domain_suffix"}
 {"d":"103.41.167.236/32","s":[0],"r":[182],"t":"ip_cidr"}
 {"d":"123app.info","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}

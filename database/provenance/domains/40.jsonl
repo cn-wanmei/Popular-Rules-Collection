@@ -28,7 +28,7 @@
 {"d":"bewashanteri.qpon","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"bikesattel.at","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"bjmining.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
-{"d":"btrace.qq.com","s":[0,1,2,3,4,5,6],"r":[3,4,5,151,167],"t":"domain"}
+{"d":"btrace.qq.com","s":[0,1,2,3,4,5,6],"r":[3,4,5,151,167,231],"t":"domain"}
 {"d":"bueno-analytics.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"bullbittrade.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"cams.gratis","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
@@ -952,7 +952,7 @@
 {"d":"douyucdn2.cn","s":[0,1],"r":[60],"t":"domain_suffix"}
 {"d":"douya.org","s":[0,3,5,6],"r":[63,129],"t":"domain_suffix"}
 {"d":"oculusdiving.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
-{"d":"www.pxcc.com","s":[0,1,3,5,6],"r":[38,77,129],"t":"domain_suffix"}
+{"d":"www.pxcc.com","s":[0,1,3,5,6],"r":[38,77,129,206],"t":"domain_suffix"}
 {"d":"angulardart.org","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
 {"d":"youtube.com.gh","s":[0,1,3,5,6,7],"r":[77,129,180],"t":"domain_suffix"}
 {"d":"108.177.125.188/32","s":[0,7],"r":[78],"t":"ip_cidr"}
@@ -1000,8 +1000,8 @@
 {"d":"domeos.cn","s":[0],"r":[142],"t":"domain_suffix"}
 {"d":"spotify-everywhere.com","s":[0,3,5,6,7],"r":[129,145],"t":"domain_suffix"}
 {"d":"steam-chat.com","s":[0,3,5,6,7],"r":[129,146],"t":"domain_suffix"}
-{"d":"stun.ekiga.net","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.sonetel.net","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.ekiga.net","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.sonetel.net","s":[0],"r":[148,224],"t":"domain"}
 {"d":"dothework.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"readnovel.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"tcdnlivebak2.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

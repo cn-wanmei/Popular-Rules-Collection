@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-08-31T15:00:38.331709+00:00",
+  "routing_contract": 2,
+  "decision": {
+    "contract_version": 2,
+    "engine": "routing_emit-1",
+    "generated_at": "2026-08-31T14:46:54.833154+00:00",
+    "decision_digest": "8239df4b1eeb0c714972963a6419c8ea0b72db1dbde1b7410680a1ae5355ce61",
+    "counts": {
+      "domains": 142130,
+      "direct": 112206,
+      "proxy": 29924,
+      "reject": 0,
+      "conflicts": 1299
+    },
+    "ssot": "generated/routing/decisions.jsonl",
+    "derivatives": [
+      "direct.list",
+      "proxy.list",
+      "reject.list",
+      "conflicts.json"
+    ],
+    "semantic_uniqueness": true
+  },
+  "universal_ir": {
+    "generated_at": "2026-08-31T14:47:52.652962+00:00",
+    "rules": 291187,
+    "by_type": {
+      "domain_suffix": 289313,
+      "domain": 1141,
+      "domain_keyword": 65,
+      "ip_cidr": 456,
+      "ip_cidr6": 68,
+      "domain_regex": 144
+    },
+    "ir_digest": "f3e02c8e30bd3b5784f3bd7ec65c457da1fdac1b2cd3d74d967a9c2e2a8a0469",
+    "decision_digest": "8239df4b1eeb0c714972963a6419c8ea0b72db1dbde1b7410680a1ae5355ce61"
+  },
+  "note": "Builders still use rule_loader; policy lists use decision SSOT"
+}

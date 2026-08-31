@@ -952,8 +952,8 @@
 {"d":"72.254.0.0/16","s":[0,1,6],"r":[11],"t":"ip_cidr"}
 {"d":"aiv-cdn.net","s":[0,1,3,5,6],"r":[15,127,129],"t":"domain_suffix"}
 {"d":"primevideo.com","s":[0,1,3,5,6],"r":[15,74,127,129],"t":"domain_suffix"}
-{"d":"cl4-cdn.origin-apple.com.akadns.net","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
-{"d":"shazam-insights.cdn-apple.com","s":[0,1,2,3,4,5,6,7],"r":[5,17],"t":"domain_suffix"}
+{"d":"cl4-cdn.origin-apple.com.akadns.net","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
+{"d":"shazam-insights.cdn-apple.com","s":[0,1,2,3,4,5,6,7],"r":[5,17,188],"t":"domain_suffix"}
 {"d":"12diasderegalosdeitunes.com.co","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"1monsterbeatsbydreus.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"apple.net.gr","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -981,9 +981,9 @@
 {"d":"facebooktv.org","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"fnacebook.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"fscebook.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
-{"d":"beacons3.gvt2.com","s":[0,1,6],"r":[38,77],"t":"domain_suffix"}
-{"d":"g0.gstatic.com","s":[0,1,6],"r":[77],"t":"domain_suffix"}
-{"d":"alt8-mtalk.google.com","s":[0,1,3,5,6,7],"r":[77,78,129],"t":"domain"}
+{"d":"beacons3.gvt2.com","s":[0,1,6],"r":[38,77,206],"t":"domain_suffix"}
+{"d":"g0.gstatic.com","s":[0,1,6],"r":[77,206],"t":"domain_suffix"}
+{"d":"alt8-mtalk.google.com","s":[0,1,3,5,6,7],"r":[77,78,129,207],"t":"domain"}
 {"d":"google.com.tj","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"google.fi","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"google.lk","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
@@ -999,7 +999,7 @@
 {"d":"kuai666vs5aq9o3ytdgp.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"ttqiadar.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"222.221.102.0/24","s":[0],"r":[98],"t":"ip_cidr"}
-{"d":"storeedge.microsoft.com","s":[0,1,6,7],"r":[38,105],"t":"domain_suffix"}
+{"d":"storeedge.microsoft.com","s":[0,1,6,7],"r":[38,105,211],"t":"domain_suffix"}
 {"d":"175.158.0.0/19","s":[0],"r":[107],"t":"ip_cidr"}
 {"d":"nintendo.pt","s":[0,3,5],"r":[111,129],"t":"domain_suffix"}
 {"d":"oracle","s":[0,3,5,6],"r":[117,129],"t":"domain_suffix"}
@@ -1033,9 +1033,9 @@
 {"d":"emerald.com","s":[0,1,3,5,7],"r":[38,129,136],"t":"domain_suffix"}
 {"d":"springernature.com","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
 {"d":"yidianliulan.com","s":[0,1,6],"r":[38,142,151],"t":"domain_suffix"}
-{"d":"stun.peethultra.be","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.schoeffel.de","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.voztovoice.org","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.peethultra.be","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.schoeffel.de","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.voztovoice.org","s":[0],"r":[148,224],"t":"domain"}
 {"d":"fymall4.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"mpush.qq.com","s":[0,1,2,3,4,5,6],"r":[5,151],"t":"domain_suffix"}
 {"d":"2fa.com-token-auth.com","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}

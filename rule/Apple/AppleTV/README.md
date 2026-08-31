@@ -9,9 +9,9 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 7 |
+| Domains | 1 |
 | IP/CIDR | 0 |
-| Mixed | 7 |
+| Mixed | 1 |
 | Sources | blackmatrix7 |
 | Updated | 2026-08-31 |
 

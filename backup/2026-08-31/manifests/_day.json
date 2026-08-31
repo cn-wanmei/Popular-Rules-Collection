@@ -1,12 +1,12 @@
 {
   "date": "2026-08-31",
-  "timestamp": "2026-08-31T08:48:41.759062+00:00",
+  "timestamp": "2026-08-31T14:42:02.707327+00:00",
   "registry_version": 3,
   "sources": [
     {
       "source": "blackmatrix7",
       "fetch": "github_raw",
-      "timestamp": "2026-08-31T08:48:34.912805+00:00",
+      "timestamp": "2026-08-31T14:41:40.241467+00:00",
       "files_ok": 139,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -1409,7 +1409,7 @@
     {
       "source": "metacubex",
       "fetch": "github_raw",
-      "timestamp": "2026-08-31T08:48:38.379658+00:00",
+      "timestamp": "2026-08-31T14:41:50.022745+00:00",
       "files_ok": 76,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -2182,7 +2182,7 @@
     {
       "source": "v2fly",
       "fetch": "github_raw",
-      "timestamp": "2026-08-31T08:48:40.857199+00:00",
+      "timestamp": "2026-08-31T14:41:59.733861+00:00",
       "files_ok": 56,
       "files_failed": 0,
       "empty_blocked": 0,
@@ -2194,8 +2194,8 @@
           "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/deepseek",
           "service": "deepseek",
           "local": "sources/v2fly/v2fly_deepseek",
-          "size": 27,
-          "sha256": "e30b03116775f65f5fe37e04668a2e9c6edf60450e9b07cd32debd9b94f838f1",
+          "size": 29,
+          "sha256": "52822c92e87fadcfdc6711133f1270ee77ef030459603a46cf6fa80f75856530",
           "status": "ok"
         },
         {
@@ -2514,8 +2514,8 @@
           "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/tencent",
           "service": "tencent",
           "local": "sources/v2fly/v2fly_tencent",
-          "size": 2258,
-          "sha256": "8ac9bb80ca69931558fc9b0061323955be5138e176edaf9e77ccd9080ca3f4e5",
+          "size": 2288,
+          "sha256": "09042c7860e9173031fd264727ca30ce30b96cc04fe7850eb39dbd953dc2333a",
           "status": "ok"
         },
         {
@@ -2714,8 +2714,8 @@
           "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-porn",
           "service": "restricted",
           "local": "sources/v2fly/v2fly_category_porn",
-          "size": 92745,
-          "sha256": "c4c8362d3b67d6351491950a82e434cfc89febf8aacbcf01f3e17f11d798e97e",
+          "size": 92721,
+          "sha256": "009b784b14e9fa09302e38efc6f278fc44802199055d3a9dc103da161dcf67e0",
           "status": "ok"
         },
         {
@@ -2755,7 +2755,7 @@
     {
       "source": "dler",
       "fetch": "github_raw",
-      "timestamp": "2026-08-31T08:48:41.758679+00:00",
+      "timestamp": "2026-08-31T14:42:02.706899+00:00",
       "files_ok": 20,
       "files_failed": 0,
       "empty_blocked": 0,

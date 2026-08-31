@@ -918,8 +918,8 @@
 {"d":"lydass.cn","s":[0,1,6],"r":[11],"t":"domain_suffix"}
 {"d":"status.alibabacloud.com","s":[0,1,6],"r":[11,12],"t":"domain_suffix"}
 {"d":"awsthinkbox.com","s":[0,1,3,5,6],"r":[15,21,129],"t":"domain_suffix"}
-{"d":"init-p01md.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
-{"d":"probe.siri.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"init-p01md.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
+{"d":"probe.siri.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"abcheadphones.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"apple.com.sg","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"appleone.club","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -960,7 +960,7 @@
 {"d":"live-voip.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"utvmuvpi.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"kufm.cn","s":[0],"r":[98],"t":"domain_suffix"}
-{"d":"vscode.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105],"t":"domain_suffix"}
+{"d":"vscode.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105,211],"t":"domain_suffix"}
 {"d":"microsoftads.com","s":[0,1,2,3,4,5,6,7],"r":[5,105],"t":"domain_suffix"}
 {"d":"hz.netease.com","s":[0,1],"r":[108],"t":"domain_suffix"}
 {"d":"nease.net","s":[0,1,2,3,4,5],"r":[5,38,108],"t":"domain_suffix"}
@@ -998,7 +998,7 @@
 {"d":"xxxhubvideos.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"xxxn.me","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"kanyouxi.com.cn","s":[0],"r":[139],"t":"domain_suffix"}
-{"d":"stun.threema.ch","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.threema.ch","s":[0],"r":[148,224],"t":"domain"}
 {"d":"dnse0.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"qcloudclass.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"qeodns.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

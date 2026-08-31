@@ -930,8 +930,8 @@
 {"d":"azure-devices.net","s":[0,1,3,5,6,7],"r":[22,105,129],"t":"domain_suffix"}
 {"d":"management-azure-devices-provisioning.cn","s":[0,1,6,7],"r":[22,105],"t":"domain_suffix"}
 {"d":"bcelive.com","s":[0,1,6],"r":[24,38],"t":"domain_suffix"}
-{"d":"vod-dash-uk-live.akamaized.net","s":[0,3,5,7],"r":[26,129],"t":"domain"}
-{"d":"3geauymtsgrzdnqbofa5do.ourdvsss.com","s":[0,1,6,7],"r":[27],"t":"domain"}
+{"d":"vod-dash-uk-live.akamaized.net","s":[0,3,5,7],"r":[26,129,192],"t":"domain"}
+{"d":"3geauymtsgrzdnqbofa5do.ourdvsss.com","s":[0,1,6,7],"r":[27,193],"t":"domain"}
 {"d":"dbbuilding.fun","s":[0,1,6],"r":[33,38,58],"t":"domain_suffix"}
 {"d":"icphoto.cn","s":[0,1,6],"r":[33],"t":"domain_suffix"}
 {"d":"tiktokv.eu","s":[0,1,3,5,6,7],"r":[33,129,155],"t":"domain_suffix"}
@@ -941,7 +941,7 @@
 {"d":"xingtu.cn","s":[0,1,6],"r":[33],"t":"domain_suffix"}
 {"d":"cntv.cn","s":[0,1],"r":[36],"t":"domain_suffix"}
 {"d":"cmbuat.com","s":[0,1],"r":[38,44],"t":"domain_suffix"}
-{"d":"gateway.bingviz.microsoftapp.net","s":[0,2,3,4,5],"r":[5,45],"t":"domain"}
+{"d":"gateway.bingviz.microsoftapp.net","s":[0,2,3,4,5],"r":[5,45,196],"t":"domain"}
 {"d":"ctrip.com","s":[0,1],"r":[38,46],"t":"domain_suffix"}
 {"d":"izuchebao.com","s":[0,1],"r":[38,46],"t":"domain_suffix"}
 {"d":"deno.land","s":[0,1,3,5],"r":[51,129],"t":"domain_suffix"}
@@ -966,7 +966,7 @@
 {"d":"microsoft.fi","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"userpxt.io","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"naver.net","s":[0,3,5],"r":[107,129],"t":"domain_suffix"}
-{"d":"h-netflix.online-metrix.net","s":[0,1,6,7],"r":[109],"t":"domain"}
+{"d":"h-netflix.online-metrix.net","s":[0,1,6,7],"r":[109,213],"t":"domain"}
 {"d":"netflixdnstest5.com","s":[0,1,3,5,6,7],"r":[109,129],"t":"domain_suffix"}
 {"d":"wiifit.com","s":[0,3,5],"r":[111,129],"t":"domain_suffix"}
 {"d":"i-o-u.info","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}

@@ -59,7 +59,7 @@
 {"d":"fnbofnniglobalprod.112.2o7.net","s":[2],"r":[3,4],"t":"domain_suffix"}
 {"d":"g1584674684.co","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"gojunkclean.cn","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
-{"d":"google-analytics.com","s":[0,1,2,3,4,5,6],"r":[3,4,5,77,129],"t":"domain_suffix"}
+{"d":"google-analytics.com","s":[0,1,2,3,4,5,6],"r":[3,4,5,77,129,206],"t":"domain_suffix"}
 {"d":"green-red.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"hdyfhpoi.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"hyros-prod-tracking-elb-1961909740.us-east-1.elb.amazonaws.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
@@ -920,8 +920,8 @@
 {"d":"zzuccikqt.com","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"47.254.0.0/16","s":[0,1,6],"r":[11],"t":"ip_cidr"}
 {"d":"aws.dev","s":[0,1,3,5,6],"r":[15,21,129],"t":"domain_suffix"}
-{"d":"appleid.cdn-apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
-{"d":"devstreaming-cdn.apple.com","s":[0,1,6,7],"r":[17,51],"t":"domain_suffix"}
+{"d":"appleid.cdn-apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
+{"d":"devstreaming-cdn.apple.com","s":[0,1,6,7],"r":[17,51,188],"t":"domain_suffix"}
 {"d":"beatspascher-fr.net","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"cdn-cn4.apple-mapkit.com","s":[0,1,6,7],"r":[17,51],"t":"domain_suffix"}
 {"d":"detaliczny.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -941,7 +941,7 @@
 {"d":"psg-int-eastus.cloudapp.net","s":[0,1,3,5,6,7],"r":[51,105,129],"t":"domain_suffix"}
 {"d":"snapcraft.io","s":[0,1,3,5],"r":[51,129],"t":"domain_suffix"}
 {"d":"didialift.com","s":[0,1],"r":[38,53],"t":"domain_suffix"}
-{"d":"discord-attachments-uploads-prd.storage.googleapis.com","s":[0,3,5,6,7],"r":[55,129],"t":"domain_suffix"}
+{"d":"discord-attachments-uploads-prd.storage.googleapis.com","s":[0,3,5,6,7],"r":[55,129,197],"t":"domain_suffix"}
 {"d":"disneysrivieraresort.com","s":[0,3,5,7],"r":[56,129],"t":"domain_suffix"}
 {"d":"commandandconquer.com","s":[0,3,5],"r":[62,129],"t":"domain_suffix"}
 {"d":"google.ps","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
@@ -955,7 +955,7 @@
 {"d":"18t0f515a3.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"waxsivk.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"219.145.171.0/24","s":[0],"r":[98],"t":"ip_cidr"}
-{"d":"statics-marketingsites-eus-ms-com.akamaized.net","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
+{"d":"statics-marketingsites-eus-ms-com.akamaized.net","s":[0,1,3,5,6,7],"r":[105,129,211],"t":"domain_suffix"}
 {"d":"asobostudio.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"breakdown.me","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"officedev.cn","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}

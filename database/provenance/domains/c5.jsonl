@@ -889,14 +889,14 @@
 {"d":"zkhjsta.beauty","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"zornek.shop","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"zuoqy.com","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
-{"d":"makersuite.google.com","s":[0,1,7],"r":[7,9,73],"t":"domain"}
+{"d":"makersuite.google.com","s":[0,1,7],"r":[7,9,73,204],"t":"domain"}
 {"d":"airbnb.com.ar","s":[1,3,5,6],"r":[8,129],"t":"domain_suffix"}
 {"d":"laiwang.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"xiami.net","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"amazon.ca","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
-{"d":"cstat.cdn-apple.com","s":[0,1,2,3,4,5,6,7],"r":[5,17],"t":"domain_suffix"}
-{"d":"init-kt.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
-{"d":"swscan.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"cstat.cdn-apple.com","s":[0,1,2,3,4,5,6,7],"r":[5,17,188],"t":"domain_suffix"}
+{"d":"init-kt.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
+{"d":"swscan.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"applecare.cc","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"beatsbydrestudio-australia.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"cnshopin.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -914,7 +914,7 @@
 {"d":"olympicchannelchina.cn","s":[0,1],"r":[36],"t":"domain_suffix"}
 {"d":"cloudflarebolt.com","s":[0,1,3,5,6],"r":[43,129],"t":"domain_suffix"}
 {"d":"vscode-cdn.net","s":[0,1,3,5,6,7],"r":[51,105,129],"t":"domain_suffix"}
-{"d":"hammerandchisel.ssl.zendesk.com","s":[0,3,5,6,7],"r":[55,129],"t":"domain_suffix"}
+{"d":"hammerandchisel.ssl.zendesk.com","s":[0,3,5,6,7],"r":[55,129,197],"t":"domain_suffix"}
 {"d":"crececonebay.com","s":[0,3,5,6],"r":[63,129],"t":"domain_suffix"}
 {"d":"shopibay.net","s":[0,3,5,6],"r":[63,129],"t":"domain_suffix"}
 {"d":"facebook-pmdcenter.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
@@ -927,7 +927,7 @@
 {"d":"hboasialive.akamaized.net","s":[0],"r":[81],"t":"domain_suffix"}
 {"d":"hbomaxcdn.com","s":[0,3,5],"r":[81,129],"t":"domain_suffix"}
 {"d":"jdl.com.cn","s":[0,1],"r":[94],"t":"domain_suffix"}
-{"d":"rsm.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105],"t":"domain_suffix"}
+{"d":"rsm.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105,211],"t":"domain_suffix"}
 {"d":"lync.com","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"microsoftnews.cn","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"microsoftstart.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
@@ -960,7 +960,7 @@
 {"d":"roblox.fr","s":[1,3,5,6],"r":[129,134],"t":"domain_suffix"}
 {"d":"singlelogin.me","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
 {"d":"sogo.com","s":[0,1,6],"r":[38,142,151],"t":"domain_suffix"}
-{"d":"steammobile.akamaized.net","s":[0,3,5,6,7],"r":[129,146],"t":"domain_suffix"}
+{"d":"steammobile.akamaized.net","s":[0,3,5,6,7],"r":[129,146,223],"t":"domain_suffix"}
 {"d":"fymallqa9.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"tclouddrive.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"101.32.104.56/32","s":[0,1,6],"r":[151],"t":"ip_cidr"}

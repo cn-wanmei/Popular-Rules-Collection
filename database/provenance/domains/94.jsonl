@@ -893,7 +893,7 @@
 {"d":"hzchengdun.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"mobmore.com","s":[0,1,2,3,4,5,6],"r":[5,11,38],"t":"domain_suffix"}
 {"d":"52.200.0.0/13","s":[0,1,6],"r":[15],"t":"ip_cidr"}
-{"d":"init-p01st-lb.push-apple.com.akadns.net","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"init-p01st-lb.push-apple.com.akadns.net","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"appleiphone.net","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"beatsbydreboxingdayca.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"beatsbydresaleonlines-nz.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -933,7 +933,7 @@
 {"d":"jcloudwaftest.com","s":[0,1],"r":[38,94],"t":"domain_suffix"}
 {"d":"jdcloudedge.net","s":[0,1],"r":[38,94],"t":"domain_suffix"}
 {"d":"1blx503444.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
-{"d":"oemsoc.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105],"t":"domain_suffix"}
+{"d":"oemsoc.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105,211],"t":"domain_suffix"}
 {"d":"microsoftcloud.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"microsoftstore.com.cn","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"afa7f374f51cc8991.awsglobalaccelerator.com","s":[1,3,5],"r":[110,129],"t":"domain_suffix"}

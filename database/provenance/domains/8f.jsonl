@@ -920,7 +920,7 @@
 {"d":"facebookw.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"favebook.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"rawgithub.com","s":[0,1,3,5,6],"r":[74,75,129],"t":"domain_suffix"}
-{"d":"avail.googleflights.net","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
+{"d":"avail.googleflights.net","s":[0,1,3,5,6],"r":[77,129,206],"t":"domain_suffix"}
 {"d":"scholar.google.lu","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
 {"d":"xn--ggle-55da.com","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
 {"d":"hbogoasia.hk","s":[0,3,5],"r":[81,129],"t":"domain_suffix"}
@@ -966,9 +966,9 @@
 {"d":"lolpcs.com","s":[0,3,5],"r":[129,133],"t":"domain_suffix"}
 {"d":"mpg.de","s":[0,1,7],"r":[38,136],"t":"domain_suffix"}
 {"d":"zotero.org","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
-{"d":"audio4-ak-spotify-com.akamaized.net","s":[0,3,5,6,7],"r":[129,145],"t":"domain"}
-{"d":"stun.galeriemagnet.at","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.rynga.com","s":[0],"r":[148],"t":"domain"}
+{"d":"audio4-ak-spotify-com.akamaized.net","s":[0,3,5,6,7],"r":[129,145,222],"t":"domain"}
+{"d":"stun.galeriemagnet.at","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.rynga.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"twimg.org","s":[0,1,6],"r":[159],"t":"domain_suffix"}
 {"d":"poiuytw.com","s":[0,1],"r":[38,175],"t":"domain_suffix"}
 {"d":"mi-static.com","s":[0,1],"r":[38,177],"t":"domain_suffix"}

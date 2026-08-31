@@ -876,7 +876,7 @@
 {"d":"icloudbrowser.net","s":[0,1,3,5,6,7],"r":[17,90,129],"t":"domain_suffix"}
 {"d":"livephotos.tv","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"mac.com.au","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
-{"d":"mvod.itunes.apple.com","s":[0,1,6,7],"r":[17,18],"t":"domain"}
+{"d":"mvod.itunes.apple.com","s":[0,1,6,7],"r":[17,18,189],"t":"domain"}
 {"d":"xn--gtvq61aiijy0b.xn--hxt814e","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"azure-test.net","s":[0,1,3,5,6,7],"r":[22,105,129],"t":"domain_suffix"}
 {"d":"baidu.mobi","s":[0,1,6],"r":[24,38],"t":"domain_suffix"}
@@ -919,8 +919,8 @@
 {"d":"nearme.com.cn","s":[0],"r":[116],"t":"domain_suffix"}
 {"d":"pa9pal.com","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
 {"d":"xoomcom.com","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
-{"d":"anime-tracker.aruku.kro.kr","s":[0,2,3,4,5],"r":[5,128],"t":"domain"}
-{"d":"banananetwork.qzz.io","s":[0],"r":[128],"t":"domain"}
+{"d":"anime-tracker.aruku.kro.kr","s":[0,2,3,4,5],"r":[5,128,218],"t":"domain"}
+{"d":"banananetwork.qzz.io","s":[0],"r":[128,218],"t":"domain"}
 {"d":"reddit.map.fastly.net","s":[0,1,6],"r":[131],"t":"domain_suffix"}
 {"d":"redditmedia.com","s":[0,1,3,5,6],"r":[74,129,131],"t":"domain_suffix"}
 {"d":"(^|\\.)91p[0-9][0-9]?\\.com$","s":[1,6],"r":[132],"t":"domain_regex"}
@@ -956,8 +956,8 @@
 {"d":"yourfreeporn.tv","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"zhimeishe888.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"gale.com","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
-{"d":"stun.ixc.ua","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.skydrone.aero","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.ixc.ua","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.skydrone.aero","s":[0],"r":[148,224],"t":"domain"}
 {"d":"dcloudsp.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"192.133.76.0/22","s":[0,1,6],"r":[159],"t":"ip_cidr"}
 {"d":"airstarfinance.net","s":[0,1],"r":[38,177],"t":"domain_suffix"}

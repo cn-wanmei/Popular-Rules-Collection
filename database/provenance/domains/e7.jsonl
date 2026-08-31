@@ -905,8 +905,8 @@
 {"d":"powerbook.eu","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"baidu-bank.cn","s":[0,1,6],"r":[24],"t":"domain_suffix"}
 {"d":"battlenet.com.cn","s":[0],"r":[25],"t":"domain_suffix"}
-{"d":"36-25-252-1.ksyungslb.com","s":[0,1,6,7],"r":[27],"t":"domain"}
-{"d":"3geauymtsgrzdrcbzfahue.ourdvsss.com","s":[0,1,6,7],"r":[27],"t":"domain"}
+{"d":"36-25-252-1.ksyungslb.com","s":[0,1,6,7],"r":[27,193],"t":"domain"}
+{"d":"3geauymtsgrzdrcbzfahue.ourdvsss.com","s":[0,1,6,7],"r":[27,193],"t":"domain"}
 {"d":"bfcdnbf.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
 {"d":"cozeapp.net","s":[0,1,6],"r":[33,38,58],"t":"domain_suffix"}
 {"d":"feishu-psc.cn","s":[0,1,6],"r":[33],"t":"domain_suffix"}
@@ -919,7 +919,7 @@
 {"d":"ebaymarketplace.net","s":[0,3,5,6],"r":[63,129],"t":"domain_suffix"}
 {"d":"movie.xeton.dev","s":[0],"r":[66],"t":"domain_suffix"}
 {"d":"playparagon.com","s":[0,3,5],"r":[67,129],"t":"domain_suffix"}
-{"d":"redirector.gvt1.com","s":[0,1,6],"r":[38,77],"t":"domain_suffix"}
+{"d":"redirector.gvt1.com","s":[0,1,6],"r":[38,77,206],"t":"domain_suffix"}
 {"d":"gateway.dev","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
 {"d":"google.cf","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"youtube.co.kr","s":[0,1,3,5,6,7],"r":[77,129,180],"t":"domain_suffix"}
@@ -967,11 +967,11 @@
 {"d":"theporndude.com","s":[1,3,5,6],"r":[74,129,132],"t":"domain_suffix"}
 {"d":"xfantazy.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"m.sohu","s":[0],"r":[142],"t":"domain_suffix"}
-{"d":"steamcommunity-a.akamaihd.net.edgesuite.net","s":[0,3,5,6,7],"r":[129,146],"t":"domain"}
+{"d":"steamcommunity-a.akamaihd.net.edgesuite.net","s":[0,3,5,6,7],"r":[129,146,223],"t":"domain"}
 {"d":"steamstore","s":[0,6,7],"r":[146],"t":"domain_keyword"}
-{"d":"stun.bethesda.net","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.lineaencasa.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.telbo.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.bethesda.net","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.lineaencasa.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.telbo.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"vxo7tu.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"::ffff:183.161.149.105/128","s":[0],"r":[152],"t":"ip_cidr6"}
 {"d":"vhxqa2.com","s":[0,3,5],"r":[129,164],"t":"domain_suffix"}

@@ -9,16 +9,15 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 15 |
+| Domains | 0 |
 | IP/CIDR | 26 |
-| Mixed | 41 |
+| Mixed | 26 |
 | Sources | blackmatrix7, dler |
 | Updated | 2026-08-31 |
 
 ## 基础规则（Classical）
 
 - 混合：[`googlefcm.list`](./googlefcm.list)
-- 域名：[`googlefcm_domain.list`](./googlefcm_domain.list)
 - IP：[`googlefcm_ip.list`](./googlefcm_ip.list)
 
 ## 客户端订阅

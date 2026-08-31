@@ -873,7 +873,7 @@
 {"d":"utoken.umeng.com","s":[0,1,2,3,4,5,6],"r":[5,11],"t":"domain_suffix"}
 {"d":"106.11.0.0/16","s":[0,1,6],"r":[11,179],"t":"ip_cidr"}
 {"d":"54.156.0.0/14","s":[0,1,6],"r":[15],"t":"ip_cidr"}
-{"d":"oscdn.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"oscdn.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"amp-api.podcasts.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
 {"d":"apple.com.co","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"appleid.hamburg","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -881,8 +881,8 @@
 {"d":"igoshopping.net","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"monsterbeats-cheap.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"azure.microsoft.com","s":[0,1,3,5,6,7],"r":[22,105,129],"t":"domain_suffix"}
-{"d":"1gr3uomttgr31hcjo8yzdnpy.ourdvsss.com","s":[0,1,6,7],"r":[27],"t":"domain"}
-{"d":"roovza.launches.appsflyersdk.com","s":[0,1,3,5,6,7],"r":[33,129,155],"t":"domain_suffix"}
+{"d":"1gr3uomttgr31hcjo8yzdnpy.ourdvsss.com","s":[0,1,6,7],"r":[27,193],"t":"domain"}
+{"d":"roovza.launches.appsflyersdk.com","s":[0,1,3,5,6,7],"r":[33,129,155,194,229],"t":"domain_suffix"}
 {"d":"bytefcdnrd-tob.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
 {"d":"bytegslb.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
 {"d":"byteplusapi-test.com.cn","s":[0,1,6],"r":[33],"t":"domain_suffix"}
@@ -940,9 +940,9 @@
 {"d":"yinac.xyz","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"oxfordre.com","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
 {"d":"steamgames.com","s":[0,3,5,6,7],"r":[129,146],"t":"domain_suffix"}
-{"d":"stun.taxsee.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.vadacom.co.nz","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.yesdates.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.taxsee.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.vadacom.co.nz","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.yesdates.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"adping.qq.com","s":[0,1,2,3,4,5,6],"r":[5,151],"t":"domain_suffix"}
 {"d":"tdnsv2.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"yximg.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}

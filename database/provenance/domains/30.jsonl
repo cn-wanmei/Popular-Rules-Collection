@@ -899,7 +899,7 @@
 {"d":"2606:4700::/32","s":[0,1,6],"r":[43],"t":"ip_cidr6"}
 {"d":"openaicom-api","s":[0],"r":[45],"t":"domain_keyword"}
 {"d":"facebookappcenter.info","s":[0,1,3,5,6],"r":[51,68,129],"t":"domain_suffix"}
-{"d":"productionresultssa0.blob.core.windows.net","s":[0,1,3,5,6,7],"r":[51,75,105,129],"t":"domain_suffix"}
+{"d":"productionresultssa0.blob.core.windows.net","s":[0,1,3,5,6,7],"r":[51,75,105,129,205,211],"t":"domain_suffix"}
 {"d":"emby.prprcloud.com","s":[0],"r":[66],"t":"domain_suffix"}
 {"d":"52.58.209.134/32","s":[0,1,6],"r":[68],"t":"ip_cidr"}
 {"d":"google.co.vi","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
@@ -915,7 +915,7 @@
 {"d":"sprinklesapp.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"bowsersinsidestory.com","s":[0,3,5],"r":[111,129],"t":"domain_suffix"}
 {"d":"cash2.com","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
-{"d":"tracker.kuroy.me","s":[0],"r":[128],"t":"domain"}
+{"d":"tracker.kuroy.me","s":[0],"r":[128,218],"t":"domain"}
 {"d":"aidoru-online.me","s":[0],"r":[128],"t":"domain_suffix"}
 {"d":"16885858.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"bigboobvanessay.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -949,8 +949,8 @@
 {"d":"wbimg.com.cn","s":[0],"r":[139],"t":"domain_suffix"}
 {"d":"dm518.cn","s":[0],"r":[142],"t":"domain_suffix"}
 {"d":"steamstat.us","s":[0,6,7],"r":[146],"t":"domain_suffix"}
-{"d":"stun.jumblo.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.vozelia.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.jumblo.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.vozelia.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"97ting.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"myqcloud.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"tencentbyod.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

@@ -962,8 +962,8 @@
 {"d":"facebool.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"facecbgook.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"fmcebook.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
-{"d":"app-measurement-cn.com","s":[0,1,2,3,4,5,6],"r":[5,38,77,129],"t":"domain_suffix"}
-{"d":"fonts.gstatic.com","s":[0,1,6],"r":[77],"t":"domain_suffix"}
+{"d":"app-measurement-cn.com","s":[0,1,2,3,4,5,6],"r":[5,38,77,129,206],"t":"domain_suffix"}
+{"d":"fonts.gstatic.com","s":[0,1,6],"r":[77,206],"t":"domain_suffix"}
 {"d":"unfiltered.news","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
 {"d":"hwcdnsre.cn","s":[0,1,6],"r":[85],"t":"domain_suffix"}
 {"d":"hwmap.cn","s":[0,1,6],"r":[85],"t":"domain_suffix"}
@@ -978,7 +978,7 @@
 {"d":"yammerusercontent.com","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"supermariogalaxy.com","s":[0,3,5],"r":[111,129],"t":"domain_suffix"}
 {"d":"openai","s":[0,1,6],"r":[115],"t":"domain_keyword"}
-{"d":"nyaa.tracker.wf","s":[0],"r":[128],"t":"domain"}
+{"d":"nyaa.tracker.wf","s":[0],"r":[128,218],"t":"domain"}
 {"d":"59mvmv.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"bigindiansex.mobi","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"bisyoujyogyaruge.topaz.ne.jp","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -1005,11 +1005,11 @@
 {"d":"els-cdn.com","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
 {"d":"oxfordlawtrove.com","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
 {"d":"kandian.cn","s":[0],"r":[139],"t":"domain_suffix"}
-{"d":"steamstore-a.akamaihd.net","s":[0,3,5,6,7],"r":[129,146],"t":"domain_suffix"}
+{"d":"steamstore-a.akamaihd.net","s":[0,3,5,6,7],"r":[129,146,223],"t":"domain_suffix"}
 {"d":"dota2.wmsj.cn","s":[0,6,7],"r":[146],"t":"domain_suffix"}
-{"d":"stun.landvast.nl","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.nanocosmos.de","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.nexphone.ch","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.landvast.nl","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.nanocosmos.de","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.nexphone.ch","s":[0],"r":[148,224],"t":"domain"}
 {"d":"hdyxgame.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"tencentelasticsearch.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"weui.io","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

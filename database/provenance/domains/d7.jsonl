@@ -908,7 +908,7 @@
 {"d":"grok.com","s":[0,1,3,5,6,7],"r":[7,9,74,129,159,173],"t":"domain_suffix"}
 {"d":"airbnb.gy","s":[1,3,5,6],"r":[8,129],"t":"domain_suffix"}
 {"d":"ss2.us","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
-{"d":"pba0.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"pba0.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"applecarbon.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"beatsbydreonlines-uk.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"beatsbydrespeakers.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -921,7 +921,7 @@
 {"d":"baiduxiaodai.cn","s":[0,1,6],"r":[24],"t":"domain_suffix"}
 {"d":"haokan.com","s":[0,1,6],"r":[24,38],"t":"domain_suffix"}
 {"d":"bilibiligame.cn","s":[0,1,6,7],"r":[27],"t":"domain_suffix"}
-{"d":"roovza.inapps.appsflyersdk.com","s":[0,1,3,5,6,7],"r":[33,129,155],"t":"domain_suffix"}
+{"d":"roovza.inapps.appsflyersdk.com","s":[0,1,3,5,6,7],"r":[33,129,155,194,229],"t":"domain_suffix"}
 {"d":"byted.org","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
 {"d":"douyinvod.com","s":[0,1,6,7],"r":[33,38,59],"t":"domain_suffix"}
 {"d":"idouyinpic.com","s":[0,1,6,7],"r":[33,38,59],"t":"domain_suffix"}
@@ -978,8 +978,8 @@
 {"d":"xxxaporn.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"yinmh.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"sinajs.com","s":[0,1],"r":[38,139],"t":"domain_suffix"}
-{"d":"stun.bearstech.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.simlar.org","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.bearstech.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.simlar.org","s":[0],"r":[148,224],"t":"domain"}
 {"d":"2a01:4f9:4b:4c8f::2","s":[0],"r":[148],"t":"ip_cidr6"}
 {"d":"openmidas.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"mi-cdn.com","s":[0,1],"r":[38,177],"t":"domain_suffix"}

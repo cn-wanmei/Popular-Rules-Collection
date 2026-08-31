@@ -933,13 +933,13 @@
 {"d":"6p7q8c3oa4.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"kwairia4qs5e76v52z.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"ukve4smo9gapv.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
-{"d":"shell.cdn.office.net","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
+{"d":"shell.cdn.office.net","s":[0,1,6,7],"r":[105,211],"t":"domain_suffix"}
 {"d":"1drv","s":[0,1,6,7],"r":[105,114],"t":"domain_keyword"}
 {"d":"ankarazirvesi2018.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"ms365surfaceoffer.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"windows.com.akadns.net","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"xbox","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
-{"d":"e13252.dscg.akamaiedge.net","s":[0,1,6,7],"r":[109],"t":"domain"}
+{"d":"e13252.dscg.akamaiedge.net","s":[0,1,6,7],"r":[109,213],"t":"domain"}
 {"d":"(^|\\.)tqav[1-9][0-9]\\.com$","s":[1,6],"r":[132],"t":"domain_regex"}
 {"d":"16fhgdty.xyz","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"adultgamestop.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -967,8 +967,8 @@
 {"d":"xxxner.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"leagueoflegendsscripts.com","s":[0,3,5],"r":[129,133],"t":"domain_suffix"}
 {"d":"sc2yun.com","s":[0,1],"r":[38,139],"t":"domain_suffix"}
-{"d":"stun.genymotion.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.mixvoip.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.genymotion.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.mixvoip.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"telegram.me","s":[0,3,5,6,7],"r":[74,129,150],"t":"domain_suffix"}
 {"d":"eu-frankfurt.tencentcos.com","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"smtcdns.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

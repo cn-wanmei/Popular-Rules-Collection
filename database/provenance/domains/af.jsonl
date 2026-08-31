@@ -824,7 +824,7 @@
 {"d":"shuqireader.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"amazon-fashions.com","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
 {"d":"static.siege-amazon.com","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
-{"d":"dd-cdn.origin-apple.com.akadns.net","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"dd-cdn.origin-apple.com.akadns.net","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"amp-api-edge.music.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
 {"d":"apple-mapkit.com","s":[0,1,3,5,6,7],"r":[17,51,129],"t":"domain_suffix"}
 {"d":"apple.lv","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -839,7 +839,7 @@
 {"d":"skl.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
 {"d":"aiqicha.cn","s":[0,1,6],"r":[24],"t":"domain_suffix"}
 {"d":"bdycdn.com","s":[0,1,6],"r":[24,38],"t":"domain_suffix"}
-{"d":"upos-hz-mirrorakam.akamaized.net","s":[0,1,6,7],"r":[27,38],"t":"domain_suffix"}
+{"d":"upos-hz-mirrorakam.akamaized.net","s":[0,1,6,7],"r":[27,38,193],"t":"domain_suffix"}
 {"d":"bilibilipay.com","s":[0,1,6,7],"r":[27,38],"t":"domain_suffix"}
 {"d":"tiktokrow-cdn.com","s":[0,1,3,5,6,7],"r":[33,38,129,155],"t":"domain_suffix"}
 {"d":"diditaxi.com.cn","s":[0],"r":[53],"t":"domain_suffix"}
@@ -859,13 +859,13 @@
 {"d":"ywvzxeau.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"218.95.139.0/24","s":[0],"r":[98],"t":"ip_cidr"}
 {"d":"nhncorp.jp","s":[0,3,5,6],"r":[101,107,129],"t":"domain_suffix"}
-{"d":"msproduct.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105],"t":"domain_suffix"}
+{"d":"msproduct.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105,211],"t":"domain_suffix"}
 {"d":"(^|\\.)dualstack\\.ichnaea-web-.+\\.amazonaws\\.com$","s":[0,1,6,7],"r":[109],"t":"domain_regex"}
 {"d":"notion.new","s":[0,3,5,6],"r":[112,129],"t":"domain_suffix"}
 {"d":"paypal","s":[0,7],"r":[119],"t":"domain_keyword"}
 {"d":"paypal-cash.com","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
 {"d":"paypal-donations.com","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
-{"d":"open.stealth.si","s":[0],"r":[128],"t":"domain"}
+{"d":"open.stealth.si","s":[0],"r":[128,218],"t":"domain"}
 {"d":"adultlister.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"bai29.xyz","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"candycumcity.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -895,7 +895,7 @@
 {"d":"leagueoflegends.info","s":[0,3,5],"r":[129,133],"t":"domain_suffix"}
 {"d":"dentalhypotheses.com","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
 {"d":"endnote.com","s":[0,7],"r":[136],"t":"domain_suffix"}
-{"d":"stun.eol.co.nz","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.eol.co.nz","s":[0],"r":[148,224],"t":"domain"}
 {"d":"acctdns.net","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"qcloud.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"tdnsstic1.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}

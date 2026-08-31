@@ -924,14 +924,14 @@
 {"d":"zowarv.treasurewaitlng.net","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"openspec.dev","s":[1,3,5],"r":[7,129],"t":"domain_suffix"}
 {"d":"tapnow.ai","s":[1,3,5],"r":[7,129],"t":"domain_suffix"}
-{"d":"api.github.com","s":[7],"r":[9],"t":"domain"}
+{"d":"api.github.com","s":[7],"r":[9,185],"t":"domain"}
 {"d":"augmentcode.com","s":[7],"r":[9],"t":"domain_suffix"}
 {"d":"intercomcdn.com","s":[0,1,3,5,6,7],"r":[9,45,115,129],"t":"domain_suffix"}
 {"d":"prodregistryv2.org","s":[7],"r":[9],"t":"domain_suffix"}
 {"d":"1688.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"kindleoasis.us","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
-{"d":"mesu.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
-{"d":"weather-map.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"mesu.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
+{"d":"weather-map.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"apple.si","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"axm-usercontent-apple.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"beatsallsale.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -975,7 +975,7 @@
 {"d":"paypal-learning.com","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
 {"d":"paypal-viewpoints.net","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
 {"d":"olatop.com","s":[0,1],"r":[38,123],"t":"domain_suffix"}
-{"d":"tracker.plx.im","s":[0],"r":[128],"t":"domain"}
+{"d":"tracker.plx.im","s":[0],"r":[128,218],"t":"domain"}
 {"d":"pussytorrents.org","s":[0],"r":[128],"t":"domain_suffix"}
 {"d":"soulvoice.club","s":[0],"r":[128],"t":"domain_suffix"}
 {"d":"141hongkong.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -1004,8 +1004,8 @@
 {"d":"watchmygirlfriend.tv","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"sinaedge.com","s":[0,1],"r":[38,139],"t":"domain_suffix"}
 {"d":"soundcloud.com","s":[0,3,5,7],"r":[74,129,143],"t":"domain_suffix"}
-{"d":"stun.cheapvoip.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.halonet.pl","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.cheapvoip.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.halonet.pl","s":[0],"r":[148,224],"t":"domain"}
 {"d":"computeinit.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"dnspod.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"58.49.111.117/32","s":[0],"r":[152],"t":"ip_cidr"}

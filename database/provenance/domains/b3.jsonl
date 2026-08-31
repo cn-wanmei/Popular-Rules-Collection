@@ -903,7 +903,7 @@
 {"d":"watch-ebay.org","s":[0,3,5,6],"r":[63,129],"t":"domain_suffix"}
 {"d":"faceboak.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"rawgit.com","s":[0,1,3,5,6],"r":[74,75,129],"t":"domain_suffix"}
-{"d":"update.googleapis.com","s":[0,1,6],"r":[77],"t":"domain_suffix"}
+{"d":"update.googleapis.com","s":[0,1,6],"r":[77,206],"t":"domain_suffix"}
 {"d":"blogspot.ae","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"dclk","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
 {"d":"google.ws","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
@@ -954,7 +954,7 @@
 {"d":"xnxx.tv","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"xvedo.net","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"booksc.org","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
-{"d":"stun.alberon.cz","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.alberon.cz","s":[0],"r":[148,224],"t":"domain"}
 {"d":"2a0a:f280::/32","s":[0,6,7],"r":[150],"t":"ip_cidr6"}
 {"d":"ap-mumbai.myqcloud.com","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"ffbuddy.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

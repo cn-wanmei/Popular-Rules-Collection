@@ -1,0 +1,34 @@
+{
+  "mode": "shadow",
+  "results": [
+    {
+      "name": "schema_fail",
+      "gate": "schema_validate",
+      "expect_action": "BLOCK_BUILD",
+      "actual": "BLOCK_BUILD",
+      "pass": true
+    },
+    {
+      "name": "size_fail",
+      "gate": "size_gate",
+      "expect_action": "BLOCK_RELEASE",
+      "actual": "BLOCK_RELEASE",
+      "pass": true
+    },
+    {
+      "name": "icon_soft",
+      "gate": "icon_coverage",
+      "expect_action": "INFO",
+      "actual": "INFO",
+      "pass": true
+    },
+    {
+      "name": "growth_warn",
+      "gate": "growth_anomaly",
+      "expect_action": "WARN",
+      "actual": "WARN",
+      "pass": true
+    }
+  ],
+  "all_pass": true
+}

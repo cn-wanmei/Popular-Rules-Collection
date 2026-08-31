@@ -1,0 +1,237 @@
+{
+  "corpus": [
+    "openai",
+    "github",
+    "telegram",
+    "apple",
+    "google"
+  ],
+  "results": [
+    {
+      "service": "openai",
+      "clients": {
+        "mihomo": {
+          "artifact": true,
+          "files": [
+            "generated/mihomo/openai.yaml",
+            "generated/mihomo/openai.list"
+          ]
+        },
+        "surge": {
+          "artifact": true,
+          "files": [
+            "generated/surge/openai.list"
+          ]
+        },
+        "shadowrocket": {
+          "artifact": true,
+          "files": [
+            "generated/shadowrocket/openai.list"
+          ]
+        },
+        "quantumultx": {
+          "artifact": false,
+          "files": []
+        },
+        "loon": {
+          "artifact": true,
+          "files": [
+            "generated/loon/openai.list"
+          ]
+        },
+        "egern": {
+          "artifact": true,
+          "files": [
+            "generated/egern/openai.yaml"
+          ]
+        },
+        "singbox": {
+          "artifact": false,
+          "files": []
+        }
+      },
+      "status": "GAP"
+    },
+    {
+      "service": "github",
+      "clients": {
+        "mihomo": {
+          "artifact": true,
+          "files": [
+            "generated/mihomo/github.list",
+            "generated/mihomo/github.yaml"
+          ]
+        },
+        "surge": {
+          "artifact": true,
+          "files": [
+            "generated/surge/github.list"
+          ]
+        },
+        "shadowrocket": {
+          "artifact": true,
+          "files": [
+            "generated/shadowrocket/github.list"
+          ]
+        },
+        "quantumultx": {
+          "artifact": false,
+          "files": []
+        },
+        "loon": {
+          "artifact": true,
+          "files": [
+            "generated/loon/github.list"
+          ]
+        },
+        "egern": {
+          "artifact": true,
+          "files": [
+            "generated/egern/github.yaml"
+          ]
+        },
+        "singbox": {
+          "artifact": false,
+          "files": []
+        }
+      },
+      "status": "GAP"
+    },
+    {
+      "service": "telegram",
+      "clients": {
+        "mihomo": {
+          "artifact": true,
+          "files": [
+            "generated/mihomo/telegram.list",
+            "generated/mihomo/telegram.yaml"
+          ]
+        },
+        "surge": {
+          "artifact": true,
+          "files": [
+            "generated/surge/telegram.list"
+          ]
+        },
+        "shadowrocket": {
+          "artifact": true,
+          "files": [
+            "generated/shadowrocket/telegram.list"
+          ]
+        },
+        "quantumultx": {
+          "artifact": false,
+          "files": []
+        },
+        "loon": {
+          "artifact": true,
+          "files": [
+            "generated/loon/telegram.list"
+          ]
+        },
+        "egern": {
+          "artifact": true,
+          "files": [
+            "generated/egern/telegram.yaml"
+          ]
+        },
+        "singbox": {
+          "artifact": false,
+          "files": []
+        }
+      },
+      "status": "GAP"
+    },
+    {
+      "service": "apple",
+      "clients": {
+        "mihomo": {
+          "artifact": true,
+          "files": [
+            "generated/mihomo/apple.yaml",
+            "generated/mihomo/apple.list"
+          ]
+        },
+        "surge": {
+          "artifact": true,
+          "files": [
+            "generated/surge/apple.list"
+          ]
+        },
+        "shadowrocket": {
+          "artifact": true,
+          "files": [
+            "generated/shadowrocket/apple.list"
+          ]
+        },
+        "quantumultx": {
+          "artifact": false,
+          "files": []
+        },
+        "loon": {
+          "artifact": true,
+          "files": [
+            "generated/loon/apple.list"
+          ]
+        },
+        "egern": {
+          "artifact": true,
+          "files": [
+            "generated/egern/apple.yaml"
+          ]
+        },
+        "singbox": {
+          "artifact": false,
+          "files": []
+        }
+      },
+      "status": "GAP"
+    },
+    {
+      "service": "google",
+      "clients": {
+        "mihomo": {
+          "artifact": true,
+          "files": [
+            "generated/mihomo/google.yaml",
+            "generated/mihomo/google.list"
+          ]
+        },
+        "surge": {
+          "artifact": true,
+          "files": [
+            "generated/surge/google.list"
+          ]
+        },
+        "shadowrocket": {
+          "artifact": true,
+          "files": [
+            "generated/shadowrocket/google.list"
+          ]
+        },
+        "quantumultx": {
+          "artifact": false,
+          "files": []
+        },
+        "loon": {
+          "artifact": true,
+          "files": [
+            "generated/loon/google.list"
+          ]
+        },
+        "egern": {
+          "artifact": true,
+          "files": [
+            "generated/egern/google.yaml"
+          ]
+        },
+        "singbox": {
+          "artifact": false,
+          "files": []
+        }
+      },
+      "status": "GAP"
+    }
+  ],
+  "gaps": 10
+}

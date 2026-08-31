@@ -905,10 +905,10 @@
 {"d":"grazie.ai","s":[0,1,3,5,6],"r":[7,51,93,129],"t":"domain_suffix"}
 {"d":"tripo3d.ai","s":[1,3,5],"r":[7,129],"t":"domain_suffix"}
 {"d":"cloudfront.net","s":[0,1,3,5,6],"r":[15,21,129],"t":"domain_suffix"}
-{"d":"gspe19-2-cn-ssl.ls-apple.com.akadns.net","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
-{"d":"is1.mzstatic.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
-{"d":"publicassets.cdn-apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
-{"d":"tj-pod2-smp-device.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"gspe19-2-cn-ssl.ls-apple.com.akadns.net","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
+{"d":"is1.mzstatic.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
+{"d":"publicassets.cdn-apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
+{"d":"tj-pod2-smp-device.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"apple-watch.com.ru","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"beatsaudifonos.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"catalina.hk","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -947,7 +947,7 @@
 {"d":"music.163.com.163jiasu.com","s":[0,1],"r":[108],"t":"domain_suffix"}
 {"d":"wariolandshakeit.com","s":[0,3,5],"r":[111,129],"t":"domain_suffix"}
 {"d":"paypalindia.com","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
-{"d":"tracker.playground.ru","s":[0],"r":[128],"t":"domain"}
+{"d":"tracker.playground.ru","s":[0],"r":[128,218],"t":"domain"}
 {"d":"alpharatio.cc","s":[0],"r":[128],"t":"domain_suffix"}
 {"d":"69luolie.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"adultdvdmarketplace.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -972,7 +972,7 @@
 {"d":"roblox.dk","s":[1,3,5,6],"r":[129,134],"t":"domain_suffix"}
 {"d":"optica.org","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
 {"d":"steambroadcast","s":[0,6,7],"r":[146],"t":"domain_keyword"}
-{"d":"stun.edwin-wiegele.at","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.edwin-wiegele.at","s":[0],"r":[148,224],"t":"domain"}
 {"d":"139.59.210.98/32","s":[0,6,7],"r":[150],"t":"ip_cidr"}
 {"d":"gtgres.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"openvela.com","s":[0,1],"r":[38,177],"t":"domain_suffix"}

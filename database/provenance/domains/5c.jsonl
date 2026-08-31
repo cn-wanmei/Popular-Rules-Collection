@@ -903,7 +903,7 @@
 {"d":"alibabadoctor.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"awsapprunner.com","s":[0,1,3,5,6],"r":[15,21,129],"t":"domain_suffix"}
 {"d":"boxofficemojo.com","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
-{"d":"gspe19-2-cn-ssl.ls.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"gspe19-2-cn-ssl.ls.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"drebeatsdeutschland.net","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"monsterbeatstienda.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"azurefd.net","s":[0,1,3,5,6,7],"r":[22,105,129],"t":"domain_suffix"}
@@ -926,7 +926,7 @@
 {"d":"eaplay.com","s":[0,3,5],"r":[62,129],"t":"domain_suffix"}
 {"d":"milofetch.com","s":[0,3,5,6],"r":[63,129],"t":"domain_suffix"}
 {"d":"facebooklikeexchange.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
-{"d":"redirector.c.youtubeeducation.com","s":[0,1,6],"r":[38,77],"t":"domain_suffix"}
+{"d":"redirector.c.youtubeeducation.com","s":[0,1,6],"r":[38,77,206],"t":"domain_suffix"}
 {"d":"google.com.bd","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"google.com.fj","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"googlecnapps.cn","s":[0,1,6],"r":[77],"t":"domain_suffix"}
@@ -939,7 +939,7 @@
 {"d":"39nj8382uq.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"sgcqscgu.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"218.26.75.0/24","s":[0],"r":[98],"t":"ip_cidr"}
-{"d":"mbs.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105],"t":"domain_suffix"}
+{"d":"mbs.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105,211],"t":"domain_suffix"}
 {"d":"microsoft.is","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"office","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"dkr.com","s":[0,3,5],"r":[111,129],"t":"domain_suffix"}
@@ -979,7 +979,7 @@
 {"d":"liebertpub.com","s":[0,7],"r":[136],"t":"domain_suffix"}
 {"d":"singlelogin.app","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
 {"d":"spotilocal.com","s":[0,6,7],"r":[145],"t":"domain_suffix"}
-{"d":"stun.officinabit.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.officinabit.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"2a0a:f280::/29","s":[0,6,7],"r":[150],"t":"ip_cidr6"}
 {"d":"mahjongcup.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"tx-exhibition.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

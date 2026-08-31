@@ -874,7 +874,7 @@
 {"d":"14.1.112.0/22","s":[0,1,6],"r":[11],"t":"ip_cidr"}
 {"d":"amazonvideo.com","s":[0,1,3,5,6],"r":[15,74,127,129],"t":"domain_suffix"}
 {"d":"aws-icp-domain-manager.cn","s":[0,1,6],"r":[15,21],"t":"domain_suffix"}
-{"d":"cds-cdn.v.aaplimg.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"cds-cdn.v.aaplimg.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"beatbydre2013.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"braeburncapital.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"imac.co","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -938,8 +938,8 @@
 {"d":"lolespor.com","s":[0,3,5],"r":[129,133],"t":"domain_suffix"}
 {"d":"oxfordmedicine.com","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
 {"d":"uchicago.edu","s":[0,3,5,7],"r":[74,129,136],"t":"domain_suffix"}
-{"d":"stun.thinkrosystem.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.voipdiscount.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.thinkrosystem.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.voipdiscount.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"ap-mumbai.tencentcos.com","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"fyeds5.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"openapp.run","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

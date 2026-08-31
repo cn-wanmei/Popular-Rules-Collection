@@ -921,7 +921,7 @@
 {"d":"adobecreativityawards.com","s":[0,3,5,6],"r":[6,129],"t":"domain_suffix"}
 {"d":"ffotolia.com","s":[0,3,5,6],"r":[6,129],"t":"domain_suffix"}
 {"d":"perplexity.com","s":[1,3,5,6],"r":[7,121,129],"t":"domain_suffix"}
-{"d":"cdn.workos.com","s":[7],"r":[9],"t":"domain"}
+{"d":"cdn.workos.com","s":[7],"r":[9,185],"t":"domain"}
 {"d":"asczwa.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"oss-cn-hangzhou.aliyuncs.com","s":[0,1,6],"r":[11,12],"t":"domain_suffix"}
 {"d":"163.181.0.0/16","s":[0,1,6],"r":[11],"t":"ip_cidr"}
@@ -969,7 +969,7 @@
 {"d":"netflix.com.au","s":[0,1,6,7],"r":[109],"t":"domain_suffix"}
 {"d":"paypallabs.com","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
 {"d":"venmo.com","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
-{"d":"tr.nyacat.pw","s":[0],"r":[128],"t":"domain"}
+{"d":"tr.nyacat.pw","s":[0],"r":[128,218],"t":"domain"}
 {"d":"(^|\\.)zayy([0-9]{0,3})?\\.xyz$","s":[1,6],"r":[132],"t":"domain_regex"}
 {"d":"ad-display.diwodiwo.xyz","s":[1,2,3,4,5,6],"r":[5,132],"t":"domain_suffix"}
 {"d":"aishegw.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}

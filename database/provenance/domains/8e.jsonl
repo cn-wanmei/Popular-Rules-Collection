@@ -908,7 +908,7 @@
 {"d":"95095.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"yushanfang.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"13.35.0.0/17","s":[0,1,6],"r":[15],"t":"ip_cidr"}
-{"d":"aod-ssl.itunes.apple.com","s":[0,1,6,7],"r":[17,18],"t":"domain"}
+{"d":"aod-ssl.itunes.apple.com","s":[0,1,6,7],"r":[17,18,189],"t":"domain"}
 {"d":"applemusic.com","s":[0,1,3,5,6,7],"r":[17,18,129],"t":"domain_suffix"}
 {"d":"applewatch.hk","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"beatsbydrefr.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -918,7 +918,7 @@
 {"d":"osxapps.itunes.g.aaplimg.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
 {"d":"prostudiobeatscybersale.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"trustcenter.cn","s":[0,1,6,7],"r":[22,105],"t":"domain_suffix"}
-{"d":"0gr4uqmtt8y41hcjz8yzdnc31.ourdvsss.com","s":[0,1,6,7],"r":[27],"t":"domain"}
+{"d":"0gr4uqmtt8y41hcjz8yzdnc31.ourdvsss.com","s":[0,1,6,7],"r":[27,193],"t":"domain"}
 {"d":"iptv.gd.cn","s":[0],"r":[40],"t":"domain_suffix"}
 {"d":"cloudflare-ipfs.com","s":[0,1,3,5,6],"r":[43,74,129],"t":"domain_suffix"}
 {"d":"videopress.com","s":[0,1,3,5],"r":[51,74,129],"t":"domain_suffix"}
@@ -978,8 +978,8 @@
 {"d":"yourgynexam.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"yourlust.com","s":[1,3,5,6],"r":[74,129,132],"t":"domain_suffix"}
 {"d":"leagueoflegends.co.kr","s":[0,3,5],"r":[129,133],"t":"domain_suffix"}
-{"d":"stun.1-voip.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.wcoil.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.1-voip.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.wcoil.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"ad.browser.qq.com","s":[0,1,2,3,4,5,6],"r":[5,151],"t":"domain_suffix"}
 {"d":"kssm.kuaipandata.com","s":[0],"r":[177],"t":"domain_suffix"}
 {"d":"miot-spec.org","s":[0,1],"r":[38,177],"t":"domain_suffix"}

@@ -9,7 +9,7 @@
 | Service Type | aggregate |
 | Tags | tencent, china |
 | 类型 | mixed |
-| Domains | 679 |
+| Domains | 681 |
 | CIDR | 20 |
 | 最后更新 | 2026-08-31 |
 | Sources | blackmatrix7 / metacubex / v2fly |

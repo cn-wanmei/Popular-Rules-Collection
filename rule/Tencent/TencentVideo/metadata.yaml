@@ -17,9 +17,9 @@ generated_files:
   domain: tencentvideo_domain.list
   ip: tencentvideo_ip.list
 statistics:
-  domains: 19
+  domains: 5
   ipv4_or_cidr: 32
-  mixed: 51
+  mixed: 37
 sources:
 - blackmatrix7
 clients:

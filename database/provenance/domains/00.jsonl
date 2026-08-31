@@ -886,7 +886,7 @@
 {"d":"ctexcel.com","s":[0,1],"r":[38,40],"t":"domain_suffix"}
 {"d":"ctzcdn.cn","s":[0],"r":[40],"t":"domain_suffix"}
 {"d":"cloudflareclient.com","s":[0,1,3,5,6],"r":[43,129],"t":"domain_suffix"}
-{"d":"productionresultssa16.blob.core.windows.net","s":[0,1,3,5,6,7],"r":[51,75,105,129],"t":"domain_suffix"}
+{"d":"productionresultssa16.blob.core.windows.net","s":[0,1,3,5,6,7],"r":[51,75,105,129,205,211],"t":"domain_suffix"}
 {"d":"pycon.org","s":[0,1,3,5],"r":[51,129],"t":"domain_suffix"}
 {"d":"spring.net","s":[0,1],"r":[51],"t":"domain_suffix"}
 {"d":"cdn.optimizely.com","s":[0,2,3,4,5,7],"r":[5,56],"t":"domain_suffix"}
@@ -897,8 +897,8 @@
 {"d":"pornemby.club","s":[0],"r":[66],"t":"domain_suffix"}
 {"d":"facebookphotos.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"theinstagramhack.com","s":[0,1,3,5,6],"r":[68,91,129],"t":"domain_suffix"}
-{"d":"tools.google.com","s":[0,1,6],"r":[77],"t":"domain_suffix"}
-{"d":"alt4-mtalk.google.com","s":[0,1,3,5,6,7],"r":[77,78,129],"t":"domain"}
+{"d":"tools.google.com","s":[0,1,6],"r":[77,206],"t":"domain_suffix"}
+{"d":"alt4-mtalk.google.com","s":[0,1,3,5,6,7],"r":[77,78,129,207],"t":"domain"}
 {"d":"asp-cc.com","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
 {"d":"google.ml","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"google.se","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
@@ -950,8 +950,8 @@
 {"d":"xxxvideo.vip","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"roblox.vn","s":[1,3,5,6],"r":[129,134],"t":"domain_suffix"}
 {"d":"sinacloud.com.cn","s":[0],"r":[139],"t":"domain_suffix"}
-{"d":"stun.acrobits.cz","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.poivy.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.acrobits.cz","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.poivy.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"zhuoyuegame.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"12bt.info","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}
 {"d":"17173im.allyes.com","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}

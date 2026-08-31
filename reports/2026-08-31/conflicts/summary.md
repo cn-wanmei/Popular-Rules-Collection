@@ -5,4 +5,6 @@
 | CRITICAL | 0 |
 | HIGH | 0 |
 | MEDIUM | 0 |
-| LOW | 17843 |
+| LOW | 17846 |
+
+Decision SSOT domains: 142130

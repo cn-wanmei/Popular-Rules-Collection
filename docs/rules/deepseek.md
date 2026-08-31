@@ -9,7 +9,7 @@
 | Service Type | service |
 | Tags | ai |
 | 类型 | domain |
-| Domains | 1 |
+| Domains | 2 |
 | CIDR | 0 |
 | 最后更新 | 2026-08-31 |
 | Sources | metacubex / v2fly |

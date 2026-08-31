@@ -57,7 +57,7 @@
 {"d":"dkvesauf.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"dmjkpwliqxfh.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"dmpxs.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
-{"d":"doubleclick-cn.net","s":[0,1,2,3,4,5,6],"r":[3,4,5,38,77,129],"t":"domain_suffix"}
+{"d":"doubleclick-cn.net","s":[0,1,2,3,4,5,6],"r":[3,4,5,38,77,129,206],"t":"domain_suffix"}
 {"d":"drzimmerman.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"eetamseethe.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"enchantier.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
@@ -968,9 +968,9 @@
 {"d":"roblox.co.uk","s":[1,3,5,6],"r":[129,134],"t":"domain_suffix"}
 {"d":"sina.com","s":[0,1],"r":[38,139],"t":"domain_suffix"}
 {"d":"acoloo.com","s":[0,1],"r":[38,142],"t":"domain_suffix"}
-{"d":"steamuserimages-a.akamaihd.net","s":[0,3,5,6,7],"r":[129,146],"t":"domain_suffix"}
-{"d":"stun.1und1.de","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.vavadating.com","s":[0],"r":[148],"t":"domain"}
+{"d":"steamuserimages-a.akamaihd.net","s":[0,3,5,6,7],"r":[129,146,223],"t":"domain_suffix"}
+{"d":"stun.1und1.de","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.vavadating.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"185.76.151.0/24","s":[0,6,7],"r":[150],"t":"ip_cidr"}
 {"d":"ap-hongkong.tencentcos.com.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"inte.sogou.com","s":[0,1,2,3,4,5,6],"r":[5,151],"t":"domain_suffix"}

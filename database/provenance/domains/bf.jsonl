@@ -857,7 +857,7 @@
 {"d":"braveux.com","s":[0,1,3,5],"r":[51,129],"t":"domain_suffix"}
 {"d":"developers.facebook.com","s":[0,1,3,5],"r":[51,129],"t":"domain_suffix"}
 {"d":"strikingly.com","s":[0,1,3,5],"r":[51,129],"t":"domain_suffix"}
-{"d":"v5-dy-o-abtest.zjcdn.com","s":[0,1,7],"r":[59],"t":"domain"}
+{"d":"v5-dy-o-abtest.zjcdn.com","s":[0,1,7],"r":[59,199],"t":"domain"}
 {"d":"speedhunters.com","s":[0,3,5],"r":[62,129],"t":"domain_suffix"}
 {"d":"ebayt.com","s":[0,3,5,6],"r":[63,129],"t":"domain_suffix"}
 {"d":"faceobk.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
@@ -907,7 +907,7 @@
 {"d":"uni-bielefeld.de","s":[0,1,7],"r":[38,136],"t":"domain_suffix"}
 {"d":"weipan.com.cn","s":[0],"r":[139],"t":"domain_suffix"}
 {"d":"st.dl.eccdnx.com","s":[0,6,7],"r":[146],"t":"domain_suffix"}
-{"d":"stun.siedle.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.siedle.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"2a01:4f8:c17:8f74::1","s":[0],"r":[148],"t":"ip_cidr6"}
 {"d":"149.154.160.0/20","s":[0,6,7],"r":[150],"t":"ip_cidr"}
 {"d":"chatyuewen.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}

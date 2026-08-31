@@ -15,9 +15,9 @@ generated_files:
   domain: bilibili_domain.list
   ip: bilibili_ip.list
 statistics:
-  domains: 121
+  domains: 67
   ipv4_or_cidr: 8
-  mixed: 129
+  mixed: 75
 sources:
 - blackmatrix7
 - metacubex

@@ -1,0 +1,42 @@
+{
+  "source": "universal_ir",
+  "services": [
+    {
+      "id": "apple",
+      "rules": 2008
+    },
+    {
+      "id": "discord",
+      "rules": 31
+    },
+    {
+      "id": "github",
+      "rules": 96
+    },
+    {
+      "id": "google",
+      "rules": 1210
+    },
+    {
+      "id": "microsoft",
+      "rules": 971
+    },
+    {
+      "id": "openai",
+      "rules": 53
+    },
+    {
+      "id": "telegram",
+      "rules": 51
+    }
+  ],
+  "pilot": [
+    "openai",
+    "github",
+    "telegram",
+    "apple",
+    "google",
+    "microsoft",
+    "discord"
+  ]
+}

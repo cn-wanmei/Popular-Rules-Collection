@@ -862,7 +862,7 @@
 {"d":"airbnb.com.bz","s":[1,3,5,6],"r":[8,129],"t":"domain_suffix"}
 {"d":"amazon.de","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
 {"d":"amazonlending.com.cn","s":[0,1,6],"r":[15],"t":"domain_suffix"}
-{"d":"gsp5-cn.ls.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"gsp5-cn.ls.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"appleoriginalproductions.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"beatsheadphones2u.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"homepod.cn","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
@@ -904,7 +904,7 @@
 {"d":"andesclouds.com.cn","s":[0],"r":[116],"t":"domain_suffix"}
 {"d":"swiftfinancial.info","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
 {"d":"18ebank.com","s":[0,1],"r":[38,123],"t":"domain_suffix"}
-{"d":"tracker.manager.itislove.cz","s":[0],"r":[128],"t":"domain"}
+{"d":"tracker.manager.itislove.cz","s":[0],"r":[128,218],"t":"domain"}
 {"d":"2023aga.oen.tw","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"bcvcdn.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"cuinc.oen.tw","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -924,14 +924,14 @@
 {"d":"xn--urs05q.jp","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"dnssina.com","s":[0,1],"r":[38,139],"t":"domain_suffix"}
 {"d":"sndcdn.com","s":[0,3,5,7],"r":[74,129,143],"t":"domain_suffix"}
-{"d":"stun.neomedia.it","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.studio71.it","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.neomedia.it","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.studio71.it","s":[0],"r":[148,224],"t":"domain"}
 {"d":"cnb.cool","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"qdwebim.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"tdnsv8.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"150.139.143.0/32","s":[0,1,6],"r":[151],"t":"ip_cidr"}
 {"d":"vimeostatus.com","s":[0,3,5],"r":[129,164],"t":"domain_suffix"}
-{"d":"graph.facebook.com","s":[0,1,2,3,4,5,6],"r":[5,170],"t":"domain"}
+{"d":"graph.facebook.com","s":[0,1,2,3,4,5,6],"r":[5,170,233],"t":"domain"}
 {"d":"00c6c88efd.e5ad8b54ee.com","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}
 {"d":"112400c1199c.com","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}
 {"d":"1emn.com","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}

@@ -937,7 +937,7 @@
 {"d":"cdn-cn2.apple-mapkit.com","s":[0,1,6,7],"r":[17,51],"t":"domain_suffix"}
 {"d":"monsterbeats-solo.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"shopping-days.net","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
-{"d":"tv.applemusic.com","s":[0,1,3,5,6,7],"r":[17,19,129],"t":"domain"}
+{"d":"tv.applemusic.com","s":[0,1,3,5,6,7],"r":[17,19,129,190],"t":"domain"}
 {"d":"azchcdnn.com","s":[0,1,6,7],"r":[22,38,105],"t":"domain_suffix"}
 {"d":"byteapk.cn","s":[0,1,6],"r":[33],"t":"domain_suffix"}
 {"d":"veew-alb-cn2.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
@@ -958,7 +958,7 @@
 {"d":"facesbooc.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"friendfeed-media.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"hackfacebook.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
-{"d":"tac.googleapis.com","s":[0,1,6],"r":[77],"t":"domain_suffix"}
+{"d":"tac.googleapis.com","s":[0,1,6],"r":[77,206],"t":"domain_suffix"}
 {"d":"google.bt","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"google.co.in","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"googleadapis.l.google.com","s":[0,1,6],"r":[77],"t":"domain_suffix"}
@@ -978,7 +978,7 @@
 {"d":"pokemonbank.com","s":[0,3,5],"r":[111,129],"t":"domain_suffix"}
 {"d":"heytap.cn","s":[0],"r":[116],"t":"domain_suffix"}
 {"d":"swiftfinancial.net","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
-{"d":"tracker.filemail.com","s":[0],"r":[128],"t":"domain"}
+{"d":"tracker.filemail.com","s":[0],"r":[128,218],"t":"domain"}
 {"d":"0cgdklr5sfwj.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"17lu.xyz","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"alljapanesepass.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -1010,7 +1010,7 @@
 {"d":"twitcomike.jp","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"z676869.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"zhainanjidid.top","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
-{"d":"stun.linuxtrent.it","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.linuxtrent.it","s":[0],"r":[148,224],"t":"domain"}
 {"d":"95.161.64.0/20","s":[0,6,7],"r":[150],"t":"ip_cidr"}
 {"d":"ap-jakarta.tencentcos.com.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"na-toronto.tencentcos.com.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}

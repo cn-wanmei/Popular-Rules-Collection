@@ -955,9 +955,9 @@
 {"d":"alog.umeng.com","s":[0,1,2,3,4,5,6],"r":[5,11],"t":"domain_suffix"}
 {"d":"juhuasuan.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"amazonprimevideo.cn","s":[0,1,6],"r":[15,127],"t":"domain_suffix"}
-{"d":"cl3-cdn.origin-apple.com.akadns.net","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
-{"d":"images.apple.com.edgekey.net.globalredir.akadns.net","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
-{"d":"is2.mzstatic.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"cl3-cdn.origin-apple.com.akadns.net","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
+{"d":"images.apple.com.edgekey.net.globalredir.akadns.net","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
+{"d":"is2.mzstatic.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"testflight","s":[0,1,6,7],"r":[17],"t":"domain_keyword"}
 {"d":"applestore.com.pt","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"businesswebwise.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -966,11 +966,11 @@
 {"d":"nhurl.cn","s":[0,1,6],"r":[33],"t":"domain_suffix"}
 {"d":"chinaunicom.com","s":[0,1],"r":[38,41],"t":"domain_suffix"}
 {"d":"nix.store","s":[0,1,3,5],"r":[51,129],"t":"domain_suffix"}
-{"d":"productionresultssa18.blob.core.windows.net","s":[0,1,3,5,6,7],"r":[51,75,105,129],"t":"domain_suffix"}
+{"d":"productionresultssa18.blob.core.windows.net","s":[0,1,3,5,6,7],"r":[51,75,105,129,205,211],"t":"domain_suffix"}
 {"d":"disney.cz","s":[0,3,5,7],"r":[56,129],"t":"domain_suffix"}
 {"d":"kijijidns.cn","s":[0,6],"r":[63],"t":"domain_suffix"}
 {"d":"instagainer.com","s":[0,1,3,5,6],"r":[68,91,129],"t":"domain_suffix"}
-{"d":"www.recaptcha.net","s":[0,1,6],"r":[38,77],"t":"domain_suffix"}
+{"d":"www.recaptcha.net","s":[0,1,6],"r":[38,77,206],"t":"domain_suffix"}
 {"d":"cobrasearch.com","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
 {"d":"scholar.google.bg","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
 {"d":"womenwill.mx","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}

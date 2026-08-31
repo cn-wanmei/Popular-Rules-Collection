@@ -940,7 +940,7 @@
 {"d":"siri.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"duapp-preview.com","s":[0,1,6],"r":[24,38],"t":"domain_suffix"}
 {"d":"zuoyebang.cc","s":[0,1,6],"r":[24,38],"t":"domain_suffix"}
-{"d":"bytedance.map.fastly.net","s":[0,1,6],"r":[33],"t":"domain_suffix"}
+{"d":"bytedance.map.fastly.net","s":[0,1,6],"r":[33,194],"t":"domain_suffix"}
 {"d":"doubao-dev.com","s":[0,1,6],"r":[33,38,58],"t":"domain_suffix"}
 {"d":"feishustatus.cn","s":[0,1,6],"r":[33],"t":"domain_suffix"}
 {"d":"larksuiteimg.com","s":[0,1,6],"r":[33],"t":"domain_suffix"}
@@ -956,7 +956,7 @@
 {"d":"faacebook.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"instagramlogin.com","s":[0,1,3,5,6],"r":[68,91,129],"t":"domain_suffix"}
 {"d":"powersunitedvr.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
-{"d":"qpx.googleflights.net","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
+{"d":"qpx.googleflights.net","s":[0,1,3,5,6],"r":[77,129,206],"t":"domain_suffix"}
 {"d":"blogspot.no","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"brotli.org","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
 {"d":"codespot.com","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
@@ -969,13 +969,13 @@
 {"d":"jcloudwaftest.cn","s":[0,1],"r":[94],"t":"domain_suffix"}
 {"d":"8rlq38736p.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"gxgwuxe.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
-{"d":"officecdn-microsoft-com.akamaized.net","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
+{"d":"officecdn-microsoft-com.akamaized.net","s":[0,1,3,5,6,7],"r":[105,129,211],"t":"domain_suffix"}
 {"d":"live.eu","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"msunlimitedcloudsummit.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"wunderlist.com","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"pokemon.com","s":[0,3,5],"r":[111,129],"t":"domain_suffix"}
 {"d":"paypal-engineering.com","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
-{"d":"tracker.zhuqiy.com","s":[0],"r":[128],"t":"domain"}
+{"d":"tracker.zhuqiy.com","s":[0],"r":[128,218],"t":"domain"}
 {"d":"88av.one","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"battleforcecomix.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"bcrncdn.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -998,9 +998,9 @@
 {"d":"xxxvideo.blog.br","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"leaguehighschool.com","s":[0,3,5],"r":[129,133],"t":"domain_suffix"}
 {"d":"ic.ac.uk","s":[0,7],"r":[136],"t":"domain_suffix"}
-{"d":"heads4-ak-spotify-com.akamaized.net","s":[0,3,5,6,7],"r":[129,145],"t":"domain_suffix"}
-{"d":"stun.gmx.net","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.uiltucssicilia.it","s":[0],"r":[148],"t":"domain"}
+{"d":"heads4-ak-spotify-com.akamaized.net","s":[0,3,5,6,7],"r":[129,145,222],"t":"domain_suffix"}
+{"d":"stun.gmx.net","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.uiltucssicilia.it","s":[0],"r":[148,224],"t":"domain"}
 {"d":"tendbcluster.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"19035955.loyalty.tajawal.com","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}
 {"d":"1di66itt.de","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}

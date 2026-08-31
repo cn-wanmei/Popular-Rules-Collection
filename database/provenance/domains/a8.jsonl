@@ -877,8 +877,8 @@
 {"d":"zyronpaneele.com","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"feizhu.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"hupan.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
-{"d":"d22qjgkvxw22r6.cloudfront.net","s":[0,1,3,5,6],"r":[15,127,129],"t":"domain"}
-{"d":"cl5.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"d22qjgkvxw22r6.cloudfront.net","s":[0,1,3,5,6],"r":[15,127,129,217],"t":"domain"}
+{"d":"cl5.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"2buybeatsbydre.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"apple.com.gy","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"applestore.co.uk","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -893,7 +893,7 @@
 {"d":"dusdn.net","s":[0,1,6],"r":[24,38],"t":"domain_suffix"}
 {"d":"qianqian.com","s":[0,1,6],"r":[24,38],"t":"domain_suffix"}
 {"d":"bbcfmt","s":[0,7],"r":[26],"t":"domain_keyword"}
-{"d":"1gr5dgmttgha1hcj38yzdcco.ourdvsss.com","s":[0,1,6,7],"r":[27],"t":"domain"}
+{"d":"1gr5dgmttgha1hcj38yzdcco.ourdvsss.com","s":[0,1,6,7],"r":[27,193],"t":"domain"}
 {"d":"huoshanzhibo.com","s":[0,1,6,7],"r":[33,38,59],"t":"domain_suffix"}
 {"d":"volcengine-api.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
 {"d":"bnet.cn","s":[0],"r":[40],"t":"domain_suffix"}
@@ -902,7 +902,7 @@
 {"d":"prostores.cn","s":[0,6],"r":[63],"t":"domain_suffix"}
 {"d":"fbcdn.net","s":[0,1,3,5,6],"r":[68,74,129],"t":"domain_suffix"}
 {"d":"freefblikes.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
-{"d":"c.admob.com","s":[0,1,2,3,4,5,6],"r":[5,38,77],"t":"domain_suffix"}
+{"d":"c.admob.com","s":[0,1,2,3,4,5,6],"r":[5,38,77,206],"t":"domain_suffix"}
 {"d":"creativelab5.com","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"withgoogle.com","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"jcloudimg.net","s":[0,1],"r":[38,94],"t":"domain_suffix"}
@@ -915,7 +915,7 @@
 {"d":"mepn.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"powerappscdn.net","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"ac-pocketcamp.com","s":[0,3,5],"r":[111,129],"t":"domain_suffix"}
-{"d":"tracker.yume-hatsuyuki.moe","s":[0],"r":[128],"t":"domain"}
+{"d":"tracker.yume-hatsuyuki.moe","s":[0],"r":[128,218],"t":"domain"}
 {"d":"(^|\\.)jdyy[1-9]?\\.me$","s":[1,6],"r":[132],"t":"domain_regex"}
 {"d":"6xxxvideos.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"asexdoll.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -943,9 +943,9 @@
 {"d":"x-art.com","s":[1,3,5,6],"r":[74,129,132],"t":"domain_suffix"}
 {"d":"xsvod.xyz","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"hk1lib.org","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
-{"d":"stun.engineeredarts.co.uk","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.srce.hr","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.stadtwerke-eutin.de","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.engineeredarts.co.uk","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.srce.hr","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.stadtwerke-eutin.de","s":[0],"r":[148,224],"t":"domain"}
 {"d":"na-siliconvalley.tencentcos.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"11bet.com","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}
 {"d":"123hp-setup-com.us","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}

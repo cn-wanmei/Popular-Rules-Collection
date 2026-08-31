@@ -910,7 +910,7 @@
 {"d":"ics.design","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"kunlunra.com","s":[0,1,6],"r":[11,12,38],"t":"domain_suffix"}
 {"d":"kunlunwe.com","s":[0,1,6],"r":[11,12,38],"t":"domain_suffix"}
-{"d":"dmqdd6hw24ucf.cloudfront.net","s":[0,1,3,5,6],"r":[15,127,129],"t":"domain"}
+{"d":"dmqdd6hw24ucf.cloudfront.net","s":[0,1,3,5,6],"r":[15,127,129,217],"t":"domain"}
 {"d":"apple.hn","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"applecare.berlin","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"appleclassicipod.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -1000,8 +1000,8 @@
 {"d":"leagueoflegends.ca","s":[0,3,5],"r":[129,133],"t":"domain_suffix"}
 {"d":"springerlink.com","s":[0,1,3,5,7],"r":[38,129,136],"t":"domain_suffix"}
 {"d":"soso.com.cn","s":[0,1,6],"r":[142,151],"t":"domain_suffix"}
-{"d":"stun.dcalling.de","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.voipcheap.co.uk","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.dcalling.de","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.voipcheap.co.uk","s":[0],"r":[148,224],"t":"domain"}
 {"d":"foxmail.com.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"idcgcloudcs.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"mszdld.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}

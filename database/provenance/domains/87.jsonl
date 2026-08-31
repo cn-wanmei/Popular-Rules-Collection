@@ -903,13 +903,13 @@
 {"d":"zelterabatt.com","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"zenvada.de","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"zf56jef1dd.com","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
-{"d":"guzzoni.apple.com","s":[0,1,6,7],"r":[9,17],"t":"domain_suffix"}
+{"d":"guzzoni.apple.com","s":[0,1,6,7],"r":[9,17,188],"t":"domain_suffix"}
 {"d":"aliunicorn.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"lydass.com.cn","s":[0,1,6],"r":[11],"t":"domain_suffix"}
 {"d":"p-log.ykimg.com","s":[0,1,2,3,4,5,6],"r":[5,11,179],"t":"domain_suffix"}
 {"d":"phpwind.com","s":[0,1,2,3,4,5,6],"r":[5,11,38],"t":"domain_suffix"}
 {"d":"amazon.co.za","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
-{"d":"store.apple.com.edgekey.net","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"store.apple.com.edgekey.net","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"12diasderegalosdeitunes.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"12diasderegalosdeitunes.gt","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"apple.cl","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -917,7 +917,7 @@
 {"d":"beatssbyaustralia.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"bookkeeper.itunes.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
 {"d":"drdrebeats-usa.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
-{"d":"1gr4uqmtt8y41hcjigazdqce.ourdvsss.com","s":[0,1,6,7],"r":[27],"t":"domain"}
+{"d":"1gr4uqmtt8y41hcjigazdqce.ourdvsss.com","s":[0,1,6,7],"r":[27,193],"t":"domain"}
 {"d":"yo9.com","s":[0,1,6,7],"r":[27,38],"t":"domain_suffix"}
 {"d":"baikevod.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
 {"d":"cmdcxls.com","s":[0,1],"r":[38,39],"t":"domain_suffix"}
@@ -941,9 +941,9 @@
 {"d":"dao123.com","s":[0,1],"r":[38,94],"t":"domain_suffix"}
 {"d":"osf5xep778.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"183.232.74.0/24","s":[0],"r":[98],"t":"ip_cidr"}
-{"d":"storecorefulfillment.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105],"t":"domain_suffix"}
+{"d":"storecorefulfillment.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105,211],"t":"domain_suffix"}
 {"d":"outlook.cn","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
-{"d":"tracker.qingwapt.org","s":[0],"r":[128],"t":"domain"}
+{"d":"tracker.qingwapt.org","s":[0],"r":[128,218],"t":"domain"}
 {"d":"520avtv.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"abigass.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"akiba-online.com","s":[1,3,5,6],"r":[74,129,132],"t":"domain_suffix"}
@@ -976,8 +976,8 @@
 {"d":"byspotify.com","s":[0,3,5,6,7],"r":[129,145],"t":"domain_suffix"}
 {"d":"spoti.fi","s":[0,3,5,6,7],"r":[129,145],"t":"domain_suffix"}
 {"d":"tospotify.com","s":[0,3,5,6,7],"r":[129,145],"t":"domain_suffix"}
-{"d":"stun.fairytel.at","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.jabbim.cz","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.fairytel.at","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.jabbim.cz","s":[0],"r":[148,224],"t":"domain"}
 {"d":"build9s.io","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"hk.file.myqcloud.com","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"na-ashburn.tencentcos.com.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}

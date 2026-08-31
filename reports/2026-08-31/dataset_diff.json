@@ -312,103 +312,103 @@
       "status": "unchanged"
     },
     "database/policies/direct/manifest.yaml": {
-      "old_count": 17,
+      "old_count": 27,
       "new_count": 27,
-      "added": 10,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
-      "growth_ratio": 0.5882,
-      "sha_changed": true,
-      "status": "updated"
+      "growth_ratio": 0.0,
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/policies/dns/servers.yaml": {
-      "old_count": 39,
+      "old_count": 43,
       "new_count": 43,
-      "added": 4,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
-      "growth_ratio": 0.1026,
-      "sha_changed": true,
-      "status": "updated"
+      "growth_ratio": 0.0,
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/policies/overrides/force_direct.yaml": {
-      "old_count": 0,
+      "old_count": 4,
       "new_count": 4,
-      "added": 4,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/policies/overrides/force_proxy.yaml": {
-      "old_count": 0,
+      "old_count": 4,
       "new_count": 4,
-      "added": 4,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/policies/overrides/force_reject.yaml": {
-      "old_count": 0,
+      "old_count": 4,
       "new_count": 4,
-      "added": 4,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/policies/overrides/manifest.yaml": {
-      "old_count": 0,
+      "old_count": 10,
       "new_count": 10,
-      "added": 10,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/policies/proxy/manifest.yaml": {
-      "old_count": 8,
+      "old_count": 12,
       "new_count": 12,
-      "added": 4,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
-      "growth_ratio": 0.5,
-      "sha_changed": true,
-      "status": "updated"
+      "growth_ratio": 0.0,
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/policies/reject/manifest.yaml": {
-      "old_count": 0,
+      "old_count": 16,
       "new_count": 16,
-      "added": 16,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/policies/reject/security.yaml": {
-      "old_count": 0,
+      "old_count": 9,
       "new_count": 9,
-      "added": 9,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "new"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/ips/adblock.txt": {
       "old_count": 47,
@@ -489,14 +489,14 @@
     },
     "database/ips/china.txt": {
       "old_count": 9669,
-      "new_count": 9669,
-      "added": 0,
+      "new_count": 9670,
+      "added": 1,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
-      "growth_ratio": 0.0,
-      "sha_changed": false,
-      "status": "unchanged"
+      "growth_ratio": 0.0001,
+      "sha_changed": true,
+      "status": "updated"
     },
     "database/ips/chinamobile.txt": {
       "old_count": 1,
@@ -511,14 +511,14 @@
     },
     "database/ips/chinaunicom.txt": {
       "old_count": 3729,
-      "new_count": 3729,
-      "added": 0,
+      "new_count": 3736,
+      "added": 7,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
-      "growth_ratio": 0.0,
-      "sha_changed": false,
-      "status": "unchanged"
+      "growth_ratio": 0.0019,
+      "sha_changed": true,
+      "status": "updated"
     },
     "database/ips/cloudflare.txt": {
       "old_count": 22,

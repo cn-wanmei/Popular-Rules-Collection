@@ -9,9 +9,9 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 1821 |
+| Domains | 1813 |
 | IP/CIDR | 13 |
-| Mixed | 1834 |
+| Mixed | 1826 |
 | Sources | blackmatrix7, metacubex, v2fly, dler |
 | Updated | 2026-08-31 |
 

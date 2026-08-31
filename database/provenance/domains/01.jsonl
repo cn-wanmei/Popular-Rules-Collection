@@ -877,7 +877,7 @@
 {"d":"notebooklm-pa.googleapis.com","s":[0,1,3,5,6],"r":[7,77,129],"t":"domain_suffix"}
 {"d":"56xiniao.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"amazoninspire.cn","s":[0,1,6],"r":[15],"t":"domain_suffix"}
-{"d":"swcatalog-cdn.apple.com.akadns.net","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"swcatalog-cdn.apple.com.akadns.net","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"appleone.community","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"appleone.space","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"beatsbydrecheaponlinesales.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -919,14 +919,14 @@
 {"d":"rxykamto.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"111.178.233.0/24","s":[0],"r":[98],"t":"ip_cidr"}
 {"d":"113.107.112.0/24","s":[0],"r":[98],"t":"ip_cidr"}
-{"d":"cn.windowssearch.com","s":[0,1,6,7],"r":[38,105],"t":"domain_suffix"}
+{"d":"cn.windowssearch.com","s":[0,1,6,7],"r":[38,105,211],"t":"domain_suffix"}
 {"d":"uservoice.com","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"dualstack.ichnaea-web-","s":[0,1,6,7],"r":[109],"t":"domain_keyword"}
 {"d":"oppodataintel.cn","s":[0],"r":[116],"t":"domain_suffix"}
 {"d":"pinterest.it","s":[0,3,5],"r":[74,124,129],"t":"domain_suffix"}
 {"d":"pplive.cn","s":[0],"r":[126],"t":"domain_suffix"}
-{"d":"retracker.hotplug.ru","s":[0],"r":[128],"t":"domain"}
-{"d":"tracker.waaa.moe","s":[0],"r":[128],"t":"domain"}
+{"d":"retracker.hotplug.ru","s":[0],"r":[128,218],"t":"domain"}
+{"d":"tracker.waaa.moe","s":[0],"r":[128,218],"t":"domain"}
 {"d":"cinemageddon.net","s":[0],"r":[128],"t":"domain_suffix"}
 {"d":"(^|\\.)putaozy([1-9][0-9]?)?\\.com$","s":[1,6],"r":[132],"t":"domain_regex"}
 {"d":"2019baidu.xyz","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}

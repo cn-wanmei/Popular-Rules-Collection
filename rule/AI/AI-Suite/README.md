@@ -9,9 +9,9 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 95 |
+| Domains | 72 |
 | IP/CIDR | 0 |
-| Mixed | 95 |
+| Mixed | 72 |
 | Sources | dler |
 | Updated | 2026-08-31 |
 

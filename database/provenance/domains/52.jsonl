@@ -20,7 +20,7 @@
 {"d":"analytics.ilook.ru","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"analytics.lspay.lightspeed.app","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"api.blux.ai","s":[2],"r":[3,4],"t":"domain_suffix"}
-{"d":"app-measurement.com","s":[0,1,2,3,4,5,6],"r":[3,4,5,38,77,129],"t":"domain_suffix"}
+{"d":"app-measurement.com","s":[0,1,2,3,4,5,6],"r":[3,4,5,38,77,129,206],"t":"domain_suffix"}
 {"d":"asia-cota.vivoglobal.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"asperlyhallowsleersia.cfd","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"atlaprason.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
@@ -919,7 +919,7 @@
 {"d":"facebook-corp.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"facebookworld.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"fracebook.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
-{"d":"fontfiles.googleapis.com","s":[0,1,6],"r":[77],"t":"domain_suffix"}
+{"d":"fontfiles.googleapis.com","s":[0,1,6],"r":[77,206],"t":"domain_suffix"}
 {"d":"blogspot.ug","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"froogle.com","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
 {"d":"hbogoasia.id","s":[0,3,5],"r":[81,129],"t":"domain_suffix"}
@@ -935,7 +935,7 @@
 {"d":"start.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"wiivc.net","s":[0,3,5],"r":[111,129],"t":"domain_suffix"}
 {"d":"paypal-activate.org","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
-{"d":"tracker.publictracker.xyz","s":[0],"r":[128],"t":"domain"}
+{"d":"tracker.publictracker.xyz","s":[0],"r":[128,218],"t":"domain"}
 {"d":"(^|\\.)gaogediao\\.(com|me|net|org)$","s":[1,6],"r":[132],"t":"domain_regex"}
 {"d":"88xqq.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"91porny.com","s":[1,3,5,6],"r":[74,129,132],"t":"domain_suffix"}
@@ -967,11 +967,11 @@
 {"d":"tubepornclassic.com","s":[1,3,5,6],"r":[74,129,132],"t":"domain_suffix"}
 {"d":"worldpornvideos.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"zoosexnet.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
-{"d":"stun.bitburger.de","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.ringostat.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.smartvoip.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.bitburger.de","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.ringostat.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.smartvoip.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"2404:6800:400a:1002::7f","s":[0],"r":[148],"t":"ip_cidr6"}
-{"d":"api.swiftgram.app","s":[0,6,7],"r":[150],"t":"domain"}
+{"d":"api.swiftgram.app","s":[0,6,7],"r":[150,226],"t":"domain"}
 {"d":"sa-saopaulo.tencentcos.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"xiaomicache.com","s":[0,1],"r":[38,177],"t":"domain_suffix"}
 {"d":"0x1f4b0.com","s":[2,3,4,5],"r":[5],"t":"domain_suffix"}

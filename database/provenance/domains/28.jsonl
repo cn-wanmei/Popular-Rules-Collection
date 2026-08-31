@@ -879,14 +879,14 @@
 {"d":"devin.ai","s":[1,3,5],"r":[7,129],"t":"domain_suffix"}
 {"d":"youmind.site","s":[1,3,5],"r":[7,129],"t":"domain_suffix"}
 {"d":"airbnb.com.ni","s":[1,3,5,6],"r":[8,129],"t":"domain_suffix"}
-{"d":"o207216.ingest.sentry.io","s":[7],"r":[9],"t":"domain"}
+{"d":"o207216.ingest.sentry.io","s":[7],"r":[9,185],"t":"domain"}
 {"d":"cp4.cloudflare.com","s":[7],"r":[9],"t":"domain_suffix"}
 {"d":"140.205.0.0/16","s":[0,1,6],"r":[11],"t":"ip_cidr"}
 {"d":"amazoncognito.com","s":[0,1,3,5,6],"r":[15,21,129],"t":"domain_suffix"}
 {"d":"kindleoasis.info","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
 {"d":"siege-amazon.com","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
-{"d":"gs-loc-cn.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
-{"d":"ml.cdn-apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"gs-loc-cn.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
+{"d":"ml.cdn-apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"apple.se","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"appleclub.com.hk","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"applemx-icloud.com","s":[0,1,3,5,6,7],"r":[17,90,129],"t":"domain_suffix"}
@@ -894,7 +894,7 @@
 {"d":"biitii.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"p-events-delivery.akamaized.net","s":[0,1,3,5,6,7],"r":[17,51,129],"t":"domain_suffix"}
 {"d":"aztask.cn","s":[0,1,6,7],"r":[22,105],"t":"domain_suffix"}
-{"d":"0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com","s":[0,1,6,7],"r":[27],"t":"domain"}
+{"d":"0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com","s":[0,1,6,7],"r":[27,193],"t":"domain"}
 {"d":"bdxigualive.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
 {"d":"buydouke.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
 {"d":"doubo03.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
@@ -920,7 +920,7 @@
 {"d":"netlify.com","s":[1,3,5],"r":[110,129],"t":"domain_suffix"}
 {"d":"pokemonsunmoon.com","s":[0,3,5],"r":[111,129],"t":"domain_suffix"}
 {"d":"1qianbao.com","s":[0,1],"r":[38,123],"t":"domain_suffix"}
-{"d":"tracker1.520.jp","s":[0],"r":[128],"t":"domain"}
+{"d":"tracker1.520.jp","s":[0],"r":[128,218],"t":"domain"}
 {"d":"redd.it","s":[0,1,3,5,6],"r":[74,129,131],"t":"domain_suffix"}
 {"d":"(^|\\.)ksyp0[1-9]\\.com$","s":[1,6],"r":[132],"t":"domain_regex"}
 {"d":"bestlistofporn.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -938,8 +938,8 @@
 {"d":"xgames.zone","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"zeenite.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"leagueoflegends.cn","s":[0],"r":[133],"t":"domain_suffix"}
-{"d":"stun.foad.me.uk","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.sylaps.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.foad.me.uk","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.sylaps.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"dnsv1.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"qcloudimg.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"sa-saopaulo.tencentcos.com","s":[0,1,6],"r":[151],"t":"domain_suffix"}

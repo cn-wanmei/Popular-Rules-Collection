@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-31T09:14:15.319408+00:00",
+  "generated_at": "2026-08-31T15:04:13.782707+00:00",
   "date": "2026-08-31",
   "services": {
     "uber": {
@@ -192,10 +192,6 @@
       "band": "stable"
     },
     "sina": {
-      "score": 90.0,
-      "band": "stable"
-    },
-    "deepseek": {
       "score": 90.0,
       "band": "stable"
     },
@@ -738,6 +734,10 @@
     "hashicorp": {
       "score": 90.0,
       "band": "stable"
+    },
+    "deepseek": {
+      "score": 65.0,
+      "band": "review"
     }
   },
   "note": "v1 heuristic — multi-source agreement later"

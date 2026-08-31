@@ -1,4 +1,4 @@
-generated_at: '2026-08-31T09:15:20.636071+00:00'
+generated_at: '2026-08-31T15:05:06.618170+00:00'
 categories:
   '12306':
     display_name: '12306'
@@ -88,7 +88,7 @@ categories:
       name: BiliBili
       path: rule/China/BiliBili
       service_type: service
-      domains: 121
+      domains: 67
       ips: 8
     - id: cctv
       name: CCTV
@@ -101,7 +101,7 @@ categories:
       path: rule/China/China
       service_type: aggregate
       domains: 111496
-      ips: 9669
+      ips: 9670
     - id: ctrip
       name: Ctrip
       path: rule/China/Ctrip
@@ -184,7 +184,7 @@ categories:
       name: NetEase
       path: rule/China/NetEase
       service_type: service
-      domains: 63
+      domains: 62
       ips: 18
     - id: pinduoduo
       name: Pinduoduo
@@ -272,7 +272,7 @@ categories:
       name: Private
       path: rule/Privacy/Private
       service_type: service
-      domains: 241
+      domains: 123
       ips: 3
     - id: proxy
       name: Proxy
@@ -288,7 +288,7 @@ categories:
       name: Adobe
       path: rule/Other/Adobe
       service_type: service
-      domains: 139
+      domains: 138
       ips: 0
     - id: airbnb
       name: Airbnb
@@ -318,7 +318,7 @@ categories:
       name: eBay
       path: rule/Other/eBay
       service_type: service
-      domains: 370
+      domains: 369
       ips: 0
     - id: huawei
       name: Huawei
@@ -336,7 +336,7 @@ categories:
       name: Notion
       path: rule/Other/Notion
       service_type: service
-      domains: 8
+      domains: 7
       ips: 0
     - id: oppo
       name: OPPO
@@ -348,7 +348,7 @@ categories:
       name: Scholar
       path: rule/Other/Scholar
       service_type: service
-      domains: 231
+      domains: 230
       ips: 0
     - id: shopify
       name: Shopify
@@ -412,7 +412,7 @@ categories:
       name: AI-Suite
       path: rule/AI/AI-Suite
       service_type: service
-      domains: 95
+      domains: 72
       ips: 0
     - id: anthropic
       name: Anthropic
@@ -424,19 +424,19 @@ categories:
       name: Claude
       path: rule/AI/Claude
       service_type: service
-      domains: 3
+      domains: 2
       ips: 0
     - id: copilot
       name: Copilot
       path: rule/AI/Copilot
       service_type: service
-      domains: 46
+      domains: 26
       ips: 2
     - id: deepseek
       name: DeepSeek
       path: rule/AI/DeepSeek
       service_type: service
-      domains: 1
+      domains: 2
       ips: 0
     - id: elevenlabs
       name: ElevenLabs
@@ -448,7 +448,7 @@ categories:
       name: Gemini
       path: rule/AI/Gemini
       service_type: service
-      domains: 10
+      domains: 7
       ips: 0
     - id: groq
       name: Groq
@@ -466,7 +466,7 @@ categories:
       name: OpenAI
       path: rule/AI/OpenAI
       service_type: service
-      domains: 40
+      domains: 37
       ips: 2
     - id: perplexity
       name: Perplexity
@@ -530,7 +530,7 @@ categories:
       name: Docker
       path: rule/Developer/Docker
       service_type: service
-      domains: 10
+      domains: 7
       ips: 0
     - id: figma
       name: Figma
@@ -662,19 +662,19 @@ categories:
       name: Apple
       path: rule/Apple/Apple
       service_type: aggregate
-      domains: 1821
+      domains: 1813
       ips: 13
     - id: applemusic
       name: AppleMusic
       path: rule/Apple/AppleMusic
       service_type: service
-      domains: 9
+      domains: 3
       ips: 0
     - id: appletv
       name: AppleTV
       path: rule/Apple/AppleTV
       service_type: service
-      domains: 7
+      domains: 1
       ips: 0
     - id: icloud
       name: iCloud
@@ -690,13 +690,13 @@ categories:
       name: Bahamut
       path: rule/Streaming/Bahamut
       service_type: service
-      domains: 7
+      domains: 6
       ips: 0
     - id: bbc
       name: BBC
       path: rule/Streaming/BBC
       service_type: service
-      domains: 26
+      domains: 15
       ips: 0
     - id: dailymotion
       name: Dailymotion
@@ -720,7 +720,7 @@ categories:
       name: Emby
       path: rule/Streaming/Emby
       service_type: service
-      domains: 48
+      domains: 45
       ips: 0
     - id: hbo
       name: HBO
@@ -732,13 +732,13 @@ categories:
       name: Hulu
       path: rule/Streaming/Hulu
       service_type: service
-      domains: 58
+      domains: 57
       ips: 0
     - id: netflix
       name: Netflix
       path: rule/Streaming/Netflix
       service_type: service
-      domains: 32
+      domains: 30
       ips: 0
     - id: paramountplus
       name: ParamountPlus
@@ -756,7 +756,7 @@ categories:
       name: PrimeVideo
       path: rule/Streaming/PrimeVideo
       service_type: service
-      domains: 24
+      domains: 19
       ips: 0
     - id: soundcloud
       name: SoundCloud
@@ -768,7 +768,7 @@ categories:
       name: Spotify
       path: rule/Streaming/Spotify
       service_type: service
-      domains: 32
+      domains: 23
       ips: 2
     - id: tidal
       name: Tidal
@@ -812,7 +812,7 @@ categories:
       name: EA
       path: rule/Gaming/EA
       service_type: service
-      domains: 165
+      domains: 163
       ips: 0
     - id: epic
       name: Epic
@@ -872,7 +872,7 @@ categories:
       name: Steam
       path: rule/Gaming/Steam
       service_type: service
-      domains: 69
+      domains: 62
       ips: 0
     - id: ubisoft
       name: Ubisoft
@@ -958,7 +958,7 @@ categories:
       name: LinkedIn
       path: rule/Social/LinkedIn
       service_type: service
-      domains: 12
+      domains: 9
       ips: 0
     - id: messenger
       name: Messenger
@@ -994,7 +994,7 @@ categories:
       name: Telegram
       path: rule/Social/Telegram
       service_type: service
-      domains: 27
+      domains: 25
       ips: 22
     - id: threads
       name: Threads
@@ -1012,7 +1012,7 @@ categories:
       name: WhatsApp
       path: rule/Social/WhatsApp
       service_type: service
-      domains: 16
+      domains: 15
       ips: 11
   bytedance:
     display_name: ByteDance
@@ -1034,13 +1034,13 @@ categories:
       name: Douyin
       path: rule/ByteDance/Douyin
       service_type: service
-      domains: 78
+      domains: 76
       ips: 0
     - id: tiktok
       name: TikTok
       path: rule/ByteDance/TikTok
       service_type: service
-      domains: 53
+      domains: 50
       ips: 0
   chinamobile:
     display_name: ChinaMobile
@@ -1071,7 +1071,7 @@ categories:
       path: rule/ChinaUnicom/ChinaUnicom
       service_type: service
       domains: 33
-      ips: 3729
+      ips: 3736
   google:
     display_name: Google
     order: 90
@@ -1086,13 +1086,13 @@ categories:
       name: Google
       path: rule/Google/Google
       service_type: aggregate
-      domains: 1094
+      domains: 1093
       ips: 5
     - id: googlefcm
       name: GoogleFCM
       path: rule/Google/GoogleFCM
       service_type: service
-      domains: 15
+      domains: 0
       ips: 26
     - id: youtube
       name: YouTube
@@ -1132,13 +1132,13 @@ categories:
       name: Teams
       path: rule/Microsoft/Teams
       service_type: service
-      domains: 4
+      domains: 3
       ips: 0
     - id: xbox
       name: Xbox
       path: rule/Microsoft/Xbox
       service_type: service
-      domains: 42
+      domains: 38
       ips: 0
   jingdong:
     display_name: JingDong
@@ -1174,7 +1174,7 @@ categories:
       name: STUN
       path: rule/Network/STUN
       service_type: service
-      domains: 350
+      domains: 0
       ips: 16
   tencent:
     display_name: Tencent
@@ -1184,23 +1184,23 @@ categories:
       name: Tencent
       path: rule/Tencent/Tencent
       service_type: aggregate
-      domains: 678
+      domains: 680
       ips: 20
     - id: tencentvideo
       name: TencentVideo
       path: rule/Tencent/TencentVideo
       service_type: service
-      domains: 19
+      domains: 5
       ips: 32
     - id: wechat
       name: WeChat
       path: rule/Tencent/WeChat
       service_type: service
-      domains: 30
+      domains: 22
       ips: 0
     - id: wetv
       name: WeTV
       path: rule/Tencent/WeTV
       service_type: service
-      domains: 6
+      domains: 5
       ips: 1

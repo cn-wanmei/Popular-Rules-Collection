@@ -306,7 +306,7 @@
 {"d":"brerry.com","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"bridgeupp.com","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"brownerfetesclauses.cfd","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
-{"d":"browser-intake-datadoghq.com","s":[0,1,2,3,4,5,6],"r":[4,5,7,45,115],"t":"domain_suffix"}
+{"d":"browser-intake-datadoghq.com","s":[0,1,2,3,4,5,6],"r":[4,5,7,45,115,196,215],"t":"domain_suffix"}
 {"d":"brzvtueeyyqdo.space","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"bswpedrupvagj.website","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"buiiv.com","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
@@ -893,7 +893,7 @@
 {"d":"alibabausercontent.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"pl.youku.com","s":[0,1,2,3,4,5,6],"r":[5,11,179],"t":"domain_suffix"}
 {"d":"45.112.212.0/22","s":[0,1,6],"r":[11],"t":"ip_cidr"}
-{"d":"tj-pod1-smp-device.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"tj-pod1-smp-device.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"amp-api-edge-lb-cn.itunes-apple.com.akadns.net","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
 {"d":"beatsdrdre-headphones.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"icloud.net.cn","s":[0,1,6,7],"r":[17,90],"t":"domain_suffix"}
@@ -912,7 +912,7 @@
 {"d":"cf-ns.net","s":[0,1,6],"r":[38,43],"t":"domain_suffix"}
 {"d":"nftables.org","s":[0,1,3,5],"r":[51,129],"t":"domain_suffix"}
 {"d":"nodejs.org","s":[0,1,3,5],"r":[51,129],"t":"domain_suffix"}
-{"d":"productionresultssa2.blob.core.windows.net","s":[0,1,3,5,6,7],"r":[51,75,105,129],"t":"domain_suffix"}
+{"d":"productionresultssa2.blob.core.windows.net","s":[0,1,3,5,6,7],"r":[51,75,105,129,205,211],"t":"domain_suffix"}
 {"d":"battlefrontii.com","s":[0,3,5],"r":[62,129],"t":"domain_suffix"}
 {"d":"yogify.com","s":[0,3,5],"r":[62,129],"t":"domain_suffix"}
 {"d":"wwwdecide.com","s":[0,3,5,6],"r":[63,129],"t":"domain_suffix"}
@@ -963,9 +963,9 @@
 {"d":"roblox.mx","s":[1,3,5,6],"r":[129,134],"t":"domain_suffix"}
 {"d":"jbe-platform.com","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
 {"d":"sohucs.com","s":[0,1],"r":[38,142],"t":"domain_suffix"}
-{"d":"stun.streamnow.ch","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.syncthing.net","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.teamfon.de","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.streamnow.ch","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.syncthing.net","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.teamfon.de","s":[0],"r":[148,224],"t":"domain"}
 {"d":"edgeonedy1.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"tencentwemeet.club","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"qsb.browser.miui.srv","s":[0,1],"r":[38,177],"t":"domain_suffix"}

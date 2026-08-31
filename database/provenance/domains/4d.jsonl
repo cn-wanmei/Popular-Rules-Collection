@@ -935,7 +935,7 @@
 {"d":"esbeatsbydrebuy.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"iphonese.tv","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"spcode.baidu.com","s":[0,1,2,3,4,5,6],"r":[5,24],"t":"domain_suffix"}
-{"d":"1graukmttga4nhcjtgozdgce.ourdvsss.com","s":[0,1,6,7],"r":[27],"t":"domain"}
+{"d":"1graukmttga4nhcjtgozdgce.ourdvsss.com","s":[0,1,6,7],"r":[27,193],"t":"domain"}
 {"d":"byted-static.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
 {"d":"cozetest2.cn","s":[0,1,6],"r":[33,58],"t":"domain_suffix"}
 {"d":"multilingual-volc.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
@@ -957,7 +957,7 @@
 {"d":"plusmedia.site","s":[0],"r":[66],"t":"domain_suffix"}
 {"d":"freefacebook.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
 {"d":"terragraph.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
-{"d":"clickserve.cc-dt.com","s":[0,1,3,5,6],"r":[38,77,129],"t":"domain_suffix"}
+{"d":"clickserve.cc-dt.com","s":[0,1,3,5,6],"r":[38,77,129,206],"t":"domain_suffix"}
 {"d":"blogspot.co.nz","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
 {"d":"youtube.com","s":[0,1,3,5,6,7],"r":[74,77,129,180],"t":"domain_suffix"}
 {"d":"icbc.com.vn","s":[0,1],"r":[38,89],"t":"domain_suffix"}
@@ -970,7 +970,7 @@
 {"d":"hotmail.eu","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"windowsphone.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"xboxlive.com","s":[0,1,3,5,6,7],"r":[105,129,174],"t":"domain_suffix"}
-{"d":"ns575949.ip-51-222-82.net","s":[0],"r":[128],"t":"domain"}
+{"d":"ns575949.ip-51-222-82.net","s":[0],"r":[128,218],"t":"domain"}
 {"d":"(^|\\.)banyinjia[0-9]?\\.com$","s":[1,6],"r":[132],"t":"domain_regex"}
 {"d":"114av.xyz","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"188channel.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -995,8 +995,8 @@
 {"d":"csiro.au","s":[0,7],"r":[136],"t":"domain_suffix"}
 {"d":"proquest.com","s":[0,1,3,5,7],"r":[38,129,136],"t":"domain_suffix"}
 {"d":"royalsocietypublishing.org","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
-{"d":"stun.ippi.fr","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.soho66.co.uk","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.ippi.fr","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.soho66.co.uk","s":[0],"r":[148,224],"t":"domain"}
 {"d":"m9.run","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"roblox.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"yufuid.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

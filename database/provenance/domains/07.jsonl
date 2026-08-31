@@ -911,7 +911,7 @@
 {"d":"macbookpro.us","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"tv.apple.com","s":[0,1,6,7],"r":[17,19],"t":"domain_suffix"}
 {"d":"mipplan.com","s":[0,1,6],"r":[24,38],"t":"domain_suffix"}
-{"d":"218-91-225-1.ksyungslb.com","s":[0,1,6,7],"r":[27],"t":"domain"}
+{"d":"218-91-225-1.ksyungslb.com","s":[0,1,6,7],"r":[27,193],"t":"domain"}
 {"d":"coze.site","s":[0,1,6],"r":[33,38,58],"t":"domain_suffix"}
 {"d":"cozebuild.com","s":[0,1,6],"r":[33,38,58],"t":"domain_suffix"}
 {"d":"edgeceler.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
@@ -941,7 +941,7 @@
 {"d":"wweuzgtp.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"116.55.228.0/24","s":[0],"r":[98],"t":"ip_cidr"}
 {"d":"183.131.168.0/24","s":[0],"r":[98],"t":"ip_cidr"}
-{"d":"mpnbenefitsrtl.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105],"t":"domain_suffix"}
+{"d":"mpnbenefitsrtl.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105,211],"t":"domain_suffix"}
 {"d":"bings.com","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"microsoftestore.com.hk","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"renovacionoffice.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
@@ -949,8 +949,8 @@
 {"d":"paypalnet.net","s":[0,3,5,7],"r":[119,129],"t":"domain_suffix"}
 {"d":"4008824365.com","s":[0,1],"r":[38,123],"t":"domain_suffix"}
 {"d":"4008880999.cn","s":[0],"r":[123],"t":"domain_suffix"}
-{"d":"seedpeer.net","s":[0],"r":[128],"t":"domain"}
-{"d":"torrentsmd.com","s":[0],"r":[128],"t":"domain"}
+{"d":"seedpeer.net","s":[0],"r":[128,218],"t":"domain"}
+{"d":"torrentsmd.com","s":[0],"r":[128,218],"t":"domain"}
 {"d":"beyond-hd.me","s":[0],"r":[128],"t":"domain_suffix"}
 {"d":"18h.mm-cg.com","s":[1,6],"r":[132],"t":"domain_suffix"}
 {"d":"58avgo.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -972,9 +972,9 @@
 {"d":"xpornplease.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"xhaiwai.com","s":[0,1],"r":[38,139],"t":"domain_suffix"}
 {"d":"steamserver.net","s":[0,3,5,6,7],"r":[129,146],"t":"domain_suffix"}
-{"d":"stun.romaaeterna.nl","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.schlund.de","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.talkho.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.romaaeterna.nl","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.schlund.de","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.talkho.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"tdnsv11.net","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"wetv.vip","s":[0,1,6],"r":[38,151,169],"t":"domain_suffix"}
 {"d":"wuliao.epro.sogou.com","s":[0,1,2,3,4,5,6],"r":[5,151],"t":"domain_suffix"}

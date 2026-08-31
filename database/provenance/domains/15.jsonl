@@ -898,10 +898,10 @@
 {"d":"zyskonex-ai.com","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"thawte.com","s":[0,3,5,6],"r":[6,129],"t":"domain_suffix"}
 {"d":"toutapp.com","s":[0,2,3,4,5,6],"r":[5,6,129],"t":"domain_suffix"}
-{"d":"openaiapi-site.azureedge.net","s":[0,1,3,5,6,7],"r":[7,9,45,115,129],"t":"domain_suffix"}
+{"d":"openaiapi-site.azureedge.net","s":[0,1,3,5,6,7],"r":[7,9,45,115,129,185,215],"t":"domain_suffix"}
 {"d":"airbnb.be","s":[1,3,5,6],"r":[8,129],"t":"domain_suffix"}
 {"d":"airbnb.se","s":[1,3,5,6],"r":[8,129],"t":"domain_suffix"}
-{"d":"updates.cdn-apple.com","s":[0,1,6,7],"r":[9,17],"t":"domain_suffix"}
+{"d":"updates.cdn-apple.com","s":[0,1,6,7],"r":[9,17,188],"t":"domain_suffix"}
 {"d":"a-map.co","s":[0,1,6],"r":[11,14,38,71],"t":"domain_suffix"}
 {"d":"audid.umeng.com","s":[0,1,2,3,4,5,6],"r":[5,11],"t":"domain_suffix"}
 {"d":"freshhema.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
@@ -914,7 +914,7 @@
 {"d":"bytepluspcs-test.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
 {"d":"tiktok.com","s":[0,1,3,5,6,7],"r":[33,74,129,155],"t":"domain_suffix"}
 {"d":"volcadocean.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
-{"d":"github-production-repository-image-32fea6.s3.amazonaws.com","s":[0,1,3,5,6,7],"r":[51,75,105,129],"t":"domain_suffix"}
+{"d":"github-production-repository-image-32fea6.s3.amazonaws.com","s":[0,1,3,5,6,7],"r":[51,75,105,129,205,211],"t":"domain_suffix"}
 {"d":"stackoverflow.co","s":[0,1,3,5],"r":[51,129],"t":"domain_suffix"}
 {"d":"espnqa.com","s":[0,3,5,7],"r":[56,129],"t":"domain_suffix"}
 {"d":"ea.tt.omtrdc.net","s":[0,3,5],"r":[62,129],"t":"domain_suffix"}
@@ -935,7 +935,7 @@
 {"d":"orzoupri.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"ovcgegxa.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"linkedin.at","s":[0,3,5],"r":[102,129],"t":"domain_suffix"}
-{"d":"surface.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105],"t":"domain_suffix"}
+{"d":"surface.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105,211],"t":"domain_suffix"}
 {"d":"microsoft-give.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"netflixdnstest1.com","s":[0,1,3,5,6,7],"r":[109,129],"t":"domain_suffix"}
 {"d":"supermariorun.com","s":[0,3,5],"r":[111,129],"t":"domain_suffix"}
@@ -962,8 +962,8 @@
 {"d":"yskg-ber.buzz","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"supremacy.net","s":[0,3,5],"r":[129,133],"t":"domain_suffix"}
 {"d":"umass.edu","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
-{"d":"stun.voipblast.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.waterpolopalermo.it","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.voipblast.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.waterpolopalermo.it","s":[0],"r":[148,224],"t":"domain"}
 {"d":"ap-seoul.tencentcos.com.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"vodtcbk.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"wegame.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

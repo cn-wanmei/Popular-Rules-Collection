@@ -7,17 +7,17 @@ service_type: service
 parent: google
 children: null
 rule:
-  has_domain: true
+  has_domain: false
   has_ip: true
   mixed: true
 generated_files:
   mixed: googlefcm.list
-  domain: googlefcm_domain.list
+  domain: null
   ip: googlefcm_ip.list
 statistics:
-  domains: 15
+  domains: 0
   ipv4_or_cidr: 26
-  mixed: 41
+  mixed: 26
 sources:
 - blackmatrix7
 - dler

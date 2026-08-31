@@ -892,9 +892,9 @@
 {"d":"zveluptiru-norway.sbs","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"deepmind.com","s":[0,1,3,5,6,7],"r":[7,9,73,74,77,129],"t":"domain_suffix"}
 {"d":"amazon.dev","s":[0,1,3,5,6],"r":[15,129],"t":"domain_suffix"}
-{"d":"d27xxe7juh1us6.cloudfront.net","s":[0,1,3,5,6],"r":[15,127,129],"t":"domain"}
+{"d":"d27xxe7juh1us6.cloudfront.net","s":[0,1,3,5,6],"r":[15,127,129,217],"t":"domain"}
 {"d":"52.77.0.0/16","s":[0,1,6],"r":[15],"t":"ip_cidr"}
-{"d":"s1.mzstatic.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"s1.mzstatic.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"ap0le.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"applecenter.cn","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
 {"d":"beatsbydrdremall.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -973,11 +973,11 @@
 {"d":"jmlr.org","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
 {"d":"pnas.org","s":[0,1,3,5,7],"r":[38,129,136],"t":"domain_suffix"}
 {"d":"scopus.com","s":[0,1,3,5,7],"r":[38,129,136],"t":"domain_suffix"}
-{"d":"steamvideo-a.akamaihd.net","s":[0,3,5,6,7],"r":[129,146],"t":"domain_suffix"}
+{"d":"steamvideo-a.akamaihd.net","s":[0,3,5,6,7],"r":[129,146,223],"t":"domain_suffix"}
 {"d":"dl.steam.ksyna.com","s":[0,6,7],"r":[146],"t":"domain_suffix"}
-{"d":"stun.ctafauni.it","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.ipshka.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.voipraider.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.ctafauni.it","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.ipshka.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.voipraider.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"2404:6800:4008:c04::7f","s":[0],"r":[148],"t":"ip_cidr6"}
 {"d":"telega.one","s":[0,3,5,6,7],"r":[74,129,150],"t":"domain_suffix"}
 {"d":"ap-singapore.myqcloud.com","s":[0,1,6],"r":[151],"t":"domain_suffix"}

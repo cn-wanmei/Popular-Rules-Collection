@@ -918,7 +918,7 @@
 {"d":"intercom.io","s":[0,1,3,5,6,7],"r":[9,45,115,129],"t":"domain_suffix"}
 {"d":"oss-cn-heyuan.aliyuncs.com","s":[0,1,6],"r":[11,12],"t":"domain_suffix"}
 {"d":"110.76.48.0/20","s":[0,1,6],"r":[11],"t":"ip_cidr"}
-{"d":"init.gc.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"init.gc.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"aplestore.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"apple.com.gr","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"applehongkong.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -984,8 +984,8 @@
 {"d":"xxgasm.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"signal.link","s":[1,3,5,6],"r":[129,138],"t":"domain_suffix"}
 {"d":"spotifynewsroom.jp","s":[0,6,7],"r":[145],"t":"domain_suffix"}
-{"d":"stun.planetarium.com.br","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.plexicomm.net","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.planetarium.com.br","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.plexicomm.net","s":[0],"r":[148,224],"t":"domain"}
 {"d":"gotolink.net","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"inte.sogoucdn.com","s":[0,1,2,3,4,5,6],"r":[5,151],"t":"domain_suffix"}
 {"d":"na-ashburn.myqcloud.com","s":[0,1,6],"r":[151],"t":"domain_suffix"}

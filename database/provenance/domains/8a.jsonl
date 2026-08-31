@@ -308,7 +308,7 @@
 {"d":"blackandwhitesail.pro","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"blg-1216lb.com","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"blinksbobblepadding.com","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
-{"d":"bloodhound.spotify.com","s":[0,2,3,4,5,6,7],"r":[4,5,145],"t":"domain"}
+{"d":"bloodhound.spotify.com","s":[0,2,3,4,5,6,7],"r":[4,5,145,222],"t":"domain"}
 {"d":"bluejay.schreinerei-virnich.de","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"blueridgeloop.com","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"bluesource.pushwoosh.com","s":[2],"r":[4],"t":"domain_suffix"}
@@ -947,7 +947,7 @@
 {"d":"adash.man.aliyuncs.com","s":[0,1,2,3,4,5,6],"r":[5,11,12],"t":"domain_suffix"}
 {"d":"acmvalidationsaws.com","s":[0,1,3,5,6],"r":[15,21,129],"t":"domain_suffix"}
 {"d":"cdkworkshop.com","s":[0,1,3,5,6],"r":[15,21,129],"t":"domain_suffix"}
-{"d":"is3.mzstatic.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"is3.mzstatic.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"apple-icloud.cn","s":[0,1,6,7],"r":[17,90],"t":"domain_suffix"}
 {"d":"applestorepro.eu","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"chomp.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -955,7 +955,7 @@
 {"d":"monsterdrebeats-canada.net","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"officialheadphone.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"bceimg.com","s":[0,1,6],"r":[24,38],"t":"domain_suffix"}
-{"d":"vs-cmaf-push-uk-live.akamaized.net","s":[0,3,5,7],"r":[26,129],"t":"domain"}
+{"d":"vs-cmaf-push-uk-live.akamaized.net","s":[0,3,5,7],"r":[26,129,192],"t":"domain"}
 {"d":"95559.com.cn","s":[0],"r":[31],"t":"domain_suffix"}
 {"d":"bdsagslb.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
 {"d":"bytemaimg.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
@@ -969,7 +969,7 @@
 {"d":"heroesofdragonage.com","s":[0,3,5],"r":[62,129],"t":"domain_suffix"}
 {"d":"xn--xsq605n.com","s":[0,3,5,6],"r":[63,129],"t":"domain_suffix"}
 {"d":"redkix.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
-{"d":"checkin.gstatic.com","s":[0,1,6],"r":[77],"t":"domain_suffix"}
+{"d":"checkin.gstatic.com","s":[0,1,6],"r":[77,206],"t":"domain_suffix"}
 {"d":"blink.org","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
 {"d":"blogspot.co.il","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
 {"d":"chronicle.security","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
@@ -988,7 +988,7 @@
 {"d":"110.234.236.0/22","s":[0],"r":[107],"t":"ip_cidr"}
 {"d":"starfox.com","s":[0,3,5],"r":[111,129],"t":"domain_suffix"}
 {"d":"virtualbox.org","s":[0,3,5,6],"r":[117,129],"t":"domain_suffix"}
-{"d":"tracker.zhuqiy.dgj055.icu","s":[0],"r":[128],"t":"domain"}
+{"d":"tracker.zhuqiy.dgj055.icu","s":[0],"r":[128,218],"t":"domain"}
 {"d":"hdupt.com","s":[0],"r":[128],"t":"domain_suffix"}
 {"d":"(^|\\.)mdyy[0-9][0-9]\\.cc$","s":[1,6],"r":[132],"t":"domain_regex"}
 {"d":"adult3dporno.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -1028,7 +1028,7 @@
 {"d":"youramateurporn.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"rowblocks.com","s":[1,3,5,6],"r":[129,134],"t":"domain_suffix"}
 {"d":"sc-cdn.net","s":[1,3,5],"r":[129,141],"t":"domain_suffix"}
-{"d":"a4e8s8k3.map2.ssl.hwcdn.net","s":[0,3,5,6,7],"r":[129,146],"t":"domain"}
+{"d":"a4e8s8k3.map2.ssl.hwcdn.net","s":[0,3,5,6,7],"r":[129,146,223],"t":"domain"}
 {"d":"pn1waq.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"yunjitele.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"yuweikuijianzhan.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

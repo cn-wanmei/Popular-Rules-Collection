@@ -8,7 +8,7 @@
 {"d":"a-ads.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"ab-log.datahou.se","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"ad-log-upload-os.hoyoverse.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
-{"d":"adeventtracker.spotify.com","s":[0,2,3,4,5,6,7],"r":[3,4,5,145],"t":"domain"}
+{"d":"adeventtracker.spotify.com","s":[0,2,3,4,5,6,7],"r":[3,4,5,145,222],"t":"domain"}
 {"d":"adlpo.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"adlzmqouddtim.space","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"adopstar.uk","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
@@ -902,7 +902,7 @@
 {"d":"zone-telechargement-albums.com","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"zunabet.fr","s":[2,3,4,5],"r":[4,5],"t":"domain_suffix"}
 {"d":"tbcdn.cn","s":[0,1,6],"r":[11],"t":"domain_suffix"}
-{"d":"cl4-cn.apple.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"cl4-cn.apple.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"appleone.website","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"applepaysupplies.info","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"applestoreonline.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -915,11 +915,11 @@
 {"d":"tiktok-row.net","s":[0,1,3,5,6,7],"r":[33,129,155],"t":"domain_suffix"}
 {"d":"64.23.132.171/32","s":[0,1,6],"r":[45,115],"t":"ip_cidr"}
 {"d":"nugettest.org","s":[0,1,3,5,6,7],"r":[51,105,129],"t":"domain_suffix"}
-{"d":"productionresultssa3.blob.core.windows.net","s":[0,1,3,5,6,7],"r":[51,75,105,129],"t":"domain_suffix"}
+{"d":"productionresultssa3.blob.core.windows.net","s":[0,1,3,5,6,7],"r":[51,75,105,129,205,211],"t":"domain_suffix"}
 {"d":"discordapp.com","s":[0,3,5,6,7],"r":[55,74,129],"t":"domain_suffix"}
 {"d":"disneymagicmoments.fr","s":[0,3,5,7],"r":[56,129],"t":"domain_suffix"}
 {"d":"21centuryaccess.com","s":[0,3,5,6],"r":[63,129],"t":"domain_suffix"}
-{"d":"download.mlcc.google.com","s":[0,1,6],"r":[77],"t":"domain_suffix"}
+{"d":"download.mlcc.google.com","s":[0,1,6],"r":[77,206],"t":"domain_suffix"}
 {"d":"google.ba","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"google.co.zm","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"youtubefanfest.com","s":[0,1,3,5,6,7],"r":[77,129,180],"t":"domain_suffix"}
@@ -931,7 +931,7 @@
 {"d":"jcloudgslb.net","s":[0,1],"r":[38,94],"t":"domain_suffix"}
 {"d":"7bip9h1k5s.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"36.250.74.0/24","s":[0],"r":[98],"t":"ip_cidr"}
-{"d":"statics.teams.cdn.office.net","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
+{"d":"statics.teams.cdn.office.net","s":[0,1,6,7],"r":[105,211],"t":"domain_suffix"}
 {"d":"microsoft-online.com.cn","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"mariokart.cn","s":[0],"r":[111],"t":"domain_suffix"}
 {"d":"opposhop.cn","s":[0],"r":[116],"t":"domain_suffix"}

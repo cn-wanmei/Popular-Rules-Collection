@@ -890,8 +890,8 @@
 {"d":"iphone4.com.br","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"azure-dns.cn","s":[0,1,6,7],"r":[22,105],"t":"domain_suffix"}
 {"d":"blizzardgames.cn","s":[0],"r":[25],"t":"domain_suffix"}
-{"d":"112-81-125-43.dhost.00cdn.com","s":[0,1,6,7],"r":[27],"t":"domain"}
-{"d":"1gr5dgmttgha1hcj38yzdkpy.ourdvsss.com","s":[0,1,6,7],"r":[27],"t":"domain"}
+{"d":"112-81-125-43.dhost.00cdn.com","s":[0,1,6,7],"r":[27,193],"t":"domain"}
+{"d":"1gr5dgmttgha1hcj38yzdkpy.ourdvsss.com","s":[0,1,6,7],"r":[27,193],"t":"domain"}
 {"d":"bili33.cn","s":[0,1,6,7],"r":[27],"t":"domain_suffix"}
 {"d":"byte-edge.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
 {"d":"byteorge.com","s":[0,1,6],"r":[33,38],"t":"domain_suffix"}
@@ -913,7 +913,7 @@
 {"d":"7fresh.com","s":[0,1],"r":[38,94],"t":"domain_suffix"}
 {"d":"5ka30l5885.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
 {"d":"qxqtwmgz.com","s":[0,1],"r":[38,96],"t":"domain_suffix"}
-{"d":"cbdstest.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105],"t":"domain_suffix"}
+{"d":"cbdstest.download.prss.microsoft.com","s":[0,1,6,7],"r":[38,105,211],"t":"domain_suffix"}
 {"d":"flightsimulator.azureedge.net","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"microsoft.com.nsatc.net","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"sway-cdn.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
@@ -942,7 +942,7 @@
 {"d":"xvideo.org","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"riotcdn.net","s":[0,3,5],"r":[129,133],"t":"domain_suffix"}
 {"d":"ieee.org","s":[0,1,3,5,7],"r":[38,129,136],"t":"domain_suffix"}
-{"d":"stun.vivox.com","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.vivox.com","s":[0],"r":[148,224],"t":"domain"}
 {"d":"2404:6800:4003:c03::7f","s":[0],"r":[148],"t":"ip_cidr6"}
 {"d":"cdntip.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"happyhlddz.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

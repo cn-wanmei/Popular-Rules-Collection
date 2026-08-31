@@ -946,7 +946,7 @@
 {"d":"aliimg.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"alimei.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"sm.cn","s":[0,1,6],"r":[11],"t":"domain_suffix"}
-{"d":"xp.apple.com","s":[0,1,2,3,4,5,6,7],"r":[5,17],"t":"domain_suffix"}
+{"d":"xp.apple.com","s":[0,1,2,3,4,5,6,7],"r":[5,17,188],"t":"domain_suffix"}
 {"d":"appletaiwan.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"beatsbydreaustraliaonline.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"drebeats-monsteraustralia.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -997,8 +997,8 @@
 {"d":"xxx-video.cfd","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"oxfordreference.com","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
 {"d":"weibo","s":[0,1],"r":[38,139,168],"t":"domain_keyword"}
-{"d":"stun.heeds.eu","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.wxnz.net","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.heeds.eu","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.wxnz.net","s":[0],"r":[148,224],"t":"domain"}
 {"d":"cdn-telegram.org","s":[0,3,5,6,7],"r":[74,129,150],"t":"domain_suffix"}
 {"d":"stel.com","s":[0,6,7],"r":[150],"t":"domain_suffix"}
 {"d":"tdnsv2.net","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

@@ -24,7 +24,7 @@
 {"d":"analytics.nordnet.dk","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"analytics.tele2.ru","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"analytics16-normal-useast5.tiktokw.us","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
-{"d":"apd-pcdnwxlogin.teg.tencent-cloud.net","s":[0,2,3,4,5],"r":[3,4,5,167],"t":"domain"}
+{"d":"apd-pcdnwxlogin.teg.tencent-cloud.net","s":[0,2,3,4,5],"r":[3,4,5,167,231],"t":"domain"}
 {"d":"assets.kampyle.com","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"b17n46rlzqrb7fe58xuzh5ihcx.cfd","s":[2,3,4,5],"r":[3,4,5],"t":"domain_suffix"}
 {"d":"banner.appsflyersdk.com","s":[2,3,4,5],"r":[3,5],"t":"domain_suffix"}
@@ -891,7 +891,7 @@
 {"d":"ems.youku.com","s":[0,1,2,3,4,5,6],"r":[5,11,179],"t":"domain_suffix"}
 {"d":"jiaoyimao.com","s":[0,1,6],"r":[11,38],"t":"domain_suffix"}
 {"d":"rexpos.cn","s":[0,1,6],"r":[11],"t":"domain_suffix"}
-{"d":"apps.mzstatic.com","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
+{"d":"apps.mzstatic.com","s":[0,1,6,7],"r":[17,188],"t":"domain_suffix"}
 {"d":"airtunes.com","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
 {"d":"apple-ibooks.cn","s":[0,1,6,7],"r":[17],"t":"domain_suffix"}
 {"d":"apple.ru","s":[0,1,3,5,6,7],"r":[17,129],"t":"domain_suffix"}
@@ -911,7 +911,7 @@
 {"d":"fortnite.com","s":[0,3,5],"r":[67,129],"t":"domain_suffix"}
 {"d":"facebook","s":[0,1,6],"r":[68],"t":"domain_keyword"}
 {"d":"fbacebook.com","s":[0,1,3,5,6],"r":[68,129],"t":"domain_suffix"}
-{"d":"googletraveladservices-cn.com","s":[0,1,2,3,4,5,6],"r":[5,77,129],"t":"domain_suffix"}
+{"d":"googletraveladservices-cn.com","s":[0,1,2,3,4,5,6],"r":[5,77,129,206],"t":"domain_suffix"}
 {"d":"blogblog.com","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
 {"d":"bumptop.org","s":[0,1,3,5,6],"r":[77,129],"t":"domain_suffix"}
 {"d":"google.co.uz","s":[0,1,3,5,6],"r":[74,77,129],"t":"domain_suffix"}
@@ -949,10 +949,10 @@
 {"d":"xnertv.shop","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"zoomobileporn.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"myshopify.com","s":[0,3,5,6],"r":[129,137],"t":"domain_suffix"}
-{"d":"stun.solomo.de","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.ttmath.org","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.voippro.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.wifirst.net","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.solomo.de","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.ttmath.org","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.voippro.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.wifirst.net","s":[0],"r":[148,224],"t":"domain"}
 {"d":"haydaypop.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"oracle-tencent.net.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"tencent-cloud.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}

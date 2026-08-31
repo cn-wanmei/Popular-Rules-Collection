@@ -1,0 +1,15 @@
+{
+  "l4_hierarchy": {
+    "pass": true,
+    "aggregate_sha": "26a54e71cd4fa3a40712e6b16c3a6130dfe65673a32eb7e790ff7e0cce4cc9f6",
+    "union_sha": "26a54e71cd4fa3a40712e6b16c3a6130dfe65673a32eb7e790ff7e0cce4cc9f6"
+  },
+  "l5_compatibility": {
+    "pass": true,
+    "equal": true,
+    "legacy_count": 1210,
+    "aggregate_count": 1210
+  },
+  "hard_failures": 0,
+  "pass": true
+}

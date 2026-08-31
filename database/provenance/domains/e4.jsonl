@@ -942,7 +942,7 @@
 {"d":"live.com","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
 {"d":"msftcenterone.cn","s":[0,1,6,7],"r":[105],"t":"domain_suffix"}
 {"d":"spo-msedge.net","s":[0,1,3,5,6,7],"r":[105,129],"t":"domain_suffix"}
-{"d":"tracker.aruku.ovh","s":[0],"r":[128],"t":"domain"}
+{"d":"tracker.aruku.ovh","s":[0],"r":[128,218],"t":"domain"}
 {"d":"springsunday.net","s":[0,1],"r":[38,128],"t":"domain_suffix"}
 {"d":"18jms.com","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
 {"d":"54647.org","s":[1,3,5,6],"r":[129,132],"t":"domain_suffix"}
@@ -972,9 +972,9 @@
 {"d":"b-ok.global","s":[0,3,5,7],"r":[129,136],"t":"domain_suffix"}
 {"d":"tandfonline.com","s":[0,1,3,5,7],"r":[38,129,136],"t":"domain_suffix"}
 {"d":"sohurdc.com","s":[0,1],"r":[38,142],"t":"domain_suffix"}
-{"d":"stun.ippi.com","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.nexxtmobile.de","s":[0],"r":[148],"t":"domain"}
-{"d":"stun.sewan.fr","s":[0],"r":[148],"t":"domain"}
+{"d":"stun.ippi.com","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.nexxtmobile.de","s":[0],"r":[148,224],"t":"domain"}
+{"d":"stun.sewan.fr","s":[0],"r":[148,224],"t":"domain"}
 {"d":"ap-mumbai.tencentcos.cn","s":[0,1,6],"r":[151],"t":"domain_suffix"}
 {"d":"fyeds.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}
 {"d":"gcloudsvcs.com","s":[0,1,6],"r":[38,151],"t":"domain_suffix"}

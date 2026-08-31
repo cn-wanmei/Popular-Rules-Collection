@@ -15,9 +15,9 @@ generated_files:
   domain: openai_domain.list
   ip: openai_ip.list
 statistics:
-  domains: 40
+  domains: 37
   ipv4_or_cidr: 2
-  mixed: 42
+  mixed: 39
 sources:
 - blackmatrix7
 - metacubex
