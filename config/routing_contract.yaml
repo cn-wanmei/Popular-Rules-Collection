@@ -1,0 +1,59 @@
+# Routing Contract — final decision semantics (not source ranking)
+# Dataset may retain multi-labels; client generation MUST resolve to one action.
+version: 2
+updated: "2026-08-31"
+
+actions:
+  - DIRECT
+  - PROXY
+  - REJECT
+
+resolution_orthogonal: true
+
+layers:
+  - id: explicit
+    description: Force overrides (force_direct / force_proxy / force_reject)
+    precedence: 1000
+  - id: system
+    description: Loopback, LAN, private, reserved, link-local
+    precedence: 900
+  - id: service
+    description: Explicit service rules (OpenAI, Apple, …)
+    precedence: 800
+  - id: security
+    description: Malware / phishing / high-risk blocklists
+    precedence: 750
+  - id: category
+    description: Functional categories (AI, Streaming, Social, …)
+    precedence: 700
+  - id: geosite
+    description: Domain classification sets (china, gfw, …)
+    precedence: 600
+  - id: geoip
+    description: Destination IP geography (supplement only)
+    precedence: 500
+  - id: network
+    description: Carrier / ASN / other network datasets
+    precedence: 400
+  - id: fallback
+    description: Terminal unmatched
+    precedence: 0
+
+conflict:
+  different_layer: higher_precedence_wins
+  same_layer: source_quality_then_deterministic
+  reject_vs_other: REJECT
+  dns_vs_routing: orthogonal
+
+dataset_conflict_policy: keep_all
+decision_conflict_policy: resolve_unique_action
+
+terminal:
+  unmatched: PROXY
+
+notes:
+  - Domain rules rank above GeoIP for the same target
+  - CN geography is not automatic DIRECT for all Chinese company international assets
+  - Service specificity beats region category
+  - IPv4 and IPv6 should use symmetric system/private/LAN coverage
+  - QUIC/UDP/SNI matching is client capability; this contract is logical rules

@@ -1,4 +1,8 @@
 version: 1
+updated: "2026-08-31"
+
+# Source Ranking only — NOT routing precedence.
+# See config/routing_priority.yaml + config/routing_contract.yaml for final actions.
 
 weights:
   update_activity: 0.25
@@ -8,10 +12,17 @@ weights:
   uniqueness: 0.10
   maintenance_stability: 0.05
 
+# Dataset / collection layer: may retain multi-labels
 conflict_policy:
   exact_duplicate: drop_lower
   semantic_overlap: keep_all
   parent_child: keep_all
+  # keep_all is intentional at Dataset layer only.
+  # Final client generation MUST resolve via routing_contract (unique DIRECT|PROXY|REJECT).
   action_conflict: keep_all
 
 default_policy: PROXY
+
+routing_refs:
+  contract: config/routing_contract.yaml
+  precedence: config/routing_priority.yaml

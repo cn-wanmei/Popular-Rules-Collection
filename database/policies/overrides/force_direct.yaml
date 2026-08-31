@@ -1,0 +1,7 @@
+version: 1
+action: DIRECT
+layer: explicit
+entries: []
+# Example:
+# - match: { domain: internal.example.com }
+#   reason: "corp intranet published on public DNS"

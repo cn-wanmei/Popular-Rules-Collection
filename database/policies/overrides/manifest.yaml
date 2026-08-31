@@ -1,0 +1,10 @@
+version: 1
+id: policy-overrides
+description: Explicit force_* exceptions (highest routing precedence)
+files:
+  - force_direct.yaml
+  - force_proxy.yaml
+  - force_reject.yaml
+notes: >
+  Empty by default. Add domain/IP entries only with a documented reason.
+  Overrides outrank service/category/geosite/geoip per routing_contract.

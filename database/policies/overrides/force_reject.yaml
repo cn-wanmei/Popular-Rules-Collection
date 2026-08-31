@@ -1,0 +1,7 @@
+version: 1
+action: REJECT
+layer: explicit
+entries: []
+# Example:
+# - match: { domain: malware.example }
+#   reason: "confirmed C2"

@@ -1,0 +1,7 @@
+version: 1
+action: PROXY
+layer: explicit
+entries: []
+# Example:
+# - match: { domain: special.example.com }
+#   reason: "must exit via proxy despite CN CDN"

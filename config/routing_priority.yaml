@@ -1,0 +1,59 @@
+# Routing Precedence — independent of config/priority.yaml (source ranking)
+version: 1
+updated: "2026-08-31"
+
+precedence_order:
+  - explicit
+  - system
+  - service
+  - security
+  - category
+  - geosite
+  - geoip
+  - network
+  - fallback
+
+intent:
+  private:
+    action: DIRECT
+    layer: system
+  lan:
+    action: DIRECT
+    layer: system
+  domestic:
+    action: DIRECT
+    layer: geosite
+    note: China domain/IP composition — not every .cn company global service
+  foreign:
+    action: PROXY
+    layer: category
+  blocked_security:
+    action: REJECT
+    layer: security
+  blocked_ad:
+    action: REJECT
+    layer: category
+    optional: true
+  explicit_service:
+    action: SERVICE
+    layer: service
+  unknown:
+    action: PROXY
+    layer: fallback
+
+conflict_matrix:
+  DIRECT:
+    PROXY: higher_layer_or_service_wins
+    REJECT: REJECT
+  PROXY:
+    DIRECT: higher_layer_or_service_wins
+    REJECT: REJECT
+  REJECT:
+    DIRECT: REJECT
+    PROXY: REJECT
+
+china_vs_proxy: service_then_explicit_then_configurable
+domain_before_geoip: true
+
+terminal:
+  unmatched: PROXY
