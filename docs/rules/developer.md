@@ -9,7 +9,7 @@
 | Service Type | aggregate |
 | Tags | developer |
 | 类型 | domain |
-| Domains | 680 |
+| Domains | 679 |
 | CIDR | 0 |
 | 最后更新 | 2026-08-31 |
 | Sources | blackmatrix7 / metacubex |

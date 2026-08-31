@@ -86,7 +86,7 @@
     ]
   },
   "rule_coverage": {
-    "domains": 836189,
+    "domains": 836188,
     "ips": 13968,
     "database_services": 184
   },
@@ -190,7 +190,7 @@
     "mapped_services": 216,
     "real_icons": 134,
     "placeholder": 82,
-    "verified": 33,
+    "verified": 59,
     "png256": 134,
     "config_bindings": 216
   },
@@ -204,11 +204,11 @@
     "critical": 0,
     "high": 0,
     "medium": 0,
-    "low": 17844
+    "low": 17843
   },
   "sources": 4,
   "services": 184,
-  "domains": 836189,
+  "domains": 836188,
   "cidr": 13968,
   "build": {
     "mihomo": "ok",

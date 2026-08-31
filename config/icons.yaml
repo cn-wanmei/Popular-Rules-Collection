@@ -220,11 +220,11 @@ icons:
   alibaba:
     icon_id: alibaba
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: alibabadotcom
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#FF6A00'
     variants:
@@ -254,11 +254,11 @@ icons:
   alipay:
     icon_id: alipay
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: alipay
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#1677FF'
     variants:
@@ -311,7 +311,7 @@ icons:
       provenance: third_party
       slug: amazonaws
       verified: true
-    brand_color: '#FF9900'
+    brand_color: '#232F3E'
     variants:
       brand: true
       mono: true
@@ -322,13 +322,13 @@ icons:
   anthropic:
     icon_id: anthropic
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: anthropic
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
-    brand_color: '#D4A27F'
+    brand_color: '#6366F1'
     variants:
       brand: true
       mono: true
@@ -339,11 +339,11 @@ icons:
   apple:
     icon_id: apple
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: apple
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#86868B'
     variants:
@@ -447,7 +447,7 @@ icons:
       provenance: third_party
       slug: amazonaws
       verified: true
-    brand_color: '#FF9900'
+    brand_color: '#232F3E'
     variants:
       brand: true
       mono: true
@@ -492,11 +492,11 @@ icons:
   baidu:
     icon_id: baidu
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: baidu
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#2932E1'
     variants:
@@ -543,11 +543,11 @@ icons:
   bilibili:
     icon_id: bilibili
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: bilibili
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#00A1D6'
     variants:
@@ -583,7 +583,7 @@ icons:
       provenance: third_party
       slug: bluesky
       verified: true
-    brand_color: '#0085FF'
+    brand_color: '#0285FF'
     variants:
       brand: true
       mono: true
@@ -872,7 +872,7 @@ icons:
       provenance: third_party
       slug: githubcopilot
       verified: true
-    brand_color: '#6366F1'
+    brand_color: '#6E5494'
     variants:
       brand: true
       mono: true
@@ -1070,11 +1070,11 @@ icons:
   discord:
     icon_id: discord
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: discord
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#5865F2'
     variants:
@@ -1121,11 +1121,11 @@ icons:
   docker:
     icon_id: docker
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: docker
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#2496ED'
     variants:
@@ -1155,11 +1155,11 @@ icons:
   douyin:
     icon_id: douyin
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: tiktok
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#FE2C55'
     variants:
@@ -1308,11 +1308,11 @@ icons:
   facebook:
     icon_id: facebook
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: facebook
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#0866FF'
     variants:
@@ -1512,11 +1512,11 @@ icons:
   github:
     icon_id: github
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: github
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#6E5494'
     variants:
@@ -1563,13 +1563,13 @@ icons:
   google:
     icon_id: google
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: google
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
-    brand_color: '#6366F1'
+    brand_color: '#4285F4'
     variants:
       brand: true
       mono: true
@@ -1671,7 +1671,7 @@ icons:
       provenance: third_party
       slug: heroku
       verified: true
-    brand_color: '#430098'
+    brand_color: '#6762A6'
     variants:
       brand: true
       mono: true
@@ -1716,13 +1716,13 @@ icons:
   huawei:
     icon_id: huawei
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: huawei
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
-    brand_color: '#CF0A2C'
+    brand_color: '#FF0000'
     variants:
       brand: true
       mono: true
@@ -1890,7 +1890,7 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      slug: kakaotalk
+      slug: null
       verified: true
     brand_color: '#FFCD00'
     variants:
@@ -2073,11 +2073,11 @@ icons:
   meituan:
     icon_id: meituan
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: meituan
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#FFD100'
     variants:
@@ -2111,7 +2111,7 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      slug: meta
+      slug: null
       verified: true
     brand_color: '#0467DF'
     variants:
@@ -2124,13 +2124,13 @@ icons:
   microsoft:
     icon_id: microsoft
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: microsoft
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
-    brand_color: '#6366F1'
+    brand_color: '#00A4EF'
     variants:
       brand: true
       mono: true
@@ -2209,11 +2209,11 @@ icons:
   netflix:
     icon_id: netflix
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: netflix
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#E50914'
     variants:
@@ -2345,13 +2345,13 @@ icons:
   openai:
     icon_id: openai
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: openai
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
-    brand_color: '#412991'
+    brand_color: '#10A37F'
     variants:
       brand: true
       mono: true
@@ -2366,7 +2366,7 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      slug: oppo
+      slug: null
       verified: true
     brand_color: '#1A472A'
     variants:
@@ -2402,7 +2402,7 @@ icons:
       provenance: third_party
       slug: null
       verified: true
-    brand_color: null
+    brand_color: '#0064FF'
     variants:
       brand: true
       mono: true
@@ -2419,7 +2419,7 @@ icons:
       provenance: third_party
       slug: paypal
       verified: true
-    brand_color: '#00457C'
+    brand_color: '#003087'
     variants:
       brand: true
       mono: true
@@ -2502,7 +2502,7 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      slug: pinterest
+      slug: null
       verified: true
     brand_color: '#BD081C'
     variants:
@@ -2668,11 +2668,11 @@ icons:
   reddit:
     icon_id: reddit
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: reddit
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#FF4500'
     variants:
@@ -2827,7 +2827,7 @@ icons:
       provenance: third_party
       slug: signal
       verified: true
-    brand_color: '#3A76F0'
+    brand_color: '#3B45FD'
     variants:
       brand: true
       mono: true
@@ -2893,7 +2893,7 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      slug: snapchat
+      slug: null
       verified: true
     brand_color: '#FFFC00'
     variants:
@@ -2929,7 +2929,7 @@ icons:
       provenance: third_party
       slug: soundcloud
       verified: true
-    brand_color: '#FF3300'
+    brand_color: '#FF5500'
     variants:
       brand: true
       mono: true
@@ -2944,7 +2944,7 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      slug: speedtest
+      slug: null
       verified: true
     brand_color: '#6366F1'
     variants:
@@ -2957,13 +2957,13 @@ icons:
   spotify:
     icon_id: spotify
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: spotify
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
-    brand_color: '#1DB954'
+    brand_color: '#1ED760'
     variants:
       brand: true
       mono: true
@@ -3093,11 +3093,11 @@ icons:
   telegram:
     icon_id: telegram
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: telegram
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#26A5E4'
     variants:
@@ -3110,11 +3110,11 @@ icons:
   tencent:
     icon_id: tencent
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: tencentqq
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#12B7F5'
     variants:
@@ -3178,11 +3178,11 @@ icons:
   tiktok:
     icon_id: tiktok
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: tiktok
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#FE2C55'
     variants:
@@ -3369,7 +3369,7 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      slug: vivo
+      slug: null
       verified: true
     brand_color: '#415FFF'
     variants:
@@ -3399,11 +3399,11 @@ icons:
   wechat:
     icon_id: wechat
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: wechat
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#07C160'
     variants:
@@ -3450,11 +3450,11 @@ icons:
   whatsapp:
     icon_id: whatsapp
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: whatsapp
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#25D366'
     variants:
@@ -3505,7 +3505,7 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      slug: x
+      slug: null
       verified: true
     brand_color: '#1D9BF0'
     variants:
@@ -3586,11 +3586,11 @@ icons:
   xiaomi:
     icon_id: xiaomi
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: xiaomi
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#FF6900'
     variants:
@@ -3637,11 +3637,11 @@ icons:
   youtube:
     icon_id: youtube
     category: brand
-    status: sourced
+    status: verified
     source:
-      provider: simple-icons
-      provenance: third_party
-      slug: youtube
+      provider: project-brand
+      provenance: official-colors
+      slug: null
       verified: true
     brand_color: '#FF0000'
     variants:
@@ -3658,7 +3658,7 @@ icons:
     source:
       provider: simple-icons
       provenance: third_party
-      slug: youtubemusic
+      slug: null
       verified: true
     brand_color: '#FF0000'
     variants:

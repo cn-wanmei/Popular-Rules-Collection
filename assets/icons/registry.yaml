@@ -161,17 +161,17 @@ services:
   alibaba:
     icon_key: alibaba
     variants:
-      simple: alibaba-simple
-      default: alibaba-simple
+      brand: alibaba-brand
+      default: alibaba-brand
       mono: alibaba-mono
-    default: alibaba-simple
+    default: alibaba-brand
     default_by_profile:
-      brand: alibaba-simple
-      colorful: alibaba-simple
-      minimal: alibaba-simple
+      brand: alibaba-brand
+      colorful: alibaba-brand
+      minimal: alibaba-brand
       monochrome: alibaba-mono
-      network: alibaba-simple
-      client: alibaba-simple
+      network: alibaba-brand
+      client: alibaba-brand
   alibabacloud:
     icon_key: placeholder
     variants:
@@ -188,17 +188,17 @@ services:
   alipay:
     icon_key: alipay
     variants:
-      simple: alipay-simple
-      default: alipay-simple
+      brand: alipay-brand
+      default: alipay-brand
       mono: alipay-mono
-    default: alipay-simple
+    default: alipay-brand
     default_by_profile:
-      brand: alipay-simple
-      colorful: alipay-simple
-      minimal: alipay-simple
+      brand: alipay-brand
+      colorful: alipay-brand
+      minimal: alipay-brand
       monochrome: alipay-mono
-      network: alipay-simple
-      client: alipay-simple
+      network: alipay-brand
+      client: alipay-brand
   amap:
     icon_key: placeholder
     variants:
@@ -243,31 +243,31 @@ services:
   anthropic:
     icon_key: anthropic
     variants:
-      simple: anthropic-simple
-      default: anthropic-simple
+      brand: anthropic-brand
+      default: anthropic-brand
       mono: anthropic-mono
-    default: anthropic-simple
+    default: anthropic-brand
     default_by_profile:
-      brand: anthropic-simple
-      colorful: anthropic-simple
-      minimal: anthropic-simple
+      brand: anthropic-brand
+      colorful: anthropic-brand
+      minimal: anthropic-brand
       monochrome: anthropic-mono
-      network: anthropic-simple
-      client: anthropic-simple
+      network: anthropic-brand
+      client: anthropic-brand
   apple:
     icon_key: apple
     variants:
-      simple: apple-simple
-      default: apple-simple
+      brand: apple-brand
+      default: apple-brand
       mono: apple-mono
-    default: apple-simple
+    default: apple-brand
     default_by_profile:
-      brand: apple-simple
-      colorful: apple-simple
-      minimal: apple-simple
+      brand: apple-brand
+      colorful: apple-brand
+      minimal: apple-brand
       monochrome: apple-mono
-      network: apple-simple
-      client: apple-simple
+      network: apple-brand
+      client: apple-brand
   applemusic:
     icon_key: applemusic
     variants:
@@ -381,17 +381,17 @@ services:
   baidu:
     icon_key: baidu
     variants:
-      simple: baidu-simple
-      default: baidu-simple
+      brand: baidu-brand
+      default: baidu-brand
       mono: baidu-mono
-    default: baidu-simple
+    default: baidu-brand
     default_by_profile:
-      brand: baidu-simple
-      colorful: baidu-simple
-      minimal: baidu-simple
+      brand: baidu-brand
+      colorful: baidu-brand
+      minimal: baidu-brand
       monochrome: baidu-mono
-      network: baidu-simple
-      client: baidu-simple
+      network: baidu-brand
+      client: baidu-brand
   battlenet:
     icon_key: placeholder
     variants:
@@ -421,17 +421,17 @@ services:
   bilibili:
     icon_key: bilibili
     variants:
-      simple: bilibili-simple
-      default: bilibili-simple
+      brand: bilibili-brand
+      default: bilibili-brand
       mono: bilibili-mono
-    default: bilibili-simple
+    default: bilibili-brand
     default_by_profile:
-      brand: bilibili-simple
-      colorful: bilibili-simple
-      minimal: bilibili-simple
+      brand: bilibili-brand
+      colorful: bilibili-brand
+      minimal: bilibili-brand
       monochrome: bilibili-mono
-      network: bilibili-simple
-      client: bilibili-simple
+      network: bilibili-brand
+      client: bilibili-brand
   binance:
     icon_key: binance
     variants:
@@ -842,17 +842,17 @@ services:
   discord:
     icon_key: discord
     variants:
-      simple: discord-simple
-      default: discord-simple
+      brand: discord-brand
+      default: discord-brand
       mono: discord-mono
-    default: discord-simple
+    default: discord-brand
     default_by_profile:
-      brand: discord-simple
-      colorful: discord-simple
-      minimal: discord-simple
+      brand: discord-brand
+      colorful: discord-brand
+      minimal: discord-brand
       monochrome: discord-mono
-      network: discord-simple
-      client: discord-simple
+      network: discord-brand
+      client: discord-brand
   disney:
     icon_key: placeholder
     variants:
@@ -883,17 +883,17 @@ services:
   docker:
     icon_key: docker
     variants:
-      simple: docker-simple
-      default: docker-simple
+      brand: docker-brand
+      default: docker-brand
       mono: docker-mono
-    default: docker-simple
+    default: docker-brand
     default_by_profile:
-      brand: docker-simple
-      colorful: docker-simple
-      minimal: docker-simple
+      brand: docker-brand
+      colorful: docker-brand
+      minimal: docker-brand
       monochrome: docker-mono
-      network: docker-simple
-      client: docker-simple
+      network: docker-brand
+      client: docker-brand
   doubao:
     icon_key: placeholder
     variants:
@@ -910,17 +910,17 @@ services:
   douyin:
     icon_key: douyin
     variants:
-      simple: douyin-simple
-      default: douyin-simple
+      brand: douyin-brand
+      default: douyin-brand
       mono: douyin-mono
-    default: douyin-simple
+    default: douyin-brand
     default_by_profile:
-      brand: douyin-simple
-      colorful: douyin-simple
-      minimal: douyin-simple
+      brand: douyin-brand
+      colorful: douyin-brand
+      minimal: douyin-brand
       monochrome: douyin-mono
-      network: douyin-simple
-      client: douyin-simple
+      network: douyin-brand
+      client: douyin-brand
   douyu:
     icon_key: placeholder
     variants:
@@ -1033,17 +1033,17 @@ services:
   facebook:
     icon_key: facebook
     variants:
-      simple: facebook-simple
-      default: facebook-simple
+      brand: facebook-brand
+      default: facebook-brand
       mono: facebook-mono
-    default: facebook-simple
+    default: facebook-brand
     default_by_profile:
-      brand: facebook-simple
-      colorful: facebook-simple
-      minimal: facebook-simple
+      brand: facebook-brand
+      colorful: facebook-brand
+      minimal: facebook-brand
       monochrome: facebook-mono
-      network: facebook-simple
-      client: facebook-simple
+      network: facebook-brand
+      client: facebook-brand
   fallback:
     icon_key: fallback
     variants:
@@ -1198,17 +1198,17 @@ services:
   github:
     icon_key: github
     variants:
-      simple: github-simple
-      default: github-simple
+      brand: github-brand
+      default: github-brand
       mono: github-mono
-    default: github-simple
+    default: github-brand
     default_by_profile:
-      brand: github-simple
-      colorful: github-simple
-      minimal: github-simple
+      brand: github-brand
+      colorful: github-brand
+      minimal: github-brand
       monochrome: github-mono
-      network: github-simple
-      client: github-simple
+      network: github-brand
+      client: github-brand
   gitlab:
     icon_key: gitlab
     variants:
@@ -1240,17 +1240,17 @@ services:
   google:
     icon_key: google
     variants:
-      simple: google-simple
-      default: google-simple
+      brand: google-brand
+      default: google-brand
       mono: google-mono
-    default: google-simple
+    default: google-brand
     default_by_profile:
-      brand: google-simple
-      colorful: google-simple
-      minimal: google-simple
+      brand: google-brand
+      colorful: google-brand
+      minimal: google-brand
       monochrome: google-mono
-      network: google-simple
-      client: google-simple
+      network: google-brand
+      client: google-brand
   googledrive:
     icon_key: placeholder
     variants:
@@ -1361,17 +1361,17 @@ services:
   huawei:
     icon_key: huawei
     variants:
-      simple: huawei-simple
-      default: huawei-simple
+      brand: huawei-brand
+      default: huawei-brand
       mono: huawei-mono
-    default: huawei-simple
+    default: huawei-brand
     default_by_profile:
-      brand: huawei-simple
-      colorful: huawei-simple
-      minimal: huawei-simple
+      brand: huawei-brand
+      colorful: huawei-brand
+      minimal: huawei-brand
       monochrome: huawei-mono
-      network: huawei-simple
-      client: huawei-simple
+      network: huawei-brand
+      client: huawei-brand
   huggingface:
     icon_key: huggingface
     variants:
@@ -1645,17 +1645,17 @@ services:
   meituan:
     icon_key: meituan
     variants:
-      simple: meituan-simple
-      default: meituan-simple
+      brand: meituan-brand
+      default: meituan-brand
       mono: meituan-mono
-    default: meituan-simple
+    default: meituan-brand
     default_by_profile:
-      brand: meituan-simple
-      colorful: meituan-simple
-      minimal: meituan-simple
+      brand: meituan-brand
+      colorful: meituan-brand
+      minimal: meituan-brand
       monochrome: meituan-mono
-      network: meituan-simple
-      client: meituan-simple
+      network: meituan-brand
+      client: meituan-brand
   messenger:
     icon_key: messenger
     variants:
@@ -1687,17 +1687,17 @@ services:
   microsoft:
     icon_key: microsoft
     variants:
-      simple: microsoft-simple
-      default: microsoft-simple
+      brand: microsoft-brand
+      default: microsoft-brand
       mono: microsoft-mono
-    default: microsoft-simple
+    default: microsoft-brand
     default_by_profile:
-      brand: microsoft-simple
-      colorful: microsoft-simple
-      minimal: microsoft-simple
+      brand: microsoft-brand
+      colorful: microsoft-brand
+      minimal: microsoft-brand
       monochrome: microsoft-mono
-      network: microsoft-simple
-      client: microsoft-simple
+      network: microsoft-brand
+      client: microsoft-brand
   minecraft:
     icon_key: placeholder
     variants:
@@ -1754,17 +1754,17 @@ services:
   netflix:
     icon_key: netflix
     variants:
-      simple: netflix-simple
-      default: netflix-simple
+      brand: netflix-brand
+      default: netflix-brand
       mono: netflix-mono
-    default: netflix-simple
+    default: netflix-brand
     default_by_profile:
-      brand: netflix-simple
-      colorful: netflix-simple
-      minimal: netflix-simple
+      brand: netflix-brand
+      colorful: netflix-brand
+      minimal: netflix-brand
       monochrome: netflix-mono
-      network: netflix-simple
-      client: netflix-simple
+      network: netflix-brand
+      client: netflix-brand
   netlify:
     icon_key: netlify
     variants:
@@ -1864,17 +1864,17 @@ services:
   openai:
     icon_key: openai
     variants:
-      simple: openai-simple
-      default: openai-simple
+      brand: openai-brand
+      default: openai-brand
       mono: openai-mono
-    default: openai-simple
+    default: openai-brand
     default_by_profile:
-      brand: openai-simple
-      colorful: openai-simple
-      minimal: openai-simple
+      brand: openai-brand
+      colorful: openai-brand
+      minimal: openai-brand
       monochrome: openai-mono
-      network: openai-simple
-      client: openai-simple
+      network: openai-brand
+      client: openai-brand
   oppo:
     icon_key: oppo
     variants:
@@ -2122,17 +2122,17 @@ services:
   reddit:
     icon_key: reddit
     variants:
-      simple: reddit-simple
-      default: reddit-simple
+      brand: reddit-brand
+      default: reddit-brand
       mono: reddit-mono
-    default: reddit-simple
+    default: reddit-brand
     default_by_profile:
-      brand: reddit-simple
-      colorful: reddit-simple
-      minimal: reddit-simple
+      brand: reddit-brand
+      colorful: reddit-brand
+      minimal: reddit-brand
       monochrome: reddit-mono
-      network: reddit-simple
-      client: reddit-simple
+      network: reddit-brand
+      client: reddit-brand
   reject:
     icon_key: reject
     variants:
@@ -2355,17 +2355,17 @@ services:
   spotify:
     icon_key: spotify
     variants:
-      simple: spotify-simple
-      default: spotify-simple
+      brand: spotify-brand
+      default: spotify-brand
       mono: spotify-mono
-    default: spotify-simple
+    default: spotify-brand
     default_by_profile:
-      brand: spotify-simple
-      colorful: spotify-simple
-      minimal: spotify-simple
+      brand: spotify-brand
+      colorful: spotify-brand
+      minimal: spotify-brand
       monochrome: spotify-mono
-      network: spotify-simple
-      client: spotify-simple
+      network: spotify-brand
+      client: spotify-brand
   steam:
     icon_key: steam
     variants:
@@ -2463,31 +2463,31 @@ services:
   telegram:
     icon_key: telegram
     variants:
-      simple: telegram-simple
-      default: telegram-simple
+      brand: telegram-brand
+      default: telegram-brand
       mono: telegram-mono
-    default: telegram-simple
+    default: telegram-brand
     default_by_profile:
-      brand: telegram-simple
-      colorful: telegram-simple
-      minimal: telegram-simple
+      brand: telegram-brand
+      colorful: telegram-brand
+      minimal: telegram-brand
       monochrome: telegram-mono
-      network: telegram-simple
-      client: telegram-simple
+      network: telegram-brand
+      client: telegram-brand
   tencent:
     icon_key: tencent
     variants:
-      simple: tencent-simple
-      default: tencent-simple
+      brand: tencent-brand
+      default: tencent-brand
       mono: tencent-mono
-    default: tencent-simple
+    default: tencent-brand
     default_by_profile:
-      brand: tencent-simple
-      colorful: tencent-simple
-      minimal: tencent-simple
+      brand: tencent-brand
+      colorful: tencent-brand
+      minimal: tencent-brand
       monochrome: tencent-mono
-      network: tencent-simple
-      client: tencent-simple
+      network: tencent-brand
+      client: tencent-brand
   tencentvideo:
     icon_key: placeholder
     variants:
@@ -2532,17 +2532,17 @@ services:
   tiktok:
     icon_key: tiktok
     variants:
-      simple: tiktok-simple
-      default: tiktok-simple
+      brand: tiktok-brand
+      default: tiktok-brand
       mono: tiktok-mono
-    default: tiktok-simple
+    default: tiktok-brand
     default_by_profile:
-      brand: tiktok-simple
-      colorful: tiktok-simple
-      minimal: tiktok-simple
+      brand: tiktok-brand
+      colorful: tiktok-brand
+      minimal: tiktok-brand
       monochrome: tiktok-mono
-      network: tiktok-simple
-      client: tiktok-simple
+      network: tiktok-brand
+      client: tiktok-brand
   tongcheng:
     icon_key: placeholder
     variants:
@@ -2712,17 +2712,17 @@ services:
   wechat:
     icon_key: wechat
     variants:
-      simple: wechat-simple
-      default: wechat-simple
+      brand: wechat-brand
+      default: wechat-brand
       mono: wechat-mono
-    default: wechat-simple
+    default: wechat-brand
     default_by_profile:
-      brand: wechat-simple
-      colorful: wechat-simple
-      minimal: wechat-simple
+      brand: wechat-brand
+      colorful: wechat-brand
+      minimal: wechat-brand
       monochrome: wechat-mono
-      network: wechat-simple
-      client: wechat-simple
+      network: wechat-brand
+      client: wechat-brand
   weibo:
     icon_key: weibo
     variants:
@@ -2753,17 +2753,17 @@ services:
   whatsapp:
     icon_key: whatsapp
     variants:
-      simple: whatsapp-simple
-      default: whatsapp-simple
+      brand: whatsapp-brand
+      default: whatsapp-brand
       mono: whatsapp-mono
-    default: whatsapp-simple
+    default: whatsapp-brand
     default_by_profile:
-      brand: whatsapp-simple
-      colorful: whatsapp-simple
-      minimal: whatsapp-simple
+      brand: whatsapp-brand
+      colorful: whatsapp-brand
+      minimal: whatsapp-brand
       monochrome: whatsapp-mono
-      network: whatsapp-simple
-      client: whatsapp-simple
+      network: whatsapp-brand
+      client: whatsapp-brand
   wikipedia:
     icon_key: wikipedia
     variants:
@@ -2861,17 +2861,17 @@ services:
   xiaomi:
     icon_key: xiaomi
     variants:
-      simple: xiaomi-simple
-      default: xiaomi-simple
+      brand: xiaomi-brand
+      default: xiaomi-brand
       mono: xiaomi-mono
-    default: xiaomi-simple
+    default: xiaomi-brand
     default_by_profile:
-      brand: xiaomi-simple
-      colorful: xiaomi-simple
-      minimal: xiaomi-simple
+      brand: xiaomi-brand
+      colorful: xiaomi-brand
+      minimal: xiaomi-brand
       monochrome: xiaomi-mono
-      network: xiaomi-simple
-      client: xiaomi-simple
+      network: xiaomi-brand
+      client: xiaomi-brand
   ximalaya:
     icon_key: placeholder
     variants:
@@ -2901,17 +2901,17 @@ services:
   youtube:
     icon_key: youtube
     variants:
-      simple: youtube-simple
-      default: youtube-simple
+      brand: youtube-brand
+      default: youtube-brand
       mono: youtube-mono
-    default: youtube-simple
+    default: youtube-brand
     default_by_profile:
-      brand: youtube-simple
-      colorful: youtube-simple
-      minimal: youtube-simple
+      brand: youtube-brand
+      colorful: youtube-brand
+      minimal: youtube-brand
       monochrome: youtube-mono
-      network: youtube-simple
-      client: youtube-simple
+      network: youtube-brand
+      client: youtube-brand
   youtubemusic:
     icon_key: youtubemusic
     variants:
@@ -3026,16 +3026,16 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: airbnb
-  alibaba-simple:
-    type: simple
-    source: simple-icons
-    slug: alibabadotcom
+  alibaba-brand:
+    type: brand
+    source: project-brand
     path: source/alibaba.svg
     png:
       '256': png/256/alibaba.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#FF6A00'
+      '128': png/128/alibaba.png
+      '64': png/64/alibaba.png
+    color_mode: color
+    status: verified
     service_icon_key: alibaba
   alibaba-mono:
     type: monochrome
@@ -3044,18 +3044,18 @@ variants:
     png:
       '256': png/256/alibaba.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: alibaba
-  alipay-simple:
-    type: simple
-    source: simple-icons
-    slug: alipay
+  alipay-brand:
+    type: brand
+    source: project-brand
     path: source/alipay.svg
     png:
       '256': png/256/alipay.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#1677FF'
+      '128': png/128/alipay.png
+      '64': png/64/alipay.png
+    color_mode: color
+    status: verified
     service_icon_key: alipay
   alipay-mono:
     type: monochrome
@@ -3064,7 +3064,7 @@ variants:
     png:
       '256': png/256/alipay.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: alipay
   amazon-simple:
     type: simple
@@ -3095,7 +3095,7 @@ variants:
       '256': png/256/aws.png
     color_mode: monochrome
     status: sourced
-    brand_color: '#FF9900'
+    brand_color: '#232F3E'
     service_icon_key: aws
   aws-mono:
     type: monochrome
@@ -3106,16 +3106,16 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: aws
-  anthropic-simple:
-    type: simple
-    source: simple-icons
-    slug: anthropic
+  anthropic-brand:
+    type: brand
+    source: project-brand
     path: source/anthropic.svg
     png:
       '256': png/256/anthropic.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#D4A27F'
+      '128': png/128/anthropic.png
+      '64': png/64/anthropic.png
+    color_mode: color
+    status: verified
     service_icon_key: anthropic
   anthropic-mono:
     type: monochrome
@@ -3124,18 +3124,18 @@ variants:
     png:
       '256': png/256/anthropic.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: anthropic
-  apple-simple:
-    type: simple
-    source: simple-icons
-    slug: apple
+  apple-brand:
+    type: brand
+    source: project-brand
     path: source/apple.svg
     png:
       '256': png/256/apple.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#86868B'
+      '128': png/128/apple.png
+      '64': png/64/apple.png
+    color_mode: color
+    status: verified
     service_icon_key: apple
   apple-mono:
     type: monochrome
@@ -3144,7 +3144,7 @@ variants:
     png:
       '256': png/256/apple.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: apple
   applemusic-simple:
     type: simple
@@ -3246,16 +3246,16 @@ variants:
     color_mode: monochrome
     status: verified
     service_icon_key: auto
-  baidu-simple:
-    type: simple
-    source: simple-icons
-    slug: baidu
+  baidu-brand:
+    type: brand
+    source: project-brand
     path: source/baidu.svg
     png:
       '256': png/256/baidu.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#2932E1'
+      '128': png/128/baidu.png
+      '64': png/64/baidu.png
+    color_mode: color
+    status: verified
     service_icon_key: baidu
   baidu-mono:
     type: monochrome
@@ -3264,18 +3264,18 @@ variants:
     png:
       '256': png/256/baidu.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: baidu
-  bilibili-simple:
-    type: simple
-    source: simple-icons
-    slug: bilibili
+  bilibili-brand:
+    type: brand
+    source: project-brand
     path: source/bilibili.svg
     png:
       '256': png/256/bilibili.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#00A1D6'
+      '128': png/128/bilibili.png
+      '64': png/64/bilibili.png
+    color_mode: color
+    status: verified
     service_icon_key: bilibili
   bilibili-mono:
     type: monochrome
@@ -3284,7 +3284,7 @@ variants:
     png:
       '256': png/256/bilibili.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: bilibili
   binance-simple:
     type: simple
@@ -3315,7 +3315,7 @@ variants:
       '256': png/256/bluesky.png
     color_mode: monochrome
     status: sourced
-    brand_color: '#0085FF'
+    brand_color: '#0285FF'
     service_icon_key: bluesky
   bluesky-mono:
     type: monochrome
@@ -3515,7 +3515,7 @@ variants:
       '256': png/256/copilot.png
     color_mode: monochrome
     status: sourced
-    brand_color: '#6366F1'
+    brand_color: '#6E5494'
     service_icon_key: copilot
   copilot-mono:
     type: monochrome
@@ -3626,16 +3626,16 @@ variants:
     color_mode: monochrome
     status: verified
     service_icon_key: direct
-  discord-simple:
-    type: simple
-    source: simple-icons
-    slug: discord
+  discord-brand:
+    type: brand
+    source: project-brand
     path: source/discord.svg
     png:
       '256': png/256/discord.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#5865F2'
+      '128': png/128/discord.png
+      '64': png/64/discord.png
+    color_mode: color
+    status: verified
     service_icon_key: discord
   discord-mono:
     type: monochrome
@@ -3644,7 +3644,7 @@ variants:
     png:
       '256': png/256/discord.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: discord
   dns-network:
     type: network
@@ -3666,16 +3666,16 @@ variants:
     color_mode: monochrome
     status: verified
     service_icon_key: dns
-  docker-simple:
-    type: simple
-    source: simple-icons
-    slug: docker
+  docker-brand:
+    type: brand
+    source: project-brand
     path: source/docker.svg
     png:
       '256': png/256/docker.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#2496ED'
+      '128': png/128/docker.png
+      '64': png/64/docker.png
+    color_mode: color
+    status: verified
     service_icon_key: docker
   docker-mono:
     type: monochrome
@@ -3684,18 +3684,18 @@ variants:
     png:
       '256': png/256/docker.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: docker
-  douyin-simple:
-    type: simple
-    source: simple-icons
-    slug: tiktok
+  douyin-brand:
+    type: brand
+    source: project-brand
     path: source/douyin.svg
     png:
       '256': png/256/douyin.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#FE2C55'
+      '128': png/128/douyin.png
+      '64': png/64/douyin.png
+    color_mode: color
+    status: verified
     service_icon_key: douyin
   douyin-mono:
     type: monochrome
@@ -3704,7 +3704,7 @@ variants:
     png:
       '256': png/256/douyin.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: douyin
   dropbox-simple:
     type: simple
@@ -3806,16 +3806,16 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: epic
-  facebook-simple:
-    type: simple
-    source: simple-icons
-    slug: facebook
+  facebook-brand:
+    type: brand
+    source: project-brand
     path: source/facebook.svg
     png:
       '256': png/256/facebook.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#0866FF'
+      '128': png/128/facebook.png
+      '64': png/64/facebook.png
+    color_mode: color
+    status: verified
     service_icon_key: facebook
   facebook-mono:
     type: monochrome
@@ -3824,7 +3824,7 @@ variants:
     png:
       '256': png/256/facebook.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: facebook
   fallback-network:
     type: network
@@ -3986,16 +3986,16 @@ variants:
     color_mode: monochrome
     status: verified
     service_icon_key: gfw
-  github-simple:
-    type: simple
-    source: simple-icons
-    slug: github
+  github-brand:
+    type: brand
+    source: project-brand
     path: source/github.svg
     png:
       '256': png/256/github.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#6E5494'
+      '128': png/128/github.png
+      '64': png/64/github.png
+    color_mode: color
+    status: verified
     service_icon_key: github
   github-mono:
     type: monochrome
@@ -4004,7 +4004,7 @@ variants:
     png:
       '256': png/256/github.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: github
   gitlab-simple:
     type: simple
@@ -4046,16 +4046,16 @@ variants:
     color_mode: monochrome
     status: verified
     service_icon_key: global
-  google-simple:
-    type: simple
-    source: simple-icons
-    slug: google
+  google-brand:
+    type: brand
+    source: project-brand
     path: source/google.svg
     png:
       '256': png/256/google.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#6366F1'
+      '128': png/128/google.png
+      '64': png/64/google.png
+    color_mode: color
+    status: verified
     service_icon_key: google
   google-mono:
     type: monochrome
@@ -4064,7 +4064,7 @@ variants:
     png:
       '256': png/256/google.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: google
   hashicorp-simple:
     type: simple
@@ -4115,7 +4115,7 @@ variants:
       '256': png/256/heroku.png
     color_mode: monochrome
     status: sourced
-    brand_color: '#430098'
+    brand_color: '#6762A6'
     service_icon_key: heroku
   heroku-mono:
     type: monochrome
@@ -4126,16 +4126,16 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: heroku
-  huawei-simple:
-    type: simple
-    source: simple-icons
-    slug: huawei
+  huawei-brand:
+    type: brand
+    source: project-brand
     path: source/huawei.svg
     png:
       '256': png/256/huawei.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#CF0A2C'
+      '128': png/128/huawei.png
+      '64': png/64/huawei.png
+    color_mode: color
+    status: verified
     service_icon_key: huawei
   huawei-mono:
     type: monochrome
@@ -4144,7 +4144,7 @@ variants:
     png:
       '256': png/256/huawei.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: huawei
   huggingface-brand:
     type: brand
@@ -4229,7 +4229,7 @@ variants:
   kakaotalk-simple:
     type: simple
     source: simple-icons
-    slug: kakaotalk
+    slug: null
     path: source/kakaotalk.svg
     png:
       '256': png/256/kakaotalk.png
@@ -4346,16 +4346,16 @@ variants:
     color_mode: monochrome
     status: verified
     service_icon_key: match
-  meituan-simple:
-    type: simple
-    source: simple-icons
-    slug: meituan
+  meituan-brand:
+    type: brand
+    source: project-brand
     path: source/meituan.svg
     png:
       '256': png/256/meituan.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#FFD100'
+      '128': png/128/meituan.png
+      '64': png/64/meituan.png
+    color_mode: color
+    status: verified
     service_icon_key: meituan
   meituan-mono:
     type: monochrome
@@ -4364,7 +4364,7 @@ variants:
     png:
       '256': png/256/meituan.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: meituan
   messenger-simple:
     type: simple
@@ -4389,7 +4389,7 @@ variants:
   meta-simple:
     type: simple
     source: simple-icons
-    slug: meta
+    slug: null
     path: source/meta.svg
     png:
       '256': png/256/meta.png
@@ -4406,16 +4406,16 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: meta
-  microsoft-simple:
-    type: simple
-    source: simple-icons
-    slug: microsoft
+  microsoft-brand:
+    type: brand
+    source: project-brand
     path: source/microsoft.svg
     png:
       '256': png/256/microsoft.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#6366F1'
+      '128': png/128/microsoft.png
+      '64': png/64/microsoft.png
+    color_mode: color
+    status: verified
     service_icon_key: microsoft
   microsoft-mono:
     type: monochrome
@@ -4424,7 +4424,7 @@ variants:
     png:
       '256': png/256/microsoft.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: microsoft
   naver-simple:
     type: simple
@@ -4446,16 +4446,16 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: naver
-  netflix-simple:
-    type: simple
-    source: simple-icons
-    slug: netflix
+  netflix-brand:
+    type: brand
+    source: project-brand
     path: source/netflix.svg
     png:
       '256': png/256/netflix.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#E50914'
+      '128': png/128/netflix.png
+      '64': png/64/netflix.png
+    color_mode: color
+    status: verified
     service_icon_key: netflix
   netflix-mono:
     type: monochrome
@@ -4464,7 +4464,7 @@ variants:
     png:
       '256': png/256/netflix.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: netflix
   netlify-simple:
     type: simple
@@ -4566,16 +4566,16 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: okx
-  openai-simple:
-    type: simple
-    source: simple-icons
-    slug: openai
+  openai-brand:
+    type: brand
+    source: project-brand
     path: source/openai.svg
     png:
       '256': png/256/openai.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#412991'
+      '128': png/128/openai.png
+      '64': png/64/openai.png
+    color_mode: color
+    status: verified
     service_icon_key: openai
   openai-mono:
     type: monochrome
@@ -4584,12 +4584,12 @@ variants:
     png:
       '256': png/256/openai.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: openai
   oppo-simple:
     type: simple
     source: simple-icons
-    slug: oppo
+    slug: null
     path: source/oppo.svg
     png:
       '256': png/256/oppo.png
@@ -4635,7 +4635,7 @@ variants:
       '256': png/256/paramountplus.png
     color_mode: monochrome
     status: sourced
-    brand_color: null
+    brand_color: '#0064FF'
     service_icon_key: paramountplus
   paramountplus-mono:
     type: monochrome
@@ -4655,7 +4655,7 @@ variants:
       '256': png/256/paypal.png
     color_mode: monochrome
     status: sourced
-    brand_color: '#00457C'
+    brand_color: '#003087'
     service_icon_key: paypal
   paypal-mono:
     type: monochrome
@@ -4689,7 +4689,7 @@ variants:
   pinterest-simple:
     type: simple
     source: simple-icons
-    slug: pinterest
+    slug: null
     path: source/pinterest.svg
     png:
       '256': png/256/pinterest.png
@@ -4786,16 +4786,16 @@ variants:
     color_mode: monochrome
     status: verified
     service_icon_key: proxy
-  reddit-simple:
-    type: simple
-    source: simple-icons
-    slug: reddit
+  reddit-brand:
+    type: brand
+    source: project-brand
     path: source/reddit.svg
     png:
       '256': png/256/reddit.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#FF4500'
+      '128': png/128/reddit.png
+      '64': png/64/reddit.png
+    color_mode: color
+    status: verified
     service_icon_key: reddit
   reddit-mono:
     type: monochrome
@@ -4804,7 +4804,7 @@ variants:
     png:
       '256': png/256/reddit.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: reddit
   reject-network:
     type: network
@@ -4915,7 +4915,7 @@ variants:
       '256': png/256/signal.png
     color_mode: monochrome
     status: sourced
-    brand_color: '#3A76F0'
+    brand_color: '#3B45FD'
     service_icon_key: signal
   signal-mono:
     type: monochrome
@@ -4969,7 +4969,7 @@ variants:
   snapchat-simple:
     type: simple
     source: simple-icons
-    slug: snapchat
+    slug: null
     path: source/snapchat.svg
     png:
       '256': png/256/snapchat.png
@@ -4995,7 +4995,7 @@ variants:
       '256': png/256/soundcloud.png
     color_mode: monochrome
     status: sourced
-    brand_color: '#FF3300'
+    brand_color: '#FF5500'
     service_icon_key: soundcloud
   soundcloud-mono:
     type: monochrome
@@ -5009,7 +5009,7 @@ variants:
   speedtest-simple:
     type: simple
     source: simple-icons
-    slug: speedtest
+    slug: null
     path: source/speedtest.svg
     png:
       '256': png/256/speedtest.png
@@ -5026,16 +5026,16 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: speedtest
-  spotify-simple:
-    type: simple
-    source: simple-icons
-    slug: spotify
+  spotify-brand:
+    type: brand
+    source: project-brand
     path: source/spotify.svg
     png:
       '256': png/256/spotify.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#1DB954'
+      '128': png/128/spotify.png
+      '64': png/64/spotify.png
+    color_mode: color
+    status: verified
     service_icon_key: spotify
   spotify-mono:
     type: monochrome
@@ -5044,7 +5044,7 @@ variants:
     png:
       '256': png/256/spotify.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: spotify
   steam-simple:
     type: simple
@@ -5106,16 +5106,16 @@ variants:
     color_mode: monochrome
     status: verified
     service_icon_key: stun
-  telegram-simple:
-    type: simple
-    source: simple-icons
-    slug: telegram
+  telegram-brand:
+    type: brand
+    source: project-brand
     path: source/telegram.svg
     png:
       '256': png/256/telegram.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#26A5E4'
+      '128': png/128/telegram.png
+      '64': png/64/telegram.png
+    color_mode: color
+    status: verified
     service_icon_key: telegram
   telegram-mono:
     type: monochrome
@@ -5124,18 +5124,18 @@ variants:
     png:
       '256': png/256/telegram.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: telegram
-  tencent-simple:
-    type: simple
-    source: simple-icons
-    slug: tencentqq
+  tencent-brand:
+    type: brand
+    source: project-brand
     path: source/tencent.svg
     png:
       '256': png/256/tencent.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#12B7F5'
+      '128': png/128/tencent.png
+      '64': png/64/tencent.png
+    color_mode: color
+    status: verified
     service_icon_key: tencent
   tencent-mono:
     type: monochrome
@@ -5144,7 +5144,7 @@ variants:
     png:
       '256': png/256/tencent.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: tencent
   threads-simple:
     type: simple
@@ -5186,16 +5186,16 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: tidal
-  tiktok-simple:
-    type: simple
-    source: simple-icons
-    slug: tiktok
+  tiktok-brand:
+    type: brand
+    source: project-brand
     path: source/tiktok.svg
     png:
       '256': png/256/tiktok.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#FE2C55'
+      '128': png/128/tiktok.png
+      '64': png/64/tiktok.png
+    color_mode: color
+    status: verified
     service_icon_key: tiktok
   tiktok-mono:
     type: monochrome
@@ -5204,7 +5204,7 @@ variants:
     png:
       '256': png/256/tiktok.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: tiktok
   trello-simple:
     type: simple
@@ -5369,7 +5369,7 @@ variants:
   vivo-simple:
     type: simple
     source: simple-icons
-    slug: vivo
+    slug: null
     path: source/vivo.svg
     png:
       '256': png/256/vivo.png
@@ -5406,16 +5406,16 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: walmart
-  wechat-simple:
-    type: simple
-    source: simple-icons
-    slug: wechat
+  wechat-brand:
+    type: brand
+    source: project-brand
     path: source/wechat.svg
     png:
       '256': png/256/wechat.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#07C160'
+      '128': png/128/wechat.png
+      '64': png/64/wechat.png
+    color_mode: color
+    status: verified
     service_icon_key: wechat
   wechat-mono:
     type: monochrome
@@ -5424,7 +5424,7 @@ variants:
     png:
       '256': png/256/wechat.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: wechat
   weibo-simple:
     type: simple
@@ -5446,16 +5446,16 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: weibo
-  whatsapp-simple:
-    type: simple
-    source: simple-icons
-    slug: whatsapp
+  whatsapp-brand:
+    type: brand
+    source: project-brand
     path: source/whatsapp.svg
     png:
       '256': png/256/whatsapp.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#25D366'
+      '128': png/128/whatsapp.png
+      '64': png/64/whatsapp.png
+    color_mode: color
+    status: verified
     service_icon_key: whatsapp
   whatsapp-mono:
     type: monochrome
@@ -5464,7 +5464,7 @@ variants:
     png:
       '256': png/256/whatsapp.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: whatsapp
   wikipedia-simple:
     type: simple
@@ -5509,7 +5509,7 @@ variants:
   x-simple:
     type: simple
     source: simple-icons
-    slug: x
+    slug: null
     path: source/x.svg
     png:
       '256': png/256/x.png
@@ -5526,16 +5526,16 @@ variants:
     color_mode: monochrome
     status: sourced
     service_icon_key: x
-  xiaomi-simple:
-    type: simple
-    source: simple-icons
-    slug: xiaomi
+  xiaomi-brand:
+    type: brand
+    source: project-brand
     path: source/xiaomi.svg
     png:
       '256': png/256/xiaomi.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#FF6900'
+      '128': png/128/xiaomi.png
+      '64': png/64/xiaomi.png
+    color_mode: color
+    status: verified
     service_icon_key: xiaomi
   xiaomi-mono:
     type: monochrome
@@ -5544,18 +5544,18 @@ variants:
     png:
       '256': png/256/xiaomi.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: xiaomi
-  youtube-simple:
-    type: simple
-    source: simple-icons
-    slug: youtube
+  youtube-brand:
+    type: brand
+    source: project-brand
     path: source/youtube.svg
     png:
       '256': png/256/youtube.png
-    color_mode: monochrome
-    status: sourced
-    brand_color: '#FF0000'
+      '128': png/128/youtube.png
+      '64': png/64/youtube.png
+    color_mode: color
+    status: verified
     service_icon_key: youtube
   youtube-mono:
     type: monochrome
@@ -5564,12 +5564,12 @@ variants:
     png:
       '256': png/256/youtube.png
     color_mode: monochrome
-    status: sourced
+    status: verified
     service_icon_key: youtube
   youtubemusic-simple:
     type: simple
     source: simple-icons
-    slug: youtubemusic
+    slug: null
     path: source/youtubemusic.svg
     png:
       '256': png/256/youtubemusic.png

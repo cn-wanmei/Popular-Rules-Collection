@@ -5,18 +5,18 @@
   "registry_services": 216,
   "with_real_icon": 134,
   "placeholder_decisions": 82,
-  "verified_entities": 33,
-  "sourced_entities": 100,
+  "verified_entities": 59,
+  "sourced_entities": 74,
   "png_256_ok": 134,
   "by_status": {
-    "verified": 33,
+    "verified": 59,
     "placeholder": 1,
-    "sourced": 100
+    "sourced": 74
   },
   "by_provenance": {
     "project": 28,
-    "third_party": 100,
-    "official-colors": 6
+    "official-colors": 32,
+    "third_party": 74
   },
   "by_type": {
     "policy": 13,

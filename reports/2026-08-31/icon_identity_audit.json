@@ -11,10 +11,10 @@
     "orphan_icons": 0,
     "duplicate_hash_groups": 3,
     "parent_reuse_without_relation": 0,
-    "mono_svgs": 127,
-    "blackish_svgs": 1,
+    "mono_svgs": 128,
+    "blackish_svgs": 55,
     "no_provenance": 0,
-    "should_prefer_official": 0,
+    "should_prefer_official": 3,
     "network_need_project_icon": 0
   },
   "parent_reuse": [],
@@ -23,21 +23,38 @@
       "weibo",
       "sina"
     ],
-    "6c3030b421b4f201": [
+    "be03adbfce4a46c4": [
       "x",
       "twitter"
     ],
-    "965419d221e0f03c": [
+    "6f54ac8d325faace": [
       "tiktok",
       "douyin"
     ]
   },
   "missing_service_icons": [],
-  "should_prefer_official": [],
+  "should_prefer_official": [
+    {
+      "id": "amazon",
+      "reason": "high-freq still blackish third_party"
+    },
+    {
+      "id": "steam",
+      "reason": "high-freq still blackish third_party"
+    },
+    {
+      "id": "twitter",
+      "reason": "high-freq still blackish third_party"
+    }
+  ],
   "network_need_project_icon": [],
   "backlog": {
     "P0_fix_identity": [],
-    "P1_high_freq_color": [],
+    "P1_high_freq_color": [
+      "amazon",
+      "steam",
+      "twitter"
+    ],
     "P2_missing_services": [],
     "P3_network_project_icons": [],
     "P4_dedupe_review": [

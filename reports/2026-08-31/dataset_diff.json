@@ -1,6 +1,6 @@
 {
   "date": "2026-08-31",
-  "compared_to": "2026-08-30",
+  "compared_to": "2026-08-31",
   "dataset_count": 68,
   "diffs": {
     "database/network/dns.txt": {
@@ -81,15 +81,15 @@
       "status": "unchanged"
     },
     "database/geosite/direct.txt": {
-      "old_count": 111280,
+      "old_count": 111284,
       "new_count": 111284,
-      "added": 4,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "updated"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/geosite/google-cn.txt": {
       "old_count": 112,
@@ -103,26 +103,26 @@
       "status": "unchanged"
     },
     "database/geosite/proxy.txt": {
-      "old_count": 27220,
+      "old_count": 27221,
       "new_count": 27221,
-      "added": 1,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": true,
-      "status": "updated"
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/geosite/reject.txt": {
-      "old_count": 187945,
+      "old_count": 188265,
       "new_count": 188265,
-      "added": 320,
+      "added": 0,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
-      "growth_ratio": 0.0017,
-      "sha_changed": true,
-      "status": "updated"
+      "growth_ratio": 0.0,
+      "sha_changed": false,
+      "status": "unchanged"
     },
     "database/geoip/au.txt": {
       "old_count": 17420,

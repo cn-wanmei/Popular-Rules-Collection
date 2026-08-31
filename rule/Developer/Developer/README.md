@@ -9,9 +9,9 @@
 
 | 项目 | 数值 |
 |------|------|
-| Domains | 680 |
+| Domains | 679 |
 | IP/CIDR | 0 |
-| Mixed | 680 |
+| Mixed | 679 |
 | Sources | blackmatrix7, metacubex |
 | Updated | 2026-08-31 |
 

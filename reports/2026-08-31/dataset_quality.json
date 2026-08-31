@@ -16,7 +16,7 @@
     "export ok generated/provider/cloudflare.txt",
     "provider dataset present: goog.txt count=152",
     "provider dataset present: oracle.txt count=1398",
-    "provider dataset present: aws.txt count=11145",
+    "provider dataset present: aws.txt count=11146",
     "provider dataset present: googlecloud.txt count=1154",
     "provider dataset present: cloudflare6.txt count=7",
     "provider dataset present: cloudflare.txt count=15",
@@ -28,7 +28,7 @@
     "binary ok: ASN.mmdb bytes=12079074",
     "binary ok: geoip-lite.dat bytes=207729",
     "binary ok: geoip.dat bytes=17224069",
-    "binary ok: geosite.dat bytes=4243231"
+    "binary ok: geosite.dat bytes=4246547"
   ],
   "counts": {
     "hard": 0,

@@ -1,0 +1,303 @@
+{
+  "bg": [
+    15,
+    23,
+    42
+  ],
+  "threshold": 3.0,
+  "checked": 106,
+  "below_threshold": [
+    {
+      "id": "atlassian",
+      "mean_rgb": [
+        0,
+        81,
+        203
+      ],
+      "contrast_on_dark": 2.58,
+      "display_color": "#0052CC"
+    },
+    {
+      "id": "aws",
+      "mean_rgb": [
+        34,
+        47,
+        62
+      ],
+      "contrast_on_dark": 1.31,
+      "display_color": "#232F3E"
+    },
+    {
+      "id": "baidu",
+      "mean_rgb": [
+        41,
+        49,
+        225
+      ],
+      "contrast_on_dark": 2.23,
+      "display_color": "#2932E1"
+    },
+    {
+      "id": "booking",
+      "mean_rgb": [
+        0,
+        53,
+        128
+      ],
+      "contrast_on_dark": 1.55,
+      "display_color": "#003580"
+    },
+    {
+      "id": "github",
+      "mean_rgb": [
+        110,
+        83,
+        147
+      ],
+      "contrast_on_dark": 2.82,
+      "display_color": "#6E5494"
+    },
+    {
+      "id": "hashicorp",
+      "mean_rgb": [
+        122,
+        66,
+        188
+      ],
+      "contrast_on_dark": 2.83,
+      "display_color": "#7B42BC"
+    },
+    {
+      "id": "openai",
+      "mean_rgb": [
+        65,
+        41,
+        145
+      ],
+      "contrast_on_dark": 1.66,
+      "display_color": "#10A37F"
+    },
+    {
+      "id": "oppo",
+      "mean_rgb": [
+        26,
+        71,
+        42
+      ],
+      "contrast_on_dark": 1.68,
+      "display_color": "#1A472A"
+    },
+    {
+      "id": "paypal",
+      "mean_rgb": [
+        0,
+        47,
+        134
+      ],
+      "contrast_on_dark": 1.49,
+      "display_color": "#003087"
+    },
+    {
+      "id": "pinterest",
+      "mean_rgb": [
+        189,
+        8,
+        27
+      ],
+      "contrast_on_dark": 2.73,
+      "display_color": "#BD081C"
+    },
+    {
+      "id": "playstation",
+      "mean_rgb": [
+        0,
+        55,
+        145
+      ],
+      "contrast_on_dark": 1.66,
+      "display_color": "#003791"
+    },
+    {
+      "id": "signal",
+      "mean_rgb": [
+        58,
+        69,
+        253
+      ],
+      "contrast_on_dark": 2.93,
+      "display_color": "#3B45FD"
+    },
+    {
+      "id": "slack",
+      "mean_rgb": [
+        73,
+        21,
+        75
+      ],
+      "contrast_on_dark": 1.27,
+      "display_color": "#4A154B"
+    },
+    {
+      "id": "trello",
+      "mean_rgb": [
+        0,
+        82,
+        203
+      ],
+      "contrast_on_dark": 2.61,
+      "display_color": "#0052CC"
+    }
+  ],
+  "worst": [
+    {
+      "id": "slack",
+      "mean_rgb": [
+        73,
+        21,
+        75
+      ],
+      "contrast_on_dark": 1.27,
+      "display_color": "#4A154B"
+    },
+    {
+      "id": "aws",
+      "mean_rgb": [
+        34,
+        47,
+        62
+      ],
+      "contrast_on_dark": 1.31,
+      "display_color": "#232F3E"
+    },
+    {
+      "id": "paypal",
+      "mean_rgb": [
+        0,
+        47,
+        134
+      ],
+      "contrast_on_dark": 1.49,
+      "display_color": "#003087"
+    },
+    {
+      "id": "booking",
+      "mean_rgb": [
+        0,
+        53,
+        128
+      ],
+      "contrast_on_dark": 1.55,
+      "display_color": "#003580"
+    },
+    {
+      "id": "openai",
+      "mean_rgb": [
+        65,
+        41,
+        145
+      ],
+      "contrast_on_dark": 1.66,
+      "display_color": "#10A37F"
+    },
+    {
+      "id": "playstation",
+      "mean_rgb": [
+        0,
+        55,
+        145
+      ],
+      "contrast_on_dark": 1.66,
+      "display_color": "#003791"
+    },
+    {
+      "id": "oppo",
+      "mean_rgb": [
+        26,
+        71,
+        42
+      ],
+      "contrast_on_dark": 1.68,
+      "display_color": "#1A472A"
+    },
+    {
+      "id": "baidu",
+      "mean_rgb": [
+        41,
+        49,
+        225
+      ],
+      "contrast_on_dark": 2.23,
+      "display_color": "#2932E1"
+    },
+    {
+      "id": "atlassian",
+      "mean_rgb": [
+        0,
+        81,
+        203
+      ],
+      "contrast_on_dark": 2.58,
+      "display_color": "#0052CC"
+    },
+    {
+      "id": "trello",
+      "mean_rgb": [
+        0,
+        82,
+        203
+      ],
+      "contrast_on_dark": 2.61,
+      "display_color": "#0052CC"
+    },
+    {
+      "id": "pinterest",
+      "mean_rgb": [
+        189,
+        8,
+        27
+      ],
+      "contrast_on_dark": 2.73,
+      "display_color": "#BD081C"
+    },
+    {
+      "id": "github",
+      "mean_rgb": [
+        110,
+        83,
+        147
+      ],
+      "contrast_on_dark": 2.82,
+      "display_color": "#6E5494"
+    },
+    {
+      "id": "hashicorp",
+      "mean_rgb": [
+        122,
+        66,
+        188
+      ],
+      "contrast_on_dark": 2.83,
+      "display_color": "#7B42BC"
+    },
+    {
+      "id": "signal",
+      "mean_rgb": [
+        58,
+        69,
+        253
+      ],
+      "contrast_on_dark": 2.93,
+      "display_color": "#3B45FD"
+    },
+    {
+      "id": "wikipedia",
+      "mean_rgb": [
+        98,
+        100,
+        101
+      ],
+      "contrast_on_dark": 3.0,
+      "display_color": "#636466"
+    }
+  ]
+}

@@ -1275,24 +1275,6 @@
     "kind": "MULTI_SOURCE_DUPLICATE",
     "match": {
       "type": "domain_suffix",
-      "value": "api2.amplitude.com"
-    },
-    "policy": "proxy",
-    "sources": [
-      "blackmatrix7",
-      "hagezi",
-      "metacubex"
-    ],
-    "services": [
-      "adblock-light",
-      "developer"
-    ]
-  },
-  {
-    "level": "LOW",
-    "kind": "MULTI_SOURCE_DUPLICATE",
-    "match": {
-      "type": "domain_suffix",
       "value": "app-ads-services.com"
     },
     "policy": "proxy",
@@ -9557,6 +9539,22 @@
     "services": [
       "adobe",
       "disney"
+    ]
+  },
+  {
+    "level": "LOW",
+    "kind": "MULTI_SOURCE_DUPLICATE",
+    "match": {
+      "type": "domain_suffix",
+      "value": "adobeexchange.com"
+    },
+    "policy": "proxy",
+    "sources": [
+      "blackmatrix7",
+      "v2fly"
+    ],
+    "services": [
+      "adobe"
     ]
   }
 ]

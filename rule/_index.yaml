@@ -1,4 +1,4 @@
-generated_at: '2026-08-31T00:38:53.478478+00:00'
+generated_at: '2026-08-31T05:52:04.414831+00:00'
 categories:
   '12306':
     display_name: '12306'
@@ -518,7 +518,7 @@ categories:
       name: Developer
       path: rule/Developer/Developer
       service_type: aggregate
-      domains: 680
+      domains: 679
       ips: 0
     - id: digitalocean
       name: DigitalOcean
