@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate routing contract + priority files exist and are consistent."""
+"""Validate routing contract + priority + resolution files."""
 from __future__ import annotations
 
 from pathlib import Path
@@ -12,12 +12,13 @@ PRIORITY = ROOT / "config" / "routing_priority.yaml"
 SRC_PRI = ROOT / "config" / "priority.yaml"
 REJECT = ROOT / "database" / "policies" / "reject" / "manifest.yaml"
 OVERRIDES = ROOT / "database" / "policies" / "overrides" / "manifest.yaml"
+RESOLUTION = ROOT / "config" / "resolution_policy.yaml"
 
 
 def main() -> int:
     hard: list[str] = []
     warn: list[str] = []
-    for p in (CONTRACT, PRIORITY, SRC_PRI, REJECT, OVERRIDES):
+    for p in (CONTRACT, PRIORITY, SRC_PRI, REJECT, OVERRIDES, RESOLUTION):
         if not p.exists():
             hard.append(f"missing {p.relative_to(ROOT)}")
     if hard:
