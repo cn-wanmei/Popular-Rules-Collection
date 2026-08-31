@@ -100,6 +100,12 @@ jobs:
         run: python scripts/routing_emit.py
       - name: Routing contract validate
         run: python scripts/routing_contract_validate.py
+      - name: Build routing policies from decisions
+        run: python scripts/build_routing_policies.py
+      - name: Profile validate
+        run: python scripts/profile_validate.py
+      - name: Resolution fragment
+        run: python scripts/build_resolution_fragment.py
       - name: Normalize
         run: |
           if [ "${{ inputs.skip_large }}" = "true" ]; then
