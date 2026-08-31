@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Resolve multi-layer match hits to a single routing action (P1 decision engine)."""
+"""Resolve multi-layer match hits to a single routing action."""
 from __future__ import annotations
 
 import argparse
@@ -34,14 +34,7 @@ def load_overrides() -> list[dict]:
         for e in doc.get("entries") or []:
             if not isinstance(e, dict):
                 continue
-            out.append(
-                {
-                    "layer": "explicit",
-                    "action": action,
-                    "match": e.get("match") or {},
-                    "reason": e.get("reason"),
-                }
-            )
+            out.append({"layer": "explicit", "action": action, "match": e.get("match") or {}, "reason": e.get("reason")})
     return out
 
 
@@ -50,64 +43,25 @@ def resolve(hits: list[dict], layers: dict[str, int], terminal: str) -> dict:
         return {"action": terminal, "layer": "fallback", "reason": "unmatched"}
     for h in hits:
         if str(h.get("action") or "").upper() == "REJECT":
-            return {
-                "action": "REJECT",
-                "layer": h.get("layer"),
-                "reason": "reject_vs_other",
-                "from": h,
-            }
-    ranked = sorted(
-        hits,
-        key=lambda h: (-layers.get(str(h.get("layer") or ""), -1), str(h.get("id") or "")),
-    )
+            return {"action": "REJECT", "layer": h.get("layer"), "reason": "reject_vs_other", "from": h}
+    ranked = sorted(hits, key=lambda h: (-layers.get(str(h.get("layer") or ""), -1), str(h.get("id") or "")))
     top = ranked[0]
     action = str(top.get("action") or terminal).upper()
     if action not in ("DIRECT", "PROXY", "REJECT"):
         action = terminal
-    return {
-        "action": action,
-        "layer": top.get("layer"),
-        "reason": "higher_precedence",
-        "from": top,
-        "considered": len(hits),
-    }
+    return {"action": action, "layer": top.get("layer"), "reason": "higher_precedence", "from": top, "considered": len(hits)}
 
 
 def demo_cases(layers, terminal):
     cases = [
-        {
-            "name": "openai_vs_cn_geo",
-            "hits": [
-                {"layer": "geosite", "action": "DIRECT", "id": "china"},
-                {"layer": "service", "action": "PROXY", "id": "openai"},
-            ],
-            "expect": "PROXY",
-        },
-        {
-            "name": "lan_vs_proxy_category",
-            "hits": [
-                {"layer": "system", "action": "DIRECT", "id": "lan"},
-                {"layer": "category", "action": "PROXY", "id": "proxy"},
-            ],
-            "expect": "DIRECT",
-        },
-        {
-            "name": "reject_beats_proxy",
-            "hits": [
-                {"layer": "security", "action": "REJECT", "id": "malware"},
-                {"layer": "service", "action": "PROXY", "id": "example"},
-            ],
-            "expect": "REJECT",
-        },
-        {
-            "name": "geosite_before_geoip_same_intent",
-            "hits": [
-                {"layer": "geoip", "action": "DIRECT", "id": "cn"},
-                {"layer": "geosite", "action": "PROXY", "id": "gfw"},
-            ],
-            "expect": "PROXY",
-        },
+        {"name": "openai_vs_cn_geo", "hits": [{"layer": "geosite", "action": "DIRECT", "id": "china"}, {"layer": "service", "action": "PROXY", "id": "openai"}], "expect": "PROXY"},
+        {"name": "lan_vs_proxy_category", "hits": [{"layer": "system", "action": "DIRECT", "id": "lan"}, {"layer": "category", "action": "PROXY", "id": "proxy"}], "expect": "DIRECT"},
+        {"name": "reject_beats_proxy", "hits": [{"layer": "security", "action": "REJECT", "id": "malware"}, {"layer": "service", "action": "PROXY", "id": "example"}], "expect": "REJECT"},
+        {"name": "geosite_before_geoip_same_intent", "hits": [{"layer": "geoip", "action": "DIRECT", "id": "cn"}, {"layer": "geosite", "action": "PROXY", "id": "gfw"}], "expect": "PROXY"},
         {"name": "empty", "hits": [], "expect": terminal},
+        {"name": "explicit_beats_service", "hits": [{"layer": "service", "action": "PROXY", "id": "openai"}, {"layer": "explicit", "action": "DIRECT", "id": "force"}], "expect": "DIRECT"},
+        {"name": "security_reject_beats_explicit_proxy", "hits": [{"layer": "explicit", "action": "PROXY", "id": "force"}, {"layer": "security", "action": "REJECT", "id": "malware"}], "expect": "REJECT"},
+        {"name": "unknown_action_falls_to_terminal", "hits": [{"layer": "service", "action": "SERVICE", "id": "bad"}], "expect": terminal},
     ]
     ok = 0
     for c in cases:
@@ -121,7 +75,7 @@ def demo_cases(layers, terminal):
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--demo", action="store_true")
-    ap.add_argument("--hits", default="", help='JSON list of {layer,action,id}')
+    ap.add_argument("--hits", default="")
     args = ap.parse_args()
     _, layers, terminal = load_contract()
     if args.demo or not args.hits:
@@ -130,8 +84,7 @@ def main() -> int:
         ok, n = demo_cases(layers, terminal)
         print(f"[routing_resolve] demo {ok}/{n}")
         return 0 if ok == n else 1
-    hits = json.loads(args.hits)
-    print(json.dumps(resolve(hits, layers, terminal), ensure_ascii=False, indent=2))
+    print(json.dumps(resolve(json.loads(args.hits), layers, terminal), ensure_ascii=False, indent=2))
     return 0
 
 
