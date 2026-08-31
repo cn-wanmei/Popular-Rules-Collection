@@ -74,7 +74,7 @@ jobs:
       - name: Sync service icons (Simple Icons)
         continue-on-error: true
         run: python scripts/sync_service_icons.py
-      - name: Icon build (Final Freeze)
+      - name: Icon build (Final Freeze + P2)
         continue-on-error: true
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq libcairo2 2>/dev/null || true
@@ -85,6 +85,7 @@ jobs:
           python scripts/build_icons.py --force || true
           python scripts/icon_engine.py --force || true
           python scripts/icon_contact_sheet.py || true
+          python scripts/icon_dark_contrast_audit.py || true
           python scripts/icon_cleanup_dirs.py || true
       - name: Icon Schema V2 migrate
         continue-on-error: true
