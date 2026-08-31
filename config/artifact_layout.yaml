@@ -3,12 +3,14 @@ updated: "2026-08-31"
 policy:
   git:
     max_file_mb: 5.0
-    note: "Above this SHOULD prefer release channel during transition"
+    max_tracked_tree_mb: 90.0
+    note: "Above max_file_mb SHOULD prefer release channel"
+    note_size_gate: "size_gate.py reads max_tracked_tree_mb"
   release:
     max_bundle_mb: 200
   truth:
     layer: artifact_manifest
-    note: "Release is distribution only; digests in reports/artifact_manifest.json are SSOT"
+    note: "Release is distribution only"
 release_globs:
   - "generated/mmdb/**"
   - "generated/routing/decisions.jsonl"
