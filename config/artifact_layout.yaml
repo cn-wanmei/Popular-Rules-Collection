@@ -1,0 +1,28 @@
+version: 1
+updated: "2026-08-31"
+policy:
+  git:
+    max_file_mb: 5.0
+    note: "Above this SHOULD prefer release channel during transition"
+  release:
+    max_bundle_mb: 200
+  truth:
+    layer: artifact_manifest
+    note: "Release is distribution only; digests in reports/artifact_manifest.json are SSOT"
+release_globs:
+  - "generated/mmdb/**"
+  - "generated/routing/decisions.jsonl"
+  - "generated/**/adblock*.list"
+  - "generated/**/adblock*.yaml"
+  - "generated/**/adblock*.json"
+  - "generated/**/china.list"
+  - "generated/**/adblock_domain.list"
+  - "generated/**/adblock-pro_domain.list"
+always_git:
+  - "config/**"
+  - "scripts/**"
+  - "sources/**"
+  - "docs/**"
+  - "reports/baseline/**"
+  - "reports/artifact_manifest.json"
+  - "database/services/**"

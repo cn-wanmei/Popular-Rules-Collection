@@ -1,27 +1,29 @@
-version: 1
+version: 2
 updated: "2026-08-31"
-hard:
-  - validate_registry
-  - schema_validate
-  - validate
-  - builder_validate
-  - dataset_quality
-  - routing_contract_validate
-  - routing_emit
-  - icon_qa
-  - size_gate
-  - profile_validate
-soft:
-  - conflict_detector
-  - semantic_dedup
-  - growth_anomaly
-  - coverage_matrix
-  - icon_coverage
-  - identity_validate
-  - quality_validate
-  - statistics
-info:
-  - generate_docs
-  - generate_links
-  - service_score
-  - release_snapshot
+mode: shadow
+gates:
+  validate_registry: BLOCK_BUILD
+  schema_validate: BLOCK_BUILD
+  validate: BLOCK_BUILD
+  builder_validate: BLOCK_BUILD
+  dataset_quality: BLOCK_BUILD
+  routing_contract_validate: BLOCK_BUILD
+  routing_emit: BLOCK_BUILD
+  icon_qa: BLOCK_BUILD
+  size_gate: BLOCK_RELEASE
+  profile_validate: BLOCK_BUILD
+  artifact_manifest: BLOCK_RELEASE
+  conflict_detector: WARN
+  semantic_dedup: WARN
+  growth_anomaly: WARN
+  source_quarantine: WARN
+  coverage_matrix: INFO
+  icon_coverage: INFO
+  identity_validate: WARN
+  quality_validate: WARN
+  statistics: INFO
+  generate_docs: INFO
+  generate_links: INFO
+  service_score: INFO
+  release_snapshot: INFO
+  pack_release_artifacts: INFO
