@@ -106,6 +106,14 @@ jobs:
         run: python scripts/profile_validate.py
       - name: Resolution fragment
         run: python scripts/build_resolution_fragment.py
+      - name: P1 Universal IR
+        run: python scripts/build_universal_ir.py
+      - name: P1 Semantic dedup report
+        continue-on-error: true
+        run: python scripts/semantic_dedup.py
+      - name: P1 Growth anomaly
+        continue-on-error: true
+        run: python scripts/growth_anomaly.py
       - name: Normalize
         run: |
           if [ "${{ inputs.skip_large }}" = "true" ]; then
@@ -125,6 +133,11 @@ jobs:
       - run: python scripts/build_quantumultx.py
       - run: python scripts/build_egern.py
       - run: python scripts/build_loon.py
+      - name: P1 Artifact provenance
+        run: python scripts/attach_artifact_provenance.py
+      - name: P1 Cross-client semantic (sample)
+        continue-on-error: true
+        run: python scripts/cross_client_semantic_test.py
       - run: python scripts/schema_validate.py
       - run: python scripts/validate.py
       - run: python scripts/builder_validate.py
