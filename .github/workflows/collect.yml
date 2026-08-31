@@ -116,6 +116,15 @@ jobs:
         run: python scripts/source_quarantine.py
       - name: V2.3 Gate failure injection
         run: python scripts/gate_failure_injection.py
+      - name: V2.5 Hierarchy validate
+        continue-on-error: true
+        run: python scripts/hierarchy_validate.py
+      - name: V2.5 Hierarchy resolve
+        continue-on-error: true
+        run: python scripts/resolve_hierarchy.py
+      - name: V2.5 Hierarchy golden L4/L5
+        continue-on-error: true
+        run: python scripts/hierarchy_golden.py
       - name: P1 Universal IR
         run: python scripts/build_universal_ir.py
       - name: P1 Semantic dedup report
@@ -188,10 +197,11 @@ jobs:
           git add -A database/ generated/ rule/ sources/health.yaml reports/ docs/ config/ assets/ || true
           git add backup/*/manifests/ backup/ || true
           python scripts/git_skip_release_paths.py || true
+          git status --porcelain || true
           python scripts/size_gate.py --max-mb 90
           git diff --staged --quiet || git commit -m "chore(pipeline): collect+normalize+build ${DAY}"
           set +e
-          git pull --rebase origin main
+          git pull --rebase --autostash origin main
           rc=$?
           if [ $rc -ne 0 ]; then
             echo "::warning::rebase conflict — auto-resolve generated health/assets"
@@ -203,8 +213,14 @@ jobs:
               git checkout --theirs -- "$uf" 2>/dev/null || true
               git add -- "$uf" 2>/dev/null || true
             done
-            GIT_EDITOR=true git rebase --continue
-            rc=$?
+            if [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ]; then
+              GIT_EDITOR=true git rebase --continue
+              rc=$?
+            else
+              echo "::warning::no rebase in progress; retry pull --rebase --autostash"
+              git pull --rebase --autostash origin main
+              rc=$?
+            fi
           fi
           set -e
           if [ $rc -ne 0 ]; then
@@ -217,10 +233,12 @@ jobs:
               exit 0
             fi
             echo "push rejected, retry pull --rebase ($i)"
-            git pull --rebase origin main || {
+            git pull --rebase --autostash origin main || {
               git checkout --theirs -- sources/health.yaml 2>/dev/null || true
               git add sources/health.yaml 2>/dev/null || true
-              GIT_EDITOR=true git rebase --continue || true
+              if [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ]; then
+                GIT_EDITOR=true git rebase --continue || true
+              fi
             }
             sleep 5
           done
