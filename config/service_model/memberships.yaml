@@ -1,0 +1,13 @@
+version: 1
+aggregates:
+  google:
+    id: google
+    kind: aggregate
+    provider: google
+    scope: ecosystem
+    members:
+      - google-core
+      - google-shared
+      - gmail
+      - google-search
+    exclude: []

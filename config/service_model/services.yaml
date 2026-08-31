@@ -1,0 +1,51 @@
+version: 1
+services:
+  google-core:
+    id: google-core
+    kind: service
+    provider: google
+    scope: provider_core
+    rule_capable: true
+    visibility: internal
+    status: active
+    materialization:
+      state: materialized
+    coverage:
+      state: partial
+    notes: "Unattributable Google ecosystem residual for Aggregate completeness"
+  google-shared:
+    id: google-shared
+    kind: service
+    provider: google
+    scope: shared_infrastructure
+    rule_capable: true
+    visibility: internal
+    status: active
+    materialization:
+      state: materialized
+    coverage:
+      state: unknown
+  gmail:
+    id: gmail
+    kind: service
+    provider: google
+    scope: product
+    rule_capable: true
+    visibility: public
+    status: active
+    materialization:
+      state: candidate
+    coverage:
+      state: unknown
+  google-search:
+    id: google-search
+    kind: service
+    provider: google
+    scope: product
+    rule_capable: true
+    visibility: public
+    status: active
+    materialization:
+      state: candidate
+    coverage:
+      state: unknown

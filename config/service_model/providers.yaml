@@ -1,0 +1,9 @@
+version: 1
+providers:
+  google:
+    id: google
+    kind: provider
+    name: Google
+    scope: ecosystem
+    status: active
+    display_name: Google

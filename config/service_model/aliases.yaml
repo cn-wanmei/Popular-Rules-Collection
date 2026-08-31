@@ -1,0 +1,8 @@
+version: 1
+aliases:
+  googledrive:
+    canonical: google-core
+    status: active
+  googlemaps:
+    canonical: google-core
+    status: active
