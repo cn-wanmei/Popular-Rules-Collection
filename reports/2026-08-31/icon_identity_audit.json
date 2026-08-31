@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-31",
+  "phase": 1,
+  "summary": {
+    "expected_services": 195,
+    "manifest_icons": 134,
+    "source_svgs": 134,
+    "png_256": 134,
+    "mapped_services": 195,
+    "missing_service_icons": 0,
+    "orphan_icons": 0,
+    "duplicate_hash_groups": 3,
+    "parent_reuse_without_relation": 0,
+    "mono_svgs": 127,
+    "blackish_svgs": 1,
+    "no_provenance": 0,
+    "should_prefer_official": 0,
+    "network_need_project_icon": 0
+  },
+  "parent_reuse": [],
+  "duplicate_groups": {
+    "6ef563e3451660a9": [
+      "weibo",
+      "sina"
+    ],
+    "6c3030b421b4f201": [
+      "x",
+      "twitter"
+    ],
+    "965419d221e0f03c": [
+      "tiktok",
+      "douyin"
+    ]
+  },
+  "missing_service_icons": [],
+  "should_prefer_official": [],
+  "network_need_project_icon": [],
+  "backlog": {
+    "P0_fix_identity": [],
+    "P1_high_freq_color": [],
+    "P2_missing_services": [],
+    "P3_network_project_icons": [],
+    "P4_dedupe_review": [
+      [
+        "weibo",
+        "sina"
+      ],
+      [
+        "x",
+        "twitter"
+      ],
+      [
+        "tiktok",
+        "douyin"
+      ]
+    ],
+    "P5_write_provenance": []
+  }
+}

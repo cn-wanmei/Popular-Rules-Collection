@@ -1,5 +1,5 @@
 version: 1
-updated: '2026-08-30'
+updated: '2026-08-31'
 description: Icon Dataset SSOT — Service / Dataset / Policy / Network icons
 defaults:
   png_sizes:
@@ -684,7 +684,7 @@ icons:
         '256': png/256/apple.png
     license:
       type: see-source
-      note: Brand trademarks apply; Simple Icons project CC0-1.0.
+      note: Simple Icons; brand trademarks apply.
       reviewed: true
     status: sourced
     visual:
@@ -754,7 +754,7 @@ icons:
         '256': png/256/github.png
     license:
       type: see-source
-      note: Brand trademarks apply; Simple Icons project CC0-1.0.
+      note: Simple Icons; brand trademarks apply.
       reviewed: true
     status: sourced
     visual:
@@ -2000,11 +2000,9 @@ icons:
     - docker
     source:
       provider: simple-icons
-      slug: docker
       provenance: third_party
       verified: true
-      url: https://simpleicons.org/?q=docker
-      color: '#2496ED'
+      slug: docker
       type: simple-icons
     files:
       svg: source/docker.svg
@@ -2013,17 +2011,16 @@ icons:
         '128': png/128/docker.png
         '256': png/256/docker.png
     license:
-      type: see-source
-      note: Simple Icons; brand trademarks apply.
+      type: brand-guidelines
+      note: Identification mark; trademarks apply.
       reviewed: true
     status: sourced
     visual:
       style: brand
-      color_mode: monochrome
+      color_mode: color
       background: transparent
       variants:
-      - monochrome
-      primary_color: '#2496ED'
+      - color
       approved_mono: false
       qa_passed: true
       qa: passed
@@ -2484,11 +2481,9 @@ icons:
     - facebook
     source:
       provider: simple-icons
-      slug: facebook
       provenance: third_party
       verified: true
-      url: https://simpleicons.org/?q=facebook
-      color: '#0866FF'
+      slug: facebook
       type: simple-icons
     files:
       svg: source/facebook.svg
@@ -2497,17 +2492,16 @@ icons:
         '128': png/128/facebook.png
         '256': png/256/facebook.png
     license:
-      type: see-source
-      note: Simple Icons; brand trademarks apply.
+      type: brand-guidelines
+      note: Identification mark; trademarks apply.
       reviewed: true
     status: sourced
     visual:
       style: brand
-      color_mode: monochrome
+      color_mode: color
       background: transparent
       variants:
-      - monochrome
-      primary_color: '#0866FF'
+      - color
       approved_mono: false
       qa_passed: true
       qa: passed
@@ -4332,11 +4326,9 @@ icons:
     - reddit
     source:
       provider: simple-icons
-      slug: reddit
       provenance: third_party
       verified: true
-      url: https://simpleicons.org/?q=reddit
-      color: '#FF4500'
+      slug: reddit
       type: simple-icons
     files:
       svg: source/reddit.svg
@@ -4345,17 +4337,16 @@ icons:
         '128': png/128/reddit.png
         '256': png/256/reddit.png
     license:
-      type: see-source
-      note: Simple Icons; brand trademarks apply.
+      type: brand-guidelines
+      note: Identification mark; trademarks apply.
       reviewed: true
     status: sourced
     visual:
       style: brand
-      color_mode: monochrome
+      color_mode: color
       background: transparent
       variants:
-      - monochrome
-      primary_color: '#FF4500'
+      - color
       approved_mono: false
       qa_passed: true
       qa: passed
@@ -5151,11 +5142,9 @@ icons:
     - telegram
     source:
       provider: simple-icons
-      slug: telegram
       provenance: third_party
       verified: true
-      url: https://simpleicons.org/?q=telegram
-      color: '#26A5E4'
+      slug: telegram
       type: simple-icons
     files:
       svg: source/telegram.svg
@@ -5164,17 +5153,16 @@ icons:
         '128': png/128/telegram.png
         '256': png/256/telegram.png
     license:
-      type: see-source
-      note: Simple Icons; brand trademarks apply.
+      type: brand-guidelines
+      note: Identification mark; trademarks apply.
       reviewed: true
     status: sourced
     visual:
       style: brand
-      color_mode: monochrome
+      color_mode: color
       background: transparent
       variants:
-      - monochrome
-      primary_color: '#26A5E4'
+      - color
       approved_mono: false
       qa_passed: true
       qa: passed
@@ -5364,11 +5352,9 @@ icons:
     - tiktok
     source:
       provider: simple-icons
-      slug: tiktok
       provenance: third_party
       verified: true
-      url: https://simpleicons.org/?q=tiktok
-      color: '#000000'
+      slug: tiktok
       type: simple-icons
     files:
       svg: source/tiktok.svg
@@ -5377,8 +5363,8 @@ icons:
         '128': png/128/tiktok.png
         '256': png/256/tiktok.png
     license:
-      type: see-source
-      note: Simple Icons; brand trademarks apply.
+      type: brand-guidelines
+      note: Identification mark; trademarks apply.
       reviewed: true
     status: sourced
     visual:
@@ -5386,8 +5372,7 @@ icons:
       color_mode: color
       background: transparent
       variants:
-      - monochrome
-      primary_color: '#000000'
+      - color
       approved_mono: false
       qa_passed: true
       qa: passed
@@ -6149,11 +6134,9 @@ icons:
     - whatsapp
     source:
       provider: simple-icons
-      slug: whatsapp
       provenance: third_party
       verified: true
-      url: https://simpleicons.org/?q=whatsapp
-      color: '#25D366'
+      slug: whatsapp
       type: simple-icons
     files:
       svg: source/whatsapp.svg
@@ -6162,17 +6145,16 @@ icons:
         '128': png/128/whatsapp.png
         '256': png/256/whatsapp.png
     license:
-      type: see-source
-      note: Simple Icons; brand trademarks apply.
+      type: brand-guidelines
+      note: Identification mark; trademarks apply.
       reviewed: true
     status: sourced
     visual:
       style: brand
-      color_mode: monochrome
+      color_mode: color
       background: transparent
       variants:
-      - monochrome
-      primary_color: '#25D366'
+      - color
       approved_mono: false
       qa_passed: true
       qa: passed
@@ -7726,7 +7708,7 @@ icons:
       color_mode: color
       background: transparent
       variants:
-      - monochrome
+      - color
       approved_mono: false
       qa_passed: true
       qa: passed
@@ -8660,7 +8642,7 @@ icons:
       verified: true
     files:
       svg: source/auto.svg
-      png: &id065
+      png:
         '64': png/64/auto.png
         '128': png/128/auto.png
         '256': png/256/auto.png
@@ -8699,12 +8681,22 @@ icons:
         status: available
         color_mode: brand
         svg: source/auto.svg
-        png: *id065
+        png:
+          '64': png/64/auto.png
+          '128': png/128/auto.png
+          '256': png/256/auto.png
       mono:
         status: optional
         color_mode: monochrome
         png: {}
     schema: 2
+    files_alt:
+      root: strategies/auto
+      svg: strategies/auto/icon.svg
+      png:
+        '64': strategies/auto/64.png
+        '128': strategies/auto/128.png
+        '256': strategies/auto/256.png
   urltest:
     name: URLTest
     type: policy
@@ -8717,7 +8709,7 @@ icons:
       verified: true
     files:
       svg: source/urltest.svg
-      png: &id066
+      png:
         '64': png/64/urltest.png
         '128': png/128/urltest.png
         '256': png/256/urltest.png
@@ -8756,12 +8748,22 @@ icons:
         status: available
         color_mode: brand
         svg: source/urltest.svg
-        png: *id066
+        png:
+          '64': png/64/urltest.png
+          '128': png/128/urltest.png
+          '256': png/256/urltest.png
       mono:
         status: optional
         color_mode: monochrome
         png: {}
     schema: 2
+    files_alt:
+      root: strategies/urltest
+      svg: strategies/urltest/icon.svg
+      png:
+        '64': strategies/urltest/64.png
+        '128': strategies/urltest/128.png
+        '256': strategies/urltest/256.png
   fallback:
     name: Fallback
     type: policy
@@ -8774,7 +8776,7 @@ icons:
       verified: true
     files:
       svg: source/fallback.svg
-      png: &id067
+      png:
         '64': png/64/fallback.png
         '128': png/128/fallback.png
         '256': png/256/fallback.png
@@ -8813,12 +8815,22 @@ icons:
         status: available
         color_mode: brand
         svg: source/fallback.svg
-        png: *id067
+        png:
+          '64': png/64/fallback.png
+          '128': png/128/fallback.png
+          '256': png/256/fallback.png
       mono:
         status: optional
         color_mode: monochrome
         png: {}
     schema: 2
+    files_alt:
+      root: strategies/fallback
+      svg: strategies/fallback/icon.svg
+      png:
+        '64': strategies/fallback/64.png
+        '128': strategies/fallback/128.png
+        '256': strategies/fallback/256.png
   loadbalance:
     name: Loadbalance
     type: policy
@@ -8831,7 +8843,7 @@ icons:
       verified: true
     files:
       svg: source/loadbalance.svg
-      png: &id068
+      png:
         '64': png/64/loadbalance.png
         '128': png/128/loadbalance.png
         '256': png/256/loadbalance.png
@@ -8870,12 +8882,22 @@ icons:
         status: available
         color_mode: brand
         svg: source/loadbalance.svg
-        png: *id068
+        png:
+          '64': png/64/loadbalance.png
+          '128': png/128/loadbalance.png
+          '256': png/256/loadbalance.png
       mono:
         status: optional
         color_mode: monochrome
         png: {}
     schema: 2
+    files_alt:
+      root: strategies/loadbalance
+      svg: strategies/loadbalance/icon.svg
+      png:
+        '64': strategies/loadbalance/64.png
+        '128': strategies/loadbalance/128.png
+        '256': strategies/loadbalance/256.png
   final:
     name: Final
     type: policy
@@ -8888,7 +8910,7 @@ icons:
       verified: true
     files:
       svg: source/final.svg
-      png: &id069
+      png:
         '64': png/64/final.png
         '128': png/128/final.png
         '256': png/256/final.png
@@ -8927,12 +8949,22 @@ icons:
         status: available
         color_mode: brand
         svg: source/final.svg
-        png: *id069
+        png:
+          '64': png/64/final.png
+          '128': png/128/final.png
+          '256': png/256/final.png
       mono:
         status: optional
         color_mode: monochrome
         png: {}
     schema: 2
+    files_alt:
+      root: strategies/final
+      svg: strategies/final/icon.svg
+      png:
+        '64': strategies/final/64.png
+        '128': strategies/final/128.png
+        '256': strategies/final/256.png
 service_icon_map:
   google: google
   apple: apple
@@ -9173,16 +9205,16 @@ phase_ii:
   fail: 0
 si_pin:
   version: 13.21.0
-  pinned_at: '2026-08-30T14:55:53Z'
-  count: 80
+  pinned_at: '2026-08-31T00:17:53Z'
+  count: 100
 dual_write:
   enabled: true
   legacy_primary: true
   brands_opt_in: P2_DUAL_BRANDS=1
-  count: 23
+  count: 28
 phase_p2:
   si_version: 13.21.0
-  date: '2026-08-30'
+  date: '2026-08-31'
   steps:
   - '2.3'
   - '2.5'

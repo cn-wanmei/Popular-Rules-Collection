@@ -1,4 +1,4 @@
-updated: '2026-08-30'
+updated: '2026-08-31'
 source: simple-icons
 colors:
   adobe:
@@ -46,9 +46,6 @@ colors:
   digitalocean:
     slug: digitalocean
     hex: '#0080FF'
-  docker:
-    slug: docker
-    hex: '#2496ED'
   dropbox:
     slug: dropbox
     hex: '#0061FF'
@@ -61,9 +58,6 @@ colors:
   epic:
     slug: epicgames
     hex: '#313131'
-  facebook:
-    slug: facebook
-    hex: '#0866FF'
   figma:
     slug: figma
     hex: '#F24E1E'
@@ -118,9 +112,6 @@ colors:
   playstation:
     slug: playstation
     hex: '#0070D1'
-  reddit:
-    slug: reddit
-    hex: '#FF4500'
   roblox:
     slug: roblox
     hex: '#000000'
@@ -145,17 +136,11 @@ colors:
   stripe:
     slug: stripe
     hex: '#635BFF'
-  telegram:
-    slug: telegram
-    hex: '#26A5E4'
   threads:
     slug: threads
     hex: '#000000'
   tidal:
     slug: tidal
-    hex: '#000000'
-  tiktok:
-    slug: tiktok
     hex: '#000000'
   trello:
     slug: trello
@@ -184,9 +169,6 @@ colors:
   weibo:
     slug: sinaweibo
     hex: '#E6162D'
-  whatsapp:
-    slug: whatsapp
-    hex: '#25D366'
   wikipedia:
     slug: wikipedia
     hex: '#000000'

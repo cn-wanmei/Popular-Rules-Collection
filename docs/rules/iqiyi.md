@@ -11,7 +11,7 @@
 | 类型 | mixed |
 | Domains | 45 |
 | CIDR | 21 |
-| 最后更新 | 2026-08-30 |
+| 最后更新 | 2026-08-31 |
 | Sources | blackmatrix7 / metacubex |
 | Confidence | HIGH |
 

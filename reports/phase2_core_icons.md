@@ -1,63 +1,63 @@
 # Phase II Core Brands
 
-date: 2026-08-30
+date: 2026-08-31
 
 - fetched=0 skip=57 fail=0 color_fill=0
 
 - `adobe`: sourced
-- `alibaba`: protected/verified
-- `alipay`: protected/verified
+- `alibaba`: sourced
+- `alipay`: sourced
 - `amazon`: sourced
-- `anthropic`: protected/verified
-- `apple`: protected/verified
+- `anthropic`: sourced
+- `apple`: sourced
 - `aws`: sourced
-- `baidu`: protected/verified
-- `bilibili`: protected/verified
+- `baidu`: sourced
+- `bilibili`: sourced
 - `claude`: protected/verified
 - `cloudflare`: sourced
-- `discord`: protected/verified
+- `discord`: sourced
 - `docker`: sourced
-- `douyin`: protected/verified
+- `douyin`: sourced
 - `dropbox`: sourced
 - `facebook`: sourced
 - `figma`: sourced
 - `firebase`: sourced
 - `gemini`: protected/verified
-- `github`: protected/verified
+- `github`: sourced
 - `gitlab`: sourced
-- `google`: protected/verified
-- `huawei`: protected/verified
+- `google`: sourced
+- `huawei`: sourced
 - `huggingface`: protected/verified
 - `icloud`: sourced
 - `instagram`: sourced
 - `line`: sourced
 - `linkedin`: sourced
-- `meituan`: protected/verified
+- `meituan`: sourced
 - `messenger`: sourced
-- `microsoft`: protected/verified
-- `netflix`: protected/verified
+- `microsoft`: sourced
+- `netflix`: sourced
 - `notion`: sourced
-- `openai`: protected/verified
+- `openai`: sourced
 - `paypal`: sourced
 - `perplexity`: protected/verified
 - `reddit`: sourced
 - `shopify`: sourced
 - `signal`: sourced
 - `slack`: sourced
-- `spotify`: protected/verified
+- `spotify`: sourced
 - `steam`: sourced
 - `stripe`: sourced
 - `telegram`: sourced
-- `tencent`: protected/verified
+- `tencent`: sourced
 - `tiktok`: sourced
 - `twitch`: sourced
 - `twitter`: sourced
 - `uber`: sourced
 - `vercel`: sourced
-- `wechat`: protected/verified
+- `wechat`: sourced
 - `whatsapp`: sourced
 - `x`: sourced
-- `xiaomi`: protected/verified
-- `youtube`: protected/verified
+- `xiaomi`: sourced
+- `youtube`: sourced
 - `zhihu`: protected/verified
 - `zoom`: sourced

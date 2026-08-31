@@ -1,0 +1,573 @@
+{
+  "source": "v2fly",
+  "fetch": "github_raw",
+  "timestamp": "2026-08-31T00:14:11.164990+00:00",
+  "files_ok": 56,
+  "files_failed": 0,
+  "empty_blocked": 0,
+  "rules_declared": 56,
+  "files": [
+    {
+      "name": "v2fly_deepseek",
+      "path": "data/deepseek",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/deepseek",
+      "service": "deepseek",
+      "local": "sources/v2fly/v2fly_deepseek",
+      "size": 27,
+      "sha256": "e30b03116775f65f5fe37e04668a2e9c6edf60450e9b07cd32debd9b94f838f1",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_elevenlabs",
+      "path": "data/elevenlabs",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/elevenlabs",
+      "service": "elevenlabs",
+      "local": "sources/v2fly/v2fly_elevenlabs",
+      "size": 29,
+      "sha256": "4c284a7e5947f4a40d40c9dc8fedf3e9e3091db0c7680b913b2b19db36ebd561",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_huggingface",
+      "path": "data/huggingface",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/huggingface",
+      "service": "huggingface",
+      "local": "sources/v2fly/v2fly_huggingface",
+      "size": 30,
+      "sha256": "67f5861b31232701f884efd38d9436dd89183fccbd01d6f10d791b9ef6fbf4b8",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_perplexity",
+      "path": "data/perplexity",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/perplexity",
+      "service": "perplexity",
+      "local": "sources/v2fly/v2fly_perplexity",
+      "size": 108,
+      "sha256": "570581bad658566cb493207c14ebb55110750071071e089b4c40054b00af3db0",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_anthropic",
+      "path": "data/anthropic",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/anthropic",
+      "service": "anthropic",
+      "local": "sources/v2fly/v2fly_anthropic",
+      "size": 152,
+      "sha256": "3d0e231009271bad865131381da71b489b18ca699f38afe3a0ebef00011f1b88",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_signal",
+      "path": "data/signal",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/signal",
+      "service": "signal",
+      "local": "sources/v2fly/v2fly_signal",
+      "size": 104,
+      "sha256": "2f36d2f4841bbb2c255b365dbbe1690fab8b6a721341d4b1660afb90f432cd01",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_roblox",
+      "path": "data/roblox",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/roblox",
+      "service": "roblox",
+      "local": "sources/v2fly/v2fly_roblox",
+      "size": 719,
+      "sha256": "00f09f3e842c41ebca6af24858de96c04b697e3732d05da009ce42ca42b03d9f",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_notion",
+      "path": "data/notion",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/notion",
+      "service": "notion",
+      "local": "sources/v2fly/v2fly_notion",
+      "size": 102,
+      "sha256": "068376eeeea9527bd2caa4d2e5dd65c944d8706f453c353ff9bdd315fb760527",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_figma",
+      "path": "data/figma",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/figma",
+      "service": "figma",
+      "local": "sources/v2fly/v2fly_figma",
+      "size": 10,
+      "sha256": "8d7caddac6403a19b7a3dc403f6255db4ba90e459ee2ca9a29502ead7fb16f3e",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_shopify",
+      "path": "data/shopify",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/shopify",
+      "service": "shopify",
+      "local": "sources/v2fly/v2fly_shopify",
+      "size": 112,
+      "sha256": "b255e880634a8c8f04ee9656c650e9df7ae17b2e088b6bb5fafd71a9c8f06527",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_uber",
+      "path": "data/uber",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/uber",
+      "service": "uber",
+      "local": "sources/v2fly/v2fly_uber",
+      "size": 38,
+      "sha256": "a267118c99220a570cec4493baa294bb6c94a7343d84e8f17772decad6f40a9d",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_airbnb",
+      "path": "data/airbnb",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/airbnb",
+      "service": "airbnb",
+      "local": "sources/v2fly/v2fly_airbnb",
+      "size": 1080,
+      "sha256": "49dbb68c3944b2b1db7286625349163362deaa651937a8ec39de6725571e13e9",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_booking",
+      "path": "data/booking",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/booking",
+      "service": "booking",
+      "local": "sources/v2fly/v2fly_booking",
+      "size": 39,
+      "sha256": "90860cb843bf1c9c2541e4577e901b33cd2f066ca3fcbfcf1afdb932abd5f7ae",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_openai",
+      "path": "data/openai",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/openai",
+      "service": "openai",
+      "local": "sources/v2fly/v2fly_openai",
+      "size": 679,
+      "sha256": "19a100966b3c5b0dff2e7038ba66366ef10d6384781b3eda6de4d1e79712dcc6",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_telegram",
+      "path": "data/telegram",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/telegram",
+      "service": "telegram",
+      "local": "sources/v2fly/v2fly_telegram",
+      "size": 252,
+      "sha256": "24a2d026dbf3a09a8ca893420a40adbad70328978df0100d9c63abecdbf01b5d",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_discord",
+      "path": "data/discord",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/discord",
+      "service": "discord",
+      "local": "sources/v2fly/v2fly_discord",
+      "size": 528,
+      "sha256": "6e57668fe3c87895036e1b35ce7110ea1872c41850e1e92258dc20517e3d6dc5",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_spotify",
+      "path": "data/spotify",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/spotify",
+      "service": "spotify",
+      "local": "sources/v2fly/v2fly_spotify",
+      "size": 676,
+      "sha256": "ec710e93e84e85536a661905f2182f239464f55c1e837523de222d7e9d21c65b",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_steam",
+      "path": "data/steam",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/steam",
+      "service": "steam",
+      "local": "sources/v2fly/v2fly_steam",
+      "size": 1674,
+      "sha256": "4ce9aaf395d54abd93196c188efed96d5649adcddb636ed8727ca7e665524810",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_netflix",
+      "path": "data/netflix",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/netflix",
+      "service": "netflix",
+      "local": "sources/v2fly/v2fly_netflix",
+      "size": 680,
+      "sha256": "6a5568ce8d99b718b3a191292c81c94be56b5e14601316b99a6ece708f8f91f7",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_github",
+      "path": "data/github",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/github",
+      "service": "github",
+      "local": "sources/v2fly/v2fly_github",
+      "size": 1837,
+      "sha256": "32c682a5437b3203fc8559cbf033f44ede2abb25f6358ab1a6fdc0decf5f479f",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_tiktok",
+      "path": "data/tiktok",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/tiktok",
+      "service": "tiktok",
+      "local": "sources/v2fly/v2fly_tiktok",
+      "size": 891,
+      "sha256": "1135111271ec20ad0fe6792f2018d7ecb526943d675d0e3bf15ac8fb47bd4aea",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_twitter",
+      "path": "data/twitter",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/twitter",
+      "service": "twitter",
+      "local": "sources/v2fly/v2fly_twitter",
+      "size": 327,
+      "sha256": "05fee908ab80f262be5f603b24d3bdaa60aee1005ccc1cec988bab9236061116",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_facebook",
+      "path": "data/facebook",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/facebook",
+      "service": "facebook",
+      "local": "sources/v2fly/v2fly_facebook",
+      "size": 6381,
+      "sha256": "1011563ed705cc73eaac145506c7a3e59530f59fd501d8ca88664e95e9f05cc5",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_instagram",
+      "path": "data/instagram",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/instagram",
+      "service": "instagram",
+      "local": "sources/v2fly/v2fly_instagram",
+      "size": 1326,
+      "sha256": "e392526b75e27218f874590d0db99b5e009fb0b7679095f0eac48a4ee3fb6413",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_whatsapp",
+      "path": "data/whatsapp",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/whatsapp",
+      "service": "whatsapp",
+      "local": "sources/v2fly/v2fly_whatsapp",
+      "size": 219,
+      "sha256": "d23fbe2f886bfbd52c3ae40e1fed05cbc4a721564e7eda76f226824d0b137dca",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_line",
+      "path": "data/line",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/line",
+      "service": "line",
+      "local": "sources/v2fly/v2fly_line",
+      "size": 276,
+      "sha256": "32bcf614b506ec3f4751fc0dce128624bdc6aee28f36aeff31709b671f868a69",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_cloudflare",
+      "path": "data/cloudflare",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/cloudflare",
+      "service": "cloudflare",
+      "local": "sources/v2fly/v2fly_cloudflare",
+      "size": 1043,
+      "sha256": "b3bde86c39bd09ee1e10874e793332f72c42515b58842309d53eadbc26d75683",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_ebay",
+      "path": "data/ebay",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/ebay",
+      "service": "ebay",
+      "local": "sources/v2fly/v2fly_ebay",
+      "size": 5753,
+      "sha256": "3557ab8b13d71473228c3b52f5d1173a2bf763cb1823dae3ba47f1ce42218f23",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_alibaba",
+      "path": "data/alibaba",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/alibaba",
+      "service": "alibaba",
+      "local": "sources/v2fly/v2fly_alibaba",
+      "size": 3649,
+      "sha256": "f05b4013437f1805dd8283d5f7b163783551e128719ea097c840e4d4d810fd5c",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_aliyun",
+      "path": "data/aliyun",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/aliyun",
+      "service": "alibabacloud",
+      "local": "sources/v2fly/v2fly_aliyun",
+      "size": 1978,
+      "sha256": "fffd006a66b3ed1e1d4e3a20fe041628436df341aaee04f2dd2e7a14726045e0",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_baidu",
+      "path": "data/baidu",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/baidu",
+      "service": "baidu",
+      "local": "sources/v2fly/v2fly_baidu",
+      "size": 2196,
+      "sha256": "8000466a4513be38d7181e0136d1c77db061b20e905f297bb454c5d5ecef4dee",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_bytedance",
+      "path": "data/bytedance",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/bytedance",
+      "service": "bytedance",
+      "local": "sources/v2fly/v2fly_bytedance",
+      "size": 6161,
+      "sha256": "f7084016918288fe58dbe18d862762a471c49e7e4f3c0b388a801d54f5448b4c",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_tencent",
+      "path": "data/tencent",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/tencent",
+      "service": "tencent",
+      "local": "sources/v2fly/v2fly_tencent",
+      "size": 2258,
+      "sha256": "8ac9bb80ca69931558fc9b0061323955be5138e176edaf9e77ccd9080ca3f4e5",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_bilibili",
+      "path": "data/bilibili",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/bilibili",
+      "service": "bilibili",
+      "local": "sources/v2fly/v2fly_bilibili",
+      "size": 486,
+      "sha256": "dbe560654836a368cf5c36ed3962f5fe983f07d0f160aa8ca7e48f63cbec527b",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_apple",
+      "path": "data/apple",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/apple",
+      "service": "apple",
+      "local": "sources/v2fly/v2fly_apple",
+      "size": 17100,
+      "sha256": "d46d18afe2f2d51bd48ddd239c43f460a32a9d605b384baa2cd6c70ec29cf29f",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_icloud",
+      "path": "data/icloud",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/icloud",
+      "service": "icloud",
+      "local": "sources/v2fly/v2fly_icloud",
+      "size": 774,
+      "sha256": "c46ade14884382a65b8bb9f1b6b8e484be639ffe17abcf2ec6f50464cb56f04f",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_google",
+      "path": "data/google",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/google",
+      "service": "google",
+      "local": "sources/v2fly/v2fly_google",
+      "size": 12516,
+      "sha256": "5a85d201b8fb4b03486515618da4c164a0ce0c59341cb2dee6d1b0bdca176653",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_youtube",
+      "path": "data/youtube",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/youtube",
+      "service": "youtube",
+      "local": "sources/v2fly/v2fly_youtube",
+      "size": 2444,
+      "sha256": "9ffb657176fdffed567953749c137bb3d8a216ce4e839b3831b626c752902213",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_microsoft",
+      "path": "data/microsoft",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/microsoft",
+      "service": "microsoft",
+      "local": "sources/v2fly/v2fly_microsoft",
+      "size": 7801,
+      "sha256": "b033d7375c45b2613f5230046ef190d0f2d2c83c1eba7a082d41a0c6088286f4",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_amazon",
+      "path": "data/amazon",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/amazon",
+      "service": "amazon",
+      "local": "sources/v2fly/v2fly_amazon",
+      "size": 2149,
+      "sha256": "f1b24bcc1d576f30a09731b10cf55ba50822fd433b8f35568c77bbb45bdd5f0b",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_aws",
+      "path": "data/aws",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/aws",
+      "service": "aws",
+      "local": "sources/v2fly/v2fly_aws",
+      "size": 976,
+      "sha256": "cdb3797a5ba28abc72a82bb6334a6ec777100469994e6a50d3840fb8e1ced802",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_docker",
+      "path": "data/docker",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/docker",
+      "service": "docker",
+      "local": "sources/v2fly/v2fly_docker",
+      "size": 181,
+      "sha256": "f1b27237e9b861d88aaf80399af5088781e177780ecc7b30dd7795fea404546e",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_jetbrains",
+      "path": "data/jetbrains",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/jetbrains",
+      "service": "jetbrains",
+      "local": "sources/v2fly/v2fly_jetbrains",
+      "size": 378,
+      "sha256": "e582f14220308511a9e584612d21fa01d76c552fcfba2838b4aeedd53adb17f7",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_atlassian",
+      "path": "data/atlassian",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/atlassian",
+      "service": "atlassian",
+      "local": "sources/v2fly/v2fly_atlassian",
+      "size": 136,
+      "sha256": "3ee60d83f78b67f6fa5b80281cbeda40d800ee28e705a7b179c0d27823ecfeda",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_slack",
+      "path": "data/slack",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/slack",
+      "service": "slack",
+      "local": "sources/v2fly/v2fly_slack",
+      "size": 158,
+      "sha256": "0c1db5d6d7343fd4b423109be5396dea7a0b2769b9e150f1a3a49b1dde04ddec",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_zoom",
+      "path": "data/zoom",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/zoom",
+      "service": "zoom",
+      "local": "sources/v2fly/v2fly_zoom",
+      "size": 29,
+      "sha256": "bf9535bd84985865b4f8a8768ff9b6ec916b28e364fa157cfe30ee1ee6bb06e1",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_adobe",
+      "path": "data/adobe",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/adobe",
+      "service": "adobe",
+      "local": "sources/v2fly/v2fly_adobe",
+      "size": 2157,
+      "sha256": "454162729a6834f24f32524afc743b38d80a31a95f80ff4d7fd1f09c76e522e1",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_oracle",
+      "path": "data/oracle",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/oracle",
+      "service": "oracle",
+      "local": "sources/v2fly/v2fly_oracle",
+      "size": 233,
+      "sha256": "b4b1b50561a4e0d9d4cc1a7e0b6fbb1e7ba07b80ba5a94d1692f0b6cb898288f",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_digitalocean",
+      "path": "data/digitalocean",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/digitalocean",
+      "service": "digitalocean",
+      "local": "sources/v2fly/v2fly_digitalocean",
+      "size": 100,
+      "sha256": "05a81eb92baf04558e0db3f32889f046cc7b587090f0ca7742e951b0fb17b3cc",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_reddit",
+      "path": "data/reddit",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/reddit",
+      "service": "reddit",
+      "local": "sources/v2fly/v2fly_reddit",
+      "size": 182,
+      "sha256": "c9a8f8d31c03484cad62527e65d47b101a657d3293b9adead66a2eecf80fbce9",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_mojang",
+      "path": "data/mojang",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/mojang",
+      "service": "minecraft",
+      "local": "sources/v2fly/v2fly_mojang",
+      "size": 104,
+      "sha256": "ffc054b4b5bb01aa9e25c23444282740f0befea2b2fc8eb3e8ad53156a632757",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_huawei",
+      "path": "data/huawei",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/huawei",
+      "service": "huawei",
+      "local": "sources/v2fly/v2fly_huawei",
+      "size": 479,
+      "sha256": "5e2aa1cc680fea6594c17cf9e26111fe35be8283332e4dc2c3c1917aca335080",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_category_porn",
+      "path": "data/category-porn",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-porn",
+      "service": "restricted",
+      "local": "sources/v2fly/v2fly_category_porn",
+      "size": 92745,
+      "sha256": "c4c8362d3b67d6351491950a82e434cfc89febf8aacbcf01f3e17f11d798e97e",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_pornhub",
+      "path": "data/pornhub",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/pornhub",
+      "service": "restricted",
+      "local": "sources/v2fly/v2fly_pornhub",
+      "size": 129,
+      "sha256": "2fc9e05935457d9e08e1d8d8cda16adfcb82645c661d9a3233ffcb5ede0a206e",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_xvideos",
+      "path": "data/xvideos",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/xvideos",
+      "service": "restricted",
+      "local": "sources/v2fly/v2fly_xvideos",
+      "size": 71,
+      "sha256": "cb33a352b459aa462c1e7cd5f60b17474ff5beec973c312019af33d3d4057040",
+      "status": "ok"
+    },
+    {
+      "name": "v2fly_ehentai",
+      "path": "data/ehentai",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/ehentai",
+      "service": "restricted",
+      "local": "sources/v2fly/v2fly_ehentai",
+      "size": 106,
+      "sha256": "e662f5137041b52538abfc590d9a42dd688571f890aa0d055de41dcc8cdd5dd2",
+      "status": "ok"
+    }
+  ],
+  "registry_priority": 85,
+  "registry_trust": "high"
+}

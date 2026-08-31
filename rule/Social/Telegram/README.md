@@ -13,7 +13,7 @@
 | IP/CIDR | 22 |
 | Mixed | 49 |
 | Sources | blackmatrix7, v2fly, dler |
-| Updated | 2026-08-30 |
+| Updated | 2026-08-31 |
 
 ## 基础规则（Classical）
 

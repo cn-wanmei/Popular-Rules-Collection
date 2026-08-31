@@ -1,0 +1,44 @@
+{
+  "date": "2026-08-31",
+  "status": "pass",
+  "hard_fail": [],
+  "warnings": [],
+  "informational": [
+    "ok database/network/lan.txt count=21",
+    "ok database/network/private.txt count=7",
+    "ok database/geosite/direct.txt count=111284",
+    "ok database/geosite/proxy.txt count=27221",
+    "ok database/geoip/cn.txt count=9651",
+    "export ok generated/network/lan.txt",
+    "export ok generated/geosite/direct.txt",
+    "export ok generated/geosite/proxy.txt",
+    "export ok generated/geoip/cn.txt",
+    "export ok generated/provider/cloudflare.txt",
+    "provider dataset present: goog.txt count=152",
+    "provider dataset present: oracle.txt count=1398",
+    "provider dataset present: aws.txt count=11145",
+    "provider dataset present: googlecloud.txt count=1154",
+    "provider dataset present: cloudflare6.txt count=7",
+    "provider dataset present: cloudflare.txt count=15",
+    "asn_metadata entries=20",
+    "policy direct files=1",
+    "policy proxy files=1",
+    "policy dns files=1",
+    "mmdb artifact ok",
+    "binary ok: ASN.mmdb bytes=12079074",
+    "binary ok: geoip-lite.dat bytes=207729",
+    "binary ok: geoip.dat bytes=17224069",
+    "binary ok: geosite.dat bytes=4243231"
+  ],
+  "counts": {
+    "hard": 0,
+    "warn": 0,
+    "info": 25
+  },
+  "thresholds": {
+    "shrink_hard": 0.9,
+    "shrink_warn": 0.3,
+    "growth_warn": 3.0
+  },
+  "scope": "service_adjacent+network_datasets"
+}
