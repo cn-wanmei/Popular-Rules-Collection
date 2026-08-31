@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""V2.7 L4/L5 all aggregates."""
+"""V2 L4/L5 hierarchy golden (frozen)."""
 from __future__ import annotations
 
 import hashlib
