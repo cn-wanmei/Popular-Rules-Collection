@@ -1,0 +1,18 @@
+version: 1
+# V3-only pipeline contract (not wired to production Collect yet)
+stages:
+  - fetch
+  - snapshot
+  - validate_source
+  - normalize
+  - canonicalize
+  - semantic
+  - hierarchy
+  - view_resolve
+  - decision
+  - universal_ir
+  - adapt
+  - golden
+  - artifact
+  - release_gate
+  - publish
