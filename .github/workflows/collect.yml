@@ -106,6 +106,16 @@ jobs:
         run: python scripts/profile_validate.py
       - name: Resolution fragment
         run: python scripts/build_resolution_fragment.py
+      - name: V2.1 Artifact manifest
+        run: python scripts/build_artifact_manifest.py
+      - name: V2.1 Pack release bundle
+        continue-on-error: true
+        run: python scripts/pack_release_artifacts.py
+      - name: V2.2 Source quarantine scan
+        continue-on-error: true
+        run: python scripts/source_quarantine.py
+      - name: V2.3 Gate failure injection
+        run: python scripts/gate_failure_injection.py
       - name: P1 Universal IR
         run: python scripts/build_universal_ir.py
       - name: P1 Semantic dedup report
@@ -173,6 +183,7 @@ jobs:
           rm -f database/provenance/domains.jsonl
           git add -A database/ generated/ rule/ sources/health.yaml reports/ docs/ config/ assets/ || true
           git add backup/*/manifests/ backup/ || true
+          python scripts/git_skip_release_paths.py || true
           python scripts/size_gate.py --max-mb 90
           git diff --staged --quiet || git commit -m "chore(pipeline): collect+normalize+build ${DAY}"
           set +e
