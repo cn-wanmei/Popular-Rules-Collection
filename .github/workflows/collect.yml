@@ -74,14 +74,13 @@ jobs:
       - name: Sync service icons (Simple Icons)
         continue-on-error: true
         run: python scripts/sync_service_icons.py
-      - name: Icon build (optional)
+      - name: Icon build (Final Freeze)
         continue-on-error: true
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq libcairo2 2>/dev/null || true
           pip install pillow cairosvg -q || true
           python scripts/icon_policy_set.py || true
-          python scripts/icon_identity_si_refresh.py || true
-          python scripts/icon_color_identity_fix.py || true
+          python scripts/icon_restore_si_identity.py || true
           python scripts/icon_no_black.py || true
           python scripts/build_icons.py --force || true
           python scripts/icon_engine.py --force || true
