@@ -1,0 +1,19 @@
+version: 1
+updated: "2026-08-31"
+overrides:
+  apple:
+    scale: 0.86
+  amazon:
+    scale: 1.08
+  alipay:
+    scale: 0.84
+  spotify:
+    scale: 0.90
+  github:
+    scale: 0.92
+  google:
+    scale: 1.00
+  adobe:
+    scale: 0.88
+  alibaba:
+    scale: 0.95

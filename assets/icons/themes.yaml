@@ -1,5 +1,5 @@
 version: 1
-updated: '2026-08-29'
+updated: "2026-08-31"
 description: Icon Theme = profile binding for UI packs
 themes:
   official:
@@ -13,7 +13,7 @@ themes:
     note: 极简/扁平
   monochrome:
     profile: monochrome
-    note: 单色
+    note: "单色=单一非黑品牌色/display_color，不是纯黑剪影"
   network:
     profile: network
     note: 网络策略专用

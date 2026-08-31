@@ -1,6 +1,6 @@
 version: 1
-updated: '2026-08-29'
-description: Icon Profile → preferred variant role (not a separate PNG set)
+updated: "2026-08-31"
+description: Icon Profile → preferred variant role
 profiles:
   brand:
     preferred: [brand, simple, default]
@@ -10,13 +10,13 @@ profiles:
     description: 彩色品牌（多色原样保留）
   minimal:
     preferred: [flat, simple, brand, default]
-    description: 统一扁平/极简（无 flat 时回退）
+    description: 统一扁平/极简
   monochrome:
     preferred: [mono, brand, default]
-    description: 单色墨水版
+    description: "单色版=display_color 单色，禁止纯黑"
   network:
     preferred: [network, default]
     description: 网络/策略几何标
   client:
     preferred: [brand, simple, default]
-    description: 客户端默认（Surge/Loon/Egern icon-url）
+    description: 客户端默认

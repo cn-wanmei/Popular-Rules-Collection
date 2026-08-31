@@ -1,11 +1,24 @@
 version: 1
-updated: '2026-08-31'
+updated: "2026-08-31"
 content_ratio:
   enabled: true
   threshold: 0.08
-  level: warn
+  level: fail
 near_black:
   enabled: true
-  threshold: 0.9
+  threshold: 0.85
+  level: fail
+  skip_approved_mono: false
+  note: "Pure-black brand delivery is FAIL; monochrome = single non-black brand color"
+empty_png:
+  enabled: true
+  level: fail
+missing_manifest:
+  enabled: true
+  level: fail
+duplicate_id:
+  enabled: true
+  level: fail
+optical_weight:
+  enabled: true
   level: warn
-  skip_approved_mono: true
