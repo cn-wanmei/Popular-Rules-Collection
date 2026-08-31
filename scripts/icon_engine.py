@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""PRC Icon Engine: Source -> Normalize -> Render."""
+"""PRC Icon Engine: Source -> Normalize -> Render (Final Freeze)."""
 from __future__ import annotations
 
 import argparse
@@ -24,7 +24,12 @@ def load_man():
 
 
 def brand_color(meta):
-    for bag in (meta.get("brand"), meta.get("visual"), meta.get("source")):
+    brand = meta.get("brand") or {}
+    if isinstance(brand, dict):
+        for k in ("display_color", "color"):
+            if brand.get(k):
+                return str(brand[k])
+    for bag in (meta.get("visual"), meta.get("source")):
         if isinstance(bag, dict) and bag.get("color"):
             return str(bag["color"])
         if isinstance(bag, dict) and bag.get("primary_color"):
@@ -33,7 +38,7 @@ def brand_color(meta):
 
 
 def extract_viewbox(svg_text):
-    m = re.search(r"viewBox\s*=\s*[\"']([^\"']+)[\"']", svg_text, re.I)
+    m = re.search(r'viewBox\s*=\s*["\']([^"\']+)["\']', svg_text, re.I)
     return m.group(1).strip() if m else "0 0 24 24"
 
 
@@ -80,19 +85,21 @@ def near_black(v):
 def apply_tint_if_mono_black(svg_text, color, keep_black):
     if not color or keep_black:
         return svg_text
-    fills = re.findall(r"fill\s*=\s*[\"']([^\"']+)[\"']", svg_text, flags=re.I)
+    fills = re.findall(r'fill\s*=\s*["\']([^"\']+)["\']', svg_text, flags=re.I)
     concrete = [f for f in fills if f.strip().lower() not in ("none", "transparent")]
     if concrete and not all(near_black(f) for f in concrete):
         return svg_text
     c = color if color.startswith("#") else ("#" + color)
     out = re.sub(
-        r"fill\s*=\s*[\"'](?!none|transparent)[^\"']+[\"']",
+        r'fill\s*=\s*["\'](?!none|transparent)[^"\']+["\']',
         f'fill="{c}"',
         svg_text,
         flags=re.I,
     )
     if "fill=" not in out.lower():
         out = out.replace("<svg ", f'<svg fill="{c}" ', 1)
+    if f'fill="{c}"' in out or "fill=" not in out.lower():
+        out = re.sub(r"<path\b(?![^>]*fill=)", f'<path fill="{c}"', out)
     return out
 
 
@@ -135,21 +142,6 @@ def composite_tile(src_png, dest, bg):
     return True
 
 
-def mono_from(src_png, dest):
-    try:
-        from PIL import Image
-    except ImportError:
-        return False
-    if not src_png.exists():
-        return False
-    im = Image.open(src_png).convert("RGBA")
-    pixels = [(0, 0, 0, 0) if a < 16 else (15, 23, 42, a) for r, g, b, a in im.getdata()]
-    im.putdata(pixels)
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    im.save(dest, "PNG")
-    return True
-
-
 def render_mode(meta):
     itype = str(meta.get("type") or "")
     ns = str(meta.get("namespace") or "")
@@ -165,12 +157,12 @@ def process_one(key, meta, force):
     raw = svg_path.read_text(encoding="utf-8", errors="replace")
     mode = render_mode(meta)
     color = brand_color(meta)
-    keep_black = bool((meta.get("visual") or {}).get("approved_mono")) or key in (
-        "github", "apple", "x", "twitter", "notion", "vercel", "steam", "uber", "threads",
-    )
-    if mode == "brand_preserve":
+    keep_black = False  # Final Freeze: no pure-black delivery
+    if color:
         raw = apply_tint_if_mono_black(raw, color, keep_black)
     norm = normalize_svg(raw)
+    if color:
+        norm = apply_tint_if_mono_black(norm, color, False)
     NORMALIZED.mkdir(parents=True, exist_ok=True)
     (NORMALIZED / f"{key}.svg").write_text(norm, encoding="utf-8")
     nb = norm.encode("utf-8")
@@ -189,9 +181,6 @@ def process_one(key, meta, force):
             vdest = RENDERED / variant / str(size) / f"{key}.png"
             if force or not vdest.exists():
                 composite_tile(tdest, vdest, bg)
-        mdest = ICON / "monochrome" / str(size) / f"{key}.png"
-        if force or not mdest.exists():
-            mono_from(tdest, mdest)
     return "ok" if ok else "fail"
 
 
@@ -217,7 +206,7 @@ def main():
             meta["render"]["mode"] = render_mode(meta)
             meta["render"]["canvas"] = CANVAS
             meta["render"]["safe_area"] = SAFE
-            meta["render"]["variants"] = ["transparent", "light", "dark", "monochrome"]
+            meta["render"]["variants"] = ["transparent", "light", "dark"]
             meta["render"]["engine"] = "prc-icon-engine-1"
             icons[key] = meta
     man["icons"] = icons
