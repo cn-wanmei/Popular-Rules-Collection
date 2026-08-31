@@ -50,31 +50,10 @@ jobs:
         continue-on-error: true
       - run: python scripts/client_capability_matrix.py
         continue-on-error: true
-      - name: Icon P2 apply
-        continue-on-error: true
-        run: python scripts/icon_p2_apply.py
-      - name: Icon P0/P1 apply
-        continue-on-error: true
-        run: python scripts/icon_p0_p1_apply.py
-      - name: Icon Phase III–V final
-        continue-on-error: true
-        run: python scripts/icon_phase3_to_final.py
-      - name: Icon Phase II core brands
-        continue-on-error: true
-        run: python scripts/icon_phase2_core.py
-      - name: Icon upgrade HOT via Simple Icons
-        continue-on-error: true
-        run: python scripts/icon_upgrade_hot_si.py
-      - name: Icon P1-P4 apply
-        continue-on-error: true
-        run: python scripts/icon_p1_p4_apply.py
-      - name: Icon governance P0-P4
-        continue-on-error: true
-        run: python scripts/icon_governance_apply.py
       - name: Sync service icons (Simple Icons)
         continue-on-error: true
         run: python scripts/sync_service_icons.py
-      - name: Icon build (Final Freeze + P2)
+      - name: Icon build (Final Freeze SSOT)
         continue-on-error: true
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq libcairo2 2>/dev/null || true
@@ -116,8 +95,11 @@ jobs:
       - name: Icon visual regression (soft)
         continue-on-error: true
         run: |
-          # Baseline frozen — never write-baseline in CI
           python scripts/icon_visual_regression.py || true
+      - name: Routing decision SSOT
+        run: python scripts/routing_emit.py
+      - name: Routing contract validate
+        run: python scripts/routing_contract_validate.py
       - name: Normalize
         run: |
           if [ "${{ inputs.skip_large }}" = "true" ]; then
