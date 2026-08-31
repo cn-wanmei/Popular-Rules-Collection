@@ -34,6 +34,13 @@ DISPLAY_PALETTE = {
     "ea": "FF4747",
     "ubisoft": "0070FF",
     "copilot": "6E5494",
+    "paramountplus": "0064FF",
+    "heroku": "6762A6",
+    "openai": "10A37F",
+    "booking": "003580",
+    "paypal": "003087",
+    "playstation": "003791",
+    "oppo": "1A472A",
     "google": "4285F4",
     "microsoft": "00A4EF",
 }
