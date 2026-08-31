@@ -86,13 +86,10 @@ def main() -> int:
                 content_ratio = opaque / max(1, bw * bh)
                 if content_ratio < cr_thr and cat == "brand":
                     msg = f"{key}: content_ratio={content_ratio:.3f} (glyph too small)"
-                    (hard if cr_level == "hard" else warn).append(msg)
+                    (hard if cr_level in ("hard", "fail") else warn).append(msg)
             if dark_ratio >= nb_thr and key not in approved and cat == "brand":
-                status = str(meta.get("status") or "")
-                prov = str(((meta.get("source") or {}).get("provenance") or ""))
-                if status == "verified" or prov == "official-colors":
-                    msg = f"{key}: near-black brand dark_ratio={dark_ratio:.2f}"
-                    (hard if nb_level == "hard" else warn).append(msg)
+                msg = f"{key}: near-black brand dark_ratio={dark_ratio:.2f}"
+                (hard if nb_level in ("hard", "fail") else warn).append(msg)
         except Exception as e:
             warn.append(f"{key}: png read {e}")
 
