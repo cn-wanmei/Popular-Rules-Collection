@@ -14,8 +14,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: pipeline-main
-  cancel-in-progress: true
+  group: main-publish
+  cancel-in-progress: false
 
 jobs:
   pipeline:
@@ -186,8 +186,8 @@ jobs:
         continue-on-error: true
       - name: Generate rule product pages
         run: python scripts/generate_rule_pages.py --clean --strict
-      - name: Size gate (90MB)
-        run: python scripts/size_gate.py --max-mb 90
+      - name: Size gate (artifact_layout SSOT)
+        run: python scripts/size_gate.py
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
@@ -198,7 +198,7 @@ jobs:
           git add backup/*/manifests/ backup/ || true
           python scripts/git_skip_release_paths.py || true
           git status --porcelain || true
-          python scripts/size_gate.py --max-mb 90
+          python scripts/size_gate.py
           git diff --staged --quiet || git commit -m "chore(pipeline): collect+normalize+build ${DAY}"
           set +e
           git pull --rebase --autostash origin main
