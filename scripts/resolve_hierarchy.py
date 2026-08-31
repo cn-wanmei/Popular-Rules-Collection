@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""V2.5 resolve_hierarchy — Aggregate union + manifest. Does not switch builders."""
+"""V2.7 resolve_hierarchy — all provider aggregates."""
 from __future__ import annotations
 
 import hashlib
@@ -48,7 +48,7 @@ def rules_from_service_yaml(sid: str) -> list:
     return out
 
 
-def expand_members(agg: dict, services: dict, groups: dict) -> list:
+def expand_members(agg, services, groups):
     members = list(agg.get("members") or [])
     exclude = set(agg.get("exclude") or [])
     expanded = []
@@ -62,6 +62,15 @@ def expand_members(agg: dict, services: dict, groups: dict) -> list:
     return [m for m in expanded if m not in exclude]
 
 
+def file_sid_for_member(mid, services):
+    s = services.get(mid) or {}
+    if s.get("legacy_body"):
+        return str(s["legacy_body"])
+    if mid.endswith("-core"):
+        return mid[: -len("-core")]
+    return mid
+
+
 def resolve_aggregate(view_id: str) -> dict:
     aggregates = load_yaml("memberships.yaml").get("aggregates") or {}
     services = load_yaml("services.yaml").get("services") or {}
@@ -70,11 +79,9 @@ def resolve_aggregate(view_id: str) -> dict:
     if not agg:
         raise SystemExit(f"unknown aggregate: {view_id}")
     member_ids = expand_members(agg, services, groups)
-    load_map = {"google-core": "google"}
-    rule_map = {}
-    per_member = {}
+    rule_map, per_member = {}, {}
     for mid in member_ids:
-        rules = rules_from_service_yaml(load_map.get(mid, mid))
+        rules = rules_from_service_yaml(file_sid_for_member(mid, services))
         n = 0
         for r in rules:
             if r["identity_key"] not in rule_map:
@@ -82,28 +89,26 @@ def resolve_aggregate(view_id: str) -> dict:
                 n += 1
         per_member[mid] = len(rules)
     ordered = sorted(rule_map.values(), key=lambda r: r["identity_key"])
-    payload = "\n".join(r["identity_key"] for r in ordered)
-    sha = hashlib.sha256(payload.encode()).hexdigest()
+    sha = hashlib.sha256("\n".join(r["identity_key"] for r in ordered).encode()).hexdigest()
     manifest = {
-        "view": view_id,
-        "kind": "aggregate",
-        "schema": 1,
-        "resolver_version": "v2.5.0",
+        "view": view_id, "kind": "aggregate", "schema": 1, "resolver_version": "v2.7.0",
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "members": member_ids,
-        "per_member_rule_rows": per_member,
-        "canonical_rule_count": len(ordered),
-        "sha256": sha,
+        "members": member_ids, "per_member_rule_rows": per_member,
+        "canonical_rule_count": len(ordered), "sha256": sha,
     }
     return {"manifest": manifest, "rules": ordered}
 
 
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
-    result = resolve_aggregate("google")
-    (OUT / "google_manifest.json").write_text(json.dumps(result["manifest"], indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    (OUT / "google_identity_keys.txt").write_text("\n".join(r["identity_key"] for r in result["rules"]) + "\n", encoding="utf-8")
-    print(f"[resolve_hierarchy] google rules={result['manifest']['canonical_rule_count']} sha={result['manifest']['sha256'][:12]}")
+    aggregates = load_yaml("memberships.yaml").get("aggregates") or {}
+    summary = []
+    for vid in sorted(aggregates.keys()):
+        result = resolve_aggregate(vid)
+        (OUT / f"{vid}_manifest.json").write_text(json.dumps(result["manifest"], indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        summary.append({"view": vid, "rules": result["manifest"]["canonical_rule_count"], "sha256": result["manifest"]["sha256"]})
+        print(f"[resolve_hierarchy] {vid} rules={result['manifest']['canonical_rule_count']}")
+    (OUT / "summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     return 0
 
 

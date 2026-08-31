@@ -1,9 +1,11 @@
 version: 1
+updated: "2026-08-31"
 providers:
-  google:
-    id: google
-    kind: provider
-    name: Google
-    scope: ecosystem
-    status: active
-    display_name: Google
+  google: {id: google, kind: provider, name: Google, scope: ecosystem, status: active}
+  apple: {id: apple, kind: provider, name: Apple, scope: ecosystem, status: active}
+  microsoft: {id: microsoft, kind: provider, name: Microsoft, scope: ecosystem, status: active}
+  tencent: {id: tencent, kind: provider, name: Tencent, scope: ecosystem, status: active}
+  alibaba: {id: alibaba, kind: provider, name: Alibaba, scope: ecosystem, status: active}
+  baidu: {id: baidu, kind: provider, name: Baidu, scope: ecosystem, status: active}
+  amazon: {id: amazon, kind: provider, name: Amazon, scope: ecosystem, status: active}
+  bytedance: {id: bytedance, kind: provider, name: ByteDance, scope: ecosystem, status: active}

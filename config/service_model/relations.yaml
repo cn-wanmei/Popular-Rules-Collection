@@ -1,0 +1,16 @@
+version: 1
+updated: "2026-08-31"
+ownership:
+  youtube: {owned_by: google, branded_as: youtube, operated_by: google}
+  wechat: {owned_by: tencent, branded_as: wechat}
+  icloud: {owned_by: apple, branded_as: icloud}
+  alibabacloud: {owned_by: alibaba, branded_as: alibabacloud}
+  tencentvideo: {owned_by: tencent, branded_as: tencentvideo}
+  googlefcm: {owned_by: google, branded_as: fcm, scope: shared_infrastructure}
+dependencies:
+  gmail: [google-shared]
+  icloud: [apple-shared]
+  wechat: [tencent-shared]
+attribution_policy:
+  exclusive_requires: [dedicated_upstream_or_official_or_human_review]
+  forbidden: [auto_split_from_provider_aggregate, guess_from_domain_keywords_only]
