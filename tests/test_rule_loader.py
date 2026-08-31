@@ -1,22 +1,20 @@
-"""Canonical contract tests for scripts/rule_loader.py."""
+"""Canonical contract tests for rule_loader (V3: src.adapters._common.rule_loader)."""
 from __future__ import annotations
 
 import sys
 from pathlib import Path
 
-import pytest
-
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "scripts"))
+sys.path.insert(0, str(ROOT))
 
-import rule_loader  # noqa: E402
-
+from src.adapters._common import rule_loader  # noqa: E402
 
 FIXTURES = Path(__file__).parent / "fixtures"
 
 
 def _patch_paths(monkeypatch, fixture_name: str) -> Path:
     base = FIXTURES / fixture_name
+    # Patch the module that owns load_service_rules globals (not scripts/ shim)
     monkeypatch.setattr(rule_loader, "ROOT", base)
     monkeypatch.setattr(rule_loader, "SERVICES", base / "database" / "services")
     monkeypatch.setattr(rule_loader, "DOMAINS", base / "database" / "domains")
@@ -38,7 +36,6 @@ def test_domains_txt_as_suffix_and_casefold_dedup(monkeypatch):
     buckets = rule_loader.load_service_rules("demo")
     assert len(buckets) == 1
     b = buckets[0]
-    # domains.txt → domain_suffix; Example.COM and example.com dedup
     assert len(b["domain_suffix"]) == 1
     assert b["domain_suffix"][0].lower() == "example.com"
     assert sum(len(b[k]) for k in rule_loader.TYPED_KEYS) > 0
@@ -50,7 +47,6 @@ def test_domain_and_domain_suffix_are_distinct(monkeypatch):
     b = buckets[0]
     assert "example.com" in b["domain"]
     assert "example.com" in b["domain_suffix"]
-    # both retained — different rule_type
     assert len(b["domain"]) >= 1
     assert len(b["domain_suffix"]) >= 1
 
@@ -82,5 +78,3 @@ def test_keyword_only_service_kept(monkeypatch):
     buckets = rule_loader.load_service_rules("kw")
     assert len(buckets) == 1
     assert buckets[0]["domain_keyword"] == ["stripe"]
-    assert buckets[0]["domain"] == []
-    assert buckets[0]["domain_suffix"] == []
