@@ -6,7 +6,7 @@ Canonical contract:
   - Normalize then dedupe by (rule_type, normalized_value)
   - domain and domain_suffix with the same string are DISTINCT rules
   - domain_suffix case-folds for dedup; IP keeps original form
-  - domains/*.txt lines are treated as domain_suffix
+  - domains/*.txt → domain_suffix; domains/*.exact.txt → domain (exact)
   - Empty total → service omitted from result
 """
 
@@ -22,7 +22,6 @@ SERVICES = ROOT / "database" / "services"
 DOMAINS = ROOT / "database" / "domains"
 IPS = ROOT / "database" / "ips"
 
-# Canonical typed keys
 TYPED_KEYS = (
     "domain",
     "domain_suffix",
@@ -34,16 +33,12 @@ TYPED_KEYS = (
 
 
 def _norm_key(rule_type: str, value: str) -> str:
-    """Normalized value for dedup within a type."""
     if rule_type.startswith("domain"):
         return value.lower().strip()
     return value.strip()
 
 
 def load_service_rules(service_id: str | None = None) -> list[dict[str, Any]]:
-    """Return list of buckets:
-    {id, name, category, domain, domain_suffix, domain_keyword, domain_regex, ip_cidr, ip_cidr6}
-    """
     out: list[dict[str, Any]] = []
     paths = sorted(SERVICES.glob("*.yaml"))
     if service_id:
@@ -58,7 +53,6 @@ def load_service_rules(service_id: str | None = None) -> list[dict[str, Any]]:
             continue
         sid = doc.get("id") or path.stem
 
-        # ordered lists + per-type seen sets for O(1) dedup
         lists: dict[str, list[str]] = {k: [] for k in TYPED_KEYS}
         seen: dict[str, set[str]] = {k: set() for k in TYPED_KEYS}
 
@@ -71,14 +65,13 @@ def load_service_rules(service_id: str | None = None) -> list[dict[str, Any]]:
             seen[rule_type].add(key)
             lists[rule_type].append(value.strip())
 
-        # 1) structured rules from yaml
         for r in doc.get("rules") or []:
             t, v = r.get("type"), r.get("value")
             if not t or not v:
                 continue
             add(str(t), str(v))
 
-        # 2) domains/*.txt → domain_suffix
+        # domains/*.txt → domain_suffix ONLY
         dfile = DOMAINS / f"{sid}.txt"
         if dfile.exists():
             with dfile.open(encoding="utf-8", errors="replace") as f:
@@ -87,7 +80,15 @@ def load_service_rules(service_id: str | None = None) -> list[dict[str, Any]]:
                     if line and not line.startswith("#"):
                         add("domain_suffix", line)
 
-        # 3) ips/*.txt → ip_cidr / ip_cidr6
+        # domains/*.exact.txt → domain (exact match)
+        efile = DOMAINS / f"{sid}.exact.txt"
+        if efile.exists():
+            with efile.open(encoding="utf-8", errors="replace") as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith("#"):
+                        add("domain", line)
+
         ifile = IPS / f"{sid}.txt"
         if ifile.exists():
             with ifile.open(encoding="utf-8", errors="replace") as f:
