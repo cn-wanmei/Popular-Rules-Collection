@@ -99,8 +99,7 @@ jobs:
       - name: Icon validate (soft)
         continue-on-error: true
         run: python scripts/icon_validate.py
-      - name: Icon QA (soft)
-        continue-on-error: true
+      - name: Icon QA (hard gate)
         run: python scripts/icon_qa.py
       - name: Icon service bidirectional (soft)
         continue-on-error: true
@@ -117,7 +116,7 @@ jobs:
       - name: Icon visual regression (soft)
         continue-on-error: true
         run: |
-          python scripts/icon_visual_regression.py --write-baseline || true
+          # Baseline frozen — never write-baseline in CI
           python scripts/icon_visual_regression.py || true
       - name: Normalize
         run: |
