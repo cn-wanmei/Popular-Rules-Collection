@@ -1,6 +1,6 @@
-"""Popular-Rules V3 — greenfield runtime.
+"""Popular-Rules V3 runtime — greenfield parallel engine.
 
-Hard rule: V3 must NOT import from scripts/ or V2 runtime modules.
-V2 is baseline/oracle only; data enters V3 via legacy_import from frozen snapshots.
+Product release: 1.0.0 (architecture V3 under src/v3/).
+Hard rule: do not import scripts/ at runtime.
 """
-__version__ = "3.0.0-dev"
+__version__ = "1.0.0"

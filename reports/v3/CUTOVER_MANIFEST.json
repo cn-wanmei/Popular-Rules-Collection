@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "schema": "cutover_manifest_v1",
+  "status": "RC_READY",
+  "production_cutover": false,
+  "v2_role": "legacy_oracle_until_cutover_approved",
+  "v3_outputs": "data/v3/",
+  "gates": {
+    "golden_l1_l7": true,
+    "differential_rules_match": true,
+    "canonical_rules": 251728,
+    "ir_rules": 251728,
+    "ir_scope": "full",
+    "clients": ["egern", "loon", "mihomo", "quantumultx", "shadowrocket", "singbox", "surge"]
+  },
+  "rollback": "Artifact rollback to last V2 generated/ release; do not rebuild from V3"
+}
