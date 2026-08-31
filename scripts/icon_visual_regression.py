@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-"""icon_visual_regression.py — color_ratio / mono detection for Icon Dataset.
-
-Soft gate: WARN on near-black official-colors, blank PNGs, or color_ratio regression.
-"""
+"""icon_visual_regression.py — color_ratio / mono detection for Icon Dataset."""
 from __future__ import annotations
 
 import argparse
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -123,6 +121,9 @@ def main() -> int:
             warn.append(f"{key}: visual regression color_ratio {old_cr}→{new_cr}")
 
     if args.write_baseline:
+        if os.environ.get("ALLOW_BASELINE_UPDATE", "") != "1":
+            print("[icon_visual] refuse --write-baseline without ALLOW_BASELINE_UPDATE=1 (Freeze baseline)")
+            return 1
         BASELINE.write_text(
             json.dumps(
                 {
