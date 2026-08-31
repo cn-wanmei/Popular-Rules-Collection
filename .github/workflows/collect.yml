@@ -116,23 +116,6 @@ jobs:
         run: python scripts/source_quarantine.py
       - name: V2.3 Gate failure injection
         run: python scripts/gate_failure_injection.py
-      - name: V2.5 Hierarchy validate
-        continue-on-error: true
-        run: python scripts/hierarchy_validate.py
-      - name: V2.5 Hierarchy resolve
-        continue-on-error: true
-        run: python scripts/resolve_hierarchy.py
-      - name: V2.5 Hierarchy golden L4/L5
-        continue-on-error: true
-        run: python scripts/hierarchy_golden.py
-      - name: P1 Universal IR
-        run: python scripts/build_universal_ir.py
-      - name: P1 Semantic dedup report
-        continue-on-error: true
-        run: python scripts/semantic_dedup.py
-      - name: P1 Growth anomaly
-        continue-on-error: true
-        run: python scripts/growth_anomaly.py
       - name: Normalize
         run: |
           if [ "${{ inputs.skip_large }}" = "true" ]; then
@@ -142,20 +125,32 @@ jobs:
           fi
       - run: python scripts/collect_ip.py
       - run: python scripts/deduplicate.py
+      - name: Hierarchy validate (HARD)
+        run: python scripts/hierarchy_validate.py
+      - name: Hierarchy resolve (post-normalize snapshot)
+        run: python scripts/resolve_hierarchy.py
+      - name: Hierarchy golden L4/L5 (HARD)
+        run: python scripts/hierarchy_golden.py
+      - name: Hierarchy coverage
+        continue-on-error: true
+        run: python scripts/hierarchy_coverage.py
+      - name: Universal IR (post-hierarchy snapshot)
+        run: python scripts/build_universal_ir.py
+      - name: Semantic dedup report
+        continue-on-error: true
+        run: python scripts/semantic_dedup.py
+      - name: Growth anomaly
+        continue-on-error: true
+        run: python scripts/growth_anomaly.py
       - run: python scripts/conflict_detector.py
         continue-on-error: true
       - run: python scripts/provenance.py
-      - run: python scripts/build_mihomo.py
+      - name: Build clients (builder_registry via pipeline)
+        run: python scripts/pipeline.py build
       - name: V2.4 Mihomo IR pilot
         run: python scripts/build_mihomo_ir.py
       - name: V2.4 Mihomo IR golden
         run: python scripts/mihomo_ir_golden.py
-      - run: python scripts/build_singbox.py
-      - run: python scripts/build_surge.py
-      - run: python scripts/build_shadowrocket.py
-      - run: python scripts/build_quantumultx.py
-      - run: python scripts/build_egern.py
-      - run: python scripts/build_loon.py
       - name: P1 Artifact provenance
         run: python scripts/attach_artifact_provenance.py
       - name: P1 Cross-client semantic (sample)
