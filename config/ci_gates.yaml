@@ -1,0 +1,27 @@
+version: 1
+updated: "2026-08-31"
+hard:
+  - validate_registry
+  - schema_validate
+  - validate
+  - builder_validate
+  - dataset_quality
+  - routing_contract_validate
+  - routing_emit
+  - icon_qa
+  - size_gate
+  - profile_validate
+soft:
+  - conflict_detector
+  - semantic_dedup
+  - growth_anomaly
+  - coverage_matrix
+  - icon_coverage
+  - identity_validate
+  - quality_validate
+  - statistics
+info:
+  - generate_docs
+  - generate_links
+  - service_score
+  - release_snapshot
