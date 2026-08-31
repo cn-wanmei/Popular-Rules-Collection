@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-"""Refresh brand SVGs from Simple Icons — fix wrong project-redraw identities."""
+"""Refresh brand SVGs from Simple Icons — identity only (Final Freeze: no force_fill)."""
 from __future__ import annotations
 
-import re
 import urllib.request
 from pathlib import Path
 
@@ -121,11 +120,6 @@ COLORS = {
     "youtubemusic": "FF0000", "oppo": "1A472A", "vivo": "415FFF",
 }
 
-OFFICIAL_BLACK = {
-    "apple", "github", "x", "twitter", "notion", "vercel", "steam", "uber",
-    "threads", "tidal", "hbo", "epic", "wikipedia", "tiktok", "douyin",
-}
-
 
 def fetch_si(slug: str):
     for ver in ("11.14.0", "9.21.0"):
@@ -136,20 +130,6 @@ def fetch_si(slug: str):
         except Exception:
             continue
     return None
-
-
-def force_fill(svg: str, hex_color: str) -> str:
-    c = hex_color if hex_color.startswith("#") else f"#{hex_color}"
-    fills = re.findall(r'fill="(#[0-9A-Fa-f]{3,8})"', svg)
-    distinct = {f.upper() for f in fills if f.upper() not in ("#000", "#000000", "#FFF", "#FFFFFF")}
-    if len(distinct) >= 2:
-        return svg
-    out = re.sub(r'\sfill="[^"]*"', "", svg)
-    out = re.sub(r"\sfill='[^']*'", "", out)
-    out = re.sub(r"<svg\b", f'<svg fill="{c}"', out, count=1)
-    for tag in ("path", "circle", "polygon", "rect"):
-        out = re.sub(rf"<{tag}\b", f'<{tag} fill="{c}"', out)
-    return out
 
 
 def main() -> int:
@@ -168,22 +148,31 @@ def main() -> int:
             print(f"  SKIP {key}")
             continue
         hexc = COLORS.get(key, "000000")
-        svg = force_fill(svg, hexc)
+        # Final Freeze: source is identity only — do NOT force_fill display colors into source
         (SRC / f"{key}.svg").write_text(svg, encoding="utf-8")
         meta = icons.get(key) or {"name": key.title(), "type": "service", "icon_key": key}
         meta.setdefault("source", {})
         meta["source"].update(
-            {"provider": "simple-icons", "slug": used, "provenance": "third_party", "type": "simple-icons"}
+            {
+                "provider": "simple-icons",
+                "slug": used,
+                "provenance": "third_party",
+                "type": "simple-icons",
+                "color": f"#{hexc}",
+            }
         )
-        meta.setdefault("brand", {})["color"] = f"#{hexc}"
-        meta["brand"]["color_source"] = "simple-icons"
-        meta.setdefault("visual", {})["approved_mono"] = key in OFFICIAL_BLACK
+        brand = meta.setdefault("brand", {})
+        brand["source_color"] = f"#{hexc}"
+        if not brand.get("display_color"):
+            brand["color"] = f"#{hexc}"
+        brand["color_source"] = "simple-icons-identity"
+        meta.setdefault("visual", {})["approved_mono"] = False
         meta.setdefault("files", {})["svg"] = f"source/{key}.svg"
         icons[key] = meta
         n += 1
     man["icons"] = icons
     MAN.write_text(yaml.dump(man, allow_unicode=True, sort_keys=False, width=100), encoding="utf-8")
-    print(f"[identity_si_refresh] replaced={n}")
+    print(f"[identity_si_refresh] replaced={n} (identity only, no force_fill)")
     return 0
 
 
