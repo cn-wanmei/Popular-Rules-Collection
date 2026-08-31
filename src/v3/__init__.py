@@ -1,6 +1,3 @@
-"""Popular-Rules V3 runtime — greenfield parallel engine.
-
-Product release: 1.0.0 (architecture V3 under src/v3/).
-Hard rule: do not import scripts/ at runtime.
-"""
-__version__ = "1.0.0"
+"""Deprecated. Use ``src.engine``."""
+from src.engine import *  # noqa: F403
+from src.engine import __version__, __engine__

@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "status": "RC_READY",
+  "rc_announced": true,
+  "production_cutover": true,
+  "engine_codename": "v3",
+  "engine_outputs": "data/generated/",
+  "production_tree": "generated/"
+}

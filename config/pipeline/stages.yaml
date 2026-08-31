@@ -1,0 +1,14 @@
+version: 1
+product_version: "1.0.0"
+stages:
+  - canonical
+  - hierarchy
+  - ir
+  - ir_full
+  - adapters
+  - diff
+  - snapshot
+  - quarantine
+  - golden
+  - release
+  - publish
