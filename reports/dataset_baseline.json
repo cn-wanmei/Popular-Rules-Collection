@@ -228,26 +228,74 @@
     "database/policies/direct/manifest.yaml": {
       "kind": "policy",
       "path": "database/policies/direct/manifest.yaml",
-      "count": 17,
-      "sha256": "a68e3977090289a1fd3a6d25822ae2ae9c3bb76205227a7bf382dc16e8d4e459",
-      "bytes": 471,
-      "lines_sample_hash": "b0d8932105989f1ac42c8a30f11d87dd342051579bd0edeb741e2721d7dad132"
+      "count": 27,
+      "sha256": "708c0ed975837cbb5f7c14f30bf3265651555344331d319662fafb29a27d3228",
+      "bytes": 652,
+      "lines_sample_hash": "3aa568e8d4824a74c52ae38335008ad6893d6808b8850126e12c41e7c54a88e9"
     },
     "database/policies/dns/servers.yaml": {
       "kind": "policy",
       "path": "database/policies/dns/servers.yaml",
-      "count": 39,
-      "sha256": "5582f62b6a3b6d7832d5dcd938da69b4405491dd9b13635fe18fa827d2973fa7",
-      "bytes": 1101,
-      "lines_sample_hash": "de98813a6677a308ad769efca695a140bfaadc791bdb62c0c1799ad8c6ae4f7b"
+      "count": 43,
+      "sha256": "0de8ce9e93b9e6a1e947cc531f0b0121098cbc50af0d912f18780d6dde24cd9c",
+      "bytes": 1276,
+      "lines_sample_hash": "e149c0821079f56719d18b52afb254a2f5a7178ebaf762ef4806fa474ff4f46c"
+    },
+    "database/policies/overrides/force_direct.yaml": {
+      "kind": "policy",
+      "path": "database/policies/overrides/force_direct.yaml",
+      "count": 4,
+      "sha256": "2a9440d5337ed574a2ee2dd1c505feb0126b92c30b1f8809a5f982d45ebb7cd3",
+      "bytes": 161,
+      "lines_sample_hash": "6ae0371e08056e338be6875e3f381e9ec3ed40795d67cc41770197127ea2a9c1"
+    },
+    "database/policies/overrides/force_proxy.yaml": {
+      "kind": "policy",
+      "path": "database/policies/overrides/force_proxy.yaml",
+      "count": 4,
+      "sha256": "058c809a8c3f4c069ff3ca3e068706c61de78110711eeae5d9921edce88ac784",
+      "bytes": 156,
+      "lines_sample_hash": "208d420b1146f29bfc795ad46dc655053b57655c3973dbf3b4b74903e0d2bbfd"
+    },
+    "database/policies/overrides/force_reject.yaml": {
+      "kind": "policy",
+      "path": "database/policies/overrides/force_reject.yaml",
+      "count": 4,
+      "sha256": "ac7966f70f291360b3494dd5b44a254399e29ff5e2d068801f4adcd28ff2bca4",
+      "bytes": 131,
+      "lines_sample_hash": "68e8619067614a9ee6ceb5c206b62de428633be159ed738f31e68df9ac1c0c33"
+    },
+    "database/policies/overrides/manifest.yaml": {
+      "kind": "policy",
+      "path": "database/policies/overrides/manifest.yaml",
+      "count": 10,
+      "sha256": "d2bcb4d44a0408d8143c96e1f581fe48c4f08da0cf17c1abdc1c270ed16f0e6d",
+      "bytes": 329,
+      "lines_sample_hash": "933bbb36a0db8d62f6cf4e3bb56fa774547467d5d5911372cc9b5650925a0d5f"
     },
     "database/policies/proxy/manifest.yaml": {
       "kind": "policy",
       "path": "database/policies/proxy/manifest.yaml",
-      "count": 8,
-      "sha256": "7a39d9387340b889e01dde35b770bf3112c01e6fecaa98c141689e4b6029f8f4",
-      "bytes": 227,
-      "lines_sample_hash": "dd3c8c49a7e9e77fd4f8faa552614e6ff06deae95509e477df859a5a83a5726c"
+      "count": 12,
+      "sha256": "60319457a4778d986a28fb23b6b4fb7e103d4d296149607def9beb160cc6c713",
+      "bytes": 291,
+      "lines_sample_hash": "97fad4171946a38e09ecbc2441f30667f32c964b06629beb7b1eb1a02b369b84"
+    },
+    "database/policies/reject/manifest.yaml": {
+      "kind": "policy",
+      "path": "database/policies/reject/manifest.yaml",
+      "count": 16,
+      "sha256": "a3d5dcd799dd8c28262b6bff0ca4666822a8ca03cc93efa8279af4e9f18b01e0",
+      "bytes": 436,
+      "lines_sample_hash": "ca80250290fca85f59953ab671a5840111591564cfc306cae9846efc63b5974b"
+    },
+    "database/policies/reject/security.yaml": {
+      "kind": "policy",
+      "path": "database/policies/reject/security.yaml",
+      "count": 9,
+      "sha256": "aa8bdc819496a6cc80f4650a09d7d3bc91519dd486a1f94252bcae2552777158",
+      "bytes": 207,
+      "lines_sample_hash": "7959edfc19ae615ddc85bd6958713bd977fce8ad75dfd0988d2d74cc145be2d6"
     },
     "database/ips/adblock.txt": {
       "kind": "ip_sidecar",

@@ -1,7 +1,7 @@
 {
   "date": "2026-08-31",
   "compared_to": "2026-08-31",
-  "dataset_count": 68,
+  "dataset_count": 74,
   "diffs": {
     "database/network/dns.txt": {
       "old_count": 18,
@@ -313,36 +313,102 @@
     },
     "database/policies/direct/manifest.yaml": {
       "old_count": 17,
-      "new_count": 17,
-      "added": 0,
+      "new_count": 27,
+      "added": 10,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
-      "growth_ratio": 0.0,
-      "sha_changed": false,
-      "status": "unchanged"
+      "growth_ratio": 0.5882,
+      "sha_changed": true,
+      "status": "updated"
     },
     "database/policies/dns/servers.yaml": {
       "old_count": 39,
-      "new_count": 39,
-      "added": 0,
+      "new_count": 43,
+      "added": 4,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.1026,
+      "sha_changed": true,
+      "status": "updated"
+    },
+    "database/policies/overrides/force_direct.yaml": {
+      "old_count": 0,
+      "new_count": 4,
+      "added": 4,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": false,
-      "status": "unchanged"
+      "sha_changed": true,
+      "status": "new"
+    },
+    "database/policies/overrides/force_proxy.yaml": {
+      "old_count": 0,
+      "new_count": 4,
+      "added": 4,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
+    },
+    "database/policies/overrides/force_reject.yaml": {
+      "old_count": 0,
+      "new_count": 4,
+      "added": 4,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
+    },
+    "database/policies/overrides/manifest.yaml": {
+      "old_count": 0,
+      "new_count": 10,
+      "added": 10,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
     },
     "database/policies/proxy/manifest.yaml": {
       "old_count": 8,
-      "new_count": 8,
-      "added": 0,
+      "new_count": 12,
+      "added": 4,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.5,
+      "sha_changed": true,
+      "status": "updated"
+    },
+    "database/policies/reject/manifest.yaml": {
+      "old_count": 0,
+      "new_count": 16,
+      "added": 16,
       "removed": 0,
       "changed": 0,
       "shrink_ratio": 0.0,
       "growth_ratio": 0.0,
-      "sha_changed": false,
-      "status": "unchanged"
+      "sha_changed": true,
+      "status": "new"
+    },
+    "database/policies/reject/security.yaml": {
+      "old_count": 0,
+      "new_count": 9,
+      "added": 9,
+      "removed": 0,
+      "changed": 0,
+      "shrink_ratio": 0.0,
+      "growth_ratio": 0.0,
+      "sha_changed": true,
+      "status": "new"
     },
     "database/ips/adblock.txt": {
       "old_count": 47,

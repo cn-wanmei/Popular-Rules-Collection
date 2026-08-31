@@ -36,7 +36,7 @@ icons:
       verified: true
     files:
       svg: source/direct.svg
-      png: &id001
+      png:
         '64': png/64/direct.png
         '128': png/128/direct.png
         '256': png/256/direct.png
@@ -76,7 +76,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/direct.svg
-        png: *id001
+        png:
+          '64': png/64/direct.png
+          '128': png/128/direct.png
+          '256': png/256/direct.png
       mono:
         status: optional
         color_mode: monochrome
@@ -93,7 +96,7 @@ icons:
       verified: true
     files:
       svg: source/proxy.svg
-      png: &id002
+      png:
         '64': png/64/proxy.png
         '128': png/128/proxy.png
         '256': png/256/proxy.png
@@ -133,7 +136,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/proxy.svg
-        png: *id002
+        png:
+          '64': png/64/proxy.png
+          '128': png/128/proxy.png
+          '256': png/256/proxy.png
       mono:
         status: optional
         color_mode: monochrome
@@ -150,7 +156,7 @@ icons:
       verified: true
     files:
       svg: source/reject.svg
-      png: &id003
+      png:
         '64': png/64/reject.png
         '128': png/128/reject.png
         '256': png/256/reject.png
@@ -190,7 +196,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/reject.svg
-        png: *id003
+        png:
+          '64': png/64/reject.png
+          '128': png/128/reject.png
+          '256': png/256/reject.png
       mono:
         status: optional
         color_mode: monochrome
@@ -207,7 +216,7 @@ icons:
       verified: true
     files:
       svg: source/dns.svg
-      png: &id004
+      png:
         '64': png/64/dns.png
         '128': png/128/dns.png
         '256': png/256/dns.png
@@ -247,7 +256,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/dns.svg
-        png: *id004
+        png:
+          '64': png/64/dns.png
+          '128': png/128/dns.png
+          '256': png/256/dns.png
       mono:
         status: optional
         color_mode: monochrome
@@ -264,7 +276,7 @@ icons:
       verified: true
     files:
       svg: source/lan.svg
-      png: &id005
+      png:
         '64': png/64/lan.png
         '128': png/128/lan.png
         '256': png/256/lan.png
@@ -304,7 +316,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/lan.svg
-        png: *id005
+        png:
+          '64': png/64/lan.png
+          '128': png/128/lan.png
+          '256': png/256/lan.png
       mono:
         status: optional
         color_mode: monochrome
@@ -322,7 +337,7 @@ icons:
       type: geometric
     files:
       svg: source/china.svg
-      png: &id006
+      png: &id001
         '64': png/64/china.png
         '128': png/128/china.png
         '256': png/256/china.png
@@ -361,7 +376,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/china.svg
-        png: *id006
+        png: *id001
       mono:
         status: optional
         color_mode: monochrome
@@ -379,7 +394,7 @@ icons:
       verified: true
     files:
       svg: source/geoip.svg
-      png: &id007
+      png:
         '64': png/64/geoip.png
         '128': png/128/geoip.png
         '256': png/256/geoip.png
@@ -419,7 +434,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/geoip.svg
-        png: *id007
+        png:
+          '64': png/64/geoip.png
+          '128': png/128/geoip.png
+          '256': png/256/geoip.png
       mono:
         status: optional
         color_mode: monochrome
@@ -436,7 +454,7 @@ icons:
       verified: true
     files:
       svg: source/geosite.svg
-      png: &id008
+      png:
         '64': png/64/geosite.png
         '128': png/128/geosite.png
         '256': png/256/geosite.png
@@ -476,7 +494,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/geosite.svg
-        png: *id008
+        png:
+          '64': png/64/geosite.png
+          '128': png/128/geosite.png
+          '256': png/256/geosite.png
       mono:
         status: optional
         color_mode: monochrome
@@ -493,7 +514,7 @@ icons:
       verified: true
     files:
       svg: source/asn.svg
-      png: &id009
+      png:
         '64': png/64/asn.png
         '128': png/128/asn.png
         '256': png/256/asn.png
@@ -533,7 +554,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/asn.svg
-        png: *id009
+        png:
+          '64': png/64/asn.png
+          '128': png/128/asn.png
+          '256': png/256/asn.png
       mono:
         status: optional
         color_mode: monochrome
@@ -550,7 +574,7 @@ icons:
       verified: true
     files:
       svg: source/placeholder.svg
-      png: &id010
+      png:
         '64': png/64/placeholder.png
         '128': png/128/placeholder.png
         '256': png/256/placeholder.png
@@ -590,7 +614,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/placeholder.svg
-        png: *id010
+        png:
+          '64': png/64/placeholder.png
+          '128': png/128/placeholder.png
+          '256': png/256/placeholder.png
       mono:
         status: optional
         color_mode: monochrome
@@ -824,7 +851,7 @@ icons:
       type: simple-icons
     files:
       svg: source/airbnb.svg
-      png: &id011
+      png:
         '64': png/64/airbnb.png
         '128': png/128/airbnb.png
         '256': png/256/airbnb.png
@@ -870,7 +897,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/airbnb.svg
-        png: *id011
+        png:
+          '64': png/64/airbnb.png
+          '128': png/128/airbnb.png
+          '256': png/256/airbnb.png
       mono:
         status: optional
         color_mode: monochrome
@@ -1101,7 +1131,7 @@ icons:
       type: simple-icons
     files:
       svg: source/applemusic.svg
-      png: &id012
+      png:
         '64': png/64/applemusic.png
         '128': png/128/applemusic.png
         '256': png/256/applemusic.png
@@ -1147,7 +1177,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/applemusic.svg
-        png: *id012
+        png:
+          '64': png/64/applemusic.png
+          '128': png/128/applemusic.png
+          '256': png/256/applemusic.png
       mono:
         status: optional
         color_mode: monochrome
@@ -1165,7 +1198,7 @@ icons:
       type: simple-icons
     files:
       svg: source/appletv.svg
-      png: &id013
+      png: &id002
         '64': png/64/appletv.png
         '128': png/128/appletv.png
         '256': png/256/appletv.png
@@ -1210,7 +1243,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/appletv.svg
-        png: *id013
+        png: *id002
       mono:
         status: optional
         color_mode: monochrome
@@ -2194,7 +2227,7 @@ icons:
       type: simple-icons
     files:
       svg: source/dropbox.svg
-      png: &id014
+      png:
         '64': png/64/dropbox.png
         '128': png/128/dropbox.png
         '256': png/256/dropbox.png
@@ -2240,7 +2273,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/dropbox.svg
-        png: *id014
+        png:
+          '64': png/64/dropbox.png
+          '128': png/128/dropbox.png
+          '256': png/256/dropbox.png
       mono:
         status: optional
         color_mode: monochrome
@@ -2414,7 +2450,7 @@ icons:
       type: simple-icons
     files:
       svg: source/emby.svg
-      png: &id015
+      png: &id003
         '64': png/64/emby.png
         '128': png/128/emby.png
         '256': png/256/emby.png
@@ -2459,7 +2495,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/emby.svg
-        png: *id015
+        png: *id003
       mono:
         status: optional
         color_mode: monochrome
@@ -2480,7 +2516,7 @@ icons:
       type: simple-icons
     files:
       svg: source/epic.svg
-      png: &id016
+      png:
         '64': png/64/epic.png
         '128': png/128/epic.png
         '256': png/256/epic.png
@@ -2526,7 +2562,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/epic.svg
-        png: *id016
+        png:
+          '64': png/64/epic.png
+          '128': png/128/epic.png
+          '256': png/256/epic.png
       mono:
         status: optional
         color_mode: monochrome
@@ -2620,7 +2659,7 @@ icons:
       type: simple-icons
     files:
       svg: source/figma.svg
-      png: &id017
+      png:
         '64': png/64/figma.png
         '128': png/128/figma.png
         '256': png/256/figma.png
@@ -2666,7 +2705,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/figma.svg
-        png: *id017
+        png:
+          '64': png/64/figma.png
+          '128': png/128/figma.png
+          '256': png/256/figma.png
       mono:
         status: optional
         color_mode: monochrome
@@ -2687,7 +2729,7 @@ icons:
       type: simple-icons
     files:
       svg: source/firebase.svg
-      png: &id018
+      png:
         '64': png/64/firebase.png
         '128': png/128/firebase.png
         '256': png/256/firebase.png
@@ -2733,7 +2775,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/firebase.svg
-        png: *id018
+        png:
+          '64': png/64/firebase.png
+          '128': png/128/firebase.png
+          '256': png/256/firebase.png
       mono:
         status: optional
         color_mode: monochrome
@@ -2824,7 +2869,7 @@ icons:
       type: simple-icons
     files:
       svg: source/gitlab.svg
-      png: &id019
+      png:
         '64': png/64/gitlab.png
         '128': png/128/gitlab.png
         '256': png/256/gitlab.png
@@ -2870,7 +2915,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/gitlab.svg
-        png: *id019
+        png:
+          '64': png/64/gitlab.png
+          '128': png/128/gitlab.png
+          '256': png/256/gitlab.png
       mono:
         status: optional
         color_mode: monochrome
@@ -3187,7 +3235,7 @@ icons:
       type: simple-icons
     files:
       svg: source/icloud.svg
-      png: &id020
+      png:
         '64': png/64/icloud.png
         '128': png/128/icloud.png
         '256': png/256/icloud.png
@@ -3233,7 +3281,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/icloud.svg
-        png: *id020
+        png:
+          '64': png/64/icloud.png
+          '128': png/128/icloud.png
+          '256': png/256/icloud.png
       mono:
         status: optional
         color_mode: monochrome
@@ -3406,7 +3457,7 @@ icons:
       type: simple-icons
     files:
       svg: source/kakaotalk.svg
-      png: &id021
+      png: &id004
         '64': png/64/kakaotalk.png
         '128': png/128/kakaotalk.png
         '256': png/256/kakaotalk.png
@@ -3451,7 +3502,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/kakaotalk.svg
-        png: *id021
+        png: *id004
       mono:
         status: optional
         color_mode: monochrome
@@ -3472,7 +3523,7 @@ icons:
       type: simple-icons
     files:
       svg: source/line.svg
-      png: &id022
+      png:
         '64': png/64/line.png
         '128': png/128/line.png
         '256': png/256/line.png
@@ -3518,7 +3569,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/line.svg
-        png: *id022
+        png:
+          '64': png/64/line.png
+          '128': png/128/line.png
+          '256': png/256/line.png
       mono:
         status: optional
         color_mode: monochrome
@@ -3609,7 +3663,7 @@ icons:
       type: simple-icons
     files:
       svg: source/messenger.svg
-      png: &id023
+      png:
         '64': png/64/messenger.png
         '128': png/128/messenger.png
         '256': png/256/messenger.png
@@ -3655,7 +3709,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/messenger.svg
-        png: *id023
+        png:
+          '64': png/64/messenger.png
+          '128': png/128/messenger.png
+          '256': png/256/messenger.png
       mono:
         status: optional
         color_mode: monochrome
@@ -3673,7 +3730,7 @@ icons:
       type: simple-icons
     files:
       svg: source/naver.svg
-      png: &id024
+      png: &id005
         '64': png/64/naver.png
         '128': png/128/naver.png
         '256': png/256/naver.png
@@ -3718,7 +3775,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/naver.svg
-        png: *id024
+        png: *id005
       mono:
         status: optional
         color_mode: monochrome
@@ -3887,7 +3944,7 @@ icons:
       type: simple-icons
     files:
       svg: source/notion.svg
-      png: &id025
+      png:
         '64': png/64/notion.png
         '128': png/128/notion.png
         '256': png/256/notion.png
@@ -3933,7 +3990,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/notion.svg
-        png: *id025
+        png:
+          '64': png/64/notion.png
+          '128': png/128/notion.png
+          '256': png/256/notion.png
       mono:
         status: optional
         color_mode: monochrome
@@ -4029,7 +4089,7 @@ icons:
       type: simple-icons
     files:
       svg: source/oppo.svg
-      png: &id026
+      png: &id006
         '64': png/64/oppo.png
         '128': png/128/oppo.png
         '256': png/256/oppo.png
@@ -4074,7 +4134,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/oppo.svg
-        png: *id026
+        png: *id006
       mono:
         status: optional
         color_mode: monochrome
@@ -4169,7 +4229,7 @@ icons:
       type: simple-icons
     files:
       svg: source/paypal.svg
-      png: &id027
+      png:
         '64': png/64/paypal.png
         '128': png/128/paypal.png
         '256': png/256/paypal.png
@@ -4215,7 +4275,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/paypal.svg
-        png: *id027
+        png:
+          '64': png/64/paypal.png
+          '128': png/128/paypal.png
+          '256': png/256/paypal.png
       mono:
         status: optional
         color_mode: monochrome
@@ -4303,7 +4366,7 @@ icons:
       type: simple-icons
     files:
       svg: source/pinterest.svg
-      png: &id028
+      png: &id007
         '64': png/64/pinterest.png
         '128': png/128/pinterest.png
         '256': png/256/pinterest.png
@@ -4348,7 +4411,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/pinterest.svg
-        png: *id028
+        png: *id007
       mono:
         status: optional
         color_mode: monochrome
@@ -4595,7 +4658,7 @@ icons:
       type: simple-icons
     files:
       svg: source/rockstar.svg
-      png: &id029
+      png: &id008
         '64': png/64/rockstar.png
         '128': png/128/rockstar.png
         '256': png/256/rockstar.png
@@ -4640,7 +4703,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/rockstar.svg
-        png: *id029
+        png: *id008
       mono:
         status: optional
         color_mode: monochrome
@@ -4661,7 +4724,7 @@ icons:
       type: simple-icons
     files:
       svg: source/shopify.svg
-      png: &id030
+      png:
         '64': png/64/shopify.png
         '128': png/128/shopify.png
         '256': png/256/shopify.png
@@ -4707,7 +4770,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/shopify.svg
-        png: *id030
+        png:
+          '64': png/64/shopify.png
+          '128': png/128/shopify.png
+          '256': png/256/shopify.png
       mono:
         status: optional
         color_mode: monochrome
@@ -4728,7 +4794,7 @@ icons:
       type: simple-icons
     files:
       svg: source/signal.svg
-      png: &id031
+      png:
         '64': png/64/signal.png
         '128': png/128/signal.png
         '256': png/256/signal.png
@@ -4774,7 +4840,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/signal.svg
-        png: *id031
+        png:
+          '64': png/64/signal.png
+          '128': png/128/signal.png
+          '256': png/256/signal.png
       mono:
         status: optional
         color_mode: monochrome
@@ -4874,7 +4943,7 @@ icons:
       type: simple-icons
     files:
       svg: source/snapchat.svg
-      png: &id032
+      png: &id009
         '64': png/64/snapchat.png
         '128': png/128/snapchat.png
         '256': png/256/snapchat.png
@@ -4919,7 +4988,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/snapchat.svg
-        png: *id032
+        png: *id009
       mono:
         status: optional
         color_mode: monochrome
@@ -5015,7 +5084,7 @@ icons:
       type: simple-icons
     files:
       svg: source/speedtest.svg
-      png: &id033
+      png: &id010
         '64': png/64/speedtest.png
         '128': png/128/speedtest.png
         '256': png/256/speedtest.png
@@ -5060,7 +5129,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/speedtest.svg
-        png: *id033
+        png: *id010
       mono:
         status: optional
         color_mode: monochrome
@@ -5151,7 +5220,7 @@ icons:
       type: simple-icons
     files:
       svg: source/steam.svg
-      png: &id034
+      png:
         '64': png/64/steam.png
         '128': png/128/steam.png
         '256': png/256/steam.png
@@ -5197,7 +5266,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/steam.svg
-        png: *id034
+        png:
+          '64': png/64/steam.png
+          '128': png/128/steam.png
+          '256': png/256/steam.png
       mono:
         status: optional
         color_mode: monochrome
@@ -5218,7 +5290,7 @@ icons:
       type: simple-icons
     files:
       svg: source/stripe.svg
-      png: &id035
+      png:
         '64': png/64/stripe.png
         '128': png/128/stripe.png
         '256': png/256/stripe.png
@@ -5264,7 +5336,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/stripe.svg
-        png: *id035
+        png:
+          '64': png/64/stripe.png
+          '128': png/128/stripe.png
+          '256': png/256/stripe.png
       mono:
         status: optional
         color_mode: monochrome
@@ -5358,7 +5433,7 @@ icons:
       type: simple-icons
     files:
       svg: source/threads.svg
-      png: &id036
+      png:
         '64': png/64/threads.png
         '128': png/128/threads.png
         '256': png/256/threads.png
@@ -5404,7 +5479,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/threads.svg
-        png: *id036
+        png:
+          '64': png/64/threads.png
+          '128': png/128/threads.png
+          '256': png/256/threads.png
       mono:
         status: optional
         color_mode: monochrome
@@ -5808,7 +5886,7 @@ icons:
       type: simple-icons
     files:
       svg: source/uber.svg
-      png: &id037
+      png:
         '64': png/64/uber.png
         '128': png/128/uber.png
         '256': png/256/uber.png
@@ -5854,7 +5932,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/uber.svg
-        png: *id037
+        png:
+          '64': png/64/uber.png
+          '128': png/128/uber.png
+          '256': png/256/uber.png
       mono:
         status: optional
         color_mode: monochrome
@@ -5953,7 +6034,7 @@ icons:
       type: simple-icons
     files:
       svg: source/vercel.svg
-      png: &id038
+      png:
         '64': png/64/vercel.png
         '128': png/128/vercel.png
         '256': png/256/vercel.png
@@ -5999,7 +6080,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/vercel.svg
-        png: *id038
+        png:
+          '64': png/64/vercel.png
+          '128': png/128/vercel.png
+          '256': png/256/vercel.png
       mono:
         status: optional
         color_mode: monochrome
@@ -6095,7 +6179,7 @@ icons:
       type: simple-icons
     files:
       svg: source/vivo.svg
-      png: &id039
+      png: &id011
         '64': png/64/vivo.png
         '128': png/128/vivo.png
         '256': png/256/vivo.png
@@ -6140,7 +6224,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/vivo.svg
-        png: *id039
+        png: *id011
       mono:
         status: optional
         color_mode: monochrome
@@ -6679,7 +6763,7 @@ icons:
       type: simple-icons
     files:
       svg: source/youtubemusic.svg
-      png: &id040
+      png: &id012
         '64': png/64/youtubemusic.png
         '128': png/128/youtubemusic.png
         '256': png/256/youtubemusic.png
@@ -6724,7 +6808,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/youtubemusic.svg
-        png: *id040
+        png: *id012
       mono:
         status: optional
         color_mode: monochrome
@@ -6815,7 +6899,7 @@ icons:
       type: simple-icons
     files:
       svg: source/zoom.svg
-      png: &id041
+      png:
         '64': png/64/zoom.png
         '128': png/128/zoom.png
         '256': png/256/zoom.png
@@ -6861,7 +6945,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/zoom.svg
-        png: *id041
+        png:
+          '64': png/64/zoom.png
+          '128': png/128/zoom.png
+          '256': png/256/zoom.png
       mono:
         status: optional
         color_mode: monochrome
@@ -7153,7 +7240,7 @@ icons:
       verified: true
     files:
       svg: source/adblock.svg
-      png: &id042
+      png:
         '64': png/64/adblock.png
         '128': png/128/adblock.png
         '256': png/256/adblock.png
@@ -7193,7 +7280,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/adblock.svg
-        png: *id042
+        png:
+          '64': png/64/adblock.png
+          '128': png/128/adblock.png
+          '256': png/256/adblock.png
       mono:
         status: optional
         color_mode: monochrome
@@ -7211,7 +7301,7 @@ icons:
       type: geometric
     files:
       svg: source/chinamobile.svg
-      png: &id043
+      png: &id013
         '64': png/64/chinamobile.png
         '128': png/128/chinamobile.png
         '256': png/256/chinamobile.png
@@ -7250,7 +7340,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/chinamobile.svg
-        png: *id043
+        png: *id013
       mono:
         status: optional
         color_mode: monochrome
@@ -7269,7 +7359,7 @@ icons:
       type: geometric
     files:
       svg: source/chinatelecom.svg
-      png: &id044
+      png: &id014
         '64': png/64/chinatelecom.png
         '128': png/128/chinatelecom.png
         '256': png/256/chinatelecom.png
@@ -7308,7 +7398,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/chinatelecom.svg
-        png: *id044
+        png: *id014
       mono:
         status: optional
         color_mode: monochrome
@@ -7327,7 +7417,7 @@ icons:
       type: geometric
     files:
       svg: source/chinaunicom.svg
-      png: &id045
+      png: &id015
         '64': png/64/chinaunicom.png
         '128': png/128/chinaunicom.png
         '256': png/256/chinaunicom.png
@@ -7366,7 +7456,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/chinaunicom.svg
-        png: *id045
+        png: *id015
       mono:
         status: optional
         color_mode: monochrome
@@ -7384,7 +7474,7 @@ icons:
       verified: true
     files:
       svg: source/gfw.svg
-      png: &id046
+      png:
         '64': png/64/gfw.png
         '128': png/128/gfw.png
         '256': png/256/gfw.png
@@ -7424,7 +7514,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/gfw.svg
-        png: *id046
+        png:
+          '64': png/64/gfw.png
+          '128': png/128/gfw.png
+          '256': png/256/gfw.png
       mono:
         status: optional
         color_mode: monochrome
@@ -7441,7 +7534,7 @@ icons:
       verified: true
     files:
       svg: source/private.svg
-      png: &id047
+      png:
         '64': png/64/private.png
         '128': png/128/private.png
         '256': png/256/private.png
@@ -7481,7 +7574,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/private.svg
-        png: *id047
+        png:
+          '64': png/64/private.png
+          '128': png/128/private.png
+          '256': png/256/private.png
       mono:
         status: optional
         color_mode: monochrome
@@ -7498,7 +7594,7 @@ icons:
       verified: true
     files:
       svg: source/stun.svg
-      png: &id048
+      png:
         '64': png/64/stun.png
         '128': png/128/stun.png
         '256': png/256/stun.png
@@ -7538,7 +7634,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/stun.svg
-        png: *id048
+        png:
+          '64': png/64/stun.png
+          '128': png/128/stun.png
+          '256': png/256/stun.png
       mono:
         status: optional
         color_mode: monochrome
@@ -7555,7 +7654,7 @@ icons:
       verified: true
     files:
       svg: source/global.svg
-      png: &id049
+      png:
         '64': png/64/global.png
         '128': png/128/global.png
         '256': png/256/global.png
@@ -7595,7 +7694,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/global.svg
-        png: *id049
+        png:
+          '64': png/64/global.png
+          '128': png/128/global.png
+          '256': png/256/global.png
       mono:
         status: optional
         color_mode: monochrome
@@ -7612,7 +7714,7 @@ icons:
       verified: true
     files:
       svg: source/network.svg
-      png: &id050
+      png:
         '64': png/64/network.png
         '128': png/128/network.png
         '256': png/256/network.png
@@ -7652,7 +7754,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/network.svg
-        png: *id050
+        png:
+          '64': png/64/network.png
+          '128': png/128/network.png
+          '256': png/256/network.png
       mono:
         status: optional
         color_mode: monochrome
@@ -7966,7 +8071,7 @@ icons:
       type: simple-icons
     files:
       svg: source/adobe.svg
-      png: &id051
+      png:
         '64': png/64/adobe.png
         '128': png/128/adobe.png
         '256': png/256/adobe.png
@@ -8012,7 +8117,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/adobe.svg
-        png: *id051
+        png:
+          '64': png/64/adobe.png
+          '128': png/128/adobe.png
+          '256': png/256/adobe.png
       mono:
         status: optional
         color_mode: monochrome
@@ -8033,7 +8141,7 @@ icons:
       type: simple-icons
     files:
       svg: source/amazon.svg
-      png: &id052
+      png:
         '64': png/64/amazon.png
         '128': png/128/amazon.png
         '256': png/256/amazon.png
@@ -8079,7 +8187,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/amazon.svg
-        png: *id052
+        png:
+          '64': png/64/amazon.png
+          '128': png/128/amazon.png
+          '256': png/256/amazon.png
       mono:
         status: optional
         color_mode: monochrome
@@ -8099,7 +8210,7 @@ icons:
       type: simple-icons
     files:
       svg: source/aws.svg
-      png: &id053
+      png:
         '64': png/64/aws.png
         '128': png/128/aws.png
         '256': png/256/aws.png
@@ -8145,7 +8256,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/aws.svg
-        png: *id053
+        png:
+          '64': png/64/aws.png
+          '128': png/128/aws.png
+          '256': png/256/aws.png
       mono:
         status: optional
         color_mode: monochrome
@@ -8166,7 +8280,7 @@ icons:
       type: simple-icons
     files:
       svg: source/canva.svg
-      png: &id054
+      png:
         '64': png/64/canva.png
         '128': png/128/canva.png
         '256': png/256/canva.png
@@ -8212,7 +8326,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/canva.svg
-        png: *id054
+        png:
+          '64': png/64/canva.png
+          '128': png/128/canva.png
+          '256': png/256/canva.png
       mono:
         status: optional
         color_mode: monochrome
@@ -8233,7 +8350,7 @@ icons:
       type: simple-icons
     files:
       svg: source/heroku.svg
-      png: &id055
+      png:
         '64': png/64/heroku.png
         '128': png/128/heroku.png
         '256': png/256/heroku.png
@@ -8279,7 +8396,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/heroku.svg
-        png: *id055
+        png:
+          '64': png/64/heroku.png
+          '128': png/128/heroku.png
+          '256': png/256/heroku.png
       mono:
         status: optional
         color_mode: monochrome
@@ -8300,7 +8420,7 @@ icons:
       type: simple-icons
     files:
       svg: source/linkedin.svg
-      png: &id056
+      png:
         '64': png/64/linkedin.png
         '128': png/128/linkedin.png
         '256': png/256/linkedin.png
@@ -8346,7 +8466,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/linkedin.svg
-        png: *id056
+        png:
+          '64': png/64/linkedin.png
+          '128': png/128/linkedin.png
+          '256': png/256/linkedin.png
       mono:
         status: optional
         color_mode: monochrome
@@ -8364,7 +8487,7 @@ icons:
       type: simple-icons
     files:
       svg: source/nintendo.svg
-      png: &id057
+      png: &id016
         '64': png/64/nintendo.png
         '128': png/128/nintendo.png
         '256': png/256/nintendo.png
@@ -8409,7 +8532,7 @@ icons:
         status: available
         color_mode: brand
         svg: source/nintendo.svg
-        png: *id057
+        png: *id016
       mono:
         status: optional
         color_mode: monochrome
@@ -8430,7 +8553,7 @@ icons:
       type: simple-icons
     files:
       svg: source/oracle.svg
-      png: &id058
+      png:
         '64': png/64/oracle.png
         '128': png/128/oracle.png
         '256': png/256/oracle.png
@@ -8476,7 +8599,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/oracle.svg
-        png: *id058
+        png:
+          '64': png/64/oracle.png
+          '128': png/128/oracle.png
+          '256': png/256/oracle.png
       mono:
         status: optional
         color_mode: monochrome
@@ -8497,7 +8623,7 @@ icons:
       type: simple-icons
     files:
       svg: source/slack.svg
-      png: &id059
+      png:
         '64': png/64/slack.png
         '128': png/128/slack.png
         '256': png/256/slack.png
@@ -8543,7 +8669,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/slack.svg
-        png: *id059
+        png:
+          '64': png/64/slack.png
+          '128': png/128/slack.png
+          '256': png/256/slack.png
       mono:
         status: optional
         color_mode: monochrome
@@ -8564,7 +8693,7 @@ icons:
       type: simple-icons
     files:
       svg: source/walmart.svg
-      png: &id060
+      png:
         '64': png/64/walmart.png
         '128': png/128/walmart.png
         '256': png/256/walmart.png
@@ -8610,7 +8739,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/walmart.svg
-        png: *id060
+        png:
+          '64': png/64/walmart.png
+          '128': png/128/walmart.png
+          '256': png/256/walmart.png
       mono:
         status: optional
         color_mode: monochrome
@@ -8628,7 +8760,7 @@ icons:
       verified: true
     files:
       svg: source/select.svg
-      png: &id061
+      png:
         '64': png/64/select.png
         '128': png/128/select.png
         '256': png/256/select.png
@@ -8668,7 +8800,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/select.svg
-        png: *id061
+        png:
+          '64': png/64/select.png
+          '128': png/128/select.png
+          '256': png/256/select.png
       mono:
         status: optional
         color_mode: monochrome
@@ -8685,7 +8820,7 @@ icons:
       verified: true
     files:
       svg: source/match.svg
-      png: &id062
+      png:
         '64': png/64/match.png
         '128': png/128/match.png
         '256': png/256/match.png
@@ -8725,7 +8860,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/match.svg
-        png: *id062
+        png:
+          '64': png/64/match.png
+          '128': png/128/match.png
+          '256': png/256/match.png
       mono:
         status: optional
         color_mode: monochrome
@@ -8742,7 +8880,7 @@ icons:
       verified: true
     files:
       svg: source/provider.svg
-      png: &id063
+      png:
         '64': png/64/provider.png
         '128': png/128/provider.png
         '256': png/256/provider.png
@@ -8782,7 +8920,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/provider.svg
-        png: *id063
+        png:
+          '64': png/64/provider.png
+          '128': png/128/provider.png
+          '256': png/256/provider.png
       mono:
         status: optional
         color_mode: monochrome
@@ -8799,7 +8940,7 @@ icons:
       verified: true
     files:
       svg: source/cloud.svg
-      png: &id064
+      png:
         '64': png/64/cloud.png
         '128': png/128/cloud.png
         '256': png/256/cloud.png
@@ -8839,7 +8980,10 @@ icons:
         status: available
         color_mode: brand
         svg: source/cloud.svg
-        png: *id064
+        png:
+          '64': png/64/cloud.png
+          '128': png/128/cloud.png
+          '256': png/256/cloud.png
       mono:
         status: optional
         color_mode: monochrome

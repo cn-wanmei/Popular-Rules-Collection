@@ -1,0 +1,21 @@
+{
+  "contract_version": 2,
+  "engine": "routing_emit-1",
+  "generated_at": "2026-08-31T08:54:22.747627+00:00",
+  "decision_digest": "5e085d33e1e8a59b641c048e337c966a74a84427475e31c3a0da72b8b443d3b8",
+  "counts": {
+    "domains": 142130,
+    "direct": 112206,
+    "proxy": 29924,
+    "reject": 0,
+    "conflicts": 1299
+  },
+  "ssot": "generated/routing/decisions.jsonl",
+  "derivatives": [
+    "direct.list",
+    "proxy.list",
+    "reject.list",
+    "conflicts.json"
+  ],
+  "semantic_uniqueness": true
+}

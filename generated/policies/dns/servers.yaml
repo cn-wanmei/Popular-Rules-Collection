@@ -1,6 +1,6 @@
 # DNS server registry — dataset only (not full client DNS config)
 version: 1
-updated: "2026-08-28"
+updated: "2026-08-31"
 servers:
   - id: cloudflare-doh
     protocol: doh
@@ -38,3 +38,8 @@ servers:
 notes: >
   This is a server registry for clients to pick from.
   Full Fake-IP / TUN / rule-based DNS config belongs to a future Config Generator project.
+
+resolution_ref: config/resolution_policy.yaml
+routing_note: >
+  DNS servers are resolution endpoints only.
+  They are not DIRECT/PROXY/REJECT actions under routing_contract.

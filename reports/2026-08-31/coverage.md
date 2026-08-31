@@ -60,7 +60,7 @@
 | dailymotion | Y (10) | n (0) | 7/7 |  |
 | deepseek | Y (2) | n (0) | 7/7 |  |
 | deezer | Y (4) | n (0) | 7/7 |  |
-| developer | Y (1360) | n (0) | 7/7 |  |
+| developer | Y (1358) | n (0) | 7/7 |  |
 | dewu | Y (90) | n (0) | 7/7 |  |
 | didi | Y (50) | n (0) | 7/7 |  |
 | digitalocean | Y (12) | n (0) | 7/7 |  |
