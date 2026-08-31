@@ -1,12 +1,14 @@
 name: Build Client Rules
 
-# Optional standalone rebuild. Primary production path is "Collect Upstream"
-# which already runs Build×7 + hard validates before commit.
 on:
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: main-publish
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -18,23 +20,25 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      # Builder ×7 (must match declared client set)
-      - run: python scripts/build_mihomo.py
-      - run: python scripts/build_singbox.py
-      - run: python scripts/build_surge.py
-      - run: python scripts/build_shadowrocket.py
-      - run: python scripts/build_quantumultx.py
-      - run: python scripts/build_egern.py
-      - run: python scripts/build_loon.py
-      # Release Gate: validate before commit (no bad generated on main)
+      - name: Build via registry
+        run: python scripts/pipeline.py build
       - run: python scripts/schema_validate.py
       - run: python scripts/validate.py
       - run: python scripts/builder_validate.py
+      - run: python scripts/size_gate.py
       - name: Commit generated
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add generated/
           git diff --staged --quiet || git commit -m "chore(build): regenerate client rules $(date -u +%Y-%m-%d)"
-          git pull --rebase origin main || true
+          set +e
+          git pull --rebase --autostash origin main
+          rc=$?
+          if [ $rc -ne 0 ]; then
+            echo "::error::rebase failed — refusing to push (no || true swallow)"
+            git status || true
+            exit 1
+          fi
+          set -e
           git push

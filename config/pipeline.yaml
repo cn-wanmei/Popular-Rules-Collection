@@ -1,0 +1,30 @@
+version: 1
+updated: "2026-08-31"
+publish_concurrency_group: main-publish
+stages:
+  validate_registry:
+    script: scripts/validate_registry.py
+    required: true
+  collect:
+    script: scripts/collect.py
+    required: true
+  normalize:
+    script: scripts/normalize.py
+    required: true
+  deduplicate:
+    script: scripts/deduplicate.py
+    required: true
+  build:
+    kind: builders
+    required: true
+  validate:
+    scripts:
+      - scripts/schema_validate.py
+      - scripts/validate.py
+      - scripts/builder_validate.py
+    required: true
+  size_gate:
+    script: scripts/size_gate.py
+    required: true
+build_requires:
+  - database/services
