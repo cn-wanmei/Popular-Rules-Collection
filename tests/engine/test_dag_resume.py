@@ -16,10 +16,10 @@ def test_resume_reuses_successful_nodes(tmp_path: Path):
         calls.append("b")
         return {"status": "ok", "value": 2}
 
-    first = execute(nodes, {"a": a, "b": b}, state_path=state)
+    first = execute(nodes, {"a": a, "b": b}, state_path=state, input_digests={"a": "input-v1"})
     assert calls == ["a", "b"]
     calls.clear()
-    second = execute(nodes, {"a": a, "b": b}, state_path=state)
+    second = execute(nodes, {"a": a, "b": b}, state_path=state, input_digests={"a": "input-v1"})
     assert calls == []
     assert second["a"]["resume"] == "reused"
     assert second["b"]["resume"] == "reused"
@@ -31,7 +31,11 @@ def test_resume_invalidates_downstream_when_input_changes(tmp_path: Path):
     state = tmp_path / "dag.json"
     calls = []
     nodes = [Node("a"), Node("b", ("a",))]
-    execute(nodes, {"a": lambda: {"status": "ok", "value": 1}, "b": lambda: {"status": "ok", "value": 2}}, state_path=state)
+    execute(nodes, {"a": lambda: {"status": "ok", "value": 1}, "b": lambda: {"status": "ok", "value": 2}}, state_path=state, input_digests={"a": "input-v1"})
+
+    def a():
+        calls.append("a")
+        return {"status": "ok", "value": 99}
 
     def b():
         calls.append("b")
@@ -39,11 +43,12 @@ def test_resume_invalidates_downstream_when_input_changes(tmp_path: Path):
 
     result = execute(
         nodes,
-        {"a": lambda: {"status": "ok", "value": 99}, "b": b},
+        {"a": a, "b": b},
         state_path=state,
+        input_digests={"a": "input-v2"},
     )
-    assert calls == ["b"]
-    assert result["a"]["resume"] != "reused" if "resume" in result["a"] else True
+    assert calls == ["a", "b"]
+    assert result["a"]["status"] == "ok"
     assert result["b"]["status"] == "ok"
 
 
