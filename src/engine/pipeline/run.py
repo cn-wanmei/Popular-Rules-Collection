@@ -1,4 +1,4 @@
-"""Engine Pipeline — one immutable V3 run from snapshot to release."""
+"""V3 production pipeline — deterministic DAG over one immutable Run."""
 from __future__ import annotations
 
 import json
@@ -6,39 +6,45 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from src.engine.snapshot.engine import create_source_snapshot
-from src.engine.ingest.source_ingest import ingest_snapshot
-from src.engine.quarantine.engine import run_quarantine
-from src.engine.canonical.store import build_canonical
-from src.engine.hierarchy.resolver import build_hierarchy
-from src.engine.ir.builder import build_ir
 from src.engine.adapters.build_all import build_all_clients
+from src.engine.canonical.store import build_canonical
+from src.engine.cas.run_store import register_run
+from src.engine.dag.executor import Node, execute
 from src.engine.diff.engine import run_diff
 from src.engine.golden.runner import run_golden
-from src.engine.observability.metrics import build_observability, quality_score
+from src.engine.hierarchy.resolver import build_hierarchy
+from src.engine.ingest.source_ingest import ingest_snapshot
+from src.engine.ir.builder import build_ir
+from src.engine.observability.metrics import build_observability
+from src.engine.policy.release_policy import write_quality_report
+from src.engine.quarantine.engine import run_quarantine
 from src.engine.release.evidence import build_sbom, retention_plan
 from src.engine.release.state_machine import evaluate_release
+from src.engine.snapshot.engine import create_source_snapshot, load_snapshot_manifest
 
 STAGES = [
-    "snapshot", "ingest", "quarantine", "canonical", "hierarchy",
-    "ir", "adapters", "diff", "golden", "observability", "release",
+    "snapshot", "ingest", "quarantine", "canonical", "hierarchy", "ir",
+    "adapters", "diff", "golden", "observability", "cas", "release",
+]
+
+DAG_NODES = [
+    Node("snapshot"),
+    Node("ingest", ("snapshot",)),
+    Node("quarantine", ("ingest",)),
+    Node("canonical", ("quarantine",)),
+    Node("hierarchy", ("canonical",)),
+    Node("ir", ("hierarchy",)),
+    Node("adapters", ("ir",)),
+    Node("diff", ("canonical",)),
+    Node("golden", ("adapters",)),
+    Node("observability", ("diff", "golden")),
+    Node("cas", ("observability",)),
+    Node("release", ("cas",)),
 ]
 
 
 def _new_run_id() -> str:
     return datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ") + "-run"
-
-
-def _load_quality_policy(repo_root: Path | None = None) -> dict[str, Any]:
-    path = (repo_root or Path(".")) / "config" / "release.yaml"
-    if not path.exists():
-        return {}
-    try:
-        import yaml
-        data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
-        return data if isinstance(data, dict) else {}
-    except Exception:
-        return {}
 
 
 def run_pipeline(
@@ -48,6 +54,7 @@ def run_pipeline(
     run_id: str | None = None,
     stages: list[str] | None = None,
     skip_large: bool = False,
+    snapshot_id: str | None = None,
 ) -> dict[str, Any]:
     data_root = Path(data_root)
     sources_root = Path(sources_root)
@@ -58,109 +65,111 @@ def run_pipeline(
     wanted = stages or STAGES
     if wanted != STAGES and wanted != STAGES[: len(wanted)]:
         raise ValueError("Stages must be a contiguous prefix of the V3 pipeline")
+    wanted_set = set(wanted)
+    node_by_name = {n.name: n for n in DAG_NODES if n.name in wanted_set}
+    nodes = [Node(stage, tuple(d for d in node_by_name[stage].deps if d in wanted_set)) for stage in STAGES if stage in wanted_set]
 
     results: dict[str, Any] = {
-        "schema": "engine_run_v2",
+        "schema": "engine_run_v4",
         "run_id": run_id,
         "started_at": datetime.now(timezone.utc).isoformat(),
         "stages": {},
         "skip_large": skip_large,
+        "snapshot_id": snapshot_id,
         "v2_runtime_dependency": 0,
+        "execution": {"mode": "dag", "layers": []},
     }
+    context: dict[str, Any] = {}
 
     def persist() -> None:
-        (run_dir / "run_manifest.json").write_text(json.dumps(results, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        path = run_dir / "run_manifest.json"
+        tmp = path.with_name(".run_manifest.json.tmp")
+        tmp.write_text(json.dumps(results, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        tmp.replace(path)
 
-    persist()
-    snapshot_manifest = ingest_result = clean_payload = None
+    def handler_snapshot() -> dict[str, Any]:
+        if snapshot_id:
+            snap_dir = data_root / "snapshots" / snapshot_id
+            manifest = load_snapshot_manifest(snap_dir)
+            context["snapshot"] = manifest
+            results["snapshot_id"] = manifest["snapshot_id"]
+            (run_dir / "snapshot_id.txt").write_text(manifest["snapshot_id"], encoding="utf-8")
+            return {"status": "ok", "snapshot_id": manifest["snapshot_id"], "file_count": manifest.get("file_count", 0), "reused": True}
+        manifest = create_source_snapshot(sources_root, data_root / "snapshots", extra_meta={"run_id": run_id, "skip_large": skip_large})
+        context["snapshot"] = manifest
+        results["snapshot_id"] = manifest["snapshot_id"]
+        (run_dir / "snapshot_id.txt").write_text(manifest["snapshot_id"], encoding="utf-8")
+        return {"status": "ok", "snapshot_id": manifest["snapshot_id"], "file_count": manifest.get("file_count", 0), "reused": False}
 
-    if "snapshot" in wanted:
-        snapshot_manifest = create_source_snapshot(sources_root, data_root / "snapshots", extra_meta={"run_id": run_id, "skip_large": skip_large})
-        (run_dir / "snapshot_id.txt").write_text(snapshot_manifest["snapshot_id"], encoding="utf-8")
-        results["snapshot_id"] = snapshot_manifest["snapshot_id"]
-        results["stages"]["snapshot"] = {"status": "ok", "snapshot_id": snapshot_manifest["snapshot_id"]}
-        persist()
+    def handler_ingest() -> dict[str, Any]:
+        result = ingest_snapshot(data_root / "snapshots" / context["snapshot"]["snapshot_id"], skip_large=skip_large)
+        context["ingest"] = result
+        return {"status": "ok", "records": result["stats"]["records"], "errors": result["stats"]["errors"]}
 
-    if "ingest" in wanted:
-        if snapshot_manifest is None:
-            raise RuntimeError("ingest requires snapshot")
-        ingest_result = ingest_snapshot(data_root / "snapshots" / snapshot_manifest["snapshot_id"], skip_large=skip_large)
-        results["stages"]["ingest"] = {"status": "ok", "records": ingest_result["stats"]["records"], "errors": ingest_result["stats"]["errors"]}
-        persist()
+    def handler_quarantine() -> dict[str, Any]:
+        payload = run_quarantine(context["ingest"], run_dir / "quarantine")
+        context["quarantine"] = payload
+        return {"status": "ok", "clean": payload["stats"]["records"], "quarantined": payload["stats"]["quarantined"]}
 
-    if "quarantine" in wanted:
-        if ingest_result is None:
-            raise RuntimeError("quarantine requires ingest")
-        clean_payload = run_quarantine(ingest_result, run_dir / "quarantine")
-        results["stages"]["quarantine"] = {"status": "ok", "clean": clean_payload["stats"]["records"], "quarantined": clean_payload["stats"]["quarantined"]}
-        persist()
+    def handler_canonical() -> dict[str, Any]:
+        manifest = build_canonical(context["quarantine"], run_dir / "canonical")
+        if manifest["unique_rules"] == 0:
+            return {"status": "blocked", "reason": "canonical produced zero rules", **manifest}
+        return {"status": "ok", "unique_rules": manifest["unique_rules"], "memberships": manifest["memberships"], "errors": manifest["errors"]}
 
-    if "canonical" in wanted:
-        if clean_payload is None:
-            raise RuntimeError("canonical requires quarantine")
-        can_manifest = build_canonical(clean_payload, run_dir / "canonical")
-        results["stages"]["canonical"] = {"status": "ok", "unique_rules": can_manifest["unique_rules"], "memberships": can_manifest["memberships"], "errors": can_manifest["errors"]}
-        persist()
-        if can_manifest["unique_rules"] == 0:
-            raise RuntimeError("canonical produced zero rules")
+    def handler_hierarchy() -> dict[str, Any]:
+        manifest = build_hierarchy(run_dir / "canonical", run_dir / "hierarchy")
+        return {"status": "ok", **{k: manifest[k] for k in ("service_count", "group_count", "aggregate_count") if k in manifest}}
 
-    if "hierarchy" in wanted:
-        h_manifest = build_hierarchy(run_dir / "canonical", run_dir / "hierarchy")
-        results["stages"]["hierarchy"] = {"status": "ok", **{k: h_manifest[k] for k in ("service_count", "group_count", "aggregate_count") if k in h_manifest}}
-        persist()
+    def handler_ir() -> dict[str, Any]:
+        manifest = build_ir(run_dir / "canonical", run_dir / "hierarchy", run_dir / "ir")
+        return {"status": "ok", "stats": manifest.get("stats"), "schema": manifest.get("ir_schema", "semantic_ir_v2")}
 
-    if "ir" in wanted:
-        ir_manifest = build_ir(run_dir / "canonical", run_dir / "hierarchy", run_dir / "ir")
-        results["stages"]["ir"] = {"status": "ok", "stats": ir_manifest.get("stats")}
-        persist()
+    def handler_adapters() -> dict[str, Any]:
+        report = build_all_clients(run_dir / "ir", run_dir / "artifacts")
+        return {"status": "ok", "clients": sorted(report.get("clients", {})), "parallel": report.get("parallel", False), "source_contract": report.get("source_contract")}
 
-    if "adapters" in wanted:
-        art_report = build_all_clients(run_dir / "canonical", run_dir / "artifacts")
-        results["stages"]["adapters"] = {"status": "ok", "clients": list(art_report.get("clients", {}).keys()), "parallel": art_report.get("parallel", False)}
-        persist()
-
-    if "diff" in wanted:
+    def handler_diff() -> dict[str, Any]:
         baseline = data_root / "baseline" / "canonical.json"
-        diff_report = run_diff(run_dir / "canonical", baseline if baseline.exists() else None, run_dir / "reports" / "diff")
-        results["stages"]["diff"] = {"status": "ok", "added": diff_report["added"], "removed": diff_report["removed"], "changed": diff_report["changed"], "baseline": str(baseline) if baseline.exists() else None}
-        persist()
+        report = run_diff(run_dir / "canonical", baseline if baseline.exists() else None, run_dir / "reports" / "diff")
+        return {"status": "ok", "added": report["added"], "removed": report["removed"], "changed": report["changed"], "baseline": str(baseline) if baseline.exists() else None}
 
-    if "golden" in wanted:
-        golden = run_golden(run_dir)
-        results["stages"]["golden"] = {"status": "ok", "all_pass": golden["all_pass"]}
-        persist()
-        if not golden["all_pass"]:
-            results["status"] = "blocked"
-            results["finished_at"] = datetime.now(timezone.utc).isoformat()
-            persist()
-            return results
+    def handler_golden() -> dict[str, Any]:
+        report = run_golden(run_dir)
+        return {"status": "ok", "all_pass": report["all_pass"]}
 
-    if "observability" in wanted:
+    def handler_observability() -> dict[str, Any]:
         metrics = build_observability(run_dir)
-        quality = quality_score(metrics, _load_quality_policy(Path(".")))
+        quality = write_quality_report(run_dir, metrics, Path("config") / "release.yaml")
         evidence = build_sbom(run_dir)
         retention = retention_plan(data_root / "runs", keep=10)
-        results["stages"]["observability"] = {"status": "ok", "quality_score": quality["score"], "quality_decision": quality["decision"], "sbom_files": len(evidence["files"]), "retention_candidates": len(retention["eligible_for_deletion"])}
-        (run_dir / "quality.json").write_text(json.dumps(quality, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-        (run_dir / "retention-plan.json").write_text(json.dumps(retention, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-        persist()
-        if not quality["all_hard_pass"]:
-            results["status"] = "blocked"
-            results["finished_at"] = datetime.now(timezone.utc).isoformat()
-            persist()
-            return results
+        return {"status": "ok", "quality_score": quality["score"], "quality_decision": quality["decision"], "sbom_files": len(evidence["files"]), "retention_candidates": len(retention["eligible_for_deletion"])}
 
-    if "release" in wanted:
-        persist()
+    def handler_cas() -> dict[str, Any]:
+        manifest = register_run(run_dir, data_root / "cas" / "objects")
+        return {"status": "ok", "object_count": manifest["object_count"]}
+
+    def handler_release() -> dict[str, Any]:
         release = evaluate_release(run_dir)
-        results["stages"]["release"] = {"status": "ok" if release["can_publish"] else "blocked", "state": release["state"], "can_publish": release["can_publish"]}
-        if release["state"] != "RC_READY":
-            results["status"] = "blocked"
-            results["finished_at"] = datetime.now(timezone.utc).isoformat()
-            persist()
-            return results
+        if release["can_publish"]:
+            register_run(run_dir, data_root / "cas" / "objects")
+        return {"status": "ok" if release["can_publish"] else "blocked", "state": release["state"], "can_publish": release["can_publish"], "quality_score": release.get("quality_score")}
 
+    handlers = {"snapshot": handler_snapshot, "ingest": handler_ingest, "quarantine": handler_quarantine, "canonical": handler_canonical, "hierarchy": handler_hierarchy, "ir": handler_ir, "adapters": handler_adapters, "diff": handler_diff, "golden": handler_golden, "observability": handler_observability, "cas": handler_cas, "release": handler_release}
+
+    def checkpoint(layer: list[str], all_results: dict[str, Any]) -> None:
+        results["execution"]["layers"].append(list(layer))
+        for name in layer:
+            results["stages"][name] = all_results[name]
+        persist()
+
+    persist()
+    executed = execute(nodes, handlers, max_workers=min(8, len(nodes)), fail_fast=False, on_layer_complete=checkpoint)
+    results["stages"].update(executed)
     results["finished_at"] = datetime.now(timezone.utc).isoformat()
-    results["status"] = "ok"
+    failures = [name for name, value in executed.items() if isinstance(value, dict) and value.get("status") in {"failed", "skipped", "blocked"}]
+    results["status"] = "blocked" if failures else "ok"
+    if failures:
+        results["failure_stages"] = failures
     persist()
     return results
