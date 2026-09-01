@@ -6,6 +6,9 @@ engine:
   workspace: data/
   public_projection: generated/
   runtime_v2_dependency: 0
+  semantic_ir: semantic_ir_v2
+  execution: dag-ready
+  content_addressable_snapshots: true
 
 stages:
   naming_gate:
@@ -24,6 +27,8 @@ stages:
       - release
       - seven_clients
       - reproducibility
+      - observability
+      - quality_policy
     required: true
   size_gate:
     script: scripts/size_gate.py
@@ -31,6 +36,28 @@ stages:
   publish:
     command: python -m src.engine.cli promote --run-id <run_id> --baseline data/baseline/canonical.json
     required: true
+
+p1_5:
+  observability:
+    metrics: data/runs/<run_id>/metrics/metrics.json
+    source_health: data/runs/<run_id>/metrics/source-health.json
+    parser_coverage: data/runs/<run_id>/metrics/parser-coverage.json
+    quality: data/runs/<run_id>/quality.json
+
+p2:
+  semantic_ir: semantic_ir_v2
+  adapters: parallel
+
+p2_5:
+  cas_root: data/cas/objects
+  snapshot_manifest_references: true
+  cache_ready: true
+
+p3:
+  dag_executor: src/engine/dag/executor.py
+  incremental_ready: true
+  retention_plan: data/runs/<run_id>/retention-plan.json
+  sbom: data/runs/<run_id>/release/sbom.json
 
 legacy_2x:
   production: false

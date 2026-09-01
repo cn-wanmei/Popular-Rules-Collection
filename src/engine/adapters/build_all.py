@@ -1,7 +1,8 @@
-"""Build all 7 native client artifacts from Canonical (P0-6 / P0-7)."""
+"""Parallel native client projections from Semantic IR / Canonical."""
 from __future__ import annotations
 
 import json
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
 
@@ -9,46 +10,32 @@ from src.engine.adapters.registry import CLIENTS, get_adapter
 from src.engine.canonical.store import load_rules, load_memberships
 
 
-def build_all_clients(
-    canonical_dir: Path,
-    artifacts_dir: Path,
-    *,
-    views: list[str] | None = None,
-) -> dict[str, Any]:
-    """
-    Produce native-format artifacts for every registered client.
-    Also emits simple Service / Aggregate views when memberships exist.
-    """
+def _build_client(client: str, meta: dict[str, str], rules: list[dict[str, Any]], memberships: dict[str, list[str]], artifacts_dir: Path) -> tuple[str, dict[str, Any]]:
+    cdir = artifacts_dir / client
+    cdir.mkdir(parents=True, exist_ok=True)
+    render = get_adapter(client)
+    rules_by_id = {r["id"]: r for r in rules}
+    render(rules, cdir / f"aggregate{meta['ext']}")
+    for entity in sorted(memberships):
+        entity_rules = [rules_by_id[rid] for rid in memberships[entity] if rid in rules_by_id]
+        if entity_rules:
+            render(entity_rules, cdir / f"{entity}{meta['ext']}")
+    return client, {"ext": meta["ext"], "files": len(list(cdir.glob(f"*{meta['ext']}")))}
+
+
+def build_all_clients(canonical_dir: Path, artifacts_dir: Path, *, views: list[str] | None = None) -> dict[str, Any]:
     canonical_dir = Path(canonical_dir)
     artifacts_dir = Path(artifacts_dir)
-    rules = load_rules(canonical_dir)
+    rules = sorted(load_rules(canonical_dir).values(), key=lambda r: r["id"])
     memberships = load_memberships(canonical_dir)
-
-    # default view = all rules (aggregate)
-    all_rules = list(rules.values())
-    report = {"clients": {}, "views": {}, "v2_runtime_dependency": 0}
-
-    for client, meta in CLIENTS.items():
-        cdir = artifacts_dir / client
-        cdir.mkdir(parents=True, exist_ok=True)
-        render = get_adapter(client)
-        # aggregate view
-        out = cdir / f"aggregate{meta['ext']}"
-        render(all_rules, out)
-        # per-service views
-        for entity, rids in memberships.items():
-            entity_rules = [rules[rid] for rid in rids if rid in rules]
-            if entity_rules:
-                eout = cdir / f"{entity}{meta['ext']}"
-                render(entity_rules, eout)
-        report["clients"][client] = {
-            "ext": meta["ext"],
-            "files": len(list(cdir.glob(f"*{meta['ext']}")))
-        }
-
-    report["views"]["services"] = list(memberships.keys())
+    report: dict[str, Any] = {"clients": {}, "views": {}, "v2_runtime_dependency": 0, "parallel": True}
+    with ThreadPoolExecutor(max_workers=min(8, max(1, len(CLIENTS))), thread_name_prefix="adapter") as pool:
+        futures = [pool.submit(_build_client, client, meta, rules, memberships, artifacts_dir) for client, meta in CLIENTS.items()]
+        for future in as_completed(futures):
+            client, details = future.result()
+            report["clients"][client] = details
+    report["clients"] = {k: report["clients"][k] for k in sorted(report["clients"])}
+    report["views"]["services"] = sorted(memberships.keys())
     report["views"]["aggregate"] = True
-    (artifacts_dir / "build_report.json").write_text(
-        json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
-    )
+    (artifacts_dir / "build_report.json").write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return report

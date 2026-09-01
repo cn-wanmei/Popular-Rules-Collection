@@ -28,16 +28,8 @@ def run_golden(run_dir: Path) -> dict[str, Any]:
     can_manifest = run_dir / "canonical" / "manifest.json"
     can_rules = run_dir / "canonical" / "rules.jsonl"
     can_errors = run_dir / "canonical" / "errors.jsonl"
-    l2 = (
-        can_manifest.exists()
-        and can_rules.exists()
-        and can_rules.stat().st_size > 0
-        and can_errors.exists()
-    )
-    results["L2_canonical"] = {
-        "pass": l2,
-        "detail": "canonical artifacts present and non-empty",
-    }
+    l2 = can_manifest.exists() and can_rules.exists() and can_rules.stat().st_size > 0 and can_errors.exists()
+    results["L2_canonical"] = {"pass": l2, "detail": "canonical artifacts present and non-empty"}
 
     hier = run_dir / "hierarchy" / "graph.json"
     l3 = False
@@ -54,14 +46,16 @@ def run_golden(run_dir: Path) -> dict[str, Any]:
     if ir_path.exists():
         try:
             ir = json.loads(ir_path.read_text(encoding="utf-8"))
+            entities = ir.get("entities") or ir.get("entity") or {}
             l4 = (
-                len(ir.get("entity", {}).get("services", [])) > 0
+                len(entities.get("services", [])) > 0
                 and len(ir.get("decisions", [])) > 0
                 and ir.get("v2_runtime_dependency") == 0
+                and ir.get("schema") == "semantic_ir_v2"
             )
         except json.JSONDecodeError:
             l4 = False
-    results["L4_ir"] = {"pass": l4, "detail": "IR has hierarchy + decisions"}
+    results["L4_ir"] = {"pass": l4, "detail": "semantic IR v2 has entities + decisions"}
 
     art = run_dir / "artifacts"
     expected = {
@@ -98,18 +92,10 @@ def run_golden(run_dir: Path) -> dict[str, Any]:
             "run_manifest.json",
         )
     )
-    results["L7_reproducibility_base"] = {
-        "pass": l7,
-        "detail": "stage manifests present for hash compare",
-    }
+    results["L7_reproducibility_base"] = {"pass": l7, "detail": "stage manifests present for hash compare"}
 
     all_pass = all(v["pass"] for v in results.values())
-    summary = {
-        "schema": "golden_v2",
-        "all_pass": all_pass,
-        "results": results,
-        "v2_runtime_dependency": 0,
-    }
+    summary = {"schema": "golden_v3", "all_pass": all_pass, "results": results, "v2_runtime_dependency": 0}
     out = run_dir / "golden" / "report.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(summary, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

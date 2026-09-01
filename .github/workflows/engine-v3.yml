@@ -13,6 +13,8 @@ on:
     paths:
       - "src/engine/**"
       - "tests/engine/**"
+      - "config/**"
+      - ".github/workflows/engine-v3.yml"
 
 jobs:
   engine-gates:
@@ -37,6 +39,10 @@ jobs:
         run: |
           PYTHONPATH=. python -m pytest tests/engine/ -v --tb=short \
             --ignore=tests/engine/unit_legacy_v2_ref
+
+      - name: P1.5 quality and observability tests
+        run: |
+          PYTHONPATH=. python -m pytest tests/engine/test_p1_5_observability.py -v --tb=short
 
       - name: V2 runtime dependency must be 0
         run: |
