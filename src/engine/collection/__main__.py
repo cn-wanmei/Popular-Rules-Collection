@@ -14,8 +14,9 @@ def main() -> int:
     parser.add_argument("--data", type=Path, default=Path("data"))
     parser.add_argument("--date", default=datetime.now(timezone.utc).strftime("%Y-%m-%d"))
     parser.add_argument("--skip-large", action="store_true")
+    parser.add_argument("--workers", type=int, default=12)
     args = parser.parse_args()
-    result = run_collection(args.data, date=args.date, skip_large=args.skip_large)
+    result = run_collection(args.data, date=args.date, skip_large=args.skip_large, max_workers=args.workers)
     print(json.dumps(result, indent=2, ensure_ascii=False))
     return 0 if result.get("status") in {"ok", "degraded"} else 1
 

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import hashlib
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Any
 
 
@@ -17,6 +17,8 @@ class FetchResult:
     size: int = 0
     error: str | None = None
     status_code: int | None = None
+    not_modified: bool = False
+    headers: dict[str, str] = field(default_factory=dict)
 
     def compute_hash(self) -> None:
         if self.content is not None:
@@ -28,10 +30,15 @@ class BaseFetcher:
     def __init__(self, cfg: dict[str, Any]):
         self.cfg = cfg
 
-    def fetch_one(self, entry: dict[str, str]) -> FetchResult:
+    @staticmethod
+    def request_headers(entry: dict[str, Any]) -> dict[str, str]:
+        headers = entry.get("headers") or {}
+        return {str(k): str(v) for k, v in headers.items()}
+
+    def fetch_one(self, entry: dict[str, Any]) -> FetchResult:
         raise NotImplementedError
 
-    def fetch_all(self, entries: list[dict[str, str]], source_id: str) -> list[FetchResult]:
+    def fetch_all(self, entries: list[dict[str, Any]], source_id: str) -> list[FetchResult]:
         results = []
         for e in entries:
             r = self.fetch_one(e)
