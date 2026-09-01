@@ -1,27 +1,47 @@
-"""E2E: real database/services sample → migrate → pipeline → promote."""
+"""Deterministic production-fixture E2E for the V3 supply chain."""
 from __future__ import annotations
-import shutil
+
+import json
 from pathlib import Path
-import pytest
-from src.engine.validation.naming_gate import run_naming_gate
-from src.engine.ingest.migrate_legacy import migrate_database_services_to_snapshot
+import shutil
+
 from src.engine.pipeline.run import run_pipeline
-from src.engine.promote.artifact import promote_run
+from src.engine.promote.artifact import promote_run, rollback_to_run
 
-SAMPLE = Path("database/services_sample")
+FIXTURE = Path("tests/fixtures/v3-production/sources")
 
-@pytest.mark.skipif(not SAMPLE.exists() or not any(SAMPLE.glob("*.yaml")), reason="no sample services")
-def test_e2e_migrate_pipeline_promote(tmp_path):
-    assert run_naming_gate(Path(".")).get("pass") is True
-    snaps = tmp_path / "snapshots"
-    m = migrate_database_services_to_snapshot(SAMPLE, snaps)
-    assert m["v2_runtime_dependency"] == 0
-    assert m["extra"]["service_files"] >= 1
-    clean = tmp_path / "clean_sources"
-    shutil.copytree(snaps / m["snapshot_id"] / "sources", clean)
+
+def test_e2e_production_fixture_is_not_skipped(tmp_path: Path) -> None:
+    source = tmp_path / "sources"
+    shutil.copytree(FIXTURE, source)
     data = tmp_path / "data"
-    result = run_pipeline(clean, data)
+    generated = tmp_path / "generated"
+    baseline = data / "baseline" / "canonical.json"
+
+    result = run_pipeline(source, data)
     assert result["status"] == "ok"
+    assert result["stages"]["golden"]["all_pass"] is True
     assert result["stages"]["release"]["state"] == "RC_READY"
-    rec = promote_run(data / "runs" / result["run_id"], tmp_path / "generated")
-    assert (tmp_path / "generated" / "mihomo").exists()
+
+    run_dir = data / "runs" / result["run_id"]
+    record = promote_run(run_dir, generated, baseline_path=baseline)
+    assert record["release_state"] == "RC_READY"
+    assert len(record["client_digests"]) == 7
+    assert baseline.exists()
+    assert (generated / "_promotion" / "latest.json").exists()
+    assert (generated / "mihomo").is_dir()
+    assert (generated / "singbox").is_dir()
+    assert (generated / "surge").is_dir()
+    assert (generated / "shadowrocket").is_dir()
+    assert (generated / "quantumultx").is_dir()
+    assert (generated / "egern").is_dir()
+    assert (generated / "loon").is_dir()
+
+    release_manifest = json.loads((run_dir / "release" / "manifest.json").read_text(encoding="utf-8"))
+    golden = json.loads((run_dir / "golden" / "report.json").read_text(encoding="utf-8"))
+    assert release_manifest["release_state"] == "RC_READY"
+    assert release_manifest["client_digests"] == record["client_digests"]
+    assert golden["all_pass"] is True
+
+    rolled = rollback_to_run(result["run_id"], data / "runs", generated)
+    assert rolled["run_id"] == result["run_id"]
