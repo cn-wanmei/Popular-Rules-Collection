@@ -39,14 +39,21 @@ def execute(
     handlers: dict[str, Callable[[], Any]],
     *,
     max_workers: int = 8,
-    fail_fast: bool = True,
+    fail_fast: bool = False,
+    on_layer_complete: Callable[[list[str], dict[str, Any]], None] | None = None,
 ) -> dict[str, Any]:
+    """Execute a DAG in deterministic layers, optionally in parallel within each layer.
+
+    A node returning ``{"status": "blocked"}`` is treated as failed for dependency
+    propagation. Exceptions become ``failed`` results unless fail_fast=True.
+    """
     by_name = {n.name: n for n in nodes}
     layers = topological_layers(nodes)
     results: dict[str, Any] = {}
     failed: set[str] = set()
+
     for layer in layers:
-        ready = []
+        ready: list[str] = []
         for name in layer:
             if any(dep in failed for dep in by_name[name].deps):
                 results[name] = {"status": "skipped", "reason": "dependency_failed"}
@@ -55,25 +62,22 @@ def execute(
                 raise KeyError(f"missing DAG handler: {name}")
             else:
                 ready.append(name)
-        if not ready:
-            continue
-        with ThreadPoolExecutor(max_workers=min(max_workers, len(ready)), thread_name_prefix="engine-dag") as pool:
-            futures = {pool.submit(handlers[name]): name for name in ready}
-            for future in as_completed(futures):
-                name = futures[future]
-                try:
-                    results[name] = future.result()
-                    if isinstance(results[name], dict) and results[name].get("status") == "blocked":
+
+        if ready:
+            with ThreadPoolExecutor(max_workers=min(max_workers, len(ready)), thread_name_prefix="engine-dag") as pool:
+                futures = {pool.submit(handlers[name]): name for name in ready}
+                for future in as_completed(futures):
+                    name = futures[future]
+                    try:
+                        value = future.result()
+                        results[name] = value
+                        if isinstance(value, dict) and value.get("status") in {"blocked", "failed", "skipped"}:
+                            failed.add(name)
+                    except Exception as exc:
+                        results[name] = {"status": "failed", "error": f"{type(exc).__name__}: {exc}"}
                         failed.add(name)
-                except Exception as exc:
-                    results[name] = {"status": "failed", "error": f"{type(exc).__name__}: {exc}"}
-                    failed.add(name)
-                    if fail_fast:
-                        for other in ready:
-                            if other != name and other not in results:
-                                future_map = {f: n for f, n in futures.items()}
-                                # Running futures cannot be safely cancelled after start; their results remain recorded.
-                                if other in future_map.values():
-                                    continue
-                        raise
+                        if fail_fast:
+                            raise
+        if on_layer_complete is not None:
+            on_layer_complete(layer, results)
     return results
