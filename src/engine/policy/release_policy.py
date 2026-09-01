@@ -32,35 +32,28 @@ def evaluate_quality(metrics: dict[str, Any], policy: dict[str, Any]) -> PolicyD
     parser = metrics.get("parser_coverage", {})
     diff = metrics.get("diff", {})
     source = metrics.get("source_health", {})
+    baseline = metrics.get("baseline", {}) or {}
 
     checks: dict[str, dict[str, Any]] = {}
-    checks["clean_rate"] = {
-        "value": float(rates.get("clean_rate", 0.0)),
-        "min": float(cfg.get("min_clean_rate", 0.995)),
-    }
-    checks["quarantine_rate"] = {
-        "value": float(rates.get("quarantine_rate", 1.0)),
-        "max": float(cfg.get("max_quarantine_rate", 0.01)),
-    }
-    checks["canonical_error_rate"] = {
-        "value": float(rates.get("canonical_error_rate", 1.0)),
-        "max": float(cfg.get("max_canonical_error_rate", 0.0)),
-    }
-    checks["parser_recognition_rate"] = {
-        "value": float(parser.get("recognition_rate", 0.0)),
-        "min": float(cfg.get("min_parser_recognition_rate", 0.995)),
-    }
-    checks["removed_rules"] = {
-        "value": int(diff.get("removed", 0)),
-        "max": int(cfg.get("max_removed_rules", 10000)),
-    }
-    checks["source_error_count"] = {
-        "value": sum(int(v.get("errors", 0)) for v in source.values() if isinstance(v, dict)),
-        "max": int(cfg.get("max_source_errors", 0)),
-    }
+    checks["clean_rate"] = {"value": float(rates.get("clean_rate", 0.0)), "min": float(cfg.get("min_clean_rate", 0.995))}
+    checks["quarantine_rate"] = {"value": float(rates.get("quarantine_rate", 1.0)), "max": float(cfg.get("max_quarantine_rate", 0.01))}
+    checks["canonical_error_rate"] = {"value": float(rates.get("canonical_error_rate", 1.0)), "max": float(cfg.get("max_canonical_error_rate", 0.0))}
+    checks["parser_recognition_rate"] = {"value": float(parser.get("recognition_rate", 0.0)), "min": float(cfg.get("min_parser_recognition_rate", 0.995))}
+    checks["removed_rules"] = {"value": int(diff.get("removed", 0)), "max": int(cfg.get("max_removed_rules", 10000))}
+    checks["source_error_count"] = {"value": sum(int(v.get("errors", 0)) for v in source.values() if isinstance(v, dict)), "max": int(cfg.get("max_source_errors", 0))}
     checks["v2_runtime_dependency"] = {"value": metrics.get("v2_runtime_dependency", -1), "expected": 0}
+    baseline_decision = str(baseline.get("decision", "NO_BASELINE"))
+    # The first successful production run establishes the baseline. Thereafter
+    # an evaluated BLOCK/ERROR is hard-fail; NO_BASELINE is explicitly neutral.
+    checks["baseline_anomaly"] = {
+        "value": baseline_decision,
+        "expected": "PASS",
+        "pass": baseline_decision in {"PASS", "NO_BASELINE"},
+    }
 
-    for item in checks.values():
+    for name, item in checks.items():
+        if name == "baseline_anomaly":
+            continue
         if "min" in item:
             item["pass"] = item["value"] >= item["min"]
         elif "max" in item:
@@ -68,17 +61,9 @@ def evaluate_quality(metrics: dict[str, Any], policy: dict[str, Any]) -> PolicyD
         else:
             item["pass"] = item["value"] == item["expected"]
 
-    weights = {
-        "clean_rate": 20,
-        "quarantine_rate": 15,
-        "canonical_error_rate": 15,
-        "parser_recognition_rate": 15,
-        "removed_rules": 15,
-        "source_error_count": 10,
-        "v2_runtime_dependency": 10,
-    }
+    weights = {"clean_rate": 18, "quarantine_rate": 13, "canonical_error_rate": 13, "parser_recognition_rate": 13, "removed_rules": 13, "source_error_count": 9, "v2_runtime_dependency": 9, "baseline_anomaly": 12}
     score = round(sum(weights[name] for name, check in checks.items() if check["pass"]), 2)
-    hard_required = set(cfg.get("hard_checks", list(checks)))
+    hard_required = set(cfg.get("hard_checks", list(checks))) | {"baseline_anomaly"}
     hard_failures = [name for name in hard_required if not checks.get(name, {}).get("pass", False)]
     decision = "PASS" if not hard_failures else "BLOCK"
     return PolicyDecision(decision, score, checks)

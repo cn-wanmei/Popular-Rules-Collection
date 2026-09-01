@@ -99,11 +99,31 @@ def build_observability(run_dir: Path) -> dict[str, Any]:
         "v2_runtime_dependency": 0,
     }
 
+    # Baseline is a separate immutable control-plane artifact. Never compare
+    # against a partially written or timestamp-bearing run file.
+    baseline_path = Path(run_dir).parents[2] / "baseline" / "latest.json"
+    baseline = _load_json(baseline_path, None)
+    baseline_cfg = {"baseline": {"min_ratio": 0.50, "max_ratio": 1.50}}
+    try:
+        from src.engine.observability.baseline import evaluate_baseline
+        baseline_decision = evaluate_baseline(metrics, baseline, baseline_cfg)
+        metrics["baseline"] = {
+            "schema": "baseline_evidence_v1",
+            "decision": baseline_decision.decision,
+            "anomalies": list(baseline_decision.anomalies),
+            "baseline_path": str(baseline_path.relative_to(Path(run_dir).parents[2])) if baseline_path.exists() else None,
+        }
+    except Exception as exc:
+        # Observability must never silently convert an evaluator failure into
+        # a PASS. Record an explicit degraded state for the release policy.
+        metrics["baseline"] = {"schema": "baseline_evidence_v1", "decision": "ERROR", "anomalies": [], "error": f"{type(exc).__name__}: {exc}"}
+
     metrics_dir = run_dir / "metrics"
     metrics_dir.mkdir(parents=True, exist_ok=True)
     (metrics_dir / "metrics.json").write_text(json.dumps(metrics, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     (metrics_dir / "source-health.json").write_text(json.dumps(dict(source_health), indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     (metrics_dir / "parser-coverage.json").write_text(json.dumps(parser_coverage, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (metrics_dir / "baseline-evidence.json").write_text(json.dumps(metrics["baseline"], indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return metrics
 
 
