@@ -1,4 +1,4 @@
-"""Semantic IR 2.0 — stable semantic contract between Canonical and adapters."""
+"""Semantic IR 2.1 — stable semantic contract between Canonical and adapters."""
 from __future__ import annotations
 
 import json
@@ -21,16 +21,16 @@ def build_ir(canonical_dir: Path, hierarchy_dir: Path, out_dir: Path) -> dict[st
     memberships = load_memberships(canonical_dir)
     hier = load_hierarchy(hierarchy_dir)
     decisions = decide_batch(rules, memberships)
+    rules_by_id = {r["id"]: r for r in rules}
 
     entities = {
         "services": sorted(hier.get("services", {}).keys()),
         "groups": sorted(hier.get("groups", {}).keys()),
         "aggregates": sorted(hier.get("aggregates", {}).keys()),
     }
-    views = {
-        "services": hier.get("services", {}),
-        "groups": hier.get("groups", {}),
-        "aggregates": hier.get("aggregates", {}),
+    service_rules = {
+        entity: [rules_by_id[rid]["id"] for rid in memberships.get(entity, []) if rid in rules_by_id]
+        for entity in sorted(memberships)
     }
     ir = {
         "schema": "semantic_ir_v2",
@@ -38,10 +38,12 @@ def build_ir(canonical_dir: Path, hierarchy_dir: Path, out_dir: Path) -> dict[st
         "engine_version": "1.0.1",
         "v2_runtime_dependency": 0,
         "entities": entities,
-        "views": views,
-        # Read-only compatibility aliases for pre-IR-v2 consumers. New code must use entities/views.
-        "entity": entities,
-        "view": views,
+        "views": {
+            "services": hier.get("services", {}),
+            "groups": hier.get("groups", {}),
+            "aggregates": hier.get("aggregates", {}),
+        },
+        "memberships": service_rules,
         "rules": [
             {
                 "id": r["id"],
@@ -62,13 +64,14 @@ def build_ir(canonical_dir: Path, hierarchy_dir: Path, out_dir: Path) -> dict[st
             "decisions": len(decisions),
         },
     }
-
-    (out_dir / "ir.json").write_text(json.dumps(ir, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    payload = json.dumps(ir, indent=2, ensure_ascii=False) + "\n"
+    (out_dir / "ir.json").write_text(payload, encoding="utf-8")
     with (out_dir / "decisions.jsonl").open("w", encoding="utf-8") as f:
         for d in decisions:
             f.write(json.dumps(d, ensure_ascii=False) + "\n")
     manifest = {
         "schema": "semantic_ir_manifest_v2",
+        "ir_schema": "semantic_ir_v2",
         "generated_at": ir["generated_at"],
         "stats": ir["stats"],
         "v2_runtime_dependency": 0,
