@@ -14,7 +14,7 @@ import yaml
 
 PLAIN_DOMAIN = re.compile(r"^(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]*[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}\.?$")
 V2FLY_PREFIX = re.compile(r"^(?:full|domain|keyword|regexp|regex|include):\s*(.+)$", re.I)
-DOMAIN_RE = re.compile(r"^(?:DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|DOMAIN-REGEX)[,\s]+(.+?)(?:,.*)?$", re.I)
+DOMAIN_RE = re.compile(r"^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|DOMAIN-REGEX)[,\s]+(.+)$", re.I)
 IP_RE = re.compile(r"^(?:IP-CIDR|IP-CIDR6|IP6-CIDR)[,\s]+([0-9a-fA-F:.\/]+)(?:,.*)?$", re.I)
 HOSTS_RE = re.compile(r"^(?:0\.0\.0\.0|127\.0\.0\.1)\s+(\S+)")
 CIDR_RE = re.compile(r"^(\d{1,3}(?:\.\d{1,3}){3}/\d{1,2}|[0-9a-fA-F:]+/\d{1,3})$")
@@ -62,13 +62,15 @@ def parse_line(line: str) -> list[tuple[str, str]]:
 
     m = DOMAIN_RE.match(line)
     if m:
-        raw = m.group(0).upper()
-        value = m.group(1).strip().strip("'\"").rstrip(".")
-        if "DOMAIN-SUFFIX" in raw:
+        kind = m.group(1).upper()
+        value = m.group(2).split(",", 1)[0].strip().strip("'\"").rstrip(".")
+        if not value:
+            return []
+        if kind == "DOMAIN-SUFFIX":
             return [("domain_suffix", value)]
-        if "DOMAIN-KEYWORD" in raw:
+        if kind == "DOMAIN-KEYWORD":
             return [("domain_keyword", value)]
-        if "DOMAIN-REGEX" in raw:
+        if kind == "DOMAIN-REGEX":
             return [("domain_regex", value)]
         return [("domain", value)]
 
