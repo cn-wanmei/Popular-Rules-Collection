@@ -20,7 +20,7 @@ from src.engine.policy.release_policy import write_quality_report
 from src.engine.quarantine.engine import run_quarantine
 from src.engine.release.evidence import build_sbom, retention_plan
 from src.engine.release.state_machine import evaluate_release
-from src.engine.snapshot.engine import create_source_snapshot
+from src.engine.snapshot.engine import create_source_snapshot, load_snapshot_manifest
 
 STAGES = [
     "snapshot", "ingest", "quarantine", "canonical", "hierarchy", "ir",
@@ -54,6 +54,7 @@ def run_pipeline(
     run_id: str | None = None,
     stages: list[str] | None = None,
     skip_large: bool = False,
+    snapshot_id: str | None = None,
 ) -> dict[str, Any]:
     data_root = Path(data_root)
     sources_root = Path(sources_root)
@@ -74,6 +75,7 @@ def run_pipeline(
         "started_at": datetime.now(timezone.utc).isoformat(),
         "stages": {},
         "skip_large": skip_large,
+        "snapshot_id": snapshot_id,
         "v2_runtime_dependency": 0,
         "execution": {"mode": "dag", "layers": []},
     }
@@ -86,11 +88,18 @@ def run_pipeline(
         tmp.replace(path)
 
     def handler_snapshot() -> dict[str, Any]:
+        if snapshot_id:
+            snap_dir = data_root / "snapshots" / snapshot_id
+            manifest = load_snapshot_manifest(snap_dir)
+            context["snapshot"] = manifest
+            results["snapshot_id"] = manifest["snapshot_id"]
+            (run_dir / "snapshot_id.txt").write_text(manifest["snapshot_id"], encoding="utf-8")
+            return {"status": "ok", "snapshot_id": manifest["snapshot_id"], "file_count": manifest.get("file_count", 0), "reused": True}
         manifest = create_source_snapshot(sources_root, data_root / "snapshots", extra_meta={"run_id": run_id, "skip_large": skip_large})
         context["snapshot"] = manifest
         results["snapshot_id"] = manifest["snapshot_id"]
         (run_dir / "snapshot_id.txt").write_text(manifest["snapshot_id"], encoding="utf-8")
-        return {"status": "ok", "snapshot_id": manifest["snapshot_id"], "file_count": manifest.get("file_count", 0)}
+        return {"status": "ok", "snapshot_id": manifest["snapshot_id"], "file_count": manifest.get("file_count", 0), "reused": False}
 
     def handler_ingest() -> dict[str, Any]:
         result = ingest_snapshot(data_root / "snapshots" / context["snapshot"]["snapshot_id"], skip_large=skip_large)
@@ -146,20 +155,7 @@ def run_pipeline(
             register_run(run_dir, data_root / "cas" / "objects")
         return {"status": "ok" if release["can_publish"] else "blocked", "state": release["state"], "can_publish": release["can_publish"], "quality_score": release.get("quality_score")}
 
-    handlers = {
-        "snapshot": handler_snapshot,
-        "ingest": handler_ingest,
-        "quarantine": handler_quarantine,
-        "canonical": handler_canonical,
-        "hierarchy": handler_hierarchy,
-        "ir": handler_ir,
-        "adapters": handler_adapters,
-        "diff": handler_diff,
-        "golden": handler_golden,
-        "observability": handler_observability,
-        "cas": handler_cas,
-        "release": handler_release,
-    }
+    handlers = {"snapshot": handler_snapshot, "ingest": handler_ingest, "quarantine": handler_quarantine, "canonical": handler_canonical, "hierarchy": handler_hierarchy, "ir": handler_ir, "adapters": handler_adapters, "diff": handler_diff, "golden": handler_golden, "observability": handler_observability, "cas": handler_cas, "release": handler_release}
 
     def checkpoint(layer: list[str], all_results: dict[str, Any]) -> None:
         results["execution"]["layers"].append(list(layer))
