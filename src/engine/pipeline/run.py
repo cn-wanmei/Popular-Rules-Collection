@@ -1,4 +1,4 @@
-"""Engine pipeline — writes under data/generated/; publish → generated/."""
+"""Engine pipeline — data/generated/ workspace; publish → generated/."""
 from __future__ import annotations
 
 import json
@@ -9,12 +9,16 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 
 STAGES_ALL = (
-    "canonical", "hierarchy", "ir", "ir_full", "adapters", "diff",
+    "naming_gate", "canonical", "hierarchy", "ir", "ir_full", "adapters", "diff",
     "snapshot", "quarantine", "golden", "release", "publish",
 )
 
 
 def _run_stage(name: str) -> int:
+    if name == "naming_gate":
+        from src.engine.validation.naming_gate import main as naming_main
+        return naming_main()
+
     from src.engine.canonical.store import build_from_v2_services, load_memberships, load_rules
     from src.engine.legacy_import.v2_service_model import load_entity_graph
     from src.engine.hierarchy.resolver import resolve_aggregate
@@ -42,7 +46,7 @@ def _run_stage(name: str) -> int:
         return 0
     if name == "quarantine":
         r = evaluate_health_yaml(ROOT, data / "quarantine" / "state.json")
-        print(f"[engine] quarantine evaluated={r['evaluated']} quarantined={r['quarantined']}")
+        print(f"[engine] quarantine evaluated={r['evaluated']} accepted={r['accepted']} quarantined={r['quarantined']}")
         return 0
     if name == "golden":
         g = run_golden(ROOT)
@@ -50,11 +54,11 @@ def _run_stage(name: str) -> int:
         return 0 if g["pass"] else 1
     if name == "release":
         doc = write_cutover_manifest(ROOT, version=__version__)
-        print(f"[engine] release status={doc['status']} version={doc['version']} cutover={doc['production_cutover']}")
+        print(f"[engine] release status={doc['status']} version={doc.get('product_version') or doc.get('version')} cutover={doc['production_cutover']}")
         return 0 if doc["status"] == "RC_READY" else 1
     if name == "publish":
-        r = publish_artifacts_to_production(ROOT)
-        print(f"[engine] publish ok={r.get('ok')} {r.get('copied')}")
+        r = publish_artifacts_to_production(ROOT, dry_run=False)
+        print(f"[engine] publish ok={r.get('ok')} copied={r.get('copied')}")
         return 0 if r.get("ok") else 1
 
     graph = load_entity_graph(sm_dir)
@@ -104,13 +108,14 @@ def _run_stage(name: str) -> int:
     return 2
 
 
-def main(argv=None) -> int:
+def main(argv: list[str] | None = None) -> int:
     argv = argv if argv is not None else sys.argv[1:]
     stage = argv[0] if argv else "all"
     if stage == "all":
         for s in STAGES_ALL:
             r = subprocess.run([sys.executable, "-m", "src.engine.cli", s], cwd=str(ROOT))
             if r.returncode != 0:
+                print(f"[engine] stage failed: {s}", file=sys.stderr)
                 return r.returncode
         print("[engine] pipeline all done → data/generated/ + generated/")
         return 0
