@@ -5,8 +5,6 @@ import time
 from pathlib import Path
 from typing import Iterable
 
-from src.engine.cas.run_store import MUTABLE_RUN_FILES
-
 
 def referenced_digests(run_roots: Iterable[Path]) -> set[str]:
     """Collect digests referenced by immutable CAS manifests under run roots."""
