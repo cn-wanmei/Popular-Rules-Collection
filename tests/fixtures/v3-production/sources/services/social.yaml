@@ -1,0 +1,13 @@
+id: social
+name: Social Services
+category: social
+version: 1
+source:
+  - id: fixture
+rules:
+  - type: domain_suffix
+    value: social.example.org
+  - type: domain
+    value: chat.example.org
+  - type: ip_cidr6
+    value: 2001:db8::/32
