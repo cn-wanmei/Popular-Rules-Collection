@@ -9,6 +9,7 @@ from typing import Any
 from src.engine.canonical.store import load_rules, load_memberships
 from src.engine.hierarchy.resolver import load_hierarchy
 from src.engine.decision.engine import decide_batch
+from src.engine.ir.contract import CONTRACT_VERSION, ir_digest, validate_ir
 
 
 def build_ir(canonical_dir: Path, hierarchy_dir: Path, out_dir: Path) -> dict[str, Any]:
@@ -71,6 +72,8 @@ def build_ir(canonical_dir: Path, hierarchy_dir: Path, out_dir: Path) -> dict[st
             "decisions": len(decisions),
         },
     }
+    validate_ir(ir)
+    digest = ir_digest(ir)
     (out_dir / "ir.json").write_text(json.dumps(ir, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     with (out_dir / "decisions.jsonl").open("w", encoding="utf-8") as f:
         for d in decisions:
@@ -78,7 +81,9 @@ def build_ir(canonical_dir: Path, hierarchy_dir: Path, out_dir: Path) -> dict[st
     manifest = {
         "schema": "semantic_ir_manifest_v2",
         "ir_schema": "semantic_ir_v2",
+        "contract_version": CONTRACT_VERSION,
         "generated_at": ir["generated_at"],
+        "ir_digest": digest,
         "stats": ir["stats"],
         "v2_runtime_dependency": 0,
     }
