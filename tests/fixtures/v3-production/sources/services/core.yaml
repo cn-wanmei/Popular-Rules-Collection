@@ -1,0 +1,15 @@
+id: core
+name: Core Services
+category: service
+version: 1
+source:
+  - id: fixture
+rules:
+  - type: domain
+    value: api.example.com
+  - type: domain_suffix
+    value: example.com
+  - type: domain_keyword
+    value: login
+  - type: ip_cidr
+    value: 192.0.2.0/24
