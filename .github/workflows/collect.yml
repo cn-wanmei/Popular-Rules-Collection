@@ -39,7 +39,7 @@ jobs:
         id: collection
         run: |
           DAY=$(date -u +%Y-%m-%d)
-          ARGS=(--data data --date "$DAY")
+          ARGS=(--data data --date "$DAY" --workers 12)
           if [ "${{ inputs.skip_large }}" = "true" ]; then
             ARGS+=(--skip-large)
           fi
@@ -71,13 +71,15 @@ jobs:
           test -s "backup/${DAY}/manifests/_collection.json"
           PYTHONPATH=. python - <<'PY'
           import json
+          from datetime import datetime, timezone
           from pathlib import Path
-          day = __import__('datetime').datetime.now(__import__('datetime').timezone.utc).strftime('%Y-%m-%d')
+          day = datetime.now(timezone.utc).strftime('%Y-%m-%d')
           p = Path('backup') / day / 'manifests' / '_collection.json'
           obj = json.loads(p.read_text(encoding='utf-8'))
           assert obj['schema'] == 'collection_manifest_v1'
           assert obj['status'] in {'ok', 'degraded'}
           assert obj['root'] == f'backup/{day}'
+          assert obj.get('manifest_sha256')
           print(f"collection_status={obj['status']} collection_id={obj['collection_id']}")
           PY
 
@@ -252,7 +254,9 @@ jobs:
             reports/ \
             docs/ \
             assets/ \
-            data/ \
+            data/collection/ \
+            data/runs/ \
+            data/cas/ \
             backup/*/manifests/ \
             backup/${DAY}/sources/ \
             || true
