@@ -75,18 +75,20 @@ jobs:
       # ── PHASE 2: V3 owns service-rule normalization + build ────────────
       - name: Engine — one immutable production run
         id: engine
-        env:
-          SKIP_LARGE: ${{ inputs.skip_large }}
         run: |
           DAY=$(date -u +%Y-%m-%d)
+          ENGINE_ARGS=()
+          if [ "${{ inputs.skip_large }}" = "true" ]; then
+            ENGINE_ARGS+=(--skip-large)
+          fi
           set -o pipefail
           PYTHONPATH=. python -m src.engine.cli all \
             --sources "backup/${DAY}" \
-            --data data 2>&1 | tee engine-run.log
-          python3 - "$DAY" <<'PY'
+            --data data \
+            "${ENGINE_ARGS[@]}" 2>&1 | tee engine-run.log
+          python3 <<'PY'
           import json
           import pathlib
-          import sys
           text = pathlib.Path('engine-run.log').read_text(encoding='utf-8', errors='replace')
           start = text.find('{')
           if start < 0:
@@ -101,12 +103,6 @@ jobs:
           pathlib.Path('engine-run-id.txt').write_text(run_id, encoding='utf-8')
           PY
           echo "run_id=$(cat engine-run-id.txt)" >> "$GITHUB_OUTPUT"
-
-      - name: Schema validate (HARD)
-        run: python scripts/schema_validate.py
-
-      - name: Registry validate
-        run: python scripts/validate.py
 
       - name: Dataset diff report
         continue-on-error: true
@@ -218,7 +214,17 @@ jobs:
         continue-on-error: true
         run: python scripts/icon_coverage.py
 
-      # ── PHASE 4: Commit & push ──────────────────────────────────────────
+      # ── PHASE 4: Publish validated V3 run ───────────────────────────────
+      - name: Publish V3 run (HARD)
+        run: |
+          RUN_ID=$(cat engine-run-id.txt)
+          PYTHONPATH=. python -m src.engine.cli promote \
+            --run-id "$RUN_ID" \
+            --runs data/runs \
+            --generated generated \
+            --baseline data/baseline/canonical.json
+
+      # ── PHASE 5: Commit & push ──────────────────────────────────────────
       - name: Commit & push
         run: |
           git config user.name "github-actions[bot]"
