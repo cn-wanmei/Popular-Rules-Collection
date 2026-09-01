@@ -47,6 +47,25 @@ def _new_run_id() -> str:
     return datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ") + "-run"
 
 
+def _load_collection_manifest(sources_root: Path) -> dict[str, Any] | None:
+    """Load the Collection DAG manifest when sources_root is a collection day root."""
+    path = sources_root / "manifests" / "_collection.json"
+    if not path.exists():
+        return None
+    try:
+        manifest = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"Invalid collection manifest: {path}") from exc
+    if manifest.get("schema") != "collection_manifest_v1":
+        raise RuntimeError(f"Unsupported collection manifest schema: {manifest.get('schema')!r}")
+    if manifest.get("status") == "blocked":
+        raise RuntimeError(
+            "Collection DAG is blocked: "
+            + ", ".join(manifest.get("critical_failures") or ["unknown failure"])
+        )
+    return manifest
+
+
 def run_pipeline(
     sources_root: Path,
     data_root: Path,
@@ -58,6 +77,14 @@ def run_pipeline(
 ) -> dict[str, Any]:
     data_root = Path(data_root)
     sources_root = Path(sources_root)
+    collection_manifest = _load_collection_manifest(sources_root)
+    if collection_manifest:
+        collection_root = Path(str(collection_manifest.get("root", "")))
+        if not collection_root.is_absolute():
+            collection_root = ROOT / collection_root
+        if collection_root.resolve() != sources_root.resolve():
+            raise RuntimeError("Collection manifest root does not match Engine sources root")
+
     run_id = run_id or _new_run_id()
     run_dir = data_root / "runs" / run_id
     run_dir.mkdir(parents=True, exist_ok=False)
@@ -70,12 +97,14 @@ def run_pipeline(
     nodes = [Node(stage, tuple(d for d in node_by_name[stage].deps if d in wanted_set)) for stage in STAGES if stage in wanted_set]
 
     results: dict[str, Any] = {
-        "schema": "engine_run_v4",
+        "schema": "engine_run_v5",
         "run_id": run_id,
         "started_at": datetime.now(timezone.utc).isoformat(),
         "stages": {},
         "skip_large": skip_large,
         "snapshot_id": snapshot_id,
+        "collection_id": collection_manifest.get("collection_id") if collection_manifest else None,
+        "collection_manifest": str((sources_root / "manifests" / "_collection.json").relative_to(ROOT)) if collection_manifest else None,
         "v2_runtime_dependency": 0,
         "execution": {"mode": "dag", "layers": []},
     }
@@ -95,7 +124,7 @@ def run_pipeline(
             results["snapshot_id"] = manifest["snapshot_id"]
             (run_dir / "snapshot_id.txt").write_text(manifest["snapshot_id"], encoding="utf-8")
             return {"status": "ok", "snapshot_id": manifest["snapshot_id"], "file_count": manifest.get("file_count", 0), "reused": True}
-        manifest = create_source_snapshot(sources_root, data_root / "snapshots", extra_meta={"run_id": run_id, "skip_large": skip_large})
+        manifest = create_source_snapshot(sources_root, data_root / "snapshots", extra_meta={"run_id": run_id, "skip_large": skip_large, "collection_id": results.get("collection_id")})
         context["snapshot"] = manifest
         results["snapshot_id"] = manifest["snapshot_id"]
         (run_dir / "snapshot_id.txt").write_text(manifest["snapshot_id"], encoding="utf-8")
@@ -173,3 +202,7 @@ def run_pipeline(
         results["failure_stages"] = failures
     persist()
     return results
+
+
+# project root is derived from this module path
+ROOT = Path(__file__).resolve().parents[3]

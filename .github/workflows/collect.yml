@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       skip_large:
-        description: "Skip mega lists (adblock/china/proxy) for a fast run"
+        description: "Skip mega service sets for a fast Engine run"
         type: boolean
         default: false
 
@@ -35,45 +35,53 @@ jobs:
       - name: Naming gate (HARD)
         run: PYTHONPATH=. python -m src.engine.cli naming_gate
 
-      # ── PHASE 1: Upstream collection ──────────────────────────────────
-      - name: Validate source registry
-        run: python scripts/validate_registry.py
+      - name: Collection DAG
+        id: collection
+        run: |
+          DAY=$(date -u +%Y-%m-%d)
+          ARGS=(--data data --date "$DAY")
+          if [ "${{ inputs.skip_large }}" = "true" ]; then
+            ARGS+=(--skip-large)
+          fi
+          set -o pipefail
+          PYTHONPATH=. python -m src.engine.collection "${ARGS[@]}" 2>&1 | tee collection-run.log
+          python3 <<'PY'
+          import json
+          from pathlib import Path
+          text = Path('collection-run.log').read_text(encoding='utf-8', errors='replace')
+          start = text.find('{')
+          if start < 0:
+              raise SystemExit('collection JSON result not found')
+          obj = json.loads(text[start:])
+          if obj.get('status') == 'blocked':
+              raise SystemExit(f"collection blocked: {obj.get('critical_failures')}")
+          cid = obj.get('collection_id')
+          root = obj.get('root')
+          if not cid or not root:
+              raise SystemExit('collection_id/root missing')
+          Path('collection-id.txt').write_text(cid, encoding='utf-8')
+          Path('collection-root.txt').write_text(root, encoding='utf-8')
+          PY
+          echo "collection_id=$(cat collection-id.txt)" >> "$GITHUB_OUTPUT"
+          echo "collection_root=$(cat collection-root.txt)" >> "$GITHUB_OUTPUT"
 
-      - name: Collect upstream rules
-        run: python scripts/collect.py
+      - name: Collection Manifest (HARD)
+        run: |
+          DAY=$(date -u +%Y-%m-%d)
+          test -s "backup/${DAY}/manifests/_collection.json"
+          PYTHONPATH=. python - <<'PY'
+          import json
+          from pathlib import Path
+          day = __import__('datetime').datetime.now(__import__('datetime').timezone.utc).strftime('%Y-%m-%d')
+          p = Path('backup') / day / 'manifests' / '_collection.json'
+          obj = json.loads(p.read_text(encoding='utf-8'))
+          assert obj['schema'] == 'collection_manifest_v1'
+          assert obj['status'] in {'ok', 'degraded'}
+          assert obj['root'] == f'backup/{day}'
+          print(f"collection_status={obj['status']} collection_id={obj['collection_id']}")
+          PY
 
-      - name: Validate IP registry
-        run: python scripts/validate_ip_registry.py
-
-      - name: Collect IP rules
-        run: python scripts/collect_ip.py
-
-      - name: IP quality audit (soft)
-        continue-on-error: true
-        run: python scripts/ip_quality_audit.py
-
-      - name: Validate dataset registry
-        run: python scripts/validate_dataset_registry.py
-
-      - name: Build network LAN datasets
-        run: python scripts/build_network_lan.py
-
-      - name: Collect datasets
-        run: python scripts/collect_datasets.py
-
-      - name: Build network datasets
-        run: python scripts/build_network_datasets.py
-
-      - name: Collect providers (soft)
-        continue-on-error: true
-        run: python scripts/collect_providers.py
-
-      - name: Build provider datasets (soft)
-        continue-on-error: true
-        run: python scripts/build_provider_datasets.py
-
-      # ── PHASE 2: V3 owns service-rule normalization + build ────────────
-      - name: Engine — one immutable production run
+      - name: Engine — one immutable production DAG run
         id: engine
         run: |
           DAY=$(date -u +%Y-%m-%d)
@@ -88,23 +96,24 @@ jobs:
             "${ENGINE_ARGS[@]}" 2>&1 | tee engine-run.log
           python3 <<'PY'
           import json
-          import pathlib
-          text = pathlib.Path('engine-run.log').read_text(encoding='utf-8', errors='replace')
+          from pathlib import Path
+          text = Path('engine-run.log').read_text(encoding='utf-8', errors='replace')
           start = text.find('{')
           if start < 0:
               raise SystemExit('engine JSON result not found')
           obj = json.loads(text[start:])
           if obj.get('status') != 'ok':
-              raise SystemExit(f"engine status={obj.get('status')}")
+              raise SystemExit(f"engine status={obj.get('status')} failures={obj.get('failure_stages')}")
+          if not obj.get('collection_id'):
+              raise SystemExit('engine did not bind collection_id')
           run_id = obj.get('run_id')
           if not run_id:
               raise SystemExit('engine run_id missing')
-          print(f"run_id={run_id}")
-          pathlib.Path('engine-run-id.txt').write_text(run_id, encoding='utf-8')
+          Path('engine-run-id.txt').write_text(run_id, encoding='utf-8')
           PY
           echo "run_id=$(cat engine-run-id.txt)" >> "$GITHUB_OUTPUT"
 
-      - name: Dataset diff report
+      - name: Legacy dataset diff report
         continue-on-error: true
         run: python scripts/dataset_diff.py
 
@@ -172,11 +181,6 @@ jobs:
         continue-on-error: true
         run: python scripts/generate_links.py
 
-      # ── PHASE 3: Icon pipeline ──────────────────────────────────────────
-      - name: Sync service icons (soft)
-        continue-on-error: true
-        run: python scripts/sync_service_icons.py
-
       - name: Icon build (soft)
         continue-on-error: true
         run: |
@@ -214,7 +218,6 @@ jobs:
         continue-on-error: true
         run: python scripts/icon_coverage.py
 
-      # ── PHASE 4: Publish validated V3 run ───────────────────────────────
       - name: Publish V3 run (HARD)
         run: |
           RUN_ID=$(cat engine-run-id.txt)
@@ -224,7 +227,6 @@ jobs:
             --generated generated \
             --baseline data/baseline/canonical.json
 
-      # ── PHASE 5: Commit & push ──────────────────────────────────────────
       - name: Commit & push
         run: |
           git config user.name "github-actions[bot]"
