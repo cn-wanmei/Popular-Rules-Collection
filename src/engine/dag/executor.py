@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
+from time import monotonic
 from typing import Callable, Any
 
 
@@ -32,6 +33,15 @@ def topological_layers(nodes: list[Node]) -> list[list[str]]:
         done.update(ready)
         remaining.difference_update(ready)
     return layers
+
+
+def _with_duration(value: Any, started: float) -> Any:
+    duration_ms = round((monotonic() - started) * 1000, 3)
+    if isinstance(value, dict):
+        result = dict(value)
+        result.setdefault("duration_ms", duration_ms)
+        return result
+    return {"status": "ok", "value": value, "duration_ms": duration_ms}
 
 
 def execute(
@@ -65,16 +75,16 @@ def execute(
 
         if ready:
             with ThreadPoolExecutor(max_workers=min(max_workers, len(ready)), thread_name_prefix="engine-dag") as pool:
-                futures = {pool.submit(handlers[name]): name for name in ready}
+                futures = {pool.submit(handlers[name]): (name, monotonic()) for name in ready}
                 for future in as_completed(futures):
-                    name = futures[future]
+                    name, started = futures[future]
                     try:
-                        value = future.result()
+                        value = _with_duration(future.result(), started)
                         results[name] = value
                         if isinstance(value, dict) and value.get("status") in {"blocked", "failed", "skipped"}:
                             failed.add(name)
                     except Exception as exc:
-                        results[name] = {"status": "failed", "error": f"{type(exc).__name__}: {exc}"}
+                        results[name] = {"status": "failed", "error": f"{type(exc).__name__}: {exc}", "duration_ms": round((monotonic() - started) * 1000, 3)}
                         failed.add(name)
                         if fail_fast:
                             raise
