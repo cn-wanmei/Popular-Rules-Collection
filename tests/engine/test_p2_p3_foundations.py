@@ -21,7 +21,9 @@ def test_dag_layers_and_parallel_ready_nodes() -> None:
     assert topological_layers(nodes) == [["snapshot"], ["ingest"], ["canonical"], ["diff", "golden"]]
     seen: list[str] = []
     result = execute(nodes, {"snapshot": lambda: seen.append("snapshot") or 1, "ingest": lambda: 2, "canonical": lambda: 3, "diff": lambda: 4, "golden": lambda: 5})
-    assert result["golden"] == 5
+    assert result["golden"]["status"] == "ok"
+    assert result["golden"]["value"] == 5
+    assert result["golden"]["duration_ms"] >= 0
     assert seen == ["snapshot"]
 
 
