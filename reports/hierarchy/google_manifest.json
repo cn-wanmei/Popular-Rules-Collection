@@ -2,8 +2,8 @@
   "view": "google",
   "kind": "aggregate",
   "schema": 1,
-  "resolver_version": "v2.5.0",
-  "generated_at": "2026-08-31T14:46:57.421193+00:00",
+  "resolver_version": "v2.7-frozen",
+  "generated_at": "2026-09-01T01:09:48.865763+00:00",
   "members": [
     "google-core",
     "google-shared",
@@ -17,5 +17,6 @@
     "google-search": 0
   },
   "canonical_rule_count": 1210,
-  "sha256": "26a54e71cd4fa3a40712e6b16c3a6130dfe65673a32eb7e790ff7e0cce4cc9f6"
+  "sha256": "26a54e71cd4fa3a40712e6b16c3a6130dfe65673a32eb7e790ff7e0cce4cc9f6",
+  "note": "V2 freeze: legacy_body mapping remains for oracle only"
 }

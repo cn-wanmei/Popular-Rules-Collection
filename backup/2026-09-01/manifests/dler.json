@@ -1,0 +1,213 @@
+{
+  "source": "dler",
+  "fetch": "github_raw",
+  "timestamp": "2026-09-01T01:01:24.734633+00:00",
+  "files_ok": 20,
+  "files_failed": 0,
+  "empty_blocked": 0,
+  "rules_declared": 20,
+  "files": [
+    {
+      "name": "Dler_AI_Suite.yaml",
+      "path": "Clash/Provider/AI Suite.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/AI%20Suite.yaml",
+      "service": "aisuite",
+      "local": "sources/dler/Dler_AI_Suite.yaml",
+      "size": 4967,
+      "sha256": "489f445e5e3b1b1350028ad5b7fe16efb975d6bf02684cf9b65362cc7518e4e0",
+      "status": "ok"
+    },
+    {
+      "name": "Dler_Apple.yaml",
+      "path": "Clash/Provider/Apple.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Apple.yaml",
+      "service": "apple",
+      "local": "sources/dler/Dler_Apple.yaml",
+      "size": 999,
+      "sha256": "c3eb519ac06a32b528dae4f7cdce2052cc92428829cef566e6b659e312e5001d",
+      "status": "ok"
+    },
+    {
+      "name": "Dler_Microsoft.yaml",
+      "path": "Clash/Provider/Microsoft.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Microsoft.yaml",
+      "service": "microsoft",
+      "local": "sources/dler/Dler_Microsoft.yaml",
+      "size": 20307,
+      "sha256": "a94fa5282e16176d8a8c0ec96fcc79e4ad715ca7b2f97cfc388c27fc3ba15e9d",
+      "status": "ok"
+    },
+    {
+      "name": "Dler_Telegram.yaml",
+      "path": "Clash/Provider/Telegram.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Telegram.yaml",
+      "service": "telegram",
+      "local": "sources/dler/Dler_Telegram.yaml",
+      "size": 1129,
+      "sha256": "443e2c8ca6f95649b96d2f90ddd392f19db3b598397fb3a40fb0202958b9d409",
+      "status": "ok"
+    },
+    {
+      "name": "Dler_Discord.yaml",
+      "path": "Clash/Provider/Discord.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Discord.yaml",
+      "service": "discord",
+      "local": "sources/dler/Dler_Discord.yaml",
+      "size": 214,
+      "sha256": "70db49b16cf0f48263bbb1b8fc8f34fe2e4ad5e97eecb34bc64e68ba04be84da",
+      "status": "ok"
+    },
+    {
+      "name": "Dler_Steam.yaml",
+      "path": "Clash/Provider/Steam.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Steam.yaml",
+      "service": "steam",
+      "local": "sources/dler/Dler_Steam.yaml",
+      "size": 261,
+      "sha256": "e23bf53f287982b684480abfb495a435ae4ac342c7033d588820ee5c315cf375",
+      "status": "ok"
+    },
+    {
+      "name": "Dler_TikTok.yaml",
+      "path": "Clash/Provider/TikTok.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/TikTok.yaml",
+      "service": "tiktok",
+      "local": "sources/dler/Dler_TikTok.yaml",
+      "size": 414,
+      "sha256": "6464476d09c14a77c14debbf4334802e15cd64c1acbf83f9e0af0a36dfbe8d25",
+      "status": "ok"
+    },
+    {
+      "name": "Dler_PayPal.yaml",
+      "path": "Clash/Provider/PayPal.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/PayPal.yaml",
+      "service": "paypal",
+      "local": "sources/dler/Dler_PayPal.yaml",
+      "size": 138,
+      "sha256": "92125b9a35a19649d6dbfd25170255fe012d1122b7924a0a40e948f183382c90",
+      "status": "ok"
+    },
+    {
+      "name": "Dler_Scholar.yaml",
+      "path": "Clash/Provider/Scholar.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Scholar.yaml",
+      "service": "scholar",
+      "local": "sources/dler/Dler_Scholar.yaml",
+      "size": 2536,
+      "sha256": "faa165b65abb438f8deb1f47b865a8b8f2468b890e358ce0fbf4f0e11c4c9f9d",
+      "status": "ok"
+    },
+    {
+      "name": "Dler_Google_FCM.yaml",
+      "path": "Clash/Provider/Google FCM.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Google%20FCM.yaml",
+      "service": "googlefcm",
+      "local": "sources/dler/Dler_Google_FCM.yaml",
+      "size": 1742,
+      "sha256": "6ff465654be3a8c6014f2d4ca2f2d6bb54dc6af1cbb8a2f16c216c1fce8a0564",
+      "status": "ok"
+    },
+    {
+      "name": "Dler_Douyin.yaml",
+      "path": "Clash/Provider/Douyin.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Douyin.yaml",
+      "service": "douyin",
+      "local": "sources/dler/Dler_Douyin.yaml",
+      "size": 201,
+      "sha256": "dddeb2d0512972a3609b09cbea920db345f730157f68a844e4b1eff6b56414ad",
+      "status": "ok"
+    },
+    {
+      "name": "Dler_miHoYo.yaml",
+      "path": "Clash/Provider/miHoYo.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/miHoYo.yaml",
+      "service": "hoyoverse",
+      "local": "sources/dler/Dler_miHoYo.yaml",
+      "size": 229,
+      "sha256": "f8c4251c9633ed5c3a7e4bb1512518358513fa97ea20161f9e2f85b6ed48996c",
+      "status": "ok"
+    },
+    {
+      "name": "Dler_Netflix.yaml",
+      "path": "Clash/Provider/Media/Netflix.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Netflix.yaml",
+      "service": "netflix",
+      "local": "sources/dler/Dler_Netflix.yaml",
+      "size": 233,
+      "sha256": "0fb5d3da2088c616358c4778380c8408ab974ea26f4a94dcf71314ecd9f549bd",
+      "status": "ok"
+    },
+    {
+      "name": "Dler_Spotify.yaml",
+      "path": "Clash/Provider/Media/Spotify.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Spotify.yaml",
+      "service": "spotify",
+      "local": "sources/dler/Dler_Spotify.yaml",
+      "size": 227,
+      "sha256": "4d01e0d25745ebcf9349648070500831680fff031a9577b83d83d72bb59468c0",
+      "status": "ok"
+    },
+    {
+      "name": "Dler_YouTube.yaml",
+      "path": "Clash/Provider/Media/YouTube.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/YouTube.yaml",
+      "service": "youtube",
+      "local": "sources/dler/Dler_YouTube.yaml",
+      "size": 5252,
+      "sha256": "d3885815263cc639ca85799021f0be21a4eee5dc96c8c81104f471e1617e3723",
+      "status": "ok"
+    },
+    {
+      "name": "Dler_Disney.yaml",
+      "path": "Clash/Provider/Media/Disney Plus.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Disney%20Plus.yaml",
+      "service": "disney",
+      "local": "sources/dler/Dler_Disney.yaml",
+      "size": 400,
+      "sha256": "bd1c53fbe0411875e8a93c0bf8acaa7a1049b78c71f70c491fb66c97c20e5076",
+      "status": "ok"
+    },
+    {
+      "name": "Dler_Bilibili.yaml",
+      "path": "Clash/Provider/Media/Bilibili.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Bilibili.yaml",
+      "service": "bilibili",
+      "local": "sources/dler/Dler_Bilibili.yaml",
+      "size": 685,
+      "sha256": "51121b958664b6d9909df5fc29668c9f5819dd80fb6b33d5fbc287f2523e281e",
+      "status": "ok"
+    },
+    {
+      "name": "Dler_Soundcloud.yaml",
+      "path": "Clash/Provider/Media/Soundcloud.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Soundcloud.yaml",
+      "service": "soundcloud",
+      "local": "sources/dler/Dler_Soundcloud.yaml",
+      "size": 195,
+      "sha256": "4bf85a85d3a527c297e8ca2e56de63f58adfa0c2faefa5f739118211eec6bfec",
+      "status": "ok"
+    },
+    {
+      "name": "Dler_YouTubeMusic.yaml",
+      "path": "Clash/Provider/Media/YouTube Music.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/YouTube%20Music.yaml",
+      "service": "youtubemusic",
+      "local": "sources/dler/Dler_YouTubeMusic.yaml",
+      "size": 136,
+      "sha256": "bfbe120a66297da2dcfce510538b823b4961c460c0b9e571829ec6ed8c75b29d",
+      "status": "ok"
+    },
+    {
+      "name": "Dler_BBC.yaml",
+      "path": "Clash/Provider/Media/BBC iPlayer.yaml",
+      "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/BBC%20iPlayer.yaml",
+      "service": "bbc",
+      "local": "sources/dler/Dler_BBC.yaml",
+      "size": 334,
+      "sha256": "a6fb79cf276f157ad751bcd2f704845e9dabe2f3e470ab35edf8271e05e426be",
+      "status": "ok"
+    }
+  ],
+  "registry_priority": 80,
+  "registry_trust": "high"
+}

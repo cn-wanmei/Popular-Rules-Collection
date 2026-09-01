@@ -1,15 +1,21 @@
 {
   "version": 1,
-  "generated_at": "2026-08-31T14:46:56.126670+00:00",
+  "generated_at": "2026-09-01T01:07:15.079560+00:00",
   "truth_layer": "artifact_manifest",
   "distribution_note": "Release is carrier only",
   "layout_version": 1,
-  "artifact_count": 77,
+  "artifact_count": 83,
   "artifacts": [
     {
+      "path": "generated/ir/rules.jsonl",
+      "bytes": 80573191,
+      "sha256": "2dfd0016a8c0219ccb4360ca6cdde9b185d6695771dc15f2dcf36806636220f3",
+      "channel": "release_preferred"
+    },
+    {
       "path": "generated/routing/decisions.jsonl",
-      "bytes": 18133311,
-      "sha256": "8239df4b1eeb0c714972963a6419c8ea0b72db1dbde1b7410680a1ae5355ce61",
+      "bytes": 18123686,
+      "sha256": "7d3a4a6e58b8aa12b69cd64064bf1411ab70c7aba9a9d2ae9f9031c0f0f59dff",
       "channel": "release_preferred"
     },
     {
@@ -26,6 +32,12 @@
     },
     {
       "path": "backup/2026-08-31/datasets/dat-geoip.bin",
+      "bytes": 17224069,
+      "sha256": "0d5d2ba0c5a5c58027fd1347a6afd57c9470799b6bb3cbc274fd4657ed8de382",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-09-01/datasets/dat-geoip.bin",
       "bytes": 17224069,
       "sha256": "0d5d2ba0c5a5c58027fd1347a6afd57c9470799b6bb3cbc274fd4657ed8de382",
       "channel": "release_preferred"
@@ -104,6 +116,12 @@
     },
     {
       "path": "backup/2026-08-31/datasets/mmdb-asn.bin",
+      "bytes": 12079074,
+      "sha256": "93456017eef970e7e60ab66312402b2130bb233af792a5aa30b2ff4de854c5cf",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-09-01/datasets/mmdb-asn.bin",
       "bytes": 12079074,
       "sha256": "93456017eef970e7e60ab66312402b2130bb233af792a5aa30b2ff4de854c5cf",
       "channel": "release_preferred"
@@ -188,6 +206,18 @@
     },
     {
       "path": "backup/2026-08-31/datasets/mmdb-country.bin",
+      "bytes": 7866385,
+      "sha256": "fe721d5e47d320b2a23db4eafddb796a22026ef01899bbe7007fc0274016e5f4",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-09-01/datasets/geoip-mmdb.bin",
+      "bytes": 7866385,
+      "sha256": "fe721d5e47d320b2a23db4eafddb796a22026ef01899bbe7007fc0274016e5f4",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-09-01/datasets/mmdb-country.bin",
       "bytes": 7866385,
       "sha256": "fe721d5e47d320b2a23db4eafddb796a22026ef01899bbe7007fc0274016e5f4",
       "channel": "release_preferred"
@@ -284,6 +314,12 @@
     },
     {
       "path": "backup/2026-08-31/datasets/geoip-us.bin",
+      "bytes": 5787378,
+      "sha256": "f2299f17c55c1d68d78759b5124edf6952b9002913c6c34c40240cc0d553cfee",
+      "channel": "release_preferred"
+    },
+    {
+      "path": "backup/2026-09-01/datasets/geoip-us.bin",
       "bytes": 5787378,
       "sha256": "f2299f17c55c1d68d78759b5124edf6952b9002913c6c34c40240cc0d553cfee",
       "channel": "release_preferred"
@@ -441,45 +477,45 @@
     {
       "path": "generated/mmdb/geoip-lite.meta.json",
       "bytes": 538,
-      "sha256": "233d2180f9e12cfe9d7ebea8f3793ecf419815255fbab157cd3f9644b07b3a89",
+      "sha256": "473f130c7393c278ecd24f5eae9ef4dc8ec8b542f3a81a206d790a002d7745eb",
       "channel": "release_preferred"
     },
     {
       "path": "generated/mmdb/geosite.meta.json",
       "bytes": 527,
-      "sha256": "d60ed6fabf7333242874fba323655d9d2cd3cb619b2b69cc41f565e4f1e8e00a",
+      "sha256": "d3507fd83bb53bf9d32e497220cb8dd50c5e5ef96bb70cdf0df94f2e8897cc14",
       "channel": "release_preferred"
     },
     {
       "path": "generated/mmdb/geoip.meta.json",
       "bytes": 520,
-      "sha256": "a883b6273fae87abc5622a109d6c3d7ebc6b43863e460e9682329c4f9ca84121",
+      "sha256": "ed2e3a80e0a5eed3a2d2d03433eb5e3b9f377bc29e5b6c8a955b45e506ad4a6c",
       "channel": "release_preferred"
     },
     {
       "path": "generated/mmdb/ASN.meta.json",
       "bytes": 414,
-      "sha256": "c72d4e3ee494f956c779551b435165079dd553afd30ad06b1806662f602b601c",
+      "sha256": "f37643b22e7aa6eace01f1f0658ea20c670a1c0a16c7cd880e275474efb3aa26",
       "channel": "release_preferred"
     },
     {
       "path": "generated/mmdb/Country.meta.json",
       "bytes": 408,
-      "sha256": "f04c53e7cd67d726baa9dcca4b8332448ad6763a02fb1a7d7a84eee5836a55e3",
+      "sha256": "94cde4f89ca4c687bfad9c6260b9ae2b45c0b9f0e4b655327280605a658377b0",
       "channel": "release_preferred"
     }
   ],
   "decision_meta": {
     "contract_version": 2,
     "engine": "routing_emit-1",
-    "generated_at": "2026-08-31T14:46:54.833154+00:00",
-    "decision_digest": "8239df4b1eeb0c714972963a6419c8ea0b72db1dbde1b7410680a1ae5355ce61",
+    "generated_at": "2026-09-01T01:07:13.492134+00:00",
+    "decision_digest": "7d3a4a6e58b8aa12b69cd64064bf1411ab70c7aba9a9d2ae9f9031c0f0f59dff",
     "counts": {
-      "domains": 142130,
-      "direct": 112206,
-      "proxy": 29924,
+      "domains": 142055,
+      "direct": 112123,
+      "proxy": 29932,
       "reject": 0,
-      "conflicts": 1299
+      "conflicts": 1300
     },
     "ssot": "generated/routing/decisions.jsonl",
     "derivatives": [
@@ -489,5 +525,19 @@
       "conflicts.json"
     ],
     "semantic_uniqueness": true
+  },
+  "ir_meta": {
+    "generated_at": "2026-08-31T14:47:52.652962+00:00",
+    "rules": 291187,
+    "by_type": {
+      "domain_suffix": 289313,
+      "domain": 1141,
+      "domain_keyword": 65,
+      "ip_cidr": 456,
+      "ip_cidr6": 68,
+      "domain_regex": 144
+    },
+    "ir_digest": "f3e02c8e30bd3b5784f3bd7ec65c457da1fdac1b2cd3d74d967a9c2e2a8a0469",
+    "decision_digest": "8239df4b1eeb0c714972963a6419c8ea0b72db1dbde1b7410680a1ae5355ce61"
   }
 }

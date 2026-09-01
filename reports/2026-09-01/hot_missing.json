@@ -1,0 +1,650 @@
+{
+  "date": "2026-09-01",
+  "hot_watch": [
+    {
+      "service": "qwen",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_dedicated_upstream_aliyun_is_not_qwen"
+    },
+    {
+      "service": "kimi",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "yuanbao",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "wenxiaoyan",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "deepseek",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "doubao",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "mistral",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "midjourney",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "openai",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "claude",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "gemini",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "perplexity",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "xai",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "groq",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "snapchat",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "signal",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "threads",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "bluesky",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "mastodon",
+      "status": "NOT_IN_PRIMARY",
+      "code": "NOT_REGISTERED",
+      "reason": "not in service_primary"
+    },
+    {
+      "service": "temu",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "COVERED_BY_AGGREGATE",
+      "reason": "no_dedicated_temu_use_pinduoduo_aggregate"
+    },
+    {
+      "service": "aliexpress",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "etsy",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "shopee",
+      "status": "NOT_IN_PRIMARY",
+      "code": "NOT_REGISTERED",
+      "reason": "not in service_primary"
+    },
+    {
+      "service": "lazada",
+      "status": "NOT_IN_PRIMARY",
+      "code": "NOT_REGISTERED",
+      "reason": "not in service_primary"
+    },
+    {
+      "service": "crunchyroll",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "tidal",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "roblox",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "minecraft",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "npm",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "pypi",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "supabase",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "cursor",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "googlemaps",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "COVERED_BY_AGGREGATE",
+      "reason": "no_dedicated_upstream_use_google_aggregate"
+    },
+    {
+      "service": "googledrive",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "COVERED_BY_AGGREGATE",
+      "reason": "no_dedicated_upstream_use_google_aggregate"
+    }
+  ],
+  "all_audited": [
+    {
+      "service": "adblock-light",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "hagezi_profile_deferred"
+    },
+    {
+      "service": "adblock-pro",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "hagezi_profile_deferred"
+    },
+    {
+      "service": "aliexpress",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "amazonaws",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "COVERED_BY_AGGREGATE",
+      "reason": "covered_by_aws_amazon_aggregate"
+    },
+    {
+      "service": "applications",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "generic_bucket_no_dedicated_upstream"
+    },
+    {
+      "service": "asana",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "baidumap",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "COVERED_BY_AGGREGATE",
+      "reason": "no_verified_upstream_covered_by_baidu"
+    },
+    {
+      "service": "baidupan",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "COVERED_BY_AGGREGATE",
+      "reason": "no_verified_upstream_covered_by_baidu"
+    },
+    {
+      "service": "blizzard",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "MAPS_TO",
+      "reason": "maps_to_battlenet"
+    },
+    {
+      "service": "bluesky",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "bosszhipin",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "claude",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "crunchyroll",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "cursor",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "deepseek",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "dingtalk",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "COVERED_BY_AGGREGATE",
+      "reason": "covered_by_alibaba_aggregate"
+    },
+    {
+      "service": "discoveryplus",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "doubao",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "etsy",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "expedia",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "gcp",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "gemini",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "googledrive",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "COVERED_BY_AGGREGATE",
+      "reason": "no_dedicated_upstream_use_google_aggregate"
+    },
+    {
+      "service": "googlemaps",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "COVERED_BY_AGGREGATE",
+      "reason": "no_dedicated_upstream_use_google_aggregate"
+    },
+    {
+      "service": "groq",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "jdfinance",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "COVERED_BY_AGGREGATE",
+      "reason": "no_verified_upstream_covered_by_jingdong"
+    },
+    {
+      "service": "kimi",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "lan",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "local_network_no_public_upstream"
+    },
+    {
+      "service": "lazada",
+      "status": "NOT_IN_PRIMARY",
+      "code": "NOT_REGISTERED",
+      "reason": "not in service_primary"
+    },
+    {
+      "service": "lyft",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "mastodon",
+      "status": "NOT_IN_PRIMARY",
+      "code": "NOT_REGISTERED",
+      "reason": "not in service_primary"
+    },
+    {
+      "service": "midjourney",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "minecraft",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "mistral",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "npm",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "ntp",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "protocol_service_no_domain_ruleset"
+    },
+    {
+      "service": "openai",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "origin",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "MAPS_TO",
+      "reason": "maps_to_ea"
+    },
+    {
+      "service": "perplexity",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "pypi",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "qq",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "COVERED_BY_AGGREGATE",
+      "reason": "no_verified_upstream_dead_bm_path_covered_by_tencent"
+    },
+    {
+      "service": "qqmusic",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "quickpass",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "COVERED_BY_AGGREGATE",
+      "reason": "no_verified_upstream_covered_by_unionpay"
+    },
+    {
+      "service": "qwen",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_dedicated_upstream_aliyun_is_not_qwen"
+    },
+    {
+      "service": "revolut",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "roblox",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "shopee",
+      "status": "NOT_IN_PRIMARY",
+      "code": "NOT_REGISTERED",
+      "reason": "not in service_primary"
+    },
+    {
+      "service": "signal",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "siri",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "COVERED_BY_AGGREGATE",
+      "reason": "covered_by_apple_aggregate"
+    },
+    {
+      "service": "snapchat",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "steamcn",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "COVERED_BY_AGGREGATE",
+      "reason": "covered_by_steam_china_paths"
+    },
+    {
+      "service": "stripe",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "keyword_only_empty_domain_set"
+    },
+    {
+      "service": "supabase",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "taobao",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "COVERED_BY_AGGREGATE",
+      "reason": "no_verified_upstream_dead_bm_path_covered_by_alibaba"
+    },
+    {
+      "service": "temu",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "COVERED_BY_AGGREGATE",
+      "reason": "no_dedicated_temu_use_pinduoduo_aggregate"
+    },
+    {
+      "service": "threads",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "tidal",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "wenxiaoyan",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    },
+    {
+      "service": "xai",
+      "status": "MATERIALIZED",
+      "code": "MATERIALIZED",
+      "reason": "ok"
+    },
+    {
+      "service": "yuanbao",
+      "status": "INTENTIONAL_UNMATERIALIZED",
+      "code": "NO_UPSTREAM",
+      "reason": "no_verified_upstream"
+    }
+  ],
+  "by_code": {
+    "MATERIALIZED": [
+      "adblock-light",
+      "adblock-pro",
+      "bluesky",
+      "claude",
+      "cursor",
+      "deepseek",
+      "doubao",
+      "gemini",
+      "groq",
+      "minecraft",
+      "openai",
+      "perplexity",
+      "roblox",
+      "signal",
+      "snapchat",
+      "stripe",
+      "threads",
+      "tidal",
+      "xai"
+    ],
+    "NO_UPSTREAM": [
+      "aliexpress",
+      "applications",
+      "asana",
+      "bosszhipin",
+      "crunchyroll",
+      "discoveryplus",
+      "etsy",
+      "expedia",
+      "gcp",
+      "kimi",
+      "lan",
+      "lyft",
+      "midjourney",
+      "mistral",
+      "npm",
+      "ntp",
+      "pypi",
+      "qqmusic",
+      "qwen",
+      "revolut",
+      "supabase",
+      "wenxiaoyan",
+      "yuanbao"
+    ],
+    "COVERED_BY_AGGREGATE": [
+      "amazonaws",
+      "baidumap",
+      "baidupan",
+      "dingtalk",
+      "googledrive",
+      "googlemaps",
+      "jdfinance",
+      "qq",
+      "quickpass",
+      "siri",
+      "steamcn",
+      "taobao",
+      "temu"
+    ],
+    "MAPS_TO": [
+      "blizzard",
+      "origin"
+    ],
+    "NOT_REGISTERED": [
+      "lazada",
+      "mastodon",
+      "shopee"
+    ]
+  },
+  "counts": {
+    "MATERIALIZED": 19,
+    "NO_UPSTREAM": 23,
+    "COVERED_BY_AGGREGATE": 13,
+    "MAPS_TO": 2,
+    "NOT_REGISTERED": 3
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "errors": 0,
+  "warnings": 1,
+  "stats": {
+    "services": 184,
+    "domains": 836744,
+    "ips": 13976,
+    "invalid_domains": 0,
+    "invalid_cidrs": 0,
+    "empty_generated": 1,
+    "generated_files": 1921,
+    "stale_domain_set": 0
+  },
+  "error_samples": [],
+  "warning_samples": [
+    "empty generated (no expected rules): generated/routing/reject.list"
+  ]
+}

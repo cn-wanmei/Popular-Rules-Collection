@@ -1,0 +1,60 @@
+{
+  "ok": 6,
+  "failed": 0,
+  "results": {
+    "provider-cloudflare": {
+      "id": "provider-cloudflare",
+      "scope": "provider",
+      "path": "database/provider/cloudflare.txt",
+      "lines": 15,
+      "fetched_at": "2026-09-01T01:05:16.751213+00:00",
+      "source_url": "https://www.cloudflare.com/ips-v4",
+      "notes": "Provider \u2260 Service"
+    },
+    "provider-cloudflare-v6": {
+      "id": "provider-cloudflare-v6",
+      "scope": "provider",
+      "path": "database/provider/cloudflare6.txt",
+      "lines": 7,
+      "fetched_at": "2026-09-01T01:05:16.751213+00:00",
+      "source_url": "https://www.cloudflare.com/ips-v6",
+      "notes": "Provider \u2260 Service"
+    },
+    "provider-aws": {
+      "id": "provider-aws",
+      "scope": "provider",
+      "path": "database/provider/aws.txt",
+      "lines": 10980,
+      "fetched_at": "2026-09-01T01:05:16.751213+00:00",
+      "source_url": "https://ip-ranges.amazonaws.com/ip-ranges.json",
+      "notes": "NEVER map to Amazon retail service."
+    },
+    "provider-googlecloud": {
+      "id": "provider-googlecloud",
+      "scope": "provider",
+      "path": "database/provider/googlecloud.txt",
+      "lines": 1098,
+      "fetched_at": "2026-09-01T01:05:16.751213+00:00",
+      "source_url": "https://www.gstatic.com/ipranges/cloud.json",
+      "notes": "GCP \u2260 Google Search/YouTube product."
+    },
+    "provider-goog": {
+      "id": "provider-goog",
+      "scope": "provider",
+      "path": "database/provider/goog.txt",
+      "lines": 145,
+      "fetched_at": "2026-09-01T01:05:16.751213+00:00",
+      "source_url": "https://www.gstatic.com/ipranges/goog.json",
+      "notes": "Provider \u2260 Service"
+    },
+    "provider-oracle": {
+      "id": "provider-oracle",
+      "scope": "provider",
+      "path": "database/provider/oracle.txt",
+      "lines": 1107,
+      "fetched_at": "2026-09-01T01:05:16.751213+00:00",
+      "source_url": "https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json",
+      "notes": "Provider \u2260 Service"
+    }
+  }
+}

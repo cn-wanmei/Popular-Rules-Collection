@@ -1,0 +1,94 @@
+{
+  "coverage": [
+    {
+      "provider": "alibaba",
+      "services_declared": 2,
+      "materialized": 2,
+      "candidate": 0,
+      "aggregate_members": 2
+    },
+    {
+      "provider": "amazon",
+      "services_declared": 2,
+      "materialized": 2,
+      "candidate": 0,
+      "aggregate_members": 2
+    },
+    {
+      "provider": "apple",
+      "services_declared": 3,
+      "materialized": 2,
+      "candidate": 1,
+      "aggregate_members": 3
+    },
+    {
+      "provider": "baidu",
+      "services_declared": 2,
+      "materialized": 2,
+      "candidate": 0,
+      "aggregate_members": 2
+    },
+    {
+      "provider": "bytedance",
+      "services_declared": 2,
+      "materialized": 2,
+      "candidate": 0,
+      "aggregate_members": 2
+    },
+    {
+      "provider": "google",
+      "services_declared": 4,
+      "materialized": 2,
+      "candidate": 2,
+      "aggregate_members": 4
+    },
+    {
+      "provider": "microsoft",
+      "services_declared": 2,
+      "materialized": 2,
+      "candidate": 0,
+      "aggregate_members": 2
+    },
+    {
+      "provider": "tencent",
+      "services_declared": 3,
+      "materialized": 2,
+      "candidate": 1,
+      "aggregate_members": 3
+    }
+  ],
+  "overlap": {
+    "cross_provider_shared_keys": 2,
+    "sample": {
+      "domain_suffix|tenor.com": [
+        "google",
+        "microsoft"
+      ],
+      "domain_suffix|bdurl.net": [
+        "baidu",
+        "bytedance"
+      ]
+    }
+  },
+  "ownership_entries": 6,
+  "dependency_entries": 3,
+  "attribution_policy": {
+    "exclusive_requires": [
+      "dedicated_upstream_or_official_or_human_review"
+    ],
+    "forbidden": [
+      "auto_split_from_provider_aggregate",
+      "guess_from_domain_keywords_only"
+    ]
+  },
+  "shared_infrastructure": [
+    "google-shared",
+    "apple-shared",
+    "microsoft-shared",
+    "tencent-shared",
+    "alibaba-shared",
+    "baidu-shared",
+    "amazon-shared",
+    "bytedance-shared"
+  ]
+}

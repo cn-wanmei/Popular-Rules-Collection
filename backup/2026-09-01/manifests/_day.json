@@ -1,0 +1,2969 @@
+{
+  "date": "2026-09-01",
+  "timestamp": "2026-09-01T01:01:24.734948+00:00",
+  "registry_version": 3,
+  "sources": [
+    {
+      "source": "blackmatrix7",
+      "fetch": "github_raw",
+      "timestamp": "2026-09-01T01:01:02.101316+00:00",
+      "files_ok": 139,
+      "files_failed": 0,
+      "empty_blocked": 0,
+      "rules_declared": 139,
+      "files": [
+        {
+          "name": "Clash_Apple.yaml",
+          "path": "rule/Clash/Apple/Apple.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml",
+          "service": "apple",
+          "local": "sources/blackmatrix7/Clash_Apple.yaml",
+          "size": 1239,
+          "sha256": "9f81f8e6ee8485d4553544d7dcefd6e4b2e9534f6306c7e4ee38427a20898de1",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Google.yaml",
+          "path": "rule/Clash/Google/Google.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml",
+          "service": "google",
+          "local": "sources/blackmatrix7/Clash_Google.yaml",
+          "size": 22654,
+          "sha256": "dfb4bf0a0095e48f024fbb7c31564a928e6c7d450b662aca9803119489a9237c",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Telegram.yaml",
+          "path": "rule/Clash/Telegram/Telegram.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml",
+          "service": "telegram",
+          "local": "sources/blackmatrix7/Clash_Telegram.yaml",
+          "size": 1590,
+          "sha256": "e78efc3f18069f1f1e3f88c15cd55f85424367b58ce8474af08c2fdf054704e0",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Netflix.yaml",
+          "path": "rule/Clash/Netflix/Netflix.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml",
+          "service": "netflix",
+          "local": "sources/blackmatrix7/Clash_Netflix.yaml",
+          "size": 1607,
+          "sha256": "cfb49b76fabc96887c7da7336ecea9066727c1489d25d677baa4f4e7a79a05f3",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_GitHub.yaml",
+          "path": "rule/Clash/GitHub/GitHub.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml",
+          "service": "github",
+          "local": "sources/blackmatrix7/Clash_GitHub.yaml",
+          "size": 1250,
+          "sha256": "a2641ce2f10857831b600623f97d354e6f8db7b20dff175c5313c2c46e0b6867",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Microsoft.yaml",
+          "path": "rule/Clash/Microsoft/Microsoft.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml",
+          "service": "microsoft",
+          "local": "sources/blackmatrix7/Clash_Microsoft.yaml",
+          "size": 23208,
+          "sha256": "a289a1d52394e92ceee26a5c83953cd292609717d39fb2970d189dc7877b2a4d",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Discord.yaml",
+          "path": "rule/Clash/Discord/Discord.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Discord/Discord.yaml",
+          "service": "discord",
+          "local": "sources/blackmatrix7/Clash_Discord.yaml",
+          "size": 1201,
+          "sha256": "ce5e3cf18e7353fea35edce91f66e1dfa2a38331203b7fb245c535620d02bf8b",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_OpenAI.yaml",
+          "path": "rule/Clash/OpenAI/OpenAI.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml",
+          "service": "openai",
+          "local": "sources/blackmatrix7/Clash_OpenAI.yaml",
+          "size": 1469,
+          "sha256": "cf66c50e7cfbe0aa0e9e249bfa8897d152ae35b38ab6db2936ef62860b7b61b4",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_YouTube.yaml",
+          "path": "rule/Clash/YouTube/YouTube.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml",
+          "service": "youtube",
+          "local": "sources/blackmatrix7/Clash_YouTube.yaml",
+          "size": 5935,
+          "sha256": "2f84cc9d35c8559ebea4c43aa9b30bb43b36313d70684f23a359f1acabb879bb",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_BiliBili.yaml",
+          "path": "rule/Clash/BiliBili/BiliBili.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml",
+          "service": "bilibili",
+          "local": "sources/blackmatrix7/Clash_BiliBili.yaml",
+          "size": 5084,
+          "sha256": "fba635689995726aebbb522699f157f5dd910783950daa4bb475f167fe7b40de",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Steam.yaml",
+          "path": "rule/Clash/Steam/Steam.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml",
+          "service": "steam",
+          "local": "sources/blackmatrix7/Clash_Steam.yaml",
+          "size": 2280,
+          "sha256": "585e423c866bb020421a79dd2842f279b56ef94bf487fbee13354796958dcad6",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_TikTok.yaml",
+          "path": "rule/Clash/TikTok/TikTok.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml",
+          "service": "tiktok",
+          "local": "sources/blackmatrix7/Clash_TikTok.yaml",
+          "size": 1258,
+          "sha256": "c93113e0f7d84302868ae8a1a7bfd024dbc03e54c5953f5439d20ca9c04005b7",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Twitter.yaml",
+          "path": "rule/Clash/Twitter/Twitter.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml",
+          "service": "twitter",
+          "local": "sources/blackmatrix7/Clash_Twitter.yaml",
+          "size": 1191,
+          "sha256": "67c46c3988da5cdc387eacee945c2950464691af0e2746929455cd9295c3ff2b",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Disney.yaml",
+          "path": "rule/Clash/Disney/Disney.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml",
+          "service": "disney",
+          "local": "sources/blackmatrix7/Clash_Disney.yaml",
+          "size": 6343,
+          "sha256": "5788df2a9935ecdbacc06c87c3f9c7cc4ec39fe3d61aea1f33be66d79e6b5a3a",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_ChinaMax_Domain.yaml",
+          "path": "rule/Clash/ChinaMax/ChinaMax_Domain.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Domain.yaml",
+          "service": "china",
+          "local": "sources/blackmatrix7/Clash_ChinaMax_Domain.yaml",
+          "size": 2306225,
+          "sha256": "322bf32e4afa96f3e2c8549251f3d9585163a7bf221adfc26c101f8f6ae8fdc6",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Claude.yaml",
+          "path": "rule/Clash/Claude/Claude.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml",
+          "service": "claude",
+          "local": "sources/blackmatrix7/Clash_Claude.yaml",
+          "size": 265,
+          "sha256": "ef21df39005b17dbd84aa65a47162b36fb5e72754cd32384146474ed488df482",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Gemini.yaml",
+          "path": "rule/Clash/Gemini/Gemini.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml",
+          "service": "gemini",
+          "local": "sources/blackmatrix7/Clash_Gemini.yaml",
+          "size": 666,
+          "sha256": "d76e9822f72a69860b7d3086db61bbbef53014c57e3dc12472150c62a4f6434b",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Copilot.yaml",
+          "path": "rule/Clash/Copilot/Copilot.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.yaml",
+          "service": "copilot",
+          "local": "sources/blackmatrix7/Clash_Copilot.yaml",
+          "size": 1991,
+          "sha256": "6be526fd6a4a2c4d374fd8cadcdae87309865fb79b8f57634823dbcb7d780a5e",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Spotify.yaml",
+          "path": "rule/Clash/Spotify/Spotify.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml",
+          "service": "spotify",
+          "local": "sources/blackmatrix7/Clash_Spotify.yaml",
+          "size": 1317,
+          "sha256": "e74599390a87e5ed6da929f80be9c173cf3017e41b8f69362c2028d248875a79",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Twitch.yaml",
+          "path": "rule/Clash/Twitch/Twitch.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitch/Twitch.yaml",
+          "service": "twitch",
+          "local": "sources/blackmatrix7/Clash_Twitch.yaml",
+          "size": 882,
+          "sha256": "397c2f2e0c5d5a7bb868525f644ff34d3452325e90d978ae6bcae973630ee282",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_HBO.yaml",
+          "path": "rule/Clash/HBO/HBO.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.yaml",
+          "service": "hbo",
+          "local": "sources/blackmatrix7/Clash_HBO.yaml",
+          "size": 1928,
+          "sha256": "0fbca42b02a6ae923258118dddf5bd9894e788f1d18679340d6a05b051abf703",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Hulu.yaml",
+          "path": "rule/Clash/Hulu/Hulu.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Hulu/Hulu.yaml",
+          "service": "hulu",
+          "local": "sources/blackmatrix7/Clash_Hulu.yaml",
+          "size": 2114,
+          "sha256": "1dc853a5cfcaacc6cc738179466c5518342efc4683e267becd78b480dde7025e",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_AmazonPrimeVideo.yaml",
+          "path": "rule/Clash/AmazonPrimeVideo/AmazonPrimeVideo.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AmazonPrimeVideo/AmazonPrimeVideo.yaml",
+          "service": "primevideo",
+          "local": "sources/blackmatrix7/Clash_AmazonPrimeVideo.yaml",
+          "size": 1168,
+          "sha256": "393c6113b32767d9d5f3b62b65d1bec3d9a8d10aee41b225652350b73db5b256",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_AppleTV.yaml",
+          "path": "rule/Clash/AppleTV/AppleTV.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleTV/AppleTV.yaml",
+          "service": "appletv",
+          "local": "sources/blackmatrix7/Clash_AppleTV.yaml",
+          "size": 453,
+          "sha256": "8c82bfeb31a2ce0abd508d07b4fe5f24a54274b53717de0120b46f55ba5fb70a",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Reddit.yaml",
+          "path": "rule/Clash/Reddit/Reddit.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Reddit/Reddit.yaml",
+          "service": "reddit",
+          "local": "sources/blackmatrix7/Clash_Reddit.yaml",
+          "size": 467,
+          "sha256": "bf20bcd7b2f841eb9cb2170f7e52ba4437f897eb697ac9e3f4041e674eb4cf2e",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Facebook.yaml",
+          "path": "rule/Clash/Facebook/Facebook.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Facebook/Facebook.yaml",
+          "service": "facebook",
+          "local": "sources/blackmatrix7/Clash_Facebook.yaml",
+          "size": 19424,
+          "sha256": "c82828bf136de47a26458f2303d3acf2a06aaca2a18c19e67f315387ef977ed0",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Instagram.yaml",
+          "path": "rule/Clash/Instagram/Instagram.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Instagram/Instagram.yaml",
+          "service": "instagram",
+          "local": "sources/blackmatrix7/Clash_Instagram.yaml",
+          "size": 312,
+          "sha256": "3ea6152876ff1c998b9434761898af1242bcc6bcaeaed74023910d9d08c64e39",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Whatsapp.yaml",
+          "path": "rule/Clash/Whatsapp/Whatsapp.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Whatsapp/Whatsapp.yaml",
+          "service": "whatsapp",
+          "local": "sources/blackmatrix7/Clash_Whatsapp.yaml",
+          "size": 708,
+          "sha256": "fce89bfff5101fee701336bb28934c7af7c570d1594fd5244e6db1743f0bb254",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_OneDrive.yaml",
+          "path": "rule/Clash/OneDrive/OneDrive.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive.yaml",
+          "service": "onedrive",
+          "local": "sources/blackmatrix7/Clash_OneDrive.yaml",
+          "size": 816,
+          "sha256": "6f5902a52d1a0f48b69f7ebe021c4f14361e2c3f5426388923f2034740e60991",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_LinkedIn.yaml",
+          "path": "rule/Clash/LinkedIn/LinkedIn.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/LinkedIn/LinkedIn.yaml",
+          "service": "linkedin",
+          "local": "sources/blackmatrix7/Clash_LinkedIn.yaml",
+          "size": 566,
+          "sha256": "bfc6b0113cb1c871598c1c33c080f88b3bf1cc8d3dfcb064da0b571ec7c615d2",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_PayPal.yaml",
+          "path": "rule/Clash/PayPal/PayPal.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PayPal/PayPal.yaml",
+          "service": "paypal",
+          "local": "sources/blackmatrix7/Clash_PayPal.yaml",
+          "size": 8821,
+          "sha256": "66c75e9ecff301097919cccb27a675251158e8d85e09c6c926995b465cab8a59",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Epic.yaml",
+          "path": "rule/Clash/Epic/Epic.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Epic/Epic.yaml",
+          "service": "epic",
+          "local": "sources/blackmatrix7/Clash_Epic.yaml",
+          "size": 657,
+          "sha256": "b60fdc6980e4ec4496b8d6cffce8c2270c5d5d5dfe9688538160593444fbd189",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Nintendo.yaml",
+          "path": "rule/Clash/Nintendo/Nintendo.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nintendo/Nintendo.yaml",
+          "service": "nintendo",
+          "local": "sources/blackmatrix7/Clash_Nintendo.yaml",
+          "size": 4622,
+          "sha256": "aa9bce448f8c8740b0d59bec6e2869d4bf1ffcade4a59895bef64c141775e930",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Xbox.yaml",
+          "path": "rule/Clash/Xbox/Xbox.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Xbox/Xbox.yaml",
+          "service": "xbox",
+          "local": "sources/blackmatrix7/Clash_Xbox.yaml",
+          "size": 1554,
+          "sha256": "3c4b5ba98f4a397d7b8647619730602fd290f9673d5654714a7059fb2a12f537",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_PlayStation.yaml",
+          "path": "rule/Clash/PlayStation/PlayStation.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PlayStation/PlayStation.yaml",
+          "service": "playstation",
+          "local": "sources/blackmatrix7/Clash_PlayStation.yaml",
+          "size": 325,
+          "sha256": "200e42e1f81820087991f92a6075c38822a484642f1a0f44f08e049762204609",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_EA.yaml",
+          "path": "rule/Clash/EA/EA.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/EA/EA.yaml",
+          "service": "ea",
+          "local": "sources/blackmatrix7/Clash_EA.yaml",
+          "size": 5979,
+          "sha256": "cedbe3d2b1a86afbf3fe7153f8ed78575e2cefe1192bf054fc1e2747e717ee3b",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Ubisoft.yaml",
+          "path": "rule/Clash/Ubisoft/Ubisoft.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Ubisoft/Ubisoft.yaml",
+          "service": "ubisoft",
+          "local": "sources/blackmatrix7/Clash_Ubisoft.yaml",
+          "size": 199,
+          "sha256": "9c9c5a1f1fde1e6030313030883bd43aa0e44ee1d77fec882cdff97e8368a955",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Rockstar.yaml",
+          "path": "rule/Clash/Rockstar/Rockstar.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Rockstar/Rockstar.yaml",
+          "service": "rockstar",
+          "local": "sources/blackmatrix7/Clash_Rockstar.yaml",
+          "size": 404,
+          "sha256": "fcdf188396e3875f06c282ccd4a3d33ea9987859c05d3d8784be2070d7db3fc9",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_HoYoverse.yaml",
+          "path": "rule/Clash/HoYoverse/HoYoverse.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HoYoverse/HoYoverse.yaml",
+          "service": "hoyoverse",
+          "local": "sources/blackmatrix7/Clash_HoYoverse.yaml",
+          "size": 531,
+          "sha256": "601333713333ac5ba46e9f1d848c2fcea4969c7cd596492b780f5515efcf872c",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Cloudflare.yaml",
+          "path": "rule/Clash/Cloudflare/Cloudflare.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Cloudflare/Cloudflare.yaml",
+          "service": "cloudflare",
+          "local": "sources/blackmatrix7/Clash_Cloudflare.yaml",
+          "size": 2303,
+          "sha256": "10bedf9754948b20dcd35837992dd4c3660b2600a9da8e84a179887d1f536012",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_GitLab.yaml",
+          "path": "rule/Clash/GitLab/GitLab.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitLab/GitLab.yaml",
+          "service": "gitlab",
+          "local": "sources/blackmatrix7/Clash_GitLab.yaml",
+          "size": 383,
+          "sha256": "73e06133716dd197115133bd350d3ef7214257fa366d60e3c6e9b8d300a0fcf8",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Developer.yaml",
+          "path": "rule/Clash/Developer/Developer.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Developer/Developer.yaml",
+          "service": "developer",
+          "local": "sources/blackmatrix7/Clash_Developer.yaml",
+          "size": 2614,
+          "sha256": "3763d2387fcc1babf5641603de18f9faec1b823724cf9af5c090fc6977cd153d",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Speedtest.yaml",
+          "path": "rule/Clash/Speedtest/Speedtest.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Speedtest/Speedtest.yaml",
+          "service": "speedtest",
+          "local": "sources/blackmatrix7/Clash_Speedtest.yaml",
+          "size": 348,
+          "sha256": "0a3812cee29f3fc5eb246abf1913298d5a91febc3de1da2000d6860860fe0885",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_iCloud.yaml",
+          "path": "rule/Clash/iCloud/iCloud.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/iCloud/iCloud.yaml",
+          "service": "icloud",
+          "local": "sources/blackmatrix7/Clash_iCloud.yaml",
+          "size": 2130,
+          "sha256": "02faf646121ca29a42ab4e23064e61cfce64ff953a97fbadf610d40f932e4289",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_AppleMusic.yaml",
+          "path": "rule/Clash/AppleMusic/AppleMusic.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleMusic/AppleMusic.yaml",
+          "service": "applemusic",
+          "local": "sources/blackmatrix7/Clash_AppleMusic.yaml",
+          "size": 543,
+          "sha256": "ba4bf225975f9e3aae88fa8b53275b3be9356b61cf0f52149a9864c0c53791e3",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Blizzard.yaml",
+          "path": "rule/Clash/Blizzard/Blizzard.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Blizzard/Blizzard.yaml",
+          "service": "battlenet",
+          "local": "sources/blackmatrix7/Clash_Blizzard.yaml",
+          "size": 2308,
+          "sha256": "ff649f2f4e6829a161bb2b5d4f51ac3ae917b36b277c562f7b8d1df083c21722",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Riot.yaml",
+          "path": "rule/Clash/Riot/Riot.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Riot/Riot.yaml",
+          "service": "riotgames",
+          "local": "sources/blackmatrix7/Clash_Riot.yaml",
+          "size": 2033,
+          "sha256": "56c64dda3605943c9c91b0f3bd34f33156fa4ff2ebbfb0a2ec5ee24a932592a5",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Docker.yaml",
+          "path": "rule/Clash/Docker/Docker.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Docker/Docker.yaml",
+          "service": "docker",
+          "local": "sources/blackmatrix7/Clash_Docker.yaml",
+          "size": 422,
+          "sha256": "df274e8a4058cc25e82f8ecc0ae912875425e01a1dd424bb7ae263d576fcd3e3",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Vercel.yaml",
+          "path": "rule/Clash/Vercel/Vercel.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Vercel/Vercel.yaml",
+          "service": "vercel",
+          "local": "sources/blackmatrix7/Clash_Vercel.yaml",
+          "size": 992,
+          "sha256": "2707c9916860125e2d136505faa2759dc47050811958fc34091e141cd13bec04",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Stripe.yaml",
+          "path": "rule/Clash/Stripe/Stripe.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Stripe/Stripe.yaml",
+          "service": "stripe",
+          "local": "sources/blackmatrix7/Clash_Stripe.yaml",
+          "size": 191,
+          "sha256": "1136cf1ec6bfb689c85176de3c371e142e48ce3cf14fe4ef2120f8235b993e83",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Binance.yaml",
+          "path": "rule/Clash/Binance/Binance.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Binance/Binance.yaml",
+          "service": "binance",
+          "local": "sources/blackmatrix7/Clash_Binance.yaml",
+          "size": 539,
+          "sha256": "bc7d8355e8057590601cd8c1c52b9fd693eed854acedac01eb30421df44e46e2",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_OKX.yaml",
+          "path": "rule/Clash/OKX/OKX.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OKX/OKX.yaml",
+          "service": "okx",
+          "local": "sources/blackmatrix7/Clash_OKX.yaml",
+          "size": 243,
+          "sha256": "feb04e8821e590a6507ff48861e418ead71416e298d48b60ba061e065eae1710",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_STUN.yaml",
+          "path": "rule/Clash/STUN/STUN.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/STUN/STUN.yaml",
+          "service": "stun",
+          "local": "sources/blackmatrix7/Clash_STUN.yaml",
+          "size": 10845,
+          "sha256": "c96aea7a9d335ffd1d1425aaf7145e47e4c44ac239190f4b06af5441b88841f9",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Alibaba.yaml",
+          "path": "rule/Clash/Alibaba/Alibaba.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Alibaba/Alibaba.yaml",
+          "service": "alibaba",
+          "local": "sources/blackmatrix7/Clash_Alibaba.yaml",
+          "size": 1697,
+          "sha256": "032960207f577289598d8153ae3e6e3d03f9a2e3f835496752c3c6b3c3fdaf97",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_AliPay.yaml",
+          "path": "rule/Clash/AliPay/AliPay.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AliPay/AliPay.yaml",
+          "service": "alipay",
+          "local": "sources/blackmatrix7/Clash_AliPay.yaml",
+          "size": 842,
+          "sha256": "0bad2e7ba4a5f12d4e2e3956805512517e47fe611c7927633fd4f18265db40e4",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Tencent.yaml",
+          "path": "rule/Clash/Tencent/Tencent.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tencent/Tencent.yaml",
+          "service": "tencent",
+          "local": "sources/blackmatrix7/Clash_Tencent.yaml",
+          "size": 753,
+          "sha256": "0a5f578e2b837c757de278bed80e6a5092aa22741d723ffc722095f4ba99b420",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_WeChat.yaml",
+          "path": "rule/Clash/WeChat/WeChat.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml",
+          "service": "wechat",
+          "local": "sources/blackmatrix7/Clash_WeChat.yaml",
+          "size": 1145,
+          "sha256": "10a541b6a4a2d13b47c61bc67fca72c78ba9c0a024bc439e3d83f8e398abb60a",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_ByteDance.yaml",
+          "path": "rule/Clash/ByteDance/ByteDance.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ByteDance/ByteDance.yaml",
+          "service": "bytedance",
+          "local": "sources/blackmatrix7/Clash_ByteDance.yaml",
+          "size": 12233,
+          "sha256": "7f0d32aacbe266ce4f1462d21e117ad1656617e0a1eb8f29c6dff6e5a5e99082",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Baidu.yaml",
+          "path": "rule/Clash/Baidu/Baidu.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Baidu/Baidu.yaml",
+          "service": "baidu",
+          "local": "sources/blackmatrix7/Clash_Baidu.yaml",
+          "size": 7994,
+          "sha256": "178ccb2d030efb23039388ad62de8d20a7579620a1ce69389fd27eef97bda9db",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_JingDong.yaml",
+          "path": "rule/Clash/JingDong/JingDong.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/JingDong/JingDong.yaml",
+          "service": "jingdong",
+          "local": "sources/blackmatrix7/Clash_JingDong.yaml",
+          "size": 8249,
+          "sha256": "20a052bb10e0601f25afca13df5cae1448c022ed148f9d523870fd075f9c9c5e",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_NetEaseMusic.yaml",
+          "path": "rule/Clash/NetEaseMusic/NetEaseMusic.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/NetEaseMusic/NetEaseMusic.yaml",
+          "service": "netease",
+          "local": "sources/blackmatrix7/Clash_NetEaseMusic.yaml",
+          "size": 1062,
+          "sha256": "3bc7d02b45461af3de8d84b75795f44a041b4fc84761443665f7fe43f0aa640f",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_MeiTuan.yaml",
+          "path": "rule/Clash/MeiTuan/MeiTuan.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/MeiTuan/MeiTuan.yaml",
+          "service": "meituan",
+          "local": "sources/blackmatrix7/Clash_MeiTuan.yaml",
+          "size": 371,
+          "sha256": "a7238babc4f9385cfe0d02002ab98d834744843b8ade2684728fcfb02acd1990",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_DiDi.yaml",
+          "path": "rule/Clash/DiDi/DiDi.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DiDi/DiDi.yaml",
+          "service": "didi",
+          "local": "sources/blackmatrix7/Clash_DiDi.yaml",
+          "size": 972,
+          "sha256": "ba6dc39684ec5a5df8e065a59d031f1ea2a3292e6f58cb28a2d6742e9a0ac73a",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Pinduoduo.yaml",
+          "path": "rule/Clash/Pinduoduo/Pinduoduo.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Pinduoduo/Pinduoduo.yaml",
+          "service": "pinduoduo",
+          "local": "sources/blackmatrix7/Clash_Pinduoduo.yaml",
+          "size": 260,
+          "sha256": "9c022acf368bd6bcdfadf9f7445e84c2d13c586209b192e25643a9ffc8720473",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_XiaoHongShu.yaml",
+          "path": "rule/Clash/XiaoHongShu/XiaoHongShu.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/XiaoHongShu/XiaoHongShu.yaml",
+          "service": "xiaohongshu",
+          "local": "sources/blackmatrix7/Clash_XiaoHongShu.yaml",
+          "size": 297,
+          "sha256": "f475fb523fdffc68b311e7eba595effe060a11c8226355c012ba8caefe4a976b",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Zhihu.yaml",
+          "path": "rule/Clash/Zhihu/Zhihu.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Zhihu/Zhihu.yaml",
+          "service": "zhihu",
+          "local": "sources/blackmatrix7/Clash_Zhihu.yaml",
+          "size": 420,
+          "sha256": "e7ec2f8854196964b2da78ebddb00edd7ef6cc81ccaa73b6c04ce17677498a40",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Weibo.yaml",
+          "path": "rule/Clash/Weibo/Weibo.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Weibo/Weibo.yaml",
+          "service": "weibo",
+          "local": "sources/blackmatrix7/Clash_Weibo.yaml",
+          "size": 294,
+          "sha256": "5cf5800ad6e4deebf0f10a8a095df9ecd9bb305a023db879ae526fd959993cb8",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_iQIYI.yaml",
+          "path": "rule/Clash/iQIYI/iQIYI.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/iQIYI/iQIYI.yaml",
+          "service": "iqiyi",
+          "local": "sources/blackmatrix7/Clash_iQIYI.yaml",
+          "size": 1874,
+          "sha256": "46dae845399159d1145a65fc11ce94cbef73cf3d65ac5cd32be8bd71928ea496",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Youku.yaml",
+          "path": "rule/Clash/Youku/Youku.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Youku/Youku.yaml",
+          "service": "youku",
+          "local": "sources/blackmatrix7/Clash_Youku.yaml",
+          "size": 1250,
+          "sha256": "ae16b5c263e8e916086871c2b6c28687707bff3963a069804561b0a5f594b0c9",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_TencentVideo.yaml",
+          "path": "rule/Clash/TencentVideo/TencentVideo.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TencentVideo/TencentVideo.yaml",
+          "service": "tencentvideo",
+          "local": "sources/blackmatrix7/Clash_TencentVideo.yaml",
+          "size": 2131,
+          "sha256": "bce56e741ff1e17d6c0e9131353f16f19ae7d0e821a303b7794e512778d541cb",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_KuaiShou.yaml",
+          "path": "rule/Clash/KuaiShou/KuaiShou.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/KuaiShou/KuaiShou.yaml",
+          "service": "kuaishou",
+          "local": "sources/blackmatrix7/Clash_KuaiShou.yaml",
+          "size": 22085,
+          "sha256": "a61ac9ceb3ff56c49beb176daeb93371951563828b0ee89a173d7e8b72155fbe",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_DouYin.yaml",
+          "path": "rule/Clash/DouYin/DouYin.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DouYin/DouYin.yaml",
+          "service": "douyin",
+          "local": "sources/blackmatrix7/Clash_DouYin.yaml",
+          "size": 594,
+          "sha256": "fdfe20393b17988455f7715a8be15166b097c071551b938049874d39675dee41",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Amazon.yaml",
+          "path": "rule/Clash/Amazon/Amazon.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Amazon/Amazon.yaml",
+          "service": "amazon",
+          "local": "sources/blackmatrix7/Clash_Amazon.yaml",
+          "size": 6972,
+          "sha256": "b027faaea79923ba80ec1f7828aecb99f647774e1e1676fd74d6d05c8e4b6853",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_ChinaMobile.yaml",
+          "path": "rule/Clash/ChinaMobile/ChinaMobile.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMobile/ChinaMobile.yaml",
+          "service": "chinamobile",
+          "local": "sources/blackmatrix7/Clash_ChinaMobile.yaml",
+          "size": 1280,
+          "sha256": "01cc2bb566d4f3d5dd4ddf68e24c015364210470e482317aedaedeab260a2bcb",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_ChinaUnicom.yaml",
+          "path": "rule/Clash/ChinaUnicom/ChinaUnicom.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaUnicom/ChinaUnicom.yaml",
+          "service": "chinaunicom",
+          "local": "sources/blackmatrix7/Clash_ChinaUnicom.yaml",
+          "size": 1248,
+          "sha256": "aa293341b3223130cba1138a776cb6882f40e856567a50df9befcd004688c15c",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_ChinaTelecom.yaml",
+          "path": "rule/Clash/ChinaTelecom/ChinaTelecom.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaTelecom/ChinaTelecom.yaml",
+          "service": "chinatelecom",
+          "local": "sources/blackmatrix7/Clash_ChinaTelecom.yaml",
+          "size": 2676,
+          "sha256": "0f4029bc5a473c5dbbbfa910242b7c80ca01030407bd848128827f9755d9f8b9",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_12306.yaml",
+          "path": "rule/Clash/12306/12306.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/12306/12306.yaml",
+          "service": "12306",
+          "local": "sources/blackmatrix7/Clash_12306.yaml",
+          "size": 612,
+          "sha256": "b8c7201b36e7ddb8913562912ae812a4cbd76e8d4d3998c1377222b74e0a0acd",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_UnionPay.yaml",
+          "path": "rule/Clash/UnionPay/UnionPay.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/UnionPay/UnionPay.yaml",
+          "service": "unionpay",
+          "local": "sources/blackmatrix7/Clash_UnionPay.yaml",
+          "size": 689,
+          "sha256": "ec00aadea470ca813aea3952f78a2fedcbe43bdf4bfe00404877efd392ccce51",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_ICBC.yaml",
+          "path": "rule/Clash/ICBC/ICBC.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ICBC/ICBC.yaml",
+          "service": "icbc",
+          "local": "sources/blackmatrix7/Clash_ICBC.yaml",
+          "size": 1942,
+          "sha256": "dd8927892fd1ec7dc648aea876e2a05a374fe532a692ba08230f2790894b3481",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_CCB.yaml",
+          "path": "rule/Clash/CCB/CCB.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/CCB/CCB.yaml",
+          "service": "ccb",
+          "local": "sources/blackmatrix7/Clash_CCB.yaml",
+          "size": 719,
+          "sha256": "8dbcd1ca632a6333a40bb6eea0e119205fc67468a41f2a5c6b725e30c5dde809",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_ABC.yaml",
+          "path": "rule/Clash/ABC/ABC.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ABC/ABC.yaml",
+          "service": "abc",
+          "local": "sources/blackmatrix7/Clash_ABC.yaml",
+          "size": 344,
+          "sha256": "733f7e8c36990aa36e22cf4f8442359a51354e27204b2a16e2df18de6dab0bf6",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_BOC.yaml",
+          "path": "rule/Clash/BOC/BOC.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BOC/BOC.yaml",
+          "service": "boc",
+          "local": "sources/blackmatrix7/Clash_BOC.yaml",
+          "size": 863,
+          "sha256": "8edbc9c9027bb0ff77da182b6ef693309aa0eb0a3bbc4b42f3574c4ca335e3a1",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_CMB.yaml",
+          "path": "rule/Clash/CMB/CMB.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/CMB/CMB.yaml",
+          "service": "cmb",
+          "local": "sources/blackmatrix7/Clash_CMB.yaml",
+          "size": 1328,
+          "sha256": "a29c06083145367fd1cebf42ce8ec9e4ed4690a74064c0b6c68543454b326237",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Heroku.yaml",
+          "path": "rule/Clash/Heroku/Heroku.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Heroku/Heroku.yaml",
+          "service": "heroku",
+          "local": "sources/blackmatrix7/Clash_Heroku.yaml",
+          "size": 536,
+          "sha256": "d332eb050b4b226b62b6613e87179a600faa337dd797a7c645c45a5de0b6fb13",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_HashiCorp.yaml",
+          "path": "rule/Clash/HashiCorp/HashiCorp.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HashiCorp/HashiCorp.yaml",
+          "service": "hashicorp",
+          "local": "sources/blackmatrix7/Clash_HashiCorp.yaml",
+          "size": 421,
+          "sha256": "f2d2602a5747ce2f1925dbd0052c03d7f86fd0b0c0d6899446655d06cf68d21e",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Figma.yaml",
+          "path": "rule/Clash/Figma/Figma.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Figma/Figma.yaml",
+          "service": "figma",
+          "local": "sources/blackmatrix7/Clash_Figma.yaml",
+          "size": 191,
+          "sha256": "2d9cdc42a6ed097e24c1c955bdf409bf0616d3cfc67192ecfee37b4ef28cb5f9",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Notion.yaml",
+          "path": "rule/Clash/Notion/Notion.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Notion/Notion.yaml",
+          "service": "notion",
+          "local": "sources/blackmatrix7/Clash_Notion.yaml",
+          "size": 374,
+          "sha256": "b92f5bdc0ac6a51ac3f5a7e53fd308aaecac4bfd4ad78605feb3db62aeb0e250",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Dropbox.yaml",
+          "path": "rule/Clash/Dropbox/Dropbox.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Dropbox/Dropbox.yaml",
+          "service": "dropbox",
+          "local": "sources/blackmatrix7/Clash_Dropbox.yaml",
+          "size": 776,
+          "sha256": "8dc09c2d1173000d9544cc7d0b1be5392d9d12887328b5c57e37804fdd8cbc2a",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Pinterest.yaml",
+          "path": "rule/Clash/Pinterest/Pinterest.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Pinterest/Pinterest.yaml",
+          "service": "pinterest",
+          "local": "sources/blackmatrix7/Clash_Pinterest.yaml",
+          "size": 895,
+          "sha256": "9640bad23218a8f0c9471b2c34173fce8161c98757a6f579afa44f788368bcbd",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Teams.yaml",
+          "path": "rule/Clash/Teams/Teams.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Teams/Teams.yaml",
+          "service": "teams",
+          "local": "sources/blackmatrix7/Clash_Teams.yaml",
+          "size": 326,
+          "sha256": "b6037bb812b2a816407c293f64b182bab3d8d8a71fc343062e05cdd69a9b395f",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_GoogleFCM.yaml",
+          "path": "rule/Clash/GoogleFCM/GoogleFCM.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleFCM/GoogleFCM.yaml",
+          "service": "googlefcm",
+          "local": "sources/blackmatrix7/Clash_GoogleFCM.yaml",
+          "size": 1477,
+          "sha256": "585be87abdb59847f4915e21e324264aec11d073a58fee7fb2c7847517a57c58",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_PrivateTracker.yaml",
+          "path": "rule/Clash/PrivateTracker/PrivateTracker.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PrivateTracker/PrivateTracker.yaml",
+          "service": "private",
+          "local": "sources/blackmatrix7/Clash_PrivateTracker.yaml",
+          "size": 7802,
+          "sha256": "12285a4c3cf08148a0dff6221ae1713bd3856c5b87b4fb3959123ee6cd89d511",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Garena.yaml",
+          "path": "rule/Clash/Garena/Garena.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Garena/Garena.yaml",
+          "service": "garena",
+          "local": "sources/blackmatrix7/Clash_Garena.yaml",
+          "size": 661,
+          "sha256": "5e4c4a2757ebb6e09f0b166a1c73f3f5c0802bec3706af6f3f2264db025cecaf",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Anthropic.yaml",
+          "path": "rule/Clash/Anthropic/Anthropic.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Anthropic/Anthropic.yaml",
+          "service": "anthropic",
+          "local": "sources/blackmatrix7/Clash_Anthropic.yaml",
+          "size": 284,
+          "sha256": "af16ff9b3d5d587f93fa1761292401c8cc716fd52e7263f8ced577b90d7507c5",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_DigitalOcean.yaml",
+          "path": "rule/Clash/DigitalOcean/DigitalOcean.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DigitalOcean/DigitalOcean.yaml",
+          "service": "digitalocean",
+          "local": "sources/blackmatrix7/Clash_DigitalOcean.yaml",
+          "size": 303,
+          "sha256": "9e4d0554deb27c37b2812b8b35d43832009fdf84f1dab2298a5fc7467dcb829c",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Atlassian.yaml",
+          "path": "rule/Clash/Atlassian/Atlassian.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Atlassian/Atlassian.yaml",
+          "service": "atlassian",
+          "local": "sources/blackmatrix7/Clash_Atlassian.yaml",
+          "size": 324,
+          "sha256": "109fd0bbdf8f56a7abf64341f749250a18ee5bb22b7d16ee33edde97103b5702",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Slack.yaml",
+          "path": "rule/Clash/Slack/Slack.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Slack/Slack.yaml",
+          "service": "slack",
+          "local": "sources/blackmatrix7/Clash_Slack.yaml",
+          "size": 521,
+          "sha256": "afce83215850f474ba424af8522fc40f1af42a05ae8048c7536283762a72674c",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Line.yaml",
+          "path": "rule/Clash/Line/Line.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Line/Line.yaml",
+          "service": "line",
+          "local": "sources/blackmatrix7/Clash_Line.yaml",
+          "size": 867,
+          "sha256": "23af95c3f877d0754cd663ba3d4179aae821dc693be3b37cf7e98a02d0cb46b4",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_KakaoTalk.yaml",
+          "path": "rule/Clash/KakaoTalk/KakaoTalk.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/KakaoTalk/KakaoTalk.yaml",
+          "service": "kakaotalk",
+          "local": "sources/blackmatrix7/Clash_KakaoTalk.yaml",
+          "size": 620,
+          "sha256": "4623ea42c2d45b1b8067d09cc856470741bafd9e9840eca36035e9e3615bb2f0",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Adobe.yaml",
+          "path": "rule/Clash/Adobe/Adobe.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Adobe/Adobe.yaml",
+          "service": "adobe",
+          "local": "sources/blackmatrix7/Clash_Adobe.yaml",
+          "size": 4773,
+          "sha256": "5a97843a1a9f24dd484f968773cb3fee042f67c2117262b2b2be1dd4578f6cb4",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Oracle.yaml",
+          "path": "rule/Clash/Oracle/Oracle.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Oracle/Oracle.yaml",
+          "service": "oracle",
+          "local": "sources/blackmatrix7/Clash_Oracle.yaml",
+          "size": 1011,
+          "sha256": "a89d8dc6e50507c2e8c07bd7e88b0fe01fdc2e51b2c33f12ebead3cf9497f51d",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_GaoDe.yaml",
+          "path": "rule/Clash/GaoDe/GaoDe.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GaoDe/GaoDe.yaml",
+          "service": "gaode",
+          "local": "sources/blackmatrix7/Clash_GaoDe.yaml",
+          "size": 418,
+          "sha256": "bbefde089689e7ef87a70a65b62864e8cb1a9a9b3406c160da99b544709c2dff",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Eleme.yaml",
+          "path": "rule/Clash/Eleme/Eleme.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Eleme/Eleme.yaml",
+          "service": "eleme",
+          "local": "sources/blackmatrix7/Clash_Eleme.yaml",
+          "size": 561,
+          "sha256": "760b9bc8ab5060924a9201b37be7bf0cdb073fe578ab00a433ec01ea1a54e725",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_XianYu.yaml",
+          "path": "rule/Clash/XianYu/XianYu.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/XianYu/XianYu.yaml",
+          "service": "xianyu",
+          "local": "sources/blackmatrix7/Clash_XianYu.yaml",
+          "size": 635,
+          "sha256": "cba3dc2d175968226f6ce224e0cf4463a40412b755657058b9d0b839b7b9855c",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_XieCheng.yaml",
+          "path": "rule/Clash/XieCheng/XieCheng.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/XieCheng/XieCheng.yaml",
+          "service": "ctrip",
+          "local": "sources/blackmatrix7/Clash_XieCheng.yaml",
+          "size": 1029,
+          "sha256": "a76e5f231f24b75822964d8f29243027baf0bbcb64bdb71e626e26ab11d3d18a",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_TongCheng.yaml",
+          "path": "rule/Clash/TongCheng/TongCheng.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TongCheng/TongCheng.yaml",
+          "service": "tongcheng",
+          "local": "sources/blackmatrix7/Clash_TongCheng.yaml",
+          "size": 392,
+          "sha256": "a2e6f0b2b7bb6a1918648b92ddca897afe922a02a837e4280989cc367d547e2d",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_PingAn.yaml",
+          "path": "rule/Clash/PingAn/PingAn.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PingAn/PingAn.yaml",
+          "service": "pingan",
+          "local": "sources/blackmatrix7/Clash_PingAn.yaml",
+          "size": 1011,
+          "sha256": "6bb90af7c8ce67222815119c6046e499a7720fa474024eb06226466b451a1d35",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_BOCOM.yaml",
+          "path": "rule/Clash/BOCOM/BOCOM.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BOCOM/BOCOM.yaml",
+          "service": "bocom",
+          "local": "sources/blackmatrix7/Clash_BOCOM.yaml",
+          "size": 357,
+          "sha256": "4c86350fdb717d89a10dd5d6235bcd4c470cc0313591bbed66215ab2ae1568b9",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_CEB.yaml",
+          "path": "rule/Clash/CEB/CEB.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/CEB/CEB.yaml",
+          "service": "ceb",
+          "local": "sources/blackmatrix7/Clash_CEB.yaml",
+          "size": 627,
+          "sha256": "d169797ece94a8b5972b0917a4dcbe31127a2999339d50d8e535a067d02fc8d8",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_PSBC.yaml",
+          "path": "rule/Clash/PSBC/PSBC.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PSBC/PSBC.yaml",
+          "service": "psbc",
+          "local": "sources/blackmatrix7/Clash_PSBC.yaml",
+          "size": 249,
+          "sha256": "a044facf71f6c3502c9fd1c548d2d2fc821e43fcc8f486b10cec753366865507",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Threads.yaml",
+          "path": "rule/Clash/Threads/Threads.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Threads/Threads.yaml",
+          "service": "threads",
+          "local": "sources/blackmatrix7/Clash_Threads.yaml",
+          "size": 195,
+          "sha256": "25bbce496dfbd2c86b4614281e07a24a791d0baf30068241aeeffe9441c8aebd",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Jetbrains.yaml",
+          "path": "rule/Clash/Jetbrains/Jetbrains.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Jetbrains/Jetbrains.yaml",
+          "service": "jetbrains",
+          "local": "sources/blackmatrix7/Clash_Jetbrains.yaml",
+          "size": 611,
+          "sha256": "6c7697252813345c651357427fabbfb4bcd2c480067f356314566e38c0bdeb20",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_eBay.yaml",
+          "path": "rule/Clash/eBay/eBay.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/eBay/eBay.yaml",
+          "service": "ebay",
+          "local": "sources/blackmatrix7/Clash_eBay.yaml",
+          "size": 1434,
+          "sha256": "bd35c483ef0848bea318b47bd7a2fd747ee3c0e6648380cf25b6981b00a1a536",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Shopify.yaml",
+          "path": "rule/Clash/Shopify/Shopify.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Shopify/Shopify.yaml",
+          "service": "shopify",
+          "local": "sources/blackmatrix7/Clash_Shopify.yaml",
+          "size": 421,
+          "sha256": "818533a21a6278a8fa69049388a919c83b168f808ff0b750740b214047c97aa6",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_SoundCloud.yaml",
+          "path": "rule/Clash/SoundCloud/SoundCloud.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SoundCloud/SoundCloud.yaml",
+          "service": "soundcloud",
+          "local": "sources/blackmatrix7/Clash_SoundCloud.yaml",
+          "size": 257,
+          "sha256": "59ef011a471a45895a2eb0879a8c12f8fe301d56cf60919e0700f1b2b6d884ee",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Huawei.yaml",
+          "path": "rule/Clash/Huawei/Huawei.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Huawei/Huawei.yaml",
+          "service": "huawei",
+          "local": "sources/blackmatrix7/Clash_Huawei.yaml",
+          "size": 5287,
+          "sha256": "aabec2f4fed60baeb105bf1c611c717199e426b69613019f96183557e9bbb638",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_XiaoMi.yaml",
+          "path": "rule/Clash/XiaoMi/XiaoMi.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/XiaoMi/XiaoMi.yaml",
+          "service": "xiaomi",
+          "local": "sources/blackmatrix7/Clash_XiaoMi.yaml",
+          "size": 5316,
+          "sha256": "eb8b3acd06fcc3fbc1b1cf5b8606f78aadc34a7e0ffea00d6091ef7328358e42",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_OPPO.yaml",
+          "path": "rule/Clash/OPPO/OPPO.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OPPO/OPPO.yaml",
+          "service": "oppo",
+          "local": "sources/blackmatrix7/Clash_OPPO.yaml",
+          "size": 1893,
+          "sha256": "319c1fa5000c618c4a918aafc67c309c82c7966d2990a50588b5838b7b2ebb9c",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Vivo.yaml",
+          "path": "rule/Clash/Vivo/Vivo.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Vivo/Vivo.yaml",
+          "service": "vivo",
+          "local": "sources/blackmatrix7/Clash_Vivo.yaml",
+          "size": 571,
+          "sha256": "c498275437885a190b81c157f50e9150d07e6ba334c4690a38218e57105bd805",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Wikipedia.yaml",
+          "path": "rule/Clash/Wikipedia/Wikipedia.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Wikipedia/Wikipedia.yaml",
+          "service": "wikipedia",
+          "local": "sources/blackmatrix7/Clash_Wikipedia.yaml",
+          "size": 556,
+          "sha256": "e9557de220974c7331e135ce24b436265fd1563c27d4b9b6a80747205acf014a",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_BBC.yaml",
+          "path": "rule/Clash/BBC/BBC.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BBC/BBC.yaml",
+          "service": "bbc",
+          "local": "sources/blackmatrix7/Clash_BBC.yaml",
+          "size": 1160,
+          "sha256": "c1b8d93c30bae6083a1a1167785b80b8896cbd3bbf32115958fc11b8e6828cd4",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Scholar.yaml",
+          "path": "rule/Clash/Scholar/Scholar.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Scholar/Scholar.yaml",
+          "service": "scholar",
+          "local": "sources/blackmatrix7/Clash_Scholar.yaml",
+          "size": 7595,
+          "sha256": "35ca7ffb814c4f55f5381fd1ed35f4e8ca732a3c79fb47921ff4232fea22ea19",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_AppStore.yaml",
+          "path": "rule/Clash/AppStore/AppStore.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppStore/AppStore.yaml",
+          "service": "apple",
+          "local": "sources/blackmatrix7/Clash_AppStore.yaml",
+          "size": 213,
+          "sha256": "96b8bdfd20cd3937ab08b2eaba286eac7e83e3e580c1e967861f7622ad9d43bf",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_TestFlight.yaml",
+          "path": "rule/Clash/TestFlight/TestFlight.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TestFlight/TestFlight.yaml",
+          "service": "apple",
+          "local": "sources/blackmatrix7/Clash_TestFlight.yaml",
+          "size": 269,
+          "sha256": "efe991b49a7571a81fcd7fcc9c5c9d2fad9b98e892341ee64c3a230db45fbab9",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_AppleDev.yaml",
+          "path": "rule/Clash/AppleDev/AppleDev.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleDev/AppleDev.yaml",
+          "service": "apple",
+          "local": "sources/blackmatrix7/Clash_AppleDev.yaml",
+          "size": 1710,
+          "sha256": "205666f4e5678428ba4bb79400c8b15d421b7752ff0b52318bbf27941df420eb",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_FindMy.yaml",
+          "path": "rule/Clash/FindMy/FindMy.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/FindMy/FindMy.yaml",
+          "service": "apple",
+          "local": "sources/blackmatrix7/Clash_FindMy.yaml",
+          "size": 252,
+          "sha256": "356a86e54dd3806b63a66f4cad93aa726c22e7b430e94fb429d02e1c1b5df61f",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_AppleMedia.yaml",
+          "path": "rule/Clash/AppleMedia/AppleMedia.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleMedia/AppleMedia.yaml",
+          "service": "apple",
+          "local": "sources/blackmatrix7/Clash_AppleMedia.yaml",
+          "size": 1984,
+          "sha256": "991459ec6d4672f45251b8d488b6c2798ecb4803616a28be80b23b2cd23183bc",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_AppleNews.yaml",
+          "path": "rule/Clash/AppleNews/AppleNews.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleNews/AppleNews.yaml",
+          "service": "apple",
+          "local": "sources/blackmatrix7/Clash_AppleNews.yaml",
+          "size": 234,
+          "sha256": "f45b1892d69cac07cbf55d3d498fbaebb22eb686e55f5485e4f697c2ed0eeb54",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_PPTV.yaml",
+          "path": "rule/Clash/PPTV/PPTV.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PPTV/PPTV.yaml",
+          "service": "pptv",
+          "local": "sources/blackmatrix7/Clash_PPTV.yaml",
+          "size": 715,
+          "sha256": "20e10645ed2edccc9d29252c9b6151618fc6c2baf0bdb15507d86f2e08040d0a",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_AcFun.yaml",
+          "path": "rule/Clash/AcFun/AcFun.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AcFun/AcFun.yaml",
+          "service": "acfun",
+          "local": "sources/blackmatrix7/Clash_AcFun.yaml",
+          "size": 275,
+          "sha256": "8ebab71305e051894f603826be6144788c1452e48fe5a4e8782360f0a1e51f7f",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_CCTV.yaml",
+          "path": "rule/Clash/CCTV/CCTV.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/CCTV/CCTV.yaml",
+          "service": "cctv",
+          "local": "sources/blackmatrix7/Clash_CCTV.yaml",
+          "size": 1431,
+          "sha256": "4e5604afbdb701bec93bc56b00961bbe329f9340840465767338a39c018effab",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_HuYa.yaml",
+          "path": "rule/Clash/HuYa/HuYa.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HuYa/HuYa.yaml",
+          "service": "huya",
+          "local": "sources/blackmatrix7/Clash_HuYa.yaml",
+          "size": 281,
+          "sha256": "cb4acc769b2af26e6c3732f3302bad7afdc424571decec4c465e98bd12d1cd95",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Douyu.yaml",
+          "path": "rule/Clash/Douyu/Douyu.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Douyu/Douyu.yaml",
+          "service": "douyu",
+          "local": "sources/blackmatrix7/Clash_Douyu.yaml",
+          "size": 556,
+          "sha256": "4f6e0a84f37a57f6fc1a18e2ef9efd8a6d6dff8153268102ff489922c883caff",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Himalaya.yaml",
+          "path": "rule/Clash/Himalaya/Himalaya.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Himalaya/Himalaya.yaml",
+          "service": "himalaya",
+          "local": "sources/blackmatrix7/Clash_Himalaya.yaml",
+          "size": 693,
+          "sha256": "7bbf3680b73a444821443d2d7a7cae7ea15efec97499fc9e48e688098e0cdc82",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_WeTV.yaml",
+          "path": "rule/Clash/WeTV/WeTV.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeTV/WeTV.yaml",
+          "service": "wetv",
+          "local": "sources/blackmatrix7/Clash_WeTV.yaml",
+          "size": 505,
+          "sha256": "4752268e0f2840fd1a7095f1dd636479448788d1be9cdb113a2e8029b8d536c4",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Sohu.yaml",
+          "path": "rule/Clash/Sohu/Sohu.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Sohu/Sohu.yaml",
+          "service": "sohu",
+          "local": "sources/blackmatrix7/Clash_Sohu.yaml",
+          "size": 1697,
+          "sha256": "e6b393d9cd24cf01bd34f0f16118d12f048b744cdded1fcab897692b08725cd6",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_LeTV.yaml",
+          "path": "rule/Clash/LeTV/LeTV.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/LeTV/LeTV.yaml",
+          "service": "letv",
+          "local": "sources/blackmatrix7/Clash_LeTV.yaml",
+          "size": 552,
+          "sha256": "e8ef477db8aac75fbc619fa4ecaebc3cd1e3749576345ebbe0d8b2fb30fb985a",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Bahamut.yaml",
+          "path": "rule/Clash/Bahamut/Bahamut.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bahamut/Bahamut.yaml",
+          "service": "bahamut",
+          "local": "sources/blackmatrix7/Clash_Bahamut.yaml",
+          "size": 390,
+          "sha256": "5194da93d0b6a441f1c6c294c93619540a72237bf443a247ba7d2ceb07e2ef92",
+          "status": "ok"
+        },
+        {
+          "name": "Clash_Emby.yaml",
+          "path": "rule/Clash/Emby/Emby.yaml",
+          "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Emby/Emby.yaml",
+          "service": "emby",
+          "local": "sources/blackmatrix7/Clash_Emby.yaml",
+          "size": 1892,
+          "sha256": "bd2b9c2a96c12aba29a522246f7a51ae98a78731a0df805f01d8d4f0c98df519",
+          "status": "ok"
+        }
+      ],
+      "registry_priority": 95,
+      "registry_trust": "high"
+    },
+    {
+      "source": "metacubex",
+      "fetch": "github_raw",
+      "timestamp": "2026-09-01T01:01:12.374253+00:00",
+      "files_ok": 76,
+      "files_failed": 0,
+      "empty_blocked": 0,
+      "rules_declared": 76,
+      "files": [
+        {
+          "name": "geosite_alibaba.list",
+          "path": "geo/geosite/alibaba.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/alibaba.list",
+          "service": "alibaba",
+          "local": "sources/metacubex/geosite_alibaba.list",
+          "size": 7962,
+          "sha256": "64a5dffc342148f0cbe442adc74ae36e4eb59077fce66467f22ebc39474ebe06",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_alibabacloud.list",
+          "path": "geo/geosite/alibabacloud.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/alibabacloud.list",
+          "service": "alibabacloud",
+          "local": "sources/metacubex/geosite_alibabacloud.list",
+          "size": 257,
+          "sha256": "3ade01da88be899e5161139a57fe7cce350eede74a462fb24bb0c5ceddb76098",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_tencent.list",
+          "path": "geo/geosite/tencent.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tencent.list",
+          "service": "tencent",
+          "local": "sources/metacubex/geosite_tencent.list",
+          "size": 11324,
+          "sha256": "558220281c845d19a7e5e270417f907a2b245211e609271f03f8cf394d74e178",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_baidu.list",
+          "path": "geo/geosite/baidu.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/baidu.list",
+          "service": "baidu",
+          "local": "sources/metacubex/geosite_baidu.list",
+          "size": 2200,
+          "sha256": "292937d5019e72cb1d9c5a057a212ce600ae5b3e52bbcf31c7b93e0b6d7b7882",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_bytedance.list",
+          "path": "geo/geosite/bytedance.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bytedance.list",
+          "service": "bytedance",
+          "local": "sources/metacubex/geosite_bytedance.list",
+          "size": 16263,
+          "sha256": "8e1e7e2ec8ba8efc225710b7ced72bcd9f94b1f55ce3b02d7274a9c1868dace5",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_jd.list",
+          "path": "geo/geosite/jd.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/jd.list",
+          "service": "jingdong",
+          "local": "sources/metacubex/geosite_jd.list",
+          "size": 3995,
+          "sha256": "6438df20561540e0debe673b593fb6b232e7dd69bba5fe7ff1ff762821d4108b",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_netease.list",
+          "path": "geo/geosite/netease.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netease.list",
+          "service": "netease",
+          "local": "sources/metacubex/geosite_netease.list",
+          "size": 818,
+          "sha256": "0eedbc347c56f9acec10a64831ab3174f853d85c6f9dfa21552f4e3f3b173ec4",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_bilibili.list",
+          "path": "geo/geosite/bilibili.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.list",
+          "service": "bilibili",
+          "local": "sources/metacubex/geosite_bilibili.list",
+          "size": 778,
+          "sha256": "d1d76d33c08b2bfaea6b1f661c87eeb2064f6ebd7c5dbe8e1f2bb8ab5b4acc98",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_azure.list",
+          "path": "geo/geosite/azure.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/azure.list",
+          "service": "azure",
+          "local": "sources/metacubex/geosite_azure.list",
+          "size": 2844,
+          "sha256": "8294f7e677491cd0a5db5e425141f88c3a998646386afcccf51b4c823b41054a",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_aws.list",
+          "path": "geo/geosite/aws.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/aws.list",
+          "service": "aws",
+          "local": "sources/metacubex/geosite_aws.list",
+          "size": 1402,
+          "sha256": "a1fc684ef754d2558f592cdbbe1894f5c4709da4c8ed6b751628d23e10750fa1",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_huggingface.list",
+          "path": "geo/geosite/huggingface.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/huggingface.list",
+          "service": "huggingface",
+          "local": "sources/metacubex/geosite_huggingface.list",
+          "size": 35,
+          "sha256": "8ee30c1014ac23d5e0481ef3263177078c917d2d21fea7bf6d5760efbd0df678",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_zoom.list",
+          "path": "geo/geosite/zoom.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/zoom.list",
+          "service": "zoom",
+          "local": "sources/metacubex/geosite_zoom.list",
+          "size": 34,
+          "sha256": "c69383665bf35295bd13deebe3f8e0d5eb63059e456c431dca334f04d6e3729d",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_heroku.list",
+          "path": "geo/geosite/heroku.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/heroku.list",
+          "service": "heroku",
+          "local": "sources/metacubex/geosite_heroku.list",
+          "size": 177,
+          "sha256": "d7d7220c784ad6b746cdc132307c8006a2f8afc08e8d0c1333cb2e273ce4f4b6",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_perplexity.list",
+          "path": "geo/geosite/perplexity.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/perplexity.list",
+          "service": "perplexity",
+          "local": "sources/metacubex/geosite_perplexity.list",
+          "size": 102,
+          "sha256": "f07ed9821d704b8a42efcf9f7965e1a1418a9c5a12f35dcbdfbe3d4925d69201",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_groq.list",
+          "path": "geo/geosite/groq.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/groq.list",
+          "service": "groq",
+          "local": "sources/metacubex/geosite_groq.list",
+          "size": 10,
+          "sha256": "7b15edad3da6fcfc18dc648c1a072636b5fa8116fc51538f4d1e9583ebf21ea4",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_xai.list",
+          "path": "geo/geosite/xai.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/xai.list",
+          "service": "xai",
+          "local": "sources/metacubex/geosite_xai.list",
+          "size": 47,
+          "sha256": "558bd1eecd925c0033f61b6c96a35d32aad380effdb1d4143d24d1ada20bb13d",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_firebase.list",
+          "path": "geo/geosite/firebase.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/firebase.list",
+          "service": "firebase",
+          "local": "sources/metacubex/geosite_firebase.list",
+          "size": 585,
+          "sha256": "00404507eaac7c68e4dc7c03e4c0910dee5fe1360f91873c782ca206a2c06152",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_doubao.list",
+          "path": "geo/geosite/doubao.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/doubao.list",
+          "service": "doubao",
+          "local": "sources/metacubex/geosite_doubao.list",
+          "size": 506,
+          "sha256": "bcab7cbf1849ceb55e517ab8fcfb6fd097a49cf74f60eb7d2dfd40876f836761",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_deepseek.list",
+          "path": "geo/geosite/deepseek.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/deepseek.list",
+          "service": "deepseek",
+          "local": "sources/metacubex/geosite_deepseek.list",
+          "size": 14,
+          "sha256": "8be81741516a03f0fc79ea093d401a357a23b6b06253fa2b3dc5559d19ee97e4",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_cursor.list",
+          "path": "geo/geosite/cursor.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cursor.list",
+          "service": "cursor",
+          "local": "sources/metacubex/geosite_cursor.list",
+          "size": 57,
+          "sha256": "76846ab4cd6c8ed5c1b402a99ad4320323e03de13d546fe656055f4d8cf5de0f",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_signal.list",
+          "path": "geo/geosite/signal.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/signal.list",
+          "service": "signal",
+          "local": "sources/metacubex/geosite_signal.list",
+          "size": 119,
+          "sha256": "955b49e46b8cff93a8dd471afdbe8c54373ff17a206468ae3b8a0fb5a6ff2a21",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_messenger.list",
+          "path": "geo/geosite/messenger.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/messenger.list",
+          "service": "messenger",
+          "local": "sources/metacubex/geosite_messenger.list",
+          "size": 53,
+          "sha256": "230d53d14bed2582219d43b73e9a08590bb3ca5e784d7b13207d3ce0f2f0bb1e",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_bluesky.list",
+          "path": "geo/geosite/bluesky.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bluesky.list",
+          "service": "bluesky",
+          "local": "sources/metacubex/geosite_bluesky.list",
+          "size": 39,
+          "sha256": "6359e270e0a868b603bdeccd104352bcc345460f02bb3da0952bd033596134d6",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_canva.list",
+          "path": "geo/geosite/canva.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/canva.list",
+          "service": "canva",
+          "local": "sources/metacubex/geosite_canva.list",
+          "size": 149,
+          "sha256": "6fe98f224cb0ee56d809ed85227a0043a0b0858bc5a76467062e883c0e959f24",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_netlify.list",
+          "path": "geo/geosite/netlify.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netlify.list",
+          "service": "netlify",
+          "local": "sources/metacubex/geosite_netlify.list",
+          "size": 232,
+          "sha256": "1c80594b4e026135c4272ce273b34de198676dfbdb69ae0782abcd1a75c9d3d8",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_trello.list",
+          "path": "geo/geosite/trello.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/trello.list",
+          "service": "trello",
+          "local": "sources/metacubex/geosite_trello.list",
+          "size": 28,
+          "sha256": "6005173555eba220d828dba6075bd8736b076a522f7de5912fc68c3b639060e3",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_walmart.list",
+          "path": "geo/geosite/walmart.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/walmart.list",
+          "service": "walmart",
+          "local": "sources/metacubex/geosite_walmart.list",
+          "size": 140,
+          "sha256": "80191536ecfdc00dfa85f447d6e5f77dba7e80b08d6d583cadd4f3b461fbe5f8",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_uber.list",
+          "path": "geo/geosite/uber.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/uber.list",
+          "service": "uber",
+          "local": "sources/metacubex/geosite_uber.list",
+          "size": 43,
+          "sha256": "0c76f78ba804bb90a9bb96679ad6f220f10ac27ee83b5c4ec1fb3bd202518ea0",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_airbnb.list",
+          "path": "geo/geosite/airbnb.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/airbnb.list",
+          "service": "airbnb",
+          "local": "sources/metacubex/geosite_airbnb.list",
+          "size": 1147,
+          "sha256": "4439023927149b93e750905460cc50179eff23ccbeb07c4a093d55eea54532ff",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_booking.list",
+          "path": "geo/geosite/booking.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/booking.list",
+          "service": "booking",
+          "local": "sources/metacubex/geosite_booking.list",
+          "size": 40,
+          "sha256": "124055f45b99f933de3534f4b64ff5b3dadf421601b87866d1dd5b70ae3793af",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_wise.list",
+          "path": "geo/geosite/wise.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/wise.list",
+          "service": "wise",
+          "local": "sources/metacubex/geosite_wise.list",
+          "size": 29,
+          "sha256": "8d94a942c322e168958a4dcf86b72bd4cd8025aad98b8abe83e3a361fc199a31",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_tidal.list",
+          "path": "geo/geosite/tidal.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tidal.list",
+          "service": "tidal",
+          "local": "sources/metacubex/geosite_tidal.list",
+          "size": 43,
+          "sha256": "882e2a071e58fce471e10cdd844db5bca58274ed5da4aa0e78214dbfa940e6a4",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_amap.list",
+          "path": "geo/geosite/amap.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/amap.list",
+          "service": "amap",
+          "local": "sources/metacubex/geosite_amap.list",
+          "size": 250,
+          "sha256": "f4dd8b146e7ad206be0f0070da98e6b3cc3f82a6430f4c03a557fbff8b36c9c0",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_dewu.list",
+          "path": "geo/geosite/dewu.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/dewu.list",
+          "service": "dewu",
+          "local": "sources/metacubex/geosite_dewu.list",
+          "size": 689,
+          "sha256": "b0a7bf9e2a5e627fa1a2a3ee7f298dea8a4389398d87ea47704f368bfb390c00",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_roblox.list",
+          "path": "geo/geosite/roblox.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/roblox.list",
+          "service": "roblox",
+          "local": "sources/metacubex/geosite_roblox.list",
+          "size": 740,
+          "sha256": "d739c312372b6a837446227442f1030c55bc78f861c54bdfdc744f634ce8b12f",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_mojang.list",
+          "path": "geo/geosite/mojang.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/mojang.list",
+          "service": "minecraft",
+          "local": "sources/metacubex/geosite_mojang.list",
+          "size": 115,
+          "sha256": "878ab93174af5a606bd7bba790cf6ada58d31a41464e5491ef42d7e2ce8e814d",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_elevenlabs.list",
+          "path": "geo/geosite/elevenlabs.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/elevenlabs.list",
+          "service": "elevenlabs",
+          "local": "sources/metacubex/geosite_elevenlabs.list",
+          "size": 32,
+          "sha256": "f57d6a18669fa9fd0f5bc580b64315d2de9579e07dff9ac61eedd704179cbb59",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_snap.list",
+          "path": "geo/geosite/snap.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/snap.list",
+          "service": "snapchat",
+          "local": "sources/metacubex/geosite_snap.list",
+          "size": 149,
+          "sha256": "3987498d3882be2bcf425787b9de87387f6006adc5e076bed0fa6d2c537d40db",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_cn.yaml",
+          "path": "geo/geosite/cn.yaml",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml",
+          "service": "china",
+          "local": "sources/metacubex/geosite_cn.yaml",
+          "size": 2298225,
+          "sha256": "6e658ba9a13eb74634b2c7936e8991fde0b4c4e1519dee1daf6a28f8948d953d",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_apple.list",
+          "path": "geo/geosite/apple.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.list",
+          "service": "apple",
+          "local": "sources/metacubex/geosite_apple.list",
+          "size": 36860,
+          "sha256": "e0d867e10f06ecefc5436f47ffd5679bf7a57c3e69489f64057ddaf347d1d392",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_apple_dev.list",
+          "path": "geo/geosite/apple-dev.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-dev.list",
+          "service": "apple",
+          "local": "sources/metacubex/geosite_apple_dev.list",
+          "size": 1037,
+          "sha256": "028f0ab6829bcee63ac28e5046a10d36094c604b99f2e0b713f31ce85e03bb6c",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_apple_update.list",
+          "path": "geo/geosite/apple-update.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-update.list",
+          "service": "apple",
+          "local": "sources/metacubex/geosite_apple_update.list",
+          "size": 426,
+          "sha256": "1026268082ce0c7dd331c89009cfa2016269d2a5919f0a207e54a2189f377c4b",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_icloud.list",
+          "path": "geo/geosite/icloud.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/icloud.list",
+          "service": "icloud",
+          "local": "sources/metacubex/geosite_icloud.list",
+          "size": 811,
+          "sha256": "7e2416b79f7b3f0e8ec625870c2d297d730c454ea831fd3111e46e19b19675ce",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_google.list",
+          "path": "geo/geosite/google.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.list",
+          "service": "google",
+          "local": "sources/metacubex/geosite_google.list",
+          "size": 18231,
+          "sha256": "038f4ab273cda78c919cdedb0802b8cfd642f93d22c674a9f30bce9d55ff0bf4",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_youtube.list",
+          "path": "geo/geosite/youtube.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.list",
+          "service": "youtube",
+          "local": "sources/metacubex/geosite_youtube.list",
+          "size": 2743,
+          "sha256": "e95f241fa4357918fc1066390c352aad750b571ddea15e3421d30c84e947ac10",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_microsoft.list",
+          "path": "geo/geosite/microsoft.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.list",
+          "service": "microsoft",
+          "local": "sources/metacubex/geosite_microsoft.list",
+          "size": 15481,
+          "sha256": "11d35d0253286500c98b0fceba3524870cd1a5681d2e237bb08cb0fda5482fad",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_github.list",
+          "path": "geo/geosite/github.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.list",
+          "service": "github",
+          "local": "sources/metacubex/geosite_github.list",
+          "size": 1924,
+          "sha256": "f5d67e6e0c8799bd292c8a012d579c8af37ee6a0af771299dd6500db4d1202fd",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_cloudflare.list",
+          "path": "geo/geosite/cloudflare.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cloudflare.list",
+          "service": "cloudflare",
+          "local": "sources/metacubex/geosite_cloudflare.list",
+          "size": 1488,
+          "sha256": "ce050890a31f78d22732569a351ec857ab575089a86877a52aecb2f12eff024f",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_amazon.list",
+          "path": "geo/geosite/amazon.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/amazon.list",
+          "service": "amazon",
+          "local": "sources/metacubex/geosite_amazon.list",
+          "size": 4424,
+          "sha256": "f554226c6f17ddf7f25636c3a8a360896c9dfd2e57aef98247e7d772b4cdceef",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_facebook.list",
+          "path": "geo/geosite/facebook.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/facebook.list",
+          "service": "facebook",
+          "local": "sources/metacubex/geosite_facebook.list",
+          "size": 7120,
+          "sha256": "c596908eb3c2227cd9d7b9974f8fed38ad4439118a0a10c4f63c69181313fd9e",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_instagram.list",
+          "path": "geo/geosite/instagram.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/instagram.list",
+          "service": "instagram",
+          "local": "sources/metacubex/geosite_instagram.list",
+          "size": 1447,
+          "sha256": "e5cba6ce4fa5a0dddbd4710d9dd5b6693c249e6f5be4179401843109ecbca228",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_twitter.list",
+          "path": "geo/geosite/twitter.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitter.list",
+          "service": "twitter",
+          "local": "sources/metacubex/geosite_twitter.list",
+          "size": 369,
+          "sha256": "7bc17d19d2fa089b36993e56275eb0eb7355963f3e90a711364086442fd369c0",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_tiktok.list",
+          "path": "geo/geosite/tiktok.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.list",
+          "service": "tiktok",
+          "local": "sources/metacubex/geosite_tiktok.list",
+          "size": 730,
+          "sha256": "892f03350bb9c1d5e2fa15b417ac6759f13b12f558208d979d9f4d4cec310003",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_whatsapp.list",
+          "path": "geo/geosite/whatsapp.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/whatsapp.list",
+          "service": "whatsapp",
+          "local": "sources/metacubex/geosite_whatsapp.list",
+          "size": 218,
+          "sha256": "5554ce8069e2b3ca3222f112b2192652e96e5574be9096f71579191c8d498bfc",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_reddit.list",
+          "path": "geo/geosite/reddit.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/reddit.list",
+          "service": "reddit",
+          "local": "sources/metacubex/geosite_reddit.list",
+          "size": 205,
+          "sha256": "bbfb9746c59c64d225d9126f23dc1f4d376edbafab2ac297415be9e9a059af16",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_docker.list",
+          "path": "geo/geosite/docker.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/docker.list",
+          "service": "docker",
+          "local": "sources/metacubex/geosite_docker.list",
+          "size": 177,
+          "sha256": "6432dc0a4e52aca177e053c54274d2107bff56c21af21eeb6ccbf6169df3d251",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_category_dev.list",
+          "path": "geo/geosite/category-dev.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-dev.list",
+          "service": "developer",
+          "local": "sources/metacubex/geosite_category_dev.list",
+          "size": 12362,
+          "sha256": "9465dc513f5c39e0d1032f470b2ae9a4bba9533eb902b515e43d85d40d513e04",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_huawei.list",
+          "path": "geo/geosite/huawei.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/huawei.list",
+          "service": "huawei",
+          "local": "sources/metacubex/geosite_huawei.list",
+          "size": 6355,
+          "sha256": "a9b4da713ddfa9fcb12c94ca87bb875166d6bbae66086a9b6e82f179354aed41",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_douyin.list",
+          "path": "geo/geosite/douyin.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/douyin.list",
+          "service": "douyin",
+          "local": "sources/metacubex/geosite_douyin.list",
+          "size": 1208,
+          "sha256": "b3cf1b6906d1f45454599955e681d4980d7434411f1d976d37550eefb6c9066d",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_openai.list",
+          "path": "geo/geosite/openai.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/openai.list",
+          "service": "openai",
+          "local": "sources/metacubex/geosite_openai.list",
+          "size": 522,
+          "sha256": "9c3c755ad42fa75196e5d37705d0d5bfff5f60bc0d9a1f017272e70eafde7645",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_anthropic.list",
+          "path": "geo/geosite/anthropic.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/anthropic.list",
+          "service": "anthropic",
+          "local": "sources/metacubex/geosite_anthropic.list",
+          "size": 153,
+          "sha256": "0155b69f43c57d61fa8152ae3372233b0660affd6d2b2c01315290f53a311b7f",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_netflix.list",
+          "path": "geo/geosite/netflix.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.list",
+          "service": "netflix",
+          "local": "sources/metacubex/geosite_netflix.list",
+          "size": 452,
+          "sha256": "980ec18a1c566850622523310feb9ed38cd562c82e697c3da7f756b816f337d8",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_category_ai.list",
+          "path": "geo/geosite/category-ai-!cn.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-%21cn.list",
+          "service": "ai",
+          "local": "sources/metacubex/geosite_category_ai.list",
+          "size": 3431,
+          "sha256": "2771d49b33e427914cce08340b0ccce920e5e711dcf83999bd3970bd3cba8527",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_category_porn.list",
+          "path": "geo/geosite/category-porn.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-porn.list",
+          "service": "restricted",
+          "local": "sources/metacubex/geosite_category_porn.list",
+          "size": 107168,
+          "sha256": "fb0305d95c8749e095346160eb957f3e46a0fd08d0f38ce1329cbc21a94a4323",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_pornhub.list",
+          "path": "geo/geosite/pornhub.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/pornhub.list",
+          "service": "restricted",
+          "local": "sources/metacubex/geosite_pornhub.list",
+          "size": 146,
+          "sha256": "2dd1f683df80e0f7119a573f6370f757d8b927162037d6b7305d42c6bb94fda5",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_xvideos.list",
+          "path": "geo/geosite/xvideos.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/xvideos.list",
+          "service": "restricted",
+          "local": "sources/metacubex/geosite_xvideos.list",
+          "size": 80,
+          "sha256": "b2401049361ad8023e7e72b6e436d1d8f232452cdc5500347f71e5b1572729f9",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_ehentai.list",
+          "path": "geo/geosite/ehentai.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ehentai.list",
+          "service": "restricted",
+          "local": "sources/metacubex/geosite_ehentai.list",
+          "size": 121,
+          "sha256": "b0465da3d078db69bef733acbfd6a81ba5eb527b281ab45dfc93fab02e956e0e",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_kugou.list",
+          "path": "geo/geosite/kugou.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/kugou.list",
+          "service": "kugou",
+          "local": "sources/metacubex/geosite_kugou.list",
+          "size": 326,
+          "sha256": "7259ab825d9e4797294f668211e03dc9438de818094cee6d0d48f2ad8b3a8d72",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_kuwo.list",
+          "path": "geo/geosite/kuwo.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/kuwo.list",
+          "service": "kuwo",
+          "local": "sources/metacubex/geosite_kuwo.list",
+          "size": 32,
+          "sha256": "79fd18dbb0f7331144a336689c8c5944bd1fbbeefd491993f4372290c686ee42",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_ximalaya.list",
+          "path": "geo/geosite/ximalaya.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ximalaya.list",
+          "service": "ximalaya",
+          "local": "sources/metacubex/geosite_ximalaya.list",
+          "size": 96,
+          "sha256": "8cb96625b022e68952814b928d741bf93fbbd27d9e0820b4a4885888aaad9ef2",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_acfun.list",
+          "path": "geo/geosite/acfun.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/acfun.list",
+          "service": "acfun",
+          "local": "sources/metacubex/geosite_acfun.list",
+          "size": 115,
+          "sha256": "381d6708e23c62d500120f3f59e584b3a629c30e33b9046043ad6d7c8032a590",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_cctv.list",
+          "path": "geo/geosite/cctv.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cctv.list",
+          "service": "cctv",
+          "local": "sources/metacubex/geosite_cctv.list",
+          "size": 768,
+          "sha256": "02adf1300afbee1b60bf5a459cd82e2fba6f75ec939490c5341393bc08c8cb33",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_huya.list",
+          "path": "geo/geosite/huya.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/huya.list",
+          "service": "huya",
+          "local": "sources/metacubex/geosite_huya.list",
+          "size": 25,
+          "sha256": "9a3fba1811696bd60fadf41175c96785972adb21efd6989af4e300742eeb9128",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_douyu.list",
+          "path": "geo/geosite/douyu.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/douyu.list",
+          "service": "douyu",
+          "local": "sources/metacubex/geosite_douyu.list",
+          "size": 95,
+          "sha256": "2e9a737eb9b80f1c2716a4624642fac3fefe13b777e826fe3dd4e85f90b28101",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_iqiyi.list",
+          "path": "geo/geosite/iqiyi.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/iqiyi.list",
+          "service": "iqiyi",
+          "local": "sources/metacubex/geosite_iqiyi.list",
+          "size": 311,
+          "sha256": "35e8445d1ef99470d25c6ab535b7d101dc87b0a4c905a48daf6ba116528e4c3f",
+          "status": "ok"
+        },
+        {
+          "name": "geosite_youku.list",
+          "path": "geo/geosite/youku.list",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youku.list",
+          "service": "youku",
+          "local": "sources/metacubex/geosite_youku.list",
+          "size": 575,
+          "sha256": "78232642b3df18f6c51ab07828c84824a179b74ee9c6d4022e9823f29b03459f",
+          "status": "ok"
+        }
+      ],
+      "registry_priority": 90,
+      "registry_trust": "high"
+    },
+    {
+      "source": "v2fly",
+      "fetch": "github_raw",
+      "timestamp": "2026-09-01T01:01:22.293558+00:00",
+      "files_ok": 56,
+      "files_failed": 0,
+      "empty_blocked": 0,
+      "rules_declared": 56,
+      "files": [
+        {
+          "name": "v2fly_deepseek",
+          "path": "data/deepseek",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/deepseek",
+          "service": "deepseek",
+          "local": "sources/v2fly/v2fly_deepseek",
+          "size": 29,
+          "sha256": "52822c92e87fadcfdc6711133f1270ee77ef030459603a46cf6fa80f75856530",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_elevenlabs",
+          "path": "data/elevenlabs",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/elevenlabs",
+          "service": "elevenlabs",
+          "local": "sources/v2fly/v2fly_elevenlabs",
+          "size": 29,
+          "sha256": "4c284a7e5947f4a40d40c9dc8fedf3e9e3091db0c7680b913b2b19db36ebd561",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_huggingface",
+          "path": "data/huggingface",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/huggingface",
+          "service": "huggingface",
+          "local": "sources/v2fly/v2fly_huggingface",
+          "size": 30,
+          "sha256": "67f5861b31232701f884efd38d9436dd89183fccbd01d6f10d791b9ef6fbf4b8",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_perplexity",
+          "path": "data/perplexity",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/perplexity",
+          "service": "perplexity",
+          "local": "sources/v2fly/v2fly_perplexity",
+          "size": 108,
+          "sha256": "570581bad658566cb493207c14ebb55110750071071e089b4c40054b00af3db0",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_anthropic",
+          "path": "data/anthropic",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/anthropic",
+          "service": "anthropic",
+          "local": "sources/v2fly/v2fly_anthropic",
+          "size": 152,
+          "sha256": "3d0e231009271bad865131381da71b489b18ca699f38afe3a0ebef00011f1b88",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_signal",
+          "path": "data/signal",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/signal",
+          "service": "signal",
+          "local": "sources/v2fly/v2fly_signal",
+          "size": 104,
+          "sha256": "2f36d2f4841bbb2c255b365dbbe1690fab8b6a721341d4b1660afb90f432cd01",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_roblox",
+          "path": "data/roblox",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/roblox",
+          "service": "roblox",
+          "local": "sources/v2fly/v2fly_roblox",
+          "size": 719,
+          "sha256": "00f09f3e842c41ebca6af24858de96c04b697e3732d05da009ce42ca42b03d9f",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_notion",
+          "path": "data/notion",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/notion",
+          "service": "notion",
+          "local": "sources/v2fly/v2fly_notion",
+          "size": 102,
+          "sha256": "068376eeeea9527bd2caa4d2e5dd65c944d8706f453c353ff9bdd315fb760527",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_figma",
+          "path": "data/figma",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/figma",
+          "service": "figma",
+          "local": "sources/v2fly/v2fly_figma",
+          "size": 10,
+          "sha256": "8d7caddac6403a19b7a3dc403f6255db4ba90e459ee2ca9a29502ead7fb16f3e",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_shopify",
+          "path": "data/shopify",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/shopify",
+          "service": "shopify",
+          "local": "sources/v2fly/v2fly_shopify",
+          "size": 112,
+          "sha256": "b255e880634a8c8f04ee9656c650e9df7ae17b2e088b6bb5fafd71a9c8f06527",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_uber",
+          "path": "data/uber",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/uber",
+          "service": "uber",
+          "local": "sources/v2fly/v2fly_uber",
+          "size": 38,
+          "sha256": "a267118c99220a570cec4493baa294bb6c94a7343d84e8f17772decad6f40a9d",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_airbnb",
+          "path": "data/airbnb",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/airbnb",
+          "service": "airbnb",
+          "local": "sources/v2fly/v2fly_airbnb",
+          "size": 1080,
+          "sha256": "49dbb68c3944b2b1db7286625349163362deaa651937a8ec39de6725571e13e9",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_booking",
+          "path": "data/booking",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/booking",
+          "service": "booking",
+          "local": "sources/v2fly/v2fly_booking",
+          "size": 39,
+          "sha256": "90860cb843bf1c9c2541e4577e901b33cd2f066ca3fcbfcf1afdb932abd5f7ae",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_openai",
+          "path": "data/openai",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/openai",
+          "service": "openai",
+          "local": "sources/v2fly/v2fly_openai",
+          "size": 679,
+          "sha256": "19a100966b3c5b0dff2e7038ba66366ef10d6384781b3eda6de4d1e79712dcc6",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_telegram",
+          "path": "data/telegram",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/telegram",
+          "service": "telegram",
+          "local": "sources/v2fly/v2fly_telegram",
+          "size": 252,
+          "sha256": "24a2d026dbf3a09a8ca893420a40adbad70328978df0100d9c63abecdbf01b5d",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_discord",
+          "path": "data/discord",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/discord",
+          "service": "discord",
+          "local": "sources/v2fly/v2fly_discord",
+          "size": 528,
+          "sha256": "6e57668fe3c87895036e1b35ce7110ea1872c41850e1e92258dc20517e3d6dc5",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_spotify",
+          "path": "data/spotify",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/spotify",
+          "service": "spotify",
+          "local": "sources/v2fly/v2fly_spotify",
+          "size": 676,
+          "sha256": "ec710e93e84e85536a661905f2182f239464f55c1e837523de222d7e9d21c65b",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_steam",
+          "path": "data/steam",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/steam",
+          "service": "steam",
+          "local": "sources/v2fly/v2fly_steam",
+          "size": 1674,
+          "sha256": "4ce9aaf395d54abd93196c188efed96d5649adcddb636ed8727ca7e665524810",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_netflix",
+          "path": "data/netflix",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/netflix",
+          "service": "netflix",
+          "local": "sources/v2fly/v2fly_netflix",
+          "size": 680,
+          "sha256": "6a5568ce8d99b718b3a191292c81c94be56b5e14601316b99a6ece708f8f91f7",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_github",
+          "path": "data/github",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/github",
+          "service": "github",
+          "local": "sources/v2fly/v2fly_github",
+          "size": 1837,
+          "sha256": "32c682a5437b3203fc8559cbf033f44ede2abb25f6358ab1a6fdc0decf5f479f",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_tiktok",
+          "path": "data/tiktok",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/tiktok",
+          "service": "tiktok",
+          "local": "sources/v2fly/v2fly_tiktok",
+          "size": 891,
+          "sha256": "1135111271ec20ad0fe6792f2018d7ecb526943d675d0e3bf15ac8fb47bd4aea",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_twitter",
+          "path": "data/twitter",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/twitter",
+          "service": "twitter",
+          "local": "sources/v2fly/v2fly_twitter",
+          "size": 327,
+          "sha256": "05fee908ab80f262be5f603b24d3bdaa60aee1005ccc1cec988bab9236061116",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_facebook",
+          "path": "data/facebook",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/facebook",
+          "service": "facebook",
+          "local": "sources/v2fly/v2fly_facebook",
+          "size": 6381,
+          "sha256": "1011563ed705cc73eaac145506c7a3e59530f59fd501d8ca88664e95e9f05cc5",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_instagram",
+          "path": "data/instagram",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/instagram",
+          "service": "instagram",
+          "local": "sources/v2fly/v2fly_instagram",
+          "size": 1326,
+          "sha256": "e392526b75e27218f874590d0db99b5e009fb0b7679095f0eac48a4ee3fb6413",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_whatsapp",
+          "path": "data/whatsapp",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/whatsapp",
+          "service": "whatsapp",
+          "local": "sources/v2fly/v2fly_whatsapp",
+          "size": 219,
+          "sha256": "d23fbe2f886bfbd52c3ae40e1fed05cbc4a721564e7eda76f226824d0b137dca",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_line",
+          "path": "data/line",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/line",
+          "service": "line",
+          "local": "sources/v2fly/v2fly_line",
+          "size": 276,
+          "sha256": "32bcf614b506ec3f4751fc0dce128624bdc6aee28f36aeff31709b671f868a69",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_cloudflare",
+          "path": "data/cloudflare",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/cloudflare",
+          "service": "cloudflare",
+          "local": "sources/v2fly/v2fly_cloudflare",
+          "size": 1043,
+          "sha256": "b3bde86c39bd09ee1e10874e793332f72c42515b58842309d53eadbc26d75683",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_ebay",
+          "path": "data/ebay",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/ebay",
+          "service": "ebay",
+          "local": "sources/v2fly/v2fly_ebay",
+          "size": 5753,
+          "sha256": "3557ab8b13d71473228c3b52f5d1173a2bf763cb1823dae3ba47f1ce42218f23",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_alibaba",
+          "path": "data/alibaba",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/alibaba",
+          "service": "alibaba",
+          "local": "sources/v2fly/v2fly_alibaba",
+          "size": 3649,
+          "sha256": "f05b4013437f1805dd8283d5f7b163783551e128719ea097c840e4d4d810fd5c",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_aliyun",
+          "path": "data/aliyun",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/aliyun",
+          "service": "alibabacloud",
+          "local": "sources/v2fly/v2fly_aliyun",
+          "size": 1978,
+          "sha256": "fffd006a66b3ed1e1d4e3a20fe041628436df341aaee04f2dd2e7a14726045e0",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_baidu",
+          "path": "data/baidu",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/baidu",
+          "service": "baidu",
+          "local": "sources/v2fly/v2fly_baidu",
+          "size": 2196,
+          "sha256": "8000466a4513be38d7181e0136d1c77db061b20e905f297bb454c5d5ecef4dee",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_bytedance",
+          "path": "data/bytedance",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/bytedance",
+          "service": "bytedance",
+          "local": "sources/v2fly/v2fly_bytedance",
+          "size": 6161,
+          "sha256": "f7084016918288fe58dbe18d862762a471c49e7e4f3c0b388a801d54f5448b4c",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_tencent",
+          "path": "data/tencent",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/tencent",
+          "service": "tencent",
+          "local": "sources/v2fly/v2fly_tencent",
+          "size": 2288,
+          "sha256": "09042c7860e9173031fd264727ca30ce30b96cc04fe7850eb39dbd953dc2333a",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_bilibili",
+          "path": "data/bilibili",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/bilibili",
+          "service": "bilibili",
+          "local": "sources/v2fly/v2fly_bilibili",
+          "size": 486,
+          "sha256": "dbe560654836a368cf5c36ed3962f5fe983f07d0f160aa8ca7e48f63cbec527b",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_apple",
+          "path": "data/apple",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/apple",
+          "service": "apple",
+          "local": "sources/v2fly/v2fly_apple",
+          "size": 17100,
+          "sha256": "d46d18afe2f2d51bd48ddd239c43f460a32a9d605b384baa2cd6c70ec29cf29f",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_icloud",
+          "path": "data/icloud",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/icloud",
+          "service": "icloud",
+          "local": "sources/v2fly/v2fly_icloud",
+          "size": 774,
+          "sha256": "c46ade14884382a65b8bb9f1b6b8e484be639ffe17abcf2ec6f50464cb56f04f",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_google",
+          "path": "data/google",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/google",
+          "service": "google",
+          "local": "sources/v2fly/v2fly_google",
+          "size": 12516,
+          "sha256": "5a85d201b8fb4b03486515618da4c164a0ce0c59341cb2dee6d1b0bdca176653",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_youtube",
+          "path": "data/youtube",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/youtube",
+          "service": "youtube",
+          "local": "sources/v2fly/v2fly_youtube",
+          "size": 2444,
+          "sha256": "9ffb657176fdffed567953749c137bb3d8a216ce4e839b3831b626c752902213",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_microsoft",
+          "path": "data/microsoft",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/microsoft",
+          "service": "microsoft",
+          "local": "sources/v2fly/v2fly_microsoft",
+          "size": 7801,
+          "sha256": "b033d7375c45b2613f5230046ef190d0f2d2c83c1eba7a082d41a0c6088286f4",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_amazon",
+          "path": "data/amazon",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/amazon",
+          "service": "amazon",
+          "local": "sources/v2fly/v2fly_amazon",
+          "size": 2149,
+          "sha256": "f1b24bcc1d576f30a09731b10cf55ba50822fd433b8f35568c77bbb45bdd5f0b",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_aws",
+          "path": "data/aws",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/aws",
+          "service": "aws",
+          "local": "sources/v2fly/v2fly_aws",
+          "size": 976,
+          "sha256": "cdb3797a5ba28abc72a82bb6334a6ec777100469994e6a50d3840fb8e1ced802",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_docker",
+          "path": "data/docker",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/docker",
+          "service": "docker",
+          "local": "sources/v2fly/v2fly_docker",
+          "size": 181,
+          "sha256": "f1b27237e9b861d88aaf80399af5088781e177780ecc7b30dd7795fea404546e",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_jetbrains",
+          "path": "data/jetbrains",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/jetbrains",
+          "service": "jetbrains",
+          "local": "sources/v2fly/v2fly_jetbrains",
+          "size": 378,
+          "sha256": "e582f14220308511a9e584612d21fa01d76c552fcfba2838b4aeedd53adb17f7",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_atlassian",
+          "path": "data/atlassian",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/atlassian",
+          "service": "atlassian",
+          "local": "sources/v2fly/v2fly_atlassian",
+          "size": 136,
+          "sha256": "3ee60d83f78b67f6fa5b80281cbeda40d800ee28e705a7b179c0d27823ecfeda",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_slack",
+          "path": "data/slack",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/slack",
+          "service": "slack",
+          "local": "sources/v2fly/v2fly_slack",
+          "size": 158,
+          "sha256": "0c1db5d6d7343fd4b423109be5396dea7a0b2769b9e150f1a3a49b1dde04ddec",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_zoom",
+          "path": "data/zoom",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/zoom",
+          "service": "zoom",
+          "local": "sources/v2fly/v2fly_zoom",
+          "size": 29,
+          "sha256": "bf9535bd84985865b4f8a8768ff9b6ec916b28e364fa157cfe30ee1ee6bb06e1",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_adobe",
+          "path": "data/adobe",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/adobe",
+          "service": "adobe",
+          "local": "sources/v2fly/v2fly_adobe",
+          "size": 2157,
+          "sha256": "454162729a6834f24f32524afc743b38d80a31a95f80ff4d7fd1f09c76e522e1",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_oracle",
+          "path": "data/oracle",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/oracle",
+          "service": "oracle",
+          "local": "sources/v2fly/v2fly_oracle",
+          "size": 233,
+          "sha256": "b4b1b50561a4e0d9d4cc1a7e0b6fbb1e7ba07b80ba5a94d1692f0b6cb898288f",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_digitalocean",
+          "path": "data/digitalocean",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/digitalocean",
+          "service": "digitalocean",
+          "local": "sources/v2fly/v2fly_digitalocean",
+          "size": 100,
+          "sha256": "05a81eb92baf04558e0db3f32889f046cc7b587090f0ca7742e951b0fb17b3cc",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_reddit",
+          "path": "data/reddit",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/reddit",
+          "service": "reddit",
+          "local": "sources/v2fly/v2fly_reddit",
+          "size": 182,
+          "sha256": "c9a8f8d31c03484cad62527e65d47b101a657d3293b9adead66a2eecf80fbce9",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_mojang",
+          "path": "data/mojang",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/mojang",
+          "service": "minecraft",
+          "local": "sources/v2fly/v2fly_mojang",
+          "size": 104,
+          "sha256": "ffc054b4b5bb01aa9e25c23444282740f0befea2b2fc8eb3e8ad53156a632757",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_huawei",
+          "path": "data/huawei",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/huawei",
+          "service": "huawei",
+          "local": "sources/v2fly/v2fly_huawei",
+          "size": 479,
+          "sha256": "5e2aa1cc680fea6594c17cf9e26111fe35be8283332e4dc2c3c1917aca335080",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_category_porn",
+          "path": "data/category-porn",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-porn",
+          "service": "restricted",
+          "local": "sources/v2fly/v2fly_category_porn",
+          "size": 92721,
+          "sha256": "009b784b14e9fa09302e38efc6f278fc44802199055d3a9dc103da161dcf67e0",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_pornhub",
+          "path": "data/pornhub",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/pornhub",
+          "service": "restricted",
+          "local": "sources/v2fly/v2fly_pornhub",
+          "size": 129,
+          "sha256": "2fc9e05935457d9e08e1d8d8cda16adfcb82645c661d9a3233ffcb5ede0a206e",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_xvideos",
+          "path": "data/xvideos",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/xvideos",
+          "service": "restricted",
+          "local": "sources/v2fly/v2fly_xvideos",
+          "size": 71,
+          "sha256": "cb33a352b459aa462c1e7cd5f60b17474ff5beec973c312019af33d3d4057040",
+          "status": "ok"
+        },
+        {
+          "name": "v2fly_ehentai",
+          "path": "data/ehentai",
+          "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/ehentai",
+          "service": "restricted",
+          "local": "sources/v2fly/v2fly_ehentai",
+          "size": 106,
+          "sha256": "e662f5137041b52538abfc590d9a42dd688571f890aa0d055de41dcc8cdd5dd2",
+          "status": "ok"
+        }
+      ],
+      "registry_priority": 85,
+      "registry_trust": "high"
+    },
+    {
+      "source": "dler",
+      "fetch": "github_raw",
+      "timestamp": "2026-09-01T01:01:24.734633+00:00",
+      "files_ok": 20,
+      "files_failed": 0,
+      "empty_blocked": 0,
+      "rules_declared": 20,
+      "files": [
+        {
+          "name": "Dler_AI_Suite.yaml",
+          "path": "Clash/Provider/AI Suite.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/AI%20Suite.yaml",
+          "service": "aisuite",
+          "local": "sources/dler/Dler_AI_Suite.yaml",
+          "size": 4967,
+          "sha256": "489f445e5e3b1b1350028ad5b7fe16efb975d6bf02684cf9b65362cc7518e4e0",
+          "status": "ok"
+        },
+        {
+          "name": "Dler_Apple.yaml",
+          "path": "Clash/Provider/Apple.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Apple.yaml",
+          "service": "apple",
+          "local": "sources/dler/Dler_Apple.yaml",
+          "size": 999,
+          "sha256": "c3eb519ac06a32b528dae4f7cdce2052cc92428829cef566e6b659e312e5001d",
+          "status": "ok"
+        },
+        {
+          "name": "Dler_Microsoft.yaml",
+          "path": "Clash/Provider/Microsoft.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Microsoft.yaml",
+          "service": "microsoft",
+          "local": "sources/dler/Dler_Microsoft.yaml",
+          "size": 20307,
+          "sha256": "a94fa5282e16176d8a8c0ec96fcc79e4ad715ca7b2f97cfc388c27fc3ba15e9d",
+          "status": "ok"
+        },
+        {
+          "name": "Dler_Telegram.yaml",
+          "path": "Clash/Provider/Telegram.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Telegram.yaml",
+          "service": "telegram",
+          "local": "sources/dler/Dler_Telegram.yaml",
+          "size": 1129,
+          "sha256": "443e2c8ca6f95649b96d2f90ddd392f19db3b598397fb3a40fb0202958b9d409",
+          "status": "ok"
+        },
+        {
+          "name": "Dler_Discord.yaml",
+          "path": "Clash/Provider/Discord.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Discord.yaml",
+          "service": "discord",
+          "local": "sources/dler/Dler_Discord.yaml",
+          "size": 214,
+          "sha256": "70db49b16cf0f48263bbb1b8fc8f34fe2e4ad5e97eecb34bc64e68ba04be84da",
+          "status": "ok"
+        },
+        {
+          "name": "Dler_Steam.yaml",
+          "path": "Clash/Provider/Steam.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Steam.yaml",
+          "service": "steam",
+          "local": "sources/dler/Dler_Steam.yaml",
+          "size": 261,
+          "sha256": "e23bf53f287982b684480abfb495a435ae4ac342c7033d588820ee5c315cf375",
+          "status": "ok"
+        },
+        {
+          "name": "Dler_TikTok.yaml",
+          "path": "Clash/Provider/TikTok.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/TikTok.yaml",
+          "service": "tiktok",
+          "local": "sources/dler/Dler_TikTok.yaml",
+          "size": 414,
+          "sha256": "6464476d09c14a77c14debbf4334802e15cd64c1acbf83f9e0af0a36dfbe8d25",
+          "status": "ok"
+        },
+        {
+          "name": "Dler_PayPal.yaml",
+          "path": "Clash/Provider/PayPal.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/PayPal.yaml",
+          "service": "paypal",
+          "local": "sources/dler/Dler_PayPal.yaml",
+          "size": 138,
+          "sha256": "92125b9a35a19649d6dbfd25170255fe012d1122b7924a0a40e948f183382c90",
+          "status": "ok"
+        },
+        {
+          "name": "Dler_Scholar.yaml",
+          "path": "Clash/Provider/Scholar.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Scholar.yaml",
+          "service": "scholar",
+          "local": "sources/dler/Dler_Scholar.yaml",
+          "size": 2536,
+          "sha256": "faa165b65abb438f8deb1f47b865a8b8f2468b890e358ce0fbf4f0e11c4c9f9d",
+          "status": "ok"
+        },
+        {
+          "name": "Dler_Google_FCM.yaml",
+          "path": "Clash/Provider/Google FCM.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Google%20FCM.yaml",
+          "service": "googlefcm",
+          "local": "sources/dler/Dler_Google_FCM.yaml",
+          "size": 1742,
+          "sha256": "6ff465654be3a8c6014f2d4ca2f2d6bb54dc6af1cbb8a2f16c216c1fce8a0564",
+          "status": "ok"
+        },
+        {
+          "name": "Dler_Douyin.yaml",
+          "path": "Clash/Provider/Douyin.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Douyin.yaml",
+          "service": "douyin",
+          "local": "sources/dler/Dler_Douyin.yaml",
+          "size": 201,
+          "sha256": "dddeb2d0512972a3609b09cbea920db345f730157f68a844e4b1eff6b56414ad",
+          "status": "ok"
+        },
+        {
+          "name": "Dler_miHoYo.yaml",
+          "path": "Clash/Provider/miHoYo.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/miHoYo.yaml",
+          "service": "hoyoverse",
+          "local": "sources/dler/Dler_miHoYo.yaml",
+          "size": 229,
+          "sha256": "f8c4251c9633ed5c3a7e4bb1512518358513fa97ea20161f9e2f85b6ed48996c",
+          "status": "ok"
+        },
+        {
+          "name": "Dler_Netflix.yaml",
+          "path": "Clash/Provider/Media/Netflix.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Netflix.yaml",
+          "service": "netflix",
+          "local": "sources/dler/Dler_Netflix.yaml",
+          "size": 233,
+          "sha256": "0fb5d3da2088c616358c4778380c8408ab974ea26f4a94dcf71314ecd9f549bd",
+          "status": "ok"
+        },
+        {
+          "name": "Dler_Spotify.yaml",
+          "path": "Clash/Provider/Media/Spotify.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Spotify.yaml",
+          "service": "spotify",
+          "local": "sources/dler/Dler_Spotify.yaml",
+          "size": 227,
+          "sha256": "4d01e0d25745ebcf9349648070500831680fff031a9577b83d83d72bb59468c0",
+          "status": "ok"
+        },
+        {
+          "name": "Dler_YouTube.yaml",
+          "path": "Clash/Provider/Media/YouTube.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/YouTube.yaml",
+          "service": "youtube",
+          "local": "sources/dler/Dler_YouTube.yaml",
+          "size": 5252,
+          "sha256": "d3885815263cc639ca85799021f0be21a4eee5dc96c8c81104f471e1617e3723",
+          "status": "ok"
+        },
+        {
+          "name": "Dler_Disney.yaml",
+          "path": "Clash/Provider/Media/Disney Plus.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Disney%20Plus.yaml",
+          "service": "disney",
+          "local": "sources/dler/Dler_Disney.yaml",
+          "size": 400,
+          "sha256": "bd1c53fbe0411875e8a93c0bf8acaa7a1049b78c71f70c491fb66c97c20e5076",
+          "status": "ok"
+        },
+        {
+          "name": "Dler_Bilibili.yaml",
+          "path": "Clash/Provider/Media/Bilibili.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Bilibili.yaml",
+          "service": "bilibili",
+          "local": "sources/dler/Dler_Bilibili.yaml",
+          "size": 685,
+          "sha256": "51121b958664b6d9909df5fc29668c9f5819dd80fb6b33d5fbc287f2523e281e",
+          "status": "ok"
+        },
+        {
+          "name": "Dler_Soundcloud.yaml",
+          "path": "Clash/Provider/Media/Soundcloud.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/Soundcloud.yaml",
+          "service": "soundcloud",
+          "local": "sources/dler/Dler_Soundcloud.yaml",
+          "size": 195,
+          "sha256": "4bf85a85d3a527c297e8ca2e56de63f58adfa0c2faefa5f739118211eec6bfec",
+          "status": "ok"
+        },
+        {
+          "name": "Dler_YouTubeMusic.yaml",
+          "path": "Clash/Provider/Media/YouTube Music.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/YouTube%20Music.yaml",
+          "service": "youtubemusic",
+          "local": "sources/dler/Dler_YouTubeMusic.yaml",
+          "size": 136,
+          "sha256": "bfbe120a66297da2dcfce510538b823b4961c460c0b9e571829ec6ed8c75b29d",
+          "status": "ok"
+        },
+        {
+          "name": "Dler_BBC.yaml",
+          "path": "Clash/Provider/Media/BBC iPlayer.yaml",
+          "url": "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Media/BBC%20iPlayer.yaml",
+          "service": "bbc",
+          "local": "sources/dler/Dler_BBC.yaml",
+          "size": 334,
+          "sha256": "a6fb79cf276f157ad751bcd2f704845e9dabe2f3e470ab35edf8271e05e426be",
+          "status": "ok"
+        }
+      ],
+      "registry_priority": 80,
+      "registry_trust": "high"
+    }
+  ]
+}

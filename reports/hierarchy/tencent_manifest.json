@@ -1,0 +1,20 @@
+{
+  "view": "tencent",
+  "kind": "aggregate",
+  "schema": 1,
+  "resolver_version": "v2.7-frozen",
+  "generated_at": "2026-09-01T01:09:49.228779+00:00",
+  "members": [
+    "tencent-core",
+    "tencent-shared",
+    "wechat"
+  ],
+  "per_member_rule_rows": {
+    "tencent-core": 701,
+    "tencent-shared": 0,
+    "wechat": 30
+  },
+  "canonical_rule_count": 722,
+  "sha256": "b57f80963f1a785a96772509886413e83ee33b60a6acbc815a21d999a6b2de12",
+  "note": "V2 freeze: legacy_body mapping remains for oracle only"
+}

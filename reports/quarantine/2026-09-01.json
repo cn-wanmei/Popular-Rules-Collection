@@ -1,0 +1,1761 @@
+{
+  "generated_at": "2026-09-01T01:07:16.276692+00:00",
+  "backup_day": "2026-09-01",
+  "scanned": 291,
+  "rejected": 3,
+  "accepted": 288,
+  "items": [
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_YouTube.yaml",
+      "bytes": 5252,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_BBC.yaml",
+      "bytes": 334,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_Soundcloud.yaml",
+      "bytes": 195,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_Discord.yaml",
+      "bytes": 214,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_PayPal.yaml",
+      "bytes": 138,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_Douyin.yaml",
+      "bytes": 201,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_Google_FCM.yaml",
+      "bytes": 1742,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_Steam.yaml",
+      "bytes": 261,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_TikTok.yaml",
+      "bytes": 414,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_miHoYo.yaml",
+      "bytes": 229,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_YouTubeMusic.yaml",
+      "bytes": 136,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_Disney.yaml",
+      "bytes": 400,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_Bilibili.yaml",
+      "bytes": 685,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_Scholar.yaml",
+      "bytes": 2536,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_AI_Suite.yaml",
+      "bytes": 4967,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_Microsoft.yaml",
+      "bytes": 20307,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_Netflix.yaml",
+      "bytes": 233,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_Spotify.yaml",
+      "bytes": 227,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_Apple.yaml",
+      "bytes": 999,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/dler/Dler_Telegram.yaml",
+      "bytes": 1129,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_uber",
+      "bytes": 38,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_figma",
+      "bytes": 10,
+      "state": "REJECTED",
+      "reasons": [
+        "too_small"
+      ]
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_tencent",
+      "bytes": 2288,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_notion",
+      "bytes": 102,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_apple",
+      "bytes": 17100,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_docker",
+      "bytes": 181,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_aliyun",
+      "bytes": 1978,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_discord",
+      "bytes": 528,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_pornhub",
+      "bytes": 129,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_booking",
+      "bytes": 39,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_bilibili",
+      "bytes": 486,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_shopify",
+      "bytes": 112,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_mojang",
+      "bytes": 104,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_xvideos",
+      "bytes": 71,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_digitalocean",
+      "bytes": 100,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_reddit",
+      "bytes": 182,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_telegram",
+      "bytes": 252,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_deepseek",
+      "bytes": 29,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_baidu",
+      "bytes": 2196,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_adobe",
+      "bytes": 2157,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_youtube",
+      "bytes": 2444,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_atlassian",
+      "bytes": 136,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_microsoft",
+      "bytes": 7801,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_airbnb",
+      "bytes": 1080,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_twitter",
+      "bytes": 327,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_amazon",
+      "bytes": 2149,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_ebay",
+      "bytes": 5753,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_elevenlabs",
+      "bytes": 29,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_steam",
+      "bytes": 1674,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_oracle",
+      "bytes": 233,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_anthropic",
+      "bytes": 152,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_icloud",
+      "bytes": 774,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_netflix",
+      "bytes": 680,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_openai",
+      "bytes": 679,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_jetbrains",
+      "bytes": 378,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_roblox",
+      "bytes": 719,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_aws",
+      "bytes": 976,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_tiktok",
+      "bytes": 891,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_slack",
+      "bytes": 158,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_google",
+      "bytes": 12516,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_instagram",
+      "bytes": 1326,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_ehentai",
+      "bytes": 106,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_bytedance",
+      "bytes": 6161,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_huawei",
+      "bytes": 479,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_facebook",
+      "bytes": 6381,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_github",
+      "bytes": 1837,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_huggingface",
+      "bytes": 30,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_alibaba",
+      "bytes": 3649,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_line",
+      "bytes": 276,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_spotify",
+      "bytes": 676,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_category_porn",
+      "bytes": 92721,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_zoom",
+      "bytes": 29,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_cloudflare",
+      "bytes": 1043,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_whatsapp",
+      "bytes": 219,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_perplexity",
+      "bytes": 108,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/v2fly/v2fly_signal",
+      "bytes": 104,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_HashiCorp.yaml",
+      "bytes": 421,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_CMB.yaml",
+      "bytes": 1328,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_LinkedIn.yaml",
+      "bytes": 566,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_EA.yaml",
+      "bytes": 5979,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_TikTok.yaml",
+      "bytes": 1258,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_OPPO.yaml",
+      "bytes": 1893,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_ByteDance.yaml",
+      "bytes": 12233,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Microsoft.yaml",
+      "bytes": 23208,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_AppleMedia.yaml",
+      "bytes": 1984,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_JingDong.yaml",
+      "bytes": 8249,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_GitLab.yaml",
+      "bytes": 383,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_WeChat.yaml",
+      "bytes": 1145,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Apple.yaml",
+      "bytes": 1239,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Copilot.yaml",
+      "bytes": 1991,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Emby.yaml",
+      "bytes": 1892,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Figma.yaml",
+      "bytes": 191,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_MeiTuan.yaml",
+      "bytes": 371,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Rockstar.yaml",
+      "bytes": 404,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Cloudflare.yaml",
+      "bytes": 2303,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_AmazonPrimeVideo.yaml",
+      "bytes": 1168,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_GaoDe.yaml",
+      "bytes": 418,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Pinduoduo.yaml",
+      "bytes": 260,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Docker.yaml",
+      "bytes": 422,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Baidu.yaml",
+      "bytes": 7994,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_YouTube.yaml",
+      "bytes": 5935,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_ChinaUnicom.yaml",
+      "bytes": 1248,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_XiaoHongShu.yaml",
+      "bytes": 297,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_PingAn.yaml",
+      "bytes": 1011,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_KuaiShou.yaml",
+      "bytes": 22085,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Jetbrains.yaml",
+      "bytes": 611,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Huawei.yaml",
+      "bytes": 5287,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Anthropic.yaml",
+      "bytes": 284,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_KakaoTalk.yaml",
+      "bytes": 620,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_TencentVideo.yaml",
+      "bytes": 2131,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Shopify.yaml",
+      "bytes": 421,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Epic.yaml",
+      "bytes": 657,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_AppleMusic.yaml",
+      "bytes": 543,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Speedtest.yaml",
+      "bytes": 348,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_AliPay.yaml",
+      "bytes": 842,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_XianYu.yaml",
+      "bytes": 635,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_AppleTV.yaml",
+      "bytes": 453,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_STUN.yaml",
+      "bytes": 10845,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_OKX.yaml",
+      "bytes": 243,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_CCTV.yaml",
+      "bytes": 1431,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Spotify.yaml",
+      "bytes": 1317,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_HuYa.yaml",
+      "bytes": 281,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_AcFun.yaml",
+      "bytes": 275,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_ICBC.yaml",
+      "bytes": 1942,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_PPTV.yaml",
+      "bytes": 715,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Discord.yaml",
+      "bytes": 1201,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Binance.yaml",
+      "bytes": 539,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_UnionPay.yaml",
+      "bytes": 689,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Pinterest.yaml",
+      "bytes": 895,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_HoYoverse.yaml",
+      "bytes": 531,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_ChinaMax_Domain.yaml",
+      "bytes": 2306225,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Developer.yaml",
+      "bytes": 2614,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_DigitalOcean.yaml",
+      "bytes": 303,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Teams.yaml",
+      "bytes": 326,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_SoundCloud.yaml",
+      "bytes": 257,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_FindMy.yaml",
+      "bytes": 252,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Atlassian.yaml",
+      "bytes": 324,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Hulu.yaml",
+      "bytes": 2114,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_DiDi.yaml",
+      "bytes": 972,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_XieCheng.yaml",
+      "bytes": 1029,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Tencent.yaml",
+      "bytes": 753,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Ubisoft.yaml",
+      "bytes": 199,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Vivo.yaml",
+      "bytes": 571,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Dropbox.yaml",
+      "bytes": 776,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Scholar.yaml",
+      "bytes": 7595,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Eleme.yaml",
+      "bytes": 561,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_TongCheng.yaml",
+      "bytes": 392,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_BOCOM.yaml",
+      "bytes": 357,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_BiliBili.yaml",
+      "bytes": 5084,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Douyu.yaml",
+      "bytes": 556,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Instagram.yaml",
+      "bytes": 312,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Nintendo.yaml",
+      "bytes": 4622,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Amazon.yaml",
+      "bytes": 6972,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_PayPal.yaml",
+      "bytes": 8821,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Bahamut.yaml",
+      "bytes": 390,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Himalaya.yaml",
+      "bytes": 693,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_CEB.yaml",
+      "bytes": 627,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_eBay.yaml",
+      "bytes": 1434,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_ChinaTelecom.yaml",
+      "bytes": 2676,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_LeTV.yaml",
+      "bytes": 552,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_CCB.yaml",
+      "bytes": 719,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_NetEaseMusic.yaml",
+      "bytes": 1062,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Reddit.yaml",
+      "bytes": 467,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Claude.yaml",
+      "bytes": 265,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Xbox.yaml",
+      "bytes": 1554,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Google.yaml",
+      "bytes": 22654,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_AppleDev.yaml",
+      "bytes": 1710,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_ChinaMobile.yaml",
+      "bytes": 1280,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Blizzard.yaml",
+      "bytes": 2308,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Wikipedia.yaml",
+      "bytes": 556,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Gemini.yaml",
+      "bytes": 666,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Oracle.yaml",
+      "bytes": 1011,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Threads.yaml",
+      "bytes": 195,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Telegram.yaml",
+      "bytes": 1590,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Twitch.yaml",
+      "bytes": 882,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Notion.yaml",
+      "bytes": 374,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Disney.yaml",
+      "bytes": 6343,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_ABC.yaml",
+      "bytes": 344,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_PSBC.yaml",
+      "bytes": 249,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Youku.yaml",
+      "bytes": 1250,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_AppStore.yaml",
+      "bytes": 213,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Whatsapp.yaml",
+      "bytes": 708,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Line.yaml",
+      "bytes": 867,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_12306.yaml",
+      "bytes": 612,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Zhihu.yaml",
+      "bytes": 420,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_BOC.yaml",
+      "bytes": 863,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_GoogleFCM.yaml",
+      "bytes": 1477,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Alibaba.yaml",
+      "bytes": 1697,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Vercel.yaml",
+      "bytes": 992,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_OneDrive.yaml",
+      "bytes": 816,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Slack.yaml",
+      "bytes": 521,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_iCloud.yaml",
+      "bytes": 2130,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_iQIYI.yaml",
+      "bytes": 1874,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_PlayStation.yaml",
+      "bytes": 325,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_WeTV.yaml",
+      "bytes": 505,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_BBC.yaml",
+      "bytes": 1160,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Netflix.yaml",
+      "bytes": 1607,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Sohu.yaml",
+      "bytes": 1697,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_TestFlight.yaml",
+      "bytes": 269,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_GitHub.yaml",
+      "bytes": 1250,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_HBO.yaml",
+      "bytes": 1928,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_DouYin.yaml",
+      "bytes": 594,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_OpenAI.yaml",
+      "bytes": 1469,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Riot.yaml",
+      "bytes": 2033,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Stripe.yaml",
+      "bytes": 191,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_PrivateTracker.yaml",
+      "bytes": 7802,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Facebook.yaml",
+      "bytes": 19424,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Steam.yaml",
+      "bytes": 2280,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Heroku.yaml",
+      "bytes": 536,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Weibo.yaml",
+      "bytes": 294,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Garena.yaml",
+      "bytes": 661,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_XiaoMi.yaml",
+      "bytes": 5316,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Twitter.yaml",
+      "bytes": 1191,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_Adobe.yaml",
+      "bytes": 4773,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/blackmatrix7/Clash_AppleNews.yaml",
+      "bytes": 234,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_anthropic.list",
+      "bytes": 153,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_messenger.list",
+      "bytes": 53,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_xai.list",
+      "bytes": 47,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_category_porn.list",
+      "bytes": 107168,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_elevenlabs.list",
+      "bytes": 32,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_signal.list",
+      "bytes": 119,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_ehentai.list",
+      "bytes": 121,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_uber.list",
+      "bytes": 43,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_perplexity.list",
+      "bytes": 102,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_firebase.list",
+      "bytes": 585,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_netease.list",
+      "bytes": 818,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_apple_update.list",
+      "bytes": 426,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_cloudflare.list",
+      "bytes": 1488,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_xvideos.list",
+      "bytes": 80,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_iqiyi.list",
+      "bytes": 311,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_canva.list",
+      "bytes": 149,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_baidu.list",
+      "bytes": 2200,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_jd.list",
+      "bytes": 3995,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_docker.list",
+      "bytes": 177,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_heroku.list",
+      "bytes": 177,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_aws.list",
+      "bytes": 1402,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_tiktok.list",
+      "bytes": 730,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_alibabacloud.list",
+      "bytes": 257,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_airbnb.list",
+      "bytes": 1147,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_tidal.list",
+      "bytes": 43,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_roblox.list",
+      "bytes": 740,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_amazon.list",
+      "bytes": 4424,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_apple.list",
+      "bytes": 36860,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_github.list",
+      "bytes": 1924,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_zoom.list",
+      "bytes": 34,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_netlify.list",
+      "bytes": 232,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_twitter.list",
+      "bytes": 369,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_bilibili.list",
+      "bytes": 778,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_icloud.list",
+      "bytes": 811,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_huya.list",
+      "bytes": 25,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_microsoft.list",
+      "bytes": 15481,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_openai.list",
+      "bytes": 522,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_dewu.list",
+      "bytes": 689,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_reddit.list",
+      "bytes": 205,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_youtube.list",
+      "bytes": 2743,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_douyin.list",
+      "bytes": 1208,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_instagram.list",
+      "bytes": 1447,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_youku.list",
+      "bytes": 575,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_kugou.list",
+      "bytes": 326,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_acfun.list",
+      "bytes": 115,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_doubao.list",
+      "bytes": 506,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_cn.yaml",
+      "bytes": 2298225,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_category_dev.list",
+      "bytes": 12362,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_alibaba.list",
+      "bytes": 7962,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_azure.list",
+      "bytes": 2844,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_huggingface.list",
+      "bytes": 35,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_google.list",
+      "bytes": 18231,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_booking.list",
+      "bytes": 40,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_douyu.list",
+      "bytes": 95,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_facebook.list",
+      "bytes": 7120,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_kuwo.list",
+      "bytes": 32,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_walmart.list",
+      "bytes": 140,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_cursor.list",
+      "bytes": 57,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_apple_dev.list",
+      "bytes": 1037,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_netflix.list",
+      "bytes": 452,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_groq.list",
+      "bytes": 10,
+      "state": "REJECTED",
+      "reasons": [
+        "too_small"
+      ]
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_ximalaya.list",
+      "bytes": 96,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_category_ai.list",
+      "bytes": 3431,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_deepseek.list",
+      "bytes": 14,
+      "state": "REJECTED",
+      "reasons": [
+        "too_small"
+      ]
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_wise.list",
+      "bytes": 29,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_cctv.list",
+      "bytes": 768,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_bytedance.list",
+      "bytes": 16263,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_tencent.list",
+      "bytes": 11324,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_bluesky.list",
+      "bytes": 39,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_huawei.list",
+      "bytes": 6355,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_whatsapp.list",
+      "bytes": 218,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_amap.list",
+      "bytes": 250,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_mojang.list",
+      "bytes": 115,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_pornhub.list",
+      "bytes": 146,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_trello.list",
+      "bytes": 28,
+      "state": "ACCEPTED",
+      "reasons": []
+    },
+    {
+      "path": "backup/2026-09-01/sources/metacubex/geosite_snap.list",
+      "bytes": 149,
+      "state": "ACCEPTED",
+      "reasons": []
+    }
+  ]
+}

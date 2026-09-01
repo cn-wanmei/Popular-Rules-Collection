@@ -1,0 +1,18 @@
+{
+  "view": "bytedance",
+  "kind": "aggregate",
+  "schema": 1,
+  "resolver_version": "v2.7-frozen",
+  "generated_at": "2026-09-01T01:09:48.618469+00:00",
+  "members": [
+    "bytedance-core",
+    "bytedance-shared"
+  ],
+  "per_member_rule_rows": {
+    "bytedance-core": 1081,
+    "bytedance-shared": 0
+  },
+  "canonical_rule_count": 1081,
+  "sha256": "9d9395973b4589f4a771c441b5c700c95f100bfef19057217d6c6e99d439e4b7",
+  "note": "V2 freeze: legacy_body mapping remains for oracle only"
+}

@@ -11,7 +11,7 @@
 | 类型 | mixed |
 | Domains | 1080 |
 | CIDR | 1 |
-| 最后更新 | 2026-08-31 |
+| 最后更新 | 2026-09-01 |
 | Sources | blackmatrix7 / metacubex / v2fly |
 | Confidence | HIGH |
 

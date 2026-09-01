@@ -1,0 +1,292 @@
+{
+  "date": "2026-09-01",
+  "files": 37,
+  "total_lines": 13976,
+  "invalid_cidr": 0,
+  "exact_duplicate_lines": 0,
+  "unscoped_large": [
+    "alibaba (54 cidrs, no ip_registry maps_to)",
+    "kugoukuwo (90 cidrs, no ip_registry maps_to)"
+  ],
+  "missing_provenance": [
+    "adblock",
+    "alibaba",
+    "battlenet",
+    "cloudflare",
+    "facebook",
+    "googlefcm",
+    "iqiyi",
+    "kugoukuwo",
+    "naver",
+    "telegram",
+    "tencentvideo"
+  ],
+  "targets": {
+    "adblock": {
+      "unique": 47,
+      "after_containment": 47,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "alibaba": {
+      "unique": 54,
+      "after_containment": 54,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "amazon": {
+      "unique": 15,
+      "after_containment": 15,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "apple": {
+      "unique": 13,
+      "after_containment": 13,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "battlenet": {
+      "unique": 23,
+      "after_containment": 23,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "bilibili": {
+      "unique": 8,
+      "after_containment": 8,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "bytedance": {
+      "unique": 1,
+      "after_containment": 1,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "china": {
+      "unique": 9670,
+      "after_containment": 9670,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": [
+        "loyalsoldier-geoip-cn",
+        "china-operator-cn"
+      ]
+    },
+    "chinamobile": {
+      "unique": 1,
+      "after_containment": 1,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "chinaunicom": {
+      "unique": 3736,
+      "after_containment": 3736,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": [
+        "china-operator-unicom"
+      ]
+    },
+    "cloudflare": {
+      "unique": 22,
+      "after_containment": 22,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "copilot": {
+      "unique": 2,
+      "after_containment": 2,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "facebook": {
+      "unique": 23,
+      "after_containment": 23,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "google": {
+      "unique": 5,
+      "after_containment": 5,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "googlefcm": {
+      "unique": 26,
+      "after_containment": 26,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "iqiyi": {
+      "unique": 21,
+      "after_containment": 21,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "kakaotalk": {
+      "unique": 6,
+      "after_containment": 6,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "kugoukuwo": {
+      "unique": 90,
+      "after_containment": 90,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "line": {
+      "unique": 16,
+      "after_containment": 16,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "naver": {
+      "unique": 33,
+      "after_containment": 33,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "netease": {
+      "unique": 18,
+      "after_containment": 18,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "nintendo": {
+      "unique": 1,
+      "after_containment": 1,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "openai": {
+      "unique": 2,
+      "after_containment": 2,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "private": {
+      "unique": 3,
+      "after_containment": 3,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "spotify": {
+      "unique": 2,
+      "after_containment": 2,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "stun": {
+      "unique": 16,
+      "after_containment": 16,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "telegram": {
+      "unique": 22,
+      "after_containment": 13,
+      "containment_reducible": 9,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "tencent": {
+      "unique": 20,
+      "after_containment": 20,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "tencentvideo": {
+      "unique": 32,
+      "after_containment": 32,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "twitch": {
+      "unique": 12,
+      "after_containment": 12,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "twitter": {
+      "unique": 6,
+      "after_containment": 6,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "wetv": {
+      "unique": 1,
+      "after_containment": 1,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "whatsapp": {
+      "unique": 11,
+      "after_containment": 11,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "xiaomi": {
+      "unique": 9,
+      "after_containment": 9,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "youku": {
+      "unique": 1,
+      "after_containment": 1,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "youtube": {
+      "unique": 3,
+      "after_containment": 3,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    },
+    "zhihu": {
+      "unique": 5,
+      "after_containment": 5,
+      "containment_reducible": 0,
+      "exact_dupes": 0,
+      "registry_sources": []
+    }
+  },
+  "registry_enabled_sources": 3,
+  "status": "pass"
+}

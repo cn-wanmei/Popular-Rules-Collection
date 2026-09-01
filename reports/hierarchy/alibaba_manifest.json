@@ -1,0 +1,18 @@
+{
+  "view": "alibaba",
+  "kind": "aggregate",
+  "schema": 1,
+  "resolver_version": "v2.7-frozen",
+  "generated_at": "2026-09-01T01:09:47.825247+00:00",
+  "members": [
+    "alibaba-core",
+    "alibaba-shared"
+  ],
+  "per_member_rule_rows": {
+    "alibaba-core": 517,
+    "alibaba-shared": 0
+  },
+  "canonical_rule_count": 517,
+  "sha256": "521774540003707b5ab5876ac9ef3c6ed24ca3fbc4b142d8a6fb8b64df45a929",
+  "note": "V2 freeze: legacy_body mapping remains for oracle only"
+}

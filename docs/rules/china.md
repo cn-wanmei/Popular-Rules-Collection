@@ -9,9 +9,9 @@
 | Service Type | aggregate |
 | Tags | china |
 | 类型 | domain |
-| Domains | 111496 |
+| Domains | 111612 |
 | CIDR | 9670 |
-| 最后更新 | 2026-08-31 |
+| 最后更新 | 2026-09-01 |
 | Sources | blackmatrix7 / metacubex |
 | Confidence | HIGH |
 

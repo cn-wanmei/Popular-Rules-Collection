@@ -11,7 +11,7 @@
 | 类型 | mixed |
 | Domains | 35 |
 | CIDR | 2 |
-| 最后更新 | 2026-08-31 |
+| 最后更新 | 2026-09-01 |
 | Sources | blackmatrix7 / v2fly / dler |
 | Confidence | HIGH |
 

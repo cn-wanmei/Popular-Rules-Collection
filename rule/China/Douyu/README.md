@@ -13,7 +13,7 @@
 | IP/CIDR | 0 |
 | Mixed | 13 |
 | Sources | blackmatrix7, metacubex |
-| Updated | 2026-08-31 |
+| Updated | 2026-09-01 |
 
 ## 基础规则（Classical）
 

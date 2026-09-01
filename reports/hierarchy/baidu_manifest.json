@@ -1,0 +1,18 @@
+{
+  "view": "baidu",
+  "kind": "aggregate",
+  "schema": 1,
+  "resolver_version": "v2.7-frozen",
+  "generated_at": "2026-09-01T01:09:48.397017+00:00",
+  "members": [
+    "baidu-core",
+    "baidu-shared"
+  ],
+  "per_member_rule_rows": {
+    "baidu-core": 324,
+    "baidu-shared": 0
+  },
+  "canonical_rule_count": 324,
+  "sha256": "04c4a1d886a201d6d35f3c4a53e130632de6279cd191621584287b76c7c29e41",
+  "note": "V2 freeze: legacy_body mapping remains for oracle only"
+}

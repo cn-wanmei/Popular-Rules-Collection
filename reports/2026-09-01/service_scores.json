@@ -1,0 +1,744 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-01T01:28:31.669980+00:00",
+  "date": "2026-09-01",
+  "services": {
+    "uber": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "pptv": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "shopify": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "facebook": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "garena": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "tongcheng": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "deezer": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "adblock": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "netflix": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "stun": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "groq": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "peacock": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "xiaohongshu": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "perplexity": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "zhihu": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "didi": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "walmart": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "firebase": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "epic": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "cmb": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "douyin": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "linkedin": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "jingdong": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "ceb": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "youtube": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "xianyu": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "applemusic": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "doubao": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "alibabacloud": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "wetv": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "battlenet": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "signal": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "instagram": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "chinaunicom": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "tiktok": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "notion": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "speedtest": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "bocom": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "huawei": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "gemini": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "apple": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "line": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "alibaba": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "bahamut": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "iqiyi": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "copilot": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "docker": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "sina": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "deepseek": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "chinatelecom": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "booking": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "amazon": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "youku": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "aws": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "cloudflare": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "baidu": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "icbc": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "telegram": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "oracle": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "minecraft": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "discord": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "tencent": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "twitter": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "reddit": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "whatsapp": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "github": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "bluesky": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "rockstar": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "restricted": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "slack": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "kakaotalk": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "dailymotion": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "ea": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "gfw": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "oppo": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "kugou": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "twitch": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "heroku": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "12306": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "elevenlabs": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "disney": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "eleme": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "meituan": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "ai": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "dewu": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "huya": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "douyu": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "acfun": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "tencentvideo": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "huggingface": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "jetbrains": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "messenger": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "abc": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "wikipedia": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "emby": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "kuaishou": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "threads": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "psbc": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "pinterest": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "riotgames": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "anthropic": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "adblock-pro": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "nintendo": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "aisuite": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "pinduoduo": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "steam": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "tidal": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "weibo": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "naver": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "youtubemusic": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "gaode": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "himalaya": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "appletv": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "stripe": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "netlify": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "vimeo": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "amap": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "paramountplus": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "dropbox": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "okx": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "playstation": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "hulu": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "vivo": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "openai": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "soundcloud": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "claude": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "xai": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "bbc": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "developer": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "unionpay": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "microsoft": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "chinamobile": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "adobe": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "boc": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "azure": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "trello": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "bilibili": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "ctrip": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "googlefcm": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "xiaomi": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "ximalaya": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "china": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "wise": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "roblox": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "sohu": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "airbnb": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "teams": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "proxy": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "netease": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "digitalocean": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "scholar": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "onedrive": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "cctv": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "binance": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "kuwo": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "cursor": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "figma": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "canva": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "xbox": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "akamai": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "alipay": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "google": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "vercel": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "snapchat": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "hbo": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "letv": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "spotify": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "ebay": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "bytedance": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "paypal": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "private": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "wechat": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "atlassian": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "ubisoft": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "primevideo": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "zoom": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "gitlab": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "ccb": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "icloud": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "kugoukuwo": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "pingan": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "hoyoverse": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "adblock-light": {
+      "score": 90.0,
+      "band": "stable"
+    },
+    "hashicorp": {
+      "score": 90.0,
+      "band": "stable"
+    }
+  },
+  "note": "v1 heuristic — multi-source agreement later"
+}

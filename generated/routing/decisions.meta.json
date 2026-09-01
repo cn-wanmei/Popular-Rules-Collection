@@ -1,14 +1,14 @@
 {
   "contract_version": 2,
   "engine": "routing_emit-1",
-  "generated_at": "2026-08-31T14:46:54.833154+00:00",
-  "decision_digest": "8239df4b1eeb0c714972963a6419c8ea0b72db1dbde1b7410680a1ae5355ce61",
+  "generated_at": "2026-09-01T01:07:13.492134+00:00",
+  "decision_digest": "7d3a4a6e58b8aa12b69cd64064bf1411ab70c7aba9a9d2ae9f9031c0f0f59dff",
   "counts": {
-    "domains": 142130,
-    "direct": 112206,
-    "proxy": 29924,
+    "domains": 142055,
+    "direct": 112123,
+    "proxy": 29932,
     "reject": 0,
-    "conflicts": 1299
+    "conflicts": 1300
   },
   "ssot": "generated/routing/decisions.jsonl",
   "derivatives": [

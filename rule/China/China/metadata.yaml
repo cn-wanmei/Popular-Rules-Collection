@@ -42,9 +42,9 @@ generated_files:
   domain: china_domain.list
   ip: china_ip.list
 statistics:
-  domains: 111496
+  domains: 111612
   ipv4_or_cidr: 9670
-  mixed: 121166
+  mixed: 121282
 sources:
 - blackmatrix7
 - metacubex
@@ -56,5 +56,5 @@ clients:
 - Quantumult X
 - Egern
 - Loon
-updated_at: '2026-08-31'
+updated_at: '2026-09-01'
 auto_generated: true

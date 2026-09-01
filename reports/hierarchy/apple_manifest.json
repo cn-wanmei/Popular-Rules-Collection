@@ -1,0 +1,20 @@
+{
+  "view": "apple",
+  "kind": "aggregate",
+  "schema": 1,
+  "resolver_version": "v2.7-frozen",
+  "generated_at": "2026-09-01T01:09:48.315341+00:00",
+  "members": [
+    "apple-core",
+    "apple-shared",
+    "icloud"
+  ],
+  "per_member_rule_rows": {
+    "apple-core": 2008,
+    "apple-shared": 0,
+    "icloud": 62
+  },
+  "canonical_rule_count": 2011,
+  "sha256": "b8fedd8d8d76544ca38edcbd61bca6be28cad7adbdf17a119459a245d7e4417b",
+  "note": "V2 freeze: legacy_body mapping remains for oracle only"
+}

@@ -1,0 +1,18 @@
+{
+  "view": "amazon",
+  "kind": "aggregate",
+  "schema": 1,
+  "resolver_version": "v2.7-frozen",
+  "generated_at": "2026-09-01T01:09:47.895368+00:00",
+  "members": [
+    "amazon-core",
+    "amazon-shared"
+  ],
+  "per_member_rule_rows": {
+    "amazon-core": 275,
+    "amazon-shared": 0
+  },
+  "canonical_rule_count": 275,
+  "sha256": "e9830855631675820457deb8481a14b722a77745d774acaa2b27eed7dda05f48",
+  "note": "V2 freeze: legacy_body mapping remains for oracle only"
+}

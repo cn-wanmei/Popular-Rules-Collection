@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-01",
+  "status": "warn",
+  "hard": [],
+  "warnings": [
+    "walmart: very low opaque_ratio=0.0479"
+  ],
+  "regressions": [],
+  "counts": {
+    "icons_measured": 134,
+    "hard": 0,
+    "warn": 1,
+    "regressions": 0
+  }
+}
