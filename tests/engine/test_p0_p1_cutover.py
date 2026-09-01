@@ -7,10 +7,12 @@ from src.engine.cli.__main__ import main
 from src.engine.pipeline.run import run_pipeline
 
 
+# P0-P1 regression suite: publish, collected-input ingest, and fail-closed CLI.
+
+
 def test_collected_snapshot_ingest_replaces_normalize(tmp_path: Path) -> None:
     source = tmp_path / "source"
     source.mkdir()
-    (source / "_marker.txt").write_text("snapshot input", encoding="utf-8")
     manifests = source / "manifests"
     raw = source / "sources" / "demo"
     manifests.mkdir()
