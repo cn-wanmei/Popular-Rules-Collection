@@ -17,7 +17,12 @@ ALLOWED_LEGACY_TOUCH = {"src/engine/ingest/migrate_legacy.py"}
 LEGACY_PRODUCTION_REFERENCES = (
     "scripts/normalize.py",
     "scripts/deduplicate.py",
+    "scripts/schema_validate.py",
+    "scripts/validate.py",
+    "scripts/builder_validate.py",
     "database/services",
+    "database/domains",
+    "database/ips",
     "python scripts/normalize.py",
     "python scripts/deduplicate.py",
     "build_from_v2_services",
@@ -41,22 +46,27 @@ def run_naming_gate(repo_root: Path) -> dict[str, Any]:
                 if f"import {bad}" in text or f"from {bad}" in text or f"{bad}(" in text:
                     violations.append(f"{rel}: forbidden reference to {bad}")
 
-    workflow = repo_root / ".github" / "workflows" / "collect.yml"
-    if workflow.exists():
+    production_files = [
+        repo_root / ".github" / "workflows" / name
+        for name in ("build.yml", "collect.yml", "engine-v3.yml")
+    ]
+    for workflow in production_files:
+        if not workflow.exists():
+            continue
         text = workflow.read_text(encoding="utf-8", errors="ignore")
         for bad in LEGACY_PRODUCTION_REFERENCES:
             if bad in text:
-                violations.append(f".github/workflows/collect.yml: forbidden legacy production reference {bad}")
+                violations.append(f"{workflow.relative_to(repo_root)}: forbidden legacy production reference {bad}")
 
     pipeline_cfg = repo_root / "config" / "pipeline.yaml"
     if pipeline_cfg.exists():
         text = pipeline_cfg.read_text(encoding="utf-8", errors="ignore")
-        for bad in ("scripts/normalize.py", "scripts/deduplicate.py", "database/services"):
+        for bad in ("scripts/normalize.py", "scripts/deduplicate.py", "scripts/schema_validate.py", "scripts/validate.py", "scripts/builder_validate.py", "database/services"):
             if bad in text:
                 violations.append(f"config/pipeline.yaml: forbidden legacy production reference {bad}")
 
     return {
-        "schema": "naming_gate_v2",
+        "schema": "naming_gate_v3",
         "pass": len(violations) == 0,
         "violations": violations,
         "v2_runtime_dependency": 0,
