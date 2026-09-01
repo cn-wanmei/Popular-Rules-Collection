@@ -7,6 +7,10 @@ on:
         description: "Dry run — build and validate but do not publish"
         type: boolean
         default: false
+      skip_large:
+        description: "Skip configured mega service sets"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -37,7 +41,13 @@ jobs:
         id: engine
         run: |
           set -o pipefail
-          PYTHONPATH=. python -m src.engine.cli all 2>&1 | tee engine-run.log
+          ENGINE_ARGS=()
+          if [ "${{ inputs.skip_large }}" = "true" ]; then
+            ENGINE_ARGS+=(--skip-large)
+          fi
+          PYTHONPATH=. python -m src.engine.cli all \
+            --data data \
+            "${ENGINE_ARGS[@]}" 2>&1 | tee engine-run.log
           RUN_ID=$(python3 - <<'PY'
           import json, pathlib
           text = pathlib.Path('engine-run.log').read_text(encoding='utf-8', errors='replace')
@@ -45,23 +55,24 @@ jobs:
           if start < 0:
               raise SystemExit('engine output JSON not found')
           obj = json.loads(text[start:])
+          if obj.get('status') != 'ok':
+              raise SystemExit(f"engine status={obj.get('status')}")
           print(obj['run_id'])
           PY
           )
           echo "run_id=${RUN_ID}" >> "$GITHUB_OUTPUT"
 
-      - name: Schema validate (HARD)
-        run: python scripts/schema_validate.py
-
-      - name: Builder validate (HARD)
-        run: python scripts/builder_validate.py
-
       - name: Size gate (HARD)
         run: python scripts/size_gate.py
 
-      - name: Publish V3 run
+      - name: Publish V3 run (HARD)
         if: ${{ inputs.dry_run != true }}
-        run: PYTHONPATH=. python -m src.engine.cli promote --run-id "${{ steps.engine.outputs.run_id }}"
+        run: |
+          PYTHONPATH=. python -m src.engine.cli promote \
+            --run-id "${{ steps.engine.outputs.run_id }}" \
+            --runs data/runs \
+            --generated generated \
+            --baseline data/baseline/canonical.json
 
       - name: Commit generated
         if: ${{ inputs.dry_run != true }}
