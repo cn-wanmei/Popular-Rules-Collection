@@ -13,7 +13,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import sys
 from pathlib import Path
 
 from src.engine import __version__, __engine__, __v2_runtime_dependency__
@@ -24,20 +23,35 @@ from src.engine.reproducibility.hash_compare import compute_run_digest, compare_
 from src.engine.validation.naming_gate import run_naming_gate
 
 
+def _add_pipeline_args(parser: argparse.ArgumentParser, *, run_id: bool = True) -> None:
+    parser.add_argument("--sources", type=Path, default=Path("sources"))
+    parser.add_argument("--data", type=Path, default=Path("data"))
+    parser.add_argument("--skip-large", action="store_true", help="Skip configured mega service sets")
+    if run_id:
+        parser.add_argument("--run-id", type=str, default=None)
+
+
 def _run_to_stage(args: argparse.Namespace, stage: str) -> int:
     sources = Path(getattr(args, "sources", "sources"))
     data = Path(getattr(args, "data", "data"))
     run_id = getattr(args, "run_id", None)
+    skip_large = bool(getattr(args, "skip_large", False))
     if not sources.exists():
         print(json.dumps({
-            "status": "skipped",
+            "status": "failed",
             "reason": f"sources not found: {sources}",
             "stage": stage,
             "v2_runtime_dependency": 0,
         }, ensure_ascii=False, indent=2))
         return 1
     idx = STAGES.index(stage)
-    result = run_pipeline(sources, data, run_id=run_id, stages=STAGES[: idx + 1])
+    result = run_pipeline(
+        sources,
+        data,
+        run_id=run_id,
+        stages=STAGES[: idx + 1],
+        skip_large=skip_large,
+    )
     print(json.dumps(result, indent=2, ensure_ascii=False))
     return 0 if result.get("status") == "ok" else 1
 
@@ -52,29 +66,25 @@ def main(argv: list[str] | None = None) -> int:
 
     for name, help_txt in (("all", "Run full pipeline"), ("pipeline", "Run full pipeline (alias of all)")):
         p = sub.add_parser(name, help=help_txt)
-        p.add_argument("--sources", type=Path, default=Path("sources"))
-        p.add_argument("--data", type=Path, default=Path("data"))
-        p.add_argument("--run-id", type=str, default=None)
+        _add_pipeline_args(p)
 
     sub.add_parser("naming_gate", help="Run naming / V2-runtime gate")
 
     for stage in STAGES:
         p = sub.add_parser(stage, help=f"Run stage: {stage}")
-        p.add_argument("--sources", type=Path, default=Path("sources"))
-        p.add_argument("--data", type=Path, default=Path("data"))
-        p.add_argument("--run-id", type=str, default=None)
+        _add_pipeline_args(p)
 
     p_prom = sub.add_parser("promote", help="Promote RC_READY run to generated/")
     p_prom.add_argument("--run-id", type=str, required=True)
     p_prom.add_argument("--runs", type=Path, default=Path("data/runs"))
     p_prom.add_argument("--generated", type=Path, default=Path("generated"))
+    p_prom.add_argument("--baseline", type=Path, default=None, help="Advance released diff baseline after successful promotion")
     p_prom.add_argument("--force", action="store_true")
 
-    p_pub = sub.add_parser("publish", help="Release-gated atomic promotion to generated/")
-    p_pub.add_argument("--run-id", type=str, default=None)
-    p_pub.add_argument("--sources", type=Path, default=Path("sources"))
-    p_pub.add_argument("--data", type=Path, default=Path("data"))
+    p_pub = sub.add_parser("publish", help="Run, release-gate, atomically promote, and advance baseline")
+    _add_pipeline_args(p_pub)
     p_pub.add_argument("--generated", type=Path, default=Path("generated"))
+    p_pub.add_argument("--baseline", type=Path, default=Path("data/baseline/canonical.json"))
 
     p_rb = sub.add_parser("rollback", help="Rollback generated/ to a previous run")
     p_rb.add_argument("--run-id", type=str, required=True)
@@ -110,7 +120,12 @@ def main(argv: list[str] | None = None) -> int:
         return 0 if report.get("pass") else 1
 
     if args.cmd in ("all", "pipeline"):
-        result = run_pipeline(args.sources, args.data, run_id=args.run_id)
+        result = run_pipeline(
+            args.sources,
+            args.data,
+            run_id=args.run_id,
+            skip_large=args.skip_large,
+        )
         print(json.dumps(result, indent=2, ensure_ascii=False))
         return 0 if result.get("status") == "ok" else 1
 
@@ -121,14 +136,23 @@ def main(argv: list[str] | None = None) -> int:
         return _run_to_stage(args, "release")
 
     if args.cmd == "publish":
-        result = run_pipeline(args.sources, args.data, run_id=args.run_id)
+        result = run_pipeline(
+            args.sources,
+            args.data,
+            run_id=args.run_id,
+            skip_large=args.skip_large,
+        )
         print(json.dumps(result, indent=2, ensure_ascii=False))
         if result.get("status") != "ok":
             return 1
         run_id = result.get("run_id")
         if not run_id or result.get("stages", {}).get("release", {}).get("state") != "RC_READY":
             return 1
-        record = promote_run(args.data / "runs" / run_id, args.generated)
+        record = promote_run(
+            args.data / "runs" / run_id,
+            args.generated,
+            baseline_path=args.baseline,
+        )
         print(json.dumps(record, indent=2, ensure_ascii=False))
         return 0
 
@@ -140,7 +164,12 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     if args.cmd == "promote":
-        record = promote_run(args.runs / args.run_id, args.generated, force=args.force)
+        record = promote_run(
+            args.runs / args.run_id,
+            args.generated,
+            force=args.force,
+            baseline_path=args.baseline,
+        )
         print(json.dumps(record, indent=2, ensure_ascii=False))
         return 0
 
@@ -164,4 +193,4 @@ def main(argv: list[str] | None = None) -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    raise SystemExit(main())
