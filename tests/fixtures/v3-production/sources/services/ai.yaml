@@ -1,0 +1,11 @@
+id: ai
+name: AI Services
+category: ai
+version: 1
+source:
+  - id: fixture
+rules:
+  - type: domain_suffix
+    value: ai.example.net
+  - type: domain
+    value: model.example.net
