@@ -1,4 +1,4 @@
-version: 2
+version: 3
 updated: "2026-09-01"
 publish_concurrency_group: main-publish
 engine:
@@ -16,18 +16,20 @@ stages:
     required: true
     note: "Upstream transport only; no normalization or build responsibility."
   engine:
-    command: python -m src.engine.cli all --sources backup/<date>
+    command: python -m src.engine.cli all --sources backup/<date> --data data
     required: true
   validate:
-    scripts:
-      - scripts/schema_validate.py
-      - scripts/validate.py
+    engine_gates:
+      - golden
+      - release
+      - seven_clients
+      - reproducibility
     required: true
   size_gate:
     script: scripts/size_gate.py
     required: true
   publish:
-    command: python -m src.engine.cli promote --run-id <run_id>
+    command: python -m src.engine.cli promote --run-id <run_id> --baseline data/baseline/canonical.json
     required: true
 
 legacy_2x:
@@ -35,3 +37,4 @@ legacy_2x:
   normalization: removed_from_pipeline
   database_services_runtime: false
   build_shims: deprecated
+  validators: non_production_only
