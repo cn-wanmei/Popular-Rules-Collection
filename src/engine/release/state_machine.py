@@ -8,6 +8,8 @@ from enum import Enum
 from pathlib import Path
 from typing import Any
 
+from src.engine.cas.run_store import verify_run
+
 
 class ReleaseState(str, Enum):
     BUILDING = "BUILDING"
@@ -53,18 +55,16 @@ def _load_json(path: Path) -> dict[str, Any]:
 
 
 def evaluate_release(run_dir: Path) -> dict[str, Any]:
-    """Compute release state from actual artifacts and quality evidence."""
+    """Compute release state from actual artifacts and quality/CAS evidence."""
     run_dir = Path(run_dir)
     gates: dict[str, bool] = {}
 
-    run_manifest_path = run_dir / "run_manifest.json"
-    run_manifest = _load_json(run_manifest_path)
+    run_manifest = _load_json(run_dir / "run_manifest.json")
     v2_ok = run_manifest.get("v2_runtime_dependency") == 0
     snapshot_id = run_manifest.get("snapshot_id")
     if not snapshot_id:
         sid_path = run_dir / "snapshot_id.txt"
-        if sid_path.exists():
-            snapshot_id = sid_path.read_text(encoding="utf-8").strip() or None
+        snapshot_id = sid_path.read_text(encoding="utf-8").strip() if sid_path.exists() else None
     gates["v2_runtime_dependency_zero"] = v2_ok
     gates["snapshot_present"] = bool(snapshot_id)
 
@@ -73,7 +73,7 @@ def evaluate_release(run_dir: Path) -> dict[str, Any]:
 
     canonical_rules = run_dir / "canonical" / "rules.jsonl"
     gates["canonical_present"] = (run_dir / "canonical" / "manifest.json").exists() and canonical_rules.exists() and canonical_rules.stat().st_size > 0
-    gates["ir_present"] = (run_dir / "ir" / "manifest.json").exists()
+    gates["ir_present"] = (run_dir / "ir" / "manifest.json").exists() and (run_dir / "ir" / "ir.json").exists()
     gates["artifacts_present"] = (run_dir / "artifacts").exists()
     gates["diff_present"] = (run_dir / "reports" / "diff" / "latest.json").exists()
 
@@ -88,12 +88,21 @@ def evaluate_release(run_dir: Path) -> dict[str, Any]:
     actual_clients = {p.name for p in artifacts_root.iterdir() if p.is_dir()} if artifacts_root.exists() else set()
     gates["seven_clients_present"] = required_clients.issubset(actual_clients)
 
+    cas_verified = False
+    cas_manifest = run_dir / "cas-manifest.json"
+    if cas_manifest.exists():
+        try:
+            cas_verified = verify_run(run_dir, run_dir.parents[1] / "cas" / "objects")["verified"]
+        except Exception:
+            cas_verified = False
+    gates["cas_integrity"] = cas_verified
+
     all_hard = all(gates.values())
     state = ReleaseState.RC_READY if all_hard else ReleaseState.BLOCKED
     now = datetime.now(timezone.utc).isoformat()
 
     report = {
-        "schema": "release_state_v3",
+        "schema": "release_state_v4",
         "generated_at": now,
         "state": state.value,
         "gates": gates,
@@ -101,15 +110,15 @@ def evaluate_release(run_dir: Path) -> dict[str, Any]:
         "v2_runtime_dependency": 0,
         "snapshot_id": snapshot_id,
         "quality_score": quality.get("score"),
+        "cas_verified": cas_verified,
         "can_publish": state == ReleaseState.RC_READY,
     }
-
     release_dir = run_dir / "release"
     release_dir.mkdir(parents=True, exist_ok=True)
     (release_dir / "state.json").write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     release_manifest = {
-        "schema": "release_manifest_v2",
+        "schema": "release_manifest_v3",
         "release_id": run_dir.name,
         "run_id": run_dir.name,
         "snapshot_id": snapshot_id,
@@ -121,6 +130,7 @@ def evaluate_release(run_dir: Path) -> dict[str, Any]:
         "diff_digest": _sha256(run_dir / "reports" / "diff" / "latest.json"),
         "quality_digest": _sha256(run_dir / "quality.json"),
         "metrics_digest": _sha256(run_dir / "metrics" / "metrics.json"),
+        "cas_manifest_digest": _sha256(cas_manifest),
         "client_digests": {client: _dir_sha256(artifacts_root / client) for client in sorted(required_clients)},
         "v2_runtime_dependency": 0,
     }
