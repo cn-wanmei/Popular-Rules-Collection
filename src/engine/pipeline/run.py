@@ -16,6 +16,7 @@ from src.engine.adapters.build_all import build_all_clients
 from src.engine.diff.engine import run_diff
 from src.engine.golden.runner import run_golden
 from src.engine.observability.metrics import build_observability, quality_score
+from src.engine.release.evidence import build_sbom, retention_plan
 from src.engine.release.state_machine import evaluate_release
 
 STAGES = [
@@ -68,19 +69,13 @@ def run_pipeline(
     }
 
     def persist() -> None:
-        (run_dir / "run_manifest.json").write_text(
-            json.dumps(results, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
-        )
+        (run_dir / "run_manifest.json").write_text(json.dumps(results, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     persist()
-    snapshot_manifest: dict[str, Any] | None = None
-    ingest_result: dict[str, Any] | None = None
-    clean_payload: dict[str, Any] | None = None
+    snapshot_manifest = ingest_result = clean_payload = None
 
     if "snapshot" in wanted:
-        snapshot_manifest = create_source_snapshot(
-            sources_root, data_root / "snapshots", extra_meta={"run_id": run_id, "skip_large": skip_large}
-        )
+        snapshot_manifest = create_source_snapshot(sources_root, data_root / "snapshots", extra_meta={"run_id": run_id, "skip_large": skip_large})
         (run_dir / "snapshot_id.txt").write_text(snapshot_manifest["snapshot_id"], encoding="utf-8")
         results["snapshot_id"] = snapshot_manifest["snapshot_id"]
         results["stages"]["snapshot"] = {"status": "ok", "snapshot_id": snapshot_manifest["snapshot_id"]}
@@ -89,47 +84,29 @@ def run_pipeline(
     if "ingest" in wanted:
         if snapshot_manifest is None:
             raise RuntimeError("ingest requires snapshot")
-        ingest_result = ingest_snapshot(
-            data_root / "snapshots" / snapshot_manifest["snapshot_id"], skip_large=skip_large
-        )
-        results["stages"]["ingest"] = {
-            "status": "ok",
-            "records": ingest_result["stats"]["records"],
-            "errors": ingest_result["stats"]["errors"],
-        }
+        ingest_result = ingest_snapshot(data_root / "snapshots" / snapshot_manifest["snapshot_id"], skip_large=skip_large)
+        results["stages"]["ingest"] = {"status": "ok", "records": ingest_result["stats"]["records"], "errors": ingest_result["stats"]["errors"]}
         persist()
 
     if "quarantine" in wanted:
         if ingest_result is None:
             raise RuntimeError("quarantine requires ingest")
         clean_payload = run_quarantine(ingest_result, run_dir / "quarantine")
-        results["stages"]["quarantine"] = {
-            "status": "ok",
-            "clean": clean_payload["stats"]["records"],
-            "quarantined": clean_payload["stats"]["quarantined"],
-        }
+        results["stages"]["quarantine"] = {"status": "ok", "clean": clean_payload["stats"]["records"], "quarantined": clean_payload["stats"]["quarantined"]}
         persist()
 
     if "canonical" in wanted:
         if clean_payload is None:
             raise RuntimeError("canonical requires quarantine")
         can_manifest = build_canonical(clean_payload, run_dir / "canonical")
-        results["stages"]["canonical"] = {
-            "status": "ok",
-            "unique_rules": can_manifest["unique_rules"],
-            "memberships": can_manifest["memberships"],
-            "errors": can_manifest["errors"],
-        }
+        results["stages"]["canonical"] = {"status": "ok", "unique_rules": can_manifest["unique_rules"], "memberships": can_manifest["memberships"], "errors": can_manifest["errors"]}
         persist()
         if can_manifest["unique_rules"] == 0:
             raise RuntimeError("canonical produced zero rules")
 
     if "hierarchy" in wanted:
         h_manifest = build_hierarchy(run_dir / "canonical", run_dir / "hierarchy")
-        results["stages"]["hierarchy"] = {
-            "status": "ok",
-            **{k: h_manifest[k] for k in ("service_count", "group_count", "aggregate_count") if k in h_manifest},
-        }
+        results["stages"]["hierarchy"] = {"status": "ok", **{k: h_manifest[k] for k in ("service_count", "group_count", "aggregate_count") if k in h_manifest}}
         persist()
 
     if "ir" in wanted:
@@ -139,20 +116,13 @@ def run_pipeline(
 
     if "adapters" in wanted:
         art_report = build_all_clients(run_dir / "canonical", run_dir / "artifacts")
-        results["stages"]["adapters"] = {
-            "status": "ok", "clients": list(art_report.get("clients", {}).keys())
-        }
+        results["stages"]["adapters"] = {"status": "ok", "clients": list(art_report.get("clients", {}).keys()), "parallel": art_report.get("parallel", False)}
         persist()
 
     if "diff" in wanted:
         baseline = data_root / "baseline" / "canonical.json"
         diff_report = run_diff(run_dir / "canonical", baseline if baseline.exists() else None, run_dir / "reports" / "diff")
-        results["stages"]["diff"] = {
-            "status": "ok",
-            "added": diff_report["added"], "removed": diff_report["removed"],
-            "changed": diff_report["changed"],
-            "baseline": str(baseline) if baseline.exists() else None,
-        }
+        results["stages"]["diff"] = {"status": "ok", "added": diff_report["added"], "removed": diff_report["removed"], "changed": diff_report["changed"], "baseline": str(baseline) if baseline.exists() else None}
         persist()
 
     if "golden" in wanted:
@@ -168,12 +138,11 @@ def run_pipeline(
     if "observability" in wanted:
         metrics = build_observability(run_dir)
         quality = quality_score(metrics, _load_quality_policy(Path(".")))
-        results["stages"]["observability"] = {
-            "status": "ok",
-            "quality_score": quality["score"],
-            "quality_decision": quality["decision"],
-        }
+        evidence = build_sbom(run_dir)
+        retention = retention_plan(data_root / "runs", keep=10)
+        results["stages"]["observability"] = {"status": "ok", "quality_score": quality["score"], "quality_decision": quality["decision"], "sbom_files": len(evidence["files"]), "retention_candidates": len(retention["eligible_for_deletion"])}
         (run_dir / "quality.json").write_text(json.dumps(quality, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        (run_dir / "retention-plan.json").write_text(json.dumps(retention, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         persist()
         if not quality["all_hard_pass"]:
             results["status"] = "blocked"
@@ -184,10 +153,7 @@ def run_pipeline(
     if "release" in wanted:
         persist()
         release = evaluate_release(run_dir)
-        results["stages"]["release"] = {
-            "status": "ok" if release["can_publish"] else "blocked",
-            "state": release["state"], "can_publish": release["can_publish"],
-        }
+        results["stages"]["release"] = {"status": "ok" if release["can_publish"] else "blocked", "state": release["state"], "can_publish": release["can_publish"]}
         if release["state"] != "RC_READY":
             results["status"] = "blocked"
             results["finished_at"] = datetime.now(timezone.utc).isoformat()
