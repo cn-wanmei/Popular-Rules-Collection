@@ -1,12 +1,12 @@
-"""Source Ingest from Snapshot — V2-free.
+"""Source Ingest from Snapshot — V2-runtime-free.
 
-Expected layout:
-  data/snapshots/<snapshot_id>/
-      ├── manifest.json
-      └── sources/
-          ├── services/          # optional structured service YAML
-          ├── raw/               # optional raw upstream dumps
-          └── registry.yaml      # optional registry snapshot
+Supported input layouts:
+  1. data/snapshots/<id>/sources/services/*.yaml
+  2. a collected snapshot containing manifests/*.json and sources/<source>/*
+
+The second layout is the direct successor to the old normalize path: raw
+upstream files are parsed in the V3 ingest layer and never materialized into
+legacy database/services.
 """
 from __future__ import annotations
 
@@ -17,6 +17,8 @@ from typing import Any
 
 import yaml
 
+from src.engine.ingest.rule_parser import iter_rules
+
 
 class IngestError(Exception):
     """Hard failure during ingest — never silently dropped."""
@@ -24,18 +26,101 @@ class IngestError(Exception):
 
 def _load_yaml(path: Path) -> Any:
     try:
-        text = path.read_text(encoding="utf-8")
-        return yaml.safe_load(text)
+        return yaml.safe_load(path.read_text(encoding="utf-8"))
     except Exception as e:
         raise IngestError(f"Failed to parse YAML {path}: {e}") from e
 
 
+def _ingest_structured_services(sources_root: Path, records: list[dict[str, Any]], errors: list[dict[str, Any]]) -> int:
+    services_dir = sources_root / "services"
+    if not services_dir.is_dir():
+        return 0
+    count = 0
+    for p in sorted(services_dir.glob("*.yaml")):
+        try:
+            doc = _load_yaml(p)
+            if not isinstance(doc, dict):
+                errors.append({"path": str(p), "error": "not a mapping"})
+                continue
+            sid = str(doc.get("id") or p.stem)
+            cat = str(doc.get("category") or "other")
+            sources = doc.get("source") or []
+            for r in doc.get("rules") or []:
+                if not isinstance(r, dict):
+                    errors.append({"path": str(p), "error": "rule not dict", "raw": r})
+                    continue
+                typ, val = r.get("type"), r.get("value")
+                if not typ or not val:
+                    errors.append({"path": str(p), "error": "missing type or value", "rule": r})
+                    continue
+                records.append({
+                    "service": sid,
+                    "type": str(typ),
+                    "value": str(val),
+                    "category": cat,
+                    "provenance": {
+                        "sources": r.get("sources") or sources,
+                        "file": str(p.relative_to(sources_root.parent)),
+                    },
+                })
+                count += 1
+        except IngestError as e:
+            errors.append({"path": str(p), "error": str(e)})
+    return count
+
+
+def _ingest_collected_snapshot(snapshot_dir: Path, records: list[dict[str, Any]], errors: list[dict[str, Any]]) -> int:
+    """Parse backup/<date>/sources using per-source collection manifests."""
+    manifests_dir = snapshot_dir / "manifests"
+    sources_root = snapshot_dir / "sources"
+    if not manifests_dir.is_dir() or not sources_root.is_dir():
+        return 0
+
+    count = 0
+    for manifest_path in sorted(manifests_dir.glob("*.json")):
+        if manifest_path.name == "_day.json":
+            continue
+        try:
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        except Exception as e:
+            errors.append({"path": str(manifest_path), "error": f"invalid collection manifest: {e}"})
+            continue
+        source_id = str(manifest.get("source") or manifest_path.stem)
+        for entry in manifest.get("files") or []:
+            if entry.get("status") != "ok":
+                continue
+            name = str(entry.get("name") or "")
+            service = str(entry.get("service") or Path(name).stem).lower()
+            local_rel = entry.get("local") or f"sources/{source_id}/{name}"
+            path = snapshot_dir / str(local_rel)
+            if not path.is_file():
+                errors.append({"path": str(path), "error": "collected file missing from snapshot"})
+                continue
+            try:
+                parsed = list(iter_rules(path))
+            except OSError as e:
+                errors.append({"path": str(path), "error": str(e)})
+                continue
+            for typ, value in parsed:
+                records.append({
+                    "service": service,
+                    "type": typ,
+                    "value": value,
+                    "category": "other",
+                    "provenance": {
+                        "sources": [{"id": source_id}],
+                        "file": str(path.relative_to(snapshot_dir)),
+                        **({"url": entry.get("url")} if entry.get("url") else {}),
+                    },
+                })
+                count += 1
+            if not parsed:
+                errors.append({"path": str(path), "error": "no recognized rules", "service": service, "source": source_id})
+    return count
+
+
 def ingest_snapshot(snapshot_dir: Path) -> dict[str, Any]:
-    """
-    Ingest a frozen Source Snapshot.
-    Returns a structured payload ready for Normalize / Canonical.
-    Raises IngestError on any unrecoverable problem.
-    """
+    """Ingest a frozen Source Snapshot into structured records."""
     snapshot_dir = Path(snapshot_dir)
     if not snapshot_dir.is_dir():
         raise IngestError(f"Snapshot directory does not exist: {snapshot_dir}")
@@ -43,7 +128,6 @@ def ingest_snapshot(snapshot_dir: Path) -> dict[str, Any]:
     manifest_path = snapshot_dir / "manifest.json"
     if not manifest_path.exists():
         raise IngestError(f"Missing manifest.json in {snapshot_dir}")
-
     try:
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     except Exception as e:
@@ -55,59 +139,13 @@ def ingest_snapshot(snapshot_dir: Path) -> dict[str, Any]:
 
     records: list[dict[str, Any]] = []
     errors: list[dict[str, Any]] = []
+    structured_count = _ingest_structured_services(sources_root, records, errors)
+    collected_count = _ingest_collected_snapshot(snapshot_dir, records, errors)
 
-    # 1. Structured service YAMLs (if present)
-    services_dir = sources_root / "services"
-    if services_dir.is_dir():
-        for p in sorted(services_dir.glob("*.yaml")):
-            if p.name.startswith("example"):
-                continue
-            try:
-                doc = _load_yaml(p)
-                if not isinstance(doc, dict):
-                    errors.append({"path": str(p), "error": "not a mapping"})
-                    continue
-                sid = doc.get("id") or p.stem
-                cat = doc.get("category") or "other"
-                sources = doc.get("source") or []
-                for r in doc.get("rules") or []:
-                    if not isinstance(r, dict):
-                        errors.append({"path": str(p), "error": "rule not dict", "raw": r})
-                        continue
-                    typ = r.get("type")
-                    val = r.get("value")
-                    if not typ or not val:
-                        errors.append({
-                            "path": str(p),
-                            "error": "missing type or value",
-                            "rule": r,
-                        })
-                        continue
-                    records.append({
-                        "service": sid,
-                        "type": str(typ),
-                        "value": str(val),
-                        "category": cat,
-                        "provenance": {
-                            "sources": r.get("sources") or sources,
-                            "file": str(p.relative_to(snapshot_dir)),
-                        },
-                    })
-            except IngestError as e:
-                errors.append({"path": str(p), "error": str(e)})
+    if not records:
+        raise IngestError("Snapshot contains no recognizable rule records")
 
-    # 2. Registry snapshot (optional)
-    registry_path = sources_root / "registry.yaml"
-    if registry_path.exists():
-        try:
-            reg = _load_yaml(registry_path)
-            # keep as metadata only for now
-            manifest["registry_present"] = True
-            manifest["registry_keys"] = list(reg.keys()) if isinstance(reg, dict) else []
-        except IngestError as e:
-            errors.append({"path": str(registry_path), "error": str(e)})
-
-    result = {
+    return {
         "snapshot_id": manifest.get("snapshot_id") or snapshot_dir.name,
         "ingested_at": datetime.now(timezone.utc).isoformat(),
         "manifest": manifest,
@@ -116,6 +154,7 @@ def ingest_snapshot(snapshot_dir: Path) -> dict[str, Any]:
         "stats": {
             "records": len(records),
             "errors": len(errors),
+            "structured_service_records": structured_count,
+            "collected_raw_records": collected_count,
         },
     }
-    return result
