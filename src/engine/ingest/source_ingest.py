@@ -2,7 +2,7 @@
 
 Supported input layouts:
   1. data/snapshots/<id>/sources/services/*.yaml
-  2. a collected snapshot containing manifests/*.json and sources/<source>/*
+  2. a collected snapshot containing sources/manifests/*.json and sources/<source>/*
 
 The second layout is the direct successor to the old normalize path: raw
 upstream files are parsed in the V3 ingest layer and never materialized into
@@ -70,9 +70,9 @@ def _ingest_structured_services(sources_root: Path, records: list[dict[str, Any]
 
 
 def _ingest_collected_snapshot(snapshot_dir: Path, records: list[dict[str, Any]], errors: list[dict[str, Any]]) -> int:
-    """Parse backup/<date>/sources using per-source collection manifests."""
-    manifests_dir = snapshot_dir / "manifests"
+    """Parse a frozen collected snapshot under sources/manifests + sources/<source>."""
     sources_root = snapshot_dir / "sources"
+    manifests_dir = sources_root / "manifests"
     if not manifests_dir.is_dir() or not sources_root.is_dir():
         return 0
 
@@ -91,8 +91,8 @@ def _ingest_collected_snapshot(snapshot_dir: Path, records: list[dict[str, Any]]
                 continue
             name = str(entry.get("name") or "")
             service = str(entry.get("service") or Path(name).stem).lower()
-            local_rel = entry.get("local") or f"sources/{source_id}/{name}"
-            path = snapshot_dir / str(local_rel)
+            local_rel = str(entry.get("local") or f"sources/{source_id}/{name}")
+            path = snapshot_dir / local_rel
             if not path.is_file():
                 errors.append({"path": str(path), "error": "collected file missing from snapshot"})
                 continue
