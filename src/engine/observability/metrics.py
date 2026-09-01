@@ -105,3 +105,17 @@ def build_observability(run_dir: Path) -> dict[str, Any]:
     (metrics_dir / "source-health.json").write_text(json.dumps(dict(source_health), indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     (metrics_dir / "parser-coverage.json").write_text(json.dumps(parser_coverage, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return metrics
+
+
+def quality_score(metrics: dict[str, Any], policy: dict[str, Any]) -> dict[str, Any]:
+    """Compatibility wrapper around the V3 release policy evaluator."""
+    from src.engine.policy.release_policy import evaluate_quality
+    decision = evaluate_quality(metrics, policy)
+    return {
+        "schema": "data_quality_v2",
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "score": decision.score,
+        "all_hard_pass": decision.passed,
+        "checks": decision.checks,
+        "decision": decision.decision,
+    }
