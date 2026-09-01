@@ -42,7 +42,14 @@ def evaluate_quality(metrics: dict[str, Any], policy: dict[str, Any]) -> PolicyD
     checks["removed_rules"] = {"value": int(diff.get("removed", 0)), "max": int(cfg.get("max_removed_rules", 10000))}
     checks["source_error_count"] = {"value": sum(int(v.get("errors", 0)) for v in source.values() if isinstance(v, dict)), "max": int(cfg.get("max_source_errors", 0))}
     checks["v2_runtime_dependency"] = {"value": metrics.get("v2_runtime_dependency", -1), "expected": 0}
-    checks["baseline_anomaly"] = {"value": baseline.get("decision", "ERROR"), "expected": "PASS", "pass": baseline.get("decision", "ERROR") == "PASS"}
+    baseline_decision = str(baseline.get("decision", "NO_BASELINE"))
+    # The first successful production run establishes the baseline. Thereafter
+    # an evaluated BLOCK/ERROR is hard-fail; NO_BASELINE is explicitly neutral.
+    checks["baseline_anomaly"] = {
+        "value": baseline_decision,
+        "expected": "PASS",
+        "pass": baseline_decision in {"PASS", "NO_BASELINE"},
+    }
 
     for name, item in checks.items():
         if name == "baseline_anomaly":
