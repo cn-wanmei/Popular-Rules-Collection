@@ -1,9 +1,19 @@
-version: 1
+version: 2
 quality:
   min_clean_rate: 0.95
   max_quarantine_rate: 0.05
+  min_parser_recognition_rate: 0.995
   max_canonical_error_rate: 0.0
   max_removed_rules: 10000
+  max_source_errors: 0
+  hard_checks:
+    - clean_rate
+    - quarantine_rate
+    - canonical_error_rate
+    - parser_recognition_rate
+    - removed_rules
+    - source_error_count
+    - v2_runtime_dependency
 release:
   require_quality_pass: true
   require_golden_pass: true
