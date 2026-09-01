@@ -11,6 +11,9 @@ import yaml
 from src.engine.ingest.rule_parser import iter_rules
 
 
+LARGE_SERVICES = {"adblock", "proxy", "china", "gfw"}
+
+
 class IngestError(Exception):
     """Hard failure during ingest — never silently dropped."""
 
@@ -22,7 +25,13 @@ def _load_yaml(path: Path) -> Any:
         raise IngestError(f"Failed to parse YAML {path}: {e}") from e
 
 
-def _ingest_structured_services(sources_root: Path, records: list[dict[str, Any]], errors: list[dict[str, Any]]) -> int:
+def _ingest_structured_services(
+    sources_root: Path,
+    records: list[dict[str, Any]],
+    errors: list[dict[str, Any]],
+    *,
+    skip_large: bool = False,
+) -> int:
     services_dir = sources_root / "services"
     if not services_dir.is_dir():
         return 0
@@ -34,6 +43,8 @@ def _ingest_structured_services(sources_root: Path, records: list[dict[str, Any]
                 errors.append({"path": str(p), "error": "not a mapping"})
                 continue
             sid = str(doc.get("id") or p.stem)
+            if skip_large and sid in LARGE_SERVICES:
+                continue
             cat = str(doc.get("category") or "other")
             sources = doc.get("source") or []
             for r in doc.get("rules") or []:
@@ -73,7 +84,13 @@ def _resolve_collected_path(snapshot_dir: Path, local_rel: str) -> Path:
     return direct
 
 
-def _ingest_collected_snapshot(snapshot_dir: Path, records: list[dict[str, Any]], errors: list[dict[str, Any]]) -> int:
+def _ingest_collected_snapshot(
+    snapshot_dir: Path,
+    records: list[dict[str, Any]],
+    errors: list[dict[str, Any]],
+    *,
+    skip_large: bool = False,
+) -> int:
     """Parse a frozen collected snapshot under sources/manifests + collected files."""
     sources_root = snapshot_dir / "sources"
     manifests_dir = sources_root / "manifests"
@@ -95,6 +112,8 @@ def _ingest_collected_snapshot(snapshot_dir: Path, records: list[dict[str, Any]]
                 continue
             name = str(entry.get("name") or "")
             service = str(entry.get("service") or Path(name).stem).lower()
+            if skip_large and service in LARGE_SERVICES:
+                continue
             local_rel = str(entry.get("local") or f"sources/{source_id}/{name}")
             path = _resolve_collected_path(snapshot_dir, local_rel)
             if not path.is_file():
@@ -123,7 +142,7 @@ def _ingest_collected_snapshot(snapshot_dir: Path, records: list[dict[str, Any]]
     return count
 
 
-def ingest_snapshot(snapshot_dir: Path) -> dict[str, Any]:
+def ingest_snapshot(snapshot_dir: Path, *, skip_large: bool = False) -> dict[str, Any]:
     """Ingest a frozen Source Snapshot into structured records."""
     snapshot_dir = Path(snapshot_dir)
     if not snapshot_dir.is_dir():
@@ -141,8 +160,12 @@ def ingest_snapshot(snapshot_dir: Path) -> dict[str, Any]:
 
     records: list[dict[str, Any]] = []
     errors: list[dict[str, Any]] = []
-    structured_count = _ingest_structured_services(sources_root, records, errors)
-    collected_count = _ingest_collected_snapshot(snapshot_dir, records, errors)
+    structured_count = _ingest_structured_services(
+        sources_root, records, errors, skip_large=skip_large
+    )
+    collected_count = _ingest_collected_snapshot(
+        snapshot_dir, records, errors, skip_large=skip_large
+    )
     if not records:
         raise IngestError("Snapshot contains no recognizable rule records")
 
