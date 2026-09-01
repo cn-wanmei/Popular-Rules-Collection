@@ -1,13 +1,4 @@
-"""Source Ingest from Snapshot — V2-runtime-free.
-
-Supported input layouts:
-  1. data/snapshots/<id>/sources/services/*.yaml
-  2. a collected snapshot containing sources/manifests/*.json and sources/<source>/*
-
-The second layout is the direct successor to the old normalize path: raw
-upstream files are parsed in the V3 ingest layer and never materialized into
-legacy database/services.
-"""
+"""Source Ingest from Snapshot — V2-runtime-free."""
 from __future__ import annotations
 
 import json
@@ -69,8 +60,21 @@ def _ingest_structured_services(sources_root: Path, records: list[dict[str, Any]
     return count
 
 
+def _resolve_collected_path(snapshot_dir: Path, local_rel: str) -> Path:
+    """Resolve collector paths both before and after Snapshot adds its own sources/."""
+    direct = snapshot_dir / local_rel
+    if direct.is_file():
+        return direct
+    if local_rel.startswith("sources/"):
+        stripped = local_rel.removeprefix("sources/")
+        nested = snapshot_dir / "sources" / stripped
+        if nested.is_file():
+            return nested
+    return direct
+
+
 def _ingest_collected_snapshot(snapshot_dir: Path, records: list[dict[str, Any]], errors: list[dict[str, Any]]) -> int:
-    """Parse a frozen collected snapshot under sources/manifests + sources/<source>."""
+    """Parse a frozen collected snapshot under sources/manifests + collected files."""
     sources_root = snapshot_dir / "sources"
     manifests_dir = sources_root / "manifests"
     if not manifests_dir.is_dir() or not sources_root.is_dir():
@@ -92,9 +96,9 @@ def _ingest_collected_snapshot(snapshot_dir: Path, records: list[dict[str, Any]]
             name = str(entry.get("name") or "")
             service = str(entry.get("service") or Path(name).stem).lower()
             local_rel = str(entry.get("local") or f"sources/{source_id}/{name}")
-            path = snapshot_dir / local_rel
+            path = _resolve_collected_path(snapshot_dir, local_rel)
             if not path.is_file():
-                errors.append({"path": str(path), "error": "collected file missing from snapshot"})
+                errors.append({"path": str(path), "error": "collected file missing from snapshot", "local": local_rel})
                 continue
             try:
                 parsed = list(iter_rules(path))
@@ -124,7 +128,6 @@ def ingest_snapshot(snapshot_dir: Path) -> dict[str, Any]:
     snapshot_dir = Path(snapshot_dir)
     if not snapshot_dir.is_dir():
         raise IngestError(f"Snapshot directory does not exist: {snapshot_dir}")
-
     manifest_path = snapshot_dir / "manifest.json"
     if not manifest_path.exists():
         raise IngestError(f"Missing manifest.json in {snapshot_dir}")
@@ -132,7 +135,6 @@ def ingest_snapshot(snapshot_dir: Path) -> dict[str, Any]:
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     except Exception as e:
         raise IngestError(f"Invalid manifest.json: {e}") from e
-
     sources_root = snapshot_dir / "sources"
     if not sources_root.is_dir():
         raise IngestError(f"Missing sources/ under {snapshot_dir}")
@@ -141,7 +143,6 @@ def ingest_snapshot(snapshot_dir: Path) -> dict[str, Any]:
     errors: list[dict[str, Any]] = []
     structured_count = _ingest_structured_services(sources_root, records, errors)
     collected_count = _ingest_collected_snapshot(snapshot_dir, records, errors)
-
     if not records:
         raise IngestError("Snapshot contains no recognizable rule records")
 
