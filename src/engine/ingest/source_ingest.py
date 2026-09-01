@@ -25,6 +25,14 @@ def _load_yaml(path: Path) -> Any:
         raise IngestError(f"Failed to parse YAML {path}: {e}") from e
 
 
+def _structured_service_files(sources_root: Path) -> list[Path]:
+    """Accept both sources/services/*.yaml and a direct sources/*.yaml layout."""
+    nested = sources_root / "services"
+    files = list(nested.glob("*.yaml")) if nested.is_dir() else []
+    files.extend(sources_root.glob("*.yaml"))
+    return sorted(set(files))
+
+
 def _ingest_structured_services(
     sources_root: Path,
     records: list[dict[str, Any]],
@@ -32,11 +40,8 @@ def _ingest_structured_services(
     *,
     skip_large: bool = False,
 ) -> int:
-    services_dir = sources_root / "services"
-    if not services_dir.is_dir():
-        return 0
     count = 0
-    for p in sorted(services_dir.glob("*.yaml")):
+    for p in _structured_service_files(sources_root):
         try:
             doc = _load_yaml(p)
             if not isinstance(doc, dict):
