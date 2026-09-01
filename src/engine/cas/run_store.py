@@ -1,4 +1,4 @@
-"""Content-addressable registration and integrity verification for Run artifacts."""
+"""Content-addressable registration and integrity verification for immutable Run evidence."""
 from __future__ import annotations
 
 import hashlib
@@ -8,6 +8,8 @@ from typing import Any
 
 from src.engine.cas.store import put_file, read_bytes
 
+MUTABLE_RUN_FILES = {"run_manifest.json", "cas-manifest.json"}
+
 
 def register_run(run_dir: Path, cas_root: Path) -> dict[str, Any]:
     run_dir = Path(run_dir)
@@ -16,13 +18,15 @@ def register_run(run_dir: Path, cas_root: Path) -> dict[str, Any]:
     for path in sorted(run_dir.rglob("*")):
         if not path.is_file() or path.name.endswith(".tmp"):
             continue
-        if path.relative_to(run_dir).as_posix() == "cas-manifest.json":
+        rel = path.relative_to(run_dir).as_posix()
+        if rel in MUTABLE_RUN_FILES:
             continue
         digest = put_file(path, cas_root)
-        objects[str(path.relative_to(run_dir))] = digest
+        objects[rel] = digest
     manifest = {
-        "schema": "run_cas_manifest_v1",
+        "schema": "run_cas_manifest_v2",
         "run_id": run_dir.name,
+        "mutable_files_excluded": sorted(MUTABLE_RUN_FILES),
         "object_count": len(objects),
         "objects": objects,
     }
@@ -38,15 +42,23 @@ def verify_run(run_dir: Path, cas_root: Path) -> dict[str, Any]:
     if not manifest_path.exists():
         raise RuntimeError("Missing cas-manifest.json")
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    if not isinstance(manifest.get("objects"), dict) or not manifest.get("objects"):
+        raise RuntimeError("CAS manifest contains no immutable objects")
     mismatches: list[str] = []
     missing: list[str] = []
-    for rel, digest in manifest.get("objects", {}).items():
+    for rel, digest in manifest["objects"].items():
         local = run_dir / rel
         if not local.is_file():
             missing.append(rel)
             continue
-        if hashlib.sha256(local.read_bytes()).hexdigest() != digest:
+        actual = hashlib.sha256(local.read_bytes()).hexdigest()
+        if actual != digest:
             mismatches.append(rel)
-        else:
-            read_bytes(digest, cas_root)
-    return {"verified": not missing and not mismatches, "missing": missing, "mismatches": mismatches, "object_count": len(manifest.get("objects", {}))}
+            continue
+        read_bytes(digest, cas_root)
+    return {
+        "verified": not missing and not mismatches,
+        "missing": missing,
+        "mismatches": mismatches,
+        "object_count": len(manifest["objects"]),
+    }
