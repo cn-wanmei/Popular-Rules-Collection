@@ -23,8 +23,8 @@ from src.engine.release.state_machine import evaluate_release
 from src.engine.snapshot.engine import create_source_snapshot
 
 STAGES = [
-    "snapshot", "ingest", "quarantine", "canonical", "hierarchy",
-    "ir", "adapters", "diff", "golden", "observability", "release",
+    "snapshot", "ingest", "quarantine", "canonical", "hierarchy", "ir",
+    "adapters", "diff", "golden", "observability", "cas", "release",
 ]
 
 DAG_NODES = [
@@ -38,7 +38,8 @@ DAG_NODES = [
     Node("diff", ("canonical",)),
     Node("golden", ("adapters",)),
     Node("observability", ("diff", "golden")),
-    Node("release", ("observability",)),
+    Node("cas", ("observability",)),
+    Node("release", ("cas",)),
 ]
 
 
@@ -65,14 +66,10 @@ def run_pipeline(
         raise ValueError("Stages must be a contiguous prefix of the V3 pipeline")
     wanted_set = set(wanted)
     node_by_name = {n.name: n for n in DAG_NODES if n.name in wanted_set}
-    nodes = []
-    for stage in STAGES:
-        if stage in wanted_set:
-            deps = tuple(d for d in node_by_name[stage].deps if d in wanted_set)
-            nodes.append(Node(stage, deps))
+    nodes = [Node(stage, tuple(d for d in node_by_name[stage].deps if d in wanted_set)) for stage in STAGES if stage in wanted_set]
 
     results: dict[str, Any] = {
-        "schema": "engine_run_v3",
+        "schema": "engine_run_v4",
         "run_id": run_id,
         "started_at": datetime.now(timezone.utc).isoformat(),
         "stages": {},
@@ -89,18 +86,13 @@ def run_pipeline(
         tmp.replace(path)
 
     def handler_snapshot() -> dict[str, Any]:
-        manifest = create_source_snapshot(
-            sources_root,
-            data_root / "snapshots",
-            extra_meta={"run_id": run_id, "skip_large": skip_large},
-        )
+        manifest = create_source_snapshot(sources_root, data_root / "snapshots", extra_meta={"run_id": run_id, "skip_large": skip_large})
         context["snapshot"] = manifest
         (run_dir / "snapshot_id.txt").write_text(manifest["snapshot_id"], encoding="utf-8")
         return {"status": "ok", "snapshot_id": manifest["snapshot_id"], "file_count": manifest.get("file_count", 0)}
 
     def handler_ingest() -> dict[str, Any]:
-        manifest = context["snapshot"]
-        result = ingest_snapshot(data_root / "snapshots" / manifest["snapshot_id"], skip_large=skip_large)
+        result = ingest_snapshot(data_root / "snapshots" / context["snapshot"]["snapshot_id"], skip_large=skip_large)
         context["ingest"] = result
         return {"status": "ok", "records": result["stats"]["records"], "errors": result["stats"]["errors"]}
 
@@ -141,22 +133,18 @@ def run_pipeline(
         quality = write_quality_report(run_dir, metrics, Path("config") / "release.yaml")
         evidence = build_sbom(run_dir)
         retention = retention_plan(data_root / "runs", keep=10)
-        return {
-            "status": "ok",
-            "quality_score": quality["score"],
-            "quality_decision": quality["decision"],
-            "sbom_files": len(evidence["files"]),
-            "retention_candidates": len(retention["eligible_for_deletion"]),
-        }
+        return {"status": "ok", "quality_score": quality["score"], "quality_decision": quality["decision"], "sbom_files": len(evidence["files"]), "retention_candidates": len(retention["eligible_for_deletion"])}
+
+    def handler_cas() -> dict[str, Any]:
+        manifest = register_run(run_dir, data_root / "cas" / "objects")
+        return {"status": "ok", "object_count": manifest["object_count"]}
 
     def handler_release() -> dict[str, Any]:
         release = evaluate_release(run_dir)
-        return {
-            "status": "ok" if release["can_publish"] else "blocked",
-            "state": release["state"],
-            "can_publish": release["can_publish"],
-            "quality_score": release.get("quality_score"),
-        }
+        # Release metadata is part of the CAS evidence, so refresh the CAS manifest after release evidence is written.
+        if release["can_publish"]:
+            register_run(run_dir, data_root / "cas" / "objects")
+        return {"status": "ok" if release["can_publish"] else "blocked", "state": release["state"], "can_publish": release["can_publish"], "quality_score": release.get("quality_score")}
 
     handlers = {
         "snapshot": handler_snapshot,
@@ -169,10 +157,10 @@ def run_pipeline(
         "diff": handler_diff,
         "golden": handler_golden,
         "observability": handler_observability,
+        "cas": handler_cas,
         "release": handler_release,
     }
 
-    # Canonical can be a hard-block stage; diff and golden remain independent and may finish.
     def checkpoint(layer: list[str], all_results: dict[str, Any]) -> None:
         results["execution"]["layers"].append(list(layer))
         for name in layer:
@@ -183,19 +171,9 @@ def run_pipeline(
     executed = execute(nodes, handlers, max_workers=min(8, len(nodes)), fail_fast=False, on_layer_complete=checkpoint)
     results["stages"].update(executed)
     results["finished_at"] = datetime.now(timezone.utc).isoformat()
-
-    hard_failures = [
-        name for name, value in executed.items()
-        if isinstance(value, dict) and value.get("status") in {"failed", "skipped", "blocked"}
-    ]
-    if hard_failures:
-        results["status"] = "blocked"
-        results["failure_stages"] = hard_failures
-    else:
-        results["status"] = "ok"
-
-    if results["status"] == "ok" and "release" in wanted_set:
-        register_run(run_dir, data_root / "cas" / "objects")
-
+    failures = [name for name, value in executed.items() if isinstance(value, dict) and value.get("status") in {"failed", "skipped", "blocked"}]
+    results["status"] = "blocked" if failures else "ok"
+    if failures:
+        results["failure_stages"] = failures
     persist()
     return results
