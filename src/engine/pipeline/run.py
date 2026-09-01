@@ -1,13 +1,11 @@
 """Engine Pipeline — one immutable V3 run from snapshot to release.
 
 HARD ORDER:
-  snapshot → ingest → quarantine → canonical
-  → hierarchy → decision/ir → adapters
-  → diff → golden → release
+  snapshot → ingest → quarantine → canonical → hierarchy
+  → ir → adapters → diff → golden → release
 
-All stages in a production run share one run_id and one snapshot_id.
-Publish is deliberately outside this module and is performed only by the
-release-gated CLI promotion step.
+Every production run uses one run_id and one snapshot_id. Publish is a
+separate release-gated promotion operation.
 """
 from __future__ import annotations
 
@@ -61,15 +59,18 @@ def run_pipeline(
         "stages": {},
         "v2_runtime_dependency": 0,
     }
-    (run_dir / "run_manifest.json").write_text(
-        json.dumps(results, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
-    )
+
+    def persist() -> None:
+        (run_dir / "run_manifest.json").write_text(
+            json.dumps(results, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+        )
+
+    persist()
 
     snapshot_manifest: dict[str, Any] | None = None
     ingest_result: dict[str, Any] | None = None
     clean_payload: dict[str, Any] | None = None
 
-    # Snapshot is always the first stage and is the single input boundary.
     if "snapshot" in wanted:
         snap_dir = data_root / "snapshots"
         snapshot_manifest = create_source_snapshot(
@@ -77,9 +78,8 @@ def run_pipeline(
         )
         (run_dir / "snapshot_id.txt").write_text(snapshot_manifest["snapshot_id"], encoding="utf-8")
         results["snapshot_id"] = snapshot_manifest["snapshot_id"]
-        results["stages"]["snapshot"] = {
-            "status": "ok", "snapshot_id": snapshot_manifest["snapshot_id"]
-        }
+        results["stages"]["snapshot"] = {"status": "ok", "snapshot_id": snapshot_manifest["snapshot_id"]}
+        persist()
 
     if "ingest" in wanted:
         if snapshot_manifest is None:
@@ -91,6 +91,7 @@ def run_pipeline(
             "records": ingest_result["stats"]["records"],
             "errors": ingest_result["stats"]["errors"],
         }
+        persist()
 
     if "quarantine" in wanted:
         if ingest_result is None:
@@ -101,6 +102,7 @@ def run_pipeline(
             "clean": clean_payload["stats"]["records"],
             "quarantined": clean_payload["stats"]["quarantined"],
         }
+        persist()
 
     if "canonical" in wanted:
         if clean_payload is None:
@@ -112,6 +114,7 @@ def run_pipeline(
             "memberships": can_manifest["memberships"],
             "errors": can_manifest["errors"],
         }
+        persist()
         if can_manifest["unique_rules"] == 0:
             raise RuntimeError("canonical produced zero rules")
 
@@ -119,22 +122,21 @@ def run_pipeline(
         h_manifest = build_hierarchy(run_dir / "canonical", run_dir / "hierarchy")
         results["stages"]["hierarchy"] = {
             "status": "ok",
-            **{
-                k: h_manifest[k]
-                for k in ("service_count", "group_count", "aggregate_count")
-                if k in h_manifest
-            },
+            **{k: h_manifest[k] for k in ("service_count", "group_count", "aggregate_count") if k in h_manifest},
         }
+        persist()
 
     if "ir" in wanted:
         ir_manifest = build_ir(run_dir / "canonical", run_dir / "hierarchy", run_dir / "ir")
         results["stages"]["ir"] = {"status": "ok", "stats": ir_manifest.get("stats")}
+        persist()
 
     if "adapters" in wanted:
         art_report = build_all_clients(run_dir / "canonical", run_dir / "artifacts")
         results["stages"]["adapters"] = {
             "status": "ok", "clients": list(art_report.get("clients", {}).keys())
         }
+        persist()
 
     if "diff" in wanted:
         baseline = data_root / "baseline" / "canonical.json"
@@ -150,21 +152,20 @@ def run_pipeline(
             "changed": diff_report["changed"],
             "baseline": str(baseline) if baseline.exists() else None,
         }
+        persist()
 
     if "golden" in wanted:
         golden = run_golden(run_dir)
-        results["stages"]["golden"] = {
-            "status": "ok", "all_pass": golden["all_pass"]
-        }
+        results["stages"]["golden"] = {"status": "ok", "all_pass": golden["all_pass"]}
+        persist()
         if not golden["all_pass"]:
             results["status"] = "blocked"
             results["finished_at"] = datetime.now(timezone.utc).isoformat()
-            (run_dir / "run_manifest.json").write_text(
-                json.dumps(results, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
-            )
+            persist()
             return results
 
     if "release" in wanted:
+        persist()
         release = evaluate_release(run_dir)
         results["stages"]["release"] = {
             "status": "ok" if release["can_publish"] else "blocked",
@@ -174,19 +175,14 @@ def run_pipeline(
         if release["state"] != "RC_READY":
             results["status"] = "blocked"
             results["finished_at"] = datetime.now(timezone.utc).isoformat()
-            (run_dir / "run_manifest.json").write_text(
-                json.dumps(results, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
-            )
+            persist()
             return results
 
-        # Baseline only advances after release has passed.
         baseline = data_root / "baseline" / "canonical.json"
         promote_baseline(run_dir / "canonical", baseline)
         results["baseline_promoted"] = str(baseline)
 
     results["finished_at"] = datetime.now(timezone.utc).isoformat()
     results["status"] = "ok"
-    (run_dir / "run_manifest.json").write_text(
-        json.dumps(results, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
-    )
+    persist()
     return results
