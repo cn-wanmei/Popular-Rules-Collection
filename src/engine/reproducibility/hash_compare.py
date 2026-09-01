@@ -1,4 +1,4 @@
-"""Reproducibility — stable semantic artifact digests across repeated runs."""
+"""Reproducibility — stable semantic output digests across repeated runs."""
 from __future__ import annotations
 
 import hashlib
@@ -6,8 +6,9 @@ import json
 from pathlib import Path
 from typing import Any
 
-
 VOLATILE_KEYS = {"generated_at", "started_at", "finished_at", "promoted_at", "run_dir", "ingested_at"}
+SEMANTIC_ARTIFACT_SUFFIXES = {".yaml", ".list", ".json"}
+METADATA_JSON_NAMES = {"build_report.json"}
 
 
 def _sha256_file(path: Path) -> str:
@@ -46,7 +47,6 @@ def compute_run_digest(run_dir: Path) -> dict[str, Any]:
     important = [
         "canonical/rules.jsonl",
         "canonical/memberships.jsonl",
-        "canonical/manifest.json",
         "hierarchy/graph.json",
         "ir/ir.json",
         "ir/decisions.jsonl",
@@ -59,17 +59,18 @@ def compute_run_digest(run_dir: Path) -> dict[str, Any]:
     art = run_dir / "artifacts"
     if art.exists():
         for f in sorted(art.rglob("*")):
-            if f.is_file() and f.suffix in (".yaml", ".json", ".list"):
+            if f.is_file() and f.suffix in SEMANTIC_ARTIFACT_SUFFIXES and f.name not in METADATA_JSON_NAMES:
                 digests[str(f.relative_to(run_dir))] = _digest(f)
 
     overall = hashlib.sha256(json.dumps(digests, sort_keys=True).encode("utf-8")).hexdigest()
     report = {
-        "schema": "reproducibility_digest_v2",
+        "schema": "reproducibility_digest_v3",
         "run_dir": str(run_dir),
         "file_digests": digests,
         "overall_digest": overall,
         "file_count": len(digests),
         "volatile_metadata_excluded": sorted(VOLATILE_KEYS),
+        "metadata_files_excluded": sorted(METADATA_JSON_NAMES),
         "v2_runtime_dependency": 0,
     }
     out = run_dir / "reproducibility" / "digest.json"
@@ -86,9 +87,8 @@ def compare_runs(run_a: Path, run_b: Path) -> dict[str, Any]:
     only_a = sorted(keys_a - keys_b)
     only_b = sorted(keys_b - keys_a)
     differ = sorted(k for k in (keys_a & keys_b) if da["file_digests"][k] != db["file_digests"][k])
-    match = da["overall_digest"] == db["overall_digest"] and not only_a and not only_b and not differ
     return {
-        "match": match,
+        "match": da["overall_digest"] == db["overall_digest"] and not only_a and not only_b and not differ,
         "overall_a": da["overall_digest"],
         "overall_b": db["overall_digest"],
         "only_in_a": only_a,
