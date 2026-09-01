@@ -1,9 +1,4 @@
-"""Engine Pipeline — one immutable V3 run from snapshot to release.
-
-Every production run uses one run_id and one snapshot_id. Publication is a
-separate release-gated promotion operation; the Diff baseline is advanced only
-after the published artifact set has been successfully promoted.
-"""
+"""Engine Pipeline — one immutable V3 run from snapshot to release."""
 from __future__ import annotations
 
 import json
@@ -20,16 +15,29 @@ from src.engine.ir.builder import build_ir
 from src.engine.adapters.build_all import build_all_clients
 from src.engine.diff.engine import run_diff
 from src.engine.golden.runner import run_golden
+from src.engine.observability.metrics import build_observability, quality_score
 from src.engine.release.state_machine import evaluate_release
 
 STAGES = [
     "snapshot", "ingest", "quarantine", "canonical", "hierarchy",
-    "ir", "adapters", "diff", "golden", "release",
+    "ir", "adapters", "diff", "golden", "observability", "release",
 ]
 
 
 def _new_run_id() -> str:
     return datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ") + "-run"
+
+
+def _load_quality_policy(repo_root: Path | None = None) -> dict[str, Any]:
+    path = (repo_root or Path(".")) / "config" / "release.yaml"
+    if not path.exists():
+        return {}
+    try:
+        import yaml
+        data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        return data if isinstance(data, dict) else {}
+    except Exception:
+        return {}
 
 
 def run_pipeline(
@@ -51,7 +59,7 @@ def run_pipeline(
         raise ValueError("Stages must be a contiguous prefix of the V3 pipeline")
 
     results: dict[str, Any] = {
-        "schema": "engine_run_v1",
+        "schema": "engine_run_v2",
         "run_id": run_id,
         "started_at": datetime.now(timezone.utc).isoformat(),
         "stages": {},
@@ -82,8 +90,7 @@ def run_pipeline(
         if snapshot_manifest is None:
             raise RuntimeError("ingest requires snapshot")
         ingest_result = ingest_snapshot(
-            data_root / "snapshots" / snapshot_manifest["snapshot_id"],
-            skip_large=skip_large,
+            data_root / "snapshots" / snapshot_manifest["snapshot_id"], skip_large=skip_large
         )
         results["stages"]["ingest"] = {
             "status": "ok",
@@ -139,15 +146,10 @@ def run_pipeline(
 
     if "diff" in wanted:
         baseline = data_root / "baseline" / "canonical.json"
-        diff_report = run_diff(
-            run_dir / "canonical",
-            baseline if baseline.exists() else None,
-            run_dir / "reports" / "diff",
-        )
+        diff_report = run_diff(run_dir / "canonical", baseline if baseline.exists() else None, run_dir / "reports" / "diff")
         results["stages"]["diff"] = {
             "status": "ok",
-            "added": diff_report["added"],
-            "removed": diff_report["removed"],
+            "added": diff_report["added"], "removed": diff_report["removed"],
             "changed": diff_report["changed"],
             "baseline": str(baseline) if baseline.exists() else None,
         }
@@ -163,13 +165,28 @@ def run_pipeline(
             persist()
             return results
 
+    if "observability" in wanted:
+        metrics = build_observability(run_dir)
+        quality = quality_score(metrics, _load_quality_policy(Path(".")))
+        results["stages"]["observability"] = {
+            "status": "ok",
+            "quality_score": quality["score"],
+            "quality_decision": quality["decision"],
+        }
+        (run_dir / "quality.json").write_text(json.dumps(quality, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        persist()
+        if not quality["all_hard_pass"]:
+            results["status"] = "blocked"
+            results["finished_at"] = datetime.now(timezone.utc).isoformat()
+            persist()
+            return results
+
     if "release" in wanted:
         persist()
         release = evaluate_release(run_dir)
         results["stages"]["release"] = {
             "status": "ok" if release["can_publish"] else "blocked",
-            "state": release["state"],
-            "can_publish": release["can_publish"],
+            "state": release["state"], "can_publish": release["can_publish"],
         }
         if release["state"] != "RC_READY":
             results["status"] = "blocked"
