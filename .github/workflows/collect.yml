@@ -32,11 +32,10 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # ── PHASE 1: Naming gate (fail fast) ───────────────────────────────
       - name: Naming gate (HARD)
-        run: python -m src.engine.cli naming_gate
+        run: PYTHONPATH=. python -m src.engine.cli naming_gate
 
-      # ── PHASE 2: Upstream collect ──────────────────────────────────────
+      # ── PHASE 1: Upstream collection ──────────────────────────────────
       - name: Validate source registry
         run: python scripts/validate_registry.py
 
@@ -73,64 +72,41 @@ jobs:
         continue-on-error: true
         run: python scripts/build_provider_datasets.py
 
-      # ── PHASE 3: Normalize & deduplicate ──────────────────────────────
-      - name: Normalize
+      # ── PHASE 2: V3 owns service-rule normalization + build ────────────
+      - name: Engine — one immutable production run
+        id: engine
+        env:
+          SKIP_LARGE: ${{ inputs.skip_large }}
         run: |
-          if [ "${{ inputs.skip_large }}" = "true" ]; then
-            python scripts/normalize.py --skip-large
-          else
-            python scripts/normalize.py
-          fi
+          DAY=$(date -u +%Y-%m-%d)
+          set -o pipefail
+          PYTHONPATH=. python -m src.engine.cli all \
+            --sources "backup/${DAY}" \
+            --data data 2>&1 | tee engine-run.log
+          python3 - "$DAY" <<'PY'
+          import json
+          import pathlib
+          import sys
+          text = pathlib.Path('engine-run.log').read_text(encoding='utf-8', errors='replace')
+          start = text.find('{')
+          if start < 0:
+              raise SystemExit('engine JSON result not found')
+          obj = json.loads(text[start:])
+          if obj.get('status') != 'ok':
+              raise SystemExit(f"engine status={obj.get('status')}")
+          run_id = obj.get('run_id')
+          if not run_id:
+              raise SystemExit('engine run_id missing')
+          print(f"run_id={run_id}")
+          pathlib.Path('engine-run-id.txt').write_text(run_id, encoding='utf-8')
+          PY
+          echo "run_id=$(cat engine-run-id.txt)" >> "$GITHUB_OUTPUT"
 
-      - name: Collect IP (post-normalize)
-        run: python scripts/collect_ip.py
-
-      - name: Deduplicate
-        run: python scripts/deduplicate.py
-
-      # ── PHASE 4: V3 Engine pipeline ────────────────────────────────────
-      - name: Engine — canonical store
-        run: python -m src.engine.cli canonical
-
-      - name: Engine — hierarchy resolve
-        run: python -m src.engine.cli hierarchy
-
-      - name: Engine — IR (focus)
-        run: python -m src.engine.cli ir
-
-      - name: Engine — IR (full corpus)
-        run: python -m src.engine.cli ir_full
-
-      - name: Engine — build 7 client artifacts
-        run: python -m src.engine.cli adapters
-
-      - name: Engine — diff (identity-key level)
-        run: python -m src.engine.cli diff
-
-      - name: Engine — snapshot
-        run: python -m src.engine.cli snapshot
-
-      - name: Engine — quarantine scan
-        run: python -m src.engine.cli quarantine
-
-      - name: Engine — golden L1-L7 (HARD)
-        run: python -m src.engine.cli golden
-
-      - name: Engine — release gate (RC_READY check)
-        run: python -m src.engine.cli release
-
-      - name: Engine — publish to generated/
-        run: python -m src.engine.cli publish
-
-      # ── PHASE 5: Validation gates ─────────────────────────────────────
       - name: Schema validate (HARD)
         run: python scripts/schema_validate.py
 
       - name: Registry validate
         run: python scripts/validate.py
-
-      - name: Builder validate
-        run: python scripts/builder_validate.py
 
       - name: Dataset diff report
         continue-on-error: true
@@ -189,23 +165,6 @@ jobs:
       - name: Size gate (HARD)
         run: python scripts/size_gate.py
 
-      # ── PHASE 6: Soft reporting ────────────────────────────────────────
-      - name: Statistics (soft)
-        continue-on-error: true
-        run: python scripts/statistics.py
-
-      - name: Source snapshot (soft)
-        continue-on-error: true
-        run: python scripts/source_snapshot.py
-
-      - name: Release snapshot (soft)
-        continue-on-error: true
-        run: python scripts/release_snapshot.py
-
-      - name: Service score (soft)
-        continue-on-error: true
-        run: python scripts/service_score.py
-
       - name: Generate docs (soft)
         continue-on-error: true
         run: python scripts/generate_docs.py
@@ -217,7 +176,7 @@ jobs:
         continue-on-error: true
         run: python scripts/generate_links.py
 
-      # ── PHASE 7: Icon pipeline (soft) ─────────────────────────────────
+      # ── PHASE 3: Icon pipeline ──────────────────────────────────────────
       - name: Sync service icons (soft)
         continue-on-error: true
         run: python scripts/sync_service_icons.py
@@ -259,81 +218,39 @@ jobs:
         continue-on-error: true
         run: python scripts/icon_coverage.py
 
-      # ── PHASE 8: Commit & push ─────────────────────────────────────────
+      # ── PHASE 4: Commit & push ──────────────────────────────────────────
       - name: Commit & push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           DAY=$(date -u +%Y-%m-%d)
+          RUN_ID=$(cat engine-run-id.txt)
 
-          # Engine diff summary for commit message
           DIFF_SUMMARY=$(python3 -c "
           import json, pathlib
-          p = pathlib.Path('data/generated/reports/diff/latest.json')
+          p = pathlib.Path('data/runs') / '${RUN_ID}' / 'reports/diff/latest.json'
           if p.exists():
               d = json.loads(p.read_text())
-              print(f\"+{d.get('added',0)}/-{d.get('removed',0)} rules\")
+              print(f\"+{d.get('added',0)}/-{d.get('removed',0)}/~{d.get('changed',0)} rules\")
           else:
               print('diff unavailable')
           " 2>/dev/null || echo "diff unavailable")
 
           rm -f database/provenance/domains.jsonl
-
           git add -A \
-            database/ \
             generated/ \
             rule/ \
             sources/health.yaml \
             reports/ \
             docs/ \
-            config/ \
             assets/ \
-            data/generated/diff/ \
-            data/generated/reports/ || true
-          git add backup/*/manifests/ backup/ || true
-          python scripts/git_skip_release_paths.py || true
-          git status --porcelain || true
+            data/ \
+            backup/*/manifests/ \
+            backup/${DAY}/sources/ \
+            || true
 
+          git status --porcelain || true
           git diff --staged --quiet || git commit -m "chore(engine): collect+build ${DAY} | ${DIFF_SUMMARY}"
 
-          set +e
           git pull --rebase --autostash origin main
-          rc=$?
-          if [ $rc -ne 0 ]; then
-            echo "::warning::rebase conflict — auto-resolve"
-            for f in sources/health.yaml; do
-              git checkout --theirs -- "$f" 2>/dev/null || true
-              git add -- "$f" 2>/dev/null || true
-            done
-            git diff --name-only --diff-filter=U | while read -r uf; do
-              git checkout --theirs -- "$uf" 2>/dev/null || true
-              git add -- "$uf" 2>/dev/null || true
-            done
-            if [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ]; then
-              GIT_EDITOR=true git rebase --continue
-              rc=$?
-            else
-              git pull --rebase --autostash origin main
-              rc=$?
-            fi
-          fi
-          set -e
-          if [ $rc -ne 0 ]; then
-            echo "::error::rebase failed after auto-resolve"
-            git status || true
-            exit 1
-          fi
-
-          for i in 1 2 3; do
-            if git push; then exit 0; fi
-            echo "push rejected, retry pull --rebase ($i)"
-            git pull --rebase --autostash origin main || {
-              git checkout --theirs -- sources/health.yaml 2>/dev/null || true
-              git add sources/health.yaml 2>/dev/null || true
-              if [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ]; then
-                GIT_EDITOR=true git rebase --continue || true
-              fi
-            }
-            sleep 5
-          done
           git push
