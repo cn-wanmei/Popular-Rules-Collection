@@ -88,6 +88,7 @@ def run_pipeline(
     def handler_snapshot() -> dict[str, Any]:
         manifest = create_source_snapshot(sources_root, data_root / "snapshots", extra_meta={"run_id": run_id, "skip_large": skip_large})
         context["snapshot"] = manifest
+        results["snapshot_id"] = manifest["snapshot_id"]
         (run_dir / "snapshot_id.txt").write_text(manifest["snapshot_id"], encoding="utf-8")
         return {"status": "ok", "snapshot_id": manifest["snapshot_id"], "file_count": manifest.get("file_count", 0)}
 
@@ -141,7 +142,6 @@ def run_pipeline(
 
     def handler_release() -> dict[str, Any]:
         release = evaluate_release(run_dir)
-        # Release metadata is part of the CAS evidence, so refresh the CAS manifest after release evidence is written.
         if release["can_publish"]:
             register_run(run_dir, data_root / "cas" / "objects")
         return {"status": "ok" if release["can_publish"] else "blocked", "state": release["state"], "can_publish": release["can_publish"], "quality_score": release.get("quality_score")}
