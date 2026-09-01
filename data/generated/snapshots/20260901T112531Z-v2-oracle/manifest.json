@@ -1,0 +1,39 @@
+{
+  "snapshot_id": "20260901T112531Z-v2-oracle",
+  "created_at": "2026-09-01T11:25:31.345391+00:00",
+  "label": "v2-oracle",
+  "immutable": true,
+  "files": [
+    {
+      "name": "summary.json",
+      "sha256": "cf57094d3386c7c29bdebbc9300c1a3af5a011dfbe6f48ed2e18aa1e1a49b73a",
+      "bytes": 1052
+    },
+    {
+      "name": "golden.json",
+      "sha256": "f788e00cfa514631165bf46360c62113d6c0b223dbe0aa93545e67011747c911",
+      "bytes": 1178
+    },
+    {
+      "name": "manifest.json",
+      "sha256": "d9b9690adce672413752ac378dc9ee97a6fda5fcd4e91a012ee84a6d30ddc6bb",
+      "bytes": 407
+    },
+    {
+      "name": "memberships.yaml",
+      "sha256": "ade84bd8813de271276aa5ce7f1ed907f493d2c956babba0f67ce23159d06da5",
+      "bytes": 1137
+    },
+    {
+      "name": "services.yaml",
+      "sha256": "c3778244e479f9eb30c4c606f6850dcd9c4d29bcbc44fb6270d2c4232fc2e1dc",
+      "bytes": 3857
+    },
+    {
+      "name": "providers.yaml",
+      "sha256": "8c1369baf984677ef8b088a61cb6224975f4490b705972bc5c773ec52c78e89a",
+      "bytes": 758
+    }
+  ],
+  "file_count": 6
+}

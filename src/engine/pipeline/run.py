@@ -9,8 +9,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 
 STAGES_ALL = (
-    "naming_gate", "canonical", "hierarchy", "ir", "ir_full", "adapters", "diff",
-    "snapshot", "quarantine", "golden", "release", "publish",
+    "naming_gate", "canonical", "hierarchy", "ir", "ir_full", "adapters",
+    "diff", "snapshot", "quarantine", "golden", "release", "publish",
 )
 
 
@@ -60,6 +60,19 @@ def _run_stage(name: str) -> int:
         r = publish_artifacts_to_production(ROOT, dry_run=False)
         print(f"[engine] publish ok={r.get('ok')} copied={r.get('copied')}")
         return 0 if r.get("ok") else 1
+    if name == "diff":
+        from src.engine.diff.engine import run_diff
+        report = run_diff(ROOT)
+        summary = report.get("summary", "")
+        added = report.get("added", 0)
+        removed = report.get("removed", 0)
+        stable = report.get("stable", 0)
+        bootstrap = report.get("bootstrap", False)
+        if bootstrap:
+            print(f"[engine] diff bootstrap total={report.get('total_rules', 0)}")
+        else:
+            print(f"[engine] diff +{added}/-{removed} stable={stable} | {summary}")
+        return 0
 
     graph = load_entity_graph(sm_dir)
     rules = load_rules(canon)
@@ -84,24 +97,6 @@ def _run_stage(name: str) -> int:
     if name == "adapters":
         stats = build_service_lists(rules, memberships, graph, art)
         print(f"[engine] adapters {list(stats.keys())}")
-        return 0
-    if name == "diff":
-        v2_summary = ROOT / "reports" / "hierarchy" / "summary.json"
-        v3_summary = reports / "hierarchy_summary.json"
-        diff: dict = {"compared": False}
-        if v2_summary.exists() and v3_summary.exists():
-            v2 = {x["view"]: x for x in json.loads(v2_summary.read_text())}
-            v3 = json.loads(v3_summary.read_text())
-            rows = [{
-                "view": vid,
-                "v2_rules": (v2.get(vid) or {}).get("rules"),
-                "v3_rules": v3r.get("rules"),
-                "rules_match": (v2.get(vid) or {}).get("rules") == v3r.get("rules"),
-                "sha_match": (v2.get(vid) or {}).get("sha256") == v3r.get("sha256"),
-            } for vid, v3r in v3.items()]
-            diff = {"compared": True, "rows": rows, "all_rules_match": all(r["rules_match"] for r in rows), "all_sha_match": all(r["sha_match"] for r in rows)}
-            print(f"[engine] diff rules_match={diff['all_rules_match']}")
-        (reports / "differential.json").write_text(json.dumps(diff, indent=2) + "\n")
         return 0
 
     print(f"unknown stage: {name}", file=sys.stderr)

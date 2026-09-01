@@ -2,6 +2,11 @@ name: Build Client Rules
 
 on:
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run — build artifacts but do not publish to generated/"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -16,29 +21,77 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -r requirements.txt
-      - name: Build via registry
-        run: python scripts/pipeline.py build
-      - run: python scripts/schema_validate.py
-      - run: python scripts/validate.py
-      - run: python scripts/builder_validate.py
-      - run: python scripts/size_gate.py
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Naming gate (HARD)
+        run: python -m src.engine.cli naming_gate
+
+      - name: Engine — canonical store
+        run: python -m src.engine.cli canonical
+
+      - name: Engine — hierarchy
+        run: python -m src.engine.cli hierarchy
+
+      - name: Engine — IR (focus)
+        run: python -m src.engine.cli ir
+
+      - name: Engine — IR (full)
+        run: python -m src.engine.cli ir_full
+
+      - name: Engine — adapters (7 clients)
+        run: python -m src.engine.cli adapters
+
+      - name: Engine — diff
+        run: python -m src.engine.cli diff
+
+      - name: Engine — golden L1-L7 (HARD)
+        run: python -m src.engine.cli golden
+
+      - name: Engine — release gate
+        run: python -m src.engine.cli release
+
+      - name: Engine — publish to generated/
+        if: ${{ inputs.dry_run != true }}
+        run: python -m src.engine.cli publish
+
+      - name: Schema validate
+        run: python scripts/schema_validate.py
+
+      - name: Builder validate
+        run: python scripts/builder_validate.py
+
+      - name: Size gate (HARD)
+        run: python scripts/size_gate.py
+
       - name: Commit generated
+        if: ${{ inputs.dry_run != true }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add generated/
-          git diff --staged --quiet || git commit -m "chore(build): regenerate client rules $(date -u +%Y-%m-%d)"
+          DIFF_SUMMARY=$(python3 -c "
+          import json, pathlib
+          p = pathlib.Path('data/generated/reports/diff/latest.json')
+          if p.exists():
+              d = json.loads(p.read_text())
+              print(f\"+{d.get('added',0)}/-{d.get('removed',0)} rules\")
+          else:
+              print('rebuild')
+          " 2>/dev/null || echo "rebuild")
+          git add generated/ data/generated/reports/ data/generated/diff/ || true
+          git diff --staged --quiet || git commit -m "chore(engine): rebuild $(date -u +%Y-%m-%d) | ${DIFF_SUMMARY}"
           set +e
           git pull --rebase --autostash origin main
           rc=$?
+          set -e
           if [ $rc -ne 0 ]; then
-            echo "::error::rebase failed — refusing to push (no || true swallow)"
-            git status || true
+            echo "::error::rebase failed"
             exit 1
           fi
-          set -e
           git push

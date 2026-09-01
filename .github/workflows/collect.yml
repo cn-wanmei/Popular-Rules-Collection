@@ -20,40 +20,209 @@ concurrency:
 jobs:
   pipeline:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
-      - run: pip install -r requirements.txt
-      - run: python scripts/validate_registry.py
-      - run: python scripts/collect.py
-      - run: python scripts/validate_ip_registry.py
-      - run: python scripts/collect_ip.py
-      - run: python scripts/ip_quality_audit.py
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # ── PHASE 1: Naming gate (fail fast) ───────────────────────────────
+      - name: Naming gate (HARD)
+        run: python -m src.engine.cli naming_gate
+
+      # ── PHASE 2: Upstream collect ──────────────────────────────────────
+      - name: Validate source registry
+        run: python scripts/validate_registry.py
+
+      - name: Collect upstream rules
+        run: python scripts/collect.py
+
+      - name: Validate IP registry
+        run: python scripts/validate_ip_registry.py
+
+      - name: Collect IP rules
+        run: python scripts/collect_ip.py
+
+      - name: IP quality audit (soft)
         continue-on-error: true
-      - run: python scripts/validate_dataset_registry.py
-      - run: python scripts/build_network_lan.py
-      - run: python scripts/collect_datasets.py
-      - run: python scripts/build_network_datasets.py
-      - run: python scripts/dataset_diff.py
-      - run: python scripts/dataset_quality.py
-      - run: python scripts/coverage_matrix.py
+        run: python scripts/ip_quality_audit.py
+
+      - name: Validate dataset registry
+        run: python scripts/validate_dataset_registry.py
+
+      - name: Build network LAN datasets
+        run: python scripts/build_network_lan.py
+
+      - name: Collect datasets
+        run: python scripts/collect_datasets.py
+
+      - name: Build network datasets
+        run: python scripts/build_network_datasets.py
+
+      - name: Collect providers (soft)
         continue-on-error: true
-      - run: python scripts/hot_missing_audit.py
+        run: python scripts/collect_providers.py
+
+      - name: Build provider datasets (soft)
         continue-on-error: true
-      - run: python scripts/collect_providers.py
+        run: python scripts/build_provider_datasets.py
+
+      # ── PHASE 3: Normalize & deduplicate ──────────────────────────────
+      - name: Normalize
+        run: |
+          if [ "${{ inputs.skip_large }}" = "true" ]; then
+            python scripts/normalize.py --skip-large
+          else
+            python scripts/normalize.py
+          fi
+
+      - name: Collect IP (post-normalize)
+        run: python scripts/collect_ip.py
+
+      - name: Deduplicate
+        run: python scripts/deduplicate.py
+
+      # ── PHASE 4: V3 Engine pipeline ────────────────────────────────────
+      - name: Engine — canonical store
+        run: python -m src.engine.cli canonical
+
+      - name: Engine — hierarchy resolve
+        run: python -m src.engine.cli hierarchy
+
+      - name: Engine — IR (focus)
+        run: python -m src.engine.cli ir
+
+      - name: Engine — IR (full corpus)
+        run: python -m src.engine.cli ir_full
+
+      - name: Engine — build 7 client artifacts
+        run: python -m src.engine.cli adapters
+
+      - name: Engine — diff (identity-key level)
+        run: python -m src.engine.cli diff
+
+      - name: Engine — snapshot
+        run: python -m src.engine.cli snapshot
+
+      - name: Engine — quarantine scan
+        run: python -m src.engine.cli quarantine
+
+      - name: Engine — golden L1-L7 (HARD)
+        run: python -m src.engine.cli golden
+
+      - name: Engine — release gate (RC_READY check)
+        run: python -m src.engine.cli release
+
+      - name: Engine — publish to generated/
+        run: python -m src.engine.cli publish
+
+      # ── PHASE 5: Validation gates ─────────────────────────────────────
+      - name: Schema validate (HARD)
+        run: python scripts/schema_validate.py
+
+      - name: Registry validate
+        run: python scripts/validate.py
+
+      - name: Builder validate
+        run: python scripts/builder_validate.py
+
+      - name: Dataset diff report
         continue-on-error: true
-      - run: python scripts/build_provider_datasets.py
+        run: python scripts/dataset_diff.py
+
+      - name: Dataset quality gate
+        run: python scripts/dataset_quality.py
+
+      - name: Coverage matrix (soft)
         continue-on-error: true
-      - run: python scripts/client_capability_matrix.py
+        run: python scripts/coverage_matrix.py
+
+      - name: Hot missing audit (soft)
         continue-on-error: true
-      - name: Sync service icons (Simple Icons)
+        run: python scripts/hot_missing_audit.py
+
+      - name: Hierarchy validate (HARD)
+        run: python scripts/hierarchy_validate.py
+
+      - name: Hierarchy golden L4/L5 (HARD)
+        run: python scripts/hierarchy_golden.py
+
+      - name: Hierarchy coverage (soft)
+        continue-on-error: true
+        run: python scripts/hierarchy_coverage.py
+
+      - name: Routing decision SSOT
+        run: python scripts/routing_emit.py
+
+      - name: Routing contract validate
+        run: python scripts/routing_contract_validate.py
+
+      - name: Conflict detector (soft)
+        continue-on-error: true
+        run: python scripts/conflict_detector.py
+
+      - name: Provenance
+        run: python scripts/provenance.py
+
+      - name: Identity validate (soft)
+        continue-on-error: true
+        run: python scripts/identity_validate.py
+
+      - name: Rule count drift (soft)
+        continue-on-error: true
+        run: python scripts/rule_count_drift.py
+
+      - name: Quality validate (soft)
+        continue-on-error: true
+        run: python scripts/quality_validate.py
+
+      - name: Cross-client semantic test (soft)
+        continue-on-error: true
+        run: python scripts/cross_client_semantic_test.py
+
+      - name: Size gate (HARD)
+        run: python scripts/size_gate.py
+
+      # ── PHASE 6: Soft reporting ────────────────────────────────────────
+      - name: Statistics (soft)
+        continue-on-error: true
+        run: python scripts/statistics.py
+
+      - name: Source snapshot (soft)
+        continue-on-error: true
+        run: python scripts/source_snapshot.py
+
+      - name: Release snapshot (soft)
+        continue-on-error: true
+        run: python scripts/release_snapshot.py
+
+      - name: Service score (soft)
+        continue-on-error: true
+        run: python scripts/service_score.py
+
+      - name: Generate docs (soft)
+        continue-on-error: true
+        run: python scripts/generate_docs.py
+
+      - name: Generate rule pages (HARD)
+        run: python scripts/generate_rule_pages.py --clean --strict
+
+      - name: Generate links (soft)
+        continue-on-error: true
+        run: python scripts/generate_links.py
+
+      # ── PHASE 7: Icon pipeline (soft) ─────────────────────────────────
+      - name: Sync service icons (soft)
         continue-on-error: true
         run: python scripts/sync_service_icons.py
-      - name: Icon build (Final Freeze SSOT)
+
+      - name: Icon build (soft)
         continue-on-error: true
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq libcairo2 2>/dev/null || true
@@ -66,140 +235,72 @@ jobs:
           python scripts/icon_contact_sheet.py || true
           python scripts/icon_dark_contrast_audit.py || true
           python scripts/icon_cleanup_dirs.py || true
-      - name: Icon Schema V2 migrate
+
+      - name: Icon schema migrate (soft)
         continue-on-error: true
         run: python scripts/icon_schema_v2_migrate.py
-      - name: Icon registry build
+
+      - name: Icon registry build (soft)
         continue-on-error: true
         run: python scripts/icon_registry_build.py
+
       - name: Icon config sync (soft)
         continue-on-error: true
         run: python scripts/icon_config_sync.py
-      - name: Icon validate (soft)
-        continue-on-error: true
-        run: python scripts/icon_validate.py
+
       - name: Icon QA (hard gate)
         run: python scripts/icon_qa.py
-      - name: Icon service bidirectional (soft)
-        continue-on-error: true
-        run: python scripts/icon_service_bidirectional.py
+
       - name: Icon identity audit (soft)
         continue-on-error: true
         run: python scripts/icon_identity_audit.py
+
       - name: Icon coverage (soft)
         continue-on-error: true
         run: python scripts/icon_coverage.py
-      - name: Icon client adapter (soft)
-        continue-on-error: true
-        run: python scripts/icon_client_adapter.py
-      - name: Icon visual regression (soft)
-        continue-on-error: true
-        run: |
-          python scripts/icon_visual_regression.py || true
-      - name: Routing decision SSOT
-        run: python scripts/routing_emit.py
-      - name: Routing contract validate
-        run: python scripts/routing_contract_validate.py
-      - name: Build routing policies from decisions
-        run: python scripts/build_routing_policies.py
-      - name: Profile validate
-        run: python scripts/profile_validate.py
-      - name: Resolution fragment
-        run: python scripts/build_resolution_fragment.py
-      - name: V2.1 Artifact manifest
-        run: python scripts/build_artifact_manifest.py
-      - name: V2.1 Pack release bundle
-        continue-on-error: true
-        run: python scripts/pack_release_artifacts.py
-      - name: V2.2 Source quarantine scan
-        continue-on-error: true
-        run: python scripts/source_quarantine.py
-      - name: V2.3 Gate failure injection
-        run: python scripts/gate_failure_injection.py
-      - name: Normalize
-        run: |
-          if [ "${{ inputs.skip_large }}" = "true" ]; then
-            python scripts/normalize.py --skip-large
-          else
-            python scripts/normalize.py
-          fi
-      - run: python scripts/collect_ip.py
-      - run: python scripts/deduplicate.py
-      - name: Hierarchy validate (HARD)
-        run: python scripts/hierarchy_validate.py
-      - name: Hierarchy resolve (post-normalize snapshot)
-        run: python scripts/resolve_hierarchy.py
-      - name: Hierarchy golden L4/L5 (HARD)
-        run: python scripts/hierarchy_golden.py
-      - name: Hierarchy coverage
-        continue-on-error: true
-        run: python scripts/hierarchy_coverage.py
-      - name: Universal IR (post-hierarchy snapshot)
-        run: python scripts/build_universal_ir.py
-      - name: Semantic dedup report
-        continue-on-error: true
-        run: python scripts/semantic_dedup.py
-      - name: Growth anomaly
-        continue-on-error: true
-        run: python scripts/growth_anomaly.py
-      - run: python scripts/conflict_detector.py
-        continue-on-error: true
-      - run: python scripts/provenance.py
-      - name: Build clients (builder_registry via pipeline)
-        run: python scripts/pipeline.py build
-      - name: V2.4 Mihomo IR pilot
-        run: python scripts/build_mihomo_ir.py
-      - name: V2.4 Mihomo IR golden
-        run: python scripts/mihomo_ir_golden.py
-      - name: P1 Artifact provenance
-        run: python scripts/attach_artifact_provenance.py
-      - name: P1 Cross-client semantic (sample)
-        continue-on-error: true
-        run: python scripts/cross_client_semantic_test.py
-      - run: python scripts/schema_validate.py
-      - run: python scripts/validate.py
-      - run: python scripts/builder_validate.py
-      - run: python scripts/identity_validate.py
-        continue-on-error: true
-      - run: python scripts/rule_count_drift.py
-        continue-on-error: true
-      - run: python scripts/quality_validate.py
-        continue-on-error: true
-      - run: python scripts/statistics.py
-        continue-on-error: true
-      - run: python scripts/source_snapshot.py
-        continue-on-error: true
-      - run: python scripts/generated_manifest.py
-        continue-on-error: true
-      - run: python scripts/release_snapshot.py
-        continue-on-error: true
-      - run: python scripts/service_score.py
-        continue-on-error: true
-      - run: python scripts/generate_links.py
-        continue-on-error: true
-      - run: python scripts/generate_docs.py
-        continue-on-error: true
-      - name: Generate rule product pages
-        run: python scripts/generate_rule_pages.py --clean --strict
-      - name: Size gate (artifact_layout SSOT)
-        run: python scripts/size_gate.py
-      - name: Commit
+
+      # ── PHASE 8: Commit & push ─────────────────────────────────────────
+      - name: Commit & push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           DAY=$(date -u +%Y-%m-%d)
+
+          # Engine diff summary for commit message
+          DIFF_SUMMARY=$(python3 -c "
+          import json, pathlib
+          p = pathlib.Path('data/generated/reports/diff/latest.json')
+          if p.exists():
+              d = json.loads(p.read_text())
+              print(f\"+{d.get('added',0)}/-{d.get('removed',0)} rules\")
+          else:
+              print('diff unavailable')
+          " 2>/dev/null || echo "diff unavailable")
+
           rm -f database/provenance/domains.jsonl
-          git add -A database/ generated/ rule/ sources/health.yaml reports/ docs/ config/ assets/ || true
+
+          git add -A \
+            database/ \
+            generated/ \
+            rule/ \
+            sources/health.yaml \
+            reports/ \
+            docs/ \
+            config/ \
+            assets/ \
+            data/generated/diff/ \
+            data/generated/reports/ || true
           git add backup/*/manifests/ backup/ || true
           python scripts/git_skip_release_paths.py || true
           git status --porcelain || true
-          python scripts/size_gate.py
-          git diff --staged --quiet || git commit -m "chore(pipeline): collect+normalize+build ${DAY}"
+
+          git diff --staged --quiet || git commit -m "chore(engine): collect+build ${DAY} | ${DIFF_SUMMARY}"
+
           set +e
           git pull --rebase --autostash origin main
           rc=$?
           if [ $rc -ne 0 ]; then
-            echo "::warning::rebase conflict — auto-resolve generated health/assets"
+            echo "::warning::rebase conflict — auto-resolve"
             for f in sources/health.yaml; do
               git checkout --theirs -- "$f" 2>/dev/null || true
               git add -- "$f" 2>/dev/null || true
@@ -212,21 +313,19 @@ jobs:
               GIT_EDITOR=true git rebase --continue
               rc=$?
             else
-              echo "::warning::no rebase in progress; retry pull --rebase --autostash"
               git pull --rebase --autostash origin main
               rc=$?
             fi
           fi
           set -e
           if [ $rc -ne 0 ]; then
-            echo "::error::rebase still failed after auto-resolve"
+            echo "::error::rebase failed after auto-resolve"
             git status || true
             exit 1
           fi
+
           for i in 1 2 3; do
-            if git push; then
-              exit 0
-            fi
+            if git push; then exit 0; fi
             echo "push rejected, retry pull --rebase ($i)"
             git pull --rebase --autostash origin main || {
               git checkout --theirs -- sources/health.yaml 2>/dev/null || true
