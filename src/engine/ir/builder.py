@@ -38,7 +38,14 @@ def build_ir(canonical_dir: Path, hierarchy_dir: Path, out_dir: Path) -> dict[st
         "engine_version": "1.0.1",
         "v2_runtime_dependency": 0,
         "entities": entities,
+        # Deprecated read-only aliases retained during IR v2 migration.
+        "entity": entities,
         "views": {
+            "services": hier.get("services", {}),
+            "groups": hier.get("groups", {}),
+            "aggregates": hier.get("aggregates", {}),
+        },
+        "view": {
             "services": hier.get("services", {}),
             "groups": hier.get("groups", {}),
             "aggregates": hier.get("aggregates", {}),
@@ -64,8 +71,7 @@ def build_ir(canonical_dir: Path, hierarchy_dir: Path, out_dir: Path) -> dict[st
             "decisions": len(decisions),
         },
     }
-    payload = json.dumps(ir, indent=2, ensure_ascii=False) + "\n"
-    (out_dir / "ir.json").write_text(payload, encoding="utf-8")
+    (out_dir / "ir.json").write_text(json.dumps(ir, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     with (out_dir / "decisions.jsonl").open("w", encoding="utf-8") as f:
         for d in decisions:
             f.write(json.dumps(d, ensure_ascii=False) + "\n")
