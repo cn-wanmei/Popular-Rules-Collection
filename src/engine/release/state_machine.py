@@ -39,26 +39,22 @@ def _dir_sha256(path: Path) -> str | None:
     for file in sorted(path.rglob("*")):
         if file.is_file() and file.suffix in {".yaml", ".json", ".list"}:
             items.append((str(file.relative_to(path)), _sha256(file) or ""))
-    if not items:
-        return None
-    return hashlib.sha256(json.dumps(items, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()
+    return hashlib.sha256(json.dumps(items, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest() if items else None
 
 
 def _load_json(path: Path) -> dict[str, Any]:
     if not path.exists():
         return {}
     try:
-        data = json.loads(path.read_text(encoding="utf-8"))
-        return data if isinstance(data, dict) else {}
+        value = json.loads(path.read_text(encoding="utf-8"))
+        return value if isinstance(value, dict) else {}
     except (OSError, json.JSONDecodeError):
         return {}
 
 
 def evaluate_release(run_dir: Path) -> dict[str, Any]:
-    """Compute release state from actual artifacts and quality/CAS evidence."""
     run_dir = Path(run_dir)
     gates: dict[str, bool] = {}
-
     run_manifest = _load_json(run_dir / "run_manifest.json")
     v2_ok = run_manifest.get("v2_runtime_dependency") == 0
     snapshot_id = run_manifest.get("snapshot_id")
@@ -70,7 +66,6 @@ def evaluate_release(run_dir: Path) -> dict[str, Any]:
 
     golden = _load_json(run_dir / "golden" / "report.json")
     gates["golden_all_pass"] = golden.get("all_pass") is True
-
     canonical_rules = run_dir / "canonical" / "rules.jsonl"
     gates["canonical_present"] = (run_dir / "canonical" / "manifest.json").exists() and canonical_rules.exists() and canonical_rules.stat().st_size > 0
     gates["ir_present"] = (run_dir / "ir" / "manifest.json").exists() and (run_dir / "ir" / "ir.json").exists()
@@ -100,7 +95,6 @@ def evaluate_release(run_dir: Path) -> dict[str, Any]:
     all_hard = all(gates.values())
     state = ReleaseState.RC_READY if all_hard else ReleaseState.BLOCKED
     now = datetime.now(timezone.utc).isoformat()
-
     report = {
         "schema": "release_state_v4",
         "generated_at": now,
@@ -116,7 +110,6 @@ def evaluate_release(run_dir: Path) -> dict[str, Any]:
     release_dir = run_dir / "release"
     release_dir.mkdir(parents=True, exist_ok=True)
     (release_dir / "state.json").write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-
     release_manifest = {
         "schema": "release_manifest_v3",
         "release_id": run_dir.name,
@@ -130,7 +123,6 @@ def evaluate_release(run_dir: Path) -> dict[str, Any]:
         "diff_digest": _sha256(run_dir / "reports" / "diff" / "latest.json"),
         "quality_digest": _sha256(run_dir / "quality.json"),
         "metrics_digest": _sha256(run_dir / "metrics" / "metrics.json"),
-        "cas_manifest_digest": _sha256(cas_manifest),
         "client_digests": {client: _dir_sha256(artifacts_root / client) for client in sorted(required_clients)},
         "v2_runtime_dependency": 0,
     }
