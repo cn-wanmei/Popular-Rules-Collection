@@ -19,7 +19,7 @@ def test_304_reuses_verified_local_cache(tmp_path: Path) -> None:
         "etag": '"abc"',
         "sha256": hashlib.sha256(content).hexdigest(),
         "size": len(content),
-        "local": str(cached),
+        "local": "backup/2026-09-02/sources/demo/apple.yaml",
     }
     result = FetchResult(
         ok=True, source_id="demo", path="rule/apple.yaml", name="apple.yaml",
@@ -41,7 +41,7 @@ def test_304_with_corrupt_cache_refetches_without_validators(tmp_path: Path) -> 
     cached.parent.mkdir(parents=True)
     cached.write_bytes(b"corrupt")
     good = b"fresh\n"
-    previous = {"etag": '"abc"', "sha256": hashlib.sha256(b"expected\n").hexdigest(), "local": str(cached)}
+    previous = {"etag": '"abc"', "sha256": hashlib.sha256(b"expected\n").hexdigest(), "local": "backup/old/demo.txt"}
     first = FetchResult(ok=True, source_id="", path="x", name="demo.txt", url="u", status_code=304, not_modified=True, headers={})
     second = FetchResult(ok=True, source_id="", path="x", name="demo.txt", url="u", content=good, status_code=200, headers={})
     second.compute_hash()
@@ -52,7 +52,7 @@ def test_304_with_corrupt_cache_refetches_without_validators(tmp_path: Path) -> 
     assert out["sha256"] == hashlib.sha256(good).hexdigest()
 
 
-def test_collect_source_stably_sorts_concurrent_results(tmp_path: Path) -> None:
+def test_collect_source_stably_sorts_concurrent_results_and_persists_relative_cache_path(tmp_path: Path) -> None:
     day_dir = tmp_path / "backup" / "2026-09-02"
     health: dict = {}
     state = FetchStateStore(tmp_path / "state.json")
@@ -71,8 +71,10 @@ def test_collect_source_stably_sorts_concurrent_results(tmp_path: Path) -> None:
         def fetch_one(self, entry):
             return results[entry["name"].split(".")[0]]
 
-    with patch("scripts.collect.get_fetcher", return_value=FakeFetcher()):
+    with patch("scripts.collect.get_fetcher", return_value=FakeFetcher()), patch("scripts.collect.ROOT", tmp_path):
         report = collect_source(src, day_dir, health, state, 2)
     assert [x["name"] for x in report["files"]] == ["a.txt", "b.txt"]
     assert report["concurrency_workers"] == 2
     assert report["files_ok"] == 2
+    assert state.get("demo::a")["local"] == "backup/2026-09-02/sources/demo/a.txt"
+    assert state.get("demo::b")["local"] == "backup/2026-09-02/sources/demo/b.txt"
