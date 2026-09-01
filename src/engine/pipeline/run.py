@@ -1,11 +1,8 @@
 """Engine Pipeline — one immutable V3 run from snapshot to release.
 
-HARD ORDER:
-  snapshot → ingest → quarantine → canonical → hierarchy
-  → ir → adapters → diff → golden → release
-
-Every production run uses one run_id and one snapshot_id. Publish is a
-separate release-gated promotion operation.
+Every production run uses one run_id and one snapshot_id. Publication is a
+separate release-gated promotion operation; the Diff baseline is advanced only
+after the published artifact set has been successfully promoted.
 """
 from __future__ import annotations
 
@@ -21,7 +18,7 @@ from src.engine.canonical.store import build_canonical
 from src.engine.hierarchy.resolver import build_hierarchy
 from src.engine.ir.builder import build_ir
 from src.engine.adapters.build_all import build_all_clients
-from src.engine.diff.engine import run_diff, promote_baseline
+from src.engine.diff.engine import run_diff
 from src.engine.golden.runner import run_golden
 from src.engine.release.state_machine import evaluate_release
 
@@ -66,15 +63,13 @@ def run_pipeline(
         )
 
     persist()
-
     snapshot_manifest: dict[str, Any] | None = None
     ingest_result: dict[str, Any] | None = None
     clean_payload: dict[str, Any] | None = None
 
     if "snapshot" in wanted:
-        snap_dir = data_root / "snapshots"
         snapshot_manifest = create_source_snapshot(
-            sources_root, snap_dir, extra_meta={"run_id": run_id}
+            sources_root, data_root / "snapshots", extra_meta={"run_id": run_id}
         )
         (run_dir / "snapshot_id.txt").write_text(snapshot_manifest["snapshot_id"], encoding="utf-8")
         results["snapshot_id"] = snapshot_manifest["snapshot_id"]
@@ -84,8 +79,7 @@ def run_pipeline(
     if "ingest" in wanted:
         if snapshot_manifest is None:
             raise RuntimeError("ingest requires snapshot")
-        snap_path = data_root / "snapshots" / snapshot_manifest["snapshot_id"]
-        ingest_result = ingest_snapshot(snap_path)
+        ingest_result = ingest_snapshot(data_root / "snapshots" / snapshot_manifest["snapshot_id"])
         results["stages"]["ingest"] = {
             "status": "ok",
             "records": ingest_result["stats"]["records"],
@@ -177,10 +171,6 @@ def run_pipeline(
             results["finished_at"] = datetime.now(timezone.utc).isoformat()
             persist()
             return results
-
-        baseline = data_root / "baseline" / "canonical.json"
-        promote_baseline(run_dir / "canonical", baseline)
-        results["baseline_promoted"] = str(baseline)
 
     results["finished_at"] = datetime.now(timezone.utc).isoformat()
     results["status"] = "ok"
