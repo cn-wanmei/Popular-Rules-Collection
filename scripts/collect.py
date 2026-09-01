@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -106,22 +107,17 @@ def _fetch_entry(src_id: str, cfg: dict[str, Any], entry: dict[str, str], previo
         if cached_path and cached_path.is_file():
             content = cached_path.read_bytes()
             sha = previous.get("sha256")
-            if sha:
-                import hashlib
-                if hashlib.sha256(content).hexdigest() != sha:
-                    cached_path = None
+            if sha and hashlib.sha256(content).hexdigest() != sha:
+                cached_path = None
             if cached_path:
                 return {**meta, "status": "not_modified", "content": content,
-                        "cached_from": str(cached_path.relative_to(ROOT)),
-                        "sha256": sha, "size": len(content)}
-        # 304 without a valid local cache: retry once without validators.
+                        "cached_from": str(cached_path.relative_to(ROOT)), "sha256": sha,
+                        "size": len(content)}
         result = fetcher.fetch_one(entry)
         result.source_id = src_id
-        meta.update({
-            "status_code": result.status_code,
-            "etag": result.headers.get("etag") or meta.get("etag"),
-            "last_modified": result.headers.get("last-modified") or meta.get("last_modified"),
-        })
+        meta.update({"status_code": result.status_code,
+                     "etag": result.headers.get("etag") or meta.get("etag"),
+                     "last_modified": result.headers.get("last-modified") or meta.get("last_modified")})
 
     if not result.ok or not result.content:
         return {**meta, "status": "failed", "error": result.error}
@@ -163,8 +159,10 @@ def collect_source(src: dict[str, Any], day_dir: Path, health: dict[str, Any], s
             meta = {k: v for k, v in item.items() if k != "content"}
             meta["local"] = str(local.relative_to(day_dir))
             files_meta.append(meta)
+            # Persist repository-relative paths so cached state survives fresh CI runners.
             state.put(_cache_key(sid, item["path"]), etag=item.get("etag"), last_modified=item.get("last_modified"),
-                      sha256=item.get("sha256"), size=len(content), local=str(local))
+                      sha256=item.get("sha256") or hashlib.sha256(content).hexdigest(), size=len(content),
+                      local=str(local.relative_to(ROOT)))
         else:
             fail += status != "blocked_empty"
             empty_blocked += status == "blocked_empty"
