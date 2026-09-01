@@ -21,15 +21,13 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install deps
-        run: pip install pyyaml requests
-      - name: Schema validate
-        run: python scripts/schema_validate.py
+        run: pip install -r requirements.txt
+      - name: Naming gate (HARD)
+        run: PYTHONPATH=. python -m src.engine.cli naming_gate
+      - name: Engine unit + contract tests
+        run: PYTHONPATH=. python -m pytest tests/engine/ -v --tb=short
       - name: IP registry validate
         run: python scripts/validate_ip_registry.py
-      - name: Validate
-        run: python scripts/validate.py
-      - name: Builder validate
-        run: python scripts/builder_validate.py
       - name: Icon validate (soft)
         continue-on-error: true
         run: python scripts/icon_validate.py
@@ -37,3 +35,5 @@ jobs:
         run: |
           python scripts/dataset_diff.py
           python scripts/dataset_quality.py
+      - name: Generated size gate (HARD)
+        run: python scripts/size_gate.py

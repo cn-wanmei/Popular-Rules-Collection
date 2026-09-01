@@ -1,10 +1,8 @@
-"""Engine Pipeline — full independent V3 order.
+"""Engine Pipeline — one immutable V3 run from snapshot to release.
 
-HARD ORDER:
-  snapshot → ingest → quarantine → canonical
-  → hierarchy → decision/ir → adapters
-  → diff → golden → release
-  (publish only when release state == RC_READY)
+Every production run uses one run_id and one snapshot_id. Publication is a
+separate release-gated promotion operation; the Diff baseline is advanced only
+after the published artifact set has been successfully promoted.
 """
 from __future__ import annotations
 
@@ -25,21 +23,13 @@ from src.engine.golden.runner import run_golden
 from src.engine.release.state_machine import evaluate_release
 
 STAGES = [
-    "snapshot",
-    "ingest",
-    "quarantine",
-    "canonical",
-    "hierarchy",
-    "ir",
-    "adapters",
-    "diff",
-    "golden",
-    "release",
+    "snapshot", "ingest", "quarantine", "canonical", "hierarchy",
+    "ir", "adapters", "diff", "golden", "release",
 ]
 
 
 def _new_run_id() -> str:
-    return datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ") + "-run"
+    return datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ") + "-run"
 
 
 def run_pipeline(
@@ -48,51 +38,62 @@ def run_pipeline(
     *,
     run_id: str | None = None,
     stages: list[str] | None = None,
+    skip_large: bool = False,
 ) -> dict[str, Any]:
     data_root = Path(data_root)
     sources_root = Path(sources_root)
     run_id = run_id or _new_run_id()
     run_dir = data_root / "runs" / run_id
-    run_dir.mkdir(parents=True, exist_ok=True)
+    run_dir.mkdir(parents=True, exist_ok=False)
 
     wanted = stages or STAGES
+    if wanted != STAGES and wanted != STAGES[: len(wanted)]:
+        raise ValueError("Stages must be a contiguous prefix of the V3 pipeline")
+
     results: dict[str, Any] = {
+        "schema": "engine_run_v1",
         "run_id": run_id,
         "started_at": datetime.now(timezone.utc).isoformat(),
         "stages": {},
+        "skip_large": skip_large,
         "v2_runtime_dependency": 0,
     }
-    # Write early so Golden L7 / Release can see the flag
-    (run_dir / "run_manifest.json").write_text(
-        json.dumps(results, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
-    )
 
-    snapshot_manifest = None
-    ingest_result = None
-    clean_payload = None
+    def persist() -> None:
+        (run_dir / "run_manifest.json").write_text(
+            json.dumps(results, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+        )
+
+    persist()
+    snapshot_manifest: dict[str, Any] | None = None
+    ingest_result: dict[str, Any] | None = None
+    clean_payload: dict[str, Any] | None = None
 
     if "snapshot" in wanted:
-        snap_dir = data_root / "snapshots"
         snapshot_manifest = create_source_snapshot(
-            sources_root, snap_dir, extra_meta={"run_id": run_id}
+            sources_root, data_root / "snapshots", extra_meta={"run_id": run_id, "skip_large": skip_large}
         )
         (run_dir / "snapshot_id.txt").write_text(snapshot_manifest["snapshot_id"], encoding="utf-8")
+        results["snapshot_id"] = snapshot_manifest["snapshot_id"]
         results["stages"]["snapshot"] = {"status": "ok", "snapshot_id": snapshot_manifest["snapshot_id"]}
+        persist()
 
     if "ingest" in wanted:
-        if not snapshot_manifest:
+        if snapshot_manifest is None:
             raise RuntimeError("ingest requires snapshot")
-        snap_path = data_root / "snapshots" / snapshot_manifest["snapshot_id"]
-        ingest_result = ingest_snapshot(snap_path)
-        (run_dir / "ingest").mkdir(exist_ok=True)
+        ingest_result = ingest_snapshot(
+            data_root / "snapshots" / snapshot_manifest["snapshot_id"],
+            skip_large=skip_large,
+        )
         results["stages"]["ingest"] = {
             "status": "ok",
             "records": ingest_result["stats"]["records"],
             "errors": ingest_result["stats"]["errors"],
         }
+        persist()
 
     if "quarantine" in wanted:
-        if not ingest_result:
+        if ingest_result is None:
             raise RuntimeError("quarantine requires ingest")
         clean_payload = run_quarantine(ingest_result, run_dir / "quarantine")
         results["stages"]["quarantine"] = {
@@ -100,48 +101,83 @@ def run_pipeline(
             "clean": clean_payload["stats"]["records"],
             "quarantined": clean_payload["stats"]["quarantined"],
         }
+        persist()
 
     if "canonical" in wanted:
-        if not clean_payload:
+        if clean_payload is None:
             raise RuntimeError("canonical requires quarantine")
         can_manifest = build_canonical(clean_payload, run_dir / "canonical")
         results["stages"]["canonical"] = {
             "status": "ok",
             "unique_rules": can_manifest["unique_rules"],
             "memberships": can_manifest["memberships"],
+            "errors": can_manifest["errors"],
         }
+        persist()
+        if can_manifest["unique_rules"] == 0:
+            raise RuntimeError("canonical produced zero rules")
 
     if "hierarchy" in wanted:
         h_manifest = build_hierarchy(run_dir / "canonical", run_dir / "hierarchy")
-        results["stages"]["hierarchy"] = {"status": "ok", **{k: h_manifest[k] for k in ("service_count", "group_count", "aggregate_count") if k in h_manifest}}
+        results["stages"]["hierarchy"] = {
+            "status": "ok",
+            **{k: h_manifest[k] for k in ("service_count", "group_count", "aggregate_count") if k in h_manifest},
+        }
+        persist()
 
     if "ir" in wanted:
         ir_manifest = build_ir(run_dir / "canonical", run_dir / "hierarchy", run_dir / "ir")
         results["stages"]["ir"] = {"status": "ok", "stats": ir_manifest.get("stats")}
+        persist()
 
     if "adapters" in wanted:
         art_report = build_all_clients(run_dir / "canonical", run_dir / "artifacts")
-        results["stages"]["adapters"] = {"status": "ok", "clients": list(art_report.get("clients", {}).keys())}
+        results["stages"]["adapters"] = {
+            "status": "ok", "clients": list(art_report.get("clients", {}).keys())
+        }
+        persist()
 
     if "diff" in wanted:
-        diff_report = run_diff(run_dir / "canonical", None, run_dir / "reports" / "diff")
-        results["stages"]["diff"] = {"status": "ok", "added": diff_report["added"]}
+        baseline = data_root / "baseline" / "canonical.json"
+        diff_report = run_diff(
+            run_dir / "canonical",
+            baseline if baseline.exists() else None,
+            run_dir / "reports" / "diff",
+        )
+        results["stages"]["diff"] = {
+            "status": "ok",
+            "added": diff_report["added"],
+            "removed": diff_report["removed"],
+            "changed": diff_report["changed"],
+            "baseline": str(baseline) if baseline.exists() else None,
+        }
+        persist()
 
     if "golden" in wanted:
         golden = run_golden(run_dir)
         results["stages"]["golden"] = {"status": "ok", "all_pass": golden["all_pass"]}
+        persist()
+        if not golden["all_pass"]:
+            results["status"] = "blocked"
+            results["finished_at"] = datetime.now(timezone.utc).isoformat()
+            persist()
+            return results
 
     if "release" in wanted:
+        persist()
         release = evaluate_release(run_dir)
         results["stages"]["release"] = {
-            "status": "ok",
+            "status": "ok" if release["can_publish"] else "blocked",
             "state": release["state"],
             "can_publish": release["can_publish"],
         }
+        if release["state"] != "RC_READY":
+            results["status"] = "blocked"
+            results["finished_at"] = datetime.now(timezone.utc).isoformat()
+            persist()
+            return results
 
     results["finished_at"] = datetime.now(timezone.utc).isoformat()
     results["status"] = "ok"
-    (run_dir / "run_manifest.json").write_text(
-        json.dumps(results, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
-    )
+    persist()
     return results
