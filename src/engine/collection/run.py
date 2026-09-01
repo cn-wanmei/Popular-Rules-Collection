@@ -32,62 +32,16 @@ class CollectionSpec:
 
 
 COLLECTION_SPECS = (
-    CollectionSpec(
-        "validate_registry",
-        (sys.executable, "scripts/validate_registry.py"),
-    ),
-    CollectionSpec(
-        "service_rules",
-        (sys.executable, "scripts/collect.py"),
-        deps=("validate_registry",),
-        critical=True,
-    ),
-    CollectionSpec(
-        "validate_ip_registry",
-        (sys.executable, "scripts/validate_ip_registry.py"),
-        critical=True,
-    ),
-    CollectionSpec(
-        "ip_rules",
-        (sys.executable, "scripts/collect_ip.py"),
-        deps=("validate_ip_registry",),
-        critical=False,
-    ),
-    CollectionSpec(
-        "validate_dataset_registry",
-        (sys.executable, "scripts/validate_dataset_registry.py"),
-        critical=True,
-    ),
-    CollectionSpec(
-        "network_lan",
-        (sys.executable, "scripts/build_network_lan.py"),
-        deps=("validate_dataset_registry",),
-        critical=True,
-    ),
-    CollectionSpec(
-        "datasets",
-        (sys.executable, "scripts/collect_datasets.py"),
-        deps=("validate_dataset_registry", "network_lan"),
-        critical=False,
-    ),
-    CollectionSpec(
-        "network_datasets",
-        (sys.executable, "scripts/build_network_datasets.py"),
-        deps=("datasets",),
-        critical=False,
-    ),
-    CollectionSpec(
-        "providers",
-        (sys.executable, "scripts/collect_providers.py"),
-        deps=("validate_dataset_registry",),
-        critical=False,
-    ),
-    CollectionSpec(
-        "provider_datasets",
-        (sys.executable, "scripts/build_provider_datasets.py"),
-        deps=("providers",),
-        critical=False,
-    ),
+    CollectionSpec("validate_registry", (sys.executable, "scripts/validate_registry.py")),
+    CollectionSpec("service_rules", (sys.executable, "scripts/collect.py"), deps=("validate_registry",), critical=True),
+    CollectionSpec("validate_ip_registry", (sys.executable, "scripts/validate_ip_registry.py"), critical=True),
+    CollectionSpec("ip_rules", (sys.executable, "scripts/collect_ip.py"), deps=("validate_ip_registry",), critical=False),
+    CollectionSpec("validate_dataset_registry", (sys.executable, "scripts/validate_dataset_registry.py"), critical=True),
+    CollectionSpec("network_lan", (sys.executable, "scripts/build_network_lan.py"), deps=("validate_dataset_registry",), critical=True),
+    CollectionSpec("datasets", (sys.executable, "scripts/collect_datasets.py"), deps=("validate_dataset_registry", "network_lan"), critical=False),
+    CollectionSpec("network_datasets", (sys.executable, "scripts/build_network_datasets.py"), deps=("datasets",), critical=False),
+    CollectionSpec("providers", (sys.executable, "scripts/collect_providers.py"), deps=("validate_dataset_registry",), critical=False),
+    CollectionSpec("provider_datasets", (sys.executable, "scripts/build_provider_datasets.py"), deps=("providers",), critical=False),
 )
 
 COLLECTION_NODES = [Node(spec.name, spec.deps) for spec in COLLECTION_SPECS]
@@ -104,12 +58,11 @@ def _tail(text: str, limit: int = 4000) -> str:
 
 def _run_leaf(spec: CollectionSpec, *, date: str, skip_large: bool) -> dict[str, Any]:
     cmd = list(spec.command)
-    env = None
     if spec.name == "service_rules":
         cmd.extend(("--date", date))
     if skip_large and spec.name == "service_rules":
-        # collect.py itself has no semantic skip-large flag; Engine handles
-        # mega-list filtering later. Keep the flag visible in the manifest.
+        # collect.py has no service-level skip-large flag; the immutable
+        # Engine run applies the policy to the parsed snapshot.
         pass
 
     started = time.monotonic()
@@ -120,7 +73,6 @@ def _run_leaf(spec: CollectionSpec, *, date: str, skip_large: bool) -> dict[str,
             completed = subprocess.run(
                 cmd,
                 cwd=ROOT,
-                env=env,
                 capture_output=True,
                 text=True,
                 encoding="utf-8",
@@ -128,14 +80,15 @@ def _run_leaf(spec: CollectionSpec, *, date: str, skip_large: bool) -> dict[str,
                 timeout=spec.timeout_seconds,
                 check=False,
             )
-            record = {
-                "attempt": attempt,
-                "started_at": attempt_started,
-                "returncode": completed.returncode,
-                "stdout_tail": _tail(completed.stdout),
-                "stderr_tail": _tail(completed.stderr),
-            }
-            attempts.append(record)
+            attempts.append(
+                {
+                    "attempt": attempt,
+                    "started_at": attempt_started,
+                    "returncode": completed.returncode,
+                    "stdout_tail": _tail(completed.stdout),
+                    "stderr_tail": _tail(completed.stderr),
+                }
+            )
             if completed.returncode == 0:
                 return {
                     "status": "ok",
@@ -188,6 +141,12 @@ def _collection_id(date: str, results: dict[str, Any]) -> str:
     return f"{date}-{digest}"
 
 
+def _manifest_digest(manifest: dict[str, Any]) -> str:
+    payload = {k: v for k, v in manifest.items() if k != "manifest_sha256"}
+    canonical = json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+
+
 def run_collection(
     data_root: Path,
     *,
@@ -195,23 +154,21 @@ def run_collection(
     skip_large: bool = False,
 ) -> dict[str, Any]:
     """Run the Collection DAG and write one day-level immutable manifest."""
-    data_root = Path(data_root)
+    del data_root  # Collection artifacts intentionally live under repository backup/.
     date = date or datetime.now(timezone.utc).strftime("%Y-%m-%d")
     day_dir = ROOT / "backup" / date
     day_dir.mkdir(parents=True, exist_ok=True)
     manifest_dir = day_dir / "manifests"
     manifest_dir.mkdir(parents=True, exist_ok=True)
 
-    context: dict[str, Any] = {}
+    handlers = {}
+    for spec in COLLECTION_SPECS:
+        def make_handler(current: CollectionSpec):
+            def _handler() -> dict[str, Any]:
+                return _run_leaf(current, date=date, skip_large=skip_large)
+            return _handler
+        handlers[spec.name] = make_handler(spec)
 
-    def handler_for(spec: CollectionSpec):
-        def _handler() -> dict[str, Any]:
-            result = _run_leaf(spec, date=date, skip_large=skip_large)
-            context[spec.name] = result
-            return result
-        return _handler
-
-    handlers = {spec.name: handler_for(spec) for spec in COLLECTION_SPECS}
     result_map = execute(
         COLLECTION_NODES,
         handlers,
@@ -230,7 +187,7 @@ def run_collection(
         if not _SPEC_BY_NAME[name].critical and value.get("status") != "ok"
     ]
     collection_id = _collection_id(date, result_map)
-    manifest = {
+    manifest: dict[str, Any] = {
         "schema": "collection_manifest_v1",
         "collection_id": collection_id,
         "date": date,
@@ -251,13 +208,10 @@ def run_collection(
             for name, value in sorted(result_map.items())
         },
     }
+    manifest["manifest_sha256"] = _manifest_digest(manifest)
     payload = json.dumps(manifest, indent=2, ensure_ascii=False) + "\n"
     manifest_path = manifest_dir / "_collection.json"
     temp = manifest_path.with_name("._collection.json.tmp")
     temp.write_text(payload, encoding="utf-8")
     temp.replace(manifest_path)
-
-    manifest["manifest_sha256"] = hashlib.sha256(manifest_path.read_bytes()).hexdigest()
-    manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-
     return manifest
