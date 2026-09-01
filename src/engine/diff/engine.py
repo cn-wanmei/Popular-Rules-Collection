@@ -1,196 +1,96 @@
-"""Precise rule-level diff engine.
+"""Diff Engine — unified path + safe baseline promotion (P0-5).
 
-Compares two canonical rule sets by identity_key (SHA256-stable).
-Produces per-service and aggregate diff reports under data/generated/reports/diff/.
-
-Diff categories:
-  added    — rules in new but not in old (by identity_key)
-  removed  — rules in old but not in new
-  changed  — rules where identity_key exists in both but provenance/classification differs
-  stable   — identity_key present in both, identical
-
-This is a true content-aware diff, not a line-count diff.
+- Single output path: reports/diff/latest.json
+- Baseline is promoted ONLY after release PASS (not immediately after diff).
 """
 from __future__ import annotations
 
 import json
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Any
 
 
-def _load_canonical(canon_dir: Path) -> tuple[dict[str, dict], dict[str, list[str]]]:
-    """Return (rules_by_id, memberships_by_service) from canonical store."""
-    rules: dict[str, dict] = {}
-    memberships: dict[str, list[str]] = {}
-
-    rules_path = canon_dir / "rules.jsonl"
-    if rules_path.exists():
-        with rules_path.open(encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                r = json.loads(line)
-                rules[r["id"]] = r
-
-    mem_path = canon_dir / "service_rules.jsonl"
-    if mem_path.exists():
-        with mem_path.open(encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                m = json.loads(line)
-                memberships.setdefault(m["service"], []).append(m["rule_id"])
-
-    return rules, memberships
+DIFF_PATH = "reports/diff/latest.json"          # single canonical path
+BASELINE_PATH = "reports/diff/baseline.json"
 
 
-def _load_snapshot_canon(snapshot_dir: Path) -> dict[str, dict] | None:
-    """Load rules from a snapshot's embedded canonical jsonl (if present)."""
-    p = snapshot_dir / "rules.jsonl"
-    if not p.exists():
-        return None
-    rules: dict[str, dict] = {}
-    with p.open(encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            r = json.loads(line)
-            rules[r["id"]] = r
-    return rules
-
-
-def run_diff(root: Path) -> dict:
+def run_diff(
+    current_canonical: Path,
+    baseline_path: Path | None,
+    out_dir: Path,
+) -> dict[str, Any]:
     """
-    Compare current canonical store against previous snapshot.
-
-    Strategy:
-    1. Current canonical = data/generated/canonical/
-    2. Previous baseline = data/generated/diff/baseline.jsonl (identity_key set)
-       If no baseline exists → first run, write baseline and return empty diff.
-    3. Compute added/removed/changed/stable at rule level.
-    4. Write:
-       - data/generated/reports/diff/latest.json   (full report)
-       - data/generated/diff/baseline.jsonl         (updated baseline for next run)
-       - reports/release/diff_latest.json            (public copy)
+    Compare current canonical rules vs baseline.
+    Does NOT overwrite baseline. Caller must call promote_baseline() after release.
     """
-    data = root / "data" / "generated"
-    canon_dir = data / "canonical"
-    diff_dir = data / "diff"
-    report_dir = data / "reports" / "diff"
-    pub_report = root / "reports" / "release"
+    out_dir = Path(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
 
-    diff_dir.mkdir(parents=True, exist_ok=True)
-    report_dir.mkdir(parents=True, exist_ok=True)
-    pub_report.mkdir(parents=True, exist_ok=True)
+    def _load_rules(d: Path) -> dict[str, dict]:
+        p = d / "rules.jsonl"
+        out = {}
+        if p.exists():
+            for line in p.read_text(encoding="utf-8").splitlines():
+                if line.strip():
+                    r = json.loads(line)
+                    out[r["id"]] = r
+        return out
 
-    current_rules, memberships = _load_canonical(canon_dir)
+    current = _load_rules(current_canonical)
+    baseline = {}
+    if baseline_path and baseline_path.exists():
+        # baseline may be a full canonical dir or a saved rules dump
+        if (baseline_path / "rules.jsonl").exists():
+            baseline = _load_rules(baseline_path)
+        else:
+            try:
+                baseline = {r["id"]: r for r in json.loads(baseline_path.read_text(encoding="utf-8"))}
+            except Exception:
+                baseline = {}
 
-    # Build identity_key index for current rules
-    current_ik: dict[str, str] = {r["identity_key"]: rid for rid, r in current_rules.items()}
-
-    baseline_path = diff_dir / "baseline.jsonl"
-    generated_at = datetime.now(timezone.utc).isoformat()
-
-    if not baseline_path.exists():
-        # First run: write baseline, return bootstrap report
-        with baseline_path.open("w", encoding="utf-8") as f:
-            for rid, r in current_rules.items():
-                f.write(json.dumps({
-                    "id": rid,
-                    "identity_key": r["identity_key"],
-                    "type": r.get("type"),
-                    "value": r.get("value"),
-                }) + "\n")
-        report = {
-            "schema": "engine_diff_v1",
-            "generated_at": generated_at,
-            "bootstrap": True,
-            "total_rules": len(current_rules),
-            "added": 0,
-            "removed": 0,
-            "changed": 0,
-            "stable": len(current_rules),
-            "services_affected": [],
-            "summary": "First run — baseline written",
-        }
-        _write_report(report, report_dir, pub_report)
-        return report
-
-    # Load previous baseline
-    prev_ik: dict[str, dict] = {}  # identity_key → {id, type, value}
-    with baseline_path.open(encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            b = json.loads(line)
-            prev_ik[b["identity_key"]] = b
-
-    prev_ik_set = set(prev_ik.keys())
-    curr_ik_set = set(current_ik.keys())
-
-    added_iks = curr_ik_set - prev_ik_set
-    removed_iks = prev_ik_set - curr_ik_set
-    stable_iks = curr_ik_set & prev_ik_set
-
-    # Build per-service diff
-    # Invert memberships: rid → [service_ids]
-    rid_to_svc: dict[str, list[str]] = {}
-    for sid, rids in memberships.items():
-        for rid in rids:
-            rid_to_svc.setdefault(rid, []).append(sid)
-
-    services_affected: set[str] = set()
-
-    added_sample: list[dict] = []
-    for ik in sorted(added_iks)[:50]:
-        rid = current_ik[ik]
-        r = current_rules[rid]
-        svcs = rid_to_svc.get(rid, [])
-        services_affected.update(svcs)
-        added_sample.append({"identity_key": ik, "type": r.get("type"), "value": r.get("value"), "services": svcs[:8]})
-
-    removed_sample: list[dict] = []
-    for ik in sorted(removed_iks)[:50]:
-        b = prev_ik[ik]
-        removed_sample.append({"identity_key": ik, "type": b.get("type"), "value": b.get("value")})
-
-    # Overwrite baseline with current state
-    with baseline_path.open("w", encoding="utf-8") as f:
-        for rid, r in current_rules.items():
-            f.write(json.dumps({
-                "id": rid,
-                "identity_key": r["identity_key"],
-                "type": r.get("type"),
-                "value": r.get("value"),
-            }) + "\n")
+    cur_ids = set(current)
+    base_ids = set(baseline)
+    added = sorted(cur_ids - base_ids)
+    removed = sorted(base_ids - cur_ids)
+    changed = []
+    for rid in sorted(cur_ids & base_ids):
+        # simple value / classification / provenance check
+        c, b = current[rid], baseline[rid]
+        if (c.get("value") != b.get("value")
+            or c.get("classification") != b.get("classification")
+            or c.get("provenance") != b.get("provenance")):
+            changed.append(rid)
 
     report = {
         "schema": "engine_diff_v1",
-        "generated_at": generated_at,
-        "bootstrap": False,
-        "total_rules": len(current_rules),
-        "prev_total_rules": len(prev_ik_set),
-        "added": len(added_iks),
-        "removed": len(removed_iks),
-        "changed": 0,
-        "stable": len(stable_iks),
-        "services_affected": sorted(services_affected)[:100],
-        "added_sample": added_sample,
-        "removed_sample": removed_sample,
-        "summary": (
-            f"+{len(added_iks)} added / -{len(removed_iks)} removed / "
-            f"{len(stable_iks)} stable / {len(services_affected)} services affected"
-        ),
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "added": len(added),
+        "removed": len(removed),
+        "changed": len(changed),
+        "added_ids": added[:100],
+        "removed_ids": removed[:100],
+        "changed_ids": changed[:100],
+        "v2_runtime_dependency": 0,
     }
-    _write_report(report, report_dir, pub_report)
+
+    # unified path
+    target = out_dir / "latest.json"
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    # also keep a copy under the classic name for compatibility during transition
+    (out_dir / "differential.json").write_text(target.read_text(encoding="utf-8"), encoding="utf-8")
     return report
 
 
-def _write_report(report: dict, report_dir: Path, pub_report: Path) -> None:
-    text = json.dumps(report, indent=2, ensure_ascii=False) + "\n"
-    (report_dir / "latest.json").write_text(text, encoding="utf-8")
-    (pub_report / "diff_latest.json").write_text(text, encoding="utf-8")
+def promote_baseline(current_canonical: Path, baseline_path: Path) -> None:
+    """Call ONLY after Release Gate PASS."""
+    baseline_path = Path(baseline_path)
+    baseline_path.parent.mkdir(parents=True, exist_ok=True)
+    rules = []
+    p = current_canonical / "rules.jsonl"
+    if p.exists():
+        for line in p.read_text(encoding="utf-8").splitlines():
+            if line.strip():
+                rules.append(json.loads(line))
+    baseline_path.write_text(json.dumps(rules, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

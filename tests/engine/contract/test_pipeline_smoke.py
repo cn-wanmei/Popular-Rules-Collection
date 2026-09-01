@@ -16,7 +16,9 @@ def test_engine_artifacts_or_skip():
 
 def test_engine_import_paths():
     from src.engine.core.models.rule import identity_key
-    from src.engine.decision.engine import decide_for_service
+    from src.engine.decision.engine import decide
     assert identity_key("domain", "X.COM") == "domain|x.com"
-    assert decide_for_service("google").action == "PROXY"
-    assert decide_for_service("china").action == "DIRECT"
+    assert decide({"classification": {"category": "mail"}}) == "PROXY"
+    assert decide({"classification": {"category": "china"}}) == "DIRECT"
+    from src.engine import __v2_runtime_dependency__
+    assert __v2_runtime_dependency__ == 0

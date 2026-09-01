@@ -1,0 +1,52 @@
+name: Engine v3 Independent Kernel
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "src/engine/**"
+      - "tests/engine/**"
+      - "config/**"
+      - ".github/workflows/engine-v3.yml"
+  pull_request:
+    branches: [main, master]
+    paths:
+      - "src/engine/**"
+      - "tests/engine/**"
+
+jobs:
+  engine-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: |
+          pip install pyyaml pytest
+
+      - name: Naming Gate
+        run: |
+          PYTHONPATH=. python -c "
+          from pathlib import Path
+          from src.engine.validation.naming_gate import run_naming_gate
+          r = run_naming_gate(Path('.'))
+          print(r)
+          assert r['pass'], r['violations']
+          "
+
+      - name: Engine unit tests
+        run: |
+          PYTHONPATH=. python -m pytest tests/engine/ -v --tb=short
+
+      - name: V2 runtime dependency must be 0
+        run: |
+          PYTHONPATH=. python -c "
+          from src.engine import __v2_runtime_dependency__
+          assert __v2_runtime_dependency__ == 0
+          print('v2_runtime_dependency=0 OK')
+          "

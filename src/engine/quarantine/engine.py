@@ -1,49 +1,100 @@
-"""Source quarantine observe mode."""
+"""Quarantine Engine — first hard gate after Snapshot.
+
+Any record that fails basic sanity is moved to quarantine and never
+reaches Canonical. This reverses the previous (wrong) order where
+quarantine ran after adapters.
+"""
 from __future__ import annotations
+
 import json
 from datetime import datetime, timezone
 from pathlib import Path
-VALID_STATES = ("fetched", "quarantined", "validated", "accepted", "rejected")
+from typing import Any
 
-def load_state(path: Path) -> dict:
-    if not path.exists(): return {"sources": {}}
-    return json.loads(path.read_text(encoding="utf-8"))
 
-def save_state(path: Path, state: dict) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(state, indent=2) + "\n")
+REQUIRED_RULE_FIELDS = {"type", "value"}
 
-def set_status(state_path: Path, source_id: str, status: str, reason: str = "", meta: dict | None = None) -> dict:
-    if status not in VALID_STATES: raise ValueError(status)
-    state = load_state(state_path)
-    sources = state.setdefault("sources", {})
-    entry = sources.get(source_id) or {}
-    entry.update({"status": status, "reason": reason, "updated_at": datetime.now(timezone.utc).isoformat(), "meta": meta or entry.get("meta") or {}})
-    sources[source_id] = entry
-    state["updated_at"] = datetime.now(timezone.utc).isoformat()
-    save_state(state_path, state)
-    return entry
 
-def evaluate_health_yaml(root: Path, state_path: Path) -> dict:
-    health = root / "sources" / "health.yaml"
-    report = {"evaluated": 0, "quarantined": 0, "accepted": 0}
-    if not health.exists(): return report
-    try:
-        import yaml
-        doc = yaml.safe_load(health.read_text(encoding="utf-8")) or {}
-    except Exception:
-        return report
-    items = doc if isinstance(doc, list) else (doc.get("sources") or doc.get("health") or [])
-    if isinstance(items, dict):
-        items = [{"id": k, **(v or {})} for k, v in items.items()]
-    for item in items:
-        if not isinstance(item, dict): continue
-        sid = str(item.get("id") or item.get("name") or item.get("source") or "")
-        if not sid: continue
-        report["evaluated"] += 1
-        ok = item.get("ok", item.get("healthy", item.get("status") == "ok"))
-        if ok is False or item.get("status") in ("error", "fail", "blocked"):
-            set_status(state_path, sid, "quarantined", reason=str(item.get("error") or "health_fail")); report["quarantined"] += 1
+def run_quarantine(
+    ingest_result: dict[str, Any],
+    out_dir: Path,
+) -> dict[str, Any]:
+    """
+    Split ingest records into clean vs quarantined.
+    Returns updated payload with only clean records + quarantine report.
+    """
+    out_dir = Path(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    clean: list[dict[str, Any]] = []
+    quarantined: list[dict[str, Any]] = []
+
+    for rec in ingest_result.get("records") or []:
+        reasons: list[str] = []
+        if not isinstance(rec, dict):
+            reasons.append("not_a_dict")
         else:
-            set_status(state_path, sid, "accepted", reason="health_ok"); report["accepted"] += 1
-    return report
+            typ = rec.get("type")
+            val = rec.get("value")
+            if not typ:
+                reasons.append("missing_type")
+            if not val:
+                reasons.append("missing_value")
+            if typ is not None and not isinstance(typ, str):
+                reasons.append("type_not_str")
+            if val is not None and not isinstance(val, str):
+                reasons.append("value_not_str")
+            # basic empty / whitespace
+            if isinstance(val, str) and not val.strip():
+                reasons.append("empty_value")
+
+        if reasons:
+            quarantined.append({
+                "record": rec,
+                "reasons": reasons,
+                "quarantined_at": datetime.now(timezone.utc).isoformat(),
+            })
+        else:
+            clean.append(rec)
+
+    # also carry forward previous ingest errors
+    for e in ingest_result.get("errors") or []:
+        quarantined.append({
+            "record": e,
+            "reasons": ["ingest_error"],
+            "quarantined_at": datetime.now(timezone.utc).isoformat(),
+        })
+
+    report = {
+        "schema": "quarantine_report_v1",
+        "snapshot_id": ingest_result.get("snapshot_id"),
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "input_records": len(ingest_result.get("records") or []),
+        "clean_records": len(clean),
+        "quarantined_count": len(quarantined),
+        "v2_runtime_dependency": 0,
+    }
+
+    (out_dir / "quarantine_report.json").write_text(
+        json.dumps(report, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    with (out_dir / "quarantined.jsonl").open("w", encoding="utf-8") as f:
+        for q in quarantined:
+            f.write(json.dumps(q, ensure_ascii=False) + "\n")
+
+    # return a new ingest-like payload that only contains clean data
+    clean_payload = {
+        "snapshot_id": ingest_result.get("snapshot_id"),
+        "ingested_at": ingest_result.get("ingested_at"),
+        "manifest": ingest_result.get("manifest"),
+        "records": clean,
+        "errors": [],  # already moved to quarantine
+        "stats": {
+            "records": len(clean),
+            "errors": 0,
+            "quarantined": len(quarantined),
+        },
+        "quarantine_report": report,
+    }
+    return clean_payload

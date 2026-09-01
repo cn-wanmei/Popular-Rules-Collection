@@ -1,70 +1,68 @@
 # Changelog
 
-## [1.0.0] - 2026-09-01
+## [1.0.1] — 2026-09-01
 
-### V3 Engine → `src.engine` 正式迁移 & 1.0 发布
+### Engine v3 Independent Kernel (Stabilization)
 
-#### Breaking Changes
-- 引擎包路径正式确立为 `src.engine`（代号 v3，非路径）
-- `src/v3`、`data/v3`、`config/v3`、`tests/v3`、`reports/v3` 全部移除
-- `src.v3` Python 包已不存在；所有导入路径切换至 `src.engine.*`
+**Status:** RC → Independent production kernel foundation  
+**V2 Runtime Dependency:** **0**
+
+#### Breaking / Architecture
+- Completely cut V2 runtime dependency from the Engine production path.
+- `database/services` is no longer a runtime input. It may only be consumed once via `migrate-legacy` to produce a Source Snapshot.
+- Pipeline order is now hard-enforced:
+  ```
+  snapshot → ingest → quarantine → canonical
+  → hierarchy → ir → adapters → diff → golden → release
+  ```
+- All build artifacts are isolated under `data/runs/<run_id>/` (atomic workspace).
+- Publish / promotion only allowed when Release State == `RC_READY`.
 
 #### Added
-- `src/engine/validation/naming_gate.py`：HARD 命名门，禁止 v3 路径/包重新出现
-- `src/engine/pipeline/run.py`：新增 `naming_gate` + `publish` 阶段，完整 12-stage 管道
-- `src/engine/release/cutover.py`：`publish_artifacts_to_production()` 支持 dry-run 和空文件保护
-- `tests/engine/unit/`：迁移并更新 test_resolver / test_identity / test_golden_levels
-- `tests/engine/contract/`：contract smoke 更新至 `data/generated/` 路径
+- `src/engine/ingest/` — Source Snapshot ingest (V2-free)
+- `src/engine/ingest/migrate_legacy.py` — one-time bridge from `database/services`
+- `src/engine/snapshot/` — immutable Source Snapshot
+- `src/engine/quarantine/` — quarantine **before** Canonical
+- `src/engine/canonical/` — Canonical SSOT with error recording (no silent drop)
+- `src/engine/hierarchy/` — Service / Group / Aggregate views
+- `src/engine/decision/` — Decision SSOT (no `svcs[0]`, no substring heuristics)
+- `src/engine/ir/` — full hierarchy + decisions in IR
+- `src/engine/adapters/` — 7 native client adapters with correct extensions
+- `src/engine/diff/` — unified path + safe baseline promotion
+- `src/engine/golden/` — real L1–L7 semantic gates
+- `src/engine/release/` — Release State Machine
+- `src/engine/reproducibility/` — true hash digests + run compare
+- `src/engine/promote/` — Artifact Promotion + Rollback
+- `src/engine/cli/` — formal CLI (`python -m src.engine.cli`)
+- `src/engine/validation/naming_gate.py` — permanent anti-v3-path / anti-V2-runtime gate
+- `.github/workflows/engine-v3.yml` — CI for Engine gates
+- `docs/engine/V3_INDEPENDENT_KERNEL.md`
 
-#### Fixed
-- `src/v3/__init__.py` 的 `from src.engine import *` 转发层已随旧包一并删除（根本解决，非 workaround）
-- IR builder 的 `_invert_memberships` 提取重构；`build_ir` 中 `if not full:` 嵌套条件理清
-- `snapshot/engine.py` 默认输出路径由 `data/v3/snapshots/` 修正为 `data/generated/snapshots/`
-- `golden/runner.py` 数据路径由 `data/v3/` 修正为 `data/generated/`
+#### Fixed (from 1.0.0 audit)
+- Quarantine no longer runs after adapters
+- Snapshot is no longer a post-build V2 oracle
+- Diff path unified (`latest.json` + compatibility `differential.json`)
+- Baseline promotion only after release success
+- Rule IDs use full SHA-256 (64 hex)
+- IR no longer truncates memberships or empties groups/aggregates
+- Client artifacts use native extensions (sing-box `.json`, Egern `.yaml`, …)
 
-#### Pipeline
+#### CLI
+```bash
+python -m src.engine.cli all --sources ./sources --data ./data
+python -m src.engine.cli migrate-legacy --database-services ./database/services
+python -m src.engine.cli promote --run-id <id>
+python -m src.engine.cli rollback --run-id <id>
+python -m src.engine.cli reproducibility --run-a ... --run-b ...
 ```
-naming_gate → canonical → hierarchy → ir → ir_full → adapters → diff
-→ snapshot → quarantine → golden → release → publish
-```
 
-#### Gates (全部通过)
-- naming_gate: errors=0
-- canonical: unique_rules=251728 memberships=291190
-- hierarchy: 8 aggregates resolved
-- ir: rules=7109 (focus) + 251728 (full)
-- adapters: 7 clients (egern / loon / mihomo / quantumultx / shadowrocket / singbox / surge)
-- golden: pass=True hard=0 (L1–L7)
-- release: status=RC_READY
-- publish: ok=True copied=56 files across 7 clients
+#### Migration note
+1. Run `migrate-legacy` once to freeze `database/services` into a Snapshot.
+2. Subsequent builds use only Snapshots / Engine stages.
+3. V2 build scripts under `scripts/build_*.py` remain for reference only and are not part of the Engine runtime.
 
-#### Tests
-8/8 passed (tests/engine/unit + tests/engine/contract)
+---
 
-## [1.1.0] - 2026-09-01
+## [1.0.0] — 2026-09-01 (prior)
 
-### V3 Engine 完全接管 Build — V2 脚本构建退场
-
-#### 架构变更
-- `collect.yml`：重写为 8 阶段结构化 pipeline
-  - Phase 1: Naming gate（fail-fast）
-  - Phase 2: Upstream collect（V2脚本，保留）
-  - Phase 3: Normalize + Deduplicate（V2脚本，保留）
-  - Phase 4: **V3 Engine build**（canonical→hierarchy→ir→adapters→diff→snapshot→quarantine→golden→release→publish）
-  - Phase 5-7: Validation / Reporting / Icon（软门）
-  - Phase 8: Commit with diff summary in message
-- `build.yml`：完全走 `src.engine.cli`，新增 `dry_run` 输入参数
-- `test.yml`：engine 测试优先，legacy 测试 soft
-
-#### New: Engine Diff Module (`src/engine/diff/engine.py`)
-- 基于 `identity_key`（SHA256-stable）的精准规则级 diff
-- 维护 `data/generated/diff/baseline.jsonl` 跨 run 持久化基线
-- 输出 `data/generated/reports/diff/latest.json` + `reports/release/diff_latest.json`
-- 首次运行自动 bootstrap；后续每次采集后精准报告 `+N/-M rules`
-- commit message 自动携带 diff 摘要（如 `+3/-1 rules`）
-
-#### Deprecated
-- `scripts/build_mihomo.py` 等 7 个 V2 build shim 已标记废弃
-- `config/builder_registry.yaml` 升级至 version 3，engine_entry 明确为 `python -m src.engine.cli all`
-
-#### Tests: 8/8 passed
+- Initial Engine pipeline takeover (RC). Contained residual V2 runtime coupling that is removed in 1.0.1.

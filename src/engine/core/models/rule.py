@@ -1,37 +1,38 @@
-"""Canonical Rule model."""
+"""Canonical Rule model — identity & hashing (no V2 dependency)."""
 from __future__ import annotations
+
+import hashlib
 from dataclasses import dataclass, field
 from typing import Any
 
-def normalize_value(typ: str, value: str) -> str:
-    v = (value or "").strip()
-    t = (typ or "").lower()
-    if t in ("domain", "domain_suffix", "domain_keyword"):
-        return v.lower().rstrip(".")
-    if t in ("ip_cidr", "ip_cidr6"):
-        return v.lower()
-    if t == "domain_regex":
-        return v
-    return v.lower().rstrip(".") if v else v
 
 def identity_key(typ: str, value: str) -> str:
-    return f"{(typ or '').lower()}|{normalize_value(typ, value)}"
+    """Stable identity for a rule (type + normalized value)."""
+    return f"{typ.strip().lower()}|{value.strip().lower()}"
 
-@dataclass(frozen=True)
-class RuleIdentity:
-    type: str
-    value: str
-    @property
-    def key(self) -> str:
-        return identity_key(self.type, self.value)
+
+def full_rule_id(typ: str, value: str) -> str:
+    """Full SHA-256 hex (256-bit) — no silent truncation to 64-bit."""
+    return hashlib.sha256(identity_key(typ, value).encode("utf-8")).hexdigest()
+
 
 @dataclass
-class CanonicalRule:
+class Rule:
     id: str
-    identity: RuleIdentity
+    type: str
+    value: str
+    identity_key: str
     provenance: dict[str, Any] = field(default_factory=dict)
     classification: dict[str, Any] = field(default_factory=dict)
-    def to_dict(self) -> dict:
-        return {"id": self.id, "type": self.identity.type, "value": self.identity.value,
-                "identity_key": self.identity.key, "provenance": self.provenance,
-                "classification": self.classification}
+    memberships: list[dict[str, str]] = field(default_factory=list)
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "id": self.id,
+            "type": self.type,
+            "value": self.value,
+            "identity_key": self.identity_key,
+            "provenance": self.provenance,
+            "classification": self.classification,
+            "memberships": self.memberships,
+        }
