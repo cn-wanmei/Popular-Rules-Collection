@@ -37,7 +37,7 @@ def topological_layers(nodes: list[Node]) -> list[list[str]]:
 
 def _stable(value: Any) -> Any:
     if isinstance(value, dict):
-        return {k: _stable(v) for k, v in sorted(value.items()) if k != "duration_ms"}
+        return {k: _stable(v) for k, v in sorted(value.items()) if k not in {"duration_ms", "resume"}}
     if isinstance(value, list):
         return [_stable(v) for v in value]
     return value
@@ -53,9 +53,8 @@ def _input_digest(node: Node, results: dict[str, Any], input_digests: dict[str, 
     return _digest({"task_identity": _task_identity(node), "deps": {dep: results[dep] for dep in node.deps}, "input": input_digests.get(node.name) if input_digests else None})
 
 def _with_evidence(value: Any, started: float, node: Node, input_digest: str) -> Any:
-    duration_ms = round((monotonic() - started) * 1000, 3)
     result = dict(value) if isinstance(value, dict) else {"status": "ok", "value": value}
-    result.setdefault("duration_ms", duration_ms)
+    result.setdefault("duration_ms", round((monotonic() - started) * 1000, 3))
     result["task_identity"] = _task_identity(node)
     result["contract_version"] = DAG_CONTRACT_VERSION
     result["input_digest"] = input_digest
