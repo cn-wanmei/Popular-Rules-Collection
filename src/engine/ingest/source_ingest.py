@@ -72,16 +72,18 @@ def _ingest_structured_services(
 
 
 def _resolve_collected_path(snapshot_dir: Path, local_rel: str) -> Path:
-    """Resolve collector paths both before and after Snapshot adds its own sources/."""
-    direct = snapshot_dir / local_rel
-    if direct.is_file():
-        return direct
-    if local_rel.startswith("sources/"):
-        stripped = local_rel.removeprefix("sources/")
-        nested = snapshot_dir / "sources" / stripped
-        if nested.is_file():
-            return nested
-    return direct
+    """Resolve collector paths after Snapshot adds its own sources/ boundary."""
+    rel = Path(local_rel)
+    stripped = str(rel).removeprefix("sources/") if str(rel).startswith("sources/") else str(rel)
+    candidates = [
+        snapshot_dir / str(rel),
+        snapshot_dir / "sources" / str(rel),
+        snapshot_dir / "sources" / stripped,
+    ]
+    for candidate in candidates:
+        if candidate.is_file():
+            return candidate
+    return candidates[-1]
 
 
 def _ingest_collected_snapshot(
