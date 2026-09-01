@@ -35,7 +35,10 @@ def test_pipeline_snapshot_quarantine_before_canonical():
         tmp = Path(td)
         sources = _prepare_sources(tmp)
         data = tmp / "data"
-        result = run_pipeline(sources, data)
+        # This fixture intentionally contains a quarantined record. Stop at canonical
+        # so P1.5 quality policy does not turn an intentionally dirty fixture into a
+        # release candidate while we verify stage ordering and quarantine behavior.
+        result = run_pipeline(sources, data, stages=STAGES[: STAGES.index("canonical") + 1])
 
         assert result["v2_runtime_dependency"] == 0
         assert result["status"] == "ok"
@@ -43,11 +46,9 @@ def test_pipeline_snapshot_quarantine_before_canonical():
         assert "quarantine" in result["stages"]
         assert "canonical" in result["stages"]
 
-        # quarantine caught the bad rule
         assert result["stages"]["quarantine"]["quarantined"] >= 1
         assert result["stages"]["canonical"]["unique_rules"] == 2
 
-        # artifacts live under runs/<run_id>/
         run_id = result["run_id"]
         run_dir = data / "runs" / run_id
         assert (run_dir / "run_manifest.json").exists()
@@ -55,7 +56,6 @@ def test_pipeline_snapshot_quarantine_before_canonical():
         assert (run_dir / "canonical" / "manifest.json").exists()
         assert (run_dir / "canonical" / "errors.jsonl").exists()
 
-        # snapshot exists and is referenced
         snap_id = result["stages"]["snapshot"]["snapshot_id"]
         assert (data / "snapshots" / snap_id / "manifest.json").exists()
 
