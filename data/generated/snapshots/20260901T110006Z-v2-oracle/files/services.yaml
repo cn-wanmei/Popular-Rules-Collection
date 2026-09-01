@@ -1,0 +1,23 @@
+version: 1
+updated: "2026-08-31"
+services:
+  google-core: {id: google-core, provider: google, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: google}
+  google-shared: {id: google-shared, provider: google, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
+  gmail: {id: gmail, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  google-search: {id: google-search, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  apple-core: {id: apple-core, provider: apple, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: apple}
+  apple-shared: {id: apple-shared, provider: apple, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
+  icloud: {id: icloud, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  microsoft-core: {id: microsoft-core, provider: microsoft, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: microsoft}
+  microsoft-shared: {id: microsoft-shared, provider: microsoft, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
+  tencent-core: {id: tencent-core, provider: tencent, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: tencent}
+  tencent-shared: {id: tencent-shared, provider: tencent, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
+  wechat: {id: wechat, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  alibaba-core: {id: alibaba-core, provider: alibaba, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: alibaba}
+  alibaba-shared: {id: alibaba-shared, provider: alibaba, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
+  baidu-core: {id: baidu-core, provider: baidu, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: baidu}
+  baidu-shared: {id: baidu-shared, provider: baidu, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
+  amazon-core: {id: amazon-core, provider: amazon, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: amazon}
+  amazon-shared: {id: amazon-shared, provider: amazon, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
+  bytedance-core: {id: bytedance-core, provider: bytedance, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: bytedance}
+  bytedance-shared: {id: bytedance-shared, provider: bytedance, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}

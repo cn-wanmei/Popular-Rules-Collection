@@ -1,0 +1,70 @@
+{
+  "alibaba": {
+    "rules": 517,
+    "sha256": "521774540003707b5ab5876ac9ef3c6ed24ca3fbc4b142d8a6fb8b64df45a929",
+    "members": [
+      "alibaba-core",
+      "alibaba-shared"
+    ]
+  },
+  "amazon": {
+    "rules": 275,
+    "sha256": "e9830855631675820457deb8481a14b722a77745d774acaa2b27eed7dda05f48",
+    "members": [
+      "amazon-core",
+      "amazon-shared"
+    ]
+  },
+  "apple": {
+    "rules": 2011,
+    "sha256": "b8fedd8d8d76544ca38edcbd61bca6be28cad7adbdf17a119459a245d7e4417b",
+    "members": [
+      "apple-core",
+      "apple-shared",
+      "icloud"
+    ]
+  },
+  "baidu": {
+    "rules": 324,
+    "sha256": "04c4a1d886a201d6d35f3c4a53e130632de6279cd191621584287b76c7c29e41",
+    "members": [
+      "baidu-core",
+      "baidu-shared"
+    ]
+  },
+  "bytedance": {
+    "rules": 1081,
+    "sha256": "9d9395973b4589f4a771c441b5c700c95f100bfef19057217d6c6e99d439e4b7",
+    "members": [
+      "bytedance-core",
+      "bytedance-shared"
+    ]
+  },
+  "google": {
+    "rules": 1210,
+    "sha256": "26a54e71cd4fa3a40712e6b16c3a6130dfe65673a32eb7e790ff7e0cce4cc9f6",
+    "members": [
+      "google-core",
+      "google-shared",
+      "gmail",
+      "google-search"
+    ]
+  },
+  "microsoft": {
+    "rules": 971,
+    "sha256": "a94e3e9c846896ff1ae06343d9ca1eecbbdabc1c736330ee86ed461672565d75",
+    "members": [
+      "microsoft-core",
+      "microsoft-shared"
+    ]
+  },
+  "tencent": {
+    "rules": 722,
+    "sha256": "b57f80963f1a785a96772509886413e83ee33b60a6acbc815a21d999a6b2de12",
+    "members": [
+      "tencent-core",
+      "tencent-shared",
+      "wechat"
+    ]
+  }
+}

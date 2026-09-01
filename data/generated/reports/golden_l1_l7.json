@@ -1,0 +1,42 @@
+{
+  "results": [
+    {
+      "level": "L1_structural",
+      "pass": true,
+      "detail": "canonical + artifacts"
+    },
+    {
+      "level": "L2_semantic",
+      "pass": true,
+      "detail": "hierarchy sha256"
+    },
+    {
+      "level": "L3_behavioral",
+      "pass": true,
+      "detail": "mihomo google.list"
+    },
+    {
+      "level": "L4_hierarchical",
+      "pass": true,
+      "detail": "rules_match"
+    },
+    {
+      "level": "L5_legacy",
+      "pass": true,
+      "detail": "sha_match"
+    },
+    {
+      "level": "L6_cross_client",
+      "pass": true,
+      "detail": "7 clients"
+    },
+    {
+      "level": "L7_reproducibility",
+      "pass": true,
+      "detail": "digests"
+    }
+  ],
+  "hard_failures": 0,
+  "pass": true,
+  "schema": "engine_golden_l1_l7"
+}

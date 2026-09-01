@@ -1,0 +1,63 @@
+{
+  "compared": true,
+  "rows": [
+    {
+      "view": "alibaba",
+      "v2_rules": 517,
+      "v3_rules": 517,
+      "rules_match": true,
+      "sha_match": true
+    },
+    {
+      "view": "amazon",
+      "v2_rules": 275,
+      "v3_rules": 275,
+      "rules_match": true,
+      "sha_match": true
+    },
+    {
+      "view": "apple",
+      "v2_rules": 2011,
+      "v3_rules": 2011,
+      "rules_match": true,
+      "sha_match": true
+    },
+    {
+      "view": "baidu",
+      "v2_rules": 324,
+      "v3_rules": 324,
+      "rules_match": true,
+      "sha_match": true
+    },
+    {
+      "view": "bytedance",
+      "v2_rules": 1081,
+      "v3_rules": 1081,
+      "rules_match": true,
+      "sha_match": true
+    },
+    {
+      "view": "google",
+      "v2_rules": 1210,
+      "v3_rules": 1210,
+      "rules_match": true,
+      "sha_match": true
+    },
+    {
+      "view": "microsoft",
+      "v2_rules": 971,
+      "v3_rules": 971,
+      "rules_match": true,
+      "sha_match": true
+    },
+    {
+      "view": "tencent",
+      "v2_rules": 722,
+      "v3_rules": 722,
+      "rules_match": true,
+      "sha_match": true
+    }
+  ],
+  "all_rules_match": true,
+  "all_sha_match": true
+}

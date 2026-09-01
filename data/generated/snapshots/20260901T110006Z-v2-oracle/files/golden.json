@@ -1,0 +1,70 @@
+{
+  "results": [
+    {
+      "view": "google",
+      "l4": true,
+      "l5": true,
+      "equal": true,
+      "legacy": 1210,
+      "aggregate": 1210
+    },
+    {
+      "view": "apple",
+      "l4": true,
+      "l5": true,
+      "equal": false,
+      "legacy": 2008,
+      "aggregate": 2011
+    },
+    {
+      "view": "microsoft",
+      "l4": true,
+      "l5": true,
+      "equal": true,
+      "legacy": 971,
+      "aggregate": 971
+    },
+    {
+      "view": "tencent",
+      "l4": true,
+      "l5": true,
+      "equal": false,
+      "legacy": 701,
+      "aggregate": 722
+    },
+    {
+      "view": "alibaba",
+      "l4": true,
+      "l5": true,
+      "equal": true,
+      "legacy": 517,
+      "aggregate": 517
+    },
+    {
+      "view": "baidu",
+      "l4": true,
+      "l5": true,
+      "equal": true,
+      "legacy": 324,
+      "aggregate": 324
+    },
+    {
+      "view": "amazon",
+      "l4": true,
+      "l5": true,
+      "equal": true,
+      "legacy": 275,
+      "aggregate": 275
+    },
+    {
+      "view": "bytedance",
+      "l4": true,
+      "l5": true,
+      "equal": true,
+      "legacy": 1081,
+      "aggregate": 1081
+    }
+  ],
+  "hard_failures": 0,
+  "pass": true
+}
