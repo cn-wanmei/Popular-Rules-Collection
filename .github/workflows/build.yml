@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       dry_run:
-        description: "Dry run — build artifacts but do not publish to generated/"
+        description: "Dry run — build and validate but do not publish"
         type: boolean
         default: false
 
@@ -31,67 +31,44 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Naming gate (HARD)
-        run: python -m src.engine.cli naming_gate
+        run: PYTHONPATH=. python -m src.engine.cli naming_gate
 
-      - name: Engine — canonical store
-        run: python -m src.engine.cli canonical
+      - name: Engine — one immutable run
+        id: engine
+        run: |
+          set -o pipefail
+          PYTHONPATH=. python -m src.engine.cli all 2>&1 | tee engine-run.log
+          RUN_ID=$(python3 - <<'PY'
+          import json, pathlib
+          text = pathlib.Path('engine-run.log').read_text(encoding='utf-8', errors='replace')
+          start = text.find('{')
+          if start < 0:
+              raise SystemExit('engine output JSON not found')
+          obj = json.loads(text[start:])
+          print(obj['run_id'])
+          PY
+          )
+          echo "run_id=${RUN_ID}" >> "$GITHUB_OUTPUT"
 
-      - name: Engine — hierarchy
-        run: python -m src.engine.cli hierarchy
-
-      - name: Engine — IR (focus)
-        run: python -m src.engine.cli ir
-
-      - name: Engine — IR (full)
-        run: python -m src.engine.cli ir_full
-
-      - name: Engine — adapters (7 clients)
-        run: python -m src.engine.cli adapters
-
-      - name: Engine — diff
-        run: python -m src.engine.cli diff
-
-      - name: Engine — golden L1-L7 (HARD)
-        run: python -m src.engine.cli golden
-
-      - name: Engine — release gate
-        run: python -m src.engine.cli release
-
-      - name: Engine — publish to generated/
-        if: ${{ inputs.dry_run != true }}
-        run: python -m src.engine.cli publish
-
-      - name: Schema validate
+      - name: Schema validate (HARD)
         run: python scripts/schema_validate.py
 
-      - name: Builder validate
+      - name: Builder validate (HARD)
         run: python scripts/builder_validate.py
 
       - name: Size gate (HARD)
         run: python scripts/size_gate.py
+
+      - name: Publish V3 run
+        if: ${{ inputs.dry_run != true }}
+        run: PYTHONPATH=. python -m src.engine.cli promote --run-id "${{ steps.engine.outputs.run_id }}"
 
       - name: Commit generated
         if: ${{ inputs.dry_run != true }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          DIFF_SUMMARY=$(python3 -c "
-          import json, pathlib
-          p = pathlib.Path('data/generated/reports/diff/latest.json')
-          if p.exists():
-              d = json.loads(p.read_text())
-              print(f\"+{d.get('added',0)}/-{d.get('removed',0)} rules\")
-          else:
-              print('rebuild')
-          " 2>/dev/null || echo "rebuild")
-          git add generated/ data/generated/reports/ data/generated/diff/ || true
-          git diff --staged --quiet || git commit -m "chore(engine): rebuild $(date -u +%Y-%m-%d) | ${DIFF_SUMMARY}"
-          set +e
+          git add generated/ data/baseline/ data/runs/ reports/ || true
+          git diff --staged --quiet || git commit -m "chore(engine): rebuild ${GITHUB_SHA::12}"
           git pull --rebase --autostash origin main
-          rc=$?
-          set -e
-          if [ $rc -ne 0 ]; then
-            echo "::error::rebase failed"
-            exit 1
-          fi
           git push
