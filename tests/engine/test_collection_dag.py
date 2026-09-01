@@ -1,9 +1,10 @@
 from __future__ import annotations
 
+import hashlib
 import json
 from pathlib import Path
 
-from src.engine.collection.run import COLLECTION_NODES, COLLECTION_SPECS, _collection_id
+from src.engine.collection.run import COLLECTION_NODES, COLLECTION_SPECS, _collection_id, _manifest_digest
 
 
 def test_collection_dag_has_explicit_dependencies() -> None:
@@ -22,7 +23,25 @@ def test_collection_id_is_deterministic() -> None:
         "b": {"status": "ok", "critical": False, "attempts": [{"attempt": 1}]},
         "a": {"status": "ok", "critical": True, "attempts": [{"attempt": 1}]},
     }
-    assert _collection_id("2026-09-02", results) == _collection_id("2026-09-02", dict(reversed(list(results.items()))))
+    assert _collection_id("2026-09-02", results) == _collection_id(
+        "2026-09-02", dict(reversed(list(results.items())))
+    )
+
+
+def test_collection_manifest_digest_ignores_its_own_field() -> None:
+    manifest = {
+        "schema": "collection_manifest_v1",
+        "collection_id": "2026-09-02-demo",
+        "status": "ok",
+        "root": "backup/2026-09-02",
+        "nodes": {"service_rules": {"status": "ok", "critical": True, "deps": []}},
+    }
+    digest = _manifest_digest(manifest)
+    with_field = {**manifest, "manifest_sha256": digest}
+    assert _manifest_digest(with_field) == digest
+    assert digest == hashlib.sha256(
+        json.dumps(manifest, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    ).hexdigest()
 
 
 def test_collection_manifest_contract_shape(tmp_path: Path) -> None:
