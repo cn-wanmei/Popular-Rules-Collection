@@ -69,7 +69,7 @@ def _validate_release_artifact_set(run_dir: Path) -> dict[str, Any]:
     state = json.loads(state_path.read_text(encoding="utf-8"))
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     if state.get("state") != "RC_READY":
-        raise RuntimeError(f"Release state is {state.get('state')}, not RC_READY")
+        raise RuntimeError(f"Release state is {state.get('state')}, not RC_READY (digest validation not reached)")
     if manifest.get("run_id") != run_dir.name or manifest.get("release_state") != "RC_READY":
         raise RuntimeError("Release manifest identity/state mismatch")
     golden = json.loads(golden_path.read_text(encoding="utf-8")) if golden_path.exists() else {}
@@ -90,7 +90,7 @@ def _validate_release_artifact_set(run_dir: Path) -> dict[str, Any]:
     client_digests = _client_digests(artifacts_root)
     missing_content = [c for c, digest in client_digests.items() if not digest]
     if missing_content:
-        raise RuntimeError(f"Client artifacts are empty: {', '.join(missing_content)}")
+        raise RuntimeError(f"Client artifact digest missing/empty: {', '.join(missing_content)}")
 
     canonical = run_dir / "canonical" / "rules.jsonl"
     ir = run_dir / "ir" / "ir.json"
@@ -104,10 +104,10 @@ def _validate_release_artifact_set(run_dir: Path) -> dict[str, Any]:
     cas_root = run_dir.parents[1] / "cas" / "objects"
     cas_check = verify_run(run_dir, cas_root)
     if not cas_check["verified"]:
-        raise RuntimeError(f"CAS integrity failure: missing={cas_check['missing']} mismatches={cas_check['mismatches']}")
+        raise RuntimeError(f"CAS digest integrity failure: missing={cas_check['missing']} mismatches={cas_check['mismatches']}")
 
     if manifest.get("client_digests") != client_digests:
-        raise RuntimeError("Release manifest client digests do not match artifacts")
+        raise RuntimeError("Release manifest client digest mismatch")
     for key, path in {
         "canonical_digest": canonical,
         "ir_digest": ir,
@@ -117,7 +117,7 @@ def _validate_release_artifact_set(run_dir: Path) -> dict[str, Any]:
         "metrics_digest": metrics_path,
     }.items():
         if manifest.get(key) != _sha256_file(path):
-            raise RuntimeError(f"Release manifest {key} mismatch")
+            raise RuntimeError(f"Release manifest {key} digest mismatch")
 
     return {"release_state": state, "release_manifest": manifest, "golden": golden, "quality": quality, "artifact_digests": _artifact_digests(artifacts_root), "cas": cas_check}
 
