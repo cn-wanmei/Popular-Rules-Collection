@@ -22,7 +22,7 @@ def test_full_production_run_has_quality_cas_and_dag(tmp_path: Path) -> None:
     result = run_pipeline(_fixture(tmp_path), data)
     assert result["status"] == "ok"
     assert result["execution"]["mode"] == "dag"
-    assert ["diff", "golden"] in result["execution"]["layers"]
+    assert ["diff", "hierarchy"] in result["execution"]["layers"]
     assert result["stages"]["observability"]["quality_decision"] == "PASS"
     assert result["stages"]["cas"]["object_count"] > 0
     assert result["stages"]["release"]["state"] == "RC_READY"
@@ -57,8 +57,8 @@ def test_same_snapshot_is_reproducible(tmp_path: Path) -> None:
     data = tmp_path / "data"
     first = run_pipeline(source, data)
     snapshot_id = first["snapshot_id"]
-    snap_sources = data / "snapshots" / snapshot_id / "sources"
-    second = run_pipeline(snap_sources, data)
+    second = run_pipeline(source, data, snapshot_id=snapshot_id)
+    assert second["snapshot_id"] == snapshot_id
     run_a = data / "runs" / first["run_id"]
     run_b = data / "runs" / second["run_id"]
     comparison = compare_runs(run_a, run_b)
