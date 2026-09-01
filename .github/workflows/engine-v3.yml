@@ -6,14 +6,20 @@ on:
     paths:
       - "src/engine/**"
       - "tests/engine/**"
+      - "scripts/collect.py"
+      - "scripts/fetchers/**"
       - "config/**"
+      - "requirements.txt"
       - ".github/workflows/engine-v3.yml"
   pull_request:
     branches: [main, master]
     paths:
       - "src/engine/**"
       - "tests/engine/**"
+      - "scripts/collect.py"
+      - "scripts/fetchers/**"
       - "config/**"
+      - "requirements.txt"
       - ".github/workflows/engine-v3.yml"
 
 jobs:
@@ -29,7 +35,7 @@ jobs:
 
       - name: Install deps
         run: |
-          pip install pyyaml pytest
+          pip install -r requirements.txt
 
       - name: Naming Gate (CLI)
         run: |
