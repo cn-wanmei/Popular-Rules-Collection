@@ -14,10 +14,10 @@ def _build_client(client: str, meta: dict[str, str], rules: list[dict[str, Any]]
     cdir = artifacts_dir / client
     cdir.mkdir(parents=True, exist_ok=True)
     render = get_adapter(client)
-    out = cdir / f"aggregate{meta['ext']}"
-    render(rules, out)
+    rules_by_id = {r["id"]: r for r in rules}
+    render(rules, cdir / f"aggregate{meta['ext']}")
     for entity in sorted(memberships):
-        entity_rules = [rules_by_id[rid] for rid in memberships[entity] if (rules_by_id := {r['id']: r for r in rules}).get(rid)]
+        entity_rules = [rules_by_id[rid] for rid in memberships[entity] if rid in rules_by_id]
         if entity_rules:
             render(entity_rules, cdir / f"{entity}{meta['ext']}")
     return client, {"ext": meta["ext"], "files": len(list(cdir.glob(f"*{meta['ext']}")))}
@@ -29,8 +29,7 @@ def build_all_clients(canonical_dir: Path, artifacts_dir: Path, *, views: list[s
     rules = sorted(load_rules(canonical_dir).values(), key=lambda r: r["id"])
     memberships = load_memberships(canonical_dir)
     report: dict[str, Any] = {"clients": {}, "views": {}, "v2_runtime_dependency": 0, "parallel": True}
-    max_workers = min(8, max(1, len(CLIENTS)))
-    with ThreadPoolExecutor(max_workers=max_workers, thread_name_prefix="adapter") as pool:
+    with ThreadPoolExecutor(max_workers=min(8, max(1, len(CLIENTS))), thread_name_prefix="adapter") as pool:
         futures = [pool.submit(_build_client, client, meta, rules, memberships, artifacts_dir) for client, meta in CLIENTS.items()]
         for future in as_completed(futures):
             client, details = future.result()
