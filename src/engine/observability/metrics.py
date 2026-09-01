@@ -1,44 +1,53 @@
-"""Run metrics, data quality scoring, source health and parser coverage."""
+"""Run metrics, source health, parser coverage and release-risk evidence."""
 from __future__ import annotations
 
 import json
-from collections import Counter, defaultdict
+from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 
 def _ratio(num: int, den: int) -> float:
-    return round(num / den, 6) if den else 1.0
+    return round(num / den, 6) if den else 0.0
+
+
+def _load_json(path: Path, default: Any) -> Any:
+    if not path.exists():
+        return default
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return default
 
 
 def build_observability(run_dir: Path) -> dict[str, Any]:
     run_dir = Path(run_dir)
-    manifest = json.loads((run_dir / "run_manifest.json").read_text(encoding="utf-8"))
+    manifest = _load_json(run_dir / "run_manifest.json", {})
     snapshot_id = manifest.get("snapshot_id")
-    ingest = manifest.get("stages", {}).get("ingest", {})
-    quarantine = manifest.get("stages", {}).get("quarantine", {})
-    canonical = manifest.get("stages", {}).get("canonical", {})
-    diff = manifest.get("stages", {}).get("diff", {})
+    stages = manifest.get("stages", {})
+    ingest = stages.get("ingest", {}) or {}
+    quarantine = stages.get("quarantine", {}) or {}
+    canonical = stages.get("canonical", {}) or {}
+    diff = stages.get("diff", {}) or {}
 
-    input_records = int(ingest.get("records", 0))
+    ingested = int(ingest.get("records", 0))
     ingest_errors = int(ingest.get("errors", 0))
-    clean_records = int(quarantine.get("clean", 0))
+    clean = int(quarantine.get("clean", 0))
     quarantined = int(quarantine.get("quarantined", 0))
     unique_rules = int(canonical.get("unique_rules", 0))
     memberships = int(canonical.get("memberships", 0))
     canonical_errors = int(canonical.get("errors", 0))
 
-    snapshot_manifest = None
-    snap_path = Path(run_dir).parents[1] / "snapshots" / str(snapshot_id) / "manifest.json" if snapshot_id else None
-    if snap_path and snap_path.exists():
-        snapshot_manifest = json.loads(snap_path.read_text(encoding="utf-8"))
-
-    source_health: dict[str, dict[str, Any]] = defaultdict(lambda: {"files": 0, "rules": 0, "errors": 0})
-    if snapshot_manifest:
-        for rel in snapshot_manifest.get("file_digests", {}):
-            source = Path(rel).parts[0] if Path(rel).parts else "root"
-            source_health[source]["files"] += 1
+    source_health: dict[str, dict[str, Any]] = defaultdict(lambda: {"files": 0, "bytes": 0, "errors": 0})
+    snapshot_path = Path(run_dir).parents[1] / "snapshots" / str(snapshot_id) if snapshot_id else None
+    snapshot_manifest = _load_json(snapshot_path / "manifest.json", {}) if snapshot_path else {}
+    for rel in snapshot_manifest.get("file_digests", {}):
+        p = snapshot_path / "sources" / rel
+        source = Path(rel).parts[0] if Path(rel).parts else "root"
+        source_health[source]["files"] += 1
+        if p.exists() and p.is_file():
+            source_health[source]["bytes"] += p.stat().st_size
 
     qpath = run_dir / "quarantine" / "quarantined.jsonl"
     if qpath.exists():
@@ -51,21 +60,23 @@ def build_observability(run_dir: Path) -> dict[str, Any]:
             source = Path(path).parts[0] if Path(path).parts else "unknown"
             source_health[source]["errors"] += 1
 
+    recognition_den = ingested + ingest_errors
     parser_coverage = {
-        "structured_service_records": int(ingest.get("records", 0)),
-        "recognized_records": input_records,
-        "recognition_rate": _ratio(input_records - ingest_errors, input_records),
-        "quarantine_rate": _ratio(quarantined, input_records + quarantined),
+        "input_records": recognition_den,
+        "recognized_records": ingested,
+        "parse_errors": ingest_errors,
+        "recognition_rate": _ratio(ingested, recognition_den),
+        "quarantine_rate": _ratio(quarantined, ingested + quarantined),
     }
 
     metrics = {
-        "schema": "run_metrics_v1",
+        "schema": "run_metrics_v2",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "run_id": run_dir.name,
         "snapshot_id": snapshot_id,
         "records": {
-            "ingested": input_records,
-            "clean": clean_records,
+            "ingested": ingested,
+            "clean": clean,
             "quarantined": quarantined,
             "unique_rules": unique_rules,
             "memberships": memberships,
@@ -73,9 +84,9 @@ def build_observability(run_dir: Path) -> dict[str, Any]:
             "canonical_errors": canonical_errors,
         },
         "rates": {
-            "clean_rate": _ratio(clean_records, input_records),
-            "quarantine_rate": _ratio(quarantined, input_records + quarantined),
-            "canonical_error_rate": _ratio(canonical_errors, max(clean_records, 1)),
+            "clean_rate": _ratio(clean, ingested),
+            "quarantine_rate": _ratio(quarantined, ingested + quarantined),
+            "canonical_error_rate": _ratio(canonical_errors, max(clean, 1)),
         },
         "diff": {
             "added": int(diff.get("added", 0)),
@@ -88,36 +99,9 @@ def build_observability(run_dir: Path) -> dict[str, Any]:
         "v2_runtime_dependency": 0,
     }
 
-    metrics_path = run_dir / "metrics" / "metrics.json"
-    metrics_path.parent.mkdir(parents=True, exist_ok=True)
-    metrics_path.write_text(json.dumps(metrics, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    (metrics_path.parent / "source-health.json").write_text(json.dumps(dict(source_health), indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    (metrics_path.parent / "parser-coverage.json").write_text(json.dumps(parser_coverage, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    metrics_dir = run_dir / "metrics"
+    metrics_dir.mkdir(parents=True, exist_ok=True)
+    (metrics_dir / "metrics.json").write_text(json.dumps(metrics, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (metrics_dir / "source-health.json").write_text(json.dumps(dict(source_health), indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (metrics_dir / "parser-coverage.json").write_text(json.dumps(parser_coverage, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return metrics
-
-
-def quality_score(metrics: dict[str, Any], policy: dict[str, Any]) -> dict[str, Any]:
-    rates = metrics["rates"]
-    thresholds = policy.get("quality", {})
-    clean_min = float(thresholds.get("min_clean_rate", 0.995))
-    quarantine_max = float(thresholds.get("max_quarantine_rate", 0.01))
-    canonical_error_max = float(thresholds.get("max_canonical_error_rate", 0.0))
-    diff_removed_max = int(thresholds.get("max_removed_rules", 10000))
-
-    checks = {
-        "clean_rate": {"value": rates["clean_rate"], "min": clean_min, "pass": rates["clean_rate"] >= clean_min},
-        "quarantine_rate": {"value": rates["quarantine_rate"], "max": quarantine_max, "pass": rates["quarantine_rate"] <= quarantine_max},
-        "canonical_error_rate": {"value": rates["canonical_error_rate"], "max": canonical_error_max, "pass": rates["canonical_error_rate"] <= canonical_error_max},
-        "removed_rules": {"value": metrics["diff"]["removed"], "max": diff_removed_max, "pass": metrics["diff"]["removed"] <= diff_removed_max},
-        "v2_runtime_dependency": {"value": metrics["v2_runtime_dependency"], "expected": 0, "pass": metrics["v2_runtime_dependency"] == 0},
-    }
-    score = round(100.0 * sum(1 for v in checks.values() if v["pass"]) / len(checks), 2)
-    result = {
-        "schema": "data_quality_v1",
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "score": score,
-        "all_hard_pass": all(v["pass"] for v in checks.values()),
-        "checks": checks,
-        "decision": "PASS" if all(v["pass"] for v in checks.values()) else "BLOCK",
-    }
-    return result
