@@ -1,3 +1,6 @@
-# src/ (V3 target Phase 0)
+# src/
 
-Runtime remains `scripts/` until Phase 1. Packages: fetch, normalize, hierarchy, semantic, decision, adapters, release.
+Production runtime: **`src/engine/`**
+
+Product version: `/VERSION` (1.0.x). Engine codename `v3` only in metadata.
+Do not add `src/v3/`.
