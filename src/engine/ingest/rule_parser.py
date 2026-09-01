@@ -1,14 +1,16 @@
 """Input-format rule parser for the V3 Engine.
 
-This module is deliberately a format adapter. It has no dependency on the old
-V2 runtime or legacy data model and can parse common raw upstream formats plus
-V2Fly/domain-list-community syntax as an input format.
+This module is a format adapter only. It parses common raw upstream formats,
+including Clash-style YAML payloads and V2Fly/domain-list-community syntax,
+without importing the legacy V2 runtime or data model.
 """
 from __future__ import annotations
 
 import re
 from pathlib import Path
 from typing import Iterable
+
+import yaml
 
 PLAIN_DOMAIN = re.compile(r"^(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]*[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}\.?$")
 V2FLY_PREFIX = re.compile(r"^(?:full|domain|keyword|regexp|regex|include):\s*(.+)$", re.I)
@@ -52,6 +54,9 @@ def parse_line(line: str) -> list[tuple[str, str]]:
     line = line.strip()
     if not line or line[0] in "#/;!":
         return []
+    if line.startswith("-"):
+        line = line[1:].strip()
+    line = line.strip("'\"")
     if " #" in line:
         line = line.split(" #", 1)[0].strip()
 
@@ -151,12 +156,33 @@ def looks_like_v2fly(text: str, path: Path | None = None) -> bool:
 
 def iter_rules(path: Path) -> Iterable[tuple[str, str]]:
     text = path.read_text(encoding="utf-8", errors="replace")
+    stripped = text.lstrip()
     if looks_like_v2fly(text, path):
         yield from _expand_v2fly_file(path)
         return
+
+    # YAML list / payload formats are parsed structurally first so list markers,
+    # quoting and indentation cannot change the semantic rule type.
+    if path.suffix.lower() in {".yaml", ".yml"} or stripped.startswith("payload:"):
+        try:
+            data = yaml.safe_load(text)
+        except yaml.YAMLError:
+            data = None
+        if isinstance(data, dict) and "payload" in data:
+            payload = data.get("payload") or []
+            for item in payload:
+                if isinstance(item, str):
+                    yield from parse_line(item)
+            return
+        if isinstance(data, list):
+            for item in data:
+                if isinstance(item, str):
+                    yield from parse_line(item)
+            return
+
     for line in text.splitlines():
-        stripped = line.strip()
-        if stripped.startswith(("full:", "domain:", "keyword:", "regexp:", "regex:", "include:")):
-            yield from parse_v2fly_line(stripped)
+        stripped_line = line.strip()
+        if stripped_line.startswith(("full:", "domain:", "keyword:", "regexp:", "regex:", "include:")):
+            yield from parse_v2fly_line(stripped_line)
         else:
-            yield from parse_line(stripped)
+            yield from parse_line(stripped_line)
