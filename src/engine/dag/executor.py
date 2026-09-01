@@ -37,7 +37,7 @@ def topological_layers(nodes: list[Node]) -> list[list[str]]:
 
 def _stable(value: Any) -> Any:
     if isinstance(value, dict):
-        return {k: _stable(v) for k, v in sorted(value.items()) if k not in {"duration_ms", "resume"}}
+        return {k: _stable(v) for k, v in sorted(value.items()) if k not in {"duration_ms", "resume", "output_digest"}}
     if isinstance(value, list):
         return [_stable(v) for v in value]
     return value
