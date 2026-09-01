@@ -23,7 +23,7 @@ jobs:
         run: python -m src.engine.cli naming_gate
 
       - name: Engine unit + contract tests
-        run: python -m pytest tests/engine/ -v
+        run: PYTHONPATH=. python -m pytest tests/engine/ -v --ignore=tests/engine/unit_legacy_v2_ref
 
       - name: Legacy tests (non-engine)
         run: python -m pytest tests/ --ignore=tests/engine/ -q

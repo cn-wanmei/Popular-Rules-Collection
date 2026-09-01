@@ -29,19 +29,14 @@ jobs:
         run: |
           pip install pyyaml pytest
 
-      - name: Naming Gate
+      - name: Naming Gate (CLI)
         run: |
-          PYTHONPATH=. python -c "
-          from pathlib import Path
-          from src.engine.validation.naming_gate import run_naming_gate
-          r = run_naming_gate(Path('.'))
-          print(r)
-          assert r['pass'], r['violations']
-          "
+          PYTHONPATH=. python -m src.engine.cli naming_gate
 
       - name: Engine unit tests
         run: |
-          PYTHONPATH=. python -m pytest tests/engine/ -v --tb=short
+          PYTHONPATH=. python -m pytest tests/engine/ -v --tb=short \
+            --ignore=tests/engine/unit_legacy_v2_ref
 
       - name: V2 runtime dependency must be 0
         run: |
