@@ -38,6 +38,7 @@ def run_pipeline(
     *,
     run_id: str | None = None,
     stages: list[str] | None = None,
+    skip_large: bool = False,
 ) -> dict[str, Any]:
     data_root = Path(data_root)
     sources_root = Path(sources_root)
@@ -54,6 +55,7 @@ def run_pipeline(
         "run_id": run_id,
         "started_at": datetime.now(timezone.utc).isoformat(),
         "stages": {},
+        "skip_large": skip_large,
         "v2_runtime_dependency": 0,
     }
 
@@ -69,7 +71,7 @@ def run_pipeline(
 
     if "snapshot" in wanted:
         snapshot_manifest = create_source_snapshot(
-            sources_root, data_root / "snapshots", extra_meta={"run_id": run_id}
+            sources_root, data_root / "snapshots", extra_meta={"run_id": run_id, "skip_large": skip_large}
         )
         (run_dir / "snapshot_id.txt").write_text(snapshot_manifest["snapshot_id"], encoding="utf-8")
         results["snapshot_id"] = snapshot_manifest["snapshot_id"]
@@ -79,7 +81,10 @@ def run_pipeline(
     if "ingest" in wanted:
         if snapshot_manifest is None:
             raise RuntimeError("ingest requires snapshot")
-        ingest_result = ingest_snapshot(data_root / "snapshots" / snapshot_manifest["snapshot_id"])
+        ingest_result = ingest_snapshot(
+            data_root / "snapshots" / snapshot_manifest["snapshot_id"],
+            skip_large=skip_large,
+        )
         results["stages"]["ingest"] = {
             "status": "ok",
             "records": ingest_result["stats"]["records"],
