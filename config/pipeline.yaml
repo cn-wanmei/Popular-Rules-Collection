@@ -1,30 +1,37 @@
-version: 1
-updated: "2026-08-31"
+version: 2
+updated: "2026-09-01"
 publish_concurrency_group: main-publish
+engine:
+  entry: python -m src.engine.cli all
+  workspace: data/
+  public_projection: generated/
+  runtime_v2_dependency: 0
+
 stages:
-  validate_registry:
-    script: scripts/validate_registry.py
+  naming_gate:
+    command: python -m src.engine.cli naming_gate
     required: true
   collect:
     script: scripts/collect.py
     required: true
-  normalize:
-    script: scripts/normalize.py
-    required: true
-  deduplicate:
-    script: scripts/deduplicate.py
-    required: true
-  build:
-    kind: builders
+    note: "Upstream transport only; no normalization or build responsibility."
+  engine:
+    command: python -m src.engine.cli all --sources backup/<date>
     required: true
   validate:
     scripts:
       - scripts/schema_validate.py
       - scripts/validate.py
-      - scripts/builder_validate.py
     required: true
   size_gate:
     script: scripts/size_gate.py
     required: true
-build_requires:
-  - database/services
+  publish:
+    command: python -m src.engine.cli promote --run-id <run_id>
+    required: true
+
+legacy_2x:
+  production: false
+  normalization: removed_from_pipeline
+  database_services_runtime: false
+  build_shims: deprecated
