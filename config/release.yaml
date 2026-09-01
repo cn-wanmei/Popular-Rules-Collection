@@ -1,0 +1,11 @@
+version: 1
+quality:
+  min_clean_rate: 0.95
+  max_quarantine_rate: 0.05
+  max_canonical_error_rate: 0.0
+  max_removed_rules: 10000
+release:
+  require_quality_pass: true
+  require_golden_pass: true
+  require_all_clients: true
+  require_v2_dependency_zero: true
