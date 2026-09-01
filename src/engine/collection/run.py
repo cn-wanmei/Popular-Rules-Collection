@@ -31,13 +31,16 @@ class CollectionSpec:
     retries: int = 2
 
 
+# Only the core service-rule acquisition is production-critical. IP/Dataset/
+# Provider branches are independently useful and may degrade without blocking
+# the primary rule build; their status is carried into the Collection Manifest.
 COLLECTION_SPECS = (
     CollectionSpec("validate_registry", (sys.executable, "scripts/validate_registry.py")),
     CollectionSpec("service_rules", (sys.executable, "scripts/collect.py"), deps=("validate_registry",), critical=True),
-    CollectionSpec("validate_ip_registry", (sys.executable, "scripts/validate_ip_registry.py"), critical=True),
+    CollectionSpec("validate_ip_registry", (sys.executable, "scripts/validate_ip_registry.py"), critical=False),
     CollectionSpec("ip_rules", (sys.executable, "scripts/collect_ip.py"), deps=("validate_ip_registry",), critical=False),
-    CollectionSpec("validate_dataset_registry", (sys.executable, "scripts/validate_dataset_registry.py"), critical=True),
-    CollectionSpec("network_lan", (sys.executable, "scripts/build_network_lan.py"), deps=("validate_dataset_registry",), critical=True),
+    CollectionSpec("validate_dataset_registry", (sys.executable, "scripts/validate_dataset_registry.py"), critical=False),
+    CollectionSpec("network_lan", (sys.executable, "scripts/build_network_lan.py"), deps=("validate_dataset_registry",), critical=False),
     CollectionSpec("datasets", (sys.executable, "scripts/collect_datasets.py"), deps=("validate_dataset_registry", "network_lan"), critical=False),
     CollectionSpec("network_datasets", (sys.executable, "scripts/build_network_datasets.py"), deps=("datasets",), critical=False),
     CollectionSpec("providers", (sys.executable, "scripts/collect_providers.py"), deps=("validate_dataset_registry",), critical=False),
@@ -169,12 +172,16 @@ def run_collection(
             return _handler
         handlers[spec.name] = make_handler(spec)
 
+    layers: list[list[str]] = []
+    def on_layer_complete(layer: list[str], _all_results: dict[str, Any]) -> None:
+        layers.append(list(layer))
+
     result_map = execute(
         COLLECTION_NODES,
         handlers,
         max_workers=min(8, len(COLLECTION_NODES)),
         fail_fast=False,
-        on_layer_complete=None,
+        on_layer_complete=on_layer_complete,
     )
 
     critical_failures = [
@@ -193,7 +200,11 @@ def run_collection(
         "date": date,
         "created_at": _utc_now(),
         "root": str(day_dir.relative_to(ROOT)),
-        "execution": {"mode": "dag", "max_workers": min(8, len(COLLECTION_NODES))},
+        "execution": {
+            "mode": "dag",
+            "max_workers": min(8, len(COLLECTION_NODES)),
+            "layers": layers,
+        },
         "status": "blocked" if critical_failures else ("degraded" if degraded else "ok"),
         "critical_failures": sorted(critical_failures),
         "degraded_nodes": sorted(degraded),
