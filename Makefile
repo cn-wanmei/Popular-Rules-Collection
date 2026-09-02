@@ -2,6 +2,7 @@
 
 PYTHON ?= python
 ENGINE := $(PYTHON) -m src.engine.cli
+COLLECT := $(PYTHON) -m src.engine.collection
 
 all:
 	$(ENGINE) all
@@ -10,13 +11,13 @@ preflight:
 	$(ENGINE) naming_gate
 
 collect:
-	$(ENGINE) collect
+	$(COLLECT) --data data
 
 build:
 	$(ENGINE) adapters
 
 validate:
-	$(ENGINE) validate
+	$(PYTHON) -m pytest tests/engine/ -v --ignore=tests/engine/unit_legacy_v2_ref
 
 test:
 	$(PYTHON) -m pytest tests/engine/ -v --ignore=tests/engine/unit_legacy_v2_ref
