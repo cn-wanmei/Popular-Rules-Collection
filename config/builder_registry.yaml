@@ -1,12 +1,10 @@
-# Builder registry — V3 Engine (src.engine) 接管所有 build
-# V2 build shims (scripts/build_*.py) 已废弃，保留仅供参考
-#
-# Build 入口: python -m src.engine.cli adapters
-# Publish 入口: python -m src.engine.cli publish
-# Full pipeline: python -m src.engine.cli all
+# Builder registry — V3 Engine (src.engine) owns all builds.
+# Canonical build entry: python -m src.engine.cli adapters
+# Publish entry: python -m src.engine.cli promote
+# Full production pipeline: python -m src.engine.cli all
 
 version: 3
-updated: "2026-09-01"
+updated: "2026-09-02"
 engine: "src.engine"
 engine_entry: "python -m src.engine.cli all"
 
@@ -39,13 +37,3 @@ clients:
     out_dir: generated/loon
     extensions: [".list"]
     engine_stage: adapters
-
-deprecated_v2_builders:
-  # Retained for reference only — do not invoke
-  - scripts/build_mihomo.py
-  - scripts/build_singbox.py
-  - scripts/build_surge.py
-  - scripts/build_shadowrocket.py
-  - scripts/build_quantumultx.py
-  - scripts/build_egern.py
-  - scripts/build_loon.py
