@@ -262,7 +262,6 @@ jobs:
               print('diff unavailable')
           " 2>/dev/null || echo "diff unavailable")
 
-          rm -f database/provenance/domains.jsonl
           git add -A \
             generated/ \
             rule/ \
@@ -270,6 +269,7 @@ jobs:
             reports/ \
             docs/ \
             assets/ \
+            database/provenance/ \
             data/collection/ \
             data/runs/ \
             data/cas/ \
@@ -283,6 +283,12 @@ jobs:
           fi
 
           git commit -m "chore(engine): collect+build ${DAY} | ${DIFF_SUMMARY}"
+
+          if ! git diff --quiet || ! git diff --cached --quiet; then
+            echo "Publish workspace is dirty after commit; refusing rebase/push."
+            git status --short
+            exit 1
+          fi
 
           for attempt in 1 2 3; do
             git fetch --prune origin main
