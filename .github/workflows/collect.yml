@@ -270,6 +270,7 @@ jobs:
             docs/ \
             assets/ \
             database/provenance/ \
+            data/baseline/ \
             data/collection/ \
             data/runs/ \
             data/cas/ \
