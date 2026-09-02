@@ -1,0 +1,81 @@
+name: Publish Release Candidate
+
+on:
+  workflow_run:
+    workflows: ["Build Client Rules"]
+    types: [completed]
+
+jobs:
+  publish:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Download immutable build artifact
+        uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131
+        with:
+          name: release-candidate-${{ github.event.workflow_run.id }}
+          path: release-candidate
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          run-id: ${{ github.event.workflow_run.id }}
+
+      - name: Architecture Gate
+        run: python scripts/architecture_gate.py
+
+      - name: Verify release identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s release-candidate/run-id.txt
+          RUN_ID=$(cat release-candidate/run-id.txt)
+          test -d "release-candidate/data/runs/${RUN_ID}"
+          test -d release-candidate/generated
+          test -s "release-candidate/data/baseline/canonical.json"
+          test "$(git rev-parse HEAD)" = "${{ github.event.workflow_run.head_sha }}" || true
+
+      - name: Publish atomically
+        shell: bash
+        run: |
+          set -euo pipefail
+          RUN_ID=$(cat release-candidate/run-id.txt)
+          rm -rf generated data/runs/${RUN_ID}
+          mkdir -p data/runs
+          cp -a release-candidate/generated generated
+          cp -a "release-candidate/data/runs/${RUN_ID}" data/runs/
+          mkdir -p data/baseline
+          cp -a release-candidate/data/baseline/canonical.json data/baseline/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A generated/ data/runs/ data/baseline/
+          if git diff --staged --quiet; then
+            echo "No release changes to publish."
+            exit 0
+          fi
+          git commit -m "chore(publish): promote run ${RUN_ID}"
+          if [ -n "$(git status --porcelain=v1)" ]; then
+            echo "Publish workspace is dirty after commit; refusing push."
+            exit 1
+          fi
+          for attempt in 1 2 3; do
+            git fetch --prune origin main
+            if ! git rebase --autostash origin/main; then
+              git rebase --abort || true
+              exit 1
+            fi
+            if git push origin HEAD:main; then
+              echo "Published release candidate on attempt ${attempt}."
+              exit 0
+            fi
+            sleep $((attempt * 3))
+          done
+          exit 1
