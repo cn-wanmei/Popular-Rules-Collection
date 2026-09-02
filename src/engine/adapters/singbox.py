@@ -12,25 +12,22 @@ CLIENT = "singbox"
 EXT = CLIENTS[CLIENT]["ext"]
 FMT = CLIENTS[CLIENT]["format"]
 
-# IR rule types -> native sing-box headless rule fields.
-# IP-CIDR and IP-CIDR6 intentionally map to the same native field: the address
-# family is encoded by the CIDR value itself.
+# Canonical rule types -> native sing-box headless rule fields.
+# The IR uses lowercase underscore names (for example ``domain_suffix``),
+# while external rule sources/tests may use uppercase hyphen names. Normalize
+# both forms to one lookup key so adapters consume the IR contract directly.
 TYPE_TO_FIELD = {
     "DOMAIN": "domain",
     "DOMAIN-SUFFIX": "domain_suffix",
-    "DOMAIN_KEYWORD": "domain_keyword",
     "DOMAIN-KEYWORD": "domain_keyword",
-    "DOMAIN_REGEX": "domain_regex",
     "DOMAIN-REGEX": "domain_regex",
     "IP-CIDR": "ip_cidr",
-    "IP_CIDR": "ip_cidr",
     "IP-CIDR6": "ip_cidr",
-    "IP_CIDR6": "ip_cidr",
 }
 
 
 def _native_field(rule_type: str) -> str:
-    key = str(rule_type).strip().upper()
+    key = str(rule_type).strip().upper().replace("_", "-")
     try:
         return TYPE_TO_FIELD[key]
     except KeyError as exc:
