@@ -19,7 +19,7 @@ def test_e2e_production_fixture_is_not_skipped(tmp_path: Path) -> None:
     baseline = data / "baseline" / "canonical.json"
 
     result = run_pipeline(source, data)
-    assert result["status"] == "ok"
+    assert result["status"] == "ok", json.dumps({"release": result["stages"].get("release"), "stages": result["stages"]}, indent=2, sort_keys=True)
     assert result["stages"]["golden"]["all_pass"] is True
     assert result["stages"]["release"]["state"] == "RC_READY"
 
