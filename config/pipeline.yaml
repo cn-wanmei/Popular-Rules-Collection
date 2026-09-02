@@ -58,10 +58,3 @@ p3:
   incremental_ready: true
   retention_plan: data/runs/<run_id>/retention-plan.json
   sbom: data/runs/<run_id>/release/sbom.json
-
-legacy_2x:
-  production: false
-  normalization: removed_from_pipeline
-  database_services_runtime: false
-  build_shims: removed
-  validators: non_production_only
