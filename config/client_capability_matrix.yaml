@@ -2,22 +2,22 @@ version: 1
 clients:
   mihomo:
     artifact: yaml
-    native_rule_types: [domain, domain_suffix, domain_keyword, ip_cidr]
+    native_rule_types: [domain, domain_suffix, domain_keyword, domain_regex, ip_cidr, ip_cidr6]
   singbox:
     artifact: json
-    native_rule_types: [domain, domain_suffix, domain_keyword, domain_regex, ip_cidr]
+    native_rule_types: [domain, domain_suffix, domain_keyword, domain_regex, ip_cidr, ip_cidr6]
   surge:
     artifact: list
-    native_rule_types: [domain, domain_suffix, domain_keyword, ip_cidr, ip_cidr6]
+    native_rule_types: [domain, domain_suffix, domain_keyword, domain_regex, ip_cidr, ip_cidr6]
   shadowrocket:
     artifact: list
-    native_rule_types: [domain, domain_suffix, domain_keyword, ip_cidr, ip_cidr6]
+    native_rule_types: [domain, domain_suffix, domain_keyword, domain_regex, ip_cidr, ip_cidr6]
   quantumultx:
     artifact: list
-    native_rule_types: [domain, domain_suffix, domain_keyword, ip_cidr, ip_cidr6]
+    native_rule_types: [domain, domain_suffix, domain_keyword, domain_regex, ip_cidr, ip_cidr6]
   egern:
     artifact: yaml
-    native_rule_types: [domain, domain_suffix, domain_keyword, ip_cidr]
+    native_rule_types: [domain, domain_suffix, domain_keyword, domain_regex, ip_cidr, ip_cidr6]
   loon:
     artifact: list
-    native_rule_types: [domain, domain_suffix, domain_keyword, ip_cidr, ip_cidr6]
+    native_rule_types: [domain, domain_suffix, domain_keyword, domain_regex, ip_cidr, ip_cidr6]

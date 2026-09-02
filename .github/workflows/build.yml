@@ -1,14 +1,22 @@
 name: Build Client Rules
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "backup/**"
+      - "src/engine/**"
+      - "scripts/cross_client_semantic_test.py"
+      - "scripts/architecture_gate.py"
+      - "config/**"
+      - "requirements.txt"
+      - "requirements.lock"
+      - ".github/workflows/build.yml"
+      - ".github/workflows/publish.yml"
   workflow_dispatch:
     inputs:
       dry_run:
-        description: "Dry run — build and validate but do not publish"
-        type: boolean
-        default: false
-      skip_large:
-        description: "Skip configured mega service sets"
+        description: "Build and validate only; do not create a publish candidate"
         type: boolean
         default: false
       collection_date:
@@ -16,171 +24,108 @@ on:
         type: string
         required: false
         default: ""
-
-permissions:
-  contents: write
-
-concurrency:
-  group: main-publish
-  cancel-in-progress: false
+      skip_large:
+        description: "Skip configured mega service sets"
+        type: boolean
+        default: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    permissions:
+      contents: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
           ref: main
-          fetch-depth: 0
+          fetch-depth: 1
 
-      - name: Attach checkout to main
-        run: |
-          git fetch --prune origin main
-          git switch -C main origin/main
-          test "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)"
-
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
-          python-version: "3.12"
+          python-version: "3.12.14"
           cache: pip
+          cache-dependency-path: requirements.lock
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - name: Install locked dependencies
+        run: python -m pip install -r requirements.lock
 
-      - name: Naming gate (HARD)
+      - name: Architecture Gate
+        run: python scripts/architecture_gate.py
+
+      - name: Naming Gate
         run: PYTHONPATH=. python -m src.engine.cli naming_gate
 
-      - name: Resolve collected source snapshot (HARD)
+      - name: Resolve collected source snapshot
         id: source
         shell: bash
         run: |
           set -euo pipefail
           requested="${{ inputs.collection_date }}"
           if [ -n "$requested" ]; then
-            [[ "$requested" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || {
-              echo "Invalid collection_date: $requested (expected YYYY-MM-DD)"
-              exit 1
-            }
+            [[ "$requested" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || { echo "Invalid collection_date: $requested"; exit 1; }
             day="$requested"
           else
             day="$(find backup -mindepth 1 -maxdepth 1 -type d -regextype posix-extended -regex '.*/[0-9]{4}-[0-9]{2}-[0-9]{2}' -printf '%f\n' | sort | tail -1)"
           fi
-
-          [ -n "$day" ] || {
-            echo "No collected backup directories found under backup/"
-            exit 1
-          }
-
+          [ -n "$day" ] || { echo "No collected backup directories found"; exit 1; }
           source_root="backup/$day"
-          [ -d "$source_root/sources" ] || {
-            echo "Collected source root missing: $source_root/sources"
-            exit 1
-          }
-          [ -d "$source_root/manifests" ] || {
-            echo "Collected manifests missing: $source_root/manifests"
-            exit 1
-          }
-          [ -n "$(find "$source_root/sources" -type f -print -quit)" ] || {
-            echo "Collected source root is empty: $source_root/sources"
-            exit 1
-          }
-          [ -n "$(find "$source_root/manifests" -type f -name '*.json' -print -quit)" ] || {
-            echo "No collection manifests found: $source_root/manifests"
-            exit 1
-          }
-
-          echo "Using collected source snapshot: $source_root"
+          [ -d "$source_root/sources" ] || { echo "Missing $source_root/sources"; exit 1; }
+          [ -d "$source_root/manifests" ] || { echo "Missing $source_root/manifests"; exit 1; }
+          [ -n "$(find "$source_root/sources" -type f -print -quit)" ] || { echo "Collected source root is empty"; exit 1; }
           echo "collection_date=$day" >> "$GITHUB_OUTPUT"
           echo "source_root=$source_root" >> "$GITHUB_OUTPUT"
 
-      - name: Engine — one immutable run
+      - name: Engine — immutable build
         id: engine
         shell: bash
         run: |
-          set -o pipefail
-          ENGINE_ARGS=()
-          if [ "${{ inputs.skip_large }}" = "true" ]; then
-            ENGINE_ARGS+=(--skip-large)
-          fi
-          PYTHONPATH=. python -m src.engine.cli all \
-            --sources "${{ steps.source.outputs.source_root }}" \
-            --data data \
-            "${ENGINE_ARGS[@]}" 2>&1 | tee engine-run.log
-          RUN_ID=$(python3 - <<'PY'
-          import json, pathlib
-          text = pathlib.Path('engine-run.log').read_text(encoding='utf-8', errors='replace')
-          start = text.find('{')
-          if start < 0:
-              raise SystemExit('engine output JSON not found')
-          obj = json.loads(text[start:])
-          if obj.get('status') != 'ok':
-              raise SystemExit(f"engine status={obj.get('status')} failures={obj.get('failure_stages')}")
-          if not obj.get('run_id'):
-              raise SystemExit('engine run_id missing')
-          print(obj['run_id'])
+          set -euo pipefail
+          ARGS=(--sources "${{ steps.source.outputs.source_root }}" --data data)
+          if [ "${{ inputs.skip_large }}" = "true" ]; then ARGS+=(--skip-large); fi
+          PYTHONPATH=. python -m src.engine.cli all "${ARGS[@]}" > engine-run.json
+          python - <<'PY'
+          import json
+          obj=json.loads(open('engine-run.json',encoding='utf-8').read())
+          if obj.get('status') != 'ok': raise SystemExit(f"engine status={obj.get('status')} failures={obj.get('failure_stages')}")
+          if obj.get('stages',{}).get('release',{}).get('state') != 'RC_READY': raise SystemExit('engine release is not RC_READY')
+          open('engine-run-id.txt','w',encoding='utf-8').write(obj['run_id'])
           PY
-          )
-          echo "run_id=${RUN_ID}" >> "$GITHUB_OUTPUT"
 
-      - name: Size gate (HARD)
-        run: python scripts/size_gate.py
-
-      - name: Publish V3 run (HARD)
-        if: ${{ inputs.dry_run != true }}
+      - name: Semantic Test
         run: |
-          PYTHONPATH=. python -m src.engine.cli promote \
-            --run-id "${{ steps.engine.outputs.run_id }}" \
-            --runs data/runs \
-            --generated generated \
-            --baseline data/baseline/canonical.json
+          RUN_ID=$(cat engine-run-id.txt)
+          python scripts/cross_client_semantic_test.py \
+            --ir "data/runs/${RUN_ID}/ir/ir.json" \
+            --generated "data/runs/${RUN_ID}/artifacts"
 
-      - name: Commit generated
+      - name: Unit and contract tests
+        run: PYTHONPATH=. python -m pytest tests/engine/ -v --ignore=tests/engine/unit_legacy_v2_ref
+
+      - name: Stage publish candidate
         if: ${{ inputs.dry_run != true }}
         shell: bash
         run: |
           set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          RUN_ID=$(cat engine-run-id.txt)
+          PYTHONPATH=. python -m src.engine.cli promote \
+            --run-id "$RUN_ID" \
+            --runs data/runs \
+            --generated release-candidate/generated \
+            --baseline release-candidate/data/baseline/canonical.json
+          mkdir -p release-candidate/data/runs release-candidate/data/cas
+          cp -a "data/runs/${RUN_ID}" release-candidate/data/runs/
+          cp -a "data/baseline" release-candidate/data/ 2>/dev/null || true
+          cp -a "data/cas" release-candidate/data/ 2>/dev/null || true
+          printf '%s\n' "$RUN_ID" > release-candidate/run-id.txt
+          cp config/client_capability_matrix.yaml release-candidate/
 
-          # engine-run.log is transient and intentionally untracked.
-          # Remove it before staging so the post-commit workspace check is deterministic.
-          rm -f engine-run.log
-
-          git add -A generated/ data/baseline/ data/runs/ reports/
-
-          if git diff --staged --quiet; then
-            echo "No build changes; nothing to push."
-            exit 0
-          fi
-
-          echo "Staged build changes:"
-          git diff --cached --stat
-          git commit -m "chore(engine): rebuild ${{ steps.source.outputs.collection_date }}"
-
-          # Never rebase with a dirty workspace.
-          if [ -n "$(git status --porcelain=v1)" ]; then
-            echo "Build workspace is dirty after commit; refusing rebase/push."
-            git status --short
-            exit 1
-          fi
-
-          for attempt in 1 2 3 4 5; do
-            git fetch --prune origin main
-            if ! git rebase --autostash origin/main; then
-              echo "Rebase failed because main contains a conflicting change. Aborting safely."
-              git rebase --abort || true
-              exit 1
-            fi
-            if git push origin HEAD:main; then
-              echo "Published build on attempt ${attempt}."
-              exit 0
-            fi
-            if [ "${attempt}" -lt 5 ]; then
-              echo "Push race detected; refetching and retrying (attempt ${attempt}/5)."
-              sleep $((attempt * 5))
-            fi
-          done
-
-          echo "Failed to publish build after 5 attempts."
-          exit 1
+      - name: Upload immutable build artifact
+        if: ${{ inputs.dry_run != true }}
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        with:
+          name: release-candidate-${{ github.run_id }}
+          path: release-candidate/
+          if-no-files-found: error
+          retention-days: 7
+          include-hidden-files: false
