@@ -43,10 +43,6 @@ def decide(previous: dict[str, Any], source: dict[str, Any], *, now: datetime | 
     if force:
         return ScheduleDecision("FETCH_FORCED", "manual_force_refresh")
 
-    retry_at = parse_timestamp(previous.get("next_retry_at"))
-    if retry_at and now < retry_at:
-        return ScheduleDecision("SKIP_RETRY_WINDOW", "failure_backoff_active", retry_at)
-
     last_success = parse_timestamp(previous.get("last_success_at"))
     if last_success is None:
         return ScheduleDecision("FETCH_INITIAL", "no_successful_snapshot")
@@ -56,6 +52,10 @@ def decide(previous: dict[str, Any], source: dict[str, Any], *, now: datetime | 
     fresh_until = last_success + timedelta(hours=interval)
     if now < fresh_until:
         return ScheduleDecision("SKIP_FRESH", "freshness_window_active", fresh_until)
+
+    retry_at = parse_timestamp(previous.get("next_retry_at"))
+    if retry_at and now < retry_at:
+        return ScheduleDecision("SKIP_RETRY_WINDOW", "failure_backoff_active", retry_at)
     return ScheduleDecision("FETCH_DUE", "freshness_window_expired")
 
 
