@@ -18,7 +18,7 @@ from fetchers import get_fetcher  # noqa: E402
 from src.engine.cas.store import digest_bytes  # noqa: E402
 from src.engine.collection.acquisition_cas import load as cas_load, store as cas_store  # noqa: E402
 from src.engine.collection.manifest import seal  # noqa: E402
-from src.engine.collection.scheduler import decide, next_retry_at  # noqa: E402
+from src.engine.collection.scheduler import ScheduleDecision, decide, next_retry_at  # noqa: E402
 from src.engine.collection.source_state import FetchStateStore  # noqa: E402
 
 REGISTRY_PATH = ROOT / "sources" / "registry.yaml"
@@ -84,20 +84,31 @@ def _cache_key(source_id: str, entry_path: str) -> str:
 
 def _load_cached(previous: dict[str, Any]) -> tuple[bytes, str] | None:
     digest = previous.get("cas_sha256") or previous.get("sha256")
-    if not digest:
-        return None
-    try:
-        content = cas_load(str(digest), ROOT)
-    except (FileNotFoundError, RuntimeError, OSError):
-        return None
-    if digest_bytes(content) != str(digest):
-        return None
-    return content, str(digest)
+    if digest:
+        try:
+            content = cas_load(str(digest), ROOT)
+            if digest_bytes(content) == str(digest):
+                return content, str(digest)
+        except (FileNotFoundError, RuntimeError, OSError):
+            pass
+    cached = previous.get("local")
+    cached_path = ROOT / str(cached) if cached else None
+    if cached_path and cached_path.is_file() and previous.get("sha256"):
+        content = cached_path.read_bytes()
+        if digest_bytes(content) == str(previous["sha256"]):
+            cas_sha = cas_store(content, ROOT)
+            return content, cas_sha
+    return None
 
 
-def _fetch_entry(src: dict[str, Any], cfg: dict[str, Any], entry: dict[str, str], previous: dict[str, Any], *, force_refresh: bool = False) -> dict[str, Any]:
-    sid = str(src["id"])
-    decision = decide(previous, src, force=force_refresh)
+def _source_for_compat(src: dict[str, Any] | str) -> dict[str, Any]:
+    return src if isinstance(src, dict) else {"id": str(src)}
+
+
+def _fetch_entry(src: dict[str, Any] | str, cfg: dict[str, Any], entry: dict[str, str], previous: dict[str, Any], *, force_refresh: bool = False) -> dict[str, Any]:
+    source = _source_for_compat(src)
+    sid = str(source["id"])
+    decision: ScheduleDecision = decide(previous, source, force=force_refresh)
     if decision.action.startswith("SKIP_"):
         cached = _load_cached(previous)
         if cached is not None:
@@ -105,7 +116,7 @@ def _fetch_entry(src: dict[str, Any], cfg: dict[str, Any], entry: dict[str, str]
             return {"name": entry["name"], "path": entry["path"], "service": entry["service"], "url": previous.get("last_url"),
                     "status": "skipped", "decision": decision.action, "reason": decision.reason, "content": content,
                     "sha256": digest, "cas_sha256": digest, "size": len(content), "cached_from_cas": True}
-        decision = type(decision)("FETCH_DUE", "cached_snapshot_unavailable")
+        decision = ScheduleDecision("FETCH_DUE", "cached_snapshot_unavailable")
 
     headers: dict[str, str] = {}
     if previous.get("etag"):
@@ -227,7 +238,6 @@ def main() -> int:
     args = parser.parse_args()
     if args.workers < 1 or args.workers > 64:
         raise SystemExit("[collect] --workers must be between 1 and 64")
-
     registry = load_registry()
     sources = [s for s in registry.get("sources", []) if s.get("enabled")]
     if args.list:
@@ -236,7 +246,6 @@ def main() -> int:
         return 0
     if args.source:
         sources = [s for s in sources if s["id"] in args.source]
-
     day_dir = BACKUP_ROOT / args.date
     (day_dir / "sources").mkdir(parents=True, exist_ok=True)
     manifests_dir = day_dir / "manifests"
@@ -255,7 +264,6 @@ def main() -> int:
         manifest = collect_source(source, day_dir, health, state, args.workers, force_refresh=args.force_refresh)
         summary.append(manifest)
         (manifests_dir / f"{source['id']}.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-
     state.save()
     day_manifest = seal({"date": args.date, "registry_version": registry.get("version"), "collection_leaf": "service_rules_v3", "sources": summary})
     (manifests_dir / "_day.json").write_text(json.dumps(day_manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
