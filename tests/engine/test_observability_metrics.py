@@ -31,7 +31,7 @@ def test_quarantine_is_not_counted_as_source_error(tmp_path: Path) -> None:
 def test_quarantine_within_policy_does_not_block_release() -> None:
     metrics = {
         "rates": {
-            "clean_rate": 0.99,
+            "clean_rate": 1.0,
             "quarantine_rate": 0.01,
             "canonical_error_rate": 0.0,
         },
