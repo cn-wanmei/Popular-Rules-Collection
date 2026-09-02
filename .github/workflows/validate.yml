@@ -28,7 +28,7 @@ jobs:
         run: PYTHONPATH=. python -m src.engine.cli naming_gate
 
       - name: Engine unit + contract tests
-        run: PYTHONPATH=. python -m pytest tests/engine/ -v --tb=short --ignore=tests/engine/unit_legacy_v2_ref
+        run: PYTHONPATH=. python -m pytest tests/engine/ -v --tb=short
 
       - name: IP registry validate
         run: python scripts/validate_ip_registry.py
