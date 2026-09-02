@@ -1,5 +1,5 @@
 version: 3
-updated: "2026-09-01"
+updated: "2026-09-02"
 publish_concurrency_group: main-publish
 engine:
   entry: python -m src.engine.cli all
@@ -15,9 +15,9 @@ stages:
     command: python -m src.engine.cli naming_gate
     required: true
   collect:
-    script: scripts/collect.py
+    script: src.engine.collection
     required: true
-    note: "Upstream transport only; no normalization or build responsibility."
+    note: "Upstream transport only; collection produces an immutable snapshot and manifest."
   engine:
     command: python -m src.engine.cli all --sources backup/<date> --data data
     required: true
@@ -63,5 +63,5 @@ legacy_2x:
   production: false
   normalization: removed_from_pipeline
   database_services_runtime: false
-  build_shims: deprecated
+  build_shims: removed
   validators: non_production_only
