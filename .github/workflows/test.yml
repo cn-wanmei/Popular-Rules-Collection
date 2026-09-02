@@ -27,4 +27,3 @@ jobs:
 
       - name: Legacy tests (non-engine)
         run: python -m pytest tests/ --ignore=tests/engine/ -q
-        continue-on-error: true
