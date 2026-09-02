@@ -20,12 +20,11 @@ on:
       - "requirements.lock"
       - ".github/workflows/**"
 
-permissions:
-  contents: read
-
 jobs:
   p3-audit:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
       - name: Set up Python
