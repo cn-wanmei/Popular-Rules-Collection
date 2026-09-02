@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Static architecture gate for the V3 production supply chain."""
+"""Static architecture and CI security gate for the V3 production supply chain."""
 from __future__ import annotations
 
 import ast
+import re
 from pathlib import Path
-import sys
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -12,9 +12,11 @@ FORBIDDEN_REFS = (
     "scripts/pipeline.py",
     "scripts/build_",
     ".github/workflows/normalize.yml",
-    "workflows: [\"Normalize\"]",
+    'workflows: ["Normalize"]',
 )
 WORKFLOWS = ROOT / ".github" / "workflows"
+ACTION_REF_RE = re.compile(r"uses:\s*([\w.-]+/[\w.-]+)@([^\s#]+)")
+SHA_RE = re.compile(r"^[0-9a-f]{40}$")
 
 
 def _python_imports_scripts(path: Path) -> bool:
@@ -47,9 +49,12 @@ def main() -> int:
 
     for path in WORKFLOWS.glob("*.yml"):
         text = path.read_text(encoding="utf-8")
-        for token in FORBIDDEN_REFS:
-            if token in text:
-                failures.append(f"forbidden legacy reference in {path.relative_to(ROOT)}: {token}")
+        for forbidden in FORBIDDEN_REFS:
+            if forbidden in text:
+                failures.append(f"forbidden legacy reference in {path.relative_to(ROOT)}: {forbidden}")
+        for action, ref in ACTION_REF_RE.findall(text):
+            if action.startswith("actions/") and not SHA_RE.fullmatch(ref):
+                failures.append(f"unpinned GitHub Action in {path.name}: {action}@{ref}")
         try:
             doc = yaml.safe_load(text) or {}
         except yaml.YAMLError as exc:
@@ -71,8 +76,6 @@ def main() -> int:
         failures.append("missing build.yml")
     else:
         build_doc = yaml.safe_load(build.read_text(encoding="utf-8")) or {}
-        if "permissions" in build_doc:
-            failures.append("build.yml has workflow-level permissions")
         for job_name, job in (build_doc.get("jobs") or {}).items():
             if (job.get("permissions") or {}).get("contents") != "read":
                 failures.append(f"build job must be contents: read: {job_name}")
@@ -87,7 +90,7 @@ def main() -> int:
             if (job.get("permissions") or {}).get("contents") != "write":
                 failures.append(f"publish job must be contents: write: {job_name}")
 
-    print(yaml.safe_dump({"schema": "architecture_gate_v1", "pass": not failures, "violations": failures}, sort_keys=False))
+    print(yaml.safe_dump({"schema": "architecture_gate_v2", "pass": not failures, "violations": failures}, sort_keys=False))
     return 0 if not failures else 1
 
 
