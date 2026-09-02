@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """collect_datasets.py — fetch Network Dataset sources (geosite/geoip/mmdb/dat).
 
-Isolated from Service Rules collect. Writes database/{geosite,geoip}/ and
-generated/mmdb artifacts + provenance. Never writes into database/services.
+Isolated from Service Rules collect. Writes network dataset snapshots and
+published artifacts; never writes into the legacy service store.
 """
 from __future__ import annotations
 
@@ -115,12 +115,7 @@ def main() -> int:
             continue
 
         text = content.decode("utf-8", errors="replace")
-        lines = [
-            ln.strip()
-            for ln in text.splitlines()
-            if ln.strip() and not ln.strip().startswith("#")
-        ]
-
+        lines = [ln.strip() for ln in text.splitlines() if ln.strip() and not ln.strip().startswith("#")]
         if not dest_path:
             print(f"  SKIP {did}: no path")
             fail += 1
@@ -137,24 +132,15 @@ def main() -> int:
             out_lines: list[str] = []
             for ln in lines:
                 v = ln
-                for prefix in (
-                    "domain:",
-                    "full:",
-                    "keyword:",
-                    "regexp:",
-                    "DOMAIN,",
-                    "DOMAIN-SUFFIX,",
-                ):
+                for prefix in ("domain:", "full:", "keyword:", "regexp:", "DOMAIN,", "DOMAIN-SUFFIX,"):
                     if v.lower().startswith(prefix.lower()):
-                        v = v[len(prefix) :].strip()
+                        v = v[len(prefix):].strip()
                 key = v.lower()
                 if key in seen:
                     continue
                 seen.add(key)
                 out_lines.append(v)
-            dest.write_text(
-                "\n".join(out_lines) + ("\n" if out_lines else ""), encoding="utf-8"
-            )
+            dest.write_text("\n".join(out_lines) + ("\n" if out_lines else ""), encoding="utf-8")
             n = len(out_lines)
 
         prov = {
@@ -174,23 +160,14 @@ def main() -> int:
             },
             "notes": ds.get("notes") or "",
         }
-        (PROV / f"{did}.json").write_text(
-            json.dumps(prov, indent=2) + "\n", encoding="utf-8"
-        )
+        (PROV / f"{did}.json").write_text(json.dumps(prov, indent=2) + "\n", encoding="utf-8")
         results[did] = prov
         ok += 1
         print(f"  OK {did} kind={kind} lines={n}")
 
     rep_dir = REPORTS / day
     rep_dir.mkdir(parents=True, exist_ok=True)
-    (rep_dir / "dataset_collect.json").write_text(
-        json.dumps(
-            {"ok": ok, "failed": fail, "skipped": skip, "results": results},
-            indent=2,
-        )
-        + "\n",
-        encoding="utf-8",
-    )
+    (rep_dir / "dataset_collect.json").write_text(json.dumps({"ok": ok, "failed": fail, "skipped": skip, "results": results}, indent=2) + "\n", encoding="utf-8")
     print(f"[collect_datasets] ok={ok} failed={fail} skipped={skip}")
     return 0 if fail == 0 else 1
 
