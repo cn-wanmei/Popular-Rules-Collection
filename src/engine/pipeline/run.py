@@ -47,8 +47,17 @@ def _new_run_id() -> str:
     return datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ") + "-run"
 
 
+def _resolve_repo_path(path: Path | str) -> Path:
+    """Resolve CLI paths against the repository root so relative inputs are stable."""
+    value = Path(path).expanduser()
+    if not value.is_absolute():
+        value = ROOT / value
+    return value.resolve()
+
+
 def _load_collection_manifest(sources_root: Path) -> dict[str, Any] | None:
     """Load the Collection DAG manifest when sources_root is a collection day root."""
+    sources_root = _resolve_repo_path(sources_root)
     path = sources_root / "manifests" / "_collection.json"
     if not path.exists():
         return None
@@ -75,8 +84,8 @@ def run_pipeline(
     skip_large: bool = False,
     snapshot_id: str | None = None,
 ) -> dict[str, Any]:
-    data_root = Path(data_root)
-    sources_root = Path(sources_root)
+    data_root = _resolve_repo_path(data_root)
+    sources_root = _resolve_repo_path(sources_root)
     collection_manifest = _load_collection_manifest(sources_root)
     if collection_manifest:
         collection_root = Path(str(collection_manifest.get("root", "")))
