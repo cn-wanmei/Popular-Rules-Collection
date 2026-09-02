@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -15,7 +14,6 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-
 from fetchers import get_fetcher  # noqa: E402
 from src.engine.cas.store import digest_bytes  # noqa: E402
 from src.engine.collection.acquisition_cas import load as cas_load, store as cas_store  # noqa: E402
@@ -97,20 +95,16 @@ def _load_cached(previous: dict[str, Any]) -> tuple[bytes, str] | None:
     return content, str(digest)
 
 
-def _fetch_entry(src: dict[str, Any], cfg: dict[str, Any], entry: dict[str, str], previous: dict[str, Any], *, force_refresh: bool) -> dict[str, Any]:
+def _fetch_entry(src: dict[str, Any], cfg: dict[str, Any], entry: dict[str, str], previous: dict[str, Any], *, force_refresh: bool = False) -> dict[str, Any]:
     sid = str(src["id"])
     decision = decide(previous, src, force=force_refresh)
-    cached = None
     if decision.action.startswith("SKIP_"):
         cached = _load_cached(previous)
         if cached is not None:
             content, digest = cached
-            return {
-                "name": entry["name"], "path": entry["path"], "service": entry["service"],
-                "url": previous.get("last_url"), "status": "skipped", "decision": decision.action,
-                "reason": decision.reason, "content": content, "sha256": digest, "cas_sha256": digest,
-                "size": len(content), "cached_from_cas": True,
-            }
+            return {"name": entry["name"], "path": entry["path"], "service": entry["service"], "url": previous.get("last_url"),
+                    "status": "skipped", "decision": decision.action, "reason": decision.reason, "content": content,
+                    "sha256": digest, "cas_sha256": digest, "size": len(content), "cached_from_cas": True}
         decision = type(decision)("FETCH_DUE", "cached_snapshot_unavailable")
 
     headers: dict[str, str] = {}
@@ -118,26 +112,20 @@ def _fetch_entry(src: dict[str, Any], cfg: dict[str, Any], entry: dict[str, str]
         headers["If-None-Match"] = str(previous["etag"])
     if previous.get("last_modified"):
         headers["If-Modified-Since"] = str(previous["last_modified"])
-
     result = get_fetcher(cfg).fetch_one({**entry, "headers": headers})
     result.source_id = sid
-    meta = {
-        "name": entry["name"], "path": entry["path"], "service": entry["service"],
-        "url": result.url, "status_code": result.status_code,
-        "etag": result.headers.get("etag"), "last_modified": result.headers.get("last-modified"),
-        "decision": decision.action, "reason": decision.reason,
-    }
+    meta = {"name": entry["name"], "path": entry["path"], "service": entry["service"], "url": result.url,
+            "status_code": result.status_code, "etag": result.headers.get("etag"),
+            "last_modified": result.headers.get("last-modified"), "decision": decision.action, "reason": decision.reason}
     if result.not_modified:
         cached = _load_cached(previous)
         if cached is not None:
             content, digest = cached
             return {**meta, "status": "not_modified", "content": content, "cas_sha256": digest, "sha256": digest,
                     "size": len(content), "cached_from_cas": True}
-        # A 304 without an intact local snapshot is unsafe; retry unconditionally once.
         result = get_fetcher(cfg).fetch_one(entry)
         result.source_id = sid
-        meta.update({"url": result.url, "status_code": result.status_code,
-                     "etag": result.headers.get("etag") or meta.get("etag"),
+        meta.update({"url": result.url, "status_code": result.status_code, "etag": result.headers.get("etag") or meta.get("etag"),
                      "last_modified": result.headers.get("last-modified") or meta.get("last_modified"),
                      "decision": "FETCH_RECOVERY", "reason": "304_cache_unavailable"})
     if not result.ok or result.content is None:
@@ -153,13 +141,13 @@ def _fetch_entry(src: dict[str, Any], cfg: dict[str, Any], entry: dict[str, str]
 def _record_failure(state: FetchStateStore, key: str, previous: dict[str, Any], item: dict[str, Any]) -> None:
     failures = int(previous.get("failure_count") or 0) + 1
     now = utc_now()
-    state.put(key, last_checked_at=now.isoformat(), last_failure_at=now.isoformat(),
-              failure_count=failures, last_status=item.get("status"), last_url=item.get("url"),
+    state.put(key, last_checked_at=now.isoformat(), last_failure_at=now.isoformat(), failure_count=failures,
+              last_status=item.get("status"), last_url=item.get("url"),
               next_retry_at=next_retry_at(now=now, failure_count=failures).isoformat())
 
 
 def collect_source(src: dict[str, Any], day_dir: Path, health: dict[str, Any], state: FetchStateStore,
-                   max_workers: int, *, force_refresh: bool) -> dict[str, Any]:
+                   max_workers: int, *, force_refresh: bool = False) -> dict[str, Any]:
     sid = str(src["id"])
     entries = rules_for(src)
     out_dir = day_dir / "sources" / sid
@@ -167,20 +155,15 @@ def collect_source(src: dict[str, Any], day_dir: Path, health: dict[str, Any], s
     cfg = fetcher_cfg_for(src)
     workers = max(1, min(max_workers, len(entries) or 1))
     results: list[dict[str, Any]] = []
-
     with ThreadPoolExecutor(max_workers=workers, thread_name_prefix=f"fetch-{sid}") as pool:
-        futures = {
-            pool.submit(_fetch_entry, src, cfg, entry, state.get(_cache_key(sid, entry["path"])), force_refresh=force_refresh): entry
-            for entry in entries
-        }
+        futures = {pool.submit(_fetch_entry, src, cfg, entry, state.get(_cache_key(sid, entry["path"])), force_refresh=force_refresh): entry for entry in entries}
         for future in as_completed(futures):
             entry = futures[future]
             try:
                 results.append(future.result())
             except Exception as exc:
-                results.append({"name": entry["name"], "path": entry["path"], "service": entry["service"],
-                                "status": "failed", "decision": "FETCH_ERROR", "reason": type(exc).__name__,
-                                "error": f"{type(exc).__name__}: {exc}"})
+                results.append({"name": entry["name"], "path": entry["path"], "service": entry["service"], "status": "failed",
+                                "decision": "FETCH_ERROR", "reason": type(exc).__name__, "error": f"{type(exc).__name__}: {exc}"})
 
     results.sort(key=lambda x: (x.get("service", ""), x.get("name", ""), x.get("path", "")))
     files_meta: list[dict[str, Any]] = []
@@ -202,15 +185,12 @@ def collect_source(src: dict[str, Any], day_dir: Path, health: dict[str, Any], s
             meta["local"] = str(local.relative_to(day_dir))
             meta["cas_object"] = f"data/cas/acquisition/{sha[:2]}/{sha[2:]}"
             files_meta.append(meta)
-            now = utc_now()
-            if status == "skipped":
-                # Do not mutate persistent state for a scheduler skip; this keeps no-op runs quiet.
-                continue
-            state.put(key, etag=item.get("etag"), last_modified=item.get("last_modified"), sha256=sha,
-                      cas_sha256=sha, size=len(content), local=str(local.relative_to(ROOT)),
-                      last_checked_at=now.isoformat(), last_success_at=now.isoformat(),
-                      last_changed_at=now.isoformat() if status == "ok" else previous.get("last_changed_at"),
-                      last_status=status, last_url=item.get("url"), failure_count=0, next_retry_at=None)
+            if status != "skipped":
+                now = utc_now()
+                state.put(key, etag=item.get("etag"), last_modified=item.get("last_modified"), sha256=sha, cas_sha256=sha,
+                          size=len(content), local=str(local.relative_to(ROOT)), last_checked_at=now.isoformat(),
+                          last_success_at=now.isoformat(), last_changed_at=now.isoformat() if status == "ok" else previous.get("last_changed_at"),
+                          last_status=status, last_url=item.get("url"), failure_count=0, next_retry_at="")
         else:
             fail += status != "blocked_empty"
             empty_blocked += status == "blocked_empty"
@@ -218,14 +198,11 @@ def collect_source(src: dict[str, Any], day_dir: Path, health: dict[str, Any], s
             _record_failure(state, key, previous, item)
 
     hs = health.setdefault("sources", {}).setdefault(sid, {})
-    hs.update({
-        "last_attempt": utc_now().isoformat(), "files_ok": fetched, "files_not_modified": unchanged,
-        "files_skipped": skipped, "files_failed": fail, "empty_blocked": empty_blocked,
-        "rules_declared": len(entries), "conditional_cache_hits": unchanged,
-        "scheduler_skips": skipped, "fetch_workers": workers, "cas_objects": fetched + unchanged + skipped,
-    })
+    hs.update({"last_attempt": utc_now().isoformat(), "files_ok": fetched, "files_not_modified": unchanged, "files_skipped": skipped,
+               "files_failed": fail, "empty_blocked": empty_blocked, "rules_declared": len(entries), "conditional_cache_hits": unchanged,
+               "scheduler_skips": skipped, "fetch_workers": workers, "cas_objects": fetched + unchanged + skipped})
     if fetched + unchanged + skipped > 0:
-        hs["last_success"] = hs.get("last_success") or utc_now().isoformat()
+        hs["last_success"] = utc_now().isoformat()
         hs["failure_count"] = 0
         hs["status"] = "healthy" if fail == 0 and empty_blocked == 0 else "degraded"
     else:
@@ -234,14 +211,10 @@ def collect_source(src: dict[str, Any], day_dir: Path, health: dict[str, Any], s
         hs["status"] = "down"
         hs["reason"] = "all fetches failed" if entries else "no rules in registry"
 
-    return {
-        "source": sid, "fetch": cfg.get("type"), "files_ok": fetched, "files_not_modified": unchanged,
-        "files_skipped": skipped, "files_failed": fail, "empty_blocked": empty_blocked,
-        "rules_declared": len(entries), "conditional_cache_hits": unchanged, "scheduler_skips": skipped,
-        "files": files_meta, "registry_priority": src.get("priority"), "registry_trust": src.get("trust"),
-        "critical": bool(src.get("critical") or (src.get("collection") or {}).get("critical")),
-        "concurrency_workers": workers,
-    }
+    return {"source": sid, "fetch": cfg.get("type"), "files_ok": fetched, "files_not_modified": unchanged, "files_skipped": skipped,
+            "files_failed": fail, "empty_blocked": empty_blocked, "rules_declared": len(entries), "conditional_cache_hits": unchanged,
+            "scheduler_skips": skipped, "files": files_meta, "registry_priority": src.get("priority"), "registry_trust": src.get("trust"),
+            "critical": bool(src.get("critical") or (src.get("collection") or {}).get("critical")), "concurrency_workers": workers}
 
 
 def main() -> int:
@@ -271,7 +244,6 @@ def main() -> int:
     health = load_health()
     state = FetchStateStore(STATE_PATH)
     summary: list[dict[str, Any]] = []
-
     print(f"[collect] registry v{registry.get('version')} date={args.date} sources={len(sources)} workers={args.workers} force={args.force_refresh}")
     for source in sources:
         try:
@@ -288,7 +260,6 @@ def main() -> int:
     day_manifest = seal({"date": args.date, "registry_version": registry.get("version"), "collection_leaf": "service_rules_v3", "sources": summary})
     (manifests_dir / "_day.json").write_text(json.dumps(day_manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     save_health(health)
-
     total_ok = sum(s["files_ok"] for s in summary)
     total_unchanged = sum(s["files_not_modified"] for s in summary)
     total_skipped = sum(s["files_skipped"] for s in summary)
