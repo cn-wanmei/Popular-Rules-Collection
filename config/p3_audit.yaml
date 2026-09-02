@@ -1,0 +1,33 @@
+version: 1
+schema: p3_audit_policy_v1
+semantic_diff:
+  canonical_fields:
+    - value
+    - classification
+    - action
+    - match
+    - policy
+    - type
+    - tags
+source_health:
+  weights:
+    http_failure: 40
+    latency_penalty_after_ms: 2000
+    max_latency_penalty: 20
+    error_penalty: 5
+    max_error_penalty: 25
+    stale_after_hours: 168
+provenance:
+  node_types: [source, artifact]
+  edge_required_fields: [source, artifact, stage]
+release:
+  manifest_schema: release_manifest_v1
+  checksum_algorithm: sha256
+  sbom_format: CycloneDX
+  rollback_strategy: checkout_commit
+dependency_lock:
+  source: requirements.lock
+  pin_operator: "=="
+action_sha:
+  required_length: 40
+  forbidden_refs: [branch, tag]
