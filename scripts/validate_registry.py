@@ -7,7 +7,7 @@ Core invariant:
   Must: R ⊆ P
 
 Also checks light structural integrity of primary (parent/children/service_type).
-Does NOT replace schema_validate (which checks database/services presence).
+This is the current source registry gate; retired legacy schema validation is separate.
 """
 from __future__ import annotations
 
@@ -38,7 +38,6 @@ def primary_map() -> dict[str, dict]:
         base = dict(services.get(sid) or {})
         base.update(ov)
         services[sid] = base
-    # apply defaults
     defaults = prim.get("defaults") or {}
     out: dict[str, dict] = {}
     for sid, meta in services.items():
@@ -60,7 +59,6 @@ def registry_service_ids() -> set[str]:
             if not name:
                 continue
             sid = str(name).lower().strip()
-            # strip common client prefixes if any
             for prefix in ("clash_", "surge_"):
                 if sid.startswith(prefix):
                     sid = sid[len(prefix) :]
@@ -76,21 +74,19 @@ def main() -> int:
 
     cats = load_yaml(CAT)
     cat_ids = {str(c["id"]) for c in (cats.get("categories") or [])}
-    P = primary_map()
-    R = registry_service_ids()
+    primary = primary_map()
+    registered = registry_service_ids()
 
-    if not R:
+    if not registered:
         errors.append("registry has no rule names")
-    if not P:
+    if not primary:
         errors.append("service_primary is empty")
 
-    # Core: R ⊆ P
-    orphans = sorted(R - set(P.keys()))
+    orphans = sorted(registered - set(primary.keys()))
     for oid in orphans:
         errors.append(f"registry service has no primary: {oid}")
 
-    # Light primary structure
-    for sid, meta in P.items():
+    for sid, meta in primary.items():
         pc = meta.get("primary_category")
         if not pc:
             errors.append(f"{sid}: missing primary_category")
@@ -103,31 +99,32 @@ def main() -> int:
         if st == "aggregate":
             if not children:
                 warnings.append(f"{sid}: aggregate without children")
-            for c in children:
-                if c not in P:
-                    errors.append(f"{sid}: child '{c}' not in primary")
+            for child in children:
+                if child not in primary:
+                    errors.append(f"{sid}: child '{child}' not in primary")
         elif children:
             errors.append(f"{sid}: service_type=service must not have children")
         parent = meta.get("parent")
         if parent:
-            if parent not in P:
+            if parent not in primary:
                 errors.append(f"{sid}: parent '{parent}' not in primary")
-            elif P[parent].get("service_type", "service") != "aggregate":
+            elif primary[parent].get("service_type", "service") != "aggregate":
                 errors.append(f"{sid}: parent '{parent}' is not aggregate")
 
-    # IDs only in primary (ok) — optional info
-    only_p = sorted(set(P.keys()) - R)
-    if only_p:
+    primary_only = sorted(set(primary.keys()) - registered)
+    if primary_only:
         warnings.append(
-            f"{len(only_p)} primary-only ids (not in registry rules) — ok if intentional"
+            f"{len(primary_only)} primary-only ids (not in registry rules) — ok if intentional"
         )
 
-    print(f"[validate_registry] registry={len(R)} primary={len(P)} "
-          f"orphans={len(orphans)} errors={len(errors)} warnings={len(warnings)}")
-    for e in errors[:50]:
-        print(f"  ERROR {e}")
-    for w in warnings[:20]:
-        print(f"  WARN  {w}")
+    print(
+        f"[validate_registry] registry={len(registered)} primary={len(primary)} "
+        f"orphans={len(orphans)} errors={len(errors)} warnings={len(warnings)}"
+    )
+    for error in errors[:50]:
+        print(f"  ERROR {error}")
+    for warning in warnings[:20]:
+        print(f"  WARN  {warning}")
     return 1 if errors else 0
 
 

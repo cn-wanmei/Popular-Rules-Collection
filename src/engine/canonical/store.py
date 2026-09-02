@@ -1,4 +1,4 @@
-"""Canonical Rule Store v1 — independent of database/services and V2 models.
+"""Canonical Rule Store v1 — independent of V2 models.
 
 Input: ingest result (from Source Snapshot)
 Output: data/.../canonical/
@@ -64,12 +64,11 @@ def build_canonical(
                     memberships=[],
                 )
                 rules.append(rule)
-            # always record membership
             if sid:
                 memberships.append({
                     "rule_id": rid,
                     "entity": str(sid),
-                    "relation": "member",  # future: exclusive / dependency / shared
+                    "relation": "member",
                 })
         except Exception as e:
             errors.append({
@@ -78,7 +77,6 @@ def build_canonical(
                 "record": rec,
             })
 
-    # write artifacts
     rules_path = out_dir / "rules.jsonl"
     mem_path = out_dir / "memberships.jsonl"
     err_path = out_dir / "errors.jsonl"
@@ -103,7 +101,7 @@ def build_canonical(
         "unique_rules": len(rules),
         "memberships": len(memberships),
         "errors": len(errors),
-        "source": "engine_ingest_snapshot",  # never "v2_database_services_import"
+        "source": "engine_ingest_snapshot",
         "v2_runtime_dependency": 0,
     }
     (out_dir / "manifest.json").write_text(

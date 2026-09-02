@@ -17,7 +17,7 @@ build:
 	$(ENGINE) adapters
 
 validate:
-	$(PYTHON) -m pytest tests/engine/ -v --ignore=tests/engine/unit_legacy_v2_ref
+	$(PYTHON) -m pytest tests/engine/ -v
 
 test:
-	$(PYTHON) -m pytest tests/engine/ -v --ignore=tests/engine/unit_legacy_v2_ref
+	$(PYTHON) -m pytest tests/engine/ -v

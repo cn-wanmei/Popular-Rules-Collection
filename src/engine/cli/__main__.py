@@ -4,7 +4,7 @@ Usage:
   python -m src.engine.cli all
   python -m src.engine.cli naming_gate
   python -m src.engine.cli snapshot|quarantine|canonical|hierarchy|ir|adapters|diff|golden|release|publish
-  python -m src.engine.cli migrate-legacy --database-services ./database/services
+  python -m src.engine.cli migrate-legacy --database-services <legacy-service-dir>
   python -m src.engine.cli promote --run-id <id>
   python -m src.engine.cli rollback --run-id <id>
   python -m src.engine.cli reproducibility --run-a <path> --run-b <path>
@@ -91,7 +91,7 @@ def main(argv: list[str] | None = None) -> int:
     p_rb.add_argument("--runs", type=Path, default=Path("data/runs"))
     p_rb.add_argument("--generated", type=Path, default=Path("generated"))
 
-    p_mig = sub.add_parser("migrate-legacy", help="database/services → Source Snapshot")
+    p_mig = sub.add_parser("migrate-legacy", help="Migrate the legacy service store into a Source Snapshot")
     p_mig.add_argument("--database-services", type=Path, required=True)
     p_mig.add_argument("--snapshots", type=Path, default=Path("data/snapshots"))
     p_mig.add_argument("--snapshot-id", type=str, default=None)

@@ -13,20 +13,28 @@ FORBIDDEN_IMPORT_SUBSTRINGS = (
 )
 
 ALLOWED_LEGACY_TOUCH = {"src/engine/ingest/migrate_legacy.py"}
-
+LEGACY_SERVICE_DIR = Path("database") / "services"
 LEGACY_PRODUCTION_REFERENCES = (
-    "scripts/normalize.py",
-    "scripts/deduplicate.py",
-    "scripts/schema_validate.py",
-    "scripts/validate.py",
-    "scripts/builder_validate.py",
-    "database/services",
-    "database/domains",
-    "database/ips",
+    Path("scripts") / "normalize.py",
+    Path("scripts") / "deduplicate.py",
+    Path("scripts") / "schema_validate.py",
+    Path("scripts") / "validate.py",
+    Path("scripts") / "builder_validate.py",
+    LEGACY_SERVICE_DIR,
+    Path("database") / "domains",
+    Path("database") / "ips",
     "python scripts/normalize.py",
     "python scripts/deduplicate.py",
     "build_from_v2_services",
 )
+
+
+def _path_text(path: Path) -> str:
+    return path.as_posix()
+
+
+def _legacy_ref_texts() -> tuple[str, ...]:
+    return tuple(_path_text(value) if isinstance(value, Path) else value for value in LEGACY_PRODUCTION_REFERENCES)
 
 
 def run_naming_gate(repo_root: Path) -> dict[str, Any]:
@@ -54,14 +62,14 @@ def run_naming_gate(repo_root: Path) -> dict[str, Any]:
         if not workflow.exists():
             continue
         text = workflow.read_text(encoding="utf-8", errors="ignore")
-        for bad in LEGACY_PRODUCTION_REFERENCES:
+        for bad in _legacy_ref_texts():
             if bad in text:
                 violations.append(f"{workflow.relative_to(repo_root)}: forbidden legacy production reference {bad}")
 
     pipeline_cfg = repo_root / "config" / "pipeline.yaml"
     if pipeline_cfg.exists():
         text = pipeline_cfg.read_text(encoding="utf-8", errors="ignore")
-        for bad in ("scripts/normalize.py", "scripts/deduplicate.py", "scripts/schema_validate.py", "scripts/validate.py", "scripts/builder_validate.py", "database/services"):
+        for bad in _legacy_ref_texts():
             if bad in text:
                 violations.append(f"config/pipeline.yaml: forbidden legacy production reference {bad}")
 
