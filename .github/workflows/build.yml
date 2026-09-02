@@ -113,9 +113,10 @@ jobs:
             --runs data/runs \
             --generated release-candidate/generated \
             --baseline release-candidate/data/baseline/canonical.json
-          mkdir -p release-candidate/data/runs
+          mkdir -p release-candidate/data/runs release-candidate/data/cas
           cp -a "data/runs/${RUN_ID}" release-candidate/data/runs/
           cp -a "data/baseline" release-candidate/data/ 2>/dev/null || true
+          cp -a "data/cas" release-candidate/data/ 2>/dev/null || true
           printf '%s\n' "$RUN_ID" > release-candidate/run-id.txt
           cp config/client_capability_matrix.yaml release-candidate/
 
