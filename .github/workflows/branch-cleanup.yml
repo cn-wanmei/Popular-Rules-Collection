@@ -1,0 +1,84 @@
+name: Branch cleanup
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+
+jobs:
+  delete-merged-head:
+    if: github.event_name == 'pull_request' && github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete merged PR head branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ github.event.pull_request.head.ref }}
+          HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+          BASE_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if [ "$HEAD_REPO" != "$BASE_REPO" ]; then
+            echo "Skipping cross-repository head branch: $HEAD_REPO:$BRANCH"
+            exit 0
+          fi
+          if [ "$BRANCH" = "main" ]; then
+            echo "Refusing to delete main"
+            exit 0
+          fi
+          gh api --method DELETE "/repos/$BASE_REPO/git/refs/heads/$BRANCH"
+          echo "Deleted merged head branch: $BRANCH"
+
+  cleanup-legacy:
+    if: github.event_name == 'push' && startsWith(github.event.head_commit.message, 'chore(repo): cleanup legacy branches')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete confirmed obsolete branches
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          branches=(
+            'engine/p0-p1-cutover'
+            'engine/p0-p1-cutover-final'
+            'engine/p0-p1-cutover-release'
+            'engine/p0-p1-cutover-verified'
+            'feat/collector-core-stabilization'
+            'fix/collector-git-publish'
+            'fix/collector-git-publish-dirty-tree'
+            'fix/collector-quality-source-error-semantics'
+            'fix/production-collection-engine-path'
+            'fix/publisher-concurrency-20260902'
+            'fix/test-gate-legacy-hard'
+            'fix/v3-upstream-acquisition-resilience'
+            'v3-collection-dag'
+            'v3-collection-p3.6-fix'
+            'v3-collection-p3.6'
+            'v3-p1-hardening'
+            'v3-p1.5-quality-observability'
+            'v3-p36-cas-acquisition'
+            'v3-p37-incremental-intelligence'
+            'v3-p37-incremental-source-intelligence'
+            'v3-production-hardening'
+            'v3-stabilization-s0-s7'
+            'v3-stabilization-s3-dag-resume'
+            'v3-stabilization-s4-cas-gc'
+            'v3-stabilization-s5-ir-contract'
+          )
+
+          for branch in "${branches[@]}"; do
+            if [ "$branch" = "main" ]; then
+              continue
+            fi
+            if gh api "/repos/$REPO/branches/$branch" >/dev/null 2>&1; then
+              gh api --method DELETE "/repos/$REPO/git/refs/heads/$branch"
+              echo "Deleted: $branch"
+            else
+              echo "Already absent: $branch"
+            fi
+          done
