@@ -39,7 +39,14 @@ def build_observability(run_dir: Path) -> dict[str, Any]:
     memberships = int(canonical.get("memberships", 0))
     canonical_errors = int(canonical.get("errors", 0))
 
-    source_health: dict[str, dict[str, Any]] = defaultdict(lambda: {"files": 0, "bytes": 0, "errors": 0})
+    # ``source_health.errors`` is reserved for acquisition/source failures.
+    # Quarantined records are parser/data-quality evidence and are already
+    # represented by ``quarantine_rate``; counting them as source errors
+    # double-penalizes a safely quarantined record and can incorrectly block
+    # an otherwise healthy release.
+    source_health: dict[str, dict[str, Any]] = defaultdict(
+        lambda: {"files": 0, "bytes": 0, "errors": 0, "quarantined": 0}
+    )
     snapshot_path = Path(run_dir).parents[1] / "snapshots" / str(snapshot_id) if snapshot_id else None
     snapshot_manifest = _load_json(snapshot_path / "manifest.json", {}) if snapshot_path else {}
     for rel in snapshot_manifest.get("file_digests", {}):
@@ -58,7 +65,7 @@ def build_observability(run_dir: Path) -> dict[str, Any]:
             rec = item.get("record") if isinstance(item, dict) else None
             path = str(rec.get("path", "unknown")) if isinstance(rec, dict) else "unknown"
             source = Path(path).parts[0] if Path(path).parts else "unknown"
-            source_health[source]["errors"] += 1
+            source_health[source]["quarantined"] += 1
 
     recognition_den = ingested + ingest_errors
     parser_coverage = {
