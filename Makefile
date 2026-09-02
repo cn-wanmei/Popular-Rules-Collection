@@ -1,19 +1,22 @@
-.PHONY: preflight collect normalize build validate pipeline
+.PHONY: all preflight collect build validate test
+
+PYTHON ?= python
+ENGINE := $(PYTHON) -m src.engine.cli
+
+all:
+	$(ENGINE) all
 
 preflight:
-	python scripts/pipeline.py preflight
+	$(ENGINE) naming_gate
 
 collect:
-	python scripts/pipeline.py collect
-
-normalize:
-	python scripts/pipeline.py normalize
+	$(ENGINE) collect
 
 build:
-	python scripts/pipeline.py build
+	$(ENGINE) adapters
 
 validate:
-	python scripts/pipeline.py validate
+	$(ENGINE) validate
 
-pipeline:
-	python scripts/pipeline.py all
+test:
+	$(PYTHON) -m pytest tests/engine/ -v --ignore=tests/engine/unit_legacy_v2_ref
