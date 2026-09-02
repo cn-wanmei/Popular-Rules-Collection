@@ -7,12 +7,19 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: main-publish
+  cancel-in-progress: false
+
 jobs:
   normalize:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -23,9 +30,33 @@ jobs:
         run: python scripts/deduplicate.py
         continue-on-error: true
       - name: Commit database
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add database/ reports/ || true
-          git diff --staged --quiet || git commit -m "chore(normalize): update database $(date -u +%Y-%m-%d)"
-          git push
+          git add database/ reports/
+          if git diff --staged --quiet; then
+            echo "No normalize changes; nothing to push."
+            exit 0
+          fi
+          git commit -m "chore(normalize): update database $(date -u +%Y-%m-%d)"
+          if [ -n "$(git status --porcelain=v1)" ]; then
+            echo "Normalize workspace is dirty after commit; refusing rebase/push."
+            git status --short
+            exit 1
+          fi
+          for attempt in 1 2 3; do
+            git fetch --prune origin main
+            git rebase --autostash origin/main
+            if git push origin HEAD:main; then
+              echo "Published normalize changes on attempt ${attempt}."
+              exit 0
+            fi
+            if [ "${attempt}" -lt 3 ]; then
+              echo "Push race detected; retrying (attempt ${attempt}/3)."
+              sleep $((attempt * 5))
+            fi
+          done
+          echo "Failed to publish normalize changes after 3 attempts."
+          exit 1
