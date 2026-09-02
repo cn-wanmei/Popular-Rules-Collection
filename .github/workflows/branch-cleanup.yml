@@ -43,6 +43,7 @@ jobs:
           REPO: ${{ github.repository }}
         run: |
           set -euo pipefail
+          # These branches were individually audited and confirmed obsolete; main is never targeted.
           branches=(
             'engine/p0-p1-cutover'
             'engine/p0-p1-cutover-final'
