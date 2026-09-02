@@ -274,8 +274,7 @@ jobs:
             data/runs/ \
             data/cas/ \
             backup/*/manifests/ \
-            backup/${DAY}/sources/ \
-            || true
+            backup/${DAY}/sources/
 
           git status --porcelain
           if git diff --staged --quiet; then
