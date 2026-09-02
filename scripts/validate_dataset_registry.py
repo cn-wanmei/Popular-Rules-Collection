@@ -12,10 +12,9 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 DS = ROOT / "sources" / "datasets"
+LEGACY_SERVICE_ROOT = Path("database") / "services"
 VALID_KINDS = frozenset({"network", "geosite", "geoip", "asn", "policy", "provider", "binary"})
-FORBIDDEN_SERVICE_COLLISION = frozenset(
-    {"amazon", "google", "microsoft", "openai", "netflix", "discord"}
-)
+FORBIDDEN_SERVICE_COLLISION = frozenset({"amazon", "google", "microsoft", "openai", "netflix", "discord"})
 
 
 def main() -> int:
@@ -46,13 +45,15 @@ def main() -> int:
             if scope == "provider" and did in FORBIDDEN_SERVICE_COLLISION:
                 errors.append(f"{did}: provider dataset must not use product service id")
             p = ds.get("path")
-            if p and str(p).startswith("database/services"):
-                errors.append(f"{did}: dataset path must not use database/services/")
-            if p and str(p).startswith("database/ips/") and kind in ("geoip", "asn", "provider"):
-                warnings.append(
-                    f"{did}: prefer database/geoip|provider|asn over database/ips "
-                    "(service sidecar is for verified service-owned ranges)"
-                )
+            if p:
+                candidate = Path(str(p))
+                if candidate == LEGACY_SERVICE_ROOT or LEGACY_SERVICE_ROOT in candidate.parents:
+                    errors.append(f"{did}: dataset path points to the retired service store")
+                if str(p).startswith("database/ips/") and kind in ("geoip", "asn", "provider"):
+                    warnings.append(
+                        f"{did}: prefer database/geoip|provider|asn over database/ips "
+                        "(service sidecar is for verified service-owned ranges)"
+                    )
             if ds.get("enabled") and p:
                 if not (ROOT / str(p)).exists() and not ds.get("artifact"):
                     warnings.append(f"{did}: enabled but path missing: {p}")
