@@ -11,6 +11,11 @@ on:
         description: "Skip configured mega service sets"
         type: boolean
         default: false
+      collection_date:
+        description: "Collected backup date (YYYY-MM-DD); empty uses the newest available backup"
+        type: string
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -25,6 +30,15 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Attach checkout to main
+        run: |
+          git fetch --prune origin main
+          git switch -C main origin/main
+          test "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)"
 
       - uses: actions/setup-python@v5
         with:
@@ -37,8 +51,52 @@ jobs:
       - name: Naming gate (HARD)
         run: PYTHONPATH=. python -m src.engine.cli naming_gate
 
+      - name: Resolve collected source snapshot (HARD)
+        id: source
+        shell: bash
+        run: |
+          set -euo pipefail
+          requested="${{ inputs.collection_date }}"
+          if [ -n "$requested" ]; then
+            [[ "$requested" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || {
+              echo "Invalid collection_date: $requested (expected YYYY-MM-DD)"
+              exit 1
+            }
+            day="$requested"
+          else
+            day="$(find backup -mindepth 1 -maxdepth 1 -type d -regextype posix-extended -regex '.*/[0-9]{4}-[0-9]{2}-[0-9]{2}' -printf '%f\n' | sort | tail -1)"
+          fi
+
+          [ -n "$day" ] || {
+            echo "No collected backup directories found under backup/"
+            exit 1
+          }
+
+          source_root="backup/$day"
+          [ -d "$source_root/sources" ] || {
+            echo "Collected source root missing: $source_root/sources"
+            exit 1
+          }
+          [ -d "$source_root/manifests" ] || {
+            echo "Collected manifests missing: $source_root/manifests"
+            exit 1
+          }
+          [ -n "$(find "$source_root/sources" -type f -print -quit)" ] || {
+            echo "Collected source root is empty: $source_root/sources"
+            exit 1
+          }
+          [ -n "$(find "$source_root/manifests" -type f -name '*.json' -print -quit)" ] || {
+            echo "No collection manifests found: $source_root/manifests"
+            exit 1
+          }
+
+          echo "Using collected source snapshot: $source_root"
+          echo "collection_date=$day" >> "$GITHUB_OUTPUT"
+          echo "source_root=$source_root" >> "$GITHUB_OUTPUT"
+
       - name: Engine — one immutable run
         id: engine
+        shell: bash
         run: |
           set -o pipefail
           ENGINE_ARGS=()
@@ -46,6 +104,7 @@ jobs:
             ENGINE_ARGS+=(--skip-large)
           fi
           PYTHONPATH=. python -m src.engine.cli all \
+            --sources "${{ steps.source.outputs.source_root }}" \
             --data data \
             "${ENGINE_ARGS[@]}" 2>&1 | tee engine-run.log
           RUN_ID=$(python3 - <<'PY'
@@ -56,7 +115,9 @@ jobs:
               raise SystemExit('engine output JSON not found')
           obj = json.loads(text[start:])
           if obj.get('status') != 'ok':
-              raise SystemExit(f"engine status={obj.get('status')}")
+              raise SystemExit(f"engine status={obj.get('status')} failures={obj.get('failure_stages')}")
+          if not obj.get('run_id'):
+              raise SystemExit('engine run_id missing')
           print(obj['run_id'])
           PY
           )
@@ -89,7 +150,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "chore(engine): rebuild ${GITHUB_SHA::12}"
+          git commit -m "chore(engine): rebuild ${{ steps.source.outputs.collection_date }}"
 
           # Never rebase with a dirty workspace.
           rm -f engine-run.log
