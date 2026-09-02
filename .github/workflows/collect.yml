@@ -284,24 +284,30 @@ jobs:
 
           git commit -m "chore(engine): collect+build ${DAY} | ${DIFF_SUMMARY}"
 
-          if ! git diff --quiet || ! git diff --cached --quiet; then
+          # Never attempt a rebase with any local modifications or untracked temp files.
+          rm -f collection-run.log engine-run.log collection-id.txt collection-root.txt engine-run-id.txt
+          if [ -n "$(git status --porcelain=v1)" ]; then
             echo "Publish workspace is dirty after commit; refusing rebase/push."
             git status --short
             exit 1
           fi
 
-          for attempt in 1 2 3; do
+          for attempt in 1 2 3 4 5; do
             git fetch --prune origin main
-            git rebase origin/main
+            if ! git rebase --autostash origin/main; then
+              echo "Rebase failed because main contains a conflicting change. Aborting safely."
+              git rebase --abort || true
+              exit 1
+            fi
             if git push origin HEAD:main; then
               echo "Published to main on attempt ${attempt}."
               exit 0
             fi
-            if [ "${attempt}" -lt 3 ]; then
-              echo "Push race detected; retrying after refetch (attempt ${attempt}/3)."
+            if [ "${attempt}" -lt 5 ]; then
+              echo "Push race detected; refetching and retrying (attempt ${attempt}/5)."
               sleep $((attempt * 5))
             fi
           done
 
-          echo "Failed to publish after 3 attempts."
+          echo "Failed to publish after 5 attempts."
           exit 1
