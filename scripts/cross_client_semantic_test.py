@@ -58,7 +58,9 @@ def _extract_json(path: Path) -> set[tuple[str, str]]:
 def _extract_lines(path: Path) -> set[tuple[str, str]]:
     found: set[tuple[str, str]] = set()
     for raw in path.read_text(encoding="utf-8").splitlines():
-        line = raw.strip().strip('"\'')
+        line = raw.strip()
+        line = line[1:].strip() if line.startswith("-") else line
+        line = line.strip('"\'')
         if not line or line.startswith("#") or "," not in line:
             continue
         head, rest = line.split(",", 1)
@@ -97,10 +99,20 @@ def main() -> int:
 
     for client, cfg in sorted(clients.items()):
         capability = {_norm_type(str(x)) for x in cfg.get("native_rule_types", [])}
-        expected = {(typ, value) for typ, value in ir_rules if typ in capability}
+        if client == "singbox":
+            expected = {(
+                "ip_cidr" if typ == "ip_cidr6" else typ,
+                value,
+            ) for typ, value in ir_rules if typ in capability}
+        else:
+            expected = {(typ, value) for typ, value in ir_rules if typ in capability}
         actual = _extract_client(args.generated / client, str(cfg["artifact"]))
+        normalized_ir = {
+            ("ip_cidr" if typ == "ip_cidr6" else typ, value)
+            for typ, value in ir_rules
+        } if client == "singbox" else ir_rules
         missing = sorted(expected - actual)
-        unexpected = sorted(actual - ir_rules)
+        unexpected = sorted(actual - normalized_ir)
         if missing or unexpected:
             failures.append({"client": client, "missing": missing, "unexpected": unexpected})
         else:
