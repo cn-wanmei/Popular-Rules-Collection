@@ -28,6 +28,15 @@ jobs:
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Attach checkout to main
+        run: |
+          git fetch --prune origin main
+          git switch -C main origin/main
+          test "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)"
 
       - uses: actions/setup-python@v5
         with:
@@ -235,7 +244,9 @@ jobs:
             --baseline data/baseline/canonical.json
 
       - name: Commit & push
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           DAY=$(date -u +%Y-%m-%d)
@@ -266,8 +277,26 @@ jobs:
             backup/${DAY}/sources/ \
             || true
 
-          git status --porcelain || true
-          git diff --staged --quiet || git commit -m "chore(engine): collect+build ${DAY} | ${DIFF_SUMMARY}"
+          git status --porcelain
+          if git diff --staged --quiet; then
+            echo "No publish changes; nothing to push."
+            exit 0
+          fi
 
-          git pull --rebase --autostash origin main
-          git push
+          git commit -m "chore(engine): collect+build ${DAY} | ${DIFF_SUMMARY}"
+
+          for attempt in 1 2 3; do
+            git fetch --prune origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              echo "Published to main on attempt ${attempt}."
+              exit 0
+            fi
+            if [ "${attempt}" -lt 3 ]; then
+              echo "Push race detected; retrying after refetch (attempt ${attempt}/3)."
+              sleep $((attempt * 5))
+            fi
+          done
+
+          echo "Failed to publish after 3 attempts."
+          exit 1
