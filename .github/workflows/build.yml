@@ -143,12 +143,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Remove transient engine output before staging. If this file is ever
-          # tracked by mistake, its deletion must be included in the commit,
-          # otherwise the post-commit clean-tree gate will fail.
+          # engine-run.log is transient and intentionally untracked.
+          # Remove it before staging so the post-commit workspace check is deterministic.
           rm -f engine-run.log
 
-          git add -A generated/ data/baseline/ data/runs/ reports/ engine-run.log
+          git add -A generated/ data/baseline/ data/runs/ reports/
 
           if git diff --staged --quiet; then
             echo "No build changes; nothing to push."
