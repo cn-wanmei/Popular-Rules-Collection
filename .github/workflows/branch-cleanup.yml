@@ -34,8 +34,8 @@ jobs:
           echo "Deleted merged head branch: $BRANCH"
 
   cleanup-legacy:
-    if: github.event_name == 'push' && startsWith(github.event.head_commit.message, 'chore(repo): cleanup legacy branches')
     runs-on: ubuntu-latest
+    if: startsWith(github.event.head_commit.message, 'chore(repo): cleanup legacy branches')
     steps:
       - name: Delete confirmed obsolete branches
         env:
@@ -73,9 +73,6 @@ jobs:
           )
 
           for branch in "${branches[@]}"; do
-            if [ "$branch" = "main" ]; then
-              continue
-            fi
             if gh api "/repos/$REPO/branches/$branch" >/dev/null 2>&1; then
               gh api --method DELETE "/repos/$REPO/git/refs/heads/$branch"
               echo "Deleted: $branch"
