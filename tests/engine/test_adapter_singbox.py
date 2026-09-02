@@ -15,7 +15,7 @@ def test_singbox_preserves_supported_rule_types(tmp_path: Path) -> None:
             {"type": "DOMAIN", "value": "example.com"},
             {"type": "DOMAIN-SUFFIX", "value": "example.org"},
             {"type": "DOMAIN-KEYWORD", "value": "openai"},
-            {"type": "DOMAIN-REGEX", "value": r"^api\\.example\\.com$"},
+            {"type": "DOMAIN-REGEX", "value": r"^api\.example\.com$"},
             {"type": "IP-CIDR", "value": "192.0.2.0/24"},
             {"type": "IP-CIDR6", "value": "2001:db8::/32"},
         ],
@@ -29,7 +29,7 @@ def test_singbox_preserves_supported_rule_types(tmp_path: Path) -> None:
     assert rule["domain"] == ["example.com"]
     assert rule["domain_suffix"] == ["example.org"]
     assert rule["domain_keyword"] == ["openai"]
-    assert rule["domain_regex"] == [r"^api\\.example\\.com$"]
+    assert rule["domain_regex"] == [r"^api\.example\.com$"]
     assert rule["ip_cidr"] == ["192.0.2.0/24", "2001:db8::/32"]
 
 
