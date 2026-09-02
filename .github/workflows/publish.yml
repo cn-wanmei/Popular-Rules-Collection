@@ -41,7 +41,7 @@ jobs:
           test -d "release-candidate/data/runs/${RUN_ID}"
           test -d release-candidate/generated
           test -s "release-candidate/data/baseline/canonical.json"
-          test "$(git rev-parse HEAD)" = "${{ github.event.workflow_run.head_sha }}" || true
+          test "$(git rev-parse HEAD)" = "${{ github.event.workflow_run.head_sha }}"
 
       - name: Publish atomically
         shell: bash
@@ -49,14 +49,14 @@ jobs:
           set -euo pipefail
           RUN_ID=$(cat release-candidate/run-id.txt)
           rm -rf generated data/runs/${RUN_ID}
-          mkdir -p data/runs
+          mkdir -p data/runs data/baseline
           cp -a release-candidate/generated generated
           cp -a "release-candidate/data/runs/${RUN_ID}" data/runs/
-          mkdir -p data/baseline
           cp -a release-candidate/data/baseline/canonical.json data/baseline/
+          if [ -d release-candidate/data/cas ]; then cp -a release-candidate/data/cas data/; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A generated/ data/runs/ data/baseline/
+          git add -A generated/ data/runs/ data/baseline/ data/cas/
           if git diff --staged --quiet; then
             echo "No release changes to publish."
             exit 0
