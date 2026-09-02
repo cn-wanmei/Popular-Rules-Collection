@@ -1,5 +1,6 @@
 """P3 long-term audit capabilities for the V3 rule compiler."""
 from .core import (
+    adapter_capability_matrix,
     build_provenance_graph,
     dependency_lock_report,
     generate_sbom,
@@ -11,6 +12,7 @@ from .core import (
 )
 
 __all__ = [
+    "adapter_capability_matrix",
     "build_provenance_graph",
     "dependency_lock_report",
     "generate_sbom",
