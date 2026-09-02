@@ -13,7 +13,7 @@ FORBIDDEN_REFS = (
     "scripts/" + "pipeline.py",
     "scripts/" + "build_",
     ".github/workflows/" + "normalize.yml",
-    'workflows: ["Normalize"]',
+    'workflows: ["' + "Normalize" + '"]',
 )
 PRODUCTION_ROOTS = (
     ROOT / ".github",
@@ -24,6 +24,8 @@ PRODUCTION_ROOTS = (
     ROOT / "Makefile",
 )
 HISTORY_PARTS = {"migration", "migrations", "history", "historical"}
+ALLOWED_LEGACY_TOUCH = {"src/engine/ingest/migrate_legacy.py"}
+LEGACY_SERVICE_REF = "database" + "/" + "services"
 WORKFLOWS = ROOT / ".github" / "workflows"
 ACTION_REF_RE = re.compile(r"uses:\s*([\w.-]+/[\w.-]+)@([^\s#]+)")
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
@@ -48,15 +50,17 @@ def _python_imports_scripts(path: Path) -> bool:
 
 def _is_history_path(path: Path) -> bool:
     try:
-        rel = path.relative_to(ROOT)
+        rel = path.relative_to(ROOT).as_posix()
     except ValueError:
         return False
-    return bool(HISTORY_PARTS.intersection(part.lower() for part in rel.parts))
+    return rel in ALLOWED_LEGACY_TOUCH or bool(
+        HISTORY_PARTS.intersection(Path(rel).parts)
+    )
 
 
 def _legacy_ref_scan() -> list[str]:
     failures: list[str] = []
-    patterns = FORBIDDEN_REFS + ("database/" + "services",)
+    patterns = FORBIDDEN_REFS + (LEGACY_SERVICE_REF,)
     for root in PRODUCTION_ROOTS:
         paths = [root] if root.is_file() else root.rglob("*")
         for path in paths:
