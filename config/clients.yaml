@@ -1,0 +1,59 @@
+# Client capability matrix — Phase 0 baseline
+
+clients:
+  mihomo:
+    domain: exact
+    domain_suffix: exact
+    domain_keyword: exact
+    domain_regex: exact
+    ip_cidr: exact
+    ip_cidr6: exact
+    logical: exact
+  singbox:
+    domain: exact
+    domain_suffix: exact
+    domain_keyword: exact
+    domain_regex: approximate
+    ip_cidr: exact
+    ip_cidr6: exact
+    logical: exact
+  surge:
+    domain: exact
+    domain_suffix: exact
+    domain_keyword: exact
+    domain_regex: approximate
+    ip_cidr: exact
+    ip_cidr6: exact
+    logical: unsupported
+  shadowrocket:
+    domain: exact
+    domain_suffix: exact
+    domain_keyword: exact
+    domain_regex: approximate
+    ip_cidr: exact
+    ip_cidr6: exact
+    logical: unsupported
+  quantumult_x:
+    domain: exact
+    domain_suffix: exact
+    domain_keyword: exact
+    domain_regex: approximate
+    ip_cidr: exact
+    ip_cidr6: exact
+    logical: unsupported
+  loon:
+    domain: exact
+    domain_suffix: exact
+    domain_keyword: exact
+    domain_regex: approximate
+    ip_cidr: exact
+    ip_cidr6: exact
+    logical: unsupported
+  egern:
+    domain: exact
+    domain_suffix: exact
+    domain_keyword: exact
+    domain_regex: approximate
+    ip_cidr: exact
+    ip_cidr6: exact
+    logical: unsupported

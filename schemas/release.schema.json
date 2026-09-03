@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/universal-rules/release.schema.json",
+  "title": "Release Manifest",
+  "type": "object",
+  "required": ["release_id", "status", "engine", "source", "decision", "artifacts", "verification"],
+  "properties": {
+    "release_id": {"type": "string"},
+    "status": {"enum": ["nightly", "candidate", "stable"]},
+    "engine": {"type": "object", "required": ["version"], "properties": {"version": {"type": "string"}}, "additionalProperties": false},
+    "source": {"type": "object", "required": ["registry_revision", "snapshot_manifest"], "properties": {"registry_revision": {"type": "string"}, "snapshot_manifest": {"type": "string"}}, "additionalProperties": false},
+    "decision": {"type": "object", "required": ["revision"], "properties": {"revision": {"type": "string"}}, "additionalProperties": false},
+    "artifacts": {"type": "object", "additionalProperties": {"type": "object", "required": ["sha256"], "properties": {"sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}, "additionalProperties": false}},
+    "verification": {"type": "object", "additionalProperties": {"enum": ["pass", "warn", "fail"]}}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/universal-rules/source.schema.json",
+  "title": "Source",
+  "type": "object",
+  "required": ["id", "name", "type", "url", "enabled", "parser"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$"},
+    "name": {"type": "string", "minLength": 1},
+    "type": {"enum": ["http", "git", "api"]},
+    "url": {"type": "string", "format": "uri"},
+    "format": {"type": ["string", "null"]},
+    "enabled": {"type": "boolean"},
+    "trust": {
+      "type": "object",
+      "properties": {
+        "level": {"enum": ["verified", "trusted", "community", "unknown"]},
+        "score": {"type": "number", "minimum": 0, "maximum": 1}
+      },
+      "additionalProperties": false
+    },
+    "update": {"type": "object", "properties": {"interval": {"type": "integer", "minimum": 60}}, "additionalProperties": false},
+    "parser": {"type": "object", "required": ["type", "version"], "properties": {"type": {"type": "string"}, "version": {"type": "string"}}, "additionalProperties": false}
+  },
+  "additionalProperties": false
+}

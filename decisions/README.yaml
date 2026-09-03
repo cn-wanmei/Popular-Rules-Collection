@@ -1,0 +1,9 @@
+# Phase 0 Decisions
+
+# Human decisions are first-class data. No generated artifact may be edited directly.
+# Every decision requires target, action, reason, author and timestamp.
+
+overrides: []
+aliases: []
+exclusions: []
+conflicts: []

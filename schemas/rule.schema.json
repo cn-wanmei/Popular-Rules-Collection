@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/universal-rules/rule.schema.json",
+  "title": "Canonical Rule",
+  "type": "object",
+  "required": ["id", "type", "value", "action", "semantic", "source"],
+  "properties": {
+    "id": {"type": "string"},
+    "type": {"enum": ["domain", "domain_suffix", "domain_keyword", "domain_regex", "ip_cidr", "ip_cidr6", "asn", "geosite", "geoip", "process_name", "process_path", "url_regex", "logical"]},
+    "value": {"type": ["string", "object"]},
+    "action": {"type": "string", "minLength": 1},
+    "semantic": {"type": "object", "required": ["level"], "properties": {"level": {"enum": ["exact", "equivalent", "approximate", "lossy", "unsupported"]}, "note": {"type": ["string", "null"]}}, "additionalProperties": false},
+    "source": {"type": "object", "required": ["source_id", "snapshot_id"], "properties": {"source_id": {"type": "string"}, "snapshot_id": {"type": "string"}}, "additionalProperties": false},
+    "metadata": {"type": "object", "additionalProperties": true}
+  },
+  "additionalProperties": false
+}

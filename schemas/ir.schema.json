@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/universal-rules/ir.schema.json",
+  "title": "Semantic IR",
+  "type": "object",
+  "required": ["ir_version", "rules"],
+  "properties": {
+    "ir_version": {"const": 1},
+    "rules": {"type": "array", "items": {"$ref": "rule.schema.json"}}
+  },
+  "additionalProperties": false
+}

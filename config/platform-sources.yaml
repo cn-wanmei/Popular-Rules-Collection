@@ -1,0 +1,12 @@
+# Source Registry — V1
+
+# Phase 0 only. Real sources are migrated after schema and health policy are implemented.
+sources: []
+
+policy:
+  allowed_protocols: [http, https, git]
+  max_response_size_bytes: 52428800
+  redirect_limit: 5
+  connect_timeout_seconds: 10
+  read_timeout_seconds: 30
+  retries: 3
