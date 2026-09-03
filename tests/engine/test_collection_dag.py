@@ -18,6 +18,18 @@ def test_collection_dag_has_explicit_dependencies() -> None:
     assert next(n for n in COLLECTION_NODES if n.name == "network_datasets").deps == ("datasets",)
 
 
+def test_collection_commands_reference_existing_python_scripts() -> None:
+    repo_root = Path(__file__).resolve().parents[2]
+    for spec in COLLECTION_SPECS:
+        command = spec.command
+        assert command[0] == __import__("sys").executable
+        assert len(command) == 2
+        script = repo_root / command[1]
+        assert command[1].startswith("scripts/")
+        assert script.suffix == ".py"
+        assert script.is_file(), f"missing collection entrypoint: {script}"
+
+
 def test_collection_id_is_deterministic() -> None:
     results = {
         "b": {"status": "ok", "critical": False, "attempts": [{"attempt": 1}]},
