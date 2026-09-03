@@ -44,7 +44,18 @@ jobs:
           DAY=$(date -u +%Y-%m-%d)
           ARGS=(--data data --date "$DAY" --workers 12)
           if [ "${{ inputs.skip_large }}" = "true" ]; then ARGS+=(--skip-large); fi
-          PYTHONPATH=. python -m src.engine.collection "${ARGS[@]}" > collection-result.json
+          set +e
+          PYTHONPATH=. python -m src.engine.collection "${ARGS[@]}" > collection-result.json 2> collection-result.stderr.log
+          rc=$?
+          set -e
+          if [ "$rc" -ne 0 ]; then
+            echo "Collection DAG failed with exit code ${rc}."
+            echo "--- collection stderr ---"
+            cat collection-result.stderr.log || true
+            echo "--- collection result ---"
+            cat collection-result.json || true
+            exit "$rc"
+          fi
           python - <<'PY'
           import json
           obj=json.loads(open('collection-result.json',encoding='utf-8').read())
@@ -77,7 +88,7 @@ jobs:
         run: |
           set -euo pipefail
           DAY=$(date -u +%Y-%m-%d)
-          rm -f collection-result.json
+          rm -f collection-result.json collection-result.stderr.log
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A "backup/${DAY}/sources/" "backup/${DAY}/manifests/" data/collection/ sources/health.yaml reports/
