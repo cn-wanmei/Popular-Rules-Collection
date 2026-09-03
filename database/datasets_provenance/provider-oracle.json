@@ -1,9 +1,17 @@
 {
   "id": "provider-oracle",
+  "kind": "provider",
   "scope": "provider",
   "path": "database/provider/oracle.txt",
-  "lines": 1107,
-  "fetched_at": "2026-09-01T01:05:16.751213+00:00",
-  "source_url": "https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json",
-  "notes": "Provider \u2260 Service"
+  "lines": 1398,
+  "sha256_source": "59e5ba5e92e38f911ce377f1d71c6eaa89ffcf53f9eb4ccd667d9ffca81ead7d",
+  "fetched_at": "2026-09-03T13:03:54.676812+00:00",
+  "source": {
+    "owner": null,
+    "repo": null,
+    "branch": null,
+    "path": "https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json",
+    "url": "https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json"
+  },
+  "notes": ""
 }

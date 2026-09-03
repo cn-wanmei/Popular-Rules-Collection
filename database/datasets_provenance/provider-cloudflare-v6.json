@@ -1,9 +1,17 @@
 {
   "id": "provider-cloudflare-v6",
+  "kind": "provider",
   "scope": "provider",
   "path": "database/provider/cloudflare6.txt",
   "lines": 7,
-  "fetched_at": "2026-09-01T01:05:16.751213+00:00",
-  "source_url": "https://www.cloudflare.com/ips-v6",
-  "notes": "Provider \u2260 Service"
+  "sha256_source": "9e9d39e3e83bad00c4decafd53c63fa62029f3d95db68de937d2be28234ca0a9",
+  "fetched_at": "2026-09-03T13:03:54.676812+00:00",
+  "source": {
+    "owner": null,
+    "repo": null,
+    "branch": null,
+    "path": "https://www.cloudflare.com/ips-v6",
+    "url": "https://www.cloudflare.com/ips-v6"
+  },
+  "notes": ""
 }

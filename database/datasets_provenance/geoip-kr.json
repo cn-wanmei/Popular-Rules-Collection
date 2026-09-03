@@ -3,9 +3,9 @@
   "kind": "geoip",
   "scope": "country",
   "path": "database/geoip/kr.txt",
-  "lines": 5440,
-  "sha256_source": "5a158a889096c730653f04a11ab77672d5d4c831d358fe4a9514f6623449fc2b",
-  "fetched_at": "2026-09-01T01:02:53.952721+00:00",
+  "lines": 5461,
+  "sha256_source": "6f5225446a7de9b1894c371d8754f5dce6b7d2477b61fe90ed7697504995da35",
+  "fetched_at": "2026-09-03T13:03:54.676812+00:00",
   "source": {
     "owner": "Loyalsoldier",
     "repo": "geoip",

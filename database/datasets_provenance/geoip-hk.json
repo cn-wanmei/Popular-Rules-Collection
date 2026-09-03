@@ -3,9 +3,9 @@
   "kind": "geoip",
   "scope": "country",
   "path": "database/geoip/hk.txt",
-  "lines": 15649,
-  "sha256_source": "6f37f2aaa5e00472bb4cd80b9210ea535168ae87ae3f3a7bbb3e90b015caac10",
-  "fetched_at": "2026-09-01T01:02:53.952721+00:00",
+  "lines": 15681,
+  "sha256_source": "d961b330fd2141c84948701b185de4d2f4368fe30af4c3e163b8c515a4011df3",
+  "fetched_at": "2026-09-03T13:03:54.676812+00:00",
   "source": {
     "owner": "Loyalsoldier",
     "repo": "geoip",

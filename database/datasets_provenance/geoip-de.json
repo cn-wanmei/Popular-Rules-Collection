@@ -3,9 +3,9 @@
   "kind": "geoip",
   "scope": "country",
   "path": "database/geoip/de.txt",
-  "lines": 71845,
-  "sha256_source": "bdde5dbf7046f8574460673beff9dfb7dc67c0434bfe27526ca45d6edb408f6a",
-  "fetched_at": "2026-09-01T01:02:53.952721+00:00",
+  "lines": 72020,
+  "sha256_source": "05eeffa042a1453a7d2b4cb9ffe2b789e1cb8bd2114d94be8747ad2a0d821733",
+  "fetched_at": "2026-09-03T13:03:54.676812+00:00",
   "source": {
     "owner": "Loyalsoldier",
     "repo": "geoip",

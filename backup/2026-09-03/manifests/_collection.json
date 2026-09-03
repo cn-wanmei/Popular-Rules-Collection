@@ -1,12 +1,12 @@
 {
   "schema": "collection_manifest_v1",
-  "collection_id": "2026-09-03-cc8fa799e0a191ea5d42",
+  "collection_id": "2026-09-03-9650074c1ae5d9f28b2c",
   "date": "2026-09-03",
-  "created_at": "2026-09-03T13:00:49.267935+00:00",
+  "created_at": "2026-09-03T13:04:06.585293+00:00",
   "root": "backup/2026-09-03",
   "execution": {
     "mode": "dag",
-    "max_workers": 4,
+    "max_workers": 10,
     "layers": [
       [
         "validate_dataset_registry",
@@ -28,17 +28,16 @@
       ]
     ]
   },
-  "status": "degraded",
+  "status": "ok",
   "critical_failures": [],
-  "degraded_nodes": [
-    "datasets",
-    "network_datasets",
-    "provider_datasets",
-    "providers"
-  ],
+  "degraded_nodes": [],
   "successful_nodes": [
+    "datasets",
     "ip_rules",
+    "network_datasets",
     "network_lan",
+    "provider_datasets",
+    "providers",
     "service_rules",
     "validate_dataset_registry",
     "validate_ip_registry",
@@ -47,37 +46,23 @@
   "skip_large": false,
   "nodes": {
     "datasets": {
-      "status": "failed",
+      "status": "ok",
       "critical": false,
       "attempts": [
         {
           "attempt": 1,
-          "started_at": "2026-09-03T13:00:26.128728+00:00",
-          "returncode": 1,
-          "stdout_tail": "  OK ARTIFACT mmdb-country bytes=7833505 sha256=d432dc277ae1…\n  OK ARTIFACT mmdb-asn bytes=12106294 sha256=37279508b91b…\n  OK ARTIFACT dat-geoip-lite bytes=207729 sha256=3d8321374104…\n  OK ARTIFACT dat-geoip bytes=17224069 sha256=0d5d2ba0c5a5…\n  OK ARTIFACT dat-geosite bytes=4245173 sha256=556c880698cc…\n  OK geoip-cn kind=geoip lines=9621\n  OK geoip-hk kind=geoip lines=15681\n  OK geoip-tw kind=geoip lines=4796\n  OK geoip-jp kind=geoip lines=17665\n  OK geoip-kr kind=geoip lines=5461\n  OK geoip-sg kind=geoip lines=13689\n  OK geoip-us kind=geoip lines=300531\n  OK geoip-de kind=geoip lines=72020\n  OK geoip-gb kind=geoip lines=50281\n  OK geoip-au kind=geoip lines=17532\n  OK geoip-my kind=geoip lines=3851\n  OK geoip-in kind=geoip lines=20672\n  OK geoip-id kind=geoip lines=10755\n  OK geoip-vn kind=geoip lines=3812\n  OK geoip-th kind=geoip lines=3470\n  OK geoip-private kind=geoip lines=18\n  OK ARTIFACT geoip-mmdb bytes=7833505 sha256=d432dc277ae1…\n  OK geosite-direct kind=geosite lines=111081\n  OK geosite-proxy kind=geosite lines=27228\n  OK geosite-reject kind=geosite lines=188591\n  OK geosite-china kind=geosite lines=110415\n  OK geosite-apple-cn kind=geosite lines=165\n  OK geosite-google-cn kind=geosite lines=112\n  FAIL provider-cloudflare: HTTP 403\n  FAIL provider-cloudflare-v6: HTTP 403\n  FAIL provider-aws: HTTP 403\n  FAIL provider-googlecloud: HTTP 403\n  FAIL provider-goog: HTTP 403\n  FAIL provider-oracle: HTTP 403\n[collect_datasets] ok=28 failed=6 skipped=9\n",
-          "stderr_tail": ""
-        },
-        {
-          "attempt": 2,
-          "started_at": "2026-09-03T13:00:38.389035+00:00",
-          "returncode": 1,
-          "stdout_tail": "  OK ARTIFACT mmdb-country bytes=7833505 sha256=d432dc277ae1…\n  OK ARTIFACT mmdb-asn bytes=12106294 sha256=37279508b91b…\n  OK ARTIFACT dat-geoip-lite bytes=207729 sha256=3d8321374104…\n  OK ARTIFACT dat-geoip bytes=17224069 sha256=0d5d2ba0c5a5…\n  OK ARTIFACT dat-geosite bytes=4245173 sha256=556c880698cc…\n  OK geoip-cn kind=geoip lines=9621\n  OK geoip-hk kind=geoip lines=15681\n  OK geoip-tw kind=geoip lines=4796\n  OK geoip-jp kind=geoip lines=17665\n  OK geoip-kr kind=geoip lines=5461\n  OK geoip-sg kind=geoip lines=13689\n  OK geoip-us kind=geoip lines=300531\n  OK geoip-de kind=geoip lines=72020\n  OK geoip-gb kind=geoip lines=50281\n  OK geoip-au kind=geoip lines=17532\n  OK geoip-my kind=geoip lines=3851\n  OK geoip-in kind=geoip lines=20672\n  OK geoip-id kind=geoip lines=10755\n  OK geoip-vn kind=geoip lines=3812\n  OK geoip-th kind=geoip lines=3470\n  OK geoip-private kind=geoip lines=18\n  OK ARTIFACT geoip-mmdb bytes=7833505 sha256=d432dc277ae1…\n  OK geosite-direct kind=geosite lines=111081\n  OK geosite-proxy kind=geosite lines=27228\n  OK geosite-reject kind=geosite lines=188591\n  OK geosite-china kind=geosite lines=110415\n  OK geosite-apple-cn kind=geosite lines=165\n  OK geosite-google-cn kind=geosite lines=112\n  FAIL provider-cloudflare: HTTP 403\n  FAIL provider-cloudflare-v6: HTTP 403\n  FAIL provider-aws: HTTP 403\n  FAIL provider-googlecloud: HTTP 403\n  FAIL provider-goog: HTTP 403\n  FAIL provider-oracle: HTTP 403\n[collect_datasets] ok=28 failed=6 skipped=9\n",
-          "stderr_tail": ""
-        },
-        {
-          "attempt": 3,
-          "started_at": "2026-09-03T13:00:44.166204+00:00",
-          "returncode": 1,
-          "stdout_tail": "  OK ARTIFACT mmdb-country bytes=7833505 sha256=d432dc277ae1…\n  OK ARTIFACT mmdb-asn bytes=12106294 sha256=37279508b91b…\n  OK ARTIFACT dat-geoip-lite bytes=207729 sha256=3d8321374104…\n  OK ARTIFACT dat-geoip bytes=17224069 sha256=0d5d2ba0c5a5…\n  OK ARTIFACT dat-geosite bytes=4245173 sha256=556c880698cc…\n  OK geoip-cn kind=geoip lines=9621\n  OK geoip-hk kind=geoip lines=15681\n  OK geoip-tw kind=geoip lines=4796\n  OK geoip-jp kind=geoip lines=17665\n  OK geoip-kr kind=geoip lines=5461\n  OK geoip-sg kind=geoip lines=13689\n  OK geoip-us kind=geoip lines=300531\n  OK geoip-de kind=geoip lines=72020\n  OK geoip-gb kind=geoip lines=50281\n  OK geoip-au kind=geoip lines=17532\n  OK geoip-my kind=geoip lines=3851\n  OK geoip-in kind=geoip lines=20672\n  OK geoip-id kind=geoip lines=10755\n  OK geoip-vn kind=geoip lines=3812\n  OK geoip-th kind=geoip lines=3470\n  OK geoip-private kind=geoip lines=18\n  OK ARTIFACT geoip-mmdb bytes=7833505 sha256=d432dc277ae1…\n  OK geosite-direct kind=geosite lines=111081\n  OK geosite-proxy kind=geosite lines=27228\n  OK geosite-reject kind=geosite lines=188591\n  OK geosite-china kind=geosite lines=110415\n  OK geosite-apple-cn kind=geosite lines=165\n  OK geosite-google-cn kind=geosite lines=112\n  FAIL provider-cloudflare: HTTP 403\n  FAIL provider-cloudflare-v6: HTTP 403\n  FAIL provider-aws: HTTP 403\n  FAIL provider-googlecloud: HTTP 403\n  FAIL provider-goog: HTTP 403\n  FAIL provider-oracle: HTTP 403\n[collect_datasets] ok=28 failed=6 skipped=9\n",
+          "started_at": "2026-09-03T13:03:54.539531+00:00",
+          "returncode": 0,
+          "stdout_tail": "  OK ARTIFACT mmdb-country bytes=7833505 sha256=d432dc277ae1…\n  OK ARTIFACT mmdb-asn bytes=12106294 sha256=37279508b91b…\n  OK ARTIFACT dat-geoip-lite bytes=207729 sha256=3d8321374104…\n  OK ARTIFACT dat-geoip bytes=17224069 sha256=0d5d2ba0c5a5…\n  OK ARTIFACT dat-geosite bytes=4245173 sha256=556c880698cc…\n  OK geoip-cn kind=geoip lines=9621\n  OK geoip-hk kind=geoip lines=15681\n  OK geoip-tw kind=geoip lines=4796\n  OK geoip-jp kind=geoip lines=17665\n  OK geoip-kr kind=geoip lines=5461\n  OK geoip-sg kind=geoip lines=13689\n  OK geoip-us kind=geoip lines=300531\n  OK geoip-de kind=geoip lines=72020\n  OK geoip-gb kind=geoip lines=50281\n  OK geoip-au kind=geoip lines=17532\n  OK geoip-my kind=geoip lines=3851\n  OK geoip-in kind=geoip lines=20672\n  OK geoip-id kind=geoip lines=10755\n  OK geoip-vn kind=geoip lines=3812\n  OK geoip-th kind=geoip lines=3470\n  OK geoip-private kind=geoip lines=18\n  OK ARTIFACT geoip-mmdb bytes=7833505 sha256=d432dc277ae1…\n  OK geosite-direct kind=geosite lines=111081\n  OK geosite-proxy kind=geosite lines=27228\n  OK geosite-reject kind=geosite lines=188591\n  OK geosite-china kind=geosite lines=110415\n  OK geosite-apple-cn kind=geosite lines=165\n  OK geosite-google-cn kind=geosite lines=112\n  OK provider-cloudflare kind=provider lines=15\n  OK provider-cloudflare-v6 kind=provider lines=7\n  OK provider-aws kind=provider lines=11243\n  OK provider-googlecloud kind=provider lines=1154\n  OK provider-goog kind=provider lines=152\n  OK provider-oracle kind=provider lines=1398\n[collect_datasets] ok=34 failed=0 skipped=9\n",
           "stderr_tail": ""
         }
       ],
-      "duration_seconds": 23.139,
-      "duration_ms": 23138.875,
+      "duration_seconds": 11.896,
+      "duration_ms": 11896.442,
       "task_identity": "6ea7e0cbd86fb640bfa37c1cf6bae499c42dad5e2db1b8672c7833551fc852b5",
       "contract_version": "dag_node_v1",
-      "input_digest": "5f218a45d817c084fe201e36b4e2c0631565ecc2830194318d2d8b2805d18cb6",
-      "output_digest": "6ed40cbdc7673186a0b027439625b564569bb80760bc82de6beed7297759f7d7",
+      "input_digest": "95417cd96e3dce89360ec9560cf072702a60598c3f83405882e5b578932e6d4a",
+      "output_digest": "ce82eb51ae7d3647c0240d878b4f7c7a3ea8bc4f529e5fd9124f82efbed5bfaf",
       "deps": [
         "validate_dataset_registry",
         "network_lan"
@@ -89,31 +74,43 @@
       "attempts": [
         {
           "attempt": 1,
-          "started_at": "2026-09-03T12:59:51.829067+00:00",
+          "started_at": "2026-09-03T13:03:11.143942+00:00",
           "returncode": 0,
           "stdout_tail": "  OK loyalsoldier-geoip-cn scope=country → china lines=9621\n  OK china-operator-cn scope=country → china lines=6229\n  OK china-operator-unicom scope=carrier → chinaunicom lines=3715\n  WRITE database/ips/china.txt  in=9670+15850 out=9630\n  WRITE database/ips/chinaunicom.txt  in=3736+3715 out=3739\n[collect_ip] sources_ok=3 failed=0 targets=2\n",
           "stderr_tail": ""
         }
       ],
-      "duration_seconds": 34.299,
-      "duration_ms": 34299.12,
+      "duration_seconds": 43.395,
+      "duration_ms": 43394.889,
       "task_identity": "1d347dbd3ef0f416a1b53baf0c1ec009ef4bd3806b13de37432625aea2878606",
       "contract_version": "dag_node_v1",
-      "input_digest": "622b529bfac4dd003d576d5c27f3b13b95b4dbae1cc94aa4879b000bec32ca51",
-      "output_digest": "bf7f2879f31022aa727fa676d7c6c3e130cb1ac1998d46b35862cebbeb744c48",
+      "input_digest": "9b346473fc65728728eabdf874ccb0ed1a7e40952e7dd6768050160adc58c5de",
+      "output_digest": "07a8b6af912c1128ad84786825b49ee15356a4d1a56abe8b4240bdb14051818d",
       "deps": [
         "validate_ip_registry"
       ]
     },
     "network_datasets": {
-      "status": "skipped",
-      "reason": "dependency_failed",
+      "status": "ok",
+      "critical": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-03T13:04:06.436509+00:00",
+          "returncode": 0,
+          "stdout_tail": "  geosite/direct: 111081\n  geosite/proxy: 27228\n  geoip/cn: 9621\n  geoip/jp: 17665\n  geoip/hk: 15681\n  geoip/sg: 13689\n  geoip/kr: 5461\n  geoip/tw: 4796\n[build_network_datasets] done\n",
+          "stderr_tail": ""
+        }
+      ],
+      "duration_seconds": 0.148,
+      "duration_ms": 148.502,
       "task_identity": "741141248d93364c77d8fe7bd2234de5bb8aa741b3e5624e48ed7a0ce7450f65",
       "contract_version": "dag_node_v1",
+      "input_digest": "71b3916e1b83d6226f090fb12162cf9e9dfc5ed8256fcb2e4e52c5dba14aaea7",
+      "output_digest": "6a5a255b823c8bfa81fb0543d14fb5ceba46fbfe074d601307e2f873ad1c74b8",
       "deps": [
         "datasets"
-      ],
-      "critical": false
+      ]
     },
     "network_lan": {
       "status": "ok",
@@ -121,64 +118,62 @@
       "attempts": [
         {
           "attempt": 1,
-          "started_at": "2026-09-03T12:59:51.829322+00:00",
+          "started_at": "2026-09-03T13:03:11.144120+00:00",
           "returncode": 0,
-          "stdout_tail": "[build_network_lan] lan=21 private=7 out=/home/claude/Popular-Rules-Collection/generated/network\n",
+          "stdout_tail": "[build_network_lan] lan=21 private=7 out=/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/generated/network\n",
           "stderr_tail": ""
         }
       ],
-      "duration_seconds": 0.297,
-      "duration_ms": 296.552,
+      "duration_seconds": 0.04,
+      "duration_ms": 41.379,
       "task_identity": "65681c700d424c47d0e50468f0d28c1681f6fce2ab956a05bb972bebc5957f77",
       "contract_version": "dag_node_v1",
-      "input_digest": "d17e210c39065c0c166c0f2eaf052d34dd68d3f9ae741ecf98b544df6c82bed0",
-      "output_digest": "2bf7d1a72fc3f1816d514b8e9b42ee1d70a9eb4c5b23d3b7fa0f2d2ef1d6348a",
+      "input_digest": "6d74c130f1871c51c8a39e8aca8a8e19d0b37b707c1743988d44bd8b365e682d",
+      "output_digest": "c41a35fb7e0d624fbacc46f461cc5cf414fd5d6fb511b814a2fa5f6dbe1a6c1f",
       "deps": [
         "validate_dataset_registry"
       ]
     },
     "provider_datasets": {
-      "status": "skipped",
-      "reason": "dependency_failed",
-      "task_identity": "341d2dcc923cb05a6ce30605a7317bf051e1095df1529a47fcc753a547916c85",
-      "contract_version": "dag_node_v1",
-      "deps": [
-        "providers"
-      ],
-      "critical": false
-    },
-    "providers": {
-      "status": "failed",
+      "status": "ok",
       "critical": false,
       "attempts": [
         {
           "attempt": 1,
-          "started_at": "2026-09-03T12:59:51.833300+00:00",
-          "returncode": 1,
-          "stdout_tail": "  FAIL provider-cloudflare: HTTP Error 403: Forbidden\n  FAIL provider-cloudflare-v6: HTTP Error 403: Forbidden\n  FAIL provider-aws: HTTP Error 403: Forbidden\n  FAIL provider-googlecloud: HTTP Error 403: Forbidden\n  FAIL provider-goog: HTTP Error 403: Forbidden\n  FAIL provider-oracle: HTTP Error 403: Forbidden\n[collect_providers] ok=0 failed=6\n",
-          "stderr_tail": ""
-        },
-        {
-          "attempt": 2,
-          "started_at": "2026-09-03T12:59:52.874601+00:00",
-          "returncode": 1,
-          "stdout_tail": "  FAIL provider-cloudflare: HTTP Error 403: Forbidden\n  FAIL provider-cloudflare-v6: HTTP Error 403: Forbidden\n  FAIL provider-aws: HTTP Error 403: Forbidden\n  FAIL provider-googlecloud: HTTP Error 403: Forbidden\n  FAIL provider-goog: HTTP Error 403: Forbidden\n  FAIL provider-oracle: HTTP Error 403: Forbidden\n[collect_providers] ok=0 failed=6\n",
-          "stderr_tail": ""
-        },
-        {
-          "attempt": 3,
-          "started_at": "2026-09-03T12:59:53.301149+00:00",
-          "returncode": 1,
-          "stdout_tail": "  FAIL provider-cloudflare: HTTP Error 403: Forbidden\n  FAIL provider-cloudflare-v6: HTTP Error 403: Forbidden\n  FAIL provider-aws: HTTP Error 403: Forbidden\n  FAIL provider-googlecloud: HTTP Error 403: Forbidden\n  FAIL provider-goog: HTTP Error 403: Forbidden\n  FAIL provider-oracle: HTTP Error 403: Forbidden\n[collect_providers] ok=0 failed=6\n",
+          "started_at": "2026-09-03T13:03:54.539725+00:00",
+          "returncode": 0,
+          "stdout_tail": "  aws.txt: 11041\n  cloudflare.txt: 15\n  cloudflare6.txt: 7\n  goog.txt: 145\n  googlecloud.txt: 1098\n  oracle.txt: 1107\n[build_provider_datasets] files=6\n",
           "stderr_tail": ""
         }
       ],
-      "duration_seconds": 1.822,
-      "duration_ms": 1821.975,
+      "duration_seconds": 0.037,
+      "duration_ms": 37.104,
+      "task_identity": "341d2dcc923cb05a6ce30605a7317bf051e1095df1529a47fcc753a547916c85",
+      "contract_version": "dag_node_v1",
+      "input_digest": "312345cb99529b2e86cd9df0fa1ab82f9916642134fbc3cc1d73390b54f1c69b",
+      "output_digest": "622c932310cc2df19fa3ffe81d9e8b1519e7af1bf1b3b1da3e1df27e140b368f",
+      "deps": [
+        "providers"
+      ]
+    },
+    "providers": {
+      "status": "ok",
+      "critical": false,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-03T13:03:11.144317+00:00",
+          "returncode": 0,
+          "stdout_tail": "  OK provider-cloudflare lines=15\n  OK provider-cloudflare-v6 lines=7\n  OK provider-aws lines=11041\n  OK provider-googlecloud lines=1098\n  OK provider-goog lines=145\n  OK provider-oracle lines=1107\n[collect_providers] ok=6 failed=0\n",
+          "stderr_tail": ""
+        }
+      ],
+      "duration_seconds": 0.79,
+      "duration_ms": 790.199,
       "task_identity": "b573613110cdee1d448dd595c463e456b2a855ee6f029899b3f37d8dc1e8e430",
       "contract_version": "dag_node_v1",
-      "input_digest": "f0a8724bdea0f5a13de689a07c1830fb9469b0c9cbb4096175283f87be4bd1d7",
-      "output_digest": "09d04e5745b2d71aa1a8bff3156b62bd7d60292ed7724d637c85790d843af6de",
+      "input_digest": "5e1ba9839fbcf40f9b2a7e18e415733fbce820b1d580c9ee66800f5c24e9cb7e",
+      "output_digest": "e0f0b6494b232bbf812c31d7a304855e41df5454bbe48b9e533d2a12b5ec191c",
       "deps": [
         "validate_dataset_registry"
       ]
@@ -189,18 +184,18 @@
       "attempts": [
         {
           "attempt": 1,
-          "started_at": "2026-09-03T12:59:51.840120+00:00",
+          "started_at": "2026-09-03T13:03:11.145017+00:00",
           "returncode": 0,
           "stdout_tail": "[collect] registry v3 date=2026-09-03 sources=4 workers=12 force=False\n[collect] → blackmatrix7 (github_raw, 139 rules)\n[collect] → metacubex (github_raw, 76 rules)\n[collect] → v2fly (github_raw, 56 rules)\n[collect] → dler (github_raw, 20 rules)\n[collect] done ok=0 not_modified=0 skipped=291 failed=0\n",
           "stderr_tail": ""
         }
       ],
-      "duration_seconds": 1.797,
-      "duration_ms": 1797.154,
+      "duration_seconds": 0.715,
+      "duration_ms": 714.781,
       "task_identity": "a91364d15f2cb3bef30ab4928607af804208ec429afd66faa3ed4b7749493613",
       "contract_version": "dag_node_v1",
-      "input_digest": "9afc6bcaff5460b8878c110640447ef574a45c4c83c0f71490da71b700250e33",
-      "output_digest": "7e5d59c62f5a36c14fedbc40ea1ac359253a20ef3ae945fc401a26a7308cbde1",
+      "input_digest": "a6dc90f70b694aa6cb3edbf5b45440829092f1bc134f704f108e20e5ef70b4df",
+      "output_digest": "fb4bfeb3ed7e6c7522d54885121829775ab7199db345990987fea5f08c471c3d",
       "deps": [
         "validate_registry"
       ]
@@ -211,18 +206,18 @@
       "attempts": [
         {
           "attempt": 1,
-          "started_at": "2026-09-03T12:59:50.926130+00:00",
+          "started_at": "2026-09-03T13:03:10.934116+00:00",
           "returncode": 0,
           "stdout_tail": "[validate_dataset_registry] files=7 errors=0 warnings=0\n",
           "stderr_tail": ""
         }
       ],
-      "duration_seconds": 0.869,
-      "duration_ms": 869.041,
+      "duration_seconds": 0.115,
+      "duration_ms": 115.164,
       "task_identity": "1aff89ef4c58911295993eae40faf44da9a310fcfbabd359377f33f4ff4729fd",
       "contract_version": "dag_node_v1",
       "input_digest": "d2ddc8f49d30db4e1038da7934ec346ad2314f80d0c0efd884b00f92b0957b59",
-      "output_digest": "5af61bd7ecd9766c855d23156b809b8ed9c52669c7ada8d15c1b3b4005b5bd5a",
+      "output_digest": "ef2104e325aba55087f9a87d235db14a5ae3315f857a7116447e884661980847",
       "deps": []
     },
     "validate_ip_registry": {
@@ -231,18 +226,18 @@
       "attempts": [
         {
           "attempt": 1,
-          "started_at": "2026-09-03T12:59:50.926853+00:00",
+          "started_at": "2026-09-03T13:03:10.934341+00:00",
           "returncode": 0,
           "stdout_tail": "[validate_ip_registry] sources=4 errors=0 warnings=1\n  WARN  china-operator-cernet: carrier source folded into country id 'china'\n",
           "stderr_tail": ""
         }
       ],
-      "duration_seconds": 0.801,
-      "duration_ms": 794.943,
+      "duration_seconds": 0.202,
+      "duration_ms": 201.592,
       "task_identity": "58fb925533b7dbdcfe7c3aef203798fd061189d68498dfe9065ececd01e371e0",
       "contract_version": "dag_node_v1",
       "input_digest": "d7f6b638b719f71c01421f1c9c942cac3c1ed608b51e7bb6892783aaa337ed90",
-      "output_digest": "49c265c6da4efdb067b3cfe32148744438f83820cfb70253dc387ef617a1cca2",
+      "output_digest": "51d8db4c9db562dd38b073b7c121ecf43e59c660a7d22e3061cecf99242173ae",
       "deps": []
     },
     "validate_registry": {
@@ -251,20 +246,20 @@
       "attempts": [
         {
           "attempt": 1,
-          "started_at": "2026-09-03T12:59:50.933790+00:00",
+          "started_at": "2026-09-03T13:03:10.934932+00:00",
           "returncode": 0,
           "stdout_tail": "[validate_registry] registry=170 primary=195 orphans=0 errors=0 warnings=4\n  WARN  baidu: aggregate without children\n  WARN  jingdong: aggregate without children\n  WARN  restricted: aggregate without children\n  WARN  25 primary-only ids (not in registry rules) — ok if intentional\n",
           "stderr_tail": ""
         }
       ],
-      "duration_seconds": 0.895,
-      "duration_ms": 894.477,
+      "duration_seconds": 0.208,
+      "duration_ms": 208.048,
       "task_identity": "72622a3e3b63eaab535009902d57e9ecfdcc345c003fe8d8c107da731366d688",
       "contract_version": "dag_node_v1",
       "input_digest": "ed83240e404d100d9e4844244992239a4a0b63459ba274fcfc226099365fe21e",
-      "output_digest": "c3894793ec7757431be3b3bc4dc57d0fa51b90b1d25c138b63c7dcf92fce0127",
+      "output_digest": "6053dde7b58d75520a4e84825a67eb79d6bbcf4c7f508fa4ef77ea5f181b546f",
       "deps": []
     }
   },
-  "manifest_sha256": "237fee8f08565fe64aa63a8d76ad635bbcf700395e4ad6b6014a16533d3f6533"
+  "manifest_sha256": "53b39665663094d397ba07c18576b99e5ad44612b677f56244a6b8cf5b2de1fb"
 }

@@ -1,9 +1,17 @@
 {
   "id": "provider-aws",
+  "kind": "provider",
   "scope": "provider",
   "path": "database/provider/aws.txt",
-  "lines": 10980,
-  "fetched_at": "2026-09-01T01:05:16.751213+00:00",
-  "source_url": "https://ip-ranges.amazonaws.com/ip-ranges.json",
+  "lines": 11243,
+  "sha256_source": "55a1bc13beed7097b1fc3c5ccb6b292a6ea96ca63809640e8adabf65528858bd",
+  "fetched_at": "2026-09-03T13:03:54.676812+00:00",
+  "source": {
+    "owner": null,
+    "repo": null,
+    "branch": null,
+    "path": "https://ip-ranges.amazonaws.com/ip-ranges.json",
+    "url": "https://ip-ranges.amazonaws.com/ip-ranges.json"
+  },
   "notes": "NEVER map to Amazon retail service."
 }

@@ -1,9 +1,17 @@
 {
   "id": "provider-googlecloud",
+  "kind": "provider",
   "scope": "provider",
   "path": "database/provider/googlecloud.txt",
-  "lines": 1098,
-  "fetched_at": "2026-09-01T01:05:16.751213+00:00",
-  "source_url": "https://www.gstatic.com/ipranges/cloud.json",
+  "lines": 1154,
+  "sha256_source": "48eddf90df6521cedc6730f8451fbc0d6f58dc09b9c8c2017cf6f79011c4d21f",
+  "fetched_at": "2026-09-03T13:03:54.676812+00:00",
+  "source": {
+    "owner": null,
+    "repo": null,
+    "branch": null,
+    "path": "https://www.gstatic.com/ipranges/cloud.json",
+    "url": "https://www.gstatic.com/ipranges/cloud.json"
+  },
   "notes": "GCP \u2260 Google Search/YouTube product."
 }
