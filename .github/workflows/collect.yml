@@ -91,16 +91,29 @@ jobs:
           rm -f collection-result.json collection-result.stderr.log
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A "backup/${DAY}/sources/" "backup/${DAY}/manifests/" data/collection/ sources/health.yaml reports/
+
+          # Stage the complete generated snapshot tree. Collection may create files
+          # late in the run, so narrow pathspecs can leave residual changes behind.
+          git add -A "backup/${DAY}/" data/collection/ sources/health.yaml reports/
           if git diff --staged --quiet; then
             echo "No collection changes."
             exit 0
           fi
           git commit -m "chore(collect): snapshot ${DAY}"
+
+          # Re-stage only the collection-owned paths once more to catch any files
+          # materialized during the commit boundary. If anything remains outside
+          # those paths, fail with an explicit status listing instead of silently
+          # pushing unrelated workspace changes.
+          git add -A "backup/${DAY}/" data/collection/ sources/health.yaml reports/
           if [ -n "$(git status --porcelain=v1)" ]; then
-            echo "Collection workspace is dirty after commit; refusing push."
+            echo "Collection workspace is dirty after commit. Residual changes:"
+            git status --short
+            git diff --name-only
+            git diff --cached --name-only
             exit 1
           fi
+
           for attempt in 1 2 3; do
             git fetch --prune origin main
             if ! git rebase --autostash origin/main; then
