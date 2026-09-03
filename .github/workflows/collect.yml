@@ -94,7 +94,7 @@ jobs:
 
           # Collection owns both immutable snapshots and generated release artifacts.
           # Stage every collection output so generated files cannot remain as residual changes.
-          git add -A "backup/${DAY}/" generated/ data/collection/ sources/health.yaml reports/
+          git add -A "backup/${DAY}/" database/ generated/ data/collection/ sources/health.yaml reports/
           if git diff --staged --quiet; then
             echo "No collection changes."
             exit 0
@@ -102,7 +102,7 @@ jobs:
           git commit -m "chore(collect): snapshot ${DAY}"
 
           # Re-stage all collection-owned outputs after the commit boundary.
-          git add -A "backup/${DAY}/" generated/ data/collection/ sources/health.yaml reports/
+          git add -A "backup/${DAY}/" database/ generated/ data/collection/ sources/health.yaml reports/
           if [ -n "$(git status --porcelain=v1)" ]; then
             echo "Collection workspace is dirty after commit. Residual changes:"
             git status --short
