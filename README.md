@@ -1,78 +1,58 @@
-# Popular-Rules-Collection
+# Universal Rules Data Platform
 
-> **规则数据供应链 + 标准化中间库 + 多客户端构建系统**
-> Rules Data Supply Chain · Universal Rule Database · Multi-format Build System
+> 下一代多生态网络规则数据供应链
 
-自动采集、标准化、智能去重、冲突检测、版本追踪，并向 **Mihomo / Clash Meta / sing-box / Surge / Shadowrocket / Quantumult X / Egern / Loon** 输出规则集。
+当前仓库进入 V1 架构重建阶段。原项目的采集、不可变快照、统一语义、多客户端 Adapter、质量验证思想继续继承，但旧 V2/V3/legacy 路径不会继续扩张。
 
-## 我该怎么用？
+## 核心目标
 
-1. 打开 **[使用指南 docs/USAGE.md](docs/USAGE.md)** — 选规则、订阅读、策略顺序
-2. 查 **[规则目录 docs/RULE_CATALOG.md](docs/RULE_CATALOG.md)** — 每条规则的说明与使用场景
-3. 单服务 Raw 链接见 **[docs/rules/](docs/rules/)**
-
-## 架构
-
-Service Rules 与 Network Datasets 隔离。Service Rules 的生产构建统一由 V3 Engine 执行：
+这不是规则文件仓库，而是一个可验证、可审计、可复现、可回滚的规则数据供应链：
 
 ```text
-Upstream / Source Registry
-  → collect（只负责抓取）
-  → immutable snapshot
-  → ingest → quarantine → canonical
-  → hierarchy / decision → IR
-  → adapters ×7 → diff → golden → release
-  → atomic promotion → generated/
-
-Network Dataset Sources
-  → collect_datasets / collect_ip / collect_providers
-  → database/{network,geosite,geoip,provider,asn,policies}
-  → dataset validation → generated/{network,geosite,geoip,provider}
+Source Registry
+  → Collector
+  → Immutable Snapshot
+  → Parser
+  → Canonical Model
+  → Deduplicate / Conflict / Coverage
+  → Decision
+  → Semantic IR
+  → Client Adapter
+  → Semantic Verification
+  → Release Gate
+  → Immutable Release
 ```
 
-## 目录
+## 架构不变量
 
-| 路径 | 用途 |
-|------|------|
-| `rule/` | 人读浏览（Primary 生态路径） |
-| `database/` | Network Dataset 中间库；不是 V3 Service Rule Runtime 输入 |
-| `generated/` | 客户端可订阅产物 |
-| `sources/` | registry · ip_registry · datasets · health |
-| `data/runs/` | V3 immutable run 与发布证据 |
-| `docs/` | USAGE · RULE_CATALOG · 架构与质检 |
-| `config/` | pipeline · capabilities · intentional |
-| `reports/` | 覆盖率 / 质量 / 能力矩阵 |
-| `tests/` | 契约与回归测试 |
+- Git 只保存代码、配置、Schema、Tests、Decision、Docs。
+- Snapshot / CAS / Run / Report / Release Artifact 不进入 Git 运行时状态。
+- Builder 必须离线，只消费 Snapshot Manifest。
+- Source 失败或异常不得覆盖生产数据；使用 quarantine + last-known-good。
+- Parser 不做业务决策；Adapter 不改变规则逻辑。
+- 所有规范化、排序、构建和发布均必须 deterministic。
+- semantic loss 必须显式暴露，不得为了客户端覆盖率伪造规则。
 
-## 快速开始（开发者）
+## 当前阶段
 
-```bash
-pip install -r requirements.txt
+**Phase 0：架构冻结。** 已建立：
 
-# 仅抓取上游
-python scripts/collect.py
+- `docs/PLATFORM_V1_ARCHITECTURE.md`
+- `docs/ADR-0001-platform-foundation.md`
+- `schemas/source.schema.json`
+- `schemas/rule.schema.json`
+- `schemas/decision.schema.json`
+- `schemas/ir.schema.json`
+- `schemas/release.schema.json`
+- `config/platform-sources.yaml`
+- `config/clients.yaml`
+- `decisions/README.yaml`
 
-# V3：从当天 collected snapshot 构建一整次 immutable run
-DAY=$(date -u +%Y-%m-%d)
-PYTHONPATH=. python -m src.engine.cli all --sources "backup/${DAY}" --data data
+下一阶段先实现最小闭环：HTTP Source → Snapshot → Parser → Canonical → Mihomo → Validation → Release；在闭环稳定前不扩展七客户端。
 
-# 查看当前 Engine 版本
-PYTHONPATH=. python -m src.engine.cli --version
+## 旧系统迁移原则
 
-# 对一个已经通过 release gate 的 run 做发布
-PYTHONPATH=. python -m src.engine.cli promote --run-id <run_id>
-```
-
-`python scripts/normalize.py`、`python scripts/deduplicate.py` 与 `scripts/build_*.py` 已退出生产链，仅作为迁移阶段遗留工具保留。
-
-## 订阅约定
-
-- **Primary**: GitHub Raw
-- **Mirror**: jsDelivr / Fastly（仅加速，非权威）
-
-```text
-.../generated/<client>/<service_id>.yaml|list|json
-```
+`main` 当前生产链保持独立。V1 通过 `platform-v1` 分支逐步建立新边界；任何 legacy 数据只有在完成 lineage、schema、reproducibility 与 migration tests 后才允许迁移。
 
 ## License
 
