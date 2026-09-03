@@ -27,16 +27,16 @@ class CollectionSpec:
 
 
 COLLECTION_SPECS = (
-    CollectionSpec("validate_registry", (sys.executable, "scripts.validate_registry")),
-    CollectionSpec("service_rules", (sys.executable, "scripts.collect"), deps=("validate_registry",), critical=True),
-    CollectionSpec("validate_ip_registry", (sys.executable, "scripts.validate_ip_registry"), critical=False),
-    CollectionSpec("ip_rules", (sys.executable, "scripts.collect_ip"), deps=("validate_ip_registry",), critical=False),
-    CollectionSpec("validate_dataset_registry", (sys.executable, "scripts.validate_dataset_registry"), critical=False),
-    CollectionSpec("network_lan", (sys.executable, "scripts.build_network_lan"), deps=("validate_dataset_registry",), critical=False),
-    CollectionSpec("datasets", (sys.executable, "scripts.collect_datasets"), deps=("validate_dataset_registry", "network_lan"), critical=False),
-    CollectionSpec("network_datasets", (sys.executable, "scripts.build_network_datasets"), deps=("datasets",), critical=False),
-    CollectionSpec("providers", (sys.executable, "scripts.collect_providers"), deps=("validate_dataset_registry",), critical=False),
-    CollectionSpec("provider_datasets", (sys.executable, "scripts.build_provider_datasets"), deps=("providers",), critical=False),
+    CollectionSpec("validate_registry", (sys.executable, "scripts/validate_registry.py")),
+    CollectionSpec("service_rules", (sys.executable, "scripts/collect.py"), deps=("validate_registry",), critical=True),
+    CollectionSpec("validate_ip_registry", (sys.executable, "scripts/validate_ip_registry.py"), critical=False),
+    CollectionSpec("ip_rules", (sys.executable, "scripts/collect_ip.py"), deps=("validate_ip_registry",), critical=False),
+    CollectionSpec("validate_dataset_registry", (sys.executable, "scripts/validate_dataset_registry.py"), critical=False),
+    CollectionSpec("network_lan", (sys.executable, "scripts/build_network_lan.py"), deps=("validate_dataset_registry",), critical=False),
+    CollectionSpec("datasets", (sys.executable, "scripts/collect_datasets.py"), deps=("validate_dataset_registry", "network_lan"), critical=False),
+    CollectionSpec("network_datasets", (sys.executable, "scripts/build_network_datasets.py"), deps=("datasets",), critical=False),
+    CollectionSpec("providers", (sys.executable, "scripts/collect_providers.py"), deps=("validate_dataset_registry",), critical=False),
+    CollectionSpec("provider_datasets", (sys.executable, "scripts/build_provider_datasets.py"), deps=("providers",), critical=False),
 )
 
 COLLECTION_NODES = [Node(spec.name, spec.deps) for spec in COLLECTION_SPECS]
