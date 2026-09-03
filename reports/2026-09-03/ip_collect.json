@@ -1,0 +1,69 @@
+{
+  "date": "2026-09-03",
+  "sources_ok": 3,
+  "sources_failed": 0,
+  "targets": {
+    "china": {
+      "maps_to": "china",
+      "updated_at": "2026-09-03T12:59:52.628144+00:00",
+      "cidr_count": 9630,
+      "existing_lines_before": 9670,
+      "incoming_lines": 15850,
+      "contributions": [
+        {
+          "source_id": "loyalsoldier-geoip-cn",
+          "scope": "country",
+          "path": "text/cn.txt",
+          "fetch": {
+            "type": "github_raw",
+            "owner": "Loyalsoldier",
+            "repo": "geoip",
+            "branch": "release"
+          },
+          "lines_in": 9621,
+          "fetched_at": "2026-09-03T12:59:52.628144+00:00",
+          "notes": "Country CN prefixes only. Never attribute to a product service."
+        },
+        {
+          "source_id": "china-operator-cn",
+          "scope": "country",
+          "path": "china.txt",
+          "fetch": {
+            "type": "github_raw",
+            "owner": "gaoyifan",
+            "repo": "china-operator-ip",
+            "branch": "ip-lists"
+          },
+          "lines_in": 6229,
+          "fetched_at": "2026-09-03T12:59:52.628144+00:00",
+          "notes": "Alternate CN aggregate; merged + containment-deduped into china."
+        }
+      ],
+      "why": "Mapped via ip_registry maps_to; scope enforced by validate_ip_registry. Country/carrier only — not product service attribution."
+    },
+    "chinaunicom": {
+      "maps_to": "chinaunicom",
+      "updated_at": "2026-09-03T12:59:52.628144+00:00",
+      "cidr_count": 3739,
+      "existing_lines_before": 3736,
+      "incoming_lines": 3715,
+      "contributions": [
+        {
+          "source_id": "china-operator-unicom",
+          "scope": "carrier",
+          "path": "unicom.txt",
+          "fetch": {
+            "type": "github_raw",
+            "owner": "gaoyifan",
+            "repo": "china-operator-ip",
+            "branch": "ip-lists"
+          },
+          "lines_in": 3715,
+          "fetched_at": "2026-09-03T12:59:52.628144+00:00",
+          "notes": ""
+        }
+      ],
+      "why": "Mapped via ip_registry maps_to; scope enforced by validate_ip_registry. Country/carrier only — not product service attribution."
+    }
+  }
+}

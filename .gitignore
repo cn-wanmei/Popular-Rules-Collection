@@ -5,3 +5,5 @@ __pycache__/
 database/provenance/domains.jsonl
 # V2.1 local/CI release pack carrier
 dist/
+# Content-Addressed Storage objects — binary, unbounded size, never commit
+data/cas/

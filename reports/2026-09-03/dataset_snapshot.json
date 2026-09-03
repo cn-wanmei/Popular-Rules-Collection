@@ -1,0 +1,597 @@
+{
+  "date": "2026-09-03",
+  "items": {
+    "database/network/dns.txt": {
+      "kind": "network",
+      "path": "database/network/dns.txt",
+      "count": 18,
+      "sha256": "e02667deb5ecae8e23f7b8ab25cc327d8f5f942bd8624f68a3dc3828bb9d1b97",
+      "bytes": 267,
+      "lines_sample_hash": "d5f42b32b073321c76d14367ab85c8ea5fa261ed4ae843ba65f0e46339b7853b"
+    },
+    "database/network/lan.txt": {
+      "kind": "network",
+      "path": "database/network/lan.txt",
+      "count": 21,
+      "sha256": "66e300191d16a07f27412a93b73220d4c8ad4bb2fb6ddcc5b64ad9eb6b9d3598",
+      "bytes": 466,
+      "lines_sample_hash": "08934f116d0f31a68ad9a9e9f0dc1a62a97168296ea547210e10c6cc29928172"
+    },
+    "database/network/ntp.txt": {
+      "kind": "network",
+      "path": "database/network/ntp.txt",
+      "count": 12,
+      "sha256": "31e872223362df5c66952e4ed56365f61b66819d8d423712bcfd526f3be33c1a",
+      "bytes": 189,
+      "lines_sample_hash": "3b11c6db82872fb06938f50c9b1090a661d19c292f0a635c12922a8872441e20"
+    },
+    "database/network/private.txt": {
+      "kind": "network",
+      "path": "database/network/private.txt",
+      "count": 7,
+      "sha256": "8a47e5e8ea1742a36b84d17b4f242a2c0610ae7f8bc31c5a3ded852b1535516f",
+      "bytes": 146,
+      "lines_sample_hash": "f3b53247c6c09b7b85a3ec6d09ad1b041a836d80ca630c959087c6aebbcbf763"
+    },
+    "database/network/stun.txt": {
+      "kind": "network",
+      "path": "database/network/stun.txt",
+      "count": 9,
+      "sha256": "c94fd40a014d679037e5e2ea0fc4fa38d154a40ce294b94031417516628b8582",
+      "bytes": 182,
+      "lines_sample_hash": "c800b6d012262d11af2e3c10767ca5d1147e24112ddcebd3d876c46745c1c29c"
+    },
+    "database/geosite/apple-cn.txt": {
+      "kind": "geosite",
+      "path": "database/geosite/apple-cn.txt",
+      "count": 165,
+      "sha256": "88d45fbc1b68bdd5dcf83f649c8a010d5d9488ad2fd07982e04c96f6cd159729",
+      "bytes": 4095,
+      "lines_sample_hash": "2a6e5b0f49bd6852ae302959b96133f51833cde4bf61cc2ad12053a09087c859"
+    },
+    "database/geosite/china.txt": {
+      "kind": "geosite",
+      "path": "database/geosite/china.txt",
+      "count": 110538,
+      "sha256": "0201c3e2cd199d0dfe415be4ca81a772c8323e1e18e373f01d66aefa0687af62",
+      "bytes": 1400872,
+      "lines_sample_hash": "fe52209a14923e1c029637e380badd917371a0f33e787faf087910c33d07df2e"
+    },
+    "database/geosite/direct.txt": {
+      "kind": "geosite",
+      "path": "database/geosite/direct.txt",
+      "count": 111201,
+      "sha256": "34c5828aaf9b517d5f08806807e16f809937ec9e847fa0301d6dd35e9ea5653d",
+      "bytes": 1411581,
+      "lines_sample_hash": "632548084c45645c3f63fb3bc0715943da44bf4b98aafaad58b0de5d3524de44"
+    },
+    "database/geosite/google-cn.txt": {
+      "kind": "geosite",
+      "path": "database/geosite/google-cn.txt",
+      "count": 112,
+      "sha256": "e2cb31ff396cde4ffc0634043432282f2037ab09035d329cc88e3d7bd218f6cc",
+      "bytes": 2463,
+      "lines_sample_hash": "86ebaff6167999e7759fcd0288717a41901fe6e6c530fa941a989a217eaa12e2"
+    },
+    "database/geosite/proxy.txt": {
+      "kind": "geosite",
+      "path": "database/geosite/proxy.txt",
+      "count": 27228,
+      "sha256": "ae58078c6826b7e3722e7403b7d8ac8e3ec0b3b977e3df700ac579eef5f84c13",
+      "bytes": 406601,
+      "lines_sample_hash": "36046aaf399e6e02229a52475cb693017c1f43bbccd2e6abe5aa3e08792bcbc6"
+    },
+    "database/geosite/reject.txt": {
+      "kind": "geosite",
+      "path": "database/geosite/reject.txt",
+      "count": 187976,
+      "sha256": "ff9ff8298a1d3d8d6ed89aa606079990b7f3b4835e992fb41faa4988ef5c9bb2",
+      "bytes": 3898638,
+      "lines_sample_hash": "ff846aeca9dcf71bcad06c4998ef5b4d76c1ef5541c33dc3de1836507bccbe28"
+    },
+    "database/geoip/au.txt": {
+      "kind": "geoip",
+      "path": "database/geoip/au.txt",
+      "count": 17420,
+      "sha256": "95eba430c14dc29f00ffdc2914879e5f2331c0e62efe75244387b18df5c1bd39",
+      "bytes": 298304,
+      "lines_sample_hash": "1c2ee4ffb36d51cfff39089774539a477139a33d600bd043e24a2bbe661e6e4f"
+    },
+    "database/geoip/cn.txt": {
+      "kind": "geoip",
+      "path": "database/geoip/cn.txt",
+      "count": 9651,
+      "sha256": "9640bcbdfbd4023d1f136e6613a1e38ad4ee5ff9a60bead76fd97107fe494bb5",
+      "bytes": 153783,
+      "lines_sample_hash": "2bc01bbaf32f235597d0edf035466735bc4867b9b65ad75b034779368ddf53a4"
+    },
+    "database/geoip/de.txt": {
+      "kind": "geoip",
+      "path": "database/geoip/de.txt",
+      "count": 71845,
+      "sha256": "bdde5dbf7046f8574460673beff9dfb7dc67c0434bfe27526ca45d6edb408f6a",
+      "bytes": 1389213,
+      "lines_sample_hash": "547cf74f666c0b3c8272b2559c6ec6157de9a4a638e5c3019c5c6bd5eec74cd2"
+    },
+    "database/geoip/gb.txt": {
+      "kind": "geoip",
+      "path": "database/geoip/gb.txt",
+      "count": 50297,
+      "sha256": "fbf385f0526c9d1785e562f8161bb24348f118a60729aaa1b6a5d8c9199d089d",
+      "bytes": 880309,
+      "lines_sample_hash": "2537d7d147e8baea7198476ee620a55326895ba5123d1a83c256150b1dee447e"
+    },
+    "database/geoip/hk.txt": {
+      "kind": "geoip",
+      "path": "database/geoip/hk.txt",
+      "count": 15649,
+      "sha256": "6f37f2aaa5e00472bb4cd80b9210ea535168ae87ae3f3a7bbb3e90b015caac10",
+      "bytes": 268721,
+      "lines_sample_hash": "0c5c3421448651bded4c8645aca435b8c0de11466ddb2c1357c66fb22323218f"
+    },
+    "database/geoip/id.txt": {
+      "kind": "geoip",
+      "path": "database/geoip/id.txt",
+      "count": 10714,
+      "sha256": "78db8499d13083fdf0d5bc8aea25353c1e886824de333952ce1bf5aa1afd84dd",
+      "bytes": 183848,
+      "lines_sample_hash": "d363a2dd0b74c69bc390d8ff43de47103f5527e9413411f21492ae67a11d63ba"
+    },
+    "database/geoip/in.txt": {
+      "kind": "geoip",
+      "path": "database/geoip/in.txt",
+      "count": 20656,
+      "sha256": "110e24bbb440370d5debd3867e98f21885766211dd672008b5a8205b7a222842",
+      "bytes": 362686,
+      "lines_sample_hash": "7d3e3a122048e2419d8ddf42cd1beab7ec73609fbf7ff3f67975450dcc15b75f"
+    },
+    "database/geoip/jp.txt": {
+      "kind": "geoip",
+      "path": "database/geoip/jp.txt",
+      "count": 17725,
+      "sha256": "a4db942a0daa4ea7fdc3a74ead9973b645fbd36540de3f5f2b20b9d5c37f49aa",
+      "bytes": 308010,
+      "lines_sample_hash": "4178e5e6550da775d9a45d40a64b596451328ac845347813f9dca329d01c1f7c"
+    },
+    "database/geoip/kr.txt": {
+      "kind": "geoip",
+      "path": "database/geoip/kr.txt",
+      "count": 5440,
+      "sha256": "5a158a889096c730653f04a11ab77672d5d4c831d358fe4a9514f6623449fc2b",
+      "bytes": 93959,
+      "lines_sample_hash": "b036f64ddd7521f880094ca60dbad148a4904b2961800e649bf98555a0e43e76"
+    },
+    "database/geoip/my.txt": {
+      "kind": "geoip",
+      "path": "database/geoip/my.txt",
+      "count": 3862,
+      "sha256": "83a70c4d39cef2df5a7a33b7003f5e8a7b20dca57c53f1be4ae95174642d2c42",
+      "bytes": 66950,
+      "lines_sample_hash": "64b9705e56a82ebfcb4b080ebbc0f95c02f3e1038612cc960706177c686cfe78"
+    },
+    "database/geoip/private.txt": {
+      "kind": "geoip",
+      "path": "database/geoip/private.txt",
+      "count": 18,
+      "sha256": "a481dce4e9cc8318eafb3e0132cede0f936b7b8045a4ecb7795008dbeb7432d9",
+      "bytes": 224,
+      "lines_sample_hash": "9ea58a874fd295cc44b401727732dd95b25ca8a573c823b80b4cd64ea4ff1973"
+    },
+    "database/geoip/sg.txt": {
+      "kind": "geoip",
+      "path": "database/geoip/sg.txt",
+      "count": 13656,
+      "sha256": "89b20ccdce70f246faa60aba71395ba897844cf1fdba73d0ac031e4eee133fb3",
+      "bytes": 237929,
+      "lines_sample_hash": "310a22c217a55346a0974f366da5e66cad2addd2fc8066a187c154522fc1102f"
+    },
+    "database/geoip/th.txt": {
+      "kind": "geoip",
+      "path": "database/geoip/th.txt",
+      "count": 3464,
+      "sha256": "a2c2106e41b51aad18e6a407290ff175120e9442eac4488e4f4ac2d84478eaba",
+      "bytes": 62184,
+      "lines_sample_hash": "d05459ed52579f195806fdb8485db6189517f7f528b76bd085267083e897b721"
+    },
+    "database/geoip/tw.txt": {
+      "kind": "geoip",
+      "path": "database/geoip/tw.txt",
+      "count": 4795,
+      "sha256": "f56fd24160a9706733ae5fe5c65bb85656f0e0df969b78384c41d9ef3ef2e99a",
+      "bytes": 87255,
+      "lines_sample_hash": "169208bfe9c3e257551aecbcb9bf1dc5bfbdab8e9735c12742ba8d11be617cb0"
+    },
+    "database/geoip/us.txt": {
+      "kind": "geoip",
+      "path": "database/geoip/us.txt",
+      "count": 302340,
+      "sha256": "f2299f17c55c1d68d78759b5124edf6952b9002913c6c34c40240cc0d553cfee",
+      "bytes": 5787378,
+      "lines_sample_hash": "d157fbc9b30bfc10b414b0848d69d19c08341ced0c79c228d849522ceefe8588"
+    },
+    "database/geoip/vn.txt": {
+      "kind": "geoip",
+      "path": "database/geoip/vn.txt",
+      "count": 3765,
+      "sha256": "a56aa753c80f640bf194dee7b8fa77abcd5a190270406552afda12b12ad3ff87",
+      "bytes": 64924,
+      "lines_sample_hash": "e6ef16897d7ab09dce1ca77e56a82b4a67a5a62bd3e88c91059c8bfba9ab8d9f"
+    },
+    "database/asn/metadata.yaml": {
+      "kind": "asn",
+      "path": "database/asn/metadata.yaml",
+      "count": 107,
+      "sha256": "ab10b65ff28ddb8e654d8d5cfc8557715ca09ad1273a480e0135b6bfe24aa929",
+      "bytes": 1949,
+      "lines_sample_hash": "b141b4a0fce1b8aa3433c92e685aa8e8d9c03dc1d677aea9b44b2dbf35692055"
+    },
+    "database/policies/direct/manifest.yaml": {
+      "kind": "policy",
+      "path": "database/policies/direct/manifest.yaml",
+      "count": 27,
+      "sha256": "708c0ed975837cbb5f7c14f30bf3265651555344331d319662fafb29a27d3228",
+      "bytes": 652,
+      "lines_sample_hash": "3aa568e8d4824a74c52ae38335008ad6893d6808b8850126e12c41e7c54a88e9"
+    },
+    "database/policies/dns/servers.yaml": {
+      "kind": "policy",
+      "path": "database/policies/dns/servers.yaml",
+      "count": 43,
+      "sha256": "0de8ce9e93b9e6a1e947cc531f0b0121098cbc50af0d912f18780d6dde24cd9c",
+      "bytes": 1276,
+      "lines_sample_hash": "e149c0821079f56719d18b52afb254a2f5a7178ebaf762ef4806fa474ff4f46c"
+    },
+    "database/policies/overrides/force_direct.yaml": {
+      "kind": "policy",
+      "path": "database/policies/overrides/force_direct.yaml",
+      "count": 4,
+      "sha256": "2a9440d5337ed574a2ee2dd1c505feb0126b92c30b1f8809a5f982d45ebb7cd3",
+      "bytes": 161,
+      "lines_sample_hash": "6ae0371e08056e338be6875e3f381e9ec3ed40795d67cc41770197127ea2a9c1"
+    },
+    "database/policies/overrides/force_proxy.yaml": {
+      "kind": "policy",
+      "path": "database/policies/overrides/force_proxy.yaml",
+      "count": 4,
+      "sha256": "058c809a8c3f4c069ff3ca3e068706c61de78110711eeae5d9921edce88ac784",
+      "bytes": 156,
+      "lines_sample_hash": "208d420b1146f29bfc795ad46dc655053b57655c3973dbf3b4b74903e0d2bbfd"
+    },
+    "database/policies/overrides/force_reject.yaml": {
+      "kind": "policy",
+      "path": "database/policies/overrides/force_reject.yaml",
+      "count": 4,
+      "sha256": "ac7966f70f291360b3494dd5b44a254399e29ff5e2d068801f4adcd28ff2bca4",
+      "bytes": 131,
+      "lines_sample_hash": "68e8619067614a9ee6ceb5c206b62de428633be159ed738f31e68df9ac1c0c33"
+    },
+    "database/policies/overrides/manifest.yaml": {
+      "kind": "policy",
+      "path": "database/policies/overrides/manifest.yaml",
+      "count": 10,
+      "sha256": "d2bcb4d44a0408d8143c96e1f581fe48c4f08da0cf17c1abdc1c270ed16f0e6d",
+      "bytes": 329,
+      "lines_sample_hash": "933bbb36a0db8d62f6cf4e3bb56fa774547467d5d5911372cc9b5650925a0d5f"
+    },
+    "database/policies/proxy/manifest.yaml": {
+      "kind": "policy",
+      "path": "database/policies/proxy/manifest.yaml",
+      "count": 12,
+      "sha256": "60319457a4778d986a28fb23b6b4fb7e103d4d296149607def9beb160cc6c713",
+      "bytes": 291,
+      "lines_sample_hash": "97fad4171946a38e09ecbc2441f30667f32c964b06629beb7b1eb1a02b369b84"
+    },
+    "database/policies/reject/manifest.yaml": {
+      "kind": "policy",
+      "path": "database/policies/reject/manifest.yaml",
+      "count": 16,
+      "sha256": "a3d5dcd799dd8c28262b6bff0ca4666822a8ca03cc93efa8279af4e9f18b01e0",
+      "bytes": 436,
+      "lines_sample_hash": "ca80250290fca85f59953ab671a5840111591564cfc306cae9846efc63b5974b"
+    },
+    "database/policies/reject/security.yaml": {
+      "kind": "policy",
+      "path": "database/policies/reject/security.yaml",
+      "count": 9,
+      "sha256": "aa8bdc819496a6cc80f4650a09d7d3bc91519dd486a1f94252bcae2552777158",
+      "bytes": 207,
+      "lines_sample_hash": "7959edfc19ae615ddc85bd6958713bd977fce8ad75dfd0988d2d74cc145be2d6"
+    },
+    "database/ips/adblock.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/adblock.txt",
+      "count": 47,
+      "sha256": "649bf7b82fdb7b641f5fa159eecb969bfce8028302ab1b829d52d993f74bf6a9",
+      "bytes": 880,
+      "lines_sample_hash": "9f38839f60dad97a167892c39beb11d6b16bee659de0bd05c6d8c89916230c15"
+    },
+    "database/ips/alibaba.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/alibaba.txt",
+      "count": 54,
+      "sha256": "0178e90b971aed4e8aa40d0dbd76153794303ef7d31b31e264117d09b6e7d582",
+      "bytes": 796,
+      "lines_sample_hash": "609d174b3cf2a3a306a58a704732d2a05d4953817875d56b926975f560983433"
+    },
+    "database/ips/amazon.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/amazon.txt",
+      "count": 15,
+      "sha256": "41a6794f6c0ca6bff0d6ce092f4d8db4eafc009fe085d3086fe15c5152279cdf",
+      "bytes": 205,
+      "lines_sample_hash": "4db3dc2322076d0bc475b25a02f130df8de5604b2fb4ec91f33d19cfd0c09914"
+    },
+    "database/ips/apple.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/apple.txt",
+      "count": 13,
+      "sha256": "d214900cf50ab89eed1d21c7edaae51d4bdd0acc31866189fe762103b35a04de",
+      "bytes": 196,
+      "lines_sample_hash": "25e51fb0c898d3cb9977f6d5a793b9748634df1193d930c55f25b4648df8aa99"
+    },
+    "database/ips/battlenet.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/battlenet.txt",
+      "count": 23,
+      "sha256": "033f60b5662a7256fade1d362e96a52a1980560b2cbf61c8a706523b31ba5990",
+      "bytes": 388,
+      "lines_sample_hash": "52c78e7eb3f14b70a0d24545c474f0c1d0b6d6fe718fac619555969b9efd6d54"
+    },
+    "database/ips/bilibili.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/bilibili.txt",
+      "count": 8,
+      "sha256": "b0f98d91429741e4637ca11af74ad133cf1c2017f7de59e14197a0d35104ef14",
+      "bytes": 137,
+      "lines_sample_hash": "99bba779c065fbcd26360efd3512c0c5b6540d767b3d7ec22614cd226313b85f"
+    },
+    "database/ips/bytedance.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/bytedance.txt",
+      "count": 1,
+      "sha256": "a668eb4a7cd63833bd1086b8f6eb13f5b48dae3793b54ba9d630dfed69aa0af5",
+      "bytes": 17,
+      "lines_sample_hash": "6c75b7fe3568267b372b7887fbd1a584184f0d09fd0bbfb676eda55b0950c1b3"
+    },
+    "database/ips/china.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/china.txt",
+      "count": 9670,
+      "sha256": "fe9ac4168fc2416093e12fd4de71cfb5b6380101e040be36d9bde29adcd18f74",
+      "bytes": 154078,
+      "lines_sample_hash": "a6095100c6eb1826bb5638b75bae78c9313e207234dc081b1fdfe376a5fbc24d"
+    },
+    "database/ips/chinamobile.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/chinamobile.txt",
+      "count": 1,
+      "sha256": "1a1c3dd016c601a350bd022d702c04002f5cd99a29a07be267afcd7ef6d9b5e4",
+      "bytes": 15,
+      "lines_sample_hash": "a7ae5c13ce227a4eb4de5bf788575bd46d88f1f8114aa30e09b94b3ac4615f68"
+    },
+    "database/ips/chinaunicom.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/chinaunicom.txt",
+      "count": 3736,
+      "sha256": "60824255c2569c0c3f8ecd49355e2b575098d2aa99eec63f5ef61b5c510bb798",
+      "bytes": 59120,
+      "lines_sample_hash": "93426351d4d20aa9cde5c2ad2fa03a0b086a72cd7d6f9db57b489bce84334361"
+    },
+    "database/ips/cloudflare.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/cloudflare.txt",
+      "count": 22,
+      "sha256": "9da903107eaa08f0702fb6213fa140267c9904f968ce0f7b32d647f95a50c3a7",
+      "bytes": 336,
+      "lines_sample_hash": "c0fed51536fc2dd99b6b78dbdf1da6ef49d929a1a28cf6860d0b5d08b84f0357"
+    },
+    "database/ips/copilot.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/copilot.txt",
+      "count": 2,
+      "sha256": "e27b94bb50bf9300e5f9cd77dd7e8449ccad896bd53a0a581f9a3e11e44331f2",
+      "bytes": 34,
+      "lines_sample_hash": "b396118dbd9b9ed3ff7c83215d9e01783d15a183f92e00f0e124a6c67ede8ea2"
+    },
+    "database/ips/facebook.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/facebook.txt",
+      "count": 23,
+      "sha256": "f3506057f1a35f0632e8780902e995abbe9692db6a4f652e455dce5ff537a5a7",
+      "bytes": 389,
+      "lines_sample_hash": "234810429eb43cf2d6b503264e2114995f7369617f17d68743c6ea764f0d8a3e"
+    },
+    "database/ips/google.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/google.txt",
+      "count": 5,
+      "sha256": "570f25a205029bdcdbe39e111fc51b5055ba54be2f78e79d2df0ac10626cbead",
+      "bytes": 79,
+      "lines_sample_hash": "ba0baa7c1a9ef00632364731bd8395708939b01e1b8cf20d3cf8bcb5c0e8447e"
+    },
+    "database/ips/googlefcm.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/googlefcm.txt",
+      "count": 26,
+      "sha256": "0d7f6205a882107d93f8085b92cccdabe49298ac13f7c414c59d289ffeeb02d0",
+      "bytes": 471,
+      "lines_sample_hash": "54ed5ac17ae6ac22c6e41d5be1ea6a0829368c8d63bd76ebefc215d10c51fa67"
+    },
+    "database/ips/iqiyi.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/iqiyi.txt",
+      "count": 21,
+      "sha256": "a3a2fd7392730f9082a7d827b10a5f74b46e89c136b41e2990391cfc759ec064",
+      "bytes": 347,
+      "lines_sample_hash": "54c3b7d3216c3f4797a3b6923d283157ec783b2cc5355a2adc0d8bd2a4637030"
+    },
+    "database/ips/kakaotalk.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/kakaotalk.txt",
+      "count": 6,
+      "sha256": "068a9761e7f74907412f6f4d9b7a03b91c3ecaae0f2703287d01f4a1d92d6a73",
+      "bytes": 91,
+      "lines_sample_hash": "27278a29bc0d7d1632baf164ff30711eadd3ad92ee67d13db85afb80278815da"
+    },
+    "database/ips/kugoukuwo.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/kugoukuwo.txt",
+      "count": 90,
+      "sha256": "782ac1bbec8300b33b8f610992a75d6b2dad606579a006d36db9ccd6709f7b2a",
+      "bytes": 1438,
+      "lines_sample_hash": "df8d52442fb9ba85445b3d4e6751ec811f66c88168b8fa7a72f7417e8be9a835"
+    },
+    "database/ips/line.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/line.txt",
+      "count": 16,
+      "sha256": "ffad3f532b54add0f61204b07a3c6999755079e389314917e7f895b1c7544728",
+      "bytes": 265,
+      "lines_sample_hash": "66f9efa3a0d37aad1c6179db05d820ca11548e821defbbfe759759c08fa9336b"
+    },
+    "database/ips/naver.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/naver.txt",
+      "count": 33,
+      "sha256": "97c50fe49675bafc9ef23b79a5fb2aa7f2c0bf9035fd29e2523f5434da34833e",
+      "bytes": 536,
+      "lines_sample_hash": "03053af6904a5c50518f279c628e1fadc9243482f92a760817dc6f27fffd9277"
+    },
+    "database/ips/netease.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/netease.txt",
+      "count": 18,
+      "sha256": "49910ecd79a0615d115c0fca3ccd79aa46c058b8f928bc8ffab83ea66e010423",
+      "bytes": 305,
+      "lines_sample_hash": "9ae5f9b566ab0752eef691f1561b1ae4d0e8c1b958ecaa46198a31db32797c0d"
+    },
+    "database/ips/nintendo.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/nintendo.txt",
+      "count": 1,
+      "sha256": "920ba3fb61176bb24aef012fbda849f4f78dbd7efeaac2874f021ddf42daadd5",
+      "bytes": 14,
+      "lines_sample_hash": "db7c98c817ecba08e23d35f2373f1eaea985ae27fd2a0ba344d420058f4fb384"
+    },
+    "database/ips/openai.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/openai.txt",
+      "count": 2,
+      "sha256": "e27b94bb50bf9300e5f9cd77dd7e8449ccad896bd53a0a581f9a3e11e44331f2",
+      "bytes": 34,
+      "lines_sample_hash": "b396118dbd9b9ed3ff7c83215d9e01783d15a183f92e00f0e124a6c67ede8ea2"
+    },
+    "database/ips/private.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/private.txt",
+      "count": 3,
+      "sha256": "9f2a2fcb9bec56ef6873c645f44d7a0bee2ad8485c89aae165ae8732b12b7142",
+      "bytes": 55,
+      "lines_sample_hash": "558c148269db6395022e8c011b5fa9d795f6b78f85da128b3a58ce45dad03e82"
+    },
+    "database/ips/spotify.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/spotify.txt",
+      "count": 2,
+      "sha256": "46bd59c3a6ac815346dec9f5878eb457cfe6f830111ce0a6dc5f4e7e44c03ecc",
+      "bytes": 36,
+      "lines_sample_hash": "0562bcb07664116ac6dba53dfb5c43242e9bbd4458e0e3a439a64dd9a6cb2159"
+    },
+    "database/ips/stun.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/stun.txt",
+      "count": 16,
+      "sha256": "2609f155a1b4e4004814afae3d94e54a45569951a197008f41718d7589fc8c16",
+      "bytes": 378,
+      "lines_sample_hash": "d98e1fd325b887df005ce4fa818f9d2fbac3649bf83f4f3efb01339594377a5d"
+    },
+    "database/ips/telegram.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/telegram.txt",
+      "count": 22,
+      "sha256": "1721073c51877af9085b15c52ed774b36c51a930f4a3134c6a3e8fa187ad7361",
+      "bytes": 354,
+      "lines_sample_hash": "9d79ec44ab85ed911cf81e30ffd5cb91e2019b0332192a3f5181f1467906c71d"
+    },
+    "database/ips/tencent.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/tencent.txt",
+      "count": 20,
+      "sha256": "673aa85c8d86b81eed7d738ba151702ea7c5f3c896c5fe0ca2f7e17c4082c43e",
+      "bytes": 328,
+      "lines_sample_hash": "6bfa4ad90680a4e7b61af30a2d761c5e996ee025a7b11a5a1c88aa263ee719a7"
+    },
+    "database/ips/tencentvideo.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/tencentvideo.txt",
+      "count": 32,
+      "sha256": "89be0cf195f2beffa08b1dbd139c41fae90428ae4d1e675a94b267136d4dc751",
+      "bytes": 785,
+      "lines_sample_hash": "7591b72cbfd8bd83924f213929abd5db982d522c09e1e062a4c32b3d9906bdbd"
+    },
+    "database/ips/twitch.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/twitch.txt",
+      "count": 12,
+      "sha256": "2028e0c191076eff2a527a6b172e7e03dcf6dd7ba0f9c7cc8d537499b60094ec",
+      "bytes": 186,
+      "lines_sample_hash": "ce225428f63e9d52fc7332fecc893faa1f0f014952cff5f89542e1ef80b3a205"
+    },
+    "database/ips/twitter.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/twitter.txt",
+      "count": 6,
+      "sha256": "902eba91292dc695cd0958baccc8943d87a7c018e1410e88d4fdda9ec91fda70",
+      "bytes": 97,
+      "lines_sample_hash": "967baaf5ea182c0795ce9a87e2f93ac50b102a41f3b6bf1da33b326ec253f161"
+    },
+    "database/ips/wetv.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/wetv.txt",
+      "count": 1,
+      "sha256": "690348faa9bdb9cf1d28fc74ddf140c6af7b34c1b0ac16fadc95d0b9bc6a87dc",
+      "bytes": 17,
+      "lines_sample_hash": "f91fbd350edafd60d2deede93f8fd66e37bd3caf9ed74790f8e4bef8cc505e0e"
+    },
+    "database/ips/whatsapp.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/whatsapp.txt",
+      "count": 11,
+      "sha256": "834e0f598c2288f1859ce041d35853d0e8f20e4cb4675835da4ed6cfdbee82f4",
+      "bytes": 182,
+      "lines_sample_hash": "8436e4f74ff47b8265e209ac9aa4a6f225b1ee6928a8c698162d4af6e4383236"
+    },
+    "database/ips/xiaomi.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/xiaomi.txt",
+      "count": 9,
+      "sha256": "81d91356cd968c0919120b84204f6670ae00ae4ef72fde04613b3293afa72252",
+      "bytes": 161,
+      "lines_sample_hash": "5a4331a28a7850f731b586909d6d4c729d4581df468b3d43af303acdd3ecec9e"
+    },
+    "database/ips/youku.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/youku.txt",
+      "count": 1,
+      "sha256": "9265f15517674550cdca1a2d8305a66d8fccb57f08d08239f61841e9e62669ab",
+      "bytes": 14,
+      "lines_sample_hash": "439d66c47df4f3b193e2a2770dbcca2838423cf35f0b4f41dbf67e51001861f1"
+    },
+    "database/ips/youtube.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/youtube.txt",
+      "count": 3,
+      "sha256": "67da4c8f51baaa52b49f92d811a733e18dd8cdccc7faa6d66b66f78ad3cfd23f",
+      "bytes": 50,
+      "lines_sample_hash": "e0135df5bcd83ddd5710d0963219e3e6267f78d08992b38bc68913fab0ceb23b"
+    },
+    "database/ips/zhihu.txt": {
+      "kind": "ip_sidecar",
+      "path": "database/ips/zhihu.txt",
+      "count": 5,
+      "sha256": "dfd9a51e8d2c37608c0dc24c820373420898c66838169c50d670dd54d568456a",
+      "bytes": 113,
+      "lines_sample_hash": "e2642fec36c373d0802d6070f9baedaa9b21b383c51d436a06837a1029a580b1"
+    }
+  }
+}
