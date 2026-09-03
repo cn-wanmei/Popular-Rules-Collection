@@ -92,20 +92,17 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Stage the complete generated snapshot tree. Collection may create files
-          # late in the run, so narrow pathspecs can leave residual changes behind.
-          git add -A "backup/${DAY}/" data/collection/ sources/health.yaml reports/
+          # Collection owns both immutable snapshots and generated release artifacts.
+          # Stage every collection output so generated files cannot remain as residual changes.
+          git add -A "backup/${DAY}/" generated/ data/collection/ sources/health.yaml reports/
           if git diff --staged --quiet; then
             echo "No collection changes."
             exit 0
           fi
           git commit -m "chore(collect): snapshot ${DAY}"
 
-          # Re-stage only the collection-owned paths once more to catch any files
-          # materialized during the commit boundary. If anything remains outside
-          # those paths, fail with an explicit status listing instead of silently
-          # pushing unrelated workspace changes.
-          git add -A "backup/${DAY}/" data/collection/ sources/health.yaml reports/
+          # Re-stage all collection-owned outputs after the commit boundary.
+          git add -A "backup/${DAY}/" generated/ data/collection/ sources/health.yaml reports/
           if [ -n "$(git status --porcelain=v1)" ]; then
             echo "Collection workspace is dirty after commit. Residual changes:"
             git status --short
