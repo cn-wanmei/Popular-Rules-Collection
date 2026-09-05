@@ -28,6 +28,9 @@ jobs:
       - name: Naming gate
         run: python -m src.engine.cli naming_gate
 
+      - name: Payment icon semantic regression
+        run: python scripts/icon_payment_semantic_test.py
+
       - name: Engine unit + contract tests
         run: PYTHONPATH=. python -m pytest tests/engine/ -v --ignore=tests/engine/unit_legacy_v2_ref
 
