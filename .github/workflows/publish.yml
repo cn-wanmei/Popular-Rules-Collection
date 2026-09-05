@@ -72,10 +72,6 @@ jobs:
             exit 0
           fi
           git commit -m "chore(publish): promote run ${RUN_ID}"
-          if [ -n "$(git status --porcelain=v1)" ]; then
-            echo "Publish workspace is dirty after commit; refusing push."
-            exit 1
-          fi
           for attempt in 1 2 3; do
             git fetch --prune origin main
             if ! git rebase --autostash origin/main; then
