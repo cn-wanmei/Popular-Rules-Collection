@@ -1,30 +1,30 @@
 payload:
-- +.c-ctrip.com
-- +.colinker.com
-- +.ctrip.cn
-- +.ctrip.co.id
-- +.ctrip.co.kr
-- +.ctrip.co.th
-- +.ctrip.com
-- +.ctrip.com.hk
-- +.ctrip.my
-- +.ctrip.sg
-- +.ctripbiz.com
-- +.ctripbuy.hk
-- +.ctripteam.com
-- +.doticloud.com
-- +.easytrip.com
-- +.hhtravel.com
-- +.hhtravel.com.tw
-- +.izuchebao.com
-- +.lvtds.com
-- +.shuntu.cn
-- +.skysea.com
-- +.suanya.cn
-- +.suanya.com
-- +.tieyou.com
-- +.toptown.cn
-- +.toursbms.com
-- +.trip.com
-- +.tripcdn.com
-- +.vipdlt.com
+  - DOMAIN_SUFFIX,c-ctrip.com
+  - DOMAIN_SUFFIX,colinker.com
+  - DOMAIN_SUFFIX,ctrip.cn
+  - DOMAIN_SUFFIX,ctrip.co.id
+  - DOMAIN_SUFFIX,ctrip.co.kr
+  - DOMAIN_SUFFIX,ctrip.co.th
+  - DOMAIN_SUFFIX,ctrip.com
+  - DOMAIN_SUFFIX,ctrip.com.hk
+  - DOMAIN_SUFFIX,ctrip.my
+  - DOMAIN_SUFFIX,ctrip.sg
+  - DOMAIN_SUFFIX,ctripbiz.com
+  - DOMAIN_SUFFIX,ctripbuy.hk
+  - DOMAIN_SUFFIX,ctripteam.com
+  - DOMAIN_SUFFIX,doticloud.com
+  - DOMAIN_SUFFIX,easytrip.com
+  - DOMAIN_SUFFIX,hhtravel.com
+  - DOMAIN_SUFFIX,hhtravel.com.tw
+  - DOMAIN_SUFFIX,izuchebao.com
+  - DOMAIN_SUFFIX,lvtds.com
+  - DOMAIN_SUFFIX,shuntu.cn
+  - DOMAIN_SUFFIX,skysea.com
+  - DOMAIN_SUFFIX,suanya.cn
+  - DOMAIN_SUFFIX,suanya.com
+  - DOMAIN_SUFFIX,tieyou.com
+  - DOMAIN_SUFFIX,toptown.cn
+  - DOMAIN_SUFFIX,toursbms.com
+  - DOMAIN_SUFFIX,trip.com
+  - DOMAIN_SUFFIX,tripcdn.com
+  - DOMAIN_SUFFIX,vipdlt.com

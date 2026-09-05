@@ -1,0 +1,49 @@
+{
+  "schema": "data_quality_v2",
+  "decision": "PASS",
+  "score": 100,
+  "all_hard_pass": true,
+  "checks": {
+    "clean_rate": {
+      "value": 1.0,
+      "min": 0.95,
+      "pass": true
+    },
+    "quarantine_rate": {
+      "value": 4e-06,
+      "max": 0.05,
+      "pass": true
+    },
+    "canonical_error_rate": {
+      "value": 0.0,
+      "max": 0.0,
+      "pass": true
+    },
+    "parser_recognition_rate": {
+      "value": 0.999996,
+      "min": 0.995,
+      "pass": true
+    },
+    "removed_rules": {
+      "value": 0,
+      "max": 10000,
+      "pass": true
+    },
+    "source_error_count": {
+      "value": 0,
+      "max": 0,
+      "pass": true
+    },
+    "v2_runtime_dependency": {
+      "value": 0,
+      "expected": 0,
+      "pass": true
+    },
+    "baseline_anomaly": {
+      "value": "NO_BASELINE",
+      "expected": "PASS",
+      "pass": true
+    }
+  },
+  "policy_file": "config/release.yaml"
+}

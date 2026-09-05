@@ -1,10 +1,10 @@
 payload:
-- +.impala-media-production.s3.amazonaws.com
-- +.sc-cdn.net
-- +.sc-gw.com
-- +.sc-static.net
-- +.snap-dev.net
-- +.snap.com
-- +.snapads.com
-- +.snapchat.com
-- +.snapkit.co
+  - DOMAIN_SUFFIX,impala-media-production.s3.amazonaws.com
+  - DOMAIN_SUFFIX,sc-cdn.net
+  - DOMAIN_SUFFIX,sc-gw.com
+  - DOMAIN_SUFFIX,sc-static.net
+  - DOMAIN_SUFFIX,snap-dev.net
+  - DOMAIN_SUFFIX,snap.com
+  - DOMAIN_SUFFIX,snapchat.com
+  - DOMAIN_SUFFIX,snapkit.co
+  - DOMAIN_SUFFIX,snapads.com

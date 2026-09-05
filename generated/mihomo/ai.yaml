@@ -1,180 +1,180 @@
 payload:
-- +.agentclientprotocol.com
-- +.ai.google.dev
-- +.ai.studio
-- +.aicode.googleapis.com
-- +.aida.googleapis.com
-- +.aisandbox-pa.googleapis.com
-- +.aistudio.google.com
-- +.alkalicore-pa.clients6.google.com
-- +.alkalimakersuite-pa.clients6.google.com
-- +.anthropic.com
-- +.antigravity-pa.googleapis.com
-- +.antigravity-unleash.goog
-- +.antigravity.google
-- +.antigravity.googleapis.com
-- +.anythingllm.com
-- +.arena.ai
-- +.bard.google.com
-- +.browser-intake-datadoghq.com
-- +.cerebras.ai
-- +.chat.com
-- +.chatgpt.com
-- +.chatgpt.livekit.cloud
-- +.chatgpt.site
-- +.chutes.ai
-- +.cici.com
-- +.ciciai.com
-- +.ciciaicdn.com
-- +.clau.de
-- +.claude.ai
-- +.claude.com
-- +.claudemcpclient.com
-- +.claudemcpcontent.com
-- +.claudeusercontent.com
-- +.clawhub.ai
-- +.clipdrop.co
-- +.cloudaicompanion.googleapis.com
-- +.cloudcode-pa.googleapis.com
-- +.codeium.com
-- +.codeiumdata.com
-- +.coderabbit.ai
-- +.coderabbit.gallery.vsassets.io
-- +.cohere.ai
-- +.cohere.com
-- +.comfy.org
-- +.comfyci.org
-- +.comfyregistry.org
-- +.copilot-proxy.githubusercontent.com
-- +.copilot-stg.com
-- +.copilot-telemetry-service.githubusercontent.com
-- +.copilot-telemetry.githubusercontent.com
-- +.copilot-workspace.githubnext.com
-- +.copilot.cloud.microsoft
-- +.copilot.com
-- +.copilot.microsoft.com
-- +.copilotprodattachments.blob.core.windows.net
-- +.coze.com
-- +.crewai.com
-- +.crixet.com
-- +.cursor-cdn.com
-- +.cursor.com
-- +.cursor.sh
-- +.cursorapi.com
-- +.daily-cloudcode-pa.googleapis.com
-- +.deepmind.com
-- +.deepmind.google
-- +.deepwiki.com
-- +.deepwiki.org
-- +.devin.ai
-- +.diabrowser.com
-- +.diabrowser.engineering
-- +.dify.ai
-- +.dola.com
-- +.dreamgen.com
-- +.duck.ai
-- +.elevenlabs.com
-- +.elevenlabs.io
-- +.envato-static.com
-- +.envato.com
-- +.envatousercontent.com
-- +.flow.google
-- +.gateway.ai.cloudflare.com
-- +.geller-pa.googleapis.com
-- +.gemini.google
-- +.gemini.google.com
-- +.gemini.gstatic.com
-- +.generativeai.google
-- +.generativelanguage.googleapis.com
-- +.githubcopilot.com
-- +.grazie.ai
-- +.grazie.aws.intellij.net
-- +.grok.com
-- +.grok.x.com
-- +.grokipedia.com
-- +.groq.com
-- +.h2o.ai
-- +.hf.co
-- +.hf.space
-- +.host.livekit.cloud
-- +.huggingface.co
-- +.jasper.ai
-- +.jetbrains.ai
-- +.jules.google
-- +.jules.google.com
-- +.kimi.ai
-- +.kiro.dev
-- +.labs.google
-- +.labs.google.com
-- +.langchain.com
-- +.liveperson.net
-- +.lmstudio.ai
-- +.lovart.ai
-- +.lpsnmedia.net
-- +.makersuite.google.com
-- +.manus.im
-- +.manuscdn.com
-- +.marscode.com
-- +.meta.ai
-- +.midjourney.com
-- +.minimax.io
-- +.mistral.ai
-- +.moonshot.ai
-- +.mozilla.ai
-- +.notebook.google.com
-- +.notebooklm-pa.googleapis.com
-- +.notebooklm.google
-- +.notebooklm.google.com
-- +.notebooklm.googleapis.com
-- +.notegpt.io
-- +.novelai.net
-- +.o33249.ingest.sentry.io
-- +.oaistatic.com
-- +.oaistatsig.com
-- +.oaiusercontent.com
-- +.ollama.com
-- +.opal.google
-- +.opal.google.com
-- +.openai.com
-- +.openai.com.cdn.cloudflare.net
-- +.openai.qualtrics.com
-- +.openaiapi-site.azureedge.net
-- +.openaiassets.blob.core.windows.net
-- +.openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
-- +.openaicom.imgix.net
-- +.openaicomproductionae4b.blob.core.windows.net
-- +.openart.ai
-- +.openclaw.ai
-- +.openrouter.ai
-- +.openspec.dev
-- +.oystermercury.top
-- +.perplexity.ai
-- +.perplexity.com
-- +.plannotator.ai
-- +.poe.com
-- +.poecdn.net
-- +.ppl-ai-file-upload.s3.amazonaws.com
-- +.pplx-res.cloudinary.com
-- +.pplx.ai
-- +.proactivebackend-pa.googleapis.com
-- +.production-openaicom-storage.azureedge.net
-- +.qoder.com
-- +.robinfrontend-pa.googleapis.com
-- +.servd-anthropic-website.b-cdn.net
-- +.sider.ai
-- +.sora.com
-- +.spicywriter.com
-- +.stitch.withgoogle.com
-- +.talkai.info
-- +.tapnow.ai
-- +.themeforest.net
-- +.trae.ai
-- +.tripo3d.ai
-- +.turn.livekit.cloud
-- +.webchannel-alkalimakersuite-pa.clients6.google.com
-- +.windsurf.build
-- +.windsurf.com
-- +.x.ai
-- +.youmind.ai
-- +.youmind.com
-- +.youmind.site
+  - DOMAIN_SUFFIX,servd-anthropic-website.b-cdn.net
+  - DOMAIN_SUFFIX,copilot-proxy.githubusercontent.com
+  - DOMAIN_SUFFIX,copilot-workspace.githubnext.com
+  - DOMAIN_SUFFIX,copilotprodattachments.blob.core.windows.net
+  - DOMAIN_SUFFIX,openaiapi-site.azureedge.net
+  - DOMAIN_SUFFIX,openaiassets.blob.core.windows.net
+  - DOMAIN_SUFFIX,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+  - DOMAIN_SUFFIX,openaicom.imgix.net
+  - DOMAIN_SUFFIX,openaicomproductionae4b.blob.core.windows.net
+  - DOMAIN_SUFFIX,production-openaicom-storage.azureedge.net
+  - DOMAIN_SUFFIX,ai.google.dev
+  - DOMAIN_SUFFIX,alkalicore-pa.clients6.google.com
+  - DOMAIN_SUFFIX,alkalimakersuite-pa.clients6.google.com
+  - DOMAIN_SUFFIX,webchannel-alkalimakersuite-pa.clients6.google.com
+  - DOMAIN_SUFFIX,cloudaicompanion.googleapis.com
+  - DOMAIN_SUFFIX,cloudcode-pa.googleapis.com
+  - DOMAIN_SUFFIX,daily-cloudcode-pa.googleapis.com
+  - DOMAIN_SUFFIX,notebooklm-pa.googleapis.com
+  - DOMAIN_SUFFIX,notebooklm.googleapis.com
+  - DOMAIN_SUFFIX,antigravity-pa.googleapis.com
+  - DOMAIN_SUFFIX,antigravity.googleapis.com
+  - DOMAIN_SUFFIX,ppl-ai-file-upload.s3.amazonaws.com
+  - DOMAIN_SUFFIX,pplx-res.cloudinary.com
+  - DOMAIN_SUFFIX,sora.com
+  - DOMAIN_SUFFIX,youmind.site
+  - DOMAIN_SUFFIX,cohere.com
+  - DOMAIN_SUFFIX,copilot-stg.com
+  - DOMAIN_SUFFIX,copilot.com
+  - DOMAIN_SUFFIX,deepwiki.com
+  - DOMAIN_SUFFIX,deepwiki.org
+  - DOMAIN_SUFFIX,clipdrop.co
+  - DOMAIN_SUFFIX,jasper.ai
+  - DOMAIN_SUFFIX,kimi.ai
+  - DOMAIN_SUFFIX,moonshot.ai
+  - DOMAIN_SUFFIX,agentclientprotocol.com
+  - DOMAIN_SUFFIX,anythingllm.com
+  - DOMAIN_SUFFIX,arena.ai
+  - DOMAIN_SUFFIX,chutes.ai
+  - DOMAIN_SUFFIX,clawhub.ai
+  - DOMAIN_SUFFIX,crewai.com
+  - DOMAIN_SUFFIX,devin.ai
+  - DOMAIN_SUFFIX,diabrowser.com
+  - DOMAIN_SUFFIX,diabrowser.engineering
+  - DOMAIN_SUFFIX,dify.ai
+  - DOMAIN_SUFFIX,dreamgen.com
+  - DOMAIN_SUFFIX,duck.ai
+  - DOMAIN_SUFFIX,h2o.ai
+  - DOMAIN_SUFFIX,pplx.ai
+  - DOMAIN_SUFFIX,perplexity.com
+  - DOMAIN_SUFFIX,perplexity.ai
+  - DOMAIN_SUFFIX,kiro.dev
+  - DOMAIN_SUFFIX,langchain.com
+  - DOMAIN_SUFFIX,lmstudio.ai
+  - DOMAIN_SUFFIX,lovart.ai
+  - DOMAIN_SUFFIX,meta.ai
+  - DOMAIN_SUFFIX,midjourney.com
+  - DOMAIN_SUFFIX,minimax.io
+  - DOMAIN_SUFFIX,mistral.ai
+  - DOMAIN_SUFFIX,mozilla.ai
+  - DOMAIN_SUFFIX,notegpt.io
+  - DOMAIN_SUFFIX,novelai.net
+  - DOMAIN_SUFFIX,ollama.com
+  - DOMAIN_SUFFIX,openart.ai
+  - DOMAIN_SUFFIX,openclaw.ai
+  - DOMAIN_SUFFIX,openrouter.ai
+  - DOMAIN_SUFFIX,openspec.dev
+  - DOMAIN_SUFFIX,plannotator.ai
+  - DOMAIN_SUFFIX,qoder.com
+  - DOMAIN_SUFFIX,sider.ai
+  - DOMAIN_SUFFIX,spicywriter.com
+  - DOMAIN_SUFFIX,talkai.info
+  - DOMAIN_SUFFIX,tapnow.ai
+  - DOMAIN_SUFFIX,tripo3d.ai
+  - DOMAIN_SUFFIX,poe.com
+  - DOMAIN_SUFFIX,poecdn.net
+  - DOMAIN_SUFFIX,anthropic.com
+  - DOMAIN_SUFFIX,clau.de
+  - DOMAIN_SUFFIX,claude.ai
+  - DOMAIN_SUFFIX,claude.com
+  - DOMAIN_SUFFIX,claudemcpclient.com
+  - DOMAIN_SUFFIX,claudemcpcontent.com
+  - DOMAIN_SUFFIX,claudeusercontent.com
+  - DOMAIN_SUFFIX,envato-static.com
+  - DOMAIN_SUFFIX,envato.com
+  - DOMAIN_SUFFIX,envatousercontent.com
+  - DOMAIN_SUFFIX,themeforest.net
+  - DOMAIN_SUFFIX,githubcopilot.com
+  - DOMAIN_SUFFIX,oaiusercontent.com
+  - DOMAIN_SUFFIX,chatgpt.com
+  - DOMAIN_SUFFIX,chatgpt.site
+  - DOMAIN_SUFFIX,crixet.com
+  - DOMAIN_SUFFIX,oaistatic.com
+  - DOMAIN_SUFFIX,oaistatsig.com
+  - DOMAIN_SUFFIX,youmind.com
+  - DOMAIN_SUFFIX,manuscdn.com
+  - DOMAIN_SUFFIX,cohere.ai
+  - DOMAIN_SUFFIX,openai.com
+  - DOMAIN_SUFFIX,manus.im
+  - DOMAIN_SUFFIX,huggingface.co
+  - DOMAIN_SUFFIX,hf.space
+  - DOMAIN_SUFFIX,hf.co
+  - DOMAIN_SUFFIX,youmind.ai
+  - DOMAIN_SUFFIX,chat.com
+  - DOMAIN_SUFFIX,coderabbit.ai
+  - DOMAIN_SUFFIX,cerebras.ai
+  - DOMAIN_SUFFIX,cursor-cdn.com
+  - DOMAIN_SUFFIX,cursor.com
+  - DOMAIN_SUFFIX,cursor.sh
+  - DOMAIN_SUFFIX,cursorapi.com
+  - DOMAIN_SUFFIX,elevenlabs.com
+  - DOMAIN_SUFFIX,elevenlabs.io
+  - DOMAIN_SUFFIX,liveperson.net
+  - DOMAIN_SUFFIX,lpsnmedia.net
+  - DOMAIN_SUFFIX,codeium.com
+  - DOMAIN_SUFFIX,codeiumdata.com
+  - DOMAIN_SUFFIX,windsurf.build
+  - DOMAIN_SUFFIX,windsurf.com
+  - DOMAIN_SUFFIX,groq.com
+  - DOMAIN_SUFFIX,grazie.ai
+  - DOMAIN_SUFFIX,jetbrains.ai
+  - DOMAIN_SUFFIX,gemini.google
+  - DOMAIN_SUFFIX,grok.com
+  - DOMAIN_SUFFIX,grokipedia.com
+  - DOMAIN_SUFFIX,x.ai
+  - DOMAIN_SUFFIX,jules.google
+  - DOMAIN_SUFFIX,comfy.org
+  - DOMAIN_SUFFIX,comfyci.org
+  - DOMAIN_SUFFIX,comfyregistry.org
+  - DOMAIN_SUFFIX,oystermercury.top
+  - DOMAIN_SUFFIX,notebooklm.google
+  - DOMAIN_SUFFIX,deepmind.google
+  - DOMAIN_SUFFIX,antigravity-unleash.goog
+  - DOMAIN_SUFFIX,antigravity.google
+  - DOMAIN_SUFFIX,opal.google
+  - DOMAIN_SUFFIX,flow.google
+  - DOMAIN_SUFFIX,generativeai.google
+  - DOMAIN_SUFFIX,deepmind.com
+  - DOMAIN_SUFFIX,ai.studio
+  - DOMAIN_SUFFIX,labs.google
+  - DOMAIN_SUFFIX,geller-pa.googleapis.com
+  - DOMAIN_SUFFIX,host.livekit.cloud
+  - DOMAIN_SUFFIX,makersuite.google.com
+  - DOMAIN_SUFFIX,robinfrontend-pa.googleapis.com
+  - DOMAIN_SUFFIX,proactivebackend-pa.googleapis.com
+  - DOMAIN_SUFFIX,gemini.google.com
+  - DOMAIN_SUFFIX,notebooklm.google.com
+  - DOMAIN_SUFFIX,bard.google.com
+  - DOMAIN_SUFFIX,jules.google.com
+  - DOMAIN_SUFFIX,aistudio.google.com
+  - DOMAIN_SUFFIX,labs.google.com
+  - DOMAIN_SUFFIX,gemini.gstatic.com
+  - DOMAIN_SUFFIX,copilot.cloud.microsoft
+  - DOMAIN_SUFFIX,aisandbox-pa.googleapis.com
+  - DOMAIN_SUFFIX,notebook.google.com
+  - DOMAIN_SUFFIX,aicode.googleapis.com
+  - DOMAIN_SUFFIX,opal.google.com
+  - DOMAIN_SUFFIX,generativelanguage.googleapis.com
+  - DOMAIN_SUFFIX,aida.googleapis.com
+  - DOMAIN_SUFFIX,stitch.withgoogle.com
+  - DOMAIN_SUFFIX,copilot.microsoft.com
+  - DOMAIN_SUFFIX,chatgpt.livekit.cloud
+  - DOMAIN_SUFFIX,turn.livekit.cloud
+  - DOMAIN_SUFFIX,grok.x.com
+  - DOMAIN_SUFFIX,gateway.ai.cloudflare.com
+  - DOMAIN_SUFFIX,coderabbit.gallery.vsassets.io
+  - DOMAIN_SUFFIX,grazie.aws.intellij.net
+  - DOMAIN_SUFFIX,openai.com.cdn.cloudflare.net
+  - DOMAIN_SUFFIX,copilot-telemetry-service.githubusercontent.com
+  - DOMAIN_SUFFIX,copilot-telemetry.githubusercontent.com
+  - DOMAIN_SUFFIX,browser-intake-datadoghq.com
+  - DOMAIN_SUFFIX,o33249.ingest.sentry.io
+  - DOMAIN_SUFFIX,openai.qualtrics.com
+  - DOMAIN_SUFFIX,coze.com
+  - DOMAIN_SUFFIX,marscode.com
+  - DOMAIN_SUFFIX,trae.ai
+  - DOMAIN_SUFFIX,cici.com
+  - DOMAIN_SUFFIX,ciciai.com
+  - DOMAIN_SUFFIX,ciciaicdn.com
+  - DOMAIN_SUFFIX,dola.com

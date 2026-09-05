@@ -1,28 +1,38 @@
 payload:
-- +.a1cbafa5ea9a6480cb8e9ffba46cbad9-466059813.us-west-2.elb.amazonaws.com
-- +.addthis.com
-- +.addthis.com.edgekey.net
-- +.addthiscdn.com
-- +.addthisedge.com
-- +.ateam-oracle.com
-- +.bluekai.com
-- +.bronto.com
-- +.covid19-rx.org
-- +.covid19rx.org
-- +.custhelp.com
-- +.eloqua.com
-- +.eloquaeditors.com
-- +.eloquapreview.com
-- +.en25.com
-- +.java
-- +.java.com
-- +.java.net
-- +.oracle
-- +.oracle.com
-- +.oraclecloud.com
-- +.oraclefoundation.org
-- +.oracleimg.com
-- +.oracleinfinity.io
-- +.responsys.net
-- +.sun.com
-- +.virtualbox.org
+  - DOMAIN_SUFFIX,a1cbafa5ea9a6480cb8e9ffba46cbad9-466059813.us-west-2.elb.amazonaws.com
+  - DOMAIN_SUFFIX,addthis.com
+  - DOMAIN_SUFFIX,addthis.com.edgekey.net
+  - DOMAIN_SUFFIX,addthiscdn.com
+  - DOMAIN_SUFFIX,addthisedge.com
+  - DOMAIN_SUFFIX,ateam-oracle.com
+  - DOMAIN_SUFFIX,bluekai.com
+  - DOMAIN_SUFFIX,bronto.com
+  - DOMAIN_SUFFIX,covid19-rx.org
+  - DOMAIN_SUFFIX,covid19rx.org
+  - DOMAIN_SUFFIX,eloqua.com
+  - DOMAIN_SUFFIX,eloquaeditors.com
+  - DOMAIN_SUFFIX,eloquapreview.com
+  - DOMAIN_SUFFIX,en25.com
+  - DOMAIN_SUFFIX,java
+  - DOMAIN_SUFFIX,java.com
+  - DOMAIN_SUFFIX,java.net
+  - DOMAIN_SUFFIX,oracle
+  - DOMAIN_SUFFIX,oracle.com
+  - DOMAIN_SUFFIX,oraclecloud.com
+  - DOMAIN_SUFFIX,oraclefoundation.org
+  - DOMAIN_SUFFIX,oracleimg.com
+  - DOMAIN_SUFFIX,oracleinfinity.io
+  - DOMAIN_SUFFIX,responsys.net
+  - DOMAIN_SUFFIX,sun.com
+  - DOMAIN_SUFFIX,ateam-oracle.com
+  - DOMAIN_SUFFIX,bronto.com
+  - DOMAIN_SUFFIX,covid19-rx.org
+  - DOMAIN_SUFFIX,covid19rx.org
+  - DOMAIN_SUFFIX,custhelp.com
+  - DOMAIN_SUFFIX,oracle.com
+  - DOMAIN_SUFFIX,oraclecloud.com
+  - DOMAIN_SUFFIX,oraclefoundation.org
+  - DOMAIN_SUFFIX,oracleimg.com
+  - DOMAIN_SUFFIX,oracleinfinity.io
+  - DOMAIN_SUFFIX,sun.com
+  - DOMAIN_SUFFIX,virtualbox.org

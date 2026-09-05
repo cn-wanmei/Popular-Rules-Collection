@@ -1,53 +1,97 @@
 payload:
-- d1unuk07s6td74.cloudfront.net
-- roblox-load-generator-configuration.s3.us-east-2.amazonaws.com
-- roblox-poc.global.ssl.fastly.net
-- robloxcorp.s.llnwi.net
-- +.blox.com
-- +.d1unuk07s6td74.cloudfront.net
-- +.goblocks.com
-- +.goblox.com
-- +.gooblox.com
-- +.humancoexperience.com
-- +.rblx.co
-- +.rblx.com
-- +.rblx.org
-- +.rbx.com
-- +.rbxcdn.com
-- +.rbxinfra.net
-- +.rbxlabs.com
-- +.rbxtrk.com
-- +.ro-blox.com
-- +.roadblocks.com
-- +.roblocks.com
-- +.roblox-api.arkoselabs.com
-- +.roblox-load-generator-configuration.s3.us-east-2.amazonaws.com
-- +.roblox-poc.global.ssl.fastly.net
-- +.roblox.ca
-- +.roblox.cc
-- +.roblox.cl
-- +.roblox.co.jp
-- +.roblox.co.uk
-- +.roblox.com
-- +.roblox.de
-- +.roblox.dk
-- +.roblox.eu
-- +.roblox.fr
-- +.roblox.hu
-- +.roblox.it
-- +.roblox.jp
-- +.roblox.kr
-- +.roblox.mx
-- +.roblox.net
-- +.roblox.org
-- +.roblox.ph
-- +.roblox.pt
-- +.roblox.sk
-- +.roblox.tv
-- +.roblox.uk
-- +.roblox.us
-- +.roblox.vn
-- +.robloxcorp.s.llnwi.net
-- +.robloxlabs.com
-- +.rowblocks.com
-- +.rowblox.com
+  - DOMAIN_SUFFIX,d1unuk07s6td74.cloudfront.net
+  - DOMAIN_SUFFIX,roblox-load-generator-configuration.s3.us-east-2.amazonaws.com
+  - DOMAIN_SUFFIX,roblox-poc.global.ssl.fastly.net
+  - DOMAIN_SUFFIX,robloxcorp.s.llnwi.net
+  - DOMAIN_SUFFIX,roblox.com
+  - DOMAIN_SUFFIX,goblocks.com
+  - DOMAIN_SUFFIX,goblox.com
+  - DOMAIN_SUFFIX,gooblox.com
+  - DOMAIN_SUFFIX,humancoexperience.com
+  - DOMAIN_SUFFIX,rblx.co
+  - DOMAIN_SUFFIX,rblx.com
+  - DOMAIN_SUFFIX,rblx.org
+  - DOMAIN_SUFFIX,rbx.com
+  - DOMAIN_SUFFIX,rbxcdn.com
+  - DOMAIN_SUFFIX,rbxinfra.net
+  - DOMAIN_SUFFIX,rbxlabs.com
+  - DOMAIN_SUFFIX,rbxtrk.com
+  - DOMAIN_SUFFIX,ro-blox.com
+  - DOMAIN_SUFFIX,roadblocks.com
+  - DOMAIN_SUFFIX,roblocks.com
+  - DOMAIN_SUFFIX,rowblox.com
+  - DOMAIN_SUFFIX,roblox.ca
+  - DOMAIN_SUFFIX,roblox.cc
+  - DOMAIN_SUFFIX,roblox.cl
+  - DOMAIN_SUFFIX,blox.com
+  - DOMAIN_SUFFIX,rowblocks.com
+  - DOMAIN_SUFFIX,robloxlabs.com
+  - DOMAIN_SUFFIX,roblox.de
+  - DOMAIN_SUFFIX,roblox.dk
+  - DOMAIN_SUFFIX,roblox.eu
+  - DOMAIN_SUFFIX,roblox.fr
+  - DOMAIN_SUFFIX,roblox.hu
+  - DOMAIN_SUFFIX,roblox.it
+  - DOMAIN_SUFFIX,roblox.jp
+  - DOMAIN_SUFFIX,roblox.kr
+  - DOMAIN_SUFFIX,roblox.mx
+  - DOMAIN_SUFFIX,roblox.net
+  - DOMAIN_SUFFIX,roblox.org
+  - DOMAIN_SUFFIX,roblox.ph
+  - DOMAIN_SUFFIX,roblox.pt
+  - DOMAIN_SUFFIX,roblox.sk
+  - DOMAIN_SUFFIX,roblox.tv
+  - DOMAIN_SUFFIX,roblox.uk
+  - DOMAIN_SUFFIX,roblox.us
+  - DOMAIN_SUFFIX,roblox.vn
+  - DOMAIN_SUFFIX,roblox.co.uk
+  - DOMAIN_SUFFIX,roblox.co.jp
+  - DOMAIN_SUFFIX,roblox-api.arkoselabs.com
+  - DOMAIN_SUFFIX,blox.com
+  - DOMAIN_SUFFIX,goblocks.com
+  - DOMAIN_SUFFIX,goblox.com
+  - DOMAIN_SUFFIX,gooblox.com
+  - DOMAIN_SUFFIX,humancoexperience.com
+  - DOMAIN_SUFFIX,rblx.co
+  - DOMAIN_SUFFIX,rblx.com
+  - DOMAIN_SUFFIX,rblx.org
+  - DOMAIN_SUFFIX,rbx.com
+  - DOMAIN_SUFFIX,rbxcdn.com
+  - DOMAIN_SUFFIX,rbxinfra.net
+  - DOMAIN_SUFFIX,rbxlabs.com
+  - DOMAIN_SUFFIX,rbxtrk.com
+  - DOMAIN_SUFFIX,ro-blox.com
+  - DOMAIN_SUFFIX,roadblocks.com
+  - DOMAIN_SUFFIX,roblocks.com
+  - DOMAIN_SUFFIX,roblox-api.arkoselabs.com
+  - DOMAIN_SUFFIX,roblox.ca
+  - DOMAIN_SUFFIX,roblox.cc
+  - DOMAIN_SUFFIX,roblox.cl
+  - DOMAIN_SUFFIX,roblox.co.jp
+  - DOMAIN_SUFFIX,roblox.co.uk
+  - DOMAIN_SUFFIX,roblox.com
+  - DOMAIN_SUFFIX,roblox.de
+  - DOMAIN_SUFFIX,roblox.dk
+  - DOMAIN_SUFFIX,roblox.eu
+  - DOMAIN_SUFFIX,roblox.fr
+  - DOMAIN_SUFFIX,roblox.hu
+  - DOMAIN_SUFFIX,roblox.it
+  - DOMAIN_SUFFIX,roblox.jp
+  - DOMAIN_SUFFIX,roblox.kr
+  - DOMAIN_SUFFIX,roblox.mx
+  - DOMAIN_SUFFIX,roblox.net
+  - DOMAIN_SUFFIX,roblox.org
+  - DOMAIN_SUFFIX,roblox.ph
+  - DOMAIN_SUFFIX,roblox.pt
+  - DOMAIN_SUFFIX,roblox.sk
+  - DOMAIN_SUFFIX,roblox.tv
+  - DOMAIN_SUFFIX,roblox.uk
+  - DOMAIN_SUFFIX,roblox.us
+  - DOMAIN_SUFFIX,roblox.vn
+  - DOMAIN_SUFFIX,robloxlabs.com
+  - DOMAIN_SUFFIX,rowblocks.com
+  - DOMAIN_SUFFIX,rowblox.com
+  - DOMAIN,d1unuk07s6td74.cloudfront.net
+  - DOMAIN,roblox-load-generator-configuration.s3.us-east-2.amazonaws.com
+  - DOMAIN,roblox-poc.global.ssl.fastly.net
+  - DOMAIN,robloxcorp.s.llnwi.net

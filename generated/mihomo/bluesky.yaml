@@ -1,4 +1,4 @@
 payload:
-- +.bsky.app
-- +.bsky.network
-- +.bsky.social
+  - DOMAIN_SUFFIX,bsky.app
+  - DOMAIN_SUFFIX,bsky.network
+  - DOMAIN_SUFFIX,bsky.social

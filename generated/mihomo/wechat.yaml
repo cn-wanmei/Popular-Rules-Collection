@@ -1,31 +1,31 @@
 payload:
-- apd-pcdnwxlogin.teg.tencent-cloud.net
-- btrace.qq.com
-- dldir1.qq.com
-- slife.xy-asia.com
-- soup.v.qq.com
-- vweixinf.tc.qq.com
-- weixin110.qq.com
-- wup.imtt.qq.com
-- +.iot-tencent.com
-- +.lbs.gtimg.com
-- +.map.qq.com
-- +.qlogo.cn
-- +.qpic.cn
-- +.servicewechat.com
-- +.tenpay.com
-- +.up-hl.3g.qq.com
-- +.vweixinthumb.tc.qq.com
-- +.wechat.com
-- +.wechatlegal.net
-- +.wechatos.net
-- +.wechatpay.com
-- +.weixin.com
-- +.weixin.qq.com
-- +.weixinbridge.com
-- +.weixinsxy.com
-- +.wx.gtimg.com
-- +.wx.qq.com
-- +.wxapp.tc.qq.com
-- +.wxs.qq.com
-- +.yun-hl.3g.qq.com
+  - DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
+  - DOMAIN,btrace.qq.com
+  - DOMAIN,dldir1.qq.com
+  - DOMAIN,slife.xy-asia.com
+  - DOMAIN,soup.v.qq.com
+  - DOMAIN,vweixinf.tc.qq.com
+  - DOMAIN,weixin110.qq.com
+  - DOMAIN,wup.imtt.qq.com
+  - DOMAIN_SUFFIX,iot-tencent.com
+  - DOMAIN_SUFFIX,lbs.gtimg.com
+  - DOMAIN_SUFFIX,map.qq.com
+  - DOMAIN_SUFFIX,qlogo.cn
+  - DOMAIN_SUFFIX,qpic.cn
+  - DOMAIN_SUFFIX,servicewechat.com
+  - DOMAIN_SUFFIX,tenpay.com
+  - DOMAIN_SUFFIX,up-hl.3g.qq.com
+  - DOMAIN_SUFFIX,vweixinthumb.tc.qq.com
+  - DOMAIN_SUFFIX,wechat.com
+  - DOMAIN_SUFFIX,wechatlegal.net
+  - DOMAIN_SUFFIX,wechatos.net
+  - DOMAIN_SUFFIX,wechatpay.com
+  - DOMAIN_SUFFIX,weixin.com
+  - DOMAIN_SUFFIX,weixin.qq.com
+  - DOMAIN_SUFFIX,weixinbridge.com
+  - DOMAIN_SUFFIX,weixinsxy.com
+  - DOMAIN_SUFFIX,wx.gtimg.com
+  - DOMAIN_SUFFIX,wx.qq.com
+  - DOMAIN_SUFFIX,wxapp.tc.qq.com
+  - DOMAIN_SUFFIX,wxs.qq.com
+  - DOMAIN_SUFFIX,yun-hl.3g.qq.com

@@ -1,3 +1,5 @@
 payload:
-- +.deepseek.com
-- +.deepseeksvc.com
+  - DOMAIN_SUFFIX,deepseek.com
+  - DOMAIN_SUFFIX,deepseeksvc.com
+  - DOMAIN_SUFFIX,deepseek.com
+  - DOMAIN_SUFFIX,deepseeksvc.com

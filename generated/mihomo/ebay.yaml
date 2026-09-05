@@ -1,371 +1,408 @@
 payload:
-- ebay-25-assets.s3-us-west-1.amazonaws.com
-- +.21centuryaccess.com
-- +.4ebaytraders.com
-- +.about.co.kr
-- +.achievementanalytics.com
-- +.adcommerce.cn
-- +.adcommerce.tv
-- +.appforebay.cn
-- +.appsonebay.net
-- +.asebay.com
-- +.auction.co.kr
-- +.automobile.fr
-- +.baazee.com
-- +.bidbay.com
-- +.bidorbuyindia.com
-- +.billpoint.com
-- +.billpoint.info
-- +.billpoint.tv
-- +.billpoint.us
-- +.billpointnewzealand.com
-- +.blogebay.com
-- +.bookclubcorner.com
-- +.builtfromebay.com
-- +.buyitnow.com
-- +.buyitnow.net
-- +.buyitnow.org
-- +.buyitnow.tv
-- +.buyitnowshop.net
-- +.cafr.ca
-- +.carebay.com
-- +.cargigileads.com
-- +.cdn-terapeak.com
-- +.cebay.com
-- +.collective99.com
-- +.commerceos.com
-- +.connectcommerce.cn
-- +.connectcommerce.com.cn
-- +.connectcommerce.hk
-- +.connectcommerce.info
-- +.connectcommerce.tv
-- +.connectedcommerce.cn
-- +.connectedcommerce.com
-- +.connectedcommerce.tv
-- +.crececonebay.com
-- +.creditcardsbay.com
-- +.cyber-bay.cn
-- +.cyber-bay.com.cn
-- +.cyber-bay.info
-- +.cyber-bay.org
-- +.dba.dk
-- +.dealbay.com
-- +.dealtime.com
-- +.didce.com
-- +.douya.org
-- +.dreamtoplay.com
-- +.e-bay.com
-- +.e-bay.it
-- +.e-bay.net
-- +.eachpay.com
-- +.eachpay.net
-- +.ebahy.com
-- +.ebay-authenticate.net
-- +.ebay-confirm.com
-- +.ebay-course.com
-- +.ebay-cz.com
-- +.ebay-delivery.com
-- +.ebay-discoveries.com
-- +.ebay-fashion.com
-- +.ebay-inc.com
-- +.ebay-inc.net
-- +.ebay-inc.org
-- +.ebay-online.com
-- +.ebay-sales.com
-- +.ebay-stories.com
-- +.ebay-us.com
-- +.ebay-vacation.com
-- +.ebay.at
-- +.ebay.be
-- +.ebay.ca
-- +.ebay.ch
-- +.ebay.cn
-- +.ebay.co.krhe
-- +.ebay.co.nz
-- +.ebay.co.uk
-- +.ebay.co.ve
-- +.ebay.co.za
-- +.ebay.com
-- +.ebay.com.ar
-- +.ebay.com.au
-- +.ebay.com.cn
-- +.ebay.com.ec
-- +.ebay.com.hk
-- +.ebay.com.mt
-- +.ebay.com.my
-- +.ebay.com.ph
-- +.ebay.com.sg
-- +.ebay.de
-- +.ebay.es
-- +.ebay.fr
-- +.ebay.ie
-- +.ebay.in
-- +.ebay.it
-- +.ebay.jp
-- +.ebay.lt
-- +.ebay.mn
-- +.ebay.net.cn
-- +.ebay.nl
-- +.ebay.org
-- +.ebay.org.cn
-- +.ebay.ph
-- +.ebay.pk
-- +.ebay.pl
-- +.ebay.sg
-- +.ebay.us
-- +.ebay.vn
-- +.ebay.yn.cn
-- +.ebay.zj.cn
-- +.ebay25.com
-- +.ebay68.com
-- +.ebaya.com
-- +.ebayads.com
-- +.ebayads.net
-- +.ebayadvertising.cn
-- +.ebayadvertising.com
-- +.ebayanunsios.net
-- +.ebayauction.com
-- +.ebayaustralia.com
-- +.ebayauthenticate.com.cn
-- +.ebaybags.com
-- +.ebaybank.com
-- +.ebaybenefits.com
-- +.ebayboutique.com
-- +.ebayca.com
-- +.ebayca.org
-- +.ebaycafe.com
-- +.ebaycar.com
-- +.ebaycareers.com
-- +.ebaycbt.co.kr
-- +.ebaycdn.net
-- +.ebaychina.net
-- +.ebayclassifieds.cn
-- +.ebayclassifieds.com
-- +.ebayclassifieds.com.cn
-- +.ebayclassifieds.info
-- +.ebayclassifieds.org
-- +.ebayclassifieds.tv
-- +.ebayclassifiedsgroup.com
-- +.ebayclassifiedsgroup.info
-- +.ebayclassifiedsgroup.org
-- +.ebayclassifies.com
-- +.ebayclub.com
-- +.ebaycoins.com
-- +.ebaycom.com
-- +.ebaycommercenetwork.com
-- +.ebaycourse.com
-- +.ebayd.com
-- +.ebayde.com
-- +.ebaydesc.cn
-- +.ebaydesc.com.cn
-- +.ebaydlassifieds.com
-- +.ebaydns.cn
-- +.ebaydts.com
-- +.ebayedu.com
-- +.ebayeletro.com
-- +.ebayenterprise.cn
-- +.ebayenterprise.com
-- +.ebayenterprise.com.cn
-- +.ebayenterprise.info
-- +.ebayenterprise.net
-- +.ebayenterprise.tv
-- +.ebayetc.com
-- +.ebayexpress.sg
-- +.ebayfashion.com
-- +.ebayfashion.net
-- +.ebayforcharity.org
-- +.ebayforeclosure.org
-- +.ebayfrance.com
-- +.ebayglobalshipping.com
-- +.ebaygroup.com
-- +.ebayhabit.com
-- +.ebayheels.com
-- +.ebayhots.com
-- +.ebayimg.com
-- +.ebayinc.com
-- +.ebayinc.net
-- +.ebayinc.org
-- +.ebayincconnectedcommerce.net
-- +.ebayinkblog.com
-- +.ebayinternetsalestax.com
-- +.ebayit.com
-- +.ebayjewelry.com
-- +.ebayjob.com
-- +.ebaykorea.com
-- +.ebayla.org
-- +.ebaylisting.com
-- +.ebaylocal.net
-- +.ebaylocationsdevacances.com
-- +.ebaymag.com
-- +.ebaymainstreet.com
-- +.ebaymall.com
-- +.ebaymarketplace.net
-- +.ebaymotors.ca
-- +.ebaymotors.cn
-- +.ebaymotors.com
-- +.ebaymotors.com.cn
-- +.ebaymotors.org
-- +.ebaymotorsblog.com
-- +.ebaynow.com
-- +.ebaynyc.com
-- +.ebayon.com
-- +.ebayon.net
-- +.ebayoncampus.com
-- +.ebayopen.com
-- +.ebayopensource.com
-- +.ebayopensource.net
-- +.ebaypakistan.net
-- +.ebaypark.com
-- +.ebayparts.com
-- +.ebaypedia.cn
-- +.ebaypedia.com.cn
-- +.ebayprivacycenter.com
-- +.ebayqq.com
-- +.ebayradio.com
-- +.ebayrtm.com
-- +.ebayseller.com
-- +.ebayshoesstore.com
-- +.ebayshop.com
-- +.ebayshop111.com
-- +.ebayshopping.cn
-- +.ebayshopping.com.cn
-- +.ebayshopping.org
-- +.ebaysocial.com
-- +.ebaysocial.ru
-- +.ebaysoho.com
-- +.ebaysohos.com
-- +.ebaystatic.cn
-- +.ebaystatic.com
-- +.ebaystore.com
-- +.ebaystore77.com
-- +.ebaystores.cn
-- +.ebaystyle.com
-- +.ebaysweden.com
-- +.ebayt.com
-- +.ebaytechblog.com
-- +.ebaytopratedseller.net
-- +.ebaytrading.com
-- +.ebaytradingassistant.com
-- +.ebaytv.org
-- +.ebayuae.net
-- +.ebayvakantiehuizen.com
-- +.ebayvalet.com
-- +.ebayvietnam.net
-- +.ebayworlds.com
-- +.ebayy.com
-- +.edisebay.com
-- +.eebay.com
-- +.epinions.com
-- +.esmplus.com
-- +.eu-consumer-empowerment.com
-- +.expertmaker.com
-- +.fairmarket.com
-- +.fragrancebay.com
-- +.francemail.com
-- +.g9.co.kr
-- +.gittigidiyor.net
-- +.gittigidiyorsikayet.com
-- +.gmarket.co.kr
-- +.gumtree.sg
-- +.half.com
-- +.half.com.cn
-- +.half.tv
-- +.halfcanada.com
-- +.halfjapan.com
-- +.handbagsoutletebay.com
-- +.iebay.com
-- +.irribay.com
-- +.itsbetterwhenyouwinit.com
-- +.jijiji.ca
-- +.kiji.ca
-- +.kijii.ca
-- +.kijij.ca
-- +.kijiji.ca
-- +.kijijiauto.ca
-- +.kijijiautos.ca
-- +.kijijidns.cn
-- +.kijijidns.com.cn
-- +.kijijiforbusiness.ca
-- +.kijijii.ca
-- +.kijijiraps.ca
-- +.kijji.ca
-- +.kijjiji.ca
-- +.liketwice.com
-- +.listinganalytics.net
-- +.liveauction.com
-- +.marketexecutive.net
-- +.milofetch.com
-- +.mobile.de
-- +.mobileinternational.com
-- +.mobileinternational.com.cn
-- +.musicbay.net
-- +.myconstructionworld.net
-- +.myebay.com
-- +.nebay.net
-- +.nexcat.com
-- +.nexpart.com
-- +.nexpart.tv
-- +.paisapay.cc
-- +.paisapay.info
-- +.paisapay.tv
-- +.premobay.com
-- +.privatemarketplaces.net
-- +.privatemarketplaces.us
-- +.prostores.cn
-- +.prostores.com
-- +.prostores.com.cn
-- +.q10.jp
-- +.qoo10.jp
-- +.renchead.com
-- +.rethink.net
-- +.shopibay.net
-- +.shoping.com
-- +.sourcingforebay.com.cn
-- +.sourcingforebay.net
-- +.sourcingforebay.tv
-- +.speybay.com
-- +.storesense.com
-- +.svpply.com
-- +.tearapeak.com
-- +.telebay.com
-- +.telesell.com
-- +.terapeack.com
-- +.terapeak.ca
-- +.terapeak.cn
-- +.terapeak.com
-- +.terapeak.com.hk
-- +.terapeak.hk
-- +.terapeak.info
-- +.teraperk.com
-- +.terrapeak.com
-- +.texttobuy.org
-- +.thebayuk.com
-- +.theebayshop.com
-- +.theopportunityproject.org
-- +.towerauction.com
-- +.vendu.com
-- +.watch-ebay.org
-- +.weareebay.com
-- +.whisolutions.com
-- +.wrenchead.com
-- +.wwwdecide.com
-- +.wwwebay.com
-- +.wwwebay.net
-- +.wwwwebay.com
-- +.xindelu.com
-- +.xn--3et96bj49ahpq.com
-- +.xn--4vq475g.com
-- +.xn--4vq477m.com
-- +.xn--7hv594h.com
-- +.xn--7hvy28f.cn
-- +.xn--hb4aw0g.com
-- +.xn--q41am8x.com
-- +.xn--qoq462m.com
-- +.xn--tkry91n.com
-- +.xn--ubt498knmf.com
-- +.xn--xsq421m.com
-- +.xn--xsq605n.com
-- +.xn--xsq959n.com
-- +.xn--yf1at58a.com
-- +.xxbay.com
-- +.yibei.org
+  - DOMAIN_SUFFIX,about.co.kr
+  - DOMAIN_SUFFIX,auction.co.kr
+  - DOMAIN_SUFFIX,e-bay.it
+  - DOMAIN_SUFFIX,ebay-us.com
+  - DOMAIN_SUFFIX,ebay.at
+  - DOMAIN_SUFFIX,ebay.be
+  - DOMAIN_SUFFIX,ebay.ca
+  - DOMAIN_SUFFIX,ebay.ch
+  - DOMAIN_SUFFIX,ebay.cn
+  - DOMAIN_SUFFIX,ebay.co.krhe
+  - DOMAIN_SUFFIX,ebay.co.nz
+  - DOMAIN_SUFFIX,ebay.co.uk
+  - DOMAIN_SUFFIX,ebay.co.ve
+  - DOMAIN_SUFFIX,ebay.co.za
+  - DOMAIN_SUFFIX,ebay.com
+  - DOMAIN_SUFFIX,ebay.com.ar
+  - DOMAIN_SUFFIX,ebay.com.au
+  - DOMAIN_SUFFIX,ebay.com.ec
+  - DOMAIN_SUFFIX,ebay.com.hk
+  - DOMAIN_SUFFIX,ebay.com.mt
+  - DOMAIN_SUFFIX,ebay.com.ph
+  - DOMAIN_SUFFIX,ebay.com.sg
+  - DOMAIN_SUFFIX,ebay.de
+  - DOMAIN_SUFFIX,ebay.es
+  - DOMAIN_SUFFIX,ebay.fr
+  - DOMAIN_SUFFIX,ebay.ie
+  - DOMAIN_SUFFIX,ebay.in
+  - DOMAIN_SUFFIX,ebay.it
+  - DOMAIN_SUFFIX,ebay.lt
+  - DOMAIN_SUFFIX,ebay.nl
+  - DOMAIN_SUFFIX,ebay.ph
+  - DOMAIN_SUFFIX,ebay.pk
+  - DOMAIN_SUFFIX,ebay.pl
+  - DOMAIN_SUFFIX,ebaycdn.net
+  - DOMAIN_SUFFIX,ebayimg.com
+  - DOMAIN_SUFFIX,ebayinc.com
+  - DOMAIN_SUFFIX,ebaykorea.com
+  - DOMAIN_SUFFIX,ebaymainstreet.com
+  - DOMAIN_SUFFIX,ebayprivacycenter.com
+  - DOMAIN_SUFFIX,ebayrtm.com
+  - DOMAIN_SUFFIX,ebaystatic.com
+  - DOMAIN_SUFFIX,esmplus.com
+  - DOMAIN_SUFFIX,g9.co.kr
+  - DOMAIN_SUFFIX,gmarket.co.kr
+  - DOMAIN_SUFFIX,21centuryaccess.com
+  - DOMAIN_SUFFIX,4ebaytraders.com
+  - DOMAIN_SUFFIX,adcommerce.cn
+  - DOMAIN_SUFFIX,adcommerce.tv
+  - DOMAIN_SUFFIX,appforebay.cn
+  - DOMAIN_SUFFIX,appsonebay.net
+  - DOMAIN_SUFFIX,asebay.com
+  - DOMAIN_SUFFIX,baazee.com
+  - DOMAIN_SUFFIX,bidbay.com
+  - DOMAIN_SUFFIX,bidorbuyindia.com
+  - DOMAIN_SUFFIX,billpoint.com
+  - DOMAIN_SUFFIX,billpoint.info
+  - DOMAIN_SUFFIX,billpoint.tv
+  - DOMAIN_SUFFIX,billpoint.us
+  - DOMAIN_SUFFIX,billpointnewzealand.com
+  - DOMAIN_SUFFIX,blogebay.com
+  - DOMAIN_SUFFIX,bookclubcorner.com
+  - DOMAIN_SUFFIX,builtfromebay.com
+  - DOMAIN_SUFFIX,buyitnow.com
+  - DOMAIN_SUFFIX,buyitnow.net
+  - DOMAIN_SUFFIX,buyitnow.org
+  - DOMAIN_SUFFIX,buyitnow.tv
+  - DOMAIN_SUFFIX,buyitnowshop.net
+  - DOMAIN_SUFFIX,cafr.ca
+  - DOMAIN_SUFFIX,carebay.com
+  - DOMAIN_SUFFIX,cargigileads.com
+  - DOMAIN_SUFFIX,cebay.com
+  - DOMAIN_SUFFIX,collective99.com
+  - DOMAIN_SUFFIX,commerceos.com
+  - DOMAIN_SUFFIX,connectcommerce.cn
+  - DOMAIN_SUFFIX,connectcommerce.com.cn
+  - DOMAIN_SUFFIX,connectcommerce.hk
+  - DOMAIN_SUFFIX,connectcommerce.info
+  - DOMAIN_SUFFIX,connectcommerce.tv
+  - DOMAIN_SUFFIX,connectedcommerce.cn
+  - DOMAIN_SUFFIX,connectedcommerce.com
+  - DOMAIN_SUFFIX,connectedcommerce.tv
+  - DOMAIN_SUFFIX,crececonebay.com
+  - DOMAIN_SUFFIX,creditcardsbay.com
+  - DOMAIN_SUFFIX,cyber-bay.cn
+  - DOMAIN_SUFFIX,cyber-bay.com.cn
+  - DOMAIN_SUFFIX,cyber-bay.info
+  - DOMAIN_SUFFIX,cyber-bay.org
+  - DOMAIN_SUFFIX,dba.dk
+  - DOMAIN_SUFFIX,dealbay.com
+  - DOMAIN_SUFFIX,dealtime.com
+  - DOMAIN_SUFFIX,didce.com
+  - DOMAIN_SUFFIX,douya.org
+  - DOMAIN_SUFFIX,dreamtoplay.com
+  - DOMAIN_SUFFIX,e-bay.com
+  - DOMAIN_SUFFIX,e-bay.it
+  - DOMAIN_SUFFIX,e-bay.net
+  - DOMAIN_SUFFIX,eachpay.com
+  - DOMAIN_SUFFIX,eachpay.net
+  - DOMAIN_SUFFIX,ebahy.com
+  - DOMAIN_SUFFIX,ebay-authenticate.net
+  - DOMAIN_SUFFIX,ebay-confirm.com
+  - DOMAIN_SUFFIX,ebay-course.com
+  - DOMAIN_SUFFIX,ebay-cz.com
+  - DOMAIN_SUFFIX,ebay-delivery.com
+  - DOMAIN_SUFFIX,ebay-discoveries.com
+  - DOMAIN_SUFFIX,ebay-fashion.com
+  - DOMAIN_SUFFIX,ebay-inc.com
+  - DOMAIN_SUFFIX,ebay-inc.net
+  - DOMAIN_SUFFIX,ebay-inc.org
+  - DOMAIN_SUFFIX,ebay-online.com
+  - DOMAIN_SUFFIX,ebay-sales.com
+  - DOMAIN_SUFFIX,ebay-stories.com
+  - DOMAIN_SUFFIX,ebay-us.com
+  - DOMAIN_SUFFIX,ebay-vacation.com
+  - DOMAIN_SUFFIX,ebay.at
+  - DOMAIN_SUFFIX,ebay.be
+  - DOMAIN_SUFFIX,ebay.ca
+  - DOMAIN_SUFFIX,ebay.ch
+  - DOMAIN_SUFFIX,ebay.cn
+  - DOMAIN_SUFFIX,ebay.co.nz
+  - DOMAIN_SUFFIX,ebay.co.uk
+  - DOMAIN_SUFFIX,ebay.co.ve
+  - DOMAIN_SUFFIX,ebay.co.za
+  - DOMAIN_SUFFIX,ebay.com
+  - DOMAIN_SUFFIX,ebay.com.ar
+  - DOMAIN_SUFFIX,ebay.com.au
+  - DOMAIN_SUFFIX,ebay.com.cn
+  - DOMAIN_SUFFIX,ebay.com.ec
+  - DOMAIN_SUFFIX,ebay.com.hk
+  - DOMAIN_SUFFIX,ebay.com.mt
+  - DOMAIN_SUFFIX,ebay.com.my
+  - DOMAIN_SUFFIX,ebay.com.ph
+  - DOMAIN_SUFFIX,ebay.com.sg
+  - DOMAIN_SUFFIX,ebay.de
+  - DOMAIN_SUFFIX,ebay.es
+  - DOMAIN_SUFFIX,ebay.fr
+  - DOMAIN_SUFFIX,ebay.ie
+  - DOMAIN_SUFFIX,ebay.in
+  - DOMAIN_SUFFIX,ebay.it
+  - DOMAIN_SUFFIX,ebay.jp
+  - DOMAIN_SUFFIX,ebay.lt
+  - DOMAIN_SUFFIX,ebay.mn
+  - DOMAIN_SUFFIX,ebay.net.cn
+  - DOMAIN_SUFFIX,ebay.nl
+  - DOMAIN_SUFFIX,ebay.org
+  - DOMAIN_SUFFIX,ebay.org.cn
+  - DOMAIN_SUFFIX,ebay.ph
+  - DOMAIN_SUFFIX,ebay.pk
+  - DOMAIN_SUFFIX,ebay.pl
+  - DOMAIN_SUFFIX,ebay.sg
+  - DOMAIN_SUFFIX,ebay.us
+  - DOMAIN_SUFFIX,ebay.vn
+  - DOMAIN_SUFFIX,ebay.yn.cn
+  - DOMAIN_SUFFIX,ebay.zj.cn
+  - DOMAIN_SUFFIX,ebay25.com
+  - DOMAIN_SUFFIX,ebay68.com
+  - DOMAIN_SUFFIX,ebaya.com
+  - DOMAIN_SUFFIX,ebayads.com
+  - DOMAIN_SUFFIX,ebayads.net
+  - DOMAIN_SUFFIX,ebayadvertising.cn
+  - DOMAIN_SUFFIX,ebayadvertising.com
+  - DOMAIN_SUFFIX,ebayanunsios.net
+  - DOMAIN_SUFFIX,ebayauction.com
+  - DOMAIN_SUFFIX,ebayaustralia.com
+  - DOMAIN_SUFFIX,ebayauthenticate.com.cn
+  - DOMAIN_SUFFIX,ebaybags.com
+  - DOMAIN_SUFFIX,ebaybank.com
+  - DOMAIN_SUFFIX,ebaybenefits.com
+  - DOMAIN_SUFFIX,ebayboutique.com
+  - DOMAIN_SUFFIX,ebayca.com
+  - DOMAIN_SUFFIX,ebayca.org
+  - DOMAIN_SUFFIX,ebaycafe.com
+  - DOMAIN_SUFFIX,ebaycar.com
+  - DOMAIN_SUFFIX,ebaycareers.com
+  - DOMAIN_SUFFIX,ebaycbt.co.kr
+  - DOMAIN_SUFFIX,ebaycdn.net
+  - DOMAIN_SUFFIX,ebaychina.net
+  - DOMAIN_SUFFIX,ebayclassifieds.cn
+  - DOMAIN_SUFFIX,ebayclassifieds.com
+  - DOMAIN_SUFFIX,ebayclassifieds.com.cn
+  - DOMAIN_SUFFIX,ebayclassifieds.info
+  - DOMAIN_SUFFIX,ebayclassifieds.org
+  - DOMAIN_SUFFIX,ebayclassifieds.tv
+  - DOMAIN_SUFFIX,ebayclassifiedsgroup.com
+  - DOMAIN_SUFFIX,ebayclassifiedsgroup.info
+  - DOMAIN_SUFFIX,ebayclassifiedsgroup.org
+  - DOMAIN_SUFFIX,ebayclassifies.com
+  - DOMAIN_SUFFIX,ebayclub.com
+  - DOMAIN_SUFFIX,ebaycoins.com
+  - DOMAIN_SUFFIX,ebaycom.com
+  - DOMAIN_SUFFIX,ebaycommercenetwork.com
+  - DOMAIN_SUFFIX,ebaycourse.com
+  - DOMAIN_SUFFIX,ebayd.com
+  - DOMAIN_SUFFIX,ebayde.com
+  - DOMAIN_SUFFIX,ebaydesc.cn
+  - DOMAIN_SUFFIX,ebaydesc.com.cn
+  - DOMAIN_SUFFIX,ebaydlassifieds.com
+  - DOMAIN_SUFFIX,ebaydns.cn
+  - DOMAIN_SUFFIX,ebaydts.com
+  - DOMAIN_SUFFIX,ebayedu.com
+  - DOMAIN_SUFFIX,ebayeletro.com
+  - DOMAIN_SUFFIX,ebayenterprise.cn
+  - DOMAIN_SUFFIX,ebayenterprise.com
+  - DOMAIN_SUFFIX,ebayenterprise.com.cn
+  - DOMAIN_SUFFIX,ebayenterprise.info
+  - DOMAIN_SUFFIX,ebayenterprise.net
+  - DOMAIN_SUFFIX,ebayenterprise.tv
+  - DOMAIN_SUFFIX,ebayetc.com
+  - DOMAIN_SUFFIX,ebayexpress.sg
+  - DOMAIN_SUFFIX,ebayfashion.com
+  - DOMAIN_SUFFIX,ebayfashion.net
+  - DOMAIN_SUFFIX,ebayforcharity.org
+  - DOMAIN_SUFFIX,ebayforeclosure.org
+  - DOMAIN_SUFFIX,ebayfrance.com
+  - DOMAIN_SUFFIX,ebayglobalshipping.com
+  - DOMAIN_SUFFIX,ebaygroup.com
+  - DOMAIN_SUFFIX,ebayhabit.com
+  - DOMAIN_SUFFIX,ebayheels.com
+  - DOMAIN_SUFFIX,ebayhots.com
+  - DOMAIN_SUFFIX,ebayimg.com
+  - DOMAIN_SUFFIX,ebayinc.com
+  - DOMAIN_SUFFIX,ebayinc.net
+  - DOMAIN_SUFFIX,ebayinc.org
+  - DOMAIN_SUFFIX,ebayincconnectedcommerce.net
+  - DOMAIN_SUFFIX,ebayinkblog.com
+  - DOMAIN_SUFFIX,ebayinternetsalestax.com
+  - DOMAIN_SUFFIX,ebayit.com
+  - DOMAIN_SUFFIX,ebayjewelry.com
+  - DOMAIN_SUFFIX,ebayjob.com
+  - DOMAIN_SUFFIX,ebayla.org
+  - DOMAIN_SUFFIX,ebaylisting.com
+  - DOMAIN_SUFFIX,ebaylocal.net
+  - DOMAIN_SUFFIX,ebaylocationsdevacances.com
+  - DOMAIN_SUFFIX,ebaymag.com
+  - DOMAIN_SUFFIX,ebaymainstreet.com
+  - DOMAIN_SUFFIX,ebaymall.com
+  - DOMAIN_SUFFIX,ebaymarketplace.net
+  - DOMAIN_SUFFIX,ebaymotors.ca
+  - DOMAIN_SUFFIX,ebaymotors.cn
+  - DOMAIN_SUFFIX,ebaymotors.com
+  - DOMAIN_SUFFIX,ebaymotors.com.cn
+  - DOMAIN_SUFFIX,ebaymotors.org
+  - DOMAIN_SUFFIX,ebaymotorsblog.com
+  - DOMAIN_SUFFIX,ebaynow.com
+  - DOMAIN_SUFFIX,ebaynyc.com
+  - DOMAIN_SUFFIX,ebayon.com
+  - DOMAIN_SUFFIX,ebayon.net
+  - DOMAIN_SUFFIX,ebayoncampus.com
+  - DOMAIN_SUFFIX,ebayopen.com
+  - DOMAIN_SUFFIX,ebayopensource.com
+  - DOMAIN_SUFFIX,ebayopensource.net
+  - DOMAIN_SUFFIX,ebaypakistan.net
+  - DOMAIN_SUFFIX,ebaypark.com
+  - DOMAIN_SUFFIX,ebayparts.com
+  - DOMAIN_SUFFIX,ebaypedia.cn
+  - DOMAIN_SUFFIX,ebaypedia.com.cn
+  - DOMAIN_SUFFIX,ebayprivacycenter.com
+  - DOMAIN_SUFFIX,ebayqq.com
+  - DOMAIN_SUFFIX,ebayradio.com
+  - DOMAIN_SUFFIX,ebayrtm.com
+  - DOMAIN_SUFFIX,ebayseller.com
+  - DOMAIN_SUFFIX,ebayshoesstore.com
+  - DOMAIN_SUFFIX,ebayshop.com
+  - DOMAIN_SUFFIX,ebayshop111.com
+  - DOMAIN_SUFFIX,ebayshopping.cn
+  - DOMAIN_SUFFIX,ebayshopping.com.cn
+  - DOMAIN_SUFFIX,ebayshopping.org
+  - DOMAIN_SUFFIX,ebaysocial.com
+  - DOMAIN_SUFFIX,ebaysocial.ru
+  - DOMAIN_SUFFIX,ebaysoho.com
+  - DOMAIN_SUFFIX,ebaysohos.com
+  - DOMAIN_SUFFIX,ebaystatic.cn
+  - DOMAIN_SUFFIX,ebaystatic.com
+  - DOMAIN_SUFFIX,ebaystore.com
+  - DOMAIN_SUFFIX,ebaystore77.com
+  - DOMAIN_SUFFIX,ebaystores.cn
+  - DOMAIN_SUFFIX,ebaystyle.com
+  - DOMAIN_SUFFIX,ebaysweden.com
+  - DOMAIN_SUFFIX,ebayt.com
+  - DOMAIN_SUFFIX,ebaytechblog.com
+  - DOMAIN_SUFFIX,ebaytopratedseller.net
+  - DOMAIN_SUFFIX,ebaytrading.com
+  - DOMAIN_SUFFIX,ebaytradingassistant.com
+  - DOMAIN_SUFFIX,ebaytv.org
+  - DOMAIN_SUFFIX,ebayuae.net
+  - DOMAIN_SUFFIX,ebayvakantiehuizen.com
+  - DOMAIN_SUFFIX,ebayvalet.com
+  - DOMAIN_SUFFIX,ebayvietnam.net
+  - DOMAIN_SUFFIX,ebayworlds.com
+  - DOMAIN_SUFFIX,ebayy.com
+  - DOMAIN_SUFFIX,edisebay.com
+  - DOMAIN_SUFFIX,eebay.com
+  - DOMAIN_SUFFIX,epinions.com
+  - DOMAIN_SUFFIX,eu-consumer-empowerment.com
+  - DOMAIN_SUFFIX,expertmaker.com
+  - DOMAIN_SUFFIX,fairmarket.com
+  - DOMAIN_SUFFIX,fragrancebay.com
+  - DOMAIN_SUFFIX,francemail.com
+  - DOMAIN_SUFFIX,half.com
+  - DOMAIN_SUFFIX,half.com.cn
+  - DOMAIN_SUFFIX,half.tv
+  - DOMAIN_SUFFIX,halfcanada.com
+  - DOMAIN_SUFFIX,halfjapan.com
+  - DOMAIN_SUFFIX,handbagsoutletebay.com
+  - DOMAIN_SUFFIX,iebay.com
+  - DOMAIN_SUFFIX,irribay.com
+  - DOMAIN_SUFFIX,itsbetterwhenyouwinit.com
+  - DOMAIN_SUFFIX,liketwice.com
+  - DOMAIN_SUFFIX,liveauction.com
+  - DOMAIN_SUFFIX,milofetch.com
+  - DOMAIN_SUFFIX,musicbay.net
+  - DOMAIN_SUFFIX,myconstructionworld.net
+  - DOMAIN_SUFFIX,myebay.com
+  - DOMAIN_SUFFIX,nebay.net
+  - DOMAIN_SUFFIX,paisapay.cc
+  - DOMAIN_SUFFIX,paisapay.info
+  - DOMAIN_SUFFIX,paisapay.tv
+  - DOMAIN_SUFFIX,premobay.com
+  - DOMAIN_SUFFIX,privatemarketplaces.net
+  - DOMAIN_SUFFIX,privatemarketplaces.us
+  - DOMAIN_SUFFIX,prostores.cn
+  - DOMAIN_SUFFIX,prostores.com
+  - DOMAIN_SUFFIX,prostores.com.cn
+  - DOMAIN_SUFFIX,rethink.net
+  - DOMAIN_SUFFIX,shopibay.net
+  - DOMAIN_SUFFIX,shoping.com
+  - DOMAIN_SUFFIX,sourcingforebay.com.cn
+  - DOMAIN_SUFFIX,sourcingforebay.net
+  - DOMAIN_SUFFIX,sourcingforebay.tv
+  - DOMAIN_SUFFIX,speybay.com
+  - DOMAIN_SUFFIX,storesense.com
+  - DOMAIN_SUFFIX,svpply.com
+  - DOMAIN_SUFFIX,telebay.com
+  - DOMAIN_SUFFIX,telesell.com
+  - DOMAIN_SUFFIX,texttobuy.org
+  - DOMAIN_SUFFIX,theebayshop.com
+  - DOMAIN_SUFFIX,theopportunityproject.org
+  - DOMAIN_SUFFIX,towerauction.com
+  - DOMAIN_SUFFIX,vendu.com
+  - DOMAIN_SUFFIX,watch-ebay.org
+  - DOMAIN_SUFFIX,weareebay.com
+  - DOMAIN_SUFFIX,wwwdecide.com
+  - DOMAIN_SUFFIX,wwwebay.com
+  - DOMAIN_SUFFIX,wwwebay.net
+  - DOMAIN_SUFFIX,wwwwebay.com
+  - DOMAIN_SUFFIX,xindelu.com
+  - DOMAIN_SUFFIX,xn--3et96bj49ahpq.com
+  - DOMAIN_SUFFIX,xn--4vq475g.com
+  - DOMAIN_SUFFIX,xn--4vq477m.com
+  - DOMAIN_SUFFIX,xn--7hv594h.com
+  - DOMAIN_SUFFIX,xn--7hvy28f.cn
+  - DOMAIN_SUFFIX,xn--hb4aw0g.com
+  - DOMAIN_SUFFIX,xn--q41am8x.com
+  - DOMAIN_SUFFIX,xn--qoq462m.com
+  - DOMAIN_SUFFIX,xn--tkry91n.com
+  - DOMAIN_SUFFIX,xn--ubt498knmf.com
+  - DOMAIN_SUFFIX,xn--xsq421m.com
+  - DOMAIN_SUFFIX,xn--xsq605n.com
+  - DOMAIN_SUFFIX,xn--xsq959n.com
+  - DOMAIN_SUFFIX,xn--yf1at58a.com
+  - DOMAIN_SUFFIX,xxbay.com
+  - DOMAIN_SUFFIX,yibei.org
+  - DOMAIN_SUFFIX,gittigidiyor.net
+  - DOMAIN_SUFFIX,gittigidiyorsikayet.com
+  - DOMAIN_SUFFIX,gumtree.sg
+  - DOMAIN_SUFFIX,jijiji.ca
+  - DOMAIN_SUFFIX,kiji.ca
+  - DOMAIN_SUFFIX,kijii.ca
+  - DOMAIN_SUFFIX,kijij.ca
+  - DOMAIN_SUFFIX,kijiji.ca
+  - DOMAIN_SUFFIX,kijijiauto.ca
+  - DOMAIN_SUFFIX,kijijiautos.ca
+  - DOMAIN_SUFFIX,kijijidns.cn
+  - DOMAIN_SUFFIX,kijijidns.com.cn
+  - DOMAIN_SUFFIX,kijijiforbusiness.ca
+  - DOMAIN_SUFFIX,kijijii.ca
+  - DOMAIN_SUFFIX,kijijiraps.ca
+  - DOMAIN_SUFFIX,kijji.ca
+  - DOMAIN_SUFFIX,kijjiji.ca
+  - DOMAIN_SUFFIX,automobile.fr
+  - DOMAIN_SUFFIX,mobile.de
+  - DOMAIN_SUFFIX,mobileinternational.com
+  - DOMAIN_SUFFIX,mobileinternational.com.cn
+  - DOMAIN_SUFFIX,q10.jp
+  - DOMAIN_SUFFIX,qoo10.jp
+  - DOMAIN_SUFFIX,achievementanalytics.com
+  - DOMAIN_SUFFIX,cdn-terapeak.com
+  - DOMAIN_SUFFIX,listinganalytics.net
+  - DOMAIN_SUFFIX,marketexecutive.net
+  - DOMAIN_SUFFIX,tearapeak.com
+  - DOMAIN_SUFFIX,terapeack.com
+  - DOMAIN_SUFFIX,terapeak.ca
+  - DOMAIN_SUFFIX,terapeak.cn
+  - DOMAIN_SUFFIX,terapeak.com
+  - DOMAIN_SUFFIX,terapeak.com.hk
+  - DOMAIN_SUFFIX,terapeak.hk
+  - DOMAIN_SUFFIX,terapeak.info
+  - DOMAIN_SUFFIX,teraperk.com
+  - DOMAIN_SUFFIX,terrapeak.com
+  - DOMAIN_SUFFIX,thebayuk.com
+  - DOMAIN_SUFFIX,nexcat.com
+  - DOMAIN_SUFFIX,nexpart.com
+  - DOMAIN_SUFFIX,nexpart.tv
+  - DOMAIN_SUFFIX,renchead.com
+  - DOMAIN_SUFFIX,whisolutions.com
+  - DOMAIN_SUFFIX,wrenchead.com
+  - DOMAIN,ebay-25-assets.s3-us-west-1.amazonaws.com

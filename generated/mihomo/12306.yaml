@@ -1,16 +1,16 @@
 payload:
-- +.12306.cn
-- +.95306.cn
-- +.95572.com
-- +.china-railway.com.cn
-- +.china-ric.com
-- +.crct.com
-- +.cre.cn
-- +.crecc.com.cn
-- +.creip.cn
-- +.crscl.com.cn
-- +.gzrailway.com.cn
-- +.nntlj.com
-- +.peoplerail.com
-- +.rails.cn
-- +.tdpress.com
+  - DOMAIN_SUFFIX,12306.cn
+  - DOMAIN_SUFFIX,95306.cn
+  - DOMAIN_SUFFIX,95572.com
+  - DOMAIN_SUFFIX,china-railway.com.cn
+  - DOMAIN_SUFFIX,china-ric.com
+  - DOMAIN_SUFFIX,crct.com
+  - DOMAIN_SUFFIX,cre.cn
+  - DOMAIN_SUFFIX,crecc.com.cn
+  - DOMAIN_SUFFIX,creip.cn
+  - DOMAIN_SUFFIX,crscl.com.cn
+  - DOMAIN_SUFFIX,gzrailway.com.cn
+  - DOMAIN_SUFFIX,nntlj.com
+  - DOMAIN_SUFFIX,peoplerail.com
+  - DOMAIN_SUFFIX,rails.cn
+  - DOMAIN_SUFFIX,tdpress.com

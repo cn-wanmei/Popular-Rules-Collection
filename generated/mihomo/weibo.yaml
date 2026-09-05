@@ -1,5 +1,5 @@
 payload:
-- +.weibo.cn
-- +.weibo.com
-- +.weibocdn.com
-- "DOMAIN-KEYWORD,weibo"
+  - DOMAIN_SUFFIX,weibo.cn
+  - DOMAIN_SUFFIX,weibo.com
+  - DOMAIN_SUFFIX,weibocdn.com
+  - DOMAIN_KEYWORD,weibo

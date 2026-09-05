@@ -1,7 +1,7 @@
 payload:
-- +.gitlab-assets.oss-cn-hongkong.aliyuncs.com
-- +.gitlab-static.net
-- +.gitlab.com
-- +.gitlab.net
-- +.gitter-static.net
-- +.gitter.im
+  - DOMAIN_SUFFIX,gitlab-assets.oss-cn-hongkong.aliyuncs.com
+  - DOMAIN_SUFFIX,gitlab-static.net
+  - DOMAIN_SUFFIX,gitlab.com
+  - DOMAIN_SUFFIX,gitlab.net
+  - DOMAIN_SUFFIX,gitter-static.net
+  - DOMAIN_SUFFIX,gitter.im

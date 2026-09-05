@@ -1,8 +1,11 @@
 payload:
-- ppl-ai-file-upload.s3.amazonaws.com
-- pplx-res.cloudinary.com
-- +.perplexity.ai
-- +.perplexity.com
-- +.ppl-ai-file-upload.s3.amazonaws.com
-- +.pplx-res.cloudinary.com
-- +.pplx.ai
+  - DOMAIN_SUFFIX,ppl-ai-file-upload.s3.amazonaws.com
+  - DOMAIN_SUFFIX,pplx-res.cloudinary.com
+  - DOMAIN_SUFFIX,perplexity.ai
+  - DOMAIN_SUFFIX,perplexity.com
+  - DOMAIN_SUFFIX,pplx.ai
+  - DOMAIN_SUFFIX,perplexity.ai
+  - DOMAIN_SUFFIX,perplexity.com
+  - DOMAIN_SUFFIX,pplx.ai
+  - DOMAIN,ppl-ai-file-upload.s3.amazonaws.com
+  - DOMAIN,pplx-res.cloudinary.com

@@ -1,42 +1,97 @@
 payload:
-- e13252.dscg.akamaiedge.net
-- h-netflix.online-metrix.net
-- netflix.com.edgesuite.net
-- +.cookielaw.org
-- +.fast.com
-- +.flxvpn.net
-- +.netflix.ca
-- +.netflix.com
-- +.netflix.com.au
-- +.netflix.com.edgesuite.net
-- +.netflix.net
-- +.netflixdnstest0.com
-- +.netflixdnstest1.com
-- +.netflixdnstest10.com
-- +.netflixdnstest2.com
-- +.netflixdnstest3.com
-- +.netflixdnstest4.com
-- +.netflixdnstest5.com
-- +.netflixdnstest6.com
-- +.netflixdnstest7.com
-- +.netflixdnstest8.com
-- +.netflixdnstest9.com
-- +.netflixinvestor.com
-- +.netflixstudios.com
-- +.netflixtechblog.com
-- +.nflxext.com
-- +.nflximg.com
-- +.nflximg.net
-- +.nflxsearch.net
-- +.nflxso.net
-- +.nflxvideo.net
-- +.onetrust.com
-- +.us-west-2.amazonaws.com
-- "DOMAIN-KEYWORD,apiproxy-device-prod-nlb-"
-- "DOMAIN-KEYWORD,dualstack.apiproxy-"
-- "DOMAIN-KEYWORD,dualstack.ichnaea-web-"
-- "DOMAIN-KEYWORD,netflixdnstest"
-- "DOMAIN-REGEX,(^|\\.)apiproxy-device-prod-nlb-.+\\.amazonaws\\.com$"
-- "DOMAIN-REGEX,(^|\\.)apiproxy-website-nlb-prod-.+\\.amazonaws\\.com$"
-- "DOMAIN-REGEX,(^|\\.)dualstack\\.apiproxy-.+\\.amazonaws\\.com$"
-- "DOMAIN-REGEX,(^|\\.)dualstack\\.ichnaea-web-.+\\.amazonaws\\.com$"
+  - DOMAIN,e13252.dscg.akamaiedge.net
+  - DOMAIN,h-netflix.online-metrix.net
+  - DOMAIN,netflix.com.edgesuite.net
+  - DOMAIN_SUFFIX,cookielaw.org
+  - DOMAIN_SUFFIX,fast.com
+  - DOMAIN_SUFFIX,flxvpn.net
+  - DOMAIN_SUFFIX,netflix.ca
+  - DOMAIN_SUFFIX,netflix.com
+  - DOMAIN_SUFFIX,netflix.com.au
+  - DOMAIN_SUFFIX,netflix.com.edgesuite.net
+  - DOMAIN_SUFFIX,netflix.net
+  - DOMAIN_SUFFIX,netflixdnstest0.com
+  - DOMAIN_SUFFIX,netflixdnstest1.com
+  - DOMAIN_SUFFIX,netflixdnstest10.com
+  - DOMAIN_SUFFIX,netflixdnstest2.com
+  - DOMAIN_SUFFIX,netflixdnstest3.com
+  - DOMAIN_SUFFIX,netflixdnstest4.com
+  - DOMAIN_SUFFIX,netflixdnstest5.com
+  - DOMAIN_SUFFIX,netflixdnstest6.com
+  - DOMAIN_SUFFIX,netflixdnstest7.com
+  - DOMAIN_SUFFIX,netflixdnstest8.com
+  - DOMAIN_SUFFIX,netflixdnstest9.com
+  - DOMAIN_SUFFIX,netflixinvestor.com
+  - DOMAIN_SUFFIX,netflixstudios.com
+  - DOMAIN_SUFFIX,netflixtechblog.com
+  - DOMAIN_SUFFIX,nflxext.com
+  - DOMAIN_SUFFIX,nflximg.com
+  - DOMAIN_SUFFIX,nflximg.net
+  - DOMAIN_SUFFIX,nflxsearch.net
+  - DOMAIN_SUFFIX,nflxso.net
+  - DOMAIN_SUFFIX,nflxvideo.net
+  - DOMAIN_SUFFIX,onetrust.com
+  - DOMAIN_SUFFIX,us-west-2.amazonaws.com
+  - DOMAIN_KEYWORD,apiproxy-device-prod-nlb-
+  - DOMAIN_KEYWORD,dualstack.apiproxy-
+  - DOMAIN_KEYWORD,dualstack.ichnaea-web-
+  - DOMAIN_KEYWORD,netflixdnstest
+  - DOMAIN_SUFFIX,netflix.com
+  - DOMAIN_SUFFIX,netflix.net
+  - DOMAIN_SUFFIX,nflxext.com
+  - DOMAIN_SUFFIX,nflximg.com
+  - DOMAIN_SUFFIX,nflximg.net
+  - DOMAIN_SUFFIX,nflxso.net
+  - DOMAIN_SUFFIX,nflxvideo.net
+  - DOMAIN_SUFFIX,netflix.com.edgesuite.net
+  - DOMAIN_SUFFIX,fast.com
+  - DOMAIN_SUFFIX,netflix.ca
+  - DOMAIN_SUFFIX,netflix.com
+  - DOMAIN_SUFFIX,netflix.net
+  - DOMAIN_SUFFIX,netflixinvestor.com
+  - DOMAIN_SUFFIX,netflixtechblog.com
+  - DOMAIN_SUFFIX,nflxext.com
+  - DOMAIN_SUFFIX,nflximg.com
+  - DOMAIN_SUFFIX,nflximg.net
+  - DOMAIN_SUFFIX,nflxsearch.net
+  - DOMAIN_SUFFIX,nflxso.net
+  - DOMAIN_SUFFIX,nflxvideo.net
+  - DOMAIN_SUFFIX,netflixdnstest0.com
+  - DOMAIN_SUFFIX,netflixdnstest1.com
+  - DOMAIN_SUFFIX,netflixdnstest2.com
+  - DOMAIN_SUFFIX,netflixdnstest3.com
+  - DOMAIN_SUFFIX,netflixdnstest4.com
+  - DOMAIN_SUFFIX,netflixdnstest5.com
+  - DOMAIN_SUFFIX,netflixdnstest6.com
+  - DOMAIN_SUFFIX,netflixdnstest7.com
+  - DOMAIN_SUFFIX,netflixdnstest8.com
+  - DOMAIN_SUFFIX,netflixdnstest9.com
+  - DOMAIN_SUFFIX,netflixdnstest10.com
+  - DOMAIN_SUFFIX,fast.com
+  - DOMAIN_SUFFIX,netflix.ca
+  - DOMAIN_SUFFIX,netflix.com
+  - DOMAIN_SUFFIX,netflix.net
+  - DOMAIN_SUFFIX,netflixinvestor.com
+  - DOMAIN_SUFFIX,netflixtechblog.com
+  - DOMAIN_SUFFIX,nflxext.com
+  - DOMAIN_SUFFIX,nflximg.com
+  - DOMAIN_SUFFIX,nflximg.net
+  - DOMAIN_SUFFIX,nflxsearch.net
+  - DOMAIN_SUFFIX,nflxso.net
+  - DOMAIN_SUFFIX,nflxvideo.net
+  - DOMAIN_SUFFIX,netflixdnstest0.com
+  - DOMAIN_SUFFIX,netflixdnstest1.com
+  - DOMAIN_SUFFIX,netflixdnstest2.com
+  - DOMAIN_SUFFIX,netflixdnstest3.com
+  - DOMAIN_SUFFIX,netflixdnstest4.com
+  - DOMAIN_SUFFIX,netflixdnstest5.com
+  - DOMAIN_SUFFIX,netflixdnstest6.com
+  - DOMAIN_SUFFIX,netflixdnstest7.com
+  - DOMAIN_SUFFIX,netflixdnstest8.com
+  - DOMAIN_SUFFIX,netflixdnstest9.com
+  - DOMAIN_SUFFIX,netflixdnstest10.com
+  - DOMAIN_REGEX,(^|\.)apiproxy-device-prod-nlb-.+\.amazonaws\.com$
+  - DOMAIN_REGEX,(^|\.)apiproxy-website-nlb-prod-.+\.amazonaws\.com$
+  - DOMAIN_REGEX,(^|\.)dualstack\.apiproxy-.+\.amazonaws\.com$
+  - DOMAIN_REGEX,(^|\.)dualstack\.ichnaea-web-.+\.amazonaws\.com$
+  - DOMAIN,netflix.com.edgesuite.net

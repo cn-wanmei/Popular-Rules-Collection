@@ -1,79 +1,91 @@
 payload:
-- lf3-static.bytednsdoc.com
-- v5-dy-o-abtest.zjcdn.com
-- +.activity-wbsj.com
-- +.aihst8.com
-- +.amemv.cn
-- +.amemv.com
-- +.amemv.net
-- +.awemeughun.com
-- +.awemeuglang.com
-- +.awemeugsoul.com
-- +.awemeugwave.com
-- +.betastar.cn
-- +.boxdouyin.com
-- +.cookicut.com
-- +.douyin.com
-- +.douyinact.com
-- +.douyinact.net
-- +.douyincdn.com
-- +.douyinec.com
-- +.douyinfe.com
-- +.douyinliving.com
-- +.douyinmusicpromotion.com
-- +.douyinpay.com
-- +.douyinpic.com
-- +.douyinstatic.com
-- +.douyinvod.com
-- +.duoshan.com
-- +.huoshan.com
-- +.huoshancdn.com
-- +.huoshangroup.com
-- +.huoshanimg.com
-- +.huoshanlive.com
-- +.huoshanparty.com
-- +.huoshanstatic.com
-- +.huoshante8.com
-- +.huoshanvideo.cn
-- +.huoshanvideo.net
-- +.huoshanvod.com
-- +.huoshanxiaoshipin.cn
-- +.huoshanxiaoshipin.net
-- +.huoshanzhibo.cn
-- +.huoshanzhibo.com
-- +.huoshanzhibo.net
-- +.hypercachenode.com
-- +.idouyinliving.com
-- +.idouyinpic.com
-- +.idouyinstatic.com
-- +.idouyinvod.com
-- +.iesdouyin.com
-- +.iesdouyin.net
-- +.ieshuodong.cn
-- +.ieshuodong.net
-- +.ihst8.com
-- +.ihuoshanimg.com
-- +.ihuoshanlive.com
-- +.ihuoshanstatic.com
-- +.ihuoshanvod.com
-- +.ixigua.com
-- +.ixiguavideo.com
-- +.kolbuyer.cn
-- +.lifexue.com
-- +.nextvid.net
-- +.open-douyin.com
-- +.ppkankan01.com
-- +.pstatp.com
-- +.qishui.cn
-- +.qishui.com
-- +.qishui.com.cn
-- +.qishuimusic.cn
-- +.qishuimusic.com.cn
-- +.snssdk.com
-- +.supercachenet.com
-- +.supercachenode.com
-- +.toutiao.com
-- +.ulpay.com
-- +.ultracachenode.com
-- +.woaihuoshan.com
-- +.wohst8.com
+  - DOMAIN,lf3-static.bytednsdoc.com
+  - DOMAIN,v5-dy-o-abtest.zjcdn.com
+  - DOMAIN_SUFFIX,amemv.com
+  - DOMAIN_SUFFIX,douyincdn.com
+  - DOMAIN_SUFFIX,douyinpic.com
+  - DOMAIN_SUFFIX,douyinstatic.com
+  - DOMAIN_SUFFIX,douyinvod.com
+  - DOMAIN_SUFFIX,idouyinvod.com
+  - DOMAIN_SUFFIX,ixigua.com
+  - DOMAIN_SUFFIX,ixiguavideo.com
+  - DOMAIN_SUFFIX,pstatp.com
+  - DOMAIN_SUFFIX,snssdk.com
+  - DOMAIN_SUFFIX,toutiao.com
+  - DOMAIN_SUFFIX,amemv.com
+  - DOMAIN_SUFFIX,ixigua.com
+  - DOMAIN_SUFFIX,ixiguavideo.com
+  - DOMAIN_SUFFIX,pstatp.com
+  - DOMAIN_SUFFIX,snssdk.com
+  - DOMAIN_SUFFIX,toutiao.com
+  - DOMAIN_SUFFIX,activity-wbsj.com
+  - DOMAIN_SUFFIX,aihst8.com
+  - DOMAIN_SUFFIX,amemv.cn
+  - DOMAIN_SUFFIX,amemv.com
+  - DOMAIN_SUFFIX,amemv.net
+  - DOMAIN_SUFFIX,awemeughun.com
+  - DOMAIN_SUFFIX,awemeuglang.com
+  - DOMAIN_SUFFIX,awemeugsoul.com
+  - DOMAIN_SUFFIX,awemeugwave.com
+  - DOMAIN_SUFFIX,betastar.cn
+  - DOMAIN_SUFFIX,boxdouyin.com
+  - DOMAIN_SUFFIX,cookicut.com
+  - DOMAIN_SUFFIX,douyin.com
+  - DOMAIN_SUFFIX,douyinact.com
+  - DOMAIN_SUFFIX,douyinact.net
+  - DOMAIN_SUFFIX,douyincdn.com
+  - DOMAIN_SUFFIX,douyinfe.com
+  - DOMAIN_SUFFIX,douyinliving.com
+  - DOMAIN_SUFFIX,douyinmusicpromotion.com
+  - DOMAIN_SUFFIX,douyinpic.com
+  - DOMAIN_SUFFIX,douyinstatic.com
+  - DOMAIN_SUFFIX,douyinvod.com
+  - DOMAIN_SUFFIX,duoshan.com
+  - DOMAIN_SUFFIX,huoshan.com
+  - DOMAIN_SUFFIX,huoshancdn.com
+  - DOMAIN_SUFFIX,huoshangroup.com
+  - DOMAIN_SUFFIX,huoshanimg.com
+  - DOMAIN_SUFFIX,huoshanlive.com
+  - DOMAIN_SUFFIX,huoshanparty.com
+  - DOMAIN_SUFFIX,huoshanstatic.com
+  - DOMAIN_SUFFIX,huoshante8.com
+  - DOMAIN_SUFFIX,huoshanvideo.cn
+  - DOMAIN_SUFFIX,huoshanvideo.net
+  - DOMAIN_SUFFIX,huoshanvod.com
+  - DOMAIN_SUFFIX,huoshanxiaoshipin.cn
+  - DOMAIN_SUFFIX,huoshanxiaoshipin.net
+  - DOMAIN_SUFFIX,huoshanzhibo.cn
+  - DOMAIN_SUFFIX,huoshanzhibo.com
+  - DOMAIN_SUFFIX,huoshanzhibo.net
+  - DOMAIN_SUFFIX,hypercachenode.com
+  - DOMAIN_SUFFIX,idouyinliving.com
+  - DOMAIN_SUFFIX,idouyinpic.com
+  - DOMAIN_SUFFIX,idouyinstatic.com
+  - DOMAIN_SUFFIX,idouyinvod.com
+  - DOMAIN_SUFFIX,iesdouyin.com
+  - DOMAIN_SUFFIX,iesdouyin.net
+  - DOMAIN_SUFFIX,ieshuodong.cn
+  - DOMAIN_SUFFIX,ieshuodong.net
+  - DOMAIN_SUFFIX,ihst8.com
+  - DOMAIN_SUFFIX,ihuoshanimg.com
+  - DOMAIN_SUFFIX,ihuoshanlive.com
+  - DOMAIN_SUFFIX,ihuoshanstatic.com
+  - DOMAIN_SUFFIX,ihuoshanvod.com
+  - DOMAIN_SUFFIX,kolbuyer.cn
+  - DOMAIN_SUFFIX,nextvid.net
+  - DOMAIN_SUFFIX,ppkankan01.com
+  - DOMAIN_SUFFIX,qishui.cn
+  - DOMAIN_SUFFIX,qishui.com
+  - DOMAIN_SUFFIX,qishuimusic.cn
+  - DOMAIN_SUFFIX,supercachenet.com
+  - DOMAIN_SUFFIX,supercachenode.com
+  - DOMAIN_SUFFIX,ultracachenode.com
+  - DOMAIN_SUFFIX,woaihuoshan.com
+  - DOMAIN_SUFFIX,wohst8.com
+  - DOMAIN_SUFFIX,douyinec.com
+  - DOMAIN_SUFFIX,douyinpay.com
+  - DOMAIN_SUFFIX,ulpay.com
+  - DOMAIN_SUFFIX,lifexue.com
+  - DOMAIN_SUFFIX,open-douyin.com
+  - DOMAIN_SUFFIX,qishui.com.cn
+  - DOMAIN_SUFFIX,qishuimusic.com.cn

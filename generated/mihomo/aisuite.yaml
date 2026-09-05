@@ -1,97 +1,97 @@
 payload:
-- ai.google.dev
-- alkalicore-pa.clients6.google.com
-- api.github.com
-- cdn.openaimerge.com
-- cdn.workos.com
-- challenges.cloudflare.com
-- chat.openai.com.cdn.cloudflare.net
-- copilot.microsoft.com
-- forwarder.workos.com
-- gateway.ai.cloudflare.com
-- humb.apple.com
-- images.workoscdn.com
-- js.stripe.com
-- o207216.ingest.sentry.io
-- o33249.ingest.sentry.io
-- openaiapi-site.azureedge.net
-- openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
-- openaicomproductionae4b.blob.core.windows.net
-- production-openaicom-storage.azureedge.net
-- rum.browser-intake-datadoghq.com
-- setup.workos.com
-- waa-pa.clients6.google.com
-- workos.imgix.net
-- +.ai.com
-- +.aisandbox-pa.googleapis.com
-- +.aistudio.google.com
-- +.amp-api.apps.apple.com
-- +.anthropic.com
-- +.apis.google.com
-- +.apple-relay.apple.com
-- +.apple-relay.cloudflare.com
-- +.apple-relay.fastly-edge.com
-- +.apple-relay.mask.apple-dns.net
-- +.augment.com
-- +.augmentcode.com
-- +.bard.google.com
-- +.cerebras.ai
-- +.chatgpt.com
-- +.chorus.sh
-- +.claude.ai
-- +.claude.com
-- +.claudeusercontent.com
-- +.clipdrop.co
-- +.codeium.com
-- +.codeiumdata.com
-- +.cp4.cloudflare.com
-- +.ct.sendgrid.net
-- +.cursor.sh
-- +.deepmind.com
-- +.deepmind.google
-- +.diabrowser.engineering
-- +.dify.ai
-- +.featureassets.org
-- +.featuregates.org
-- +.gateway.icloud.com
-- +.geller-pa.googleapis.com
-- +.gemini.google
-- +.gemini.google.com
-- +.generativeai.google
-- +.generativelanguage.googleapis.com
-- +.githubcopilot.com
-- +.grok.com
-- +.groq.com
-- +.gspe1-ssl.ls.apple.com
-- +.guzzoni.apple.com
-- +.intercom.io
-- +.intercomcdn.com
-- +.jasper.ai
-- +.jetbrains.ai
-- +.makersuite.google.com
-- +.meta.ai
-- +.meta.com
-- +.microsoftonline.com
-- +.notebooklm.google
-- +.notebooklm.google.com
-- +.oaistatic.com
-- +.oaiusercontent.com
-- +.openai.com
-- +.openart.ai
-- +.openrouter.ai
-- +.perplexity.ai
-- +.poe.com
-- +.proactivebackend-pa.googleapis.com
-- +.prodregistryv2.org
-- +.robinfrontend-pa.googleapis.com
-- +.smoot.apple.com
-- +.sora.com
-- +.statsig.com
-- +.statsigapi.net
-- +.trae.ai
-- +.traeapi.us
-- +.updates.cdn-apple.com
-- +.windsurf.com
-- +.x.ai
-- +.zed.dev
-- "DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com"
+  - DOMAIN_SUFFIX,augment.com
+  - DOMAIN_SUFFIX,augmentcode.com
+  - DOMAIN_SUFFIX,ai.com
+  - DOMAIN_SUFFIX,chatgpt.com
+  - DOMAIN_SUFFIX,ct.sendgrid.net
+  - DOMAIN_SUFFIX,featureassets.org
+  - DOMAIN_SUFFIX,featuregates.org
+  - DOMAIN_SUFFIX,intercom.io
+  - DOMAIN_SUFFIX,intercomcdn.com
+  - DOMAIN_SUFFIX,oaistatic.com
+  - DOMAIN_SUFFIX,oaiusercontent.com
+  - DOMAIN_SUFFIX,openai.com
+  - DOMAIN_SUFFIX,prodregistryv2.org
+  - DOMAIN_SUFFIX,statsig.com
+  - DOMAIN_SUFFIX,statsigapi.net
+  - DOMAIN,cdn.openaimerge.com
+  - DOMAIN,cdn.workos.com
+  - DOMAIN,challenges.cloudflare.com
+  - DOMAIN,chat.openai.com.cdn.cloudflare.net
+  - DOMAIN,forwarder.workos.com
+  - DOMAIN,humb.apple.com
+  - DOMAIN,images.workoscdn.com
+  - DOMAIN,js.stripe.com
+  - DOMAIN,o207216.ingest.sentry.io
+  - DOMAIN,o33249.ingest.sentry.io
+  - DOMAIN,openaiapi-site.azureedge.net
+  - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+  - DOMAIN,openaicomproductionae4b.blob.core.windows.net
+  - DOMAIN,production-openaicom-storage.azureedge.net
+  - DOMAIN,rum.browser-intake-datadoghq.com
+  - DOMAIN,setup.workos.com
+  - DOMAIN,workos.imgix.net
+  - DOMAIN_SUFFIX,cerebras.ai
+  - DOMAIN_SUFFIX,chorus.sh
+  - DOMAIN_SUFFIX,anthropic.com
+  - DOMAIN_SUFFIX,claude.ai
+  - DOMAIN_SUFFIX,claude.com
+  - DOMAIN_SUFFIX,claudeusercontent.com
+  - DOMAIN,gateway.ai.cloudflare.com
+  - DOMAIN_SUFFIX,githubcopilot.com
+  - DOMAIN_SUFFIX,microsoftonline.com
+  - DOMAIN,copilot.microsoft.com
+  - DOMAIN_SUFFIX,cursor.sh
+  - DOMAIN_SUFFIX,diabrowser.engineering
+  - DOMAIN_SUFFIX,dify.ai
+  - DOMAIN,api.github.com
+  - DOMAIN_KEYWORD,alkalimakersuite-pa.clients6.google.com
+  - DOMAIN_SUFFIX,aistudio.google.com
+  - DOMAIN_SUFFIX,makersuite.google.com
+  - DOMAIN_SUFFIX,generativeai.google
+  - DOMAIN,ai.google.dev
+  - DOMAIN,alkalicore-pa.clients6.google.com
+  - DOMAIN,waa-pa.clients6.google.com
+  - DOMAIN_SUFFIX,deepmind.com
+  - DOMAIN_SUFFIX,deepmind.google
+  - DOMAIN_SUFFIX,generativelanguage.googleapis.com
+  - DOMAIN_SUFFIX,geller-pa.googleapis.com
+  - DOMAIN_SUFFIX,proactivebackend-pa.googleapis.com
+  - DOMAIN_SUFFIX,aisandbox-pa.googleapis.com
+  - DOMAIN_SUFFIX,apis.google.com
+  - DOMAIN_SUFFIX,bard.google.com
+  - DOMAIN_SUFFIX,gemini.google
+  - DOMAIN_SUFFIX,gemini.google.com
+  - DOMAIN_SUFFIX,robinfrontend-pa.googleapis.com
+  - DOMAIN_SUFFIX,notebooklm.google
+  - DOMAIN_SUFFIX,notebooklm.google.com
+  - DOMAIN_SUFFIX,x.ai
+  - DOMAIN_SUFFIX,grok.com
+  - DOMAIN_SUFFIX,groq.com
+  - DOMAIN_SUFFIX,clipdrop.co
+  - DOMAIN_SUFFIX,jasper.ai
+  - DOMAIN_SUFFIX,jetbrains.ai
+  - DOMAIN_SUFFIX,meta.ai
+  - DOMAIN_SUFFIX,meta.com
+  - DOMAIN_SUFFIX,openart.ai
+  - DOMAIN_SUFFIX,openrouter.ai
+  - DOMAIN_SUFFIX,perplexity.ai
+  - DOMAIN_SUFFIX,poe.com
+  - DOMAIN_SUFFIX,apple-relay.apple.com
+  - DOMAIN_SUFFIX,apple-relay.fastly-edge.com
+  - DOMAIN_SUFFIX,apple-relay.cloudflare.com
+  - DOMAIN_SUFFIX,apple-relay.mask.apple-dns.net
+  - DOMAIN_SUFFIX,guzzoni.apple.com
+  - DOMAIN_SUFFIX,cp4.cloudflare.com
+  - DOMAIN_SUFFIX,gspe1-ssl.ls.apple.com
+  - DOMAIN_SUFFIX,smoot.apple.com
+  - DOMAIN_SUFFIX,amp-api.apps.apple.com
+  - DOMAIN_SUFFIX,gateway.icloud.com
+  - DOMAIN_SUFFIX,updates.cdn-apple.com
+  - DOMAIN_SUFFIX,sora.com
+  - DOMAIN_SUFFIX,trae.ai
+  - DOMAIN_SUFFIX,traeapi.us
+  - DOMAIN_SUFFIX,windsurf.com
+  - DOMAIN_SUFFIX,codeium.com
+  - DOMAIN_SUFFIX,codeiumdata.com
+  - DOMAIN_SUFFIX,zed.dev

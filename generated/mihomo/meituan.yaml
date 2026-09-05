@@ -1,8 +1,8 @@
 payload:
-- +.dianping.com
-- +.maoyan.com
-- +.meituan.com
-- +.meituan.net
-- +.mtyun.com
-- +.neixin.cn
-- +.sankuai.com
+  - DOMAIN_SUFFIX,dianping.com
+  - DOMAIN_SUFFIX,maoyan.com
+  - DOMAIN_SUFFIX,meituan.com
+  - DOMAIN_SUFFIX,meituan.net
+  - DOMAIN_SUFFIX,mtyun.com
+  - DOMAIN_SUFFIX,neixin.cn
+  - DOMAIN_SUFFIX,sankuai.com

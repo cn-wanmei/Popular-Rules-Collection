@@ -1,972 +1,2399 @@
 payload:
-- azuremigrate.download.prss.microsoft.com
-- azuremigratetest.download.prss.microsoft.com
-- azurestackhub.download.prss.microsoft.com
-- azurestackhubuat.download.prss.microsoft.com
-- b.c2r.ts.cdn.office.net
-- cbdstest.download.prss.microsoft.com
-- cn.windowssearch.com
-- collaborate.download.prss.microsoft.com
-- collaborateppe.download.prss.microsoft.com
-- ctldl.windowsupdate.com
-- developer.microsoft.com
-- download.microsoft.com
-- dreamspark.download.prss.microsoft.com
-- dreamsparkuat.download.prss.microsoft.com
-- f.c2r.ts.cdn.office.net
-- github-api.arkoselabs.com
-- github-cloud.s3.amazonaws.com
-- github-production-release-asset-2e65be.s3.amazonaws.com
-- github-production-repository-file-5c1aeb.s3.amazonaws.com
-- github-production-repository-image-32fea6.s3.amazonaws.com
-- github-production-upload-manifest-file-7fdce7.s3.amazonaws.com
-- github-production-user-asset-6210df.s3.amazonaws.com
-- img-prod-cms-rt-microsoft-com.akamaized.net
-- img-s-msn-com.akamaized.net
-- itacademy.download.prss.microsoft.com
-- itacademyuat.download.prss.microsoft.com
-- lex.download.prss.microsoft.com
-- lexuat.download.prss.microsoft.com
-- mbs.download.prss.microsoft.com
-- mpnbenefits.download.prss.microsoft.com
-- mpnbenefitsrtl.download.prss.microsoft.com
-- mpnbenefitsrtluat.download.prss.microsoft.com
-- msdn.download.prss.microsoft.com
-- msdprod-ad.download.prss.microsoft.com
-- msproduct.download.prss.microsoft.com
-- mwf-service.akamaized.net
-- myvs.download.prss.microsoft.com
-- oemsoc.download.prss.microsoft.com
-- oemsocuat.download.prss.microsoft.com
-- officecdn-microsoft-com.akamaized.net
-- officecdn.microsoft.com
-- officemkt.download.prss.microsoft.com
-- officemktuat.download.prss.microsoft.com
-- osrelease.download.prss.microsoft.com
-- productionresultssa0.blob.core.windows.net
-- productionresultssa1.blob.core.windows.net
-- productionresultssa10.blob.core.windows.net
-- productionresultssa11.blob.core.windows.net
-- productionresultssa12.blob.core.windows.net
-- productionresultssa13.blob.core.windows.net
-- productionresultssa14.blob.core.windows.net
-- productionresultssa15.blob.core.windows.net
-- productionresultssa16.blob.core.windows.net
-- productionresultssa17.blob.core.windows.net
-- productionresultssa18.blob.core.windows.net
-- productionresultssa19.blob.core.windows.net
-- productionresultssa2.blob.core.windows.net
-- productionresultssa3.blob.core.windows.net
-- productionresultssa4.blob.core.windows.net
-- productionresultssa5.blob.core.windows.net
-- productionresultssa6.blob.core.windows.net
-- productionresultssa7.blob.core.windows.net
-- productionresultssa8.blob.core.windows.net
-- productionresultssa9.blob.core.windows.net
-- rsm.download.prss.microsoft.com
-- sdx.microsoft.com
-- shell.cdn.office.net
-- software.download.prss.microsoft.com
-- statics-marketingsites-eas-ms-com.akamaized.net
-- statics-marketingsites-eus-ms-com.akamaized.net
-- statics-marketingsites-wcus-ms-com.akamaized.net
-- statics.teams.cdn.office.net
-- storecorefulfillment.download.prss.microsoft.com
-- storeedge.microsoft.com
-- storeedgefd.dsx.mp.microsoft.com
-- surface.download.prss.microsoft.com
-- surface.downloads.prss.microsoft.com
-- vlportal.download.prss.microsoft.com
-- volic.download.prss.microsoft.com
-- vscode.download.prss.microsoft.com
-- vsmarketplacebadge.apphb.com
-- vz.download.prss.microsoft.com
-- windbg.download.prss.microsoft.com
-- +.1drv.com
-- +.1drv.ms
-- +.21vbc.com
-- +.21vbluecloud.com
-- +.21vbluecloud.net
-- +.Applicationinsights.io
-- +.Applicationinsights.net
-- +.a-msedge.net
-- +.a1158.g.akamai.net
-- +.a122.dscg3.akamai.net
-- +.a767.dscg3.akamai.net
-- +.aadrm.cn
-- +.aadrm.com
-- +.acompli.com
-- +.acompli.net
-- +.adaptivecards.io
-- +.aggresmart.com
-- +.aicscience.com
-- +.aka.ms
-- +.akadns.net
-- +.ankarazirvesi2018.com
-- +.api-extractor.com
-- +.apihub-internal.cn
-- +.apisof.net
-- +.appcenter.ms
-- +.appserviceenvironment.cn
-- +.aria.ms
-- +.asobostudio.com
-- +.asp.net
-- +.aspnetcdn.com
-- +.assets-yammer.com
-- +.atom.io
-- +.az764295.vo.msecnd.net
-- +.azchcdna.com
-- +.azchcdnb.com
-- +.azchcdnc.com
-- +.azchcdnd.com
-- +.azchcdne.com
-- +.azchcdnf.com
-- +.azchcdng.com
-- +.azchcdnh.com
-- +.azchcdni.com
-- +.azchcdnj.com
-- +.azchcdnk.com
-- +.azchcdnl.com
-- +.azchcdnm.com
-- +.azchcdnn.com
-- +.azchcdno.com
-- +.azchcdnp.com
-- +.azchcdnq.com
-- +.azchcdnr.com
-- +.azchcdns.com
-- +.azcrmc-test.cn
-- +.azcrmc.cn
-- +.azk8s.cn
-- +.aznbcontent.cn
-- +.aztask.cn
-- +.azure
-- +.azure-api.cn
-- +.azure-api.net
-- +.azure-apihub.cn
-- +.azure-apim.net
-- +.azure-automation.cn
-- +.azure-connectedvehicles-stage.cn
-- +.azure-connectedvehicles.cn
-- +.azure-devices-int.net
-- +.azure-devices-provisioning.cn
-- +.azure-devices.cn
-- +.azure-devices.net
-- +.azure-dns-1.cn
-- +.azure-dns-10.cn
-- +.azure-dns-2.cn
-- +.azure-dns-3.cn
-- +.azure-dns-4.cn
-- +.azure-dns-5.cn
-- +.azure-dns-6.cn
-- +.azure-dns-7.cn
-- +.azure-dns-8.cn
-- +.azure-dns-9.cn
-- +.azure-dns.cn
-- +.azure-dns.com
-- +.azure-dns.info
-- +.azure-dns.net
-- +.azure-dns.org
-- +.azure-mobile.cn
-- +.azure-mobile.net
-- +.azure-sphere.com
-- +.azure-test.net
-- +.azure.cn
-- +.azure.com
-- +.azure.microsoft.com
-- +.azure.net
-- +.azurecomcdn.net
-- +.azurecomm.net
-- +.azurecontainer.io
-- +.azurecosmos.net
-- +.azurecosmosdb.com
-- +.azurecosmosdb.info
-- +.azurecosmosdb.net
-- +.azurecr-test.cn
-- +.azurecr.cn
-- +.azuredatabricks.net
-- +.azuredevopslaunch.com
-- +.azuredigitaltwin.com
-- +.azuredigitaltwins.com
-- +.azuredigitaltwins.net
-- +.azuredns-prd.info
-- +.azuredns-prd.org
-- +.azureedge-test.net
-- +.azureedge.net
-- +.azureedge.us
-- +.azurefd.net
-- +.azurefd.us
-- +.azurehdinsight.cn
-- +.azureiotcentral.com
-- +.azureiotsolutions.com
-- +.azureiotsuite.cn
-- +.azureiotsuite.com
-- +.azuremarketplace.microsoft.com
-- +.azuremigrate.download.prss.microsoft.com
-- +.azuremigratetest.download.prss.microsoft.com
-- +.azuremresolver.cn
-- +.azureplanetscale.info
-- +.azureplanetscale.net
-- +.azureprivatedns.cn
-- +.azurerms.cn
-- +.azurerms.com
-- +.azuresandbox.cn
-- +.azureserviceprofiler.com
-- +.azuresmartspaces.net
-- +.azurestackhub.download.prss.microsoft.com
-- +.azurestackhubuat.download.prss.microsoft.com
-- +.azurestackvalidation.com
-- +.azurestaticapps.net
-- +.azurewebsites.net
-- +.b.akamaiedge.net
-- +.b.c2r.ts.cdn.office.net
-- +.b2clogin.cn
-- +.b3itech.cn
-- +.bbing.com
-- +.beth.games
-- +.bethesda.net
-- +.bethesdagamestudios.com
-- +.bethsoft.com
-- +.bibg.com
-- +.biing.com
-- +.binads.com
-- +.binb.com
-- +.binf.com
-- +.bing
-- +.bing.com
-- +.bing.com.cn
-- +.bing.net
-- +.bing123.com
-- +.bing135.com
-- +.bing4.com
-- +.bingads.com
-- +.bingagencyawards.com
-- +.bingapis.com
-- +.bingapistatistics.com
-- +.binginternal.com
-- +.bingit.net
-- +.bingiton.com
-- +.bingj.com
-- +.bingparachute.com
-- +.bingpix.com
-- +.bingpk.com
-- +.bings.com
-- +.bingsandbox.com
-- +.bingsettingssearch.trafficmanager.net
-- +.bingtoolbar.com
-- +.bingtranslator.com
-- +.bingvisualsearch.com
-- +.bingworld.com
-- +.biying.cn
-- +.biying.com
-- +.biying.com.cn
-- +.bj1.api.bing.com
-- +.blazor.net
-- +.blueaggrestore.com
-- +.bluecloudprod.com
-- +.bluehatil.com
-- +.bluehatnights.com
-- +.boswp.com
-- +.botframework.com
-- +.brazilpartneruniversity.com
-- +.breakdown.me
-- +.browser.events.data.msn.cn
-- +.browser.events.data.msn.com
-- +.c-msedge.net
-- +.callersbane.com
-- +.cbdstest.download.prss.microsoft.com
-- +.cegid-cloud.cn
-- +.centralvalidation.com
-- +.ch9.ms
-- +.charticulator.com
-- +.chinacloud-mobile.cn
-- +.chinacloudapi.cn
-- +.chinacloudapp.cn
-- +.chinacloudsites.cn
-- +.clarity.ms
-- +.cloudapp.net
-- +.cloudappsecurity.com
-- +.cn.bing.com
-- +.cn.bing.net
-- +.cn.mm.bing.net
-- +.cn.windowssearch.com
-- +.codethemicrobit.com
-- +.collaborate.download.prss.microsoft.com
-- +.collaborateppe.download.prss.microsoft.com
-- +.collector.github.com
-- +.copilot-proxy.githubusercontent.com
-- +.copilot-stg.com
-- +.copilot-telemetry-service.githubusercontent.com
-- +.copilot-telemetry.githubusercontent.com
-- +.copilot-workspace.githubnext.com
-- +.copilot.com
-- +.copilotprodattachments.blob.core.windows.net
-- +.cortana.ai
-- +.cortanaanalytics.com
-- +.cortanaskills.com
-- +.cosmosdb.info
-- +.cosmosdb.net
-- +.crl.microsoft.com
-- +.crmdynint-gcc.com
-- +.crmdynint.com
-- +.crossborderexpansion.com
-- +.cs11.wpc.v0cdn.net
-- +.cs9.wac.phicdn.net
-- +.ctldl.windowsupdate.com
-- +.dcg.microsoft.com
-- +.default.exp-tas.com
-- +.dependabot.com
-- +.developer.microsoft.com
-- +.devopsassessment.net
-- +.devopsms.com
-- +.dictate.ms
-- +.discoverbing.com
-- +.ditu.live.com
-- +.dl.delivery.mp.microsoft.com
-- +.docs.com
-- +.doom.com
-- +.dot.net
-- +.download.microsoft.com
-- +.download.visualstudio.microsoft.com
-- +.download.windowsupdate.com
-- +.dreamspark.download.prss.microsoft.com
-- +.dreamsparkuat.download.prss.microsoft.com
-- +.dtlgalleryint.cloudapp.net
-- +.dwh5.com
-- +.dynamics.cn
-- +.dynamics.com
-- +.e-msedge.net
-- +.edgesuite.net
-- +.efproject.net
-- +.elderscrolls.com
-- +.emoi-cncdn.bing.com
-- +.engkoo.com
-- +.evoke-windowsservices-tas.msedge
-- +.exp-tas.com
-- +.explorebing.com
-- +.f.c2r.ts.cdn.office.net
-- +.fabric.io
-- +.fasttrackreadysupport.com
-- +.femalefounderscomp.com
-- +.flightsimulator.azureedge.net
-- +.flightsimulator.com
-- +.flipwithsurface.com
-- +.fluidpreview.com
-- +.footprintdns.com
-- +.forza.net
-- +.forzamotorsport.net
-- +.forzaracingchampionship.com
-- +.forzarc.com
-- +.g.akamaiedge.net
-- +.gamepass.com
-- +.gamesstack.com
-- +.gameuxmasterguide.com
-- +.gears5.com
-- +.gearspop.com
-- +.gearstactics.com
-- +.getmicrosoftkey.com
-- +.gfx.ms
-- +.gh.io
-- +.ghcr.io
-- +.ghe.com
-- +.gigjam.com
-- +.git.io
-- +.github-api.arkoselabs.com
-- +.github-cloud.s3.amazonaws.com
-- +.github-production-release-asset-2e65be.s3.amazonaws.com
-- +.github-production-repository-file-5c1aeb.s3.amazonaws.com
-- +.github-production-repository-image-32fea6.s3.amazonaws.com
-- +.github-production-upload-manifest-file-7fdce7.s3.amazonaws.com
-- +.github-production-user-asset-6210df.s3.amazonaws.com
-- +.github.ai
-- +.github.blog
-- +.github.career
-- +.github.com
-- +.github.community
-- +.github.dev
-- +.github.io
-- +.githubapp.com
-- +.githubassets.com
-- +.githubcopilot.com
-- +.githubhackathon.com
-- +.githubnext.com
-- +.githubpreview.dev
-- +.githubstatus.com
-- +.githubsupport.com
-- +.githubuniverse.com
-- +.githubusercontent.com
-- +.gotcosmos.com
-- +.graphengine.io
-- +.groupme.com
-- +.hdinsightservices.cn
-- +.helpshift.com
-- +.here.com
-- +.here.net
-- +.heremaps.cn
-- +.hockeyapp.net
-- +.hololens.com
-- +.hotmail
-- +.hotmail.co
-- +.hotmail.com
-- +.hotmail.eu
-- +.hotmail.net
-- +.hotmail.org
-- +.hummingbird.ms
-- +.ie10.com
-- +.ie11.com
-- +.ie8.co
-- +.ie9.com
-- +.imaginecup.pl
-- +.img-prod-cms-rt-microsoft-com
-- +.img-prod-cms-rt-microsoft-com.akamaized.net
-- +.img-s-msn-com.akamaized.net
-- +.ingads.com
-- +.insiderdevtour.com
-- +.internetexplorer.co
-- +.internetexplorer.com
-- +.intunewiki.com
-- +.iotinactionevents.com
-- +.itacademy.download.prss.microsoft.com
-- +.itacademyuat.download.prss.microsoft.com
-- +.joinms.com
-- +.joinms.com.cn
-- +.joinmva.com
-- +.jwt.ms
-- +.kidgrid.tv
-- +.kumo.com
-- +.l-msedge.net
-- +.latampartneruniversity.com
-- +.lex.download.prss.microsoft.com
-- +.lexuat.download.prss.microsoft.com
-- +.live.cn
-- +.live.com
-- +.live.com.akadns.net
-- +.live.com.au
-- +.live.eu
-- +.live.net
-- +.livefilestore.com
-- +.livetileedge.dsx.mp.microsoft.com.edgekey.net
-- +.livingyourambition.com
-- +.localytics.com
-- +.location.microsoft.com
-- +.lync.cn
-- +.lync.com
-- +.m12.vc
-- +.makecode.org
-- +.managedmeetingrooms.com
-- +.management-azure-devices-int.net
-- +.management-azure-devices-provisioning.cn
-- +.management-azure-devices.cn
-- +.management-azure-devices.net
-- +.mapblast.com
-- +.mappoint.com
-- +.masalladeloslimites.com
-- +.mbs.download.prss.microsoft.com
-- +.mcchcdn.com
-- +.meetfasttrack.com
-- +.meetyourdevices.com
-- +.mepn.com
-- +.mesh.com
-- +.mgmt-azure-api.cn
-- +.microbit.org
-- +.microsoft
-- +.microsoft-falcon.io
-- +.microsoft-give.com
-- +.microsoft-int.com
-- +.microsoft-online.cn
-- +.microsoft-online.com.cn
-- +.microsoft-ppe.com
-- +.microsoft-sap-events.com
-- +.microsoft-sbs-domains.com
-- +.microsoft-smb.cn
-- +.microsoft-tst.com
-- +.microsoft.az
-- +.microsoft.be
-- +.microsoft.by
-- +.microsoft.ca
-- +.microsoft.cat
-- +.microsoft.ch
-- +.microsoft.cl
-- +.microsoft.com
-- +.microsoft.com.akadns.net
-- +.microsoft.com.nsatc.net
-- +.microsoft.cz
-- +.microsoft.de
-- +.microsoft.dk
-- +.microsoft.ee
-- +.microsoft.es
-- +.microsoft.eu
-- +.microsoft.fi
-- +.microsoft.ge
-- +.microsoft.hu
-- +.microsoft.io
-- +.microsoft.is
-- +.microsoft.it
-- +.microsoft.jp
-- +.microsoft.lt
-- +.microsoft.lu
-- +.microsoft.lv
-- +.microsoft.md
-- +.microsoft.net
-- +.microsoft.pl
-- +.microsoft.pt
-- +.microsoft.red
-- +.microsoft.ro
-- +.microsoft.rs
-- +.microsoft.ru
-- +.microsoft.se
-- +.microsoft.si
-- +.microsoft.tv
-- +.microsoft.ua
-- +.microsoft.uz
-- +.microsoft.vn
-- +.microsoft365.com
-- +.microsoftaccountguard.com
-- +.microsoftadc.com
-- +.microsoftads.com
-- +.microsoftadvertising.com
-- +.microsoftadvertisingregionalawards.com
-- +.microsoftaffiliates.com
-- +.microsoftapp.net
-- +.microsoftapps.azurewebsites.net
-- +.microsoftazuread-sso.com
-- +.microsoftazuresponsorships.com
-- +.microsoftazurestatus.cn
-- +.microsoftcloud.com
-- +.microsoftcloudsummit.com
-- +.microsoftcloudworkshop.com
-- +.microsoftcommunitytraining.com
-- +.microsoftdiplomados.com
-- +.microsofteca.com
-- +.microsoftedge.com
-- +.microsoftedgeinsider.com
-- +.microsoftemail.com
-- +.microsoftestore.com.hk
-- +.microsoftgamestack.com
-- +.microsofthouse.com
-- +.microsofthouse.net
-- +.microsoftinternetsafety.net
-- +.microsoftiotcentral.com
-- +.microsoftiotinsiderlabs.com
-- +.microsoftlatamaitour.com
-- +.microsoftlatamholiday.com
-- +.microsoftlinc.com
-- +.microsoftmetrics.cn
-- +.microsoftmxfilantropia.com
-- +.microsoftnews.cc
-- +.microsoftnews.cn
-- +.microsoftnews.com
-- +.microsoftnews.net
-- +.microsoftnews.org
-- +.microsoftnewsforkids.com
-- +.microsoftnewsforkids.net
-- +.microsoftnewsforkids.org
-- +.microsoftnewskids.com
-- +.microsoftnewskids.net
-- +.microsoftnewskids.org
-- +.microsoftol.com
-- +.microsoftol.com.cn
-- +.microsoftonline-i.cn
-- +.microsoftonline-m-i.cn
-- +.microsoftonline-m.cn
-- +.microsoftonline-p-i.cn
-- +.microsoftonline-p-i.net.cn
-- +.microsoftonline-p.cn
-- +.microsoftonline-p.com
-- +.microsoftonline-p.net
-- +.microsoftonline-p.net.cn
-- +.microsoftonline.cn
-- +.microsoftonline.com
-- +.microsoftpartnercommunity.com
-- +.microsoftpartnersolutions.com
-- +.microsoftpersonalcontent.com
-- +.microsoftreactor.cn
-- +.microsoftreactor.com.cn
-- +.microsoftreactor.info
-- +.microsoftreactor.net
-- +.microsoftreactor.org
-- +.microsoftready.com
-- +.microsoftsilverlight.com
-- +.microsoftsilverlight.net
-- +.microsoftsilverlight.org
-- +.microsoftsiteselection.com
-- +.microsoftsqlserver.com
-- +.microsoftstart.com
-- +.microsoftstore.com
-- +.microsoftstore.com.cn
-- +.microsoftstore.com.hk
-- +.microsoftstream.com
-- +.microsoftteams.com
-- +.microsofttradein.com
-- +.microsofttranslator-int.cn
-- +.microsofttranslator.com
-- +.microsoftusercontent.com
-- +.microsoftuwp.com
-- +.minecraft-services.net
-- +.minecraft.net
-- +.minecraftservices.com
-- +.minecraftshop.com
-- +.mmais.com.cn
-- +.mmdnn.com
-- +.mncmsidlab1.cn
-- +.mojang.com
-- +.momentumms.com
-- +.mono-project.com
-- +.morphcharts.com
-- +.mpnbenefits.download.prss.microsoft.com
-- +.mpnbenefitsrtl.download.prss.microsoft.com
-- +.mpnbenefitsrtluat.download.prss.microsoft.com
-- +.mpnevolution.com
-- +.ms-studiosmedia.com
-- +.ms365surfaceoffer.com
-- +.msa.akadns6.net
-- +.msads.net
-- +.msappproxy.cn
-- +.msappproxy.net
-- +.msauth.cn
-- +.msauth.net
-- +.msauthimages.cn
-- +.msauthimages.net
-- +.mschallenge2018.com
-- +.mschcdn.com
-- +.mscrl.microsoft.com
-- +.msdn.com
-- +.msdn.download.prss.microsoft.com
-- +.msdprod-ad.download.prss.microsoft.com
-- +.msecnd.net
-- +.msedge.net
-- +.msft.info
-- +.msft.net
-- +.msftauth.cn
-- +.msftauth.net
-- +.msftauthimages.cn
-- +.msftauthimages.net
-- +.msftcenterone.cn
-- +.msftcloudes.cn
-- +.msftconnecttest.com
-- +.msfteducation.ca
-- +.msftidentity.com
-- +.msftncsi.com
-- +.msftnet.org
-- +.msgamesresearch.com
-- +.msgamestudios.com
-- +.mshome.net
-- +.msidentity.cn
-- +.msidentity.com
-- +.msidlabpbmc.cn
-- +.msignitechina.com
-- +.msinnovationchallenge.com
-- +.msminico.cn
-- +.msminico.com.cn
-- +.msn.cn
-- +.msn.com
-- +.msn.com.cn
-- +.msn.com.nsatc.net
-- +.msn.com.tw
-- +.msn.net
-- +.msnewskids.com
-- +.msnewskids.net
-- +.msnewskids.org
-- +.msnkids.com
-- +.msnmaps.com
-- +.msocdn.com
-- +.msocsp.com
-- +.msopentech.cn
-- +.mspairlift.com
-- +.mspil.cn
-- +.msproduct.download.prss.microsoft.com
-- +.msra.cn
-- +.msropendata.com
-- +.mstea.ms
-- +.msturing.org
-- +.msudalosti.com
-- +.msunlimitedcloudsummit.com
-- +.msvevent.com
-- +.msxiaobing.com
-- +.msxiaoice.com
-- +.msxiaona.cn
-- +.mwf-service.akamaized.net
-- +.myhomemsn.com
-- +.mymicrosoft.com
-- +.myoctocat.com
-- +.myvs.download.prss.microsoft.com
-- +.nelreports.net
-- +.nextechafrica.net
-- +.npm.community
-- +.npmjs.com
-- +.npmjs.org
-- +.nuget.org
-- +.nugettest.org
-- +.nxta.org
-- +.o365cn.com
-- +.o365files.cn
-- +.o365weve-dev.com
-- +.o365weve-ppe.com
-- +.o365weve.com
-- +.oaspapps.com
-- +.oaspapps.com.akadns.net
-- +.ocsp.microsoft.com
-- +.octocaptcha.com
-- +.oemsoc.download.prss.microsoft.com
-- +.oemsocuat.download.prss.microsoft.com
-- +.office
-- +.office.com
-- +.office.net
-- +.office365-net.cn
-- +.office365.cn
-- +.office365.com
-- +.office365love.com
-- +.office365tw.com
-- +.officecdn-microsoft-com.akamaized.net
-- +.officecdn.microsoft.com
-- +.officedev.cn
-- +.officemkt.download.prss.microsoft.com
-- +.officemktuat.download.prss.microsoft.com
-- +.officeplus.cn
-- +.officeppe.net
-- +.officewebapps.cn
-- +.omniroot.com
-- +.onecollector.cloudapp.aria
-- +.onecollector.cloudapp.aria.akadns.net
-- +.onedrive
-- +.onedrive.co
-- +.onedrive.co.uk
-- +.onedrive.com
-- +.onedrive.eu
-- +.onedrive.live.com
-- +.onedrive.net
-- +.onedrive.org
-- +.onedriveupdater
-- +.onenote.com
-- +.onenote.net
-- +.oneocsp.microsoft.com
-- +.onestore.ms
-- +.onmicrosoft.com
-- +.onmschina.cn
-- +.opensource.guide
-- +.opentranslatorstothings.org
-- +.opticsforthecloud.net
-- +.optimizely.com
-- +.orithegame.com
-- +.osdinfra.net
-- +.osrelease.download.prss.microsoft.com
-- +.outingsapp.com
-- +.outlook.cn
-- +.outlook.com
-- +.outlookgroups.ms
-- +.outlookmobile.com
-- +.ovi.com.cn
-- +.packages.microsoft.com
-- +.passport.net
-- +.pbiwebcontent.cn
-- +.phonefactor.net
-- +.pixapp.net
-- +.playfab.com
-- +.playfabapi.cn
-- +.playfabapi.com
-- +.playfabcn.com
-- +.poshtestgallery.cloudapp.net
-- +.poshtestgallery.com
-- +.powerapps.cn
-- +.powerappscdn.net
-- +.powerappsportals.cn
-- +.powerautomate.cn
-- +.powerautomate.com
-- +.powerbi.cn
-- +.powerbi.com
-- +.powershellgallery.com
-- +.prod-video-cms-rt-microsoft-com.akamaized.net
-- +.prodforza.blob.core.windows.net
-- +.productionresultssa0.blob.core.windows.net
-- +.productionresultssa1.blob.core.windows.net
-- +.productionresultssa10.blob.core.windows.net
-- +.productionresultssa11.blob.core.windows.net
-- +.productionresultssa12.blob.core.windows.net
-- +.productionresultssa13.blob.core.windows.net
-- +.productionresultssa14.blob.core.windows.net
-- +.productionresultssa15.blob.core.windows.net
-- +.productionresultssa16.blob.core.windows.net
-- +.productionresultssa17.blob.core.windows.net
-- +.productionresultssa18.blob.core.windows.net
-- +.productionresultssa19.blob.core.windows.net
-- +.productionresultssa2.blob.core.windows.net
-- +.productionresultssa3.blob.core.windows.net
-- +.productionresultssa4.blob.core.windows.net
-- +.productionresultssa5.blob.core.windows.net
-- +.productionresultssa6.blob.core.windows.net
-- +.productionresultssa7.blob.core.windows.net
-- +.productionresultssa8.blob.core.windows.net
-- +.productionresultssa9.blob.core.windows.net
-- +.projectmurphy.net
-- +.projectsangam.com
-- +.psg-int-centralus.cloudapp.net
-- +.psg-int-eastus.cloudapp.net
-- +.public-trust.com
-- +.pwabuilder.com
-- +.pxt.io
-- +.r.bing.com
-- +.reactorms.com.cn
-- +.renlifang.com
-- +.renovacionoffice.com
-- +.renovacionxboxlive.com
-- +.repo.new
-- +.rink.hockeyapp.net
-- +.rsm.download.prss.microsoft.com
-- +.s-dc-msedge.net
-- +.s-microsoft.com
-- +.s-msedge.net
-- +.s-msft.com
-- +.s-msn.com
-- +.sankie.net
-- +.sclive.net
-- +.sdx.microsoft.com
-- +.serverlesslibrary.net
-- +.sfbassets.com
-- +.sfbassets.net
-- +.sfx.ms
-- +.sharepoint.cn
-- +.sharepoint.com
-- +.sharepointonline.com
-- +.shell.cdn.office.net
-- +.signalr.net
-- +.skype
-- +.skype-edf.akadns.net
-- +.skype.com
-- +.skype.net
-- +.skypeassets.com
-- +.skypeassets.net
-- +.skypedata.akadns.net
-- +.skypeforbusiness.com
-- +.software.download.prss.microsoft.com
-- +.sovcloud-mx.cn
-- +.sovcloud-static.cn
-- +.sovcloud-usercontent.cn
-- +.sovcloud.cn
-- +.spo-msedge.net
-- +.spoprod-a.akamaihd.net
-- +.sprinklesapp.com
-- +.sqlserveronlinux.com
-- +.staffhub.ms
-- +.start.com
-- +.statics-marketingsites-eas-ms-com.akamaized.net
-- +.statics-marketingsites-eus-ms-com.akamaized.net
-- +.statics-marketingsites-neu-ms-com.akamaized.net
-- +.statics-marketingsites-wcus-ms-com.akamaized.net
-- +.statics.teams.cdn.office.net
-- +.storage.live.com
-- +.storecorefulfillment.download.prss.microsoft.com
-- +.storeedge.microsoft.com
-- +.storeedgefd.dsx.mp.microsoft.com
-- +.successwithteams.com
-- +.surface.com
-- +.surface.download.prss.microsoft.com
-- +.surface.downloads.prss.microsoft.com
-- +.svc.ms
-- +.sway-cdn.com
-- +.sway-extensions.com
-- +.sway.com
-- +.syncshop.cn
-- +.sysinternals.com
-- +.t-msedge.net
-- +.tailwindtraders.com
-- +.techhub.ms
-- +.tellmewhygame.com
-- +.tenor.com
-- +.tfsallin.net
-- +.th.bing.com
-- +.thegithubshop.com
-- +.timelinestoryteller.com
-- +.trafficmanager.cn
-- +.trafficmanager.net
-- +.translatetheweb.com
-- +.trustcenter.cn
-- +.tryfunctions.com
-- +.unity3dcloud.cn
-- +.unlocklimitlesslearning.com
-- +.userpxt.io
-- +.uservoice.com
-- +.uwpcommunitytoolkit.com
-- +.vfsforgit.com
-- +.vfsforgit.org
-- +.videobreakdown.com
-- +.videoindexer.ai
-- +.vip5.afdorigin-prod-am02.afdogw.com
-- +.virtualearth.net
-- +.visualstudio-staging.com
-- +.visualstudio.co
-- +.visualstudio.co.uk
-- +.visualstudio.com
-- +.visualstudio.eu
-- +.visualstudio.net
-- +.vlportal.download.prss.microsoft.com
-- +.volic.download.prss.microsoft.com
-- +.vsallin.net
-- +.vsassets.io
-- +.vscode-cdn.net
-- +.vscode-sync-insiders.trafficmanager.net
-- +.vscode-sync.trafficmanager.net
-- +.vscode-unpkg.net
-- +.vscode-webview.net
-- +.vscode.blob.core.windows.net
-- +.vscode.dev
-- +.vscode.download.prss.microsoft.com
-- +.vscode.search.windows.net
-- +.vscodeedu.app
-- +.vscodeedu.com
-- +.vsmarketplacebadge.apphb.com
-- +.vz.download.prss.microsoft.com
-- +.wbd.ms
-- +.what-fan.net
-- +.windbg.download.prss.microsoft.com
-- +.windows
-- +.windows-int.net
-- +.windows-ppe.net
-- +.windows.com
-- +.windows.com.akadns.net
-- +.windows.net
-- +.windows.nl
-- +.windows8.hk
-- +.windowsazure.cn
-- +.windowsazure.com
-- +.windowsazurestatus.cn
-- +.windowscommunity.net
-- +.windowslive.cn
-- +.windowsmarketplace.com
-- +.windowsphone-int.com
-- +.windowsphone.com
-- +.windowssearch.com
-- +.windowsupdate.com
-- +.winhec.com
-- +.winhec.net
-- +.winmp.cn
-- +.wlxrs.com
-- +.working-bing-int.com
-- +.wunderlist.com
-- +.www.microsoft.com
-- +.xamarin.com
-- +.xbox
-- +.xbox.co
-- +.xbox.com
-- +.xbox.eu
-- +.xbox.org
-- +.xbox360.co
-- +.xbox360.com
-- +.xbox360.eu
-- +.xbox360.org
-- +.xboxab.com
-- +.xboxgamepass.com
-- +.xboxgamestudios.com
-- +.xboxlive.cn
-- +.xboxlive.com
-- +.xboxone.co
-- +.xboxone.com
-- +.xboxone.eu
-- +.xboxplayanywhere.com
-- +.xboxservices.com
-- +.xboxstudios.com
-- +.xbx.lv
-- +.yammer.com
-- +.yammerusercontent.com
-- "DOMAIN-KEYWORD,1drv"
-- "DOMAIN-KEYWORD,microsoft"
-- "DOMAIN-KEYWORD,onedrive"
-- "DOMAIN-KEYWORD,skydrive"
+  - DOMAIN,vsmarketplacebadge.apphb.com
+  - DOMAIN_SUFFIX,1drv.ms
+  - DOMAIN_SUFFIX,21vbc.com
+  - DOMAIN_SUFFIX,21vbluecloud.com
+  - DOMAIN_SUFFIX,21vbluecloud.net
+  - DOMAIN_SUFFIX,a-msedge.net
+  - DOMAIN_SUFFIX,a1158.g.akamai.net
+  - DOMAIN_SUFFIX,a122.dscg3.akamai.net
+  - DOMAIN_SUFFIX,a767.dscg3.akamai.net
+  - DOMAIN_SUFFIX,aadrm.cn
+  - DOMAIN_SUFFIX,aadrm.com
+  - DOMAIN_SUFFIX,acompli.com
+  - DOMAIN_SUFFIX,acompli.net
+  - DOMAIN_SUFFIX,adaptivecards.io
+  - DOMAIN_SUFFIX,aggresmart.com
+  - DOMAIN_SUFFIX,aicscience.com
+  - DOMAIN_SUFFIX,aka.ms
+  - DOMAIN_SUFFIX,akadns.net
+  - DOMAIN_SUFFIX,ankarazirvesi2018.com
+  - DOMAIN_SUFFIX,api-extractor.com
+  - DOMAIN_SUFFIX,apihub-internal.cn
+  - DOMAIN_SUFFIX,apisof.net
+  - DOMAIN_SUFFIX,appcenter.ms
+  - DOMAIN_SUFFIX,applicationinsights.io
+  - DOMAIN_SUFFIX,applicationinsights.net
+  - DOMAIN_SUFFIX,appserviceenvironment.cn
+  - DOMAIN_SUFFIX,aria.ms
+  - DOMAIN_SUFFIX,asp.net
+  - DOMAIN_SUFFIX,aspnetcdn.com
+  - DOMAIN_SUFFIX,assets-yammer.com
+  - DOMAIN_SUFFIX,azcrmc-test.cn
+  - DOMAIN_SUFFIX,azcrmc.cn
+  - DOMAIN_SUFFIX,azk8s.cn
+  - DOMAIN_SUFFIX,aznbcontent.cn
+  - DOMAIN_SUFFIX,aztask.cn
+  - DOMAIN_SUFFIX,azure
+  - DOMAIN_SUFFIX,azure-api.cn
+  - DOMAIN_SUFFIX,azure-apihub.cn
+  - DOMAIN_SUFFIX,azure-apim.net
+  - DOMAIN_SUFFIX,azure-automation.cn
+  - DOMAIN_SUFFIX,azure-connectedvehicles-stage.cn
+  - DOMAIN_SUFFIX,azure-connectedvehicles.cn
+  - DOMAIN_SUFFIX,azure-devices-int.net
+  - DOMAIN_SUFFIX,azure-devices-provisioning.cn
+  - DOMAIN_SUFFIX,azure-devices.cn
+  - DOMAIN_SUFFIX,azure-devices.net
+  - DOMAIN_SUFFIX,azure-dns.cn
+  - DOMAIN_SUFFIX,azure-dns.com
+  - DOMAIN_SUFFIX,azure-dns.info
+  - DOMAIN_SUFFIX,azure-dns.net
+  - DOMAIN_SUFFIX,azure-dns.org
+  - DOMAIN_SUFFIX,azure-mobile.net
+  - DOMAIN_SUFFIX,azure-sphere.com
+  - DOMAIN_SUFFIX,azure-test.net
+  - DOMAIN_SUFFIX,azure.cn
+  - DOMAIN_SUFFIX,azure.com
+  - DOMAIN_SUFFIX,azure.net
+  - DOMAIN_SUFFIX,azurecomcdn.net
+  - DOMAIN_SUFFIX,azurecomm.net
+  - DOMAIN_SUFFIX,azurecontainer.io
+  - DOMAIN_SUFFIX,azurecosmos.net
+  - DOMAIN_SUFFIX,azurecosmosdb.com
+  - DOMAIN_SUFFIX,azurecosmosdb.info
+  - DOMAIN_SUFFIX,azurecosmosdb.net
+  - DOMAIN_SUFFIX,azurecr-test.cn
+  - DOMAIN_SUFFIX,azurecr.cn
+  - DOMAIN_SUFFIX,azuredatabricks.net
+  - DOMAIN_SUFFIX,azuredevopslaunch.com
+  - DOMAIN_SUFFIX,azuredigitaltwin.com
+  - DOMAIN_SUFFIX,azuredigitaltwins.com
+  - DOMAIN_SUFFIX,azuredigitaltwins.net
+  - DOMAIN_SUFFIX,azuredns-prd.info
+  - DOMAIN_SUFFIX,azuredns-prd.org
+  - DOMAIN_SUFFIX,azureedge-test.net
+  - DOMAIN_SUFFIX,azureedge.net
+  - DOMAIN_SUFFIX,azurefd.net
+  - DOMAIN_SUFFIX,azurefd.us
+  - DOMAIN_SUFFIX,azurehdinsight.cn
+  - DOMAIN_SUFFIX,azureiotcentral.com
+  - DOMAIN_SUFFIX,azureiotsolutions.com
+  - DOMAIN_SUFFIX,azureiotsuite.cn
+  - DOMAIN_SUFFIX,azureiotsuite.com
+  - DOMAIN_SUFFIX,azuremresolver.cn
+  - DOMAIN_SUFFIX,azureplanetscale.info
+  - DOMAIN_SUFFIX,azureplanetscale.net
+  - DOMAIN_SUFFIX,azureprivatedns.cn
+  - DOMAIN_SUFFIX,azurerms.cn
+  - DOMAIN_SUFFIX,azurerms.com
+  - DOMAIN_SUFFIX,azuresandbox.cn
+  - DOMAIN_SUFFIX,azureserviceprofiler.com
+  - DOMAIN_SUFFIX,azuresmartspaces.net
+  - DOMAIN_SUFFIX,azurestackvalidation.com
+  - DOMAIN_SUFFIX,azurewebsites.net
+  - DOMAIN_SUFFIX,b.akamaiedge.net
+  - DOMAIN_SUFFIX,b2clogin.cn
+  - DOMAIN_SUFFIX,b3itech.cn
+  - DOMAIN_SUFFIX,bbing.com
+  - DOMAIN_SUFFIX,beth.games
+  - DOMAIN_SUFFIX,bethesda.net
+  - DOMAIN_SUFFIX,bethesdagamestudios.com
+  - DOMAIN_SUFFIX,bethsoft.com
+  - DOMAIN_SUFFIX,bibg.com
+  - DOMAIN_SUFFIX,biing.com
+  - DOMAIN_SUFFIX,binads.com
+  - DOMAIN_SUFFIX,binb.com
+  - DOMAIN_SUFFIX,binf.com
+  - DOMAIN_SUFFIX,bing
+  - DOMAIN_SUFFIX,bing.com
+  - DOMAIN_SUFFIX,bing.com.cn
+  - DOMAIN_SUFFIX,bing.net
+  - DOMAIN_SUFFIX,bing123.com
+  - DOMAIN_SUFFIX,bing135.com
+  - DOMAIN_SUFFIX,bing4.com
+  - DOMAIN_SUFFIX,bingads.com
+  - DOMAIN_SUFFIX,bingagencyawards.com
+  - DOMAIN_SUFFIX,bingapis.com
+  - DOMAIN_SUFFIX,bingapistatistics.com
+  - DOMAIN_SUFFIX,binginternal.com
+  - DOMAIN_SUFFIX,bingit.net
+  - DOMAIN_SUFFIX,bingiton.com
+  - DOMAIN_SUFFIX,bingj.com
+  - DOMAIN_SUFFIX,bingpix.com
+  - DOMAIN_SUFFIX,bingpk.com
+  - DOMAIN_SUFFIX,bings.com
+  - DOMAIN_SUFFIX,bingsandbox.com
+  - DOMAIN_SUFFIX,bingtoolbar.com
+  - DOMAIN_SUFFIX,bingtranslator.com
+  - DOMAIN_SUFFIX,bingvisualsearch.com
+  - DOMAIN_SUFFIX,bingworld.com
+  - DOMAIN_SUFFIX,biying.cn
+  - DOMAIN_SUFFIX,biying.com
+  - DOMAIN_SUFFIX,biying.com.cn
+  - DOMAIN_SUFFIX,blazor.net
+  - DOMAIN_SUFFIX,blueaggrestore.com
+  - DOMAIN_SUFFIX,bluecloudprod.com
+  - DOMAIN_SUFFIX,bluehatil.com
+  - DOMAIN_SUFFIX,bluehatnights.com
+  - DOMAIN_SUFFIX,boswp.com
+  - DOMAIN_SUFFIX,botframework.com
+  - DOMAIN_SUFFIX,brazilpartneruniversity.com
+  - DOMAIN_SUFFIX,breakdown.me
+  - DOMAIN_SUFFIX,c-msedge.net
+  - DOMAIN_SUFFIX,callersbane.com
+  - DOMAIN_SUFFIX,cegid-cloud.cn
+  - DOMAIN_SUFFIX,centralvalidation.com
+  - DOMAIN_SUFFIX,ch9.ms
+  - DOMAIN_SUFFIX,charticulator.com
+  - DOMAIN_SUFFIX,chinacloud-mobile.cn
+  - DOMAIN_SUFFIX,chinacloudapi.cn
+  - DOMAIN_SUFFIX,chinacloudapp.cn
+  - DOMAIN_SUFFIX,chinacloudsites.cn
+  - DOMAIN_SUFFIX,cloudapp.net
+  - DOMAIN_SUFFIX,cloudappsecurity.com
+  - DOMAIN_SUFFIX,codethemicrobit.com
+  - DOMAIN_SUFFIX,cortana.ai
+  - DOMAIN_SUFFIX,cortanaanalytics.com
+  - DOMAIN_SUFFIX,cortanaskills.com
+  - DOMAIN_SUFFIX,cosmosdb.info
+  - DOMAIN_SUFFIX,cosmosdb.net
+  - DOMAIN_SUFFIX,crmdynint-gcc.com
+  - DOMAIN_SUFFIX,crmdynint.com
+  - DOMAIN_SUFFIX,crossborderexpansion.com
+  - DOMAIN_SUFFIX,cs11.wpc.v0cdn.net
+  - DOMAIN_SUFFIX,cs9.wac.phicdn.net
+  - DOMAIN_SUFFIX,devopsassessment.net
+  - DOMAIN_SUFFIX,devopsms.com
+  - DOMAIN_SUFFIX,dictate.ms
+  - DOMAIN_SUFFIX,discoverbing.com
+  - DOMAIN_SUFFIX,docs.com
+  - DOMAIN_SUFFIX,doom.com
+  - DOMAIN_SUFFIX,dot.net
+  - DOMAIN_SUFFIX,dwh5.com
+  - DOMAIN_SUFFIX,dynamics.cn
+  - DOMAIN_SUFFIX,dynamics.com
+  - DOMAIN_SUFFIX,e-msedge.net
+  - DOMAIN_SUFFIX,edgesuite.net
+  - DOMAIN_SUFFIX,efproject.net
+  - DOMAIN_SUFFIX,elderscrolls.com
+  - DOMAIN_SUFFIX,engkoo.com
+  - DOMAIN_SUFFIX,evoke-windowsservices-tas.msedge
+  - DOMAIN_SUFFIX,exp-tas.com
+  - DOMAIN_SUFFIX,explorebing.com
+  - DOMAIN_SUFFIX,fabric.io
+  - DOMAIN_SUFFIX,fasttrackreadysupport.com
+  - DOMAIN_SUFFIX,femalefounderscomp.com
+  - DOMAIN_SUFFIX,flipwithsurface.com
+  - DOMAIN_SUFFIX,fluidpreview.com
+  - DOMAIN_SUFFIX,footprintdns.com
+  - DOMAIN_SUFFIX,forzamotorsport.net
+  - DOMAIN_SUFFIX,forzaracingchampionship.com
+  - DOMAIN_SUFFIX,forzarc.com
+  - DOMAIN_SUFFIX,g.akamaiedge.net
+  - DOMAIN_SUFFIX,gamepass.com
+  - DOMAIN_SUFFIX,gamesstack.com
+  - DOMAIN_SUFFIX,gameuxmasterguide.com
+  - DOMAIN_SUFFIX,gears5.com
+  - DOMAIN_SUFFIX,gearspop.com
+  - DOMAIN_SUFFIX,gearstactics.com
+  - DOMAIN_SUFFIX,getmicrosoftkey.com
+  - DOMAIN_SUFFIX,gfx.ms
+  - DOMAIN_SUFFIX,gigjam.com
+  - DOMAIN_SUFFIX,gotcosmos.com
+  - DOMAIN_SUFFIX,graphengine.io
+  - DOMAIN_SUFFIX,groupme.com
+  - DOMAIN_SUFFIX,hdinsightservices.cn
+  - DOMAIN_SUFFIX,helpshift.com
+  - DOMAIN_SUFFIX,here.com
+  - DOMAIN_SUFFIX,here.net
+  - DOMAIN_SUFFIX,heremaps.cn
+  - DOMAIN_SUFFIX,hockeyapp.net
+  - DOMAIN_SUFFIX,hololens.com
+  - DOMAIN_SUFFIX,hotmail
+  - DOMAIN_SUFFIX,hotmail.co
+  - DOMAIN_SUFFIX,hotmail.com
+  - DOMAIN_SUFFIX,hotmail.eu
+  - DOMAIN_SUFFIX,hotmail.net
+  - DOMAIN_SUFFIX,hotmail.org
+  - DOMAIN_SUFFIX,hummingbird.ms
+  - DOMAIN_SUFFIX,ie10.com
+  - DOMAIN_SUFFIX,ie11.com
+  - DOMAIN_SUFFIX,ie8.co
+  - DOMAIN_SUFFIX,ie9.com
+  - DOMAIN_SUFFIX,imaginecup.pl
+  - DOMAIN_SUFFIX,img-prod-cms-rt-microsoft-com.akamaized.net
+  - DOMAIN_SUFFIX,img-s-msn-com.akamaized.net
+  - DOMAIN_SUFFIX,ingads.com
+  - DOMAIN_SUFFIX,insiderdevtour.com
+  - DOMAIN_SUFFIX,internetexplorer.co
+  - DOMAIN_SUFFIX,internetexplorer.com
+  - DOMAIN_SUFFIX,intunewiki.com
+  - DOMAIN_SUFFIX,iotinactionevents.com
+  - DOMAIN_SUFFIX,joinms.com
+  - DOMAIN_SUFFIX,joinms.com.cn
+  - DOMAIN_SUFFIX,joinmva.com
+  - DOMAIN_SUFFIX,jwt.ms
+  - DOMAIN_SUFFIX,kidgrid.tv
+  - DOMAIN_SUFFIX,kumo.com
+  - DOMAIN_SUFFIX,latampartneruniversity.com
+  - DOMAIN_SUFFIX,live.cn
+  - DOMAIN_SUFFIX,live.com
+  - DOMAIN_SUFFIX,live.com.au
+  - DOMAIN_SUFFIX,live.eu
+  - DOMAIN_SUFFIX,live.net
+  - DOMAIN_SUFFIX,livetileedge.dsx.mp.microsoft.com.edgekey.net
+  - DOMAIN_SUFFIX,livingyourambition.com
+  - DOMAIN_SUFFIX,localytics.com
+  - DOMAIN_SUFFIX,lync.cn
+  - DOMAIN_SUFFIX,lync.com
+  - DOMAIN_SUFFIX,m12.vc
+  - DOMAIN_SUFFIX,makecode.org
+  - DOMAIN_SUFFIX,managedmeetingrooms.com
+  - DOMAIN_SUFFIX,management-azure-devices-int.net
+  - DOMAIN_SUFFIX,management-azure-devices-provisioning.cn
+  - DOMAIN_SUFFIX,management-azure-devices.cn
+  - DOMAIN_SUFFIX,management-azure-devices.net
+  - DOMAIN_SUFFIX,mapblast.com
+  - DOMAIN_SUFFIX,mappoint.com
+  - DOMAIN_SUFFIX,masalladeloslimites.com
+  - DOMAIN_SUFFIX,mcchcdn.com
+  - DOMAIN_SUFFIX,meetfasttrack.com
+  - DOMAIN_SUFFIX,meetyourdevices.com
+  - DOMAIN_SUFFIX,mepn.com
+  - DOMAIN_SUFFIX,mesh.com
+  - DOMAIN_SUFFIX,mgmt-azure-api.cn
+  - DOMAIN_SUFFIX,microbit.org
+  - DOMAIN_SUFFIX,microsoft
+  - DOMAIN_SUFFIX,microsoft-falcon.io
+  - DOMAIN_SUFFIX,microsoft-give.com
+  - DOMAIN_SUFFIX,microsoft-int.com
+  - DOMAIN_SUFFIX,microsoft-online.cn
+  - DOMAIN_SUFFIX,microsoft-online.com.cn
+  - DOMAIN_SUFFIX,microsoft-ppe.com
+  - DOMAIN_SUFFIX,microsoft-sap-events.com
+  - DOMAIN_SUFFIX,microsoft-sbs-domains.com
+  - DOMAIN_SUFFIX,microsoft-smb.cn
+  - DOMAIN_SUFFIX,microsoft-tst.com
+  - DOMAIN_SUFFIX,microsoft.az
+  - DOMAIN_SUFFIX,microsoft.be
+  - DOMAIN_SUFFIX,microsoft.by
+  - DOMAIN_SUFFIX,microsoft.ca
+  - DOMAIN_SUFFIX,microsoft.cat
+  - DOMAIN_SUFFIX,microsoft.ch
+  - DOMAIN_SUFFIX,microsoft.cl
+  - DOMAIN_SUFFIX,microsoft.com
+  - DOMAIN_SUFFIX,microsoft.com.nsatc.net
+  - DOMAIN_SUFFIX,microsoft.cz
+  - DOMAIN_SUFFIX,microsoft.de
+  - DOMAIN_SUFFIX,microsoft.dk
+  - DOMAIN_SUFFIX,microsoft.ee
+  - DOMAIN_SUFFIX,microsoft.es
+  - DOMAIN_SUFFIX,microsoft.eu
+  - DOMAIN_SUFFIX,microsoft.fi
+  - DOMAIN_SUFFIX,microsoft.ge
+  - DOMAIN_SUFFIX,microsoft.hu
+  - DOMAIN_SUFFIX,microsoft.io
+  - DOMAIN_SUFFIX,microsoft.is
+  - DOMAIN_SUFFIX,microsoft.it
+  - DOMAIN_SUFFIX,microsoft.jp
+  - DOMAIN_SUFFIX,microsoft.lt
+  - DOMAIN_SUFFIX,microsoft.lu
+  - DOMAIN_SUFFIX,microsoft.lv
+  - DOMAIN_SUFFIX,microsoft.md
+  - DOMAIN_SUFFIX,microsoft.net
+  - DOMAIN_SUFFIX,microsoft.pl
+  - DOMAIN_SUFFIX,microsoft.pt
+  - DOMAIN_SUFFIX,microsoft.red
+  - DOMAIN_SUFFIX,microsoft.ro
+  - DOMAIN_SUFFIX,microsoft.rs
+  - DOMAIN_SUFFIX,microsoft.ru
+  - DOMAIN_SUFFIX,microsoft.se
+  - DOMAIN_SUFFIX,microsoft.si
+  - DOMAIN_SUFFIX,microsoft.tv
+  - DOMAIN_SUFFIX,microsoft.ua
+  - DOMAIN_SUFFIX,microsoft.uz
+  - DOMAIN_SUFFIX,microsoft.vn
+  - DOMAIN_SUFFIX,microsoft365.com
+  - DOMAIN_SUFFIX,microsoftaccountguard.com
+  - DOMAIN_SUFFIX,microsoftadc.com
+  - DOMAIN_SUFFIX,microsoftads.com
+  - DOMAIN_SUFFIX,microsoftadvertising.com
+  - DOMAIN_SUFFIX,microsoftadvertisingregionalawards.com
+  - DOMAIN_SUFFIX,microsoftaffiliates.com
+  - DOMAIN_SUFFIX,microsoftapp.net
+  - DOMAIN_SUFFIX,microsoftazuread-sso.com
+  - DOMAIN_SUFFIX,microsoftazuresponsorships.com
+  - DOMAIN_SUFFIX,microsoftazurestatus.cn
+  - DOMAIN_SUFFIX,microsoftcloud.com
+  - DOMAIN_SUFFIX,microsoftcloudsummit.com
+  - DOMAIN_SUFFIX,microsoftcloudworkshop.com
+  - DOMAIN_SUFFIX,microsoftcommunitytraining.com
+  - DOMAIN_SUFFIX,microsoftdiplomados.com
+  - DOMAIN_SUFFIX,microsofteca.com
+  - DOMAIN_SUFFIX,microsoftedge.com
+  - DOMAIN_SUFFIX,microsoftedgeinsider.com
+  - DOMAIN_SUFFIX,microsoftemail.com
+  - DOMAIN_SUFFIX,microsoftestore.com.hk
+  - DOMAIN_SUFFIX,microsoftgamestack.com
+  - DOMAIN_SUFFIX,microsofthouse.com
+  - DOMAIN_SUFFIX,microsofthouse.net
+  - DOMAIN_SUFFIX,microsoftinternetsafety.net
+  - DOMAIN_SUFFIX,microsoftiotcentral.com
+  - DOMAIN_SUFFIX,microsoftiotinsiderlabs.com
+  - DOMAIN_SUFFIX,microsoftlatamaitour.com
+  - DOMAIN_SUFFIX,microsoftlatamholiday.com
+  - DOMAIN_SUFFIX,microsoftlinc.com
+  - DOMAIN_SUFFIX,microsoftmetrics.cn
+  - DOMAIN_SUFFIX,microsoftmxfilantropia.com
+  - DOMAIN_SUFFIX,microsoftnews.cc
+  - DOMAIN_SUFFIX,microsoftnews.cn
+  - DOMAIN_SUFFIX,microsoftnews.com
+  - DOMAIN_SUFFIX,microsoftnews.net
+  - DOMAIN_SUFFIX,microsoftnews.org
+  - DOMAIN_SUFFIX,microsoftnewsforkids.com
+  - DOMAIN_SUFFIX,microsoftnewsforkids.net
+  - DOMAIN_SUFFIX,microsoftnewsforkids.org
+  - DOMAIN_SUFFIX,microsoftnewskids.com
+  - DOMAIN_SUFFIX,microsoftnewskids.net
+  - DOMAIN_SUFFIX,microsoftnewskids.org
+  - DOMAIN_SUFFIX,microsoftol.com
+  - DOMAIN_SUFFIX,microsoftol.com.cn
+  - DOMAIN_SUFFIX,microsoftonline-i.cn
+  - DOMAIN_SUFFIX,microsoftonline-m-i.cn
+  - DOMAIN_SUFFIX,microsoftonline-m.cn
+  - DOMAIN_SUFFIX,microsoftonline-p-i.cn
+  - DOMAIN_SUFFIX,microsoftonline-p-i.net.cn
+  - DOMAIN_SUFFIX,microsoftonline-p.cn
+  - DOMAIN_SUFFIX,microsoftonline-p.com
+  - DOMAIN_SUFFIX,microsoftonline-p.net
+  - DOMAIN_SUFFIX,microsoftonline-p.net.cn
+  - DOMAIN_SUFFIX,microsoftonline.cn
+  - DOMAIN_SUFFIX,microsoftonline.com
+  - DOMAIN_SUFFIX,microsoftpartnercommunity.com
+  - DOMAIN_SUFFIX,microsoftpartnersolutions.com
+  - DOMAIN_SUFFIX,microsoftreactor.cn
+  - DOMAIN_SUFFIX,microsoftreactor.com.cn
+  - DOMAIN_SUFFIX,microsoftreactor.info
+  - DOMAIN_SUFFIX,microsoftreactor.net
+  - DOMAIN_SUFFIX,microsoftreactor.org
+  - DOMAIN_SUFFIX,microsoftready.com
+  - DOMAIN_SUFFIX,microsoftsilverlight.com
+  - DOMAIN_SUFFIX,microsoftsilverlight.net
+  - DOMAIN_SUFFIX,microsoftsilverlight.org
+  - DOMAIN_SUFFIX,microsoftsiteselection.com
+  - DOMAIN_SUFFIX,microsoftsqlserver.com
+  - DOMAIN_SUFFIX,microsoftstart.com
+  - DOMAIN_SUFFIX,microsoftstore.com
+  - DOMAIN_SUFFIX,microsoftstore.com.cn
+  - DOMAIN_SUFFIX,microsoftstore.com.hk
+  - DOMAIN_SUFFIX,microsoftstream.com
+  - DOMAIN_SUFFIX,microsoftteams.com
+  - DOMAIN_SUFFIX,microsofttradein.com
+  - DOMAIN_SUFFIX,microsofttranslator-int.cn
+  - DOMAIN_SUFFIX,microsofttranslator.com
+  - DOMAIN_SUFFIX,microsoftusercontent.com
+  - DOMAIN_SUFFIX,microsoftuwp.com
+  - DOMAIN_SUFFIX,minecraft.net
+  - DOMAIN_SUFFIX,minecraftshop.com
+  - DOMAIN_SUFFIX,mmais.com.cn
+  - DOMAIN_SUFFIX,mmdnn.com
+  - DOMAIN_SUFFIX,mncmsidlab1.cn
+  - DOMAIN_SUFFIX,mojang.com
+  - DOMAIN_SUFFIX,momentumms.com
+  - DOMAIN_SUFFIX,mono-project.com
+  - DOMAIN_SUFFIX,morphcharts.com
+  - DOMAIN_SUFFIX,mpnevolution.com
+  - DOMAIN_SUFFIX,ms-studiosmedia.com
+  - DOMAIN_SUFFIX,ms365surfaceoffer.com
+  - DOMAIN_SUFFIX,msa.akadns6.net
+  - DOMAIN_SUFFIX,msads.net
+  - DOMAIN_SUFFIX,msappproxy.cn
+  - DOMAIN_SUFFIX,msappproxy.net
+  - DOMAIN_SUFFIX,msauth.cn
+  - DOMAIN_SUFFIX,msauth.net
+  - DOMAIN_SUFFIX,msauthimages.cn
+  - DOMAIN_SUFFIX,msauthimages.net
+  - DOMAIN_SUFFIX,mschallenge2018.com
+  - DOMAIN_SUFFIX,mschcdn.com
+  - DOMAIN_SUFFIX,msdn.com
+  - DOMAIN_SUFFIX,msecnd.net
+  - DOMAIN_SUFFIX,msedge.net
+  - DOMAIN_SUFFIX,msft.info
+  - DOMAIN_SUFFIX,msft.net
+  - DOMAIN_SUFFIX,msftauth.cn
+  - DOMAIN_SUFFIX,msftauth.net
+  - DOMAIN_SUFFIX,msftauthimages.cn
+  - DOMAIN_SUFFIX,msftauthimages.net
+  - DOMAIN_SUFFIX,msftcenterone.cn
+  - DOMAIN_SUFFIX,msftcloudes.cn
+  - DOMAIN_SUFFIX,msftconnecttest.com
+  - DOMAIN_SUFFIX,msfteducation.ca
+  - DOMAIN_SUFFIX,msftidentity.com
+  - DOMAIN_SUFFIX,msftnet.org
+  - DOMAIN_SUFFIX,msgamesresearch.com
+  - DOMAIN_SUFFIX,msgamestudios.com
+  - DOMAIN_SUFFIX,msidentity.cn
+  - DOMAIN_SUFFIX,msidentity.com
+  - DOMAIN_SUFFIX,msidlabpbmc.cn
+  - DOMAIN_SUFFIX,msignitechina.com
+  - DOMAIN_SUFFIX,msinnovationchallenge.com
+  - DOMAIN_SUFFIX,msminico.cn
+  - DOMAIN_SUFFIX,msminico.com.cn
+  - DOMAIN_SUFFIX,msn.cn
+  - DOMAIN_SUFFIX,msn.com
+  - DOMAIN_SUFFIX,msn.com.cn
+  - DOMAIN_SUFFIX,msn.com.nsatc.net
+  - DOMAIN_SUFFIX,msn.com.tw
+  - DOMAIN_SUFFIX,msn.net
+  - DOMAIN_SUFFIX,msnewskids.com
+  - DOMAIN_SUFFIX,msnewskids.net
+  - DOMAIN_SUFFIX,msnewskids.org
+  - DOMAIN_SUFFIX,msnkids.com
+  - DOMAIN_SUFFIX,msnmaps.com
+  - DOMAIN_SUFFIX,msocdn.com
+  - DOMAIN_SUFFIX,msocsp.com
+  - DOMAIN_SUFFIX,msopentech.cn
+  - DOMAIN_SUFFIX,mspairlift.com
+  - DOMAIN_SUFFIX,mspil.cn
+  - DOMAIN_SUFFIX,msra.cn
+  - DOMAIN_SUFFIX,msropendata.com
+  - DOMAIN_SUFFIX,mstea.ms
+  - DOMAIN_SUFFIX,msturing.org
+  - DOMAIN_SUFFIX,msudalosti.com
+  - DOMAIN_SUFFIX,msunlimitedcloudsummit.com
+  - DOMAIN_SUFFIX,msvevent.com
+  - DOMAIN_SUFFIX,msxiaobing.com
+  - DOMAIN_SUFFIX,msxiaoice.com
+  - DOMAIN_SUFFIX,msxiaona.cn
+  - DOMAIN_SUFFIX,mwf-service.akamaized.net
+  - DOMAIN_SUFFIX,myhomemsn.com
+  - DOMAIN_SUFFIX,mymicrosoft.com
+  - DOMAIN_SUFFIX,nextechafrica.net
+  - DOMAIN_SUFFIX,nuget.org
+  - DOMAIN_SUFFIX,nugettest.org
+  - DOMAIN_SUFFIX,nxta.org
+  - DOMAIN_SUFFIX,o365cn.com
+  - DOMAIN_SUFFIX,o365files.cn
+  - DOMAIN_SUFFIX,o365weve-dev.com
+  - DOMAIN_SUFFIX,o365weve-ppe.com
+  - DOMAIN_SUFFIX,o365weve.com
+  - DOMAIN_SUFFIX,oaspapps.com
+  - DOMAIN_SUFFIX,office
+  - DOMAIN_SUFFIX,office.com
+  - DOMAIN_SUFFIX,office.net
+  - DOMAIN_SUFFIX,office365-net.cn
+  - DOMAIN_SUFFIX,office365.cn
+  - DOMAIN_SUFFIX,office365.com
+  - DOMAIN_SUFFIX,office365love.com
+  - DOMAIN_SUFFIX,office365tw.com
+  - DOMAIN_SUFFIX,officecdn-microsoft-com.akamaized.net
+  - DOMAIN_SUFFIX,officedev.cn
+  - DOMAIN_SUFFIX,officeplus.cn
+  - DOMAIN_SUFFIX,officeppe.net
+  - DOMAIN_SUFFIX,officewebapps.cn
+  - DOMAIN_SUFFIX,omniroot.com
+  - DOMAIN_SUFFIX,onecollector.cloudapp.aria
+  - DOMAIN_SUFFIX,onedrive.co
+  - DOMAIN_SUFFIX,onedrive.co.uk
+  - DOMAIN_SUFFIX,onedrive.eu
+  - DOMAIN_SUFFIX,onedrive.net
+  - DOMAIN_SUFFIX,onedrive.org
+  - DOMAIN_SUFFIX,onenote.com
+  - DOMAIN_SUFFIX,onenote.net
+  - DOMAIN_SUFFIX,onestore.ms
+  - DOMAIN_SUFFIX,onmicrosoft.com
+  - DOMAIN_SUFFIX,onmschina.cn
+  - DOMAIN_SUFFIX,opentranslatorstothings.org
+  - DOMAIN_SUFFIX,opticsforthecloud.net
+  - DOMAIN_SUFFIX,optimizely.com
+  - DOMAIN_SUFFIX,orithegame.com
+  - DOMAIN_SUFFIX,osdinfra.net
+  - DOMAIN_SUFFIX,outingsapp.com
+  - DOMAIN_SUFFIX,outlook.cn
+  - DOMAIN_SUFFIX,outlook.com
+  - DOMAIN_SUFFIX,outlookgroups.ms
+  - DOMAIN_SUFFIX,outlookmobile.com
+  - DOMAIN_SUFFIX,ovi.com.cn
+  - DOMAIN_SUFFIX,passport.net
+  - DOMAIN_SUFFIX,pbiwebcontent.cn
+  - DOMAIN_SUFFIX,phonefactor.net
+  - DOMAIN_SUFFIX,pixapp.net
+  - DOMAIN_SUFFIX,playfabapi.cn
+  - DOMAIN_SUFFIX,playfabcn.com
+  - DOMAIN_SUFFIX,poshtestgallery.com
+  - DOMAIN_SUFFIX,powerapps.cn
+  - DOMAIN_SUFFIX,powerappscdn.net
+  - DOMAIN_SUFFIX,powerappsportals.cn
+  - DOMAIN_SUFFIX,powerautomate.cn
+  - DOMAIN_SUFFIX,powerautomate.com
+  - DOMAIN_SUFFIX,powerbi.cn
+  - DOMAIN_SUFFIX,powerbi.com
+  - DOMAIN_SUFFIX,powershellgallery.com
+  - DOMAIN_SUFFIX,prod-video-cms-rt-microsoft-com.akamaized.net
+  - DOMAIN_SUFFIX,projectmurphy.net
+  - DOMAIN_SUFFIX,projectsangam.com
+  - DOMAIN_SUFFIX,public-trust.com
+  - DOMAIN_SUFFIX,pwabuilder.com
+  - DOMAIN_SUFFIX,pxt.io
+  - DOMAIN_SUFFIX,reactorms.com.cn
+  - DOMAIN_SUFFIX,renlifang.com
+  - DOMAIN_SUFFIX,renovacionoffice.com
+  - DOMAIN_SUFFIX,renovacionxboxlive.com
+  - DOMAIN_SUFFIX,s-microsoft.com
+  - DOMAIN_SUFFIX,s-msedge.net
+  - DOMAIN_SUFFIX,s-msft.com
+  - DOMAIN_SUFFIX,s-msn.com
+  - DOMAIN_SUFFIX,sankie.net
+  - DOMAIN_SUFFIX,sclive.net
+  - DOMAIN_SUFFIX,serverlesslibrary.net
+  - DOMAIN_SUFFIX,sfbassets.com
+  - DOMAIN_SUFFIX,sfbassets.net
+  - DOMAIN_SUFFIX,sfx.ms
+  - DOMAIN_SUFFIX,sharepoint.cn
+  - DOMAIN_SUFFIX,signalr.net
+  - DOMAIN_SUFFIX,skype
+  - DOMAIN_SUFFIX,skype.com
+  - DOMAIN_SUFFIX,skype.net
+  - DOMAIN_SUFFIX,skypeassets.com
+  - DOMAIN_SUFFIX,skypeassets.net
+  - DOMAIN_SUFFIX,skypeforbusiness.com
+  - DOMAIN_SUFFIX,sprinklesapp.com
+  - DOMAIN_SUFFIX,sqlserveronlinux.com
+  - DOMAIN_SUFFIX,staffhub.ms
+  - DOMAIN_SUFFIX,start.com
+  - DOMAIN_SUFFIX,statics-marketingsites-eas-ms-com.akamaized.net
+  - DOMAIN_SUFFIX,statics-marketingsites-eus-ms-com.akamaized.net
+  - DOMAIN_SUFFIX,statics-marketingsites-neu-ms-com.akamaized.net
+  - DOMAIN_SUFFIX,statics-marketingsites-wcus-ms-com.akamaized.net
+  - DOMAIN_SUFFIX,successwithteams.com
+  - DOMAIN_SUFFIX,surface.com
+  - DOMAIN_SUFFIX,svc.ms
+  - DOMAIN_SUFFIX,sway-cdn.com
+  - DOMAIN_SUFFIX,sway-extensions.com
+  - DOMAIN_SUFFIX,sway.com
+  - DOMAIN_SUFFIX,syncshop.cn
+  - DOMAIN_SUFFIX,sysinternals.com
+  - DOMAIN_SUFFIX,tailwindtraders.com
+  - DOMAIN_SUFFIX,techhub.ms
+  - DOMAIN_SUFFIX,tellmewhygame.com
+  - DOMAIN_SUFFIX,tenor.com
+  - DOMAIN_SUFFIX,tfsallin.net
+  - DOMAIN_SUFFIX,timelinestoryteller.com
+  - DOMAIN_SUFFIX,trafficmanager.cn
+  - DOMAIN_SUFFIX,trafficmanager.net
+  - DOMAIN_SUFFIX,translatetheweb.com
+  - DOMAIN_SUFFIX,trustcenter.cn
+  - DOMAIN_SUFFIX,tryfunctions.com
+  - DOMAIN_SUFFIX,unity3dcloud.cn
+  - DOMAIN_SUFFIX,unlocklimitlesslearning.com
+  - DOMAIN_SUFFIX,userpxt.io
+  - DOMAIN_SUFFIX,uservoice.com
+  - DOMAIN_SUFFIX,uwpcommunitytoolkit.com
+  - DOMAIN_SUFFIX,vfsforgit.com
+  - DOMAIN_SUFFIX,vfsforgit.org
+  - DOMAIN_SUFFIX,videobreakdown.com
+  - DOMAIN_SUFFIX,videoindexer.ai
+  - DOMAIN_SUFFIX,vip5.afdorigin-prod-am02.afdogw.com
+  - DOMAIN_SUFFIX,virtualearth.net
+  - DOMAIN_SUFFIX,visualstudio-staging.com
+  - DOMAIN_SUFFIX,visualstudio.co
+  - DOMAIN_SUFFIX,visualstudio.co.uk
+  - DOMAIN_SUFFIX,visualstudio.com
+  - DOMAIN_SUFFIX,visualstudio.eu
+  - DOMAIN_SUFFIX,visualstudio.net
+  - DOMAIN_SUFFIX,vsallin.net
+  - DOMAIN_SUFFIX,vsassets.io
+  - DOMAIN_SUFFIX,vscode-cdn.net
+  - DOMAIN_SUFFIX,vscode-unpkg.net
+  - DOMAIN_SUFFIX,vscode-webview.net
+  - DOMAIN_SUFFIX,vscode.dev
+  - DOMAIN_SUFFIX,wbd.ms
+  - DOMAIN_SUFFIX,what-fan.net
+  - DOMAIN_SUFFIX,windows
+  - DOMAIN_SUFFIX,windows-int.net
+  - DOMAIN_SUFFIX,windows-ppe.net
+  - DOMAIN_SUFFIX,windows.com
+  - DOMAIN_SUFFIX,windows.net
+  - DOMAIN_SUFFIX,windows.nl
+  - DOMAIN_SUFFIX,windows8.hk
+  - DOMAIN_SUFFIX,windowsazure.cn
+  - DOMAIN_SUFFIX,windowsazure.com
+  - DOMAIN_SUFFIX,windowsazurestatus.cn
+  - DOMAIN_SUFFIX,windowscommunity.net
+  - DOMAIN_SUFFIX,windowslive.cn
+  - DOMAIN_SUFFIX,windowsmarketplace.com
+  - DOMAIN_SUFFIX,windowsphone-int.com
+  - DOMAIN_SUFFIX,windowsphone.com
+  - DOMAIN_SUFFIX,windowssearch.com
+  - DOMAIN_SUFFIX,windowsupdate.com
+  - DOMAIN_SUFFIX,winhec.com
+  - DOMAIN_SUFFIX,winhec.net
+  - DOMAIN_SUFFIX,winmp.cn
+  - DOMAIN_SUFFIX,wlxrs.com
+  - DOMAIN_SUFFIX,working-bing-int.com
+  - DOMAIN_SUFFIX,wunderlist.com
+  - DOMAIN_SUFFIX,xamarin.com
+  - DOMAIN_SUFFIX,xbox.co
+  - DOMAIN_SUFFIX,xbox.com
+  - DOMAIN_SUFFIX,xbox.eu
+  - DOMAIN_SUFFIX,xbox.org
+  - DOMAIN_SUFFIX,xbox360.co
+  - DOMAIN_SUFFIX,xbox360.com
+  - DOMAIN_SUFFIX,xbox360.eu
+  - DOMAIN_SUFFIX,xbox360.org
+  - DOMAIN_SUFFIX,xboxab.com
+  - DOMAIN_SUFFIX,xboxgamepass.com
+  - DOMAIN_SUFFIX,xboxgamestudios.com
+  - DOMAIN_SUFFIX,xboxlive.cn
+  - DOMAIN_SUFFIX,xboxlive.com
+  - DOMAIN_SUFFIX,xboxone.co
+  - DOMAIN_SUFFIX,xboxone.com
+  - DOMAIN_SUFFIX,xboxone.eu
+  - DOMAIN_SUFFIX,xboxplayanywhere.com
+  - DOMAIN_SUFFIX,xboxservices.com
+  - DOMAIN_SUFFIX,xboxstudios.com
+  - DOMAIN_SUFFIX,xbx.lv
+  - DOMAIN_SUFFIX,yammer.com
+  - DOMAIN_SUFFIX,yammerusercontent.com
+  - DOMAIN_SUFFIX,1drv.com
+  - DOMAIN_SUFFIX,livefilestore.com
+  - DOMAIN_SUFFIX,microsoftpersonalcontent.com
+  - DOMAIN_SUFFIX,onedrive.com
+  - DOMAIN_SUFFIX,sharepoint.com
+  - DOMAIN_SUFFIX,sharepointonline.com
+  - DOMAIN_SUFFIX,spoprod-a.akamaihd.net
+  - DOMAIN_KEYWORD,microsoft
+  - DOMAIN_KEYWORD,1drv
+  - DOMAIN_KEYWORD,onedrive
+  - DOMAIN_KEYWORD,skydrive
+  - DOMAIN_SUFFIX,here.com
+  - DOMAIN_SUFFIX,here.net
+  - DOMAIN_SUFFIX,heremaps.cn
+  - DOMAIN_SUFFIX,ovi.com.cn
+  - DOMAIN_SUFFIX,azure
+  - DOMAIN_SUFFIX,azure-apim.net
+  - DOMAIN_SUFFIX,azure-dns.com
+  - DOMAIN_SUFFIX,azure-dns.info
+  - DOMAIN_SUFFIX,azure-dns.net
+  - DOMAIN_SUFFIX,azure-dns.org
+  - DOMAIN_SUFFIX,azure-mobile.net
+  - DOMAIN_SUFFIX,azure-sphere.com
+  - DOMAIN_SUFFIX,azure-test.net
+  - DOMAIN_SUFFIX,azure.cn
+  - DOMAIN_SUFFIX,azure.com
+  - DOMAIN_SUFFIX,azure.net
+  - DOMAIN_SUFFIX,azurecomcdn.net
+  - DOMAIN_SUFFIX,azurecontainer.io
+  - DOMAIN_SUFFIX,azurecosmos.net
+  - DOMAIN_SUFFIX,azurecosmosdb.com
+  - DOMAIN_SUFFIX,azurecosmosdb.info
+  - DOMAIN_SUFFIX,azurecosmosdb.net
+  - DOMAIN_SUFFIX,azuredatabricks.net
+  - DOMAIN_SUFFIX,azuredevopslaunch.com
+  - DOMAIN_SUFFIX,azuredigitaltwin.com
+  - DOMAIN_SUFFIX,azuredigitaltwins.com
+  - DOMAIN_SUFFIX,azuredigitaltwins.net
+  - DOMAIN_SUFFIX,azuredns-prd.info
+  - DOMAIN_SUFFIX,azuredns-prd.org
+  - DOMAIN_SUFFIX,azureedge-test.net
+  - DOMAIN_SUFFIX,azureedge.net
+  - DOMAIN_SUFFIX,azurefd.net
+  - DOMAIN_SUFFIX,azurefd.us
+  - DOMAIN_SUFFIX,azureiotcentral.com
+  - DOMAIN_SUFFIX,azureiotsolutions.com
+  - DOMAIN_SUFFIX,azureiotsuite.com
+  - DOMAIN_SUFFIX,azureplanetscale.info
+  - DOMAIN_SUFFIX,azureplanetscale.net
+  - DOMAIN_SUFFIX,azureserviceprofiler.com
+  - DOMAIN_SUFFIX,azuresmartspaces.net
+  - DOMAIN_SUFFIX,azurestackvalidation.com
+  - DOMAIN_SUFFIX,azurewebsites.net
+  - DOMAIN_SUFFIX,chinacloudapi.cn
+  - DOMAIN_SUFFIX,chinacloudapp.cn
+  - DOMAIN_SUFFIX,chinacloudsites.cn
+  - DOMAIN_SUFFIX,cosmosdb.info
+  - DOMAIN_SUFFIX,cosmosdb.net
+  - DOMAIN_SUFFIX,devopsms.com
+  - DOMAIN_SUFFIX,gotcosmos.com
+  - DOMAIN_SUFFIX,microsofteca.com
+  - DOMAIN_SUFFIX,microsoftiotcentral.com
+  - DOMAIN_SUFFIX,serverlesslibrary.net
+  - DOMAIN_SUFFIX,signalr.net
+  - DOMAIN_SUFFIX,tryfunctions.com
+  - DOMAIN_SUFFIX,windowsazure.cn
+  - DOMAIN_SUFFIX,windowsazure.com
+  - DOMAIN_SUFFIX,azure.microsoft.com
+  - DOMAIN_SUFFIX,azuremarketplace.microsoft.com
+  - DOMAIN_SUFFIX,bbing.com
+  - DOMAIN_SUFFIX,bibg.com
+  - DOMAIN_SUFFIX,biing.com
+  - DOMAIN_SUFFIX,binb.com
+  - DOMAIN_SUFFIX,binf.com
+  - DOMAIN_SUFFIX,bing
+  - DOMAIN_SUFFIX,bing.com
+  - DOMAIN_SUFFIX,bing.com.cn
+  - DOMAIN_SUFFIX,bing.net
+  - DOMAIN_SUFFIX,bing123.com
+  - DOMAIN_SUFFIX,bing135.com
+  - DOMAIN_SUFFIX,bing4.com
+  - DOMAIN_SUFFIX,bingads.com
+  - DOMAIN_SUFFIX,bingagencyawards.com
+  - DOMAIN_SUFFIX,bingapis.com
+  - DOMAIN_SUFFIX,bingapistatistics.com
+  - DOMAIN_SUFFIX,binginternal.com
+  - DOMAIN_SUFFIX,bingit.net
+  - DOMAIN_SUFFIX,bingiton.com
+  - DOMAIN_SUFFIX,bingj.com
+  - DOMAIN_SUFFIX,bingpix.com
+  - DOMAIN_SUFFIX,bingpk.com
+  - DOMAIN_SUFFIX,bings.com
+  - DOMAIN_SUFFIX,bingsandbox.com
+  - DOMAIN_SUFFIX,bingtoolbar.com
+  - DOMAIN_SUFFIX,bingtranslator.com
+  - DOMAIN_SUFFIX,bingvisualsearch.com
+  - DOMAIN_SUFFIX,bingworld.com
+  - DOMAIN_SUFFIX,biying.cn
+  - DOMAIN_SUFFIX,biying.com
+  - DOMAIN_SUFFIX,biying.com.cn
+  - DOMAIN_SUFFIX,bluehatnights.com
+  - DOMAIN_SUFFIX,dictate.ms
+  - DOMAIN_SUFFIX,discoverbing.com
+  - DOMAIN_SUFFIX,explorebing.com
+  - DOMAIN_SUFFIX,flipwithsurface.com
+  - DOMAIN_SUFFIX,mapblast.com
+  - DOMAIN_SUFFIX,mappoint.com
+  - DOMAIN_SUFFIX,masalladeloslimites.com
+  - DOMAIN_SUFFIX,microsoft-give.com
+  - DOMAIN_SUFFIX,microsoftcloudsummit.com
+  - DOMAIN_SUFFIX,microsoftdiplomados.com
+  - DOMAIN_SUFFIX,microsoftlatamholiday.com
+  - DOMAIN_SUFFIX,microsoftmxfilantropia.com
+  - DOMAIN_SUFFIX,microsoftpartnersolutions.com
+  - DOMAIN_SUFFIX,msnmaps.com
+  - DOMAIN_SUFFIX,msunlimitedcloudsummit.com
+  - DOMAIN_SUFFIX,myhomemsn.com
+  - DOMAIN_SUFFIX,office365love.com
+  - DOMAIN_SUFFIX,office365tw.com
+  - DOMAIN_SUFFIX,osdinfra.net
+  - DOMAIN_SUFFIX,renovacionoffice.com
+  - DOMAIN_SUFFIX,sprinklesapp.com
+  - DOMAIN_SUFFIX,working-bing-int.com
+  - DOMAIN_SUFFIX,bj1.api.bing.com
+  - DOMAIN_SUFFIX,emoi-cncdn.bing.com
+  - DOMAIN_SUFFIX,cn.bing.com
+  - DOMAIN_SUFFIX,cn.bing.net
+  - DOMAIN_SUFFIX,ditu.live.com
+  - DOMAIN_SUFFIX,a-msedge.net
+  - DOMAIN_SUFFIX,c-msedge.net
+  - DOMAIN_SUFFIX,e-msedge.net
+  - DOMAIN_SUFFIX,edgesuite.net
+  - DOMAIN_SUFFIX,evoke-windowsservices-tas.msedge
+  - DOMAIN_SUFFIX,microsoftedge.com
+  - DOMAIN_SUFFIX,microsoftedgeinsider.com
+  - DOMAIN_SUFFIX,msedge.net
+  - DOMAIN_SUFFIX,s-msedge.net
+  - DOMAIN_SUFFIX,femalefounderscomp.com
+  - DOMAIN_SUFFIX,m12.vc
+  - DOMAIN_SUFFIX,adaptivecards.io
+  - DOMAIN_SUFFIX,api-extractor.com
+  - DOMAIN_SUFFIX,apisof.net
+  - DOMAIN_SUFFIX,appcenter.ms
+  - DOMAIN_SUFFIX,blazor.net
+  - DOMAIN_SUFFIX,botframework.com
+  - DOMAIN_SUFFIX,codethemicrobit.com
+  - DOMAIN_SUFFIX,devopsassessment.net
+  - DOMAIN_SUFFIX,dot.net
+  - DOMAIN_SUFFIX,exp-tas.com
+  - DOMAIN_SUFFIX,gamesstack.com
+  - DOMAIN_SUFFIX,graphengine.io
+  - DOMAIN_SUFFIX,insiderdevtour.com
+  - DOMAIN_SUFFIX,jwt.ms
+  - DOMAIN_SUFFIX,microbit.org
+  - DOMAIN_SUFFIX,microsoftadc.com
+  - DOMAIN_SUFFIX,microsoftgamestack.com
+  - DOMAIN_SUFFIX,microsoftiotinsiderlabs.com
+  - DOMAIN_SUFFIX,microsoftreactor.cn
+  - DOMAIN_SUFFIX,microsoftreactor.com.cn
+  - DOMAIN_SUFFIX,microsoftreactor.info
+  - DOMAIN_SUFFIX,microsoftreactor.net
+  - DOMAIN_SUFFIX,microsoftreactor.org
+  - DOMAIN_SUFFIX,microsoftsilverlight.com
+  - DOMAIN_SUFFIX,microsoftsilverlight.net
+  - DOMAIN_SUFFIX,microsoftsilverlight.org
+  - DOMAIN_SUFFIX,microsoftsqlserver.com
+  - DOMAIN_SUFFIX,mmdnn.com
+  - DOMAIN_SUFFIX,mono-project.com
+  - DOMAIN_SUFFIX,msdn.com
+  - DOMAIN_SUFFIX,msinnovationchallenge.com
+  - DOMAIN_SUFFIX,mspairlift.com
+  - DOMAIN_SUFFIX,msropendata.com
+  - DOMAIN_SUFFIX,nuget.org
+  - DOMAIN_SUFFIX,nugettest.org
+  - DOMAIN_SUFFIX,opentranslatorstothings.org
+  - DOMAIN_SUFFIX,poshtestgallery.com
+  - DOMAIN_SUFFIX,pwabuilder.com
+  - DOMAIN_SUFFIX,reactorms.com.cn
+  - DOMAIN_SUFFIX,sankie.net
+  - DOMAIN_SUFFIX,sqlserveronlinux.com
+  - DOMAIN_SUFFIX,timelinestoryteller.com
+  - DOMAIN_SUFFIX,uwpcommunitytoolkit.com
+  - DOMAIN_SUFFIX,vfsforgit.com
+  - DOMAIN_SUFFIX,vfsforgit.org
+  - DOMAIN_SUFFIX,xamarin.com
+  - DOMAIN_SUFFIX,developer.microsoft.com
+  - DOMAIN_SUFFIX,dtlgalleryint.cloudapp.net
+  - DOMAIN_SUFFIX,poshtestgallery.cloudapp.net
+  - DOMAIN_SUFFIX,psg-int-centralus.cloudapp.net
+  - DOMAIN_SUFFIX,psg-int-eastus.cloudapp.net
+  - DOMAIN_SUFFIX,microsoft-online.cn
+  - DOMAIN_SUFFIX,microsoft-online.com.cn
+  - DOMAIN_SUFFIX,microsoftnews.cc
+  - DOMAIN_SUFFIX,microsoftnews.cn
+  - DOMAIN_SUFFIX,microsoftnews.com
+  - DOMAIN_SUFFIX,microsoftnews.net
+  - DOMAIN_SUFFIX,microsoftnews.org
+  - DOMAIN_SUFFIX,microsoftnewsforkids.com
+  - DOMAIN_SUFFIX,microsoftnewsforkids.net
+  - DOMAIN_SUFFIX,microsoftnewsforkids.org
+  - DOMAIN_SUFFIX,microsoftnewskids.com
+  - DOMAIN_SUFFIX,microsoftnewskids.net
+  - DOMAIN_SUFFIX,microsoftnewskids.org
+  - DOMAIN_SUFFIX,microsoftol.com
+  - DOMAIN_SUFFIX,microsoftol.com.cn
+  - DOMAIN_SUFFIX,microsoftusercontent.com
+  - DOMAIN_SUFFIX,msn.cn
+  - DOMAIN_SUFFIX,msn.com
+  - DOMAIN_SUFFIX,msn.com.cn
+  - DOMAIN_SUFFIX,msn.com.nsatc.net
+  - DOMAIN_SUFFIX,msn.com.tw
+  - DOMAIN_SUFFIX,msnewskids.com
+  - DOMAIN_SUFFIX,msnewskids.net
+  - DOMAIN_SUFFIX,msnewskids.org
+  - DOMAIN_SUFFIX,msnkids.com
+  - DOMAIN_SUFFIX,winmp.cn
+  - DOMAIN_SUFFIX,o365cn.com
+  - DOMAIN_SUFFIX,o365files.cn
+  - DOMAIN_SUFFIX,o365weve-dev.com
+  - DOMAIN_SUFFIX,o365weve-ppe.com
+  - DOMAIN_SUFFIX,o365weve.com
+  - DOMAIN_SUFFIX,office
+  - DOMAIN_SUFFIX,office.com
+  - DOMAIN_SUFFIX,office.net
+  - DOMAIN_SUFFIX,office365.com
+  - DOMAIN_SUFFIX,officedev.cn
+  - DOMAIN_SUFFIX,1drv.com
+  - DOMAIN_SUFFIX,1drv.ms
+  - DOMAIN_SUFFIX,livefilestore.com
+  - DOMAIN_SUFFIX,onedrive.co
+  - DOMAIN_SUFFIX,onedrive.co.uk
+  - DOMAIN_SUFFIX,onedrive.com
+  - DOMAIN_SUFFIX,onedrive.eu
+  - DOMAIN_SUFFIX,onedrive.live.com
+  - DOMAIN_SUFFIX,onedrive.net
+  - DOMAIN_SUFFIX,onedrive.org
+  - DOMAIN_SUFFIX,storage.live.com
+  - DOMAIN_SUFFIX,groupme.com
+  - DOMAIN_SUFFIX,skype.com
+  - DOMAIN_SUFFIX,skype.net
+  - DOMAIN_SUFFIX,skypeassets.com
+  - DOMAIN_SUFFIX,skypeassets.net
+  - DOMAIN_SUFFIX,skypeforbusiness.com
+  - DOMAIN_SUFFIX,sway-cdn.com
+  - DOMAIN_SUFFIX,sway-extensions.com
+  - DOMAIN_SUFFIX,sway.com
+  - DOMAIN_SUFFIX,visualstudio-staging.com
+  - DOMAIN_SUFFIX,visualstudio.co
+  - DOMAIN_SUFFIX,visualstudio.co.uk
+  - DOMAIN_SUFFIX,visualstudio.com
+  - DOMAIN_SUFFIX,visualstudio.eu
+  - DOMAIN_SUFFIX,visualstudio.net
+  - DOMAIN_SUFFIX,vsassets.io
+  - DOMAIN_SUFFIX,vscode-unpkg.net
+  - DOMAIN_SUFFIX,vscode-webview.net
+  - DOMAIN_SUFFIX,vscode.dev
+  - DOMAIN_SUFFIX,live.cn
+  - DOMAIN_SUFFIX,live.com.akadns.net
+  - DOMAIN_SUFFIX,sclive.net
+  - DOMAIN_SUFFIX,windowslive.cn
+  - DOMAIN_SUFFIX,wlxrs.com
+  - DOMAIN_SUFFIX,aicscience.com
+  - DOMAIN_SUFFIX,mmais.com.cn
+  - DOMAIN_SUFFIX,msminico.cn
+  - DOMAIN_SUFFIX,msminico.com.cn
+  - DOMAIN_SUFFIX,msxiaobing.com
+  - DOMAIN_SUFFIX,msxiaoice.com
+  - DOMAIN_SUFFIX,msxiaona.cn
+  - DOMAIN_SUFFIX,officeplus.cn
+  - DOMAIN_SUFFIX,renlifang.com
+  - DOMAIN_SUFFIX,cortana.ai
+  - DOMAIN_SUFFIX,cortanaanalytics.com
+  - DOMAIN_SUFFIX,cortanaskills.com
+  - DOMAIN_SUFFIX,forzamotorsport.net
+  - DOMAIN_SUFFIX,forzaracingchampionship.com
+  - DOMAIN_SUFFIX,forzarc.com
+  - DOMAIN_SUFFIX,gamepass.com
+  - DOMAIN_SUFFIX,msgamestudios.com
+  - DOMAIN_SUFFIX,orithegame.com
+  - DOMAIN_SUFFIX,renovacionxboxlive.com
+  - DOMAIN_SUFFIX,tellmewhygame.com
+  - DOMAIN_SUFFIX,xbox.co
+  - DOMAIN_SUFFIX,xbox.com
+  - DOMAIN_SUFFIX,xbox.eu
+  - DOMAIN_SUFFIX,xbox.org
+  - DOMAIN_SUFFIX,xbox360.co
+  - DOMAIN_SUFFIX,xbox360.com
+  - DOMAIN_SUFFIX,xbox360.eu
+  - DOMAIN_SUFFIX,xbox360.org
+  - DOMAIN_SUFFIX,xboxab.com
+  - DOMAIN_SUFFIX,xboxgamepass.com
+  - DOMAIN_SUFFIX,xboxgamestudios.com
+  - DOMAIN_SUFFIX,xboxlive.cn
+  - DOMAIN_SUFFIX,xboxlive.com
+  - DOMAIN_SUFFIX,xboxone.co
+  - DOMAIN_SUFFIX,xboxone.com
+  - DOMAIN_SUFFIX,xboxone.eu
+  - DOMAIN_SUFFIX,xboxplayanywhere.com
+  - DOMAIN_SUFFIX,xboxservices.com
+  - DOMAIN_SUFFIX,xboxstudios.com
+  - DOMAIN_SUFFIX,xbx.lv
+  - DOMAIN_SUFFIX,callersbane.com
+  - DOMAIN_SUFFIX,minecraft.net
+  - DOMAIN_SUFFIX,minecraftshop.com
+  - DOMAIN_SUFFIX,mojang.com
+  - DOMAIN_SUFFIX,beth.games
+  - DOMAIN_SUFFIX,bethesda.net
+  - DOMAIN_SUFFIX,bethesdagamestudios.com
+  - DOMAIN_SUFFIX,bethsoft.com
+  - DOMAIN_SUFFIX,applicationinsights.io
+  - DOMAIN_SUFFIX,applicationinsights.net
+  - DOMAIN_SUFFIX,aadrm.com
+  - DOMAIN_SUFFIX,acompli.net
+  - DOMAIN_SUFFIX,aka.ms
+  - DOMAIN_SUFFIX,ankarazirvesi2018.com
+  - DOMAIN_SUFFIX,applicationinsights.io
+  - DOMAIN_SUFFIX,applicationinsights.net
+  - DOMAIN_SUFFIX,aria.ms
+  - DOMAIN_SUFFIX,asp.net
+  - DOMAIN_SUFFIX,aspnetcdn.com
+  - DOMAIN_SUFFIX,assets-yammer.com
+  - DOMAIN_SUFFIX,azurerms.com
+  - DOMAIN_SUFFIX,binads.com
+  - DOMAIN_SUFFIX,bluehatil.com
+  - DOMAIN_SUFFIX,boswp.com
+  - DOMAIN_SUFFIX,brazilpartneruniversity.com
+  - DOMAIN_SUFFIX,breakdown.me
+  - DOMAIN_SUFFIX,centralvalidation.com
+  - DOMAIN_SUFFIX,ch9.ms
+  - DOMAIN_SUFFIX,charticulator.com
+  - DOMAIN_SUFFIX,cloudapp.net
+  - DOMAIN_SUFFIX,cloudappsecurity.com
+  - DOMAIN_SUFFIX,crmdynint-gcc.com
+  - DOMAIN_SUFFIX,crmdynint.com
+  - DOMAIN_SUFFIX,crossborderexpansion.com
+  - DOMAIN_SUFFIX,docs.com
+  - DOMAIN_SUFFIX,dwh5.com
+  - DOMAIN_SUFFIX,dynamics.com
+  - DOMAIN_SUFFIX,efproject.net
+  - DOMAIN_SUFFIX,engkoo.com
+  - DOMAIN_SUFFIX,fasttrackreadysupport.com
+  - DOMAIN_SUFFIX,fluidpreview.com
+  - DOMAIN_SUFFIX,footprintdns.com
+  - DOMAIN_SUFFIX,gameuxmasterguide.com
+  - DOMAIN_SUFFIX,gears5.com
+  - DOMAIN_SUFFIX,gearspop.com
+  - DOMAIN_SUFFIX,gearstactics.com
+  - DOMAIN_SUFFIX,getmicrosoftkey.com
+  - DOMAIN_SUFFIX,gfx.ms
+  - DOMAIN_SUFFIX,gigjam.com
+  - DOMAIN_SUFFIX,helpshift.com
+  - DOMAIN_SUFFIX,hockeyapp.net
+  - DOMAIN_SUFFIX,hololens.com
+  - DOMAIN_SUFFIX,hotmail
+  - DOMAIN_SUFFIX,hotmail.co
+  - DOMAIN_SUFFIX,hotmail.com
+  - DOMAIN_SUFFIX,hotmail.eu
+  - DOMAIN_SUFFIX,hotmail.net
+  - DOMAIN_SUFFIX,hotmail.org
+  - DOMAIN_SUFFIX,hummingbird.ms
+  - DOMAIN_SUFFIX,ie10.com
+  - DOMAIN_SUFFIX,ie11.com
+  - DOMAIN_SUFFIX,ie8.co
+  - DOMAIN_SUFFIX,ie9.com
+  - DOMAIN_SUFFIX,imaginecup.pl
+  - DOMAIN_SUFFIX,img-prod-cms-rt-microsoft-com
+  - DOMAIN_SUFFIX,ingads.com
+  - DOMAIN_SUFFIX,internetexplorer.co
+  - DOMAIN_SUFFIX,internetexplorer.com
+  - DOMAIN_SUFFIX,intunewiki.com
+  - DOMAIN_SUFFIX,iotinactionevents.com
+  - DOMAIN_SUFFIX,joinms.com
+  - DOMAIN_SUFFIX,joinms.com.cn
+  - DOMAIN_SUFFIX,joinmva.com
+  - DOMAIN_SUFFIX,kidgrid.tv
+  - DOMAIN_SUFFIX,kumo.com
+  - DOMAIN_SUFFIX,latampartneruniversity.com
+  - DOMAIN_SUFFIX,live.com
+  - DOMAIN_SUFFIX,live.com.au
+  - DOMAIN_SUFFIX,live.eu
+  - DOMAIN_SUFFIX,live.net
+  - DOMAIN_SUFFIX,livingyourambition.com
+  - DOMAIN_SUFFIX,localytics.com
+  - DOMAIN_SUFFIX,lync.com
+  - DOMAIN_SUFFIX,makecode.org
+  - DOMAIN_SUFFIX,managedmeetingrooms.com
+  - DOMAIN_SUFFIX,meetfasttrack.com
+  - DOMAIN_SUFFIX,meetyourdevices.com
+  - DOMAIN_SUFFIX,mepn.com
+  - DOMAIN_SUFFIX,microsoft
+  - DOMAIN_SUFFIX,microsoft-int.com
+  - DOMAIN_SUFFIX,microsoft-ppe.com
+  - DOMAIN_SUFFIX,microsoft-sap-events.com
+  - DOMAIN_SUFFIX,microsoft-sbs-domains.com
+  - DOMAIN_SUFFIX,microsoft-smb.cn
+  - DOMAIN_SUFFIX,microsoft.az
+  - DOMAIN_SUFFIX,microsoft.be
+  - DOMAIN_SUFFIX,microsoft.by
+  - DOMAIN_SUFFIX,microsoft.ca
+  - DOMAIN_SUFFIX,microsoft.cat
+  - DOMAIN_SUFFIX,microsoft.ch
+  - DOMAIN_SUFFIX,microsoft.cl
+  - DOMAIN_SUFFIX,microsoft.com
+  - DOMAIN_SUFFIX,microsoft.com.akadns.net
+  - DOMAIN_SUFFIX,microsoft.com.nsatc.net
+  - DOMAIN_SUFFIX,microsoft.cz
+  - DOMAIN_SUFFIX,microsoft.de
+  - DOMAIN_SUFFIX,microsoft.dk
+  - DOMAIN_SUFFIX,microsoft.ee
+  - DOMAIN_SUFFIX,microsoft.es
+  - DOMAIN_SUFFIX,microsoft.eu
+  - DOMAIN_SUFFIX,microsoft.fi
+  - DOMAIN_SUFFIX,microsoft.ge
+  - DOMAIN_SUFFIX,microsoft.hu
+  - DOMAIN_SUFFIX,microsoft.io
+  - DOMAIN_SUFFIX,microsoft.is
+  - DOMAIN_SUFFIX,microsoft.it
+  - DOMAIN_SUFFIX,microsoft.jp
+  - DOMAIN_SUFFIX,microsoft.lt
+  - DOMAIN_SUFFIX,microsoft.lu
+  - DOMAIN_SUFFIX,microsoft.lv
+  - DOMAIN_SUFFIX,microsoft.md
+  - DOMAIN_SUFFIX,microsoft.net
+  - DOMAIN_SUFFIX,microsoft.pl
+  - DOMAIN_SUFFIX,microsoft.pt
+  - DOMAIN_SUFFIX,microsoft.red
+  - DOMAIN_SUFFIX,microsoft.ro
+  - DOMAIN_SUFFIX,microsoft.rs
+  - DOMAIN_SUFFIX,microsoft.ru
+  - DOMAIN_SUFFIX,microsoft.se
+  - DOMAIN_SUFFIX,microsoft.si
+  - DOMAIN_SUFFIX,microsoft.tv
+  - DOMAIN_SUFFIX,microsoft.ua
+  - DOMAIN_SUFFIX,microsoft.uz
+  - DOMAIN_SUFFIX,microsoft.vn
+  - DOMAIN_SUFFIX,microsoft365.com
+  - DOMAIN_SUFFIX,microsoftaccountguard.com
+  - DOMAIN_SUFFIX,microsoftads.com
+  - DOMAIN_SUFFIX,microsoftadvertising.com
+  - DOMAIN_SUFFIX,microsoftadvertisingregionalawards.com
+  - DOMAIN_SUFFIX,microsoftaffiliates.com
+  - DOMAIN_SUFFIX,microsoftapps.azurewebsites.net
+  - DOMAIN_SUFFIX,microsoftazuread-sso.com
+  - DOMAIN_SUFFIX,microsoftcloud.com
+  - DOMAIN_SUFFIX,microsoftcloudworkshop.com
+  - DOMAIN_SUFFIX,microsoftcommunitytraining.com
+  - DOMAIN_SUFFIX,microsoftemail.com
+  - DOMAIN_SUFFIX,microsoftestore.com.hk
+  - DOMAIN_SUFFIX,microsofthouse.com
+  - DOMAIN_SUFFIX,microsofthouse.net
+  - DOMAIN_SUFFIX,microsoftinternetsafety.net
+  - DOMAIN_SUFFIX,microsoftlatamaitour.com
+  - DOMAIN_SUFFIX,microsoftlinc.com
+  - DOMAIN_SUFFIX,microsoftonline-p.com
+  - DOMAIN_SUFFIX,microsoftonline-p.net
+  - DOMAIN_SUFFIX,microsoftonline.com
+  - DOMAIN_SUFFIX,microsoftpartnercommunity.com
+  - DOMAIN_SUFFIX,microsoftready.com
+  - DOMAIN_SUFFIX,microsoftsiteselection.com
+  - DOMAIN_SUFFIX,microsoftstore.com
+  - DOMAIN_SUFFIX,microsoftstore.com.cn
+  - DOMAIN_SUFFIX,microsoftstore.com.hk
+  - DOMAIN_SUFFIX,microsoftstream.com
+  - DOMAIN_SUFFIX,microsoftteams.com
+  - DOMAIN_SUFFIX,microsofttradein.com
+  - DOMAIN_SUFFIX,microsofttranslator.com
+  - DOMAIN_SUFFIX,microsoftuwp.com
+  - DOMAIN_SUFFIX,momentumms.com
+  - DOMAIN_SUFFIX,morphcharts.com
+  - DOMAIN_SUFFIX,mpnevolution.com
+  - DOMAIN_SUFFIX,ms-studiosmedia.com
+  - DOMAIN_SUFFIX,ms365surfaceoffer.com
+  - DOMAIN_SUFFIX,msa.akadns6.net
+  - DOMAIN_SUFFIX,msads.net
+  - DOMAIN_SUFFIX,msappproxy.net
+  - DOMAIN_SUFFIX,msauth.cn
+  - DOMAIN_SUFFIX,msauth.net
+  - DOMAIN_SUFFIX,msauthimages.net
+  - DOMAIN_SUFFIX,mschallenge2018.com
+  - DOMAIN_SUFFIX,msecnd.net
+  - DOMAIN_SUFFIX,msft.info
+  - DOMAIN_SUFFIX,msft.net
+  - DOMAIN_SUFFIX,msftauth.cn
+  - DOMAIN_SUFFIX,msftauth.net
+  - DOMAIN_SUFFIX,msftauthimages.net
+  - DOMAIN_SUFFIX,msftcenterone.cn
+  - DOMAIN_SUFFIX,msftconnecttest.com
+  - DOMAIN_SUFFIX,msfteducation.ca
+  - DOMAIN_SUFFIX,msftidentity.com
+  - DOMAIN_SUFFIX,msftnet.org
+  - DOMAIN_SUFFIX,msgamesresearch.com
+  - DOMAIN_SUFFIX,msidentity.com
+  - DOMAIN_SUFFIX,msignitechina.com
+  - DOMAIN_SUFFIX,msocdn.com
+  - DOMAIN_SUFFIX,msocsp.com
+  - DOMAIN_SUFFIX,msopentech.cn
+  - DOMAIN_SUFFIX,mspil.cn
+  - DOMAIN_SUFFIX,msra.cn
+  - DOMAIN_SUFFIX,mstea.ms
+  - DOMAIN_SUFFIX,msturing.org
+  - DOMAIN_SUFFIX,msudalosti.com
+  - DOMAIN_SUFFIX,msvevent.com
+  - DOMAIN_SUFFIX,mymicrosoft.com
+  - DOMAIN_SUFFIX,nextechafrica.net
+  - DOMAIN_SUFFIX,nxta.org
+  - DOMAIN_SUFFIX,oaspapps.com
+  - DOMAIN_SUFFIX,oaspapps.com.akadns.net
+  - DOMAIN_SUFFIX,onecollector.cloudapp.aria
+  - DOMAIN_SUFFIX,onecollector.cloudapp.aria.akadns.net
+  - DOMAIN_SUFFIX,onenote.com
+  - DOMAIN_SUFFIX,onenote.net
+  - DOMAIN_SUFFIX,onestore.ms
+  - DOMAIN_SUFFIX,onmicrosoft.com
+  - DOMAIN_SUFFIX,opticsforthecloud.net
+  - DOMAIN_SUFFIX,optimizely.com
+  - DOMAIN_SUFFIX,outingsapp.com
+  - DOMAIN_SUFFIX,outlook.cn
+  - DOMAIN_SUFFIX,outlook.com
+  - DOMAIN_SUFFIX,outlookgroups.ms
+  - DOMAIN_SUFFIX,outlookmobile.com
+  - DOMAIN_SUFFIX,passport.net
+  - DOMAIN_SUFFIX,phonefactor.net
+  - DOMAIN_SUFFIX,pixapp.net
+  - DOMAIN_SUFFIX,playfabapi.cn
+  - DOMAIN_SUFFIX,playfabcn.com
+  - DOMAIN_SUFFIX,powerappscdn.net
+  - DOMAIN_SUFFIX,powerautomate.com
+  - DOMAIN_SUFFIX,powerbi.com
+  - DOMAIN_SUFFIX,powershellgallery.com
+  - DOMAIN_SUFFIX,projectmurphy.net
+  - DOMAIN_SUFFIX,projectsangam.com
+  - DOMAIN_SUFFIX,pxt.io
+  - DOMAIN_SUFFIX,s-microsoft.com
+  - DOMAIN_SUFFIX,s-msft.com
+  - DOMAIN_SUFFIX,s-msn.com
+  - DOMAIN_SUFFIX,sfbassets.com
+  - DOMAIN_SUFFIX,sfbassets.net
+  - DOMAIN_SUFFIX,sfx.ms
+  - DOMAIN_SUFFIX,sharepoint.cn
+  - DOMAIN_SUFFIX,sharepoint.com
+  - DOMAIN_SUFFIX,sharepointonline.com
+  - DOMAIN_SUFFIX,skype
+  - DOMAIN_SUFFIX,staffhub.ms
+  - DOMAIN_SUFFIX,successwithteams.com
+  - DOMAIN_SUFFIX,surface.com
+  - DOMAIN_SUFFIX,svc.ms
+  - DOMAIN_SUFFIX,syncshop.cn
+  - DOMAIN_SUFFIX,sysinternals.com
+  - DOMAIN_SUFFIX,tailwindtraders.com
+  - DOMAIN_SUFFIX,techhub.ms
+  - DOMAIN_SUFFIX,tenor.com
+  - DOMAIN_SUFFIX,tfsallin.net
+  - DOMAIN_SUFFIX,trafficmanager.net
+  - DOMAIN_SUFFIX,translatetheweb.com
+  - DOMAIN_SUFFIX,unlocklimitlesslearning.com
+  - DOMAIN_SUFFIX,userpxt.io
+  - DOMAIN_SUFFIX,uservoice.com
+  - DOMAIN_SUFFIX,videobreakdown.com
+  - DOMAIN_SUFFIX,videoindexer.ai
+  - DOMAIN_SUFFIX,virtualearth.net
+  - DOMAIN_SUFFIX,vsallin.net
+  - DOMAIN_SUFFIX,wbd.ms
+  - DOMAIN_SUFFIX,what-fan.net
+  - DOMAIN_SUFFIX,windows.com
+  - DOMAIN_SUFFIX,windows.net
+  - DOMAIN_SUFFIX,windows-int.net
+  - DOMAIN_SUFFIX,windows-ppe.net
+  - DOMAIN_SUFFIX,windows.com
+  - DOMAIN_SUFFIX,windows.net
+  - DOMAIN_SUFFIX,windows.nl
+  - DOMAIN_SUFFIX,windows8.hk
+  - DOMAIN_SUFFIX,windowscommunity.net
+  - DOMAIN_SUFFIX,windowsmarketplace.com
+  - DOMAIN_SUFFIX,windowsphone-int.com
+  - DOMAIN_SUFFIX,windowsphone.com
+  - DOMAIN_SUFFIX,windowssearch.com
+  - DOMAIN_SUFFIX,windowsupdate.com
+  - DOMAIN_SUFFIX,winhec.com
+  - DOMAIN_SUFFIX,winhec.net
+  - DOMAIN_SUFFIX,yammer.com
+  - DOMAIN_SUFFIX,yammerusercontent.com
+  - DOMAIN_SUFFIX,g.akamaiedge.net
+  - DOMAIN_SUFFIX,a1158.g.akamai.net
+  - DOMAIN_SUFFIX,a122.dscg3.akamai.net
+  - DOMAIN_SUFFIX,a767.dscg3.akamai.net
+  - DOMAIN_SUFFIX,cs11.wpc.v0cdn.net
+  - DOMAIN_SUFFIX,cs9.wac.phicdn.net
+  - DOMAIN_SUFFIX,b.akamaiedge.net
+  - DOMAIN_SUFFIX,spoprod-a.akamaihd.net
+  - DOMAIN_SUFFIX,windows.com.akadns.net
+  - DOMAIN_SUFFIX,prod-video-cms-rt-microsoft-com.akamaized.net
+  - DOMAIN_SUFFIX,statics-marketingsites-eas-ms-com.akamaized.net
+  - DOMAIN_SUFFIX,statics-marketingsites-neu-ms-com.akamaized.net
+  - DOMAIN_SUFFIX,vip5.afdorigin-prod-am02.afdogw.com
+  - DOMAIN_SUFFIX,img-prod-cms-rt-microsoft-com.akamaized.net
+  - DOMAIN_SUFFIX,img-s-msn-com.akamaized.net
+  - DOMAIN_SUFFIX,mwf-service.akamaized.net
+  - DOMAIN_SUFFIX,officecdn-microsoft-com.akamaized.net
+  - DOMAIN_SUFFIX,statics-marketingsites-eus-ms-com.akamaized.net
+  - DOMAIN_SUFFIX,statics-marketingsites-wcus-ms-com.akamaized.net
+  - DOMAIN_SUFFIX,img-prod-cms-rt-microsoft-com.akamaized.net
+  - DOMAIN_SUFFIX,img-s-msn-com.akamaized.net
+  - DOMAIN_SUFFIX,mwf-service.akamaized.net
+  - DOMAIN_SUFFIX,officecdn-microsoft-com.akamaized.net
+  - DOMAIN_SUFFIX,statics-marketingsites-eas-ms-com.akamaized.net
+  - DOMAIN_SUFFIX,statics-marketingsites-eus-ms-com.akamaized.net
+  - DOMAIN_SUFFIX,statics-marketingsites-wcus-ms-com.akamaized.net
+  - DOMAIN_SUFFIX,crl.microsoft.com
+  - DOMAIN_SUFFIX,mscrl.microsoft.com
+  - DOMAIN_SUFFIX,ocsp.microsoft.com
+  - DOMAIN_SUFFIX,oneocsp.microsoft.com
+  - DOMAIN_SUFFIX,www.microsoft.com
+  - DOMAIN_SUFFIX,flightsimulator.azureedge.net
+  - DOMAIN_SUFFIX,prodforza.blob.core.windows.net
+  - DOMAIN_SUFFIX,azure.microsoft.com
+  - DOMAIN_SUFFIX,azuremarketplace.microsoft.com
+  - DOMAIN_SUFFIX,location.microsoft.com
+  - DOMAIN_SUFFIX,github-api.arkoselabs.com
+  - DOMAIN_SUFFIX,github-cloud.s3.amazonaws.com
+  - DOMAIN_SUFFIX,github-production-release-asset-2e65be.s3.amazonaws.com
+  - DOMAIN_SUFFIX,github-production-repository-file-5c1aeb.s3.amazonaws.com
+  - DOMAIN_SUFFIX,github-production-repository-image-32fea6.s3.amazonaws.com
+  - DOMAIN_SUFFIX,github-production-upload-manifest-file-7fdce7.s3.amazonaws.com
+  - DOMAIN_SUFFIX,github-production-user-asset-6210df.s3.amazonaws.com
+  - DOMAIN_SUFFIX,productionresultssa0.blob.core.windows.net
+  - DOMAIN_SUFFIX,productionresultssa1.blob.core.windows.net
+  - DOMAIN_SUFFIX,productionresultssa2.blob.core.windows.net
+  - DOMAIN_SUFFIX,productionresultssa3.blob.core.windows.net
+  - DOMAIN_SUFFIX,productionresultssa4.blob.core.windows.net
+  - DOMAIN_SUFFIX,productionresultssa5.blob.core.windows.net
+  - DOMAIN_SUFFIX,productionresultssa6.blob.core.windows.net
+  - DOMAIN_SUFFIX,productionresultssa7.blob.core.windows.net
+  - DOMAIN_SUFFIX,productionresultssa8.blob.core.windows.net
+  - DOMAIN_SUFFIX,productionresultssa9.blob.core.windows.net
+  - DOMAIN_SUFFIX,productionresultssa10.blob.core.windows.net
+  - DOMAIN_SUFFIX,productionresultssa11.blob.core.windows.net
+  - DOMAIN_SUFFIX,productionresultssa12.blob.core.windows.net
+  - DOMAIN_SUFFIX,productionresultssa13.blob.core.windows.net
+  - DOMAIN_SUFFIX,productionresultssa14.blob.core.windows.net
+  - DOMAIN_SUFFIX,productionresultssa15.blob.core.windows.net
+  - DOMAIN_SUFFIX,productionresultssa16.blob.core.windows.net
+  - DOMAIN_SUFFIX,productionresultssa17.blob.core.windows.net
+  - DOMAIN_SUFFIX,productionresultssa18.blob.core.windows.net
+  - DOMAIN_SUFFIX,productionresultssa19.blob.core.windows.net
+  - DOMAIN_SUFFIX,copilot-proxy.githubusercontent.com
+  - DOMAIN_SUFFIX,copilot-workspace.githubnext.com
+  - DOMAIN_SUFFIX,copilotprodattachments.blob.core.windows.net
+  - DOMAIN_SUFFIX,az764295.vo.msecnd.net
+  - DOMAIN_SUFFIX,bingsettingssearch.trafficmanager.net
+  - DOMAIN_SUFFIX,default.exp-tas.com
+  - DOMAIN_SUFFIX,developer.microsoft.com
+  - DOMAIN_SUFFIX,dtlgalleryint.cloudapp.net
+  - DOMAIN_SUFFIX,packages.microsoft.com
+  - DOMAIN_SUFFIX,poshtestgallery.cloudapp.net
+  - DOMAIN_SUFFIX,psg-int-centralus.cloudapp.net
+  - DOMAIN_SUFFIX,psg-int-eastus.cloudapp.net
+  - DOMAIN_SUFFIX,rink.hockeyapp.net
+  - DOMAIN_SUFFIX,vscode-sync-insiders.trafficmanager.net
+  - DOMAIN_SUFFIX,vscode-sync.trafficmanager.net
+  - DOMAIN_SUFFIX,vscode.blob.core.windows.net
+  - DOMAIN_SUFFIX,vscode.search.windows.net
+  - DOMAIN_SUFFIX,vsmarketplacebadge.apphb.com
+  - DOMAIN_SUFFIX,microsoft
+  - DOMAIN_SUFFIX,hotmail
+  - DOMAIN_SUFFIX,office
+  - DOMAIN_SUFFIX,skype
+  - DOMAIN_SUFFIX,windows
+  - DOMAIN_SUFFIX,bing
+  - DOMAIN_SUFFIX,azure
+  - DOMAIN_SUFFIX,xbox
+  - DOMAIN_SUFFIX,onedriveupdater
+  - DOMAIN_SUFFIX,onedrive
+  - DOMAIN_SUFFIX,microsoftnews.net
+  - DOMAIN_SUFFIX,visualstudio.com
+  - DOMAIN_SUFFIX,microsoft.com
+  - DOMAIN_SUFFIX,microsoft.cz
+  - DOMAIN_SUFFIX,microsoftnewskids.net
+  - DOMAIN_SUFFIX,microsoft.dk
+  - DOMAIN_SUFFIX,microsoft.ee
+  - DOMAIN_SUFFIX,microsoft.es
+  - DOMAIN_SUFFIX,microsoft.eu
+  - DOMAIN_SUFFIX,microsoft.fi
+  - DOMAIN_SUFFIX,microsoft.ge
+  - DOMAIN_SUFFIX,microsoft.hu
+  - DOMAIN_SUFFIX,microsoft.io
+  - DOMAIN_SUFFIX,microsoft.is
+  - DOMAIN_SUFFIX,microsoft.it
+  - DOMAIN_SUFFIX,microsoft.jp
+  - DOMAIN_SUFFIX,microsoft.lt
+  - DOMAIN_SUFFIX,microsoft.lu
+  - DOMAIN_SUFFIX,microsoft.lv
+  - DOMAIN_SUFFIX,microsoft.md
+  - DOMAIN_SUFFIX,microsoft.net
+  - DOMAIN_SUFFIX,microsoft.pl
+  - DOMAIN_SUFFIX,microsoft.pt
+  - DOMAIN_SUFFIX,microsoft.red
+  - DOMAIN_SUFFIX,microsoft.ro
+  - DOMAIN_SUFFIX,microsoft.rs
+  - DOMAIN_SUFFIX,microsoft.ru
+  - DOMAIN_SUFFIX,microsoft.se
+  - DOMAIN_SUFFIX,microsoft.si
+  - DOMAIN_SUFFIX,microsoft.tv
+  - DOMAIN_SUFFIX,microsoft.ua
+  - DOMAIN_SUFFIX,microsoft.uz
+  - DOMAIN_SUFFIX,microsoft.vn
+  - DOMAIN_SUFFIX,femalefounderscomp.com
+  - DOMAIN_SUFFIX,m12.vc
+  - DOMAIN_SUFFIX,a-msedge.net
+  - DOMAIN_SUFFIX,aka.ms
+  - DOMAIN_SUFFIX,ankarazirvesi2018.com
+  - DOMAIN_SUFFIX,applicationinsights.io
+  - DOMAIN_SUFFIX,applicationinsights.net
+  - DOMAIN_SUFFIX,aria.ms
+  - DOMAIN_SUFFIX,asp.net
+  - DOMAIN_SUFFIX,aspnetcdn.com
+  - DOMAIN_SUFFIX,binads.com
+  - DOMAIN_SUFFIX,bluehatil.com
+  - DOMAIN_SUFFIX,boswp.com
+  - DOMAIN_SUFFIX,brazilpartneruniversity.com
+  - DOMAIN_SUFFIX,breakdown.me
+  - DOMAIN_SUFFIX,c-msedge.net
+  - DOMAIN_SUFFIX,centralvalidation.com
+  - DOMAIN_SUFFIX,ch9.ms
+  - DOMAIN_SUFFIX,charticulator.com
+  - DOMAIN_SUFFIX,cloudapp.net
+  - DOMAIN_SUFFIX,cloudappsecurity.com
+  - DOMAIN_SUFFIX,cortanaanalytics.com
+  - DOMAIN_SUFFIX,cortanaskills.com
+  - DOMAIN_SUFFIX,crmdynint-gcc.com
+  - DOMAIN_SUFFIX,crmdynint.com
+  - DOMAIN_SUFFIX,crossborderexpansion.com
+  - DOMAIN_SUFFIX,docs.com
+  - DOMAIN_SUFFIX,dynamics.com
+  - DOMAIN_SUFFIX,efproject.net
+  - DOMAIN_SUFFIX,exp-tas.com
+  - DOMAIN_SUFFIX,fasttrackreadysupport.com
+  - DOMAIN_SUFFIX,fluidpreview.com
+  - DOMAIN_SUFFIX,footprintdns.com
+  - DOMAIN_SUFFIX,gameuxmasterguide.com
+  - DOMAIN_SUFFIX,gears5.com
+  - DOMAIN_SUFFIX,gearspop.com
+  - DOMAIN_SUFFIX,gearstactics.com
+  - DOMAIN_SUFFIX,gfx.ms
+  - DOMAIN_SUFFIX,gigjam.com
+  - DOMAIN_SUFFIX,hololens.com
+  - DOMAIN_SUFFIX,hotmail.co
+  - DOMAIN_SUFFIX,hotmail.com
+  - DOMAIN_SUFFIX,hotmail.eu
+  - DOMAIN_SUFFIX,hotmail.net
+  - DOMAIN_SUFFIX,hotmail.org
+  - DOMAIN_SUFFIX,hummingbird.ms
+  - DOMAIN_SUFFIX,ie10.com
+  - DOMAIN_SUFFIX,ie11.com
+  - DOMAIN_SUFFIX,ie8.co
+  - DOMAIN_SUFFIX,ie9.com
+  - DOMAIN_SUFFIX,imaginecup.pl
+  - DOMAIN_SUFFIX,ingads.com
+  - DOMAIN_SUFFIX,internetexplorer.co
+  - DOMAIN_SUFFIX,internetexplorer.com
+  - DOMAIN_SUFFIX,intunewiki.com
+  - DOMAIN_SUFFIX,iotinactionevents.com
+  - DOMAIN_SUFFIX,kidgrid.tv
+  - DOMAIN_SUFFIX,kumo.com
+  - DOMAIN_SUFFIX,l-msedge.net
+  - DOMAIN_SUFFIX,latampartneruniversity.com
+  - DOMAIN_SUFFIX,live.com
+  - DOMAIN_SUFFIX,live.eu
+  - DOMAIN_SUFFIX,live.net
+  - DOMAIN_SUFFIX,livingyourambition.com
+  - DOMAIN_SUFFIX,makecode.org
+  - DOMAIN_SUFFIX,managedmeetingrooms.com
+  - DOMAIN_SUFFIX,meetfasttrack.com
+  - DOMAIN_SUFFIX,meetyourdevices.com
+  - DOMAIN_SUFFIX,mepn.com
+  - DOMAIN_SUFFIX,microsoftedgeinsider.com
+  - DOMAIN_SUFFIX,microsoft-falcon.io
+  - DOMAIN_SUFFIX,microsoft-int.com
+  - DOMAIN_SUFFIX,microsoft-ppe.com
+  - DOMAIN_SUFFIX,microsoft-sap-events.com
+  - DOMAIN_SUFFIX,microsoft-sbs-domains.com
+  - DOMAIN_SUFFIX,microsoft365.com
+  - DOMAIN_SUFFIX,microsoftaccountguard.com
+  - DOMAIN_SUFFIX,microsoftadvertising.com
+  - DOMAIN_SUFFIX,microsoftadvertisingregionalawards.com
+  - DOMAIN_SUFFIX,microsoftaffiliates.com
+  - DOMAIN_SUFFIX,microsoftapp.net
+  - DOMAIN_SUFFIX,microsoftcloud.com
+  - DOMAIN_SUFFIX,microsoftcloudworkshop.com
+  - DOMAIN_SUFFIX,microsoftcommunitytraining.com
+  - DOMAIN_SUFFIX,microsoftedge.com
+  - DOMAIN_SUFFIX,microsofthouse.com
+  - DOMAIN_SUFFIX,microsofthouse.net
+  - DOMAIN_SUFFIX,microsoftinternetsafety.net
+  - DOMAIN_SUFFIX,microsoftlatamaitour.com
+  - DOMAIN_SUFFIX,microsoftlinc.com
+  - DOMAIN_SUFFIX,microsoftonline-p.com
+  - DOMAIN_SUFFIX,microsoftonline.com
+  - DOMAIN_SUFFIX,microsoftpartnercommunity.com
+  - DOMAIN_SUFFIX,microsoftpersonalcontent.com
+  - DOMAIN_SUFFIX,microsoftready.com
+  - DOMAIN_SUFFIX,microsoftsiteselection.com
+  - DOMAIN_SUFFIX,microsoftstore.com
+  - DOMAIN_SUFFIX,microsoftstream.com
+  - DOMAIN_SUFFIX,microsoftteams.com
+  - DOMAIN_SUFFIX,microsofttradein.com
+  - DOMAIN_SUFFIX,microsofttranslator.com
+  - DOMAIN_SUFFIX,microsoftuwp.com
+  - DOMAIN_SUFFIX,momentumms.com
+  - DOMAIN_SUFFIX,morphcharts.com
+  - DOMAIN_SUFFIX,mpnevolution.com
+  - DOMAIN_SUFFIX,ms-studiosmedia.com
+  - DOMAIN_SUFFIX,ms365surfaceoffer.com
+  - DOMAIN_SUFFIX,msauth.net
+  - DOMAIN_SUFFIX,mschallenge2018.com
+  - DOMAIN_SUFFIX,msecnd.net
+  - DOMAIN_SUFFIX,msedge.net
+  - DOMAIN_SUFFIX,msft.info
+  - DOMAIN_SUFFIX,msft.net
+  - DOMAIN_SUFFIX,msftauth.net
+  - DOMAIN_SUFFIX,msftauthimages.net
+  - DOMAIN_SUFFIX,msftconnecttest.com
+  - DOMAIN_SUFFIX,msfteducation.ca
+  - DOMAIN_SUFFIX,msftncsi.com
+  - DOMAIN_SUFFIX,msftnet.org
+  - DOMAIN_SUFFIX,msgamesresearch.com
+  - DOMAIN_SUFFIX,msgamestudios.com
+  - DOMAIN_SUFFIX,mshome.net
+  - DOMAIN_SUFFIX,msidentity.com
+  - DOMAIN_SUFFIX,msocdn.com
+  - DOMAIN_SUFFIX,msturing.org
+  - DOMAIN_SUFFIX,msudalosti.com
+  - DOMAIN_SUFFIX,mymicrosoft.com
+  - DOMAIN_SUFFIX,nextechafrica.net
+  - DOMAIN_SUFFIX,nxta.org
+  - DOMAIN_SUFFIX,o365weve-dev.com
+  - DOMAIN_SUFFIX,o365weve-ppe.com
+  - DOMAIN_SUFFIX,o365weve.com
+  - DOMAIN_SUFFIX,office.com
+  - DOMAIN_SUFFIX,office.net
+  - DOMAIN_SUFFIX,office365.com
+  - DOMAIN_SUFFIX,onenote.com
+  - DOMAIN_SUFFIX,onenote.net
+  - DOMAIN_SUFFIX,onestore.ms
+  - DOMAIN_SUFFIX,opticsforthecloud.net
+  - DOMAIN_SUFFIX,outingsapp.com
+  - DOMAIN_SUFFIX,outlook.com
+  - DOMAIN_SUFFIX,passport.net
+  - DOMAIN_SUFFIX,pixapp.net
+  - DOMAIN_SUFFIX,powerappscdn.net
+  - DOMAIN_SUFFIX,powerautomate.com
+  - DOMAIN_SUFFIX,powerbi.com
+  - DOMAIN_SUFFIX,powershellgallery.com
+  - DOMAIN_SUFFIX,msn.com
+  - DOMAIN_SUFFIX,projectsangam.com
+  - DOMAIN_SUFFIX,pxt.io
+  - DOMAIN_SUFFIX,s-dc-msedge.net
+  - DOMAIN_SUFFIX,s-microsoft.com
+  - DOMAIN_SUFFIX,s-msedge.net
+  - DOMAIN_SUFFIX,s-msft.com
+  - DOMAIN_SUFFIX,s-msn.com
+  - DOMAIN_SUFFIX,sfbassets.com
+  - DOMAIN_SUFFIX,sfbassets.net
+  - DOMAIN_SUFFIX,sfx.ms
+  - DOMAIN_SUFFIX,sharepoint.com
+  - DOMAIN_SUFFIX,sharepointonline.com
+  - DOMAIN_SUFFIX,signalr.net
+  - DOMAIN_SUFFIX,skype.com
+  - DOMAIN_SUFFIX,skype.net
+  - DOMAIN_SUFFIX,skypeassets.com
+  - DOMAIN_SUFFIX,skypeassets.net
+  - DOMAIN_SUFFIX,spo-msedge.net
+  - DOMAIN_SUFFIX,staffhub.ms
+  - DOMAIN_SUFFIX,successwithteams.com
+  - DOMAIN_SUFFIX,surface.com
+  - DOMAIN_SUFFIX,svc.ms
+  - DOMAIN_SUFFIX,sway-cdn.com
+  - DOMAIN_SUFFIX,sway.com
+  - DOMAIN_SUFFIX,sysinternals.com
+  - DOMAIN_SUFFIX,t-msedge.net
+  - DOMAIN_SUFFIX,tailwindtraders.com
+  - DOMAIN_SUFFIX,techhub.ms
+  - DOMAIN_SUFFIX,tfsallin.net
+  - DOMAIN_SUFFIX,translatetheweb.com
+  - DOMAIN_SUFFIX,unlocklimitlesslearning.com
+  - DOMAIN_SUFFIX,userpxt.io
+  - DOMAIN_SUFFIX,videobreakdown.com
+  - DOMAIN_SUFFIX,videoindexer.ai
+  - DOMAIN_SUFFIX,virtualearth.net
+  - DOMAIN_SUFFIX,vsallin.net
+  - DOMAIN_SUFFIX,wbd.ms
+  - DOMAIN_SUFFIX,what-fan.net
+  - DOMAIN_SUFFIX,windows-int.net
+  - DOMAIN_SUFFIX,windows.com
+  - DOMAIN_SUFFIX,windows.net
+  - DOMAIN_SUFFIX,windows.nl
+  - DOMAIN_SUFFIX,windows8.hk
+  - DOMAIN_SUFFIX,windowscommunity.net
+  - DOMAIN_SUFFIX,windowsmarketplace.com
+  - DOMAIN_SUFFIX,windowsphone-int.com
+  - DOMAIN_SUFFIX,windowsphone.com
+  - DOMAIN_SUFFIX,windowssearch.com
+  - DOMAIN_SUFFIX,windowsupdate.com
+  - DOMAIN_SUFFIX,winhec.com
+  - DOMAIN_SUFFIX,winhec.net
+  - DOMAIN_SUFFIX,yammer.com
+  - DOMAIN_SUFFIX,msocsp.com
+  - DOMAIN_SUFFIX,microsoftnews.cc
+  - DOMAIN_SUFFIX,xamarin.com
+  - DOMAIN_SUFFIX,vscodeedu.com
+  - DOMAIN_SUFFIX,microsoftnews.com
+  - DOMAIN_SUFFIX,microsoft.ch
+  - DOMAIN_SUFFIX,microsoftnews.org
+  - DOMAIN_SUFFIX,microsoftnewsforkids.com
+  - DOMAIN_SUFFIX,microsoftnewsforkids.net
+  - DOMAIN_SUFFIX,microsoftnewsforkids.org
+  - DOMAIN_SUFFIX,microsoftnewskids.com
+  - DOMAIN_SUFFIX,microsoft.de
+  - DOMAIN_SUFFIX,microsoft.cl
+  - DOMAIN_SUFFIX,projectmurphy.net
+  - DOMAIN_SUFFIX,msnewskids.com
+  - DOMAIN_SUFFIX,msnewskids.net
+  - DOMAIN_SUFFIX,msnewskids.org
+  - DOMAIN_SUFFIX,msnkids.com
+  - DOMAIN_SUFFIX,microsoftstart.com
+  - DOMAIN_SUFFIX,start.com
+  - DOMAIN_SUFFIX,microsoft.cat
+  - DOMAIN_SUFFIX,microsoft.ca
+  - DOMAIN_SUFFIX,onedrive.com
+  - DOMAIN_SUFFIX,sharepoint.cn
+  - DOMAIN_SUFFIX,livefilestore.com
+  - DOMAIN_SUFFIX,1drv.com
+  - DOMAIN_SUFFIX,vscodeedu.app
+  - DOMAIN_SUFFIX,vscode.dev
+  - DOMAIN_SUFFIX,vscode-webview.net
+  - DOMAIN_SUFFIX,vscode-unpkg.net
+  - DOMAIN_SUFFIX,vscode-cdn.net
+  - DOMAIN_SUFFIX,vsassets.io
+  - DOMAIN_SUFFIX,visualstudio.net
+  - DOMAIN_SUFFIX,visualstudio.eu
+  - DOMAIN_SUFFIX,microsoftnewskids.org
+  - DOMAIN_SUFFIX,microsoft.by
+  - DOMAIN_SUFFIX,gamepass.com
+  - DOMAIN_SUFFIX,orithegame.com
+  - DOMAIN_SUFFIX,renovacionxboxlive.com
+  - DOMAIN_SUFFIX,tellmewhygame.com
+  - DOMAIN_SUFFIX,xbox.co
+  - DOMAIN_SUFFIX,xbox.com
+  - DOMAIN_SUFFIX,xbox.eu
+  - DOMAIN_SUFFIX,xbox.org
+  - DOMAIN_SUFFIX,xbox360.co
+  - DOMAIN_SUFFIX,xbox360.com
+  - DOMAIN_SUFFIX,xbox360.eu
+  - DOMAIN_SUFFIX,xbox360.org
+  - DOMAIN_SUFFIX,xboxab.com
+  - DOMAIN_SUFFIX,xboxgamepass.com
+  - DOMAIN_SUFFIX,xboxgamestudios.com
+  - DOMAIN_SUFFIX,xboxlive.com
+  - DOMAIN_SUFFIX,xboxone.co
+  - DOMAIN_SUFFIX,xboxone.com
+  - DOMAIN_SUFFIX,xboxone.eu
+  - DOMAIN_SUFFIX,xboxplayanywhere.com
+  - DOMAIN_SUFFIX,xboxservices.com
+  - DOMAIN_SUFFIX,xboxstudios.com
+  - DOMAIN_SUFFIX,xbx.lv
+  - DOMAIN_SUFFIX,asobostudio.com
+  - DOMAIN_SUFFIX,flightsimulator.com
+  - DOMAIN_SUFFIX,beth.games
+  - DOMAIN_SUFFIX,bethesda.net
+  - DOMAIN_SUFFIX,bethesdagamestudios.com
+  - DOMAIN_SUFFIX,bethsoft.com
+  - DOMAIN_SUFFIX,doom.com
+  - DOMAIN_SUFFIX,elderscrolls.com
+  - DOMAIN_SUFFIX,forza.net
+  - DOMAIN_SUFFIX,forzamotorsport.net
+  - DOMAIN_SUFFIX,forzaracingchampionship.com
+  - DOMAIN_SUFFIX,forzarc.com
+  - DOMAIN_SUFFIX,callersbane.com
+  - DOMAIN_SUFFIX,minecraft-services.net
+  - DOMAIN_SUFFIX,minecraft.net
+  - DOMAIN_SUFFIX,minecraftservices.com
+  - DOMAIN_SUFFIX,minecraftshop.com
+  - DOMAIN_SUFFIX,mojang.com
+  - DOMAIN_SUFFIX,microsoft.be
+  - DOMAIN_SUFFIX,aadrm.com
+  - DOMAIN_SUFFIX,azure-api.net
+  - DOMAIN_SUFFIX,azure-devices-int.net
+  - DOMAIN_SUFFIX,azure-devices.net
+  - DOMAIN_SUFFIX,azure-mobile.net
+  - DOMAIN_SUFFIX,azure-sphere.com
+  - DOMAIN_SUFFIX,azure-test.net
+  - DOMAIN_SUFFIX,azure.com
+  - DOMAIN_SUFFIX,azure.net
+  - DOMAIN_SUFFIX,azurecomcdn.net
+  - DOMAIN_SUFFIX,azurecomm.net
+  - DOMAIN_SUFFIX,azurecontainer.io
+  - DOMAIN_SUFFIX,azurecosmos.net
+  - DOMAIN_SUFFIX,azurecosmosdb.com
+  - DOMAIN_SUFFIX,azurecosmosdb.info
+  - DOMAIN_SUFFIX,azurecosmosdb.net
+  - DOMAIN_SUFFIX,azuredatabricks.net
+  - DOMAIN_SUFFIX,azuredevopslaunch.com
+  - DOMAIN_SUFFIX,azuredigitaltwin.com
+  - DOMAIN_SUFFIX,azuredigitaltwins.com
+  - DOMAIN_SUFFIX,azuredigitaltwins.net
+  - DOMAIN_SUFFIX,azuredns-prd.info
+  - DOMAIN_SUFFIX,azuredns-prd.org
+  - DOMAIN_SUFFIX,azureedge-test.net
+  - DOMAIN_SUFFIX,azureedge.net
+  - DOMAIN_SUFFIX,azureedge.us
+  - DOMAIN_SUFFIX,azurefd.net
+  - DOMAIN_SUFFIX,azureiotcentral.com
+  - DOMAIN_SUFFIX,azureiotsolutions.com
+  - DOMAIN_SUFFIX,azureiotsuite.com
+  - DOMAIN_SUFFIX,azureplanetscale.info
+  - DOMAIN_SUFFIX,azureplanetscale.net
+  - DOMAIN_SUFFIX,azureserviceprofiler.com
+  - DOMAIN_SUFFIX,azuresmartspaces.net
+  - DOMAIN_SUFFIX,azurestackvalidation.com
+  - DOMAIN_SUFFIX,azurestaticapps.net
+  - DOMAIN_SUFFIX,azurewebsites.net
+  - DOMAIN_SUFFIX,botframework.com
+  - DOMAIN_SUFFIX,cosmosdb.info
+  - DOMAIN_SUFFIX,cosmosdb.net
+  - DOMAIN_SUFFIX,devopsms.com
+  - DOMAIN_SUFFIX,gotcosmos.com
+  - DOMAIN_SUFFIX,management-azure-devices-int.net
+  - DOMAIN_SUFFIX,management-azure-devices.net
+  - DOMAIN_SUFFIX,microsoftazuread-sso.com
+  - DOMAIN_SUFFIX,microsoftazuresponsorships.com
+  - DOMAIN_SUFFIX,microsofteca.com
+  - DOMAIN_SUFFIX,microsoftiotcentral.com
+  - DOMAIN_SUFFIX,msn.net
+  - DOMAIN_SUFFIX,playfab.com
+  - DOMAIN_SUFFIX,playfabapi.com
+  - DOMAIN_SUFFIX,serverlesslibrary.net
+  - DOMAIN_SUFFIX,trafficmanager.net
+  - DOMAIN_SUFFIX,tryfunctions.com
+  - DOMAIN_SUFFIX,windowsazure.com
+  - DOMAIN_SUFFIX,azure-dns.com
+  - DOMAIN_SUFFIX,azure-dns.info
+  - DOMAIN_SUFFIX,azure-dns.net
+  - DOMAIN_SUFFIX,azure-dns.org
+  - DOMAIN_SUFFIX,microsoft.az
+  - DOMAIN_SUFFIX,masalladeloslimites.com
+  - DOMAIN_SUFFIX,microsoftpartnersolutions.com
+  - DOMAIN_SUFFIX,bing123.com
+  - DOMAIN_SUFFIX,bingagencyawards.com
+  - DOMAIN_SUFFIX,bingapis.com
+  - DOMAIN_SUFFIX,bingapistatistics.com
+  - DOMAIN_SUFFIX,bingparachute.com
+  - DOMAIN_SUFFIX,bingsandbox.com
+  - DOMAIN_SUFFIX,bingvisualsearch.com
+  - DOMAIN_SUFFIX,bingworld.com
+  - DOMAIN_SUFFIX,bluehatnights.com
+  - DOMAIN_SUFFIX,dictate.ms
+  - DOMAIN_SUFFIX,flipwithsurface.com
+  - DOMAIN_SUFFIX,bing.com
+  - DOMAIN_SUFFIX,bing.net
+  - DOMAIN_SUFFIX,microsoftdiplomados.com
+  - DOMAIN_SUFFIX,microsoft-give.com
+  - DOMAIN_SUFFIX,microsoftlatamholiday.com
+  - DOMAIN_SUFFIX,microsoftmxfilantropia.com
+  - DOMAIN_SUFFIX,microsoftcloudsummit.com
+  - DOMAIN_SUFFIX,msunlimitedcloudsummit.com
+  - DOMAIN_SUFFIX,office365love.com
+  - DOMAIN_SUFFIX,office365tw.com
+  - DOMAIN_SUFFIX,renovacionoffice.com
+  - DOMAIN_SUFFIX,sprinklesapp.com
+  - DOMAIN_SUFFIX,copilot-stg.com
+  - DOMAIN_SUFFIX,copilot.com
+  - DOMAIN_SUFFIX,visualstudio.co
+  - DOMAIN_SUFFIX,visualstudio-staging.com
+  - DOMAIN_SUFFIX,atom.io
+  - DOMAIN_SUFFIX,dependabot.com
+  - DOMAIN_SUFFIX,gh.io
+  - DOMAIN_SUFFIX,ghcr.io
+  - DOMAIN_SUFFIX,ghe.com
+  - DOMAIN_SUFFIX,git.io
+  - DOMAIN_SUFFIX,github.ai
+  - DOMAIN_SUFFIX,github.blog
+  - DOMAIN_SUFFIX,github.career
+  - DOMAIN_SUFFIX,github.com
+  - DOMAIN_SUFFIX,github.community
+  - DOMAIN_SUFFIX,github.dev
+  - DOMAIN_SUFFIX,github.io
+  - DOMAIN_SUFFIX,githubapp.com
+  - DOMAIN_SUFFIX,githubassets.com
+  - DOMAIN_SUFFIX,githubhackathon.com
+  - DOMAIN_SUFFIX,githubnext.com
+  - DOMAIN_SUFFIX,githubpreview.dev
+  - DOMAIN_SUFFIX,githubstatus.com
+  - DOMAIN_SUFFIX,githubsupport.com
+  - DOMAIN_SUFFIX,githubuniverse.com
+  - DOMAIN_SUFFIX,githubusercontent.com
+  - DOMAIN_SUFFIX,myoctocat.com
+  - DOMAIN_SUFFIX,octocaptcha.com
+  - DOMAIN_SUFFIX,opensource.guide
+  - DOMAIN_SUFFIX,repo.new
+  - DOMAIN_SUFFIX,thegithubshop.com
+  - DOMAIN_SUFFIX,githubcopilot.com
+  - DOMAIN_SUFFIX,npm.community
+  - DOMAIN_SUFFIX,npmjs.com
+  - DOMAIN_SUFFIX,npmjs.org
+  - DOMAIN_SUFFIX,adaptivecards.io
+  - DOMAIN_SUFFIX,api-extractor.com
+  - DOMAIN_SUFFIX,apisof.net
+  - DOMAIN_SUFFIX,appcenter.ms
+  - DOMAIN_SUFFIX,blazor.net
+  - DOMAIN_SUFFIX,codethemicrobit.com
+  - DOMAIN_SUFFIX,devopsassessment.net
+  - DOMAIN_SUFFIX,dot.net
+  - DOMAIN_SUFFIX,gamesstack.com
+  - DOMAIN_SUFFIX,graphengine.io
+  - DOMAIN_SUFFIX,insiderdevtour.com
+  - DOMAIN_SUFFIX,jwt.ms
+  - DOMAIN_SUFFIX,microbit.org
+  - DOMAIN_SUFFIX,microsoftadc.com
+  - DOMAIN_SUFFIX,microsoftgamestack.com
+  - DOMAIN_SUFFIX,microsoftiotinsiderlabs.com
+  - DOMAIN_SUFFIX,microsoftreactor.info
+  - DOMAIN_SUFFIX,microsoftreactor.net
+  - DOMAIN_SUFFIX,microsoftreactor.org
+  - DOMAIN_SUFFIX,microsoftsilverlight.com
+  - DOMAIN_SUFFIX,microsoftsilverlight.net
+  - DOMAIN_SUFFIX,microsoftsilverlight.org
+  - DOMAIN_SUFFIX,microsoftsqlserver.com
+  - DOMAIN_SUFFIX,mmdnn.com
+  - DOMAIN_SUFFIX,mono-project.com
+  - DOMAIN_SUFFIX,msdn.com
+  - DOMAIN_SUFFIX,msinnovationchallenge.com
+  - DOMAIN_SUFFIX,mspairlift.com
+  - DOMAIN_SUFFIX,msropendata.com
+  - DOMAIN_SUFFIX,nuget.org
+  - DOMAIN_SUFFIX,nugettest.org
+  - DOMAIN_SUFFIX,opentranslatorstothings.org
+  - DOMAIN_SUFFIX,poshtestgallery.com
+  - DOMAIN_SUFFIX,pwabuilder.com
+  - DOMAIN_SUFFIX,sankie.net
+  - DOMAIN_SUFFIX,sqlserveronlinux.com
+  - DOMAIN_SUFFIX,timelinestoryteller.com
+  - DOMAIN_SUFFIX,uwpcommunitytoolkit.com
+  - DOMAIN_SUFFIX,vfsforgit.com
+  - DOMAIN_SUFFIX,vfsforgit.org
+  - DOMAIN_SUFFIX,skypedata.akadns.net
+  - DOMAIN_SUFFIX,live.com.au
+  - DOMAIN_SUFFIX,visualstudio.co.uk
+  - DOMAIN_SUFFIX,spoprod-a.akamaihd.net
+  - DOMAIN_SUFFIX,skype-edf.akadns.net
+  - DOMAIN_SUFFIX,microsoftstore.com.hk
+  - DOMAIN_SUFFIX,dynamics.cn
+  - DOMAIN_SUFFIX,engkoo.com
+  - DOMAIN_SUFFIX,lync.cn
+  - DOMAIN_SUFFIX,microsoft-smb.cn
+  - DOMAIN_SUFFIX,microsoftonline-i.cn
+  - DOMAIN_SUFFIX,microsoftonline-m-i.cn
+  - DOMAIN_SUFFIX,microsoftonline-m.cn
+  - DOMAIN_SUFFIX,microsoftonline-p-i.cn
+  - DOMAIN_SUFFIX,microsoftonline-p-i.net.cn
+  - DOMAIN_SUFFIX,microsoftonline-p.cn
+  - DOMAIN_SUFFIX,microsoftonline-p.net.cn
+  - DOMAIN_SUFFIX,microsoftonline.cn
+  - DOMAIN_SUFFIX,microsoftstore.com.cn
+  - DOMAIN_SUFFIX,microsofttranslator-int.cn
+  - DOMAIN_SUFFIX,msauth.cn
+  - DOMAIN_SUFFIX,msauthimages.cn
+  - DOMAIN_SUFFIX,msftauth.cn
+  - DOMAIN_SUFFIX,msftauthimages.cn
+  - DOMAIN_SUFFIX,mspil.cn
+  - DOMAIN_SUFFIX,msra.cn
+  - DOMAIN_SUFFIX,o365cn.com
+  - DOMAIN_SUFFIX,o365files.cn
+  - DOMAIN_SUFFIX,office365-net.cn
+  - DOMAIN_SUFFIX,office365.cn
+  - DOMAIN_SUFFIX,officeplus.cn
+  - DOMAIN_SUFFIX,officewebapps.cn
+  - DOMAIN_SUFFIX,onmschina.cn
+  - DOMAIN_SUFFIX,outlook.cn
+  - DOMAIN_SUFFIX,pbiwebcontent.cn
+  - DOMAIN_SUFFIX,powerapps.cn
+  - DOMAIN_SUFFIX,powerappsportals.cn
+  - DOMAIN_SUFFIX,powerautomate.cn
+  - DOMAIN_SUFFIX,powerbi.cn
+  - DOMAIN_SUFFIX,sharepoint.cn
+  - DOMAIN_SUFFIX,clarity.ms
+  - DOMAIN_SUFFIX,microsoftads.com
+  - DOMAIN_SUFFIX,msads.net
+  - DOMAIN_SUFFIX,nelreports.net
+  - DOMAIN_SUFFIX,dcg.microsoft.com
+  - DOMAIN_SUFFIX,dl.delivery.mp.microsoft.com
+  - DOMAIN_SUFFIX,download.windowsupdate.com
+  - DOMAIN_SUFFIX,azuremigrate.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,azuremigratetest.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,azurestackhub.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,azurestackhubuat.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,b.c2r.ts.cdn.office.net
+  - DOMAIN_SUFFIX,cbdstest.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,cn.windowssearch.com
+  - DOMAIN_SUFFIX,collaborate.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,collaborateppe.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,ctldl.windowsupdate.com
+  - DOMAIN_SUFFIX,developer.microsoft.com
+  - DOMAIN_SUFFIX,download.microsoft.com
+  - DOMAIN_SUFFIX,dreamspark.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,dreamsparkuat.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,f.c2r.ts.cdn.office.net
+  - DOMAIN_SUFFIX,itacademy.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,itacademyuat.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,lex.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,lexuat.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,mbs.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,mpnbenefits.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,mpnbenefitsrtl.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,mpnbenefitsrtluat.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,msdn.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,msdprod-ad.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,msproduct.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,myvs.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,oemsoc.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,oemsocuat.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,officecdn.microsoft.com
+  - DOMAIN_SUFFIX,officemkt.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,officemktuat.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,osrelease.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,rsm.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,sdx.microsoft.com
+  - DOMAIN_SUFFIX,shell.cdn.office.net
+  - DOMAIN_SUFFIX,software.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,statics.teams.cdn.office.net
+  - DOMAIN_SUFFIX,storecorefulfillment.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,storeedge.microsoft.com
+  - DOMAIN_SUFFIX,storeedgefd.dsx.mp.microsoft.com
+  - DOMAIN_SUFFIX,surface.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,surface.downloads.prss.microsoft.com
+  - DOMAIN_SUFFIX,vlportal.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,volic.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,vscode.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,vz.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,windbg.download.prss.microsoft.com
+  - DOMAIN_SUFFIX,microsoftnews.cn
+  - DOMAIN_SUFFIX,msn.cn
+  - DOMAIN_SUFFIX,browser.events.data.msn.cn
+  - DOMAIN_SUFFIX,browser.events.data.msn.com
+  - DOMAIN_SUFFIX,xboxlive.cn
+  - DOMAIN_SUFFIX,21vbc.com
+  - DOMAIN_SUFFIX,21vbluecloud.com
+  - DOMAIN_SUFFIX,21vbluecloud.net
+  - DOMAIN_SUFFIX,aadrm.cn
+  - DOMAIN_SUFFIX,aggresmart.com
+  - DOMAIN_SUFFIX,apihub-internal.cn
+  - DOMAIN_SUFFIX,appserviceenvironment.cn
+  - DOMAIN_SUFFIX,azcrmc-test.cn
+  - DOMAIN_SUFFIX,azcrmc.cn
+  - DOMAIN_SUFFIX,azk8s.cn
+  - DOMAIN_SUFFIX,aznbcontent.cn
+  - DOMAIN_SUFFIX,aztask.cn
+  - DOMAIN_SUFFIX,azure-api.cn
+  - DOMAIN_SUFFIX,azure-apihub.cn
+  - DOMAIN_SUFFIX,azure-automation.cn
+  - DOMAIN_SUFFIX,azure-connectedvehicles-stage.cn
+  - DOMAIN_SUFFIX,azure-connectedvehicles.cn
+  - DOMAIN_SUFFIX,azure-devices-provisioning.cn
+  - DOMAIN_SUFFIX,azure-devices.cn
+  - DOMAIN_SUFFIX,azure-mobile.cn
+  - DOMAIN_SUFFIX,azure.cn
+  - DOMAIN_SUFFIX,azurecr-test.cn
+  - DOMAIN_SUFFIX,azurecr.cn
+  - DOMAIN_SUFFIX,azurehdinsight.cn
+  - DOMAIN_SUFFIX,azureiotsuite.cn
+  - DOMAIN_SUFFIX,azuremresolver.cn
+  - DOMAIN_SUFFIX,azureprivatedns.cn
+  - DOMAIN_SUFFIX,azurerms.cn
+  - DOMAIN_SUFFIX,azuresandbox.cn
+  - DOMAIN_SUFFIX,b2clogin.cn
+  - DOMAIN_SUFFIX,b3itech.cn
+  - DOMAIN_SUFFIX,blueaggrestore.com
+  - DOMAIN_SUFFIX,bluecloudprod.com
+  - DOMAIN_SUFFIX,cegid-cloud.cn
+  - DOMAIN_SUFFIX,chinacloud-mobile.cn
+  - DOMAIN_SUFFIX,chinacloudapi.cn
+  - DOMAIN_SUFFIX,chinacloudapp.cn
+  - DOMAIN_SUFFIX,chinacloudsites.cn
+  - DOMAIN_SUFFIX,hdinsightservices.cn
+  - DOMAIN_SUFFIX,management-azure-devices-provisioning.cn
+  - DOMAIN_SUFFIX,management-azure-devices.cn
+  - DOMAIN_SUFFIX,mcchcdn.com
+  - DOMAIN_SUFFIX,mgmt-azure-api.cn
+  - DOMAIN_SUFFIX,microsoftazurestatus.cn
+  - DOMAIN_SUFFIX,microsoftmetrics.cn
+  - DOMAIN_SUFFIX,mncmsidlab1.cn
+  - DOMAIN_SUFFIX,msappproxy.cn
+  - DOMAIN_SUFFIX,mschcdn.com
+  - DOMAIN_SUFFIX,msftcloudes.cn
+  - DOMAIN_SUFFIX,msidentity.cn
+  - DOMAIN_SUFFIX,msidlabpbmc.cn
+  - DOMAIN_SUFFIX,sovcloud-mx.cn
+  - DOMAIN_SUFFIX,sovcloud-static.cn
+  - DOMAIN_SUFFIX,sovcloud-usercontent.cn
+  - DOMAIN_SUFFIX,sovcloud.cn
+  - DOMAIN_SUFFIX,trafficmanager.cn
+  - DOMAIN_SUFFIX,trustcenter.cn
+  - DOMAIN_SUFFIX,windowsazure.cn
+  - DOMAIN_SUFFIX,windowsazurestatus.cn
+  - DOMAIN_SUFFIX,azchcdna.com
+  - DOMAIN_SUFFIX,azchcdnb.com
+  - DOMAIN_SUFFIX,azchcdnc.com
+  - DOMAIN_SUFFIX,azchcdnd.com
+  - DOMAIN_SUFFIX,azchcdne.com
+  - DOMAIN_SUFFIX,azchcdnf.com
+  - DOMAIN_SUFFIX,azchcdng.com
+  - DOMAIN_SUFFIX,azchcdnh.com
+  - DOMAIN_SUFFIX,azchcdni.com
+  - DOMAIN_SUFFIX,azchcdnj.com
+  - DOMAIN_SUFFIX,azchcdnk.com
+  - DOMAIN_SUFFIX,azchcdnl.com
+  - DOMAIN_SUFFIX,azchcdnm.com
+  - DOMAIN_SUFFIX,azchcdnn.com
+  - DOMAIN_SUFFIX,azchcdno.com
+  - DOMAIN_SUFFIX,azchcdnp.com
+  - DOMAIN_SUFFIX,azchcdnq.com
+  - DOMAIN_SUFFIX,azchcdnr.com
+  - DOMAIN_SUFFIX,azchcdns.com
+  - DOMAIN_SUFFIX,azure-dns.cn
+  - DOMAIN_SUFFIX,azure-dns-1.cn
+  - DOMAIN_SUFFIX,azure-dns-2.cn
+  - DOMAIN_SUFFIX,azure-dns-3.cn
+  - DOMAIN_SUFFIX,azure-dns-4.cn
+  - DOMAIN_SUFFIX,azure-dns-5.cn
+  - DOMAIN_SUFFIX,azure-dns-6.cn
+  - DOMAIN_SUFFIX,azure-dns-7.cn
+  - DOMAIN_SUFFIX,azure-dns-8.cn
+  - DOMAIN_SUFFIX,azure-dns-9.cn
+  - DOMAIN_SUFFIX,azure-dns-10.cn
+  - DOMAIN_SUFFIX,bing.com.cn
+  - DOMAIN_SUFFIX,bingads.com
+  - DOMAIN_SUFFIX,cn.bing.com
+  - DOMAIN_SUFFIX,cn.bing.net
+  - DOMAIN_SUFFIX,cn.mm.bing.net
+  - DOMAIN_SUFFIX,ditu.live.com
+  - DOMAIN_SUFFIX,r.bing.com
+  - DOMAIN_SUFFIX,th.bing.com
+  - DOMAIN_SUFFIX,bj1.api.bing.com
+  - DOMAIN_SUFFIX,collector.github.com
+  - DOMAIN_SUFFIX,copilot-telemetry-service.githubusercontent.com
+  - DOMAIN_SUFFIX,copilot-telemetry.githubusercontent.com
+  - DOMAIN_SUFFIX,microsoftreactor.cn
+  - DOMAIN_SUFFIX,microsoftreactor.com.cn
+  - DOMAIN_SUFFIX,reactorms.com.cn
+  - DOMAIN_SUFFIX,download.visualstudio.microsoft.com
+  - DOMAIN_SUFFIX,atom.io
+  - DOMAIN_SUFFIX,dependabot.com
+  - DOMAIN_SUFFIX,gh.io
+  - DOMAIN_SUFFIX,ghcr.io
+  - DOMAIN_SUFFIX,ghe.com
+  - DOMAIN_SUFFIX,git.io
+  - DOMAIN_SUFFIX,github.ai
+  - DOMAIN_SUFFIX,github.blog
+  - DOMAIN_SUFFIX,github.career
+  - DOMAIN_SUFFIX,github.com
+  - DOMAIN_SUFFIX,github.community
+  - DOMAIN_SUFFIX,github.dev
+  - DOMAIN_SUFFIX,github.io
+  - DOMAIN_SUFFIX,githubapp.com
+  - DOMAIN_SUFFIX,githubassets.com
+  - DOMAIN_SUFFIX,githubhackathon.com
+  - DOMAIN_SUFFIX,githubnext.com
+  - DOMAIN_SUFFIX,githubpreview.dev
+  - DOMAIN_SUFFIX,githubstatus.com
+  - DOMAIN_SUFFIX,githubsupport.com
+  - DOMAIN_SUFFIX,githubuniverse.com
+  - DOMAIN_SUFFIX,githubusercontent.com
+  - DOMAIN_SUFFIX,myoctocat.com
+  - DOMAIN_SUFFIX,octocaptcha.com
+  - DOMAIN_SUFFIX,opensource.guide
+  - DOMAIN_SUFFIX,repo.new
+  - DOMAIN_SUFFIX,thegithubshop.com
+  - DOMAIN,github-api.arkoselabs.com
+  - DOMAIN,github-cloud.s3.amazonaws.com
+  - DOMAIN,github-production-release-asset-2e65be.s3.amazonaws.com
+  - DOMAIN,github-production-repository-file-5c1aeb.s3.amazonaws.com
+  - DOMAIN,github-production-repository-image-32fea6.s3.amazonaws.com
+  - DOMAIN,github-production-upload-manifest-file-7fdce7.s3.amazonaws.com
+  - DOMAIN,github-production-user-asset-6210df.s3.amazonaws.com
+  - DOMAIN,productionresultssa0.blob.core.windows.net
+  - DOMAIN,productionresultssa1.blob.core.windows.net
+  - DOMAIN,productionresultssa2.blob.core.windows.net
+  - DOMAIN,productionresultssa3.blob.core.windows.net
+  - DOMAIN,productionresultssa4.blob.core.windows.net
+  - DOMAIN,productionresultssa5.blob.core.windows.net
+  - DOMAIN,productionresultssa6.blob.core.windows.net
+  - DOMAIN,productionresultssa7.blob.core.windows.net
+  - DOMAIN,productionresultssa8.blob.core.windows.net
+  - DOMAIN,productionresultssa9.blob.core.windows.net
+  - DOMAIN,productionresultssa10.blob.core.windows.net
+  - DOMAIN,productionresultssa11.blob.core.windows.net
+  - DOMAIN,productionresultssa12.blob.core.windows.net
+  - DOMAIN,productionresultssa13.blob.core.windows.net
+  - DOMAIN,productionresultssa14.blob.core.windows.net
+  - DOMAIN,productionresultssa15.blob.core.windows.net
+  - DOMAIN,productionresultssa16.blob.core.windows.net
+  - DOMAIN,productionresultssa17.blob.core.windows.net
+  - DOMAIN,productionresultssa18.blob.core.windows.net
+  - DOMAIN,productionresultssa19.blob.core.windows.net
+  - DOMAIN_SUFFIX,collector.github.com
+  - DOMAIN_SUFFIX,microsoft.az
+  - DOMAIN_SUFFIX,microsoft.be
+  - DOMAIN_SUFFIX,microsoft.by
+  - DOMAIN_SUFFIX,microsoft.ca
+  - DOMAIN_SUFFIX,microsoft.cat
+  - DOMAIN_SUFFIX,microsoft.ch
+  - DOMAIN_SUFFIX,microsoft.cl
+  - DOMAIN_SUFFIX,microsoft.com
+  - DOMAIN_SUFFIX,microsoft.cz
+  - DOMAIN_SUFFIX,microsoft.de
+  - DOMAIN_SUFFIX,microsoft.dk
+  - DOMAIN_SUFFIX,microsoft.ee
+  - DOMAIN_SUFFIX,microsoft.es
+  - DOMAIN_SUFFIX,microsoft.eu
+  - DOMAIN_SUFFIX,microsoft.fi
+  - DOMAIN_SUFFIX,microsoft.ge
+  - DOMAIN_SUFFIX,microsoft.hu
+  - DOMAIN_SUFFIX,microsoft.io
+  - DOMAIN_SUFFIX,microsoft.is
+  - DOMAIN_SUFFIX,microsoft.it
+  - DOMAIN_SUFFIX,microsoft.jp
+  - DOMAIN_SUFFIX,microsoft.lt
+  - DOMAIN_SUFFIX,microsoft.lu
+  - DOMAIN_SUFFIX,microsoft.lv
+  - DOMAIN_SUFFIX,microsoft.md
+  - DOMAIN_SUFFIX,microsoft.net
+  - DOMAIN_SUFFIX,microsoft.pl
+  - DOMAIN_SUFFIX,microsoft.pt
+  - DOMAIN_SUFFIX,microsoft.red
+  - DOMAIN_SUFFIX,microsoft.ro
+  - DOMAIN_SUFFIX,microsoft.rs
+  - DOMAIN_SUFFIX,microsoft.ru
+  - DOMAIN_SUFFIX,microsoft.se
+  - DOMAIN_SUFFIX,microsoft.si
+  - DOMAIN_SUFFIX,microsoft.tv
+  - DOMAIN_SUFFIX,microsoft.ua
+  - DOMAIN_SUFFIX,microsoft.uz
+  - DOMAIN_SUFFIX,microsoft.vn
+  - DOMAIN_SUFFIX,femalefounderscomp.com
+  - DOMAIN_SUFFIX,m12.vc
+  - DOMAIN_SUFFIX,a-msedge.net
+  - DOMAIN_SUFFIX,aka.ms
+  - DOMAIN_SUFFIX,ankarazirvesi2018.com
+  - DOMAIN_SUFFIX,applicationinsights.io
+  - DOMAIN_SUFFIX,applicationinsights.net
+  - DOMAIN_SUFFIX,aria.ms
+  - DOMAIN_SUFFIX,asp.net
+  - DOMAIN_SUFFIX,aspnetcdn.com
+  - DOMAIN_SUFFIX,binads.com
+  - DOMAIN_SUFFIX,bluehatil.com
+  - DOMAIN_SUFFIX,boswp.com
+  - DOMAIN_SUFFIX,brazilpartneruniversity.com
+  - DOMAIN_SUFFIX,breakdown.me
+  - DOMAIN_SUFFIX,c-msedge.net
+  - DOMAIN_SUFFIX,centralvalidation.com
+  - DOMAIN_SUFFIX,ch9.ms
+  - DOMAIN_SUFFIX,charticulator.com
+  - DOMAIN_SUFFIX,cloudapp.net
+  - DOMAIN_SUFFIX,cloudappsecurity.com
+  - DOMAIN_SUFFIX,cortanaanalytics.com
+  - DOMAIN_SUFFIX,cortanaskills.com
+  - DOMAIN_SUFFIX,crmdynint-gcc.com
+  - DOMAIN_SUFFIX,crmdynint.com
+  - DOMAIN_SUFFIX,crossborderexpansion.com
+  - DOMAIN_SUFFIX,docs.com
+  - DOMAIN_SUFFIX,dynamics.cn
+  - DOMAIN_SUFFIX,dynamics.com
+  - DOMAIN_SUFFIX,efproject.net
+  - DOMAIN_SUFFIX,engkoo.com
+  - DOMAIN_SUFFIX,exp-tas.com
+  - DOMAIN_SUFFIX,fasttrackreadysupport.com
+  - DOMAIN_SUFFIX,fluidpreview.com
+  - DOMAIN_SUFFIX,footprintdns.com
+  - DOMAIN_SUFFIX,gameuxmasterguide.com
+  - DOMAIN_SUFFIX,gears5.com
+  - DOMAIN_SUFFIX,gearspop.com
+  - DOMAIN_SUFFIX,gearstactics.com
+  - DOMAIN_SUFFIX,gfx.ms
+  - DOMAIN_SUFFIX,gigjam.com
+  - DOMAIN_SUFFIX,hololens.com
+  - DOMAIN_SUFFIX,hotmail.co
+  - DOMAIN_SUFFIX,hotmail.com
+  - DOMAIN_SUFFIX,hotmail.eu
+  - DOMAIN_SUFFIX,hotmail.net
+  - DOMAIN_SUFFIX,hotmail.org
+  - DOMAIN_SUFFIX,hummingbird.ms
+  - DOMAIN_SUFFIX,ie10.com
+  - DOMAIN_SUFFIX,ie11.com
+  - DOMAIN_SUFFIX,ie8.co
+  - DOMAIN_SUFFIX,ie9.com
+  - DOMAIN_SUFFIX,imaginecup.pl
+  - DOMAIN_SUFFIX,ingads.com
+  - DOMAIN_SUFFIX,internetexplorer.co
+  - DOMAIN_SUFFIX,internetexplorer.com
+  - DOMAIN_SUFFIX,intunewiki.com
+  - DOMAIN_SUFFIX,iotinactionevents.com
+  - DOMAIN_SUFFIX,kidgrid.tv
+  - DOMAIN_SUFFIX,kumo.com
+  - DOMAIN_SUFFIX,l-msedge.net
+  - DOMAIN_SUFFIX,latampartneruniversity.com
+  - DOMAIN_SUFFIX,live.com
+  - DOMAIN_SUFFIX,live.com.au
+  - DOMAIN_SUFFIX,live.eu
+  - DOMAIN_SUFFIX,live.net
+  - DOMAIN_SUFFIX,livingyourambition.com
+  - DOMAIN_SUFFIX,lync.cn
+  - DOMAIN_SUFFIX,makecode.org
+  - DOMAIN_SUFFIX,managedmeetingrooms.com
+  - DOMAIN_SUFFIX,meetfasttrack.com
+  - DOMAIN_SUFFIX,meetyourdevices.com
+  - DOMAIN_SUFFIX,mepn.com
+  - DOMAIN_SUFFIX,microsoftedgeinsider.com
+  - DOMAIN_SUFFIX,microsoft-falcon.io
+  - DOMAIN_SUFFIX,microsoft-int.com
+  - DOMAIN_SUFFIX,microsoft-ppe.com
+  - DOMAIN_SUFFIX,microsoft-sap-events.com
+  - DOMAIN_SUFFIX,microsoft-sbs-domains.com
+  - DOMAIN_SUFFIX,microsoft-smb.cn
+  - DOMAIN_SUFFIX,microsoft365.com
+  - DOMAIN_SUFFIX,microsoftaccountguard.com
+  - DOMAIN_SUFFIX,microsoftadvertising.com
+  - DOMAIN_SUFFIX,microsoftadvertisingregionalawards.com
+  - DOMAIN_SUFFIX,microsoftaffiliates.com
+  - DOMAIN_SUFFIX,microsoftapp.net
+  - DOMAIN_SUFFIX,microsoftcloud.com
+  - DOMAIN_SUFFIX,microsoftcloudworkshop.com
+  - DOMAIN_SUFFIX,microsoftcommunitytraining.com
+  - DOMAIN_SUFFIX,microsoftedge.com
+  - DOMAIN_SUFFIX,microsofthouse.com
+  - DOMAIN_SUFFIX,microsofthouse.net
+  - DOMAIN_SUFFIX,microsoftinternetsafety.net
+  - DOMAIN_SUFFIX,microsoftlatamaitour.com
+  - DOMAIN_SUFFIX,microsoftlinc.com
+  - DOMAIN_SUFFIX,microsoftonline-i.cn
+  - DOMAIN_SUFFIX,microsoftonline-m-i.cn
+  - DOMAIN_SUFFIX,microsoftonline-m.cn
+  - DOMAIN_SUFFIX,microsoftonline-p-i.cn
+  - DOMAIN_SUFFIX,microsoftonline-p-i.net.cn
+  - DOMAIN_SUFFIX,microsoftonline-p.cn
+  - DOMAIN_SUFFIX,microsoftonline-p.com
+  - DOMAIN_SUFFIX,microsoftonline-p.net.cn
+  - DOMAIN_SUFFIX,microsoftonline.cn
+  - DOMAIN_SUFFIX,microsoftonline.com
+  - DOMAIN_SUFFIX,microsoftpartnercommunity.com
+  - DOMAIN_SUFFIX,microsoftpersonalcontent.com
+  - DOMAIN_SUFFIX,microsoftready.com
+  - DOMAIN_SUFFIX,microsoftsiteselection.com
+  - DOMAIN_SUFFIX,microsoftstore.com
+  - DOMAIN_SUFFIX,microsoftstore.com.cn
+  - DOMAIN_SUFFIX,microsoftstore.com.hk
+  - DOMAIN_SUFFIX,microsoftstream.com
+  - DOMAIN_SUFFIX,microsoftteams.com
+  - DOMAIN_SUFFIX,microsofttradein.com
+  - DOMAIN_SUFFIX,microsofttranslator-int.cn
+  - DOMAIN_SUFFIX,microsofttranslator.com
+  - DOMAIN_SUFFIX,microsoftuwp.com
+  - DOMAIN_SUFFIX,momentumms.com
+  - DOMAIN_SUFFIX,morphcharts.com
+  - DOMAIN_SUFFIX,mpnevolution.com
+  - DOMAIN_SUFFIX,ms-studiosmedia.com
+  - DOMAIN_SUFFIX,ms365surfaceoffer.com
+  - DOMAIN_SUFFIX,msauth.cn
+  - DOMAIN_SUFFIX,msauth.net
+  - DOMAIN_SUFFIX,msauthimages.cn
+  - DOMAIN_SUFFIX,mschallenge2018.com
+  - DOMAIN_SUFFIX,msecnd.net
+  - DOMAIN_SUFFIX,msedge.net
+  - DOMAIN_SUFFIX,msft.info
+  - DOMAIN_SUFFIX,msft.net
+  - DOMAIN_SUFFIX,msftauth.cn
+  - DOMAIN_SUFFIX,msftauth.net
+  - DOMAIN_SUFFIX,msftauthimages.cn
+  - DOMAIN_SUFFIX,msftauthimages.net
+  - DOMAIN_SUFFIX,msftconnecttest.com
+  - DOMAIN_SUFFIX,msfteducation.ca
+  - DOMAIN_SUFFIX,msftncsi.com
+  - DOMAIN_SUFFIX,msftnet.org
+  - DOMAIN_SUFFIX,msgamesresearch.com
+  - DOMAIN_SUFFIX,msgamestudios.com
+  - DOMAIN_SUFFIX,mshome.net
+  - DOMAIN_SUFFIX,msidentity.com
+  - DOMAIN_SUFFIX,msocdn.com
+  - DOMAIN_SUFFIX,mspil.cn
+  - DOMAIN_SUFFIX,msra.cn
+  - DOMAIN_SUFFIX,msturing.org
+  - DOMAIN_SUFFIX,msudalosti.com
+  - DOMAIN_SUFFIX,mymicrosoft.com
+  - DOMAIN_SUFFIX,nextechafrica.net
+  - DOMAIN_SUFFIX,nxta.org
+  - DOMAIN_SUFFIX,o365cn.com
+  - DOMAIN_SUFFIX,o365files.cn
+  - DOMAIN_SUFFIX,o365weve-dev.com
+  - DOMAIN_SUFFIX,o365weve-ppe.com
+  - DOMAIN_SUFFIX,o365weve.com
+  - DOMAIN_SUFFIX,office.com
+  - DOMAIN_SUFFIX,office.net
+  - DOMAIN_SUFFIX,office365-net.cn
+  - DOMAIN_SUFFIX,office365.cn
+  - DOMAIN_SUFFIX,office365.com
+  - DOMAIN_SUFFIX,officeplus.cn
+  - DOMAIN_SUFFIX,officewebapps.cn
+  - DOMAIN_SUFFIX,onenote.com
+  - DOMAIN_SUFFIX,onenote.net
+  - DOMAIN_SUFFIX,onestore.ms
+  - DOMAIN_SUFFIX,onmschina.cn
+  - DOMAIN_SUFFIX,opticsforthecloud.net
+  - DOMAIN_SUFFIX,outingsapp.com
+  - DOMAIN_SUFFIX,outlook.cn
+  - DOMAIN_SUFFIX,outlook.com
+  - DOMAIN_SUFFIX,passport.net
+  - DOMAIN_SUFFIX,pbiwebcontent.cn
+  - DOMAIN_SUFFIX,pixapp.net
+  - DOMAIN_SUFFIX,powerapps.cn
+  - DOMAIN_SUFFIX,powerappscdn.net
+  - DOMAIN_SUFFIX,powerappsportals.cn
+  - DOMAIN_SUFFIX,powerautomate.cn
+  - DOMAIN_SUFFIX,powerautomate.com
+  - DOMAIN_SUFFIX,powerbi.cn
+  - DOMAIN_SUFFIX,powerbi.com
+  - DOMAIN_SUFFIX,powershellgallery.com
+  - DOMAIN_SUFFIX,projectmurphy.net
+  - DOMAIN_SUFFIX,projectsangam.com
+  - DOMAIN_SUFFIX,pxt.io
+  - DOMAIN_SUFFIX,s-dc-msedge.net
+  - DOMAIN_SUFFIX,s-microsoft.com
+  - DOMAIN_SUFFIX,s-msedge.net
+  - DOMAIN_SUFFIX,s-msft.com
+  - DOMAIN_SUFFIX,s-msn.com
+  - DOMAIN_SUFFIX,sfbassets.com
+  - DOMAIN_SUFFIX,sfbassets.net
+  - DOMAIN_SUFFIX,sfx.ms
+  - DOMAIN_SUFFIX,sharepoint.cn
+  - DOMAIN_SUFFIX,sharepoint.com
+  - DOMAIN_SUFFIX,sharepointonline.com
+  - DOMAIN_SUFFIX,signalr.net
+  - DOMAIN_SUFFIX,skype.com
+  - DOMAIN_SUFFIX,skype.net
+  - DOMAIN_SUFFIX,skypeassets.com
+  - DOMAIN_SUFFIX,skypeassets.net
+  - DOMAIN_SUFFIX,spo-msedge.net
+  - DOMAIN_SUFFIX,staffhub.ms
+  - DOMAIN_SUFFIX,successwithteams.com
+  - DOMAIN_SUFFIX,surface.com
+  - DOMAIN_SUFFIX,svc.ms
+  - DOMAIN_SUFFIX,sway-cdn.com
+  - DOMAIN_SUFFIX,sway.com
+  - DOMAIN_SUFFIX,sysinternals.com
+  - DOMAIN_SUFFIX,t-msedge.net
+  - DOMAIN_SUFFIX,tailwindtraders.com
+  - DOMAIN_SUFFIX,techhub.ms
+  - DOMAIN_SUFFIX,tfsallin.net
+  - DOMAIN_SUFFIX,translatetheweb.com
+  - DOMAIN_SUFFIX,unlocklimitlesslearning.com
+  - DOMAIN_SUFFIX,userpxt.io
+  - DOMAIN_SUFFIX,videobreakdown.com
+  - DOMAIN_SUFFIX,videoindexer.ai
+  - DOMAIN_SUFFIX,virtualearth.net
+  - DOMAIN_SUFFIX,vsallin.net
+  - DOMAIN_SUFFIX,wbd.ms
+  - DOMAIN_SUFFIX,what-fan.net
+  - DOMAIN_SUFFIX,windows-int.net
+  - DOMAIN_SUFFIX,windows.com
+  - DOMAIN_SUFFIX,windows.net
+  - DOMAIN_SUFFIX,windows.nl
+  - DOMAIN_SUFFIX,windows8.hk
+  - DOMAIN_SUFFIX,windowscommunity.net
+  - DOMAIN_SUFFIX,windowsmarketplace.com
+  - DOMAIN_SUFFIX,windowsphone-int.com
+  - DOMAIN_SUFFIX,windowsphone.com
+  - DOMAIN_SUFFIX,windowssearch.com
+  - DOMAIN_SUFFIX,windowsupdate.com
+  - DOMAIN_SUFFIX,winhec.com
+  - DOMAIN_SUFFIX,winhec.net
+  - DOMAIN_SUFFIX,yammer.com
+  - DOMAIN_SUFFIX,skype-edf.akadns.net
+  - DOMAIN_SUFFIX,skypedata.akadns.net
+  - DOMAIN,img-prod-cms-rt-microsoft-com.akamaized.net
+  - DOMAIN,img-s-msn-com.akamaized.net
+  - DOMAIN,mwf-service.akamaized.net
+  - DOMAIN,officecdn-microsoft-com.akamaized.net
+  - DOMAIN,statics-marketingsites-eas-ms-com.akamaized.net
+  - DOMAIN,statics-marketingsites-eus-ms-com.akamaized.net
+  - DOMAIN,statics-marketingsites-wcus-ms-com.akamaized.net
+  - DOMAIN_SUFFIX,clarity.ms
+  - DOMAIN_SUFFIX,microsoftads.com
+  - DOMAIN_SUFFIX,msads.net
+  - DOMAIN_SUFFIX,nelreports.net
+  - DOMAIN_SUFFIX,dcg.microsoft.com
+  - DOMAIN_SUFFIX,dl.delivery.mp.microsoft.com
+  - DOMAIN_SUFFIX,download.windowsupdate.com
+  - DOMAIN,azuremigrate.download.prss.microsoft.com
+  - DOMAIN,azuremigratetest.download.prss.microsoft.com
+  - DOMAIN,azurestackhub.download.prss.microsoft.com
+  - DOMAIN,azurestackhubuat.download.prss.microsoft.com
+  - DOMAIN,b.c2r.ts.cdn.office.net
+  - DOMAIN,cbdstest.download.prss.microsoft.com
+  - DOMAIN,cn.windowssearch.com
+  - DOMAIN,collaborate.download.prss.microsoft.com
+  - DOMAIN,collaborateppe.download.prss.microsoft.com
+  - DOMAIN,ctldl.windowsupdate.com
+  - DOMAIN,developer.microsoft.com
+  - DOMAIN,download.microsoft.com
+  - DOMAIN,dreamspark.download.prss.microsoft.com
+  - DOMAIN,dreamsparkuat.download.prss.microsoft.com
+  - DOMAIN,f.c2r.ts.cdn.office.net
+  - DOMAIN,itacademy.download.prss.microsoft.com
+  - DOMAIN,itacademyuat.download.prss.microsoft.com
+  - DOMAIN,lex.download.prss.microsoft.com
+  - DOMAIN,lexuat.download.prss.microsoft.com
+  - DOMAIN,mbs.download.prss.microsoft.com
+  - DOMAIN,mpnbenefits.download.prss.microsoft.com
+  - DOMAIN,mpnbenefitsrtl.download.prss.microsoft.com
+  - DOMAIN,mpnbenefitsrtluat.download.prss.microsoft.com
+  - DOMAIN,msdn.download.prss.microsoft.com
+  - DOMAIN,msdprod-ad.download.prss.microsoft.com
+  - DOMAIN,msproduct.download.prss.microsoft.com
+  - DOMAIN,myvs.download.prss.microsoft.com
+  - DOMAIN,oemsoc.download.prss.microsoft.com
+  - DOMAIN,oemsocuat.download.prss.microsoft.com
+  - DOMAIN,officecdn.microsoft.com
+  - DOMAIN,officemkt.download.prss.microsoft.com
+  - DOMAIN,officemktuat.download.prss.microsoft.com
+  - DOMAIN,osrelease.download.prss.microsoft.com
+  - DOMAIN,rsm.download.prss.microsoft.com
+  - DOMAIN,sdx.microsoft.com
+  - DOMAIN,shell.cdn.office.net
+  - DOMAIN,software.download.prss.microsoft.com
+  - DOMAIN,statics.teams.cdn.office.net
+  - DOMAIN,storecorefulfillment.download.prss.microsoft.com
+  - DOMAIN,storeedge.microsoft.com
+  - DOMAIN,storeedgefd.dsx.mp.microsoft.com
+  - DOMAIN,surface.download.prss.microsoft.com
+  - DOMAIN,surface.downloads.prss.microsoft.com
+  - DOMAIN,vlportal.download.prss.microsoft.com
+  - DOMAIN,volic.download.prss.microsoft.com
+  - DOMAIN,vscode.download.prss.microsoft.com
+  - DOMAIN,vz.download.prss.microsoft.com
+  - DOMAIN,windbg.download.prss.microsoft.com

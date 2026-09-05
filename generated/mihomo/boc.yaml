@@ -1,23 +1,23 @@
 payload:
-- +.bank-of-china.com
-- +.bankofchina.com
-- +.boc.cn
-- +.bocamchina.com
-- +.bocaviation.com
-- +.boccfc.cc
-- +.boccfc.cn
-- +.bocfullertonbank.com
-- +.bocgi.com
-- +.bocgins.com
-- +.bochk.com
-- +.bochkonline.com
-- +.bocichina.cn
-- +.bocichina.com
-- +.bocichina.com.cn
-- +.bocifunds.cn
-- +.bocifunds.com
-- +.bocifunds.com.cn
-- +.bocigroup.com
-- +.bocim.com
-- +.bocservices.com.cn
-- +.ftcwifi.com
+  - DOMAIN_SUFFIX,bank-of-china.com
+  - DOMAIN_SUFFIX,bankofchina.com
+  - DOMAIN_SUFFIX,boc.cn
+  - DOMAIN_SUFFIX,bocamchina.com
+  - DOMAIN_SUFFIX,bocaviation.com
+  - DOMAIN_SUFFIX,boccfc.cc
+  - DOMAIN_SUFFIX,boccfc.cn
+  - DOMAIN_SUFFIX,bocfullertonbank.com
+  - DOMAIN_SUFFIX,bocgi.com
+  - DOMAIN_SUFFIX,bocgins.com
+  - DOMAIN_SUFFIX,bochk.com
+  - DOMAIN_SUFFIX,bochkonline.com
+  - DOMAIN_SUFFIX,bocichina.cn
+  - DOMAIN_SUFFIX,bocichina.com
+  - DOMAIN_SUFFIX,bocichina.com.cn
+  - DOMAIN_SUFFIX,bocifunds.cn
+  - DOMAIN_SUFFIX,bocifunds.com
+  - DOMAIN_SUFFIX,bocifunds.com.cn
+  - DOMAIN_SUFFIX,bocigroup.com
+  - DOMAIN_SUFFIX,bocim.com
+  - DOMAIN_SUFFIX,bocservices.com.cn
+  - DOMAIN_SUFFIX,ftcwifi.com

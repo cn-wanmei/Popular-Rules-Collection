@@ -1,13 +1,13 @@
 payload:
-- e122475.dscg.akamaiedge.net
-- licdn.cn.cdn20.com
-- linkedin.sc.omtrdc.net
-- +.bizographics.com
-- +.l-0005.dc-msedge.net
-- +.l-0005.l-msedge.net
-- +.licdn.cn
-- +.licdn.com
-- +.linkedin.at
-- +.linkedin.cn
-- +.linkedin.com
-- +.lnkd.in
+  - DOMAIN,e122475.dscg.akamaiedge.net
+  - DOMAIN,licdn.cn.cdn20.com
+  - DOMAIN,linkedin.sc.omtrdc.net
+  - DOMAIN_SUFFIX,bizographics.com
+  - DOMAIN_SUFFIX,l-0005.dc-msedge.net
+  - DOMAIN_SUFFIX,l-0005.l-msedge.net
+  - DOMAIN_SUFFIX,licdn.cn
+  - DOMAIN_SUFFIX,licdn.com
+  - DOMAIN_SUFFIX,linkedin.at
+  - DOMAIN_SUFFIX,linkedin.cn
+  - DOMAIN_SUFFIX,linkedin.com
+  - DOMAIN_SUFFIX,lnkd.in

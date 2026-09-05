@@ -1,9 +1,17 @@
 payload:
-- +.signal.art
-- +.signal.group
-- +.signal.link
-- +.signal.me
-- +.signal.org
-- +.signal.tube
-- +.signalusers.org
-- +.whispersystems.org
+  - DOMAIN_SUFFIX,signal.art
+  - DOMAIN_SUFFIX,signal.group
+  - DOMAIN_SUFFIX,signal.link
+  - DOMAIN_SUFFIX,signal.me
+  - DOMAIN_SUFFIX,signal.tube
+  - DOMAIN_SUFFIX,signal.org
+  - DOMAIN_SUFFIX,signalusers.org
+  - DOMAIN_SUFFIX,whispersystems.org
+  - DOMAIN_SUFFIX,signal.art
+  - DOMAIN_SUFFIX,signal.group
+  - DOMAIN_SUFFIX,signal.link
+  - DOMAIN_SUFFIX,signal.me
+  - DOMAIN_SUFFIX,signal.tube
+  - DOMAIN_SUFFIX,signal.org
+  - DOMAIN_SUFFIX,signalusers.org
+  - DOMAIN_SUFFIX,whispersystems.org

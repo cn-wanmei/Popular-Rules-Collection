@@ -1,12 +1,23 @@
 payload:
-- +.slack-core.com
-- +.slack-edge.com
-- +.slack-files.com
-- +.slack-imgs.com
-- +.slack-msgs.com
-- +.slack-redir.net
-- +.slack.com
-- +.slackb.com
-- +.slackcertified.com
-- +.slackdemo.com
-- +.slackhq.com
+  - DOMAIN_SUFFIX,slack-core.com
+  - DOMAIN_SUFFIX,slack-edge.com
+  - DOMAIN_SUFFIX,slack-files.com
+  - DOMAIN_SUFFIX,slack-imgs.com
+  - DOMAIN_SUFFIX,slack-msgs.com
+  - DOMAIN_SUFFIX,slack-redir.net
+  - DOMAIN_SUFFIX,slack.com
+  - DOMAIN_SUFFIX,slackb.com
+  - DOMAIN_SUFFIX,slackcertified.com
+  - DOMAIN_SUFFIX,slackdemo.com
+  - DOMAIN_SUFFIX,slackhq.com
+  - DOMAIN_SUFFIX,slack-core.com
+  - DOMAIN_SUFFIX,slack-edge.com
+  - DOMAIN_SUFFIX,slack-files.com
+  - DOMAIN_SUFFIX,slack-imgs.com
+  - DOMAIN_SUFFIX,slack-msgs.com
+  - DOMAIN_SUFFIX,slack-redir.net
+  - DOMAIN_SUFFIX,slack.com
+  - DOMAIN_SUFFIX,slackb.com
+  - DOMAIN_SUFFIX,slackcertified.com
+  - DOMAIN_SUFFIX,slackdemo.com
+  - DOMAIN_SUFFIX,slackhq.com

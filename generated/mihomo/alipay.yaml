@@ -1,22 +1,22 @@
 payload:
-- +.alipay
-- +.alipay-corp.com
-- +.alipay-eco.com
-- +.alipay-inc.com
-- +.alipay-traffic.com
-- +.alipay.cn
-- +.alipay.com
-- +.alipay.com.cn
-- +.alipay.hk
-- +.alipay.net
-- +.alipaydesign.com
-- +.alipaydev.com
-- +.alipaydns.com
-- +.alipayeshop.com
-- +.alipaylog.com
-- +.alipaymo.com
-- +.alipayobjects.com
-- +.alipayplus.com
-- +.ifaa.org.cn
-- +.luohanacademy.com
-- +.sinopayment.com.cn
+  - DOMAIN_SUFFIX,alipay
+  - DOMAIN_SUFFIX,alipay-corp.com
+  - DOMAIN_SUFFIX,alipay-eco.com
+  - DOMAIN_SUFFIX,alipay-inc.com
+  - DOMAIN_SUFFIX,alipay-traffic.com
+  - DOMAIN_SUFFIX,alipay.cn
+  - DOMAIN_SUFFIX,alipay.com
+  - DOMAIN_SUFFIX,alipay.com.cn
+  - DOMAIN_SUFFIX,alipay.hk
+  - DOMAIN_SUFFIX,alipay.net
+  - DOMAIN_SUFFIX,alipaydesign.com
+  - DOMAIN_SUFFIX,alipaydev.com
+  - DOMAIN_SUFFIX,alipaydns.com
+  - DOMAIN_SUFFIX,alipayeshop.com
+  - DOMAIN_SUFFIX,alipaylog.com
+  - DOMAIN_SUFFIX,alipaymo.com
+  - DOMAIN_SUFFIX,alipayobjects.com
+  - DOMAIN_SUFFIX,alipayplus.com
+  - DOMAIN_SUFFIX,ifaa.org.cn
+  - DOMAIN_SUFFIX,luohanacademy.com
+  - DOMAIN_SUFFIX,sinopayment.com.cn

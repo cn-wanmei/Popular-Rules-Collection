@@ -1,5 +1,5 @@
 payload:
-- +.fengkongcloud.com
-- +.xhscdn.com
-- +.xhscdn.net
-- +.xiaohongshu.com
+  - DOMAIN_SUFFIX,fengkongcloud.com
+  - DOMAIN_SUFFIX,xhscdn.com
+  - DOMAIN_SUFFIX,xhscdn.net
+  - DOMAIN_SUFFIX,xiaohongshu.com

@@ -1,20 +1,20 @@
 payload:
-- +.ads.service.kugou.com
-- +.adserviceretry.kglink.cn
-- +.adserviceretry.kugou.com
-- +.fanxingliveshow.com
-- +.kgimg.com
-- +.kglink.cn
-- +.ktv.com
-- +.kugoo.com
-- +.kugou.com
-- +.kugou.net
-- +.kugouaudio.com
-- +.kugouipv6.com
-- +.kugoukid.com
-- +.kugouliveshow.com
-- +.kugouringtone.com
-- +.kugousenior.com
-- +.kugoustore.com
-- +.kugouvoice.com
-- +.kugouyouth.com
+  - DOMAIN_SUFFIX,fanxingliveshow.com
+  - DOMAIN_SUFFIX,kgimg.com
+  - DOMAIN_SUFFIX,kglink.cn
+  - DOMAIN_SUFFIX,ktv.com
+  - DOMAIN_SUFFIX,kugoo.com
+  - DOMAIN_SUFFIX,kugou.com
+  - DOMAIN_SUFFIX,kugou.net
+  - DOMAIN_SUFFIX,kugouaudio.com
+  - DOMAIN_SUFFIX,kugouipv6.com
+  - DOMAIN_SUFFIX,kugoukid.com
+  - DOMAIN_SUFFIX,kugouliveshow.com
+  - DOMAIN_SUFFIX,kugouringtone.com
+  - DOMAIN_SUFFIX,kugousenior.com
+  - DOMAIN_SUFFIX,kugoustore.com
+  - DOMAIN_SUFFIX,kugouvoice.com
+  - DOMAIN_SUFFIX,kugouyouth.com
+  - DOMAIN_SUFFIX,ads.service.kugou.com
+  - DOMAIN_SUFFIX,adserviceretry.kglink.cn
+  - DOMAIN_SUFFIX,adserviceretry.kugou.com

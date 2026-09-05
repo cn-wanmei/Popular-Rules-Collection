@@ -1,21 +1,21 @@
 payload:
-- +.crashlytics.com
-- +.crashlyticsreports-pa.googleapis.com
-- +.firebase-settings.crashlytics.com
-- +.firebase.com
-- +.firebase.google.com
-- +.firebase.googleapis.com
-- +.firebase.io
-- +.firebaseapp.com
-- +.firebaseappcheck.googleapis.com
-- +.firebasedynamiclinks-ipv4.googleapis.com
-- +.firebasedynamiclinks-ipv6.googleapis.com
-- +.firebasedynamiclinks.googleapis.com
-- +.firebaseinappmessaging.googleapis.com
-- +.firebaseinstallations.googleapis.com
-- +.firebaseio.com
-- +.firebaselogging-pa.googleapis.com
-- +.firebaselogging.googleapis.com
-- +.firebaseperusertopics-pa.googleapis.com
-- +.firebaseremoteconfig.googleapis.com
-- +.update.crashlytics.com
+  - DOMAIN_SUFFIX,firebase.google.com
+  - DOMAIN_SUFFIX,firebase.googleapis.com
+  - DOMAIN_SUFFIX,firebaseappcheck.googleapis.com
+  - DOMAIN_SUFFIX,firebasedynamiclinks-ipv4.googleapis.com
+  - DOMAIN_SUFFIX,firebasedynamiclinks-ipv6.googleapis.com
+  - DOMAIN_SUFFIX,firebasedynamiclinks.googleapis.com
+  - DOMAIN_SUFFIX,firebaseinappmessaging.googleapis.com
+  - DOMAIN_SUFFIX,firebaseinstallations.googleapis.com
+  - DOMAIN_SUFFIX,firebaselogging-pa.googleapis.com
+  - DOMAIN_SUFFIX,firebaselogging.googleapis.com
+  - DOMAIN_SUFFIX,firebaseperusertopics-pa.googleapis.com
+  - DOMAIN_SUFFIX,firebaseremoteconfig.googleapis.com
+  - DOMAIN_SUFFIX,crashlytics.com
+  - DOMAIN_SUFFIX,firebase.com
+  - DOMAIN_SUFFIX,firebase.io
+  - DOMAIN_SUFFIX,firebaseapp.com
+  - DOMAIN_SUFFIX,firebaseio.com
+  - DOMAIN_SUFFIX,crashlyticsreports-pa.googleapis.com
+  - DOMAIN_SUFFIX,firebase-settings.crashlytics.com
+  - DOMAIN_SUFFIX,update.crashlytics.com

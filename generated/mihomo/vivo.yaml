@@ -1,15 +1,15 @@
 payload:
-- +.bbk.com
-- +.bbktel.com.cn
-- +.funtouchos.com
-- +.gdbbk.com
-- +.iqoo.com
-- +.vivo.cn
-- +.vivo.com
-- +.vivo.com.cn
-- +.vivo.xyz
-- +.vivoglobal.com
-- +.vivosjpt.com
-- +.vivotc.com
-- +.vmic.xyz
-- +.vsearch.club
+  - DOMAIN_SUFFIX,bbk.com
+  - DOMAIN_SUFFIX,bbktel.com.cn
+  - DOMAIN_SUFFIX,funtouchos.com
+  - DOMAIN_SUFFIX,gdbbk.com
+  - DOMAIN_SUFFIX,iqoo.com
+  - DOMAIN_SUFFIX,vivo.cn
+  - DOMAIN_SUFFIX,vivo.com
+  - DOMAIN_SUFFIX,vivo.com.cn
+  - DOMAIN_SUFFIX,vivo.xyz
+  - DOMAIN_SUFFIX,vivoglobal.com
+  - DOMAIN_SUFFIX,vivosjpt.com
+  - DOMAIN_SUFFIX,vivotc.com
+  - DOMAIN_SUFFIX,vmic.xyz
+  - DOMAIN_SUFFIX,vsearch.club

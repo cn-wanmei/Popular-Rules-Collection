@@ -1,61 +1,116 @@
 payload:
-- lf16-effectcdn.byteeffecttos-g.com
-- lf16-pkgcdn.pitaya-clientai.com
-- p16-tiktokcdn-com.akamaized.net
-- roovza-launches.appsflyersdk.com
-- roovza.inapps.appsflyersdk.com
-- roovza.launches.appsflyersdk.com
-- roovza.skadsdk.appsflyersdk.com
-- trae-api-sg.mchost.guru
-- +.analytics.tiktok.com
-- +.bytedapm.com
-- +.bytegecko-i18n.com
-- +.byteintlapi.com
-- +.byteoversea.com
-- +.capcut.com
-- +.ibytedtos.com
-- +.ibyteimg.com
-- +.ipstatp.com
-- +.isnssdk.com
-- +.marscode.com
-- +.muscdn.com
-- +.musical.ly
-- +.p16-tiktokcdn-com.akamaized.net
-- +.roovza-launches.appsflyersdk.com
-- +.roovza.inapps.appsflyersdk.com
-- +.roovza.launches.appsflyersdk.com
-- +.roovza.skadsdk.appsflyersdk.com
-- +.sgpstatp.com
-- +.snssdk.com
-- +.tik-tokapi.com
-- +.tiktok-minis.com
-- +.tiktok-row.net
-- +.tiktok.com
-- +.tiktokcdn-eu.com
-- +.tiktokcdn-us.com
-- +.tiktokcdn-us.com.edgesuite.net
-- +.tiktokcdn.com
-- +.tiktokcdn.com.akamaized.net
-- +.tiktokcdn.com.edgesuite.net
-- +.tiktokd.net
-- +.tiktokd.org
-- +.tiktokeu-cdn.com
-- +.tiktokglobalshopv.com
-- +.tiktokminis.us
-- +.tiktokmusic.app
-- +.tiktokrow-cdn.com
-- +.tiktokv.com
-- +.tiktokv.com.edgekey.net
-- +.tiktokv.com.edgesuite.net
-- +.tiktokv.eu
-- +.tiktokv.us
-- +.tiktokw.eu
-- +.tiktokw.us
-- +.trae.ai
-- +.ttcdn-us.com
-- +.ttlivecdn.com
-- +.ttoverseaus.net
-- +.ttwebview.com
-- +.ttwstatic.com
-- "DOMAIN-KEYWORD,musical.ly"
-- "DOMAIN-KEYWORD,tiktok"
+  - DOMAIN,lf16-effectcdn.byteeffecttos-g.com
+  - DOMAIN,lf16-pkgcdn.pitaya-clientai.com
+  - DOMAIN,p16-tiktokcdn-com.akamaized.net
+  - DOMAIN,trae-api-sg.mchost.guru
+  - DOMAIN_SUFFIX,bytedapm.com
+  - DOMAIN_SUFFIX,bytegecko-i18n.com
+  - DOMAIN_SUFFIX,byteintlapi.com
+  - DOMAIN_SUFFIX,byteoversea.com
+  - DOMAIN_SUFFIX,capcut.com
+  - DOMAIN_SUFFIX,ibytedtos.com
+  - DOMAIN_SUFFIX,ibyteimg.com
+  - DOMAIN_SUFFIX,ipstatp.com
+  - DOMAIN_SUFFIX,isnssdk.com
+  - DOMAIN_SUFFIX,marscode.com
+  - DOMAIN_SUFFIX,muscdn.com
+  - DOMAIN_SUFFIX,musical.ly
+  - DOMAIN_SUFFIX,sgpstatp.com
+  - DOMAIN_SUFFIX,snssdk.com
+  - DOMAIN_SUFFIX,tik-tokapi.com
+  - DOMAIN_SUFFIX,tiktok.com
+  - DOMAIN_SUFFIX,tiktokcdn-us.com
+  - DOMAIN_SUFFIX,tiktokcdn.com
+  - DOMAIN_SUFFIX,tiktokd.net
+  - DOMAIN_SUFFIX,tiktokd.org
+  - DOMAIN_SUFFIX,tiktokmusic.app
+  - DOMAIN_SUFFIX,tiktokv.com
+  - DOMAIN_SUFFIX,tiktokv.us
+  - DOMAIN_SUFFIX,trae.ai
+  - DOMAIN_SUFFIX,ttwebview.com
+  - DOMAIN_KEYWORD,musical.ly
+  - DOMAIN_KEYWORD,tiktok
+  - DOMAIN_SUFFIX,byteoversea.com
+  - DOMAIN_SUFFIX,ibytedtos.com
+  - DOMAIN_SUFFIX,ibyteimg.com
+  - DOMAIN_SUFFIX,ipstatp.com
+  - DOMAIN_SUFFIX,muscdn.com
+  - DOMAIN_SUFFIX,musical.ly
+  - DOMAIN_SUFFIX,sgpstatp.com
+  - DOMAIN_SUFFIX,snssdk.com
+  - DOMAIN_SUFFIX,tik-tokapi.com
+  - DOMAIN_SUFFIX,tiktok.com
+  - DOMAIN_SUFFIX,tiktokcdn.com
+  - DOMAIN_SUFFIX,tiktokv.com
+  - DOMAIN_SUFFIX,bytedapm.com
+  - DOMAIN_SUFFIX,muscdn.com
+  - DOMAIN_SUFFIX,musical.ly
+  - DOMAIN_SUFFIX,tik-tokapi.com
+  - DOMAIN_SUFFIX,tiktok-minis.com
+  - DOMAIN_SUFFIX,tiktok-row.net
+  - DOMAIN_SUFFIX,tiktok.com
+  - DOMAIN_SUFFIX,tiktokcdn-eu.com
+  - DOMAIN_SUFFIX,tiktokcdn-us.com
+  - DOMAIN_SUFFIX,tiktokcdn.com
+  - DOMAIN_SUFFIX,tiktokd.net
+  - DOMAIN_SUFFIX,tiktokd.org
+  - DOMAIN_SUFFIX,tiktokeu-cdn.com
+  - DOMAIN_SUFFIX,tiktokglobalshopv.com
+  - DOMAIN_SUFFIX,tiktokminis.us
+  - DOMAIN_SUFFIX,tiktokrow-cdn.com
+  - DOMAIN_SUFFIX,tiktokv.com
+  - DOMAIN_SUFFIX,tiktokv.eu
+  - DOMAIN_SUFFIX,tiktokv.us
+  - DOMAIN_SUFFIX,tiktokw.eu
+  - DOMAIN_SUFFIX,tiktokw.us
+  - DOMAIN_SUFFIX,ttcdn-us.com
+  - DOMAIN_SUFFIX,ttlivecdn.com
+  - DOMAIN_SUFFIX,ttoverseaus.net
+  - DOMAIN_SUFFIX,ttwstatic.com
+  - DOMAIN_SUFFIX,tiktokcdn-us.com.edgesuite.net
+  - DOMAIN_SUFFIX,tiktokcdn.com.akamaized.net
+  - DOMAIN_SUFFIX,tiktokcdn.com.edgesuite.net
+  - DOMAIN_SUFFIX,tiktokv.com.edgekey.net
+  - DOMAIN_SUFFIX,tiktokv.com.edgesuite.net
+  - DOMAIN_SUFFIX,p16-tiktokcdn-com.akamaized.net
+  - DOMAIN_SUFFIX,roovza-launches.appsflyersdk.com
+  - DOMAIN_SUFFIX,roovza.inapps.appsflyersdk.com
+  - DOMAIN_SUFFIX,roovza.launches.appsflyersdk.com
+  - DOMAIN_SUFFIX,roovza.skadsdk.appsflyersdk.com
+  - DOMAIN_SUFFIX,analytics.tiktok.com
+  - DOMAIN_SUFFIX,bytedapm.com
+  - DOMAIN_SUFFIX,muscdn.com
+  - DOMAIN_SUFFIX,musical.ly
+  - DOMAIN_SUFFIX,tik-tokapi.com
+  - DOMAIN_SUFFIX,tiktok-minis.com
+  - DOMAIN_SUFFIX,tiktok-row.net
+  - DOMAIN_SUFFIX,tiktok.com
+  - DOMAIN_SUFFIX,tiktokcdn-eu.com
+  - DOMAIN_SUFFIX,tiktokcdn-us.com
+  - DOMAIN_SUFFIX,tiktokcdn.com
+  - DOMAIN_SUFFIX,tiktokd.net
+  - DOMAIN_SUFFIX,tiktokd.org
+  - DOMAIN_SUFFIX,tiktokeu-cdn.com
+  - DOMAIN_SUFFIX,tiktokglobalshopv.com
+  - DOMAIN_SUFFIX,tiktokminis.us
+  - DOMAIN_SUFFIX,tiktokrow-cdn.com
+  - DOMAIN_SUFFIX,tiktokv.com
+  - DOMAIN_SUFFIX,tiktokv.eu
+  - DOMAIN_SUFFIX,tiktokv.us
+  - DOMAIN_SUFFIX,tiktokw.eu
+  - DOMAIN_SUFFIX,tiktokw.us
+  - DOMAIN_SUFFIX,ttcdn-us.com
+  - DOMAIN_SUFFIX,ttlivecdn.com
+  - DOMAIN_SUFFIX,ttoverseaus.net
+  - DOMAIN_SUFFIX,ttwstatic.com
+  - DOMAIN_SUFFIX,tiktokcdn-us.com.edgesuite.net
+  - DOMAIN_SUFFIX,tiktokcdn.com.akamaized.net
+  - DOMAIN_SUFFIX,tiktokcdn.com.edgesuite.net
+  - DOMAIN_SUFFIX,tiktokv.com.edgekey.net
+  - DOMAIN_SUFFIX,tiktokv.com.edgesuite.net
+  - DOMAIN,p16-tiktokcdn-com.akamaized.net
+  - DOMAIN,roovza-launches.appsflyersdk.com
+  - DOMAIN,roovza.inapps.appsflyersdk.com
+  - DOMAIN,roovza.launches.appsflyersdk.com
+  - DOMAIN,roovza.skadsdk.appsflyersdk.com
+  - DOMAIN_SUFFIX,analytics.tiktok.com

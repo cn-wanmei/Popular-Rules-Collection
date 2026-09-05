@@ -1,11 +1,11 @@
 payload:
-- +.acd89244c803f7181.awsglobalaccelerator.com
-- +.afa7f374f51cc8991.awsglobalaccelerator.com
-- +.bitballoon.com
-- +.d33wubrfki0l68.cloudfront.net
-- +.netlify.app
-- +.netlify.com
-- +.netlifydns.com
-- +.netlifystatus.com
-- +.netlifyusercontent.com
-- +.ntl.fyi
+  - DOMAIN_SUFFIX,acd89244c803f7181.awsglobalaccelerator.com
+  - DOMAIN_SUFFIX,afa7f374f51cc8991.awsglobalaccelerator.com
+  - DOMAIN_SUFFIX,d33wubrfki0l68.cloudfront.net
+  - DOMAIN_SUFFIX,bitballoon.com
+  - DOMAIN_SUFFIX,netlify.app
+  - DOMAIN_SUFFIX,netlify.com
+  - DOMAIN_SUFFIX,netlifydns.com
+  - DOMAIN_SUFFIX,netlifystatus.com
+  - DOMAIN_SUFFIX,netlifyusercontent.com
+  - DOMAIN_SUFFIX,ntl.fyi

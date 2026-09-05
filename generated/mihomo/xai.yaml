@@ -1,5 +1,5 @@
 payload:
-- +.grok.com
-- +.grok.x.com
-- +.grokipedia.com
-- +.x.ai
+  - DOMAIN_SUFFIX,grok.com
+  - DOMAIN_SUFFIX,grokipedia.com
+  - DOMAIN_SUFFIX,x.ai
+  - DOMAIN_SUFFIX,grok.x.com

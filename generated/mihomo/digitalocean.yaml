@@ -1,7 +1,11 @@
 payload:
-- +.digitalocean-ui.com
-- +.digitalocean.com
-- +.digitaloceanspaces.com
-- +.do.co
-- +.nginxconfig.io
-- +.ondigitalocean.com
+  - DOMAIN_SUFFIX,digitalocean.com
+  - DOMAIN_SUFFIX,digitaloceanspaces.com
+  - DOMAIN_SUFFIX,do.co
+  - DOMAIN_SUFFIX,nginxconfig.io
+  - DOMAIN_SUFFIX,digitalocean.com
+  - DOMAIN_SUFFIX,digitalocean-ui.com
+  - DOMAIN_SUFFIX,digitaloceanspaces.com
+  - DOMAIN_SUFFIX,do.co
+  - DOMAIN_SUFFIX,nginxconfig.io
+  - DOMAIN_SUFFIX,ondigitalocean.com

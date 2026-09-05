@@ -1,5 +1,5 @@
 payload:
-- +.playstation.com
-- +.playstation.net
-- +.playstationnetwork.com
-- +.sonyentertainmentnetwork.com
+  - DOMAIN_SUFFIX,playstation.com
+  - DOMAIN_SUFFIX,playstation.net
+  - DOMAIN_SUFFIX,playstationnetwork.com
+  - DOMAIN_SUFFIX,sonyentertainmentnetwork.com

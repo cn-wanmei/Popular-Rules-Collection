@@ -1,79 +1,129 @@
 payload:
-- +.a2z.org.cn
-- +.acmvalidations.com
-- +.acmvalidationsaws.com
-- +.aesworkshops.com
-- +.amazonaws-china.com
-- +.amazonaws.biz
-- +.amazonaws.cn
-- +.amazonaws.co.uk
-- +.amazonaws.com
-- +.amazonaws.com.cn
-- +.amazonaws.info
-- +.amazonaws.net
-- +.amazonaws.org
-- +.amazonaws.tv
-- +.amazoncognito.com
-- +.amazonses.com
-- +.amazonwebservices.cn
-- +.amazonwebservices.com
-- +.amazonwebservices.com.cn
-- +.amazonworkdocs.cn
-- +.amazonworkdocs.com
-- +.amazonworkdocs.com.cn
-- +.amplifyapp.com
-- +.amplifyframework.com
-- +.amzndns-cn.biz
-- +.amzndns-cn.cn
-- +.amzndns-cn.com
-- +.amzndns-cn.net
-- +.amzndns.co.uk
-- +.amzndns.com
-- +.amzndns.net
-- +.amzndns.org
-- +.asfiovnxocqpcry.com.cn
-- +.aws
-- +.aws-border.cn
-- +.aws-icp-domain-manager.cn
-- +.aws-iot-hackathon.com
-- +.aws.a2z.com
-- +.aws.amazon.com
-- +.aws.com
-- +.aws.dev
-- +.awsapprunner.com
-- +.awsapps.cn
-- +.awsapps.com
-- +.awsapps.com.cn
-- +.awsautopilot.com
-- +.awsautoscaling.com
-- +.awsbraket.com
-- +.awscommandlineinterface.com
-- +.awsedstart.com
-- +.awseducate.com
-- +.awseducate.net
-- +.awseducate.org
-- +.awsglobalaccelerator.com
-- +.awsloft-johannesburg.com
-- +.awsloft-stockholm.com
-- +.awssecworkshops.com
-- +.awsstatic.cn
-- +.awsstatic.com
-- +.awsthinkbox.com
-- +.awstrack.me
-- +.awswaf.com
-- +.cdkworkshop.com
-- +.cloudfront-cn.net
-- +.cloudfront-test.cn
-- +.cloudfront.cn
-- +.cloudfront.com
-- +.cloudfront.net
-- +.containersonaws.com
-- +.elasticbeanstalk.com
-- +.nwcdcloud.cn
-- +.nwcdcloud.com.cn
-- +.nwcddns.cn
-- +.nwcdinfosec.cn
-- +.route53.cn
-- +.sagemaker.com.cn
-- +.thinkboxsoftware.com
-- "DOMAIN-REGEX,.+\\.awsdns-[0-9][0-9]\\.(co\\.uk|com|net|org)$"
+  - DOMAIN_SUFFIX,aws
+  - DOMAIN_SUFFIX,awsbraket.com
+  - DOMAIN_SUFFIX,thinkboxsoftware.com
+  - DOMAIN_SUFFIX,aesworkshops.com
+  - DOMAIN_SUFFIX,amazonaws-china.com
+  - DOMAIN_SUFFIX,amazonaws.biz
+  - DOMAIN_SUFFIX,amazonaws.com
+  - DOMAIN_SUFFIX,amazonaws.info
+  - DOMAIN_SUFFIX,amazonaws.net
+  - DOMAIN_SUFFIX,amazonaws.org
+  - DOMAIN_SUFFIX,amazonaws.tv
+  - DOMAIN_SUFFIX,amazoncognito.com
+  - DOMAIN_SUFFIX,amazonses.com
+  - DOMAIN_SUFFIX,amazonwebservices.com
+  - DOMAIN_SUFFIX,amazonworkdocs.com
+  - DOMAIN_SUFFIX,amplifyapp.com
+  - DOMAIN_SUFFIX,amplifyframework.com
+  - DOMAIN_SUFFIX,aws-iot-hackathon.com
+  - DOMAIN_SUFFIX,aws.com
+  - DOMAIN_SUFFIX,aws.dev
+  - DOMAIN_SUFFIX,awsapprunner.com
+  - DOMAIN_SUFFIX,awsapps.com
+  - DOMAIN_SUFFIX,awsautopilot.com
+  - DOMAIN_SUFFIX,awsautoscaling.com
+  - DOMAIN_SUFFIX,acmvalidations.com
+  - DOMAIN_SUFFIX,acmvalidationsaws.com
+  - DOMAIN_SUFFIX,awscommandlineinterface.com
+  - DOMAIN_SUFFIX,awseducate.com
+  - DOMAIN_SUFFIX,awseducate.net
+  - DOMAIN_SUFFIX,awseducate.org
+  - DOMAIN_SUFFIX,awsglobalaccelerator.com
+  - DOMAIN_SUFFIX,awsloft-johannesburg.com
+  - DOMAIN_SUFFIX,awsloft-stockholm.com
+  - DOMAIN_SUFFIX,awssecworkshops.com
+  - DOMAIN_SUFFIX,awsstatic.com
+  - DOMAIN_SUFFIX,awsthinkbox.com
+  - DOMAIN_SUFFIX,awstrack.me
+  - DOMAIN_SUFFIX,awswaf.com
+  - DOMAIN_SUFFIX,cdkworkshop.com
+  - DOMAIN_SUFFIX,cloudfront.com
+  - DOMAIN_SUFFIX,cloudfront.net
+  - DOMAIN_SUFFIX,containersonaws.com
+  - DOMAIN_SUFFIX,elasticbeanstalk.com
+  - DOMAIN_SUFFIX,awsedstart.com
+  - DOMAIN_SUFFIX,amzndns.com
+  - DOMAIN_SUFFIX,amzndns.org
+  - DOMAIN_SUFFIX,amzndns.net
+  - DOMAIN_SUFFIX,aws.amazon.com
+  - DOMAIN_SUFFIX,aws.a2z.com
+  - DOMAIN_SUFFIX,amazonaws.co.uk
+  - DOMAIN_SUFFIX,amzndns.co.uk
+  - DOMAIN_SUFFIX,a2z.org.cn
+  - DOMAIN_SUFFIX,amazonaws.cn
+  - DOMAIN_SUFFIX,amazonaws.com.cn
+  - DOMAIN_SUFFIX,amazonwebservices.cn
+  - DOMAIN_SUFFIX,amazonwebservices.com.cn
+  - DOMAIN_SUFFIX,amazonworkdocs.cn
+  - DOMAIN_SUFFIX,amazonworkdocs.com.cn
+  - DOMAIN_SUFFIX,asfiovnxocqpcry.com.cn
+  - DOMAIN_SUFFIX,aws-border.cn
+  - DOMAIN_SUFFIX,aws-icp-domain-manager.cn
+  - DOMAIN_SUFFIX,awsapps.cn
+  - DOMAIN_SUFFIX,awsapps.com.cn
+  - DOMAIN_SUFFIX,awsstatic.cn
+  - DOMAIN_SUFFIX,cloudfront-cn.net
+  - DOMAIN_SUFFIX,cloudfront-test.cn
+  - DOMAIN_SUFFIX,cloudfront.cn
+  - DOMAIN_SUFFIX,nwcdcloud.cn
+  - DOMAIN_SUFFIX,nwcdcloud.com.cn
+  - DOMAIN_SUFFIX,nwcddns.cn
+  - DOMAIN_SUFFIX,nwcdinfosec.cn
+  - DOMAIN_SUFFIX,route53.cn
+  - DOMAIN_SUFFIX,sagemaker.com.cn
+  - DOMAIN_SUFFIX,amzndns-cn.biz
+  - DOMAIN_SUFFIX,amzndns-cn.cn
+  - DOMAIN_SUFFIX,amzndns-cn.com
+  - DOMAIN_SUFFIX,amzndns-cn.net
+  - DOMAIN_SUFFIX,acmvalidations.com
+  - DOMAIN_SUFFIX,acmvalidationsaws.com
+  - DOMAIN_SUFFIX,aesworkshops.com
+  - DOMAIN_SUFFIX,amazonaws-china.com
+  - DOMAIN_SUFFIX,amazonaws.biz
+  - DOMAIN_SUFFIX,amazonaws.co.uk
+  - DOMAIN_SUFFIX,amazonaws.com
+  - DOMAIN_SUFFIX,amazonaws.info
+  - DOMAIN_SUFFIX,amazonaws.net
+  - DOMAIN_SUFFIX,amazonaws.org
+  - DOMAIN_SUFFIX,amazonaws.tv
+  - DOMAIN_SUFFIX,amazoncognito.com
+  - DOMAIN_SUFFIX,amazonses.com
+  - DOMAIN_SUFFIX,amazonwebservices.com
+  - DOMAIN_SUFFIX,amazonworkdocs.com
+  - DOMAIN_SUFFIX,amplifyapp.com
+  - DOMAIN_SUFFIX,amplifyframework.com
+  - DOMAIN_SUFFIX,aws-iot-hackathon.com
+  - DOMAIN_SUFFIX,aws.a2z.com
+  - DOMAIN_SUFFIX,aws.amazon.com
+  - DOMAIN_SUFFIX,aws.com
+  - DOMAIN_SUFFIX,aws.dev
+  - DOMAIN_SUFFIX,awsapprunner.com
+  - DOMAIN_SUFFIX,awsapps.com
+  - DOMAIN_SUFFIX,awsautopilot.com
+  - DOMAIN_SUFFIX,awsautoscaling.com
+  - DOMAIN_SUFFIX,awsbraket.com
+  - DOMAIN_SUFFIX,awscommandlineinterface.com
+  - DOMAIN_SUFFIX,awsedstart.com
+  - DOMAIN_SUFFIX,awseducate.com
+  - DOMAIN_SUFFIX,awseducate.net
+  - DOMAIN_SUFFIX,awseducate.org
+  - DOMAIN_SUFFIX,awsglobalaccelerator.com
+  - DOMAIN_SUFFIX,awsloft-johannesburg.com
+  - DOMAIN_SUFFIX,awsloft-stockholm.com
+  - DOMAIN_SUFFIX,awssecworkshops.com
+  - DOMAIN_SUFFIX,awsstatic.com
+  - DOMAIN_SUFFIX,awsthinkbox.com
+  - DOMAIN_SUFFIX,awstrack.me
+  - DOMAIN_SUFFIX,awswaf.com
+  - DOMAIN_SUFFIX,cdkworkshop.com
+  - DOMAIN_SUFFIX,cloudfront.com
+  - DOMAIN_SUFFIX,cloudfront.net
+  - DOMAIN_SUFFIX,containersonaws.com
+  - DOMAIN_SUFFIX,elasticbeanstalk.com
+  - DOMAIN_SUFFIX,thinkboxsoftware.com
+  - DOMAIN_SUFFIX,amzndns.co.uk
+  - DOMAIN_SUFFIX,amzndns.com
+  - DOMAIN_SUFFIX,amzndns.net
+  - DOMAIN_SUFFIX,amzndns.org
+  - DOMAIN_REGEX,.+\.awsdns-[0-9][0-9]\.(co\.uk|com|net|org)$

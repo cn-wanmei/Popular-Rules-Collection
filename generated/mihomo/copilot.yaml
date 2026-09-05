@@ -1,50 +1,50 @@
 payload:
-- api.msn.com
-- api.statsig.com
-- assets.msn.com
-- browser-intake-datadoghq.com
-- chat.openai.com.cdn.cloudflare.net
-- copilot.microsoft.com
-- gateway.bingviz.microsoft.net
-- gateway.bingviz.microsoftapp.net
-- in.appcenter.ms
-- location.microsoft.com
-- odc.officeapps.live.com
-- openai-api.arkoselabs.com
-- openaicomproductionae4b.blob.core.windows.net
-- production-openaicom-storage.azureedge.net
-- r.bing.com
-- self.events.data.microsoft.com
-- services.bingapis.com
-- static.cloudflareinsights.com
-- sydney.bing.com
-- www.bing.com
-- +.algolia.net
-- +.api.microsoftapp.net
-- +.auth0.com
-- +.bing-shopping.microsoft-falcon.io
-- +.challenges.cloudflare.com
-- +.chatgpt.com
-- +.chatgpt.livekit.cloud
-- +.client-api.arkoselabs.com
-- +.edgeservices.bing.com
-- +.events.statsigapi.net
-- +.featuregates.org
-- +.host.livekit.cloud
-- +.identrust.com
-- +.intercom.io
-- +.intercomcdn.com
-- +.launchdarkly.com
-- +.oaistatic.com
-- +.oaiusercontent.com
-- +.observeit.net
-- +.openai.com
-- +.openaiapi-site.azureedge.net
-- +.openaicom.imgix.net
-- +.segment.io
-- +.sentry.io
-- +.stripe.com
-- +.turn.livekit.cloud
-- "DOMAIN-KEYWORD,openaicom-api"
-- "IP-CIDR,24.199.123.28/32"
-- "IP-CIDR,64.23.132.171/32"
+  - DOMAIN,api.msn.com
+  - DOMAIN,api.statsig.com
+  - DOMAIN,assets.msn.com
+  - DOMAIN,browser-intake-datadoghq.com
+  - DOMAIN,chat.openai.com.cdn.cloudflare.net
+  - DOMAIN,copilot.microsoft.com
+  - DOMAIN,gateway.bingviz.microsoft.net
+  - DOMAIN,gateway.bingviz.microsoftapp.net
+  - DOMAIN,in.appcenter.ms
+  - DOMAIN,location.microsoft.com
+  - DOMAIN,odc.officeapps.live.com
+  - DOMAIN,openai-api.arkoselabs.com
+  - DOMAIN,openaicomproductionae4b.blob.core.windows.net
+  - DOMAIN,production-openaicom-storage.azureedge.net
+  - DOMAIN,r.bing.com
+  - DOMAIN,self.events.data.microsoft.com
+  - DOMAIN,services.bingapis.com
+  - DOMAIN,static.cloudflareinsights.com
+  - DOMAIN,sydney.bing.com
+  - DOMAIN,www.bing.com
+  - DOMAIN_SUFFIX,algolia.net
+  - DOMAIN_SUFFIX,api.microsoftapp.net
+  - DOMAIN_SUFFIX,auth0.com
+  - DOMAIN_SUFFIX,bing-shopping.microsoft-falcon.io
+  - DOMAIN_SUFFIX,challenges.cloudflare.com
+  - DOMAIN_SUFFIX,chatgpt.com
+  - DOMAIN_SUFFIX,chatgpt.livekit.cloud
+  - DOMAIN_SUFFIX,client-api.arkoselabs.com
+  - DOMAIN_SUFFIX,edgeservices.bing.com
+  - DOMAIN_SUFFIX,events.statsigapi.net
+  - DOMAIN_SUFFIX,featuregates.org
+  - DOMAIN_SUFFIX,host.livekit.cloud
+  - DOMAIN_SUFFIX,identrust.com
+  - DOMAIN_SUFFIX,intercom.io
+  - DOMAIN_SUFFIX,intercomcdn.com
+  - DOMAIN_SUFFIX,launchdarkly.com
+  - DOMAIN_SUFFIX,oaistatic.com
+  - DOMAIN_SUFFIX,oaiusercontent.com
+  - DOMAIN_SUFFIX,observeit.net
+  - DOMAIN_SUFFIX,openai.com
+  - DOMAIN_SUFFIX,openaiapi-site.azureedge.net
+  - DOMAIN_SUFFIX,openaicom.imgix.net
+  - DOMAIN_SUFFIX,segment.io
+  - DOMAIN_SUFFIX,sentry.io
+  - DOMAIN_SUFFIX,stripe.com
+  - DOMAIN_SUFFIX,turn.livekit.cloud
+  - DOMAIN_KEYWORD,openaicom-api
+  - IP_CIDR,24.199.123.28/32
+  - IP_CIDR,64.23.132.171/32

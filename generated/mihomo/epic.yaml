@@ -1,16 +1,16 @@
 payload:
-- +.battlebreakers.com
-- +.eac-cdn.com
-- +.easy.ac
-- +.easyanticheat.net
-- +.epicgames.com
-- +.epicgames.dev
-- +.fortnite.com
-- +.helpshift.com
-- +.paragon.com
-- +.playparagon.com
-- +.roborecall.com
-- +.shadowcomplex.com
-- +.spyjinx.com
-- +.unrealengine.com
-- +.unrealtournament.com
+  - DOMAIN_SUFFIX,battlebreakers.com
+  - DOMAIN_SUFFIX,eac-cdn.com
+  - DOMAIN_SUFFIX,easy.ac
+  - DOMAIN_SUFFIX,easyanticheat.net
+  - DOMAIN_SUFFIX,epicgames.com
+  - DOMAIN_SUFFIX,epicgames.dev
+  - DOMAIN_SUFFIX,fortnite.com
+  - DOMAIN_SUFFIX,helpshift.com
+  - DOMAIN_SUFFIX,paragon.com
+  - DOMAIN_SUFFIX,playparagon.com
+  - DOMAIN_SUFFIX,roborecall.com
+  - DOMAIN_SUFFIX,shadowcomplex.com
+  - DOMAIN_SUFFIX,spyjinx.com
+  - DOMAIN_SUFFIX,unrealengine.com
+  - DOMAIN_SUFFIX,unrealtournament.com

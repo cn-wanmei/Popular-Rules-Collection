@@ -1,16 +1,16 @@
 payload:
-- +.avatargarenanow-a.akamaihd.net
-- +.cdngarenanow-a.akamaihd.net
-- +.dlmobilegarena-a.akamaihd.net
-- +.garena.co.id
-- +.garena.co.th
-- +.garena.com
-- +.garena.live
-- +.garena.my
-- +.garena.ph
-- +.garena.sg
-- +.garena.tv
-- +.garena.tw
-- +.garena.vn
-- +.garenanow.com
-- +.seagroup.com
+  - DOMAIN_SUFFIX,avatargarenanow-a.akamaihd.net
+  - DOMAIN_SUFFIX,cdngarenanow-a.akamaihd.net
+  - DOMAIN_SUFFIX,dlmobilegarena-a.akamaihd.net
+  - DOMAIN_SUFFIX,garena.co.id
+  - DOMAIN_SUFFIX,garena.co.th
+  - DOMAIN_SUFFIX,garena.com
+  - DOMAIN_SUFFIX,garena.live
+  - DOMAIN_SUFFIX,garena.my
+  - DOMAIN_SUFFIX,garena.ph
+  - DOMAIN_SUFFIX,garena.sg
+  - DOMAIN_SUFFIX,garena.tv
+  - DOMAIN_SUFFIX,garena.tw
+  - DOMAIN_SUFFIX,garena.vn
+  - DOMAIN_SUFFIX,garenanow.com
+  - DOMAIN_SUFFIX,seagroup.com

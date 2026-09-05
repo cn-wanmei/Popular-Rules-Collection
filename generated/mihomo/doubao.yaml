@@ -1,33 +1,33 @@
 payload:
-- +.api-building.fun
-- +.building.fun
-- +.butterfly-static.cn
-- +.butterflyai.cn
-- +.coze-dns-01.com
-- +.coze.cn
-- +.coze.email
-- +.coze.site
-- +.cozeapp.net
-- +.cozebaas.cn
-- +.cozebuild.com
-- +.cozecdn.com
-- +.cozedeploy.com
-- +.cozefn.cn
-- +.cozeide.cn
-- +.cozesdk.com
-- +.cozetest.cn
-- +.cozetest2.cn
-- +.cozetest3.cn
-- +.dbbuilding.fun
-- +.doubao-dev.com
-- +.doubao.com
-- +.doubaocdn.com
-- +.hi-butterfly.cn
-- +.instreet.com
-- +.maoxiangai.com
-- +.myparallelstory.com
-- +.obriccloud.com
-- +.obricclouddw.com
-- +.oceancloudapi.com
-- +.picpic-ai.cn
-- +.pixeldance.com
+  - DOMAIN_SUFFIX,butterfly-static.cn
+  - DOMAIN_SUFFIX,butterflyai.cn
+  - DOMAIN_SUFFIX,coze-dns-01.com
+  - DOMAIN_SUFFIX,coze.cn
+  - DOMAIN_SUFFIX,coze.email
+  - DOMAIN_SUFFIX,coze.site
+  - DOMAIN_SUFFIX,cozeapp.net
+  - DOMAIN_SUFFIX,cozebaas.cn
+  - DOMAIN_SUFFIX,cozebuild.com
+  - DOMAIN_SUFFIX,cozecdn.com
+  - DOMAIN_SUFFIX,cozedeploy.com
+  - DOMAIN_SUFFIX,cozefn.cn
+  - DOMAIN_SUFFIX,cozeide.cn
+  - DOMAIN_SUFFIX,cozesdk.com
+  - DOMAIN_SUFFIX,cozetest.cn
+  - DOMAIN_SUFFIX,cozetest2.cn
+  - DOMAIN_SUFFIX,cozetest3.cn
+  - DOMAIN_SUFFIX,dbbuilding.fun
+  - DOMAIN_SUFFIX,building.fun
+  - DOMAIN_SUFFIX,instreet.com
+  - DOMAIN_SUFFIX,doubao-dev.com
+  - DOMAIN_SUFFIX,doubao.com
+  - DOMAIN_SUFFIX,doubaocdn.com
+  - DOMAIN_SUFFIX,hi-butterfly.cn
+  - DOMAIN_SUFFIX,maoxiangai.com
+  - DOMAIN_SUFFIX,myparallelstory.com
+  - DOMAIN_SUFFIX,oceancloudapi.com
+  - DOMAIN_SUFFIX,obriccloud.com
+  - DOMAIN_SUFFIX,obricclouddw.com
+  - DOMAIN_SUFFIX,picpic-ai.cn
+  - DOMAIN_SUFFIX,pixeldance.com
+  - DOMAIN_SUFFIX,api-building.fun

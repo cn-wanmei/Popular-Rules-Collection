@@ -1,101 +1,101 @@
 payload:
-- +.account-cn.alibabacloud.com
-- +.acjs.aliyun.com
-- +.adash-emas.cn-hangzhou.aliyuncs.com
-- +.adash.man.aliyuncs.com
-- +.alibabacloud.co.in
-- +.alibabacloud.com
-- +.alibabacloud.com.au
-- +.alibabacloud.com.hk
-- +.alibabacloud.com.my
-- +.alibabacloud.com.sg
-- +.alibabacloud.com.tw
-- +.alibabadns.com
-- +.alicdn.com
-- +.alicloud.com
-- +.alicloudapi.com
-- +.alidayu.com
-- +.alidns.com
-- +.aligfwaf.com
-- +.alikunlun.com
-- +.alikunlun.net
-- +.alimama.alicdn.com
-- +.aliyun-inc.com
-- +.aliyun-iot-share.com
-- +.aliyun.com
-- +.aliyuncdn.com
-- +.aliyuncdn.net
-- +.aliyunfile.com
-- +.aliyunidaas.com
-- +.aliyunpds.com
-- +.ap-southeast-1.aliyuncs.com
-- +.api.alibabacloud.com
-- +.atanx.alicdn.com
-- +.atanx2.alicdn.com
-- +.baichuan-sdk.alicdn.com
-- +.cdngslb.com
-- +.cn-beijing.aliyuncs.com
-- +.cn-chengdu.aliyuncs.com
-- +.cn-guangzhou.aliyuncs.com
-- +.cn-hangzhou.aliyuncs.com
-- +.cn-hongkong.aliyuncs.com
-- +.cn-shanghai.aliyuncs.com
-- +.cn.alibabacloud.com
-- +.fcapp.run
-- +.hichina.com
-- +.hotfix-api.aliyuncs.com
-- +.ica-alliance.org
-- +.kunlunaq.com
-- +.kunlunar.com
-- +.kunlunca.com
-- +.kunluncan.com
-- +.kunlunea.com
-- +.kunlungem.com
-- +.kunlungr.com
-- +.kunlunhuf.com
-- +.kunlunle.com
-- +.kunlunli.com
-- +.kunlunno.com
-- +.kunlunpi.com
-- +.kunlunra.com
-- +.kunlunsa.com
-- +.kunlunsc.com
-- +.kunlunsl.com
-- +.kunlunso.com
-- +.kunlunta.com
-- +.kunlunvi.com
-- +.kunlunwe.com
-- +.log-global.aliyuncs.com
-- +.mxhichina.com
-- +.myalicdn.com
-- +.nbsdk-baichuan.alicdn.com
-- +.oss-ap-northeast-1.aliyuncs.com
-- +.oss-ap-northeast-2.aliyuncs.com
-- +.oss-ap-south-1.aliyuncs.com
-- +.oss-ap-southeast-1.aliyuncs.com
-- +.oss-ap-southeast-2.aliyuncs.com
-- +.oss-ap-southeast-3.aliyuncs.com
-- +.oss-ap-southeast-5.aliyuncs.com
-- +.oss-ap-southeast-6.aliyuncs.com
-- +.oss-ap-southeast-7.aliyuncs.com
-- +.oss-cn-beijing.aliyuncs.com
-- +.oss-cn-chengdu.aliyuncs.com
-- +.oss-cn-guangzhou.aliyuncs.com
-- +.oss-cn-hangzhou.aliyuncs.com
-- +.oss-cn-heyuan.aliyuncs.com
-- +.oss-cn-hongkong.aliyuncs.com
-- +.oss-cn-huhehaote.aliyuncs.com
-- +.oss-cn-nanjing.aliyuncs.com
-- +.oss-cn-qingdao.aliyuncs.com
-- +.oss-cn-shanghai.aliyuncs.com
-- +.oss-cn-shenzhen.aliyuncs.com
-- +.oss-cn-wulanchabu.aliyuncs.com
-- +.oss-cn-zhangjiakou.aliyuncs.com
-- +.oss-eu-central-1.aliyuncs.com
-- +.oss-eu-west-1.aliyuncs.com
-- +.oss-me-east-1.aliyuncs.com
-- +.oss-us-east-1.aliyuncs.com
-- +.oss-us-west-1.aliyuncs.com
-- +.registry.aliyuncs.com
-- +.status.alibabacloud.com
-- +.tce.alicdn.com
+  - DOMAIN_SUFFIX,alibabacloud.co.in
+  - DOMAIN_SUFFIX,alibabacloud.com
+  - DOMAIN_SUFFIX,alibabacloud.com.au
+  - DOMAIN_SUFFIX,alibabacloud.com.hk
+  - DOMAIN_SUFFIX,alibabacloud.com.my
+  - DOMAIN_SUFFIX,alibabacloud.com.sg
+  - DOMAIN_SUFFIX,alibabacloud.com.tw
+  - DOMAIN_SUFFIX,alicloud.com
+  - DOMAIN_SUFFIX,account-cn.alibabacloud.com
+  - DOMAIN_SUFFIX,api.alibabacloud.com
+  - DOMAIN_SUFFIX,cn.alibabacloud.com
+  - DOMAIN_SUFFIX,status.alibabacloud.com
+  - DOMAIN_SUFFIX,alibabadns.com
+  - DOMAIN_SUFFIX,alicdn.com
+  - DOMAIN_SUFFIX,alicloudapi.com
+  - DOMAIN_SUFFIX,alidayu.com
+  - DOMAIN_SUFFIX,alidns.com
+  - DOMAIN_SUFFIX,aligfwaf.com
+  - DOMAIN_SUFFIX,alikunlun.com
+  - DOMAIN_SUFFIX,alikunlun.net
+  - DOMAIN_SUFFIX,aliyun-inc.com
+  - DOMAIN_SUFFIX,aliyun-iot-share.com
+  - DOMAIN_SUFFIX,aliyun.com
+  - DOMAIN_SUFFIX,aliyuncdn.com
+  - DOMAIN_SUFFIX,aliyuncdn.net
+  - DOMAIN_SUFFIX,aliyunfile.com
+  - DOMAIN_SUFFIX,aliyunidaas.com
+  - DOMAIN_SUFFIX,aliyunpds.com
+  - DOMAIN_SUFFIX,cdngslb.com
+  - DOMAIN_SUFFIX,fcapp.run
+  - DOMAIN_SUFFIX,hichina.com
+  - DOMAIN_SUFFIX,ica-alliance.org
+  - DOMAIN_SUFFIX,kunlunaq.com
+  - DOMAIN_SUFFIX,kunlunar.com
+  - DOMAIN_SUFFIX,kunlunca.com
+  - DOMAIN_SUFFIX,kunluncan.com
+  - DOMAIN_SUFFIX,kunlunea.com
+  - DOMAIN_SUFFIX,kunlungem.com
+  - DOMAIN_SUFFIX,kunlungr.com
+  - DOMAIN_SUFFIX,kunlunhuf.com
+  - DOMAIN_SUFFIX,kunlunle.com
+  - DOMAIN_SUFFIX,kunlunli.com
+  - DOMAIN_SUFFIX,kunlunno.com
+  - DOMAIN_SUFFIX,kunlunpi.com
+  - DOMAIN_SUFFIX,kunlunra.com
+  - DOMAIN_SUFFIX,kunlunsa.com
+  - DOMAIN_SUFFIX,kunlunsc.com
+  - DOMAIN_SUFFIX,kunlunsl.com
+  - DOMAIN_SUFFIX,kunlunso.com
+  - DOMAIN_SUFFIX,kunlunta.com
+  - DOMAIN_SUFFIX,kunlunvi.com
+  - DOMAIN_SUFFIX,kunlunwe.com
+  - DOMAIN_SUFFIX,mxhichina.com
+  - DOMAIN_SUFFIX,myalicdn.com
+  - DOMAIN_SUFFIX,ap-southeast-1.aliyuncs.com
+  - DOMAIN_SUFFIX,cn-beijing.aliyuncs.com
+  - DOMAIN_SUFFIX,cn-chengdu.aliyuncs.com
+  - DOMAIN_SUFFIX,cn-guangzhou.aliyuncs.com
+  - DOMAIN_SUFFIX,cn-hangzhou.aliyuncs.com
+  - DOMAIN_SUFFIX,cn-hongkong.aliyuncs.com
+  - DOMAIN_SUFFIX,cn-shanghai.aliyuncs.com
+  - DOMAIN_SUFFIX,hotfix-api.aliyuncs.com
+  - DOMAIN_SUFFIX,log-global.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-ap-northeast-1.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-ap-northeast-2.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-ap-south-1.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-ap-southeast-1.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-ap-southeast-2.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-ap-southeast-3.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-ap-southeast-5.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-ap-southeast-6.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-ap-southeast-7.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-cn-beijing.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-cn-chengdu.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-cn-guangzhou.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-cn-hangzhou.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-cn-heyuan.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-cn-hongkong.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-cn-huhehaote.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-cn-nanjing.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-cn-qingdao.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-cn-shanghai.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-cn-shenzhen.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-cn-wulanchabu.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-cn-zhangjiakou.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-eu-central-1.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-eu-west-1.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-me-east-1.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-us-east-1.aliyuncs.com
+  - DOMAIN_SUFFIX,oss-us-west-1.aliyuncs.com
+  - DOMAIN_SUFFIX,registry.aliyuncs.com
+  - DOMAIN_SUFFIX,acjs.aliyun.com
+  - DOMAIN_SUFFIX,adash-emas.cn-hangzhou.aliyuncs.com
+  - DOMAIN_SUFFIX,adash.man.aliyuncs.com
+  - DOMAIN_SUFFIX,alimama.alicdn.com
+  - DOMAIN_SUFFIX,atanx.alicdn.com
+  - DOMAIN_SUFFIX,atanx2.alicdn.com
+  - DOMAIN_SUFFIX,baichuan-sdk.alicdn.com
+  - DOMAIN_SUFFIX,nbsdk-baichuan.alicdn.com
+  - DOMAIN_SUFFIX,tce.alicdn.com

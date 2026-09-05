@@ -1,28 +1,28 @@
 payload:
-- +.err.sh
-- +.hyper.is
-- +.nextjs.org
-- +.now.sh
-- +.static.fun
-- +.title.sh
-- +.turborepo.org
-- +.vercel-analytics.com
-- +.vercel-dns.com
-- +.vercel-insights.com
-- +.vercel-status.com
-- +.vercel.app
-- +.vercel.blog
-- +.vercel.com
-- +.vercel.events
-- +.vercel.link
-- +.vercel.live
-- +.vercel.pub
-- +.vercel.sh
-- +.vercel.store
-- +.zeit-world.co.uk
-- +.zeit-world.com
-- +.zeit-world.net
-- +.zeit-world.org
-- +.zeit.co
-- +.zeit.sh
-- +.zeitworld.com
+  - DOMAIN_SUFFIX,err.sh
+  - DOMAIN_SUFFIX,hyper.is
+  - DOMAIN_SUFFIX,nextjs.org
+  - DOMAIN_SUFFIX,now.sh
+  - DOMAIN_SUFFIX,static.fun
+  - DOMAIN_SUFFIX,title.sh
+  - DOMAIN_SUFFIX,turborepo.org
+  - DOMAIN_SUFFIX,vercel-analytics.com
+  - DOMAIN_SUFFIX,vercel-dns.com
+  - DOMAIN_SUFFIX,vercel-insights.com
+  - DOMAIN_SUFFIX,vercel-status.com
+  - DOMAIN_SUFFIX,vercel.app
+  - DOMAIN_SUFFIX,vercel.blog
+  - DOMAIN_SUFFIX,vercel.com
+  - DOMAIN_SUFFIX,vercel.events
+  - DOMAIN_SUFFIX,vercel.link
+  - DOMAIN_SUFFIX,vercel.live
+  - DOMAIN_SUFFIX,vercel.pub
+  - DOMAIN_SUFFIX,vercel.sh
+  - DOMAIN_SUFFIX,vercel.store
+  - DOMAIN_SUFFIX,zeit-world.co.uk
+  - DOMAIN_SUFFIX,zeit-world.com
+  - DOMAIN_SUFFIX,zeit-world.net
+  - DOMAIN_SUFFIX,zeit-world.org
+  - DOMAIN_SUFFIX,zeit.co
+  - DOMAIN_SUFFIX,zeit.sh
+  - DOMAIN_SUFFIX,zeitworld.com

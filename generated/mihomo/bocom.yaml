@@ -1,7 +1,7 @@
 payload:
-- +.95559.com.cn
-- +.95559.sh.cn
-- +.bankcomm.com
-- +.bankcomm.com.au
-- +.bankcomm.com.mo
-- +.bankcomm.com.tw
+  - DOMAIN_SUFFIX,95559.com.cn
+  - DOMAIN_SUFFIX,95559.sh.cn
+  - DOMAIN_SUFFIX,bankcomm.com
+  - DOMAIN_SUFFIX,bankcomm.com.au
+  - DOMAIN_SUFFIX,bankcomm.com.mo
+  - DOMAIN_SUFFIX,bankcomm.com.tw

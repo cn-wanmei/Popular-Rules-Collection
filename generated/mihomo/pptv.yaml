@@ -1,20 +1,20 @@
 payload:
-- +.bkrent.cn
-- +.g1d.net
-- +.iptv.com.cn
-- +.jiwunote.com.cn
-- +.kidkk.cn
-- +.kidpp.cn
-- +.kidsn.cn
-- +.kidyy.cn
-- +.pplive.cn
-- +.pplive.com
-- +.pplive.com.cn
-- +.pplive.net
-- +.pptv.com
-- +.pptvdata.com
-- +.pptvimg.com
-- +.pptvnet.com
-- +.pptvyun.com
-- +.snrent.cn
-- +.synacast.com
+  - DOMAIN_SUFFIX,bkrent.cn
+  - DOMAIN_SUFFIX,g1d.net
+  - DOMAIN_SUFFIX,iptv.com.cn
+  - DOMAIN_SUFFIX,jiwunote.com.cn
+  - DOMAIN_SUFFIX,kidkk.cn
+  - DOMAIN_SUFFIX,kidpp.cn
+  - DOMAIN_SUFFIX,kidsn.cn
+  - DOMAIN_SUFFIX,kidyy.cn
+  - DOMAIN_SUFFIX,pplive.cn
+  - DOMAIN_SUFFIX,pplive.com
+  - DOMAIN_SUFFIX,pplive.com.cn
+  - DOMAIN_SUFFIX,pplive.net
+  - DOMAIN_SUFFIX,pptv.com
+  - DOMAIN_SUFFIX,pptvdata.com
+  - DOMAIN_SUFFIX,pptvimg.com
+  - DOMAIN_SUFFIX,pptvnet.com
+  - DOMAIN_SUFFIX,pptvyun.com
+  - DOMAIN_SUFFIX,snrent.cn
+  - DOMAIN_SUFFIX,synacast.com

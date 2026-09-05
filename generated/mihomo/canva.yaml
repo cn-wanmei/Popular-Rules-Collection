@@ -1,7 +1,7 @@
 payload:
-- +.affinity-beta.s3.amazonaws.com
-- +.affinity-lessons.s3.amazonaws.com
-- +.affinity.api.serifservices.com
-- +.affinity.studio
-- +.canva.com
-- +.canvastatus.com
+  - DOMAIN_SUFFIX,affinity.studio
+  - DOMAIN_SUFFIX,canva.com
+  - DOMAIN_SUFFIX,canvastatus.com
+  - DOMAIN_SUFFIX,affinity.api.serifservices.com
+  - DOMAIN_SUFFIX,affinity-beta.s3.amazonaws.com
+  - DOMAIN_SUFFIX,affinity-lessons.s3.amazonaws.com
