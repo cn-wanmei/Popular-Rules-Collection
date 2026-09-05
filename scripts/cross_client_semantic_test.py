@@ -23,6 +23,12 @@ LINE_TYPES = {
     "DOMAIN-REGEX": "domain_regex",
     "IP-CIDR": "ip_cidr",
     "IP-CIDR6": "ip_cidr6",
+    # underscore variants emitted by the engine adapters
+    "DOMAIN_SUFFIX": "domain_suffix",
+    "DOMAIN_KEYWORD": "domain_keyword",
+    "DOMAIN_REGEX": "domain_regex",
+    "IP_CIDR": "ip_cidr",
+    "IP_CIDR6": "ip_cidr6",
 }
 
 
@@ -67,7 +73,14 @@ def _extract_lines(path: Path) -> set[tuple[str, str]]:
         typ = LINE_TYPES.get(head.strip().upper())
         if not typ:
             continue
-        value = rest.split(",", 1)[0].strip().strip('"\'')
+        # rest is the full value; strip a trailing policy field only when it
+        # is a bare keyword (no dots, no special chars) — regex values may
+        # themselves contain commas (e.g. {0,5}) so we must not blindly split.
+        value = rest.strip().strip('"\'')
+        # Remove a trailing ",POLICY" suffix only when the last comma-separated
+        # segment looks like a plain policy keyword (all-caps letters/digits).
+        import re as _re
+        value = _re.sub(r',([A-Z][A-Z0-9-]*)$', '', value)
         if value:
             found.add((typ, value))
     return found
