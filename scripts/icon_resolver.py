@@ -15,6 +15,23 @@ PROF = ICON / "profiles.yaml"
 THEME = ICON / "themes.yaml"
 MAN = ICON / "manifest.yaml"
 
+# Semantic overrides for payment brands whose identity must never fall back to
+# a generic platform icon (e.g. Google → Google Pay, Apple → Apple Pay).
+PAYMENT_ASSETS = {
+    "googlepay": "googlepay",
+    "google-pay": "googlepay",
+    "google_pay": "googlepay",
+    "gpay": "googlepay",
+    "applepay": "applepay",
+    "apple-pay": "applepay",
+    "apple_pay": "applepay",
+    "apay": "applepay",
+    "unionpay": "unionpay",
+    "union-pay": "unionpay",
+    "union_pay": "unionpay",
+    "unionpayinternational": "unionpay",
+}
+
 
 def load(p: Path):
     return yaml.safe_load(p.read_text(encoding="utf-8")) if p.exists() else {}
@@ -42,6 +59,28 @@ def resolve(service_id: str, profile: str = "client", theme: str | None = None) 
 
     if theme:
         profile = str((themes.get(theme) or {}).get("profile") or profile)
+
+    # Payment identity is resolved before the generic service registry so that
+    # a generic Google/Apple icon can never silently represent a payment brand.
+    payment_key = PAYMENT_ASSETS.get(str(service_id).strip().lower())
+    if payment_key:
+        png = f"png/128/{payment_key}.png"
+        svg = f"source/{payment_key}.svg"
+        return {
+            "service_id": service_id,
+            "profile": profile,
+            "theme": theme,
+            "variant_id": f"{payment_key}-semantic",
+            "role": "payment_brand",
+            "path_svg": svg,
+            "path_png_256": png,
+            "url_png_256": _raw(defaults, png),
+            "url_svg": _raw(defaults, svg),
+            "color_mode": "identity",
+            "status": "verified",
+            "ok": True,
+            "semantic_override": True,
+        }
 
     svc = (reg.get("services") or {}).get(service_id)
     if not svc:
@@ -99,7 +138,7 @@ def main() -> int:
     ap.add_argument("--sample", action="store_true")
     args = ap.parse_args()
     if args.sample:
-        for sid in ("google", "wechat", "direct", "lan", "12306"):
+        for sid in ("google", "googlepay", "applepay", "unionpay", "wechat", "direct", "lan", "12306"):
             print(json.dumps(resolve(sid, args.profile, args.theme), ensure_ascii=False))
         return 0
     if not args.service_id:

@@ -1,0 +1,16 @@
+# Semantic icon overrides for payment-branded rule names.
+# These mappings intentionally bypass generic parent-brand icons.
+version: 1
+mappings:
+  googlepay: googlepay
+  google-pay: googlepay
+  google_pay: googlepay
+  gpay: googlepay
+  applepay: applepay
+  apple-pay: applepay
+  apple_pay: applepay
+  apay: applepay
+  unionpay: unionpay
+  union-pay: unionpay
+  union_pay: unionpay
+  unionpayinternational: unionpay
