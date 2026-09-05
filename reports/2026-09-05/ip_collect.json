@@ -5,10 +5,10 @@
   "targets": {
     "china": {
       "maps_to": "china",
-      "updated_at": "2026-09-05T04:49:28.965764+00:00",
-      "cidr_count": 9624,
+      "updated_at": "2026-09-05T23:35:25.650798+00:00",
+      "cidr_count": 9626,
       "existing_lines_before": 9624,
-      "incoming_lines": 15851,
+      "incoming_lines": 15855,
       "contributions": [
         {
           "source_id": "loyalsoldier-geoip-cn",
@@ -21,7 +21,7 @@
             "branch": "release"
           },
           "lines_in": 9622,
-          "fetched_at": "2026-09-05T04:49:28.965764+00:00",
+          "fetched_at": "2026-09-05T23:35:25.650798+00:00",
           "notes": "Country CN prefixes only. Never attribute to a product service."
         },
         {
@@ -34,8 +34,8 @@
             "repo": "china-operator-ip",
             "branch": "ip-lists"
           },
-          "lines_in": 6229,
-          "fetched_at": "2026-09-05T04:49:28.965764+00:00",
+          "lines_in": 6233,
+          "fetched_at": "2026-09-05T23:35:25.650798+00:00",
           "notes": "Alternate CN aggregate; merged + containment-deduped into china."
         }
       ],
@@ -43,10 +43,10 @@
     },
     "chinaunicom": {
       "maps_to": "chinaunicom",
-      "updated_at": "2026-09-05T04:49:28.965764+00:00",
-      "cidr_count": 3747,
+      "updated_at": "2026-09-05T23:35:25.650798+00:00",
+      "cidr_count": 3745,
       "existing_lines_before": 3747,
-      "incoming_lines": 3721,
+      "incoming_lines": 3720,
       "contributions": [
         {
           "source_id": "china-operator-unicom",
@@ -58,8 +58,8 @@
             "repo": "china-operator-ip",
             "branch": "ip-lists"
           },
-          "lines_in": 3721,
-          "fetched_at": "2026-09-05T04:49:28.965764+00:00",
+          "lines_in": 3720,
+          "fetched_at": "2026-09-05T23:35:25.650798+00:00",
           "notes": ""
         }
       ],
