@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - "assets/icons/**"
+      - "requirements.lock"
       - "scripts/build_icons.py"
       - "scripts/icon_*.py"
 
@@ -29,6 +30,13 @@ jobs:
           cache-dependency-path: requirements.lock
       - name: Install locked dependencies
         run: python -m pip install -r requirements.lock
+      - name: Verify render toolchain
+        run: |
+          python - <<'PY'
+          import cairosvg
+          print(f"CairoSVG {cairosvg.__version__}")
+          PY
+          python -m compileall -q scripts/build_icons.py scripts/icon_*.py
       - name: Refresh approved brand sources
         run: python scripts/icon_identity_si_refresh.py
       - name: Apply protected payment sources
