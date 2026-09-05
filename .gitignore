@@ -7,3 +7,6 @@ database/provenance/domains.jsonl
 dist/
 # Content-Addressed Storage objects — binary, unbounded size, never commit
 data/cas/
+# Immutable IR snapshot can exceed GitHub's 100MB per-file limit; keep it in CI artifacts
+# and retain the smaller run manifests/canonical data in the repository.
+data/runs/*/ir/ir.json
