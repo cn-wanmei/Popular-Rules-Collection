@@ -16,6 +16,7 @@ jobs:
     timeout-minutes: 120
     permissions:
       contents: write
+      actions: write
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
@@ -84,6 +85,7 @@ jobs:
           PY
 
       - name: Commit collected snapshot
+        id: commit
         shell: bash
         run: |
           set -euo pipefail
@@ -92,16 +94,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Collection owns both immutable snapshots and generated release artifacts.
-          # Stage every collection output so generated files cannot remain as residual changes.
           git add -A "backup/${DAY}/" database/ generated/ data/collection/ sources/health.yaml reports/
           if git diff --staged --quiet; then
             echo "No collection changes."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git commit -m "chore(collect): snapshot ${DAY}"
 
-          # Re-stage all collection-owned outputs after the commit boundary.
           git add -A "backup/${DAY}/" database/ generated/ data/collection/ sources/health.yaml reports/
           if [ -n "$(git status --porcelain=v1)" ]; then
             echo "Collection workspace is dirty after commit. Residual changes:"
@@ -119,8 +119,24 @@ jobs:
             fi
             if git push origin HEAD:main; then
               echo "Published collection snapshot on attempt ${attempt}."
+              echo "changed=true" >> "$GITHUB_OUTPUT"
               exit 0
             fi
             sleep $((attempt * 3))
           done
           exit 1
+
+      - name: Trigger Build Client Rules
+        if: ${{ steps.commit.outputs.changed == 'true' }}
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh workflow run build.yml \
+            --repo "${{ github.repository }}" \
+            --ref main \
+            -f collection_date="$(date -u +%Y-%m-%d)" \
+            -f skip_large="${{ inputs.skip_large }}" \
+            -f dry_run=false
+          echo "Build Client Rules dispatched for collection $(date -u +%Y-%m-%d)."
