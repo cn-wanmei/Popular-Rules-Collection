@@ -1,0 +1,66 @@
+name: Icon QA and Optimization
+
+on:
+  schedule:
+    - cron: "30 23 * * 0"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "assets/icons/**"
+      - "scripts/build_icons.py"
+      - "scripts/icon_*.py"
+
+jobs:
+  icons:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12.14"
+          cache: pip
+          cache-dependency-path: requirements.lock
+      - name: Install locked dependencies
+        run: python -m pip install -r requirements.lock
+      - name: Refresh approved brand sources
+        run: python scripts/icon_identity_si_refresh.py
+      - name: Apply protected payment sources
+        run: python scripts/icon_source_overrides.py
+      - name: Apply icon policy
+        run: python scripts/icon_policy_set.py
+      - name: Normalize brand identity colors
+        run: python scripts/icon_color_identity_fix.py
+      - name: Enforce no-black policy
+        run: python scripts/icon_no_black.py
+      - name: Render complete icon set
+        run: python scripts/build_icons.py --force
+      - name: Re-render protected payment icons
+        run: python scripts/icon_render_overrides.py
+      - name: Full Icon QA
+        run: python scripts/icon_qa.py --json reports/icon_qa.json
+      - name: Commit optimized icon set
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A assets/icons reports/icon_qa.json
+          if git diff --cached --quiet; then
+            echo "Icon set already optimized."
+            exit 0
+          fi
+          git commit -m "chore(icons): full icon QA and optimization [skip ci]"
+          for attempt in 1 2 3; do
+            git fetch --prune origin main
+            git rebase --autostash origin/main || { git rebase --abort || true; exit 1; }
+            if git push origin HEAD:main; then exit 0; fi
+            sleep $((attempt * 3))
+          done
+          exit 1
