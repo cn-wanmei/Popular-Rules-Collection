@@ -77,9 +77,27 @@ def _verify_acquisition_object(snapshot_dir: Path, entry: dict[str, Any]) -> Non
     # still checked below; the manifest digest remains an auditable identity.
 
 
+def _resolve_manifests_dir(snapshot_dir: Path) -> Path | None:
+    """Return the manifests directory, supporting both legacy and current layouts.
+
+    Legacy (pre-refactor): backup/<day>/sources/manifests/
+    Current:               backup/<day>/manifests/
+    """
+    sources_root = snapshot_dir / "sources"
+    candidates = [
+        snapshot_dir / "manifests",          # current layout
+        sources_root / "manifests",          # legacy layout
+    ]
+    for c in candidates:
+        if c.is_dir():
+            return c
+    return None
+
+
 def _ingest_collected_snapshot(snapshot_dir: Path, records: list[dict[str, Any]], errors: list[dict[str, Any]], *, skip_large: bool = False) -> int:
-    sources_root = snapshot_dir / "sources"; manifests_dir = sources_root / "manifests"
-    if not manifests_dir.is_dir() or not sources_root.is_dir(): return 0
+    sources_root = snapshot_dir / "sources"
+    manifests_dir = _resolve_manifests_dir(snapshot_dir)
+    if manifests_dir is None or not sources_root.is_dir(): return 0
     count = 0
     for manifest_path in sorted(manifests_dir.glob("*.json")):
         if manifest_path.name == "_day.json": continue
@@ -87,7 +105,11 @@ def _ingest_collected_snapshot(snapshot_dir: Path, records: list[dict[str, Any]]
         except Exception as e: errors.append({"path": str(manifest_path), "error": f"invalid collection manifest: {e}"}); continue
         source_id = str(manifest.get("source") or manifest_path.stem)
         for entry in manifest.get("files") or []:
-            if entry.get("status") not in {"ok", "not_modified"}: continue
+            # "skipped" with cached_from_cas=True means the file content is
+            # already on disk from a prior run; treat it as effectively "ok".
+            entry_status = entry.get("status")
+            if entry_status not in {"ok", "not_modified", "skipped"}: continue
+            if entry_status == "skipped" and not entry.get("cached_from_cas"): continue
             name = str(entry.get("name") or ""); service = str(entry.get("service") or Path(name).stem).lower()
             if skip_large and service in LARGE_SERVICES: continue
             local_rel = str(entry.get("local") or f"sources/{source_id}/{name}"); path = _resolve_collected_path(snapshot_dir, local_rel)
@@ -108,8 +130,14 @@ def _ingest_collected_snapshot(snapshot_dir: Path, records: list[dict[str, Any]]
 def ingest_snapshot(snapshot_dir: Path, *, skip_large: bool = False) -> dict[str, Any]:
     snapshot_dir = Path(snapshot_dir)
     if not snapshot_dir.is_dir(): raise IngestError(f"Snapshot directory does not exist: {snapshot_dir}")
+    # Support both old-style manifest.json and current-layout manifests/_collection.json.
     manifest_path = snapshot_dir / "manifest.json"
-    if not manifest_path.exists(): raise IngestError(f"Missing manifest.json in {snapshot_dir}")
+    if not manifest_path.exists():
+        alt = snapshot_dir / "manifests" / "_collection.json"
+        if alt.exists():
+            manifest_path = alt
+        else:
+            raise IngestError(f"Missing manifest.json (or manifests/_collection.json) in {snapshot_dir}")
     try: manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     except Exception as e: raise IngestError(f"Invalid manifest.json: {e}") from e
     sources_root = snapshot_dir / "sources"
