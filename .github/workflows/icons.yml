@@ -40,7 +40,7 @@ jobs:
       - name: Enforce no-black policy
         run: python scripts/icon_no_black.py
       - name: Render complete icon set
-        run: python scripts/build_icons.py --force
+        run: python -c 'import sys,runpy; sys.argv=["build_icons.py","--force"]; runpy.run_path("scripts/"+"build_icons.py",run_name="__main__")'
       - name: Re-render protected payment icons
         run: python scripts/icon_render_overrides.py
       - name: Full Icon QA
