@@ -9,7 +9,7 @@ on:
     paths:
       - "assets/icons/**"
       - "requirements.lock"
-      - "scripts/build_icons.py"
+      - "scripts/buil*.py"
       - "scripts/icon_*.py"
 
 jobs:
