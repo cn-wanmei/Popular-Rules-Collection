@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """build_icons.py — Icon System 2.0 renderer (SVG → PNG 64/128/256).
 
+Rendering is intentionally fail-closed: CairoSVG is mandatory. A missing or
+broken renderer must never create letter/placeholder PNGs in the delivery set.
+
 Color rules (brand-first):
   1. Multicolor official SVG → keep paints as-is
   2. Mono black SI + brand.color → tint brand color (no pure-black client icons)
@@ -166,54 +169,29 @@ def brand_color_for(key: str, meta: dict) -> str | None:
     return None
 
 
-def try_cairosvg(data: bytes, dest: Path, size: int) -> bool:
+def require_cairosvg():
     try:
         import cairosvg
-    except ImportError:
-        return False
+    except ImportError as exc:
+        raise SystemExit(
+            "CairoSVG is required for icon rendering; install the pinned render dependencies from requirements.lock"
+        ) from exc
+    return cairosvg
+
+
+def render_png(cairosvg, data: bytes, dest: Path, size: int) -> None:
+    dest.parent.mkdir(parents=True, exist_ok=True)
     try:
-        dest.parent.mkdir(parents=True, exist_ok=True)
         cairosvg.svg2png(
             bytestring=data,
             write_to=str(dest),
             output_width=size,
             output_height=size,
         )
-        return dest.exists() and dest.stat().st_size > 200
-    except Exception as e:
-        print(f"  cairosvg fail {dest.name}@{size}: {e}")
-        return False
-
-
-def ensure_fallback_png(dest: Path, size: int, label: str, color: str = "#64748B") -> None:
-    try:
-        from PIL import Image, ImageDraw, ImageFont
-    except ImportError:
-        return
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    c = color.lstrip("#")
-    try:
-        if len(c) == 3:
-            c = "".join(ch * 2 for ch in c)
-        r, g, b = int(c[0:2], 16), int(c[2:4], 16), int(c[4:6], 16)
-    except Exception:
-        r, g, b = 100, 116, 139
-    im = Image.new("RGBA", (size, size), (241, 245, 249, 255))
-    d = ImageDraw.Draw(im)
-    margin = max(2, size // 16)
-    d.rounded_rectangle(
-        [margin, margin, size - margin, size - margin],
-        radius=size // 8,
-        outline=(r, g, b, 255),
-        width=max(2, size // 32),
-    )
-    letter = (label or "?")[:1].upper()
-    try:
-        font = ImageFont.load_default()
-    except Exception:
-        font = None
-    d.text((size // 2, size // 2), letter, fill=(r, g, b, 255), anchor="mm", font=font)
-    im.save(dest, "PNG")
+    except Exception as exc:
+        raise RuntimeError(f"SVG render failed for {dest} at {size}px: {exc}") from exc
+    if not dest.exists() or dest.stat().st_size <= 200:
+        raise RuntimeError(f"SVG render produced an invalid PNG: {dest}")
 
 
 def main() -> int:
@@ -223,14 +201,8 @@ def main() -> int:
     args = ap.parse_args()
     doc = load_manifest()
     icons = doc.get("icons") or {}
-    ok = skip = fail = 0
-    has_cairo = False
-    try:
-        import cairosvg  # noqa: F401
-
-        has_cairo = True
-    except ImportError:
-        print("WARN: cairosvg not installed — letter fallbacks only")
+    cairo = require_cairosvg()
+    ok = 0
 
     for key, meta in icons.items():
         if not isinstance(meta, dict):
@@ -239,9 +211,7 @@ def main() -> int:
         svg_rel = files.get("svg") or f"source/{key}.svg"
         svg = ICON_ROOT / svg_rel
         if not svg.exists():
-            print(f"  MISS svg {key}")
-            fail += 1
-            continue
+            raise SystemExit(f"missing SVG source for {key}: {svg}")
         color = brand_color_for(key, meta)
         vis = meta.get("visual") or {}
         keep_black = bool(vis.get("approved_mono")) or key in (
@@ -260,29 +230,21 @@ def main() -> int:
         for size in SIZES:
             rel = png_map.get(str(size)) or png_map.get(size) or f"png/{size}/{key}.png"
             dest = ICON_ROOT / rel
-            if dest.exists() and not args.force and dest.stat().st_size > 3000 and has_cairo:
+            if dest.exists() and not args.force and dest.stat().st_size > 3000:
                 ok += 1
                 continue
-            if try_cairosvg(data, dest, size):
-                ok += 1
-            else:
-                ensure_fallback_png(dest, size, key, color or "#64748B")
-                if dest.exists():
-                    ok += 1
-                else:
-                    fail += 1
+            render_png(cairo, data, dest, size)
+            ok += 1
 
         if args.monochrome:
             mdata = prepare_svg_text(svg, color or DEFAULT_INK, monochrome=True)
             for size in SIZES:
                 dest = ICON_ROOT / "monochrome" / str(size) / f"{key}.png"
-                if try_cairosvg(mdata, dest, size):
-                    ok += 1
-                else:
-                    ensure_fallback_png(dest, size, key, color or DEFAULT_INK)
+                render_png(cairo, mdata, dest, size)
+                ok += 1
 
-    print(f"[build_icons] ok={ok} skip={skip} fail={fail} cairosvg={has_cairo} mono={args.monochrome}")
-    return 1 if fail else 0
+    print(f"[build_icons] ok={ok} cairosvg={getattr(cairo, '__version__', 'unknown')} mono={args.monochrome}")
+    return 0
 
 
 if __name__ == "__main__":
