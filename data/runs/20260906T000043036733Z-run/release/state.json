@@ -1,0 +1,25 @@
+{
+  "schema": "release_state_v4",
+  "generated_at": "2026-09-06T00:01:31.464633+00:00",
+  "state": "RC_READY",
+  "gates": {
+    "v2_runtime_dependency_zero": true,
+    "snapshot_present": true,
+    "golden_all_pass": true,
+    "canonical_present": true,
+    "ir_present": true,
+    "artifacts_present": true,
+    "diff_present": true,
+    "quality_all_hard_pass": true,
+    "parser_coverage_present": true,
+    "source_health_present": true,
+    "seven_clients_present": true,
+    "cas_integrity": true
+  },
+  "all_hard_pass": true,
+  "v2_runtime_dependency": 0,
+  "snapshot_id": "snap-20260906T000043037563Z",
+  "quality_score": 100,
+  "cas_verified": true,
+  "can_publish": true
+}

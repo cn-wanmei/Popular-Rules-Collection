@@ -1,0 +1,72 @@
+{
+  "schema": "run_metrics_v2",
+  "generated_at": "2026-09-06T00:01:29.611828+00:00",
+  "run_id": "20260906T000043036733Z-run",
+  "snapshot_id": "snap-20260906T000043037563Z",
+  "records": {
+    "ingested": 259423,
+    "clean": 259423,
+    "quarantined": 1,
+    "unique_rules": 128621,
+    "memberships": 259423,
+    "ingest_errors": 1,
+    "canonical_errors": 0
+  },
+  "rates": {
+    "clean_rate": 1.0,
+    "quarantine_rate": 4e-06,
+    "canonical_error_rate": 0.0
+  },
+  "diff": {
+    "added": 0,
+    "removed": 0,
+    "changed": 0,
+    "baseline_present": true
+  },
+  "source_health": {
+    "datasets": {
+      "files": 34,
+      "bytes": 69674594,
+      "errors": 0,
+      "quarantined": 0
+    },
+    "ip_sources": {
+      "files": 3,
+      "bytes": 308944,
+      "errors": 0,
+      "quarantined": 0
+    },
+    "manifests": {
+      "files": 6,
+      "bytes": 449491,
+      "errors": 0,
+      "quarantined": 0
+    },
+    "sources": {
+      "files": 291,
+      "bytes": 5407438,
+      "errors": 0,
+      "quarantined": 0
+    },
+    "/": {
+      "files": 0,
+      "bytes": 0,
+      "errors": 0,
+      "quarantined": 1
+    }
+  },
+  "parser_coverage": {
+    "input_records": 259424,
+    "recognized_records": 259423,
+    "parse_errors": 1,
+    "recognition_rate": 0.999996,
+    "quarantine_rate": 4e-06
+  },
+  "v2_runtime_dependency": 0,
+  "baseline": {
+    "schema": "baseline_evidence_v1",
+    "decision": "NO_BASELINE",
+    "anomalies": [],
+    "baseline_path": null
+  }
+}
