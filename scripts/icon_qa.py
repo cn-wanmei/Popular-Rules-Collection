@@ -25,6 +25,12 @@ FORBIDDEN = {
     "googlepay": {"google"},
     "unionpay": {"visa", "mastercard", "alipay", "wechatpay", "wechat"},
 }
+# Explicitly reviewed brand renames/aliases. These are not generic fuzzy matches.
+KNOWN_TITLE_ALIASES = {
+    "douyin": {"tiktok"},
+    "paramountplus": {"paramount+", "paramount plus"},
+    "twitter": {"x"},
+}
 STOPWORDS = {"icon", "logo", "brand", "service", "official", "app", "the"}
 
 
@@ -77,9 +83,14 @@ def semantic_match(key: str, name: str, title: str, aliases: set[str]) -> bool:
         return nt == norm(name) or nt in {norm(x) for x in PAYMENT_KEYS[key]}
     if nt in {nk, nn} or nt in aliases or nk in nt or nn in nt:
         return True
+    explicit_aliases = {norm(x) for x in KNOWN_TITLE_ALIASES.get(key, set())}
+    if nt in explicit_aliases:
+        return True
     title_tokens = tokens(title)
     candidate_tokens = tokens(name) | tokens(key)
     for alias in aliases:
+        candidate_tokens |= tokens(alias)
+    for alias in KNOWN_TITLE_ALIASES.get(key, set()):
         candidate_tokens |= tokens(alias)
     return bool(title_tokens & candidate_tokens)
 
@@ -91,7 +102,7 @@ def main():
     doc = yaml.safe_load(MANIFEST.read_text(encoding="utf-8")) or {}
     icons = doc.get("icons") or {}
     report = {
-        "schema": "icon_qa_v3",
+        "schema": "icon_qa_v4",
         "icon_count": len(icons),
         "checks": {
             "source_svg": 0,
