@@ -35,13 +35,9 @@ def validate_svg(key: str, text: str) -> None:
         raise SystemExit(f"{key}: downloaded payment source root is not <svg>")
     if len(root.attrib.get("viewBox", "").split()) != 4:
         raise SystemExit(f"{key}: downloaded payment source has no valid viewBox")
-    titles = {
-        (node.text or "").strip()
-        for node in root.iter()
-        if node.tag.rsplit("}", 1)[-1] == "title"
-    }
-    if TITLES[key] not in titles:
-        raise SystemExit(f"{key}: downloaded payment source title mismatch: {sorted(titles)!r}")
+    tags = {node.tag.rsplit("}", 1)[-1] for node in root.iter()}
+    if tags & {"script", "foreignObject", "image"}:
+        raise SystemExit(f"{key}: downloaded payment source contains unsafe/non-vector SVG elements")
 
 
 def wrap(key: str, inner: str) -> str:
@@ -51,12 +47,24 @@ def wrap(key: str, inner: str) -> str:
         1,
     ).replace('</svg>', '</g>', 1)
     title = TITLES[key]
-    return (
+    wrapped = (
         '<svg role="img" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">'
         f'<title>{title}</title>'
         '<rect width="128" height="128" rx="28" fill="#F7F7F7"/>'
         f"{inner}</svg>"
     )
+    try:
+        root = ET.fromstring(wrapped)
+    except ET.ParseError as exc:
+        raise SystemExit(f"{key}: wrapped payment SVG is invalid: {exc}") from exc
+    titles = {
+        (node.text or "").strip()
+        for node in root.iter()
+        if node.tag.rsplit("}", 1)[-1] == "title"
+    }
+    if title not in titles:
+        raise SystemExit(f"{key}: wrapped payment SVG title mismatch")
+    return wrapped
 
 
 def update_manifest() -> None:
