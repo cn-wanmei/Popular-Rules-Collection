@@ -1,0 +1,15 @@
+{
+  "schema": "icon_qa_v4",
+  "icon_count": 137,
+  "checks": {
+    "source_svg": 137,
+    "png_64": 137,
+    "png_128": 137,
+    "png_256": 137,
+    "semantic": 137,
+    "payment_separation": 3,
+    "payment_provenance": 3
+  },
+  "errors": [],
+  "warnings": []
+}
