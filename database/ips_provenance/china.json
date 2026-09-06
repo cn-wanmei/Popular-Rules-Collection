@@ -1,9 +1,9 @@
 {
   "maps_to": "china",
-  "updated_at": "2026-09-05T23:35:25.650798+00:00",
-  "cidr_count": 9626,
-  "existing_lines_before": 9624,
-  "incoming_lines": 15855,
+  "updated_at": "2026-09-06T23:32:14.790908+00:00",
+  "cidr_count": 9627,
+  "existing_lines_before": 9626,
+  "incoming_lines": 15856,
   "contributions": [
     {
       "source_id": "loyalsoldier-geoip-cn",
@@ -16,7 +16,7 @@
         "branch": "release"
       },
       "lines_in": 9622,
-      "fetched_at": "2026-09-05T23:35:25.650798+00:00",
+      "fetched_at": "2026-09-06T23:32:14.790908+00:00",
       "notes": "Country CN prefixes only. Never attribute to a product service."
     },
     {
@@ -29,8 +29,8 @@
         "repo": "china-operator-ip",
         "branch": "ip-lists"
       },
-      "lines_in": 6233,
-      "fetched_at": "2026-09-05T23:35:25.650798+00:00",
+      "lines_in": 6234,
+      "fetched_at": "2026-09-06T23:32:14.790908+00:00",
       "notes": "Alternate CN aggregate; merged + containment-deduped into china."
     }
   ],
