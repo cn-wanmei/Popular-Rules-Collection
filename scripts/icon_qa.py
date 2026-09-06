@@ -25,10 +25,19 @@ FORBIDDEN = {
     "googlepay": {"google"},
     "unionpay": {"visa", "mastercard", "alipay", "wechatpay", "wechat"},
 }
+STOPWORDS = {"icon", "logo", "brand", "service", "official", "app", "the"}
 
 
 def norm(s):
     return re.sub(r"[^a-z0-9]+", "", str(s).lower())
+
+
+def tokens(s):
+    return {
+        x
+        for x in re.findall(r"[a-z0-9]+", str(s).lower())
+        if x not in STOPWORDS and len(x) > 1
+    }
 
 
 def image_size(path):
@@ -60,6 +69,21 @@ def svg_meta(path):
     }
 
 
+def semantic_match(key: str, name: str, title: str, aliases: set[str]) -> bool:
+    if not title:
+        return True
+    nk, nn, nt = norm(key), norm(name), norm(title)
+    if key in PAYMENT_KEYS:
+        return nt == norm(name) or nt in {norm(x) for x in PAYMENT_KEYS[key]}
+    if nt in {nk, nn} or nt in aliases or nk in nt or nn in nt:
+        return True
+    title_tokens = tokens(title)
+    candidate_tokens = tokens(name) | tokens(key)
+    for alias in aliases:
+        candidate_tokens |= tokens(alias)
+    return bool(title_tokens & candidate_tokens)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--json", default="reports/icon_qa.json")
@@ -67,7 +91,7 @@ def main():
     doc = yaml.safe_load(MANIFEST.read_text(encoding="utf-8")) or {}
     icons = doc.get("icons") or {}
     report = {
-        "schema": "icon_qa_v2",
+        "schema": "icon_qa_v3",
         "icon_count": len(icons),
         "checks": {
             "source_svg": 0,
@@ -124,12 +148,8 @@ def main():
 
         name = str(meta.get("name") or key)
         title = sm.get("title", "")
-        nk, nn, nt = norm(key), norm(name), norm(title)
-        aliases = {norm(x) for x in (meta.get("aliases") or []) if x}
-        ok = not title or nt in {nk, nn} or nt in aliases or nk in nt or nn in nt
-        if key in PAYMENT_KEYS:
-            ok = nt == norm(name) or nt in {norm(x) for x in PAYMENT_KEYS[key]}
-        if ok:
+        aliases = {str(x) for x in (meta.get("aliases") or []) if x}
+        if semantic_match(key, name, title, aliases):
             report["checks"]["semantic"] += 1
         else:
             report["errors"].append(f"{key}: semantic mismatch name={name!r} svg_title={title!r}")
@@ -153,18 +173,18 @@ def main():
     out = ROOT / args.json
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(
-        json.dumps(
-            {
-                "icons": report["icon_count"],
-                "errors": len(report["errors"]),
-                "warnings": len(report["warnings"]),
-                "checks": report["checks"],
-                "report": str(out),
-            },
-            ensure_ascii=False,
-        )
-    )
+    summary = {
+        "icons": report["icon_count"],
+        "errors": len(report["errors"]),
+        "warnings": len(report["warnings"]),
+        "checks": report["checks"],
+        "report": str(out),
+    }
+    print(json.dumps(summary, ensure_ascii=False))
+    if report["errors"]:
+        print("[icon_qa] errors:")
+        for error in report["errors"]:
+            print(f" - {error}")
     return 1 if report["errors"] else 0
 
 
