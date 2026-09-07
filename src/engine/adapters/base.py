@@ -1,11 +1,12 @@
 """Shared helpers for native adapters."""
 from __future__ import annotations
 
-from typing import Iterable
+
+def normalize_type(typ: str) -> str:
+    """Normalize canonical IR rule types to native hyphenated names."""
+    return str(typ).strip().upper().replace("_", "-")
 
 
 def domain_line(typ: str, value: str) -> str:
-    t = typ.upper()
-    if t in ("DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "IP-CIDR", "IP-CIDR6"):
-        return f"{t},{value}"
-    return f"{t},{value}"
+    """Render a classical rule-provider line without a client policy."""
+    return f"{normalize_type(typ)},{value}"
