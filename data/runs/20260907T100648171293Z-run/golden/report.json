@@ -1,0 +1,35 @@
+{
+  "schema": "golden_v3",
+  "all_pass": true,
+  "results": {
+    "L1_snapshot": {
+      "pass": true,
+      "detail": "snapshot_id present"
+    },
+    "L2_canonical": {
+      "pass": true,
+      "detail": "canonical artifacts present and non-empty"
+    },
+    "L3_hierarchy": {
+      "pass": true,
+      "detail": "hierarchy services > 0"
+    },
+    "L4_ir": {
+      "pass": true,
+      "detail": "semantic IR v2 has entities + decisions"
+    },
+    "L5_native_adapters": {
+      "pass": true,
+      "detail": "mihomo:True,singbox:True,surge:True,shadowrocket:True,quantumultx:True,egern:True,loon:True"
+    },
+    "L6_service_views": {
+      "pass": true,
+      "detail": "per-service artifacts exist"
+    },
+    "L7_reproducibility_base": {
+      "pass": true,
+      "detail": "stage manifests present for hash compare"
+    }
+  },
+  "v2_runtime_dependency": 0
+}
