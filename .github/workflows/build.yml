@@ -83,14 +83,61 @@ jobs:
           set -euo pipefail
           ARGS=(--sources "${{ steps.source.outputs.source_root }}" --data data)
           if [ "${{ inputs.skip_large }}" = "true" ]; then ARGS+=(--skip-large); fi
-          PYTHONPATH=. python -m src.engine.cli all "${ARGS[@]}" > engine-run.json
+
+          echo "Engine inputs: sources=${{ steps.source.outputs.source_root }} data=data"
+          if ! PYTHONPATH=. python -m src.engine.cli all "${ARGS[@]}" > engine-run.json; then
+            rc=$?
+            echo "::group::Engine failure report"
+            if [ -s engine-run.json ]; then
+              cat engine-run.json
+              python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("engine-run.json")
+          try:
+              obj = json.loads(p.read_text(encoding="utf-8-sig"))
+          except Exception as exc:
+              print(f"engine-run.json is not valid JSON: {exc}")
+          else:
+              print("engine.status=", obj.get("status"))
+              print("engine.run_id=", obj.get("run_id"))
+              print("engine.failure_stages=", obj.get("failure_stages"))
+              for name, stage in (obj.get("stages") or {}).items():
+                  if isinstance(stage, dict):
+                      print(f"stage.{name}.state=", stage.get("state"))
+                      if stage.get("error") is not None:
+                          print(f"stage.{name}.error=", stage.get("error"))
+                      if stage.get("errors") is not None:
+                          print(f"stage.{name}.errors=", stage.get("errors"))
+          PY
+            else
+              echo "engine-run.json is empty or was not produced"
+            fi
+            echo "::endgroup::"
+            exit "$rc"
+          fi
+
           python - <<'PY'
           import json
-          obj=json.loads(open('engine-run.json',encoding='utf-8').read())
-          if obj.get('status') != 'ok': raise SystemExit(f"engine status={obj.get('status')} failures={obj.get('failure_stages')}")
-          if obj.get('stages',{}).get('release',{}).get('state') != 'RC_READY': raise SystemExit('engine release is not RC_READY')
+          obj=json.loads(open('engine-run.json',encoding='utf-8-sig').read())
+          if obj.get('status') != 'ok':
+              print(json.dumps(obj, ensure_ascii=False, indent=2))
+              raise SystemExit(f"engine status={obj.get('status')} failures={obj.get('failure_stages')}")
+          if obj.get('stages',{}).get('release',{}).get('state') != 'RC_READY':
+              print(json.dumps(obj, ensure_ascii=False, indent=2))
+              raise SystemExit('engine release is not RC_READY')
           open('engine-run-id.txt','w',encoding='utf-8').write(obj['run_id'])
           PY
+
+      - name: Upload engine diagnostic on failure
+        if: ${{ failure() && steps.engine.conclusion == 'failure' }}
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        with:
+          name: engine-diagnostic-${{ github.run_id }}
+          path: engine-run.json
+          if-no-files-found: warn
+          retention-days: 7
+          include-hidden-files: false
 
       - name: Semantic Test
         run: |
