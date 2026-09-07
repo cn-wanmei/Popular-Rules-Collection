@@ -5,7 +5,7 @@ clients:
     dir: generated/mihomo
     extensions: [yaml, list]
   sing-box:
-    dir: generated/sing-box
+    dir: generated/singbox
     extensions: [json]
   surge:
     dir: generated/surge
@@ -19,3 +19,6 @@ clients:
   egern:
     dir: generated/egern
     extensions: [yaml]
+  loon:
+    dir: generated/loon
+    extensions: [list]
