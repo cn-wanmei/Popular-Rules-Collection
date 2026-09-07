@@ -1,10 +1,11 @@
-version: 1
+version: 2
 
+# Client identifiers and artifact directories mirror src.engine.adapters.registry.CLIENTS.
 clients:
   mihomo:
     dir: generated/mihomo
-    extensions: [yaml, list]
-  sing-box:
+    extensions: [yaml]
+  singbox:
     dir: generated/singbox
     extensions: [json]
   surge:
@@ -13,8 +14,8 @@ clients:
   shadowrocket:
     dir: generated/shadowrocket
     extensions: [list]
-  quantumult-x:
-    dir: generated/quantumult-x
+  quantumultx:
+    dir: generated/quantumultx
     extensions: [list]
   egern:
     dir: generated/egern
