@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 from typing import Any
 import yaml
@@ -16,6 +17,23 @@ TYPE_FIELDS = {
     "ip_cidr": "ip_cidr",
     "ip_cidr6": "ip_cidr",
 }
+
+# Egern native rule-set collection keys -> normalized type
+EGERN_FIELDS = {
+    "domain_set": "domain",
+    "domain_suffix_set": "domain_suffix",
+    "domain_keyword_set": "domain_keyword",
+    "domain_regex_set": "domain_regex",
+    "domain_wildcard_set": "domain_wildcard",
+    "ip_cidr_set": "ip_cidr",
+    "ip_cidr6_set": "ip_cidr6",
+    "geoip_set": "geoip",
+    "url_regex_set": "url_regex",
+    "user_agent_set": "user_agent",
+    "dest_port_set": "dest_port",
+    "asn_set": "asn",
+}
+
 LINE_TYPES = {
     "DOMAIN": "domain",
     "DOMAIN-SUFFIX": "domain_suffix",
@@ -61,29 +79,55 @@ def _extract_json(path: Path) -> set[tuple[str, str]]:
     return found
 
 
+def _extract_egern_yaml(path: Path) -> set[tuple[str, str]]:
+    """Extract rules from native Egern Rule Set YAML (domain_*_set collections)."""
+    text = path.read_text(encoding="utf-8")
+    # Fast path: if it still looks like Clash payload, fall through to lines.
+    if text.lstrip().startswith("payload:"):
+        return set()
+    try:
+        obj = yaml.safe_load(text) or {}
+    except Exception:
+        return set()
+    if not isinstance(obj, dict):
+        return set()
+    found: set[tuple[str, str]] = set()
+    for key, values in obj.items():
+        typ = EGERN_FIELDS.get(str(key))
+        if not typ or not isinstance(values, list):
+            continue
+        for item in values:
+            val = str(item).strip()
+            if val:
+                found.add((typ, val))
+    return found
+
+
 def _extract_lines(path: Path) -> set[tuple[str, str]]:
     found: set[tuple[str, str]] = set()
     for raw in path.read_text(encoding="utf-8").splitlines():
         line = raw.strip()
         line = line[1:].strip() if line.startswith("-") else line
-        line = line.strip('"\'')
+        line = line.strip("\"'")
         if not line or line.startswith("#") or "," not in line:
             continue
         head, rest = line.split(",", 1)
         typ = LINE_TYPES.get(head.strip().upper())
         if not typ:
             continue
-        # rest is the full value; strip a trailing policy field only when it
-        # is a bare keyword (no dots, no special chars) — regex values may
-        # themselves contain commas (e.g. {0,5}) so we must not blindly split.
-        value = rest.strip().strip('"\'')
-        # Remove a trailing ",POLICY" suffix only when the last comma-separated
-        # segment looks like a plain policy keyword (all-caps letters/digits).
-        import re as _re
-        value = _re.sub(r',([A-Z][A-Z0-9-]*)$', '', value)
+        value = rest.strip().strip("\"'")
+        value = re.sub(r",([A-Z][A-Z0-9-]*)$", "", value)
         if value:
             found.add((typ, value))
     return found
+
+
+def _extract_yaml(path: Path) -> set[tuple[str, str]]:
+    """YAML may be Clash payload or native Egern collections."""
+    egern = _extract_egern_yaml(path)
+    if egern:
+        return egern
+    return _extract_lines(path)
 
 
 def _extract_client(client_dir: Path, artifact: str) -> set[tuple[str, str]]:
@@ -93,7 +137,12 @@ def _extract_client(client_dir: Path, artifact: str) -> set[tuple[str, str]]:
         raise RuntimeError(f"no {artifact} artifacts in {client_dir}")
     found: set[tuple[str, str]] = set()
     for path in files:
-        found |= _extract_json(path) if artifact == "json" else _extract_lines(path)
+        if artifact == "json":
+            found |= _extract_json(path)
+        elif artifact == "yaml":
+            found |= _extract_yaml(path)
+        else:
+            found |= _extract_lines(path)
     return found
 
 
