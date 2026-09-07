@@ -1,13 +1,7 @@
-payload:
-  - DOMAIN_SUFFIX,callersbane.com
-  - DOMAIN_SUFFIX,minecraft-services.net
-  - DOMAIN_SUFFIX,minecraft.net
-  - DOMAIN_SUFFIX,minecraftservices.com
-  - DOMAIN_SUFFIX,minecraftshop.com
-  - DOMAIN_SUFFIX,mojang.com
-  - DOMAIN_SUFFIX,callersbane.com
-  - DOMAIN_SUFFIX,minecraft-services.net
-  - DOMAIN_SUFFIX,minecraft.net
-  - DOMAIN_SUFFIX,minecraftservices.com
-  - DOMAIN_SUFFIX,minecraftshop.com
-  - DOMAIN_SUFFIX,mojang.com
+domain_suffix_set:
+  - "callersbane.com"
+  - "minecraft-services.net"
+  - "minecraft.net"
+  - "minecraftservices.com"
+  - "minecraftshop.com"
+  - "mojang.com"

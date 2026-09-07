@@ -1,7 +1,4 @@
-payload:
-  - DOMAIN_SUFFIX,hf.co
-  - DOMAIN_SUFFIX,hf.space
-  - DOMAIN_SUFFIX,huggingface.co
-  - DOMAIN_SUFFIX,hf.co
-  - DOMAIN_SUFFIX,hf.space
-  - DOMAIN_SUFFIX,huggingface.co
+domain_suffix_set:
+  - "hf.co"
+  - "hf.space"
+  - "huggingface.co"

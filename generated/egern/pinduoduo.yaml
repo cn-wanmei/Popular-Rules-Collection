@@ -1,4 +1,4 @@
-payload:
-  - DOMAIN_SUFFIX,pddpic.com
-  - DOMAIN_SUFFIX,pinduoduo.com
-  - DOMAIN_SUFFIX,yangkeduo.com
+domain_suffix_set:
+  - "pddpic.com"
+  - "pinduoduo.com"
+  - "yangkeduo.com"

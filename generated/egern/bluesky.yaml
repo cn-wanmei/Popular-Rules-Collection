@@ -1,4 +1,4 @@
-payload:
-  - DOMAIN_SUFFIX,bsky.app
-  - DOMAIN_SUFFIX,bsky.network
-  - DOMAIN_SUFFIX,bsky.social
+domain_suffix_set:
+  - "bsky.app"
+  - "bsky.network"
+  - "bsky.social"

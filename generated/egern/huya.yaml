@@ -1,7 +1,6 @@
-payload:
-  - DOMAIN_SUFFIX,huya.com
-  - DOMAIN_SUFFIX,huyagame.cn
-  - DOMAIN_SUFFIX,peiwanlu.com
-  - DOMAIN_SUFFIX,snapplay.com
-  - DOMAIN_SUFFIX,huya.com
-  - DOMAIN_SUFFIX,msstatic.com
+domain_suffix_set:
+  - "huya.com"
+  - "huyagame.cn"
+  - "peiwanlu.com"
+  - "snapplay.com"
+  - "msstatic.com"

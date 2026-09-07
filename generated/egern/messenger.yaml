@@ -1,5 +1,5 @@
-payload:
-  - DOMAIN_SUFFIX,fbmessenger.com
-  - DOMAIN_SUFFIX,m.me
-  - DOMAIN_SUFFIX,messenger.com
-  - DOMAIN_SUFFIX,nbabot.net
+domain_suffix_set:
+  - "fbmessenger.com"
+  - "m.me"
+  - "messenger.com"
+  - "nbabot.net"

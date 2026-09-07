@@ -1,7 +1,4 @@
-payload:
-  - DOMAIN_SUFFIX,uber-assets.com
-  - DOMAIN_SUFFIX,uber.com
-  - DOMAIN_SUFFIX,ubereats.com
-  - DOMAIN_SUFFIX,uber-assets.com
-  - DOMAIN_SUFFIX,uber.com
-  - DOMAIN_SUFFIX,ubereats.com
+domain_suffix_set:
+  - "uber-assets.com"
+  - "uber.com"
+  - "ubereats.com"

@@ -1,4 +1,5 @@
-payload:
-  - DOMAIN,cdn.usefathom.com
-  - DOMAIN_SUFFIX,anthropic.com
-  - DOMAIN_SUFFIX,claude.ai
+domain_set:
+  - "cdn.usefathom.com"
+domain_suffix_set:
+  - "anthropic.com"
+  - "claude.ai"

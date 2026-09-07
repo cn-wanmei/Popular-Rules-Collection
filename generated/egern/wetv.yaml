@@ -1,8 +1,10 @@
-payload:
-  - DOMAIN,wetv.qq.com
-  - DOMAIN_SUFFIX,iflix-images.akamaized.net
-  - DOMAIN_SUFFIX,iflix.com
-  - DOMAIN_SUFFIX,vv.video.qq.com
-  - DOMAIN_SUFFIX,wetv.vip
-  - DOMAIN_SUFFIX,wetvinfo.com
-  - IP_CIDR,150.109.28.51/32
+domain_set:
+  - "wetv.qq.com"
+domain_suffix_set:
+  - "iflix-images.akamaized.net"
+  - "iflix.com"
+  - "vv.video.qq.com"
+  - "wetv.vip"
+  - "wetvinfo.com"
+ip_cidr_set:
+  - "150.109.28.51/32"

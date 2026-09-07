@@ -1,13 +1,11 @@
-payload:
-  - DOMAIN_SUFFIX,acfun.cn
-  - DOMAIN_SUFFIX,acfun.com
-  - DOMAIN_SUFFIX,acfun.tv
-  - DOMAIN_SUFFIX,aixifan.com
-  - DOMAIN_SUFFIX,ac.fun
-  - DOMAIN_SUFFIX,acfun.cn
-  - DOMAIN_SUFFIX,acfun.net
-  - DOMAIN_SUFFIX,acfunchina.cn
-  - DOMAIN_SUFFIX,acfunchina.com
-  - DOMAIN_SUFFIX,acfunchina.net
-  - DOMAIN_SUFFIX,aixifan.com
-  - DOMAIN_SUFFIX,apilog-web.acfun.cn
+domain_suffix_set:
+  - "acfun.cn"
+  - "acfun.com"
+  - "acfun.tv"
+  - "aixifan.com"
+  - "ac.fun"
+  - "acfun.net"
+  - "acfunchina.cn"
+  - "acfunchina.com"
+  - "acfunchina.net"
+  - "apilog-web.acfun.cn"

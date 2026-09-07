@@ -1,5 +1,5 @@
-payload:
-  - DOMAIN_SUFFIX,grok.com
-  - DOMAIN_SUFFIX,grokipedia.com
-  - DOMAIN_SUFFIX,x.ai
-  - DOMAIN_SUFFIX,grok.x.com
+domain_suffix_set:
+  - "grok.com"
+  - "grokipedia.com"
+  - "x.ai"
+  - "grok.x.com"

@@ -1,4 +1,4 @@
-payload:
-  - DOMAIN_SUFFIX,koowo.cn
-  - DOMAIN_SUFFIX,koowo.com
-  - DOMAIN_SUFFIX,kuwo.cn
+domain_suffix_set:
+  - "koowo.cn"
+  - "koowo.com"
+  - "kuwo.cn"

@@ -1,6 +1,7 @@
-payload:
-  - DOMAIN_SUFFIX,fast.com
-  - DOMAIN_SUFFIX,ooklaserver.net
-  - DOMAIN_SUFFIX,speed.cloudflare.com
-  - DOMAIN_SUFFIX,speed.dler.io
-  - DOMAIN_KEYWORD,speedtest
+domain_suffix_set:
+  - "fast.com"
+  - "ooklaserver.net"
+  - "speed.cloudflare.com"
+  - "speed.dler.io"
+domain_keyword_set:
+  - "speedtest"

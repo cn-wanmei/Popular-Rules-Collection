@@ -1,5 +1,6 @@
-payload:
-  - DOMAIN_SUFFIX,weibo.cn
-  - DOMAIN_SUFFIX,weibo.com
-  - DOMAIN_SUFFIX,weibocdn.com
-  - DOMAIN_KEYWORD,weibo
+domain_suffix_set:
+  - "weibo.cn"
+  - "weibo.com"
+  - "weibocdn.com"
+domain_keyword_set:
+  - "weibo"

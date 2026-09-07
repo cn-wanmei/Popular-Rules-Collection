@@ -1,6 +1,6 @@
-payload:
-  - DOMAIN_SUFFIX,ximalaya.com
-  - DOMAIN_SUFFIX,xmcdn.com
-  - DOMAIN_SUFFIX,adbehavior.ximalaya.com
-  - DOMAIN_SUFFIX,adse.wsa.ximalaya.com
-  - DOMAIN_SUFFIX,adse.ximalaya.com
+domain_suffix_set:
+  - "ximalaya.com"
+  - "xmcdn.com"
+  - "adbehavior.ximalaya.com"
+  - "adse.wsa.ximalaya.com"
+  - "adse.ximalaya.com"

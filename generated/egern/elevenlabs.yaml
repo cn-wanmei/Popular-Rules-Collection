@@ -1,5 +1,3 @@
-payload:
-  - DOMAIN_SUFFIX,elevenlabs.com
-  - DOMAIN_SUFFIX,elevenlabs.io
-  - DOMAIN_SUFFIX,elevenlabs.com
-  - DOMAIN_SUFFIX,elevenlabs.io
+domain_suffix_set:
+  - "elevenlabs.com"
+  - "elevenlabs.io"

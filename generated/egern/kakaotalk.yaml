@@ -1,16 +1,17 @@
-payload:
-  - DOMAIN_SUFFIX,daum.net
-  - DOMAIN_SUFFIX,daumcdn.net
-  - DOMAIN_SUFFIX,daumkakao.io
-  - DOMAIN_SUFFIX,daumpotplayer.com
-  - DOMAIN_SUFFIX,kakao.co.kr
-  - DOMAIN_SUFFIX,kakao.com
-  - DOMAIN_SUFFIX,kakaocdn.net
-  - DOMAIN_SUFFIX,kakaocorp.com
-  - DOMAIN_SUFFIX,potplayer.tv
-  - IP_CIDR,1.201.0.0/24
-  - IP_CIDR,103.246.56.0/22
-  - IP_CIDR,103.27.148.0/22
-  - IP_CIDR,110.76.140.0/22
-  - IP_CIDR,113.61.104.0/22
-  - IP_CIDR,27.0.236.0/22
+domain_suffix_set:
+  - "daum.net"
+  - "daumcdn.net"
+  - "daumkakao.io"
+  - "daumpotplayer.com"
+  - "kakao.co.kr"
+  - "kakao.com"
+  - "kakaocdn.net"
+  - "kakaocorp.com"
+  - "potplayer.tv"
+ip_cidr_set:
+  - "1.201.0.0/24"
+  - "103.246.56.0/22"
+  - "103.27.148.0/22"
+  - "110.76.140.0/22"
+  - "113.61.104.0/22"
+  - "27.0.236.0/22"
