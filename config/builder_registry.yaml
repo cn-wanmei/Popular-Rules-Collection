@@ -3,18 +3,19 @@
 # Publish entry: python -m src.engine.cli promote
 # Full production pipeline: python -m src.engine.cli all
 
-version: 3
-updated: "2026-09-02"
+version: 4
+updated: "2026-09-08"
 engine: "src.engine"
 engine_entry: "python -m src.engine.cli all"
 
+# Client identifiers are the adapter registry keys and generated/ directory names.
 clients:
   mihomo:
     out_dir: generated/mihomo
-    extensions: [".yaml", ".list"]
+    extensions: [".yaml"]
     engine_stage: adapters
-  sing-box:
-    out_dir: generated/sing-box
+  singbox:
+    out_dir: generated/singbox
     extensions: [".json"]
     engine_stage: adapters
   surge:
@@ -25,8 +26,8 @@ clients:
     out_dir: generated/shadowrocket
     extensions: [".list"]
     engine_stage: adapters
-  quantumult-x:
-    out_dir: generated/quantumult-x
+  quantumultx:
+    out_dir: generated/quantumultx
     extensions: [".list"]
     engine_stage: adapters
   egern:
