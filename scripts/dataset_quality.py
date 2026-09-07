@@ -28,6 +28,10 @@ OPTIONAL_NONEMPTY_IF_PRESENT = [
     "database/geoip/cn.txt",
 ]
 
+# Generated exports are build products, not source datasets. The Validate
+# workflow intentionally does not run the network-dependent dataset build, so
+# their absence must not make a source/data-quality validation fail. When a
+# generated export exists, however, validate that it is non-empty.
 EXPECTED_EXPORTS = [
     ("database/network/lan.txt", "generated/network/lan.txt"),
     ("database/geosite/direct.txt", "generated/geosite/direct.txt"),
@@ -175,10 +179,13 @@ def main() -> int:
     for src_rel, dest_rel in EXPECTED_EXPORTS:
         src, dest = ROOT / src_rel, ROOT / dest_rel
         if src.exists() and load_lines(src):
-            if not dest.exists() or not load_lines(dest):
-                hard.append(f"generated missing/empty: {dest_rel} (source {src_rel})")
+            if dest.exists():
+                if not load_lines(dest):
+                    hard.append(f"generated empty: {dest_rel} (source {src_rel})")
+                else:
+                    info.append(f"export ok {dest_rel}")
             else:
-                info.append(f"export ok {dest_rel}")
+                warn.append(f"generated export not built in validation workspace: {dest_rel}")
 
     for rel in (
         "generated/geosite/direct_mihomo.list",

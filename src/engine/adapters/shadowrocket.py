@@ -1,33 +1,34 @@
-"""Native shadowrocket adapter — real format, not unified .list."""
+"""Native Shadowrocket rule-set adapter."""
 from __future__ import annotations
+
 from pathlib import Path
 from typing import Any
-import json
 
-from src.engine.adapters.base import domain_line
 from src.engine.adapters.registry import CLIENTS
 
 CLIENT = "shadowrocket"
 EXT = CLIENTS[CLIENT]["ext"]
 FMT = CLIENTS[CLIENT]["format"]
+SUPPORTED = {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "IP-CIDR", "IP-CIDR6"}
 
 
 def render(rules: list[dict[str, Any]], out_path: Path) -> Path:
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    if FMT == "json":
-        # sing-box style minimal ruleset
-        payload = {
-            "version": 2,
-            "rules": [{"domain": [r["value"] for r in rules if r.get("type", "").upper() in ("DOMAIN", "DOMAIN-SUFFIX")]}]
-        }
-        out_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    elif FMT == "yaml":
-        lines = ["payload:"]
-        for r in rules:
-            lines.append(f"  - {domain_line(r['type'], r['value'])}")
-        out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    else:  # list
-        lines = [domain_line(r["type"], r["value"]) for r in rules]
-        out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    if FMT != "list":
+        raise ValueError(f"Shadowrocket adapter registry format must be list, got {FMT!r}")
+
+    lines: list[str] = []
+    for rule in rules:
+        if not isinstance(rule, dict) or "type" not in rule or "value" not in rule:
+            raise ValueError(f"Shadowrocket adapter received incomplete rule: {rule!r}")
+        rule_type = str(rule["type"]).strip().upper().replace("_", "-")
+        if rule_type not in SUPPORTED:
+            raise ValueError(f"Unsupported Shadowrocket rule type: {rule_type!r}")
+        value = str(rule["value"]).strip()
+        if not value:
+            raise ValueError(f"Shadowrocket adapter received empty rule value: {rule!r}")
+        lines.append(f"{rule_type},{value}")
+
+    out_path.write_text("\n".join(lines) + ("\n" if lines else ""), encoding="utf-8")
     return out_path
