@@ -34,6 +34,8 @@ EGERN_FIELDS = {
     "asn_set": "asn",
 }
 
+# Native line prefixes after uppercasing and "_" -> "-".
+# Includes Surge/Clash DOMAIN-* forms and Quantumult X host/ip6-cidr forms.
 LINE_TYPES = {
     "DOMAIN": "domain",
     "DOMAIN-SUFFIX": "domain_suffix",
@@ -41,17 +43,23 @@ LINE_TYPES = {
     "DOMAIN-REGEX": "domain_regex",
     "IP-CIDR": "ip_cidr",
     "IP-CIDR6": "ip_cidr6",
-    # underscore variants emitted by the engine adapters
-    "DOMAIN_SUFFIX": "domain_suffix",
-    "DOMAIN_KEYWORD": "domain_keyword",
-    "DOMAIN_REGEX": "domain_regex",
-    "IP_CIDR": "ip_cidr",
-    "IP_CIDR6": "ip_cidr6",
+    "HOST": "domain",
+    "HOST-SUFFIX": "domain_suffix",
+    "HOST-KEYWORD": "domain_keyword",
+    "IP6-CIDR": "ip_cidr6",
 }
+
+# Trailing policy/action appended by some native clients (Quantumult X: ", proxy").
+_POLICY_SUFFIX = re.compile(r",\s*[A-Za-z][A-Za-z0-9_-]*$")
+EXAMPLE_LIMIT = 25
 
 
 def _norm_type(value: str) -> str:
     return value.strip().lower().replace("-", "_")
+
+
+def _strip_policy(value: str) -> str:
+    return _POLICY_SUFFIX.sub("", value).strip()
 
 
 def _load_ir(path: Path) -> set[tuple[str, str]]:
@@ -112,11 +120,10 @@ def _extract_lines(path: Path) -> set[tuple[str, str]]:
         if not line or line.startswith("#") or "," not in line:
             continue
         head, rest = line.split(",", 1)
-        typ = LINE_TYPES.get(head.strip().upper())
+        typ = LINE_TYPES.get(head.strip().upper().replace("_", "-"))
         if not typ:
             continue
-        value = rest.strip().strip("\"'")
-        value = re.sub(r",([A-Z][A-Z0-9-]*)$", "", value)
+        value = _strip_policy(rest.strip().strip("\"'"))
         if value:
             found.add((typ, value))
     return found
@@ -144,6 +151,10 @@ def _extract_client(client_dir: Path, artifact: str) -> set[tuple[str, str]]:
         else:
             found |= _extract_lines(path)
     return found
+
+
+def _clip(items: list[tuple[str, str]]) -> list[tuple[str, str]]:
+    return items[:EXAMPLE_LIMIT]
 
 
 def main() -> int:
@@ -176,7 +187,13 @@ def main() -> int:
         missing = sorted(expected - actual)
         unexpected = sorted(actual - normalized_ir)
         if missing or unexpected:
-            failures.append({"client": client, "missing": missing, "unexpected": unexpected})
+            failures.append({
+                "client": client,
+                "missing_count": len(missing),
+                "unexpected_count": len(unexpected),
+                "missing": _clip(missing),
+                "unexpected": _clip(unexpected),
+            })
         else:
             passed.append(client)
 
