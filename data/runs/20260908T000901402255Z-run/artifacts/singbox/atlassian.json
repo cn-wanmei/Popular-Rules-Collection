@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "atlassian.com",
+        "bitbucket.org",
+        "statuspage.io",
+        "trello.com",
+        "trellocdn.com",
+        "atl-paas.net",
+        "atlassian-dev.net",
+        "atlassian.com",
+        "atlassian.net",
+        "bitbucket.io",
+        "bitbucket.org",
+        "jira.com",
+        "ss-inf.net",
+        "statuspage.io"
+      ]
+    }
+  ]
+}

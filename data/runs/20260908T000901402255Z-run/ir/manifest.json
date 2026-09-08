@@ -1,0 +1,15 @@
+{
+  "schema": "semantic_ir_manifest_v2",
+  "ir_schema": "semantic_ir_v2",
+  "contract_version": "2.0",
+  "generated_at": "2026-09-08T00:09:36.688153+00:00",
+  "ir_digest": "3b818f41a8fe3d2c079f1619501b1115d6367f75f7eaf8efa6f06b3252c04a17",
+  "stats": {
+    "rules": 128658,
+    "services": 169,
+    "groups": 0,
+    "aggregates": 169,
+    "decisions": 128658
+  },
+  "v2_runtime_dependency": 0
+}
