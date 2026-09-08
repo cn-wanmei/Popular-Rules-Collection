@@ -23,7 +23,7 @@ jobs:
         run: |
           python - <<'PY' >> "$GITHUB_OUTPUT"
           import yaml
-          d=yaml.safe_load(open('config/upstream/universal-rules.json'))['upstream']
+          d=yaml.safe_load(open('config/upstream/universal-rules.yaml'))['upstream']
           print('manifest_url='+d['manifest_url'])
           print('client_input_url='+d['client_input_url'])
           PY
