@@ -16,6 +16,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install YAML parser
+        run: python -m pip install --disable-pip-version-check pyyaml
       - name: Read upstream contract
         id: config
         run: |
@@ -25,8 +27,6 @@ jobs:
           print('manifest_url='+d['manifest_url'])
           print('client_input_url='+d['client_input_url'])
           PY
-      - name: Install YAML parser
-        run: python -m pip install --disable-pip-version-check pyyaml
       - name: Sync and verify Universal stable release
         run: |
           python scripts/sync_universal.py \
