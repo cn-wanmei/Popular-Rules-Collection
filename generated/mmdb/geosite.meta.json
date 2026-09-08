@@ -1,0 +1,16 @@
+{
+  "id": "dat-geosite",
+  "kind": "binary",
+  "scope": "artifact",
+  "path": "generated/mmdb/geosite.dat",
+  "sha256": "c5fe9448d979391192f5bd553b5e28c39efdc9bd857b7c879a7d995fded0c3fe",
+  "bytes": 4243905,
+  "fetched_at": "2026-09-08T23:53:38.598869+00:00",
+  "source": {
+    "owner": null,
+    "repo": null,
+    "branch": null,
+    "path": "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat",
+    "url": "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  }
+}

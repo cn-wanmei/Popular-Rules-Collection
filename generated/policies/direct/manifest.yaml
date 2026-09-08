@@ -1,0 +1,27 @@
+version: 1
+id: policy-direct
+description: DIRECT routing composition (dataset references only)
+routing_layers:
+  - system
+  - geosite
+  - geoip
+includes:
+  - kind: network
+    id: lan
+    path: database/network/lan.txt
+    layer: system
+  - kind: network
+    id: private
+    path: database/network/private.txt
+    layer: system
+  - kind: geosite
+    id: geosite-direct
+    path: database/geosite/direct.txt
+    layer: geosite
+  - kind: geoip
+    id: geoip-cn
+    path: database/geoip/cn.txt
+    layer: geoip
+notes: >
+  Domain (geosite) before GeoIP for the same target.
+  CN geo is not automatic DIRECT for every Chinese company international service.
