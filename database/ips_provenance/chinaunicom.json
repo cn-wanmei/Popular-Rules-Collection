@@ -1,9 +1,9 @@
 {
   "maps_to": "chinaunicom",
-  "updated_at": "2026-09-08T23:52:55.751809+00:00",
-  "cidr_count": 3759,
-  "existing_lines_before": 3757,
-  "incoming_lines": 3738,
+  "updated_at": "2026-09-09T23:52:17.929486+00:00",
+  "cidr_count": 3762,
+  "existing_lines_before": 3759,
+  "incoming_lines": 3736,
   "contributions": [
     {
       "source_id": "china-operator-unicom",
@@ -15,8 +15,8 @@
         "repo": "china-operator-ip",
         "branch": "ip-lists"
       },
-      "lines_in": 3738,
-      "fetched_at": "2026-09-08T23:52:55.751809+00:00",
+      "lines_in": 3736,
+      "fetched_at": "2026-09-09T23:52:17.929486+00:00",
       "notes": ""
     }
   ],
