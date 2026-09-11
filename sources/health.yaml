@@ -9,18 +9,18 @@ sources:
     empty_blocked: 0
     rules_declared: 8
   blackmatrix7:
-    last_attempt: '2026-09-10T23:46:29.043262+00:00'
-    last_success: '2026-09-10T23:46:29.043275+00:00'
+    last_attempt: '2026-09-11T23:54:53.991159+00:00'
+    last_success: '2026-09-11T23:54:53.991165+00:00'
     failure_count: 0
     status: healthy
-    files_ok: 0
+    files_ok: 2
     files_failed: 0
     empty_blocked: 0
     rules_declared: 139
-    files_not_modified: 0
-    files_skipped: 139
-    conditional_cache_hits: 0
-    scheduler_skips: 139
+    files_not_modified: 137
+    files_skipped: 0
+    conditional_cache_hits: 137
+    scheduler_skips: 0
     fetch_workers: 12
     cas_objects: 139
   loyalsoldier:
@@ -51,48 +51,48 @@ sources:
     empty_blocked: 0
     rules_declared: 3
   metacubex:
-    last_attempt: '2026-09-10T23:46:29.077112+00:00'
-    files_ok: 0
+    last_attempt: '2026-09-11T23:54:55.306642+00:00'
+    files_ok: 11
     files_failed: 0
     empty_blocked: 0
     rules_declared: 76
-    last_success: '2026-09-10T23:46:29.077123+00:00'
+    last_success: '2026-09-11T23:54:55.306649+00:00'
     failure_count: 0
     status: healthy
-    files_not_modified: 0
-    files_skipped: 76
-    conditional_cache_hits: 0
-    scheduler_skips: 76
+    files_not_modified: 65
+    files_skipped: 0
+    conditional_cache_hits: 65
+    scheduler_skips: 0
     fetch_workers: 12
     cas_objects: 76
   v2fly:
-    last_attempt: '2026-09-10T23:46:29.097907+00:00'
+    last_attempt: '2026-09-11T23:54:55.922828+00:00'
     files_ok: 0
     files_failed: 0
     empty_blocked: 0
     rules_declared: 56
-    last_success: '2026-09-10T23:46:29.097915+00:00'
+    last_success: '2026-09-11T23:54:55.922833+00:00'
     failure_count: 0
     status: healthy
-    files_not_modified: 0
-    files_skipped: 56
-    conditional_cache_hits: 0
-    scheduler_skips: 56
+    files_not_modified: 56
+    files_skipped: 0
+    conditional_cache_hits: 56
+    scheduler_skips: 0
     fetch_workers: 12
     cas_objects: 56
   dler:
-    last_attempt: '2026-09-10T23:46:29.106352+00:00'
+    last_attempt: '2026-09-11T23:54:56.088277+00:00'
     files_ok: 0
     files_failed: 0
     empty_blocked: 0
     rules_declared: 20
-    last_success: '2026-09-10T23:46:29.106360+00:00'
+    last_success: '2026-09-11T23:54:56.088283+00:00'
     failure_count: 0
     status: healthy
-    files_not_modified: 0
-    files_skipped: 20
-    conditional_cache_hits: 0
-    scheduler_skips: 20
+    files_not_modified: 20
+    files_skipped: 0
+    conditional_cache_hits: 20
+    scheduler_skips: 0
     fetch_workers: 12
     cas_objects: 20
-updated_at: '2026-09-10T23:46:29.111078+00:00'
+updated_at: '2026-09-11T23:54:56.098184+00:00'
