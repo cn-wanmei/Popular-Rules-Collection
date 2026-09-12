@@ -1,0 +1,41 @@
+name: Universal Rules Upstream Sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '47 4 * * *'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Install YAML parser
+        run: python -m pip install --disable-pip-version-check pyyaml
+      - name: Read upstream contract
+        id: config
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import yaml
+          d=yaml.safe_load(open('config/upstream/universal-rules.yaml'))['upstream']
+          print('manifest_url='+d['manifest_url'])
+          print('client_input_url='+d['client_input_url'])
+          PY
+      - name: Sync and verify Universal stable release
+        run: |
+          python scripts/sync_universal.py \
+            --manifest-url "${{ steps.config.outputs.manifest_url }}" \
+            --input-url "${{ steps.config.outputs.client_input_url }}"
+      - name: Commit verified upstream snapshot
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/upstream/universal
+          git diff --cached --quiet && exit 0
+          git commit -m 'chore: sync Universal stable rules input'
+          git push origin HEAD:main
