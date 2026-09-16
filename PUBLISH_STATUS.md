@@ -3,9 +3,23 @@
 Repository: https://github.com/cn-wanmei/Popular-Rules-Collection
 
 **Release lock:** [`docs/RELEASE_AND_QC.md`](docs/RELEASE_AND_QC.md)  
-**Status:** 当前发布链路按 V3 Engine 运行；Collection、Build、Publish 均受 CI Gate 控制。若最新工作流失败，应以 GitHub Actions 实际运行结果为准。
+**Status:** 当前发布链路按 V3 Engine 运行；Collection、Build、Publish 均受 CI Gate 控制。机器生成区由 CI 自动刷新，人工备注仅保留于文末。
 
-## V3 Pipeline
+<!-- AUTO-GENERATED:BEGIN -->
+
+## Automated status
+
+由 `scripts/classify_health.py` 与 `scripts/generate_publish_status.py` 生成。不要手工编辑本区域。
+
+### Authoritative inputs
+
+- Source lifecycle: `sources/lifecycle.yaml`
+- Raw health telemetry: `sources/health.yaml`
+- Health policy: `config/health_policy.yaml`
+- Retention policy: `config/retention.yaml`
+- Client format registry: `config/formats.yaml`
+
+### V3 pipeline
 
 ```
 validate_registry / validate_dataset_registry / validate_ip_registry
@@ -18,60 +32,24 @@ validate_registry / validate_dataset_registry / validate_ip_registry
   → atomic promotion → generated/
 ```
 
-网络数据链路与 Service Rules 分离：
+### Source health
 
-```
-collect_datasets / collect_ip / collect_providers
-  → database/{network,geosite,geoip,provider,asn,policies}
-  → dataset validation
-  → generated/{network,geosite,geoip,provider,mmdb}
-```
+健康状态不再写入 `sources/health.yaml`；它只保存原始 telemetry。派生状态固定为：`healthy | degraded | stale | failed | retired`，由阈值策略自动计算并写入 `reports/source_health_status.yaml`。
 
-**V3 Build entry:** `PYTHONPATH=. python -m src.engine.cli all`  
-**V3 Publish entry:** `PYTHONPATH=. python -m src.engine.cli promote --run-id <run_id>`
+### Retention
 
-旧版 `scripts/normalize.py`、`scripts/deduplicate.py` 与旧 `scripts/build_*.py` 已退出生产链，仅作为迁移阶段遗留工具保留。
+Retention 是独立维护流程，不属于 Collection 主 DAG。策略为 `config/retention.yaml`，执行器为 `scripts/retention.py`，工作流为 `.github/workflows/retention.yml`；默认 dry-run，破坏性清理必须显式 `workflow_dispatch` + `apply=true`。
 
-## Clients (7)
+### Legacy / V2
 
-| Client | Output |
-|--------|--------|
-| Mihomo | `generated/mihomo/{id}.yaml` |
-| sing-box | `generated/singbox/{id}.json` |
-| Surge | `generated/surge/{id}.list` |
-| Shadowrocket | `generated/shadowrocket/{id}.list` |
-| Quantumult X | `generated/quantumultx/{id}.list` |
-| Egern | `generated/egern/{id}.yaml` |
-| Loon | `generated/loon/{id}.list` |
+V2 migration layer、`scripts/normalize.py` 与旧兼容解析器已完成依赖扫描并删除。Git 历史保留作为审计记录；`scripts/legacy_reference_gate.py` 防止生产路径重新引入这些引用。
 
-目录名称以 `config/builder_registry.yaml` / `config/formats.yaml` 为准。
+<!-- AUTO-GENERATED:END -->
 
-## Source health & drift
+## Human Notes
 
-- `sources/health.yaml` — 永不隐藏 `files_failed`
-- Dead paths: **explicit** registry fix only (no Collector fuzzy match)
-- Soft QC: identity NAME check, rule-count delta, domain quality width
-- Collection manifest 必须与本轮固定 `collection_date` 一致
+仅记录需要人工说明、但不应与机器状态混淆的例外事项。稳定运行状态、最近 Collection/Build/Publish、Source Health、客户端输出与 Retention 统计均由 CI 自动生成。
 
-## Intentional unmaterialized
+### Operational note
 
-SSOT: `config/intentional_unmaterialized.yaml`  
-mistral / gcp / supabase / roblox / minecraft — `no_verified_upstream`  
-blizzard → `maps_to_battlenet` · stripe · adblock-light/pro（deferred）
-
-taobao / qq / baidumap / baidupan / quickpass / googledrive / googlemaps / temu / jdfinance / amazonaws / dingtalk / siri / steamcn 等按该 SSOT 的 aggregate / mapping 规则处理。
-
-## Gaming
-
-- **garena** — BM registered
-- **roblox / minecraft** — no verified BM/MetaCubeX path as of 2026-08-27
-
-## Phase 3
-
-- **3A/3B** — release_snapshot / generated_manifest / source_snapshot / service_score + intentional SSOT ✅
-- **3C next batch** — anthropic, digitalocean, atlassian, slack, line, kakaotalk, adobe, oracle（verified BM）
-  → `reports/candidates/batch_3c_2026-08-27.md`
-
-## Operational note
-
-历史快照是否继续保留由后续 retention policy 决定；不要以单次 CI 失败直接判断已发布规则失效。当前状态以 GitHub Actions 与最近一次成功 Collection / Build / Publish 为准。
+不要以单次 CI 失败直接判断已发布规则失效。当前生产状态应以 GitHub Actions、最近成功的 Collection/Build/Publish 及其 immutable evidence 为准。
