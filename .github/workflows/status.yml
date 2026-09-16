@@ -6,9 +6,6 @@ on:
     types: [completed]
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 concurrency:
   group: generated-status
   cancel-in-progress: false
@@ -17,6 +14,8 @@ jobs:
   status:
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion != 'cancelled' }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633
         with:
