@@ -3,7 +3,7 @@
 Repository: https://github.com/cn-wanmei/Popular-Rules-Collection
 
 **Release lock:** [`docs/RELEASE_AND_QC.md`](docs/RELEASE_AND_QC.md)  
-**Status:** 当前发布链路按 V3 Engine 运行；Collection、Build、Publish 均受 CI Gate 控制。若最新工作流失败，应以 GitHub Actions 实际运行结果为准。 
+**Status:** 当前发布链路按 V3 Engine 运行；Collection、Build、Publish 均受 CI Gate 控制。若最新工作流失败，应以 GitHub Actions 实际运行结果为准。
 
 ## V3 Pipeline
 
