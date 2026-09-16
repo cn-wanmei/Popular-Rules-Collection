@@ -1,0 +1,10 @@
+version: 1
+classification:
+  healthy_max_age_hours: 48
+  degraded_max_age_hours: 168
+  failed_if_failure_count_positive: true
+unknown_source_policy: failed
+notes:
+  - Source lifecycle is owned by sources/registry.yaml.
+  - sources/health.yaml is raw telemetry only; status is derived and must not be hand-maintained.
+  - retired sources are classified as retired regardless of telemetry freshness.
