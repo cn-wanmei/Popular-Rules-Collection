@@ -6,10 +6,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from src.engine.canonical.store import load_rules, load_memberships
-from src.engine.hierarchy.resolver import load_hierarchy
+from src.engine.canonical.store import load_memberships, load_rules
 from src.engine.decision.engine import decide_batch
+from src.engine.hierarchy.resolver import load_hierarchy
 from src.engine.ir.contract import CONTRACT_VERSION, ir_digest, validate_ir
+from src.engine.semantic_intent import apply_semantic_intent
 
 
 def build_ir(canonical_dir: Path, hierarchy_dir: Path, out_dir: Path) -> dict[str, Any]:
@@ -18,8 +19,9 @@ def build_ir(canonical_dir: Path, hierarchy_dir: Path, out_dir: Path) -> dict[st
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    rules = list(load_rules(canonical_dir).values())
+    source_rules = list(load_rules(canonical_dir).values())
     memberships = load_memberships(canonical_dir)
+    rules, semantic_intent = apply_semantic_intent(source_rules, memberships)
     hier = load_hierarchy(hierarchy_dir)
     decisions = decide_batch(rules, memberships)
     rules_by_id = {r["id"]: r for r in rules}
@@ -36,7 +38,7 @@ def build_ir(canonical_dir: Path, hierarchy_dir: Path, out_dir: Path) -> dict[st
     ir = {
         "schema": "semantic_ir_v2",
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "engine_version": "1.0.1",
+        "engine_version": "1.0.2",
         "v2_runtime_dependency": 0,
         "entities": entities,
         # Deprecated read-only aliases retained during IR v2 migration.
@@ -64,12 +66,14 @@ def build_ir(canonical_dir: Path, hierarchy_dir: Path, out_dir: Path) -> dict[st
             for r in sorted(rules, key=lambda x: x["id"])
         ],
         "decisions": decisions,
+        "semantic_intent": semantic_intent,
         "stats": {
             "rules": len(rules),
             "services": len(entities["services"]),
             "groups": len(entities["groups"]),
             "aggregates": len(entities["aggregates"]),
             "decisions": len(decisions),
+            "semantic_intent_applied": semantic_intent["applied_count"],
         },
     }
     validate_ir(ir)
@@ -85,6 +89,7 @@ def build_ir(canonical_dir: Path, hierarchy_dir: Path, out_dir: Path) -> dict[st
         "generated_at": ir["generated_at"],
         "ir_digest": digest,
         "stats": ir["stats"],
+        "semantic_intent": semantic_intent,
         "v2_runtime_dependency": 0,
     }
     (out_dir / "manifest.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
