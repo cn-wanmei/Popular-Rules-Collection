@@ -12,19 +12,11 @@ FORBIDDEN_IMPORT_SUBSTRINGS = (
     "src.v3", "build_from_v2_services", "snapshot_v2_oracle", "legacy_import.v2_service_model",
 )
 
-ALLOWED_LEGACY_TOUCH = {"src/engine/ingest/migrate_legacy.py"}
 LEGACY_SERVICE_DIR = Path("database") / "services"
 LEGACY_PRODUCTION_REFERENCES = (
-    Path("scripts") / "normalize.py",
-    Path("scripts") / "deduplicate.py",
-    Path("scripts") / "schema_validate.py",
-    Path("scripts") / "validate.py",
-    Path("scripts") / "builder_validate.py",
     LEGACY_SERVICE_DIR,
     Path("database") / "domains",
     Path("database") / "ips",
-    "python scripts/normalize.py",
-    "python scripts/deduplicate.py",
     "build_from_v2_services",
 )
 
