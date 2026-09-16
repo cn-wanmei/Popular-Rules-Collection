@@ -1,0 +1,30 @@
+version: 1
+lifecycle:
+  hot_days: 30
+  historical_days: 90
+  audit_days: 180
+backup:
+  keep_days: 30
+  keep_min_successful: 7
+reports:
+  keep_days: 90
+runs:
+  keep_days: 30
+  keep_min_successful: 10
+release_evidence:
+  keep_days: 180
+generated:
+  keep_latest_only: true
+health_history:
+  keep_days: 180
+failed_runs:
+  keep_days: 14
+protection:
+  preserve_referenced_release_artifacts: true
+  preserve_baseline_references: true
+  preserve_latest_successful_snapshot: true
+  preserve_audit_evidence: true
+execution:
+  default_mode: dry-run
+  schedule: weekly
+  destructive_requires_explicit_apply: true
