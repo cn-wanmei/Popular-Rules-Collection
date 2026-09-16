@@ -38,11 +38,20 @@ jobs:
       - name: Naming Gate
         run: PYTHONPATH=. python -m src.engine.cli naming_gate
 
-      - name: Collection DAG
+      - name: Resolve collection date
+        id: date
         shell: bash
         run: |
           set -euo pipefail
           DAY=$(date -u +%Y-%m-%d)
+          echo "day=${DAY}" >> "$GITHUB_OUTPUT"
+          echo "Collection date: ${DAY}"
+
+      - name: Collection DAG
+        shell: bash
+        run: |
+          set -euo pipefail
+          DAY="${{ steps.date.outputs.day }}"
           ARGS=(--data data --date "$DAY" --workers 12)
           if [ "${{ inputs.skip_large }}" = "true" ]; then ARGS+=(--skip-large); fi
           set +e
@@ -69,27 +78,30 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          DAY=$(date -u +%Y-%m-%d)
+          DAY="${{ steps.date.outputs.day }}"
           P="backup/${DAY}/manifests/_collection.json"
           test -s "$P"
           python - <<'PY'
           import json
-          from datetime import datetime, timezone
+          import os
           from pathlib import Path
-          day=datetime.now(timezone.utc).strftime('%Y-%m-%d')
+          day=os.environ["COLLECTION_DAY"]
           obj=json.loads((Path('backup')/day/'manifests/_collection.json').read_text(encoding='utf-8'))
           assert obj['schema']=='collection_manifest_v1'
+          assert obj['date']==day
           assert obj['status'] in {'ok','degraded'}
           assert obj['root']==f'backup/{day}'
           assert obj.get('manifest_sha256')
           PY
+        env:
+          COLLECTION_DAY: ${{ steps.date.outputs.day }}
 
       - name: Commit collected snapshot
         id: commit
         shell: bash
         run: |
           set -euo pipefail
-          DAY=$(date -u +%Y-%m-%d)
+          DAY="${{ steps.date.outputs.day }}"
           rm -f collection-result.json collection-result.stderr.log
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -136,7 +148,7 @@ jobs:
           gh workflow run build.yml \
             --repo "${{ github.repository }}" \
             --ref main \
-            -f collection_date="$(date -u +%Y-%m-%d)" \
+            -f collection_date="${{ steps.date.outputs.day }}" \
             -f skip_large="${{ inputs.skip_large }}" \
             -f dry_run=false
-          echo "Build Client Rules dispatched for collection $(date -u +%Y-%m-%d)."
+          echo "Build Client Rules dispatched for collection ${{ steps.date.outputs.day }}."
