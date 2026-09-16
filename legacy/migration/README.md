@@ -1,11 +1,16 @@
-# Legacy migration boundary
+# Legacy migration boundary — archived
 
-The `legacy/migration/` tree is the only location permitted to contain
-compatibility tooling for the retired 2.X data model or CLI shape.
+STATUS: ARCHIVED
+OWNER: V3 Engine
+PRODUCTION_USE: NONE
+MIGRATION_DATE: 2026-09-16
+DELETE_AFTER: 2026-09-16
 
-Production execution must use `src.engine` exclusively.
+The V2 migration compatibility layer has been audited and is no longer required by
+production, CI, documentation, or tests. V3 production execution uses `src.engine`
+exclusively.
 
-The retired `scripts/normalize.py` and `scripts/v2fly_parser.py` are not
-production pipeline components. Their V2Fly format parsing responsibility is
-implemented by `src.engine.ingest.formats.v2fly`; record normalization is
-implemented by `src.engine.ingest.normalizer` and the V3 canonical store.
+Dependency scan performed before deletion covered `legacy/`, `scripts/`, `src/`,
+`tests/`, `.github/`, `docs/`, and repository search for the retired parser and
+normalizer paths. No production references were found. The tree is therefore
+eligible for permanent removal; Git history remains the archival record.
