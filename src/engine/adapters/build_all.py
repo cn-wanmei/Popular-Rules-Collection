@@ -10,12 +10,13 @@ from typing import Any
 import yaml
 
 from src.engine.adapters.registry import CLIENTS, get_adapter
+from src.engine.semantic_intent import validate_semantic_probes
 
 
 _CAPABILITY_MATRIX = Path(__file__).resolve().parents[3] / "config" / "client_capability_matrix.yaml"
 
 
-def _load_ir(ir_dir: Path) -> tuple[list[dict[str, Any]], dict[str, list[str]], dict[str, Any]]:
+def _load_ir(ir_dir: Path) -> tuple[list[dict[str, Any]], dict[str, list[str]], dict[str, Any], dict[str, Any]]:
     ir_path = Path(ir_dir) / "ir.json"
     if not ir_path.exists():
         raise RuntimeError(f"Semantic IR missing: {ir_path}")
@@ -27,9 +28,12 @@ def _load_ir(ir_dir: Path) -> tuple[list[dict[str, Any]], dict[str, list[str]], 
     rules = data.get("rules")
     memberships = data.get("memberships")
     entities = data.get("entities")
+    semantic_intent = data.get("semantic_intent") or {}
     if not isinstance(rules, list) or not isinstance(memberships, dict) or not isinstance(entities, dict):
         raise RuntimeError("Semantic IR contract is incomplete")
-    return rules, {str(k): [str(x) for x in v] for k, v in memberships.items()}, entities
+    if not isinstance(semantic_intent, dict):
+        raise RuntimeError("Semantic IR semantic_intent report is invalid")
+    return rules, {str(k): [str(x) for x in v] for k, v in memberships.items()}, entities, semantic_intent
 
 
 def _load_capabilities() -> dict[str, set[str]]:
@@ -106,16 +110,19 @@ def _build_client(
 
 
 def build_all_clients(ir_dir: Path, artifacts_dir: Path, *, views: list[str] | None = None) -> dict[str, Any]:
-    """Build all client artifacts from IR, projecting only each client's native capabilities."""
+    """Build all client artifacts from IR after semantic probes pass."""
     artifacts_dir = Path(artifacts_dir)
     artifacts_dir.mkdir(parents=True, exist_ok=True)
-    rules, memberships, entities = _load_ir(Path(ir_dir))
+    rules, memberships, entities, semantic_intent = _load_ir(Path(ir_dir))
+    probe_report = validate_semantic_probes(rules, memberships)
     capabilities = _load_capabilities()
     report: dict[str, Any] = {
         "schema": "adapter_build_v2",
         "clients": {},
         "views": {"services": sorted(entities.get("services", [])), "aggregate": True},
         "source_contract": "semantic_ir_v2",
+        "semantic_intent": semantic_intent,
+        "semantic_probes": probe_report,
         "v2_runtime_dependency": 0,
         "parallel": True,
     }
