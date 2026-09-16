@@ -11,9 +11,6 @@ on:
         default: false
         type: boolean
 
-permissions:
-  contents: write
-
 concurrency:
   group: retention
   cancel-in-progress: false
@@ -21,10 +18,17 @@ concurrency:
 jobs:
   retention:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633
         with:
           fetch-depth: 0
+      - uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c
+        with:
+          python-version: '3.11'
+      - name: Install YAML dependency
+        run: python -m pip install --disable-pip-version-check pyyaml
       - name: Run retention planner
         env:
           APPLY: ${{ inputs.apply || false }}
