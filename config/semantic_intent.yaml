@@ -1,0 +1,31 @@
+version: 1
+policies:
+  - id: blackmatrix7-alibaba-brand-aliases
+    services:
+      - alibaba
+    source_ids:
+      - blackmatrix7
+    match:
+      types:
+        - DOMAIN-SUFFIX
+      values:
+        - alibaba
+        - alipay
+        - taobao
+        - tmall
+    action:
+      type: DOMAIN-KEYWORD
+    reason: >-
+      These upstream single-label suffix entries are explicitly curated as
+      Alibaba brand aliases. Keyword matching is required to cover public
+      service domains such as alibaba.com, alipay.com, taobao.com, and
+      tmall.com; this is a deliberate, source-scoped semantic projection.
+    probes:
+      matches:
+        - www.alibaba.com
+        - foo.alibaba.com
+        - www.alipay.com
+        - www.taobao.com
+        - www.tmall.com
+      non_matches:
+        - www.example.com
