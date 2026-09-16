@@ -9,7 +9,7 @@ from typing import Any
 import yaml
 
 from src.engine.cas.store import read_bytes
-from src.engine.ingest.rule_parser import iter_rules
+from src.engine.ingest.rule_parser import iter_rule_records
 
 LARGE_SERVICES = {"adblock", "proxy", "china", "gfw"}
 
@@ -48,7 +48,7 @@ def _ingest_structured_services(sources_root: Path, records: list[dict[str, Any]
                 typ, val = r.get("type"), r.get("value")
                 if not typ or not val: errors.append({"path": str(p), "error": "missing type or value", "rule": r}); continue
                 records.append({"service": sid, "type": str(typ), "value": str(val), "category": cat,
-                    "provenance": {"sources": r.get("sources") or sources, "file": str(p.relative_to(sources_root.parent))}}); count += 1
+                    "provenance": {"sources": r.get("sources") or sources, "file": str(p.relative_to(sources_root.parent)), "format": "structured_service"}}); count += 1
         except IngestError as e: errors.append({"path": str(p), "error": str(e)})
     return count
 
@@ -73,24 +73,13 @@ def _verify_acquisition_object(snapshot_dir: Path, entry: dict[str, Any]) -> Non
         if hashlib.sha256(data).hexdigest() != str(digest):
             raise IngestError(f"acquisition CAS digest mismatch: {digest}")
         return
-    # Snapshot CAS may be mounted outside the snapshot. In that case local content is
-    # still checked below; the manifest digest remains an auditable identity.
 
 
 def _resolve_manifests_dir(snapshot_dir: Path) -> Path | None:
-    """Return the manifests directory, supporting both legacy and current layouts.
-
-    Legacy (pre-refactor): backup/<day>/sources/manifests/
-    Current:               backup/<day>/manifests/
-    """
     sources_root = snapshot_dir / "sources"
-    candidates = [
-        snapshot_dir / "manifests",          # current layout
-        sources_root / "manifests",          # legacy layout
-    ]
+    candidates = [snapshot_dir / "manifests", sources_root / "manifests"]
     for c in candidates:
-        if c.is_dir():
-            return c
+        if c.is_dir(): return c
     return None
 
 
@@ -105,8 +94,6 @@ def _ingest_collected_snapshot(snapshot_dir: Path, records: list[dict[str, Any]]
         except Exception as e: errors.append({"path": str(manifest_path), "error": f"invalid collection manifest: {e}"}); continue
         source_id = str(manifest.get("source") or manifest_path.stem)
         for entry in manifest.get("files") or []:
-            # "skipped" with cached_from_cas=True means the file content is
-            # already on disk from a prior run; treat it as effectively "ok".
             entry_status = entry.get("status")
             if entry_status not in {"ok", "not_modified", "skipped"}: continue
             if entry_status == "skipped" and not entry.get("cached_from_cas"): continue
@@ -118,11 +105,11 @@ def _ingest_collected_snapshot(snapshot_dir: Path, records: list[dict[str, Any]]
                 data = path.read_bytes(); expected = entry.get("sha256") or entry.get("cas_sha256")
                 if expected and __import__("hashlib").sha256(data).hexdigest() != str(expected):
                     raise IngestError(f"collected content digest mismatch: {expected}")
-                parsed = list(iter_rules(path))
+                parsed = list(iter_rule_records(path))
             except (OSError, IngestError) as e: errors.append({"path": str(path), "error": str(e)}); continue
-            for typ, value in parsed:
+            for typ, value, detected_format in parsed:
                 records.append({"service": service, "type": typ, "value": value, "category": "other",
-                    "provenance": {"sources": [{"id": source_id}], "file": str(path.relative_to(snapshot_dir)), **({"url": entry.get("url")} if entry.get("url") else {})}}); count += 1
+                    "provenance": {"sources": [{"id": source_id}], "file": str(path.relative_to(snapshot_dir)), "format": detected_format, **({"url": entry.get("url")} if entry.get("url") else {})}}); count += 1
             if not parsed: errors.append({"path": str(path), "error": "no recognized rules", "service": service, "source": source_id})
     return count
 
@@ -130,14 +117,11 @@ def _ingest_collected_snapshot(snapshot_dir: Path, records: list[dict[str, Any]]
 def ingest_snapshot(snapshot_dir: Path, *, skip_large: bool = False) -> dict[str, Any]:
     snapshot_dir = Path(snapshot_dir)
     if not snapshot_dir.is_dir(): raise IngestError(f"Snapshot directory does not exist: {snapshot_dir}")
-    # Support both old-style manifest.json and current-layout manifests/_collection.json.
     manifest_path = snapshot_dir / "manifest.json"
     if not manifest_path.exists():
         alt = snapshot_dir / "manifests" / "_collection.json"
-        if alt.exists():
-            manifest_path = alt
-        else:
-            raise IngestError(f"Missing manifest.json (or manifests/_collection.json) in {snapshot_dir}")
+        if alt.exists(): manifest_path = alt
+        else: raise IngestError(f"Missing manifest.json (or manifests/_collection.json) in {snapshot_dir}")
     try: manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     except Exception as e: raise IngestError(f"Invalid manifest.json: {e}") from e
     sources_root = snapshot_dir / "sources"
