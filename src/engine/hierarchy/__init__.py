@@ -1,4 +1,16 @@
-"""Hierarchy resolver — Service / Group / Aggregate views into structured graph."""
-from .resolver import build_hierarchy, load_hierarchy
+"""Provider → Aggregate → Service hierarchy helpers."""
+from .resolver import (
+    HierarchyConfigError,
+    build_hierarchy,
+    load_hierarchy,
+    load_hierarchy_config,
+    validate_hierarchy_config,
+)
 
-__all__ = ["build_hierarchy", "load_hierarchy"]
+__all__ = [
+    "HierarchyConfigError",
+    "build_hierarchy",
+    "load_hierarchy",
+    "load_hierarchy_config",
+    "validate_hierarchy_config",
+]
