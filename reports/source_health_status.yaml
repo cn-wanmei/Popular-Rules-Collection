@@ -1,5 +1,5 @@
 schema: source_health_status_v1
-generated_at: '2026-09-16T12:47:49.616358Z'
+generated_at: '2026-09-16T13:00:22.761750Z'
 policy: config/health_policy.yaml
 lifecycle_registry: sources/lifecycle.yaml
 sources:
@@ -16,8 +16,8 @@ sources:
     lifecycle: active
     status: healthy
     reason: last success 0h ago
-    last_success: '2026-09-16T12:04:23.292862+00:00'
-    last_attempt: '2026-09-16T12:04:23.292847+00:00'
+    last_success: '2026-09-16T12:57:45.282027+00:00'
+    last_attempt: '2026-09-16T12:57:45.282008+00:00'
     failure_count: 0
     age_hours: 0
     rules_declared: 139
@@ -25,8 +25,8 @@ sources:
     lifecycle: active
     status: healthy
     reason: last success 0h ago
-    last_success: '2026-09-16T12:04:23.397507+00:00'
-    last_attempt: '2026-09-16T12:04:23.397495+00:00'
+    last_success: '2026-09-16T12:57:45.405066+00:00'
+    last_attempt: '2026-09-16T12:57:45.405053+00:00'
     failure_count: 0
     age_hours: 0
     rules_declared: 20
@@ -52,8 +52,8 @@ sources:
     lifecycle: active
     status: healthy
     reason: last success 0h ago
-    last_success: '2026-09-16T12:04:23.344621+00:00'
-    last_attempt: '2026-09-16T12:04:23.344607+00:00'
+    last_success: '2026-09-16T12:57:45.345037+00:00'
+    last_attempt: '2026-09-16T12:57:45.345018+00:00'
     failure_count: 0
     age_hours: 0
     rules_declared: 76
@@ -70,8 +70,8 @@ sources:
     lifecycle: active
     status: healthy
     reason: last success 0h ago
-    last_success: '2026-09-16T12:04:23.382026+00:00'
-    last_attempt: '2026-09-16T12:04:23.382013+00:00'
+    last_success: '2026-09-16T12:57:45.388070+00:00'
+    last_attempt: '2026-09-16T12:57:45.388057+00:00'
     failure_count: 0
     age_hours: 0
     rules_declared: 56
