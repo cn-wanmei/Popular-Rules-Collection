@@ -47,7 +47,10 @@ def plan_for_root(root: Path, keep_days: int, min_keep: int, now: dt.datetime) -
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply", action="store_true", help="perform destructive deletes")
+    ap.add_argument("--dry-run", action="store_true", help="preview deletions without changing files")
     args = ap.parse_args()
+    if args.apply and args.dry_run:
+        ap.error("--apply and --dry-run are mutually exclusive")
     policy = yaml.safe_load(POLICY.read_text(encoding="utf-8")) or {}
     now = now_utc()
 
