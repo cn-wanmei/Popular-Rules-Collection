@@ -3,7 +3,14 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from src.engine.hierarchy.resolver import HierarchyConfigError, build_hierarchy, load_hierarchy_config
+import pytest
+
+from src.engine.hierarchy.resolver import (
+    HierarchyConfigError,
+    build_hierarchy,
+    load_hierarchy_config,
+    validate_hierarchy_config,
+)
 
 
 def _seed_canonical(tmp_path: Path) -> Path:
@@ -57,6 +64,7 @@ def test_no_name_prefix_provider_inference(tmp_path: Path):
     # The new resolver must leave unknown entities unmodeled instead.
     assert graph["services"]["legacy-service-name"]["provider"] is None
     assert "legacy" not in graph["aggregates"]
+    assert graph["groups"] == {}
 
 
 def test_invalid_duplicate_service_is_rejected(tmp_path: Path):
@@ -66,13 +74,5 @@ def test_invalid_duplicate_service_is_rejected(tmp_path: Path):
         encoding="utf-8",
     )
     config_doc = load_hierarchy_config(config)
-    assert config_doc["schema"] == "provider_service_hierarchy_v1"
-    try:
-        # Validation is exercised through build, which avoids exporting internals.
-        build_hierarchy(tmp_path / "missing-canonical", tmp_path / "out", config)
-    except FileNotFoundError:
-        # Canonical IO happens before hierarchy validation in this call path.
-        pass
-    except HierarchyConfigError:
-        # Also acceptable once the canonical fixture is present in future refactors.
-        pass
+    with pytest.raises(HierarchyConfigError):
+        validate_hierarchy_config(config_doc)
