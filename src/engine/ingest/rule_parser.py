@@ -1,8 +1,7 @@
-"""Common raw-rule parser for the V3 Engine.
+"""Format-aware raw-rule parser for the V3 Engine.
 
-Format-specific parsing lives under ``src.engine.ingest.formats``. This module
-keeps the stable public ``parse_line`` / ``iter_rules`` API while delegating
-V2Fly syntax to the dedicated input-format adapter.
+Public APIs remain ``parse_line`` / ``iter_rules``. ``detect_format`` makes the
+input grammar explicit so Source Semantic Gate can audit the parser decision.
 """
 from __future__ import annotations
 
@@ -21,8 +20,31 @@ from src.engine.ingest.formats.v2fly import (
 PLAIN_DOMAIN = re.compile(r"^(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]*[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}\.?$")
 DOMAIN_RE = re.compile(r"^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|DOMAIN-REGEX)[,\s]+(.+)$", re.I)
 IP_RE = re.compile(r"^(?:IP-CIDR|IP-CIDR6|IP6-CIDR)[,\s]+([0-9a-fA-F:.\/]+)(?:,.*)?$", re.I)
+PROCESS_RE = re.compile(r"^(PROCESS-NAME|PROCESS-PATH)[,\s]+(.+)$", re.I)
 HOSTS_RE = re.compile(r"^(?:0\.0\.0\.0|127\.0\.0\.1)\s+(\S+)")
 CIDR_RE = re.compile(r"^(\d{1,3}(?:\.\d{1,3}){3}/\d{1,2}|[0-9a-fA-F:]+/\d{1,3})$")
+
+
+def detect_format(path: Path, text: str | None = None) -> str:
+    path = Path(path)
+    text = text if text is not None else path.read_text(encoding="utf-8", errors="replace")
+    if looks_like_v2fly(text, path):
+        return "v2fly"
+    if path.suffix.lower() in {".yaml", ".yml"} or text.lstrip().startswith("payload:"):
+        try:
+            data = yaml.safe_load(text)
+        except yaml.YAMLError:
+            data = None
+        if isinstance(data, dict) and "payload" in data:
+            return "clash_yaml"
+    head = "\n".join(text.splitlines()[:80])
+    if any(line.lstrip().startswith("+.") for line in text.splitlines() if line.strip()):
+        return "metacubex_geosite"
+    if "DOMAIN-SUFFIX" in head.upper() or "DOMAIN-KEYWORD" in head.upper() or "PROCESS-NAME" in head.upper():
+        return "native_list"
+    if any(line.strip().startswith(("0.0.0.0 ", "127.0.0.1 ")) for line in text.splitlines()):
+        return "hosts"
+    return "plain_list"
 
 
 def parse_line(line: str) -> list[tuple[str, str]]:
@@ -51,6 +73,12 @@ def parse_line(line: str) -> list[tuple[str, str]]:
             "DOMAIN-KEYWORD": "domain_keyword",
             "DOMAIN-REGEX": "domain_regex",
         }[kind], value)]
+
+    m = PROCESS_RE.match(line)
+    if m:
+        kind = m.group(1).upper()
+        value = m.group(2).split(",", 1)[0].strip().strip("'\"")
+        return [("process_name" if kind == "PROCESS-NAME" else "process_path", value)] if value else []
 
     m = IP_RE.match(line)
     if m:
@@ -81,14 +109,16 @@ def parse_line(line: str) -> list[tuple[str, str]]:
     return []
 
 
-def iter_rules(path: Path) -> Iterable[tuple[str, str]]:
+def iter_rule_records(path: Path) -> Iterable[tuple[str, str, str]]:
+    """Yield ``(type, value, detected_format)`` for Source Ingest provenance."""
+    path = Path(path)
     text = path.read_text(encoding="utf-8", errors="replace")
-    stripped = text.lstrip()
-    if looks_like_v2fly(text, path):
-        yield from expand_v2fly_file(path)
+    fmt = detect_format(path, text)
+    if fmt == "v2fly":
+        for typ, value in expand_v2fly_file(path):
+            yield typ, value, fmt
         return
-
-    if path.suffix.lower() in {".yaml", ".yml"} or stripped.startswith("payload:"):
+    if fmt == "clash_yaml":
         try:
             data = yaml.safe_load(text)
         except yaml.YAMLError:
@@ -96,16 +126,26 @@ def iter_rules(path: Path) -> Iterable[tuple[str, str]]:
         if isinstance(data, dict) and "payload" in data:
             for item in data.get("payload") or []:
                 if isinstance(item, str):
-                    yield from parse_line(item)
-            return
-        if isinstance(data, list):
-            for item in data:
-                if isinstance(item, str):
-                    yield from parse_line(item)
+                    for typ, value in parse_line(item):
+                        yield typ, value, fmt
             return
 
     for line in text.splitlines():
-        yield from parse_line(line)
+        for typ, value in parse_line(line):
+            yield typ, value, fmt
 
 
-__all__ = ["parse_line", "iter_rules", "parse_v2fly_line", "looks_like_v2fly", "expand_v2fly_file"]
+def iter_rules(path: Path) -> Iterable[tuple[str, str]]:
+    for typ, value, _fmt in iter_rule_records(path):
+        yield typ, value
+
+
+__all__ = [
+    "parse_line",
+    "iter_rules",
+    "iter_rule_records",
+    "detect_format",
+    "parse_v2fly_line",
+    "looks_like_v2fly",
+    "expand_v2fly_file",
+]
