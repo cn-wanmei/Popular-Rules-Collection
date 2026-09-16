@@ -1,0 +1,191 @@
+# Provider → Aggregate → Service hierarchy.
+# Provider ownership and cross-provider categories are distinct concepts.
+version: 1
+schema: provider_service_hierarchy_v1
+rules:
+  aggregate_is_explicit: true
+  service_is_sibling_of_aggregate: true
+  no_name_prefix_inference: true
+  aggregate_semantics: union_of_declared_children_plus_provider_direct
+  category_semantics: union_of_declared_members_plus_category_direct
+providers:
+  apple:
+    display_name: Apple
+    aggregate: apple
+    services:
+      appstore: {display_name: App Store, status: split}
+      testflight: {display_name: TestFlight, status: split}
+      appledev: {display_name: Apple Developer, status: split}
+      findmy: {display_name: Find My, status: split}
+      applemedia: {display_name: Apple Media, status: split}
+      applenews: {display_name: Apple News, status: split}
+      appletv: {display_name: Apple TV, status: existing}
+      applemusic: {display_name: Apple Music, status: existing}
+      icloud: {display_name: iCloud, status: existing}
+  google:
+    display_name: Google
+    aggregate: google
+    services:
+      youtube: {display_name: YouTube, status: existing}
+      googlefcm: {display_name: Google FCM, status: existing}
+      googlecloud: {display_name: Google Cloud, status: planned}
+      firebase: {display_name: Firebase, status: planned}
+      gmail: {display_name: Gmail, status: planned}
+      googledrive: {display_name: Google Drive, status: planned}
+      googledocs: {display_name: Google Docs, status: planned}
+      googlesheets: {display_name: Google Sheets, status: planned}
+      googlemaps: {display_name: Google Maps, status: planned}
+      googleplay: {display_name: Google Play, status: planned}
+      googlephotos: {display_name: Google Photos, status: planned}
+  microsoft:
+    display_name: Microsoft
+    aggregate: microsoft
+    services:
+      onedrive: {display_name: OneDrive, status: existing}
+      teams: {display_name: Microsoft Teams, status: existing}
+      azure: {display_name: Microsoft Azure, status: planned}
+      office365: {display_name: Microsoft 365, status: planned}
+      sharepoint: {display_name: SharePoint, status: planned}
+      powerbi: {display_name: Power BI, status: planned}
+  amazon:
+    display_name: Amazon
+    aggregate: amazon
+    services:
+      primevideo: {display_name: Prime Video, status: existing}
+      amazonmusic: {display_name: Amazon Music, status: planned}
+      kindle: {display_name: Kindle, status: planned}
+      audible: {display_name: Audible, status: planned}
+      aws: {display_name: AWS, status: planned}
+  tencent:
+    display_name: Tencent
+    aggregate: tencent
+    services:
+      wechat: {display_name: WeChat, status: existing}
+      tencentvideo: {display_name: Tencent Video, status: existing}
+      qq: {display_name: QQ, status: planned}
+      qqmusic: {display_name: QQ Music, status: planned}
+      qqmail: {display_name: QQ Mail, status: planned}
+      wecom: {display_name: WeCom, status: planned}
+      tencentmeeting: {display_name: Tencent Meeting, status: planned}
+      tencentcloud: {display_name: Tencent Cloud, status: planned}
+      tencentdocs: {display_name: Tencent Docs, status: planned}
+      wegame: {display_name: WeGame, status: planned}
+      qqbrowser: {display_name: QQ Browser, status: planned}
+  alibaba:
+    display_name: Alibaba
+    aggregate: alibaba
+    services:
+      alipay: {display_name: Alipay, status: existing}
+      taobao: {display_name: Taobao, status: planned}
+      tmall: {display_name: Tmall, status: planned}
+      alibabacloud: {display_name: Alibaba Cloud, status: planned}
+      1688: {display_name: 1688, status: planned}
+      dingding: {display_name: DingTalk, status: planned}
+      cainiao: {display_name: Cainiao, status: planned}
+      fliggy: {display_name: Fliggy, status: planned}
+      aliexpress: {display_name: AliExpress, status: planned}
+      lazada: {display_name: Lazada, status: planned}
+      xianyu: {display_name: Xianyu, status: existing}
+  bytedance:
+    display_name: ByteDance
+    aggregate: bytedance
+    services:
+      douyin: {display_name: Douyin, status: existing}
+      tiktok: {display_name: TikTok, status: existing}
+      toutiao: {display_name: Toutiao, status: planned}
+      xigua: {display_name: Xigua Video, status: planned}
+      feishu: {display_name: Feishu, status: planned}
+      lark: {display_name: Lark, status: planned}
+      capcut: {display_name: CapCut, status: planned}
+      jianying: {display_name: Jianying, status: planned}
+      volcengine: {display_name: Volcano Engine, status: planned}
+      doubao: {display_name: Doubao, status: planned}
+  baidu:
+    display_name: Baidu
+    aggregate: baidu
+    services:
+      baidunetdisk: {display_name: Baidu Netdisk, status: planned}
+      baidutieba: {display_name: Baidu Tieba, status: planned}
+      baiduwiki: {display_name: Baidu Wenku, status: planned}
+      baidumaps: {display_name: Baidu Maps, status: planned}
+      baiduzhidao: {display_name: Baidu Zhidao, status: planned}
+      baidusearch: {display_name: Baidu Search, status: planned}
+  netease:
+    display_name: NetEase
+    aggregate: netease
+    services:
+      neteasemusic: {display_name: NetEase Cloud Music, status: existing}
+      neteasegames: {display_name: NetEase Games, status: planned}
+      netease163mail: {display_name: 163 Mail, status: planned}
+      youdao: {display_name: Youdao, status: planned}
+      yanxuan: {display_name: Yanxuan, status: planned}
+      lofter: {display_name: LOFTER, status: planned}
+  huawei:
+    display_name: Huawei
+    aggregate: huawei
+    services:
+      appgallery: {display_name: AppGallery, status: planned}
+      hms: {display_name: HMS, status: planned}
+      huaweicloud: {display_name: Huawei Cloud, status: planned}
+      petalmaps: {display_name: Petal Maps, status: planned}
+  xiaomi:
+    display_name: Xiaomi
+    aggregate: xiaomi
+    services:
+      micloud: {display_name: Mi Cloud, status: planned}
+      mihome: {display_name: Mi Home, status: planned}
+      miaccount: {display_name: Mi Account, status: planned}
+      getapps: {display_name: GetApps, status: planned}
+  adobe:
+    display_name: Adobe
+    aggregate: adobe
+    services:
+      creativecloud: {display_name: Creative Cloud, status: planned}
+      acrobat: {display_name: Acrobat, status: planned}
+      behance: {display_name: Behance, status: planned}
+  atlassian:
+    display_name: Atlassian
+    aggregate: atlassian
+    services:
+      jira: {display_name: Jira, status: planned}
+      confluence: {display_name: Confluence, status: planned}
+      bitbucket: {display_name: Bitbucket, status: planned}
+  meta:
+    display_name: Meta
+    aggregate: meta
+    services:
+      facebook: {display_name: Facebook, status: existing}
+      instagram: {display_name: Instagram, status: existing}
+      whatsapp: {display_name: WhatsApp, status: existing}
+      messenger: {display_name: Messenger, status: planned}
+      threads: {display_name: Threads, status: existing}
+  cloudflare:
+    display_name: Cloudflare
+    aggregate: cloudflare
+    services:
+      workers: {display_name: Cloudflare Workers, status: planned}
+      pages: {display_name: Cloudflare Pages, status: planned}
+      r2: {display_name: Cloudflare R2, status: planned}
+      warp: {display_name: Cloudflare WARP, status: planned}
+  hoyoverse:
+    display_name: HoYoverse
+    aggregate: hoyoverse
+    services:
+      genshin: {display_name: Genshin Impact, status: planned}
+      honkai_star_rail: {display_name: Honkai Star Rail, status: planned}
+      zenless_zone_zero: {display_name: Zenless Zone Zero, status: planned}
+categories:
+  developer:
+    display_name: Developer Ecosystem
+    aggregate: developer
+    services:
+      github: {display_name: GitHub, status: existing}
+      gitlab: {display_name: GitLab, status: existing}
+      docker: {display_name: Docker, status: existing}
+      npm: {display_name: npm, status: planned}
+      pypi: {display_name: PyPI, status: planned}
+      aws: {display_name: AWS, status: planned}
+      azure: {display_name: Azure, status: planned}
+      googlecloud: {display_name: Google Cloud, status: planned}
+      firebase: {display_name: Firebase, status: planned}
+      cursor: {display_name: Cursor, status: planned}
