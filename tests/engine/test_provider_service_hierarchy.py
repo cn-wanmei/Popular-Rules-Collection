@@ -16,24 +16,22 @@ from src.engine.hierarchy.resolver import (
 def _seed_canonical(tmp_path: Path) -> Path:
     canonical = tmp_path / "canonical"
     canonical.mkdir()
-    (canonical / "rules.json").write_text(
-        json.dumps(
-            {
-                "r-apple": {"id": "r-apple", "type": "DOMAIN", "value": "apple.com"},
-                "r-music": {"id": "r-music", "type": "DOMAIN", "value": "music.apple.com"},
-                "r-legacy": {"id": "r-legacy", "type": "DOMAIN", "value": "legacy.example"},
-            }
-        ),
+    rules = [
+        {"id": "r-apple", "type": "DOMAIN", "value": "apple.com"},
+        {"id": "r-music", "type": "DOMAIN", "value": "music.apple.com"},
+        {"id": "r-legacy", "type": "DOMAIN", "value": "legacy.example"},
+    ]
+    memberships = [
+        {"rule_id": "r-apple", "entity": "apple", "relation": "member"},
+        {"rule_id": "r-music", "entity": "applemusic", "relation": "member"},
+        {"rule_id": "r-legacy", "entity": "legacy-service-name", "relation": "member"},
+    ]
+    (canonical / "rules.jsonl").write_text(
+        "".join(json.dumps(item, ensure_ascii=False) + "\n" for item in rules),
         encoding="utf-8",
     )
-    (canonical / "memberships.json").write_text(
-        json.dumps(
-            {
-                "apple": ["r-apple"],
-                "applemusic": ["r-music"],
-                "legacy-service-name": ["r-legacy"],
-            }
-        ),
+    (canonical / "memberships.jsonl").write_text(
+        "".join(json.dumps(item, ensure_ascii=False) + "\n" for item in memberships),
         encoding="utf-8",
     )
     return canonical
@@ -60,8 +58,6 @@ def test_no_name_prefix_provider_inference(tmp_path: Path):
     build_hierarchy(canonical, out)
     graph = json.loads((out / "graph.json").read_text(encoding="utf-8"))
 
-    # The old resolver inferred the provider from the text before '-'.
-    # The new resolver must leave unknown entities unmodeled instead.
     assert graph["services"]["legacy-service-name"]["provider"] is None
     assert "legacy" not in graph["aggregates"]
     assert graph["groups"] == {}
