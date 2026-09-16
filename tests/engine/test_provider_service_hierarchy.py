@@ -19,11 +19,13 @@ def _seed_canonical(tmp_path: Path) -> Path:
     rules = [
         {"id": "r-apple", "type": "DOMAIN", "value": "apple.com"},
         {"id": "r-music", "type": "DOMAIN", "value": "music.apple.com"},
+        {"id": "r-aws", "type": "DOMAIN", "value": "aws.amazon.com"},
         {"id": "r-legacy", "type": "DOMAIN", "value": "legacy.example"},
     ]
     memberships = [
         {"rule_id": "r-apple", "entity": "apple", "relation": "member"},
         {"rule_id": "r-music", "entity": "applemusic", "relation": "member"},
+        {"rule_id": "r-aws", "entity": "aws", "relation": "member"},
         {"rule_id": "r-legacy", "entity": "legacy-service-name", "relation": "member"},
     ]
     (canonical / "rules.jsonl").write_text(
@@ -48,6 +50,9 @@ def test_explicit_provider_service_relationships(tmp_path: Path):
     assert graph["services"]["applemusic"]["provider"] == "apple"
     assert graph["services"]["applemusic"]["parent"] == "apple"
     assert graph["aggregates"]["apple"]["rule_ids"] == ["r-apple", "r-music"]
+    assert graph["services"]["aws"]["provider"] == "amazon"
+    assert "aws" in graph["categories"]["developer"]["services"]
+    assert graph["categories"]["developer"]["rule_ids"] == ["r-aws"]
     assert graph["services"]["legacy-service-name"]["provider"] is None
     assert "legacy-service-name" in graph["unmodeled_services"]
 
