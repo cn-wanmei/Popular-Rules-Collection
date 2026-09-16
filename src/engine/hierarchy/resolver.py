@@ -37,6 +37,10 @@ def load_hierarchy_config(config_path: Path | None = None) -> dict[str, Any]:
     return doc
 
 
+def validate_hierarchy_config(config: dict[str, Any]) -> None:
+    _validate_config(config)
+
+
 def _validate_config(config: dict[str, Any]) -> tuple[dict[str, str], dict[str, dict[str, Any]]]:
     providers = config["providers"]
     service_to_provider: dict[str, str] = {}
@@ -62,6 +66,10 @@ def _validate_config(config: dict[str, Any]) -> tuple[dict[str, str], dict[str, 
                 raise HierarchyConfigError(
                     f"Service {service_id!r} is declared under multiple providers: "
                     f"{service_to_provider[service_id]!r}, {provider_id!r}"
+                )
+            if service_id == aggregate:
+                raise HierarchyConfigError(
+                    f"Service {service_id!r} cannot equal aggregate {aggregate!r}"
                 )
             service_to_provider[service_id] = provider_id
             metadata[service_id] = {
@@ -93,7 +101,6 @@ def build_hierarchy(
     services: dict[str, dict[str, Any]] = {}
     aggregates: dict[str, dict[str, Any]] = {}
 
-    # Declare every configured node even if a rule source has not materialized it yet.
     for node_id, node in metadata.items():
         if node["type"] == "service":
             rids = list(memberships.get(node_id, []))
@@ -125,11 +132,16 @@ def build_hierarchy(
         aggregates[aggregate_id]["rule_count"] = len(rule_ids)
         aggregates[aggregate_id]["services"] = child_ids
 
+    # Compatibility with the pre-v2 hierarchy output. Groups are now intentionally
+    # empty rather than inferred from service name prefixes.
+    groups: dict[str, dict[str, Any]] = {}
+
     graph = {
         "schema": "provider_service_hierarchy_v2",
         "config_schema": config.get("schema"),
         "rules": config.get("rules", {}),
         "services": services,
+        "groups": groups,
         "aggregates": aggregates,
         "unmodeled_services": sorted(
             entity for entity, node in services.items() if node.get("status") == "unmodeled"
@@ -142,6 +154,9 @@ def build_hierarchy(
     with (out_dir / "services.jsonl").open("w", encoding="utf-8") as f:
         for service in services.values():
             f.write(json.dumps(service, ensure_ascii=False) + "\n")
+    with (out_dir / "groups.jsonl").open("w", encoding="utf-8") as f:
+        for group in groups.values():
+            f.write(json.dumps(group, ensure_ascii=False) + "\n")
     with (out_dir / "aggregates.jsonl").open("w", encoding="utf-8") as f:
         for aggregate in aggregates.values():
             f.write(json.dumps(aggregate, ensure_ascii=False) + "\n")
@@ -152,6 +167,7 @@ def build_hierarchy(
         "schema": "hierarchy_manifest_v2",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "service_count": len(services),
+        "group_count": 0,
         "aggregate_count": len(aggregates),
         "configured_service_count": configured_service_count,
         "materialized_service_count": materialized_service_count,
