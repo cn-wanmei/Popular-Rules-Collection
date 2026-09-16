@@ -13,7 +13,16 @@ from pathlib import Path
 from typing import Any
 
 DOMAIN_TYPES = {"domain", "domain_suffix", "domain_keyword", "domain_regex"}
-SUFFIX_WITHOUT_DOT_ALLOWED = {"metacubex_geosite", "v2fly"}
+# A suffix without a dot is ambiguous in a generic plain list, but is valid
+# when the source grammar explicitly declares domain-suffix semantics (or when
+# the source format itself is known to carry host/domain grammar).
+SUFFIX_WITHOUT_DOT_ALLOWED = {
+    "metacubex_geosite",
+    "v2fly",
+    "native_list",
+    "hosts",
+    "clash_yaml",
+}
 
 
 def _invalid(record: dict[str, Any], reason: str) -> dict[str, Any]:
@@ -32,7 +41,7 @@ def validate_records(records: list[dict[str, Any]]) -> dict[str, Any]:
         typ = str(record.get("type") or "").strip().lower().replace("-", "_")
         value = str(record.get("value") or "").strip()
         provenance = record.get("provenance") or {}
-        source_format = str(provenance.get("format") or "auto")
+        source_format = str(provenance.get("format") or "auto").strip().lower()
 
         if not typ or not value:
             failures.append(_invalid(record, "missing_type_or_value"))
