@@ -1,16 +1,36 @@
 from src.engine.validation.source_semantic import validate_records
 
 
-def test_geosite_suffix_without_dot_is_allowed_when_explicit():
-    report = validate_records([
+def test_explicit_domain_suffix_grammars_allow_single_label_values():
+    records = [
         {
             "service": "alibaba",
             "type": "domain_suffix",
             "value": "alibaba",
             "provenance": {"format": "metacubex_geosite"},
-        }
-    ])
+        },
+        {
+            "service": "native",
+            "type": "domain_suffix",
+            "value": "localhost",
+            "provenance": {"format": "native_list"},
+        },
+        {
+            "service": "hosts",
+            "type": "domain_suffix",
+            "value": "localhost",
+            "provenance": {"format": "hosts"},
+        },
+        {
+            "service": "clash",
+            "type": "domain_suffix",
+            "value": "lan",
+            "provenance": {"format": "clash_yaml"},
+        },
+    ]
+    report = validate_records(records)
     assert report["pass"] is True
+    assert report["failures"] == []
 
 
 def test_suffix_without_dot_is_rejected_for_generic_plain_input():
