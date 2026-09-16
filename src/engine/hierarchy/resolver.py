@@ -1,8 +1,8 @@
 """Explicit Provider → Aggregate → Service hierarchy resolver.
 
-The resolver is deliberately declaration-driven. It never infers a provider from a
-name prefix such as ``google-*`` because service identity is a data contract, not a
-string heuristic.
+The resolver is declaration-driven. Provider ownership is unique, while category
+membership may intentionally overlap providers (for example AWS belongs to Amazon
+and the Developer ecosystem).
 """
 from __future__ import annotations
 
@@ -34,6 +34,8 @@ def load_hierarchy_config(config_path: Path | None = None) -> dict[str, Any]:
         raise HierarchyConfigError("Unsupported hierarchy config schema")
     if not isinstance(doc.get("providers"), dict):
         raise HierarchyConfigError("Hierarchy config requires providers mapping")
+    if "categories" in doc and not isinstance(doc.get("categories"), dict):
+        raise HierarchyConfigError("Hierarchy config categories must be a mapping")
     return doc
 
 
@@ -41,10 +43,14 @@ def validate_hierarchy_config(config: dict[str, Any]) -> None:
     _validate_config(config)
 
 
-def _validate_config(config: dict[str, Any]) -> tuple[dict[str, str], dict[str, dict[str, Any]]]:
+def _validate_config(
+    config: dict[str, Any],
+) -> tuple[dict[str, str], dict[str, dict[str, Any]], dict[str, dict[str, Any]]]:
     providers = config["providers"]
+    categories = config.get("categories") or {}
     service_to_provider: dict[str, str] = {}
     metadata: dict[str, dict[str, Any]] = {}
+    category_metadata: dict[str, dict[str, Any]] = {}
 
     for provider_id, provider in providers.items():
         if not isinstance(provider, dict):
@@ -62,6 +68,10 @@ def _validate_config(config: dict[str, Any]) -> tuple[dict[str, str], dict[str, 
             "services": [],
         }
         for service_id, service in (provider.get("services") or {}).items():
+            if not isinstance(service, dict):
+                raise HierarchyConfigError(
+                    f"Service {service_id!r} under provider {provider_id!r} must be a mapping"
+                )
             if service_id in service_to_provider and service_to_provider[service_id] != provider_id:
                 raise HierarchyConfigError(
                     f"Service {service_id!r} is declared under multiple providers: "
@@ -70,6 +80,10 @@ def _validate_config(config: dict[str, Any]) -> tuple[dict[str, str], dict[str, 
             if service_id == aggregate:
                 raise HierarchyConfigError(
                     f"Service {service_id!r} cannot equal aggregate {aggregate!r}"
+                )
+            if service_id in metadata and metadata[service_id].get("type") == "aggregate":
+                raise HierarchyConfigError(
+                    f"Service {service_id!r} collides with provider aggregate"
                 )
             service_to_provider[service_id] = provider_id
             metadata[service_id] = {
@@ -81,7 +95,37 @@ def _validate_config(config: dict[str, Any]) -> tuple[dict[str, str], dict[str, 
                 "status": service.get("status", "planned"),
             }
             metadata[aggregate]["services"].append(service_id)
-    return service_to_provider, metadata
+
+    for category_id, category in categories.items():
+        if not isinstance(category, dict):
+            raise HierarchyConfigError(f"Category {category_id!r} must be a mapping")
+        aggregate = str(category.get("aggregate") or category_id)
+        if aggregate != category_id:
+            raise HierarchyConfigError(
+                f"Category {category_id!r} aggregate must equal category id; got {aggregate!r}"
+            )
+        if aggregate in metadata:
+            raise HierarchyConfigError(
+                f"Category aggregate {aggregate!r} collides with provider hierarchy node"
+            )
+        service_ids: list[str] = []
+        for service_id, service in (category.get("services") or {}).items():
+            if not isinstance(service, dict):
+                raise HierarchyConfigError(
+                    f"Category service {service_id!r} under {category_id!r} must be a mapping"
+                )
+            # Category membership is intentionally many-to-many and must never mutate
+            # the single provider owner recorded above.
+            service_ids.append(service_id)
+        category_metadata[aggregate] = {
+            "id": aggregate,
+            "type": "category_aggregate",
+            "category": category_id,
+            "display_name": category.get("display_name", category_id),
+            "services": service_ids,
+        }
+
+    return service_to_provider, metadata, category_metadata
 
 
 def build_hierarchy(
@@ -93,13 +137,14 @@ def build_hierarchy(
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    memberships = load_memberships(canonical_dir)  # entity → [rule_id]
-    load_rules(canonical_dir)  # validate that canonical store is readable before graph build
+    memberships = load_memberships(canonical_dir)
+    load_rules(canonical_dir)
     config = load_hierarchy_config(config_path)
-    service_to_provider, metadata = _validate_config(config)
+    service_to_provider, metadata, category_metadata = _validate_config(config)
 
     services: dict[str, dict[str, Any]] = {}
     aggregates: dict[str, dict[str, Any]] = {}
+    categories: dict[str, dict[str, Any]] = {}
 
     for node_id, node in metadata.items():
         if node["type"] == "service":
@@ -108,9 +153,12 @@ def build_hierarchy(
         else:
             aggregates[node_id] = {**node, "rule_ids": [], "rule_count": 0}
 
-    # Preserve legacy/unknown services without inventing a provider relationship.
+    for node_id, node in category_metadata.items():
+        categories[node_id] = {**node, "rule_ids": [], "rule_count": 0}
+
+    # Preserve legacy/unknown services without inventing provider ownership.
     for entity, rids in memberships.items():
-        if entity in services or entity in aggregates:
+        if entity in services or entity in aggregates or entity in categories:
             continue
         services[entity] = {
             "id": entity,
@@ -121,7 +169,7 @@ def build_hierarchy(
             "status": "unmodeled",
         }
 
-    # Explicit aggregate semantics: provider-direct rules + declared child services.
+    # Provider aggregate = provider-direct memberships + declared child services.
     for provider_id, provider in config["providers"].items():
         aggregate_id = str(provider["aggregate"])
         child_ids = list((provider.get("services") or {}).keys())
@@ -132,8 +180,17 @@ def build_hierarchy(
         aggregates[aggregate_id]["rule_count"] = len(rule_ids)
         aggregates[aggregate_id]["services"] = child_ids
 
-    # Compatibility with the pre-v2 hierarchy output. Groups are now intentionally
-    # empty rather than inferred from service name prefixes.
+    # Category aggregate may overlap several providers.
+    for category_id, category in (config.get("categories") or {}).items():
+        aggregate_id = str(category["aggregate"])
+        child_ids = list((category.get("services") or {}).keys())
+        rule_ids: set[str] = set(memberships.get(aggregate_id, []))
+        for child_id in child_ids:
+            rule_ids.update(memberships.get(child_id, []))
+        categories[aggregate_id]["rule_ids"] = sorted(rule_ids)
+        categories[aggregate_id]["rule_count"] = len(rule_ids)
+        categories[aggregate_id]["services"] = child_ids
+
     groups: dict[str, dict[str, Any]] = {}
 
     graph = {
@@ -143,6 +200,7 @@ def build_hierarchy(
         "services": services,
         "groups": groups,
         "aggregates": aggregates,
+        "categories": categories,
         "unmodeled_services": sorted(
             entity for entity, node in services.items() if node.get("status") == "unmodeled"
         ),
@@ -160,15 +218,19 @@ def build_hierarchy(
     with (out_dir / "aggregates.jsonl").open("w", encoding="utf-8") as f:
         for aggregate in aggregates.values():
             f.write(json.dumps(aggregate, ensure_ascii=False) + "\n")
+    with (out_dir / "categories.jsonl").open("w", encoding="utf-8") as f:
+        for category in categories.values():
+            f.write(json.dumps(category, ensure_ascii=False) + "\n")
 
     configured_service_count = len(service_to_provider)
-    materialized_service_count = sum(1 for s in services.values() if s.get("rule_count", 0) > 0)
+    materialized_service_count = sum(1 for service in services.values() if service.get("rule_count", 0) > 0)
     manifest = {
         "schema": "hierarchy_manifest_v2",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "service_count": len(services),
         "group_count": 0,
         "aggregate_count": len(aggregates),
+        "category_count": len(categories),
         "configured_service_count": configured_service_count,
         "materialized_service_count": materialized_service_count,
         "unmodeled_service_count": len(graph["unmodeled_services"]),
