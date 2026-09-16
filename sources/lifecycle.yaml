@@ -1,0 +1,11 @@
+# Source lifecycle registry. This is intentionally independent from raw health telemetry.
+version: 1
+sources:
+  blackmatrix7: {lifecycle: active}
+  metacubex: {lifecycle: active}
+  v2fly: {lifecycle: active}
+  dler: {lifecycle: active}
+  sukkaw: {lifecycle: active}
+  loyalsoldier: {lifecycle: active}
+  anti-ad: {lifecycle: active}
+  hagezi: {lifecycle: active}
