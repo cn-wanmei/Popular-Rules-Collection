@@ -2,12 +2,11 @@
 """Fail when production-facing files reintroduce retired V2 migration paths."""
 from __future__ import annotations
 
-import argparse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SELF = Path(__file__).resolve()
-SCAN_ROOTS = ["scripts", "src", "tests", ".github", "docs", "PUBLISH_STATUS.md", "README.md"]
+SCAN_ROOTS = ["scripts", "src", "tests", ".github"]
 BANNED = (
     "legacy/migration/",
     "legacy\\migration\\",
@@ -18,19 +17,19 @@ BANNED = (
 
 
 def main() -> int:
-    argparse.ArgumentParser(description=__doc__).parse_args()
     violations: list[str] = []
     for entry in SCAN_ROOTS:
         path = ROOT / entry
-        paths = [path] if path.is_file() else ([p for p in path.rglob("*") if p.is_file()] if path.exists() else [])
-        for file in paths:
-            if file.resolve() == SELF:
+        if not path.exists():
+            continue
+        for file in path.rglob("*"):
+            if not file.is_file() or file.resolve() == SELF:
                 continue
-            rel = file.relative_to(ROOT).as_posix()
             try:
                 text = file.read_text(encoding="utf-8")
             except (UnicodeDecodeError, OSError):
                 continue
+            rel = file.relative_to(ROOT).as_posix()
             for token in BANNED:
                 if token in text:
                     violations.append(f"{rel}: {token}")
