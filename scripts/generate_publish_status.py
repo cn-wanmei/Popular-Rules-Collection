@@ -59,12 +59,14 @@ def render() -> str:
         status = str(item.get("status", "unknown"))
         counts[status] = counts.get(status, 0) + 1
 
+    clients = formats.get("clients", {}) if isinstance(formats, dict) else {}
     outputs: list[str] = []
-    for key, value in (formats.items() if isinstance(formats, dict) else []):
-        if isinstance(value, dict):
-            output = value.get("output") or value.get("dir")
-            if output:
-                outputs.append(f"{key}: `{output}`")
+    if isinstance(clients, dict):
+        for key, value in clients.items():
+            if isinstance(value, dict):
+                output = value.get("output") or value.get("dir")
+                if output:
+                    outputs.append(f"{key}: `{output}`")
 
     lines = [
         BEGIN,
