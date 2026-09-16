@@ -47,8 +47,9 @@ def test_full_production_run_has_quality_cas_and_dag(tmp_path: Path) -> None:
 
 def test_pipeline_stages_are_dependency_complete() -> None:
     assert STAGES == [
-        "snapshot", "ingest", "quarantine", "canonical", "hierarchy", "ir",
-        "adapters", "diff", "golden", "observability", "cas", "release",
+        "snapshot", "ingest", "source_gate", "quarantine", "canonical",
+        "hierarchy", "ir", "adapters", "diff", "golden", "observability",
+        "cas", "release",
     ]
 
 
