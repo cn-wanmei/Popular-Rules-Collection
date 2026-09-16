@@ -2,7 +2,7 @@ name: Generated Status
 
 on:
   workflow_run:
-    workflows: [Collection, Build, Publish]
+    workflows: ["Collect Upstream", "Build Client Rules", "Publish Release Candidate"]
     types: [completed]
   workflow_dispatch:
 
