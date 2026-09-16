@@ -85,8 +85,11 @@ jobs:
           if [ "${{ inputs.skip_large }}" = "true" ]; then ARGS+=(--skip-large); fi
 
           echo "Engine inputs: sources=${{ steps.source.outputs.source_root }} data=data"
-          if ! PYTHONPATH=. python -m src.engine.cli all "${ARGS[@]}" > engine-run.json; then
-            rc=$?
+          set +e
+          PYTHONPATH=. python -m src.engine.cli all "${ARGS[@]}" > engine-run.json
+          rc=$?
+          set -e
+          if [ "$rc" -ne 0 ]; then
             echo "::group::Engine failure report"
             if [ -s engine-run.json ]; then
               cat engine-run.json
