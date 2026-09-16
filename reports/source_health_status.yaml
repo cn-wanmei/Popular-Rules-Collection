@@ -1,5 +1,5 @@
 schema: source_health_status_v1
-generated_at: '2026-09-16T11:45:11.347941Z'
+generated_at: '2026-09-16T12:05:57.168371Z'
 policy: config/health_policy.yaml
 lifecycle_registry: sources/lifecycle.yaml
 sources:
@@ -15,20 +15,20 @@ sources:
   blackmatrix7:
     lifecycle: active
     status: healthy
-    reason: last success 1h ago
-    last_success: '2026-09-16T10:19:47.847352+00:00'
-    last_attempt: '2026-09-16T10:19:47.847345+00:00'
+    reason: last success 0h ago
+    last_success: '2026-09-16T12:04:23.292862+00:00'
+    last_attempt: '2026-09-16T12:04:23.292847+00:00'
     failure_count: 0
-    age_hours: 1
+    age_hours: 0
     rules_declared: 139
   dler:
     lifecycle: active
     status: healthy
-    reason: last success 1h ago
-    last_success: '2026-09-16T10:19:49.014239+00:00'
-    last_attempt: '2026-09-16T10:19:49.014232+00:00'
+    reason: last success 0h ago
+    last_success: '2026-09-16T12:04:23.397507+00:00'
+    last_attempt: '2026-09-16T12:04:23.397495+00:00'
     failure_count: 0
-    age_hours: 1
+    age_hours: 0
     rules_declared: 20
   hagezi:
     lifecycle: active
@@ -51,11 +51,11 @@ sources:
   metacubex:
     lifecycle: active
     status: healthy
-    reason: last success 1h ago
-    last_success: '2026-09-16T10:19:48.348326+00:00'
-    last_attempt: '2026-09-16T10:19:48.348320+00:00'
+    reason: last success 0h ago
+    last_success: '2026-09-16T12:04:23.344621+00:00'
+    last_attempt: '2026-09-16T12:04:23.344607+00:00'
     failure_count: 0
-    age_hours: 1
+    age_hours: 0
     rules_declared: 76
   sukkaw:
     lifecycle: active
@@ -69,9 +69,9 @@ sources:
   v2fly:
     lifecycle: active
     status: healthy
-    reason: last success 1h ago
-    last_success: '2026-09-16T10:19:48.870120+00:00'
-    last_attempt: '2026-09-16T10:19:48.870115+00:00'
+    reason: last success 0h ago
+    last_success: '2026-09-16T12:04:23.382026+00:00'
+    last_attempt: '2026-09-16T12:04:23.382013+00:00'
     failure_count: 0
-    age_hours: 1
+    age_hours: 0
     rules_declared: 56
