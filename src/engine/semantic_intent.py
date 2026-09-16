@@ -95,7 +95,6 @@ def apply_semantic_intent(
     data = _load_policy(path)
     policies = data["policies"]
     rules_out = [deepcopy(r) for r in rules]
-    rules_by_id = {str(r["id"]): r for r in rules_out}
     reverse_memberships: dict[str, set[str]] = {}
     for service, ids in memberships.items():
         for rule_id in ids:
@@ -184,9 +183,12 @@ def validate_semantic_probes(
         probes = policy.get("probes") or {}
         if not probes:
             continue
+        services = {str(x) for x in policy.get("services") or []}
+        if services and not services.intersection(str(name) for name in memberships):
+            continue
         target_ids = set()
-        for service in policy.get("services") or []:
-            target_ids.update(str(rid) for rid in memberships.get(str(service), []))
+        for service in services:
+            target_ids.update(str(rid) for rid in memberships.get(service, []))
         target_rules = [rules_by_id[rid] for rid in sorted(target_ids) if rid in rules_by_id]
         policy_id = str(policy["id"])
         scoped_rules = []
