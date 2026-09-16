@@ -154,5 +154,5 @@ RULE-SET,https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/ma
 
 ---
 
-*规则数据以 `database/` 与 `generated/` 为准；本目录描述用途与场景。*
+*规则数据以 `database/` 与 `generated/` 为准；本目录描述用途与场景。*  
 *客户端产物目录名称以 `config/builder_registry.yaml` / `config/formats.yaml` 为准。*
