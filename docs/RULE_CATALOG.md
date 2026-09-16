@@ -2,7 +2,7 @@
 
 > 与仓库双轨架构对齐：**Service Rules**（按服务）+ **Network Datasets**（国家/策略/基础设施）。
 
-生成路径：`generated/{mihomo,sing-box,surge,shadowrocket,quantumult-x,egern,loon}/<id>.*`  
+生成路径：`generated/{mihomo,singbox,surge,shadowrocket,quantumultx,egern,loon}/<id>.*`  
 订阅基址：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/`
 
 ## 策略建议（默认）
@@ -16,7 +16,7 @@
 
 ## 使用原则
 
-1. **按服务引用**，不要把 Provider IP（如 AWS）当成 Amazon 购物规则。
+1. **按服务引用**，不要把 Provider IP（如 AWS）当作 Amazon 购物规则。
 2. **China 域名**用 `china`（China Max 级）；**中国 IP**用 `geoip/cn` 或 `database/ips/china.txt`。
 3. 规则集只负责匹配；**策略（直连/代理）在客户端配置**。
 4. 大列表（adblock / china）请按需订阅，避免全部塞进单一配置。
@@ -155,3 +155,4 @@ RULE-SET,https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/ma
 ---
 
 *规则数据以 `database/` 与 `generated/` 为准；本目录描述用途与场景。*
+*客户端产物目录名称以 `config/builder_registry.yaml` / `config/formats.yaml` 为准。*
