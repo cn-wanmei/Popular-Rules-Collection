@@ -1,0 +1,40 @@
+version: 1
+kind: shared-component-schema
+
+required:
+  - id
+  - type
+  - status
+  - assets
+
+fields:
+  id:
+    type: string
+    pattern: '^[a-z0-9][a-z0-9-]*(/[a-z0-9][a-z0-9-]*)?$'
+  type:
+    const: shared-component
+  status:
+    enum: [active, experimental, deprecated]
+  assets:
+    type: object
+    fields:
+      domains:
+        type: list
+        items: string
+      domain_suffixes:
+        type: list
+        items: string
+      domain_keywords:
+        type: list
+        items: string
+      ip_cidrs:
+        type: list
+        items: string
+      urls:
+        type: list
+        items: string
+
+rules:
+  - shared components are reusable dependencies, not default user-facing services
+  - service dependencies reference shared components through requires
+  - dependency cycles are forbidden
