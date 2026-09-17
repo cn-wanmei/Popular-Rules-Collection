@@ -65,6 +65,9 @@ jobs:
           rm -rf "data/runs/${RUN_ID}"
           cp -a "release-candidate/data/runs/${RUN_ID}" data/runs/
 
+      - name: Batch 01 semantic and overlap audit
+        run: python scripts/p0_batch01_semantic_overlap_audit.py
+
       - name: P0 Service Production Gate
         run: python scripts/p0_service_production_gate.py
 
