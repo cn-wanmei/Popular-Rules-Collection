@@ -82,12 +82,13 @@ jobs:
           ]
           assert not errors, errors[:20]
 
+          # Rule assets can live below nested service directories (for example
+          # aggregate/service trees), so the completeness inventory must cover
+          # rule/**/*.list rather than only one directory level.
           expected_files = {
-              str(path.as_posix())
-              for category in Path("rule").iterdir()
-              if category.is_dir()
-              for path in category.iterdir()
-              if path.is_file() and path.name.lower().endswith(".list")
+              path.as_posix()
+              for path in Path("rule").rglob("*.list")
+              if path.is_file()
           }
           profiled_files = {item["path"] for item in report["profile"].get("files", [])}
           assert profiled_files == expected_files, {
