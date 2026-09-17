@@ -19,9 +19,9 @@ def test_full_production_run_has_quality_cas_and_dag(tmp_path: Path) -> None:
     result = run_pipeline(source, data)
     assert result["status"] == "ok"
     run_dir = data / "runs" / result["run_id"]
-    quality = json.loads((run_dir / "reports" / "quality.json").read_text(encoding="utf-8"))
+    quality = json.loads((run_dir / "quality.json").read_text(encoding="utf-8"))
     assert quality["decision"] == "PASS"
-    cas = json.loads((run_dir / "cas" / "manifest.json").read_text(encoding="utf-8"))
+    cas = json.loads((run_dir / "cas-manifest.json").read_text(encoding="utf-8"))
     assert cas["object_count"] > 0
     assert result["execution"]["mode"] == "dag"
 
