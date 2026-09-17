@@ -33,7 +33,7 @@ DOMAIN-SUFFIX,azcrmc.cn
 DOMAIN-SUFFIX,azk8s.cn
 DOMAIN-SUFFIX,aznbcontent.cn
 DOMAIN-SUFFIX,aztask.cn
-DOMAIN-SUFFIX,azure
+DOMAIN-KEYWORD,azure
 DOMAIN-SUFFIX,azure-api.cn
 DOMAIN-SUFFIX,azure-apihub.cn
 DOMAIN-SUFFIX,azure-apim.net
@@ -104,7 +104,7 @@ DOMAIN-SUFFIX,biing.com
 DOMAIN-SUFFIX,binads.com
 DOMAIN-SUFFIX,binb.com
 DOMAIN-SUFFIX,binf.com
-DOMAIN-SUFFIX,bing
+DOMAIN-KEYWORD,bing
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,bing.com.cn
 DOMAIN-SUFFIX,bing.net
@@ -209,7 +209,7 @@ DOMAIN-SUFFIX,here.net
 DOMAIN-SUFFIX,heremaps.cn
 DOMAIN-SUFFIX,hockeyapp.net
 DOMAIN-SUFFIX,hololens.com
-DOMAIN-SUFFIX,hotmail
+DOMAIN-KEYWORD,hotmail
 DOMAIN-SUFFIX,hotmail.co
 DOMAIN-SUFFIX,hotmail.com
 DOMAIN-SUFFIX,hotmail.eu
@@ -263,7 +263,7 @@ DOMAIN-SUFFIX,mepn.com
 DOMAIN-SUFFIX,mesh.com
 DOMAIN-SUFFIX,mgmt-azure-api.cn
 DOMAIN-SUFFIX,microbit.org
-DOMAIN-SUFFIX,microsoft
+DOMAIN-KEYWORD,microsoft
 DOMAIN-SUFFIX,microsoft-falcon.io
 DOMAIN-SUFFIX,microsoft-give.com
 DOMAIN-SUFFIX,microsoft-int.com
@@ -478,7 +478,7 @@ DOMAIN-SUFFIX,o365weve-dev.com
 DOMAIN-SUFFIX,o365weve-ppe.com
 DOMAIN-SUFFIX,o365weve.com
 DOMAIN-SUFFIX,oaspapps.com
-DOMAIN-SUFFIX,office
+DOMAIN-KEYWORD,office
 DOMAIN-SUFFIX,office.com
 DOMAIN-SUFFIX,office.net
 DOMAIN-SUFFIX,office365-net.cn
@@ -551,7 +551,7 @@ DOMAIN-SUFFIX,sfbassets.net
 DOMAIN-SUFFIX,sfx.ms
 DOMAIN-SUFFIX,sharepoint.cn
 DOMAIN-SUFFIX,signalr.net
-DOMAIN-SUFFIX,skype
+DOMAIN-KEYWORD,skype
 DOMAIN-SUFFIX,skype.com
 DOMAIN-SUFFIX,skype.net
 DOMAIN-SUFFIX,skypeassets.com
@@ -609,7 +609,7 @@ DOMAIN-SUFFIX,vscode-webview.net
 DOMAIN-SUFFIX,vscode.dev
 DOMAIN-SUFFIX,wbd.ms
 DOMAIN-SUFFIX,what-fan.net
-DOMAIN-SUFFIX,windows
+DOMAIN-KEYWORD,windows
 DOMAIN-SUFFIX,windows-int.net
 DOMAIN-SUFFIX,windows-ppe.net
 DOMAIN-SUFFIX,windows.com
@@ -670,7 +670,7 @@ DOMAIN-SUFFIX,here.com
 DOMAIN-SUFFIX,here.net
 DOMAIN-SUFFIX,heremaps.cn
 DOMAIN-SUFFIX,ovi.com.cn
-DOMAIN-SUFFIX,azure
+DOMAIN-KEYWORD,azure
 DOMAIN-SUFFIX,azure-apim.net
 DOMAIN-SUFFIX,azure-dns.com
 DOMAIN-SUFFIX,azure-dns.info
@@ -729,7 +729,7 @@ DOMAIN-SUFFIX,bibg.com
 DOMAIN-SUFFIX,biing.com
 DOMAIN-SUFFIX,binb.com
 DOMAIN-SUFFIX,binf.com
-DOMAIN-SUFFIX,bing
+DOMAIN-KEYWORD,bing
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,bing.com.cn
 DOMAIN-SUFFIX,bing.net
@@ -876,7 +876,7 @@ DOMAIN-SUFFIX,o365files.cn
 DOMAIN-SUFFIX,o365weve-dev.com
 DOMAIN-SUFFIX,o365weve-ppe.com
 DOMAIN-SUFFIX,o365weve.com
-DOMAIN-SUFFIX,office
+DOMAIN-KEYWORD,office
 DOMAIN-SUFFIX,office.com
 DOMAIN-SUFFIX,office.net
 DOMAIN-SUFFIX,office365.com
@@ -1008,7 +1008,7 @@ DOMAIN-SUFFIX,gigjam.com
 DOMAIN-SUFFIX,helpshift.com
 DOMAIN-SUFFIX,hockeyapp.net
 DOMAIN-SUFFIX,hololens.com
-DOMAIN-SUFFIX,hotmail
+DOMAIN-KEYWORD,hotmail
 DOMAIN-SUFFIX,hotmail.co
 DOMAIN-SUFFIX,hotmail.com
 DOMAIN-SUFFIX,hotmail.eu
@@ -1020,7 +1020,7 @@ DOMAIN-SUFFIX,ie11.com
 DOMAIN-SUFFIX,ie8.co
 DOMAIN-SUFFIX,ie9.com
 DOMAIN-SUFFIX,imaginecup.pl
-DOMAIN-SUFFIX,img-prod-cms-rt-microsoft-com
+DOMAIN-KEYWORD,img-prod-cms-rt-microsoft-com
 DOMAIN-SUFFIX,ingads.com
 DOMAIN-SUFFIX,internetexplorer.co
 DOMAIN-SUFFIX,internetexplorer.com
@@ -1044,7 +1044,7 @@ DOMAIN-SUFFIX,managedmeetingrooms.com
 DOMAIN-SUFFIX,meetfasttrack.com
 DOMAIN-SUFFIX,meetyourdevices.com
 DOMAIN-SUFFIX,mepn.com
-DOMAIN-SUFFIX,microsoft
+DOMAIN-KEYWORD,microsoft
 DOMAIN-SUFFIX,microsoft-int.com
 DOMAIN-SUFFIX,microsoft-ppe.com
 DOMAIN-SUFFIX,microsoft-sap-events.com
@@ -1196,7 +1196,7 @@ DOMAIN-SUFFIX,sfx.ms
 DOMAIN-SUFFIX,sharepoint.cn
 DOMAIN-SUFFIX,sharepoint.com
 DOMAIN-SUFFIX,sharepointonline.com
-DOMAIN-SUFFIX,skype
+DOMAIN-KEYWORD,skype
 DOMAIN-SUFFIX,staffhub.ms
 DOMAIN-SUFFIX,successwithteams.com
 DOMAIN-SUFFIX,surface.com
@@ -1317,16 +1317,16 @@ DOMAIN-SUFFIX,mscrl.microsoft.com
 DOMAIN-SUFFIX,ocsp.microsoft.com
 DOMAIN-SUFFIX,oneocsp.microsoft.com
 DOMAIN-SUFFIX,www.microsoft.com
-DOMAIN-SUFFIX,microsoft
-DOMAIN-SUFFIX,hotmail
-DOMAIN-SUFFIX,office
-DOMAIN-SUFFIX,skype
-DOMAIN-SUFFIX,windows
-DOMAIN-SUFFIX,bing
-DOMAIN-SUFFIX,azure
-DOMAIN-SUFFIX,xbox
-DOMAIN-SUFFIX,onedriveupdater
-DOMAIN-SUFFIX,onedrive
+DOMAIN-KEYWORD,microsoft
+DOMAIN-KEYWORD,hotmail
+DOMAIN-KEYWORD,office
+DOMAIN-KEYWORD,skype
+DOMAIN-KEYWORD,windows
+DOMAIN-KEYWORD,bing
+DOMAIN-KEYWORD,azure
+DOMAIN-KEYWORD,xbox
+DOMAIN-KEYWORD,onedriveupdater
+DOMAIN-KEYWORD,onedrive
 DOMAIN-SUFFIX,microsoftnews.org
 DOMAIN-SUFFIX,visualstudio.eu
 DOMAIN-SUFFIX,microsoft.com
