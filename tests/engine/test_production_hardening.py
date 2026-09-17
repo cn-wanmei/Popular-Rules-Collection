@@ -3,13 +3,38 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import yaml
+
 from src.engine.pipeline.run import STAGES, run_pipeline
 
 
 def _fixture(tmp_path: Path) -> Path:
+    """Return a sources root that the ingest stage can parse.
+
+    The production engine's ingest stage recognises two input kinds:
+      1. Structured-service YAML files (id / category / rules list).
+      2. Collected-snapshot manifests (manifests/ directory).
+
+    A bare ``.list`` file in sources/ matches neither path, so the fixture
+    must supply at least one valid structured-service YAML.
+    """
     source = tmp_path / "sources"
     source.mkdir()
-    (source / "sample.list").write_text("DOMAIN,example.com\n", encoding="utf-8")
+    service = {
+        "id": "test-service",
+        "name": "Test Service",
+        "category": "other",
+        "type": "domain",
+        "version": 1,
+        "source": [{"id": "test", "priority": 80}],
+        "rules": [
+            {"type": "domain_suffix", "value": "example.com"},
+            {"type": "domain_suffix", "value": "example.org"},
+        ],
+    }
+    (source / "test-service.yaml").write_text(
+        yaml.dump(service, allow_unicode=True), encoding="utf-8"
+    )
     return source
 
 
