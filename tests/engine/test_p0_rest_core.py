@@ -43,12 +43,13 @@ def test_full_p0_flow():
         for client, meta in CLIENTS.items():
             cdir = art / client
             assert cdir.exists()
-            assert list(cdir.glob(f"*{meta['ext']}"))
+            assert list(cdir.rglob(f"*{meta['ext']}"))
 
         assert "google-gmail" in report["views"]["services"]
-        assert (art / "mihomo" / "google-gmail.yaml").exists()
-        assert (art / "singbox" / "google-gmail.json").exists()
-        assert (art / "egern" / "google-gmail.yaml").exists()
+        assert (art / "mihomo" / "categories" / "mail" / "all" / "rules.yaml").exists()
+        assert (art / "mihomo" / "categories" / "storage" / "all" / "rules.yaml").exists()
+        assert (art / "singbox" / "categories" / "mail" / "all" / "rules.json").exists()
+        assert (art / "egern" / "categories" / "mail" / "all" / "rules.yaml").exists()
 
         diff_dir = run_dir / "reports" / "diff"
         baseline = data / "runs" / run_id / "reports" / "diff" / "baseline.json"
