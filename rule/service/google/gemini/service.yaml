@@ -1,0 +1,15 @@
+id: google/gemini
+name: Gemini
+type: child-service
+parent: google
+status: active
+categories:
+  - ai
+assets:
+  domains: []
+  domain_suffixes: []
+  domain_keywords: []
+  ip_cidrs: []
+  urls: []
+requires: []
+network_references: []
