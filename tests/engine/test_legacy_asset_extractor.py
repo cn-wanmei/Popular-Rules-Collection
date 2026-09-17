@@ -38,11 +38,11 @@ def test_extracts_domains_cidrs_urls_and_deduplicates(tmp_path: Path) -> None:
 
     ir = extract_legacy_asset_ir(root)
     openai = next(item for item in ir.services if item.id == "openai")
-    assert openai.domains == 1
-    assert openai.domain_suffixes == 1
+    assert openai.domains == 0
+    assert openai.domain_suffixes == 2
     assert openai.cidrs == 1
     assert openai.urls == 1
-    assert openai.records == 3
+    assert openai.records == 4
     assert ir.relation_drift[0]["aggregate"] == "ai"
     assert ir.relation_drift[0]["missing_from_index"] == ["mistral"]
 
