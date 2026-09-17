@@ -5,6 +5,10 @@ on:
     workflows: ["Build Client Rules"]
     types: [completed]
 
+concurrency:
+  group: publish-main
+  cancel-in-progress: false
+
 jobs:
   publish:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}

@@ -1,6 +1,5 @@
 # Provider → Aggregate → Service hierarchy.
-# This is declarative metadata; it never invents rules. A node becomes production-ready
-# only when its service identity is backed by one or more collected source memberships.
+# Provider ownership and cross-provider categories are distinct concepts.
 version: 1
 schema: provider_service_hierarchy_v1
 rules:
@@ -8,6 +7,7 @@ rules:
   service_is_sibling_of_aggregate: true
   no_name_prefix_inference: true
   aggregate_semantics: union_of_declared_children_plus_provider_direct
+  category_semantics: union_of_declared_members_plus_category_direct
 providers:
   apple:
     display_name: Apple
@@ -174,6 +174,7 @@ providers:
       genshin: {display_name: Genshin Impact, status: planned}
       honkai_star_rail: {display_name: Honkai Star Rail, status: planned}
       zenless_zone_zero: {display_name: Zenless Zone Zero, status: planned}
+categories:
   developer:
     display_name: Developer Ecosystem
     aggregate: developer
