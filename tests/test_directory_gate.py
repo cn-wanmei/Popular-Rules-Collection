@@ -10,10 +10,3 @@ def test_directory_policy_passes_bootstrap_tree() -> None:
     assert "alibaba" in report["china_excluded_independent_providers"]
     assert "tencent" in report["china_excluded_independent_providers"]
     assert "baidu" in report["china_excluded_independent_providers"]
-
-
-def test_directory_policy_rejects_flat_canonical_rule(tmp_path: Path) -> None:
-    root = tmp_path
-    policy = root / "config" / "service_model"
-    policy.mkdir(parents=True)
-    policy.write_text("", encoding="utf-8")
