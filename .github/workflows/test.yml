@@ -25,6 +25,17 @@ jobs:
       - name: Architecture gate
         run: python scripts/architecture_gate.py
 
+      - name: Evidence consistency gate (report)
+        run: |
+          if [ -f generated/_promotion/latest.json ]; then
+            python scripts/evidence_consistency_gate.py || {
+              echo "::warning::evidence_consistency_gate reported issues (non-blocking in Unit Tests)"
+              exit 0
+            }
+          else
+            echo "No promotion pointer; skipping evidence consistency gate"
+          fi
+
       - name: Legacy reference gate
         run: python scripts/legacy_reference_gate.py
 
