@@ -8,15 +8,17 @@ service-level evidence before it can be marked production.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-P0_PATH = ROOT / "config" / "p0_materialization.yaml"
-IDENTITY_PATH = ROOT / "config" / "p0_service_identity.yaml"
-MATRIX_PATH = ROOT / "config" / "p0_service_production.yaml"
+CONFIG_DIR = ROOT / "config"
+P0_PATH = CONFIG_DIR / "p0_materialization.yaml"
+IDENTITY_PATH = CONFIG_DIR / "p0_service_identity.yaml"
+MATRIX_PATH = CONFIG_DIR / "p0_service_production.yaml"
 RUNS_DIR = ROOT / "data" / "runs"
 
 CLIENT_EXT = {
@@ -54,12 +56,90 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def evidence_bundles() -> dict[str, dict[str, dict]]:
+    """Load every batch evidence bundle without making batch 01 special.
+
+    The production matrix is not itself evidence.  A service may only become
+    production when the evidence files independently prove each hard field.
+    """
+    bundles: dict[str, dict[str, dict]] = {}
+    for path in sorted(CONFIG_DIR.glob("p0_batch*_source_evidence.yaml")):
+        batch = load_yaml(path).get("batch")
+        if batch is not None:
+            bundles.setdefault(str(batch), {})["source"] = load_yaml(path)
+    for path in sorted(CONFIG_DIR.glob("p0_batch*_canonical_membership.yaml")):
+        batch = load_yaml(path).get("batch")
+        if batch is not None:
+            bundles.setdefault(str(batch), {})["canonical"] = load_yaml(path)
+    for path in sorted(CONFIG_DIR.glob("p0_batch*_semantic_audit.yaml")):
+        batch = load_yaml(path).get("batch")
+        if batch is not None:
+            bundles.setdefault(str(batch), {})["semantic"] = load_yaml(path)
+    for path in sorted(CONFIG_DIR.glob("p0_batch*_overlap_audit.yaml")):
+        batch = load_yaml(path).get("batch")
+        if batch is not None:
+            bundles.setdefault(str(batch), {})["overlap"] = load_yaml(path)
+    return bundles
+
+
+def evidence_errors_for_service(sid: str, bundles: dict[str, dict[str, dict]]) -> list[str]:
+    errors: list[str] = []
+    found = False
+    for batch, bundle in bundles.items():
+        services = set()
+        for key in ("source", "canonical", "semantic"):
+            services.update((bundle.get(key, {}).get("services") or {}).keys())
+        if sid not in services:
+            continue
+        found = True
+        source = (bundle.get("source", {}).get("services") or {}).get(sid) or {}
+        canonical = (bundle.get("canonical", {}).get("services") or {}).get(sid) or {}
+        semantic = (bundle.get("semantic", {}).get("services") or {}).get(sid) or {}
+        overlap = bundle.get("overlap", {})
+
+        snapshot = source.get("immutable_snapshot") or {}
+        snapshot_path = snapshot.get("path")
+        snapshot_hash = snapshot.get("sha256")
+        if snapshot.get("status") != "complete" or not snapshot_path or not snapshot_hash:
+            errors.append(f"{sid}: batch {batch} source snapshot is not complete")
+        else:
+            absolute = ROOT / snapshot_path
+            if not absolute.is_file():
+                errors.append(f"{sid}: batch {batch} snapshot file is missing: {snapshot_path}")
+            else:
+                actual = hashlib.sha256(absolute.read_bytes()).hexdigest()
+                if actual != str(snapshot_hash).lower():
+                    errors.append(f"{sid}: batch {batch} snapshot sha256 mismatch")
+
+        if canonical.get("status") != "complete":
+            errors.append(f"{sid}: batch {batch} canonical membership is not complete")
+        else:
+            for membership in canonical.get("memberships") or []:
+                typ = str(membership.get("type") or "").strip().lower()
+                value = str(membership.get("value") or "").strip().lower()
+                expected_key = f"{typ}|{value}"
+                if membership.get("identity_key") != expected_key:
+                    errors.append(f"{sid}: batch {batch} canonical identity_key mismatch for {expected_key}")
+                expected_id = hashlib.sha256(expected_key.encode("utf-8")).hexdigest()
+                if str(membership.get("rule_id") or "").lower() != expected_id:
+                    errors.append(f"{sid}: batch {batch} canonical rule_id mismatch for {expected_key}")
+
+        if semantic.get("status") != "pass":
+            errors.append(f"{sid}: batch {batch} semantic audit is not pass")
+        if overlap.get("status") != "pass":
+            errors.append(f"{sid}: batch {batch} overlap audit is not pass")
+    if not found:
+        errors.append(f"{sid}: no independent source/canonical/semantic/overlap evidence bundle found")
+    return errors
+
+
 def main() -> int:
     args = parse_args()
     structural_errors: list[str] = []
     p0 = load_yaml(P0_PATH).get("services") or []
     identity = load_yaml(IDENTITY_PATH).get("services") or []
     matrix = load_yaml(MATRIX_PATH).get("services") or {}
+    bundles = evidence_bundles()
 
     p0_ids = [str(x.get("id")) for x in p0 if isinstance(x, dict) and x.get("id")]
     if len(p0_ids) != 50 or len(set(p0_ids)) != 50:
@@ -108,6 +188,9 @@ def main() -> int:
     for sid in p0_ids:
         row = matrix.get(sid) or {}
         failed = [field for field in HARD_FIELDS if row.get(field) != "pass"]
+        evidence_errors = evidence_errors_for_service(sid, bundles)
+        if all(row.get(field) == "pass" for field in ("source", "canonical", "semantic_audit", "overlap_audit")):
+            structural_errors.extend(evidence_errors)
         present: list[str] = []
         if run is not None:
             for client, ext in CLIENT_EXT.items():
@@ -126,7 +209,10 @@ def main() -> int:
         if row.get("status") == "production" and not failed:
             production_count += 1
         else:
-            blocked.append(f"{sid}: {', '.join(failed) if failed else 'status!=production'}")
+            blocked_reasons = failed or ["status!=production"]
+            if evidence_errors and all(row.get(field) == "pass" for field in HARD_FIELDS):
+                blocked_reasons.extend(["evidence:" + e.split(": ", 1)[-1] for e in evidence_errors])
+            blocked.append(f"{sid}: {', '.join(blocked_reasons)}")
 
     if run is not None:
         golden_path = run / "golden" / "report.json"
@@ -153,7 +239,9 @@ def main() -> int:
             print(f"  ERROR {error}")
 
     # Report-only means blocked production is expected, but malformed control-plane
-    # state remains a real CI error.
+    # state remains a real CI error. Evidence is only a structural error when the
+    # matrix claims the corresponding hard fields are pass; release mode still
+    # requires every hard field to be pass and therefore cannot bypass evidence.
     if args.report_only:
         return 1 if structural_errors else 0
     return 1 if structural_errors or production_count != len(p0_ids) else 0
