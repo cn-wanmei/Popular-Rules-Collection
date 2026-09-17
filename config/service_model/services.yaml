@@ -29,7 +29,13 @@ services:
   cainiao: {id: cainiao, provider: alibaba, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   baidu-core: {id: baidu-core, provider: baidu, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: baidu}
   baidu-shared: {id: baidu-shared, provider: baidu, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
+  baidunetdisk: {id: baidunetdisk, provider: baidu, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   amazon-core: {id: amazon-core, provider: amazon, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: amazon}
   amazon-shared: {id: amazon-shared, provider: amazon, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
   bytedance-core: {id: bytedance-core, provider: bytedance, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: bytedance}
   bytedance-shared: {id: bytedance-shared, provider: bytedance, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
+  doubao: {id: doubao, provider: bytedance, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  feishu: {id: feishu, provider: bytedance, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  netease-core: {id: netease-core, provider: netease, scope: provider_core, visibility: internal, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  netease-shared: {id: netease-shared, provider: netease, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  youdao: {id: youdao, provider: netease, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
