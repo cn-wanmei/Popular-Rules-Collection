@@ -118,7 +118,7 @@ def main() -> int:
     manifest = _load_json(run_dir / "release" / "manifest.json")
     release_state = manifest.get("release_state") or "UNKNOWN"
 
-    # Scope: P0 + materialized in service model (runtime-relevant), not all database/services
+    # Scope: P0 + materialized in service model (runtime-relevant only; legacy artifact trees excluded)
     selected = set(p0_ids)
     for sid, meta in services.items():
         if not isinstance(meta, dict):
@@ -144,7 +144,7 @@ def main() -> int:
         "scope": {
             "p0_count": len(p0_ids),
             "selected_count": len(selected),
-            "note": "Excludes database/services legacy-only unless service_model runtime-relevant",
+            "note": "Excludes legacy-only service artifacts unless service_model marks runtime-relevant",
         },
         "summary": {
             "release_eligible_true": sum(1 for i in items if i["derived"]["release_eligible"]),
