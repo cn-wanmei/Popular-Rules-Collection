@@ -25,13 +25,13 @@ services:
   gemini: {primary_category: ai, display_name: Gemini, categories: [ai], service_type: service, parent: ai}
   copilot: {primary_category: ai, display_name: Copilot, categories: [ai], service_type: service, parent: ai}
   anthropic: {primary_category: ai, display_name: Anthropic, categories: [ai], service_type: service, parent: ai}
-  perplexity: {primary_category: ai, display_name: Perplexity, categories: [ai], service_type: service, parent: ai}
-  groq: {primary_category: ai, display_name: Groq, categories: [ai], service_type: service, parent: ai}
-  huggingface: {primary_category: ai, display_name: Hugging Face, categories: [ai], service_type: service, parent: ai}
-  deepseek: {primary_category: ai, display_name: DeepSeek, categories: [ai], service_type: service, parent: ai}
-  grok: {primary_category: ai, display_name: Grok, categories: [ai], service_type: service, parent: ai}
-  cursor: {primary_category: developer, display_name: Cursor, categories: [developer, ai], service_type: service, parent: developer}
-  elevenlabs: {primary_category: ai, display_name: ElevenLabs, categories: [ai], service_type: service, parent: ai}
+  perplexity: {primary_category: perplexity, display_name: Perplexity, categories: [ai], service_type: service}
+  groq: {primary_category: groq, display_name: Groq, categories: [ai], service_type: service}
+  huggingface: {primary_category: huggingface, display_name: Hugging Face, categories: [ai], service_type: service}
+  deepseek: {primary_category: deepseek, display_name: DeepSeek, categories: [ai], service_type: service}
+  grok: {primary_category: xai, display_name: Grok, categories: [ai], service_type: service}
+  cursor: {primary_category: cursor, display_name: Cursor, categories: [developer, ai], service_type: service}
+  elevenlabs: {primary_category: elevenlabs, display_name: ElevenLabs, categories: [ai], service_type: service}
   github: {primary_category: microsoft, display_name: GitHub, categories: [microsoft, developer], service_type: service, parent: microsoft}
   azure: {primary_category: microsoft, display_name: Microsoft Azure, categories: [microsoft, developer], service_type: service, parent: microsoft}
   aws: {primary_category: amazon, display_name: AWS, categories: [amazon, developer], service_type: service, parent: amazon}
