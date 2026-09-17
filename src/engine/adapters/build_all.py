@@ -13,8 +13,10 @@ from src.engine.adapters.registry import CLIENTS, get_adapter
 from src.engine.adapters.type_normalize import normalize_rule_for_client
 from src.engine.semantic_intent import validate_semantic_probes
 
-
-_CAPABILITY_MATRIX = Path(__file__).resolve().parents[3] / "config" / "client_capability_matrix.yaml"
+_ROOT = Path(__file__).resolve().parents[3]
+_CAPABILITY_MATRIX = _ROOT / "config" / "client_capability_matrix.yaml"
+_DIRECTORY_POLICY = _ROOT / "config" / "service_model" / "directories.yaml"
+_HIERARCHY = _ROOT / "config" / "ruleset_hierarchy.yaml"
 
 
 def _load_ir(ir_dir: Path) -> tuple[list[dict[str, Any]], dict[str, list[str]], dict[str, Any], dict[str, Any]]:
@@ -35,6 +37,41 @@ def _load_ir(ir_dir: Path) -> tuple[list[dict[str, Any]], dict[str, list[str]], 
     if not isinstance(semantic_intent, dict):
         raise RuntimeError("Semantic IR semantic_intent report is invalid")
     return rules, {str(k): [str(x) for x in v] for k, v in memberships.items()}, entities, semantic_intent
+
+
+def _load_yaml(path: Path) -> dict[str, Any]:
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    if not isinstance(data, dict):
+        raise RuntimeError(f"Invalid mapping: {path}")
+    return data
+
+
+def _load_directory_contract() -> tuple[dict[str, str], dict[str, set[str]], set[str]]:
+    if not _DIRECTORY_POLICY.exists():
+        raise RuntimeError(f"Directory policy missing: {_DIRECTORY_POLICY}")
+    policy = _load_yaml(_DIRECTORY_POLICY)
+    if policy.get("schema") != "rule_directory_policy_v1":
+        raise RuntimeError("Unsupported rule directory policy schema")
+    layout = policy.get("layout") or {}
+    if not all(layout.get(k) for k in ("generated_client_root", "generated_aggregate", "generated_service")):
+        raise RuntimeError("Directory policy is missing generated path templates")
+    hierarchy = _load_yaml(_HIERARCHY)
+    providers = hierarchy.get("providers") or {}
+    service_provider: dict[str, str] = {}
+    provider_services: dict[str, set[str]] = {}
+    provider_aggregates: set[str] = set()
+    for provider, node in providers.items():
+        if not isinstance(node, dict):
+            continue
+        aggregate = str(node.get("aggregate") or provider)
+        provider_aggregates.add(aggregate)
+        service_ids = {str(sid) for sid in (node.get("services") or {})}
+        provider_services[provider] = service_ids
+        for sid in service_ids:
+            if sid in service_provider and service_provider[sid] != provider:
+                raise RuntimeError(f"Service {sid!r} belongs to multiple providers")
+            service_provider[sid] = provider
+    return service_provider, provider_services, provider_aggregates
 
 
 def _load_capabilities() -> dict[str, set[str]]:
@@ -65,13 +102,22 @@ def _project_rules(
     projected: list[dict[str, Any]] = []
     skipped: Counter[str] = Counter()
     for rule in rules:
-        rule = normalize_rule_for_client(rule)
-        key = _rule_type_key(rule)
+        normalized = normalize_rule_for_client(rule)
+        key = _rule_type_key(normalized)
         if key in supported:
-            projected.append(rule)
+            projected.append(normalized)
         else:
             skipped[key or "unknown"] += 1
     return projected, dict(sorted(skipped.items()))
+
+
+def _render_view(render, rules: list[dict[str, Any]], path: Path) -> None:
+    if not rules:
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    render(rules, path)
+    if not path.exists() or path.stat().st_size == 0:
+        raise RuntimeError(f"Adapter produced missing or empty artifact: {path}")
 
 
 def _build_client(
@@ -81,6 +127,9 @@ def _build_client(
     memberships: dict[str, list[str]],
     artifacts_dir: Path,
     capabilities: dict[str, set[str]],
+    service_provider: dict[str, str],
+    provider_services: dict[str, set[str]],
+    provider_aggregates: set[str],
 ) -> tuple[str, dict[str, Any]]:
     cdir = artifacts_dir / client
     cdir.mkdir(parents=True, exist_ok=True)
@@ -89,40 +138,81 @@ def _build_client(
     projected_rules, skipped_types = _project_rules(client, rules, capabilities)
     projected_ids = {r["id"] for r in projected_rules}
 
-    render(projected_rules, cdir / f"aggregate{meta['ext']}")
+    emitted_files = 0
+    emitted_paths: list[str] = []
+
+    # Provider aggregate = provider-direct membership + every declared service.
+    for provider in sorted(provider_services):
+        aggregate = next((a for a in provider_aggregates if a == provider), provider)
+        provider_ids: set[str] = set(memberships.get(aggregate, []))
+        for service in sorted(provider_services[provider]):
+            provider_ids.update(memberships.get(service, []))
+        entity_rules = [rules_by_id[rid] for rid in sorted(provider_ids) if rid in rules_by_id and rid in projected_ids]
+        if entity_rules:
+            path = cdir / provider / "all" / f"rules{meta['ext']}"
+            _render_view(render, entity_rules, path)
+            emitted_files += 1
+            emitted_paths.append(path.relative_to(cdir).as_posix())
+
+    # Each independently addressable service has its own directory.
+    for service, provider in sorted(service_provider.items()):
+        entity_rules = [
+            rules_by_id[rid]
+            for rid in memberships.get(service, [])
+            if rid in rules_by_id and rid in projected_ids
+        ]
+        if entity_rules:
+            path = cdir / provider / service / f"rules{meta['ext']}"
+            _render_view(render, entity_rules, path)
+            emitted_files += 1
+            emitted_paths.append(path.relative_to(cdir).as_posix())
+
+    # Category aggregates are intentionally separate from provider/service trees.
     for entity in sorted(memberships):
+        if entity in provider_aggregates or entity in service_provider:
+            continue
+        if entity in {"china"} or entity.endswith("_aggregate"):
+            continue
         entity_rules = [
             rules_by_id[rid]
             for rid in memberships[entity]
-            if rid in projected_ids and rid in rules_by_id
+            if rid in rules_by_id and rid in projected_ids
         ]
         if entity_rules:
-            render(entity_rules, cdir / f"{entity}{meta['ext']}")
-    files = sorted(cdir.glob(f"*{meta['ext']}"))
+            path = cdir / "categories" / entity / "all" / f"rules{meta['ext']}"
+            _render_view(render, entity_rules, path)
+            emitted_files += 1
+            emitted_paths.append(path.relative_to(cdir).as_posix())
+
+    files = sorted(p for p in cdir.rglob(f"*{meta['ext']}") if p.is_file())
     if not files or any(p.stat().st_size == 0 for p in files):
         raise RuntimeError(f"Adapter {client} produced missing or empty artifacts")
     return client, {
         "ext": meta["ext"],
-        "files": len(files),
+        "files": emitted_files,
         "source": "semantic_ir_v2",
+        "directory_schema": "rule_directory_policy_v1",
         "input_rules": len(rules),
         "emitted_rules": len(projected_rules),
         "skipped_unsupported_rule_types": skipped_types,
+        "paths": emitted_paths,
     }
 
 
 def build_all_clients(ir_dir: Path, artifacts_dir: Path, *, views: list[str] | None = None) -> dict[str, Any]:
-    """Build all client artifacts from IR after semantic probes pass."""
+    """Build all client artifacts from IR using the canonical directory contract."""
     artifacts_dir = Path(artifacts_dir)
     artifacts_dir.mkdir(parents=True, exist_ok=True)
     rules, memberships, entities, semantic_intent = _load_ir(Path(ir_dir))
     probe_report = validate_semantic_probes(rules, memberships)
     capabilities = _load_capabilities()
+    service_provider, provider_services, provider_aggregates = _load_directory_contract()
     report: dict[str, Any] = {
-        "schema": "adapter_build_v2",
+        "schema": "adapter_build_v3",
         "clients": {},
         "views": {"services": sorted(entities.get("services", [])), "aggregate": True},
         "source_contract": "semantic_ir_v2",
+        "directory_contract": "rule_directory_policy_v1",
         "semantic_intent": semantic_intent,
         "semantic_probes": probe_report,
         "v2_runtime_dependency": 0,
@@ -130,7 +220,18 @@ def build_all_clients(ir_dir: Path, artifacts_dir: Path, *, views: list[str] | N
     }
     with ThreadPoolExecutor(max_workers=min(8, max(1, len(CLIENTS))), thread_name_prefix="adapter") as pool:
         futures = {
-            pool.submit(_build_client, client, meta, rules, memberships, artifacts_dir, capabilities): client
+            pool.submit(
+                _build_client,
+                client,
+                meta,
+                rules,
+                memberships,
+                artifacts_dir,
+                capabilities,
+                service_provider,
+                provider_services,
+                provider_aggregates,
+            ): client
             for client, meta in CLIENTS.items()
         }
         for future in as_completed(futures):
