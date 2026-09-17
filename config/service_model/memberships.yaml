@@ -5,7 +5,7 @@ aggregates:
   apple: {id: apple, kind: aggregate, provider: apple, scope: ecosystem, members: [apple-core, apple-shared, icloud], exclude: []}
   microsoft: {id: microsoft, kind: aggregate, provider: microsoft, scope: ecosystem, members: [microsoft-core, microsoft-shared], exclude: []}
   tencent: {id: tencent, kind: aggregate, provider: tencent, scope: ecosystem, members: [tencent-core, tencent-shared, wechat, qq, qqmusic, qqmail, wecom, tencentmeeting, tencentcloud], exclude: []}
-  alibaba: {id: alibaba, kind: aggregate, provider: alibaba, scope: ecosystem, members: [alibaba-core, alibaba-shared], exclude: []}
+  alibaba: {id: alibaba, kind: aggregate, provider: alibaba, scope: ecosystem, members: [alibaba-core, alibaba-shared, taobao, tmall, alibabacloud, "1688", dingding, cainiao], exclude: []}
   baidu: {id: baidu, kind: aggregate, provider: baidu, scope: ecosystem, members: [baidu-core, baidu-shared], exclude: []}
   amazon: {id: amazon, kind: aggregate, provider: amazon, scope: ecosystem, members: [amazon-core, amazon-shared], exclude: []}
   bytedance: {id: bytedance, kind: aggregate, provider: bytedance, scope: ecosystem, members: [bytedance-core, bytedance-shared], exclude: []}
