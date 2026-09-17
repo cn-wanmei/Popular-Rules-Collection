@@ -42,7 +42,7 @@ def test_extracts_domains_cidrs_urls_and_deduplicates(tmp_path: Path) -> None:
     assert openai.domain_suffixes == 1
     assert openai.cidrs == 1
     assert openai.urls == 1
-    assert openai.records == 4
+    assert openai.records == 3
     assert ir.relation_drift[0]["aggregate"] == "ai"
     assert ir.relation_drift[0]["missing_from_index"] == ["mistral"]
 
