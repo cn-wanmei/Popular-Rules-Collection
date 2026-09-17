@@ -223,11 +223,9 @@ def _iter_asset_records(path: Path) -> Iterator[tuple[int, str, str, str]]:
             # therefore match parsed values back to source lines deterministically.
             for line_no, line in enumerate(lines, 1):
                 stripped = line.strip().strip("'\"")
-                if value in stripped:
-                    bucket = parsed_by_line.setdefault(line_no, [])
-                    record = (typ, value, fmt)
-                    if record not in bucket:
-                        bucket.append(record)
+                record = (typ, value, fmt)
+                if value in stripped and record not in parsed_by_line.get(line_no, []):
+                    parsed_by_line.setdefault(line_no, []).append(record)
                     break
     except (OSError, UnicodeError):
         return
@@ -399,7 +397,7 @@ def extract_legacy_asset_ir(
                 summary.sources.append(source)
 
     relation_drift: list[dict[str, Any]] = []
-    indexed_ids = set(summaries)
+    index_service_ids = {service_id for (_category, service_id) in index}
     for summary in summaries.values():
         if summary.service_type != "aggregate":
             continue
@@ -407,10 +405,10 @@ def extract_legacy_asset_ir(
         indexed_children = {
             child.id
             for child in summaries.values()
-            if child.parent == summary.id
+            if child.id in index_service_ids and child.parent == summary.id
         }
-        missing = sorted(metadata_children - indexed_ids)
-        metadata_only = sorted(metadata_children - indexed_children)
+        missing = sorted(metadata_children - indexed_children)
+        metadata_only = sorted(metadata_children - index_service_ids)
         index_only = sorted(indexed_children - metadata_children)
         if missing or metadata_only or index_only:
             relation_drift.append({
@@ -430,7 +428,7 @@ def extract_legacy_asset_ir(
         "domain_suffixes": sum(s.domain_suffixes for s in summaries.values()),
         "domain_keywords": sum(s.domain_keywords for s in summaries.values()),
         "domain_regexes": sum(s.domain_regexes for s in summaries.values()),
-        "ip_cidrs": sum(s.cidrs for s in summaries.values()),
+        "cidrs": sum(s.cidrs for s in summaries.values()),
         "urls": sum(s.urls for s in summaries.values()),
         "hosts": sum(s.hosts for s in summaries.values()),
         "process_rules": sum(s.process_rules for s in summaries.values()),
@@ -439,33 +437,26 @@ def extract_legacy_asset_ir(
         schema="legacy_asset_ir_v1",
         generated_at=datetime.now(timezone.utc).isoformat(),
         source={
-            "legacy_tree": str(rule_root.as_posix()),
-            "inventory": str(index_path.as_posix()),
-            "inventory_sha256": _sha256(index_path) if index_path.exists() else None,
-            "policy": "legacy evidence only; not canonical V1 source of truth",
+            "rule_root": str(rule_root),
+            "index": str(index_path),
+            "description": "legacy evidence only; not canonical V1 source of truth",
         },
         services=sorted(summaries.values(), key=lambda item: item.id),
         totals=totals,
-        relation_drift=sorted(relation_drift, key=lambda item: item["aggregate"]),
+        relation_drift=relation_drift,
     )
 
 
-def write_asset_jsonl(rule_root: Path, output_path: Path, *, include_aggregates: bool = True) -> dict[str, Any]:
-    """Write the full deduplicated Legacy Asset IR as deterministic JSONL."""
-    output_path = Path(output_path)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    count = 0
-    with output_path.open("w", encoding="utf-8", newline="\n") as handle:
-        for evidence in iter_service_assets(Path(rule_root), include_aggregates=include_aggregates):
-            handle.write(json.dumps(evidence.as_dict(), ensure_ascii=False, sort_keys=True, separators=(",", ":")))
-            handle.write("\n")
-            count += 1
-    return {
-        "schema": "legacy_asset_ir_v1_jsonl",
-        "path": str(output_path.as_posix()),
-        "records": count,
-        "sha256": _sha256(output_path),
-    }
+def write_asset_jsonl(rule_root: Path, output: Path, *, include_aggregates: bool = True) -> dict[str, Any]:
+    """Write the complete de-duplicated asset stream and return file metadata."""
+    output = Path(output)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    records = 0
+    with output.open("w", encoding="utf-8") as handle:
+        for evidence in iter_service_assets(rule_root, include_aggregates=include_aggregates):
+            handle.write(json.dumps(evidence.as_dict(), ensure_ascii=False, sort_keys=True) + "\n")
+            records += 1
+    return {"records": records, "sha256": _sha256(output), "path": str(output)}
 
 
 __all__ = [
