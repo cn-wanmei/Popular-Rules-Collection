@@ -3,11 +3,12 @@
 from __future__ import annotations
 
 import argparse
-import sys
 import json
 import re
+import sys
 from pathlib import Path
 from typing import Any
+
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -21,10 +22,9 @@ TYPE_FIELDS = {
     "domain_keyword": "domain_keyword",
     "domain_regex": "domain_regex",
     "ip_cidr": "ip_cidr",
-    "ip_cidr6": "ip_cidr",
+    "ip_cidr6": "ip_cidr6",
 }
 
-# Egern native rule-set collection keys -> normalized type
 EGERN_FIELDS = {
     "domain_set": "domain",
     "domain_suffix_set": "domain_suffix",
@@ -39,8 +39,12 @@ LINE_TYPES = {
     "DOMAIN-SUFFIX": "domain_suffix",
     "DOMAIN-KEYWORD": "domain_keyword",
     "DOMAIN-REGEX": "domain_regex",
+    "HOST": "domain",
+    "HOST-SUFFIX": "domain_suffix",
+    "HOST-KEYWORD": "domain_keyword",
     "IP-CIDR": "ip_cidr",
     "IP-CIDR6": "ip_cidr6",
+    "IP6-CIDR": "ip_cidr6",
 }
 
 EXAMPLE_LIMIT = 20
@@ -65,7 +69,8 @@ def _project_ir_rules(path: Path) -> set[tuple[str, str]]:
 
 def _strip_policy(value: str) -> str:
     value = value.strip()
-    value = re.sub(r",(REJECT|DIRECT|PROXY|PASS|REJECT-DROP)$", "", value, flags=re.I)
+    # Native line-list clients append a routing policy after the rule value.
+    value = re.sub(r",\s*(REJECT|DIRECT|PROXY|PASS|REJECT-DROP)\s*$", "", value, flags=re.I)
     return value.strip()
 
 
