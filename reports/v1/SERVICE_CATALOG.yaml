@@ -1,0 +1,417 @@
+version: 1
+model: v1
+phase: phase2-asset-audit
+source:
+  legacy_inventory: rule/_index.yaml
+  legacy_inventory_sha: e6ff114d939417ddd9392a725637c6acd7b3effe
+  generated_at: '2026-09-01T01:29:36.358888+00:00'
+summary:
+  legacy_rule_entries: 184
+  service_candidates: 170
+  aggregate_candidates: 14
+  categories: 25
+  domains: 835612
+  ips: 13976
+policy:
+  canonical_promotion: requires explicit V1 asset audit
+  legacy_preserved: true
+  generated_not_source_of_truth: true
+categories:
+- id: '12306'
+  legacy_rule_count: 1
+  service_count: 1
+  aggregate_count: 0
+  domains: 15
+  ips: 0
+  legacy_ids:
+  - '12306'
+  aggregate_ids: []
+- id: unionpay
+  legacy_rule_count: 10
+  service_count: 9
+  aggregate_count: 1
+  domains: 209
+  ips: 0
+  legacy_ids:
+  - abc
+  - boc
+  - bocom
+  - ccb
+  - ceb
+  - cmb
+  - icbc
+  - pingan
+  - psbc
+  - unionpay
+  aggregate_ids:
+  - unionpay
+- id: china
+  legacy_rule_count: 27
+  service_count: 26
+  aggregate_count: 1
+  domains: 112919
+  ips: 9812
+  legacy_ids:
+  - acfun
+  - bilibili
+  - cctv
+  - china
+  - ctrip
+  - dewu
+  - didi
+  - douyu
+  - himalaya
+  - huya
+  - iqiyi
+  - kuaishou
+  - kugou
+  - kugoukuwo
+  - kuwo
+  - letv
+  - meituan
+  - netease
+  - pinduoduo
+  - pptv
+  - sina
+  - sohu
+  - tongcheng
+  - weibo
+  - xiaohongshu
+  - ximalaya
+  - zhihu
+  aggregate_ids:
+  - china
+- id: privacy
+  legacy_rule_count: 6
+  service_count: 5
+  aggregate_count: 1
+  domains: 702996
+  ips: 50
+  legacy_ids:
+  - adblock
+  - adblock-light
+  - adblock-pro
+  - gfw
+  - private
+  - proxy
+  aggregate_ids:
+  - adblock
+- id: other
+  legacy_rule_count: 19
+  service_count: 19
+  aggregate_count: 0
+  domains: 1546
+  ips: 42
+  legacy_ids:
+  - adobe
+  - airbnb
+  - booking
+  - canva
+  - dropbox
+  - ebay
+  - huawei
+  - naver
+  - notion
+  - oppo
+  - scholar
+  - shopify
+  - slack
+  - uber
+  - vivo
+  - walmart
+  - wikipedia
+  - xiaomi
+  - zoom
+  aggregate_ids: []
+- id: ai
+  legacy_rule_count: 13
+  service_count: 12
+  aggregate_count: 1
+  domains: 348
+  ips: 4
+  legacy_ids:
+  - ai
+  - aisuite
+  - anthropic
+  - claude
+  - copilot
+  - deepseek
+  - elevenlabs
+  - gemini
+  - groq
+  - huggingface
+  - openai
+  - perplexity
+  - xai
+  aggregate_ids:
+  - ai
+- id: developer
+  legacy_rule_count: 17
+  service_count: 16
+  aggregate_count: 1
+  domains: 1058
+  ips: 22
+  legacy_ids:
+  - akamai
+  - atlassian
+  - azure
+  - cloudflare
+  - cursor
+  - developer
+  - digitalocean
+  - docker
+  - figma
+  - gitlab
+  - hashicorp
+  - heroku
+  - jetbrains
+  - netlify
+  - oracle
+  - trello
+  - vercel
+  aggregate_ids:
+  - developer
+- id: alibaba
+  legacy_rule_count: 8
+  service_count: 7
+  aggregate_count: 1
+  domains: 697
+  ips: 55
+  legacy_ids:
+  - alibaba
+  - alibabacloud
+  - alipay
+  - amap
+  - eleme
+  - gaode
+  - xianyu
+  - youku
+  aggregate_ids:
+  - alibaba
+- id: amazon
+  legacy_rule_count: 2
+  service_count: 2
+  aggregate_count: 0
+  domains: 333
+  ips: 15
+  legacy_ids:
+  - amazon
+  - aws
+  aggregate_ids: []
+- id: apple
+  legacy_rule_count: 4
+  service_count: 3
+  aggregate_count: 1
+  domains: 1877
+  ips: 13
+  legacy_ids:
+  - apple
+  - applemusic
+  - appletv
+  - icloud
+  aggregate_ids:
+  - apple
+- id: streaming
+  legacy_rule_count: 17
+  service_count: 17
+  aggregate_count: 0
+  domains: 466
+  ips: 14
+  legacy_ids:
+  - bahamut
+  - bbc
+  - dailymotion
+  - deezer
+  - disney
+  - emby
+  - hbo
+  - hulu
+  - netflix
+  - paramountplus
+  - peacock
+  - primevideo
+  - soundcloud
+  - spotify
+  - tidal
+  - twitch
+  - vimeo
+  aggregate_ids: []
+- id: baidu
+  legacy_rule_count: 1
+  service_count: 0
+  aggregate_count: 1
+  domains: 324
+  ips: 0
+  legacy_ids:
+  - baidu
+  aggregate_ids:
+  - baidu
+- id: gaming
+  legacy_rule_count: 13
+  service_count: 13
+  aggregate_count: 0
+  domains: 553
+  ips: 24
+  legacy_ids:
+  - battlenet
+  - ea
+  - epic
+  - garena
+  - hoyoverse
+  - minecraft
+  - nintendo
+  - playstation
+  - riotgames
+  - roblox
+  - rockstar
+  - steam
+  - ubisoft
+  aggregate_ids: []
+- id: finance
+  legacy_rule_count: 5
+  service_count: 5
+  aggregate_count: 0
+  domains: 264
+  ips: 0
+  legacy_ids:
+  - binance
+  - okx
+  - paypal
+  - stripe
+  - wise
+  aggregate_ids: []
+- id: social
+  legacy_rule_count: 16
+  service_count: 16
+  aggregate_count: 0
+  domains: 822
+  ips: 84
+  legacy_ids:
+  - bluesky
+  - discord
+  - facebook
+  - instagram
+  - kakaotalk
+  - line
+  - linkedin
+  - messenger
+  - pinterest
+  - reddit
+  - signal
+  - snapchat
+  - telegram
+  - threads
+  - twitter
+  - whatsapp
+  aggregate_ids: []
+- id: bytedance
+  legacy_rule_count: 4
+  service_count: 3
+  aggregate_count: 1
+  domains: 1232
+  ips: 1
+  legacy_ids:
+  - bytedance
+  - doubao
+  - douyin
+  - tiktok
+  aggregate_ids:
+  - bytedance
+- id: chinamobile
+  legacy_rule_count: 1
+  service_count: 1
+  aggregate_count: 0
+  domains: 35
+  ips: 1
+  legacy_ids:
+  - chinamobile
+  aggregate_ids: []
+- id: chinatelecom
+  legacy_rule_count: 1
+  service_count: 1
+  aggregate_count: 0
+  domains: 83
+  ips: 0
+  legacy_ids:
+  - chinatelecom
+  aggregate_ids: []
+- id: chinaunicom
+  legacy_rule_count: 1
+  service_count: 1
+  aggregate_count: 0
+  domains: 33
+  ips: 3736
+  legacy_ids:
+  - chinaunicom
+  aggregate_ids: []
+- id: google
+  legacy_rule_count: 5
+  service_count: 4
+  aggregate_count: 1
+  domains: 1296
+  ips: 34
+  legacy_ids:
+  - firebase
+  - google
+  - googlefcm
+  - youtube
+  - youtubemusic
+  aggregate_ids:
+  - google
+- id: microsoft
+  legacy_rule_count: 5
+  service_count: 4
+  aggregate_count: 1
+  domains: 1006
+  ips: 0
+  legacy_ids:
+  - github
+  - microsoft
+  - onedrive
+  - teams
+  - xbox
+  aggregate_ids:
+  - microsoft
+- id: jingdong
+  legacy_rule_count: 1
+  service_count: 0
+  aggregate_count: 1
+  domains: 265
+  ips: 0
+  legacy_ids:
+  - jingdong
+  aggregate_ids:
+  - jingdong
+- id: restricted
+  legacy_rule_count: 1
+  service_count: 0
+  aggregate_count: 1
+  domains: 6519
+  ips: 0
+  legacy_ids:
+  - restricted
+  aggregate_ids:
+  - restricted
+- id: network
+  legacy_rule_count: 2
+  service_count: 2
+  aggregate_count: 0
+  domains: 4
+  ips: 16
+  legacy_ids:
+  - speedtest
+  - stun
+  aggregate_ids: []
+- id: tencent
+  legacy_rule_count: 4
+  service_count: 3
+  aggregate_count: 1
+  domains: 712
+  ips: 53
+  legacy_ids:
+  - tencent
+  - tencentvideo
+  - wechat
+  - wetv
+  aggregate_ids:
+  - tencent

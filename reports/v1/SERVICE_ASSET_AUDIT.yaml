@@ -1,0 +1,322 @@
+version: 1
+model: v1
+phase: phase2.1-service-asset-audit
+status: audit-checkpoint
+source:
+  inventory: rule/_index.yaml
+  inventory_sha: e6ff114d939417ddd9392a725637c6acd7b3effe
+  catalog: reports/v1/SERVICE_CATALOG.yaml
+  legacy_tree: rule/**
+
+scope:
+  legacy_entries: 184
+  service_candidates: 170
+  aggregate_candidates: 14
+  categories: 25
+  domain_rules: 835612
+  ip_rules: 13976
+
+asset_contract:
+  domains:
+    source_of_evidence: rule/_index.yaml plus legacy *_domain.list files
+    canonical_field: assets.domains or assets.domain_suffixes
+    status: index-confirmed-for-all-184; file-level semantic audit remains staged
+  cidr:
+    source_of_evidence: rule/_index.yaml plus legacy *_ip.list files
+    canonical_field: assets.ip_cidrs
+    status: index-confirmed-for-all-184; file-level semantic audit remains staged
+  urls:
+    source_of_evidence: mixed legacy lists and README/metadata references
+    canonical_field: assets.urls
+    status: not separately modeled in legacy inventory; URL extraction must not be inferred from domain counts
+  metadata:
+    expected_fields:
+      - id
+      - name
+      - primary_category
+      - categories
+      - service_type
+      - parent
+      - children
+      - rule
+      - generated_files
+      - statistics
+      - sources
+      - clients
+      - updated_at
+      - auto_generated
+    status: verified on representative service and aggregate entries; full metadata-field normalization remains pending
+  source:
+    canonical_field: asset provenance metadata, not client output
+    status: verified on representative entries; do not infer uniform source sets across all 184 entries
+  aggregate:
+    rule: legacy aggregate membership is evidence, not canonical hierarchy
+    status: relation drift detected and recorded below
+
+verified_service_samples:
+  - legacy: rule/12306/12306
+    id: '12306'
+    service_type: service
+    parent: null
+    categories: [china]
+    domains: 15
+    cidrs: 0
+    generated_files: [12306.list, 12306_domain.list]
+    sources: [blackmatrix7]
+    clients: [Mihomo, sing-box, Surge, Shadowrocket, Quantumult X, Egern, Loon]
+    confidence: confirmed
+
+  - legacy: rule/AI/OpenAI
+    id: openai
+    service_type: service
+    parent: ai
+    categories: [ai]
+    domains: 37
+    cidrs: 2
+    generated_files: [openai.list, openai_domain.list, openai_ip.list]
+    sources: [blackmatrix7, metacubex, v2fly]
+    confidence: confirmed
+
+  - legacy: rule/AI/Claude
+    id: claude
+    service_type: service
+    parent: ai
+    categories: [ai]
+    domains: 2
+    cidrs: 0
+    generated_files: [claude.list, claude_domain.list]
+    sources: [blackmatrix7]
+    confidence: confirmed
+
+  - legacy: rule/Google/YouTube
+    id: youtube
+    service_type: service
+    parent: google
+    categories: [google, streaming]
+    domains: 182
+    cidrs: 3
+    generated_files: [youtube.list, youtube_domain.list, youtube_ip.list]
+    sources: [blackmatrix7, metacubex, v2fly, dler]
+    confidence: confirmed
+
+  - legacy: rule/Google/Firebase
+    id: firebase
+    service_type: service
+    parent: google
+    categories: [google, developer]
+    domains: 20
+    cidrs: 0
+    generated_files: [firebase.list, firebase_domain.list]
+    sources: [metacubex]
+    confidence: confirmed
+
+  - legacy: rule/Google/GoogleFCM
+    id: googlefcm
+    service_type: service
+    parent: google
+    categories: [google]
+    domains: 0
+    cidrs: 26
+    generated_files: [googlefcm.list, googlefcm_ip.list]
+    sources: [blackmatrix7, dler]
+    confidence: confirmed
+    note: metadata explicitly declares an independent service with IP-only assets
+
+  - legacy: rule/Google/YouTubeMusic
+    id: youtubemusic
+    service_type: service
+    parent: google
+    categories: [google, streaming]
+    domains: 1
+    cidrs: 0
+    generated_files: [youtubemusic.list, youtubemusic_domain.list]
+    sources: [blackmatrix7, dler]
+    confidence: confirmed
+
+verified_aggregate_samples:
+  - legacy: rule/Google/Google
+    id: google
+    service_type: aggregate
+    metadata_children: [youtube, googlefcm, googledrive, firebase, gcp]
+    indexed_children: [firebase, googlefcm, youtube, youtubemusic]
+    domains: 1093
+    cidrs: 5
+    sources: [blackmatrix7, metacubex, v2fly]
+    relation_status: drift
+    evidence: metadata and current index disagree; metadata-only googledrive/gcp are not promoted
+
+  - legacy: rule/AI/AI
+    id: ai
+    service_type: aggregate
+    metadata_children: [openai, claude, gemini, copilot, anthropic, huggingface, perplexity, groq, xai, mistral, deepseek, elevenlabs, aisuite]
+    indexed_children: [aisuite, anthropic, claude, copilot, deepseek, elevenlabs, gemini, groq, huggingface, openai, perplexity, xai]
+    domains: 179
+    cidrs: 0
+    sources: [metacubex]
+    relation_status: drift
+    evidence: metadata contains mistral, while current index does not contain AI/Mistral; aggregate asset list also contains many domains beyond current child inventory
+
+  - legacy: rule/Developer/Developer
+    id: developer
+    service_type: aggregate
+    metadata_children: [docker, gitlab, vercel, cloudflare, atlassian, jetbrains, npm, oracle, digitalocean, akamai, figma, heroku, azure, hashicorp, supabase, cursor, netlify, trello]
+    indexed_children: [akamai, atlassian, azure, cloudflare, cursor, digitalocean, docker, figma, gitlab, hashicorp, heroku, jetbrains, netlify, oracle, trello, vercel]
+    domains: 679
+    cidrs: 0
+    sources: [blackmatrix7, metacubex]
+    relation_status: drift
+    evidence: metadata contains npm and supabase, neither appears in current Developer index
+
+  - legacy: rule/Apple/Apple
+    id: apple
+    service_type: aggregate
+    metadata_children: [applemusic, appletv, icloud, siri]
+    indexed_children: [applemusic, appletv, icloud]
+    domains: 1813
+    cidrs: 13
+    sources: [blackmatrix7, metacubex, v2fly, dler]
+    relation_status: drift
+    evidence: metadata contains siri, absent from current index
+
+  - legacy: rule/Alibaba/Alibaba
+    id: alibaba
+    service_type: aggregate
+    metadata_children: [alipay, alibabacloud, dingtalk, eleme, xianyu, youku, gaode, taobao]
+    indexed_children: [alibabacloud, alipay, amap, eleme, gaode, xianyu, youku]
+    domains: 463
+    cidrs: 54
+    sources: [blackmatrix7, metacubex, v2fly]
+    relation_status: drift
+    evidence: metadata-only dingtalk/taobao and index-only amap require separate asset audit
+
+  - legacy: rule/Tencent/Tencent
+    id: tencent
+    service_type: aggregate
+    metadata_children: [wechat, tencentvideo, qq, wetv]
+    indexed_children: [tencentvideo, wechat, wetv]
+    domains: 680
+    cidrs: 20
+    sources: [blackmatrix7, metacubex, v2fly]
+    relation_status: drift
+    evidence: metadata-only qq requires asset verification
+
+  - legacy: rule/ByteDance/ByteDance
+    id: bytedance
+    service_type: aggregate
+    metadata_children: [douyin, doubao]
+    indexed_children: [doubao, douyin, tiktok]
+    domains: 1074
+    cidrs: 1
+    sources: [blackmatrix7, metacubex, v2fly]
+    relation_status: drift
+    evidence: index-only tiktok is not represented as metadata child
+
+  - legacy: rule/Microsoft/Microsoft
+    id: microsoft
+    service_type: aggregate
+    metadata_children: [onedrive, xbox, github, teams]
+    indexed_children: [github, onedrive, teams, xbox]
+    domains: 884
+    cidrs: 0
+    sources: [blackmatrix7, metacubex, v2fly, dler]
+    relation_status: aligned
+
+  - legacy: rule/UnionPay/UnionPay
+    id: unionpay
+    service_type: aggregate
+    metadata_children: [icbc, ccb, abc, boc, cmb, psbc, ceb, bocom, pingan]
+    indexed_children: [abc, boc, bocom, ccb, ceb, cmb, icbc, pingan, psbc]
+    domains: 16
+    cidrs: 0
+    sources: [blackmatrix7]
+    relation_status: aligned
+
+  - legacy: rule/China/China
+    id: china
+    service_type: aggregate
+    metadata_children: [meituan, pinduoduo, xiaohongshu, didi, netease, bilibili, weibo, zhihu, kuaishou, sina, iqiyi, kugoukuwo, steamcn, ctrip, tongcheng, dewu, pptv, acfun, cctv, huya, douyu, himalaya, ximalaya, sohu, letv, kugou, kuwo]
+    indexed_children: [acfun, bilibili, cctv, ctrip, dewu, didi, douyu, himalaya, huya, iqiyi, kuaishou, kugou, kugoukuwo, kuwo, letv, meituan, netease, pinduoduo, pptv, sina, sohu, tongcheng, weibo, xiaohongshu, ximalaya, zhihu]
+    domains: 111612
+    cidrs: 9670
+    sources: [blackmatrix7, metacubex]
+    relation_status: drift
+    evidence: metadata-only steamcn is absent from current index
+
+  - legacy: rule/Privacy/AdBlock
+    id: adblock
+    service_type: aggregate
+    metadata_children: [adblock-pro, adblock-light]
+    indexed_children: [adblock-light, adblock-pro]
+    domains: 402068
+    cidrs: 47
+    sources: [loyalsoldier, hagezi, anti-ad, sukkaw]
+    relation_status: aligned
+
+  - legacy: rule/Baidu/Baidu
+    id: baidu
+    service_type: aggregate
+    metadata_children: []
+    indexed_children: []
+    domains: 324
+    cidrs: 0
+    sources: [blackmatrix7, metacubex, v2fly]
+    relation_status: aggregate-container
+    evidence: no child services; do not promote automatically to parent-service
+
+  - legacy: rule/JingDong/JingDong
+    id: jingdong
+    service_type: aggregate
+    metadata_children: []
+    indexed_children: []
+    domains: 265
+    cidrs: 0
+    sources: [blackmatrix7, metacubex]
+    relation_status: aggregate-container
+
+  - legacy: rule/Restricted/Restricted
+    id: restricted
+    service_type: aggregate
+    metadata_children: []
+    indexed_children: []
+    domains: 6519
+    cidrs: 0
+    sources: [metacubex, v2fly]
+    relation_status: policy-aggregate
+    evidence: no child services; likely policy/category aggregate rather than commercial parent-service
+
+aggregate_asset_rule:
+  statement: Aggregate assets cannot be reconstructed as a pure union of indexed children.
+  evidence:
+    - AI aggregate list contains assets for services not present as indexed AI children, including Mistral-related and other AI service domains.
+    - Google aggregate contains Google-wide assets spanning multiple products and infrastructure layers.
+    - Alibaba aggregate contains broad ecosystem assets beyond the seven indexed child services.
+  v1_implication: Parent own assets must remain first-class Canonical Assets; child relations are hierarchy metadata, not the sole asset source.
+
+url_audit:
+  status: unresolved
+  finding: Legacy inventory distinguishes domain and IP/CIDR counts but has no dedicated URL count. Mixed/domain lists are rule-format outputs, not sufficient evidence for a canonical URL field.
+  action: Extract URL-shaped entries only during canonical asset normalization; do not infer URLs from README links or generated CDN links.
+
+source_audit:
+  verified_source_sets:
+    - google: [blackmatrix7, metacubex, v2fly]
+    - openai: [blackmatrix7, metacubex, v2fly]
+    - youtube: [blackmatrix7, metacubex, v2fly, dler]
+    - firebase: [metacubex]
+    - googlefcm: [blackmatrix7, dler]
+    - adblock: [loyalsoldier, hagezi, anti-ad, sukkaw]
+    - developer: [blackmatrix7, metacubex]
+    - alibaba: [blackmatrix7, metacubex, v2fly]
+  policy: Source provenance is evidence for migration and conflict analysis; it does not become a dependency relation.
+
+client_audit:
+  observed_clients: [Mihomo, sing-box, Surge, Shadowrocket, Quantumult X, Egern, Loon]
+  status: metadata-level coverage verified on audited samples
+  rule: Do not claim per-service generated coverage for all 184 entries until V3 adapter/golden verification completes.
+
+audit_status:
+  index_level: complete
+  representative_file_level: complete
+  all_184_file_level_semantic_normalization: pending
+  aggregate_relation_audit: active
+  canonical_promotion: blocked_until_normalization

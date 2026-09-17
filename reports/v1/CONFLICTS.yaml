@@ -1,0 +1,92 @@
+version: 1
+model: v1
+phase: phase2.1-service-asset-audit
+source:
+  legacy_inventory: rule/_index.yaml
+  legacy_tree: rule/
+  asset_audit: reports/v1/SERVICE_ASSET_AUDIT.yaml
+severity_definitions:
+  blocking: cannot promote affected entry
+  high: requires explicit mapping before promotion
+  medium: needs evidence but does not block unrelated services
+  info: observational
+conflicts:
+- id: AGG-001
+  type: aggregate-vs-service
+  severity: high
+  scope: 14 legacy aggregate entries
+  resolution: Do not automatically convert legacy aggregate into V1 parent-service. Classify as parent-service, category aggregate, policy aggregate, or shared policy only after asset/hierarchy evidence.
+- id: AGG-002
+  type: category-name-collision
+  severity: high
+  entries: [rule/AI/AI, rule/China/China, rule/Developer/Developer, rule/Restricted/Restricted]
+  resolution: V1 Category IDs are classification entities; same-named legacy rule entries remain separate until explicit entity mapping.
+- id: AGG-003
+  type: aggregate-membership-drift
+  severity: high
+  entries: [rule/AI/AI, rule/Google/Google, rule/Developer/Developer, rule/Apple/Apple, rule/Alibaba/Alibaba, rule/Tencent/Tencent, rule/ByteDance/ByteDance, rule/China/China]
+  details: Metadata children do not consistently match current rule/_index.yaml children. Examples include AI/mistral, Developer/npm and supabase, Apple/siri, Alibaba/dingtalk and taobao, Tencent/qq, ByteDance/tiktok, China/steamcn.
+  resolution: Treat metadata children and indexed service entries as separate evidence sets. Do not synthesize missing children from either side.
+- id: AGG-004
+  type: aggregate-assets-not-equal-child-union
+  severity: high
+  entries: [rule/AI/AI, rule/Google/Google, rule/Alibaba/Alibaba]
+  details: Aggregate mixed/domain assets contain ecosystem-wide entries not explainable as a simple union of currently indexed children.
+  resolution: V1 Parent own assets remain first-class; aggregate compilation combines own assets, child aggregates and dependency closure, then canonical set deduplication.
+- id: GOOGLE-001
+  type: metadata-child-drift
+  severity: high
+  entries: [rule/Google/Google]
+  details: Metadata references googledrive and gcp, while current index exposes Firebase, GoogleFCM, YouTube and YouTubeMusic.
+  resolution: Do not create missing children from metadata alone.
+- id: GOOGLE-002
+  type: provisional-hierarchy-resolved
+  severity: info
+  entries: [rule/Google/GoogleFCM]
+  details: Metadata explicitly declares GoogleFCM as service, parent google, IP-only assets and generated files.
+  resolution: Promote mapping to confirmed child-service after preserving audited evidence.
+- id: V1-001
+  type: seed-without-legacy-evidence
+  severity: high
+  entries: [rule/service/google/gemini/service.yaml, rule/service/google/gmail/service.yaml]
+  resolution: Do not treat V1 seed files as proof of legacy coverage.
+- id: URL-001
+  type: url-model-gap
+  severity: medium
+  entries: [all 184 legacy rule entries]
+  details: Legacy index exposes domain and IP/CIDR counts but no dedicated URL count.
+  resolution: Extract URL assets explicitly during canonical normalization; never infer from domain counts or documentation links.
+- id: SOURCE-001
+  type: source-provenance-normalization-gap
+  severity: medium
+  entries: [all 184 legacy rule entries]
+  details: Source lists are present in audited metadata samples but not yet normalized across every entry.
+  resolution: Preserve source provenance per legacy entity; do not infer source sets for unaudited services.
+- id: DUP-001
+  type: semantic-overlap-not-dedup
+  severity: medium
+  entries: [rule/AI/Anthropic, rule/AI/Claude, rule/AI/Copilot, rule/Microsoft/Microsoft]
+  resolution: Only canonical asset equality can drive deduplication.
+- id: NET-001
+  type: network-vs-service
+  severity: high
+  entries: [rule/ChinaMobile/ChinaMobile, rule/ChinaTelecom/ChinaTelecom, rule/ChinaUnicom/ChinaUnicom, rule/Developer/Cloudflare, rule/Amazon/AWS]
+  resolution: Network/provider infrastructure remains separate from commercial service semantics unless explicit evidence exists.
+- id: COVER-001
+  type: client-coverage-unknown
+  severity: medium
+  entries: [all 184 legacy rule entries]
+  resolution: V3 adapter/golden audit is still required for complete per-service client coverage.
+- id: PATH-001
+  type: legacy-path-vs-canonical-path
+  severity: medium
+  entries: [all 184 legacy rule entries]
+  resolution: Legacy paths are evidence pointers only; canonical V1 IDs remain stable lowercase ASCII.
+- id: AGG-005
+  type: empty-child-aggregate
+  severity: high
+  entries: [rule/Baidu/Baidu, rule/JingDong/JingDong, rule/Restricted/Restricted]
+  details: Metadata marks these entries aggregate but declares no children.
+  resolution: Treat as aggregate-container or policy aggregate candidates, not Parent Service, until explicit hierarchy semantics are established.
+unmapped_aggregate_candidates: [unionpay, china, adblock, ai, developer, alibaba, apple, baidu, bytedance, microsoft, jingdong, restricted, tencent]
+status: open-for-phase2.1-resolution
