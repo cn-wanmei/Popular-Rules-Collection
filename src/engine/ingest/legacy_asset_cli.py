@@ -7,7 +7,7 @@ from pathlib import Path
 
 import yaml
 
-from src.engine.ingest.legacy_asset_extractor import extract_legacy_asset_ir, write_asset_jsonl
+from src.engine.ingest.legacy_asset_extractor import extract_legacy_asset_ir
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -23,6 +23,7 @@ def main(argv: list[str] | None = None) -> int:
         args.rule_root,
         index_path=args.index,
         include_aggregates=not args.exclude_aggregates,
+        jsonl_output=args.jsonl,
     )
     args.manifest.parent.mkdir(parents=True, exist_ok=True)
     args.manifest.write_text(
@@ -32,11 +33,7 @@ def main(argv: list[str] | None = None) -> int:
 
     result = {"manifest": str(args.manifest), "summary": ir.as_dict()["summary"]}
     if args.jsonl:
-        result["jsonl"] = write_asset_jsonl(
-            args.rule_root,
-            args.jsonl,
-            include_aggregates=not args.exclude_aggregates,
-        )
+        result["jsonl"] = ir.as_dict()["profile"].get("jsonl")
     print(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True))
     return 0
 
