@@ -1,0 +1,64 @@
+version: 1
+schema: p0_service_production_v1
+purpose: Service-level production evidence matrix. A service is production only when every hard gate is pass.
+production_definition:
+  identity: pass
+  source: pass
+  canonical: pass
+  semantic_audit: pass
+  overlap_audit: pass
+  seven_client: pass
+  golden: pass
+  release: pass
+status_values: [blocked, production]
+services:
+  appstore: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  testflight: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  appledev: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  findmy: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  qq: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  qqmusic: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  qqmail: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  wecom: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  tencentmeeting: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  tencentcloud: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  taobao: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  tmall: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  alibabacloud: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  '1688': {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  dingding: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  cainiao: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  doubao: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  feishu: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  baidunetdisk: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  youdao: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  dewu: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  deepseek: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  perplexity: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  grok: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  groq: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  huggingface: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  cursor: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  elevenlabs: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  aws: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  azure: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  googlecloud: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  firebase: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  bitbucket: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  npm: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  pypi: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  netlify: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  canva: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  trello: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  signal: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  messenger: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  snapchat: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  bluesky: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  youtubemusic: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  tidal: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  walmart: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  uber: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  airbnb: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  booking: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  wise: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
+  roblox: {identity: pass, source: pending, canonical: pending, semantic_audit: pending, overlap_audit: pending, seven_client: pending, golden: pending, release: pending, status: blocked}
