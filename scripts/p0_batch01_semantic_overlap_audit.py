@@ -4,16 +4,23 @@ from __future__ import annotations
 
 import hashlib
 import json
+import sys
 from pathlib import Path
 from typing import Any
 
 import yaml
 
+ROOT = Path(__file__).resolve().parents[1]
+# Running ``python scripts/<tool>.py`` puts ``scripts/`` (not the repository
+# root) on sys.path. Make the repository-local ``src`` package importable in
+# both CI and direct developer execution without relying on PYTHONPATH.
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 from src.engine.audit.matcher import matching_rules
 from src.engine.ingest.rule_parser import iter_rules
 from src.engine.ingest.normalizer import normalize_record
 
-ROOT = Path(__file__).resolve().parents[1]
 SEMANTIC = ROOT / "config/p0_batch01_semantic_audit.yaml"
 OVERLAP = ROOT / "config/p0_batch01_overlap_audit.yaml"
 
