@@ -5,9 +5,14 @@ The repository pipeline can PASS while individual services remain unaudited.
 This gate closes that gap by requiring explicit identity plus service-level
 semantic/overlap/client/golden/release evidence before a P0 service is marked
 production.
+
+In report-only mode (used by PR CI), the script validates structure and reports
+blocked production rows without failing the check merely because work remains.
+The default mode remains a hard release blocker.
 """
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 import sys
@@ -52,7 +57,18 @@ def latest_run() -> Path:
     return sorted(candidates, key=lambda p: p.name)[-1]
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--report-only",
+        action="store_true",
+        help="validate structure and report blocked services without requiring full production readiness",
+    )
+    return parser.parse_args()
+
+
 def main() -> int:
+    args = parse_args()
     errors: list[str] = []
     p0 = load_yaml(P0_PATH).get("services") or []
     identity = load_yaml(IDENTITY_PATH).get("services") or []
@@ -71,7 +87,7 @@ def main() -> int:
         if extra:
             errors.append(f"P0 identity extra: {', '.join(extra)}")
 
-    seen_provider: dict[str, str] = {}
+    seen_service_provider: dict[str, str] = {}
     for sid, item in identity_by_id.items():
         provider = str(item.get("provider") or "")
         aggregate = str(item.get("aggregate") or "")
@@ -79,10 +95,10 @@ def main() -> int:
             errors.append(f"{sid}: provider and aggregate are required")
         if sid == aggregate:
             errors.append(f"{sid}: service_id must differ from aggregate_id")
-        prior = seen_provider.get(sid)
+        prior = seen_service_provider.get(sid)
         if prior and prior != provider:
             errors.append(f"{sid}: provider ownership is not unique")
-        seen_provider[sid] = provider
+        seen_service_provider[sid] = provider
 
     if set(matrix) != set(p0_ids):
         errors.append("production matrix keys must exactly match P0 queue")
@@ -98,17 +114,20 @@ def main() -> int:
         build_views = set(build_report.get("views", {}).get("services", []))
         clients = build_report.get("clients", {})
 
+    service_client_files: dict[str, list[str]] = {}
     for sid in p0_ids:
         if sid not in build_views:
             errors.append(f"{sid}: latest build has no service view")
-        else:
-            for client, ext in CLIENT_EXT.items():
-                if client not in clients:
-                    errors.append(f"{sid}: client {client} absent from build report")
-                    continue
-                artifact = run / "artifacts" / client / f"{sid}{ext}"
-                if not artifact.exists() or artifact.stat().st_size == 0:
-                    errors.append(f"{sid}: missing/empty {client} artifact {artifact.relative_to(ROOT)}")
+
+        present_clients: list[str] = []
+        for client, ext in CLIENT_EXT.items():
+            if client not in clients:
+                errors.append(f"build report has no client entry for {client}")
+                continue
+            artifact = run / "artifacts" / client / f"{sid}{ext}"
+            if artifact.exists() and artifact.stat().st_size > 0:
+                present_clients.append(client)
+        service_client_files[sid] = present_clients
 
     golden_path = run / "golden" / "report.json"
     release_path = run / "release" / "state.json"
@@ -131,6 +150,9 @@ def main() -> int:
         row = matrix.get(sid) or {}
         failed = [field for field in HARD_FIELDS if row.get(field) != "pass"]
         status = row.get("status")
+        if row.get("seven_client") == "pass" and len(service_client_files.get(sid, [])) != len(CLIENT_EXT):
+            missing_clients = sorted(set(CLIENT_EXT) - set(service_client_files.get(sid, [])))
+            errors.append(f"{sid}: seven_client=pass but artifacts missing for {', '.join(missing_clients)}")
         if status == "production" and not failed:
             production_count += 1
         else:
@@ -141,13 +163,21 @@ def main() -> int:
         print("BLOCKED SERVICES:")
         for item in blocked:
             print(f"  {item}")
+    print("SERVICE CLIENT ARTIFACT COVERAGE:")
+    for sid in p0_ids:
+        present = service_client_files.get(sid, [])
+        print(f"  {sid}: {len(present)}/{len(CLIENT_EXT)}")
 
     if errors:
         print("STRUCTURAL ERRORS:")
         for error in errors:
             print(f"  ERROR {error}")
 
-    return 1 if errors or production_count != len(p0_ids) else 0
+    if errors:
+        return 1
+    if args.report_only:
+        return 0
+    return 0 if production_count == len(p0_ids) else 1
 
 
 if __name__ == "__main__":
