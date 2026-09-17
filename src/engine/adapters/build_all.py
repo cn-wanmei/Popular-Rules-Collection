@@ -46,14 +46,14 @@ def _load_yaml(path: Path) -> dict[str, Any]:
     return data
 
 
-def _load_directory_contract() -> tuple[dict[str, str], dict[str, set[str]], dict[str, str]]:
+def _load_directory_contract() -> tuple[dict[str, str], dict[str, set[str]], dict[str, str], set[str]]:
     if not _DIRECTORY_POLICY.exists():
         raise RuntimeError(f"Directory policy missing: {_DIRECTORY_POLICY}")
     policy = _load_yaml(_DIRECTORY_POLICY)
     if policy.get("schema") != "rule_directory_policy_v1":
         raise RuntimeError("Unsupported rule directory policy schema")
     layout = policy.get("layout") or {}
-    if not all(layout.get(k) for k in ("generated_client_root", "generated_aggregate", "generated_service")):
+    if not all(layout.get(k) for k in ("generated_client_root", "generated_aggregate", "generated_service", "generated_china")):
         raise RuntimeError("Directory policy is missing generated path templates")
     hierarchy = _load_yaml(_HIERARCHY)
     providers = hierarchy.get("providers") or {}
@@ -71,7 +71,9 @@ def _load_directory_contract() -> tuple[dict[str, str], dict[str, set[str]], dic
             if sid in service_provider and service_provider[sid] != provider:
                 raise RuntimeError(f"Service {sid!r} belongs to multiple providers")
             service_provider[sid] = provider
-    return service_provider, provider_services, provider_aggregates
+    china = policy.get("china") or {}
+    china_exclusions = {str(x).strip().lower() for x in china.get("exclude_independent_providers") or [] if str(x).strip()}
+    return service_provider, provider_services, provider_aggregates, china_exclusions
 
 
 def _load_capabilities() -> dict[str, set[str]]:
@@ -130,6 +132,7 @@ def _build_client(
     service_provider: dict[str, str],
     provider_services: dict[str, set[str]],
     provider_aggregates: dict[str, str],
+    china_exclusions: set[str],
 ) -> tuple[str, dict[str, Any]]:
     cdir = artifacts_dir / client
     cdir.mkdir(parents=True, exist_ok=True)
@@ -167,11 +170,29 @@ def _build_client(
             emitted_files += 1
             emitted_paths.append(path.relative_to(cdir).as_posix())
 
+    # China is one aggregate only. Independent domestic providers are removed
+    # from the aggregate by membership, never by filename matching.
+    china_ids: set[str] = set(memberships.get("china", []))
+    excluded_ids: set[str] = set()
+    for provider in china_exclusions:
+        if provider not in provider_services:
+            continue
+        excluded_ids.update(memberships.get(provider_aggregates[provider], []))
+        for service in provider_services[provider]:
+            excluded_ids.update(memberships.get(service, []))
+    china_ids.difference_update(excluded_ids)
+    china_rules = [rules_by_id[rid] for rid in sorted(china_ids) if rid in rules_by_id and rid in projected_ids]
+    if china_rules:
+        path = cdir / "china" / "all" / f"rules{meta['ext']}"
+        _render_view(render, china_rules, path)
+        emitted_files += 1
+        emitted_paths.append(path.relative_to(cdir).as_posix())
+
     # Category aggregates are intentionally separate from provider/service trees.
     for entity in sorted(memberships):
-        if entity in provider_aggregates.values() or entity in service_provider:
+        if entity in provider_aggregates.values() or entity in service_provider or entity == "china":
             continue
-        if entity in {"china"} or entity.endswith("_aggregate"):
+        if entity.endswith("_aggregate"):
             continue
         entity_rules = [
             rules_by_id[rid]
@@ -206,13 +227,14 @@ def build_all_clients(ir_dir: Path, artifacts_dir: Path, *, views: list[str] | N
     rules, memberships, entities, semantic_intent = _load_ir(Path(ir_dir))
     probe_report = validate_semantic_probes(rules, memberships)
     capabilities = _load_capabilities()
-    service_provider, provider_services, provider_aggregates = _load_directory_contract()
+    service_provider, provider_services, provider_aggregates, china_exclusions = _load_directory_contract()
     report: dict[str, Any] = {
-        "schema": "adapter_build_v3",
+        "schema": "adapter_build_v4",
         "clients": {},
-        "views": {"services": sorted(entities.get("services", [])), "aggregate": True},
+        "views": {"services": sorted(entities.get("services", [])), "aggregate": True, "china": True},
         "source_contract": "semantic_ir_v2",
         "directory_contract": "rule_directory_policy_v1",
+        "china_excluded_independent_providers": sorted(china_exclusions),
         "semantic_intent": semantic_intent,
         "semantic_probes": probe_report,
         "v2_runtime_dependency": 0,
@@ -231,6 +253,7 @@ def build_all_clients(ir_dir: Path, artifacts_dir: Path, *, views: list[str] | N
                 service_provider,
                 provider_services,
                 provider_aggregates,
+                china_exclusions,
             ): client
             for client, meta in CLIENTS.items()
         }
