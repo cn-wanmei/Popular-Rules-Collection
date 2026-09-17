@@ -7,7 +7,11 @@ from pathlib import Path
 from typing import Any
 
 
-_VOLATILE_KEYS = {"generated_at", "started_at", "finished_at", "created_at", "updated_at", "timestamp"}
+_VOLATILE_KEYS = {
+    "generated_at", "started_at", "finished_at", "created_at", "updated_at", "timestamp",
+    "run_id", "release_id", "promoted_at", "collection_run_id",
+}
+_PUBLISHABLE_SUFFIXES = {".yaml", ".json", ".list", ".jsonl"}
 
 
 def _canonical_json(value: Any) -> Any:
@@ -26,49 +30,52 @@ def _file_digest(path: Path) -> str | None:
             value = json.loads(path.read_text(encoding="utf-8"))
         except (OSError, UnicodeDecodeError, json.JSONDecodeError):
             return None
-        payload = json.dumps(_canonical_json(value), ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()
+        payload = json.dumps(_canonical_json(value), ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
     else:
-        payload = path.read_bytes()
+        try:
+            payload = path.read_bytes()
+        except OSError:
+            return None
     return hashlib.sha256(payload).hexdigest()
 
 
-def _tree_digest(root: Path) -> str | None:
+def _tree_digest(root: Path, *, suffixes: set[str] | None = None) -> str | None:
     if not root.is_dir():
         return None
+    allowed = suffixes or _PUBLISHABLE_SUFFIXES
     entries: list[tuple[str, str]] = []
     for path in sorted(root.rglob("*")):
-        if not path.is_file() or path.name == "run_manifest.json":
+        if not path.is_file() or path.suffix not in allowed:
             continue
         digest = _file_digest(path)
         if digest is not None:
             entries.append((path.relative_to(root).as_posix(), digest))
     if not entries:
         return None
-    payload = json.dumps(entries, ensure_ascii=False, separators=(",", ":")).encode()
+    payload = json.dumps(entries, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
     return hashlib.sha256(payload).hexdigest()
 
 
 def compare_runs(run_a: Path, run_b: Path) -> dict[str, Any]:
-    """Compare semantic stage outputs while ignoring runtime timestamps."""
+    """Compare semantic stage outputs while ignoring run-local metadata."""
     run_a, run_b = Path(run_a), Path(run_b)
-    paths = (
-        "snapshot_id.txt",
-        "canonical",
-        "hierarchy",
-        "ir",
-        "artifacts",
-        "reports/diff",
-        "golden",
+    specs = (
+        ("snapshot_id.txt", None),
+        ("canonical", _PUBLISHABLE_SUFFIXES),
+        ("hierarchy", _PUBLISHABLE_SUFFIXES),
+        ("ir", _PUBLISHABLE_SUFFIXES),
+        ("artifacts", {".yaml", ".json", ".list"}),
+        ("reports/diff", {".json"}),
+        ("golden", {".json"}),
     )
     comparisons: dict[str, dict[str, Any]] = {}
-    for rel in paths:
+    for rel, suffixes in specs:
         a, b = run_a / rel, run_b / rel
         if a.is_dir() or b.is_dir():
-            da, db = _tree_digest(a), _tree_digest(b)
+            da, db = _tree_digest(a, suffixes=suffixes), _tree_digest(b, suffixes=suffixes)
         else:
             da, db = _file_digest(a), _file_digest(b)
         comparisons[rel] = {"match": da is not None and da == db, "a": da, "b": db}
 
-    # run manifests are deliberately excluded because they contain run-local timestamps and IDs.
     match = all(item["match"] for item in comparisons.values())
-    return {"schema": "stabilization_compare_v1", "match": match, "comparisons": comparisons}
+    return {"schema": "stabilization_compare_v2", "match": match, "comparisons": comparisons}
