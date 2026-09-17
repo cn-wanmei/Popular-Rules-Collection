@@ -1,0 +1,60 @@
+version: 1
+schema: p0_service_source_evidence_v1
+batch: 01
+services:
+  appstore:
+    provider: apple
+    primary_source:
+      source: blackmatrix7
+      url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AppStore/AppStore.list
+      verification: exact_upstream_path_verified
+      observed: "# NAME: AppStore; HOST apps.apple.com; HOST itunes.apple.com"
+      observed_at: "2026-09-17"
+    immutable_snapshot:
+      status: complete
+      path: config/p0_batch01_snapshots/2026-09-17/appstore.list
+      sha256: 8189ba2f921fe1c25e6c4a78ee5ab1fee35ac9c62ed80d744925b93994fcc6d7
+      rule_count: 2
+  testflight:
+    provider: apple
+    primary_source:
+      source: blackmatrix7
+      url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/TestFlight/TestFlight.list
+      verification: exact_upstream_path_verified
+      observed: "# NAME: TestFlight; beta.apple.com; testflight.apple.com; HOST-KEYWORD testflight"
+      observed_at: "2026-09-17"
+    immutable_snapshot:
+      status: complete
+      path: config/p0_batch01_snapshots/2026-09-17/testflight.list
+      sha256: 4cb08a9ec95eab00cb82847ca92688099d5270035a72200b552b8adcb59c610b
+      rule_count: 3
+  appledev:
+    provider: apple
+    primary_source:
+      source: blackmatrix7
+      url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Developer/Developer.list
+      verification: upstream_source_observed
+      note: "The published Developer service contains 70 rules, but current upstream content is a broader Developer aggregate rather than a service-specific AppleDev snapshot."
+      observed_at: "2026-09-17"
+    auxiliary_source:
+      source: LM-Firefly
+      url: https://raw.githubusercontent.com/LM-Firefly/Rules/master/Apple/AppleDev.list
+      verification: referenced_by_upstream_readme
+    immutable_snapshot:
+      status: pending
+      reason: service_specific_snapshot_not_yet_proven
+  findmy:
+    provider: apple
+    primary_source:
+      source: blackmatrix7
+      url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/FindMy/FindMy.list
+      verification: exact_upstream_path_verified
+      observed: "# NAME: FindMy; HOST fmfmobile.icloud.com; HOST fmipmobile.icloud.com; HOST statici.icloud.com"
+      observed_at: "2026-09-17"
+    immutable_snapshot:
+      status: complete
+      path: config/p0_batch01_snapshots/2026-09-17/findmy.list
+      sha256: 0c77dd5dd45a62e203b4d43b43d6b54f7f9ace687767068f520dff36b6aab714
+      rule_count: 3
+status: immutable_snapshot_partially_complete
+next_required: appledev_service_snapshot_then_canonical_membership_then_semantic_and_overlap_audits
