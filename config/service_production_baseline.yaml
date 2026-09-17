@@ -1,0 +1,31 @@
+version: 1
+schema: service_production_baseline_v1
+baseline_type: bootstrap
+baseline_run: 20260917T011855513487Z-run
+baseline_generated_at: "2026-09-17T01:19:58.954331+00:00"
+notes:
+  - This is the first Service-level baseline; it is not a historical anomaly baseline.
+  - Baseline records the current pipeline evidence before P0 productionization is enforced.
+metrics:
+  hierarchy_service_count: 231
+  configured_service_count: 101
+  materialized_service_count: 154
+  unmodeled_service_count: 130
+  aggregate_count: 16
+  canonical_rules: 128714
+  semantic_intent_applied: 4
+  seven_clients: 7
+  golden_all_pass: true
+  release_all_hard_pass: true
+  p0_total: 50
+  p0_production: 0
+  p0_blocked: 50
+next_baseline_requires:
+  - p0_production_count
+  - p0_blocked_count
+  - unmodeled_service_count
+  - service_rule_count_distribution
+  - semantic_audit_pass_rate
+  - overlap_audit_pass_rate
+  - seven_client_pass_rate
+  - golden_pass_rate
