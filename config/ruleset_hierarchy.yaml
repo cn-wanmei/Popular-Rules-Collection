@@ -63,8 +63,8 @@ providers:
       wechat: {display_name: WeChat, status: existing}
       tencentvideo: {display_name: Tencent Video, status: existing}
       qq: {display_name: QQ, status: planned}
-      qqmusic: {display_name: QQ Music, status: planned}
-      qqmail: {display_name: QQ Mail, status: planned}
+      qqmusic: {display_name: QQ Music, status: existing}
+      qqmail: {display_name: QQ Mail, status: existing}
       wecom: {display_name: WeCom, status: planned}
       tencentmeeting: {display_name: Tencent Meeting, status: planned}
       tencentcloud: {display_name: Tencent Cloud, status: existing}

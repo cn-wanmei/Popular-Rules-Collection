@@ -22,8 +22,8 @@ services:
   tencent-shared: {id: tencent-shared, provider: tencent, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
   wechat: {id: wechat, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   qq: {id: qq, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
-  qqmusic: {id: qqmusic, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
-  qqmail: {id: qqmail, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  qqmusic: {id: qqmusic, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
+  qqmail: {id: qqmail, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   wecom: {id: wecom, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   tencentmeeting: {id: tencentmeeting, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   tencentcloud: {id: tencentcloud, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}

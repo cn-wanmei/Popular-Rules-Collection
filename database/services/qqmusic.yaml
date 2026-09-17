@@ -1,0 +1,54 @@
+id: qqmusic
+name: Qqmusic
+category: other
+type: domain
+version: 1
+source:
+- id: v2fly
+  priority: 85
+- id: blackmatrix7
+  priority: 95
+rules:
+- type: domain_suffix
+  value: ad.tencentmusic.com
+  sources: &id001
+  - id: v2fly
+    priority: 85
+  - id: blackmatrix7
+    priority: 95
+- type: domain_suffix
+  value: adstats.tencentmusic.com
+  sources: *id001
+- type: domain_suffix
+  value: kg.qq.com
+  sources: *id001
+- type: domain_suffix
+  value: monitor.music.qq.com
+  sources: *id001
+- type: domain_suffix
+  value: music.qq.com
+  sources: *id001
+- type: domain_suffix
+  value: qqmusic.com
+  sources: *id001
+- type: domain_suffix
+  value: qqmusic.store
+  sources: *id001
+- type: domain_suffix
+  value: report.tencentmusic.com
+  sources: *id001
+- type: domain_suffix
+  value: stat.y.qq.com
+  sources: *id001
+- type: domain_suffix
+  value: tencentmusic.com
+  sources: *id001
+- type: domain_suffix
+  value: tmead.y.qq.com
+  sources: *id001
+- type: domain_suffix
+  value: tmeadcomm.y.qq.com
+  sources: *id001
+- type: domain_suffix
+  value: y.qq.com
+  sources: *id001
