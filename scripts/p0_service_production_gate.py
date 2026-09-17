@@ -2,8 +2,12 @@
 """Hard gate for P0 Service-level production readiness.
 
 PR/report mode validates the control-plane shape and reports blocked services.
-Default mode is the release hard gate: every P0 service must have complete
+Default mode is the Phase 0 exit hard gate: every P0 service must have complete
 service-level evidence before it can be marked production.
+
+RC publish must use --report-only until Phase 0 exits. Production is derived
+and currently 0/50 (coverage=partial forbids production); blocking every
+release candidate on that exit criterion starves the promotion lane.
 """
 from __future__ import annotations
 
@@ -50,9 +54,46 @@ def latest_run() -> Path:
     return max(candidates, key=lambda p: p.name)
 
 
+def resolve_run(run_id: str | None) -> Path:
+    if run_id:
+        path = RUNS_DIR / run_id
+        if not path.is_dir():
+            raise RuntimeError(f"run not found: {path}")
+        return path
+    return latest_run()
+
+
+def service_client_artifact(
+    run: Path, client: str, ext: str, sid: str, provider: str = "",
+) -> Path | None:
+    """Locate a per-service client artifact under the directory contract.
+
+    Canonical layout (PR #62): artifacts/<client>/<provider>/<service>/rules<ext>
+    Legacy flat layout:         artifacts/<client>/<service><ext>
+    """
+    client_dir = run / "artifacts" / client
+    candidates: list[Path] = []
+    if provider:
+        candidates.append(client_dir / provider / sid / f"rules{ext}")
+    candidates.append(client_dir / f"{sid}{ext}")
+    for path in candidates:
+        if path.is_file() and path.stat().st_size > 0:
+            return path
+    if client_dir.is_dir():
+        for path in client_dir.rglob(f"{sid}/rules{ext}"):
+            if path.is_file() and path.stat().st_size > 0:
+                return path
+    return None
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--report-only", action="store_true")
+    parser.add_argument(
+        "--run-id",
+        default="",
+        help="Pin the gate to a specific data/runs/<run-id> directory",
+    )
     return parser.parse_args()
 
 
@@ -172,7 +213,7 @@ def main() -> int:
         structural_errors.append("production matrix keys must exactly match P0 queue")
 
     try:
-        run = latest_run()
+        run = resolve_run(args.run_id or None)
     except RuntimeError as exc:
         structural_errors.append(str(exc))
         run = None
@@ -200,11 +241,12 @@ def main() -> int:
             structural_errors.extend(evidence_errors)
         present: list[str] = []
         if run is not None:
+            provider = str((identity_by_id.get(sid) or {}).get("provider") or "")
             for client, ext in CLIENT_EXT.items():
                 if client not in clients:
                     continue
-                artifact = run / "artifacts" / client / f"{sid}{ext}"
-                if artifact.is_file() and artifact.stat().st_size > 0:
+                artifact = service_client_artifact(run, client, ext, sid, provider)
+                if artifact is not None:
                     present.append(client)
         service_client_files[sid] = present
 

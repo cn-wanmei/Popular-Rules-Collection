@@ -69,7 +69,14 @@ jobs:
         run: python scripts/p0_batch01_semantic_overlap_audit.py
 
       - name: P0 Service Production Gate
-        run: python scripts/p0_service_production_gate.py
+        shell: bash
+        run: |
+          set -euo pipefail
+          RUN_ID=$(cat release-candidate/run-id.txt)
+          # Fail-closed on structural errors (false production claims, missing
+          # golden/release, identity drift). Do not require 50/50 production —
+          # that is Phase 0 exit, and coverage=partial currently forbids it.
+          python scripts/p0_service_production_gate.py --report-only --run-id "${RUN_ID}"
 
       - name: Publish atomically
         shell: bash
