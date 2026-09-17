@@ -49,6 +49,7 @@ def _validate_config(
     providers = config["providers"]
     categories = config.get("categories") or {}
     service_to_provider: dict[str, str] = {}
+    aggregate_to_provider: dict[str, str] = {}
     metadata: dict[str, dict[str, Any]] = {}
     category_metadata: dict[str, dict[str, Any]] = {}
 
@@ -56,10 +57,12 @@ def _validate_config(
         if not isinstance(provider, dict):
             raise HierarchyConfigError(f"Provider {provider_id!r} must be a mapping")
         aggregate = str(provider.get("aggregate") or provider_id)
-        if aggregate != provider_id:
+        if aggregate in aggregate_to_provider:
             raise HierarchyConfigError(
-                f"Provider {provider_id!r} aggregate must equal provider id; got {aggregate!r}"
+                f"Aggregate {aggregate!r} is owned by multiple providers: "
+                f"{aggregate_to_provider[aggregate]!r}, {provider_id!r}"
             )
+        aggregate_to_provider[aggregate] = provider_id
         metadata[aggregate] = {
             "id": aggregate,
             "type": "aggregate",
@@ -81,9 +84,10 @@ def _validate_config(
                 raise HierarchyConfigError(
                     f"Service {service_id!r} cannot equal aggregate {aggregate!r}"
                 )
-            if service_id in metadata and metadata[service_id].get("type") == "aggregate":
+            if service_id in aggregate_to_provider:
                 raise HierarchyConfigError(
-                    f"Service {service_id!r} collides with provider aggregate"
+                    f"Service {service_id!r} collides with provider aggregate "
+                    f"owned by {aggregate_to_provider[service_id]!r}"
                 )
             service_to_provider[service_id] = provider_id
             metadata[service_id] = {
@@ -114,8 +118,6 @@ def _validate_config(
                 raise HierarchyConfigError(
                     f"Category service {service_id!r} under {category_id!r} must be a mapping"
                 )
-            # Category membership is intentionally many-to-many and must never mutate
-            # the single provider owner recorded above.
             service_ids.append(service_id)
         category_metadata[aggregate] = {
             "id": aggregate,
@@ -156,7 +158,6 @@ def build_hierarchy(
     for node_id, node in category_metadata.items():
         categories[node_id] = {**node, "rule_ids": [], "rule_count": 0}
 
-    # Preserve legacy/unknown services without inventing provider ownership.
     for entity, rids in memberships.items():
         if entity in services or entity in aggregates or entity in categories:
             continue
@@ -169,7 +170,6 @@ def build_hierarchy(
             "status": "unmodeled",
         }
 
-    # Provider aggregate = provider-direct memberships + declared child services.
     for provider_id, provider in config["providers"].items():
         aggregate_id = str(provider["aggregate"])
         child_ids = list((provider.get("services") or {}).keys())
@@ -180,7 +180,6 @@ def build_hierarchy(
         aggregates[aggregate_id]["rule_count"] = len(rule_ids)
         aggregates[aggregate_id]["services"] = child_ids
 
-    # Category aggregate may overlap several providers.
     for category_id, category in (config.get("categories") or {}).items():
         aggregate_id = str(category["aggregate"])
         child_ids = list((category.get("services") or {}).keys())
@@ -192,7 +191,6 @@ def build_hierarchy(
         categories[aggregate_id]["services"] = child_ids
 
     groups: dict[str, dict[str, Any]] = {}
-
     graph = {
         "schema": "provider_service_hierarchy_v2",
         "config_schema": config.get("schema"),
