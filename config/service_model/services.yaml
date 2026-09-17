@@ -1,5 +1,5 @@
 version: 1
-updated: "2026-08-31"
+updated: "2026-09-17"
 services:
   google-core: {id: google-core, provider: google, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: google}
   google-shared: {id: google-shared, provider: google, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
@@ -13,6 +13,12 @@ services:
   tencent-core: {id: tencent-core, provider: tencent, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: tencent}
   tencent-shared: {id: tencent-shared, provider: tencent, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
   wechat: {id: wechat, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  qq: {id: qq, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  qqmusic: {id: qqmusic, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  qqmail: {id: qqmail, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  wecom: {id: wecom, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  tencentmeeting: {id: tencentmeeting, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  tencentcloud: {id: tencentcloud, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   alibaba-core: {id: alibaba-core, provider: alibaba, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: alibaba}
   alibaba-shared: {id: alibaba-shared, provider: alibaba, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
   baidu-core: {id: baidu-core, provider: baidu, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: baidu}
