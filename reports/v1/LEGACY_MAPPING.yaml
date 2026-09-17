@@ -1,0 +1,44 @@
+version: 1
+model: v1
+status: phase2-audit
+mappings:
+  - legacy: rule/Google/Google
+    service: google
+    type: parent-service
+    confidence: confirmed
+  - legacy: rule/Google/YouTube
+    service: google/youtube
+    type: child-service
+    parent: google
+    confidence: confirmed
+  - legacy: rule/Google/YouTubeMusic
+    service: google/youtube-music
+    type: child-service
+    parent: google
+    confidence: confirmed
+  - legacy: rule/Google/Firebase
+    service: google/firebase
+    type: child-service
+    parent: google
+    confidence: confirmed
+  - legacy: rule/Google/GoogleFCM
+    service: google/google-fcm
+    type: child-service
+    parent: google
+    confidence: provisional
+    note: Legacy entity confirmed; V1 identity and child semantics require asset-level audit.
+  - legacy: rule/Google
+    service: google
+    type: aggregate-container
+    confidence: confirmed
+    note: Legacy container; not itself a V1 Service Entity.
+
+unmapped_policy:
+  action: quarantine
+  reason: Do not infer Service identity solely from directory name.
+
+migration_policy:
+  preserve_legacy: true
+  delete_legacy: false
+  generated_is_source_of_truth: false
+  require_asset_audit_before_promotion: true
