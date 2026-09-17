@@ -1,7 +1,7 @@
 version: 1
 updated: "2026-09-17"
 aggregates:
-  google: {id: google, kind: aggregate, provider: google, scope: ecosystem, members: [google-core, google-shared, gmail, google-search, googlecloud, firebase], exclude: []}
+  google: {id: google, kind: aggregate, provider: google, scope: ecosystem, members: [google-core, google-shared, gmail, google-search, googlecloud, firebase, youtubemusic], exclude: []}
   apple: {id: apple, kind: aggregate, provider: apple, scope: ecosystem, members: [apple-core, apple-shared, icloud, appstore, testflight, appledev, findmy], exclude: []}
   microsoft: {id: microsoft, kind: aggregate, provider: microsoft, scope: ecosystem, members: [microsoft-core, microsoft-shared, azure], exclude: []}
   tencent: {id: tencent, kind: aggregate, provider: tencent, scope: ecosystem, members: [tencent-core, tencent-shared, wechat, qq, qqmusic, qqmail, wecom, tencentmeeting, tencentcloud], exclude: []}
@@ -10,3 +10,5 @@ aggregates:
   amazon: {id: amazon, kind: aggregate, provider: amazon, scope: ecosystem, members: [amazon-core, amazon-shared, aws], exclude: []}
   bytedance: {id: bytedance, kind: aggregate, provider: bytedance, scope: ecosystem, members: [bytedance-core, bytedance-shared, doubao, feishu], exclude: []}
   netease: {id: netease, kind: aggregate, provider: netease, scope: ecosystem, members: [netease-core, netease-shared, youdao], exclude: []}
+  atlassian: {id: atlassian, kind: aggregate, provider: atlassian, scope: ecosystem, members: [atlassian-core, atlassian-shared, bitbucket, trello], exclude: []}
+  meta: {id: meta, kind: aggregate, provider: meta, scope: ecosystem, members: [meta-core, meta-shared, messenger], exclude: []}

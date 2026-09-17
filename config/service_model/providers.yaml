@@ -14,6 +14,23 @@ providers:
   perplexity: {id: perplexity, kind: provider, name: Perplexity, scope: ecosystem, status: active}
   xai: {id: xai, kind: provider, name: xAI, scope: ecosystem, status: active}
   groq: {id: groq, kind: provider, name: Groq, scope: ecosystem, status: active}
-  huggingface: {id: huggingface, kind: provider, name: Hugging Face, scope: ecosystem, status: active}
+  huggingface: {id: huggingface, kind: provider, name: "Hugging Face", scope: ecosystem, status: active}
   cursor: {id: cursor, kind: provider, name: Cursor, scope: ecosystem, status: active}
   elevenlabs: {id: elevenlabs, kind: provider, name: ElevenLabs, scope: ecosystem, status: active}
+  atlassian: {id: atlassian, kind: provider, name: Atlassian, scope: ecosystem, status: active}
+  meta: {id: meta, kind: provider, name: Meta, scope: ecosystem, status: active}
+  dewu: {id: dewu, kind: provider, name: Dewu, scope: ecosystem, status: active}
+  npm: {id: npm, kind: provider, name: npm, scope: ecosystem, status: active}
+  pypi: {id: pypi, kind: provider, name: PyPI, scope: ecosystem, status: active}
+  netlify: {id: netlify, kind: provider, name: Netlify, scope: ecosystem, status: active}
+  canva: {id: canva, kind: provider, name: Canva, scope: ecosystem, status: active}
+  signal: {id: signal, kind: provider, name: Signal, scope: ecosystem, status: active}
+  snap: {id: snap, kind: provider, name: Snap, scope: ecosystem, status: active}
+  bluesky: {id: bluesky, kind: provider, name: Bluesky, scope: ecosystem, status: active}
+  tidal: {id: tidal, kind: provider, name: Tidal, scope: ecosystem, status: active}
+  walmart: {id: walmart, kind: provider, name: Walmart, scope: ecosystem, status: active}
+  uber: {id: uber, kind: provider, name: Uber, scope: ecosystem, status: active}
+  airbnb: {id: airbnb, kind: provider, name: Airbnb, scope: ecosystem, status: active}
+  booking: {id: booking, kind: provider, name: Booking, scope: ecosystem, status: active}
+  wise: {id: wise, kind: provider, name: Wise, scope: ecosystem, status: active}
+  roblox: {id: roblox, kind: provider, name: Roblox, scope: ecosystem, status: active}
