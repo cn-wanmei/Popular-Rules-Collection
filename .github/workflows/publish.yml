@@ -66,9 +66,13 @@ jobs:
           cp -a release-candidate/generated generated
           cp -a "release-candidate/data/runs/${RUN_ID}" data/runs/
           cp -a release-candidate/data/baseline/canonical.json data/baseline/
+          # Phase 0.4: projection after successful promotion material is staged
+          python scripts/derive_service_production_evidence.py --run-id "${RUN_ID}" || true
+          python scripts/refresh_latest_release_from_promotion.py --run-id "${RUN_ID}"
+          python scripts/status_consistency_gate.py
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A generated/ data/runs/ data/baseline/
+          git add -A generated/ data/runs/ data/baseline/ reports/latest_release.json
           if git diff --staged --quiet; then
             echo "No release changes to publish."
             exit 0
