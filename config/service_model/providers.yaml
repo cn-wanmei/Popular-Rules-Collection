@@ -1,5 +1,5 @@
 version: 1
-updated: "2026-08-31"
+updated: "2026-09-17"
 providers:
   google: {id: google, kind: provider, name: Google, scope: ecosystem, status: active}
   apple: {id: apple, kind: provider, name: Apple, scope: ecosystem, status: active}
@@ -9,3 +9,4 @@ providers:
   baidu: {id: baidu, kind: provider, name: Baidu, scope: ecosystem, status: active}
   amazon: {id: amazon, kind: provider, name: Amazon, scope: ecosystem, status: active}
   bytedance: {id: bytedance, kind: provider, name: ByteDance, scope: ecosystem, status: active}
+  netease: {id: netease, kind: provider, name: NetEase, scope: ecosystem, status: active}
