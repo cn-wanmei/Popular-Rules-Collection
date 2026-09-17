@@ -1,0 +1,16 @@
+{
+  "schema": "production_baseline_v1",
+  "records": {
+    "canonical_errors": 0,
+    "clean": 259570,
+    "ingest_errors": 0,
+    "ingested": 259570,
+    "memberships": 259570,
+    "quarantined": 0,
+    "unique_rules": 128714
+  },
+  "source_run_id": "20260917T054015320743Z-run",
+  "source_snapshot_id": "snap-20260917T054015321635Z",
+  "promoted_at": "2026-09-17T05:59:31.866520+00:00",
+  "note": "Phase 0.1 seed baseline from post-PR#60 RC_READY run; NO_BASELINE was blocking evidence consistency."
+}
