@@ -1,0 +1,194 @@
+# Domestic/international service gap inventory.
+# This file is planning metadata, not a production rule source.
+version: 1
+schema: service_candidate_catalog_v1
+status_values: [existing, split, planned, deferred]
+priority_values: [P0, P1, P2]
+source_status:
+  verified_upstream: rule path or geosite entry was observed in a configured high-trust upstream
+  candidate_upstream: likely upstream source exists; verify exact path before registry activation
+  new_source_needed: no configured source has yet been verified
+candidates:
+  # Domestic provider/service decomposition
+  - {id: qq, provider: tencent, region: domestic, category: social, status: planned, priority: P0, source_status: candidate_upstream}
+  - {id: qqmusic, provider: tencent, region: domestic, category: media, status: planned, priority: P0, source_status: candidate_upstream}
+  - {id: qqmail, provider: tencent, region: domestic, category: productivity, status: planned, priority: P0, source_status: candidate_upstream}
+  - {id: wecom, provider: tencent, region: domestic, category: productivity, status: planned, priority: P0, source_status: candidate_upstream}
+  - {id: tencentmeeting, provider: tencent, region: domestic, category: productivity, status: planned, priority: P0, source_status: candidate_upstream}
+  - {id: tencentcloud, provider: tencent, region: domestic, category: cloud, status: planned, priority: P0, source_status: candidate_upstream}
+  - {id: taobao, provider: alibaba, region: domestic, category: shopping, status: planned, priority: P0, source_status: candidate_upstream}
+  - {id: tmall, provider: alibaba, region: domestic, category: shopping, status: planned, priority: P0, source_status: candidate_upstream}
+  - {id: alibabacloud, provider: alibaba, region: domestic, category: cloud, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: 1688, provider: alibaba, region: domestic, category: shopping, status: planned, priority: P0, source_status: candidate_upstream}
+  - {id: dingding, provider: alibaba, region: domestic, category: productivity, status: planned, priority: P0, source_status: candidate_upstream}
+  - {id: cainiao, provider: alibaba, region: domestic, category: logistics, status: planned, priority: P0, source_status: candidate_upstream}
+  - {id: fliggy, provider: alibaba, region: domestic, category: travel, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: doubao, provider: bytedance, region: domestic, category: ai, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: feishu, provider: bytedance, region: domestic, category: productivity, status: planned, priority: P0, source_status: candidate_upstream}
+  - {id: lark, provider: bytedance, region: international, category: productivity, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: capcut, provider: bytedance, region: international, category: media, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: toutiao, provider: bytedance, region: domestic, category: news, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: xigua, provider: bytedance, region: domestic, category: media, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: volcengine, provider: bytedance, region: domestic, category: cloud, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: baidunetdisk, provider: baidu, region: domestic, category: storage, status: planned, priority: P0, source_status: candidate_upstream}
+  - {id: baidutieba, provider: baidu, region: domestic, category: social, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: baiduwiki, provider: baidu, region: domestic, category: productivity, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: baidumaps, provider: baidu, region: domestic, category: maps, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: baiduzhidao, provider: baidu, region: domestic, category: knowledge, status: planned, priority: P2, source_status: candidate_upstream}
+  - {id: youdao, provider: netease, region: domestic, category: productivity, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: netease163mail, provider: netease, region: domestic, category: email, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: neteasegames, provider: netease, region: domestic, category: gaming, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: lofter, provider: netease, region: domestic, category: social, status: planned, priority: P2, source_status: candidate_upstream}
+  - {id: appgallery, provider: huawei, region: domestic, category: app_store, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: hms, provider: huawei, region: global, category: infrastructure, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: huaweicloud, provider: huawei, region: global, category: cloud, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: petalmaps, provider: huawei, region: global, category: maps, status: planned, priority: P2, source_status: candidate_upstream}
+  - {id: micloud, provider: xiaomi, region: global, category: storage, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: mihome, provider: xiaomi, region: global, category: iot, status: planned, priority: P2, source_status: candidate_upstream}
+  - {id: getapps, provider: xiaomi, region: global, category: app_store, status: planned, priority: P2, source_status: candidate_upstream}
+
+  # Other high-frequency domestic independent services
+  - {id: weixinread, provider: tencent, region: domestic, category: media, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: tencentdocs, provider: tencent, region: domestic, category: productivity, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: wegame, provider: tencent, region: domestic, category: gaming, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: gaode, provider: amap, region: domestic, category: maps, status: existing, priority: P0, source_status: verified_upstream}
+  - {id: qqbrowser, provider: tencent, region: domestic, category: browser, status: planned, priority: P2, source_status: candidate_upstream}
+  - {id: kugou, provider: netease, region: domestic, category: media, status: planned, priority: P1, source_status: verified_upstream}
+  - {id: kuwo, provider: netease, region: domestic, category: media, status: planned, priority: P1, source_status: verified_upstream}
+  - {id: ximalaya, provider: ximalaya, region: domestic, category: media, status: planned, priority: P1, source_status: verified_upstream}
+  - {id: acfun, provider: acfun, region: domestic, category: media, status: existing, priority: P0, source_status: verified_upstream}
+  - {id: cctv, provider: cctv, region: domestic, category: media, status: existing, priority: P1, source_status: verified_upstream}
+  - {id: huya, provider: huya, region: domestic, category: gaming, status: existing, priority: P1, source_status: verified_upstream}
+  - {id: douyu, provider: douyu, region: domestic, category: gaming, status: existing, priority: P1, source_status: verified_upstream}
+  - {id: dewu, provider: dewu, region: domestic, category: shopping, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: vipshop, provider: vipshop, region: domestic, category: shopping, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: suning, provider: suning, region: domestic, category: shopping, status: planned, priority: P2, source_status: candidate_upstream}
+  - {id: shellhouse, provider: beike, region: domestic, category: housing, status: planned, priority: P2, source_status: candidate_upstream}
+  - {id: lianjia, provider: beike, region: domestic, category: housing, status: planned, priority: P2, source_status: candidate_upstream}
+  - {id: anjuke, provider: anjuke, region: domestic, category: housing, status: planned, priority: P2, source_status: candidate_upstream}
+  - {id: taptap, provider: taptap, region: domestic, category: gaming, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: gitee, provider: gitee, region: domestic, category: developer, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: csdn, provider: csdn, region: domestic, category: developer, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: xueqiu, provider: xueqiu, region: domestic, category: finance, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: keep, provider: keep, region: domestic, category: productivity, status: planned, priority: P2, source_status: candidate_upstream}
+
+  # International AI
+  - {id: deepseek, provider: deepseek, region: international, category: ai, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: perplexity, provider: perplexity, region: international, category: ai, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: grok, provider: xai, region: international, category: ai, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: groq, provider: groq, region: international, category: ai, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: mistral, provider: mistral, region: international, category: ai, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: huggingface, provider: huggingface, region: international, category: ai, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: cursor, provider: cursor, region: international, category: developer_ai, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: elevenlabs, provider: elevenlabs, region: international, category: ai, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: poe, provider: quora, region: international, category: ai, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: openrouter, provider: openrouter, region: international, category: ai, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: replicate, provider: replicate, region: international, category: ai, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: midjourney, provider: midjourney, region: international, category: ai, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: runway, provider: runway, region: international, category: ai, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: characterai, provider: characterai, region: international, category: ai, status: planned, priority: P2, source_status: new_source_needed}
+  - {id: qwen, provider: alibaba, region: global, category: ai, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: kimi, provider: moonshot, region: global, category: ai, status: planned, priority: P1, source_status: candidate_upstream}
+
+  # Developer / Cloud / SaaS
+  - {id: aws, provider: amazon, region: international, category: cloud, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: azure, provider: microsoft, region: international, category: cloud, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: googlecloud, provider: google, region: international, category: cloud, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: firebase, provider: google, region: international, category: developer, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: bitbucket, provider: atlassian, region: international, category: developer, status: planned, priority: P0, source_status: candidate_upstream}
+  - {id: npm, provider: npm, region: international, category: developer, status: planned, priority: P0, source_status: new_source_needed}
+  - {id: pypi, provider: pypi, region: international, category: developer, status: planned, priority: P0, source_status: new_source_needed}
+  - {id: netlify, provider: netlify, region: international, category: developer, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: canva, provider: canva, region: international, category: productivity, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: trello, provider: atlassian, region: international, category: productivity, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: circleci, provider: circleci, region: international, category: developer, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: sentry, provider: sentry, region: international, category: developer, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: datadog, provider: datadog, region: international, category: developer, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: postman, provider: postman, region: international, category: developer, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: insomnia, provider: insomnia, region: international, category: developer, status: planned, priority: P2, source_status: new_source_needed}
+  - {id: linear, provider: linear, region: international, category: productivity, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: miro, provider: miro, region: international, category: productivity, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: airtable, provider: airtable, region: international, category: productivity, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: zapier, provider: zapier, region: international, category: productivity, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: salesforce, provider: salesforce, region: international, category: enterprise, status: planned, priority: P2, source_status: new_source_needed}
+  - {id: hubspot, provider: hubspot, region: international, category: enterprise, status: planned, priority: P2, source_status: new_source_needed}
+  - {id: twilio, provider: twilio, region: international, category: infrastructure, status: planned, priority: P2, source_status: new_source_needed}
+  - {id: cloudinary, provider: cloudinary, region: international, category: infrastructure, status: planned, priority: P2, source_status: new_source_needed}
+  - {id: fastly, provider: fastly, region: international, category: infrastructure, status: planned, priority: P2, source_status: new_source_needed}
+
+  # Social / communication
+  - {id: signal, provider: signal, region: international, category: communication, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: messenger, provider: meta, region: international, category: social, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: snapchat, provider: snap, region: international, category: social, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: bluesky, provider: bluesky, region: international, category: social, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: mastodon, provider: mastodon, region: international, category: social, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: tumblr, provider: tumblr, region: international, category: social, status: planned, priority: P2, source_status: new_source_needed}
+  - {id: quora, provider: quora, region: international, category: social, status: planned, priority: P2, source_status: new_source_needed}
+  - {id: viber, provider: viber, region: international, category: communication, status: planned, priority: P2, source_status: new_source_needed}
+  - {id: vk, provider: vk, region: international, category: social, status: planned, priority: P2, source_status: new_source_needed}
+
+  # Media / video / music
+  - {id: youtubemusic, provider: google, region: international, category: music, status: planned, priority: P0, source_status: candidate_upstream}
+  - {id: crunchyroll, provider: sony, region: international, category: video, status: planned, priority: P0, source_status: new_source_needed}
+  - {id: paramountplus, provider: paramount, region: international, category: video, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: peacock, provider: nbcuniversal, region: international, category: video, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: tidal, provider: tidal, region: international, category: music, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: deezer, provider: deezer, region: international, category: music, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: pandora, provider: pandora, region: international, category: music, status: planned, priority: P2, source_status: new_source_needed}
+  - {id: dazn, provider: dazn, region: international, category: video, status: planned, priority: P2, source_status: new_source_needed}
+  - {id: vimeo, provider: vimeo, region: international, category: video, status: planned, priority: P2, source_status: candidate_upstream}
+  - {id: dailymotion, provider: dailymotion, region: international, category: video, status: planned, priority: P2, source_status: candidate_upstream}
+
+  # Shopping / travel / payments
+  - {id: walmart, provider: walmart, region: international, category: shopping, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: temu, provider: temu, region: international, category: shopping, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: shein, provider: shein, region: international, category: shopping, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: etsy, provider: etsy, region: international, category: shopping, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: target, provider: target, region: international, category: shopping, status: planned, priority: P2, source_status: new_source_needed}
+  - {id: bestbuy, provider: bestbuy, region: international, category: shopping, status: planned, priority: P2, source_status: new_source_needed}
+  - {id: uber, provider: uber, region: international, category: mobility, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: lyft, provider: lyft, region: international, category: mobility, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: grab, provider: grab, region: southeast_asia, category: mobility, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: airbnb, provider: airbnb, region: international, category: travel, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: booking, provider: booking, region: international, category: travel, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: expedia, provider: expedia, region: international, category: travel, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: agoda, provider: agoda, region: asia, category: travel, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: wise, provider: wise, region: international, category: payments, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: revolut, provider: revolut, region: international, category: payments, status: planned, priority: P2, source_status: new_source_needed}
+  - {id: venmo, provider: paypal, region: international, category: payments, status: planned, priority: P2, source_status: new_source_needed}
+
+  # Gaming
+  - {id: roblox, provider: roblox, region: international, category: gaming, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: minecraft, provider: mojang, region: international, category: gaming, status: planned, priority: P0, source_status: verified_upstream}
+  - {id: 2kgames, provider: 2kgames, region: international, category: gaming, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: bethesda, provider: bethesda, region: international, category: gaming, status: planned, priority: P2, source_status: new_source_needed}
+  - {id: nexon, provider: nexon, region: asia, category: gaming, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: supercell, provider: supercell, region: international, category: gaming, status: planned, priority: P1, source_status: new_source_needed}
+  - {id: krafton, provider: krafton, region: international, category: gaming, status: planned, priority: P2, source_status: new_source_needed}
+  - {id: bandainamco, provider: bandainamco, region: international, category: gaming, status: planned, priority: P2, source_status: new_source_needed}
+  - {id: squareenix, provider: squareenix, region: international, category: gaming, status: planned, priority: P2, source_status: new_source_needed}
+  - {id: sega, provider: sega, region: international, category: gaming, status: planned, priority: P2, source_status: new_source_needed}
+  - {id: capcom, provider: capcom, region: international, category: gaming, status: planned, priority: P2, source_status: new_source_needed}
+
+  # Search / mail / productivity provider decomposition
+  - {id: appstore, provider: apple, region: global, category: app_store, status: split, priority: P0, source_status: verified_upstream}
+  - {id: testflight, provider: apple, region: global, category: developer, status: split, priority: P0, source_status: verified_upstream}
+  - {id: appledev, provider: apple, region: global, category: developer, status: split, priority: P0, source_status: verified_upstream}
+  - {id: findmy, provider: apple, region: global, category: utility, status: split, priority: P1, source_status: verified_upstream}
+  - {id: gmail, provider: google, region: global, category: email, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: googledrive, provider: google, region: global, category: storage, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: googledocs, provider: google, region: global, category: productivity, status: planned, priority: P2, source_status: candidate_upstream}
+  - {id: googlemaps, provider: google, region: global, category: maps, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: googleplay, provider: google, region: global, category: app_store, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: outlook, provider: microsoft, region: global, category: email, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: office365, provider: microsoft, region: global, category: productivity, status: planned, priority: P1, source_status: candidate_upstream}
+  - {id: sharepoint, provider: microsoft, region: global, category: productivity, status: planned, priority: P2, source_status: candidate_upstream}
+  - {id: powerbi, provider: microsoft, region: global, category: productivity, status: planned, priority: P2, source_status: candidate_upstream}
+  - {id: kindle, provider: amazon, region: global, category: reading, status: planned, priority: P2, source_status: candidate_upstream}
+  - {id: audible, provider: amazon, region: global, category: media, status: planned, priority: P2, source_status: candidate_upstream}
+summary:
+  target_pool_size: 180
+  p0_target: 50
+  p1_target: 70
+  p2_target: 60
+  activation_rule: only nodes backed by collected source membership and semantic probes may enter production registry
