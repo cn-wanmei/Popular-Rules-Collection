@@ -6,7 +6,6 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from scripts.directory_gate import validate as validate_directory_contract
 from src.engine.adapters.build_all import build_all_clients
 from src.engine.canonical.store import build_canonical
 from src.engine.cas.run_store import register_run
@@ -22,6 +21,7 @@ from src.engine.quarantine.engine import run_quarantine
 from src.engine.release.evidence import build_sbom, retention_plan
 from src.engine.release.state_machine import evaluate_release
 from src.engine.snapshot.engine import create_source_snapshot, load_snapshot_manifest
+from src.engine.validation.directory_contract import validate as validate_directory_contract
 from src.engine.validation.source_semantic import run_source_semantic_gate
 
 STAGES = [
@@ -30,20 +30,11 @@ STAGES = [
 ]
 
 DAG_NODES = [
-    Node("snapshot"),
-    Node("ingest", ("snapshot",)),
-    Node("source_gate", ("ingest",)),
-    Node("quarantine", ("source_gate",)),
-    Node("canonical", ("quarantine",)),
-    Node("hierarchy", ("canonical",)),
-    Node("ir", ("hierarchy",)),
-    Node("directory", ("ir",)),
-    Node("adapters", ("directory",)),
-    Node("diff", ("canonical",)),
-    Node("golden", ("adapters",)),
-    Node("observability", ("diff", "golden")),
-    Node("cas", ("observability",)),
-    Node("release", ("cas",)),
+    Node("snapshot"), Node("ingest", ("snapshot",)), Node("source_gate", ("ingest",)),
+    Node("quarantine", ("source_gate",)), Node("canonical", ("quarantine",)),
+    Node("hierarchy", ("canonical",)), Node("ir", ("hierarchy",)), Node("directory", ("ir",)),
+    Node("adapters", ("directory",)), Node("diff", ("canonical",)), Node("golden", ("adapters",)),
+    Node("observability", ("diff", "golden")), Node("cas", ("observability",)), Node("release", ("cas",)),
 ]
 
 
@@ -53,8 +44,7 @@ def _new_run_id() -> str:
 
 def _resolve_repo_path(path: Path | str) -> Path:
     value = Path(path).expanduser()
-    if not value.is_absolute():
-        value = ROOT / value
+    if not value.is_absolute(): value = ROOT / value
     return value.resolve()
 
 
@@ -112,8 +102,7 @@ def run_pipeline(sources_root: Path, data_root: Path, *, run_id: str | None = No
 
     def handler_source_gate() -> dict[str, Any]:
         report = run_source_semantic_gate(context["ingest"], run_dir / "source_gate")
-        if not report["pass"]:
-            return {"status": "blocked", "failures": len(report["failures"]), "report": str((run_dir / "source_gate" / "report.json").relative_to(run_dir))}
+        if not report["pass"]: return {"status": "blocked", "failures": len(report["failures"]), "report": str((run_dir / "source_gate" / "report.json").relative_to(run_dir))}
         return {"status": "ok", "checked": report["checked"], "failures": 0}
 
     def handler_quarantine() -> dict[str, Any]:
