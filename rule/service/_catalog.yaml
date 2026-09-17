@@ -1,0 +1,16 @@
+version: 1
+kind: service-catalog
+status: seed
+
+# This file is a bootstrap manifest, not the final SERVICE_CATALOG.
+# The authoritative catalog will be generated after the full legacy rule audit.
+services:
+  - google
+  - google/gemini
+  - google/gmail
+
+rules:
+  source_of_truth: service.yaml
+  categories_from: service.categories
+  parent_children_from: parent_service.children
+  legacy_mapping_required: true
