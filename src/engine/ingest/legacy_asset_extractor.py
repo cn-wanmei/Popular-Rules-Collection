@@ -101,6 +101,7 @@ class ServiceAssetSummary:
     errors: list[str] = field(default_factory=list)
 
     def as_dict(self) -> dict[str, Any]:
+        extracted_domains = self.domains + self.domain_suffixes + self.domain_keywords + self.domain_regexes
         return {
             "id": self.id,
             "name": self.name,
@@ -127,6 +128,15 @@ class ServiceAssetSummary:
             "index_statistics": {
                 "domains": self.index_domains,
                 "ips": self.index_ips,
+            },
+            "reconciliation": {
+                "index_domains": self.index_domains,
+                "extracted_domain_rules": extracted_domains,
+                "domain_delta": (extracted_domains - self.index_domains) if self.index_domains is not None else None,
+                "index_ips": self.index_ips,
+                "extracted_ip_cidrs": self.cidrs,
+                "ip_delta": (self.cidrs - self.index_ips) if self.index_ips is not None else None,
+                "status": "reconcile-later",
             },
             "metadata_statistics": self.metadata_statistics,
             "generated_files": self.generated_files,
@@ -349,80 +359,94 @@ def extract_legacy_asset_ir(
     *,
     index_path: Path | None = None,
     include_aggregates: bool = True,
+    jsonl_output: Path | None = None,
 ) -> LegacyAssetIR:
-    """Build the service-level IR manifest without embedding every asset value."""
+    """Build the service-level IR and optionally emit full JSONL in the same pass."""
     rule_root = Path(rule_root)
     index_path = Path(index_path) if index_path else rule_root / "_index.yaml"
     index = _index_records(index_path)
     summaries: dict[str, ServiceAssetSummary] = {}
     profile: dict[str, Any] = {"services": {}, "files": [], "totals": {}}
+    jsonl_handle = None
+    jsonl_records = 0
+    if jsonl_output is not None:
+        jsonl_output = Path(jsonl_output)
+        jsonl_output.parent.mkdir(parents=True, exist_ok=True)
+        jsonl_handle = jsonl_output.open("w", encoding="utf-8")
 
-    for (category, service_id), item in sorted(index.items()):
-        if not include_aggregates and item["service_type"] == "aggregate":
-            continue
-        directory = rule_root / category / str(item["name"])
-        if item.get("path"):
-            path_parts = Path(str(item["path"])).parts
-            if len(path_parts) >= 3:
-                directory = rule_root / path_parts[-2] / path_parts[-1]
-        metadata = _metadata_for(directory)
-        children = [str(v).strip().lower() for v in (metadata.get("children") or []) if str(v).strip()]
-        categories = [str(v).strip().lower() for v in (metadata.get("categories") or []) if str(v).strip()]
-        if not categories:
-            categories = [category]
-        summaries[service_id] = ServiceAssetSummary(
-            id=service_id,
-            name=str(metadata.get("name") or item.get("name") or service_id),
-            category=category,
-            categories=categories,
-            service_type=str(metadata.get("service_type") or item.get("service_type") or "service"),
-            parent=(str(metadata.get("parent")).strip().lower() if metadata.get("parent") else None),
-            children=children,
-            metadata_present=bool(metadata),
-            index_present=True,
-            index_domains=item.get("domains"),
-            index_ips=item.get("ips"),
-            metadata_statistics=dict(metadata.get("statistics") or {}),
-            generated_files=dict(metadata.get("generated_files") or {}),
-            sources=[str(v).strip() for v in (metadata.get("sources") or []) if str(v).strip()],
-        )
-
-    for category_dir in sorted(p for p in rule_root.iterdir() if p.is_dir()):
-        for directory in sorted(p for p in category_dir.iterdir() if p.is_dir()):
+    try:
+        for (category, service_id), item in sorted(index.items()):
+            if not include_aggregates and item["service_type"] == "aggregate":
+                continue
+            directory = rule_root / category / str(item["name"])
+            if item.get("path"):
+                path_parts = Path(str(item["path"])).parts
+                if len(path_parts) >= 3:
+                    directory = rule_root / path_parts[-2] / path_parts[-1]
             metadata = _metadata_for(directory)
-            service_id = str(metadata.get("id") or directory.name).strip().lower()
-            if not service_id or service_id in summaries:
-                continue
-            service_type = str(metadata.get("service_type") or "service").strip().lower()
-            if not include_aggregates and service_type == "aggregate":
-                continue
+            children = [str(v).strip().lower() for v in (metadata.get("children") or []) if str(v).strip()]
+            categories = [str(v).strip().lower() for v in (metadata.get("categories") or []) if str(v).strip()]
+            if not categories:
+                categories = [category]
             summaries[service_id] = ServiceAssetSummary(
                 id=service_id,
-                name=str(metadata.get("name") or directory.name),
-                category=category_dir.name.lower(),
-                categories=[str(v).strip().lower() for v in (metadata.get("categories") or [category_dir.name])],
-                service_type=service_type,
+                name=str(metadata.get("name") or item.get("name") or service_id),
+                category=category,
+                categories=categories,
+                service_type=str(metadata.get("service_type") or item.get("service_type") or "service"),
                 parent=(str(metadata.get("parent")).strip().lower() if metadata.get("parent") else None),
-                children=[str(v).strip().lower() for v in (metadata.get("children") or []) if str(v).strip()],
-                metadata_present=True,
-                index_present=False,
+                children=children,
+                metadata_present=bool(metadata),
+                index_present=True,
+                index_domains=item.get("domains"),
+                index_ips=item.get("ips"),
                 metadata_statistics=dict(metadata.get("statistics") or {}),
                 generated_files=dict(metadata.get("generated_files") or {}),
                 sources=[str(v).strip() for v in (metadata.get("sources") or []) if str(v).strip()],
-                errors=["metadata-only: service is absent from rule/_index.yaml"],
             )
 
-    for evidence in iter_service_assets(rule_root, include_aggregates=include_aggregates, profile=profile):
-        summary = summaries.get(evidence.asset.service)
-        if summary is None:
-            continue
-        summary.records += 1
-        _update_counts(summary, evidence.asset.asset_type)
-        if evidence.asset.path not in summary.source_files:
-            summary.source_files.append(evidence.asset.path)
-        for source in evidence.asset.sources:
-            if source not in summary.sources:
-                summary.sources.append(source)
+        for category_dir in sorted(p for p in rule_root.iterdir() if p.is_dir()):
+            for directory in sorted(p for p in category_dir.iterdir() if p.is_dir()):
+                metadata = _metadata_for(directory)
+                service_id = str(metadata.get("id") or directory.name).strip().lower()
+                if not service_id or service_id in summaries:
+                    continue
+                service_type = str(metadata.get("service_type") or "service").strip().lower()
+                if not include_aggregates and service_type == "aggregate":
+                    continue
+                summaries[service_id] = ServiceAssetSummary(
+                    id=service_id,
+                    name=str(metadata.get("name") or directory.name),
+                    category=category_dir.name.lower(),
+                    categories=[str(v).strip().lower() for v in (metadata.get("categories") or [category_dir.name])],
+                    service_type=service_type,
+                    parent=(str(metadata.get("parent")).strip().lower() if metadata.get("parent") else None),
+                    children=[str(v).strip().lower() for v in (metadata.get("children") or []) if str(v).strip()],
+                    metadata_present=True,
+                    index_present=False,
+                    metadata_statistics=dict(metadata.get("statistics") or {}),
+                    generated_files=dict(metadata.get("generated_files") or {}),
+                    sources=[str(v).strip() for v in (metadata.get("sources") or []) if str(v).strip()],
+                    errors=["metadata-only: service is absent from rule/_index.yaml"],
+                )
+
+        for evidence in iter_service_assets(rule_root, include_aggregates=include_aggregates, profile=profile):
+            summary = summaries.get(evidence.asset.service)
+            if summary is None:
+                continue
+            summary.records += 1
+            _update_counts(summary, evidence.asset.asset_type)
+            if evidence.asset.path not in summary.source_files:
+                summary.source_files.append(evidence.asset.path)
+            for source in evidence.asset.sources:
+                if source not in summary.sources:
+                    summary.sources.append(source)
+            if jsonl_handle is not None:
+                jsonl_handle.write(json.dumps(evidence.as_dict(), ensure_ascii=False, sort_keys=True) + "\n")
+                jsonl_records += 1
+    finally:
+        if jsonl_handle is not None:
+            jsonl_handle.close()
 
     relation_drift: list[dict[str, Any]] = []
     index_service_ids = {service_id for (_category, service_id) in index}
@@ -464,6 +488,12 @@ def extract_legacy_asset_ir(
     profile["totals"]["services"] = len(summaries)
     profile["totals"]["metadata_only_services"] = sum(1 for s in summaries.values() if not s.index_present)
     profile["totals"]["total_seconds"] = round(sum(v["total_seconds"] for v in profile["services"].values()), 6)
+    if jsonl_output is not None:
+        profile["jsonl"] = {
+            "path": str(jsonl_output),
+            "records": jsonl_records,
+            "sha256": _sha256(jsonl_output),
+        }
     return LegacyAssetIR(
         schema="legacy_asset_ir_v1",
         generated_at=datetime.now(timezone.utc).isoformat(),
