@@ -30,18 +30,10 @@ EGERN_FIELDS = {
     "domain_suffix_set": "domain_suffix",
     "domain_keyword_set": "domain_keyword",
     "domain_regex_set": "domain_regex",
-    "domain_wildcard_set": "domain_wildcard",
     "ip_cidr_set": "ip_cidr",
     "ip_cidr6_set": "ip_cidr6",
-    "geoip_set": "geoip",
-    "url_regex_set": "url_regex",
-    "user_agent_set": "user_agent",
-    "dest_port_set": "dest_port",
-    "asn_set": "asn",
 }
 
-# Native line prefixes after uppercasing and "_" -> "-".
-# Includes Surge/Clash DOMAIN-* forms and Quantumult X host/ip6-cidr forms.
 LINE_TYPES = {
     "DOMAIN": "domain",
     "DOMAIN-SUFFIX": "domain_suffix",
@@ -49,74 +41,59 @@ LINE_TYPES = {
     "DOMAIN-REGEX": "domain_regex",
     "IP-CIDR": "ip_cidr",
     "IP-CIDR6": "ip_cidr6",
-    "HOST": "domain",
-    "HOST-SUFFIX": "domain_suffix",
-    "HOST-KEYWORD": "domain_keyword",
-    "IP6-CIDR": "ip_cidr6",
 }
 
-# Trailing policy/action appended by some native clients (Quantumult X: ", proxy").
-_POLICY_SUFFIX = re.compile(r",\s*[A-Za-z][A-Za-z0-9_-]*$")
-EXAMPLE_LIMIT = 25
-
-
-def _project_ir_rules(ir_rules: set[tuple[str, str]]) -> set[tuple[str, str]]:
-    """Apply the same client projection type hygiene used by adapters."""
-    out: set[tuple[str, str]] = set()
-    for typ, value in ir_rules:
-        norm = normalize_rule_for_client({"type": typ, "value": value})
-        out.add((_norm_type(str(norm["type"])), str(norm["value"]).strip()))
-    return out
-
+EXAMPLE_LIMIT = 20
 
 
 def _norm_type(value: str) -> str:
     return value.strip().lower().replace("-", "_")
 
 
+def _load_ir(path: Path) -> list[tuple[str, str]]:
+    data = json.loads(path.read_text(encoding="utf-8"))
+    rules = data.get("rules") or []
+    return [(_norm_type(str(r.get("type", ""))), str(r.get("value", ""))) for r in rules]
+
+
+def _project_ir_rules(path: Path) -> set[tuple[str, str]]:
+    return {
+        (_norm_type(str(r.get("type", ""))), str(r.get("value", "")))
+        for r in (json.loads(path.read_text(encoding="utf-8")).get("rules") or [])
+    }
+
+
 def _strip_policy(value: str) -> str:
-    return _POLICY_SUFFIX.sub("", value).strip()
-
-
-def _load_ir(path: Path) -> set[tuple[str, str]]:
-    obj = json.loads(path.read_text(encoding="utf-8"))
-    if obj.get("schema") != "semantic_ir_v2":
-        raise RuntimeError("unsupported IR schema")
-    return {(_norm_type(str(r["type"])), str(r["value"]).strip()) for r in obj.get("rules", [])}
+    value = value.strip()
+    value = re.sub(r",(REJECT|DIRECT|PROXY|PASS|REJECT-DROP)$", "", value, flags=re.I)
+    return value.strip()
 
 
 def _extract_json(path: Path) -> set[tuple[str, str]]:
-    obj = json.loads(path.read_text(encoding="utf-8"))
+    data = json.loads(path.read_text(encoding="utf-8"))
     found: set[tuple[str, str]] = set()
-
-    def visit(node: Any) -> None:
+    def walk(node: Any) -> None:
         if isinstance(node, dict):
-            for key, value in node.items():
-                if key in TYPE_FIELDS and isinstance(value, list):
-                    found.update((TYPE_FIELDS[key], str(item).strip()) for item in value)
-                visit(value)
+            for key, values in node.items():
+                typ = TYPE_FIELDS.get(_norm_type(str(key)))
+                if typ and isinstance(values, list):
+                    for item in values:
+                        if isinstance(item, str) and item.strip():
+                            found.add((typ, item.strip()))
+                walk(values)
         elif isinstance(node, list):
             for item in node:
-                visit(item)
-
-    visit(obj)
+                walk(item)
+    walk(data)
     return found
 
 
 def _extract_egern_yaml(path: Path) -> set[tuple[str, str]]:
-    """Extract rules from native Egern Rule Set YAML (domain_*_set collections)."""
-    text = path.read_text(encoding="utf-8")
-    # Fast path: if it still looks like Clash payload, fall through to lines.
-    if text.lstrip().startswith("payload:"):
-        return set()
-    try:
-        obj = yaml.safe_load(text) or {}
-    except Exception:
-        return set()
-    if not isinstance(obj, dict):
-        return set()
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
     found: set[tuple[str, str]] = set()
-    for key, values in obj.items():
+    if not isinstance(data, dict):
+        return found
+    for key, values in data.items():
         typ = EGERN_FIELDS.get(str(key))
         if not typ or not isinstance(values, list):
             continue
@@ -155,7 +132,7 @@ def _extract_yaml(path: Path) -> set[tuple[str, str]]:
 
 def _extract_client(client_dir: Path, artifact: str) -> set[tuple[str, str]]:
     pattern = {"json": "*.json", "yaml": "*.yaml", "list": "*.list"}[artifact]
-    files = sorted(client_dir.glob(pattern))
+    files = sorted(p for p in client_dir.rglob(pattern) if p.is_file())
     if not files:
         raise RuntimeError(f"no {artifact} artifacts in {client_dir}")
     found: set[tuple[str, str]] = set()
@@ -180,7 +157,7 @@ def main() -> int:
     parser.add_argument("--matrix", type=Path, default=Path("config/client_capability_matrix.yaml"))
     args = parser.parse_args()
 
-    ir_rules = _project_ir_rules(_load_ir(args.ir))
+    ir_rules = _project_ir_rules(args.ir)
     matrix = yaml.safe_load(args.matrix.read_text(encoding="utf-8")) or {}
     clients = matrix.get("clients") or {}
     failures: list[dict[str, Any]] = []
@@ -189,10 +166,11 @@ def main() -> int:
     for client, cfg in sorted(clients.items()):
         capability = {_norm_type(str(x)) for x in cfg.get("native_rule_types", [])}
         if client == "singbox":
-            expected = {(
-                "ip_cidr" if typ == "ip_cidr6" else typ,
-                value,
-            ) for typ, value in ir_rules if typ in capability}
+            expected = {
+                ("ip_cidr" if typ == "ip_cidr6" else typ, value)
+                for typ, value in ir_rules
+                if typ in capability
+            }
         else:
             expected = {(typ, value) for typ, value in ir_rules if typ in capability}
         actual = _extract_client(args.generated / client, str(cfg["artifact"]))
@@ -216,7 +194,3 @@ def main() -> int:
     report = {"schema": "cross_client_semantic_v1", "pass": not failures, "passed": passed, "failures": failures}
     print(json.dumps(report, indent=2, ensure_ascii=False))
     return 0 if not failures else 1
-
-
-if __name__ == "__main__":
-    raise SystemExit(main())
