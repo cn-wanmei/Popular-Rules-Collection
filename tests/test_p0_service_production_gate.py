@@ -59,9 +59,34 @@ def test_complete_evidence_requires_real_snapshot_file_and_hash():
                 }
             },
             "canonical": {"services": {"synthetic": {"status": "complete", "memberships": []}}},
-            "semantic": {"services": {"synthetic": {"status": "pass"}}},
-            "overlap": {"status": "pass"},
+            "semantic": {"services": {"synthetic": {"status": "pass", "snapshot": "config/does-not-exist.list", "probes": [{"kind": "positive_exact"}]}}},
+            "overlap": {"status": "pass", "scope": {"services": ["synthetic"]}},
         }
     }
     errors = gate.evidence_errors_for_service("synthetic", bundle)
     assert any("snapshot file is missing" in e for e in errors)
+
+
+def test_evidence_linkage_and_overlap_scope_are_required():
+    bundle = {
+        "1": {
+            "source": {
+                "services": {
+                    "synthetic": {
+                        "immutable_snapshot": {
+                            "status": "complete",
+                            "path": "config/p0_batch01_snapshots/2026-09-17/appstore.list",
+                            "sha256": "f24026d879b22174d76aeddd89c0636740155d35",
+                        }
+                    }
+                }
+            },
+            "canonical": {"services": {"synthetic": {"status": "complete", "snapshot": "wrong.list", "memberships": []}}},
+            "semantic": {"services": {"synthetic": {"status": "pass", "snapshot": "wrong.list", "probes": [{"kind": "positive_exact"}]}}},
+            "overlap": {"status": "pass", "scope": {"services": ["other"]}},
+        }
+    }
+    errors = gate.evidence_errors_for_service("synthetic", bundle)
+    assert any("canonical snapshot linkage mismatch" in e for e in errors)
+    assert any("semantic snapshot linkage mismatch" in e for e in errors)
+    assert any("overlap audit scope does not include service" in e for e in errors)
