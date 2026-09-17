@@ -1,101 +1,14 @@
 version: 1
-updated: '2026-08-28'
-audit_note: 'daily_coverage_final_audit_2026-08-28: BM/MCX re-probed; 16 materialize; CN AI remain NO_UPSTREAM'
+updated: '2026-09-17'
+audit_note: 'tencent_batch02_phase_a_2026-09-17: tencentcloud VERIFIED+materialized; qq/wecom/meeting blocked; qqmusic/qqmail PARTIAL only'
 services:
-  mistral:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  gcp:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  supabase:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  blizzard:
-    code: MAPS_TO
-    reason: maps_to_battlenet
-  stripe:
-    code: KEYWORD_ONLY
-    reason: keyword_only_empty_domain_set
   adblock-light:
     code: DEFERRED_PROFILE
     reason: hagezi_profile_deferred
   adblock-pro:
     code: DEFERRED_PROFILE
     reason: hagezi_profile_deferred
-  taobao:
-    code: COVERED_BY_AGGREGATE
-    reason: no_verified_upstream_dead_bm_path_covered_by_alibaba
-  qq:
-    code: COVERED_BY_AGGREGATE
-    reason: no_verified_upstream_dead_bm_path_covered_by_tencent
-  qqmusic:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  baidumap:
-    code: COVERED_BY_AGGREGATE
-    reason: no_verified_upstream_covered_by_baidu
-  baidupan:
-    code: COVERED_BY_AGGREGATE
-    reason: no_verified_upstream_covered_by_baidu
-  qwen:
-    code: NO_UPSTREAM
-    reason: no_verified_dedicated_upstream_aliyun_is_not_qwen
-  kimi:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  yuanbao:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  wenxiaoyan:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  quickpass:
-    code: COVERED_BY_AGGREGATE
-    reason: no_verified_upstream_covered_by_unionpay
-  npm:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  pypi:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  googledrive:
-    code: COVERED_BY_AGGREGATE
-    reason: no_dedicated_upstream_use_google_aggregate
-  googlemaps:
-    code: COVERED_BY_AGGREGATE
-    reason: no_dedicated_upstream_use_google_aggregate
-  temu:
-    code: COVERED_BY_AGGREGATE
-    reason: no_dedicated_temu_use_pinduoduo_aggregate
   aliexpress:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  etsy:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  asana:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  crunchyroll:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  lyft:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  expedia:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  midjourney:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  bosszhipin:
-    code: NO_UPSTREAM
-    reason: no_verified_upstream
-  jdfinance:
-    code: COVERED_BY_AGGREGATE
-    reason: no_verified_upstream_covered_by_jingdong
-  revolut:
     code: NO_UPSTREAM
     reason: no_verified_upstream
   amazonaws:
@@ -104,24 +17,120 @@ services:
   applications:
     code: NO_UPSTREAM
     reason: generic_bucket_no_dedicated_upstream
+  asana:
+    code: NO_UPSTREAM
+    reason: no_verified_upstream
+  baidumap:
+    code: COVERED_BY_AGGREGATE
+    reason: no_verified_upstream_covered_by_baidu
+  baidupan:
+    code: COVERED_BY_AGGREGATE
+    reason: no_verified_upstream_covered_by_baidu
+  blizzard:
+    code: MAPS_TO
+    reason: maps_to_battlenet
+  bosszhipin:
+    code: NO_UPSTREAM
+    reason: no_verified_upstream
+  crunchyroll:
+    code: NO_UPSTREAM
+    reason: no_verified_upstream
   dingtalk:
     code: COVERED_BY_AGGREGATE
     reason: covered_by_alibaba_aggregate
   discoveryplus:
     code: NO_UPSTREAM
     reason: no_verified_upstream
+  etsy:
+    code: NO_UPSTREAM
+    reason: no_verified_upstream
+  expedia:
+    code: NO_UPSTREAM
+    reason: no_verified_upstream
+  gcp:
+    code: NO_UPSTREAM
+    reason: no_verified_upstream
+  googledrive:
+    code: COVERED_BY_AGGREGATE
+    reason: no_dedicated_upstream_use_google_aggregate
+  googlemaps:
+    code: COVERED_BY_AGGREGATE
+    reason: no_dedicated_upstream_use_google_aggregate
+  jdfinance:
+    code: COVERED_BY_AGGREGATE
+    reason: no_verified_upstream_covered_by_jingdong
+  kimi:
+    code: NO_UPSTREAM
+    reason: no_verified_upstream
   lan:
     code: NO_UPSTREAM
     reason: local_network_no_public_upstream
+  lyft:
+    code: NO_UPSTREAM
+    reason: no_verified_upstream
+  midjourney:
+    code: NO_UPSTREAM
+    reason: no_verified_upstream
+  mistral:
+    code: NO_UPSTREAM
+    reason: no_verified_upstream
+  npm:
+    code: NO_UPSTREAM
+    reason: no_verified_upstream
   ntp:
     code: NO_UPSTREAM
     reason: protocol_service_no_domain_ruleset
   origin:
     code: MAPS_TO
     reason: maps_to_ea
+  pypi:
+    code: NO_UPSTREAM
+    reason: no_verified_upstream
+  qq:
+    code: COVERED_BY_AGGREGATE
+    reason: no_verified_upstream_dead_bm_path_covered_by_tencent
+  qqmail:
+    code: PARTIAL_UPSTREAM
+    reason: no_independent_ruleset_only_v2fly_tencent_mail_subset_and_thin_bm_aggregate
+  qqmusic:
+    code: PARTIAL_UPSTREAM
+    reason: no_independent_ruleset_only_v2fly_tencent_tme_subset_and_thin_bm_aggregate
+  quickpass:
+    code: COVERED_BY_AGGREGATE
+    reason: no_verified_upstream_covered_by_unionpay
+  qwen:
+    code: NO_UPSTREAM
+    reason: no_verified_dedicated_upstream_aliyun_is_not_qwen
+  revolut:
+    code: NO_UPSTREAM
+    reason: no_verified_upstream
   siri:
     code: COVERED_BY_AGGREGATE
     reason: covered_by_apple_aggregate
   steamcn:
     code: COVERED_BY_AGGREGATE
     reason: covered_by_steam_china_paths
+  stripe:
+    code: KEYWORD_ONLY
+    reason: keyword_only_empty_domain_set
+  supabase:
+    code: NO_UPSTREAM
+    reason: no_verified_upstream
+  taobao:
+    code: COVERED_BY_AGGREGATE
+    reason: no_verified_upstream_dead_bm_path_covered_by_alibaba
+  temu:
+    code: COVERED_BY_AGGREGATE
+    reason: no_dedicated_temu_use_pinduoduo_aggregate
+  tencentmeeting:
+    code: NO_UPSTREAM
+    reason: no_verified_independent_upstream_only_single_club_domain_in_aggregate
+  wecom:
+    code: NO_UPSTREAM
+    reason: no_verified_independent_upstream_path
+  wenxiaoyan:
+    code: NO_UPSTREAM
+    reason: no_verified_upstream
+  yuanbao:
+    code: NO_UPSTREAM
+    reason: no_verified_upstream
