@@ -210,25 +210,8 @@ def _asset_type(raw_type: str, value: str) -> str:
 
 
 def _iter_asset_records(path: Path) -> Iterator[tuple[Path, int, str, str, str]]:
-    """Yield parser provenance directly; never rescan parsed records against lines."""
-    text = path.read_text(encoding="utf-8", errors="replace")
-    # URLs are legacy-asset evidence even though they are not rule-parser records.
-    # We scan the same source text once for URL lines, then merge parser output by
-    # line number. Parser records themselves already carry exact provenance.
-    url_lines = {
-        line_no: line.strip().strip("'\"")
-        for line_no, line in enumerate(text.splitlines(), 1)
-        if URL_RE.match(line.strip().strip("'\""))
-    }
-    emitted_urls: set[int] = set()
-    for source, line_no, raw_type, value, fmt in iter_rule_records_with_line(path):
-        if line_no in url_lines and line_no not in emitted_urls:
-            yield source, line_no, "url", url_lines[line_no], "url"
-            emitted_urls.add(line_no)
-        yield source, line_no, raw_type, value, fmt
-    for line_no, value in url_lines.items():
-        if line_no not in emitted_urls:
-            yield path, line_no, "url", value, "url"
+    """Yield exact source provenance from the parser in one pass."""
+    yield from iter_rule_records_with_line(path)
 
 
 def _update_counts(summary: ServiceAssetSummary, asset_type: str) -> None:
