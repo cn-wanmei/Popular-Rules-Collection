@@ -1,0 +1,28 @@
+version: 1
+schema: dynamic_batch_priority_v1
+weights:
+  identity_ready: 5
+  independent_upstream: 5
+  source_count: 2
+  coverage_potential: 4
+  client_compatibility: 3
+  service_importance: 3
+  overlap_risk: -4
+rules:
+  materialized_services_are_not_production: true
+  partial_blocks_production: true
+  no_domain_guessing: true
+  no_permanent_batch_order: true
+candidate_groups:
+  - name: ByteDance
+    providers: [bytedance]
+    services: [doubao, feishu]
+  - name: Baidu-NetEase
+    providers: [baidu, netease]
+    services: [baidunetdisk, youdao]
+  - name: AI
+    providers: [deepseek, perplexity, xai, groq, huggingface, elevenlabs]
+    services: [deepseek, perplexity, grok, groq, huggingface, elevenlabs]
+  - name: Cloud-Dev
+    providers: [amazon, microsoft, google, atlassian, npm, pypi, netlify]
+    services: [aws, azure, googlecloud, bitbucket, npm, pypi, netlify]
