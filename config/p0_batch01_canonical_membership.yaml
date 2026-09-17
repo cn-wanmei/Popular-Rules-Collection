@@ -8,22 +8,22 @@ services:
     snapshot: config/p0_batch01_snapshots/2026-09-17/appstore.list
     status: complete
     memberships:
-      - {type: HOST, value: apps.apple.com, identity_key: "host|apps.apple.com", rule_id: 6e9b5b2e1b1f2f0b6b2a3f6b7f5f4a0b8c3f4d6a5f1e9d7c3b2a1f0e8d6c4b2a}
-      - {type: HOST, value: itunes.apple.com, identity_key: "host|itunes.apple.com", rule_id: 2f4c8a9e1d3b5f7a9c1e3d5b7f9a1c3e5d7b9f1a3c5e7d9b1f3a5c7e9d1b3f5}
+      - {type: HOST, value: apps.apple.com, identity_key: "host|apps.apple.com", rule_id: 1e98d9e8aa660f53d3c671acb5c8e3fa0555edf9686cb316ec07dd5248fbf9fe}
+      - {type: HOST, value: itunes.apple.com, identity_key: "host|itunes.apple.com", rule_id: b5c0786d3563e6fe8cbe905c2368f8896e7b75b1cdedcde4e0e6fea4569473a1}
   testflight:
     snapshot: config/p0_batch01_snapshots/2026-09-17/testflight.list
     status: complete
     memberships:
-      - {type: HOST, value: beta.apple.com, identity_key: "host|beta.apple.com", rule_id: 0b5e8c4d2a7f1e9c3b6d8a0f2e4c6b8d1a3f5e7c9b2d4a6f8e0c1b3d5f7a9e2c}
-      - {type: HOST, value: testflight.apple.com, identity_key: "host|testflight.apple.com", rule_id: 7c1e5a9b3d6f8a0c2e4b6d8f1a3c5e7b9d2f4a6c8e0b1d3f5a7c9e2b4d6f8a0}
-      - {type: HOST-KEYWORD, value: testflight, identity_key: "host-keyword|testflight", rule_id: 1a7c3e5f9b2d4a6c8e0f1b3d5a7c9e2f4b6d8a0c2e5f7b9d1c3a5e7f9b2d4a6}
+      - {type: HOST, value: beta.apple.com, identity_key: "host|beta.apple.com", rule_id: 4b5f86fb2156b09ce8a7ecd8d7bbd3e4fdb3fe84366110fe76163b655203c4e8}
+      - {type: HOST, value: testflight.apple.com, identity_key: "host|testflight.apple.com", rule_id: 509b9eaf9f80746c4ab5fedc3fff863c36f5e3df62e741af800922d8f3f70fd0}
+      - {type: HOST-KEYWORD, value: testflight, identity_key: "host-keyword|testflight", rule_id: d49bada8bdad1ebcd2539818aa03b4b785e1ceee12d8cc1817001c22fe5ae170}
   findmy:
     snapshot: config/p0_batch01_snapshots/2026-09-17/findmy.list
     status: complete
     memberships:
-      - {type: HOST, value: fmfmobile.icloud.com, identity_key: "host|fmfmobile.icloud.com", rule_id: 3b7d1f5a9c2e4b6d8f0a1c3e5b7d9f2a4c6e8b0d2f5a7c9e1b3d5f7a9c2e4b6d}
-      - {type: HOST, value: fmipmobile.icloud.com, identity_key: "host|fmipmobile.icloud.com", rule_id: 8e2c4a6f0b1d3f5a7c9e2b4d6f8a0c1e3b5d7f9a2c4e6b8d0f1a3c5e7b9d2f4}
-      - {type: HOST, value: statici.icloud.com, identity_key: "host|statici.icloud.com", rule_id: 5f9b2d4a6c8e0b1d3f5a7c9e2b4d6f8a0c1e3b5d7f9a2c4e6b8d0f1a3c5e7b9}
+      - {type: HOST, value: fmfmobile.icloud.com, identity_key: "host|fmfmobile.icloud.com", rule_id: bbee2289375b61228ae998c53b5e2bbc0bcfdf38b7af0080fb4bf3ed1596823c}
+      - {type: HOST, value: fmipmobile.icloud.com, identity_key: "host|fmipmobile.icloud.com", rule_id: 7bad046356cd41303dc4cc5eb51350128f0fbb2ae391a55880d43975610d3048}
+      - {type: HOST, value: statici.icloud.com, identity_key: "host|statici.icloud.com", rule_id: 4a275803a2fac4b56be8a1106f42b0d148c85e8282dcb48b8f4cb5864f1f23c5}
   appledev:
     status: blocked
     reason: service_specific_snapshot_not_yet_proven
