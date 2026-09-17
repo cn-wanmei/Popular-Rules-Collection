@@ -1,0 +1,5 @@
+version: 1
+schema: service_production_overrides_v1
+# Manual exceptions only. Desired state remains in config/service_model/.
+# Run evidence is generated under data/runs/<run_id>/reports/.
+overrides: {}
