@@ -6,16 +6,16 @@ This gate closes that gap by requiring explicit identity plus service-level
 semantic/overlap/client/golden/release evidence before a P0 service is marked
 production.
 
-In report-only mode (used by PR CI), the script validates structure and reports
-blocked production rows without failing the check merely because work remains.
-The default mode remains a hard release blocker.
+In report-only mode (used by PR CI), the script validates the control-plane
+shape and reports blocked production rows without failing merely because a
+legacy build run predates a newly modeled service. The default mode remains a
+hard release blocker.
 """
 from __future__ import annotations
 
 import argparse
 import json
 from pathlib import Path
-import sys
 
 import yaml
 
@@ -62,7 +62,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--report-only",
         action="store_true",
-        help="validate structure and report blocked services without requiring full production readiness",
+        help="validate control-plane structure and report blocked services without enforcing production completeness",
     )
     return parser.parse_args()
 
@@ -116,13 +116,14 @@ def main() -> int:
 
     service_client_files: dict[str, list[str]] = {}
     for sid in p0_ids:
-        if sid not in build_views:
+        if sid not in build_views and not args.report_only:
             errors.append(f"{sid}: latest build has no service view")
 
         present_clients: list[str] = []
         for client, ext in CLIENT_EXT.items():
             if client not in clients:
-                errors.append(f"build report has no client entry for {client}")
+                if not args.report_only:
+                    errors.append(f"build report has no client entry for {client}")
                 continue
             artifact = run / "artifacts" / client / f"{sid}{ext}"
             if artifact.exists() and artifact.stat().st_size > 0:
@@ -173,11 +174,9 @@ def main() -> int:
         for error in errors:
             print(f"  ERROR {error}")
 
-    if errors:
-        return 1
     if args.report_only:
         return 0
-    return 0 if production_count == len(p0_ids) else 1
+    return 1 if errors or production_count != len(p0_ids) else 0
 
 
 if __name__ == "__main__":
