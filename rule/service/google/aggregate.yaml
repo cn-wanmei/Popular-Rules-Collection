@@ -1,0 +1,9 @@
+id: google
+name: Google Aggregate
+type: service-aggregate
+status: active
+source_service: google
+include_children: true
+include_own_assets: true
+include_required_dependencies: true
+deduplication: canonical-set
