@@ -1,0 +1,31 @@
+id: google
+name: Google
+type: parent-service
+status: active
+categories:
+  - productivity
+  - cloud
+  - video
+children:
+  - google/gemini
+  - google/gmail
+  - google/google-drive
+  - google/google-docs
+  - google/google-sheets
+  - google/google-meet
+  - google/google-maps
+  - google/google-play
+  - google/google-photos
+  - google/google-calendar
+  - google/google-cloud
+  - google/firebase
+  - google/youtube
+  - google/youtube-music
+assets:
+  domains: []
+  domain_suffixes: []
+  domain_keywords: []
+  ip_cidrs: []
+  urls: []
+requires: []
+network_references: []
