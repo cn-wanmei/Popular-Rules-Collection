@@ -56,6 +56,18 @@ jobs:
           test -s "release-candidate/data/baseline/canonical.json"
           test "$(git rev-parse HEAD)" = "${{ github.event.workflow_run.head_sha }}"
 
+      - name: Prepare immutable run for Service Gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          RUN_ID=$(cat release-candidate/run-id.txt)
+          mkdir -p data/runs
+          rm -rf "data/runs/${RUN_ID}"
+          cp -a "release-candidate/data/runs/${RUN_ID}" data/runs/
+
+      - name: P0 Service Production Gate
+        run: python scripts/p0_service_production_gate.py
+
       - name: Publish atomically
         shell: bash
         run: |
@@ -66,7 +78,6 @@ jobs:
           cp -a release-candidate/generated generated
           cp -a "release-candidate/data/runs/${RUN_ID}" data/runs/
           cp -a release-candidate/data/baseline/canonical.json data/baseline/
-          # Phase 0.4: projection after successful promotion material is staged
           python scripts/derive_service_production_evidence.py --run-id "${RUN_ID}" || true
           python scripts/refresh_latest_release_from_promotion.py --run-id "${RUN_ID}"
           python scripts/status_consistency_gate.py
@@ -80,8 +91,6 @@ jobs:
             echo "No release changes to publish."
             exit 0
           fi
-          # Prefer keeping historical promotion snapshots as independent files
-          # (avoid rename/rename races between concurrent publish jobs).
           git commit -m "chore(publish): promote run ${RUN_ID}"
           for attempt in 1 2 3 4 5; do
             git fetch --prune origin main
@@ -93,9 +102,6 @@ jobs:
               sleep $((attempt * 3))
               continue
             fi
-            # Concurrent publish often conflicts on _promotion/latest.json and
-            # rename/rename of historical promotion snapshots. Recover by
-            # replaying this run's staged tree onto origin/main.
             echo "rebase conflict on attempt ${attempt}; replaying publish tree onto origin/main"
             git rebase --abort || true
             git reset --hard origin/main
