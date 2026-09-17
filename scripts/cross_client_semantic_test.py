@@ -9,6 +9,8 @@ from pathlib import Path
 from typing import Any
 import yaml
 
+from src.engine.adapters.type_normalize import normalize_rule_for_client
+
 TYPE_FIELDS = {
     "domain": "domain",
     "domain_suffix": "domain_suffix",
@@ -52,6 +54,16 @@ LINE_TYPES = {
 # Trailing policy/action appended by some native clients (Quantumult X: ", proxy").
 _POLICY_SUFFIX = re.compile(r",\s*[A-Za-z][A-Za-z0-9_-]*$")
 EXAMPLE_LIMIT = 25
+
+
+def _project_ir_rules(ir_rules: set[tuple[str, str]]) -> set[tuple[str, str]]:
+    """Apply the same client projection type hygiene used by adapters."""
+    out: set[tuple[str, str]] = set()
+    for typ, value in ir_rules:
+        norm = normalize_rule_for_client({"type": typ, "value": value})
+        out.add((_norm_type(str(norm["type"])), str(norm["value"]).strip()))
+    return out
+
 
 
 def _norm_type(value: str) -> str:
@@ -164,7 +176,7 @@ def main() -> int:
     parser.add_argument("--matrix", type=Path, default=Path("config/client_capability_matrix.yaml"))
     args = parser.parse_args()
 
-    ir_rules = _load_ir(args.ir)
+    ir_rules = _project_ir_rules(_load_ir(args.ir))
     matrix = yaml.safe_load(args.matrix.read_text(encoding="utf-8")) or {}
     clients = matrix.get("clients") or {}
     failures: list[dict[str, Any]] = []
