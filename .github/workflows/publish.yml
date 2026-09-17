@@ -56,6 +56,18 @@ jobs:
           test -s "release-candidate/data/baseline/canonical.json"
           test "$(git rev-parse HEAD)" = "${{ github.event.workflow_run.head_sha }}"
 
+      - name: Prepare immutable run for Service Gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          RUN_ID=$(cat release-candidate/run-id.txt)
+          mkdir -p data/runs
+          rm -rf "data/runs/${RUN_ID}"
+          cp -a "release-candidate/data/runs/${RUN_ID}" data/runs/
+
+      - name: P0 Service Production Gate
+        run: python scripts/p0_service_production_gate.py
+
       - name: Publish atomically
         shell: bash
         run: |
