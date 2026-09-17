@@ -28,7 +28,7 @@ def _build(tmp_path: Path):
 def test_p1_rollback_rejects_tampered_client_artifact(tmp_path: Path) -> None:
     data, generated, run_dir = _build(tmp_path)
     target = run_dir / "artifacts" / "mihomo"
-    files = list(target.glob("*.yaml"))
+    files = list(target.rglob("*.yaml"))
     assert files
     files[0].write_text(files[0].read_text(encoding="utf-8") + "# tampered\n", encoding="utf-8")
     with pytest.raises(RuntimeError, match="digest"):

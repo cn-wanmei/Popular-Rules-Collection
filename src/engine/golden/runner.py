@@ -9,7 +9,7 @@ from typing import Any
 def _client_artifacts_ok(client_dir: Path, ext: str) -> bool:
     if not client_dir.exists():
         return False
-    files = list(client_dir.glob(f"*{ext}"))
+    files = [p for p in client_dir.rglob(f"*{ext}") if p.is_file()]
     if not files:
         return False
     return all(p.stat().st_size > 0 for p in files)
@@ -33,10 +33,11 @@ def run_golden(run_dir: Path) -> dict[str, Any]:
 
     hier = run_dir / "hierarchy" / "graph.json"
     l3 = False
+    graph: dict[str, Any] = {}
     if hier.exists():
         try:
-            g = json.loads(hier.read_text(encoding="utf-8"))
-            l3 = len(g.get("services", {})) > 0
+            graph = json.loads(hier.read_text(encoding="utf-8"))
+            l3 = len(graph.get("services", {})) > 0
         except json.JSONDecodeError:
             l3 = False
     results["L3_hierarchy"] = {"pass": l3, "detail": "hierarchy services > 0"}
@@ -75,12 +76,31 @@ def run_golden(run_dir: Path) -> dict[str, Any]:
         l5 = l5 and ok
     results["L5_native_adapters"] = {"pass": l5, "detail": ",".join(details)}
 
-    l6 = False
-    mihomo_dir = art / "mihomo"
-    if mihomo_dir.exists():
-        service_files = [p for p in mihomo_dir.glob("*.yaml") if p.stem != "aggregate" and p.stat().st_size > 0]
-        l6 = len(service_files) > 0
-    results["L6_service_views"] = {"pass": l6, "detail": "per-service artifacts exist"}
+    # Service-view coverage is conditional: a run with no rules assigned to a
+    # declared service legitimately emits only provider/category aggregates.
+    # When the hierarchy contains service rules, at least one corresponding
+    # provider/service artifact must exist; category aggregates do not satisfy it.
+    declared_service_ids = {
+        str(service_id)
+        for service_id, node in (graph.get("services") or {}).items()
+        if isinstance(node, dict) and node.get("provider") and int(node.get("rule_count", 0) or 0) > 0
+    }
+    l6 = True
+    service_count = 0
+    if declared_service_ids:
+        mihomo_dir = art / "mihomo"
+        service_files = []
+        for service_id in sorted(declared_service_ids):
+            provider = str((graph["services"][service_id]).get("provider"))
+            path = mihomo_dir / provider / service_id / "rules.yaml"
+            if path.is_file() and path.stat().st_size > 0:
+                service_files.append(path)
+        service_count = len(service_files)
+        l6 = service_count > 0
+    results["L6_service_views"] = {
+        "pass": l6,
+        "detail": f"declared services with rules={len(declared_service_ids)}, emitted service artifacts={service_count}",
+    }
 
     l7 = all(
         (run_dir / rel).exists()

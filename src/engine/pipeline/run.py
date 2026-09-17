@@ -21,27 +21,20 @@ from src.engine.quarantine.engine import run_quarantine
 from src.engine.release.evidence import build_sbom, retention_plan
 from src.engine.release.state_machine import evaluate_release
 from src.engine.snapshot.engine import create_source_snapshot, load_snapshot_manifest
+from src.engine.validation.directory_contract import validate as validate_directory_contract
 from src.engine.validation.source_semantic import run_source_semantic_gate
 
 STAGES = [
-    "snapshot", "ingest", "source_gate", "quarantine", "canonical", "hierarchy", "ir",
+    "snapshot", "ingest", "source_gate", "quarantine", "canonical", "hierarchy", "ir", "directory",
     "adapters", "diff", "golden", "observability", "cas", "release",
 ]
 
 DAG_NODES = [
-    Node("snapshot"),
-    Node("ingest", ("snapshot",)),
-    Node("source_gate", ("ingest",)),
-    Node("quarantine", ("source_gate",)),
-    Node("canonical", ("quarantine",)),
-    Node("hierarchy", ("canonical",)),
-    Node("ir", ("hierarchy",)),
-    Node("adapters", ("ir",)),
-    Node("diff", ("canonical",)),
-    Node("golden", ("adapters",)),
-    Node("observability", ("diff", "golden")),
-    Node("cas", ("observability",)),
-    Node("release", ("cas",)),
+    Node("snapshot"), Node("ingest", ("snapshot",)), Node("source_gate", ("ingest",)),
+    Node("quarantine", ("source_gate",)), Node("canonical", ("quarantine",)),
+    Node("hierarchy", ("canonical",)), Node("ir", ("hierarchy",)), Node("directory", ("ir",)),
+    Node("adapters", ("directory",)), Node("diff", ("canonical",)), Node("golden", ("adapters",)),
+    Node("observability", ("diff", "golden")), Node("cas", ("observability",)), Node("release", ("cas",)),
 ]
 
 
@@ -51,8 +44,7 @@ def _new_run_id() -> str:
 
 def _resolve_repo_path(path: Path | str) -> Path:
     value = Path(path).expanduser()
-    if not value.is_absolute():
-        value = ROOT / value
+    if not value.is_absolute(): value = ROOT / value
     return value.resolve()
 
 
@@ -83,7 +75,7 @@ def run_pipeline(sources_root: Path, data_root: Path, *, run_id: str | None = No
     wanted_set = set(wanted)
     node_by_name = {n.name: n for n in DAG_NODES if n.name in wanted_set}
     nodes = [Node(stage, tuple(d for d in node_by_name[stage].deps if d in wanted_set)) for stage in STAGES if stage in wanted_set]
-    results: dict[str, Any] = {"schema": "engine_run_v6", "run_id": run_id, "started_at": datetime.now(timezone.utc).isoformat(),
+    results: dict[str, Any] = {"schema": "engine_run_v7", "run_id": run_id, "started_at": datetime.now(timezone.utc).isoformat(),
         "stages": {}, "skip_large": skip_large, "snapshot_id": snapshot_id,
         "collection_id": collection_manifest.get("collection_id") if collection_manifest else None,
         "collection_manifest": str((sources_root / "manifests" / "_collection.json").relative_to(ROOT)) if collection_manifest else None,
@@ -110,8 +102,7 @@ def run_pipeline(sources_root: Path, data_root: Path, *, run_id: str | None = No
 
     def handler_source_gate() -> dict[str, Any]:
         report = run_source_semantic_gate(context["ingest"], run_dir / "source_gate")
-        if not report["pass"]:
-            return {"status": "blocked", "failures": len(report["failures"]), "report": str((run_dir / "source_gate" / "report.json").relative_to(run_dir))}
+        if not report["pass"]: return {"status": "blocked", "failures": len(report["failures"]), "report": str((run_dir / "source_gate" / "report.json").relative_to(run_dir))}
         return {"status": "ok", "checked": report["checked"], "failures": 0}
 
     def handler_quarantine() -> dict[str, Any]:
@@ -131,9 +122,14 @@ def run_pipeline(sources_root: Path, data_root: Path, *, run_id: str | None = No
         manifest = build_ir(run_dir / "canonical", run_dir / "hierarchy", run_dir / "ir")
         return {"status": "ok", "stats": manifest.get("stats"), "schema": manifest.get("ir_schema", "semantic_ir_v2")}
 
+    def handler_directory() -> dict[str, Any]:
+        report = validate_directory_contract(ROOT)
+        (run_dir / "directory_gate.json").write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        return {"status": "ok" if report["pass"] else "blocked", "errors": report["errors"], "canonical_rule_files": report["canonical_rule_files"], "generated_rule_files": report["generated_rule_files"]}
+
     def handler_adapters() -> dict[str, Any]:
         report = build_all_clients(run_dir / "ir", run_dir / "artifacts")
-        return {"status": "ok", "clients": sorted(report.get("clients", {})), "parallel": report.get("parallel", False), "source_contract": report.get("source_contract")}
+        return {"status": "ok", "clients": sorted(report.get("clients", {})), "parallel": report.get("parallel", False), "source_contract": report.get("source_contract"), "directory_contract": report.get("directory_contract")}
 
     def handler_diff() -> dict[str, Any]:
         baseline = data_root / "baseline" / "canonical.json"; report = run_diff(run_dir / "canonical", baseline if baseline.exists() else None, run_dir / "reports" / "diff")
@@ -155,7 +151,7 @@ def run_pipeline(sources_root: Path, data_root: Path, *, run_id: str | None = No
         return {"status": "ok" if release["can_publish"] else "blocked", "state": release["state"], "can_publish": release["can_publish"], "quality_score": release.get("quality_score")}
 
     handlers = {"snapshot": handler_snapshot, "ingest": handler_ingest, "source_gate": handler_source_gate, "quarantine": handler_quarantine,
-        "canonical": handler_canonical, "hierarchy": handler_hierarchy, "ir": handler_ir, "adapters": handler_adapters,
+        "canonical": handler_canonical, "hierarchy": handler_hierarchy, "ir": handler_ir, "directory": handler_directory, "adapters": handler_adapters,
         "diff": handler_diff, "golden": handler_golden, "observability": handler_observability, "cas": handler_cas, "release": handler_release}
 
     def checkpoint(layer: list[str], all_results: dict[str, Any]) -> None:
