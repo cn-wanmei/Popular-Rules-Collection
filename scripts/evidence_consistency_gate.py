@@ -29,12 +29,14 @@ def load_yaml(path: Path) -> dict[str, Any]:
     return value
 
 
-def discover_run(root: Path) -> tuple[str, dict[str, Any]]:
-    promotion = load_json(root / "generated/_promotion/latest.json")
-    run_id = str(promotion.get("run_id", "")).strip()
-    if not run_id:
-        raise ValueError("generated/_promotion/latest.json has no run_id")
-    return run_id, promotion
+def canonical_baseline_present(path: Path) -> bool:
+    if not path.is_file() or path.stat().st_size == 0:
+        return False
+    try:
+        value = load_json(path)
+    except (OSError, ValueError, json.JSONDecodeError):
+        return False
+    return bool(value)
 
 
 def parse_timestamp(value: str | None) -> datetime | None:
@@ -53,10 +55,10 @@ def validate(root: Path = ROOT, run_id: str | None = None, require_latest: bool 
     if not selected_run:
         raise ValueError("no run_id available")
 
-    run_root = root / "data/runs" / str(selected_run)
     manifest_path = root / policy["release_evidence"]["ssot"].format(run_id=selected_run)
     baseline_path = root / policy["baseline"]["evidence_path"].format(run_id=selected_run)
     canonical_path = root / policy["baseline"]["canonical_path"]
+    canonical_present = canonical_baseline_present(canonical_path)
 
     errors: list[str] = []
     warnings: list[str] = []
@@ -95,9 +97,9 @@ def validate(root: Path = ROOT, run_id: str | None = None, require_latest: bool 
             errors.append(f"baseline evidence missing: {baseline_path}")
         decision = baseline.get("decision")
         declared_path = baseline.get("baseline_path")
-        if canonical_path.exists() and decision == "NO_BASELINE":
+        if canonical_present and decision == "NO_BASELINE":
             errors.append("baseline contradiction: canonical baseline exists but evidence decision is NO_BASELINE")
-        if canonical_path.exists() and not declared_path and policy["baseline"].get("require_declared_path_when_present"):
+        if canonical_present and not declared_path and policy["baseline"].get("require_declared_path_when_present"):
             errors.append("baseline contradiction: canonical baseline exists but baseline_path is null")
         if declared_path and not (root / declared_path).exists():
             errors.append(f"baseline evidence points to missing path: {declared_path}")
@@ -138,7 +140,7 @@ def validate(root: Path = ROOT, run_id: str | None = None, require_latest: bool 
         "checks": {
             "release_manifest_ssot": manifest_path.as_posix(),
             "baseline_evidence": baseline_path.as_posix(),
-            "canonical_baseline_present": canonical_path.exists(),
+            "canonical_baseline_present": canonical_present,
             "required_clients": sorted(required_clients),
             "manifest_clients": sorted(manifest_clients),
         },
