@@ -46,7 +46,7 @@ def _load_yaml(path: Path) -> dict[str, Any]:
     return data
 
 
-def _load_directory_contract() -> tuple[dict[str, str], dict[str, set[str]], set[str]]:
+def _load_directory_contract() -> tuple[dict[str, str], dict[str, set[str]], dict[str, str]]:
     if not _DIRECTORY_POLICY.exists():
         raise RuntimeError(f"Directory policy missing: {_DIRECTORY_POLICY}")
     policy = _load_yaml(_DIRECTORY_POLICY)
@@ -59,12 +59,12 @@ def _load_directory_contract() -> tuple[dict[str, str], dict[str, set[str]], set
     providers = hierarchy.get("providers") or {}
     service_provider: dict[str, str] = {}
     provider_services: dict[str, set[str]] = {}
-    provider_aggregates: set[str] = set()
+    provider_aggregates: dict[str, str] = {}
     for provider, node in providers.items():
         if not isinstance(node, dict):
             continue
         aggregate = str(node.get("aggregate") or provider)
-        provider_aggregates.add(aggregate)
+        provider_aggregates[provider] = aggregate
         service_ids = {str(sid) for sid in (node.get("services") or {})}
         provider_services[provider] = service_ids
         for sid in service_ids:
@@ -129,7 +129,7 @@ def _build_client(
     capabilities: dict[str, set[str]],
     service_provider: dict[str, str],
     provider_services: dict[str, set[str]],
-    provider_aggregates: set[str],
+    provider_aggregates: dict[str, str],
 ) -> tuple[str, dict[str, Any]]:
     cdir = artifacts_dir / client
     cdir.mkdir(parents=True, exist_ok=True)
@@ -143,7 +143,7 @@ def _build_client(
 
     # Provider aggregate = provider-direct membership + every declared service.
     for provider in sorted(provider_services):
-        aggregate = next((a for a in provider_aggregates if a == provider), provider)
+        aggregate = provider_aggregates[provider]
         provider_ids: set[str] = set(memberships.get(aggregate, []))
         for service in sorted(provider_services[provider]):
             provider_ids.update(memberships.get(service, []))
@@ -169,7 +169,7 @@ def _build_client(
 
     # Category aggregates are intentionally separate from provider/service trees.
     for entity in sorted(memberships):
-        if entity in provider_aggregates or entity in service_provider:
+        if entity in provider_aggregates.values() or entity in service_provider:
             continue
         if entity in {"china"} or entity.endswith("_aggregate"):
             continue
