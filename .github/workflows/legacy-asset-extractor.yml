@@ -62,7 +62,7 @@ jobs:
           PY
 
       - name: Upload Legacy Asset IR manifest
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d778a
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
         with:
           name: legacy-asset-ir-${{ github.sha }}
           path: data/legacy_asset_ir.yaml
