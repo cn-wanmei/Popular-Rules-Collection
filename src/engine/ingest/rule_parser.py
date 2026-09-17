@@ -20,6 +20,7 @@ from src.engine.ingest.formats.v2fly import (
 )
 
 PLAIN_DOMAIN = re.compile(r"^(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]*[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}\.?$")
+URL_RE = re.compile(r"^https?://[^\s]+$", re.I)
 DOMAIN_RE = re.compile(r"^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|DOMAIN-REGEX)[,\s]+(.+)$", re.I)
 HOST_RE = re.compile(r"^(HOST|HOST-KEYWORD)[,\s]+(.+)$", re.I)
 IP_RE = re.compile(r"^(?:IP-CIDR|IP-CIDR6|IP6-CIDR)[,\s]+([0-9a-fA-F:.\/]+)(?:,.*)?$", re.I)
@@ -121,12 +122,7 @@ def parse_line(line: str) -> list[tuple[str, str]]:
 
 
 def iter_rule_records_with_line(path: Path) -> Iterator[tuple[Path, int, str, str, str]]:
-    """Yield ``(source_path, line, type, value, format)`` in one parse pass.
-
-    For V2Fly includes, provenance points at the included file and its source
-    line. Other supported list formats are parsed directly from the same text
-    buffer, avoiding the old parse-then-rescan O(records * lines) algorithm.
-    """
+    """Yield ``(source_path, line, type, value, format)`` in one parse pass."""
     path = Path(path)
     text = path.read_text(encoding="utf-8", errors="replace")
     fmt = detect_format(path, text)
@@ -146,6 +142,9 @@ def iter_rule_records_with_line(path: Path) -> Iterator[tuple[Path, int, str, st
             return
 
     for line_no, raw_line in enumerate(text.splitlines(), 1):
+        stripped = raw_line.strip().strip("'\"")
+        if URL_RE.match(stripped):
+            yield path, line_no, "url", stripped, "url"
         for typ, value in parse_line(raw_line):
             yield path, line_no, typ, value, fmt
 
