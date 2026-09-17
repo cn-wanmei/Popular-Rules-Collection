@@ -54,4 +54,8 @@ def test_build_all_materializes_rule_classification_categories_and_excludes_inde
     category = artifacts / "mihomo" / "categories" / "china" / "all" / "rules.yaml"
     china = artifacts / "mihomo" / "china" / "all" / "rules.yaml"
     assert category.exists() and "example.cn" in category.read_text(encoding="utf-8")
-    assert not china.exists() or "weixin.qq.com" in china.read_text(encoding="utf-8")
+    assert china.exists()
+    china_text = china.read_text(encoding="utf-8")
+    assert "example.cn" in china_text
+    assert "weixin.qq.com" not in china_text
+    assert not (artifacts / "mihomo" / "china" / "tencent").exists()
