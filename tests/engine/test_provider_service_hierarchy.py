@@ -51,6 +51,8 @@ def test_explicit_provider_service_relationships(tmp_path: Path):
     assert graph["services"]["applemusic"]["parent"] == "apple"
     assert graph["aggregates"]["apple"]["rule_ids"] == ["r-apple", "r-music"]
     assert graph["services"]["aws"]["provider"] == "amazon"
+    assert graph["services"]["aws"]["parent"] == "amazon"
+    assert graph["aggregates"]["amazon"]["rule_ids"] == ["r-aws"]
     assert "aws" in graph["categories"]["developer"]["services"]
     assert graph["categories"]["developer"]["rule_ids"] == ["r-aws"]
     assert graph["services"]["legacy-service-name"]["provider"] is None
