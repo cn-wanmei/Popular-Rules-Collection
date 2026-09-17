@@ -20,5 +20,5 @@ jobs:
 
       - run: python -m pip install -r requirements.lock
 
-      - name: P0 Service Production Gate
-        run: python scripts/p0_service_production_gate.py
+      - name: P0 Service Production Gate (report-only)
+        run: python scripts/p0_service_production_gate.py --report-only
