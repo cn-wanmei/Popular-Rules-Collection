@@ -31,18 +31,20 @@ services:
   appledev:
     provider: apple
     primary_source:
-      source: blackmatrix7
-      url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Developer/Developer.list
-      verification: upstream_source_observed
-      note: "The published Developer service contains 70 rules, but current upstream content is a broader Developer aggregate rather than a service-specific AppleDev snapshot."
-      observed_at: "2026-09-17"
-    auxiliary_source:
       source: LM-Firefly
       url: https://raw.githubusercontent.com/LM-Firefly/Rules/master/Apple/AppleDev.list
-      verification: referenced_by_upstream_readme
+      verification: exact_service_specific_path_verified
+      observed: "AppleDev-specific rule file with 40 DOMAIN-SUFFIX entries"
+      observed_at: "2026-09-17"
+    auxiliary_source:
+      source: blackmatrix7
+      url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Developer/README.md
+      verification: upstream_readme_declares_AppleDev_as_Developer_subrule
     immutable_snapshot:
-      status: pending
-      reason: service_specific_snapshot_not_yet_proven
+      status: complete
+      path: config/p0_batch01_snapshots/2026-09-17/appledev.list
+      sha256: c463cf41d742ff56c5769215bf1fa2d11bd72207e0909714beb7aaf62704b343
+      rule_count: 40
   findmy:
     provider: apple
     primary_source:
@@ -56,5 +58,5 @@ services:
       path: config/p0_batch01_snapshots/2026-09-17/findmy.list
       sha256: 946383381adbd4e392545cc3bc28204afa0148d6
       rule_count: 3
-status: immutable_snapshot_partially_complete
-next_required: appledev_service_snapshot_then_canonical_membership_then_semantic_and_overlap_audits
+status: immutable_snapshot_complete
+next_required: canonical_membership_for_appledev_then_semantic_and_overlap_audits
