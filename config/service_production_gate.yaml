@@ -1,0 +1,18 @@
+version: 1
+schema: service_production_hard_gate_v1
+mode: block_build
+purpose: Prevent structurally inconsistent P0 Provider/Service identities from entering production.
+checks:
+  - p0_identity_unique
+  - p0_provider_declared
+  - hierarchy_provider_match
+  - primary_provider_match
+  - service_model_provider_unique
+  - aggregate_membership_provider_match
+  - activation_contract_complete
+inputs:
+  p0_materialization: config/p0_materialization.yaml
+  hierarchy: config/ruleset_hierarchy.yaml
+  primary: config/service_primary.yaml
+  service_model: config/service_model/services.yaml
+  memberships: config/service_model/memberships.yaml
