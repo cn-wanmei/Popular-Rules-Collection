@@ -29,12 +29,12 @@ services:
   tencentcloud: {id: tencentcloud, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   alibaba-core: {id: alibaba-core, provider: alibaba, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: alibaba}
   alibaba-shared: {id: alibaba-shared, provider: alibaba, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
-  taobao: {id: taobao, provider: alibaba, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
-  tmall: {id: tmall, provider: alibaba, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
-  alibabacloud: {id: alibabacloud, provider: alibaba, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
-  "1688": {id: "1688", provider: alibaba, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
-  dingding: {id: dingding, provider: alibaba, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
-  cainiao: {id: cainiao, provider: alibaba, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  taobao: {id: taobao, provider: alibaba, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
+  tmall: {id: tmall, provider: alibaba, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
+  alibabacloud: {id: alibabacloud, provider: alibaba, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
+  "1688": {id: "1688", provider: alibaba, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
+  dingding: {id: dingding, provider: alibaba, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
+  cainiao: {id: cainiao, provider: alibaba, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   baidu-core: {id: baidu-core, provider: baidu, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: baidu}
   baidu-shared: {id: baidu-shared, provider: baidu, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
   baidunetdisk: {id: baidunetdisk, provider: baidu, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}

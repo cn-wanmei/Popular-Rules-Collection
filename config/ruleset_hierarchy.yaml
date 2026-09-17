@@ -76,12 +76,12 @@ providers:
     aggregate: alibaba
     services:
       alipay: {display_name: Alipay, status: existing}
-      taobao: {display_name: Taobao, status: planned}
-      tmall: {display_name: Tmall, status: planned}
-      alibabacloud: {display_name: Alibaba Cloud, status: planned}
-      1688: {display_name: 1688, status: planned}
-      dingding: {display_name: DingTalk, status: planned}
-      cainiao: {display_name: Cainiao, status: planned}
+      taobao: {display_name: Taobao, status: existing}
+      tmall: {display_name: Tmall, status: existing}
+      alibabacloud: {display_name: Alibaba Cloud, status: existing}
+      1688: {display_name: 1688, status: existing}
+      dingding: {display_name: DingTalk, status: existing}
+      cainiao: {display_name: Cainiao, status: existing}
       fliggy: {display_name: Fliggy, status: planned}
       aliexpress: {display_name: AliExpress, status: planned}
       lazada: {display_name: Lazada, status: planned}
