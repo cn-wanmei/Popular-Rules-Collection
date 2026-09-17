@@ -9,7 +9,7 @@ from typing import Any
 def _client_artifacts_ok(client_dir: Path, ext: str) -> bool:
     if not client_dir.exists():
         return False
-    files = list(client_dir.glob(f"*{ext}"))
+    files = [p for p in client_dir.rglob(f"*{ext}") if p.is_file()]
     if not files:
         return False
     return all(p.stat().st_size > 0 for p in files)
@@ -78,7 +78,10 @@ def run_golden(run_dir: Path) -> dict[str, Any]:
     l6 = False
     mihomo_dir = art / "mihomo"
     if mihomo_dir.exists():
-        service_files = [p for p in mihomo_dir.glob("*.yaml") if p.stem != "aggregate" and p.stat().st_size > 0]
+        service_files = [
+            p for p in mihomo_dir.rglob("*.yaml")
+            if p.is_file() and p.stat().st_size > 0 and p.parent.name not in {"all", "categories"}
+        ]
         l6 = len(service_files) > 0
     results["L6_service_views"] = {"pass": l6, "detail": "per-service artifacts exist"}
 
