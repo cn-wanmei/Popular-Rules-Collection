@@ -1,5 +1,5 @@
 version: 2
-updated: "2026-08-31"
+updated: "2026-09-17"
 mode: shadow
 gates:
   validate_registry: BLOCK_BUILD
@@ -21,9 +21,10 @@ gates:
   icon_coverage: INFO
   identity_validate: WARN
   quality_validate: WARN
+  service_score: INFO
+  p0_service_production: BLOCK_RELEASE
   statistics: INFO
   generate_docs: INFO
   generate_links: INFO
-  service_score: INFO
   release_snapshot: INFO
   pack_release_artifacts: INFO
