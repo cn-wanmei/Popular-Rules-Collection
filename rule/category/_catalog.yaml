@@ -1,0 +1,41 @@
+version: 1
+kind: category-catalog
+categories:
+  - ai
+  - ai-coding
+  - ai-image
+  - ai-video
+  - ai-audio
+  - social
+  - communication
+  - streaming
+  - music
+  - video
+  - gaming
+  - game-platform
+  - developer
+  - cloud
+  - infrastructure
+  - ecommerce
+  - payment
+  - finance
+  - crypto
+  - productivity
+  - collaboration
+  - education
+  - travel
+  - transport
+  - news
+  - media
+  - forum
+  - security
+  - privacy
+  - vpn
+  - domestic
+  - international
+  - advertising
+  - tracking
+  - special
+
+# Service membership is derived from service.categories.
+# This catalog defines the controlled vocabulary only.
