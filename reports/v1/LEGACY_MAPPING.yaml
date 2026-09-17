@@ -1,6 +1,6 @@
 version: 1
 model: v1
-status: phase2-audit
+status: phase2.1-audit
 mappings:
   - legacy: rule/Google/Google
     service: google
@@ -25,8 +25,8 @@ mappings:
     service: google/google-fcm
     type: child-service
     parent: google
-    confidence: provisional
-    note: Legacy entity confirmed; V1 identity and child semantics require asset-level audit.
+    confidence: confirmed
+    note: Metadata explicitly declares service_type=service, parent=google, has_domain=false, has_ip=true, and 26 IPv4/CIDR assets.
   - legacy: rule/Google
     service: google
     type: aggregate-container
@@ -35,7 +35,7 @@ mappings:
 
 unmapped_policy:
   action: quarantine
-  reason: Do not infer Service identity solely from directory name.
+  reason: Do not infer Service identity solely from directory name, aggregate metadata, or generated output.
 
 migration_policy:
   preserve_legacy: true
