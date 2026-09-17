@@ -36,6 +36,16 @@ jobs:
             echo "No promotion pointer; skipping evidence consistency gate"
           fi
 
+      - name: Partial≠production invariant (hard)
+        run: python scripts/partial_production_invariant_gate.py
+
+      - name: Artifact classification (report)
+        run: |
+          python scripts/classify_service_artifacts.py || {
+            echo "::warning::artifact classification skipped or empty"
+            exit 0
+          }
+
       - name: Legacy reference gate
         run: python scripts/legacy_reference_gate.py
 
