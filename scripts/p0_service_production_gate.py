@@ -57,11 +57,7 @@ def parse_args() -> argparse.Namespace:
 
 
 def evidence_bundles() -> dict[str, dict[str, dict]]:
-    """Load every batch evidence bundle without making batch 01 special.
-
-    The production matrix is not itself evidence.  A service may only become
-    production when the evidence files independently prove each hard field.
-    """
+    """Load every batch evidence bundle without making batch 01 special."""
     bundles: dict[str, dict[str, dict]] = {}
     for path in sorted(CONFIG_DIR.glob("p0_batch*_source_evidence.yaml")):
         batch = load_yaml(path).get("batch")
@@ -114,6 +110,8 @@ def evidence_errors_for_service(sid: str, bundles: dict[str, dict[str, dict]]) -
         if canonical.get("status") != "complete":
             errors.append(f"{sid}: batch {batch} canonical membership is not complete")
         else:
+            if canonical.get("snapshot") != snapshot_path:
+                errors.append(f"{sid}: batch {batch} canonical snapshot linkage mismatch")
             for membership in canonical.get("memberships") or []:
                 typ = str(membership.get("type") or "").strip().lower()
                 value = str(membership.get("value") or "").strip().lower()
@@ -124,8 +122,17 @@ def evidence_errors_for_service(sid: str, bundles: dict[str, dict[str, dict]]) -
                 if str(membership.get("rule_id") or "").lower() != expected_id:
                     errors.append(f"{sid}: batch {batch} canonical rule_id mismatch for {expected_key}")
 
+        if semantic.get("snapshot") != snapshot_path:
+            errors.append(f"{sid}: batch {batch} semantic snapshot linkage mismatch")
         if semantic.get("status") != "pass":
             errors.append(f"{sid}: batch {batch} semantic audit is not pass")
+        probes = semantic.get("probes") or []
+        if semantic.get("status") == "pass" and not probes:
+            errors.append(f"{sid}: batch {batch} semantic audit has no probes")
+
+        scoped_services = set((overlap.get("scope") or {}).get("services") or [])
+        if sid not in scoped_services:
+            errors.append(f"{sid}: batch {batch} overlap audit scope does not include service")
         if overlap.get("status") != "pass":
             errors.append(f"{sid}: batch {batch} overlap audit is not pass")
     if not found:
@@ -238,10 +245,6 @@ def main() -> int:
         for error in structural_errors:
             print(f"  ERROR {error}")
 
-    # Report-only means blocked production is expected, but malformed control-plane
-    # state remains a real CI error. Evidence is only a structural error when the
-    # matrix claims the corresponding hard fields are pass; release mode still
-    # requires every hard field to be pass and therefore cannot bypass evidence.
     if args.report_only:
         return 1 if structural_errors else 0
     return 1 if structural_errors or production_count != len(p0_ids) else 0
