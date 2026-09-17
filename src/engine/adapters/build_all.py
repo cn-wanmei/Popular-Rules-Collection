@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import json
-from collections import Counter
+from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
@@ -97,9 +97,7 @@ def _rule_type_key(rule: dict[str, Any]) -> str:
     return raw.lower().replace("-", "_")
 
 
-def _project_rules(
-    client: str, rules: list[dict[str, Any]], capabilities: dict[str, set[str]]
-) -> tuple[list[dict[str, Any]], dict[str, int]]:
+def _project_rules(client: str, rules: list[dict[str, Any]], capabilities: dict[str, set[str]]) -> tuple[list[dict[str, Any]], dict[str, int]]:
     supported = capabilities[client]
     projected: list[dict[str, Any]] = []
     skipped: Counter[str] = Counter()
@@ -123,16 +121,9 @@ def _render_view(render, rules: list[dict[str, Any]], path: Path) -> None:
 
 
 def _build_client(
-    client: str,
-    meta: dict[str, str],
-    rules: list[dict[str, Any]],
-    memberships: dict[str, list[str]],
-    artifacts_dir: Path,
-    capabilities: dict[str, set[str]],
-    service_provider: dict[str, str],
-    provider_services: dict[str, set[str]],
-    provider_aggregates: dict[str, str],
-    china_exclusions: set[str],
+    client: str, meta: dict[str, str], rules: list[dict[str, Any]], memberships: dict[str, list[str]], artifacts_dir: Path,
+    capabilities: dict[str, set[str]], service_provider: dict[str, str], provider_services: dict[str, set[str]],
+    provider_aggregates: dict[str, str], china_exclusions: set[str],
 ) -> tuple[str, dict[str, Any]]:
     cdir = artifacts_dir / client
     cdir.mkdir(parents=True, exist_ok=True)
@@ -140,11 +131,9 @@ def _build_client(
     rules_by_id = {r["id"]: r for r in rules}
     projected_rules, skipped_types = _project_rules(client, rules, capabilities)
     projected_ids = {r["id"] for r in projected_rules}
-
     emitted_files = 0
     emitted_paths: list[str] = []
 
-    # Provider aggregate = provider-direct membership + every declared service.
     for provider in sorted(provider_services):
         aggregate = provider_aggregates[provider]
         provider_ids: set[str] = set(memberships.get(aggregate, []))
@@ -157,21 +146,14 @@ def _build_client(
             emitted_files += 1
             emitted_paths.append(path.relative_to(cdir).as_posix())
 
-    # Each independently addressable service has its own directory.
     for service, provider in sorted(service_provider.items()):
-        entity_rules = [
-            rules_by_id[rid]
-            for rid in memberships.get(service, [])
-            if rid in rules_by_id and rid in projected_ids
-        ]
+        entity_rules = [rules_by_id[rid] for rid in memberships.get(service, []) if rid in rules_by_id and rid in projected_ids]
         if entity_rules:
             path = cdir / provider / service / f"rules{meta['ext']}"
             _render_view(render, entity_rules, path)
             emitted_files += 1
             emitted_paths.append(path.relative_to(cdir).as_posix())
 
-    # China is one aggregate only. Independent domestic providers are removed
-    # from the aggregate by membership, never by filename matching.
     china_ids: set[str] = set(memberships.get("china", []))
     excluded_ids: set[str] = set()
     for provider in china_exclusions:
@@ -188,36 +170,32 @@ def _build_client(
         emitted_files += 1
         emitted_paths.append(path.relative_to(cdir).as_posix())
 
-    # Category aggregates are intentionally separate from provider/service trees.
+    # Categories are semantic cross-provider views. Prefer canonical rule
+    # classification; retain synthetic membership fallback for test fixtures.
+    category_rules: dict[str, dict[str, dict[str, Any]]] = defaultdict(dict)
+    for rule in projected_rules:
+        classification = rule.get("classification") or {}
+        category = str(classification.get("category") or "").strip()
+        if category:
+            category_rules[category][rule["id"]] = rule
     for entity in sorted(memberships):
-        if entity in provider_aggregates.values() or entity in service_provider or entity == "china":
+        if entity in provider_aggregates.values() or entity in service_provider or entity == "china" or entity.endswith("_aggregate"):
             continue
-        if entity.endswith("_aggregate"):
-            continue
-        entity_rules = [
-            rules_by_id[rid]
-            for rid in memberships[entity]
-            if rid in rules_by_id and rid in projected_ids
-        ]
-        if entity_rules:
-            path = cdir / "categories" / entity / "all" / f"rules{meta['ext']}"
-            _render_view(render, entity_rules, path)
-            emitted_files += 1
-            emitted_paths.append(path.relative_to(cdir).as_posix())
+        for rid in memberships[entity]:
+            rule = rules_by_id.get(rid)
+            if rule is not None and rid in projected_ids:
+                category_rules[entity].setdefault(rid, rule)
+    for category, by_id in sorted(category_rules.items()):
+        entity_rules = [by_id[rid] for rid in sorted(by_id)]
+        path = cdir / "categories" / category / "all" / f"rules{meta['ext']}"
+        _render_view(render, entity_rules, path)
+        emitted_files += 1
+        emitted_paths.append(path.relative_to(cdir).as_posix())
 
     files = sorted(p for p in cdir.rglob(f"*{meta['ext']}") if p.is_file())
     if not files or any(p.stat().st_size == 0 for p in files):
         raise RuntimeError(f"Adapter {client} produced missing or empty artifacts")
-    return client, {
-        "ext": meta["ext"],
-        "files": emitted_files,
-        "source": "semantic_ir_v2",
-        "directory_schema": "rule_directory_policy_v1",
-        "input_rules": len(rules),
-        "emitted_rules": len(projected_rules),
-        "skipped_unsupported_rule_types": skipped_types,
-        "paths": emitted_paths,
-    }
+    return client, {"ext": meta["ext"], "files": emitted_files, "source": "semantic_ir_v2", "directory_schema": "rule_directory_policy_v1", "input_rules": len(rules), "emitted_rules": len(projected_rules), "skipped_unsupported_rule_types": skipped_types, "paths": emitted_paths}
 
 
 def build_all_clients(ir_dir: Path, artifacts_dir: Path, *, views: list[str] | None = None) -> dict[str, Any]:
@@ -228,40 +206,12 @@ def build_all_clients(ir_dir: Path, artifacts_dir: Path, *, views: list[str] | N
     probe_report = validate_semantic_probes(rules, memberships)
     capabilities = _load_capabilities()
     service_provider, provider_services, provider_aggregates, china_exclusions = _load_directory_contract()
-    report: dict[str, Any] = {
-        "schema": "adapter_build_v4",
-        "clients": {},
-        "views": {"services": sorted(entities.get("services", [])), "aggregate": True, "china": True},
-        "source_contract": "semantic_ir_v2",
-        "directory_contract": "rule_directory_policy_v1",
-        "china_excluded_independent_providers": sorted(china_exclusions),
-        "semantic_intent": semantic_intent,
-        "semantic_probes": probe_report,
-        "v2_runtime_dependency": 0,
-        "parallel": True,
-    }
+    report: dict[str, Any] = {"schema": "adapter_build_v4", "clients": {}, "views": {"services": sorted(entities.get("services", [])), "aggregate": True, "china": True}, "source_contract": "semantic_ir_v2", "directory_contract": "rule_directory_policy_v1", "china_excluded_independent_providers": sorted(china_exclusions), "semantic_intent": semantic_intent, "semantic_probes": probe_report, "v2_runtime_dependency": 0, "parallel": True}
     with ThreadPoolExecutor(max_workers=min(8, max(1, len(CLIENTS))), thread_name_prefix="adapter") as pool:
-        futures = {
-            pool.submit(
-                _build_client,
-                client,
-                meta,
-                rules,
-                memberships,
-                artifacts_dir,
-                capabilities,
-                service_provider,
-                provider_services,
-                provider_aggregates,
-                china_exclusions,
-            ): client
-            for client, meta in CLIENTS.items()
-        }
+        futures = {pool.submit(_build_client, client, meta, rules, memberships, artifacts_dir, capabilities, service_provider, provider_services, provider_aggregates, china_exclusions): client for client, meta in CLIENTS.items()}
         for future in as_completed(futures):
             client, details = future.result()
             report["clients"][client] = details
     report["clients"] = {k: report["clients"][k] for k in sorted(report["clients"])}
-    (artifacts_dir / "build_report.json").write_text(
-        json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
-    )
+    (artifacts_dir / "build_report.json").write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return report
