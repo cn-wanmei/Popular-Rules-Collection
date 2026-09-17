@@ -26,7 +26,7 @@ def test_build_all_projects_rules_to_client_capabilities(tmp_path: Path) -> None
     assert surge["input_rules"] == 2
     assert surge["emitted_rules"] == 1
     assert surge["skipped_unsupported_rule_types"] == {"domain_regex": 1}
-    assert (artifacts / "surge" / "aggregate.list").read_text(encoding="utf-8") == "DOMAIN,example.com\n"
+    assert (artifacts / "surge" / "categories" / "test" / "all" / "rules.list").read_text(encoding="utf-8") == "DOMAIN,example.com\n"
 
     mihomo = report["clients"]["mihomo"]
     assert mihomo["emitted_rules"] == 2
