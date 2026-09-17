@@ -17,6 +17,7 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.lock
       - run: python -m pip install -r requirements.lock
+      # Keep the audit ahead of the report-only production gate.
       - name: Batch 01 semantic and overlap audit
         run: python scripts/p0_batch01_semantic_overlap_audit.py
       - name: P0 Service Production Gate (report-only)
