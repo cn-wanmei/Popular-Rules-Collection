@@ -1,6 +1,6 @@
 version: 1
 updated: '2026-09-17'
-audit_note: 'tencent_batch02_phase_b_2026-09-17: qqmusic/qqmail controlled split from v2fly tencent-tme/tencent; excluded TME sister brands'
+audit_note: 'alibaba_batch03_2026-09-17: Phase A dingding/cainiao/alibabacloud meta; Phase B taobao/tmall/1688 controlled split; Phase C no new blocks'
 services:
   adblock-light:
     code: DEFERRED_PROFILE
@@ -35,9 +35,6 @@ services:
   crunchyroll:
     code: NO_UPSTREAM
     reason: no_verified_upstream
-  dingtalk:
-    code: COVERED_BY_AGGREGATE
-    reason: covered_by_alibaba_aggregate
   discoveryplus:
     code: NO_UPSTREAM
     reason: no_verified_upstream
@@ -110,9 +107,6 @@ services:
   supabase:
     code: NO_UPSTREAM
     reason: no_verified_upstream
-  taobao:
-    code: COVERED_BY_AGGREGATE
-    reason: no_verified_upstream_dead_bm_path_covered_by_alibaba
   temu:
     code: COVERED_BY_AGGREGATE
     reason: no_dedicated_temu_use_pinduoduo_aggregate
