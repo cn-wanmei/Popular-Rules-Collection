@@ -1,0 +1,29 @@
+version: 1
+schema: evidence_policy_v1
+release_evidence:
+  ssot: data/runs/{run_id}/release/manifest.json
+  required_state: RC_READY
+baseline:
+  enabled: true
+  evidence_path: data/runs/{run_id}/metrics/baseline-evidence.json
+  canonical_path: data/baseline/canonical.json
+  require_declared_path_when_present: true
+  critical_metrics: [ingested, unique_rules, memberships]
+status_consistency:
+  required_fields: [run_id, snapshot_id, release_state, golden_digest, quality_digest, metrics_digest]
+  promotion_pointer: generated/_promotion/latest.json
+  manifest_path: data/runs/{run_id}/release/manifest.json
+  latest_release_path: reports/latest_release.json
+  latest_release_required_after_promotion: true
+evidence:
+  ttl_days: 7
+  partial_blocks_production: true
+  require_run_level_rc_ready: true
+  require_golden_pass: true
+  clients_from: config/client_capability_matrix.yaml
+artifact_classification:
+  legacy_markers:
+    - "normalize.py V2"
+    - "V2-semantic"
+    - "legacy"
+  classes: [runtime_production, runtime_candidate, legacy_only, orphan, aggregate, deprecated]
