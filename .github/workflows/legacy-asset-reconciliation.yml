@@ -1,0 +1,94 @@
+name: Legacy Asset Reconciliation
+
+on:
+  push:
+    branches: [main, master, phase2.1.2-legacy-asset-reconciliation]
+    paths:
+      - "rule/**"
+      - "src/engine/ingest/**"
+      - "tests/engine/test_legacy_asset_*.py"
+      - "requirements.lock"
+      - ".github/workflows/legacy-asset-reconciliation.yml"
+  pull_request:
+    branches: [main, master]
+    paths:
+      - "rule/**"
+      - "src/engine/ingest/**"
+      - "tests/engine/test_legacy_asset_*.py"
+      - "requirements.lock"
+      - ".github/workflows/legacy-asset-reconciliation.yml"
+  workflow_dispatch:
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12.14"
+          cache: pip
+      - name: Install locked dependencies
+        run: python -m pip install -r requirements.lock
+      - name: Unit tests
+        run: python -m pytest tests/engine/test_legacy_asset_reconciliation.py tests/engine/test_legacy_asset_extractor.py -q
+      - name: Full 184-service reconciliation
+        run: |
+          python -m src.engine.ingest.legacy_asset_reconciliation_cli \
+            --rule-root rule \
+            --jsonl data/legacy_asset_ir.jsonl \
+            --report reports/v1/LEGACY_ASSET_RECONCILIATION.yaml \
+            --candidates reports/v1/V1_PROMOTION_CANDIDATES.yaml
+      - name: Validate reconciliation completeness and promotion block
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import yaml
+          report = yaml.safe_load(Path("reports/v1/LEGACY_ASSET_RECONCILIATION.yaml").read_text(encoding="utf-8"))
+          candidates = yaml.safe_load(Path("reports/v1/V1_PROMOTION_CANDIDATES.yaml").read_text(encoding="utf-8"))
+          summary = report["summary"]
+          assert report["schema"] == "legacy_asset_reconciliation_v1"
+          assert summary["services"] == 184
+          assert summary["indexed_services"] == 184
+          assert summary["metadata_services"] == 184
+          assert summary["metadata_only_services"] == 0
+          assert summary["index_only_services"] == 0
+          assert summary["orphan_list_files"] == 0
+          assert summary["exact_domain_services"] == 184
+          assert summary["exact_ip_services"] == 184
+          assert summary["duplicate_domain_services"] == 0
+          assert summary["duplicate_ip_services"] == 0
+          assert summary["domain_count_delta_services"] == 0
+          assert summary["ip_count_delta_services"] == 0
+          assert len(report["services"]) == 184
+          assert len({item["id"] for item in report["services"]}) == 184
+          assert report["promotion"]["blocked"] is True
+          assert report["promotion"]["canonical_v1_write"] is False
+          assert candidates["schema"] == "v1_promotion_candidates_v1"
+          assert len(candidates["candidates"]) == 184
+          assert candidates["candidate_count"] == 170
+          assert candidates["promotion"]["blocked"] is True
+          assert candidates["promotion"]["canonical_v1_write"] is False
+          for item in report["services"]:
+              assert item["id"]
+              assert item["metadata_index_status"] == "both-present"
+              assert item["domain"]["status"] == "exact-match"
+              assert item["ip_cidr"]["status"] == "exact-match"
+              assert item["urls"] >= 0
+          print("184-service reconciliation completeness: PASS")
+          print("domain/index reconciliation: 184/184 exact")
+          print("ip/index reconciliation: 184/184 exact")
+          print("orphan list files: 0")
+          print("V1 promotion candidates: 170; canonical promotion: BLOCKED")
+          PY
+      - name: Upload reconciliation evidence
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        with:
+          name: legacy-asset-reconciliation
+          path: |
+            reports/v1/LEGACY_ASSET_RECONCILIATION.yaml
+            reports/v1/V1_PROMOTION_CANDIDATES.yaml
+            data/legacy_asset_ir.jsonl
