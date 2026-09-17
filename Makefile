@@ -22,7 +22,7 @@ legacy-asset-audit:
 	$(LEGACY_ASSET_EXTRACTOR) --rule-root rule --manifest data/legacy_asset_ir.yaml
 
 legacy-asset-reconcile:
-	$(LEGACY_ASSET_RECONCILER) --rule-root rule --jsonl data/legacy_asset_ir.jsonl --report reports/v1/LEGACY_ASSET_RECONCILIATION.yaml
+	$(LEGACY_ASSET_RECONCILER) --rule-root rule --jsonl data/legacy_asset_ir.jsonl --report reports/v1/LEGACY_ASSET_RECONCILIATION.yaml --candidates reports/v1/V1_PROMOTION_CANDIDATES.yaml
 
 validate:
 	$(PYTHON) -m pytest tests/engine/ -v
