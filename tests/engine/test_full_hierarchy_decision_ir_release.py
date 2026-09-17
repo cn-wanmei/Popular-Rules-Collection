@@ -11,12 +11,12 @@ from src.engine.pipeline.run import run_pipeline, STAGES
 def _sources(tmp: Path) -> Path:
     src = tmp / "sources" / "services"
     src.mkdir(parents=True)
-    (src / "google-gmail.yaml").write_text(
-        "id: google-gmail\ncategory: mail\nrules:\n"
+    (src / "gmail.yaml").write_text(
+        "id: gmail\ncategory: mail\nrules:\n"
         "  - type: DOMAIN-SUFFIX\n    value: gmail.com\n"
         "  - type: DOMAIN\n    value: mail.google.com\n", encoding="utf-8")
-    (src / "google-drive.yaml").write_text(
-        "id: google-drive\ncategory: storage\nrules:\n"
+    (src / "drive.yaml").write_text(
+        "id: drive\ncategory: storage\nrules:\n"
         "  - type: DOMAIN-SUFFIX\n    value: drive.google.com\n", encoding="utf-8")
     (src / "china.yaml").write_text(
         "id: china\ncategory: china\nrules:\n"
@@ -39,16 +39,19 @@ def test_full_pipeline_hierarchy_ir_golden_release():
         run_id = result["run_id"]
         run_dir = data / "runs" / run_id
 
-        # Hierarchy
+        # Hierarchy: service ownership is explicit and the provider aggregate is explicit.
         hier = json.loads((run_dir / "hierarchy" / "graph.json").read_text(encoding="utf-8"))
-        assert "google-gmail" in hier["services"]
-        assert "google" in hier["groups"]
+        assert "gmail" in hier["services"]
+        assert hier["services"]["gmail"]["provider"] == "google"
+        assert hier["services"]["gmail"]["parent"] == "google"
         assert "google" in hier["aggregates"]
+        assert "google" not in hier["groups"]
 
-        # IR contains full hierarchy + decisions
+        # IR contains the formal provider/service hierarchy + decisions.
         ir = json.loads((run_dir / "ir" / "ir.json").read_text(encoding="utf-8"))
         assert len(ir["entity"]["services"]) >= 3
-        assert len(ir["entity"]["groups"]) >= 1
+        assert len(ir["entity"]["groups"]) == 0
+        assert "google" in ir["entity"]["aggregates"]
         assert len(ir["decisions"]) >= 3
         assert ir["v2_runtime_dependency"] == 0
         # china rule must be DIRECT
