@@ -67,7 +67,7 @@ providers:
       qqmail: {display_name: QQ Mail, status: planned}
       wecom: {display_name: WeCom, status: planned}
       tencentmeeting: {display_name: Tencent Meeting, status: planned}
-      tencentcloud: {display_name: Tencent Cloud, status: planned}
+      tencentcloud: {display_name: Tencent Cloud, status: existing}
       tencentdocs: {display_name: Tencent Docs, status: planned}
       wegame: {display_name: WeGame, status: planned}
       qqbrowser: {display_name: QQ Browser, status: planned}

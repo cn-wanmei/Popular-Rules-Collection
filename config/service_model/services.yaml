@@ -26,7 +26,7 @@ services:
   qqmail: {id: qqmail, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   wecom: {id: wecom, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   tencentmeeting: {id: tencentmeeting, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
-  tencentcloud: {id: tencentcloud, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  tencentcloud: {id: tencentcloud, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   alibaba-core: {id: alibaba-core, provider: alibaba, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: alibaba}
   alibaba-shared: {id: alibaba-shared, provider: alibaba, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
   taobao: {id: taobao, provider: alibaba, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
