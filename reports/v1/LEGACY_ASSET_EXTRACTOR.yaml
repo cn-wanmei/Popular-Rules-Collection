@@ -1,0 +1,81 @@
+version: 1
+model: v1
+phase: phase2.1.1-legacy-asset-extractor
+status: implementation-complete-execution-pending
+
+purpose:
+  statement: Extract every legacy service asset as evidence without promoting it into canonical V1.
+  scope:
+    - domain
+    - domain_suffix
+    - domain_keyword
+    - domain_regex
+    - cidr
+    - url
+    - host
+    - process_rule
+    - source provenance
+    - generated file provenance
+    - parent relation
+    - children relation
+
+inputs:
+  inventory: rule/_index.yaml
+  legacy_tree: rule/**
+  metadata: rule/**/metadata.yaml
+  asset_files: rule/**/*.list
+
+output:
+  service_manifest:
+    path: data/legacy_asset_ir.yaml
+    schema: legacy_asset_ir_v1
+    purpose: service-level counts, metadata, index comparison and relation drift
+  full_asset_stream:
+    format: jsonl
+    schema: legacy_asset_ir_v1_jsonl
+    purpose: de-duplicated asset evidence with provenance
+    optional: true
+
+identity:
+  key: [service, asset.type, asset.value]
+  dedup_scope: per-service
+  rule: duplicate values across generated files remain one canonical evidence record with multiple provenance occurrences
+
+provenance:
+  required:
+    - generated_file
+    - path
+    - line
+    - detected_format
+    - sources
+  source_policy: metadata sources are migration evidence and must not be interpreted as dependency edges
+
+url_policy:
+  rule: only URL-shaped entries encountered inside legacy asset files may become asset.type=url
+  forbidden_inference:
+    - README links
+    - metadata documentation links
+    - generated CDN links
+    - domain counts
+
+aggregate_policy:
+  rule: aggregate assets remain independent evidence
+  forbidden_operation: reconstruct aggregate as union(children)
+  canonical_model: parent own assets + child closure + dependency closure - canonical dedup
+
+relation_audit:
+  metadata_children: compare metadata.children against services discovered in rule/_index.yaml
+  index_children: derive from indexed service parent fields
+  output: relation_drift
+  promotion_effect: drift blocks automatic canonical promotion
+
+execution:
+  command: make legacy-asset-audit
+  optional_full_stream: python -m src.engine.ingest.legacy_asset_cli --rule-root rule --manifest data/legacy_asset_ir.yaml --jsonl data/legacy_asset_ir.jsonl
+  note: this commit implements the extractor and test coverage; the full repository execution is intentionally left as the next verification step so no generated 835k+ record artifact is committed by hand
+
+gates:
+  canonical_promotion: blocked
+  full_184_semantic_audit: pending_until_execution
+  url_inventory: extractor-backed
+  aggregate_relation_audit: extractor-backed
