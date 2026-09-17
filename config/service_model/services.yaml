@@ -7,6 +7,7 @@ services:
   google-search: {id: google-search, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   googlecloud: {id: googlecloud, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   firebase: {id: firebase, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  youtubemusic: {id: youtubemusic, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   apple-core: {id: apple-core, provider: apple, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: apple}
   apple-shared: {id: apple-shared, provider: apple, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
   icloud: {id: icloud, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
@@ -54,3 +55,25 @@ services:
   huggingface: {id: huggingface, provider: huggingface, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   cursor: {id: cursor, provider: cursor, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   elevenlabs: {id: elevenlabs, provider: elevenlabs, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  atlassian-core: {id: atlassian-core, provider: atlassian, scope: provider_core, visibility: internal, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  atlassian-shared: {id: atlassian-shared, provider: atlassian, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  bitbucket: {id: bitbucket, provider: atlassian, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  trello: {id: trello, provider: atlassian, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  meta-core: {id: meta-core, provider: meta, scope: provider_core, visibility: internal, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  meta-shared: {id: meta-shared, provider: meta, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  messenger: {id: messenger, provider: meta, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  dewu: {id: dewu, provider: dewu, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  npm: {id: npm, provider: npm, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  pypi: {id: pypi, provider: pypi, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  netlify: {id: netlify, provider: netlify, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  canva: {id: canva, provider: canva, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  signal: {id: signal, provider: signal, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  snapchat: {id: snapchat, provider: snap, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  bluesky: {id: bluesky, provider: bluesky, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  tidal: {id: tidal, provider: tidal, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  walmart: {id: walmart, provider: walmart, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  uber: {id: uber, provider: uber, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  airbnb: {id: airbnb, provider: airbnb, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  booking: {id: booking, provider: booking, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  wise: {id: wise, provider: wise, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  roblox: {id: roblox, provider: roblox, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
