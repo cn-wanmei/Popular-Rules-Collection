@@ -10,20 +10,22 @@ identity_level:
   appstore_testflight:
     status: verified_disjoint
     shared_rule_ids: []
+  appstore_appledev:
+    status: verified_disjoint
+    shared_rule_ids: []
   appstore_findmy:
+    status: verified_disjoint
+    shared_rule_ids: []
+  testflight_appledev:
     status: verified_disjoint
     shared_rule_ids: []
   testflight_findmy:
     status: verified_disjoint
     shared_rule_ids: []
-blocked:
-  - pair: [appstore, appledev]
-    reason: appledev service-specific snapshot is not proven
-  - pair: [testflight, appledev]
-    reason: appledev service-specific snapshot is not proven
-  - pair: [findmy, appledev]
-    reason: appledev service-specific snapshot is not proven
+  appledev_findmy:
+    status: verified_disjoint
+    shared_rule_ids: []
 semantic_overlap:
   status: pending_execution
-  reason: Canonical identity disjointness does not prove runtime matcher disjointness, especially for HOST-KEYWORD rules.
-next_required: execute production matcher overlap probes, then global canonical overlap evaluation after all Batch 01 snapshots and memberships are materialized
+  reason: Canonical identity disjointness does not prove runtime matcher disjointness, especially for HOST-KEYWORD and DOMAIN-SUFFIX rules.
+next_required: execute production matcher semantic probes and cross-service overlap probes; only then promote overlap audit to pass
