@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 from src.engine.adapters.registry import CLIENTS
+from src.engine.adapters.type_normalize import normalize_rule_for_client
 
 CLIENT = "egern"
 EXT = CLIENTS[CLIENT]["ext"]
@@ -56,6 +57,7 @@ def render(rules: list[dict[str, Any]], out_path: Path) -> Path:
 
     grouped: dict[str, list[str]] = defaultdict(list)
     for rule in rules:
+        rule = normalize_rule_for_client(rule) if isinstance(rule, dict) else rule
         if not isinstance(rule, dict):
             raise TypeError(f"Egern adapter received non-object rule: {rule!r}")
         if "type" not in rule or "value" not in rule:

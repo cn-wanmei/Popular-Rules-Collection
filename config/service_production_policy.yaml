@@ -1,0 +1,97 @@
+version: 1
+schema: service_production_policy_v1
+purpose: >
+  Config-layer policy only. Answers what a service SHOULD be and how
+  production eligibility is DERIVED. Does NOT store run evidence.
+  Run evidence lives under data/runs/<run_id>/reports/ only.
+
+principles:
+  - release_evidence_ssot: data/runs/<run_id>/release/manifest.json
+  - no_second_service_ssot: evidence is derived per-run, never a parallel model
+  - release_eligible_is_derived: true
+  - production_is_derived: true
+  - partial_never_production: true
+  - database_services_is_not_v3_runtime_input: true
+
+lifecycle:
+  allowed:
+    - candidate
+    - verified_upstream
+    - materialized
+    - production_evidence_complete
+    - production
+  forbidden_transitions:
+    - from: materialized
+      when:
+        coverage: partial
+      to: production
+      invariant: coverage_partial_forbids_production
+
+coverage:
+  partial:
+    production: forbidden
+    release_eligible: false
+  full:
+    production: allowed_if_derived_pass
+    release_eligible: derived
+
+derived_release_eligible:
+  require_all:
+    - identity_pass
+    - upstream_pass
+    - materialization_valid
+    - required_client_projection_pass
+    - semantic_probe_pass
+    - required_evidence_present
+    - no_blocker
+    - coverage_policy_pass
+  coverage_policy_pass:
+    forbid_when_coverage: [partial]
+
+clients:
+  formal:
+    - mihomo
+    - singbox
+    - surge
+    - shadowrocket
+    - quantumultx
+    - egern
+    - loon
+
+evidence_scope:
+  include:
+    - p0_services
+    - service_model_production_intent
+    - artifact_classification_runtime_relevant
+  exclude:
+    - database_services_legacy_only
+    - orphan_artifacts
+    - aggregate_only_without_service_model
+
+artifact_classification:
+  statuses:
+    - runtime_production
+    - runtime_candidate
+    - legacy_only
+    - orphan
+    - aggregate
+    - deprecated
+  rules:
+    legacy_only: cannot_force_service_model_materialized
+    runtime_candidate: requires_service_model
+    runtime_production: requires_complete_production_evidence
+
+run_evidence:
+  path_template: data/runs/<run_id>/reports/service_production_evidence.json
+  release_ssot: data/runs/<run_id>/release/manifest.json
+  promotion_pointer: generated/_promotion/latest.json
+  top_level_status:
+    - reports/latest_release.json
+    - PUBLISH_STATUS.md
+  refresh_latest_release_on: promotion_success
+
+baseline:
+  path: data/baseline/latest.json
+  missing_decision: NO_BASELINE
+  missing_is_neutral_for_release_gate: true
+  seed_source_run: 20260917T054015320743Z-run

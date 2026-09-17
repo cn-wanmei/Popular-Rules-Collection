@@ -11,6 +11,7 @@ from typing import Any
 import yaml
 
 from src.engine.adapters.registry import CLIENTS
+from src.engine.adapters.type_normalize import normalize_rule_for_client
 
 CLIENT = "quantumultx"
 EXT = CLIENTS[CLIENT]["ext"]
@@ -53,7 +54,7 @@ def render(rules: list[dict[str, Any]], out_path: Path) -> Path:
         raise ValueError(f"Quantumult X adapter registry format must be list, got {FMT!r}")
     policy = _policy()
     lines: list[str] = []
-    for rule in rules:
+    for rule in (normalize_rule_for_client(r) for r in rules):
         if not isinstance(rule, dict) or "type" not in rule or "value" not in rule:
             raise ValueError(f"Quantumult X adapter received incomplete rule: {rule!r}")
         value = str(rule["value"]).strip()

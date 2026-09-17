@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Any
 
 from src.engine.adapters.registry import CLIENTS
+from src.engine.adapters.type_normalize import normalize_rule_for_client
 
 CLIENT = "surge"
 EXT = CLIENTS[CLIENT]["ext"]
@@ -19,7 +20,7 @@ def render(rules: list[dict[str, Any]], out_path: Path) -> Path:
         raise ValueError(f"Surge adapter registry format must be list, got {FMT!r}")
 
     lines: list[str] = []
-    for rule in rules:
+    for rule in (normalize_rule_for_client(r) for r in rules):
         if not isinstance(rule, dict) or "type" not in rule or "value" not in rule:
             raise ValueError(f"Surge adapter received incomplete rule: {rule!r}")
         rule_type = str(rule["type"]).strip().upper().replace("_", "-")

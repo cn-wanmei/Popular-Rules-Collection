@@ -10,6 +10,7 @@ from typing import Any
 import yaml
 
 from src.engine.adapters.registry import CLIENTS, get_adapter
+from src.engine.adapters.type_normalize import normalize_rule_for_client
 from src.engine.semantic_intent import validate_semantic_probes
 
 
@@ -64,6 +65,7 @@ def _project_rules(
     projected: list[dict[str, Any]] = []
     skipped: Counter[str] = Counter()
     for rule in rules:
+        rule = normalize_rule_for_client(rule)
         key = _rule_type_key(rule)
         if key in supported:
             projected.append(rule)

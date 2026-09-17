@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 from src.engine.adapters.registry import CLIENTS
+from src.engine.adapters.type_normalize import normalize_rule_for_client
 
 CLIENT = "singbox"
 EXT = CLIENTS[CLIENT]["ext"]
@@ -42,7 +43,7 @@ def render(rules: list[dict[str, Any]], out_path: Path) -> Path:
         raise ValueError(f"singbox adapter registry format must be json, got {FMT!r}")
 
     grouped: dict[str, list[str]] = defaultdict(list)
-    for rule in rules:
+    for rule in (normalize_rule_for_client(r) for r in rules):
         if not isinstance(rule, dict):
             raise TypeError(f"sing-box adapter received non-object rule: {rule!r}")
         if "type" not in rule or "value" not in rule:
