@@ -147,7 +147,7 @@ jobs:
       - name: Semantic Test
         run: |
           RUN_ID=$(cat engine-run-id.txt)
-          python scripts/cross_client_semantic_test.py \
+          PYTHONPATH=. python scripts/cross_client_semantic_test.py \
             --ir "data/runs/${RUN_ID}/ir/ir.json" \
             --generated "data/runs/${RUN_ID}/artifacts"
 
