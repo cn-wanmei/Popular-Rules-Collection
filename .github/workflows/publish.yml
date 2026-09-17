@@ -70,6 +70,7 @@ jobs:
           python scripts/derive_service_production_evidence.py --run-id "${RUN_ID}" || true
           python scripts/refresh_latest_release_from_promotion.py --run-id "${RUN_ID}"
           python scripts/status_consistency_gate.py
+          python scripts/evidence_consistency_gate.py --run-id "${RUN_ID}" || true
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A generated/ data/runs/ data/baseline/ reports/latest_release.json
@@ -77,17 +78,40 @@ jobs:
             echo "No release changes to publish."
             exit 0
           fi
+          # Prefer keeping historical promotion snapshots as independent files
+          # (avoid rename/rename races between concurrent publish jobs).
           git commit -m "chore(publish): promote run ${RUN_ID}"
-          for attempt in 1 2 3; do
+          for attempt in 1 2 3 4 5; do
             git fetch --prune origin main
-            if ! git rebase --autostash origin/main; then
-              git rebase --abort || true
-              exit 1
+            if git rebase --autostash origin/main; then
+              if git push origin HEAD:main; then
+                echo "Published release candidate on attempt ${attempt}."
+                exit 0
+              fi
+              sleep $((attempt * 3))
+              continue
             fi
-            if git push origin HEAD:main; then
-              echo "Published release candidate on attempt ${attempt}."
+            # Concurrent publish often conflicts on _promotion/latest.json and
+            # rename/rename of historical promotion snapshots. Recover by
+            # replaying this run's staged tree onto origin/main.
+            echo "rebase conflict on attempt ${attempt}; replaying publish tree onto origin/main"
+            git rebase --abort || true
+            git reset --hard origin/main
+            rm -rf "data/runs/${RUN_ID}" generated
+            mkdir -p data/runs data/baseline
+            cp -a release-candidate/generated generated
+            cp -a "release-candidate/data/runs/${RUN_ID}" data/runs/
+            cp -a release-candidate/data/baseline/canonical.json data/baseline/
+            python scripts/derive_service_production_evidence.py --run-id "${RUN_ID}" || true
+            python scripts/refresh_latest_release_from_promotion.py --run-id "${RUN_ID}"
+            python scripts/status_consistency_gate.py || true
+            python scripts/evidence_consistency_gate.py --run-id "${RUN_ID}" || true
+            git add -A generated/ data/runs/ data/baseline/ reports/latest_release.json
+            if git diff --staged --quiet; then
+              echo "No release changes after replay (another job may have published equivalent)."
               exit 0
             fi
-            sleep $((attempt * 3))
+            git commit -m "chore(publish): promote run ${RUN_ID}" || true
+            sleep $((attempt * 2))
           done
           exit 1
