@@ -1,0 +1,73 @@
+version: 1
+kind: service-schema
+
+required:
+  - id
+  - name
+  - type
+  - status
+  - categories
+  - assets
+  - requires
+  - network_references
+
+fields:
+  id:
+    type: string
+    pattern: '^[a-z0-9][a-z0-9-]*(/[a-z0-9][a-z0-9-]*)?$'
+  name:
+    type: string
+  type:
+    enum: [service, parent-service, child-service]
+  status:
+    enum: [active, experimental, deprecated]
+  parent:
+    type: string
+    required_when:
+      type: child-service
+  categories:
+    type: list
+    items: string
+  children:
+    type: list
+    items: string
+    required_when:
+      type: parent-service
+  assets:
+    type: object
+    fields:
+      domains:
+        type: list
+        items: string
+      domain_suffixes:
+        type: list
+        items: string
+      domain_keywords:
+        type: list
+        items: string
+      ip_cidrs:
+        type: list
+        items: string
+      urls:
+        type: list
+        items: string
+  requires:
+    type: list
+    items: string
+  network_references:
+    type: list
+    items:
+      type: object
+      required: [id, include]
+      fields:
+        id:
+          type: string
+        include:
+          type: boolean
+
+rules:
+  - id must equal the canonical path identity
+  - child-service must have a parent
+  - parent-service must not point to itself as a child
+  - optional_dependencies is forbidden in V1
+  - strategy/policy fields are forbidden in canonical service data
