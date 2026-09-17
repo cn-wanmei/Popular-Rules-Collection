@@ -1,6 +1,6 @@
 version: 1
 updated: '2026-09-17'
-audit_note: 'tencent_batch02_phase_a_2026-09-17: tencentcloud VERIFIED+materialized; qq/wecom/meeting blocked; qqmusic/qqmail PARTIAL only'
+audit_note: 'tencent_batch02_phase_b_2026-09-17: qqmusic/qqmail controlled split from v2fly tencent-tme/tencent; excluded TME sister brands'
 services:
   adblock-light:
     code: DEFERRED_PROFILE
@@ -89,12 +89,6 @@ services:
   qq:
     code: COVERED_BY_AGGREGATE
     reason: no_verified_upstream_dead_bm_path_covered_by_tencent
-  qqmail:
-    code: PARTIAL_UPSTREAM
-    reason: no_independent_ruleset_only_v2fly_tencent_mail_subset_and_thin_bm_aggregate
-  qqmusic:
-    code: PARTIAL_UPSTREAM
-    reason: no_independent_ruleset_only_v2fly_tencent_tme_subset_and_thin_bm_aggregate
   quickpass:
     code: COVERED_BY_AGGREGATE
     reason: no_verified_upstream_covered_by_unionpay
