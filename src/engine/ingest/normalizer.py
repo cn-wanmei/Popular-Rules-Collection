@@ -3,50 +3,39 @@ from __future__ import annotations
 
 from typing import Any
 
-# IR / adapter use both underscore and hyphen forms.
-_SUFFIX_TYPES = {"domain_suffix", "domain-suffix"}
-_KEYWORD_TYPES = {"domain_keyword", "domain-keyword"}
-_DOMAIN_EXACT = {"domain"}
-
-
-def _looks_like_fqdn(value: str) -> bool:
-    """True when value has a dot and is not a pure glob keyword."""
-    if "." not in value:
-        return False
-    if value.startswith("*"):
-        return False
-    return True
-
 
 def normalize_domain_rule_type(rule_type: str, value: str) -> tuple[str, str]:
     """Enforce suffix vs keyword semantics before IR / adapters.
 
-    - Bare labels (no '.') MUST NOT be domain_suffix → become domain_keyword.
-    - FQDN-looking values MUST NOT stay as domain_keyword → become domain_suffix.
+    - Bare labels (no '.') MUST NOT be domain_suffix unless they look like a
+      public suffix / TLD (e.g. ``cn``, ``com``) — those stay domain_suffix.
+    - Brand-like bare labels (alibaba, google, …) become domain_keyword.
+    - domain_keyword values with dots are left as keyword (CDN / partial
+      patterns such as ``dualstack.apiproxy-`` must not become suffix).
     """
     t = rule_type.strip().lower().replace("_", "-")
     v = value.strip()
-    if t in {"domain-suffix", "domain_suffix"} or t == "domain-suffix":
+    if t in {"domain-suffix", "domain_suffix"}:
         t_norm = "domain_suffix"
-    elif t in {"domain-keyword", "domain_keyword"} or t == "domain-keyword":
+    elif t in {"domain-keyword", "domain_keyword"}:
         t_norm = "domain_keyword"
     elif t == "domain":
         t_norm = "domain"
     else:
-        # preserve non-domain types as lowercase underscore-ish from caller
         return rule_type.strip().lower(), v
 
     if t_norm == "domain_suffix":
         v = v.rstrip(".")
         if "." not in v:
+            # Keep short alphabetic public-suffix style labels as suffix.
+            if len(v) <= 3 and v.isalpha():
+                return "domain_suffix", v
             return "domain_keyword", v
         return "domain_suffix", v
 
     if t_norm == "domain_keyword":
-        v = v.rstrip(".")
-        if _looks_like_fqdn(v):
-            return "domain_suffix", v
-        return "domain_keyword", v
+        # Do not promote keyword→suffix; partial/CDN keywords often contain dots.
+        return "domain_keyword", v.rstrip(".")
 
     if t_norm == "domain":
         return "domain", v.rstrip(".")
