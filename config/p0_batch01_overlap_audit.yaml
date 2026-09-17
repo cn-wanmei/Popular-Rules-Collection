@@ -1,0 +1,28 @@
+version: 1
+schema: p0_service_overlap_audit_v1
+batch: 01
+purpose: Prevent unsupported claims about cross-service overlap while recording verified Batch 01 identity-level separation.
+scope:
+  services: [appstore, testflight, appledev, findmy]
+  comparison_basis: canonical_rule_identity
+status: partial
+verified:
+  appstore_testflight:
+    status: pass
+    shared_rule_ids: []
+  appstore_findmy:
+    status: pass
+    shared_rule_ids: []
+  testflight_findmy:
+    status: pass
+    shared_rule_ids: []
+blocked:
+  - pair: [appstore, appledev]
+    reason: appledev service-specific snapshot is not proven
+  - pair: [testflight, appledev]
+    reason: appledev service-specific snapshot is not proven
+  - pair: [findmy, appledev]
+    reason: appledev service-specific snapshot is not proven
+  - pair: [appstore, testflight]
+    reason: identity-level overlap is absent, but semantic cross-match requires client matcher evaluation
+next_required: global canonical overlap evaluation after all Batch 01 snapshots and canonical memberships are materialized
