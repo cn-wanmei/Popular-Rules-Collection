@@ -1,0 +1,35 @@
+version: 1
+schema: p0_service_semantic_audit_v1
+batch: 01
+purpose: Service-level semantic probes, including false-positive probes, against immutable Batch 01 snapshots.
+services:
+  appstore:
+    snapshot: config/p0_batch01_snapshots/2026-09-17/appstore.list
+    status: pass
+    probes:
+      - {kind: positive_exact, input: apps.apple.com, expected: match}
+      - {kind: positive_exact, input: itunes.apple.com, expected: match}
+      - {kind: false_positive, input: apps.apple.com.evil.example, expected: no_match}
+      - {kind: false_positive, input: itunes.apple.com.evil.example, expected: no_match}
+  testflight:
+    snapshot: config/p0_batch01_snapshots/2026-09-17/testflight.list
+    status: blocked
+    reason: HOST-KEYWORD testflight requires explicit broad-match acceptance before production; false-positive behavior is intentionally wider than exact Apple TestFlight hosts.
+    probes:
+      - {kind: positive_exact, input: beta.apple.com, expected: match}
+      - {kind: positive_exact, input: testflight.apple.com, expected: match}
+      - {kind: positive_keyword, input: api.testflight.apple.com, expected: match}
+      - {kind: false_positive_boundary, input: testflight.example.com, expected: match, interpretation: source_semantics_broad_match_requires_review}
+      - {kind: false_positive_boundary, input: not-testflight.example.com, expected: match, interpretation: source_semantics_broad_match_requires_review}
+  findmy:
+    snapshot: config/p0_batch01_snapshots/2026-09-17/findmy.list
+    status: pass
+    probes:
+      - {kind: positive_exact, input: fmfmobile.icloud.com, expected: match}
+      - {kind: positive_exact, input: fmipmobile.icloud.com, expected: match}
+      - {kind: positive_exact, input: statici.icloud.com, expected: match}
+      - {kind: false_positive, input: fmfmobile.icloud.com.evil.example, expected: no_match}
+      - {kind: false_positive, input: fmipmobile.icloud.com.evil.example, expected: no_match}
+      - {kind: false_positive, input: statici.icloud.com.evil.example, expected: no_match}
+overall_status: partial
+next_required: resolve_testflight_keyword_scope_then_cross_service_overlap_audit
