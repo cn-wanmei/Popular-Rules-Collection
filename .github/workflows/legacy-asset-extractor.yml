@@ -82,6 +82,20 @@ jobs:
           ]
           assert not errors, errors[:20]
 
+          expected_files = {
+              str(path.as_posix())
+              for category in Path("rule").iterdir()
+              if category.is_dir()
+              for path in category.iterdir()
+              if path.is_file() and path.name.lower().endswith(".list")
+          }
+          profiled_files = {item["path"] for item in report["profile"].get("files", [])}
+          assert profiled_files == expected_files, {
+              "missing_profile": sorted(expected_files - profiled_files)[:20],
+              "unexpected_profile": sorted(profiled_files - expected_files)[:20],
+          }
+          assert all(item["records"] >= 0 for item in report["profile"]["files"])
+
           jsonl_path = Path("data/legacy_asset_ir.jsonl")
           assert jsonl_path.exists(), "missing full asset JSONL"
           identities = set()
@@ -125,6 +139,7 @@ jobs:
 
           print(summary)
           print("relation_drift=", len(report["relation_drift"]))
+          print("profiled_files=", len(profiled_files))
           print("jsonl_records=", jsonl_records)
           print("profile_seconds=", report["profile"]["totals"].get("total_seconds"))
           PY
