@@ -1,0 +1,46 @@
+version: 1
+schema: p0_service_source_evidence_v1
+batch: 01
+services:
+  appstore:
+    provider: apple
+    primary_source:
+      source: blackmatrix7
+      url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AppStore/AppStore.list
+      verification: exact_upstream_path_verified
+      observed: "# NAME: AppStore; HOST apps.apple.com; HOST itunes.apple.com"
+      observed_at: "2026-09-17"
+    immutable_snapshot: pending
+  testflight:
+    provider: apple
+    primary_source:
+      source: blackmatrix7
+      url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/TestFlight/TestFlight.list
+      verification: exact_upstream_path_verified
+      observed: "# NAME: TestFlight; beta.apple.com; testflight.apple.com; HOST-KEYWORD testflight"
+      observed_at: "2026-09-17"
+    immutable_snapshot: pending
+  appledev:
+    provider: apple
+    primary_source:
+      source: blackmatrix7
+      url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/Developer/Developer.list
+      verification: source_declared_by_upstream_readme
+      note: "The upstream Developer rule explicitly declares AppleDev as an included sub-rule; service-specific snapshot is still pending."
+      observed_at: "2026-09-17"
+    auxiliary_source:
+      source: LM-Firefly
+      url: https://raw.githubusercontent.com/LM-Firefly/Rules/master/Apple/AppleDev.list
+      verification: referenced_by_upstream_readme
+    immutable_snapshot: pending
+  findmy:
+    provider: apple
+    primary_source:
+      source: blackmatrix7
+      url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/FindMy/FindMy.list
+      verification: upstream_path_identified
+      note: "The exact upstream path is identified from published references; direct content snapshot remains pending."
+      observed_at: "2026-09-17"
+    immutable_snapshot: pending
+status: source_paths_partially_verified
+next_required: immutable_snapshot_then_canonical_membership_then_semantic_and_overlap_audits
