@@ -28,7 +28,7 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@d23441a48e516a30e30af803
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
           fetch-depth: 1
 
@@ -62,7 +62,7 @@ jobs:
           PY
 
       - name: Upload Legacy Asset IR manifest
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d778a
         with:
           name: legacy-asset-ir-${{ github.sha }}
           path: data/legacy_asset_ir.yaml
