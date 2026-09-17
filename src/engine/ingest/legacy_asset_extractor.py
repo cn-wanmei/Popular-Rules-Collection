@@ -2,23 +2,24 @@
 
 The extractor treats ``rule/**`` as evidence, not as the canonical V1 model.
 It walks service directories, reads metadata, parses generated ``*.list``
-assets, preserves provenance, performs deterministic de-duplication, and can
-stream a JSONL Legacy Asset IR without materialising the full 835k+ domain
-inventory in memory.
+assets, preserves provenance, performs deterministic service-local
+ de-duplication, and can stream a JSONL Legacy Asset IR without retaining the
+full 835k+ domain inventory in memory.
 """
 from __future__ import annotations
 
 import hashlib
 import json
 import re
+import time
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Iterable, Iterator
+from typing import Any, Iterator
 
 import yaml
 
-from src.engine.ingest.rule_parser import iter_rule_records
+from src.engine.ingest.rule_parser import iter_rule_records_with_line
 
 URL_RE = re.compile(r"^https?://[^\s]+$", re.I)
 ASSET_LIST_RE = re.compile(r"^[^/]+(?:\.list)$", re.I)
@@ -141,6 +142,7 @@ class LegacyAssetIR:
     services: list[ServiceAssetSummary]
     totals: dict[str, int]
     relation_drift: list[dict[str, Any]]
+    profile: dict[str, Any] = field(default_factory=dict)
 
     def as_dict(self) -> dict[str, Any]:
         return {
@@ -150,6 +152,7 @@ class LegacyAssetIR:
             "summary": {"services": len(self.services), **self.totals},
             "services": [item.as_dict() for item in self.services],
             "relation_drift": self.relation_drift,
+            "profile": self.profile,
         }
 
 
@@ -189,7 +192,6 @@ def _metadata_for(directory: Path) -> dict[str, Any]:
 
 
 def _asset_type(raw_type: str, value: str) -> str:
-    """Map parser output into the Legacy Asset IR vocabulary."""
     if URL_RE.match(value):
         return "url"
     mapping = {
@@ -207,35 +209,26 @@ def _asset_type(raw_type: str, value: str) -> str:
     return mapping.get(raw_type, raw_type)
 
 
-def _iter_asset_records(path: Path) -> Iterator[tuple[int, str, str, str]]:
-    """Yield line number plus parsed type/value/format.
-
-    ``iter_rule_records`` handles the supported rule grammars. URL-shaped
-    entries are detected here because URLs are deliberately not part of the
-    legacy domain/IP counters.
-    """
+def _iter_asset_records(path: Path) -> Iterator[tuple[Path, int, str, str, str]]:
+    """Yield parser provenance directly; never rescan parsed records against lines."""
     text = path.read_text(encoding="utf-8", errors="replace")
-    lines = text.splitlines()
-    parsed_by_line: dict[int, list[tuple[str, str, str]]] = {}
-    try:
-        for typ, value, fmt in iter_rule_records(path):
-            # The parser API intentionally does not expose line numbers. We
-            # therefore match parsed values back to source lines deterministically.
-            for line_no, line in enumerate(lines, 1):
-                stripped = line.strip().strip("'\"")
-                record = (typ, value, fmt)
-                if value in stripped and record not in parsed_by_line.get(line_no, []):
-                    parsed_by_line.setdefault(line_no, []).append(record)
-                    break
-    except (OSError, UnicodeError):
-        return
-
-    for line_no, line in enumerate(lines, 1):
-        value = line.strip().strip("'\"")
-        if URL_RE.match(value):
-            yield line_no, "url", value, "url"
-        for typ, parsed_value, fmt in parsed_by_line.get(line_no, []):
-            yield line_no, typ, parsed_value, fmt
+    # URLs are legacy-asset evidence even though they are not rule-parser records.
+    # We scan the same source text once for URL lines, then merge parser output by
+    # line number. Parser records themselves already carry exact provenance.
+    url_lines = {
+        line_no: line.strip().strip("'\"")
+        for line_no, line in enumerate(text.splitlines(), 1)
+        if URL_RE.match(line.strip().strip("'\""))
+    }
+    emitted_urls: set[int] = set()
+    for source, line_no, raw_type, value, fmt in iter_rule_records_with_line(path):
+        if line_no in url_lines and line_no not in emitted_urls:
+            yield source, line_no, "url", url_lines[line_no], "url"
+            emitted_urls.add(line_no)
+        yield source, line_no, raw_type, value, fmt
+    for line_no, value in url_lines.items():
+        if line_no not in emitted_urls:
+            yield path, line_no, "url", value, "url"
 
 
 def _update_counts(summary: ServiceAssetSummary, asset_type: str) -> None:
@@ -265,13 +258,30 @@ def _sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def iter_service_assets(rule_root: Path, *, include_aggregates: bool = True) -> Iterator[AssetEvidence]:
-    """Stream de-duplicated asset evidence for every indexed service directory."""
+def _profile_file(profile: dict[str, Any], item: dict[str, Any]) -> None:
+    profile.setdefault("files", []).append(item)
+    totals = profile.setdefault("totals", {})
+    totals["files"] = totals.get("files", 0) + 1
+    for key in ("parser_seconds", "dedup_seconds", "total_seconds"):
+        totals[key] = totals.get(key, 0.0) + float(item.get(key, 0.0))
+
+
+def iter_service_assets(
+    rule_root: Path,
+    *,
+    include_aggregates: bool = True,
+    profile: dict[str, Any] | None = None,
+) -> Iterator[AssetEvidence]:
+    """Stream de-duplicated evidence, retaining state only for one service."""
     rule_root = Path(rule_root)
-    seen: dict[tuple[str, str, str], AssetEvidence] = {}
+    profile = profile if profile is not None else {}
+    services_profile = profile.setdefault("services", {})
     for category_dir in sorted(p for p in rule_root.iterdir() if p.is_dir()):
         for service_dir in sorted(p for p in category_dir.iterdir() if p.is_dir()):
+            service_start = time.perf_counter()
+            metadata_start = time.perf_counter()
             metadata = _metadata_for(service_dir)
+            metadata_seconds = time.perf_counter() - metadata_start
             service_id = str(metadata.get("id") or service_dir.name).strip().lower()
             service_type = str(metadata.get("service_type") or "service").strip().lower()
             if not include_aggregates and service_type == "aggregate":
@@ -279,8 +289,27 @@ def iter_service_assets(rule_root: Path, *, include_aggregates: bool = True) -> 
             parent = metadata.get("parent")
             parent = str(parent).strip().lower() if parent else None
             sources = tuple(sorted({str(v).strip() for v in (metadata.get("sources") or []) if str(v).strip()}))
+            seen: dict[tuple[str, str, str], AssetEvidence] = {}
+            service_file_count = 0
+            service_raw_records = 0
             for list_path in sorted(p for p in service_dir.iterdir() if p.is_file() and ASSET_LIST_RE.match(p.name)):
-                for line_no, raw_type, value, fmt in _iter_asset_records(list_path):
+                service_file_count += 1
+                file_start = time.perf_counter()
+                parser_seconds = 0.0
+                dedup_seconds = 0.0
+                file_records = 0
+                iterator = iter(_iter_asset_records(list_path))
+                while True:
+                    parser_start = time.perf_counter()
+                    try:
+                        source_path, line_no, raw_type, value, fmt = next(iterator)
+                    except StopIteration:
+                        parser_seconds += time.perf_counter() - parser_start
+                        break
+                    parser_seconds += time.perf_counter() - parser_start
+                    file_records += 1
+                    service_raw_records += 1
+                    dedup_start = time.perf_counter()
                     asset_type = _asset_type(raw_type, value)
                     asset = LegacyAsset(
                         service=service_id,
@@ -289,28 +318,47 @@ def iter_service_assets(rule_root: Path, *, include_aggregates: bool = True) -> 
                         parent=parent,
                         asset_type=asset_type,
                         value=value,
-                        generated_file=list_path.name,
-                        path=str(list_path.as_posix()),
+                        generated_file=source_path.name,
+                        path=str(source_path.as_posix()),
                         line=line_no,
                         detected_format=fmt,
                         sources=sources,
                     )
                     key = asset.identity()
-                    current = seen.get(key)
                     evidence = {
-                        "generated_file": list_path.name,
-                        "path": str(list_path.as_posix()),
+                        "generated_file": source_path.name,
+                        "path": str(source_path.as_posix()),
                         "line": line_no,
                         "detected_format": fmt,
                         "sources": list(sources),
                     }
+                    current = seen.get(key)
                     if current is None:
                         seen[key] = AssetEvidence(asset=asset, evidence=[evidence])
-                        yield seen[key]
                     else:
                         current.occurrences += 1
                         if evidence not in current.evidence:
                             current.evidence.append(evidence)
+                    dedup_seconds += time.perf_counter() - dedup_start
+                _profile_file(profile, {
+                    "service": service_id,
+                    "path": str(list_path.as_posix()),
+                    "records": file_records,
+                    "parser_seconds": round(parser_seconds, 6),
+                    "dedup_seconds": round(dedup_seconds, 6),
+                    "total_seconds": round(time.perf_counter() - file_start, 6),
+                })
+            service_seconds = time.perf_counter() - service_start
+            services_profile[service_id] = {
+                "metadata_seconds": round(metadata_seconds, 6),
+                "asset_seconds": round(max(service_seconds - metadata_seconds, 0.0), 6),
+                "total_seconds": round(service_seconds, 6),
+                "files": service_file_count,
+                "raw_records": service_raw_records,
+                "unique_records": len(seen),
+            }
+            for evidence in seen.values():
+                yield evidence
 
 
 def extract_legacy_asset_ir(
@@ -324,12 +372,12 @@ def extract_legacy_asset_ir(
     index_path = Path(index_path) if index_path else rule_root / "_index.yaml"
     index = _index_records(index_path)
     summaries: dict[str, ServiceAssetSummary] = {}
+    profile: dict[str, Any] = {"services": {}, "files": [], "totals": {}}
 
     for (category, service_id), item in sorted(index.items()):
         if not include_aggregates and item["service_type"] == "aggregate":
             continue
         directory = rule_root / category / str(item["name"])
-        # Index paths are authoritative when present; fall back to directory discovery.
         if item.get("path"):
             path_parts = Path(str(item["path"])).parts
             if len(path_parts) >= 3:
@@ -339,7 +387,7 @@ def extract_legacy_asset_ir(
         categories = [str(v).strip().lower() for v in (metadata.get("categories") or []) if str(v).strip()]
         if not categories:
             categories = [category]
-        summary = ServiceAssetSummary(
+        summaries[service_id] = ServiceAssetSummary(
             id=service_id,
             name=str(metadata.get("name") or item.get("name") or service_id),
             category=category,
@@ -355,10 +403,7 @@ def extract_legacy_asset_ir(
             generated_files=dict(metadata.get("generated_files") or {}),
             sources=[str(v).strip() for v in (metadata.get("sources") or []) if str(v).strip()],
         )
-        summaries[service_id] = summary
 
-    # Add any metadata-backed service directories absent from the index. These are
-    # explicit migration evidence and are intentionally surfaced as drift.
     for category_dir in sorted(p for p in rule_root.iterdir() if p.is_dir()):
         for directory in sorted(p for p in category_dir.iterdir() if p.is_dir()):
             metadata = _metadata_for(directory)
@@ -384,14 +429,14 @@ def extract_legacy_asset_ir(
                 errors=["metadata-only: service is absent from rule/_index.yaml"],
             )
 
-    for evidence in iter_service_assets(rule_root, include_aggregates=include_aggregates):
+    for evidence in iter_service_assets(rule_root, include_aggregates=include_aggregates, profile=profile):
         summary = summaries.get(evidence.asset.service)
         if summary is None:
             continue
         summary.records += 1
         _update_counts(summary, evidence.asset.asset_type)
-        if evidence.asset.generated_file not in summary.source_files:
-            summary.source_files.append(evidence.asset.generated_file)
+        if evidence.asset.path not in summary.source_files:
+            summary.source_files.append(evidence.asset.path)
         for source in evidence.asset.sources:
             if source not in summary.sources:
                 summary.sources.append(source)
@@ -433,6 +478,9 @@ def extract_legacy_asset_ir(
         "hosts": sum(s.hosts for s in summaries.values()),
         "process_rules": sum(s.process_rules for s in summaries.values()),
     }
+    profile["totals"]["services"] = len(summaries)
+    profile["totals"]["metadata_only_services"] = sum(1 for s in summaries.values() if not s.index_present)
+    profile["totals"]["total_seconds"] = round(sum(v["total_seconds"] for v in profile["services"].values()), 6)
     return LegacyAssetIR(
         schema="legacy_asset_ir_v1",
         generated_at=datetime.now(timezone.utc).isoformat(),
@@ -444,6 +492,7 @@ def extract_legacy_asset_ir(
         services=sorted(summaries.values(), key=lambda item: item.id),
         totals=totals,
         relation_drift=relation_drift,
+        profile=profile,
     )
 
 
