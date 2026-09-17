@@ -30,6 +30,7 @@ providers:
       googlefcm: {display_name: Google FCM, status: existing}
       googlecloud: {display_name: Google Cloud, status: planned}
       firebase: {display_name: Firebase, status: planned}
+      youtubemusic: {display_name: YouTube Music, status: planned}
       gmail: {display_name: Gmail, status: planned}
       googledrive: {display_name: Google Drive, status: planned}
       googledocs: {display_name: Google Docs, status: planned}
@@ -150,6 +151,7 @@ providers:
       jira: {display_name: Jira, status: planned}
       confluence: {display_name: Confluence, status: planned}
       bitbucket: {display_name: Bitbucket, status: planned}
+      trello: {display_name: Trello, status: planned}
   meta:
     display_name: Meta
     aggregate: meta
@@ -174,6 +176,116 @@ providers:
       genshin: {display_name: Genshin Impact, status: planned}
       honkai_star_rail: {display_name: Honkai Star Rail, status: planned}
       zenless_zone_zero: {display_name: Zenless Zone Zero, status: planned}
+  dewu:
+    display_name: Dewu
+    aggregate: dewu_aggregate
+    services:
+      dewu: {display_name: Dewu, status: planned}
+  deepseek:
+    display_name: DeepSeek
+    aggregate: deepseek_aggregate
+    services:
+      deepseek: {display_name: DeepSeek, status: planned}
+  perplexity:
+    display_name: Perplexity
+    aggregate: perplexity_aggregate
+    services:
+      perplexity: {display_name: Perplexity, status: planned}
+  xai:
+    display_name: xAI
+    aggregate: xai
+    services:
+      grok: {display_name: Grok, status: planned}
+  groq:
+    display_name: Groq
+    aggregate: groq_aggregate
+    services:
+      groq: {display_name: Groq, status: planned}
+  huggingface:
+    display_name: Hugging Face
+    aggregate: huggingface_aggregate
+    services:
+      huggingface: {display_name: Hugging Face, status: planned}
+  cursor:
+    display_name: Cursor
+    aggregate: cursor_aggregate
+    services:
+      cursor: {display_name: Cursor, status: planned}
+  elevenlabs:
+    display_name: ElevenLabs
+    aggregate: elevenlabs_aggregate
+    services:
+      elevenlabs: {display_name: ElevenLabs, status: planned}
+  npm:
+    display_name: npm
+    aggregate: npm_aggregate
+    services:
+      npm: {display_name: npm, status: planned}
+  pypi:
+    display_name: PyPI
+    aggregate: pypi_aggregate
+    services:
+      pypi: {display_name: PyPI, status: planned}
+  netlify:
+    display_name: Netlify
+    aggregate: netlify_aggregate
+    services:
+      netlify: {display_name: Netlify, status: planned}
+  canva:
+    display_name: Canva
+    aggregate: canva_aggregate
+    services:
+      canva: {display_name: Canva, status: planned}
+  signal:
+    display_name: Signal
+    aggregate: signal_aggregate
+    services:
+      signal: {display_name: Signal, status: planned}
+  snap:
+    display_name: Snap
+    aggregate: snap
+    services:
+      snapchat: {display_name: Snapchat, status: planned}
+  bluesky:
+    display_name: Bluesky
+    aggregate: bluesky_aggregate
+    services:
+      bluesky: {display_name: Bluesky, status: planned}
+  tidal:
+    display_name: TIDAL
+    aggregate: tidal_aggregate
+    services:
+      tidal: {display_name: TIDAL, status: planned}
+  walmart:
+    display_name: Walmart
+    aggregate: walmart_aggregate
+    services:
+      walmart: {display_name: Walmart, status: planned}
+  uber:
+    display_name: Uber
+    aggregate: uber_aggregate
+    services:
+      uber: {display_name: Uber, status: planned}
+  airbnb:
+    display_name: Airbnb
+    aggregate: airbnb_aggregate
+    services:
+      airbnb: {display_name: Airbnb, status: planned}
+  booking:
+    display_name: Booking.com
+    aggregate: booking_aggregate
+    services:
+      booking: {display_name: Booking.com, status: planned}
+  wise:
+    display_name: Wise
+    aggregate: wise_aggregate
+    services:
+      wise: {display_name: Wise, status: planned}
+  roblox:
+    display_name: Roblox
+    aggregate: roblox_aggregate
+    services:
+      roblox: {display_name: Roblox, status: planned}
 categories:
   developer:
     display_name: Developer Ecosystem

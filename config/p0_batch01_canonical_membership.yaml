@@ -1,0 +1,70 @@
+version: 1
+schema: p0_service_canonical_membership_v1
+batch: 01
+purpose: Explicit canonical membership evidence derived only from immutable Batch 01 snapshots.
+identity_function: sha256(lower(type)|lower(value))
+services:
+  appstore:
+    snapshot: config/p0_batch01_snapshots/2026-09-17/appstore.list
+    status: complete
+    memberships:
+      - {type: HOST, value: apps.apple.com, identity_key: "host|apps.apple.com", rule_id: 1e98d9e8aa660f53d3c671acb5c8e3fa0555edf9686cb316ec07dd5248fbf9fe}
+      - {type: HOST, value: itunes.apple.com, identity_key: "host|itunes.apple.com", rule_id: b5c0786d3563e6fe8cbe905c2368f8896e7b75b1cdedcde4e0e6fea4569473a1}
+  testflight:
+    snapshot: config/p0_batch01_snapshots/2026-09-17/testflight.list
+    status: complete
+    memberships:
+      - {type: HOST, value: beta.apple.com, identity_key: "host|beta.apple.com", rule_id: 4b5f86fb2156b09ce8a7ecd8d7bbd3e4fdb3fe84366110fe76163b655203c4e8}
+      - {type: HOST, value: testflight.apple.com, identity_key: "host|testflight.apple.com", rule_id: 509b9eaf9f80746c4ab5fedc3fff863c36f5e3df62e741af800922d8f3f70fd0}
+      - {type: HOST-KEYWORD, value: testflight, identity_key: "host-keyword|testflight", rule_id: d49bada8bdad1ebcd2539818aa03b4b785e1ceee12d8cc1817001c22fe5ae170}
+  appledev:
+    snapshot: config/p0_batch01_snapshots/2026-09-17/appledev.list
+    status: complete
+    memberships:
+      - {type: DOMAIN-SUFFIX, value: calendarserver.org, identity_key: "domain-suffix|calendarserver.org", rule_id: 2ae108237541c38d623560d3e76c5c014011ca6b4cce2ff15d10f796377d3a7a}
+      - {type: DOMAIN-SUFFIX, value: apple-cloudkit.com, identity_key: "domain-suffix|apple-cloudkit.com", rule_id: 1d4eb1d127c5f0c4cb4ca37e344be99b35fabfcc660daa4e90ff05a77ff2dedc}
+      - {type: DOMAIN-SUFFIX, value: cups.org, identity_key: "domain-suffix|cups.org", rule_id: e99d01164bf4611e0e4fbc5ad9225b38b0cf3e4fbb33ae0c503419bd84f6a1ea}
+      - {type: DOMAIN-SUFFIX, value: developer.apple.com, identity_key: "domain-suffix|developer.apple.com", rule_id: c440db1cb13eb7649b896bb7732d00a8bf6492a0f49bb75ca7e89a1910d66f0a}
+      - {type: DOMAIN-SUFFIX, value: developerservices2.apple.com, identity_key: "domain-suffix|developerservices2.apple.com", rule_id: 03e86a4e349776217ae215319e9b5132ce2b95170fb389f0eabd3d3f74230de4}
+      - {type: DOMAIN-SUFFIX, value: devimages-cdn.apple.com, identity_key: "domain-suffix|devimages-cdn.apple.com", rule_id: 06374f7bbc4a2dacf7a280c09cbf720dcab7874abf5a162b2cb6014a4e5a0260}
+      - {type: DOMAIN-SUFFIX, value: devstreaming-cdn.apple.com, identity_key: "domain-suffix|devstreaming-cdn.apple.com", rule_id: e0e6771fe2125ef1f62904eefe759a49ce5df130b9fb3cc7f2eeabc86e8d35e7}
+      - {type: DOMAIN-SUFFIX, value: notary-submissions-prod.s3-accelerate.amazonaws.com, identity_key: "domain-suffix|notary-submissions-prod.s3-accelerate.amazonaws.com", rule_id: 3352930454364c460bd0dc9f5c76f60aa46d0e55334c6c49ee3a85730150c757}
+      - {type: DOMAIN-SUFFIX, value: notary-submissions-prod.s3.us-west-2.amazonaws.com, identity_key: "domain-suffix|notary-submissions-prod.s3.us-west-2.amazonaws.com", rule_id: 1786143717a1b774139e6a6e6f163dcdfc42be5a060ee9fa2301ad373bae838e}
+      - {type: DOMAIN-SUFFIX, value: timestamp.apple.com, identity_key: "domain-suffix|timestamp.apple.com", rule_id: b90a72bba63c286fe5eb7f50fe87b825c2a859fc4511839c57e84552ce9012fc}
+      - {type: DOMAIN-SUFFIX, value: foundationdb.org, identity_key: "domain-suffix|foundationdb.org", rule_id: 9666aae51d432afeb4f9b463a6e76a9832006c3a5c1ee9f535b0919ac2e4114a}
+      - {type: DOMAIN-SUFFIX, value: macosforge.org, identity_key: "domain-suffix|macosforge.org", rule_id: 2c4c67abfc9d86c447d48dfab8dc62aee41e248990f97e7af0b20b6b4a3cfd1b}
+      - {type: DOMAIN-SUFFIX, value: macruby.com, identity_key: "domain-suffix|macruby.com", rule_id: f2e84029fa1c8fcc86c4351e6285a5ad462d744155764835c57f3acd14846626}
+      - {type: DOMAIN-SUFFIX, value: macruby.net, identity_key: "domain-suffix|macruby.net", rule_id: 931f6290db51c1bd55e053d7e3b1c2eb6289c41de0cee9419754a3b2a4545548}
+      - {type: DOMAIN-SUFFIX, value: macruby.org, identity_key: "domain-suffix|macruby.org", rule_id: 72160de586038fa6fbe49d7ec66f286169fcb2676444d9acfd19a310ecae8ca3}
+      - {type: DOMAIN-SUFFIX, value: apple-mapkit.com, identity_key: "domain-suffix|apple-mapkit.com", rule_id: f1c93e3732ce0a6146d415fe39e046221ff9b07a0716401e50dfe68edd14f483}
+      - {type: DOMAIN-SUFFIX, value: playgrounds-cdn.apple.com, identity_key: "domain-suffix|playgrounds-cdn.apple.com", rule_id: 728b4cb02aa3fbe87fbd41a00930d2e430689f5f710b0e8442730e746bdeddae}
+      - {type: DOMAIN-SUFFIX, value: carekit.org, identity_key: "domain-suffix|carekit.org", rule_id: 6b6c12ab2aa8a9ec8601276ad4222def495f13701a097ba8eda8484a07ba96a8}
+      - {type: DOMAIN-SUFFIX, value: researchandcare.org, identity_key: "domain-suffix|researchandcare.org", rule_id: 2e44d45513882de76f5e03efb8dfb08a5287cc66c8ffb87d2797645619d5c4f7}
+      - {type: DOMAIN-SUFFIX, value: researchkit.cn, identity_key: "domain-suffix|researchkit.cn", rule_id: 6a9394a00dc3c027899a039972c8986092c4f6a169ea43cb2c648c4ec882f352}
+      - {type: DOMAIN-SUFFIX, value: researchkit.com.cn, identity_key: "domain-suffix|researchkit.com.cn", rule_id: 29650498f0c0efc0293d909b723825b38a3583e7b16de7343077442a1674a8ac}
+      - {type: DOMAIN-SUFFIX, value: researchkit.hk, identity_key: "domain-suffix|researchkit.hk", rule_id: ccff0b806186cec787ee192b2fba23d5309760ffab9557cb5fc0c0e3165337c8}
+      - {type: DOMAIN-SUFFIX, value: researchkit.net, identity_key: "domain-suffix|researchkit.net", rule_id: 0f0906e107af5c20d2aadd5d1f11f26af25ddada270d83120cbdc6fa2dd56b26}
+      - {type: DOMAIN-SUFFIX, value: researchkit.org, identity_key: "domain-suffix|researchkit.org", rule_id: acc84698efc2ca59e9ffb4ad9e831f196b23fe2a36c40e54c4a6f3a7feb30fb5}
+      - {type: DOMAIN-SUFFIX, value: researchkit.tv, identity_key: "domain-suffix|researchkit.tv", rule_id: 2b33e1fb65667d5a5f0aa57787e4e902b86dc753cf3fd530d4443c01aaf05f07}
+      - {type: DOMAIN-SUFFIX, value: servicetalk.io, identity_key: "domain-suffix|servicetalk.io", rule_id: 99ffaf525fbfaee0d70b500d2ff241dd2a35e2ddc7fd71552c6fbfabcf828ade}
+      - {type: DOMAIN-SUFFIX, value: appleswift.com, identity_key: "domain-suffix|appleswift.com", rule_id: 512daeb8cff5979b240878c8e0155946e309afa37c37189474297c543d0361e1}
+      - {type: DOMAIN-SUFFIX, value: swift.org, identity_key: "domain-suffix|swift.org", rule_id: 1615995c7597b711c2a5bbcdcb299dd52d4f544e29df8bdeea9750ca63c85f5e}
+      - {type: DOMAIN-SUFFIX, value: swiftui.cn, identity_key: "domain-suffix|swiftui.cn", rule_id: a3525694a8df507a41c6e0a42acc9209373d9a88489fc831d87cc25e10b5cb59}
+      - {type: DOMAIN-SUFFIX, value: swiftui.com.cn, identity_key: "domain-suffix|swiftui.com.cn", rule_id: e81fd56c368072cb51d7de15fbcefffc519871922a4bbf9158d1ad7c7e290c12}
+      - {type: DOMAIN-SUFFIX, value: webkit.org, identity_key: "domain-suffix|webkit.org", rule_id: 1d71264cc787e518e1de971243fffbaab987a32f6e3bd0d0f71e93850c880a29}
+      - {type: DOMAIN-SUFFIX, value: webkitgtk.org, identity_key: "domain-suffix|webkitgtk.org", rule_id: e2e10010761ce7f7ceeecd949e33e6681130eb0beaa6448ae667f2ffeedf5148}
+      - {type: DOMAIN-SUFFIX, value: wpewebkit.org, identity_key: "domain-suffix|wpewebkit.org", rule_id: 387596d19226745ec24789598e80c4b13686b8a714be5cdc6daff6d4a9edb0f7}
+      - {type: DOMAIN-SUFFIX, value: webobjects.com, identity_key: "domain-suffix|webobjects.com", rule_id: 6bc2f34847fb001f2353f81903f96106b091fc7d47b7b087476fa02e8dafed02}
+      - {type: DOMAIN-SUFFIX, value: appleworldwidedeveloper.hb-api.omtrdc.net, identity_key: "domain-suffix|appleworldwidedeveloper.hb-api.omtrdc.net", rule_id: eeccee9d7348efb094e183e17275e295e54a337994568cf9d2bb8c19794a6346}
+      - {type: DOMAIN-SUFFIX, value: appleworldwidedeveloper.sc.omtrdc.net, identity_key: "domain-suffix|appleworldwidedeveloper.sc.omtrdc.net", rule_id: 72e399f73fbee6b3773c1c6ea3dfedcd654d5a04dddfc447835d522e458b3af6}
+      - {type: DOMAIN-SUFFIX, value: p-events-delivery.akamaized.net, identity_key: "domain-suffix|p-events-delivery.akamaized.net", rule_id: ed7bd6343bd3200c34ffb67119d897131bfe135933bc5fab8bafef252721dd36}
+      - {type: DOMAIN-SUFFIX, value: apple.com.akadns.net, identity_key: "domain-suffix|apple.com.akadns.net", rule_id: 180b13270ea3434b20f99801c57bc8e6da3c29be7c849c424a92475d87fefc19}
+      - {type: DOMAIN-SUFFIX, value: courier-push-apple.com.akadns.net, identity_key: "domain-suffix|courier-push-apple.com.akadns.net", rule_id: fba892b08271a185935b20d25f21541a3bfa0576d6d6fbaadda09dc4f23a5993}
+      - {type: DOMAIN-SUFFIX, value: push-apple.com.akadns.net, identity_key: "domain-suffix|push-apple.com.akadns.net", rule_id: fb1f4ffedc3e56a55ec591e65bbbbdd85380105691ca719fd7d01a150c6a8f8d}
+  findmy:
+    snapshot: config/p0_batch01_snapshots/2026-09-17/findmy.list
+    status: complete
+    memberships:
+      - {type: HOST, value: fmfmobile.icloud.com, identity_key: "host|fmfmobile.icloud.com", rule_id: bbee2289375b61228ae998c53b5e2bbc0bcfdf38b7af0080fb4bf3ed1596823c}
+      - {type: HOST, value: fmipmobile.icloud.com, identity_key: "host|fmipmobile.icloud.com", rule_id: 7bad046056cd41303dc4cc5eb51350128f0fbb2ae391a55880d43975610d3048}
+      - {type: HOST, value: statici.icloud.com, identity_key: "host|statici.icloud.com", rule_id: 4a275803a2fac4b56be8a1106f42b0d148c85e8282dcb48b8f4cb5864f1f23c5}

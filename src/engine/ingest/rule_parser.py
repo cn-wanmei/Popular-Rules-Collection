@@ -19,6 +19,7 @@ from src.engine.ingest.formats.v2fly import (
 
 PLAIN_DOMAIN = re.compile(r"^(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]*[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}\.?$")
 DOMAIN_RE = re.compile(r"^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|DOMAIN-REGEX)[,\s]+(.+)$", re.I)
+HOST_RE = re.compile(r"^(HOST|HOST-KEYWORD)[,\s]+(.+)$", re.I)
 IP_RE = re.compile(r"^(?:IP-CIDR|IP-CIDR6|IP6-CIDR)[,\s]+([0-9a-fA-F:.\/]+)(?:,.*)?$", re.I)
 PROCESS_RE = re.compile(r"^(PROCESS-NAME|PROCESS-PATH)[,\s]+(.+)$", re.I)
 HOSTS_RE = re.compile(r"^(?:0\.0\.0\.0|127\.0\.0\.1)\s+(\S+)")
@@ -40,7 +41,7 @@ def detect_format(path: Path, text: str | None = None) -> str:
     head = "\n".join(text.splitlines()[:80])
     if any(line.lstrip().startswith("+.") for line in text.splitlines() if line.strip()):
         return "metacubex_geosite"
-    if "DOMAIN-SUFFIX" in head.upper() or "DOMAIN-KEYWORD" in head.upper() or "PROCESS-NAME" in head.upper():
+    if any(token in head.upper() for token in ("DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "HOST-KEYWORD", "PROCESS-NAME")):
         return "native_list"
     if any(line.strip().startswith(("0.0.0.0 ", "127.0.0.1 ")) for line in text.splitlines()):
         return "hosts"
@@ -73,6 +74,14 @@ def parse_line(line: str) -> list[tuple[str, str]]:
             "DOMAIN-KEYWORD": "domain_keyword",
             "DOMAIN-REGEX": "domain_regex",
         }[kind], value)]
+
+    m = HOST_RE.match(line)
+    if m:
+        kind = m.group(1).upper()
+        value = m.group(2).split(",", 1)[0].strip().strip("'\"").rstrip(".")
+        if not value:
+            return []
+        return [("host" if kind == "HOST" else "host_keyword", value)]
 
     m = PROCESS_RE.match(line)
     if m:

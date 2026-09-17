@@ -30,7 +30,6 @@ def load_yaml(path: Path) -> dict[str, Any]:
 
 
 def canonical_baseline_present(path: Path) -> bool:
-    """An empty placeholder file is not evidence of a canonical baseline."""
     if not path.is_file() or path.stat().st_size == 0:
         return False
     try:
@@ -38,14 +37,6 @@ def canonical_baseline_present(path: Path) -> bool:
     except (OSError, ValueError, json.JSONDecodeError):
         return False
     return bool(value)
-
-
-def discover_run(root: Path) -> tuple[str, dict[str, Any]]:
-    promotion = load_json(root / "generated/_promotion/latest.json")
-    run_id = str(promotion.get("run_id", "")).strip()
-    if not run_id:
-        raise ValueError("generated/_promotion/latest.json has no run_id")
-    return run_id, promotion
 
 
 def parse_timestamp(value: str | None) -> datetime | None:

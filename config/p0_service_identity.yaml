@@ -1,0 +1,58 @@
+version: 1
+schema: p0_service_identity_v1
+purpose: Explicit identity mapping for the first 50 P0 services. This is planning/validation metadata and does not itself activate production rules.
+identity_rules:
+  provider_owner_unique: true
+  aggregate_and_service_must_differ: true
+  no_name_prefix_inference: true
+services:
+  - {id: appstore, provider: apple, aggregate: apple}
+  - {id: testflight, provider: apple, aggregate: apple}
+  - {id: appledev, provider: apple, aggregate: apple}
+  - {id: findmy, provider: apple, aggregate: apple}
+  - {id: qq, provider: tencent, aggregate: tencent}
+  - {id: qqmusic, provider: tencent, aggregate: tencent}
+  - {id: qqmail, provider: tencent, aggregate: tencent}
+  - {id: wecom, provider: tencent, aggregate: tencent}
+  - {id: tencentmeeting, provider: tencent, aggregate: tencent}
+  - {id: tencentcloud, provider: tencent, aggregate: tencent}
+  - {id: taobao, provider: alibaba, aggregate: alibaba}
+  - {id: tmall, provider: alibaba, aggregate: alibaba}
+  - {id: alibabacloud, provider: alibaba, aggregate: alibaba}
+  - {id: '1688', provider: alibaba, aggregate: alibaba}
+  - {id: dingding, provider: alibaba, aggregate: alibaba}
+  - {id: cainiao, provider: alibaba, aggregate: alibaba}
+  - {id: doubao, provider: bytedance, aggregate: bytedance}
+  - {id: feishu, provider: bytedance, aggregate: bytedance}
+  - {id: baidunetdisk, provider: baidu, aggregate: baidu}
+  - {id: youdao, provider: netease, aggregate: netease}
+  - {id: dewu, provider: dewu, aggregate: dewu_aggregate}
+  - {id: deepseek, provider: deepseek, aggregate: deepseek_aggregate}
+  - {id: perplexity, provider: perplexity, aggregate: perplexity_aggregate}
+  - {id: grok, provider: xai, aggregate: xai}
+  - {id: groq, provider: groq, aggregate: groq_aggregate}
+  - {id: huggingface, provider: huggingface, aggregate: huggingface_aggregate}
+  - {id: cursor, provider: cursor, aggregate: cursor_aggregate}
+  - {id: elevenlabs, provider: elevenlabs, aggregate: elevenlabs_aggregate}
+  - {id: aws, provider: amazon, aggregate: amazon}
+  - {id: azure, provider: microsoft, aggregate: microsoft}
+  - {id: googlecloud, provider: google, aggregate: google}
+  - {id: firebase, provider: google, aggregate: google}
+  - {id: bitbucket, provider: atlassian, aggregate: atlassian}
+  - {id: npm, provider: npm, aggregate: npm_aggregate}
+  - {id: pypi, provider: pypi, aggregate: pypi_aggregate}
+  - {id: netlify, provider: netlify, aggregate: netlify_aggregate}
+  - {id: canva, provider: canva, aggregate: canva_aggregate}
+  - {id: trello, provider: atlassian, aggregate: atlassian}
+  - {id: signal, provider: signal, aggregate: signal_aggregate}
+  - {id: messenger, provider: meta, aggregate: meta}
+  - {id: snapchat, provider: snap, aggregate: snap}
+  - {id: bluesky, provider: bluesky, aggregate: bluesky_aggregate}
+  - {id: youtubemusic, provider: google, aggregate: google}
+  - {id: tidal, provider: tidal, aggregate: tidal_aggregate}
+  - {id: walmart, provider: walmart, aggregate: walmart_aggregate}
+  - {id: uber, provider: uber, aggregate: uber_aggregate}
+  - {id: airbnb, provider: airbnb, aggregate: airbnb_aggregate}
+  - {id: booking, provider: booking, aggregate: booking_aggregate}
+  - {id: wise, provider: wise, aggregate: wise_aggregate}
+  - {id: roblox, provider: roblox, aggregate: roblox_aggregate}
