@@ -71,6 +71,8 @@ jobs:
           python scripts/refresh_latest_release_from_promotion.py --run-id "${RUN_ID}"
           python scripts/status_consistency_gate.py
           python scripts/evidence_consistency_gate.py --run-id "${RUN_ID}" || true
+          python scripts/partial_production_invariant_gate.py --run-id "${RUN_ID}"
+          python scripts/classify_service_artifacts.py || true
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A generated/ data/runs/ data/baseline/ reports/latest_release.json
@@ -106,6 +108,8 @@ jobs:
             python scripts/refresh_latest_release_from_promotion.py --run-id "${RUN_ID}"
             python scripts/status_consistency_gate.py || true
             python scripts/evidence_consistency_gate.py --run-id "${RUN_ID}" || true
+            python scripts/partial_production_invariant_gate.py --run-id "${RUN_ID}"
+            python scripts/classify_service_artifacts.py || true
             git add -A generated/ data/runs/ data/baseline/ reports/latest_release.json
             if git diff --staged --quiet; then
               echo "No release changes after replay (another job may have published equivalent)."
