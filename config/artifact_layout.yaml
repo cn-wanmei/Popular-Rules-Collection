@@ -1,5 +1,5 @@
-version: 1
-updated: "2026-09-02"
+version: 2
+updated: "2026-09-17"
 policy:
   git:
     max_file_mb: 5.0
@@ -10,7 +10,7 @@ policy:
     max_bundle_mb: 200
   truth:
     layer: artifact_manifest
-    note: "Release is distribution only"
+    note: "Release is distribution only; rules/ is canonical source"
 release_globs:
   - "generated/mmdb/**"
   - "generated/routing/decisions.jsonl"
@@ -24,6 +24,7 @@ always_git:
   - "config/**"
   - "scripts/**"
   - "sources/**"
+  - "rules/**"
   - "docs/**"
   - "reports/baseline/**"
   - "reports/artifact_manifest.json"
