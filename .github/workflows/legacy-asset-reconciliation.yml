@@ -41,21 +41,30 @@ jobs:
           python -m src.engine.ingest.legacy_asset_reconciliation_cli \
             --rule-root rule \
             --jsonl data/legacy_asset_ir.jsonl \
-            --report reports/v1/LEGACY_ASSET_RECONCILIATION.yaml
+            --report reports/v1/LEGACY_ASSET_RECONCILIATION.yaml \
+            --candidates reports/v1/V1_PROMOTION_CANDIDATES.yaml
       - name: Validate reconciliation completeness and promotion block
         run: |
           python - <<'PY'
           from pathlib import Path
           import yaml
           report = yaml.safe_load(Path("reports/v1/LEGACY_ASSET_RECONCILIATION.yaml").read_text(encoding="utf-8"))
+          candidates = yaml.safe_load(Path("reports/v1/V1_PROMOTION_CANDIDATES.yaml").read_text(encoding="utf-8"))
           assert report["schema"] == "legacy_asset_reconciliation_v1"
           assert report["summary"]["services"] == 184
           assert report["summary"]["indexed_services"] == 184
+          assert report["summary"]["metadata_services"] == 184
+          assert report["summary"]["metadata_only_services"] == 0
+          assert report["summary"]["index_only_services"] == 0
           assert len(report["services"]) == 184
           assert len({item["id"] for item in report["services"]}) == 184
           assert report["promotion"]["blocked"] is True
           assert report["promotion"]["canonical_v1_write"] is False
-          assert len(report["promotion_candidates"]) == 184
+          assert candidates["schema"] == "v1_promotion_candidates_v1"
+          assert len(candidates["candidates"]) == 184
+          assert candidates["candidate_count"] == sum(1 for item in candidates["candidates"] if item["candidate"])
+          assert candidates["promotion"]["blocked"] is True
+          assert candidates["promotion"]["canonical_v1_write"] is False
           for item in report["services"]:
               assert item["id"]
               assert item["metadata_index_status"] in {"both-present", "metadata-only", "index-only"}
@@ -71,4 +80,5 @@ jobs:
           name: legacy-asset-reconciliation
           path: |
             reports/v1/LEGACY_ASSET_RECONCILIATION.yaml
+            reports/v1/V1_PROMOTION_CANDIDATES.yaml
             data/legacy_asset_ir.jsonl
