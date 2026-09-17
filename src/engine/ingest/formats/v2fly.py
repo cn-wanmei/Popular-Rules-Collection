@@ -3,9 +3,11 @@ from __future__ import annotations
 
 import re
 from pathlib import Path
+from typing import Iterator
 
 PLAIN_DOMAIN = re.compile(r"^(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]*[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}\.?$")
 V2FLY_PREFIX = re.compile(r"^(full|domain|keyword|regexp|regex|include):\s*(.+)$", re.I)
+MAX_INCLUDE_DEPTH = 8
 
 
 def parse_line(line: str) -> list[tuple[str, str]]:
@@ -37,34 +39,50 @@ def parse_line(line: str) -> list[tuple[str, str]]:
     return []
 
 
-def expand_file(path: Path, *, depth: int = 0, stack: set[str] | None = None) -> list[tuple[str, str]]:
+def _resolve_include(path: Path, value: str) -> Path | None:
+    candidates = (
+        path.parent / value,
+        path.parent / f"v2fly_{value}",
+        path.parent / f"{value}.list",
+    )
+    return next((candidate for candidate in candidates if candidate.exists()), None)
+
+
+def iter_expanded_records(
+    path: Path,
+    *,
+    depth: int = 0,
+    stack: set[str] | None = None,
+) -> Iterator[tuple[Path, int, str, str]]:
+    """Stream V2Fly records with source-line provenance and bounded includes."""
+    path = Path(path)
     if stack is None:
         stack = set()
     key = str(path.resolve())
-    if key in stack or depth > 8:
-        return []
+    if key in stack or depth > MAX_INCLUDE_DEPTH:
+        return
     stack.add(key)
     try:
         text = path.read_text(encoding="utf-8", errors="replace")
     except OSError:
         stack.discard(key)
-        return []
-    out: list[tuple[str, str]] = []
-    for raw in text.splitlines():
-        for kind, value in parse_line(raw):
-            if kind != "include":
-                out.append((kind, value))
-                continue
-            candidates = (
-                path.parent / value,
-                path.parent / f"v2fly_{value}",
-                path.parent / f"{value}.list",
-            )
-            included = next((candidate for candidate in candidates if candidate.exists()), None)
-            if included is not None:
-                out.extend(expand_file(included, depth=depth + 1, stack=stack))
-    stack.discard(key)
-    return out
+        return
+    try:
+        for line_no, raw in enumerate(text.splitlines(), 1):
+            for kind, value in parse_line(raw):
+                if kind != "include":
+                    yield path, line_no, kind, value
+                    continue
+                included = _resolve_include(path, value)
+                if included is not None:
+                    yield from iter_expanded_records(included, depth=depth + 1, stack=stack)
+    finally:
+        stack.discard(key)
+
+
+def expand_file(path: Path, *, depth: int = 0, stack: set[str] | None = None) -> list[tuple[str, str]]:
+    """Backward-compatible materialised wrapper around the streaming expander."""
+    return [(typ, value) for _source, _line, typ, value in iter_expanded_records(path, depth=depth, stack=stack)]
 
 
 def looks_like(text: str, path: Path | None = None) -> bool:

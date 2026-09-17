@@ -2,22 +2,25 @@
 
 Public APIs remain ``parse_line`` / ``iter_rules``. ``detect_format`` makes the
 input grammar explicit so Source Semantic Gate can audit the parser decision.
+The line-aware API is the single-pass provenance path used by Legacy Asset
+Extractor; the legacy APIs remain backward compatible.
 """
 from __future__ import annotations
 
 import re
 from pathlib import Path
-from typing import Iterable
+from typing import Iterable, Iterator
 
 import yaml
 
 from src.engine.ingest.formats.v2fly import (
+    iter_expanded_records,
     looks_like as looks_like_v2fly,
     parse_line as parse_v2fly_line,
-    expand_file as expand_v2fly_file,
 )
 
 PLAIN_DOMAIN = re.compile(r"^(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]*[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}\.?$")
+URL_RE = re.compile(r"^https?://[^\s]+$", re.I)
 DOMAIN_RE = re.compile(r"^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|DOMAIN-REGEX)[,\s]+(.+)$", re.I)
 HOST_RE = re.compile(r"^(HOST|HOST-KEYWORD)[,\s]+(.+)$", re.I)
 IP_RE = re.compile(r"^(?:IP-CIDR|IP-CIDR6|IP6-CIDR)[,\s]+([0-9a-fA-F:.\/]+)(?:,.*)?$", re.I)
@@ -118,14 +121,13 @@ def parse_line(line: str) -> list[tuple[str, str]]:
     return []
 
 
-def iter_rule_records(path: Path) -> Iterable[tuple[str, str, str]]:
-    """Yield ``(type, value, detected_format)`` for Source Ingest provenance."""
+def iter_rule_records_with_line(path: Path) -> Iterator[tuple[Path, int, str, str, str]]:
+    """Yield ``(source_path, line, type, value, format)`` in one parse pass."""
     path = Path(path)
     text = path.read_text(encoding="utf-8", errors="replace")
     fmt = detect_format(path, text)
     if fmt == "v2fly":
-        for typ, value in expand_v2fly_file(path):
-            yield typ, value, fmt
+        yield from ((source, line, typ, value, fmt) for source, line, typ, value in iter_expanded_records(path))
         return
     if fmt == "clash_yaml":
         try:
@@ -136,12 +138,21 @@ def iter_rule_records(path: Path) -> Iterable[tuple[str, str, str]]:
             for item in data.get("payload") or []:
                 if isinstance(item, str):
                     for typ, value in parse_line(item):
-                        yield typ, value, fmt
+                        yield path, 0, typ, value, fmt
             return
 
-    for line in text.splitlines():
-        for typ, value in parse_line(line):
-            yield typ, value, fmt
+    for line_no, raw_line in enumerate(text.splitlines(), 1):
+        stripped = raw_line.strip().strip("'\"")
+        if URL_RE.match(stripped):
+            yield path, line_no, "url", stripped, "url"
+        for typ, value in parse_line(raw_line):
+            yield path, line_no, typ, value, fmt
+
+
+def iter_rule_records(path: Path) -> Iterable[tuple[str, str, str]]:
+    """Yield ``(type, value, detected_format)`` for Source Ingest provenance."""
+    for _source, _line, typ, value, fmt in iter_rule_records_with_line(path):
+        yield typ, value, fmt
 
 
 def iter_rules(path: Path) -> Iterable[tuple[str, str]]:
@@ -153,8 +164,8 @@ __all__ = [
     "parse_line",
     "iter_rules",
     "iter_rule_records",
+    "iter_rule_records_with_line",
     "detect_format",
     "parse_v2fly_line",
     "looks_like_v2fly",
-    "expand_v2fly_file",
 ]

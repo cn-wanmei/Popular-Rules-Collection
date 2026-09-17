@@ -29,17 +29,25 @@ output:
   service_manifest:
     path: data/legacy_asset_ir.yaml
     schema: legacy_asset_ir_v1
-    purpose: service-level counts, metadata, index comparison and relation drift
+    purpose: service-level counts, metadata, index reconciliation evidence, relation drift and profiling
   full_asset_stream:
     format: jsonl
     schema: legacy_asset_ir_v1_jsonl
-    purpose: de-duplicated asset evidence with provenance
-    optional: true
+    purpose: de-duplicated asset evidence with complete source provenance
+    optional: cli_optional_ci_required
+  profile:
+    scope:
+      - per_file parser_seconds
+      - per_file dedup_seconds
+      - per_file total_seconds
+      - per_service metadata_seconds
+      - per_service asset_seconds
+      - per_service total_seconds
 
 identity:
   key: [service, asset.type, asset.value]
   dedup_scope: per-service
-  rule: duplicate values across generated files remain one canonical evidence record with multiple provenance occurrences
+  rule: duplicate values across generated files remain one evidence record with multiple provenance occurrences
 
 provenance:
   required:
@@ -48,7 +56,14 @@ provenance:
     - line
     - detected_format
     - sources
+  parser_rule: provenance is emitted directly by the line-aware parser; parsed records must not be mapped back to source lines by a secondary scan
   source_policy: metadata sources are migration evidence and must not be interpreted as dependency edges
+
+performance:
+  parser_strategy: single-pass line-aware parsing
+  dedup_strategy: service-local bounded state
+  v2fly_strategy: streaming include expansion with cycle detection and maximum include depth 8
+  forbidden_pattern: O(records * lines) parsed-record-to-source-line rescanning
 
 url_policy:
   rule: only URL-shaped entries encountered inside legacy asset files may become asset.type=url
@@ -69,13 +84,34 @@ relation_audit:
   output: relation_drift
   promotion_effect: drift blocks automatic canonical promotion
 
+index_reconciliation:
+  per_service: compare index domain/IP counters with extracted unique rule counters
+  interpretation: deltas are reconciliation evidence, not automatic extraction failures; duplicate legacy evidence can legitimately make counters differ
+  promotion_effect: unresolved deltas remain Phase 2.1.2 work
+
+ci_completeness_gate:
+  required_service_count: 184
+  exact_indexed_service_set: true
+  metadata_complete: true
+  extractor_errors: zero
+  asset_file_profile_complete: true
+  full_jsonl_identity_unique: true
+  provenance_complete: true
+  url_inventory_matches_manifest: true
+  profile_complete: true
+  reconciliation_fields_present: true
+  relation_drift_present: true
+
 execution:
   command: make legacy-asset-audit
-  optional_full_stream: python -m src.engine.ingest.legacy_asset_cli --rule-root rule --manifest data/legacy_asset_ir.yaml --jsonl data/legacy_asset_ir.jsonl
-  note: this commit implements the extractor and test coverage; the full repository execution is intentionally left as the next verification step so no generated 835k+ record artifact is committed by hand
+  ci_command: python -m src.engine.ingest.legacy_asset_cli --rule-root rule --manifest data/legacy_asset_ir.yaml --jsonl data/legacy_asset_ir.jsonl
+  note: manifest and full JSONL are generated in the same extraction pass; CI retains them as artifacts and does not commit the 835k+ inventory
+  timeout_policy: 120 minutes is a safety ceiling during remediation; it is not evidence that the performance problem is resolved
 
 gates:
   canonical_promotion: blocked
   full_184_semantic_audit: pending_until_execution
   url_inventory: extractor-backed
   aggregate_relation_audit: extractor-backed
+  provenance_audit: extractor-backed
+  performance_audit: extractor-profile-backed
