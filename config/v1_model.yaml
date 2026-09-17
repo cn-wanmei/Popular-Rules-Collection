@@ -1,0 +1,29 @@
+version: 1
+model: v1
+canonical_root: rule
+entities:
+  category: rule/category
+  service: rule/service
+  shared_component: rule/shared
+
+compiler:
+  dependency_resolution: required
+  aggregate_resolution: required
+  canonical_deduplication: required
+  cycle_detection: required
+
+references:
+  service_categories_are_source_of_truth: true
+  category_members_are_derived: true
+  optional_dependencies: false
+  network_reference_requires_include_flag: true
+
+v3:
+  consumer: src.engine
+  output_root: generated
+  source_of_truth: v1
+  policies_in_canonical_rules: false
+
+migration:
+  legacy_paths_preserved_until_audit: true
+  destructive_migration: false
