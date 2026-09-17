@@ -1,9 +1,9 @@
 """Phase 2.1.2 reconciliation for the Legacy Asset IR.
 
-This module compares the extractor evidence with rule/_index.yaml without
+This module compares extractor evidence with rule/_index.yaml without
 promoting anything into the canonical V1 model. Counts are classified as
 exact, duplicate-induced, count-delta, or unresolved; hierarchy and aggregate
-asset evidence are kept separate from promotion decisions.
+asset evidence remain separate from promotion decisions.
 """
 from __future__ import annotations
 
@@ -19,14 +19,8 @@ from src.engine.ingest.legacy_asset_extractor import extract_legacy_asset_ir
 SCHEMA = "legacy_asset_reconciliation_v1"
 
 
-def _domain_unique(summary: dict[str, Any]) -> int:
-    assets = summary.get("assets", {})
-    return sum(int(assets.get(k) or 0) for k in ("domains", "domain_suffixes", "domain_keywords", "domain_regexes"))
-
-
-def _load_jsonl(path: Path) -> tuple[dict[str, dict[str, Any]], Counter, dict[str, set[tuple[str, str]]]]:
-    services: dict[str, dict[str, Any]] = defaultdict(lambda: {"raw": Counter(), "unique": Counter(), "assets": set()})
-    occurrences: Counter = Counter()
+def _load_jsonl(path: Path) -> tuple[dict[str, dict[str, Any]], dict[str, set[tuple[str, str]]]]:
+    services: dict[str, dict[str, Any]] = defaultdict(lambda: {"raw": Counter(), "unique": Counter()})
     assets_by_service: dict[str, set[tuple[str, str]]] = defaultdict(set)
     with path.open("r", encoding="utf-8") as handle:
         for line in handle:
@@ -37,13 +31,11 @@ def _load_jsonl(path: Path) -> tuple[dict[str, dict[str, Any]], Counter, dict[st
             asset = item["asset"]
             kind = str(asset["type"])
             value = str(asset["value"])
-            occ = int(item.get("occurrences", 1))
+            occurrences = int(item.get("occurrences", 1))
             services[service]["unique"][kind] += 1
-            services[service]["raw"][kind] += occ
-            services[service]["assets"].add((kind, value))
-            occurrences[service] += occ
+            services[service]["raw"][kind] += occurrences
             assets_by_service[service].add((kind, value))
-    return services, occurrences, assets_by_service
+    return services, assets_by_service
 
 
 def _classify(index_count: int | None, unique_count: int, raw_count: int) -> dict[str, Any]:
@@ -67,10 +59,10 @@ def _classify(index_count: int | None, unique_count: int, raw_count: int) -> dic
     }
 
 
-def reconcile_legacy_assets(rule_root: Path, *, jsonl_output: Path, report_path: Path | None = None) -> dict[str, Any]:
-    """Extract once, reconcile the generated JSONL, and optionally write YAML."""
+def reconcile_legacy_assets(rule_root: Path, *, jsonl_output: Path, report_path: Path | None = None, candidates_path: Path | None = None) -> dict[str, Any]:
+    """Extract once, reconcile the generated JSONL, and optionally write reports."""
     ir = extract_legacy_asset_ir(Path(rule_root), jsonl_output=Path(jsonl_output))
-    raw, _, assets_by_service = _load_jsonl(Path(jsonl_output))
+    raw, assets_by_service = _load_jsonl(Path(jsonl_output))
     services: list[dict[str, Any]] = []
     summary_by_id = {s.id: s.as_dict() for s in ir.services}
     indexed_ids = {s.id for s in ir.services if s.index_present}
@@ -84,8 +76,6 @@ def reconcile_legacy_assets(rule_root: Path, *, jsonl_output: Path, report_path:
         domain_raw = sum(data["raw"][k] for k in ("domain", "domain_suffix", "domain_keyword", "domain_regex"))
         cidr_unique = data["unique"]["ip_cidr"]
         cidr_raw = data["raw"]["ip_cidr"]
-        domains = _classify(item.index_domains, domain_unique, domain_raw)
-        ips = _classify(item.index_ips, cidr_unique, cidr_raw)
         metadata_index_status = "both-present" if item.metadata_present and item.index_present else ("metadata-only" if item.metadata_present else "index-only")
         services.append({
             "id": item.id,
@@ -94,8 +84,8 @@ def reconcile_legacy_assets(rule_root: Path, *, jsonl_output: Path, report_path:
             "service_type": item.service_type,
             "parent": item.parent,
             "metadata_index_status": metadata_index_status,
-            "domain": domains,
-            "ip_cidr": ips,
+            "domain": _classify(item.index_domains, domain_unique, domain_raw),
+            "ip_cidr": _classify(item.index_ips, cidr_unique, cidr_raw),
             "urls": int(item.urls),
             "records": int(item.records),
             "source_files": sorted(item.source_files),
@@ -103,15 +93,18 @@ def reconcile_legacy_assets(rule_root: Path, *, jsonl_output: Path, report_path:
             "generated_files": item.generated_files,
             "errors": list(item.errors),
             "relation_drift": next((d for d in ir.relation_drift if d["aggregate"] == item.id), None),
+            "profile": ir.profile.get("services", {}).get(item.id, {}),
         })
 
-    known_files = {p for s in ir.services for p in s.source_files}
+    # source_files contains only files represented by an emitted unique asset.
+    # profile.files is the authoritative extractor-level inventory of every
+    # parsed *.list file, including files whose records were all duplicates.
+    known_files = {str(entry["path"]) for entry in ir.profile.get("files", [])}
     all_list_files = {p.as_posix() for p in Path(rule_root).rglob("*.list") if p.is_file()}
     orphan_files = sorted(all_list_files - known_files)
 
     aggregate_evidence: list[dict[str, Any]] = []
     for aggregate in sorted(aggregate_ids):
-        summary = summary_by_id[aggregate]
         indexed_children = next((d["indexed_children"] for d in ir.relation_drift if d["aggregate"] == aggregate), [])
         if not indexed_children:
             indexed_children = [s.id for s in ir.services if s.parent == aggregate and s.id in indexed_ids]
@@ -184,7 +177,7 @@ def reconcile_legacy_assets(rule_root: Path, *, jsonl_output: Path, report_path:
             "ip_count_delta_services": sum(1 for s in services if s["ip_cidr"]["status"] == "count-delta"),
             "url_assets": sum(s["urls"] for s in services),
         },
-        "orphan_assets": {"files": orphan_files, "definition": "*.list files not attributed to an indexed or metadata service"},
+        "orphan_assets": {"files": orphan_files, "definition": "*.list files not parsed by the extractor file inventory"},
         "aggregate_own_assets": aggregate_evidence,
         "relation_drift": ir.relation_drift,
         "services": services,
@@ -194,6 +187,16 @@ def reconcile_legacy_assets(rule_root: Path, *, jsonl_output: Path, report_path:
         path = Path(report_path)
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(yaml.safe_dump(report, allow_unicode=True, sort_keys=False), encoding="utf-8")
+    if candidates_path is not None:
+        path = Path(candidates_path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(yaml.safe_dump({
+            "schema": "v1_promotion_candidates_v1",
+            "phase": "phase2.1.2-legacy-asset-reconciliation",
+            "promotion": {"blocked": True, "canonical_v1_write": False},
+            "candidate_count": sum(1 for item in candidates if item["candidate"]),
+            "candidates": candidates,
+        }, allow_unicode=True, sort_keys=False), encoding="utf-8")
     return report
 
 
