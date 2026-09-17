@@ -10,3 +10,10 @@ providers:
   amazon: {id: amazon, kind: provider, name: Amazon, scope: ecosystem, status: active}
   bytedance: {id: bytedance, kind: provider, name: ByteDance, scope: ecosystem, status: active}
   netease: {id: netease, kind: provider, name: NetEase, scope: ecosystem, status: active}
+  deepseek: {id: deepseek, kind: provider, name: DeepSeek, scope: ecosystem, status: active}
+  perplexity: {id: perplexity, kind: provider, name: Perplexity, scope: ecosystem, status: active}
+  xai: {id: xai, kind: provider, name: xAI, scope: ecosystem, status: active}
+  groq: {id: groq, kind: provider, name: Groq, scope: ecosystem, status: active}
+  huggingface: {id: huggingface, kind: provider, name: Hugging Face, scope: ecosystem, status: active}
+  cursor: {id: cursor, kind: provider, name: Cursor, scope: ecosystem, status: active}
+  elevenlabs: {id: elevenlabs, kind: provider, name: ElevenLabs, scope: ecosystem, status: active}

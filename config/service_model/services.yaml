@@ -5,11 +5,18 @@ services:
   google-shared: {id: google-shared, provider: google, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
   gmail: {id: gmail, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   google-search: {id: google-search, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  googlecloud: {id: googlecloud, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  firebase: {id: firebase, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   apple-core: {id: apple-core, provider: apple, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: apple}
   apple-shared: {id: apple-shared, provider: apple, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
   icloud: {id: icloud, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  appstore: {id: appstore, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  testflight: {id: testflight, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  appledev: {id: appledev, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  findmy: {id: findmy, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   microsoft-core: {id: microsoft-core, provider: microsoft, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: microsoft}
   microsoft-shared: {id: microsoft-shared, provider: microsoft, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
+  azure: {id: azure, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   tencent-core: {id: tencent-core, provider: tencent, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: tencent}
   tencent-shared: {id: tencent-shared, provider: tencent, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
   wechat: {id: wechat, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
@@ -32,6 +39,7 @@ services:
   baidunetdisk: {id: baidunetdisk, provider: baidu, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   amazon-core: {id: amazon-core, provider: amazon, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: amazon}
   amazon-shared: {id: amazon-shared, provider: amazon, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
+  aws: {id: aws, provider: amazon, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   bytedance-core: {id: bytedance-core, provider: bytedance, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: bytedance}
   bytedance-shared: {id: bytedance-shared, provider: bytedance, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
   doubao: {id: doubao, provider: bytedance, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
@@ -39,3 +47,10 @@ services:
   netease-core: {id: netease-core, provider: netease, scope: provider_core, visibility: internal, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   netease-shared: {id: netease-shared, provider: netease, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   youdao: {id: youdao, provider: netease, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  deepseek: {id: deepseek, provider: deepseek, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  perplexity: {id: perplexity, provider: perplexity, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  grok: {id: grok, provider: xai, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  groq: {id: groq, provider: groq, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  huggingface: {id: huggingface, provider: huggingface, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  cursor: {id: cursor, provider: cursor, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  elevenlabs: {id: elevenlabs, provider: elevenlabs, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
