@@ -23,13 +23,15 @@ ROOT = Path(__file__).resolve().parents[1]
 def load_yaml(path: Path) -> dict[str, Any]:
     if not path.is_file():
         return {}
-    return yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    value = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    return value if isinstance(value, dict) else {}
 
 
 def load_json(path: Path) -> dict[str, Any]:
     if not path.is_file():
         return {}
-    return json.loads(path.read_text(encoding="utf-8"))
+    value = json.loads(path.read_text(encoding="utf-8"))
+    return value if isinstance(value, dict) else {}
 
 
 def coverage_of(meta: dict[str, Any]) -> str:
@@ -60,6 +62,17 @@ def iter_services(model: dict[str, Any]):
                 yield str(node["id"]), node
 
 
+def partial_never_production(policy: dict[str, Any]) -> bool:
+    """Read both the current list-form policy and legacy dict-form policy safely."""
+    principles = policy.get("principles")
+    if isinstance(principles, dict):
+        return bool(principles.get("partial_never_production", True))
+    if isinstance(principles, list):
+        normalized = {str(item).strip() for item in principles}
+        return "partial_never_production: true" in normalized
+    return True
+
+
 def check_service_model(root: Path) -> list[str]:
     model = load_yaml(root / "config" / "service_model" / "services.yaml")
     errors: list[str] = []
@@ -67,7 +80,6 @@ def check_service_model(root: Path) -> list[str]:
         cov = coverage_of(meta)
         lifecycle = str(meta.get("lifecycle") or meta.get("status") or "").strip().lower()
         production_flag = meta.get("production")
-        # Forbidden: explicit production truthy while coverage partial
         if cov == "partial" and (
             production_flag is True
             or str(production_flag).lower() in {"true", "yes", "1"}
@@ -93,14 +105,17 @@ def check_run_evidence(root: Path, run_id: str | None) -> list[str]:
         return errors
     data = load_json(path)
     for item in data.get("items") or []:
-        cov = str((item.get("facts") or {}).get("coverage") or "").strip().lower()
+        if not isinstance(item, dict):
+            continue
+        facts = item.get("facts") or {}
+        cov = str(facts.get("coverage") or "").strip().lower() if isinstance(facts, dict) else ""
         derived = item.get("derived") or {}
-        if cov == "partial" and derived.get("production") is True:
+        if cov == "partial" and isinstance(derived, dict) and derived.get("production") is True:
             errors.append(
                 f"evidence:{item.get('service')}: coverage=partial but derived.production=true"
             )
-        if cov == "partial" and "coverage_partial_forbids_production" not in (item.get("blockers") or []):
-            # Soft consistency: derive should always emit this blocker
+        blockers = item.get("blockers") or []
+        if cov == "partial" and "coverage_partial_forbids_production" not in blockers:
             errors.append(
                 f"evidence:{item.get('service')}: partial without coverage_partial_forbids_production blocker"
             )
@@ -115,7 +130,7 @@ def main() -> int:
     args = ap.parse_args()
 
     policy = load_yaml(args.root / "config" / "service_production_policy.yaml")
-    if not policy.get("principles", {}).get("partial_never_production", True):
+    if not partial_never_production(policy):
         print("policy disables partial_never_production; gate skipped", file=sys.stderr)
 
     errors = check_service_model(args.root)
