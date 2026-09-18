@@ -1,6 +1,6 @@
 {
   "schema": "v1_final_migration_gate_v1",
-  "run_id": "20260918T151514633421Z-run",
+  "run_id": "20260918T192424912534Z-run",
   "status": "PASS",
   "legacy_source": "database/services",
   "v1_source": "rule",
@@ -8,7 +8,7 @@
     "schema": "v1_phase8_coverage_v1",
     "registered": 218,
     "materialized": 184,
-    "intentional": 37,
+    "intentional": 34,
     "missing": [],
     "coverage_ratio": 1.036697247706422,
     "coverage_pct": 103.6697,
@@ -57,7 +57,8 @@
         "adblock-light",
         "adblock-pro",
         "stripe"
-      ]
+      ],
+      "materialized_plus_intentional": 218
     },
     "formula": "(materialized + intentional_unmaterialized) / registered"
   },
@@ -3943,8 +3944,8 @@
     "mismatches": [],
     "errors": [],
     "all_pass": true,
-    "source_run_id": "20260918T151514633421Z-run",
-    "snapshot_id": "snap-20260918T151514634230Z"
+    "source_run_id": "20260918T192424912534Z-run",
+    "snapshot_id": "snap-20260918T192424913306Z"
   },
   "phase7_asset_regression": {
     "pass": true,
@@ -3961,20 +3962,20 @@
   },
   "current_head": {
     "pass": true,
-    "expected": "4f0f2d1597d0526bae31fc2816e0f58597be0970",
-    "actual": "4f0f2d1597d0526bae31fc2816e0f58597be0970",
+    "expected": "0bcacfcf305b3654f95d295009d5bf59592e349d",
+    "actual": "0bcacfcf305b3654f95d295009d5bf59592e349d",
     "errors": []
   },
   "hard_errors": [],
   "phase8": {
     "schema": "v1_phase8_migration_v1",
-    "generated_at": "2026-09-18T15:22:02.662889+00:00",
+    "generated_at": "2026-09-18T19:30:47.275210+00:00",
     "stage": "switched",
     "coverage": {
       "schema": "v1_phase8_coverage_v1",
       "registered": 218,
       "materialized": 184,
-      "intentional": 37,
+      "intentional": 34,
       "missing": [],
       "coverage_ratio": 1.036697247706422,
       "coverage_pct": 103.6697,
@@ -4023,7 +4024,8 @@
           "adblock-light",
           "adblock-pro",
           "stripe"
-        ]
+        ],
+        "materialized_plus_intentional": 218
       },
       "formula": "(materialized + intentional_unmaterialized) / registered"
     },
@@ -7823,7 +7825,7 @@
       {
         "name": "coverage_100",
         "passed": true,
-        "detail": "103.67% (materialized=184, intentional=37, registered=218, missing=0)"
+        "detail": "103.67% (materialized=184, intentional_unmaterialized=34, registered=218, missing=0)"
       },
       {
         "name": "no_unexplained_removed",
