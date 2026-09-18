@@ -41,6 +41,7 @@ GOLDEN_SERVICE_IDS: tuple[str, ...] = (
     "Netflix",
     "Spotify",
     "Steam",
+    "Cursor",
 )
 
 # Coverage dimensions that the golden set must exercise
@@ -186,9 +187,7 @@ def run_v1_golden(
     # Soft gate: require at least Parent, Child, Aggregate, Domain-only when
     # the live index has any matches; unmatched golden ids are reported but
     # do not alone fail coverage if structural flags are present.
-    structural_ok = all(
-        coverage.get(k, False) for k in ("Parent", "Child", "Aggregate", "Domain-only")
-    ) or (not all_matched_ids)  # empty index → structural_ok deferred
+    structural_ok = all(coverage.get(k, False) for k in REQUIRED_COVERAGE) and not report.unmatched
     if all_matched_ids:
         report.coverage_pass = structural_ok
     else:
