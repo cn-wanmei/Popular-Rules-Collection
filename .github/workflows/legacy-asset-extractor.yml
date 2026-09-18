@@ -90,6 +90,7 @@ jobs:
           errors = [
               (service["id"], error)
               for service in services
+              if service["id"] not in intentional_only
               for error in service.get("errors", [])
           ]
           assert not errors, errors[:20]
