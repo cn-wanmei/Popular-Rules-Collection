@@ -9,7 +9,6 @@ parent: null
 children:
 - wechat
 - tencentvideo
-- qq
 - wetv
 rule:
   has_domain: true
