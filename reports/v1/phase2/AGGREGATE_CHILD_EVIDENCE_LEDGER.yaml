@@ -1,8 +1,10 @@
 version: 1
 phase: 2.5.1
 policy: repository-local evidence only; no name-based synthesis
-status: unresolved
-purpose: Freeze the evidence review of Aggregate child references before any canonical model mutation.
+status: resolved
+purpose: Freeze the evidence review of Aggregate child references before canonical model mutation.
+resolution: metadata_children_reconciled_to_current_canonical_inventory
+resolved_entries: 10
 entries:
   - aggregate_id: ai
     child_id: mistral
@@ -10,77 +12,77 @@ entries:
     canonical_index_match: false
     filesystem_path_match: false
     historical_path_commits: 0
-    resolution: missing
-    action_required: explicit_service_evidence_or_explicit_deprecation
+    resolution: deprecated_reference
+    action_taken: removed_stale_child_reference
   - aggregate_id: alibaba
     child_id: dingtalk
     declared_by: rule/Alibaba/Alibaba/metadata.yaml
     canonical_index_match: false
     filesystem_path_match: false
     historical_path_commits: 0
-    resolution: missing
-    action_required: explicit_service_evidence_or_explicit_deprecation
+    resolution: deprecated_reference
+    action_taken: removed_stale_child_reference
   - aggregate_id: alibaba
     child_id: taobao
     declared_by: rule/Alibaba/Alibaba/metadata.yaml
     canonical_index_match: false
     filesystem_path_match: false
     historical_path_commits: 0
-    resolution: missing
-    action_required: explicit_service_evidence_or_explicit_deprecation
+    resolution: deprecated_reference
+    action_taken: removed_stale_child_reference
   - aggregate_id: apple
     child_id: siri
     declared_by: rule/Apple/Apple/metadata.yaml
     canonical_index_match: false
     filesystem_path_match: false
     historical_path_commits: 0
-    resolution: missing
-    action_required: explicit_service_evidence_or_explicit_deprecation
+    resolution: deprecated_reference
+    action_taken: removed_stale_child_reference
   - aggregate_id: china
     child_id: steamcn
     declared_by: rule/China/China/metadata.yaml
     canonical_index_match: false
     filesystem_path_match: false
     historical_path_commits: 0
-    resolution: missing
-    action_required: explicit_service_evidence_or_explicit_deprecation
+    resolution: deprecated_reference
+    action_taken: removed_stale_child_reference
   - aggregate_id: developer
     child_id: npm
     declared_by: rule/Developer/Developer/metadata.yaml
     canonical_index_match: false
     filesystem_path_match: false
     historical_path_commits: 0
-    resolution: missing
-    action_required: explicit_service_evidence_or_explicit_deprecation
+    resolution: deprecated_reference
+    action_taken: removed_stale_child_reference
   - aggregate_id: developer
     child_id: supabase
     declared_by: rule/Developer/Developer/metadata.yaml
     canonical_index_match: false
     filesystem_path_match: false
     historical_path_commits: 0
-    resolution: missing
-    action_required: explicit_service_evidence_or_explicit_deprecation
+    resolution: deprecated_reference
+    action_taken: removed_stale_child_reference
   - aggregate_id: google
     child_id: gcp
     declared_by: rule/Google/Google/metadata.yaml
     canonical_index_match: false
     filesystem_path_match: false
     historical_path_commits: 0
-    resolution: missing
-    action_required: explicit_service_evidence_or_explicit_deprecation
+    resolution: deprecated_reference
+    action_taken: removed_stale_child_reference
   - aggregate_id: google
     child_id: googledrive
     declared_by: rule/Google/Google/metadata.yaml
     canonical_index_match: false
     filesystem_path_match: false
     historical_path_commits: 0
-    resolution: missing
-    action_required: explicit_service_evidence_or_explicit_deprecation
+    resolution: deprecated_reference
+    action_taken: removed_stale_child_reference
   - aggregate_id: tencent
     child_id: qq
     declared_by: rule/Tencent/Tencent/metadata.yaml
     canonical_index_match: false
     filesystem_path_match: false
     historical_path_commits: 0
-    resolution: missing
-    action_required: explicit_service_evidence_or_explicit_deprecation
+    resolution: deprecated_reference
+    action_taken: removed_stale_child_reference
