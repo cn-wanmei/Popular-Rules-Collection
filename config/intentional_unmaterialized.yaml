@@ -1,6 +1,8 @@
 version: 1
-updated: '2026-09-17'
-audit_note: 'alibaba_batch03_2026-09-17: Phase A dingding/cainiao/alibabacloud meta; Phase B taobao/tmall/1688 controlled split; Phase C no new blocks'
+updated: '2026-09-18'
+audit_note: 'phase8_p0_orphan_cleanup: removed 3 non-catalogue orphans; registered 34 intentional catalogue entries (domains=0,
+  no fake domains). Prior: alibaba_batch03_2026-09-17: Phase A dingding/cainiao/alibabacloud meta; Phase B taobao/tmall/1688
+  controlled split; Phase C no new blocks'
 services:
   adblock-light:
     code: DEFERRED_PROFILE
@@ -14,9 +16,6 @@ services:
   amazonaws:
     code: COVERED_BY_AGGREGATE
     reason: covered_by_aws_amazon_aggregate
-  applications:
-    code: NO_UPSTREAM
-    reason: generic_bucket_no_dedicated_upstream
   asana:
     code: NO_UPSTREAM
     reason: no_verified_upstream
@@ -59,9 +58,6 @@ services:
   kimi:
     code: NO_UPSTREAM
     reason: no_verified_upstream
-  lan:
-    code: NO_UPSTREAM
-    reason: local_network_no_public_upstream
   lyft:
     code: NO_UPSTREAM
     reason: no_verified_upstream
@@ -74,9 +70,6 @@ services:
   npm:
     code: NO_UPSTREAM
     reason: no_verified_upstream
-  ntp:
-    code: NO_UPSTREAM
-    reason: protocol_service_no_domain_ruleset
   origin:
     code: MAPS_TO
     reason: maps_to_ea

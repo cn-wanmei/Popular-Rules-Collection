@@ -74,6 +74,12 @@ categories:
       service_type: aggregate
       domains: 16
       ips: 0
+    - id: quickpass
+      name: UnionPay QuickPass
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
   china:
     display_name: China
     order: 150
@@ -302,6 +308,12 @@ categories:
       service_type: service
       domains: 3
       ips: 0
+    - id: bosszhipin
+      name: Boss Zhipin
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
     - id: canva
       name: Canva
       path: rule/Other/Canva
@@ -320,11 +332,29 @@ categories:
       service_type: service
       domains: 369
       ips: 0
+    - id: etsy
+      name: Etsy
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
+    - id: expedia
+      name: Expedia
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
     - id: huawei
       name: Huawei
       path: rule/Other/Huawei
       service_type: service
       domains: 402
+      ips: 0
+    - id: lyft
+      name: Lyft
+      path: ''
+      service_type: service
+      domains: 0
       ips: 0
     - id: naver
       name: Naver
@@ -361,6 +391,12 @@ categories:
       path: rule/Other/Slack
       service_type: service
       domains: 11
+      ips: 0
+    - id: temu
+      name: Temu
+      path: ''
+      service_type: service
+      domains: 0
       ips: 0
     - id: uber
       name: Uber
@@ -480,6 +516,30 @@ categories:
       service_type: service
       domains: 4
       ips: 0
+    - id: kimi
+      name: Kimi
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
+    - id: midjourney
+      name: Midjourney
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
+    - id: mistral
+      name: Mistral
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
+    - id: qwen
+      name: Qwen
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
   developer:
     display_name: Developer
     order: 190
@@ -586,6 +646,30 @@ categories:
       service_type: service
       domains: 27
       ips: 0
+    - id: asana
+      name: Asana
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
+    - id: npm
+      name: npm
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
+    - id: pypi
+      name: PyPI
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
+    - id: supabase
+      name: Supabase
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
   alibaba:
     display_name: Alibaba
     order: 30
@@ -638,6 +722,12 @@ categories:
       service_type: service
       domains: 59
       ips: 1
+    - id: aliexpress
+      name: AliExpress
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
   amazon:
     display_name: Amazon
     order: 95
@@ -653,6 +743,12 @@ categories:
       path: rule/Amazon/AWS
       service_type: service
       domains: 77
+      ips: 0
+    - id: amazonaws
+      name: Amazon AWS (alias)
+      path: ''
+      service_type: service
+      domains: 0
       ips: 0
   apple:
     display_name: Apple
@@ -681,6 +777,12 @@ categories:
       path: rule/Apple/iCloud
       service_type: service
       domains: 60
+      ips: 0
+    - id: siri
+      name: Siri
+      path: ''
+      service_type: service
+      domains: 0
       ips: 0
   streaming:
     display_name: Streaming
@@ -788,6 +890,18 @@ categories:
       service_type: service
       domains: 16
       ips: 0
+    - id: crunchyroll
+      name: Crunchyroll
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
+    - id: discoveryplus
+      name: Discovery+
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
   baidu:
     display_name: Baidu
     order: 50
@@ -797,6 +911,24 @@ categories:
       path: rule/Baidu/Baidu
       service_type: aggregate
       domains: 324
+      ips: 0
+    - id: baidumap
+      name: Baidu Map
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
+    - id: baidupan
+      name: Baidu Pan
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
+    - id: wenxiaoyan
+      name: Wenxiaoyan
+      path: ''
+      service_type: service
+      domains: 0
       ips: 0
   gaming:
     display_name: Gaming
@@ -880,6 +1012,24 @@ categories:
       service_type: service
       domains: 1
       ips: 0
+    - id: blizzard
+      name: Blizzard
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
+    - id: origin
+      name: Origin
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
+    - id: steamcn
+      name: Steam China
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
   finance:
     display_name: Finance
     order: 210
@@ -913,6 +1063,12 @@ categories:
       path: rule/Finance/Wise
       service_type: service
       domains: 2
+      ips: 0
+    - id: revolut
+      name: Revolut
+      path: ''
+      service_type: service
+      domains: 0
       ips: 0
   social:
     display_name: Social
@@ -1106,6 +1262,24 @@ categories:
       service_type: service
       domains: 1
       ips: 0
+    - id: gcp
+      name: Google Cloud Platform
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
+    - id: googledrive
+      name: Google Drive
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
+    - id: googlemaps
+      name: Google Maps
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
   microsoft:
     display_name: Microsoft
     order: 80
@@ -1149,6 +1323,12 @@ categories:
       path: rule/JingDong/JingDong
       service_type: aggregate
       domains: 265
+      ips: 0
+    - id: jdfinance
+      name: JD Finance
+      path: ''
+      service_type: service
+      domains: 0
       ips: 0
   restricted:
     display_name: Restricted
@@ -1204,3 +1384,27 @@ categories:
       service_type: service
       domains: 5
       ips: 1
+    - id: qq
+      name: QQ
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
+    - id: tencentmeeting
+      name: Tencent Meeting
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
+    - id: wecom
+      name: WeCom
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
+    - id: yuanbao
+      name: Yuanbao
+      path: ''
+      service_type: service
+      domains: 0
+      ips: 0
