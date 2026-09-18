@@ -21,13 +21,16 @@ def _load_gate(path: Path) -> dict[str, Any]:
     if not isinstance(data, dict):
         raise LegacyDeleteError("final migration gate must be an object")
     return data
-def validate_delete_authorization(gate_path: Path, target: Path, *, explicit_approval: bool) -> dict[str, Any]:
+def validate_delete_authorization(gate_path: Path, target: Path, *, explicit_approval: bool, current_head: str | None = None) -> dict[str, Any]:
     gate = _load_gate(gate_path)
     if gate.get("status") != "PASS": raise LegacyDeleteError("final migration gate is not PASS")
     phase8 = gate.get("phase8") or {}
     if phase8.get("sot") != "v1_canonical": raise LegacyDeleteError("V1 Canonical is not the active Source of Truth")
-    current_head = gate.get("current_head") or {}
-    if current_head.get("pass") is not True: raise LegacyDeleteError("final evidence is not bound to current HEAD")
+    head_evidence = gate.get("current_head") or {}
+    if head_evidence.get("pass") is not True:
+        raise LegacyDeleteError("final evidence is not bound to current HEAD")
+    if current_head is not None and current_head != head_evidence.get("actual"):
+        raise LegacyDeleteError("final evidence HEAD does not match current checkout")
     boundary = gate.get("deletion_boundary") or {}
     if boundary.get("automatic_delete") is not False: raise LegacyDeleteError("automatic deletion is not explicitly disabled")
     target = Path(target)
@@ -43,8 +46,19 @@ def validate_delete_authorization(gate_path: Path, target: Path, *, explicit_app
         "run_id": gate.get("run_id"),
         "current_head": current_head.get("actual"),
     }
-def delete_legacy(gate_path: Path, target: Path, *, explicit_approval: bool = False) -> dict[str, Any]:
-    authorization = validate_delete_authorization(gate_path, target, explicit_approval=explicit_approval)
+def delete_legacy(
+    gate_path: Path,
+    target: Path,
+    *,
+    explicit_approval: bool = False,
+    current_head: str | None = None,
+) -> dict[str, Any]:
+    authorization = validate_delete_authorization(
+        gate_path,
+        target,
+        explicit_approval=explicit_approval,
+        current_head=current_head,
+    )
     target = Path(target)
     shutil.rmtree(target)
     authorization["deleted"] = True
