@@ -25,7 +25,6 @@ on:
       - "scripts/**"
       - "config/**"
       - "rule/**"
-      - "database/services/**"
       - "tests/engine/**"
       - "requirements.txt"
       - "requirements.lock"
