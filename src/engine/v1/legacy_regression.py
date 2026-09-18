@@ -16,6 +16,8 @@ from __future__ import annotations
 
 import json
 from dataclasses import dataclass, field
+
+from src.engine.v1.dedup import normalize_record
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable
@@ -85,6 +87,9 @@ def load_assets_from_records(records: Iterable[dict[str, Any]], source: str) -> 
         val = str(rec.get("value", ""))
         if not typ or not val:
             continue
+        normalized = normalize_record({"type": typ, "value": val})
+        typ = str(normalized["type"])
+        val = str(normalized["value"])
         key = rec.get("asset_key") or _asset_key(typ, val)
         out[key] = AssetRef(
             key=key,
