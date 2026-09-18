@@ -191,7 +191,7 @@ def run_v1_golden(
     # intentionally validated by the Phase 4 contract fixture because the
     # current production catalogue does not yet contain a multi-category/shared
     # service. This preserves the structural gate without fabricating live data.
-    report.live_coverage = dict(coverage) if not hasattr(report, "live_coverage") else report.live_coverage
+    report.live_coverage = dict(coverage)
     contract_coverage = {
         "Parent": True,
         "Child": True,
@@ -208,8 +208,6 @@ def run_v1_golden(
     report.coverage = coverage
     # Hard gate: every required structural dimension must be covered either by
     # the live catalogue or by the explicit Phase 4 structural contract.
-    # the live index has any matches; unmatched golden ids are reported but
-    # do not alone fail coverage if structural flags are present.
     structural_ok = all(coverage.get(k, False) for k in REQUIRED_COVERAGE) and not report.unmatched
     if all_matched_ids:
         report.coverage_pass = structural_ok
