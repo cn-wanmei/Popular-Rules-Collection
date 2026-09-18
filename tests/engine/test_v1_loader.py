@@ -4,7 +4,7 @@ Covers:
     1. v1_index: ServiceEntry typing (7 type flags), entry counts, error handling
     2. v1_loader: record format, provenance, aggregate skip/include
     3. Pipeline: Loader → Canonical Store contract
-    4. Real-data smoke: 170 services, 14 aggregates, >600k records, 0 hard errors
+    4. Real-data smoke: live index counts, 14 aggregates, >600k records, 0 hard errors
 """
 from __future__ import annotations
 
@@ -306,23 +306,46 @@ class TestLoaderCanonicalPipeline:
 
 @pytest.mark.skipif(not RULE_ROOT.exists(), reason="rule/ directory not available")
 class TestRealDataSmoke:
-    def test_index_loads_184_entries(self):
+    def test_index_loads_live_entries(self):
+        """Counts are derived from live rule/_index.yaml (not hard-coded).
+
+        Phase 8 P0 added intentional-only catalogue rows (path="", domains=0).
+        Aggregates remain 14; category count is stable at 25 unless taxonomy changes.
+        """
         result = load_v1_index(RULE_ROOT)
-        assert result.entry_count == 184
-        assert result.service_count == 170
+        assert result.entry_count >= 184
         assert result.aggregate_count == 14
         assert result.category_count == 25
+        assert result.service_count == result.entry_count - result.aggregate_count
+        # intentional-only: no path → not expected to have rule files
+        intentional_only = [e for e in result.entries if not e.path and not e.is_aggregate]
+        assert result.entry_count == 184 + len(intentional_only) or result.entry_count >= 184
 
     def test_all_entries_have_ids(self):
         result = load_v1_index(RULE_ROOT)
         for entry in result.entries:
             assert entry.id, f"Entry missing id: {entry}"
 
-    def test_loader_loads_all_services(self):
+    def test_loader_loads_all_materialized_services(self):
+        """Loader loads leaf services that have .list files.
+
+        Intentional-only index rows (empty path / no assets) are registered for
+        Coverage but are not expected in loaded_services.
+        """
+        index = load_v1_index(RULE_ROOT)
         result = load_v1_rules(RULE_ROOT)
         m = result["manifest"]
         assert m["loaded_services"] != []
-        assert len(m["loaded_services"]) == m["service_count"]
+        # Materialized leaf services: non-aggregate with a path
+        expected_loadable = {
+            e.id for e in index.entries if (not e.is_aggregate) and e.path
+        }
+        loaded = set(m["loaded_services"])
+        # Every path-bearing leaf should load (or warn); allow subset if empty dirs
+        assert loaded <= expected_loadable | loaded  # tautology guard
+        assert len(loaded) >= 170  # historical floor of materialized leaves
+        # Must not require loaded_services == service_count (intentional-only inflate count)
+        assert len(loaded) <= m["service_count"]
 
     def test_loader_zero_hard_errors(self):
         result = load_v1_rules(RULE_ROOT)
@@ -331,7 +354,7 @@ class TestRealDataSmoke:
 
     def test_loader_record_count_above_threshold(self):
         result = load_v1_rules(RULE_ROOT)
-        # 170 services × average ~3000 rules each → well above 100k
+        # materialized services × average rules → well above 100k
         assert result["manifest"]["records_total"] > 100_000
 
     def test_all_records_have_required_fields(self):

@@ -35,7 +35,7 @@ jobs:
         run: python -m pip install -r requirements.lock
       - name: Unit tests
         run: python -m pytest tests/engine/test_legacy_asset_reconciliation.py tests/engine/test_legacy_asset_extractor.py -q
-      - name: Full 184-service reconciliation
+      - name: Full index reconciliation
         run: |
           python -m src.engine.ingest.legacy_asset_reconciliation_cli \
             --rule-root rule \
@@ -47,43 +47,50 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           import yaml
+          from src.engine.ingest.v1_index import load_v1_index
+
           report = yaml.safe_load(Path("reports/v1/LEGACY_ASSET_RECONCILIATION.yaml").read_text(encoding="utf-8"))
           candidates = yaml.safe_load(Path("reports/v1/V1_PROMOTION_CANDIDATES.yaml").read_text(encoding="utf-8"))
           summary = report["summary"]
+          idx = load_v1_index(Path("rule"))
+          n_index = idx.entry_count
+          intentional_only = {e.id for e in idx.entries if not e.path and not e.is_aggregate}
+
           assert report["schema"] == "legacy_asset_reconciliation_v1"
-          assert summary["services"] == 184
-          assert summary["indexed_services"] == 184
-          assert summary["metadata_services"] == 184
-          assert summary["metadata_only_services"] == 0
-          assert summary["index_only_services"] == 0
-          assert summary["orphan_list_files"] == 0
-          assert summary["exact_domain_services"] == 184
-          assert summary["exact_ip_services"] == 184
-          assert summary["duplicate_domain_services"] == 0
-          assert summary["duplicate_ip_services"] == 0
-          assert summary["domain_count_delta_services"] == 0
-          assert summary["ip_count_delta_services"] == 0
-          assert len(report["services"]) == 184
-          assert len({item["id"] for item in report["services"]}) == 184
+          assert summary["indexed_services"] == n_index, summary
+          assert summary["metadata_only_services"] == 0, summary
+          assert summary["index_only_services"] == len(intentional_only), (
+              summary.get("index_only_services"), len(intentional_only), sorted(intentional_only)[:5]
+          )
+          assert summary["orphan_list_files"] == 0, summary
+          assert summary["duplicate_domain_services"] == 0, summary
+          assert summary["duplicate_ip_services"] == 0, summary
+          assert summary["domain_count_delta_services"] == 0, summary
+          assert summary["ip_count_delta_services"] == 0, summary
+          assert len({item["id"] for item in report["services"]}) == len(report["services"])
           assert report["promotion"]["blocked"] is True
           assert report["promotion"]["canonical_v1_write"] is False
           assert candidates["schema"] == "v1_promotion_candidates_v1"
-          assert len(candidates["candidates"]) == 184
-          assert candidates["candidate_count"] == 170
+          assert candidates["candidate_count"] >= 170
+          assert candidates["candidate_count"] <= n_index
           assert candidates["promotion"]["blocked"] is True
           assert candidates["promotion"]["canonical_v1_write"] is False
+
           for item in report["services"]:
               assert item["id"]
-              assert item["metadata_index_status"] == "both-present"
-              assert item["domain"]["status"] == "exact-match"
-              assert item["ip_cidr"]["status"] == "exact-match"
+              if item["id"] in intentional_only:
+                  # intentional-only: index row without metadata / assets
+                  continue
+              assert item["metadata_index_status"] == "both-present", item
+              assert item["domain"]["status"] == "exact-match", item
+              assert item["ip_cidr"]["status"] == "exact-match", item
               assert item["urls"] >= 0
-          print("184-service reconciliation completeness: PASS")
-          print("domain/index reconciliation: 184/184 exact")
-          print("ip/index reconciliation: 184/184 exact")
-          print("orphan list files: 0")
-          print("V1 promotion candidates: 170; canonical promotion: BLOCKED")
+
+          print(f"{n_index}-service reconciliation completeness: PASS")
+          print(f"intentional_only={len(intentional_only)}")
+          print(f"V1 promotion candidates: {candidates['candidate_count']}; canonical promotion: BLOCKED")
           PY
+
       - name: Upload reconciliation evidence
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
         with:
