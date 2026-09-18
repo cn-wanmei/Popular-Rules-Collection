@@ -120,9 +120,22 @@ def test_legacy_delete_refuses_without_sot_switch():
     assert any("SoT is still" in e for e in report.errors)
 
 
-def test_legacy_delete_refuses_without_flag():
+def _all_green_phase8_report():
     cov = compute_coverage({"a"}, {"a"}, {})
-    report = evaluate_phase8_gates(cov)
+    return evaluate_phase8_gates(
+        cov,
+        golden_ok=True,
+        graph_ok=True,
+        legacy_asset_equivalence_ok=True,
+        client_regression_ok=True,
+        deterministic_ok=True,
+        production_run_ok=True,
+        current_head_ok=True,
+    )
+
+
+def test_legacy_delete_refuses_without_flag():
+    report = _all_green_phase8_report()
     report = switch_sot_to_v1(report)
     report = request_legacy_delete(report, allow_legacy_delete=False, final_gate_passed=True)
     assert report.legacy_deleted is False
@@ -130,8 +143,7 @@ def test_legacy_delete_refuses_without_flag():
 
 
 def test_legacy_delete_authorized_only_at_end():
-    cov = compute_coverage({"a"}, {"a"}, {})
-    report = evaluate_phase8_gates(cov)
+    report = _all_green_phase8_report()
     report = switch_sot_to_v1(report)
     report = request_legacy_delete(report, allow_legacy_delete=True, final_gate_passed=True)
     assert report.legacy_deleted is True
