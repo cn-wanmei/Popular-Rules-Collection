@@ -9,7 +9,7 @@ services:
   amazonaws: {primary_category: amazon, display_name: AmazonAWS, categories: [amazon, developer], service_type: service}
   applemusic: {primary_category: apple, display_name: AppleMusic, categories: [apple, streaming], service_type: service, parent: apple}
   appletv: {primary_category: apple, display_name: AppleTV, categories: [apple, streaming], service_type: service, parent: apple}
-  atlassian: {primary_category: developer, display_name: Atlassian, categories: [developer], service_type: service, parent: developer}
+  atlassian: {primary_category: atlassian, display_name: Atlassian, categories: [atlassian, developer], service_type: aggregate, children: [bitbucket, trello]}
   azure: {primary_category: developer, display_name: Azure, categories: [developer, microsoft], service_type: service, parent: developer}
   bluesky: {primary_category: social, display_name: Bluesky, categories: [social], service_type: service}
   boc: {primary_category: unionpay, display_name: BOC, categories: [finance, china], service_type: service, parent: unionpay}
@@ -124,7 +124,7 @@ services:
   linkedin: {primary_category: social, display_name: LinkedIn, categories: [social], service_type: service}
   meituan: {primary_category: china, display_name: Meituan, categories: [china], service_type: service, parent: china}
   microsoft: {primary_category: microsoft, display_name: Microsoft, categories: [microsoft], service_type: aggregate}
-  netease: {primary_category: china, display_name: NetEase, categories: [china, streaming], service_type: service, parent: china}
+  netease: {primary_category: netease, display_name: NetEase, categories: [netease, china], service_type: aggregate, children: [youdao]}
   netflix: {primary_category: streaming, display_name: Netflix, categories: [streaming], service_type: service}
   nintendo: {primary_category: gaming, display_name: Nintendo, categories: [gaming], service_type: service}
   okx: {primary_category: finance, display_name: OKX, categories: [finance], service_type: service}
