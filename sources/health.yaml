@@ -8,17 +8,17 @@ sources:
     empty_blocked: 0
     rules_declared: 8
   blackmatrix7:
-    last_attempt: '2026-09-17T00:10:01.941782+00:00'
-    last_success: '2026-09-17T00:10:01.941796+00:00'
+    last_attempt: '2026-09-18T02:06:31.536284+00:00'
+    last_success: '2026-09-18T02:06:31.536289+00:00'
     failure_count: 0
-    files_ok: 0
+    files_ok: 2
     files_failed: 0
     empty_blocked: 0
     rules_declared: 139
-    files_not_modified: 0
-    files_skipped: 139
-    conditional_cache_hits: 0
-    scheduler_skips: 139
+    files_not_modified: 137
+    files_skipped: 0
+    conditional_cache_hits: 137
+    scheduler_skips: 0
     fetch_workers: 12
     cas_objects: 139
     status: healthy
@@ -47,48 +47,48 @@ sources:
     empty_blocked: 0
     rules_declared: 3
   metacubex:
-    last_attempt: '2026-09-17T00:10:01.996376+00:00'
-    files_ok: 0
+    last_attempt: '2026-09-18T02:06:32.173225+00:00'
+    files_ok: 10
     files_failed: 0
     empty_blocked: 0
     rules_declared: 76
-    last_success: '2026-09-17T00:10:01.996392+00:00'
+    last_success: '2026-09-18T02:06:32.173232+00:00'
     failure_count: 0
-    files_not_modified: 0
-    files_skipped: 76
-    conditional_cache_hits: 0
-    scheduler_skips: 76
+    files_not_modified: 66
+    files_skipped: 0
+    conditional_cache_hits: 66
+    scheduler_skips: 0
     fetch_workers: 12
     cas_objects: 76
     status: healthy
   v2fly:
-    last_attempt: '2026-09-17T00:10:02.028720+00:00'
+    last_attempt: '2026-09-18T02:06:34.667910+00:00'
     files_ok: 0
     files_failed: 0
     empty_blocked: 0
     rules_declared: 56
-    last_success: '2026-09-17T00:10:02.028734+00:00'
+    last_success: '2026-09-18T02:06:34.667914+00:00'
     failure_count: 0
-    files_not_modified: 0
-    files_skipped: 56
-    conditional_cache_hits: 0
-    scheduler_skips: 56
+    files_not_modified: 56
+    files_skipped: 0
+    conditional_cache_hits: 56
+    scheduler_skips: 0
     fetch_workers: 12
     cas_objects: 56
     status: healthy
   dler:
-    last_attempt: '2026-09-17T00:10:02.040694+00:00'
+    last_attempt: '2026-09-18T02:06:34.860791+00:00'
     files_ok: 0
     files_failed: 0
     empty_blocked: 0
     rules_declared: 20
-    last_success: '2026-09-17T00:10:02.040704+00:00'
+    last_success: '2026-09-18T02:06:34.860798+00:00'
     failure_count: 0
-    files_not_modified: 0
-    files_skipped: 20
-    conditional_cache_hits: 0
-    scheduler_skips: 20
+    files_not_modified: 20
+    files_skipped: 0
+    conditional_cache_hits: 20
+    scheduler_skips: 0
     fetch_workers: 12
     cas_objects: 20
     status: healthy
-updated_at: '2026-09-17T00:10:02.047333+00:00'
+updated_at: '2026-09-18T02:06:34.874119+00:00'
