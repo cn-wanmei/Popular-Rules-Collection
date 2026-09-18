@@ -9,12 +9,10 @@ parent: null
 children:
 - alipay
 - alibabacloud
-- dingtalk
 - eleme
 - xianyu
 - youku
 - gaode
-- taobao
 rule:
   has_domain: true
   has_ip: true

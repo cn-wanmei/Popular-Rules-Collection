@@ -9,7 +9,6 @@ children:
 - applemusic
 - appletv
 - icloud
-- siri
 rule:
   has_domain: true
   has_ip: true
