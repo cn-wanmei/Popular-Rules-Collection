@@ -38,3 +38,28 @@ def test_legacy_asset_equivalence_allows_declared_v1_only_services():
         {"proxy"},
     )
     assert allowed["passed"] is True
+
+
+def test_legacy_asset_equivalence_canonicalizes_ipv6_cidr_alias():
+    legacy = [{
+        "service": "stun",
+        "type": "ip_cidr6",
+        "value": "2001:4060:1:1005::10:32/128",
+    }]
+    v1 = [{
+        "service": "stun",
+        "type": "ip_cidr",
+        "value": "2001:4060:1:1005::10:32/128",
+    }]
+    report = audit_legacy_equivalence(legacy, v1, {"stun": 1}, {"stun": 1}, set())
+    assert report["at_100"] is True
+    assert report["passed"] is True
+
+
+def test_final_migration_config_declares_intentional_v1_only_services():
+    from pathlib import Path
+    import yaml
+
+    root = Path(__file__).resolve().parents[2]
+    config = yaml.safe_load((root / "config/v1_final_migration_gate.yaml").read_text(encoding="utf-8"))
+    assert set(config["equivalence"]["allowed_v1_only_services"]) == {"adblock", "china", "gfw", "proxy"}
