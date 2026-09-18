@@ -8,6 +8,7 @@ on:
       - "rule/**"
       - "reports/v1/**"
       - "scripts/v1_phase2_audit.py"
+      - "scripts/v1_phase2_8_integrity.py"
       - ".github/workflows/v1-phase2.yml"
 
 jobs:
@@ -33,6 +34,10 @@ jobs:
           rc=$?
           echo "audit_rc=$rc" >> "$GITHUB_OUTPUT"
           exit 0
+      - name: Phase 2.8 final integrity / reproducibility gate
+        run: |
+          python scripts/v1_phase2_8_integrity.py
+
       - name: Print Phase 2 summary
         run: |
           cat reports/v1/phase2/PHASE2_SUMMARY.md
