@@ -122,12 +122,10 @@ def _validate_release_artifact_set(run_dir: Path) -> dict[str, Any]:
     return {"release_state": state, "release_manifest": manifest, "golden": golden, "quality": quality, "artifact_digests": _artifact_digests(artifacts_root), "cas": cas_check}
 
 
-def promote_run(run_dir: Path, generated_root: Path, *, force: bool = False, baseline_path: Path | None = None) -> dict[str, Any]:
+def promote_run(run_dir: Path, generated_root: Path, *, baseline_path: Path | None = None) -> dict[str, Any]:
     run_dir = Path(run_dir)
     generated_root = Path(generated_root)
     validation = _validate_release_artifact_set(run_dir)
-    if force:
-        pass
 
     src_art = run_dir / "artifacts"
     generated_root.parent.mkdir(parents=True, exist_ok=True)
@@ -211,4 +209,4 @@ def promote_run(run_dir: Path, generated_root: Path, *, force: bool = False, bas
 
 
 def rollback_to_run(run_id: str, runs_root: Path, generated_root: Path) -> dict[str, Any]:
-    return promote_run(Path(runs_root) / run_id, generated_root, force=False)
+    return promote_run(Path(runs_root) / run_id, generated_root)

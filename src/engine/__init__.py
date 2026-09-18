@@ -1,8 +1,8 @@
 """Popular-Rules-Collection Engine v3 — Independent production kernel.
-Product: 1.0.x
+Product: 1.0.2
 Engine codename: v3 (metadata only)
 V2 Runtime Dependency: 0
 """
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 __engine__ = "v3"
 __v2_runtime_dependency__ = 0

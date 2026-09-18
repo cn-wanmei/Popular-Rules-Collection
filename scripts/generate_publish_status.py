@@ -33,7 +33,12 @@ def latest_collection() -> dict[str, Any] | None:
     if not candidates:
         return None
     _, directory = max(candidates)
-    for manifest in (directory / "collection_manifest.yaml", directory / "manifest.yaml", directory / "collection_manifest.json"):
+    for manifest in (
+        directory / "manifests" / "_collection.json",
+        directory / "collection_manifest.yaml",
+        directory / "manifest.yaml",
+        directory / "collection_manifest.json",
+    ):
         if not manifest.exists():
             continue
         try:

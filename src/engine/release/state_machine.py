@@ -71,6 +71,7 @@ def evaluate_release(run_dir: Path) -> dict[str, Any]:
     gates["ir_present"] = (run_dir / "ir" / "manifest.json").exists() and (run_dir / "ir" / "ir.json").exists()
     gates["artifacts_present"] = (run_dir / "artifacts").exists()
     gates["diff_present"] = (run_dir / "reports" / "diff" / "latest.json").exists()
+    gates["baseline_evidence_present"] = (run_dir / "metrics" / "baseline-evidence.json").exists()
 
     quality = _load_json(run_dir / "quality.json")
     gates["quality_all_hard_pass"] = quality.get("all_hard_pass") is True and quality.get("decision") == "PASS"
@@ -123,6 +124,7 @@ def evaluate_release(run_dir: Path) -> dict[str, Any]:
         "diff_digest": _sha256(run_dir / "reports" / "diff" / "latest.json"),
         "quality_digest": _sha256(run_dir / "quality.json"),
         "metrics_digest": _sha256(run_dir / "metrics" / "metrics.json"),
+        "baseline_evidence_digest": _sha256(run_dir / "metrics" / "baseline-evidence.json"),
         "client_digests": {client: _dir_sha256(artifacts_root / client) for client in sorted(required_clients)},
         "v2_runtime_dependency": 0,
     }

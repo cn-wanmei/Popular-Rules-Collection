@@ -106,23 +106,33 @@ def build_observability(run_dir: Path) -> dict[str, Any]:
         "v2_runtime_dependency": 0,
     }
 
-    # Baseline is a separate immutable control-plane artifact. Never compare
-    # against a partially written or timestamp-bearing run file.
-    baseline_path = Path(run_dir).parents[2] / "baseline" / "latest.json"
+    # Baseline is a single control-plane artifact. The semantic diff baseline
+    # and operational metric baseline are distinct artifacts, but a run that
+    # sees a diff baseline must also have the operational baseline.
+    repo_root = Path(run_dir).parents[2]
+    baseline_path = repo_root / "baseline" / "latest.json"
     baseline = _load_json(baseline_path, None)
     baseline_cfg = {"baseline": {"min_ratio": 0.50, "max_ratio": 1.50}}
     try:
         from src.engine.observability.baseline import evaluate_baseline
-        baseline_decision = evaluate_baseline(metrics, baseline, baseline_cfg)
-        metrics["baseline"] = {
-            "schema": "baseline_evidence_v1",
-            "decision": baseline_decision.decision,
-            "anomalies": list(baseline_decision.anomalies),
-            "baseline_path": str(baseline_path.relative_to(Path(run_dir).parents[2])) if baseline_path.exists() else None,
-        }
+        if bool(diff.get("baseline")) and baseline is None:
+            metrics["baseline"] = {
+                "schema": "baseline_evidence_v1",
+                "decision": "ERROR",
+                "anomalies": ["diff baseline is present but operational baseline is missing"],
+                "baseline_path": None,
+            }
+        else:
+            baseline_decision = evaluate_baseline(metrics, baseline, baseline_cfg)
+            metrics["baseline"] = {
+                "schema": "baseline_evidence_v1",
+                "decision": baseline_decision.decision,
+                "anomalies": list(baseline_decision.anomalies),
+                "baseline_path": str(baseline_path.relative_to(repo_root)) if baseline_path.exists() else None,
+                "source_run_id": baseline.get("source_run_id") if isinstance(baseline, dict) else None,
+                "source_snapshot_id": baseline.get("source_snapshot_id") if isinstance(baseline, dict) else None,
+            }
     except Exception as exc:
-        # Observability must never silently convert an evaluator failure into
-        # a PASS. Record an explicit degraded state for the release policy.
         metrics["baseline"] = {"schema": "baseline_evidence_v1", "decision": "ERROR", "anomalies": [], "error": f"{type(exc).__name__}: {exc}"}
 
     metrics_dir = run_dir / "metrics"
