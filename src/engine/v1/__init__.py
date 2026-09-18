@@ -1,10 +1,14 @@
-"""V1 Canonical Service Model — Graph, Closure, Dedup (Phase 3.2–3.4).
+"""V1 Canonical Service Model — Graph, Closure, Dedup, Golden, Regression (Phase 3–7).
 
 Pipeline:
     V1IndexResult (Phase 3.1)
-      → Graph Engine   (3.2)  Dependency / Hierarchy / Aggregate + Cycle Detector
-      → Closure Engine (3.3)  dependency_closure / aggregate_closure
-      → Canonical Dedup(3.4)  AssetKey → Normalize → Dedup → IR-ready records
+      → Graph Engine        (3.2)
+      → Closure Engine      (3.3)
+      → Canonical Dedup     (3.4)
+      → Golden Set          (4)
+      → Client Regression   (5)
+      → Deterministic Build (6)
+      → Legacy Regression   (7)
 """
 from .errors import CycleDetectedError, V1GraphError
 from .graph import (
@@ -23,6 +27,10 @@ from .dedup import (
     dedup_records,
     normalize_record,
 )
+from .golden import GOLDEN_SERVICE_IDS, GoldenReport, run_v1_golden
+from .client_regression import CLIENTS, ClientRegressionReport, run_client_regression
+from .deterministic import DeterministicReport, compare_builds, digest_run, run_deterministic_builds
+from .legacy_regression import LegacyRegressionReport, compare_legacy_to_v1, run_legacy_regression
 
 __all__ = [
     "CycleDetectedError",
@@ -40,4 +48,17 @@ __all__ = [
     "URLAssetKey",
     "dedup_records",
     "normalize_record",
+    "GOLDEN_SERVICE_IDS",
+    "GoldenReport",
+    "run_v1_golden",
+    "CLIENTS",
+    "ClientRegressionReport",
+    "run_client_regression",
+    "DeterministicReport",
+    "compare_builds",
+    "digest_run",
+    "run_deterministic_builds",
+    "LegacyRegressionReport",
+    "compare_legacy_to_v1",
+    "run_legacy_regression",
 ]
