@@ -40,3 +40,12 @@ sources / upstream collection
 `collect.py` and the dataset collectors are transport/fetch steps only. Service-rule normalization and multi-client build happen inside `src/engine/`.
 
 `database/services` is not a V3 runtime input. Legacy data can only enter through `src/engine/ingest/migrate_legacy.py` as a one-time migration bridge.
+
+## V1 / Legacy migration boundary
+
+- `database/services/` is the explicit Legacy Source for the Phase 8 migration and is not a V3 runtime input.
+- `rule/` is the V1 Canonical Service Model contract after cutover.
+- `generated/` is distribution output only and is never a Source of Truth.
+- Legacy evidence workflows are manual-only migration tools.
+- The final migration gate is asset-level and bound to the current commit and RC_READY V3 run.
+- The gate never deletes Legacy automatically; deletion requires a separate explicit operator action.
