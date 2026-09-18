@@ -105,14 +105,19 @@ def audit_legacy_equivalence(
     legacy_counts: dict[str, int],
     v1_counts: dict[str, int],
     intentional_ids: set[str],
+    allowed_v1_only_services: set[str] | None = None,
 ) -> dict[str, Any]:
+    allowed_v1_only_services = allowed_v1_only_services or set()
     legacy = _asset_sets(legacy_records)
     v1 = _asset_sets(v1_records)
     legacy_services = set(legacy) | set(legacy_counts)
     v1_services = set(v1) | set(v1_counts)
 
     missing_services = sorted(legacy_services - v1_services)
-    extra_services = sorted(s for s in (v1_services - legacy_services) if s not in intentional_ids)
+    extra_services = sorted(
+        s for s in (v1_services - legacy_services)
+        if s not in intentional_ids and s not in allowed_v1_only_services
+    )
     intentional_with_assets = sorted(
         s for s in (v1_services - legacy_services)
         if s in intentional_ids and v1.get(s)
@@ -155,6 +160,7 @@ def audit_legacy_equivalence(
         "extra_v1_assets": extra_assets,
         "unexpected_extra_services": extra_services,
         "extra_intentional_services_with_assets": intentional_with_assets,
+        "allowed_v1_only_services": sorted(allowed_v1_only_services),
         "legacy_services": len(legacy_services),
         "v1_services": len(v1_services),
     }
@@ -215,6 +221,7 @@ def main() -> int:
         raise SystemExit("final migration gate config has no required clients")
 
     intentional = load_intentional_registry(ROOT / "config/intentional_unmaterialized.yaml")
+    allowed_v1_only = set((config.get("equivalence") or {}).get("allowed_v1_only_services") or ())
     index = load_v1_index(args.rule_root)
 
     legacy_records, legacy_counts, legacy_errors = load_legacy_source_assets(args.legacy_root)
@@ -225,7 +232,12 @@ def main() -> int:
     catalogue = compute_coverage(registered, materialized, intentional)
 
     equivalence = audit_legacy_equivalence(
-        legacy_records, v1_records, legacy_counts, v1_counts, set(intentional)
+        legacy_records,
+        v1_records,
+        legacy_counts,
+        v1_counts,
+        set(intentional),
+        allowed_v1_only,
     )
 
     legacy_for_regression = load_assets_from_records(legacy_records, "legacy")
