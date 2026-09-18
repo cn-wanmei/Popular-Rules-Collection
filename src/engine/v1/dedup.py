@@ -16,7 +16,9 @@ AssetKey hierarchy:
 from __future__ import annotations
 
 import hashlib
+import ipaddress
 import re
+from urllib.parse import urlsplit, urlunsplit
 from dataclasses import dataclass
 from typing import Any, Iterable
 
@@ -86,13 +88,31 @@ def _normalize_domain(value: str) -> str:
 
 
 def _normalize_cidr(value: str) -> str:
-    v = value.strip().lower()
-    # Collapse whitespace; keep as-is otherwise (full IP normalization is heavier)
-    return re.sub(r"\s+", "", v)
+    v = re.sub(r"\s+", "", value.strip())
+    try:
+        return str(ipaddress.ip_network(v, strict=False))
+    except ValueError:
+        return v.lower()
 
 
 def _normalize_url(value: str) -> str:
-    return value.strip()
+    value = value.strip()
+    try:
+        parts = urlsplit(value)
+    except ValueError:
+        return value
+    if parts.scheme.lower() not in {"http", "https"} or not parts.hostname:
+        return value
+    host = parts.hostname.lower()
+    try:
+        port = parts.port
+    except ValueError:
+        return value
+    if port in (None, 80 if parts.scheme.lower() == "http" else 443):
+        netloc = host
+    else:
+        netloc = f"{host}:{port}"
+    return urlunsplit((parts.scheme.lower(), netloc, parts.path or "", parts.query, ""))
 
 
 def normalize_record(record: dict[str, Any]) -> dict[str, Any]:
