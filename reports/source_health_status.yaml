@@ -1,5 +1,5 @@
 schema: source_health_status_v1
-generated_at: '2026-09-18T10:56:28.666778Z'
+generated_at: '2026-09-18T11:18:23.501313Z'
 policy: config/health_policy.yaml
 lifecycle_registry: sources/lifecycle.yaml
 sources:
@@ -15,20 +15,20 @@ sources:
   blackmatrix7:
     lifecycle: active
     status: healthy
-    reason: last success 8h ago
+    reason: last success 9h ago
     last_success: '2026-09-18T02:06:31.536289+00:00'
     last_attempt: '2026-09-18T02:06:31.536284+00:00'
     failure_count: 0
-    age_hours: 8
+    age_hours: 9
     rules_declared: 139
   dler:
     lifecycle: active
     status: healthy
-    reason: last success 8h ago
+    reason: last success 9h ago
     last_success: '2026-09-18T02:06:34.860798+00:00'
     last_attempt: '2026-09-18T02:06:34.860791+00:00'
     failure_count: 0
-    age_hours: 8
+    age_hours: 9
     rules_declared: 20
   hagezi:
     lifecycle: active
@@ -51,11 +51,11 @@ sources:
   metacubex:
     lifecycle: active
     status: healthy
-    reason: last success 8h ago
+    reason: last success 9h ago
     last_success: '2026-09-18T02:06:32.173232+00:00'
     last_attempt: '2026-09-18T02:06:32.173225+00:00'
     failure_count: 0
-    age_hours: 8
+    age_hours: 9
     rules_declared: 76
   sukkaw:
     lifecycle: active
@@ -69,9 +69,9 @@ sources:
   v2fly:
     lifecycle: active
     status: healthy
-    reason: last success 8h ago
+    reason: last success 9h ago
     last_success: '2026-09-18T02:06:34.667914+00:00'
     last_attempt: '2026-09-18T02:06:34.667910+00:00'
     failure_count: 0
-    age_hours: 8
+    age_hours: 9
     rules_declared: 56
