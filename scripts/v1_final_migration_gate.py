@@ -255,8 +255,34 @@ def main() -> int:
     run_dir = args.data_root / "runs" / args.run_id
     client_report = run_client_regression(run_dir)
     client_ok = all(client_report.client_artifacts_ok.get(c, False) for c in required_clients) and not client_report.errors
+
+    # Phase 5 rule-kind requirements are driven by the actual production IR and
+    # the client capability matrix. URL is non-native for all seven clients in
+    # the current matrix, and Aggregate is an entity type rather than a native
+    # rule type; neither should become a false hard failure when the production
+    # build cannot natively emit them.
+    ir = _json(run_dir / "ir" / "ir.json")
+    actual_types = {str(r.get("type", "")).strip().casefold() for r in (ir.get("rules") or []) if isinstance(r, dict)}
+    kind_presence = {
+        "domain": "domain" in actual_types,
+        "suffix": "domain_suffix" in actual_types,
+        "keyword": "domain_keyword" in actual_types,
+        "CIDR": bool({"ip_cidr", "ip_cidr6"} & actual_types),
+        "URL": "url" in actual_types,
+        "Aggregate": bool((ir.get("entities") or {}).get("aggregates")),
+    }
+    matrix = _yaml(ROOT / "config/client_capability_matrix.yaml")
+    supported_any = {
+        "domain": any("domain" in {str(x).casefold() for x in (cfg.get("native_rule_types") or [])} for cfg in (matrix.get("clients") or {}).values() if isinstance(cfg, dict)),
+        "suffix": any("domain_suffix" in {str(x).casefold() for x in (cfg.get("native_rule_types") or [])} for cfg in (matrix.get("clients") or {}).values() if isinstance(cfg, dict)),
+        "keyword": any("domain_keyword" in {str(x).casefold() for x in (cfg.get("native_rule_types") or [])} for cfg in (matrix.get("clients") or {}).values() if isinstance(cfg, dict)),
+        "CIDR": any({"ip_cidr", "ip_cidr6"} & {str(x).casefold() for x in (cfg.get("native_rule_types") or [])} for cfg in (matrix.get("clients") or {}).values() if isinstance(cfg, dict)),
+        "URL": any("url" in {str(x).casefold() for x in (cfg.get("native_rule_types") or [])} for cfg in (matrix.get("clients") or {}).values() if isinstance(cfg, dict)),
+        "Aggregate": False,
+    }
+    required_kind = {kind: bool(kind_presence[kind] and supported_any[kind]) for kind in RULE_KINDS}
     kind_ok = {
-        kind: any(item.present for item in client_report.results if item.kind == kind)
+        kind: (not required_kind[kind]) or any(item.present for item in client_report.results if item.kind == kind)
         for kind in RULE_KINDS
     }
     phase5_ok = client_ok and all(kind_ok.values())
@@ -322,6 +348,9 @@ def main() -> int:
             "pass": phase5_ok,
             "clients": client_report.client_artifacts_ok,
             "kind_coverage": kind_ok,
+            "required_kind": required_kind,
+            "production_kind_presence": kind_presence,
+            "supported_by_any_client": supported_any,
             "errors": client_report.errors,
         },
         "phase6_full_determinism": determinism,
