@@ -8,9 +8,7 @@ parent: null
 children:
 - youtube
 - googlefcm
-- googledrive
 - firebase
-- gcp
 rule:
   has_domain: true
   has_ip: true
