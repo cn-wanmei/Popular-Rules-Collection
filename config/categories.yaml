@@ -73,6 +73,10 @@ categories:
 - id: other
   display_name: Other
   order: 230
+- id: restricted
+  display_name: Restricted
+  order: 250
+  notes: Restricted media domain aggregate (trusted upstream only)
 - id: xai
   display_name: xAI
   order: 240
@@ -88,7 +92,3 @@ categories:
 - id: pypi
   display_name: PyPI
   order: 290
-- id: restricted
-  display_name: Restricted
-  order: 250
-  notes: Restricted media domain aggregate (trusted upstream only)
