@@ -93,9 +93,20 @@ def load_v1_source_assets(root: Path) -> tuple[list[dict[str, str]], dict[str, i
 
 
 def _asset_sets(records: list[dict[str, str]]) -> dict[str, set[tuple[str, str]]]:
+    """Build per-service (type, value) sets with canonical normalization applied.
+
+    Records passed to ``audit_legacy_equivalence`` may arrive pre-normalised
+    (from ``load_*_source_assets``) or as raw dicts (from tests / callers that
+    construct records directly).  Applying ``normalize_record`` here ensures
+    that type aliases such as ``ip_cidr6 → ip_cidr`` are resolved before the
+    set comparison, preventing false "missing asset" reports.
+    """
+    from src.engine.v1.dedup import normalize_record
+
     result: dict[str, set[tuple[str, str]]] = defaultdict(set)
     for rec in records:
-        result[rec["service"]].add((rec["type"], rec["value"]))
+        normed = normalize_record(rec)
+        result[normed["service"]].add((normed["type"], normed["value"]))
     return dict(result)
 
 
