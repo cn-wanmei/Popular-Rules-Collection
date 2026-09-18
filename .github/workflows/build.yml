@@ -9,6 +9,11 @@ on:
       - "scripts/cross_client_semantic_test.py"
       - "scripts/architecture_gate.py"
       - "config/**"
+      - "rule/**"
+      - "database/services/**"
+      - "src/engine/v1/**"
+      - "scripts/v1_final_migration_gate.py"
+      - "scripts/v3_reproducibility_gate.py"
       - "requirements.txt"
       - "requirements.lock"
       - ".github/workflows/build.yml"
@@ -32,7 +37,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 180
     permissions:
       contents: read
     steps:
@@ -153,6 +158,25 @@ jobs:
 
       - name: Unit and contract tests
         run: PYTHONPATH=. python -m pytest tests/engine/ -v --ignore=tests/engine/unit_legacy_v2_ref
+      - name: V3 full determinism — production run + two replays
+        run: |
+          RUN_ID=$(cat engine-run-id.txt)
+          PYTHONPATH=. python scripts/v3_reproducibility_gate.py \
+            --run-id "$RUN_ID" \
+            --data data \
+            --report reports/v1/V3_DETERMINISM_FINAL.json
+
+      - name: Phase 8 final migration gate
+        run: |
+          RUN_ID=$(cat engine-run-id.txt)
+          PYTHONPATH=. python scripts/v1_final_migration_gate.py \
+            --run-id "$RUN_ID" \
+            --data-root data \
+            --determinism-report reports/v1/V3_DETERMINISM_FINAL.json \
+            --expected-commit "${{ github.sha }}" \
+            --json-out reports/v1/FINAL_MIGRATION_GATE.json \
+            --phase8-out reports/v1/PHASE8_GATE_REPORT.json \
+            --legacy-regression-out reports/v1/LEGACY_REGRESSION_PHASE7.json
 
       - name: Stage publish candidate
         if: ${{ inputs.dry_run != true }}
@@ -170,6 +194,11 @@ jobs:
           rm -f "release-candidate/data/runs/${RUN_ID}/ir/ir.json"
           printf '%s\n' "$RUN_ID" > release-candidate/run-id.txt
           cp config/client_capability_matrix.yaml release-candidate/
+          mkdir -p release-candidate/reports/v1
+          cp reports/v1/FINAL_MIGRATION_GATE.json release-candidate/reports/v1/
+          cp reports/v1/PHASE8_GATE_REPORT.json release-candidate/reports/v1/
+          cp reports/v1/LEGACY_REGRESSION_PHASE7.json release-candidate/reports/v1/
+          cp reports/v1/V3_DETERMINISM_FINAL.json release-candidate/reports/v1/
 
       - name: Upload immutable build artifact
         if: ${{ inputs.dry_run != true }}
