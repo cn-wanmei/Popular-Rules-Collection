@@ -1,0 +1,43 @@
+name: Phase 8 Legacy Delete
+on:
+  workflow_dispatch:
+    inputs:
+      approve:
+        description: Explicit operator approval to delete database/services
+        required: true
+        type: boolean
+        default: false
+jobs:
+  delete:
+    if: ${{ inputs.approve == true }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12.14"
+      - run: python -m pip install -r requirements.lock
+      - name: Verify final migration gate
+        run: |
+          test -s reports/v1/FINAL_MIGRATION_GATE.json
+          PYTHONPATH=. python - <<'PY'
+          import json
+          from pathlib import Path
+          gate = json.loads(Path("reports/v1/FINAL_MIGRATION_GATE.json").read_text())
+          assert gate.get("status") == "PASS", gate
+          assert gate.get("phase8", {}).get("sot") == "v1_canonical", gate
+          assert gate.get("current_head", {}).get("pass") is True, gate
+          assert gate.get("deletion_boundary", {}).get("automatic_delete") is False, gate
+          print("final migration gate: PASS")
+          PY
+      - name: Explicit delete
+        run: PYTHONPATH=. python scripts/legacy_delete.py --approve
+      - name: Commit deletion
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A database/services
+          git commit -m "chore(phase8): delete legacy service source"
+          git push origin HEAD:main
