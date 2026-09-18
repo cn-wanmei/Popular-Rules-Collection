@@ -3,13 +3,10 @@
 Physical path is derived **only** from `primary_category` + display names.
 
 ```text
-config/categories.yaml          # ecosystem id → display_name
-config/service_primary.yaml     # service id → primary_category, display_name, tags
-database/services/*.yaml        # data
-        ↓
-scripts/generate_rule_pages.py
-        ↓
-rule/{Ecosystem}/{Service}/
+config/categories.yaml          # category definitions
+config/service_primary.yaml     # service identity / primary category
+rule/_index.yaml + rule/{Ecosystem}/{Service}/  # V1 Canonical Service Model
+database/services/*.yaml        # Legacy Source; not a V3 runtime input
 ```
 
 Examples:
@@ -22,7 +19,7 @@ Examples:
 | icbc (future) | `rule/UnionPay/ICBC/` |
 | xbox | `rule/Microsoft/Xbox/` |
 
-Do not hand-edit `rule/`.
+Do not treat `database/services/` as a V3 runtime source. V1 model changes must pass the final migration gate.
 
 ## Phase 8 source-of-truth boundary
 
