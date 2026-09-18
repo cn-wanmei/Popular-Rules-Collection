@@ -4,8 +4,8 @@
 
 | Layer | Path | Editable | Role |
 |-------|------|----------|------|
-| Data | `database/` | No (pipeline) | Canonical services, domains, provenance |
-| Product pages | `rule/` | No (generated) | Human browse + classical base lists |
+| Legacy Source | `database/services/` | No | Historical service bodies; migration evidence only |
+| V1 Canonical Model | `rule/` | Controlled by V1 contract | Service identity, metadata, classical assets |
 | Clients | `generated/` | No (generated) | Mihomo / Surge / sing-box / … |
 | Config | `config/` | Yes | categories, primary mapping, CDN |
 
