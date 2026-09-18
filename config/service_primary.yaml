@@ -8,7 +8,7 @@ services:
   tencent: {primary_category: tencent, display_name: Tencent, categories: [tencent, china], service_type: aggregate, children: [wechat, tencentvideo, qq, qqmusic, qqmail, wecom, tencentmeeting, tencentcloud]}
   baidu: {primary_category: baidu, display_name: Baidu, categories: [baidu, china], service_type: aggregate, children: [baidunetdisk]}
   bytedance: {primary_category: bytedance, display_name: ByteDance, categories: [bytedance, china], service_type: aggregate, children: [douyin, doubao, feishu]}
-  netease: {primary_category: china, display_name: NetEase, categories: [china, streaming], service_type: service, parent: china}
+  netease: {primary_category: netease, display_name: NetEase, categories: [netease, china], service_type: aggregate, children: [youdao]}
   jingdong: {primary_category: jingdong, display_name: JingDong, categories: [jingdong, china], service_type: aggregate}
   microsoft: {primary_category: microsoft, display_name: Microsoft, categories: [microsoft], service_type: aggregate, children: [onedrive, xbox, github, teams, azure]}
   google: {primary_category: google, display_name: Google, categories: [google], service_type: aggregate, children: [youtube, googlefcm, googledrive, firebase, gcp, googlecloud, youtubemusic]}
@@ -29,7 +29,7 @@ services:
   groq: {primary_category: groq, display_name: Groq, categories: [ai], service_type: service}
   huggingface: {primary_category: huggingface, display_name: "Hugging Face", categories: [ai], service_type: service}
   deepseek: {primary_category: deepseek, display_name: DeepSeek, categories: [ai], service_type: service}
-  grok: {primary_category: ai, display_name: Grok, categories: [ai], service_type: service, parent: ai}
+  grok: {primary_category: xai, display_name: Grok, categories: [ai], service_type: service}
   cursor: {primary_category: cursor, display_name: Cursor, categories: [developer, ai], service_type: service}
   elevenlabs: {primary_category: elevenlabs, display_name: ElevenLabs, categories: [ai], service_type: service}
   github: {primary_category: microsoft, display_name: GitHub, categories: [microsoft, developer], service_type: service, parent: microsoft}
@@ -66,20 +66,20 @@ services:
   doubao: {primary_category: bytedance, display_name: Doubao, categories: [bytedance, china, ai], service_type: service, parent: bytedance}
   feishu: {primary_category: bytedance, display_name: Feishu, categories: [bytedance, china], service_type: service, parent: bytedance}
   baidunetdisk: {primary_category: baidu, display_name: "Baidu Netdisk", categories: [baidu, china], service_type: service, parent: baidu}
-  youdao: {primary_category: china, display_name: Youdao, categories: [china], service_type: service, parent: china}
+  youdao: {primary_category: netease, display_name: Youdao, categories: [netease, china], service_type: service, parent: netease}
   adblock: {primary_category: privacy, display_name: AdBlock, categories: [privacy], service_type: aggregate, children: [adblock-pro, adblock-light]}
   proxy: {primary_category: network, display_name: Proxy, categories: [network], service_type: service}
   gfw: {primary_category: network, display_name: GFW, categories: [network], service_type: service}
   private: {primary_category: network, display_name: Private, categories: [network], service_type: service}
-  atlassian: {primary_category: developer, display_name: Atlassian, categories: [developer], service_type: service, parent: developer}
-  meta: {primary_category: social, display_name: Meta, categories: [social], service_type: aggregate, children: [messenger]}
-  bitbucket: {primary_category: developer, display_name: Bitbucket, categories: [developer], service_type: service, parent: developer}
+  atlassian: {primary_category: atlassian, display_name: Atlassian, categories: [atlassian, developer], service_type: aggregate, children: [bitbucket, trello]}
+  meta: {primary_category: meta, display_name: Meta, categories: [meta, social], service_type: aggregate, children: [messenger]}
+  bitbucket: {primary_category: atlassian, display_name: Bitbucket, categories: [atlassian, developer], service_type: service, parent: atlassian}
   trello: {primary_category: atlassian, display_name: Trello, categories: [atlassian, developer], service_type: service, parent: atlassian}
   messenger: {primary_category: meta, display_name: Messenger, categories: [meta, social], service_type: service, parent: meta}
   youtubemusic: {primary_category: google, display_name: "YouTube Music", categories: [google, streaming], service_type: service, parent: google}
   dewu: {primary_category: dewu, display_name: Dewu, categories: [china], service_type: service}
   npm: {primary_category: npm, display_name: npm, categories: [developer], service_type: service}
-  pypi: {primary_category: developer, display_name: PyPI, categories: [developer], service_type: service}
+  pypi: {primary_category: pypi, display_name: PyPI, categories: [developer], service_type: service}
   netlify: {primary_category: netlify, display_name: Netlify, categories: [developer], service_type: service}
   canva: {primary_category: canva, display_name: Canva, categories: [design], service_type: service}
   signal: {primary_category: signal, display_name: Signal, categories: [social], service_type: service}
