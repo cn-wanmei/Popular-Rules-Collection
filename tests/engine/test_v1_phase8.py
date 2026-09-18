@@ -124,7 +124,7 @@ def test_legacy_delete_refuses_without_flag():
     cov = compute_coverage({"a"}, {"a"}, {})
     report = evaluate_phase8_gates(cov)
     report = switch_sot_to_v1(report)
-    report = request_legacy_delete(report, allow_legacy_delete=False)
+    report = request_legacy_delete(report, allow_legacy_delete=False, final_gate_passed=True)
     assert report.legacy_deleted is False
     assert any("allow_legacy_delete" in e for e in report.errors)
 
@@ -133,7 +133,7 @@ def test_legacy_delete_authorized_only_at_end():
     cov = compute_coverage({"a"}, {"a"}, {})
     report = evaluate_phase8_gates(cov)
     report = switch_sot_to_v1(report)
-    report = request_legacy_delete(report, allow_legacy_delete=True)
+    report = request_legacy_delete(report, allow_legacy_delete=True, final_gate_passed=True)
     assert report.legacy_deleted is True
     assert report.stage == "legacy_deleted"
 
