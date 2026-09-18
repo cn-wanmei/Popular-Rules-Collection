@@ -1,5 +1,5 @@
 version: 2
-updated: '2026-09-17'
+updated: '2026-09-18'
 defaults: {service_type: service}
 services:
   ai: {primary_category: ai, display_name: AI, categories: [ai], service_type: aggregate, children: [openai, claude, gemini, copilot, anthropic, perplexity, groq, xai, mistral, huggingface, deepseek, grok, cursor, elevenlabs]}
