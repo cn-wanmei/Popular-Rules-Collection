@@ -1,5 +1,13 @@
 name: Phase 8 Legacy Delete
 on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "src/engine/legacy/**"
+      - "tests/engine/test_phase8_legacy_delete.py"
+      - "scripts/legacy_delete.py"
+      - "docs/PHASE8_LEGACY_DELETE.md"
+      - ".github/workflows/phase8-legacy-delete.yml"
   workflow_dispatch:
     inputs:
       approve:
@@ -8,8 +16,24 @@ on:
         type: boolean
         default: false
 jobs:
+  validate:
+    if: ${{ github.event_name == 'pull_request' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12.14"
+      - run: python -m pip install -r requirements.lock
+      - name: Architecture Gate
+        run: python scripts/architecture_gate.py
+      - name: Phase 8 safety tests
+        run: PYTHONPATH=. python -m pytest tests/engine/test_phase8_legacy_delete.py -q
+
   delete:
-    if: ${{ inputs.approve == true }}
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.approve == true }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
