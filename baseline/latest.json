@@ -1,0 +1,14 @@
+{
+  "schema": "production_baseline_v1",
+  "source_run_id": "20260918T175019058992Z-run",
+  "source_snapshot_id": "snap-20260918T175019059736Z",
+  "records": {
+    "canonical_errors": 0,
+    "clean": 259570,
+    "ingest_errors": 0,
+    "ingested": 259570,
+    "memberships": 259570,
+    "quarantined": 0,
+    "unique_rules": 128714
+  }
+}
