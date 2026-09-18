@@ -1,0 +1,26 @@
+name: Phase 5 Unified Release Engine
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "src/engine/release/engine.py"
+      - "src/engine/cli/__main__.py"
+      - "tests/engine/test_phase5_unified_release.py"
+      - "docs/PHASE5_UNIFIED_RELEASE_ENGINE.md"
+      - ".github/workflows/phase5-unified-release.yml"
+  workflow_dispatch:
+jobs:
+  phase5:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12.14"
+      - run: python -m pip install -r requirements.lock
+      - name: Architecture Gate
+        run: python scripts/architecture_gate.py
+      - name: Phase 5 focused tests
+        run: PYTHONPATH=. python -m pytest tests/engine/test_phase5_unified_release.py -q
