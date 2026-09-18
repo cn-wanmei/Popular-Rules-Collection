@@ -289,7 +289,6 @@ def main() -> int:
     if final_ok:
         phase8 = switch_sot_to_v1(phase8)
         phase8.legacy_asset_equivalence = equivalence
-        phase8 = request_legacy_delete(phase8, allow_legacy_delete=False, final_gate_passed=True)
     else:
         phase8.legacy_asset_equivalence = equivalence
 
