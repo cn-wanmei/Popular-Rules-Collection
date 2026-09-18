@@ -10,7 +10,6 @@ on:
       - "scripts/architecture_gate.py"
       - "config/**"
       - "rule/**"
-      - "database/services/**"
       - "src/engine/v1/**"
       - "scripts/v1_final_migration_gate.py"
       - "scripts/v3_reproducibility_gate.py"
