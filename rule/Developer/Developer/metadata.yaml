@@ -12,7 +12,6 @@ children:
 - cloudflare
 - atlassian
 - jetbrains
-- npm
 - oracle
 - digitalocean
 - akamai
@@ -20,7 +19,6 @@ children:
 - heroku
 - azure
 - hashicorp
-- supabase
 - cursor
 - netlify
 - trello
