@@ -1,0 +1,28 @@
+version: 1
+schema: v1_final_migration_gate_v1
+legacy_source:
+  root: database/services
+v1_source:
+  root: rule
+clients:
+  required:
+    - mihomo
+    - singbox
+    - surge
+    - shadowrocket
+    - quantumultx
+    - egern
+    - loon
+gates:
+  catalogue_coverage: BLOCK_RELEASE
+  legacy_asset_equivalence: BLOCK_RELEASE
+  phase4_golden_all_dimensions: BLOCK_RELEASE
+  phase5_client_regression: BLOCK_RELEASE
+  phase6_full_determinism: BLOCK_RELEASE
+  phase7_asset_regression: BLOCK_RELEASE
+  production_rc_ready: BLOCK_RELEASE
+  current_head_binding: BLOCK_RELEASE
+deletion:
+  target: database/services
+  automatic_delete: false
+  explicit_operator_action_required: true
