@@ -259,6 +259,46 @@ def _profile_file(profile: dict[str, Any], item: dict[str, Any]) -> None:
         totals[key] = totals.get(key, 0.0) + float(item.get(key, 0.0))
 
 
+def _iter_phase8_equivalence_assets(rule_root: Path) -> Iterator[AssetEvidence]:
+    """Load the Phase 8 canonical migration supplement under rule/."""
+    path = Path(rule_root) / "_legacy_asset_equivalence.yaml"
+    if not path.is_file():
+        return
+    doc = _load_yaml(path)
+    rows = doc.get("assets") or []
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        service = str(row.get("service", "")).strip().lower()
+        asset_type = str(row.get("type", "")).strip().lower()
+        value = str(row.get("value", "")).strip()
+        if not service or not asset_type or not value:
+            continue
+        asset = LegacyAsset(
+            service=service,
+            category="migration",
+            service_type="service",
+            parent=None,
+            asset_type=_asset_type(asset_type, value),
+            value=value,
+            generated_file=path.name,
+            path=str(path.as_posix()),
+            line=0,
+            detected_format="phase8_legacy_equivalence",
+            sources=("legacy-equivalence-phase8",),
+        )
+        yield AssetEvidence(
+            asset=asset,
+            evidence=[{
+                "generated_file": path.name,
+                "path": str(path.as_posix()),
+                "line": 0,
+                "detected_format": "phase8_legacy_equivalence",
+                "sources": ["legacy-equivalence-phase8"],
+            }],
+        )
+
+
 def iter_service_assets(
     rule_root: Path,
     *,
@@ -269,6 +309,9 @@ def iter_service_assets(
     rule_root = Path(rule_root)
     profile = profile if profile is not None else {}
     services_profile = profile.setdefault("services", {})
+    for evidence in _iter_phase8_equivalence_assets(rule_root):
+        yield evidence
+
     for category_dir in sorted(p for p in rule_root.iterdir() if p.is_dir()):
         for service_dir in sorted(p for p in category_dir.iterdir() if p.is_dir()):
             service_start = time.perf_counter()
