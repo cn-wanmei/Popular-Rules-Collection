@@ -23,3 +23,20 @@ Examples:
 | xbox | `rule/Microsoft/Xbox/` |
 
 Do not hand-edit `rule/`.
+
+## Phase 8 source-of-truth boundary
+
+The V1 Canonical Service Model is rooted at `rule/`. The historical `database/services/` tree is Legacy Source evidence and is not a V3 runtime input.
+
+```text
+config/categories.yaml
+config/service_primary.yaml
+        ↓
+rule/_index.yaml + rule/{Ecosystem}/{Service}/
+        ↓
+V1 Canonical Service Model
+        ↓
+V3 Engine
+```
+
+Do not reintroduce `database/services/` as a V3 runtime dependency. Changes to the V1 model must pass the final migration gate.
