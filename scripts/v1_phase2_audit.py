@@ -87,13 +87,7 @@ def assets(entry_dir):
     return total
 
 def build_child_resolution(root, inventory, aggregate_rows):
-    """Resolve Aggregate children using repository-local evidence only.
-
-    This deliberately does not infer real-world services and does not create
-    aliases from names. A child is resolved only when its canonical ID is in
-    the current index. Case-insensitive matches are reported separately as a
-    possible naming discrepancy and never promoted automatically.
-    """
+    """Resolve Aggregate children using repository-local evidence only."""
     ids={x['legacy_id']:x for x in inventory}
     folded=defaultdict(list)
     for ident in ids: folded[ident.casefold()].append(ident)
@@ -106,7 +100,8 @@ def build_child_resolution(root, inventory, aggregate_rows):
                 status='case_mismatch'; matched_id=folded[child.casefold()][0]; evidence='index:id-casefold'
             else:
                 status='missing'; matched_id=None; evidence='no-index-id'
-                candidate_path=Path('rule') / Path(agg['legacy']).relative_to('rule') / child
+                # Aggregate and its children are siblings under the same category.
+                candidate_path=Path(agg['legacy']).parent / child
                 if (root/candidate_path).exists():
                     status='path_without_index'; evidence='filesystem:path'
             results.append({'aggregate_id':agg['aggregate_id'],'aggregate_path':agg['legacy'],'child_id':child,'status':status,'matched_id':matched_id,'evidence':evidence})
