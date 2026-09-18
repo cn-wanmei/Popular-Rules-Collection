@@ -1,0 +1,28 @@
+{
+  "schema": "v1_phase5_observation_v1",
+  "clients": [
+    "mihomo",
+    "singbox",
+    "surge",
+    "shadowrocket",
+    "quantumultx",
+    "egern",
+    "loon"
+  ],
+  "clients_count": 7,
+  "clients_ok": true,
+  "kinds": [
+    "domain",
+    "suffix",
+    "keyword",
+    "CIDR",
+    "URL",
+    "Aggregate"
+  ],
+  "kinds_ok": true,
+  "capability_matrix_present": true,
+  "builder_registry_present": true,
+  "index_entries": 218,
+  "note": "Full artifact scan requires a V3 run dir; structural gate verifies client contract + configs.",
+  "all_pass": true
+}
