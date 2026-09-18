@@ -73,6 +73,21 @@ categories:
 - id: other
   display_name: Other
   order: 230
+- id: xai
+  display_name: xAI
+  order: 240
+- id: meta
+  display_name: Meta
+  order: 260
+- id: atlassian
+  display_name: Atlassian
+  order: 270
+- id: netease
+  display_name: NetEase
+  order: 280
+- id: pypi
+  display_name: PyPI
+  order: 290
 - id: restricted
   display_name: Restricted
   order: 250
