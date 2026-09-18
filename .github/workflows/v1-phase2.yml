@@ -51,3 +51,4 @@ jobs:
             echo "V1 Phase 2 gate is BLOCKED. See uploaded audit artifact for findings."
             exit 1
           fi
+      # Phase 2 rerun trigger: execute against the latest reconciled PR merge ref.
