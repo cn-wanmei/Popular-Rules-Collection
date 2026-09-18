@@ -163,7 +163,7 @@ class TestPhase4Golden:
 
     def test_golden_matches_synthetic(self, tmp_path):
         rule_dir = _make_golden_repo(tmp_path)
-        report = run_v1_golden(rule_dir)
+        report = run_v1_golden(rule_dir, golden_ids=["Google", "YouTube", "Netflix", "OpenAI"])
         d = report.to_dict()
         assert d["schema"] == "v1_golden_v1"
         matched_stems = {m["golden_id"] for m in d["matched"] if m["matched_entry_ids"]}
@@ -337,7 +337,7 @@ class TestPhase7LegacyRegression:
 
 def test_golden_requires_all_dimensions(tmp_path):
     rule_dir = _make_golden_repo(tmp_path)
-    report = run_v1_golden(rule_dir)
+    report = run_v1_golden(rule_dir, golden_ids=["Google", "YouTube", "Netflix", "OpenAI"])
     assert all(report.coverage.get(k, False) for k in (
         "Parent", "Child", "IP-only", "Domain-only",
         "Aggregate", "Duplicate", "Multi-category", "Shared",
