@@ -18,6 +18,20 @@ on:
       - "requirements.lock"
       - ".github/workflows/build.yml"
       - ".github/workflows/publish.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "backup/**"
+      - "src/engine/**"
+      - "scripts/**"
+      - "config/**"
+      - "rule/**"
+      - "database/services/**"
+      - "tests/engine/**"
+      - "requirements.txt"
+      - "requirements.lock"
+      - ".github/workflows/build.yml"
+      - ".github/workflows/publish.yml"
   workflow_dispatch:
     inputs:
       dry_run:
