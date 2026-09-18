@@ -8,15 +8,14 @@
 
 - `rule/<service>/` 是 V1 canonical service source。
 - `generated/` 仅为发布投影，Resolver 永不读取。
-- `database/services/` 属于 Legacy migration boundary；默认禁止参与 V1 runtime resolution。
-- Legacy 访问必须显式 `allow_legacy=True`，且结果标记为 `legacy_migration_only`，不得伪装成 V1 SoT。
+- Legacy 数据不属于 V1 runtime resolver 的可解析范围，Legacy migration 继续由既有 migration bridge 负责。
 
 ## Resolver contract
 
 `SoTResolver.resolve(service)` 必须：
 
 1. 对 service 名称执行路径安全校验。
-2. 优先且唯一解析 `rule/<service>/`。
+2. 唯一解析 `rule/<service>/`。
 3. 返回稳定排序后的文件集合。
 4. V1 服务不存在时返回 `unresolved`，不静默回退到 generated 或 Legacy。
 5. 不复制、不修改、不生成服务资产。
@@ -24,8 +23,8 @@
 ## Exit criteria
 
 - V1 service resolution 不再依赖 `generated/`。
-- 默认运行路径不读取 `database/services/`。
-- Resolver 有回归测试覆盖 V1、generated 隔离、Legacy opt-in 与路径逃逸。
+- V1 Resolver 不直接访问 Legacy 数据。
+- Resolver 有回归测试覆盖 V1、generated 隔离与路径逃逸。
 - 后续 Phase 2–5 均通过该 resolver 作为服务发现边界，不重新引入第二套 SoT。
 
 ## Non-goals
