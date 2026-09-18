@@ -49,6 +49,8 @@ def _make_golden_repo(tmp_path: Path) -> Path:
                      "service_type": "service", "domains": 2, "ips": 0},
                     {"id": "Netflix", "name": "Netflix", "path": "rule/Media/Netflix",
                      "service_type": "service", "domains": 1, "ips": 0},
+                    {"id": "OpenAI", "name": "OpenAI", "path": "rule/Tech/OpenAI",
+                     "service_type": "service", "domains": 0, "ips": 1},
                 ],
             },
         }
@@ -60,6 +62,7 @@ def _make_golden_repo(tmp_path: Path) -> Path:
         ("YouTube", "Google", False, [], "Tech/YouTube"),
         ("GitHub", None, False, [], "Tech/GitHub"),
         ("Netflix", None, False, [], "Media/Netflix"),
+        ("OpenAI", None, False, [], "Tech/OpenAI"),
     ]
     for sid, parent, is_agg, children, rel in services:
         d = rule_dir / Path(rel)
@@ -76,9 +79,10 @@ def _make_golden_repo(tmp_path: Path) -> Path:
             "auto_generated": True,
         }
         (d / "metadata.yaml").write_text(yaml.dump(meta), encoding="utf-8")
-        (d / f"{sid}.list").write_text(
-            f"DOMAIN-SUFFIX,{sid.lower()}.example.com\n", encoding="utf-8"
-        )
+        body = f"DOMAIN-SUFFIX,{sid.lower()}.example.com\n"
+        if sid == "OpenAI":
+            body = "IP-CIDR,1.2.3.0/24\n"
+        (d / f"{sid}.list").write_text(body, encoding="utf-8")
     return rule_dir
 
 
@@ -170,6 +174,8 @@ class TestPhase4Golden:
         assert d["coverage"]["Child"] is True
         assert d["coverage"]["Aggregate"] is True
         assert d["coverage"]["Shared"] is True
+        assert d["coverage"]["Multi-category"] is True
+        assert d["coverage"]["IP-only"] is True
         assert report.coverage_pass is True
 
     def test_golden_unmatched_reported(self, tmp_path):
@@ -326,3 +332,13 @@ class TestPhase7LegacyRegression:
         report = run_legacy_regression(leg, v1)
         assert report.counts.get("Added", 0) == 1
         assert report.counts.get("Removed", 0) == 0
+
+
+
+def test_golden_requires_all_dimensions(tmp_path):
+    rule_dir = _make_golden_repo(tmp_path)
+    report = run_v1_golden(rule_dir)
+    assert all(report.coverage.get(k, False) for k in (
+        "Parent", "Child", "IP-only", "Domain-only",
+        "Aggregate", "Duplicate", "Multi-category", "Shared",
+    ))
