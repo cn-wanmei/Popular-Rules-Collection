@@ -62,6 +62,7 @@ def _validate_release_artifact_set(run_dir: Path) -> dict[str, Any]:
     golden_path = run_dir / "golden" / "report.json"
     quality_path = run_dir / "quality.json"
     metrics_path = run_dir / "metrics" / "metrics.json"
+    baseline_evidence_path = run_dir / "metrics" / "baseline-evidence.json"
     artifacts_root = run_dir / "artifacts"
 
     if not state_path.exists() or not manifest_path.exists():
@@ -80,6 +81,8 @@ def _validate_release_artifact_set(run_dir: Path) -> dict[str, Any]:
         raise RuntimeError("Promotion requires quality decision PASS")
     if not metrics_path.exists():
         raise RuntimeError("Promotion requires observability metrics")
+    if not baseline_evidence_path.exists():
+        raise RuntimeError("Promotion requires baseline evidence")
     if not artifacts_root.exists():
         raise RuntimeError("Missing artifact root")
 
@@ -115,6 +118,7 @@ def _validate_release_artifact_set(run_dir: Path) -> dict[str, Any]:
         "diff_digest": diff,
         "quality_digest": quality_path,
         "metrics_digest": metrics_path,
+        "baseline_evidence_digest": baseline_evidence_path,
     }.items():
         if manifest.get(key) != _sha256_file(path):
             raise RuntimeError(f"Release manifest {key} digest mismatch")
