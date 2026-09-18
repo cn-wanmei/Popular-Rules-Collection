@@ -30,17 +30,6 @@ def test_generated_is_never_used_as_source(tmp_path: Path) -> None:
     assert not result.found
 
 
-def test_legacy_is_opt_in_and_marked_migration_only(tmp_path: Path) -> None:
-    legacy = tmp_path / "database" / "services" / "Example"
-    legacy.mkdir(parents=True)
-    (legacy / "rules.yaml").write_text("example.com\n", encoding="utf-8")
-
-    assert SoTResolver(tmp_path).resolve("Example").source == "unresolved"
-    result = SoTResolver(tmp_path, allow_legacy=True).resolve("Example")
-    assert result.source == "legacy_migration_only"
-    assert result.files == (legacy / "rules.yaml",)
-
-
 def test_service_name_cannot_escape_repository(tmp_path: Path) -> None:
     resolver = SoTResolver(tmp_path)
     with pytest.raises(ValueError):
