@@ -74,6 +74,11 @@ def test_phase8_ready_when_all_green():
         intentional_valid=True,
         graph_ok=True,
         golden_ok=True,
+        legacy_asset_equivalence_ok=True,
+        client_regression_ok=True,
+        deterministic_ok=True,
+        production_run_ok=True,
+        current_head_ok=True,
     )
     assert report.stage == "ready"
     assert report.to_dict()["all_pass"] is True
@@ -90,18 +95,27 @@ def test_switch_sot_requires_gates():
 
 def test_switch_sot_when_ready():
     cov = compute_coverage({"a"}, {"a"}, {})
-    report = evaluate_phase8_gates(cov, golden_ok=True, graph_ok=True)
+    report = evaluate_phase8_gates(
+        cov,
+        golden_ok=True,
+        graph_ok=True,
+        legacy_asset_equivalence_ok=True,
+        client_regression_ok=True,
+        deterministic_ok=True,
+        production_run_ok=True,
+        current_head_ok=True,
+    )
     assert report.stage == "ready"
     report = switch_sot_to_v1(report)
     assert report.sot == "v1_canonical"
     assert report.stage == "switched"
-    assert report.legacy_delete_allowed is True
+    assert report.legacy_delete_allowed is False
 
 
 def test_legacy_delete_refuses_without_sot_switch():
     cov = compute_coverage({"a"}, {"a"}, {})
     report = evaluate_phase8_gates(cov)
-    report = request_legacy_delete(report, allow_legacy_delete=True)
+    report = request_legacy_delete(report, allow_legacy_delete=True, final_gate_passed=True)
     assert report.legacy_deleted is False
     assert any("SoT is still" in e for e in report.errors)
 
@@ -152,3 +166,22 @@ def test_real_config_intentional_codes_if_present():
     reg = load_intentional_registry(cfg)
     errs = validate_intentional_registry(reg)
     assert errs == [], errs
+
+
+
+def test_legacy_delete_refuses_without_final_gate():
+    cov = compute_coverage({"a"}, {"a"}, {})
+    report = evaluate_phase8_gates(
+        cov,
+        golden_ok=True,
+        graph_ok=True,
+        legacy_asset_equivalence_ok=True,
+        client_regression_ok=True,
+        deterministic_ok=True,
+        production_run_ok=True,
+        current_head_ok=True,
+    )
+    report = switch_sot_to_v1(report)
+    report = request_legacy_delete(report, allow_legacy_delete=True, final_gate_passed=False)
+    assert report.legacy_deleted is False
+    assert any("final migration gate" in e for e in report.errors)
