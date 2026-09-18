@@ -6,6 +6,7 @@ operator-readable terminal state.
 """
 from __future__ import annotations
 import json
+import yaml
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
@@ -34,10 +35,13 @@ class LegacyFinalizationReport:
             "all_pass": self.all_pass,
         }
 def _load(path: Path) -> dict[str, Any]:
-    if not path.exists(): return {}
+    if not path.exists():
+        return {}
     try:
-        data = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError): return {}
+        raw = path.read_text(encoding="utf-8")
+        data = yaml.safe_load(raw) if path.suffix in {".yaml", ".yml"} else json.loads(raw)
+    except (OSError, json.JSONDecodeError, yaml.YAMLError):
+        return {}
     return data if isinstance(data, dict) else {}
 def finalize_legacy(
     regression_report: Path,
@@ -49,7 +53,11 @@ def finalize_legacy(
     equivalence = _load(Path(equivalence_report)) if equivalence_report else {}
     reconciliation = _load(Path(reconciliation_report)) if reconciliation_report else {}
     regression_pass = regression.get("all_pass") is True and not regression.get("unexplained_removed")
-    equivalence_pass = (equivalence.get("passed") is True and equivalence.get("at_100") is True) if equivalence else False
+    equivalence_payload = equivalence.get("legacy_asset_equivalence", equivalence)
+    equivalence_pass = (
+        equivalence_payload.get("passed") is True
+        and equivalence_payload.get("at_100") is True
+    ) if equivalence_payload else False
     reconciliation_summary = reconciliation.get("summary", {})
     reconciliation_pass = bool(
         reconciliation and reconciliation.get("promotion", {}).get("blocked") is True
