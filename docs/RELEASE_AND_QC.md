@@ -86,3 +86,18 @@ Domain and IP tracks are **separate**:
 - IP: `sources/ip_registry.yaml` + `scripts/collect_ip.py` + `scripts/ip_cidr.py`.
 - Hard rule: provider/CDN ranges must not be attributed to product services.
 - See `docs/IP_ARCHITECTURE.md`.
+
+## Phase 8 Final Migration Gate (hard)
+
+Catalogue Coverage 100% is no longer sufficient to authorize Legacy deletion.
+
+The deletion-ready metric is:
+
+```text
+Legacy Asset Equivalence Coverage =
+    legacy asset keys preserved in V1 / legacy asset keys
+```
+
+A final PASS requires: Catalogue Coverage 100%; Legacy Asset Equivalence Coverage 100% with zero missing Legacy AssetKeys; Phase 4 Golden all required dimensions; Phase 5 all seven client artifacts and required rule kinds on the actual V3 run; Phase 6 three complete V3 builds over the same immutable Snapshot; Phase 7 zero unexplained removed assets; the same V3 run RC_READY with v2_runtime_dependency=0; and evidence bound to the current commit.
+
+Legacy Source is `database/services/`. V1 Canonical is `rule/`. The final gate never deletes Legacy automatically.
