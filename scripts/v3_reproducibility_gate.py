@@ -70,7 +70,7 @@ def main() -> int:
         args.report.parent.mkdir(parents=True, exist_ok=True)
         args.report.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         print(json.dumps(report, indent=2, ensure_ascii=False))
-        return 0 if result.all_pass else 1
+        return 0 if (result.match and not result.errors) else 1
     finally:
         for rid in replay_ids:
             shutil.rmtree(args.data / "runs" / rid, ignore_errors=True)
