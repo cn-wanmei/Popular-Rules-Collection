@@ -79,7 +79,6 @@ def main(argv: list[str] | None = None) -> int:
     p_prom.add_argument("--runs", type=Path, default=Path("data/runs"))
     p_prom.add_argument("--generated", type=Path, default=Path("generated"))
     p_prom.add_argument("--baseline", type=Path, default=None, help="Advance released diff baseline after successful promotion")
-    p_prom.add_argument("--force", action="store_true")
 
     p_pub = sub.add_parser("publish", help="Run, release-gate, atomically promote, and advance baseline")
     _add_pipeline_args(p_pub)
@@ -167,7 +166,6 @@ def main(argv: list[str] | None = None) -> int:
         record = promote_run(
             args.runs / args.run_id,
             args.generated,
-            force=args.force,
             baseline_path=args.baseline,
         )
         print(json.dumps(record, indent=2, ensure_ascii=False))

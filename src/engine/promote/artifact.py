@@ -62,6 +62,7 @@ def _validate_release_artifact_set(run_dir: Path) -> dict[str, Any]:
     golden_path = run_dir / "golden" / "report.json"
     quality_path = run_dir / "quality.json"
     metrics_path = run_dir / "metrics" / "metrics.json"
+    baseline_evidence_path = run_dir / "metrics" / "baseline-evidence.json"
     artifacts_root = run_dir / "artifacts"
 
     if not state_path.exists() or not manifest_path.exists():
@@ -80,6 +81,8 @@ def _validate_release_artifact_set(run_dir: Path) -> dict[str, Any]:
         raise RuntimeError("Promotion requires quality decision PASS")
     if not metrics_path.exists():
         raise RuntimeError("Promotion requires observability metrics")
+    if not baseline_evidence_path.exists():
+        raise RuntimeError("Promotion requires baseline evidence")
     if not artifacts_root.exists():
         raise RuntimeError("Missing artifact root")
 
@@ -115,6 +118,7 @@ def _validate_release_artifact_set(run_dir: Path) -> dict[str, Any]:
         "diff_digest": diff,
         "quality_digest": quality_path,
         "metrics_digest": metrics_path,
+        "baseline_evidence_digest": baseline_evidence_path,
     }.items():
         if manifest.get(key) != _sha256_file(path):
             raise RuntimeError(f"Release manifest {key} digest mismatch")
@@ -122,12 +126,10 @@ def _validate_release_artifact_set(run_dir: Path) -> dict[str, Any]:
     return {"release_state": state, "release_manifest": manifest, "golden": golden, "quality": quality, "artifact_digests": _artifact_digests(artifacts_root), "cas": cas_check}
 
 
-def promote_run(run_dir: Path, generated_root: Path, *, force: bool = False, baseline_path: Path | None = None) -> dict[str, Any]:
+def promote_run(run_dir: Path, generated_root: Path, *, baseline_path: Path | None = None) -> dict[str, Any]:
     run_dir = Path(run_dir)
     generated_root = Path(generated_root)
     validation = _validate_release_artifact_set(run_dir)
-    if force:
-        pass
 
     src_art = run_dir / "artifacts"
     generated_root.parent.mkdir(parents=True, exist_ok=True)
@@ -211,4 +213,4 @@ def promote_run(run_dir: Path, generated_root: Path, *, force: bool = False, bas
 
 
 def rollback_to_run(run_id: str, runs_root: Path, generated_root: Path) -> dict[str, Any]:
-    return promote_run(Path(runs_root) / run_id, generated_root, force=False)
+    return promote_run(Path(runs_root) / run_id, generated_root)

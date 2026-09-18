@@ -137,10 +137,11 @@ def compute_coverage(
     covered = (mat | (reg & int_ids))
     missing = sorted(reg - covered)
 
+    intentional_only = (reg & int_ids) - mat
     report = CoverageReport(
         registered=len(reg),
         materialized=len(reg & mat),
-        intentional=len(reg & int_ids),
+        intentional=len(intentional_only),
         missing=missing,
     )
     if report.registered == 0:
@@ -157,8 +158,9 @@ def compute_coverage(
     )
     report.details = {
         "covered_count": len(covered),
-        "intentional_only": sorted((reg & int_ids) - mat),
+        "intentional_only": sorted(intentional_only),
         "materialized_and_intentional": sorted(reg & mat & int_ids),
+        "materialized_plus_intentional": report.materialized + report.intentional,
     }
     return report
 
@@ -269,7 +271,7 @@ def evaluate_phase8_gates(
             passed=coverage.at_100,
             detail=(
                 f"{coverage.coverage_pct:.2f}% "
-                f"(materialized={coverage.materialized}, intentional={coverage.intentional}, "
+                f"(materialized={coverage.materialized}, intentional_unmaterialized={coverage.intentional}, "
                 f"registered={coverage.registered}, missing={len(coverage.missing)})"
             ),
         ),

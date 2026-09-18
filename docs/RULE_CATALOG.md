@@ -2,7 +2,7 @@
 
 > 与仓库双轨架构对齐：**Service Rules**（按服务）+ **Network Datasets**（国家/策略/基础设施）。
 
-生成路径：`generated/{mihomo,singbox,surge,shadowrocket,quantumultx,egern,loon}/<id>.*`  
+生成路径：`generated/{client}/{provider}/{service-or-all}/rules.<ext>`  
 订阅基址：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/`
 
 ## 策略建议（默认）
@@ -129,12 +129,12 @@ rule-providers:
   china:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/china.yaml"
+    url: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/china/all/rules.yaml"
     interval: 86400
   google:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/google.yaml"
+    url: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/google/all/rules.yaml"
     interval: 86400
 rules:
   - RULE-SET,china,DIRECT
@@ -146,13 +146,13 @@ rules:
 ### Surge
 
 ```text
-RULE-SET,https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/china.list,DIRECT
-RULE-SET,https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/openai.list,PROXY
+RULE-SET,https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/china/all/rules.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/categories/ai/all/rules.list,PROXY
 ```
 
 单服务 Raw 页：`docs/rules/<id>.md`
 
 ---
 
-*规则数据以 `database/` 与 `generated/` 为准；本目录描述用途与场景。*  
+*规则数据以 V1 Canonical `rule/` 与生成产物 `generated/` 为准；`database/services/` 仅保留为 Legacy migration evidence。*  
 *客户端产物目录名称以 `config/builder_registry.yaml` / `config/formats.yaml` 为准。*

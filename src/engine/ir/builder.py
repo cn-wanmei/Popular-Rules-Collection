@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from src.engine import __version__
 from src.engine.canonical.store import load_memberships, load_rules
 from src.engine.decision.engine import decide_batch
 from src.engine.hierarchy.resolver import load_hierarchy
@@ -38,7 +39,7 @@ def build_ir(canonical_dir: Path, hierarchy_dir: Path, out_dir: Path) -> dict[st
     ir = {
         "schema": "semantic_ir_v2",
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "engine_version": "1.0.2",
+        "engine_version": __version__,
         "v2_runtime_dependency": 0,
         "entities": entities,
         # Deprecated read-only aliases retained during IR v2 migration.
