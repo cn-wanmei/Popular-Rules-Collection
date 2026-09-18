@@ -935,3 +935,9 @@ V1 Source of Truth
 ```
 
 **本阶段的原则是先建模、再盘点、再迁移、最后补全规则。绝不因为目录设计已经确定，就跳过现有资产审计。**
+
+## Phase 8 cutover correction
+
+The V1 model remains the stable Service Model contract consumed by the V3 production chain; it does not create a second production pipeline.
+
+For the cutover audit: `database/services/` is the explicit Legacy Source; `rule/` is the V1 Canonical Service Model; Legacy deletion is blocked until asset-level equivalence and the full V3 Phase 4–7 regression chain are green; and a passing migration gate does not itself delete files.
