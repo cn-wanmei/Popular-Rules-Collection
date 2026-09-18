@@ -1,434 +1,170 @@
 #!/usr/bin/env python3
-"""Reproducible V1 Phase 2.3-2.7 audit engine."""
+"""Reproducible V1 Phase 2.3-2.7 repository audit."""
 from __future__ import annotations
-
-import argparse
-import hashlib
-import ipaddress
-import json
-import re
-import subprocess
+import argparse, hashlib, ipaddress, json, re, subprocess
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
-
 import yaml
 
-ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_OUT = ROOT / "reports" / "v1" / "phase2"
+ROOT=Path(__file__).resolve().parents[1]
+DEFAULT_OUT=ROOT/'reports/v1/phase2'
+KINDS=('domains','domain_suffixes','domain_keywords','ip_cidrs','urls','unknown')
 
+def git(cmd):
+    try: return subprocess.check_output(cmd,cwd=ROOT,text=True,stderr=subprocess.DEVNULL).strip()
+    except Exception: return 'unknown'
 
-def git(cmd: list[str]) -> str:
+def load_yaml(p,default):
+    if not p.exists(): return default
     try:
-        return subprocess.check_output(cmd, cwd=ROOT, text=True, stderr=subprocess.DEVNULL).strip()
-    except Exception:
-        return "unknown"
+        v=yaml.safe_load(p.read_text(encoding='utf-8'))
+        return default if v is None else v
+    except Exception: return default
 
+def norm_domain(v): return v.strip().lower().rstrip('.')
 
-def load_yaml(path: Path, default):
-    if not path.exists():
-        return default
-    with path.open(encoding="utf-8") as fh:
-        value = yaml.safe_load(fh)
-    return default if value is None else value
+def norm_cidr(v):
+    try: return str(ipaddress.ip_network(v.strip(),strict=False))
+    except ValueError: return None
 
-
-def normalize_domain(value: str) -> str:
-    return value.strip().lower().rstrip(".")
-
-
-def normalize_cidr(value: str) -> str | None:
+def norm_url(v):
     try:
-        return str(ipaddress.ip_network(value.strip(), strict=False))
-    except ValueError:
-        return None
+        p=urlsplit(v.strip()); s=p.scheme.lower()
+        if s not in ('http','https') or not p.hostname: return None
+        h=p.hostname.lower().rstrip('.'); port=p.port
+        netloc=h if port is None or (s=='http' and port==80) or (s=='https' and port==443) else f'{h}:{port}'
+        return urlunsplit((s,netloc,p.path or '',p.query or '',''))
+    except Exception: return None
 
+def looks_domain(v):
+    d=norm_domain(v)
+    return '/' not in d and ' ' not in d and '.' in d and re.fullmatch(r'[a-z0-9*_-]+(?:\.[a-z0-9*_-]+)+',d) is not None
 
-def normalize_url(value: str) -> str | None:
-    try:
-        p = urlsplit(value.strip())
-        if p.scheme.lower() not in {"http", "https"} or not p.hostname:
-            return None
-        host = p.hostname.lower().rstrip(".")
-        port = p.port
-        netloc = host
-        if port is not None and not ((p.scheme.lower() == "http" and port == 80) or (p.scheme.lower() == "https" and port == 443)):
-            netloc = f"{host}:{port}"
-        return urlunsplit((p.scheme.lower(), netloc, p.path or "", p.query or "", ""))
-    except Exception:
-        return None
-
-
-def looks_like_domain(value: str) -> bool:
-    d = normalize_domain(value)
-    return "/" not in d and " " not in d and "." in d and re.fullmatch(r"[a-z0-9*_-]+(?:\.[a-z0-9*_-]+)+", d) is not None
-
-
-def parse_assets(text: str) -> dict[str, set[str]]:
-    out = {k: set() for k in ("domains", "domain_suffixes", "domain_keywords", "ip_cidrs", "urls", "unknown")}
+def parse_assets(text):
+    out={k:set() for k in KINDS}
     for raw in text.splitlines():
-        value = raw.strip()
-        if not value or value.startswith("#"):
-            continue
-        if value.startswith(("http://", "https://")):
-            url = normalize_url(value)
-            if url:
-                out["urls"].add(url)
-                continue
-        cidr = normalize_cidr(value)
-        if cidr:
-            out["ip_cidrs"].add(cidr)
-            continue
-        d = normalize_domain(value)
-        if d.startswith("*."):
-            out["domain_suffixes"].add(d[2:])
-        elif looks_like_domain(value):
-            out["domains"].add(d)
-        elif "*" in d and " " not in d:
-            out["domain_suffixes"].add(d.lstrip("*."))
-        else:
-            out["unknown"].add(value)
+        v=raw.strip()
+        if not v or v.startswith('#'): continue
+        if ',' in v and not v.startswith(('http://','https://')):
+            typ,val,*_=v.split(','); typ=typ.strip().upper(); val=val.strip()
+            if typ in ('DOMAIN','DOMAIN-WILDCARD') and looks_domain(val): out['domains'].add(norm_domain(val)); continue
+            if typ in ('DOMAIN-SUFFIX','DOMAIN-SET') and val: out['domain_suffixes'].add(norm_domain(val).lstrip('*.')); continue
+            if typ in ('DOMAIN-KEYWORD','HOST-KEYWORD') and val: out['domain_keywords'].add(val.lower()); continue
+            if typ.startswith('IP-CIDR'):
+                c=norm_cidr(val)
+                if c: out['ip_cidrs'].add(c); continue
+            if typ in ('URL','URL-REGEX'):
+                u=norm_url(val)
+                if u: out['urls'].add(u); continue
+        u=norm_url(v)
+        if u: out['urls'].add(u); continue
+        c=norm_cidr(v)
+        if c: out['ip_cidrs'].add(c); continue
+        d=norm_domain(v)
+        if d.startswith('*.'): out['domain_suffixes'].add(d[2:]); continue
+        if looks_domain(v): out['domains'].add(d); continue
+        out['unknown'].add(v)
     return out
 
+def merge(dst,src):
+    for k in KINDS: dst[k].update(src[k])
 
-def merge(dst, src):
-    for key in dst:
-        dst[key].update(src.get(key, set()))
-
-
-def parse_metadata(path: Path) -> dict:
-    if not path.exists():
-        return {}
-    try:
-        return load_yaml(path, {}) or {}
-    except Exception:
-        return {}
-
-
-def flatten_index(index: dict) -> list[dict]:
-    rows = []
-    for category, block in (index.get("categories") or {}).items():
-        if not isinstance(block, dict):
-            continue
-        for rule in block.get("rules") or []:
-            if not isinstance(rule, dict):
-                continue
-            row = dict(rule)
-            row["category"] = str(category)
-            rows.append(row)
+def flatten_index(idx):
+    rows=[]
+    for cat,block in (idx.get('categories') or {}).items():
+        if not isinstance(block,dict): continue
+        for e in block.get('rules') or []:
+            if isinstance(e,dict):
+                x=dict(e); x['category']=str(cat); rows.append(x)
     return rows
 
+def metadata(p): return load_yaml(p,{}) if p.exists() else {}
 
-def entry_assets(entry_path: Path) -> dict[str, set[str]]:
-    total = {k: set() for k in ("domains", "domain_suffixes", "domain_keywords", "ip_cidrs", "urls", "unknown")}
-    if not entry_path.exists():
-        return total
-    for path in sorted(entry_path.iterdir()):
-        if not path.is_file() or path.name == "metadata.yaml":
-            continue
-        if path.suffix.lower() not in {".list", ".txt", ".yaml"}:
-            continue
-        try:
-            merge(total, parse_assets(path.read_text(encoding="utf-8", errors="replace")))
-        except OSError:
-            continue
+def assets(entry_dir):
+    total={k:set() for k in KINDS}
+    if not entry_dir.exists(): return total
+    for p in entry_dir.iterdir():
+        if not p.is_file() or p.name=='metadata.yaml' or p.suffix.lower() not in ('.list','.txt'): continue
+        try: merge(total,parse_assets(p.read_text(encoding='utf-8',errors='replace')))
+        except OSError: pass
     return total
 
+def prior_conflicts(root):
+    d=load_yaml(root/'reports/v1/CONFLICTS.yaml',{}) or {}
+    return [x for x in d.get('conflicts',[]) if isinstance(x,dict)]
 
-def confirmed_map(root: Path) -> dict[str, dict]:
-    data = load_yaml(root / "reports" / "v1" / "LEGACY_MAPPING.yaml", {}) or {}
-    return {
-        str(x.get("legacy")): x
-        for x in (data.get("mappings") or [])
-        if isinstance(x, dict) and x.get("confidence") == "confirmed"
-    }
-
-
-def prior_conflicts(root: Path) -> list[dict]:
-    data = load_yaml(root / "reports" / "v1" / "CONFLICTS.yaml", {}) or {}
-    return [x for x in (data.get("conflicts") or []) if isinstance(x, dict)]
-
-
-def scan(root: Path, out: Path) -> dict:
-    out.mkdir(parents=True, exist_ok=True)
-    index_path = root / "rule" / "_index.yaml"
-    index = load_yaml(index_path, {}) or {}
-    entries = flatten_index(index)
-    confirmed = confirmed_map(root)
-
-    inventory = []
-    aggregate_rows = []
-    asset_index = defaultdict(list)
-
-    indexed_paths = {str(x["path"]) for x in entries if x.get("path")}
-    filesystem_paths = set()
-    for meta in (root / "rule").glob("**/metadata.yaml"):
-        rel = meta.parent.relative_to(root).as_posix()
-        parts = meta.relative_to(root / "rule").parts
-        if parts and parts[0] not in {"category", "service", "shared"}:
-            filesystem_paths.add(rel)
-
-    for entry in entries:
-        legacy = str(entry.get("path"))
-        entry_dir = root / legacy
-        meta = parse_metadata(entry_dir / "metadata.yaml")
-        assets = entry_assets(entry_dir)
-
-        for kind, values in assets.items():
-            for value in values:
-                asset_index[f"{kind}:{value}"].append(legacy)
-
-        if legacy in confirmed:
-            identity_status = "confirmed"
-            identity_type = confirmed[legacy].get("type")
-            v1_id = confirmed[legacy].get("service")
-        elif entry.get("service_type") == "service":
-            identity_status = "candidate"
-            identity_type = "service"
-            v1_id = str(entry["id"])
-        elif entry.get("service_type") == "aggregate":
-            identity_status = "quarantine"
-            identity_type = "aggregate-candidate"
-            v1_id = None
-        else:
-            identity_status = "quarantine"
-            identity_type = "legacy-unknown"
-            v1_id = None
-
-        categories = meta.get("categories") if isinstance(meta.get("categories"), list) else []
-        children = meta.get("children") if isinstance(meta.get("children"), list) else []
-        sources = meta.get("sources") if isinstance(meta.get("sources"), list) else []
-        clients = meta.get("clients") if isinstance(meta.get("clients"), list) else []
-
-        inventory.append({
-            "legacy": legacy,
-            "legacy_id": str(entry.get("id")),
-            "name": str(entry.get("name") or entry.get("id")),
-            "category": str(entry.get("category")),
-            "index_service_type": str(entry.get("service_type")),
-            "index_domains": int(entry.get("domains") or 0),
-            "index_ips": int(entry.get("ips") or 0),
-            "path_exists": entry_dir.exists(),
-            "metadata_present": bool(meta),
-            "metadata_service_type": str(meta.get("service_type") or ""),
-            "metadata_parent": meta.get("parent"),
-            "metadata_primary_category": meta.get("primary_category"),
-            "metadata_categories": [str(x) for x in categories],
-            "metadata_children": [str(x) for x in children],
-            "metadata_sources": [str(x) for x in sources],
-            "metadata_clients": [str(x) for x in clients],
-            "asset_counts": {k: len(v) for k, v in assets.items()},
-            "identity_status": identity_status,
-            "identity_type": identity_type,
-            "v1_service_id": v1_id,
-        })
-
-    category_members = defaultdict(set)
+def scan(root,out):
+    out.mkdir(parents=True,exist_ok=True)
+    index_path=root/'rule/_index.yaml'; entries=flatten_index(load_yaml(index_path,{}) or {})
+    inventory=[]; aggregate_rows=[]; asset_index=defaultdict(list)
+    indexed_paths={str(e.get('path')) for e in entries if e.get('path')}
+    filesystem_paths=set()
+    for m in (root/'rule').glob('**/metadata.yaml'):
+        rel=m.parent.relative_to(root).as_posix(); parts=m.relative_to(root/'rule').parts
+        if parts and parts[0] not in {'category','service','shared'}: filesystem_paths.add(rel)
     for e in entries:
-        category_members[str(e.get("category"))].add(str(e.get("id")))
-
-    for item in inventory:
-        if item["index_service_type"] != "aggregate":
-            continue
-        meta_children = set(item["metadata_children"])
-        index_children = category_members[item["category"]] - {item["legacy_id"]}
-        aggregate_rows.append({
-            "legacy": item["legacy"],
-            "aggregate_id": item["legacy_id"],
-            "category": item["category"],
-            "metadata_children": sorted(meta_children),
-            "indexed_category_members": sorted(index_children),
-            "metadata_only_children": sorted(meta_children - index_children),
-            "index_only_children": sorted(index_children - meta_children),
-            "relation_status": "aligned" if meta_children == index_children else "drift",
-            "empty_children": not bool(meta_children or index_children),
-        })
-
-    duplicate_keys = [
-        {"key": key, "legacy_paths": sorted(set(paths))}
-        for key, paths in sorted(asset_index.items())
-        if len(set(paths)) > 1
-    ]
-    orphan_paths = sorted(filesystem_paths - indexed_paths)
-    indexed_missing_paths = sorted(x["legacy"] for x in inventory if not x["path_exists"])
-    missing_metadata = sorted(x["legacy"] for x in inventory if not x["metadata_present"])
-    unknown_count = sum(x["asset_counts"]["unknown"] for x in inventory)
-    aggregate_drift = sorted(x["legacy"] for x in aggregate_rows if x["relation_status"] == "drift")
-
-    conflicts = prior_conflicts(root)
-    if orphan_paths:
-        conflicts.append({
-            "id": "ORPH-INDEX-001", "type": "filesystem-rule-directory-not-indexed",
-            "severity": "high", "count": len(orphan_paths),
-            "entries": orphan_paths[:100],
-            "resolution": "Quarantine until mapped or explicitly deprecated.",
-        })
-    if indexed_missing_paths:
-        conflicts.append({
-            "id": "ORPH-INDEX-002", "type": "indexed-entry-path-missing",
-            "severity": "blocking", "count": len(indexed_missing_paths),
-            "entries": indexed_missing_paths[:100],
-            "resolution": "Repair index or restore source before promotion.",
-        })
-    if missing_metadata:
-        conflicts.append({
-            "id": "META-001", "type": "missing-metadata",
-            "severity": "high", "count": len(missing_metadata),
-            "entries": missing_metadata[:100],
-            "resolution": "Complete metadata evidence before V1 promotion.",
-        })
-    if unknown_count:
-        conflicts.append({
-            "id": "ASSET-UNKNOWN-001", "type": "unclassified-legacy-assets",
-            "severity": "medium", "count": unknown_count,
-            "resolution": "Review non-domain/non-CIDR/non-URL lines; never silently discard them.",
-        })
-    if aggregate_drift:
-        conflicts.append({
-            "id": "AGG-DRIFT-FINAL-001", "type": "aggregate-membership-drift",
-            "severity": "high", "count": len(aggregate_drift),
-            "entries": aggregate_drift,
-            "resolution": "Require explicit hierarchy resolution before Parent Service promotion.",
-        })
-
-    summary = {
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "git_commit": git(["git", "rev-parse", "HEAD"]),
-        "git_branch": git(["git", "branch", "--show-current"]),
-        "inventory_sha256": hashlib.sha256(index_path.read_bytes()).hexdigest(),
-        "legacy_entries": len(entries),
-        "service_candidates": sum(x["index_service_type"] == "service" for x in inventory),
-        "aggregate_candidates": sum(x["index_service_type"] == "aggregate" for x in inventory),
-        "metadata_present": sum(x["metadata_present"] for x in inventory),
-        "metadata_missing": len(missing_metadata),
-        "confirmed_identity": sum(x["identity_status"] == "confirmed" for x in inventory),
-        "candidate_identity": sum(x["identity_status"] == "candidate" for x in inventory),
-        "quarantined_identity": sum(x["identity_status"] == "quarantine" for x in inventory),
-        "aggregate_relation_drift": len(aggregate_drift),
-        "duplicate_asset_keys": len(duplicate_keys),
-        "orphan_paths": len(orphan_paths),
-        "indexed_missing_paths": len(indexed_missing_paths),
-        "unclassified_asset_lines": unknown_count,
-    }
-
-    (out / "LEGACY_SEMANTIC_INVENTORY.json").write_text(
-        json.dumps({"version": 1, "phase": "2.3", "summary": summary, "entries": inventory}, indent=2, ensure_ascii=False) + "\n",
-        encoding="utf-8",
-    )
-    (out / "IDENTITY_RESOLUTION.yaml").write_text(
-        yaml.safe_dump({
-            "version": 1, "phase": "2.4", "status": "audit",
-            "policy": "Only explicit prior evidence is confirmed; all other identities remain candidate/quarantine.",
-            "entries": inventory,
-        }, sort_keys=False, allow_unicode=True),
-        encoding="utf-8",
-    )
-    (out / "AGGREGATE_RESOLUTION.yaml").write_text(
-        yaml.safe_dump({
-            "version": 1, "phase": "2.5", "status": "audit",
-            "policy": "Metadata children and indexed membership are separate evidence sets.",
-            "aggregates": aggregate_rows,
-        }, sort_keys=False, allow_unicode=True),
-        encoding="utf-8",
-    )
-    (out / "CANONICAL_ASSET_AUDIT.json").write_text(
-        json.dumps({
-            "version": 1, "phase": "2.6",
-            "normalization": {
-                "domains": "lowercase + trailing-dot removal",
-                "cidr": "ipaddress canonical network form",
-                "urls": "scheme/host normalization; fragments removed; default ports removed",
-                "semantic_pruning": False,
-            },
-            "summary": summary,
-            "duplicate_keys": duplicate_keys[:5000],
-        }, indent=2, ensure_ascii=False) + "\n",
-        encoding="utf-8",
-    )
-    (out / "DUPLICATES.yaml").write_text(
-        yaml.safe_dump({
-            "version": 1, "phase": "2.7",
-            "duplicate_asset_keys": len(duplicate_keys),
-            "duplicates": duplicate_keys[:5000],
-            "policy": "Exact canonical asset equality only; no semantic parent-domain pruning.",
-        }, sort_keys=False, allow_unicode=True),
-        encoding="utf-8",
-    )
-    (out / "ORPHANS.yaml").write_text(
-        yaml.safe_dump({
-            "version": 1, "phase": "2.7",
-            "filesystem_rule_dirs_not_in_index": orphan_paths,
-            "indexed_entries_missing_path": indexed_missing_paths,
-            "indexed_entries_missing_metadata": missing_metadata,
-        }, sort_keys=False, allow_unicode=True),
-        encoding="utf-8",
-    )
-    (out / "CONFLICTS_FINAL.yaml").write_text(
-        yaml.safe_dump({
-            "version": 1, "phase": "2.7",
-            "severity_definitions": {
-                "blocking": "Must resolve before V1 promotion.",
-                "high": "Requires explicit mapping/evidence.",
-                "medium": "Review required; may not block unrelated entries.",
-                "info": "Observational.",
-            },
-            "conflicts": conflicts,
-        }, sort_keys=False, allow_unicode=True),
-        encoding="utf-8",
-    )
-
-    blocking = any(x.get("severity") == "blocking" for x in conflicts)
-    high = any(x.get("severity") == "high" for x in conflicts)
-    gate = {
-        "version": 1, "phase": "2.2-2.7",
-        "status": "blocked" if (blocking or high) else "audit-complete",
-        "promotion_ready": False,
-        "summary": summary,
-        "gates": {
-            "2.2_baseline": summary["git_commit"] != "unknown",
-            "2.3_184_entries_indexed": len(entries) == 184,
-            "2.4_identity_all_confirmed": summary["quarantined_identity"] == 0,
-            "2.5_aggregate_relations_clean": summary["aggregate_relation_drift"] == 0,
-            "2.6_no_unclassified_assets": summary["unclassified_asset_lines"] == 0,
-            "2.7_no_blocking_or_high": not blocking and not high,
-        },
-    }
-    (out / "PHASE2_GATE.yaml").write_text(
-        yaml.safe_dump(gate, sort_keys=False, allow_unicode=True),
-        encoding="utf-8",
-    )
-    (out / "PHASE2_SUMMARY.md").write_text(
-        "# V1 Phase 2.2–2.7 Audit Summary\n\n"
-        f"- Commit: {summary['git_commit']}\n"
-        f"- Legacy entries: {summary['legacy_entries']}\n"
-        f"- Service candidates: {summary['service_candidates']}\n"
-        f"- Aggregate candidates: {summary['aggregate_candidates']}\n"
-        f"- Metadata present: {summary['metadata_present']}\n"
-        f"- Metadata missing: {summary['metadata_missing']}\n"
-        f"- Confirmed identities: {summary['confirmed_identity']}\n"
-        f"- Candidate identities: {summary['candidate_identity']}\n"
-        f"- Quarantined identities: {summary['quarantined_identity']}\n"
-        f"- Aggregate relation drift: {summary['aggregate_relation_drift']}\n"
-        f"- Duplicate canonical asset keys: {summary['duplicate_asset_keys']}\n"
-        f"- Orphan paths: {summary['orphan_paths']}\n"
-        f"- Indexed missing paths: {summary['indexed_missing_paths']}\n"
-        f"- Unclassified asset lines: {summary['unclassified_asset_lines']}\n\n"
-        "V1 promotion remains blocked until all blocking/high findings are resolved and V3 regression gates pass.\n",
-        encoding="utf-8",
-    )
+        legacy=str(e.get('path')); d=root/legacy; meta=metadata(d/'metadata.yaml'); a=assets(d)
+        for k,vals in a.items():
+            for v in vals: asset_index[f'{k}:{v}'].append(legacy)
+        idx_type=str(e.get('service_type') or ''); meta_type=str(meta.get('service_type') or '')
+        if idx_type in {'service','aggregate'} and meta_type==idx_type:
+            istatus='confirmed'; itype=idx_type; v1_id=str(e.get('id')) if idx_type=='service' else None
+        elif idx_type in {'service','aggregate'}:
+            istatus='candidate'; itype=idx_type; v1_id=str(e.get('id')) if idx_type=='service' else None
+        else:
+            istatus='quarantine'; itype='unknown'; v1_id=None
+        def lst(k): return [str(x) for x in meta.get(k,[])] if isinstance(meta.get(k),list) else []
+        inventory.append({'legacy':legacy,'legacy_id':str(e.get('id')),'name':str(e.get('name') or e.get('id')),
+          'category':str(e.get('category')),'index_service_type':idx_type,'metadata_service_type':meta_type,
+          'index_domains':int(e.get('domains') or 0),'index_ips':int(e.get('ips') or 0),'path_exists':d.exists(),
+          'metadata_present':bool(meta),'metadata_parent':meta.get('parent'),'metadata_primary_category':meta.get('primary_category'),
+          'metadata_categories':lst('categories'),'metadata_children':lst('children'),'metadata_sources':lst('sources'),
+          'metadata_clients':lst('clients'),'asset_counts':{k:len(a[k]) for k in KINDS},'identity_status':istatus,
+          'identity_type':itype,'v1_service_id':v1_id})
+    ids={x['legacy_id'] for x in inventory}
+    for x in inventory:
+        if x['index_service_type']!='aggregate': continue
+        children=set(x['metadata_children']); missing=sorted(children-ids)
+        aggregate_rows.append({'legacy':x['legacy'],'aggregate_id':x['legacy_id'],'metadata_children':sorted(children),
+          'missing_child_ids':missing,'child_count':len(children),'relation_status':'clean' if not missing else 'drift'})
+    duplicate_keys=[{'key':k,'legacy_paths':sorted(set(v))} for k,v in sorted(asset_index.items()) if len(set(v))>1]
+    orphan=sorted(filesystem_paths-indexed_paths); missing_paths=sorted(x['legacy'] for x in inventory if not x['path_exists'])
+    missing_meta=sorted(x['legacy'] for x in inventory if not x['metadata_present'])
+    unknown=sum(x['asset_counts']['unknown'] for x in inventory); agg_drift=sorted(x['legacy'] for x in aggregate_rows if x['relation_status']=='drift')
+    conflicts=prior_conflicts(root)
+    if orphan: conflicts.append({'id':'ORPH-INDEX-001','type':'filesystem-rule-directory-not-indexed','severity':'high','count':len(orphan),'entries':orphan[:100]})
+    if missing_paths: conflicts.append({'id':'ORPH-INDEX-002','type':'indexed-entry-path-missing','severity':'blocking','count':len(missing_paths),'entries':missing_paths[:100]})
+    if missing_meta: conflicts.append({'id':'META-001','type':'missing-metadata','severity':'high','count':len(missing_meta),'entries':missing_meta[:100]})
+    if unknown: conflicts.append({'id':'ASSET-UNKNOWN-001','type':'unclassified-legacy-assets','severity':'medium','count':unknown})
+    if agg_drift: conflicts.append({'id':'AGG-DRIFT-FINAL-001','type':'aggregate-child-missing','severity':'high','count':len(agg_drift),'entries':agg_drift})
+    s={'generated_at':datetime.now(timezone.utc).isoformat(),'git_commit':git(['git','rev-parse','HEAD']),'git_branch':git(['git','branch','--show-current']),
+       'inventory_sha256':hashlib.sha256(index_path.read_bytes()).hexdigest(),'legacy_entries':len(entries),
+       'service_candidates':sum(x['index_service_type']=='service' for x in inventory),'aggregate_candidates':sum(x['index_service_type']=='aggregate' for x in inventory),
+       'metadata_present':sum(x['metadata_present'] for x in inventory),'metadata_missing':len(missing_meta),
+       'confirmed_identity':sum(x['identity_status']=='confirmed' for x in inventory),'candidate_identity':sum(x['identity_status']=='candidate' for x in inventory),
+       'quarantined_identity':sum(x['identity_status']=='quarantine' for x in inventory),'aggregate_relation_drift':len(agg_drift),
+       'duplicate_asset_keys':len(duplicate_keys),'orphan_paths':len(orphan),'indexed_missing_paths':len(missing_paths),'unclassified_asset_lines':unknown}
+    (out/'LEGACY_SEMANTIC_INVENTORY.json').write_text(json.dumps({'version':1,'phase':'2.3','summary':s,'entries':inventory},indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+    (out/'IDENTITY_RESOLUTION.yaml').write_text(yaml.safe_dump({'version':1,'phase':'2.4','status':'audit','entries':inventory},sort_keys=False,allow_unicode=True),encoding='utf-8')
+    (out/'AGGREGATE_RESOLUTION.yaml').write_text(yaml.safe_dump({'version':1,'phase':'2.5','status':'audit','aggregates':aggregate_rows},sort_keys=False,allow_unicode=True),encoding='utf-8')
+    (out/'CANONICAL_ASSET_AUDIT.json').write_text(json.dumps({'version':1,'phase':'2.6','normalization':{'rule_syntax':'DOMAIN/DOMAIN-SUFFIX/DOMAIN-KEYWORD/IP-CIDR/URL','semantic_pruning':False},'summary':s,'duplicate_keys':duplicate_keys[:5000]},indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+    (out/'DUPLICATES.yaml').write_text(yaml.safe_dump({'version':1,'phase':'2.7','duplicate_asset_keys':len(duplicate_keys),'duplicates':duplicate_keys[:5000],'policy':'exact canonical equality only'},sort_keys=False,allow_unicode=True),encoding='utf-8')
+    (out/'ORPHANS.yaml').write_text(yaml.safe_dump({'version':1,'phase':'2.7','filesystem_rule_dirs_not_in_index':orphan,'indexed_entries_missing_path':missing_paths,'indexed_entries_missing_metadata':missing_meta},sort_keys=False,allow_unicode=True),encoding='utf-8')
+    (out/'CONFLICTS_FINAL.yaml').write_text(yaml.safe_dump({'version':1,'phase':'2.7','conflicts':conflicts},sort_keys=False,allow_unicode=True),encoding='utf-8')
+    blocking=any(x.get('severity')=='blocking' for x in conflicts); high=any(x.get('severity')=='high' for x in conflicts)
+    gate={'version':1,'phase':'2.2-2.7','status':'blocked' if blocking or high else 'audit-complete','promotion_ready':False,'summary':s,
+      'gates':{'2.2_baseline':s['git_commit']!='unknown','2.3_184_entries_indexed':len(entries)==184,
+               '2.4_identity_type_resolved':s['quarantined_identity']==0 and s['candidate_identity']==0,
+               '2.5_aggregate_relations_clean':s['aggregate_relation_drift']==0,'2.6_no_unclassified_assets':s['unclassified_asset_lines']==0,
+               '2.7_no_blocking_or_high':not blocking and not high}}
+    (out/'PHASE2_GATE.yaml').write_text(yaml.safe_dump(gate,sort_keys=False,allow_unicode=True),encoding='utf-8')
+    (out/'PHASE2_SUMMARY.md').write_text('# V1 Phase 2.2–2.7 Audit Summary\n\n'+'\n'.join(f'- {k}: {v}' for k,v in s.items())+'\n',encoding='utf-8')
     return gate
 
+def main():
+    ap=argparse.ArgumentParser(); ap.add_argument('--root',type=Path,default=ROOT); ap.add_argument('--out',type=Path,default=DEFAULT_OUT); a=ap.parse_args()
+    r=scan(a.root,a.out); print(yaml.safe_dump(r,sort_keys=False,allow_unicode=True)); return 1 if r['status']=='blocked' else 0
 
-def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--root", type=Path, default=ROOT)
-    ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
-    args = ap.parse_args()
-    result = scan(args.root, args.out)
-    print(yaml.safe_dump(result, sort_keys=False, allow_unicode=True))
-    return 1 if result["status"] == "blocked" else 0
-
-
-if __name__ == "__main__":
-    raise SystemExit(main())
+if __name__=='__main__': raise SystemExit(main())
