@@ -1,0 +1,284 @@
+{
+  "schema": "v1_legacy_regression_v1",
+  "generated_at": "2026-09-18T12:09:51.909932+00:00",
+  "counts": {
+    "Added": 34
+  },
+  "items": [
+    {
+      "kind": "Added",
+      "asset_key": "service:aliexpress",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "aliexpress",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:amazonaws",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "amazonaws",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:asana",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "asana",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:baidumap",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "baidumap",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:baidupan",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "baidupan",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:blizzard",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "blizzard",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:bosszhipin",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "bosszhipin",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:crunchyroll",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "crunchyroll",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:discoveryplus",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "discoveryplus",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:etsy",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "etsy",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:expedia",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "expedia",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:gcp",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "gcp",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:googledrive",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "googledrive",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:googlemaps",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "googlemaps",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:jdfinance",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "jdfinance",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:kimi",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "kimi",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:lyft",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "lyft",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:midjourney",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "midjourney",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:mistral",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "mistral",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:npm",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "npm",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:origin",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "origin",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:pypi",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "pypi",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:qq",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "qq",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:quickpass",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "quickpass",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:qwen",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "qwen",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:revolut",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "revolut",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:siri",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "siri",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:steamcn",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "steamcn",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:supabase",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "supabase",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:temu",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "temu",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:tencentmeeting",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "tencentmeeting",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:wecom",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "wecom",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:wenxiaoyan",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "wenxiaoyan",
+      "explanation": ""
+    },
+    {
+      "kind": "Added",
+      "asset_key": "service:yuanbao",
+      "detail": "type=service",
+      "from_service": "",
+      "to_service": "yuanbao",
+      "explanation": ""
+    }
+  ],
+  "unexplained_removed": [],
+  "errors": [],
+  "all_pass": true
+}

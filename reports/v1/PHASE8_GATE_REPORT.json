@@ -1,0 +1,94 @@
+{
+  "schema": "v1_phase8_migration_v1",
+  "generated_at": "2026-09-18T12:09:52.454462+00:00",
+  "stage": "switched",
+  "coverage": {
+    "schema": "v1_phase8_coverage_v1",
+    "registered": 218,
+    "materialized": 184,
+    "intentional": 37,
+    "missing": [],
+    "coverage_ratio": 1.0,
+    "coverage_pct": 100.0,
+    "at_100": true,
+    "intentional_errors": [],
+    "details": {
+      "covered_count": 218,
+      "intentional_only": [
+        "aliexpress",
+        "amazonaws",
+        "asana",
+        "baidumap",
+        "baidupan",
+        "blizzard",
+        "bosszhipin",
+        "crunchyroll",
+        "discoveryplus",
+        "etsy",
+        "expedia",
+        "gcp",
+        "googledrive",
+        "googlemaps",
+        "jdfinance",
+        "kimi",
+        "lyft",
+        "midjourney",
+        "mistral",
+        "npm",
+        "origin",
+        "pypi",
+        "qq",
+        "quickpass",
+        "qwen",
+        "revolut",
+        "siri",
+        "steamcn",
+        "supabase",
+        "temu",
+        "tencentmeeting",
+        "wecom",
+        "wenxiaoyan",
+        "yuanbao"
+      ],
+      "materialized_and_intentional": [
+        "adblock-light",
+        "adblock-pro",
+        "stripe"
+      ]
+    },
+    "formula": "(materialized + intentional_unmaterialized) / registered"
+  },
+  "gates": [
+    {
+      "name": "intentional_registry_valid",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "coverage_100",
+      "passed": true,
+      "detail": "100.00% (materialized=184, intentional=37, registered=218, missing=0)"
+    },
+    {
+      "name": "no_unexplained_removed",
+      "passed": true,
+      "detail": "unexplained=0"
+    },
+    {
+      "name": "graph_acyclic",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "golden_gate",
+      "passed": true,
+      "detail": "ok"
+    }
+  ],
+  "sot": "v1_canonical",
+  "legacy_delete_allowed": true,
+  "legacy_deleted": false,
+  "errors": [],
+  "blockers": [],
+  "all_pass": true
+}

@@ -1,0 +1,230 @@
+{
+  "schema": "v1_golden_v1",
+  "golden_ids": [
+    "Google",
+    "YouTube",
+    "GoogleFCM",
+    "Firebase",
+    "OpenAI",
+    "Claude",
+    "Microsoft",
+    "GitHub",
+    "Apple",
+    "iCloud",
+    "Telegram",
+    "Discord",
+    "Netflix",
+    "Spotify",
+    "Steam"
+  ],
+  "matched": [
+    {
+      "golden_id": "Google",
+      "matched_entry_ids": [
+        "google",
+        "googledrive",
+        "googlefcm",
+        "googlemaps"
+      ],
+      "flags": [
+        "Aggregate",
+        "Child",
+        "NetworkRef",
+        "Parent",
+        "Service"
+      ]
+    },
+    {
+      "golden_id": "YouTube",
+      "matched_entry_ids": [
+        "youtube",
+        "youtubemusic"
+      ],
+      "flags": [
+        "Child",
+        "NetworkRef",
+        "Service"
+      ]
+    },
+    {
+      "golden_id": "GoogleFCM",
+      "matched_entry_ids": [
+        "googlefcm"
+      ],
+      "flags": [
+        "Child",
+        "NetworkRef",
+        "Service"
+      ]
+    },
+    {
+      "golden_id": "Firebase",
+      "matched_entry_ids": [
+        "firebase"
+      ],
+      "flags": [
+        "Service"
+      ]
+    },
+    {
+      "golden_id": "OpenAI",
+      "matched_entry_ids": [
+        "openai"
+      ],
+      "flags": [
+        "NetworkRef",
+        "Service"
+      ]
+    },
+    {
+      "golden_id": "Claude",
+      "matched_entry_ids": [
+        "claude"
+      ],
+      "flags": [
+        "Service"
+      ]
+    },
+    {
+      "golden_id": "Microsoft",
+      "matched_entry_ids": [
+        "microsoft"
+      ],
+      "flags": [
+        "Aggregate",
+        "Parent",
+        "Service"
+      ]
+    },
+    {
+      "golden_id": "GitHub",
+      "matched_entry_ids": [
+        "github"
+      ],
+      "flags": [
+        "Service"
+      ]
+    },
+    {
+      "golden_id": "Apple",
+      "matched_entry_ids": [
+        "apple",
+        "applemusic",
+        "appletv"
+      ],
+      "flags": [
+        "Aggregate",
+        "NetworkRef",
+        "Parent",
+        "Service"
+      ]
+    },
+    {
+      "golden_id": "iCloud",
+      "matched_entry_ids": [
+        "icloud"
+      ],
+      "flags": [
+        "Service"
+      ]
+    },
+    {
+      "golden_id": "Telegram",
+      "matched_entry_ids": [
+        "telegram"
+      ],
+      "flags": [
+        "NetworkRef",
+        "Service"
+      ]
+    },
+    {
+      "golden_id": "Discord",
+      "matched_entry_ids": [
+        "discord"
+      ],
+      "flags": [
+        "Service"
+      ]
+    },
+    {
+      "golden_id": "Netflix",
+      "matched_entry_ids": [
+        "netflix"
+      ],
+      "flags": [
+        "Service"
+      ]
+    },
+    {
+      "golden_id": "Spotify",
+      "matched_entry_ids": [
+        "spotify"
+      ],
+      "flags": [
+        "NetworkRef",
+        "Service"
+      ]
+    },
+    {
+      "golden_id": "Steam",
+      "matched_entry_ids": [
+        "steam",
+        "steamcn"
+      ],
+      "flags": [
+        "Service"
+      ]
+    }
+  ],
+  "unmatched": [],
+  "coverage": {
+    "Parent": true,
+    "Child": true,
+    "IP-only": true,
+    "Domain-only": true,
+    "Aggregate": true,
+    "Duplicate": true,
+    "Multi-category": false,
+    "Shared": false
+  },
+  "coverage_pass": true,
+  "graph_ok": true,
+  "closure_samples": {
+    "agg:apple": [
+      "apple",
+      "applemusic",
+      "appletv",
+      "icloud"
+    ],
+    "dep:applemusic": [
+      "apple",
+      "applemusic"
+    ],
+    "dep:appletv": [
+      "apple",
+      "appletv"
+    ],
+    "dep:claude": [
+      "claude"
+    ],
+    "dep:discord": [
+      "discord"
+    ],
+    "dep:firebase": [
+      "firebase",
+      "google"
+    ],
+    "dep:github": [
+      "github"
+    ],
+    "agg:google": [
+      "firebase",
+      "google",
+      "googlefcm",
+      "youtube"
+    ]
+  },
+  "errors": [],
+  "all_pass": true
+}
