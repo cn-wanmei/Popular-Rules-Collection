@@ -206,7 +206,13 @@ def main() -> int:
     ap.add_argument("--json-out", type=Path, default=ROOT / "reports/v1/FINAL_MIGRATION_GATE.json")
     ap.add_argument("--phase8-out", type=Path, default=ROOT / "reports/v1/PHASE8_GATE_REPORT.json")
     ap.add_argument("--legacy-regression-out", type=Path, default=ROOT / "reports/v1/LEGACY_REGRESSION_PHASE7.json")
+    ap.add_argument("--config", type=Path, default=ROOT / "config/v1_final_migration_gate.yaml")
     args = ap.parse_args()
+
+    config = _yaml(args.config)
+    required_clients = tuple((config.get("clients") or {}).get("required") or ())
+    if not required_clients:
+        raise SystemExit("final migration gate config has no required clients")
 
     intentional = load_intentional_registry(ROOT / "config/intentional_unmaterialized.yaml")
     index = load_v1_index(args.rule_root)
