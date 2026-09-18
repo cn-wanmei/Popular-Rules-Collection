@@ -1,29 +1,7 @@
 name: Legacy Asset Extractor
 
 on:
-  push:
-    branches:
-      - main
-      - master
-      - phase2.1.1-legacy-asset-extractor
-    paths:
-      - "rule/**"
-      - "src/engine/ingest/**"
-      - "tests/engine/test_legacy_asset_extractor.py"
-      - "Makefile"
-      - "requirements.lock"
-      - ".github/workflows/legacy-asset-extractor.yml"
-  pull_request:
-    branches: [main, master]
-    paths:
-      - "rule/**"
-      - "src/engine/ingest/**"
-      - "tests/engine/test_legacy_asset_extractor.py"
-      - "Makefile"
-      - "requirements.lock"
-      - ".github/workflows/legacy-asset-extractor.yml"
   workflow_dispatch:
-
 jobs:
   extract:
     runs-on: ubuntu-latest

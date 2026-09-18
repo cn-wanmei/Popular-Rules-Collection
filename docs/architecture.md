@@ -4,8 +4,8 @@
 
 | Layer | Path | Editable | Role |
 |-------|------|----------|------|
-| Data | `database/` | No (pipeline) | Canonical services, domains, provenance |
-| Product pages | `rule/` | No (generated) | Human browse + classical base lists |
+| Legacy Source | `database/services/` | No | Historical service bodies; migration evidence only |
+| V1 Canonical Model | `rule/` | Controlled by V1 contract | Service identity, metadata, classical assets |
 | Clients | `generated/` | No (generated) | Mihomo / Surge / sing-box / … |
 | Config | `config/` | Yes | categories, primary mapping, CDN |
 
@@ -49,3 +49,13 @@ python scripts/generate_rule_pages.py --clean
 ```
 
 CI runs this after builders. Do not hand-edit `rule/`.
+
+## Phase 8 cutover boundary
+
+The previous description of `database/` as the canonical service store is historical. During the Phase 8 migration:
+
+- `database/services/` = explicit Legacy Source.
+- `rule/` = V1 Canonical Service Model.
+- `generated/` = generated distribution only.
+- V3 remains the sole production build chain.
+- Legacy deletion requires the final asset-level migration gate; no workflow deletes the source automatically.

@@ -1,24 +1,7 @@
 name: Legacy Asset Reconciliation
 
 on:
-  push:
-    branches: [main, master, phase2.1.2-legacy-asset-reconciliation]
-    paths:
-      - "rule/**"
-      - "src/engine/ingest/**"
-      - "tests/engine/test_legacy_asset_*.py"
-      - "requirements.lock"
-      - ".github/workflows/legacy-asset-reconciliation.yml"
-  pull_request:
-    branches: [main, master]
-    paths:
-      - "rule/**"
-      - "src/engine/ingest/**"
-      - "tests/engine/test_legacy_asset_*.py"
-      - "requirements.lock"
-      - ".github/workflows/legacy-asset-reconciliation.yml"
   workflow_dispatch:
-
 jobs:
   reconcile:
     runs-on: ubuntu-latest

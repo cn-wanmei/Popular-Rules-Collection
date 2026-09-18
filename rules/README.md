@@ -1,6 +1,6 @@
-# Canonical rule directory
+# Reserved canonical rule layout
 
-This tree is the source-of-truth layout for service rules.
+This tree is a reserved future canonical-rule layout. The active V1 Canonical Service Model is currently under `rule/`; `database/services/` is Legacy Source and `generated/` is distribution output.
 
 ```text
 rules/
@@ -57,3 +57,5 @@ The exclusion list is configuration, not filename convention. A service is never
 ## Materialization rule
 
 No 100–200 service backfill is performed in this directory-contract phase. New services are added only after the directory contract, generator, and CI gates pass review. Each new service then receives `rules/<provider>/<service-id>/` and a corresponding generated client tree.
+
+> Phase 8 note: `rules/` is a reserved future canonical-rule layout. The active V1 Canonical Service Model is currently rooted at `rule/`. `database/services/` is Legacy Source and `generated/` is distribution output.

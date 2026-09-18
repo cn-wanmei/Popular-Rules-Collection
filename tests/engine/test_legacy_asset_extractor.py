@@ -126,3 +126,23 @@ def test_large_sample_does_not_reintroduce_quadratic_line_rescan(tmp_path: Path)
     elapsed = perf_counter() - started
     assert len(records) == 10000
     assert elapsed < 5.0, f"10k single-pass records took {elapsed:.3f}s"
+
+
+def test_phase8_legacy_equivalence_manifest_is_ingested(tmp_path: Path) -> None:
+    root = tmp_path / "rule"
+    root.mkdir()
+    (root / "_legacy_asset_equivalence.yaml").write_text(
+        """version: 1
+schema: v1_legacy_asset_equivalence_v1
+assets:
+  - service: example
+    type: domain_suffix
+    value: example.com
+""",
+        encoding="utf-8",
+    )
+    records = list(iter_service_assets(root))
+    assert len(records) == 1
+    assert records[0].asset.service == "example"
+    assert records[0].asset.asset_type == "domain_suffix"
+    assert records[0].asset.value == "example.com"

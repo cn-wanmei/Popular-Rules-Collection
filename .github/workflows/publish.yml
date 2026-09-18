@@ -11,7 +11,7 @@ concurrency:
 
 jobs:
   publish:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
     permissions:
@@ -44,6 +44,22 @@ jobs:
 
       - name: Architecture Gate
         run: python scripts/architecture_gate.py
+
+      - name: Verify Phase 8 final migration gate evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s release-candidate/reports/v1/FINAL_MIGRATION_GATE.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          obj=json.loads(Path("release-candidate/reports/v1/FINAL_MIGRATION_GATE.json").read_text(encoding="utf-8"))
+          assert obj.get("status") == "PASS", obj
+          assert obj.get("current_head",{}).get("expected") == "${{ github.event.workflow_run.head_sha }}", obj.get("current_head")
+          assert obj.get("phase8",{}).get("sot") == "v1_canonical", obj.get("phase8")
+          assert obj.get("deletion_boundary",{}).get("automatic_delete") is False, obj.get("deletion_boundary")
+          print("Phase 8 final migration gate evidence: PASS")
+          PY
 
       - name: Verify release identity
         shell: bash
@@ -88,6 +104,8 @@ jobs:
           cp -a release-candidate/generated generated
           cp -a "release-candidate/data/runs/${RUN_ID}" data/runs/
           cp -a release-candidate/data/baseline/canonical.json data/baseline/
+          mkdir -p reports/v1
+          cp -a release-candidate/reports/v1/*.json reports/v1/
           python scripts/derive_service_production_evidence.py --run-id "${RUN_ID}"
           python scripts/refresh_latest_release_from_promotion.py --run-id "${RUN_ID}"
           python scripts/status_consistency_gate.py
@@ -96,7 +114,7 @@ jobs:
           python scripts/classify_service_artifacts.py || true
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A generated/ data/runs/ data/baseline/ reports/latest_release.json
+          git add -A generated/ data/runs/ data/baseline/ reports/latest_release.json reports/v1/
           if git diff --staged --quiet; then
             echo "No release changes to publish."
             exit 0
@@ -120,6 +138,8 @@ jobs:
             cp -a release-candidate/generated generated
             cp -a "release-candidate/data/runs/${RUN_ID}" data/runs/
             cp -a release-candidate/data/baseline/canonical.json data/baseline/
+            mkdir -p reports/v1
+            cp -a release-candidate/reports/v1/*.json reports/v1/
             python scripts/derive_service_production_evidence.py --run-id "${RUN_ID}"
             python scripts/refresh_latest_release_from_promotion.py --run-id "${RUN_ID}"
             python scripts/status_consistency_gate.py || true

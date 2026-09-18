@@ -95,6 +95,7 @@ class CoverageReport:
     missing: list[str] = field(default_factory=list)
     coverage_ratio: float = 0.0
     coverage_pct: float = 0.0
+    coverage_kind: str = "catalogue_coverage"
     at_100: bool = False
     intentional_errors: list[str] = field(default_factory=list)
     details: dict[str, Any] = field(default_factory=dict)
@@ -108,6 +109,7 @@ class CoverageReport:
             "missing": self.missing,
             "coverage_ratio": self.coverage_ratio,
             "coverage_pct": round(self.coverage_pct, 4),
+            "coverage_kind": self.coverage_kind,
             "at_100": self.at_100,
             "intentional_errors": self.intentional_errors,
             "details": self.details,
@@ -179,9 +181,13 @@ def compute_coverage_from_index(
             if e.children or e.domains > 0 or e.ips > 0:
                 materialized.add(e.id)
         else:
-            if e.path and (e.domains > 0 or e.ips > 0 or True):
-                # path present counts as materialized presence in rule/
-                materialized.add(e.id)
+            if e.path:
+                service_dir = Path(rule_root).parent / e.path
+                if service_dir.is_dir() and any(
+                    p.is_file() and p.suffix == ".list" and p.stat().st_size > 0
+                    for p in service_dir.iterdir()
+                ):
+                    materialized.add(e.id)
     intentional = load_intentional_registry(intentional_path)
     return compute_coverage(registered, materialized, intentional)
 
@@ -203,6 +209,7 @@ class Phase8Report:
     generated_at: str = ""
     stage: str = "inventory"  # inventory|coverage|ready|switched|legacy_deleted
     coverage: dict[str, Any] = field(default_factory=dict)
+    legacy_asset_equivalence: dict[str, Any] = field(default_factory=dict)
     gates: list[MigrationGateResult] = field(default_factory=list)
     sot: str = "legacy"  # "legacy" | "v1_canonical"
     legacy_delete_allowed: bool = False
@@ -216,6 +223,7 @@ class Phase8Report:
             "generated_at": self.generated_at,
             "stage": self.stage,
             "coverage": self.coverage,
+            "legacy_asset_equivalence": self.legacy_asset_equivalence,
             "gates": [{"name": g.name, "passed": g.passed, "detail": g.detail} for g in self.gates],
             "sot": self.sot,
             "legacy_delete_allowed": self.legacy_delete_allowed,
@@ -236,7 +244,12 @@ def evaluate_phase8_gates(
     unexplained_removed: list[str] | None = None,
     intentional_valid: bool = True,
     graph_ok: bool = True,
-    golden_ok: bool = True,
+    golden_ok: bool = False,
+    legacy_asset_equivalence_ok: bool = False,
+    client_regression_ok: bool = False,
+    deterministic_ok: bool = False,
+    production_run_ok: bool = False,
+    current_head_ok: bool = False,
 ) -> Phase8Report:
     """Evaluate ordered Phase 8 gates. Does not mutate any Source of Truth."""
     report = Phase8Report(
@@ -275,6 +288,31 @@ def evaluate_phase8_gates(
             passed=golden_ok,
             detail="ok" if golden_ok else "golden coverage incomplete",
         ),
+        MigrationGateResult(
+            name="legacy_asset_equivalence_100",
+            passed=legacy_asset_equivalence_ok,
+            detail="ok" if legacy_asset_equivalence_ok else "Legacy Asset Equivalence not proven",
+        ),
+        MigrationGateResult(
+            name="phase5_client_regression",
+            passed=client_regression_ok,
+            detail="ok" if client_regression_ok else "client regression incomplete",
+        ),
+        MigrationGateResult(
+            name="phase6_full_determinism",
+            passed=deterministic_ok,
+            detail="ok" if deterministic_ok else "full V3 determinism not proven",
+        ),
+        MigrationGateResult(
+            name="production_run_rc_ready",
+            passed=production_run_ok,
+            detail="ok" if production_run_ok else "production run is not RC_READY",
+        ),
+        MigrationGateResult(
+            name="current_head_binding",
+            passed=current_head_ok,
+            detail="ok" if current_head_ok else "evidence not bound to current HEAD",
+        ),
     ]
     report.gates = gates
 
@@ -296,11 +334,7 @@ def evaluate_phase8_gates(
             )
 
     # Legacy delete only when ready AND operator would switch SoT first
-    report.legacy_delete_allowed = (
-        report.stage == "ready"
-        and all(g.passed for g in gates)
-        and len(unexplained_removed) == 0
-    )
+    report.legacy_delete_allowed = False
     return report
 
 
@@ -317,7 +351,7 @@ def switch_sot_to_v1(report: Phase8Report) -> Phase8Report:
         return report
     report.sot = "v1_canonical"
     report.stage = "switched"
-    report.legacy_delete_allowed = True
+    report.legacy_delete_allowed = False
     return report
 
 
@@ -325,6 +359,7 @@ def request_legacy_delete(
     report: Phase8Report,
     *,
     allow_legacy_delete: bool = False,
+    final_gate_passed: bool = False,
 ) -> Phase8Report:
     """Final step: only deletes conceptually when allow_legacy_delete=True.
 
@@ -336,6 +371,10 @@ def request_legacy_delete(
         report.errors.append(
             "refuse legacy delete: SoT is still 'legacy'; run switch_sot_to_v1 first"
         )
+        report.legacy_delete_allowed = False
+        return report
+    if not final_gate_passed:
+        report.errors.append("refuse legacy delete: final migration gate is not PASS")
         report.legacy_delete_allowed = False
         return report
     if not allow_legacy_delete:
