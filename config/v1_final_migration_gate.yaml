@@ -22,6 +22,15 @@ gates:
   phase7_asset_regression: BLOCK_RELEASE
   production_rc_ready: BLOCK_RELEASE
   current_head_binding: BLOCK_RELEASE
+equivalence:
+  # Services intentionally present only in V1 Canonical. They are excluded
+  # from the Legacy-vs-V1 extra-service failure, but all Legacy asset keys
+  # remain hard-equivalent and deletion remains separately gated.
+  allowed_v1_only_services:
+    - adblock
+    - china
+    - gfw
+    - proxy
 deletion:
   target: database/services
   automatic_delete: false
