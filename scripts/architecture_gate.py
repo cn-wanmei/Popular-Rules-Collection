@@ -28,7 +28,6 @@ ALLOWED_LEGACY_TOUCH = {
     "src/engine/ingest/migrate_legacy.py",
     "scripts/v1_final_migration_gate.py",
     "config/v1_final_migration_gate.yaml",
-    ".github/workflows/build.yml",
 }
 LEGACY_SERVICE_REF = "database" + "/" + "services"
 WORKFLOWS = ROOT / ".github" / "workflows"
