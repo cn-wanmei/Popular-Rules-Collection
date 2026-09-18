@@ -121,10 +121,21 @@ def normalize_record(record: dict[str, Any]) -> dict[str, Any]:
     typ = str(out.get("type", "")).strip().lower().replace("-", "_")
     val = str(out.get("value", "")).strip()
 
+    # Canonicalize aliases before comparing AssetKeys. IPv6 CIDRs are the
+    # same logical CIDR asset family as IPv4 CIDRs; retaining ip_cidr6 here
+    # would make Phase 7/8 report a false removal when V1 stores the same
+    # normalized CIDR under the canonical ip_cidr type.
+    type_aliases = {
+        "ip_cidr6": "ip_cidr",
+        "ip": "ip_cidr",
+        "cidr": "ip_cidr",
+    }
+    typ = type_aliases.get(typ, typ)
+
     if typ in ("domain", "domain_suffix", "domain_keyword", "domain_regex",
                "host", "host_suffix", "keyword"):
         val = _normalize_domain(val)
-    elif typ in ("ip_cidr", "ip_cidr6", "ip", "cidr"):
+    elif typ == "ip_cidr":
         val = _normalize_cidr(val)
     elif typ in ("url", "url_regex"):
         val = _normalize_url(val)
