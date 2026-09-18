@@ -242,7 +242,6 @@ def main() -> int:
 
     run_dir = args.data_root / "runs" / args.run_id
     client_report = run_client_regression(run_dir)
-    required_clients = ("mihomo", "singbox", "surge", "shadowrocket", "quantumultx", "egern", "loon")
     client_ok = all(client_report.client_artifacts_ok.get(c, False) for c in required_clients) and not client_report.errors
     kind_ok = {
         kind: any(item.present for item in client_report.results if item.kind == kind)
