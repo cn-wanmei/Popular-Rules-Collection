@@ -1,6 +1,6 @@
-# Canonical rule directory
+# Reserved canonical rule layout
 
-This tree is the source-of-truth layout for service rules.
+This tree is a reserved future canonical-rule layout. The active V1 Canonical Service Model is currently under `rule/`; `database/services/` is Legacy Source and `generated/` is distribution output.
 
 ```text
 rules/
