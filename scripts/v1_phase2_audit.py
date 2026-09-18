@@ -69,10 +69,12 @@ def merge(dst,src):
 
 def flatten_index(idx):
     rows=[]
-    for cat,block in (idx.get('categories') or {}).items():
+    for cat in sorted((idx.get('categories') or {}), key=lambda x: str(x).casefold()):
+        block=(idx.get('categories') or {}).get(cat)
         if not isinstance(block,dict):continue
-        for e in block.get('rules') or []:
-            if isinstance(e,dict):x=dict(e);x['category']=str(cat);rows.append(x)
+        rules=block.get('rules') or []
+        for e in sorted((x for x in rules if isinstance(x,dict)), key=lambda x: (str(x.get('id','')).casefold(), str(x.get('path','')))):
+            x=dict(e);x['category']=str(cat);rows.append(x)
     return rows
 
 def metadata(p):return load_yaml(p,{}) if p.exists() else {}
@@ -80,7 +82,7 @@ def metadata(p):return load_yaml(p,{}) if p.exists() else {}
 def assets(entry_dir):
     total={k:set() for k in KINDS}
     if not entry_dir.exists():return total
-    for p in entry_dir.iterdir():
+    for p in sorted(entry_dir.iterdir(), key=lambda x: x.name.casefold()):
         if not p.is_file() or p.name=='metadata.yaml' or p.suffix.lower() not in ('.list','.txt'):continue
         try:merge(total,parse_assets(p.read_text(encoding='utf-8',errors='replace')))
         except OSError:pass
@@ -124,7 +126,7 @@ def scan(root,out):
         elif idx_type in {'service','aggregate'}:istatus='candidate';itype=idx_type;v1_id=str(e.get('id')) if idx_type=='service' else None
         else:istatus='quarantine';itype='unknown';v1_id=None
         def lst(k):return [str(x) for x in meta.get(k,[])] if isinstance(meta.get(k),list) else []
-        inventory.append({'legacy':legacy,'legacy_id':str(e.get('id')),'name':str(e.get('name') or e.get('id')),'category':str(e.get('category')),'index_service_type':idx_type,'metadata_service_type':meta_type,'index_domains':int(e.get('domains') or 0),'index_ips':int(e.get('ips') or 0),'path_exists':d.exists(),'metadata_present':bool(meta),'metadata_parent':meta.get('parent'),'metadata_primary_category':meta.get('primary_category'),'metadata_categories':lst('categories'),'metadata_children':lst('children'),'metadata_sources':lst('sources'),'metadata_clients':lst('clients'),'asset_counts':{k:len(a[k]) for k in KINDS},'identity_status':istatus,'identity_type':itype,'v1_service_id':v1_id})
+        inventory.append({'legacy':legacy,'legacy_id':str(e.get('id')),'name':str(e.get('name') or e.get('id')),'category':str(e.get('category')),'index_service_type':idx_type,'metadata_service_type':meta_type,'index_domains':int(e.get('domains') or 0),'index_ips':int(e.get('ips') or 0),'path_exists':d.exists(),'metadata_present':bool(meta),'metadata_parent':meta.get('parent'),'metadata_primary_category':meta.get('primary_category'),'metadata_categories':sorted(lst('categories'),key=str.casefold),'metadata_children':sorted(lst('children'),key=str.casefold),'metadata_sources':sorted(lst('sources'),key=str.casefold),'metadata_clients':sorted(lst('clients'),key=str.casefold),'asset_counts':{k:len(a[k]) for k in KINDS},'identity_status':istatus,'identity_type':itype,'v1_service_id':v1_id})
     ids={x['legacy_id'] for x in inventory}
     for x in inventory:
         if x['index_service_type']!='aggregate':continue
@@ -141,7 +143,7 @@ def scan(root,out):
     if agg_drift:
         detail={x['aggregate_id']:x['missing_child_ids'] for x in aggregate_rows if x['relation_status']=='drift'}
         conflicts.append({'id':'AGG-DRIFT-FINAL-001','type':'aggregate-child-missing','severity':'high','count':len(agg_drift),'entries':agg_drift,'missing_child_ids':detail,'resolution':'Do not synthesize missing services. Resolve metadata/index discrepancy explicitly.'})
-    s={'generated_at':datetime.now(timezone.utc).isoformat(),'git_commit':git(['git','rev-parse','HEAD']),'git_branch':git(['git','branch','--show-current']),'inventory_sha256':hashlib.sha256(index_path.read_bytes()).hexdigest(),'legacy_entries':len(entries),'service_candidates':sum(x['index_service_type']=='service' for x in inventory),'aggregate_candidates':sum(x['index_service_type']=='aggregate' for x in inventory),'metadata_present':sum(x['metadata_present'] for x in inventory),'metadata_missing':len(missing_meta),'confirmed_identity':sum(x['identity_status']=='confirmed' for x in inventory),'candidate_identity':sum(x['identity_status']=='candidate' for x in inventory),'quarantined_identity':sum(x['identity_status']=='quarantine' for x in inventory),'aggregate_relation_drift':len(agg_drift),'aggregate_child_resolution':child_counts,'duplicate_asset_keys':len(duplicate_keys),'orphan_paths':len(orphan),'indexed_missing_paths':len(missing_paths),'unclassified_asset_lines':unknown}
+    s={'inventory_sha256':hashlib.sha256(index_path.read_bytes()).hexdigest(),'legacy_entries':len(entries),'service_candidates':sum(x['index_service_type']=='service' for x in inventory),'aggregate_candidates':sum(x['index_service_type']=='aggregate' for x in inventory),'metadata_present':sum(x['metadata_present'] for x in inventory),'metadata_missing':len(missing_meta),'confirmed_identity':sum(x['identity_status']=='confirmed' for x in inventory),'candidate_identity':sum(x['identity_status']=='candidate' for x in inventory),'quarantined_identity':sum(x['identity_status']=='quarantine' for x in inventory),'aggregate_relation_drift':len(agg_drift),'aggregate_child_resolution':child_counts,'duplicate_asset_keys':len(duplicate_keys),'orphan_paths':len(orphan),'indexed_missing_paths':len(missing_paths),'unclassified_asset_lines':unknown}
     (out/'LEGACY_SEMANTIC_INVENTORY.json').write_text(json.dumps({'version':1,'phase':'2.3','summary':s,'entries':inventory},indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     (out/'IDENTITY_RESOLUTION.yaml').write_text(yaml.safe_dump({'version':1,'phase':'2.4','status':'audit','entries':inventory},sort_keys=False,allow_unicode=True),encoding='utf-8')
     (out/'AGGREGATE_RESOLUTION.yaml').write_text(yaml.safe_dump({'version':1,'phase':'2.5','status':'audit','aggregates':aggregate_rows},sort_keys=False,allow_unicode=True),encoding='utf-8')
