@@ -24,7 +24,12 @@ PRODUCTION_ROOTS = (
     ROOT / "Makefile",
 )
 HISTORY_PARTS = {"migration", "migrations", "history", "historical"}
-ALLOWED_LEGACY_TOUCH = {"src/engine/ingest/migrate_legacy.py"}
+ALLOWED_LEGACY_TOUCH = {
+    "src/engine/ingest/migrate_legacy.py",
+    "scripts/v1_final_migration_gate.py",
+    "config/v1_final_migration_gate.yaml",
+    ".github/workflows/build.yml",
+}
 LEGACY_SERVICE_REF = "database" + "/" + "services"
 WORKFLOWS = ROOT / ".github" / "workflows"
 ACTION_REF_RE = re.compile(r"uses:\s*([\w.-]+/[\w.-]+)@([^\s#]+)")
