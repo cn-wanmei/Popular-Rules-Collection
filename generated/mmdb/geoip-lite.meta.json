@@ -1,0 +1,16 @@
+{
+  "id": "dat-geoip-lite",
+  "kind": "binary",
+  "scope": "artifact",
+  "path": "generated/mmdb/geoip-lite.dat",
+  "sha256": "ef6ea6a19b17fbd783ded1bd9d72b736251379004d278ffbcf57649477d99d9c",
+  "bytes": 207011,
+  "fetched_at": "2026-09-18T23:56:13.814186+00:00",
+  "source": {
+    "owner": null,
+    "repo": null,
+    "branch": null,
+    "path": "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat",
+    "url": "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
+  }
+}
