@@ -1,0 +1,45 @@
+{
+  "schema": "v1_observation_gate_v1",
+  "sot": "v1_canonical",
+  "legacy_deleted": false,
+  "phase5": {
+    "schema": "v1_phase5_observation_v1",
+    "clients": [
+      "mihomo",
+      "singbox",
+      "surge",
+      "shadowrocket",
+      "quantumultx",
+      "egern",
+      "loon"
+    ],
+    "clients_count": 7,
+    "clients_ok": true,
+    "kinds": [
+      "domain",
+      "suffix",
+      "keyword",
+      "CIDR",
+      "URL",
+      "Aggregate"
+    ],
+    "kinds_ok": true,
+    "capability_matrix_present": true,
+    "builder_registry_present": true,
+    "index_entries": 218,
+    "note": "Full artifact scan requires a V3 run dir; structural gate verifies client contract + configs.",
+    "all_pass": true
+  },
+  "phase6": {
+    "schema": "v1_phase6_observation_v1",
+    "runs": 3,
+    "digests": [
+      "2883a0ad83e04e84b1414aac8f27df1001b644df596e7341094f4a4afe051bef",
+      "2883a0ad83e04e84b1414aac8f27df1001b644df596e7341094f4a4afe051bef",
+      "2883a0ad83e04e84b1414aac8f27df1001b644df596e7341094f4a4afe051bef"
+    ],
+    "identical": true,
+    "note": "Stable projection from rule/_index.yaml only (sorted categories/rules). Full generated determinism deferred to Build Client Rules CI."
+  },
+  "all_pass": true
+}

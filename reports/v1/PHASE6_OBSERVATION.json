@@ -1,0 +1,11 @@
+{
+  "schema": "v1_phase6_observation_v1",
+  "runs": 3,
+  "digests": [
+    "2883a0ad83e04e84b1414aac8f27df1001b644df596e7341094f4a4afe051bef",
+    "2883a0ad83e04e84b1414aac8f27df1001b644df596e7341094f4a4afe051bef",
+    "2883a0ad83e04e84b1414aac8f27df1001b644df596e7341094f4a4afe051bef"
+  ],
+  "identical": true,
+  "note": "Stable projection from rule/_index.yaml only (sorted categories/rules). Full generated determinism deferred to Build Client Rules CI."
+}
