@@ -1,0 +1,14 @@
+version: 1
+schema: phase_n_runtime_cutover_v1
+status: NOT_EXECUTED
+current_root: rule
+target_root: rules
+authorization:
+  required: [phase_i_pass, phase_j_50_of_50, phase_k_pass, phase_l_frozen, phase_m_equivalence_pass, seven_client_pass, determinism_pass, artifact_equivalence_pass]
+  operator_approval_required: true
+execution:
+  explicit_single_cutover_commit: true
+  directory_move_in_script: false
+  loader_switch_only_after_authorization: true
+rollback:
+  old_root_must_remain_until_observation_complete: true
