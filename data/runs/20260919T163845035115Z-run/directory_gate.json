@@ -1,0 +1,22 @@
+{
+  "schema": "rule_directory_gate_v2",
+  "pass": true,
+  "errors": [],
+  "canonical_rule_files": 0,
+  "generated_rule_files": 1332,
+  "require_rules_content": false,
+  "china_excluded_independent_providers": [
+    "alibaba",
+    "baidu",
+    "bytedance",
+    "huawei",
+    "jd",
+    "meituan",
+    "netease",
+    "oppo",
+    "tencent",
+    "vivo",
+    "xiaomi"
+  ],
+  "policy": "config/service_model/directories.yaml"
+}

@@ -1,0 +1,72 @@
+{
+  "schema": "semantic_ir_manifest_v2",
+  "ir_schema": "semantic_ir_v2",
+  "contract_version": "2.0",
+  "generated_at": "2026-09-19T16:39:33.493288+00:00",
+  "ir_digest": "7a53d8df2655b7c1401f37cd63a05f6a5f7afe4faabea7af355af8cd368f5d01",
+  "stats": {
+    "rules": 128714,
+    "services": 233,
+    "groups": 0,
+    "aggregates": 39,
+    "decisions": 128714,
+    "semantic_intent_applied": 4
+  },
+  "semantic_intent": {
+    "schema": "semantic_intent_v1",
+    "policy_file": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/config/semantic_intent.yaml",
+    "policy_version": 1,
+    "policies": [
+      "blackmatrix7-alibaba-brand-aliases"
+    ],
+    "applied": [
+      {
+        "policy_id": "blackmatrix7-alibaba-brand-aliases",
+        "rule_id": "eba29f2dc4b8ef803d10639395fbacee2d0df533d068009d4c504a34010cae30",
+        "service_memberships": [
+          "alibaba",
+          "alipay",
+          "china"
+        ],
+        "from_type": "DOMAIN-SUFFIX",
+        "to_type": "DOMAIN-KEYWORD",
+        "value": "alipay"
+      },
+      {
+        "policy_id": "blackmatrix7-alibaba-brand-aliases",
+        "rule_id": "b75e62a7b289bc06fec11b9b6d31b24e0d82ddf2cfe3b17de06f9a71a49b8c44",
+        "service_memberships": [
+          "alibaba",
+          "china"
+        ],
+        "from_type": "DOMAIN-SUFFIX",
+        "to_type": "DOMAIN-KEYWORD",
+        "value": "alibaba"
+      },
+      {
+        "policy_id": "blackmatrix7-alibaba-brand-aliases",
+        "rule_id": "9babc81e33d60143442dc59d62801928de38f5ecfc1e813119f6a7b7a61bfb65",
+        "service_memberships": [
+          "alibaba",
+          "china"
+        ],
+        "from_type": "DOMAIN-SUFFIX",
+        "to_type": "DOMAIN-KEYWORD",
+        "value": "taobao"
+      },
+      {
+        "policy_id": "blackmatrix7-alibaba-brand-aliases",
+        "rule_id": "595cd36891df3f0df7bafc1aaad78a84a67efffb44ba20b41eac0b0c67338530",
+        "service_memberships": [
+          "alibaba",
+          "china"
+        ],
+        "from_type": "DOMAIN-SUFFIX",
+        "to_type": "DOMAIN-KEYWORD",
+        "value": "tmall"
+      }
+    ],
+    "applied_count": 4
+  },
+  "v2_runtime_dependency": 0
+}
