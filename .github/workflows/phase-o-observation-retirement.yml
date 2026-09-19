@@ -6,11 +6,6 @@ on:
         required: true
         type: choice
         options: [CUTOVER_EXECUTED, OBSERVING, FROZEN_OLD_ROOT, RETIRED]
-      enforce:
-        description: Enforce the persisted evidence transition
-        required: false
-        default: true
-        type: boolean
 jobs:
   phase-o:
     runs-on: ubuntu-latest
