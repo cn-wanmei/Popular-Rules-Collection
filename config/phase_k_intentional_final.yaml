@@ -1,0 +1,15 @@
+version: 1
+schema: phase_k_intentional_final_v1
+registry: config/intentional_unmaterialized.yaml
+expected:
+  registry_total: 37
+  intentional_only: 34
+  materialized_and_intentional: 3
+  materialized_and_intentional_ids: [adblock-light, adblock-pro, stripe]
+final_semantics:
+  intentional_only: audited exclusion/deferment with no dedicated materialized service output
+  materialized_and_intentional: retained historical audit entry while a materialized service also exists
+rules:
+  no_fake_domains: true
+  every_entry_requires_code_and_reason: true
+  classification_is_derived_from_evidence: true
