@@ -210,6 +210,7 @@ jobs:
           cp reports/v1/FINAL_MIGRATION_GATE.json release-candidate/reports/v1/
           cp reports/v1/PHASE8_GATE_REPORT.json release-candidate/reports/v1/
           cp reports/v1/LEGACY_REGRESSION_PHASE7.json release-candidate/reports/v1/
+          cp reports/v1/LEGACY_FINALIZATION_PHASE7.json release-candidate/reports/v1/
           cp reports/v1/V3_DETERMINISM_FINAL.json release-candidate/reports/v1/
 
       - name: Upload immutable build artifact
