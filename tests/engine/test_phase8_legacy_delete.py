@@ -55,3 +55,19 @@ def test_delete_requires_all_gates_but_can_delete_explicit_fixture(tmp_path: Pat
     # through an alternate temp cwd in integration environments, so this unit test only verifies authorization shape.
     assert result["authorized"] is True
     assert result["deleted"] is True
+
+
+def test_coverage_never_counts_unregistered_materialized_services() -> None:
+    from src.engine.v1.phase8 import compute_coverage
+
+    report = compute_coverage(
+        {"a", "b"},
+        {"a", "b", "unregistered-extra"},
+        {"b": type("Intentional", (), {"service_id": "b", "code": "NO_UPSTREAM", "reason": "test"})()},
+    )
+    assert report.registered == 2
+    assert report.materialized == 2
+    assert report.intentional == 0
+    assert report.details["covered_count"] == 2
+    assert report.coverage_pct == 100.0
+    assert report.at_100 is True
