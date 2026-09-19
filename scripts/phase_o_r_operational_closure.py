@@ -212,12 +212,22 @@ def main() -> int:
             errors.append("target rules/ root must be non-empty")
 
     runs = list(evidence.get("observation_runs") or [])
-    run_ids = [str(x.get("run_id")) for x in runs if isinstance(x, dict) and x.get("run_id")]
-    snapshot_ids = [str(x.get("snapshot_id")) for x in runs if isinstance(x, dict) and x.get("snapshot_id")]
+    run_ids = [
+        str(x.get("run_id"))
+        for x in runs
+        if isinstance(x, dict) and x.get("run_id")
+    ]
+    snapshot_ids = [
+        str(x.get("snapshot_id"))
+        for x in runs
+        if isinstance(x, dict) and x.get("snapshot_id")
+    ]
     valid_run_errors: list[str] = []
     for run in runs:
         if isinstance(run, dict):
-            valid_run_errors.extend(validate_observation_run(run, required_checks, cutover_sha))
+            valid_run_errors.extend(
+                validate_observation_run(run, required_checks, cutover_sha)
+            )
         else:
             valid_run_errors.append("observation_runs contains a non-object item")
 
@@ -279,7 +289,10 @@ def main() -> int:
         "errors": errors,
     }
 
-    output = json.dumps(payload, ensure_ascii=False, indent=2) + "\\n"
+    # Emit valid JSON on stdout. A literal "\n" suffix is not JSON whitespace
+    # and breaks consumers that parse stdout as a single JSON document.
+    output = json.dumps(payload, ensure_ascii=False, indent=2) + "
+"
     print(output, end="")
     if args.json_out:
         args.json_out.parent.mkdir(parents=True, exist_ok=True)
