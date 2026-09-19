@@ -1,0 +1,10 @@
+version: 1
+schema: phase_o_observation_retirement_v1
+states: [CUTOVER_EXECUTED, OBSERVING, FROZEN_OLD_ROOT, RETIRED]
+observation:
+  minimum_runs: 3
+  required_checks: [seven_client, golden, determinism, artifact_equivalence, semantic_regression, source_health]
+retirement:
+  explicit_operator_approval_required: true
+  automatic_delete: false
+  old_root_must_be_absent_only_after_frozen_old_root: true
