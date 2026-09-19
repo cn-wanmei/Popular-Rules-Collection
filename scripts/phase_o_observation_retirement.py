@@ -2,14 +2,18 @@
 """Evidence-bound Phase O wrapper.
 
 Observation evidence is loaded from the persisted Phase O evidence bundle.
-There is deliberately no manual run-count argument and this wrapper never
-moves or deletes the old runtime root.
+There is deliberately no manual run-count or approval argument. This wrapper
+never moves or deletes the old runtime root.
 """
 from __future__ import annotations
 
 import argparse
 import sys
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 from scripts.phase_o_r_operational_closure import main as o_r_main
 
@@ -29,13 +33,6 @@ def main() -> int:
         default=Path("reports/v1/PHASE_O_EVIDENCE_BUNDLE.json"),
     )
     parser.add_argument("--json-out", type=Path, default=None)
-    # Kept as a rejected compatibility flag so older invocations fail closed
-    # rather than silently accepting a fake approval source.
-    parser.add_argument(
-        "--approve-retirement",
-        action="store_true",
-        help="Deprecated: approval must be persisted in the evidence bundle.",
-    )
     args = parser.parse_args()
 
     argv = [
