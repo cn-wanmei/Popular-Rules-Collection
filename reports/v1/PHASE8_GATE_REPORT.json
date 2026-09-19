@@ -1,6 +1,6 @@
 {
   "schema": "v1_phase8_migration_v1",
-  "generated_at": "2026-09-19T03:28:10.195921+00:00",
+  "generated_at": "2026-09-19T05:03:56.847656+00:00",
   "stage": "switched",
   "coverage": {
     "schema": "v1_phase8_coverage_v1",
@@ -8,13 +8,13 @@
     "materialized": 184,
     "intentional": 34,
     "missing": [],
-    "coverage_ratio": 1.036697247706422,
-    "coverage_pct": 103.6697,
+    "coverage_ratio": 1.0,
+    "coverage_pct": 100.0,
     "coverage_kind": "catalogue_coverage",
     "at_100": true,
     "intentional_errors": [],
     "details": {
-      "covered_count": 226,
+      "covered_count": 218,
       "intentional_only": [
         "aliexpress",
         "amazonaws",
@@ -3856,7 +3856,7 @@
     {
       "name": "coverage_100",
       "passed": true,
-      "detail": "103.67% (materialized=184, intentional_unmaterialized=34, registered=218, missing=0)"
+      "detail": "100.00% (materialized=184, intentional_unmaterialized=34, registered=218, missing=0)"
     },
     {
       "name": "no_unexplained_removed",
