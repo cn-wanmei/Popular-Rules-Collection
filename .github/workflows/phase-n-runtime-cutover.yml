@@ -1,0 +1,25 @@
+name: Phase N Runtime Cutover
+on:
+  workflow_dispatch:
+    inputs:
+      authorize:
+        description: Operator approval for explicit cutover authorization
+        required: true
+        default: "false"
+        type: choice
+        options: ["false","true"]
+jobs:
+  phase-n:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12.14"
+      - run: python -m pip install -r requirements.lock
+      - if: inputs.authorize == 'true'
+        run: |
+          echo '{"phase_i_pass":false,"phase_j_50_of_50":false,"phase_k_pass":false,"phase_l_frozen":false,"phase_m_equivalence_pass":false,"seven_client_pass":false,"determinism_pass":false,"artifact_equivalence_pass":false}' > /tmp/phase-n-evidence.json
+          python scripts/phase_n_runtime_cutover.py --approve --evidence /tmp/phase-n-evidence.json
