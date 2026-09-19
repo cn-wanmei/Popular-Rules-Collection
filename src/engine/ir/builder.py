@@ -27,10 +27,16 @@ def build_ir(canonical_dir: Path, hierarchy_dir: Path, out_dir: Path) -> dict[st
     decisions = decide_batch(rules, memberships)
     rules_by_id = {r["id"]: r for r in rules}
 
+    # Category aggregates are decision-bearing hierarchy nodes as well.
+    # The published IR schema intentionally has only services/groups/aggregates,
+    # so category nodes are represented in the aggregate universe instead of
+    # introducing a fourth top-level entity class.
+    aggregate_views = dict(hier.get("aggregates", {}))
+    aggregate_views.update(hier.get("categories", {}))
     entities = {
         "services": sorted(hier.get("services", {}).keys()),
         "groups": sorted(hier.get("groups", {}).keys()),
-        "aggregates": sorted(hier.get("aggregates", {}).keys()),
+        "aggregates": sorted(aggregate_views.keys()),
     }
     service_rules = {
         entity: [rules_by_id[rid]["id"] for rid in memberships.get(entity, []) if rid in rules_by_id]
@@ -47,7 +53,7 @@ def build_ir(canonical_dir: Path, hierarchy_dir: Path, out_dir: Path) -> dict[st
         "views": {
             "services": hier.get("services", {}),
             "groups": hier.get("groups", {}),
-            "aggregates": hier.get("aggregates", {}),
+            "aggregates": aggregate_views,
         },
         "view": {
             "services": hier.get("services", {}),
