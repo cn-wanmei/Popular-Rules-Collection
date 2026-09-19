@@ -28,6 +28,13 @@ ALLOWED_LEGACY_TOUCH = {
     "src/engine/ingest/migrate_legacy.py",
     "scripts/v1_final_migration_gate.py",
     "config/v1_final_migration_gate.yaml",
+    # Phase 8 is the sole explicit Legacy execution boundary. These exact
+    # paths are allowlisted so the architecture gate still rejects all other
+    # production references to the retired Legacy service source.
+    ".github/workflows/phase8-legacy-delete.yml",
+    "src/engine/legacy/delete.py",
+    "scripts/legacy_delete.py",
+    "tests/engine/test_phase8_legacy_delete.py",
 }
 LEGACY_SERVICE_REF = "database" + "/" + "services"
 WORKFLOWS = ROOT / ".github" / "workflows"
