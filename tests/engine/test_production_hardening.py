@@ -54,6 +54,10 @@ def test_full_production_run_has_quality_cas_and_dag(tmp_path: Path) -> None:
     assert ir["schema"] == "semantic_ir_v2"
     assert ir["memberships"]
     assert ir["v2_runtime_dependency"] == 0
+    semantic = json.loads((run_dir / "semantic" / "contract.json").read_text(encoding="utf-8"))
+    observation = json.loads((run_dir / "observation" / "report.json").read_text(encoding="utf-8"))
+    assert semantic["all_pass"] is True
+    assert observation["all_pass"] is True
 
     artifacts = run_dir / "artifacts"
     assert {p.name for p in artifacts.iterdir() if p.is_dir()} >= {
@@ -64,8 +68,8 @@ def test_full_production_run_has_quality_cas_and_dag(tmp_path: Path) -> None:
 def test_pipeline_stages_are_dependency_complete() -> None:
     assert STAGES == [
         "snapshot", "ingest", "source_gate", "quarantine", "canonical",
-        "hierarchy", "ir", "directory", "adapters", "diff", "golden", "observability",
-        "cas", "release",
+        "hierarchy", "ir", "semantic_contract", "directory", "adapters", "diff",
+        "golden", "observability", "cas", "release", "observation",
     ]
 
 
