@@ -40,4 +40,4 @@ jobs:
         run: python scripts/phase_o_r_operational_closure.py --json-out reports/v1/PHASE_O_R_CLOSURE.json
       - name: Enforce requested transition
         if: github.event_name == 'workflow_dispatch' && inputs.enforce == true
-        run: python scripts/phase_o_r_operational_closure.py --state "{{ inputs.state }}" --enforce
+        run: python scripts/phase_o_r_operational_closure.py --state "${{ inputs.state }}" --enforce
