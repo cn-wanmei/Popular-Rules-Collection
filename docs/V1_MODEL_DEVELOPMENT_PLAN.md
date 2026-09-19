@@ -88,121 +88,29 @@ Service
 
 ## 3. 目标目录结构
 
-V1 的物理入口统一为：
+Phase L 冻结后的物理 Canonical 目标为 `rules/`。旧的 `rule/category`, `rule/service`, `rule/shared` 仅保留为历史模型说明，不再作为运行时物理目标。
 
 ```text
-rule/
-├── category/
-│   ├── ai/
-│   ├── ai-coding/
-│   ├── ai-image/
-│   ├── ai-video/
-│   ├── ai-audio/
-│   ├── social/
-│   ├── communication/
-│   ├── streaming/
-│   ├── music/
-│   ├── video/
-│   ├── gaming/
-│   ├── game-platform/
-│   ├── developer/
-│   ├── cloud/
-│   ├── infrastructure/
-│   ├── ecommerce/
-│   ├── payment/
-│   ├── finance/
-│   ├── crypto/
-│   ├── productivity/
-│   ├── collaboration/
-│   ├── education/
-│   ├── travel/
-│   ├── transport/
-│   ├── news/
-│   ├── media/
-│   ├── forum/
-│   ├── security/
-│   ├── privacy/
-│   ├── vpn/
-│   ├── domestic/
-│   ├── international/
-│   ├── advertising/
-│   ├── tracking/
-│   └── special/
-│
-├── service/
-│   ├── google/
-│   ├── microsoft/
-│   ├── apple/
-│   ├── meta/
-│   ├── amazon/
-│   ├── tencent/
-│   ├── alibaba/
-│   ├── bytedance/
-│   ├── baidu/
-│   ├── huawei/
-│   ├── xiaomi/
-│   ├── openai/
-│   ├── anthropic/
-│   ├── deepseek/
-│   └── ...
-│
-└── shared/
-    └── ...
+rules/
+├── {provider}/
+│   ├── all/
+│   │   └── rules.yaml
+│   └── {service}/
+│       └── rules.yaml
+└── china/
+    └── all/
+        └── rules.yaml
 ```
 
-> `category/` 与 `service/` 是两个平行的顶级实体空间。`shared/` 是第三种 Canonical Entity，用于解决跨服务复用资产；它不改变 Service 的主模型。
+关键约束：
 
-### 3.1 Parent Service
-
-大型生态必须作为顶级 Service：
-
-```text
-rule/service/google/
-├── service.yaml
-├── aggregate.yaml
-├── gmail/
-│   └── service.yaml
-├── gemini/
-│   └── service.yaml
-├── google-drive/
-│   └── service.yaml
-├── google-docs/
-│   └── service.yaml
-├── google-sheets/
-│   └── service.yaml
-├── google-meet/
-│   └── service.yaml
-├── google-maps/
-│   └── service.yaml
-├── google-play/
-│   └── service.yaml
-├── google-photos/
-│   └── service.yaml
-├── google-calendar/
-│   └── service.yaml
-├── youtube/
-│   └── service.yaml
-├── youtube-music/
-│   └── service.yaml
-├── google-cloud/
-│   └── service.yaml
-└── firebase/
-    └── service.yaml
-```
-
-Parent Service 的聚合语义：
-
-```text
-Google Aggregate
-= Google own assets
-+ Child Service aggregate
-+ Required dependency closure
-- Canonical duplicates
-```
-
-具体资产是否属于 Parent、Child 或 Shared Component，必须通过资产审计确定，不能仅凭域名名称推断。
-
----
+1. `rules/` 是 Phase N 完成后的唯一 Runtime Canonical Root。
+2. Provider Aggregate 使用 `rules/{provider}/all`。
+3. Service 使用 `rules/{provider}/{service}`。
+4. China Aggregate 使用 `rules/china/all`。
+5. `generated/` 只保存客户端产物，不是 Canonical Source。
+6. `database/` 与 Service Rule 保持边界，不纳入 `rules/` 目录树。
+7. Phase L 只冻结契约，不执行目录迁移。
 
 ## 4. Entity 类型
 
