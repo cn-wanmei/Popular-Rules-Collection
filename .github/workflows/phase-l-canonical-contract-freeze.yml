@@ -1,0 +1,18 @@
+name: Phase L Canonical Contract Freeze
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  phase-l:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12.14"
+      - run: python -m pip install pyyaml
+      - run: python scripts/phase_l_canonical_contract_freeze.py --json-out reports/v1/PHASE_L_CANONICAL_CONTRACT_FREEZE.json
