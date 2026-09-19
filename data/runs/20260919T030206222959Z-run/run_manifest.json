@@ -1,0 +1,223 @@
+{
+  "schema": "engine_run_v7",
+  "run_id": "20260919T030206222959Z-run",
+  "started_at": "2026-09-19T03:02:06.223167+00:00",
+  "stages": {
+    "snapshot": {
+      "status": "ok",
+      "snapshot_id": "snap-20260919T030206224277Z",
+      "file_count": 334,
+      "reused": false,
+      "duration_ms": 315.653,
+      "task_identity": "0a833a37b77783474388db8166deb580cb1fcf59f1b5fea655ad000dab9ab8b9",
+      "contract_version": "dag_node_v1",
+      "input_digest": "ed2ba0d8617c67be441a238503db97a397134d621edde60bf5a6c8a72ee036d8",
+      "output_digest": "669e42ce6e29b4ab4b0d0977375a3fd646fcc828b24095f938dc52783dff00dc"
+    },
+    "ingest": {
+      "status": "ok",
+      "records": 259570,
+      "errors": 0,
+      "duration_ms": 33048.1,
+      "task_identity": "f62b1193edf4e00edc4b7947c90d4c87ebcd92fcaa3fd485db1d9917bcc72480",
+      "contract_version": "dag_node_v1",
+      "input_digest": "9f8a15dc086b9bbe229f037d81d0f97b3c86758778bdd0cf493b3ef918392bef",
+      "output_digest": "eaa53aeac5e2435d2592b0e148cda886d1700339075e74509fe75445d072662a"
+    },
+    "source_gate": {
+      "status": "ok",
+      "checked": 259570,
+      "failures": 0,
+      "duration_ms": 392.473,
+      "task_identity": "588dd39f8b81e311e32d4424a41380097a61c16c2ade8c6d827079733bd7a0cf",
+      "contract_version": "dag_node_v1",
+      "input_digest": "a4f8e8020503c1dd6e02025b2759790371cbde39a291f66b2685364e13783606",
+      "output_digest": "350ff9d0fc0ba566fa5450406216a0eb9686f50c45c448639fca16d2732fd449"
+    },
+    "quarantine": {
+      "status": "ok",
+      "clean": 259570,
+      "quarantined": 0,
+      "duration_ms": 99.372,
+      "task_identity": "5051e79332d8a587f5537f2cc44a7461f7ec96f719bc89d16393cacd4b800941",
+      "contract_version": "dag_node_v1",
+      "input_digest": "4b2c277aab6b3732db5249f186329e213c440ed72170a1d68c82568bb6482989",
+      "output_digest": "e703d4d8617532ef0436e02bb8df07b9587e220c8f9d102c87906c8a4144dd8f"
+    },
+    "canonical": {
+      "status": "ok",
+      "unique_rules": 128714,
+      "memberships": 259570,
+      "errors": 0,
+      "duration_ms": 2953.666,
+      "task_identity": "3c33d42ef27c01429def40aa8cc50084eca5a3938c679a350506ac9c006d7d26",
+      "contract_version": "dag_node_v1",
+      "input_digest": "338bb0402c7cebdeda70dc11f82665c7bbddcc0bd42d6045d92c1b210c0840b0",
+      "output_digest": "d7a7308fc7166aa0c119005c1c03fb640edec2d9b4578eca138e298dbe7a1194"
+    },
+    "diff": {
+      "status": "ok",
+      "added": 0,
+      "removed": 0,
+      "changed": 0,
+      "baseline": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/data/baseline/canonical.json",
+      "duration_ms": 7758.085,
+      "task_identity": "89be3274b9dba3ff262efd865e2cafb37b79b26816a7b6772f0a75d255f37968",
+      "contract_version": "dag_node_v1",
+      "input_digest": "9906caac42aa8bbec1bcdfe08e53895a09672253bdc8f6c257989310ace27571",
+      "output_digest": "7c63f771a34a604f76825b2e8f515e9d2832f78d5086e1e62e617e1d14d062df"
+    },
+    "hierarchy": {
+      "status": "ok",
+      "service_count": 233,
+      "group_count": 0,
+      "aggregate_count": 38,
+      "duration_ms": 4691.644,
+      "task_identity": "060135637e7e17a16d5a54a11e8f2b05c76d54064001915335c411d588f1b317",
+      "contract_version": "dag_node_v1",
+      "input_digest": "56fe5aa62745500acb805c7ca9db6ca1c922fdd6e35b01d2eeb51a8f563a702c",
+      "output_digest": "683cd6d7c42de660c34988552529e95a0407b2a4dd506a6eb436840533bee4b3"
+    },
+    "ir": {
+      "status": "ok",
+      "stats": {
+        "rules": 128714,
+        "services": 233,
+        "groups": 0,
+        "aggregates": 38,
+        "decisions": 128714,
+        "semantic_intent_applied": 4
+      },
+      "schema": "semantic_ir_v2",
+      "duration_ms": 13323.51,
+      "task_identity": "5d358bc356829b096aa4aad784184e4b093009f824630090407195b1dc2430be",
+      "contract_version": "dag_node_v1",
+      "input_digest": "1763735c17e47cdcec932280a6f08b4e37e01c34c89b9b6557cffd58016083ca",
+      "output_digest": "7f740f909a514df26ecc787d784aabc11ce8cc5d3ec58d4103cd0d27d79abdba"
+    },
+    "directory": {
+      "status": "ok",
+      "errors": [],
+      "canonical_rule_files": 0,
+      "generated_rule_files": 1332,
+      "duration_ms": 105.772,
+      "task_identity": "72173c0c5caa1808e8022c3c354496a0b905b4b7153a9693c58fccba813a3711",
+      "contract_version": "dag_node_v1",
+      "input_digest": "da3404370eea24c23c662188ce3f94a9a99a2ef83eb500c1f35aeb3d5892f619",
+      "output_digest": "fe58007b3bd3094d7af23c53392f87707abd5c43a7f4b0f500d606a7d0f9da27"
+    },
+    "adapters": {
+      "status": "ok",
+      "clients": [
+        "egern",
+        "loon",
+        "mihomo",
+        "quantumultx",
+        "shadowrocket",
+        "singbox",
+        "surge"
+      ],
+      "parallel": true,
+      "source_contract": "semantic_ir_v2",
+      "directory_contract": "rule_directory_policy_v1",
+      "duration_ms": 13245.568,
+      "task_identity": "f5073ee929c713d257a47dc7b39158dedb3aa052fa04a2923a5fbbe08c812a31",
+      "contract_version": "dag_node_v1",
+      "input_digest": "9f2721b5e5d5b95b9b77a817a89af96b3bc610286aaa768a165aa805cf8ca8a3",
+      "output_digest": "73aefaa46846aa5a69e4479a6bbde4a47895865767c33be1e3bf2b4befc42fdc"
+    },
+    "golden": {
+      "status": "ok",
+      "all_pass": true,
+      "duration_ms": 2147.979,
+      "task_identity": "4250b0aad8c88779d4c77c0c169c7dd9b529ac48698081bf8f84382fb1241f1d",
+      "contract_version": "dag_node_v1",
+      "input_digest": "127019ff6a531bca3dbfff1a8e190aec705d369bfe4d08a6f35c64abb2e892e5",
+      "output_digest": "461e740ed81ef0e02682c5cdf3110a1f6a0d0e7bf3f669ff4908f647315d8b69"
+    },
+    "observability": {
+      "status": "ok",
+      "quality_score": 100,
+      "quality_decision": "PASS",
+      "sbom_files": 1358,
+      "retention_candidates": 32,
+      "duration_ms": 591.73,
+      "task_identity": "25f4edea34f15cbac1a7dd3d29572d26031c7cb160cc95ec00f4bf0d7a822471",
+      "contract_version": "dag_node_v1",
+      "input_digest": "41a5e0f10bbca6fb222250eb9e7069dcbe8bb747e3e89a8c077ca5346d9bffa1",
+      "output_digest": "abdff3a51cdbed078d90f3d70dff4c8e49d80848b82f35f8c1eeff15eb1c0f4b"
+    },
+    "cas": {
+      "status": "ok",
+      "object_count": 1358,
+      "duration_ms": 819.823,
+      "task_identity": "83b1615e95a6f12d03034f68fe1466bf47e152172c31662f6d1422c186d26063",
+      "contract_version": "dag_node_v1",
+      "input_digest": "1344a00fe14c84b6788061ee53488977852849e0f7216515ba5acaa2bce73f94",
+      "output_digest": "698976c689a59fe623621027405f1e590a8098ff714c2987df36853682e022b8"
+    },
+    "release": {
+      "status": "ok",
+      "state": "RC_READY",
+      "can_publish": true,
+      "quality_score": 100,
+      "duration_ms": 1826.406,
+      "task_identity": "e2bf3db97fec3e0c025ba520d7adbd9392e7a475feb6ee7f388d1956f6f5ed5a",
+      "contract_version": "dag_node_v1",
+      "input_digest": "8d50099a38f84900f7c1eabbd8ffa5f1e1d5a2e0af8615c24c5e8d7c47d93655",
+      "output_digest": "23d03154ba45bc92eb3275f9d4f32ffab93d2149ce0ab18e1f1320d4ce31cfdf"
+    }
+  },
+  "skip_large": false,
+  "snapshot_id": "snap-20260919T030206224277Z",
+  "collection_id": "2026-09-18-410ef4b59256758541f2",
+  "collection_manifest": "backup/2026-09-18/manifests/_collection.json",
+  "v2_runtime_dependency": 0,
+  "execution": {
+    "mode": "dag",
+    "layers": [
+      [
+        "snapshot"
+      ],
+      [
+        "ingest"
+      ],
+      [
+        "source_gate"
+      ],
+      [
+        "quarantine"
+      ],
+      [
+        "canonical"
+      ],
+      [
+        "diff",
+        "hierarchy"
+      ],
+      [
+        "ir"
+      ],
+      [
+        "directory"
+      ],
+      [
+        "adapters"
+      ],
+      [
+        "golden"
+      ],
+      [
+        "observability"
+      ],
+      [
+        "cas"
+      ],
+      [
+        "release"
+      ]
+    ]
+  },
+  "finished_at": "2026-09-19T03:03:22.866650+00:00",
+  "status": "ok"
+}
