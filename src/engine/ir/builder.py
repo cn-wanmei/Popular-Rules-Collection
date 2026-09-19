@@ -58,7 +58,7 @@ def build_ir(canonical_dir: Path, hierarchy_dir: Path, out_dir: Path) -> dict[st
         "view": {
             "services": hier.get("services", {}),
             "groups": hier.get("groups", {}),
-            "aggregates": hier.get("aggregates", {}),
+            "aggregates": aggregate_views,
         },
         "memberships": service_rules,
         "rules": [
