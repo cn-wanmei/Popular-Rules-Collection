@@ -291,8 +291,7 @@ def main() -> int:
 
     # Emit valid JSON on stdout. A literal "\n" suffix is not JSON whitespace
     # and breaks consumers that parse stdout as a single JSON document.
-    output = json.dumps(payload, ensure_ascii=False, indent=2) + "
-"
+    output = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
     print(output, end="")
     if args.json_out:
         args.json_out.parent.mkdir(parents=True, exist_ok=True)
