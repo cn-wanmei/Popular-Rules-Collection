@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       authorize:
-        description: Operator approval flag (actual evidence bundle must be supplied by the cutover run)
+        description: Run the evidence-bound cutover authorization gate
         required: true
         default: "false"
         type: choice
@@ -15,13 +15,16 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: "3.12.14"
       - run: python -m pip install pyyaml
       - run: python -m py_compile scripts/phase_n_runtime_cutover.py
-      - name: Guard until evidence is actually supplied
+      - name: Evidence-bound authorization
         if: inputs.authorize == 'true'
-        run: |
-          test "$(grep '^status:' config/phase_n_runtime_cutover.yaml | awk '{print $2}')" = "NOT_EXECUTED"
-          echo "Phase N authorization was requested, but config is still NOT_EXECUTED; no cutover is performed."
+        run: python scripts/phase_n_runtime_cutover.py --evidence reports/v1/PHASE_N_EVIDENCE_BUNDLE.json --approve --json-out reports/v1/PHASE_N_GATE.json
+      - name: Keep authorization disabled by default
+        if: inputs.authorize != 'true'
+        run: echo "Phase N authorization was not requested; no cutover is performed."
