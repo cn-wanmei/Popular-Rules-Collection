@@ -333,8 +333,24 @@ def main() -> int:
     # the current matrix, and Aggregate is an entity type rather than a native
     # rule type; neither should become a false hard failure when the production
     # build cannot natively emit them.
-    ir = _json(run_dir / "ir" / "ir.json")
-    actual_types = {str(r.get("type", "")).strip().casefold() for r in (ir.get("rules") or []) if isinstance(r, dict)}
+    ir_path = run_dir / "ir" / "ir.json"
+    semantic_contract_path = run_dir / "semantic" / "contract.json"
+    if ir_path.is_file():
+        ir = _json(ir_path)
+        actual_types = {
+            str(r.get("type", "")).strip().casefold()
+            for r in (ir.get("rules") or [])
+            if isinstance(r, dict)
+        }
+    elif semantic_contract_path.is_file():
+        semantic_contract = _json(semantic_contract_path)
+        actual_types = {
+            str(t).strip().casefold()
+            for t in (semantic_contract.get("rule_types") or [])
+            if str(t).strip()
+        }
+    else:
+        actual_types = set()
     kind_presence = {
         "domain": "domain" in actual_types,
         "suffix": "domain_suffix" in actual_types,
