@@ -1,6 +1,10 @@
 version: 1
 schema: canonical_root_migration_v1
 status: DESIGN_ONLY
+contract_status: FROZEN
+contract_freeze_phase: L
+authoritative_layout_policy: config/service_model/directories.yaml
+cutover_authorized: false
 
 current_runtime_root: rule
 target_runtime_root: rules
