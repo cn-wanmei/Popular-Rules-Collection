@@ -1,0 +1,4145 @@
+{
+  "schema": "service_production_evidence_v1",
+  "run_id": "20260919T012736530763Z-run",
+  "release_ssot": "data/runs/20260919T012736530763Z-run/release/manifest.json",
+  "generated_at": "2026-09-19T01:37:41.996724+00:00",
+  "policy": "config/service_production_policy.yaml",
+  "scope": {
+    "p0_count": 50,
+    "selected_count": 66,
+    "note": "Excludes legacy-only service artifacts unless service_model marks runtime-relevant"
+  },
+  "summary": {
+    "release_eligible_true": 8,
+    "production_true": 0,
+    "partial_blocked": 17
+  },
+  "services": [
+    {
+      "service_id": "1688",
+      "identity": {
+        "provider": "alibaba",
+        "materialization_state": "materialized",
+        "coverage": "partial"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [
+        "coverage_partial_forbids_production"
+      ],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996356+00:00"
+    },
+    {
+      "service_id": "airbnb",
+      "identity": {
+        "provider": "airbnb",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996379+00:00"
+    },
+    {
+      "service_id": "alibaba-core",
+      "identity": {
+        "provider": "alibaba",
+        "materialization_state": "materialized",
+        "coverage": "partial"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [
+        "coverage_partial_forbids_production"
+      ],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996387+00:00"
+    },
+    {
+      "service_id": "alibaba-shared",
+      "identity": {
+        "provider": "alibaba",
+        "materialization_state": "materialized",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": true,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996398+00:00"
+    },
+    {
+      "service_id": "alibabacloud",
+      "identity": {
+        "provider": "alibaba",
+        "materialization_state": "materialized",
+        "coverage": "partial"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [
+        "coverage_partial_forbids_production"
+      ],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996404+00:00"
+    },
+    {
+      "service_id": "amazon-core",
+      "identity": {
+        "provider": "amazon",
+        "materialization_state": "materialized",
+        "coverage": "partial"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [
+        "coverage_partial_forbids_production"
+      ],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996410+00:00"
+    },
+    {
+      "service_id": "amazon-shared",
+      "identity": {
+        "provider": "amazon",
+        "materialization_state": "materialized",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": true,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996417+00:00"
+    },
+    {
+      "service_id": "apple-core",
+      "identity": {
+        "provider": "apple",
+        "materialization_state": "materialized",
+        "coverage": "partial"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [
+        "coverage_partial_forbids_production"
+      ],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996422+00:00"
+    },
+    {
+      "service_id": "apple-shared",
+      "identity": {
+        "provider": "apple",
+        "materialization_state": "materialized",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": true,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996428+00:00"
+    },
+    {
+      "service_id": "appledev",
+      "identity": {
+        "provider": "apple",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996433+00:00"
+    },
+    {
+      "service_id": "appstore",
+      "identity": {
+        "provider": "apple",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996438+00:00"
+    },
+    {
+      "service_id": "aws",
+      "identity": {
+        "provider": "amazon",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996442+00:00"
+    },
+    {
+      "service_id": "azure",
+      "identity": {
+        "provider": "microsoft",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996446+00:00"
+    },
+    {
+      "service_id": "baidu-core",
+      "identity": {
+        "provider": "baidu",
+        "materialization_state": "materialized",
+        "coverage": "partial"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [
+        "coverage_partial_forbids_production"
+      ],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996451+00:00"
+    },
+    {
+      "service_id": "baidu-shared",
+      "identity": {
+        "provider": "baidu",
+        "materialization_state": "materialized",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": true,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996456+00:00"
+    },
+    {
+      "service_id": "baidunetdisk",
+      "identity": {
+        "provider": "baidu",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996461+00:00"
+    },
+    {
+      "service_id": "bitbucket",
+      "identity": {
+        "provider": "atlassian",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996465+00:00"
+    },
+    {
+      "service_id": "bluesky",
+      "identity": {
+        "provider": "bluesky",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996469+00:00"
+    },
+    {
+      "service_id": "booking",
+      "identity": {
+        "provider": "booking",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996473+00:00"
+    },
+    {
+      "service_id": "bytedance-core",
+      "identity": {
+        "provider": "bytedance",
+        "materialization_state": "materialized",
+        "coverage": "partial"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [
+        "coverage_partial_forbids_production"
+      ],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996478+00:00"
+    },
+    {
+      "service_id": "bytedance-shared",
+      "identity": {
+        "provider": "bytedance",
+        "materialization_state": "materialized",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": true,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996483+00:00"
+    },
+    {
+      "service_id": "cainiao",
+      "identity": {
+        "provider": "alibaba",
+        "materialization_state": "materialized",
+        "coverage": "partial"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [
+        "coverage_partial_forbids_production"
+      ],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996487+00:00"
+    },
+    {
+      "service_id": "canva",
+      "identity": {
+        "provider": "canva",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996492+00:00"
+    },
+    {
+      "service_id": "cursor",
+      "identity": {
+        "provider": "cursor",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996496+00:00"
+    },
+    {
+      "service_id": "deepseek",
+      "identity": {
+        "provider": "deepseek",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996500+00:00"
+    },
+    {
+      "service_id": "dewu",
+      "identity": {
+        "provider": "dewu",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996504+00:00"
+    },
+    {
+      "service_id": "dingding",
+      "identity": {
+        "provider": "alibaba",
+        "materialization_state": "materialized",
+        "coverage": "partial"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [
+        "coverage_partial_forbids_production"
+      ],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996509+00:00"
+    },
+    {
+      "service_id": "doubao",
+      "identity": {
+        "provider": "bytedance",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996513+00:00"
+    },
+    {
+      "service_id": "elevenlabs",
+      "identity": {
+        "provider": "elevenlabs",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996517+00:00"
+    },
+    {
+      "service_id": "feishu",
+      "identity": {
+        "provider": "bytedance",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996521+00:00"
+    },
+    {
+      "service_id": "findmy",
+      "identity": {
+        "provider": "apple",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996525+00:00"
+    },
+    {
+      "service_id": "firebase",
+      "identity": {
+        "provider": "google",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996547+00:00"
+    },
+    {
+      "service_id": "google-core",
+      "identity": {
+        "provider": "google",
+        "materialization_state": "materialized",
+        "coverage": "partial"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [
+        "coverage_partial_forbids_production"
+      ],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996553+00:00"
+    },
+    {
+      "service_id": "google-shared",
+      "identity": {
+        "provider": "google",
+        "materialization_state": "materialized",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": true,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996559+00:00"
+    },
+    {
+      "service_id": "googlecloud",
+      "identity": {
+        "provider": "google",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996563+00:00"
+    },
+    {
+      "service_id": "grok",
+      "identity": {
+        "provider": "xai",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996568+00:00"
+    },
+    {
+      "service_id": "groq",
+      "identity": {
+        "provider": "groq",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996572+00:00"
+    },
+    {
+      "service_id": "huggingface",
+      "identity": {
+        "provider": "huggingface",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996576+00:00"
+    },
+    {
+      "service_id": "messenger",
+      "identity": {
+        "provider": "meta",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996580+00:00"
+    },
+    {
+      "service_id": "microsoft-core",
+      "identity": {
+        "provider": "microsoft",
+        "materialization_state": "materialized",
+        "coverage": "partial"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [
+        "coverage_partial_forbids_production"
+      ],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996584+00:00"
+    },
+    {
+      "service_id": "microsoft-shared",
+      "identity": {
+        "provider": "microsoft",
+        "materialization_state": "materialized",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": true,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996590+00:00"
+    },
+    {
+      "service_id": "netlify",
+      "identity": {
+        "provider": "netlify",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996595+00:00"
+    },
+    {
+      "service_id": "npm",
+      "identity": {
+        "provider": "npm",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996599+00:00"
+    },
+    {
+      "service_id": "perplexity",
+      "identity": {
+        "provider": "perplexity",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996603+00:00"
+    },
+    {
+      "service_id": "pypi",
+      "identity": {
+        "provider": "pypi",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996607+00:00"
+    },
+    {
+      "service_id": "qq",
+      "identity": {
+        "provider": "tencent",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996611+00:00"
+    },
+    {
+      "service_id": "qqmail",
+      "identity": {
+        "provider": "tencent",
+        "materialization_state": "materialized",
+        "coverage": "partial"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [
+        "coverage_partial_forbids_production"
+      ],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996615+00:00"
+    },
+    {
+      "service_id": "qqmusic",
+      "identity": {
+        "provider": "tencent",
+        "materialization_state": "materialized",
+        "coverage": "partial"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [
+        "coverage_partial_forbids_production"
+      ],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996620+00:00"
+    },
+    {
+      "service_id": "roblox",
+      "identity": {
+        "provider": "roblox",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996624+00:00"
+    },
+    {
+      "service_id": "signal",
+      "identity": {
+        "provider": "signal",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996628+00:00"
+    },
+    {
+      "service_id": "snapchat",
+      "identity": {
+        "provider": "snap",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996650+00:00"
+    },
+    {
+      "service_id": "taobao",
+      "identity": {
+        "provider": "alibaba",
+        "materialization_state": "materialized",
+        "coverage": "partial"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [
+        "coverage_partial_forbids_production"
+      ],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996655+00:00"
+    },
+    {
+      "service_id": "tencent-core",
+      "identity": {
+        "provider": "tencent",
+        "materialization_state": "materialized",
+        "coverage": "partial"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [
+        "coverage_partial_forbids_production"
+      ],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996662+00:00"
+    },
+    {
+      "service_id": "tencent-shared",
+      "identity": {
+        "provider": "tencent",
+        "materialization_state": "materialized",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": true,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996670+00:00"
+    },
+    {
+      "service_id": "tencentcloud",
+      "identity": {
+        "provider": "tencent",
+        "materialization_state": "materialized",
+        "coverage": "partial"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [
+        "coverage_partial_forbids_production"
+      ],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996674+00:00"
+    },
+    {
+      "service_id": "tencentmeeting",
+      "identity": {
+        "provider": "tencent",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996679+00:00"
+    },
+    {
+      "service_id": "testflight",
+      "identity": {
+        "provider": "apple",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996683+00:00"
+    },
+    {
+      "service_id": "tidal",
+      "identity": {
+        "provider": "tidal",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996687+00:00"
+    },
+    {
+      "service_id": "tmall",
+      "identity": {
+        "provider": "alibaba",
+        "materialization_state": "materialized",
+        "coverage": "partial"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [
+        "coverage_partial_forbids_production"
+      ],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996692+00:00"
+    },
+    {
+      "service_id": "trello",
+      "identity": {
+        "provider": "atlassian",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996696+00:00"
+    },
+    {
+      "service_id": "uber",
+      "identity": {
+        "provider": "uber",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996700+00:00"
+    },
+    {
+      "service_id": "walmart",
+      "identity": {
+        "provider": "walmart",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996704+00:00"
+    },
+    {
+      "service_id": "wecom",
+      "identity": {
+        "provider": "tencent",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996708+00:00"
+    },
+    {
+      "service_id": "wise",
+      "identity": {
+        "provider": "wise",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996712+00:00"
+    },
+    {
+      "service_id": "youdao",
+      "identity": {
+        "provider": "netease",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996716+00:00"
+    },
+    {
+      "service_id": "youtubemusic",
+      "identity": {
+        "provider": "google",
+        "materialization_state": "candidate",
+        "coverage": "unknown"
+      },
+      "runtime": {
+        "run_id": "20260919T012736530763Z-run"
+      },
+      "clients": {
+        "mihomo": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "singbox": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "surge": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "shadowrocket": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "quantumultx": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "egern": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        },
+        "loon": {
+          "eligible": true,
+          "semantic": "unknown",
+          "artifact": "unknown"
+        }
+      },
+      "semantic_probe": {
+        "status": "unknown"
+      },
+      "release": {
+        "run_level": "RC_READY",
+        "golden": "unknown"
+      },
+      "blockers": [],
+      "derived": {
+        "production_evidence_complete": false,
+        "release_eligible": false,
+        "production": false
+      },
+      "verified_at": "2026-09-19T01:37:41.996721+00:00"
+    }
+  ]
+}
