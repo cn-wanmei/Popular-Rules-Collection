@@ -19,6 +19,7 @@ from src.engine import __version__, __engine__, __v2_runtime_dependency__
 from src.engine.pipeline.run import run_pipeline, STAGES
 from src.engine.ingest.migrate_legacy import migrate_database_services_to_snapshot
 from src.engine.promote.artifact import promote_run, rollback_to_run
+from src.engine.release.engine import run_unified_release
 from src.engine.reproducibility.hash_compare import compute_run_digest, compare_runs
 from src.engine.validation.naming_gate import run_naming_gate
 
@@ -135,25 +136,16 @@ def main(argv: list[str] | None = None) -> int:
         return _run_to_stage(args, "release")
 
     if args.cmd == "publish":
-        result = run_pipeline(
+        result = run_unified_release(
             args.sources,
             args.data,
+            args.generated,
+            args.baseline,
             run_id=args.run_id,
             skip_large=args.skip_large,
         )
         print(json.dumps(result, indent=2, ensure_ascii=False))
-        if result.get("status") != "ok":
-            return 1
-        run_id = result.get("run_id")
-        if not run_id or result.get("stages", {}).get("release", {}).get("state") != "RC_READY":
-            return 1
-        record = promote_run(
-            args.data / "runs" / run_id,
-            args.generated,
-            baseline_path=args.baseline,
-        )
-        print(json.dumps(record, indent=2, ensure_ascii=False))
-        return 0
+        return 0 if result.get("status") == "published" else 1
 
     if args.cmd == "migrate-legacy":
         manifest = migrate_database_services_to_snapshot(
