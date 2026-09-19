@@ -10,6 +10,7 @@ class ServiceSemanticReport:
     checked_services: list[str] = field(default_factory=list)
     checked_rules: list[str] = field(default_factory=list)
     checked_decisions: int = 0
+    duplicate_memberships: int = 0
     violations: list[str] = field(default_factory=list)
     @property
     def all_pass(self) -> bool:
@@ -20,6 +21,7 @@ class ServiceSemanticReport:
             "checked_services": sorted(self.checked_services, key=str.casefold),
             "checked_rules": sorted(self.checked_rules),
             "checked_decisions": self.checked_decisions,
+            "duplicate_memberships": self.duplicate_memberships,
             "violations": sorted(self.violations),
             "all_pass": self.all_pass,
         }
@@ -84,7 +86,10 @@ def validate_service_semantics(ir: dict[str, Any]) -> ServiceSemanticReport:
                 _add(report, f"membership references unknown rule: {entity}:{rid}")
             pair = (entity, str(rid))
             if pair in membership_pairs:
-                _add(report, f"duplicate membership: {entity}:{rid}")
+                # Canonical membership preserves repeated source occurrences.
+                # Membership semantics are set-like, so duplicate source edges
+                # are evidence but not a semantic violation.
+                report.duplicate_memberships += 1
             membership_pairs.add(pair)
     seen_decisions: dict[tuple[str, str], str] = {}
     for index, decision in enumerate(decisions):
@@ -102,6 +107,8 @@ def validate_service_semantics(ir: dict[str, Any]) -> ServiceSemanticReport:
         if not isinstance(entities_for_rule, list) or not all(isinstance(value, str) for value in entities_for_rule):
             _add(report, f"decision[{index}].entities must be a string list")
             entities_for_rule = []
+        else:
+            entities_for_rule = sorted(set(entities_for_rule), key=str.casefold)
         for entity in entities_for_rule:
             if entity not in universe:
                 _add(report, f"decision references unknown entity: {entity}")

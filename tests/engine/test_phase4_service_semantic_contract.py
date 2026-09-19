@@ -28,3 +28,18 @@ def test_semantic_contract_rejects_conflicting_decisions() -> None:
     report = validate_service_semantics(ir)
     assert report.all_pass is False
     assert any("conflicting decisions" in item for item in report.violations)
+
+
+def test_semantic_contract_allows_idempotent_duplicate_memberships() -> None:
+    ir = _valid_ir()
+    ir["memberships"]["Example"] = ["r1", "r1"]
+    report = validate_service_semantics(ir)
+    assert report.all_pass is True
+    assert report.duplicate_memberships == 1
+
+
+def test_semantic_contract_deduplicates_decision_entity_occurrences() -> None:
+    ir = _valid_ir()
+    ir["decisions"][0]["entities"] = ["Example", "Example"]
+    report = validate_service_semantics(ir)
+    assert report.all_pass is True

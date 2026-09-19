@@ -303,14 +303,21 @@ def iter_service_assets(
     rule_root: Path,
     *,
     include_aggregates: bool = True,
+    include_phase8_equivalence: bool = True,
     profile: dict[str, Any] | None = None,
 ) -> Iterator[AssetEvidence]:
-    """Stream de-duplicated evidence, retaining state only for one service."""
+    """Stream de-duplicated evidence, retaining state only for one service.
+
+    Phase 8 migration-supplement assets are optional because they are
+    canonical migration evidence, not ordinary service list records.
+    Reconciliation against rule/_index.yaml must exclude them; V1
+    equivalence consumers may continue to include them.
+    """
     rule_root = Path(rule_root)
     profile = profile if profile is not None else {}
     services_profile = profile.setdefault("services", {})
-    for evidence in _iter_phase8_equivalence_assets(rule_root):
-        yield evidence
+    if include_phase8_equivalence:
+        yield from _iter_phase8_equivalence_assets(rule_root)
 
     for category_dir in sorted(p for p in rule_root.iterdir() if p.is_dir()):
         for service_dir in sorted(p for p in category_dir.iterdir() if p.is_dir()):
@@ -402,6 +409,7 @@ def extract_legacy_asset_ir(
     *,
     index_path: Path | None = None,
     include_aggregates: bool = True,
+    include_phase8_equivalence: bool = True,
     jsonl_output: Path | None = None,
 ) -> LegacyAssetIR:
     """Build the service-level IR and optionally emit full JSONL in the same pass."""
@@ -473,7 +481,12 @@ def extract_legacy_asset_ir(
                     errors=["metadata-only: service is absent from rule/_index.yaml"],
                 )
 
-        for evidence in iter_service_assets(rule_root, include_aggregates=include_aggregates, profile=profile):
+        for evidence in iter_service_assets(
+            rule_root,
+            include_aggregates=include_aggregates,
+            include_phase8_equivalence=include_phase8_equivalence,
+            profile=profile,
+        ):
             summary = summaries.get(evidence.asset.service)
             if summary is None:
                 continue

@@ -19,6 +19,12 @@ def test_reconciliation_reports_exact_duplicate_relation_and_candidates(tmp_path
         """categories:\n  ai:\n    rules:\n      - id: openai\n        name: OpenAI\n        path: rule/AI/OpenAI\n        service_type: service\n        domains: 1\n        ips: 1\n      - id: ai\n        name: AI\n        path: rule/AI/AI\n        service_type: aggregate\n        domains: 1\n        ips: 0\n""",
         encoding="utf-8",
     )
+    # This file is Phase 8 migration evidence, not an ordinary generated
+    # service asset. It must not inflate the _index.yaml reconciliation counts.
+    (root / "_legacy_asset_equivalence.yaml").write_text(
+        """version: 1\nschema: v1_legacy_asset_equivalence_v1\nassets:\n  - service: openai\n    type: domain\n    value: migration-only.example\n""",
+        encoding="utf-8",
+    )
     _service(root, "AI", "OpenAI", "id: openai\nname: OpenAI\nservice_type: service\nparent: ai\n", "openai.list", "openai.com\nopenai.com\n10.0.0.0/8\n")
     _service(root, "AI", "AI", "id: ai\nname: AI\nservice_type: aggregate\nchildren: [openai, mistral]\n", "ai.list", "ai.example\n")
 

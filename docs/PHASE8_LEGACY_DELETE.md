@@ -22,3 +22,16 @@ Phase 8 can be implemented and tested independently because the final gate alrea
 1. Unauthorized deletion is impossible through the entrypoint.
 2. Wrong target, wrong SoT, stale HEAD or non-PASS gate is refused.
 3. No automatic deletion path is introduced.
+
+
+## Closure hardening
+
+The final deletion path is two-stage:
+
+1. The production V3 run must already have Phase 4 semantic validation, Phase 6 observation, and Phase 7 finalization as hard gates.
+2. A current-HEAD closure gate is regenerated in a fresh checkout and kept as workflow artifact evidence. It is deliberately not committed before deletion, because committing a gate changes HEAD and would invalidate a current-HEAD-bound deletion authorization.
+3. The workflow rechecks `origin/main` immediately before deletion. Any concurrent commit aborts the deletion.
+4. Deletion is triggered only by the explicit operator approval marker `.github/phase8-operator-approval/APPROVED` with the exact approval text required by the workflow.
+5. After successful deletion, `reports/v1/PHASE8_DELETION_FINAL.json` records the bound pre-delete HEAD and the explicit approval.
+
+The repository's checked-in migration gate remains build evidence. The closure workflow's current-HEAD gate is the authorization evidence used for the destructive action.
