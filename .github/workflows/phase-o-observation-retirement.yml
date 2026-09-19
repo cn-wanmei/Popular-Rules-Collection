@@ -1,0 +1,25 @@
+name: Phase O Observation Freeze Retirement
+on:
+  workflow_dispatch:
+    inputs:
+      state:
+        required: true
+        type: choice
+        options: [CUTOVER_EXECUTED, OBSERVING, FROZEN_OLD_ROOT, RETIRED]
+      runs:
+        required: true
+        default: "0"
+        type: string
+      approve_retirement:
+        required: false
+        default: false
+        type: boolean
+jobs:
+  phase-o:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - run: python -m py_compile scripts/phase_o_observation_retirement.py
+      - run: python scripts/phase_o_observation_retirement.py --state "${{ inputs.state }}" --runs "${{ inputs.runs }}" ${{ inputs.approve_retirement && '--approve-retirement' || '' }}
