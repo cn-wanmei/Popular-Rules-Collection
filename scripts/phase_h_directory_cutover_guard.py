@@ -70,14 +70,16 @@ def main() -> int:
         if not supported:
             errors.append(f"target canonical root contains no supported rule files: {args.target_root}")
 
-    loader = ROOT / "src" / "engine" / "ingest" / "v1_loader.py"
-    loader_text = loader.read_text(encoding="utf-8") if loader.is_file() else ""
-    if not loader.is_file() or "rules/" not in loader_text:
-        errors.append("V1 loader is not switched to target root")
     ci = ROOT / ".github" / "workflows" / "v1-loader.yml"
     ci_text = ci.read_text(encoding="utf-8") if ci.is_file() else ""
-    if not ci.is_file() or 'v1_loader rules/' not in ci_text:
+    if not ci.is_file() or "v1_loader rules/" not in ci_text or "v1_loader rule/" in ci_text:
         errors.append("V1 loader CI is not switched to target root")
+    build = ROOT / ".github" / "workflows" / "build.yml"
+    build_text = build.read_text(encoding="utf-8") if build.is_file() else ""
+    if not build.is_file() or '"rules/**"' not in build_text:
+        errors.append("main build CI does not watch target rules/**")
+    if '"rule/**"' in build_text:
+        errors.append("main build CI still watches legacy rule/** as a runtime source")
 
     dual = require_report(args.dual_report, "dual-track", errors)
     if dual and dual.get("pass") is not True:
