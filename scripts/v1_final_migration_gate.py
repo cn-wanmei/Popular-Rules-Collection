@@ -258,21 +258,53 @@ def main() -> int:
     allowed_v1_only = set((config.get("equivalence") or {}).get("allowed_v1_only_services") or ())
     index = load_v1_index(args.rule_root)
 
-    legacy_records, legacy_counts, legacy_errors = load_legacy_source_assets(args.legacy_root)
-    v1_records, v1_counts, v1_errors = load_v1_source_assets(args.rule_root)
+    # Post-deletion guard: when the legacy source root no longer exists the
+    # directory has already been removed by the Phase 8 operator action.
+    # In that case we re-use the frozen equivalence evidence that was written
+    # when the directory was still present rather than re-computing from an
+    # empty glob (which would produce total=0 -> at_100=False -> false BLOCKED).
+    _frozen_gate = ROOT / "reports" / "v1" / "FINAL_MIGRATION_GATE.json"
+    _legacy_root_absent = not args.legacy_root.exists()
+    if _legacy_root_absent and _frozen_gate.is_file():
+        try:
+            _frozen = json.loads(_frozen_gate.read_text(encoding="utf-8"))
+            _frozen_eq = _frozen.get("legacy_asset_equivalence", {})
+            _frozen_p8 = _frozen.get("phase8", {})
+            _legacy_already_deleted = (
+                _frozen_eq.get("at_100") is True
+                and _frozen_eq.get("passed") is True
+                and _frozen_p8.get("sot") == "v1_canonical"
+            )
+        except Exception:
+            _legacy_already_deleted = False
+    else:
+        _legacy_already_deleted = False
+
+    if _legacy_already_deleted:
+        # Reconstitute synthetic records so downstream regression sees empty legacy.
+        legacy_records: list[dict[str, str]] = []
+        legacy_counts: dict[str, int] = {}
+        legacy_errors: list[str] = []
+        v1_records, v1_counts, v1_errors = load_v1_source_assets(args.rule_root)
+        # Treat the frozen equivalence result as authoritative; bypass re-audit.
+        equivalence = _frozen_eq
+    else:
+        legacy_records, legacy_counts, legacy_errors = load_legacy_source_assets(args.legacy_root)
+        v1_records, v1_counts, v1_errors = load_v1_source_assets(args.rule_root)
 
     registered = {e.id for e in index.entries}
     materialized = set(v1_counts)
     catalogue = compute_coverage(registered, materialized, intentional)
 
-    equivalence = audit_legacy_equivalence(
-        legacy_records,
-        v1_records,
-        legacy_counts,
-        v1_counts,
-        set(intentional),
-        allowed_v1_only,
-    )
+    if not _legacy_already_deleted:
+        equivalence = audit_legacy_equivalence(
+            legacy_records,
+            v1_records,
+            legacy_counts,
+            v1_counts,
+            set(intentional),
+            allowed_v1_only,
+        )
 
     legacy_for_regression = load_assets_from_records(legacy_records, "legacy")
     v1_for_regression = load_assets_from_records(v1_records, "v1")
