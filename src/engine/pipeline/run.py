@@ -133,9 +133,15 @@ def run_pipeline(sources_root: Path, data_root: Path, *, run_id: str | None = No
         except (OSError, json.JSONDecodeError) as exc:
             return {"status": "blocked", "all_pass": False, "violations": [f"invalid IR: {exc}"]}
         report = validate_service_semantics(ir)
+        report_payload = report.to_dict()
+        report_payload["rule_types"] = sorted({
+            str(rule.get("type", "")).strip().casefold()
+            for rule in (ir.get("rules") or [])
+            if isinstance(rule, dict) and str(rule.get("type", "")).strip()
+        })
         out = run_dir / "semantic" / "contract.json"
         out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(json.dumps(report.to_dict(), indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        out.write_text(json.dumps(report_payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         return {
             "status": "ok" if report.all_pass else "blocked",
             "all_pass": report.all_pass,
