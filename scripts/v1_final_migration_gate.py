@@ -12,6 +12,8 @@ from typing import Any
 import yaml
 
 from src.engine.ingest.legacy_asset_extractor import iter_service_assets
+from src.engine.ingest.legacy_asset_reconciliation import reconcile_legacy_assets
+from src.engine.legacy_finalization.finalizer import finalize_legacy
 from src.engine.ingest.v1_index import load_v1_index
 from src.engine.v1.client_regression import RULE_KINDS, run_client_regression
 from src.engine.v1.golden import REQUIRED_COVERAGE, run_v1_golden
@@ -181,17 +183,38 @@ def check_production_run(run_dir: Path) -> dict[str, Any]:
     errors: list[str] = []
     manifest_path = run_dir / "run_manifest.json"
     release_path = run_dir / "release" / "manifest.json"
+    semantic_path = run_dir / "semantic" / "contract.json"
+    observation_path = run_dir / "observation" / "report.json"
     if not manifest_path.is_file():
         errors.append(f"missing {manifest_path}")
         return {"pass": False, "errors": errors}
     manifest = _json(manifest_path)
     if manifest.get("status") != "ok":
         errors.append(f"run status={manifest.get('status')!r}")
-    release = manifest.get("stages", {}).get("release", {})
+    stages = manifest.get("stages", {})
+    semantic_stage = stages.get("semantic_contract", {})
+    if semantic_stage.get("status") != "ok" or semantic_stage.get("all_pass") is not True:
+        errors.append("Phase 4 semantic contract stage is not PASS")
+    observation_stage = stages.get("observation", {})
+    if observation_stage.get("status") != "ok" or observation_stage.get("all_pass") is not True:
+        errors.append("Phase 6 observation stage is not PASS")
+    release = stages.get("release", {})
     if release.get("state") != "RC_READY":
         errors.append(f"release state={release.get('state')!r}")
     if manifest.get("v2_runtime_dependency") != 0:
         errors.append(f"v2_runtime_dependency={manifest.get('v2_runtime_dependency')!r}")
+    if not semantic_path.is_file():
+        errors.append(f"missing {semantic_path}")
+    else:
+        semantic_report = _json(semantic_path)
+        if semantic_report.get("all_pass") is not True:
+            errors.append("Phase 4 semantic contract report is not PASS")
+    if not observation_path.is_file():
+        errors.append(f"missing {observation_path}")
+    else:
+        observation_report = _json(observation_path)
+        if observation_report.get("all_pass") is not True:
+            errors.append("Phase 6 observation report is not PASS")
     if not release_path.is_file():
         errors.append(f"missing {release_path}")
     else:
@@ -255,6 +278,45 @@ def main() -> int:
     v1_for_regression = load_assets_from_records(v1_records, "v1")
     phase7 = compare_legacy_to_v1(legacy_for_regression, v1_for_regression)
 
+    run_dir = args.data_root / "runs" / args.run_id
+
+    # Phase 7 finalization is a real production hard gate: generate the
+    # reconciliation evidence, then aggregate regression + equivalence +
+    # reconciliation into one terminal report. Finalization never authorizes
+    # deletion; Phase 8 remains a separate explicit operator action.
+    reconciliation_path = ROOT / "reports/v1/LEGACY_ASSET_RECONCILIATION.yaml"
+    candidates_path = ROOT / "reports/v1/V1_PROMOTION_CANDIDATES.yaml"
+    legacy_jsonl_path = args.data_root / "legacy_asset_ir.jsonl"
+    reconciliation = reconcile_legacy_assets(
+        args.rule_root,
+        jsonl_output=legacy_jsonl_path,
+        report_path=reconciliation_path,
+        candidates_path=candidates_path,
+    )
+    equivalence_path = ROOT / "reports/v1/LEGACY_ASSET_EQUIVALENCE_PHASE7.json"
+    equivalence_path.parent.mkdir(parents=True, exist_ok=True)
+    equivalence_path.write_text(
+        json.dumps(equivalence, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    args.legacy_regression_out.parent.mkdir(parents=True, exist_ok=True)
+    args.legacy_regression_out.write_text(
+        json.dumps({
+            "schema": "v1_legacy_regression_final_v2",
+            "counts": phase7.counts,
+            "unexplained_removed": phase7.unexplained_removed,
+            "errors": phase7.errors,
+            "all_pass": not phase7.unexplained_removed and not phase7.errors,
+            "asset_equivalence": equivalence,
+        }, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    phase7_finalization = finalize_legacy(
+        args.legacy_regression_out,
+        equivalence_report=equivalence_path,
+        reconciliation_report=reconciliation_path,
+    )
+
     golden = run_v1_golden(args.rule_root)
     golden_ok = (
         not golden.unmatched
@@ -263,7 +325,6 @@ def main() -> int:
         and all(golden.coverage.get(key, False) for key in REQUIRED_COVERAGE)
     )
 
-    run_dir = args.data_root / "runs" / args.run_id
     client_report = run_client_regression(run_dir)
     client_ok = all(client_report.client_artifacts_ok.get(c, False) for c in required_clients) and not client_report.errors
 
@@ -308,7 +369,13 @@ def main() -> int:
         str(e.get("error", e)) if isinstance(e, dict) else str(e)
         for e in index.errors
     ]
-    phase7_ok = not phase7.unexplained_removed and not phase7.errors and equivalence["at_100"] and equivalence["passed"]
+    phase7_ok = (
+        phase7_finalization.get("all_pass") is True
+        and not phase7.unexplained_removed
+        and not phase7.errors
+        and equivalence["at_100"]
+        and equivalence["passed"]
+    )
 
     final_ok = (
         catalogue.at_100
@@ -366,10 +433,19 @@ def main() -> int:
         },
         "phase6_full_determinism": determinism,
         "phase7_asset_regression": {
-            "pass": phase7_ok,
+            "pass": bool(not phase7.unexplained_removed and not phase7.errors and equivalence["at_100"] and equivalence["passed"]),
             "counts": phase7.counts,
             "unexplained_removed": phase7.unexplained_removed,
             "errors": phase7.errors,
+        },
+        "phase7_finalization": {
+            "pass": phase7_finalization.get("all_pass") is True,
+            "regression_pass": phase7_finalization.get("regression_pass") is True,
+            "equivalence_pass": phase7_finalization.get("equivalence_pass") is True,
+            "reconciliation_pass": phase7_finalization.get("reconciliation_pass") is True,
+            "migration_blocked": phase7_finalization.get("migration_blocked") is True,
+            "blockers": phase7_finalization.get("blockers", []),
+            "reconciliation_summary": reconciliation.get("summary", {}),
         },
         "production_run": production,
         "current_head": head,
@@ -381,6 +457,13 @@ def main() -> int:
             "automatic_delete": False,
         },
     }
+
+    finalization_path = ROOT / "reports/v1/LEGACY_FINALIZATION_PHASE7.json"
+    finalization_path.parent.mkdir(parents=True, exist_ok=True)
+    finalization_path.write_text(
+        json.dumps(phase7_finalization, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
 
     for path, payload in (
         (args.json_out, final),
