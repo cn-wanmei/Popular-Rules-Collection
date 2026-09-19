@@ -1,0 +1,11 @@
+{
+  "schema": "v1_phase8_deletion_final_v1",
+  "status": "DELETED",
+  "target": "database/services",
+  "operator_approval": true,
+  "gate_run_id": "20260919T074016266692Z-run",
+  "gate_status": "PASS",
+  "gate_bound_head": "2760dd2c336756d5709c9a18f75809e0e6ec0873",
+  "deleted_from_head": "2760dd2c336756d5709c9a18f75809e0e6ec0873",
+  "automatic_delete": false
+}
