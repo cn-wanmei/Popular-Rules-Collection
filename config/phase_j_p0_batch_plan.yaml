@@ -1,0 +1,13 @@
+version: 1
+schema: phase_j_p0_batch_plan_v1
+batch_size: 10
+batches:
+  batch01: [appstore, testflight, appledev, findmy, qq, qqmusic, qqmail, wecom, tencentmeeting, tencentcloud]
+  batch02: [taobao, tmall, alibabacloud, "1688", dingding, cainiao, doubao, feishu, baidunetdisk, youdao]
+  batch03: [dewu, deepseek, perplexity, grok, groq, huggingface, cursor, elevenlabs, aws, azure]
+  batch04: [googlecloud, firebase, bitbucket, npm, pypi, netlify, canva, trello, signal, messenger]
+  batch05: [snapchat, bluesky, youtubemusic, tidal, walmart, uber, airbnb, booking, wise, roblox]
+acceptance:
+  per_service_gates: [identity, source, canonical, semantic_audit, overlap_audit, seven_client, golden, release]
+  production_requires_all_gates_pass: true
+  no_status_file_manual_override: true
