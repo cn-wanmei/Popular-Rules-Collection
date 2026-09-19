@@ -1,0 +1,50 @@
+version: 1
+schema: canonical_root_migration_v1
+status: DESIGN_ONLY
+
+current_runtime_root: rule
+target_runtime_root: rules
+
+policy:
+  canonical_root_must_be_unique: true
+  generated_is_not_source_of_truth: true
+  no_big_bang_rename: true
+  dual_track_required_before_cutover: true
+  cutover_requires_explicit_gate: true
+
+current_state:
+  loader_root: rule
+  index_path: rule/_index.yaml
+  rules_directory_expected_to_be_populated: false
+
+target_layout:
+  root: rules
+  provider: rules/{provider}
+  aggregate: rules/{provider}/all
+  service: rules/{provider}/{service}
+  china: rules/china/all
+  rule_file: rules/{scope}/rules.yaml
+
+cutover_prerequisites:
+  - phase_a_current_health_pass
+  - phase_b_p0_production_50_of_50
+  - phase_c_intentional_reaudit_pass
+  - rules_root_populated
+  - loader_switched_to_target
+  - ci_switched_to_target
+  - dual_track_equivalence_pass
+  - seven_client_consistency_pass
+  - determinism_pass
+  - artifact_equivalence_pass
+
+state_machine:
+  DESIGN_ONLY:
+    next: [DUAL_TRACK_READY]
+  DUAL_TRACK_READY:
+    next: [CUTOVER_READY]
+  CUTOVER_READY:
+    next: [CUTOVER_EXECUTED]
+  CUTOVER_EXECUTED:
+    next: [FROZEN_OLD_ROOT]
+  FROZEN_OLD_ROOT:
+    next: [RETIRED]
