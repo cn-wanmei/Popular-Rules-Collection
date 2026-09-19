@@ -1,58 +1,35 @@
 #!/usr/bin/env python3
-"""Phase E: compare two canonical roots by relative file path and SHA-256."""
+"""Phase E: compare dual-track canonical models semantically, never by path identity."""
 from __future__ import annotations
-import argparse, hashlib, json
+import argparse,hashlib,json
 from pathlib import Path
-
-ALLOWED = {".yaml", ".yml", ".json", ".jsonl", ".list", ".txt", ".mmdb"}
-
-def digest(path: Path) -> str:
-    h = hashlib.sha256()
-    with path.open("rb") as fh:
-        for chunk in iter(lambda: fh.read(1024 * 1024), b""):
-            h.update(chunk)
-    return h.hexdigest()
-
-def inventory(root: Path) -> dict[str, str]:
-    return {
-        p.relative_to(root).as_posix(): digest(p)
-        for p in root.rglob("*")
-        if p.is_file() and p.suffix.lower() in ALLOWED
-    }
-
-def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("left", type=Path)
-    ap.add_argument("right", type=Path)
-    args = ap.parse_args()
-    errors: list[str] = []
-    for label, root in (("left", args.left), ("right", args.right)):
-        if not root.is_dir():
-            errors.append(f"{label} root does not exist: {root}")
-
-    left = inventory(args.left) if args.left.is_dir() else {}
-    right = inventory(args.right) if args.right.is_dir() else {}
-    missing_right = sorted(set(left) - set(right))
-    extra_right = sorted(set(right) - set(left))
-    changed = sorted(k for k in set(left) & set(right) if left[k] != right[k])
-    if args.left.is_dir() and not left:
-        errors.append(f"left root contains no supported rule files: {args.left}")
-    if args.right.is_dir() and not right:
-        errors.append(f"right root contains no supported rule files: {args.right}")
-    payload = {
-        "schema": "phase_e_dual_track_equivalence_v1",
-        "left": str(args.left),
-        "right": str(args.right),
-        "left_files": len(left),
-        "right_files": len(right),
-        "missing_right": missing_right,
-        "extra_right": extra_right,
-        "changed": changed,
-        "pass": not errors and not missing_right and not extra_right and not changed,
-        "errors": errors,
-    }
-    print(json.dumps(payload, ensure_ascii=False, indent=2))
-    return 0 if payload["pass"] else 1
-
-if __name__ == "__main__":
+SECTIONS=("service_identities","asset_identities","memberships","dependency_closures","aggregate_closures","network_references","final_ir_digest","artifact_digest")
+def load(p:Path)->dict:
+    v=json.loads(p.read_text(encoding="utf-8"))
+    if not isinstance(v,dict): raise ValueError(f"semantic inventory must be an object: {p}")
+    return v
+def digest(v:dict)->str:
+    raw=json.dumps({k:v.get(k) for k in SECTIONS},ensure_ascii=False,sort_keys=True,separators=(",",":")).encode()
+    return hashlib.sha256(raw).hexdigest()
+def main()->int:
+    ap=argparse.ArgumentParser()
+    ap.add_argument("left_manifest",type=Path)
+    ap.add_argument("right_manifest",type=Path)
+    ap.add_argument("--json-out",type=Path,default=None)
+    ap.add_argument("--diagnostic-path-inventory",action="store_true")
+    args=ap.parse_args()
+    left,right=load(args.left_manifest),load(args.right_manifest); errors=[]
+    for label,v in (("left",left),("right",right)):
+        miss=[k for k in SECTIONS if k not in v]
+        if miss: errors.append(f"{label}: missing semantic sections {miss}")
+    for key in SECTIONS:
+        if left.get(key)!=right.get(key): errors.append(f"semantic mismatch: {key}")
+    ld,rd=digest(left),digest(right)
+    if ld!=rd: errors.append("semantic manifest digest mismatch")
+    payload={"schema":"phase_e_dual_track_equivalence_v2","left_digest":ld,"right_digest":rd,"path_inventory_is_non_authoritative":True,"pass":not errors,"errors":errors}
+    out=json.dumps(payload,ensure_ascii=False,indent=2)+"\n"; print(out,end="")
+    if args.json_out:
+        args.json_out.parent.mkdir(parents=True,exist_ok=True); args.json_out.write_text(out,encoding="utf-8")
+    return 0 if not errors else 1
+if __name__=="__main__":
     raise SystemExit(main())
