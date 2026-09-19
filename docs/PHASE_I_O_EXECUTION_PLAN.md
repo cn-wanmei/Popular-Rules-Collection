@@ -6,9 +6,9 @@
 
 I–O 允许并行开发分支，但生产执行必须服从依赖链：
 
-`I → J/K → L → M → N → O`
+I → J/K → L → M → N → O-R → O
 
-其中 J、K、L 可在 I 的控制面契约确认后并行完善；M、N、O 可以并行编写执行器，但在前置证据未闭合时必须 fail-closed。
+其中 J、K、L 可在 I 的控制面契约确认后并行完善；M、N、O-R、O 可以并行编写执行器，但在前置证据未闭合时必须 fail-closed。
 
 ## Phase I — Gate Closure
 
@@ -40,15 +40,15 @@ P0 固定为 50 个 Service，分为 5 × 10 批次。每个 Service 必须同�
 
 冻结唯一物理目标：
 
-`rules/{provider}/all`
-`rules/{provider}/{service}`
-`rules/china/all`
+rules/{provider}/all
+rules/{provider}/{service}
+rules/china/all
 
 冻结只锁设计，不切换运行时、不填充目标目录、不删除旧源。
 
 ## Phase M — 真正 Dual-Track
 
-从 Canonical Service Model 生成 `rules/`，同时保持 `rule/` 为运行时源。
+从 Canonical Service Model 生成 rules/，同时保持 rule/ 为运行时源。
 
 必须生成双轨 semantic inventory，并验证：
 
@@ -65,24 +65,43 @@ P0 固定为 50 个 Service，分为 5 × 10 批次。每个 Service 必须同�
 
 仅允许一次明确的 cutover commit：
 
-1. loader 切到 `rules/`
-2. CI/publish 监控切到 `rules/**`
-3. 旧 `rule/` 保留进入观察期
+1. loader 切到 rules/
+2. CI/publish 监控切到 rules/**
+3. 旧 rule/ 保留进入观察期
 
-Phase N 本身不执行目录删除。
+Phase N 本身不执行目录删除。授权必须读取持久化 evidence bundle；当前主线仍为 NOT_EXECUTED。
+
+## Phase O-R — Operational Closure Reconciliation
+
+O-R 不是新的业务数据阶段，而是 N/O 的操作闭环补丁。
+
+必须持久化：
+
+- current_state
+- cutover evidence
+- observation evidence bundle
+- 每次 run 的 run_id / snapshot_id / cutover commit SHA
+- seven-client
+- golden
+- determinism
+- artifact equivalence
+- semantic regression
+- source health
+
+禁止使用手工 runs 数量作为证据。
 
 ## Phase O — Observation / Freeze / Retirement
 
-至少观察 3 次完整生产运行；每次都必须通过 seven-client、golden、determinism、artifact equivalence、semantic regression、source health。
+至少观察 3 次真实、切换后的完整生产运行；每次都必须通过 seven-client、golden、determinism、artifact equivalence、semantic regression、source health。
 
-只有观察期完成后才能进入 `FROZEN_OLD_ROOT`；退休仍需要人工批准，且任何脚本不得自动删除旧根。
+只有观察期完成后才能进入 FROZEN_OLD_ROOT；退休仍需要人工批准，且任何脚本不得自动删除旧根。
 
 ## 最终状态
 
-`rule/` → transitional/frozen old root
+rule/ → transitional/frozen old root
 
-`rules/` → runtime Canonical Source of Truth
+rules/ → runtime Canonical Source of Truth
 
-`generated/` → generated client outputs only
+generated/ → generated client outputs only
 
-`database/services/` → 已删除的 Legacy Source
+database/services/ → 已删除的 Legacy Source
