@@ -14,12 +14,12 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30af803
         with:
           ref: ${{ github.sha }}
           fetch-depth: 0
 
-      - uses: 5fda3b95a4ea91299a34e894583c3862153e4b97
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: "3.12.14"
           cache: pip
@@ -41,11 +41,11 @@ jobs:
           set -euo pipefail
           expected="${GITHUB_SHA}"
           local_head="$(git rev-parse HEAD)"
-          test "\${local_head}" = "\${expected}"
+          test "${local_head}" = "${expected}"
           git fetch --prune origin main
           remote_head="$(git rev-parse origin/main)"
-          test "\${remote_head}" = "\${expected}"
-          echo "head=\${expected}" >> "\${GITHUB_OUTPUT}"
+          test "${remote_head}" = "${expected}"
+          echo "head=${expected}" >> "${GITHUB_OUTPUT}"
 
       - name: Resolve latest published production run
         id: production
@@ -59,9 +59,9 @@ jobs:
           print(obj["run_id"])
           PY
           )"
-          test -d "data/runs/\${RUN_ID}"
+          test -d "data/runs/${RUN_ID}"
           test -s "reports/v1/V3_DETERMINISM_FINAL.json"
-          echo "run_id=\${RUN_ID}" >> "\${GITHUB_OUTPUT}"
+          echo "run_id=${RUN_ID}" >> "${GITHUB_OUTPUT}"
 
       - name: Regenerate final migration gate against current HEAD
         shell: bash
@@ -139,7 +139,7 @@ jobs:
           PY
 
       - name: Upload closure evidence
-        uses: b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
         with:
           name: phase8-closure-${{ github.sha }}
           path: |
