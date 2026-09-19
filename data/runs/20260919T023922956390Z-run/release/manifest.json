@@ -1,0 +1,25 @@
+{
+  "schema": "release_manifest_v3",
+  "release_id": "20260919T023922956390Z-run",
+  "run_id": "20260919T023922956390Z-run",
+  "snapshot_id": "snap-20260919T023922957369Z",
+  "release_state": "RC_READY",
+  "generated_at": "2026-09-19T02:40:31.615978+00:00",
+  "canonical_digest": "3398dd35c0df5279ebed7929cf6906a95ff0816c3822605c38f828e945d67bd4",
+  "ir_digest": "a31a4445e1e3b0c4829b908ffc6d5e11ba05ff22d4dbb6bfd253315bfad00fa6",
+  "golden_digest": "70ce2ce6e586bf8ffb67a8d24fe9ae0b492be072b744c6d534eb58a77e1da674",
+  "diff_digest": "08a90cb3abf6c7264e3f7262a4239d9ce375b4c35d71f15974dae632fb565e10",
+  "quality_digest": "81d2a62a426faacd231ac2790227157e6de13417e25e5b40f3d156fac9d06474",
+  "metrics_digest": "39930363b178ceef1cc8aa829173cf8b911b7e99c69edc95503466f3514c7ebe",
+  "baseline_evidence_digest": "8602a38b79f3d0b86b09174f522f9fd57057476ebc297e497df3dbec7e20ffb0",
+  "client_digests": {
+    "egern": "ea322c89607a75d409f72bc83e5a7e042c12a46287997f026093de10b519c88c",
+    "loon": "7f43ed2add55d44381a117b11ba90d9087d87ca1cd4944603c971c61408eff04",
+    "mihomo": "54741320db83f7aaf15ee70f7be42d6a57f45b02ab285db671599b80f38ee9cb",
+    "quantumultx": "604e98019c5d8ae9c77bc959696a149aa0dccceccb72302f1191e3f797fd0ad7",
+    "shadowrocket": "7f43ed2add55d44381a117b11ba90d9087d87ca1cd4944603c971c61408eff04",
+    "singbox": "27029dbbec785aedd43fac56fc6caf3e1a0f4f63fbf0e80dfcf6e77df0769971",
+    "surge": "7f43ed2add55d44381a117b11ba90d9087d87ca1cd4944603c971c61408eff04"
+  },
+  "v2_runtime_dependency": 0
+}
