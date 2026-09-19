@@ -23,18 +23,22 @@ from src.engine.release.state_machine import evaluate_release
 from src.engine.snapshot.engine import create_source_snapshot, load_snapshot_manifest
 from src.engine.validation.directory_contract import validate as validate_directory_contract
 from src.engine.validation.source_semantic import run_source_semantic_gate
+from src.engine.service_semantics.contract import validate_service_semantics
+from src.engine.observation.contract import observe_run
 
 STAGES = [
-    "snapshot", "ingest", "source_gate", "quarantine", "canonical", "hierarchy", "ir", "directory",
-    "adapters", "diff", "golden", "observability", "cas", "release",
+    "snapshot", "ingest", "source_gate", "quarantine", "canonical", "hierarchy", "ir", "semantic_contract",
+    "directory", "adapters", "diff", "golden", "observability", "cas", "release", "observation",
 ]
 
 DAG_NODES = [
     Node("snapshot"), Node("ingest", ("snapshot",)), Node("source_gate", ("ingest",)),
     Node("quarantine", ("source_gate",)), Node("canonical", ("quarantine",)),
-    Node("hierarchy", ("canonical",)), Node("ir", ("hierarchy",)), Node("directory", ("ir",)),
+    Node("hierarchy", ("canonical",)), Node("ir", ("hierarchy",)), Node("semantic_contract", ("ir",)),
+    Node("directory", ("semantic_contract",)),
     Node("adapters", ("directory",)), Node("diff", ("canonical",)), Node("golden", ("adapters",)),
     Node("observability", ("diff", "golden")), Node("cas", ("observability",)), Node("release", ("cas",)),
+    Node("observation", ("release",)),
 ]
 
 
@@ -122,6 +126,25 @@ def run_pipeline(sources_root: Path, data_root: Path, *, run_id: str | None = No
         manifest = build_ir(run_dir / "canonical", run_dir / "hierarchy", run_dir / "ir")
         return {"status": "ok", "stats": manifest.get("stats"), "schema": manifest.get("ir_schema", "semantic_ir_v2")}
 
+    def handler_semantic_contract() -> dict[str, Any]:
+        ir_path = run_dir / "ir" / "ir.json"
+        try:
+            ir = json.loads(ir_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            return {"status": "blocked", "all_pass": False, "violations": [f"invalid IR: {exc}"]}
+        report = validate_service_semantics(ir)
+        out = run_dir / "semantic" / "contract.json"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps(report.to_dict(), indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        return {
+            "status": "ok" if report.all_pass else "blocked",
+            "all_pass": report.all_pass,
+            "checked_services": len(report.checked_services),
+            "checked_rules": len(report.checked_rules),
+            "checked_decisions": report.checked_decisions,
+            "violations": len(report.violations),
+        }
+
     def handler_directory() -> dict[str, Any]:
         report = validate_directory_contract(ROOT)
         (run_dir / "directory_gate.json").write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -150,9 +173,18 @@ def run_pipeline(sources_root: Path, data_root: Path, *, run_id: str | None = No
         if release["can_publish"]: register_run(run_dir, data_root / "cas" / "objects")
         return {"status": "ok" if release["can_publish"] else "blocked", "state": release["state"], "can_publish": release["can_publish"], "quality_score": release.get("quality_score")}
 
+    def handler_observation() -> dict[str, Any]:
+        report = observe_run(run_dir)
+        return {
+            "status": "ok" if report.get("all_pass") else "blocked",
+            "all_pass": report.get("all_pass"),
+            "blockers": report.get("blockers", []),
+        }
+
     handlers = {"snapshot": handler_snapshot, "ingest": handler_ingest, "source_gate": handler_source_gate, "quarantine": handler_quarantine,
-        "canonical": handler_canonical, "hierarchy": handler_hierarchy, "ir": handler_ir, "directory": handler_directory, "adapters": handler_adapters,
-        "diff": handler_diff, "golden": handler_golden, "observability": handler_observability, "cas": handler_cas, "release": handler_release}
+        "canonical": handler_canonical, "hierarchy": handler_hierarchy, "ir": handler_ir, "semantic_contract": handler_semantic_contract,
+        "directory": handler_directory, "adapters": handler_adapters, "diff": handler_diff, "golden": handler_golden,
+        "observability": handler_observability, "cas": handler_cas, "release": handler_release, "observation": handler_observation}
 
     def checkpoint(layer: list[str], all_results: dict[str, Any]) -> None:
         results["execution"]["layers"].append(list(layer))
