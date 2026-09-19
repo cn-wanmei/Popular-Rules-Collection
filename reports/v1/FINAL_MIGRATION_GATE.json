@@ -1,6 +1,6 @@
 {
   "schema": "v1_final_migration_gate_v1",
-  "run_id": "20260919T125128171156Z-run",
+  "run_id": "20260919T144700964674Z-run",
   "status": "PASS",
   "legacy_source": "database/services",
   "v1_source": "rule",
@@ -3944,8 +3944,8 @@
     "mismatches": [],
     "errors": [],
     "all_pass": true,
-    "source_run_id": "20260919T125128171156Z-run",
-    "snapshot_id": "snap-20260919T125128172179Z"
+    "source_run_id": "20260919T144700964674Z-run",
+    "snapshot_id": "snap-20260919T144700965787Z"
   },
   "phase7_asset_regression": {
     "pass": true,
@@ -3985,14 +3985,14 @@
   },
   "current_head": {
     "pass": true,
-    "expected": "a14fc6ea7de537f4de08cf96f1cac6490a430d91",
-    "actual": "a14fc6ea7de537f4de08cf96f1cac6490a430d91",
+    "expected": "03fce0d91b8030838c56da6445169bf5b81cae08",
+    "actual": "03fce0d91b8030838c56da6445169bf5b81cae08",
     "errors": []
   },
   "hard_errors": [],
   "phase8": {
     "schema": "v1_phase8_migration_v1",
-    "generated_at": "2026-09-19T13:00:21.302149+00:00",
+    "generated_at": "2026-09-19T14:55:43.034440+00:00",
     "stage": "switched",
     "coverage": {
       "schema": "v1_phase8_coverage_v1",
