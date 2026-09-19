@@ -1,0 +1,37 @@
+{
+  "schema": "phase_o_evidence_bundle_v2",
+  "repository": "cn-wanmei/Popular-Rules-Collection",
+  "bundle_status": "NOT_READY_FOR_CLOSURE",
+  "cutover": {
+    "status": "NOT_EXECUTED",
+    "commit_sha": null,
+    "source_root": "rule",
+    "target_root": "rules",
+    "loader_root": "rule",
+    "ci_root": "rule",
+    "old_root_preserved": true,
+    "evidence": null
+  },
+  "observation_runs": [],
+  "baseline_runs": [
+    {
+      "run_id": "20260919T165828978010Z-run",
+      "snapshot_id": "snap-20260919T165828978966Z",
+      "post_cutover": false,
+      "eligible_for_phase_o": false,
+      "reason": "Runtime root was still rule; this is pre-cutover production evidence only.",
+      "references": [
+        "data/runs/20260919T165828978010Z-run/run_manifest.json",
+        "data/runs/20260919T165828978010Z-run/observation/report.json",
+        "data/runs/20260919T165828978010Z-run/golden/report.json",
+        "data/runs/20260919T165828978010Z-run/artifacts/build_report.json",
+        "reports/v1/V3_DETERMINISM_FINAL.json"
+      ]
+    }
+  ],
+  "old_root_freeze": {
+    "status": "NOT_FROZEN",
+    "evidence": null
+  },
+  "operator_approval": false
+}

@@ -1,0 +1,43 @@
+name: Phase O-R Operational Closure Reconciliation
+on:
+  pull_request:
+    paths:
+      - "config/phase_o_r_operational_closure.yaml"
+      - "reports/v1/PHASE_O_STATE.json"
+      - "reports/v1/PHASE_O_EVIDENCE_BUNDLE.json"
+      - "scripts/phase_o_r_operational_closure.py"
+      - "scripts/phase_o_observation_retirement.py"
+      - ".github/workflows/phase-o-r-operational-closure.yml"
+  workflow_dispatch:
+    inputs:
+      state:
+        description: Desired evidence-bound state to validate
+        required: false
+        default: "NOT_EXECUTED"
+        type: choice
+        options: [NOT_EXECUTED, CUTOVER_EXECUTED, OBSERVING, FROZEN_OLD_ROOT, RETIRED]
+      enforce:
+        description: Fail unless requested state is actually closable
+        required: false
+        default: false
+        type: boolean
+jobs:
+  phase-o-r:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12.14"
+      - run: python -m pip install pyyaml
+      - name: Compile closure gate
+        run: python -m py_compile scripts/phase_o_r_operational_closure.py scripts/phase_o_observation_retirement.py
+      - name: Reconcile persisted current state
+        run: python scripts/phase_o_r_operational_closure.py --json-out reports/v1/PHASE_O_R_CLOSURE.json
+      - name: Enforce requested transition
+        if: github.event_name == 'workflow_dispatch' && inputs.enforce == true
+        run: python scripts/phase_o_r_operational_closure.py --state "${{ inputs.state }}" --enforce

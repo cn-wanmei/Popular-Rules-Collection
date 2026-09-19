@@ -1,25 +1,58 @@
 #!/usr/bin/env python3
-"""Phase O: observation/freeze/retirement guard. Never deletes the old root."""
+"""Evidence-bound Phase O wrapper.
+
+Observation evidence is loaded from the persisted Phase O evidence bundle.
+There is deliberately no manual run-count or approval argument. This wrapper
+never moves or deletes the old runtime root.
+"""
 from __future__ import annotations
-import argparse,json
+
+import argparse
+import sys
 from pathlib import Path
-import yaml
-ROOT=Path(__file__).resolve().parents[1]
-def y(p:Path)->dict: return yaml.safe_load(p.read_text(encoding="utf-8")) or {}
-def main()->int:
-    ap=argparse.ArgumentParser()
-    ap.add_argument("--state",required=True,choices=["CUTOVER_EXECUTED","OBSERVING","FROZEN_OLD_ROOT","RETIRED"])
-    ap.add_argument("--runs",type=int,default=0)
-    ap.add_argument("--approve-retirement",action="store_true")
-    ap.add_argument("--json-out",type=Path,default=None)
-    args=ap.parse_args(); c=y(ROOT/"config/phase_o_observation_retirement.yaml"); errors=[]
-    minimum=int((c.get("observation") or {}).get("minimum_runs",3))
-    if args.state in {"OBSERVING","FROZEN_OLD_ROOT","RETIRED"} and args.runs<minimum: errors.append(f"observation runs={args.runs}, minimum={minimum}")
-    if args.state=="RETIRED" and not args.approve_retirement: errors.append("retirement requires explicit operator approval")
-    payload={"schema":"phase_o_observation_retirement_gate_v1","state":args.state,"runs":args.runs,"automatic_delete":False,"pass":not errors,"errors":errors}
-    out=json.dumps(payload,ensure_ascii=False,indent=2)+"\n"; print(out,end="")
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from scripts.phase_o_r_operational_closure import main as o_r_main
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(
+        description="Evidence-bound Phase O observation/freeze/retirement gate"
+    )
+    parser.add_argument(
+        "--state",
+        required=True,
+        choices=["CUTOVER_EXECUTED", "OBSERVING", "FROZEN_OLD_ROOT", "RETIRED"],
+    )
+    parser.add_argument(
+        "--evidence",
+        type=Path,
+        default=Path("reports/v1/PHASE_O_EVIDENCE_BUNDLE.json"),
+    )
+    parser.add_argument("--json-out", type=Path, default=None)
+    args = parser.parse_args()
+
+    argv = [
+        "phase_o_r_operational_closure.py",
+        "--state",
+        args.state,
+        "--evidence",
+        str(args.evidence),
+        "--enforce",
+    ]
     if args.json_out:
-        args.json_out.parent.mkdir(parents=True,exist_ok=True); args.json_out.write_text(out,encoding="utf-8")
-    return 0 if not errors else 1
-if __name__=="__main__":
+        argv += ["--json-out", str(args.json_out)]
+
+    old_argv = sys.argv
+    try:
+        sys.argv = argv
+        return o_r_main()
+    finally:
+        sys.argv = old_argv
+
+
+if __name__ == "__main__":
     raise SystemExit(main())

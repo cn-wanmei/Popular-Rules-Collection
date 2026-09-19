@@ -1,10 +1,24 @@
-version: 1
-schema: phase_o_observation_retirement_v1
-states: [CUTOVER_EXECUTED, OBSERVING, FROZEN_OLD_ROOT, RETIRED]
+version: 2
+schema: phase_o_observation_retirement_v2
+operational_closure:
+  phase: O-R
+  config: config/phase_o_r_operational_closure.yaml
+  state_file: reports/v1/PHASE_O_STATE.json
+  evidence_bundle: reports/v1/PHASE_O_EVIDENCE_BUNDLE.json
+states: [NOT_EXECUTED, CUTOVER_EXECUTED, OBSERVING, FROZEN_OLD_ROOT, RETIRED]
 observation:
   minimum_runs: 3
   required_checks: [seven_client, golden, determinism, artifact_equivalence, semantic_regression, source_health]
+  evidence_must_be_post_cutover: true
+  require_distinct_run_ids: true
+  require_distinct_snapshot_ids: true
 retirement:
   explicit_operator_approval_required: true
   automatic_delete: false
   old_root_must_be_absent_only_after_frozen_old_root: true
+  deletion_is_out_of_scope: true
+anti_forgery:
+  manual_run_count_is_evidence: false
+  state_must_be_persisted: true
+  cutover_must_be_persisted: true
+  evidence_bundle_must_be_persisted: true

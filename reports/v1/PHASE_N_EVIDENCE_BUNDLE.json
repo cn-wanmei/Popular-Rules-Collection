@@ -1,0 +1,22 @@
+{
+  "schema": "phase_n_evidence_bundle_v1",
+  "status": "BLOCKED",
+  "cutover_performed": false,
+  "current_runtime_root": "rule",
+  "target_runtime_root": "rules",
+  "evidence": {
+    "phase_i_pass": true,
+    "phase_j_50_of_50": false,
+    "phase_k_pass": true,
+    "phase_l_frozen": true,
+    "phase_m_equivalence_pass": false,
+    "seven_client_pass": true,
+    "determinism_pass": true,
+    "artifact_equivalence_pass": true
+  },
+  "blockers": [
+    "P0 production is not 50/50",
+    "Phase M dual-track equivalence has not been executed",
+    "Phase N config status is NOT_EXECUTED"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "phase_o_state_v1",
+  "repository": "cn-wanmei/Popular-Rules-Collection",
+  "current_state": "NOT_EXECUTED",
+  "updated_at": null,
+  "state_history": [],
+  "runtime": {
+    "current_root": "rule",
+    "target_root": "rules"
+  },
+  "closure": {
+    "closed": false,
+    "cutover_executed": false,
+    "qualified_observation_runs": 0,
+    "old_root_frozen": false,
+    "retirement_approved": false
+  },
+  "blockers": [
+    "phase_n_not_executed",
+    "canonical_rules_root_not_populated",
+    "p0_service_production_not_50_of_50",
+    "no_post_cutover_observation_evidence"
+  ]
+}
