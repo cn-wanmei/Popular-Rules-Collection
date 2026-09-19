@@ -1,0 +1,14 @@
+name: Phase M Dual Track
+on:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  phase-m:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - run: python -m py_compile scripts/phase_m_dual_track.py
+      - name: Keep dual track inactive until prerequisites close
+        run: test "$(grep '^status:' config/phase_m_dual_track.yaml | awk '{print $2}')" = "PREP_ONLY"

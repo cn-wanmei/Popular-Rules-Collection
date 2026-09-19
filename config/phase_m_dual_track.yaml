@@ -1,0 +1,21 @@
+version: 1
+schema: phase_m_dual_track_v1
+status: PREP_ONLY
+source_root: rule
+target_root: rules
+semantic_inventory_schema: canonical_semantic_inventory_v1
+materialization:
+  raw_path_copy_is_forbidden: true
+  semantic_model_is_authoritative: true
+  required_sections:
+    - service_identities
+    - asset_identities
+    - memberships
+    - dependency_closures
+    - aggregate_closures
+    - network_references
+    - final_ir_digest
+    - artifact_digest
+cutover:
+  target_must_be_populated_before_phase_n: true
+  target_population_requires_equivalence_pass: true
