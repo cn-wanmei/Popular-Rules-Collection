@@ -1,0 +1,25 @@
+name: Phase 6 Observation
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "src/engine/observation/**"
+      - "tests/engine/test_phase6_observation.py"
+      - "docs/PHASE6_OBSERVATION.md"
+      - ".github/workflows/phase6-observation.yml"
+  workflow_dispatch:
+jobs:
+  phase6:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12.14"
+      - run: python -m pip install -r requirements.lock
+      - name: Architecture Gate
+        run: python scripts/architecture_gate.py
+      - name: Phase 6 focused tests
+        run: PYTHONPATH=. python -m pytest tests/engine/test_phase6_observation.py -q
