@@ -5,9 +5,9 @@
   "current_runtime_root": "rule",
   "target_runtime_root": "rules",
   "evidence": {
-    "phase_i_pass": false,
+    "phase_i_pass": true,
     "phase_j_50_of_50": false,
-    "phase_k_pass": false,
+    "phase_k_pass": true,
     "phase_l_frozen": true,
     "phase_m_equivalence_pass": false,
     "seven_client_pass": true,
