@@ -9,11 +9,12 @@ Expose one read-only observation contract for a completed V3 run.
 - Missing or ERROR baseline evidence is a hard observation blocker.
 - Only RC_READY or PRODUCTION runs are considered publishable observations.
 
-## Parallelization boundary
-Phase 6 consumes immutable run evidence already produced by the V3 engine.
-It does not require the Phase 7 or Phase 8 branch and can be merged independently.
+## Production wiring
+
+Observation is the terminal read-only stage of the V3 production DAG, immediately after release evaluation. Every full production run must emit `data/runs/<run_id>/observation/report.json`; a blocked observation changes the overall run status to `blocked` and prevents publication.
 
 ## Exit criteria
 1. A deterministic observation report is emitted per run.
 2. Evidence omissions fail closed.
 3. Observation remains read-only.
+4. Publication requires a passing observation report.
