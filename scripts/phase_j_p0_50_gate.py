@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Phase J: strict P0 50-service production readiness gate."""
 from __future__ import annotations
-import argparse, json
+import argparse, json, subprocess
 from pathlib import Path
 import yaml
 
