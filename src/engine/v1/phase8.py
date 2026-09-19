@@ -133,8 +133,11 @@ def compute_coverage(
     mat = {s.casefold() for s in materialized_ids if s}
     int_ids = set(intentional.keys())
 
-    # A service can be both materialized and intentional; count once as covered
-    covered = (mat | (reg & int_ids))
+    # Coverage is defined over the registered catalogue only.
+    # Materialized assets outside the registered catalogue are not counted
+    # in the catalogue coverage numerator.
+    registered_materialized = reg & mat
+    covered = registered_materialized | (reg & int_ids)
     missing = sorted(reg - covered)
 
     intentional_only = (reg & int_ids) - mat
