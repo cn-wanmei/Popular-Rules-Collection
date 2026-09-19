@@ -61,7 +61,14 @@ def _classify(index_count: int | None, unique_count: int, raw_count: int) -> dic
 
 def reconcile_legacy_assets(rule_root: Path, *, jsonl_output: Path, report_path: Path | None = None, candidates_path: Path | None = None) -> dict[str, Any]:
     """Extract once, reconcile the generated JSONL, and optionally write reports."""
-    ir = extract_legacy_asset_ir(Path(rule_root), jsonl_output=Path(jsonl_output))
+    # Reconciliation compares ordinary generated *.list evidence against
+    # rule/_index.yaml. The Phase 8 migration supplement is separate evidence
+    # and must not inflate indexed domain/IP counts.
+    ir = extract_legacy_asset_ir(
+        Path(rule_root),
+        include_phase8_equivalence=False,
+        jsonl_output=Path(jsonl_output),
+    )
     raw, assets_by_service = _load_jsonl(Path(jsonl_output))
     services: list[dict[str, Any]] = []
     summary_by_id = {s.id: s.as_dict() for s in ir.services}
