@@ -1,0 +1,37 @@
+version: 1
+schema: phase_i_gate_closure_v1
+principle: "先修验收系统，再修 P0 数据，再做 Canonical 迁移。"
+development_mode: parallel
+execution_mode: gated
+phase_order:
+  development_parallel: [I, J, K, L, M, N, O]
+  execution_gate_chain: [I, J, K, L, M, N, O]
+dependencies:
+  I: []
+  J: [I]
+  K: [I]
+  L: [I]
+  M: [I, J, K, L]
+  N: [M]
+  O: [N]
+p0:
+  queue_size: 50
+intentional:
+  registry_total: 37
+  intentional_only: 34
+  materialized_and_intentional: 3
+  materialized_and_intentional_ids:
+    - adblock-light
+    - adblock-pro
+    - stripe
+canonical:
+  current_runtime_root: rule
+  target_runtime_root: rules
+  target_layout:
+    aggregate: "rules/{provider}/all"
+    service: "rules/{provider}/{service}"
+    china: "rules/china/all"
+    rule_file: "rules/{scope}/rules.yaml"
+  target_must_remain_unactivated_until_phase_n: true
+evidence_binding:
+  required: [head, run_id, snapshot_id, canonical_digest, client_digests, determinism_artifact_digest]
