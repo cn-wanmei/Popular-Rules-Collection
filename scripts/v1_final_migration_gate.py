@@ -335,6 +335,7 @@ def main() -> int:
     # build cannot natively emit them.
     ir_path = run_dir / "ir" / "ir.json"
     semantic_contract_path = run_dir / "semantic" / "contract.json"
+    aggregate_present = False
     if ir_path.is_file():
         ir = _json(ir_path)
         actual_types = {
@@ -342,6 +343,7 @@ def main() -> int:
             for r in (ir.get("rules") or [])
             if isinstance(r, dict)
         }
+        aggregate_present = bool((ir.get("entities") or {}).get("aggregates"))
     elif semantic_contract_path.is_file():
         semantic_contract = _json(semantic_contract_path)
         actual_types = {
@@ -357,7 +359,7 @@ def main() -> int:
         "keyword": "domain_keyword" in actual_types,
         "CIDR": bool({"ip_cidr", "ip_cidr6"} & actual_types),
         "URL": "url" in actual_types,
-        "Aggregate": bool((ir.get("entities") or {}).get("aggregates")),
+        "Aggregate": aggregate_present,
     }
     matrix = _yaml(ROOT / "config/client_capability_matrix.yaml")
     supported_any = {
