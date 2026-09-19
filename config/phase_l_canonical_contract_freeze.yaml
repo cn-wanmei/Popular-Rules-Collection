@@ -1,0 +1,19 @@
+version: 1
+schema: phase_l_canonical_contract_freeze_v1
+contract_status: FROZEN
+authoritative_files:
+  - config/service_model/directories.yaml
+  - config/canonical_root_migration.yaml
+layout:
+  root: rules
+  provider_aggregate: rules/{provider}/all
+  service: rules/{provider}/{service}
+  china_aggregate: rules/china/all
+  rule_file: rules/{scope}/rules.yaml
+runtime_before_cutover: rule
+runtime_after_cutover: rules
+freeze_rules:
+  no_second_canonical_root: true
+  generated_is_not_source_of_truth: true
+  layout_must_not_change_after_phase_l: true
+  cutover_is_not_authorized_by_freeze: true
