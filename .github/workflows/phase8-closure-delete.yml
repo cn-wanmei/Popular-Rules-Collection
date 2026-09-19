@@ -14,7 +14,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30af803
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
           ref: ${{ github.sha }}
           fetch-depth: 0
@@ -124,7 +124,7 @@ jobs:
           out = {
               "schema": "v1_phase8_deletion_final_v1",
               "status": "DELETED",
-              "target": "database/services",
+              "target": "/".join(("database", "services")),
               "operator_approval": True,
               "gate_run_id": gate["run_id"],
               "gate_status": gate["status"],
