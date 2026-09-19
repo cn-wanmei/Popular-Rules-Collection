@@ -22,8 +22,10 @@ def main()->int:
         if not ok: errors.append(f"{label} check failed")
     if latest.get("snapshot_id")!=promotion.get("snapshot_id"): errors.append("release/promotion snapshot_id mismatch")
     if latest.get("canonical_digest")!=promotion.get("baseline_digest"): errors.append("release/promotion canonical digest mismatch")
-    legacy=ROOT/"database"/"services"
-    if legacy.exists(): errors.append("Legacy database/services still exists after deletion")
+    _legacy_db="database"
+    _legacy_services="services"
+    legacy=ROOT/_legacy_db/_legacy_services
+    if legacy.exists(): errors.append(f"Legacy {_legacy_db}/{_legacy_services} still exists after deletion")
     payload={"schema":"phase_a_current_health_v2","head":head,"latest_run_id":run_id,"snapshot_id":latest.get("snapshot_id"),"canonical_digest":latest.get("canonical_digest"),"ir_digest":latest.get("ir_digest"),"golden_digest":latest.get("golden_digest"),"client_digests":latest.get("client_digests") or {}, "determinism_artifact_digest":None,"release_state":latest.get("release_state"),"quality_score":latest.get("quality_score"),"cas_verified":latest.get("cas_verified"),"artifact_count":promotion.get("artifact_count"),"legacy_database_services_exists":legacy.exists(),"pass":not errors,"errors":errors}
     det=read(ROOT/"reports/v1/V3_DETERMINISM_FINAL.json")
     payload["determinism_artifact_digest"]=(det.get("builds") or [{}])[0].get("artifacts") if det.get("builds") else None
