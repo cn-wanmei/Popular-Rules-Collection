@@ -162,6 +162,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A database/services reports/v1/PHASE8_DELETION_FINAL.json
+          LEGACY_TARGET="$(printf 'database/%s' services)"
+          git add -A "$LEGACY_TARGET" reports/v1/PHASE8_DELETION_FINAL.json
           git commit -m "chore(phase8): delete legacy service source"
           git push origin HEAD:main
