@@ -52,6 +52,7 @@ jobs:
     timeout-minutes: 180
     permissions:
       contents: read
+      actions: write
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
@@ -222,3 +223,17 @@ jobs:
           if-no-files-found: error
           retention-days: 7
           include-hidden-files: false
+
+      - name: Trigger Publish Release Candidate
+        if: ${{ github.ref == 'refs/heads/main' && inputs.dry_run != true }}
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh workflow run publish.yml \
+            --repo "${{ github.repository }}" \
+            --ref main \
+            -f build_run_id="${{ github.run_id }}" \
+            -f build_head_sha="${{ github.sha }}"
+          echo "Publish Release Candidate dispatched for build run ${{ github.run_id }}."

@@ -1,9 +1,16 @@
 name: Publish Release Candidate
 
 on:
-  workflow_run:
-    workflows: ["Build Client Rules"]
-    types: [completed]
+  workflow_dispatch:
+    inputs:
+      build_run_id:
+        description: "Successful Build Client Rules workflow run ID"
+        required: true
+        type: string
+      build_head_sha:
+        description: "Exact commit SHA checked out by the build"
+        required: true
+        type: string
 
 concurrency:
   group: publish-main
@@ -11,7 +18,7 @@ concurrency:
 
 jobs:
   publish:
-    if: ${{ github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' }}
+    if: ${{ github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
     permissions:
@@ -21,7 +28,7 @@ jobs:
       - name: Checkout build commit
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
-          ref: ${{ github.event.workflow_run.head_sha }}
+          ref: ${{ inputs.build_head_sha }}
           fetch-depth: 1
 
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
@@ -36,7 +43,7 @@ jobs:
       - name: Download immutable build artifact
         uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131
         with:
-          name: release-candidate-${{ github.event.workflow_run.id }}
+          name: release-candidate-${{ inputs.build_run_id }}
           path: release-candidate
           github-token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ github.repository }}
