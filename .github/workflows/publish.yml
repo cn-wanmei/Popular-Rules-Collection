@@ -40,7 +40,8 @@ jobs:
       - name: Install locked dependencies
         run: python -m pip install -r requirements.lock
 
-      - name: Download immutable build artifact via Actions API
+      - name: Resolve immutable build artifact via Actions API
+        id: artifact
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
@@ -56,25 +57,64 @@ jobs:
           repo = os.environ['REPO']
           token = os.environ['GH_TOKEN']
           url = f'https://api.github.com/repos/{repo}/actions/runs/{run_id}/artifacts?per_page=100'
-          req = urllib.request.Request(url, headers={'Authorization': f'Bearer {token}', 'Accept': 'application/vnd.github+json'})
+          req = urllib.request.Request(
+              url,
+              headers={
+                  'Authorization': f'Bearer {token}',
+                  'Accept': 'application/vnd.github+json',
+              },
+          )
           with urllib.request.urlopen(req) as response:
               payload = json.load(response)
           expected_name = f'release-candidate-{run_id}'
-          matches = [a for a in payload.get('artifacts', []) if a.get('name') == expected_name and not a.get('expired') and a.get('workflow_run', {}).get('id') == run_id and a.get('workflow_run', {}).get('head_sha') == expected_sha]
+          matches = [
+              a for a in payload.get('artifacts', [])
+              if a.get('name') == expected_name
+              and not a.get('expired')
+              and a.get('workflow_run', {}).get('id') == run_id
+              and a.get('workflow_run', {}).get('head_sha') == expected_sha
+          ]
           if len(matches) != 1:
-              raise SystemExit(f'exact immutable build artifact not found: name={expected_name} run_id={run_id} head_sha={expected_sha} matches={matches}')
+              raise SystemExit(
+                  'exact immutable build artifact not found: '
+                  f'name={expected_name} run_id={run_id} '
+                  f'head_sha={expected_sha} matches={matches}'
+              )
           artifact = matches[0]
-          print(json.dumps({'artifact_id': artifact['id'], 'name': artifact['name'], 'archive_download_url': artifact['archive_download_url'], 'digest': artifact.get('digest')}))
-          Path = __import__('pathlib').Path
-          Path('/tmp/artifact.json').write_text(json.dumps(artifact), encoding='utf-8')
+          print(
+              json.dumps(
+                  {
+                      'artifact_id': artifact['id'],
+                      'artifact_name': artifact['name'],
+                      'artifact_digest': artifact.get('digest'),
+                  }
+              )
+          )
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as out:
+              out.write(f"artifact_id={artifact['id']}\n")
+              out.write(f"artifact_name={artifact['name']}\n")
+              out.write(f"artifact_digest={artifact.get('digest') or ''}\n")
           PY
-          ARTIFACT_ID=$(python -c 'import json; print(json.load(open("/tmp/artifact.json"))["id"])')
-          ARTIFACT_NAME=$(python -c 'import json; print(json.load(open("/tmp/artifact.json"))["name"])')
-          rm -rf release-candidate
-          mkdir -p release-candidate
-          gh run download "${RUN_ID}" --repo "${REPO}" --name "${ARTIFACT_NAME}" --dir release-candidate
+
+      - name: Download immutable build artifact
+        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0
+        with:
+          artifact-ids: ${{ steps.artifact.outputs.artifact_id }}
+          github-token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          run-id: ${{ inputs.build_run_id }}
+          path: release-candidate
+
+      - name: Verify immutable artifact identity
+        shell: bash
+        env:
+          RUN_ID: ${{ inputs.build_run_id }}
+          ARTIFACT_NAME: ${{ steps.artifact.outputs.artifact_name }}
+        run: |
+          set -euo pipefail
           test "$(cat release-candidate/run-id.txt)" = "${RUN_ID}"
-          echo "Downloaded exact immutable artifact ${ARTIFACT_NAME} (id=${ARTIFACT_ID}) from run ${RUN_ID}."
+          test -d "release-candidate/data/runs/$(cat release-candidate/run-id.txt)"
+          echo "Downloaded exact immutable artifact ${ARTIFACT_NAME} (run=${RUN_ID})."
       - name: Architecture Gate
         run: python scripts/architecture_gate.py
 
