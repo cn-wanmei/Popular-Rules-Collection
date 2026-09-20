@@ -41,3 +41,4 @@ jobs:
           PY
       - run: python scripts/partial_production_invariant_gate.py
       - run: python scripts/source_canary_gate.py
+      - run: python scripts/source_production_gate.py
