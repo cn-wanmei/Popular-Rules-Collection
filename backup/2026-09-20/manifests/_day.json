@@ -8,43 +8,13 @@
       "fetch": "github_raw",
       "files_ok": 0,
       "files_not_modified": 0,
-      "files_skipped": 8,
+      "files_skipped": 1,
       "files_failed": 0,
       "empty_blocked": 0,
-      "rules_declared": 8,
+      "rules_declared": 1,
       "conditional_cache_hits": 0,
-      "scheduler_skips": 8,
+      "scheduler_skips": 1,
       "files": [
-        {
-          "name": "PRS_1688.domains.txt",
-          "path": "generated/source/1688/domains.txt",
-          "service": "1688",
-          "url": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/1688/domains.txt",
-          "status": "skipped",
-          "decision": "SKIP_FRESH",
-          "reason": "freshness_window_active",
-          "sha256": "6fbd2d02fd6bb39773e22f21456c247aef93b8b965fc484698a5f8efd16967bd",
-          "cas_sha256": "6fbd2d02fd6bb39773e22f21456c247aef93b8b965fc484698a5f8efd16967bd",
-          "size": 262,
-          "cached_from_cas": true,
-          "local": "sources/popular-rules-source/PRS_1688.domains.txt",
-          "cas_object": "data/cas/acquisition/6f/bd2d02fd6bb39773e22f21456c247aef93b8b965fc484698a5f8efd16967bd"
-        },
-        {
-          "name": "PRS_cainiao.domains.txt",
-          "path": "generated/source/cainiao/domains.txt",
-          "service": "cainiao",
-          "url": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/cainiao/domains.txt",
-          "status": "skipped",
-          "decision": "SKIP_FRESH",
-          "reason": "freshness_window_active",
-          "sha256": "461f79abb56e74e611cecdd1424183bd5e9b2d0ec5fb6a7a04d515afd6b7eb8e",
-          "cas_sha256": "461f79abb56e74e611cecdd1424183bd5e9b2d0ec5fb6a7a04d515afd6b7eb8e",
-          "size": 171,
-          "cached_from_cas": true,
-          "local": "sources/popular-rules-source/PRS_cainiao.domains.txt",
-          "cas_object": "data/cas/acquisition/46/1f79abb56e74e611cecdd1424183bd5e9b2d0ec5fb6a7a04d515afd6b7eb8e"
-        },
         {
           "name": "PRS_dingding.domains.txt",
           "path": "generated/source/dingding/domains.txt",
@@ -59,87 +29,12 @@
           "cached_from_cas": true,
           "local": "sources/popular-rules-source/PRS_dingding.domains.txt",
           "cas_object": "data/cas/acquisition/9d/b0dd92816489fb884278241402b49eb1807f76740542110ee92cd279f47131"
-        },
-        {
-          "name": "PRS_qqmail.domains.txt",
-          "path": "generated/source/qqmail/domains.txt",
-          "service": "qqmail",
-          "url": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/qqmail/domains.txt",
-          "status": "skipped",
-          "decision": "SKIP_FRESH",
-          "reason": "freshness_window_active",
-          "sha256": "30819fe0b52c968225d8aa8d50df3e857ea7e4c4e414ae35508bdba1d0aed5ca",
-          "cas_sha256": "30819fe0b52c968225d8aa8d50df3e857ea7e4c4e414ae35508bdba1d0aed5ca",
-          "size": 47,
-          "cached_from_cas": true,
-          "local": "sources/popular-rules-source/PRS_qqmail.domains.txt",
-          "cas_object": "data/cas/acquisition/30/819fe0b52c968225d8aa8d50df3e857ea7e4c4e414ae35508bdba1d0aed5ca"
-        },
-        {
-          "name": "PRS_qqmusic.domains.txt",
-          "path": "generated/source/qqmusic/domains.txt",
-          "service": "qqmusic",
-          "url": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/qqmusic/domains.txt",
-          "status": "skipped",
-          "decision": "SKIP_FRESH",
-          "reason": "freshness_window_active",
-          "sha256": "1c760b48fc719693a434d7b5da89a7a93684f167f84d8fae407fb5b4c14ae591",
-          "cas_sha256": "1c760b48fc719693a434d7b5da89a7a93684f167f84d8fae407fb5b4c14ae591",
-          "size": 105,
-          "cached_from_cas": true,
-          "local": "sources/popular-rules-source/PRS_qqmusic.domains.txt",
-          "cas_object": "data/cas/acquisition/1c/760b48fc719693a434d7b5da89a7a93684f167f84d8fae407fb5b4c14ae591"
-        },
-        {
-          "name": "PRS_taobao.domains.txt",
-          "path": "generated/source/taobao/domains.txt",
-          "service": "taobao",
-          "url": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/taobao/domains.txt",
-          "status": "skipped",
-          "decision": "SKIP_FRESH",
-          "reason": "freshness_window_active",
-          "sha256": "c1eb9ef32be6f7452333e9b0175c5bb53e51ec661a2c3d2d570218d4c01b7dd4",
-          "cas_sha256": "c1eb9ef32be6f7452333e9b0175c5bb53e51ec661a2c3d2d570218d4c01b7dd4",
-          "size": 380,
-          "cached_from_cas": true,
-          "local": "sources/popular-rules-source/PRS_taobao.domains.txt",
-          "cas_object": "data/cas/acquisition/c1/eb9ef32be6f7452333e9b0175c5bb53e51ec661a2c3d2d570218d4c01b7dd4"
-        },
-        {
-          "name": "PRS_tencentcloud.domains.txt",
-          "path": "generated/source/tencentcloud/domains.txt",
-          "service": "tencentcloud",
-          "url": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/tencentcloud/domains.txt",
-          "status": "skipped",
-          "decision": "SKIP_FRESH",
-          "reason": "freshness_window_active",
-          "sha256": "447130d82ae0015beb7bc687d549b6f5bf84c0cb50aefe9eb13238c18cd0d439",
-          "cas_sha256": "447130d82ae0015beb7bc687d549b6f5bf84c0cb50aefe9eb13238c18cd0d439",
-          "size": 271,
-          "cached_from_cas": true,
-          "local": "sources/popular-rules-source/PRS_tencentcloud.domains.txt",
-          "cas_object": "data/cas/acquisition/44/7130d82ae0015beb7bc687d549b6f5bf84c0cb50aefe9eb13238c18cd0d439"
-        },
-        {
-          "name": "PRS_tmall.domains.txt",
-          "path": "generated/source/tmall/domains.txt",
-          "service": "tmall",
-          "url": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/tmall/domains.txt",
-          "status": "skipped",
-          "decision": "SKIP_FRESH",
-          "reason": "freshness_window_active",
-          "sha256": "6ae4f9c14bd02449ecb1bbd8658d1ec836d227ff4a095f344a061b5e3a1c1aeb",
-          "cas_sha256": "6ae4f9c14bd02449ecb1bbd8658d1ec836d227ff4a095f344a061b5e3a1c1aeb",
-          "size": 208,
-          "cached_from_cas": true,
-          "local": "sources/popular-rules-source/PRS_tmall.domains.txt",
-          "cas_object": "data/cas/acquisition/6a/e4f9c14bd02449ecb1bbd8658d1ec836d227ff4a095f344a061b5e3a1c1aeb"
         }
       ],
       "registry_priority": 98,
       "registry_trust": "high",
       "critical": false,
-      "concurrency_workers": 8
+      "concurrency_workers": 1
     },
     {
       "source": "blackmatrix7",
@@ -4673,5 +4568,5 @@
     }
   ],
   "schema": "collection_manifest_v2",
-  "manifest_sha256": "08d2e4a99c7b60056a9c848844f2153721add0e28a416e67906853297c6f4044"
+  "manifest_sha256": "713a5ac08a627691b3a8f7e86b8bbfff41b3ef5c8fb5c5325cf9720d2ca58491"
 }
