@@ -137,14 +137,14 @@ services:
     status: blocked
   alibabacloud:
     identity: pass
-    source: pending
-    canonical: pending
-    semantic_audit: pending
-    overlap_audit: pending
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    source: pass
+    canonical: pass
+    semantic_audit: pass
+    overlap_audit: pass
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   '1688':
     identity: pass
     source: pass
@@ -181,16 +181,16 @@ services:
     canonical: pass
     semantic_audit: pass
     overlap_audit: pass
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   feishu:
     identity: pass
-    source: pending
-    canonical: pending
-    semantic_audit: pending
-    overlap_audit: pending
+    source: pass
+    canonical: pass
+    semantic_audit: pass
+    overlap_audit: pass
     seven_client: pending
     golden: pending
     release: pending
@@ -301,20 +301,20 @@ services:
     canonical: pass
     semantic_audit: pass
     overlap_audit: pass
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   azure:
     identity: pass
     source: pass
     canonical: pass
     semantic_audit: pass
     overlap_audit: pass
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   googlecloud:
     identity: pass
     source: pending
@@ -331,10 +331,10 @@ services:
     canonical: pass
     semantic_audit: pass
     overlap_audit: pass
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   bitbucket:
     identity: pass
     source: pending
@@ -347,10 +347,10 @@ services:
     status: blocked
   npm:
     identity: pass
-    source: pending
-    canonical: pending
-    semantic_audit: pending
-    overlap_audit: pending
+    source: pass
+    canonical: pass
+    semantic_audit: pass
+    overlap_audit: pass
     seven_client: pending
     golden: pending
     release: pending
@@ -391,10 +391,10 @@ services:
     canonical: pass
     semantic_audit: pass
     overlap_audit: pass
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   signal:
     identity: pass
     source: pass
@@ -411,10 +411,10 @@ services:
     canonical: pass
     semantic_audit: pass
     overlap_audit: pass
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   snapchat:
     identity: pass
     source: pass
