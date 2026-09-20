@@ -5,12 +5,14 @@ on:
   pull_request:
     branches: [main]
     paths:
+      - ".github/workflows/phase2-source-canary.yml"
       - "config/source_promotion_policy.yaml"
       - "config/service_primary.yaml"
       - "config/service_primary_extra.yaml"
       - "config/ruleset_hierarchy.yaml"
       - "config/client_capability_matrix.yaml"
       - "scripts/phase2_source_canary.py"
+      - "scripts/canary_attestation.py"
       - "src/engine/**"
       - "scripts/source_production_gate.py"
       - "scripts/source_canary_gate.py"
