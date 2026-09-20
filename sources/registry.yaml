@@ -136,9 +136,12 @@ sources:
   - {path: rule/Clash/BBC/BBC.yaml, name: bbc, local: Clash_BBC.yaml}
   - {path: rule/Clash/Scholar/Scholar.yaml, name: scholar, local: Clash_Scholar.yaml}
   - {path: rule/Clash/AppStore/AppStore.yaml, name: appstore, service: appstore, local: Clash_AppStore.yaml}
+  - {path: rule/QuantumultX/AppStore/AppStore.list, name: appstore, service: appstore, local: QuantumultX_AppStore.list}
   - {path: rule/Clash/TestFlight/TestFlight.yaml, name: testflight, service: testflight, local: Clash_TestFlight.yaml}
+  - {path: rule/QuantumultX/TestFlight/TestFlight.list, name: testflight, service: testflight, local: QuantumultX_TestFlight.list}
   - {path: rule/Clash/AppleDev/AppleDev.yaml, name: appledev, service: appledev, local: Clash_AppleDev.yaml}
   - {path: rule/Clash/FindMy/FindMy.yaml, name: findmy, service: findmy, local: Clash_FindMy.yaml}
+  - {path: rule/QuantumultX/FindMy/FindMy.list, name: findmy, service: findmy, local: QuantumultX_FindMy.list}
   - {path: rule/Clash/AppleMedia/AppleMedia.yaml, name: apple, local: Clash_AppleMedia.yaml}
   - {path: rule/Clash/AppleNews/AppleNews.yaml, name: apple, local: Clash_AppleNews.yaml}
   - {path: rule/Clash/PPTV/PPTV.yaml, name: pptv, local: Clash_PPTV.yaml}
@@ -152,6 +155,7 @@ sources:
   - {path: rule/Clash/LeTV/LeTV.yaml, name: letv, local: Clash_LeTV.yaml}
   - {path: rule/Clash/Bahamut/Bahamut.yaml, name: bahamut, local: Clash_Bahamut.yaml}
   - {path: rule/Clash/Emby/Emby.yaml, name: emby, local: Clash_Emby.yaml}
+  - {path: rule/QuantumultX/Cloud/TencentCloud/TencentCloud.list, name: tencentcloud, service: tencentcloud, local: QuantumultX_TencentCloud.list}
 - id: metacubex
   name: MetaCubeX meta-rules-dat
   url: https://github.com/MetaCubeX/meta-rules-dat
