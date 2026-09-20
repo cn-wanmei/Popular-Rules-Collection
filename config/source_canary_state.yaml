@@ -5,45 +5,43 @@ state_machine:
   - canary
   - production
 services:
-  1688:
+  "1688":
     state: verified
     enabled: false
-    source_verification: {run: 35519069151, source_commit: 77116637e9b82b47a5792ed74556ad8102ea45da, snapshot_id: snap-1688-12bddfd782ff063d1bde9794, content_digest: 12bddfd782ff063d1bde9794337447649eedb15603f5c323e73a3688bfbc7692}
+    source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-1688-f26f96c5c0efb065ffbaab3, content_digest: f26f96c5c0efb065ffbaab3adf7821755d5406746bafaf41ffac035a0da4989c}
     attestation: {status: pending}
   cainiao:
     state: verified
     enabled: false
-    source_verification: {run: 35519069151, source_commit: 77116637e9b82b47a5792ed74556ad8102ea45da, snapshot_id: snap-cainiao-0dfccfe550fdef0e9a13eb8f, content_digest: 0dfccfe550fdef0e9a13eb8f707e6148bec25566fe7b34c7db5cc7932b9ca36a}
+    source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-cainiao-5f98d4fa8f88bb35bb2d46da, content_digest: 5f98d4fa8f88bb35bb2d46da0b970bb892a12078908b7da6f874af4bb31fcf39}
     attestation: {status: pending}
   dingding:
     state: canary
     enabled: true
-    source_verification: {run: 35519069151, source_commit: 77116637e9b82b47a5792ed74556ad8102ea45da, snapshot_id: snap-dingding-f3c351df4f78f9a87d138d49, content_digest: f3c351df4f78f9a87d138d49b23ec87f2c25ca65a973a40fd4289e58c7e4e267}
+    source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-dingding-191e07e101d5a92abc9e9856, content_digest: 191e07e101d5a92abc9e985615804c94a7dfb1b08bd8efc7bfd7a68f341da469}
     attestation: {status: pending}
   qqmail:
     state: verified
     enabled: false
-    source_verification: {run: 35519069151, source_commit: 77116637e9b82b47a5792ed74556ad8102ea45da, snapshot_id: snap-qqmail-a0702d11866685a663ce4f99, content_digest: a0702d11866685a663ce4f994e9379ccdf459ee232a8947061ed0066d7bd0f87}
+    source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-qqmail-e147434833e15f76bbe4930c, content_digest: e147434833e15f76bbe4930c741ca63b84f3c64e1d9eb1108f8c9ba4bb0e9501}
     attestation: {status: pending}
   qqmusic:
     state: verified
     enabled: false
-    source_verification: {run: 35519069151, source_commit: 77116637e9b82b47a5792ed74556ad8102ea45da, snapshot_id: snap-qqmusic-e903c9a62ef0a67f01a7d15d, content_digest: e903c9a62ef0a67f01a7d15df1e139cf7800032767302fc416faaa04a9abc289}
+    source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-qqmusic-e903c9a62ef0a67f01a7d15d, content_digest: e903c9a62ef0a67f01a7d15df1e139cf7800032767302fc416faaa04a9abc289}
     attestation: {status: pending}
   taobao:
     state: verified
     enabled: false
-    source_verification: {run: 35519069151, source_commit: 77116637e9b82b47a5792ed74556ad8102ea45da, snapshot_id: snap-taobao-9a977dc6b1ab09563621d5f8, content_digest: 9a977dc6b1ab09563621d5f8ddd61aa39a2a60aa19e1f41f33ba0eda06186da0}
+    source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-taobao-8bf235109eb1fae87549fea8, content_digest: 8bf235109eb1fae87549fea81dfdb81bc327941d6128bcb2f4f60af00e5b4f92}
     attestation: {status: pending}
   tencentcloud:
     state: verified
     enabled: false
-    source_verification: {run: 35519069151, source_commit: 77116637e9b82b47a5792ed74556ad8102ea45da, snapshot_id: snap-tencentcloud-4548ee05bf8e1ceb60253551, content_digest: 4548ee05bf8e1ceb602535516ae7ba56fb19b55391e2560d6b13a6e092ab405c}
+    source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-tencentcloud-018c6d0a2429c98a45976487, content_digest: 018c6d0a2429c98a45976487d44de561338ac63ae290f0975b316409f0aa273c}
     attestation: {status: pending}
   tmall:
     state: verified
     enabled: false
-    source_verification: {run: 35519069151, source_commit: 77116637e9b82b47a5792ed74556ad8102ea45da, snapshot_id: snap-tmall-8b9440f7ab1276cb895eefbc, content_digest: 8b9440f7ab1276cb895eefbc4f16e3f6ff2e62f108910899fe705b8d820e49df}
+    source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-tmall-789fb08ed581d62f644c2ded, content_digest: 789fb08ed581d62f644c2ded829856040bffd8591365307930e86e29e1796bf5}
     attestation: {status: pending}
-
-# phase2-canary-trigger
