@@ -229,6 +229,14 @@ def main() -> int:
             build_views = set((report.get("views") or {}).get("services") or [])
             clients = report.get("clients") or {}
 
+    derived_report = {}
+    derived_path = run / "reports" / "phase_j_p0_service_evidence.json" if run is not None else None
+    if derived_path is not None and derived_path.is_file():
+        try:
+            derived_report = json.loads(derived_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            structural_errors.append(f"invalid Phase J derived evidence report: {exc}")
+
     service_client_files: dict[str, list[str]] = {}
     blocked: list[str] = []
     production_count = 0
@@ -255,7 +263,11 @@ def main() -> int:
             structural_errors.append(
                 f"{sid}: seven_client=pass but artifacts missing for {', '.join(missing)}"
             )
-        if row.get("status") == "production" and not failed:
+        derived_row = (derived_report.get("services") or {}).get(sid) if isinstance(derived_report, dict) else None
+        derived_status = derived_row.get("status") if isinstance(derived_row, dict) else None
+        if derived_status == "production":
+            production_count += 1
+        elif row.get("status") == "production" and not failed:
             production_count += 1
         else:
             blocked_reasons = failed or ["status!=production"]
@@ -275,6 +287,12 @@ def main() -> int:
         elif not json.loads(release_path.read_text(encoding="utf-8")).get("all_hard_pass"):
             structural_errors.append("latest run release hard gates are not all pass")
 
+    if isinstance(derived_report, dict) and derived_report:
+        report_count = int(derived_report.get("queue_size", len(p0_ids)))
+        if report_count != len(p0_ids):
+            structural_errors.append(
+                f"Phase J derived evidence queue_size={report_count}, expected {len(p0_ids)}"
+            )
     print(f"[p0_service_production_gate] p0={len(p0_ids)} production={production_count} blocked={len(blocked)}")
     for sid in p0_ids:
         print(f"  {sid}: client_artifacts={len(service_client_files.get(sid, []))}/{len(CLIENT_EXT)} view={'yes' if sid in build_views else 'no'}")

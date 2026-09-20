@@ -191,6 +191,15 @@ jobs:
             --phase8-out reports/v1/PHASE8_GATE_REPORT.json \
             --legacy-regression-out reports/v1/LEGACY_REGRESSION_PHASE7.json
 
+      - name: Derive P0 service evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          RUN_ID=$(cat engine-run-id.txt)
+          PYTHONPATH=. python scripts/phase_j_p0_service_evidence.py \
+            --run-id "$RUN_ID" \
+            --json-out "data/runs/${RUN_ID}/reports/phase_j_p0_service_evidence.json"
+
       - name: Stage publish candidate
         if: ${{ inputs.dry_run != true }}
         shell: bash
