@@ -216,6 +216,8 @@ jobs:
           cp -a "data/runs/${RUN_ID}" release-candidate/data/runs/
           rm -f "release-candidate/data/runs/${RUN_ID}/ir/ir.json"
           printf '%s\n' "$RUN_ID" > release-candidate/run-id.txt
+          printf '%s\n' "${{ github.run_id }}" > release-candidate/build-run-id.txt
+          printf '%s\n' "${{ github.sha }}" > release-candidate/build-head-sha.txt
           cp config/client_capability_matrix.yaml release-candidate/
           mkdir -p release-candidate/reports/v1
           cp reports/v1/FINAL_MIGRATION_GATE.json release-candidate/reports/v1/
