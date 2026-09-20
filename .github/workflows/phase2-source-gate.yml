@@ -21,11 +21,10 @@ concurrency:
   group: phase2-Popular-Rules-Collection--github-workflows-phase2-source-gate-yml-${{ github.ref }}
   cancel-in-progress: true
 
-permissions:
-  contents: read
-
 jobs:
   source-gate:
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
