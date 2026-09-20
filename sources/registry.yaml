@@ -13,14 +13,14 @@ sources:
   notes: Official-source-driven domain generation for missing/partial P0 services. Promotion bridge input only.
   fetch: {type: github_raw, owner: cn-wanmei, repo: Popular-Rules-Source, branch: main}
   rules:
-  - {path: generated/source/1688/domains.txt, name: 1688, service: 1688, local: PRS_1688.domains.txt}
-  - {path: generated/source/cainiao/domains.txt, name: cainiao, service: cainiao, local: PRS_cainiao.domains.txt}
-  - {path: generated/source/dingding/domains.txt, name: dingding, service: dingding, local: PRS_dingding.domains.txt}
-  - {path: generated/source/qqmail/domains.txt, name: qqmail, service: qqmail, local: PRS_qqmail.domains.txt}
-  - {path: generated/source/qqmusic/domains.txt, name: qqmusic, service: qqmusic, local: PRS_qqmusic.domains.txt}
-  - {path: generated/source/taobao/domains.txt, name: taobao, service: taobao, local: PRS_taobao.domains.txt}
-  - {path: generated/source/tencentcloud/domains.txt, name: tencentcloud, service: tencentcloud, local: PRS_tencentcloud.domains.txt}
-  - {path: generated/source/tmall/domains.txt, name: tmall, service: tmall, local: PRS_tmall.domains.txt}
+  - {path: generated/source/1688/domains.txt, name: 1688, service: 1688, local: PRS_1688.domains.txt, enabled: false}
+  - {path: generated/source/cainiao/domains.txt, name: cainiao, service: cainiao, local: PRS_cainiao.domains.txt, enabled: false}
+  - {path: generated/source/dingding/domains.txt, name: dingding, service: dingding, local: PRS_dingding.domains.txt, enabled: false}
+  - {path: generated/source/qqmail/domains.txt, name: qqmail, service: qqmail, local: PRS_qqmail.domains.txt, enabled: false}
+  - {path: generated/source/qqmusic/domains.txt, name: qqmusic, service: qqmusic, local: PRS_qqmusic.domains.txt, enabled: false}
+  - {path: generated/source/taobao/domains.txt, name: taobao, service: taobao, local: PRS_taobao.domains.txt, enabled: false}
+  - {path: generated/source/tencentcloud/domains.txt, name: tencentcloud, service: tencentcloud, local: PRS_tencentcloud.domains.txt, enabled: false}
+  - {path: generated/source/tmall/domains.txt, name: tmall, service: tmall, local: PRS_tmall.domains.txt, enabled: false}
 
 - id: blackmatrix7
   name: BlackMatrix7 ios_rule_script
