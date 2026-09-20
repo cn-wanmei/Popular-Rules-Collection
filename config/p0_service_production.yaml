@@ -57,54 +57,54 @@ services:
     status: production
   qq:
     identity: pass
-    source: pending
-    canonical: pending
-    semantic_audit: pending
-    overlap_audit: pending
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    source: pass
+    canonical: pass
+    semantic_audit: pass
+    overlap_audit: pass
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   qqmusic:
     identity: pass
     source: pass
     canonical: pass
     semantic_audit: pass
     overlap_audit: pass
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   qqmail:
     identity: pass
     source: pass
     canonical: pass
     semantic_audit: pass
     overlap_audit: pass
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   wecom:
     identity: pass
-    source: pending
-    canonical: pending
-    semantic_audit: pending
-    overlap_audit: pending
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    source: pass
+    canonical: pass
+    semantic_audit: pass
+    overlap_audit: pass
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   tencentmeeting:
     identity: pass
-    source: pending
-    canonical: pending
-    semantic_audit: pending
-    overlap_audit: pending
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    source: pass
+    canonical: pass
+    semantic_audit: pass
+    overlap_audit: pass
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   tencentcloud:
     identity: pass
     source: pass
@@ -121,20 +121,20 @@ services:
     canonical: pass
     semantic_audit: pass
     overlap_audit: pass
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   tmall:
     identity: pass
     source: pass
     canonical: pass
     semantic_audit: pass
     overlap_audit: pass
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   alibabacloud:
     identity: pass
     source: pass
@@ -151,30 +151,30 @@ services:
     canonical: pass
     semantic_audit: pass
     overlap_audit: pass
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   dingding:
     identity: pass
     source: pass
     canonical: pass
     semantic_audit: pass
     overlap_audit: pass
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   cainiao:
     identity: pass
     source: pass
     canonical: pass
     semantic_audit: pass
     overlap_audit: pass
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   doubao:
     identity: pass
     source: pass
@@ -191,30 +191,30 @@ services:
     canonical: pass
     semantic_audit: pass
     overlap_audit: pass
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   baidunetdisk:
     identity: pass
-    source: pending
-    canonical: pending
-    semantic_audit: pending
-    overlap_audit: pending
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    source: pass
+    canonical: pass
+    semantic_audit: pass
+    overlap_audit: pass
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   youdao:
     identity: pass
-    source: pending
-    canonical: pending
-    semantic_audit: pending
-    overlap_audit: pending
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    source: pass
+    canonical: pass
+    semantic_audit: pass
+    overlap_audit: pass
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   dewu:
     identity: pass
     source: pass
@@ -251,10 +251,10 @@ services:
     canonical: pass
     semantic_audit: pass
     overlap_audit: pass
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   groq:
     identity: pass
     source: pass
@@ -317,14 +317,14 @@ services:
     status: production
   googlecloud:
     identity: pass
-    source: pending
-    canonical: pending
-    semantic_audit: pending
-    overlap_audit: pending
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    source: pass
+    canonical: pass
+    semantic_audit: pass
+    overlap_audit: pass
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   firebase:
     identity: pass
     source: pass
@@ -337,34 +337,34 @@ services:
     status: production
   bitbucket:
     identity: pass
-    source: pending
-    canonical: pending
-    semantic_audit: pending
-    overlap_audit: pending
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    source: pass
+    canonical: pass
+    semantic_audit: pass
+    overlap_audit: pass
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   npm:
     identity: pass
     source: pass
     canonical: pass
     semantic_audit: pass
     overlap_audit: pass
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   pypi:
     identity: pass
-    source: pending
-    canonical: pending
-    semantic_audit: pending
-    overlap_audit: pending
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    source: pass
+    canonical: pass
+    semantic_audit: pass
+    overlap_audit: pass
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   netlify:
     identity: pass
     source: pass
@@ -421,10 +421,10 @@ services:
     canonical: pass
     semantic_audit: pass
     overlap_audit: pass
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   bluesky:
     identity: pass
     source: pass
@@ -437,14 +437,14 @@ services:
     status: production
   youtubemusic:
     identity: pass
-    source: pending
-    canonical: pending
-    semantic_audit: pending
-    overlap_audit: pending
-    seven_client: pending
-    golden: pending
-    release: pending
-    status: blocked
+    source: pass
+    canonical: pass
+    semantic_audit: pass
+    overlap_audit: pass
+    seven_client: pass
+    golden: pass
+    release: pass
+    status: production
   tidal:
     identity: pass
     source: pass
