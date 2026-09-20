@@ -1,6 +1,6 @@
 {
   "schema": "v1_final_migration_gate_v1",
-  "run_id": "20260920T084544122448Z-run",
+  "run_id": "20260920T183340998709Z-run",
   "status": "PASS",
   "legacy_source": "database/services",
   "v1_source": "rule",
@@ -3914,38 +3914,38 @@
     "builds": [
       {
         "label": "production",
-        "ir": "77519d533481bfc3303325b0deee39f01b6e755284dea9ff96146805c92c850d",
-        "rules": "633c36a6468b132555334150eb41b00a803c406303aae7ac23269a6b27acdd1d",
-        "memberships": "fba914ff784eaefc8ea635b004077c6bbcdf2b76e99357eec7bdaec07ca1cbb7",
-        "hierarchy": "05818b842d1ef8399467485fcaf5cbfd49df1c746fc73a8120c78e6d668f9e6c",
-        "artifacts": "9feba4bb6e54651145b3e52b67b1dce4c4a33c381e2a8431d73044a74a0b5a61",
-        "overall": "129d19dcf9ea18d520032fef01208dc15f9731d7daa6f29ea5c0592d42a58506"
+        "ir": "6b82c8541c841f6e5547aa7ee4844ed56d3cad83ee32cf800a18d9a1cca46d4a",
+        "rules": "8c6f6ae3b148b90a9332f3f4079ab3d7ab0b11ba319ed8bb5d3e53eafc6685b7",
+        "memberships": "e05aff75ffc5c6cf365924d2bf46a70efcf27f1dc98abd629096f3bfc4899ad2",
+        "hierarchy": "ed8b715103899808ae7b19aadf0ecf7e0d39741d3b7079053fdf521f4ae26bc0",
+        "artifacts": "01d64c1b382b1d4bd125704a96918f9452d044611461a4ab9fd3f31875d63b54",
+        "overall": "ae2384c9dace68b87727d073039cf18e2b2ad9409d2cf60bf9ca1cbad9bf0f6b"
       },
       {
         "label": "replay_b",
-        "ir": "77519d533481bfc3303325b0deee39f01b6e755284dea9ff96146805c92c850d",
-        "rules": "633c36a6468b132555334150eb41b00a803c406303aae7ac23269a6b27acdd1d",
-        "memberships": "fba914ff784eaefc8ea635b004077c6bbcdf2b76e99357eec7bdaec07ca1cbb7",
-        "hierarchy": "05818b842d1ef8399467485fcaf5cbfd49df1c746fc73a8120c78e6d668f9e6c",
-        "artifacts": "9feba4bb6e54651145b3e52b67b1dce4c4a33c381e2a8431d73044a74a0b5a61",
-        "overall": "129d19dcf9ea18d520032fef01208dc15f9731d7daa6f29ea5c0592d42a58506"
+        "ir": "6b82c8541c841f6e5547aa7ee4844ed56d3cad83ee32cf800a18d9a1cca46d4a",
+        "rules": "8c6f6ae3b148b90a9332f3f4079ab3d7ab0b11ba319ed8bb5d3e53eafc6685b7",
+        "memberships": "e05aff75ffc5c6cf365924d2bf46a70efcf27f1dc98abd629096f3bfc4899ad2",
+        "hierarchy": "ed8b715103899808ae7b19aadf0ecf7e0d39741d3b7079053fdf521f4ae26bc0",
+        "artifacts": "01d64c1b382b1d4bd125704a96918f9452d044611461a4ab9fd3f31875d63b54",
+        "overall": "ae2384c9dace68b87727d073039cf18e2b2ad9409d2cf60bf9ca1cbad9bf0f6b"
       },
       {
         "label": "replay_c",
-        "ir": "77519d533481bfc3303325b0deee39f01b6e755284dea9ff96146805c92c850d",
-        "rules": "633c36a6468b132555334150eb41b00a803c406303aae7ac23269a6b27acdd1d",
-        "memberships": "fba914ff784eaefc8ea635b004077c6bbcdf2b76e99357eec7bdaec07ca1cbb7",
-        "hierarchy": "05818b842d1ef8399467485fcaf5cbfd49df1c746fc73a8120c78e6d668f9e6c",
-        "artifacts": "9feba4bb6e54651145b3e52b67b1dce4c4a33c381e2a8431d73044a74a0b5a61",
-        "overall": "129d19dcf9ea18d520032fef01208dc15f9731d7daa6f29ea5c0592d42a58506"
+        "ir": "6b82c8541c841f6e5547aa7ee4844ed56d3cad83ee32cf800a18d9a1cca46d4a",
+        "rules": "8c6f6ae3b148b90a9332f3f4079ab3d7ab0b11ba319ed8bb5d3e53eafc6685b7",
+        "memberships": "e05aff75ffc5c6cf365924d2bf46a70efcf27f1dc98abd629096f3bfc4899ad2",
+        "hierarchy": "ed8b715103899808ae7b19aadf0ecf7e0d39741d3b7079053fdf521f4ae26bc0",
+        "artifacts": "01d64c1b382b1d4bd125704a96918f9452d044611461a4ab9fd3f31875d63b54",
+        "overall": "ae2384c9dace68b87727d073039cf18e2b2ad9409d2cf60bf9ca1cbad9bf0f6b"
       }
     ],
     "match": true,
     "mismatches": [],
     "errors": [],
     "all_pass": true,
-    "source_run_id": "20260920T084544122448Z-run",
-    "snapshot_id": "snap-20260920T084544123183Z"
+    "source_run_id": "20260920T183340998709Z-run",
+    "snapshot_id": "snap-20260920T183340999740Z"
   },
   "phase7_asset_regression": {
     "pass": true,
@@ -3985,14 +3985,14 @@
   },
   "current_head": {
     "pass": true,
-    "expected": "a449fccc2f64f6048775fe72c8139d1fa6d3d717",
-    "actual": "a449fccc2f64f6048775fe72c8139d1fa6d3d717",
+    "expected": "9c144b6a238056ed47c90b56ef23f31ba11cf543",
+    "actual": "9c144b6a238056ed47c90b56ef23f31ba11cf543",
     "errors": []
   },
   "hard_errors": [],
   "phase8": {
     "schema": "v1_phase8_migration_v1",
-    "generated_at": "2026-09-20T08:52:08.698432+00:00",
+    "generated_at": "2026-09-20T18:42:58.822723+00:00",
     "stage": "switched",
     "coverage": {
       "schema": "v1_phase8_coverage_v1",
