@@ -1,15 +1,23 @@
-version: 1
+version: 2
 state_machine:
   - review
   - verified
   - canary
   - production
 services:
-  "1688": {state: review, enabled: false}
-  cainiao: {state: review, enabled: false}
-  dingding: {state: review, enabled: false}
-  qqmail: {state: review, enabled: false}
-  qqmusic: {state: review, enabled: false}
-  taobao: {state: review, enabled: false}
-  tencentcloud: {state: review, enabled: false}
-  tmall: {state: review, enabled: false}
+  "1688":
+    {state: verified, enabled: false, attestation: {status: pending}}
+  cainiao:
+    {state: verified, enabled: false, attestation: {status: pending}}
+  dingding:
+    {state: canary, enabled: true, attestation: {status: pending}}
+  qqmail:
+    {state: verified, enabled: false, attestation: {status: pending}}
+  qqmusic:
+    {state: verified, enabled: false, attestation: {status: pending}}
+  taobao:
+    {state: verified, enabled: false, attestation: {status: pending}}
+  tencentcloud:
+    {state: verified, enabled: false, attestation: {status: pending}}
+  tmall:
+    {state: verified, enabled: false, attestation: {status: pending}}
