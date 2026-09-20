@@ -55,6 +55,7 @@ jobs:
           python - <<'PY'
           import json
           import os
+          import time
           import urllib.request
 
           token = os.environ["GH_TOKEN"]
@@ -72,29 +73,46 @@ jobs:
 
           pr = get_json("https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/pulls/2")
           sha = pr["head"]["sha"]
-
-          runs = get_json(
-              "https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/actions/runs"
-              f"?head_sha={sha}&per_page=100"
-          )
           needed = {"CI", "Phase 2 Source Gate"}
           observed = {}
-          for run in runs.get("workflow_runs", []):
-              name = run.get("name")
-              if name in needed:
-                  observed[name] = run.get("conclusion")
 
-          missing = sorted(needed - observed.keys())
-          bad = sorted(name for name, conclusion in observed.items() if conclusion != "success")
-          print(json.dumps(
-              {"source_commit": sha, "observed": observed, "missing": missing, "bad": bad},
-              ensure_ascii=False,
-              indent=2,
-          ))
-          if missing or bad:
-              raise SystemExit(
-                  f"Source PR #2 is not green for {sha}; missing={missing}, bad={bad}"
+          for attempt in range(30):
+              runs = get_json(
+                  "https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/actions/runs"
+                  f"?head_sha={sha}&per_page=100"
               )
+              latest = {}
+              for run in runs.get("workflow_runs", []):
+                  name = run.get("name")
+                  if name not in needed:
+                      continue
+                  previous = latest.get(name)
+                  if previous is None or run.get("created_at", "") > previous.get("created_at", ""):
+                      latest[name] = run
+              observed = {name: run.get("conclusion") for name, run in latest.items()}
+              statuses = {name: run.get("status") for name, run in latest.items()}
+              print(json.dumps(
+                  {"attempt": attempt + 1, "source_commit": sha, "observed": observed, "statuses": statuses},
+                  ensure_ascii=False,
+                  indent=2,
+              ))
+
+              missing = sorted(needed - observed.keys())
+              terminal_bad = sorted(
+                  name for name, conclusion in observed.items()
+                  if conclusion not in (None, "success")
+              )
+              if terminal_bad:
+                  raise SystemExit(
+                      f"Source PR #2 has failed gate(s) for {sha}: {terminal_bad}; observed={observed}"
+                  )
+              if not missing and all(observed.get(name) == "success" for name in needed):
+                  break
+              if attempt == 29:
+                  raise SystemExit(
+                      f"Timed out waiting for Source PR #2 gates for {sha}; observed={observed}, missing={missing}"
+                  )
+              time.sleep(20)
 
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
               out.write(f"sha={sha}\\n")
