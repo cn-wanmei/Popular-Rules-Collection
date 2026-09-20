@@ -10,7 +10,8 @@ on:
       - "docs/PHASE2_MAIN_REPLACEMENT.md"
       - "scripts/**"
       - "src/engine/**"
-      - "tests/**"      - "scripts/source_production_gate.py"
+      - "tests/**"
+      - "scripts/source_production_gate.py"
       - "scripts/source_canary_gate.py"
       - "config/source_canary_state.yaml"
 
