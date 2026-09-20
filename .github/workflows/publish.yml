@@ -70,15 +70,11 @@ jobs:
           PY
           ARTIFACT_ID=$(python -c 'import json; print(json.load(open("/tmp/artifact.json"))["id"])')
           ARTIFACT_NAME=$(python -c 'import json; print(json.load(open("/tmp/artifact.json"))["name"])')
+          rm -rf release-candidate
           mkdir -p release-candidate
-          curl --fail-with-body --location --silent --show-error \
-            -H "Authorization: Bearer ${GH_TOKEN}" \
-            -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/${REPO}/actions/artifacts/${ARTIFACT_ID}/zip" \
-            -o /tmp/release-candidate.zip
-          unzip -q /tmp/release-candidate.zip -d release-candidate
+          gh run download "${RUN_ID}" --repo "${REPO}" --name "${ARTIFACT_NAME}" --dir release-candidate
           test "$(cat release-candidate/run-id.txt)" = "${RUN_ID}"
-          echo "Downloaded exact immutable artifact ${ARTIFACT_NAME} (id=${ARTIFACT_ID})."
+          echo "Downloaded exact immutable artifact ${ARTIFACT_NAME} (id=${ARTIFACT_ID}) from run ${RUN_ID}."
       - name: Architecture Gate
         run: python scripts/architecture_gate.py
 
