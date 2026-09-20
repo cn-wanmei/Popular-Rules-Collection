@@ -207,39 +207,3 @@ jobs:
           path: reports/phase2-canary
           if-no-files-found: warn
           retention-days: 30
-      - name: Checkout exact Source PR commit for Canary
-        if: env.CANARY_ACTIVE == 'true'
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
-        with:
-          repository: cn-wanmei/Popular-Rules-Source
-          ref: ${{ env.SOURCE_CANARY_SHA }}
-          path: .phase2/source
-          fetch-depth: 1
-
-      - name: Verify exact Source Canary commit
-        if: env.CANARY_ACTIVE == 'true'
-        run: test "$(git -C .phase2/source rev-parse HEAD)" = "${SOURCE_CANARY_SHA}"
-
-      - name: Install Source runtime dependencies
-        if: env.CANARY_ACTIVE == 'true'
-        run: python -m pip install "jsonschema>=4.21,<5"
-
-      - name: Run active-service Source → V3 Canary and rollback rehearsal
-        if: env.CANARY_ACTIVE == 'true'
-        run: |
-          set -euo pipefail
-          PYTHONPATH=. python scripts/phase2_source_canary.py \
-            --source-root .phase2/source \
-            --source-commit "${SOURCE_CANARY_SHA}" \
-            --services ${ACTIVE_CANARY_SERVICES} \
-            --output reports/phase2-canary
-
-      - name: Upload Phase 2 Canary evidence
-        if: always()
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-        with:
-          name: phase2-canary-${{ github.sha }}
-          path: reports/phase2-canary
-          if-no-files-found: warn
-          retention-days: 30
-
