@@ -53,9 +53,10 @@ def build_attestation(summary: dict[str, Any]) -> dict[str, Any]:
             if not str(fields.get(field) or "").strip()
         ]
         semantic_pass = canary.get("semantic", {}).get("pass") is True
+        reconciliation = canary.get("reconciliation") or {}
         reconciliation_pass = (
-            (canary.get("reconciliation") or {}).get("status") == "PASS"
-            or bool(canary.get("reconciliation_run_id"))
+            reconciliation.get("status") == "PASS"
+            and bool(reconciliation.get("run_id") or canary.get("reconciliation_run_id"))
         )
         rollback_pass = rollback.get("pass") is True
         golden_pass = canary.get("v3_golden", {}).get("golden_all_pass") is True
