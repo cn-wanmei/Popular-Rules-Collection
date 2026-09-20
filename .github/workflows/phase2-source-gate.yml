@@ -10,7 +10,10 @@ on:
       - "docs/PHASE2_MAIN_REPLACEMENT.md"
       - "scripts/**"
       - "src/engine/**"
-      - "tests/**"
+      - "tests/**"      - "scripts/source_production_gate.py"
+      - "scripts/source_canary_gate.py"
+      - "config/source_canary_state.yaml"
+
   workflow_dispatch:
 
 concurrency:
