@@ -3,7 +3,7 @@ schema: p0_service_overlap_audit_v1
 batch: 01
 purpose: Prevent unsupported claims about cross-service overlap while recording verified Batch 01 identity-level separation.
 scope:
-  services: [appstore, testflight, appledev, findmy]
+  services: [appstore, testflight, appledev, findmy, tencentcloud]
   comparison_basis: canonical_rule_identity
 status: partial
 identity_level:
@@ -27,5 +27,7 @@ identity_level:
     shared_rule_ids: []
 semantic_overlap:
   status: pending_execution
+  runtime_probe_count: 0
+  runtime_collisions: []
   reason: Canonical identity disjointness does not prove runtime matcher disjointness, especially for HOST-KEYWORD and DOMAIN-SUFFIX rules.
 next_required: execute production matcher semantic probes and cross-service overlap probes; only then promote overlap audit to pass

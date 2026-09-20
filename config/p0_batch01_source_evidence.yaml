@@ -58,5 +58,19 @@ services:
       path: config/p0_batch01_snapshots/2026-09-17/findmy.list
       sha256: 0c77dd5dd45a62e203b4d43b43d6b54f7f9ace687767068f520dff36b6aab714
       rule_count: 3
+  tencentcloud:
+    provider: tencent
+    primary_source:
+      source: blackmatrix7
+      url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Cloud/TencentCloud/TencentCloud.list
+      verification: exact_upstream_path_verified
+      observed: "# NAME: TencentCloud; IP-CIDR: 102; IP6-CIDR: 2; TOTAL: 104"
+      observed_at: "2026-09-20"
+    immutable_snapshot:
+      status: complete
+      path: config/p0_batch01_snapshots/2026-09-20/tencentcloud.list
+      sha256: be61e0ad4150af0b05bfcd4a197fc67c7d3d272bfb63fb3c2bef26806e558cb9
+      rule_count: 104
+
 status: immutable_snapshot_complete
-next_required: canonical_membership_for_appledev_then_semantic_and_overlap_audits
+next_required: execute semantic_and_overlap_audits; TencentCloud canonical membership is now complete

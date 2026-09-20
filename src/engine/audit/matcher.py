@@ -1,11 +1,13 @@
 """Deterministic matcher used by executable semantic/overlap audits.
 
 The matcher consumes canonical normalized rule records and deliberately uses
-boundary-aware suffix matching. It is kept small and side-effect free so audit
-results are reproducible in CI and can be reused by later production stages.
+boundary-aware host matching plus standards-based IP/CIDR matching. It is kept
+small and side-effect free so audit results are reproducible in CI and can be
+reused by later production stages.
 """
 from __future__ import annotations
 
+import ipaddress
 from typing import Any
 
 
@@ -19,19 +21,37 @@ def _suffix_match(host: str, suffix: str) -> bool:
     return host == suffix or host.endswith("." + suffix)
 
 
+def _ip_match(value: str, candidate: str, *, ipv6: bool = False) -> bool:
+    try:
+        ip = ipaddress.ip_address(_norm_host(candidate))
+        network = ipaddress.ip_network(value.strip(), strict=False)
+    except ValueError:
+        return False
+    if ipv6 and ip.version != 6:
+        return False
+    if not ipv6 and ip.version != 4:
+        return False
+    return ip in network
+
+
 def rule_matches(rule: dict[str, Any], host: str) -> bool:
-    """Return whether a normalized canonical rule matches a hostname."""
+    """Return whether a normalized canonical rule matches a hostname or IP."""
     typ = str(rule.get("type") or "").strip().lower().replace("_", "-")
     value = str(rule.get("value") or "").strip()
     host = _norm_host(host)
     if not typ or not value or not host:
         return False
+
     if typ in {"host", "domain"}:
         return host == _norm_host(value)
     if typ in {"host-suffix", "domain-suffix"}:
         return _suffix_match(host, value)
     if typ in {"host-keyword", "domain-keyword"}:
         return _norm_host(value) in host
+    if typ in {"ip-cidr", "ip-cidr4"}:
+        return _ip_match(value, host, ipv6=False)
+    if typ in {"ip6-cidr", "ip-cidr6", "ipv6-cidr"}:
+        return _ip_match(value, host, ipv6=True)
     return False
 
 

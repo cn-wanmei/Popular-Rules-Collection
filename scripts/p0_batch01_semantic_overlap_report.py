@@ -48,6 +48,9 @@ def main() -> int:
     }
 
     print(json.dumps(report["summary"], ensure_ascii=False, indent=2))
+    # This wrapper records audit execution. Production eligibility is enforced
+    # separately by the Phase J production gate, which requires semantic and
+    # overlap evidence to be explicitly PASS for every P0 service.
     if report["summary"]["semantic_status"] == "fail":
         return 1
     if report["summary"]["overlap_status"] == "fail":
