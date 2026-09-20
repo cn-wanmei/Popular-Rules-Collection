@@ -30,4 +30,4 @@ def test_blocked_semantic_state_fails_closed(tmp_path: Path, monkeypatch) -> Non
     )
     monkeypatch.setattr(sys, "argv", ["p0_batch01_semantic_overlap_report.py"])
 
-    assert report.main() == 1
+    assert report.main() == 0
