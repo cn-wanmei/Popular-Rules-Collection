@@ -177,7 +177,8 @@ def _run_semantic_check(run_dir: Path) -> tuple[dict[str, Any], str]:
     except json.JSONDecodeError as exc:
         raise RuntimeError(
             "seven-client semantic check returned non-JSON output: "
-            f"{stdout[-4000:]} {completed.stderr[-4000:]}"
+            f"returncode={completed.returncode}; "
+            f"stdout={stdout[-2000:]!r}; stderr={completed.stderr[-4000:]!r}"
         ) from exc
 
     semantic_report.write_text(
