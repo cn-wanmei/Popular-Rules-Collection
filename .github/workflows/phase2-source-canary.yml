@@ -163,12 +163,12 @@ jobs:
 
       - name: Run selected Source → V3 canary and rollback rehearsal
         if: steps.services.outputs.count != '0'
-        run: |
-          PYTHONPATH=. python scripts/phase2_source_canary.py \\
-            --source-root .phase2/source \\
-            --source-commit "${{ steps.source.outputs.sha }}" \\
-            --services ${{ steps.services.outputs.services }} \\
-            --output reports/phase2-canary
+        run: >-
+          PYTHONPATH=. python scripts/phase2_source_canary.py
+          --source-root .phase2/source
+          --source-commit "${{ steps.source.outputs.sha }}"
+          --services ${{ steps.services.outputs.services }}
+          --output reports/phase2-canary
 
       - name: No active service
         if: steps.services.outputs.count == '0'
@@ -179,7 +179,7 @@ jobs:
 
       - name: Build non-promoting Canary attestation evidence
         if: always()
-        run: python scripts/build_canary_attestation.py
+        run: python scripts/canary_attestation.py
       - name: Upload canary evidence
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
