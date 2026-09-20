@@ -1,6 +1,6 @@
 # Registry V3 — Source + Fetcher + Collection Manifest
 version: 3
-last_updated: '2026-09-20'
+last_updated: '2026-09-21'
 sources:
 - id: popular-rules-source
   name: Popular-Rules-Source (official domain generation)
@@ -15,7 +15,7 @@ sources:
   rules:
   - {path: generated/source/1688/domains.txt, name: 1688, service: 1688, local: PRS_1688.domains.txt, enabled: false}
   - {path: generated/source/cainiao/domains.txt, name: cainiao, service: cainiao, local: PRS_cainiao.domains.txt, enabled: false}
-  - {path: generated/source/dingding/domains.txt, name: dingding, service: dingding, local: PRS_dingding.domains.txt, enabled: false}
+  - {path: generated/source/dingding/domains.txt, name: dingding, service: dingding, local: PRS_dingding.domains.txt, enabled: true}
   - {path: generated/source/qqmail/domains.txt, name: qqmail, service: qqmail, local: PRS_qqmail.domains.txt, enabled: false}
   - {path: generated/source/qqmusic/domains.txt, name: qqmusic, service: qqmusic, local: PRS_qqmusic.domains.txt, enabled: false}
   - {path: generated/source/taobao/domains.txt, name: taobao, service: taobao, local: PRS_taobao.domains.txt, enabled: false}
