@@ -1,0 +1,42 @@
+name: Phase 2 Upstream Gate
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "sources/registry.yaml"
+      - "config/source_promotion_policy.yaml"
+      - "docs/PHASE2_UPSTREAM_RULE_COMPLETION.md"
+      - "docs/PHASE2_MAIN_REPLACEMENT.md"
+      - "scripts/**"
+      - "src/engine/**"
+      - "tests/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12.14"
+          cache: pip
+          cache-dependency-path: requirements.lock
+      - run: python -m pip install -r requirements.lock
+      - run: python scripts/architecture_gate.py
+      - run: PYTHONPATH=. python -m pytest tests/engine/ -q
+      - name: Verify PRS remains disabled
+        run: |
+          python - <<'PY'
+          import yaml
+          with open('sources/registry.yaml', encoding='utf-8') as fh:
+              data = yaml.safe_load(fh) or {}
+          entry = next(x for x in data['sources'] if x.get('id') == 'popular-rules-source')
+          assert entry.get('enabled') is False
+          print('PRS registry: disabled during Phase 2')
+          PY
+      - run: python scripts/partial_production_invariant_gate.py
