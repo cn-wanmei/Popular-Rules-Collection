@@ -31,9 +31,10 @@ def load_yaml(path: Path) -> dict[str, Any]:
     return value if isinstance(value, dict) else {}
 
 
-def main() -> int:
-    state = load_yaml(ROOT / "config" / "source_canary_state.yaml")
-    policy = load_yaml(ROOT / "config" / "source_promotion_policy.yaml")
+def validate_state(
+    state: dict[str, Any],
+    policy: dict[str, Any],
+) -> dict[str, Any]:
     services = state.get("services") or {}
     errors: list[str] = []
 
@@ -46,7 +47,6 @@ def main() -> int:
         errors.append("global canary switch must remain disabled until a service is explicitly promoted")
 
     canary_services: list[str] = []
-
     for sid in SERVICES:
         item = services.get(sid) or {}
         stage = str(item.get("state", "review")).lower()
@@ -59,6 +59,7 @@ def main() -> int:
             errors.append(f"{sid}: {stage} requires enabled=true")
         if stage in {"review", "verified"} and enabled:
             errors.append(f"{sid}: {stage} must keep enabled=false")
+
         attestation = item.get("attestation") or {}
         attestation_status = str(attestation.get("status", "pending")).lower()
 
@@ -83,13 +84,21 @@ def main() -> int:
             + ", ".join(sorted(canary_services))
         )
 
-    result = {
+    return {
         "schema": "source_canary_state_gate_v1",
         "status": "PASS" if not errors else "FAIL",
         "errors": errors,
+        "canary_services": sorted(canary_services),
     }
+
+
+def main() -> int:
+    result = validate_state(
+        load_yaml(ROOT / "config" / "source_canary_state.yaml"),
+        load_yaml(ROOT / "config" / "source_promotion_policy.yaml"),
+    )
     print(json.dumps(result, ensure_ascii=False, indent=2))
-    return 0 if not errors else 1
+    return 0 if result["status"] == "PASS" else 1
 
 
 if __name__ == "__main__":
