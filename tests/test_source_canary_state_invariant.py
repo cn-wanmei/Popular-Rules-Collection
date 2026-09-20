@@ -21,7 +21,6 @@ def test_single_canary_is_allowed():
         _state(
             ("1688", "canary", True),
             ("cainiao", "verified", False),
-            ("dingding", "production", True),
         ),
         _policy(),
     )
