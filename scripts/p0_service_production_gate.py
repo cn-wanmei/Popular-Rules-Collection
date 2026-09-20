@@ -246,6 +246,11 @@ def main() -> int:
     blocked: list[str] = []
     production_count = 0
 
+    phase_j_complete = bool(
+        isinstance(derived_report, dict)
+        and derived_report.get("production_complete") is True
+    )
+
     for sid in p0_ids:
         row = matrix.get(sid) or {}
         failed = [field for field in HARD_FIELDS if row.get(field) != "pass"]
@@ -300,14 +305,6 @@ def main() -> int:
         elif not json.loads(release_path.read_text(encoding="utf-8")).get("all_hard_pass"):
             structural_errors.append("latest run release hard gates are not all pass")
 
-    phase_j_complete = bool(
-        isinstance(derived_report, dict)
-        and derived_report.get("production_complete") is True
-    )
-    phase_j_complete = bool(
-        isinstance(derived_report, dict)
-        and derived_report.get("production_complete") is True
-    )
     if isinstance(derived_report, dict) and derived_report:
         report_count = int(derived_report.get("queue_size", len(p0_ids)))
         if report_count != len(p0_ids):
