@@ -9,8 +9,8 @@ scope:
   - findmy
   - tencentcloud
   comparison_basis: canonical_rule_identity
-status: partial
+status: pass
 semantic_overlap:
-  status: pending_execution
-  runtime_probe_count: 0
+  status: pass
+  runtime_probe_count: 23
   runtime_collisions: []

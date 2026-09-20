@@ -1,716 +1,1112 @@
 version: 1
 schema: p0_service_semantic_audit_v1
 batch: 3
-execution_status: pending_execution
+execution_status: executed
 services:
   airbnb:
     snapshot: config/p0_geosite_snapshots/2026-09-20/airbnb.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.airbnb.rs
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.airbnb.rs.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.airbnb.cl
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.airbnb.cl.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.airbnb.ae
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.airbnb.ae.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.airbnb.al
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.airbnb.al.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   alibabacloud:
     snapshot: config/p0_geosite_snapshots/2026-09-20/alibabacloud.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.alibabacloud.co.in
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.alibabacloud.co.in.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.alibabacloud.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.alibabacloud.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.alibabacloud.com.au
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.alibabacloud.com.au.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.alibabacloud.com.hk
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.alibabacloud.com.hk.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   aws:
     snapshot: config/p0_geosite_snapshots/2026-09-20/aws.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.aws
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.aws.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.awsbraket.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.awsbraket.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.thinkboxsoftware.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.thinkboxsoftware.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.aesworkshops.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.aesworkshops.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   azure:
     snapshot: config/p0_geosite_snapshots/2026-09-20/azure.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.azure.microsoft.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.azure.microsoft.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.azuremarketplace.microsoft.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.azuremarketplace.microsoft.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.azure
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.azure.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.aadrm.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.aadrm.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   bluesky:
     snapshot: config/p0_geosite_snapshots/2026-09-20/bluesky.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.bsky.app
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.bsky.app.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.bsky.network
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.bsky.network.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.bsky.social
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.bsky.social.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   booking:
     snapshot: config/p0_geosite_snapshots/2026-09-20/booking.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.booking.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.booking.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.bstatic.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.bstatic.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.booking.cn
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.booking.cn.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   canva:
     snapshot: config/p0_geosite_snapshots/2026-09-20/canva.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.affinity.studio
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.affinity.studio.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.canva.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.canva.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.canvastatus.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.canvastatus.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.affinity.api.serifservices.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.affinity.api.serifservices.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   cursor:
     snapshot: config/p0_geosite_snapshots/2026-09-20/cursor.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.cursor-cdn.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.cursor-cdn.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.cursor.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.cursor.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.cursor.sh
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.cursor.sh.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.cursorapi.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.cursorapi.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   deepseek:
     snapshot: config/p0_geosite_snapshots/2026-09-20/deepseek.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.deepseek.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.deepseek.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.deepseeksvc.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.deepseeksvc.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   dewu:
     snapshot: config/p0_geosite_snapshots/2026-09-20/dewu.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.giftatdw.cn
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.giftatdw.cn.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.dewu-inner.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.dewu-inner.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.dewu-inner.net
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.dewu-inner.net.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.dewu.co
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.dewu.co.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   doubao:
     snapshot: config/p0_geosite_snapshots/2026-09-20/doubao.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.butterfly-static.cn
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.butterfly-static.cn.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.butterflyai.cn
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.butterflyai.cn.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.coze-dns-01.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.coze-dns-01.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.coze.cn
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.coze.cn.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   elevenlabs:
     snapshot: config/p0_geosite_snapshots/2026-09-20/elevenlabs.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.elevenlabs.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.elevenlabs.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.elevenlabs.io
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.elevenlabs.io.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   feishu:
     snapshot: config/p0_geosite_snapshots/2026-09-20/feishu.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.anycross.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.anycross.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.blmpb.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.blmpb.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.bytedancehermestest.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.bytedancehermestest.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.falconsending.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.falconsending.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   firebase:
     snapshot: config/p0_geosite_snapshots/2026-09-20/firebase.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.firebase.google.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.firebase.google.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.firebase.googleapis.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.firebase.googleapis.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.firebaseappcheck.googleapis.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.firebaseappcheck.googleapis.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.firebasedynamiclinks-ipv4.googleapis.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.firebasedynamiclinks-ipv4.googleapis.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   grok:
     snapshot: config/p0_geosite_snapshots/2026-09-20/grok.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.grok.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.grok.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.grokipedia.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.grokipedia.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.x.ai
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.x.ai.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.grok.x.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.grok.x.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   groq:
     snapshot: config/p0_geosite_snapshots/2026-09-20/groq.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.groq.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.groq.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   huggingface:
     snapshot: config/p0_geosite_snapshots/2026-09-20/huggingface.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.hf.co
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.hf.co.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.hf.space
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.hf.space.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.huggingface.co
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.huggingface.co.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   messenger:
     snapshot: config/p0_geosite_snapshots/2026-09-20/messenger.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.fbmessenger.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.fbmessenger.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.m.me
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.m.me.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.messenger.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.messenger.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.nbabot.net
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.nbabot.net.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   netlify:
     snapshot: config/p0_geosite_snapshots/2026-09-20/netlify.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.acd89244c803f7181.awsglobalaccelerator.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.acd89244c803f7181.awsglobalaccelerator.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.afa7f374f51cc8991.awsglobalaccelerator.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.afa7f374f51cc8991.awsglobalaccelerator.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.d33wubrfki0l68.cloudfront.net
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.d33wubrfki0l68.cloudfront.net.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.bitballoon.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.bitballoon.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   npm:
     snapshot: config/p0_geosite_snapshots/2026-09-20/npm.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.npm.community
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.npm.community.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.npmjs.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.npmjs.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.npmjs.org
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.npmjs.org.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   perplexity:
     snapshot: config/p0_geosite_snapshots/2026-09-20/perplexity.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.ppl-ai-file-upload.s3.amazonaws.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.ppl-ai-file-upload.s3.amazonaws.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.pplx-res.cloudinary.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.pplx-res.cloudinary.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.perplexity.ai
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.perplexity.ai.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.perplexity.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.perplexity.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   roblox:
     snapshot: config/p0_geosite_snapshots/2026-09-20/roblox.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.d1unuk07s6td74.cloudfront.net
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.d1unuk07s6td74.cloudfront.net.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.roblox-load-generator-configuration.s3.us-east-2.amazonaws.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.roblox-load-generator-configuration.s3.us-east-2.amazonaws.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.roblox-poc.global.ssl.fastly.net
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.roblox-poc.global.ssl.fastly.net.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.robloxcorp.s.llnwi.net
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.robloxcorp.s.llnwi.net.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   signal:
     snapshot: config/p0_geosite_snapshots/2026-09-20/signal.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.signal.art
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.signal.art.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.signal.group
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.signal.group.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.signal.link
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.signal.link.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.signal.me
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.signal.me.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   snapchat:
     snapshot: config/p0_geosite_snapshots/2026-09-20/snapchat.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.impala-media-production.s3.amazonaws.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.impala-media-production.s3.amazonaws.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.sc-cdn.net
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.sc-cdn.net.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.sc-gw.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.sc-gw.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.sc-static.net
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.sc-static.net.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   tidal:
     snapshot: config/p0_geosite_snapshots/2026-09-20/tidal.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.tidal.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.tidal.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.tidalhifi.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.tidalhifi.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.wimpmusic.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.wimpmusic.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   trello:
     snapshot: config/p0_geosite_snapshots/2026-09-20/trello.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.trello.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.trello.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.trellocdn.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.trellocdn.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   uber:
     snapshot: config/p0_geosite_snapshots/2026-09-20/uber.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.uber-assets.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.uber-assets.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.uber.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.uber.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.ubereats.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.ubereats.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   walmart:
     snapshot: config/p0_geosite_snapshots/2026-09-20/walmart.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.walmart
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.walmart.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.w-mt.co
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.w-mt.co.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.wal-mart.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.wal-mart.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.wal.co
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.wal.co.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   wise:
     snapshot: config/p0_geosite_snapshots/2026-09-20/wise.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.transferwise.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.transferwise.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.wise.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.wise.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-overall_status: pending
+      actual: no_match
+      result: pass
+overall_status: pass

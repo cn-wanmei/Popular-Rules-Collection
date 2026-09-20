@@ -1,90 +1,134 @@
 version: 1
 schema: p0_service_semantic_audit_v1
 batch: 1
-execution_status: pending_execution
+execution_status: executed
 services:
   appstore:
     snapshot: config/p0_batch01_snapshots/2026-09-17/appstore.list
-    status: pending_execution
+    status: pass
     probes:
     - input: apps.apple.com
       expected: match
       type: DOMAIN
+      actual: match
+      result: pass
     - input: apps.apple.com.evil.example
       expected: no_match
       type: DOMAIN
+      actual: no_match
+      result: pass
     - input: itunes.apple.com
       expected: match
       type: DOMAIN
+      actual: match
+      result: pass
     - input: itunes.apple.com.evil.example
       expected: no_match
       type: DOMAIN
+      actual: no_match
+      result: pass
   testflight:
     snapshot: config/p0_batch01_snapshots/2026-09-17/testflight.list
-    status: pending_execution
+    status: pass
     probes:
     - input: beta.apple.com
       expected: match
       type: DOMAIN
+      actual: match
+      result: pass
     - input: beta.apple.com.evil.example
       expected: no_match
       type: DOMAIN
+      actual: no_match
+      result: pass
     - input: testflight.apple.com
       expected: match
       type: DOMAIN
+      actual: match
+      result: pass
     - input: testflight.apple.com.evil.example
       expected: no_match
       type: DOMAIN
+      actual: no_match
+      result: pass
   appledev:
     snapshot: config/p0_batch01_snapshots/2026-09-17/appledev.list
-    status: pending_execution
+    status: pass
     probes:
     - input: x.calendarserver.org
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.calendarserver.org.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.apple-cloudkit.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.apple-cloudkit.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.cups.org
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.cups.org.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
     - input: x.developer.apple.com
       expected: match
       type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
     - input: x.developer.apple.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
   findmy:
     snapshot: config/p0_batch01_snapshots/2026-09-17/findmy.list
-    status: pending_execution
+    status: pass
     probes:
     - input: fmfmobile.icloud.com
       expected: match
       type: DOMAIN
+      actual: match
+      result: pass
     - input: fmfmobile.icloud.com.evil.example
       expected: no_match
       type: DOMAIN
+      actual: no_match
+      result: pass
     - input: fmipmobile.icloud.com
       expected: match
       type: DOMAIN
+      actual: match
+      result: pass
     - input: fmipmobile.icloud.com.evil.example
       expected: no_match
       type: DOMAIN
+      actual: no_match
+      result: pass
     - input: statici.icloud.com
       expected: match
       type: DOMAIN
+      actual: match
+      result: pass
     - input: statici.icloud.com.evil.example
       expected: no_match
       type: DOMAIN
+      actual: no_match
+      result: pass
   tencentcloud:
     snapshot: config/p0_batch01_snapshots/2026-09-20/tencentcloud.list
     status: blocked
@@ -92,4 +136,4 @@ services:
     - input: 1.116.116.0
       expected: review
       type: IP-CIDR
-overall_status: pending
+overall_status: blocked
