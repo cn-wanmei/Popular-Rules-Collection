@@ -10,7 +10,10 @@ on:
       - "config/ruleset_hierarchy.yaml"
       - "config/client_capability_matrix.yaml"
       - "scripts/phase2_source_canary.py"
-      - "src/engine/**"
+      - "src/engine/**"      - "scripts/source_production_gate.py"
+      - "scripts/source_canary_gate.py"
+      - "config/source_canary_state.yaml"
+
   workflow_dispatch:
     inputs:
       service:
