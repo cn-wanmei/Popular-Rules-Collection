@@ -116,7 +116,8 @@ def find_source(root: Path, sid: str, hints: list[str]) -> Path | None:
         ranked.append((rank, exact, path.as_posix(), path))
     if not ranked:
         return None
-    ranked.sort()
+    format_rank = {".list": 0, ".txt": 1, "": 1, ".yaml": 2, ".yml": 2, ".json": 3}
+    ranked.sort(key=lambda item: (item[0], format_rank.get(Path(item[-1].name).suffix.casefold(), 2), item[1], item[2]))
     return ranked[0][-1]
 
 
