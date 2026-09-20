@@ -184,7 +184,18 @@ jobs:
       - name: Build non-promoting Canary attestation evidence
         if: always()
         run: python scripts/canary_attestation.py
+
+      - name: Production Unlock qualification (non-mutating)
+        if: success() && steps.services.outputs.count == '1'
+        run: |
+          service="${{ steps.services.outputs.services }}"
+          python scripts/phase2_production_unlock_gate.py \
+            --service "$service" \
+            --canary-report "reports/phase2-canary/$service/report.json" \
+            --output "reports/phase2-canary/$service/production-unlock.json"
+
       - name: Upload canary evidence
+        if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: phase2-source-canary-${{ github.event.pull_request.head.sha || github.sha }}
