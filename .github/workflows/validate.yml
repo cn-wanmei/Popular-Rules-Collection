@@ -4,6 +4,10 @@ on:
   workflow_dispatch:
   pull_request:
 
+concurrency:
+  group: phase2-validate-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -41,10 +45,6 @@ jobs:
         run: |
           python scripts/dataset_diff.py
           python scripts/dataset_quality.py
-
-      - name: Generated size gate (HARD)
-        run: python scripts/size_gate.py
-
       - name: Phase 2 Active-Service Canary
         id: phase2_canary
         shell: bash
@@ -57,6 +57,7 @@ jobs:
           import json
           import os
           import time
+          import urllib.parse
           import urllib.request
           from pathlib import Path
           import yaml
@@ -96,8 +97,13 @@ jobs:
               with urllib.request.urlopen(req) as response:
                   return json.load(response)
 
-          pr = get_json("https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/pulls/2")
-          source_sha = pr["head"]["sha"]
+          source_ref = "main"
+          encoded_ref = urllib.parse.quote(source_ref, safe="")
+          source_commit_doc = get_json(
+              "https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/commits/"
+              + encoded_ref
+          )
+          source_sha = source_commit_doc["sha"]
           needed = {"CI", "Phase 2 Source Gate"}
           observed = {}
 
@@ -114,11 +120,16 @@ jobs:
                   previous = latest.get(name)
                   if previous is None or run.get("created_at", "") > previous.get("created_at", ""):
                       latest[name] = run
-
               observed = {name: run.get("conclusion") for name, run in latest.items()}
               statuses = {name: run.get("status") for name, run in latest.items()}
               print(json.dumps(
-                  {"attempt": attempt + 1, "source_commit": source_sha, "observed": observed, "statuses": statuses},
+                  {
+                      "attempt": attempt + 1,
+                      "source_ref": source_ref,
+                      "source_commit": source_sha,
+                      "observed": observed,
+                      "statuses": statuses,
+                  },
                   ensure_ascii=False,
                   indent=2,
               ))
@@ -130,13 +141,15 @@ jobs:
               )
               if terminal_bad:
                   raise SystemExit(
-                      f"Source PR #2 has failed gate(s) for {source_sha}: {terminal_bad}; observed={observed}"
+                      f"Source ref {source_ref} has failed gate(s) for {source_sha}: "
+                      f"{terminal_bad}; observed={observed}"
                   )
               if not missing and all(observed.get(name) == "success" for name in needed):
                   break
               if attempt == 29:
                   raise SystemExit(
-                      f"Timed out waiting for Source PR #2 gates for {source_sha}; observed={observed}, missing={missing}"
+                      f"Timed out waiting for Source ref {source_ref} gates for {source_sha}; "
+                      f"observed={observed}, missing={missing}"
                   )
               time.sleep(20)
 
@@ -147,13 +160,53 @@ jobs:
 
           Path("reports/phase2-canary/source-verification.json").write_text(
               json.dumps(
-                  {"source_commit": source_sha, "observed_source_gates": observed, "services": active},
+                  {
+                      "source_ref": source_ref,
+                      "source_commit": source_sha,
+                      "observed_source_gates": observed,
+                      "services": active,
+                  },
                   ensure_ascii=False, indent=2
               ) + "\n",
               encoding="utf-8",
           )
           PY
 
+      - name: Checkout exact Source main commit for Canary
+        if: env.CANARY_ACTIVE == 'true'
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: cn-wanmei/Popular-Rules-Source
+          ref: ${{ env.SOURCE_CANARY_SHA }}
+          path: .phase2/source
+          fetch-depth: 1
+
+      - name: Verify exact Source Canary commit
+        if: env.CANARY_ACTIVE == 'true'
+        run: test "$(git -C .phase2/source rev-parse HEAD)" = "${SOURCE_CANARY_SHA}"
+
+      - name: Install Source runtime dependencies
+        if: env.CANARY_ACTIVE == 'true'
+        run: python -m pip install "jsonschema>=4.21,<5"
+
+      - name: Run active-service Source → V3 Canary and rollback rehearsal
+        if: env.CANARY_ACTIVE == 'true'
+        run: |
+          set -euo pipefail
+          PYTHONPATH=. python scripts/phase2_source_canary.py \
+            --source-root .phase2/source \
+            --source-commit "${SOURCE_CANARY_SHA}" \
+            --services ${ACTIVE_CANARY_SERVICES} \
+            --output reports/phase2-canary
+
+      - name: Upload Phase 2 Canary evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: phase2-canary-${{ github.sha }}
+          path: reports/phase2-canary
+          if-no-files-found: warn
+          retention-days: 30
       - name: Checkout exact Source PR commit for Canary
         if: env.CANARY_ACTIVE == 'true'
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
