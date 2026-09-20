@@ -7,53 +7,282 @@ activation:
   semantic_requires: probe_suite
   publish_requires: seven_client_gate
 services:
-  - {id: appstore, provider: apple, region: global, source_hints: [blackmatrix7]}
-  - {id: testflight, provider: apple, region: global, source_hints: [blackmatrix7]}
-  - {id: appledev, provider: apple, region: global, source_hints: [lm-firefly, blackmatrix7]}
-  - {id: findmy, provider: apple, region: global, source_hints: [blackmatrix7]}
-  - {id: qq, provider: tencent, region: domestic, source_hints: [blackmatrix7]}
-  - {id: qqmusic, provider: tencent, region: domestic, source_hints: [blackmatrix7]}
-  - {id: qqmail, provider: tencent, region: domestic, source_hints: [blackmatrix7]}
-  - {id: wecom, provider: tencent, region: domestic, source_hints: [blackmatrix7]}
-  - {id: tencentmeeting, provider: tencent, region: domestic, source_hints: [blackmatrix7]}
-  - {id: tencentcloud, provider: tencent, region: domestic, source_hints: [blackmatrix7, metacubex, v2fly]}
-  - {id: taobao, provider: alibaba, region: domestic, source_hints: [blackmatrix7, metacubex]}
-  - {id: tmall, provider: alibaba, region: domestic, source_hints: [blackmatrix7]}
-  - {id: alibabacloud, provider: alibaba, region: global, source_hints: [metacubex, v2fly]}
-  - {id: '1688', provider: alibaba, region: domestic, source_hints: [blackmatrix7]}
-  - {id: dingding, provider: alibaba, region: domestic, source_hints: [blackmatrix7]}
-  - {id: cainiao, provider: alibaba, region: domestic, source_hints: [blackmatrix7]}
-  - {id: doubao, provider: bytedance, region: domestic, source_hints: [metacubex]}
-  - {id: feishu, provider: bytedance, region: global, source_hints: [blackmatrix7]}
-  - {id: baidunetdisk, provider: baidu, region: domestic, source_hints: [blackmatrix7]}
-  - {id: youdao, provider: netease, region: domestic, source_hints: [blackmatrix7, metacubex]}
-  - {id: dewu, provider: dewu, region: domestic, source_hints: [metacubex]}
-  - {id: deepseek, provider: deepseek, region: global, source_hints: [metacubex, v2fly]}
-  - {id: perplexity, provider: perplexity, region: global, source_hints: [metacubex, v2fly]}
-  - {id: grok, provider: xai, region: global, source_hints: [metacubex]}
-  - {id: groq, provider: groq, region: global, source_hints: [metacubex]}
-  - {id: huggingface, provider: huggingface, region: global, source_hints: [metacubex, v2fly]}
-  - {id: cursor, provider: cursor, region: global, source_hints: [metacubex]}
-  - {id: elevenlabs, provider: elevenlabs, region: global, source_hints: [metacubex, v2fly]}
-  - {id: aws, provider: amazon, region: global, source_hints: [metacubex, v2fly]}
-  - {id: azure, provider: microsoft, region: global, source_hints: [metacubex, v2fly]}
-  - {id: googlecloud, provider: google, region: global, source_hints: [metacubex, v2fly]}
-  - {id: firebase, provider: google, region: global, source_hints: [metacubex, v2fly]}
-  - {id: bitbucket, provider: atlassian, region: global, source_hints: [v2fly, blackmatrix7]}
-  - {id: npm, provider: npm, region: global, source_hints: [candidate_new_source]}
-  - {id: pypi, provider: pypi, region: global, source_hints: [candidate_new_source]}
-  - {id: netlify, provider: netlify, region: global, source_hints: [metacubex, v2fly]}
-  - {id: canva, provider: canva, region: global, source_hints: [metacubex]}
-  - {id: trello, provider: atlassian, region: global, source_hints: [metacubex]}
-  - {id: signal, provider: signal, region: global, source_hints: [metacubex, v2fly]}
-  - {id: messenger, provider: meta, region: global, source_hints: [metacubex]}
-  - {id: snapchat, provider: snap, region: global, source_hints: [metacubex]}
-  - {id: bluesky, provider: bluesky, region: global, source_hints: [metacubex]}
-  - {id: youtubemusic, provider: google, region: global, source_hints: [dler]}
-  - {id: tidal, provider: tidal, region: global, source_hints: [metacubex]}
-  - {id: walmart, provider: walmart, region: global, source_hints: [metacubex]}
-  - {id: uber, provider: uber, region: global, source_hints: [metacubex, v2fly]}
-  - {id: airbnb, provider: airbnb, region: global, source_hints: [metacubex, v2fly]}
-  - {id: booking, provider: booking, region: global, source_hints: [metacubex, v2fly]}
-  - {id: wise, provider: wise, region: global, source_hints: [metacubex]}
-  - {id: roblox, provider: roblox, region: global, source_hints: [metacubex, v2fly]}
+- id: appstore
+  provider: apple
+  region: global
+  source_hints:
+  - blackmatrix7
+- id: testflight
+  provider: apple
+  region: global
+  source_hints:
+  - blackmatrix7
+- id: appledev
+  provider: apple
+  region: global
+  source_hints:
+  - lm-firefly
+  - blackmatrix7
+- id: findmy
+  provider: apple
+  region: global
+  source_hints:
+  - blackmatrix7
+- id: qq
+  provider: tencent
+  region: domestic
+  source_hints:
+  - blackmatrix7
+- id: qqmusic
+  provider: tencent
+  region: domestic
+  source_hints:
+  - popular-rules-source
+  - blackmatrix7
+- id: qqmail
+  provider: tencent
+  region: domestic
+  source_hints:
+  - popular-rules-source
+  - blackmatrix7
+- id: wecom
+  provider: tencent
+  region: domestic
+  source_hints:
+  - blackmatrix7
+- id: tencentmeeting
+  provider: tencent
+  region: domestic
+  source_hints:
+  - blackmatrix7
+- id: tencentcloud
+  provider: tencent
+  region: domestic
+  source_hints:
+  - popular-rules-source
+  - blackmatrix7
+  - metacubex
+  - v2fly
+- id: taobao
+  provider: alibaba
+  region: domestic
+  source_hints:
+  - popular-rules-source
+  - blackmatrix7
+  - metacubex
+- id: tmall
+  provider: alibaba
+  region: domestic
+  source_hints:
+  - popular-rules-source
+  - blackmatrix7
+- id: alibabacloud
+  provider: alibaba
+  region: global
+  source_hints:
+  - metacubex
+  - v2fly
+- id: '1688'
+  provider: alibaba
+  region: domestic
+  source_hints:
+  - popular-rules-source
+  - blackmatrix7
+- id: dingding
+  provider: alibaba
+  region: domestic
+  source_hints:
+  - popular-rules-source
+  - blackmatrix7
+- id: cainiao
+  provider: alibaba
+  region: domestic
+  source_hints:
+  - popular-rules-source
+  - blackmatrix7
+- id: doubao
+  provider: bytedance
+  region: domestic
+  source_hints:
+  - metacubex
+- id: feishu
+  provider: bytedance
+  region: global
+  source_hints:
+  - blackmatrix7
+- id: baidunetdisk
+  provider: baidu
+  region: domestic
+  source_hints:
+  - blackmatrix7
+- id: youdao
+  provider: netease
+  region: domestic
+  source_hints:
+  - blackmatrix7
+  - metacubex
+- id: dewu
+  provider: dewu
+  region: domestic
+  source_hints:
+  - metacubex
+- id: deepseek
+  provider: deepseek
+  region: global
+  source_hints:
+  - metacubex
+  - v2fly
+- id: perplexity
+  provider: perplexity
+  region: global
+  source_hints:
+  - metacubex
+  - v2fly
+- id: grok
+  provider: xai
+  region: global
+  source_hints:
+  - metacubex
+- id: groq
+  provider: groq
+  region: global
+  source_hints:
+  - metacubex
+- id: huggingface
+  provider: huggingface
+  region: global
+  source_hints:
+  - metacubex
+  - v2fly
+- id: cursor
+  provider: cursor
+  region: global
+  source_hints:
+  - metacubex
+- id: elevenlabs
+  provider: elevenlabs
+  region: global
+  source_hints:
+  - metacubex
+  - v2fly
+- id: aws
+  provider: amazon
+  region: global
+  source_hints:
+  - metacubex
+  - v2fly
+- id: azure
+  provider: microsoft
+  region: global
+  source_hints:
+  - metacubex
+  - v2fly
+- id: googlecloud
+  provider: google
+  region: global
+  source_hints:
+  - metacubex
+  - v2fly
+- id: firebase
+  provider: google
+  region: global
+  source_hints:
+  - metacubex
+  - v2fly
+- id: bitbucket
+  provider: atlassian
+  region: global
+  source_hints:
+  - v2fly
+  - blackmatrix7
+- id: npm
+  provider: npm
+  region: global
+  source_hints:
+  - candidate_new_source
+- id: pypi
+  provider: pypi
+  region: global
+  source_hints:
+  - candidate_new_source
+- id: netlify
+  provider: netlify
+  region: global
+  source_hints:
+  - metacubex
+  - v2fly
+- id: canva
+  provider: canva
+  region: global
+  source_hints:
+  - metacubex
+- id: trello
+  provider: atlassian
+  region: global
+  source_hints:
+  - metacubex
+- id: signal
+  provider: signal
+  region: global
+  source_hints:
+  - metacubex
+  - v2fly
+- id: messenger
+  provider: meta
+  region: global
+  source_hints:
+  - metacubex
+- id: snapchat
+  provider: snap
+  region: global
+  source_hints:
+  - metacubex
+- id: bluesky
+  provider: bluesky
+  region: global
+  source_hints:
+  - metacubex
+- id: youtubemusic
+  provider: google
+  region: global
+  source_hints:
+  - dler
+- id: tidal
+  provider: tidal
+  region: global
+  source_hints:
+  - metacubex
+- id: walmart
+  provider: walmart
+  region: global
+  source_hints:
+  - metacubex
+- id: uber
+  provider: uber
+  region: global
+  source_hints:
+  - metacubex
+  - v2fly
+- id: airbnb
+  provider: airbnb
+  region: global
+  source_hints:
+  - metacubex
+  - v2fly
+- id: booking
+  provider: booking
+  region: global
+  source_hints:
+  - metacubex
+  - v2fly
+- id: wise
+  provider: wise
+  region: global
+  source_hints:
+  - metacubex
+- id: roblox
+  provider: roblox
+  region: global
+  source_hints:
+  - metacubex
+  - v2fly
