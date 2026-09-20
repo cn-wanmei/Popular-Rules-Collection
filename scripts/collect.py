@@ -43,6 +43,19 @@ def load_registry() -> dict[str, Any]:
     return data
 
 
+def source_runtime_enabled(source: dict[str, Any]) -> bool:
+    if source.get("enabled") is True:
+        return True
+    # Phase 2 permits single-service production activation while the PRS
+    # source itself remains globally disabled.
+    if source.get("id") == "popular-rules-source":
+        return any(
+            isinstance(entry, dict) and entry.get("enabled") is True
+            for entry in (source.get("rules") or source.get("files") or [])
+        )
+    return False
+
+
 def load_health() -> dict[str, Any]:
     if not HEALTH_PATH.exists():
         return {"sources": {}}
@@ -244,10 +257,11 @@ def main() -> int:
     if args.workers < 1 or args.workers > 64:
         raise SystemExit("[collect] --workers must be between 1 and 64")
     registry = load_registry()
-    sources = [s for s in registry.get("sources", []) if s.get("enabled")]
+    sources = [s for s in registry.get("sources", []) if source_runtime_enabled(s)]
     if args.list:
         for source in registry.get("sources", []):
-            print(f"  [{'on ' if source.get('enabled') else 'off'}] {source['id']:16} rules={len(source.get('rules') or source.get('files') or []):3} priority={source.get('priority')} fetch={(source.get('fetch') or {}).get('type')}")
+            enabled = source_runtime_enabled(source)
+            print(f"  [{'on ' if enabled else 'off'}] {source['id']:16} rules={len(source.get('rules') or source.get('files') or []):3} priority={source.get('priority')} fetch={(source.get('fetch') or {}).get('type')}")
         return 0
     if args.source:
         sources = [s for s in sources if s["id"] in args.source]
