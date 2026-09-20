@@ -17,6 +17,7 @@ concurrency:
 
 jobs:
   retention:
+    if: ${{ false }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
