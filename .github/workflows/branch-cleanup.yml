@@ -26,6 +26,7 @@ jobs:
               return;
             }
             const branches = [
+              'phase/j-p0-batches-02-05',
               'engine/p0-p1-cutover','engine/p0-p1-cutover-final','engine/p0-p1-cutover-release','engine/p0-p1-cutover-verified',
               'feat/collector-core-stabilization','fix/collector-git-publish','fix/collector-git-publish-dirty-tree',
               'fix/collector-quality-source-error-semantics','fix/production-collection-engine-path','fix/publisher-concurrency-20260902',
