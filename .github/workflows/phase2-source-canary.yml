@@ -15,6 +15,7 @@ on:
       - "scripts/canary_attestation.py"
       - "scripts/phase2_collection_reconciliation.py"
       - "scripts/phase2_observation.py"
+      - "scripts/phase2_production_unlock_gate.py"
       - "src/engine/**"
       - "scripts/source_production_gate.py"
       - "scripts/source_canary_gate.py"
