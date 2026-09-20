@@ -1,51 +1,109 @@
-# Architecture (1.1)
+# Architecture
 
-- **Product version:** 1.0.x (`VERSION`)
-- **Engine:** `src/engine/` is the sole service-rule build/runtime path.
-- **Input boundary:** upstream collection lands in `backup/<date>/` and is frozen into an immutable Snapshot.
-- **Workspace:** `data/runs/<run_id>/` contains immutable build outputs and release evidence.
-- **Public tree:** `generated/` is the published projection only; it is never an input SSOT.
-- **Legacy:** `scripts/normalize.py`, `scripts/deduplicate.py`, and `scripts/build_*.py` are deprecated and are not production pipeline stages.
+## Production Engine
 
-```text
-sources / upstream collection
-          ↓
-     immutable snapshot
-          ↓
-        ingest
-          ↓
-      quarantine
-          ↓
-       canonical
-          ↓
-   hierarchy + decision
-          ↓
-           IR
-          ↓
-    7 client adapters
-          ↓
-        diff
-          ↓
-       golden
-          ↓
-     release gate
-          ↓
-   atomic promotion
-          ↓
-      generated/
-```
+src/engine/ 是 Service Rule 的唯一生产构建与运行路径。
 
-## Production boundary
+~~~text
+Source Registry
+      ↓
+Collection / Fetch
+      ↓
+Immutable Snapshot
+      ↓
+Ingest
+      ↓
+Quarantine
+      ↓
+Canonical
+      ↓
+Hierarchy + Decision
+      ↓
+Universal IR
+      ↓
+7 Client Adapters
+      ↓
+Diff + Golden
+      ↓
+Release Gate
+      ↓
+Atomic Promotion
+      ↓
+generated/
+~~~
 
-`collect.py` and the dataset collectors are transport/fetch steps only. Service-rule normalization and multi-client build happen inside `src/engine/`.
+## Source Registry
 
-`database/services` is not a V3 runtime input. Legacy data can only enter through `src/engine/ingest/migrate_legacy.py` as a one-time migration bridge.
+Source Registry 是上游 Source 入口，不是 Canonical。
 
-## V1 / Legacy migration boundary
+当前已登记 Supplemental Source：popular-rules-source。
 
-- `database/services/` is the explicit Legacy Source for the Phase 8 migration and is not a V3 runtime input.
-- `rule/` is the V1 Canonical Service Model contract after cutover.
-- `generated/` is distribution output only and is never a Source of Truth.
-- Legacy evidence workflows are manual-only migration tools.
-- The final migration gate is asset-level and bound to the current commit and RC_READY V3 run.
-- The gate never deletes Legacy automatically; deletion requires a separate explicit operator action.
+入口状态：
+
+~~~text
+enabled = false
+~~~
+
+重新启用前必须证明 PRS official-evidence-only Release 已通过：
+
+- Schema
+- Evidence
+- Ownership
+- Boundary
+- Exclusion
+- Conflict
+- Determinism
+- Reconciliation
+
+## Current Production State
+
+当前 Service Production 仍为 partial。
+
+P0 目标尚未达到 50/50；Phase O 的完整 cutover / observation 尚未执行。
+
+因此：
+
+- database/services/ 继续作为受控 Legacy 保留。
+- rule/ 继续作为当前 V1 Canonical。
+- generated/ 继续作为发布投影。
+- data/runs/ 继续作为 immutable V3 evidence。
+
+## Popular-Rules-Source Integration
+
+启用后：
+
+~~~text
+Popular-Rules-Source
+        ↓
+Source Registry
+        ↓
+Collect
+        ↓
+V3 Engine
+        ↓
+7 Clients
+~~~
+
+PRS 不直接写 Collection Canonical、IR 或 generated client tree。
+
+## Network Dataset
+
+Network Dataset 与 Service Rule Runtime 分离：
+
+~~~text
+GeoIP / GeoSite / ASN / Provider / LAN
+        ↓
+Dataset Collectors
+        ↓
+database/*
+        ↓
+Dataset Validation
+        ↓
+Published Network Projections
+~~~
+
+## Architectural Invariant
+
+~~~text
+Source ≠ Canonical ≠ Runtime ≠ Generated
+~~~

@@ -1,6 +1,7 @@
-domain_suffix_set:
+domain_set:
   - "azure.microsoft.com"
   - "azuremarketplace.microsoft.com"
+  - "azure"
   - "aadrm.com"
   - "azure-api.net"
   - "azure-devices-int.net"
@@ -149,5 +150,3 @@ domain_suffix_set:
   - "azure-dns-8.cn"
   - "azure-dns-9.cn"
   - "azure-dns-10.cn"
-domain_keyword_set:
-  - "azure"

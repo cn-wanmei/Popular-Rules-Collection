@@ -102,15 +102,3 @@ ip-cidr, 81.68.0.0/14, proxy
 ip-cidr, 94.191.0.0/17, proxy
 ip6-cidr, 2001:df6:f400::/48, proxy
 ip6-cidr, 2402:4e00::/32, proxy
-host-suffix, bill.cloud.tencent.com, proxy
-host-suffix, buy.cloud.tencent.com, proxy
-host-suffix, capi.cloud.tencent.com, proxy
-host-suffix, cloud.tencent.com, proxy
-host-suffix, console.cloud.tencent.com, proxy
-host-suffix, dnspod.cloud.tencent.com, proxy
-host-suffix, iaas.cloud.tencent.com, proxy
-host-suffix, ide.cloud.tencent.com, proxy
-host-suffix, market.cloud.tencent.com, proxy
-host-suffix, mps.cloud.tencent.com, proxy
-host-suffix, tcb.cloud.tencent.com, proxy
-host-suffix, tencentcloudapi.com, proxy

@@ -5,12 +5,12 @@ sources:
 - id: popular-rules-source
   name: Popular-Rules-Source (official domain generation)
   url: https://github.com/cn-wanmei/Popular-Rules-Source
-  enabled: true
+  enabled: false
   priority: 98
-  trust: high
-  score_hint: 96
+  trust: low
+  score_hint: 0
   formats: [list, txt]
-  notes: Official-source-driven domain generation for missing/partial P0 services. Promotion bridge input only.
+  notes: Supplemental candidate source. Disabled until official-evidence-only Source Release passes schema/evidence/boundary/reconciliation gates. Authoring seeds and test fixtures are not production evidence.
   fetch: {type: github_raw, owner: cn-wanmei, repo: Popular-Rules-Source, branch: main}
   rules:
   - {path: generated/source/1688/domains.txt, name: 1688, service: 1688, local: PRS_1688.domains.txt}

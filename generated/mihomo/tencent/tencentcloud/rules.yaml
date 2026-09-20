@@ -101,17 +101,5 @@ payload:
   - IP-CIDR,62.234.0.0/16
   - IP-CIDR,81.68.0.0/14
   - IP-CIDR,94.191.0.0/17
-  - IP-CIDR6,2001:df6:f400::/48
-  - IP-CIDR6,2402:4e00::/32
-  - DOMAIN-SUFFIX,bill.cloud.tencent.com
-  - DOMAIN-SUFFIX,buy.cloud.tencent.com
-  - DOMAIN-SUFFIX,capi.cloud.tencent.com
-  - DOMAIN-SUFFIX,cloud.tencent.com
-  - DOMAIN-SUFFIX,console.cloud.tencent.com
-  - DOMAIN-SUFFIX,dnspod.cloud.tencent.com
-  - DOMAIN-SUFFIX,iaas.cloud.tencent.com
-  - DOMAIN-SUFFIX,ide.cloud.tencent.com
-  - DOMAIN-SUFFIX,market.cloud.tencent.com
-  - DOMAIN-SUFFIX,mps.cloud.tencent.com
-  - DOMAIN-SUFFIX,tcb.cloud.tencent.com
-  - DOMAIN-SUFFIX,tencentcloudapi.com
+  - IP6-CIDR,2001:df6:f400::/48
+  - IP6-CIDR,2402:4e00::/32

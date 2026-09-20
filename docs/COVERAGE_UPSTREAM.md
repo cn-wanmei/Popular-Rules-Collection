@@ -1,53 +1,51 @@
 # 上游覆盖与日常使用标准
 
-## 原则
+## 核心原则
 
-1. **只物化有可信上游的服务**（BM7 / MetaCubeX / v2fly / Dler / 官方 IP 列表）。
-2. **不猜测域名**；无上游写入 `config/intentional_unmaterialized.yaml`。
-3. **生态聚合**：如 Apple = App Store + Music + ID + Maps + Find My + iCloud + Dev + Media… 多源合并到同一 service 或 Primary 子服务。
+1. 只物化有可信上游和证据的服务。
+2. 不猜测域名。
+3. Source Health 与 Service Coverage 分开判断。
+4. Aggregate Coverage 不等于 Dedicated Service Source。
+5. IP / Provider / CDN 与 Service Domain 分轨。
 
-## 第一层：国内直连基础
+## Popular-Rules-Source
 
-| 能力 | 状态 | 路径 |
-|------|------|------|
-| China Domain | ✓ ChinaMax 级 | `china` / `database/domains/china.txt` |
-| China CIDR | ✓ | `database/ips/china.txt` + `geoip/cn` |
-| LAN | ✓ | `database/network/lan.txt` |
-| Private | ✓ | service `private` |
-| Carrier | ✓ | chinamobile / chinaunicom / chinatelecom |
+PRS 是 Supplemental Source Layer，目标是从服务官方来源自动生成可审计 Domain Source。
 
-## 第二层：海外核心（多源加强后）
+当前状态：
 
-| 生态 | 主要 ID | 上游 |
-|------|---------|------|
-| Apple 全系 | `apple` (+ `icloud`/`applemusic`/`appletv`) | BM7 子规则全量 + MetaCubeX apple* + v2fly |
-| Google | `google` `youtube` `googlefcm` | BM7 + MetaCubeX + v2fly |
-| Microsoft | `microsoft` `onedrive` `teams` `xbox` `azure` | BM7 + MetaCubeX + v2fly |
-| Meta | `facebook` `instagram` `whatsapp` `messenger` `threads` | BM7 + MetaCubeX + v2fly |
-| Amazon | `amazon` `aws` `primevideo` | 域名与 IP/Provider 分轨 |
-| Cloudflare | `cloudflare` 域名 + `provider/cloudflare` IP | 分轨 |
-| GitHub / AI / Streaming / Gaming / Social | 已 registry 覆盖 | 见 RULE_CATALOG |
+~~~text
+Registry: registered
+Enabled: false
+Production-qualified: no
+~~~
 
-## 第三层：网络基础设施
+在 PRS 完成 official-evidence-only Release 前，不应把其候选数据作为 Production Coverage。
 
-GeoIP / GeoSite / ASN / Provider / LAN / STUN — 见 `docs/NETWORK_DATASETS.md`。
+## Gap 状态
 
-## 明确 NO_UPSTREAM（不猜域名）
+服务状态使用：
 
-| 服务 | 说明 |
-|------|------|
-| npm / PyPI / Maven | 无独立可信规则源；可用 `developer` 聚合部分覆盖 |
-| Mistral / GCP / Supabase | 暂无稳定专用列表 |
-| Discovery+ | 无验证源 |
+COVERED / PARTIAL / MISSING / SOURCE_DRIFT / INTENTIONAL / CONFLICT / REVIEW。
 
-Roblox / Minecraft(Mojang)：v2fly / MetaCubeX 有源，可物化。
+MISSING 必须来自多维审计，而不是单纯的“找不到 URL”。
 
-## 日常使用推荐最小集
+## Intentional
 
-```text
-DIRECT:  china, lan, alipay, wechat, 银行
-PROXY:   google, youtube, openai/ai, telegram, github, netflix
-REJECT:  adblock-light
-GEOIP:   CN → DIRECT
-MATCH:   PROXY
-```
+无稳定独立可信 Source 时，使用 config/intentional_unmaterialized.yaml。
+
+不得为了补 Coverage 猜测域名。
+
+## IP / CDN
+
+Provider、ASN、CDN 不直接映射 Product Service。
+
+详见 docs/IP_ARCHITECTURE.md。
+
+## Current P0 State
+
+当前 P0 Production 仍为 partial。
+
+Phase O 的 cutover / observation 尚未完成。
+
+因此旧 Phase 报告属于审计证据，不等于当前生产 Cutover 已执行。

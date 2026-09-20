@@ -11,8 +11,8 @@ scope:
   - qqmail
   - qqmusic
   comparison_basis: canonical_rule_identity
-status: pass
+status: partial
 semantic_overlap:
-  status: pass
-  runtime_probe_count: 56
+  status: pending_execution
+  runtime_probe_count: 0
   runtime_collisions: []

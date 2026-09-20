@@ -1,0 +1,39 @@
+version: 1
+project: phase2-source-canary
+
+prs:
+  repository: cn-wanmei/Popular-Rules-Source
+  registry_id: popular-rules-source
+  enabled: false
+
+canary:
+  enabled: false
+  services: []
+  require_official_evidence_only: true
+  require_seed_only_zero: true
+  require_conflict_zero: true
+  require_deterministic_snapshot: true
+  require_reconciliation: true
+  require_v3_build: true
+  require_seven_client_semantic_pass: true
+  require_rollback_validation: true
+
+promotion:
+  mode: pull_request
+  direct_main_push: false
+  require_exact_source_release: true
+  require_exact_commit_binding: true
+
+rollback:
+  strategy: disable_service_then_restore_previous_snapshot
+  rewrite_history: false
+  force_main_replacement: false
+
+production_unlock:
+  prerequisites:
+    - source_release_verified
+    - collection_reconciliation_pass
+    - v3_build_pass
+    - seven_client_semantic_pass
+    - rollback_validated
+    - observation_window_started

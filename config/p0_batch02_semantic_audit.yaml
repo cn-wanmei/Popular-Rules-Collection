@@ -1,314 +1,202 @@
 version: 1
 schema: p0_service_semantic_audit_v1
 batch: 2
-execution_status: executed
+execution_status: pending_execution
 services:
   taobao:
     snapshot: config/p0_source_snapshots/2026-09-20/taobao.list
-    status: pass
+    status: pending_execution
     probes:
     - input: x.2.taobao.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.2.taobao.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.bbs.taobao.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.bbs.taobao.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.buy.taobao.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.buy.taobao.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.cart.taobao.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.cart.taobao.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
   tmall:
     snapshot: config/p0_source_snapshots/2026-09-20/tmall.list
-    status: pass
+    status: pending_execution
     probes:
     - input: x.book.tmall.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.book.tmall.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.buy.tmall.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.buy.tmall.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.car.tmall.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.car.tmall.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.cart.tmall.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.cart.tmall.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
   '1688':
     snapshot: config/p0_source_snapshots/2026-09-20/1688.list
-    status: pass
+    status: pending_execution
     probes:
     - input: x.1688.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.1688.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.air.1688.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.air.1688.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.buy.1688.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.buy.1688.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.cart.1688.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.cart.1688.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
   dingding:
     snapshot: config/p0_source_snapshots/2026-09-20/dingding.list
-    status: pass
+    status: pending_execution
     probes:
     - input: x.api.dingtalk.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.api.dingtalk.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.h5.dingtalk.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.h5.dingtalk.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.login.dingtalk.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.login.dingtalk.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.oapi.dingtalk.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.oapi.dingtalk.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
   cainiao:
     snapshot: config/p0_source_snapshots/2026-09-20/cainiao.list
-    status: pass
+    status: pending_execution
     probes:
     - input: x.cainiao.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.cainiao.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.express.cainiao.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.express.cainiao.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.global.cainiao.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.global.cainiao.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.gsls.cainiao.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.gsls.cainiao.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
   qqmail:
     snapshot: config/p0_source_snapshots/2026-09-20/qqmail.list
-    status: pass
+    status: pending_execution
     probes:
     - input: x.imap.qq.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.imap.qq.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.mail.qq.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.mail.qq.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.pop.qq.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.pop.qq.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.smtp.qq.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.smtp.qq.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
   qqmusic:
     snapshot: config/p0_source_snapshots/2026-09-20/qqmusic.list
-    status: pass
+    status: pending_execution
     probes:
     - input: x.ad.y.qq.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.ad.y.qq.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.c.y.qq.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.c.y.qq.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.dl.y.qq.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.dl.y.qq.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.i.y.qq.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.i.y.qq.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
-overall_status: pass
+overall_status: pending

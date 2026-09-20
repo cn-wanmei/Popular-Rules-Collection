@@ -1,272 +1,180 @@
 version: 1
 schema: p0_service_semantic_audit_v1
 batch: 4
-execution_status: executed
+execution_status: pending_execution
 services:
   qq:
     snapshot: config/p0_batch04_snapshots/2026-09-20/qq.list
-    status: pass
+    status: pending_execution
     probes:
     - input: x.qq.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.qq.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.id.qq.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.id.qq.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.qun.qq.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.qun.qq.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.w.qq.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.w.qq.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
   wecom:
     snapshot: config/p0_batch04_snapshots/2026-09-20/wecom.list
-    status: pass
+    status: pending_execution
     probes:
     - input: x.work.weixin.qq.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.work.weixin.qq.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.qyapi.weixin.qq.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.qyapi.weixin.qq.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
   tencentmeeting:
     snapshot: config/p0_batch04_snapshots/2026-09-20/tencentmeeting.list
-    status: pass
+    status: pending_execution
     probes:
     - input: x.meeting.tencent.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.meeting.tencent.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.voovmeeting.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.voovmeeting.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
   baidunetdisk:
     snapshot: config/p0_batch04_snapshots/2026-09-20/baidunetdisk.list
-    status: pass
+    status: pending_execution
     probes:
     - input: x.pan.baidu.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.pan.baidu.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.yun.baidu.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.yun.baidu.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
   youdao:
     snapshot: config/p0_batch04_snapshots/2026-09-20/youdao.list
-    status: pass
+    status: pending_execution
     probes:
     - input: x.youdao.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.youdao.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.dict.youdao.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.dict.youdao.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.shared.youdao.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.shared.youdao.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
   googlecloud:
     snapshot: config/p0_batch04_snapshots/2026-09-20/googlecloud.list
-    status: pass
+    status: pending_execution
     probes:
     - input: x.cloud.google.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.cloud.google.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.googleapis.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.googleapis.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.gcp.cloud
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.gcp.cloud.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
   bitbucket:
     snapshot: config/p0_batch04_snapshots/2026-09-20/bitbucket.list
-    status: pass
+    status: pending_execution
     probes:
     - input: x.bitbucket.org
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.bitbucket.org.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.bitbucket.io
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.bitbucket.io.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
   pypi:
     snapshot: config/p0_batch04_snapshots/2026-09-20/pypi.list
-    status: pass
+    status: pending_execution
     probes:
     - input: x.pypi.org
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.pypi.org.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.pythonhosted.org
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.pythonhosted.org.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.files.pythonhosted.org
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.files.pythonhosted.org.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
   youtubemusic:
     snapshot: config/p0_batch04_snapshots/2026-09-20/youtubemusic.list
-    status: pass
+    status: pending_execution
     probes:
     - input: x.music.youtube.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.music.youtube.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
     - input: x.youtubemusic.googleapis.com
       expected: match
       type: DOMAIN-SUFFIX
-      actual: match
-      result: pass
     - input: x.youtubemusic.googleapis.com.evil.example
       expected: no_match
       type: DOMAIN-SUFFIX
-      actual: no_match
-      result: pass
-overall_status: pass
+overall_status: pending

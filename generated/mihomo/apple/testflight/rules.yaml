@@ -1,4 +1,4 @@
 payload:
-  - DOMAIN,beta.apple.com
-  - DOMAIN,testflight.apple.com
+  - DOMAIN-SUFFIX,beta.apple.com
+  - DOMAIN-SUFFIX,testflight.apple.com
   - DOMAIN-KEYWORD,testflight

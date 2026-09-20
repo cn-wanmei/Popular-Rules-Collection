@@ -10,10 +10,7 @@ ip-cidr, 203.205.224.0/24, proxy
 host-suffix, tlivesource.com, proxy
 host-suffix, oracle-tencent.net, proxy
 host, btrace.qq.com, proxy
-host-suffix, ide.cloud.tencent.com, proxy
 host-suffix, fymallqa0.com, proxy
-host-suffix, console.cloud.tencent.com, proxy
-host-suffix, iaas.cloud.tencent.com, proxy
 host-suffix, wechatpay.cn, proxy
 host-suffix, qcloudcos.com, proxy
 host-suffix, coding.net, proxy
@@ -132,11 +129,9 @@ ip6-cidr, ::ffff:175.6.84.30/128, proxy
 ip-cidr, 211.152.156.0/24, proxy
 host-suffix, adstats.tencentmusic.com, proxy
 host-suffix, mszdld.net, proxy
-host-suffix, kg.y.qq.com, proxy
 host-suffix, tlivepush.com, proxy
 host-suffix, sogoucdndl.com, proxy
 host-suffix, tourismuser.cn, proxy
-host-suffix, buy.cloud.tencent.com, proxy
 host-suffix, zhuoyuegame.com, proxy
 ip-cidr, 49.51.62.0/23, proxy
 host-suffix, tcdnos.net, proxy
@@ -164,7 +159,6 @@ host-suffix, tcdnvodbak.com, proxy
 host-suffix, tapd.cn, proxy
 host-suffix, ludoworld.net, proxy
 host-suffix, imweb.io, proxy
-host-suffix, res.y.qq.com, proxy
 host-suffix, wegameplus.com, proxy
 host-suffix, adslvfile.qq.com, proxy
 host-suffix, na-siliconvalley.myqcloud.com, proxy
@@ -341,14 +335,12 @@ host-suffix, tdnsdl3.com.cn, proxy
 host-suffix, ad.weixin.qq.com, proxy
 host-suffix, dnsv1.com.cn, proxy
 host-suffix, tdnsv10.com, proxy
-host-suffix, ad.y.qq.com, proxy
 host-suffix, tencentcdb.com, proxy
 host-suffix, tencentcloudmarket.com, proxy
 host-suffix, coolsite.vip, proxy
 host-suffix, vodtcbk.com, proxy
 host-suffix, iot-tencent.com, proxy
 host-suffix, gclouddolphin.com, proxy
-host-suffix, i.y.qq.com, proxy
 ip-cidr, 1.116.116.0/22, proxy
 ip-cidr, 106.52.0.0/14, proxy
 host-suffix, ap-bangkok.myqcloud.com, proxy
@@ -357,7 +349,6 @@ host-suffix, dnse3.cn, proxy
 host-suffix, na-toronto.tencentcos.com.cn, proxy
 host-suffix, hkgcloudcs.com, proxy
 host-suffix, adfilter.imtt.qq.com, proxy
-host-suffix, c.y.qq.com, proxy
 host-suffix, gdtimg.com, proxy
 ip-cidr, 121.51.0.0/16, proxy
 host-suffix, yidianliulan.com, proxy
@@ -381,10 +372,8 @@ host-suffix, ap-hongkong.myqcloud.com, proxy
 host-suffix, pgdt.gtimg.cn, proxy
 ip-cidr, 175.24.0.0/16, proxy
 host-suffix, qcloudns.com, proxy
-host-suffix, bill.cloud.tencent.com, proxy
 host-suffix, ap-jakarta.tencentcos.cn, proxy
 host-suffix, qq.cn.com, proxy
-host-suffix, pop.qq.com, proxy
 host-suffix, tencentcos.cn, proxy
 ip-cidr, 101.32.118.25/32, proxy
 ip-cidr, 1.12.116.0/22, proxy
@@ -406,7 +395,6 @@ ip-cidr, 203.205.220.0/22, proxy
 ip-cidr, 150.158.0.0/16, proxy
 host-suffix, starlakelab.com, proxy
 ip-cidr, 42.187.128.0/17, proxy
-host-suffix, imap.qq.com, proxy
 host-suffix, ivweb.io, proxy
 host-suffix, cdnv2.cn, proxy
 host-suffix, serverlesscloud.cn, proxy
@@ -435,7 +423,6 @@ host-suffix, webnovel.com, proxy
 ip6-cidr, 2001:df6:f400::/48, proxy
 host-suffix, tdnsv13.com, proxy
 host-suffix, fymall0.com, proxy
-host-suffix, cloud.tencent.com, proxy
 host-suffix, gtgres.com, proxy
 host-suffix, sa-saopaulo.myqcloud.com, proxy
 host-suffix, ads.service.kugou.com, proxy
@@ -522,9 +509,7 @@ host-suffix, xqymuy.com, proxy
 ip-cidr, 152.136.0.0/16, proxy
 host-suffix, fymall4.com, proxy
 host-suffix, adsmind.apdcdn.tc.qq.com, proxy
-host-suffix, tcb.cloud.tencent.com, proxy
 host-suffix, tencentwepark.com, proxy
-host-suffix, capi.cloud.tencent.com, proxy
 host-suffix, tencentcs.com, proxy
 host-suffix, tcloudedu.com, proxy
 ip6-cidr, ::ffff:58.58.0.90/128, proxy
@@ -562,7 +547,6 @@ ip6-cidr, ::ffff:124.73.200.142/128, proxy
 host-suffix, tdnsv5.com, proxy
 host-suffix, eu-frankfurt.tencentcos.com.cn, proxy
 host, soup.v.qq.com, proxy
-host-suffix, dl.y.qq.com, proxy
 host-suffix, zcjbgame.com, proxy
 host-suffix, ap-seoul.tencentcos.cn, proxy
 host-suffix, gtm.pub, proxy
@@ -599,7 +583,6 @@ host-suffix, beacon.cdn.qq.com, proxy
 ip-cidr, 122.152.192.0/18, proxy
 host-suffix, adpm.app.qq.com, proxy
 host-suffix, adnet.qq.com, proxy
-host-suffix, market.cloud.tencent.com, proxy
 ip-cidr, 49.51.108.0/23, proxy
 host-suffix, trace.qq.com, proxy
 host, apd-pcdnvodstat.teg.tencent-cloud.net, proxy
@@ -644,7 +627,6 @@ host-suffix, wit.qq.com, proxy
 host-suffix, dnse0.com, proxy
 host-suffix, rumt-us.com, proxy
 host-suffix, chatdrama.cn, proxy
-host-suffix, y.qq.com, proxy
 host-suffix, robloxdev.cn, proxy
 host-suffix, fsphere.cn, proxy
 host-suffix, fyeds9.com, proxy
@@ -660,7 +642,6 @@ host-suffix, yzyxgame.com, proxy
 host-suffix, pubgtool.com, proxy
 host-suffix, wannianqingjianzhan.com, proxy
 ip-cidr, 1.12.212.0/23, proxy
-host-suffix, u.y.qq.com, proxy
 host-suffix, doh.pub, proxy
 host-suffix, sa-saopaulo.tencentcos.com, proxy
 host-suffix, tdnsv3.com, proxy
@@ -681,7 +662,6 @@ host-suffix, url.cn, proxy
 ip-cidr, 58.49.111.79/32, proxy
 host-suffix, qqmusic.com, proxy
 host-suffix, alloyteam.com, proxy
-host-suffix, dnspod.cloud.tencent.com, proxy
 ip-cidr, 193.112.0.0/16, proxy
 host-suffix, qcloudcdn.com, proxy
 host-suffix, tlivemcdn.com, proxy
@@ -781,7 +761,6 @@ host-suffix, ap-hongkong.tencentcos.com, proxy
 ip-cidr, 1.15.102.0/23, proxy
 host-suffix, timmerse.com, proxy
 host-suffix, scescdn.cn, proxy
-host-suffix, mps.cloud.tencent.com, proxy
 host-suffix, wetv.vip, proxy
 host-suffix, yeyousg.com, proxy
 host-suffix, adserviceretry.kugou.com, proxy
@@ -851,7 +830,6 @@ host-suffix, ad.qun.qq.com, proxy
 host-suffix, sogou.cn, proxy
 host-suffix, sg.cn, proxy
 host-suffix, bkapps.com, proxy
-host-suffix, mail.qq.com, proxy
 host, wup.imtt.qq.com, proxy
 host-suffix, gcloudsvcs.com, proxy
 host-suffix, ger.file.myqcloud.com, proxy
@@ -865,7 +843,6 @@ host-suffix, chatdrama.net, proxy
 host-suffix, bugly.qq.com, proxy
 host, video-public-1258344701.shiply-cdn.qq.com, proxy
 ip-cidr, 212.64.0.0/17, proxy
-host-suffix, smtp.qq.com, proxy
 host-suffix, eu-moscow.myqcloud.com, proxy
 host-suffix, dnspod.cn, proxy
 host-suffix, oracle-tencent.com.cn, proxy

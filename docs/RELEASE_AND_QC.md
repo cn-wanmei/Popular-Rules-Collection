@@ -1,103 +1,68 @@
 # Release & QC — Popular Rules Collection
 
-## Release Candidate standard
+## Release Candidate Hard Bar
 
-```text
-Service Coverage (Daily) ≥ 90% of target daily services
-Source Health (enabled)  ≥ 95% when upstream reachable
-Builder Coverage         100% (×7 clients)
-Validation Errors        0
-Schema Errors            0
-Generated Empty          0
-Stale Files              0
-Broken Links             0
-```
+~~~text
+Validation Errors = 0
+Schema Errors = 0
+Generated Empty = 0
+Stale Files = 0
+Broken Links = 0
+Builder Coverage = 100% × 7 clients
+~~~
 
-Source health distinguishes `healthy` / `degraded` / `blocked`. Occasional upstream 404 is **not** project failure.
+## Current Clients
 
-## Daily Coverage (user-facing)
+mihomo / singbox / surge / shadowrocket / quantumultx / egern / loon。
 
-Do **not** report raw `materialized/registered` as “missing coverage”.
+## Popular-Rules-Source
 
-```text
-Daily Coverage =
-  (materialized + intentional_unmaterialized) / registered
-```
+PRS 已注册但当前 disabled。
 
-Intentional codes (SSOT: `config/intentional_unmaterialized.yaml`):
+重新启用必须同时满足：
 
-| Code | Meaning |
-|------|---------|
-| `NO_UPSTREAM` | no verified dedicated ruleset |
-| `COVERED_BY_AGGREGATE` | covered by parent ecosystem rules |
-| `MAPS_TO` | alias of another service id |
-| `DEFERRED_PROFILE` | profile intentionally postponed |
-| `KEYWORD_ONLY` | keyword-only / empty domain set by design |
-| `SOURCE_DRIFT` | upstream path moved; pending re-bind |
+~~~text
+official evidence only
++
+service boundary
++
+exclusion
++
+conflict = 0
++
+deterministic snapshot
++
+collection reconciliation
+~~~
 
-**No fake domains** for intentional entries.
+Authoring seed、test fixture、未经验证第三方规则不能直接进入 Production。
 
-## Expansion criteria
+## Daily Coverage
 
-Only materialize when:
+Daily Coverage 不能把 raw materialized / registered 直接解释为 Missing。
 
-1. Verified upstream HTTP 200 with non-empty rules
-2. Primary mapping exists **before** registry append
-3. Not better expressed as aggregate coverage
+Intentional SSOT：
 
-## Release commit semantics
+config/intentional_unmaterialized.yaml
 
-`reports/latest_release.json` `commit` is **pipeline_input** SHA (snapshot before collect commit). HEAD after push contains the snapshot and may differ by one commit — by design.
+## Phase 8
 
-## Soft QC (P1)
+Catalogue Coverage 100% 不足以授权 Legacy 删除。
 
-| Gate | Script |
-|------|--------|
-| P1-1 | `identity_validate.py` |
-| P1-2 | `rule_count_drift.py` |
-| P1-3 | `quality_validate.py` |
+Deletion-ready 仍要求：
 
-## Engineering changelog (P0–P2, 2026-08-27)
+- Legacy Asset Equivalence = 100%
+- zero missing Legacy AssetKeys
+- Golden 完整
+- 7-client artifacts 完整
+- 同一 immutable Snapshot 的三次确定性构建
+- zero unexplained removed assets
+- v2_runtime_dependency = 0
+- evidence 绑定当前 commit
+- explicit operator action
 
-| ID | Change |
-|----|--------|
-| P0-1 | `build.yml`: add `build_loon.py` |
-| P0-2 | `release_snapshot` + gate JSON artifacts; commit semantics documented |
-| P0-3 | Daily Coverage definition locked in this doc |
-| P1-1 | `build.yml`: validate before commit |
-| P1-2 | `validate.yml`: also on Collect Upstream |
-| P1-4 | quality: empty generated + large-set hints |
-| P2-1 | statistics: configured / enabled / collected / historical |
-| P2-2 | intentional `code` enum |
-| P2-3 | unexpected_missing → intentional entries |
-| P2-4 | expansion gate above |
+## Current
 
----
+Phase O 尚未执行完成，Legacy 继续受控保留。
 
-## Long-running production-grade bar
-
-After identity + drift signals have been observed across ≥2 weeks of upstream noise, with BM-class drift still fixed via explicit registry edits only.
-
-## Phase 2B-IP (2026-08-28)
-
-Domain and IP tracks are **separate**:
-
-- Domain: whitelist materialization only with verified upstream.
-- IP: `sources/ip_registry.yaml` + `scripts/collect_ip.py` + `scripts/ip_cidr.py`.
-- Hard rule: provider/CDN ranges must not be attributed to product services.
-- See `docs/IP_ARCHITECTURE.md`.
-
-## Phase 8 Final Migration Gate (hard)
-
-Catalogue Coverage 100% is no longer sufficient to authorize Legacy deletion.
-
-The deletion-ready metric is:
-
-```text
-Legacy Asset Equivalence Coverage =
-    legacy asset keys preserved in V1 / legacy asset keys
-```
-
-A final PASS requires: Catalogue Coverage 100%; Legacy Asset Equivalence Coverage 100% with zero missing Legacy AssetKeys; Phase 4 Golden all required dimensions; Phase 5 all seven client artifacts and required rule kinds on the actual V3 run; Phase 6 three complete V3 builds over the same immutable Snapshot; Phase 7 zero unexplained removed assets; the same V3 run RC_READY with v2_runtime_dependency=0; and evidence bound to the current commit.
-
-Legacy Source is `database/services/`. V1 Canonical is `rule/`. The final gate never deletes Legacy automatically.
+历史工作流与报告只作为审计证据，不能改变当前 Production State。

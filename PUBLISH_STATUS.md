@@ -1,44 +1,42 @@
 # Publish & CI status
 
-Repository: https://github.com/cn-wanmei/Popular-Rules-Collection
+Repository: cn-wanmei/Popular-Rules-Collection
 
-**Release lock:** [`docs/RELEASE_AND_QC.md`](docs/RELEASE_AND_QC.md)  
-**Status:** 当前发布链路按 V3 Engine 运行；Collection、Build、Publish 均受 CI Gate 控制。机器生成区由 CI 自动刷新，人工备注仅保留于文末。
+**Production path:** V3 Engine → immutable run → 7 clients → release gate → atomic promotion.
+
 <!-- AUTO-GENERATED:BEGIN -->
 ## Automated status
 
-Generated at: `2026-09-20T13:48:01.594739Z`
+This section is maintained by CI.
 
-### Collection
-- Latest snapshot date: `2026-09-20`
-- Collection ID: `2026-09-20-520cd9d65454d488a385`
-- Status: `ok`
-- Root: `backup/2026-09-20`
+### Production clients
 
-### Source health
-- `healthy`: 6
-- `stale`: 4
+- egern
+- loon
+- mihomo
+- quantumultx
+- shadowrocket
+- singbox
+- surge
 
-### Generated clients
-- egern: `generated/egern`
-- loon: `generated/loon`
-- mihomo: `generated/mihomo`
-- quantumultx: `generated/quantumultx`
-- shadowrocket: `generated/shadowrocket`
-- singbox: `generated/singbox`
-- surge: `generated/surge`
+### Release model
 
+generated/ is the V3 publication projection.
 
-### Retention
-- Policy: `config/retention.yaml`
-- Backup keep_days: `30`
-- Release evidence keep_days: `180`
+### Legacy boundary
+
+database/services/ remains retained until the explicit Phase 8 deletion gate becomes valid.
 
 <!-- AUTO-GENERATED:END -->
+
 ## Human Notes
 
-仅记录需要人工说明、但不应与机器状态混淆的例外事项。稳定运行状态、最近 Collection/Build/Publish、Source Health、客户端输出与 Retention 统计均由 CI 自动生成。
+### Popular-Rules-Source
 
-### Operational note
+PRS is registered in the Collection Source Registry but is currently disabled.
 
-不要以单次 CI 失败直接判断已发布规则失效。当前生产状态应以 GitHub Actions、最近成功的 Collection/Build/Publish 及其 immutable evidence 为准。
+Do not treat PRS candidate Source outputs as Production Coverage until its official-evidence-only Release and Collection Reconciliation both pass.
+
+### Operational interpretation
+
+Production status must be judged from the immutable run, release evidence, current commit and corresponding Gate. A single upstream or CI failure is not sufficient to invalidate the last successful release.
