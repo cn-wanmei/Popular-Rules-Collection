@@ -183,7 +183,7 @@ jobs:
           cp -a release-candidate/data/baseline/canonical.json data/baseline/
           mkdir -p reports/v1
           cp -a release-candidate/reports/v1/*.json reports/v1/
-          python scripts/derive_service_production_evidence.py --run-id "${RUN_ID}"
+          PYTHONPATH=. python scripts/derive_service_production_evidence.py --run-id "${RUN_ID}"
           python scripts/refresh_latest_release_from_promotion.py --run-id "${RUN_ID}"
           python scripts/status_consistency_gate.py
           python scripts/evidence_consistency_gate.py --run-id "${RUN_ID}" || true
@@ -217,7 +217,7 @@ jobs:
             cp -a release-candidate/data/baseline/canonical.json data/baseline/
             mkdir -p reports/v1
             cp -a release-candidate/reports/v1/*.json reports/v1/
-            python scripts/derive_service_production_evidence.py --run-id "${RUN_ID}"
+            PYTHONPATH=. python scripts/derive_service_production_evidence.py --run-id "${RUN_ID}"
             python scripts/refresh_latest_release_from_promotion.py --run-id "${RUN_ID}"
             python scripts/status_consistency_gate.py || true
             python scripts/evidence_consistency_gate.py --run-id "${RUN_ID}" || true
