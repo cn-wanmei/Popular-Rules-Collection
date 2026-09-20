@@ -40,7 +40,7 @@ jobs:
                 await github.rest.git.deleteRef({ owner: context.repo.owner, repo: context.repo.repo, ref: `heads/${branch}` });
                 core.info(`Deleted: ${branch}`);
               } catch (error) {
-                if (error.status === 404) core.info(`Already absent: ${branch}`);
+                if (error.status === 404 || error.status === 422) core.info(`Already absent: ${branch}`);
                 else throw error;
               }
             }
