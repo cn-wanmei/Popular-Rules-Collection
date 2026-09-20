@@ -10,7 +10,8 @@ on:
       - "config/ruleset_hierarchy.yaml"
       - "config/client_capability_matrix.yaml"
       - "scripts/phase2_source_canary.py"
-      - "src/engine/**"      - "scripts/source_production_gate.py"
+      - "src/engine/**"
+      - "scripts/source_production_gate.py"
       - "scripts/source_canary_gate.py"
       - "config/source_canary_state.yaml"
 
@@ -97,7 +98,7 @@ jobs:
               )
 
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
-              out.write(f"sha={sha}\n")
+              out.write(f"sha={sha}\\n")
           PY
       - name: Checkout exact Source commit
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
@@ -136,8 +137,8 @@ jobs:
               )
           print("selected:", selected)
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
-              out.write("services=" + " ".join(selected) + "\n")
-              out.write("count=" + str(len(selected)) + "\n")
+              out.write("services=" + " ".join(selected) + "\\n")
+              out.write("count=" + str(len(selected)) + "\\n")
           PY
         env:
           REQUESTED_SERVICE: ${{ inputs.service }}
@@ -145,17 +146,17 @@ jobs:
       - name: Run selected Source → V3 canary and rollback rehearsal
         if: steps.services.outputs.count != '0'
         run: |
-          PYTHONPATH=. python scripts/phase2_source_canary.py \
-            --source-root .phase2/source \
-            --source-commit "${{ steps.source.outputs.sha }}" \
-            --services ${{ steps.services.outputs.services }} \
+          PYTHONPATH=. python scripts/phase2_source_canary.py \\
+            --source-root .phase2/source \\
+            --source-commit "${{ steps.source.outputs.sha }}" \\
+            --services ${{ steps.services.outputs.services }} \\
             --output reports/phase2-canary
 
       - name: No active service
         if: steps.services.outputs.count == '0'
         run: |
           mkdir -p reports/phase2-canary
-          printf '%s\n' '{"schema":"phase2_canary_summary_v1","all_pass":true,"verified_count":0,"canary_pass_count":0,"production_ready_count":0,"services":{},"failures":{},"note":"No service is activated for Canary."}' \
+          printf '%s\\n' '{"schema":"phase2_canary_summary_v1","all_pass":true,"verified_count":0,"canary_pass_count":0,"production_ready_count":0,"services":{},"failures":{},"note":"No service is activated for Canary."}' \\
             > reports/phase2-canary/summary.json
 
       - name: Upload canary evidence
