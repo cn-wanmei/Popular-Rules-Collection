@@ -142,7 +142,7 @@ jobs:
 
       - name: Upload Phase 2 Canary evidence
         if: always()
-        uses: actions/upload-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: phase2-canary-${{ github.sha }}
           path: reports/phase2-canary
