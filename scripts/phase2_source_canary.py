@@ -17,6 +17,7 @@ import yaml
 from src.engine.pipeline import STAGES, run_pipeline
 from src.engine.promote.artifact import promote_run, rollback_to_run
 from scripts.phase2_collection_reconciliation import reconcile_service
+from scripts.phase2_observation import start_observation
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -272,6 +273,17 @@ def canary_service(service_id: str, source_root: Path, source_commit: str, base_
     if latest.get("run_id") != run_one:
         raise RuntimeError(f"{service_id}: rollback did not restore first run")
 
+    observation = start_observation(
+        service_id=service_id,
+        source_commit=source_commit,
+        snapshot_id=str(snapshot.get("snapshot_id") or ""),
+        content_digest=str(snapshot.get("content_digest") or ""),
+        v3_run_id=run_two,
+        semantic_run_id=semantic_run_id,
+        reconciliation_run_id=reconciliation["run_id"],
+        rollback_run_id=str(rollback.get("run_id") or ""),
+    )
+
     report = {
         "schema": "phase2_service_canary_v1",
         "service_id": service_id,
@@ -302,6 +314,9 @@ def canary_service(service_id: str, source_root: Path, source_commit: str, base_
             "semantic_run_id": semantic_run_id,
             "reconciliation_run_id": reconciliation["run_id"],
             "reconciliation": reconciliation,
+            "observation_run_id": observation["run_id"],
+            "observation_started_at": observation["started_at"],
+            "observation": observation,
         },
         "rollback": {
             "first_run": run_one,
@@ -316,6 +331,7 @@ def canary_service(service_id: str, source_root: Path, source_commit: str, base_
             semantic_report.get("pass") is True
             and reconciliation.get("status") == "PASS"
             and latest.get("run_id") == run_one
+            and observation.get("status") == "ACTIVE"
         ),
     }
     out = service_dir / "report.json"
