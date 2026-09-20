@@ -403,6 +403,9 @@ def main() -> int:
     target = args.json_out or (run / "reports" / "phase_j_p0_service_evidence.json")
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(out, encoding="utf-8")
+    # Compatibility path consumed by the existing publication/reporting chain.
+    compat = run / "reports" / "service_production_evidence.json"
+    compat.write_text(out, encoding="utf-8")
     return 0 if payload["production_complete"] else 0
 
 
