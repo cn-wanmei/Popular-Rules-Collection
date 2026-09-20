@@ -135,6 +135,9 @@ jobs:
         run: |
           test "$(git -C .phase2/source rev-parse HEAD)" = "${{ steps.source.outputs.sha }}"
 
+      - name: Install Source runtime dependencies
+        run: python -m pip install "jsonschema>=4.21,<5"
+
       - name: Resolve activated service set
         id: services
         shell: bash
