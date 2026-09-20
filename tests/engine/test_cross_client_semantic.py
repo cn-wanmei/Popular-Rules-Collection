@@ -71,12 +71,13 @@ def test_semantic_script_passes_native_artifacts_after_capability_projection(
         "rules": [
             {"id": "d1", "type": "DOMAIN", "value": "example.com"},
             {"id": "s1", "type": "DOMAIN-SUFFIX", "value": "example.org"},
+            {"id": "s2", "type": "DOMAIN-SUFFIX", "value": "amazon"},
             {"id": "k1", "type": "DOMAIN-KEYWORD", "value": "example"},
             {"id": "r1", "type": "DOMAIN-REGEX", "value": r"^api\\.example\\.com$"},
             {"id": "ip4", "type": "IP-CIDR", "value": "192.0.2.0/24"},
             {"id": "ip6", "type": "IP-CIDR6", "value": "2001:db8::/32"},
         ],
-        "memberships": {"demo": ["d1", "s1", "k1", "r1", "ip4", "ip6"]},
+        "memberships": {"demo": ["d1", "s1", "s2", "k1", "r1", "ip4", "ip6"]},
         "entities": {"services": ["demo"]},
     }
     (ir_dir / "ir.json").write_text(json.dumps(ir), encoding="utf-8")

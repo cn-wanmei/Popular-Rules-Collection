@@ -74,6 +74,11 @@ def rules_for(src: dict[str, Any]) -> list[dict[str, str]]:
         for prefix in ("clash_", "surge_"):
             if service.startswith(prefix):
                 service = service[len(prefix):]
+        # Phase 2 supports service-level promotion without changing the
+        # upstream source's global enabled state. Disabled rules remain visible
+        # to registry/orphan validation but are not acquired.
+        if entry.get("enabled") is False:
+            continue
         out.append({"path": str(entry["path"]), "name": local, "service": service})
     return out
 

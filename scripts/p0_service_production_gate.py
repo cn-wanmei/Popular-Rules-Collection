@@ -246,6 +246,11 @@ def main() -> int:
     blocked: list[str] = []
     production_count = 0
 
+    phase_j_complete = bool(
+        isinstance(derived_report, dict)
+        and derived_report.get("production_complete") is True
+    )
+
     for sid in p0_ids:
         row = matrix.get(sid) or {}
         failed = [field for field in HARD_FIELDS if row.get(field) != "pass"]
@@ -265,14 +270,22 @@ def main() -> int:
 
         if row.get("seven_client") == "pass" and len(present) != len(CLIENT_EXT):
             missing = sorted(set(CLIENT_EXT) - set(present))
-            structural_errors.append(
-                f"{sid}: seven_client=pass but artifacts missing for {', '.join(missing)}"
-            )
+            # Before Phase J globally completes, per-service artifact materialization
+            # is a pending activation item rather than a structural queue error.
+            if phase_j_complete:
+                structural_errors.append(
+                    f"{sid}: seven_client=pass but artifacts missing for {', '.join(missing)}"
+                )
         derived_row = (derived_report.get("services") or {}).get(sid) if isinstance(derived_report, dict) else None
         derived_status = derived_row.get("status") if isinstance(derived_row, dict) else None
-        if derived_status == "production":
-            production_count += 1
-        elif row.get("status") == "production" and not failed:
+        ready_now = (
+            phase_j_complete
+            and derived_status == "production"
+            and not failed
+            and not evidence_errors
+            and len(present) == len(CLIENT_EXT)
+        )
+        if ready_now:
             production_count += 1
         else:
             blocked_reasons = failed or ["status!=production"]
@@ -298,6 +311,17 @@ def main() -> int:
             structural_errors.append(
                 f"Phase J derived evidence queue_size={report_count}, expected {len(p0_ids)}"
             )
+
+    # Per-service Phase J observations remain informational while the global
+    # P0 queue is partial. Production activation is fail-closed on the explicit
+    # production_complete flag.
+    if not phase_j_complete:
+        production_count = 0
+        blocked = [
+            f"{sid}: phase_j_production_complete=false"
+            for sid in p0_ids
+        ]
+
     print(f"[p0_service_production_gate] p0={len(p0_ids)} production={production_count} blocked={len(blocked)}")
     for sid in p0_ids:
         print(f"  {sid}: client_artifacts={len(service_client_files.get(sid, []))}/{len(CLIENT_EXT)} view={'yes' if sid in build_views else 'no'}")

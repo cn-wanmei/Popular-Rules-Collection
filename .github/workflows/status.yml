@@ -12,11 +12,11 @@ concurrency:
 
 jobs:
   status:
+    # Phase 2 main freeze: generated status writers must remain disabled.
     if: ${{ false }}
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion != 'cancelled' }}
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
     steps:
       - uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633
         with:
