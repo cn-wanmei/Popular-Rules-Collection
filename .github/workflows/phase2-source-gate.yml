@@ -40,3 +40,4 @@ jobs:
           print('PRS registry: disabled during Phase 2')
           PY
       - run: python scripts/partial_production_invariant_gate.py
+      - run: python scripts/source_canary_gate.py
