@@ -13,6 +13,7 @@ on:
       - "config/client_capability_matrix.yaml"
       - "scripts/phase2_source_canary.py"
       - "scripts/canary_attestation.py"
+      - "scripts/phase2_collection_reconciliation.py"
       - "src/engine/**"
       - "scripts/source_production_gate.py"
       - "scripts/source_canary_gate.py"
