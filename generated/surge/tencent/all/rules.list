@@ -10,7 +10,10 @@ IP-CIDR,203.205.224.0/24
 DOMAIN-SUFFIX,tlivesource.com
 DOMAIN-SUFFIX,oracle-tencent.net
 DOMAIN,btrace.qq.com
+DOMAIN-SUFFIX,ide.cloud.tencent.com
 DOMAIN-SUFFIX,fymallqa0.com
+DOMAIN-SUFFIX,console.cloud.tencent.com
+DOMAIN-SUFFIX,iaas.cloud.tencent.com
 DOMAIN-SUFFIX,wechatpay.cn
 DOMAIN-SUFFIX,qcloudcos.com
 DOMAIN-SUFFIX,coding.net
@@ -129,9 +132,11 @@ IP-CIDR6,::ffff:175.6.84.30/128
 IP-CIDR,211.152.156.0/24
 DOMAIN-SUFFIX,adstats.tencentmusic.com
 DOMAIN-SUFFIX,mszdld.net
+DOMAIN-SUFFIX,kg.y.qq.com
 DOMAIN-SUFFIX,tlivepush.com
 DOMAIN-SUFFIX,sogoucdndl.com
 DOMAIN-SUFFIX,tourismuser.cn
+DOMAIN-SUFFIX,buy.cloud.tencent.com
 DOMAIN-SUFFIX,zhuoyuegame.com
 IP-CIDR,49.51.62.0/23
 DOMAIN-SUFFIX,tcdnos.net
@@ -159,6 +164,7 @@ DOMAIN-SUFFIX,tcdnvodbak.com
 DOMAIN-SUFFIX,tapd.cn
 DOMAIN-SUFFIX,ludoworld.net
 DOMAIN-SUFFIX,imweb.io
+DOMAIN-SUFFIX,res.y.qq.com
 DOMAIN-SUFFIX,wegameplus.com
 DOMAIN-SUFFIX,adslvfile.qq.com
 DOMAIN-SUFFIX,na-siliconvalley.myqcloud.com
@@ -335,12 +341,14 @@ DOMAIN-SUFFIX,tdnsdl3.com.cn
 DOMAIN-SUFFIX,ad.weixin.qq.com
 DOMAIN-SUFFIX,dnsv1.com.cn
 DOMAIN-SUFFIX,tdnsv10.com
+DOMAIN-SUFFIX,ad.y.qq.com
 DOMAIN-SUFFIX,tencentcdb.com
 DOMAIN-SUFFIX,tencentcloudmarket.com
 DOMAIN-SUFFIX,coolsite.vip
 DOMAIN-SUFFIX,vodtcbk.com
 DOMAIN-SUFFIX,iot-tencent.com
 DOMAIN-SUFFIX,gclouddolphin.com
+DOMAIN-SUFFIX,i.y.qq.com
 IP-CIDR,1.116.116.0/22
 IP-CIDR,106.52.0.0/14
 DOMAIN-SUFFIX,ap-bangkok.myqcloud.com
@@ -349,6 +357,7 @@ DOMAIN-SUFFIX,dnse3.cn
 DOMAIN-SUFFIX,na-toronto.tencentcos.com.cn
 DOMAIN-SUFFIX,hkgcloudcs.com
 DOMAIN-SUFFIX,adfilter.imtt.qq.com
+DOMAIN-SUFFIX,c.y.qq.com
 DOMAIN-SUFFIX,gdtimg.com
 IP-CIDR,121.51.0.0/16
 DOMAIN-SUFFIX,yidianliulan.com
@@ -372,8 +381,10 @@ DOMAIN-SUFFIX,ap-hongkong.myqcloud.com
 DOMAIN-SUFFIX,pgdt.gtimg.cn
 IP-CIDR,175.24.0.0/16
 DOMAIN-SUFFIX,qcloudns.com
+DOMAIN-SUFFIX,bill.cloud.tencent.com
 DOMAIN-SUFFIX,ap-jakarta.tencentcos.cn
 DOMAIN-SUFFIX,qq.cn.com
+DOMAIN-SUFFIX,pop.qq.com
 DOMAIN-SUFFIX,tencentcos.cn
 IP-CIDR,101.32.118.25/32
 IP-CIDR,1.12.116.0/22
@@ -395,6 +406,7 @@ IP-CIDR,203.205.220.0/22
 IP-CIDR,150.158.0.0/16
 DOMAIN-SUFFIX,starlakelab.com
 IP-CIDR,42.187.128.0/17
+DOMAIN-SUFFIX,imap.qq.com
 DOMAIN-SUFFIX,ivweb.io
 DOMAIN-SUFFIX,cdnv2.cn
 DOMAIN-SUFFIX,serverlesscloud.cn
@@ -423,6 +435,7 @@ DOMAIN-SUFFIX,webnovel.com
 IP-CIDR6,2001:df6:f400::/48
 DOMAIN-SUFFIX,tdnsv13.com
 DOMAIN-SUFFIX,fymall0.com
+DOMAIN-SUFFIX,cloud.tencent.com
 DOMAIN-SUFFIX,gtgres.com
 DOMAIN-SUFFIX,sa-saopaulo.myqcloud.com
 DOMAIN-SUFFIX,ads.service.kugou.com
@@ -509,7 +522,9 @@ DOMAIN-SUFFIX,xqymuy.com
 IP-CIDR,152.136.0.0/16
 DOMAIN-SUFFIX,fymall4.com
 DOMAIN-SUFFIX,adsmind.apdcdn.tc.qq.com
+DOMAIN-SUFFIX,tcb.cloud.tencent.com
 DOMAIN-SUFFIX,tencentwepark.com
+DOMAIN-SUFFIX,capi.cloud.tencent.com
 DOMAIN-SUFFIX,tencentcs.com
 DOMAIN-SUFFIX,tcloudedu.com
 IP-CIDR6,::ffff:58.58.0.90/128
@@ -547,6 +562,7 @@ IP-CIDR6,::ffff:124.73.200.142/128
 DOMAIN-SUFFIX,tdnsv5.com
 DOMAIN-SUFFIX,eu-frankfurt.tencentcos.com.cn
 DOMAIN,soup.v.qq.com
+DOMAIN-SUFFIX,dl.y.qq.com
 DOMAIN-SUFFIX,zcjbgame.com
 DOMAIN-SUFFIX,ap-seoul.tencentcos.cn
 DOMAIN-SUFFIX,gtm.pub
@@ -583,6 +599,7 @@ DOMAIN-SUFFIX,beacon.cdn.qq.com
 IP-CIDR,122.152.192.0/18
 DOMAIN-SUFFIX,adpm.app.qq.com
 DOMAIN-SUFFIX,adnet.qq.com
+DOMAIN-SUFFIX,market.cloud.tencent.com
 IP-CIDR,49.51.108.0/23
 DOMAIN-SUFFIX,trace.qq.com
 DOMAIN,apd-pcdnvodstat.teg.tencent-cloud.net
@@ -627,6 +644,7 @@ DOMAIN-SUFFIX,wit.qq.com
 DOMAIN-SUFFIX,dnse0.com
 DOMAIN-SUFFIX,rumt-us.com
 DOMAIN-SUFFIX,chatdrama.cn
+DOMAIN-SUFFIX,y.qq.com
 DOMAIN-SUFFIX,robloxdev.cn
 DOMAIN-SUFFIX,fsphere.cn
 DOMAIN-SUFFIX,fyeds9.com
@@ -642,6 +660,7 @@ DOMAIN-SUFFIX,yzyxgame.com
 DOMAIN-SUFFIX,pubgtool.com
 DOMAIN-SUFFIX,wannianqingjianzhan.com
 IP-CIDR,1.12.212.0/23
+DOMAIN-SUFFIX,u.y.qq.com
 DOMAIN-SUFFIX,doh.pub
 DOMAIN-SUFFIX,sa-saopaulo.tencentcos.com
 DOMAIN-SUFFIX,tdnsv3.com
@@ -662,6 +681,7 @@ DOMAIN-SUFFIX,url.cn
 IP-CIDR,58.49.111.79/32
 DOMAIN-SUFFIX,qqmusic.com
 DOMAIN-SUFFIX,alloyteam.com
+DOMAIN-SUFFIX,dnspod.cloud.tencent.com
 IP-CIDR,193.112.0.0/16
 DOMAIN-SUFFIX,qcloudcdn.com
 DOMAIN-SUFFIX,tlivemcdn.com
@@ -761,6 +781,7 @@ DOMAIN-SUFFIX,ap-hongkong.tencentcos.com
 IP-CIDR,1.15.102.0/23
 DOMAIN-SUFFIX,timmerse.com
 DOMAIN-SUFFIX,scescdn.cn
+DOMAIN-SUFFIX,mps.cloud.tencent.com
 DOMAIN-SUFFIX,wetv.vip
 DOMAIN-SUFFIX,yeyousg.com
 DOMAIN-SUFFIX,adserviceretry.kugou.com
@@ -830,6 +851,7 @@ DOMAIN-SUFFIX,ad.qun.qq.com
 DOMAIN-SUFFIX,sogou.cn
 DOMAIN-SUFFIX,sg.cn
 DOMAIN-SUFFIX,bkapps.com
+DOMAIN-SUFFIX,mail.qq.com
 DOMAIN,wup.imtt.qq.com
 DOMAIN-SUFFIX,gcloudsvcs.com
 DOMAIN-SUFFIX,ger.file.myqcloud.com
@@ -843,6 +865,7 @@ DOMAIN-SUFFIX,chatdrama.net
 DOMAIN-SUFFIX,bugly.qq.com
 DOMAIN,video-public-1258344701.shiply-cdn.qq.com
 IP-CIDR,212.64.0.0/17
+DOMAIN-SUFFIX,smtp.qq.com
 DOMAIN-SUFFIX,eu-moscow.myqcloud.com
 DOMAIN-SUFFIX,dnspod.cn
 DOMAIN-SUFFIX,oracle-tencent.com.cn
