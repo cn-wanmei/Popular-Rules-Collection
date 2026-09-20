@@ -272,6 +272,16 @@ def canary_service(service_id: str, source_root: Path, source_commit: str, base_
     latest = _read_json(generated_root / "_promotion" / "latest.json")
     if latest.get("run_id") != run_one:
         raise RuntimeError(f"{service_id}: rollback did not restore first run")
+    rollback_identity = {
+        "service_id": service_id,
+        "first_run": run_one,
+        "second_run": run_two,
+        "rollback_target": rollback.get("run_id"),
+        "restored_run": latest.get("run_id"),
+    }
+    rollback_run_id = "rollback-" + service_id + "-" + hashlib.sha256(
+        json.dumps(rollback_identity, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    ).hexdigest()[:16]
 
     observation = start_observation(
         service_id=service_id,
@@ -281,7 +291,7 @@ def canary_service(service_id: str, source_root: Path, source_commit: str, base_
         v3_run_id=run_two,
         semantic_run_id=semantic_run_id,
         reconciliation_run_id=reconciliation["run_id"],
-        rollback_run_id=str(rollback.get("run_id") or ""),
+        rollback_run_id=rollback_run_id,
     )
 
     report = {
@@ -323,7 +333,8 @@ def canary_service(service_id: str, source_root: Path, source_commit: str, base_
             "second_run": run_two,
             "first_promotion": promote_one.get("run_id"),
             "second_promotion": promote_two.get("run_id"),
-            "rollback_run": rollback.get("run_id"),
+            "rollback_run": rollback_run_id,
+            "rollback_target_run": rollback.get("run_id"),
             "restored_run": latest.get("run_id"),
             "pass": latest.get("run_id") == run_one,
         },
