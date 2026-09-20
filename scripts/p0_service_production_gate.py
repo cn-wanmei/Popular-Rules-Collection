@@ -292,12 +292,27 @@ def main() -> int:
         elif not json.loads(release_path.read_text(encoding="utf-8")).get("all_hard_pass"):
             structural_errors.append("latest run release hard gates are not all pass")
 
+    phase_j_complete = bool(
+        isinstance(derived_report, dict)
+        and derived_report.get("production_complete") is True
+    )
     if isinstance(derived_report, dict) and derived_report:
         report_count = int(derived_report.get("queue_size", len(p0_ids)))
         if report_count != len(p0_ids):
             structural_errors.append(
                 f"Phase J derived evidence queue_size={report_count}, expected {len(p0_ids)}"
             )
+
+    # Per-service Phase J observations remain informational while the global
+    # P0 queue is partial. Production activation is fail-closed on the explicit
+    # production_complete flag.
+    if not phase_j_complete:
+        production_count = 0
+        blocked = [
+            f"{sid}: phase_j_production_complete=false"
+            for sid in p0_ids
+        ]
+
     print(f"[p0_service_production_gate] p0={len(p0_ids)} production={production_count} blocked={len(blocked)}")
     for sid in p0_ids:
         print(f"  {sid}: client_artifacts={len(service_client_files.get(sid, []))}/{len(CLIENT_EXT)} view={'yes' if sid in build_views else 'no'}")
