@@ -156,5 +156,14 @@ services:
       - {kind: false_positive, input: fmfmobile.icloud.com.evil.example, expected: no_match}
       - {kind: false_positive, input: fmipmobile.icloud.com.evil.example, expected: no_match}
       - {kind: false_positive, input: statici.icloud.com.evil.example, expected: no_match}
+  tencentcloud:
+    snapshot: config/p0_batch01_snapshots/2026-09-20/tencentcloud.list
+    status: pending_execution
+    probes:
+      - {kind: positive_ip, input: 1.116.116.1, expected: match}
+      - {kind: false_positive_ip, input: 1.116.120.1, expected: no_match}
+      - {kind: positive_ipv6, input: 2001:df6:f400::1, expected: match}
+      - {kind: false_positive_ipv6, input: 2001:df6:f401::1, expected: no_match}
+
 overall_status: pending_execution
 next_required: execute_probes_against_production_matcher_then_complete_cross_service_overlap_audit
