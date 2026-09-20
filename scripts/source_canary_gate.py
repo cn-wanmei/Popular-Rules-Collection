@@ -45,12 +45,16 @@ def main() -> int:
     if canary.get("enabled") is not False:
         errors.append("global canary switch must remain disabled until a service is explicitly promoted")
 
+    canary_services: list[str] = []
+
     for sid in SERVICES:
         item = services.get(sid) or {}
         stage = str(item.get("state", "review")).lower()
         enabled = bool(item.get("enabled", False))
         if stage not in {"review", "verified", "canary", "production"}:
             errors.append(f"{sid}: invalid state {stage}")
+        if stage == "canary":
+            canary_services.append(sid)
         if stage in {"canary", "production"} and not enabled:
             errors.append(f"{sid}: {stage} requires enabled=true")
         if stage in {"review", "verified"} and enabled:
@@ -72,6 +76,12 @@ def main() -> int:
             for field in REQUIRED_CANARY_FIELDS:
                 if not str(attestation.get(field, "")).strip():
                     errors.append(f"{sid}: production missing attestation field {field}")
+
+    if len(canary_services) > 1:
+        errors.append(
+            "at most one service may be state=canary at a time: "
+            + ", ".join(sorted(canary_services))
+        )
 
     result = {
         "schema": "source_canary_state_gate_v1",
