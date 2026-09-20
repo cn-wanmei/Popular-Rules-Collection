@@ -1,4 +1,5 @@
 name: Phase 2 Source Canary
+# Phase 2 contract: bind Canary to the exact Source PR head and wait for its gates.
 
 on:
   pull_request:
