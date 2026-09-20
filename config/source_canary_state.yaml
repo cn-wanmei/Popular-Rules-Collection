@@ -16,10 +16,28 @@ services:
     source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-cainiao-5f98d4fa8f88bb35bb2d46da, content_digest: 5f98d4fa8f88bb35bb2d46da0b970bb892a12078908b7da6f874af4bb31fcf39}
     attestation: {status: pending}
   dingding:
-    state: canary
+    state: production
     enabled: true
-    source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-dingding-191e07e101d5a92abc9e9856, content_digest: 191e07e101d5a92abc9e985615804c94a7dfb1b08bd8efc7bfd7a68f341da469}
-    attestation: {status: pending}
+    source_verification: {run: 35527947816, source_commit: 260015bd17db578388e42840d7bf2297b0aa3959, snapshot_id: snap-dingding-89a6d893bf7b14692a25ea66, content_digest: 89a6d893bf7b14692a25ea66c32f17fbbc9de909581c38843e4a5adf6066a35e}
+    attestation:
+      status: passed
+      source_release: releases/dingding/snap-dingding-89a6d893bf7b14692a25ea66/release.json
+      snapshot_id: snap-dingding-89a6d893bf7b14692a25ea66
+      content_digest: 89a6d893bf7b14692a25ea66c32f17fbbc9de909581c38843e4a5adf6066a35e
+      reconciliation_run_id: reconcile-dingding-954977f759f21630
+      v3_run_id: canary-dingding-release-2
+      semantic_run_id: canary-dingding-release-2
+      rollback_run_id: rollback-dingding-9ef00d6691f9632f
+      observation_started_at: '2026-09-20T18:14:48.462084+00:00'
+      observation_completed_at: '2026-09-20T18:25:00+00:00'
+      production_unlock_run_id: '35527947816'
+      reconciliation_pass: true
+      seven_client_semantic_pass: true
+      rollback_pass: true
+      observation_pass: true
+      source_official_evidence_only: true
+      seed_only_count: 0
+      conflict_count: 0
   qqmail:
     state: verified
     enabled: false
