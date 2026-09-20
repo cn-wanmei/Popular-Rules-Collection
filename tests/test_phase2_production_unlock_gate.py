@@ -57,7 +57,13 @@ def _base():
         {
             "source": {"commit": "source-sha"},
             "canary": {
-                "semantic": {\n                    "pass": True,\n                    "passed_clients": [\n                        "egern", "loon", "mihomo", "quantumultx",\n                        "shadowrocket", "singbox", "surge",\n                    ],\n                },
+                "semantic": {
+                    "pass": True,
+                    "passed_clients": [
+                        "egern", "loon", "mihomo", "quantumultx",
+                        "shadowrocket", "singbox", "surge",
+                    ],
+                },
                 "reconciliation": {"status": "PASS"},
                 "observation": {"status": "ACTIVE", "promotes": False},
             },
