@@ -26,11 +26,10 @@ concurrency:
   group: phase2-Popular-Rules-Collection--github-workflows-phase2-source-canary-yml-${{ github.ref }}
   cancel-in-progress: true
 
-permissions:
-  contents: read
-
 jobs:
   source-canary:
+    permissions:
+      contents: read
     if: github.event_name == 'workflow_dispatch' || github.event.pull_request.number == 121
     runs-on: ubuntu-latest
     steps:
