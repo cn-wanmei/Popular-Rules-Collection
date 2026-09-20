@@ -1,7 +1,6 @@
 version: 1
 schema: p0_service_overlap_audit_v1
 batch: 1
-purpose: Batch 01 identity-level overlap
 scope:
   services:
   - appstore
@@ -10,8 +9,8 @@ scope:
   - findmy
   - tencentcloud
   comparison_basis: canonical_rule_identity
-status: pass
+status: partial
 semantic_overlap:
-  status: pass
+  status: pending_execution
   runtime_probe_count: 0
   runtime_collisions: []

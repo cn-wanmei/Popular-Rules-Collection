@@ -1,7 +1,6 @@
 version: 1
 schema: p0_service_canonical_membership_v1
 batch: 1
-purpose: Batch 01 canonical memberships with gate-compatible rule_id
 services:
   appstore:
     snapshot: config/p0_batch01_snapshots/2026-09-17/appstore.list
@@ -19,30 +18,6 @@ services:
     snapshot: config/p0_batch01_snapshots/2026-09-17/testflight.list
     status: complete
     memberships:
-    - type: DOMAIN
-      value: '# NAME: TestFlight'
-      identity_key: 'domain|# name: testflight'
-      rule_id: 778d486e2b30b2e9aadacbafa92c67f1c573e37e21a1eb4c75488a81b292613e
-    - type: DOMAIN
-      value: '# AUTHOR: blackmatrix7'
-      identity_key: 'domain|# author: blackmatrix7'
-      rule_id: 726f1189fe1262b55459d240212847adef2ccdb6e0f69edb9fe855f6517c2330
-    - type: DOMAIN
-      value: '# REPO: https://github.com/blackmatrix7/ios_rule_script'
-      identity_key: 'domain|# repo: https://github.com/blackmatrix7/ios_rule_script'
-      rule_id: 6187bfa13f6d9a38e99a8812b1b8bce5ccee232aed697092574ee2860dcfc41f
-    - type: DOMAIN
-      value: '# UPDATED: 2025-06-06 09:15:11'
-      identity_key: 'domain|# updated: 2025-06-06 09:15:11'
-      rule_id: a157dc7a81e13858e0de167d5b1088a8df37a3e4c545b07878518a48a60d5a68
-    - type: DOMAIN
-      value: '# HOST: 2'
-      identity_key: 'domain|# host: 2'
-      rule_id: 07565cfec1f91b81fe5591ad3d7a62bfbad342f4dc9d7af26ae682b4ac57dae2
-    - type: DOMAIN
-      value: '# TOTAL: 3'
-      identity_key: 'domain|# total: 3'
-      rule_id: 68c35d27610e09ddd2183430ad27f6d896506bc0b9f109178c64219e326710c7
     - type: DOMAIN
       value: beta.apple.com
       identity_key: domain|beta.apple.com

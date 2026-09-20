@@ -1,353 +1,202 @@
 version: 1
 schema: p0_service_semantic_audit_v1
 batch: 2
-execution_status: executed
+execution_status: pending_execution
 services:
   taobao:
     snapshot: config/p0_source_snapshots/2026-09-20/taobao.list
-    status: pass
+    status: pending_execution
     probes:
-    - type: DOMAIN-SUFFIX
-      value: 2.taobao.com
-      positive: x.2.taobao.com
-      positive_match: true
-      negative: x.2.taobao.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: ffa319222f8c912b1248676c181b0c481ec7b4c1947f2aa9555cc4532d986b47
-    - type: DOMAIN-SUFFIX
-      value: bbs.taobao.com
-      positive: x.bbs.taobao.com
-      positive_match: true
-      negative: x.bbs.taobao.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 5e2f5c570744e1ce1528ca3b9931651472df4a0748c67230f5faacc4563360fd
-    - type: DOMAIN-SUFFIX
-      value: buy.taobao.com
-      positive: x.buy.taobao.com
-      positive_match: true
-      negative: x.buy.taobao.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 8028b5518ea83e7d7bbcbdb70932de2833b198f5b14cc66022ccea5255fe6981
-    - type: DOMAIN-SUFFIX
-      value: cart.taobao.com
-      positive: x.cart.taobao.com
-      positive_match: true
-      negative: x.cart.taobao.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: bcc2369dfacd6b5262a4d438dbb91f34464d197b3516a32464cd1279d0db6d03
-    - type: DOMAIN-SUFFIX
-      value: eco.taobao.com
-      positive: x.eco.taobao.com
-      positive_match: true
-      negative: x.eco.taobao.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 7496094c20843860b8fea94e0659240295bdbabe2d882038f7151583265142c8
-    - type: DOMAIN-SUFFIX
-      value: favorite.taobao.com
-      positive: x.favorite.taobao.com
-      positive_match: true
-      negative: x.favorite.taobao.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: a5fcff1d079168444a452ca0e60a41b84a70f3f64335094aea8884cda3e7e706
+    - input: x.2.taobao.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.2.taobao.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.bbs.taobao.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.bbs.taobao.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.buy.taobao.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.buy.taobao.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.cart.taobao.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.cart.taobao.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
   tmall:
     snapshot: config/p0_source_snapshots/2026-09-20/tmall.list
-    status: pass
+    status: pending_execution
     probes:
-    - type: DOMAIN-SUFFIX
-      value: book.tmall.com
-      positive: x.book.tmall.com
-      positive_match: true
-      negative: x.book.tmall.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 74c7409ab0589fe34c045a129443be488c005b5df222e3976a42b2f2e914f8cb
-    - type: DOMAIN-SUFFIX
-      value: buy.tmall.com
-      positive: x.buy.tmall.com
-      positive_match: true
-      negative: x.buy.tmall.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 4e3a88cd76153e27736b85f31d0a58d80fd804c6a00aded33a3c603038ccb9e1
-    - type: DOMAIN-SUFFIX
-      value: car.tmall.com
-      positive: x.car.tmall.com
-      positive_match: true
-      negative: x.car.tmall.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 0c042596efb8871b14d89ae4cd60e0a5cb155a45e5f7fc7bc720dee93aa6a0d2
-    - type: DOMAIN-SUFFIX
-      value: cart.tmall.com
-      positive: x.cart.tmall.com
-      positive_match: true
-      negative: x.cart.tmall.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 62dbcd01180e08803eb414b88415a3829dfa97ee0eece9f391f9f49c96f0bac5
-    - type: DOMAIN-SUFFIX
-      value: chaoshi.tmall.com
-      positive: x.chaoshi.tmall.com
-      positive_match: true
-      negative: x.chaoshi.tmall.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 7490dcd95a8333d8f7e70241f408c4fc36d3a0369976af302665032143f9b0ea
-    - type: DOMAIN-SUFFIX
-      value: detail.tmall.com
-      positive: x.detail.tmall.com
-      positive_match: true
-      negative: x.detail.tmall.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: ae83dff664d4943d4213c5ab0aa5f1d62fc5f7c8d8146000f8dee9760a52d2de
+    - input: x.book.tmall.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.book.tmall.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.buy.tmall.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.buy.tmall.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.car.tmall.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.car.tmall.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.cart.tmall.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.cart.tmall.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
   '1688':
     snapshot: config/p0_source_snapshots/2026-09-20/1688.list
-    status: pass
+    status: pending_execution
     probes:
-    - type: DOMAIN-SUFFIX
-      value: 1688.com
-      positive: x.1688.com
-      positive_match: true
-      negative: x.1688.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 8632fd1c6003d1f72158d31ad1efaa359a5424d9c0945ed1931b81bb151bd300
-    - type: DOMAIN-SUFFIX
-      value: air.1688.com
-      positive: x.air.1688.com
-      positive_match: true
-      negative: x.air.1688.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: b455272378c1931af14d4950a4d82ac3eacd548a5305c0ac39ac1556d26afc46
-    - type: DOMAIN-SUFFIX
-      value: buy.1688.com
-      positive: x.buy.1688.com
-      positive_match: true
-      negative: x.buy.1688.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 31f24143bb284632c7613ef6dc64ad4fa88f20126d6c256217c12aeece73a144
-    - type: DOMAIN-SUFFIX
-      value: cart.1688.com
-      positive: x.cart.1688.com
-      positive_match: true
-      negative: x.cart.1688.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 8e45d14b066aebbc5b4eb8e72a90bb9f4e50d6bdf48d72d706f14e674865226c
-    - type: DOMAIN-SUFFIX
-      value: detail.1688.com
-      positive: x.detail.1688.com
-      positive_match: true
-      negative: x.detail.1688.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: dd7b83c9f9a154f64e1ac0d148eb85c69c04b7300231e62d19832cd0fdcb5527
-    - type: DOMAIN-SUFFIX
-      value: fuwu.1688.com
-      positive: x.fuwu.1688.com
-      positive_match: true
-      negative: x.fuwu.1688.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 1aeaa197e3e003bdc106733a70819b59ed1bb606e5d2302b42728c2690cd9f4d
+    - input: x.1688.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.1688.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.air.1688.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.air.1688.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.buy.1688.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.buy.1688.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.cart.1688.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.cart.1688.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
   dingding:
     snapshot: config/p0_source_snapshots/2026-09-20/dingding.list
-    status: pass
+    status: pending_execution
     probes:
-    - type: DOMAIN-SUFFIX
-      value: api.dingtalk.com
-      positive: x.api.dingtalk.com
-      positive_match: true
-      negative: x.api.dingtalk.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 80494baed01e317f8aedf60711a90c1e64d38614ba4f9efa3e0cc890f7d69655
-    - type: DOMAIN-SUFFIX
-      value: h5.dingtalk.com
-      positive: x.h5.dingtalk.com
-      positive_match: true
-      negative: x.h5.dingtalk.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 65dbf80fa6f52611745fbe15c9ad73f2e37ccbae8cade28ee802c0da2f595c15
-    - type: DOMAIN-SUFFIX
-      value: login.dingtalk.com
-      positive: x.login.dingtalk.com
-      positive_match: true
-      negative: x.login.dingtalk.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: edca84f312c4e9eed00dd4dd1f62b6f032fba74257f6b446bf4b2e1e4bc7b741
-    - type: DOMAIN-SUFFIX
-      value: oapi.dingtalk.com
-      positive: x.oapi.dingtalk.com
-      positive_match: true
-      negative: x.oapi.dingtalk.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 1add608b02fabbbed7d7d5db69bea87cc5e308d922b36b7fd96ab95a5ec2604b
-    - type: DOMAIN-SUFFIX
-      value: open.dingtalk.com
-      positive: x.open.dingtalk.com
-      positive_match: true
-      negative: x.open.dingtalk.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: efe48f8cbb6f056ef447618b0eed97abeab78efedd9b3c6d2e4b8a1d52135372
-    - type: DOMAIN-SUFFIX
-      value: page.dingtalk.com
-      positive: x.page.dingtalk.com
-      positive_match: true
-      negative: x.page.dingtalk.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 8dc7c129e1d42288a7428b96327b518a877fa9ae53b43debbab645109de19160
+    - input: x.api.dingtalk.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.api.dingtalk.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.h5.dingtalk.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.h5.dingtalk.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.login.dingtalk.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.login.dingtalk.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.oapi.dingtalk.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.oapi.dingtalk.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
   cainiao:
     snapshot: config/p0_source_snapshots/2026-09-20/cainiao.list
-    status: pass
+    status: pending_execution
     probes:
-    - type: DOMAIN-SUFFIX
-      value: cainiao.com
-      positive: x.cainiao.com
-      positive_match: true
-      negative: x.cainiao.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: c6f143b8b783f276ea06e3654f226028ec74369096b02ced6970a531e437f5d9
-    - type: DOMAIN-SUFFIX
-      value: express.cainiao.com
-      positive: x.express.cainiao.com
-      positive_match: true
-      negative: x.express.cainiao.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: db26bb4f68b90de5a8802dc9b8a2c488565cbb129d51f5865ca8c9683089bbf6
-    - type: DOMAIN-SUFFIX
-      value: global.cainiao.com
-      positive: x.global.cainiao.com
-      positive_match: true
-      negative: x.global.cainiao.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 86b327de559b053633c577bfc83d5ea32cc361fbb926fd9f0f994cca645945fb
-    - type: DOMAIN-SUFFIX
-      value: gsls.cainiao.com
-      positive: x.gsls.cainiao.com
-      positive_match: true
-      negative: x.gsls.cainiao.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 6368393fc0674f6b3d751757a2aed5763eec62da32567aa6662190b79c6ae2e9
-    - type: DOMAIN-SUFFIX
-      value: link.cainiao.com
-      positive: x.link.cainiao.com
-      positive_match: true
-      negative: x.link.cainiao.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 2d8177acabf32a1c760509b5c1624109efeeeeec3e628b03defeabe0a7798fd2
-    - type: DOMAIN-SUFFIX
-      value: open.cainiao.com
-      positive: x.open.cainiao.com
-      positive_match: true
-      negative: x.open.cainiao.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 0687bb6c7738d4c4a0a3ed397bf60f7fef11a50104a9fb0b7114d6be4930f31d
+    - input: x.cainiao.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.cainiao.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.express.cainiao.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.express.cainiao.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.global.cainiao.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.global.cainiao.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.gsls.cainiao.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.gsls.cainiao.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
   qqmail:
     snapshot: config/p0_source_snapshots/2026-09-20/qqmail.list
-    status: pass
+    status: pending_execution
     probes:
-    - type: DOMAIN-SUFFIX
-      value: imap.qq.com
-      positive: x.imap.qq.com
-      positive_match: true
-      negative: x.imap.qq.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: cdbbc4a8e06abd5c074cda6afe1a2080c8da90d4891acbea5d3cbd335d1330d3
-    - type: DOMAIN-SUFFIX
-      value: mail.qq.com
-      positive: x.mail.qq.com
-      positive_match: true
-      negative: x.mail.qq.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 7fb1f0f20c4567b4d0a05c983912b04ff16bcbd9ce67e6f007d97417b5104705
-    - type: DOMAIN-SUFFIX
-      value: pop.qq.com
-      positive: x.pop.qq.com
-      positive_match: true
-      negative: x.pop.qq.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: e5719b51e19507dd52f082a127779a6d0d7f88385d0544c170083b2ca8dbbba3
-    - type: DOMAIN-SUFFIX
-      value: smtp.qq.com
-      positive: x.smtp.qq.com
-      positive_match: true
-      negative: x.smtp.qq.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: a41e08967336e141fe479b797e129e4935c139b2e284f5d9ce8d9c8045594312
+    - input: x.imap.qq.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.imap.qq.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.mail.qq.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.mail.qq.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.pop.qq.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.pop.qq.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.smtp.qq.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.smtp.qq.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
   qqmusic:
     snapshot: config/p0_source_snapshots/2026-09-20/qqmusic.list
-    status: pass
+    status: pending_execution
     probes:
-    - type: DOMAIN-SUFFIX
-      value: ad.y.qq.com
-      positive: x.ad.y.qq.com
-      positive_match: true
-      negative: x.ad.y.qq.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 42b48e807d760aef5d917351ceba10649e25182d57d15e3b1a808853c657f1f3
-    - type: DOMAIN-SUFFIX
-      value: c.y.qq.com
-      positive: x.c.y.qq.com
-      positive_match: true
-      negative: x.c.y.qq.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: fd58bb7ed9a67cbd876b3b176c5638ee96950081f15d32c5176b80d244d9dcca
-    - type: DOMAIN-SUFFIX
-      value: dl.y.qq.com
-      positive: x.dl.y.qq.com
-      positive_match: true
-      negative: x.dl.y.qq.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 285dd5c857e71a577815866e3265bf06633f3f288c2e1eb6cbdc33fc3d748fe5
-    - type: DOMAIN-SUFFIX
-      value: i.y.qq.com
-      positive: x.i.y.qq.com
-      positive_match: true
-      negative: x.i.y.qq.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: aea763b9979eaa1f64fc02eeaabe43afaa523709f5fa26ebbc48e3f03d48f9f1
-    - type: DOMAIN-SUFFIX
-      value: kg.y.qq.com
-      positive: x.kg.y.qq.com
-      positive_match: true
-      negative: x.kg.y.qq.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: ebc8b573cbb68df655e100793679fe23df2f9d1789569f17eaaa396253a35ca7
-    - type: DOMAIN-SUFFIX
-      value: res.y.qq.com
-      positive: x.res.y.qq.com
-      positive_match: true
-      negative: x.res.y.qq.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: c62db912776ca6f9301c8103aad2557a247571beda86f6af0e9edd378d0c9951
+    - input: x.ad.y.qq.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.ad.y.qq.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.c.y.qq.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.c.y.qq.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.dl.y.qq.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.dl.y.qq.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.i.y.qq.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.i.y.qq.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+overall_status: pending

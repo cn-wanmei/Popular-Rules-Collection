@@ -1,210 +1,95 @@
 version: 1
 schema: p0_service_semantic_audit_v1
 batch: 1
-purpose: Batch 01 semantic
-execution_status: executed
+execution_status: pending_execution
 services:
   appstore:
     snapshot: config/p0_batch01_snapshots/2026-09-17/appstore.list
-    status: pass
+    status: pending_execution
     probes:
-    - type: DOMAIN
-      value: apps.apple.com
-      positive: apps.apple.com
-      positive_match: true
-      negative: apps.apple.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: df916758be586f07392fe3a6a5d00779fc3ea3110ebd6c1eff685b670c85c3d2
-    - type: DOMAIN
-      value: itunes.apple.com
-      positive: itunes.apple.com
-      positive_match: true
-      negative: itunes.apple.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 33a8e066922f3f7eea376724ca09ce2a31e0aedba34314fa18ee7aeb66042c59
+    - input: apps.apple.com
+      expected: match
+      type: DOMAIN
+    - input: apps.apple.com.evil.example
+      expected: no_match
+      type: DOMAIN
+    - input: itunes.apple.com
+      expected: match
+      type: DOMAIN
+    - input: itunes.apple.com.evil.example
+      expected: no_match
+      type: DOMAIN
   testflight:
     snapshot: config/p0_batch01_snapshots/2026-09-17/testflight.list
-    status: pass
+    status: pending_execution
     probes:
-    - type: DOMAIN
-      value: '# NAME: TestFlight'
-      positive: '# NAME: TestFlight'
-      positive_match: true
-      negative: '# NAME: TestFlight.evil.example'
-      negative_match: false
-      review_required: false
-      rule_id: 778d486e2b30b2e9aadacbafa92c67f1c573e37e21a1eb4c75488a81b292613e
-    - type: DOMAIN
-      value: '# AUTHOR: blackmatrix7'
-      positive: '# AUTHOR: blackmatrix7'
-      positive_match: true
-      negative: '# AUTHOR: blackmatrix7.evil.example'
-      negative_match: false
-      review_required: false
-      rule_id: 726f1189fe1262b55459d240212847adef2ccdb6e0f69edb9fe855f6517c2330
-    - type: DOMAIN
-      value: '# REPO: https://github.com/blackmatrix7/ios_rule_script'
-      positive: '# REPO: https://github.com/blackmatrix7/ios_rule_script'
-      positive_match: true
-      negative: '# REPO: https://github.com/blackmatrix7/ios_rule_script.evil.example'
-      negative_match: false
-      review_required: false
-      rule_id: 6187bfa13f6d9a38e99a8812b1b8bce5ccee232aed697092574ee2860dcfc41f
-    - type: DOMAIN
-      value: '# UPDATED: 2025-06-06 09:15:11'
-      positive: '# UPDATED: 2025-06-06 09:15:11'
-      positive_match: true
-      negative: '# UPDATED: 2025-06-06 09:15:11.evil.example'
-      negative_match: false
-      review_required: false
-      rule_id: a157dc7a81e13858e0de167d5b1088a8df37a3e4c545b07878518a48a60d5a68
-    - type: DOMAIN
-      value: '# HOST: 2'
-      positive: '# HOST: 2'
-      positive_match: true
-      negative: '# HOST: 2.evil.example'
-      negative_match: false
-      review_required: false
-      rule_id: 07565cfec1f91b81fe5591ad3d7a62bfbad342f4dc9d7af26ae682b4ac57dae2
-    - type: DOMAIN
-      value: '# TOTAL: 3'
-      positive: '# TOTAL: 3'
-      positive_match: true
-      negative: '# TOTAL: 3.evil.example'
-      negative_match: false
-      review_required: false
-      rule_id: 68c35d27610e09ddd2183430ad27f6d896506bc0b9f109178c64219e326710c7
+    - input: beta.apple.com
+      expected: match
+      type: DOMAIN
+    - input: beta.apple.com.evil.example
+      expected: no_match
+      type: DOMAIN
+    - input: testflight.apple.com
+      expected: match
+      type: DOMAIN
+    - input: testflight.apple.com.evil.example
+      expected: no_match
+      type: DOMAIN
   appledev:
     snapshot: config/p0_batch01_snapshots/2026-09-17/appledev.list
-    status: pass
+    status: pending_execution
     probes:
-    - type: DOMAIN-SUFFIX
-      value: calendarserver.org
-      positive: x.calendarserver.org
-      positive_match: true
-      negative: x.calendarserver.org.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 2ae108237541c38d623560d3e76c5c014011ca6b4cce2ff15d10f796377d3a7a
-    - type: DOMAIN-SUFFIX
-      value: apple-cloudkit.com
-      positive: x.apple-cloudkit.com
-      positive_match: true
-      negative: x.apple-cloudkit.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 1d4eb1d127c5f0c4cb4ca37e344be99b35fabfcc660daa4e90ff05a77ff2dedc
-    - type: DOMAIN-SUFFIX
-      value: cups.org
-      positive: x.cups.org
-      positive_match: true
-      negative: x.cups.org.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: e99d01164bf4611e0e4fbc5ad9225b38b0cf3e4fbb33ae0c503419bd84f6a1ea
-    - type: DOMAIN-SUFFIX
-      value: developer.apple.com
-      positive: x.developer.apple.com
-      positive_match: true
-      negative: x.developer.apple.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: c440db1cb13eb7649b896bb7732d00a8bf6492a0f49bb75ca7e89a1910d66f0a
-    - type: DOMAIN-SUFFIX
-      value: developerservices2.apple.com
-      positive: x.developerservices2.apple.com
-      positive_match: true
-      negative: x.developerservices2.apple.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 03e86a4e349776217ae215319e9b5132ce2b95170fb389f0eabd3d3f74230de4
-    - type: DOMAIN-SUFFIX
-      value: devimages-cdn.apple.com
-      positive: x.devimages-cdn.apple.com
-      positive_match: true
-      negative: x.devimages-cdn.apple.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 06374f7bbc4a2dacf7a280c09cbf720dcab7874abf5a162b2cb6014a4e5a0260
+    - input: x.calendarserver.org
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.calendarserver.org.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.apple-cloudkit.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.apple-cloudkit.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.cups.org
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.cups.org.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+    - input: x.developer.apple.com
+      expected: match
+      type: DOMAIN-SUFFIX
+    - input: x.developer.apple.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
   findmy:
     snapshot: config/p0_batch01_snapshots/2026-09-17/findmy.list
-    status: pass
+    status: pending_execution
     probes:
-    - type: DOMAIN
-      value: fmfmobile.icloud.com
-      positive: fmfmobile.icloud.com
-      positive_match: true
-      negative: fmfmobile.icloud.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 238fc705dbd23f3d81043eff29370966f985e19d1cce4734246211f314507577
-    - type: DOMAIN
-      value: fmipmobile.icloud.com
-      positive: fmipmobile.icloud.com
-      positive_match: true
-      negative: fmipmobile.icloud.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: 11c357ed4a9affae18bb368b5278e6111281a29871113dafd2c9117265d36c2d
-    - type: DOMAIN
-      value: statici.icloud.com
-      positive: statici.icloud.com
-      positive_match: true
-      negative: statici.icloud.com.evil.example
-      negative_match: false
-      review_required: false
-      rule_id: c2b25ce8bd8805855beae5012d275a7d396ee11df505f88d5093107290bcfccc
+    - input: fmfmobile.icloud.com
+      expected: match
+      type: DOMAIN
+    - input: fmfmobile.icloud.com.evil.example
+      expected: no_match
+      type: DOMAIN
+    - input: fmipmobile.icloud.com
+      expected: match
+      type: DOMAIN
+    - input: fmipmobile.icloud.com.evil.example
+      expected: no_match
+      type: DOMAIN
+    - input: statici.icloud.com
+      expected: match
+      type: DOMAIN
+    - input: statici.icloud.com.evil.example
+      expected: no_match
+      type: DOMAIN
   tencentcloud:
     snapshot: config/p0_batch01_snapshots/2026-09-20/tencentcloud.list
-    status: pass
+    status: blocked
     probes:
-    - type: IP-CIDR
-      value: 1.116.116.0/22
-      positive: 1.116.116.0
-      positive_match: true
-      negative: 203.0.113.1
-      negative_match: false
-      review_required: false
-      rule_id: 6b276b0eae50c33a9365ab2ed0d4a2f07180b9b93a6a30d711516feb65448f1b
-    - type: IP-CIDR
-      value: 1.116.216.0/23
-      positive: 1.116.216.0
-      positive_match: true
-      negative: 203.0.113.1
-      negative_match: false
-      review_required: false
-      rule_id: cbaa06821f428b5b83fc36cfa6f226a72d0d52f526998adafe61f4bf8be15a36
-    - type: IP-CIDR
-      value: 1.117.118.0/23
-      positive: 1.117.118.0
-      positive_match: true
-      negative: 203.0.113.1
-      negative_match: false
-      review_required: false
-      rule_id: ccbd1e288ddfc9293ab96f2431338aa80a49059285e1ce7986ae3f9e7b756724
-    - type: IP-CIDR
-      value: 1.117.218.0/23
-      positive: 1.117.218.0
-      positive_match: true
-      negative: 203.0.113.1
-      negative_match: false
-      review_required: false
-      rule_id: e092a1746159215e84a8455c0e286efae17c85e059969b221ca9dda9263b2900
-    - type: IP-CIDR
-      value: 1.12.102.0/23
-      positive: 1.12.102.0
-      positive_match: true
-      negative: 203.0.113.1
-      negative_match: false
-      review_required: false
-      rule_id: 2e293317b42fecf41c00ab5813d2906e3ffdc469d31770063fdb4d9d312bad94
-    - type: IP-CIDR
-      value: 1.12.116.0/22
-      positive: 1.12.116.0
-      positive_match: true
-      negative: 203.0.113.1
-      negative_match: false
-      review_required: false
-      rule_id: e146c8dc9cd6a2787d5d517a6dd0d77fca9fb0618349aad967d9e911c675de81
+    - input: 1.116.116.0
+      expected: review
+      type: IP-CIDR
+overall_status: pending
