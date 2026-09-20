@@ -253,6 +253,23 @@ def client_presence(build_report: dict[str, Any], sid: str) -> tuple[list[str], 
     return present, details
 
 
+def service_overlap_audit(
+    sid: str, overlap: dict[str, Any]
+) -> dict[str, Any]:
+    """Project global overlap findings onto one service without false blocking."""
+    collisions = [
+        collision
+        for collision in overlap.get("runtime_collisions", [])
+        if collision.get("service") == sid
+        or collision.get("other_service") == sid
+    ]
+    return {
+        "status": "blocked" if collisions else "pass",
+        "runtime_probe_count": overlap.get("runtime_probe_count", 0),
+        "collisions": collisions,
+    }
+
+
 def runtime_overlap(rows: dict[str, dict[str, Any]], rule_matches) -> dict[str, Any]:
     collisions = []
     positives: list[tuple[str, str]] = []
@@ -352,11 +369,7 @@ def main() -> int:
     overlap = runtime_overlap(rows, rule_matches)
     for sid, row in rows.items():
         scoped = [c for c in overlap["runtime_collisions"] if c["service"] == sid or c["other_service"] == sid]
-        row["overlap_audit"] = {
-            "status": "blocked" if scoped else overlap["status"],
-            "runtime_probe_count": overlap["runtime_probe_count"],
-            "collisions": scoped,
-        }
+        row["overlap_audit"] = service_overlap_audit(sid, overlap)
         if row["identity"] != "pass":
             row["blockers"].append("identity")
         if row["source"]["status"] != "pass":
