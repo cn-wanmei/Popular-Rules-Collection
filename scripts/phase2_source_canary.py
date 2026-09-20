@@ -144,6 +144,50 @@ def _assert_clients(run_dir: Path) -> dict[str, Any]:
     }
 
 
+def _run_semantic_check(run_dir: Path) -> tuple[dict[str, Any], str]:
+    ir_path = run_dir / "ir" / "ir.json"
+    generated_root = run_dir / "artifacts"
+    semantic_dir = run_dir / "semantic"
+    semantic_dir.mkdir(parents=True, exist_ok=True)
+    semantic_report = semantic_dir / "cross_client_report.json"
+
+    completed = subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "scripts" / "cross_client_semantic_test.py"),
+            "--ir",
+            str(ir_path),
+            "--generated",
+            str(generated_root),
+            "--matrix",
+            str(ROOT / "config" / "client_capability_matrix.yaml"),
+        ],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        check=False,
+    )
+    stdout = completed.stdout.strip()
+    try:
+        report = json.loads(stdout)
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(
+            "seven-client semantic check returned non-JSON output: "
+            f"{stdout[-4000:]} {completed.stderr[-4000:]}"
+        ) from exc
+
+    semantic_report.write_text(
+        json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    if completed.returncode != 0 or report.get("pass") is not True:
+        raise RuntimeError(
+            f"seven-client semantic check failed: {json.dumps(report, ensure_ascii=False)}"
+        )
+    return report, str(run_dir.name)
+
 def _run_pipeline(sources: Path, data_root: Path, run_id: str, end: int) -> dict[str, Any]:
     return run_pipeline(
         sources,
@@ -203,6 +247,7 @@ def canary_service(service_id: str, source_root: Path, source_commit: str, base_
         )
 
     runs_root = data_root / "runs"
+    semantic_report, semantic_run_id = _run_semantic_check(runs_root / run_two)
     generated_root.mkdir(parents=True, exist_ok=True)
     baseline = data_root / "baseline" / "canonical.json"
     promote_one = promote_run(runs_root / run_one, generated_root, baseline_path=baseline)
@@ -232,6 +277,14 @@ def canary_service(service_id: str, source_root: Path, source_commit: str, base_
         "canary": {
             "v3_golden": golden_report,
             "golden_run_id": golden_run,
+            "v3_release_run_id": run_two,
+            "semantic": {
+                "pass": semantic_report.get("pass") is True,
+                "client_count": len(semantic_report.get("passed") or []),
+                "passed_clients": semantic_report.get("passed") or [],
+                "failure_count": len(semantic_report.get("failures") or []),
+            },
+            "semantic_run_id": semantic_run_id,
         },
         "rollback": {
             "first_run": run_one,
@@ -242,7 +295,7 @@ def canary_service(service_id: str, source_root: Path, source_commit: str, base_
             "restored_run": latest.get("run_id"),
             "pass": latest.get("run_id") == run_one,
         },
-        "production_ready": True,
+        "production_ready": bool(semantic_report.get("pass") is True and latest.get("run_id") == run_one),
     }
     out = service_dir / "report.json"
     out.write_text(json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
