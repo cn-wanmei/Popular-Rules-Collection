@@ -5,7 +5,7 @@ sources:
 - id: popular-rules-source
   name: Popular-Rules-Source (official domain generation)
   url: https://github.com/cn-wanmei/Popular-Rules-Source
-  enabled: true
+  enabled: false
   priority: 98
   trust: high
   score_hint: 96
