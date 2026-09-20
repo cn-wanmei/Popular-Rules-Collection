@@ -154,8 +154,28 @@ def _run_pipeline(sources: Path, data_root: Path, run_id: str, end: int) -> dict
 
 
 def canary_service(service_id: str, source_root: Path, source_commit: str, base_dir: Path) -> dict[str, Any]:
+    completed = subprocess.run(
+        [sys.executable, "-m", "source_engine", "release", "--service", service_id],
+        cwd=source_root,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        check=False,
+    )
+    if completed.returncode != 0:
+        raise RuntimeError(
+            f"{service_id}: Source release failed: {completed.stdout[-2000:]} {completed.stderr[-2000:]}"
+        )
     snapshot_dir, snapshot = _latest_snapshot(source_root, service_id)
     _verify_source(service_id, snapshot_dir, snapshot)
+    release_root = source_root / "releases" / service_id / str(snapshot["snapshot_id"])
+    release_file = release_root / "release.json"
+    if not release_file.is_file():
+        raise RuntimeError(f"{service_id}: Source release artifact missing: {release_file}")
+    release_doc = _read_json(release_file)
+    if release_doc.get("snapshot_id") != snapshot.get("snapshot_id"):
+        raise RuntimeError(f"{service_id}: Source release snapshot binding mismatch")
 
     service_dir = base_dir / service_id
     input_root = service_dir / "input"
@@ -204,6 +224,8 @@ def canary_service(service_id: str, source_root: Path, source_commit: str, base_
             "unverified_candidate_count": snapshot.get("unverified_candidate_count", 0),
             "release_state": snapshot.get("release_state"),
             "official_evidence_count": len(snapshot.get("evidence") or []),
+            "release_artifact": str(release_file.relative_to(source_root)),
+            "release_schema": release_doc.get("schema"),
         },
         "verified": True,
         "canary": {
