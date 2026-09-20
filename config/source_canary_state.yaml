@@ -1,0 +1,15 @@
+version: 1
+state_machine:
+  - review
+  - verified
+  - canary
+  - production
+services:
+  "1688": {state: review, enabled: false}
+  cainiao: {state: review, enabled: false}
+  dingding: {state: review, enabled: false}
+  qqmail: {state: review, enabled: false}
+  qqmusic: {state: review, enabled: false}
+  taobao: {state: review, enabled: false}
+  tencentcloud: {state: review, enabled: false}
+  tmall: {state: review, enabled: false}
