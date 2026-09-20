@@ -131,9 +131,36 @@ services:
       result: pass
   tencentcloud:
     snapshot: config/p0_batch01_snapshots/2026-09-20/tencentcloud.list
-    status: blocked
+    status: pass
     probes:
-    - input: 1.116.116.0
-      expected: review
-      type: IP-CIDR
-overall_status: blocked
+    - input: x.bill.cloud.tencent.com
+      expected: match
+      type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
+    - input: x.bill.cloud.tencent.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
+    - input: x.buy.cloud.tencent.com
+      expected: match
+      type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
+    - input: x.buy.cloud.tencent.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
+    - input: x.capi.cloud.tencent.com
+      expected: match
+      type: DOMAIN-SUFFIX
+      actual: match
+      result: pass
+    - input: x.capi.cloud.tencent.com.evil.example
+      expected: no_match
+      type: DOMAIN-SUFFIX
+      actual: no_match
+      result: pass
+overall_status: pass

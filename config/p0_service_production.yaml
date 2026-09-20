@@ -109,12 +109,12 @@ services:
     identity: pass
     source: pass
     canonical: pass
-    semantic_audit: pending
+    semantic_audit: pass
     overlap_audit: pass
     seven_client: pass
     golden: pass
     release: pass
-    status: blocked
+    status: production
   taobao:
     identity: pass
     source: pass

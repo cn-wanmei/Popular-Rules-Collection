@@ -210,6 +210,54 @@ services:
     snapshot: config/p0_batch01_snapshots/2026-09-20/tencentcloud.list
     status: complete
     memberships:
+    - type: DOMAIN-SUFFIX
+      value: bill.cloud.tencent.com
+      identity_key: domain-suffix|bill.cloud.tencent.com
+      rule_id: be6a9646f53836a16c6f6aa1d0967ddf52dc511ab37fdf1cc62bf761d05fbab4
+    - type: DOMAIN-SUFFIX
+      value: buy.cloud.tencent.com
+      identity_key: domain-suffix|buy.cloud.tencent.com
+      rule_id: 2f3d419c08f679b5a4064bdd2e37e2eeb3f98c587e1a5d7e30dc915d54634c88
+    - type: DOMAIN-SUFFIX
+      value: capi.cloud.tencent.com
+      identity_key: domain-suffix|capi.cloud.tencent.com
+      rule_id: bb88bd1ed3f0790017cd75a283c8d1598e64474e11b143b5e62225bcd204288a
+    - type: DOMAIN-SUFFIX
+      value: cloud.tencent.com
+      identity_key: domain-suffix|cloud.tencent.com
+      rule_id: cda28c18797da9ba0884e8789d67818441c0ec4e2fc991744baa4fdfce22c22d
+    - type: DOMAIN-SUFFIX
+      value: console.cloud.tencent.com
+      identity_key: domain-suffix|console.cloud.tencent.com
+      rule_id: 600838e3141e4ec2959f2e15cc6a988da8abc0d9c2fc17183cb124ff3abddd90
+    - type: DOMAIN-SUFFIX
+      value: dnspod.cloud.tencent.com
+      identity_key: domain-suffix|dnspod.cloud.tencent.com
+      rule_id: 34a7cbacb6fa212fdc8f29a4089cc10b4bf783ad25e9d749baab739c5050f934
+    - type: DOMAIN-SUFFIX
+      value: iaas.cloud.tencent.com
+      identity_key: domain-suffix|iaas.cloud.tencent.com
+      rule_id: a603ad21f231c60ddfeb6f4e96702c664222326fd981ba7c9c50d78140863e34
+    - type: DOMAIN-SUFFIX
+      value: ide.cloud.tencent.com
+      identity_key: domain-suffix|ide.cloud.tencent.com
+      rule_id: 04d0ce8ce5ffa1d2a6369b6dca8cd93dcee0c0893d8a9f400f8acd5e6588ee17
+    - type: DOMAIN-SUFFIX
+      value: market.cloud.tencent.com
+      identity_key: domain-suffix|market.cloud.tencent.com
+      rule_id: 1cda503071d5f6ee26235ee67d19a535b40f2a420eb9d20d09cdb7e4db29d240
+    - type: DOMAIN-SUFFIX
+      value: mps.cloud.tencent.com
+      identity_key: domain-suffix|mps.cloud.tencent.com
+      rule_id: 8234f5895abcf64651de42f47ea991855bc378c471ad0a113cdd16e5a86a529a
+    - type: DOMAIN-SUFFIX
+      value: tcb.cloud.tencent.com
+      identity_key: domain-suffix|tcb.cloud.tencent.com
+      rule_id: aa019f3eec2ddb2afd1d7b02718685986fda06cdd9be891ebcdf4050e905f45d
+    - type: DOMAIN-SUFFIX
+      value: tencentcloudapi.com
+      identity_key: domain-suffix|tencentcloudapi.com
+      rule_id: 404a012fdce3573219ce095db8578c214e3e88435ea5f3ef2434411ecc6c263d
     - type: IP-CIDR
       value: 1.116.116.0/22
       identity_key: ip-cidr|1.116.116.0/22

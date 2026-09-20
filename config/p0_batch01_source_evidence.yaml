@@ -71,8 +71,8 @@ services:
     immutable_snapshot:
       status: complete
       path: config/p0_batch01_snapshots/2026-09-20/tencentcloud.list
-      sha256: e5421c2f2f93e2f2e28cfcc2c7c85d62b5ad013fc5204445de513b50437c0ded
-      rule_count: 104
+      sha256: edc66511911b3840cbac9c67a9bf4a6ba0e2f8d59dc2cd6535c2659d5a768c73
+      rule_count: 116
 status: immutable_snapshot_complete
 next_required: execute semantic_and_overlap_audits; TencentCloud canonical membership
   is now complete
