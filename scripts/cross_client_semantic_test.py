@@ -162,21 +162,22 @@ def main() -> int:
     failures: list[dict[str, Any]] = []
     passed: list[str] = []
 
+    def semantic_normalize(rule: tuple[str, str]) -> tuple[str, str]:
+        typ, value = rule
+        if typ.startswith("domain") or typ.replace("_", "-").startswith("domain"):
+            typ, value = normalize_domain_rule_type(typ, value)
+        return typ, value
+
+    normalized_canonical = {semantic_normalize(rule) for rule in ir_rules}
+
     for client, cfg in sorted(clients.items()):
         capability = {_norm_type(str(x)) for x in cfg.get("native_rule_types", [])}
-        if client == "singbox":
-            expected = {
-                ("ip_cidr" if typ == "ip_cidr6" else typ, value)
-                for typ, value in ir_rules
-                if typ in capability
-            }
-        else:
-            expected = {(typ, value) for typ, value in ir_rules if typ in capability}
-        actual = _extract_client(args.generated / client, str(cfg["artifact"]))
         normalized_ir = {
             ("ip_cidr" if typ == "ip_cidr6" else typ, value)
-            for typ, value in ir_rules
-        } if client == "singbox" else ir_rules
+            for typ, value in normalized_canonical
+        } if client == "singbox" else normalized_canonical
+        expected = {rule for rule in normalized_ir if rule[0] in capability}
+        actual = _extract_client(args.generated / client, str(cfg["artifact"]))
         missing = sorted(expected - actual)
         unexpected = sorted(actual - normalized_ir)
         if missing or unexpected:
