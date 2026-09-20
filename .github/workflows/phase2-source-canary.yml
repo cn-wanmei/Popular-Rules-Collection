@@ -167,6 +167,7 @@ jobs:
           REQUESTED_SERVICE: ${{ inputs.service }}
 
       - name: Run selected Source → V3 canary and rollback rehearsal
+        id: canary
         if: steps.services.outputs.count != '0'
         run: >-
           PYTHONPATH=. python scripts/phase2_source_canary.py
@@ -187,7 +188,7 @@ jobs:
         run: python scripts/canary_attestation.py
 
       - name: Production Unlock qualification (non-mutating)
-        if: success() && steps.services.outputs.count == '1'
+        if: steps.services.outputs.count == '1' && steps.canary.outcome == 'success'
         run: |
           service="${{ steps.services.outputs.services }}"
           python scripts/phase2_production_unlock_gate.py \
