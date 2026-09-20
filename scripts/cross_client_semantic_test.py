@@ -10,6 +10,8 @@ from typing import Any
 
 import yaml
 
+from src.engine.ingest.normalizer import normalize_domain_rule_type
+
 TYPE_FIELDS = {
     "domain": "domain",
     "domain_suffix": "domain_suffix",
