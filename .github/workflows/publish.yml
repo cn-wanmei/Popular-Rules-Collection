@@ -108,17 +108,17 @@ jobs:
       - name: Verify immutable artifact identity
         shell: bash
         env:
-          EXPECTED_BUILD_RUN_ID: \${{ inputs.build_run_id }}
-          EXPECTED_BUILD_SHA: \${{ inputs.build_head_sha }}
-          ARTIFACT_NAME: \${{ steps.artifact.outputs.artifact_name }}
+          EXPECTED_BUILD_RUN_ID: ${{ inputs.build_run_id }}
+          EXPECTED_BUILD_SHA: ${{ inputs.build_head_sha }}
+          ARTIFACT_NAME: ${{ steps.artifact.outputs.artifact_name }}
         run: |
           set -euo pipefail
-          test "$(cat release-candidate/build-run-id.txt)" = "\${EXPECTED_BUILD_RUN_ID}"
-          test "$(cat release-candidate/build-head-sha.txt)" = "\${EXPECTED_BUILD_SHA}"
+          test "$(cat release-candidate/build-run-id.txt)" = "${EXPECTED_BUILD_RUN_ID}"
+          test "$(cat release-candidate/build-head-sha.txt)" = "${EXPECTED_BUILD_SHA}"
           ENGINE_RUN_ID="$(cat release-candidate/run-id.txt)"
-          test -d "release-candidate/data/runs/\${ENGINE_RUN_ID}"
-          test -s "release-candidate/data/runs/\${ENGINE_RUN_ID}/release/manifest.json"
-          echo "Downloaded exact immutable artifact \${ARTIFACT_NAME} (build_run=\${EXPECTED_BUILD_RUN_ID}, head_sha=\${EXPECTED_BUILD_SHA}, engine_run=\${ENGINE_RUN_ID})."
+          test -d "release-candidate/data/runs/${ENGINE_RUN_ID}"
+          test -s "release-candidate/data/runs/${ENGINE_RUN_ID}/release/manifest.json"
+          echo "Downloaded exact immutable artifact ${ARTIFACT_NAME} (build_run=${EXPECTED_BUILD_RUN_ID}, head_sha=${EXPECTED_BUILD_SHA}, engine_run=${ENGINE_RUN_ID})."
       - name: Architecture Gate
         run: python scripts/architecture_gate.py
 
