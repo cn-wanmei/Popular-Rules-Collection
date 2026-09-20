@@ -29,12 +29,12 @@ services:
     identity: pass
     source: pass
     canonical: pass
-    semantic_audit: blocked
-    overlap_audit: pending
+    semantic_audit: pass
+    overlap_audit: pass
     seven_client: pass
     golden: pass
     release: pass
-    status: blocked
+    status: production
   appledev:
     identity: pass
     source: pass

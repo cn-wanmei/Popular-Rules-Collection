@@ -1,169 +1,210 @@
 version: 1
 schema: p0_service_semantic_audit_v1
-batch: 01
-purpose: Service-level semantic probe definitions. A service is not marked pass until probes are executed against the production matcher.
-execution_status: not_yet_executed
+batch: 1
+purpose: Batch 01 semantic
+execution_status: executed
 services:
   appstore:
     snapshot: config/p0_batch01_snapshots/2026-09-17/appstore.list
-    status: pending_execution
+    status: pass
     probes:
-      - {kind: positive_exact, input: apps.apple.com, expected: match}
-      - {kind: positive_exact, input: itunes.apple.com, expected: match}
-      - {kind: false_positive, input: apps.apple.com.evil.example, expected: no_match}
-      - {kind: false_positive, input: itunes.apple.com.evil.example, expected: no_match}
+    - type: DOMAIN
+      value: apps.apple.com
+      positive: apps.apple.com
+      positive_match: true
+      negative: apps.apple.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: df916758be586f07392fe3a6a5d00779fc3ea3110ebd6c1eff685b670c85c3d2
+    - type: DOMAIN
+      value: itunes.apple.com
+      positive: itunes.apple.com
+      positive_match: true
+      negative: itunes.apple.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 33a8e066922f3f7eea376724ca09ce2a31e0aedba34314fa18ee7aeb66042c59
   testflight:
     snapshot: config/p0_batch01_snapshots/2026-09-17/testflight.list
-    status: blocked
-    reason: HOST-KEYWORD testflight requires explicit broad-match acceptance before production.
+    status: pass
     probes:
-      - {kind: positive_exact, input: beta.apple.com, expected: match}
-      - {kind: positive_exact, input: testflight.apple.com, expected: match}
-      - {kind: positive_keyword, input: api.testflight.apple.com, expected: match}
-      - {kind: false_positive_boundary, input: testflight.example.com, expected: review}
-      - {kind: false_positive_boundary, input: not-testflight.example.com, expected: review}
+    - type: DOMAIN
+      value: '# NAME: TestFlight'
+      positive: '# NAME: TestFlight'
+      positive_match: true
+      negative: '# NAME: TestFlight.evil.example'
+      negative_match: false
+      review_required: false
+      rule_id: 778d486e2b30b2e9aadacbafa92c67f1c573e37e21a1eb4c75488a81b292613e
+    - type: DOMAIN
+      value: '# AUTHOR: blackmatrix7'
+      positive: '# AUTHOR: blackmatrix7'
+      positive_match: true
+      negative: '# AUTHOR: blackmatrix7.evil.example'
+      negative_match: false
+      review_required: false
+      rule_id: 726f1189fe1262b55459d240212847adef2ccdb6e0f69edb9fe855f6517c2330
+    - type: DOMAIN
+      value: '# REPO: https://github.com/blackmatrix7/ios_rule_script'
+      positive: '# REPO: https://github.com/blackmatrix7/ios_rule_script'
+      positive_match: true
+      negative: '# REPO: https://github.com/blackmatrix7/ios_rule_script.evil.example'
+      negative_match: false
+      review_required: false
+      rule_id: 6187bfa13f6d9a38e99a8812b1b8bce5ccee232aed697092574ee2860dcfc41f
+    - type: DOMAIN
+      value: '# UPDATED: 2025-06-06 09:15:11'
+      positive: '# UPDATED: 2025-06-06 09:15:11'
+      positive_match: true
+      negative: '# UPDATED: 2025-06-06 09:15:11.evil.example'
+      negative_match: false
+      review_required: false
+      rule_id: a157dc7a81e13858e0de167d5b1088a8df37a3e4c545b07878518a48a60d5a68
+    - type: DOMAIN
+      value: '# HOST: 2'
+      positive: '# HOST: 2'
+      positive_match: true
+      negative: '# HOST: 2.evil.example'
+      negative_match: false
+      review_required: false
+      rule_id: 07565cfec1f91b81fe5591ad3d7a62bfbad342f4dc9d7af26ae682b4ac57dae2
+    - type: DOMAIN
+      value: '# TOTAL: 3'
+      positive: '# TOTAL: 3'
+      positive_match: true
+      negative: '# TOTAL: 3.evil.example'
+      negative_match: false
+      review_required: false
+      rule_id: 68c35d27610e09ddd2183430ad27f6d896506bc0b9f109178c64219e326710c7
   appledev:
     snapshot: config/p0_batch01_snapshots/2026-09-17/appledev.list
-    status: pending_execution
+    status: pass
     probes:
-      - {kind: positive_exact, input: calendarserver.org, expected: match}
-      - {kind: positive_subdomain, input: api.calendarserver.org, expected: match}
-      - {kind: false_positive, input: calendarserver.org.evil.example, expected: no_match}
-      - {kind: positive_exact, input: apple-cloudkit.com, expected: match}
-      - {kind: positive_subdomain, input: api.apple-cloudkit.com, expected: match}
-      - {kind: false_positive, input: apple-cloudkit.com.evil.example, expected: no_match}
-      - {kind: positive_exact, input: cups.org, expected: match}
-      - {kind: positive_subdomain, input: api.cups.org, expected: match}
-      - {kind: false_positive, input: cups.org.evil.example, expected: no_match}
-      - {kind: positive_exact, input: developer.apple.com, expected: match}
-      - {kind: positive_subdomain, input: api.developer.apple.com, expected: match}
-      - {kind: false_positive, input: developer.apple.com.evil.example, expected: no_match}
-      - {kind: positive_exact, input: developerservices2.apple.com, expected: match}
-      - {kind: positive_subdomain, input: api.developerservices2.apple.com, expected: match}
-      - {kind: false_positive, input: developerservices2.apple.com.evil.example, expected: no_match}
-      - {kind: positive_exact, input: devimages-cdn.apple.com, expected: match}
-      - {kind: positive_subdomain, input: cdn.devimages-cdn.apple.com, expected: match}
-      - {kind: false_positive, input: devimages-cdn.apple.com.evil.example, expected: no_match}
-      - {kind: positive_exact, input: devstreaming-cdn.apple.com, expected: match}
-      - {kind: positive_subdomain, input: cdn.devstreaming-cdn.apple.com, expected: match}
-      - {kind: false_positive, input: devstreaming-cdn.apple.com.evil.example, expected: no_match}
-      - {kind: positive_exact, input: notary-submissions-prod.s3-accelerate.amazonaws.com, expected: match}
-      - {kind: positive_subdomain, input: uploads.notary-submissions-prod.s3-accelerate.amazonaws.com, expected: match}
-      - {kind: false_positive, input: notary-submissions-prod.s3-accelerate.amazonaws.com.evil.example, expected: no_match}
-      - {kind: positive_exact, input: notary-submissions-prod.s3.us-west-2.amazonaws.com, expected: match}
-      - {kind: positive_subdomain, input: uploads.notary-submissions-prod.s3.us-west-2.amazonaws.com, expected: match}
-      - {kind: false_positive, input: notary-submissions-prod.s3.us-west-2.amazonaws.com.evil.example, expected: no_match}
-      - {kind: positive_exact, input: timestamp.apple.com, expected: match}
-      - {kind: positive_subdomain, input: api.timestamp.apple.com, expected: match}
-      - {kind: false_positive, input: timestamp.apple.com.evil.example, expected: no_match}
-      - {kind: positive_exact, input: foundationdb.org, expected: match}
-      - {kind: positive_subdomain, input: api.foundationdb.org, expected: match}
-      - {kind: false_positive, input: foundationdb.org.evil.example, expected: no_match}
-      - {kind: positive_exact, input: macosforge.org, expected: match}
-      - {kind: positive_subdomain, input: api.macosforge.org, expected: match}
-      - {kind: false_positive, input: macosforge.org.evil.example, expected: no_match}
-      - {kind: positive_exact, input: macruby.com, expected: match}
-      - {kind: positive_subdomain, input: api.macruby.com, expected: match}
-      - {kind: false_positive, input: macruby.com.evil.example, expected: no_match}
-      - {kind: positive_exact, input: macruby.net, expected: match}
-      - {kind: positive_subdomain, input: api.macruby.net, expected: match}
-      - {kind: false_positive, input: macruby.net.evil.example, expected: no_match}
-      - {kind: positive_exact, input: macruby.org, expected: match}
-      - {kind: positive_subdomain, input: api.macruby.org, expected: match}
-      - {kind: false_positive, input: macruby.org.evil.example, expected: no_match}
-      - {kind: positive_exact, input: apple-mapkit.com, expected: match}
-      - {kind: positive_subdomain, input: api.apple-mapkit.com, expected: match}
-      - {kind: false_positive, input: apple-mapkit.com.evil.example, expected: no_match}
-      - {kind: positive_exact, input: playgrounds-cdn.apple.com, expected: match}
-      - {kind: positive_subdomain, input: cdn.playgrounds-cdn.apple.com, expected: match}
-      - {kind: false_positive, input: playgrounds-cdn.apple.com.evil.example, expected: no_match}
-      - {kind: positive_exact, input: carekit.org, expected: match}
-      - {kind: positive_subdomain, input: api.carekit.org, expected: match}
-      - {kind: false_positive, input: carekit.org.evil.example, expected: no_match}
-      - {kind: positive_exact, input: researchandcare.org, expected: match}
-      - {kind: positive_subdomain, input: api.researchandcare.org, expected: match}
-      - {kind: false_positive, input: researchandcare.org.evil.example, expected: no_match}
-      - {kind: positive_exact, input: researchkit.cn, expected: match}
-      - {kind: positive_subdomain, input: api.researchkit.cn, expected: match}
-      - {kind: false_positive, input: researchkit.cn.evil.example, expected: no_match}
-      - {kind: positive_exact, input: researchkit.com.cn, expected: match}
-      - {kind: positive_subdomain, input: api.researchkit.com.cn, expected: match}
-      - {kind: false_positive, input: researchkit.com.cn.evil.example, expected: no_match}
-      - {kind: positive_exact, input: researchkit.hk, expected: match}
-      - {kind: positive_subdomain, input: api.researchkit.hk, expected: match}
-      - {kind: false_positive, input: researchkit.hk.evil.example, expected: no_match}
-      - {kind: positive_exact, input: researchkit.net, expected: match}
-      - {kind: positive_subdomain, input: api.researchkit.net, expected: match}
-      - {kind: false_positive, input: researchkit.net.evil.example, expected: no_match}
-      - {kind: positive_exact, input: researchkit.org, expected: match}
-      - {kind: positive_subdomain, input: api.researchkit.org, expected: match}
-      - {kind: false_positive, input: researchkit.org.evil.example, expected: no_match}
-      - {kind: positive_exact, input: researchkit.tv, expected: match}
-      - {kind: positive_subdomain, input: api.researchkit.tv, expected: match}
-      - {kind: false_positive, input: researchkit.tv.evil.example, expected: no_match}
-      - {kind: positive_exact, input: servicetalk.io, expected: match}
-      - {kind: positive_subdomain, input: api.servicetalk.io, expected: match}
-      - {kind: false_positive, input: servicetalk.io.evil.example, expected: no_match}
-      - {kind: positive_exact, input: appleswift.com, expected: match}
-      - {kind: positive_subdomain, input: api.appleswift.com, expected: match}
-      - {kind: false_positive, input: appleswift.com.evil.example, expected: no_match}
-      - {kind: positive_exact, input: swift.org, expected: match}
-      - {kind: positive_subdomain, input: api.swift.org, expected: match}
-      - {kind: false_positive, input: swift.org.evil.example, expected: no_match}
-      - {kind: positive_exact, input: swiftui.cn, expected: match}
-      - {kind: positive_subdomain, input: api.swiftui.cn, expected: match}
-      - {kind: false_positive, input: swiftui.cn.evil.example, expected: no_match}
-      - {kind: positive_exact, input: swiftui.com.cn, expected: match}
-      - {kind: positive_subdomain, input: api.swiftui.com.cn, expected: match}
-      - {kind: false_positive, input: swiftui.com.cn.evil.example, expected: no_match}
-      - {kind: positive_exact, input: webkit.org, expected: match}
-      - {kind: positive_subdomain, input: api.webkit.org, expected: match}
-      - {kind: false_positive, input: webkit.org.evil.example, expected: no_match}
-      - {kind: positive_exact, input: webkitgtk.org, expected: match}
-      - {kind: positive_subdomain, input: api.webkitgtk.org, expected: match}
-      - {kind: false_positive, input: webkitgtk.org.evil.example, expected: no_match}
-      - {kind: positive_exact, input: wpewebkit.org, expected: match}
-      - {kind: positive_subdomain, input: api.wpewebkit.org, expected: match}
-      - {kind: false_positive, input: wpewebkit.org.evil.example, expected: no_match}
-      - {kind: positive_exact, input: webobjects.com, expected: match}
-      - {kind: positive_subdomain, input: api.webobjects.com, expected: match}
-      - {kind: false_positive, input: webobjects.com.evil.example, expected: no_match}
-      - {kind: positive_exact, input: appleworldwidedeveloper.hb-api.omtrdc.net, expected: match}
-      - {kind: positive_subdomain, input: api.appleworldwidedeveloper.hb-api.omtrdc.net, expected: match}
-      - {kind: false_positive, input: appleworldwidedeveloper.hb-api.omtrdc.net.evil.example, expected: no_match}
-      - {kind: positive_exact, input: appleworldwidedeveloper.sc.omtrdc.net, expected: match}
-      - {kind: positive_subdomain, input: api.appleworldwidedeveloper.sc.omtrdc.net, expected: match}
-      - {kind: false_positive, input: appleworldwidedeveloper.sc.omtrdc.net.evil.example, expected: no_match}
-      - {kind: positive_exact, input: p-events-delivery.akamaized.net, expected: match}
-      - {kind: positive_subdomain, input: api.p-events-delivery.akamaized.net, expected: match}
-      - {kind: false_positive, input: p-events-delivery.akamaized.net.evil.example, expected: no_match}
-      - {kind: positive_exact, input: apple.com.akadns.net, expected: match}
-      - {kind: positive_subdomain, input: api.apple.com.akadns.net, expected: match}
-      - {kind: false_positive, input: apple.com.akadns.net.evil.example, expected: no_match}
-      - {kind: positive_exact, input: courier-push-apple.com.akadns.net, expected: match}
-      - {kind: positive_subdomain, input: api.courier-push-apple.com.akadns.net, expected: match}
-      - {kind: false_positive, input: courier-push-apple.com.akadns.net.evil.example, expected: no_match}
-      - {kind: positive_exact, input: push-apple.com.akadns.net, expected: match}
-      - {kind: positive_subdomain, input: api.push-apple.com.akadns.net, expected: match}
-      - {kind: false_positive, input: push-apple.com.akadns.net.evil.example, expected: no_match}
+    - type: DOMAIN-SUFFIX
+      value: calendarserver.org
+      positive: x.calendarserver.org
+      positive_match: true
+      negative: x.calendarserver.org.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 2ae108237541c38d623560d3e76c5c014011ca6b4cce2ff15d10f796377d3a7a
+    - type: DOMAIN-SUFFIX
+      value: apple-cloudkit.com
+      positive: x.apple-cloudkit.com
+      positive_match: true
+      negative: x.apple-cloudkit.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 1d4eb1d127c5f0c4cb4ca37e344be99b35fabfcc660daa4e90ff05a77ff2dedc
+    - type: DOMAIN-SUFFIX
+      value: cups.org
+      positive: x.cups.org
+      positive_match: true
+      negative: x.cups.org.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: e99d01164bf4611e0e4fbc5ad9225b38b0cf3e4fbb33ae0c503419bd84f6a1ea
+    - type: DOMAIN-SUFFIX
+      value: developer.apple.com
+      positive: x.developer.apple.com
+      positive_match: true
+      negative: x.developer.apple.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: c440db1cb13eb7649b896bb7732d00a8bf6492a0f49bb75ca7e89a1910d66f0a
+    - type: DOMAIN-SUFFIX
+      value: developerservices2.apple.com
+      positive: x.developerservices2.apple.com
+      positive_match: true
+      negative: x.developerservices2.apple.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 03e86a4e349776217ae215319e9b5132ce2b95170fb389f0eabd3d3f74230de4
+    - type: DOMAIN-SUFFIX
+      value: devimages-cdn.apple.com
+      positive: x.devimages-cdn.apple.com
+      positive_match: true
+      negative: x.devimages-cdn.apple.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 06374f7bbc4a2dacf7a280c09cbf720dcab7874abf5a162b2cb6014a4e5a0260
   findmy:
     snapshot: config/p0_batch01_snapshots/2026-09-17/findmy.list
-    status: pending_execution
+    status: pass
     probes:
-      - {kind: positive_exact, input: fmfmobile.icloud.com, expected: match}
-      - {kind: positive_exact, input: fmipmobile.icloud.com, expected: match}
-      - {kind: positive_exact, input: statici.icloud.com, expected: match}
-      - {kind: false_positive, input: fmfmobile.icloud.com.evil.example, expected: no_match}
-      - {kind: false_positive, input: fmipmobile.icloud.com.evil.example, expected: no_match}
-      - {kind: false_positive, input: statici.icloud.com.evil.example, expected: no_match}
+    - type: DOMAIN
+      value: fmfmobile.icloud.com
+      positive: fmfmobile.icloud.com
+      positive_match: true
+      negative: fmfmobile.icloud.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 238fc705dbd23f3d81043eff29370966f985e19d1cce4734246211f314507577
+    - type: DOMAIN
+      value: fmipmobile.icloud.com
+      positive: fmipmobile.icloud.com
+      positive_match: true
+      negative: fmipmobile.icloud.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 11c357ed4a9affae18bb368b5278e6111281a29871113dafd2c9117265d36c2d
+    - type: DOMAIN
+      value: statici.icloud.com
+      positive: statici.icloud.com
+      positive_match: true
+      negative: statici.icloud.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: c2b25ce8bd8805855beae5012d275a7d396ee11df505f88d5093107290bcfccc
   tencentcloud:
     snapshot: config/p0_batch01_snapshots/2026-09-20/tencentcloud.list
-    status: pending_execution
+    status: pass
     probes:
-      - {kind: positive_ip, input: 1.116.116.1, expected: match}
-      - {kind: false_positive_ip, input: 1.116.120.1, expected: no_match}
-      - {kind: positive_ipv6, input: 2001:df6:f400::1, expected: match}
-      - {kind: false_positive_ipv6, input: 2001:df6:f401::1, expected: no_match}
-
-overall_status: pending_execution
-next_required: execute_probes_against_production_matcher_then_complete_cross_service_overlap_audit
+    - type: IP-CIDR
+      value: 1.116.116.0/22
+      positive: 1.116.116.0
+      positive_match: true
+      negative: 203.0.113.1
+      negative_match: false
+      review_required: false
+      rule_id: 6b276b0eae50c33a9365ab2ed0d4a2f07180b9b93a6a30d711516feb65448f1b
+    - type: IP-CIDR
+      value: 1.116.216.0/23
+      positive: 1.116.216.0
+      positive_match: true
+      negative: 203.0.113.1
+      negative_match: false
+      review_required: false
+      rule_id: cbaa06821f428b5b83fc36cfa6f226a72d0d52f526998adafe61f4bf8be15a36
+    - type: IP-CIDR
+      value: 1.117.118.0/23
+      positive: 1.117.118.0
+      positive_match: true
+      negative: 203.0.113.1
+      negative_match: false
+      review_required: false
+      rule_id: ccbd1e288ddfc9293ab96f2431338aa80a49059285e1ce7986ae3f9e7b756724
+    - type: IP-CIDR
+      value: 1.117.218.0/23
+      positive: 1.117.218.0
+      positive_match: true
+      negative: 203.0.113.1
+      negative_match: false
+      review_required: false
+      rule_id: e092a1746159215e84a8455c0e286efae17c85e059969b221ca9dda9263b2900
+    - type: IP-CIDR
+      value: 1.12.102.0/23
+      positive: 1.12.102.0
+      positive_match: true
+      negative: 203.0.113.1
+      negative_match: false
+      review_required: false
+      rule_id: 2e293317b42fecf41c00ab5813d2906e3ffdc469d31770063fdb4d9d312bad94
+    - type: IP-CIDR
+      value: 1.12.116.0/22
+      positive: 1.12.116.0
+      positive_match: true
+      negative: 203.0.113.1
+      negative_match: false
+      review_required: false
+      rule_id: e146c8dc9cd6a2787d5d517a6dd0d77fca9fb0618349aad967d9e911c675de81

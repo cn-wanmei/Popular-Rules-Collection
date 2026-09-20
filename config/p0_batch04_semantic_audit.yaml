@@ -1,0 +1,233 @@
+version: 1
+schema: p0_service_semantic_audit_v1
+batch: 4
+execution_status: executed
+services:
+  qq:
+    snapshot: config/p0_batch04_snapshots/2026-09-20/qq.list
+    status: pass
+    probes:
+    - type: DOMAIN-SUFFIX
+      value: qq.com
+      positive: x.qq.com
+      positive_match: true
+      negative: x.qq.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: db95d8405cf5757d0caf15d04c3ee4a2f81e15c28dbcc65e72a7b6b04c779ee5
+    - type: DOMAIN-SUFFIX
+      value: id.qq.com
+      positive: x.id.qq.com
+      positive_match: true
+      negative: x.id.qq.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 9fa503ab986c104f9e0fa8e07d57393296ca3c3262b4c8ea224fd7d3d5548fff
+    - type: DOMAIN-SUFFIX
+      value: qun.qq.com
+      positive: x.qun.qq.com
+      positive_match: true
+      negative: x.qun.qq.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: c3aeae351ec793a6a88da8d62c1b7a8e078fa3321a3ff821b003a36af697a2bd
+    - type: DOMAIN-SUFFIX
+      value: w.qq.com
+      positive: x.w.qq.com
+      positive_match: true
+      negative: x.w.qq.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 7c56f4687f4caca8d54db2bff6456e09a06f7e5c58d45e74509085153383ac8b
+    - type: DOMAIN-SUFFIX
+      value: im.qq.com
+      positive: x.im.qq.com
+      positive_match: true
+      negative: x.im.qq.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: cd6d07b2be23ec2bb4e63bc3c0f6547ff9f488d6f220e56366567e2e3332527b
+  wecom:
+    snapshot: config/p0_batch04_snapshots/2026-09-20/wecom.list
+    status: pass
+    probes:
+    - type: DOMAIN-SUFFIX
+      value: work.weixin.qq.com
+      positive: x.work.weixin.qq.com
+      positive_match: true
+      negative: x.work.weixin.qq.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 5bb33267d3ea0956d85a955577b6c65adc09cbf43c128cf964c442f2ca22d103
+    - type: DOMAIN-SUFFIX
+      value: qyapi.weixin.qq.com
+      positive: x.qyapi.weixin.qq.com
+      positive_match: true
+      negative: x.qyapi.weixin.qq.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: b8b843794927688490398d74d48c5d888fde16af213cb84a6ce1c80b666af3d1
+  tencentmeeting:
+    snapshot: config/p0_batch04_snapshots/2026-09-20/tencentmeeting.list
+    status: pass
+    probes:
+    - type: DOMAIN-SUFFIX
+      value: meeting.tencent.com
+      positive: x.meeting.tencent.com
+      positive_match: true
+      negative: x.meeting.tencent.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: f80476b12272a9060b87698788ecb8b7e7f90af6c48220c3a40e176824840c61
+    - type: DOMAIN-SUFFIX
+      value: voovmeeting.com
+      positive: x.voovmeeting.com
+      positive_match: true
+      negative: x.voovmeeting.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 9b7e230903e76d4385a8958710b9605044d10fc354fa4a07cd821f62e3f21705
+  baidunetdisk:
+    snapshot: config/p0_batch04_snapshots/2026-09-20/baidunetdisk.list
+    status: pass
+    probes:
+    - type: DOMAIN-SUFFIX
+      value: pan.baidu.com
+      positive: x.pan.baidu.com
+      positive_match: true
+      negative: x.pan.baidu.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 4ab6b932fd67790f2006d8c7ca52ce1abcc91341a293f12f04395f9617e796df
+    - type: DOMAIN-SUFFIX
+      value: yun.baidu.com
+      positive: x.yun.baidu.com
+      positive_match: true
+      negative: x.yun.baidu.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 44d21acfae87b0d35ea92c28c8c8ee47ffa66e05bb3e7b71aafe60318b8b6f78
+  youdao:
+    snapshot: config/p0_batch04_snapshots/2026-09-20/youdao.list
+    status: pass
+    probes:
+    - type: DOMAIN-SUFFIX
+      value: youdao.com
+      positive: x.youdao.com
+      positive_match: true
+      negative: x.youdao.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: d9e06d1e7582352689a8d64e5be677cceee9a64db8058293a2f88906cc854cef
+    - type: DOMAIN-SUFFIX
+      value: dict.youdao.com
+      positive: x.dict.youdao.com
+      positive_match: true
+      negative: x.dict.youdao.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 45bea8db203e6b3296c78f80d7d89b45c41f18a77c6c5b0ad24ab4c30e1fe47c
+    - type: DOMAIN-SUFFIX
+      value: shared.youdao.com
+      positive: x.shared.youdao.com
+      positive_match: true
+      negative: x.shared.youdao.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: bb508e643c6451bc04c840e009177153cad78356ec997cec7d3f9effd8215bc2
+  googlecloud:
+    snapshot: config/p0_batch04_snapshots/2026-09-20/googlecloud.list
+    status: pass
+    probes:
+    - type: DOMAIN-SUFFIX
+      value: cloud.google.com
+      positive: x.cloud.google.com
+      positive_match: true
+      negative: x.cloud.google.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 214a6b8f3df561bd6bb679f4bd9be49732b30b999cf5f3caa164a0f29be520d1
+    - type: DOMAIN-SUFFIX
+      value: googleapis.com
+      positive: x.googleapis.com
+      positive_match: true
+      negative: x.googleapis.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 7c0af79518ef53ac2d9287b9375ff1ce259a9cf364f2fd66e7fe93b1b2aca289
+    - type: DOMAIN-SUFFIX
+      value: gcp.cloud
+      positive: x.gcp.cloud
+      positive_match: true
+      negative: x.gcp.cloud.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 2447cac3a941b6f7b2ac85518c21166cbf7d401d76725e4f1ee6e7fba60a9d59
+  bitbucket:
+    snapshot: config/p0_batch04_snapshots/2026-09-20/bitbucket.list
+    status: pass
+    probes:
+    - type: DOMAIN-SUFFIX
+      value: bitbucket.org
+      positive: x.bitbucket.org
+      positive_match: true
+      negative: x.bitbucket.org.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 676a27f591d0440f8e89a7231b2ae6df45e5f4995db77a5bbfda4be6b9d2817e
+    - type: DOMAIN-SUFFIX
+      value: bitbucket.io
+      positive: x.bitbucket.io
+      positive_match: true
+      negative: x.bitbucket.io.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: ec5c0a54942becd36a6e70e8d8be4d3c45482eeda29d1d995b739c14faec554e
+  pypi:
+    snapshot: config/p0_batch04_snapshots/2026-09-20/pypi.list
+    status: pass
+    probes:
+    - type: DOMAIN-SUFFIX
+      value: pypi.org
+      positive: x.pypi.org
+      positive_match: true
+      negative: x.pypi.org.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 9016b2d28e736ce95a01a0a55e3d41748fb6b0191967fa8944b2647dd77bdd49
+    - type: DOMAIN-SUFFIX
+      value: pythonhosted.org
+      positive: x.pythonhosted.org
+      positive_match: true
+      negative: x.pythonhosted.org.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 897afa1e4e3927b4c72702f8b6adbeb38ab9d31f4ab592aef294c684a51c2d9a
+    - type: DOMAIN-SUFFIX
+      value: files.pythonhosted.org
+      positive: x.files.pythonhosted.org
+      positive_match: true
+      negative: x.files.pythonhosted.org.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: e4cb38ed768a9d6191640fd0e2c2f01eef35e84adae7654a5e3cea950ea0cfcf
+  youtubemusic:
+    snapshot: config/p0_batch04_snapshots/2026-09-20/youtubemusic.list
+    status: pass
+    probes:
+    - type: DOMAIN-SUFFIX
+      value: music.youtube.com
+      positive: x.music.youtube.com
+      positive_match: true
+      negative: x.music.youtube.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: c43a3f3b7940b62164846585fea46a6e3e367a3af5206b60f64083702291fb7e
+    - type: DOMAIN-SUFFIX
+      value: youtubemusic.googleapis.com
+      positive: x.youtubemusic.googleapis.com
+      positive_match: true
+      negative: x.youtubemusic.googleapis.com.evil.example
+      negative_match: false
+      review_required: false
+      rule_id: 4897dfe958fce9cff9634fa7324ba04f4cbd0d69d61a346b23ff6eebb427bd40

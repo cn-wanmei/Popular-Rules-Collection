@@ -1,0 +1,81 @@
+version: 1
+schema: p0_service_source_evidence_v1
+batch: 2
+services:
+  taobao:
+    primary_source:
+      source: popular-rules-source
+      url: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/taobao/domains.txt
+      verification: official_domain_snapshot
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_source_snapshots/2026-09-20/taobao.list
+      sha256: 1285da5dbf3ae65959fc60f0f3f337236a46535b3877dc078ae13cdec03d74ef
+      rule_count: 24
+  tmall:
+    primary_source:
+      source: popular-rules-source
+      url: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/tmall/domains.txt
+      verification: official_domain_snapshot
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_source_snapshots/2026-09-20/tmall.list
+      sha256: 3e9cbee8dbfbd125ee0f9a73ff3abd2916a3341dbc872ca9005c2223e02d7603
+      rule_count: 14
+  '1688':
+    primary_source:
+      source: popular-rules-source
+      url: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/1688/domains.txt
+      verification: official_domain_snapshot
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_source_snapshots/2026-09-20/1688.list
+      sha256: 369db25f0eae539e99f9f375d7122791204bc7acc4cc99e5ad0056fb9818110d
+      rule_count: 18
+  dingding:
+    primary_source:
+      source: popular-rules-source
+      url: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/dingding/domains.txt
+      verification: official_domain_snapshot
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_source_snapshots/2026-09-20/dingding.list
+      sha256: 16518204c2d2339b06e09af4eb0383bd7d9390107f36ef20476aab1c6c20092a
+      rule_count: 8
+  cainiao:
+    primary_source:
+      source: popular-rules-source
+      url: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/cainiao/domains.txt
+      verification: official_domain_snapshot
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_source_snapshots/2026-09-20/cainiao.list
+      sha256: 990d89f4ec8c3b762a2367858107ee0c999280d8ded7eef5f581ce60af7857a0
+      rule_count: 10
+  qqmail:
+    primary_source:
+      source: popular-rules-source
+      url: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/qqmail/domains.txt
+      verification: official_domain_snapshot
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_source_snapshots/2026-09-20/qqmail.list
+      sha256: 3e9f51bec7b713ac0ce5348be327063b00caf936bdcd768bb2d6c8465ee78259
+      rule_count: 4
+  qqmusic:
+    primary_source:
+      source: popular-rules-source
+      url: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/qqmusic/domains.txt
+      verification: official_domain_snapshot
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_source_snapshots/2026-09-20/qqmusic.list
+      sha256: 362311ead23dbe763afa724ef9b621b87df4a90eea0f7c50c49e84f35a65a028
+      rule_count: 9

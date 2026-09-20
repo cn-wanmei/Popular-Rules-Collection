@@ -1,0 +1,40 @@
+version: 1
+schema: p0_service_overlap_audit_v1
+batch: 3
+scope:
+  services:
+  - airbnb
+  - alibabacloud
+  - aws
+  - azure
+  - bluesky
+  - booking
+  - canva
+  - cursor
+  - deepseek
+  - dewu
+  - doubao
+  - elevenlabs
+  - feishu
+  - firebase
+  - grok
+  - groq
+  - huggingface
+  - messenger
+  - netlify
+  - npm
+  - perplexity
+  - roblox
+  - signal
+  - snapchat
+  - tidal
+  - trello
+  - uber
+  - walmart
+  - wise
+  comparison_basis: canonical_rule_identity
+status: pass
+semantic_overlap:
+  status: pass
+  runtime_probe_count: 0
+  runtime_collisions: []

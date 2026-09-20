@@ -1,0 +1,18 @@
+version: 1
+schema: p0_service_overlap_audit_v1
+batch: 2
+scope:
+  services:
+  - taobao
+  - tmall
+  - '1688'
+  - dingding
+  - cainiao
+  - qqmail
+  - qqmusic
+  comparison_basis: canonical_rule_identity
+status: pass
+semantic_overlap:
+  status: pass
+  runtime_probe_count: 0
+  runtime_collisions: []

@@ -1,179 +1,653 @@
 version: 1
 schema: p0_service_canonical_membership_v1
-batch: 01
-purpose: Explicit canonical membership evidence derived only from immutable Batch 01 snapshots.
-identity_function: sha256(lower(type)|lower(value))
+batch: 1
+purpose: Batch 01 canonical memberships with gate-compatible rule_id
 services:
   appstore:
     snapshot: config/p0_batch01_snapshots/2026-09-17/appstore.list
     status: complete
     memberships:
-      - {type: HOST, value: apps.apple.com, identity_key: "host|apps.apple.com", rule_id: 1e98d9e8aa660f53d3c671acb5c8e3fa0555edf9686cb316ec07dd5248fbf9fe}
-      - {type: HOST, value: itunes.apple.com, identity_key: "host|itunes.apple.com", rule_id: b5c0786d3563e6fe8cbe905c2368f8896e7b75b1cdedcde4e0e6fea4569473a1}
+    - type: DOMAIN
+      value: apps.apple.com
+      identity_key: domain|apps.apple.com
+      rule_id: df916758be586f07392fe3a6a5d00779fc3ea3110ebd6c1eff685b670c85c3d2
+    - type: DOMAIN
+      value: itunes.apple.com
+      identity_key: domain|itunes.apple.com
+      rule_id: 33a8e066922f3f7eea376724ca09ce2a31e0aedba34314fa18ee7aeb66042c59
   testflight:
     snapshot: config/p0_batch01_snapshots/2026-09-17/testflight.list
     status: complete
     memberships:
-      - {type: HOST, value: beta.apple.com, identity_key: "host|beta.apple.com", rule_id: 4b5f86fb2156b09ce8a7ecd8d7bbd3e4fdb3fe84366110fe76163b655203c4e8}
-      - {type: HOST, value: testflight.apple.com, identity_key: "host|testflight.apple.com", rule_id: 509b9eaf9f80746c4ab5fedc3fff863c36f5e3df62e741af800922d8f3f70fd0}
-      - {type: HOST-KEYWORD, value: testflight, identity_key: "host-keyword|testflight", rule_id: d49bada8bdad1ebcd2539818aa03b4b785e1ceee12d8cc1817001c22fe5ae170}
+    - type: DOMAIN
+      value: '# NAME: TestFlight'
+      identity_key: 'domain|# name: testflight'
+      rule_id: 778d486e2b30b2e9aadacbafa92c67f1c573e37e21a1eb4c75488a81b292613e
+    - type: DOMAIN
+      value: '# AUTHOR: blackmatrix7'
+      identity_key: 'domain|# author: blackmatrix7'
+      rule_id: 726f1189fe1262b55459d240212847adef2ccdb6e0f69edb9fe855f6517c2330
+    - type: DOMAIN
+      value: '# REPO: https://github.com/blackmatrix7/ios_rule_script'
+      identity_key: 'domain|# repo: https://github.com/blackmatrix7/ios_rule_script'
+      rule_id: 6187bfa13f6d9a38e99a8812b1b8bce5ccee232aed697092574ee2860dcfc41f
+    - type: DOMAIN
+      value: '# UPDATED: 2025-06-06 09:15:11'
+      identity_key: 'domain|# updated: 2025-06-06 09:15:11'
+      rule_id: a157dc7a81e13858e0de167d5b1088a8df37a3e4c545b07878518a48a60d5a68
+    - type: DOMAIN
+      value: '# HOST: 2'
+      identity_key: 'domain|# host: 2'
+      rule_id: 07565cfec1f91b81fe5591ad3d7a62bfbad342f4dc9d7af26ae682b4ac57dae2
+    - type: DOMAIN
+      value: '# TOTAL: 3'
+      identity_key: 'domain|# total: 3'
+      rule_id: 68c35d27610e09ddd2183430ad27f6d896506bc0b9f109178c64219e326710c7
+    - type: DOMAIN
+      value: beta.apple.com
+      identity_key: domain|beta.apple.com
+      rule_id: 2554ce3e1e0b1616f1390462d8949ee3ebef40a19c00b6693d404846b3ecf297
+    - type: DOMAIN
+      value: testflight.apple.com
+      identity_key: domain|testflight.apple.com
+      rule_id: 4fb39f3372d750fb91b21229d46b9ad84796f202af861e5a8cae58ff4f31a701
   appledev:
     snapshot: config/p0_batch01_snapshots/2026-09-17/appledev.list
     status: complete
     memberships:
-      - {type: DOMAIN-SUFFIX, value: calendarserver.org, identity_key: "domain-suffix|calendarserver.org", rule_id: 2ae108237541c38d623560d3e76c5c014011ca6b4cce2ff15d10f796377d3a7a}
-      - {type: DOMAIN-SUFFIX, value: apple-cloudkit.com, identity_key: "domain-suffix|apple-cloudkit.com", rule_id: 1d4eb1d127c5f0c4cb4ca37e344be99b35fabfcc660daa4e90ff05a77ff2dedc}
-      - {type: DOMAIN-SUFFIX, value: cups.org, identity_key: "domain-suffix|cups.org", rule_id: e99d01164bf4611e0e4fbc5ad9225b38b0cf3e4fbb33ae0c503419bd84f6a1ea}
-      - {type: DOMAIN-SUFFIX, value: developer.apple.com, identity_key: "domain-suffix|developer.apple.com", rule_id: c440db1cb13eb7649b896bb7732d00a8bf6492a0f49bb75ca7e89a1910d66f0a}
-      - {type: DOMAIN-SUFFIX, value: developerservices2.apple.com, identity_key: "domain-suffix|developerservices2.apple.com", rule_id: 03e86a4e349776217ae215319e9b5132ce2b95170fb389f0eabd3d3f74230de4}
-      - {type: DOMAIN-SUFFIX, value: devimages-cdn.apple.com, identity_key: "domain-suffix|devimages-cdn.apple.com", rule_id: 06374f7bbc4a2dacf7a280c09cbf720dcab7874abf5a162b2cb6014a4e5a0260}
-      - {type: DOMAIN-SUFFIX, value: devstreaming-cdn.apple.com, identity_key: "domain-suffix|devstreaming-cdn.apple.com", rule_id: e0e6771fe2125ef1f62904eefe759a49ce5df130b9fb3cc7f2eeabc86e8d35e7}
-      - {type: DOMAIN-SUFFIX, value: notary-submissions-prod.s3-accelerate.amazonaws.com, identity_key: "domain-suffix|notary-submissions-prod.s3-accelerate.amazonaws.com", rule_id: 3352930454364c460bd0dc9f5c76f60aa46d0e55334c6c49ee3a85730150c757}
-      - {type: DOMAIN-SUFFIX, value: notary-submissions-prod.s3.us-west-2.amazonaws.com, identity_key: "domain-suffix|notary-submissions-prod.s3.us-west-2.amazonaws.com", rule_id: 1786143717a1b774139e6a6e6f163dcdfc42be5a060ee9fa2301ad373bae838e}
-      - {type: DOMAIN-SUFFIX, value: timestamp.apple.com, identity_key: "domain-suffix|timestamp.apple.com", rule_id: b90a72bba63c286fe5eb7f50fe87b825c2a859fc4511839c57e84552ce9012fc}
-      - {type: DOMAIN-SUFFIX, value: foundationdb.org, identity_key: "domain-suffix|foundationdb.org", rule_id: 9666aae51d432afeb4f9b463a6e76a9832006c3a5c1ee9f535b0919ac2e4114a}
-      - {type: DOMAIN-SUFFIX, value: macosforge.org, identity_key: "domain-suffix|macosforge.org", rule_id: 2c4c67abfc9d86c447d48dfab8dc62aee41e248990f97e7af0b20b6b4a3cfd1b}
-      - {type: DOMAIN-SUFFIX, value: macruby.com, identity_key: "domain-suffix|macruby.com", rule_id: f2e84029fa1c8fcc86c4351e6285a5ad462d744155764835c57f3acd14846626}
-      - {type: DOMAIN-SUFFIX, value: macruby.net, identity_key: "domain-suffix|macruby.net", rule_id: 931f6290db51c1bd55e053d7e3b1c2eb6289c41de0cee9419754a3b2a4545548}
-      - {type: DOMAIN-SUFFIX, value: macruby.org, identity_key: "domain-suffix|macruby.org", rule_id: 72160de586038fa6fbe49d7ec66f286169fcb2676444d9acfd19a310ecae8ca3}
-      - {type: DOMAIN-SUFFIX, value: apple-mapkit.com, identity_key: "domain-suffix|apple-mapkit.com", rule_id: f1c93e3732ce0a6146d415fe39e046221ff9b07a0716401e50dfe68edd14f483}
-      - {type: DOMAIN-SUFFIX, value: playgrounds-cdn.apple.com, identity_key: "domain-suffix|playgrounds-cdn.apple.com", rule_id: 728b4cb02aa3fbe87fbd41a00930d2e430689f5f710b0e8442730e746bdeddae}
-      - {type: DOMAIN-SUFFIX, value: carekit.org, identity_key: "domain-suffix|carekit.org", rule_id: 6b6c12ab2aa8a9ec8601276ad4222def495f13701a097ba8eda8484a07ba96a8}
-      - {type: DOMAIN-SUFFIX, value: researchandcare.org, identity_key: "domain-suffix|researchandcare.org", rule_id: 2e44d45513882de76f5e03efb8dfb08a5287cc66c8ffb87d2797645619d5c4f7}
-      - {type: DOMAIN-SUFFIX, value: researchkit.cn, identity_key: "domain-suffix|researchkit.cn", rule_id: 6a9394a00dc3c027899a039972c8986092c4f6a169ea43cb2c648c4ec882f352}
-      - {type: DOMAIN-SUFFIX, value: researchkit.com.cn, identity_key: "domain-suffix|researchkit.com.cn", rule_id: 29650498f0c0efc0293d909b723825b38a3583e7b16de7343077442a1674a8ac}
-      - {type: DOMAIN-SUFFIX, value: researchkit.hk, identity_key: "domain-suffix|researchkit.hk", rule_id: ccff0b806186cec787ee192b2fba23d5309760ffab9557cb5fc0c0e3165337c8}
-      - {type: DOMAIN-SUFFIX, value: researchkit.net, identity_key: "domain-suffix|researchkit.net", rule_id: 0f0906e107af5c20d2aadd5d1f11f26af25ddada270d83120cbdc6fa2dd56b26}
-      - {type: DOMAIN-SUFFIX, value: researchkit.org, identity_key: "domain-suffix|researchkit.org", rule_id: acc84698efc2ca59e9ffb4ad9e831f196b23fe2a36c40e54c4a6f3a7feb30fb5}
-      - {type: DOMAIN-SUFFIX, value: researchkit.tv, identity_key: "domain-suffix|researchkit.tv", rule_id: 2b33e1fb65667d5a5f0aa57787e4e902b86dc753cf3fd530d4443c01aaf05f07}
-      - {type: DOMAIN-SUFFIX, value: servicetalk.io, identity_key: "domain-suffix|servicetalk.io", rule_id: 99ffaf525fbfaee0d70b500d2ff241dd2a35e2ddc7fd71552c6fbfabcf828ade}
-      - {type: DOMAIN-SUFFIX, value: appleswift.com, identity_key: "domain-suffix|appleswift.com", rule_id: 512daeb8cff5979b240878c8e0155946e309afa37c37189474297c543d0361e1}
-      - {type: DOMAIN-SUFFIX, value: swift.org, identity_key: "domain-suffix|swift.org", rule_id: 1615995c7597b711c2a5bbcdcb299dd52d4f544e29df8bdeea9750ca63c85f5e}
-      - {type: DOMAIN-SUFFIX, value: swiftui.cn, identity_key: "domain-suffix|swiftui.cn", rule_id: a3525694a8df507a41c6e0a42acc9209373d9a88489fc831d87cc25e10b5cb59}
-      - {type: DOMAIN-SUFFIX, value: swiftui.com.cn, identity_key: "domain-suffix|swiftui.com.cn", rule_id: e81fd56c368072cb51d7de15fbcefffc519871922a4bbf9158d1ad7c7e290c12}
-      - {type: DOMAIN-SUFFIX, value: webkit.org, identity_key: "domain-suffix|webkit.org", rule_id: 1d71264cc787e518e1de971243fffbaab987a32f6e3bd0d0f71e93850c880a29}
-      - {type: DOMAIN-SUFFIX, value: webkitgtk.org, identity_key: "domain-suffix|webkitgtk.org", rule_id: e2e10010761ce7f7ceeecd949e33e6681130eb0beaa6448ae667f2ffeedf5148}
-      - {type: DOMAIN-SUFFIX, value: wpewebkit.org, identity_key: "domain-suffix|wpewebkit.org", rule_id: 387596d19226745ec24789598e80c4b13686b8a714be5cdc6daff6d4a9edb0f7}
-      - {type: DOMAIN-SUFFIX, value: webobjects.com, identity_key: "domain-suffix|webobjects.com", rule_id: 6bc2f34847fb001f2353f81903f96106b091fc7d47b7b087476fa02e8dafed02}
-      - {type: DOMAIN-SUFFIX, value: appleworldwidedeveloper.hb-api.omtrdc.net, identity_key: "domain-suffix|appleworldwidedeveloper.hb-api.omtrdc.net", rule_id: eeccee9d7348efb094e183e17275e295e54a337994568cf9d2bb8c19794a6346}
-      - {type: DOMAIN-SUFFIX, value: appleworldwidedeveloper.sc.omtrdc.net, identity_key: "domain-suffix|appleworldwidedeveloper.sc.omtrdc.net", rule_id: 72e399f73fbee6b3773c1c6ea3dfedcd654d5a04dddfc447835d522e458b3af6}
-      - {type: DOMAIN-SUFFIX, value: p-events-delivery.akamaized.net, identity_key: "domain-suffix|p-events-delivery.akamaized.net", rule_id: ed7bd6343bd3200c34ffb67119d897131bfe135933bc5fab8bafef252721dd36}
-      - {type: DOMAIN-SUFFIX, value: apple.com.akadns.net, identity_key: "domain-suffix|apple.com.akadns.net", rule_id: 180b13270ea3434b20f99801c57bc8e6da3c29be7c849c424a92475d87fefc19}
-      - {type: DOMAIN-SUFFIX, value: courier-push-apple.com.akadns.net, identity_key: "domain-suffix|courier-push-apple.com.akadns.net", rule_id: fba892b08271a185935b20d25f21541a3bfa0576d6d6fbaadda09dc4f23a5993}
-      - {type: DOMAIN-SUFFIX, value: push-apple.com.akadns.net, identity_key: "domain-suffix|push-apple.com.akadns.net", rule_id: fb1f4ffedc3e56a55ec591e65bbbbdd85380105691ca719fd7d01a150c6a8f8d}
+    - type: DOMAIN-SUFFIX
+      value: calendarserver.org
+      identity_key: domain-suffix|calendarserver.org
+      rule_id: 2ae108237541c38d623560d3e76c5c014011ca6b4cce2ff15d10f796377d3a7a
+    - type: DOMAIN-SUFFIX
+      value: apple-cloudkit.com
+      identity_key: domain-suffix|apple-cloudkit.com
+      rule_id: 1d4eb1d127c5f0c4cb4ca37e344be99b35fabfcc660daa4e90ff05a77ff2dedc
+    - type: DOMAIN-SUFFIX
+      value: cups.org
+      identity_key: domain-suffix|cups.org
+      rule_id: e99d01164bf4611e0e4fbc5ad9225b38b0cf3e4fbb33ae0c503419bd84f6a1ea
+    - type: DOMAIN-SUFFIX
+      value: developer.apple.com
+      identity_key: domain-suffix|developer.apple.com
+      rule_id: c440db1cb13eb7649b896bb7732d00a8bf6492a0f49bb75ca7e89a1910d66f0a
+    - type: DOMAIN-SUFFIX
+      value: developerservices2.apple.com
+      identity_key: domain-suffix|developerservices2.apple.com
+      rule_id: 03e86a4e349776217ae215319e9b5132ce2b95170fb389f0eabd3d3f74230de4
+    - type: DOMAIN-SUFFIX
+      value: devimages-cdn.apple.com
+      identity_key: domain-suffix|devimages-cdn.apple.com
+      rule_id: 06374f7bbc4a2dacf7a280c09cbf720dcab7874abf5a162b2cb6014a4e5a0260
+    - type: DOMAIN-SUFFIX
+      value: devstreaming-cdn.apple.com
+      identity_key: domain-suffix|devstreaming-cdn.apple.com
+      rule_id: e0e6771fe2125ef1f62904eefe759a49ce5df130b9fb3cc7f2eeabc86e8d35e7
+    - type: DOMAIN-SUFFIX
+      value: notary-submissions-prod.s3-accelerate.amazonaws.com
+      identity_key: domain-suffix|notary-submissions-prod.s3-accelerate.amazonaws.com
+      rule_id: 3352930454364c460bd0dc9f5c76f60aa46d0e55334c6c49ee3a85730150c757
+    - type: DOMAIN-SUFFIX
+      value: notary-submissions-prod.s3.us-west-2.amazonaws.com
+      identity_key: domain-suffix|notary-submissions-prod.s3.us-west-2.amazonaws.com
+      rule_id: 1786143717a1b774139e6a6e6f163dcdfc42be5a060ee9fa2301ad373bae838e
+    - type: DOMAIN-SUFFIX
+      value: timestamp.apple.com
+      identity_key: domain-suffix|timestamp.apple.com
+      rule_id: b90a72bba63c286fe5eb7f50fe87b825c2a859fc4511839c57e84552ce9012fc
+    - type: DOMAIN-SUFFIX
+      value: foundationdb.org
+      identity_key: domain-suffix|foundationdb.org
+      rule_id: 9666aae51d432afeb4f9b463a6e76a9832006c3a5c1ee9f535b0919ac2e4114a
+    - type: DOMAIN-SUFFIX
+      value: macosforge.org
+      identity_key: domain-suffix|macosforge.org
+      rule_id: 2c4c67abfc9d86c447d48dfab8dc62aee41e248990f97e7af0b20b6b4a3cfd1b
+    - type: DOMAIN-SUFFIX
+      value: macruby.com
+      identity_key: domain-suffix|macruby.com
+      rule_id: f2e84029fa1c8fcc86c4351e6285a5ad462d744155764835c57f3acd14846626
+    - type: DOMAIN-SUFFIX
+      value: macruby.net
+      identity_key: domain-suffix|macruby.net
+      rule_id: 931f6290db51c1bd55e053d7e3b1c2eb6289c41de0cee9419754a3b2a4545548
+    - type: DOMAIN-SUFFIX
+      value: macruby.org
+      identity_key: domain-suffix|macruby.org
+      rule_id: 72160de586038fa6fbe49d7ec66f286169fcb2676444d9acfd19a310ecae8ca3
+    - type: DOMAIN-SUFFIX
+      value: apple-mapkit.com
+      identity_key: domain-suffix|apple-mapkit.com
+      rule_id: f1c93e3732ce0a6146d415fe39e046221ff9b07a0716401e50dfe68edd14f483
+    - type: DOMAIN-SUFFIX
+      value: playgrounds-cdn.apple.com
+      identity_key: domain-suffix|playgrounds-cdn.apple.com
+      rule_id: 728b4cb02aa3fbe87fbd41a00930d2e430689f5f710b0e8442730e746bdeddae
+    - type: DOMAIN-SUFFIX
+      value: carekit.org
+      identity_key: domain-suffix|carekit.org
+      rule_id: 6b6c12ab2aa8a9ec8601276ad4222def495f13701a097ba8eda8484a07ba96a8
+    - type: DOMAIN-SUFFIX
+      value: researchandcare.org
+      identity_key: domain-suffix|researchandcare.org
+      rule_id: 2e44d45513882de76f5e03efb8dfb08a5287cc66c8ffb87d2797645619d5c4f7
+    - type: DOMAIN-SUFFIX
+      value: researchkit.cn
+      identity_key: domain-suffix|researchkit.cn
+      rule_id: 6a9394a00dc3c027899a039972c8986092c4f6a169ea43cb2c648c4ec882f352
+    - type: DOMAIN-SUFFIX
+      value: researchkit.com.cn
+      identity_key: domain-suffix|researchkit.com.cn
+      rule_id: 29650498f0c0efc0293d909b723825b38a3583e7b16de7343077442a1674a8ac
+    - type: DOMAIN-SUFFIX
+      value: researchkit.hk
+      identity_key: domain-suffix|researchkit.hk
+      rule_id: ccff0b806186cec787ee192b2fba23d5309760ffab9557cb5fc0c0e3165337c8
+    - type: DOMAIN-SUFFIX
+      value: researchkit.net
+      identity_key: domain-suffix|researchkit.net
+      rule_id: 0f0906e107af5c20d2aadd5d1f11f26af25ddada270d83120cbdc6fa2dd56b26
+    - type: DOMAIN-SUFFIX
+      value: researchkit.org
+      identity_key: domain-suffix|researchkit.org
+      rule_id: acc84698efc2ca59e9ffb4ad9e831f196b23fe2a36c40e54c4a6f3a7feb30fb5
+    - type: DOMAIN-SUFFIX
+      value: researchkit.tv
+      identity_key: domain-suffix|researchkit.tv
+      rule_id: 2b33e1fb65667d5a5f0aa57787e4e902b86dc753cf3fd530d4443c01aaf05f07
+    - type: DOMAIN-SUFFIX
+      value: servicetalk.io
+      identity_key: domain-suffix|servicetalk.io
+      rule_id: 99ffaf525fbfaee0d70b500d2ff241dd2a35e2ddc7fd71552c6fbfabcf828ade
+    - type: DOMAIN-SUFFIX
+      value: appleswift.com
+      identity_key: domain-suffix|appleswift.com
+      rule_id: 512daeb8cff5979b240878c8e0155946e309afa37c37189474297c543d0361e1
+    - type: DOMAIN-SUFFIX
+      value: swift.org
+      identity_key: domain-suffix|swift.org
+      rule_id: 1615995c7597b711c2a5bbcdcb299dd52d4f544e29df8bdeea9750ca63c85f5e
+    - type: DOMAIN-SUFFIX
+      value: swiftui.cn
+      identity_key: domain-suffix|swiftui.cn
+      rule_id: a3525694a8df507a41c6e0a42acc9209373d9a88489fc831d87cc25e10b5cb59
+    - type: DOMAIN-SUFFIX
+      value: swiftui.com.cn
+      identity_key: domain-suffix|swiftui.com.cn
+      rule_id: e81fd56c368072cb51d7de15fbcefffc519871922a4bbf9158d1ad7c7e290c12
+    - type: DOMAIN-SUFFIX
+      value: webkit.org
+      identity_key: domain-suffix|webkit.org
+      rule_id: 1d71264cc787e518e1de971243fffbaab987a32f6e3bd0d0f71e93850c880a29
+    - type: DOMAIN-SUFFIX
+      value: webkitgtk.org
+      identity_key: domain-suffix|webkitgtk.org
+      rule_id: e2e10010761ce7f7ceeecd949e33e6681130eb0beaa6448ae667f2ffeedf5148
+    - type: DOMAIN-SUFFIX
+      value: wpewebkit.org
+      identity_key: domain-suffix|wpewebkit.org
+      rule_id: 387596d19226745ec24789598e80c4b13686b8a714be5cdc6daff6d4a9edb0f7
+    - type: DOMAIN-SUFFIX
+      value: webobjects.com
+      identity_key: domain-suffix|webobjects.com
+      rule_id: 6bc2f34847fb001f2353f81903f96106b091fc7d47b7b087476fa02e8dafed02
+    - type: DOMAIN-SUFFIX
+      value: appleworldwidedeveloper.hb-api.omtrdc.net
+      identity_key: domain-suffix|appleworldwidedeveloper.hb-api.omtrdc.net
+      rule_id: eeccee9d7348efb094e183e17275e295e54a337994568cf9d2bb8c19794a6346
+    - type: DOMAIN-SUFFIX
+      value: appleworldwidedeveloper.sc.omtrdc.net
+      identity_key: domain-suffix|appleworldwidedeveloper.sc.omtrdc.net
+      rule_id: 72e399f73fbee6b3773c1c6ea3dfedcd654d5a04dddfc447835d522e458b3af6
+    - type: DOMAIN-SUFFIX
+      value: p-events-delivery.akamaized.net
+      identity_key: domain-suffix|p-events-delivery.akamaized.net
+      rule_id: ed7bd6343bd3200c34ffb67119d897131bfe135933bc5fab8bafef252721dd36
+    - type: DOMAIN-SUFFIX
+      value: apple.com.akadns.net
+      identity_key: domain-suffix|apple.com.akadns.net
+      rule_id: 180b13270ea3434b20f99801c57bc8e6da3c29be7c849c424a92475d87fefc19
+    - type: DOMAIN-SUFFIX
+      value: courier-push-apple.com.akadns.net
+      identity_key: domain-suffix|courier-push-apple.com.akadns.net
+      rule_id: fba892b08271a185935b20d25f21541a3bfa0576d6d6fbaadda09dc4f23a5993
+    - type: DOMAIN-SUFFIX
+      value: push-apple.com.akadns.net
+      identity_key: domain-suffix|push-apple.com.akadns.net
+      rule_id: fb1f4ffedc3e56a55ec591e65bbbbdd85380105691ca719fd7d01a150c6a8f8d
   findmy:
     snapshot: config/p0_batch01_snapshots/2026-09-17/findmy.list
     status: complete
     memberships:
-      - {type: HOST, value: fmfmobile.icloud.com, identity_key: "host|fmfmobile.icloud.com", rule_id: bbee2289375b61228ae998c53b5e2bbc0bcfdf38b7af0080fb4bf3ed1596823c}
-      - {type: HOST, value: fmipmobile.icloud.com, identity_key: "host|fmipmobile.icloud.com", rule_id: 7bad046056cd41303dc4cc5eb51350128f0fbb2ae391a55880d43975610d3048}
-      - {type: HOST, value: statici.icloud.com, identity_key: "host|statici.icloud.com", rule_id: 4a275803a2fac4b56be8a1106f42b0d148c85e8282dcb48b8f4cb5864f1f23c5}
-
+    - type: DOMAIN
+      value: fmfmobile.icloud.com
+      identity_key: domain|fmfmobile.icloud.com
+      rule_id: 238fc705dbd23f3d81043eff29370966f985e19d1cce4734246211f314507577
+    - type: DOMAIN
+      value: fmipmobile.icloud.com
+      identity_key: domain|fmipmobile.icloud.com
+      rule_id: 11c357ed4a9affae18bb368b5278e6111281a29871113dafd2c9117265d36c2d
+    - type: DOMAIN
+      value: statici.icloud.com
+      identity_key: domain|statici.icloud.com
+      rule_id: c2b25ce8bd8805855beae5012d275a7d396ee11df505f88d5093107290bcfccc
   tencentcloud:
     snapshot: config/p0_batch01_snapshots/2026-09-20/tencentcloud.list
     status: complete
     memberships:
-      - {type: IP-CIDR, value: 1.116.116.0/22, identity_key: "ip-cidr|1.116.116.0/22", rule_id: 1fb6d2795d85353c1aef148afb2670b6df26ab5c2cfa2a4ac13ac0f308c74509}
-      - {type: IP-CIDR, value: 1.116.216.0/23, identity_key: "ip-cidr|1.116.216.0/23", rule_id: 9c0e6fd30e8a844bd259674b37bc0ee08934b023b78c0f956bd651d0087dafa0}
-      - {type: IP-CIDR, value: 1.117.118.0/23, identity_key: "ip-cidr|1.117.118.0/23", rule_id: 53406c30b8d9cdfc2ea4d95a16787ce83aa93fc5fca3832d99e5335479b47383}
-      - {type: IP-CIDR, value: 1.117.218.0/23, identity_key: "ip-cidr|1.117.218.0/23", rule_id: 83efbda65d1c37b915aaa361f49326c689489df131f5d63cf3b4097c1ca02837}
-      - {type: IP-CIDR, value: 1.12.102.0/23, identity_key: "ip-cidr|1.12.102.0/23", rule_id: 60fed75408c0483cc5adfe54314ed3f41ba59c74e1d118087b83ecbb64ef2747}
-      - {type: IP-CIDR, value: 1.12.116.0/22, identity_key: "ip-cidr|1.12.116.0/22", rule_id: 29b9779e0874e85390a6c9ca19bdddb41d5c42bb62e6add394f6a4e18646b5e6}
-      - {type: IP-CIDR, value: 1.12.212.0/23, identity_key: "ip-cidr|1.12.212.0/23", rule_id: 4450391c4992f4ac400882fecf5819fc7c4411aca72f82f33f8a2d369fe021d5}
-      - {type: IP-CIDR, value: 1.13.116.0/22, identity_key: "ip-cidr|1.13.116.0/22", rule_id: 148bd2b2ce81f25ecb82da40dc3c5b6ccb0c1eae292186ff61bf20c18d0a879e}
-      - {type: IP-CIDR, value: 1.14.104.0/23, identity_key: "ip-cidr|1.14.104.0/23", rule_id: 97677e7af11dcedb046fccef1c2345ec3a6f00c563bd3214ea975e63e2b05dfe}
-      - {type: IP-CIDR, value: 1.14.206.0/23, identity_key: "ip-cidr|1.14.206.0/23", rule_id: bdf25f50d40c779399945fe917b490372881ffb2ca3ff809a8724167d160ce11}
-      - {type: IP-CIDR, value: 1.15.102.0/23, identity_key: "ip-cidr|1.15.102.0/23", rule_id: 61579057d661d37ac912df219f30bc99b0bae3a4ea0205fb4a07f921b6cfcc2f}
-      - {type: IP-CIDR, value: 1.15.208.0/23, identity_key: "ip-cidr|1.15.208.0/23", rule_id: eae80c03b64d9668feacb4ca75ad9117a826c5c402e41bb94ea20ff401abdc32}
-      - {type: IP-CIDR, value: 103.238.16.0/22, identity_key: "ip-cidr|103.238.16.0/22", rule_id: b111dd92f5e773e6270478eb6a7ec67862a2c2b3cb83c50f47fa9438129ecf1a}
-      - {type: IP-CIDR, value: 103.38.116.0/22, identity_key: "ip-cidr|103.38.116.0/22", rule_id: 49f673b5a5fd62a923535f4aba7db591380e50e14df52f0253f801b16e9741b1}
-      - {type: IP-CIDR, value: 103.7.28.0/22, identity_key: "ip-cidr|103.7.28.0/22", rule_id: b28bc83ce1b2a1a122829b5d978d5e54f2feabda9a5f347453f478e332afd969}
-      - {type: IP-CIDR, value: 106.52.0.0/14, identity_key: "ip-cidr|106.52.0.0/14", rule_id: c830614a57f6f92cb7392d15139799e61c550b03cfbebcbef2b6809b3bd949a7}
-      - {type: IP-CIDR, value: 109.244.0.0/16, identity_key: "ip-cidr|109.244.0.0/16", rule_id: 6c8a6b080a6a2c9e27a8ec4b72c539519ed6b800299f0dd8cc2a2b82326add6d}
-      - {type: IP-CIDR, value: 111.229.0.0/16, identity_key: "ip-cidr|111.229.0.0/16", rule_id: f09e0b6c38ad5eb099509b4a7b4ea79346b7c29fd4bc55860fab2e3fc1205e80}
-      - {type: IP-CIDR, value: 111.230.0.0/15, identity_key: "ip-cidr|111.230.0.0/15", rule_id: 1dc8f524684cea0c0d32596e5ae16321395c5fc5f0674cc2d010bfea6f2004e8}
-      - {type: IP-CIDR, value: 115.159.0.0/16, identity_key: "ip-cidr|115.159.0.0/16", rule_id: d9d69089f4aea2c6a2f4bae56d48f658766ac88668dce902251fe52d410c9720}
-      - {type: IP-CIDR, value: 118.126.64.0/18, identity_key: "ip-cidr|118.126.64.0/18", rule_id: 15fb811be21bf62deeb89c361284d74142bdb7952d24bc75ca092d433d184131}
-      - {type: IP-CIDR, value: 118.24.0.0/15, identity_key: "ip-cidr|118.24.0.0/15", rule_id: 400792bd2e4b4424438f7d95340c81210b8dabc2a27f94d9ef83335ca51244ac}
-      - {type: IP-CIDR, value: 118.89.0.0/16, identity_key: "ip-cidr|118.89.0.0/16", rule_id: 8d5647f77d803c36d35fae7e6f91f8f34be8cf47201781f37b35ed8e4344d7da}
-      - {type: IP-CIDR, value: 119.27.160.0/19, identity_key: "ip-cidr|119.27.160.0/19", rule_id: f6ffde58fae788c166cdd9959c9275b432f1a6eb79fd66665216af7d00f43e02}
-      - {type: IP-CIDR, value: 119.28.0.0/15, identity_key: "ip-cidr|119.28.0.0/15", rule_id: 6188149462ee741e763aa93da2fe5a20d205fb850fa2ad9a3acf56bbe7960979}
-      - {type: IP-CIDR, value: 119.45.0.0/16, identity_key: "ip-cidr|119.45.0.0/16", rule_id: acdebd0389456ae0a984f41b2dcbec59e40a38e16a16d07e2752a5344005332f}
-      - {type: IP-CIDR, value: 120.88.56.0/23, identity_key: "ip-cidr|120.88.56.0/23", rule_id: c9ef630c2c9f2930d3ebfb836863de4036ced0f5f07c8f6fcc4a6b8bca8f95b8}
-      - {type: IP-CIDR, value: 121.51.0.0/16, identity_key: "ip-cidr|121.51.0.0/16", rule_id: 482a439d13ec7084c7669d69f876518eac62488cc9ad19c7d39a0a6ccbfdcbfe}
-      - {type: IP-CIDR, value: 122.152.192.0/18, identity_key: "ip-cidr|122.152.192.0/18", rule_id: 7899f758c88dd21c1d06af2f00830b711345edead1071c21fa2bb90052f100ce}
-      - {type: IP-CIDR, value: 123.206.0.0/15, identity_key: "ip-cidr|123.206.0.0/15", rule_id: b5dcfab69e90637c88ece567799c8e58232f18b10e0bce8b39f44d328dc93304}
-      - {type: IP-CIDR, value: 128.108.0.0/16, identity_key: "ip-cidr|128.108.0.0/16", rule_id: 53bd230411fda34d10a8384c4f5be6925b80fe683f4d3996ec4c9daeb27afcfe}
-      - {type: IP-CIDR, value: 129.204.0.0/16, identity_key: "ip-cidr|129.204.0.0/16", rule_id: e3cb9c25a28535cbb26f0bfa131fb841b71ddbd3b43f4ccdc588df7cb1c39b30}
-      - {type: IP-CIDR, value: 129.211.0.0/16, identity_key: "ip-cidr|129.211.0.0/16", rule_id: fcc3dbb94eeab45cff1eb4aabec470ac7790a197de64ca6b035fd1bc7872d867}
-      - {type: IP-CIDR, value: 129.28.0.0/16, identity_key: "ip-cidr|129.28.0.0/16", rule_id: 1a6eff525eebbbf4b91cc28dfee340be2e42b7266d13adaf591065fbf340e955}
-      - {type: IP-CIDR, value: 132.232.0.0/16, identity_key: "ip-cidr|132.232.0.0/16", rule_id: 8c6ad61b0e1842930f1684a3315ab9a8206b4c09a577fcb42b1a44634a19139b}
-      - {type: IP-CIDR, value: 134.175.0.0/16, identity_key: "ip-cidr|134.175.0.0/16", rule_id: 52470137a08f7af2b826f7d43503f61fe3d37b00a1c193e40203806e890acf0c}
-      - {type: IP-CIDR, value: 139.155.0.0/16, identity_key: "ip-cidr|139.155.0.0/16", rule_id: 564ff772c1abd4754fb551ae0bfec8f2eae0849d88dee13f0c70c0051fe7a55b}
-      - {type: IP-CIDR, value: 139.186.0.0/16, identity_key: "ip-cidr|139.186.0.0/16", rule_id: 656497478b1448da85cb30c8f4f7b23504c3dff42d0780b5a8f3429c656f2dca}
-      - {type: IP-CIDR, value: 139.199.0.0/16, identity_key: "ip-cidr|139.199.0.0/16", rule_id: 504438c518fedc244d96b74f64cd098864d226b96a53d90f931a9e417660c2c3}
-      - {type: IP-CIDR, value: 140.143.0.0/16, identity_key: "ip-cidr|140.143.0.0/16", rule_id: d21e2eef6ea6854e8c1c3eba89dbf81a242513801928a043ad10dfc8ebf663db}
-      - {type: IP-CIDR, value: 146.56.192.0/18, identity_key: "ip-cidr|146.56.192.0/18", rule_id: 21dd6bb04564e3c381a37d2a1703694fb09a6486f5f6ecbdd451eaeb5494babf}
-      - {type: IP-CIDR, value: 148.70.0.0/16, identity_key: "ip-cidr|148.70.0.0/16", rule_id: 321fcc5a727928b1ad0de347a717d19a4d801da06be5c27af8660f1b308e3308}
-      - {type: IP-CIDR, value: 150.158.0.0/16, identity_key: "ip-cidr|150.158.0.0/16", rule_id: 144c6fb7fbb3c013bbcc7d00716e60d15ddcaa1b7031bad14c1d769699d9f4fa}
-      - {type: IP-CIDR, value: 152.136.0.0/16, identity_key: "ip-cidr|152.136.0.0/16", rule_id: 94b19361ef03d391ef83f835d94589f28128d89167bf172312aef508553bc947}
-      - {type: IP-CIDR, value: 154.8.128.0/17, identity_key: "ip-cidr|154.8.128.0/17", rule_id: 57ecc9d0789472ce553e29f374cdd8533b551261509e0b5a7c2eec7a90c8f4d6}
-      - {type: IP-CIDR, value: 162.14.0.0/16, identity_key: "ip-cidr|162.14.0.0/16", rule_id: 054eead1cdbe64078be19ec4f3a2a09ba219fbef415b006682a45a7ae04878e7}
-      - {type: IP-CIDR, value: 172.81.192.0/18, identity_key: "ip-cidr|172.81.192.0/18", rule_id: beb06750fbf2371ad02ca04d67bb117dc2e37e68c4d66c28eebbf72741b3cff6}
-      - {type: IP-CIDR, value: 175.24.0.0/16, identity_key: "ip-cidr|175.24.0.0/16", rule_id: 12de18c87f51dbe6c7ab9eb302fc6a250e865b6c975e62c47f3cc347fe13f128}
-      - {type: IP-CIDR, value: 182.254.0.0/16, identity_key: "ip-cidr|182.254.0.0/16", rule_id: ef2a191423136c611638d14e4921408ddbf3b51fed8c0e961ab79f04c62ea84f}
-      - {type: IP-CIDR, value: 188.131.128.0/17, identity_key: "ip-cidr|188.131.128.0/17", rule_id: 5968326dd36e8981a0bc7702a2e183d69ae88547b8bc6370321194bd2a8838d8}
-      - {type: IP-CIDR, value: 192.144.128.0/17, identity_key: "ip-cidr|192.144.128.0/17", rule_id: b2a72a54c59ed650e54828af1d4654752f57dda7a6f8bea42e4b6f9c36cee4a2}
-      - {type: IP-CIDR, value: 193.112.0.0/16, identity_key: "ip-cidr|193.112.0.0/16", rule_id: 7d30d0e17b1abb3814a7b15972422e8b404b2fdd4fc8626cb24fad6910895893}
-      - {type: IP-CIDR, value: 203.195.128.0/17, identity_key: "ip-cidr|203.195.128.0/17", rule_id: 21cbfd82a7450837a7fd784cc2ee4157b2ee04306aa3c7949b035d22f617e11f}
-      - {type: IP-CIDR, value: 203.205.128.0/19, identity_key: "ip-cidr|203.205.128.0/19", rule_id: 20faeeb4018aa2fa0e49205dcaa704ff41775cda49a8d24d13b928dba3bcf357}
-      - {type: IP-CIDR, value: 203.205.176.0/22, identity_key: "ip-cidr|203.205.176.0/22", rule_id: c92ad5b21c9d43b676e6b16ab987305f73b170b18d0921539e31cdb85c6fa99c}
-      - {type: IP-CIDR, value: 203.205.188.0/24, identity_key: "ip-cidr|203.205.188.0/24", rule_id: 9b6c1258eda09de5b5968be92ce216c4b474a56c2e56a5831b73bff6c5232526}
-      - {type: IP-CIDR, value: 203.205.191.0/24, identity_key: "ip-cidr|203.205.191.0/24", rule_id: 0d203de405419621e52ddeeb02baa1655361781704d55a1e92b7e55b7aeb15e8}
-      - {type: IP-CIDR, value: 203.205.193.0/24, identity_key: "ip-cidr|203.205.193.0/24", rule_id: 6e0a984147ebd9a197dc702f5b5ee96233035794568811f0f91056cc99252834}
-      - {type: IP-CIDR, value: 203.205.194.0/23, identity_key: "ip-cidr|203.205.194.0/23", rule_id: ea87321f179474470a24e7fd5a4246d96bdc0df162d3c72c8c2bf110e6e8993a}
-      - {type: IP-CIDR, value: 203.205.218.0/23, identity_key: "ip-cidr|203.205.218.0/23", rule_id: abdf75adf3795239a704c46dcdd91c0702251970a46c6735e9179d25ab0994aa}
-      - {type: IP-CIDR, value: 203.205.220.0/22, identity_key: "ip-cidr|203.205.220.0/22", rule_id: e6c002089f3b89ad01a28ce498f55369c54334d5b01e96634e8b45239e3cb46d}
-      - {type: IP-CIDR, value: 203.205.224.0/24, identity_key: "ip-cidr|203.205.224.0/24", rule_id: eee1f5f3da8636e8624b7489212b403cbe57517f4ff9db81079fd34d49221f8f}
-      - {type: IP-CIDR, value: 203.205.232.0/21, identity_key: "ip-cidr|203.205.232.0/21", rule_id: 8376ce4e882bd6f74bdaf802e8fd83f53e4c0e457a1eeb8f40ecf2b791e186cd}
-      - {type: IP-CIDR, value: 203.205.240.0/24, identity_key: "ip-cidr|203.205.240.0/24", rule_id: 97e655fb04136093de9d1a4cb3bd3b4ec7e970490a8eea7905ed4969fac10c76}
-      - {type: IP-CIDR, value: 203.205.242.0/24, identity_key: "ip-cidr|203.205.242.0/24", rule_id: c4302e26c5710396af60deed688e6a34e5b18017e2fca71f53ec4df35b79010e}
-      - {type: IP-CIDR, value: 203.205.244.0/23, identity_key: "ip-cidr|203.205.244.0/23", rule_id: b650de19bb2ea4d7ebc31eaf801234800ea7097b11eb8dfe2ceac8e2bb7b605b}
-      - {type: IP-CIDR, value: 203.205.248.0/21, identity_key: "ip-cidr|203.205.248.0/21", rule_id: 765959718e11e9d60f17d61a47e586b81b593761cc849b1889e79a8e1a79f94d}
-      - {type: IP-CIDR, value: 210.73.160.0/19, identity_key: "ip-cidr|210.73.160.0/19", rule_id: ec91320d9abe7ea6441b3f4de2be22a5dbed2e8c01117c616d000e821d63ba7a}
-      - {type: IP-CIDR, value: 211.152.128.0/22, identity_key: "ip-cidr|211.152.128.0/22", rule_id: 44cb0815fc54ec664286cdbca9962689919ed9d252663f21686287458e67b966}
-      - {type: IP-CIDR, value: 211.152.132.0/23, identity_key: "ip-cidr|211.152.132.0/23", rule_id: b3c6376f85d9f157fbed0d9b50b92940be49947d9fcf4b38caef3c4bfc772d18}
-      - {type: IP-CIDR, value: 211.152.136.0/23, identity_key: "ip-cidr|211.152.136.0/23", rule_id: c3cc7b2e4d146a88c0b897a8e2ac4ffe7ca5cd21d8c8bf6039caa2d4f321d581}
-      - {type: IP-CIDR, value: 211.152.144.0/22, identity_key: "ip-cidr|211.152.144.0/22", rule_id: d43a001563651ff5f31101a00af9fe8badb050fe8a892023fc0ba2eab095a06b}
-      - {type: IP-CIDR, value: 211.152.148.0/23, identity_key: "ip-cidr|211.152.148.0/23", rule_id: 403233f7cdfecb858df4e3a0e5bb2088a7c0c2735e7870ae4e3e7dca52806d7b}
-      - {type: IP-CIDR, value: 211.152.152.0/22, identity_key: "ip-cidr|211.152.152.0/22", rule_id: 9c90871daf31a552df8ac3398035bf2003e4d65b808ebcd24fb68bd8d3b8f6bf}
-      - {type: IP-CIDR, value: 211.152.156.0/24, identity_key: "ip-cidr|211.152.156.0/24", rule_id: 48e2fe822ea60fa961b051df4ee265c54a9507172009ca06f149063cba4e6e67}
-      - {type: IP-CIDR, value: 211.159.128.0/17, identity_key: "ip-cidr|211.159.128.0/17", rule_id: 36dcaa0ba3198782080ef30e847beb18783a65e4ca9f50fd859c889b80a306b6}
-      - {type: IP-CIDR, value: 212.129.128.0/17, identity_key: "ip-cidr|212.129.128.0/17", rule_id: 34e56d98e8aeb1016b8c1b11af235970e58b355ea4f6e170e770782308b7a44d}
-      - {type: IP-CIDR, value: 212.64.0.0/17, identity_key: "ip-cidr|212.64.0.0/17", rule_id: 9708062d61341651444eb965fec172b2698fbb49cd6013cacda7c5019daf0b6f}
-      - {type: IP-CIDR, value: 42.187.128.0/17, identity_key: "ip-cidr|42.187.128.0/17", rule_id: f16ac59aabe40f166ada689c2c28747253ac541168e6dbfb76a9b90b4f335570}
-      - {type: IP-CIDR, value: 42.194.128.0/17, identity_key: "ip-cidr|42.194.128.0/17", rule_id: 12c17b7839e54e9cfe05b94996296f28ece2db121acf06bb4889c4b07377cde2}
-      - {type: IP-CIDR, value: 43.242.252.0/22, identity_key: "ip-cidr|43.242.252.0/22", rule_id: 3bf274a9d4ec5d4c8fe8e31646690fa6246df9f23697a0513113c7452e1d6991}
-      - {type: IP-CIDR, value: 43.247.196.0/22, identity_key: "ip-cidr|43.247.196.0/22", rule_id: 40d533be2cc807958505fe7537f354eed99e7243ba2d167aca49378cbced777f}
-      - {type: IP-CIDR, value: 45.40.192.0/18, identity_key: "ip-cidr|45.40.192.0/18", rule_id: c75161ed52314c3eb6fe905e640b2f8df6a6e2e6298e9fa65de14f933135b7a3}
-      - {type: IP-CIDR, value: 49.232.0.0/14, identity_key: "ip-cidr|49.232.0.0/14", rule_id: b4228776b0f520f9cbdfacbce0d20cb839eaeb2098fa0862d240ef096d8e22c8}
-      - {type: IP-CIDR, value: 49.51.0.0/19, identity_key: "ip-cidr|49.51.0.0/19", rule_id: 55fa33fb29aeaf148fd50b6062e5da4299804bd608f1a853e9b2405a3050107f}
-      - {type: IP-CIDR, value: 49.51.104.0/22, identity_key: "ip-cidr|49.51.104.0/22", rule_id: 41d07693781841484bd0a1dcedcfbcbe0ff1e68072f7eb85b63dec4144bed607}
-      - {type: IP-CIDR, value: 49.51.108.0/23, identity_key: "ip-cidr|49.51.108.0/23", rule_id: b443cb338f9cafd5f3265b50e347cd51137f7b57c6d1800e6fa4c540ba7687c3}
-      - {type: IP-CIDR, value: 49.51.128.0/18, identity_key: "ip-cidr|49.51.128.0/18", rule_id: 3350d02b09f4d135137b7dd54c4f3490ac69457613b87fe35ad75a82288b79e4}
-      - {type: IP-CIDR, value: 49.51.192.0/20, identity_key: "ip-cidr|49.51.192.0/20", rule_id: 7f982337aaad7527dbfc3ea9e0f68743f167662e192c0077da8a6fcc55fc8d44}
-      - {type: IP-CIDR, value: 49.51.224.0/23, identity_key: "ip-cidr|49.51.224.0/23", rule_id: 672facba36aa51cc367394cfcc98ef775d81bd82c188ee18ee807b5e179996d1}
-      - {type: IP-CIDR, value: 49.51.228.0/22, identity_key: "ip-cidr|49.51.228.0/22", rule_id: add14f46bb5652d95b9ea71ce845f574fa461e817b77fe9897c23be26ec4ea01}
-      - {type: IP-CIDR, value: 49.51.232.0/21, identity_key: "ip-cidr|49.51.232.0/21", rule_id: e0f2953bda1457e36c18fb12f3f708f7de5ee46922eb5472da1079d6294ecd95}
-      - {type: IP-CIDR, value: 49.51.240.0/20, identity_key: "ip-cidr|49.51.240.0/20", rule_id: 840dbbc7628a1b090b79e98b6b3099a0ccd4ded6183dc2babfb89cbc6377470e}
-      - {type: IP-CIDR, value: 49.51.32.0/20, identity_key: "ip-cidr|49.51.32.0/20", rule_id: f3987d87a9b7fa6a3550cd6b7b07c2534e301bd3f505602ea8307399ee0b89be}
-      - {type: IP-CIDR, value: 49.51.48.0/21, identity_key: "ip-cidr|49.51.48.0/21", rule_id: a7926786ce0305fccef5db15d64b788043b80343be6106e3e1cd4a8f180d52e5}
-      - {type: IP-CIDR, value: 49.51.62.0/23, identity_key: "ip-cidr|49.51.62.0/23", rule_id: d52d0d1ac5697d2b572dbd6b7ae830ce74a775fac332bbdc351b168795845b2f}
-      - {type: IP-CIDR, value: 49.51.64.0/19, identity_key: "ip-cidr|49.51.64.0/19", rule_id: ca2f1e35dac20e78b0ed14791c90ccabac2538e6084703ee9a0bd5e243e976a2}
-      - {type: IP-CIDR, value: 49.51.96.0/21, identity_key: "ip-cidr|49.51.96.0/21", rule_id: bd1bdec9581bb4a377b15fafcc5e343ac4986457e95830859fef5c9577495bdf}
-      - {type: IP-CIDR, value: 58.87.64.0/18, identity_key: "ip-cidr|58.87.64.0/18", rule_id: d6b0bd2ce1f139d4ccba65ad940a63a1bfb9c1ee7ccbda5d6c5e2d0b5210978b}
-      - {type: IP-CIDR, value: 62.234.0.0/16, identity_key: "ip-cidr|62.234.0.0/16", rule_id: e830cb9f89252b2890b8ec90026c5d99ce01328cc49afb644491b819b9015a1a}
-      - {type: IP-CIDR, value: 81.68.0.0/14, identity_key: "ip-cidr|81.68.0.0/14", rule_id: e86f4c56b7a0c23083ce5e0d7c3b120e5838e888266adce46b6efd90b50127ca}
-      - {type: IP-CIDR, value: 94.191.0.0/17, identity_key: "ip-cidr|94.191.0.0/17", rule_id: 8bc816cba6224913d1f0f31384167bd511bd09ab3a245e131438b53896839ac0}
-      - {type: IP6-CIDR, value: 2001:df6:f400::/48, identity_key: "ip6-cidr|2001:df6:f400::/48", rule_id: f2f91123545d53967212ab779a2960cd14ffa3110c81c3737290440229d0b843}
-      - {type: IP6-CIDR, value: 2402:4e00::/32, identity_key: "ip6-cidr|2402:4e00::/32", rule_id: 6327c5e808aaef9982a382ac0b42a94616b5493b3e9b42f38b5e950dfe55d49b}
+    - type: IP-CIDR
+      value: 1.116.116.0/22
+      identity_key: ip-cidr|1.116.116.0/22
+      rule_id: 6b276b0eae50c33a9365ab2ed0d4a2f07180b9b93a6a30d711516feb65448f1b
+    - type: IP-CIDR
+      value: 1.116.216.0/23
+      identity_key: ip-cidr|1.116.216.0/23
+      rule_id: cbaa06821f428b5b83fc36cfa6f226a72d0d52f526998adafe61f4bf8be15a36
+    - type: IP-CIDR
+      value: 1.117.118.0/23
+      identity_key: ip-cidr|1.117.118.0/23
+      rule_id: ccbd1e288ddfc9293ab96f2431338aa80a49059285e1ce7986ae3f9e7b756724
+    - type: IP-CIDR
+      value: 1.117.218.0/23
+      identity_key: ip-cidr|1.117.218.0/23
+      rule_id: e092a1746159215e84a8455c0e286efae17c85e059969b221ca9dda9263b2900
+    - type: IP-CIDR
+      value: 1.12.102.0/23
+      identity_key: ip-cidr|1.12.102.0/23
+      rule_id: 2e293317b42fecf41c00ab5813d2906e3ffdc469d31770063fdb4d9d312bad94
+    - type: IP-CIDR
+      value: 1.12.116.0/22
+      identity_key: ip-cidr|1.12.116.0/22
+      rule_id: e146c8dc9cd6a2787d5d517a6dd0d77fca9fb0618349aad967d9e911c675de81
+    - type: IP-CIDR
+      value: 1.12.212.0/23
+      identity_key: ip-cidr|1.12.212.0/23
+      rule_id: fa515ea73ecda6353d8fe5696d061f7dae88775bc9a1e9691ddb358b81c64de9
+    - type: IP-CIDR
+      value: 1.13.116.0/22
+      identity_key: ip-cidr|1.13.116.0/22
+      rule_id: 5cb260c90db9c8ab346911db71ed1f0b2b2917b8e6da15331e61b9ad51db5de0
+    - type: IP-CIDR
+      value: 1.14.104.0/23
+      identity_key: ip-cidr|1.14.104.0/23
+      rule_id: 539fd6b127d25997c3f5d6b4dd236681552f421d3e6b1af8c004b66b5bdafff4
+    - type: IP-CIDR
+      value: 1.14.206.0/23
+      identity_key: ip-cidr|1.14.206.0/23
+      rule_id: 025def933a0601717d93c36be1a35976021b93443783712a588afc8c974a1166
+    - type: IP-CIDR
+      value: 1.15.102.0/23
+      identity_key: ip-cidr|1.15.102.0/23
+      rule_id: 7a593f51fbcaff7f8014141785cfe7f5e95281e5e50abbb53ecef1ba05532e74
+    - type: IP-CIDR
+      value: 1.15.208.0/23
+      identity_key: ip-cidr|1.15.208.0/23
+      rule_id: 865020e9d14ffd9ab21cc29423f69a49d6177d2975b606beea8c5f173ec11bae
+    - type: IP-CIDR
+      value: 103.238.16.0/22
+      identity_key: ip-cidr|103.238.16.0/22
+      rule_id: 35ee907277ef708d10201bb2525e85249fd333a5dd59dda2b747930122d84410
+    - type: IP-CIDR
+      value: 103.38.116.0/22
+      identity_key: ip-cidr|103.38.116.0/22
+      rule_id: a507362ec83e12a3b52fc0bf7dddd5a58983f94713968f627f9936f1560458f0
+    - type: IP-CIDR
+      value: 103.7.28.0/22
+      identity_key: ip-cidr|103.7.28.0/22
+      rule_id: f6805d3c52371b7478e7da2dbc185f7bd6e3ff3d9267d5cae6bcf6a5ed2c7493
+    - type: IP-CIDR
+      value: 106.52.0.0/14
+      identity_key: ip-cidr|106.52.0.0/14
+      rule_id: 497016ad7f96f22b5e8065417c139b24907c70a30e9e178b63e66bbea0f37325
+    - type: IP-CIDR
+      value: 109.244.0.0/16
+      identity_key: ip-cidr|109.244.0.0/16
+      rule_id: 51ec47740ebb6a15793e67917a1c7bb2ea956d195248d08585b8762cf3d5bacb
+    - type: IP-CIDR
+      value: 111.229.0.0/16
+      identity_key: ip-cidr|111.229.0.0/16
+      rule_id: 39260307e213d4973a984bb39c3b2c30dd86b86c0b13271efb3de15f7cfc9b1b
+    - type: IP-CIDR
+      value: 111.230.0.0/15
+      identity_key: ip-cidr|111.230.0.0/15
+      rule_id: 02946110614e86c12c73a176a00117f4555d3290c089288125c8dcafa83606cc
+    - type: IP-CIDR
+      value: 115.159.0.0/16
+      identity_key: ip-cidr|115.159.0.0/16
+      rule_id: 7870f6842ee71f6a45e741e53ad645e4f7ec556b472f0c6bb13c935b5b94a2d5
+    - type: IP-CIDR
+      value: 118.126.64.0/18
+      identity_key: ip-cidr|118.126.64.0/18
+      rule_id: 9e9e551af0d4637d93b3e9b8ba7a9e66743bc9dd315328d5d9912dda5754d6aa
+    - type: IP-CIDR
+      value: 118.24.0.0/15
+      identity_key: ip-cidr|118.24.0.0/15
+      rule_id: 393f681d49a613920d1fbf44d060f35cdc3163087f8fa34da95e46e0077fee99
+    - type: IP-CIDR
+      value: 118.89.0.0/16
+      identity_key: ip-cidr|118.89.0.0/16
+      rule_id: c6ce8fb8ec8b12066c817b22ba3cd931a613628addcbe3e04040aa61b49f2190
+    - type: IP-CIDR
+      value: 119.27.160.0/19
+      identity_key: ip-cidr|119.27.160.0/19
+      rule_id: 4754eb3e6374d0811734933fc146fa2c88700616f242e004d52040cc0ecc4651
+    - type: IP-CIDR
+      value: 119.28.0.0/15
+      identity_key: ip-cidr|119.28.0.0/15
+      rule_id: 95128a961a68075935caa77c382062f30f2f0e6c5ea255f517a777eafb16ec54
+    - type: IP-CIDR
+      value: 119.45.0.0/16
+      identity_key: ip-cidr|119.45.0.0/16
+      rule_id: d7d5d2a23694ca7ff7b022d8a6ccc7260b487794cc90b75122cf567936b62024
+    - type: IP-CIDR
+      value: 120.88.56.0/23
+      identity_key: ip-cidr|120.88.56.0/23
+      rule_id: ab0e72a76830ce110cb9e874dc9c1071a74ecd1fdec15e20a93030a91d6ade57
+    - type: IP-CIDR
+      value: 121.51.0.0/16
+      identity_key: ip-cidr|121.51.0.0/16
+      rule_id: dba72c94504190dc7abb08c3455e1183c4519c5b627ab481286a9fd69060af49
+    - type: IP-CIDR
+      value: 122.152.192.0/18
+      identity_key: ip-cidr|122.152.192.0/18
+      rule_id: 4cbb5d7fb6a7ffd62206d7fd8663e1f14aca92b3f8f4171fb024394e50d42006
+    - type: IP-CIDR
+      value: 123.206.0.0/15
+      identity_key: ip-cidr|123.206.0.0/15
+      rule_id: 1fb3bb4fa67fa79ec854a830fba012f84709400339ff34a16494e17f970de28e
+    - type: IP-CIDR
+      value: 128.108.0.0/16
+      identity_key: ip-cidr|128.108.0.0/16
+      rule_id: 91eae4a5b0a8b53b81148ff5c5768916ecd9edfffffb6c3dd13626e6c595293d
+    - type: IP-CIDR
+      value: 129.204.0.0/16
+      identity_key: ip-cidr|129.204.0.0/16
+      rule_id: 7f6cb5efb96e79ce1cd234d27a829d2d72c0da87857123f1370837b04ab0bda5
+    - type: IP-CIDR
+      value: 129.211.0.0/16
+      identity_key: ip-cidr|129.211.0.0/16
+      rule_id: 7db54d83be7c0470fd086a3b687321a0a792712def3bea6cdbb0ece9d2fcd728
+    - type: IP-CIDR
+      value: 129.28.0.0/16
+      identity_key: ip-cidr|129.28.0.0/16
+      rule_id: 5eff5533e9b70bbd4c24288ff053efcf315bc609a9e67e34a074c63fce509921
+    - type: IP-CIDR
+      value: 132.232.0.0/16
+      identity_key: ip-cidr|132.232.0.0/16
+      rule_id: fe7817c0d995181425df87fe7a875cfe3bf3a7ecb52b08286489d54dc231cc39
+    - type: IP-CIDR
+      value: 134.175.0.0/16
+      identity_key: ip-cidr|134.175.0.0/16
+      rule_id: 2df5fa380f1908859cc5badc8a3cf26290bb0ef801ccbda18212e29c0eb63687
+    - type: IP-CIDR
+      value: 139.155.0.0/16
+      identity_key: ip-cidr|139.155.0.0/16
+      rule_id: e15ce34914cf7c97c806353e813078a293d601721b02766a2bfb8d11d8e3a90c
+    - type: IP-CIDR
+      value: 139.186.0.0/16
+      identity_key: ip-cidr|139.186.0.0/16
+      rule_id: 256f97e1df60377e46befedf8cd8bf92b8f91f7cdec8fdfc17d870cf6ca6c345
+    - type: IP-CIDR
+      value: 139.199.0.0/16
+      identity_key: ip-cidr|139.199.0.0/16
+      rule_id: d939ddb5ef700ce474d2570ec53e78763e6ee21b735744385a3ea6709ad587a9
+    - type: IP-CIDR
+      value: 140.143.0.0/16
+      identity_key: ip-cidr|140.143.0.0/16
+      rule_id: 34f1dcc7d75a4f5c45dfb60615f64ca8281be16564e486cf6e8b11a661b37316
+    - type: IP-CIDR
+      value: 146.56.192.0/18
+      identity_key: ip-cidr|146.56.192.0/18
+      rule_id: b10b48394a753901a8e989f0c8f5bc5df7465491fe1bc5efbf363e9ae6b8a6d8
+    - type: IP-CIDR
+      value: 148.70.0.0/16
+      identity_key: ip-cidr|148.70.0.0/16
+      rule_id: 292839596e55949adca65b8cf6f4bac970202f588d70be0b3e9f3ff586763d0e
+    - type: IP-CIDR
+      value: 150.158.0.0/16
+      identity_key: ip-cidr|150.158.0.0/16
+      rule_id: 9e75c7c85cca91ef148464403abf6d189da8e8f8d7b5971429599ba66091e200
+    - type: IP-CIDR
+      value: 152.136.0.0/16
+      identity_key: ip-cidr|152.136.0.0/16
+      rule_id: 18fbaa66b7c0878abc1b8d13946aa8d078d07b5ef0156c317cd63bca09929318
+    - type: IP-CIDR
+      value: 154.8.128.0/17
+      identity_key: ip-cidr|154.8.128.0/17
+      rule_id: aa18bd97397e401b0dabdc27f360fdf5dd9b6b3947ba87d5e8fd098c5762005c
+    - type: IP-CIDR
+      value: 162.14.0.0/16
+      identity_key: ip-cidr|162.14.0.0/16
+      rule_id: 5df7ea0092ead1c0fbacf048178656158f1e40e64ac257ba5abef208d10e2563
+    - type: IP-CIDR
+      value: 172.81.192.0/18
+      identity_key: ip-cidr|172.81.192.0/18
+      rule_id: 257b647ca851cb169908396aa98bdaeec4c0b74ce5614f9e5d8577b851313e16
+    - type: IP-CIDR
+      value: 175.24.0.0/16
+      identity_key: ip-cidr|175.24.0.0/16
+      rule_id: 2e5999c499854d3cc2a16aa838ab34af350de5de4c934c41d8b9060f5a844fd3
+    - type: IP-CIDR
+      value: 182.254.0.0/16
+      identity_key: ip-cidr|182.254.0.0/16
+      rule_id: 5ed1127d2f27fa6e3ac9f590088beabe06b94762ba1b99170e3bf484f9b09182
+    - type: IP-CIDR
+      value: 188.131.128.0/17
+      identity_key: ip-cidr|188.131.128.0/17
+      rule_id: fa36f2b8c74dc7b8a6f5e1a4627bd32ac0ddadf577c53ac99108e1ae6b59f2cc
+    - type: IP-CIDR
+      value: 192.144.128.0/17
+      identity_key: ip-cidr|192.144.128.0/17
+      rule_id: eaf5ddcdfee8db3feab15ff8372f1e5e381d58f0fe8daa2567fdc32ec6f56ee9
+    - type: IP-CIDR
+      value: 193.112.0.0/16
+      identity_key: ip-cidr|193.112.0.0/16
+      rule_id: 0e7c868c7115fe6397daa4ef0a09c5fd7c28cf358011d25e39342e8e8043b07f
+    - type: IP-CIDR
+      value: 203.195.128.0/17
+      identity_key: ip-cidr|203.195.128.0/17
+      rule_id: 283d5137df2f0ee00a4596a3034ee75a6220d10d4326ac9ec86b43c35669778c
+    - type: IP-CIDR
+      value: 203.205.128.0/19
+      identity_key: ip-cidr|203.205.128.0/19
+      rule_id: e35f2d28d681950cbade85fa37a4dad485ecf6a927bd8dd377302f7cdba8f24e
+    - type: IP-CIDR
+      value: 203.205.176.0/22
+      identity_key: ip-cidr|203.205.176.0/22
+      rule_id: 98ec99f10cb990ca5fbf87cbefc24ce64bd98e1a83c7c8cc90129f92255e602d
+    - type: IP-CIDR
+      value: 203.205.188.0/24
+      identity_key: ip-cidr|203.205.188.0/24
+      rule_id: 243c3076f1f513fba114cb7bec4c3c6c99ddcb82341cc1cb1fcfdcd1a9b07680
+    - type: IP-CIDR
+      value: 203.205.191.0/24
+      identity_key: ip-cidr|203.205.191.0/24
+      rule_id: 4c07a3deccc3f4c40f1fb8ce6a6e10937b87c4f145d68e62522027785b2c97f2
+    - type: IP-CIDR
+      value: 203.205.193.0/24
+      identity_key: ip-cidr|203.205.193.0/24
+      rule_id: e0141a93b0a8f37e59509b2d776dc0664b57fc45c2fb19f3daf3dc2829e1a6b6
+    - type: IP-CIDR
+      value: 203.205.194.0/23
+      identity_key: ip-cidr|203.205.194.0/23
+      rule_id: 15165f886d31bbaf84b72fb522699ac3c78acd21c73169a4596c1ce1cca301af
+    - type: IP-CIDR
+      value: 203.205.218.0/23
+      identity_key: ip-cidr|203.205.218.0/23
+      rule_id: b1af8150103364a14259ac228203e47c758c19d70b90895e656cba7ccf9597a8
+    - type: IP-CIDR
+      value: 203.205.220.0/22
+      identity_key: ip-cidr|203.205.220.0/22
+      rule_id: e620b161bee5cc5cc72d8cedb103d5b74c8958731663426a2d872fed6d5d497b
+    - type: IP-CIDR
+      value: 203.205.224.0/24
+      identity_key: ip-cidr|203.205.224.0/24
+      rule_id: 5202ae948116f2ab575c63dff3b165bcf037ea2b27817e90f3f61a6f3fbb5358
+    - type: IP-CIDR
+      value: 203.205.232.0/21
+      identity_key: ip-cidr|203.205.232.0/21
+      rule_id: c1f8dcc9520d1919dedd7c21ef984265412fabc8838a6dbfc2214d8d9a17896a
+    - type: IP-CIDR
+      value: 203.205.240.0/24
+      identity_key: ip-cidr|203.205.240.0/24
+      rule_id: 4b188783724d21dfc41493330e3e61c6d16ab50ffc21e2a24f5e059c00f2186c
+    - type: IP-CIDR
+      value: 203.205.242.0/24
+      identity_key: ip-cidr|203.205.242.0/24
+      rule_id: ec07a569c6480ede4b9ed8204527490de22ff70b12cdfb6e05f7a5881f2aafd8
+    - type: IP-CIDR
+      value: 203.205.244.0/23
+      identity_key: ip-cidr|203.205.244.0/23
+      rule_id: 28412efeb215bacc6324321d8c03c7dcfe1dd4524db026e95d60baa1983ae6cf
+    - type: IP-CIDR
+      value: 203.205.248.0/21
+      identity_key: ip-cidr|203.205.248.0/21
+      rule_id: 5c19512adc3abc78b90a3c96f7d430282ead5720953ec362447123333c09dbaf
+    - type: IP-CIDR
+      value: 210.73.160.0/19
+      identity_key: ip-cidr|210.73.160.0/19
+      rule_id: 7d01461c70ca3c2392972fd5ea3b8fd85bd924f8489f9ce0bb9a961b743bda3c
+    - type: IP-CIDR
+      value: 211.152.128.0/22
+      identity_key: ip-cidr|211.152.128.0/22
+      rule_id: 0f21932a26d75dcf3b890dd3a6b0693a14cdf1788686217e855bfecd2503938c
+    - type: IP-CIDR
+      value: 211.152.132.0/23
+      identity_key: ip-cidr|211.152.132.0/23
+      rule_id: cbcf27f2594acfbfc3cdbb33c3ac509c28abca0284db5bfbbcc413c93220f366
+    - type: IP-CIDR
+      value: 211.152.136.0/23
+      identity_key: ip-cidr|211.152.136.0/23
+      rule_id: c61729cf75cb1ca6296553ebcf868959569af7bf81e3a05c8b26ad1dc9914171
+    - type: IP-CIDR
+      value: 211.152.144.0/22
+      identity_key: ip-cidr|211.152.144.0/22
+      rule_id: 2ff11082e54ff90eb0725ba31241ded6318b4114e90336ac3725fa8adf754d2b
+    - type: IP-CIDR
+      value: 211.152.148.0/23
+      identity_key: ip-cidr|211.152.148.0/23
+      rule_id: 0812c350d477b39110572686fdbf8617beee78ba8eb01641a2de09d90e02ec1d
+    - type: IP-CIDR
+      value: 211.152.152.0/22
+      identity_key: ip-cidr|211.152.152.0/22
+      rule_id: 26e84ebde6fd12638af942a3cf5f6df3b1ef9d7363e2d82dc473a5806a6a4032
+    - type: IP-CIDR
+      value: 211.152.156.0/24
+      identity_key: ip-cidr|211.152.156.0/24
+      rule_id: 8c276e77c45fa2ef5dbfdbbccc2ae15a366856e7ae8ee9ec9a1d4a504e829a47
+    - type: IP-CIDR
+      value: 211.159.128.0/17
+      identity_key: ip-cidr|211.159.128.0/17
+      rule_id: 9d95694df0b802ae0753a8b953e0e188461c9b73c0c030d5e47ee28e7b3220a7
+    - type: IP-CIDR
+      value: 212.129.128.0/17
+      identity_key: ip-cidr|212.129.128.0/17
+      rule_id: a24a33d499a8eafc0223bb097d114428f413ebe54481ab937ce0b9d6beafc0eb
+    - type: IP-CIDR
+      value: 212.64.0.0/17
+      identity_key: ip-cidr|212.64.0.0/17
+      rule_id: c47aff14f7d7842356d34fb1eb619c5420aa5595304b7678598a0dd8d98cba8d
+    - type: IP-CIDR
+      value: 42.187.128.0/17
+      identity_key: ip-cidr|42.187.128.0/17
+      rule_id: f3faaeff2bc81299487079d7f3166bcda1c2b1640888f4499bce44dc4de1789c
+    - type: IP-CIDR
+      value: 42.194.128.0/17
+      identity_key: ip-cidr|42.194.128.0/17
+      rule_id: 6d72f1adb48516d26eea35193b4f669edfd5604a24124941bd09d8bb07a21dc5
+    - type: IP-CIDR
+      value: 43.242.252.0/22
+      identity_key: ip-cidr|43.242.252.0/22
+      rule_id: 5ff02e06b8588ec1c3cba58677f190861080af10f1e7e0fbaeaedf5784f8f984
+    - type: IP-CIDR
+      value: 43.247.196.0/22
+      identity_key: ip-cidr|43.247.196.0/22
+      rule_id: d8b0f08f93f114b66689fb95b3eeafd69542bf85ab28adcb64022bd117c87a2f
+    - type: IP-CIDR
+      value: 45.40.192.0/18
+      identity_key: ip-cidr|45.40.192.0/18
+      rule_id: 2a6ca29f75f85cbd965108bdf66c9b3a1747c1de9cee9a4241398515fb4d8dc7
+    - type: IP-CIDR
+      value: 49.232.0.0/14
+      identity_key: ip-cidr|49.232.0.0/14
+      rule_id: 3b885ef60705afe0c3f97850b72b76e9b4300d24ef13fb8bfdb22a2af06dd470
+    - type: IP-CIDR
+      value: 49.51.0.0/19
+      identity_key: ip-cidr|49.51.0.0/19
+      rule_id: dcd685012a6261a8de1c61eff89d0f1203a221c40188975575dbf87a2ac92f5a
+    - type: IP-CIDR
+      value: 49.51.104.0/22
+      identity_key: ip-cidr|49.51.104.0/22
+      rule_id: 785c8a6175fb6ae219c6a23e1b7adf652714e8802a600bbd3a5210a8e07524f7
+    - type: IP-CIDR
+      value: 49.51.108.0/23
+      identity_key: ip-cidr|49.51.108.0/23
+      rule_id: 981d517ea8c0c4450f50d62c987504b6c647a34ae88a600c5d0b2679f766a30f
+    - type: IP-CIDR
+      value: 49.51.128.0/18
+      identity_key: ip-cidr|49.51.128.0/18
+      rule_id: c84102ac4dc4a49c41ba25ff88b045c836d9c3c246abff399a2a490af307e2ac
+    - type: IP-CIDR
+      value: 49.51.192.0/20
+      identity_key: ip-cidr|49.51.192.0/20
+      rule_id: 919b19909de3f1e963cfd591d936719ecb4e8f10087ef84c6c278ebc07d4b931
+    - type: IP-CIDR
+      value: 49.51.224.0/23
+      identity_key: ip-cidr|49.51.224.0/23
+      rule_id: 952c6f2e09a50e3c5224d20013805bbd594ae393b9c80b66df2de90f8b3ee9db
+    - type: IP-CIDR
+      value: 49.51.228.0/22
+      identity_key: ip-cidr|49.51.228.0/22
+      rule_id: 4f60e5d878f3043a526e112a4ffa8abd2edbe25ba89878440dff747e6da6c394
+    - type: IP-CIDR
+      value: 49.51.232.0/21
+      identity_key: ip-cidr|49.51.232.0/21
+      rule_id: 9103a89700be1dba9d516fb8ff7a34b0a483c6419332fbe7f0d237a7461fb472
+    - type: IP-CIDR
+      value: 49.51.240.0/20
+      identity_key: ip-cidr|49.51.240.0/20
+      rule_id: d107a095e4e6658b6bcee8afe92404427eb28e8fa81ef086224850d9f0487268
+    - type: IP-CIDR
+      value: 49.51.32.0/20
+      identity_key: ip-cidr|49.51.32.0/20
+      rule_id: 0f0ca36ba57528fb90bcda38515d84ce00cd1ef2ecab7a8763a37cc9f56531c3
+    - type: IP-CIDR
+      value: 49.51.48.0/21
+      identity_key: ip-cidr|49.51.48.0/21
+      rule_id: a21b7417c73be886f63b8e78dd3c397a8287990690c8cdb7fb4152e259d0957d
+    - type: IP-CIDR
+      value: 49.51.62.0/23
+      identity_key: ip-cidr|49.51.62.0/23
+      rule_id: 45f011b040455be47721b4ce8640e3719cbd3d581a97716ab495ad0cc129ee93
+    - type: IP-CIDR
+      value: 49.51.64.0/19
+      identity_key: ip-cidr|49.51.64.0/19
+      rule_id: 517db964c4e67bdb22c512dfd416560ac41c47884cd1fe8eda1dc0e9d80e596b
+    - type: IP-CIDR
+      value: 49.51.96.0/21
+      identity_key: ip-cidr|49.51.96.0/21
+      rule_id: fb942c833b9949b3c1454176cfbd3bf3ba3f8f7c9d8fe56e5fe31a964917717e
+    - type: IP-CIDR
+      value: 58.87.64.0/18
+      identity_key: ip-cidr|58.87.64.0/18
+      rule_id: 5d7ae2547c337898968cd6fafc765d5c42cb752d9616fef62c67b49a397ceac4
+    - type: IP-CIDR
+      value: 62.234.0.0/16
+      identity_key: ip-cidr|62.234.0.0/16
+      rule_id: 7f1067ac6fb92ffe98fd0660385818cd592c98ce9bc7e4943094b93d2737eb2e
+    - type: IP-CIDR
+      value: 81.68.0.0/14
+      identity_key: ip-cidr|81.68.0.0/14
+      rule_id: 3ec8c5b3cbe33548f6e00ec801263c3d6b4d862a24ffbc1f2cd393f78c17eb71
+    - type: IP-CIDR
+      value: 94.191.0.0/17
+      identity_key: ip-cidr|94.191.0.0/17
+      rule_id: 7efd279d55a9e41f45d2cd61b986f0ba3d4dd036978e3544f687daabe2dcfaf7
+    - type: IP6-CIDR
+      value: 2001:df6:f400::/48
+      identity_key: ip6-cidr|2001:df6:f400::/48
+      rule_id: 54569785d2452347276d89f0400fdf8df39089c825b7d466659de2cacaadd450
+    - type: IP6-CIDR
+      value: 2402:4e00::/32
+      identity_key: ip6-cidr|2402:4e00::/32
+      rule_id: f43a7e7227c23c40548f8cb7fc6167573f0ec976e9a391007b5b614198c73427

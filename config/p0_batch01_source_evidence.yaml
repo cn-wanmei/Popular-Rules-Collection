@@ -1,6 +1,6 @@
 version: 1
 schema: p0_service_source_evidence_v1
-batch: 01
+batch: 1
 services:
   appstore:
     provider: apple
@@ -8,8 +8,8 @@ services:
       source: blackmatrix7
       url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AppStore/AppStore.list
       verification: exact_upstream_path_verified
-      observed: "# NAME: AppStore; HOST apps.apple.com; HOST itunes.apple.com"
-      observed_at: "2026-09-17"
+      observed: '# NAME: AppStore; HOST apps.apple.com; HOST itunes.apple.com'
+      observed_at: '2026-09-17'
     immutable_snapshot:
       status: complete
       path: config/p0_batch01_snapshots/2026-09-17/appstore.list
@@ -21,21 +21,22 @@ services:
       source: blackmatrix7
       url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/TestFlight/TestFlight.list
       verification: exact_upstream_path_verified
-      observed: "# NAME: TestFlight; beta.apple.com; testflight.apple.com; HOST-KEYWORD testflight"
-      observed_at: "2026-09-17"
+      observed: '# NAME: TestFlight; beta.apple.com; testflight.apple.com; HOST-KEYWORD
+        testflight'
+      observed_at: '2026-09-17'
     immutable_snapshot:
       status: complete
       path: config/p0_batch01_snapshots/2026-09-17/testflight.list
-      sha256: 4cb08a9ec95eab00cb82847ca92688099d5270035a72200b552b8adcb59c610b
-      rule_count: 3
+      sha256: 241c6ce4bc63444c36be1688b584ee4ec4f37c12aaf3a148983866b7a5826fd0
+      rule_count: 8
   appledev:
     provider: apple
     primary_source:
       source: LM-Firefly
       url: https://raw.githubusercontent.com/LM-Firefly/Rules/master/Apple/AppleDev.list
       verification: exact_service_specific_path_verified
-      observed: "AppleDev-specific rule file with 40 DOMAIN-SUFFIX entries"
-      observed_at: "2026-09-17"
+      observed: AppleDev-specific rule file with 40 DOMAIN-SUFFIX entries
+      observed_at: '2026-09-17'
     auxiliary_source:
       source: blackmatrix7
       url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Developer/README.md
@@ -51,8 +52,9 @@ services:
       source: blackmatrix7
       url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/FindMy/FindMy.list
       verification: exact_upstream_path_verified
-      observed: "# NAME: FindMy; HOST fmfmobile.icloud.com; HOST fmipmobile.icloud.com; HOST statici.icloud.com"
-      observed_at: "2026-09-17"
+      observed: '# NAME: FindMy; HOST fmfmobile.icloud.com; HOST fmipmobile.icloud.com;
+        HOST statici.icloud.com'
+      observed_at: '2026-09-17'
     immutable_snapshot:
       status: complete
       path: config/p0_batch01_snapshots/2026-09-17/findmy.list
@@ -64,13 +66,13 @@ services:
       source: blackmatrix7
       url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Cloud/TencentCloud/TencentCloud.list
       verification: exact_upstream_path_verified
-      observed: "# NAME: TencentCloud; IP-CIDR: 102; IP6-CIDR: 2; TOTAL: 104"
-      observed_at: "2026-09-20"
+      observed: '# NAME: TencentCloud; IP-CIDR: 102; IP6-CIDR: 2; TOTAL: 104'
+      observed_at: '2026-09-20'
     immutable_snapshot:
       status: complete
       path: config/p0_batch01_snapshots/2026-09-20/tencentcloud.list
-      sha256: be61e0ad4150af0b05bfcd4a197fc67c7d3d272bfb63fb3c2bef26806e558cb9
+      sha256: e5421c2f2f93e2f2e28cfcc2c7c85d62b5ad013fc5204445de513b50437c0ded
       rule_count: 104
-
 status: immutable_snapshot_complete
-next_required: execute semantic_and_overlap_audits; TencentCloud canonical membership is now complete
+next_required: execute semantic_and_overlap_audits; TencentCloud canonical membership
+  is now complete

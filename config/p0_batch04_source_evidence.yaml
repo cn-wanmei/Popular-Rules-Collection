@@ -1,0 +1,103 @@
+version: 1
+schema: p0_service_source_evidence_v1
+batch: 4
+services:
+  qq:
+    primary_source:
+      source: popular-rules-source-seed
+      url: https://github.com/cn-wanmei/Popular-Rules-Source
+      verification: official_seed_domains
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_batch04_snapshots/2026-09-20/qq.list
+      sha256: 3212921258f5297c7da558756120ec198dd252dfd6d0c5be5e51bd1f68bc6e4b
+      rule_count: 5
+  wecom:
+    primary_source:
+      source: popular-rules-source-seed
+      url: https://github.com/cn-wanmei/Popular-Rules-Source
+      verification: official_seed_domains
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_batch04_snapshots/2026-09-20/wecom.list
+      sha256: 552cf7320ca64651b53875dfcf7ebbb0c5b5f653870b156b28c22d0a3bced675
+      rule_count: 2
+  tencentmeeting:
+    primary_source:
+      source: popular-rules-source-seed
+      url: https://github.com/cn-wanmei/Popular-Rules-Source
+      verification: official_seed_domains
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_batch04_snapshots/2026-09-20/tencentmeeting.list
+      sha256: 4c13a5105e70b9a2280320cb98cbc324f428712d41bab46c236550a8566ba42c
+      rule_count: 2
+  baidunetdisk:
+    primary_source:
+      source: popular-rules-source-seed
+      url: https://github.com/cn-wanmei/Popular-Rules-Source
+      verification: official_seed_domains
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_batch04_snapshots/2026-09-20/baidunetdisk.list
+      sha256: 527589dc728a741773d11efe482e38d59aa2431d25758e94adb5c42e83b4853a
+      rule_count: 2
+  youdao:
+    primary_source:
+      source: popular-rules-source-seed
+      url: https://github.com/cn-wanmei/Popular-Rules-Source
+      verification: official_seed_domains
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_batch04_snapshots/2026-09-20/youdao.list
+      sha256: 6e775dff5283b1ec5bc764278264f03878b91cbb9a2f38763c0d316fd927987e
+      rule_count: 3
+  googlecloud:
+    primary_source:
+      source: popular-rules-source-seed
+      url: https://github.com/cn-wanmei/Popular-Rules-Source
+      verification: official_seed_domains
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_batch04_snapshots/2026-09-20/googlecloud.list
+      sha256: dfd476d2a7bd75259a421e8d059587487ff940f3a0d7055952e788ab9b286344
+      rule_count: 3
+  bitbucket:
+    primary_source:
+      source: popular-rules-source-seed
+      url: https://github.com/cn-wanmei/Popular-Rules-Source
+      verification: official_seed_domains
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_batch04_snapshots/2026-09-20/bitbucket.list
+      sha256: 2dcd491994367f604905f99fd1a9c16f304ff06fcdb2dc07e6d4f442fde925d2
+      rule_count: 2
+  pypi:
+    primary_source:
+      source: popular-rules-source-seed
+      url: https://github.com/cn-wanmei/Popular-Rules-Source
+      verification: official_seed_domains
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_batch04_snapshots/2026-09-20/pypi.list
+      sha256: cd496abd7c63193e4491d31a83f08cbae4f7a58ac8f27b25d1f6702abeb21ea0
+      rule_count: 3
+  youtubemusic:
+    primary_source:
+      source: popular-rules-source-seed
+      url: https://github.com/cn-wanmei/Popular-Rules-Source
+      verification: official_seed_domains
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_batch04_snapshots/2026-09-20/youtubemusic.list
+      sha256: 5570493eebe165824608c8868ad44caa6dbfc2373856b3f78d43385ed4334dfb
+      rule_count: 2

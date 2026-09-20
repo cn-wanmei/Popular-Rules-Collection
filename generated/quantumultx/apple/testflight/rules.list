@@ -1,3 +1,2 @@
-host, beta.apple.com, proxy
-host, testflight.apple.com, proxy
-host-keyword, testflight, proxy
+host-suffix, beta.apple.com, proxy
+host-suffix, testflight.apple.com, proxy

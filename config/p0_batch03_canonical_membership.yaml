@@ -1,0 +1,2512 @@
+version: 1
+schema: p0_service_canonical_membership_v1
+batch: 3
+services:
+  airbnb:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/airbnb.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: airbnb.rs
+      identity_key: domain-suffix|airbnb.rs
+      rule_id: 816eb69277beeb68616b53440d237fa9794897becc50ced5d4922ec3c932cdfd
+    - type: DOMAIN-SUFFIX
+      value: airbnb.cl
+      identity_key: domain-suffix|airbnb.cl
+      rule_id: e61c61ff9d90aa519d4a74b7283a3cf6644ee2d07e86377d4db900d7f9ff70bc
+    - type: DOMAIN-SUFFIX
+      value: airbnb.ae
+      identity_key: domain-suffix|airbnb.ae
+      rule_id: 93e364870713adbc7a0316b108e3c7f8306ea081e1b2798cf4f406d6b13785ea
+    - type: DOMAIN-SUFFIX
+      value: airbnb.al
+      identity_key: domain-suffix|airbnb.al
+      rule_id: 7526beb7cfb6666dcb2ef478edb218705e96cf78227fbda1557cacfe4e90de24
+    - type: DOMAIN-SUFFIX
+      value: airbnb.am
+      identity_key: domain-suffix|airbnb.am
+      rule_id: 3d8e0f8b87ef09156176a4f8a99e504617aed53a3a5c98bff0e9445a4425b114
+    - type: DOMAIN-SUFFIX
+      value: airbnb.at
+      identity_key: domain-suffix|airbnb.at
+      rule_id: 23010287dd822619d16c76f4c1e3466c31fd7e7fda0206ff116e7b6bfd398c80
+    - type: DOMAIN-SUFFIX
+      value: airbnb.az
+      identity_key: domain-suffix|airbnb.az
+      rule_id: 66297efc500023f83c8494cf1708aa5a8473db7b7d2e75ea569fdba4a6c83203
+    - type: DOMAIN-SUFFIX
+      value: airbnb.ba
+      identity_key: domain-suffix|airbnb.ba
+      rule_id: 6e74eae2aa978a693f0992a1d93e29cdafdd8ef328bb02b3697a0979deea083e
+    - type: DOMAIN-SUFFIX
+      value: airbnb.be
+      identity_key: domain-suffix|airbnb.be
+      rule_id: a2c6ea51ede92b199bcac600ca4dcc228b97d242cdac07a5ad535b441983bc8e
+    - type: DOMAIN-SUFFIX
+      value: airbnb.ca
+      identity_key: domain-suffix|airbnb.ca
+      rule_id: 95e864d8050fa7ba3e68169fb9ea8caca647fb001a0b5ffd6680b68f9f6ae4a9
+    - type: DOMAIN-SUFFIX
+      value: airbnb.cat
+      identity_key: domain-suffix|airbnb.cat
+      rule_id: fb9d372da0d93de42babd3a73f5e6cdd973b3a1addbcbc7b44c921612fa03c58
+    - type: DOMAIN-SUFFIX
+      value: airbnb.ch
+      identity_key: domain-suffix|airbnb.ch
+      rule_id: 0664a0069a88c3b57a2e80e228e168962f6e3cadfbdfc6bbe2dfb69063d357f0
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com
+      identity_key: domain-suffix|airbnb.com
+      rule_id: 87c4ef7b6abfc870ee1849da7745ba74c0dad7e97c532fda20bec62d2aa5f965
+    - type: DOMAIN-SUFFIX
+      value: airbnb.cn
+      identity_key: domain-suffix|airbnb.cn
+      rule_id: 73aa772ea57774bac19a435a401ed8e4ab28a6b7aa82881dd4434561f80ce02e
+    - type: DOMAIN-SUFFIX
+      value: vamo.com
+      identity_key: domain-suffix|vamo.com
+      rule_id: aa1f7c12702f83a7cc9c09bb59f733e8ce4149ff0a963c9ff2e5c90d985b863c
+    - type: DOMAIN-SUFFIX
+      value: muscache.com
+      identity_key: domain-suffix|muscache.com
+      rule_id: f443e41324884b40dd6fc450ee9c55ecb8916a315d4efa9dc05c5920c0466446
+    - type: DOMAIN-SUFFIX
+      value: airbnb.travel
+      identity_key: domain-suffix|airbnb.travel
+      rule_id: 3ff1b06d9134c5931c8aa02dd7f442204690ff76250399519b156b125ef01014
+    - type: DOMAIN-SUFFIX
+      value: airbnb.tools
+      identity_key: domain-suffix|airbnb.tools
+      rule_id: b60aa4fa2be430677ff110f6e1da30e563bc4412a2b893d7441af0d40f486c43
+    - type: DOMAIN-SUFFIX
+      value: airbnb.si
+      identity_key: domain-suffix|airbnb.si
+      rule_id: becf06203708566b2e59774bd3c08c603852831ecd5e79e13357005df2a3faed
+    - type: DOMAIN-SUFFIX
+      value: airbnb.se
+      identity_key: domain-suffix|airbnb.se
+      rule_id: 3690ec49a797649a9742d6970f37da3ee37da3b37652e82837446b15ccc0f6be
+    - type: DOMAIN-SUFFIX
+      value: abb.travel
+      identity_key: domain-suffix|abb.travel
+      rule_id: eaaee8209749ad04f295e322d28952661f1cf3c67e79f94743ee99d395cf8834
+    - type: DOMAIN-SUFFIX
+      value: airbnb.ru
+      identity_key: domain-suffix|airbnb.ru
+      rule_id: 1f9c3b23b3f58a84c7f956a0378327957e684fbd81516e340f8bb8296f8bac13
+    - type: DOMAIN-SUFFIX
+      value: accomable.com
+      identity_key: domain-suffix|accomable.com
+      rule_id: cfa1d30947274210fcd63b7c66f99cc051d78d6f3435f3d0875aaf97aec6712c
+    - type: DOMAIN-SUFFIX
+      value: airbnb.cz
+      identity_key: domain-suffix|airbnb.cz
+      rule_id: 62ae468d24343ea2c4d0c21f7e6d293e1d9a8f3d42fe8b6bab0623e0ab2f3c19
+    - type: DOMAIN-SUFFIX
+      value: airbnb.lv
+      identity_key: domain-suffix|airbnb.lv
+      rule_id: 88e325e784edcae757602c8c1507c722bf51a0fe16cf0f0c6b06405512184985
+    - type: DOMAIN-SUFFIX
+      value: airbnb.pl
+      identity_key: domain-suffix|airbnb.pl
+      rule_id: 4dab066e3daed3ed4d7967a8d3fa392efa9e9ce7a634a18a20a3f1928ad76ab3
+    - type: DOMAIN-SUFFIX
+      value: airbnb.org
+      identity_key: domain-suffix|airbnb.org
+      rule_id: 1f1006c195ade3d8ff3e68e3e24c57b2f0e3ad9b6a42c1ecbedaca5198ebfbec
+    - type: DOMAIN-SUFFIX
+      value: airbnb.no
+      identity_key: domain-suffix|airbnb.no
+      rule_id: 389638e3ebb5b1da46a6b65e4d1fc29a3805a054d9e262672431e2f88f472abb
+    - type: DOMAIN-SUFFIX
+      value: airbnb.nl
+      identity_key: domain-suffix|airbnb.nl
+      rule_id: 63363831d6950ba01c144f4ac6f019240e096f210616a0d58cca2aa45eb3451b
+    - type: DOMAIN-SUFFIX
+      value: airbnb.mx
+      identity_key: domain-suffix|airbnb.mx
+      rule_id: 298a2d904b7a5073e491adebae5848567803689a50af816aad35c1281d9f7786
+    - type: DOMAIN-SUFFIX
+      value: airbnb.me
+      identity_key: domain-suffix|airbnb.me
+      rule_id: 6a18d951cdacdb3a724dfd2d0369c3db26246e541e17bca342e8412db660f02c
+    - type: DOMAIN-SUFFIX
+      value: airbnb.pt
+      identity_key: domain-suffix|airbnb.pt
+      rule_id: 4d3d35109471fbc2fdd2859b7bad18b06a041024840249e260d4f71ca832689a
+    - type: DOMAIN-SUFFIX
+      value: airbnb.lu
+      identity_key: domain-suffix|airbnb.lu
+      rule_id: fc53b875ad8b98523f651578deb93a145aa25bbf1cefaad504b2b7cd9bc801e0
+    - type: DOMAIN-SUFFIX
+      value: airbnb.lt
+      identity_key: domain-suffix|airbnb.lt
+      rule_id: 86676bc961449a515afc82f3c0cb73dce1a9a66ec123743d0c75eddff9b11dd5
+    - type: DOMAIN-SUFFIX
+      value: airbnb.la
+      identity_key: domain-suffix|airbnb.la
+      rule_id: 40d164407472930ad044580f575426146a2c4d3cf5deb4f4f6e090a9aa7a8220
+    - type: DOMAIN-SUFFIX
+      value: airbnb.jp
+      identity_key: domain-suffix|airbnb.jp
+      rule_id: e635aa7247ae62c60d0db189a754477aed7f3c97340f3a09f535d13625c34bc3
+    - type: DOMAIN-SUFFIX
+      value: airbnb.it
+      identity_key: domain-suffix|airbnb.it
+      rule_id: a83496285d37e9e0d3d13822dbd8d451a2e17cdb6102804c1dfc55b693395190
+    - type: DOMAIN-SUFFIX
+      value: airbnb.is
+      identity_key: domain-suffix|airbnb.is
+      rule_id: 95dbdeee85622b39b83f416c7b4d890623e7e2a88e7580ce2b5a151b23b4fa1a
+    - type: DOMAIN-SUFFIX
+      value: airbnb.ie
+      identity_key: domain-suffix|airbnb.ie
+      rule_id: edb27ffd0708e91fcc2e8097e5a96afb79e2335193d6525c3ead84d24ea6618d
+    - type: DOMAIN-SUFFIX
+      value: airbnb.hu
+      identity_key: domain-suffix|airbnb.hu
+      rule_id: f86bbb7c5bf15fe880af5d1a6c099955e6f17667614b8f629e8c60688d553630
+    - type: DOMAIN-SUFFIX
+      value: airbnb.gy
+      identity_key: domain-suffix|airbnb.gy
+      rule_id: 91e4e0dddff2686098308869ed483206c923fbb65591e4a95d4613b17f28b3f2
+    - type: DOMAIN-SUFFIX
+      value: airbnb.gr
+      identity_key: domain-suffix|airbnb.gr
+      rule_id: a3e1ede33950282ed17f65e7aa7aadd2fcf6cb1d061e08f4631c052b73947fdd
+    - type: DOMAIN-SUFFIX
+      value: airbnb.fr
+      identity_key: domain-suffix|airbnb.fr
+      rule_id: acbab4c0f1e3586d87f0bba11cd614f67559577e7100a0cc8df137ea64ac0798
+    - type: DOMAIN-SUFFIX
+      value: airbnb.fi
+      identity_key: domain-suffix|airbnb.fi
+      rule_id: f67b3a9965fd56ed273c6cfe5c97644eeb844de84d5ecdc3aa97ad47e00b61c6
+    - type: DOMAIN-SUFFIX
+      value: airbnb.es
+      identity_key: domain-suffix|airbnb.es
+      rule_id: 8418f8141062afed9c8fec966eb1d8079b379bcc8f830ab8c7189cfa4352a4f6
+    - type: DOMAIN-SUFFIX
+      value: airbnb.dk
+      identity_key: domain-suffix|airbnb.dk
+      rule_id: 8a48d518198654616d0d97eedda449659f149b2034d5a4281e92fe731fcfcf4d
+    - type: DOMAIN-SUFFIX
+      value: airbnb.de
+      identity_key: domain-suffix|airbnb.de
+      rule_id: 8e3e164d18f1c91b15acfc6594723191373e18139fae666a0c897bc7d00ff37c
+    - type: DOMAIN-SUFFIX
+      value: airbnb.co.uk
+      identity_key: domain-suffix|airbnb.co.uk
+      rule_id: aea04dc9d4bef60acbdfadeff0961f8ef716fee0da2ca49730c7fbdc790b8ca9
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.tw
+      identity_key: domain-suffix|airbnb.com.tw
+      rule_id: f22f58c13e0dfe20df69e19b9e4bcc53a4971136f092411576b3ab4d8ac29007
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.ua
+      identity_key: domain-suffix|airbnb.com.ua
+      rule_id: 7067ac6c65165bbe80b55341d6e648b900cfabf71807b6e909e19740dd5ac5c2
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.vn
+      identity_key: domain-suffix|airbnb.com.vn
+      rule_id: d4432bc0b3d652319c2066e2dc8c5acbdd1b0195788e8a4977a5f2307de301d5
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.tr
+      identity_key: domain-suffix|airbnb.com.tr
+      rule_id: cb90b3da89afa72c567fda47b2b7d557361573241d7fcfc7d893176a3d6bf675
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.sv
+      identity_key: domain-suffix|airbnb.com.sv
+      rule_id: f4c8bdeadf2644638aa2202e3ab4271e4bebb99a0a9d516890e915be10602084
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.sg
+      identity_key: domain-suffix|airbnb.com.sg
+      rule_id: 9566f49c6a0405fd34891c1dc8998ba7a66b2356d15e41e18a59c6a5be848a66
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.ro
+      identity_key: domain-suffix|airbnb.com.ro
+      rule_id: fa3634af7af6050f9cc4f8620a89064ce993c56c0f596588afe5876440ce2f9b
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.py
+      identity_key: domain-suffix|airbnb.com.py
+      rule_id: 126d3f611ecf9c18f51ec201d7f335ba9f86ac3986f441b256b6b439a06275ff
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.ph
+      identity_key: domain-suffix|airbnb.com.ph
+      rule_id: 4fe3aea3f0657214e4c2a98108ce31c249d19adc558a645d9efe6a1f30c4aa3d
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.pe
+      identity_key: domain-suffix|airbnb.com.pe
+      rule_id: c26a55dc0781af0ca964c69d1958809b6717c88c09c680c768b3484fb9609042
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.pa
+      identity_key: domain-suffix|airbnb.com.pa
+      rule_id: f2e2d876ec2e2226ef29ea221327bf3b7096b8fffeef71acac025e6da7218417
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.ni
+      identity_key: domain-suffix|airbnb.com.ni
+      rule_id: 15911c14f7ea43117a6cb1929daae8942c09bed472905ec25a3731c06b346997
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.my
+      identity_key: domain-suffix|airbnb.com.my
+      rule_id: e039f7030a4848a8e2e5998f4dd9321d8535f0fb72f3450a666601700b1c4d84
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.mt
+      identity_key: domain-suffix|airbnb.com.mt
+      rule_id: 4ff9c8c514982f94e1d6c8ef3d12651eab4fd4a18bdc5307da27ca89cee3e66c
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.kh
+      identity_key: domain-suffix|airbnb.com.kh
+      rule_id: 93254e51669fefe0e17dc6998ca4620a2eb9042b956e28b78585a1d9fdf1d8a9
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.hr
+      identity_key: domain-suffix|airbnb.com.hr
+      rule_id: d4d3f14853288513df01b9d134f1a730af8c3bfc7a8ed1c9166c298c30185311
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.hn
+      identity_key: domain-suffix|airbnb.com.hn
+      rule_id: 61bd805fb96d8d94bb18cc5a002362ebaa9c4627182e3812ec319cc69a45d61d
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.hk
+      identity_key: domain-suffix|airbnb.com.hk
+      rule_id: e2a4f48e42c8152835b4fe7d6f4f57c11a8987d1e3673601ae3ec94cff7498fa
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.gt
+      identity_key: domain-suffix|airbnb.com.gt
+      rule_id: 218c7f6fdbe4fd2a44dc19f0817b4ce76c03774c982b9888da29b1c348a8c849
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.ee
+      identity_key: domain-suffix|airbnb.com.ee
+      rule_id: fdea185919e2d518c1de390fdc914f23c31e0b9f6cab6e44911a2e0211956500
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.ec
+      identity_key: domain-suffix|airbnb.com.ec
+      rule_id: ebc9570bd4bed29a6114d3c2f13a43538cf620963e4e997e1e3facab343efcea
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.co
+      identity_key: domain-suffix|airbnb.com.co
+      rule_id: 16bdaaffe486248634f0a90d763f4c4364949c3d20648daf784703b4a4aa2943
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.bz
+      identity_key: domain-suffix|airbnb.com.bz
+      rule_id: d83841438b6d4150c6fa927db89be028193a2b327ca368df8b4af017ddbb2ebf
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.br
+      identity_key: domain-suffix|airbnb.com.br
+      rule_id: 5ea0a234d920746d7313eeb33eb7485c0d374cfa92afee6bee8b129313b92cd4
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.bo
+      identity_key: domain-suffix|airbnb.com.bo
+      rule_id: 8eea5b7c0f36fb4c12e146a3b335e83b8f96d34beacdc02564613bc35184961e
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.au
+      identity_key: domain-suffix|airbnb.com.au
+      rule_id: 5b064e628f3c279075a415a36497ad63bbe8c6ee611bb07f5c3a2e8dffb80d62
+    - type: DOMAIN-SUFFIX
+      value: airbnb.com.ar
+      identity_key: domain-suffix|airbnb.com.ar
+      rule_id: f95803bb025a06c99233604184e424b5c3d264b0ce0b4da96e76104303a822c7
+    - type: DOMAIN-SUFFIX
+      value: airbnb.co.za
+      identity_key: domain-suffix|airbnb.co.za
+      rule_id: 84d6259371e86114192a4fc513af7c18b5398eacb7581e891b7d2c659aa9598c
+    - type: DOMAIN-SUFFIX
+      value: airbnb.co.ve
+      identity_key: domain-suffix|airbnb.co.ve
+      rule_id: c8523287290b39afeb8d624a0f0ba14696799258b0d82aaaf40f7e4d9b274a77
+    - type: DOMAIN-SUFFIX
+      value: airbnb.co.nz
+      identity_key: domain-suffix|airbnb.co.nz
+      rule_id: a69baea65fe790ff792586efaabde33d8061bd3ef75e685947bca6b149f285e0
+    - type: DOMAIN-SUFFIX
+      value: airbnb.co.kr
+      identity_key: domain-suffix|airbnb.co.kr
+      rule_id: cb0e9253d6764dbb7a0af8a73ead3fe2e7dc6186037e954ba6930fee484f449a
+    - type: DOMAIN-SUFFIX
+      value: airbnb.co.in
+      identity_key: domain-suffix|airbnb.co.in
+      rule_id: b14d40cc3d21d14c3a8b1c849b03ebcb2d6beeec1cacd278fc220443116c9207
+    - type: DOMAIN-SUFFIX
+      value: airbnb.co.il
+      identity_key: domain-suffix|airbnb.co.il
+      rule_id: 238397f5c937ac624d6d93c47c7682dade2ddebd3f166b0dc8a3a23f35ab7790
+    - type: DOMAIN-SUFFIX
+      value: airbnb.co.id
+      identity_key: domain-suffix|airbnb.co.id
+      rule_id: f6f4a45132362a576921fa3c7ffe342f51d476999eeb008c8d3fc91a31a3bdda
+    - type: DOMAIN-SUFFIX
+      value: airbnb.co.cr
+      identity_key: domain-suffix|airbnb.co.cr
+      rule_id: 3e4bf4d7933576bf72793344c28f4a543b77e8ca0c46e7a5aac3012a940eac4d
+  alibabacloud:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/alibabacloud.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: alibabacloud.co.in
+      identity_key: domain-suffix|alibabacloud.co.in
+      rule_id: c43161f3d5c4c073021363d4a6a161165a4faa3d728be4eaef83e24072fe794e
+    - type: DOMAIN-SUFFIX
+      value: alibabacloud.com
+      identity_key: domain-suffix|alibabacloud.com
+      rule_id: f6ebf13f9e09671f870461b8921c9107517eaaabf7189f27eee6d6f50ee3278e
+    - type: DOMAIN-SUFFIX
+      value: alibabacloud.com.au
+      identity_key: domain-suffix|alibabacloud.com.au
+      rule_id: 36c8a454f57357d8582fcfa82436d1207e22ea94a95da7d6188d32e2771bb5d1
+    - type: DOMAIN-SUFFIX
+      value: alibabacloud.com.hk
+      identity_key: domain-suffix|alibabacloud.com.hk
+      rule_id: 0ab408897e5f9cd1b2ea3b7f4b9345672475150e7da2dff0b0a3f5023ee45ab3
+    - type: DOMAIN-SUFFIX
+      value: alibabacloud.com.my
+      identity_key: domain-suffix|alibabacloud.com.my
+      rule_id: ca87e1c545b4c6f8d3e3e88e1038ec18628087e76f92decc52b98ba851425add
+    - type: DOMAIN-SUFFIX
+      value: alibabacloud.com.sg
+      identity_key: domain-suffix|alibabacloud.com.sg
+      rule_id: fa1244e1a5e7061b06d93b15b36b06b68e84b085edda575fcce0e2eca9abcb22
+    - type: DOMAIN-SUFFIX
+      value: alibabacloud.com.tw
+      identity_key: domain-suffix|alibabacloud.com.tw
+      rule_id: e2abcea9a3114817669c12d3883adc3846d2ae777bbc48c400e9bbd45429ff14
+    - type: DOMAIN-SUFFIX
+      value: alicloud.com
+      identity_key: domain-suffix|alicloud.com
+      rule_id: d5b9aa286b5578fd940f7f0651be5893ab081750f5c67bff3867357c39db14c0
+    - type: DOMAIN-SUFFIX
+      value: account-cn.alibabacloud.com
+      identity_key: domain-suffix|account-cn.alibabacloud.com
+      rule_id: 43367cf97b70badda9cb597fce269f13aa48d6064a88ef8cf9f0278f2bbd90f1
+    - type: DOMAIN-SUFFIX
+      value: api.alibabacloud.com
+      identity_key: domain-suffix|api.alibabacloud.com
+      rule_id: 52945dfd9ccd0620ce28dadbe8ff916cbf8860412d82b7abacebd8c43c5023e4
+    - type: DOMAIN-SUFFIX
+      value: cn.alibabacloud.com
+      identity_key: domain-suffix|cn.alibabacloud.com
+      rule_id: 1b41f029d4de586311ba5efb8e3c6bc7585f12a697da14d3d27eadc80e423294
+    - type: DOMAIN-SUFFIX
+      value: status.alibabacloud.com
+      identity_key: domain-suffix|status.alibabacloud.com
+      rule_id: fe9822335040b6c567eaffde64eaec27b11166e457bab6f4d1ae694166f5eefa
+  aws:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/aws.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: aws
+      identity_key: domain-suffix|aws
+      rule_id: 60707cea30ea53ce0824659dd27c1794d1e56731871e5804b8f1884dd44b9cf1
+    - type: DOMAIN-SUFFIX
+      value: awsbraket.com
+      identity_key: domain-suffix|awsbraket.com
+      rule_id: 4c9815f6add0e7d27f9a21a3d8b91b22397e99e5851c3a902402a3dcde965bef
+    - type: DOMAIN-SUFFIX
+      value: thinkboxsoftware.com
+      identity_key: domain-suffix|thinkboxsoftware.com
+      rule_id: 77018dda3133118fc52406fa69976e451969376c9caf88b1a0cb255a4ef8dabb
+    - type: DOMAIN-SUFFIX
+      value: aesworkshops.com
+      identity_key: domain-suffix|aesworkshops.com
+      rule_id: 2c1aec36a73068cb8a274d059a6a86a39f42623e5e60e3d6843894b2d9360f82
+    - type: DOMAIN-SUFFIX
+      value: amazonaws-china.com
+      identity_key: domain-suffix|amazonaws-china.com
+      rule_id: 0ab26436d627e54f158a9bf37cfd9631f95dbc93572fc3910e4a72d06d048c57
+    - type: DOMAIN-SUFFIX
+      value: amazonaws.biz
+      identity_key: domain-suffix|amazonaws.biz
+      rule_id: ec1e990c91299eaa36a89ba7d467dcbd5ee2b67e798bef4f93ca6d4376861c7c
+    - type: DOMAIN-SUFFIX
+      value: amazonaws.com
+      identity_key: domain-suffix|amazonaws.com
+      rule_id: 30139a6cd80dc1ae86dcac3d5b8fb6dd1a456e20293b1a8d6f37c11409ea8480
+    - type: DOMAIN-SUFFIX
+      value: amazonaws.info
+      identity_key: domain-suffix|amazonaws.info
+      rule_id: 210f9cab4a6ac3f0d468e31d48800febc40eb5311898fdfc8a2468ef4e9e2027
+    - type: DOMAIN-SUFFIX
+      value: amazonaws.net
+      identity_key: domain-suffix|amazonaws.net
+      rule_id: e7978931ee3cf145322be308589fc6814f45f913c1282bdea6df60c8b266bb41
+    - type: DOMAIN-SUFFIX
+      value: amazonaws.org
+      identity_key: domain-suffix|amazonaws.org
+      rule_id: 12815e109e1c3467007588144d2888dcf5b1f7b14973aa3bec2e18877226c1f7
+    - type: DOMAIN-SUFFIX
+      value: amazonaws.tv
+      identity_key: domain-suffix|amazonaws.tv
+      rule_id: 214922eae7e816ab7f643ec8492e53d1bcc89c13e83ea47a869e9b46b1c1deb5
+    - type: DOMAIN-SUFFIX
+      value: amazoncognito.com
+      identity_key: domain-suffix|amazoncognito.com
+      rule_id: 8bcc3512b1b5c0f70699e6961192e184d7ae4f24c3ce1acfc2e669fce878677a
+    - type: DOMAIN-SUFFIX
+      value: amazonses.com
+      identity_key: domain-suffix|amazonses.com
+      rule_id: ab5c0b6b66f6b7415d407ff5e5d181d2825c35dbf4865a4ace155342d2ad1704
+    - type: DOMAIN-SUFFIX
+      value: amazonwebservices.com
+      identity_key: domain-suffix|amazonwebservices.com
+      rule_id: e67758d4a720cf4f398bea846d6981eb47e0c42d865b132ab0631f6b23718180
+    - type: DOMAIN-SUFFIX
+      value: amazonworkdocs.com
+      identity_key: domain-suffix|amazonworkdocs.com
+      rule_id: 3b0bcdea864a261d2ced6032cb50d45e0339f5d3291102593bf9da79478d2500
+    - type: DOMAIN-SUFFIX
+      value: amplifyapp.com
+      identity_key: domain-suffix|amplifyapp.com
+      rule_id: 40f2bbe5f0949ff3fe39464065cbd8c5b235c05edbed8bfdfc9e44503c865af3
+    - type: DOMAIN-SUFFIX
+      value: amplifyframework.com
+      identity_key: domain-suffix|amplifyframework.com
+      rule_id: 271c73b9ff751abe94aa7f8ae37e2d12af38f0f8325a8f18d5cdb95871c727e8
+    - type: DOMAIN-SUFFIX
+      value: aws-iot-hackathon.com
+      identity_key: domain-suffix|aws-iot-hackathon.com
+      rule_id: 6cf29a2e31fb99d13e02dfc7ca8bc0246189ab3026c4e3992b40909974d6a1b8
+    - type: DOMAIN-SUFFIX
+      value: aws.com
+      identity_key: domain-suffix|aws.com
+      rule_id: 28541e428776fee0c251904842359f8a0a0f9ed8fc77b7aed933458fcb9d50a3
+    - type: DOMAIN-SUFFIX
+      value: aws.dev
+      identity_key: domain-suffix|aws.dev
+      rule_id: 8abf2ca25b105a15191a0427a18779b4c360772e41bf8d32f4e34eb73c220d85
+    - type: DOMAIN-SUFFIX
+      value: awsapprunner.com
+      identity_key: domain-suffix|awsapprunner.com
+      rule_id: 724b6290b25682040ef21d2e87f5cdbbbecc9adfd0605cdb5b3649b9354b87d9
+    - type: DOMAIN-SUFFIX
+      value: awsapps.com
+      identity_key: domain-suffix|awsapps.com
+      rule_id: ce19e5d1b6eca3300e4bbbe7426809b9fb26cf23e29ac72e1e1bda8fa401bbc3
+    - type: DOMAIN-SUFFIX
+      value: awsautopilot.com
+      identity_key: domain-suffix|awsautopilot.com
+      rule_id: b087a1f047b90651da1c8fd43e4348a4d857bdee48277c33d357999d01ed429f
+    - type: DOMAIN-SUFFIX
+      value: awsautoscaling.com
+      identity_key: domain-suffix|awsautoscaling.com
+      rule_id: c5a1a04635007eee6f4336cdc875753d319134037cc1f3c700a8712b16aabbde
+    - type: DOMAIN-SUFFIX
+      value: acmvalidations.com
+      identity_key: domain-suffix|acmvalidations.com
+      rule_id: ecd666cdf50e7bc4828d4aae4bab4181a5643638986b45e796d27ac48e70b873
+    - type: DOMAIN-SUFFIX
+      value: acmvalidationsaws.com
+      identity_key: domain-suffix|acmvalidationsaws.com
+      rule_id: f75dccbaec0b2fdad4cef2ff7c00dbd142b15b4c1d370fe8dbfc7dba76b69174
+    - type: DOMAIN-SUFFIX
+      value: awscommandlineinterface.com
+      identity_key: domain-suffix|awscommandlineinterface.com
+      rule_id: c29cd0b23484142026e4fe580952bb750adda12336b0dc610ca8ad19d894c2d8
+    - type: DOMAIN-SUFFIX
+      value: awseducate.com
+      identity_key: domain-suffix|awseducate.com
+      rule_id: 4d763a04201616e77a32920c8ed4488f7d45264dbf0d0f269cb99515b6973d2a
+    - type: DOMAIN-SUFFIX
+      value: awseducate.net
+      identity_key: domain-suffix|awseducate.net
+      rule_id: b170819c30404bb55194d815a7616309fbe6a55ad7271c42f64b15f2c7aad1e1
+    - type: DOMAIN-SUFFIX
+      value: awseducate.org
+      identity_key: domain-suffix|awseducate.org
+      rule_id: 4b2d5592b72654a883672b3326e8e5839eddec807ae2b24af0ba9cf33b67a327
+    - type: DOMAIN-SUFFIX
+      value: awsglobalaccelerator.com
+      identity_key: domain-suffix|awsglobalaccelerator.com
+      rule_id: f13ffd34e874316f81b027e9762e0f62d6aae6645aeacc281f126d1edc712259
+    - type: DOMAIN-SUFFIX
+      value: awsloft-johannesburg.com
+      identity_key: domain-suffix|awsloft-johannesburg.com
+      rule_id: 129dd92accd4cb009dfd9a37380a8d21f1cbf4deb21adc62202ba720aa8c9b87
+    - type: DOMAIN-SUFFIX
+      value: awsloft-stockholm.com
+      identity_key: domain-suffix|awsloft-stockholm.com
+      rule_id: c7b4aa02d4c22bed18727e6ca9662445deea551e9489f3c0b7665a1db1baa1d2
+    - type: DOMAIN-SUFFIX
+      value: awssecworkshops.com
+      identity_key: domain-suffix|awssecworkshops.com
+      rule_id: f068488c9b17801c441f7c4a409be920915b7ec0c6ea6b1e5ebe573ce3a53faf
+    - type: DOMAIN-SUFFIX
+      value: awsstatic.com
+      identity_key: domain-suffix|awsstatic.com
+      rule_id: 1c96b9a584fd6462b9e1d3c78655b7cab4584d13f61abac520faa6f1a279747c
+    - type: DOMAIN-SUFFIX
+      value: awsthinkbox.com
+      identity_key: domain-suffix|awsthinkbox.com
+      rule_id: be518b13fe0af137d850552811a2750eea7448a4dad767910e4dfa2a09ce9f1e
+    - type: DOMAIN-SUFFIX
+      value: awstrack.me
+      identity_key: domain-suffix|awstrack.me
+      rule_id: c78a3067ba156e4a95b181739d96bba235f2ff35b65d0b24bbca51287dfce0f5
+    - type: DOMAIN-SUFFIX
+      value: awswaf.com
+      identity_key: domain-suffix|awswaf.com
+      rule_id: eb8510d15207d94f6f1325a6d6a7f800f339e671ce7fe4755b11bac80677eaf6
+    - type: DOMAIN-SUFFIX
+      value: cdkworkshop.com
+      identity_key: domain-suffix|cdkworkshop.com
+      rule_id: 2e768102143ea36211d92af2fa92bea61d111e2d64754649e11b2869d060f8f6
+    - type: DOMAIN-SUFFIX
+      value: cloudfront.com
+      identity_key: domain-suffix|cloudfront.com
+      rule_id: 211032315cbf4ebdd8c92ce18a59206e6f4520a8dcb00a981e655b935edd1782
+    - type: DOMAIN-SUFFIX
+      value: cloudfront.net
+      identity_key: domain-suffix|cloudfront.net
+      rule_id: 6aadfa4417d397fc081955fcb8072ba9a0fb0c1ef6ab8a94fe4a2fd0bf138d68
+    - type: DOMAIN-SUFFIX
+      value: containersonaws.com
+      identity_key: domain-suffix|containersonaws.com
+      rule_id: 9fc8a4e0771741256c80821e33d7a3b81febbbf6311aafab064a0c1dada130a3
+    - type: DOMAIN-SUFFIX
+      value: elasticbeanstalk.com
+      identity_key: domain-suffix|elasticbeanstalk.com
+      rule_id: f335dd7ac35dba1dc47e12dc6c0149062d1d9abfcf8e0c2402fe2f74954c4604
+    - type: DOMAIN-SUFFIX
+      value: awsedstart.com
+      identity_key: domain-suffix|awsedstart.com
+      rule_id: a7888c87646d5fca0388c0176efc93ecc50acd7030a5134d6295d7f0f36dd390
+    - type: DOMAIN-SUFFIX
+      value: amzndns.com
+      identity_key: domain-suffix|amzndns.com
+      rule_id: 42de59c5a483122080797369b6259af792bd90936c54c31cfa01a8f3dbefe222
+    - type: DOMAIN-SUFFIX
+      value: amzndns.org
+      identity_key: domain-suffix|amzndns.org
+      rule_id: 1bcfd146e50a4bd6e8ec6cf23166e048e1c534a96fce289afc6870b4f6dc18e0
+    - type: DOMAIN-SUFFIX
+      value: amzndns.net
+      identity_key: domain-suffix|amzndns.net
+      rule_id: 1820385962ccba9b60efb4145b339d6993096fb7d66d5eeedb257fbe1cd90607
+    - type: DOMAIN-SUFFIX
+      value: aws.amazon.com
+      identity_key: domain-suffix|aws.amazon.com
+      rule_id: 857c8015282a20b41be964c79fac95c6b04287a0682845410817a5d363d7be70
+    - type: DOMAIN-SUFFIX
+      value: aws.a2z.com
+      identity_key: domain-suffix|aws.a2z.com
+      rule_id: 3099580231d856dbdc6fcc4c490c24afa77a2147471aeec53df1da2310973c96
+    - type: DOMAIN-SUFFIX
+      value: amazonaws.co.uk
+      identity_key: domain-suffix|amazonaws.co.uk
+      rule_id: 076d035740485bb5b2025b976ea80eed163ed985c7849d2a558bde401b8079c6
+    - type: DOMAIN-SUFFIX
+      value: amzndns.co.uk
+      identity_key: domain-suffix|amzndns.co.uk
+      rule_id: f66d81db71b055f0c9bafc258be08ac62ad6c5f3c3b36fd52a89c3b38d31f6f3
+    - type: DOMAIN-SUFFIX
+      value: a2z.org.cn
+      identity_key: domain-suffix|a2z.org.cn
+      rule_id: 44048b148a9c04d8973b608773193aa5159f8f44a4b891d1e6fdbf8b1b833eaf
+    - type: DOMAIN-SUFFIX
+      value: amazonaws.cn
+      identity_key: domain-suffix|amazonaws.cn
+      rule_id: 1e2fa148cb255cecc242967277416db5ee292e19cb39124eb528f178fdfb8f27
+    - type: DOMAIN-SUFFIX
+      value: amazonaws.com.cn
+      identity_key: domain-suffix|amazonaws.com.cn
+      rule_id: 6cad4cab5379ea60e0025c30d244167e9bc7aae21065422497fef94e7b5bb14c
+    - type: DOMAIN-SUFFIX
+      value: amazonwebservices.cn
+      identity_key: domain-suffix|amazonwebservices.cn
+      rule_id: d40494c1b0e18e5c0c3ce75073284552f393db2c63517d66ee367a0e41ea68f1
+    - type: DOMAIN-SUFFIX
+      value: amazonwebservices.com.cn
+      identity_key: domain-suffix|amazonwebservices.com.cn
+      rule_id: c715d8ac6a9b4fac14f5ee90c50f420fb684452691873452a975cb5166dd17ae
+    - type: DOMAIN-SUFFIX
+      value: amazonworkdocs.cn
+      identity_key: domain-suffix|amazonworkdocs.cn
+      rule_id: ccf5f1ec0ee3a5e71a9768687c1219be2355a7ec001c107c42237088cea17fb4
+    - type: DOMAIN-SUFFIX
+      value: amazonworkdocs.com.cn
+      identity_key: domain-suffix|amazonworkdocs.com.cn
+      rule_id: e815da0a088ee628b1716dce2847d563d6107a90bf36208520f97d4f66ba9258
+    - type: DOMAIN-SUFFIX
+      value: asfiovnxocqpcry.com.cn
+      identity_key: domain-suffix|asfiovnxocqpcry.com.cn
+      rule_id: 4dfbc7c4b1b26271b64c43fd1e19e2048899c24389f158d57608c687ce2a9e4b
+    - type: DOMAIN-SUFFIX
+      value: aws-border.cn
+      identity_key: domain-suffix|aws-border.cn
+      rule_id: 5528cd2033706c74c10ccbb2f64f1fa43eab01252fccd3fa4271a5aab222f951
+    - type: DOMAIN-SUFFIX
+      value: aws-icp-domain-manager.cn
+      identity_key: domain-suffix|aws-icp-domain-manager.cn
+      rule_id: c299ca23c7e2a566350d2e85a977fd65689c01fba6997e606909f5a767517850
+    - type: DOMAIN-SUFFIX
+      value: awsapps.cn
+      identity_key: domain-suffix|awsapps.cn
+      rule_id: ceecc44c216d880652ac1c4f605818ce396847448d97a7ffddcff5ee3c5620ad
+    - type: DOMAIN-SUFFIX
+      value: awsapps.com.cn
+      identity_key: domain-suffix|awsapps.com.cn
+      rule_id: 26bd72493beb263bf9366ec1278d83b14eba7852ddc1c3698bd6490326d0b1ae
+    - type: DOMAIN-SUFFIX
+      value: awsstatic.cn
+      identity_key: domain-suffix|awsstatic.cn
+      rule_id: 7da8540a63dce93f7738220a17d166e422fb082db00dd2d93915d82dfd6a6dec
+    - type: DOMAIN-SUFFIX
+      value: cloudfront-cn.net
+      identity_key: domain-suffix|cloudfront-cn.net
+      rule_id: f3e53835e558b8d3add1227fb4f968f267f0c90a6681998500bf0e2352be4d3d
+    - type: DOMAIN-SUFFIX
+      value: cloudfront-test.cn
+      identity_key: domain-suffix|cloudfront-test.cn
+      rule_id: 572ec000f3f9900cd8599fdbb12fa4efa7c8832c148fc517352b42e03214eb3f
+    - type: DOMAIN-SUFFIX
+      value: cloudfront.cn
+      identity_key: domain-suffix|cloudfront.cn
+      rule_id: ae232cdbf7a0c426d3b45ea688da7fdac03d29c0f84a31eec733d7895cd822bf
+    - type: DOMAIN-SUFFIX
+      value: nwcdcloud.cn
+      identity_key: domain-suffix|nwcdcloud.cn
+      rule_id: 4909566d7726ca4d85358f53f3574bd2945e5452d765f42eb7dc3d8d19bb664e
+    - type: DOMAIN-SUFFIX
+      value: nwcdcloud.com.cn
+      identity_key: domain-suffix|nwcdcloud.com.cn
+      rule_id: 781b12fad1ff7638b9177c0abde2bfb51c195f8ebb46593b74810a3017ed84ac
+    - type: DOMAIN-SUFFIX
+      value: nwcddns.cn
+      identity_key: domain-suffix|nwcddns.cn
+      rule_id: d32dd122d013ba6d9cf2722420a47a261fcbc25251cf5c11df1b5fd63c6b30a1
+    - type: DOMAIN-SUFFIX
+      value: nwcdinfosec.cn
+      identity_key: domain-suffix|nwcdinfosec.cn
+      rule_id: a2660e680690e646b6d8a8877ad361ed903805fccf5b8263837c10fd6d713b59
+    - type: DOMAIN-SUFFIX
+      value: route53.cn
+      identity_key: domain-suffix|route53.cn
+      rule_id: 20a0a3ca477b6f57c945dce3ef6cb94628bda4cd6baa7250df5517cc888454a3
+    - type: DOMAIN-SUFFIX
+      value: sagemaker.com.cn
+      identity_key: domain-suffix|sagemaker.com.cn
+      rule_id: 9d04c34db70bbce84704406caa1cfcbbdc516b7a35ca483b43228fefcf4b3eea
+    - type: DOMAIN-SUFFIX
+      value: amzndns-cn.biz
+      identity_key: domain-suffix|amzndns-cn.biz
+      rule_id: d3a3cc0d7b54cdfb4b29b0ef9a6873c92ae8bc17908dc7048af47a57a353b504
+    - type: DOMAIN-SUFFIX
+      value: amzndns-cn.cn
+      identity_key: domain-suffix|amzndns-cn.cn
+      rule_id: 6e37882fcc9185d5035d3289a68f6e7af00faaaaa7e433c7b85163546b0d540b
+    - type: DOMAIN-SUFFIX
+      value: amzndns-cn.com
+      identity_key: domain-suffix|amzndns-cn.com
+      rule_id: 5b1a07632e0cbee18b223ab4513ce3eb0d53e7357f62ca80aa93a205ab805513
+    - type: DOMAIN-SUFFIX
+      value: amzndns-cn.net
+      identity_key: domain-suffix|amzndns-cn.net
+      rule_id: 505dc0808ac0dd2a7b48327d9c9bc9dc21c567f0ec24d3754a79690d2f7790cb
+  azure:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/azure.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: azure.microsoft.com
+      identity_key: domain-suffix|azure.microsoft.com
+      rule_id: 03a999fc9845e6de1253effb37b1f5e28cbe73bb7ae028cdb642e04cdf7047f6
+    - type: DOMAIN-SUFFIX
+      value: azuremarketplace.microsoft.com
+      identity_key: domain-suffix|azuremarketplace.microsoft.com
+      rule_id: 08cfde4a2ad6f801b78b8b22fd7c6f93c1e098f3c61d66d3d6c89ec317ed6669
+    - type: DOMAIN-SUFFIX
+      value: azure
+      identity_key: domain-suffix|azure
+      rule_id: 8f4a990d3263f5b806b6f4893556f7629f885f029708708a6bb85537a09d2519
+    - type: DOMAIN-SUFFIX
+      value: aadrm.com
+      identity_key: domain-suffix|aadrm.com
+      rule_id: c5de8c30f305f4d211b995de4c7f041fc5b4dd99580a23e57e857921c6106e74
+    - type: DOMAIN-SUFFIX
+      value: azure-api.net
+      identity_key: domain-suffix|azure-api.net
+      rule_id: 4703c8d659855765ab1124fa6c1c672e6f358cccef0e22d4a894062366097ea2
+    - type: DOMAIN-SUFFIX
+      value: azure-devices-int.net
+      identity_key: domain-suffix|azure-devices-int.net
+      rule_id: 9eb58637385b1e2d025a06739a302b29c7cbb4897aa67bd1438b6ba46c3c3c8c
+    - type: DOMAIN-SUFFIX
+      value: azure-devices.net
+      identity_key: domain-suffix|azure-devices.net
+      rule_id: c9032590cbc4ab98d2688708cc7b1aa3d502ed045cbb81442ae8de4b818610bc
+    - type: DOMAIN-SUFFIX
+      value: azure-mobile.net
+      identity_key: domain-suffix|azure-mobile.net
+      rule_id: 736a87a8bf18c790f045c85463460fc0be963974c2bc8688f7653b31b7708e53
+    - type: DOMAIN-SUFFIX
+      value: azure-sphere.com
+      identity_key: domain-suffix|azure-sphere.com
+      rule_id: 22c2b85a23b4ab4c4146eff1afce8b8d597f515efc9331a39987258a0dd80457
+    - type: DOMAIN-SUFFIX
+      value: azure-test.net
+      identity_key: domain-suffix|azure-test.net
+      rule_id: ec26cb05d716c4db00bd827474fba7d294150d34e5e27fa6bcb086cd4c088168
+    - type: DOMAIN-SUFFIX
+      value: azure.com
+      identity_key: domain-suffix|azure.com
+      rule_id: 86c60892501c18e1b6a8a5605a35a211b00935995296ce65563b85dd0a881a3c
+    - type: DOMAIN-SUFFIX
+      value: azure.net
+      identity_key: domain-suffix|azure.net
+      rule_id: eb671a765f3da94e8a0e5ff135608cd9e857b22a29a68864d2e28d54c8226375
+    - type: DOMAIN-SUFFIX
+      value: azurecomcdn.net
+      identity_key: domain-suffix|azurecomcdn.net
+      rule_id: 158e121d959bb447e33a2ab0d2538bdf056b02bda079f25d9003f09f90f3ad08
+    - type: DOMAIN-SUFFIX
+      value: azurecomm.net
+      identity_key: domain-suffix|azurecomm.net
+      rule_id: 3a7b504560698ccb56ad7f2cd7fadc40ff0ee94e755722a9e156f0f6d704f31a
+    - type: DOMAIN-SUFFIX
+      value: azurecontainer.io
+      identity_key: domain-suffix|azurecontainer.io
+      rule_id: ab3060022cc1c328f421bbc31d261eed22b15b5bae7305c21a042a705cc02f04
+    - type: DOMAIN-SUFFIX
+      value: azurecosmos.net
+      identity_key: domain-suffix|azurecosmos.net
+      rule_id: 23959a0687f92acb706f2fc2d0292085b8bdf35ae4a2c68b52de5332425a9fdb
+    - type: DOMAIN-SUFFIX
+      value: azurecosmosdb.com
+      identity_key: domain-suffix|azurecosmosdb.com
+      rule_id: 769cb0c143fcdc7700ad54cb093a57595baec8183694dadda0d1105ff2700c69
+    - type: DOMAIN-SUFFIX
+      value: azurecosmosdb.info
+      identity_key: domain-suffix|azurecosmosdb.info
+      rule_id: 4374e3e8ff04faddd8d15dd978cb181a5d9fad060d6b72d651fb5cbe7c24522f
+    - type: DOMAIN-SUFFIX
+      value: azurecosmosdb.net
+      identity_key: domain-suffix|azurecosmosdb.net
+      rule_id: 6b6026478d25a071db03409c8a6e9d77ae1939cb1bd39135ea921494b659ae88
+    - type: DOMAIN-SUFFIX
+      value: azuredatabricks.net
+      identity_key: domain-suffix|azuredatabricks.net
+      rule_id: 8b7cb12f3da5d9aa1ab2a1f6bfd1a19a8f98ec99bc50467e1e1112ce1946309a
+    - type: DOMAIN-SUFFIX
+      value: azuredevopslaunch.com
+      identity_key: domain-suffix|azuredevopslaunch.com
+      rule_id: 0e3afef7ddd6ec034216366affada77c32f5e80728747bcd0c790be4a6016577
+    - type: DOMAIN-SUFFIX
+      value: azuredigitaltwin.com
+      identity_key: domain-suffix|azuredigitaltwin.com
+      rule_id: 798f94e983446e128b4856b5f6c89958eb5b0fba7f8d08dd48ee88995a57f26e
+    - type: DOMAIN-SUFFIX
+      value: azuredigitaltwins.com
+      identity_key: domain-suffix|azuredigitaltwins.com
+      rule_id: c570db10c27fd549186e7de13750d03e0afe0e7c3652079b46946185c6708846
+    - type: DOMAIN-SUFFIX
+      value: azuredigitaltwins.net
+      identity_key: domain-suffix|azuredigitaltwins.net
+      rule_id: 9ee37fc298525368f2cbd4e1715f8a2ae509bbe1787cc64a9af0bd9c6c61df25
+    - type: DOMAIN-SUFFIX
+      value: azuredns-prd.info
+      identity_key: domain-suffix|azuredns-prd.info
+      rule_id: e56571a33e1c4c65e1c75a87c72c4d410cee15fd5e61c2ab0475106493732783
+    - type: DOMAIN-SUFFIX
+      value: azuredns-prd.org
+      identity_key: domain-suffix|azuredns-prd.org
+      rule_id: c2a1c81c8020fb2f5cd5a7b8dad973bc3f477d4e7a920c06ade465fbcea40844
+    - type: DOMAIN-SUFFIX
+      value: azureedge-test.net
+      identity_key: domain-suffix|azureedge-test.net
+      rule_id: fe7db53b6ac92d620ff15f281bfd6bbf9d0bdace7ed627db1a4387217d3743d1
+    - type: DOMAIN-SUFFIX
+      value: azureedge.net
+      identity_key: domain-suffix|azureedge.net
+      rule_id: 47c75f6e95716759a9b831f1536395423e0fbc1025f99bb0dd4112c9f64855de
+    - type: DOMAIN-SUFFIX
+      value: azureedge.us
+      identity_key: domain-suffix|azureedge.us
+      rule_id: 0bc93ed0d0b9e33ea9e8a12ed684b1f2808e5f9fc833c4a6072c1b4df863c85e
+    - type: DOMAIN-SUFFIX
+      value: azurefd.net
+      identity_key: domain-suffix|azurefd.net
+      rule_id: d77bbc95a5b5ff2f383c1d70563a3b0e259bf312c2e015208dcf394479a51a52
+    - type: DOMAIN-SUFFIX
+      value: azureiotcentral.com
+      identity_key: domain-suffix|azureiotcentral.com
+      rule_id: 95b6ac021545210e6d64e165e6d4bec2cf5df908d572d5704c05632fdb87d2c7
+    - type: DOMAIN-SUFFIX
+      value: azureiotsolutions.com
+      identity_key: domain-suffix|azureiotsolutions.com
+      rule_id: 2ac246020a1a65366d55d57dd248cbca3afdc1ad20001799b0dd85250e8c6b6e
+    - type: DOMAIN-SUFFIX
+      value: azureiotsuite.com
+      identity_key: domain-suffix|azureiotsuite.com
+      rule_id: edf6f3d1066297f4453206e141f8b7a4077ae28a9187dcd4e34d9ed82fd3d206
+    - type: DOMAIN-SUFFIX
+      value: azureplanetscale.info
+      identity_key: domain-suffix|azureplanetscale.info
+      rule_id: bbb7a6f97b7f3b5a241ea15b1201f329074494f6b82314addc819e45aa0a8b8d
+    - type: DOMAIN-SUFFIX
+      value: azureplanetscale.net
+      identity_key: domain-suffix|azureplanetscale.net
+      rule_id: 4c8054aa3f344eec55a4006ca0521f2f6ef82d83470ad38258282dda002d96cc
+    - type: DOMAIN-SUFFIX
+      value: azureserviceprofiler.com
+      identity_key: domain-suffix|azureserviceprofiler.com
+      rule_id: c595bddde68d41e7407122e5bdf0e073bd04c87a6f699d9f9de94971c629f142
+    - type: DOMAIN-SUFFIX
+      value: azuresmartspaces.net
+      identity_key: domain-suffix|azuresmartspaces.net
+      rule_id: 6fce19e0c60a2dfd0627b7624596a8425815cb2f6b816dc1fcd6e425f3e268e3
+    - type: DOMAIN-SUFFIX
+      value: azurestackvalidation.com
+      identity_key: domain-suffix|azurestackvalidation.com
+      rule_id: 46427594127db4e642bcf9cc258344cc3ad4ad190126b7495fe3ed20523138d1
+    - type: DOMAIN-SUFFIX
+      value: azurestaticapps.net
+      identity_key: domain-suffix|azurestaticapps.net
+      rule_id: 84da7b89c44356f4211ce4727b0d199b9a0a42123a78d4a45af8128431a5f457
+    - type: DOMAIN-SUFFIX
+      value: azurewebsites.net
+      identity_key: domain-suffix|azurewebsites.net
+      rule_id: 54a4221d0e14e952d6bc556e8bb1f15304f9d1aa6844cdea63c38eaaa1e0eed3
+    - type: DOMAIN-SUFFIX
+      value: botframework.com
+      identity_key: domain-suffix|botframework.com
+      rule_id: 2574baff1e33d9cc8d2f0cad3c45b09a45857dfa54b9ba81ed07247555eaccb8
+    - type: DOMAIN-SUFFIX
+      value: cosmosdb.info
+      identity_key: domain-suffix|cosmosdb.info
+      rule_id: 48b6068bdc916492be46bd08a8e9f748708e7767760f048d8a9d0560fb7ef9e6
+    - type: DOMAIN-SUFFIX
+      value: cosmosdb.net
+      identity_key: domain-suffix|cosmosdb.net
+      rule_id: 74a2fd1674d091c39a197c4e8aa209c006028023c684d32c2143cd5c00237630
+    - type: DOMAIN-SUFFIX
+      value: devopsms.com
+      identity_key: domain-suffix|devopsms.com
+      rule_id: e1600be6dc36684faad3623173ac7fe5c3fca38831b909d889ab74f2225da03f
+    - type: DOMAIN-SUFFIX
+      value: gotcosmos.com
+      identity_key: domain-suffix|gotcosmos.com
+      rule_id: 969df14e49d9fc37f0cda740665e51c802632f32ab4e7b89696c6852f8b8774c
+    - type: DOMAIN-SUFFIX
+      value: management-azure-devices-int.net
+      identity_key: domain-suffix|management-azure-devices-int.net
+      rule_id: b44fd39d50b562e98052a9d99afdeab46fbcacb2305671daed31a20373211472
+    - type: DOMAIN-SUFFIX
+      value: management-azure-devices.net
+      identity_key: domain-suffix|management-azure-devices.net
+      rule_id: 8a457e5771ae8bfe47bd3f6226f76f730e4c165f55517523b265f9543e7853f3
+    - type: DOMAIN-SUFFIX
+      value: microsoftazuread-sso.com
+      identity_key: domain-suffix|microsoftazuread-sso.com
+      rule_id: 33a09af5a57db9c45466784fda2130bbe23ab4daed4218bb67911903fe2a7be6
+    - type: DOMAIN-SUFFIX
+      value: microsoftazuresponsorships.com
+      identity_key: domain-suffix|microsoftazuresponsorships.com
+      rule_id: 547c68939ced42533ca610c59980a33e2f11637642f0d73daca77985ca8272dc
+    - type: DOMAIN-SUFFIX
+      value: microsofteca.com
+      identity_key: domain-suffix|microsofteca.com
+      rule_id: 4a787c4734c539884ee30b4e10e4a8e7e4c6fd2115820619702957427da1e4a6
+    - type: DOMAIN-SUFFIX
+      value: microsoftiotcentral.com
+      identity_key: domain-suffix|microsoftiotcentral.com
+      rule_id: ce22a70104d2a4a28cc29124787d5c4ab3407df23cf655fb050eab484d451084
+    - type: DOMAIN-SUFFIX
+      value: msn.net
+      identity_key: domain-suffix|msn.net
+      rule_id: 9ff4dc3c075e17551684df31f00c35bf76653686b114bd8d64860fe599f34e48
+    - type: DOMAIN-SUFFIX
+      value: playfab.com
+      identity_key: domain-suffix|playfab.com
+      rule_id: b46abde59c363b3d338ae8a15b4cfefe8c8f7e0031929bd71706ddc82c3ebefa
+    - type: DOMAIN-SUFFIX
+      value: playfabapi.com
+      identity_key: domain-suffix|playfabapi.com
+      rule_id: e137269e1ec1515f19058ed5ed9b995839726b1a09a86d599286038ab28a27d5
+    - type: DOMAIN-SUFFIX
+      value: serverlesslibrary.net
+      identity_key: domain-suffix|serverlesslibrary.net
+      rule_id: 40d62b94556d531764f8d177ed629f1d41f5421bb53ca7a451ad2af82d311828
+    - type: DOMAIN-SUFFIX
+      value: trafficmanager.net
+      identity_key: domain-suffix|trafficmanager.net
+      rule_id: 7df42fee03ba6b31b73954b79304cb205fd741205fc4ed01003d36efdb7a1a18
+    - type: DOMAIN-SUFFIX
+      value: tryfunctions.com
+      identity_key: domain-suffix|tryfunctions.com
+      rule_id: d2a8f7ec24a65a366d759671e560ca9d08d21e8c164a5bca990fd658e002f53f
+    - type: DOMAIN-SUFFIX
+      value: windowsazure.com
+      identity_key: domain-suffix|windowsazure.com
+      rule_id: 100844b68431d4058c68034feb00794b511d6332e29124b4dae90b6715fdb14f
+    - type: DOMAIN-SUFFIX
+      value: azure-dns.com
+      identity_key: domain-suffix|azure-dns.com
+      rule_id: b2c13efcb178813b4977078a5cc1baf7190d69d89a39fcc680773d4fde567d8c
+    - type: DOMAIN-SUFFIX
+      value: azure-dns.info
+      identity_key: domain-suffix|azure-dns.info
+      rule_id: d9c3c410dfc1876cbfbe74c05b4dc980b6c59a1980c66296cf2c63d0e7607d0b
+    - type: DOMAIN-SUFFIX
+      value: azure-dns.net
+      identity_key: domain-suffix|azure-dns.net
+      rule_id: 0122fd71cfc60a6c6c4e73520184868cce800450cf338f7ad79cfa8c07079efa
+    - type: DOMAIN-SUFFIX
+      value: azure-dns.org
+      identity_key: domain-suffix|azure-dns.org
+      rule_id: 71c37ddc6e69effc90df8806d46a5ad21184ba04278b5b62f46eeef57d78bd5b
+    - type: DOMAIN-SUFFIX
+      value: 21vbc.com
+      identity_key: domain-suffix|21vbc.com
+      rule_id: 745dde3403ddbfe960f14f45808e1bd40693e9102f3b3e26023fd8ef3b376f9b
+    - type: DOMAIN-SUFFIX
+      value: 21vbluecloud.com
+      identity_key: domain-suffix|21vbluecloud.com
+      rule_id: 350f06adc18f1bf61506fca365467c724c094be584732554a091936fa671affc
+    - type: DOMAIN-SUFFIX
+      value: 21vbluecloud.net
+      identity_key: domain-suffix|21vbluecloud.net
+      rule_id: d9d67207392a738a56e14edf036f69ff347607dfd8c9c480a34896bbd2554293
+    - type: DOMAIN-SUFFIX
+      value: aadrm.cn
+      identity_key: domain-suffix|aadrm.cn
+      rule_id: d31ad195006f71b2145fc996019de705fbba45a5c514d944668ee4a602f6f451
+    - type: DOMAIN-SUFFIX
+      value: aggresmart.com
+      identity_key: domain-suffix|aggresmart.com
+      rule_id: 30f15028473cd3d0ce701f1b5b9bfbce7af10f736212e00ce06bb9a2dad64ac1
+    - type: DOMAIN-SUFFIX
+      value: apihub-internal.cn
+      identity_key: domain-suffix|apihub-internal.cn
+      rule_id: 83a6ad6c66d0b31ffa7bb97a40aa31a252978f34118a4a1f9d560480b7f14e8f
+    - type: DOMAIN-SUFFIX
+      value: appserviceenvironment.cn
+      identity_key: domain-suffix|appserviceenvironment.cn
+      rule_id: 0cc1bd7a6910f5bd381784b880409666dafb2da46f8c4591639fe128cec57250
+    - type: DOMAIN-SUFFIX
+      value: azcrmc-test.cn
+      identity_key: domain-suffix|azcrmc-test.cn
+      rule_id: 809812a711a9e81b4531fdda38605335e82bf45c7a55fda3a9a396e361cf4ac2
+    - type: DOMAIN-SUFFIX
+      value: azcrmc.cn
+      identity_key: domain-suffix|azcrmc.cn
+      rule_id: fe82b26658b27a39ac1269f0aca7ef9d32fc4322bdc06e92810f96ee1215b2c6
+    - type: DOMAIN-SUFFIX
+      value: azk8s.cn
+      identity_key: domain-suffix|azk8s.cn
+      rule_id: 283e5e5225ee1a365eac251b614dd466176ff6418dc0ce89d42d41fffbbc1042
+    - type: DOMAIN-SUFFIX
+      value: aznbcontent.cn
+      identity_key: domain-suffix|aznbcontent.cn
+      rule_id: a201c3d99927a2a6b174fc087fc474d118ba88be5a650a6657fc489482df6693
+    - type: DOMAIN-SUFFIX
+      value: aztask.cn
+      identity_key: domain-suffix|aztask.cn
+      rule_id: 6c78cf7f571e279fd02051517302078cfbb9486772e1bb39ede8bd6d8e7ecb50
+    - type: DOMAIN-SUFFIX
+      value: azure-api.cn
+      identity_key: domain-suffix|azure-api.cn
+      rule_id: 908b85839b2acbed62ce5b378814b9374cd7c820d09bff59e1670f8c94adcbac
+    - type: DOMAIN-SUFFIX
+      value: azure-apihub.cn
+      identity_key: domain-suffix|azure-apihub.cn
+      rule_id: b8487440d433af077605d4199a2b846ef8697c4c653a0079581e323b6ecc6b39
+    - type: DOMAIN-SUFFIX
+      value: azure-automation.cn
+      identity_key: domain-suffix|azure-automation.cn
+      rule_id: 93c9fafe229305410d704f0baa3d87b083289cc932056f9f94fa9723d47dff54
+    - type: DOMAIN-SUFFIX
+      value: azure-connectedvehicles-stage.cn
+      identity_key: domain-suffix|azure-connectedvehicles-stage.cn
+      rule_id: 4cde03d2f64ae939a0a6605790c3fb15e0ac225081f601b9b625dcc667b3cf5e
+    - type: DOMAIN-SUFFIX
+      value: azure-connectedvehicles.cn
+      identity_key: domain-suffix|azure-connectedvehicles.cn
+      rule_id: 2af55a53eef8f4b2911e9ff6a29919c8587025f6d8a65e79b62294a961e0a860
+    - type: DOMAIN-SUFFIX
+      value: azure-devices-provisioning.cn
+      identity_key: domain-suffix|azure-devices-provisioning.cn
+      rule_id: ba2220cb4afc37a111d85485eed0454709f0f4fb9056b42d1dc1b8bff8ebd02f
+    - type: DOMAIN-SUFFIX
+      value: azure-devices.cn
+      identity_key: domain-suffix|azure-devices.cn
+      rule_id: 865cb5fa0af62605b5688fe151e47bb822c51992ea9ffadd0b41d4aa5a860518
+    - type: DOMAIN-SUFFIX
+      value: azure-mobile.cn
+      identity_key: domain-suffix|azure-mobile.cn
+      rule_id: cc15759feb53423db0863b1a0bda8f1772abb30099e36e4be95f8b06230f1779
+    - type: DOMAIN-SUFFIX
+      value: azure.cn
+      identity_key: domain-suffix|azure.cn
+      rule_id: 9fff116095f18260add43c34fc9190941d41a0d56b440232bc91e1b985782ac3
+    - type: DOMAIN-SUFFIX
+      value: azurecr-test.cn
+      identity_key: domain-suffix|azurecr-test.cn
+      rule_id: 0919428da845b8598c2fc33c2023243faf37b7ee9203248e90e98e01107cba93
+    - type: DOMAIN-SUFFIX
+      value: azurecr.cn
+      identity_key: domain-suffix|azurecr.cn
+      rule_id: 34bd0034839ada2379db80a98b651b8d32610bac17ccb35f44b10ab422843b1a
+    - type: DOMAIN-SUFFIX
+      value: azurehdinsight.cn
+      identity_key: domain-suffix|azurehdinsight.cn
+      rule_id: ac62e8511595f03d4cfd217024ff8179abbdc22aad7b07bf7846dde44cd794fa
+    - type: DOMAIN-SUFFIX
+      value: azureiotsuite.cn
+      identity_key: domain-suffix|azureiotsuite.cn
+      rule_id: 1ac41199456e01f1aed1b37b53a88335ad034c27c1bbcaf49ce140c648b9b004
+    - type: DOMAIN-SUFFIX
+      value: azuremresolver.cn
+      identity_key: domain-suffix|azuremresolver.cn
+      rule_id: 03f338ad822375b89a76b9958ba807594be936303cfbb5e4ffe33e9346eb9baa
+    - type: DOMAIN-SUFFIX
+      value: azureprivatedns.cn
+      identity_key: domain-suffix|azureprivatedns.cn
+      rule_id: 8d6b4b4a5120dd7ffaff5590b9ba507a161ee5f89c6da8d153a28dd7f523839b
+    - type: DOMAIN-SUFFIX
+      value: azurerms.cn
+      identity_key: domain-suffix|azurerms.cn
+      rule_id: 343d5ae280c14c069834ce96bca64e0832f97d3bc57d1337b5597212655983b4
+    - type: DOMAIN-SUFFIX
+      value: azuresandbox.cn
+      identity_key: domain-suffix|azuresandbox.cn
+      rule_id: bfe094e750c9dc2b912d385b0724c50990b89ecec9d8e9d67ef75fc597b04466
+    - type: DOMAIN-SUFFIX
+      value: b2clogin.cn
+      identity_key: domain-suffix|b2clogin.cn
+      rule_id: 187247df15b4bfa2464fc42b7df327ef1658b5dcd00688d103d425f89d4a98ee
+    - type: DOMAIN-SUFFIX
+      value: b3itech.cn
+      identity_key: domain-suffix|b3itech.cn
+      rule_id: e5ae9f0af18f29f3ea2688490d2a58cbb738047376d69d44ca6eed0c4a52f992
+    - type: DOMAIN-SUFFIX
+      value: blueaggrestore.com
+      identity_key: domain-suffix|blueaggrestore.com
+      rule_id: f658d449ad557d4238b6ccca5feb003e4051d33f15bd008e1c82c871d2a3687f
+    - type: DOMAIN-SUFFIX
+      value: bluecloudprod.com
+      identity_key: domain-suffix|bluecloudprod.com
+      rule_id: 364d22f979fccccf27f4402242dafbd14ecaa88ac27b001a396cf341f255d01b
+    - type: DOMAIN-SUFFIX
+      value: cegid-cloud.cn
+      identity_key: domain-suffix|cegid-cloud.cn
+      rule_id: 1d4138730ea642dd80fab2a2f22c0fdd541ce07c73185c08709dca851c53af1e
+    - type: DOMAIN-SUFFIX
+      value: chinacloud-mobile.cn
+      identity_key: domain-suffix|chinacloud-mobile.cn
+      rule_id: 8b7b4c9e4b9646c59d0cc2288ad336759cbd5a7dc5a17e543df02722dcfd4bf2
+    - type: DOMAIN-SUFFIX
+      value: chinacloudapi.cn
+      identity_key: domain-suffix|chinacloudapi.cn
+      rule_id: e12314309fa3814c3b3e14be894703ee4d801525c02d29a9e645b19a02d8b0af
+    - type: DOMAIN-SUFFIX
+      value: chinacloudapp.cn
+      identity_key: domain-suffix|chinacloudapp.cn
+      rule_id: 7f7908bea459c901134a4b9c3b50b149edfc9f8c7a5b8ef584e3512780de8c80
+    - type: DOMAIN-SUFFIX
+      value: chinacloudsites.cn
+      identity_key: domain-suffix|chinacloudsites.cn
+      rule_id: fb876267ddaed410c009974e4e0b25662bf9557d6ea3fa1f9cc122be68f19f68
+    - type: DOMAIN-SUFFIX
+      value: hdinsightservices.cn
+      identity_key: domain-suffix|hdinsightservices.cn
+      rule_id: ba2323f73a1a7f16940fc74d4ff035829b1b49fbe2a14e02620f8c25accd0fc5
+    - type: DOMAIN-SUFFIX
+      value: management-azure-devices-provisioning.cn
+      identity_key: domain-suffix|management-azure-devices-provisioning.cn
+      rule_id: ec14a97d44d76e4100286cf928822c663e3da4fb52420c81ecf39f638ad98c0e
+    - type: DOMAIN-SUFFIX
+      value: management-azure-devices.cn
+      identity_key: domain-suffix|management-azure-devices.cn
+      rule_id: fe107abee9429686e71374421b1332b90dfea0934895fa38b03dadd5c1e68474
+    - type: DOMAIN-SUFFIX
+      value: mcchcdn.com
+      identity_key: domain-suffix|mcchcdn.com
+      rule_id: 4609ae86d65881c316ecb3c38d0331254f9a1fd68ea8a0a503e11502c8fef50d
+    - type: DOMAIN-SUFFIX
+      value: mgmt-azure-api.cn
+      identity_key: domain-suffix|mgmt-azure-api.cn
+      rule_id: 5e378c3046488658646205dc560ba68d85bebd56f665751c3f6b88eb4672d6b9
+    - type: DOMAIN-SUFFIX
+      value: microsoftazurestatus.cn
+      identity_key: domain-suffix|microsoftazurestatus.cn
+      rule_id: 040303fa69335a99becb26c6ebbf5672e3bee2ed50ba532e6d78b8f771276e43
+    - type: DOMAIN-SUFFIX
+      value: microsoftmetrics.cn
+      identity_key: domain-suffix|microsoftmetrics.cn
+      rule_id: dd64de4f5e04c793734d5c21736ff0ceb353f0591f0f0bf9b26b15cafdefdb41
+    - type: DOMAIN-SUFFIX
+      value: mncmsidlab1.cn
+      identity_key: domain-suffix|mncmsidlab1.cn
+      rule_id: 08dc178c52435b4aab8dd367b77d4ddf4cc8846486b1b7504a07e8679c10f135
+    - type: DOMAIN-SUFFIX
+      value: msappproxy.cn
+      identity_key: domain-suffix|msappproxy.cn
+      rule_id: 190a4bfc2f9988a3dc80445cc4dd61a4181adc92cfcb9876d79fad3281678bc0
+    - type: DOMAIN-SUFFIX
+      value: mschcdn.com
+      identity_key: domain-suffix|mschcdn.com
+      rule_id: 11b8d782f6eeba0beef40c6415f5ad7e644b7531784d8d37275a22497a24e7f8
+    - type: DOMAIN-SUFFIX
+      value: msftcloudes.cn
+      identity_key: domain-suffix|msftcloudes.cn
+      rule_id: d807f75f88dab8c642c913ed0608049b259f0669aea4caa6153a9bec8136c108
+    - type: DOMAIN-SUFFIX
+      value: msidentity.cn
+      identity_key: domain-suffix|msidentity.cn
+      rule_id: 7d4188623e504eb17209392716718874191479ab72f19311ef2314336829d02a
+    - type: DOMAIN-SUFFIX
+      value: msidlabpbmc.cn
+      identity_key: domain-suffix|msidlabpbmc.cn
+      rule_id: 549cedbf21292096ebd2f34c7166cc7b015ceabe37fb090fae5080be0fbe336d
+    - type: DOMAIN-SUFFIX
+      value: sovcloud-mx.cn
+      identity_key: domain-suffix|sovcloud-mx.cn
+      rule_id: d84f538e37af9ec0568ef241a6da53573543c6ec3cae8e2a294be9e43366f7f8
+    - type: DOMAIN-SUFFIX
+      value: sovcloud-static.cn
+      identity_key: domain-suffix|sovcloud-static.cn
+      rule_id: 812e239dd28394b9fa992a0263189a3eb1d4cbb551c27e093f7cf4b19796c330
+    - type: DOMAIN-SUFFIX
+      value: sovcloud-usercontent.cn
+      identity_key: domain-suffix|sovcloud-usercontent.cn
+      rule_id: 35877ac117d6ad055d7ebbc12ab6ed79d02051d4cddff8fd5671bf0e76b30412
+    - type: DOMAIN-SUFFIX
+      value: sovcloud.cn
+      identity_key: domain-suffix|sovcloud.cn
+      rule_id: b26271030359cb30aa4cd07472bd73f7b6cdc580e56b765f005c052085e05ef5
+    - type: DOMAIN-SUFFIX
+      value: trafficmanager.cn
+      identity_key: domain-suffix|trafficmanager.cn
+      rule_id: 8e5b90cbe7bba57eff011b53b342004e1a9fa3a18f0fc843986bf88d9e895e23
+    - type: DOMAIN-SUFFIX
+      value: trustcenter.cn
+      identity_key: domain-suffix|trustcenter.cn
+      rule_id: 5c802edcade441e1782e8b01380380dc23eef975ac2ec8f1aed0952a3da18fc2
+    - type: DOMAIN-SUFFIX
+      value: windowsazure.cn
+      identity_key: domain-suffix|windowsazure.cn
+      rule_id: 14dc4af56f6f8ab0d598daec6804c7fd965e9de4ebefb11ba2eb58ee67ea2d95
+    - type: DOMAIN-SUFFIX
+      value: windowsazurestatus.cn
+      identity_key: domain-suffix|windowsazurestatus.cn
+      rule_id: ee9c3d0dbeed0739b83c24a60dfa570765c233c3ee7f635ce7931893aaaef963
+    - type: DOMAIN-SUFFIX
+      value: azchcdna.com
+      identity_key: domain-suffix|azchcdna.com
+      rule_id: 28a1162e249507586e0e2501d0987c82ea13572f6fe02296564be03d24d458f2
+    - type: DOMAIN-SUFFIX
+      value: azchcdnb.com
+      identity_key: domain-suffix|azchcdnb.com
+      rule_id: b2ca142653c82639489732f318c741d5452baefc9bdd9b2117a97d4a0ff0235b
+    - type: DOMAIN-SUFFIX
+      value: azchcdnc.com
+      identity_key: domain-suffix|azchcdnc.com
+      rule_id: 66e70b2a9c13b5b9051d2eaba66fe236dfa01c289bd2a3ed4728450448eb3ad6
+    - type: DOMAIN-SUFFIX
+      value: azchcdnd.com
+      identity_key: domain-suffix|azchcdnd.com
+      rule_id: 6f2e7de2e5f1db85d65c390c37f639568e58c316f76c735053f169edcbd2812e
+    - type: DOMAIN-SUFFIX
+      value: azchcdne.com
+      identity_key: domain-suffix|azchcdne.com
+      rule_id: 91c2358328c96c193751c376892703ccad6219098d9647fa4e5dacc1ec0fd05f
+    - type: DOMAIN-SUFFIX
+      value: azchcdnf.com
+      identity_key: domain-suffix|azchcdnf.com
+      rule_id: 56309d0d2ff7cf5503640a23a966d3901b6b1a0f852557c1b1fea46266367119
+    - type: DOMAIN-SUFFIX
+      value: azchcdng.com
+      identity_key: domain-suffix|azchcdng.com
+      rule_id: a5ea9e2efdb06fa9de3bb521caa8a5121a979dfcd3fd62b9ec9feb948cd055c2
+    - type: DOMAIN-SUFFIX
+      value: azchcdnh.com
+      identity_key: domain-suffix|azchcdnh.com
+      rule_id: 9c88fbe6eaeaeee9a37be55b7e32f32192f6790ae51e424589138896d14b51be
+    - type: DOMAIN-SUFFIX
+      value: azchcdni.com
+      identity_key: domain-suffix|azchcdni.com
+      rule_id: 5eca152be8a607bad56e6eb8e2cb75222f76473bef17aa1d236b07e0437960af
+    - type: DOMAIN-SUFFIX
+      value: azchcdnj.com
+      identity_key: domain-suffix|azchcdnj.com
+      rule_id: 517cb49ddb2c4ae7e4ca197f413e96cc1e1c3c65e839c9ec8b877bc7ca1a7a17
+    - type: DOMAIN-SUFFIX
+      value: azchcdnk.com
+      identity_key: domain-suffix|azchcdnk.com
+      rule_id: 12a8d03c6beada1f7af954feeef23add6001d0f70e01ccf5408eb5d7d18d4829
+    - type: DOMAIN-SUFFIX
+      value: azchcdnl.com
+      identity_key: domain-suffix|azchcdnl.com
+      rule_id: 9a5f745780112302c74fd06ed6ef3b8fde67c9ae9baa0708a1a5e755ecceaafe
+    - type: DOMAIN-SUFFIX
+      value: azchcdnm.com
+      identity_key: domain-suffix|azchcdnm.com
+      rule_id: b43560dd227f6263951a633bea4b4cccac746df8a659710836c7bb057a2b74ca
+    - type: DOMAIN-SUFFIX
+      value: azchcdnn.com
+      identity_key: domain-suffix|azchcdnn.com
+      rule_id: b4464602a629efeaa8642122eb3e2de51b78c16de217f1e8b2c8a9d168bad7ff
+    - type: DOMAIN-SUFFIX
+      value: azchcdno.com
+      identity_key: domain-suffix|azchcdno.com
+      rule_id: a49055be596b9acc827b8a650733a97bf2d1209c0868f339b788578a2a0bdf21
+    - type: DOMAIN-SUFFIX
+      value: azchcdnp.com
+      identity_key: domain-suffix|azchcdnp.com
+      rule_id: 3b5093bdaa2bf99e1806b6080d2546b7c67ac7e5a6a947494e6dbba129e40671
+    - type: DOMAIN-SUFFIX
+      value: azchcdnq.com
+      identity_key: domain-suffix|azchcdnq.com
+      rule_id: 65a1ff386e63d2d553804c0679691ccddfa1ebfb93cf29945797307cde11aa78
+    - type: DOMAIN-SUFFIX
+      value: azchcdnr.com
+      identity_key: domain-suffix|azchcdnr.com
+      rule_id: d4bfaf99732f4e27fd8cbc51b09dae723cd14663ac73cbcbbb28e8502e69960c
+    - type: DOMAIN-SUFFIX
+      value: azchcdns.com
+      identity_key: domain-suffix|azchcdns.com
+      rule_id: 16e8203db2318eb44d217350c4505fdb4c1cf39019702d96fc576644fee6b609
+    - type: DOMAIN-SUFFIX
+      value: azure-dns.cn
+      identity_key: domain-suffix|azure-dns.cn
+      rule_id: 1471ef851230474467b22c29e9307d1d2a1c24b7166749f81298de8147d9ec05
+    - type: DOMAIN-SUFFIX
+      value: azure-dns-1.cn
+      identity_key: domain-suffix|azure-dns-1.cn
+      rule_id: 106a60cd92fdc6124881ff6d5cf8007b3befc51c91a60d4f28f00292c4d2d09a
+    - type: DOMAIN-SUFFIX
+      value: azure-dns-2.cn
+      identity_key: domain-suffix|azure-dns-2.cn
+      rule_id: b8b5759e5fcbd3e7ec3c87ba809a4f440fee5e6a5e8beb9dc7d676d2be742316
+    - type: DOMAIN-SUFFIX
+      value: azure-dns-3.cn
+      identity_key: domain-suffix|azure-dns-3.cn
+      rule_id: 9017c35321cc09fe0e5ad04372d4d6eb1540f37d3791e7935146cdfc1142040f
+    - type: DOMAIN-SUFFIX
+      value: azure-dns-4.cn
+      identity_key: domain-suffix|azure-dns-4.cn
+      rule_id: 221d1413b5f6ee4c3a29d228657ec85b959df939582f41519e9d0a23008b411a
+    - type: DOMAIN-SUFFIX
+      value: azure-dns-5.cn
+      identity_key: domain-suffix|azure-dns-5.cn
+      rule_id: f8b3de9719846d9f8b934e97250b9ee07bfaabefef10dd30ad4674c2343acca0
+    - type: DOMAIN-SUFFIX
+      value: azure-dns-6.cn
+      identity_key: domain-suffix|azure-dns-6.cn
+      rule_id: 235060576943336108ac7aa165b7946b3934169515bf08e6e26277cfb90714ad
+    - type: DOMAIN-SUFFIX
+      value: azure-dns-7.cn
+      identity_key: domain-suffix|azure-dns-7.cn
+      rule_id: 68972c844667aea85224a37879cc4ac071c5a06884971e90e5515a4bafdbb6e2
+    - type: DOMAIN-SUFFIX
+      value: azure-dns-8.cn
+      identity_key: domain-suffix|azure-dns-8.cn
+      rule_id: a01d379a4b38e54be716424b9b78f5839e32ec7e64ccbc8624e39785719b5c41
+    - type: DOMAIN-SUFFIX
+      value: azure-dns-9.cn
+      identity_key: domain-suffix|azure-dns-9.cn
+      rule_id: eaa54a8e2498338e349a7774de0d83ca442160ef58300898500069c83b6d8abf
+    - type: DOMAIN-SUFFIX
+      value: azure-dns-10.cn
+      identity_key: domain-suffix|azure-dns-10.cn
+      rule_id: 103016b5f25c01bf0af593239dbec32fcc2ac055e9a585ca01d1fa02b72fab18
+  bluesky:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/bluesky.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: bsky.app
+      identity_key: domain-suffix|bsky.app
+      rule_id: 7a53267b4612b7520e26a2a2c278f7d3e83431fa0d1eb42578c8f15fece18a83
+    - type: DOMAIN-SUFFIX
+      value: bsky.network
+      identity_key: domain-suffix|bsky.network
+      rule_id: 07ecc80ecb2d1587c8c8c82d8e744fe2b937e011ba3a8f2b8fd07d5c8fb004bc
+    - type: DOMAIN-SUFFIX
+      value: bsky.social
+      identity_key: domain-suffix|bsky.social
+      rule_id: 189cbe18ec4576bbeb25a0f2a2c572ef92a1c778e9c57bc5003ff023bc332962
+  booking:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/booking.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: booking.com
+      identity_key: domain-suffix|booking.com
+      rule_id: a2a5096981eb81a4b70e91a9ca008236f9073c420bb1b46dd48e95192ff078e9
+    - type: DOMAIN-SUFFIX
+      value: bstatic.com
+      identity_key: domain-suffix|bstatic.com
+      rule_id: a242fdca514a3b2a9c81f0c4e0ccda8d638ff7c99c9630949046d05e7c16ecf9
+    - type: DOMAIN-SUFFIX
+      value: booking.cn
+      identity_key: domain-suffix|booking.cn
+      rule_id: b73736b396b55a71e9ad2b2fcc30aeb3a40d1a68b67161a0ac893cf0fd42eaed
+  canva:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/canva.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: affinity.studio
+      identity_key: domain-suffix|affinity.studio
+      rule_id: 716452033ed18b58c030de31c62900ae3714dae8fbe6b9b3d4ef19ea83b2f4b0
+    - type: DOMAIN-SUFFIX
+      value: canva.com
+      identity_key: domain-suffix|canva.com
+      rule_id: 49a8f066729814f45ed5898338f48dc2eb1745b77c8afb99072bd2863a0d9a77
+    - type: DOMAIN-SUFFIX
+      value: canvastatus.com
+      identity_key: domain-suffix|canvastatus.com
+      rule_id: 1bf0bcea81dc4071701217ff71f55d42914a8fa9e32a81e3b503240bcdd5a7a7
+    - type: DOMAIN-SUFFIX
+      value: affinity.api.serifservices.com
+      identity_key: domain-suffix|affinity.api.serifservices.com
+      rule_id: 8472dc8216a9c190bf0846db631b6597384ea67e2554857070d2480c9ce45e21
+    - type: DOMAIN-SUFFIX
+      value: affinity-beta.s3.amazonaws.com
+      identity_key: domain-suffix|affinity-beta.s3.amazonaws.com
+      rule_id: 798034b66e8b22e6a9bf4861208bca898573008324a2c1177720f83bb3e6401e
+    - type: DOMAIN-SUFFIX
+      value: affinity-lessons.s3.amazonaws.com
+      identity_key: domain-suffix|affinity-lessons.s3.amazonaws.com
+      rule_id: 27478a11e589ca5ee9c2643c12dfda241330dbe8c2ac8168c7300a4066996b01
+  cursor:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/cursor.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: cursor-cdn.com
+      identity_key: domain-suffix|cursor-cdn.com
+      rule_id: 0793cc11f853be0c3221d60c9c99725415e3040d7edb26ae4ec599ae876fc178
+    - type: DOMAIN-SUFFIX
+      value: cursor.com
+      identity_key: domain-suffix|cursor.com
+      rule_id: d561189cd306e40a74e6f15c185bdb4c7a24ec89e5e1c0aaecdc63111e101cfb
+    - type: DOMAIN-SUFFIX
+      value: cursor.sh
+      identity_key: domain-suffix|cursor.sh
+      rule_id: 8837908cd9e3bf0bbb598902bc6211867516a7de446f234c60ae9e07d85103b9
+    - type: DOMAIN-SUFFIX
+      value: cursorapi.com
+      identity_key: domain-suffix|cursorapi.com
+      rule_id: bb8c0a5c6289ab680a2e296add5f0c86f735b1b4055871267f1545921056eb60
+  deepseek:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/deepseek.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: deepseek.com
+      identity_key: domain-suffix|deepseek.com
+      rule_id: efabb6c0e1f7f2d6c13932418821ca9238e795a54ff0c9abd6c61e00d0094f67
+    - type: DOMAIN-SUFFIX
+      value: deepseeksvc.com
+      identity_key: domain-suffix|deepseeksvc.com
+      rule_id: 4f75b334aab090031200ec2c4c4b8d4ebb0b2911306cf4b90459784b8c9fb72a
+  dewu:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/dewu.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: giftatdw.cn
+      identity_key: domain-suffix|giftatdw.cn
+      rule_id: 58a3beafef3afa6edae0a7bf08a899fadf06bdb242992d22a7a5df3005dcb753
+    - type: DOMAIN-SUFFIX
+      value: dewu-inner.com
+      identity_key: domain-suffix|dewu-inner.com
+      rule_id: 2a275555fdd0f5ae75afaacd02c935346f37f0590dd4d5efafe1d49548a1768f
+    - type: DOMAIN-SUFFIX
+      value: dewu-inner.net
+      identity_key: domain-suffix|dewu-inner.net
+      rule_id: d41f7ce61251e0e86aff359011ef368e8dd6f51e6756b985fa891a6aa2a9d088
+    - type: DOMAIN-SUFFIX
+      value: dewu.co
+      identity_key: domain-suffix|dewu.co
+      rule_id: f91416392e317c267bc9d9ea2657aeeb7c8fc87125c16867e706b5140ad23f05
+    - type: DOMAIN-SUFFIX
+      value: dewu.com
+      identity_key: domain-suffix|dewu.com
+      rule_id: dc46f314d21c944d18cf49c5b2c39a7a905fd78923470294628ae9d5129c0e7d
+    - type: DOMAIN-SUFFIX
+      value: dewu.net
+      identity_key: domain-suffix|dewu.net
+      rule_id: c2d7da5dd956f71ff174b07729d00cd2d28b989920596fc7f761c37de90e3d25
+    - type: DOMAIN-SUFFIX
+      value: dewuapp.cn
+      identity_key: domain-suffix|dewuapp.cn
+      rule_id: 83e7eaa3851ab27a32a112317a7ec150c9a5e10222fb33bb70332ce9592a8ed1
+    - type: DOMAIN-SUFFIX
+      value: dewucdn.com
+      identity_key: domain-suffix|dewucdn.com
+      rule_id: e3df506939fe7b4d7ccff398478df20ca799bf95a3d58c1a6f27041618667341
+    - type: DOMAIN-SUFFIX
+      value: dewuhaowu.cn
+      identity_key: domain-suffix|dewuhaowu.cn
+      rule_id: a70a948a138acb2088283847e050657fb8760e00ca138fb91abbfb0a9f8b2ebd
+    - type: DOMAIN-SUFFIX
+      value: dewuhd.cn
+      identity_key: domain-suffix|dewuhd.cn
+      rule_id: 2d618ea2eafc99cb7225f506a465a233b25465eb5f181aedaf5a88f35f55bcc5
+    - type: DOMAIN-SUFFIX
+      value: dewuhd.com
+      identity_key: domain-suffix|dewuhd.com
+      rule_id: 188eeb93a54bd470425afb3ce3b7655d8ce0ee0d026628789fcfe80f01f1e780
+    - type: DOMAIN-SUFFIX
+      value: dewuhui.cn
+      identity_key: domain-suffix|dewuhui.cn
+      rule_id: 32c596d6435ce8e39bc403289b928ce4ae9a724e25decc982e22ccb69c88b24e
+    - type: DOMAIN-SUFFIX
+      value: dewuhui.com
+      identity_key: domain-suffix|dewuhui.com
+      rule_id: f35fd8686f08d5e716f41729937ef2731825733055900bff5822304431fa8449
+    - type: DOMAIN-SUFFIX
+      value: dewumall.com
+      identity_key: domain-suffix|dewumall.com
+      rule_id: 387d157eedf6acbdb80f781a14405dfc1a45249f9ec080dbcc036783b96c9b81
+    - type: DOMAIN-SUFFIX
+      value: dewus.cn
+      identity_key: domain-suffix|dewus.cn
+      rule_id: 3a7f2466cb1b8fda5b0628f121ca4e20cfdb18697ac47a6127a76c7b60099784
+    - type: DOMAIN-SUFFIX
+      value: dewuyouhui.cn
+      identity_key: domain-suffix|dewuyouhui.cn
+      rule_id: 0e87e7bf705c2dfeca526ac9c19d217d047f23f89dc9f6040c717d13e342fdf3
+    - type: DOMAIN-SUFFIX
+      value: dewuyouhui.com
+      identity_key: domain-suffix|dewuyouhui.com
+      rule_id: 7b5acb11c26a9ef541982bce895cb65760d3a0f6723cd34a46f1e341b4859e03
+    - type: DOMAIN-SUFFIX
+      value: du8.ltd
+      identity_key: domain-suffix|du8.ltd
+      rule_id: 7239acbb43993b1347814c8a34402e3505e96d6610b26de68564a6682934b832
+    - type: DOMAIN-SUFFIX
+      value: dw2.co
+      identity_key: domain-suffix|dw2.co
+      rule_id: ed0169958857673ffac5d46a7db6034cdb878b7167ee2e7ec95fe6d95a57ae81
+    - type: DOMAIN-SUFFIX
+      value: dw4.co
+      identity_key: domain-suffix|dw4.co
+      rule_id: 61fe23a61791a077a842658b54274319c70e3c57873c02353833c75bb981bff5
+    - type: DOMAIN-SUFFIX
+      value: dewu-inc.com
+      identity_key: domain-suffix|dewu-inc.com
+      rule_id: 32738b777a8e72c4aab2681bd2e4e1ff70d361e0f074c22a8c3fd47a709674b4
+    - type: DOMAIN-SUFFIX
+      value: dwhhd.cn
+      identity_key: domain-suffix|dwhhd.cn
+      rule_id: 0a5d37b9d71c25552ec14a418c7673631107d5ee66cecb08a98a2b28255a3d9d
+    - type: DOMAIN-SUFFIX
+      value: dwhhd.com
+      identity_key: domain-suffix|dwhhd.com
+      rule_id: 4acce76d416a2feb8b207f7ba1d7154d56eb1d7205c21497e3b608a99452bde5
+    - type: DOMAIN-SUFFIX
+      value: giftatdw.com
+      identity_key: domain-suffix|giftatdw.com
+      rule_id: 4d48ef289cdada244aa645a8cd9d5611226eade79ae6bd2abd27d8cd33cec442
+    - type: DOMAIN-SUFFIX
+      value: giftattoday.com
+      identity_key: domain-suffix|giftattoday.com
+      rule_id: a5b911724ec9e942c9deec08f66fca414881a36ea56804eb34cace7b8b807d83
+    - type: DOMAIN-SUFFIX
+      value: growthsharebounce.cn
+      identity_key: domain-suffix|growthsharebounce.cn
+      rule_id: 34878eaa6987cc1a01c5dd339983e2cee6e4cc8ec0a069c06e1477297ab059d0
+    - type: DOMAIN-SUFFIX
+      value: growthsharequestion.cn
+      identity_key: domain-suffix|growthsharequestion.cn
+      rule_id: e7edd8b58035887a3ff35e2ca7365388b6ff792a5bf7e01dab8906c86eec947d
+    - type: DOMAIN-SUFFIX
+      value: growthsharetubular.cn
+      identity_key: domain-suffix|growthsharetubular.cn
+      rule_id: 83585f9bd5c823a163ce2cdde583f7b69329c2cf24b87f69a20937c25f8de6d0
+    - type: DOMAIN-SUFFIX
+      value: pandarzli.com
+      identity_key: domain-suffix|pandarzli.com
+      rule_id: 5619f9f8661702c89d03f407e055bea0a90237f5759a484521adebf53a7df77a
+    - type: DOMAIN-SUFFIX
+      value: pengyoudewu.cn
+      identity_key: domain-suffix|pengyoudewu.cn
+      rule_id: 348837089ef239ed10877a852e8e686a00efea07d33f2c3ec5362d5c9f270123
+    - type: DOMAIN-SUFFIX
+      value: pengyoudewu.com
+      identity_key: domain-suffix|pengyoudewu.com
+      rule_id: 607f7669ff5fa1259ec14d23700575b12d024005df7024a383255732dae25327
+    - type: DOMAIN-SUFFIX
+      value: poizon-inner.com
+      identity_key: domain-suffix|poizon-inner.com
+      rule_id: 4338b3ccfb87cb347e9ac20f1e992af73ec1b3d9fcbf7e648cc324330a245508
+    - type: DOMAIN-SUFFIX
+      value: poizon-inner.net
+      identity_key: domain-suffix|poizon-inner.net
+      rule_id: 3f44ae9502999ef40fbd19ac2978e8c76fe2190dad1c24438d3e1633e2856335
+    - type: DOMAIN-SUFFIX
+      value: poizon-support.com
+      identity_key: domain-suffix|poizon-support.com
+      rule_id: bb8dfe4bd7e5217c28c46835898d446da10328c7455354ebe1d0997770927807
+    - type: DOMAIN-SUFFIX
+      value: poizon.com
+      identity_key: domain-suffix|poizon.com
+      rule_id: f4b5a9bec96af514308702d0aecbab635244ced138ad3d4af49b88268af70228
+    - type: DOMAIN-SUFFIX
+      value: poizon.net
+      identity_key: domain-suffix|poizon.net
+      rule_id: 2ef79ce4889068cc5939b75e7a1c702f050678d523b0d74c8cbb5a17be8ea674
+    - type: DOMAIN-SUFFIX
+      value: shizhuang-inc.com
+      identity_key: domain-suffix|shizhuang-inc.com
+      rule_id: 48fe819563fbab6ecd06160fdb75961a0ac483ff933c9c3260769c68ea6411a7
+    - type: DOMAIN-SUFFIX
+      value: shizhuang-inc.net
+      identity_key: domain-suffix|shizhuang-inc.net
+      rule_id: d538c1c23a7d64ad2e372899e54957e8f5ca87ca7258027af33ed11c8130e432
+    - type: DOMAIN-SUFFIX
+      value: theduapp.cn
+      identity_key: domain-suffix|theduapp.cn
+      rule_id: ca96d0b4f1541dbccd025f84e63aa9330b607a7d40742315f070ec883d590fef
+    - type: DOMAIN-SUFFIX
+      value: theduapp.com
+      identity_key: domain-suffix|theduapp.com
+      rule_id: c14ce5a1dbc009d64d333bd540f56c336819dca27c5753e30b556025f65d4b5b
+    - type: DOMAIN-SUFFIX
+      value: womendedw.com
+      identity_key: domain-suffix|womendedw.com
+      rule_id: b03716aee82b85c9ccb64ffff07c122aa2faf50ba14646e89366b33a3c0fc231
+    - type: DOMAIN-SUFFIX
+      value: wodehaodewu.cn
+      identity_key: domain-suffix|wodehaodewu.cn
+      rule_id: 17134142034c5514c5f2c9278cce1fb7c53f258cf2700ea6536451977cd243a0
+    - type: DOMAIN-SUFFIX
+      value: womendedw.cn
+      identity_key: domain-suffix|womendedw.cn
+      rule_id: 5e74dad582a68fe34222599746f7234f5761765b9fbd33184cb4df5a9766f016
+    - type: DOMAIN-SUFFIX
+      value: theduapp.com.cn
+      identity_key: domain-suffix|theduapp.com.cn
+      rule_id: 3df42a4ed7e5625c920ecd24e75c646ad01692354b2ab225e3834bfabc664afc
+    - type: DOMAIN-SUFFIX
+      value: thepoizon.ru
+      identity_key: domain-suffix|thepoizon.ru
+      rule_id: 1fb5c9b3b5c4b2a96f3b2cb029b844b9fb66ffbdff019c2589738a1b41dc3f4b
+  doubao:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/doubao.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: butterfly-static.cn
+      identity_key: domain-suffix|butterfly-static.cn
+      rule_id: b2b3d841c4848f7585ff5bbcd6151d65b960e1abf4c9abb8c91b3b2d0589f47c
+    - type: DOMAIN-SUFFIX
+      value: butterflyai.cn
+      identity_key: domain-suffix|butterflyai.cn
+      rule_id: 10922be54cd3a44b70bbbef89152016e53c80cefcef0ad74828b221fd32736ca
+    - type: DOMAIN-SUFFIX
+      value: coze-dns-01.com
+      identity_key: domain-suffix|coze-dns-01.com
+      rule_id: 70be45074425863af116c53feb2c2d46a02063ae61a567d143d3361901cc06f5
+    - type: DOMAIN-SUFFIX
+      value: coze.cn
+      identity_key: domain-suffix|coze.cn
+      rule_id: 47892e72240b66bed638b2a6153888275bc79e8106b2727567526e0fb2fb137e
+    - type: DOMAIN-SUFFIX
+      value: coze.email
+      identity_key: domain-suffix|coze.email
+      rule_id: 7114293bcffb62ac125c162062b75da8eff45b6832028c0e42b059cc36e5eaaa
+    - type: DOMAIN-SUFFIX
+      value: coze.site
+      identity_key: domain-suffix|coze.site
+      rule_id: 6fd32d8888f0dcd4c183336e928ac7cc0a08656235dfed66ea5b6a9e4962933f
+    - type: DOMAIN-SUFFIX
+      value: cozeapp.net
+      identity_key: domain-suffix|cozeapp.net
+      rule_id: 5d68fe2d1451bfbcf8a33bc66e7c27cf092a71d146e67d0a78a08f5a3eaef4a7
+    - type: DOMAIN-SUFFIX
+      value: cozebaas.cn
+      identity_key: domain-suffix|cozebaas.cn
+      rule_id: 16939197dfbf499c2c8c944104c3260d60b776d1bc1dcadf6c187e7c260d7635
+    - type: DOMAIN-SUFFIX
+      value: cozebuild.com
+      identity_key: domain-suffix|cozebuild.com
+      rule_id: 9f0d0c84d5044a7622e169b8183f5f48ce5eb89869a346267c05c388ede3a00e
+    - type: DOMAIN-SUFFIX
+      value: cozecdn.com
+      identity_key: domain-suffix|cozecdn.com
+      rule_id: af5f8b5f0204af0d7720a533f94f631073006a397a28b21cc1b499ea83e9be8b
+    - type: DOMAIN-SUFFIX
+      value: cozedeploy.com
+      identity_key: domain-suffix|cozedeploy.com
+      rule_id: 6d371c1d84c0ac6448a31fdbee97f5424ff44c4a0c1566ef7c02938fb1bef133
+    - type: DOMAIN-SUFFIX
+      value: cozefn.cn
+      identity_key: domain-suffix|cozefn.cn
+      rule_id: 9b0e1e593e61346e59f2b0b3f7534826b33430725b353cd1de188e7f4447c972
+    - type: DOMAIN-SUFFIX
+      value: cozeide.cn
+      identity_key: domain-suffix|cozeide.cn
+      rule_id: 6cf17771877559a069473f96d96bc59b58dc65a4c993f54d1d24e87ee6899334
+    - type: DOMAIN-SUFFIX
+      value: cozesdk.com
+      identity_key: domain-suffix|cozesdk.com
+      rule_id: 0bb34cc5417e042e3aebaba8b573eb3ff3183f72fdc1da8aa28fd51a81ddeb11
+    - type: DOMAIN-SUFFIX
+      value: cozetest.cn
+      identity_key: domain-suffix|cozetest.cn
+      rule_id: 053aac08527dd2a1d62f869c0cd0c23bf8843098cd061a66809624801560b38c
+    - type: DOMAIN-SUFFIX
+      value: cozetest2.cn
+      identity_key: domain-suffix|cozetest2.cn
+      rule_id: 571e5f44c2b34447bdbef02a4f1e35361c6f8e63cb1dc1a59be70dc415fed643
+    - type: DOMAIN-SUFFIX
+      value: cozetest3.cn
+      identity_key: domain-suffix|cozetest3.cn
+      rule_id: 5ed2e274735f7555f43bed49890f0bd926d2f1c7730bd8628fb9d73ae6610a75
+    - type: DOMAIN-SUFFIX
+      value: dbbuilding.fun
+      identity_key: domain-suffix|dbbuilding.fun
+      rule_id: 487268352c9dab63b7cffdda16d58d3127a197d4088f2f884308aed0adbb3d79
+    - type: DOMAIN-SUFFIX
+      value: building.fun
+      identity_key: domain-suffix|building.fun
+      rule_id: 772f6d1a2d3a65decb7121d047c021d6a2f616f3b4624a61d0103354edb1190b
+    - type: DOMAIN-SUFFIX
+      value: instreet.com
+      identity_key: domain-suffix|instreet.com
+      rule_id: 6e7e02d5516165e1cceda365d159ee5cd42f4cbb53ff1ad7b137bff7eb11046b
+    - type: DOMAIN-SUFFIX
+      value: doubao-dev.com
+      identity_key: domain-suffix|doubao-dev.com
+      rule_id: 7c305f9c7f3ca331be4db426f4df65d56a06d3a7ddcd3f4000aa10fa8fc1567a
+    - type: DOMAIN-SUFFIX
+      value: doubao.com
+      identity_key: domain-suffix|doubao.com
+      rule_id: b3160f1577dcfda2a6bfe42f3a125de25c65cf3d5dbac0609e506bac07879ad1
+    - type: DOMAIN-SUFFIX
+      value: doubaocdn.com
+      identity_key: domain-suffix|doubaocdn.com
+      rule_id: ad8872a93a116a880c50f0ea3aedf5324c8f5c7a9b1fbcc92f26382ff106ed04
+    - type: DOMAIN-SUFFIX
+      value: hi-butterfly.cn
+      identity_key: domain-suffix|hi-butterfly.cn
+      rule_id: d862c708619af0323becdaa06096bfc951bcd1e76addaa4ab5b512ad4233c07c
+    - type: DOMAIN-SUFFIX
+      value: maoxiangai.com
+      identity_key: domain-suffix|maoxiangai.com
+      rule_id: 20ef2db5bc681b4b1230b499a6dad0536aff797732c3fa15054d2bfb21634ff2
+    - type: DOMAIN-SUFFIX
+      value: myparallelstory.com
+      identity_key: domain-suffix|myparallelstory.com
+      rule_id: ce912433adc028c32f39156f37c0bbea6483ee098d5ebceca3f6ef329c0ea34c
+    - type: DOMAIN-SUFFIX
+      value: oceancloudapi.com
+      identity_key: domain-suffix|oceancloudapi.com
+      rule_id: bba9a444eb1cf866fd4cfd61f2356baf6e8452c900743b74d864a9720e70de6d
+    - type: DOMAIN-SUFFIX
+      value: obriccloud.com
+      identity_key: domain-suffix|obriccloud.com
+      rule_id: 4d05264a6a47310d1579d0877f78c3689813ca21987ab2a8154f20dfa0e6732f
+    - type: DOMAIN-SUFFIX
+      value: obricclouddw.com
+      identity_key: domain-suffix|obricclouddw.com
+      rule_id: 82092c2f4351eed67851928ea66ef492f46d9d732568d7b9b6afe7e4761224e2
+    - type: DOMAIN-SUFFIX
+      value: picpic-ai.cn
+      identity_key: domain-suffix|picpic-ai.cn
+      rule_id: 4d84bc007ffb134672fd6a7aa8dfd96551e96dcf846f7122f6f98e6ea4775a91
+    - type: DOMAIN-SUFFIX
+      value: pixeldance.com
+      identity_key: domain-suffix|pixeldance.com
+      rule_id: d65054845701995f4f3c20c867e0a536c38be378024d52444807353ead60325d
+    - type: DOMAIN-SUFFIX
+      value: api-building.fun
+      identity_key: domain-suffix|api-building.fun
+      rule_id: cf1dd6154893d02a499478e41fc1991b3f8f535590ab7ababf731231b58b3b90
+  elevenlabs:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/elevenlabs.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: elevenlabs.com
+      identity_key: domain-suffix|elevenlabs.com
+      rule_id: c9850bc8d7d2658151daf42fbadf6f264c8db376d75f0a6f303f9d5b5617f6c8
+    - type: DOMAIN-SUFFIX
+      value: elevenlabs.io
+      identity_key: domain-suffix|elevenlabs.io
+      rule_id: 8d40f721867b413fdca3f4ee39b045eba33f2a69796d7109009a22f2bd972cf7
+  feishu:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/feishu.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: anycross.com
+      identity_key: domain-suffix|anycross.com
+      rule_id: 8e7b85794b79993311568bab3a03c285b4cf7066e584f7ac1020d7433b22c162
+    - type: DOMAIN-SUFFIX
+      value: blmpb.com
+      identity_key: domain-suffix|blmpb.com
+      rule_id: df6e1a8d4ea29a422e7b1d17830ef503ed19d84e8eed88c1f01cb415c9b74225
+    - type: DOMAIN-SUFFIX
+      value: bytedancehermestest.com
+      identity_key: domain-suffix|bytedancehermestest.com
+      rule_id: fa745783a048724a3d163ff6962899ef42a6e8ba443b8e3e62544ff79b18e049
+    - type: DOMAIN-SUFFIX
+      value: falconsending.com
+      identity_key: domain-suffix|falconsending.com
+      rule_id: 3268013f5d88b6d3f754d3ed29101b1901b38de046dd54d3d6458e7b3234ae52
+    - type: DOMAIN-SUFFIX
+      value: fei-shu.cn
+      identity_key: domain-suffix|fei-shu.cn
+      rule_id: fac4824f5c3599f6d02037860230ccbd118ac0f1c4ba99bf0028cab330b0c989
+    - type: DOMAIN-SUFFIX
+      value: feishu-3rd-party-services.com
+      identity_key: domain-suffix|feishu-3rd-party-services.com
+      rule_id: 6418fce6e0ad1f6ec86596c5df24f5e28e51e422a8814de3d263a1d88e95872d
+    - type: DOMAIN-SUFFIX
+      value: feishu-boe.net
+      identity_key: domain-suffix|feishu-boe.net
+      rule_id: ee44c90776e41766bc809e855550dfd0da79721285b78433a469fd18bf543301
+    - type: DOMAIN-SUFFIX
+      value: feishu-customer.cn
+      identity_key: domain-suffix|feishu-customer.cn
+      rule_id: 2b57c6d8ccc4fb549e4c96316221410b22317c42ba6bb52588fe2b1524371d67
+    - type: DOMAIN-SUFFIX
+      value: feishu-pre.cn
+      identity_key: domain-suffix|feishu-pre.cn
+      rule_id: c1197aa04758a1304c662236938d656a8d731cf3d0ec6269d432ad56357f1314
+    - type: DOMAIN-SUFFIX
+      value: feishu-pre.net
+      identity_key: domain-suffix|feishu-pre.net
+      rule_id: 6d0c994ef81aca7953b95b9b56e44b6d27be7960d6dd222c426ba458e4592329
+    - type: DOMAIN-SUFFIX
+      value: feishu-psc.cn
+      identity_key: domain-suffix|feishu-psc.cn
+      rule_id: 8c56a97d67a6a5beaaabc541e337cff7eda4c8d37a1dc93e267ce1345e43f07d
+    - type: DOMAIN-SUFFIX
+      value: feishu-staging.cn
+      identity_key: domain-suffix|feishu-staging.cn
+      rule_id: f613b5a414fb679fd348b23ab600be557727dbe0213a3c2b1124192c5f90bc50
+    - type: DOMAIN-SUFFIX
+      value: feishu.cn
+      identity_key: domain-suffix|feishu.cn
+      rule_id: ad7d97cbeda28f025454ccb1896c5c31851d5e3fc8c2b1ad6db404cf819f2a92
+    - type: DOMAIN-SUFFIX
+      value: feishu.net
+      identity_key: domain-suffix|feishu.net
+      rule_id: 0b1c159631c970d224846524970cc23a7a8b3ca10d0b11b4f5e19a9d63fcf493
+    - type: DOMAIN-SUFFIX
+      value: feishuapp-cdn.net
+      identity_key: domain-suffix|feishuapp-cdn.net
+      rule_id: 1fc766ec919d992529594ae3fdc995889b7df838b1a1f9cddb9bab68dcae8c65
+    - type: DOMAIN-SUFFIX
+      value: feishuapp.cn
+      identity_key: domain-suffix|feishuapp.cn
+      rule_id: 8a81ff659ef6faedc37bda572be2ef8941ed9ce56e5cf57b9a763936527b8e0c
+    - type: DOMAIN-SUFFIX
+      value: feishuapp.com
+      identity_key: domain-suffix|feishuapp.com
+      rule_id: ade67fd955ea247ca3b6361a43d26c92d1faaf0a63a02c0289755ae28dd361be
+    - type: DOMAIN-SUFFIX
+      value: feishucdn.com
+      identity_key: domain-suffix|feishucdn.com
+      rule_id: 7e7f7d8c2a22e0b6f17d6fa1dd9a0371400d373a648eddb28f1e0f3ee3b5034f
+    - type: DOMAIN-SUFFIX
+      value: feishudoc.cn
+      identity_key: domain-suffix|feishudoc.cn
+      rule_id: ae64970ba60fd129030724bd408e5db6eb659c019f9ee707be90492c8e23ea75
+    - type: DOMAIN-SUFFIX
+      value: feishudoc.com
+      identity_key: domain-suffix|feishudoc.com
+      rule_id: bf78f6926127758324b66e253f441a715e9eb17d6a5c3d8d0e170822a535e760
+    - type: DOMAIN-SUFFIX
+      value: feishuhuiyi.cn
+      identity_key: domain-suffix|feishuhuiyi.cn
+      rule_id: 17ba301e6b5e0b82448aa955507ad70bbc8b0e52d76d2950efcea8069ac34a57
+    - type: DOMAIN-SUFFIX
+      value: feishuhuiyi.com
+      identity_key: domain-suffix|feishuhuiyi.com
+      rule_id: 071c083e933e841e743c74f64306611fd662208b90f31d8e608d5b0f76d09440
+    - type: DOMAIN-SUFFIX
+      value: feishuimg-boe.com
+      identity_key: domain-suffix|feishuimg-boe.com
+      rule_id: 8119ab7da689e13e31c5119abf897e96b9cbc02e69214f820bff8d3b4290686e
+    - type: DOMAIN-SUFFIX
+      value: feishuimg-pre.com
+      identity_key: domain-suffix|feishuimg-pre.com
+      rule_id: a2f59e1f9404a522a6f194af7236a2e5123b8f75062edd7e24660d8737b07a98
+    - type: DOMAIN-SUFFIX
+      value: feishuimg.com
+      identity_key: domain-suffix|feishuimg.com
+      rule_id: ee11086ad71dfaee87d07a2987ec712b988f773c900f2f2ab8bae2b57a15f10c
+    - type: DOMAIN-SUFFIX
+      value: feishukacdn.com
+      identity_key: domain-suffix|feishukacdn.com
+      rule_id: aeef35c7232a385f0b472342ef329e2db6cd544d301fd06302e39cdbb70c8dba
+    - type: DOMAIN-SUFFIX
+      value: feishumeetings.cn
+      identity_key: domain-suffix|feishumeetings.cn
+      rule_id: d2c3397c92b0c6cc3dca1caf5e13242ba986f83be99ca5a96c124a70d66fe688
+    - type: DOMAIN-SUFFIX
+      value: feishumeetings.com
+      identity_key: domain-suffix|feishumeetings.com
+      rule_id: a44a3402769d30c809782e03fb7a20f7fc818b02faf39816af29b3ad1ff63199
+    - type: DOMAIN-SUFFIX
+      value: feishuoffice.cn
+      identity_key: domain-suffix|feishuoffice.cn
+      rule_id: 1e3a097cc31d0e02e64e28591a47ee85246a3ee27f082042ba6c898b87971355
+    - type: DOMAIN-SUFFIX
+      value: feishuoffice.com
+      identity_key: domain-suffix|feishuoffice.com
+      rule_id: 107fccd38a9b8b8747608b9297098a96bd474ca58137dcf3f8966640b6e3a8dd
+    - type: DOMAIN-SUFFIX
+      value: feishuopenplatformrecord.com
+      identity_key: domain-suffix|feishuopenplatformrecord.com
+      rule_id: e1d06264f4754d8f490e52f1bb761d65b2f5faa6b02b61b27049e463491a0505
+    - type: DOMAIN-SUFFIX
+      value: feishupkg.com
+      identity_key: domain-suffix|feishupkg.com
+      rule_id: d3d85ee52ff87907a8c560f852975e27afc3ce763684e5d10deaef6291cdbd04
+    - type: DOMAIN-SUFFIX
+      value: feishustatus.cn
+      identity_key: domain-suffix|feishustatus.cn
+      rule_id: ddadd3803f33e3980421f1828969d29bee904936c44a3f2922973c42daffb695
+    - type: DOMAIN-SUFFIX
+      value: feishuvc.cn
+      identity_key: domain-suffix|feishuvc.cn
+      rule_id: 86e2aca5ff94fedb3e0a679743088a94c18872d380fd91cec1aa2ea16d758446
+    - type: DOMAIN-SUFFIX
+      value: feishuvc.com
+      identity_key: domain-suffix|feishuvc.com
+      rule_id: 9fc461307cfccec29887373a476378a35b21f1883b8c332c9766b4f65f9bd9be
+    - type: DOMAIN-SUFFIX
+      value: getfeishu.cn
+      identity_key: domain-suffix|getfeishu.cn
+      rule_id: b44c392e68591439fe064572f0c02109a6b5b9c3031bd03500a58448ab996a00
+    - type: DOMAIN-SUFFIX
+      value: getfeishu.com
+      identity_key: domain-suffix|getfeishu.com
+      rule_id: 066aa4b1b89e01ec7914cf771c91397e5b624300eadadc977b7125ce482bec0c
+    - type: DOMAIN-SUFFIX
+      value: getsays.cn
+      identity_key: domain-suffix|getsays.cn
+      rule_id: 8f83359e5c0c85ae5709127158dd99965f960fe706f4fc7d82960cc76c0dc2f2
+    - type: DOMAIN-SUFFIX
+      value: getsays.com
+      identity_key: domain-suffix|getsays.com
+      rule_id: ca264a1d17e5ebfa053be4651edfff6c25d6413d91ab698c50fbb4a7c3f6835a
+    - type: DOMAIN-SUFFIX
+      value: lackvc.cn
+      identity_key: domain-suffix|lackvc.cn
+      rule_id: c9251ac7ccd1c8205d56f89234d0f881ae332f9fedc63d25e3a7f72965851902
+    - type: DOMAIN-SUFFIX
+      value: securityfeishu.cn
+      identity_key: domain-suffix|securityfeishu.cn
+      rule_id: ffbe26890bf7cb6a889bc2cee3c2bf1c31f94e04a6f19049a9d9fbb172dc1a6a
+    - type: DOMAIN-SUFFIX
+      value: securityfs.cn
+      identity_key: domain-suffix|securityfs.cn
+      rule_id: 99834cb93912e71de46db5b7b8064bf7841f8c76f5a810839db85fed133fb90a
+    - type: DOMAIN-SUFFIX
+      value: statusfeishu.cn
+      identity_key: domain-suffix|statusfeishu.cn
+      rule_id: b14b8110d5aa7975469fbe664afaf1de584b766899833a9dade3b85775cbbca4
+  firebase:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/firebase.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: firebase.google.com
+      identity_key: domain-suffix|firebase.google.com
+      rule_id: 43db7e17c7155aa6e937a19ee31fcf80f3808f31208649b66fa38dcf8352feb9
+    - type: DOMAIN-SUFFIX
+      value: firebase.googleapis.com
+      identity_key: domain-suffix|firebase.googleapis.com
+      rule_id: a3ac331ae379e3c6d5ea36e42b765184297f702872c5313a0fd06328d5c294ac
+    - type: DOMAIN-SUFFIX
+      value: firebaseappcheck.googleapis.com
+      identity_key: domain-suffix|firebaseappcheck.googleapis.com
+      rule_id: ae8b6be479b757dfd3b2e45abbb5ad7b02ca14ecb97ee04084f0fa8d9ebf34d1
+    - type: DOMAIN-SUFFIX
+      value: firebasedynamiclinks-ipv4.googleapis.com
+      identity_key: domain-suffix|firebasedynamiclinks-ipv4.googleapis.com
+      rule_id: 414876d0d3673badec4988ab4fcef8dc7257d6ed696613a14676f44870878ea1
+    - type: DOMAIN-SUFFIX
+      value: firebasedynamiclinks-ipv6.googleapis.com
+      identity_key: domain-suffix|firebasedynamiclinks-ipv6.googleapis.com
+      rule_id: d68e46bd60b7be4a7fd7fdb15e965d7ee7306feb53b49149429a2d1c9dff93e5
+    - type: DOMAIN-SUFFIX
+      value: firebasedynamiclinks.googleapis.com
+      identity_key: domain-suffix|firebasedynamiclinks.googleapis.com
+      rule_id: d744770c33a2d9098268a43c30b1afba0e632c917015d4bcf10da8b25cc487b5
+    - type: DOMAIN-SUFFIX
+      value: firebaseinappmessaging.googleapis.com
+      identity_key: domain-suffix|firebaseinappmessaging.googleapis.com
+      rule_id: 7687e0ab4b33202c516e7599aa00120ab1927d370337a0b6f46b05498d4cd456
+    - type: DOMAIN-SUFFIX
+      value: firebaseinstallations.googleapis.com
+      identity_key: domain-suffix|firebaseinstallations.googleapis.com
+      rule_id: 776aa9fe9e0916586c3b7b079c81c5c794efc46b52918e07ff9f9521f596f121
+    - type: DOMAIN-SUFFIX
+      value: firebaselogging-pa.googleapis.com
+      identity_key: domain-suffix|firebaselogging-pa.googleapis.com
+      rule_id: fc3ff2f1d4acafce2cba76b74d4e20acd09d9039b7ec2939558f02b6b3fddaa8
+    - type: DOMAIN-SUFFIX
+      value: firebaselogging.googleapis.com
+      identity_key: domain-suffix|firebaselogging.googleapis.com
+      rule_id: 62615396d49932412151c705bf970ef16e5336916eefd13b1052a20d11cbadaf
+    - type: DOMAIN-SUFFIX
+      value: firebaseperusertopics-pa.googleapis.com
+      identity_key: domain-suffix|firebaseperusertopics-pa.googleapis.com
+      rule_id: 6236eef2b00204a8824352a95f42b1a0057ffa90652ea7db9d2e5814a8f61799
+    - type: DOMAIN-SUFFIX
+      value: firebaseremoteconfig.googleapis.com
+      identity_key: domain-suffix|firebaseremoteconfig.googleapis.com
+      rule_id: cf0e2a81eb0fbf67ffea57323b4b0027c12ae7f38b9c1671a5d408db8f96e819
+    - type: DOMAIN-SUFFIX
+      value: crashlytics.com
+      identity_key: domain-suffix|crashlytics.com
+      rule_id: 9c5906de214be5562c0e17b18c4e3dfd1820050145ca752004cda6a15933c9a5
+    - type: DOMAIN-SUFFIX
+      value: firebase.com
+      identity_key: domain-suffix|firebase.com
+      rule_id: d2e838cad751be965c6e0904703231ff88c459cf2a6d83db07c16285cfa4f931
+    - type: DOMAIN-SUFFIX
+      value: firebase.io
+      identity_key: domain-suffix|firebase.io
+      rule_id: 5efb2b89975653db4180677dc987d009b8713ac530341dbf8c308afdd0945fcc
+    - type: DOMAIN-SUFFIX
+      value: firebaseapp.com
+      identity_key: domain-suffix|firebaseapp.com
+      rule_id: 2b4cdc8aff61c8ef203e4ee7488b8e4e39fb391ccc04b0fd26db429a4d2a7be6
+    - type: DOMAIN-SUFFIX
+      value: firebaseio.com
+      identity_key: domain-suffix|firebaseio.com
+      rule_id: f76f5dde25c6e31915d995e930e8bc05aa0796037103d5122ce09036c14cb550
+    - type: DOMAIN-SUFFIX
+      value: crashlyticsreports-pa.googleapis.com
+      identity_key: domain-suffix|crashlyticsreports-pa.googleapis.com
+      rule_id: 1540132c747a2b579dd21c21db817afc1086e5b8f3773a125450de53d80a5d4e
+    - type: DOMAIN-SUFFIX
+      value: firebase-settings.crashlytics.com
+      identity_key: domain-suffix|firebase-settings.crashlytics.com
+      rule_id: 93e2b753effd0bf1e6f07213af3b9d4def2bf6cf2eb8b92adfb3e5616cc205c3
+    - type: DOMAIN-SUFFIX
+      value: update.crashlytics.com
+      identity_key: domain-suffix|update.crashlytics.com
+      rule_id: d89a8d8f18d0f601d9e686b24cf239d5f9962ddd532c2e42cadc009e0cd0a0fe
+  grok:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/grok.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: grok.com
+      identity_key: domain-suffix|grok.com
+      rule_id: 513e2b86f6c3993531eff04ed1d001c965f7bb39b569c20b28e5cbe398490384
+    - type: DOMAIN-SUFFIX
+      value: grokipedia.com
+      identity_key: domain-suffix|grokipedia.com
+      rule_id: 60f93cbaa48ad3934f9eaca3cfb68bf1355f34c0783727394444653b2de10694
+    - type: DOMAIN-SUFFIX
+      value: x.ai
+      identity_key: domain-suffix|x.ai
+      rule_id: 246115501a0587901975f0f4e7dacc815cd986ba01b512d9614ec28acd645cf3
+    - type: DOMAIN-SUFFIX
+      value: grok.x.com
+      identity_key: domain-suffix|grok.x.com
+      rule_id: db3ce932563c9ce021c5301219b069c38156ac618678e5da4e8b9c6b21c537df
+  groq:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/groq.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: groq.com
+      identity_key: domain-suffix|groq.com
+      rule_id: 7bbda749c306a78daff84947c1a652b459b73b56e4380bfdd873cea1a2165000
+  huggingface:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/huggingface.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: hf.co
+      identity_key: domain-suffix|hf.co
+      rule_id: 187c5e23bc4d4950c1b2b8cc58f691bc811764591dca96c8e2dccdcbdb7c79f7
+    - type: DOMAIN-SUFFIX
+      value: hf.space
+      identity_key: domain-suffix|hf.space
+      rule_id: 5c5c381ac43bdd4129196328c66a4030c449d7f33db9db5958b0567a5fd6fbb8
+    - type: DOMAIN-SUFFIX
+      value: huggingface.co
+      identity_key: domain-suffix|huggingface.co
+      rule_id: 03ae4fb2de5a65178d66a3b6503608fd847def033634a41786aca2d072e8b141
+  messenger:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/messenger.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: fbmessenger.com
+      identity_key: domain-suffix|fbmessenger.com
+      rule_id: 11195051fa5e7bf34c6376a51d5bcb4b84d1fcdd4537fe949672e59626157ab9
+    - type: DOMAIN-SUFFIX
+      value: m.me
+      identity_key: domain-suffix|m.me
+      rule_id: 75809f512252cee6e204d77f066e6b45963d9af41fc1ce97707c2ee50b6282c1
+    - type: DOMAIN-SUFFIX
+      value: messenger.com
+      identity_key: domain-suffix|messenger.com
+      rule_id: 336786b10154ec6e13ddb21daaca0d6df8ae43622896081f8e8fe18969fd8ceb
+    - type: DOMAIN-SUFFIX
+      value: nbabot.net
+      identity_key: domain-suffix|nbabot.net
+      rule_id: e340fcd5e82e8f17073e1e0f1c1794ef6c26c88900159203c029ab8b3d7d2f3d
+  netlify:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/netlify.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: acd89244c803f7181.awsglobalaccelerator.com
+      identity_key: domain-suffix|acd89244c803f7181.awsglobalaccelerator.com
+      rule_id: a0b76ef3bfb8100e94492442d275a998f7d7c83823708e05bb1d567c500bdbd5
+    - type: DOMAIN-SUFFIX
+      value: afa7f374f51cc8991.awsglobalaccelerator.com
+      identity_key: domain-suffix|afa7f374f51cc8991.awsglobalaccelerator.com
+      rule_id: d3aef25ac4114a754494129910351183ddb907fee758012c36263c2f7a2d954d
+    - type: DOMAIN-SUFFIX
+      value: d33wubrfki0l68.cloudfront.net
+      identity_key: domain-suffix|d33wubrfki0l68.cloudfront.net
+      rule_id: f24417d7ad0b6f74c6998a428a7fe0e9eaaba2606fd3516119b935f77ecea8d3
+    - type: DOMAIN-SUFFIX
+      value: bitballoon.com
+      identity_key: domain-suffix|bitballoon.com
+      rule_id: 1cff093e53e1af252e81b083c2a689b35453ec937824fa728a9ea30825fb1c7e
+    - type: DOMAIN-SUFFIX
+      value: netlify.app
+      identity_key: domain-suffix|netlify.app
+      rule_id: c9dca201d089ef00d526d4cfc9bb673ca7009621d5c701acd6573006357645bd
+    - type: DOMAIN-SUFFIX
+      value: netlify.com
+      identity_key: domain-suffix|netlify.com
+      rule_id: 2ee60ebe7fa956aa035ea0164bdb3b42d7127a607a5ae5490d29b3ce58a32027
+    - type: DOMAIN-SUFFIX
+      value: netlifydns.com
+      identity_key: domain-suffix|netlifydns.com
+      rule_id: 5eea761816a7cb6439d15c72084c476742adcacbb92a58c3180ba74c5b196418
+    - type: DOMAIN-SUFFIX
+      value: netlifystatus.com
+      identity_key: domain-suffix|netlifystatus.com
+      rule_id: 541f24079718f11e0528c5dac9f2f8cad28e0166dde2f1f34cebe6948ad33982
+    - type: DOMAIN-SUFFIX
+      value: netlifyusercontent.com
+      identity_key: domain-suffix|netlifyusercontent.com
+      rule_id: 749c819aeac00cd55652628d78c0b68a24c54bfbc71153b88c1fceea757c249b
+    - type: DOMAIN-SUFFIX
+      value: ntl.fyi
+      identity_key: domain-suffix|ntl.fyi
+      rule_id: 2e1b4d28392c964548d9fc346b18e7dab00896acb872f226741b4d96c04c71c0
+  npm:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/npm.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: npm.community
+      identity_key: domain-suffix|npm.community
+      rule_id: a50b8326a32d5fc90677ecff5417ef2f2716264006056f1185800c8bb4edd908
+    - type: DOMAIN-SUFFIX
+      value: npmjs.com
+      identity_key: domain-suffix|npmjs.com
+      rule_id: 3ad7ecc5586d8a9ac6431e438839a6220a613797e1fcd7ef802942234d65e0bf
+    - type: DOMAIN-SUFFIX
+      value: npmjs.org
+      identity_key: domain-suffix|npmjs.org
+      rule_id: e92ab0707470eb9f664f915fedcb7c88ce7b0b6811b1fb1c7564a3030925e810
+  perplexity:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/perplexity.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: ppl-ai-file-upload.s3.amazonaws.com
+      identity_key: domain-suffix|ppl-ai-file-upload.s3.amazonaws.com
+      rule_id: 9bcff4c4cf259a5568ed369d1895ecd07c6437615ca52b032aa176d93f1811f3
+    - type: DOMAIN-SUFFIX
+      value: pplx-res.cloudinary.com
+      identity_key: domain-suffix|pplx-res.cloudinary.com
+      rule_id: 903c62fb5e0c662a7929ac2a66da7cafcbd0970f78830f1de1eb932481093adf
+    - type: DOMAIN-SUFFIX
+      value: perplexity.ai
+      identity_key: domain-suffix|perplexity.ai
+      rule_id: 7fe291cb2d19d96b9f28241ccf8901efa2d3419d7d5d7b5e96a7538a83b43c4c
+    - type: DOMAIN-SUFFIX
+      value: perplexity.com
+      identity_key: domain-suffix|perplexity.com
+      rule_id: 2c5cb549ade54912d0332c5b20e78e14780aa4150827cae2e643e9627285b138
+    - type: DOMAIN-SUFFIX
+      value: pplx.ai
+      identity_key: domain-suffix|pplx.ai
+      rule_id: f423b412cdbe7fe5f5c3db97abf160556fc55fd7f2ef271a706e6815f5740093
+  roblox:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/roblox.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: d1unuk07s6td74.cloudfront.net
+      identity_key: domain-suffix|d1unuk07s6td74.cloudfront.net
+      rule_id: 7a90dd7ac3015a66ddb8d63b23369425e63b1daadef568cee4de1553a4e47873
+    - type: DOMAIN-SUFFIX
+      value: roblox-load-generator-configuration.s3.us-east-2.amazonaws.com
+      identity_key: domain-suffix|roblox-load-generator-configuration.s3.us-east-2.amazonaws.com
+      rule_id: 928de4a4581dbc56523fb6d2dfcfa81a2122ddcf491ccc8a27e5a7eefd5dfceb
+    - type: DOMAIN-SUFFIX
+      value: roblox-poc.global.ssl.fastly.net
+      identity_key: domain-suffix|roblox-poc.global.ssl.fastly.net
+      rule_id: c3c84ec3edde8e34ef12c7a4f2070f6ed8359b0a479f061f603007922a00a3ac
+    - type: DOMAIN-SUFFIX
+      value: robloxcorp.s.llnwi.net
+      identity_key: domain-suffix|robloxcorp.s.llnwi.net
+      rule_id: 1a546187ed2102c787f13932f05e61e5eab612fa6c7e69433be9b637dcfb3e5b
+    - type: DOMAIN-SUFFIX
+      value: roblox.com
+      identity_key: domain-suffix|roblox.com
+      rule_id: 977582c236c2218bb0ac0cb9176c8ab8317ac97e393bc9065fa19ac5d7fc3e5c
+    - type: DOMAIN-SUFFIX
+      value: goblocks.com
+      identity_key: domain-suffix|goblocks.com
+      rule_id: 47e070b575d14095520d7d5f6fb10e120ad55664e1533b65793bd841d1c36b42
+    - type: DOMAIN-SUFFIX
+      value: goblox.com
+      identity_key: domain-suffix|goblox.com
+      rule_id: bc3bf819e204855fd997ba791c4998e2eb45b4d78874c0fd894d18d056fe42a1
+    - type: DOMAIN-SUFFIX
+      value: gooblox.com
+      identity_key: domain-suffix|gooblox.com
+      rule_id: 447a806dfac5db56e8439f080638a2c58ba5b582cb4c0f2bf5fe8797f18f7fb8
+    - type: DOMAIN-SUFFIX
+      value: humancoexperience.com
+      identity_key: domain-suffix|humancoexperience.com
+      rule_id: fd96293bc9b672a170b43eb487e2fdadf4d5b82039f73f68ce4bf64999263fe2
+    - type: DOMAIN-SUFFIX
+      value: rblx.co
+      identity_key: domain-suffix|rblx.co
+      rule_id: e287eee13f7f3e6f18e024d1ff34882cf96669b981e69ccb0e270926490e8b1e
+    - type: DOMAIN-SUFFIX
+      value: rblx.com
+      identity_key: domain-suffix|rblx.com
+      rule_id: df039288f7eb5865b692d1113ced075558fc7a33ab03038302f72af6a805ff6a
+    - type: DOMAIN-SUFFIX
+      value: rblx.org
+      identity_key: domain-suffix|rblx.org
+      rule_id: 6910ebcb98e1364037da86ea1be2902a0ecda525696030e9b7c896e8450c218f
+    - type: DOMAIN-SUFFIX
+      value: rbx.com
+      identity_key: domain-suffix|rbx.com
+      rule_id: 289dc59e465266ee32ac0c52b6c806cac2d0ae242ecb31947f9afbcc641eec46
+    - type: DOMAIN-SUFFIX
+      value: rbxcdn.com
+      identity_key: domain-suffix|rbxcdn.com
+      rule_id: 2723da893ad308da9661bdcd9b1be0d146ab298dc645a88609ed86a7e435b4bf
+    - type: DOMAIN-SUFFIX
+      value: rbxinfra.net
+      identity_key: domain-suffix|rbxinfra.net
+      rule_id: 520daa55042907f511caf7f6d55021009ba2f5e537694b80ad8c6f2a95044c6f
+    - type: DOMAIN-SUFFIX
+      value: rbxlabs.com
+      identity_key: domain-suffix|rbxlabs.com
+      rule_id: d722b6871541d9cebc454e77e9fc7234280308a1e537ca00455eea208b481163
+    - type: DOMAIN-SUFFIX
+      value: rbxtrk.com
+      identity_key: domain-suffix|rbxtrk.com
+      rule_id: cae00a56bb01beb1ebe27a28d008442bf7d7b34ce504f6a6e3d1c2f8b494da2c
+    - type: DOMAIN-SUFFIX
+      value: ro-blox.com
+      identity_key: domain-suffix|ro-blox.com
+      rule_id: 12532accc3b3241c0fd314cdfa9dfb548a29035d6b42977beace89219de9b0b2
+    - type: DOMAIN-SUFFIX
+      value: roadblocks.com
+      identity_key: domain-suffix|roadblocks.com
+      rule_id: 44aca74cb660d6f6028d19f24651e710e0a0e55743d793560596d69f9f7a9c59
+    - type: DOMAIN-SUFFIX
+      value: roblocks.com
+      identity_key: domain-suffix|roblocks.com
+      rule_id: af4b30686b1104b627180b96f4489badc2040e557271e03ea28777edbf775552
+    - type: DOMAIN-SUFFIX
+      value: rowblox.com
+      identity_key: domain-suffix|rowblox.com
+      rule_id: 4427fbd0f619d4715a83b380d88d303aab4706b46e87e4609e9c56e12a2b0677
+    - type: DOMAIN-SUFFIX
+      value: roblox.ca
+      identity_key: domain-suffix|roblox.ca
+      rule_id: f201b9484f22404760d785c388e4299e467247b7704f097f91e71220d2bf8cbd
+    - type: DOMAIN-SUFFIX
+      value: roblox.cc
+      identity_key: domain-suffix|roblox.cc
+      rule_id: 4c8cd1a2fbeba98a2b0e756c18cc6b74870d240d278ed960cf2bf46d9243a07b
+    - type: DOMAIN-SUFFIX
+      value: roblox.cl
+      identity_key: domain-suffix|roblox.cl
+      rule_id: 3d5925f6fe2191c15da7f6497fb0647b84f722de2e521bac66f28d9ca136dcf0
+    - type: DOMAIN-SUFFIX
+      value: blox.com
+      identity_key: domain-suffix|blox.com
+      rule_id: c0feb2fee83443111ee75205b35ef9e0f3111a7106ece282e6e0c942d4565de7
+    - type: DOMAIN-SUFFIX
+      value: rowblocks.com
+      identity_key: domain-suffix|rowblocks.com
+      rule_id: a06f1f4b1c87fa114cb2850d62f1bdc327ab8cc0621448693f9c71ccc5521205
+    - type: DOMAIN-SUFFIX
+      value: robloxlabs.com
+      identity_key: domain-suffix|robloxlabs.com
+      rule_id: 0c557b54ec5f7acce925f92cabe99b5502325dd66b8d881f854c5f09c60fe6ff
+    - type: DOMAIN-SUFFIX
+      value: roblox.de
+      identity_key: domain-suffix|roblox.de
+      rule_id: 80d869920643c6333e80565234ae4c66c46f062d4ae5a657e4813a0e80c3223f
+    - type: DOMAIN-SUFFIX
+      value: roblox.dk
+      identity_key: domain-suffix|roblox.dk
+      rule_id: 457551422fb73e66fa98425dd3f8d43b28fc001851da69b0ddae1e221cd6778a
+    - type: DOMAIN-SUFFIX
+      value: roblox.eu
+      identity_key: domain-suffix|roblox.eu
+      rule_id: c4066db5f1157b249914ac095151cb1eedb5758b319bd59720de685558f5ac21
+    - type: DOMAIN-SUFFIX
+      value: roblox.fr
+      identity_key: domain-suffix|roblox.fr
+      rule_id: 39cf33c231d186ac8946a4151be827de72aefb357f0ee74f0f06ce8a4c3a6016
+    - type: DOMAIN-SUFFIX
+      value: roblox.hu
+      identity_key: domain-suffix|roblox.hu
+      rule_id: ed5fb60adf703ebd642a6b3bf6e00d46e522f84761c0f13c1e1a379145249097
+    - type: DOMAIN-SUFFIX
+      value: roblox.it
+      identity_key: domain-suffix|roblox.it
+      rule_id: 7d70467dd54f30032ab50662819867a713612f055f13eb3bbbc7ee03b2653216
+    - type: DOMAIN-SUFFIX
+      value: roblox.jp
+      identity_key: domain-suffix|roblox.jp
+      rule_id: d54e5ea5ceb0e9dd3a7768ee578fd6fdc5ca166e3760a238bbf68bb4ae28fde4
+    - type: DOMAIN-SUFFIX
+      value: roblox.kr
+      identity_key: domain-suffix|roblox.kr
+      rule_id: 4308d4127f0c7b4b02618355b57a71ddb83bee59e3c5330ee2ee4d05973e0e2a
+    - type: DOMAIN-SUFFIX
+      value: roblox.mx
+      identity_key: domain-suffix|roblox.mx
+      rule_id: 3868ee7fcf9b8f9bcf1f6b84ddf4178afac6f4260fc1d231ca75cd549e6f9003
+    - type: DOMAIN-SUFFIX
+      value: roblox.net
+      identity_key: domain-suffix|roblox.net
+      rule_id: a6837b4fd808cf549bb6ab6e74f6c61856be3b3dc71952225efc1038ca0c5bd0
+    - type: DOMAIN-SUFFIX
+      value: roblox.org
+      identity_key: domain-suffix|roblox.org
+      rule_id: c184acb3bc2aa207ce0ce7793cf4b04fe98ac2909eb12ffddcc29ef5900e0e10
+    - type: DOMAIN-SUFFIX
+      value: roblox.ph
+      identity_key: domain-suffix|roblox.ph
+      rule_id: 53c10378f96a4156dfffb378ce4dd00b96629b8630b0c15639888d92d53fef22
+    - type: DOMAIN-SUFFIX
+      value: roblox.pt
+      identity_key: domain-suffix|roblox.pt
+      rule_id: 3df18ad380f314149bf6fb42d94b7de183fa1d58147e25a9e3aa1d8f1467c8da
+    - type: DOMAIN-SUFFIX
+      value: roblox.sk
+      identity_key: domain-suffix|roblox.sk
+      rule_id: 1113709d6efc5d11abe4fc25827d3ef6374fc58b4c43ddbe51b1b39c61af9382
+    - type: DOMAIN-SUFFIX
+      value: roblox.tv
+      identity_key: domain-suffix|roblox.tv
+      rule_id: 49b7f5feaccf13db1c7b1d5dbedcd5047c9efc35d06d3d1707e9d285f6daaefd
+    - type: DOMAIN-SUFFIX
+      value: roblox.uk
+      identity_key: domain-suffix|roblox.uk
+      rule_id: c97be1e40fb799a3b92353c4fa246e1d64acff9eccfce6c2bfae625a563bc478
+    - type: DOMAIN-SUFFIX
+      value: roblox.us
+      identity_key: domain-suffix|roblox.us
+      rule_id: 0c8faee69808b5fcb292416cc1444c68ee35a0a823a839d47347cc7db1179874
+    - type: DOMAIN-SUFFIX
+      value: roblox.vn
+      identity_key: domain-suffix|roblox.vn
+      rule_id: 895bed2ea33207e3156a8e79f0be94780afc7a55f6734a535bc87ee034189140
+    - type: DOMAIN-SUFFIX
+      value: roblox.co.uk
+      identity_key: domain-suffix|roblox.co.uk
+      rule_id: cfdd0e9f444b6e5a8e0f131f90a8c82dca5aadb49b2335aa5c27bc7a638beff9
+    - type: DOMAIN-SUFFIX
+      value: roblox.co.jp
+      identity_key: domain-suffix|roblox.co.jp
+      rule_id: 614355b15265bbe88340510da08b728b194f1eb229c7d10fa2fb322c390c7765
+    - type: DOMAIN-SUFFIX
+      value: roblox-api.arkoselabs.com
+      identity_key: domain-suffix|roblox-api.arkoselabs.com
+      rule_id: cb5a752617361ed7378cf35bd1fa96b69e6d597c5ddde86bcf4b440654d87aa8
+  signal:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/signal.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: signal.art
+      identity_key: domain-suffix|signal.art
+      rule_id: db713c41ae1f63c2603c08b5d6f9761ab840bfa3d75b48cf0d69734ac72204c8
+    - type: DOMAIN-SUFFIX
+      value: signal.group
+      identity_key: domain-suffix|signal.group
+      rule_id: c2f9ee74b4ee47759866367ca007cb0a6ebf2b17cdcf4127ead4c0a5b776b7b6
+    - type: DOMAIN-SUFFIX
+      value: signal.link
+      identity_key: domain-suffix|signal.link
+      rule_id: 7a40bf3502eb1f20a0cf23aa89bd9eb091f7e957c6800b336b7339d2f6db14bd
+    - type: DOMAIN-SUFFIX
+      value: signal.me
+      identity_key: domain-suffix|signal.me
+      rule_id: ede963ede08ef414d7e54e629f9164de8ffe2fab41854d0d16ee4a2bef23f4e4
+    - type: DOMAIN-SUFFIX
+      value: signal.tube
+      identity_key: domain-suffix|signal.tube
+      rule_id: 75c4fe151480d7e35a7bc06f7d9b0b8b1a724bf6d003e07bfa4f65a890d3aafa
+    - type: DOMAIN-SUFFIX
+      value: signal.org
+      identity_key: domain-suffix|signal.org
+      rule_id: e16f0eac28e35ab5ab7bcdb7c9c7cf8c8b657b3cf018ea2bfc802b1d65590de2
+    - type: DOMAIN-SUFFIX
+      value: signalusers.org
+      identity_key: domain-suffix|signalusers.org
+      rule_id: b6b20dbd2db1e7affec1bd4b38aa551d40a3a20884b4fe41e197216de452b3d0
+    - type: DOMAIN-SUFFIX
+      value: whispersystems.org
+      identity_key: domain-suffix|whispersystems.org
+      rule_id: d1dd794e92e6cd6ad9ce966206cf0838bdbcf6a5f8c99715a805d4460fddfa25
+  snapchat:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/snapchat.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: impala-media-production.s3.amazonaws.com
+      identity_key: domain-suffix|impala-media-production.s3.amazonaws.com
+      rule_id: 7d560453362acf46031e465b62dbf44f5ca95a32de8571159814eb2c7461c730
+    - type: DOMAIN-SUFFIX
+      value: sc-cdn.net
+      identity_key: domain-suffix|sc-cdn.net
+      rule_id: dd6a42c05791bd1658074850e11bcde60d2e2bfc088d8850039befc76edcd7c7
+    - type: DOMAIN-SUFFIX
+      value: sc-gw.com
+      identity_key: domain-suffix|sc-gw.com
+      rule_id: fff76ff687ef2c2a16e7be9ec3576f81ae6ea3db2eb2fcbc7fa6d56ef6b4446f
+    - type: DOMAIN-SUFFIX
+      value: sc-static.net
+      identity_key: domain-suffix|sc-static.net
+      rule_id: 40b680952da51b249dac28288a22657ce94024f12a0d9ff661f472e58e3b99be
+    - type: DOMAIN-SUFFIX
+      value: snap-dev.net
+      identity_key: domain-suffix|snap-dev.net
+      rule_id: b54d37dd3a593bd22282afb9c47ae64085cb3d2eb983fe89541975b492a4d66d
+    - type: DOMAIN-SUFFIX
+      value: snap.com
+      identity_key: domain-suffix|snap.com
+      rule_id: 62c7e00c62c0b718cac56b1fe3ca9fc7aee0205fd8e4fc1cb7ed4b0394aff2cc
+    - type: DOMAIN-SUFFIX
+      value: snapchat.com
+      identity_key: domain-suffix|snapchat.com
+      rule_id: d3ddeb0b3702f792fd9f9776918f3c2450168612b157e2fc0fa09e21772cdfad
+    - type: DOMAIN-SUFFIX
+      value: snapkit.co
+      identity_key: domain-suffix|snapkit.co
+      rule_id: 53a3310f10b488927873081972a4ac84bad4107c9388a8cf28f630f834dbba2b
+    - type: DOMAIN-SUFFIX
+      value: snapads.com
+      identity_key: domain-suffix|snapads.com
+      rule_id: f2d02d3e99c26bdfac7d1ce42f814b929c7b2eb05a35a994711b2a7691d42ee3
+  tidal:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/tidal.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: tidal.com
+      identity_key: domain-suffix|tidal.com
+      rule_id: 2eac8aa37fa15150942044767aa0c146f347c8b5dd68f113f9bd4fda9fe887b4
+    - type: DOMAIN-SUFFIX
+      value: tidalhifi.com
+      identity_key: domain-suffix|tidalhifi.com
+      rule_id: 80e21292f0266ebe1afdc17803c88696dff980f222dd2a344573e126d5f5897c
+    - type: DOMAIN-SUFFIX
+      value: wimpmusic.com
+      identity_key: domain-suffix|wimpmusic.com
+      rule_id: 608531c511f6c337602a058b1b7939eef763f50b6c31911ba877be13fb991d96
+  trello:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/trello.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: trello.com
+      identity_key: domain-suffix|trello.com
+      rule_id: 19053ddf8b90f5ccfefaa7043f89f2914676a91d0b21dbc5da7bf424e7716713
+    - type: DOMAIN-SUFFIX
+      value: trellocdn.com
+      identity_key: domain-suffix|trellocdn.com
+      rule_id: f6818ac5edb34b156aa835c4388291fa5dc8dd3303339e81827d2cba0a2dda9c
+  uber:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/uber.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: uber-assets.com
+      identity_key: domain-suffix|uber-assets.com
+      rule_id: cb1a260809f3379e7ed3094a821725de499b7090c963dbf1b67f9acb7ee98fba
+    - type: DOMAIN-SUFFIX
+      value: uber.com
+      identity_key: domain-suffix|uber.com
+      rule_id: 9081dddfaeb2c4947295bd1bb463718fee0c1d0ee59942edc1ebc7456a83c608
+    - type: DOMAIN-SUFFIX
+      value: ubereats.com
+      identity_key: domain-suffix|ubereats.com
+      rule_id: f22e25a06f5e9fb8f508ac6e516ee3e968f68f5211f27111527860548bb1c5b9
+  walmart:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/walmart.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: walmart
+      identity_key: domain-suffix|walmart
+      rule_id: 0abed69597190adda8bff875a41fea503a1adcc7d890c7a0442ca8783f2e30b9
+    - type: DOMAIN-SUFFIX
+      value: w-mt.co
+      identity_key: domain-suffix|w-mt.co
+      rule_id: 04886b9bf97d7eaae275a510c58f4fed6c81eabbece77e8aa9639ac7732096cf
+    - type: DOMAIN-SUFFIX
+      value: wal-mart.com
+      identity_key: domain-suffix|wal-mart.com
+      rule_id: b508aae64b2e95d81536aa413b110b6d240697e7002efb1c21f403370ddf7773
+    - type: DOMAIN-SUFFIX
+      value: wal.co
+      identity_key: domain-suffix|wal.co
+      rule_id: 30c279143636235301e3840b857271ef023ab519b2b5f19b53cde46d21ba22f6
+    - type: DOMAIN-SUFFIX
+      value: walmart-content.com
+      identity_key: domain-suffix|walmart-content.com
+      rule_id: 8699449a22e9492928b75b558e515364ccfa5975d7c119191d8fd244349f4478
+    - type: DOMAIN-SUFFIX
+      value: walmart.com
+      identity_key: domain-suffix|walmart.com
+      rule_id: 8fefeb7e9536641cee6631af373b63e4cb1f21b1dab2c7ed1c78e1fbbe608d41
+    - type: DOMAIN-SUFFIX
+      value: walmart.pharmacy
+      identity_key: domain-suffix|walmart.pharmacy
+      rule_id: b2f9c338b7f6f319ff1a75957ade9ebbafe498e57ed738a1c099f5915e9ea135
+    - type: DOMAIN-SUFFIX
+      value: walmartimages.com
+      identity_key: domain-suffix|walmartimages.com
+      rule_id: 534df2c7189b54a9ac86a43ec756435f8991a502575c1ac08ee7cbea7558860b
+    - type: DOMAIN-SUFFIX
+      value: wmt.co
+      identity_key: domain-suffix|wmt.co
+      rule_id: 21c0c02b1dfaba5b1875b4aa1c51a539af8eee47f25b54c43fa6fc5d853b112a
+    - type: DOMAIN-SUFFIX
+      value: walmart.cn
+      identity_key: domain-suffix|walmart.cn
+      rule_id: 2250d2ad0257e4a30f4de74695e79dc5c0e0d9e2fca10d89f8f2a4f8d9e71d89
+  wise:
+    snapshot: config/p0_geosite_snapshots/2026-09-20/wise.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: transferwise.com
+      identity_key: domain-suffix|transferwise.com
+      rule_id: c542513af5dbb44d44c325a5f1dabee4f30f1f7736b4720da2f9177b86c20aee
+    - type: DOMAIN-SUFFIX
+      value: wise.com
+      identity_key: domain-suffix|wise.com
+      rule_id: 759986e3b9d2788e3fcf8993628ced7f919e3c228a113ebb6c3b40378d1e84cf

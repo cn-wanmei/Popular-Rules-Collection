@@ -1,0 +1,323 @@
+version: 1
+schema: p0_service_source_evidence_v1
+batch: 3
+services:
+  airbnb:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/airbnb.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/airbnb.list
+      sha256: 191b2127afd9115e0c6f3f57ec38b603a64359899a740927c66428d1707d3716
+      rule_count: 83
+  alibabacloud:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/alibabacloud.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/alibabacloud.list
+      sha256: 9637e8b708a38f2ec47e1cc585f8f3813772366a5a869590c4c24dd5889d7ed3
+      rule_count: 12
+  aws:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/aws.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/aws.list
+      sha256: 878c5c56805cdc8fbc9ba5a5604cdfd66aa7230523982b8ae9d67a9dc5e12a9b
+      rule_count: 77
+  azure:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/azure.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/azure.list
+      sha256: d15bad99f2b4b4bdbe99d369ac5ad18442221cd9b0db808f5bd9c40b795ed8ac
+      rule_count: 151
+  bluesky:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bluesky.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/bluesky.list
+      sha256: 88f76f0821993154a665c11cfeef25c4cd22a899d690d069adfc75b5c3248163
+      rule_count: 3
+  booking:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/booking.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/booking.list
+      sha256: 9543bb6909430754afc65cf8012f1cae811cf41fbdf8f9984701adcba179f44e
+      rule_count: 3
+  canva:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/canva.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/canva.list
+      sha256: c270f4a154e3c47a91b07743e63448b0228f060039c9fe52a22027de11522172
+      rule_count: 6
+  cursor:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cursor.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/cursor.list
+      sha256: 5c6d8418ed48e513a8b5697bea5948ee954fca9f5f683d5ee9234b1258111ad2
+      rule_count: 4
+  deepseek:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/deepseek.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/deepseek.list
+      sha256: 8cb505121e51b125ba96a1810880f2a1e9a08fb16e10a532b425160b1592fc75
+      rule_count: 2
+  dewu:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/dewu.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/dewu.list
+      sha256: 0238f43dc255f1f173fcfd9cf756e89dac238dd1c4de45dfbeb85c5e8ad4440a
+      rule_count: 45
+  doubao:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/doubao.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/doubao.list
+      sha256: 5afc8865ad4be7b541479d39af77f5c201278b637eedf8bf69380ae8c2deba27
+      rule_count: 32
+  elevenlabs:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/elevenlabs.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/elevenlabs.list
+      sha256: a0d591e381eb56c87a80e11ef818f17b4d3dc7edefca30470dd1d9c35b170346
+      rule_count: 2
+  feishu:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/feishu.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/feishu.list
+      sha256: e795720343bc19d960e581e10307930a420fc77427259fb85a2ea77e7ff91ae9
+      rule_count: 43
+  firebase:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/firebase.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/firebase.list
+      sha256: 673919cdf647d2bb21f38495a9667000fbd0fd2132ceb7dee6235cf419f0f55b
+      rule_count: 20
+  grok:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/xai.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/grok.list
+      sha256: 208c73e91d6ccf91724610d988d6d496a72b2a0069c2e7c576bc77307ff584c2
+      rule_count: 4
+  groq:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/groq.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/groq.list
+      sha256: c25618d6e673762890944bbccf594711322787bac1820a38e340f48b81fe0c5c
+      rule_count: 1
+  huggingface:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/huggingface.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/huggingface.list
+      sha256: 93ac108c376e42fab6faf0a6b436df1c57a3dfebfb09543c973709062df02bb5
+      rule_count: 3
+  messenger:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/messenger.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/messenger.list
+      sha256: 09a3b2dc0a2426405bcd2803dfcaf5d32994e5c78967de6f89f16386cc298f45
+      rule_count: 4
+  netlify:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netlify.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/netlify.list
+      sha256: e60a01dd5e231ca1b500053e53670965a8390577988ff6bc8fdc54ae315425cd
+      rule_count: 10
+  npm:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/npmjs.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/npm.list
+      sha256: e27d60f011f641b5ab767665eaa5f3e545b65faf0553c08384c5fde9570e259d
+      rule_count: 3
+  perplexity:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/perplexity.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/perplexity.list
+      sha256: 40fd3b126ec4ccd7becfa435c4f7d467e368171c2b3ee434ef1fc0183da42577
+      rule_count: 5
+  roblox:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/roblox.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/roblox.list
+      sha256: ce4b524f62f7f0bc8f1f1c4352b2d6ba747c997b346d73083b4699236aba0927
+      rule_count: 48
+  signal:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/signal.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/signal.list
+      sha256: 7dc2c0b361e59c8ad48e3fb0fd353396ec40d7998b7ff5f46b313e3a1aca95e0
+      rule_count: 8
+  snapchat:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/snap.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/snapchat.list
+      sha256: f08ed0cffb99b7d0ed6b6f719544a57eb9a1d3cc0d03b4f078235d311c538d20
+      rule_count: 9
+  tidal:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tidal.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/tidal.list
+      sha256: 07a4be8f14c82aa2e6e5ba3f5513f18888e75e0d9ce8189ad1a30a091d936978
+      rule_count: 3
+  trello:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/trello.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/trello.list
+      sha256: 21c7d0624c14fccb6c83c57196b4585313ecdd5bbfddf65c8c649f3a0508dd2a
+      rule_count: 2
+  uber:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/uber.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/uber.list
+      sha256: 8fdc8e508dd94b9d9d526e61863d458298507e94f3592743507d474a62237ad2
+      rule_count: 3
+  walmart:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/walmart.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/walmart.list
+      sha256: 3f0c3cf696182b9eaf13d132ef55e01f1b4df97e3c03aa1480413fd41190ccac
+      rule_count: 10
+  wise:
+    primary_source:
+      source: metacubex
+      url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/wise.list
+      verification: geosite_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_geosite_snapshots/2026-09-20/wise.list
+      sha256: 3d8d43b685c3323e007a041c8d41a24f0b5d65235324bb26a8eae67362c6663f
+      rule_count: 2

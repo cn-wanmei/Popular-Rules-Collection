@@ -1,0 +1,20 @@
+version: 1
+schema: p0_service_overlap_audit_v1
+batch: 4
+scope:
+  services:
+  - qq
+  - wecom
+  - tencentmeeting
+  - baidunetdisk
+  - youdao
+  - googlecloud
+  - bitbucket
+  - pypi
+  - youtubemusic
+  comparison_basis: canonical_rule_identity
+status: pass
+semantic_overlap:
+  status: pass
+  runtime_probe_count: 0
+  runtime_collisions: []
