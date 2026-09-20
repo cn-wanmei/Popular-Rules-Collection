@@ -193,3 +193,7 @@ def main() -> int:
     report = {"schema": "cross_client_semantic_v1", "pass": not failures, "passed": passed, "failures": failures}
     print(json.dumps(report, indent=2, ensure_ascii=False))
     return 0 if not failures else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
