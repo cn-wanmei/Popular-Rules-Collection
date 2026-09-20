@@ -1,0 +1,114 @@
+version: 1
+schema: p0_service_source_evidence_v1
+batch: source-bridge-01
+upstream:
+  id: popular-rules-source
+  repo: cn-wanmei/Popular-Rules-Source
+  role: rule_source
+services:
+  '1688':
+    provider: alibaba
+    primary_source:
+      source: popular-rules-source
+      url: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/1688/domains.txt
+      published_snapshot_id: snap-20260920T113055Z-1688-fc0a208b4287e19a
+      verification: official_domain_generation_snapshot_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_source_snapshots/2026-09-20/1688.list
+      sha256: 369db25f0eae539e99f9f375d7122791204bc7acc4cc99e5ad0056fb9818110d
+      rule_count: 18
+  cainiao:
+    provider: alibaba
+    primary_source:
+      source: popular-rules-source
+      url: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/cainiao/domains.txt
+      published_snapshot_id: snap-20260920T113103Z-cainiao-eb6d1d7b815bebd5
+      verification: official_domain_generation_snapshot_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_source_snapshots/2026-09-20/cainiao.list
+      sha256: 990d89f4ec8c3b762a2367858107ee0c999280d8ded7eef5f581ce60af7857a0
+      rule_count: 10
+  dingding:
+    provider: alibaba
+    primary_source:
+      source: popular-rules-source
+      url: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/dingding/domains.txt
+      published_snapshot_id: snap-20260920T113108Z-dingding-ad838cae62e6f773
+      verification: official_domain_generation_snapshot_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_source_snapshots/2026-09-20/dingding.list
+      sha256: 16518204c2d2339b06e09af4eb0383bd7d9390107f36ef20476aab1c6c20092a
+      rule_count: 8
+  qqmail:
+    provider: tencent
+    primary_source:
+      source: popular-rules-source
+      url: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/qqmail/domains.txt
+      published_snapshot_id: snap-20260920T113113Z-qqmail-5598879187d365db
+      verification: official_domain_generation_snapshot_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_source_snapshots/2026-09-20/qqmail.list
+      sha256: 3e9f51bec7b713ac0ce5348be327063b00caf936bdcd768bb2d6c8465ee78259
+      rule_count: 4
+  qqmusic:
+    provider: tencent
+    primary_source:
+      source: popular-rules-source
+      url: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/qqmusic/domains.txt
+      published_snapshot_id: snap-20260920T113118Z-qqmusic-69e2e34645c891f3
+      verification: official_domain_generation_snapshot_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_source_snapshots/2026-09-20/qqmusic.list
+      sha256: 362311ead23dbe763afa724ef9b621b87df4a90eea0f7c50c49e84f35a65a028
+      rule_count: 9
+  taobao:
+    provider: alibaba
+    primary_source:
+      source: popular-rules-source
+      url: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/taobao/domains.txt
+      published_snapshot_id: snap-20260920T113038Z-taobao-d25f0ce9db981b17
+      verification: official_domain_generation_snapshot_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_source_snapshots/2026-09-20/taobao.list
+      sha256: 1285da5dbf3ae65959fc60f0f3f337236a46535b3877dc078ae13cdec03d74ef
+      rule_count: 24
+  tencentcloud:
+    provider: tencent
+    primary_source:
+      source: popular-rules-source
+      url: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/tencentcloud/domains.txt
+      published_snapshot_id: snap-20260920T113122Z-tencentcloud-a5621eaf5b7e5af0
+      verification: official_domain_generation_snapshot_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_source_snapshots/2026-09-20/tencentcloud.list
+      sha256: 4026f24885a4afee86a3de7ad59936d80a03678d3285e9743b4d0b8fec50532b
+      rule_count: 12
+  tmall:
+    provider: alibaba
+    primary_source:
+      source: popular-rules-source
+      url: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/tmall/domains.txt
+      published_snapshot_id: snap-20260920T113059Z-tmall-c04c35475380528e
+      verification: official_domain_generation_snapshot_verified
+      observed_at: '2026-09-20'
+    immutable_snapshot:
+      status: complete
+      path: config/p0_source_snapshots/2026-09-20/tmall.list
+      sha256: 3e9cbee8dbfbd125ee0f9a73ff3abd2916a3341dbc872ca9005c2223e02d7603
+      rule_count: 14
+status: immutable_snapshot_complete
+next_required: execute semantic_and_overlap_audits; then seven_client via V3 run
