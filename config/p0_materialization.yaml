@@ -9,7 +9,7 @@ activation:
 services:
   - {id: appstore, provider: apple, region: global, source_hints: [blackmatrix7]}
   - {id: testflight, provider: apple, region: global, source_hints: [blackmatrix7]}
-  - {id: appledev, provider: apple, region: global, source_hints: [blackmatrix7]}
+  - {id: appledev, provider: apple, region: global, source_hints: [lm-firefly, blackmatrix7]}
   - {id: findmy, provider: apple, region: global, source_hints: [blackmatrix7]}
   - {id: qq, provider: tencent, region: domestic, source_hints: [blackmatrix7]}
   - {id: qqmusic, provider: tencent, region: domestic, source_hints: [blackmatrix7]}
