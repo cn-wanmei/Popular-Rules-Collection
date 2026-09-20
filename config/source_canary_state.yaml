@@ -6,8 +6,8 @@ state_machine:
   - production
 services:
   "1688":
-    state: verified
-    enabled: false
+    state: canary
+    enabled: true
     source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-1688-f26f96c5c0efb065ffbaab3, content_digest: f26f96c5c0efb065ffbaab3adf7821755d5406746bafaf41ffac035a0da4989c}
     attestation: {status: pending}
   cainiao:
