@@ -12,6 +12,7 @@ concurrency:
 
 jobs:
   status:
+    if: ${{ false }}
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion != 'cancelled' }}
     runs-on: ubuntu-latest
     permissions:
