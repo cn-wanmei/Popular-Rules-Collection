@@ -1,0 +1,28 @@
+version: 1
+schema: p0_service_overlap_audit_v1
+batch: 01+source-bridge
+purpose: Identity-level disjointness + matcher probe collision check for audited services.
+scope:
+  services:
+  - '1688'
+  - appledev
+  - appstore
+  - cainiao
+  - dingding
+  - findmy
+  - qqmail
+  - qqmusic
+  - taobao
+  - tencentcloud
+  - testflight
+  - tmall
+  comparison_basis: canonical_rule_identity
+status: pass
+identity_level_collisions: []
+semantic_overlap:
+  status: pass
+  runtime_probe_count: 60
+  runtime_collisions: []
+  note: Identity disjoint among current audited set; full 50-service overlap deferred
+    until remaining sources land.
+next_required: expand to full P0 50 as sources land; seven_client requires V3 materialization

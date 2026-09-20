@@ -1,0 +1,434 @@
+version: 1
+schema: p0_service_canonical_membership_v1
+batch: source-bridge-01
+purpose: Canonical membership from Popular-Rules-Source immutable domain snapshots.
+identity_function: sha256(lower(type)|lower(value))
+services:
+  '1688':
+    snapshot: config/p0_source_snapshots/2026-09-20/1688.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: 1688.com
+      identity_key: domain-suffix|1688.com
+      rule_id: 8632fd1c6003d1f72158d31ad1efaa359a5424d9c0945ed1931b81bb151bd300
+    - type: DOMAIN-SUFFIX
+      value: air.1688.com
+      identity_key: domain-suffix|air.1688.com
+      rule_id: b455272378c1931af14d4950a4d82ac3eacd548a5305c0ac39ac1556d26afc46
+    - type: DOMAIN-SUFFIX
+      value: buy.1688.com
+      identity_key: domain-suffix|buy.1688.com
+      rule_id: 31f24143bb284632c7613ef6dc64ad4fa88f20126d6c256217c12aeece73a144
+    - type: DOMAIN-SUFFIX
+      value: cart.1688.com
+      identity_key: domain-suffix|cart.1688.com
+      rule_id: 8e45d14b066aebbc5b4eb8e72a90bb9f4e50d6bdf48d72d706f14e674865226c
+    - type: DOMAIN-SUFFIX
+      value: detail.1688.com
+      identity_key: domain-suffix|detail.1688.com
+      rule_id: dd7b83c9f9a154f64e1ac0d148eb85c69c04b7300231e62d19832cd0fdcb5527
+    - type: DOMAIN-SUFFIX
+      value: fuwu.1688.com
+      identity_key: domain-suffix|fuwu.1688.com
+      rule_id: 1aeaa197e3e003bdc106733a70819b59ed1bb606e5d2302b42728c2690cd9f4d
+    - type: DOMAIN-SUFFIX
+      value: gw.open.1688.com
+      identity_key: domain-suffix|gw.open.1688.com
+      rule_id: 1e606007382428c5c83258f6c787cab70651a5af6464fd82e19c663fda8085b2
+    - type: DOMAIN-SUFFIX
+      value: login.1688.com
+      identity_key: domain-suffix|login.1688.com
+      rule_id: 929c8463c5aaeffc53fed57f062302b39a1b6bf3738caa0d631bdf6ddbc4f6e2
+    - type: DOMAIN-SUFFIX
+      value: m.1688.com
+      identity_key: domain-suffix|m.1688.com
+      rule_id: 9fdc07a17673ae5871d530ebbcffe1fb3a233748c4d15d3136ef901996a672a2
+    - type: DOMAIN-SUFFIX
+      value: member.1688.com
+      identity_key: domain-suffix|member.1688.com
+      rule_id: 0f7e18694e81fd6d4dd88723c50fb124c4b28c97cfac82309ccfe8d199f72394
+    - type: DOMAIN-SUFFIX
+      value: offer.1688.com
+      identity_key: domain-suffix|offer.1688.com
+      rule_id: 339a211ca90f59b4c021edf3a6dca3ccf6b748f4093f04d3d7cb01aad55ae422
+    - type: DOMAIN-SUFFIX
+      value: open.1688.com
+      identity_key: domain-suffix|open.1688.com
+      rule_id: a41eb720525a5e5b9f10f36667a6dc8d9c4c978e9b3819142aff2bc2b76e93ff
+    - type: DOMAIN-SUFFIX
+      value: order.1688.com
+      identity_key: domain-suffix|order.1688.com
+      rule_id: bf5edd4acc0d15117f63f3995afa82708a32d8a77be33264e2698232b019da5c
+    - type: DOMAIN-SUFFIX
+      value: page-open.1688.com
+      identity_key: domain-suffix|page-open.1688.com
+      rule_id: 76c03dd80b4c6f384c2489c4136cd6d0d68bc8d57987e67abd88e96e1b2827ae
+    - type: DOMAIN-SUFFIX
+      value: search.1688.com
+      identity_key: domain-suffix|search.1688.com
+      rule_id: ed86c07f00b2a2839e0e72f95c598fc9d640e037c8713d91fb6e7919e127c585
+    - type: DOMAIN-SUFFIX
+      value: trade.1688.com
+      identity_key: domain-suffix|trade.1688.com
+      rule_id: 42a93df0226e51376a8230265e5189bdafae2bcd32f02a1b51614c0f4bd5e31a
+    - type: DOMAIN-SUFFIX
+      value: winport.1688.com
+      identity_key: domain-suffix|winport.1688.com
+      rule_id: 3db0bd2dcad077d62be097b4b9259ceed86b72ceace8bd39c61012fbae2baea6
+    - type: DOMAIN-SUFFIX
+      value: www.1688.com
+      identity_key: domain-suffix|www.1688.com
+      rule_id: 45d7b391356527c266fe60f64d927143006119cf87a913c6b795758e3a01b4c3
+  cainiao:
+    snapshot: config/p0_source_snapshots/2026-09-20/cainiao.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: cainiao.com
+      identity_key: domain-suffix|cainiao.com
+      rule_id: c6f143b8b783f276ea06e3654f226028ec74369096b02ced6970a531e437f5d9
+    - type: DOMAIN-SUFFIX
+      value: express.cainiao.com
+      identity_key: domain-suffix|express.cainiao.com
+      rule_id: db26bb4f68b90de5a8802dc9b8a2c488565cbb129d51f5865ca8c9683089bbf6
+    - type: DOMAIN-SUFFIX
+      value: global.cainiao.com
+      identity_key: domain-suffix|global.cainiao.com
+      rule_id: 86b327de559b053633c577bfc83d5ea32cc361fbb926fd9f0f994cca645945fb
+    - type: DOMAIN-SUFFIX
+      value: gsls.cainiao.com
+      identity_key: domain-suffix|gsls.cainiao.com
+      rule_id: 6368393fc0674f6b3d751757a2aed5763eec62da32567aa6662190b79c6ae2e9
+    - type: DOMAIN-SUFFIX
+      value: link.cainiao.com
+      identity_key: domain-suffix|link.cainiao.com
+      rule_id: 2d8177acabf32a1c760509b5c1624109efeeeeec3e628b03defeabe0a7798fd2
+    - type: DOMAIN-SUFFIX
+      value: open.cainiao.com
+      identity_key: domain-suffix|open.cainiao.com
+      rule_id: 0687bb6c7738d4c4a0a3ed397bf60f7fef11a50104a9fb0b7114d6be4930f31d
+    - type: DOMAIN-SUFFIX
+      value: page.cainiao.com
+      identity_key: domain-suffix|page.cainiao.com
+      rule_id: f478501e9439cc0ba4f5fab3a95f8acf1a2ef15beb8324a73038f5c806d2f1ac
+    - type: DOMAIN-SUFFIX
+      value: tars.cainiao.com
+      identity_key: domain-suffix|tars.cainiao.com
+      rule_id: aee17d0ef09a8dac94e2be703f4b9b95cbf5af444e0dec68c851b7fb69748ac9
+    - type: DOMAIN-SUFFIX
+      value: www.cainiao.com
+      identity_key: domain-suffix|www.cainiao.com
+      rule_id: 5c551f0b2b22b30feb228508876b4ef049b09a02b7ba46ba01bd8987f2340956
+    - type: DOMAIN-SUFFIX
+      value: yugong.cainiao.com
+      identity_key: domain-suffix|yugong.cainiao.com
+      rule_id: cfe7d21da5222eb7e594c7c16ca19de59be9d704678e76349122f7aec422bde8
+  dingding:
+    snapshot: config/p0_source_snapshots/2026-09-20/dingding.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: api.dingtalk.com
+      identity_key: domain-suffix|api.dingtalk.com
+      rule_id: 80494baed01e317f8aedf60711a90c1e64d38614ba4f9efa3e0cc890f7d69655
+    - type: DOMAIN-SUFFIX
+      value: h5.dingtalk.com
+      identity_key: domain-suffix|h5.dingtalk.com
+      rule_id: 65dbf80fa6f52611745fbe15c9ad73f2e37ccbae8cade28ee802c0da2f595c15
+    - type: DOMAIN-SUFFIX
+      value: login.dingtalk.com
+      identity_key: domain-suffix|login.dingtalk.com
+      rule_id: edca84f312c4e9eed00dd4dd1f62b6f032fba74257f6b446bf4b2e1e4bc7b741
+    - type: DOMAIN-SUFFIX
+      value: oapi.dingtalk.com
+      identity_key: domain-suffix|oapi.dingtalk.com
+      rule_id: 1add608b02fabbbed7d7d5db69bea87cc5e308d922b36b7fd96ab95a5ec2604b
+    - type: DOMAIN-SUFFIX
+      value: open.dingtalk.com
+      identity_key: domain-suffix|open.dingtalk.com
+      rule_id: efe48f8cbb6f056ef447618b0eed97abeab78efedd9b3c6d2e4b8a1d52135372
+    - type: DOMAIN-SUFFIX
+      value: page.dingtalk.com
+      identity_key: domain-suffix|page.dingtalk.com
+      rule_id: 8dc7c129e1d42288a7428b96327b518a877fa9ae53b43debbab645109de19160
+    - type: DOMAIN-SUFFIX
+      value: table.dingtalk.com
+      identity_key: domain-suffix|table.dingtalk.com
+      rule_id: f74c38c5061a55746ff1865970af4dda2ce291c712dcf197355b46c5c0dd5c73
+    - type: DOMAIN-SUFFIX
+      value: www.dingtalk.com
+      identity_key: domain-suffix|www.dingtalk.com
+      rule_id: a9d5b308a3fe57cae3ee316b584db1cec4a1a389536ee903793be220300f2550
+  qqmail:
+    snapshot: config/p0_source_snapshots/2026-09-20/qqmail.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: imap.qq.com
+      identity_key: domain-suffix|imap.qq.com
+      rule_id: cdbbc4a8e06abd5c074cda6afe1a2080c8da90d4891acbea5d3cbd335d1330d3
+    - type: DOMAIN-SUFFIX
+      value: mail.qq.com
+      identity_key: domain-suffix|mail.qq.com
+      rule_id: 7fb1f0f20c4567b4d0a05c983912b04ff16bcbd9ce67e6f007d97417b5104705
+    - type: DOMAIN-SUFFIX
+      value: pop.qq.com
+      identity_key: domain-suffix|pop.qq.com
+      rule_id: e5719b51e19507dd52f082a127779a6d0d7f88385d0544c170083b2ca8dbbba3
+    - type: DOMAIN-SUFFIX
+      value: smtp.qq.com
+      identity_key: domain-suffix|smtp.qq.com
+      rule_id: a41e08967336e141fe479b797e129e4935c139b2e284f5d9ce8d9c8045594312
+  qqmusic:
+    snapshot: config/p0_source_snapshots/2026-09-20/qqmusic.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: ad.y.qq.com
+      identity_key: domain-suffix|ad.y.qq.com
+      rule_id: 42b48e807d760aef5d917351ceba10649e25182d57d15e3b1a808853c657f1f3
+    - type: DOMAIN-SUFFIX
+      value: c.y.qq.com
+      identity_key: domain-suffix|c.y.qq.com
+      rule_id: fd58bb7ed9a67cbd876b3b176c5638ee96950081f15d32c5176b80d244d9dcca
+    - type: DOMAIN-SUFFIX
+      value: dl.y.qq.com
+      identity_key: domain-suffix|dl.y.qq.com
+      rule_id: 285dd5c857e71a577815866e3265bf06633f3f288c2e1eb6cbdc33fc3d748fe5
+    - type: DOMAIN-SUFFIX
+      value: i.y.qq.com
+      identity_key: domain-suffix|i.y.qq.com
+      rule_id: aea763b9979eaa1f64fc02eeaabe43afaa523709f5fa26ebbc48e3f03d48f9f1
+    - type: DOMAIN-SUFFIX
+      value: kg.y.qq.com
+      identity_key: domain-suffix|kg.y.qq.com
+      rule_id: ebc8b573cbb68df655e100793679fe23df2f9d1789569f17eaaa396253a35ca7
+    - type: DOMAIN-SUFFIX
+      value: res.y.qq.com
+      identity_key: domain-suffix|res.y.qq.com
+      rule_id: c62db912776ca6f9301c8103aad2557a247571beda86f6af0e9edd378d0c9951
+    - type: DOMAIN-SUFFIX
+      value: stat.y.qq.com
+      identity_key: domain-suffix|stat.y.qq.com
+      rule_id: f1c9a15f6cbdb5c0b4c82970c6aaf17bc6c54d8b21c4b9b2a767fe1266950f8b
+    - type: DOMAIN-SUFFIX
+      value: u.y.qq.com
+      identity_key: domain-suffix|u.y.qq.com
+      rule_id: 36f2f93037804d40088cd58ec8efcf3553027c5ce60b9e81f5870ddc1b89716b
+    - type: DOMAIN-SUFFIX
+      value: y.qq.com
+      identity_key: domain-suffix|y.qq.com
+      rule_id: 9402b9bb44036db0eb46d2a2f113c83c031ac654fc4ffb13369a6acbdd9bb91e
+  taobao:
+    snapshot: config/p0_source_snapshots/2026-09-20/taobao.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: 2.taobao.com
+      identity_key: domain-suffix|2.taobao.com
+      rule_id: ffa319222f8c912b1248676c181b0c481ec7b4c1947f2aa9555cc4532d986b47
+    - type: DOMAIN-SUFFIX
+      value: bbs.taobao.com
+      identity_key: domain-suffix|bbs.taobao.com
+      rule_id: 5e2f5c570744e1ce1528ca3b9931651472df4a0748c67230f5faacc4563360fd
+    - type: DOMAIN-SUFFIX
+      value: buy.taobao.com
+      identity_key: domain-suffix|buy.taobao.com
+      rule_id: 8028b5518ea83e7d7bbcbdb70932de2833b198f5b14cc66022ccea5255fe6981
+    - type: DOMAIN-SUFFIX
+      value: cart.taobao.com
+      identity_key: domain-suffix|cart.taobao.com
+      rule_id: bcc2369dfacd6b5262a4d438dbb91f34464d197b3516a32464cd1279d0db6d03
+    - type: DOMAIN-SUFFIX
+      value: eco.taobao.com
+      identity_key: domain-suffix|eco.taobao.com
+      rule_id: 7496094c20843860b8fea94e0659240295bdbabe2d882038f7151583265142c8
+    - type: DOMAIN-SUFFIX
+      value: favorite.taobao.com
+      identity_key: domain-suffix|favorite.taobao.com
+      rule_id: a5fcff1d079168444a452ca0e60a41b84a70f3f64335094aea8884cda3e7e706
+    - type: DOMAIN-SUFFIX
+      value: goods.taobao.com
+      identity_key: domain-suffix|goods.taobao.com
+      rule_id: f30ec117b1a3a43a0b15739d27cd157531f913e2a5a76b8dd52e0a9cbccd5ca7
+    - type: DOMAIN-SUFFIX
+      value: gw.api.taobao.com
+      identity_key: domain-suffix|gw.api.taobao.com
+      rule_id: c999b471756edfe6e921aebd89bf9f586eb9e2688ad87f580811df221bac7ca3
+    - type: DOMAIN-SUFFIX
+      value: h5.m.taobao.com
+      identity_key: domain-suffix|h5.m.taobao.com
+      rule_id: ba7dfd1cb6c1e4bde40f4f960f0e9ed174e2fa6f078d2d343a226fffb733a473
+    - type: DOMAIN-SUFFIX
+      value: huodong.taobao.com
+      identity_key: domain-suffix|huodong.taobao.com
+      rule_id: 1fe7b8f73a25a3d7da740b44979960bb49bf8363d2ebe50fb3884145d10d5a6a
+    - type: DOMAIN-SUFFIX
+      value: i.taobao.com
+      identity_key: domain-suffix|i.taobao.com
+      rule_id: ba95f6155b5174c1ba0927e5e0a629c7c828dd220ada33708264b09f9cecd0b6
+    - type: DOMAIN-SUFFIX
+      value: item.taobao.com
+      identity_key: domain-suffix|item.taobao.com
+      rule_id: fe10e42ead8f220d4304e8e42de687f88e7c0e1a768ef128691b6fc458960beb
+    - type: DOMAIN-SUFFIX
+      value: login.taobao.com
+      identity_key: domain-suffix|login.taobao.com
+      rule_id: f550b837000c8ca90a476e678054b3094f90eff156e92b51a4181de3b99725dc
+    - type: DOMAIN-SUFFIX
+      value: m.taobao.com
+      identity_key: domain-suffix|m.taobao.com
+      rule_id: feb50c0a75d2582d9f15c9e156f946ca2617b8cdddf8b672f369ff5039b00937
+    - type: DOMAIN-SUFFIX
+      value: oauth.taobao.com
+      identity_key: domain-suffix|oauth.taobao.com
+      rule_id: e70e746f341df50a1a2c453aba8d75434a63cb9f9925ef34614c44db26fe7b8e
+    - type: DOMAIN-SUFFIX
+      value: open.taobao.com
+      identity_key: domain-suffix|open.taobao.com
+      rule_id: 76299e3a1e13252732275d9ded256e0862423d5f6f46c353da51599207b24198
+    - type: DOMAIN-SUFFIX
+      value: pc.taobao.com
+      identity_key: domain-suffix|pc.taobao.com
+      rule_id: 86c3f47dd9995b802cb29eeceaf9c9a844a39d4132f3746227296e55d48c95fe
+    - type: DOMAIN-SUFFIX
+      value: pcdetail.taobao.com
+      identity_key: domain-suffix|pcdetail.taobao.com
+      rule_id: b39d2c66635da0136122ffe958f166604778a84d2dc2e643b170eae5e2718753
+    - type: DOMAIN-SUFFIX
+      value: s.taobao.com
+      identity_key: domain-suffix|s.taobao.com
+      rule_id: 17f3102be281313c1bb653b1a0467956b14dfbe3b25a0e9e1b5889e8382444b2
+    - type: DOMAIN-SUFFIX
+      value: taobao.com
+      identity_key: domain-suffix|taobao.com
+      rule_id: 92a624ab41d4c9eb1c2b1b8da86a97eb4666ea42245091ff62ec3537fb59ef42
+    - type: DOMAIN-SUFFIX
+      value: trade.taobao.com
+      identity_key: domain-suffix|trade.taobao.com
+      rule_id: 54a8bc82ef1d2cfc55a47a6b583d7066a2aefad47c7728dbfddca88dcb7fc562
+    - type: DOMAIN-SUFFIX
+      value: web.m.taobao.com
+      identity_key: domain-suffix|web.m.taobao.com
+      rule_id: 388391c8cafbdd1a929ad39131c505bf42e48f8c005e50549cd220198c88f19f
+    - type: DOMAIN-SUFFIX
+      value: world.taobao.com
+      identity_key: domain-suffix|world.taobao.com
+      rule_id: f4176771789d554431b522acea9d1957866d5088fed25d4406a2266ed9573dff
+    - type: DOMAIN-SUFFIX
+      value: www.taobao.com
+      identity_key: domain-suffix|www.taobao.com
+      rule_id: 851052e50374650dac3da11577a53d88b0c520ec957874221fe3739ed29c016f
+  tencentcloud:
+    snapshot: config/p0_source_snapshots/2026-09-20/tencentcloud.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: bill.cloud.tencent.com
+      identity_key: domain-suffix|bill.cloud.tencent.com
+      rule_id: be6a9646f53836a16c6f6aa1d0967ddf52dc511ab37fdf1cc62bf761d05fbab4
+    - type: DOMAIN-SUFFIX
+      value: buy.cloud.tencent.com
+      identity_key: domain-suffix|buy.cloud.tencent.com
+      rule_id: 2f3d419c08f679b5a4064bdd2e37e2eeb3f98c587e1a5d7e30dc915d54634c88
+    - type: DOMAIN-SUFFIX
+      value: capi.cloud.tencent.com
+      identity_key: domain-suffix|capi.cloud.tencent.com
+      rule_id: bb88bd1ed3f0790017cd75a283c8d1598e64474e11b143b5e62225bcd204288a
+    - type: DOMAIN-SUFFIX
+      value: cloud.tencent.com
+      identity_key: domain-suffix|cloud.tencent.com
+      rule_id: cda28c18797da9ba0884e8789d67818441c0ec4e2fc991744baa4fdfce22c22d
+    - type: DOMAIN-SUFFIX
+      value: console.cloud.tencent.com
+      identity_key: domain-suffix|console.cloud.tencent.com
+      rule_id: 600838e3141e4ec2959f2e15cc6a988da8abc0d9c2fc17183cb124ff3abddd90
+    - type: DOMAIN-SUFFIX
+      value: dnspod.cloud.tencent.com
+      identity_key: domain-suffix|dnspod.cloud.tencent.com
+      rule_id: 34a7cbacb6fa212fdc8f29a4089cc10b4bf783ad25e9d749baab739c5050f934
+    - type: DOMAIN-SUFFIX
+      value: iaas.cloud.tencent.com
+      identity_key: domain-suffix|iaas.cloud.tencent.com
+      rule_id: a603ad21f231c60ddfeb6f4e96702c664222326fd981ba7c9c50d78140863e34
+    - type: DOMAIN-SUFFIX
+      value: ide.cloud.tencent.com
+      identity_key: domain-suffix|ide.cloud.tencent.com
+      rule_id: 04d0ce8ce5ffa1d2a6369b6dca8cd93dcee0c0893d8a9f400f8acd5e6588ee17
+    - type: DOMAIN-SUFFIX
+      value: market.cloud.tencent.com
+      identity_key: domain-suffix|market.cloud.tencent.com
+      rule_id: 1cda503071d5f6ee26235ee67d19a535b40f2a420eb9d20d09cdb7e4db29d240
+    - type: DOMAIN-SUFFIX
+      value: mps.cloud.tencent.com
+      identity_key: domain-suffix|mps.cloud.tencent.com
+      rule_id: 8234f5895abcf64651de42f47ea991855bc378c471ad0a113cdd16e5a86a529a
+    - type: DOMAIN-SUFFIX
+      value: tcb.cloud.tencent.com
+      identity_key: domain-suffix|tcb.cloud.tencent.com
+      rule_id: aa019f3eec2ddb2afd1d7b02718685986fda06cdd9be891ebcdf4050e905f45d
+    - type: DOMAIN-SUFFIX
+      value: tencentcloudapi.com
+      identity_key: domain-suffix|tencentcloudapi.com
+      rule_id: 404a012fdce3573219ce095db8578c214e3e88435ea5f3ef2434411ecc6c263d
+  tmall:
+    snapshot: config/p0_source_snapshots/2026-09-20/tmall.list
+    status: complete
+    memberships:
+    - type: DOMAIN-SUFFIX
+      value: book.tmall.com
+      identity_key: domain-suffix|book.tmall.com
+      rule_id: 74c7409ab0589fe34c045a129443be488c005b5df222e3976a42b2f2e914f8cb
+    - type: DOMAIN-SUFFIX
+      value: buy.tmall.com
+      identity_key: domain-suffix|buy.tmall.com
+      rule_id: 4e3a88cd76153e27736b85f31d0a58d80fd804c6a00aded33a3c603038ccb9e1
+    - type: DOMAIN-SUFFIX
+      value: car.tmall.com
+      identity_key: domain-suffix|car.tmall.com
+      rule_id: 0c042596efb8871b14d89ae4cd60e0a5cb155a45e5f7fc7bc720dee93aa6a0d2
+    - type: DOMAIN-SUFFIX
+      value: cart.tmall.com
+      identity_key: domain-suffix|cart.tmall.com
+      rule_id: 62dbcd01180e08803eb414b88415a3829dfa97ee0eece9f391f9f49c96f0bac5
+    - type: DOMAIN-SUFFIX
+      value: chaoshi.tmall.com
+      identity_key: domain-suffix|chaoshi.tmall.com
+      rule_id: 7490dcd95a8333d8f7e70241f408c4fc36d3a0369976af302665032143f9b0ea
+    - type: DOMAIN-SUFFIX
+      value: detail.tmall.com
+      identity_key: domain-suffix|detail.tmall.com
+      rule_id: ae83dff664d4943d4213c5ab0aa5f1d62fc5f7c8d8146000f8dee9760a52d2de
+    - type: DOMAIN-SUFFIX
+      value: fragment.tmall.com
+      identity_key: domain-suffix|fragment.tmall.com
+      rule_id: 2b14788e98b8b4ab6387fdc25baf3e58ef4a9a790afa0d1c487785332ec40e6d
+    - type: DOMAIN-SUFFIX
+      value: list.tmall.com
+      identity_key: domain-suffix|list.tmall.com
+      rule_id: 96693d61d6adc688c19c770ef9ef3276b76cf1757d1397a02c54f2d60366a9ce
+    - type: DOMAIN-SUFFIX
+      value: login.tmall.com
+      identity_key: domain-suffix|login.tmall.com
+      rule_id: cc0dfc6811ce2769e012572ed863a01b75d6133a5084f5344d721dc0328ee6bd
+    - type: DOMAIN-SUFFIX
+      value: m.tmall.com
+      identity_key: domain-suffix|m.tmall.com
+      rule_id: a0ecdbf6d9082ee4603fad73fbb8179cf78101a22bcab0c1c0ac555905dafd97
+    - type: DOMAIN-SUFFIX
+      value: pages.tmall.com
+      identity_key: domain-suffix|pages.tmall.com
+      rule_id: 2bee593acfbf9ca98adf40e8df24ca32ff0736892c3eec519d1ab2c265d3559c
+    - type: DOMAIN-SUFFIX
+      value: tmall.com
+      identity_key: domain-suffix|tmall.com
+      rule_id: 1684e0f49d78aa11720d1c3e5c0869b3b30c8dd2ecd2eb83ac2c5f7aa311499b
+    - type: DOMAIN-SUFFIX
+      value: tw.tmall.com
+      identity_key: domain-suffix|tw.tmall.com
+      rule_id: ef50c470a9da939bf3e28d25cbf042a487c8ac6ca5b73e98c35bd73506fec752
+    - type: DOMAIN-SUFFIX
+      value: www.tmall.com
+      identity_key: domain-suffix|www.tmall.com
+      rule_id: 1d5571424984cbbc3aeb9f782dfa79903ca51ad61f269405983862b3f717dfa8
