@@ -1,0 +1,81 @@
+name: Phase 2 Source Canary
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "config/source_promotion_policy.yaml"
+      - "config/service_primary.yaml"
+      - "config/service_primary_extra.yaml"
+      - "config/ruleset_hierarchy.yaml"
+      - "config/client_capability_matrix.yaml"
+      - "scripts/phase2_source_canary.py"
+      - "src/engine/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-canary:
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.number == 121
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.lock
+
+      - name: Install locked dependencies
+        run: python -m pip install -r requirements.lock
+
+      - name: Resolve and verify Source PR commit
+        id: source
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          payload="$(curl -fsSL             -H "Authorization: Bearer ${GH_TOKEN}"             -H "Accept: application/vnd.github+json"             "https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/pulls/2")
+          sha="$(printf '%s' "${payload}" | python -c 'import json,sys; print(json.load(sys.stdin)["head"]["sha"])')"
+          printf 'sha=%s\n' "${sha}" >> "${GITHUB_OUTPUT}"
+
+          checks="$(curl -fsSL             -H "Authorization: Bearer ${GH_TOKEN}"             -H "Accept: application/vnd.github+json"             "https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/commits/${sha}/check-runs?per_page=100")"
+          printf '%s' "${checks}" | python -c '
+          import json, sys
+          data = json.load(sys.stdin)
+          needed = {"CI", "Phase 2 Source Gate"}
+          observed = {x["name"]: x.get("conclusion") for x in data.get("check_runs", []) if x.get("name") in needed}
+          print(json.dumps(observed, ensure_ascii=False, sort_keys=True))
+          missing = sorted(needed - observed.keys())
+          bad = sorted(name for name, conclusion in observed.items() if conclusion != "success")
+          if missing or bad:
+              raise SystemExit(f"Source PR #2 is not green for {data!r}; missing={missing}, bad={bad}")
+          '
+
+      - name: Checkout exact Source commit
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          repository: cn-wanmei/Popular-Rules-Source
+          ref: ${{ steps.source.outputs.sha }}
+          path: .phase2/source
+          fetch-depth: 1
+
+      - name: Verify Source exact commit
+        run: |
+          test "$(git -C .phase2/source rev-parse HEAD)" = "${{ steps.source.outputs.sha }}"
+
+      - name: Run per-service Source → V3 canary and rollback rehearsal
+        run: |
+          PYTHONPATH=. python scripts/phase2_source_canary.py             --source-root .phase2/source             --source-commit "${{ steps.source.outputs.sha }}"             --output reports/phase2-canary
+
+      - name: Upload canary evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase2-source-canary-${{ github.event.pull_request.head.sha || github.sha }}
+          path: reports/phase2-canary
+          if-no-files-found: error
+          retention-days: 30
