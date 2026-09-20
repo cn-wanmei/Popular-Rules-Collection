@@ -3,6 +3,11 @@ name: Collect Upstream
 on:
   schedule:
     - cron: "0 22 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "sources/registry.yaml"
+      - "sources/lifecycle.yaml"
   workflow_dispatch:
     inputs:
       skip_large:
