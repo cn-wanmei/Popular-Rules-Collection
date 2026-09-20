@@ -36,3 +36,25 @@ def test_unrelated_services_remain_pass_when_overlap_exists_elsewhere():
     assert service_overlap_audit('service-b', overlap)['status'] == 'blocked'
     assert service_overlap_audit('service-c', overlap)['status'] == 'pass'
     assert service_overlap_audit('service-c', overlap)['collisions'] == []
+
+
+def test_find_source_prefers_rule_list_within_same_hint(tmp_path: Path):
+    backup = tmp_path / 'backup' / '2026-09-20' / 'sources' / 'blackmatrix7'
+    backup.mkdir(parents=True)
+    (backup / 'Clash_AppStore.yaml').write_text('payload:\n  - DOMAIN,apps.apple.com\n', encoding='utf-8')
+    (backup / 'QuantumultX_AppStore.list').write_text('HOST,apps.apple.com\n', encoding='utf-8')
+    found = find_source(tmp_path, 'appstore', ['blackmatrix7'])
+    assert found is not None
+    assert found.name == 'QuantumultX_AppStore.list'
+
+
+def test_find_source_honors_verified_provider_hint_order(tmp_path: Path):
+    blackmatrix = tmp_path / 'backup' / '2026-09-20' / 'sources' / 'blackmatrix7'
+    firefly = tmp_path / 'backup' / '2026-09-20' / 'sources' / 'lm-firefly'
+    blackmatrix.mkdir(parents=True)
+    firefly.mkdir(parents=True)
+    (blackmatrix / 'Clash_AppleDev.yaml').write_text('payload:\n  - DOMAIN,developer.apple.com\n', encoding='utf-8')
+    (firefly / 'LM_Firefly_AppleDev.list').write_text('DOMAIN-SUFFIX,developer.apple.com\n', encoding='utf-8')
+    found = find_source(tmp_path, 'appledev', ['lm-firefly', 'blackmatrix7'])
+    assert found is not None
+    assert found.name == 'LM_Firefly_AppleDev.list'
