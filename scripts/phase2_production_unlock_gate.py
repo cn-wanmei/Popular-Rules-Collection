@@ -98,6 +98,13 @@ def qualify(
         failures.append(f"{service_id}: attestation/source report commit mismatch")
 
     canary = canary_report.get("canary") or {}
+    semantic = canary.get("semantic") or {}
+    if len(semantic.get("passed_clients") or []) != 7:
+        failures.append(f"{service_id}: seven-client semantic did not report exactly 7 passed clients")
+    if sorted(semantic.get("passed_clients") or []) != [
+        "egern", "loon", "mihomo", "quantumultx", "shadowrocket", "singbox", "surge"
+    ]:
+        failures.append(f"{service_id}: seven-client semantic client set is incomplete or unexpected")
     if (canary.get("reconciliation") or {}).get("status") != "PASS":
         failures.append(f"{service_id}: canary reconciliation status is not PASS")
     if (canary.get("semantic") or {}).get("pass") is not True:
