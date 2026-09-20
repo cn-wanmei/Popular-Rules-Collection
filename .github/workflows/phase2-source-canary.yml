@@ -180,7 +180,7 @@ jobs:
         if: steps.services.outputs.count == '0'
         run: |
           mkdir -p reports/phase2-canary
-          printf '%s\\n' '{"schema":"phase2_canary_summary_v1","all_pass":true,"verified_count":0,"canary_pass_count":0,"production_ready_count":0,"services":{},"failures":{},"note":"No service is activated for Canary."}' \\
+          printf '%s\n' '{"schema":"phase2_canary_summary_v1","all_pass":true,"verified_count":0,"canary_pass_count":0,"production_ready_count":0,"services":{},"failures":{},"note":"No service is activated for Canary."}' \\
             > reports/phase2-canary/summary.json
 
       - name: Build non-promoting Canary attestation evidence
