@@ -13,6 +13,10 @@ on:
       - "tests/**"
   workflow_dispatch:
 
+concurrency:
+  group: phase2-Popular-Rules-Collection--github-workflows-phase2-source-gate-yml-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
