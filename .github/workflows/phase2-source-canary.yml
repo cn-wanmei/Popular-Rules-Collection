@@ -12,6 +12,11 @@ on:
       - "scripts/phase2_source_canary.py"
       - "src/engine/**"
   workflow_dispatch:
+    inputs:
+      service:
+        description: "Single service to canary; must be state=canary and enabled=true"
+        required: false
+        type: string
 
 permissions:
   contents: read
@@ -74,9 +79,52 @@ jobs:
         run: |
           test "$(git -C .phase2/source rev-parse HEAD)" = "${{ steps.source.outputs.sha }}"
 
-      - name: Run per-service Source → V3 canary and rollback rehearsal
+      - name: Resolve activated service set
+        id: services
+        shell: bash
         run: |
-          PYTHONPATH=. python scripts/phase2_source_canary.py             --source-root .phase2/source             --source-commit "${{ steps.source.outputs.sha }}"             --output reports/phase2-canary
+          set -euo pipefail
+          python - <<'PY'
+          import os, yaml
+          requested = os.environ.get("REQUESTED_SERVICE", "").strip()
+          with open("config/source_canary_state.yaml", encoding="utf-8") as fh:
+              data = yaml.safe_load(fh) or {}
+          services = data.get("services") or {}
+          if requested:
+              item = services.get(requested) or {}
+              if item.get("state") != "canary" or item.get("enabled") is not True:
+                  raise SystemExit(f"{requested}: service must be state=canary and enabled=true")
+              selected = [requested]
+          else:
+              selected = sorted(
+                  sid for sid, item in services.items()
+                  if isinstance(item, dict)
+                  and item.get("state") == "canary"
+                  and item.get("enabled") is True
+              )
+          print("selected:", selected)
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
+              out.write("services=" + " ".join(selected) + "\n")
+              out.write("count=" + str(len(selected)) + "\n")
+          PY
+        env:
+          REQUESTED_SERVICE: ${{ inputs.service }}
+
+      - name: Run selected Source → V3 canary and rollback rehearsal
+        if: steps.services.outputs.count != '0'
+        run: |
+          PYTHONPATH=. python scripts/phase2_source_canary.py \
+            --source-root .phase2/source \
+            --source-commit "${{ steps.source.outputs.sha }}" \
+            --services ${{ steps.services.outputs.services }} \
+            --output reports/phase2-canary
+
+      - name: No active service
+        if: steps.services.outputs.count == '0'
+        run: |
+          mkdir -p reports/phase2-canary
+          printf '%s\n' '{"schema":"phase2_canary_summary_v1","all_pass":true,"verified_count":0,"canary_pass_count":0,"production_ready_count":0,"services":{},"failures":{},"note":"No service is activated for Canary."}' \
+            > reports/phase2-canary/summary.json
 
       - name: Upload canary evidence
         uses: actions/upload-artifact@v4
