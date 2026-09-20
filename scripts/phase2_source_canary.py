@@ -16,6 +16,7 @@ import yaml
 
 from src.engine.pipeline import STAGES, run_pipeline
 from src.engine.promote.artifact import promote_run, rollback_to_run
+from scripts.phase2_collection_reconciliation import reconcile_service
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -248,6 +249,20 @@ def canary_service(service_id: str, source_root: Path, source_commit: str, base_
 
     runs_root = data_root / "runs"
     semantic_report, semantic_run_id = _run_semantic_check(runs_root / run_two)
+    reconciliation = reconcile_service(
+        service_id=service_id,
+        source_root=source_root,
+        canary_root=service_dir,
+        source_commit=source_commit,
+        v3_run_id=run_two,
+        snapshot_id=str(snapshot.get("snapshot_id") or ""),
+    )
+    reconciliation_dir = service_dir / "reconciliation"
+    reconciliation_dir.mkdir(parents=True, exist_ok=True)
+    (reconciliation_dir / "report.json").write_text(
+        json.dumps(reconciliation, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
     generated_root.mkdir(parents=True, exist_ok=True)
     baseline = data_root / "baseline" / "canonical.json"
     promote_one = promote_run(runs_root / run_one, generated_root, baseline_path=baseline)
@@ -285,6 +300,8 @@ def canary_service(service_id: str, source_root: Path, source_commit: str, base_
                 "failure_count": len(semantic_report.get("failures") or []),
             },
             "semantic_run_id": semantic_run_id,
+            "reconciliation_run_id": reconciliation["run_id"],
+            "reconciliation": reconciliation,
         },
         "rollback": {
             "first_run": run_one,
@@ -295,7 +312,11 @@ def canary_service(service_id: str, source_root: Path, source_commit: str, base_
             "restored_run": latest.get("run_id"),
             "pass": latest.get("run_id") == run_one,
         },
-        "production_ready": bool(semantic_report.get("pass") is True and latest.get("run_id") == run_one),
+        "production_ready": bool(
+            semantic_report.get("pass") is True
+            and reconciliation.get("status") == "PASS"
+            and latest.get("run_id") == run_one
+        ),
     }
     out = service_dir / "report.json"
     out.write_text(json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
@@ -338,7 +359,10 @@ def main() -> int:
         "verified_count": sum(1 for item in results.values() if item.get("verified")),
         "canary_pass_count": sum(
             1 for item in results.values()
-            if item.get("canary", {}).get("v3_golden") and item.get("rollback", {}).get("pass")
+            if item.get("canary", {}).get("v3_golden")
+            and item.get("canary", {}).get("semantic", {}).get("pass") is True
+            and item.get("canary", {}).get("reconciliation", {}).get("status") == "PASS"
+            and item.get("rollback", {}).get("pass")
         ),
         "production_ready_count": sum(1 for item in results.values() if item.get("production_ready")),
         "all_pass": not failures and len(results) == len(args.services),
