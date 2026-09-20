@@ -55,10 +55,23 @@ def main() -> int:
             errors.append(f"{sid}: {stage} requires enabled=true")
         if stage in {"review", "verified"} and enabled:
             errors.append(f"{sid}: {stage} must keep enabled=false")
-        if stage in {"canary", "production"}:
+        attestation = item.get("attestation") or {}
+        attestation_status = str(attestation.get("status", "pending")).lower()
+
+        if stage == "canary":
+            if attestation_status not in {"pending", "passed"}:
+                errors.append(f"{sid}: canary invalid attestation status {attestation_status}")
+            if attestation_status == "passed":
+                for field in REQUIRED_CANARY_FIELDS:
+                    if not str(attestation.get(field, "")).strip():
+                        errors.append(f"{sid}: canary passed missing attestation field {field}")
+
+        if stage == "production":
+            if attestation_status != "passed":
+                errors.append(f"{sid}: production requires attestation.status=passed")
             for field in REQUIRED_CANARY_FIELDS:
-                if not str(item.get(field, "")).strip():
-                    errors.append(f"{sid}: {stage} missing attestation field {field}")
+                if not str(attestation.get(field, "")).strip():
+                    errors.append(f"{sid}: production missing attestation field {field}")
 
     result = {
         "schema": "source_canary_state_gate_v1",
