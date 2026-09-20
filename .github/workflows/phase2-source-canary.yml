@@ -18,6 +18,10 @@ on:
         required: false
         type: string
 
+concurrency:
+  group: phase2-Popular-Rules-Collection--github-workflows-phase2-source-canary-yml-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
