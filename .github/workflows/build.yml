@@ -9,6 +9,7 @@ on:
       - "scripts/cross_client_semantic_test.py"
       - "scripts/architecture_gate.py"
       - "scripts/phase_j_p0_service_evidence.py"
+      - "scripts/derive_service_production_evidence.py"
       - "config/**"
       - "rule/**"
       - "src/engine/v1/**"
