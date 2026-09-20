@@ -45,3 +45,5 @@ services:
     enabled: false
     source_verification: {run: 35519069151, source_commit: 77116637e9b82b47a5792ed74556ad8102ea45da, snapshot_id: snap-tmall-8b9440f7ab1276cb895eefbc, content_digest: 8b9440f7ab1276cb895eefbc4f16e3f6ff2e62f108910899fe705b8d820e49df}
     attestation: {status: pending}
+
+# phase2-canary-trigger
