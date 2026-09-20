@@ -116,7 +116,7 @@ jobs:
               time.sleep(20)
 
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
-              out.write(f"sha={sha}\\n")
+              out.write(f"sha={sha}\n")
           PY
       - name: Checkout exact Source commit
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
@@ -155,8 +155,8 @@ jobs:
               )
           print("selected:", selected)
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
-              out.write("services=" + " ".join(selected) + "\\n")
-              out.write("count=" + str(len(selected)) + "\\n")
+              out.write("services=" + " ".join(selected) + "\n")
+              out.write("count=" + str(len(selected)) + "\n")
           PY
         env:
           REQUESTED_SERVICE: ${{ inputs.service }}
