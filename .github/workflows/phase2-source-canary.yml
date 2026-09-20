@@ -1,5 +1,5 @@
 name: Phase 2 Source Canary
-# Phase 2 contract: bind Canary to the exact Source PR head and wait for its gates.
+# Phase 2 contract: bind Canary to an exact Source-main commit and wait for its gates.
 
 on:
   pull_request:
@@ -27,6 +27,11 @@ on:
         description: "Single service to canary; must be state=canary and enabled=true"
         required: false
         type: string
+      source_ref:
+        description: "Exact Source ref to verify and canary (default: main)"
+        required: false
+        default: main
+        type: string
 
 concurrency:
   group: phase2-Popular-Rules-Collection--github-workflows-phase2-source-canary-yml-${{ github.ref }}
@@ -36,7 +41,6 @@ jobs:
   source-canary:
     permissions:
       contents: read
-    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.number == 121
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
@@ -51,10 +55,11 @@ jobs:
       - name: Install locked dependencies
         run: python -m pip install -r requirements.lock
 
-      - name: Resolve and verify Source PR commit
+      - name: Resolve and verify exact Source commit
         id: source
         env:
           GH_TOKEN: ${{ github.token }}
+          SOURCE_REF: ${{ inputs.source_ref }}
         shell: bash
         run: |
           set -euo pipefail
@@ -62,9 +67,11 @@ jobs:
           import json
           import os
           import time
+          import urllib.parse
           import urllib.request
 
           token = os.environ["GH_TOKEN"]
+          source_ref = os.environ.get("SOURCE_REF", "").strip() or "main"
           req_headers = {
               "Authorization": f"Bearer {token}",
               "Accept": "application/vnd.github+json",
@@ -77,8 +84,12 @@ jobs:
               with urllib.request.urlopen(req) as response:
                   return json.load(response)
 
-          pr = get_json("https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/pulls/2")
-          sha = pr["head"]["sha"]
+          encoded_ref = urllib.parse.quote(source_ref, safe="")
+          commit = get_json(
+              "https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/commits/"
+              + encoded_ref
+          )
+          sha = commit["sha"]
           needed = {"CI", "Phase 2 Source Gate"}
           observed = {}
 
@@ -98,7 +109,13 @@ jobs:
               observed = {name: run.get("conclusion") for name, run in latest.items()}
               statuses = {name: run.get("status") for name, run in latest.items()}
               print(json.dumps(
-                  {"attempt": attempt + 1, "source_commit": sha, "observed": observed, "statuses": statuses},
+                  {
+                      "attempt": attempt + 1,
+                      "source_ref": source_ref,
+                      "source_commit": sha,
+                      "observed": observed,
+                      "statuses": statuses,
+                  },
                   ensure_ascii=False,
                   indent=2,
               ))
@@ -110,19 +127,22 @@ jobs:
               )
               if terminal_bad:
                   raise SystemExit(
-                      f"Source PR #2 has failed gate(s) for {sha}: {terminal_bad}; observed={observed}"
+                      f"Source ref {source_ref} has failed gate(s) for {sha}: "
+                      f"{terminal_bad}; observed={observed}"
                   )
               if not missing and all(observed.get(name) == "success" for name in needed):
                   break
               if attempt == 29:
                   raise SystemExit(
-                      f"Timed out waiting for Source PR #2 gates for {sha}; observed={observed}, missing={missing}"
+                      f"Timed out waiting for Source ref {source_ref} gates for {sha}; "
+                      f"observed={observed}, missing={missing}"
                   )
               time.sleep(20)
 
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
               out.write(f"sha={sha}\n")
           PY
+
       - name: Checkout exact Source commit
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
@@ -183,8 +203,7 @@ jobs:
         if: steps.services.outputs.count == '0'
         run: |
           mkdir -p reports/phase2-canary
-          printf '%s\n' '{"schema":"phase2_canary_summary_v1","all_pass":true,"verified_count":0,"canary_pass_count":0,"production_ready_count":0,"services":{},"failures":{},"note":"No service is activated for Canary."}' \\
-            > reports/phase2-canary/summary.json
+          printf '%s\n' '{"schema":"phase2_canary_summary_v1","all_pass":true,"verified_count":0,"canary_pass_count":0,"production_ready_count":0,"services":{},"failures":{},"note":"No service is activated for Canary."}' > reports/phase2-canary/summary.json
 
       - name: Build non-promoting Canary attestation evidence
         if: always()
@@ -203,7 +222,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
-          name: phase2-source-canary-${{ github.event.pull_request.head.sha || github.sha }}
+          name: phase2-source-canary-${{ steps.source.outputs.sha || github.sha }}
           path: reports/phase2-canary
           if-no-files-found: error
           retention-days: 30
