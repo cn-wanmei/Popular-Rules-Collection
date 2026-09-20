@@ -43,19 +43,25 @@ jobs:
           sha="$(printf '%s' "${payload}" | python -c 'import json,sys; print(json.load(sys.stdin)["head"]["sha"])')"
           printf 'sha=%s\n' "${sha}" >> "${GITHUB_OUTPUT}"
 
-          checks="$(curl -fsSL             -H "Authorization: Bearer ${GH_TOKEN}"             -H "Accept: application/vnd.github+json"             "https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/commits/${sha}/check-runs?per_page=100")"
-          printf '%s' "${checks}" | python -c '
+          runs="$(curl -fsSL \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/actions/runs?head_sha=${sha}&per_page=100")"
+          printf '%s' "${runs}" | python -c '
           import json, sys
           data = json.load(sys.stdin)
           needed = {"CI", "Phase 2 Source Gate"}
-          observed = {x["name"]: x.get("conclusion") for x in data.get("check_runs", []) if x.get("name") in needed}
+          observed = {}
+          for run in data.get("workflow_runs", []):
+              name = run.get("name")
+              if name in needed:
+                  observed[name] = run.get("conclusion")
           print(json.dumps(observed, ensure_ascii=False, sort_keys=True))
           missing = sorted(needed - observed.keys())
           bad = sorted(name for name, conclusion in observed.items() if conclusion != "success")
           if missing or bad:
-              raise SystemExit(f"Source PR #2 is not green for {data!r}; missing={missing}, bad={bad}")
+              raise SystemExit(f"Source PR #2 is not green for ${sha}; missing={missing}, bad={bad}")
           '
-
       - name: Checkout exact Source commit
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
