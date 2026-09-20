@@ -40,15 +40,45 @@ jobs:
       - name: Install locked dependencies
         run: python -m pip install -r requirements.lock
 
-      - name: Download immutable build artifact
-        uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131
-        with:
-          name: release-candidate-${{ inputs.build_run_id }}
-          path: release-candidate
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          repository: ${{ github.repository }}
-          run-id: ${{ github.event.workflow_run.id }}
-
+      - name: Download immutable build artifact via Actions API
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ inputs.build_run_id }}
+          EXPECTED_SHA: ${{ inputs.build_head_sha }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, os, urllib.request
+          run_id = int(os.environ['RUN_ID'])
+          expected_sha = os.environ['EXPECTED_SHA']
+          repo = os.environ['REPO']
+          token = os.environ['GH_TOKEN']
+          url = f'https://api.github.com/repos/{repo}/actions/runs/{run_id}/artifacts?per_page=100'
+          req = urllib.request.Request(url, headers={'Authorization': f'Bearer {token}', 'Accept': 'application/vnd.github+json'})
+          with urllib.request.urlopen(req) as response:
+              payload = json.load(response)
+          expected_name = f'release-candidate-{run_id}'
+          matches = [a for a in payload.get('artifacts', []) if a.get('name') == expected_name and not a.get('expired') and a.get('workflow_run', {}).get('id') == run_id and a.get('workflow_run', {}).get('head_sha') == expected_sha]
+          if len(matches) != 1:
+              raise SystemExit(f'exact immutable build artifact not found: name={expected_name} run_id={run_id} head_sha={expected_sha} matches={matches}')
+          artifact = matches[0]
+          print(json.dumps({'artifact_id': artifact['id'], 'name': artifact['name'], 'archive_download_url': artifact['archive_download_url'], 'digest': artifact.get('digest')}))
+          Path = __import__('pathlib').Path
+          Path('/tmp/artifact.json').write_text(json.dumps(artifact), encoding='utf-8')
+          PY
+          ARTIFACT_ID=$(python -c 'import json; print(json.load(open("/tmp/artifact.json"))["id"])')
+          ARTIFACT_NAME=$(python -c 'import json; print(json.load(open("/tmp/artifact.json"))["name"])')
+          mkdir -p release-candidate
+          curl --fail-with-body --location --silent --show-error \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${REPO}/actions/artifacts/${ARTIFACT_ID}/zip" \
+            -o /tmp/release-candidate.zip
+          unzip -q /tmp/release-candidate.zip -d release-candidate
+          test "$(cat release-candidate/run-id.txt)" = "${RUN_ID}"
+          echo "Downloaded exact immutable artifact ${ARTIFACT_NAME} (id=${ARTIFACT_ID})."
       - name: Architecture Gate
         run: python scripts/architecture_gate.py
 
@@ -62,7 +92,7 @@ jobs:
           from pathlib import Path
           obj=json.loads(Path("release-candidate/reports/v1/FINAL_MIGRATION_GATE.json").read_text(encoding="utf-8"))
           assert obj.get("status") == "PASS", obj
-          assert obj.get("current_head",{}).get("expected") == "${{ github.event.workflow_run.head_sha }}", obj.get("current_head")
+          assert obj.get("current_head",{}).get("expected") == "${{ inputs.build_head_sha }}", obj.get("current_head")
           assert obj.get("phase8",{}).get("sot") == "v1_canonical", obj.get("phase8")
           assert obj.get("deletion_boundary",{}).get("automatic_delete") is False, obj.get("deletion_boundary")
           print("Phase 8 final migration gate evidence: PASS")
@@ -77,7 +107,7 @@ jobs:
           test -d "release-candidate/data/runs/${RUN_ID}"
           test -d release-candidate/generated
           test -s "release-candidate/data/baseline/canonical.json"
-          test "$(git rev-parse HEAD)" = "${{ github.event.workflow_run.head_sha }}"
+          test "$(git rev-parse HEAD)" = "${{ inputs.build_head_sha }}"
 
       - name: Prepare immutable run for Service Gate
         shell: bash
