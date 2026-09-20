@@ -15,6 +15,8 @@ def test_attestation_stops_before_reconciliation_and_observation():
                     "v3_release_run_id": "canary-dingding-release-2",
                     "semantic": {"pass": True},
                     "semantic_run_id": "canary-dingding-release-2",
+                    "reconciliation_run_id": "reconcile-dingding-abcdef1234567890",
+                    "reconciliation": {"status": "PASS", "run_id": "reconcile-dingding-abcdef1234567890"},
                 },
                 "rollback": {"rollback_run": "canary-dingding-release-1", "pass": True},
                 "production_ready": True,
@@ -24,6 +26,7 @@ def test_attestation_stops_before_reconciliation_and_observation():
     report = build_attestation(summary)
     row = report["services"]["dingding"]
     assert row["status"] == "READY_FOR_ATTESTATION"
-    assert "reconciliation_run_id" in row["blockers"]
+    assert "reconciliation_run_id" not in row["blockers"]
     assert "observation_started_at" in row["blockers"]
     assert row["checks"]["seven_client_semantic_pass"] is True
+    assert row["checks"]["collection_reconciliation_pass"] is True
