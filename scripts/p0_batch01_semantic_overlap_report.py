@@ -48,9 +48,12 @@ def main() -> int:
     }
 
     print(json.dumps(report["summary"], ensure_ascii=False, indent=2))
-    if report["summary"]["semantic_status"] == "fail":
+    # This is a production-readiness audit, not merely an execution smoke test.
+    # Any non-pass semantic/overlap state must fail closed so BLOCKED cannot be
+    # mistaken for a green production gate.
+    if report["summary"]["semantic_status"] != "pass":
         return 1
-    if report["summary"]["overlap_status"] == "fail":
+    if report["summary"]["overlap_status"] != "pass":
         return 1
     return 0
 
