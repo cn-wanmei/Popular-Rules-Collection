@@ -1,4 +1,4 @@
-from scripts.build_canary_attestation import build_attestation
+from scripts.canary_attestation import build_attestation
 
 def test_attestation_stops_before_reconciliation_and_observation():
     summary = {
