@@ -1945,6 +1945,62 @@
     "sha256": "46dae845399159d1145a65fc11ce94cbef73cf3d65ac5cd32be8bd71928ea496",
     "size": 1874
   },
+  "blackmatrix7::rule/QuantumultX/AppStore/AppStore.list": {
+    "cas_sha256": "8189ba2f921fe1c25e6c4a78ee5ab1fee35ac9c62ed80d744925b93994fcc6d7",
+    "etag": "W/\"9fa2e3da3ebd0a11aab17f6918a499fbf19090ee7a3b0bc96b86eaf20968e786\"",
+    "failure_count": 0,
+    "last_changed_at": "2026-09-20T03:24:29.786591+00:00",
+    "last_checked_at": "2026-09-20T03:24:29.786591+00:00",
+    "last_status": "ok",
+    "last_success_at": "2026-09-20T03:24:29.786591+00:00",
+    "last_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AppStore/AppStore.list",
+    "local": "backup/2026-09-20/sources/blackmatrix7/QuantumultX_AppStore.list",
+    "next_retry_at": "",
+    "sha256": "8189ba2f921fe1c25e6c4a78ee5ab1fee35ac9c62ed80d744925b93994fcc6d7",
+    "size": 208
+  },
+  "blackmatrix7::rule/QuantumultX/Cloud/TencentCloud/TencentCloud.list": {
+    "cas_sha256": "e5421c2f2f93e2f2e28cfcc2c7c85d62b5ad013fc5204445de513b50437c0ded",
+    "etag": "W/\"8de8b3335f831a2f4644e8dd4c009fcb3e4cf56c3a2c26edbd6413bdd213b810\"",
+    "failure_count": 0,
+    "last_changed_at": "2026-09-20T03:24:29.815163+00:00",
+    "last_checked_at": "2026-09-20T03:24:29.815163+00:00",
+    "last_status": "ok",
+    "last_success_at": "2026-09-20T03:24:29.815163+00:00",
+    "last_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Cloud/TencentCloud/TencentCloud.list",
+    "local": "backup/2026-09-20/sources/blackmatrix7/QuantumultX_TencentCloud.list",
+    "next_retry_at": "",
+    "sha256": "e5421c2f2f93e2f2e28cfcc2c7c85d62b5ad013fc5204445de513b50437c0ded",
+    "size": 3955
+  },
+  "blackmatrix7::rule/QuantumultX/FindMy/FindMy.list": {
+    "cas_sha256": "0c77dd5dd45a62e203b4d43b43d6b54f7f9ace687767068f520dff36b6aab714",
+    "etag": "W/\"897241581ec83d0b08d3d8d9497b6d1e09c81b8d5385e92357eccdbb8b47872d\"",
+    "failure_count": 0,
+    "last_changed_at": "2026-09-20T03:24:29.801766+00:00",
+    "last_checked_at": "2026-09-20T03:24:29.801766+00:00",
+    "last_status": "ok",
+    "last_success_at": "2026-09-20T03:24:29.801766+00:00",
+    "last_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/FindMy/FindMy.list",
+    "local": "backup/2026-09-20/sources/blackmatrix7/QuantumultX_FindMy.list",
+    "next_retry_at": "",
+    "sha256": "0c77dd5dd45a62e203b4d43b43d6b54f7f9ace687767068f520dff36b6aab714",
+    "size": 244
+  },
+  "blackmatrix7::rule/QuantumultX/TestFlight/TestFlight.list": {
+    "cas_sha256": "4cb08a9ec95eab00cb82847ca92688099d5270035a72200b552b8adcb59c610b",
+    "etag": "W/\"b8bcda92098c24441c25cd6ab0dd71d1def9b2b09b09bac419d8b99fc35da655\"",
+    "failure_count": 0,
+    "last_changed_at": "2026-09-20T03:24:29.816089+00:00",
+    "last_checked_at": "2026-09-20T03:24:29.816089+00:00",
+    "last_status": "ok",
+    "last_success_at": "2026-09-20T03:24:29.816089+00:00",
+    "last_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/TestFlight/TestFlight.list",
+    "local": "backup/2026-09-20/sources/blackmatrix7/QuantumultX_TestFlight.list",
+    "next_retry_at": "",
+    "sha256": "4cb08a9ec95eab00cb82847ca92688099d5270035a72200b552b8adcb59c610b",
+    "size": 271
+  },
   "dler::Clash/Provider/AI Suite.yaml": {
     "cas_sha256": "489f445e5e3b1b1350028ad5b7fe16efb975d6bf02684cf9b65362cc7518e4e0",
     "etag": "W/\"8e79d0fe362daa40f8c588b474bf0b71276d4f1d729b412f5b8b31228b7cd861\"",
@@ -2224,6 +2280,20 @@
     "next_retry_at": "",
     "sha256": "f8c4251c9633ed5c3a7e4bb1512518358513fa97ea20161f9e2f85b6ed48996c",
     "size": 229
+  },
+  "lm-firefly::Apple/AppleDev.list": {
+    "cas_sha256": "c463cf41d742ff56c5769215bf1fa2d11bd72207e0909714beb7aaf62704b343",
+    "etag": "W/\"2e7537e429402ba4debe4eca456523263275254237dca4826f761de7851ad292\"",
+    "failure_count": 0,
+    "last_changed_at": "2026-09-20T03:24:30.007638+00:00",
+    "last_checked_at": "2026-09-20T03:24:30.007638+00:00",
+    "last_status": "ok",
+    "last_success_at": "2026-09-20T03:24:30.007638+00:00",
+    "last_url": "https://raw.githubusercontent.com/LM-Firefly/Rules/master/Apple/AppleDev.list",
+    "local": "backup/2026-09-20/sources/lm-firefly/LM_Firefly_AppleDev.list",
+    "next_retry_at": "",
+    "sha256": "c463cf41d742ff56c5769215bf1fa2d11bd72207e0909714beb7aaf62704b343",
+    "size": 1631
   },
   "metacubex::geo/geosite/acfun.list": {
     "cas_sha256": "381d6708e23c62d500120f3f59e584b3a629c30e33b9046043ad6d7c8032a590",
