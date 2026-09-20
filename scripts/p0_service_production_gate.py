@@ -265,14 +265,22 @@ def main() -> int:
 
         if row.get("seven_client") == "pass" and len(present) != len(CLIENT_EXT):
             missing = sorted(set(CLIENT_EXT) - set(present))
-            structural_errors.append(
-                f"{sid}: seven_client=pass but artifacts missing for {', '.join(missing)}"
-            )
+            # Before Phase J globally completes, per-service artifact materialization
+            # is a pending activation item rather than a structural queue error.
+            if phase_j_complete:
+                structural_errors.append(
+                    f"{sid}: seven_client=pass but artifacts missing for {', '.join(missing)}"
+                )
         derived_row = (derived_report.get("services") or {}).get(sid) if isinstance(derived_report, dict) else None
         derived_status = derived_row.get("status") if isinstance(derived_row, dict) else None
-        if derived_status == "production":
-            production_count += 1
-        elif row.get("status") == "production" and not failed:
+        ready_now = (
+            phase_j_complete
+            and derived_status == "production"
+            and not failed
+            and not evidence_errors
+            and len(present) == len(CLIENT_EXT)
+        )
+        if ready_now:
             production_count += 1
         else:
             blocked_reasons = failed or ["status!=production"]
@@ -292,6 +300,10 @@ def main() -> int:
         elif not json.loads(release_path.read_text(encoding="utf-8")).get("all_hard_pass"):
             structural_errors.append("latest run release hard gates are not all pass")
 
+    phase_j_complete = bool(
+        isinstance(derived_report, dict)
+        and derived_report.get("production_complete") is True
+    )
     phase_j_complete = bool(
         isinstance(derived_report, dict)
         and derived_report.get("production_complete") is True
