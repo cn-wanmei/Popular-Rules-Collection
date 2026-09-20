@@ -46,7 +46,8 @@ def build_attestation(summary: dict[str, Any]) -> dict[str, Any]:
             "v3_run_id": canary.get("v3_release_run_id"),
             "semantic_run_id": canary.get("semantic_run_id"),
             "rollback_run_id": rollback.get("rollback_run"),
-            "observation_started_at": None,
+            "observation_run_id": canary.get("observation_run_id") or (canary.get("observation") or {}).get("run_id"),
+            "observation_started_at": canary.get("observation_started_at") or (canary.get("observation") or {}).get("started_at"),
         }
         blockers = [
             field for field in REQUIRED_FIELDS
@@ -82,7 +83,11 @@ def build_attestation(summary: dict[str, Any]) -> dict[str, Any]:
                 "seven_client_semantic_pass": semantic_pass,
                 "collection_reconciliation_pass": reconciliation_pass,
                 "rollback_pass": rollback_pass,
-                "production_ready_from_canary_runner": report.get("production_ready") is True,
+                "observation_window_started": bool(fields.get("observation_started_at")),
+                "production_ready_from_canary_runner": (
+                    report.get("production_ready") is True
+                    and (canary.get("observation") or {}).get("status") == "ACTIVE"
+                ),
             },
             "blockers": sorted(set(blockers)),
         }
