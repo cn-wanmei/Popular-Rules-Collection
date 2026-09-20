@@ -1,3 +1,4 @@
+# Phase 2 canary runner
 #!/usr/bin/env python3
 """Phase 2 per-service Source -> V3 canary and rollback rehearsal."""
 from __future__ import annotations
