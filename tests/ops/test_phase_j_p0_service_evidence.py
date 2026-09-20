@@ -94,3 +94,21 @@ def test_find_source_honors_verified_provider_hint_order(tmp_path: Path) -> None
     found = find_source(tmp_path, "appledev", ["lm-firefly", "blackmatrix7"])
     assert found is not None
     assert found.name == "LM_Firefly_AppleDev.list"
+
+
+def test_publish_provenance_contract_separates_workflow_and_engine_ids() -> None:
+    root = Path(__file__).resolve().parents[2]
+    build = (root / ".github" / "workflows" / "build.yml").read_text(encoding="utf-8")
+    publish = (root / ".github" / "workflows" / "publish.yml").read_text(encoding="utf-8")
+
+    assert 'github.run_id' in build
+    assert 'github.sha' in build
+    assert "release-candidate/build-run-id.txt" in build
+    assert "release-candidate/build-head-sha.txt" in build
+
+    assert "release-candidate/build-run-id.txt" in publish
+    assert "release-candidate/build-head-sha.txt" in publish
+    assert 'ENGINE_RUN_ID="$(cat release-candidate/run-id.txt)"' in publish
+    assert 'build-run-id.txt)" = "${EXPECTED_BUILD_RUN_ID}"' in publish
+    assert 'build-head-sha.txt)" = "${EXPECTED_BUILD_SHA}"' in publish
+    assert 'release-candidate/run-id.txt)" = "${EXPECTED_BUILD_RUN_ID}"' not in publish
