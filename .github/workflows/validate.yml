@@ -80,34 +80,53 @@ jobs:
           }
 
           def get_json(url):
-              req = urllib.request.Request(url, headers=headers)
+              req = urllib.request.Request(url, headers=req_headers)
               with urllib.request.urlopen(req) as response:
                   return json.load(response)
 
           pr = get_json("https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/pulls/2")
-          source_sha = pr["head"]["sha"]
-          runs = get_json(
-              "https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/actions/runs"
-              f"?head_sha={source_sha}&per_page=100"
-          )
+          sha = pr["head"]["sha"]
           needed = {"CI", "Phase 2 Source Gate"}
           observed = {}
-          for run in runs.get("workflow_runs", []):
-              name = run.get("name")
-              if name in needed:
-                  observed[name] = run.get("conclusion")
-          missing = sorted(needed - observed.keys())
-          bad = sorted(name for name, conclusion in observed.items() if conclusion != "success")
-          if missing or bad:
-              raise SystemExit(
-                  f"Source PR #2 is not green for {source_sha}; missing={missing}, bad={bad}"
-              )
 
-          Path("reports/phase2-canary").mkdir(parents=True, exist_ok=True)
-          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as out:
-              out.write("CANARY_ACTIVE=true\n")
-              out.write(f"SOURCE_CANARY_SHA={source_sha}\n")
-              out.write("ACTIVE_CANARY_SERVICES=" + " ".join(active) + "\n")
+          for attempt in range(30):
+              runs = get_json(
+                  "https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/actions/runs"
+                  f"?head_sha={sha}&per_page=100"
+              )
+              latest = {}
+              for run in runs.get("workflow_runs", []):
+                  name = run.get("name")
+                  if name not in needed:
+                      continue
+                  previous = latest.get(name)
+                  if previous is None or run.get("created_at", "") > previous.get("created_at", ""):
+                      latest[name] = run
+              observed = {name: run.get("conclusion") for name, run in latest.items()}
+              statuses = {name: run.get("status") for name, run in latest.items()}
+              print(json.dumps(
+                  {"attempt": attempt + 1, "source_commit": sha, "observed": observed, "statuses": statuses},
+                  ensure_ascii=False,
+                  indent=2,
+              ))
+
+              missing = sorted(needed - observed.keys())
+              terminal_bad = sorted(
+                  name for name, conclusion in observed.items()
+                  if conclusion not in (None, "success")
+              )
+              if terminal_bad:
+                  raise SystemExit(
+                      f"Source PR #2 has failed gate(s) for {sha}: {terminal_bad}; observed={observed}"
+                  )
+              if not missing and all(observed.get(name) == "success" for name in needed):
+                  break
+              if attempt == 29:
+                  raise SystemExit(
+                      f"Timed out waiting for Source PR #2 gates for {sha}; observed={observed}, missing={missing}"
+                  )
+              time.sleep(20)
+
           Path("reports/phase2-canary/source-verification.json").write_text(
               json.dumps(
                   {"source_commit": source_sha, "observed_source_gates": observed, "services": active},
