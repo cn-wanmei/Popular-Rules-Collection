@@ -143,10 +143,32 @@ services:
     source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-taobao-8bf235109eb1fae87549fea8, content_digest: 8bf235109eb1fae87549fea81dfdb81bc327941d6128bcb2f4f60af00e5b4f92}
     attestation: {status: pending}
   tencentcloud:
-    state: canary
+    state: production
     enabled: true
-    source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-tencentcloud-018c6d0a2429c98a45976487, content_digest: 018c6d0a2429c98a45976487d44de561338ac63ae290f0975b316409f0aa273c}
-    attestation: {status: pending}
+    source_verification:
+      run: 35593251247
+      source_commit: 192ee4a99cd02d99faddfbad30ac4ebf914edaa8
+      snapshot_id: snap-tencentcloud-b5318bbe16655ce5f3eaaf84
+      content_digest: b5318bbe16655ce5f3eaaf8401b1c734a7068faab81b572a249a2c91f9856f56
+    attestation:
+      status: passed
+      source_release: releases/tencentcloud/snap-tencentcloud-b5318bbe16655ce5f3eaaf84/release.json
+      snapshot_id: snap-tencentcloud-b5318bbe16655ce5f3eaaf84
+      content_digest: b5318bbe16655ce5f3eaaf8401b1c734a7068faab81b572a249a2c91f9856f56
+      reconciliation_run_id: reconcile-tencentcloud-25dbe650f4ab6fd8
+      v3_run_id: canary-tencentcloud-release-2
+      semantic_run_id: canary-tencentcloud-release-2
+      rollback_run_id: rollback-tencentcloud-d2b36c193810bd54
+      observation_run_id: observe-tencentcloud-c56c0fe171852002
+      observation_started_at: '2026-09-21T11:25:43.354100+00:00'
+      production_unlock_run_id: '35593251247'
+      reconciliation_pass: true
+      seven_client_semantic_pass: true
+      rollback_pass: true
+      observation_pass: true
+      source_official_evidence_only: true
+      seed_only_count: 0
+      conflict_count: 0
   tmall:
     state: verified
     enabled: false
