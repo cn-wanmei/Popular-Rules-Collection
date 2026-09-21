@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "sources/registry.yaml"
+      - "sources/immutable_registry.yaml"
       - "config/source_promotion_policy.yaml"
       - "docs/PHASE2_UPSTREAM_RULE_COMPLETION.md"
       - "docs/PHASE2_MAIN_REPLACEMENT.md"
