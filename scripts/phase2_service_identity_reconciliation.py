@@ -9,6 +9,7 @@ from typing import Any
 
 import yaml
 
+# Q-02 is intentionally audit-only until reviewed reconciliation evidence exists.
 ROOT = Path(__file__).resolve().parents[1]
 IDENTITY = ROOT / "config/p0_service_identity.yaml"
 SERVICE_MODEL = ROOT / "config/service_model/services.yaml"
