@@ -1,0 +1,70 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "oaistatsig.com",
+        "browser-intake-datadoghq.com",
+        "sora.com",
+        "oaistatic.com",
+        "algolia.net",
+        "segment.io",
+        "openai.com",
+        "sentry.io",
+        "featuregates.org",
+        "ai.com",
+        "turn.livekit.cloud",
+        "observeit.net",
+        "openai.com.cdn.cloudflare.net",
+        "production-openaicom-storage.azureedge.net",
+        "auth0.com",
+        "chatgpt.livekit.cloud",
+        "identrust.com",
+        "client-api.arkoselabs.com",
+        "chatgpt.com",
+        "api.statsig.com",
+        "chat.com",
+        "chatgpt.site",
+        "stripe.com",
+        "o33249.ingest.sentry.io",
+        "oaiusercontent.com",
+        "openaicom.imgix.net",
+        "intercom.io",
+        "openaiassets.blob.core.windows.net",
+        "host.livekit.cloud",
+        "openai.qualtrics.com",
+        "openaicomproductionae4b.blob.core.windows.net",
+        "openaiapi-site.azureedge.net",
+        "crixet.com",
+        "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net",
+        "events.statsigapi.net",
+        "launchdarkly.com",
+        "intercomcdn.com"
+      ],
+      "domain": [
+        "openaiapi-site.azureedge.net",
+        "o33249.ingest.sentry.io",
+        "production-openaicom-storage.azureedge.net",
+        "openaicomproductionae4b.blob.core.windows.net",
+        "chat.openai.com.cdn.cloudflare.net",
+        "openaicom.imgix.net",
+        "openaiassets.blob.core.windows.net",
+        "static.cloudflareinsights.com",
+        "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net",
+        "openai-api.arkoselabs.com",
+        "openai.qualtrics.com",
+        "browser-intake-datadoghq.com"
+      ],
+      "ip_cidr": [
+        "24.199.123.28/32",
+        "64.23.132.171/32"
+      ],
+      "domain_keyword": [
+        "openai"
+      ],
+      "domain_regex": [
+        "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$"
+      ]
+    }
+  ]
+}
