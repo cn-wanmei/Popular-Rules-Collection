@@ -80,14 +80,26 @@ def _immutable_cfg(entry: dict[str, str], cfg: dict) -> tuple[dict, str, dict | 
     release_path = str(binding.get("release_path") or "")
     snapshot_id = str(binding.get("snapshot_id") or "")
     content_digest = str(binding.get("content_digest") or "")
+    evidence_digest = str(binding.get("evidence_digest") or "")
+    policy_digest = str(binding.get("policy_digest") or "")
+    generator_digest = str(binding.get("generator_digest") or "")
+    release_digest = str(binding.get("release_digest") or "")
+    release_identity_version = str(binding.get("release_identity_version") or "")
     if not expected_sha256 or not release_path or not snapshot_id or not content_digest:
         raise ValueError(f"immutable source binding for {service} is incomplete")
+    if release_identity_version != "2" or not all((evidence_digest, policy_digest, generator_digest, release_digest)):
+        raise ValueError(f"immutable source binding provenance identity is incomplete for {service}")
     resolved = {**cfg, "branch": ref, "fallback_bases": []}
     metadata = {
         "service": service,
         "release_path": release_path,
         "snapshot_id": snapshot_id,
         "content_digest": content_digest,
+        "evidence_digest": evidence_digest,
+        "policy_digest": policy_digest,
+        "generator_digest": generator_digest,
+        "release_digest": release_digest,
+        "release_identity_version": release_identity_version,
         "expected_sha256": expected_sha256,
     }
     return resolved, path, metadata
@@ -112,7 +124,16 @@ class GitHubRawFetcher(BaseFetcher):
             cfg, path, immutable = _immutable_cfg(entry, self.cfg)
             if immutable:
                 release = _get_release(cfg, immutable["release_path"])
-                for key, expected in (("service_id", immutable["service"]), ("snapshot_id", immutable["snapshot_id"]), ("content_digest", immutable["content_digest"])):
+                for key, expected in (
+                    ("service_id", immutable["service"]),
+                    ("snapshot_id", immutable["snapshot_id"]),
+                    ("content_digest", immutable["content_digest"]),
+                    ("evidence_digest", immutable["evidence_digest"]),
+                    ("policy_digest", immutable["policy_digest"]),
+                    ("generator_digest", immutable["generator_digest"]),
+                    ("release_digest", immutable["release_digest"]),
+                    ("release_identity_version", immutable["release_identity_version"]),
+                ):
                     if str(release.get(key)) != expected:
                         raise ValueError(f"immutable release identity mismatch for {immutable['service']}: {key}")
                 required_files = set((release.get("checksums") or {}).keys())

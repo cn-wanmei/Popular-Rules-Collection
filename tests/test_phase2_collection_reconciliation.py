@@ -19,6 +19,11 @@ def test_reconcile_service_binds_source_registry_input_and_ir(tmp_path: Path):
         "service_id": "dingding",
         "snapshot_id": "snap-dingding",
         "content_digest": "digest-123",
+        "evidence_digest": "e" * 64,
+        "policy_digest": "p" * 64,
+        "generator_digest": "g" * 64,
+        "release_digest": "r" * 64,
+        "release_identity_version": "2",
         "domain_count": len(domains),
         "domains": domains,
         "release_state": "CANDIDATE",
@@ -29,7 +34,12 @@ def test_reconcile_service_binds_source_registry_input_and_ir(tmp_path: Path):
     release = source / "releases" / "dingding" / "snap-dingding"
     release.mkdir(parents=True)
     (release / "release.json").write_text(
-        json.dumps({"snapshot_id": "snap-dingding", "content_digest": "digest-123"}),
+        json.dumps({
+            "snapshot_id": "snap-dingding", "content_digest": "digest-123",
+            "evidence_digest": "e" * 64, "policy_digest": "p" * 64,
+            "generator_digest": "g" * 64, "release_digest": "r" * 64,
+            "release_identity_version": "2",
+        }),
         encoding="utf-8",
     )
 
@@ -62,6 +72,11 @@ def test_reconcile_service_binds_source_registry_input_and_ir(tmp_path: Path):
             "service_id": "dingding",
             "snapshot_id": "snap-dingding",
             "content_digest": "digest-123",
+            "evidence_digest": "e" * 64,
+            "policy_digest": "p" * 64,
+            "generator_digest": "g" * 64,
+            "release_digest": "r" * 64,
+            "release_identity_version": "2",
             "domain_count": 3,
             "seed_only_count": 0,
         }),

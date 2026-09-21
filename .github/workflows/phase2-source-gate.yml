@@ -4,6 +4,7 @@ on:
   pull_request:
     branches: [main]
     paths:
+      - ".github/workflows/source-auto-handoff.yml"
       - "sources/registry.yaml"
       - "sources/immutable_registry.yaml"
       - "config/source_promotion_policy.yaml"
@@ -15,6 +16,8 @@ on:
       - "scripts/source_production_gate.py"
       - "scripts/source_canary_gate.py"
       - "config/source_canary_state.yaml"
+      - "sources/immutable_registry.yaml"
+      - "scripts/source_provenance_gate.py"
 
   workflow_dispatch:
 
@@ -48,5 +51,6 @@ jobs:
           print('PRS registry: disabled during Phase 2')
           PY
       - run: python scripts/partial_production_invariant_gate.py
+      - run: python scripts/source_provenance_gate.py
       - run: python scripts/source_canary_gate.py
       - run: python scripts/source_production_gate.py

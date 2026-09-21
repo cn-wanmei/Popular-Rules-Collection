@@ -108,6 +108,25 @@ def reconcile_service(
     if release.get("content_digest") != content_digest:
         raise RuntimeError(f"{service_id}: release content_digest mismatch")
 
+    binding_file = canary_root / "input" / "source-binding.json"
+    if not binding_file.is_file():
+        raise RuntimeError(f"{service_id}: source binding artifact missing")
+    binding = _load_json(binding_file)
+
+    provenance_fields = (
+        "evidence_digest", "policy_digest", "generator_digest",
+        "release_digest", "release_identity_version",
+    )
+    for field in provenance_fields:
+        value = str(release.get(field) or "").strip()
+        if not value:
+            raise RuntimeError(f"{service_id}: release missing {field}")
+        if str(binding.get(field) or "").strip() != value:
+            raise RuntimeError(
+                f"{service_id}: immutable provenance mismatch for {field}: "
+                f"{binding.get(field)!r} != {value!r}"
+            )
+
     registry = _load_yaml(ROOT / "sources" / "registry.yaml")
     prs = next(
         (item for item in registry.get("sources") or [] if item.get("id") == "popular-rules-source"),
@@ -134,10 +153,6 @@ def reconcile_service(
             f"{service_id}: registry path mismatch: {registration.get('path')} != {expected_path}"
         )
 
-    binding_file = canary_root / "input" / "source-binding.json"
-    if not binding_file.is_file():
-        raise RuntimeError(f"{service_id}: source binding artifact missing")
-    binding = _load_json(binding_file)
     expected_binding = {
         "repository": "cn-wanmei/Popular-Rules-Source",
         "source_commit": source_commit,
@@ -191,6 +206,12 @@ def reconcile_service(
         "snapshot_id": effective_snapshot_id,
         "content_digest": content_digest,
         "domain_digest": domain_digest,
+        "provenance": {
+            field: release.get(field) for field in (
+                "evidence_digest", "policy_digest", "generator_digest",
+                "release_digest", "release_identity_version",
+            )
+        },
         "v3_run_id": v3_run_id,
     }
     run_id = "reconcile-" + service_id + "-" + hashlib.sha256(
@@ -216,6 +237,7 @@ def reconcile_service(
             "source_binding_exact": True,
             "collection_input_exact": True,
             "v3_ir_exact": True,
+            "provenance_identity_exact": True,
         },
         "counts": {
             "domains": len(source_domains),

@@ -136,3 +136,73 @@ def test_lineage_gate_rejects_main_branch_acquisition_url(tmp_path: Path, monkey
     monkeypatch.setattr(gate,"IMMUTABLE",repo/"sources/immutable_registry.yaml")
     monkeypatch.setattr("sys.argv",["gate","--collection-root","backup/2026-09-21"])
     assert main() == 1
+
+
+def test_lineage_gate_allows_integral_historical_backup_when_active_binding_is_newer(tmp_path: Path, monkeypatch) -> None:
+    repo = tmp_path / "repo"
+    (repo / "sources").mkdir(parents=True)
+    (repo / "backup/2026-09-21/manifests").mkdir(parents=True)
+    (repo / "backup/2026-09-21/sources/popular-rules-source").mkdir(parents=True)
+
+    body = b"example.org\n"
+    digest = hashlib.sha256(body).hexdigest()
+    (repo / "backup/2026-09-21/sources/popular-rules-source/PRS_qqmail.domains.txt").write_bytes(body)
+
+    old_ref = "a" * 40
+    new_ref = "b" * 40
+    historical = {
+        "source_ref": old_ref,
+        "release_path": "releases/qqmail/snap-qqmail-old/release.json",
+        "snapshot_id": "snap-qqmail-old",
+        "content_digest": "c" * 64,
+        "expected_sha256": digest,
+    }
+    (repo / "sources/immutable_registry.yaml").write_text(
+        yaml.safe_dump({
+            "bindings": {"qqmail": {
+                "status": "active",
+                "source_ref": new_ref,
+                "release_path": "releases/qqmail/snap-qqmail-new/release.json",
+                "snapshot_id": "snap-qqmail-new",
+                "content_digest": "d" * 64,
+                "expected_sha256": digest,
+            }}
+        }, sort_keys=False),
+        encoding="utf-8",
+    )
+    (repo / "sources/registry.yaml").write_text(
+        yaml.safe_dump({
+            "sources": [{
+                "id": "popular-rules-source",
+                "rules": [{
+                    "service": "qqmail",
+                    "name": "qqmail",
+                    "path": "generated/source/qqmail/domains.txt",
+                    "enabled": True,
+                }],
+            }]
+        }, sort_keys=False),
+        encoding="utf-8",
+    )
+    item = {
+        "service": "qqmail",
+        "path": "generated/source/qqmail/domains.txt",
+        "status": "ok",
+        "sha256": digest,
+        "local": "sources/popular-rules-source/PRS_qqmail.domains.txt",
+        "url": f"https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/{old_ref}/generated/source/qqmail/domains.txt",
+        "immutable": historical,
+    }
+    (repo / "backup/2026-09-21/manifests/popular-rules-source.json").write_text(
+        json.dumps({"files": [item]}), encoding="utf-8"
+    )
+    (repo / "backup/2026-09-21/manifests/_collection.json").write_text(
+        json.dumps({"status": "ok"}), encoding="utf-8"
+    )
+
+    import scripts.immutable_source_lineage_gate as gate
+    monkeypatch.setattr(gate, "ROOT", repo)
+    monkeypatch.setattr(gate, "REGISTRY", repo / "sources/registry.yaml")
+    monkeypatch.setattr(gate, "IMMUTABLE", repo / "sources/immutable_registry.yaml")
+    monkeypatch.setattr("sys.argv", ["gate", "--collection-root", "backup/2026-09-21"])
+    assert main() == 0
