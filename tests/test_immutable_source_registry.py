@@ -16,7 +16,7 @@ SHA64 = re.compile(r"^[0-9a-f]{64}$")
 def test_immutable_registry_covers_phase2_services() -> None:
     # Active bindings must carry both artifact and gate lineage.
     data = yaml.safe_load(REGISTRY.read_text(encoding="utf-8"))
-    assert data["schema"] == "popular_rules_collection_immutable_source_registry_v1"
+    assert data["schema"] == "popular_rules_collection_immutable_source_registry_v2"
     bindings = data["bindings"]
     assert SERVICES <= set(bindings)
     for service in SERVICES:
@@ -30,4 +30,10 @@ def test_immutable_registry_covers_phase2_services() -> None:
             assert binding["release_path"]
             assert binding["snapshot_id"]
             assert SHA64.fullmatch(binding["expected_sha256"])
-            assert binding["content_digest"]
+            assert SHA64.fullmatch(binding["content_digest"])
+            assert SHA64.fullmatch(binding["evidence_digest"])
+            assert SHA64.fullmatch(binding["policy_digest"])
+            assert SHA64.fullmatch(binding["generator_digest"])
+            assert SHA64.fullmatch(binding["release_digest"])
+            assert binding["release_identity_version"] == "2"
+
