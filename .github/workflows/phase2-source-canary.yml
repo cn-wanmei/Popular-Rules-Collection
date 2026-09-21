@@ -288,13 +288,15 @@ jobs:
         run: python scripts/canary_attestation.py
 
       - name: Production Unlock qualification (non-mutating)
-        if: steps.services.outputs.count == '1' && steps.canary.outcome == 'success'
+        if: steps.services.outputs.count != '0' && steps.canary.outcome == 'success'
         run: |
-          service="${{ steps.services.outputs.services }}"
-          python scripts/phase2_production_unlock_gate.py \
-            --service "$service" \
-            --canary-report "reports/phase2-canary/$service/report.json" \
-            --output "reports/phase2-canary/$service/production-unlock.json"
+          set -euo pipefail
+          for service in ${{ steps.services.outputs.services }}; do
+            python scripts/phase2_production_unlock_gate.py \
+              --service "$service" \
+              --canary-report "reports/phase2-canary/$service/report.json" \
+              --output "reports/phase2-canary/$service/production-unlock.json"
+          done
 
       - name: Upload canary evidence
         if: always() && steps.checkout_collection.outcome == 'success'
