@@ -40,6 +40,25 @@ def _read_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def _load_immutable_binding(service_id: str) -> dict[str, Any]:
+    registry = _read_yaml(ROOT / "sources" / "immutable_registry.yaml")
+    binding = (registry.get("bindings") or {}).get(service_id)
+    if not isinstance(binding, dict) or binding.get("status") != "active":
+        raise RuntimeError(f"{service_id}: no active immutable Source binding")
+    if binding.get("source_id") != "popular-rules-source":
+        raise RuntimeError(f"{service_id}: unexpected immutable source id")
+    for key in ("source_ref", "snapshot_id", "content_digest", "artifact_path", "release_path"):
+        if not str(binding.get(key) or "").strip():
+            raise RuntimeError(f"{service_id}: immutable binding missing {key}")
+    return binding
+
+
+def _read_yaml(path: Path) -> dict[str, Any]:
+    with path.open(encoding="utf-8") as fh:
+        data = yaml.safe_load(fh) or {}
+    return data if isinstance(data, dict) else {}
+
+
 def _latest_snapshot(source_root: Path, service_id: str) -> tuple[Path, dict[str, Any]]:
     snapshots = []
     for path in (source_root / "snapshots").glob("*/manifest.json"):
@@ -103,7 +122,13 @@ def _domain_rules(service_id: str, snapshot: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def _prepare_input(service_id: str, snapshot: dict[str, Any], source_commit: str, root: Path) -> Path:
+def _prepare_input(
+    service_id: str,
+    snapshot: dict[str, Any],
+    source_commit: str,
+    verified_input_commit: str,
+    root: Path,
+) -> Path:
     if root.exists():
         shutil.rmtree(root)
     services_dir = root / "services"
@@ -116,6 +141,7 @@ def _prepare_input(service_id: str, snapshot: dict[str, Any], source_commit: str
         "schema": "phase2_source_binding_v1",
         "repository": "cn-wanmei/Popular-Rules-Source",
         "source_commit": source_commit,
+        "verified_input_commit": verified_input_commit,
         "service_id": service_id,
         "snapshot_id": snapshot.get("snapshot_id"),
         "content_digest": snapshot.get("content_digest"),
@@ -201,24 +227,47 @@ def _run_pipeline(sources: Path, data_root: Path, run_id: str, end: int) -> dict
     )
 
 
-def canary_service(service_id: str, source_root: Path, source_commit: str, base_dir: Path) -> dict[str, Any]:
-    completed = subprocess.run(
-        [sys.executable, "-m", "source_engine", "release", "--service", service_id],
-        cwd=source_root,
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        check=False,
-    )
-    if completed.returncode != 0:
+def canary_service(
+    service_id: str,
+    source_root: Path,
+    source_commit: str,
+    verified_input_commit: str,
+    base_dir: Path,
+) -> dict[str, Any]:
+    binding = _load_immutable_binding(service_id)
+    if str(binding["source_ref"]) != source_commit:
         raise RuntimeError(
-            f"{service_id}: Source release failed: {completed.stdout[-2000:]} {completed.stderr[-2000:]}"
+            f"{service_id}: immutable binding source_ref {binding['source_ref']} "
+            f"!= checked-out Source commit {source_commit}"
         )
-    snapshot_dir, snapshot = _latest_snapshot(source_root, service_id)
+    snapshot_id = str(binding["snapshot_id"])
+    snapshot_dir = source_root / "snapshots" / snapshot_id
+    snapshot_manifest = snapshot_dir / "manifest.json"
+    release_root = source_root / str(Path(binding["release_path"]).parent)
+    release_file = source_root / str(binding["release_path"])
+    if not snapshot_manifest.is_file():
+        raise RuntimeError(f"{service_id}: immutable snapshot manifest missing: {snapshot_manifest}")
+    if not release_file.is_file():
+        raise RuntimeError(f"{service_id}: immutable Source release artifact missing: {release_file}")
+    snapshot = _read_json(snapshot_manifest)
     _verify_source(service_id, snapshot_dir, snapshot)
-    release_root = source_root / "releases" / service_id / str(snapshot["snapshot_id"])
-    release_file = release_root / "release.json"
+    if snapshot.get("snapshot_id") != snapshot_id:
+        raise RuntimeError(f"{service_id}: immutable snapshot binding mismatch")
+    if snapshot.get("content_digest") != binding["content_digest"]:
+        raise RuntimeError(f"{service_id}: immutable content digest mismatch")
+    release_doc = _read_json(release_file)
+    if release_doc.get("snapshot_id") != snapshot_id:
+        raise RuntimeError(f"{service_id}: Source release snapshot binding mismatch")
+    if release_doc.get("content_digest") != binding["content_digest"]:
+        raise RuntimeError(f"{service_id}: Source release content digest mismatch")
+    checksums_file = snapshot_dir / "checksums.json"
+    if not checksums_file.is_file():
+        raise RuntimeError(f"{service_id}: immutable snapshot checksums missing")
+    checksums = _read_json(checksums_file)
+    expected_domains_sha = str(checksums.get("domains.txt") or "")
+    domains_sha = hashlib.sha256((snapshot_dir / "domains.txt").read_bytes()).hexdigest()
+    if expected_domains_sha != domains_sha:
+        raise RuntimeError(f"{service_id}: immutable domains checksum mismatch")
     if not release_file.is_file():
         raise RuntimeError(f"{service_id}: Source release artifact missing: {release_file}")
     release_doc = _read_json(release_file)
@@ -231,7 +280,7 @@ def canary_service(service_id: str, source_root: Path, source_commit: str, base_
     generated_root = service_dir / "generated"
     for p in (service_dir,):
         p.mkdir(parents=True, exist_ok=True)
-    _prepare_input(service_id, snapshot, source_commit, input_root)
+    _prepare_input(service_id, snapshot, source_commit, verified_input_commit, input_root)
 
     golden_run = f"canary-{service_id}-golden"
     golden = _run_pipeline(input_root, data_root, golden_run, GOLDEN_END)
@@ -355,6 +404,7 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--source-root", type=Path, required=True)
     parser.add_argument("--source-commit", required=True)
+    parser.add_argument("--verified-input-commit", required=True)
     parser.add_argument("--services", nargs="*", default=list(SERVICES))
     parser.add_argument("--output", type=Path, default=Path("reports/phase2-canary"))
     args = parser.parse_args()
@@ -373,6 +423,7 @@ def main() -> int:
                 service_id,
                 source_root,
                 args.source_commit,
+                args.verified_input_commit,
                 output,
             )
         except Exception as exc:

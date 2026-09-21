@@ -44,7 +44,7 @@ def test_reconcile_service_binds_source_registry_input_and_ir(tmp_path: Path):
                     "rules": [{
                         "service": "dingding",
                         "path": "generated/source/dingding/domains.txt",
-                        "enabled": False,
+                        "enabled": True,
                     }],
                 }]
             }

@@ -93,6 +93,8 @@ jobs:
           )
           requested_sha = commit["sha"]
           resolved_sha = requested_sha
+          artifact_sha = requested_sha
+          verified_input_sha = requested_sha
           resolution = "direct"
           needed = {"CI", "Phase 2 Source Gate"}
 
@@ -184,8 +186,10 @@ jobs:
                           not candidate_bad
                           and all(candidate_observed.get(name) == "success" for name in needed)
                       ):
-                          resolved_sha = input_commit
-                          resolution = "durable_bridge_input_commit"
+                          verified_input_sha = input_commit
+                          artifact_sha = persistence_sha
+                          resolved_sha = artifact_sha
+                          resolution = "durable_bridge_persistence_artifact"
                           observed = candidate_observed
                           statuses = candidate_statuses
                           print(json.dumps(
@@ -193,6 +197,7 @@ jobs:
                                   "source_ref": source_ref,
                                   "requested_source_commit": requested_sha,
                                   "source_commit": resolved_sha,
+                                  "verified_input_commit": verified_input_sha,
                                   "resolution": resolution,
                                   "bridge_persistence": persistence,
                                   "bridge_input_commit": input_commit,
@@ -211,7 +216,8 @@ jobs:
                   )
               time.sleep(20)
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
-              out.write(f"sha={resolved_sha}\n")
+              out.write(f"sha={artifact_sha}\n")
+              out.write(f"verified_input_sha={verified_input_sha}\n")
           PY
 
       - name: Checkout exact Source commit
@@ -267,6 +273,7 @@ jobs:
           PYTHONPATH=. python scripts/phase2_source_canary.py
           --source-root .phase2/source
           --source-commit "${{ steps.source.outputs.sha }}"
+          --verified-input-commit "${{ steps.source.outputs.verified_input_sha }}"
           --services ${{ steps.services.outputs.services }}
           --output reports/phase2-canary
 

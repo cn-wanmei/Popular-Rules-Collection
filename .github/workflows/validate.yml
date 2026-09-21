@@ -108,6 +108,8 @@ jobs:
           )
           requested_sha = source_commit_doc["sha"]
           source_sha = requested_sha
+          artifact_sha = requested_sha
+          verified_input_sha = requested_sha
           resolution = "direct"
           needed = {"CI", "Phase 2 Source Gate"}
 
@@ -174,7 +176,7 @@ jobs:
                   persistence_sha = persistence[5:] if persistence.startswith("main@") else ""
                   requested_parents = {
                       str(parent.get("sha", "")).strip()
-                      for parent in commit.get("parents", [])
+                      for parent in source_commit_doc.get("parents", [])
                       if isinstance(parent, dict)
                   }
                   if (
@@ -194,8 +196,10 @@ jobs:
                           not candidate_bad
                           and all(candidate_observed.get(name) == "success" for name in needed)
                       ):
-                          source_sha = input_commit
-                          resolution = "durable_bridge_input_commit"
+                          verified_input_sha = input_commit
+                          artifact_sha = persistence_sha
+                          source_sha = artifact_sha
+                          resolution = "durable_bridge_persistence_artifact"
                           observed = candidate_observed
                           statuses = candidate_statuses
                           print(json.dumps(
@@ -222,7 +226,8 @@ jobs:
               time.sleep(20)
           with open(github_env, "a", encoding="utf-8") as out:
               out.write("CANARY_ACTIVE=true\n")
-              out.write(f"SOURCE_CANARY_SHA={source_sha}\n")
+              out.write(f"SOURCE_CANARY_SHA={artifact_sha}\n")
+              out.write(f"SOURCE_VERIFIED_INPUT_SHA={verified_input_sha}\n")
               out.write("ACTIVE_CANARY_SERVICES=" + " ".join(active) + "\n")
 
           Path("reports/phase2-canary/source-verification.json").write_text(
@@ -263,6 +268,7 @@ jobs:
           PYTHONPATH=. python scripts/phase2_source_canary.py \
             --source-root .phase2/source \
             --source-commit "${SOURCE_CANARY_SHA}" \
+            --verified-input-commit "${SOURCE_VERIFIED_INPUT_SHA}" \
             --services ${ACTIVE_CANARY_SERVICES} \
             --output reports/phase2-canary
 

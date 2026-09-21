@@ -126,8 +126,8 @@ def reconcile_service(
     )
     if not registration:
         raise RuntimeError(f"{service_id}: PRS service registration missing")
-    if registration.get("enabled") is not False:
-        raise RuntimeError(f"{service_id}: PRS service registration must remain disabled")
+    if registration.get("enabled") is not True:
+        raise RuntimeError(f"{service_id}: PRS service registration must be enabled for its immutable Phase 2 binding")
     expected_path = f"generated/source/{service_id}/domains.txt"
     if registration.get("path") != expected_path:
         raise RuntimeError(
@@ -212,7 +212,7 @@ def reconcile_service(
             "source_release_binding": True,
             "registry_registered": True,
             "prs_global_disabled": True,
-            "prs_service_disabled": True,
+            "prs_service_enabled": True,
             "source_binding_exact": True,
             "collection_input_exact": True,
             "v3_ir_exact": True,
