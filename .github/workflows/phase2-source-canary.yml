@@ -161,9 +161,17 @@ jobs:
                       bridge = {}
                   persistence = str(bridge.get("persistence_commit", "")).strip()
                   input_commit = str(bridge.get("input_commit", "")).strip()
+                  persistence_sha = persistence[5:] if persistence.startswith("main@") else ""
+                  requested_parents = {
+                      str(parent.get("sha", "")).strip()
+                      for parent in commit.get("parents", [])
+                      if isinstance(parent, dict)
+                  }
                   if (
                       bridge.get("schema") == "popular_rules_source_durable_bridge_v1"
-                      and persistence == f"main@{requested_sha}"
+                      and len(persistence_sha) == 40
+                      and all(ch in "0123456789abcdef" for ch in persistence_sha.lower())
+                      and persistence_sha in requested_parents
                       and len(input_commit) == 40
                       and all(ch in "0123456789abcdef" for ch in input_commit.lower())
                   ):
