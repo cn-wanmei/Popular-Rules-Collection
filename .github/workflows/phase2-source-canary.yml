@@ -152,11 +152,11 @@ jobs:
               # weaken or bypass either required gate.
               if attempt == 0 and source_ref == "main" and resolved_sha == requested_sha:
                   try:
-                      bridge = get_json(
-                          "https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/contents/"
-                          "reports/durable-bridge/latest.json"
-                          f"?ref={urllib.parse.quote(requested_sha, safe='')}"
+                      bridge_url = (
+                          "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/"
+                          f"{urllib.parse.quote(requested_sha, safe='')}/reports/durable-bridge/latest.json"
                       )
+                      bridge = get_json(bridge_url)
                   except Exception:
                       bridge = {}
                   persistence = str(bridge.get("persistence_commit", "")).strip()
