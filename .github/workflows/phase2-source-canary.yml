@@ -211,7 +211,7 @@ jobs:
                   )
               time.sleep(20)
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
-              out.write(f"sha={sha}\n")
+              out.write(f"sha={resolved_sha}\n")
           PY
 
       - name: Checkout exact Source commit
