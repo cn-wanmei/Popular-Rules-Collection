@@ -1,0 +1,4603 @@
+{
+  "schema": "phase_j_p0_service_evidence_v2",
+  "run_id": "20260921T104221115805Z-run",
+  "queue_size": 50,
+  "production_count": 31,
+  "blocked_count": 19,
+  "production_complete": false,
+  "global": {
+    "golden": true,
+    "release": true,
+    "client_count": 7
+  },
+  "services": {
+    "appstore": {
+      "service_id": "appstore",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/blackmatrix7/QuantumultX_AppStore.list",
+        "sha256": "8189ba2f921fe1c25e6c4a78ee5ab1fee35ac9c62ed80d744925b93994fcc6d7",
+        "rule_count": 2,
+        "hints": [
+          "blackmatrix7"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "1e98d9e8aa660f53d3c671acb5c8e3fa0555edf9686cb316ec07dd5248fbf9fe",
+            "type": "HOST",
+            "positive": "apps.apple.com",
+            "positive_match": true,
+            "negative": "apps.apple.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "b5c0786d3563e6fe8cbe905c2368f8896e7b75b1cdedcde4e0e6fea4569473a1",
+            "type": "HOST",
+            "positive": "itunes.apple.com",
+            "positive_match": true,
+            "negative": "itunes.apple.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "apple/appstore/rules.yaml"
+          ],
+          "singbox": [
+            "apple/appstore/rules.json"
+          ],
+          "surge": [
+            "apple/appstore/rules.list"
+          ],
+          "shadowrocket": [
+            "apple/appstore/rules.list"
+          ],
+          "quantumultx": [
+            "apple/appstore/rules.list"
+          ],
+          "egern": [
+            "apple/appstore/rules.yaml"
+          ],
+          "loon": [
+            "apple/appstore/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "testflight": {
+      "service_id": "testflight",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/blackmatrix7/QuantumultX_TestFlight.list",
+        "sha256": "4cb08a9ec95eab00cb82847ca92688099d5270035a72200b552b8adcb59c610b",
+        "rule_count": 3,
+        "hints": [
+          "blackmatrix7"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "blocked",
+        "probes": [
+          {
+            "rule_id": "4b5f86fb2156b09ce8a7ecd8d7bbd3e4fdb3fe84366110fe76163b655203c4e8",
+            "type": "HOST",
+            "positive": "beta.apple.com",
+            "positive_match": true,
+            "negative": "beta.apple.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "509b9eaf9f80746c4ab5fedc3fff863c36f5e3df62e741af800922d8f3f70fd0",
+            "type": "HOST",
+            "positive": "testflight.apple.com",
+            "positive_match": true,
+            "negative": "testflight.apple.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "d49bada8bdad1ebcd2539818aa03b4b785e1ceee12d8cc1817001c22fe5ae170",
+            "type": "HOST-KEYWORD",
+            "positive": "testflight",
+            "positive_match": true,
+            "negative": "x-not-a-service.evil.example",
+            "negative_match": false,
+            "review_required": true
+          }
+        ],
+        "reasons": [
+          "keyword_rule_requires_explicit_acceptance"
+        ]
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "apple/testflight/rules.yaml"
+          ],
+          "singbox": [
+            "apple/testflight/rules.json"
+          ],
+          "surge": [
+            "apple/testflight/rules.list"
+          ],
+          "shadowrocket": [
+            "apple/testflight/rules.list"
+          ],
+          "quantumultx": [
+            "apple/testflight/rules.list"
+          ],
+          "egern": [
+            "apple/testflight/rules.yaml"
+          ],
+          "loon": [
+            "apple/testflight/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [
+        "semantic_audit"
+      ],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "blocked"
+    },
+    "appledev": {
+      "service_id": "appledev",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/lm-firefly/LM_Firefly_AppleDev.list",
+        "sha256": "c463cf41d742ff56c5769215bf1fa2d11bd72207e0909714beb7aaf62704b343",
+        "rule_count": 40,
+        "hints": [
+          "lm-firefly",
+          "blackmatrix7"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "2ae108237541c38d623560d3e76c5c014011ca6b4cce2ff15d10f796377d3a7a",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "calendarserver.org",
+            "positive_match": true,
+            "negative": "x.calendarserver.org.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "1d4eb1d127c5f0c4cb4ca37e344be99b35fabfcc660daa4e90ff05a77ff2dedc",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "apple-cloudkit.com",
+            "positive_match": true,
+            "negative": "x.apple-cloudkit.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "e99d01164bf4611e0e4fbc5ad9225b38b0cf3e4fbb33ae0c503419bd84f6a1ea",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "cups.org",
+            "positive_match": true,
+            "negative": "x.cups.org.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "c440db1cb13eb7649b896bb7732d00a8bf6492a0f49bb75ca7e89a1910d66f0a",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "developer.apple.com",
+            "positive_match": true,
+            "negative": "x.developer.apple.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "03e86a4e349776217ae215319e9b5132ce2b95170fb389f0eabd3d3f74230de4",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "developerservices2.apple.com",
+            "positive_match": true,
+            "negative": "x.developerservices2.apple.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "06374f7bbc4a2dacf7a280c09cbf720dcab7874abf5a162b2cb6014a4e5a0260",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "devimages-cdn.apple.com",
+            "positive_match": true,
+            "negative": "x.devimages-cdn.apple.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "apple/appledev/rules.yaml"
+          ],
+          "singbox": [
+            "apple/appledev/rules.json"
+          ],
+          "surge": [
+            "apple/appledev/rules.list"
+          ],
+          "shadowrocket": [
+            "apple/appledev/rules.list"
+          ],
+          "quantumultx": [
+            "apple/appledev/rules.list"
+          ],
+          "egern": [
+            "apple/appledev/rules.yaml"
+          ],
+          "loon": [
+            "apple/appledev/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "findmy": {
+      "service_id": "findmy",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/blackmatrix7/QuantumultX_FindMy.list",
+        "sha256": "0c77dd5dd45a62e203b4d43b43d6b54f7f9ace687767068f520dff36b6aab714",
+        "rule_count": 3,
+        "hints": [
+          "blackmatrix7"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "bbee2289375b61228ae998c53b5e2bbc0bcfdf38b7af0080fb4bf3ed1596823c",
+            "type": "HOST",
+            "positive": "fmfmobile.icloud.com",
+            "positive_match": true,
+            "negative": "fmfmobile.icloud.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "7bad046356cd41303dc4cc5eb51350128f0fbb2ae391a55880d43975610d3048",
+            "type": "HOST",
+            "positive": "fmipmobile.icloud.com",
+            "positive_match": true,
+            "negative": "fmipmobile.icloud.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "4a275803a2fac4b56be8a1106f42b0d148c85e8282dcb48b8f4cb5864f1f23c5",
+            "type": "HOST",
+            "positive": "statici.icloud.com",
+            "positive_match": true,
+            "negative": "statici.icloud.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "apple/findmy/rules.yaml"
+          ],
+          "singbox": [
+            "apple/findmy/rules.json"
+          ],
+          "surge": [
+            "apple/findmy/rules.list"
+          ],
+          "shadowrocket": [
+            "apple/findmy/rules.list"
+          ],
+          "quantumultx": [
+            "apple/findmy/rules.list"
+          ],
+          "egern": [
+            "apple/findmy/rules.yaml"
+          ],
+          "loon": [
+            "apple/findmy/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "qq": {
+      "service_id": "qq",
+      "identity": "pass",
+      "source": {
+        "status": "blocked",
+        "snapshot": null,
+        "sha256": null,
+        "rule_count": 0,
+        "hints": [
+          "blackmatrix7"
+        ]
+      },
+      "canonical": "blocked",
+      "semantic": {
+        "status": "blocked",
+        "probes": [],
+        "reasons": [
+          "independent_source_missing"
+        ]
+      },
+      "seven_client": {
+        "status": "blocked",
+        "present": [],
+        "count": 0,
+        "expected": 7,
+        "artifacts": {}
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [
+        "source",
+        "canonical",
+        "semantic_audit",
+        "seven_client"
+      ],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "blocked"
+    },
+    "qqmusic": {
+      "service_id": "qqmusic",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/popular-rules-source/PRS_qqmusic.domains.txt",
+        "sha256": "7b339dafb02213f9b29d7582664a1f802b9045ea27b99a47eeb6780c261a9119",
+        "rule_count": 1,
+        "hints": [
+          "popular-rules-source",
+          "blackmatrix7"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "9402b9bb44036db0eb46d2a2f113c83c031ac654fc4ffb13369a6acbdd9bb91e",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "y.qq.com",
+            "positive_match": true,
+            "negative": "x.y.qq.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "tencent/qqmusic/rules.yaml"
+          ],
+          "singbox": [
+            "tencent/qqmusic/rules.json"
+          ],
+          "surge": [
+            "tencent/qqmusic/rules.list"
+          ],
+          "shadowrocket": [
+            "tencent/qqmusic/rules.list"
+          ],
+          "quantumultx": [
+            "tencent/qqmusic/rules.list"
+          ],
+          "egern": [
+            "tencent/qqmusic/rules.yaml"
+          ],
+          "loon": [
+            "tencent/qqmusic/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "qqmail": {
+      "service_id": "qqmail",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/popular-rules-source/PRS_qqmail.domains.txt",
+        "sha256": "e9f05b72a86ad9be815cde834ae1cd2097877c16dcea5eacb23885f52af4f24d",
+        "rule_count": 1,
+        "hints": [
+          "popular-rules-source",
+          "blackmatrix7"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "7fb1f0f20c4567b4d0a05c983912b04ff16bcbd9ce67e6f007d97417b5104705",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "mail.qq.com",
+            "positive_match": true,
+            "negative": "x.mail.qq.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "tencent/qqmail/rules.yaml"
+          ],
+          "singbox": [
+            "tencent/qqmail/rules.json"
+          ],
+          "surge": [
+            "tencent/qqmail/rules.list"
+          ],
+          "shadowrocket": [
+            "tencent/qqmail/rules.list"
+          ],
+          "quantumultx": [
+            "tencent/qqmail/rules.list"
+          ],
+          "egern": [
+            "tencent/qqmail/rules.yaml"
+          ],
+          "loon": [
+            "tencent/qqmail/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "wecom": {
+      "service_id": "wecom",
+      "identity": "pass",
+      "source": {
+        "status": "blocked",
+        "snapshot": null,
+        "sha256": null,
+        "rule_count": 0,
+        "hints": [
+          "blackmatrix7"
+        ]
+      },
+      "canonical": "blocked",
+      "semantic": {
+        "status": "blocked",
+        "probes": [],
+        "reasons": [
+          "independent_source_missing"
+        ]
+      },
+      "seven_client": {
+        "status": "blocked",
+        "present": [],
+        "count": 0,
+        "expected": 7,
+        "artifacts": {}
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [
+        "source",
+        "canonical",
+        "semantic_audit",
+        "seven_client"
+      ],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "blocked"
+    },
+    "tencentmeeting": {
+      "service_id": "tencentmeeting",
+      "identity": "pass",
+      "source": {
+        "status": "blocked",
+        "snapshot": null,
+        "sha256": null,
+        "rule_count": 0,
+        "hints": [
+          "blackmatrix7"
+        ]
+      },
+      "canonical": "blocked",
+      "semantic": {
+        "status": "blocked",
+        "probes": [],
+        "reasons": [
+          "independent_source_missing"
+        ]
+      },
+      "seven_client": {
+        "status": "blocked",
+        "present": [],
+        "count": 0,
+        "expected": 7,
+        "artifacts": {}
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [
+        "source",
+        "canonical",
+        "semantic_audit",
+        "seven_client"
+      ],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "blocked"
+    },
+    "tencentcloud": {
+      "service_id": "tencentcloud",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/popular-rules-source/PRS_tencentcloud.domains.txt",
+        "sha256": "3aee7d20287e15c9e109c97d04571758bc4b66fd74ace8d84967827e36260991",
+        "rule_count": 1,
+        "hints": [
+          "popular-rules-source",
+          "blackmatrix7",
+          "metacubex",
+          "v2fly"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "cda28c18797da9ba0884e8789d67818441c0ec4e2fc991744baa4fdfce22c22d",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "cloud.tencent.com",
+            "positive_match": true,
+            "negative": "x.cloud.tencent.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "tencent/tencentcloud/rules.yaml"
+          ],
+          "singbox": [
+            "tencent/tencentcloud/rules.json"
+          ],
+          "surge": [
+            "tencent/tencentcloud/rules.list"
+          ],
+          "shadowrocket": [
+            "tencent/tencentcloud/rules.list"
+          ],
+          "quantumultx": [
+            "tencent/tencentcloud/rules.list"
+          ],
+          "egern": [
+            "tencent/tencentcloud/rules.yaml"
+          ],
+          "loon": [
+            "tencent/tencentcloud/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "taobao": {
+      "service_id": "taobao",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/popular-rules-source/PRS_taobao.domains.txt",
+        "sha256": "88646cd8d663976d7e4c72bc3ce43c760b059faa12bf72e81c8a760ef2563fc0",
+        "rule_count": 14,
+        "hints": [
+          "popular-rules-source",
+          "blackmatrix7",
+          "metacubex"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "6590621f8b68a77013ff2d56609cec7db465b5250a23e8b8a79f48d47b12fdf0",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "alimarket.taobao.com",
+            "positive_match": true,
+            "negative": "x.alimarket.taobao.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "7496094c20843860b8fea94e0659240295bdbabe2d882038f7151583265142c8",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "eco.taobao.com",
+            "positive_match": true,
+            "negative": "x.eco.taobao.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "c999b471756edfe6e921aebd89bf9f586eb9e2688ad87f580811df221bac7ca3",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "gw.api.taobao.com",
+            "positive_match": true,
+            "negative": "x.gw.api.taobao.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "e2319ccaea72da807ab3ffb38b6b58f7a30cc0d6b9fca0297b43ac260870b95b",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "ju.taobao.com",
+            "positive_match": true,
+            "negative": "x.ju.taobao.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "f550b837000c8ca90a476e678054b3094f90eff156e92b51a4181de3b99725dc",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "login.taobao.com",
+            "positive_match": true,
+            "negative": "x.login.taobao.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "6ae6b7eaebf5c2a77baa0d8580a61242a54dce5884a91fd2bf90c47432e0061a",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "my.open.taobao.com",
+            "positive_match": true,
+            "negative": "x.my.open.taobao.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "alibaba/taobao/rules.yaml"
+          ],
+          "singbox": [
+            "alibaba/taobao/rules.json"
+          ],
+          "surge": [
+            "alibaba/taobao/rules.list"
+          ],
+          "shadowrocket": [
+            "alibaba/taobao/rules.list"
+          ],
+          "quantumultx": [
+            "alibaba/taobao/rules.list"
+          ],
+          "egern": [
+            "alibaba/taobao/rules.yaml"
+          ],
+          "loon": [
+            "alibaba/taobao/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "tmall": {
+      "service_id": "tmall",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/popular-rules-source/PRS_tmall.domains.txt",
+        "sha256": "4f2521212149543f1f267cb4b7d9bb89a544f168b33bd12ecd3207aaaedd412d",
+        "rule_count": 8,
+        "hints": [
+          "popular-rules-source",
+          "blackmatrix7"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "74c7409ab0589fe34c045a129443be488c005b5df222e3976a42b2f2e914f8cb",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "book.tmall.com",
+            "positive_match": true,
+            "negative": "x.book.tmall.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "0c042596efb8871b14d89ae4cd60e0a5cb155a45e5f7fc7bc720dee93aa6a0d2",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "car.tmall.com",
+            "positive_match": true,
+            "negative": "x.car.tmall.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "7490dcd95a8333d8f7e70241f408c4fc36d3a0369976af302665032143f9b0ea",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "chaoshi.tmall.com",
+            "positive_match": true,
+            "negative": "x.chaoshi.tmall.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "ae83dff664d4943d4213c5ab0aa5f1d62fc5f7c8d8146000f8dee9760a52d2de",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "detail.tmall.com",
+            "positive_match": true,
+            "negative": "x.detail.tmall.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "2b14788e98b8b4ab6387fdc25baf3e58ef4a9a790afa0d1c487785332ec40e6d",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "fragment.tmall.com",
+            "positive_match": true,
+            "negative": "x.fragment.tmall.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "135b45374a50cb04f112448cae77dad8e6ece7bc2499808093279ca50ca623aa",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "jstracker.www.tmall.com",
+            "positive_match": true,
+            "negative": "x.jstracker.www.tmall.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "alibaba/tmall/rules.yaml"
+          ],
+          "singbox": [
+            "alibaba/tmall/rules.json"
+          ],
+          "surge": [
+            "alibaba/tmall/rules.list"
+          ],
+          "shadowrocket": [
+            "alibaba/tmall/rules.list"
+          ],
+          "quantumultx": [
+            "alibaba/tmall/rules.list"
+          ],
+          "egern": [
+            "alibaba/tmall/rules.yaml"
+          ],
+          "loon": [
+            "alibaba/tmall/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "alibabacloud": {
+      "service_id": "alibabacloud",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_alibabacloud.list",
+        "sha256": "3ade01da88be899e5161139a57fe7cce350eede74a462fb24bb0c5ceddb76098",
+        "rule_count": 12,
+        "hints": [
+          "metacubex",
+          "v2fly"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "c43161f3d5c4c073021363d4a6a161165a4faa3d728be4eaef83e24072fe794e",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "alibabacloud.co.in",
+            "positive_match": true,
+            "negative": "x.alibabacloud.co.in.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "f6ebf13f9e09671f870461b8921c9107517eaaabf7189f27eee6d6f50ee3278e",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "alibabacloud.com",
+            "positive_match": true,
+            "negative": "x.alibabacloud.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "36c8a454f57357d8582fcfa82436d1207e22ea94a95da7d6188d32e2771bb5d1",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "alibabacloud.com.au",
+            "positive_match": true,
+            "negative": "x.alibabacloud.com.au.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "0ab408897e5f9cd1b2ea3b7f4b9345672475150e7da2dff0b0a3f5023ee45ab3",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "alibabacloud.com.hk",
+            "positive_match": true,
+            "negative": "x.alibabacloud.com.hk.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "ca87e1c545b4c6f8d3e3e88e1038ec18628087e76f92decc52b98ba851425add",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "alibabacloud.com.my",
+            "positive_match": true,
+            "negative": "x.alibabacloud.com.my.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "fa1244e1a5e7061b06d93b15b36b06b68e84b085edda575fcce0e2eca9abcb22",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "alibabacloud.com.sg",
+            "positive_match": true,
+            "negative": "x.alibabacloud.com.sg.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "alibaba/alibabacloud/rules.yaml"
+          ],
+          "singbox": [
+            "alibaba/alibabacloud/rules.json"
+          ],
+          "surge": [
+            "alibaba/alibabacloud/rules.list"
+          ],
+          "shadowrocket": [
+            "alibaba/alibabacloud/rules.list"
+          ],
+          "quantumultx": [
+            "alibaba/alibabacloud/rules.list"
+          ],
+          "egern": [
+            "alibaba/alibabacloud/rules.yaml"
+          ],
+          "loon": [
+            "alibaba/alibabacloud/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "1688": {
+      "service_id": "1688",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/popular-rules-source/PRS_1688.domains.txt",
+        "sha256": "65e6b0d571d62de22ae4a791113306d52207f94b25f74920a5533faa1ec220bb",
+        "rule_count": 3,
+        "hints": [
+          "popular-rules-source",
+          "blackmatrix7"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "8632fd1c6003d1f72158d31ad1efaa359a5424d9c0945ed1931b81bb151bd300",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "1688.com",
+            "positive_match": true,
+            "negative": "x.1688.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "a41eb720525a5e5b9f10f36667a6dc8d9c4c978e9b3819142aff2bc2b76e93ff",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "open.1688.com",
+            "positive_match": true,
+            "negative": "x.open.1688.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "45d7b391356527c266fe60f64d927143006119cf87a913c6b795758e3a01b4c3",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "www.1688.com",
+            "positive_match": true,
+            "negative": "x.www.1688.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "alibaba/1688/rules.yaml"
+          ],
+          "singbox": [
+            "alibaba/1688/rules.json"
+          ],
+          "surge": [
+            "alibaba/1688/rules.list"
+          ],
+          "shadowrocket": [
+            "alibaba/1688/rules.list"
+          ],
+          "quantumultx": [
+            "alibaba/1688/rules.list"
+          ],
+          "egern": [
+            "alibaba/1688/rules.yaml"
+          ],
+          "loon": [
+            "alibaba/1688/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "dingding": {
+      "service_id": "dingding",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/popular-rules-source/PRS_dingding.domains.txt",
+        "sha256": "0f354583693dbc07b32fd1b41d532d325dd55a9e9cce83b557a85b3a92b49908",
+        "rule_count": 6,
+        "hints": [
+          "popular-rules-source",
+          "blackmatrix7"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "09e03a0354edc1bedd05e4bf2d97791d09f7c0d1c56d487b9f43cc3d62eb91ef",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "developers.dingtalk.com",
+            "positive_match": true,
+            "negative": "x.developers.dingtalk.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "49467423561ee84400b14198b7fe333e8d4e9a97857ad705265a1661d629702c",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "open-dev.dingtalk.com",
+            "positive_match": true,
+            "negative": "x.open-dev.dingtalk.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "efe48f8cbb6f056ef447618b0eed97abeab78efedd9b3c6d2e4b8a1d52135372",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "open.dingtalk.com",
+            "positive_match": true,
+            "negative": "x.open.dingtalk.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "8dc7c129e1d42288a7428b96327b518a877fa9ae53b43debbab645109de19160",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "page.dingtalk.com",
+            "positive_match": true,
+            "negative": "x.page.dingtalk.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "f74c38c5061a55746ff1865970af4dda2ce291c712dcf197355b46c5c0dd5c73",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "table.dingtalk.com",
+            "positive_match": true,
+            "negative": "x.table.dingtalk.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "a9d5b308a3fe57cae3ee316b584db1cec4a1a389536ee903793be220300f2550",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "www.dingtalk.com",
+            "positive_match": true,
+            "negative": "x.www.dingtalk.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "alibaba/dingding/rules.yaml"
+          ],
+          "singbox": [
+            "alibaba/dingding/rules.json"
+          ],
+          "surge": [
+            "alibaba/dingding/rules.list"
+          ],
+          "shadowrocket": [
+            "alibaba/dingding/rules.list"
+          ],
+          "quantumultx": [
+            "alibaba/dingding/rules.list"
+          ],
+          "egern": [
+            "alibaba/dingding/rules.yaml"
+          ],
+          "loon": [
+            "alibaba/dingding/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "cainiao": {
+      "service_id": "cainiao",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/popular-rules-source/PRS_cainiao.domains.txt",
+        "sha256": "49d81715b12d8915f089f4d09710c6ca41cad95f84414daf068990ea7fb4897d",
+        "rule_count": 1,
+        "hints": [
+          "popular-rules-source",
+          "blackmatrix7"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "2da8dc48178546d7dec5ee702eea3efedbfa495fc1ade8f50c4a50d6329bb768",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "gpn.cainiao.com",
+            "positive_match": true,
+            "negative": "x.gpn.cainiao.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "alibaba/cainiao/rules.yaml"
+          ],
+          "singbox": [
+            "alibaba/cainiao/rules.json"
+          ],
+          "surge": [
+            "alibaba/cainiao/rules.list"
+          ],
+          "shadowrocket": [
+            "alibaba/cainiao/rules.list"
+          ],
+          "quantumultx": [
+            "alibaba/cainiao/rules.list"
+          ],
+          "egern": [
+            "alibaba/cainiao/rules.yaml"
+          ],
+          "loon": [
+            "alibaba/cainiao/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "doubao": {
+      "service_id": "doubao",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_doubao.list",
+        "sha256": "bcab7cbf1849ceb55e517ab8fcfb6fd097a49cf74f60eb7d2dfd40876f836761",
+        "rule_count": 32,
+        "hints": [
+          "metacubex"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "b2b3d841c4848f7585ff5bbcd6151d65b960e1abf4c9abb8c91b3b2d0589f47c",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "butterfly-static.cn",
+            "positive_match": true,
+            "negative": "x.butterfly-static.cn.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "10922be54cd3a44b70bbbef89152016e53c80cefcef0ad74828b221fd32736ca",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "butterflyai.cn",
+            "positive_match": true,
+            "negative": "x.butterflyai.cn.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "70be45074425863af116c53feb2c2d46a02063ae61a567d143d3361901cc06f5",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "coze-dns-01.com",
+            "positive_match": true,
+            "negative": "x.coze-dns-01.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "47892e72240b66bed638b2a6153888275bc79e8106b2727567526e0fb2fb137e",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "coze.cn",
+            "positive_match": true,
+            "negative": "x.coze.cn.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "7114293bcffb62ac125c162062b75da8eff45b6832028c0e42b059cc36e5eaaa",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "coze.email",
+            "positive_match": true,
+            "negative": "x.coze.email.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "6fd32d8888f0dcd4c183336e928ac7cc0a08656235dfed66ea5b6a9e4962933f",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "coze.site",
+            "positive_match": true,
+            "negative": "x.coze.site.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "bytedance/doubao/rules.yaml"
+          ],
+          "singbox": [
+            "bytedance/doubao/rules.json"
+          ],
+          "surge": [
+            "bytedance/doubao/rules.list"
+          ],
+          "shadowrocket": [
+            "bytedance/doubao/rules.list"
+          ],
+          "quantumultx": [
+            "bytedance/doubao/rules.list"
+          ],
+          "egern": [
+            "bytedance/doubao/rules.yaml"
+          ],
+          "loon": [
+            "bytedance/doubao/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "feishu": {
+      "service_id": "feishu",
+      "identity": "pass",
+      "source": {
+        "status": "blocked",
+        "snapshot": null,
+        "sha256": null,
+        "rule_count": 0,
+        "hints": [
+          "blackmatrix7"
+        ]
+      },
+      "canonical": "blocked",
+      "semantic": {
+        "status": "blocked",
+        "probes": [],
+        "reasons": [
+          "independent_source_missing"
+        ]
+      },
+      "seven_client": {
+        "status": "blocked",
+        "present": [],
+        "count": 0,
+        "expected": 7,
+        "artifacts": {}
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [
+        "source",
+        "canonical",
+        "semantic_audit",
+        "seven_client"
+      ],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "blocked"
+    },
+    "baidunetdisk": {
+      "service_id": "baidunetdisk",
+      "identity": "pass",
+      "source": {
+        "status": "blocked",
+        "snapshot": null,
+        "sha256": null,
+        "rule_count": 0,
+        "hints": [
+          "blackmatrix7"
+        ]
+      },
+      "canonical": "blocked",
+      "semantic": {
+        "status": "blocked",
+        "probes": [],
+        "reasons": [
+          "independent_source_missing"
+        ]
+      },
+      "seven_client": {
+        "status": "blocked",
+        "present": [],
+        "count": 0,
+        "expected": 7,
+        "artifacts": {}
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [
+        "source",
+        "canonical",
+        "semantic_audit",
+        "seven_client"
+      ],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "blocked"
+    },
+    "youdao": {
+      "service_id": "youdao",
+      "identity": "pass",
+      "source": {
+        "status": "blocked",
+        "snapshot": null,
+        "sha256": null,
+        "rule_count": 0,
+        "hints": [
+          "blackmatrix7",
+          "metacubex"
+        ]
+      },
+      "canonical": "blocked",
+      "semantic": {
+        "status": "blocked",
+        "probes": [],
+        "reasons": [
+          "independent_source_missing"
+        ]
+      },
+      "seven_client": {
+        "status": "blocked",
+        "present": [],
+        "count": 0,
+        "expected": 7,
+        "artifacts": {}
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [
+        "source",
+        "canonical",
+        "semantic_audit",
+        "seven_client"
+      ],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "blocked"
+    },
+    "dewu": {
+      "service_id": "dewu",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_dewu.list",
+        "sha256": "b0a7bf9e2a5e627fa1a2a3ee7f298dea8a4389398d87ea47704f368bfb390c00",
+        "rule_count": 45,
+        "hints": [
+          "metacubex"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "58a3beafef3afa6edae0a7bf08a899fadf06bdb242992d22a7a5df3005dcb753",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "giftatdw.cn",
+            "positive_match": true,
+            "negative": "x.giftatdw.cn.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "2a275555fdd0f5ae75afaacd02c935346f37f0590dd4d5efafe1d49548a1768f",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "dewu-inner.com",
+            "positive_match": true,
+            "negative": "x.dewu-inner.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "d41f7ce61251e0e86aff359011ef368e8dd6f51e6756b985fa891a6aa2a9d088",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "dewu-inner.net",
+            "positive_match": true,
+            "negative": "x.dewu-inner.net.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "f91416392e317c267bc9d9ea2657aeeb7c8fc87125c16867e706b5140ad23f05",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "dewu.co",
+            "positive_match": true,
+            "negative": "x.dewu.co.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "dc46f314d21c944d18cf49c5b2c39a7a905fd78923470294628ae9d5129c0e7d",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "dewu.com",
+            "positive_match": true,
+            "negative": "x.dewu.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "c2d7da5dd956f71ff174b07729d00cd2d28b989920596fc7f761c37de90e3d25",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "dewu.net",
+            "positive_match": true,
+            "negative": "x.dewu.net.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "dewu/dewu/rules.yaml"
+          ],
+          "singbox": [
+            "dewu/dewu/rules.json"
+          ],
+          "surge": [
+            "dewu/dewu/rules.list"
+          ],
+          "shadowrocket": [
+            "dewu/dewu/rules.list"
+          ],
+          "quantumultx": [
+            "dewu/dewu/rules.list"
+          ],
+          "egern": [
+            "dewu/dewu/rules.yaml"
+          ],
+          "loon": [
+            "dewu/dewu/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "deepseek": {
+      "service_id": "deepseek",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_deepseek.list",
+        "sha256": "fcb7018ebebc5716a7c8351c14c07455ebc68cbadb0a0954ffe6ac4d46bc8502",
+        "rule_count": 2,
+        "hints": [
+          "metacubex",
+          "v2fly"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "efabb6c0e1f7f2d6c13932418821ca9238e795a54ff0c9abd6c61e00d0094f67",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "deepseek.com",
+            "positive_match": true,
+            "negative": "x.deepseek.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "4f75b334aab090031200ec2c4c4b8d4ebb0b2911306cf4b90459784b8c9fb72a",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "deepseeksvc.com",
+            "positive_match": true,
+            "negative": "x.deepseeksvc.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "deepseek/deepseek/rules.yaml"
+          ],
+          "singbox": [
+            "deepseek/deepseek/rules.json"
+          ],
+          "surge": [
+            "deepseek/deepseek/rules.list"
+          ],
+          "shadowrocket": [
+            "deepseek/deepseek/rules.list"
+          ],
+          "quantumultx": [
+            "deepseek/deepseek/rules.list"
+          ],
+          "egern": [
+            "deepseek/deepseek/rules.yaml"
+          ],
+          "loon": [
+            "deepseek/deepseek/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "perplexity": {
+      "service_id": "perplexity",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_perplexity.list",
+        "sha256": "f07ed9821d704b8a42efcf9f7965e1a1418a9c5a12f35dcbdfbe3d4925d69201",
+        "rule_count": 5,
+        "hints": [
+          "metacubex",
+          "v2fly"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "9bcff4c4cf259a5568ed369d1895ecd07c6437615ca52b032aa176d93f1811f3",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "ppl-ai-file-upload.s3.amazonaws.com",
+            "positive_match": true,
+            "negative": "x.ppl-ai-file-upload.s3.amazonaws.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "903c62fb5e0c662a7929ac2a66da7cafcbd0970f78830f1de1eb932481093adf",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "pplx-res.cloudinary.com",
+            "positive_match": true,
+            "negative": "x.pplx-res.cloudinary.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "7fe291cb2d19d96b9f28241ccf8901efa2d3419d7d5d7b5e96a7538a83b43c4c",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "perplexity.ai",
+            "positive_match": true,
+            "negative": "x.perplexity.ai.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "2c5cb549ade54912d0332c5b20e78e14780aa4150827cae2e643e9627285b138",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "perplexity.com",
+            "positive_match": true,
+            "negative": "x.perplexity.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "f423b412cdbe7fe5f5c3db97abf160556fc55fd7f2ef271a706e6815f5740093",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "pplx.ai",
+            "positive_match": true,
+            "negative": "x.pplx.ai.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "perplexity/perplexity/rules.yaml"
+          ],
+          "singbox": [
+            "perplexity/perplexity/rules.json"
+          ],
+          "surge": [
+            "perplexity/perplexity/rules.list"
+          ],
+          "shadowrocket": [
+            "perplexity/perplexity/rules.list"
+          ],
+          "quantumultx": [
+            "perplexity/perplexity/rules.list"
+          ],
+          "egern": [
+            "perplexity/perplexity/rules.yaml"
+          ],
+          "loon": [
+            "perplexity/perplexity/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [
+        "overlap_audit"
+      ],
+      "overlap_audit": {
+        "status": "blocked",
+        "runtime_probe_count": 148,
+        "collisions": [
+          {
+            "service": "perplexity",
+            "probe": "ppl-ai-file-upload.s3.amazonaws.com",
+            "other_service": "aws",
+            "rule_id": "30139a6cd80dc1ae86dcac3d5b8fb6dd1a456e20293b1a8d6f37c11409ea8480"
+          }
+        ]
+      },
+      "status": "blocked"
+    },
+    "grok": {
+      "service_id": "grok",
+      "identity": "pass",
+      "source": {
+        "status": "blocked",
+        "snapshot": null,
+        "sha256": null,
+        "rule_count": 0,
+        "hints": [
+          "metacubex"
+        ]
+      },
+      "canonical": "blocked",
+      "semantic": {
+        "status": "blocked",
+        "probes": [],
+        "reasons": [
+          "independent_source_missing"
+        ]
+      },
+      "seven_client": {
+        "status": "blocked",
+        "present": [],
+        "count": 0,
+        "expected": 7,
+        "artifacts": {}
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [
+        "source",
+        "canonical",
+        "semantic_audit",
+        "seven_client"
+      ],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "blocked"
+    },
+    "groq": {
+      "service_id": "groq",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_groq.list",
+        "sha256": "7b15edad3da6fcfc18dc648c1a072636b5fa8116fc51538f4d1e9583ebf21ea4",
+        "rule_count": 1,
+        "hints": [
+          "metacubex"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "7bbda749c306a78daff84947c1a652b459b73b56e4380bfdd873cea1a2165000",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "groq.com",
+            "positive_match": true,
+            "negative": "x.groq.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "groq/groq/rules.yaml"
+          ],
+          "singbox": [
+            "groq/groq/rules.json"
+          ],
+          "surge": [
+            "groq/groq/rules.list"
+          ],
+          "shadowrocket": [
+            "groq/groq/rules.list"
+          ],
+          "quantumultx": [
+            "groq/groq/rules.list"
+          ],
+          "egern": [
+            "groq/groq/rules.yaml"
+          ],
+          "loon": [
+            "groq/groq/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "huggingface": {
+      "service_id": "huggingface",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_huggingface.list",
+        "sha256": "8ee30c1014ac23d5e0481ef3263177078c917d2d21fea7bf6d5760efbd0df678",
+        "rule_count": 3,
+        "hints": [
+          "metacubex",
+          "v2fly"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "187c5e23bc4d4950c1b2b8cc58f691bc811764591dca96c8e2dccdcbdb7c79f7",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "hf.co",
+            "positive_match": true,
+            "negative": "x.hf.co.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "5c5c381ac43bdd4129196328c66a4030c449d7f33db9db5958b0567a5fd6fbb8",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "hf.space",
+            "positive_match": true,
+            "negative": "x.hf.space.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "03ae4fb2de5a65178d66a3b6503608fd847def033634a41786aca2d072e8b141",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "huggingface.co",
+            "positive_match": true,
+            "negative": "x.huggingface.co.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "huggingface/huggingface/rules.yaml"
+          ],
+          "singbox": [
+            "huggingface/huggingface/rules.json"
+          ],
+          "surge": [
+            "huggingface/huggingface/rules.list"
+          ],
+          "shadowrocket": [
+            "huggingface/huggingface/rules.list"
+          ],
+          "quantumultx": [
+            "huggingface/huggingface/rules.list"
+          ],
+          "egern": [
+            "huggingface/huggingface/rules.yaml"
+          ],
+          "loon": [
+            "huggingface/huggingface/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "cursor": {
+      "service_id": "cursor",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_cursor.list",
+        "sha256": "76846ab4cd6c8ed5c1b402a99ad4320323e03de13d546fe656055f4d8cf5de0f",
+        "rule_count": 4,
+        "hints": [
+          "metacubex"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "0793cc11f853be0c3221d60c9c99725415e3040d7edb26ae4ec599ae876fc178",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "cursor-cdn.com",
+            "positive_match": true,
+            "negative": "x.cursor-cdn.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "d561189cd306e40a74e6f15c185bdb4c7a24ec89e5e1c0aaecdc63111e101cfb",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "cursor.com",
+            "positive_match": true,
+            "negative": "x.cursor.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "8837908cd9e3bf0bbb598902bc6211867516a7de446f234c60ae9e07d85103b9",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "cursor.sh",
+            "positive_match": true,
+            "negative": "x.cursor.sh.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "bb8c0a5c6289ab680a2e296add5f0c86f735b1b4055871267f1545921056eb60",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "cursorapi.com",
+            "positive_match": true,
+            "negative": "x.cursorapi.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "cursor/cursor/rules.yaml"
+          ],
+          "singbox": [
+            "cursor/cursor/rules.json"
+          ],
+          "surge": [
+            "cursor/cursor/rules.list"
+          ],
+          "shadowrocket": [
+            "cursor/cursor/rules.list"
+          ],
+          "quantumultx": [
+            "cursor/cursor/rules.list"
+          ],
+          "egern": [
+            "cursor/cursor/rules.yaml"
+          ],
+          "loon": [
+            "cursor/cursor/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "elevenlabs": {
+      "service_id": "elevenlabs",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_elevenlabs.list",
+        "sha256": "f57d6a18669fa9fd0f5bc580b64315d2de9579e07dff9ac61eedd704179cbb59",
+        "rule_count": 2,
+        "hints": [
+          "metacubex",
+          "v2fly"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "c9850bc8d7d2658151daf42fbadf6f264c8db376d75f0a6f303f9d5b5617f6c8",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "elevenlabs.com",
+            "positive_match": true,
+            "negative": "x.elevenlabs.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "8d40f721867b413fdca3f4ee39b045eba33f2a69796d7109009a22f2bd972cf7",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "elevenlabs.io",
+            "positive_match": true,
+            "negative": "x.elevenlabs.io.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "elevenlabs/elevenlabs/rules.yaml"
+          ],
+          "singbox": [
+            "elevenlabs/elevenlabs/rules.json"
+          ],
+          "surge": [
+            "elevenlabs/elevenlabs/rules.list"
+          ],
+          "shadowrocket": [
+            "elevenlabs/elevenlabs/rules.list"
+          ],
+          "quantumultx": [
+            "elevenlabs/elevenlabs/rules.list"
+          ],
+          "egern": [
+            "elevenlabs/elevenlabs/rules.yaml"
+          ],
+          "loon": [
+            "elevenlabs/elevenlabs/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "aws": {
+      "service_id": "aws",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_aws.list",
+        "sha256": "a1fc684ef754d2558f592cdbbe1894f5c4709da4c8ed6b751628d23e10750fa1",
+        "rule_count": 77,
+        "hints": [
+          "metacubex",
+          "v2fly"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "60707cea30ea53ce0824659dd27c1794d1e56731871e5804b8f1884dd44b9cf1",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "aws",
+            "positive_match": true,
+            "negative": "x.aws.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "4c9815f6add0e7d27f9a21a3d8b91b22397e99e5851c3a902402a3dcde965bef",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "awsbraket.com",
+            "positive_match": true,
+            "negative": "x.awsbraket.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "77018dda3133118fc52406fa69976e451969376c9caf88b1a0cb255a4ef8dabb",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "thinkboxsoftware.com",
+            "positive_match": true,
+            "negative": "x.thinkboxsoftware.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "2c1aec36a73068cb8a274d059a6a86a39f42623e5e60e3d6843894b2d9360f82",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "aesworkshops.com",
+            "positive_match": true,
+            "negative": "x.aesworkshops.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "0ab26436d627e54f158a9bf37cfd9631f95dbc93572fc3910e4a72d06d048c57",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "amazonaws-china.com",
+            "positive_match": true,
+            "negative": "x.amazonaws-china.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "ec1e990c91299eaa36a89ba7d467dcbd5ee2b67e798bef4f93ca6d4376861c7c",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "amazonaws.biz",
+            "positive_match": true,
+            "negative": "x.amazonaws.biz.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "amazon/aws/rules.yaml"
+          ],
+          "singbox": [
+            "amazon/aws/rules.json"
+          ],
+          "surge": [
+            "amazon/aws/rules.list"
+          ],
+          "shadowrocket": [
+            "amazon/aws/rules.list"
+          ],
+          "quantumultx": [
+            "amazon/aws/rules.list"
+          ],
+          "egern": [
+            "amazon/aws/rules.yaml"
+          ],
+          "loon": [
+            "amazon/aws/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [
+        "overlap_audit"
+      ],
+      "overlap_audit": {
+        "status": "blocked",
+        "runtime_probe_count": 148,
+        "collisions": [
+          {
+            "service": "perplexity",
+            "probe": "ppl-ai-file-upload.s3.amazonaws.com",
+            "other_service": "aws",
+            "rule_id": "30139a6cd80dc1ae86dcac3d5b8fb6dd1a456e20293b1a8d6f37c11409ea8480"
+          },
+          {
+            "service": "netlify",
+            "probe": "acd89244c803f7181.awsglobalaccelerator.com",
+            "other_service": "aws",
+            "rule_id": "f13ffd34e874316f81b027e9762e0f62d6aae6645aeacc281f126d1edc712259"
+          },
+          {
+            "service": "netlify",
+            "probe": "afa7f374f51cc8991.awsglobalaccelerator.com",
+            "other_service": "aws",
+            "rule_id": "f13ffd34e874316f81b027e9762e0f62d6aae6645aeacc281f126d1edc712259"
+          },
+          {
+            "service": "netlify",
+            "probe": "d33wubrfki0l68.cloudfront.net",
+            "other_service": "aws",
+            "rule_id": "6aadfa4417d397fc081955fcb8072ba9a0fb0c1ef6ab8a94fe4a2fd0bf138d68"
+          },
+          {
+            "service": "canva",
+            "probe": "affinity-beta.s3.amazonaws.com",
+            "other_service": "aws",
+            "rule_id": "30139a6cd80dc1ae86dcac3d5b8fb6dd1a456e20293b1a8d6f37c11409ea8480"
+          },
+          {
+            "service": "canva",
+            "probe": "affinity-lessons.s3.amazonaws.com",
+            "other_service": "aws",
+            "rule_id": "30139a6cd80dc1ae86dcac3d5b8fb6dd1a456e20293b1a8d6f37c11409ea8480"
+          },
+          {
+            "service": "roblox",
+            "probe": "d1unuk07s6td74.cloudfront.net",
+            "other_service": "aws",
+            "rule_id": "6aadfa4417d397fc081955fcb8072ba9a0fb0c1ef6ab8a94fe4a2fd0bf138d68"
+          },
+          {
+            "service": "roblox",
+            "probe": "roblox-load-generator-configuration.s3.us-east-2.amazonaws.com",
+            "other_service": "aws",
+            "rule_id": "30139a6cd80dc1ae86dcac3d5b8fb6dd1a456e20293b1a8d6f37c11409ea8480"
+          }
+        ]
+      },
+      "status": "blocked"
+    },
+    "azure": {
+      "service_id": "azure",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_azure.list",
+        "sha256": "8294f7e677491cd0a5db5e425141f88c3a998646386afcccf51b4c823b41054a",
+        "rule_count": 151,
+        "hints": [
+          "metacubex",
+          "v2fly"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "03a999fc9845e6de1253effb37b1f5e28cbe73bb7ae028cdb642e04cdf7047f6",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "azure.microsoft.com",
+            "positive_match": true,
+            "negative": "x.azure.microsoft.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "08cfde4a2ad6f801b78b8b22fd7c6f93c1e098f3c61d66d3d6c89ec317ed6669",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "azuremarketplace.microsoft.com",
+            "positive_match": true,
+            "negative": "x.azuremarketplace.microsoft.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "8f4a990d3263f5b806b6f4893556f7629f885f029708708a6bb85537a09d2519",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "azure",
+            "positive_match": true,
+            "negative": "x.azure.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "c5de8c30f305f4d211b995de4c7f041fc5b4dd99580a23e57e857921c6106e74",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "aadrm.com",
+            "positive_match": true,
+            "negative": "x.aadrm.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "4703c8d659855765ab1124fa6c1c672e6f358cccef0e22d4a894062366097ea2",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "azure-api.net",
+            "positive_match": true,
+            "negative": "x.azure-api.net.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "9eb58637385b1e2d025a06739a302b29c7cbb4897aa67bd1438b6ba46c3c3c8c",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "azure-devices-int.net",
+            "positive_match": true,
+            "negative": "x.azure-devices-int.net.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "microsoft/azure/rules.yaml"
+          ],
+          "singbox": [
+            "microsoft/azure/rules.json"
+          ],
+          "surge": [
+            "microsoft/azure/rules.list"
+          ],
+          "shadowrocket": [
+            "microsoft/azure/rules.list"
+          ],
+          "quantumultx": [
+            "microsoft/azure/rules.list"
+          ],
+          "egern": [
+            "microsoft/azure/rules.yaml"
+          ],
+          "loon": [
+            "microsoft/azure/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "googlecloud": {
+      "service_id": "googlecloud",
+      "identity": "pass",
+      "source": {
+        "status": "blocked",
+        "snapshot": null,
+        "sha256": null,
+        "rule_count": 0,
+        "hints": [
+          "metacubex",
+          "v2fly"
+        ]
+      },
+      "canonical": "blocked",
+      "semantic": {
+        "status": "blocked",
+        "probes": [],
+        "reasons": [
+          "independent_source_missing"
+        ]
+      },
+      "seven_client": {
+        "status": "blocked",
+        "present": [],
+        "count": 0,
+        "expected": 7,
+        "artifacts": {}
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [
+        "source",
+        "canonical",
+        "semantic_audit",
+        "seven_client"
+      ],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "blocked"
+    },
+    "firebase": {
+      "service_id": "firebase",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_firebase.list",
+        "sha256": "7b91dd56eec70dd2884d6e4ea00efaef1aa016380525b9e3b266912e99b202a9",
+        "rule_count": 23,
+        "hints": [
+          "metacubex",
+          "v2fly"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "a3ac331ae379e3c6d5ea36e42b765184297f702872c5313a0fd06328d5c294ac",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "firebase.googleapis.com",
+            "positive_match": true,
+            "negative": "x.firebase.googleapis.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "ae8b6be479b757dfd3b2e45abbb5ad7b02ca14ecb97ee04084f0fa8d9ebf34d1",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "firebaseappcheck.googleapis.com",
+            "positive_match": true,
+            "negative": "x.firebaseappcheck.googleapis.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "10b0844ead3df74a812024e878d09c15987617f85c6aded74e879e157d2ca095",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "firebaseappdistribution.googleapis.com",
+            "positive_match": true,
+            "negative": "x.firebaseappdistribution.googleapis.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "44013463263f1f47b32489446f3b9ec3a86b93c98cceee61c4a36bd21a89c69b",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "firebaseapptesters.googleapis.com",
+            "positive_match": true,
+            "negative": "x.firebaseapptesters.googleapis.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "414876d0d3673badec4988ab4fcef8dc7257d6ed696613a14676f44870878ea1",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "firebasedynamiclinks-ipv4.googleapis.com",
+            "positive_match": true,
+            "negative": "x.firebasedynamiclinks-ipv4.googleapis.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "d68e46bd60b7be4a7fd7fdb15e965d7ee7306feb53b49149429a2d1c9dff93e5",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "firebasedynamiclinks-ipv6.googleapis.com",
+            "positive_match": true,
+            "negative": "x.firebasedynamiclinks-ipv6.googleapis.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "google/firebase/rules.yaml"
+          ],
+          "singbox": [
+            "google/firebase/rules.json"
+          ],
+          "surge": [
+            "google/firebase/rules.list"
+          ],
+          "shadowrocket": [
+            "google/firebase/rules.list"
+          ],
+          "quantumultx": [
+            "google/firebase/rules.list"
+          ],
+          "egern": [
+            "google/firebase/rules.yaml"
+          ],
+          "loon": [
+            "google/firebase/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "bitbucket": {
+      "service_id": "bitbucket",
+      "identity": "pass",
+      "source": {
+        "status": "blocked",
+        "snapshot": null,
+        "sha256": null,
+        "rule_count": 0,
+        "hints": [
+          "v2fly",
+          "blackmatrix7"
+        ]
+      },
+      "canonical": "blocked",
+      "semantic": {
+        "status": "blocked",
+        "probes": [],
+        "reasons": [
+          "independent_source_missing"
+        ]
+      },
+      "seven_client": {
+        "status": "blocked",
+        "present": [],
+        "count": 0,
+        "expected": 7,
+        "artifacts": {}
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [
+        "source",
+        "canonical",
+        "semantic_audit",
+        "seven_client"
+      ],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "blocked"
+    },
+    "npm": {
+      "service_id": "npm",
+      "identity": "pass",
+      "source": {
+        "status": "blocked",
+        "snapshot": null,
+        "sha256": null,
+        "rule_count": 0,
+        "hints": [
+          "candidate_new_source"
+        ]
+      },
+      "canonical": "blocked",
+      "semantic": {
+        "status": "blocked",
+        "probes": [],
+        "reasons": [
+          "independent_source_missing"
+        ]
+      },
+      "seven_client": {
+        "status": "blocked",
+        "present": [],
+        "count": 0,
+        "expected": 7,
+        "artifacts": {}
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [
+        "source",
+        "canonical",
+        "semantic_audit",
+        "seven_client"
+      ],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "blocked"
+    },
+    "pypi": {
+      "service_id": "pypi",
+      "identity": "pass",
+      "source": {
+        "status": "blocked",
+        "snapshot": null,
+        "sha256": null,
+        "rule_count": 0,
+        "hints": [
+          "candidate_new_source"
+        ]
+      },
+      "canonical": "blocked",
+      "semantic": {
+        "status": "blocked",
+        "probes": [],
+        "reasons": [
+          "independent_source_missing"
+        ]
+      },
+      "seven_client": {
+        "status": "blocked",
+        "present": [],
+        "count": 0,
+        "expected": 7,
+        "artifacts": {}
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [
+        "source",
+        "canonical",
+        "semantic_audit",
+        "seven_client"
+      ],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "blocked"
+    },
+    "netlify": {
+      "service_id": "netlify",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_netlify.list",
+        "sha256": "1c80594b4e026135c4272ce273b34de198676dfbdb69ae0782abcd1a75c9d3d8",
+        "rule_count": 10,
+        "hints": [
+          "metacubex",
+          "v2fly"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "a0b76ef3bfb8100e94492442d275a998f7d7c83823708e05bb1d567c500bdbd5",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "acd89244c803f7181.awsglobalaccelerator.com",
+            "positive_match": true,
+            "negative": "x.acd89244c803f7181.awsglobalaccelerator.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "d3aef25ac4114a754494129910351183ddb907fee758012c36263c2f7a2d954d",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "afa7f374f51cc8991.awsglobalaccelerator.com",
+            "positive_match": true,
+            "negative": "x.afa7f374f51cc8991.awsglobalaccelerator.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "f24417d7ad0b6f74c6998a428a7fe0e9eaaba2606fd3516119b935f77ecea8d3",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "d33wubrfki0l68.cloudfront.net",
+            "positive_match": true,
+            "negative": "x.d33wubrfki0l68.cloudfront.net.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "1cff093e53e1af252e81b083c2a689b35453ec937824fa728a9ea30825fb1c7e",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "bitballoon.com",
+            "positive_match": true,
+            "negative": "x.bitballoon.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "c9dca201d089ef00d526d4cfc9bb673ca7009621d5c701acd6573006357645bd",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "netlify.app",
+            "positive_match": true,
+            "negative": "x.netlify.app.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "2ee60ebe7fa956aa035ea0164bdb3b42d7127a607a5ae5490d29b3ce58a32027",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "netlify.com",
+            "positive_match": true,
+            "negative": "x.netlify.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "netlify/netlify/rules.yaml"
+          ],
+          "singbox": [
+            "netlify/netlify/rules.json"
+          ],
+          "surge": [
+            "netlify/netlify/rules.list"
+          ],
+          "shadowrocket": [
+            "netlify/netlify/rules.list"
+          ],
+          "quantumultx": [
+            "netlify/netlify/rules.list"
+          ],
+          "egern": [
+            "netlify/netlify/rules.yaml"
+          ],
+          "loon": [
+            "netlify/netlify/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [
+        "overlap_audit"
+      ],
+      "overlap_audit": {
+        "status": "blocked",
+        "runtime_probe_count": 148,
+        "collisions": [
+          {
+            "service": "netlify",
+            "probe": "acd89244c803f7181.awsglobalaccelerator.com",
+            "other_service": "aws",
+            "rule_id": "f13ffd34e874316f81b027e9762e0f62d6aae6645aeacc281f126d1edc712259"
+          },
+          {
+            "service": "netlify",
+            "probe": "afa7f374f51cc8991.awsglobalaccelerator.com",
+            "other_service": "aws",
+            "rule_id": "f13ffd34e874316f81b027e9762e0f62d6aae6645aeacc281f126d1edc712259"
+          },
+          {
+            "service": "netlify",
+            "probe": "d33wubrfki0l68.cloudfront.net",
+            "other_service": "aws",
+            "rule_id": "6aadfa4417d397fc081955fcb8072ba9a0fb0c1ef6ab8a94fe4a2fd0bf138d68"
+          }
+        ]
+      },
+      "status": "blocked"
+    },
+    "canva": {
+      "service_id": "canva",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_canva.list",
+        "sha256": "6fe98f224cb0ee56d809ed85227a0043a0b0858bc5a76467062e883c0e959f24",
+        "rule_count": 6,
+        "hints": [
+          "metacubex"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "716452033ed18b58c030de31c62900ae3714dae8fbe6b9b3d4ef19ea83b2f4b0",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "affinity.studio",
+            "positive_match": true,
+            "negative": "x.affinity.studio.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "49a8f066729814f45ed5898338f48dc2eb1745b77c8afb99072bd2863a0d9a77",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "canva.com",
+            "positive_match": true,
+            "negative": "x.canva.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "1bf0bcea81dc4071701217ff71f55d42914a8fa9e32a81e3b503240bcdd5a7a7",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "canvastatus.com",
+            "positive_match": true,
+            "negative": "x.canvastatus.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "8472dc8216a9c190bf0846db631b6597384ea67e2554857070d2480c9ce45e21",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "affinity.api.serifservices.com",
+            "positive_match": true,
+            "negative": "x.affinity.api.serifservices.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "798034b66e8b22e6a9bf4861208bca898573008324a2c1177720f83bb3e6401e",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "affinity-beta.s3.amazonaws.com",
+            "positive_match": true,
+            "negative": "x.affinity-beta.s3.amazonaws.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "27478a11e589ca5ee9c2643c12dfda241330dbe8c2ac8168c7300a4066996b01",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "affinity-lessons.s3.amazonaws.com",
+            "positive_match": true,
+            "negative": "x.affinity-lessons.s3.amazonaws.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "canva/canva/rules.yaml"
+          ],
+          "singbox": [
+            "canva/canva/rules.json"
+          ],
+          "surge": [
+            "canva/canva/rules.list"
+          ],
+          "shadowrocket": [
+            "canva/canva/rules.list"
+          ],
+          "quantumultx": [
+            "canva/canva/rules.list"
+          ],
+          "egern": [
+            "canva/canva/rules.yaml"
+          ],
+          "loon": [
+            "canva/canva/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [
+        "overlap_audit"
+      ],
+      "overlap_audit": {
+        "status": "blocked",
+        "runtime_probe_count": 148,
+        "collisions": [
+          {
+            "service": "canva",
+            "probe": "affinity-beta.s3.amazonaws.com",
+            "other_service": "aws",
+            "rule_id": "30139a6cd80dc1ae86dcac3d5b8fb6dd1a456e20293b1a8d6f37c11409ea8480"
+          },
+          {
+            "service": "canva",
+            "probe": "affinity-lessons.s3.amazonaws.com",
+            "other_service": "aws",
+            "rule_id": "30139a6cd80dc1ae86dcac3d5b8fb6dd1a456e20293b1a8d6f37c11409ea8480"
+          }
+        ]
+      },
+      "status": "blocked"
+    },
+    "trello": {
+      "service_id": "trello",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_trello.list",
+        "sha256": "6005173555eba220d828dba6075bd8736b076a522f7de5912fc68c3b639060e3",
+        "rule_count": 2,
+        "hints": [
+          "metacubex"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "19053ddf8b90f5ccfefaa7043f89f2914676a91d0b21dbc5da7bf424e7716713",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "trello.com",
+            "positive_match": true,
+            "negative": "x.trello.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "f6818ac5edb34b156aa835c4388291fa5dc8dd3303339e81827d2cba0a2dda9c",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "trellocdn.com",
+            "positive_match": true,
+            "negative": "x.trellocdn.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "atlassian/trello/rules.yaml"
+          ],
+          "singbox": [
+            "atlassian/trello/rules.json"
+          ],
+          "surge": [
+            "atlassian/trello/rules.list"
+          ],
+          "shadowrocket": [
+            "atlassian/trello/rules.list"
+          ],
+          "quantumultx": [
+            "atlassian/trello/rules.list"
+          ],
+          "egern": [
+            "atlassian/trello/rules.yaml"
+          ],
+          "loon": [
+            "atlassian/trello/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "signal": {
+      "service_id": "signal",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_signal.list",
+        "sha256": "955b49e46b8cff93a8dd471afdbe8c54373ff17a206468ae3b8a0fb5a6ff2a21",
+        "rule_count": 8,
+        "hints": [
+          "metacubex",
+          "v2fly"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "db713c41ae1f63c2603c08b5d6f9761ab840bfa3d75b48cf0d69734ac72204c8",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "signal.art",
+            "positive_match": true,
+            "negative": "x.signal.art.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "c2f9ee74b4ee47759866367ca007cb0a6ebf2b17cdcf4127ead4c0a5b776b7b6",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "signal.group",
+            "positive_match": true,
+            "negative": "x.signal.group.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "7a40bf3502eb1f20a0cf23aa89bd9eb091f7e957c6800b336b7339d2f6db14bd",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "signal.link",
+            "positive_match": true,
+            "negative": "x.signal.link.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "ede963ede08ef414d7e54e629f9164de8ffe2fab41854d0d16ee4a2bef23f4e4",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "signal.me",
+            "positive_match": true,
+            "negative": "x.signal.me.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "75c4fe151480d7e35a7bc06f7d9b0b8b1a724bf6d003e07bfa4f65a890d3aafa",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "signal.tube",
+            "positive_match": true,
+            "negative": "x.signal.tube.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "e16f0eac28e35ab5ab7bcdb7c9c7cf8c8b657b3cf018ea2bfc802b1d65590de2",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "signal.org",
+            "positive_match": true,
+            "negative": "x.signal.org.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "signal/signal/rules.yaml"
+          ],
+          "singbox": [
+            "signal/signal/rules.json"
+          ],
+          "surge": [
+            "signal/signal/rules.list"
+          ],
+          "shadowrocket": [
+            "signal/signal/rules.list"
+          ],
+          "quantumultx": [
+            "signal/signal/rules.list"
+          ],
+          "egern": [
+            "signal/signal/rules.yaml"
+          ],
+          "loon": [
+            "signal/signal/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "messenger": {
+      "service_id": "messenger",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_messenger.list",
+        "sha256": "230d53d14bed2582219d43b73e9a08590bb3ca5e784d7b13207d3ce0f2f0bb1e",
+        "rule_count": 4,
+        "hints": [
+          "metacubex"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "11195051fa5e7bf34c6376a51d5bcb4b84d1fcdd4537fe949672e59626157ab9",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "fbmessenger.com",
+            "positive_match": true,
+            "negative": "x.fbmessenger.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "75809f512252cee6e204d77f066e6b45963d9af41fc1ce97707c2ee50b6282c1",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "m.me",
+            "positive_match": true,
+            "negative": "x.m.me.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "336786b10154ec6e13ddb21daaca0d6df8ae43622896081f8e8fe18969fd8ceb",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "messenger.com",
+            "positive_match": true,
+            "negative": "x.messenger.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "e340fcd5e82e8f17073e1e0f1c1794ef6c26c88900159203c029ab8b3d7d2f3d",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "nbabot.net",
+            "positive_match": true,
+            "negative": "x.nbabot.net.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "meta/messenger/rules.yaml"
+          ],
+          "singbox": [
+            "meta/messenger/rules.json"
+          ],
+          "surge": [
+            "meta/messenger/rules.list"
+          ],
+          "shadowrocket": [
+            "meta/messenger/rules.list"
+          ],
+          "quantumultx": [
+            "meta/messenger/rules.list"
+          ],
+          "egern": [
+            "meta/messenger/rules.yaml"
+          ],
+          "loon": [
+            "meta/messenger/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "snapchat": {
+      "service_id": "snapchat",
+      "identity": "pass",
+      "source": {
+        "status": "blocked",
+        "snapshot": null,
+        "sha256": null,
+        "rule_count": 0,
+        "hints": [
+          "metacubex"
+        ]
+      },
+      "canonical": "blocked",
+      "semantic": {
+        "status": "blocked",
+        "probes": [],
+        "reasons": [
+          "independent_source_missing"
+        ]
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "snap/snapchat/rules.yaml"
+          ],
+          "singbox": [
+            "snap/snapchat/rules.json"
+          ],
+          "surge": [
+            "snap/snapchat/rules.list"
+          ],
+          "shadowrocket": [
+            "snap/snapchat/rules.list"
+          ],
+          "quantumultx": [
+            "snap/snapchat/rules.list"
+          ],
+          "egern": [
+            "snap/snapchat/rules.yaml"
+          ],
+          "loon": [
+            "snap/snapchat/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [
+        "source",
+        "canonical",
+        "semantic_audit"
+      ],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "blocked"
+    },
+    "bluesky": {
+      "service_id": "bluesky",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_bluesky.list",
+        "sha256": "6359e270e0a868b603bdeccd104352bcc345460f02bb3da0952bd033596134d6",
+        "rule_count": 3,
+        "hints": [
+          "metacubex"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "7a53267b4612b7520e26a2a2c278f7d3e83431fa0d1eb42578c8f15fece18a83",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "bsky.app",
+            "positive_match": true,
+            "negative": "x.bsky.app.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "07ecc80ecb2d1587c8c8c82d8e744fe2b937e011ba3a8f2b8fd07d5c8fb004bc",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "bsky.network",
+            "positive_match": true,
+            "negative": "x.bsky.network.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "189cbe18ec4576bbeb25a0f2a2c572ef92a1c778e9c57bc5003ff023bc332962",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "bsky.social",
+            "positive_match": true,
+            "negative": "x.bsky.social.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "bluesky/bluesky/rules.yaml"
+          ],
+          "singbox": [
+            "bluesky/bluesky/rules.json"
+          ],
+          "surge": [
+            "bluesky/bluesky/rules.list"
+          ],
+          "shadowrocket": [
+            "bluesky/bluesky/rules.list"
+          ],
+          "quantumultx": [
+            "bluesky/bluesky/rules.list"
+          ],
+          "egern": [
+            "bluesky/bluesky/rules.yaml"
+          ],
+          "loon": [
+            "bluesky/bluesky/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "youtubemusic": {
+      "service_id": "youtubemusic",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/dler/Dler_YouTubeMusic.yaml",
+        "sha256": "bfbe120a66297da2dcfce510538b823b4961c460c0b9e571829ec6ed8c75b29d",
+        "rule_count": 0,
+        "hints": [
+          "dler"
+        ]
+      },
+      "canonical": "blocked",
+      "semantic": {
+        "status": "blocked",
+        "probes": [],
+        "reasons": [
+          "independent_source_missing"
+        ]
+      },
+      "seven_client": {
+        "status": "blocked",
+        "present": [],
+        "count": 0,
+        "expected": 7,
+        "artifacts": {}
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [
+        "canonical",
+        "semantic_audit",
+        "seven_client"
+      ],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "blocked"
+    },
+    "tidal": {
+      "service_id": "tidal",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_tidal.list",
+        "sha256": "882e2a071e58fce471e10cdd844db5bca58274ed5da4aa0e78214dbfa940e6a4",
+        "rule_count": 3,
+        "hints": [
+          "metacubex"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "2eac8aa37fa15150942044767aa0c146f347c8b5dd68f113f9bd4fda9fe887b4",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "tidal.com",
+            "positive_match": true,
+            "negative": "x.tidal.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "80e21292f0266ebe1afdc17803c88696dff980f222dd2a344573e126d5f5897c",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "tidalhifi.com",
+            "positive_match": true,
+            "negative": "x.tidalhifi.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "608531c511f6c337602a058b1b7939eef763f50b6c31911ba877be13fb991d96",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "wimpmusic.com",
+            "positive_match": true,
+            "negative": "x.wimpmusic.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "tidal/tidal/rules.yaml"
+          ],
+          "singbox": [
+            "tidal/tidal/rules.json"
+          ],
+          "surge": [
+            "tidal/tidal/rules.list"
+          ],
+          "shadowrocket": [
+            "tidal/tidal/rules.list"
+          ],
+          "quantumultx": [
+            "tidal/tidal/rules.list"
+          ],
+          "egern": [
+            "tidal/tidal/rules.yaml"
+          ],
+          "loon": [
+            "tidal/tidal/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "walmart": {
+      "service_id": "walmart",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_walmart.list",
+        "sha256": "80191536ecfdc00dfa85f447d6e5f77dba7e80b08d6d583cadd4f3b461fbe5f8",
+        "rule_count": 10,
+        "hints": [
+          "metacubex"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "0abed69597190adda8bff875a41fea503a1adcc7d890c7a0442ca8783f2e30b9",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "walmart",
+            "positive_match": true,
+            "negative": "x.walmart.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "04886b9bf97d7eaae275a510c58f4fed6c81eabbece77e8aa9639ac7732096cf",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "w-mt.co",
+            "positive_match": true,
+            "negative": "x.w-mt.co.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "b508aae64b2e95d81536aa413b110b6d240697e7002efb1c21f403370ddf7773",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "wal-mart.com",
+            "positive_match": true,
+            "negative": "x.wal-mart.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "30c279143636235301e3840b857271ef023ab519b2b5f19b53cde46d21ba22f6",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "wal.co",
+            "positive_match": true,
+            "negative": "x.wal.co.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "8699449a22e9492928b75b558e515364ccfa5975d7c119191d8fd244349f4478",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "walmart-content.com",
+            "positive_match": true,
+            "negative": "x.walmart-content.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "8fefeb7e9536641cee6631af373b63e4cb1f21b1dab2c7ed1c78e1fbbe608d41",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "walmart.com",
+            "positive_match": true,
+            "negative": "x.walmart.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "walmart/walmart/rules.yaml"
+          ],
+          "singbox": [
+            "walmart/walmart/rules.json"
+          ],
+          "surge": [
+            "walmart/walmart/rules.list"
+          ],
+          "shadowrocket": [
+            "walmart/walmart/rules.list"
+          ],
+          "quantumultx": [
+            "walmart/walmart/rules.list"
+          ],
+          "egern": [
+            "walmart/walmart/rules.yaml"
+          ],
+          "loon": [
+            "walmart/walmart/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "uber": {
+      "service_id": "uber",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_uber.list",
+        "sha256": "0c76f78ba804bb90a9bb96679ad6f220f10ac27ee83b5c4ec1fb3bd202518ea0",
+        "rule_count": 3,
+        "hints": [
+          "metacubex",
+          "v2fly"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "cb1a260809f3379e7ed3094a821725de499b7090c963dbf1b67f9acb7ee98fba",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "uber-assets.com",
+            "positive_match": true,
+            "negative": "x.uber-assets.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "9081dddfaeb2c4947295bd1bb463718fee0c1d0ee59942edc1ebc7456a83c608",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "uber.com",
+            "positive_match": true,
+            "negative": "x.uber.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "f22e25a06f5e9fb8f508ac6e516ee3e968f68f5211f27111527860548bb1c5b9",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "ubereats.com",
+            "positive_match": true,
+            "negative": "x.ubereats.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "uber/uber/rules.yaml"
+          ],
+          "singbox": [
+            "uber/uber/rules.json"
+          ],
+          "surge": [
+            "uber/uber/rules.list"
+          ],
+          "shadowrocket": [
+            "uber/uber/rules.list"
+          ],
+          "quantumultx": [
+            "uber/uber/rules.list"
+          ],
+          "egern": [
+            "uber/uber/rules.yaml"
+          ],
+          "loon": [
+            "uber/uber/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "airbnb": {
+      "service_id": "airbnb",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_airbnb.list",
+        "sha256": "4439023927149b93e750905460cc50179eff23ccbeb07c4a093d55eea54532ff",
+        "rule_count": 83,
+        "hints": [
+          "metacubex",
+          "v2fly"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "816eb69277beeb68616b53440d237fa9794897becc50ced5d4922ec3c932cdfd",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "airbnb.rs",
+            "positive_match": true,
+            "negative": "x.airbnb.rs.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "e61c61ff9d90aa519d4a74b7283a3cf6644ee2d07e86377d4db900d7f9ff70bc",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "airbnb.cl",
+            "positive_match": true,
+            "negative": "x.airbnb.cl.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "93e364870713adbc7a0316b108e3c7f8306ea081e1b2798cf4f406d6b13785ea",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "airbnb.ae",
+            "positive_match": true,
+            "negative": "x.airbnb.ae.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "7526beb7cfb6666dcb2ef478edb218705e96cf78227fbda1557cacfe4e90de24",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "airbnb.al",
+            "positive_match": true,
+            "negative": "x.airbnb.al.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "3d8e0f8b87ef09156176a4f8a99e504617aed53a3a5c98bff0e9445a4425b114",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "airbnb.am",
+            "positive_match": true,
+            "negative": "x.airbnb.am.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "23010287dd822619d16c76f4c1e3466c31fd7e7fda0206ff116e7b6bfd398c80",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "airbnb.at",
+            "positive_match": true,
+            "negative": "x.airbnb.at.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "airbnb/airbnb/rules.yaml"
+          ],
+          "singbox": [
+            "airbnb/airbnb/rules.json"
+          ],
+          "surge": [
+            "airbnb/airbnb/rules.list"
+          ],
+          "shadowrocket": [
+            "airbnb/airbnb/rules.list"
+          ],
+          "quantumultx": [
+            "airbnb/airbnb/rules.list"
+          ],
+          "egern": [
+            "airbnb/airbnb/rules.yaml"
+          ],
+          "loon": [
+            "airbnb/airbnb/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "booking": {
+      "service_id": "booking",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_booking.list",
+        "sha256": "124055f45b99f933de3534f4b64ff5b3dadf421601b87866d1dd5b70ae3793af",
+        "rule_count": 3,
+        "hints": [
+          "metacubex",
+          "v2fly"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "a2a5096981eb81a4b70e91a9ca008236f9073c420bb1b46dd48e95192ff078e9",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "booking.com",
+            "positive_match": true,
+            "negative": "x.booking.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "a242fdca514a3b2a9c81f0c4e0ccda8d638ff7c99c9630949046d05e7c16ecf9",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "bstatic.com",
+            "positive_match": true,
+            "negative": "x.bstatic.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "b73736b396b55a71e9ad2b2fcc30aeb3a40d1a68b67161a0ac893cf0fd42eaed",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "booking.cn",
+            "positive_match": true,
+            "negative": "x.booking.cn.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "booking/booking/rules.yaml"
+          ],
+          "singbox": [
+            "booking/booking/rules.json"
+          ],
+          "surge": [
+            "booking/booking/rules.list"
+          ],
+          "shadowrocket": [
+            "booking/booking/rules.list"
+          ],
+          "quantumultx": [
+            "booking/booking/rules.list"
+          ],
+          "egern": [
+            "booking/booking/rules.yaml"
+          ],
+          "loon": [
+            "booking/booking/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "wise": {
+      "service_id": "wise",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_wise.list",
+        "sha256": "8d94a942c322e168958a4dcf86b72bd4cd8025aad98b8abe83e3a361fc199a31",
+        "rule_count": 2,
+        "hints": [
+          "metacubex"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "c542513af5dbb44d44c325a5f1dabee4f30f1f7736b4720da2f9177b86c20aee",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "transferwise.com",
+            "positive_match": true,
+            "negative": "x.transferwise.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "759986e3b9d2788e3fcf8993628ced7f919e3c228a113ebb6c3b40378d1e84cf",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "wise.com",
+            "positive_match": true,
+            "negative": "x.wise.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "wise/wise/rules.yaml"
+          ],
+          "singbox": [
+            "wise/wise/rules.json"
+          ],
+          "surge": [
+            "wise/wise/rules.list"
+          ],
+          "shadowrocket": [
+            "wise/wise/rules.list"
+          ],
+          "quantumultx": [
+            "wise/wise/rules.list"
+          ],
+          "egern": [
+            "wise/wise/rules.yaml"
+          ],
+          "loon": [
+            "wise/wise/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [],
+      "overlap_audit": {
+        "status": "pass",
+        "runtime_probe_count": 148,
+        "collisions": []
+      },
+      "status": "production"
+    },
+    "roblox": {
+      "service_id": "roblox",
+      "identity": "pass",
+      "source": {
+        "status": "pass",
+        "snapshot": "backup/2026-09-21/sources/metacubex/geosite_roblox.list",
+        "sha256": "d739c312372b6a837446227442f1030c55bc78f861c54bdfdc744f634ce8b12f",
+        "rule_count": 48,
+        "hints": [
+          "metacubex",
+          "v2fly"
+        ]
+      },
+      "canonical": "pass",
+      "semantic": {
+        "status": "pass",
+        "probes": [
+          {
+            "rule_id": "7a90dd7ac3015a66ddb8d63b23369425e63b1daadef568cee4de1553a4e47873",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "d1unuk07s6td74.cloudfront.net",
+            "positive_match": true,
+            "negative": "x.d1unuk07s6td74.cloudfront.net.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "928de4a4581dbc56523fb6d2dfcfa81a2122ddcf491ccc8a27e5a7eefd5dfceb",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "roblox-load-generator-configuration.s3.us-east-2.amazonaws.com",
+            "positive_match": true,
+            "negative": "x.roblox-load-generator-configuration.s3.us-east-2.amazonaws.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "c3c84ec3edde8e34ef12c7a4f2070f6ed8359b0a479f061f603007922a00a3ac",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "roblox-poc.global.ssl.fastly.net",
+            "positive_match": true,
+            "negative": "x.roblox-poc.global.ssl.fastly.net.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "1a546187ed2102c787f13932f05e61e5eab612fa6c7e69433be9b637dcfb3e5b",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "robloxcorp.s.llnwi.net",
+            "positive_match": true,
+            "negative": "x.robloxcorp.s.llnwi.net.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "977582c236c2218bb0ac0cb9176c8ab8317ac97e393bc9065fa19ac5d7fc3e5c",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "roblox.com",
+            "positive_match": true,
+            "negative": "x.roblox.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          },
+          {
+            "rule_id": "47e070b575d14095520d7d5f6fb10e120ad55664e1533b65793bd841d1c36b42",
+            "type": "DOMAIN-SUFFIX",
+            "positive": "goblocks.com",
+            "positive_match": true,
+            "negative": "x.goblocks.com.evil.example",
+            "negative_match": false,
+            "review_required": false
+          }
+        ],
+        "reasons": []
+      },
+      "seven_client": {
+        "status": "pass",
+        "present": [
+          "egern",
+          "loon",
+          "mihomo",
+          "quantumultx",
+          "shadowrocket",
+          "singbox",
+          "surge"
+        ],
+        "count": 7,
+        "expected": 7,
+        "artifacts": {
+          "mihomo": [
+            "roblox/roblox/rules.yaml"
+          ],
+          "singbox": [
+            "roblox/roblox/rules.json"
+          ],
+          "surge": [
+            "roblox/roblox/rules.list"
+          ],
+          "shadowrocket": [
+            "roblox/roblox/rules.list"
+          ],
+          "quantumultx": [
+            "roblox/roblox/rules.list"
+          ],
+          "egern": [
+            "roblox/roblox/rules.yaml"
+          ],
+          "loon": [
+            "roblox/roblox/rules.list"
+          ]
+        }
+      },
+      "golden": "pass",
+      "release": "pass",
+      "blockers": [
+        "overlap_audit"
+      ],
+      "overlap_audit": {
+        "status": "blocked",
+        "runtime_probe_count": 148,
+        "collisions": [
+          {
+            "service": "roblox",
+            "probe": "d1unuk07s6td74.cloudfront.net",
+            "other_service": "aws",
+            "rule_id": "6aadfa4417d397fc081955fcb8072ba9a0fb0c1ef6ab8a94fe4a2fd0bf138d68"
+          },
+          {
+            "service": "roblox",
+            "probe": "roblox-load-generator-configuration.s3.us-east-2.amazonaws.com",
+            "other_service": "aws",
+            "rule_id": "30139a6cd80dc1ae86dcac3d5b8fb6dd1a456e20293b1a8d6f37c11409ea8480"
+          }
+        ]
+      },
+      "status": "blocked"
+    }
+  },
+  "blocked": {
+    "testflight": [
+      "semantic_audit"
+    ],
+    "qq": [
+      "source",
+      "canonical",
+      "semantic_audit",
+      "seven_client"
+    ],
+    "wecom": [
+      "source",
+      "canonical",
+      "semantic_audit",
+      "seven_client"
+    ],
+    "tencentmeeting": [
+      "source",
+      "canonical",
+      "semantic_audit",
+      "seven_client"
+    ],
+    "feishu": [
+      "source",
+      "canonical",
+      "semantic_audit",
+      "seven_client"
+    ],
+    "baidunetdisk": [
+      "source",
+      "canonical",
+      "semantic_audit",
+      "seven_client"
+    ],
+    "youdao": [
+      "source",
+      "canonical",
+      "semantic_audit",
+      "seven_client"
+    ],
+    "perplexity": [
+      "overlap_audit"
+    ],
+    "grok": [
+      "source",
+      "canonical",
+      "semantic_audit",
+      "seven_client"
+    ],
+    "aws": [
+      "overlap_audit"
+    ],
+    "googlecloud": [
+      "source",
+      "canonical",
+      "semantic_audit",
+      "seven_client"
+    ],
+    "bitbucket": [
+      "source",
+      "canonical",
+      "semantic_audit",
+      "seven_client"
+    ],
+    "npm": [
+      "source",
+      "canonical",
+      "semantic_audit",
+      "seven_client"
+    ],
+    "pypi": [
+      "source",
+      "canonical",
+      "semantic_audit",
+      "seven_client"
+    ],
+    "netlify": [
+      "overlap_audit"
+    ],
+    "canva": [
+      "overlap_audit"
+    ],
+    "snapchat": [
+      "source",
+      "canonical",
+      "semantic_audit"
+    ],
+    "youtubemusic": [
+      "canonical",
+      "semantic_audit",
+      "seven_client"
+    ],
+    "roblox": [
+      "overlap_audit"
+    ]
+  }
+}
