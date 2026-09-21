@@ -127,6 +127,8 @@ jobs:
           python scripts/collect_providers.py
 
       - name: Materialize unified Network Dataset outputs
+        env:
+          GIT_COMMIT: ${{ github.sha }}
         run: |
           set -euo pipefail
           python scripts/build_network_bundle.py --output generated --date "${{ steps.date.outputs.day }}"
