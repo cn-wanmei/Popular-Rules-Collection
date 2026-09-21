@@ -9,16 +9,16 @@ on:
       - "sources/registry.yaml"
       - "sources/lifecycle.yaml"
       - "sources/immutable_registry.yaml"
-concurrency:
-  group: collect-main
-  cancel-in-progress: false
-
-workflow_dispatch:
-  inputs:
-    skip_large:
+  workflow_dispatch:
+    inputs:
+      skip_large:
         description: "Skip mega service sets for a fast collection"
         type: boolean
         default: false
+
+concurrency:
+  group: collect-main
+  cancel-in-progress: false
 
 jobs:
   collect:
