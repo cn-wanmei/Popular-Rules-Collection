@@ -1,0 +1,48 @@
+{
+  "source": "popular-rules-source",
+  "fetch": "github_raw",
+  "files_ok": 0,
+  "files_not_modified": 0,
+  "files_skipped": 2,
+  "files_failed": 0,
+  "empty_blocked": 0,
+  "rules_declared": 2,
+  "conditional_cache_hits": 0,
+  "scheduler_skips": 2,
+  "files": [
+    {
+      "name": "PRS_1688.domains.txt",
+      "path": "generated/source/1688/domains.txt",
+      "service": "1688",
+      "url": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/1688/domains.txt",
+      "status": "skipped",
+      "decision": "SKIP_FRESH",
+      "reason": "freshness_window_active",
+      "sha256": "6fbd2d02fd6bb39773e22f21456c247aef93b8b965fc484698a5f8efd16967bd",
+      "cas_sha256": "6fbd2d02fd6bb39773e22f21456c247aef93b8b965fc484698a5f8efd16967bd",
+      "size": 262,
+      "cached_from_cas": true,
+      "local": "sources/popular-rules-source/PRS_1688.domains.txt",
+      "cas_object": "data/cas/acquisition/6f/bd2d02fd6bb39773e22f21456c247aef93b8b965fc484698a5f8efd16967bd"
+    },
+    {
+      "name": "PRS_dingding.domains.txt",
+      "path": "generated/source/dingding/domains.txt",
+      "service": "dingding",
+      "url": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/dingding/domains.txt",
+      "status": "skipped",
+      "decision": "SKIP_FRESH",
+      "reason": "freshness_window_active",
+      "sha256": "9db0dd92816489fb884278241402b49eb1807f76740542110ee92cd279f47131",
+      "cas_sha256": "9db0dd92816489fb884278241402b49eb1807f76740542110ee92cd279f47131",
+      "size": 142,
+      "cached_from_cas": true,
+      "local": "sources/popular-rules-source/PRS_dingding.domains.txt",
+      "cas_object": "data/cas/acquisition/9d/b0dd92816489fb884278241402b49eb1807f76740542110ee92cd279f47131"
+    }
+  ],
+  "registry_priority": 98,
+  "registry_trust": "high",
+  "critical": false,
+  "concurrency_workers": 2
+}
