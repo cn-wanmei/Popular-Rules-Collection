@@ -8,6 +8,7 @@ on:
     paths:
       - "sources/registry.yaml"
       - "sources/lifecycle.yaml"
+      - "sources/immutable_registry.yaml"
   workflow_dispatch:
     inputs:
       skip_large:
