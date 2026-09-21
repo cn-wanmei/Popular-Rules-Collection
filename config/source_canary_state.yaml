@@ -147,6 +147,8 @@ services:
     enabled: false
     source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-tencentcloud-018c6d0a2429c98a45976487, content_digest: 018c6d0a2429c98a45976487d44de561338ac63ae290f0975b316409f0aa273c}
     attestation: {status: pending}
-  tmall:\n    state: canary\n    enabled: true
+  tmall:
+    state: canary
+    enabled: true
     source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-tmall-789fb08ed581d62f644c2ded, content_digest: 789fb08ed581d62f644c2ded829856040bffd8591365307930e86e29e1796bf5}
     attestation: {status: pending}
