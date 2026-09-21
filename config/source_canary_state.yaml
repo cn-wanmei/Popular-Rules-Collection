@@ -84,8 +84,8 @@ services:
       seed_only_count: 0
       conflict_count: 0
   qqmail:
-    state: verified
-    enabled: false
+    state: canary
+    enabled: true
     source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-qqmail-e147434833e15f76bbe4930c, content_digest: e147434833e15f76bbe4930c741ca63b84f3c64e1d9eb1108f8c9ba4bb0e9501}
     attestation: {status: pending}
   qqmusic:
