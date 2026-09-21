@@ -16,7 +16,7 @@ sources:
   - {path: generated/source/1688/domains.txt, name: 1688, service: 1688, local: PRS_1688.domains.txt, enabled: true}  # Phase 2 production activation: run 35532497978
   - {path: generated/source/cainiao/domains.txt, name: cainiao, service: cainiao, local: PRS_cainiao.domains.txt, enabled: true}  # Phase 2 production activation: run 35553832919
   - {path: generated/source/dingding/domains.txt, name: dingding, service: dingding, local: PRS_dingding.domains.txt, enabled: true}  # Phase 2 production activation: qualification run 35527947816
-  - {path: generated/source/qqmail/domains.txt, name: qqmail, service: qqmail, local: PRS_qqmail.domains.txt, enabled: false}
+  - {path: generated/source/qqmail/domains.txt, name: qqmail, service: qqmail, local: PRS_qqmail.domains.txt, enabled: true}  # Phase 2 production activation: run 35557072561
   - {path: generated/source/qqmusic/domains.txt, name: qqmusic, service: qqmusic, local: PRS_qqmusic.domains.txt, enabled: false}
   - {path: generated/source/taobao/domains.txt, name: taobao, service: taobao, local: PRS_taobao.domains.txt, enabled: false}
   - {path: generated/source/tencentcloud/domains.txt, name: tencentcloud, service: tencentcloud, local: PRS_tencentcloud.domains.txt, enabled: false}
