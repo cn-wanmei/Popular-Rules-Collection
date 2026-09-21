@@ -84,10 +84,32 @@ services:
       seed_only_count: 0
       conflict_count: 0
   qqmail:
-    state: verified
-    enabled: false
-    source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-qqmail-e147434833e15f76bbe4930c, content_digest: e147434833e15f76bbe4930c741ca63b84f3c64e1d9eb1108f8c9ba4bb0e9501}
-    attestation: {status: pending}
+    state: production
+    enabled: true
+    source_verification:
+      run: 35557072561
+      source_commit: 6ed4551bd9abc6326018c2737c780b6f2a429ca4
+      snapshot_id: snap-qqmail-b360b3da2110970486ebda2e
+      content_digest: b360b3da2110970486ebda2e96956087dad23bdf10484609cd0954af4859ea4c
+    attestation:
+      status: passed
+      source_release: releases/qqmail/snap-qqmail-b360b3da2110970486ebda2e/release.json
+      snapshot_id: snap-qqmail-b360b3da2110970486ebda2e
+      content_digest: b360b3da2110970486ebda2e96956087dad23bdf10484609cd0954af4859ea4c
+      reconciliation_run_id: reconcile-qqmail-21e5c0d5d243a2ca
+      v3_run_id: canary-qqmail-release-2
+      semantic_run_id: canary-qqmail-release-2
+      rollback_run_id: rollback-qqmail-648849adb1fb57ef
+      observation_run_id: observe-qqmail-00b8fc0245f70a74
+      observation_started_at: '2026-09-21T03:20:37.267339+00:00'
+      production_unlock_run_id: '35557072561'
+      reconciliation_pass: true
+      seven_client_semantic_pass: true
+      rollback_pass: true
+      observation_pass: true
+      source_official_evidence_only: true
+      seed_only_count: 0
+      conflict_count: 0
   qqmusic:
     state: verified
     enabled: false
