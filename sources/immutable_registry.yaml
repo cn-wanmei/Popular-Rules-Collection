@@ -1,0 +1,28 @@
+version: 1
+schema: popular_rules_collection_immutable_source_registry_v1
+source_repository: cn-wanmei/Popular-Rules-Source
+bindings:
+  1688:
+    status: pending
+    source_id: popular-rules-source
+  cainiao:
+    status: pending
+    source_id: popular-rules-source
+  dingding:
+    status: pending
+    source_id: popular-rules-source
+  qqmail:
+    status: pending
+    source_id: popular-rules-source
+  qqmusic:
+    status: pending
+    source_id: popular-rules-source
+  taobao:
+    status: pending
+    source_id: popular-rules-source
+  tencentcloud:
+    status: pending
+    source_id: popular-rules-source
+  tmall:
+    status: pending
+    source_id: popular-rules-source
