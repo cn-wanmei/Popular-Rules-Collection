@@ -25,6 +25,7 @@ def test_immutable_registry_covers_phase2_services() -> None:
         assert binding["status"] in {"pending", "active"}
         if binding["status"] == "active":
             assert SHA40.fullmatch(binding["source_ref"])
+            assert SHA40.fullmatch(binding["verified_input_commit"])
             assert binding["artifact_path"]
             assert binding["release_path"]
             assert binding["snapshot_id"]
