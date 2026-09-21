@@ -3,12 +3,12 @@
   "fetch": "github_raw",
   "files_ok": 0,
   "files_not_modified": 0,
-  "files_skipped": 2,
+  "files_skipped": 3,
   "files_failed": 0,
   "empty_blocked": 0,
-  "rules_declared": 2,
+  "rules_declared": 3,
   "conditional_cache_hits": 0,
-  "scheduler_skips": 2,
+  "scheduler_skips": 3,
   "files": [
     {
       "name": "PRS_1688.domains.txt",
@@ -24,6 +24,21 @@
       "cached_from_cas": true,
       "local": "sources/popular-rules-source/PRS_1688.domains.txt",
       "cas_object": "data/cas/acquisition/6f/bd2d02fd6bb39773e22f21456c247aef93b8b965fc484698a5f8efd16967bd"
+    },
+    {
+      "name": "PRS_cainiao.domains.txt",
+      "path": "generated/source/cainiao/domains.txt",
+      "service": "cainiao",
+      "url": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/generated/source/cainiao/domains.txt",
+      "status": "skipped",
+      "decision": "SKIP_FRESH",
+      "reason": "freshness_window_active",
+      "sha256": "461f79abb56e74e611cecdd1424183bd5e9b2d0ec5fb6a7a04d515afd6b7eb8e",
+      "cas_sha256": "461f79abb56e74e611cecdd1424183bd5e9b2d0ec5fb6a7a04d515afd6b7eb8e",
+      "size": 171,
+      "cached_from_cas": true,
+      "local": "sources/popular-rules-source/PRS_cainiao.domains.txt",
+      "cas_object": "data/cas/acquisition/46/1f79abb56e74e611cecdd1424183bd5e9b2d0ec5fb6a7a04d515afd6b7eb8e"
     },
     {
       "name": "PRS_dingding.domains.txt",
@@ -44,5 +59,5 @@
   "registry_priority": 98,
   "registry_trust": "high",
   "critical": false,
-  "concurrency_workers": 2
+  "concurrency_workers": 3
 }
