@@ -53,7 +53,12 @@ def _load_immutable_binding(service: str) -> dict | None:
         return None
     import yaml
     data = yaml.safe_load(IMMUTABLE_REGISTRY.read_text(encoding="utf-8")) or {}
-    binding = (data.get("bindings") or {}).get(service)
+    wanted = str(service).strip().casefold()
+    binding = next(
+        (value for key, value in (data.get("bindings") or {}).items()
+         if str(key).strip().casefold() == wanted and isinstance(value, dict)),
+        None,
+    )
     return binding if isinstance(binding, dict) else None
 
 
