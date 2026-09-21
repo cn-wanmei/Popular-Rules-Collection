@@ -113,6 +113,7 @@ jobs:
         run: |
           set -euo pipefail
           test "$(cat release-candidate/build-run-id.txt)" = "${EXPECTED_BUILD_RUN_ID}"
+          test -s release-candidate/collection-date.txt
           test "$(cat release-candidate/build-head-sha.txt)" = "${EXPECTED_BUILD_SHA}"
           ENGINE_RUN_ID="$(cat release-candidate/run-id.txt)"
           test -d "release-candidate/data/runs/${ENGINE_RUN_ID}"
@@ -120,6 +121,18 @@ jobs:
           echo "Downloaded exact immutable artifact ${ARTIFACT_NAME} (build_run=${EXPECTED_BUILD_RUN_ID}, head_sha=${EXPECTED_BUILD_SHA}, engine_run=${ENGINE_RUN_ID})."
       - name: Architecture Gate
         run: python scripts/architecture_gate.py
+
+      - name: Verify immutable Source lineage
+        shell: bash
+        run: |
+          set -euo pipefail
+          DAY="$(cat release-candidate/collection-date.txt)"
+          [[ "$DAY" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]
+          test -s "backup/${DAY}/manifests/_collection.json"
+          test -s "backup/${DAY}/manifests/popular-rules-source.json"
+          PYTHONPATH=. python scripts/immutable_source_lineage_gate.py \
+            --collection-root "backup/${DAY}" \
+            --json-out "release-candidate/immutable-source-lineage-publish.json"
 
       - name: Verify Phase 8 final migration gate evidence
         shell: bash
