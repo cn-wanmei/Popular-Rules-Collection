@@ -147,7 +147,12 @@ def _fetch_entry(src: dict[str, Any] | str, cfg: dict[str, Any], entry: dict[str
     sid = str(source["id"])
     binding = immutable_binding_for(entry.get("service", "")) if sid == "popular-rules-source" else None
     expected_sha256 = str(binding.get("expected_sha256") or "") if binding else None
-    decision: ScheduleDecision = decide(previous, source, force=force_refresh)
+    if binding:
+        # Immutable Source releases are content-addressed inputs, not cacheable
+        # by freshness. Always resolve the pinned commit and verify its bytes.
+        decision = ScheduleDecision("FETCH_IMMUTABLE", "active_immutable_binding")
+    else:
+        decision = decide(previous, source, force=force_refresh)
     if decision.action.startswith("SKIP_"):
         cached = _load_cached(previous, expected_sha256=expected_sha256)
         if cached is not None:
@@ -162,10 +167,11 @@ def _fetch_entry(src: dict[str, Any] | str, cfg: dict[str, Any], entry: dict[str
         decision = ScheduleDecision("FETCH_DUE", reason)
 
     headers: dict[str, str] = {}
-    if previous.get("etag"):
-        headers["If-None-Match"] = str(previous["etag"])
-    if previous.get("last_modified"):
-        headers["If-Modified-Since"] = str(previous["last_modified"])
+    if not binding:
+        if previous.get("etag"):
+            headers["If-None-Match"] = str(previous["etag"])
+        if previous.get("last_modified"):
+            headers["If-Modified-Since"] = str(previous["last_modified"])
     result = get_fetcher(cfg).fetch_one({**entry, "headers": headers})
     result.source_id = sid
     meta = {"name": entry["name"], "path": entry["path"], "service": entry["service"], "url": result.url,
