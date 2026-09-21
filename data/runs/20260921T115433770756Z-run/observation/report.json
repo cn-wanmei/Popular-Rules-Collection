@@ -1,0 +1,83 @@
+{
+  "schema": "v1_observation_v1",
+  "run_id": "20260921T115433770756Z-run",
+  "snapshot_id": "snap-20260921T115433771793Z",
+  "baseline_decision": "PASS",
+  "quality_decision": "PASS",
+  "release_state": "RC_READY",
+  "blockers": [],
+  "evidence": {
+    "records": {
+      "ingested": 259675,
+      "clean": 259675,
+      "quarantined": 0,
+      "unique_rules": 128764,
+      "memberships": 259675,
+      "ingest_errors": 0,
+      "canonical_errors": 0
+    },
+    "rates": {
+      "clean_rate": 1.0,
+      "quarantine_rate": 0.0,
+      "canonical_error_rate": 0.0
+    },
+    "source_health": {
+      "datasets": {
+        "files": 34,
+        "bytes": 69169960,
+        "errors": 0,
+        "quarantined": 0
+      },
+      "ip_sources": {
+        "files": 3,
+        "bytes": 279604,
+        "errors": 0,
+        "quarantined": 0
+      },
+      "manifests": {
+        "files": 10,
+        "bytes": 491860,
+        "errors": 0,
+        "quarantined": 0
+      },
+      "sources": {
+        "files": 304,
+        "bytes": 5416410,
+        "errors": 0,
+        "quarantined": 0
+      }
+    },
+    "parser_coverage": {
+      "input_records": 259675,
+      "recognized_records": 259675,
+      "parse_errors": 0,
+      "recognition_rate": 1.0,
+      "quarantine_rate": 0.0
+    },
+    "baseline": {
+      "schema": "baseline_evidence_v1",
+      "decision": "PASS",
+      "anomalies": [],
+      "baseline_path": "baseline/latest.json",
+      "source_run_id": "20260918T175019058992Z-run",
+      "source_snapshot_id": "snap-20260918T175019059736Z"
+    },
+    "quality_score": 100,
+    "release_gates": {
+      "v2_runtime_dependency_zero": true,
+      "snapshot_present": true,
+      "golden_all_pass": true,
+      "canonical_present": true,
+      "ir_present": true,
+      "artifacts_present": true,
+      "diff_present": true,
+      "baseline_evidence_present": true,
+      "quality_all_hard_pass": true,
+      "parser_coverage_present": true,
+      "source_health_present": true,
+      "seven_clients_present": true,
+      "cas_integrity": true
+    }
+  },
+  "all_pass": true
+}
