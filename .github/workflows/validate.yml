@@ -176,7 +176,7 @@ jobs:
                   persistence_sha = persistence[5:] if persistence.startswith("main@") else ""
                   requested_parents = {
                       str(parent.get("sha", "")).strip()
-                      for parent in commit.get("parents", [])
+                      for parent in source_commit_doc.get("parents", [])
                       if isinstance(parent, dict)
                   }
                   if (
