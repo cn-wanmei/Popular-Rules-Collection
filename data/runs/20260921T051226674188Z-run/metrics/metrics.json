@@ -1,0 +1,68 @@
+{
+  "schema": "run_metrics_v2",
+  "generated_at": "2026-09-21T05:13:37.420722+00:00",
+  "run_id": "20260921T051226674188Z-run",
+  "snapshot_id": "snap-20260921T051226675127Z",
+  "records": {
+    "ingested": 259675,
+    "clean": 259675,
+    "quarantined": 0,
+    "unique_rules": 128764,
+    "memberships": 259675,
+    "ingest_errors": 0,
+    "canonical_errors": 0
+  },
+  "rates": {
+    "clean_rate": 1.0,
+    "quarantine_rate": 0.0,
+    "canonical_error_rate": 0.0
+  },
+  "diff": {
+    "added": 27,
+    "removed": 28,
+    "changed": 6,
+    "baseline_present": true
+  },
+  "source_health": {
+    "datasets": {
+      "files": 34,
+      "bytes": 69169649,
+      "errors": 0,
+      "quarantined": 0
+    },
+    "ip_sources": {
+      "files": 3,
+      "bytes": 279602,
+      "errors": 0,
+      "quarantined": 0
+    },
+    "manifests": {
+      "files": 10,
+      "bytes": 491859,
+      "errors": 0,
+      "quarantined": 0
+    },
+    "sources": {
+      "files": 304,
+      "bytes": 5416410,
+      "errors": 0,
+      "quarantined": 0
+    }
+  },
+  "parser_coverage": {
+    "input_records": 259675,
+    "recognized_records": 259675,
+    "parse_errors": 0,
+    "recognition_rate": 1.0,
+    "quarantine_rate": 0.0
+  },
+  "v2_runtime_dependency": 0,
+  "baseline": {
+    "schema": "baseline_evidence_v1",
+    "decision": "PASS",
+    "anomalies": [],
+    "baseline_path": "baseline/latest.json",
+    "source_run_id": "20260918T175019058992Z-run",
+    "source_snapshot_id": "snap-20260918T175019059736Z"
+  }
+}
