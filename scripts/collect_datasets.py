@@ -86,16 +86,15 @@ def main() -> int:
         artifact = ds.get("artifact")
 
         if scope == "artifact" or artifact:
-            art = Path(artifact or f"generated/mmdb/{did}")
-            if not art.is_absolute():
-                art = ROOT / art
-            art.parent.mkdir(parents=True, exist_ok=True)
-            art.write_bytes(content)
+            # Binary artifacts are collection inputs, not final publication outputs.
+            # Keep bytes only in the immutable date-stamped backup; Build/Publish
+            # materializes them into generated/mmdb from that committed input.
             meta = {
                 "id": did,
                 "kind": kind,
                 "scope": "artifact",
-                "path": str(art.relative_to(ROOT)),
+                "backup": str((bak / f"{did}.bin").relative_to(ROOT)),
+                "artifact": str(artifact or f"generated/mmdb/{did}"),
                 "sha256": sha,
                 "bytes": len(content),
                 "fetched_at": now.isoformat(),
@@ -107,7 +106,7 @@ def main() -> int:
                     "url": (fetch or {}).get("url") or remote_path,
                 },
             }
-            meta_path = art.parent / f"{art.stem}.meta.json"
+            meta_path = PROV / f"{did}.artifact.json"
             meta_path.write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")
             results[did] = meta
             ok += 1
