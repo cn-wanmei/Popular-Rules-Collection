@@ -29,6 +29,12 @@ jobs:
 
       - run: python -m pip install -r requirements.lock
 
+      - name: Sync Collection main
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          git reset --hard origin/main
+
       - name: Materialize and verify current Source durable seal
         run: |
           python scripts/source_auto_handoff.py | tee /tmp/source-handoff.json
@@ -48,17 +54,6 @@ jobs:
           SOURCE_REF=$(python -c 'import json; print(json.load(open("/tmp/source-handoff.json"))["source_ref"])')
           test "${#SOURCE_REF}" -eq 40
 
-          git fetch origin main
-          git checkout -B main origin/main
-          python scripts/source_auto_handoff.py > /tmp/source-handoff-rebase.json
-          python scripts/source_provenance_gate.py
-          git add sources/immutable_registry.yaml
-
-          if git diff --cached --quiet; then
-            echo "Collection main already contains the current Source seal."
-            exit 0
-          fi
-
           BRANCH="automation/source-handoff-$SOURCE_REF"
 
           if git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
@@ -69,6 +64,13 @@ jobs:
           git switch -c "$BRANCH"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sources/immutable_registry.yaml
+
+          if git diff --cached --quiet; then
+            echo "Collection immutable registry already matches the Source seal."
+            exit 0
+          fi
+
           git commit -m "chore(source): promote immutable Source durable seal"
           git push --set-upstream origin "$BRANCH"
 
