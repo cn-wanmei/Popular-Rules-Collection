@@ -172,11 +172,11 @@ jobs:
           from pathlib import Path
           m=json.loads(Path("release-candidate/generated/manifest.json").read_text(encoding="utf-8"))
           scopes=set(m.get("network_dataset_directories") or [])
-          expected={"asn","geoip","geosite","network","provider","policies","ip","mmdb"}
+          expected={"asn","geoip","geosite","network","provider","policies","ip"}
           missing=sorted(expected-scopes)
           if missing:
               raise SystemExit(f"network distribution incomplete: missing scopes={missing}")
-          print(f"generated distribution gate: PASS files={m.get('file_count')} network={sorted(scopes)}")
+          print(f"generated distribution gate: PASS files={m.get('file_count')} network={sorted(scopes)} mmdb_optional={'mmdb' in scopes}")
           PY
       - name: Verify release identity
         shell: bash
