@@ -6,10 +6,32 @@ state_machine:
   - production
 services:
   "1688":
-    state: verified
-    enabled: false
-    source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-1688-f26f96c5c0efb065ffbaab3, content_digest: f26f96c5c0efb065ffbaab3adf7821755d5406746bafaf41ffac035a0da4989c}
-    attestation: {status: pending}
+    state: production
+    enabled: true
+    source_verification:
+      run: 35532497978
+      source_commit: 7855baad5577f5573cf0fadfe0e87d5ce5b824ce
+      snapshot_id: snap-1688-9e1d3d6ede5f06fecde52f8d
+      content_digest: 9e1d3d6ede5f06fecde52f8de9de42ace50e05953ed81faf3bdf7cd4aacdb220
+    attestation:
+      status: passed
+      source_release: releases/1688/snap-1688-9e1d3d6ede5f06fecde52f8d/release.json
+      snapshot_id: snap-1688-9e1d3d6ede5f06fecde52f8d
+      content_digest: 9e1d3d6ede5f06fecde52f8de9de42ace50e05953ed81faf3bdf7cd4aacdb220
+      reconciliation_run_id: reconcile-1688-95872eccfd01a5f8
+      v3_run_id: canary-1688-release-2
+      semantic_run_id: canary-1688-release-2
+      rollback_run_id: rollback-1688-3225963c93162ca2
+      observation_started_at: '2026-09-20T19:31:58.550917+00:00'
+      observation_completed_at: '2026-09-20T19:32:00+00:00'
+      production_unlock_run_id: '35532497978'
+      reconciliation_pass: true
+      seven_client_semantic_pass: true
+      rollback_pass: true
+      observation_pass: true
+      source_official_evidence_only: true
+      seed_only_count: 0
+      conflict_count: 0
   cainiao:
     state: verified
     enabled: false
