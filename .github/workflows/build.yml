@@ -241,7 +241,7 @@ jobs:
           else
             NETWORK_ARGS=()
           fi
-          python scripts/build_network_bundle.py --output release-candidate/generated --date "${{ steps.source.outputs.collection_date }}" "${NETWORK_ARGS[@]}"
+          GIT_COMMIT="${{ github.sha }}" python scripts/build_network_bundle.py --output release-candidate/generated --date "${{ steps.source.outputs.collection_date }}" "${NETWORK_ARGS[@]}"
           python scripts/generated_manifest.py --root release-candidate/generated --output release-candidate/generated/manifest.json --date "${{ steps.source.outputs.collection_date }}"
 
           echo "Materialize unified Network Dataset release"
