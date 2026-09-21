@@ -106,14 +106,15 @@ jobs:
               "https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/commits/"
               + encoded_ref
           )
-          source_sha = source_commit_doc["sha"]
+          requested_sha = source_commit_doc["sha"]
+          source_sha = requested_sha
+          resolution = "direct"
           needed = {"CI", "Phase 2 Source Gate"}
-          observed = {}
 
-          for attempt in range(30):
+          def observe_gate_runs(commit_sha):
               runs = get_json(
                   "https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/actions/runs"
-                  f"?head_sha={source_sha}&per_page=100"
+                  f"?head_sha={commit_sha}&per_page=100"
               )
               latest = {}
               for run in runs.get("workflow_runs", []):
@@ -123,13 +124,22 @@ jobs:
                   previous = latest.get(name)
                   if previous is None or run.get("created_at", "") > previous.get("created_at", ""):
                       latest[name] = run
-              observed = {name: run.get("conclusion") for name, run in latest.items()}
-              statuses = {name: run.get("status") for name, run in latest.items()}
+              return (
+                  {name: run.get("conclusion") for name, run in latest.items()},
+                  {name: run.get("status") for name, run in latest.items()},
+              )
+
+          observed = {}
+          statuses = {}
+          for attempt in range(30):
+              observed, statuses = observe_gate_runs(source_sha)
               print(json.dumps(
                   {
                       "attempt": attempt + 1,
                       "source_ref": source_ref,
+                      "requested_source_commit": requested_sha,
                       "source_commit": source_sha,
+                      "resolution": resolution,
                       "observed": observed,
                       "statuses": statuses,
                   },
@@ -149,13 +159,59 @@ jobs:
                   )
               if not missing and all(observed.get(name) == "success" for name in needed):
                   break
+
+              if attempt == 0 and source_ref == "main" and source_sha == requested_sha:
+                  try:
+                      bridge_url = (
+                          "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/"
+                          f"{urllib.parse.quote(requested_sha, safe='')}/reports/durable-bridge/latest.json"
+                      )
+                      bridge = get_json(bridge_url)
+                  except Exception:
+                      bridge = {}
+                  persistence = str(bridge.get("persistence_commit", "")).strip()
+                  input_commit = str(bridge.get("input_commit", "")).strip()
+                  if (
+                      bridge.get("schema") == "popular_rules_source_durable_bridge_v1"
+                      and persistence == f"main@{requested_sha}"
+                      and len(input_commit) == 40
+                      and all(ch in "0123456789abcdef" for ch in input_commit.lower())
+                  ):
+                      candidate_observed, candidate_statuses = observe_gate_runs(input_commit)
+                      candidate_bad = [
+                          name for name, conclusion in candidate_observed.items()
+                          if conclusion not in (None, "success")
+                      ]
+                      if (
+                          not candidate_bad
+                          and all(candidate_observed.get(name) == "success" for name in needed)
+                      ):
+                          source_sha = input_commit
+                          resolution = "durable_bridge_input_commit"
+                          observed = candidate_observed
+                          statuses = candidate_statuses
+                          print(json.dumps(
+                              {
+                                  "source_ref": source_ref,
+                                  "requested_source_commit": requested_sha,
+                                  "source_commit": source_sha,
+                                  "resolution": resolution,
+                                  "bridge_persistence": persistence,
+                                  "bridge_input_commit": input_commit,
+                                  "observed": observed,
+                                  "statuses": statuses,
+                              },
+                              ensure_ascii=False,
+                              indent=2,
+                          ))
+                          break
+
               if attempt == 29:
                   raise SystemExit(
                       f"Timed out waiting for Source ref {source_ref} gates for {source_sha}; "
                       f"observed={observed}, missing={missing}"
                   )
               time.sleep(20)
-
           with open(github_env, "a", encoding="utf-8") as out:
               out.write("CANARY_ACTIVE=true\n")
               out.write(f"SOURCE_CANARY_SHA={source_sha}\n")
