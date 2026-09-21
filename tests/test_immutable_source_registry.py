@@ -14,6 +14,7 @@ SHA64 = re.compile(r"^[0-9a-f]{64}$")
 
 
 def test_immutable_registry_covers_phase2_services() -> None:
+    # Active bindings must carry both artifact and gate lineage.
     data = yaml.safe_load(REGISTRY.read_text(encoding="utf-8"))
     assert data["schema"] == "popular_rules_collection_immutable_source_registry_v1"
     bindings = data["bindings"]
