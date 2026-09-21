@@ -102,6 +102,15 @@ jobs:
         env:
           COLLECTION_DAY: ${{ steps.date.outputs.day }}
 
+      - name: Immutable Source Lineage Gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          DAY="${{ steps.date.outputs.day }}"
+          PYTHONPATH=. python scripts/immutable_source_lineage_gate.py \
+            --collection-root "backup/${DAY}" \
+            --json-out "backup/${DAY}/manifests/immutable-source-lineage.json"
+
       - name: Commit collected snapshot
         id: commit
         shell: bash
