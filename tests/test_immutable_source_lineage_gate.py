@@ -24,6 +24,7 @@ def test_lineage_gate_accepts_exact_immutable_artifact(tmp_path: Path, monkeypat
             "bindings": {"qqmail": {
                 "status": "active",
                 "source_ref": "a" * 40,
+                "artifact_path": "generated/source/qqmail/domains.txt",
                 "release_path": "releases/qqmail/snap/release.json",
                 "snapshot_id": "snap-qqmail-test",
                 "content_digest": "b" * 64,
