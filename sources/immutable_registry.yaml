@@ -3,26 +3,74 @@ schema: popular_rules_collection_immutable_source_registry_v1
 source_repository: cn-wanmei/Popular-Rules-Source
 bindings:
   1688:
-    status: pending
+    status: active
     source_id: popular-rules-source
+    source_ref: 192ee4a99cd02d99faddfbad30ac4ebf914edaa8
+    artifact_path: generated/source/1688/domains.txt
+    release_path: releases/1688/snap-1688-1459c7aeb56e68306b35eca5/release.json
+    snapshot_id: snap-1688-1459c7aeb56e68306b35eca5
+    content_digest: 1459c7aeb56e68306b35eca5a1196151f5d51ef80f3367b635458d2388abb331
+    expected_sha256: 65e6b0d571d62de22ae4a791113306d52207f94b25f74920a5533faa1ec220bb
   cainiao:
-    status: pending
+    status: active
     source_id: popular-rules-source
+    source_ref: 192ee4a99cd02d99faddfbad30ac4ebf914edaa8
+    artifact_path: generated/source/cainiao/domains.txt
+    release_path: releases/cainiao/snap-cainiao-3ad8cd92c7c18879dc398e71/release.json
+    snapshot_id: snap-cainiao-3ad8cd92c7c18879dc398e71
+    content_digest: 3ad8cd92c7c18879dc398e7130c352e7541fb56c0797351c81e9997f7cf9bb08
+    expected_sha256: 49d81715b12d8915f089f4d09710c6ca41cad95f84414daf068990ea7fb4897d
   dingding:
-    status: pending
+    status: active
     source_id: popular-rules-source
+    source_ref: 192ee4a99cd02d99faddfbad30ac4ebf914edaa8
+    artifact_path: generated/source/dingding/domains.txt
+    release_path: releases/dingding/snap-dingding-1ce48f9d3ec67b3b67d9347d/release.json
+    snapshot_id: snap-dingding-1ce48f9d3ec67b3b67d9347d
+    content_digest: 1ce48f9d3ec67b3b67d9347d7fe3b934eb2578674706f2004e4c879659996992
+    expected_sha256: 0f354583693dbc07b32fd1b41d532d325dd55a9e9cce83b557a85b3a92b49908
   qqmail:
-    status: pending
+    status: active
     source_id: popular-rules-source
+    source_ref: 192ee4a99cd02d99faddfbad30ac4ebf914edaa8
+    artifact_path: generated/source/qqmail/domains.txt
+    release_path: releases/qqmail/snap-qqmail-5b7b077350e76440f47c86f8/release.json
+    snapshot_id: snap-qqmail-5b7b077350e76440f47c86f8
+    content_digest: 5b7b077350e76440f47c86f894f9e2f698011fe70667342cf59b32d45b4d5ce2
+    expected_sha256: e9f05b72a86ad9be815cde834ae1cd2097877c16dcea5eacb23885f52af4f24d
   qqmusic:
-    status: pending
+    status: active
     source_id: popular-rules-source
+    source_ref: 192ee4a99cd02d99faddfbad30ac4ebf914edaa8
+    artifact_path: generated/source/qqmusic/domains.txt
+    release_path: releases/qqmusic/snap-qqmusic-e903c9a62ef0a67f01a7d15d/release.json
+    snapshot_id: snap-qqmusic-e903c9a62ef0a67f01a7d15d
+    content_digest: e903c9a62ef0a67f01a7d15df1e139cf7800032767302fc416faaa04a9abc289
+    expected_sha256: 7b339dafb02213f9b29d7582664a1f802b9045ea27b99a47eeb6780c261a9119
   taobao:
-    status: pending
+    status: active
     source_id: popular-rules-source
+    source_ref: 192ee4a99cd02d99faddfbad30ac4ebf914edaa8
+    artifact_path: generated/source/taobao/domains.txt
+    release_path: releases/taobao/snap-taobao-935c4757381e52889bc85f0e/release.json
+    snapshot_id: snap-taobao-935c4757381e52889bc85f0e
+    content_digest: 935c4757381e52889bc85f0e7c6c12415e0d5280fb18caf76daf51b224f16c71
+    expected_sha256: 88646cd8d663976d7e4c72bc3ce43c760b059faa12bf72e81c8a760ef2563fc0
   tencentcloud:
-    status: pending
+    status: active
     source_id: popular-rules-source
+    source_ref: 192ee4a99cd02d99faddfbad30ac4ebf914edaa8
+    artifact_path: generated/source/tencentcloud/domains.txt
+    release_path: releases/tencentcloud/snap-tencentcloud-b5318bbe16655ce5f3eaaf84/release.json
+    snapshot_id: snap-tencentcloud-b5318bbe16655ce5f3eaaf84
+    content_digest: b5318bbe16655ce5f3eaaf8401b1c734a7068faab81b572a249a2c91f9856f56
+    expected_sha256: 3aee7d20287e15c9e109c97d04571758bc4b66fd74ace8d84967827e36260991
   tmall:
-    status: pending
+    status: active
     source_id: popular-rules-source
+    source_ref: 192ee4a99cd02d99faddfbad30ac4ebf914edaa8
+    artifact_path: generated/source/tmall/domains.txt
+    release_path: releases/tmall/snap-tmall-2cd65882d5856fcc02da9dc5/release.json
+    snapshot_id: snap-tmall-2cd65882d5856fcc02da9dc5
+    content_digest: 2cd65882d5856fcc02da9dc52dfc7fa4322e30bd40c586f87c05f6b7413c014e
+    expected_sha256: 4f2521212149543f1f267cb4b7d9bb89a544f168b33bd12ecd3207aaaedd412d
