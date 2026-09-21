@@ -101,28 +101,52 @@ jobs:
 
           source_ref = requested_source_ref
           resolution = "direct"
+          registry_verified_input_sha = ""
           if requested_source_ref == "main" and selected_services:
               with open("sources/immutable_registry.yaml", encoding="utf-8") as fh:
                   registry = yaml.safe_load(fh) or {}
               bindings = registry.get("bindings") or {}
-              bound_refs = sorted({
-                  str((bindings.get(service_id) or {}).get("source_ref", "")).strip()
+              selected_bindings = {
+                  service_id: (bindings.get(service_id) or {})
                   for service_id in selected_services
-              } - {""})
-              if not bound_refs:
+              }
+              invalid = [
+                  service_id for service_id, binding in selected_bindings.items()
+                  if binding.get("status") != "active"
+                  or not str(binding.get("source_ref", "")).strip()
+                  or not str(binding.get("verified_input_commit", "")).strip()
+              ]
+              if invalid:
                   raise SystemExit(
-                      "FAIL-CLOSED: no immutable Source binding exists for selected service(s): "
-                      + ", ".join(selected_services)
+                      "FAIL-CLOSED: selected service(s) lack complete immutable lineage bindings: "
+                      + ", ".join(sorted(invalid))
                   )
+              bound_refs = sorted({
+                  str(binding.get("source_ref", "")).strip()
+                  for binding in selected_bindings.values()
+              })
+              bound_inputs = sorted({
+                  str(binding.get("verified_input_commit", "")).strip()
+                  for binding in selected_bindings.values()
+              })
               if len(bound_refs) != 1:
                   raise SystemExit(
                       "FAIL-CLOSED: selected services are bound to different immutable Source refs: "
                       + ", ".join(
-                          f"{sid}={((bindings.get(sid) or {}).get('source_ref') or '')}"
+                          f"{sid}={((selected_bindings[sid]).get('source_ref') or '')}"
+                          for sid in selected_services
+                      )
+                  )
+              if len(bound_inputs) != 1:
+                  raise SystemExit(
+                      "FAIL-CLOSED: selected services have different gate-verification commits: "
+                      + ", ".join(
+                          f"{sid}={((selected_bindings[sid]).get('verified_input_commit') or '')}"
                           for sid in selected_services
                       )
                   )
               source_ref = bound_refs[0]
+              registry_verified_input_sha = bound_inputs[0]
               resolution = "immutable_registry_binding"
 
           req_headers = {
@@ -144,7 +168,23 @@ jobs:
           )
           resolved_sha = commit["sha"]
           artifact_sha = resolved_sha
-          verified_input_sha = resolved_sha
+          verified_input_sha = registry_verified_input_sha or artifact_sha
+          if resolution == "immutable_registry_binding" and resolved_sha != source_ref:
+              raise SystemExit(
+                  f"FAIL-CLOSED: immutable Source ref resolved unexpectedly: requested={source_ref} actual={resolved_sha}"
+              )
+          if len(verified_input_sha) != 40 or any(
+              ch not in "0123456789abcdef" for ch in verified_input_sha.lower()
+          ):
+              raise SystemExit(
+                  f"FAIL-CLOSED: invalid verified_input_commit in immutable registry: {verified_input_sha}"
+              )
+          verified_commit = get_json(
+              "https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/commits/"
+              + urllib.parse.quote(verified_input_sha, safe="")
+          )
+          if verified_commit["sha"] != verified_input_sha:
+              raise SystemExit("FAIL-CLOSED: verified input commit could not be resolved exactly")
           needed = {"CI", "Phase 2 Source Gate"}
 
           def observe_gate_runs(commit_sha):
@@ -168,13 +208,14 @@ jobs:
           observed = {}
           statuses = {}
           for attempt in range(30):
-              observed, statuses = observe_gate_runs(resolved_sha)
+              observed, statuses = observe_gate_runs(verified_input_sha)
               print(json.dumps(
                   {
                       "attempt": attempt + 1,
                       "requested_source_ref": requested_source_ref,
                       "resolved_source_ref": source_ref,
-                      "source_commit": resolved_sha,
+                      "source_commit": artifact_sha,
+                      "verified_input_commit": verified_input_sha,
                       "resolution": resolution,
                       "selected_services": selected_services,
                       "observed": observed,
@@ -191,7 +232,7 @@ jobs:
               )
               if terminal_bad:
                   raise SystemExit(
-                      f"Source ref {source_ref} has failed gate(s) for {resolved_sha}: "
+                      f"Source ref {source_ref} has failed gate(s) for verified input {verified_input_sha}: "
                       f"{terminal_bad}; observed={observed}"
                   )
               if not missing and all(observed.get(name) == "success" for name in needed):
@@ -199,8 +240,8 @@ jobs:
 
               if attempt == 29:
                   raise SystemExit(
-                      f"Timed out waiting for Source ref {source_ref} gates for {resolved_sha}; "
-                      f"observed={observed}, missing={missing}"
+                      f"Timed out waiting for Source gates on verified input {verified_input_sha}; "
+                      f"artifact={artifact_sha}, observed={observed}, missing={missing}"
                   )
               time.sleep(20)
 
