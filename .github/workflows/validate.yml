@@ -3,6 +3,13 @@ name: Validate
 on:
   workflow_dispatch:
   pull_request:
+    paths:
+      - ".github/workflows/validate.yml"
+      - "sources/immutable_registry.yaml"
+      - "config/source_canary_state.yaml"
+      - "scripts/**"
+      - "src/engine/**"
+      - "config/**"
 
 concurrency:
   group: phase2-validate-${{ github.ref }}
@@ -100,7 +107,55 @@ jobs:
               with urllib.request.urlopen(req) as response:
                   return json.load(response)
 
-          source_ref = "main"
+          registry_path = Path("sources/immutable_registry.yaml")
+          if not registry_path.exists():
+              raise SystemExit("FAIL-CLOSED: immutable Source registry is missing")
+          with registry_path.open(encoding="utf-8") as fh:
+              registry = yaml.safe_load(fh) or {}
+          bindings = registry.get("bindings") or {}
+          selected_bindings = {
+              service_id: (bindings.get(service_id) or {})
+              for service_id in active
+          }
+          incomplete = [
+              service_id for service_id, binding in selected_bindings.items()
+              if binding.get("status") != "active"
+              or not str(binding.get("source_ref", "")).strip()
+              or not str(binding.get("verified_input_commit", "")).strip()
+          ]
+          if incomplete:
+              raise SystemExit(
+                  "FAIL-CLOSED: active Canary service(s) lack complete immutable lineage bindings: "
+                  + ", ".join(sorted(incomplete))
+              )
+
+          bound_refs = sorted({
+              str(binding.get("source_ref", "")).strip()
+              for binding in selected_bindings.values()
+          })
+          bound_inputs = sorted({
+              str(binding.get("verified_input_commit", "")).strip()
+              for binding in selected_bindings.values()
+          })
+          if len(bound_refs) != 1:
+              raise SystemExit(
+                  "FAIL-CLOSED: active Canary services have different immutable Source refs: "
+                  + ", ".join(
+                      f"{sid}={selected_bindings[sid].get('source_ref') or ''}"
+                      for sid in active
+                  )
+              )
+          if len(bound_inputs) != 1:
+              raise SystemExit(
+                  "FAIL-CLOSED: active Canary services have different gate-verification commits: "
+                  + ", ".join(
+                      f"{sid}={selected_bindings[sid].get('verified_input_commit') or ''}"
+                      for sid in active
+                  )
+              )
+
+          source_ref = bound_refs[0]
+          verified_input_sha = bound_inputs[0]
           encoded_ref = urllib.parse.quote(source_ref, safe="")
           source_commit_doc = get_json(
               "https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/commits/"
@@ -109,8 +164,7 @@ jobs:
           requested_sha = source_commit_doc["sha"]
           source_sha = requested_sha
           artifact_sha = requested_sha
-          verified_input_sha = requested_sha
-          resolution = "direct"
+          resolution = "immutable_registry_binding"
           needed = {"CI", "Phase 2 Source Gate"}
 
           def observe_gate_runs(commit_sha):
@@ -134,7 +188,7 @@ jobs:
           observed = {}
           statuses = {}
           for attempt in range(30):
-              observed, statuses = observe_gate_runs(source_sha)
+              observed, statuses = observe_gate_runs(verified_input_sha)
               print(json.dumps(
                   {
                       "attempt": attempt + 1,
@@ -162,61 +216,6 @@ jobs:
               if not missing and all(observed.get(name) == "success" for name in needed):
                   break
 
-              if attempt == 0 and source_ref == "main" and source_sha == requested_sha:
-                  try:
-                      bridge_url = (
-                          "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/"
-                          f"{urllib.parse.quote(requested_sha, safe='')}/reports/durable-bridge/latest.json"
-                      )
-                      bridge = get_json(bridge_url)
-                  except Exception:
-                      bridge = {}
-                  persistence = str(bridge.get("persistence_commit", "")).strip()
-                  input_commit = str(bridge.get("input_commit", "")).strip()
-                  persistence_sha = persistence[5:] if persistence.startswith("main@") else ""
-                  requested_parents = {
-                      str(parent.get("sha", "")).strip()
-                      for parent in source_commit_doc.get("parents", [])
-                      if isinstance(parent, dict)
-                  }
-                  if (
-                      bridge.get("schema") == "popular_rules_source_durable_bridge_v1"
-                      and len(persistence_sha) == 40
-                      and all(ch in "0123456789abcdef" for ch in persistence_sha.lower())
-                      and persistence_sha in requested_parents
-                      and len(input_commit) == 40
-                      and all(ch in "0123456789abcdef" for ch in input_commit.lower())
-                  ):
-                      candidate_observed, candidate_statuses = observe_gate_runs(input_commit)
-                      candidate_bad = [
-                          name for name, conclusion in candidate_observed.items()
-                          if conclusion not in (None, "success")
-                      ]
-                      if (
-                          not candidate_bad
-                          and all(candidate_observed.get(name) == "success" for name in needed)
-                      ):
-                          verified_input_sha = input_commit
-                          artifact_sha = persistence_sha
-                          source_sha = artifact_sha
-                          resolution = "durable_bridge_persistence_artifact"
-                          observed = candidate_observed
-                          statuses = candidate_statuses
-                          print(json.dumps(
-                              {
-                                  "source_ref": source_ref,
-                                  "requested_source_commit": requested_sha,
-                                  "source_commit": source_sha,
-                                  "resolution": resolution,
-                                  "bridge_persistence": persistence,
-                                  "bridge_input_commit": input_commit,
-                                  "observed": observed,
-                                  "statuses": statuses,
-                              },
-                              ensure_ascii=False,
-                              indent=2,
-                          ))
-                          break
 
               if attempt == 29:
                   raise SystemExit(
@@ -235,6 +234,7 @@ jobs:
                   {
                       "source_ref": source_ref,
                       "source_commit": source_sha,
+                      "resolution": resolution,
                       "observed_source_gates": observed,
                       "services": active,
                   },
