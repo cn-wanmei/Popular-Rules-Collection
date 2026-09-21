@@ -89,8 +89,8 @@ services:
     source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-qqmail-e147434833e15f76bbe4930c, content_digest: e147434833e15f76bbe4930c741ca63b84f3c64e1d9eb1108f8c9ba4bb0e9501}
     attestation: {status: pending}
   qqmusic:
-    state: verified
-    enabled: false
+    state: canary
+    enabled: true
     source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-qqmusic-e903c9a62ef0a67f01a7d15d, content_digest: e903c9a62ef0a67f01a7d15df1e139cf7800032767302fc416faaa04a9abc289}
     attestation: {status: pending}
   taobao:
