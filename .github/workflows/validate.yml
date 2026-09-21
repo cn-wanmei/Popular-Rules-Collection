@@ -113,25 +113,49 @@ jobs:
           with registry_path.open(encoding="utf-8") as fh:
               registry = yaml.safe_load(fh) or {}
           bindings = registry.get("bindings") or {}
-          bound_refs = sorted({
-              str((bindings.get(service_id) or {}).get("source_ref", "")).strip()
+          selected_bindings = {
+              service_id: (bindings.get(service_id) or {})
               for service_id in active
-          } - {""})
-          if not bound_refs:
+          }
+          incomplete = [
+              service_id for service_id, binding in selected_bindings.items()
+              if binding.get("status") != "active"
+              or not str(binding.get("source_ref", "")).strip()
+              or not str(binding.get("verified_input_commit", "")).strip()
+          ]
+          if incomplete:
               raise SystemExit(
-                  "FAIL-CLOSED: no immutable Source binding exists for active Canary service(s): "
-                  + ", ".join(active)
+                  "FAIL-CLOSED: active Canary service(s) lack complete immutable lineage bindings: "
+                  + ", ".join(sorted(incomplete))
               )
+
+          bound_refs = sorted({
+              str(binding.get("source_ref", "")).strip()
+              for binding in selected_bindings.values()
+          })
+          bound_inputs = sorted({
+              str(binding.get("verified_input_commit", "")).strip()
+              for binding in selected_bindings.values()
+          })
           if len(bound_refs) != 1:
               raise SystemExit(
                   "FAIL-CLOSED: active Canary services have different immutable Source refs: "
                   + ", ".join(
-                      f"{sid}={((bindings.get(sid) or {}).get('source_ref') or '')}"
+                      f"{sid}={selected_bindings[sid].get('source_ref') or ''}"
+                      for sid in active
+                  )
+              )
+          if len(bound_inputs) != 1:
+              raise SystemExit(
+                  "FAIL-CLOSED: active Canary services have different gate-verification commits: "
+                  + ", ".join(
+                      f"{sid}={selected_bindings[sid].get('verified_input_commit') or ''}"
                       for sid in active
                   )
               )
 
           source_ref = bound_refs[0]
+          verified_input_sha = bound_inputs[0]
           encoded_ref = urllib.parse.quote(source_ref, safe="")
           source_commit_doc = get_json(
               "https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/commits/"
@@ -140,7 +164,6 @@ jobs:
           requested_sha = source_commit_doc["sha"]
           source_sha = requested_sha
           artifact_sha = requested_sha
-          verified_input_sha = requested_sha
           resolution = "immutable_registry_binding"
           needed = {"CI", "Phase 2 Source Gate"}
 
@@ -165,7 +188,7 @@ jobs:
           observed = {}
           statuses = {}
           for attempt in range(30):
-              observed, statuses = observe_gate_runs(source_sha)
+              observed, statuses = observe_gate_runs(verified_input_sha)
               print(json.dumps(
                   {
                       "attempt": attempt + 1,
