@@ -132,25 +132,47 @@ def _materialize_database_entry(
 
     artifact = dataset.get("artifact")
     path = dataset.get("path")
-    if artifact:
-        source_path = ROOT / str(artifact)
-    elif path:
+    did = str(dataset.get("id") or Path(str(artifact or path or kind)).stem)
+
+    # Binary artifacts are collected into backup/<date>/datasets/<dataset-id>.bin,
+    # then materialized here. They are never sourced from generated/ itself.
+    if kind == "binary" or scope == "artifact" or artifact:
+        candidates = sorted(BACKUP.glob(f"*/datasets/{did}.bin"))
+        if candidates:
+            source_path = candidates[-1]
+        elif artifact and not str(artifact).startswith("generated/"):
+            source_path = ROOT / str(artifact)
+        else:
+            source_path = None
+
+        if source_path is None or not source_path.is_file():
+            raise RuntimeError(f"{did}: collected binary input missing under backup/*/datasets/")
+        target_name = Path(str(artifact or source_path.name)).name
+        target = output / "mmdb" / target_name
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source_path, target)
+        records.append({
+            "id": did,
+            "kind": kind,
+            "scope": "mmdb",
+            "source": str(source_path.relative_to(ROOT)),
+            "file": str(target.relative_to(output)),
+            "sha256": _sha256(target),
+            "bytes": target.stat().st_size,
+        })
+        return
+
+    if path:
         source_path = ROOT / str(path)
-
+    else:
+        source_path = None
     if source_path is None:
-        raise RuntimeError(f"{dataset.get('id')}: no local materialization path")
-
+        raise RuntimeError(f"{did}: no local materialization path")
     if not source_path.is_file():
-        raise RuntimeError(
-            f"{dataset.get('id')}: required collected input is missing: {source_path.relative_to(ROOT)}"
-        )
+        raise RuntimeError(f"{did}: required collected input is missing: {source_path.relative_to(ROOT)}")
 
-    did = str(dataset.get("id") or source_path.stem)
     target_name = source_path.name
     target = output / dest_scope / target_name
-
-    # Artifact inputs are binary or structured files and must be copied byte-for-byte.
-    if kind == "binary" or artifact:
         target.parent.mkdir(parents=True, exist_ok=True)
         if source_path.resolve() != target.resolve():
             shutil.copy2(source_path, target)
