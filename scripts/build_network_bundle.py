@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import shutil
 from datetime import datetime, timezone
 from pathlib import Path
@@ -251,6 +252,7 @@ def main() -> int:
         "schema": "network_publication_v2",
         "generated_at": generated_at,
         "collection_date": args.date,
+        "source_commit": os.environ.get("GIT_COMMIT", "unknown"),
         "runtime_contract": "network_dataset_distribution_v2",
         "semantics": {
             "service_rules": "generated/<client>/...",
