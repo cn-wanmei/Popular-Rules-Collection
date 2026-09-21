@@ -173,20 +173,6 @@ def _materialize_database_entry(
 
     target_name = source_path.name
     target = output / dest_scope / target_name
-        target.parent.mkdir(parents=True, exist_ok=True)
-        if source_path.resolve() != target.resolve():
-            shutil.copy2(source_path, target)
-        records.append({
-            "id": did,
-            "kind": kind,
-            "scope": dest_scope,
-            "source": str(source_path.relative_to(ROOT)),
-            "file": str(target.relative_to(output)),
-            "sha256": _sha256(target),
-            "bytes": target.stat().st_size,
-        })
-        return
-
     if source_path.suffix.lower() in {".yaml", ".yml", ".json"}:
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source_path, target)
