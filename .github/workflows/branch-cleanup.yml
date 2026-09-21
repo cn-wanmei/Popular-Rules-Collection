@@ -34,7 +34,13 @@ jobs:
               'fix/test-gate-legacy-hard','fix/v3-upstream-acquisition-resilience','v3-collection-dag','v3-collection-p3.6-fix',
               'v3-collection-p3.6','v3-p1-hardening','v3-p1.5-quality-observability','v3-p36-cas-acquisition',
               'v3-p37-incremental-intelligence','v3-p37-incremental-source-intelligence','v3-production-hardening',
-              'v3-stabilization-s0-s7','v3-stabilization-s3-dag-resume','v3-stabilization-s4-cas-gc','v3-stabilization-s5-ir-contract'
+              'v3-stabilization-s0-s7','v3-stabilization-s3-dag-resume','v3-stabilization-s4-cas-gc','v3-stabilization-s5-ir-contract',
+              'phase2/activate-cainiao-canary-20260921','phase2/activate-qqmail-canary-20260921',
+              'phase2/exact-source-main-canary-20260921','phase2/fail-closed-production-source-fetch-20260921',
+              'phase2/production-completion-20260920','phase2/promote-qqmail-production-20260921',
+              'phase2/qqmusic-canary','phase2/taobao-canary','phase2/taobao-canary-current','phase2/taobao-canary-current-v2',
+              'phase2/tencentcloud-canary','phase2/tmall-canary','phase2/tmall-canary-current','phase2/tmall-canary-current-v2',
+              'feat/phase2-exit-preflight-current','fix/phase2-production-unlock-parallel-services-current'
             ];
             for (const branch of branches) {
               try {
