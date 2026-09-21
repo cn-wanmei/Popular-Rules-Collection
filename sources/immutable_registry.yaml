@@ -1,4 +1,4 @@
-# Durable source bridge sealed at Source main@192ee4a99cd02d99faddfbad30ac4ebf914edaa8
+# Immutable Source lineage seal: successful gate commit bound per service; persistence commits are not treated as gate evidence.
 version: 1
 schema: popular_rules_collection_immutable_source_registry_v1
 source_repository: cn-wanmei/Popular-Rules-Source
@@ -6,11 +6,12 @@ bindings:
   "1688":
     status: active
     source_id: popular-rules-source
-    source_ref: 192ee4a99cd02d99faddfbad30ac4ebf914edaa8
+    source_ref: f91b4f96c41d2b45ca0e387e64e5224ebfa67955
+    verified_input_commit: f91b4f96c41d2b45ca0e387e64e5224ebfa67955
     artifact_path: generated/source/1688/domains.txt
-    release_path: releases/1688/snap-1688-1459c7aeb56e68306b35eca5/release.json
-    snapshot_id: snap-1688-1459c7aeb56e68306b35eca5
-    content_digest: 1459c7aeb56e68306b35eca5a1196151f5d51ef80f3367b635458d2388abb331
+    release_path: releases/1688/snap-1688-84e807103e30fc99a7cacf1b/release.json
+    snapshot_id: snap-1688-84e807103e30fc99a7cacf1b
+    content_digest: 84e807103e30fc99a7cacf1bf8125e67d5084d2bb34f8e16630aa9a368424ed0
     expected_sha256: 65e6b0d571d62de22ae4a791113306d52207f94b25f74920a5533faa1ec220bb
   cainiao:
     status: active
@@ -76,4 +77,3 @@ bindings:
     content_digest: 2cd65882d5856fcc02da9dc52dfc7fa4322e30bd40c586f87c05f6b7413c014e
     expected_sha256: 4f2521212149543f1f267cb4b7d9bb89a544f168b33bd12ecd3207aaaedd412d
 
-# Strict-audit marker: control-plane integrity review in progress.
