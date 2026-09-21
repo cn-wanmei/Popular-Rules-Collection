@@ -41,7 +41,7 @@ jobs:
               'phase2/qqmusic-canary','phase2/taobao-canary','phase2/taobao-canary-current','phase2/taobao-canary-current-v2',
               'phase2/tencentcloud-canary','phase2/tmall-canary','phase2/tmall-canary-current','phase2/tmall-canary-current-v2',
               'feat/phase2-exit-preflight-current','fix/phase2-production-unlock-parallel-services-current',
-              'activate/tencentcloud-production-current','chore/audit-cleanup-docs-20260920'
+              'activate/tencentcloud-production-current','chore/audit-cleanup-docs-20260920','chore/repo-cleanup-20260921'
             ];
             for (const branch of branches) {
               try {
