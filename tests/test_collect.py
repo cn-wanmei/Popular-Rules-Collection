@@ -1,3 +1,4 @@
+
 from __future__ import annotations
 
 from scripts import collect
@@ -35,3 +36,17 @@ def test_other_global_sources_keep_global_enable_semantics():
     assert collect.source_runtime_enabled(source) is False
     source["enabled"] = True
     assert collect.source_runtime_enabled(source) is True
+
+
+def test_prs_production_failures_are_required_failures():
+    # This exercises the production-source invariant without contacting the network.
+    source = {
+        "id": "popular-rules-source",
+        "enabled": False,
+        "rules": [
+            {"path": "generated/source/cainiao/domains.txt", "enabled": True},
+        ],
+    }
+    entries = collect.rules_for(source)
+    assert len(entries) == 1
+    assert entries[0]["service"] == "cainiao"
