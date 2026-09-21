@@ -240,8 +240,15 @@ def collect_source(src: dict[str, Any], day_dir: Path, health: dict[str, Any], s
         hs["status"] = "down"
         hs["reason"] = "all fetches failed" if entries else "no rules in registry"
 
+    required_failures = 0
+    if sid == "popular-rules-source":
+        required_failures = sum(
+            1 for item in results
+            if item.get("status") not in {"ok", "not_modified", "skipped"}
+        )
     return {"source": sid, "fetch": cfg.get("type"), "files_ok": fetched, "files_not_modified": unchanged, "files_skipped": skipped,
-            "files_failed": fail, "empty_blocked": empty_blocked, "rules_declared": len(entries), "conditional_cache_hits": unchanged,
+            "files_failed": fail, "empty_blocked": empty_blocked, "required_failures": required_failures,
+            "rules_declared": len(entries), "conditional_cache_hits": unchanged,
             "scheduler_skips": skipped, "files": files_meta, "registry_priority": src.get("priority"), "registry_trust": src.get("trust"),
             "critical": bool(src.get("critical") or (src.get("collection") or {}).get("critical")), "concurrency_workers": workers}
 
@@ -291,7 +298,14 @@ def main() -> int:
     total_unchanged = sum(s["files_not_modified"] for s in summary)
     total_skipped = sum(s["files_skipped"] for s in summary)
     total_fail = sum(s["files_failed"] for s in summary)
-    print(f"[collect] done ok={total_ok} not_modified={total_unchanged} skipped={total_skipped} failed={total_fail}")
+    required_failures = sum(int(s.get("required_failures") or 0) for s in summary)
+    print(
+        f"[collect] done ok={total_ok} not_modified={total_unchanged} "
+        f"skipped={total_skipped} failed={total_fail} required_failures={required_failures}"
+    )
+    if required_failures:
+        print("[collect] FAIL-CLOSED: production PRS source entry fetch failed")
+        return 1
     return 0 if total_ok + total_unchanged + total_skipped > 0 else 1
 
 
