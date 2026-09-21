@@ -19,6 +19,8 @@ on:
       - "requirements.lock"
       - ".github/workflows/build.yml"
       - ".github/workflows/publish.yml"
+      - "scripts/immutable_source_lineage_gate.py"
+      - "sources/immutable_registry.yaml"
   pull_request:
     branches: [main]
     paths:
@@ -95,6 +97,14 @@ jobs:
           [ -n "$(find "$source_root/sources" -type f -print -quit)" ] || { echo "Collected source root is empty"; exit 1; }
           echo "collection_date=$day" >> "$GITHUB_OUTPUT"
           echo "source_root=$source_root" >> "$GITHUB_OUTPUT"
+
+      - name: Immutable Source Lineage Gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          PYTHONPATH=. python scripts/immutable_source_lineage_gate.py \
+            --collection-root "${{ steps.source.outputs.source_root }}" \
+            --json-out "${{ steps.source.outputs.source_root }}/manifests/immutable-source-lineage-build.json"
 
       - name: Engine — immutable build
         id: engine
@@ -219,6 +229,7 @@ jobs:
           printf '%s\n' "$RUN_ID" > release-candidate/run-id.txt
           printf '%s\n' "${{ github.run_id }}" > release-candidate/build-run-id.txt
           printf '%s\n' "${{ github.sha }}" > release-candidate/build-head-sha.txt
+          printf '%s\n' "${{ steps.source.outputs.collection_date }}" > release-candidate/collection-date.txt
           cp config/client_capability_matrix.yaml release-candidate/
           mkdir -p release-candidate/reports/v1
           cp reports/v1/FINAL_MIGRATION_GATE.json release-candidate/reports/v1/
