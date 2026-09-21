@@ -138,13 +138,18 @@ def _prepare_input(
         encoding="utf-8",
     )
     binding = {
-        "schema": "phase2_source_binding_v1",
+        "schema": "phase2_source_binding_v2",
         "repository": "cn-wanmei/Popular-Rules-Source",
         "source_commit": source_commit,
         "verified_input_commit": verified_input_commit,
         "service_id": service_id,
         "snapshot_id": snapshot.get("snapshot_id"),
         "content_digest": snapshot.get("content_digest"),
+        "evidence_digest": snapshot.get("evidence_digest"),
+        "policy_digest": snapshot.get("policy_digest"),
+        "generator_digest": snapshot.get("generator_digest"),
+        "release_digest": snapshot.get("release_digest"),
+        "release_identity_version": snapshot.get("release_identity_version"),
         "domain_count": snapshot.get("domain_count"),
         "official_evidence_count": len(snapshot.get("evidence") or []),
         "seed_only_count": snapshot.get("seed_only_count", 0),
@@ -260,6 +265,9 @@ def canary_service(
         raise RuntimeError(f"{service_id}: Source release snapshot binding mismatch")
     if release_doc.get("content_digest") != binding["content_digest"]:
         raise RuntimeError(f"{service_id}: Source release content digest mismatch")
+    for field in ("evidence_digest", "policy_digest", "generator_digest", "release_digest", "release_identity_version"):
+        if release_doc.get(field) != binding.get(field):
+            raise RuntimeError(f"{service_id}: Source release {field} mismatch")
     checksums_file = snapshot_dir / "checksums.json"
     if not checksums_file.is_file():
         raise RuntimeError(f"{service_id}: immutable snapshot checksums missing")
@@ -352,6 +360,11 @@ def canary_service(
             "commit": source_commit,
             "snapshot_id": snapshot.get("snapshot_id"),
             "content_digest": snapshot.get("content_digest"),
+            "evidence_digest": snapshot.get("evidence_digest"),
+            "policy_digest": snapshot.get("policy_digest"),
+            "generator_digest": snapshot.get("generator_digest"),
+            "release_digest": snapshot.get("release_digest"),
+            "release_identity_version": snapshot.get("release_identity_version"),
             "domain_count": snapshot.get("domain_count"),
             "seed_only_count": snapshot.get("seed_only_count", 0),
             "unverified_candidate_count": snapshot.get("unverified_candidate_count", 0),
