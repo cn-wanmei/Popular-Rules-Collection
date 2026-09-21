@@ -33,10 +33,15 @@ services:
       seed_only_count: 0
       conflict_count: 0
   cainiao:
-    state: verified
-    enabled: false
-    source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-cainiao-5f98d4fa8f88bb35bb2d46da, content_digest: 5f98d4fa8f88bb35bb2d46da0b970bb892a12078908b7da6f874af4bb31fcf39}
-    attestation: {status: pending}
+    state: canary
+    enabled: true
+    source_verification:
+      run: 35519430221
+      source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5
+      snapshot_id: snap-cainiao-5f98d4fa8f88bb35bb2d46da
+      content_digest: 5f98d4fa8f88bb35bb2d46da0b970bb892a12078908b7da6f874af4bb31fcf39
+    attestation:
+      status: pending
   dingding:
     state: production
     enabled: true
