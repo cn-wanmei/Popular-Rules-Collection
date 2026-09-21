@@ -1,6 +1,6 @@
 # Registry V3 — Source + Fetcher + Collection Manifest
 version: 3
-last_updated: '2026-09-21'  # immutable source bridge activation verified; workflow trigger syntax fixed
+last_updated: '2026-09-21'  # immutable source bridge activation verified; numeric immutable key normalization verified
 sources:
 - id: popular-rules-source
   name: Popular-Rules-Source (official domain generation)
