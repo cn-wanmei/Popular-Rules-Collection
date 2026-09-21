@@ -108,6 +108,11 @@ def reconcile_service(
     if release.get("content_digest") != content_digest:
         raise RuntimeError(f"{service_id}: release content_digest mismatch")
 
+    binding_file = canary_root / "input" / "source-binding.json"
+    if not binding_file.is_file():
+        raise RuntimeError(f"{service_id}: source binding artifact missing")
+    binding = _load_json(binding_file)
+
     provenance_fields = (
         "evidence_digest", "policy_digest", "generator_digest",
         "release_digest", "release_identity_version",
@@ -148,10 +153,6 @@ def reconcile_service(
             f"{service_id}: registry path mismatch: {registration.get('path')} != {expected_path}"
         )
 
-    binding_file = canary_root / "input" / "source-binding.json"
-    if not binding_file.is_file():
-        raise RuntimeError(f"{service_id}: source binding artifact missing")
-    binding = _load_json(binding_file)
     expected_binding = {
         "repository": "cn-wanmei/Popular-Rules-Source",
         "source_commit": source_commit,
