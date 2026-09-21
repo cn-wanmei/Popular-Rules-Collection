@@ -3,7 +3,7 @@ version: 1
 schema: popular_rules_collection_immutable_source_registry_v1
 source_repository: cn-wanmei/Popular-Rules-Source
 bindings:
-  1688:
+  "1688":
     status: active
     source_id: popular-rules-source
     source_ref: 192ee4a99cd02d99faddfbad30ac4ebf914edaa8

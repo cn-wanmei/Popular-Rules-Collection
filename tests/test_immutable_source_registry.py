@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "sources" / "immutable_registry.yaml"
 SERVICES = {"1688", "cainiao", "dingding", "qqmail", "qqmusic", "taobao", "tencentcloud", "tmall"}
 SHA40 = re.compile(r"^[0-9a-f]{40}$")
+SHA64 = re.compile(r"^[0-9a-f]{64}$")
 
 
 def test_immutable_registry_covers_phase2_services() -> None:
@@ -26,5 +27,5 @@ def test_immutable_registry_covers_phase2_services() -> None:
             assert binding["artifact_path"]
             assert binding["release_path"]
             assert binding["snapshot_id"]
-            assert SHA40.fullmatch(binding["expected_sha256"])
+            assert SHA64.fullmatch(binding["expected_sha256"])
             assert binding["content_digest"]

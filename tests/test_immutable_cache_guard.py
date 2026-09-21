@@ -22,7 +22,10 @@ def test_load_cached_rejects_immutable_digest_drift(tmp_path: Path, monkeypatch)
 def test_immutable_binding_accepts_numeric_yaml_service_key(tmp_path: Path, monkeypatch) -> None:
     registry = tmp_path / "immutable_registry.yaml"
     registry.write_text(
-        "bindings:\\n  1688:\\n    status: active\\n    expected_sha256: " + "a" * 64 + "\\n",
+        """bindings:
+  "1688":
+    status: active
+    expected_sha256: """ + "a" * 64 + "\n",
         encoding="utf-8",
     )
     monkeypatch.setattr(collect, "IMMUTABLE_REGISTRY_PATH", registry)
