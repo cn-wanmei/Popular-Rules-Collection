@@ -1,5 +1,5 @@
 version: 2
-updated: "2026-09-17"
+updated: "2026-09-22"
 policy:
   git:
     max_file_mb: 5.0
@@ -10,9 +10,18 @@ policy:
     max_bundle_mb: 200
   truth:
     layer: artifact_manifest
-    note: "Release is distribution only; rules/ is canonical source"
+    note: "Release is distribution; V3 runtime truth is data/runs/<run>; rule/ is legacy browse-only; generated/ is the published distribution layer"
 release_globs:
   - "generated/mmdb/**"
+  - "generated/network/**"
+  - "generated/geosite/**"
+  - "generated/geoip/**"
+  - "generated/provider/**"
+  - "generated/asn/**"
+  - "generated/ip/**"
+  - "generated/policies/**"
+  - "generated/manifest.json"
+  - "generated/network_manifest.json"
   - "generated/routing/decisions.jsonl"
   - "generated/**/adblock*.list"
   - "generated/**/adblock*.yaml"
