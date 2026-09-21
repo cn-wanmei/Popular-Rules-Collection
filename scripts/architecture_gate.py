@@ -11,10 +11,14 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 FORBIDDEN_REFS = (
     "scripts/" + "pipeline.py",
-    "scripts/" + "build_",
     ".github/workflows/" + "normalize.yml",
     'workflows: ["' + "Normalize" + '"]',
 )
+OBSOLETE_SCRIPT_FILES = {
+    # Explicit legacy production scripts only. New V3 production builders
+    # are allowed to use the build_ prefix when they are part of the
+    # declared DAG and covered by CI.
+}
 PRODUCTION_ROOTS = (
     ROOT / ".github",
     ROOT / "src",
@@ -92,6 +96,9 @@ def main() -> int:
     failures.extend(_legacy_ref_scan())
 
     for forbidden in (".github/workflows/" + "normalize.yml", "scripts/" + "pipeline.py"):
+        if (ROOT / forbidden).exists():
+            failures.append(f"obsolete production file exists: {forbidden}")
+    for forbidden in sorted(OBSOLETE_SCRIPT_FILES):
         if (ROOT / forbidden).exists():
             failures.append(f"obsolete production file exists: {forbidden}")
 
