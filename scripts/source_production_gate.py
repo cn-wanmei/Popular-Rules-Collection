@@ -23,7 +23,6 @@ PRODUCTION_REQUIRED = (
     "semantic_run_id",
     "rollback_run_id",
     "observation_started_at",
-    "observation_completed_at",
     "production_unlock_run_id",
 )
 
