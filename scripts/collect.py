@@ -38,7 +38,13 @@ def load_immutable_registry() -> dict[str, Any]:
 
 def immutable_binding_for(service: str) -> dict[str, Any] | None:
     data = load_immutable_registry()
-    binding = (data.get("bindings") or {}).get(str(service).lower())
+    wanted = str(service).strip().casefold()
+    bindings = data.get("bindings") or {}
+    binding = next(
+        (value for key, value in bindings.items()
+         if str(key).strip().casefold() == wanted and isinstance(value, dict)),
+        None,
+    )
     if not isinstance(binding, dict) or binding.get("status") != "active":
         return None
     return binding
