@@ -26,6 +26,23 @@ HEALTH_PATH = ROOT / "sources" / "health.yaml"
 STATE_PATH = ROOT / "data" / "collection" / "fetch_state.json"
 BACKUP_ROOT = ROOT / "backup"
 DEFAULT_WORKERS = 12
+IMMUTABLE_REGISTRY_PATH = ROOT / "sources" / "immutable_registry.yaml"
+
+
+def load_immutable_registry() -> dict[str, Any]:
+    if not IMMUTABLE_REGISTRY_PATH.exists():
+        return {}
+    loaded = yaml.safe_load(IMMUTABLE_REGISTRY_PATH.read_text(encoding="utf-8")) or {}
+    return loaded if isinstance(loaded, dict) else {}
+
+
+def immutable_binding_for(service: str) -> dict[str, Any] | None:
+    data = load_immutable_registry()
+    binding = (data.get("bindings") or {}).get(str(service).lower())
+    if not isinstance(binding, dict) or binding.get("status") != "active":
+        return None
+    return binding
+
 
 
 def utc_now() -> datetime:
@@ -100,20 +117,22 @@ def _cache_key(source_id: str, entry_path: str) -> str:
     return f"{source_id}::{entry_path}"
 
 
-def _load_cached(previous: dict[str, Any]) -> tuple[bytes, str] | None:
+def _load_cached(previous: dict[str, Any], *, expected_sha256: str | None = None) -> tuple[bytes, str] | None:
     digest = previous.get("cas_sha256") or previous.get("sha256")
     if digest:
         try:
             content = cas_load(str(digest), ROOT)
-            if digest_bytes(content) == str(digest):
-                return content, str(digest)
+            actual = digest_bytes(content)
+            if actual == str(digest) and (not expected_sha256 or actual == expected_sha256):
+                return content, actual
         except (FileNotFoundError, RuntimeError, OSError):
             pass
     cached = previous.get("local")
     cached_path = ROOT / str(cached) if cached else None
     if cached_path and cached_path.is_file() and previous.get("sha256"):
         content = cached_path.read_bytes()
-        if digest_bytes(content) == str(previous["sha256"]):
+        actual = digest_bytes(content)
+        if actual == str(previous["sha256"]) and (not expected_sha256 or actual == expected_sha256):
             cas_sha = cas_store(content, ROOT)
             return content, cas_sha
     return None
@@ -126,15 +145,21 @@ def _source_for_compat(src: dict[str, Any] | str) -> dict[str, Any]:
 def _fetch_entry(src: dict[str, Any] | str, cfg: dict[str, Any], entry: dict[str, str], previous: dict[str, Any], *, force_refresh: bool = False) -> dict[str, Any]:
     source = _source_for_compat(src)
     sid = str(source["id"])
+    binding = immutable_binding_for(entry.get("service", "")) if sid == "popular-rules-source" else None
+    expected_sha256 = str(binding.get("expected_sha256") or "") if binding else None
     decision: ScheduleDecision = decide(previous, source, force=force_refresh)
     if decision.action.startswith("SKIP_"):
-        cached = _load_cached(previous)
+        cached = _load_cached(previous, expected_sha256=expected_sha256)
         if cached is not None:
             content, digest = cached
-            return {"name": entry["name"], "path": entry["path"], "service": entry["service"], "url": previous.get("last_url"),
+            meta = {"name": entry["name"], "path": entry["path"], "service": entry["service"], "url": previous.get("last_url"),
                     "status": "skipped", "decision": decision.action, "reason": decision.reason, "content": content,
                     "sha256": digest, "cas_sha256": digest, "size": len(content), "cached_from_cas": True}
-        decision = ScheduleDecision("FETCH_DUE", "cached_snapshot_unavailable")
+            if binding:
+                meta["immutable"] = {k: binding.get(k) for k in ("source_ref", "release_path", "snapshot_id", "content_digest", "expected_sha256")}
+            return meta
+        reason = "immutable_cache_digest_mismatch" if expected_sha256 else "cached_snapshot_unavailable"
+        decision = ScheduleDecision("FETCH_DUE", reason)
 
     headers: dict[str, str] = {}
     if previous.get("etag"):
@@ -146,8 +171,10 @@ def _fetch_entry(src: dict[str, Any] | str, cfg: dict[str, Any], entry: dict[str
     meta = {"name": entry["name"], "path": entry["path"], "service": entry["service"], "url": result.url,
             "status_code": result.status_code, "etag": result.headers.get("etag"),
             "last_modified": result.headers.get("last-modified"), "decision": decision.action, "reason": decision.reason}
+    if binding:
+        meta["immutable"] = {k: binding.get(k) for k in ("source_ref", "release_path", "snapshot_id", "content_digest", "expected_sha256")}
     if result.not_modified:
-        cached = _load_cached(previous)
+        cached = _load_cached(previous, expected_sha256=expected_sha256)
         if cached is not None:
             content, digest = cached
             return {**meta, "status": "not_modified", "content": content, "cas_sha256": digest, "sha256": digest,
