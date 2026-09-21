@@ -17,6 +17,7 @@ bindings:
     status: active
     source_id: popular-rules-source
     source_ref: c1f36a1171b243e8b73a546bb934343c0b0e6f43
+    verified_input_commit: 53444cb35049dca075c21bdc09a7bc1c8f625ca2
     artifact_path: generated/source/cainiao/domains.txt
     release_path: releases/cainiao/snap-cainiao-e26cab039a43581eda77fd41/release.json
     snapshot_id: snap-cainiao-e26cab039a43581eda77fd41
@@ -26,6 +27,7 @@ bindings:
     status: active
     source_id: popular-rules-source
     source_ref: c1f36a1171b243e8b73a546bb934343c0b0e6f43
+    verified_input_commit: 53444cb35049dca075c21bdc09a7bc1c8f625ca2
     artifact_path: generated/source/dingding/domains.txt
     release_path: releases/dingding/snap-dingding-a8d439dd579c51318213ff4d/release.json
     snapshot_id: snap-dingding-a8d439dd579c51318213ff4d
@@ -35,6 +37,7 @@ bindings:
     status: active
     source_id: popular-rules-source
     source_ref: c1f36a1171b243e8b73a546bb934343c0b0e6f43
+    verified_input_commit: 53444cb35049dca075c21bdc09a7bc1c8f625ca2
     artifact_path: generated/source/qqmail/domains.txt
     release_path: releases/qqmail/snap-qqmail-e18e92f661d4032c002d436c/release.json
     snapshot_id: snap-qqmail-e18e92f661d4032c002d436c
@@ -44,6 +47,7 @@ bindings:
     status: active
     source_id: popular-rules-source
     source_ref: c1f36a1171b243e8b73a546bb934343c0b0e6f43
+    verified_input_commit: 53444cb35049dca075c21bdc09a7bc1c8f625ca2
     artifact_path: generated/source/qqmusic/domains.txt
     release_path: releases/qqmusic/snap-qqmusic-e903c9a62ef0a67f01a7d15d/release.json
     snapshot_id: snap-qqmusic-e903c9a62ef0a67f01a7d15d
@@ -53,6 +57,7 @@ bindings:
     status: active
     source_id: popular-rules-source
     source_ref: c1f36a1171b243e8b73a546bb934343c0b0e6f43
+    verified_input_commit: 53444cb35049dca075c21bdc09a7bc1c8f625ca2
     artifact_path: generated/source/taobao/domains.txt
     release_path: releases/taobao/snap-taobao-d865dad40f26ed85eb11a09b/release.json
     snapshot_id: snap-taobao-d865dad40f26ed85eb11a09b
@@ -62,6 +67,7 @@ bindings:
     status: active
     source_id: popular-rules-source
     source_ref: c1f36a1171b243e8b73a546bb934343c0b0e6f43
+    verified_input_commit: 53444cb35049dca075c21bdc09a7bc1c8f625ca2
     artifact_path: generated/source/tencentcloud/domains.txt
     release_path: releases/tencentcloud/snap-tencentcloud-b5318bbe16655ce5f3eaaf84/release.json
     snapshot_id: snap-tencentcloud-b5318bbe16655ce5f3eaaf84
@@ -71,6 +77,7 @@ bindings:
     status: active
     source_id: popular-rules-source
     source_ref: c1f36a1171b243e8b73a546bb934343c0b0e6f43
+    verified_input_commit: 53444cb35049dca075c21bdc09a7bc1c8f625ca2
     artifact_path: generated/source/tmall/domains.txt
     release_path: releases/tmall/snap-tmall-e789778d5553d7ddf454595c/release.json
     snapshot_id: snap-tmall-e789778d5553d7ddf454595c
