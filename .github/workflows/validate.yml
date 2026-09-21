@@ -57,7 +57,6 @@ jobs:
           set -euo pipefail
           mkdir -p reports/phase2-canary
           python - <<'PY'
-          import base64
           import json
           import os
           import time
@@ -163,13 +162,11 @@ jobs:
 
               if attempt == 0 and source_ref == "main" and source_sha == requested_sha:
                   try:
-                      bridge_doc = get_json(
-                          "https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/contents/"
-                          "reports/durable-bridge/latest.json"
-                          f"?ref={urllib.parse.quote(requested_sha, safe='')}"
+                      bridge_url = (
+                          "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/"
+                          f"{urllib.parse.quote(requested_sha, safe='')}/reports/durable-bridge/latest.json"
                       )
-                      encoded_bridge = str(bridge_doc.get("content", "")).replace("\\n", "")
-                      bridge = json.loads(base64.b64decode(encoded_bridge).decode("utf-8")) if encoded_bridge else {}
+                      bridge = get_json(bridge_url)
                   except Exception:
                       bridge = {}
                   persistence = str(bridge.get("persistence_commit", "")).strip()
