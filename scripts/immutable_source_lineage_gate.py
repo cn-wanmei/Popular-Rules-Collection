@@ -99,6 +99,10 @@ def main() -> int:
             failures.append(f"{service}: manifest sha mismatch expected={expected} actual={actual_manifest_sha}")
         if str(item.get("path")) != str(binding.get("artifact_path")):
             failures.append(f"{service}: artifact path mismatch")
+        url = str(item.get("url") or "")
+        source_ref = str(binding.get("source_ref") or "")
+        if url and ("/main/" in url or f"/{source_ref}/" not in url):
+            failures.append(f"{service}: acquisition url is not pinned to immutable source_ref")
         immutable = item.get("immutable") or {}
         for key in ("source_ref", "release_path", "snapshot_id", "content_digest", "expected_sha256"):
             if str(immutable.get(key) or "") != str(binding.get(key) or ""):
