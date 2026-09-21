@@ -1,40 +1,33 @@
-# V1 Rule Model
+# Legacy V1 Rule Tree
 
-`rule/` 是 V1 Canonical Service Rule 模型的主入口。
+`rule/` 是历史 V1 Canonical Service Model 的保留浏览树，用于迁移、审计和兼容性追踪。
 
-```text
-rule/
-├── category/   # 分类实体
-├── service/    # 服务实体
-└── shared/     # 共享组件实体
-```
+它**不是**当前 V3 Runtime 的生产真源，也不是 `generated/` 的编译输入。
 
-## Entity Boundary
-
-- `category/`：Category，不拥有 Service Canonical Assets。
-- `service/`：Service / Parent Service / Child Service。
-- `shared/`：跨服务复用的 Shared Component。
-- `database/`：Network Dataset，不属于本目录。
-- `generated/`：客户端编译产物，不属于 Canonical Source。
-
-## Service Semantics
-
-一个 Service 可以属于多个 Category。
-
-Parent Service 可以同时拥有自己的 assets，并聚合 Child Services：
+当前 V3 真源：
 
 ```text
-Parent own assets
-+ Child aggregates
-+ requires closure
-→ canonical dedup
-→ artifact
+backup/<date>
+  ↓
+data/runs/<run-id>/canonical
+  ↓
+data/runs/<run-id>/ir
+  ↓
+generated/<client>/
 ```
 
-## Migration Rule
+## 目录语义
 
-现有 legacy `rule/<Name>/` 资产在完成审计前不得删除。迁移必须先建立 Service Identity，再建立 Canonical Asset Mapping。
+- `rule/category/`：历史 Category 实体。
+- `rule/service/`：历史 Service / Parent / Child 实体。
+- `rule/shared/`：历史共享组件。
+- `database/`：Network Dataset 中间层。
+- `generated/`：最终发行层。
 
-## V3 Contract
+## 为什么不会和 generated 一致
 
-V3 Engine 消费 V1 Model，完成 dependency resolution、aggregate resolution、canonical dedup、IR 与客户端 adapter；V1 不直接生成客户端策略。
+`rule/` 保留的是历史 V1 结构；`generated/<client>/` 是 V3 Semantic IR 经客户端 Adapter 编译后的投影。两者不是 1:1 文件复制，因此内容不应要求逐文件相同。
+
+## 变更原则
+
+不得因为 `rule/` 与 `generated/` 不一致而直接手工修改生成物。应修改其真实上游输入，重新运行 V3 Engine 并让 CI 生成新的 Release Candidate。
