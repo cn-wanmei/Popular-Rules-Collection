@@ -3,7 +3,7 @@ schema: rule_directory_policy_v1
 updated: "2026-09-17"
 root: rules
 
-# Canonical source layout. Each directory contains exactly one logical ruleset source.
+# Canonical directory contract. Runtime Canonical truth is materialized per V3 run under data/runs/<run-id>/canonical.
 # Provider aggregates are complete unions of their declared provider services.
 # China is a special domestic aggregate: it covers the China rule universe, but
 # explicitly excludes providers that have their own independent service trees.
@@ -24,6 +24,9 @@ semantics:
   all_is_reference: true
   no_flattened_service_files: true
   generated_only: true
+  runtime_canonical: "data/runs/<run-id>/canonical"
+  legacy_rule_root: "rule/"
+  directory_contract_root: "rules/"
 
 # Providers with independent service directories are intentionally NOT folded
 # into the China aggregate. Their own aggregate/service trees are authoritative.
