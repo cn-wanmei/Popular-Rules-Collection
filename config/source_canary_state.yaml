@@ -138,14 +138,22 @@ services:
       seed_only_count: 0
       conflict_count: 0
   taobao:
-    state: verified
-    enabled: false
-    source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-taobao-8bf235109eb1fae87549fea8, content_digest: 8bf235109eb1fae87549fea81dfdb81bc327941d6128bcb2f4f60af00e5b4f92}
-    attestation: {status: pending}
-  tencentcloud:
     state: canary
     enabled: true
-    source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-tencentcloud-018c6d0a2429c98a45976487, content_digest: 018c6d0a2429c98a45976487d44de561338ac63ae290f0975b316409f0aa273c}
+    source_verification:
+      run: 35678280042
+      source_commit: ffc7375b31080ea735c8bcc8ee59066b969c382f
+      snapshot_id: snap-taobao-d34b149646aa56450032d01d
+      content_digest: cfd55feeff484e929a6ae7d440b00b424ac10d3c68e0ad77aa09d164e9db9719
+    attestation: {status: pending}
+  tencentcloud:
+    state: verified
+    enabled: false
+    source_verification:
+      run: 35678280042
+      source_commit: ffc7375b31080ea735c8bcc8ee59066b969c382f
+      snapshot_id: snap-tencentcloud-88cd0f5dc164b2937a59521f
+      content_digest: 414a94c084a576e5770e6d2e3ab6ef9b9c09cbbeb4de1848c5a812459490c499
     attestation: {status: pending}
   tmall:
     state: verified
