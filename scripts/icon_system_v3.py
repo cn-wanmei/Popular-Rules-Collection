@@ -226,7 +226,7 @@ def build(out):
                 import cairosvg
             except ImportError as exc:
                 raise SystemExit("cairosvg is required for client PNG generation") from exc
-            cairosvg.svg2png(bytes=(out/r["variants"][preferred]["path"]).read_bytes(),write_to=str(p),output_width=size,output_height=size)
+            cairosvg.svg2png(bytestring=(out/r["variants"][preferred]["path"]).read_bytes(),write_to=str(p),output_width=size,output_height=size)
             ix[r["service_id"]]={"identity":r["icon_identity"],"role":r["role"],"style":preferred,"size":size,"format":"png","path":p.relative_to(out).as_posix(),"digest":hashlib.sha256(p.read_bytes()).hexdigest()}
         q=out/"index"/"clients"/f"{client}.json"; q.parent.mkdir(parents=True,exist_ok=True); q.write_text(json.dumps({"schema":"icon_client_index_v3","client":client,"entries":ix},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     now=datetime.now(timezone.utc).isoformat()
