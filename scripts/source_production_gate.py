@@ -71,6 +71,11 @@ def main() -> int:
             errors.append(f"{sid}: production requires enabled=true")
         if attestation.get("status") != "passed":
             errors.append(f"{sid}: production requires attestation.status=passed")
+        activation_record = str(attestation.get("production_activation_record", "")).strip()
+        if not activation_record:
+            errors.append(f"{sid}: production requires production_activation_record")
+        elif not (ROOT / activation_record).is_file():
+            errors.append(f"{sid}: production activation record missing: {activation_record}")
 
         for field in PRODUCTION_REQUIRED:
             if not str(attestation.get(field, "")).strip():
