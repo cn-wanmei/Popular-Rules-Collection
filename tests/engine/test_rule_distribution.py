@@ -40,7 +40,7 @@ def test_rule_distribution_is_derived_from_ir_and_deterministic(tmp_path: Path):
     first = build_rule_tree(ir_dir, a, hierarchy_path=hierarchy, run_id="run-1")
     second = build_rule_tree(ir_dir, b, hierarchy_path=hierarchy, run_id="run-1")
     assert first["status"] == "ready"
-    assert first["rule_file_count"] == 3
+    assert first["rule_file_count"] == 4
     assert (a / "acme" / "mail" / "rules.yaml").exists()
     assert (a / "acme" / "all" / "rules.yaml").exists()
     assert (a / "category" / "communication" / "all" / "rules.yaml").exists()
