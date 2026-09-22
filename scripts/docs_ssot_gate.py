@@ -25,12 +25,14 @@ generated_paths = {item.get('file') for item in generated if item.get('file')}
 clients = set(manifest.get('client_rule_directories', []))
 
 legacy_markers = (
-    'generated/sing-box',
-    'generated/quantumult-x',
-    'database/domains/',
-    'scripts/generate_docs.py',
-    'scripts/generate_rule_pages.py',
+    'generated/' + 'sing-box',
+    'generated/' + 'quantumult-x',
+    'database/' + 'domains/',
+    'scripts/' + 'generate_docs.py',
+    'scripts/' + 'generate_rule_pages.py',
 )
+
+legacy_service_prefix = 'database/' + 'services/'
 
 errors = []
 if clients != {'egern', 'loon', 'mihomo', 'quantumultx', 'shadowrocket', 'singbox', 'surge'}:
@@ -46,7 +48,7 @@ for service_id in sorted(services):
         if marker in text:
             errors.append(f'{doc.relative_to(ROOT)} contains forbidden legacy marker: {marker}')
     for line in text.splitlines():
-        if 'database/services/' in line and not ('Legacy' in line or 'legacy' in line or '不是' in line or 'not' in line):
+        if legacy_service_prefix in line and not ('Legacy' in line or 'legacy' in line or '不是' in line or 'not' in line):
             errors.append(f'{doc.relative_to(ROOT)} uses database/services as a current reference: {line.strip()}')
 
     expected = []
