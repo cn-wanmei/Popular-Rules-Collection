@@ -58,12 +58,18 @@
     "tencentcloud": {
       "state": "verified",
       "enabled": false,
-      "source_status": "pending_official_asset_reconciliation"
+      "official_reference": "https://cloud.tencent.com/act/event/icons",
+      "source_policy": "official_source_asset_required",
+      "license_status": "pending",
+      "cutover_blocker": "immutable_official_asset_and_license_reverification"
     },
     "tmall": {
       "state": "verified",
       "enabled": false,
-      "source_status": "pending_immutable_source_reverification"
+      "official_reference": "https://www.tmall.com/",
+      "source_policy": "official_source_asset_required",
+      "license_status": "pending",
+      "cutover_blocker": "immutable_official_asset_and_lineage_reverification"
     }
   },
   "policy": {
