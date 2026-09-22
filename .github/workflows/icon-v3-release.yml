@@ -23,7 +23,7 @@ on:
 
 concurrency:
   group: icon-v3-release-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   release:
