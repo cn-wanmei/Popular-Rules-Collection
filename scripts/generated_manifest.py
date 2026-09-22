@@ -92,8 +92,8 @@ def main() -> int:
         "semantics": {
             "client_rules": "generated/<client>/... are compiled V3 projections",
             "network_datasets": "generated/<scope>/... are companion routing datasets",
-            "legacy_rule_tree": "rule/ is not a V3 runtime input",
-            "reserved_rules_tree": "rules/ is a directory-contract target, not a second runtime database",
+            "human_rule_tree": "rule/ is a generated human browsing and selection distribution derived from the same Semantic IR Run",
+            "forbidden_alternate_rule_tree": "rules/ must not exist; there is no third rule directory",
         },
         "file_count": len(files),
         "files": files,
