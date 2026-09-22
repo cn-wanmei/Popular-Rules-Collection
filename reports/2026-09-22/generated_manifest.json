@@ -12,17 +12,17 @@
   "file_count": 1564,
   "files": [
     {
-      "file": "_promotion/20260922T014539667771Z-run.json",
+      "file": "_promotion/20260922T022908916225Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "5fab3164a32f7f4e790832869449e76746f64d7df11f4a43d10d360188ea8ab3",
+      "sha256": "66df2927bbb9b7f1f6e45c5a13017ebd7a8a2a20d71c8dc327c024645120a30e",
       "size": 160219
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "5fab3164a32f7f4e790832869449e76746f64d7df11f4a43d10d360188ea8ab3",
+      "sha256": "66df2927bbb9b7f1f6e45c5a13017ebd7a8a2a20d71c8dc327c024645120a30e",
       "size": 160219
     },
     {
@@ -460,10 +460,10 @@
     {
       "file": "egern/categories/chinamobile/all/rules.yaml",
       "kind": "client_rules",
-      "rule_count": 36,
+      "rule_count": 38,
       "scope": "egern",
-      "sha256": "eab52e994fe21f4d2069bd852714134779418fc2311634323922165eebfd6bba",
-      "size": 702
+      "sha256": "98e591e707046ba63ef1ae361ad34f44df5a165f16f8f92392d3e05dc39af893",
+      "size": 735
     },
     {
       "file": "egern/categories/chinatelecom/all/rules.yaml",
@@ -876,10 +876,10 @@
     {
       "file": "egern/categories/other/all/rules.yaml",
       "kind": "client_rules",
-      "rule_count": 128805,
+      "rule_count": 128816,
       "scope": "egern",
-      "sha256": "bad094c06705aa1658a516887b77bbbd4e8ea762778ae137020dc7aaf6e361c4",
-      "size": 2468912
+      "sha256": "5545552d19cdb92e6a1c8f8f6d7f76ad4eec59f34b90867cc67d8f186ad23793",
+      "size": 2469112
     },
     {
       "file": "egern/categories/paypal/all/rules.yaml",
@@ -1196,10 +1196,10 @@
     {
       "file": "egern/china/all/rules.yaml",
       "kind": "client_rules",
-      "rule_count": 109363,
+      "rule_count": 109372,
       "scope": "egern",
-      "sha256": "b343d77e48617d0beed238fde3f9c67fb79685bfe8dad462140cf099046c1d7e",
-      "size": 2040798
+      "sha256": "16be1488bcb7fdc83b9815c19dc9efc140c1a47c6bbe90668afe243295507515",
+      "size": 2040965
     },
     {
       "file": "egern/cloudflare/all/rules.yaml",
@@ -2988,10 +2988,10 @@
     {
       "file": "loon/categories/chinamobile/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 36,
+      "rule_count": 38,
       "scope": "loon",
-      "sha256": "7fe512292855ca9955465988dfbc23652f1dbe5f33605287e280954548545b0a",
-      "size": 952
+      "sha256": "be232aacdb8d1cb70d0264e1d91c6e0de5d5c78a8d906aa5710fc79d2f546733",
+      "size": 1001
     },
     {
       "file": "loon/categories/chinatelecom/all/rules.list",
@@ -3404,10 +3404,10 @@
     {
       "file": "loon/categories/other/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 128662,
+      "rule_count": 128673,
       "scope": "loon",
-      "sha256": "12378b1a9f61901afc31a1e2c66bfbdce07294f53f0d725afd4318909b0c3f84",
-      "size": 3482483
+      "sha256": "9815346622f16f411d9d6c637968e05993d3fcfca41d87617a31530ebf89b5a5",
+      "size": 3482771
     },
     {
       "file": "loon/categories/paypal/all/rules.list",
@@ -3724,10 +3724,10 @@
     {
       "file": "loon/china/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 109363,
+      "rule_count": 109372,
       "scope": "loon",
-      "sha256": "238ca6eb2820d1c66092b2f064384f7d501f9bca4601d2dc8742f9fb49a19cb4",
-      "size": 2915707
+      "sha256": "4497f4b3d69aa17a03e398cecadd59de1cf3c2b8af279e2820e2b11454d23459",
+      "size": 2915946
     },
     {
       "file": "loon/cloudflare/all/rules.list",
@@ -4604,10 +4604,10 @@
     {
       "file": "mihomo/categories/chinamobile/all/rules.yaml",
       "kind": "client_rules",
-      "rule_count": 36,
+      "rule_count": 38,
       "scope": "mihomo",
-      "sha256": "6deb30ae3123c807806e5949b13bdf1a91818f822e20959ec817648d3c76e4c2",
-      "size": 1105
+      "sha256": "d7c8f536c574c620ca031a875d51b560b0b5e8ad2b5bb4ffd5ff4c53e91ac4b0",
+      "size": 1162
     },
     {
       "file": "mihomo/categories/chinatelecom/all/rules.yaml",
@@ -5020,10 +5020,10 @@
     {
       "file": "mihomo/categories/other/all/rules.yaml",
       "kind": "client_rules",
-      "rule_count": 128805,
+      "rule_count": 128816,
       "scope": "mihomo",
-      "sha256": "d7b5e765da82b08440227b855e1aa49c0ade04cc7df2c499eb142af4cc4b805b",
-      "size": 4003696
+      "sha256": "af2a52cc9f64ad96a21a0701ea5a70cd7df81eaab1316cf1c8eb8177cb78d33b",
+      "size": 4004028
     },
     {
       "file": "mihomo/categories/paypal/all/rules.yaml",
@@ -5340,10 +5340,10 @@
     {
       "file": "mihomo/china/all/rules.yaml",
       "kind": "client_rules",
-      "rule_count": 109363,
+      "rule_count": 109372,
       "scope": "mihomo",
-      "sha256": "f6b60a7da9d1f88eba004ee2b168b2b4cf88cc442089b1293354bee8e31b48a3",
-      "size": 3353168
+      "sha256": "0d7894aaf6837619cd9b215b2d928a8b142c8394a0567a7545f5fdf11fe5fde2",
+      "size": 3353443
     },
     {
       "file": "mihomo/cloudflare/all/rules.yaml",
@@ -6484,10 +6484,10 @@
     {
       "file": "quantumultx/categories/chinamobile/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 36,
+      "rule_count": 38,
       "scope": "quantumultx",
-      "sha256": "9d07cca1c837f253f2c6cfeee7b69335cb35da9c108ff758aa593f1a9135aafb",
-      "size": 1170
+      "sha256": "22f41d3c67342ab635e927bdd8787cb957952901c54bd581a72a7c0d6c67e360",
+      "size": 1231
     },
     {
       "file": "quantumultx/categories/chinatelecom/all/rules.list",
@@ -6900,10 +6900,10 @@
     {
       "file": "quantumultx/categories/other/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 128662,
+      "rule_count": 128673,
       "scope": "quantumultx",
-      "sha256": "c1f18a396be9ad11344a01c4a318cbc48b7f6f0727809bd2ec43553119dab6fa",
-      "size": 4255447
+      "sha256": "fc73ab0ede4d5844fce68279ffcde9a01981d86bf723fc24d604d83705d1a5b3",
+      "size": 4255801
     },
     {
       "file": "quantumultx/categories/paypal/all/rules.list",
@@ -7220,10 +7220,10 @@
     {
       "file": "quantumultx/china/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 109363,
+      "rule_count": 109372,
       "scope": "quantumultx",
-      "sha256": "f3776bcd400e9fbf9004c6051f26541d7eacd63647573af02cfab67600409619",
-      "size": 3571885
+      "sha256": "a5ddb4fdca5e6c63d160bdfdb4b2034508e83cfe20d78c419b42925794a5ac84",
+      "size": 3572178
     },
     {
       "file": "quantumultx/cloudflare/all/rules.list",
@@ -8100,10 +8100,10 @@
     {
       "file": "shadowrocket/categories/chinamobile/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 36,
+      "rule_count": 38,
       "scope": "shadowrocket",
-      "sha256": "7fe512292855ca9955465988dfbc23652f1dbe5f33605287e280954548545b0a",
-      "size": 952
+      "sha256": "be232aacdb8d1cb70d0264e1d91c6e0de5d5c78a8d906aa5710fc79d2f546733",
+      "size": 1001
     },
     {
       "file": "shadowrocket/categories/chinatelecom/all/rules.list",
@@ -8516,10 +8516,10 @@
     {
       "file": "shadowrocket/categories/other/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 128662,
+      "rule_count": 128673,
       "scope": "shadowrocket",
-      "sha256": "12378b1a9f61901afc31a1e2c66bfbdce07294f53f0d725afd4318909b0c3f84",
-      "size": 3482483
+      "sha256": "9815346622f16f411d9d6c637968e05993d3fcfca41d87617a31530ebf89b5a5",
+      "size": 3482771
     },
     {
       "file": "shadowrocket/categories/paypal/all/rules.list",
@@ -8836,10 +8836,10 @@
     {
       "file": "shadowrocket/china/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 109363,
+      "rule_count": 109372,
       "scope": "shadowrocket",
-      "sha256": "238ca6eb2820d1c66092b2f064384f7d501f9bca4601d2dc8742f9fb49a19cb4",
-      "size": 2915707
+      "sha256": "4497f4b3d69aa17a03e398cecadd59de1cf3c2b8af279e2820e2b11454d23459",
+      "size": 2915946
     },
     {
       "file": "shadowrocket/cloudflare/all/rules.list",
@@ -9718,8 +9718,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "c3f4b45c86fc61aad8f2e1ca410ccb8b4b58adf1aa216c3c511d35c76c3fd77a",
-      "size": 958
+      "sha256": "7a9606eee6d4d9981b95e4e1e548942aa2d2b69e484972e503121f2460df368f",
+      "size": 1001
     },
     {
       "file": "singbox/categories/chinatelecom/all/rules.json",
@@ -10134,8 +10134,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "10bed612e49607c099beffc497afe8251f32d96f2cf7848b40831ee3a58ecf4e",
-      "size": 3113041
+      "sha256": "d1b838ad3775ebfcc88fd9988758d67717f4bce1ed4b2a8d9eecb96216dcafad",
+      "size": 3113296
     },
     {
       "file": "singbox/categories/paypal/all/rules.json",
@@ -10454,8 +10454,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "47d0c8c1bc7b3611c0e66414b3ec1c579bd5a72aed9649912dfeb0b1ef1492e3",
-      "size": 2587689
+      "sha256": "60e1da4327e4f89cb65300c889c7e546ba1962ed0b96b47087200a9f83a5310a",
+      "size": 2587901
     },
     {
       "file": "singbox/cloudflare/all/rules.json",
@@ -11332,10 +11332,10 @@
     {
       "file": "surge/categories/chinamobile/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 36,
+      "rule_count": 38,
       "scope": "surge",
-      "sha256": "7fe512292855ca9955465988dfbc23652f1dbe5f33605287e280954548545b0a",
-      "size": 952
+      "sha256": "be232aacdb8d1cb70d0264e1d91c6e0de5d5c78a8d906aa5710fc79d2f546733",
+      "size": 1001
     },
     {
       "file": "surge/categories/chinatelecom/all/rules.list",
@@ -11748,10 +11748,10 @@
     {
       "file": "surge/categories/other/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 128662,
+      "rule_count": 128673,
       "scope": "surge",
-      "sha256": "12378b1a9f61901afc31a1e2c66bfbdce07294f53f0d725afd4318909b0c3f84",
-      "size": 3482483
+      "sha256": "9815346622f16f411d9d6c637968e05993d3fcfca41d87617a31530ebf89b5a5",
+      "size": 3482771
     },
     {
       "file": "surge/categories/paypal/all/rules.list",
@@ -12068,10 +12068,10 @@
     {
       "file": "surge/china/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 109363,
+      "rule_count": 109372,
       "scope": "surge",
-      "sha256": "238ca6eb2820d1c66092b2f064384f7d501f9bca4601d2dc8742f9fb49a19cb4",
-      "size": 2915707
+      "sha256": "4497f4b3d69aa17a03e398cecadd59de1cf3c2b8af279e2820e2b11454d23459",
+      "size": 2915946
     },
     {
       "file": "surge/cloudflare/all/rules.list",
@@ -12522,7 +12522,7 @@
       "size": 4409
     }
   ],
-  "generated_at": "2026-09-22T02:26:54.093886+00:00",
+  "generated_at": "2026-09-22T03:17:36.344241+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/generated",
   "network_dataset_directories": [
     "asn",
