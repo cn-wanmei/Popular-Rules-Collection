@@ -12,6 +12,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED_PREREQUISITES = {
     "source_release_verified",
+    "immutable_lineage_match",
     "collection_reconciliation_pass",
     "v3_build_pass",
     "seven_client_semantic_pass",
@@ -48,7 +49,7 @@ def qualify(
     if (policy.get("canary") or {}).get("enabled") is not False:
         failures.append("policy.canary.enabled must remain false")
 
-    prerequisites = set((policy.get("production_unlock") or {}).get("prerequisites") or [])
+    prerequisites = set((policy.get("production_unlock") or {}).get("requires") or [])
     if prerequisites != REQUIRED_PREREQUISITES:
         failures.append(
             "production unlock prerequisite set mismatch: "
