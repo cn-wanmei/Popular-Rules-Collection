@@ -70,5 +70,6 @@ def validate(root: Path = ROOT) -> dict[str, Any]:
         "canonical_rule_files": len(_rule_files(rule_root)),
         "generated_rule_files": len(_rule_files(generated_root)),
         "alternate_rule_tree_exists": alternate.exists(),
+        "china_excluded_independent_providers": [str(x).strip().lower() for x in ((policy.get("china") or {}).get("exclude_independent_providers") or [])],
         "policy": str(policy_path.relative_to(root)),
     }
