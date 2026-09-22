@@ -37,11 +37,8 @@ COLLECTION_SPECS = (
     CollectionSpec("validate_ip_registry", _script_command("validate_ip_registry.py"), critical=False),
     CollectionSpec("ip_rules", _script_command("collect_ip.py"), deps=("validate_ip_registry",), critical=False),
     CollectionSpec("validate_dataset_registry", _script_command("validate_dataset_registry.py"), critical=False),
-    CollectionSpec("network_lan", _script_command("build_network_lan.py"), deps=("validate_dataset_registry",), critical=False),
-    CollectionSpec("datasets", _script_command("collect_datasets.py"), deps=("validate_dataset_registry", "network_lan"), critical=False),
-    CollectionSpec("network_datasets", _script_command("build_network_datasets.py"), deps=("datasets",), critical=False),
+    CollectionSpec("datasets", _script_command("collect_datasets.py"), deps=("validate_dataset_registry",), critical=False),
     CollectionSpec("providers", _script_command("collect_providers.py"), deps=("validate_dataset_registry",), critical=False),
-    CollectionSpec("provider_datasets", _script_command("build_provider_datasets.py"), deps=("providers",), critical=False),
 )
 
 COLLECTION_NODES = [Node(spec.name, spec.deps) for spec in COLLECTION_SPECS]

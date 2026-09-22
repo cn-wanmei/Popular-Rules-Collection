@@ -14,8 +14,11 @@ def test_collection_dag_has_explicit_dependencies() -> None:
     assert "ip_rules" in names
     assert "datasets" in names
     assert "providers" in names
+    assert "validate_dataset_registry" in names
+    assert not {"network_lan", "network_datasets", "provider_datasets"} & set(names)
     assert next(n for n in COLLECTION_NODES if n.name == "service_rules").deps == ("validate_registry",)
-    assert next(n for n in COLLECTION_NODES if n.name == "network_datasets").deps == ("datasets",)
+    assert next(n for n in COLLECTION_NODES if n.name == "datasets").deps == ("validate_dataset_registry",)
+    assert next(n for n in COLLECTION_NODES if n.name == "providers").deps == ("validate_dataset_registry",)
 
 
 def test_collection_commands_reference_existing_python_scripts() -> None:
