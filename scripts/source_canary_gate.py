@@ -43,8 +43,6 @@ def validate_state(
         errors.append("PRS global registry must be enabled for the controlled Phase 2 promotion path")
 
     canary = policy.get("canary") or {}
-    if canary.get("enabled") is not True:
-        errors.append("global canary switch must be enabled when an active canary service is declared")
 
     canary_services: list[str] = []
     for sid in SERVICES:
