@@ -22,8 +22,8 @@
 | `generated/ip/` | 已审计的服务 IP 数据 | 否（运行输出） |
 | `generated/policies/` | Network Policy 数据集 | 否（运行输出） |
 | `generated/mmdb/` | MMDB / DAT 二进制发行物 | 否（运行输出） |
-| `rule/` | 历史 V1 Canonical 浏览树 | **否** |
-| `rules/` | 目录契约保留树；不是第二套数据库 | **否** |
+| `rule/` | **用户浏览 / 搜索 / 选择的可读发行树**，与本次 Run 的 `generated/` 同步生成 | 否（派生发行物） |
+| `rules/` | **删除；不得重新建立第三套规则目录** | — |
 
 `generated/manifest.json` 是整个最终发行树的单一文件级目录清单；`generated/network_manifest.json` 是 Network Dataset 的独立 provenance 清单。
 
@@ -85,9 +85,9 @@ V3 Build / Canary / Production
 
 Source 的跨仓库自动交接由 Collection 自己持有，不依赖跨仓库 Secret。
 
-## 最终订阅入口
+## 最终发行入口
 
-消费者订阅 `generated/<client>/...` 及 `generated/<network-scope>/...`。不要把 `rule/` 当作当前 V3 Runtime 真源，也不要把 Provider / ASN / GeoIP / Geosite 数据解释为 Service Identity。
+用户浏览、搜索、挑选规则使用 `rule/`；客户端订阅使用 `generated/<client>/...`；网络数据使用 `generated/<network-scope>/...`。三者都来自同一个 V3 Run，但只有 `data/runs/<run>/canonical` 是规则真源。
 
 ## CI / Release
 
@@ -106,7 +106,6 @@ Source 的跨仓库自动交接由 Collection 自己持有，不依赖跨仓库 
 - `docs/NETWORK_DATASETS.md`
 - `docs/ARCHITECTURE.md`
 - `docs/IP_ARCHITECTURE.md`
-- `rule/README.md`
-- `rules/README.md`
+- `rule/README.md
 
 `PUBLISH_STATUS.md`、状态报告和 `reports/` 下的运行结果属于自动生成证据，不手工维护派生数字。
