@@ -180,7 +180,22 @@ def legibility(root,style,rows,size):
 
 def build(out):
     cfg=yload(CFG); man=yload(MAN); official_sites=yload(ROOT/"config/official_sites.yaml"); es=entries(man,cfg); out.mkdir(parents=True,exist_ok=True); cache={}; regs=[]; rows={s:[] for s in STYLES}
+    overrides=cfg.get("source_overrides") or {}
     for e in es:
+        override=overrides.get(e["service_id"]) or {}
+        if isinstance(override,dict) and override:
+            e=dict(e)
+            meta=dict(e.get("meta") or {})
+            meta.update({k:v for k,v in override.items() if k not in {"source","files","license","icon_key"}})
+            for key in ("source","files","license"):
+                if key in override:
+                    base_meta=dict(meta.get(key) or {})
+                    ov=override.get(key) or {}
+                    if isinstance(ov,dict): base_meta.update(ov)
+                    else: base_meta=ov
+                    meta[key]=base_meta
+            e["meta"]=meta
+            e["icon_key"]=str(override.get("icon_key") or e["icon_key"])
         meta_status=str(e["meta"].get("status") or "").lower()
         release_eligible = e["role"] != "service" or (meta_status in {"verified","sourced","approved","active"} and e["icon_key"] != "placeholder")
         official_reference=official_sites.get(e["icon_key"]) or official_sites.get(e["service_id"])
