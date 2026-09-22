@@ -81,14 +81,48 @@ def render(base,title,style,c):
     return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img"><title>{html.escape(title)} — {style}</title>{defs}{bg}{nested}</svg>'
 
 def entries(man,cfg):
-    icons=man.get("icons") or {}; mapping=man.get("service_icon_map") or {}; out=[]
+    icons=man.get("icons") or {}
+    mapping=man.get("service_icon_map") or {}
+    out=[]
+    seen=set()
+
+    def add(sid,key,meta,role):
+        sid=str(sid).strip()
+        key=str(key).strip()
+        if not sid or sid in seen:
+            return
+        seen.add(sid)
+        out.append({
+            "service_id":sid,
+            "icon_identity":("brand." if role=="service" else "semantic.")+slug(key),
+            "role":role,
+            "canonical_name":str(meta.get("name") or sid),
+            "meta":meta,
+            "icon_key":key,
+        })
+
+    # V1 manifest uses service_ids inside each icon entry; prefer this as the identity source.
+    for key,meta in sorted(icons.items()):
+        if not isinstance(meta,dict):
+            continue
+        t=str(meta.get("type") or "").lower()
+        ns=str(meta.get("namespace") or "").lower()
+        role="strategy" if t in {"policy","strategy"} or ns=="policy" or key in STRATEGY else ("special" if t in {"dataset","network"} or ns in {"dataset","network"} else "service")
+        service_ids=meta.get("service_ids") or []
+        if isinstance(service_ids,str):
+            service_ids=[service_ids]
+        for sid in service_ids:
+            add(sid,key,meta,role)
+
+    # Keep an explicit service_icon_map authoritative where present.
     for sid,key in sorted(mapping.items()):
         meta=icons.get(key) or {}
-        if not isinstance(meta,dict): continue
-        t=str(meta.get("type") or "").lower(); ns=str(meta.get("namespace") or "").lower()
+        if not isinstance(meta,dict):
+            meta={}
+        t=str(meta.get("type") or "").lower()
+        ns=str(meta.get("namespace") or "").lower()
         role="strategy" if t in {"policy","strategy"} or ns=="policy" or key in STRATEGY else ("special" if t in {"dataset","network"} or ns in {"dataset","network"} else "service")
-        out.append({"service_id":str(sid),"icon_identity":("brand." if role=="service" else "semantic.")+slug(key),"role":role,"canonical_name":str(meta.get("name") or sid),"meta":meta,"icon_key":str(key)})
-    present={x["service_id"] for x in out}
+        add(sid,key,meta,role)
     for key,label in STRATEGY.items():
         sid="strategy."+slug(key)
         if sid not in present: out.append({"service_id":sid,"icon_identity":sid,"role":"strategy","canonical_name":label,"meta":{},"icon_key":key})
