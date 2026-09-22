@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse, hashlib, json, re
 import xml.etree.ElementTree as ET
 from pathlib import Path
+import yaml
 
 STYLES = ("official","gradient","liquid_glass","soft_3d","minimal","dark_neon","monochrome")
 CLIENTS = ("mihomo","singbox","surge","shadowrocket","quantumultx","egern","loon")
@@ -30,8 +31,11 @@ def main() -> int:
         errors.append("client contract mismatch")
     for entry in data.get("entries", []):
         sid = entry.get("service_id")
-        if entry.get("quality",{}).get("identity") != "pass":
-            errors.append(f"{sid}: identity QA failed")
+        eligible = bool(entry.get("release_eligible", True))
+        identity = entry.get("quality",{}).get("identity")
+        expected_identity = "pass" if eligible or entry.get("role") != "service" else "hold"
+        if identity != expected_identity:
+            errors.append(f"{sid}: identity QA status={identity!r}, expected={expected_identity!r}")
         base = entry.get("base_asset",{})
         if not re.fullmatch(r"[0-9a-f]{64}", str(base.get("digest") or "")):
             errors.append(f"{sid}: invalid base digest")
@@ -57,6 +61,27 @@ def main() -> int:
                 errors.append(f"missing legibility {style}:{size}")
     if not (root/"icon-review-manifest.json").is_file():
         errors.append("missing icon-review-manifest.json")
+
+    try:
+        state_path = Path(__file__).resolve().parents[1] / "config" / "source_canary_state.yaml"
+        state = yaml.safe_load(state_path.read_text(encoding="utf-8")) or {}
+        production_services = {
+            sid for sid,row in (state.get("services") or {}).items()
+            if isinstance(row,dict) and row.get("state")=="production" and row.get("enabled") is True
+        }
+        by_id = {e.get("service_id"): e for e in data.get("entries",[])}
+        for sid in sorted(production_services):
+            row = by_id.get(sid)
+            if not row:
+                errors.append(f"{sid}: production service has no Icon System 3 entry")
+                continue
+            if not row.get("release_eligible"):
+                errors.append(f"{sid}: production service icon is quarantined")
+            if row.get("role") != "service":
+                errors.append(f"{sid}: production service icon role must be service")
+    except Exception as exc:
+        errors.append(f"production icon coverage check failed: {exc}")
+
     result = {"schema":"icon_v3_gate_v1","status":"PASS" if not errors else "FAIL","entry_count":len(data.get("entries",[])),"errors":errors}
     (root/"reports").mkdir(parents=True, exist_ok=True)
     (root/"reports"/"gate.json").write_text(json.dumps(result, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
