@@ -134,15 +134,24 @@ def entries(man,cfg):
         for sid in service_ids:
             add(sid,key,meta,role)
 
-    # Keep an explicit service_icon_map authoritative where present.
+    # Explicit service_icon_map binds a service identity to an asset key.
+    # A non-self alias (e.g. taobao -> placeholder) remains a service identity;
+    # the mapped placeholder asset must never change the identity role.
     for sid,key in sorted(mapping.items()):
         meta=icons.get(key) or {}
         if not isinstance(meta,dict):
             meta={}
-        t=str(meta.get("type") or "").lower()
-        ns=str(meta.get("namespace") or "").lower()
-        role="strategy" if t in {"policy","strategy"} or ns=="policy" or key in STRATEGY else ("special" if t in {"dataset","network"} or ns in {"dataset","network"} else "service")
-        add(sid,key,meta,role)
+        sid_norm=str(sid).strip()
+        key_norm=str(key).strip()
+        if sid_norm in STRATEGY:
+            role="strategy"
+        elif sid_norm == key_norm:
+            t=str(meta.get("type") or "").lower()
+            ns=str(meta.get("namespace") or "").lower()
+            role="strategy" if t in {"policy","strategy"} or ns=="policy" or key_norm in STRATEGY else ("special" if t in {"dataset","network"} or ns in {"dataset","network"} else "service")
+        else:
+            role="service"
+        add(sid_norm,key_norm,meta,role)
     for key,label in STRATEGY.items():
         sid="strategy."+slug(key)
         if sid not in seen:
@@ -173,7 +182,7 @@ def build(out):
     cfg=yload(CFG); man=yload(MAN); official_sites=yload(ROOT/"config/official_sites.yaml"); es=entries(man,cfg); out.mkdir(parents=True,exist_ok=True); cache={}; regs=[]; rows={s:[] for s in STYLES}
     for e in es:
         meta_status=str(e["meta"].get("status") or "").lower()
-        release_eligible = e["role"] != "service" or meta_status in {"verified","sourced","approved","active"}
+        release_eligible = e["role"] != "service" or (meta_status in {"verified","sourced","approved","active"} and e["icon_key"] != "placeholder")
         official_reference=official_sites.get(e["icon_key"]) or official_sites.get(e["service_id"])
         if e["role"] in {"strategy","client_policy"}:
             base=semantic(e["canonical_name"],e["icon_key"]); src_path="generated:semantic"; src_digest=sha(base); provider="project-semantic"; stier="project_semantic"; surl=None
