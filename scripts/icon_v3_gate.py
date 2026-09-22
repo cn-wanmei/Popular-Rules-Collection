@@ -11,7 +11,7 @@ CLIENTS = ("mihomo","singbox","surge","shadowrocket","quantumultx","egern","loon
 def valid_svg(path: Path) -> bool:
     try:
         root = ET.fromstring(path.read_text(encoding="utf-8"))
-        return root.tag.rsplit("}",1)[-1] == "svg" and len(re.split(r"[\\s,]+", root.attrib.get("viewBox","").strip())) == 4
+        return root.tag.rsplit("}",1)[-1] == "svg" and len(re.split(r"[\s,]+", root.attrib.get("viewBox","").strip())) == 4
     except Exception:
         return False
 
