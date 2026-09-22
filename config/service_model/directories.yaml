@@ -3,8 +3,12 @@ schema: rule_distribution_policy_v2
 updated: "2026-09-22"
 root: rule
 
+# V3 distribution contract. Canonical truth is materialized per run under
+# data/runs/<run-id>/canonical and Semantic IR under data/runs/<run-id>/ir.
+# Provider/China semantics below remain the existing production hierarchy.
+# The human rule tree and generated client trees are sibling projections of one Run.
 layout:
-  human_root: rule
+  human_root: "rule"
   human_aggregate: "rule/{provider}/all/rules.yaml"
   human_service: "rule/{provider}/{service}/rules.yaml"
   human_china: "rule/china/all/rules.yaml"
@@ -18,20 +22,100 @@ layout:
   generated_china: "generated/{client}/china/all"
 
 semantics:
-  source_of_truth: "data/runs/<run-id>/canonical"
-  semantic_intermediate: "data/runs/<run-id>/ir"
+  provider_aggregate: "union_of_provider_direct_rules_and_all_declared_services"
+  service: "service_only_canonical_membership"
+  all_is_reference: true
+  no_flattened_service_files: true
   human_browse_output: true
   generated_output: true
+  source_of_truth: "data/runs/<run-id>/canonical"
+  semantic_intermediate: "data/runs/<run-id>/ir"
   same_run_required: true
   rule_is_not_runtime_input: true
   generated_is_not_canonical_input: true
   no_alternate_rule_root: true
 
+# Providers with independent service directories are intentionally NOT folded
+# into the China aggregate. Their own aggregate/service trees are authoritative.
+china:
+  id: china
+  display_name: China
+  kind: domestic_aggregate
+  include: domestic_rule_universe
+  exclude_independent_providers:
+    - alibaba
+    - tencent
+    - baidu
+    - jd
+    - meituan
+    - bytedance
+    - netease
+    - huawei
+    - xiaomi
+    - oppo
+    - vivo
+  require_domain_and_ip_coverage: true
+  note: "China/all represents the complete China rule universe except providers explicitly separated into independent service trees."
+
+providers:
+  # Provider aggregates include every declared service under the provider.
+  apple:
+    aggregate_path: rules/apple/all
+    services_from: service_model
+  google:
+    aggregate_path: rules/google/all
+    services_from: service_model
+  microsoft:
+    aggregate_path: rules/microsoft/all
+    services_from: service_model
+  amazon:
+    aggregate_path: rules/amazon/all
+    services_from: service_model
+  tencent:
+    aggregate_path: rules/tencent/all
+    services_from: service_model
+  alibaba:
+    aggregate_path: rules/alibaba/all
+    services_from: service_model
+  baidu:
+    aggregate_path: rules/baidu/all
+    services_from: service_model
+  bytedance:
+    aggregate_path: rules/bytedance/all
+    services_from: service_model
+  netease:
+    aggregate_path: rules/netease/all
+    services_from: service_model
+  huawei:
+    aggregate_path: rules/huawei/all
+    services_from: service_model
+  xiaomi:
+    aggregate_path: rules/xiaomi/all
+    services_from: service_model
+  atlassian:
+    aggregate_path: rules/atlassian/all
+    services_from: service_model
+  meta:
+    aggregate_path: rules/meta/all
+    services_from: service_model
+  cloudflare:
+    aggregate_path: rules/cloudflare/all
+    services_from: service_model
+  adobe:
+    aggregate_path: rules/adobe/all
+    services_from: service_model
+  hoyoverse:
+    aggregate_path: rules/hoyoverse/all
+    services_from: service_model
+
 invariants:
-  - rule_files_are_derived_from_semantic_ir
-  - rule_and_generated_share_the_same_run_id_and_ir_digest
-  - rule_has_no_client_specific_syntax
-  - generated_paths_never_read_rule
-  - rule_never_reads_generated
-  - rules_directory_must_not_exist
-  - no_legacy_rule_tree_layouts
+  - provider_must_have_all_directory
+  - every_public_service_must_have_directory
+  - service_directory_must_not_contain_sibling_service_membership
+  - aggregate_must_cover_all_declared_services
+  - china_must_have_all_directory
+  - china_must_cover_domain_and_ip_rule_types
+  - china_must_not_include_excluded_independent_provider_services
+  - generated_paths_must_mirror_canonical_directory_identity
+  - no_rule_file_may_live_directly_under_provider_root
+  - no_service_rule_file_may_live_at_rules_root
