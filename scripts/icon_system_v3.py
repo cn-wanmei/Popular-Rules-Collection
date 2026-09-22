@@ -152,6 +152,21 @@ def entries(man,cfg):
         else:
             role="service"
         add(sid_norm,key_norm,meta,role)
+
+    # Source overrides are authoritative identity bindings for audited production
+    # assets, even when the legacy V1 icon manifest has no service_ids entry yet.
+    # This keeps the generated V3 registry aligned with the fail-closed production
+    # coverage gate without weakening that gate.
+    for sid,override in sorted((cfg.get("source_overrides") or {}).items()):
+        sid_norm=str(sid).strip()
+        if not sid_norm or sid_norm in seen or not isinstance(override,dict):
+            continue
+        key_norm=str(override.get("icon_key") or sid_norm).strip()
+        meta=icons.get(key_norm) or {}
+        if not isinstance(meta,dict):
+            meta={}
+        add(sid_norm,key_norm,meta,"service")
+
     for key,label in STRATEGY.items():
         sid="strategy."+slug(key)
         if sid not in seen:
