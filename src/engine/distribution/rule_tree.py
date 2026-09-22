@@ -249,6 +249,8 @@ def build_rule_tree(
             records=records,
         )
 
+    for item in records:
+        item["path"] = Path(item["path"]).relative_to(output_dir).as_posix()
     records.sort(key=lambda item: item["path"])
     index = {
         "schema": "human_rule_distribution_index_v1",
