@@ -67,6 +67,23 @@ source_overrides:
       type: MIT
       reviewed: true
       note: Embedded DingTalk mark sourced from MIT-licensed Ant Design Icons; trademark rights remain with DingTalk.
+  qqmail:
+    name: QQ Mail
+    icon_key: qqmail
+    status: verified
+    source:
+      provider: td-design
+      provenance: third_party
+      verified: true
+      type: td-design
+      url: https://github.com/thundersdata-frontend/td-design/blob/f803d835ae93ecfda0f824e7c8090402a5b0fd6b/packages/react-native-share/src/svg/qqmail.tsx
+      commit: f803d835ae93ecfda0f824e7c8090402a5b0fd6b
+    files:
+      svg: source/qqmail.svg
+    license:
+      type: Apache-2.0
+      reviewed: true
+      note: Extracted from the Apache-2.0 licensed td-design source file; trademark rights remain with Tencent/QQ Mail.
   qqmusic:
     name: QQ Music
     icon_key: qqmusic
