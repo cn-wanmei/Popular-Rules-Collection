@@ -26,6 +26,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 BACKUP = ROOT / "backup"
 NETWORK_SCOPES = {"asn", "geoip", "geosite", "network", "provider", "policies", "ip", "mmdb"}
+LEGACY_NETWORK_SCOPES = {"country"}
 
 
 def _load_dataset_docs() -> list[tuple[str, dict[str, Any]]]:
@@ -48,7 +49,7 @@ def _sha256(path: Path) -> str:
 
 
 def _clean_network_outputs(output: Path) -> None:
-    for scope in sorted(NETWORK_SCOPES):
+    for scope in sorted(NETWORK_SCOPES | LEGACY_NETWORK_SCOPES):
         target = output / scope
         if target.exists():
             shutil.rmtree(target)
@@ -110,6 +111,8 @@ def _write_network_variants(scope: str, name: str, lines: list[str], output: Pat
 def _destination_scope(kind: str, scope: str) -> str:
     if kind == "asn":
         return "asn"
+    if kind == "geoip":
+        return "geoip"
     if kind == "binary" or scope == "artifact":
         return "mmdb"
     if kind == "policy" or scope == "policy":
