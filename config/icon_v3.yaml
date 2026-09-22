@@ -32,6 +32,24 @@ scoring:
   freshness: 5
   file_efficiency: 5
 protected_brands: [apple, google, microsoft, amazon, aws, openai, anthropic, netflix, telegram, github, alibaba, alipay, taobao, tmall, jd, wechat, whatsapp, facebook, instagram, paypal, stripe]
+source_overrides:
+  taobao:
+    name: Taobao
+    icon_key: taobao
+    status: verified
+    source:
+      provider: simple-icons
+      provenance: third_party
+      verified: true
+      type: simple-icons
+      url: https://github.com/simple-icons/simple-icons/blob/b86d5c9a0bdd4f3f5c30898a63654dd32f39fd76/icons/taobao.svg
+      commit: b86d5c9a0bdd4f3f5c30898a63654dd32f39fd76
+    files:
+      svg: source/taobao.svg
+    license:
+      type: CC0-1.0
+      reviewed: true
+      note: Pinned Simple Icons asset; trademark rights remain with the respective owner.
 official_source_policy:
   domain_registry: config/official_sites.yaml
   unknown_license_default_release: false
