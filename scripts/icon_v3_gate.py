@@ -24,6 +24,9 @@ def main() -> int:
     if not manifest_path.is_file():
         raise SystemExit("Icon System 3 Gate: manifest.json missing")
     data = json.loads(manifest_path.read_text(encoding="utf-8"))
+    config = yaml.safe_load((Path(__file__).resolve().parents[1] / "config" / "icon_v3.yaml").read_text(encoding="utf-8")) or {}
+    official_sites = yaml.safe_load((Path(__file__).resolve().parents[1] / "config" / "official_sites.yaml").read_text(encoding="utf-8")) or {}
+    protected = {str(x).lower() for x in (config.get("protected_brands") or [])}
     errors = []
     if data.get("styles") != list(STYLES):
         errors.append("style contract mismatch")
@@ -39,6 +42,18 @@ def main() -> int:
         base = entry.get("base_asset",{})
         if not re.fullmatch(r"[0-9a-f]{64}", str(base.get("digest") or "")):
             errors.append(f"{sid}: invalid base digest")
+        if eligible and entry.get("role") == "service":
+            tier = str(base.get("source_tier") or "")
+            license_meta = base.get("license") or {}
+            license_type = str(license_meta.get("type") or "").lower()
+            reviewed = license_meta.get("reviewed") is True
+            if tier not in {"official", "trusted_third_party"}:
+                errors.append(f"{sid}: stable service icon has unsupported source tier={tier}")
+            if tier == "trusted_third_party" and not reviewed:
+                errors.append(f"{sid}: stable third-party icon lacks reviewed license metadata")
+            key = str(sid).lower()
+            if key in protected and not (base.get("official_reference") or official_sites.get(str(sid)) or official_sites.get(str(sid).lower())):
+                errors.append(f"{sid}: protected brand lacks official identity reference")
         prov = entry.get("provenance",{})
         for field in ("source_provider","source_path","renderer_version","workspace_commit","generation_run_id"):
             if not str(prov.get(field) or "").strip():
