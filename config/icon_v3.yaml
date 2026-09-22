@@ -33,6 +33,57 @@ scoring:
   file_efficiency: 5
 protected_brands: [apple, google, microsoft, amazon, aws, openai, anthropic, netflix, telegram, github, alibaba, alipay, taobao, tmall, jd, wechat, whatsapp, facebook, instagram, paypal, stripe]
 source_overrides:
+  cainiao:
+    name: Cainiao
+    icon_key: cainiao
+    status: verified
+    source:
+      provider: custom-brand-icons
+      provenance: third_party
+      verified: true
+      type: custom-brand-icons
+      url: https://github.com/elax46/custom-brand-icons/blob/27f9ad7244b31db2bd4d273e1d328ffd7aba1539/icon-svg/cainiao.svg
+      commit: 27f9ad7244b31db2bd4d273e1d328ffd7aba1539
+    files:
+      svg: source/cainiao.svg
+    license:
+      type: MIT
+      reviewed: true
+      note: Repository is MIT; brand/trademark rights remain with Cainiao.
+  dingding:
+    name: DingTalk
+    icon_key: dingding
+    status: verified
+    source:
+      provider: ant-design-icons
+      provenance: third_party
+      verified: true
+      type: ant-design-icons
+      url: https://github.com/ant-design/ant-design-icons/blob/7f2516ac91226d2b41f93b35cb5197c8d94f7189/packages/icons-react/src/icons/DingtalkOutlined.tsx
+      commit: 7f2516ac91226d2b41f93b35cb5197c8d94f7189
+    files:
+      svg: source/dingding.svg
+    license:
+      type: MIT
+      reviewed: true
+      note: Embedded DingTalk mark sourced from MIT-licensed Ant Design Icons; trademark rights remain with DingTalk.
+  qqmusic:
+    name: QQ Music
+    icon_key: qqmusic
+    status: verified
+    source:
+      provider: arcticons
+      provenance: third_party
+      verified: true
+      type: arcticons
+      url: https://github.com/Arcticons-Team/Arcticons/blob/15.3.2/icons/black/qq_music.svg
+      commit: 15.3.2
+    files:
+      svg: source/qqmusic.svg
+    license:
+      type: CC-BY-SA-4.0
+      reviewed: true
+      note: Arcticons icon asset; attribution and share-alike obligations apply.
   taobao:
     name: Taobao
     icon_key: taobao
