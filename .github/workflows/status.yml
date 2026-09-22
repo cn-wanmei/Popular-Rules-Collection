@@ -62,7 +62,7 @@ jobs:
               echo "Push rejected on attempt ${attempt}; retrying after refresh."
             else
               echo "Status rebase conflict on attempt ${attempt}; regenerating on latest main."
-              git rebase --abort || true
+              git rebase --abort
               git reset --hard origin/main
               python scripts/classify_health.py
               python scripts/generate_publish_status.py
