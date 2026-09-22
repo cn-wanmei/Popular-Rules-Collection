@@ -1,0 +1,23 @@
+{
+  "schema": "tmall_lineage_reconciliation_v1",
+  "service_id": "tmall",
+  "status": "ALIGNED_PENDING_REVERIFICATION",
+  "source_repository": "cn-wanmei/Popular-Rules-Source",
+  "source_ref": "ffc7375b31080ea735c8bcc8ee59066b969c382f",
+  "verified_input_commit": "4cfabcfc3e77806bc054035162ae64f93fa0505b",
+  "snapshot_id": "snap-tmall-42b106e61c7dad4f4aa02477",
+  "content_digest": "c5f6ca64ece3eeba17c154a2ee9edc9f9a36e4e9c2f67e5fc53f82c4a2ef76a7",
+  "expected_sha256": "4f2521212149543f1f267cb4b7d9bb89a544f168b33bd12ecd3207aaaedd412d",
+  "collection_lineage_gate": {
+    "manifest": "backup/2026-09-22/manifests/immutable-source-lineage.json",
+    "status": "PASS",
+    "actual_sha256": "4f2521212149543f1f267cb4b7d9bb89a544f168b33bd12ecd3207aaaedd412d"
+  },
+  "transition": {
+    "previous_state": "verified",
+    "enabled": false,
+    "promotion_blocked": true,
+    "action": "reverify before any canary activation"
+  },
+  "integrity_rule": "Collection lifecycle may not move to canary/production until the immutable registry binding and fresh verification evidence match exactly."
+}
