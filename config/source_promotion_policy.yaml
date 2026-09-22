@@ -4,7 +4,7 @@ project: phase2-source-canary
 prs:
   repository: cn-wanmei/Popular-Rules-Source
   registry_id: popular-rules-source
-  enabled: true
+  enabled: false
 
 canary:
   enabled: false
