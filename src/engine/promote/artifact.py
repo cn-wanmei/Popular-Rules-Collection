@@ -64,6 +64,7 @@ def _validate_release_artifact_set(run_dir: Path) -> dict[str, Any]:
     metrics_path = run_dir / "metrics" / "metrics.json"
     baseline_evidence_path = run_dir / "metrics" / "baseline-evidence.json"
     artifacts_root = run_dir / "artifacts"
+    rule_root = run_dir / "rule"
 
     if not state_path.exists() or not manifest_path.exists():
         raise RuntimeError("Promotion requires release state and release manifest")
@@ -85,6 +86,8 @@ def _validate_release_artifact_set(run_dir: Path) -> dict[str, Any]:
         raise RuntimeError("Promotion requires baseline evidence")
     if not artifacts_root.exists():
         raise RuntimeError("Missing artifact root")
+    if not (rule_root / "manifest.json").is_file() or not (rule_root / "_index.yaml").is_file():
+        raise RuntimeError("Missing human rule distribution")
 
     actual_clients = {p.name for p in artifacts_root.iterdir() if p.is_dir()}
     missing = sorted(EXPECTED_CLIENTS - actual_clients)
@@ -111,6 +114,8 @@ def _validate_release_artifact_set(run_dir: Path) -> dict[str, Any]:
 
     if manifest.get("client_digests") != client_digests:
         raise RuntimeError("Release manifest client digest mismatch")
+    if manifest.get("rule_digest") != _dir_digest(rule_root):
+        raise RuntimeError("Release manifest rule digest mismatch")
     for key, path in {
         "canonical_digest": canonical,
         "ir_digest": ir,
@@ -135,7 +140,10 @@ def promote_run(run_dir: Path, generated_root: Path, *, baseline_path: Path | No
     generated_root.parent.mkdir(parents=True, exist_ok=True)
     staging = generated_root.parent / f".{generated_root.name}.staging-{run_dir.name}"
     backup = generated_root.parent / f".{generated_root.name}.previous-{run_dir.name}"
-    for path in (staging, backup):
+    rule_root = generated_root.parent / "rule"
+    rule_staging = generated_root.parent / f".rule.staging-{run_dir.name}"
+    rule_backup = generated_root.parent / f".rule.previous-{run_dir.name}"
+    for path in (staging, backup, rule_staging, rule_backup):
         if path.exists():
             shutil.rmtree(path)
 
@@ -148,6 +156,14 @@ def promote_run(run_dir: Path, generated_root: Path, *, baseline_path: Path | No
         for client_dir in sorted(src_art.iterdir()):
             if client_dir.is_dir():
                 shutil.copytree(client_dir, staging / client_dir.name)
+        src_rule = run_dir / "rule"
+        rule_staging.mkdir(parents=True)
+        for item in sorted(src_rule.iterdir()):
+            target = rule_staging / item.name
+            if item.is_dir():
+                shutil.copytree(item, target)
+            else:
+                shutil.copy2(item, target)
         digests = _artifact_digests(staging)
         if not digests:
             raise RuntimeError("Promotion refused: no publishable artifacts")
@@ -175,6 +191,9 @@ def promote_run(run_dir: Path, generated_root: Path, *, baseline_path: Path | No
         if generated_root.exists():
             generated_root.rename(backup)
         staging.rename(generated_root)
+        if rule_root.exists():
+            rule_root.rename(rule_backup)
+        rule_staging.rename(rule_root)
 
         if baseline_temp is not None and baseline_target is not None:
             old_baseline = baseline_target
@@ -191,6 +210,8 @@ def promote_run(run_dir: Path, generated_root: Path, *, baseline_path: Path | No
         (history / f"{run_dir.name}.json").write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         if backup.exists():
             shutil.rmtree(backup)
+        if rule_backup.exists():
+            shutil.rmtree(rule_backup)
         if old_baseline_backup and old_baseline_backup.exists():
             old_baseline_backup.unlink()
         return record
@@ -200,6 +221,11 @@ def promote_run(run_dir: Path, generated_root: Path, *, baseline_path: Path | No
             backup.rename(generated_root)
         elif backup.exists() and not generated_root.exists():
             backup.rename(generated_root)
+        if rule_root.exists() and rule_backup.exists():
+            shutil.rmtree(rule_root)
+            rule_backup.rename(rule_root)
+        elif rule_backup.exists() and not rule_root.exists():
+            rule_backup.rename(rule_root)
         if baseline_temp and baseline_temp.exists():
             baseline_temp.unlink()
         if old_baseline_backup and old_baseline_backup.exists() and old_baseline and not old_baseline.exists():
@@ -210,6 +236,10 @@ def promote_run(run_dir: Path, generated_root: Path, *, baseline_path: Path | No
             shutil.rmtree(staging)
         if backup.exists():
             shutil.rmtree(backup)
+        if rule_staging.exists():
+            shutil.rmtree(rule_staging)
+        if rule_backup.exists():
+            shutil.rmtree(rule_backup)
 
 
 def rollback_to_run(run_id: str, runs_root: Path, generated_root: Path) -> dict[str, Any]:
