@@ -7,9 +7,8 @@ prs:
   enabled: true
 
 canary:
-  enabled: true
-  services:
-    - taobao
+  enabled: false
+  services: []
   single_active_service: true
   require_official_evidence_only: true
   require_seed_only_zero: true
@@ -23,7 +22,7 @@ canary:
 promotion:
   mode: pull_request
   direct_main_push: false
-  production_promotion_allowed: false
+  production_promotion_allowed: true
   require_exact_source_release: true
   require_exact_commit_binding: true
   require_immutable_registry_binding: true
