@@ -151,16 +151,19 @@ def legibility(root,style,rows,size):
 def build(out):
     cfg=yload(CFG); man=yload(MAN); es=entries(man,cfg); out.mkdir(parents=True,exist_ok=True); cache={}; regs=[]; rows={s:[] for s in STYLES}
     for e in es:
+        meta_status=str(e["meta"].get("status") or "").lower()
+        release_eligible = e["role"] != "service" or meta_status in {"verified","sourced","approved","active"}
         if e["role"] in {"strategy","client_policy"}:
             base=semantic(e["canonical_name"],e["icon_key"]); src_path="generated:semantic"; src_digest=sha(base); provider="project-semantic"; stier="project_semantic"; surl=None
         else:
             base,src_path,src_digest=base_svg(e["meta"],e["icon_key"]); src=e["meta"].get("source") or {}; provider=str(src.get("provider") or "unknown"); stier=tier(e["meta"]); surl=src.get("url")
         vs={}
+        variant_root=out/"variants" if release_eligible else out/"quarantine"/"variants"
         for style in STYLES:
-            p=out/"variants"/style/f"{slug(e["service_id"])}.svg"; p.parent.mkdir(parents=True,exist_ok=True); txt=render(base,e["canonical_name"],style,color(e["meta"])); p.write_text(txt,encoding="utf-8")
+            p=variant_root/style/f"{slug(e["service_id"])}.svg"; p.parent.mkdir(parents=True,exist_ok=True); txt=render(base,e["canonical_name"],style,color(e["meta"])); p.write_text(txt,encoding="utf-8")
             vs[style]={"asset_id":f"icon.{slug(e['service_id'])}.{style}","path":p.relative_to(out).as_posix(),"digest":sha(txt),"style":style,"source_asset_digest":src_digest,"source_tier":stier,"source_provider":provider,"source_url":surl,"source_path":src_path}
             rows[style].append({"service_id":e["service_id"],"canonical_name":e["canonical_name"],"variant":vs[style],"group":e["role"]})
-        regs.append({"service_id":e["service_id"],"icon_identity":e["icon_identity"],"role":e["role"],"canonical_name":e["canonical_name"],"base_asset":{"asset_id":vs["official"]["asset_id"],"path":src_path,"source_tier":stier,"source_provider":provider,"source_url":surl,"digest":src_digest},"variants":vs,"quality":{"identity":"pass","integrity":"pass","visual":"pending_review","legibility":"pending_review","license":"review" if e["role"]=="service" else "pass","regression":"baseline_pending"},"provenance":{"source_provider":provider,"source_path":src_path,"source_url":surl,"source_tier":stier,"source_asset_digest":src_digest,"renderer_version":"3.0.0","workspace_commit":os.environ.get("GITHUB_SHA","local"),"generation_run_id":os.environ.get("GITHUB_RUN_ID","local")}})
+        regs.append({"service_id":e["service_id"],"icon_identity":e["icon_identity"],"role":e["role"],"canonical_name":e["canonical_name"],"release_eligible":release_eligible,"base_asset":{"asset_id":vs["official"]["asset_id"],"path":src_path,"source_tier":stier,"source_provider":provider,"source_url":surl,"digest":src_digest},"variants":vs,"quality":{"identity":"pass" if release_eligible or e["role"]!="service" else "hold","integrity":"pass","visual":"pending_review","legibility":"pending_review","license":"review" if e["role"]=="service" else "pass","regression":"baseline_pending"},"provenance":{"source_provider":provider,"source_path":src_path,"source_url":surl,"source_tier":stier,"source_asset_digest":src_digest,"renderer_version":"3.0.0","workspace_commit":os.environ.get("GITHUB_SHA","local"),"generation_run_id":os.environ.get("GITHUB_RUN_ID","local")}})
     for style in STYLES:
         sheet(out,style,rows[style])
         for role in sorted({x["group"] for x in rows[style]}): sheet(out,style,[x for x in rows[style] if x["group"]==role],f"role-{slug(role)}")
@@ -169,6 +172,8 @@ def build(out):
     for client in CLIENTS:
         c=cc.get(client) or {}; preferred=str(c.get("preferred_style") or "minimal"); size=int(c.get("preferred_size") or 256); ix={}
         for r in regs:
+            if not r.get("release_eligible", True):
+                continue
             p=out/"clients"/client/str(size)/f'{slug(r["service_id"])}.png'; p.parent.mkdir(parents=True,exist_ok=True)
             try:
                 import cairosvg
