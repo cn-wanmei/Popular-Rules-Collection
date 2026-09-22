@@ -11,6 +11,7 @@ def _base():
             "production_unlock": {
                 "requires": [
                     "source_release_verified",
+                    "immutable_lineage_match",
                     "collection_reconciliation_pass",
                     "v3_build_pass",
                     "seven_client_semantic_pass",
