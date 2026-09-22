@@ -1,0 +1,55 @@
+version: 3
+schema: icon_system_v3_config
+renderer_version: 3.0.0
+source_manifest: assets/icons/manifest.yaml
+identity:
+  source_of_truth: service_catalog
+  binding_field: service_id
+  variant_key: style
+  roles: [service, strategy, client_policy, provider, category, country, region, special]
+styles:
+  - {id: official, name: Official}
+  - {id: gradient, name: Gradient}
+  - {id: liquid_glass, name: Liquid Glass}
+  - {id: soft_3d, name: Soft 3D}
+  - {id: minimal, name: Minimal}
+  - {id: dark_neon, name: Dark / Neon}
+  - {id: monochrome, name: Monochrome / Duotone}
+clients:
+  mihomo: {preferred_style: minimal, preferred_format: png, preferred_size: 128, supports_svg: true, supports_png: true}
+  singbox: {preferred_style: minimal, preferred_format: png, preferred_size: 128, supports_svg: true, supports_png: true}
+  surge: {preferred_style: minimal, preferred_format: png, preferred_size: 256, supports_svg: false, supports_png: true}
+  shadowrocket: {preferred_style: minimal, preferred_format: png, preferred_size: 256, supports_svg: false, supports_png: true}
+  quantumultx: {preferred_style: minimal, preferred_format: png, preferred_size: 256, supports_svg: false, supports_png: true}
+  egern: {preferred_style: gradient, preferred_format: png, preferred_size: 256, supports_svg: true, supports_png: true}
+  loon: {preferred_style: minimal, preferred_format: png, preferred_size: 256, supports_svg: false, supports_png: true}
+scoring:
+  officialness: 30
+  visual_quality: 20
+  stability: 15
+  cross_platform_reuse: 15
+  popularity: 10
+  freshness: 5
+  file_efficiency: 5
+protected_brands: [apple, google, microsoft, amazon, aws, openai, anthropic, netflix, telegram, github, alibaba, alipay, taobao, tmall, jd, wechat, whatsapp, facebook, instagram, paypal, stripe]
+official_source_policy:
+  domain_registry: config/official_sites.yaml
+  unknown_license_default_release: false
+  protected_brand_requires_review: true
+upstream_sources:
+  - {id: simple-icons, role: brand_candidate, trust: A, homepage: https://github.com/simple-icons/simple-icons}
+  - {id: iconify-icon-sets, role: brand_and_semantic_candidate, trust: A, homepage: https://github.com/iconify/icon-sets}
+  - {id: lige_icon, role: brand_candidate, trust: B, homepage: https://github.com/lige47/lige_icon}
+  - {id: oasisic, role: client_and_policy_candidate, trust: B, homepage: https://github.com/Hawaiine/Oasisic-Icons}
+  - {id: datatrans-payment-logos, role: payment_candidate, trust: A, homepage: https://github.com/datatrans/payment-logos}
+  - {id: official-brand-site, role: official_reference, trust: S, homepage: null}
+semantic_sets:
+  strategy: {direct: Direct, proxy: Proxy, reject: Reject, auto: Auto, fallback: Fallback, urltest: URL Test, loadbalance: Load Balance, final: Final, match: Match, dns: DNS, global: Global, select: Select, private: Private, lan: LAN, china: China, network: Network}
+  client_policy: {mihomo: MH, singbox: SB, surge: SG, shadowrocket: SR, quantumultx: QX, egern: EG, loon: LN}
+release:
+  stable_root: assets/icons/v3/releases
+  latest_root: assets/icons/v3/releases/latest
+  previous_good_required: true
+quality:
+  required_styles: [official, gradient, liquid_glass, soft_3d, minimal, dark_neon, monochrome]
+  raster_sizes: [24, 32, 48, 64, 128, 256]
