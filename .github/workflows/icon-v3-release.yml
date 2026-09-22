@@ -1,6 +1,9 @@
 name: Icon System 3 Release
 
 on:
+  push:
+    branches:
+      - phase2/icon-system-3-final-20260922
   workflow_dispatch:
     inputs:
       version:
@@ -14,6 +17,7 @@ concurrency:
 
 jobs:
   release:
+    if: github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, 'materialize Icon System 3 release')
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
