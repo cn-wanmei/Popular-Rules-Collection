@@ -1,0 +1,84 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: firebase
+display_name: Firebase
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 23
+  by_type:
+    DOMAIN_SUFFIX: 23
+rules:
+- id: 508d95e81341fc4eac4029f3f356e3b21dca4624462a57892784f556d70c8c84
+  type: DOMAIN_SUFFIX
+  value: crashlytics.com
+- id: 2bb16833ba51cb257765544b1214cb58ee5e9afdce065953faf27eec9d9df29f
+  type: DOMAIN_SUFFIX
+  value: crashlyticsreports-pa.googleapis.com
+- id: d898b338cf44efe7063c1628a3873205d9dcc62ef45228ad7e19df4fb8ab973e
+  type: DOMAIN_SUFFIX
+  value: firebase-settings.crashlytics.com
+- id: 53447d361b930925ee3dba730f8b25a52e5767a4be98719dd1278da46c5fddd6
+  type: DOMAIN_SUFFIX
+  value: firebase.com
+- id: efbefa29931f023419fa5292e29207bc445601e94665233844c64a8f6e9512e7
+  type: DOMAIN_SUFFIX
+  value: firebase.dev
+- id: 9a33a4a1c2661c9f890e4a423c4a6615508fe9782d1f1e11e90285777de569e7
+  type: DOMAIN_SUFFIX
+  value: firebase.google.com
+- id: 3191c3ec4d68fc52feb2b0013122eacc5e43fb48118a311ab3f2e00131ce5c7f
+  type: DOMAIN_SUFFIX
+  value: firebase.googleapis.com
+- id: ca2cc606aafaab683d548027539db80dc188ccbfc2d6944eaf0f77a831555109
+  type: DOMAIN_SUFFIX
+  value: firebase.io
+- id: 3386729206d5ca49062de8d160e2fbb950c2ecc0d5a211a3c60f9109aa8eaa63
+  type: DOMAIN_SUFFIX
+  value: firebaseapp.com
+- id: fe21fd23c9f1cdfe0dba8399477609056cb027a57e30ba60a9c728b965c2aeaa
+  type: DOMAIN_SUFFIX
+  value: firebaseappcheck.googleapis.com
+- id: 2f16fdb3ff170a9b8037a8b4d6190039b9f76bc66e36c1b81139d5087e99e4bd
+  type: DOMAIN_SUFFIX
+  value: firebaseappdistribution.googleapis.com
+- id: 3d0deb6ff2cafd833928f581a26210289c366caac307ffde7da020c2676f18ce
+  type: DOMAIN_SUFFIX
+  value: firebaseapptesters.googleapis.com
+- id: 635a8e15e37bd0857a0a254284be7cadd10f7d054f2d7c3c7f6b65605e71e46a
+  type: DOMAIN_SUFFIX
+  value: firebasedynamiclinks-ipv4.googleapis.com
+- id: 9b190f16af5b6e5c08dced493e976f97a78c40b31a041155d9f9019cd201abd0
+  type: DOMAIN_SUFFIX
+  value: firebasedynamiclinks-ipv6.googleapis.com
+- id: 929ead247b0b88ef81aa7e59347ed6f2f39c0f787be2a1b30fa19dc44c18e72c
+  type: DOMAIN_SUFFIX
+  value: firebasedynamiclinks.googleapis.com
+- id: 32074494ae66ac359d15e552a98be27925440a1399c1b6948cdf1ac36096884c
+  type: DOMAIN_SUFFIX
+  value: firebaseinappmessaging.googleapis.com
+- id: b5b505a9451a361bd7bf30f0a145cc53b57ae72b2ca767419968803a8f5d03fd
+  type: DOMAIN_SUFFIX
+  value: firebaseinstallations.googleapis.com
+- id: 9b37de363590898a547cbbaeda81092a497df107d17f0c444b6524f9d7020d06
+  type: DOMAIN_SUFFIX
+  value: firebaseio.com
+- id: eb67279c626ceb83717a49d70ced1a892b611f4ce25c995763cd13f96394047f
+  type: DOMAIN_SUFFIX
+  value: firebaselogging-pa.googleapis.com
+- id: 8802aef3e25d7f381fc1d052d8eee0e36f3bce2944fbd012693ecf38ab7555bc
+  type: DOMAIN_SUFFIX
+  value: firebaselogging.googleapis.com
+- id: d655a36e675266ad91bf43e92af2c064599b875c8912de509cb2250d06690ee0
+  type: DOMAIN_SUFFIX
+  value: firebaseperusertopics-pa.googleapis.com
+- id: 7c03b48e31aa1b9c37b55cfdf1426a989df4605bd63651fd099274c5422df204
+  type: DOMAIN_SUFFIX
+  value: firebaseremoteconfig.googleapis.com
+- id: f83058e19a5e8d4ee857d9e5ab0997688b35128dc5e4a24e530167afa4cb4878
+  type: DOMAIN_SUFFIX
+  value: update.crashlytics.com
+provider: google

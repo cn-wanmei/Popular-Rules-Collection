@@ -1,0 +1,56 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: unmapped_service
+id: vivo
+display_name: vivo
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 14
+  by_type:
+    DOMAIN_SUFFIX: 14
+rules:
+- id: c31cdc707ebf368ea37a0f31ca2920aeb705cd5f423ae60aefc437ffea3546e1
+  type: DOMAIN_SUFFIX
+  value: bbk.com
+- id: 58c3c570e3f5324a83e0cf8780d4cd70ecdee8375a2976928eb0a8087b046ce3
+  type: DOMAIN_SUFFIX
+  value: bbktel.com.cn
+- id: c50cf88d0a14c65853f4097fa0a2aa4aff12d3a0f5550f97ea820a976c848952
+  type: DOMAIN_SUFFIX
+  value: funtouchos.com
+- id: 9b2a6058bc7534fb0aab2a1fee580dcce6502756add02dc41f4028a1cc8e3f55
+  type: DOMAIN_SUFFIX
+  value: gdbbk.com
+- id: 683c7fb7dd52a866e9dbedb50376da436f222e5efa24fc5dc57e5d92a382b872
+  type: DOMAIN_SUFFIX
+  value: iqoo.com
+- id: eb021a47d9124ec6e3a2ac561e21b09f1d515d106ca6244ce8d13faa2ab7fde0
+  type: DOMAIN_SUFFIX
+  value: vivo.cn
+- id: b284f2dcbee6b5ade081564b14c1395385603c9cd4fa0e92feeeae761830b8dd
+  type: DOMAIN_SUFFIX
+  value: vivo.com
+- id: 268c582c772dc9b4fa16f447f41f482f4efbe356a7da439dba15ba63d748e0b4
+  type: DOMAIN_SUFFIX
+  value: vivo.com.cn
+- id: 201f1f654086fd6a7a7d651df01f2f203e5a4ac4c0392a2ba6c2e625856d9940
+  type: DOMAIN_SUFFIX
+  value: vivo.xyz
+- id: e80ea1a2a7754117cabf26fc569db4b8ce662c24b248431771065876fceb2972
+  type: DOMAIN_SUFFIX
+  value: vivoglobal.com
+- id: 3fd953040766e34f4b6110a798a0a321e66e873e4827bf8e723f35f4f655ea3d
+  type: DOMAIN_SUFFIX
+  value: vivosjpt.com
+- id: a05b9c4f5b2e3d7d2e1c745ae49096bcd3e67f1049523c80341fc8eb21cdba8f
+  type: DOMAIN_SUFFIX
+  value: vivotc.com
+- id: 95f78cef87db255953d600d47d14702870dca076d28f04e7ac4c4ddcf7a6a024
+  type: DOMAIN_SUFFIX
+  value: vmic.xyz
+- id: c662e970f19a3022cb253c567e2a679270b691cf68f34c353eb53c3533f9247f
+  type: DOMAIN_SUFFIX
+  value: vsearch.club

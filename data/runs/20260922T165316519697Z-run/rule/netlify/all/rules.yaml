@@ -1,0 +1,45 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: netlify_aggregate
+display_name: Netlify
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 10
+  by_type:
+    DOMAIN_SUFFIX: 10
+rules:
+- id: 6700e091d33372ab8a8202d0bce65829c1bf8f101b646fb7b1699818d98186ec
+  type: DOMAIN_SUFFIX
+  value: acd89244c803f7181.awsglobalaccelerator.com
+- id: e28eed3cf92fdc1f79dac67bb1ede9a14d7a685c62b59020b37661f0a9e4d308
+  type: DOMAIN_SUFFIX
+  value: afa7f374f51cc8991.awsglobalaccelerator.com
+- id: bb2bce8c4e71a808b5da1234eaba23cee962563c3164ee3e48583d6607f0261e
+  type: DOMAIN_SUFFIX
+  value: bitballoon.com
+- id: f5b293172891292a7c4a51bc76c706ba09d522dcf742f3451bae74810785bccb
+  type: DOMAIN_SUFFIX
+  value: d33wubrfki0l68.cloudfront.net
+- id: daf19bdace0ce53831a812c1c9a1e46bb71583309faa08059e55d6b60f2300bb
+  type: DOMAIN_SUFFIX
+  value: netlify.app
+- id: d4846e90d120ee646cf18db22547ba4a6b5c6d869d9681b9c90dbe4164554e76
+  type: DOMAIN_SUFFIX
+  value: netlify.com
+- id: c1611f5832ac10657e4400197cd3fa25bfe736ecde6dc91b0760cc006c1d6529
+  type: DOMAIN_SUFFIX
+  value: netlifydns.com
+- id: 6af1d88798243d66e67f50140c81989bb4a6168f9760f789ac260688d20f7a46
+  type: DOMAIN_SUFFIX
+  value: netlifystatus.com
+- id: 3f2768e9318a57e1b7dcd6068aa497a6ec9087b12d1011a13cf3f528534ea7b3
+  type: DOMAIN_SUFFIX
+  value: netlifyusercontent.com
+- id: f0872f3b5df9846768888b490c3ce0e2c270e4598048d047fbc0b6b250f70ffc
+  type: DOMAIN_SUFFIX
+  value: ntl.fyi
+provider: netlify

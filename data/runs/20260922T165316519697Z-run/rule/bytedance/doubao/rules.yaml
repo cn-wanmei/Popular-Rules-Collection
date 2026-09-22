@@ -1,0 +1,111 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: doubao
+display_name: Doubao
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 32
+  by_type:
+    DOMAIN_SUFFIX: 32
+rules:
+- id: cea57bd7255611d8fd1aaff7a261b87e927548fca5d7db9741e6a9d2baf6b1e7
+  type: DOMAIN_SUFFIX
+  value: api-building.fun
+- id: c098764a4e9dcfda78eae7adc7aac69af17d94108f5bd4e54b71c15b12fe82f3
+  type: DOMAIN_SUFFIX
+  value: building.fun
+- id: e8775554fbeef0ebfba2e4e1951f5c3e84f1b1f20a385bc52b625d8cb342b9ea
+  type: DOMAIN_SUFFIX
+  value: butterfly-static.cn
+- id: b2e99e30d9dcc741217cd248a850dee3be7e8aaeebfa63e9aea3f7d4376d2ba3
+  type: DOMAIN_SUFFIX
+  value: butterflyai.cn
+- id: ea2b02b61d2dfaa9d233646a83202ec85c943fc538aec349495af8fd2ed6c65d
+  type: DOMAIN_SUFFIX
+  value: coze-dns-01.com
+- id: 7956ee49f8fceb620f0c0034b41c536fab2c8b42337730bfcb75dd24d7763423
+  type: DOMAIN_SUFFIX
+  value: coze.cn
+- id: e3cfec8e958b688f6e6dec7c25afe439de90da17fcf3bae4dce9858246394e70
+  type: DOMAIN_SUFFIX
+  value: coze.email
+- id: 49d0df199b2b933c67bdb7fc3cba24f9b063c88353c684c72dc66f339b4725f2
+  type: DOMAIN_SUFFIX
+  value: coze.site
+- id: eb0ca591f64a2299f71a60f02f3900c3f6caf3668350e56534f7ffd7c7115be8
+  type: DOMAIN_SUFFIX
+  value: cozeapp.net
+- id: 97d91b57ae2da4166b1de216b443e73d7c564b69accb3433fed141b564233dfe
+  type: DOMAIN_SUFFIX
+  value: cozebaas.cn
+- id: f6be5237a4ee294952730357ed0648eb0787e459688fe9b1333ef35a809d4247
+  type: DOMAIN_SUFFIX
+  value: cozebuild.com
+- id: 54092cdd33be9662553c9aec52e51cbc669c8102e9c9c40a3114a466ac82619d
+  type: DOMAIN_SUFFIX
+  value: cozecdn.com
+- id: 4c26278d764c2ba10862e94792080c745c5e5dfb630092bd36c71462030b8903
+  type: DOMAIN_SUFFIX
+  value: cozedeploy.com
+- id: 9b31a0a5f3b93454c528f637d7bfcb52a0b89b51adcb35938654bfa4f53897e2
+  type: DOMAIN_SUFFIX
+  value: cozefn.cn
+- id: bdac1f3b52d89adece893dfde90f63a0a3cf9ee48ca089866d007dc6dbe8bf25
+  type: DOMAIN_SUFFIX
+  value: cozeide.cn
+- id: 166b6a1078f80818d9c0df556476114b866b85cc2b5c553870470e1b2a1b8bc0
+  type: DOMAIN_SUFFIX
+  value: cozesdk.com
+- id: c498a367b3bf525554c32792a6ea14da505636b4575e354ac2001b9fc911d533
+  type: DOMAIN_SUFFIX
+  value: cozetest.cn
+- id: f61b5a9baa9224fb4d7765deaac8fcdf34f80526d737667467b27bd09f643c3d
+  type: DOMAIN_SUFFIX
+  value: cozetest2.cn
+- id: ea76788aa15a7df6104ea58e6ee2888b64c9412259ac01235a5b4d737ba04119
+  type: DOMAIN_SUFFIX
+  value: cozetest3.cn
+- id: 87b1d71bd92e3ad6e316c7104c75e73e374fd1b706b5f274493965b9fbbcd80b
+  type: DOMAIN_SUFFIX
+  value: dbbuilding.fun
+- id: 1ab0c127a32c9cde27c4a1e337393ef32f259b4b4ab3af17d14d94da07c65140
+  type: DOMAIN_SUFFIX
+  value: doubao-dev.com
+- id: 6166d38e9633892f5143e9c218f002709b13e6d513ae369462bf0692bc912398
+  type: DOMAIN_SUFFIX
+  value: doubao.com
+- id: 6aadd0d5c539e52054e30ec48e35a1cc8dbf61c73f323726e7fd660b002fd332
+  type: DOMAIN_SUFFIX
+  value: doubaocdn.com
+- id: 23e9414bd43745a6ba9a2b725e9eeb2b254a0a26b0b4da9a4ca19855b1904c8a
+  type: DOMAIN_SUFFIX
+  value: hi-butterfly.cn
+- id: c7d9d3094da02de612a5b2b71e2787f3fd24c7a920ff77d91698e59ef7ff3d05
+  type: DOMAIN_SUFFIX
+  value: instreet.com
+- id: 8c976203d4d94d125962baf99d02f1ea03db36197ccb8cc54d3adad574f8e3de
+  type: DOMAIN_SUFFIX
+  value: maoxiangai.com
+- id: 66dd5f07fa842cc8ddc1fbf70d4f98d9aad18425f85f8c91f27fb15d83d2304e
+  type: DOMAIN_SUFFIX
+  value: myparallelstory.com
+- id: b92a5e554b866607f28671d577fd34a05662e8b6ceed42f347de94280c234772
+  type: DOMAIN_SUFFIX
+  value: obriccloud.com
+- id: 5f6c69f06b4364567dd5c82b7b47feff2eb45aecbdedd76a4ac7b0fb0f46eb73
+  type: DOMAIN_SUFFIX
+  value: obricclouddw.com
+- id: f7a2f24b74d4cf9068810e768aafd501b65946c40325f5571007ec042843164b
+  type: DOMAIN_SUFFIX
+  value: oceancloudapi.com
+- id: 88f7615a860ec5922bc437521d455e97960f5b7590067d98a88769f920eb89ea
+  type: DOMAIN_SUFFIX
+  value: picpic-ai.cn
+- id: ac5a28d20769ce1ee2f75ee82abd021ca124151dced02227087fedf612491aa5
+  type: DOMAIN_SUFFIX
+  value: pixeldance.com
+provider: bytedance

@@ -1,0 +1,63 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: xianyu
+display_name: Xianyu
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 16
+  by_type:
+    DOMAIN_SUFFIX: 16
+rules:
+- id: 75e3b107d440958d2f018af02f95bbe2116c70fc69f2916201aabcdd93dae5cc
+  type: DOMAIN_SUFFIX
+  value: ewqcxz.com
+- id: 3ce06604c1171020ad778b8e67cc995d219ebc50b22253efac3a4b550b473549
+  type: DOMAIN_SUFFIX
+  value: hjkhjkl.com
+- id: 1a1e9cd891be7917dd7952e812b25b161379a8c5b117a0e0278f35262b933028
+  type: DOMAIN_SUFFIX
+  value: iopiopl.com
+- id: 8efdbcba1d6fba26fd42b4fdcc4305571fd10fff65849c5afffb758b54c576bf
+  type: DOMAIN_SUFFIX
+  value: lkjujm.com
+- id: 4892c228b37e2cc00d391a2d830060afa573fe4fb2c77ce1b87ce67c9b7ef068
+  type: DOMAIN_SUFFIX
+  value: mnbvdfg.com
+- id: effcfcc91b89b3a915ae7fa3b86f31118dc577ba596d9386c8ecb7fa9eccf703
+  type: DOMAIN_SUFFIX
+  value: nfmrtfv.com
+- id: 2385f741021c6b87e333a2f246558358d2949486e50f54c142b1692221d727ef
+  type: DOMAIN_SUFFIX
+  value: poiuytw.com
+- id: dd85e4f77d922d3fe986c6c39d803e42bf3af0b8f9ffe6b3662b6bc38f467d51
+  type: DOMAIN_SUFFIX
+  value: qazasd.com
+- id: 9a653ab6312d98839e995152350439949acfca7644ab47cbf7d09834423f5de9
+  type: DOMAIN_SUFFIX
+  value: redfcv.com
+- id: 361df2d2e26c1b9242a9b6895b02c58b4665161be14bb14c1e65c1f75e0bcd54
+  type: DOMAIN_SUFFIX
+  value: svfrrg.com
+- id: 669f41d718fea42507a9736bae202914b5c253086de0f67fc701e54d0d1aa983
+  type: DOMAIN_SUFFIX
+  value: tfgvb.com
+- id: 6375dc948db289abdd851d0ee9b9e1e5476201d7c00740b1dda65046bd440eb9
+  type: DOMAIN_SUFFIX
+  value: uyhjnm.com
+- id: 4a6f0b429db0caa0a7f9cd589b9e63520ad3428ea98bd033ede0721bdfcb9fa6
+  type: DOMAIN_SUFFIX
+  value: vbmnmy.com
+- id: a4be506f3cb1f07da139bcea7a6b33b18144ffc77f44ac3494e38e6bfd17d894
+  type: DOMAIN_SUFFIX
+  value: wsxsdf.com
+- id: 18f9c376169ff0845edf75dc4e40da62cc795626377f2328e5218e63c1190dbf
+  type: DOMAIN_SUFFIX
+  value: xcbbtf.com
+- id: 899a83fcc2eddf110bbf2233249c409e67c0027f8782bf6a35a33ff2164d3da4
+  type: DOMAIN_SUFFIX
+  value: xianyu.mobi
+provider: alibaba

@@ -1,0 +1,24 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: uber
+display_name: Uber
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 3
+  by_type:
+    DOMAIN_SUFFIX: 3
+rules:
+- id: 659326d2c8c6efc72127506293aaf4c2721fe9fb2167bbb6c39e18b282afe0a4
+  type: DOMAIN_SUFFIX
+  value: uber-assets.com
+- id: 33d3184a6d9cea92a1b58814c5724411c36a2981f46301ecf5b9b495c439385e
+  type: DOMAIN_SUFFIX
+  value: uber.com
+- id: 7d1e1ffdcc40876f9495c564436c0c3a81051cb243c86740be46dc3045d887c9
+  type: DOMAIN_SUFFIX
+  value: ubereats.com
+provider: uber

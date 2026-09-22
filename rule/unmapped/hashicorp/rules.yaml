@@ -1,0 +1,38 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: unmapped_service
+id: hashicorp
+display_name: hashicorp
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 8
+  by_type:
+    DOMAIN_SUFFIX: 8
+rules:
+- id: 6438382a32a8629c7f815a518fd3937a34e3ac7eba02d205276b9b33ad15561c
+  type: DOMAIN_SUFFIX
+  value: consul.io
+- id: 1fb2afd62eea4e817ee00ae702d58dd530d85955c9ea17171729a3b81cab79fd
+  type: DOMAIN_SUFFIX
+  value: hashicorp.com
+- id: 3dd2c7c4ec401c59bf86f2710ffc43570010b5702ca9bb77f34c2df285d5e464
+  type: DOMAIN_SUFFIX
+  value: nomadproject.io
+- id: bdd09994095594810f9e111be590bcedf7e49999a408fafcea3c8f4f4e0e63d6
+  type: DOMAIN_SUFFIX
+  value: packer.io
+- id: 58a444bc9580dc07792a7aa0786c3fb49bda79c25fa44ab8a2efbbdc2678bd73
+  type: DOMAIN_SUFFIX
+  value: terraform.io
+- id: 88f70cf8097a4579971fda509197dfb3d433a02d8da6963f6450fc6cb73f48ae
+  type: DOMAIN_SUFFIX
+  value: vagrantcloud.com
+- id: 04df3a832dabd70f22c25be95efdcdf6eff8c49f694b96a943563732ac7fd42b
+  type: DOMAIN_SUFFIX
+  value: vagrantup.com
+- id: d4a419452c0f9194b5a0982ed213934311f8f81d211a1fd1c2f289a6b2f9ed66
+  type: DOMAIN_SUFFIX
+  value: vaultproject.io

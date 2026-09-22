@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: trello
+display_name: Trello
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 25b27d9d5aa2aefcfce47b7dc9f82d3c366d18a8f4772f42c908cc434d11d44f
+  type: DOMAIN_SUFFIX
+  value: trello.com
+- id: 3ddea93fcf6cf2fb5bf42668350dd1151b674264630ee5994fc06d68558562d9
+  type: DOMAIN_SUFFIX
+  value: trellocdn.com
+provider: atlassian

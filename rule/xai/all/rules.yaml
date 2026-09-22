@@ -1,0 +1,27 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: xai
+display_name: xAI
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 4
+  by_type:
+    DOMAIN_SUFFIX: 4
+rules:
+- id: 9e4ec19be6814f4ea6ecdbc1ad1947e14024218404cd9a3adc23710e7039d392
+  type: DOMAIN_SUFFIX
+  value: grok.com
+- id: a4baf50c4e6eb91ef0f6a954066215a7d58e4a25e78d0b03b892a9d7e1ac3fc2
+  type: DOMAIN_SUFFIX
+  value: grok.x.com
+- id: 54bdde9a609be1e0acb26db4c806970bb776897eda6dd45159f65e72c8e7ac76
+  type: DOMAIN_SUFFIX
+  value: grokipedia.com
+- id: 189e87cf503eb88154183a1013541c9b4bff16532ec4006654f2b91d2a399e20
+  type: DOMAIN_SUFFIX
+  value: x.ai
+provider: xai

@@ -1,0 +1,24 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: bluesky_aggregate
+display_name: Bluesky
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 3
+  by_type:
+    DOMAIN_SUFFIX: 3
+rules:
+- id: aa43fbcd2b4f8c3f6d2948130b7c961fc202b2ac8908bb5d0875aec810f825ea
+  type: DOMAIN_SUFFIX
+  value: bsky.app
+- id: 731cc56940f8a347953ddb19bbd4be7eb1b20b7a94bf821f3eb510a2516919a6
+  type: DOMAIN_SUFFIX
+  value: bsky.network
+- id: 82760a2e312a238f4efcf0713f04afcd18626c5033309bd068cdb57cdc73aa3b
+  type: DOMAIN_SUFFIX
+  value: bsky.social
+provider: bluesky

@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: qqmail
+display_name: QQ Mail
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: f1662e1e8eca79ae12c3f77e39a8f3f07f7a4dd45fcdeca1426cc0ebd26da747
+  type: DOMAIN_SUFFIX
+  value: mail.qq.com
+provider: tencent

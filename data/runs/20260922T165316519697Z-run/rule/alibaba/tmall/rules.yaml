@@ -1,0 +1,39 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: tmall
+display_name: Tmall
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 8
+  by_type:
+    DOMAIN_SUFFIX: 8
+rules:
+- id: 0da89d195ff8fd421d833756c693cb80b1325b2975858c22a247990c82be2167
+  type: DOMAIN_SUFFIX
+  value: book.tmall.com
+- id: 6193d6836203ed4cab573f6f040efe3ecf2a65293ee84552aeb7d9e8d6abbd23
+  type: DOMAIN_SUFFIX
+  value: car.tmall.com
+- id: d24a079b44ff71e422ed55413b4646b0f3ceef2148b17400109fc7aa78f16491
+  type: DOMAIN_SUFFIX
+  value: chaoshi.tmall.com
+- id: 5d4766b09a853758f7301c4c6b2ff79a634d2dfdfece7db38fb3c0470d733f42
+  type: DOMAIN_SUFFIX
+  value: detail.tmall.com
+- id: 48746f23709ca86d8fa09cc84dd7a858e770ce88d8d633c5fb38dffbec7a1e42
+  type: DOMAIN_SUFFIX
+  value: fragment.tmall.com
+- id: 69c95058fa4c1018d861c6649a3ce2c4989c9396f9c5801a9a18be42fdbe2168
+  type: DOMAIN_SUFFIX
+  value: jstracker.www.tmall.com
+- id: 6943f24cf6388b2261a95e16f4e2d9e146df4d1bfe8378c350d0dd95a79cd354
+  type: DOMAIN_SUFFIX
+  value: tmall.com
+- id: da2f54947576c801fd8d8e440bc92cb277c49734c24b743e667d22447dd0de31
+  type: DOMAIN_SUFFIX
+  value: www.tmall.com
+provider: alibaba

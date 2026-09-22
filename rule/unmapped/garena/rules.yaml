@@ -1,0 +1,59 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: unmapped_service
+id: garena
+display_name: garena
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 15
+  by_type:
+    DOMAIN_SUFFIX: 15
+rules:
+- id: be455474062139dc73bf1028ff467827dd34f4382043a9f3aef53bd910b25405
+  type: DOMAIN_SUFFIX
+  value: avatargarenanow-a.akamaihd.net
+- id: 5caf51dc62e473340397d999bb3a672ff9727c380fff7c568f4cdee3761ae0c5
+  type: DOMAIN_SUFFIX
+  value: cdngarenanow-a.akamaihd.net
+- id: 9a15f673309ab96fa93f0c8dc6047685c6334404ae0cb65b51949fb05c2f61b1
+  type: DOMAIN_SUFFIX
+  value: dlmobilegarena-a.akamaihd.net
+- id: 59e85e1d56334cdda28d810563c2af2d3346c3e488df307227f597c43bd3c8ef
+  type: DOMAIN_SUFFIX
+  value: garena.co.id
+- id: 6e5975d659be6d0b2d7c5e3b6746b1352dac9e9e991e95fc46da26aeef64c7d1
+  type: DOMAIN_SUFFIX
+  value: garena.co.th
+- id: 620013b5aaa24b413e0ef76db54c557e15d0490c4e48b1d41721de5bdc2bc1c5
+  type: DOMAIN_SUFFIX
+  value: garena.com
+- id: ca7046620f237803e7bf08bf3c2715c7ee839391a58fab5ba8d4d1378a64f550
+  type: DOMAIN_SUFFIX
+  value: garena.live
+- id: 05aebac8be1e497168fd2de42c68178882561cf81306b38bc68da0fc625879ef
+  type: DOMAIN_SUFFIX
+  value: garena.my
+- id: 83a7728abf4c82233d291ffd56a417f06564312b1cd2a1b62a474139a193bf65
+  type: DOMAIN_SUFFIX
+  value: garena.ph
+- id: e87271746524f99fcb6624eadf68ded5608c191b28c96022d74351cb833f5b01
+  type: DOMAIN_SUFFIX
+  value: garena.sg
+- id: 1a2d07bbe6ea715d043b8bd30d425b64c3d2ff02077b5b7aacd30636facc46ae
+  type: DOMAIN_SUFFIX
+  value: garena.tv
+- id: aec2ba043797471167fc4288a3574da55d963d0b6a810bba79bc1ff0b8f5820f
+  type: DOMAIN_SUFFIX
+  value: garena.tw
+- id: ade08a831a846d7009e5cc07319f006283543487f5db2842eab49a9406594a3b
+  type: DOMAIN_SUFFIX
+  value: garena.vn
+- id: 22a6bb9e97a5674e725d76c9e48d24a878daf9dac24ae7d7e95d3ba22fdd3add
+  type: DOMAIN_SUFFIX
+  value: garenanow.com
+- id: 5fe2a0185e93a915d9ba628465306447dc89f1f654304eba9fd8a338cdf052c5
+  type: DOMAIN_SUFFIX
+  value: seagroup.com

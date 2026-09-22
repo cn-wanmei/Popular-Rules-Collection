@@ -1,0 +1,107 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: unmapped_service
+id: bbc
+display_name: bbc
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 30
+  by_type:
+    DOMAIN: 11
+    DOMAIN_KEYWORD: 3
+    DOMAIN_SUFFIX: 15
+    PROCESS_NAME: 1
+rules:
+- id: 850a46095832eec663ca810e48ac2414c4b4365911453d02120f5d18c17814db
+  type: DOMAIN
+  value: aod-dash-uk-live.akamaized.net
+- id: 78927eeaeab0de11d7d5e8a69e36e9d41742789e6d90c857eeb945846a85e842
+  type: DOMAIN
+  value: aod-hls-uk-live.akamaized.net
+- id: d731a1f432cce8bb2969f0ee98c69d2e89eabc74ab7df475b9a005d1be292eee
+  type: DOMAIN
+  value: as-dash-uk-live.akamaized.net
+- id: bd0924c2d3b7148c94fe4a0e18ae77669280e8d9a24f9789651d57ff5cedfd88
+  type: DOMAIN
+  value: as-hls-uk-live.akamaized.net
+- id: 376df36c485d0eafd223545f43a773d03eb95c45b82c5de5a8d0b9ddcd638779
+  type: DOMAIN
+  value: vod-dash-uk-live.akamaized.net
+- id: 01b4bc2abc9076fd562cff1c97042afea3fa93c5cf92b13a0e01787a98f2324e
+  type: DOMAIN
+  value: vod-dash-ww-live.akamaized.net
+- id: 61436bd739b7118e4b973086eb079c1e71f1db06f9763e1d38f971ee05b11b51
+  type: DOMAIN
+  value: vod-hls-uk-live.akamaized.net
+- id: de6e61772dc0e8072772b97aead1d6a3eaaa01d57c3e075727723fc1ec88cfc9
+  type: DOMAIN
+  value: vod-sub-uk-live.akamaized.net
+- id: 81b6b2d3a667f2e2779af4cd1cfe32c9aff23fefb1bf27dc9805b88db0421472
+  type: DOMAIN
+  value: vod-thumb-uk-live.akamaized.net
+- id: ceca8a24dca65384b4a7ee0cf7bbf60e671d4b8a74c1095b4b8fdd47d48b9253
+  type: DOMAIN
+  value: vod-thumb-ww-live.akamaized.net
+- id: 031d8f1c1e664d83a960a97b678d45b9fde52e4c30ffe2fda36e5f76064259fa
+  type: DOMAIN
+  value: vs-cmaf-push-uk-live.akamaized.net
+- id: 8ce1108f6204f55e364149bebf185a372e0cbd4b0d3eb0786bb4bcaa85eef199
+  type: DOMAIN_KEYWORD
+  value: -uk-live.akamaized.net
+- id: b8c2bcf2fb1a36aefaff10c1d5b794591bf0de183bcf889f22a2621808c33dd9
+  type: DOMAIN_KEYWORD
+  value: bbcfmt
+- id: 2a8319844c3e5d3efc9f282b1c50c79597e204ba4373497932ec599799c44bab
+  type: DOMAIN_KEYWORD
+  value: uk-live
+- id: 309091a22206ac632f3068b8a6143520732cbb97d9e4bd93178c74e6ec67e381
+  type: DOMAIN_SUFFIX
+  value: bbc
+- id: 6b46f663ae629af291eda7189c946bb8c552c4890e4a5c847d0652e49ff0ffcd
+  type: DOMAIN_SUFFIX
+  value: bbc.co
+- id: d61f026b838e52462f9d2149a028fdbf0445c60de9f2280176aa8784ac1137d6
+  type: DOMAIN_SUFFIX
+  value: bbc.co.uk
+- id: 508b4e43c40ae75ce54fb217caa8cd0584565f06c822525c846f9fea78b8f3fb
+  type: DOMAIN_SUFFIX
+  value: bbc.com
+- id: 7284a8f429119267a40716bb2398be1df1955ce78bfb2ed126763fba16c55415
+  type: DOMAIN_SUFFIX
+  value: bbc.in
+- id: b272b2e52095160ddc5163cf1d9d9b6bb31bc36bb2323019e1c94de88e6caa40
+  type: DOMAIN_SUFFIX
+  value: bbc.net.uk
+- id: 17b1c72c488f6ffac75af87c630671d20620a0948a837a76a09c8b8f2f691559
+  type: DOMAIN_SUFFIX
+  value: bbcchinese.com
+- id: 75139d9de52d4c4b598f0a700c4deb25b1450d36a977e0b6c7be9e3cee8aebf2
+  type: DOMAIN_SUFFIX
+  value: bbcfmt.hs.llnwd.net
+- id: 7829ffb8f40b4bb33ca008e8f9b0fd508d8ddc5c5d5d4861305f9905fa2bcc2d
+  type: DOMAIN_SUFFIX
+  value: bbcfmt.s.llnwi.net
+- id: 17753abe1da16e63234a1abbe1f508d81d25f3f8f7d7eb2cbdaec82ce03e190f
+  type: DOMAIN_SUFFIX
+  value: bbci.co
+- id: e41837a5126a943b0eea2a9ecba74f1c060874dc6533a22d5d4b9e4655a0bf69
+  type: DOMAIN_SUFFIX
+  value: bbci.co.uk
+- id: 7c7455b937bbbbc37336ad37dbf55eda1beb6ed5c251a3632dd179732623f995
+  type: DOMAIN_SUFFIX
+  value: bbcmedia.co.uk
+- id: 70040a2313941f06f4d20515b8ea282b494aed9fd01996a9b9817fddaf919bf0
+  type: DOMAIN_SUFFIX
+  value: bbcpersian.com
+- id: 98142ecc90cebdeb17ec1890a883366cb20f74af0f52921d220bee1994008a22
+  type: DOMAIN_SUFFIX
+  value: bbcverticals.com
+- id: 8e145147f9a84677ad9934b1ff8acf2556cec85ae7397b082cac8fb83cf9535e
+  type: DOMAIN_SUFFIX
+  value: bidi.net.uk
+- id: ea7c24e9c0e59943878c1912ab73dd8402f798bfa9f4bddeaae4838f7643bf42
+  type: PROCESS_NAME
+  value: bbc.iplayer.android

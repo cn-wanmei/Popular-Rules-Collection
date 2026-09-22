@@ -1,0 +1,27 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: cursor
+display_name: Cursor
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 4
+  by_type:
+    DOMAIN_SUFFIX: 4
+rules:
+- id: 868ee295be5e30433012cf21237b86508cd64d5026dac0378a464d0a88754637
+  type: DOMAIN_SUFFIX
+  value: cursor-cdn.com
+- id: 7210e3899b0b18024d5bda1b8d2844e734c934900e410e0106fbc1e691ac149d
+  type: DOMAIN_SUFFIX
+  value: cursor.com
+- id: b1e034fd319980a04b776e607653b54464f7cd5bd450c74cc3ae8b757320bc90
+  type: DOMAIN_SUFFIX
+  value: cursor.sh
+- id: 82b7808fb4c66e7406cec5c08db7021bace5fd5b3a4bc9c17aaaf2098250c8cc
+  type: DOMAIN_SUFFIX
+  value: cursorapi.com
+provider: cursor

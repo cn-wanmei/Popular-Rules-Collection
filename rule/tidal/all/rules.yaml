@@ -1,0 +1,24 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: tidal_aggregate
+display_name: TIDAL
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 3
+  by_type:
+    DOMAIN_SUFFIX: 3
+rules:
+- id: c99fb302d2338eb139d07c0e1b85d3c89c2efc493f1ada69cd0ea19275724556
+  type: DOMAIN_SUFFIX
+  value: tidal.com
+- id: fe055bc5e4766da0a664e93adb406002e92f1704b5cd45120489a8360b38b206
+  type: DOMAIN_SUFFIX
+  value: tidalhifi.com
+- id: 256d5574fe52f21eeaa04f43954be84ce3f762f2b15aded92fa0bd3572e3e24b
+  type: DOMAIN_SUFFIX
+  value: wimpmusic.com
+provider: tidal

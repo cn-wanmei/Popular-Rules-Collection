@@ -1,0 +1,48 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: atlassian
+display_name: Atlassian
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 11
+  by_type:
+    DOMAIN_SUFFIX: 11
+rules:
+- id: 71582315ffdee90c838e7037f0816a66a181bff1b663f4ab8512a6912af34324
+  type: DOMAIN_SUFFIX
+  value: atl-paas.net
+- id: 84eab51b133bcfcac4efa311169fc91c024f7c666e22a4876df0c46081f29d43
+  type: DOMAIN_SUFFIX
+  value: atlassian-dev.net
+- id: 922f92cdd0865e8f6512adc8ffade9fba9bec8bc553a81a8974281173481444e
+  type: DOMAIN_SUFFIX
+  value: atlassian.com
+- id: 25da03012df802bfc25e31025005341ddc7024df22b5c21e2e7e7aa5e980d8f7
+  type: DOMAIN_SUFFIX
+  value: atlassian.net
+- id: b9d881a12ecfc409dbae1cb0e51fd19281a0e706399fc02968beb9d0bb007cf6
+  type: DOMAIN_SUFFIX
+  value: bitbucket.io
+- id: e27f2fc8bcbb6553056b8d978fbf5437f05c5c09fd860a6175a2fd003f51b2dd
+  type: DOMAIN_SUFFIX
+  value: bitbucket.org
+- id: da34335d04d19742c8271df9a3099833a65501240f264895fc13dc603c803e09
+  type: DOMAIN_SUFFIX
+  value: jira.com
+- id: f103200ec855ab24eae31d8d28de013180240243386382bb83b9a11c0f9b67df
+  type: DOMAIN_SUFFIX
+  value: ss-inf.net
+- id: c90c536e8997ab7be2d9fa0f5e3d875b5843ae4963ee659f841598081a5a2708
+  type: DOMAIN_SUFFIX
+  value: statuspage.io
+- id: 25b27d9d5aa2aefcfce47b7dc9f82d3c366d18a8f4772f42c908cc434d11d44f
+  type: DOMAIN_SUFFIX
+  value: trello.com
+- id: 3ddea93fcf6cf2fb5bf42668350dd1151b674264630ee5994fc06d68558562d9
+  type: DOMAIN_SUFFIX
+  value: trellocdn.com
+provider: atlassian

@@ -1,0 +1,47 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: unmapped_service
+id: slack
+display_name: slack
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 11
+  by_type:
+    DOMAIN_SUFFIX: 11
+rules:
+- id: b3f84c859c88323bb9a521dc982d0fe1e58d19b9bd8be6eff22a04b6f476777e
+  type: DOMAIN_SUFFIX
+  value: slack-core.com
+- id: d15a23283c956536f9c3eeeae5f0cd5e32c79c67f623e5d3567b9fb933e2b6fb
+  type: DOMAIN_SUFFIX
+  value: slack-edge.com
+- id: 70a9b888c48bce1319373238d71ab9404257821c006f690668f5092cd6110e97
+  type: DOMAIN_SUFFIX
+  value: slack-files.com
+- id: cea53b2bd6a75796cc3a0ea02116f33ea6537a82070e805eebf3fb5b48d1ab55
+  type: DOMAIN_SUFFIX
+  value: slack-imgs.com
+- id: f57cc9a5fd251b67e37052de0b2c65aff0a3ac904df7ccef11253e93a7ea8ab3
+  type: DOMAIN_SUFFIX
+  value: slack-msgs.com
+- id: 2e19dc115b52602cc0bacfe208170b1c458da6de2f1122526609701d021ca66a
+  type: DOMAIN_SUFFIX
+  value: slack-redir.net
+- id: ce115e5a27133e4df12a5ccc2d6e4139976fb879552a038a2001653e9f89a570
+  type: DOMAIN_SUFFIX
+  value: slack.com
+- id: c63709bb6b5dbadaf34e9676a8140a9e5b31071649fc697900b79ae89a6449e8
+  type: DOMAIN_SUFFIX
+  value: slackb.com
+- id: b7b55bedd9eb14d5a6db2f6579c3b578700c8ddc885def5e144bc66d41db170f
+  type: DOMAIN_SUFFIX
+  value: slackcertified.com
+- id: 8b7cda672a9fe6473e54466c36ae447d41b764ef8ca02384034e6e3e607f1897
+  type: DOMAIN_SUFFIX
+  value: slackdemo.com
+- id: 1d04ed90aadbdc49df5b62f40a75142398a1e2dc57a36ce0ca01c11ab8a4d255
+  type: DOMAIN_SUFFIX
+  value: slackhq.com

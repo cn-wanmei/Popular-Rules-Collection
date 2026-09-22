@@ -1,0 +1,42 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: snap
+display_name: Snap
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 9
+  by_type:
+    DOMAIN_SUFFIX: 9
+rules:
+- id: 7b456a7dd0d4aa575cc0909b470f219f0b0b8c80f4a9ade76e428ae052ed554c
+  type: DOMAIN_SUFFIX
+  value: impala-media-production.s3.amazonaws.com
+- id: 1ff6c22db8232b0939db8dedfb5a53f0a095963b808788d057aa956d1f495fa7
+  type: DOMAIN_SUFFIX
+  value: sc-cdn.net
+- id: aea2d8018fa60d7e454f38dde7c95bde8f9641ec2dcb880f04637f1dfe6f005b
+  type: DOMAIN_SUFFIX
+  value: sc-gw.com
+- id: c8af1650b66f58885c946c41f889a92897148f3fb7d52499bedf8c80a981c3fd
+  type: DOMAIN_SUFFIX
+  value: sc-static.net
+- id: f5056db76d42dc40bd7fd98284af9e515275e03bd321c37cef312982aadfac37
+  type: DOMAIN_SUFFIX
+  value: snap-dev.net
+- id: 4d569585ba634f0a78ab3f6431c4c17c50e8bd931e2879c845809c8f5e4de7c3
+  type: DOMAIN_SUFFIX
+  value: snap.com
+- id: 1048ffc4cfec77ad5647e182cb13f54342d4d2f518e3fc1c008d1d301642b24a
+  type: DOMAIN_SUFFIX
+  value: snapads.com
+- id: 63b5b9431bc740288db86820c69f1d4152c068d3dd75080e0d53d242a5fe39c4
+  type: DOMAIN_SUFFIX
+  value: snapchat.com
+- id: 04e7a89b942c88ad882956ecf9d8b1dbd35c84bf9e3c33dd014f3acbcf78b955
+  type: DOMAIN_SUFFIX
+  value: snapkit.co
+provider: snap

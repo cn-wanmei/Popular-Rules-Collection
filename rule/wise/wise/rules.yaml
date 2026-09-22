@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: wise
+display_name: Wise
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: f64789adbd1095d2c980d658712a369dd9d5671846d661a2f2c5d457358cacfc
+  type: DOMAIN_SUFFIX
+  value: transferwise.com
+- id: 8dec40000998ad79728500e3be5ce3de4e9013d06646ab5191f01217d51b1944
+  type: DOMAIN_SUFFIX
+  value: wise.com
+provider: wise

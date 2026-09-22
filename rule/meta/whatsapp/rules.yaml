@@ -1,0 +1,102 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: whatsapp
+display_name: WhatsApp
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 28
+  by_type:
+    DOMAIN: 1
+    DOMAIN_KEYWORD: 1
+    DOMAIN_SUFFIX: 15
+    IP_CIDR: 11
+rules:
+- id: a24760e242e08f22a86e40e9e6c7ab16e331d24e9fe251531be92f2d52532918
+  type: DOMAIN
+  value: graph.facebook.com
+- id: 44aa77bf9d69ffdf08f3fb4ab26874c6b95896513dbf295e2693fb083a2be0e8
+  type: DOMAIN_KEYWORD
+  value: whatsapp
+- id: 2443b1bd82c841349a8c6ae95af55b7d09bf8107fc1286c1383d12b228c20733
+  type: DOMAIN_SUFFIX
+  value: bintray.com
+- id: a57af2cb82d75ba6a8f956a625c0f2d184181692936b6c52ee0f39f99311b22c
+  type: DOMAIN_SUFFIX
+  value: graph.whatsapp.com
+- id: 61ebcfa4350da53d08063e81ac1257b0cd26e8c95ad5cb56e3b7ca5f32773954
+  type: DOMAIN_SUFFIX
+  value: graph.whatsapp.net
+- id: d0e011130bc7aa24de8791599a711d33724de976bc15dd63836a3a86cff1e72d
+  type: DOMAIN_SUFFIX
+  value: wa.me
+- id: ed23c41c711e92496aea0ddc53464b90990ece9ca4660b76b4367f994c8a466b
+  type: DOMAIN_SUFFIX
+  value: whatsapp-plus.info
+- id: 8ad1d376d693fdd9cf67d44255cb3956f5c3c2cdae111fb478fa3e76e5e046e8
+  type: DOMAIN_SUFFIX
+  value: whatsapp-plus.me
+- id: 124cb2ff1cf3cdddc5353d6d49866e6f343644a60e26212250397cbb10e44121
+  type: DOMAIN_SUFFIX
+  value: whatsapp-plus.net
+- id: 2dc4d1d37b8d2090806a65b0f72da08b6a026bc1771d0c3287d7d7907af742dc
+  type: DOMAIN_SUFFIX
+  value: whatsapp.biz
+- id: a69e9d525b9ca6cdd979aa907000924a4c9e6491eb38ff24d89697c10835d6c0
+  type: DOMAIN_SUFFIX
+  value: whatsapp.cc
+- id: 8dfac9eb3e8019cde15aae4b53744cd677009a54d729bb9d1faeba07afb03a66
+  type: DOMAIN_SUFFIX
+  value: whatsapp.com
+- id: 42091ecbef456c38b780302e3ab1e33ab2796e98ead3c9a7a519df2366ee8b3d
+  type: DOMAIN_SUFFIX
+  value: whatsapp.info
+- id: 87cc4054cdada321027998062cee8574a1eb1033e233773acd63485aed3cbc6c
+  type: DOMAIN_SUFFIX
+  value: whatsapp.net
+- id: 579b5a4a8f7614d9678de17ff0e4ada2fa03fa4ac52c5dd22063cba36d05a1d1
+  type: DOMAIN_SUFFIX
+  value: whatsapp.org
+- id: a08cb603a1a501b4d5193428b63fa429bd0705d091002623225e731b336c7b92
+  type: DOMAIN_SUFFIX
+  value: whatsapp.tv
+- id: d9943c79196ca84c9bc9adb95322292ca6b69fe4ca40c099d9e9a1332d159fbf
+  type: DOMAIN_SUFFIX
+  value: whatsappbrand.com
+- id: 6bd962031297f5fe46c702221c97c9994c42f1af84997eafc02fea0e47b21651
+  type: IP_CIDR
+  value: 158.85.224.160/27
+- id: 31e6c7f6a889f6c4402456a688d76732dc1c690dc8f8a5da5d666a10b0226d2e
+  type: IP_CIDR
+  value: 158.85.46.128/27
+- id: 27757f64f3de2cfb1cbcd6a21b59ea57c7855f55b4f5e38ce339b6e7999e5575
+  type: IP_CIDR
+  value: 158.85.5.192/27
+- id: 7e10003df3a29078f49f589d8787de9dd56e8f82836472dc18de1c0d6d9efa20
+  type: IP_CIDR
+  value: 173.192.222.160/27
+- id: cbaaeb60a57ace3f3c2fe9fd63a90e0f0631f273d15fa12d1c51cde53dae6a46
+  type: IP_CIDR
+  value: 173.192.231.32/27
+- id: b26bdfd697cb286f3c5b331d7fe94b742e7b04c7bd2d02cadc579e63a076d203
+  type: IP_CIDR
+  value: 18.194.0.0/15
+- id: d19a9df9e00b976746da7dc4793de4022b66901f13036b009acd51d881beeaa9
+  type: IP_CIDR
+  value: 184.173.128.0/17
+- id: 2846f3e0448a37fe651fce3fb4d9286f5196030f43be4d14957239b8f1727954
+  type: IP_CIDR
+  value: 208.43.122.128/27
+- id: 7f88b01e555dcffc4eaca02d65b48041420c1e20330fe2b9f81b599d1096ec13
+  type: IP_CIDR
+  value: 34.224.0.0/12
+- id: 4b49f36cf0e3fd046b8d127321095932a4fa8de83a87b48d3139afe6566f0dbd
+  type: IP_CIDR
+  value: 50.22.198.204/30
+- id: 82d27354f13c150e62fa481b8bffa335f7f68f1812743fc630ade1f836018b38
+  type: IP_CIDR
+  value: 54.242.0.0/15
+provider: meta

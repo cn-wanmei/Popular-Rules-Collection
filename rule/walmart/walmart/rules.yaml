@@ -1,0 +1,45 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: walmart
+display_name: Walmart
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 10
+  by_type:
+    DOMAIN_SUFFIX: 10
+rules:
+- id: 436df271d40301fe2281a29e57a7cb150be1e3e1e11b9af00ff0b452c1c2d622
+  type: DOMAIN_SUFFIX
+  value: w-mt.co
+- id: 206911535fc95a746448a35e73855811c45b9a04b6913a6f9c6f33f08c9477b1
+  type: DOMAIN_SUFFIX
+  value: wal-mart.com
+- id: b74cd0a447dac59743b39d1ea4f45655f113baa91baeee47a50acb2eaad59aa8
+  type: DOMAIN_SUFFIX
+  value: wal.co
+- id: 1d0d4622b35494949fe161adbb1f3e5f2feff64d5f331d7fc82c0c40998954d7
+  type: DOMAIN_SUFFIX
+  value: walmart
+- id: 2136672e42ca8970e783061cba27f694a272007f1ecdd4a945c5590c69974c95
+  type: DOMAIN_SUFFIX
+  value: walmart-content.com
+- id: 03797311368f0119be2cd92af5f3299d4446bc06184e9efb7eba29ba866ebf71
+  type: DOMAIN_SUFFIX
+  value: walmart.cn
+- id: cb695a3be754ad84758b54cc75f7a70177cce62fb82996be0286c1583a8b584f
+  type: DOMAIN_SUFFIX
+  value: walmart.com
+- id: c60a811e125b11a2b202a8186c2c56232ea6d3f92e1adda4ee13ca80d0cac479
+  type: DOMAIN_SUFFIX
+  value: walmart.pharmacy
+- id: 5b352216ef7e106205c67dd19de38e449a41c884aa647593f0b449c4bea7460d
+  type: DOMAIN_SUFFIX
+  value: walmartimages.com
+- id: d6fccb8c0976f5df5779f8d3c3fc0ff86db45e51a8a478444d5da4bc84b78ee6
+  type: DOMAIN_SUFFIX
+  value: wmt.co
+provider: walmart

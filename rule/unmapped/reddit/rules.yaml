@@ -1,0 +1,59 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: unmapped_service
+id: reddit
+display_name: reddit
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 15
+  by_type:
+    DOMAIN_SUFFIX: 15
+rules:
+- id: bba0751f0c9b916b7b7a0a273567103db623aa5e88412ad8f6609104b254e2e8
+  type: DOMAIN_SUFFIX
+  value: redd.it
+- id: 321dfbb52d63f242b181bee5b5097e94fba441ca8c7c065b3a35c2e3dd20d93f
+  type: DOMAIN_SUFFIX
+  value: reddit.app.link
+- id: e35f34daf0aaec7689471ca4c242d164a3f5139e8e0f182a93cdcabae51da0c2
+  type: DOMAIN_SUFFIX
+  value: reddit.com
+- id: 25f853d992e3f8331133e2ce1de34da717157c92ea45d62373074694c96f4d0e
+  type: DOMAIN_SUFFIX
+  value: reddit.map.fastly.net
+- id: 9aaeaa47f001367c67e2a102b5a745bf1059f10370c42fc3fcfcb2c3d3f33b07
+  type: DOMAIN_SUFFIX
+  value: redditblog.com
+- id: 1dee16fa6e1f9be17b3273f1c3e59c5954b9667a458b99ff218e0875a18b3ba0
+  type: DOMAIN_SUFFIX
+  value: reddithelp.com
+- id: 2051c20f8b2cb1ad7744441d79263fdec8ffe88d5fe7fbd97c2a1f0ffa23e5f8
+  type: DOMAIN_SUFFIX
+  value: redditinc.com
+- id: b11de55e685b61340f2017366aaaf2d854236a8fb3f9fa498316c12c0559a373
+  type: DOMAIN_SUFFIX
+  value: redditmail.com
+- id: ee42f44c0e4e36b907df96969c5b6f05936aa14c3272dd1099e51347d1a9089f
+  type: DOMAIN_SUFFIX
+  value: redditmedia.com
+- id: b256d03a9e7ecc7a2ebca3d25a862ffb347d6257b1daff813057984eb4efeecb
+  type: DOMAIN_SUFFIX
+  value: redditspace.com
+- id: 29b82a7575d2988a4afe7faf7a8f7c16f556ed756dac1df81e16e58b0f3681fe
+  type: DOMAIN_SUFFIX
+  value: redditstatic.com
+- id: 48682837e869e0c6ec7d80605e82ed377d1e75ac86aae589e9a15cb4d46d8c04
+  type: DOMAIN_SUFFIX
+  value: redditstatus.com
+- id: 68a6a3e6b78f763d405ea3f84f4bb29808f3ab964523fa51460d47c7af55e399
+  type: DOMAIN_SUFFIX
+  value: reddituploads.com
+- id: 532f702cd9b7ed480c6c7b9e1ddac62e8fdf04f50137b2d2d46f9fb44d7e5e09
+  type: DOMAIN_SUFFIX
+  value: reddituploads.com.cdn-cf.behance.net
+- id: 7ce42149a3b0b957ff2ecb20e9a16fd6c93d453cca383e8f554b2366b662ce4a
+  type: DOMAIN_SUFFIX
+  value: reddituploads.com.cdn-cf.dropbox.com

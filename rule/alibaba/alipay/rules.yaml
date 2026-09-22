@@ -1,0 +1,79 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: alipay
+display_name: Alipay
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 21
+  by_type:
+    DOMAIN-KEYWORD: 1
+    DOMAIN_SUFFIX: 20
+rules:
+- id: eba29f2dc4b8ef803d10639395fbacee2d0df533d068009d4c504a34010cae30
+  type: DOMAIN-KEYWORD
+  value: alipay
+- id: 07089b406bd528626fa435215668065a92736eb5ea9c36888f0b4a6ab2f0a82f
+  type: DOMAIN_SUFFIX
+  value: alipay-corp.com
+- id: 5e0380111fba12ac2543e46ba79d94db454b103a6b1d0a60a895c2aa1c0f5ffa
+  type: DOMAIN_SUFFIX
+  value: alipay-eco.com
+- id: 5dde87d2f1c14f2cc32d60dd635c5c7a9f98dd3eed440050c89c629ec7314e0a
+  type: DOMAIN_SUFFIX
+  value: alipay-inc.com
+- id: 7eee8bcdae44bcc6efa37d0f2653624787a676251bc9e70f405afed24a7fb977
+  type: DOMAIN_SUFFIX
+  value: alipay-traffic.com
+- id: bd007c955068123c20b8cebc0cd2aa077857299bedf3c4cdc3bc18bf31eadf46
+  type: DOMAIN_SUFFIX
+  value: alipay.cn
+- id: 03cfc9e7b93d90c92cb5535a7740434bc1e523565ba7437c74961f31282e8077
+  type: DOMAIN_SUFFIX
+  value: alipay.com
+- id: 4378ddce3ed19875ac997c41cf3f8b2e7243ebfa12bc4dcbadfb28f15494fc55
+  type: DOMAIN_SUFFIX
+  value: alipay.com.cn
+- id: 6f1edc3596bb7c1ad785c7846d8cd6589d445e1603dc0fb68fe3ba2d90e569aa
+  type: DOMAIN_SUFFIX
+  value: alipay.hk
+- id: d5e19e2b892aaf55f89d6c431dac03479ed6a98776d028c9c4384cd6ee9b4ecf
+  type: DOMAIN_SUFFIX
+  value: alipay.net
+- id: 4ec0229b037537b40cc1fe8e924fc9d780ddef442b9c6d8d0d70d7b3ed16a8ec
+  type: DOMAIN_SUFFIX
+  value: alipaydesign.com
+- id: 1b834e0689d8160aaba48fe401dba887065a99fc526d59371116f5d475105d0f
+  type: DOMAIN_SUFFIX
+  value: alipaydev.com
+- id: 0c7a75890de1eb68ce4e57d25af6c17854f6cb635b2b9ff7f0be7b2cfe23d2e1
+  type: DOMAIN_SUFFIX
+  value: alipaydns.com
+- id: 7bf9c6aa844619d45341e290e0674a93a96fbfdba37a60ab11813b8c225d8d77
+  type: DOMAIN_SUFFIX
+  value: alipayeshop.com
+- id: 7c5faa875040f6511379103d1e837c4d07c5c4c6636fa2dd318bd3cc4f610ca5
+  type: DOMAIN_SUFFIX
+  value: alipaylog.com
+- id: 6671785c5f76215a2348559d530c984b06a518fd225bea02ebdd10f6fb609a61
+  type: DOMAIN_SUFFIX
+  value: alipaymo.com
+- id: 1a1fbe06b4e5e9af36946dab3096994548525c986f28b066ef12f78f27b8be30
+  type: DOMAIN_SUFFIX
+  value: alipayobjects.com
+- id: 5a29effd9a2af949314399600c03885d845f0054ef9f22722225b09e62c58912
+  type: DOMAIN_SUFFIX
+  value: alipayplus.com
+- id: 8e394f72d881d2c778b7adb412275d070e131d5eccea09b7bba8f06a01f3e1ab
+  type: DOMAIN_SUFFIX
+  value: ifaa.org.cn
+- id: 0cbd21f8e027101d73a0ede011481bc1c963ca33c4c8ca5c005728bc59bda9ce
+  type: DOMAIN_SUFFIX
+  value: luohanacademy.com
+- id: f52a497a37a749c8cfa1472a07a065ff6492e1159c96df84971cb72ab3f9e453
+  type: DOMAIN_SUFFIX
+  value: sinopayment.com.cn
+provider: alibaba

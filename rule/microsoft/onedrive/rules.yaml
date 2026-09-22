@@ -1,0 +1,71 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: onedrive
+display_name: OneDrive
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 18
+  by_type:
+    DOMAIN_KEYWORD: 3
+    DOMAIN_SUFFIX: 13
+    PROCESS_NAME: 2
+rules:
+- id: 7298e188100e8ac23d197f70e1485885473271387c45f15c80c5421e9b3293d3
+  type: DOMAIN_KEYWORD
+  value: 1drv
+- id: f11cbc4285345042217453f78420a35d5d17af34747588773c7498c69c72682e
+  type: DOMAIN_KEYWORD
+  value: onedrive
+- id: 4c113367ea63f18d210d164693d3e026a60de7cc7328090ef214b168779ff198
+  type: DOMAIN_KEYWORD
+  value: skydrive
+- id: a5b3e537fd1b7eb5b32de2d2edf11e6845fbd321ed9997000557528cce84d1d2
+  type: DOMAIN_SUFFIX
+  value: 1drv.com
+- id: 2cf6bee3d44fd1d464d034ea6f179db5ae22e4120835a173ff0f7a45fdf8230f
+  type: DOMAIN_SUFFIX
+  value: livefilestore.com
+- id: 8486f2f41cb77bdd0ef62b9f8bf91f3d3b094e4be62d4a1a1f8c94f8acb7293c
+  type: DOMAIN_SUFFIX
+  value: microsoftpersonalcontent.com
+- id: 51a3ee2b09b09e635002247d18e4c048e9120c7dbb4a5a6144d5620fbec76811
+  type: DOMAIN_SUFFIX
+  value: oneclient.sfx.ms
+- id: 72cf6e7384991af6101bcfb279ec2daea7df7ff3fdac7e46e83b279b68dbd449
+  type: DOMAIN_SUFFIX
+  value: onedrive.com
+- id: 8330117238ca4b4af9a768dcac4cc2ec3dc42913e6102e62cc547b7d44d930c3
+  type: DOMAIN_SUFFIX
+  value: onedrive.live.com
+- id: 2661e2c0f7c7e1a0c51c733d081c98e2a910c44492d06b3200f4804bcc617908
+  type: DOMAIN_SUFFIX
+  value: photos.live.com
+- id: 059dc048cea4d99f94769ab29f64095746ea334858401eeca9825c6d124dba34
+  type: DOMAIN_SUFFIX
+  value: sharepoint.com
+- id: 907fe42f221d70cbed61228c8a0ad00fdded6599e6125def3973853e0c6afae8
+  type: DOMAIN_SUFFIX
+  value: sharepointonline.com
+- id: 6dc48ed5a96429705561e08276e0a88533dad8efdf937158368e4f488f712205
+  type: DOMAIN_SUFFIX
+  value: skydrive.wns.windows.com
+- id: 99a3c068193f04f8305b2f6a91738d0b7802e205dd52b4972ae2ad412aeb9c8b
+  type: DOMAIN_SUFFIX
+  value: spoprod-a.akamaihd.net
+- id: 5313b0fe0f41dd1b5f5604af28e95d4975d6757ed7df5aef80c14c2fdae9c57b
+  type: DOMAIN_SUFFIX
+  value: storage.live.com
+- id: 26e7a7de729775cf954b33863c4f880e0f17c123fe0b42691012ddce00473416
+  type: DOMAIN_SUFFIX
+  value: storage.msn.com
+- id: 1f9c4b5530550f020332c38ac3af8c5692986f0000f4324059a9e47eab0fbd45
+  type: PROCESS_NAME
+  value: OneDrive
+- id: ae36e97e7305f1dd0de319a1fc92173ddc3a1ad281122cac61fa2e0b6acc800f
+  type: PROCESS_NAME
+  value: OneDriveUpdater
+provider: microsoft

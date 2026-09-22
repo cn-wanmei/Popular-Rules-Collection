@@ -1,0 +1,28 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: appstore
+display_name: App Store
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 4
+  by_type:
+    DOMAIN: 2
+    HOST: 2
+rules:
+- id: df916758be586f07392fe3a6a5d00779fc3ea3110ebd6c1eff685b670c85c3d2
+  type: DOMAIN
+  value: apps.apple.com
+- id: 33a8e066922f3f7eea376724ca09ce2a31e0aedba34314fa18ee7aeb66042c59
+  type: DOMAIN
+  value: itunes.apple.com
+- id: 1e98d9e8aa660f53d3c671acb5c8e3fa0555edf9686cb316ec07dd5248fbf9fe
+  type: HOST
+  value: apps.apple.com
+- id: b5c0786d3563e6fe8cbe905c2368f8896e7b75b1cdedcde4e0e6fea4569473a1
+  type: HOST
+  value: itunes.apple.com
+provider: apple

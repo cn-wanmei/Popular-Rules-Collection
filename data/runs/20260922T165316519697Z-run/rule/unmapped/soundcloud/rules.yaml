@@ -1,0 +1,29 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: unmapped_service
+id: soundcloud
+display_name: soundcloud
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 5
+  by_type:
+    DOMAIN_SUFFIX: 5
+rules:
+- id: e60e4900df712bbd8836af2f22a1f92613c527185c981425acf6ac0a388f558c
+  type: DOMAIN_SUFFIX
+  value: p-cdn.us
+- id: 3bb3b7de2bb5f336a82db258416c87df179372ee118f2fcdc957bbbd8c3bd463
+  type: DOMAIN_SUFFIX
+  value: sndcdn.com
+- id: b9c6ebb7ac40f255fbf47afe7ef373b602bdac5527e98a9c3f45707bb120cbdd
+  type: DOMAIN_SUFFIX
+  value: soundcloud.app.goo.gl
+- id: fd09584692b2c9b59efb66c88e097176580534cb024751187aff20c57745a5fd
+  type: DOMAIN_SUFFIX
+  value: soundcloud.com
+- id: b6e99d0b2b360c71a924d8e66f645ac88ab0ad5c40497ae36d8f25c482156235
+  type: DOMAIN_SUFFIX
+  value: soundcloudmail.com

@@ -1,0 +1,57 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: taobao
+display_name: Taobao
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 14
+  by_type:
+    DOMAIN_SUFFIX: 14
+rules:
+- id: 8cfc860a46f9e30c677c46761139e8c0373b3e98917be559fc819f56545d629c
+  type: DOMAIN_SUFFIX
+  value: alimarket.taobao.com
+- id: 5e9df087c620df8a4f5aa59f9ff310d7d1c19923e6925e78c652435bf9187b2c
+  type: DOMAIN_SUFFIX
+  value: eco.taobao.com
+- id: a03284dea16ca702ae94659971863cab9679f3de81b6c2932e7d66a1a255e94f
+  type: DOMAIN_SUFFIX
+  value: gw.api.taobao.com
+- id: 01cf869e97310852a5f5c8e54bcfcc4747f61c0a9e1e728f4da4a738ad95daad
+  type: DOMAIN_SUFFIX
+  value: ju.taobao.com
+- id: b138c93b3ba66436a45deac49c49ef3b49f31a667557a7087c41ddcaeb5730e3
+  type: DOMAIN_SUFFIX
+  value: login.taobao.com
+- id: 05440d6eadc21a00a0c90dd236f1c8a02db7adfe0f4d104bb62da21e4a906ae2
+  type: DOMAIN_SUFFIX
+  value: my.open.taobao.com
+- id: 2efb5b96639e0d134a3ce8ed8e771334c3214e71f3996661323625e03c6d4324
+  type: DOMAIN_SUFFIX
+  value: oauth.taobao.com
+- id: 22f4b82d6d25b662d139aa0544b93f3fa2ec066d02fb92a203708686ddedb68d
+  type: DOMAIN_SUFFIX
+  value: open.bbs.taobao.com
+- id: d99c796850e02449b4ee4f315663f71feba496301e52464ce981e99cadd2aab3
+  type: DOMAIN_SUFFIX
+  value: open.m.taobao.com
+- id: 6b7a7f80f74dcf309541dc04ad24005cc9a6216e84798566ec97e3d117331bf3
+  type: DOMAIN_SUFFIX
+  value: open.taobao.com
+- id: 539c16684cf890eed3fd178e59333248ec66b9b04c3efd8788c70d08ac104e18
+  type: DOMAIN_SUFFIX
+  value: tbk.bbs.taobao.com
+- id: 92b88d1cd7db2d9640209d2b9b3ab9d3ba7432bc5a6a535800ad3897481c2cb2
+  type: DOMAIN_SUFFIX
+  value: trip.taobao.com
+- id: b58a50364690670865606b52d31df6c408df9e3402809b6cf314137c3eba20b5
+  type: DOMAIN_SUFFIX
+  value: work.open.taobao.com
+- id: a2f1452774677bf4269635db3426bdc98e48fb723c35552f7e1ce490e91adf15
+  type: DOMAIN_SUFFIX
+  value: www.taobao.com
+provider: alibaba

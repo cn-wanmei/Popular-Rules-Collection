@@ -1,0 +1,32 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: unmapped_service
+id: minecraft
+display_name: minecraft
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 6
+  by_type:
+    DOMAIN_SUFFIX: 6
+rules:
+- id: 4d861decc1b736ea02928baf9904bd23414314e7c7b0c7af64ce128925b7b67e
+  type: DOMAIN_SUFFIX
+  value: callersbane.com
+- id: a19877ff5e422c77361fb96406a1e053268fa2a6ac9be274a07304a2941e3bb3
+  type: DOMAIN_SUFFIX
+  value: minecraft-services.net
+- id: cacec4ca5e549d160d79618d26f78dc8ca5db5cd5a781d864bf97745c4ef1fbb
+  type: DOMAIN_SUFFIX
+  value: minecraft.net
+- id: 8501439c0c5a6f290d44cb01450422de29718213566ea61609959a69699417d1
+  type: DOMAIN_SUFFIX
+  value: minecraftservices.com
+- id: d3c68fe7d4fb826687158b2c43cb8f16538ac99e4f6894af12f5fd65c18258cd
+  type: DOMAIN_SUFFIX
+  value: minecraftshop.com
+- id: fb4b74e49e014e02001acb4c686ef0a05726ea2eb71f12e95dc823372a4d6750
+  type: DOMAIN_SUFFIX
+  value: mojang.com

@@ -1,0 +1,83 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: unmapped_service
+id: pinterest
+display_name: pinterest
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 23
+  by_type:
+    DOMAIN_SUFFIX: 23
+rules:
+- id: 0519485911fe89d2def72f44fee7358547c07c1af00ca8d68a845aa1c1076114
+  type: DOMAIN_SUFFIX
+  value: pinimg.com
+- id: e7dd182eba74be75fbfcc464dc315a712b591af70a48fda7ade7266dc81b41c8
+  type: DOMAIN_SUFFIX
+  value: pinterest.at
+- id: 06fe96a93223e9fe17fbf2533904dfadf3817f0ae19bab412399156c63ad8e16
+  type: DOMAIN_SUFFIX
+  value: pinterest.ca
+- id: 684ce94ff1a2f0025d9fb5199167631f7a9171a1e97e335299b5da00e70194a6
+  type: DOMAIN_SUFFIX
+  value: pinterest.ch
+- id: c907cec35de35443e85dd4135eeeee87adce48c916b2409dd5d7acd96d13c609
+  type: DOMAIN_SUFFIX
+  value: pinterest.cl
+- id: 25983afb829c5c8969ec477a832a984532385b1761105789328feea8b4a85b8e
+  type: DOMAIN_SUFFIX
+  value: pinterest.co.kr
+- id: 102e96a6eae50b882bf27dc88a6bc8c1125dbbb4606cd7a2ecc3fde1db25de61
+  type: DOMAIN_SUFFIX
+  value: pinterest.co.uk
+- id: e99bd35944360252ca2a054633e087a9007af79b3b3ec66bf2258aed067740d5
+  type: DOMAIN_SUFFIX
+  value: pinterest.com
+- id: d3a0c53018384729ac1873f081b799d1f4b9650e9b5e82e133f3a49c977a1df8
+  type: DOMAIN_SUFFIX
+  value: pinterest.com.au
+- id: fcf274bad2834e72f48b95316f324cc0ccb3b3e1740022057df83eba5777b78f
+  type: DOMAIN_SUFFIX
+  value: pinterest.com.mx
+- id: 9978e0e166641d3884a20a69d95747dd5e0abba820e9d123bfdeef5df6e914b6
+  type: DOMAIN_SUFFIX
+  value: pinterest.de
+- id: 815b8d7939ec323adbbe9a56bb294c34440dae70ee3129a0a7f2e491c1686ce5
+  type: DOMAIN_SUFFIX
+  value: pinterest.dk
+- id: b2026e227d59b3d99a39a0398ce03992df2097252df34bcc8f42ae269d4ab102
+  type: DOMAIN_SUFFIX
+  value: pinterest.es
+- id: 133f0f457de24790ef7c3c4b6d39cdc5078a71d9fb549edd67787d7dafc451e1
+  type: DOMAIN_SUFFIX
+  value: pinterest.fr
+- id: 0699fab1f595507437c1fa7aafca8b4c937879d616695e5136e2596b0d3a44f6
+  type: DOMAIN_SUFFIX
+  value: pinterest.ie
+- id: 2eb0aaefe8a9009fd95d5036aa739d20f03d40863aea7f236204b8d6db97714e
+  type: DOMAIN_SUFFIX
+  value: pinterest.it
+- id: d7baf69a7e146dd9c66e9e92139864753e14f3546b49e4958062b33e6e729281
+  type: DOMAIN_SUFFIX
+  value: pinterest.jp
+- id: 2eee6048bc4cac20d7801db53f2e0d728574d3520960d9e9940e9402e4b43692
+  type: DOMAIN_SUFFIX
+  value: pinterest.nl
+- id: c5fbd4c9e1ffb7b0ce9f610bfe12000858f2c2da8a08ea4c84f1f2ae6f49a6d9
+  type: DOMAIN_SUFFIX
+  value: pinterest.nz
+- id: d5588fb95f79266c8a0f521bd672cc8dfd93bbd93e3e199407047cac1225f099
+  type: DOMAIN_SUFFIX
+  value: pinterest.ph
+- id: cb4ff46c8de27dbe57741a9c3491407194ff3b80d15a1124f68162570829877b
+  type: DOMAIN_SUFFIX
+  value: pinterest.pt
+- id: 60ade4b303b603dc693aeb0fc2f59779b56c21fbe2df78d6bdccce40f3039132
+  type: DOMAIN_SUFFIX
+  value: pinterest.ru
+- id: 151824d3fee278d4e912649e0823264fafd307e4c5563e32b6182461f64a96dd
+  type: DOMAIN_SUFFIX
+  value: pinterest.se

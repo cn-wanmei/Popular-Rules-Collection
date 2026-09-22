@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: qqmusic
+display_name: QQ Music
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: baa44a31beb52f978edf87ee15a471aabc5b43a7edd7546db5e8480df31049c2
+  type: DOMAIN_SUFFIX
+  value: y.qq.com
+provider: tencent

@@ -1,0 +1,41 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: appletv
+display_name: Apple TV
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 8
+  by_type:
+    DOMAIN: 6
+    DOMAIN_SUFFIX: 1
+    PROCESS_NAME: 1
+rules:
+- id: da3a786023b631e80b6aa525a5af4f5e37937cce08717780436391616b764ddc
+  type: DOMAIN
+  value: hls-amt.itunes.apple.com
+- id: 6328c66e90d952b64563b2197aa55cde5bc72a2f51737ee89ea5242f94073352
+  type: DOMAIN
+  value: hls.itunes.apple.com
+- id: 5c5c606b8fbc7808217275bb4a8f9e1bf7dc3b6ff9c6cb233eb3bba442932353
+  type: DOMAIN
+  value: np-edge.itunes.apple.com
+- id: 7aaf3cd22489f734090ae87e5928f4b3352b3a26d611388b745a1bed28fcbe79
+  type: DOMAIN
+  value: play-edge.itunes.apple.com
+- id: 7db444470492f3bf3e282dfba3f7207e78ccef87b19f1806f5d8e08118fe4d41
+  type: DOMAIN
+  value: tv.applemusic.com
+- id: 6cd1a382fe5a65a706b2f2f84e8e36acb761b65bd0b60f54e3058114bf240574
+  type: DOMAIN
+  value: uts-api.itunes.apple.com
+- id: a99ea65487f4068a310b560eb71f7c56ac32e4fbe8fa18b781ba132b591506d4
+  type: DOMAIN_SUFFIX
+  value: tv.apple.com
+- id: 16eff6e09a2edaa00d637a253af16a976bf0ac030c73bf7a99d4e8eaaaf76115
+  type: PROCESS_NAME
+  value: TV
+provider: apple

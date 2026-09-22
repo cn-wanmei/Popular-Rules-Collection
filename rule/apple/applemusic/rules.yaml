@@ -1,0 +1,47 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: applemusic
+display_name: Apple Music
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 10
+  by_type:
+    DOMAIN: 6
+    DOMAIN_SUFFIX: 3
+    PROCESS_NAME: 1
+rules:
+- id: 1adf1471a5736827df63db1ba124218bfac21c97227def5e30dab7c9c976158f
+  type: DOMAIN
+  value: aod-ssl.itunes.apple.com
+- id: 899fd095d09f2ec6e1ac70d230c9ce859f9d9f3ab5f1443c13af3955badfa78b
+  type: DOMAIN
+  value: aod.itunes.apple.com
+- id: d1e0c6d6c32d2d4b4277da824db24cb1cd84b909a717258ac017aafc3d041679
+  type: DOMAIN
+  value: audio-ssl.itunes.apple.com
+- id: 2135b6edc6018a70758e6de201b009afa650747cdb33eae4e85f4a3ca27dbd9b
+  type: DOMAIN
+  value: audio.itunes.apple.com
+- id: 9f87aa49405e0d5f8a177f13eef090544366726e3204258611885d56ac419a28
+  type: DOMAIN
+  value: mvod.itunes.apple.com
+- id: 5bc59ebe59e154d4be6efcca97d45c1ef45d7118d0c9ff99076406bb5de21f86
+  type: DOMAIN
+  value: streamingaudio.itunes.apple.com
+- id: 4ea3a2ba17c0888f81c2b42c747fe35c8048560bc14718ef3f9b6dea0b1f9cb5
+  type: DOMAIN_SUFFIX
+  value: applemusic.com
+- id: 9e455c65b0edaa36a1d68da227cb380ede5c6a36111015374a861453eb1d1c20
+  type: DOMAIN_SUFFIX
+  value: blobstore.apple.com
+- id: ea19978d4fd5fa6a2dc6acd13bd8b1851e2769697adbdb0528958183a82f7ac6
+  type: DOMAIN_SUFFIX
+  value: music.apple.com
+- id: c275b6e3f3ad7c7baee980c5e6440f3695c94ac477e1eb768247979f2168eb0e
+  type: PROCESS_NAME
+  value: Music
+provider: apple

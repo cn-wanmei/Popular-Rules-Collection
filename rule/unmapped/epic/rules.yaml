@@ -1,0 +1,59 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: unmapped_service
+id: epic
+display_name: epic
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 15
+  by_type:
+    DOMAIN_SUFFIX: 15
+rules:
+- id: 5f158bc9d48025266e7fa5e067dfb1fa94df362444cf901919b8333b25dbc532
+  type: DOMAIN_SUFFIX
+  value: battlebreakers.com
+- id: 7061766e40f6e23928cae30cf61d2744ed5ed599c236904a86661edc38936090
+  type: DOMAIN_SUFFIX
+  value: eac-cdn.com
+- id: a73523acb2354614a90f18dbba283a107d051e8f5a95afc24c5708f5abf2f10c
+  type: DOMAIN_SUFFIX
+  value: easy.ac
+- id: b660bb1de49272152791470a306a2ead50efbe50a7a87ac667c5990647abd00c
+  type: DOMAIN_SUFFIX
+  value: easyanticheat.net
+- id: 631eac525aa29871e8ca9c8734e3eb3c55e51f795e65a374a120dbb8907217b1
+  type: DOMAIN_SUFFIX
+  value: epicgames.com
+- id: 223540b5215c84a24cd56f55d034f07d627709666102910635edfb72385a461a
+  type: DOMAIN_SUFFIX
+  value: epicgames.dev
+- id: 12b3d47d150fcc0d860b3249f78694e87099d3f2e3635d39033eee79ff304df0
+  type: DOMAIN_SUFFIX
+  value: fortnite.com
+- id: e4a44992b8404c48a39259b8d1085cda8443256a5fbdf2fd3783e3c80488f379
+  type: DOMAIN_SUFFIX
+  value: helpshift.com
+- id: 61812a97a8ca6fea7b61f592110996e8ae55b9efd6024344f4cd3aa4f8f826f2
+  type: DOMAIN_SUFFIX
+  value: paragon.com
+- id: 579c24cb6a8eab5034f01c0d3e58fc1c53f057f604987ed45711b6be96990b52
+  type: DOMAIN_SUFFIX
+  value: playparagon.com
+- id: 5b9fdca476ff38fb207b17e412539a2a6e39fb66e48e74edae7ffd3ecba6293a
+  type: DOMAIN_SUFFIX
+  value: roborecall.com
+- id: 9b33de1d32905416e57f3d6c1525532d97e53bc4de701240dd4816bfa4b9f5ca
+  type: DOMAIN_SUFFIX
+  value: shadowcomplex.com
+- id: 5e5454706f048d04f5b6ee987f548fbb880ccd0d4a849811ae724c7cbfacdb6d
+  type: DOMAIN_SUFFIX
+  value: spyjinx.com
+- id: 5363d71e5bbf6c5f0f6511b3e1292bb71f8cf4e7456e3971d1dae0ad42bff0cc
+  type: DOMAIN_SUFFIX
+  value: unrealengine.com
+- id: 96ea0254926790fef2491124bb10fb0e8b8458269e3ad5362c2fa30e82151501
+  type: DOMAIN_SUFFIX
+  value: unrealtournament.com

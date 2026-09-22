@@ -1,0 +1,60 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: hoyoverse
+display_name: HoYoverse
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 15
+  by_type:
+    DOMAIN_SUFFIX: 15
+rules:
+- id: acee08a16e2387e65ce33e79b125d59cf40edcf2d143a0d4847398276fae766a
+  type: DOMAIN_SUFFIX
+  value: bh3.com
+- id: 5fcac1831a1aedb24fefd6ae287bb33385dbff4c4f6e8ddb2225a7cde9dbf763
+  type: DOMAIN_SUFFIX
+  value: genshinimpact.com
+- id: e5d7cfe2a3ead3f5a7739d255abd65095aa6b83010a74b0fb8a291133d1a451e
+  type: DOMAIN_SUFFIX
+  value: honkaiimpact3.com
+- id: f9a9cdd53512283f2d5f3555fbecb89ba815d346a26bab85acecd8e0e30085ef
+  type: DOMAIN_SUFFIX
+  value: honkaistarrail.com
+- id: a1fc7aa501e5e95d7feefebbe9036826102e978d1fd2ae3baba7d4c86b27acd7
+  type: DOMAIN_SUFFIX
+  value: hoyo.link
+- id: 8ba17c710ec678ae01ff01c0fc2578a571ed2774990b375495d164c6fc5fc4b5
+  type: DOMAIN_SUFFIX
+  value: hoyolab.com
+- id: 25da7f1dd436a9be150af989b58d0d1d8d4197d02b77a7322bed638eaff40bc5
+  type: DOMAIN_SUFFIX
+  value: hoyoverse.com
+- id: 11f1771fada5af88d6e7d43e75125b0848a941583f9e47619add9fc40b13924c
+  type: DOMAIN_SUFFIX
+  value: juequling.com
+- id: 8f0fdbcc1bb05e80a6814edb43d3af9c61732c93cdbe2208b3032c6117cbc532
+  type: DOMAIN_SUFFIX
+  value: mihayo.com
+- id: 3a0b9f3ffc58ea91c1a66174d8fbb7e791d7a4a28be790015189f19309fc7ea4
+  type: DOMAIN_SUFFIX
+  value: mihoyo.com
+- id: a1ff9d5d791ce414f6ccfa8a5472a2700c930783c5e7eeebea152daeb54e93ff
+  type: DOMAIN_SUFFIX
+  value: miyoushe.com
+- id: c48e708534be4153c4eb9563b62e019954c4d188c0fef9bc059cc59837ae6daa
+  type: DOMAIN_SUFFIX
+  value: n0vadesktop.com
+- id: 09f9a2349e86c438ab11cb0e548a05a51f2b1a162264e3bb82c520c66b62877c
+  type: DOMAIN_SUFFIX
+  value: starrails.com
+- id: 24cbe61f4e7fc6a2c819f45a276ad4e45bc0b2eb42b0d90b8c4fe8e738ebf5cb
+  type: DOMAIN_SUFFIX
+  value: themisweeps.com
+- id: d2f11fcbfb4380ebad0fe70fdcbf1e4a209f033e67318151db946dc045e2c68a
+  type: DOMAIN_SUFFIX
+  value: yuanshen.com
+provider: hoyoverse

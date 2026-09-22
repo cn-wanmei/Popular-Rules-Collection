@@ -1,0 +1,95 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: unmapped_service
+id: oracle
+display_name: oracle
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 27
+  by_type:
+    DOMAIN_SUFFIX: 27
+rules:
+- id: b221cf821da685e0e8fc25c1efc40e909700ba93fe3b3c88b40b119822c57f2c
+  type: DOMAIN_SUFFIX
+  value: a1cbafa5ea9a6480cb8e9ffba46cbad9-466059813.us-west-2.elb.amazonaws.com
+- id: c2d7f081aa33bc5d69428c67c2a98b4030425dea36327d937f13cbd9b0075bcf
+  type: DOMAIN_SUFFIX
+  value: addthis.com
+- id: 46392a6784f2767b8bff5cace2ddafd0f76d0158558f1f4a2c1fd2d069c1db0a
+  type: DOMAIN_SUFFIX
+  value: addthis.com.edgekey.net
+- id: 47c3fdf4dabf030ccb2a5706a73c73620b014950be66018f1696e99745315574
+  type: DOMAIN_SUFFIX
+  value: addthiscdn.com
+- id: c0ff4d79367873410841fcf4ad474c03da99b9b686be94915217d98c969809dc
+  type: DOMAIN_SUFFIX
+  value: addthisedge.com
+- id: 878344d9054d2449267815d1067321fc6b2132376adb18f3e760b9370a38307c
+  type: DOMAIN_SUFFIX
+  value: ateam-oracle.com
+- id: d1833b5024de839d36fc8e74546f562528fb94477bc3bb5c43633f8a6ffea3cf
+  type: DOMAIN_SUFFIX
+  value: bluekai.com
+- id: 9df95359bd9cd41c3b646156cba7e8b4f1080d25adef570bf8bef26fa07b90f5
+  type: DOMAIN_SUFFIX
+  value: bronto.com
+- id: e757601b7e5374db1e3825fdd857203b1557bc3464c8003b1348fd38ff7fc699
+  type: DOMAIN_SUFFIX
+  value: covid19-rx.org
+- id: 5f5416ef88650f2d9330748498db118b598d74bf1cfce41d13ba15447fd85b77
+  type: DOMAIN_SUFFIX
+  value: covid19rx.org
+- id: 19440a0c35c1c14e9217bec2e5ad2e918f34abd85994a31c6484784b72da40b4
+  type: DOMAIN_SUFFIX
+  value: custhelp.com
+- id: 875818c5ffb33aadab7a738df9e291e2432f9a5b7bbe043313017b5ca55ad90a
+  type: DOMAIN_SUFFIX
+  value: eloqua.com
+- id: 65f1c63b6a97bec0b870cedde246a6da52e498935c0dfb882585bf1496f6a429
+  type: DOMAIN_SUFFIX
+  value: eloquaeditors.com
+- id: 5820709296f02190417b4434b53b9a601ce68d834bf8fb90641820f9a6bd9af4
+  type: DOMAIN_SUFFIX
+  value: eloquapreview.com
+- id: 7317aae8d694baeff5aa6a3cff20163433956f87a568ee54bc27ba9223c9e414
+  type: DOMAIN_SUFFIX
+  value: en25.com
+- id: 2515bd5c7dafbf43a53adbb548e13b78c49169bb6e6e3d77ffc601113c2ee8a2
+  type: DOMAIN_SUFFIX
+  value: java
+- id: 802b28fb6ebf5431426b8d1fe2850f45793e899b7ae0a1a2f63cd7e401a8ae30
+  type: DOMAIN_SUFFIX
+  value: java.com
+- id: d154c662c119647be4618cbecd863e334ccacfa4cd661132d919faf47d747a83
+  type: DOMAIN_SUFFIX
+  value: java.net
+- id: 68227d572f991b181128f84fca8ae049b298106511c4113c0d235cd61460e72d
+  type: DOMAIN_SUFFIX
+  value: oracle
+- id: 3ec90a6526d9c50f36b82aa96ff290165e0e1c6372e11e4f2827ed2dedb05423
+  type: DOMAIN_SUFFIX
+  value: oracle.com
+- id: 6476e747fd0d1ce76931988db915a4e7959cd1db2ef7a73b9b5665dcebdb3966
+  type: DOMAIN_SUFFIX
+  value: oraclecloud.com
+- id: 6d7117a8f2e6d847342a628964e8e759a4b4b1577cb6e9736ed4f2fccdd47ef3
+  type: DOMAIN_SUFFIX
+  value: oraclefoundation.org
+- id: aa75acf10477938dfe3fa38378dd23b28664707793404595c684ac3270024e6d
+  type: DOMAIN_SUFFIX
+  value: oracleimg.com
+- id: f1b5e65ff1c2507a4eea9422975f9cd38c8e3a8ac539e5bc32ab86ffd4d9827d
+  type: DOMAIN_SUFFIX
+  value: oracleinfinity.io
+- id: 13a78fb44321c062b7189e34a0b24444dce541f41a62bb26910551df17fb484f
+  type: DOMAIN_SUFFIX
+  value: responsys.net
+- id: e77c3dc7a2e66ef6db1ec548e7cd9ea2f88d8b9790907ab73d2a1e8e189e321a
+  type: DOMAIN_SUFFIX
+  value: sun.com
+- id: ac376c0ef3050e993b82d9e84ad77031ef83682e0304a7e8e16b8d07e61f7c1d
+  type: DOMAIN_SUFFIX
+  value: virtualbox.org

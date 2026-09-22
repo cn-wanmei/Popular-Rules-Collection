@@ -1,0 +1,62 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: unmapped_service
+id: amap
+display_name: amap
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 16
+  by_type:
+    DOMAIN_SUFFIX: 16
+rules:
+- id: a6ff9b80f7d9583e3b1a10a3fd5af9859a73cd2b27181b29175923c8dd385279
+  type: DOMAIN_SUFFIX
+  value: a-map.cn
+- id: c0e1d67e6be568b584c5edf0e5599670bd79b46adeb53946ccff34f890aa1d6d
+  type: DOMAIN_SUFFIX
+  value: a-map.co
+- id: 0306e237539b86de0d5e6858d0991dc4c7c4d85b9f03a556703f5b211866f122
+  type: DOMAIN_SUFFIX
+  value: a-map.link
+- id: d41a0d336650b9d7e10356b2b9494305d49137c1752f213d2ce467b204c25ded
+  type: DOMAIN_SUFFIX
+  value: a-map.vip
+- id: de2e715b7fdd3862e3a780bbb9681fcb2f55c2fbb582d03aa4124424b63df5d7
+  type: DOMAIN_SUFFIX
+  value: acloudrender.com
+- id: 3cb423fc8afc3eac55602dacdcd1b2aadcae67630eec3ea371a2366203e6f5e1
+  type: DOMAIN_SUFFIX
+  value: adashx.ut.amap.com
+- id: dd9226a2bf0efa404a987ce637cc0f662e45621d690444ee488004205726d029
+  type: DOMAIN_SUFFIX
+  value: amap.com
+- id: fc59ece15b3eda90eb7a016c3d1507a4f73682b18c93aa1c8c72c6dd3e6bc95c
+  type: DOMAIN_SUFFIX
+  value: amap.net
+- id: 0ed89bf39b2f738e95d252643030883d94e565dc6584df5a64c5c2e1840f613c
+  type: DOMAIN_SUFFIX
+  value: amapauto.com
+- id: ce8fb0547ff79caaf7a85dc597517d6d4cbc4963028d364440ae78c492ec2ee1
+  type: DOMAIN_SUFFIX
+  value: anav.com
+- id: 8f37c390bd76fc63c1d3dace884f794d76af1aedb86e9536085b7ffafdc015eb
+  type: DOMAIN_SUFFIX
+  value: autonavi.com
+- id: e0953d007998e12a40fa33d0454962422130b677a899c4eda6d97e9382480545
+  type: DOMAIN_SUFFIX
+  value: dualstack-logs.amap.com
+- id: d043c037d04e88f4957c89e965c963ef96a0ceb8fb76448475a00402088fd460
+  type: DOMAIN_SUFFIX
+  value: gaode.com
+- id: 087210c46eb4547487941afb0b5161fc98bd0c712280c8eaffa3888611ea94a9
+  type: DOMAIN_SUFFIX
+  value: logs.amap.com
+- id: d54d692a985acfd4e8076addcd82bc97e033e48aacbf00de4758475c2ced8018
+  type: DOMAIN_SUFFIX
+  value: optimus-ads.amap.com
+- id: 06575b6e94a5212f8def8e2e40c395d4454ed543959aeb94f61663ef8deff285
+  type: DOMAIN_SUFFIX
+  value: v6-adashx.ut.amap.com

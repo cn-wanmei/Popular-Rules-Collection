@@ -383,43 +383,43 @@
       "source": "database/provider/cloudflare6.txt"
     },
     {
-      "bytes": 193163,
+      "bytes": 387053,
       "file": "provider/aws.txt",
       "id": "provider-aws",
       "kind": "provider",
-      "lines": 11279,
+      "lines": 11460,
       "scope": "provider",
-      "sha256": "6f106363085e6bd5c2aba13e69ebc489e243e20be0d25d84299c08144b9a1380",
+      "sha256": "cf3f0ecbe0eaae180f6931caa6d11c8fbc9c889721719a739809a466b8d1b5e5",
       "source": "database/provider/aws.txt"
     },
     {
-      "bytes": 16909,
+      "bytes": 36972,
       "file": "provider/googlecloud.txt",
       "id": "provider-googlecloud",
       "kind": "provider",
-      "lines": 1103,
+      "lines": 1159,
       "scope": "provider",
-      "sha256": "35c0692edead937c27b35b74306ecf2870150a7f8106ba61966198fd1f239102",
+      "sha256": "cfc788ef99daf83344778ebc605edd03c08f2adeca2f5d6cc49b1e2e2fdc5aac",
       "source": "database/provider/googlecloud.txt"
     },
     {
-      "bytes": 2172,
+      "bytes": 4595,
       "file": "provider/goog.txt",
       "id": "provider-goog",
       "kind": "provider",
-      "lines": 145,
+      "lines": 152,
       "scope": "provider",
-      "sha256": "019a22986da986de06916372c61b3f56ce2611bcf0613aec78535f364aa07ca6",
+      "sha256": "992249c1afa87ccd1956447cc6a61d526859d349149ef34933fe0a7e110f43f0",
       "source": "database/provider/goog.txt"
     },
     {
-      "bytes": 17853,
+      "bytes": 38374,
       "file": "provider/oracle.txt",
       "id": "provider-oracle",
       "kind": "provider",
-      "lines": 1107,
+      "lines": 1398,
       "scope": "provider",
-      "sha256": "26627e75e7a94e0dcd27d2d151408d878e4036836645ec4f614631c2b13a8c84",
+      "sha256": "ff92ad1158c3c810b572d56513b4837b0c8f8ef7db4627a9513ba4ade13f3c8c",
       "source": "database/provider/oracle.txt"
     },
     {
@@ -513,13 +513,13 @@
       "source": "database/ips/chinamobile.txt"
     },
     {
-      "bytes": 59901,
+      "bytes": 59917,
       "file": "ip/chinaunicom.txt",
       "id": "chinaunicom",
       "kind": "service_ip",
-      "lines": 3785,
+      "lines": 3786,
       "scope": "ip",
-      "sha256": "3aa3f97744c859cd9e619e60954425948d4e74e2738f39837a4651a384db30d2",
+      "sha256": "448919073cd4088f2bc1fc231887b8563d21e59f31ce80ba6e0cdd40455db0e4",
       "source": "database/ips/chinaunicom.txt"
     },
     {
@@ -803,7 +803,7 @@
       "source": "database/ips/zhihu.txt"
     }
   ],
-  "generated_at": "2026-09-22T03:30:16.358020+00:00",
+  "generated_at": "2026-09-22T16:57:41.791334+00:00",
   "missing_optional": [],
   "runtime_contract": "network_dataset_distribution_v2",
   "schema": "network_publication_v2",
@@ -815,5 +815,5 @@
     "provider_cidrs_are_not_service_ownership": true,
     "service_rules": "generated/<client>/..."
   },
-  "source_commit": "a513aa922f9fd84c171fa24e86fd0eb3bb159ac3"
+  "source_commit": "802ea71e64b7bccc9a5cacd8694ab091ef568e0e"
 }

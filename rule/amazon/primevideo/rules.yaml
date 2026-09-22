@@ -1,0 +1,96 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: primevideo
+display_name: Prime Video
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 26
+  by_type:
+    DOMAIN: 5
+    DOMAIN_KEYWORD: 1
+    DOMAIN_SUFFIX: 19
+    PROCESS_NAME: 1
+rules:
+- id: 0fb0f8769f92eb169f620dfda43e1ccbb66b20284a5a5c8eb1891a0054bde97e
+  type: DOMAIN
+  value: d1v5ir2lpwr8os.cloudfront.net
+- id: df73d5fa909d1c3df06e2294c06f8809dabeb2a1e30a8a0569c7002c638a891c
+  type: DOMAIN
+  value: d22qjgkvxw22r6.cloudfront.net
+- id: 462a791e261285f83615f023465f7ac8fde7979fa11abe38bbd239abad09aaed
+  type: DOMAIN
+  value: d25xi40x97liuc.cloudfront.net
+- id: 477c78e9b23041e6dfe126e5a83574b9e71ee5a1c8d41ba788fe85fb7708fa20
+  type: DOMAIN
+  value: d27xxe7juh1us6.cloudfront.net
+- id: a785f0d3b7d191ae4ff2d19e17027e4d107ea0c5bb2ef0a389bd44a3769eb2ac
+  type: DOMAIN
+  value: dmqdd6hw24ucf.cloudfront.net
+- id: 20b7312a9bbc2ed19658813380f5aa386484bb99d703d11bff14ddb005f01a25
+  type: DOMAIN_KEYWORD
+  value: avoddashs
+- id: 2739677693a8d549191c070de20679740cab6391a9e1827ad97c272f6480cdc6
+  type: DOMAIN_SUFFIX
+  value: aiv-cdn.net
+- id: 18745cf24e15e0d959e709d924210a0579608a91e7ae597746c2f3643a57ff29
+  type: DOMAIN_SUFFIX
+  value: aiv-delivery.net
+- id: 28be64f488a6735b8330da2ec60299e9467e0cffb52ebe5a5c82eb6bd499f140
+  type: DOMAIN_SUFFIX
+  value: amazonprimevideo.cn
+- id: 081cea093b50703581e2fe1c9088ffaf8d4a63c94967043a03263a7b297da6b1
+  type: DOMAIN_SUFFIX
+  value: amazonprimevideo.com.cn
+- id: 3e2ea16da96accc9418d700634fb463380a6be4a68b90a8e3c55e5d7d169d981
+  type: DOMAIN_SUFFIX
+  value: amazonprimevideos.com
+- id: 7bf6806a7d16ebcae665c765a17fb94c543089dc4948bd559bdfbe5a845d21ba
+  type: DOMAIN_SUFFIX
+  value: amazonvideo.cc
+- id: 58fb60a5d71bd9eb60dccaaea3975651a8643b6d4e83064827d89aff1661b667
+  type: DOMAIN_SUFFIX
+  value: amazonvideo.com
+- id: 63c240fa6e7c7b37bbd12c4b3a670d2be71d3058940b8dfb000ddec9cc8cf477
+  type: DOMAIN_SUFFIX
+  value: atv-ps.amazon.com
+- id: f029f18448100adf1006215b9541fb05166101687d6c44b329403fc787421309
+  type: DOMAIN_SUFFIX
+  value: avodmp4s3ww-a.akamaihd.net
+- id: e53f45563616ca3fc12b40bd463d1ae71a29acf79b719157e4d81cdd0dd9e0df
+  type: DOMAIN_SUFFIX
+  value: fls-na.amazon.com
+- id: 2f2dffa4b4ca255c6d38bcea5a0dc10d74a0f828b4e0ddea89af48eda1ddcc3c
+  type: DOMAIN_SUFFIX
+  value: llnwd.net
+- id: d735765fb4f38ca4006eab290f39443c6daae9fba9f5bdfe6ada3ab00df34cc1
+  type: DOMAIN_SUFFIX
+  value: media-amazon.com
+- id: 134eb766275f20a3f349681476d8278120873a81565ae91e14ef7bfb3720d09d
+  type: DOMAIN_SUFFIX
+  value: prime-video.com
+- id: 97887df16d9be862e360c631280c76937c2fe77306b3e108d35083ce71d70806
+  type: DOMAIN_SUFFIX
+  value: primevideo.cc
+- id: 8b36832cbb961cc1daedb573a3e809e8232b73b7214318448dc508217a5fb018
+  type: DOMAIN_SUFFIX
+  value: primevideo.com
+- id: 306b4781614d257981502eab006533ff09e0dc7c13802e0311ddbc2c6812e939
+  type: DOMAIN_SUFFIX
+  value: primevideo.info
+- id: 92b7fcea429c83d117e9e9713e69f70edafd12cebaf1ca58cae09f48f33c4055
+  type: DOMAIN_SUFFIX
+  value: primevideo.org
+- id: 6c5f05ff3d416cb659075ea964e25ca642ff8a7b00cef49fc49155053cabf2dd
+  type: DOMAIN_SUFFIX
+  value: primevideo.tv
+- id: beb52b290790d7176fe77b85fdb2c76914008bef20402f0d621a7e72e30b5a3b
+  type: DOMAIN_SUFFIX
+  value: pv-cdn.net
+- id: 49ab7a5446be358c154fd45318361dc6abfcdc63db691aa269eb38e1343061b1
+  type: PROCESS_NAME
+  value: com.amazon.avod.thirdpartyclient
+provider: amazon

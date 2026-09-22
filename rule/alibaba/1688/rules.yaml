@@ -1,0 +1,24 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: '1688'
+display_name: '1688'
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 3
+  by_type:
+    DOMAIN_SUFFIX: 3
+rules:
+- id: 6134af3b16e7d0d812455283b09533ceb4dd7555c104626fc3d0bb8495e62e27
+  type: DOMAIN_SUFFIX
+  value: 1688.com
+- id: e122e56b619ce753d7ab6a86ef798fec862681a98103a658374eb0835e23bc3f
+  type: DOMAIN_SUFFIX
+  value: open.1688.com
+- id: 4de5a0293c52df2a0b758f3c981a67f19f8747033497bf9241b5cc60924c2a87
+  type: DOMAIN_SUFFIX
+  value: www.1688.com
+provider: alibaba

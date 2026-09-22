@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: deepseek_aggregate
+display_name: DeepSeek
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: e627f4599f52d9e13b8fdfa01d939df162ec0ac8642b937e0bc62e658296532b
+  type: DOMAIN_SUFFIX
+  value: deepseek.com
+- id: 64c9a6e61b472dff1b9f8a85cefa78dc0af757eb885aad8637f3b8e121c70e26
+  type: DOMAIN_SUFFIX
+  value: deepseeksvc.com
+provider: deepseek

@@ -1,0 +1,32 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: unmapped_service
+id: gitlab
+display_name: gitlab
+generated_from:
+  run_id: 20260922T165316519697Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
+stats:
+  total: 6
+  by_type:
+    DOMAIN_SUFFIX: 6
+rules:
+- id: d1e0cc33f59e6f6bfdb24b719e19babafb37e307d56e065f9dfa9db10ecf0493
+  type: DOMAIN_SUFFIX
+  value: gitlab-assets.oss-cn-hongkong.aliyuncs.com
+- id: ca8f435504d9476e166acbde1a2b179fa84b9d4572ef095523274ddd84627728
+  type: DOMAIN_SUFFIX
+  value: gitlab-static.net
+- id: 380bb797f538638095550d939c9e731fabe6e6fc225f20d3e6cf1e69a77fca71
+  type: DOMAIN_SUFFIX
+  value: gitlab.com
+- id: 700758c5d3f5bbd703bc9b626a876e48f82efbf7fb6a834ee79bf3cb367304ae
+  type: DOMAIN_SUFFIX
+  value: gitlab.net
+- id: 94f45620f16f1bed00257340a9f878483139f857ce892ce626674e8398c83172
+  type: DOMAIN_SUFFIX
+  value: gitter-static.net
+- id: 6073d806a2414598ab44276ae65185be728f10b648d3e4e0bef7616e5f897d03
+  type: DOMAIN_SUFFIX
+  value: gitter.im
