@@ -117,13 +117,6 @@ jobs:
             --collection-root "backup/${DAY}" \
             --json-out "backup/${DAY}/manifests/immutable-source-lineage.json"
 
-      - name: Collect Network Dataset inputs
-        run: |
-          set -euo pipefail
-          python scripts/collect_datasets.py
-          python scripts/collect_ip.py
-          python scripts/collect_providers.py
-
       - name: Commit collected snapshot
         id: commit
         shell: bash
