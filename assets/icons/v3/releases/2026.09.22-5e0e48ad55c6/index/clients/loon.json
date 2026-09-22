@@ -1,0 +1,1482 @@
+{
+  "schema": "icon_client_index_v3",
+  "client": "loon",
+  "entries": {
+    "alibaba": {
+      "identity": "brand.alibaba",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/alibaba.png",
+      "digest": "bedfa9a518f0802a915ecba1a451f888c62efe49f2ea465edad89d625a504eb0"
+    },
+    "alipay": {
+      "identity": "brand.alipay",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/alipay.png",
+      "digest": "56e44ff6d65b46562b7851500b5a0ef05a56a30364089767499deb582c655e98"
+    },
+    "anthropic": {
+      "identity": "brand.anthropic",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/anthropic.png",
+      "digest": "6d6ad39eb3d4d2a4269d18e50c72e36c022bf7a1362d97d0f684d767c41e8865"
+    },
+    "apple": {
+      "identity": "brand.apple",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/apple.png",
+      "digest": "3ec0e545e5678cb930053db9cbe49d607bd988aae392ae31121c1b80d78b3ac4"
+    },
+    "atlassian": {
+      "identity": "brand.atlassian",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/atlassian.png",
+      "digest": "76cf516e568808c5c7d126b35659621754f07a55e642f94ab9c85ac42faed532"
+    },
+    "baidu": {
+      "identity": "brand.baidu",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/baidu.png",
+      "digest": "1e80f8c37c6b2182bd0032c9cecb75383cbb4a07defb91a5874e6e157ce425b9"
+    },
+    "bilibili": {
+      "identity": "brand.bilibili",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/bilibili.png",
+      "digest": "1a571b5d96e2344db3f9f6e278fdcfd6104242301f792eed093ca35df78458b4"
+    },
+    "binance": {
+      "identity": "brand.binance",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/binance.png",
+      "digest": "874173136c08064fd46552fcb011b3a644cadbf436ace6d34e9f3a0ca2806707"
+    },
+    "bluesky": {
+      "identity": "brand.bluesky",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/bluesky.png",
+      "digest": "3479935aa8de76599ea70e7d80bc2898c6b3809ccd5973c798006008907a04a3"
+    },
+    "booking": {
+      "identity": "brand.booking",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/booking.png",
+      "digest": "b1bf5d9dd282c3dd805c86a6fe03f34ff072163a6f4b74d018b7362c3fcf76fd"
+    },
+    "claude": {
+      "identity": "brand.claude",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/claude.png",
+      "digest": "f021bb6084674e311185c9d8e2be4e7edbe10e08d8aa5f84862896e2f395fcf1"
+    },
+    "cloudflare": {
+      "identity": "brand.cloudflare",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/cloudflare.png",
+      "digest": "46397ac87bca6b470d306d45cc52dce39f1ad2edbbd9bd52bd18053907114ea9"
+    },
+    "copilot": {
+      "identity": "brand.copilot",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/copilot.png",
+      "digest": "f37a7f5f477b14fd64e0df0dd0c6be9cd40317c7c3241ee4129e7733d07d090a"
+    },
+    "cursor": {
+      "identity": "brand.cursor",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/cursor.png",
+      "digest": "93af9864444ccd14a663ed74ce925edb0b27b7bd02a8c70d388f147694542fca"
+    },
+    "deepseek": {
+      "identity": "brand.deepseek",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/deepseek.png",
+      "digest": "b7573d6ae6de63ab807ed4fd6859dc9deca1022a84d3ac90a96a0070067310b1"
+    },
+    "deezer": {
+      "identity": "brand.deezer",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/deezer.png",
+      "digest": "a81d4fede0af9c1b78048a00cf1457509f8c3a22957ee51af53b205cfbcbd52b"
+    },
+    "digitalocean": {
+      "identity": "brand.digitalocean",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/digitalocean.png",
+      "digest": "ac4211d7b3bcc250cdedc30a819ac06521dbc515f3a57400b393c8e07b2e64bc"
+    },
+    "discord": {
+      "identity": "brand.discord",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/discord.png",
+      "digest": "962fe033ec4c3956404bf681938b32a434fec6a3b43550cc9bd7d1c1d3874994"
+    },
+    "docker": {
+      "identity": "brand.docker",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/docker.png",
+      "digest": "dd5fa839e0f077ec58f06634ee05d7e037c6fff9a788e5ac40953da3da3bbe3c"
+    },
+    "douyin": {
+      "identity": "brand.douyin",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/douyin.png",
+      "digest": "ad585c50bb22f7f7d218097bdc21180077f64fdfbf369e01429fd47973009a6c"
+    },
+    "ea": {
+      "identity": "brand.ea",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/ea.png",
+      "digest": "ae11db3516667bf31871eb34a0219cc868be38014a412bff8260c9e1656f39c2"
+    },
+    "ebay": {
+      "identity": "brand.ebay",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/ebay.png",
+      "digest": "78fcc3c10aa6e4019f69dc4803771f61b7e44a0e74161d21196612a39feb3c7e"
+    },
+    "facebook": {
+      "identity": "brand.facebook",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/facebook.png",
+      "digest": "93cd31052232a1031c67f2604060bcaba82f3d73d69ceedc6dfb6740b4da1607"
+    },
+    "gemini": {
+      "identity": "brand.gemini",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/gemini.png",
+      "digest": "1d9cda185760fd80b21a2483b2ec3c25421d70d130524a54fe87206a276101a5"
+    },
+    "github": {
+      "identity": "brand.github",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/github.png",
+      "digest": "a84486bcfb9da5cbadc2f1b4f112b98b52e4a771376edc8777ca840d964afabe"
+    },
+    "google": {
+      "identity": "brand.google",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/google.png",
+      "digest": "75d505b5a9507ea406b5b6e50bd210db0ea0947d128f2bd008c02d494a37ca36"
+    },
+    "hashicorp": {
+      "identity": "brand.hashicorp",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/hashicorp.png",
+      "digest": "e53143f2c38d1faec60884fc714872d687a2caaf2bc3adaa783153d9b92eb59c"
+    },
+    "hbo": {
+      "identity": "brand.hbo",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/hbo.png",
+      "digest": "3eaada0e29c95dd72e2dcba0bd350f09187cff6fe7feb47822c9371958624765"
+    },
+    "huawei": {
+      "identity": "brand.huawei",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/huawei.png",
+      "digest": "512b7820c533f6f0adaddb82160e3dfc84147d34be0ea0ebdd997fb8392e74b5"
+    },
+    "huggingface": {
+      "identity": "brand.huggingface",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/huggingface.png",
+      "digest": "8136eff39c98acd23218b61712b8f516611d517b886dc3e4851b584fbf3fb506"
+    },
+    "instagram": {
+      "identity": "brand.instagram",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/instagram.png",
+      "digest": "b606e7f43c3b1ad9e603850fd4ead9a9658066f4dbff6236c6bfc56e7b3a2570"
+    },
+    "jetbrains": {
+      "identity": "brand.jetbrains",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/jetbrains.png",
+      "digest": "9af8114c822d031e348420669f6ffe392d70bd000d91b2052e4812cf9216fba1"
+    },
+    "meituan": {
+      "identity": "brand.meituan",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/meituan.png",
+      "digest": "f50444db62ca271ff1341d81a00b280a7bc0e2472480255866f4504ed535ca06"
+    },
+    "microsoft": {
+      "identity": "brand.microsoft",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/microsoft.png",
+      "digest": "ad1221ef8a9b95ec7c2a25d6326d20e235688d833bc6c4559417125f49d66d03"
+    },
+    "netflix": {
+      "identity": "brand.netflix",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/netflix.png",
+      "digest": "cd0a606e3dbf0775d42738cb5c51f7f1548088ee388975e23cd4f616f61f72ed"
+    },
+    "netlify": {
+      "identity": "brand.netlify",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/netlify.png",
+      "digest": "232a8af25a3d5d98dd40a3ee76a51469a6233fd14a5c3bb5605e27c30fd29b2d"
+    },
+    "okx": {
+      "identity": "brand.okx",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/okx.png",
+      "digest": "f43694872f7a84e99d2d1df1752905827dfe4f2f86b493e53d35e3e5e94a24c9"
+    },
+    "openai": {
+      "identity": "brand.openai",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/openai.png",
+      "digest": "a97e91732f9de65eb66efdeb2d4c333ba4fb080cd4f492cfd2fef7217181c901"
+    },
+    "paramountplus": {
+      "identity": "brand.paramountplus",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/paramountplus.png",
+      "digest": "0a5fa2dd78dab90216084fd6388dc1a8071cd04350a0e909f75ed75001265d99"
+    },
+    "perplexity": {
+      "identity": "brand.perplexity",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/perplexity.png",
+      "digest": "98d8e844a95ad375ac5f3aacd9b36d27ed76e60912ef6785b30d134f862d036f"
+    },
+    "playstation": {
+      "identity": "brand.playstation",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/playstation.png",
+      "digest": "d53166750d61d77400a74a24cc5971e2e8978e3c90d8fb8c1127e6373a2acbc0"
+    },
+    "reddit": {
+      "identity": "brand.reddit",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/reddit.png",
+      "digest": "4faf958d00d4ff628abc377227a10f68ba4b3e160666ab3c4e3ed234cf8ff168"
+    },
+    "roblox": {
+      "identity": "brand.roblox",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/roblox.png",
+      "digest": "1d742b35c7d138c3fdf34b7e6f88e879f3f86a0463a153c96d567e5ae9a2e193"
+    },
+    "sina": {
+      "identity": "brand.sina",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/sina.png",
+      "digest": "d1d109dcc1baee5e2390b99055a5ca7f039aa93625ffcdf7e16f81402a4c1d8e"
+    },
+    "soundcloud": {
+      "identity": "brand.soundcloud",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/soundcloud.png",
+      "digest": "d7f9443c8090314d1ae62ec9ca4db08fd44fc50c4fb773c82fe765fe2d1c59b9"
+    },
+    "spotify": {
+      "identity": "brand.spotify",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/spotify.png",
+      "digest": "837a88ceea55c5c463f1ff7b434ed6517a669cd5ca7652564909b8a31b62b47a"
+    },
+    "telegram": {
+      "identity": "brand.telegram",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/telegram.png",
+      "digest": "8cbe339c42ad4e74509447e7c830a10cffeb15a6c8fbf8dfde38a632c7a886c6"
+    },
+    "tencent": {
+      "identity": "brand.tencent",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/tencent.png",
+      "digest": "c7127da6d12b63a34114cc7e75786fec41d0cbc514542801be72e548e88930ae"
+    },
+    "tidal": {
+      "identity": "brand.tidal",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/tidal.png",
+      "digest": "d90005c8ef14f72250a6be8632ac389a30f68e2989677f7c8ade735e39378aef"
+    },
+    "tiktok": {
+      "identity": "brand.tiktok",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/tiktok.png",
+      "digest": "ad585c50bb22f7f7d218097bdc21180077f64fdfbf369e01429fd47973009a6c"
+    },
+    "trello": {
+      "identity": "brand.trello",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/trello.png",
+      "digest": "6e5bde3849fc651a59167925012093926f991ee90e33178946fe8a837a0c3daf"
+    },
+    "twitch": {
+      "identity": "brand.twitch",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/twitch.png",
+      "digest": "d5c3b29033daaab33bff58106e212dd32e748f64b236e0cff972d5eb7aa77b84"
+    },
+    "twitter": {
+      "identity": "brand.twitter",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/twitter.png",
+      "digest": "ea59c816d09929a4ae82434361c6d1d5724626ac43d29967122a96c41189b915"
+    },
+    "ubisoft": {
+      "identity": "brand.ubisoft",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/ubisoft.png",
+      "digest": "96ce990ce6aecf6a13b971cee965915fd5fa810a6867af184fe501ced8154cac"
+    },
+    "vimeo": {
+      "identity": "brand.vimeo",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/vimeo.png",
+      "digest": "7256363957a32b435665f50d978eec417699b0299e700ab3ebd97940136ebb45"
+    },
+    "wechat": {
+      "identity": "brand.wechat",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/wechat.png",
+      "digest": "a1668b91da9fd7a9a3dedff453bb0b2170e1b2b950674a5d81fb521f35064f6f"
+    },
+    "weibo": {
+      "identity": "brand.weibo",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/weibo.png",
+      "digest": "d1d109dcc1baee5e2390b99055a5ca7f039aa93625ffcdf7e16f81402a4c1d8e"
+    },
+    "whatsapp": {
+      "identity": "brand.whatsapp",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/whatsapp.png",
+      "digest": "3021f560f838a3aad74cd128c14ab5474c0e01ae3f4558a3ab1f3633619a2e9a"
+    },
+    "wikipedia": {
+      "identity": "brand.wikipedia",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/wikipedia.png",
+      "digest": "b6f8381fbd59a01a6d89b48b47c7aeff30e9a984bd62ac4921c51b3d8d7a34f1"
+    },
+    "wise": {
+      "identity": "brand.wise",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/wise.png",
+      "digest": "440fec92354b33a359783ebe0d36a1b65cfaa5c9bb8fc19c3e2656ec46a0fbbf"
+    },
+    "xiaomi": {
+      "identity": "brand.xiaomi",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/xiaomi.png",
+      "digest": "8c2423d8e9f8acdc43cb4128c6d856cc61ea52b4bfc517a8c7152821bc74df0b"
+    },
+    "youtube": {
+      "identity": "brand.youtube",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/youtube.png",
+      "digest": "707ed64a52b352c06e63c66f4a9576982cf4dac4f2781a91231c3ddbd2c01c61"
+    },
+    "zhihu": {
+      "identity": "brand.zhihu",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/zhihu.png",
+      "digest": "c5faad92ced6c0070466106234276ec5ed008f6432ab36e36077d3d4ac8b4902"
+    },
+    "adblock": {
+      "identity": "semantic.adblock",
+      "role": "special",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/adblock.png",
+      "digest": "8beff8d58cb0cbcbca1bdbe0cf49ac8e015b8f1abe4cd838a8c58284dcb39bc3"
+    },
+    "adobe": {
+      "identity": "brand.adobe",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/adobe.png",
+      "digest": "ccfa8524df7a0fcad1e9ce72f04de3089dea1158b610f9b9b3c33f2769c8ca3c"
+    },
+    "airbnb": {
+      "identity": "brand.airbnb",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/airbnb.png",
+      "digest": "6b5177c4a35ee7eeb812754f8ea4f4dae5111ed28f35197096a31be2145a8244"
+    },
+    "amazon": {
+      "identity": "brand.amazon",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/amazon.png",
+      "digest": "529a8eb11fc471fc7a5e5fd958bf65e8172190027467aebb32f4b04023dae4cc"
+    },
+    "amazonaws": {
+      "identity": "brand.aws",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/amazonaws.png",
+      "digest": "9d5e9a8baaa6f6ebeab43b928c57bbf410bdf57a1e919a24926bec28b2506d42"
+    },
+    "applemusic": {
+      "identity": "brand.applemusic",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/applemusic.png",
+      "digest": "f170d450b54d78181544d674d393a6cc659a8051bbc8597ea9a52ab0b8207725"
+    },
+    "appletv": {
+      "identity": "brand.appletv",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/appletv.png",
+      "digest": "1ba8af059170ef49e4675f7074659370f71ed62687c704ff6336050573370ffa"
+    },
+    "asn": {
+      "identity": "semantic.asn",
+      "role": "special",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/asn.png",
+      "digest": "b8dfd37a9c3366291407d799c66a2cb500c66cc9e3eafe995c5d1d8395211f1d"
+    },
+    "auto": {
+      "identity": "semantic.auto",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/auto.png",
+      "digest": "1604f25df60d80616bdc43d3a1c380df16a7dcdaeb8520be36aedbcb6c9d8753"
+    },
+    "aws": {
+      "identity": "brand.aws",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/aws.png",
+      "digest": "9d5e9a8baaa6f6ebeab43b928c57bbf410bdf57a1e919a24926bec28b2506d42"
+    },
+    "canva": {
+      "identity": "brand.canva",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/canva.png",
+      "digest": "860423c6254075bcdaa5281698c8de0dab72e3610297fa8042e443075cd753e8"
+    },
+    "china": {
+      "identity": "semantic.china",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/china.png",
+      "digest": "363702ec5c1316758758b6c6fe95f9f39b571386f7c82051f98f27a45799999b"
+    },
+    "chinamobile": {
+      "identity": "semantic.chinamobile",
+      "role": "special",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/chinamobile.png",
+      "digest": "931da88510f2a8d7b8de8a821533f37e50310870fd080f470b78b62381d0f032"
+    },
+    "chinatelecom": {
+      "identity": "semantic.chinatelecom",
+      "role": "special",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/chinatelecom.png",
+      "digest": "72e074942648bc33895ade48af7ee0c88e3d577b82919e03302f948d8bace0a3"
+    },
+    "chinaunicom": {
+      "identity": "semantic.chinaunicom",
+      "role": "special",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/chinaunicom.png",
+      "digest": "6ec34eacf1b6277855c26a796202028dd2342fe0560b00f14499b90c982207b2"
+    },
+    "cloud": {
+      "identity": "semantic.cloud",
+      "role": "special",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/cloud.png",
+      "digest": "c03a481ae3610f45a2009d28c40b0fb20149cf2fe3b25f4230898a11122b0137"
+    },
+    "direct": {
+      "identity": "semantic.direct",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/direct.png",
+      "digest": "4ae51593cee763dd2e81c02c79c4e20c2359817664628f84cb2f0a180298fbe6"
+    },
+    "dns": {
+      "identity": "semantic.dns",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/dns.png",
+      "digest": "6e232466bf48c8227a3ce4f172156d5adf9b5ab64a8b8cc864d4b6a1dd3ba689"
+    },
+    "dropbox": {
+      "identity": "brand.dropbox",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/dropbox.png",
+      "digest": "5b1885b5482787b32b91adc102538fed298d34df0fc80954c1faf4d399fb3630"
+    },
+    "emby": {
+      "identity": "brand.emby",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/emby.png",
+      "digest": "e8dc14a56e01ac9011535411e7a26a910b869ce6e469f9086b58025cb680571e"
+    },
+    "epic": {
+      "identity": "brand.epic",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/epic.png",
+      "digest": "3b1392a93f0e64658225fff8c826b2ece5aad27afc7eafeaa76ece88706a80b8"
+    },
+    "fallback": {
+      "identity": "semantic.fallback",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/fallback.png",
+      "digest": "c1bf37458998efab1f200e579967b887dbdb1ec479b8a6c8421cd40f6d74bfbc"
+    },
+    "figma": {
+      "identity": "brand.figma",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/figma.png",
+      "digest": "97d041a862129dabc6e0f5c606013c2d94df0a0830cc6de04681ebf14731f35e"
+    },
+    "final": {
+      "identity": "semantic.final",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/final.png",
+      "digest": "b5aa7bb10f41af213d16299c29b4c4580c8f5d6960f39e2038467c227a8e5cb6"
+    },
+    "firebase": {
+      "identity": "brand.firebase",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/firebase.png",
+      "digest": "f1d3d3438e3038e86772f2bbabce6d08c56f1021b56b3fbe18e637cbabd74d54"
+    },
+    "geoip": {
+      "identity": "semantic.geoip",
+      "role": "special",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/geoip.png",
+      "digest": "373e190fe1dc18f0c5bc91173764e82edaa19edb7b31cd92be2937433b2b54e2"
+    },
+    "geosite": {
+      "identity": "semantic.geosite",
+      "role": "special",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/geosite.png",
+      "digest": "a2384269e4016e011a892f757094c8fa93ee3faa7a58f6425f8487aa67eab1e8"
+    },
+    "gfw": {
+      "identity": "semantic.gfw",
+      "role": "special",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/gfw.png",
+      "digest": "a787f23f1bb9d8a625ed7b2c9ef773622dfb3aca274681b0d86d341ff725331d"
+    },
+    "gitlab": {
+      "identity": "brand.gitlab",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/gitlab.png",
+      "digest": "74cd732e6d8848918def8f192c5f0a012928da1298ec471bd492a53836568aef"
+    },
+    "global": {
+      "identity": "semantic.global",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/global.png",
+      "digest": "e0749d376d94faf760547ff3bbe04be0122abf88f19dece4e597c9c4e9c41cdc"
+    },
+    "heroku": {
+      "identity": "brand.heroku",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/heroku.png",
+      "digest": "34f413a72d81635a06e3a7cdb869bf10236f975a3413c9f5ab29990757964e3e"
+    },
+    "icloud": {
+      "identity": "brand.icloud",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/icloud.png",
+      "digest": "f220e55132ff4e83622dc12b54ef713417d53b3a48f79a3d58419567c566ae5e"
+    },
+    "kakaotalk": {
+      "identity": "brand.kakaotalk",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/kakaotalk.png",
+      "digest": "077cd0b46667de040276a25a4ebc6d96a5975bd0d7e2ed6463c8b189e23118c3"
+    },
+    "lan": {
+      "identity": "semantic.lan",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/lan.png",
+      "digest": "48838cde3b06f507925618388510097deb5b7a8094a0a7e38459aeb7a3199f87"
+    },
+    "line": {
+      "identity": "brand.line",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/line.png",
+      "digest": "1e0f47fe38444c96a2888c16e77f8b237940d077328605dd7ca8b6a1bf84910e"
+    },
+    "linkedin": {
+      "identity": "brand.linkedin",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/linkedin.png",
+      "digest": "40b4d1e63ccc301ea1803622ad8aaf2e912c6fe8742d354c54f12e032043e65b"
+    },
+    "loadbalance": {
+      "identity": "semantic.loadbalance",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/loadbalance.png",
+      "digest": "f75af11a72b173adb004ead3eaa23639d8029853b089ae41eb00f1cb0029c946"
+    },
+    "match": {
+      "identity": "semantic.match",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/match.png",
+      "digest": "46e6d037bcbffd449765a633f0f02c29d8a0e9457481158d543abbc83d9df952"
+    },
+    "messenger": {
+      "identity": "brand.messenger",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/messenger.png",
+      "digest": "c4276a937ea98de9585b72750f3c5059556e3ded573ef66210b77bd20b7f44c6"
+    },
+    "meta": {
+      "identity": "brand.meta",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/meta.png",
+      "digest": "8f3d8209d054bb8fc0f6fb39b9dbb47dd3e6144431971ea07fde4453bb2ca947"
+    },
+    "naver": {
+      "identity": "brand.naver",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/naver.png",
+      "digest": "bb5a1fbb8539c2819bb3d098d32826e9609a81f3c65b4b844eed340f31e5bec1"
+    },
+    "network": {
+      "identity": "semantic.network",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/network.png",
+      "digest": "d964bb9d06cd83d439765e892968a4e49a7c68c457c40b700a9edda334c973c4"
+    },
+    "nintendo": {
+      "identity": "brand.nintendo",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/nintendo.png",
+      "digest": "d2d136366c993423dc8a3e024c30a0cc854e28e67acdbe7b4537ba37122ab898"
+    },
+    "notion": {
+      "identity": "brand.notion",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/notion.png",
+      "digest": "6e7f4ca8939ad61f79f0029c4643e04bcddf3fb34669b36cb9ffd125c3da6725"
+    },
+    "oppo": {
+      "identity": "brand.oppo",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/oppo.png",
+      "digest": "ed88e9094d5a8f47fee82d5fc407b38e7da0914706544f4518301bbb812b3b3c"
+    },
+    "oracle": {
+      "identity": "brand.oracle",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/oracle.png",
+      "digest": "c24f692d0e08384beee66ef1177155cbd5d249e8b78b3e5c9848612e47a6ef4c"
+    },
+    "paypal": {
+      "identity": "brand.paypal",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/paypal.png",
+      "digest": "cb00830d0908f9c7002150a3fac969ac721e1284181e95b290fb4ede9ee3e51e"
+    },
+    "pinterest": {
+      "identity": "brand.pinterest",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/pinterest.png",
+      "digest": "19e37c7a45d5e1490b2f765e11031ee801314ac3cec2db938040ac26413b73e1"
+    },
+    "placeholder": {
+      "identity": "semantic.placeholder",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/placeholder.png",
+      "digest": "e11836684ddb62e55d38e6d372b0005faa296a515b3aa8dc7be90d45b372199a"
+    },
+    "private": {
+      "identity": "semantic.private",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/private.png",
+      "digest": "a58b53372d3d04d3402ba2d7369ebcad6743bda3ae78d66e4f369e01ac597668"
+    },
+    "provider": {
+      "identity": "semantic.provider",
+      "role": "special",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/provider.png",
+      "digest": "13ccd24799290df73bdfd96c1eeef0adc519da688376fda86e391c9ab06bdcd3"
+    },
+    "proxy": {
+      "identity": "semantic.proxy",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/proxy.png",
+      "digest": "e431cd97a811bf16f3353b7fc30ff55b30311a9f14562b5034c68d7c3c28996b"
+    },
+    "reject": {
+      "identity": "semantic.reject",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/reject.png",
+      "digest": "76d42f5ac7048d679087ec25d715ef22cf964a64f5d79b72cb718d37c26a5780"
+    },
+    "rockstar": {
+      "identity": "brand.rockstar",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/rockstar.png",
+      "digest": "cf78354453c872ba8f2640ddc3ba06c15ac91bb10135c018331709c5d4f044b2"
+    },
+    "select": {
+      "identity": "semantic.select",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/select.png",
+      "digest": "61fdfa2de93257333593fa4da174afd3fe71c2b8ab39852632b4c5df6a4fb9bb"
+    },
+    "shopify": {
+      "identity": "brand.shopify",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/shopify.png",
+      "digest": "220270fc6718b8d26d44f73e579aa18731f7f0a25ff2209ad55303866439ea31"
+    },
+    "signal": {
+      "identity": "brand.signal",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/signal.png",
+      "digest": "5b5951f75d5e9e47c4c8ef3784fea44c8375a70166bc357751da2ba4fe36e652"
+    },
+    "slack": {
+      "identity": "brand.slack",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/slack.png",
+      "digest": "361397180fd4f7530e96a8d38f25ee3c93ea90500c073face390522ca39f53d0"
+    },
+    "snapchat": {
+      "identity": "brand.snapchat",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/snapchat.png",
+      "digest": "e7523ef89e0e232ef6e15182aedc98b77749d47316cce3f16e8a2d68636398cb"
+    },
+    "speedtest": {
+      "identity": "brand.speedtest",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/speedtest.png",
+      "digest": "d56edf41a28a0d1be4fc4434f896da814752d06cd4eab270134c4e1430ac4aad"
+    },
+    "steam": {
+      "identity": "brand.steam",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/steam.png",
+      "digest": "471562a806a2b1666d52a657989bda7a1b801a5832abfc90eba4deca561271e9"
+    },
+    "stripe": {
+      "identity": "brand.stripe",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/stripe.png",
+      "digest": "7c4f140148676ddef1544ecf9353862848073496832c7a519f74701b4e8e2d9b"
+    },
+    "stun": {
+      "identity": "semantic.stun",
+      "role": "special",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/stun.png",
+      "digest": "55b5255477841c4a6dff2e8aa915557506cddcfab6d71874ff1457e60ebc84ef"
+    },
+    "taobao": {
+      "identity": "brand.placeholder",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/taobao.png",
+      "digest": "5b7daea64696525922e7187295de68a4c458330ff83f140bc7a4d8cc8aa44fe7"
+    },
+    "threads": {
+      "identity": "brand.threads",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/threads.png",
+      "digest": "9bad423b1bf11531fbfa0e9dff98e461eaa77f59540be913684a5a4e1a9f4558"
+    },
+    "uber": {
+      "identity": "brand.uber",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/uber.png",
+      "digest": "7c927d479d20c995d3ebe62f7485e19b2cf31b0bb24dc3692117a9ccc6d88b98"
+    },
+    "urltest": {
+      "identity": "semantic.urltest",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/urltest.png",
+      "digest": "6da8f87f53b6c69a1870f1b82a59ba55d3a79bec9037565562be86e308a41226"
+    },
+    "vercel": {
+      "identity": "brand.vercel",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/vercel.png",
+      "digest": "58116045c39e907841a86baf2551c9f43d59e3ce0fd71068b97f10e49d0b38d1"
+    },
+    "vivo": {
+      "identity": "brand.vivo",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/vivo.png",
+      "digest": "83fa4d4e6757785a7dd57f40841afff20d6d112f2daab97b69ba70097b189047"
+    },
+    "walmart": {
+      "identity": "brand.walmart",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/walmart.png",
+      "digest": "989c5bc47aa9dd31fa0345d67317bc5e5fbae283f421f3643daa1ff312fe9320"
+    },
+    "x": {
+      "identity": "brand.x",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/x.png",
+      "digest": "ea59c816d09929a4ae82434361c6d1d5724626ac43d29967122a96c41189b915"
+    },
+    "youtubemusic": {
+      "identity": "brand.youtubemusic",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/youtubemusic.png",
+      "digest": "2947c2eaea94adffc3888d4592a9287c4806afba41af5c7fa049b4d1b7ee1001"
+    },
+    "zoom": {
+      "identity": "brand.zoom",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/zoom.png",
+      "digest": "34086ba457a54164dd18628d9d77be07a99d8a8e38b0ab633fabc666daaedc9d"
+    },
+    "1688": {
+      "identity": "brand.1688",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/1688.png",
+      "digest": "8c03ec100fde65eb02a9f299349712e7107e4c205ab89c876612659e1de97ec9"
+    },
+    "cainiao": {
+      "identity": "brand.cainiao",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/cainiao.png",
+      "digest": "d42fda7b94883542ed2d8c425a7575997641f2b93a0ed1f0ae9aa13397148546"
+    },
+    "dingding": {
+      "identity": "brand.dingding",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/dingding.png",
+      "digest": "a91af337e12cb32f335b2a268f7fed4a47bf3e0346fa4e1348345021f37b3545"
+    },
+    "qqmail": {
+      "identity": "brand.qqmail",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/qqmail.png",
+      "digest": "03fbab3fe20a6534e281af12a71ebc333e6756c260cb734215cbbc5cabf1ba93"
+    },
+    "qqmusic": {
+      "identity": "brand.qqmusic",
+      "role": "service",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/qqmusic.png",
+      "digest": "9e0b731306e122c17a43c3998388785944aaf96e81c3187c2a711c5307a78721"
+    },
+    "strategy.direct": {
+      "identity": "semantic.direct",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/strategy.direct.png",
+      "digest": "43127d810e04d1231d7ab9c1fb2b4051e929374f44bb582fbeba0059888206d2"
+    },
+    "strategy.proxy": {
+      "identity": "semantic.proxy",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/strategy.proxy.png",
+      "digest": "9761f1802d4ab50ec80a93f62534e9630687eeec8e4ed5e966e798c54982f589"
+    },
+    "strategy.reject": {
+      "identity": "semantic.reject",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/strategy.reject.png",
+      "digest": "333968e4ef51a5a8cf50c5a5ebf902a823a5109d47c67474b56ee21a56680565"
+    },
+    "strategy.auto": {
+      "identity": "semantic.auto",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/strategy.auto.png",
+      "digest": "11b1083043144537754856bb3655cf202c8470ec2724e85ff3f055d345a9dbc4"
+    },
+    "strategy.fallback": {
+      "identity": "semantic.fallback",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/strategy.fallback.png",
+      "digest": "0c1c6d38c52d710deccc7d51e97eca5957688a8ac7f1d3836c0ae967b7148250"
+    },
+    "strategy.urltest": {
+      "identity": "semantic.urltest",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/strategy.urltest.png",
+      "digest": "33b2802574f1aecd6acc65b8864a185f310fcd061b5b9a79380e16101065d7d6"
+    },
+    "strategy.loadbalance": {
+      "identity": "semantic.loadbalance",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/strategy.loadbalance.png",
+      "digest": "987416fa220b88ca1be44e37c50ee921351434800aef2b9bba602fce2f84a1e2"
+    },
+    "strategy.final": {
+      "identity": "semantic.final",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/strategy.final.png",
+      "digest": "b5aa7bb10f41af213d16299c29b4c4580c8f5d6960f39e2038467c227a8e5cb6"
+    },
+    "strategy.match": {
+      "identity": "semantic.match",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/strategy.match.png",
+      "digest": "4381785c4145b5cea618524527cda5f615e29be0d12e27e04b234576ca85f31c"
+    },
+    "strategy.dns": {
+      "identity": "semantic.dns",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/strategy.dns.png",
+      "digest": "76d9131700597c82fa72e259980a19fb7f6733d6362edb4cf720d506a6ab61f9"
+    },
+    "strategy.global": {
+      "identity": "semantic.global",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/strategy.global.png",
+      "digest": "200205cac7ccffd5d6e9252a78536336ced6aaf4634884b05a2caea02553044e"
+    },
+    "strategy.select": {
+      "identity": "semantic.select",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/strategy.select.png",
+      "digest": "8926da6339651c88351a0946937c6c5a7043e8501d223e266cce6ad2ffeccae5"
+    },
+    "strategy.private": {
+      "identity": "semantic.private",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/strategy.private.png",
+      "digest": "a58b53372d3d04d3402ba2d7369ebcad6743bda3ae78d66e4f369e01ac597668"
+    },
+    "strategy.lan": {
+      "identity": "semantic.lan",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/strategy.lan.png",
+      "digest": "f693d49cb16a53e5eb72bd2dc97c566e8d707c1ce1d7f83821675db6698a12aa"
+    },
+    "strategy.china": {
+      "identity": "semantic.china",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/strategy.china.png",
+      "digest": "363702ec5c1316758758b6c6fe95f9f39b571386f7c82051f98f27a45799999b"
+    },
+    "strategy.network": {
+      "identity": "semantic.network",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/strategy.network.png",
+      "digest": "2797a89a138af93cf4d23366e9918858bacaef35c1a1935a4682fa062a531e9b"
+    },
+    "client-policy.mihomo": {
+      "identity": "client-policy.mihomo",
+      "role": "client_policy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/client-policy.mihomo.png",
+      "digest": "83de8abe9391681338052e1d90d99fa901868754348615ec36200cd26ad6cc03"
+    },
+    "client-policy.singbox": {
+      "identity": "client-policy.singbox",
+      "role": "client_policy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/client-policy.singbox.png",
+      "digest": "d98ae6d4686dea8114d36cefb566d739e4811fab5e0dabce703cc73cbf3f3c8e"
+    },
+    "client-policy.surge": {
+      "identity": "client-policy.surge",
+      "role": "client_policy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/client-policy.surge.png",
+      "digest": "e2ee88c22cdad52ef8e668a4fba1587fafade8f0597a12199b27542cd6b4a466"
+    },
+    "client-policy.shadowrocket": {
+      "identity": "client-policy.shadowrocket",
+      "role": "client_policy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/client-policy.shadowrocket.png",
+      "digest": "096ac9d09dc58a66b77754d1ce7b9053394852c46b8a0667c9d3403ab4522e1e"
+    },
+    "client-policy.quantumultx": {
+      "identity": "client-policy.quantumultx",
+      "role": "client_policy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/client-policy.quantumultx.png",
+      "digest": "907b2391c62a02c29250a947245e27c0f3545b7ef95d74361206a843e3a072ee"
+    },
+    "client-policy.egern": {
+      "identity": "client-policy.egern",
+      "role": "client_policy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/client-policy.egern.png",
+      "digest": "b327090a1715efccf8f63c5c00239ac93959c11c118f72e5a258d90d487210db"
+    },
+    "client-policy.loon": {
+      "identity": "client-policy.loon",
+      "role": "client_policy",
+      "style": "minimal",
+      "size": 256,
+      "format": "png",
+      "path": "clients/loon/256/client-policy.loon.png",
+      "digest": "be798168027368fa7cecc720cb1b2b4331fe617c6231255ef5bd4b816637aacc"
+    }
+  }
+}
