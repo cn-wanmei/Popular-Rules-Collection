@@ -22,6 +22,8 @@ def main()->int:
     target.mkdir(parents=True,exist_ok=True)
     for name in ("variants","clients","previews","index","reports"):
         shutil.copytree(b/name,target/name)
+    if (b/"quarantine").exists():
+        shutil.copytree(b/"quarantine", target/"quarantine")
     for name in ("registry.yaml","manifest.json","icon-review-manifest.json"):
         shutil.copy2(b/name,target/name)
     shutil.copytree(target,latest)
