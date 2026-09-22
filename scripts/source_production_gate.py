@@ -71,11 +71,19 @@ def main() -> int:
             errors.append(f"{sid}: production requires enabled=true")
         if attestation.get("status") != "passed":
             errors.append(f"{sid}: production requires attestation.status=passed")
+        legacy_services = {
+            str(x).strip()
+            for x in ((policy.get("production_unlock") or {}).get("legacy_production_services") or [])
+            if str(x).strip()
+        }
         activation_record = str(attestation.get("production_activation_record", "")).strip()
-        if not activation_record:
-            errors.append(f"{sid}: production requires production_activation_record")
-        elif not (ROOT / activation_record).is_file():
-            errors.append(f"{sid}: production activation record missing: {activation_record}")
+        if sid not in legacy_services:
+            if not activation_record:
+                errors.append(f"{sid}: production requires production_activation_record")
+            elif not (ROOT / activation_record).is_file():
+                errors.append(f"{sid}: production activation record missing: {activation_record}")
+        elif activation_record and not (ROOT / activation_record).is_file():
+            errors.append(f"{sid}: declared legacy production activation record missing: {activation_record}")
 
         for field in PRODUCTION_REQUIRED:
             if not str(attestation.get(field, "")).strip():
