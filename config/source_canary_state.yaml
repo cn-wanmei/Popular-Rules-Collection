@@ -146,10 +146,6 @@ services:
       snapshot_id: snap-taobao-d34b149646aa56450032d01d
       content_digest: cfd55feeff484e929a6ae7d440b00b424ac10d3c68e0ad77aa09d164e9db9719
     attestation: {status: pending}
-    state: verified
-    enabled: false
-    source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-taobao-8bf235109eb1fae87549fea8, content_digest: 8bf235109eb1fae87549fea81dfdb81bc327941d6128bcb2f4f60af00e5b4f92}
-    attestation: {status: pending}
   tencentcloud:
     state: verified
     enabled: false
