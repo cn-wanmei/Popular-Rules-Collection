@@ -48,13 +48,15 @@ def main() -> int:
         if isinstance(item, dict) and item.get("state") == "canary" and item.get("enabled") is True
     }
     declared_canaries = {str(x).strip() for x in (canary_policy.get("services") or []) if str(x).strip()}
-    if canary_policy.get("enabled") is not True:
-        errors.append("canary policy must be enabled for an active canary lifecycle")
     if declared_canaries != active_canaries:
         errors.append(
             "canary policy/state divergence: "
             f"policy={sorted(declared_canaries)} state={sorted(active_canaries)}"
         )
+    if active_canaries and canary_policy.get("enabled") is not True:
+        errors.append("active canary services require canary policy enabled=true")
+    if not active_canaries and canary_policy.get("enabled") not in {False, None}:
+        errors.append("no active canary services require canary policy enabled=false")
 
     for sid in SERVICES:
         item = services.get(sid) or {}
