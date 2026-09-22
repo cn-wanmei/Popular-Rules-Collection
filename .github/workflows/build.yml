@@ -1,31 +1,9 @@
 name: Build Client Rules
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "backup/**"
-      - "database/**"
-      - "sources/datasets/**"
-      - "sources/ip_registry.yaml"
-      - "scripts/build_network_bundle.py"
-      - "scripts/generated_manifest.py"
-      - "src/engine/**"
-      - "scripts/cross_client_semantic_test.py"
-      - "scripts/architecture_gate.py"
-      - "scripts/phase_j_p0_service_evidence.py"
-      - "scripts/derive_service_production_evidence.py"
-      - "config/**"
-      - "rule/**"
-      - "src/engine/v1/**"
-      - "scripts/v1_final_migration_gate.py"
-      - "scripts/v3_reproducibility_gate.py"
-      - "requirements.txt"
-      - "requirements.lock"
-      - ".github/workflows/build.yml"
-      - ".github/workflows/publish.yml"
-      - "scripts/immutable_source_lineage_gate.py"
-      - "sources/immutable_registry.yaml"
+  # Production data builds are dispatched only by a successful Collect Upstream run.
+  # Keeping push out of the production DAG prevents stale database/generated trees
+  # from racing the Collect transaction and creating duplicate Build runs.
   pull_request:
     branches: [main]
     paths:
