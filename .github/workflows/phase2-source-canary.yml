@@ -58,7 +58,39 @@ jobs:
       - name: Install locked dependencies
         run: python -m pip install -r requirements.lock
 
+      - name: Resolve activated service set
+        id: services
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import os, yaml
+          requested = os.environ.get("REQUESTED_SERVICE", "").strip()
+          with open("config/source_canary_state.yaml", encoding="utf-8") as fh:
+              data = yaml.safe_load(fh) or {}
+          services = data.get("services") or {}
+          if requested:
+              item = services.get(requested) or {}
+              if item.get("state") != "canary" or item.get("enabled") is not True:
+                  raise SystemExit(f"{requested}: service must be state=canary and enabled=true")
+              selected = [requested]
+          else:
+              selected = sorted(
+                  sid for sid, item in services.items()
+                  if isinstance(item, dict)
+                  and item.get("state") == "canary"
+                  and item.get("enabled") is True
+              )
+          print("selected:", selected)
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
+              out.write("services=" + " ".join(selected) + "\n")
+              out.write("count=" + str(len(selected)) + "\n")
+          PY
+        env:
+          REQUESTED_SERVICE: ${{ inputs.service }}
+
       - name: Resolve and verify exact Source commit
+        if: steps.services.outputs.count != '0'
         id: source
         env:
           GH_TOKEN: ${{ github.token }}
@@ -251,6 +283,7 @@ jobs:
           PY
 
       - name: Checkout exact Source commit
+        if: steps.services.outputs.count != '0' && steps.source.outcome == 'success'
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           repository: cn-wanmei/Popular-Rules-Source
@@ -259,42 +292,14 @@ jobs:
           fetch-depth: 1
 
       - name: Verify Source exact commit
+        if: steps.services.outputs.count != '0' && steps.source.outcome == 'success'
         run: |
           test "$(git -C .phase2/source rev-parse HEAD)" = "${{ steps.source.outputs.sha }}"
 
       - name: Install Source runtime dependencies
+        if: steps.services.outputs.count != '0' && steps.source.outcome == 'success'
         run: python -m pip install "jsonschema>=4.21,<5"
 
-      - name: Resolve activated service set
-        id: services
-        shell: bash
-        run: |
-          set -euo pipefail
-          python - <<'PY'
-          import os, yaml
-          requested = os.environ.get("REQUESTED_SERVICE", "").strip()
-          with open("config/source_canary_state.yaml", encoding="utf-8") as fh:
-              data = yaml.safe_load(fh) or {}
-          services = data.get("services") or {}
-          if requested:
-              item = services.get(requested) or {}
-              if item.get("state") != "canary" or item.get("enabled") is not True:
-                  raise SystemExit(f"{requested}: service must be state=canary and enabled=true")
-              selected = [requested]
-          else:
-              selected = sorted(
-                  sid for sid, item in services.items()
-                  if isinstance(item, dict)
-                  and item.get("state") == "canary"
-                  and item.get("enabled") is True
-              )
-          print("selected:", selected)
-          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
-              out.write("services=" + " ".join(selected) + "\n")
-              out.write("count=" + str(len(selected)) + "\n")
-          PY
-        env:
-          REQUESTED_SERVICE: ${{ inputs.service }}
 
       - name: Run selected Source → V3 canary and rollback rehearsal
         id: canary
