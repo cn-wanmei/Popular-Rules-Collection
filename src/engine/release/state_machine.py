@@ -70,6 +70,8 @@ def evaluate_release(run_dir: Path) -> dict[str, Any]:
     gates["canonical_present"] = (run_dir / "canonical" / "manifest.json").exists() and canonical_rules.exists() and canonical_rules.stat().st_size > 0
     gates["ir_present"] = (run_dir / "ir" / "manifest.json").exists() and (run_dir / "ir" / "ir.json").exists()
     gates["artifacts_present"] = (run_dir / "artifacts").exists()
+    rule_root = run_dir / "rule"
+    gates["rule_distribution_present"] = (rule_root / "manifest.json").exists() and (rule_root / "_index.yaml").exists()
     gates["diff_present"] = (run_dir / "reports" / "diff" / "latest.json").exists()
     gates["baseline_evidence_present"] = (run_dir / "metrics" / "baseline-evidence.json").exists()
 
@@ -125,6 +127,7 @@ def evaluate_release(run_dir: Path) -> dict[str, Any]:
         "quality_digest": _sha256(run_dir / "quality.json"),
         "metrics_digest": _sha256(run_dir / "metrics" / "metrics.json"),
         "baseline_evidence_digest": _sha256(run_dir / "metrics" / "baseline-evidence.json"),
+        "rule_digest": _dir_sha256(rule_root),
         "client_digests": {client: _dir_sha256(artifacts_root / client) for client in sorted(required_clients)},
         "v2_runtime_dependency": 0,
     }
