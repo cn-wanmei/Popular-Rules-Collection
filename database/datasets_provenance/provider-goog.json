@@ -1,9 +1,17 @@
 {
   "id": "provider-goog",
+  "kind": "provider",
   "scope": "provider",
   "path": "database/provider/goog.txt",
-  "lines": 145,
-  "fetched_at": "2026-09-22T03:17:34.572730+00:00",
-  "source_url": "https://www.gstatic.com/ipranges/goog.json",
-  "notes": "Provider \u2260 Service"
+  "lines": 152,
+  "sha256_source": "085240f1a61229d463049028c3572137c298947ed065a525e48be86614b7fed4",
+  "fetched_at": "2026-09-22T15:47:13.223041+00:00",
+  "source": {
+    "owner": null,
+    "repo": null,
+    "branch": null,
+    "path": "https://www.gstatic.com/ipranges/goog.json",
+    "url": "https://www.gstatic.com/ipranges/goog.json"
+  },
+  "notes": ""
 }
