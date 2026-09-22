@@ -36,4 +36,4 @@ def test_publish_fail_closed_gate_rejects_ignored_status_failure(tmp_path: Path)
         text=True,
     )
     assert result.returncode == 1, result.stdout + result.stderr
-    assert "status.yml contains ignored command failure" in result.stdout
+    assert "status.yml contains forbidden fail-open construct: ignore_failure" in result.stdout
