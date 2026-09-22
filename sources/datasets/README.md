@@ -20,6 +20,8 @@
 
 **Stable client URLs:** [docs/CLIENT_NETWORK_URLS.md](../../docs/CLIENT_NETWORK_URLS.md)
 
+> This directory is the Network Dataset input layer. Changes must flow through Collect → Network Dataset Build → generated manifests; `generated/` is never hand-copied from these inputs.
+
 ```bash
 python scripts/collect_datasets.py
 python scripts/dataset_quality.py
