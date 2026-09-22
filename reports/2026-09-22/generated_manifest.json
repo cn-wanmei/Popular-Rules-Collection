@@ -12,17 +12,17 @@
   "file_count": 1564,
   "files": [
     {
-      "file": "_promotion/20260922T004522183149Z-run.json",
+      "file": "_promotion/20260922T014539667771Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "1612444e42e74bb8629514df2b266ca941922ec5dd71e1a6019435bc33290b4c",
+      "sha256": "5fab3164a32f7f4e790832869449e76746f64d7df11f4a43d10d360188ea8ab3",
       "size": 160219
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "1612444e42e74bb8629514df2b266ca941922ec5dd71e1a6019435bc33290b4c",
+      "sha256": "5fab3164a32f7f4e790832869449e76746f64d7df11f4a43d10d360188ea8ab3",
       "size": 160219
     },
     {
@@ -12522,7 +12522,7 @@
       "size": 4409
     }
   ],
-  "generated_at": "2026-09-22T01:42:39.095609+00:00",
+  "generated_at": "2026-09-22T02:26:54.093886+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/generated",
   "network_dataset_directories": [
     "asn",
