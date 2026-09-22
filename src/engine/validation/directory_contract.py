@@ -67,6 +67,7 @@ def validate(root: Path = ROOT) -> dict[str, Any]:
         "pass": not errors,
         "errors": errors,
         "human_rule_files": len(_rule_files(rule_root)),
+        "canonical_rule_files": len(_rule_files(rule_root)),
         "generated_rule_files": len(_rule_files(generated_root)),
         "alternate_rule_tree_exists": alternate.exists(),
         "policy": str(policy_path.relative_to(root)),
