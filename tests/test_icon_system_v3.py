@@ -1,4 +1,6 @@
 import unittest
+from pathlib import Path
+import yaml
 from scripts.icon_system_v3 import CLIENTS,STYLES,color,semantic,render,slug
 class IconSystemV3Tests(unittest.TestCase):
     def test_fixed_contracts(self):
@@ -7,6 +9,17 @@ class IconSystemV3Tests(unittest.TestCase):
         self.assertEqual(color({"brand":{"display_color":"#112233"},"source":{"color":"#AABBCC"}}),"#112233")
     def test_semantic_icon(self):
         self.assertIn(">DR</text>",semantic("Direct","DR"))
+    def test_production_source_overrides(self):
+        cfg = yaml.safe_load((Path(__file__).resolve().parents[1] / "config" / "icon_v3.yaml").read_text(encoding="utf-8"))
+        overrides = cfg.get("source_overrides") or {}
+        for sid in ("1688", "cainiao", "dingding", "qqmail", "qqmusic", "taobao"):
+            row = overrides.get(sid) or {}
+            self.assertEqual(row.get("status"), "verified")
+            self.assertTrue((row.get("license") or {}).get("reviewed") is True)
+            svg_rel = (row.get("files") or {}).get("svg")
+            self.assertTrue(svg_rel)
+            self.assertTrue((Path(__file__).resolve().parents[1] / "assets" / "icons" / svg_rel).is_file())
+
     def test_alias_slug_stability(self):
         self.assertEqual(slug("taobao"),"taobao")
         self.assertEqual(slug("client-policy.mihomo"),"client-policy.mihomo")
