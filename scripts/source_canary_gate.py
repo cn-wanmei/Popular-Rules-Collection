@@ -39,8 +39,8 @@ def validate_state(
     errors: list[str] = []
 
     prs = policy.get("prs") or {}
-    if prs.get("enabled") is not True:
-        errors.append("PRS global registry must be enabled for the controlled Phase 2 promotion path")
+    if prs.get("enabled") is not False:
+        errors.append("PRS global registry must remain disabled during Phase 2")
 
     canary = policy.get("canary") or {}
 
