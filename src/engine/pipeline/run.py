@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 from src.engine.adapters.build_all import build_all_clients
+from src.engine.distribution.rule_tree import build_rule_tree
 from src.engine.canonical.store import build_canonical
 from src.engine.cas.run_store import register_run
 from src.engine.dag.executor import Node, execute
@@ -158,7 +159,8 @@ def run_pipeline(sources_root: Path, data_root: Path, *, run_id: str | None = No
 
     def handler_adapters() -> dict[str, Any]:
         report = build_all_clients(run_dir / "ir", run_dir / "artifacts")
-        return {"status": "ok", "clients": sorted(report.get("clients", {})), "parallel": report.get("parallel", False), "source_contract": report.get("source_contract"), "directory_contract": report.get("directory_contract")}
+        rule_manifest = build_rule_tree(run_dir / "ir", run_dir / "rule", hierarchy_path=ROOT / "config" / "ruleset_hierarchy.yaml", run_id=run_id)
+        return {"status": "ok", "clients": sorted(report.get("clients", {})), "parallel": report.get("parallel", False), "source_contract": report.get("source_contract"), "directory_contract": report.get("directory_contract"), "rule_distribution": rule_manifest}
 
     def handler_diff() -> dict[str, Any]:
         baseline = data_root / "baseline" / "canonical.json"; report = run_diff(run_dir / "canonical", baseline if baseline.exists() else None, run_dir / "reports" / "diff")
