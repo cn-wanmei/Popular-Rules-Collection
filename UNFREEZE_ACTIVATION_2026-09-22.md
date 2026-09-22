@@ -28,15 +28,18 @@ activation_conditions:
 
 current_transition:
   taobao:
-    state: canary
-    collection_promotion: pending_formal_activation_evidence
-    note: "Canary pass is accepted as the audit input; production state must remain evidence-bound."
+    state: production
+    collection_promotion: formally_activated
+    activation_record: TAOBAO_PRODUCTION_ACTIVATION_2026-09-22.md
+    production_unlock_run_id: '35680687328'
+    note: "Formal production activation is backed by the existing machine-verifiable Canary evidence bundle."
   tmall:
     state: verified
     enabled: false
     lineage_action: align_to_immutable_registry_and_reverify
   publish:
     fail_open_issue: remediated_in_this_change_set
+    all_known_ignored_failures_removed: true
 
 guardrails:
   - "Unfreeze does not permit arbitrary direct main mutation."
