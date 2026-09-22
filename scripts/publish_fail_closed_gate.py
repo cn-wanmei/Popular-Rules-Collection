@@ -33,8 +33,8 @@ def main() -> int:
     for label, pattern in FORBIDDEN_PATTERNS.items():
         if pattern.search(workflow):
             errors.append(f"publish.yml contains forbidden fail-open construct: {label}")
-    if "|| true" in status:
-        errors.append("status.yml contains ignored command failure")
+        if pattern.search(status):
+            errors.append(f"status.yml contains forbidden fail-open construct: {label}")
 
     for snippet in REQUIRED_SNIPPETS:
         if snippet not in workflow:
