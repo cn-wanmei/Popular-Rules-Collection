@@ -4,6 +4,16 @@ on:
   push:
     branches:
       - phase2/icon-system-3-final-20260922
+    paths:
+      - "assets/icons/**"
+      - "config/icon_v3.yaml"
+      - "scripts/icon_system_v3.py"
+      - "scripts/icon_v3_gate.py"
+      - "scripts/icon_v3_collect.py"
+      - "scripts/icon_v3_release.py"
+      - "schemas/icon_registry_v3.schema.json"
+      - "tests/test_icon_system_v3.py"
+      - ".github/workflows/icon-v3-release.yml"
   workflow_dispatch:
     inputs:
       version:
