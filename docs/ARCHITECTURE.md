@@ -10,41 +10,37 @@
       ↓
     V3 Engine
       ↓
-    Canonical → Semantic IR → 7 Client Adapters
+    Canonical → Semantic IR
+      ├─→ rule/                  human browse / search / selection
+      └─→ generated/             client + network distributions
       ↓
     deterministic Release Candidate
-      ├─ generated/<client>/...
-      └─ generated/<network-scope>/...
       ↓
-    atomic publish
+    atomic Git publish
 
 ## Truth layers
 
 | Layer | Authoritative role |
 |---|---|
+| `sources/` | upstream source definitions |
 | `backup/<date>` | immutable Collection input for a run |
 | `data/runs/<run>/canonical` | V3 Canonical truth for that run |
 | `data/runs/<run>/ir` | semantic intermediate representation |
+| `rule/` | human-readable browse/search/selection release tree |
 | `generated/<client>` | compiled client distribution |
 | `generated/<network-scope>` | compiled companion datasets |
-| `generated/manifest.json` | file-level publication inventory |
-| `rule/` | legacy V1 browse/migration tree only |
-| `rules/` | V3 directory contract target, not a second database |
+| `docs/` | architecture, usage and audit documentation |
+| `rules/` | deleted; no alternate rule database |
 
-## Source integration
+`rule/` is generated from the same IR as `generated/`. It is not copied from one client, and neither `rule/` nor `generated/` is a source for the other.
 
-Popular-Rules-Source is upstream Evidence Supply. Collection consumes its immutable release through exact commit SHA and provenance v2 equality. Source never writes Collection Canonical or client output.
+## Atomicity
 
-## Network Dataset integration
-
-Network Dataset refresh is separated from Service Identity semantics but is part of the same release DAG. Collection refreshes `database/` during Collect and the Build stage materializes the exact committed inputs into `release-candidate/generated/`.
-
-Because Build performs no Network Dataset network fetch, the same Collection commit can be replayed deterministically.
+A Release Candidate contains both output projections and the same `run_id` / IR digest. Publish commits both directory trees in one Git commit. Rollback is Run-based and restores both together.
 
 ## Directory invariants
 
-- `generated/<client>/` is the only final Service Rule distribution namespace.
-- `generated/<network-scope>/` is the only final Network Dataset distribution namespace.
-- `rule/` and `rules/` are never used as a reason to hand-edit generated files.
-- Provider, ASN, GeoIP and Geosite datasets cannot establish Service ownership by themselves.
-- A Release Candidate without required Network Dataset scopes is incomplete.
+- Exactly one human rule tree exists: `rule/`.
+- `rules/` must not exist.
+- `rule/` contains generic, client-neutral rule records only.
+- `generated/<client>/` is client-specific and never feeds `rule/`.
