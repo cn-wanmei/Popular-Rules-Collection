@@ -51,3 +51,15 @@ def test_generated_manifest_includes_client_and_network(tmp_path):
     assert "mihomo" in data["client_rule_directories"]
     assert "network" in data["network_dataset_directories"]
     assert data["file_count"] == 2
+
+
+def test_geoip_has_one_stable_publication_scope_and_cleans_legacy_country(tmp_path):
+    legacy = tmp_path / "country"
+    legacy.mkdir()
+    (legacy / "cn.txt").write_text("1.0.0.0/8\n", encoding="utf-8")
+    bundle._clean_network_outputs(tmp_path)
+    assert not legacy.exists()
+    bundle._write_network_variants("geoip", "cn", ["1.0.0.0/8"], tmp_path)
+    assert (tmp_path / "geoip/cn.txt").is_file()
+    assert (tmp_path / "geoip/cn_mihomo.list").is_file()
+    assert not (tmp_path / "country/cn.txt").exists()
