@@ -173,7 +173,8 @@ def build(out):
     for e in es:
         meta_status=str(e["meta"].get("status") or "").lower()
         release_eligible = e["role"] != "service" or meta_status in {"verified","sourced","approved","active"}
-        official_reference=official_sites.get(e["icon_key"]) or official_sites.get(e["service_id"])\n        if e["role"] in {"strategy","client_policy"}:
+        official_reference=official_sites.get(e["icon_key"]) or official_sites.get(e["service_id"])
+        if e["role"] in {"strategy","client_policy"}:
             base=semantic(e["canonical_name"],e["icon_key"]); src_path="generated:semantic"; src_digest=sha(base); provider="project-semantic"; stier="project_semantic"; surl=None
         else:
             base,src_path,src_digest=base_svg(e["meta"],e["icon_key"]); src=e["meta"].get("source") or {}; provider=str(src.get("provider") or "unknown"); stier=tier(e["meta"]); surl=src.get("url")
