@@ -1,63 +1,40 @@
 # Snapchat
 
-> 用于匹配 **Snapchat** 相关域名/IP 的分流规则（来自上游标准化合并）。
+> Current V3 service documentation. Subscription paths are derived from `generated/manifest.json`.
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `snapchat` |
-| Primary Ecosystem | **Social** (`social`) |
+| Primary Ecosystem | `snap` |
 | Service Type | service |
-| Tags | social |
-| 类型 | domain |
-| Domains | 9 |
-| CIDR | 0 |
-| 最后更新 | 2026-09-01 |
-| Sources | metacubex |
-| Confidence | HIGH |
+| Parent Aggregate | — |
+| Release Date | 2026-09-22 |
+| Dedicated client outputs | 7 / 7 |
 
-## 用途
+## 当前生产订阅路径
 
-用于匹配 **Snapchat** 相关域名/IP 的分流规则（来自上游标准化合并）。
+| 客户端 | 路径 | Raw |
+|--------|------|-----|
+| egern | `egern/snap/snapchat/rules.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/egern/snap/snapchat/rules.yaml) |
+| loon | `loon/snap/snapchat/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/loon/snap/snapchat/rules.list) |
+| mihomo | `mihomo/snap/snapchat/rules.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/mihomo/snap/snapchat/rules.yaml) |
+| quantumultx | `quantumultx/snap/snapchat/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/quantumultx/snap/snapchat/rules.list) |
+| shadowrocket | `shadowrocket/snap/snapchat/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/shadowrocket/snap/snapchat/rules.list) |
+| singbox | `singbox/snap/snapchat/rules.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/singbox/snap/snapchat/rules.json) |
+| surge | `surge/snap/snapchat/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/surge/snap/snapchat/rules.list) |
 
-支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+## 当前真源边界
 
-## 一键订阅
+- V3 Canonical：`data/runs/<run-id>/canonical/`
+- Semantic IR：`data/runs/<run-id>/ir/`
+- 最终发行：`generated/`
+- `rule/`：V1 历史浏览/迁移树
+- `rules/`：V3 目录契约
+- `database/services/`：Legacy evidence，不是 V3 Runtime 真源
 
-| 客户端 | 路径 | 链接 |
-|--------|------|------|
-| Mihomo | `generated/mihomo/snapchat.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/snapchat.yaml) |
-| sing-box | `generated/sing-box/snapchat.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/snapchat.json) |
-| Surge | `generated/surge/snapchat.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/snapchat.list) |
-| Shadowrocket | `generated/shadowrocket/snapchat.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/snapchat.list) |
-| Quantumult X | `generated/quantumult-x/snapchat.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/snapchat.list) |
-| Egern | `generated/egern/snapchat.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/snapchat.yaml) |
-| Loon | `generated/loon/snapchat.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/snapchat.list) |
+## 目录契约
 
-## CDN 镜像（Mihomo）
-
-| 镜像 | 链接 |
-|------|------|
-| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/snapchat.yaml |
-| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/snapchat.yaml |
-| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/snapchat.yaml |
-| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/snapchat.yaml |
-
-## 官方网站
-
-_未在 config/official_sites.yaml 配置_
-
-## 规则来源（Provenance）
-
-- `metacubex`
-
-由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
-
-## 数据位置
-
-- Schema: `database/services/snapchat.yaml`
-- Domains: `database/domains/snapchat.txt`
-- IPs: `database/ips/snapchat.txt`（若有）
-- Product page: `rule/Social/…`（见 generate_rule_pages）
+当前客户端目录只能使用 `mihomo`、`singbox`、`surge`、`shadowrocket`、`quantumultx`、`egern`、`loon`。历史 `sing-box` / `quantumult-x` 名称不属于当前目录契约。
 
 ---
-_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
+_页面日期来源：2026-09-22。生产路径来源：generated/manifest.json。_
