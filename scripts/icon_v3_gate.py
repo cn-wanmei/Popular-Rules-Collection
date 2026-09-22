@@ -84,16 +84,32 @@ def main() -> int:
             sid for sid,row in (state.get("services") or {}).items()
             if isinstance(row,dict) and row.get("state")=="production" and row.get("enabled") is True
         }
+        policy_path = Path(__file__).resolve().parents[1] / "config" / "source_promotion_policy.yaml"
+        policy = yaml.safe_load(policy_path.read_text(encoding="utf-8")) or {}
+        legacy_services = {
+            str(x).strip()
+            for x in ((policy.get("production_unlock") or {}).get("legacy_production_services") or [])
+            if str(x).strip()
+        }
         by_id = {e.get("service_id"): e for e in data.get("entries",[])}
         for sid in sorted(production_services):
             row = by_id.get(sid)
             if not row:
                 errors.append(f"{sid}: production service has no Icon System 3 entry")
                 continue
-            if not row.get("release_eligible"):
-                errors.append(f"{sid}: production service icon is quarantined")
             if row.get("role") != "service":
                 errors.append(f"{sid}: production service icon role must be service")
+            if sid in legacy_services:
+                if row.get("release_eligible"):
+                    errors.append(f"{sid}: legacy previous-good service must remain quarantined until V3 cutover")
+                if row.get("quality",{}).get("identity") != "hold":
+                    errors.append(f"{sid}: legacy previous-good service requires identity=hold")
+                variants = row.get("variants") or {}
+                if not all(str((variants.get(style) or {}).get("path") or "").startswith("quarantine/") for style in STYLES):
+                    errors.append(f"{sid}: legacy previous-good variants must be quarantined")
+            else:
+                if not row.get("release_eligible"):
+                    errors.append(f"{sid}: production service icon is quarantined")
     except Exception as exc:
         errors.append(f"production icon coverage check failed: {exc}")
 
