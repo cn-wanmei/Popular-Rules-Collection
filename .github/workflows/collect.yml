@@ -9,6 +9,10 @@ on:
       - "sources/registry.yaml"
       - "sources/lifecycle.yaml"
       - "sources/immutable_registry.yaml"
+      - "sources/datasets/**"
+      - "sources/ip_registry.yaml"
+      - "scripts/build_network_bundle.py"
+      - "scripts/generated_manifest.py"
   workflow_dispatch:
     inputs:
       skip_large:
@@ -115,6 +119,20 @@ jobs:
             --collection-root "backup/${DAY}" \
             --json-out "backup/${DAY}/manifests/immutable-source-lineage.json"
 
+      - name: Collect Network Dataset inputs
+        run: |
+          set -euo pipefail
+          python scripts/collect_datasets.py
+          python scripts/collect_ip.py
+          python scripts/collect_providers.py
+
+      - name: Materialize unified Network Dataset outputs
+        env:
+          GIT_COMMIT: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          python scripts/build_network_bundle.py --output generated --date "${{ steps.date.outputs.day }}"
+          python scripts/generated_manifest.py --root generated --output generated/manifest.json --date "${{ steps.date.outputs.day }}"
       - name: Commit collected snapshot
         id: commit
         shell: bash

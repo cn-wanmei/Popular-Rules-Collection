@@ -1,86 +1,46 @@
 #!/usr/bin/env python3
-"""build_network_datasets.py — export geosite/geoip/policy under generated/.
+"""Compatibility entry point for the unified Network Dataset builder.
 
-Does not touch Service client trees (generated/mihomo, …).
+The production implementation lives in :mod:`scripts.build_network_bundle`.
+These helpers remain as a narrow compatibility surface for legacy callers and
+tests; they do not create a second production output path.
 """
 from __future__ import annotations
 
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+from scripts.build_network_bundle import main
 
 
-def copy_txt(src: Path, dest: Path) -> int:
-    if not src.exists():
-        return 0
-    lines = [
-        ln.strip()
-        for ln in src.read_text(encoding="utf-8", errors="replace").splitlines()
-        if ln.strip() and not ln.startswith("#")
+def _read_lines(path: Path) -> list[str]:
+    return [
+        line.strip()
+        for line in path.read_text(encoding="utf-8", errors="replace").splitlines()
+        if line.strip() and not line.lstrip().startswith("#")
     ]
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_text("\n".join(lines) + ("\n" if lines else ""), encoding="utf-8")
+
+
+def _write(path: Path, lines: list[str]) -> int:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lines) + ("\n" if lines else ""), encoding="utf-8")
     return len(lines)
 
 
 def domain_to_clash(src: Path, dest: Path) -> int:
-    if not src.exists():
-        return 0
-    out = []
-    for ln in src.read_text(encoding="utf-8", errors="replace").splitlines():
-        s = ln.strip()
-        if not s or s.startswith("#"):
-            continue
-        out.append(f"DOMAIN-SUFFIX,{s.lstrip('.')}")
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_text("\n".join(out) + ("\n" if out else ""), encoding="utf-8")
-    return len(out)
+    """Legacy-compatible DOMAIN-SUFFIX formatter.
+
+    Production generation is still performed by build_network_bundle.py.
+    """
+    return _write(dest, [f"DOMAIN-SUFFIX,{line.lstrip('.')}" for line in _read_lines(src)])
 
 
 def cidr_to_clash(src: Path, dest: Path) -> int:
-    if not src.exists():
-        return 0
-    out = []
-    for ln in src.read_text(encoding="utf-8", errors="replace").splitlines():
-        s = ln.strip()
-        if not s or s.startswith("#"):
-            continue
-        host = s.split("/")[0]
-        out.append(f"IP-CIDR6,{s}" if ":" in host else f"IP-CIDR,{s}")
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_text("\n".join(out) + ("\n" if out else ""), encoding="utf-8")
-    return len(out)
+    """Legacy-compatible IPv4/IPv6 CIDR formatter."""
+    def format_cidr(value: str) -> str:
+        host = value.split("/", 1)[0]
+        return f"IP-CIDR6,{value}" if ":" in host else f"IP-CIDR,{value}"
 
-
-def main() -> int:
-    gdir = ROOT / "generated" / "geosite"
-    for name in ("direct", "proxy"):
-        n = copy_txt(ROOT / "database" / "geosite" / f"{name}.txt", gdir / f"{name}.txt")
-        domain_to_clash(
-            ROOT / "database" / "geosite" / f"{name}.txt", gdir / f"{name}_mihomo.list"
-        )
-        print(f"  geosite/{name}: {n}")
-
-    ipdir = ROOT / "generated" / "geoip"
-    for name in ("cn", "jp", "hk", "sg", "kr", "tw"):
-        n = copy_txt(ROOT / "database" / "geoip" / f"{name}.txt", ipdir / f"{name}.txt")
-        cidr_to_clash(
-            ROOT / "database" / "geoip" / f"{name}.txt", ipdir / f"{name}_mihomo.list"
-        )
-        print(f"  geoip/{name}: {n}")
-
-    pdir = ROOT / "generated" / "policies"
-    for sub in ("direct", "proxy", "dns"):
-        src_root = ROOT / "database" / "policies" / sub
-        if not src_root.is_dir():
-            continue
-        for f in src_root.glob("*"):
-            if f.is_file():
-                dest = pdir / sub / f.name
-                dest.parent.mkdir(parents=True, exist_ok=True)
-                dest.write_bytes(f.read_bytes())
-    print("[build_network_datasets] done")
-    return 0
+    return _write(dest, [format_cidr(line) for line in _read_lines(src)])
 
 
 if __name__ == "__main__":

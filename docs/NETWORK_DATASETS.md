@@ -1,75 +1,60 @@
-# Network Datasets Architecture
+# Network Datasets
 
-The repository is a **Network Dataset / Rule Distribution** platform.
+Network Dataset is a first-class companion output of the Collection Release Candidate. It is not a substitute for Service Canonical or Source Evidence.
 
-Two domains share CI and collectors but **must not** collapse into one model:
+## Inputs
 
-```
-Service Rules                    Network Datasets
-registry.yaml                    sources/datasets/*
-database/services|domains|ips    database/geosite|geoip|asn|network|policies
-rule_loader                      dedicated dataset loaders (no load_everything)
-×7 client builders               Capability Matrix (not all datasets × 7)
-```
+Collectors refresh committed inputs under `database/` from the registries in `sources/datasets/` and `sources/ip_registry.yaml`.
 
-## Capability Matrix
+Build never performs network access for these datasets. `scripts/build_network_bundle.py` materializes only from the collected repository state.
 
-| Dataset | mihomo | sing-box | surge | notes |
-|---------|--------|----------|-------|-------|
-| Service rules | list | json | list | existing ×7 |
-| LAN / private | list | cidr | list | `generated/network/` |
-| Geosite direct/proxy | DOMAIN-SUFFIX | domains | list | `generated/geosite/` |
-| GeoIP country | IP-CIDR | cidr | list | `generated/geoip/` |
-| GeoIP MMDB | binary | binary | — | `generated/mmdb/` artifact only |
-| ASN metadata | yaml | yaml | — | provider scope only |
-| Proxy/Direct policy | manifest | manifest | — | references datasets |
-| DNS servers | yaml | yaml | — | registry only, not full config |
+## Output
 
-## Directory contract
+`generated/` always contains the Network Dataset scopes in the same release tree as the client rules when the required inputs are present:
 
-```
-database/
-  services/ domains/ ips/     # Service Rules (frozen)
-  network/                    # LAN, private
-  geosite/                    # category domain lists
-  geoip/                      # country CIDR lists
-  asn/                        # metadata
-  policies/                   # proxy/direct/dns
-  datasets_provenance/
-generated/
-  mihomo/ … loon/             # Service client rules
-  network/ geosite/ geoip/    # Network exports
-  mmdb/                       # MMDB artifacts (never expanded to ips/)
-  policies/
-sources/datasets/
-  network.yaml geosite.yaml geoip.yaml asn.yaml policy.yaml
-```
+- `network/` — LAN, private, DNS, NTP and STUN.
+- `geosite/` — direct/proxy/reject/china and other configured domain classes.
+- `geoip/` — country/region CIDRs.
+- `provider/` — provider CIDRs.
+- `asn/` — curated ASN metadata.
+- `ip/` — audited service IP sets.
+- `policies/` — dataset policy manifests.
+- `mmdb/` — MMDB/DAT binary distribution.
 
-## Pipeline
+`network_manifest.json` records the input path, output path, SHA-256 and byte/line counts for every materialized artifact.
 
-```
-validate_dataset_registry
-  → build_network_lan
-  → collect_datasets
-  → build_network_datasets
-```
+## Semantics
 
-Isolated from Service `collect → normalize → ×7 builders`.
+Network data is intentionally separate from Service Identity:
 
-## Status (2026-08-28)
+`ASN → provider attribution only`
 
-| Track | Status |
-|-------|--------|
-| P0 LAN/private | **done** |
-| P1 Geosite direct/proxy | **done** |
-| P1 GeoIP cn/jp/hk/sg/kr | **done** |
-| P1 Country.mmdb artifact | **done** (CI fetch) |
-| P1 ASN metadata | **done** |
-| P2 Proxy/Direct/DNS policy | **done** (manifests + DNS server registry) |
+`Provider CIDR → provider infrastructure only`
 
-## Non-goals
+`GeoIP → geographic addressing only`
 
-- AWS ASN → Amazon service lists
-- Explode MMDB into `database/ips/`
-- Geosite category = Service id
-- Full proxy config generator (separate project if ever)
+`Geosite → domain classification only`
+
+`Service IP → only after explicit Collection ownership audit`
+
+None of the above may be promoted into a Service rule merely because a hostname or CIDR appears in the dataset.
+
+## Former intermittent generation bug
+
+Previously, `collect_datasets.py`, `collect_ip.py`, `collect_providers.py`, `build_network_datasets.py` and `build_network_lan.py` were outside the V3 build DAG. Their outputs could therefore be absent after a clean publish.
+
+Now:
+
+    Collect
+      ↓
+    database/
+      ↓
+    build_network_bundle.py
+      ↓
+    release-candidate/generated/
+      ↓
+    generated/manifest.json
+      ↓
+    atomic publish
+
+Missing required network scope is a Release Publish failure, not a silent omission.

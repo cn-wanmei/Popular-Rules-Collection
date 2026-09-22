@@ -5,6 +5,11 @@ on:
     branches: [main]
     paths:
       - "backup/**"
+      - "database/**"
+      - "sources/datasets/**"
+      - "sources/ip_registry.yaml"
+      - "scripts/build_network_bundle.py"
+      - "scripts/generated_manifest.py"
       - "src/engine/**"
       - "scripts/cross_client_semantic_test.py"
       - "scripts/architecture_gate.py"
@@ -25,6 +30,11 @@ on:
     branches: [main]
     paths:
       - "backup/**"
+      - "database/**"
+      - "sources/datasets/**"
+      - "sources/ip_registry.yaml"
+      - "scripts/build_network_bundle.py"
+      - "scripts/generated_manifest.py"
       - "src/engine/**"
       - "scripts/**"
       - "config/**"
@@ -226,6 +236,15 @@ jobs:
           mkdir -p release-candidate/data/runs release-candidate/data/baseline
           cp -a "data/runs/${RUN_ID}" release-candidate/data/runs/
           rm -f "release-candidate/data/runs/${RUN_ID}/ir/ir.json"
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            NETWORK_ARGS=(--allow-missing-artifacts)
+          else
+            NETWORK_ARGS=()
+          fi
+          GIT_COMMIT="${{ github.sha }}" python scripts/build_network_bundle.py --output release-candidate/generated --date "${{ steps.source.outputs.collection_date }}" "${NETWORK_ARGS[@]}"
+          python scripts/generated_manifest.py --root release-candidate/generated --output release-candidate/generated/manifest.json --date "${{ steps.source.outputs.collection_date }}"
+
+          echo "Materialize unified Network Dataset release"
           printf '%s\n' "$RUN_ID" > release-candidate/run-id.txt
           printf '%s\n' "${{ github.run_id }}" > release-candidate/build-run-id.txt
           printf '%s\n' "${{ github.sha }}" > release-candidate/build-head-sha.txt

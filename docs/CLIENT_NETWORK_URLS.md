@@ -1,55 +1,46 @@
-# 客户端 Network Dataset 稳定入口
+# Client Network Dataset URLs
 
-> **Service Rules** 与 **Network Datasets** 双轨分离。  
-> 优先使用本仓库 URL，避免直接依赖上游 `latest`。
+`Service Rules` and `Network Datasets` are separate semantic layers but are published from the same immutable Release Candidate.
 
-前缀：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/`
+Prefix: `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/`
 
 ## GeoIP
 
-| 产物 | 路径 |
-|------|------|
+| Artifact | Path |
+|---|---|
 | Country.mmdb | `generated/mmdb/Country.mmdb` |
+| ASN.mmdb | `generated/mmdb/ASN.mmdb` |
 | geoip-lite.dat | `generated/mmdb/geoip-lite.dat` |
 | geoip.dat | `generated/mmdb/geoip.dat` |
-| 国家 CIDR | `generated/geoip/cn.txt` 等 |
-
-```yaml
-# Egern
-geoip_db_url: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mmdb/Country.mmdb"
-
-# Mihomo
-geoip-url: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mmdb/geoip-lite.dat"
-```
+| Country CIDR | `generated/geoip/<country>.txt` |
 
 ## ASN
 
-| 产物 | 路径 |
-|------|------|
-| ASN.mmdb | `generated/mmdb/ASN.mmdb`（CI `collect_datasets` 镜像） |
-| 元数据 | `database/asn/metadata.yaml`（不可作 rule-set） |
+| Artifact | Path |
+|---|---|
+| ASN.mmdb | `generated/mmdb/ASN.mmdb` |
+| Metadata | `generated/asn/metadata.yaml` |
 
-```yaml
-asn_db_url: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mmdb/ASN.mmdb"
-```
+ASN metadata is provider attribution only; it is never Service Identity evidence.
 
 ## GeoSite
 
-| 产物 | 路径 |
-|------|------|
+| Artifact | Path |
+|---|---|
 | geosite.dat | `generated/mmdb/geosite.dat` |
-| direct/proxy 文本 | `generated/geosite/*.txt` |
+| text datasets | `generated/geosite/<name>.txt` |
+| Mihomo projection | `generated/geosite/<name>_mihomo.list` |
 
-```yaml
-geosite-url: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mmdb/geosite.dat"
-```
+## Network
 
-GeoSite ≠ Service Registry。
+`generated/network/` contains LAN/private/DNS/NTP/STUN materializations. Network datasets are generated together with the client rule release and are represented in `generated/manifest.json`.
 
-## LAN
+## Provider / Service IP
 
-`generated/network/lan_mihomo.list` → **DIRECT**
+`generated/provider/` contains provider CIDRs; `generated/ip/` contains explicitly collected service/country/carrier IP sets. Neither provider nor GeoIP data may be interpreted as product ownership.
 
-## 边界
+## Boundary
 
-Service Rules → 产品域名/IP；Network Datasets → GeoIP/GeoSite/ASN/LAN；Provider ≠ Service。
+Service Rules → product-scoped domains/IPs.
+
+Network Datasets → GeoIP/GeoSite/ASN/LAN/provider/policy support data.

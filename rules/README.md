@@ -1,61 +1,32 @@
-# Reserved canonical rule layout
+# V3 Rule Directory Contract
 
-This tree is a reserved future canonical-rule layout. The active V1 Canonical Service Model is currently under `rule/`; `database/services/` is Legacy Source and `generated/` is distribution output.
+`rules/` 是 V3 目录契约的保留结构，用于描述 Canonical Provider / Service / Aggregate 的目标路径。
+
+当前生产运行的 Canonical 数据保存在 `data/runs/<run-id>/canonical`，因此 `rules/` 不应被理解成另一套独立的 Runtime 数据库。
 
 ```text
-rules/
-├── china/
-│   └── all/
-│       └── rules.yaml
-├── apple/
-│   ├── all/rules.yaml
-│   ├── appstore/rules.yaml
-│   ├── testflight/rules.yaml
-│   ├── appledev/rules.yaml
-│   ├── findmy/rules.yaml
-│   ├── applemusic/rules.yaml
-│   ├── appletv/rules.yaml
-│   └── ...
-├── google/
-│   ├── all/rules.yaml
-│   ├── gmail/rules.yaml
-│   └── ...
-└── <provider>/
-    ├── all/rules.yaml
-    └── <service-id>/rules.yaml
+backup/<date>
+    ↓
+data/runs/<run-id>/canonical   ← V3 canonical truth
+    ↓
+data/runs/<run-id>/ir
+    ↓
+generated/<client>/<provider>/<service>/...
 ```
 
-## Semantics
+## 与 rule/ 的区别
 
-- `<provider>/all` is the provider-wide aggregate and covers all declared services of that provider.
-- Every independently addressable service gets its own directory and its own canonical membership.
-- Service directory names use stable service IDs; display names are metadata, not paths.
-- `all` is a logical aggregate generated from canonical memberships; it is not a second hand-maintained service source.
-- Client-specific files belong under `generated/<client>/` and are produced by the engine; they are never edited as canonical sources.
-- Flat service files under a provider root are forbidden.
+- `rule/`：历史 V1 Canonical 浏览/迁移树。
+- `rules/`：V3 目录契约目标与结构约束。
+- `data/runs/<run>/canonical`：当前 V3 运行时 Canonical 真源。
+- `generated/`：最终客户端和 Network Dataset 发行层。
 
-## China aggregate
+因此 `rule/`、`rules/`、`generated/` 三者不承担相同职责，也没有逐文件一致性要求。
 
-`rules/china/all` is the domestic China aggregate. Its input universe is the complete China domain/IP rule universe. Providers explicitly declared as independent service trees are excluded from this aggregate, so their authoritative rules live in their own provider/service trees. China itself has **no** `alibaba/`, `tencent/`, `baidu/`, `jd/`, `meituan/` or other independent-service subdirectories.
+## Service 与 Network 的边界
 
-The initial independent-provider exclusion set is:
+Service Rule 进入 `generated/<client>/...`；Network Dataset 进入：
 
-- Alibaba
-- Tencent
-- Baidu
-- JD
-- Meituan
-- ByteDance
-- NetEase
-- Huawei
-- Xiaomi
-- OPPO
-- vivo
+`generated/network/`、`generated/geosite/`、`generated/geoip/`、`generated/provider/`、`generated/asn/`、`generated/ip/`、`generated/policies/`、`generated/mmdb/`。
 
-The exclusion list is configuration, not filename convention. A service is never included or excluded merely because its name happens to contain a provider name.
-
-## Materialization rule
-
-No 100–200 service backfill is performed in this directory-contract phase. New services are added only after the directory contract, generator, and CI gates pass review. Each new service then receives `rules/<provider>/<service-id>/` and a corresponding generated client tree.
-
-> Phase 8 note: `rules/` is a reserved future canonical-rule layout. The active V1 Canonical Service Model is currently rooted at `rule/`. `database/services/` is Legacy Source and `generated/` is distribution output.
+Provider、ASN、GeoIP、Geosite 都不得反向推导为 Service Identity。

@@ -1,74 +1,41 @@
-# IP Architecture (Phase 2B-IP)
+# IP Architecture
 
-## Why domain ≫ IP is not automatically a bug
+IP data is a separate evidence scope from Service Domain Identity.
 
-Most modern services sit behind CDN / Anycast / shared cloud ranges.
-**Domain → service** is usually more accurate than **IP → service**.
-Inflating IP counts by attaching provider ranges to services causes mis-routing
-(e.g. AWS → Amazon.list would hit Netflix, OpenAI, Discord, …).
-
-## Hard scopes (`ip_scope`)
-
-| Scope | Meaning | May enter service client ruleset? |
-|-------|---------|-------------------------------------|
-| `service` | Addresses verified as *that product only* | Yes |
-| `provider` | Cloud/CDN operator (AWS, Cloudflare, …) | **No** (infra lists only) |
-| `country` | National aggregates (CN, US, …) | Only via country ids (`china`, …) |
-| `carrier` | ISP ranges (CMCC / CU / CT) | Only via carrier ids |
-| `infrastructure` | DNS, STUN, NTP, private, … | Dedicated infra ids only |
-
-### Examples
-
-- `8.8.8.8` → provider/infrastructure Google DNS — **not** `service: google` product suite.
-- Loyalsoldier `cn.txt` → `scope: country` → `china` id only.
-- OpenAI published API ranges (if ever verified) → `scope: service` → `openai`.
-
-## Directory contract (compatible with current builders)
-
-Builders read **flat** `database/ips/{id}.txt` (same id as service/country/carrier).
-
-```
-database/ips/
-  china.txt           # country
-  chinamobile.txt     # carrier
-  chinaunicom.txt
-  chinatelecom.txt
-  openai.txt          # service (only if verified service-owned)
-  cloudflare.txt      # prefer infrastructure; do not treat as "all sites on CF"
-  ...
-```
-
-Optional future layout (`service/`, `country/`, …) requires builder changes — **not** in P0.
-
-## Source pool
-
-See `sources/ip_registry.yaml` (independent from domain `sources/registry.yaml`).
+| Scope | Meaning | Service rule eligibility |
+|---|---|---|
+| `service` | Addresses verified as belonging only to that product | Yes, after ownership proof |
+| `provider` | Cloud/CDN/operator infrastructure | No |
+| `country` | Geographic aggregate | No direct service attribution |
+| `carrier` | ISP/carrier ranges | Dedicated carrier scope only |
+| `infrastructure` | DNS/STUN/NTP/private ranges | Dedicated infrastructure scope only |
 
 ## Pipeline
 
-```
-ip_registry → validate_ip_registry → collect_ip → ip_cidr normalize/dedup
-     → database/ips/{id}.txt + database/ips_provenance/{id}.json
-     → rule_loader / ×7 builders
-```
+    sources/ip_registry.yaml
+        ↓
+    validate_ip_registry
+        ↓
+    collect_ip
+        ↓
+    database/ips + provenance
+        ↓
+    build_network_bundle
+        ↓
+    generated/ip
+        ↓
+    generated/manifest.json
+        ↓
+    immutable Release Candidate
 
-## P0 / P1 / P2 (IP track)
+## Important distinction
 
-- **P0**: schema + registry + CIDR tools + country/carrier seed (CN) + quality gate
-- **P1**: more country lists; operator lists; never auto-map GeoIP country → service
-- **P2**: verified *service*-owned ranges only (OpenAI/Google/… after manual proof)
+`generated/geoip` is geographic address space.
 
-Domain hot-service gaps remain a **separate** track.
+`generated/provider` is provider infrastructure.
 
-## IP Quality Gate (P0 completion)
+`generated/asn` is provider attribution metadata.
 
-```text
-validate_ip_registry.py   # hard maps_to / scope rules
-collect_ip.py             # fetch + merge + provenance
-ip_quality_audit.py       # invalid=0, unscoped flags
-```
+`generated/ip` contains only IP sets that Collection explicitly accepts under its IP ownership/scope rules.
 
-Provenance: `database/ips_provenance/{maps_to}.json` answers:
-source id, scope, path, fetched_at, why maps_to.
-
-KPI: source health + invalid_cidr=0 + scope correctness — **not** raw CIDR count.
+ASN → Provider and Provider CIDR → Service are forbidden inferences.

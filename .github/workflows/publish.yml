@@ -150,6 +150,34 @@ jobs:
           print("Phase 8 final migration gate evidence: PASS")
           PY
 
+      - name: Verify complete generated distribution
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s release-candidate/generated/manifest.json
+          test -s release-candidate/generated/network_manifest.json
+          for required in \
+            release-candidate/generated/geosite/direct.txt \
+            release-candidate/generated/geosite/proxy.txt \
+            release-candidate/generated/geoip/cn.txt \
+            release-candidate/generated/geoip/jp.txt \
+            release-candidate/generated/network/lan.txt \
+            release-candidate/generated/network/private.txt \
+            release-candidate/generated/asn/metadata.yaml \
+            release-candidate/generated/provider/cloudflare.txt; do
+            test -s "$required" || { echo "missing generated network artifact: $required"; exit 1; }
+          done
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          m=json.loads(Path("release-candidate/generated/manifest.json").read_text(encoding="utf-8"))
+          scopes=set(m.get("network_dataset_directories") or [])
+          expected={"asn","geoip","geosite","network","provider","policies","ip"}
+          missing=sorted(expected-scopes)
+          if missing:
+              raise SystemExit(f"network distribution incomplete: missing scopes={missing}")
+          print(f"generated distribution gate: PASS files={m.get('file_count')} network={sorted(scopes)} mmdb_optional={'mmdb' in scopes}")
+          PY
       - name: Verify release identity
         shell: bash
         run: |

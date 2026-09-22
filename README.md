@@ -1,79 +1,112 @@
 # Popular-Rules-Collection
 
-> **规则数据供应链 + 标准化中间库 + 多客户端构建系统**
-> Rules Data Supply Chain · Universal Rule Database · Multi-format Build System
+> 面向 Mihomo / sing-box / Surge / Shadowrocket / Quantumult X / Egern / Loon 的规则数据生产管线：Collect → Normalize → Canonical → IR → Client Adapters → Immutable Release。
 
-自动采集、标准化、智能去重、冲突检测、版本追踪，并向 **Mihomo / Clash Meta / sing-box / Surge / Shadowrocket / Quantumult X / Egern / Loon** 输出规则集。
+## 生产真源与目录
 
-## 我该怎么用？
+当前 V3 生产链路只有一条权威路径：
 
-1. 打开 **[使用指南 docs/USAGE.md](docs/USAGE.md)** — 选规则、订阅读、策略顺序
-2. 查 **[规则目录 docs/RULE_CATALOG.md](docs/RULE_CATALOG.md)** — 每条规则的说明与使用场景
-3. 单服务 Raw 链接见 **[docs/rules/](docs/rules/)**
+`backup/<collection-date>` → V3 Engine → `data/runs/<run-id>` → Release Candidate → `generated/` → Publish。
 
-## 架构
+| 路径 | 角色 | 是否为 V3 Runtime 输入 |
+|---|---|---|
+| `backup/<date>/` | 不可变 Collection 输入快照 | 是 |
+| `data/runs/<run>/canonical/` | 本次运行的 Canonical 真源 | 是 |
+| `data/runs/<run>/ir/` | Semantic IR | 是 |
+| `generated/<client>/` | 七客户端最终编译分流规则集 | 否（运行输出） |
+| `generated/network/` | LAN / Private / DNS / NTP / STUN 等 Network Dataset | 否（运行输出） |
+| `generated/geosite/` | Geosite 分类数据 | 否（运行输出） |
+| `generated/geoip/` | Country GeoIP CIDR 数据 | 否（运行输出） |
+| `generated/provider/` | Provider CIDR 数据 | 否（运行输出） |
+| `generated/asn/` | ASN / Provider 元数据 | 否（运行输出） |
+| `generated/ip/` | 已审计的服务 IP 数据 | 否（运行输出） |
+| `generated/policies/` | Network Policy 数据集 | 否（运行输出） |
+| `generated/mmdb/` | MMDB / DAT 二进制发行物 | 否（运行输出） |
+| `rule/` | 历史 V1 Canonical 浏览树 | **否** |
+| `rules/` | 目录契约保留树；不是第二套数据库 | **否** |
 
-Service Rules 与 Network Datasets 隔离。Service Rules 的生产构建统一由 V3 Engine 执行：
+`generated/manifest.json` 是整个最终发行树的单一文件级目录清单；`generated/network_manifest.json` 是 Network Dataset 的独立 provenance 清单。
 
-```text
-Upstream / Source Registry
-  → collect（只负责抓取）
-  → immutable snapshot
-  → ingest → quarantine → canonical
-  → hierarchy / decision → IR
-  → adapters ×7 → diff → golden → release
-  → atomic promotion → generated/
-
-Network Dataset Sources
-  → collect_datasets / collect_ip / collect_providers
-  → database/{network,geosite,geoip,provider,asn,policies}
-  → dataset validation → generated/{network,geosite,geoip,provider}
-```
-
-## 目录
-
-| 路径 | 用途 |
-|------|------|
-| `rule/` | 人读浏览（Primary 生态路径） |
-| `database/` | Network Dataset 中间库；不是 V3 Service Rule Runtime 输入 |
-| `generated/` | 客户端可订阅产物 |
-| `sources/` | registry · ip_registry · datasets · health |
-| `data/runs/` | V3 immutable run 与发布证据 |
-| `docs/` | USAGE · RULE_CATALOG · 架构与质检 |
-| `config/` | pipeline · capabilities · intentional |
-| `reports/` | 覆盖率 / 质量 / 能力矩阵 |
-| `tests/` | 契约与回归测试 |
-
-## 快速开始（开发者）
-
-```bash
-pip install -r requirements.txt
-
-# 仅抓取上游
-python scripts/collect.py
-
-# V3：从当天 collected snapshot 构建一整次 immutable run
-DAY=$(date -u +%Y-%m-%d)
-PYTHONPATH=. python -m src.engine.cli all --sources "backup/${DAY}" --data data
-
-# 查看当前 Engine 版本
-PYTHONPATH=. python -m src.engine.cli --version
-
-# 对一个已经通过 release gate 的 run 做发布
-PYTHONPATH=. python -m src.engine.cli promote --run-id <run_id>
-```
-
-`python scripts/normalize.py`、`python scripts/deduplicate.py` 与 `scripts/build_*.py` 已退出生产链，仅作为迁移阶段遗留工具保留。
-
-## 订阅约定
-
-- **Primary**: GitHub Raw
-- **Mirror**: jsDelivr / Fastly（仅加速，非权威）
+## 完整生产链
 
 ```text
-.../generated/<client>/<service_id>.yaml|list|json
+Official / External Upstream
+          ↓
+Collection DAG
+          ↓
+backup/<date>
+          ↓
+Immutable Source Lineage Gate
+          ↓
+V3 Snapshot
+  → Ingest
+  → Source Gate
+  → Quarantine
+  → Canonical
+  → Hierarchy
+  → Semantic IR
+  → 7 Client Adapters
+  → Determinism / Semantic / Directory Gates
+          ↘
+           Network Dataset Materialization
+            → generated/network
+            → generated/geosite
+            → generated/geoip
+            → generated/provider
+            → generated/asn
+            → generated/ip
+            → generated/policies
+            → generated/mmdb
+          ↓
+Release Candidate
+          ↓
+Immutable Publish
+          ↓
+generated/ + data/runs/ + baseline
 ```
 
-## License
+Network Dataset 与 Service Rule 是不同语义层，但现在属于同一个 Release Candidate，不再通过旁路脚本决定“这次有没有生成”。
 
-MIT
+## Source Integration
+
+Popular-Rules-Source 提供官方证据驱动的 Supplemental Source。Collection 对 Source 使用 immutable SHA 与 provenance v2 精确绑定：
+
+```text
+Source durable seal
+      ↓
+immutable_registry.yaml
+      ↓
+exact SHA + content/evidence/policy/generator/release digests
+      ↓
+Collection Source Gate
+      ↓
+V3 Build / Canary / Production
+```
+
+Source 的跨仓库自动交接由 Collection 自己持有，不依赖跨仓库 Secret。
+
+## 最终订阅入口
+
+消费者订阅 `generated/<client>/...` 及 `generated/<network-scope>/...`。不要把 `rule/` 当作当前 V3 Runtime 真源，也不要把 Provider / ASN / GeoIP / Geosite 数据解释为 Service Identity。
+
+## CI / Release
+
+所有主线发布都经过 Architecture、Lineage、V3、Semantic、Determinism、Directory、Evidence 与 Release Gate。Network Dataset 现在额外要求：
+
+- 统一构建；
+- 明确 provenance；
+- 关键 scope 完整；
+- `generated/manifest.json` 存在；
+- Release Publish 前再次 fail-closed 校验。
+
+## 文档
+
+- `docs/PRODUCTION_RULE_CHAIN.md`
+- `docs/GENERATED_OUTPUTS.md`
+- `docs/NETWORK_DATASETS.md`
+- `docs/ARCHITECTURE.md`
+- `docs/IP_ARCHITECTURE.md`
+- `rule/README.md`
+- `rules/README.md`
+
+`PUBLISH_STATUS.md`、状态报告和 `reports/` 下的运行结果属于自动生成证据，不手工维护派生数字。
