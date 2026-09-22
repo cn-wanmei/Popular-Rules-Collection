@@ -1,0 +1,27 @@
+{
+  "schema": "phase2_taobao_activation_evidence_v1",
+  "service_id": "taobao",
+  "workflow_run_id": 35680687328,
+  "artifact_id": 10674478298,
+  "artifact_digest": "sha256:e321105cc24945769d855b48a8eea6e64d1ca898ac2cbb22f1750256f682fec2",
+  "source_commit": "ffc7375b31080ea735c8bcc8ee59066b969c382f",
+  "verified_input_commit": "4cfabcfc3e77806bc054035162ae64f93fa0505b",
+  "snapshot_id": "snap-taobao-d34b149646aa56450032d01d",
+  "content_digest": "cfd55feeff484e929a6ae7d440b00b424ac10d3c68e0ad77aa09d164e9db9719",
+  "checks": {
+    "golden_pass": true,
+    "seven_client_semantic_pass": true,
+    "collection_reconciliation_pass": true,
+    "rollback_pass": true,
+    "observation_window_started": true,
+    "production_unlock": "PASS"
+  },
+  "runs": {
+    "reconciliation": "reconcile-taobao-eae5cfc5d54bc726",
+    "semantic": "canary-taobao-release-2",
+    "rollback": "rollback-taobao-6a64e023e0eddcdb",
+    "observation": "observe-taobao-ed5b9063e584f5c4",
+    "production_unlock": "35680687328"
+  },
+  "status": "PASS"
+}
