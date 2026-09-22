@@ -34,6 +34,12 @@ rollback:
   force_main_replacement: false
 
 production_unlock:
+  legacy_production_services:
+    - 1688
+    - cainiao
+    - dingding
+    - qqmail
+    - qqmusic
   requires:
     - source_release_verified
     - immutable_lineage_match
