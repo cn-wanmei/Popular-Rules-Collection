@@ -40,9 +40,22 @@ jobs:
         run: python scripts/icon_v3_gate.py --build-root build/icon-v3
       - name: Collect upstream metadata
         run: python scripts/icon_v3_collect.py --fetch --output build/icon-v3/upstream-sources.json
+      - name: Resolve release version
+        id: version
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            VERSION="${{ inputs.version }}"
+          else
+            VERSION="$(date -u +%Y.%m.%d)-${GITHUB_SHA:0:12}"
+          fi
+          test -n "${VERSION}"
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+
       - name: Materialize immutable release
         env:
-          ICON_VERSION: ${{ inputs.version }}
+          ICON_VERSION: ${{ steps.version.outputs.version }}
         run: python scripts/icon_v3_release.py --build-root build/icon-v3 --version "${ICON_VERSION}"
       - name: Commit release to current phase2 branch
         shell: bash
@@ -55,5 +68,5 @@ jobs:
             echo "No icon release changes."
             exit 0
           fi
-          git commit -m "feat(icons): materialize Icon System 3 release ${{ inputs.version }}"
+          git commit -m "feat(icons): materialize Icon System 3 release ${{ steps.version.outputs.version }}"
           git push origin HEAD:"${GITHUB_REF_NAME}"
