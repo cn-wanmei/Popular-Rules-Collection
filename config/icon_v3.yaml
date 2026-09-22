@@ -33,6 +33,23 @@ scoring:
   file_efficiency: 5
 protected_brands: [apple, google, microsoft, amazon, aws, openai, anthropic, netflix, telegram, github, alibaba, alipay, taobao, tmall, jd, wechat, whatsapp, facebook, instagram, paypal, stripe]
 source_overrides:
+  "1688":
+    name: 1688
+    icon_key: "1688"
+    status: verified
+    source:
+      provider: see-yue-theme
+      provenance: third_party
+      verified: true
+      type: see-yue-theme
+      url: https://github.com/jinghu-moon/typora-see-yue-theme/blob/fe68d70b682eb0c71d3f269cf43f407bfac64247/SeeYue/Images/Favicon/01-Lives-Websites/1.1-Shopping/1688.svg
+      commit: fe68d70b682eb0c71d3f269cf43f407bfac64247
+    files:
+      svg: source/1688.svg
+    license:
+      type: Apache-2.0
+      reviewed: true
+      note: Source repository declares Apache-2.0; trademark rights remain with 1688.
   cainiao:
     name: Cainiao
     icon_key: cainiao
