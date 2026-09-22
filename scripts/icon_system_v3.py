@@ -145,7 +145,8 @@ def entries(man,cfg):
         add(sid,key,meta,role)
     for key,label in STRATEGY.items():
         sid="strategy."+slug(key)
-        if sid not in present: out.append({"service_id":sid,"icon_identity":sid,"role":"strategy","canonical_name":label,"meta":{},"icon_key":key})
+        if sid not in seen:
+            add(sid,key,{"name":label}, "strategy")
     for key,glyph in ((cfg.get("semantic_sets") or {}).get("client_policy") or {}).items():
         sid="client-policy."+slug(key)
         out.append({"service_id":sid,"icon_identity":sid,"role":"client_policy","canonical_name":str(key),"meta":{},"icon_key":str(glyph)})
