@@ -1,34 +1,40 @@
 # Cainiao
 
-> Source 官方证据链进入 Collection V3 后的当前规则说明页。订阅路径直接取自 `generated/manifest.json`。
+> Current V3 service documentation. Subscription paths are derived from `generated/manifest.json`.
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `cainiao` |
 | Primary Ecosystem | `alibaba` |
-| Source | Popular-Rules-Source immutable lineage |
+| Service Type | service |
+| Parent Aggregate | `alibaba` |
 | Release Date | 2026-09-22 |
-| Rule Count | 1 |
+| Dedicated client outputs | 7 / 7 |
 
 ## 当前生产订阅路径
 
 | 客户端 | 路径 | Raw |
 |--------|------|-----|
-| mihomo | `mihomo/alibaba/cainiao/rules.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/mihomo/alibaba/cainiao/rules.yaml) |
-| singbox | `singbox/alibaba/cainiao/rules.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/singbox/alibaba/cainiao/rules.json) |
-| surge | `surge/alibaba/cainiao/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/surge/alibaba/cainiao/rules.list) |
-| shadowrocket | `shadowrocket/alibaba/cainiao/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/shadowrocket/alibaba/cainiao/rules.list) |
-| quantumultx | `quantumultx/alibaba/cainiao/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/quantumultx/alibaba/cainiao/rules.list) |
 | egern | `egern/alibaba/cainiao/rules.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/egern/alibaba/cainiao/rules.yaml) |
 | loon | `loon/alibaba/cainiao/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/loon/alibaba/cainiao/rules.list) |
+| mihomo | `mihomo/alibaba/cainiao/rules.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/mihomo/alibaba/cainiao/rules.yaml) |
+| quantumultx | `quantumultx/alibaba/cainiao/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/quantumultx/alibaba/cainiao/rules.list) |
+| shadowrocket | `shadowrocket/alibaba/cainiao/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/shadowrocket/alibaba/cainiao/rules.list) |
+| singbox | `singbox/alibaba/cainiao/rules.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/singbox/alibaba/cainiao/rules.json) |
+| surge | `surge/alibaba/cainiao/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/surge/alibaba/cainiao/rules.list) |
 
-## Source 边界
+## 当前真源边界
 
-该服务的上游证据由 Popular-Rules-Source 提供；Collection 通过 immutable Source binding 消费。Candidate / lifecycle 状态不能绕过 Source Gate 直接晋级生产。
+- V3 Canonical：`data/runs/<run-id>/canonical/`
+- Semantic IR：`data/runs/<run-id>/ir/`
+- 最终发行：`generated/`
+- `rule/`：V1 历史浏览/迁移树
+- `rules/`：V3 目录契约
+- `database/services/`：Legacy evidence，不是 V3 Runtime 真源
 
-## 当前真源
+## 目录契约
 
-V3 Canonical：`data/runs/<run-id>/canonical/`；Semantic IR：`data/runs/<run-id>/ir/`；最终交付：`generated/`。
+当前客户端目录只能使用 `mihomo`、`singbox`、`surge`、`shadowrocket`、`quantumultx`、`egern`、`loon`。历史 `sing-box` / `quantumult-x` 名称不属于当前目录契约。
 
 ---
-_页面由当前生产 manifest 约束；不要引用历史 generated/sing-box、generated/quantumult-x 或 database/services 路径。_
+_页面日期来源：2026-09-22。生产路径来源：generated/manifest.json。_
