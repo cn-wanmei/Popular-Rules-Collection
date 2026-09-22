@@ -3,7 +3,7 @@ name: Directory Gate
 on:
   pull_request:
   push:
-    branches: [main, feat/rule-directory-v1]
+    branches: [main]
 
 jobs:
   directory-gate:

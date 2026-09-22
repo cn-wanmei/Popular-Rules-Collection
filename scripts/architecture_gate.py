@@ -94,6 +94,8 @@ def _legacy_ref_scan() -> list[str]:
 def main() -> int:
     failures: list[str] = []
     failures.extend(_legacy_ref_scan())
+    if (ROOT / "rules").exists():
+        failures.append("obsolete third rule tree exists: rules/")
 
     for forbidden in (".github/workflows/" + "normalize.yml", "scripts/" + "pipeline.py"):
         if (ROOT / forbidden).exists():

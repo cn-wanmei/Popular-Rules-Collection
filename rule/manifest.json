@@ -1,0 +1,17 @@
+{
+  "schema": "human_rule_distribution_manifest_v1",
+  "version": 1,
+  "status": "pending_next_release",
+  "run_id": null,
+  "ir_schema": "semantic_ir_v2",
+  "ir_digest": null,
+  "rule_file_count": 0,
+  "rule_count": 0,
+  "entities": {
+    "provider_aggregates": 0,
+    "services": 0,
+    "categories": 0,
+    "other": 0
+  },
+  "files": []
+}

@@ -36,19 +36,15 @@ Every Release Candidate must contain:
 
 The same generated tree is the input to atomic publish. This removes the former failure mode where a legacy network script produced files that were not part of the V3 release candidate.
 
-## Why `generated/` and `rule/` differ
+## Human rule browse distribution
 
-They represent different layers:
+`rule/` is the user-facing, client-neutral browse/search/selection tree. It is generated during the same V3 Engine Run as the client artifacts:
 
-    rule/                 legacy V1 model
-            ↓
-    V3 migration / Canonical
-            ↓
-    Semantic IR
-            ↓
-    generated/<client>/   client-specific compiled rules
+    Canonical → Semantic IR
+                  ├→ rule/
+                  └→ generated/<client>/
 
-Therefore file names, grouping, aggregates and syntax can differ.
+`rule/` contains generic typed rule records plus deterministic Run / IR provenance. It is never treated as engine input and is not copied from a client adapter.
 
 ## Reproducibility
 

@@ -11,8 +11,6 @@ on:
       - "sources/immutable_registry.yaml"
       - "sources/datasets/**"
       - "sources/ip_registry.yaml"
-      - "scripts/build_network_bundle.py"
-      - "scripts/generated_manifest.py"
   workflow_dispatch:
     inputs:
       skip_large:
@@ -126,13 +124,6 @@ jobs:
           python scripts/collect_ip.py
           python scripts/collect_providers.py
 
-      - name: Materialize unified Network Dataset outputs
-        env:
-          GIT_COMMIT: ${{ github.sha }}
-        run: |
-          set -euo pipefail
-          python scripts/build_network_bundle.py --output generated --date "${{ steps.date.outputs.day }}"
-          python scripts/generated_manifest.py --root generated --output generated/manifest.json --date "${{ steps.date.outputs.day }}"
       - name: Commit collected snapshot
         id: commit
         shell: bash
@@ -143,7 +134,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add -A "backup/${DAY}/" database/ generated/ data/collection/ sources/health.yaml reports/
+          git add -A "backup/${DAY}/" database/ data/collection/ sources/health.yaml reports/
           if git diff --staged --quiet; then
             echo "No collection changes."
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -151,7 +142,7 @@ jobs:
           fi
           git commit -m "chore(collect): snapshot ${DAY}"
 
-          git add -A "backup/${DAY}/" database/ generated/ data/collection/ sources/health.yaml reports/
+          git add -A "backup/${DAY}/" database/ data/collection/ sources/health.yaml reports/
           if [ -n "$(git status --porcelain=v1)" ]; then
             echo "Collection workspace is dirty after commit. Residual changes:"
             git status --short

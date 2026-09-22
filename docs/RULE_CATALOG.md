@@ -1,29 +1,38 @@
 # 规则目录与使用场景
 
-## 当前生产目录
-规则最终发行结构由 `config/builder_registry.yaml` 与 `generated/manifest.json` 锁定：
+## 三层边界
+
+`data/runs/<run-id>/canonical` 是 V3 Canonical 真源；`data/runs/<run-id>/ir` 是语义中间层；最终从同一个 Run 生成两个面向消费者的发行投影：
 
 ```text
-generated/
-├── mihomo/<ecosystem>/<service-or-all>/rules.yaml
-├── singbox/<ecosystem>/<service-or-all>/rules.json
-├── surge/<ecosystem>/<service-or-all>/rules.list
-├── shadowrocket/<ecosystem>/<service-or-all>/rules.list
-├── quantumultx/<ecosystem>/<service-or-all>/rules.list
-├── egern/<ecosystem>/<service-or-all>/rules.yaml
-└── loon/<ecosystem>/<service-or-all>/rules.list
+Semantic IR
+   ├── rule/                         用户浏览 / 搜索 / 选择
+   └── generated/
+         ├── <client>/               客户端规则
+         └── <network-scope>/        网络数据
 ```
 
-客户端目录名以 Builder Registry 为准：`mihomo`、`singbox`、`surge`、`shadowrocket`、`quantumultx`、`egern`、`loon`。
+## 人类可读规则树
 
-## 使用原则
-1. 规则集负责匹配；DIRECT / PROXY / REJECT 等策略由客户端配置决定。
-2. Service Rule 与 Network Dataset 是不同语义层。
-3. Provider / ASN / GeoIP / Geosite 不能仅凭出现的域名或 CIDR 证明产品归属。
-4. 不得把旧 `generated/sing-box`、`generated/quantumult-x` 或 `database/*` 路径作为当前生产订阅入口。
+```text
+rule/
+├── <provider>/all/rules.yaml
+├── <provider>/<service>/rules.yaml
+├── china/all/rules.yaml
+├── category/<category>/all/rules.yaml
+├── group/<group>/rules.yaml
+├── aggregate/<aggregate>/rules.yaml
+└── unmapped/<service>/rules.yaml
+```
 
-## Network Dataset
-最终 scope：`network`、`geosite`、`geoip`、`provider`、`asn`、`ip`、`policies`、`mmdb`。
+每个 `rules.yaml` 都是通用、客户端无关的规则记录，并带有 Run ID 与 Semantic IR digest；它不是编辑源，也不是客户端运行时格式。
+
+## 客户端与网络发行
+
+`generated/<client>/...` 由 Client Adapter 编译；`generated/<network-scope>/...` 是网络数据发行树。
 
 ## SSOT
-V3 Canonical=`data/runs/<run-id>/canonical`；Semantic IR=`data/runs/<run-id>/ir`；最终消费者入口=`generated/`。
+
+V3 Canonical=`data/runs/<run-id>/canonical`；Semantic IR=`data/runs/<run-id>/ir`；用户规则发行入口=`rule/`；机器订阅入口=`generated/`。
+
+`rules/` 已删除，不再存在第三套规则目录。

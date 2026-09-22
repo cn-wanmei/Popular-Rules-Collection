@@ -118,6 +118,17 @@ jobs:
           ENGINE_RUN_ID="$(cat release-candidate/run-id.txt)"
           test -d "release-candidate/data/runs/${ENGINE_RUN_ID}"
           test -s "release-candidate/data/runs/${ENGINE_RUN_ID}/release/manifest.json"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          run_id=Path("release-candidate/run-id.txt").read_text(encoding="utf-8").strip()
+          manifest=json.loads(Path("release-candidate/rule/manifest.json").read_text(encoding="utf-8"))
+          assert manifest["schema"] == "human_rule_distribution_manifest_v1", manifest
+          assert manifest["status"] == "ready", manifest
+          assert manifest["run_id"] == run_id, manifest
+          assert manifest["ir_digest"], manifest
+          print("human rule distribution identity: PASS")
+          PY
           echo "Downloaded exact immutable artifact ${ARTIFACT_NAME} (build_run=${EXPECTED_BUILD_RUN_ID}, head_sha=${EXPECTED_BUILD_SHA}, engine_run=${ENGINE_RUN_ID})."
       - name: Architecture Gate
         run: python scripts/architecture_gate.py
@@ -144,28 +155,14 @@ jobs:
           test -s assets/icons/v3/releases/latest/manifest.json
           python scripts/icon_v3_gate.py --build-root assets/icons/v3/releases/latest
 
-      - name: Verify Phase 8 final migration gate evidence
-        shell: bash
-        run: |
-          set -euo pipefail
-          test -s release-candidate/reports/v1/FINAL_MIGRATION_GATE.json
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          obj=json.loads(Path("release-candidate/reports/v1/FINAL_MIGRATION_GATE.json").read_text(encoding="utf-8"))
-          assert obj.get("status") == "PASS", obj
-          assert obj.get("current_head",{}).get("expected") == "${{ inputs.build_head_sha }}", obj.get("current_head")
-          assert obj.get("phase8",{}).get("sot") == "v1_canonical", obj.get("phase8")
-          assert obj.get("deletion_boundary",{}).get("automatic_delete") is False, obj.get("deletion_boundary")
-          print("Phase 8 final migration gate evidence: PASS")
-          PY
-
       - name: Verify complete generated distribution
         shell: bash
         run: |
           set -euo pipefail
           test -s release-candidate/generated/manifest.json
           test -s release-candidate/generated/network_manifest.json
+          test -s release-candidate/rule/manifest.json
+          test -s release-candidate/rule/_index.yaml
           for required in \
             release-candidate/generated/geosite/direct.txt \
             release-candidate/generated/geosite/proxy.txt \
@@ -226,8 +223,9 @@ jobs:
         run: |
           set -euo pipefail
           RUN_ID=$(cat release-candidate/run-id.txt)
-          rm -rf generated data/runs/${RUN_ID}
+          rm -rf generated rule data/runs/${RUN_ID}
           mkdir -p data/runs data/baseline
+          cp -a release-candidate/rule rule
           cp -a release-candidate/generated generated
           cp -a "release-candidate/data/runs/${RUN_ID}" data/runs/
           cp -a release-candidate/data/baseline/canonical.json data/baseline/
@@ -243,7 +241,7 @@ jobs:
           python scripts/classify_service_artifacts.py
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A generated/ data/runs/ data/baseline/ reports/latest_release.json reports/v1/
+          git add -A rule/ generated/ data/runs/ data/baseline/ reports/latest_release.json reports/v1/
           if git diff --staged --quiet; then
             echo "No release changes to publish."
             exit 0
@@ -262,8 +260,9 @@ jobs:
             echo "rebase conflict on attempt ${attempt}; replaying publish tree onto origin/main"
             git rebase --abort
             git reset --hard origin/main
-            rm -rf "data/runs/${RUN_ID}" generated
+            rm -rf "data/runs/${RUN_ID}" generated rule
             mkdir -p data/runs data/baseline
+            cp -a release-candidate/rule rule
             cp -a release-candidate/generated generated
             cp -a "release-candidate/data/runs/${RUN_ID}" data/runs/
             cp -a release-candidate/data/baseline/canonical.json data/baseline/
@@ -277,7 +276,7 @@ jobs:
               --require-latest
             python scripts/partial_production_invariant_gate.py --run-id "${RUN_ID}"
             python scripts/classify_service_artifacts.py
-            git add -A generated/ data/runs/ data/baseline/ reports/latest_release.json
+            git add -A rule/ generated/ data/runs/ data/baseline/ reports/latest_release.json
             if git diff --staged --quiet; then
               echo "No release changes after replay (another job may have published equivalent)."
               exit 0

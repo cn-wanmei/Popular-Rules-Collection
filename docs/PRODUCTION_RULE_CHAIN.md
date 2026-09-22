@@ -17,55 +17,27 @@
        ├─ canonical
        ├─ hierarchy
        ├─ semantic IR
-       └─ 7 client adapters
+       ├─ human rule distribution → rule/
+       └─ 7 client adapters → generated/<client>/
        ↓
     Determinism / Semantic / Directory / Evidence gates
        ↓
-    Network Dataset Materialization
+    Network Dataset Materialization → generated/<network-scope>/
        ↓
     Release Candidate
        ↓
     Immutable Publish
        ↓
-    generated/
-
-Popular-Rules-Source is the upstream evidence supply layer. Collection owns Canonical, IR, client projection, release and final publication.
+    rule/ + generated/
 
 ## What is final
 
-The consumer-facing distribution is `generated/`.
+`rule/` is the user-facing browse/search/selection distribution. `generated/` is the client and network subscription distribution. Both are projections of the same immutable Run.
 
-Service rules are under:
+## Directory policy
 
-    generated/mihomo/
-    generated/singbox/
-    generated/surge/
-    generated/shadowrocket/
-    generated/quantumultx/
-    generated/egern/
-    generated/loon/
-
-Network companion datasets are under:
-
-    generated/network/
-    generated/geosite/
-    generated/geoip/
-    generated/provider/
-    generated/asn/
-    generated/ip/
-    generated/policies/
-    generated/mmdb/
-
-`generated/manifest.json` inventories both groups. A publish is incomplete when a required Network Dataset scope is absent.
-
-## Legacy trees
-
-`rule/` is retained for V1 migration and human browsing. It is not a V3 runtime input.
-
-`rules/` is the V3 directory-contract target. It is not an alternative database that must mirror `rule/` or `generated/`.
-
-A difference between `rule/` and `generated/` is therefore expected and is not itself a production defect.
+`rule/` and `generated/` are sibling release projections. `rules/` is deleted and must not be recreated.
 
 ## Fail-closed rule
 
-Generated artifacts are never edited manually to repair a missing route. Repair the upstream source or Canonical input, then rerun the V3 build and promote a new immutable release.
+Generated and human-facing release artifacts are never edited manually to repair a missing rule. Repair the upstream or Canonical input, rerun the V3 build, and publish a new immutable Run.

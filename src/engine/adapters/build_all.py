@@ -50,8 +50,8 @@ def _load_directory_contract() -> tuple[dict[str, str], dict[str, set[str]], dic
     if not _DIRECTORY_POLICY.exists():
         raise RuntimeError(f"Directory policy missing: {_DIRECTORY_POLICY}")
     policy = _load_yaml(_DIRECTORY_POLICY)
-    if policy.get("schema") != "rule_directory_policy_v1":
-        raise RuntimeError("Unsupported rule directory policy schema")
+    if policy.get("schema") != "rule_distribution_policy_v2":
+        raise RuntimeError("Unsupported rule distribution policy schema")
     layout = policy.get("layout") or {}
     if not all(layout.get(k) for k in ("generated_client_root", "generated_aggregate", "generated_service", "generated_china")):
         raise RuntimeError("Directory policy is missing generated path templates")
@@ -206,7 +206,7 @@ def build_all_clients(ir_dir: Path, artifacts_dir: Path, *, views: list[str] | N
     probe_report = validate_semantic_probes(rules, memberships)
     capabilities = _load_capabilities()
     service_provider, provider_services, provider_aggregates, china_exclusions = _load_directory_contract()
-    report: dict[str, Any] = {"schema": "adapter_build_v4", "clients": {}, "views": {"services": sorted(entities.get("services", [])), "aggregate": True, "china": True}, "source_contract": "semantic_ir_v2", "directory_contract": "rule_directory_policy_v1", "china_excluded_independent_providers": sorted(china_exclusions), "semantic_intent": semantic_intent, "semantic_probes": probe_report, "v2_runtime_dependency": 0, "parallel": True}
+    report: dict[str, Any] = {"schema": "adapter_build_v4", "clients": {}, "views": {"services": sorted(entities.get("services", [])), "aggregate": True, "china": True}, "source_contract": "semantic_ir_v2", "directory_contract": "rule_distribution_policy_v2", "china_excluded_independent_providers": sorted(china_exclusions), "semantic_intent": semantic_intent, "semantic_probes": probe_report, "v2_runtime_dependency": 0, "parallel": True}
     with ThreadPoolExecutor(max_workers=min(8, max(1, len(CLIENTS))), thread_name_prefix="adapter") as pool:
         futures = {pool.submit(_build_client, client, meta, rules, memberships, artifacts_dir, capabilities, service_provider, provider_services, provider_aggregates, china_exclusions): client for client, meta in CLIENTS.items()}
         for future in as_completed(futures):
