@@ -134,6 +134,9 @@ jobs:
             --collection-root "backup/${DAY}" \
             --json-out "release-candidate/immutable-source-lineage-publish.json"
 
+      - name: Publish fail-closed policy gate
+        run: python scripts/publish_fail_closed_gate.py --workflow .github/workflows/publish.yml --status-workflow .github/workflows/status.yml
+
       - name: Verify Phase 8 final migration gate evidence
         shell: bash
         run: |
@@ -226,7 +229,9 @@ jobs:
           PYTHONPATH=. python scripts/derive_service_production_evidence.py --run-id "${RUN_ID}"
           python scripts/refresh_latest_release_from_promotion.py --run-id "${RUN_ID}"
           python scripts/status_consistency_gate.py
-          python scripts/evidence_consistency_gate.py --run-id "${RUN_ID}" || true
+          python scripts/evidence_consistency_gate.py \
+            --run-id "${RUN_ID}" \
+            --require-latest
           python scripts/partial_production_invariant_gate.py --run-id "${RUN_ID}"
           python scripts/classify_service_artifacts.py || true
           git config user.name "github-actions[bot]"

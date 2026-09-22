@@ -158,5 +158,12 @@ services:
   tmall:
     state: verified
     enabled: false
-    source_verification: {run: 35519430221, source_commit: adaf6f5f9bf392aedf30b6f491690c5c027428d5, snapshot_id: snap-tmall-789fb08ed581d62f644c2ded, content_digest: 789fb08ed581d62f644c2ded829856040bffd8591365307930e86e29e1796bf5}
-    attestation: {status: pending}
+    source_verification:
+      source_commit: ffc7375b31080ea735c8bcc8ee59066b969c382f
+      verified_input_commit: 4cfabcfc3e77806bc054035162ae64f93fa0505b
+      snapshot_id: snap-tmall-42b106e61c7dad4f4aa02477
+      content_digest: c5f6ca64ece3eeba17c154a2ee9edc9f9a36e4e9c2f67e5fc53f82c4a2ef76a7
+    lineage_status: aligned_to_immutable_registry_pending_reverification
+    attestation:
+      status: pending
+      promotion_blocked: true

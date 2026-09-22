@@ -39,12 +39,12 @@ def validate_state(
     errors: list[str] = []
 
     prs = policy.get("prs") or {}
-    if prs.get("enabled") is not False:
-        errors.append("PRS global registry must remain disabled during Phase 2")
+    if prs.get("enabled") is not True:
+        errors.append("PRS global registry must be enabled for the controlled Phase 2 promotion path")
 
     canary = policy.get("canary") or {}
-    if canary.get("enabled") is not False:
-        errors.append("global canary switch must remain disabled until a service is explicitly promoted")
+    if canary.get("enabled") is not True:
+        errors.append("global canary switch must be enabled when an active canary service is declared")
 
     canary_services: list[str] = []
     for sid in SERVICES:
@@ -83,6 +83,18 @@ def validate_state(
             "at most one service may be state=canary at a time: "
             + ", ".join(sorted(canary_services))
         )
+
+    declared_canaries = {
+        str(x).strip() for x in (canary.get("services") or []) if str(x).strip()
+    }
+    actual_canaries = set(canary_services)
+    if declared_canaries != actual_canaries:
+        errors.append(
+            "policy/state canary service divergence: "
+            f"policy={sorted(declared_canaries)} state={sorted(actual_canaries)}"
+        )
+    if canary.get("single_active_service") is True and len(actual_canaries) > 1:
+        errors.append("single_active_service is enabled but multiple canary services are active")
 
     return {
         "schema": "source_canary_state_gate_v1",

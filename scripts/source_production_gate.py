@@ -39,8 +39,22 @@ def main() -> int:
     errors: list[str] = []
 
     prs = policy.get("prs") or {}
-    if prs.get("enabled") is not False:
-        errors.append("PRS must remain disabled unless Production is explicitly unlocked by the release process")
+    if prs.get("enabled") is not True:
+        errors.append("PRS controlled promotion registry must be enabled")
+
+    canary_policy = policy.get("canary") or {}
+    active_canaries = {
+        sid for sid, item in services.items()
+        if isinstance(item, dict) and item.get("state") == "canary" and item.get("enabled") is True
+    }
+    declared_canaries = {str(x).strip() for x in (canary_policy.get("services") or []) if str(x).strip()}
+    if canary_policy.get("enabled") is not True:
+        errors.append("canary policy must be enabled for an active canary lifecycle")
+    if declared_canaries != active_canaries:
+        errors.append(
+            "canary policy/state divergence: "
+            f"policy={sorted(declared_canaries)} state={sorted(active_canaries)}"
+        )
 
     for sid in SERVICES:
         item = services.get(sid) or {}
