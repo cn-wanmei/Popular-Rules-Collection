@@ -79,4 +79,33 @@ jobs:
             exit 0
           fi
 
-          gh pr create             --repo "$GITHUB_REPOSITORY"             --base main             --head "$BRANCH"             --title "chore(source): promote immutable Source durable seal"             --body "Automated Collection-owned Source handoff. The workflow consumes the Source durable seal, verifies the complete provenance identity at the exact immutable Source persistence commit, and opens a normal Collection PR. Collection Source Gate, Canary, and Production promotion remain authoritative."
+          set +e
+          PR_OUTPUT="$(gh pr create \
+            --repo "$GITHUB_REPOSITORY" \
+            --base main \
+            --head "$BRANCH" \
+            --title "chore(source): promote immutable Source durable seal" \
+            --body "Automated Collection-owned Source handoff. The workflow consumes the Source durable seal, verifies the complete provenance identity at the exact immutable Source persistence commit, and opens a normal Collection PR. Collection Source Gate, Canary, and Production promotion remain authoritative." 2>&1)"
+          PR_STATUS=$?
+          set -e
+
+          if [ "$PR_STATUS" -ne 0 ]; then
+            echo "::warning::Source handoff branch pushed, but automatic PR creation is blocked by the repository GitHub Actions policy."
+            printf '%s\n' "$PR_OUTPUT"
+            printf 'handoff_status=PR_CREATE_BLOCKED\nsource_ref=%s\nbranch=%s\n' "$SOURCE_REF" "$BRANCH" > source-handoff-status.txt
+            printf '%s\n' "$PR_OUTPUT" > source-handoff-error.txt
+          else
+            printf 'handoff_status=PR_CREATED\nsource_ref=%s\nbranch=%s\n' "$SOURCE_REF" "$BRANCH" > source-handoff-status.txt
+            printf '%s\n' "$PR_OUTPUT" > source-handoff-pr-url.txt
+          fi
+
+      - name: Upload handoff evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: source-auto-handoff-${{ github.run_id }}
+          path: |
+            source-handoff-status.txt
+            source-handoff-error.txt
+            source-handoff-pr-url.txt
+          if-no-files-found: ignore

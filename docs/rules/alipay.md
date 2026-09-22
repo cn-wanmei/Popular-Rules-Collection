@@ -1,63 +1,40 @@
 # Alipay
 
-> 用于匹配 **Alipay** 相关域名/IP 的分流规则（来自上游标准化合并）。
+> Current V3 service documentation. Subscription paths are derived from `generated/manifest.json`; this page is not a rule database.
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `alipay` |
-| Primary Ecosystem | **Alibaba** (`alibaba`) |
+| Primary Ecosystem | `alibaba` |
 | Service Type | service |
-| Tags | alibaba, china |
-| 类型 | domain |
-| Domains | 21 |
-| CIDR | 0 |
-| 最后更新 | 2026-09-01 |
-| Sources | blackmatrix7 |
-| Confidence | HIGH |
+| Parent Aggregate | `alibaba` |
+| Release Date | 2026-09-22 |
+| Dedicated client outputs | 7 / 7 |
 
-## 用途
+## 当前生产订阅路径
 
-用于匹配 **Alipay** 相关域名/IP 的分流规则（来自上游标准化合并）。
+| 客户端 | 路径 | Raw |
+|--------|------|-----|
+| egern | `egern/alibaba/alipay/rules.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/egern/alibaba/alipay/rules.yaml) |
+| loon | `loon/alibaba/alipay/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/loon/alibaba/alipay/rules.list) |
+| mihomo | `mihomo/alibaba/alipay/rules.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/mihomo/alibaba/alipay/rules.yaml) |
+| quantumultx | `quantumultx/alibaba/alipay/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/quantumultx/alibaba/alipay/rules.list) |
+| shadowrocket | `shadowrocket/alibaba/alipay/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/shadowrocket/alibaba/alipay/rules.list) |
+| singbox | `singbox/alibaba/alipay/rules.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/singbox/alibaba/alipay/rules.json) |
+| surge | `surge/alibaba/alipay/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/surge/alibaba/alipay/rules.list) |
 
-支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+## 当前真源边界
 
-## 一键订阅
+- V3 Canonical：`data/runs/<run-id>/canonical/`
+- Semantic IR：`data/runs/<run-id>/ir/`
+- 最终发行：`generated/`
+- `rule/`：V1 历史浏览/迁移树
+- `rules/`：V3 目录契约
+- `database/services/`：Legacy evidence，不是 V3 Runtime 真源
 
-| 客户端 | 路径 | 链接 |
-|--------|------|------|
-| Mihomo | `generated/mihomo/alipay.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/alipay.yaml) |
-| sing-box | `generated/sing-box/alipay.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/alipay.json) |
-| Surge | `generated/surge/alipay.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/alipay.list) |
-| Shadowrocket | `generated/shadowrocket/alipay.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/alipay.list) |
-| Quantumult X | `generated/quantumult-x/alipay.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/alipay.list) |
-| Egern | `generated/egern/alipay.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/alipay.yaml) |
-| Loon | `generated/loon/alipay.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/alipay.list) |
+## 目录契约
 
-## CDN 镜像（Mihomo）
-
-| 镜像 | 链接 |
-|------|------|
-| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/alipay.yaml |
-| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/alipay.yaml |
-| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/alipay.yaml |
-| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/alipay.yaml |
-
-## 官方网站
-
-_未在 config/official_sites.yaml 配置_
-
-## 规则来源（Provenance）
-
-- `blackmatrix7`
-
-由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
-
-## 数据位置
-
-- Schema: `database/services/alipay.yaml`
-- Domains: `database/domains/alipay.txt`
-- IPs: `database/ips/alipay.txt`（若有）
-- Product page: `rule/Alibaba/…`（见 generate_rule_pages）
+当前客户端目录只能使用 `mihomo`、`singbox`、`surge`、`shadowrocket`、`quantumultx`、`egern`、`loon`。历史 `sing-box` / `quantumult-x` 名称不属于当前目录契约。
 
 ---
-_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
+_页面日期来源：2026-09-22。生产路径来源：generated/manifest.json。_

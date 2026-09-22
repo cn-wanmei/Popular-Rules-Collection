@@ -1,65 +1,32 @@
 # ByteDance
 
-> 用于匹配 **ByteDance** 相关域名/IP 的分流规则（来自上游标准化合并）。
+> Current V3 service documentation. Subscription paths are derived from `generated/manifest.json`.
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `bytedance` |
-| Primary Ecosystem | **ByteDance** (`bytedance`) |
+| Primary Ecosystem | `bytedance` |
 | Service Type | aggregate |
-| Tags | bytedance, china |
-| 类型 | mixed |
-| Domains | 1080 |
-| CIDR | 1 |
-| 最后更新 | 2026-09-01 |
-| Sources | blackmatrix7 / metacubex / v2fly |
-| Confidence | HIGH |
+| Parent Aggregate | — |
+| Release Date | 2026-09-22 |
+| Dedicated client outputs | 0 / 7 |
 
-## 用途
+## 当前生产订阅路径
 
-用于匹配 **ByteDance** 相关域名/IP 的分流规则（来自上游标准化合并）。
+当前 Release Candidate 未物化该服务独立客户端产物；不得根据历史页面或旧目录猜测订阅地址。
 
-支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+## 当前真源边界
 
-## 一键订阅
+- V3 Canonical：`data/runs/<run-id>/canonical/`
+- Semantic IR：`data/runs/<run-id>/ir/`
+- 最终发行：`generated/`
+- `rule/`：V1 历史浏览/迁移树
+- `rules/`：V3 目录契约
+- `database/services/`：Legacy evidence，不是 V3 Runtime 真源
 
-| 客户端 | 路径 | 链接 |
-|--------|------|------|
-| Mihomo | `generated/mihomo/bytedance.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/bytedance.yaml) |
-| sing-box | `generated/sing-box/bytedance.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/bytedance.json) |
-| Surge | `generated/surge/bytedance.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/bytedance.list) |
-| Shadowrocket | `generated/shadowrocket/bytedance.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/bytedance.list) |
-| Quantumult X | `generated/quantumult-x/bytedance.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/bytedance.list) |
-| Egern | `generated/egern/bytedance.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/bytedance.yaml) |
-| Loon | `generated/loon/bytedance.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/bytedance.list) |
+## 目录契约
 
-## CDN 镜像（Mihomo）
-
-| 镜像 | 链接 |
-|------|------|
-| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/bytedance.yaml |
-| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/bytedance.yaml |
-| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/bytedance.yaml |
-| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/bytedance.yaml |
-
-## 官方网站
-
-_未在 config/official_sites.yaml 配置_
-
-## 规则来源（Provenance）
-
-- `blackmatrix7`
-- `metacubex`
-- `v2fly`
-
-由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
-
-## 数据位置
-
-- Schema: `database/services/bytedance.yaml`
-- Domains: `database/domains/bytedance.txt`
-- IPs: `database/ips/bytedance.txt`（若有）
-- Product page: `rule/ByteDance/…`（见 generate_rule_pages）
+当前客户端目录只能使用 `mihomo`、`singbox`、`surge`、`shadowrocket`、`quantumultx`、`egern`、`loon`。历史 `sing-box` / `quantumult-x` 名称不属于当前目录契约。
 
 ---
-_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
+_页面日期来源：2026-09-22。生产路径来源：generated/manifest.json。_

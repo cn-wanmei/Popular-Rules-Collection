@@ -1,188 +1,383 @@
 # Rules Index
 
-自动生成的规则说明文档（Primary Ecosystem 对齐）。
+这是 `docs/rules/` 的当前导航契约。
 
-- [12306](12306.md) (`12306` · 12306)
-- [ABC](abc.md) (`abc` · unionpay)
-- [AcFun](acfun.md) (`acfun` · china)
-- [AdBlock-Light](adblock-light.md) (`adblock-light` · privacy)
-- [AdBlock-Pro](adblock-pro.md) (`adblock-pro` · privacy)
-- [AdBlock](adblock.md) (`adblock` · privacy)
-- [Adobe](adobe.md) (`adobe` · other)
-- [AI](ai.md) (`ai` · ai)
-- [Airbnb](airbnb.md) (`airbnb` · other)
-- [AI-Suite](aisuite.md) (`aisuite` · ai)
-- [Akamai](akamai.md) (`akamai` · developer)
-- [Alibaba](alibaba.md) (`alibaba` · alibaba)
-- [AlibabaCloud](alibabacloud.md) (`alibabacloud` · alibaba)
-- [Alipay](alipay.md) (`alipay` · alibaba)
-- [Amap](amap.md) (`amap` · alibaba)
-- [Amazon](amazon.md) (`amazon` · amazon)
-- [Anthropic](anthropic.md) (`anthropic` · ai)
-- [Apple](apple.md) (`apple` · apple)
-- [AppleMusic](applemusic.md) (`applemusic` · apple)
-- [AppleTV](appletv.md) (`appletv` · apple)
-- [Atlassian](atlassian.md) (`atlassian` · developer)
-- [AWS](aws.md) (`aws` · amazon)
-- [Azure](azure.md) (`azure` · developer)
-- [Bahamut](bahamut.md) (`bahamut` · streaming)
-- [Baidu](baidu.md) (`baidu` · baidu)
-- [BattleNet](battlenet.md) (`battlenet` · gaming)
-- [BBC](bbc.md) (`bbc` · streaming)
-- [BiliBili](bilibili.md) (`bilibili` · china)
-- [Binance](binance.md) (`binance` · finance)
-- [Bluesky](bluesky.md) (`bluesky` · social)
-- [BOC](boc.md) (`boc` · unionpay)
-- [BOCOM](bocom.md) (`bocom` · unionpay)
-- [Booking](booking.md) (`booking` · other)
-- [ByteDance](bytedance.md) (`bytedance` · bytedance)
-- [Canva](canva.md) (`canva` · other)
-- [CCB](ccb.md) (`ccb` · unionpay)
-- [CCTV](cctv.md) (`cctv` · china)
-- [CEB](ceb.md) (`ceb` · unionpay)
-- [China](china.md) (`china` · china)
-- [ChinaMobile](chinamobile.md) (`chinamobile` · chinamobile)
-- [ChinaTelecom](chinatelecom.md) (`chinatelecom` · chinatelecom)
-- [ChinaUnicom](chinaunicom.md) (`chinaunicom` · chinaunicom)
-- [Claude](claude.md) (`claude` · ai)
-- [Cloudflare](cloudflare.md) (`cloudflare` · developer)
-- [CMB](cmb.md) (`cmb` · unionpay)
-- [Copilot](copilot.md) (`copilot` · ai)
-- [Ctrip](ctrip.md) (`ctrip` · china)
-- [Cursor](cursor.md) (`cursor` · developer)
-- [Dailymotion](dailymotion.md) (`dailymotion` · streaming)
-- [DeepSeek](deepseek.md) (`deepseek` · ai)
-- [Deezer](deezer.md) (`deezer` · streaming)
-- [Developer](developer.md) (`developer` · developer)
-- [DeWu](dewu.md) (`dewu` · china)
-- [DiDi](didi.md) (`didi` · china)
-- [DigitalOcean](digitalocean.md) (`digitalocean` · developer)
-- [Discord](discord.md) (`discord` · social)
-- [Disney](disney.md) (`disney` · streaming)
-- [Docker](docker.md) (`docker` · developer)
-- [Doubao](doubao.md) (`doubao` · bytedance)
-- [Douyin](douyin.md) (`douyin` · bytedance)
-- [Douyu](douyu.md) (`douyu` · china)
-- [Dropbox](dropbox.md) (`dropbox` · other)
-- [EA](ea.md) (`ea` · gaming)
-- [eBay](ebay.md) (`ebay` · other)
-- [Eleme](eleme.md) (`eleme` · alibaba)
-- [ElevenLabs](elevenlabs.md) (`elevenlabs` · ai)
-- [Emby](emby.md) (`emby` · streaming)
-- [Epic](epic.md) (`epic` · gaming)
-- [Facebook](facebook.md) (`facebook` · social)
-- [Figma](figma.md) (`figma` · developer)
-- [Firebase](firebase.md) (`firebase` · google)
-- [Gaode](gaode.md) (`gaode` · alibaba)
-- [Garena](garena.md) (`garena` · gaming)
-- [Gemini](gemini.md) (`gemini` · ai)
-- [GFW](gfw.md) (`gfw` · privacy)
-- [GitHub](github.md) (`github` · microsoft)
-- [GitLab](gitlab.md) (`gitlab` · developer)
-- [Google](google.md) (`google` · google)
-- [GoogleFCM](googlefcm.md) (`googlefcm` · google)
-- [Groq](groq.md) (`groq` · ai)
-- [HashiCorp](hashicorp.md) (`hashicorp` · developer)
-- [HBO](hbo.md) (`hbo` · streaming)
-- [Heroku](heroku.md) (`heroku` · developer)
-- [Himalaya](himalaya.md) (`himalaya` · china)
-- [HoYoverse](hoyoverse.md) (`hoyoverse` · gaming)
-- [Huawei](huawei.md) (`huawei` · other)
-- [HuggingFace](huggingface.md) (`huggingface` · ai)
-- [Hulu](hulu.md) (`hulu` · streaming)
-- [HuYa](huya.md) (`huya` · china)
-- [ICBC](icbc.md) (`icbc` · unionpay)
-- [iCloud](icloud.md) (`icloud` · apple)
-- [Instagram](instagram.md) (`instagram` · social)
-- [iQIYI](iqiyi.md) (`iqiyi` · china)
-- [JetBrains](jetbrains.md) (`jetbrains` · developer)
-- [JingDong](jingdong.md) (`jingdong` · jingdong)
-- [KakaoTalk](kakaotalk.md) (`kakaotalk` · social)
-- [Kuaishou](kuaishou.md) (`kuaishou` · china)
-- [Kugou](kugou.md) (`kugou` · china)
-- [KugouKuwo](kugoukuwo.md) (`kugoukuwo` · china)
-- [Kuwo](kuwo.md) (`kuwo` · china)
-- [LeTV](letv.md) (`letv` · china)
-- [Line](line.md) (`line` · social)
-- [LinkedIn](linkedin.md) (`linkedin` · social)
-- [Meituan](meituan.md) (`meituan` · china)
-- [Messenger](messenger.md) (`messenger` · social)
-- [Microsoft](microsoft.md) (`microsoft` · microsoft)
-- [Minecraft](minecraft.md) (`minecraft` · gaming)
-- [Naver](naver.md) (`naver` · other)
-- [NetEase](netease.md) (`netease` · china)
-- [Netflix](netflix.md) (`netflix` · streaming)
-- [Netlify](netlify.md) (`netlify` · developer)
-- [Nintendo](nintendo.md) (`nintendo` · gaming)
-- [Notion](notion.md) (`notion` · other)
-- [OKX](okx.md) (`okx` · finance)
-- [OneDrive](onedrive.md) (`onedrive` · microsoft)
-- [OpenAI](openai.md) (`openai` · ai)
-- [OPPO](oppo.md) (`oppo` · other)
-- [Oracle](oracle.md) (`oracle` · developer)
-- [ParamountPlus](paramountplus.md) (`paramountplus` · streaming)
-- [PayPal](paypal.md) (`paypal` · finance)
-- [Peacock](peacock.md) (`peacock` · streaming)
-- [Perplexity](perplexity.md) (`perplexity` · ai)
-- [Pinduoduo](pinduoduo.md) (`pinduoduo` · china)
-- [PingAn](pingan.md) (`pingan` · unionpay)
-- [Pinterest](pinterest.md) (`pinterest` · social)
-- [PlayStation](playstation.md) (`playstation` · gaming)
-- [PPTV](pptv.md) (`pptv` · china)
-- [PrimeVideo](primevideo.md) (`primevideo` · streaming)
-- [Private](private.md) (`private` · privacy)
-- [Proxy](proxy.md) (`proxy` · privacy)
-- [PSBC](psbc.md) (`psbc` · unionpay)
-- [Reddit](reddit.md) (`reddit` · social)
-- [Restricted](restricted.md) (`restricted` · restricted)
-- [RiotGames](riotgames.md) (`riotgames` · gaming)
-- [Roblox](roblox.md) (`roblox` · gaming)
-- [Rockstar](rockstar.md) (`rockstar` · gaming)
-- [Scholar](scholar.md) (`scholar` · other)
-- [Shopify](shopify.md) (`shopify` · other)
-- [Signal](signal.md) (`signal` · social)
-- [Sina](sina.md) (`sina` · china)
-- [Slack](slack.md) (`slack` · other)
-- [Snapchat](snapchat.md) (`snapchat` · social)
-- [Sohu](sohu.md) (`sohu` · china)
-- [SoundCloud](soundcloud.md) (`soundcloud` · streaming)
-- [Speedtest](speedtest.md) (`speedtest` · network)
-- [Spotify](spotify.md) (`spotify` · streaming)
-- [Steam](steam.md) (`steam` · gaming)
-- [Stripe](stripe.md) (`stripe` · finance)
-- [STUN](stun.md) (`stun` · network)
-- [Teams](teams.md) (`teams` · microsoft)
-- [Telegram](telegram.md) (`telegram` · social)
-- [Tencent](tencent.md) (`tencent` · tencent)
-- [TencentVideo](tencentvideo.md) (`tencentvideo` · tencent)
-- [Threads](threads.md) (`threads` · social)
-- [Tidal](tidal.md) (`tidal` · streaming)
-- [TikTok](tiktok.md) (`tiktok` · bytedance)
-- [Tongcheng](tongcheng.md) (`tongcheng` · china)
-- [Trello](trello.md) (`trello` · developer)
-- [Twitch](twitch.md) (`twitch` · streaming)
-- [Twitter](twitter.md) (`twitter` · social)
-- [Uber](uber.md) (`uber` · other)
-- [Ubisoft](ubisoft.md) (`ubisoft` · gaming)
-- [UnionPay](unionpay.md) (`unionpay` · unionpay)
-- [Vercel](vercel.md) (`vercel` · developer)
-- [Vimeo](vimeo.md) (`vimeo` · streaming)
-- [Vivo](vivo.md) (`vivo` · other)
-- [Walmart](walmart.md) (`walmart` · other)
-- [WeChat](wechat.md) (`wechat` · tencent)
-- [Weibo](weibo.md) (`weibo` · china)
-- [WeTV](wetv.md) (`wetv` · tencent)
-- [WhatsApp](whatsapp.md) (`whatsapp` · social)
-- [Wikipedia](wikipedia.md) (`wikipedia` · other)
-- [Wise](wise.md) (`wise` · finance)
-- [xAI](xai.md) (`xai` · ai)
-- [Xbox](xbox.md) (`xbox` · microsoft)
-- [Xianyu](xianyu.md) (`xianyu` · alibaba)
-- [Xiaohongshu](xiaohongshu.md) (`xiaohongshu` · china)
-- [Xiaomi](xiaomi.md) (`xiaomi` · other)
-- [Ximalaya](ximalaya.md) (`ximalaya` · china)
-- [Youku](youku.md) (`youku` · alibaba)
-- [YouTube](youtube.md) (`youtube` · google)
-- [YouTubeMusic](youtubemusic.md) (`youtubemusic` · google)
-- [Zhihu](zhihu.md) (`zhihu` · china)
-- [Zoom](zoom.md) (`zoom` · other)
+生产日期：`2026-09-22`
+当前配置服务数：90
+当前规则文档总数：209
+
+## 当前配置服务
+
+### 12306
+- [12306](12306.md) (`12306` · service)
+
+### alibaba
+- [1688](1688.md) (`1688` · service)
+
+### privacy
+- [AdBlock](adblock.md) (`adblock` · aggregate)
+
+### ai
+- [AI](ai.md) (`ai` · aggregate)
+
+### airbnb
+- [Airbnb](airbnb.md) (`airbnb` · service)
+
+### alibaba
+- [Alibaba](alibaba.md) (`alibaba` · aggregate)
+- [Alibaba Cloud](alibabacloud.md) (`alibabacloud` · service)
+- [Alipay](alipay.md) (`alipay` · service)
+
+### amazon
+- [Amazon](amazon.md) (`amazon` · aggregate)
+
+### ai
+- [Anthropic](anthropic.md) (`anthropic` · service)
+
+### apple
+- [Apple](apple.md) (`apple` · aggregate)
+- [Apple Developer](appledev.md) (`appledev` · service)
+- [App Store](appstore.md) (`appstore` · service)
+
+### atlassian
+- [Atlassian](atlassian.md) (`atlassian` · aggregate)
+
+### amazon
+- [AWS](aws.md) (`aws` · service)
+
+### microsoft
+- [Microsoft Azure](azure.md) (`azure` · service)
+
+### baidu
+- [Baidu](baidu.md) (`baidu` · aggregate)
+- [Baidu Netdisk](baidunetdisk.md) (`baidunetdisk` · service)
+
+### atlassian
+- [Bitbucket](bitbucket.md) (`bitbucket` · service)
+
+### bluesky
+- [Bluesky](bluesky.md) (`bluesky` · service)
+
+### booking
+- [Booking](booking.md) (`booking` · service)
+
+### bytedance
+- [ByteDance](bytedance.md) (`bytedance` · aggregate)
+
+### alibaba
+- [Cainiao](cainiao.md) (`cainiao` · service)
+
+### canva
+- [Canva](canva.md) (`canva` · service)
+
+### china
+- [China](china.md) (`china` · aggregate)
+
+### chinamobile
+- [ChinaMobile](chinamobile.md) (`chinamobile` · service)
+
+### chinatelecom
+- [ChinaTelecom](chinatelecom.md) (`chinatelecom` · service)
+
+### chinaunicom
+- [ChinaUnicom](chinaunicom.md) (`chinaunicom` · service)
+
+### ai
+- [Claude](claude.md) (`claude` · service)
+
+### developer
+- [Cloudflare](cloudflare.md) (`cloudflare` · service)
+
+### ai
+- [Copilot](copilot.md) (`copilot` · service)
+
+### cursor
+- [Cursor](cursor.md) (`cursor` · service)
+
+### deepseek
+- [DeepSeek](deepseek.md) (`deepseek` · service)
+
+### developer
+- [Developer](developer.md) (`developer` · aggregate)
+
+### dewu
+- [Dewu](dewu.md) (`dewu` · service)
+
+### alibaba
+- [DingTalk](dingding.md) (`dingding` · service)
+
+### social
+- [Discord](discord.md) (`discord` · service)
+
+### bytedance
+- [Doubao](doubao.md) (`doubao` · service)
+- [Douyin](douyin.md) (`douyin` · service)
+
+### elevenlabs
+- [ElevenLabs](elevenlabs.md) (`elevenlabs` · service)
+
+### bytedance
+- [Feishu](feishu.md) (`feishu` · service)
+
+### apple
+- [Find My](findmy.md) (`findmy` · service)
+
+### google
+- [Firebase](firebase.md) (`firebase` · service)
+
+### ai
+- [Gemini](gemini.md) (`gemini` · service)
+
+### network
+- [GFW](gfw.md) (`gfw` · service)
+
+### microsoft
+- [GitHub](github.md) (`github` · service)
+
+### google
+- [Google](google.md) (`google` · aggregate)
+- [Google Cloud](googlecloud.md) (`googlecloud` · service)
+
+### xai
+- [Grok](grok.md) (`grok` · service)
+
+### groq
+- [Groq](groq.md) (`groq` · service)
+
+### huggingface
+- [Hugging Face](huggingface.md) (`huggingface` · service)
+
+### jingdong
+- [JingDong](jingdong.md) (`jingdong` · aggregate)
+
+### meta
+- [Messenger](messenger.md) (`messenger` · service)
+- [Meta](meta.md) (`meta` · aggregate)
+
+### microsoft
+- [Microsoft](microsoft.md) (`microsoft` · aggregate)
+
+### netease
+- [NetEase](netease.md) (`netease` · aggregate)
+
+### streaming
+- [Netflix](netflix.md) (`netflix` · service)
+
+### netlify
+- [Netlify](netlify.md) (`netlify` · service)
+
+### npm
+- [npm](npm.md) (`npm` · service)
+
+### ai
+- [OpenAI](openai.md) (`openai` · service)
+
+### perplexity
+- [Perplexity](perplexity.md) (`perplexity` · service)
+
+### network
+- [Private](private.md) (`private` · service)
+- [Proxy](proxy.md) (`proxy` · service)
+
+### pypi
+- [PyPI](pypi.md) (`pypi` · service)
+
+### tencent
+- [QQ](qq.md) (`qq` · service)
+- [QQ Mail](qqmail.md) (`qqmail` · service)
+- [QQ Music](qqmusic.md) (`qqmusic` · service)
+
+### roblox
+- [Roblox](roblox.md) (`roblox` · service)
+
+### signal
+- [Signal](signal.md) (`signal` · service)
+
+### snap
+- [Snapchat](snapchat.md) (`snapchat` · service)
+
+### streaming
+- [Spotify](spotify.md) (`spotify` · service)
+
+### gaming
+- [Steam](steam.md) (`steam` · service)
+
+### alibaba
+- [Taobao](taobao.md) (`taobao` · service)
+
+### social
+- [Telegram](telegram.md) (`telegram` · service)
+
+### tencent
+- [Tencent](tencent.md) (`tencent` · aggregate)
+- [Tencent Cloud](tencentcloud.md) (`tencentcloud` · service)
+- [Tencent Meeting](tencentmeeting.md) (`tencentmeeting` · service)
+- [TencentVideo](tencentvideo.md) (`tencentvideo` · service)
+
+### apple
+- [TestFlight](testflight.md) (`testflight` · service)
+
+### tidal
+- [Tidal](tidal.md) (`tidal` · service)
+
+### alibaba
+- [Tmall](tmall.md) (`tmall` · service)
+
+### atlassian
+- [Trello](trello.md) (`trello` · service)
+
+### uber
+- [Uber](uber.md) (`uber` · service)
+
+### unionpay
+- [UnionPay](unionpay.md) (`unionpay` · aggregate)
+
+### walmart
+- [Walmart](walmart.md) (`walmart` · service)
+
+### tencent
+- [WeChat](wechat.md) (`wechat` · service)
+- [WeCom](wecom.md) (`wecom` · service)
+
+### wise
+- [Wise](wise.md) (`wise` · service)
+
+### netease
+- [Youdao](youdao.md) (`youdao` · service)
+
+### google
+- [YouTube Music](youtubemusic.md) (`youtubemusic` · service)
+
+## 其他历史/聚合页面
+
+下列页面不属于当前 `config/service_primary.yaml` 的 90 个生产服务 SSOT，但保留用于历史、聚合或兼容导航；其订阅路径不得脱离当前 `generated/manifest.json` 单独使用。
+- [abc](abc.md)
+- [acfun](acfun.md)
+- [adblock-light](adblock-light.md)
+- [adblock-pro](adblock-pro.md)
+- [adobe](adobe.md)
+- [aisuite](aisuite.md)
+- [akamai](akamai.md)
+- [amap](amap.md)
+- [applemusic](applemusic.md)
+- [appletv](appletv.md)
+- [bahamut](bahamut.md)
+- [battlenet](battlenet.md)
+- [bbc](bbc.md)
+- [bilibili](bilibili.md)
+- [binance](binance.md)
+- [boc](boc.md)
+- [bocom](bocom.md)
+- [ccb](ccb.md)
+- [cctv](cctv.md)
+- [ceb](ceb.md)
+- [cmb](cmb.md)
+- [ctrip](ctrip.md)
+- [dailymotion](dailymotion.md)
+- [deezer](deezer.md)
+- [didi](didi.md)
+- [digitalocean](digitalocean.md)
+- [disney](disney.md)
+- [docker](docker.md)
+- [douyu](douyu.md)
+- [dropbox](dropbox.md)
+- [ea](ea.md)
+- [ebay](ebay.md)
+- [eleme](eleme.md)
+- [emby](emby.md)
+- [epic](epic.md)
+- [facebook](facebook.md)
+- [figma](figma.md)
+- [gaode](gaode.md)
+- [garena](garena.md)
+- [gitlab](gitlab.md)
+- [googlefcm](googlefcm.md)
+- [hashicorp](hashicorp.md)
+- [hbo](hbo.md)
+- [heroku](heroku.md)
+- [himalaya](himalaya.md)
+- [hoyoverse](hoyoverse.md)
+- [huawei](huawei.md)
+- [hulu](hulu.md)
+- [huya](huya.md)
+- [icbc](icbc.md)
+- [icloud](icloud.md)
+- [instagram](instagram.md)
+- [iqiyi](iqiyi.md)
+- [jetbrains](jetbrains.md)
+- [kakaotalk](kakaotalk.md)
+- [kuaishou](kuaishou.md)
+- [kugou](kugou.md)
+- [kugoukuwo](kugoukuwo.md)
+- [kuwo](kuwo.md)
+- [letv](letv.md)
+- [line](line.md)
+- [linkedin](linkedin.md)
+- [meituan](meituan.md)
+- [minecraft](minecraft.md)
+- [naver](naver.md)
+- [nintendo](nintendo.md)
+- [notion](notion.md)
+- [okx](okx.md)
+- [onedrive](onedrive.md)
+- [oppo](oppo.md)
+- [oracle](oracle.md)
+- [paramountplus](paramountplus.md)
+- [paypal](paypal.md)
+- [peacock](peacock.md)
+- [pinduoduo](pinduoduo.md)
+- [pingan](pingan.md)
+- [pinterest](pinterest.md)
+- [playstation](playstation.md)
+- [pptv](pptv.md)
+- [primevideo](primevideo.md)
+- [psbc](psbc.md)
+- [reddit](reddit.md)
+- [restricted](restricted.md)
+- [riotgames](riotgames.md)
+- [rockstar](rockstar.md)
+- [scholar](scholar.md)
+- [shopify](shopify.md)
+- [sina](sina.md)
+- [slack](slack.md)
+- [sohu](sohu.md)
+- [soundcloud](soundcloud.md)
+- [speedtest](speedtest.md)
+- [stripe](stripe.md)
+- [stun](stun.md)
+- [teams](teams.md)
+- [threads](threads.md)
+- [tiktok](tiktok.md)
+- [tongcheng](tongcheng.md)
+- [twitch](twitch.md)
+- [twitter](twitter.md)
+- [ubisoft](ubisoft.md)
+- [vercel](vercel.md)
+- [vimeo](vimeo.md)
+- [vivo](vivo.md)
+- [weibo](weibo.md)
+- [wetv](wetv.md)
+- [whatsapp](whatsapp.md)
+- [wikipedia](wikipedia.md)
+- [xai](xai.md)
+- [xbox](xbox.md)
+- [xianyu](xianyu.md)
+- [xiaohongshu](xiaohongshu.md)
+- [xiaomi](xiaomi.md)
+- [ximalaya](ximalaya.md)
+- [youku](youku.md)
+- [youtube](youtube.md)
+- [zhihu](zhihu.md)
+- [zoom](zoom.md)
+
+## 当前路径模型
+
+- Client: `generated/<client>/<ecosystem>/<service-or-all>/rules.*`
+- Client dirs: `mihomo`, `singbox`, `surge`, `shadowrocket`, `quantumultx`, `egern`, `loon`
+- `rule/`：V1 历史浏览/迁移树
+- `rules/`：V3 目录契约
+- `database/services/`：Legacy evidence，不是 V3 Runtime 真源
+
+## 维护规则
+
+当前 90 个配置服务页面必须通过 `scripts/docs_ssot_gate.py`。当 manifest 发生路径变化时，CI 应先更新页面，再允许合入。

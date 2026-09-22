@@ -1,63 +1,40 @@
 # Cursor
 
-> 用于匹配 **Cursor** 相关域名/IP 的分流规则（来自上游标准化合并）。
+> Current V3 service documentation. Subscription paths are derived from `generated/manifest.json`.
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `cursor` |
-| Primary Ecosystem | **Developer** (`developer`) |
+| Primary Ecosystem | `cursor` |
 | Service Type | service |
-| Tags | developer, ai |
-| 类型 | domain |
-| Domains | 4 |
-| CIDR | 0 |
-| 最后更新 | 2026-09-01 |
-| Sources | metacubex |
-| Confidence | HIGH |
+| Parent Aggregate | — |
+| Release Date | 2026-09-22 |
+| Dedicated client outputs | 7 / 7 |
 
-## 用途
+## 当前生产订阅路径
 
-用于匹配 **Cursor** 相关域名/IP 的分流规则（来自上游标准化合并）。
+| 客户端 | 路径 | Raw |
+|--------|------|-----|
+| egern | `egern/cursor/cursor/rules.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/egern/cursor/cursor/rules.yaml) |
+| loon | `loon/cursor/cursor/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/loon/cursor/cursor/rules.list) |
+| mihomo | `mihomo/cursor/cursor/rules.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/mihomo/cursor/cursor/rules.yaml) |
+| quantumultx | `quantumultx/cursor/cursor/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/quantumultx/cursor/cursor/rules.list) |
+| shadowrocket | `shadowrocket/cursor/cursor/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/shadowrocket/cursor/cursor/rules.list) |
+| singbox | `singbox/cursor/cursor/rules.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/singbox/cursor/cursor/rules.json) |
+| surge | `surge/cursor/cursor/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/surge/cursor/cursor/rules.list) |
 
-支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+## 当前真源边界
 
-## 一键订阅
+- V3 Canonical：`data/runs/<run-id>/canonical/`
+- Semantic IR：`data/runs/<run-id>/ir/`
+- 最终发行：`generated/`
+- `rule/`：V1 历史浏览/迁移树
+- `rules/`：V3 目录契约
+- `database/services/`：Legacy evidence，不是 V3 Runtime 真源
 
-| 客户端 | 路径 | 链接 |
-|--------|------|------|
-| Mihomo | `generated/mihomo/cursor.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/cursor.yaml) |
-| sing-box | `generated/sing-box/cursor.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/cursor.json) |
-| Surge | `generated/surge/cursor.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/cursor.list) |
-| Shadowrocket | `generated/shadowrocket/cursor.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/cursor.list) |
-| Quantumult X | `generated/quantumult-x/cursor.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/cursor.list) |
-| Egern | `generated/egern/cursor.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/cursor.yaml) |
-| Loon | `generated/loon/cursor.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/cursor.list) |
+## 目录契约
 
-## CDN 镜像（Mihomo）
-
-| 镜像 | 链接 |
-|------|------|
-| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/cursor.yaml |
-| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/cursor.yaml |
-| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/cursor.yaml |
-| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/cursor.yaml |
-
-## 官方网站
-
-_未在 config/official_sites.yaml 配置_
-
-## 规则来源（Provenance）
-
-- `metacubex`
-
-由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
-
-## 数据位置
-
-- Schema: `database/services/cursor.yaml`
-- Domains: `database/domains/cursor.txt`
-- IPs: `database/ips/cursor.txt`（若有）
-- Product page: `rule/Developer/…`（见 generate_rule_pages）
+当前客户端目录只能使用 `mihomo`、`singbox`、`surge`、`shadowrocket`、`quantumultx`、`egern`、`loon`。历史 `sing-box` / `quantumult-x` 名称不属于当前目录契约。
 
 ---
-_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
+_页面日期来源：2026-09-22。生产路径来源：generated/manifest.json。_

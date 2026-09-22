@@ -1,63 +1,40 @@
 # Firebase
 
-> 用于匹配 **Firebase** 相关域名/IP 的分流规则（来自上游标准化合并）。
+> Current V3 service documentation. Subscription paths are derived from `generated/manifest.json`.
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `firebase` |
-| Primary Ecosystem | **Google** (`google`) |
+| Primary Ecosystem | `google` |
 | Service Type | service |
-| Tags | google, developer |
-| 类型 | domain |
-| Domains | 20 |
-| CIDR | 0 |
-| 最后更新 | 2026-09-01 |
-| Sources | metacubex |
-| Confidence | HIGH |
+| Parent Aggregate | `google` |
+| Release Date | 2026-09-22 |
+| Dedicated client outputs | 7 / 7 |
 
-## 用途
+## 当前生产订阅路径
 
-用于匹配 **Firebase** 相关域名/IP 的分流规则（来自上游标准化合并）。
+| 客户端 | 路径 | Raw |
+|--------|------|-----|
+| egern | `egern/google/firebase/rules.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/egern/google/firebase/rules.yaml) |
+| loon | `loon/google/firebase/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/loon/google/firebase/rules.list) |
+| mihomo | `mihomo/google/firebase/rules.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/mihomo/google/firebase/rules.yaml) |
+| quantumultx | `quantumultx/google/firebase/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/quantumultx/google/firebase/rules.list) |
+| shadowrocket | `shadowrocket/google/firebase/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/shadowrocket/google/firebase/rules.list) |
+| singbox | `singbox/google/firebase/rules.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/singbox/google/firebase/rules.json) |
+| surge | `surge/google/firebase/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/surge/google/firebase/rules.list) |
 
-支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+## 当前真源边界
 
-## 一键订阅
+- V3 Canonical：`data/runs/<run-id>/canonical/`
+- Semantic IR：`data/runs/<run-id>/ir/`
+- 最终发行：`generated/`
+- `rule/`：V1 历史浏览/迁移树
+- `rules/`：V3 目录契约
+- `database/services/`：Legacy evidence，不是 V3 Runtime 真源
 
-| 客户端 | 路径 | 链接 |
-|--------|------|------|
-| Mihomo | `generated/mihomo/firebase.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/firebase.yaml) |
-| sing-box | `generated/sing-box/firebase.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/firebase.json) |
-| Surge | `generated/surge/firebase.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/firebase.list) |
-| Shadowrocket | `generated/shadowrocket/firebase.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/firebase.list) |
-| Quantumult X | `generated/quantumult-x/firebase.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/firebase.list) |
-| Egern | `generated/egern/firebase.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/firebase.yaml) |
-| Loon | `generated/loon/firebase.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/firebase.list) |
+## 目录契约
 
-## CDN 镜像（Mihomo）
-
-| 镜像 | 链接 |
-|------|------|
-| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/firebase.yaml |
-| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/firebase.yaml |
-| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/firebase.yaml |
-| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/firebase.yaml |
-
-## 官方网站
-
-_未在 config/official_sites.yaml 配置_
-
-## 规则来源（Provenance）
-
-- `metacubex`
-
-由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
-
-## 数据位置
-
-- Schema: `database/services/firebase.yaml`
-- Domains: `database/domains/firebase.txt`
-- IPs: `database/ips/firebase.txt`（若有）
-- Product page: `rule/Google/…`（见 generate_rule_pages）
+当前客户端目录只能使用 `mihomo`、`singbox`、`surge`、`shadowrocket`、`quantumultx`、`egern`、`loon`。历史 `sing-box` / `quantumult-x` 名称不属于当前目录契约。
 
 ---
-_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
+_页面日期来源：2026-09-22。生产路径来源：generated/manifest.json。_
