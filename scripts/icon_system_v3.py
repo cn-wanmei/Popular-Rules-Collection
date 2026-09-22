@@ -52,7 +52,27 @@ def base_svg(meta,key):
     return txt,rel,sha(txt)
 
 def semantic(title,glyph):
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><title>{html.escape(title)}</title><rect x="12" y="12" width="104" height="104" rx="30" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/><circle cx="64" cy="64" r="30" fill="#E2E8F0"/><text x="64" y="64" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="800" fill="#0F172A">{html.escape(str(glyph)[:2].upper())}</text></svg>'
+    key=str(glyph).lower().strip()
+    shapes={
+        "direct":'<path d="M30 64h49" stroke="#16A34A" stroke-width="7" stroke-linecap="round"/><path d="M66 40l24 24-24 24" fill="none" stroke="#16A34A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>',
+        "proxy":'<circle cx="40" cy="46" r="10" fill="#2563EB"/><circle cx="88" cy="82" r="10" fill="#2563EB"/><path d="M47 52l34 24" stroke="#2563EB" stroke-width="6" stroke-linecap="round"/>',
+        "reject":'<path d="M39 39l50 50M89 39L39 89" stroke="#DC2626" stroke-width="8" stroke-linecap="round"/>',
+        "auto":'<path d="M64 29l8 25 25 10-25 9-8 26-8-26-25-9 25-10z" fill="#7C3AED"/>',
+        "fallback":'<path d="M88 44H48c-12 0-20 8-20 20s8 20 20 20h25" fill="none" stroke="#D97706" stroke-width="7" stroke-linecap="round"/><path d="M64 67l24 17-24 17" transform="translate(0 -17)" fill="none" stroke="#D97706" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>',
+        "urltest":'<path d="M30 78l12-18 12 11 14-25 17 18" fill="none" stroke="#0891B2" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="88" cy="84" r="9" fill="#10B981"/>',
+        "loadbalance":'<path d="M64 31v22M64 53L39 79M64 53l25 26" stroke="#4F46E5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="64" cy="27" r="8" fill="#4F46E5"/><circle cx="38" cy="83" r="8" fill="#4F46E5"/><circle cx="90" cy="83" r="8" fill="#4F46E5"/>',
+        "final":'<circle cx="64" cy="64" r="34" fill="none" stroke="#0F766E" stroke-width="7"/><path d="M46 64l12 12 25-28" fill="none" stroke="#0F766E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>',
+        "match":'<circle cx="64" cy="64" r="31" fill="none" stroke="#7C3AED" stroke-width="7"/><circle cx="64" cy="64" r="9" fill="#7C3AED"/><path d="M64 22v14M64 92v14M22 64h14M92 64h14" stroke="#7C3AED" stroke-width="6" stroke-linecap="round"/>',
+        "dns":'<circle cx="64" cy="64" r="35" fill="none" stroke="#0891B2" stroke-width="6"/><path d="M29 64h70M64 29c10 10 15 21 15 35S74 89 64 99M64 29C54 39 49 50 49 64s5 25 15 35" fill="none" stroke="#0891B2" stroke-width="5"/>',
+        "global":'<circle cx="64" cy="64" r="35" fill="none" stroke="#475569" stroke-width="6"/><path d="M29 64h70M64 29c10 10 15 21 15 35S74 89 64 99M64 29C54 39 49 50 49 64s5 25 15 35" fill="none" stroke="#475569" stroke-width="5"/>',
+        "select":'<rect x="30" y="33" width="68" height="10" rx="5" fill="#2563EB"/><rect x="30" y="59" width="48" height="10" rx="5" fill="#2563EB"/><rect x="30" y="85" width="58" height="10" rx="5" fill="#2563EB"/>',
+        "private":'<rect x="38" y="54" width="52" height="38" rx="8" fill="#334155"/><path d="M48 54V45c0-9 7-16 16-16s16 7 16 16v9" fill="none" stroke="#334155" stroke-width="7"/><circle cx="64" cy="73" r="6" fill="#FFFFFF"/>',
+        "lan":'<path d="M64 36v17M64 53L42 76M64 53l22 23" stroke="#059669" stroke-width="7" stroke-linecap="round"/><circle cx="64" cy="31" r="9" fill="#059669"/><circle cx="40" cy="82" r="9" fill="#059669"/><circle cx="88" cy="82" r="9" fill="#059669"/>',
+        "china":'<path d="M42 39h30l16 16-11 34-31 2-13-24z" fill="#DC2626" opacity=".9"/><circle cx="72" cy="48" r="7" fill="#FFFFFF"/>',
+        "network":'<circle cx="42" cy="43" r="9" fill="#2563EB"/><circle cx="86" cy="43" r="9" fill="#2563EB"/><circle cx="64" cy="86" r="9" fill="#2563EB"/><path d="M49 48l9 28M79 48l-9 28M51 43h28" stroke="#2563EB" stroke-width="6" stroke-linecap="round"/>'
+    }
+    body=shapes.get(key,f'<text x="64" y="64" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="28" font-weight="800" fill="#0F172A">{html.escape(str(glyph)[:3].upper())}</text>')
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><title>{html.escape(title)}</title><rect x="12" y="12" width="104" height="104" rx="30" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>{body}</svg>'
 
 def render(base,title,style,c):
     root=ET.fromstring(base); vb=root.attrib.get("viewBox","0 0 24 24")
@@ -149,11 +169,11 @@ def legibility(root,style,rows,size):
     z.append("</svg>"); p.write_text("".join(z),encoding="utf-8"); return p
 
 def build(out):
-    cfg=yload(CFG); man=yload(MAN); es=entries(man,cfg); out.mkdir(parents=True,exist_ok=True); cache={}; regs=[]; rows={s:[] for s in STYLES}
+    cfg=yload(CFG); man=yload(MAN); official_sites=yload(ROOT/"config/official_sites.yaml"); es=entries(man,cfg); out.mkdir(parents=True,exist_ok=True); cache={}; regs=[]; rows={s:[] for s in STYLES}
     for e in es:
         meta_status=str(e["meta"].get("status") or "").lower()
         release_eligible = e["role"] != "service" or meta_status in {"verified","sourced","approved","active"}
-        if e["role"] in {"strategy","client_policy"}:
+        official_reference=official_sites.get(e["icon_key"]) or official_sites.get(e["service_id"])\n        if e["role"] in {"strategy","client_policy"}:
             base=semantic(e["canonical_name"],e["icon_key"]); src_path="generated:semantic"; src_digest=sha(base); provider="project-semantic"; stier="project_semantic"; surl=None
         else:
             base,src_path,src_digest=base_svg(e["meta"],e["icon_key"]); src=e["meta"].get("source") or {}; provider=str(src.get("provider") or "unknown"); stier=tier(e["meta"]); surl=src.get("url")
@@ -163,7 +183,7 @@ def build(out):
             p=variant_root/style/f"{slug(e["service_id"])}.svg"; p.parent.mkdir(parents=True,exist_ok=True); txt=render(base,e["canonical_name"],style,color(e["meta"])); p.write_text(txt,encoding="utf-8")
             vs[style]={"asset_id":f"icon.{slug(e['service_id'])}.{style}","path":p.relative_to(out).as_posix(),"digest":sha(txt),"style":style,"source_asset_digest":src_digest,"source_tier":stier,"source_provider":provider,"source_url":surl,"source_path":src_path}
             rows[style].append({"service_id":e["service_id"],"canonical_name":e["canonical_name"],"variant":vs[style],"group":e["role"]})
-        regs.append({"service_id":e["service_id"],"icon_identity":e["icon_identity"],"role":e["role"],"canonical_name":e["canonical_name"],"release_eligible":release_eligible,"base_asset":{"asset_id":vs["official"]["asset_id"],"path":src_path,"source_tier":stier,"source_provider":provider,"source_url":surl,"digest":src_digest},"variants":vs,"quality":{"identity":"pass" if release_eligible or e["role"]!="service" else "hold","integrity":"pass","visual":"pending_review","legibility":"pending_review","license":"review" if e["role"]=="service" else "pass","regression":"baseline_pending"},"provenance":{"source_provider":provider,"source_path":src_path,"source_url":surl,"source_tier":stier,"source_asset_digest":src_digest,"renderer_version":"3.0.0","workspace_commit":os.environ.get("GITHUB_SHA","local"),"generation_run_id":os.environ.get("GITHUB_RUN_ID","local")}})
+        regs.append({"service_id":e["service_id"],"icon_identity":e["icon_identity"],"role":e["role"],"canonical_name":e["canonical_name"],"release_eligible":release_eligible,"base_asset":{"asset_id":vs["official"]["asset_id"],"path":src_path,"source_tier":stier,"source_provider":provider,"source_url":surl,"official_reference":official_reference,"license":e["meta"].get("license") or {},"digest":src_digest},"variants":vs,"quality":{"identity":"pass" if release_eligible or e["role"]!="service" else "hold","integrity":"pass","visual":"pending_review","legibility":"pending_review","license":"review" if e["role"]=="service" else "pass","regression":"baseline_pending"},"provenance":{"source_provider":provider,"source_path":src_path,"source_url":surl,"official_reference":official_reference,"source_tier":stier,"source_asset_digest":src_digest,"license":e["meta"].get("license") or {},"renderer_version":"3.0.0","workspace_commit":os.environ.get("GITHUB_SHA","local"),"generation_run_id":os.environ.get("GITHUB_RUN_ID","local")}})
     for style in STYLES:
         sheet(out,style,rows[style])
         for role in sorted({x["group"] for x in rows[style]}): sheet(out,style,[x for x in rows[style] if x["group"]==role],f"role-{slug(role)}")
