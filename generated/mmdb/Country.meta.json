@@ -1,0 +1,16 @@
+{
+  "id": "geoip-mmdb",
+  "kind": "geoip",
+  "scope": "artifact",
+  "path": "generated/mmdb/Country.mmdb",
+  "sha256": "21606dfffd4ec39542ec40782bebd37b71310471816e1338b6f6430190cbc85d",
+  "bytes": 7780891,
+  "fetched_at": "2026-09-22T00:42:56.904661+00:00",
+  "source": {
+    "owner": "Loyalsoldier",
+    "repo": "geoip",
+    "branch": "release",
+    "path": "Country.mmdb",
+    "url": "Country.mmdb"
+  }
+}

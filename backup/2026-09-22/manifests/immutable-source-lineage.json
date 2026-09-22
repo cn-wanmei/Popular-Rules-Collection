@@ -1,0 +1,109 @@
+{
+  "binding_count": 8,
+  "collection_root": "backup/2026-09-22",
+  "failures": [],
+  "historical_count": 0,
+  "historical_services": [],
+  "note": "Historical collection backups are validated for their own immutable integrity but are not required to equal a newer active Source binding. Current Source provenance is validated separately by source_provenance_gate.py.",
+  "schema": "immutable_source_lineage_gate_v2",
+  "services": {
+    "1688": {
+      "actual_sha256": "65e6b0d571d62de22ae4a791113306d52207f94b25f74920a5533faa1ec220bb",
+      "collection_manifest_status": "ok",
+      "content_digest": "9d9494b9de926b4415eeb377f1ef184e3d01aba8392f8fad3a3844c99e65c07e",
+      "expected_sha256": "65e6b0d571d62de22ae4a791113306d52207f94b25f74920a5533faa1ec220bb",
+      "lineage_mode": "current",
+      "local": "backup/2026-09-22/sources/popular-rules-source/PRS_1688.domains.txt",
+      "release_path": "releases/1688/snap-1688-79b87e018d45c6cf6ea3d5e9/release.json",
+      "snapshot_id": "snap-1688-79b87e018d45c6cf6ea3d5e9",
+      "source_ref": "215c7e33f0a134e146d3636d061f96cc874118ba",
+      "status": "verified"
+    },
+    "cainiao": {
+      "actual_sha256": "49d81715b12d8915f089f4d09710c6ca41cad95f84414daf068990ea7fb4897d",
+      "collection_manifest_status": "ok",
+      "content_digest": "ad0d409e51abb614bd558aa7286c2c66d6c792a5dde5222cd68cd3e6b9c1903a",
+      "expected_sha256": "49d81715b12d8915f089f4d09710c6ca41cad95f84414daf068990ea7fb4897d",
+      "lineage_mode": "current",
+      "local": "backup/2026-09-22/sources/popular-rules-source/PRS_cainiao.domains.txt",
+      "release_path": "releases/cainiao/snap-cainiao-1d34e11a7bcd0dddb005d3b1/release.json",
+      "snapshot_id": "snap-cainiao-1d34e11a7bcd0dddb005d3b1",
+      "source_ref": "215c7e33f0a134e146d3636d061f96cc874118ba",
+      "status": "verified"
+    },
+    "dingding": {
+      "actual_sha256": "0f354583693dbc07b32fd1b41d532d325dd55a9e9cce83b557a85b3a92b49908",
+      "collection_manifest_status": "ok",
+      "content_digest": "6f8cc5f3f348bafb2e487ffee812c303b92547a5a557ee0c076c1d7c485b06fc",
+      "expected_sha256": "0f354583693dbc07b32fd1b41d532d325dd55a9e9cce83b557a85b3a92b49908",
+      "lineage_mode": "current",
+      "local": "backup/2026-09-22/sources/popular-rules-source/PRS_dingding.domains.txt",
+      "release_path": "releases/dingding/snap-dingding-a34044862e016125310d0f44/release.json",
+      "snapshot_id": "snap-dingding-a34044862e016125310d0f44",
+      "source_ref": "215c7e33f0a134e146d3636d061f96cc874118ba",
+      "status": "verified"
+    },
+    "qqmail": {
+      "actual_sha256": "e9f05b72a86ad9be815cde834ae1cd2097877c16dcea5eacb23885f52af4f24d",
+      "collection_manifest_status": "ok",
+      "content_digest": "679e892153cf1460cf8ae507f25e1ab0699b681b4c888f7bdd786e635e222567",
+      "expected_sha256": "e9f05b72a86ad9be815cde834ae1cd2097877c16dcea5eacb23885f52af4f24d",
+      "lineage_mode": "current",
+      "local": "backup/2026-09-22/sources/popular-rules-source/PRS_qqmail.domains.txt",
+      "release_path": "releases/qqmail/snap-qqmail-2270b88d6c38795abbee9d65/release.json",
+      "snapshot_id": "snap-qqmail-2270b88d6c38795abbee9d65",
+      "source_ref": "215c7e33f0a134e146d3636d061f96cc874118ba",
+      "status": "verified"
+    },
+    "qqmusic": {
+      "actual_sha256": "7b339dafb02213f9b29d7582664a1f802b9045ea27b99a47eeb6780c261a9119",
+      "collection_manifest_status": "ok",
+      "content_digest": "0d46e60de5ecf9c6d4fad4c68562cb3f47a9f03164dcc802693f72ab8b60ff14",
+      "expected_sha256": "7b339dafb02213f9b29d7582664a1f802b9045ea27b99a47eeb6780c261a9119",
+      "lineage_mode": "current",
+      "local": "backup/2026-09-22/sources/popular-rules-source/PRS_qqmusic.domains.txt",
+      "release_path": "releases/qqmusic/snap-qqmusic-7c0a2fae200d3fbbec51a4a3/release.json",
+      "snapshot_id": "snap-qqmusic-7c0a2fae200d3fbbec51a4a3",
+      "source_ref": "215c7e33f0a134e146d3636d061f96cc874118ba",
+      "status": "verified"
+    },
+    "taobao": {
+      "actual_sha256": "88646cd8d663976d7e4c72bc3ce43c760b059faa12bf72e81c8a760ef2563fc0",
+      "collection_manifest_status": "ok",
+      "content_digest": "4048a0d073ce25b55d23d2e7cc90aef92009e784b48ed65b66896d25f0cd86d4",
+      "expected_sha256": "88646cd8d663976d7e4c72bc3ce43c760b059faa12bf72e81c8a760ef2563fc0",
+      "lineage_mode": "current",
+      "local": "backup/2026-09-22/sources/popular-rules-source/PRS_taobao.domains.txt",
+      "release_path": "releases/taobao/snap-taobao-ec2009bae8427ad3ceee1abf/release.json",
+      "snapshot_id": "snap-taobao-ec2009bae8427ad3ceee1abf",
+      "source_ref": "215c7e33f0a134e146d3636d061f96cc874118ba",
+      "status": "verified"
+    },
+    "tencentcloud": {
+      "actual_sha256": "3aee7d20287e15c9e109c97d04571758bc4b66fd74ace8d84967827e36260991",
+      "collection_manifest_status": "ok",
+      "content_digest": "9caad7e42186f30c849d177af1ad0e890178860c1171a0d9c94696dc175c9e15",
+      "expected_sha256": "3aee7d20287e15c9e109c97d04571758bc4b66fd74ace8d84967827e36260991",
+      "lineage_mode": "current",
+      "local": "backup/2026-09-22/sources/popular-rules-source/PRS_tencentcloud.domains.txt",
+      "release_path": "releases/tencentcloud/snap-tencentcloud-ad8e76531a37c15f32d99658/release.json",
+      "snapshot_id": "snap-tencentcloud-ad8e76531a37c15f32d99658",
+      "source_ref": "215c7e33f0a134e146d3636d061f96cc874118ba",
+      "status": "verified"
+    },
+    "tmall": {
+      "actual_sha256": "4f2521212149543f1f267cb4b7d9bb89a544f168b33bd12ecd3207aaaedd412d",
+      "collection_manifest_status": "ok",
+      "content_digest": "a0d2650631ed033fa06e640f5b3e27ce1c2e2de7dbe051120e4b15871fa97336",
+      "expected_sha256": "4f2521212149543f1f267cb4b7d9bb89a544f168b33bd12ecd3207aaaedd412d",
+      "lineage_mode": "current",
+      "local": "backup/2026-09-22/sources/popular-rules-source/PRS_tmall.domains.txt",
+      "release_path": "releases/tmall/snap-tmall-f53bba695352fcfddbdd4b18/release.json",
+      "snapshot_id": "snap-tmall-f53bba695352fcfddbdd4b18",
+      "source_ref": "215c7e33f0a134e146d3636d061f96cc874118ba",
+      "status": "verified"
+    }
+  },
+  "status": "PASS",
+  "verified_count": 8
+}
