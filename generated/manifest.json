@@ -12,17 +12,17 @@
   "file_count": 1564,
   "files": [
     {
-      "file": "_promotion/20260922T022908916225Z-run.json",
+      "file": "_promotion/20260922T032052976063Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "66df2927bbb9b7f1f6e45c5a13017ebd7a8a2a20d71c8dc327c024645120a30e",
+      "sha256": "ce427e14c91cd0701b2db033e904d468f8dec020dc0a758acb3ce4b357f30f2d",
       "size": 160219
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "66df2927bbb9b7f1f6e45c5a13017ebd7a8a2a20d71c8dc327c024645120a30e",
+      "sha256": "ce427e14c91cd0701b2db033e904d468f8dec020dc0a758acb3ce4b357f30f2d",
       "size": 160219
     },
     {
@@ -876,10 +876,10 @@
     {
       "file": "egern/categories/other/all/rules.yaml",
       "kind": "client_rules",
-      "rule_count": 128816,
+      "rule_count": 128713,
       "scope": "egern",
-      "sha256": "5545552d19cdb92e6a1c8f8f6d7f76ad4eec59f34b90867cc67d8f186ad23793",
-      "size": 2469112
+      "sha256": "18f23788929ed3b5e35bf68697f851a1d9e68ca376c157c7083f29f97b55c625",
+      "size": 2466912
     },
     {
       "file": "egern/categories/paypal/all/rules.yaml",
@@ -1524,10 +1524,10 @@
     {
       "file": "egern/tencent/all/rules.yaml",
       "kind": "client_rules",
-      "rule_count": 879,
+      "rule_count": 776,
       "scope": "egern",
-      "sha256": "6019dff5b564e74d35d7ebcb983e7aeea14af6db5314ec80cab0828848b3f5d7",
-      "size": 18898
+      "sha256": "4ec6595727e27e1e20ce591a68288a4dbb894fc945a86b61147439feeb95d3e2",
+      "size": 16698
     },
     {
       "file": "egern/tencent/qqmail/rules.yaml",
@@ -1548,10 +1548,10 @@
     {
       "file": "egern/tencent/tencentcloud/rules.yaml",
       "kind": "client_rules",
-      "rule_count": 105,
+      "rule_count": 1,
       "scope": "egern",
-      "sha256": "ce1eda3fd4c5770b616180d4389fe8235181cf5420a4ffe0414a8a8549083b66",
-      "size": 2290
+      "sha256": "340b759c37b59fa272e7525dbe1a2f6705b3498530549629b29d983ed711e1fd",
+      "size": 43
     },
     {
       "file": "egern/tencent/tencentvideo/rules.yaml",
@@ -3404,10 +3404,10 @@
     {
       "file": "loon/categories/other/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 128673,
+      "rule_count": 128570,
       "scope": "loon",
-      "sha256": "9815346622f16f411d9d6c637968e05993d3fcfca41d87617a31530ebf89b5a5",
-      "size": 3482771
+      "sha256": "800357b25b2f58f6e0515055b1c3b48511447d16a1582c9e4362b53fcc71779b",
+      "size": 3480363
     },
     {
       "file": "loon/categories/paypal/all/rules.list",
@@ -4052,10 +4052,10 @@
     {
       "file": "loon/tencent/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 879,
+      "rule_count": 776,
       "scope": "loon",
-      "sha256": "105e6d4a90fc1f168669c65de8d77739954ccc83c35a50c97a26000b194d4270",
-      "size": 24819
+      "sha256": "135a3e707c6e32ba3e0cba752aa0d83d138db2dde28c4c10c85603cf5e52042c",
+      "size": 22411
     },
     {
       "file": "loon/tencent/qqmail/rules.list",
@@ -4076,10 +4076,10 @@
     {
       "file": "loon/tencent/tencentcloud/rules.list",
       "kind": "client_rules",
-      "rule_count": 105,
+      "rule_count": 1,
       "scope": "loon",
-      "sha256": "e2840790020927d91206298d48d2ae637593d187d1456cf4513cc5874d57b8d0",
-      "size": 2462
+      "sha256": "327feaeb8a41e1de71d2f4957fd10a3e5d561f7545e15881ed38c3ef71371d68",
+      "size": 32
     },
     {
       "file": "loon/tencent/tencentvideo/rules.list",
@@ -5020,10 +5020,10 @@
     {
       "file": "mihomo/categories/other/all/rules.yaml",
       "kind": "client_rules",
-      "rule_count": 128816,
+      "rule_count": 128713,
       "scope": "mihomo",
-      "sha256": "af2a52cc9f64ad96a21a0701ea5a70cd7df81eaab1316cf1c8eb8177cb78d33b",
-      "size": 4004028
+      "sha256": "746b876a63aa4f4290eac964c705ccfbb1199195d1c3fe572768ba38b7e8ce88",
+      "size": 4001208
     },
     {
       "file": "mihomo/categories/paypal/all/rules.yaml",
@@ -5668,10 +5668,10 @@
     {
       "file": "mihomo/tencent/all/rules.yaml",
       "kind": "client_rules",
-      "rule_count": 879,
+      "rule_count": 776,
       "scope": "mihomo",
-      "sha256": "ab4d8a77c26cd3f8a3ac2cafd61988ae87225a5457213341582ca48592e301ef",
-      "size": 28344
+      "sha256": "eddef8b1359d9a40333516fa3df58eaf1e73c8309e481d52d7071e9b68d34def",
+      "size": 25524
     },
     {
       "file": "mihomo/tencent/qqmail/rules.yaml",
@@ -5692,10 +5692,10 @@
     {
       "file": "mihomo/tencent/tencentcloud/rules.yaml",
       "kind": "client_rules",
-      "rule_count": 105,
+      "rule_count": 1,
       "scope": "mihomo",
-      "sha256": "4a14d5b0b8978bce24f2b664b96bd46cdd4192b8c7578320b81cf59988d8d114",
-      "size": 2891
+      "sha256": "71d8d00ecb51ecd7d2a7a018a6ff98d258657cf0c1520cfbce526062feefb8f1",
+      "size": 45
     },
     {
       "file": "mihomo/tencent/tencentvideo/rules.yaml",
@@ -6900,10 +6900,10 @@
     {
       "file": "quantumultx/categories/other/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 128673,
+      "rule_count": 128570,
       "scope": "quantumultx",
-      "sha256": "fc73ab0ede4d5844fce68279ffcde9a01981d86bf723fc24d604d83705d1a5b3",
-      "size": 4255801
+      "sha256": "ff1b8b6d99bf2fce7e02138d129a08005c5725b0a7dba3985f2421f77eaae29e",
+      "size": 4252569
     },
     {
       "file": "quantumultx/categories/paypal/all/rules.list",
@@ -7548,10 +7548,10 @@
     {
       "file": "quantumultx/tencent/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 879,
+      "rule_count": 776,
       "scope": "quantumultx",
-      "sha256": "81fb2b807c6384c7c90fb2d49b55b6e1bdf642fc403d2634e8e1f2969fddda18",
-      "size": 30403
+      "sha256": "c785881108dde0db79f16d0a94e215f7e7c3bb8526b0ba249c39b0cabe710dc3",
+      "size": 27171
     },
     {
       "file": "quantumultx/tencent/qqmail/rules.list",
@@ -7572,10 +7572,10 @@
     {
       "file": "quantumultx/tencent/tencentcloud/rules.list",
       "kind": "client_rules",
-      "rule_count": 105,
+      "rule_count": 1,
       "scope": "quantumultx",
-      "sha256": "015135393d8f54ff2db1aca6810fd65567c3bb9ed59b8b1e28ffdf7d731f4dd3",
-      "size": 3300
+      "sha256": "602242e45a1c3513e72fc67d65f22c1c60fa7a5c00a693e76be74aaae4e88f0c",
+      "size": 38
     },
     {
       "file": "quantumultx/tencent/tencentvideo/rules.list",
@@ -8516,10 +8516,10 @@
     {
       "file": "shadowrocket/categories/other/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 128673,
+      "rule_count": 128570,
       "scope": "shadowrocket",
-      "sha256": "9815346622f16f411d9d6c637968e05993d3fcfca41d87617a31530ebf89b5a5",
-      "size": 3482771
+      "sha256": "800357b25b2f58f6e0515055b1c3b48511447d16a1582c9e4362b53fcc71779b",
+      "size": 3480363
     },
     {
       "file": "shadowrocket/categories/paypal/all/rules.list",
@@ -9164,10 +9164,10 @@
     {
       "file": "shadowrocket/tencent/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 879,
+      "rule_count": 776,
       "scope": "shadowrocket",
-      "sha256": "105e6d4a90fc1f168669c65de8d77739954ccc83c35a50c97a26000b194d4270",
-      "size": 24819
+      "sha256": "135a3e707c6e32ba3e0cba752aa0d83d138db2dde28c4c10c85603cf5e52042c",
+      "size": 22411
     },
     {
       "file": "shadowrocket/tencent/qqmail/rules.list",
@@ -9188,10 +9188,10 @@
     {
       "file": "shadowrocket/tencent/tencentcloud/rules.list",
       "kind": "client_rules",
-      "rule_count": 105,
+      "rule_count": 1,
       "scope": "shadowrocket",
-      "sha256": "e2840790020927d91206298d48d2ae637593d187d1456cf4513cc5874d57b8d0",
-      "size": 2462
+      "sha256": "327feaeb8a41e1de71d2f4957fd10a3e5d561f7545e15881ed38c3ef71371d68",
+      "size": 32
     },
     {
       "file": "shadowrocket/tencent/tencentvideo/rules.list",
@@ -10134,8 +10134,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "d1b838ad3775ebfcc88fd9988758d67717f4bce1ed4b2a8d9eecb96216dcafad",
-      "size": 3113296
+      "sha256": "98f8737b96175ff73c2a24f5e517f09648d947136d5b4f71d726db70e3a9757d",
+      "size": 3110581
     },
     {
       "file": "singbox/categories/paypal/all/rules.json",
@@ -10782,8 +10782,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "a8b1698971e6aa22a868f785ff9f28f6c3a023fc5df056fe3d3940e2f9121b64",
-      "size": 23369
+      "sha256": "fe41938e6c28895e901acf44e818f209cf0789d0ad9a79bdccf005550bc80ebe",
+      "size": 20654
     },
     {
       "file": "singbox/tencent/qqmail/rules.json",
@@ -10806,8 +10806,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "ac781f4eb2747c973be9882980dc640855a33a70ae8978c04097fd8ef7048e47",
-      "size": 2877
+      "sha256": "30a72b4a74d5c40af2ff8a93aa092709876916c49780371a34a51f71777ef0b4",
+      "size": 110
     },
     {
       "file": "singbox/tencent/tencentvideo/rules.json",
@@ -11748,10 +11748,10 @@
     {
       "file": "surge/categories/other/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 128673,
+      "rule_count": 128570,
       "scope": "surge",
-      "sha256": "9815346622f16f411d9d6c637968e05993d3fcfca41d87617a31530ebf89b5a5",
-      "size": 3482771
+      "sha256": "800357b25b2f58f6e0515055b1c3b48511447d16a1582c9e4362b53fcc71779b",
+      "size": 3480363
     },
     {
       "file": "surge/categories/paypal/all/rules.list",
@@ -12396,10 +12396,10 @@
     {
       "file": "surge/tencent/all/rules.list",
       "kind": "client_rules",
-      "rule_count": 879,
+      "rule_count": 776,
       "scope": "surge",
-      "sha256": "105e6d4a90fc1f168669c65de8d77739954ccc83c35a50c97a26000b194d4270",
-      "size": 24819
+      "sha256": "135a3e707c6e32ba3e0cba752aa0d83d138db2dde28c4c10c85603cf5e52042c",
+      "size": 22411
     },
     {
       "file": "surge/tencent/qqmail/rules.list",
@@ -12420,10 +12420,10 @@
     {
       "file": "surge/tencent/tencentcloud/rules.list",
       "kind": "client_rules",
-      "rule_count": 105,
+      "rule_count": 1,
       "scope": "surge",
-      "sha256": "e2840790020927d91206298d48d2ae637593d187d1456cf4513cc5874d57b8d0",
-      "size": 2462
+      "sha256": "327feaeb8a41e1de71d2f4957fd10a3e5d561f7545e15881ed38c3ef71371d68",
+      "size": 32
     },
     {
       "file": "surge/tencent/tencentvideo/rules.list",
@@ -12522,8 +12522,8 @@
       "size": 4409
     }
   ],
-  "generated_at": "2026-09-22T03:17:36.344241+00:00",
-  "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/generated",
+  "generated_at": "2026-09-22T03:30:16.399860+00:00",
+  "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "network_dataset_directories": [
     "asn",
     "geoip",
