@@ -1,4 +1,4 @@
-version: 1
+version: 2
 project: phase2-source-canary
 
 prs:
@@ -9,6 +9,7 @@ prs:
 canary:
   enabled: false
   services: []
+  single_active_service: true
   require_official_evidence_only: true
   require_seed_only_zero: true
   require_conflict_zero: true
@@ -21,8 +22,11 @@ canary:
 promotion:
   mode: pull_request
   direct_main_push: false
+  production_promotion_allowed: true
   require_exact_source_release: true
   require_exact_commit_binding: true
+  require_immutable_registry_binding: true
+  require_collection_state_parity: true
 
 rollback:
   strategy: disable_service_then_restore_previous_snapshot
@@ -30,8 +34,15 @@ rollback:
   force_main_replacement: false
 
 production_unlock:
-  prerequisites:
+  legacy_production_services:
+    - 1688
+    - cainiao
+    - dingding
+    - qqmail
+    - qqmusic
+  requires:
     - source_release_verified
+    - immutable_lineage_match
     - collection_reconciliation_pass
     - v3_build_pass
     - seven_client_semantic_pass

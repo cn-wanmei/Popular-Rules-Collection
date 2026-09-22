@@ -3,8 +3,16 @@ from __future__ import annotations
 from scripts.source_canary_gate import validate_state
 
 
-def _policy():
-    return {"prs": {"enabled": False}, "canary": {"enabled": False}}
+def _policy(*canaries):
+    canaries = [str(x) for x in canaries]
+    return {
+        "prs": {"enabled": False},
+        "canary": {
+            "enabled": bool(canaries),
+            "services": canaries,
+            "single_active_service": True,
+        },
+    }
 
 
 def _state(*rows):
@@ -22,7 +30,7 @@ def test_single_canary_is_allowed():
             ("1688", "canary", True),
             ("cainiao", "verified", False),
         ),
-        _policy(),
+        _policy("1688"),
     )
     assert result["status"] == "PASS"
     assert result["canary_services"] == ["1688"]

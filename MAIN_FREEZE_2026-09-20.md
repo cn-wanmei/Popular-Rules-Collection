@@ -50,4 +50,12 @@ Until those repository rules are enabled, a human with direct push permission co
 
 ## Unfreeze
 
-Do not restore automated writers until Phase 2 passes the activation checklist.
+The production freeze was formally lifted on 2026-09-22 under a controlled activation record:
+
+- Activation record: `UNFREEZE_ACTIVATION_2026-09-22.md`
+- Automated writers may resume only under the activation record and release gates.
+- Direct arbitrary main mutation remains prohibited.
+- Publish remains fail-closed and evidence-bound.
+- Every Source lifecycle transition must retain immutable lineage and activation evidence.
+
+Until the activation record and gate requirements are satisfied, an individual writer must not interpret Unfreeze as permission to bypass review or release controls.

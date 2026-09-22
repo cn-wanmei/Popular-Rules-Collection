@@ -1,0 +1,92 @@
+{
+  "schema_version": "icon-v3-source-reconciliation/v1",
+  "date": "2026-09-22",
+  "branch": "phase2/icon-system-3-final-20260922",
+  "registry_rule": "immutable source provenance; unknown license cannot enter stable production",
+  "current_production_services": {
+    "1688": {
+      "source": "jinghu-moon/typora-see-yue-theme",
+      "source_commit": "fe68d70b682eb0c71d3f269cf43f407bfac64247",
+      "source_blob": "5d46e0c62a60be759c02cc1f767664d12c04ec17",
+      "license": "Apache-2.0",
+      "reviewed": true,
+      "local_asset": "assets/icons/source/1688.svg"
+    },
+    "cainiao": {
+      "source": "elax46/custom-brand-icons",
+      "source_commit": "27f9ad7244b31db2bd4d273e1d328ffd7aba1539",
+      "source_blob": "b27c9ca792c4f9c338f88d82e6f6666cb5eca737",
+      "license": "MIT",
+      "reviewed": true,
+      "local_asset": "assets/icons/source/cainiao.svg"
+    },
+    "dingding": {
+      "source": "ant-design/ant-design-icons",
+      "source_commit": "7f2516ac91226d2b41f93b35cb5197c8d94f7189",
+      "source_blob": "b35df61be72c94b851ed291a925ef48e7ce73123",
+      "license": "MIT",
+      "reviewed": true,
+      "local_asset": "assets/icons/source/dingding.svg"
+    },
+    "qqmail": {
+      "source": "thundersdata-frontend/td-design",
+      "source_commit": "f803d835ae93ecfda0f824e7c8090402a5b0fd6b",
+      "source_blob": "9bef9554c6d4140e04a1f7d07514f773bcbbb396",
+      "license": "Apache-2.0",
+      "reviewed": true,
+      "local_asset": "assets/icons/source/qqmail.svg",
+      "normalization": "template interpolation removed; SVG dimensions normalized to 1024x1024"
+    },
+    "qqmusic": {
+      "source": "Arcticons-Team/Arcticons",
+      "source_commit": "15.3.2",
+      "source_blob": "2b15374ff587c4baffac8fbe0c79d4151e6af5c9",
+      "license": "CC-BY-SA-4.0",
+      "reviewed": true,
+      "local_asset": "assets/icons/source/qqmusic.svg"
+    },
+    "taobao": {
+      "source": "simple-icons/simple-icons",
+      "source_commit": "b86d5c9a0bdd4f3f5c30898a63654dd32f39fd76",
+      "source_blob": "f35f4279051232d276c9238bfb80151d8a19aacf",
+      "license": "CC0-1.0",
+      "reviewed": true,
+      "local_asset": "assets/icons/source/taobao.svg"
+    }
+  },
+  "future_services": {
+    "tencentcloud": {
+      "state": "verified",
+      "enabled": false,
+      "official_reference": "https://cloud.tencent.com/act/event/icons",
+      "source_policy": "official_source_asset_required",
+      "license_status": "pending",
+      "cutover_blocker": "immutable_official_asset_and_license_reverification"
+    },
+    "tmall": {
+      "state": "verified",
+      "enabled": false,
+      "official_reference": "https://www.tmall.com/",
+      "source_policy": "official_source_asset_required",
+      "license_status": "pending",
+      "cutover_blocker": "immutable_official_asset_and_lineage_reverification"
+    }
+  },
+  "policy": {
+    "legacy_previous_good_services": [
+      "1688",
+      "cainiao",
+      "dingding",
+      "qqmail",
+      "qqmusic"
+    ],
+    "stable_overrides_enabled": [
+      "1688",
+      "cainiao",
+      "dingding",
+      "qqmail",
+      "qqmusic",
+      "taobao"
+    ]
+  }
+}

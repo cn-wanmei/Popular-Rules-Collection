@@ -1,0 +1,1482 @@
+{
+  "schema": "icon_client_index_v3",
+  "client": "singbox",
+  "entries": {
+    "alibaba": {
+      "identity": "brand.alibaba",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/alibaba.png",
+      "digest": "32dc589d71c67df779de2485088b35ce944ea5902224ce5781c640c65ec617ed"
+    },
+    "alipay": {
+      "identity": "brand.alipay",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/alipay.png",
+      "digest": "f37bc0e0b706ac59c32b0375e078a46ba8e653a4494f73f6e1b9a2c395641243"
+    },
+    "anthropic": {
+      "identity": "brand.anthropic",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/anthropic.png",
+      "digest": "eb234ca13dcb65281d3fda9aa26529b0b24e6f3c45f7a69b313ad1884ddd72d1"
+    },
+    "apple": {
+      "identity": "brand.apple",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/apple.png",
+      "digest": "2be4f77df5e8f4b6486da4ce9fff209a8e7888f065d0f4e1812c24fcefee707a"
+    },
+    "atlassian": {
+      "identity": "brand.atlassian",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/atlassian.png",
+      "digest": "38736b1d81d8d1242fa4c3f36282d9509b7cac5357641be5704f0cc378ea8a2b"
+    },
+    "baidu": {
+      "identity": "brand.baidu",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/baidu.png",
+      "digest": "e5711c101f8eb41e2487677ef5f4e6780f18e10ffba13bdc5ac3823e21fcc3bf"
+    },
+    "bilibili": {
+      "identity": "brand.bilibili",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/bilibili.png",
+      "digest": "e0381cf8256360ce89acd003d443b74c6805c94424352e2ee4eaa9f5580dae7c"
+    },
+    "binance": {
+      "identity": "brand.binance",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/binance.png",
+      "digest": "c5c75ce4d0322b0fd37719539b7298a54030b3a3f8dac624ee1c10dc85431ec8"
+    },
+    "bluesky": {
+      "identity": "brand.bluesky",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/bluesky.png",
+      "digest": "f11c952cf68eaa56a80ae58143e5b64a134361ccb952d13ec4f268b1c0175822"
+    },
+    "booking": {
+      "identity": "brand.booking",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/booking.png",
+      "digest": "491282d96889c72f5a765eb2b53380170197343bc6751750c3e6f28c280243d0"
+    },
+    "claude": {
+      "identity": "brand.claude",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/claude.png",
+      "digest": "36efaa34603ad4b65044348991698bbccc8b8b4ae0089c4774e4dd9606fb7818"
+    },
+    "cloudflare": {
+      "identity": "brand.cloudflare",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/cloudflare.png",
+      "digest": "8649a1dd6e186ff00958ec722dda105dd5ed981aea88e1f887394e6089860404"
+    },
+    "copilot": {
+      "identity": "brand.copilot",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/copilot.png",
+      "digest": "fa2f7abb75d86e81d4116dd0ed7f91edbc92edd17ed1b086f245d196ee58967e"
+    },
+    "cursor": {
+      "identity": "brand.cursor",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/cursor.png",
+      "digest": "fc14011fefdd68d6563f7c4d1545c2d093d04cf352adf5c0fc42a93ac872d407"
+    },
+    "deepseek": {
+      "identity": "brand.deepseek",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/deepseek.png",
+      "digest": "286de0fff24e2df4d29cb4ef0008820640c93be36739b769704175f813bed95c"
+    },
+    "deezer": {
+      "identity": "brand.deezer",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/deezer.png",
+      "digest": "91f719eec4f2f7b8e8bd609de00aeba55c84dfd2a25c707c5c50730d5aa0bb0f"
+    },
+    "digitalocean": {
+      "identity": "brand.digitalocean",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/digitalocean.png",
+      "digest": "60c652b79d43af1975e31a9ec181a679d8e1322e853a3b1b9685f1567dc32d1d"
+    },
+    "discord": {
+      "identity": "brand.discord",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/discord.png",
+      "digest": "eb25563efc836f2d94c6fa216d8d54b7d484cee89b374ba691d51bc842df5267"
+    },
+    "docker": {
+      "identity": "brand.docker",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/docker.png",
+      "digest": "27da839bac7a20fcae61e72ba9c490b19f0a922b98fa6fe27c7c38c92e5a510d"
+    },
+    "douyin": {
+      "identity": "brand.douyin",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/douyin.png",
+      "digest": "1ad3fd6f4ea8aa39f33da30c0c98dc4714cda422a7b273ebbb1bf98ec105d75d"
+    },
+    "ea": {
+      "identity": "brand.ea",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/ea.png",
+      "digest": "e0fc9feaa624bf156380321bebe3cf572f19584be49a499e1d684b9958be0940"
+    },
+    "ebay": {
+      "identity": "brand.ebay",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/ebay.png",
+      "digest": "48cb415ebb5b613ef2dbac4b27f70be158c53ccda9b2c19f3bea62e914cb8918"
+    },
+    "facebook": {
+      "identity": "brand.facebook",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/facebook.png",
+      "digest": "e5f52dc1f59e458a80ed2d0a8b5fe53db533efb7e29adb20df29a4b9a22ddcf0"
+    },
+    "gemini": {
+      "identity": "brand.gemini",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/gemini.png",
+      "digest": "01a7a09e46df9908a964c8c276fac1513f7044f4341ecfa6862587b180f0bb6e"
+    },
+    "github": {
+      "identity": "brand.github",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/github.png",
+      "digest": "1a68b1b8b22fcdb3c2d8c6c09a9fbafe67acbb3eb01baab9ccb4183ee2989039"
+    },
+    "google": {
+      "identity": "brand.google",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/google.png",
+      "digest": "abf2f545e8cdaf74d5e3c362f0bd909b62b1c9964e64acace988a4d63e56d733"
+    },
+    "hashicorp": {
+      "identity": "brand.hashicorp",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/hashicorp.png",
+      "digest": "8878206dfb6acbdcfe76ea2ab35d496189a8373cbb9caed87def9499265c5507"
+    },
+    "hbo": {
+      "identity": "brand.hbo",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/hbo.png",
+      "digest": "b75b585ddf59dc1582d5ea58e22352ad9fed55ba3dd7de3be9189355814c3fb6"
+    },
+    "huawei": {
+      "identity": "brand.huawei",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/huawei.png",
+      "digest": "82286c9e25d5945735908c2cfb931c1c55e5dfd4c943d25df8303bef73be3248"
+    },
+    "huggingface": {
+      "identity": "brand.huggingface",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/huggingface.png",
+      "digest": "e7ad2607ce99745fd3a7f84e9ad3cf86b728eddacf9f8329eb3ddb7f0d800290"
+    },
+    "instagram": {
+      "identity": "brand.instagram",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/instagram.png",
+      "digest": "c8cbec9a20ef3c9e2acb847f4058387ce04dedf6bf4fbb91c5e66e09fa9ac7a2"
+    },
+    "jetbrains": {
+      "identity": "brand.jetbrains",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/jetbrains.png",
+      "digest": "a4177164adb32fabd7fb361c998d141d7f0c05ca91c7286849d662e582c4bc11"
+    },
+    "meituan": {
+      "identity": "brand.meituan",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/meituan.png",
+      "digest": "af3e3aae6aaeb87af2e61623f9c9ee00157fe2c60e3216a1215e0970db29d031"
+    },
+    "microsoft": {
+      "identity": "brand.microsoft",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/microsoft.png",
+      "digest": "06118455adfd5a732c466eee495948ffd0149ad144ce239d3d0cf0f60aab6ca6"
+    },
+    "netflix": {
+      "identity": "brand.netflix",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/netflix.png",
+      "digest": "849aa05dac510b2d57c7b9ae78e0d6844cc650839967e654f0931b6b90dfbccc"
+    },
+    "netlify": {
+      "identity": "brand.netlify",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/netlify.png",
+      "digest": "070ae1296802d73bb43fd3f96bc6dbb226fa99a3f33f15bde350f3817ecb3763"
+    },
+    "okx": {
+      "identity": "brand.okx",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/okx.png",
+      "digest": "a6ac69a0463a2ffb0f50ed224c72b617156512f24e484ffda447434c259b67bd"
+    },
+    "openai": {
+      "identity": "brand.openai",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/openai.png",
+      "digest": "694f7339157a5c7dfb29f54d459f0f0d3bb569ebcf157969e7b8db62ed172e96"
+    },
+    "paramountplus": {
+      "identity": "brand.paramountplus",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/paramountplus.png",
+      "digest": "07c60a493f91cdcc077db64fb381366a7ac9a3a91b402301691a1b80ad37ac34"
+    },
+    "perplexity": {
+      "identity": "brand.perplexity",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/perplexity.png",
+      "digest": "2ed6e1258970ab2bddc7749fbad5a3ddd72408a99b84da55254acc8ba9d9b35a"
+    },
+    "playstation": {
+      "identity": "brand.playstation",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/playstation.png",
+      "digest": "0f6cdc50fdfb3a27a7c80dcbf361bebb9e9cada417276828196444e22d4eed80"
+    },
+    "reddit": {
+      "identity": "brand.reddit",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/reddit.png",
+      "digest": "876c22dbaaff9fdc20c974ea0c65248efa49872ff1735b4feed18d38343a23bf"
+    },
+    "roblox": {
+      "identity": "brand.roblox",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/roblox.png",
+      "digest": "3ba59678c2a5e048858d5979fea9dca4faf2bb55b840ebfe88bcc55f24b8b269"
+    },
+    "sina": {
+      "identity": "brand.sina",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/sina.png",
+      "digest": "2fc8b010231849407b81644e50b0b18cf6d0f3a281474735f80e12a527ecaeb9"
+    },
+    "soundcloud": {
+      "identity": "brand.soundcloud",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/soundcloud.png",
+      "digest": "32095fc966027c27523b076e8680c0c9fa0237cf8270525936d5b2e7da3da9d1"
+    },
+    "spotify": {
+      "identity": "brand.spotify",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/spotify.png",
+      "digest": "60dce5d4c7d10c196d83dc40fc3db745a7cdf3a515cbf5ad6a0c49dfe37fb3e0"
+    },
+    "telegram": {
+      "identity": "brand.telegram",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/telegram.png",
+      "digest": "7d4ec08394bf99772d3cf34c4e342b9bb691f6655cfc8135abdbff03e1422078"
+    },
+    "tencent": {
+      "identity": "brand.tencent",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/tencent.png",
+      "digest": "1b5c3833135a6d080735ee707b796c7012ebd2d10d362f8cf833e40f78f1ed69"
+    },
+    "tidal": {
+      "identity": "brand.tidal",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/tidal.png",
+      "digest": "fd9143db7ac291e1039cbf98ccbc36a87ca59e00fff0b4f9b27a524eb7223e78"
+    },
+    "tiktok": {
+      "identity": "brand.tiktok",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/tiktok.png",
+      "digest": "1ad3fd6f4ea8aa39f33da30c0c98dc4714cda422a7b273ebbb1bf98ec105d75d"
+    },
+    "trello": {
+      "identity": "brand.trello",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/trello.png",
+      "digest": "214045e9cf300d42cf52644f04e91687c30ad82923dbb9905cc673506721494d"
+    },
+    "twitch": {
+      "identity": "brand.twitch",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/twitch.png",
+      "digest": "1a3678912cb442cf75fd222224e70434bf242b861bc60790fc0fcd8c97b1c2e1"
+    },
+    "twitter": {
+      "identity": "brand.twitter",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/twitter.png",
+      "digest": "e2d2e3cb41dedc005a41bc2539175d0427911e92e2adfe533b6e979eacfdf182"
+    },
+    "ubisoft": {
+      "identity": "brand.ubisoft",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/ubisoft.png",
+      "digest": "b129b8f12dabb7b9d4126a34e9b23711d895ee830343818eb44f853ee951a978"
+    },
+    "vimeo": {
+      "identity": "brand.vimeo",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/vimeo.png",
+      "digest": "3c07e0ec5c86eeed8b9bc193f65a35ac4b5d6f71e47e4164a4be61d08edcce64"
+    },
+    "wechat": {
+      "identity": "brand.wechat",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/wechat.png",
+      "digest": "fbaa2e5f1a7e0bf20b5067bae762df54cbd4cebeaf664722546531cd22290e10"
+    },
+    "weibo": {
+      "identity": "brand.weibo",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/weibo.png",
+      "digest": "2fc8b010231849407b81644e50b0b18cf6d0f3a281474735f80e12a527ecaeb9"
+    },
+    "whatsapp": {
+      "identity": "brand.whatsapp",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/whatsapp.png",
+      "digest": "36ba3d7f33d2f1cf4ae20eb5177d2e92280f11f4157f15329aee85576dc7ef58"
+    },
+    "wikipedia": {
+      "identity": "brand.wikipedia",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/wikipedia.png",
+      "digest": "2a4d190c9305058f292b74f5a44ce0432c99129bfd00a597210501a1438540ab"
+    },
+    "wise": {
+      "identity": "brand.wise",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/wise.png",
+      "digest": "8e95d73697e17e8a01332072f4d052bbd30c28ef2b884b45336943ee29ed3892"
+    },
+    "xiaomi": {
+      "identity": "brand.xiaomi",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/xiaomi.png",
+      "digest": "a08a080236b4255034150bba68b849ed3adcd7f0daf29581a26d914fb56f792c"
+    },
+    "youtube": {
+      "identity": "brand.youtube",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/youtube.png",
+      "digest": "b87bf5633a80692e78f7a3ea7976fb572324921cca71b9c68be2fbebfc8504ac"
+    },
+    "zhihu": {
+      "identity": "brand.zhihu",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/zhihu.png",
+      "digest": "537a6c335a4fdc1d6b4297cd1d57940e9d6fa7774aa12ccbacb861408b3fb780"
+    },
+    "adblock": {
+      "identity": "semantic.adblock",
+      "role": "special",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/adblock.png",
+      "digest": "0a06767f8e4fe01f1ca3021f34208961663e80200392aa91841bff22db6187ce"
+    },
+    "adobe": {
+      "identity": "brand.adobe",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/adobe.png",
+      "digest": "ef06076095076ecaf5e3f9d60578a9b3991d1478a0710db25770a2d3feb2b5b9"
+    },
+    "airbnb": {
+      "identity": "brand.airbnb",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/airbnb.png",
+      "digest": "9c7037c8f417b7d1ed435d71552e9040c9d797fbee02a1eac100c0d1895f8edc"
+    },
+    "amazon": {
+      "identity": "brand.amazon",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/amazon.png",
+      "digest": "d0d31cf9f7bc3dbbec7bebd4c33bf5926e77567b5c5a56ee00fc9b0a438837fe"
+    },
+    "amazonaws": {
+      "identity": "brand.aws",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/amazonaws.png",
+      "digest": "a1daa3fbbdcd783db226a6511eaf4625ff4ea56b56e07e9b141e59f5f33224a1"
+    },
+    "applemusic": {
+      "identity": "brand.applemusic",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/applemusic.png",
+      "digest": "189e3b58bf9492d64a7683974db5a338aa89c643a06f9bb261cc9bc53b5bbc46"
+    },
+    "appletv": {
+      "identity": "brand.appletv",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/appletv.png",
+      "digest": "f4f9edcecba1626f974f6bc968188cfbbb83830139843b00d1d3e74d275dd03e"
+    },
+    "asn": {
+      "identity": "semantic.asn",
+      "role": "special",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/asn.png",
+      "digest": "e9468bb90b47fe0201451e2d68835526bd743a4146bbd2c64a2860ae9cf6f28e"
+    },
+    "auto": {
+      "identity": "semantic.auto",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/auto.png",
+      "digest": "d90529f6a7628bfebe181d4372995a7af9c1557e96eac85622929a52a1d6424e"
+    },
+    "aws": {
+      "identity": "brand.aws",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/aws.png",
+      "digest": "a1daa3fbbdcd783db226a6511eaf4625ff4ea56b56e07e9b141e59f5f33224a1"
+    },
+    "canva": {
+      "identity": "brand.canva",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/canva.png",
+      "digest": "b702c02b8f33c31b36556b9cf1c3339c622a51cca90f5d2d6c560f2643c42c50"
+    },
+    "china": {
+      "identity": "semantic.china",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/china.png",
+      "digest": "a75da3d0c09c3974679f94018d96a8d96a3c4a3c6b1c3fb257f551330df4cf2d"
+    },
+    "chinamobile": {
+      "identity": "semantic.chinamobile",
+      "role": "special",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/chinamobile.png",
+      "digest": "d0e3b2a0742b6f32c19f90f1fdd944f3421d79fcb141b735ee6dd76868a2411f"
+    },
+    "chinatelecom": {
+      "identity": "semantic.chinatelecom",
+      "role": "special",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/chinatelecom.png",
+      "digest": "5e8d06f054c333623fba1e1819a916be9256c83f8e455d23eae68e6e597f3a69"
+    },
+    "chinaunicom": {
+      "identity": "semantic.chinaunicom",
+      "role": "special",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/chinaunicom.png",
+      "digest": "51767422a6eed9d8d00f45560288430d375281ca2c4e77fbeff202e2060bd1bc"
+    },
+    "cloud": {
+      "identity": "semantic.cloud",
+      "role": "special",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/cloud.png",
+      "digest": "a4ef689d4f9c9e8229554c4258674cc0287c1c4541934a5615124c229f213534"
+    },
+    "direct": {
+      "identity": "semantic.direct",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/direct.png",
+      "digest": "72016c435c4a8441b17b032e31b8b715ffc4b9265e019f3f84e071b873f037fe"
+    },
+    "dns": {
+      "identity": "semantic.dns",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/dns.png",
+      "digest": "84f489120a62ea16ba6d437c95bba7f86856f41b66576dfcd737033627e27486"
+    },
+    "dropbox": {
+      "identity": "brand.dropbox",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/dropbox.png",
+      "digest": "d2bddf46c994b2157c7c39968566b3cc3f90b621fe1a087349eb3e01b464a7d1"
+    },
+    "emby": {
+      "identity": "brand.emby",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/emby.png",
+      "digest": "e1f63b382b1fbfef75aa3388da81b16e9d50646c6f293d5de19d5165f9aef878"
+    },
+    "epic": {
+      "identity": "brand.epic",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/epic.png",
+      "digest": "5861f5a72a290bf4f3df25e4746a9acf34569c5736ee376128ec0f297aa05912"
+    },
+    "fallback": {
+      "identity": "semantic.fallback",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/fallback.png",
+      "digest": "9cdc851ae120a03b8283227674ac5d62ae603b1a5e0fa4d60bb28c783c0483cc"
+    },
+    "figma": {
+      "identity": "brand.figma",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/figma.png",
+      "digest": "a083f185dee10ba5476111db3344340098de8d1b1431746e69ace8ca0829b22f"
+    },
+    "final": {
+      "identity": "semantic.final",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/final.png",
+      "digest": "9ccf8c230978256c160b9cb2635743d2ec577a66667bd957449e60bfb66609b9"
+    },
+    "firebase": {
+      "identity": "brand.firebase",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/firebase.png",
+      "digest": "478e6542628d8a922cb7ceef857126f968f43d725714e444f1418437ea40972c"
+    },
+    "geoip": {
+      "identity": "semantic.geoip",
+      "role": "special",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/geoip.png",
+      "digest": "1963d3aebaae42d8c9ddd86c76909798f7bfb2d57ac770f5de66219db7eeec73"
+    },
+    "geosite": {
+      "identity": "semantic.geosite",
+      "role": "special",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/geosite.png",
+      "digest": "8ab2841380463d075f65a7e025056b1714321c4f372f6acc4901d8b250d666d6"
+    },
+    "gfw": {
+      "identity": "semantic.gfw",
+      "role": "special",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/gfw.png",
+      "digest": "b1237f67e3563e8c055a2a1b4adb6207eb0de3992fa087f371607c33180df4ca"
+    },
+    "gitlab": {
+      "identity": "brand.gitlab",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/gitlab.png",
+      "digest": "227eac3506058b9663b4e38fdfceeeadf3f9d7893c3b3a5eb652fce84a780b4b"
+    },
+    "global": {
+      "identity": "semantic.global",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/global.png",
+      "digest": "dd4809ae5d03f8197efa473684b35af1110e246aca8435c1248b187ce40b8b3b"
+    },
+    "heroku": {
+      "identity": "brand.heroku",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/heroku.png",
+      "digest": "59c3a000a73375864b7baf7ad6390dc083c0606740b6f1633789dcd05fe6cd8b"
+    },
+    "icloud": {
+      "identity": "brand.icloud",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/icloud.png",
+      "digest": "4d47e65f426ba77481fd17ab57fa59ae8d0f2e93c2460bcbee960d765f6c209d"
+    },
+    "kakaotalk": {
+      "identity": "brand.kakaotalk",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/kakaotalk.png",
+      "digest": "838b648a65feff3efd012b7ead9d51fb8b6e0a4820c981551a9d6fee09c53e49"
+    },
+    "lan": {
+      "identity": "semantic.lan",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/lan.png",
+      "digest": "c4ba294439566eef7971b6ff500fdc0b13da0d012841a04132797339e8136f4c"
+    },
+    "line": {
+      "identity": "brand.line",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/line.png",
+      "digest": "3b7bcde5ea30a9cbe06a9a62765d8f72736f177c7e1423547b3933401b6636a8"
+    },
+    "linkedin": {
+      "identity": "brand.linkedin",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/linkedin.png",
+      "digest": "c6e132d2245855f634ea8a521400999b40b4ce22d1b9a6ba345e26bc8be98bd2"
+    },
+    "loadbalance": {
+      "identity": "semantic.loadbalance",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/loadbalance.png",
+      "digest": "f9304f7108c511db7c5a6916ef68c16f3114d486981ba9448b999914f255da89"
+    },
+    "match": {
+      "identity": "semantic.match",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/match.png",
+      "digest": "79b2b5674a6caedb07b733f54763987ad3831330b0ee7fe34c109213209d69fa"
+    },
+    "messenger": {
+      "identity": "brand.messenger",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/messenger.png",
+      "digest": "6e6deace3e66848d470388bab4297a38d0abfefeff19198d86b86f50cdf06b1e"
+    },
+    "meta": {
+      "identity": "brand.meta",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/meta.png",
+      "digest": "a4738580e734ac701cd9fc44b9a7702be231de76ffcc781652bf97f822a95b01"
+    },
+    "naver": {
+      "identity": "brand.naver",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/naver.png",
+      "digest": "4babf9be83fcdc1a8ba8c1ca4d7f398cd8c682fc6285e8b4eff37850c40a714d"
+    },
+    "network": {
+      "identity": "semantic.network",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/network.png",
+      "digest": "5fe831d45744fbb3791f21687d70b08dcbdf5812da5833556025b12fffe70df6"
+    },
+    "nintendo": {
+      "identity": "brand.nintendo",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/nintendo.png",
+      "digest": "1efed3a10d10ddaac7c1a234d00053f525a9e2057d68d209b3cc37f6e90a596f"
+    },
+    "notion": {
+      "identity": "brand.notion",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/notion.png",
+      "digest": "41710a64f88e6f66d56bab2ddf98bbd9df11f4aca62bc27e49407c7ffe2d64ed"
+    },
+    "oppo": {
+      "identity": "brand.oppo",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/oppo.png",
+      "digest": "537cc298378d3afa7790696ee168ec0138c8a97ba605ddf9970d031eb498e789"
+    },
+    "oracle": {
+      "identity": "brand.oracle",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/oracle.png",
+      "digest": "87cfa17000cd44818cf4c003eb10fcd612c16997e7b39df1a1f28dabf63810b8"
+    },
+    "paypal": {
+      "identity": "brand.paypal",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/paypal.png",
+      "digest": "ce51f54524ca09f7b13ef53ecf9a70c7a011a0878642a4066bfe03dd27664d71"
+    },
+    "pinterest": {
+      "identity": "brand.pinterest",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/pinterest.png",
+      "digest": "9e7836c6e12e82eaaed48c8fe504ff79f508497b8aab05e825675172ddfffcc8"
+    },
+    "placeholder": {
+      "identity": "semantic.placeholder",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/placeholder.png",
+      "digest": "df792f3e1738dc253658bd9714d47a41dd91aa8a2cd0063185da91a817a90c09"
+    },
+    "private": {
+      "identity": "semantic.private",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/private.png",
+      "digest": "bffc4f856eaeb0201b3d7e79905c8115c1dc0738fad200127b917962c254bd37"
+    },
+    "provider": {
+      "identity": "semantic.provider",
+      "role": "special",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/provider.png",
+      "digest": "54023ea02e2617451e4480c19d9c6da3e313c74c0d52473f30e761538ff94c90"
+    },
+    "proxy": {
+      "identity": "semantic.proxy",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/proxy.png",
+      "digest": "5feb3bee52dcdc0c7de4a0cc1965fde73b67127d2d4ebca87ec935d20ee40ef7"
+    },
+    "reject": {
+      "identity": "semantic.reject",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/reject.png",
+      "digest": "cd00503ee33652dc692fcd620e59f01d502f82b580ab28295272a2345e022d3e"
+    },
+    "rockstar": {
+      "identity": "brand.rockstar",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/rockstar.png",
+      "digest": "e612da538c5cac08c892c16ff69baf78a7782c38377fad0cc89a181f3edf8dc5"
+    },
+    "select": {
+      "identity": "semantic.select",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/select.png",
+      "digest": "e90f6fc4092b54fd7c0a801693627715226be1e92a6e9ec0c494e661f4e3ccec"
+    },
+    "shopify": {
+      "identity": "brand.shopify",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/shopify.png",
+      "digest": "c49bdc344bf4a5a14a548314ce779a50f32c81d14af68129c7d9cce6ad52706f"
+    },
+    "signal": {
+      "identity": "brand.signal",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/signal.png",
+      "digest": "0bfc1efd202a5b1639f4655e2a87aa931ae389d204d2186b885af16f5b441d2c"
+    },
+    "slack": {
+      "identity": "brand.slack",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/slack.png",
+      "digest": "51d76273159fd975dc38c352bebb600dc7d5058e9b0521c9a6cfd3d1c0052653"
+    },
+    "snapchat": {
+      "identity": "brand.snapchat",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/snapchat.png",
+      "digest": "b525ceae252b8a10a63837625071d0f692cdd47c6588a54ccd8fd8fdd7404469"
+    },
+    "speedtest": {
+      "identity": "brand.speedtest",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/speedtest.png",
+      "digest": "b6776246e5b90168085840c513492f30faa96c8aa4ca416ad64d1337690b8d58"
+    },
+    "steam": {
+      "identity": "brand.steam",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/steam.png",
+      "digest": "d902ef3c9e455ee267f5aa919b0fb6f7d878868fb41032ff47fc295c70700793"
+    },
+    "stripe": {
+      "identity": "brand.stripe",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/stripe.png",
+      "digest": "a611c7e22dce7819b88cf7c646f52cd815f8fafc002bbc57410048ec686ca55a"
+    },
+    "stun": {
+      "identity": "semantic.stun",
+      "role": "special",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/stun.png",
+      "digest": "5c2ed99557ae3b99b2a5883b28037c03e981144e5906ea39e124da6a1b1df4ed"
+    },
+    "taobao": {
+      "identity": "brand.placeholder",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/taobao.png",
+      "digest": "9ade8c0dd461c72a86657f7c35417a625ea38eeab43fc45b3c945223ab361f77"
+    },
+    "threads": {
+      "identity": "brand.threads",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/threads.png",
+      "digest": "43def50e171421a39d09a872dd219de3996b611205fad0d0f6a928588ae88500"
+    },
+    "uber": {
+      "identity": "brand.uber",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/uber.png",
+      "digest": "ad94e5717a0fd8e14c2f4109e60f62b0ea3bca266936a6e18c94ae220e8d28d9"
+    },
+    "urltest": {
+      "identity": "semantic.urltest",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/urltest.png",
+      "digest": "4069e7877cbfa67e69767d4a928e02e7aa0ee762dd414fcd145d7c49a7bedb31"
+    },
+    "vercel": {
+      "identity": "brand.vercel",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/vercel.png",
+      "digest": "4c3d1f713494edbf1c4dc048f322fb5d6facd95eb8e06aa8ebffe5c6e25eb44e"
+    },
+    "vivo": {
+      "identity": "brand.vivo",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/vivo.png",
+      "digest": "f09ccbbc7330d5c8a095503625e7a477049a98f86dfd664346d32b7a78e7f2cc"
+    },
+    "walmart": {
+      "identity": "brand.walmart",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/walmart.png",
+      "digest": "868762990d768d32af6e2636c8be742e796f32a8616687f70b44d0ef85d4f641"
+    },
+    "x": {
+      "identity": "brand.x",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/x.png",
+      "digest": "e2d2e3cb41dedc005a41bc2539175d0427911e92e2adfe533b6e979eacfdf182"
+    },
+    "youtubemusic": {
+      "identity": "brand.youtubemusic",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/youtubemusic.png",
+      "digest": "fde49ca74ef44e4f7a013ae6c9271a73f6adf8b588d99b263d0349b1cecb6f92"
+    },
+    "zoom": {
+      "identity": "brand.zoom",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/zoom.png",
+      "digest": "40b276a69dc15eff192e82de6e1851c6f91330e8189b50cfa61f2e05d56f8e30"
+    },
+    "1688": {
+      "identity": "brand.1688",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/1688.png",
+      "digest": "d377875f06b7544d52a75e1ad542bb0ff428a8e0c9d32fdce95bac06d3389663"
+    },
+    "cainiao": {
+      "identity": "brand.cainiao",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/cainiao.png",
+      "digest": "9d43e15c19565573e4bccc35fb3af40a84408d915bab58d60941a14a228bad69"
+    },
+    "dingding": {
+      "identity": "brand.dingding",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/dingding.png",
+      "digest": "2548e848880e8249a72a5c22ddf15bdd05d952e8b8fff1b39c19d037893c0d97"
+    },
+    "qqmail": {
+      "identity": "brand.qqmail",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/qqmail.png",
+      "digest": "6a37c523bd37bb8596ff4858af01096294a452af758954353727e9e533b1775c"
+    },
+    "qqmusic": {
+      "identity": "brand.qqmusic",
+      "role": "service",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/qqmusic.png",
+      "digest": "b5c6acfcb53602ef17db00d565f0cd6e5e50e1086756b3b16c2c777c33a2b535"
+    },
+    "strategy.direct": {
+      "identity": "semantic.direct",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/strategy.direct.png",
+      "digest": "eb606faa919762a80d69e7bdd8ed0c2afbcc4741e5fcf03bfaa61effb869088e"
+    },
+    "strategy.proxy": {
+      "identity": "semantic.proxy",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/strategy.proxy.png",
+      "digest": "141c741e3c0417386dfadebf72473cc222863d86a9ce9b04c59f3fe378092a4f"
+    },
+    "strategy.reject": {
+      "identity": "semantic.reject",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/strategy.reject.png",
+      "digest": "f55511f9d5eebc67108f02d11dc050cc7d48b49c717e51016f3ab2a8ae8c90eb"
+    },
+    "strategy.auto": {
+      "identity": "semantic.auto",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/strategy.auto.png",
+      "digest": "cba60ecf571c70e1105455cc99d9336a1922096dffa9264a5bd9f252bb0424bd"
+    },
+    "strategy.fallback": {
+      "identity": "semantic.fallback",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/strategy.fallback.png",
+      "digest": "bb3a63f878c7b8c4a6e78c6677e6e016ea5ec9af59638dbf841461e3b6037273"
+    },
+    "strategy.urltest": {
+      "identity": "semantic.urltest",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/strategy.urltest.png",
+      "digest": "22a28c4b5540ee60f8bd7719dcaf6fbefda431e60ff128f3e8033e226bed8ac8"
+    },
+    "strategy.loadbalance": {
+      "identity": "semantic.loadbalance",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/strategy.loadbalance.png",
+      "digest": "e6db18e8afc18e110a49e6e0fe3cee4604083a206765474a5b7eb780250dab4a"
+    },
+    "strategy.final": {
+      "identity": "semantic.final",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/strategy.final.png",
+      "digest": "9ccf8c230978256c160b9cb2635743d2ec577a66667bd957449e60bfb66609b9"
+    },
+    "strategy.match": {
+      "identity": "semantic.match",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/strategy.match.png",
+      "digest": "3e335a922ed31aafe523e8857cd0c977e15ed9383676288720d47179a7272276"
+    },
+    "strategy.dns": {
+      "identity": "semantic.dns",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/strategy.dns.png",
+      "digest": "8a5f2e312ee63b51f94a0b0aca5cfc1e3698cd9e093476ac3330d0b20c853fbc"
+    },
+    "strategy.global": {
+      "identity": "semantic.global",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/strategy.global.png",
+      "digest": "f8376a7cb5920e13e117471481bb8f87a371a9aa8c3d7df13712a7981cfc9978"
+    },
+    "strategy.select": {
+      "identity": "semantic.select",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/strategy.select.png",
+      "digest": "10898a5e8c4517fe6f01cb0dd1370026f696392e5b821ea263c74080e216486d"
+    },
+    "strategy.private": {
+      "identity": "semantic.private",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/strategy.private.png",
+      "digest": "bffc4f856eaeb0201b3d7e79905c8115c1dc0738fad200127b917962c254bd37"
+    },
+    "strategy.lan": {
+      "identity": "semantic.lan",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/strategy.lan.png",
+      "digest": "21b46b0835247349fe6c8d2fd2ed1af2c987f0a6d4c20036dd002cb87541b97b"
+    },
+    "strategy.china": {
+      "identity": "semantic.china",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/strategy.china.png",
+      "digest": "a75da3d0c09c3974679f94018d96a8d96a3c4a3c6b1c3fb257f551330df4cf2d"
+    },
+    "strategy.network": {
+      "identity": "semantic.network",
+      "role": "strategy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/strategy.network.png",
+      "digest": "28c8e1bc4cacd7da9f1c71a522bdeb2c0d82856995725fd3bcf295a252ec5686"
+    },
+    "client-policy.mihomo": {
+      "identity": "client-policy.mihomo",
+      "role": "client_policy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/client-policy.mihomo.png",
+      "digest": "1d561de45f081da251d0896d6cc84fb78f231d4d1ef6ba8f850b7ff2e9172ae3"
+    },
+    "client-policy.singbox": {
+      "identity": "client-policy.singbox",
+      "role": "client_policy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/client-policy.singbox.png",
+      "digest": "9392e3f7d9e2fec88d24cae7f6d215cb80dda50d16e9740e9c4b88c57f027974"
+    },
+    "client-policy.surge": {
+      "identity": "client-policy.surge",
+      "role": "client_policy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/client-policy.surge.png",
+      "digest": "6d328ad88528664d49909c2634d79be94db53efa686f6e4636b6476ce58d1ecd"
+    },
+    "client-policy.shadowrocket": {
+      "identity": "client-policy.shadowrocket",
+      "role": "client_policy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/client-policy.shadowrocket.png",
+      "digest": "ffd3e1ae26b1ce58fe87094f372e61a4d329eec5b8299cdbf458ecacc8f90224"
+    },
+    "client-policy.quantumultx": {
+      "identity": "client-policy.quantumultx",
+      "role": "client_policy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/client-policy.quantumultx.png",
+      "digest": "b09adc5e107349d8d9f120425cbc884a4e03f9271b1677a945a69590fc7776c8"
+    },
+    "client-policy.egern": {
+      "identity": "client-policy.egern",
+      "role": "client_policy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/client-policy.egern.png",
+      "digest": "4c0eee0a56617a57e66c4f6b813ce76ab186f7f9c6ba807e3fdcb1ae6c65c6c7"
+    },
+    "client-policy.loon": {
+      "identity": "client-policy.loon",
+      "role": "client_policy",
+      "style": "minimal",
+      "size": 128,
+      "format": "png",
+      "path": "clients/singbox/128/client-policy.loon.png",
+      "digest": "d837dbd031d5a93bf7d274cefd5c86c0f228f56f04d4571c7e913db3099c15c1"
+    }
+  }
+}

@@ -46,7 +46,7 @@ jobs:
               echo 'No staged status changes after concurrent update.'
               return 0
             fi
-            git commit -m 'chore(status): refresh generated release state' || true
+            git commit -m 'chore(status): refresh generated release state'
           }
 
           publish_status

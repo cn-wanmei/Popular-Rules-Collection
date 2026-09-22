@@ -40,7 +40,23 @@ def main() -> int:
 
     prs = policy.get("prs") or {}
     if prs.get("enabled") is not False:
-        errors.append("PRS must remain disabled unless Production is explicitly unlocked by the release process")
+        errors.append("PRS must remain disabled during Phase 2")
+
+    canary_policy = policy.get("canary") or {}
+    active_canaries = {
+        sid for sid, item in services.items()
+        if isinstance(item, dict) and item.get("state") == "canary" and item.get("enabled") is True
+    }
+    declared_canaries = {str(x).strip() for x in (canary_policy.get("services") or []) if str(x).strip()}
+    if declared_canaries != active_canaries:
+        errors.append(
+            "canary policy/state divergence: "
+            f"policy={sorted(declared_canaries)} state={sorted(active_canaries)}"
+        )
+    if active_canaries and canary_policy.get("enabled") is not True:
+        errors.append("active canary services require canary policy enabled=true")
+    if not active_canaries and canary_policy.get("enabled") not in {False, None}:
+        errors.append("no active canary services require canary policy enabled=false")
 
     for sid in SERVICES:
         item = services.get(sid) or {}
@@ -55,6 +71,19 @@ def main() -> int:
             errors.append(f"{sid}: production requires enabled=true")
         if attestation.get("status") != "passed":
             errors.append(f"{sid}: production requires attestation.status=passed")
+        legacy_services = {
+            str(x).strip()
+            for x in ((policy.get("production_unlock") or {}).get("legacy_production_services") or [])
+            if str(x).strip()
+        }
+        activation_record = str(attestation.get("production_activation_record", "")).strip()
+        if sid not in legacy_services:
+            if not activation_record:
+                errors.append(f"{sid}: production requires production_activation_record")
+            elif not (ROOT / activation_record).is_file():
+                errors.append(f"{sid}: production activation record missing: {activation_record}")
+        elif activation_record and not (ROOT / activation_record).is_file():
+            errors.append(f"{sid}: declared legacy production activation record missing: {activation_record}")
 
         for field in PRODUCTION_REQUIRED:
             if not str(attestation.get(field, "")).strip():

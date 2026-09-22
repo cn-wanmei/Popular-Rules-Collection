@@ -7,10 +7,11 @@ def _base():
     return (
         {
             "prs": {"enabled": False},
-            "canary": {"enabled": False},
+            "canary": {"enabled": True, "services": ["dingding"]},
             "production_unlock": {
-                "prerequisites": [
+                "requires": [
                     "source_release_verified",
+                    "immutable_lineage_match",
                     "collection_reconciliation_pass",
                     "v3_build_pass",
                     "seven_client_semantic_pass",
