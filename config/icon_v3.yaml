@@ -135,6 +135,23 @@ source_overrides:
       type: CC0-1.0
       reviewed: true
       note: Pinned Simple Icons asset; trademark rights remain with the respective owner.
+future_source_reconciliation:
+  tencentcloud:
+    state: pending
+    service_state: verified
+    enabled: false
+    official_reference: https://cloud.tencent.com/act/event/icons
+    source_policy: official_source_asset_required
+    license_status: pending
+    cutover_blocker: immutable_official_asset_and_license_reverification
+  tmall:
+    state: pending
+    service_state: verified
+    enabled: false
+    official_reference: https://www.tmall.com/
+    source_policy: official_source_asset_required
+    license_status: pending
+    cutover_blocker: immutable_official_asset_and_lineage_reverification
 official_source_policy:
   domain_registry: config/official_sites.yaml
   unknown_license_default_release: false
