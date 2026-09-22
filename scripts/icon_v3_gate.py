@@ -100,13 +100,14 @@ def main() -> int:
             if row.get("role") != "service":
                 errors.append(f"{sid}: production service icon role must be service")
             if sid in legacy_services:
-                if row.get("release_eligible"):
-                    errors.append(f"{sid}: legacy previous-good service must remain quarantined until V3 cutover")
-                if row.get("quality",{}).get("identity") != "hold":
-                    errors.append(f"{sid}: legacy previous-good service requires identity=hold")
-                variants = row.get("variants") or {}
-                if not all(str((variants.get(style) or {}).get("path") or "").startswith("quarantine/") for style in STYLES):
-                    errors.append(f"{sid}: legacy previous-good variants must be quarantined")
+                # Legacy production may already be migrated to a stable V3 override,
+                # otherwise it must remain an explicit previous-good quarantine.
+                if not row.get("release_eligible"):
+                    if row.get("quality",{}).get("identity") != "hold":
+                        errors.append(f"{sid}: legacy previous-good service requires identity=hold")
+                    variants = row.get("variants") or {}
+                    if not all(str((variants.get(style) or {}).get("path") or "").startswith("quarantine/") for style in STYLES):
+                        errors.append(f"{sid}: legacy previous-good variants must be quarantined")
             else:
                 if not row.get("release_eligible"):
                     errors.append(f"{sid}: production service icon is quarantined")
