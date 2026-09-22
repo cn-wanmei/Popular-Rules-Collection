@@ -1,11 +1,11 @@
 {
   "id": "geoip-sg",
   "kind": "geoip",
-  "scope": "country",
+  "scope": "geoip",
   "path": "database/geoip/sg.txt",
   "lines": 14028,
   "sha256_source": "9c28262cfd3e77658d12f5d9b626c5e995eb141d419ab22a1e4d4584ee951d8c",
-  "fetched_at": "2026-09-22T01:32:21.055756+00:00",
+  "fetched_at": "2026-09-22T01:41:46.225620+00:00",
   "source": {
     "owner": "Loyalsoldier",
     "repo": "geoip",
