@@ -20,7 +20,9 @@
 
 **Stable client URLs:** [docs/CLIENT_NETWORK_URLS.md](../../docs/CLIENT_NETWORK_URLS.md)
 
-> This directory is the Network Dataset input layer. Changes must flow through Collect → Network Dataset Build → generated manifests; `generated/` is never hand-copied from these inputs.
+> This directory is the Network Dataset input layer. Changes are production-trigger inputs: `Collect Upstream` refreshes `database/` from these registries, materializes the complete Network Dataset tree into `generated/`, and the same release candidate is consumed by Build/Publish. `generated/` is never hand-copied from these inputs.
+>
+> **Production invariant:** a successful Network Dataset refresh must leave `generated/manifest.json` and `generated/network_manifest.json` in the same publication candidate as the seven client rule trees. Missing required network scopes fail the Release Publish gate rather than silently disappearing.
 
 ```bash
 python scripts/collect_datasets.py
