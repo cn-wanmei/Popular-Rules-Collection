@@ -23,3 +23,7 @@ service / strategy / client_policy / provider / category / country / region / sp
 稳定 Release 必须包含 Registry、Manifest、Alias Index、7 张 master-all、provider/role/category 审阅图、24/32/48px 可读性图、7 客户端索引、Review Manifest、QA/Gate 报告和 previous-good 引用。
 
 未知许可证资产只能进入候选池，不能进入默认稳定发布。
+
+## Phase 2 Cutover
+
+This V3 layer is the controlled replacement path for the legacy icon pipeline. The Phase 2 release job is pinned to the exact triggering commit and writes only to this Phase 2 branch.
