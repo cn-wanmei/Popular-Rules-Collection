@@ -50,8 +50,8 @@ def _load_directory_contract() -> tuple[dict[str, str], dict[str, set[str]], dic
     if not _DIRECTORY_POLICY.exists():
         raise RuntimeError(f"Directory policy missing: {_DIRECTORY_POLICY}")
     policy = _load_yaml(_DIRECTORY_POLICY)
-    if policy.get("schema") != "rule_directory_policy_v1":
-        raise RuntimeError("Unsupported rule directory policy schema")
+    if policy.get("schema") != "rule_distribution_policy_v2":
+        raise RuntimeError("Unsupported rule distribution policy schema")
     layout = policy.get("layout") or {}
     if not all(layout.get(k) for k in ("generated_client_root", "generated_aggregate", "generated_service", "generated_china")):
         raise RuntimeError("Directory policy is missing generated path templates")
