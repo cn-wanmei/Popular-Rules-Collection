@@ -24,6 +24,7 @@ from typing import Any
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
+BACKUP = ROOT / "backup"
 NETWORK_SCOPES = {"asn", "geoip", "geosite", "network", "provider", "policies", "ip", "mmdb"}
 
 
