@@ -1,50 +1,89 @@
 # 生产链严格审计报告 — 2026-09-22
 
 ## 审计对象
+
 - `cn-wanmei/Popular-Rules-Source`
 - `cn-wanmei/Popular-Rules-Collection`
 
 ## 已验证的不变量
-- Collection 当前生产日期为 2026-09-22。
-- Service Rule 客户端固定为 7 个：Mihomo、sing-box、Surge、Shadowrocket、Quantumult X、Egern、Loon。
-- `generated/manifest.json` 当前为 1564 个文件，并覆盖 7 个 client scope 与 8 个 Network Dataset scope。
-- 7 个客户端的 manifest 条目数与实际生成树逐一一致，无 missing / extra。
-- Collection immutable Source registry 的 8 个绑定均固定在 Source durable release commit `ffc7375b31080ea735c8bcc8ee59066b969c382f`；逐项核对 release checksum 与 content / evidence / policy / generator / release digest 均一致。
-- Source 后续 main commit 不自动等同于生产漂移；候选 snapshot 必须经过 durable release / Collection Source Gate。
-- Icon System 3 当前 release pointer 为 `2026.09.22-5e0e48ad55c6`；244 entries，Gate / QA PASS；7 个 client index 各 164 个 stable entries。
 
-## CI 缺陷
+- Collection 当前生产日期：2026-09-22。
+- Service Rule 客户端固定 7 个：Mihomo、sing-box、Surge、Shadowrocket、Quantumult X、Egern、Loon。
+- `generated/manifest.json`：1564 个文件；7 个 client scopes + 8 个 Network Dataset scopes。
+- 7 个客户端的 manifest 条目数与实际目录逐一一致，无 missing / extra。
+- Collection immutable Source registry 的 8 个 active bindings 全部固定于 Source durable release commit `ffc7375b31080ea735c8bcc8ee59066b969c382f`，逐项核对 checksum / content digest / evidence digest / policy digest / generator digest / release digest。
+- Source 在 `ffc737...` 后的 main 提交可以只是 lifecycle / candidate；不能因 SHA 较新就判定生产漂移。
+- Icon System 3 当前 release pointer：`2026.09.22-5e0e48ad55c6`；244 entries；Gate / QA PASS；7 个 client index 各 164 个 stable entries。
 
-### Source Generate run 35701318301
-Validate / Generate 成功，失败集中在 `gh pr create`：GitHub Actions token 被仓库级策略禁止创建/批准 Pull Request。
+## 分流规则与目录
 
-代码侧已处理：
-- PR #27 承接该失败 run 已生成的候选刷新分支。
-- PR #28 将 PR 创建失败改为显式 handoff evidence，不再伪装成数据生成失败。
-- 增加 concurrency，避免 schedule / manual 并发生成。
-- PR #28 已通过 Source CI 与 Phase 2 Gate 并已合并。
+当前生产规则目录为：
 
-永久控制面仍需：Settings → Actions → General → Workflow permissions → 开启允许 GitHub Actions 创建和批准 Pull Requests。
+`generated/<client>/<ecosystem>/<service-or-all>/rules.*`
 
-### Collection Source Auto Handoff
-发现同类潜在阻断：`.github/workflows/source-auto-handoff.yml` 同样使用 `gh pr create`。本审计分支已增加同样的 fail-safe handoff evidence，避免未来 Source durable seal 有变化时把权限策略误报为生产失败。
+其中 client 目录固定为：
 
-## 文档 / 路径漂移
+`mihomo`, `singbox`, `surge`, `shadowrocket`, `quantumultx`, `egern`, `loon`
 
-已确认旧说明层存在：
-- `generated/sing-box` / `generated/quantumult-x` 等旧客户端目录名；
-- 扁平 `generated/<client>/<id>.*` 假设，而当前真实结构是 `generated/<client>/<ecosystem>/<service-or-all>/rules.*`；
-- 将 `database/services/*` 描述为运行时数据来源；
-- 历史文档仍引用已不存在的 `scripts/generate_docs.py` / `scripts/generate_rule_pages.py`；
-- Icon 历史文档仍把旧 V1/V2 脚本当作当前生产链。
+Network Dataset 独立 scope：
 
-本审计分支已修订核心生产 / 架构 / 发布 / Icon SSOT 文档，并新增 8 个当前 Source 服务的规则说明页：
-`1688`、`cainiao`、`dingding`、`qqmail`、`qqmusic`、`taobao`、`tencentcloud`、`tmall`。
+`asn`, `geoip`, `geosite`, `ip`, `mmdb`, `network`, `policies`, `provider`
 
-## 尚未宣称为“完全清理”的部分
+`rule/` 是 V1 历史浏览/迁移树；`rules/` 是 V3 目录契约；Legacy Source evidence 不属于 V3 Runtime 真源。
 
-旧 `docs/rules/*.md` 中仍有历史页需要继续按 `generated/manifest.json` 批量再生；本 PR 不会把未完成的历史页伪装成已经清零。当前 SSOT 已明确要求：出现旧路径时以 V3 manifest 为准。
+## 已确认问题与修复
+
+### 1. Source Scheduled Generate
+
+Run `35701318301` 的 Validate / Generate 全部成功，失败点是 `gh pr create`；根因是仓库级 GitHub Actions PR 创建策略，而非数据或规则生成失败。
+
+已处理：
+
+- PR #27 承接并合入该 run 产生的候选 Source snapshot refresh。
+- PR #28 修复 Generate workflow：
+  - 增加 concurrency；
+  - PR 创建失败不再伪装成数据生成失败；
+  - 输出明确 handoff status / error artifact；
+  - PR #28 已通过 CI + Phase 2 Source Gate，并已合并，merge SHA `ac853f5e6504168b5242e1fd230a171b9d2ee594`。
+
+### 2. Collection Source Auto Handoff
+
+`.github/workflows/source-auto-handoff.yml` 存在同类 `gh pr create` 风险。
+
+本审计分支已增加 fail-safe handoff：
+- PR 创建失败 → 明确 warning；
+- 保留 handoff branch；
+- 保存 `source-handoff-status.txt` / error / PR URL；
+- 上传 artifact；
+- 不把仓库权限策略误报为 source data failure。
+
+### 3. 文档路径漂移
+
+原有 `docs/rules/*.md` 出现：
+- 旧 client 目录 `generated/sing-box` / `generated/quantumult-x`；
+- 旧的扁平 `generated/<client>/<id>.*`；
+- 把 Legacy database 路径当运行时真源；
+- 引用已不存在的文档生成脚本；
+- 过期生产日期。
+
+本审计分支已重建核心 V3 / Icon / Routing / Publish 文档，并按当前 `service_primary.yaml + generated/manifest.json` 重建全部 90 个配置服务说明页；同时恢复完整导航，将另外 118 个历史/聚合页面标注为非当前 90-service SSOT。
+
+### 4. 文档防漂移 Gate
+
+新增 `scripts/docs_ssot_gate.py` 并接入 `Directory Gate`：
+
+- 90 个配置服务必须都有 `docs/rules/<id>.md`；
+- 当前生产页不得使用旧 client 目录、旧文档生成器或旧路径作为当前入口；
+- 页面引用的 `generated/.../rules.*` 必须实际存在于 `generated/manifest.json`；
+- 当前规则索引必须覆盖 90 个配置服务；
+- Legacy 路径仅允许在明确“历史/Legacy、非 Runtime 真源”的语境出现。
+
+## 控制面剩余项
+
+GitHub Actions repository-level “Allow GitHub Actions to create and approve pull requests” 仍是自动 PR 创建的外部控制项。工作流中的 `permissions: pull-requests: write` 不能替代该仓库级设置。
 
 ## 结论
 
-生产规则、Network Dataset、immutable Source binding、Icon System 3 release 的内部身份链当前可被精确核验。剩余真正的外部阻断是 GitHub repository-level Actions PR permission；文档层的当前核心入口已纠正，历史逐服务页的全面再生属于后续专门文档生成任务。
+当前生产规则、Network Dataset、immutable Source lineage、Icon System 3、分流目录契约均有可验证身份链。
+
+代码侧的 CI PR-handoff 已修复并验证；Collection 文档当前 SSOT 已重建并增加防漂移 Gate。唯一尚需仓库 Settings 层完成的动作，是恢复 GitHub Actions 自动创建/批准 PR 的仓库级权限；在该权限未开启期间，workflow 会保留 branch + handoff evidence，而不会把权限阻断误判为生成失败。
