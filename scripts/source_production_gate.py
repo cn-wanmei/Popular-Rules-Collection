@@ -39,8 +39,8 @@ def main() -> int:
     errors: list[str] = []
 
     prs = policy.get("prs") or {}
-    if prs.get("enabled") is not True:
-        errors.append("PRS controlled promotion registry must be enabled")
+    if prs.get("enabled") is not False:
+        errors.append("PRS must remain disabled during Phase 2")
 
     canary_policy = policy.get("canary") or {}
     active_canaries = {
