@@ -49,7 +49,7 @@ for service_id in sorted(services):
             errors.append(f'{doc.relative_to(ROOT)} contains forbidden legacy marker: {marker}')
     for line in text.splitlines():
         if legacy_service_prefix in line and not ('Legacy' in line or 'legacy' in line or '不是' in line or 'not' in line):
-            errors.append(f'{doc.relative_to(ROOT)} uses database/services as a current reference: {line.strip()}')
+            errors.append(f'{doc.relative_to(ROOT)} uses the retired service-source path as a current reference: {line.strip()}')
 
     expected = []
     for item in generated:
