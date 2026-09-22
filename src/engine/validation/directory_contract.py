@@ -12,9 +12,12 @@ def _load_yaml(path: Path) -> dict[str, Any]:
         raise ValueError(f"expected mapping: {path}")
     return data
 
-def _rule_files(root: Path) -> list[Path]:
+def _all_files(root: Path) -> list[Path]:
     if not root.exists(): return []
-    return [p for p in root.rglob("rules.yaml") if p.is_file()]
+    return [p for p in root.rglob("*") if p.is_file()]
+
+def _rule_files(root: Path) -> list[Path]:
+    return [p for p in _all_files(root) if p.name == "rules.yaml"]
 
 def _valid_rule_path(root: Path, path: Path) -> bool:
     parts = path.relative_to(root).parts
@@ -45,7 +48,7 @@ def validate(root: Path = ROOT) -> dict[str, Any]:
         for required in ("README.md", "_index.yaml", "manifest.json"):
             if not (rule_root / required).is_file():
                 errors.append(f"missing human distribution metadata: rule/{required}")
-        for path in _rule_files(rule_root):
+        for path in _all_files(rule_root):
             if not _valid_rule_path(rule_root, path):
                 errors.append(f"invalid human rule path: {path.relative_to(root)}")
         try:
