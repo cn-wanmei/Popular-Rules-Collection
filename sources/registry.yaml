@@ -215,6 +215,18 @@ sources:
   - {path: rule/Clash/Bahamut/Bahamut.yaml, name: bahamut, local: Clash_Bahamut.yaml}
   - {path: rule/Clash/Emby/Emby.yaml, name: emby, local: Clash_Emby.yaml}
   - {path: rule/QuantumultX/Cloud/TencentCloud/TencentCloud.list, name: tencentcloud, service: tencentcloud, local: QuantumultX_TencentCloud.list}
+  # 2026-09-23 expansion: dedicated BlackMatrix7 Apple/Google/Microsoft subservices.
+  - {path: rule/Clash/AppleID/AppleID.list, name: appleid, service: appleid, local: Clash_AppleID.list}
+  - {path: rule/Clash/AppleMail/AppleMail.list, name: applemail, service: applemail, local: Clash_AppleMail.list}
+  - {path: rule/Clash/AppleMedia/AppleMedia.list, name: applemedia, service: applemedia, local: Clash_AppleMedia.list}
+  - {path: rule/Clash/AppleNews/AppleNews.list, name: applenews, service: applenews, local: Clash_AppleNews.list}
+  - {path: rule/Clash/AppleFirmware/AppleFirmware.list, name: applefirmware, service: applefirmware, local: Clash_AppleFirmware.list}
+  - {path: rule/Clash/iCloudPrivateRelay/iCloudPrivateRelay.list, name: icloudprivaterelay, service: icloudprivaterelay, local: Clash_iCloudPrivateRelay.list}
+  - {path: rule/Clash/GoogleSearch/GoogleSearch.list, name: googlesearch, service: googlesearch, local: Clash_GoogleSearch.list}
+  - {path: rule/Clash/GoogleVoice/GoogleVoice.list, name: googlevoice, service: googlevoice, local: Clash_GoogleVoice.list}
+  - {path: rule/Clash/GoogleEarth/GoogleEarth.list, name: googleearth, service: googleearth, local: Clash_GoogleEarth.list}
+  - {path: rule/Clash/MicrosoftEdge/MicrosoftEdge.list, name: microsoftedge, service: microsoftedge, local: Clash_MicrosoftEdge.list}
+  - {path: rule/Clash/Bing/Bing.list, name: bing, service: bing, local: Clash_Bing.list}
 - id: metacubex
   name: MetaCubeX meta-rules-dat
   url: https://github.com/MetaCubeX/meta-rules-dat
