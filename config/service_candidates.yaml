@@ -11,13 +11,13 @@ source_status:
 candidates:
   # Domestic provider/service decomposition
   - {id: qq, provider: tencent, region: domestic, category: social, status: planned, priority: P0, source_status: candidate_upstream}
-  - {id: qqmusic, provider: tencent, region: domestic, category: media, status: planned, priority: P0, source_status: candidate_upstream}
-  - {id: qqmail, provider: tencent, region: domestic, category: productivity, status: planned, priority: P0, source_status: candidate_upstream}
+  - {id: qqmusic, provider: tencent, region: domestic, category: media, status: existing, priority: P0, source_status: candidate_upstream}
+  - {id: qqmail, provider: tencent, region: domestic, category: productivity, status: existing, priority: P0, source_status: candidate_upstream}
   - {id: wecom, provider: tencent, region: domestic, category: productivity, status: planned, priority: P0, source_status: candidate_upstream}
   - {id: tencentmeeting, provider: tencent, region: domestic, category: productivity, status: planned, priority: P0, source_status: candidate_upstream}
-  - {id: tencentcloud, provider: tencent, region: domestic, category: cloud, status: planned, priority: P0, source_status: candidate_upstream}
-  - {id: taobao, provider: alibaba, region: domestic, category: shopping, status: planned, priority: P0, source_status: candidate_upstream}
-  - {id: tmall, provider: alibaba, region: domestic, category: shopping, status: planned, priority: P0, source_status: candidate_upstream}
+  - {id: tencentcloud, provider: tencent, region: domestic, category: cloud, status: existing, priority: P0, source_status: candidate_upstream}
+  - {id: taobao, provider: alibaba, region: domestic, category: shopping, status: existing, priority: P0, source_status: candidate_upstream}
+  - {id: tmall, provider: alibaba, region: domestic, category: shopping, status: existing, priority: P0, source_status: candidate_upstream}
   - {id: alibabacloud, provider: alibaba, region: domestic, category: cloud, status: planned, priority: P0, source_status: verified_upstream}
   - {id: 1688, provider: alibaba, region: domestic, category: shopping, status: planned, priority: P0, source_status: candidate_upstream}
   - {id: dingding, provider: alibaba, region: domestic, category: productivity, status: planned, priority: P0, source_status: candidate_upstream}
