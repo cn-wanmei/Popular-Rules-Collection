@@ -56,8 +56,9 @@ def _get_source_seal() -> dict:
     if not SHA40.fullmatch(source_ref) or not SHA40.fullmatch(verified_input):
         raise RuntimeError("Source durable report must contain exact SHA40 persistence and verified input commits")
     services = report.get("services") or {}
-    if set(services) != set(SERVICES):
-        raise RuntimeError(f"Source durable service set mismatch: {sorted(services)}")
+    missing = sorted(set(SERVICES) - set(services))
+    if missing:
+        raise RuntimeError(f"Source durable service set missing required services: {missing}")
     for sid in SERVICES:
         item = services[sid]
         if item.get("status") != "PERSISTED":
@@ -126,6 +127,7 @@ def main() -> None:
     report = _get_source_seal()
     source_ref = str(report["persistence_commit"])
     verified_input = str(report["verified_input_commit"])
+    durable_services = set(report.get("services") or {})
 
     registry = _load_registry()
     bindings = registry.setdefault("bindings", {})
@@ -133,11 +135,24 @@ def main() -> None:
         raise RuntimeError("immutable registry bindings must be a mapping")
 
     changed_services: list[str] = []
+    retired_services: list[str] = []
     for sid in SERVICES:
         binding = _build_binding(source_ref, verified_input, sid, report["services"][sid])
         if bindings.get(sid) != binding:
             bindings[sid] = binding
             changed_services.append(sid)
+
+    # The durable bridge is the Source production SSOT. An active immutable
+    # binding that disappeared from that durable report is stale and must not
+    # remain production-active (for example, the legacy `qq` binding).
+    for sid, binding in list(bindings.items()):
+        if not isinstance(binding, dict):
+            continue
+        if binding.get("status") == "active" and sid not in durable_services:
+            binding = dict(binding)
+            binding["status"] = "retired"
+            bindings[sid] = binding
+            retired_services.append(str(sid))
 
     if registry.get("schema") != "popular_rules_collection_immutable_source_registry_v2":
         registry["schema"] = "popular_rules_collection_immutable_source_registry_v2"
@@ -152,8 +167,9 @@ def main() -> None:
         "schema": "source_auto_handoff_v2",
         "source_ref": source_ref,
         "verified_input_commit": verified_input,
-        "changed": bool(changed_services),
+        "changed": bool(changed_services or retired_services),
         "changed_services": changed_services,
+        "retired_services": retired_services,
         "services": list(SERVICES),
     }, ensure_ascii=False, indent=2))
 
