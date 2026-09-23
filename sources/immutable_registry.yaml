@@ -361,3 +361,67 @@ alibabacloud:
     release_digest: 82644ff2cbaddc4da87ede48d44752f3c277a4cae9be2ab2097165733cc11940
     release_identity_version: '2'
     expected_sha256: 951505d128d003a7fc541bf70a163363a8ddb6826398f42c5f0253d488a23475
+
+applenews:
+    status: active
+    source_id: popular-rules-source
+    source_ref: eb6a510a75ed7a59b53e581fd05d6215ec6bb35d
+    verified_input_commit: 1993fefd3187daa921c8547b1f56608875658fbe
+    artifact_path: generated/source/applenews/domains.txt
+    release_path: releases/applenews/snap-applenews-bab2441b83a9381991262abb/release.json
+    snapshot_id: snap-applenews-bab2441b83a9381991262abb
+    content_digest: dfda1972d3c0939eed4cfbce0046289fa92cffcf4600aacc2314ada7c2fd7301
+    evidence_digest: c095ed6cd3f03a20007fe91e38babd38d81db425e1c7522e104140c576d6f032
+    policy_digest: e9c5f2a02dd25bc0df638dbff8274d8643ac6ea6d1de46cf9e466b564b665897
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: bab2441b83a9381991262abb40d142f588cea79dac15604b85588cfe513dff59
+    release_identity_version: '2'
+    expected_sha256: 4522d284378586a45801098349f25e71a467ddd0574beedbb17674be393fac3e
+
+  baidu:
+    status: active
+    source_id: popular-rules-source
+    source_ref: eb6a510a75ed7a59b53e581fd05d6215ec6bb35d
+    verified_input_commit: 1993fefd3187daa921c8547b1f56608875658fbe
+    artifact_path: generated/source/baidu/domains.txt
+    release_path: releases/baidu/snap-baidu-d4750fd40c6e1042256ee4c8/release.json
+    snapshot_id: snap-baidu-d4750fd40c6e1042256ee4c8
+    content_digest: 7727809e237517bf95020fe0b389355b5be2a8dfe04cc803662697fc7b92fc30
+    evidence_digest: b5ab24a4ad93dbde4c240aa846eb917bfa8ea67628ef79e7d45cf4f645cdfdeb
+    policy_digest: e9c5f2a02dd25bc0df638dbff8274d8643ac6ea6d1de46cf9e466b564b665897
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: d4750fd40c6e1042256ee4c8a836afc75cb2beaf3f15feed462e5d001ffd8bd6
+    release_identity_version: '2'
+    expected_sha256: 1cfb395a2fa64482b9d2b5ab6f13c939c876fa85a7f5e0248e4289c10bcb06ec
+
+  bing:
+    status: active
+    source_id: popular-rules-source
+    source_ref: eb6a510a75ed7a59b53e581fd05d6215ec6bb35d
+    verified_input_commit: 1993fefd3187daa921c8547b1f56608875658fbe
+    artifact_path: generated/source/bing/domains.txt
+    release_path: releases/bing/snap-bing-ac5e74d33b3ae0e99136f261/release.json
+    snapshot_id: snap-bing-ac5e74d33b3ae0e99136f261
+    content_digest: 7bad2a191d54566d185511a6452e8a3dd045a85eb7a108d5a846214aa220d4d5
+    evidence_digest: bd9a5321df4249943ae79509939c1aede2b459a39a713ef36e1def656c917919
+    policy_digest: e9c5f2a02dd25bc0df638dbff8274d8643ac6ea6d1de46cf9e466b564b665897
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: ac5e74d33b3ae0e99136f261a71cbc7185e34459225c70ab657df5236c4a7d85
+    release_identity_version: '2'
+    expected_sha256: 4f3b4038f976210acf8e90975bd6ea4c7178667a77d9579c7b2a750ed50ea54d
+
+  tiktok:
+    status: active
+    source_id: popular-rules-source
+    source_ref: eb6a510a75ed7a59b53e581fd05d6215ec6bb35d
+    verified_input_commit: 1993fefd3187daa921c8547b1f56608875658fbe
+    artifact_path: generated/source/tiktok/domains.txt
+    release_path: releases/tiktok/snap-tiktok-9f40d3f10588df933d255891/release.json
+    snapshot_id: snap-tiktok-9f40d3f10588df933d255891
+    content_digest: 1a72610eaabb12fac263e6086b35652115f6e6f1594ab9c8d102aaf3a031a4f8
+    evidence_digest: 8353301ff1067f5047c4d570d3391620043237f95604dfbb70071f6416ae950d
+    policy_digest: e9c5f2a02dd25bc0df638dbff8274d8643ac6ea6d1de46cf9e466b564b665897
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 9f40d3f10588df933d255891155be799e4a848d2a422423589a7ebec5218ae52
+    release_identity_version: '2'
+    expected_sha256: 2b0a8259a1619d0052d0fc11259c0beda79bffd6e9d1cf479f78f8c478cfaf3f
