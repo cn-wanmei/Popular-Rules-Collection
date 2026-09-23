@@ -36,7 +36,7 @@ sources:
   - {path: generated/source/appledev/domains.txt, name: appledev, service: appledev, local: PRS_appledev.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
   - {path: generated/source/findmy/domains.txt, name: findmy, service: findmy, local: PRS_findmy.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
   - {path: generated/source/azure/domains.txt, name: azure, service: azure, local: PRS_azure.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
-  - {path: generated/source/feishu/domains.txt, name: feishu, service: feishu, local: PRS_feishu.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release  # High-frequency independent service; pending immutable Source release
+  - {path: generated/source/feishu/domains.txt, name: feishu, service: feishu, local: PRS_feishu.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
   - {path: generated/source/appletv/domains.txt, name: appletv, service: appletv, local: PRS_appletv.domains.txt, enabled: true}  # Batch2; pending immutable Source release
   - {path: generated/source/youtube/domains.txt, name: youtube, service: youtube, local: PRS_youtube.domains.txt, enabled: true}  # Batch2; pending immutable Source release
   - {path: generated/source/googlefcm/domains.txt, name: googlefcm, service: googlefcm, local: PRS_googlefcm.domains.txt, enabled: true}  # Batch2; pending immutable Source release
@@ -60,6 +60,13 @@ sources:
   - {path: generated/source/messenger/domains.txt, name: messenger, service: messenger, local: PRS_messenger.domains.txt, enabled: true}  # Batch3; pending immutable Source release
   - {path: generated/source/roblox/domains.txt, name: roblox, service: roblox, local: PRS_roblox.domains.txt, enabled: true}  # Batch3; pending immutable Source release
   - {path: generated/source/qq/domains.txt, name: qq, service: qq, local: PRS_qq.domains.txt, enabled: true}  # Registered for Source candidate-chain reconciliation; not a production binding  # Durable immutable Source release persisted at Source main@192ee4a99cd02d99faddfbad30ac4ebf914edaa8
+  - {path: generated/source/applenews/domains.txt, name: applenews, service: applenews, local: PRS_applenews.domains.txt, enabled: true}  # Batch4; awaiting immutable Source release
+  - {path: generated/source/baidu/domains.txt, name: baidu, service: baidu, local: PRS_baidu.domains.txt, enabled: true}  # Batch4; awaiting immutable Source release
+  - {path: generated/source/bing/domains.txt, name: bing, service: bing, local: PRS_bing.domains.txt, enabled: true}  # Batch4; awaiting immutable Source release
+  - {path: generated/source/tiktok/domains.txt, name: tiktok, service: tiktok, local: PRS_tiktok.domains.txt, enabled: true}  # Batch4; awaiting immutable Source release
+  - {path: generated/source/neteasemail/domains.txt, name: neteasemail, service: neteasemail, local: PRS_neteasemail.domains.txt, enabled: true}  # Batch4; awaiting immutable Source release
+  - {path: generated/source/honorofkings_cn/domains.txt, name: honorofkings_cn, service: honorofkings_cn, local: PRS_honorofkings_cn.domains.txt, enabled: true}  # Batch4; official self-built source
+  - {path: generated/source/honorofkings_global/domains.txt, name: honorofkings_global, service: honorofkings_global, local: PRS_honorofkings_global.domains.txt, enabled: true}  # Batch4; official self-built source
 
 - id: blackmatrix7
   name: BlackMatrix7 ios_rule_script
