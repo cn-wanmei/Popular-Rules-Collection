@@ -13,10 +13,6 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_ROOT = "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source"
-SERVICES = (
-    "1688", "cainiao", "dingding", "qqmail",
-    "qqmusic", "taobao", "tencentcloud", "tmall",
-)
 SHA40 = re.compile(r"^[0-9a-f]{40}$")
 SHA64 = re.compile(r"^[0-9a-f]{64}$")
 PROVENANCE_FIELDS = (
@@ -127,7 +123,21 @@ def main() -> int:
         return 1
 
     bindings = registry.get("bindings") or {}
-    results = {sid: verify_binding(sid, bindings.get(sid) or {}) for sid in SERVICES}
+    services = sorted(
+        str(sid)
+        for sid, binding in bindings.items()
+        if isinstance(binding, dict) and binding.get("status") == "active"
+    )
+    if not services:
+        print(json.dumps({
+            "schema": "source_provenance_gate_v2",
+            "status": "FAIL",
+            "services": {},
+            "error_count": 1,
+            "errors": {"registry": ["no active immutable Source bindings"]},
+        }, ensure_ascii=False, indent=2, sort_keys=True))
+        return 1
+    results = {sid: verify_binding(sid, bindings.get(sid) or {}) for sid in services}
     errors = {
         sid: item.get("errors") or item.get("failed_checks") or []
         for sid, item in results.items()
