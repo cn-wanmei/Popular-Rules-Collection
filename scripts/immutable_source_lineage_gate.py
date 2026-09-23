@@ -96,6 +96,7 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--collection-root", required=True, help="backup/YYYY-MM-DD")
     parser.add_argument("--json-out", default="")
+    parser.add_argument("--allow-missing-current", action="store_true", help="PR mode: permit active bindings absent from this historical collection manifest")
     args = parser.parse_args()
 
     root = ROOT / args.collection_root
@@ -132,6 +133,17 @@ def main() -> int:
 
         item = by_service.get(service)
         if not item:
+            if args.allow_missing_current:
+                verified[service] = {
+                    "status": "pending_collection_snapshot",
+                    "lineage_mode": "current_binding_not_in_collection_backup",
+                    "source_ref": binding.get("source_ref"),
+                    "release_path": binding.get("release_path"),
+                    "snapshot_id": binding.get("snapshot_id"),
+                    "content_digest": binding.get("content_digest"),
+                    "expected_sha256": binding.get("expected_sha256"),
+                }
+                continue
             failures.append(f"{service}: missing PRS collection manifest entry")
             continue
 
