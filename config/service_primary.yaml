@@ -6,9 +6,9 @@ services:
   apple: {primary_category: apple, display_name: Apple, categories: [apple], service_type: aggregate, children: [applemusic, appletv, icloud, siri, appstore, testflight, appledev, findmy]}
   alibaba: {primary_category: alibaba, display_name: Alibaba, categories: [alibaba, china], service_type: aggregate, children: [alipay, alibabacloud, dingtalk, dingding, eleme, xianyu, youku, gaode, taobao, tmall, "1688", cainiao]}
   tencent: {primary_category: tencent, display_name: Tencent, categories: [tencent, china], service_type: aggregate, children: [wechat, tencentvideo, qq, qqmusic, qqmail, wecom, tencentmeeting, tencentcloud]}
-  baidu: {primary_category: baidu, display_name: Baidu, categories: [baidu, china], service_type: aggregate, children: [baidunetdisk]}
+  baidu: {primary_category: baidu, display_name: Baidu, categories: [baidu, china], service_type: aggregate, children: [baidunetdisk, baidutieba]}
   bytedance: {primary_category: bytedance, display_name: ByteDance, categories: [bytedance, china], service_type: aggregate, children: [douyin, doubao, feishu]}
-  netease: {primary_category: netease, display_name: NetEase, categories: [netease, china], service_type: aggregate, children: [youdao]}
+  netease: {primary_category: netease, display_name: NetEase, categories: [netease, china], service_type: aggregate, children: [youdao, neteasemusic]}
   jingdong: {primary_category: jingdong, display_name: JingDong, categories: [jingdong, china], service_type: aggregate}
   microsoft: {primary_category: microsoft, display_name: Microsoft, categories: [microsoft], service_type: aggregate, children: [onedrive, xbox, github, teams, azure]}
   google: {primary_category: google, display_name: Google, categories: [google], service_type: aggregate, children: [youtube, googlefcm, googledrive, firebase, gcp, googlecloud, youtubemusic]}
@@ -66,7 +66,9 @@ services:
   doubao: {primary_category: bytedance, display_name: Doubao, categories: [bytedance, china, ai], service_type: service, parent: bytedance}
   feishu: {primary_category: bytedance, display_name: Feishu, categories: [bytedance, china], service_type: service, parent: bytedance}
   baidunetdisk: {primary_category: baidu, display_name: "Baidu Netdisk", categories: [baidu, china], service_type: service, parent: baidu}
+  baidutieba: {primary_category: baidu, display_name: "Baidu Tieba", categories: [baidu, china], service_type: service, parent: baidu}
   youdao: {primary_category: netease, display_name: Youdao, categories: [netease, china], service_type: service, parent: netease}
+  neteasemusic: {primary_category: netease, display_name: "NetEase Music", categories: [netease, china, streaming], service_type: service, parent: netease}
   adblock: {primary_category: privacy, display_name: AdBlock, categories: [privacy], service_type: aggregate, children: [adblock-pro, adblock-light]}
   proxy: {primary_category: network, display_name: Proxy, categories: [network], service_type: service}
   gfw: {primary_category: network, display_name: GFW, categories: [network], service_type: service}
