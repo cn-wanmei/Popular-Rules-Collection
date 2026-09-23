@@ -60,10 +60,18 @@ sources:
   - {path: generated/source/messenger/domains.txt, name: messenger, service: messenger, local: PRS_messenger.domains.txt, enabled: true}  # Batch3; pending immutable Source release
   - {path: generated/source/roblox/domains.txt, name: roblox, service: roblox, local: PRS_roblox.domains.txt, enabled: true}  # Batch3; pending immutable Source release
   - {path: generated/source/qq/domains.txt, name: qq, service: qq, local: PRS_qq.domains.txt, enabled: true}  # Registered for Source candidate-chain reconciliation; not a production binding  # Durable immutable Source release persisted at Source main@192ee4a99cd02d99faddfbad30ac4ebf914edaa8
-  - {path: generated/source/applenews/domains.txt, name: applenews, service: applenews, local: PRS_applenews.domains.txt, enabled: true}  # Batch4; awaiting immutable Source release
-  - {path: generated/source/baidu/domains.txt, name: baidu, service: baidu, local: PRS_baidu.domains.txt, enabled: true}  # Batch4; awaiting immutable Source release
-  - {path: generated/source/bing/domains.txt, name: bing, service: bing, local: PRS_bing.domains.txt, enabled: true}  # Batch4; awaiting immutable Source release
-  - {path: generated/source/tiktok/domains.txt, name: tiktok, service: tiktok, local: PRS_tiktok.domains.txt, enabled: true}  # Batch4; awaiting immutable Source release
+  - {path: generated/source/applemedia/domains.txt, name: applemedia, service: applemedia, local: PRS_applemedia.domains.txt, enabled: true}  # Phase5; exact immutable Source release
+  - {path: generated/source/copilot/domains.txt, name: copilot, service: copilot, local: PRS_copilot.domains.txt, enabled: true}  # Phase5; exact immutable Source release
+  - {path: generated/source/claude/domains.txt, name: claude, service: claude, local: PRS_claude.domains.txt, enabled: true}  # Phase5; exact immutable Source release
+  - {path: generated/source/gemini/domains.txt, name: gemini, service: gemini, local: PRS_gemini.domains.txt, enabled: true}  # Phase5; exact immutable Source release
+  - {path: generated/source/openai/domains.txt, name: openai, service: openai, local: PRS_openai.domains.txt, enabled: true}  # Phase5; exact immutable Source release
+  - {path: generated/source/telegram/domains.txt, name: telegram, service: telegram, local: PRS_telegram.domains.txt, enabled: true}  # Phase5; exact immutable Source release
+  - {path: generated/source/discord/domains.txt, name: discord, service: discord, local: PRS_discord.domains.txt, enabled: true}  # Phase5; exact immutable Source release
+  - {path: generated/source/netflix/domains.txt, name: netflix, service: netflix, local: PRS_netflix.domains.txt, enabled: true}  # Phase5; exact immutable Source release
+  - {path: generated/source/applenews/domains.txt, name: applenews, service: applenews, local: PRS_applenews.domains.txt, enabled: true}  # Phase4; exact immutable Source release
+  - {path: generated/source/baidu/domains.txt, name: baidu, service: baidu, local: PRS_baidu.domains.txt, enabled: true}  # Phase4; exact immutable Source release
+  - {path: generated/source/bing/domains.txt, name: bing, service: bing, local: PRS_bing.domains.txt, enabled: true}  # Phase4; exact immutable Source release
+  - {path: generated/source/tiktok/domains.txt, name: tiktok, service: tiktok, local: PRS_tiktok.domains.txt, enabled: true}  # Phase4; exact immutable Source release
   - {path: generated/source/neteasemail/domains.txt, name: neteasemail, service: neteasemail, local: PRS_neteasemail.domains.txt, enabled: true}  # Batch4; awaiting immutable Source release
   - {path: generated/source/honorofkings_cn/domains.txt, name: honorofkings_cn, service: honorofkings_cn, local: PRS_honorofkings_cn.domains.txt, enabled: true}  # Batch4; official self-built source
   - {path: generated/source/honorofkings_global/domains.txt, name: honorofkings_global, service: honorofkings_global, local: PRS_honorofkings_global.domains.txt, enabled: true}  # Batch4; official self-built source
