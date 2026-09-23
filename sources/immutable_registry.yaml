@@ -234,7 +234,7 @@ bindings:
     release_digest: b0e2b0246cd52df7418f5c1432a5b94e3825e2db6586c8194964b85c5367aae4
     release_identity_version: '2'
     expected_sha256: cd4e26d63fd5b6184eab7527bbbde38350cc2ef4685c6e1e206c27b545e1ca6e
-alibabacloud:
+  alibabacloud:
     status: active
     source_id: popular-rules-source
     source_ref: 0b0c105d2627b9482ce35b94be3da377eb509c40
@@ -362,7 +362,7 @@ alibabacloud:
     release_identity_version: '2'
     expected_sha256: 951505d128d003a7fc541bf70a163363a8ddb6826398f42c5f0253d488a23475
 
-applenews:
+  applenews:
     status: active
     source_id: popular-rules-source
     source_ref: eb6a510a75ed7a59b53e581fd05d6215ec6bb35d
