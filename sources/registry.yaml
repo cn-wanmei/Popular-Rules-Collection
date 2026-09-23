@@ -72,6 +72,10 @@ sources:
   - {path: generated/source/toutiao/domains.txt, name: toutiao, service: toutiao, local: PRS_toutiao.domains.txt, enabled: true}  # Source-owned; pending immutable binding
   - {path: generated/source/xigua/domains.txt, name: xigua, service: xigua, local: PRS_xigua.domains.txt, enabled: true}  # Source-owned; pending immutable binding
   - {path: generated/source/volcengine/domains.txt, name: volcengine, service: volcengine, local: PRS_volcengine.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/gmail/domains.txt, name: gmail, service: gmail, local: PRS_gmail.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/googlemaps/domains.txt, name: googlemaps, service: googlemaps, local: PRS_googlemaps.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/outlook/domains.txt, name: outlook, service: outlook, local: PRS_outlook.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/office/domains.txt, name: office, service: office, local: PRS_office.domains.txt, enabled: true}  # Source-owned; pending immutable binding
 
 - id: blackmatrix7
   name: BlackMatrix7 ios_rule_script
@@ -234,7 +238,7 @@ sources:
   - {path: rule/Clash/AppleNews/AppleNews.list, name: applenews, service: applenews, local: Clash_AppleNews.list}
   - {path: rule/Clash/AppleFirmware/AppleFirmware.list, name: applefirmware, service: applefirmware, local: Clash_AppleFirmware.list}
   - {path: rule/Clash/iCloudPrivateRelay/iCloudPrivateRelay.list, name: icloudprivaterelay, service: icloudprivaterelay, local: Clash_iCloudPrivateRelay.list}
-  - {path: rule/Clash/GoogleSearch/GoogleSearch.list, name: googlesearch, service: googlesearch, local: Clash_GoogleSearch.list}
+  - {path: rule/Clash/GoogleSearch/GoogleSearch.list, name: googlesearch, service: google-search, local: Clash_GoogleSearch.list}
   - {path: rule/Clash/GoogleVoice/GoogleVoice.list, name: googlevoice, service: googlevoice, local: Clash_GoogleVoice.list}
   - {path: rule/Clash/GoogleEarth/GoogleEarth.list, name: googleearth, service: googleearth, local: Clash_GoogleEarth.list}
   - {path: rule/Clash/MicrosoftEdge/MicrosoftEdge.list, name: microsoftedge, service: microsoftedge, local: Clash_MicrosoftEdge.list}
