@@ -10,7 +10,6 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[3]
 _METADATA_FILES = {"_index.yaml", "manifest.json", "README.md"}
-_SPECIAL_ROOTS = {"category", "group", "aggregate", "unmapped"}
 _ENTITY_TYPES = {
     "category": "category",
     "group": "group",
@@ -55,12 +54,38 @@ def _valid_rule_path(root: Path, path: Path) -> bool:
     return False
 
 
-def _entity_expectation(root: Path, path: Path) -> tuple[str, str, str | None]:
+def _provider_aggregate_ids(workspace_root: Path) -> dict[str, str]:
+    hierarchy_path = workspace_root / "config/ruleset_hierarchy.yaml"
+    if not hierarchy_path.is_file():
+        return {}
+    hierarchy = _load_yaml(hierarchy_path)
+    providers = hierarchy.get("providers") or {}
+    result: dict[str, str] = {}
+    for provider, node in providers.items():
+        if not isinstance(node, dict):
+            continue
+        provider_id = str(provider).strip().casefold()
+        if not provider_id:
+            continue
+        result[provider_id] = str(node.get("aggregate") or provider).strip()
+    return result
+
+
+def _entity_expectation(
+    root: Path,
+    path: Path,
+    provider_aggregate_ids: dict[str, str],
+) -> tuple[str, str, str | None]:
     parts = path.relative_to(root).parts
     if len(parts) == 2:
         if parts[0] == "china":
             return "domestic_aggregate", "china", None
-        return "provider_aggregate", parts[0], parts[0]
+        provider = parts[0]
+        return (
+            "provider_aggregate",
+            provider_aggregate_ids.get(provider.casefold(), provider),
+            provider,
+        )
     if parts[0] in _ENTITY_TYPES:
         return _ENTITY_TYPES[parts[0]], parts[1], None
     return "service", parts[1], parts[0]
@@ -70,6 +95,7 @@ def _validate_rule_payload(
     root: Path,
     path: Path,
     expected_run_id: str | None,
+    provider_aggregate_ids: dict[str, str],
 ) -> list[str]:
     errors: list[str] = []
     try:
@@ -77,7 +103,11 @@ def _validate_rule_payload(
     except (OSError, UnicodeDecodeError, ValueError, yaml.YAMLError) as exc:
         return [f"invalid human rule payload: {path.relative_to(root)}: {exc}"]
 
-    entity, entity_id, provider = _entity_expectation(root, path)
+    entity, entity_id, provider = _entity_expectation(
+        root,
+        path,
+        provider_aggregate_ids,
+    )
     rel = path.relative_to(root).as_posix()
 
     if payload.get("schema") != "human_rule_distribution_v1":
@@ -139,6 +169,7 @@ def validate(
     if alternate.exists():
         errors.append("obsolete third rule tree exists: rules/")
 
+    provider_aggregate_ids = _provider_aggregate_ids(workspace_root)
     rule_root = (
         Path(rule_root).resolve()
         if rule_root is not None
@@ -166,8 +197,6 @@ def validate(
             if not _valid_rule_path(rule_root, path):
                 errors.append(f"invalid human rule path: {path}")
 
-        manifest: dict[str, Any] = {}
-        index: dict[str, Any] = {}
         try:
             manifest = json.loads(
                 (rule_root / "manifest.json").read_text(encoding="utf-8")
@@ -217,7 +246,12 @@ def validate(
             )
             for path in _rule_files(rule_root):
                 errors.extend(
-                    _validate_rule_payload(rule_root, path, expected_run_id)
+                    _validate_rule_payload(
+                        rule_root,
+                        path,
+                        expected_run_id,
+                        provider_aggregate_ids,
+                    )
                 )
         except (
             OSError,
