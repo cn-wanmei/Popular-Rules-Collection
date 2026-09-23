@@ -425,3 +425,35 @@ applenews:
     release_digest: 9f40d3f10588df933d255891155be799e4a848d2a422423589a7ebec5218ae52
     release_identity_version: '2'
     expected_sha256: 2b0a8259a1619d0052d0fc11259c0beda79bffd6e9d1cf479f78f8c478cfaf3f
+  alibabacloud:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0b0c105d2627b9482ce35b94be3da377eb509c40
+    verified_input_commit: eab00509880bdd7016a3dcab5f1eee21f79caf37
+    artifact_path: generated/source/alibabacloud/domains.txt
+    release_path: releases/alibabacloud/snap-alibabacloud-461ca160d076aaffa913407c/release.json
+    snapshot_id: snap-alibabacloud-461ca160d076aaffa913407c
+    content_digest: b35d38a44b2feef82aec6fe7b46ce7096ab380fab0bb3d94674ac54933192860
+    evidence_digest: e83a1ac708e9ae0095ffb66e845c5310dd8ef5511495b378b5fbb5bed92d75ac
+    policy_digest: 679fa28e918bce1dbbf0edd360d7b1d5b8c676e04ea53b8ac72090fabc0a736e
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 461ca160d076aaffa913407cec0ab2f66c7e24fd98102c34bee05f04afa29886
+    release_identity_version: '2'
+    expected_sha256: 27ac8f54d3b16824b68ad637e9800cee77efe9b38cc02ef7af99647035eb2338
+
+  applenews:
+    status: active
+    source_id: popular-rules-source
+    source_ref: eb6a510a75ed7a59b53e581fd05d6215ec6bb35d
+    verified_input_commit: 1993fefd3187daa921c8547b1f56608875658fbe
+    artifact_path: generated/source/applenews/domains.txt
+    release_path: releases/applenews/snap-applenews-bab2441b83a9381991262abb/release.json
+    snapshot_id: snap-applenews-bab2441b83a9381991262abb
+    content_digest: dfda1972d3c0939eed4cfbce0046289fa92cffcf4600aacc2314ada7c2fd7301
+    evidence_digest: c095ed6cd3f03a20007fe91e38babd38d81db425e1c7522e104140c576d6f032
+    policy_digest: e9c5f2a02dd25bc0df638dbff8274d8643ac6ea6d1de46cf9e466b564b665897
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: bab2441b83a9381991262abb40d142f588cea79dac15604b85588cfe513dff59
+    release_identity_version: '2'
+    expected_sha256: 4522d284378586a45801098349f25e71a467ddd0574beedbb17674be393fac3e
+
