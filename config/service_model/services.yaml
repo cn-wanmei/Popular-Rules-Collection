@@ -12,7 +12,6 @@ services:
   googlecloud: {id: googlecloud, provider: google, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   firebase: {id: firebase, provider: google, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   youtubemusic: {id: youtubemusic, provider: google, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
-  google-search: {id: google-search, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   googlevoice: {id: googlevoice, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   googleearth: {id: googleearth, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   apple-core: {id: apple-core, provider: apple, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: apple}
