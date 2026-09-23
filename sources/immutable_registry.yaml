@@ -457,3 +457,131 @@ applenews:
     release_identity_version: '2'
     expected_sha256: 4522d284378586a45801098349f25e71a467ddd0574beedbb17674be393fac3e
 
+
+  applemedia:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 69eeda8c051d505ca8af3c9fb5d0c85cfedb8c91
+    verified_input_commit: a582df46e53b60bbdb8c7443ff392015c8abc141
+    artifact_path: generated/source/applemedia/domains.txt
+    release_path: releases/applemedia/snap-applemedia-66f80c88e1491611ceed3131/release.json
+    snapshot_id: snap-applemedia-66f80c88e1491611ceed3131
+    content_digest: 9f0615abbf33f49c6fc97d1dd363173897160c527388e7d7a704e457bad46ae8
+    evidence_digest: 868d01084ae47ba551a15dbedc2017d4d7e8ebf22c930a4aeaa13d13eeea88fe
+    policy_digest: 2da5b541320044b1147670c9748ea5593404ff4b88e8e82f74c7823a83a45afa
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 66f80c88e1491611ceed31316e491ba5f702512bf9d4db3244995a6a4881bf60
+    release_identity_version: '2'
+    expected_sha256: 563c16b6a96d2275902805bbcacbc73c210caabb22749c932c78cee69c4911dd
+
+  copilot:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 69eeda8c051d505ca8af3c9fb5d0c85cfedb8c91
+    verified_input_commit: a582df46e53b60bbdb8c7443ff392015c8abc141
+    artifact_path: generated/source/copilot/domains.txt
+    release_path: releases/copilot/snap-copilot-faa83bc25fd7cfe3613e5095/release.json
+    snapshot_id: snap-copilot-faa83bc25fd7cfe3613e5095
+    content_digest: 75ee528ac909dd61679359fef9ebca6ddb59642b2bbe8992c9b7e9be111465ee
+    evidence_digest: 6e7a66122b3b0329ec2e119eb6b853b20b78087120a1fc538fe7f9e27eac438e
+    policy_digest: 2da5b541320044b1147670c9748ea5593404ff4b88e8e82f74c7823a83a45afa
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: faa83bc25fd7cfe3613e5095276bf106f1e44a207d2a44d7e7b48944f1cf9a45
+    release_identity_version: '2'
+    expected_sha256: e5741c46735293337436c3e05ca2688a771eef1d263181c9104fd6463da2ce2a
+
+  claude:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 69eeda8c051d505ca8af3c9fb5d0c85cfedb8c91
+    verified_input_commit: a582df46e53b60bbdb8c7443ff392015c8abc141
+    artifact_path: generated/source/claude/domains.txt
+    release_path: releases/claude/snap-claude-5761d575bc1cb9a1c2c52cd1/release.json
+    snapshot_id: snap-claude-5761d575bc1cb9a1c2c52cd1
+    content_digest: 04999f1cbf3cd882e18ebd164db57158b7e21cfb3aa90a9d9dc269cfabac0225
+    evidence_digest: ea7639cfcc66e8f5f89ab1df1720ce28bdc0e08dbca3d2583b4af09b84322ac3
+    policy_digest: 2da5b541320044b1147670c9748ea5593404ff4b88e8e82f74c7823a83a45afa
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 5761d575bc1cb9a1c2c52cd1347d021d060b955aeda64a02dce3ea38e4becadb
+    release_identity_version: '2'
+    expected_sha256: 8e658631b5eefe810d2742ae4c5cc483a34a5340e92569dade2c88960cff1aaa
+
+  gemini:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 69eeda8c051d505ca8af3c9fb5d0c85cfedb8c91
+    verified_input_commit: a582df46e53b60bbdb8c7443ff392015c8abc141
+    artifact_path: generated/source/gemini/domains.txt
+    release_path: releases/gemini/snap-gemini-15a1d7df0f1f42afaab98eba/release.json
+    snapshot_id: snap-gemini-15a1d7df0f1f42afaab98eba
+    content_digest: d5e5842666a62dcd98f68002b7377146aa937d911bab9a3c5552cb00220689e2
+    evidence_digest: bd9dec9ce9b5a3b8b9b5f261550876cd621168dc0f20e9a2301d3e70f0d82447
+    policy_digest: 2da5b541320044b1147670c9748ea5593404ff4b88e8e82f74c7823a83a45afa
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 15a1d7df0f1f42afaab98ebaaf4274007056a970a62e85ca46e2d13eb1ec7053
+    release_identity_version: '2'
+    expected_sha256: 498247eb64ae9ab76b8330b1a0f83f15877f55a5c3122f8395a9e38905aeb09c
+
+  openai:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 69eeda8c051d505ca8af3c9fb5d0c85cfedb8c91
+    verified_input_commit: a582df46e53b60bbdb8c7443ff392015c8abc141
+    artifact_path: generated/source/openai/domains.txt
+    release_path: releases/openai/snap-openai-959bece38ef894600083c410/release.json
+    snapshot_id: snap-openai-959bece38ef894600083c410
+    content_digest: bd11e98368b5f5502e1f2ab561270dbfea6f7986ed2522b3327c8e0e7cb877fb
+    evidence_digest: 7cc478d173473b2cf4a574b7a0e26ae4af94df159140837eeb691957ba863f2a
+    policy_digest: 2da5b541320044b1147670c9748ea5593404ff4b88e8e82f74c7823a83a45afa
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 959bece38ef894600083c410ab15613039c59f19e5f538819184cbcf276ea6e2
+    release_identity_version: '2'
+    expected_sha256: b4ac291400e4ca2962496edf85737f8871b3d97fc71f9f973469ee1bdbf8a701
+
+  telegram:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 69eeda8c051d505ca8af3c9fb5d0c85cfedb8c91
+    verified_input_commit: a582df46e53b60bbdb8c7443ff392015c8abc141
+    artifact_path: generated/source/telegram/domains.txt
+    release_path: releases/telegram/snap-telegram-6160beb35201b697571d9973/release.json
+    snapshot_id: snap-telegram-6160beb35201b697571d9973
+    content_digest: e1decb4fe0958ca923ac03b453975b0eff2d1fde016188e75aa2e3c695049a17
+    evidence_digest: 9de479ce19bbdd7f51595d035b2dedacbb51c1200557848bbeb3a78d10261505
+    policy_digest: 2da5b541320044b1147670c9748ea5593404ff4b88e8e82f74c7823a83a45afa
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 6160beb35201b697571d99735d339152084eb93586313755b6addb40175ce1cc
+    release_identity_version: '2'
+    expected_sha256: 3abc15984247e8fad7a150abd0aeeeceb2a437b86ab1dd7fd2dd04ff2f113eae
+
+  discord:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 69eeda8c051d505ca8af3c9fb5d0c85cfedb8c91
+    verified_input_commit: a582df46e53b60bbdb8c7443ff392015c8abc141
+    artifact_path: generated/source/discord/domains.txt
+    release_path: releases/discord/snap-discord-d107dd92c46855cd62787064/release.json
+    snapshot_id: snap-discord-d107dd92c46855cd62787064
+    content_digest: 8f996912e0484f5828628f50a353cabe15128cae86560489b9a5abbfbf5c1caa
+    evidence_digest: f97f94efa77cab1bce71c462f7113d9535465427b6d9d60db0cee73be406bc57
+    policy_digest: 2da5b541320044b1147670c9748ea5593404ff4b88e8e82f74c7823a83a45afa
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: d107dd92c46855cd6278706453370b41e8e06fe81e5d7b83fc4037f86aa49ad1
+    release_identity_version: '2'
+    expected_sha256: a88efb6fe6e8357437b4a53ac73bf25add9b27549bc0faebd41b6cd8ff2447ba
+
+  netflix:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 69eeda8c051d505ca8af3c9fb5d0c85cfedb8c91
+    verified_input_commit: a582df46e53b60bbdb8c7443ff392015c8abc141
+    artifact_path: generated/source/netflix/domains.txt
+    release_path: releases/netflix/snap-netflix-44c03024f97a209b65b001f1/release.json
+    snapshot_id: snap-netflix-44c03024f97a209b65b001f1
+    content_digest: cd1651259d94ee21a9384bd8c78b0a6aeccc49eb8faf6b36a5a413a645c605cd
+    evidence_digest: be781ac9f95ccabf56d6338c64a1a446153fc53806e520497b214a5a70fe1796
+    policy_digest: 2da5b541320044b1147670c9748ea5593404ff4b88e8e82f74c7823a83a45afa
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 44c03024f97a209b65b001f1d4fd81cd65a8450bd58673ec3dbabb5225822b1e
+    release_identity_version: '2'
+    expected_sha256: b1e1bb7d32f176618ef7335b6e5ea5ced9bca71e540e694a40bf48a34d3ac5bf
