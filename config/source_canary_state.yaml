@@ -167,8 +167,8 @@ services:
       seed_only_count: 0
       conflict_count: 0
   tencentcloud:
-    state: canary
-    enabled: true
+    state: verified
+    enabled: false
     source_verification:
       run: 35678280042
       source_commit: ffc7375b31080ea735c8bcc8ee59066b969c382f
