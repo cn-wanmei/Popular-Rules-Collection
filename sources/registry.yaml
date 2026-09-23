@@ -399,4 +399,4 @@ sources:
   - {path: generated/source/tencentmeeting/domains.txt, name: tencentmeeting, service: tencentmeeting, local: PRS_tencentmeeting.domains.txt, enabled: true}  # Batch2; official candidate chain
   - {path: generated/source/baidunetdisk/domains.txt, name: baidunetdisk, service: baidunetdisk, local: PRS_baidunetdisk.domains.txt, enabled: true}  # Batch2; official candidate chain
   - {path: generated/source/youdao/domains.txt, name: youdao, service: youdao, local: PRS_youdao.domains.txt, enabled: true}  # Batch2; official candidate chain
-  - {path: authoring/candidates/gcp.jsonl, name: gcp-candidate, service: gcp, local: PRS_gcp.candidate.jsonl, enabled: false}  # Alias review; no duplicate production binding
+  
