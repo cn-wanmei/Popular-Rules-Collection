@@ -694,7 +694,7 @@ bindings:
     release_identity_version: '2'
     expected_sha256: affdc4b54821f0a4f2af88292cdf05a444939508a14d87602574abebf92a55cd
   neteaseemail:
-    status: active
+    status: retired
     source_id: popular-rules-source
     source_ref: 56489947e6e078acee322f2146c4200e1f933b61
     verified_input_commit: e8bea553618b97e7b04d1ff02fd02c29da04a178
