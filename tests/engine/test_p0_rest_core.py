@@ -46,10 +46,10 @@ def test_full_p0_flow():
             assert list(cdir.rglob(f"*{meta['ext']}"))
 
         assert "google-gmail" in report["views"]["services"]
-        assert (art / "mihomo" / "categories" / "mail" / "all" / "rules.yaml").exists()
-        assert (art / "mihomo" / "categories" / "storage" / "all" / "rules.yaml").exists()
-        assert (art / "singbox" / "categories" / "mail" / "all" / "rules.json").exists()
-        assert (art / "egern" / "categories" / "mail" / "all" / "rules.yaml").exists()
+        assert (art / "mihomo" / "categories" / "mail" / "mail.yaml").exists()
+        assert (art / "mihomo" / "categories" / "storage" / "storage.yaml").exists()
+        assert (art / "singbox" / "categories" / "mail" / "mail.json").exists()
+        assert (art / "egern" / "categories" / "mail" / "mail.yaml").exists()
 
         diff_dir = run_dir / "reports" / "diff"
         baseline = data / "runs" / run_id / "reports" / "diff" / "baseline.json"
