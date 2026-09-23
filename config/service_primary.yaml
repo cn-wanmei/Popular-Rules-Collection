@@ -3,15 +3,15 @@ updated: '2026-09-18'
 defaults: {service_type: service}
 services:
   ai: {primary_category: ai, display_name: AI, categories: [ai], service_type: aggregate, children: [openai, claude, gemini, copilot, anthropic, perplexity, groq, xai, mistral, huggingface, deepseek, grok, cursor, elevenlabs]}
-  apple: {primary_category: apple, display_name: Apple, categories: [apple], service_type: aggregate, children: [applemusic, appletv, icloud, siri, appstore, testflight, appledev, findmy, applemedia, applenews]}
+  apple: {primary_category: apple, display_name: Apple, categories: [apple], service_type: aggregate, children: [applemusic, appletv, icloud, siri, appstore, testflight, appledev, findmy, applemedia, applenews, appleid, applemail, applefirmware, icloudprivaterelay]}
   alibaba: {primary_category: alibaba, display_name: Alibaba, categories: [alibaba, china], service_type: aggregate, children: [alipay, alibabacloud, dingtalk, dingding, eleme, xianyu, youku, gaode, taobao, tmall, "1688", cainiao]}
-  tencent: {primary_category: tencent, display_name: Tencent, categories: [tencent, china], service_type: aggregate, children: [wechat, tencentvideo, qq, qqmusic, qqmail, wecom, tencentmeeting, tencentcloud, honorofkings_cn, honorofkings_global]}
-  baidu: {primary_category: baidu, display_name: Baidu, categories: [baidu, china], service_type: aggregate, children: [baidunetdisk, baidutieba]}
-  bytedance: {primary_category: bytedance, display_name: ByteDance, categories: [bytedance, china], service_type: aggregate, children: [douyin, doubao, feishu]}
-  netease: {primary_category: netease, display_name: NetEase, categories: [netease, china], service_type: aggregate, children: [youdao, neteasemusic, neteasemail]}
+  tencent: {primary_category: tencent, display_name: Tencent, categories: [tencent, china], service_type: aggregate, children: [wechat, tencentvideo, qq, qqmusic, qqmail, wecom, tencentmeeting, tencentcloud, honorofkings_cn, honorofkings_global, wegame]}
+  baidu: {primary_category: baidu, display_name: Baidu, categories: [baidu, china], service_type: aggregate, children: [baidunetdisk, baidutieba, baidumaps, baiduwiki, baiduwenku]}
+  bytedance: {primary_category: bytedance, display_name: ByteDance, categories: [bytedance, china], service_type: aggregate, children: [douyin, doubao, feishu, tiktok, capcut, toutiao, xigua, volcengine]}
+  netease: {primary_category: netease, display_name: NetEase, categories: [netease, china], service_type: aggregate, children: [youdao, neteasemusic, neteasemail, netease163mail, neteasegames]}
   jingdong: {primary_category: jingdong, display_name: JingDong, categories: [jingdong, china], service_type: aggregate}
-  microsoft: {primary_category: microsoft, display_name: Microsoft, categories: [microsoft], service_type: aggregate, children: [onedrive, xbox, github, teams, azure, bing]}
-  google: {primary_category: google, display_name: Google, categories: [google], service_type: aggregate, children: [youtube, googlefcm, googledrive, firebase, gcp, googlecloud, youtubemusic]}
+  microsoft: {primary_category: microsoft, display_name: Microsoft, categories: [microsoft], service_type: aggregate, children: [onedrive, xbox, github, teams, azure, bing, microsoftedge, outlook, office]}
+  google: {primary_category: google, display_name: Google, categories: [google], service_type: aggregate, children: [youtube, googlefcm, googledrive, firebase, gcp, googlecloud, youtubemusic, google-search, googlevoice, googleearth, gmail, googlemaps]}
   amazon: {primary_category: amazon, display_name: Amazon, categories: [amazon, streaming], service_type: aggregate, children: [aws]}
   unionpay: {primary_category: unionpay, display_name: UnionPay, categories: [finance, china], service_type: aggregate, children: [icbc, ccb, abc, boc, cmb, psbc, ceb, bocom, pingan]}
   chinamobile: {primary_category: chinamobile, display_name: ChinaMobile, categories: [china], service_type: service}
@@ -100,3 +100,26 @@ services:
   booking: {primary_category: booking, display_name: Booking, categories: [travel], service_type: service}
   wise: {primary_category: wise, display_name: Wise, categories: [finance], service_type: service}
   roblox: {primary_category: roblox, display_name: Roblox, categories: [gaming], service_type: service}
+  appleid: {primary_category: apple, display_name: "Apple ID", categories: [apple], service_type: service, parent: apple}
+  applemail: {primary_category: apple, display_name: "Apple Mail", categories: [apple], service_type: service, parent: apple}
+  applefirmware: {primary_category: apple, display_name: "Apple Firmware", categories: [apple], service_type: service, parent: apple}
+  icloudprivaterelay: {primary_category: apple, display_name: "iCloud Private Relay", categories: [apple, network], service_type: service, parent: apple}
+  google-search: {primary_category: google, display_name: "Google Search", categories: [google], service_type: service, parent: google}
+  googlevoice: {primary_category: google, display_name: "Google Voice", categories: [google], service_type: service, parent: google}
+  googleearth: {primary_category: google, display_name: "Google Earth", categories: [google], service_type: service, parent: google}
+  gmail: {primary_category: google, display_name: Gmail, categories: [google], service_type: service, parent: google}
+  googlemaps: {primary_category: google, display_name: "Google Maps", categories: [google], service_type: service, parent: google}
+  microsoftedge: {primary_category: microsoft, display_name: "Microsoft Edge", categories: [microsoft], service_type: service, parent: microsoft}
+  outlook: {primary_category: microsoft, display_name: Outlook, categories: [microsoft], service_type: service, parent: microsoft}
+  office: {primary_category: microsoft, display_name: "Microsoft 365", categories: [microsoft], service_type: service, parent: microsoft}
+  tiktok: {primary_category: bytedance, display_name: TikTok, categories: [bytedance, social], service_type: service, parent: bytedance}
+  capcut: {primary_category: bytedance, display_name: CapCut, categories: [bytedance], service_type: service, parent: bytedance}
+  toutiao: {primary_category: bytedance, display_name: Toutiao, categories: [bytedance, china], service_type: service, parent: bytedance}
+  xigua: {primary_category: bytedance, display_name: Xigua Video, categories: [bytedance, china, streaming], service_type: service, parent: bytedance}
+  volcengine: {primary_category: bytedance, display_name: Volcano Engine, categories: [bytedance, developer], service_type: service, parent: bytedance}
+  netease163mail: {primary_category: netease, display_name: "NetEase Mail", categories: [netease, china], service_type: service, parent: netease}
+  neteasegames: {primary_category: netease, display_name: "NetEase Games", categories: [netease, china, gaming], service_type: service, parent: netease}
+  baidumaps: {primary_category: baidu, display_name: "Baidu Maps", categories: [baidu, china], service_type: service, parent: baidu}
+  baiduwiki: {primary_category: baidu, display_name: "Baidu Wiki", categories: [baidu, china], service_type: service, parent: baidu}
+  baiduwenku: {primary_category: baidu, display_name: "Baidu Wenku", categories: [baidu, china], service_type: service, parent: baidu}
+  wegame: {primary_category: tencent, display_name: WeGame, categories: [tencent, china, gaming], service_type: service, parent: tencent}
