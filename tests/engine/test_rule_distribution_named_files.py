@@ -22,6 +22,8 @@ def _fixtures(tmp_path: Path) -> tuple[Path, Path, Path]:
             "apple": ["r1"],
             "appstore": ["r1"],
             "developer": ["r1"],
+            "airbnb_aggregate": ["r1"],
+            "airbnb": ["r1"],
             "mystery": ["r1"],
         },
         "entities": {
