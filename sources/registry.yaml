@@ -45,6 +45,12 @@ sources:
   - {path: generated/source/tencentvideo/domains.txt, name: tencentvideo, service: tencentvideo, local: PRS_tencentvideo.domains.txt, enabled: true}  # Batch2; pending immutable Source release
   - {path: generated/source/firebase/domains.txt, name: firebase, service: firebase, local: PRS_firebase.domains.txt, enabled: true}  # Batch2; official candidate chain; pending immutable Source release
   - {path: generated/source/doubao/domains.txt, name: doubao, service: doubao, local: PRS_doubao.domains.txt, enabled: true}  # Batch2; official candidate chain; pending immutable Source release
+  - {path: generated/source/siri/domains.txt, name: siri, service: siri, local: PRS_siri.domains.txt, enabled: true}  # Batch2; pending immutable Source release
+  - {path: generated/source/googlecloud/domains.txt, name: googlecloud, service: googlecloud, local: PRS_googlecloud.domains.txt, enabled: true}  # Batch2; official candidate chain
+  - {path: generated/source/wecom/domains.txt, name: wecom, service: wecom, local: PRS_wecom.domains.txt, enabled: true}  # Batch2; official candidate chain
+  - {path: generated/source/tencentmeeting/domains.txt, name: tencentmeeting, service: tencentmeeting, local: PRS_tencentmeeting.domains.txt, enabled: true}  # Batch2; official candidate chain
+  - {path: generated/source/baidunetdisk/domains.txt, name: baidunetdisk, service: baidunetdisk, local: PRS_baidunetdisk.domains.txt, enabled: true}  # Batch2; official candidate chain
+  - {path: generated/source/youdao/domains.txt, name: youdao, service: youdao, local: PRS_youdao.domains.txt, enabled: true}  # Batch2; official candidate chain
   - {path: generated/source/qq/domains.txt, name: qq, service: qq, local: PRS_qq.domains.txt, enabled: true}  # Registered for Source candidate-chain reconciliation; not a production binding  # Durable immutable Source release persisted at Source main@192ee4a99cd02d99faddfbad30ac4ebf914edaa8
 
 - id: blackmatrix7
@@ -401,10 +407,4 @@ sources:
   rules:
   - {path: Apple/AppleDev.list, name: appledev, service: appledev, local: LM_Firefly_AppleDev.list}
 
-  - {path: generated/source/siri/domains.txt, name: siri, service: siri, local: PRS_siri.domains.txt, enabled: true}  # Batch2; pending immutable Source release
-  - {path: generated/source/googlecloud/domains.txt, name: googlecloud, service: googlecloud, local: PRS_googlecloud.domains.txt, enabled: true}  # Batch2; official candidate chain
-  - {path: generated/source/wecom/domains.txt, name: wecom, service: wecom, local: PRS_wecom.domains.txt, enabled: true}  # Batch2; official candidate chain
-  - {path: generated/source/tencentmeeting/domains.txt, name: tencentmeeting, service: tencentmeeting, local: PRS_tencentmeeting.domains.txt, enabled: true}  # Batch2; official candidate chain
-  - {path: generated/source/baidunetdisk/domains.txt, name: baidunetdisk, service: baidunetdisk, local: PRS_baidunetdisk.domains.txt, enabled: true}  # Batch2; official candidate chain
-  - {path: generated/source/youdao/domains.txt, name: youdao, service: youdao, local: PRS_youdao.domains.txt, enabled: true}  # Batch2; official candidate chain
   
