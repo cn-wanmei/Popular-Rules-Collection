@@ -167,8 +167,8 @@ services:
       seed_only_count: 0
       conflict_count: 0
   tencentcloud:
-    state: verified
-    enabled: false
+    state: canary
+    enabled: true
     source_verification:
       run: 35678280042
       source_commit: ffc7375b31080ea735c8bcc8ee59066b969c382f
@@ -182,7 +182,7 @@ services:
       source_commit: ffc7375b31080ea735c8bcc8ee59066b969c382f
       verified_input_commit: 4cfabcfc3e77806bc054035162ae64f93fa0505b
       snapshot_id: snap-tmall-42b106e61c7dad4f4aa02477
-      content_digest: c5f6ca64ece3eeba17c154a2ee9edc9f9a36e4e9c2f67e5fc53f82c4a2ef76a7
+      content_digest: c5f6ca64ece3eeba17c154a2ee9edc9f9a36e4e9c2f67e5fc53f82c4a7
     lineage_status: aligned_to_immutable_registry_pending_reverification
     attestation:
       status: pending

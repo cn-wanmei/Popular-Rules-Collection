@@ -7,8 +7,9 @@ prs:
   enabled: false
 
 canary:
-  enabled: false
-  services: []
+  enabled: true
+  services:
+    - tencentcloud
   single_active_service: true
   require_official_evidence_only: true
   require_seed_only_zero: true
