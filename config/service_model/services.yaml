@@ -94,6 +94,7 @@ services:
   roblox: {id: roblox, provider: roblox, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   googlevoice: {id: googlevoice, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   googleearth: {id: googleearth, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  googlemaps: {id: googlemaps, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   appleid: {id: appleid, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   applemail: {id: applemail, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   applemedia: {id: applemedia, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
