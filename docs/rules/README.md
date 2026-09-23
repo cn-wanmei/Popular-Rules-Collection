@@ -51,6 +51,7 @@
 ### baidu
 - [Baidu](baidu.md) (`baidu` · aggregate)
 - [Baidu Netdisk](baidunetdisk.md) (`baidunetdisk` · service)
+- [Baidu Tieba](baidutieba.md) (`baidutieba` · service)
 
 ### atlassian
 - [Bitbucket](bitbucket.md) (`bitbucket` · service)
@@ -159,6 +160,7 @@
 
 ### netease
 - [NetEase](netease.md) (`netease` · aggregate)
+- [NetEase Music](neteasemusic.md) (`neteasemusic` · service)
 
 ### streaming
 - [Netflix](netflix.md) (`netflix` · service)
