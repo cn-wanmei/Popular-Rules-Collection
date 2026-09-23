@@ -46,15 +46,17 @@ def _load_yaml(path: Path) -> dict[str, Any]:
     return data
 
 
-def _load_directory_contract() -> tuple[dict[str, str], dict[str, set[str]], dict[str, str], set[str]]:
+def _load_directory_contract() -> tuple[dict[str, str], dict[str, set[str]], dict[str, str], set[str], dict[str, str]]:
     if not _DIRECTORY_POLICY.exists():
         raise RuntimeError(f"Directory policy missing: {_DIRECTORY_POLICY}")
     policy = _load_yaml(_DIRECTORY_POLICY)
     if policy.get("schema") != "rule_distribution_policy_v2":
         raise RuntimeError("Unsupported rule distribution policy schema")
     layout = policy.get("layout") or {}
-    if not all(layout.get(k) for k in ("generated_client_root", "generated_aggregate", "generated_service", "generated_china")):
+    required_layout = ("generated_client_root", "generated_aggregate", "generated_service", "generated_china", "generated_category")
+    if not all(layout.get(k) for k in required_layout):
         raise RuntimeError("Directory policy is missing generated path templates")
+    generated_layout = {key: str(layout[key]).strip() for key in required_layout}
     hierarchy = _load_yaml(_HIERARCHY)
     providers = hierarchy.get("providers") or {}
     service_provider: dict[str, str] = {}
@@ -73,7 +75,7 @@ def _load_directory_contract() -> tuple[dict[str, str], dict[str, set[str]], dic
             service_provider[sid] = provider
     china = policy.get("china") or {}
     china_exclusions = {str(x).strip().lower() for x in china.get("exclude_independent_providers") or [] if str(x).strip()}
-    return service_provider, provider_services, provider_aggregates, china_exclusions
+    return service_provider, provider_services, provider_aggregates, china_exclusions, generated_layout
 
 
 def _load_capabilities() -> dict[str, set[str]]:
@@ -123,7 +125,7 @@ def _render_view(render, rules: list[dict[str, Any]], path: Path) -> None:
 def _build_client(
     client: str, meta: dict[str, str], rules: list[dict[str, Any]], memberships: dict[str, list[str]], artifacts_dir: Path,
     capabilities: dict[str, set[str]], service_provider: dict[str, str], provider_services: dict[str, set[str]],
-    provider_aggregates: dict[str, str], china_exclusions: set[str],
+    provider_aggregates: dict[str, str], china_exclusions: set[str], generated_layout: dict[str, str],
 ) -> tuple[str, dict[str, Any]]:
     cdir = artifacts_dir / client
     cdir.mkdir(parents=True, exist_ok=True)
@@ -141,7 +143,9 @@ def _build_client(
             provider_ids.update(memberships.get(service, []))
         entity_rules = [rules_by_id[rid] for rid in sorted(provider_ids) if rid in rules_by_id and rid in projected_ids]
         if entity_rules:
-            path = cdir / provider / f"{provider}{meta['ext']}"
+            path = Path(generated_layout["generated_aggregate"].format(client=client, provider=provider))
+            path = artifacts_dir / path.relative_to("generated")
+            path = path.with_name(path.name + meta["ext"])
             _render_view(render, entity_rules, path)
             emitted_files += 1
             emitted_paths.append(path.relative_to(cdir).as_posix())
@@ -149,7 +153,9 @@ def _build_client(
     for service, provider in sorted(service_provider.items()):
         entity_rules = [rules_by_id[rid] for rid in memberships.get(service, []) if rid in rules_by_id and rid in projected_ids]
         if entity_rules:
-            path = cdir / provider / service / f"{service}{meta['ext']}"
+            path = Path(generated_layout["generated_service"].format(client=client, provider=provider, service=service))
+            path = artifacts_dir / path.relative_to("generated")
+            path = path.with_name(path.name + meta["ext"])
             _render_view(render, entity_rules, path)
             emitted_files += 1
             emitted_paths.append(path.relative_to(cdir).as_posix())
@@ -165,7 +171,9 @@ def _build_client(
     china_ids.difference_update(excluded_ids)
     china_rules = [rules_by_id[rid] for rid in sorted(china_ids) if rid in rules_by_id and rid in projected_ids]
     if china_rules:
-        path = cdir / "china" / f"china{meta['ext']}"
+        path = Path(generated_layout["generated_china"].format(client=client))
+        path = artifacts_dir / path.relative_to("generated")
+        path = path.with_name(path.name + meta["ext"])
         _render_view(render, china_rules, path)
         emitted_files += 1
         emitted_paths.append(path.relative_to(cdir).as_posix())
@@ -187,7 +195,9 @@ def _build_client(
                 category_rules[entity].setdefault(rid, rule)
     for category, by_id in sorted(category_rules.items()):
         entity_rules = [by_id[rid] for rid in sorted(by_id)]
-        path = cdir / "categories" / category / f"{category}{meta['ext']}"
+        path = Path(generated_layout["generated_category"].format(client=client, category=category))
+        path = artifacts_dir / path.relative_to("generated")
+        path = path.with_name(path.name + meta["ext"])
         _render_view(render, entity_rules, path)
         emitted_files += 1
         emitted_paths.append(path.relative_to(cdir).as_posix())
@@ -205,10 +215,10 @@ def build_all_clients(ir_dir: Path, artifacts_dir: Path, *, views: list[str] | N
     rules, memberships, entities, semantic_intent = _load_ir(Path(ir_dir))
     probe_report = validate_semantic_probes(rules, memberships)
     capabilities = _load_capabilities()
-    service_provider, provider_services, provider_aggregates, china_exclusions = _load_directory_contract()
+    service_provider, provider_services, provider_aggregates, china_exclusions, generated_layout = _load_directory_contract()
     report: dict[str, Any] = {"schema": "adapter_build_v4", "clients": {}, "views": {"services": sorted(entities.get("services", [])), "aggregate": True, "china": True}, "source_contract": "semantic_ir_v2", "directory_contract": "rule_distribution_policy_v2", "china_excluded_independent_providers": sorted(china_exclusions), "semantic_intent": semantic_intent, "semantic_probes": probe_report, "v2_runtime_dependency": 0, "parallel": True}
     with ThreadPoolExecutor(max_workers=min(8, max(1, len(CLIENTS))), thread_name_prefix="adapter") as pool:
-        futures = {pool.submit(_build_client, client, meta, rules, memberships, artifacts_dir, capabilities, service_provider, provider_services, provider_aggregates, china_exclusions): client for client, meta in CLIENTS.items()}
+        futures = {pool.submit(_build_client, client, meta, rules, memberships, artifacts_dir, capabilities, service_provider, provider_services, provider_aggregates, china_exclusions, generated_layout): client for client, meta in CLIENTS.items()}
         for future in as_completed(futures):
             client, details = future.result()
             report["clients"][client] = details
