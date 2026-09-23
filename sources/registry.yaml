@@ -37,6 +37,14 @@ sources:
   - {path: generated/source/findmy/domains.txt, name: findmy, service: findmy, local: PRS_findmy.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
   - {path: generated/source/azure/domains.txt, name: azure, service: azure, local: PRS_azure.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
   - {path: generated/source/feishu/domains.txt, name: feishu, service: feishu, local: PRS_feishu.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release  # High-frequency independent service; pending immutable Source release
+  - {path: generated/source/appletv/domains.txt, name: appletv, service: appletv, local: PRS_appletv.domains.txt, enabled: true}  # Batch2; pending immutable Source release
+  - {path: generated/source/youtube/domains.txt, name: youtube, service: youtube, local: PRS_youtube.domains.txt, enabled: true}  # Batch2; pending immutable Source release
+  - {path: generated/source/googlefcm/domains.txt, name: googlefcm, service: googlefcm, local: PRS_googlefcm.domains.txt, enabled: true}  # Batch2; pending immutable Source release
+  - {path: generated/source/xbox/domains.txt, name: xbox, service: xbox, local: PRS_xbox.domains.txt, enabled: true}  # Batch2; pending immutable Source release
+  - {path: generated/source/github/domains.txt, name: github, service: github, local: PRS_github.domains.txt, enabled: true}  # Batch2; pending immutable Source release
+  - {path: generated/source/tencentvideo/domains.txt, name: tencentvideo, service: tencentvideo, local: PRS_tencentvideo.domains.txt, enabled: true}  # Batch2; pending immutable Source release
+  - {path: generated/source/firebase/domains.txt, name: firebase, service: firebase, local: PRS_firebase.domains.txt, enabled: true}  # Batch2; official candidate chain; pending immutable Source release
+  - {path: generated/source/doubao/domains.txt, name: doubao, service: doubao, local: PRS_doubao.domains.txt, enabled: true}  # Batch2; official candidate chain; pending immutable Source release
   - {path: generated/source/qq/domains.txt, name: qq, service: qq, local: PRS_qq.domains.txt, enabled: true}  # Registered for Source candidate-chain reconciliation; not a production binding  # Durable immutable Source release persisted at Source main@192ee4a99cd02d99faddfbad30ac4ebf914edaa8
 
 - id: blackmatrix7
