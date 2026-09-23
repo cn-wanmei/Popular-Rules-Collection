@@ -60,6 +60,18 @@ sources:
   - {path: generated/source/messenger/domains.txt, name: messenger, service: messenger, local: PRS_messenger.domains.txt, enabled: true}  # Batch3; pending immutable Source release
   - {path: generated/source/roblox/domains.txt, name: roblox, service: roblox, local: PRS_roblox.domains.txt, enabled: true}  # Batch3; pending immutable Source release
   - {path: generated/source/qq/domains.txt, name: qq, service: qq, local: PRS_qq.domains.txt, enabled: true}  # Registered for Source candidate-chain reconciliation; not a production binding  # Durable immutable Source release persisted at Source main@192ee4a99cd02d99faddfbad30ac4ebf914edaa8
+  - {path: generated/source/wegame/domains.txt, name: wegame, service: wegame, local: PRS_wegame.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/honorofkings-cn/domains.txt, name: honorofkings-cn, service: honorofkings-cn, local: PRS_honorofkings-cn.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/honorofkings-global/domains.txt, name: honorofkings-global, service: honorofkings-global, local: PRS_honorofkings-global.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/netease163mail/domains.txt, name: netease163mail, service: netease163mail, local: PRS_netease163mail.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/neteasegames/domains.txt, name: neteasegames, service: neteasegames, local: PRS_neteasegames.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/baidumaps/domains.txt, name: baidumaps, service: baidumaps, local: PRS_baidumaps.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/baiduwiki/domains.txt, name: baiduwiki, service: baiduwiki, local: PRS_baiduwiki.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/baiduwenku/domains.txt, name: baiduwenku, service: baiduwenku, local: PRS_baiduwenku.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/capcut/domains.txt, name: capcut, service: capcut, local: PRS_capcut.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/toutiao/domains.txt, name: toutiao, service: toutiao, local: PRS_toutiao.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/xigua/domains.txt, name: xigua, service: xigua, local: PRS_xigua.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/volcengine/domains.txt, name: volcengine, service: volcengine, local: PRS_volcengine.domains.txt, enabled: true}  # Source-owned; pending immutable binding
 
 - id: blackmatrix7
   name: BlackMatrix7 ios_rule_script
