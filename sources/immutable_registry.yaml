@@ -665,3 +665,83 @@ applenews:
     release_digest: 02103e6fb8fc4685d8e65a7a683249ead8eb5eb624f95cc19b78427a8e30fda4
     release_identity_version: '2'
     expected_sha256: cdfc340b54cadbb16a9ce19917d3c09f892ff0380edc64ca8c2ac7d4db1e9295
+
+  youtubemusic:
+    status: active
+    source_id: popular-rules-source
+    source_ref: e8bea553618b97e7b04d1ff02fd02c29da04a178
+    verified_input_commit: d85634ad5549e7f5f3907b9db768ccd942ae5d22
+    artifact_path: generated/source/youtubemusic/domains.txt
+    release_path: releases/youtubemusic/snap-youtubemusic-56acd7f93290f648cbc4c5ca/release.json
+    snapshot_id: snap-youtubemusic-56acd7f93290f648cbc4c5ca
+    content_digest: d4b0e7451fd3009fc8f075e055fe68b7c4acc4e4f566f7f513d8674064ca7fed
+    evidence_digest: 35f2941d2b08fd2b38955156f1f7cea22104da89b56a9f5558cca4a0f128fbaa
+    policy_digest: 2a41ecbeb54c4633de1ba02e3341dffbe2a37521f0014faab882501f447abfd5
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 56acd7f93290f648cbc4c5ca7aee22148cf2468d79a2caeaa06c48344a4efebe
+    release_identity_version: '2'
+    expected_sha256: 8262f564847f4121a2579bb771d861b12c820b4364482be15328ec81be3beecf
+
+  onedrive:
+    status: active
+    source_id: popular-rules-source
+    source_ref: e8bea553618b97e7b04d1ff02fd02c29da04a178
+    verified_input_commit: d85634ad5549e7f5f3907b9db768ccd942ae5d22
+    artifact_path: generated/source/onedrive/domains.txt
+    release_path: releases/onedrive/snap-onedrive-fbc5932baea8147fd7425b85/release.json
+    snapshot_id: snap-onedrive-fbc5932baea8147fd7425b85
+    content_digest: 1090a865fdb375152535274115046431d18260f268e879edbd8d25e4f733c335
+    evidence_digest: b663143d570dc6412d4ffa021e0462a450e9e3cba58166310a81742184c4c82d
+    policy_digest: c05ae46fd11057a58c69c8fdd53e0da3e26d69bc55470cf34cf64e7d3a29ff8f
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: fbc5932baea8147fd7425b853fa3c473effc2efc3bd5d1ef62aac19ac0fccbe5
+    release_identity_version: '2'
+    expected_sha256: 8df59c93f615304ca5733ad90a45d35580abd468bc0903b03423fe81a905b7e3
+
+  teams:
+    status: active
+    source_id: popular-rules-source
+    source_ref: e8bea553618b97e7b04d1ff02fd02c29da04a178
+    verified_input_commit: d85634ad5549e7f5f3907b9db768ccd942ae5d22
+    artifact_path: generated/source/teams/domains.txt
+    release_path: releases/teams/snap-teams-6229a157b04da9c33c785d2f/release.json
+    snapshot_id: snap-teams-6229a157b04da9c33c785d2f
+    content_digest: 563f80231062e824df9a8c2e25f3df58b2b8120acbf3a058f47ba235cb66ed9b
+    evidence_digest: 16d731ba94dd1cfe8d1b90856ff66611710a97a148d08c0571c7d446ad9f60f1
+    policy_digest: 12c82ea7d207e5cb46cb4f5f1392fdc66ac246c6d899c044fdc1e0d14018a43e
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 6229a157b04da9c33c785d2fd2cff563e2fce3d23073dc6b6cd2a51bed220522
+    release_identity_version: '2'
+    expected_sha256: 772c0dbdd10c01ccea72f19818415989b1c05a982487829b44f63eb2ad577ccc
+
+  wechat:
+    status: active
+    source_id: popular-rules-source
+    source_ref: e8bea553618b97e7b04d1ff02fd02c29da04a178
+    verified_input_commit: d85634ad5549e7f5f3907b9db768ccd942ae5d22
+    artifact_path: generated/source/wechat/domains.txt
+    release_path: releases/wechat/snap-wechat-fe8dc34d271a68b11a79ae3f/release.json
+    snapshot_id: snap-wechat-fe8dc34d271a68b11a79ae3f
+    content_digest: 30c7ce7830e6ee3bd9c59dd673513670e704ce6e1090d925d3d641ce2e774b2b
+    evidence_digest: 54413449f945ced4ca617bb53c0adf3c25af5a36209ba40103ca4effe53578d6
+    policy_digest: f2380677c929d22f44078a8977a6ea55068f2c6be09fea1eceb5b5ce851b4ba5
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: fe8dc34d271a68b11a79ae3feb97ce3f06c58255f5c0ec0d764845ce15e25948
+    release_identity_version: '2'
+    expected_sha256: b5217e67439b183f2e64ea4cd591347a695dc5bbe7c09c6d9d372bf45c02f2bf
+
+  baidutieba:
+    status: active
+    source_id: popular-rules-source
+    source_ref: e8bea553618b97e7b04d1ff02fd02c29da04a178
+    verified_input_commit: d85634ad5549e7f5f3907b9db768ccd942ae5d22
+    artifact_path: generated/source/baidutieba/domains.txt
+    release_path: releases/baidutieba/snap-baidutieba-4d29b0251917fe7adfa58912/release.json
+    snapshot_id: snap-baidutieba-4d29b0251917fe7adfa58912
+    content_digest: c093d9d06fb7cd526b2c0ffc6d5b032a59fd51d500a4776f5f3d284b030f6000
+    evidence_digest: ffca3abec840dad77c847597faa29f0aa4a51a4ce9b46d1625fa80b6b51e97b2
+    policy_digest: 3017d41cdccb12178de4c89f24ded143888b83d5ae15b911901d0c602e550999
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 4d29b0251917fe7adfa58912d05f14a9a1a5cd9acf899ceafbd53cb99270f21a
+    release_identity_version: '2'
+    expected_sha256: 79475b58f1217281f2f2bb54eea0a778d74104a8cf0d6be48a496911c41739b6
