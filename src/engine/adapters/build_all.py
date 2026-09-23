@@ -141,7 +141,7 @@ def _build_client(
             provider_ids.update(memberships.get(service, []))
         entity_rules = [rules_by_id[rid] for rid in sorted(provider_ids) if rid in rules_by_id and rid in projected_ids]
         if entity_rules:
-            path = cdir / provider / "all" / f"rules{meta['ext']}"
+            path = cdir / provider / f"{provider}{meta['ext']}"
             _render_view(render, entity_rules, path)
             emitted_files += 1
             emitted_paths.append(path.relative_to(cdir).as_posix())
@@ -149,7 +149,7 @@ def _build_client(
     for service, provider in sorted(service_provider.items()):
         entity_rules = [rules_by_id[rid] for rid in memberships.get(service, []) if rid in rules_by_id and rid in projected_ids]
         if entity_rules:
-            path = cdir / provider / service / f"rules{meta['ext']}"
+            path = cdir / provider / service / f"{service}{meta['ext']}"
             _render_view(render, entity_rules, path)
             emitted_files += 1
             emitted_paths.append(path.relative_to(cdir).as_posix())
@@ -165,7 +165,7 @@ def _build_client(
     china_ids.difference_update(excluded_ids)
     china_rules = [rules_by_id[rid] for rid in sorted(china_ids) if rid in rules_by_id and rid in projected_ids]
     if china_rules:
-        path = cdir / "china" / "all" / f"rules{meta['ext']}"
+        path = cdir / "china" / f"china{meta['ext']}"
         _render_view(render, china_rules, path)
         emitted_files += 1
         emitted_paths.append(path.relative_to(cdir).as_posix())
@@ -187,7 +187,7 @@ def _build_client(
                 category_rules[entity].setdefault(rid, rule)
     for category, by_id in sorted(category_rules.items()):
         entity_rules = [by_id[rid] for rid in sorted(by_id)]
-        path = cdir / "categories" / category / "all" / f"rules{meta['ext']}"
+        path = cdir / "categories" / category / f"{category}{meta['ext']}"
         _render_view(render, entity_rules, path)
         emitted_files += 1
         emitted_paths.append(path.relative_to(cdir).as_posix())
