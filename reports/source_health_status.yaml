@@ -1,95 +1,95 @@
 schema: source_health_status_v1
-generated_at: '2026-09-23T13:31:02.303235Z'
+generated_at: '2026-09-23T14:04:11.754461Z'
 policy: config/health_policy.yaml
 lifecycle_registry: sources/lifecycle.yaml
 sources:
   anti-ad:
     lifecycle: active
     status: stale
-    reason: last success 656h ago
+    reason: last success 657h ago
     last_success: '2026-08-27T04:42:17.147787+00:00'
     last_attempt: '2026-08-27T04:42:17.147775+00:00'
     failure_count: 0
-    age_hours: 656
+    age_hours: 657
     rules_declared: 3
   blackmatrix7:
     lifecycle: active
     status: healthy
-    reason: last success 13h ago
-    last_success: '2026-09-23T00:15:00.468658+00:00'
-    last_attempt: '2026-09-23T00:15:00.468651+00:00'
+    reason: last success 0h ago
+    last_success: '2026-09-23T14:01:40.425638+00:00'
+    last_attempt: '2026-09-23T14:01:40.425632+00:00'
     failure_count: 0
-    age_hours: 13
-    rules_declared: 143
+    age_hours: 0
+    rules_declared: 154
   dler:
     lifecycle: active
     status: healthy
-    reason: last success 13h ago
-    last_success: '2026-09-23T00:15:00.556122+00:00'
-    last_attempt: '2026-09-23T00:15:00.556113+00:00'
+    reason: last success 0h ago
+    last_success: '2026-09-23T14:01:53.738880+00:00'
+    last_attempt: '2026-09-23T14:01:53.738872+00:00'
     failure_count: 0
-    age_hours: 13
+    age_hours: 0
     rules_declared: 20
   hagezi:
     lifecycle: active
     status: stale
-    reason: last success 656h ago
+    reason: last success 657h ago
     last_success: '2026-08-27T04:42:19.128658+00:00'
     last_attempt: '2026-08-27T04:42:19.128645+00:00'
     failure_count: 0
-    age_hours: 656
+    age_hours: 657
     rules_declared: 3
   lm-firefly:
     lifecycle: active
     status: healthy
-    reason: last success 13h ago
-    last_success: '2026-09-23T00:15:00.557097+00:00'
-    last_attempt: '2026-09-23T00:15:00.557089+00:00'
+    reason: last success 0h ago
+    last_success: '2026-09-23T14:01:53.740806+00:00'
+    last_attempt: '2026-09-23T14:01:53.740796+00:00'
     failure_count: 0
-    age_hours: 13
+    age_hours: 0
     rules_declared: 1
   loyalsoldier:
     lifecycle: active
     status: stale
-    reason: last success 656h ago
+    reason: last success 657h ago
     last_success: '2026-08-27T04:42:15.893593+00:00'
     last_attempt: '2026-08-27T04:42:15.893581+00:00'
     failure_count: 0
-    age_hours: 656
+    age_hours: 657
     rules_declared: 14
   metacubex:
     lifecycle: active
     status: healthy
-    reason: last success 13h ago
-    last_success: '2026-09-23T00:15:00.513329+00:00'
-    last_attempt: '2026-09-23T00:15:00.513315+00:00'
+    reason: last success 0h ago
+    last_success: '2026-09-23T14:01:47.037335+00:00'
+    last_attempt: '2026-09-23T14:01:47.037327+00:00'
     failure_count: 0
-    age_hours: 13
+    age_hours: 0
     rules_declared: 76
   popular-rules-source:
     lifecycle: active
     status: healthy
-    reason: last success 13h ago
-    last_success: '2026-09-23T00:15:00.287659+00:00'
-    last_attempt: '2026-09-23T00:15:00.287654+00:00'
+    reason: last success 0h ago
+    last_success: '2026-09-23T14:01:27.369546+00:00'
+    last_attempt: '2026-09-23T14:01:27.369538+00:00'
     failure_count: 0
-    age_hours: 13
-    rules_declared: 8
+    age_hours: 0
+    rules_declared: 61
   sukkaw:
     lifecycle: active
     status: stale
-    reason: last success 656h ago
+    reason: last success 657h ago
     last_success: '2026-08-27T04:42:20.112563+00:00'
     last_attempt: '2026-08-27T04:42:20.112551+00:00'
     failure_count: 0
-    age_hours: 656
+    age_hours: 657
     rules_declared: 8
   v2fly:
     lifecycle: active
     status: healthy
-    reason: last success 13h ago
-    last_success: '2026-09-23T00:15:00.544447+00:00'
-    last_attempt: '2026-09-23T00:15:00.544433+00:00'
+    reason: last success 0h ago
+    last_success: '2026-09-23T14:01:51.975935+00:00'
+    last_attempt: '2026-09-23T14:01:51.975927+00:00'
     failure_count: 0
-    age_hours: 13
+    age_hours: 0
     rules_declared: 56
