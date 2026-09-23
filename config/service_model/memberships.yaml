@@ -1,14 +1,14 @@
 version: 1
 updated: "2026-09-17"
 aggregates:
-  google: {id: google, kind: aggregate, provider: google, scope: ecosystem, members: [google-core, google-shared, gmail, google-search, googlecloud, firebase, googledrive, youtubemusic, youtube, googlefcm, gcp], exclude: []}
-  apple: {id: apple, kind: aggregate, provider: apple, scope: ecosystem, members: [apple-core, apple-shared, icloud, appstore, testflight, appledev, findmy, applemusic, appletv, siri], exclude: []}
-  microsoft: {id: microsoft, kind: aggregate, provider: microsoft, scope: ecosystem, members: [microsoft-core, microsoft-shared, azure, onedrive, teams, xbox, github], exclude: []}
-  tencent: {id: tencent, kind: aggregate, provider: tencent, scope: ecosystem, members: [tencent-core, tencent-shared, wechat, qq, qqmusic, qqmail, wecom, tencentmeeting, tencentcloud, tencentvideo], exclude: []}
+  google: {id: google, kind: aggregate, provider: google, scope: ecosystem, members: [google-core, google-shared, gmail, google-search, googlecloud, firebase, googledrive, youtubemusic, youtube, googlefcm, gcp, googlevoice, googleearth], exclude: []}
+  apple: {id: apple, kind: aggregate, provider: apple, scope: ecosystem, members: [apple-core, apple-shared, icloud, appstore, testflight, appledev, findmy, applemusic, appletv, siri, appleid, applemail, applemedia, applenews, applefirmware, icloudprivaterelay], exclude: []}
+  microsoft: {id: microsoft, kind: aggregate, provider: microsoft, scope: ecosystem, members: [microsoft-core, microsoft-shared, azure, onedrive, teams, xbox, github, microsoftedge, bing, outlook, office], exclude: []}
+  tencent: {id: tencent, kind: aggregate, provider: tencent, scope: ecosystem, members: [tencent-core, tencent-shared, wechat, qq, qqmusic, qqmail, wecom, tencentmeeting, tencentcloud, tencentvideo, wegame, honorofkings-cn, honorofkings-global], exclude: []}
   alibaba: {id: alibaba, kind: aggregate, provider: alibaba, scope: ecosystem, members: [alibaba-core, alibaba-shared, taobao, tmall, alibabacloud, "1688", dingding, cainiao], exclude: []}
-  baidu: {id: baidu, kind: aggregate, provider: baidu, scope: ecosystem, members: [baidu-core, baidu-shared, baidunetdisk, baidutieba], exclude: []}
+  baidu: {id: baidu, kind: aggregate, provider: baidu, scope: ecosystem, members: [baidu-core, baidu-shared, baidunetdisk, baidutieba, baidumaps, baiduwiki, baiduwenku], exclude: []}
   amazon: {id: amazon, kind: aggregate, provider: amazon, scope: ecosystem, members: [amazon-core, amazon-shared, aws], exclude: []}
-  bytedance: {id: bytedance, kind: aggregate, provider: bytedance, scope: ecosystem, members: [bytedance-core, bytedance-shared, doubao, feishu, douyin], exclude: []}
-  netease: {id: netease, kind: aggregate, provider: netease, scope: ecosystem, members: [netease-core, netease-shared, youdao, neteasemusic], exclude: []}
+  bytedance: {id: bytedance, kind: aggregate, provider: bytedance, scope: ecosystem, members: [bytedance-core, bytedance-shared, doubao, feishu, douyin, capcut, toutiao, xigua, volcengine], exclude: []}
+  netease: {id: netease, kind: aggregate, provider: netease, scope: ecosystem, members: [netease-core, netease-shared, youdao, neteasemusic, netease163mail, neteasegames], exclude: []}
   atlassian: {id: atlassian, kind: aggregate, provider: atlassian, scope: ecosystem, members: [atlassian-core, atlassian-shared, bitbucket, trello], exclude: []}
   meta: {id: meta, kind: aggregate, provider: meta, scope: ecosystem, members: [meta-core, meta-shared, messenger], exclude: []}
