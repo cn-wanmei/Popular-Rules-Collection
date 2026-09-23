@@ -51,6 +51,14 @@ sources:
   - {path: generated/source/tencentmeeting/domains.txt, name: tencentmeeting, service: tencentmeeting, local: PRS_tencentmeeting.domains.txt, enabled: true}  # Batch2; official candidate chain
   - {path: generated/source/baidunetdisk/domains.txt, name: baidunetdisk, service: baidunetdisk, local: PRS_baidunetdisk.domains.txt, enabled: true}  # Batch2; official candidate chain
   - {path: generated/source/youdao/domains.txt, name: youdao, service: youdao, local: PRS_youdao.domains.txt, enabled: true}  # Batch2; official candidate chain
+  - {path: generated/source/alibabacloud/domains.txt, name: alibabacloud, service: alibabacloud, local: PRS_alibabacloud.domains.txt, enabled: true}  # Batch3; pending immutable Source release
+  - {path: generated/source/deepseek/domains.txt, name: deepseek, service: deepseek, local: PRS_deepseek.domains.txt, enabled: true}  # Batch3; pending immutable Source release
+  - {path: generated/source/perplexity/domains.txt, name: perplexity, service: perplexity, local: PRS_perplexity.domains.txt, enabled: true}  # Batch3; pending immutable Source release
+  - {path: generated/source/groq/domains.txt, name: groq, service: groq, local: PRS_groq.domains.txt, enabled: true}  # Batch3; pending immutable Source release
+  - {path: generated/source/huggingface/domains.txt, name: huggingface, service: huggingface, local: PRS_huggingface.domains.txt, enabled: true}  # Batch3; pending immutable Source release
+  - {path: generated/source/signal/domains.txt, name: signal, service: signal, local: PRS_signal.domains.txt, enabled: true}  # Batch3; pending immutable Source release
+  - {path: generated/source/messenger/domains.txt, name: messenger, service: messenger, local: PRS_messenger.domains.txt, enabled: true}  # Batch3; pending immutable Source release
+  - {path: generated/source/roblox/domains.txt, name: roblox, service: roblox, local: PRS_roblox.domains.txt, enabled: true}  # Batch3; pending immutable Source release
   - {path: generated/source/qq/domains.txt, name: qq, service: qq, local: PRS_qq.domains.txt, enabled: true}  # Registered for Source candidate-chain reconciliation; not a production binding  # Durable immutable Source release persisted at Source main@192ee4a99cd02d99faddfbad30ac4ebf914edaa8
 
 - id: blackmatrix7
