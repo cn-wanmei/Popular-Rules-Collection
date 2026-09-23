@@ -8,9 +8,6 @@
 
 ## 当前新增独立子服务
 
-- [Apple Media](applemedia.md) (`applemedia` · service)
-- [Apple News](applenews.md) (`applenews` · service)
-- [Bing](bing.md) (`bing` · service)
 - [王者荣耀（国服）](honorofkings_cn.md) (`honorofkings_cn` · service)
 - [Honor of Kings Global](honorofkings_global.md) (`honorofkings_global` · service)
 - [网易邮箱](neteasemail.md) (`neteasemail` · service)
@@ -290,8 +287,8 @@
 - [Baidu Wiki](baiduwiki.md) (`baiduwiki` · service)
 - [Baidu Wenku](baiduwenku.md) (`baiduwenku` · service)
 - [WeGame](wegame.md) (`wegame` · service)
-- [Honor of Kings CN](honorofkings-cn.md) (`honorofkings_cn` · service)
-- [Honor of Kings Global](honorofkings-global.md) (`honorofkings_global` · service)
+- [Honor of Kings CN](honorofkings_cn.md) (`honorofkings_cn` · service)
+- [Honor of Kings Global](honorofkings_global.md) (`honorofkings_global` · service)
 
 ## 其他历史/聚合页面
 
