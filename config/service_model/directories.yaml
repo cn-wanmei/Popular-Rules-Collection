@@ -18,15 +18,17 @@ layout:
   human_aggregate_entity: "rule/aggregate/{aggregate}/{aggregate}.yaml"
   human_unmapped_service: "rule/unmapped/{service}/{service}.yaml"
   generated_client_root: "generated/{client}"
-  generated_aggregate: "generated/{client}/{provider}/all"
-  generated_service: "generated/{client}/{provider}/{service}"
-  generated_china: "generated/{client}/china/all"
+  generated_aggregate: "generated/{client}/{provider}/{provider}"
+  generated_service: "generated/{client}/{provider}/{service}/{service}"
+  generated_china: "generated/{client}/china/china"
 
 semantics:
   provider_aggregate: "union_of_provider_direct_rules_and_all_declared_services"
   service: "service_only_canonical_membership"
   human_browse_output: true
   generated_output: true
+  generated_named_files: true
+  no_synthetic_all_directory: true
   source_of_truth: "data/runs/<run-id>/canonical"
   semantic_intermediate: "data/runs/<run-id>/ir"
   same_run_required: true
