@@ -26,7 +26,7 @@ def test_build_all_projects_rules_to_client_capabilities(tmp_path: Path) -> None
     assert surge["input_rules"] == 2
     assert surge["emitted_rules"] == 1
     assert surge["skipped_unsupported_rule_types"] == {"domain_regex": 1}
-    assert (artifacts / "surge" / "categories" / "test" / "all" / "rules.list").read_text(encoding="utf-8") == "DOMAIN,example.com\n"
+    assert (artifacts / "surge" / "categories" / "test" / "test.list").read_text(encoding="utf-8") == "DOMAIN,example.com\n"
 
     mihomo = report["clients"]["mihomo"]
     assert mihomo["emitted_rules"] == 2
@@ -51,8 +51,8 @@ def test_build_all_materializes_rule_classification_categories_and_excludes_inde
 
     build_all_clients(ir_dir, artifacts)
 
-    category = artifacts / "mihomo" / "categories" / "china" / "all" / "rules.yaml"
-    china = artifacts / "mihomo" / "china" / "all" / "rules.yaml"
+    category = artifacts / "mihomo" / "categories" / "china" / "china.yaml"
+    china = artifacts / "mihomo" / "china" / "china.yaml"
     assert category.exists() and "example.cn" in category.read_text(encoding="utf-8")
     assert china.exists()
     china_text = china.read_text(encoding="utf-8")
