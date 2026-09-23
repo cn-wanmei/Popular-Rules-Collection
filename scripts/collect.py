@@ -72,8 +72,14 @@ def source_runtime_enabled(source: dict[str, Any]) -> bool:
     # Phase 2 permits single-service production activation while the PRS
     # source itself remains globally disabled.
     if source.get("id") == "popular-rules-source":
+        # The PRS source is globally disabled; only rules with an ACTIVE
+        # immutable Source binding are runtime-eligible. Pending/review
+        # candidates stay visible in the registry but never enter production
+        # acquisition.
         return any(
-            isinstance(entry, dict) and entry.get("enabled") is True
+            isinstance(entry, dict)
+            and entry.get("enabled") is True
+            and immutable_binding_for(str(entry.get("service") or entry.get("name") or "")) is not None
             for entry in (source.get("rules") or source.get("files") or [])
         )
     return False
@@ -114,6 +120,12 @@ def rules_for(src: dict[str, Any]) -> list[dict[str, str]]:
         # upstream source's global enabled state. Disabled rules remain visible
         # to registry/orphan validation but are not acquired.
         if entry.get("enabled") is False:
+            continue
+        # PRS production acquisition is allowed only for a durable immutable
+        # binding. This prevents pending/review Source candidates from being
+        # treated as live inputs and avoids batch-wide fail-closed collection
+        # failures when a candidate has no release yet.
+        if src.get("id") == "popular-rules-source" and immutable_binding_for(service) is None:
             continue
         out.append({"path": str(entry["path"]), "name": local, "service": service})
     return out
