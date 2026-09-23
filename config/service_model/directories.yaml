@@ -9,13 +9,14 @@ root: rule
 # The human rule tree and generated client trees are sibling projections of one Run.
 layout:
   human_root: "rule"
-  human_aggregate: "rule/{provider}/all/rules.yaml"
-  human_service: "rule/{provider}/{service}/rules.yaml"
-  human_china: "rule/china/all/rules.yaml"
-  human_category: "rule/category/{category}/all/rules.yaml"
-  human_group: "rule/group/{group}/rules.yaml"
-  human_aggregate_entity: "rule/aggregate/{aggregate}/rules.yaml"
-  human_unmapped_service: "rule/unmapped/{service}/rules.yaml"
+  # One canonical file per entity directory; no synthetic "all/" layer.
+  human_aggregate: "rule/{provider}/{provider}.yaml"
+  human_service: "rule/{provider}/{service}/{service}.yaml"
+  human_china: "rule/china/china.yaml"
+  human_category: "rule/category/{category}/{category}.yaml"
+  human_group: "rule/group/{group}/{group}.yaml"
+  human_aggregate_entity: "rule/aggregate/{aggregate}/{aggregate}.yaml"
+  human_unmapped_service: "rule/unmapped/{service}/{service}.yaml"
   generated_client_root: "generated/{client}"
   generated_aggregate: "generated/{client}/{provider}/all"
   generated_service: "generated/{client}/{provider}/{service}"
@@ -58,52 +59,52 @@ china:
 providers:
   # Provider aggregates include every declared service under the provider.
   apple:
-    aggregate_path: rule/apple/all
+    aggregate_path: rule/apple/apple
     services_from: service_model
   google:
-    aggregate_path: rule/google/all
+    aggregate_path: rule/google/google
     services_from: service_model
   microsoft:
-    aggregate_path: rule/microsoft/all
+    aggregate_path: rule/microsoft/microsoft
     services_from: service_model
   amazon:
-    aggregate_path: rule/amazon/all
+    aggregate_path: rule/amazon/amazon
     services_from: service_model
   tencent:
-    aggregate_path: rule/tencent/all
+    aggregate_path: rule/tencent/tencent
     services_from: service_model
   alibaba:
-    aggregate_path: rule/alibaba/all
+    aggregate_path: rule/alibaba/alibaba
     services_from: service_model
   baidu:
-    aggregate_path: rule/baidu/all
+    aggregate_path: rule/baidu/baidu
     services_from: service_model
   bytedance:
-    aggregate_path: rule/bytedance/all
+    aggregate_path: rule/bytedance/bytedance
     services_from: service_model
   netease:
-    aggregate_path: rule/netease/all
+    aggregate_path: rule/netease/netease
     services_from: service_model
   huawei:
-    aggregate_path: rule/huawei/all
+    aggregate_path: rule/huawei/huawei
     services_from: service_model
   xiaomi:
-    aggregate_path: rule/xiaomi/all
+    aggregate_path: rule/xiaomi/xiaomi
     services_from: service_model
   atlassian:
-    aggregate_path: rule/atlassian/all
+    aggregate_path: rule/atlassian/atlassian
     services_from: service_model
   meta:
-    aggregate_path: rule/meta/all
+    aggregate_path: rule/meta/meta
     services_from: service_model
   cloudflare:
-    aggregate_path: rule/cloudflare/all
+    aggregate_path: rule/cloudflare/cloudflare
     services_from: service_model
   adobe:
-    aggregate_path: rule/adobe/all
+    aggregate_path: rule/adobe/adobe
     services_from: service_model
   hoyoverse:
-    aggregate_path: rule/hoyoverse/all
+    aggregate_path: rule/hoyoverse/hoyoverse
     services_from: service_model
 
 invariants:
