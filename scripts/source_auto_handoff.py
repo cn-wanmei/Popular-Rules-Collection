@@ -56,8 +56,9 @@ def _get_source_seal() -> dict:
     if not SHA40.fullmatch(source_ref) or not SHA40.fullmatch(verified_input):
         raise RuntimeError("Source durable report must contain exact SHA40 persistence and verified input commits")
     services = report.get("services") or {}
-    if set(services) != set(SERVICES):
-        raise RuntimeError(f"Source durable service set mismatch: {sorted(services)}")
+    missing = sorted(set(SERVICES) - set(services))
+    if missing:
+        raise RuntimeError(f"Source durable service set missing required services: {missing}")
     for sid in SERVICES:
         item = services[sid]
         if item.get("status") != "PERSISTED":
