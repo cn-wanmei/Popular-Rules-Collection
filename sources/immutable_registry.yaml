@@ -585,3 +585,83 @@ applenews:
     release_digest: 44c03024f97a209b65b001f1d4fd81cd65a8450bd58673ec3dbabb5225822b1e
     release_identity_version: '2'
     expected_sha256: b1e1bb7d32f176618ef7335b6e5ea5ced9bca71e540e694a40bf48a34d3ac5bf
+
+  appstore:
+    status: active
+    source_id: popular-rules-source
+    source_ref: d85634ad5549e7f5f3907b9db768ccd942ae5d22
+    verified_input_commit: 69eeda8c051d505ca8af3c9fb5d0c85cfedb8c91
+    artifact_path: generated/source/appstore/domains.txt
+    release_path: releases/appstore/snap-appstore-ad9887965cf7199654327dde/release.json
+    snapshot_id: snap-appstore-ad9887965cf7199654327dde
+    content_digest: 470529b3a2c5835f7a1c8e52229eb7adc4d8f0dbec0d1b07661c9b4476df3d1c
+    evidence_digest: ea7990795a72e0470eeeaec75bd6467dc89153cba91d7373010fbfe7b942f7b6
+    policy_digest: 4b2111cd8b2cd9fbdb9faafb9aec8a51b1c3f107d5cbfbd283359abac48c75dd
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: ad9887965cf7199654327ddef664afd6f4da8ab656f428a0eda6afcc03a55e1e
+    release_identity_version: '2'
+    expected_sha256: ef0612c0e37d4bd53817c92a075571d9ca1c47ec0379f72c51804b4912a4e32f
+
+  testflight:
+    status: active
+    source_id: popular-rules-source
+    source_ref: d85634ad5549e7f5f3907b9db768ccd942ae5d22
+    verified_input_commit: 69eeda8c051d505ca8af3c9fb5d0c85cfedb8c91
+    artifact_path: generated/source/testflight/domains.txt
+    release_path: releases/testflight/snap-testflight-aef28e222598764f34a5f052/release.json
+    snapshot_id: snap-testflight-aef28e222598764f34a5f052
+    content_digest: 892baeedfa6911d40dd9953d77211bb23dcdd32ce987685477b545442c17837a
+    evidence_digest: a384b8b809f1b9f428b09a35809ded07eaa1a76e4b50df77ceb622a777ab8d84
+    policy_digest: 22d90b177736717cae4f98ae4f5c555073b13453dfb02a612ce5b9ac7f6aaa08
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: aef28e222598764f34a5f052f1762158c959ec0b6cabbd317bd16bd0fb2af076
+    release_identity_version: '2'
+    expected_sha256: fb11aff5b6dd9f0c5fe05635710fbb9380cd14ff0a98c6c0eab227ea4f60d31a
+
+  icloud:
+    status: active
+    source_id: popular-rules-source
+    source_ref: d85634ad5549e7f5f3907b9db768ccd942ae5d22
+    verified_input_commit: 69eeda8c051d505ca8af3c9fb5d0c85cfedb8c91
+    artifact_path: generated/source/icloud/domains.txt
+    release_path: releases/icloud/snap-icloud-6a7847125f008375cb98e14c/release.json
+    snapshot_id: snap-icloud-6a7847125f008375cb98e14c
+    content_digest: 94cebbd23c02eafb107927c4692b4f39377adb3e99d3462e0e5ce26194eb9b43
+    evidence_digest: d4a2808240a83062fc462ecf0bb40b1cb09dd699a86f879ec1960e0bb9212133
+    policy_digest: 7c61b91745114de9c298c6a20cad1cd5a317b54a22d81dffd3488684266efc27
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 6a7847125f008375cb98e14cfbcb660cf58efcb88bafbb3de9e603b2b71c067b
+    release_identity_version: '2'
+    expected_sha256: a4392ac1000d888c4e4f72d49b412015aa40636260f9fccfad35ae3c8f15436d
+
+  applemusic:
+    status: active
+    source_id: popular-rules-source
+    source_ref: d85634ad5549e7f5f3907b9db768ccd942ae5d22
+    verified_input_commit: 69eeda8c051d505ca8af3c9fb5d0c85cfedb8c91
+    artifact_path: generated/source/applemusic/domains.txt
+    release_path: releases/applemusic/snap-applemusic-3b672c7c1ed52f0df7b897fa/release.json
+    snapshot_id: snap-applemusic-3b672c7c1ed52f0df7b897fa
+    content_digest: ed7f03ecbf0e65d6055de1758e8be6758a3e1b1bfe25afbd67c4f24ac1aed007
+    evidence_digest: be0d71c994df61206bb0e1210aee5e48282690e428a33bcf0c72474d9d99a9e6
+    policy_digest: 768f4482825e81cab263d62267bfd653ad983f454f22f1ca2b321dda8ad9c1c1
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 3b672c7c1ed52f0df7b897fa18f837a1f6aeb1ad110c4ee97476b7307f6608ad
+    release_identity_version: '2'
+    expected_sha256: c3f6f33e7ec7be14dfbba6d1e356175de3ae70f13bbeb40d1b7800d76f57f904
+
+  googledrive:
+    status: active
+    source_id: popular-rules-source
+    source_ref: d85634ad5549e7f5f3907b9db768ccd942ae5d22
+    verified_input_commit: 69eeda8c051d505ca8af3c9fb5d0c85cfedb8c91
+    artifact_path: generated/source/googledrive/domains.txt
+    release_path: releases/googledrive/snap-googledrive-02103e6fb8fc4685d8e65a7a/release.json
+    snapshot_id: snap-googledrive-02103e6fb8fc4685d8e65a7a
+    content_digest: bdf2381867e98fde7c6d10bcced6ce5465ef9e4f1790d78905816904593e85f9
+    evidence_digest: b8a0518a2b67890ecb86dd5aed17ed2a417c81c769b516ee18c2c1befcfb262a
+    policy_digest: b107935f895a642dacb5630e10359a0ffd8c5dadabc332ec01cf378b10094030
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 02103e6fb8fc4685d8e65a7a683249ead8eb5eb624f95cc19b78427a8e30fda4
+    release_identity_version: '2'
+    expected_sha256: cdfc340b54cadbb16a9ce19917d3c09f892ff0380edc64ca8c2ac7d4db1e9295
