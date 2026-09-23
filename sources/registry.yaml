@@ -1,6 +1,6 @@
 # Registry V3 — Source + Fetcher + Collection Manifest
 version: 3
-last_updated: '2026-09-21'  # immutable source bridge activation verified; immutable acquisition URL pin gate verified
+last_updated: '2026-09-23'  # immutable source bridge activation verified; immutable acquisition URL pin gate verified
 sources:
 - id: popular-rules-source
   name: Popular-Rules-Source (official domain generation)
@@ -20,7 +20,24 @@ sources:
   - {path: generated/source/qqmusic/domains.txt, name: qqmusic, service: qqmusic, local: PRS_qqmusic.domains.txt, enabled: true}  # Durable immutable Source release persisted at Source main@192ee4a99cd02d99faddfbad30ac4ebf914edaa8
   - {path: generated/source/taobao/domains.txt, name: taobao, service: taobao, local: PRS_taobao.domains.txt, enabled: true}  # Durable immutable Source release persisted at Source main@192ee4a99cd02d99faddfbad30ac4ebf914edaa8
   - {path: generated/source/tencentcloud/domains.txt, name: tencentcloud, service: tencentcloud, local: PRS_tencentcloud.domains.txt, enabled: true}  # Durable immutable Source release persisted at Source main@192ee4a99cd02d99faddfbad30ac4ebf914edaa8
-  - {path: generated/source/tmall/domains.txt, name: tmall, service: tmall, local: PRS_tmall.domains.txt, enabled: true}  # Durable immutable Source release persisted at Source main@192ee4a99cd02d99faddfbad30ac4ebf914edaa8
+  - {path: generated/source/tmall/domains.txt, name: tmall, service: tmall, local: PRS_tmall.domains.txt, enabled: true}
+  - {path: generated/source/appstore/domains.txt, name: appstore, service: appstore, local: PRS_appstore.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
+  - {path: generated/source/testflight/domains.txt, name: testflight, service: testflight, local: PRS_testflight.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
+  - {path: generated/source/icloud/domains.txt, name: icloud, service: icloud, local: PRS_icloud.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
+  - {path: generated/source/applemusic/domains.txt, name: applemusic, service: applemusic, local: PRS_applemusic.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
+  - {path: generated/source/googledrive/domains.txt, name: googledrive, service: googledrive, local: PRS_googledrive.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
+  - {path: generated/source/youtubemusic/domains.txt, name: youtubemusic, service: youtubemusic, local: PRS_youtubemusic.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
+  - {path: generated/source/onedrive/domains.txt, name: onedrive, service: onedrive, local: PRS_onedrive.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
+  - {path: generated/source/teams/domains.txt, name: teams, service: teams, local: PRS_teams.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
+  - {path: generated/source/wechat/domains.txt, name: wechat, service: wechat, local: PRS_wechat.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
+  - {path: generated/source/baidutieba/domains.txt, name: baidutieba, service: baidutieba, local: PRS_baidutieba.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
+  - {path: generated/source/neteasemusic/domains.txt, name: neteasemusic, service: neteasemusic, local: PRS_neteasemusic.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
+  - {path: generated/source/douyin/domains.txt, name: douyin, service: douyin, local: PRS_douyin.domains.txt, enabled: true}
+  - {path: generated/source/appledev/domains.txt, name: appledev, service: appledev, local: PRS_appledev.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
+  - {path: generated/source/findmy/domains.txt, name: findmy, service: findmy, local: PRS_findmy.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
+  - {path: generated/source/azure/domains.txt, name: azure, service: azure, local: PRS_azure.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release
+  - {path: generated/source/feishu/domains.txt, name: feishu, service: feishu, local: PRS_feishu.domains.txt, enabled: true}  # High-frequency independent service; pending immutable Source release  # High-frequency independent service; pending immutable Source release
+  - {path: generated/source/qq/domains.txt, name: qq, service: qq, local: PRS_qq.domains.txt, enabled: true}  # Registered for Source candidate-chain reconciliation; not a production binding  # Durable immutable Source release persisted at Source main@192ee4a99cd02d99faddfbad30ac4ebf914edaa8
 
 - id: blackmatrix7
   name: BlackMatrix7 ios_rule_script
