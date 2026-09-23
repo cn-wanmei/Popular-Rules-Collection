@@ -93,7 +93,7 @@ def test_evidence_linkage_and_overlap_scope_are_required():
 
 
 def test_service_client_artifact_prefers_hierarchical_layout(tmp_path: Path):
-    hierarchical = tmp_path / "artifacts" / "mihomo" / "apple" / "appstore" / "rules.yaml"
+    hierarchical = tmp_path / "artifacts" / "mihomo" / "apple" / "appstore" / "appstore.yaml"
     hierarchical.parent.mkdir(parents=True)
     hierarchical.write_text("payload\n", encoding="utf-8")
     flat = tmp_path / "artifacts" / "mihomo" / "appstore.yaml"
@@ -111,7 +111,7 @@ def test_service_client_artifact_falls_back_to_flat_layout(tmp_path: Path):
 
 
 def test_service_client_artifact_discovers_nested_provider_path(tmp_path: Path):
-    nested = tmp_path / "artifacts" / "loon" / "apple" / "appstore" / "rules.list"
+    nested = tmp_path / "artifacts" / "loon" / "apple" / "appstore" / "appstore.list"
     nested.parent.mkdir(parents=True)
     nested.write_text("DOMAIN,apps.apple.com\n", encoding="utf-8")
     found = gate.service_client_artifact(tmp_path, "loon", ".list", "appstore", "")

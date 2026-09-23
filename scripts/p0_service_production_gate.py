@@ -68,9 +68,9 @@ def service_client_artifact(
 ) -> Path | None:
     """Locate a per-service client artifact under the directory contract.
 
-    Canonical layout (PR #62): artifacts/<client>/<provider>/<service>/rules<ext>
-    Legacy flat layout:         artifacts/<client>/<service><ext>
-    Promoted layout:            generated/<client>/<provider>/<service>/rules<ext>
+    Canonical layout: artifacts/<client>/<provider>/<service>/<service><ext>
+    Legacy flat layout is accepted only as a migration fallback.
+    Promoted layout: generated/<client>/<provider>/<service>/<service><ext>
     """
     search_roots: list[Path] = []
     if run is not None:
@@ -79,13 +79,13 @@ def service_client_artifact(
     for client_dir in search_roots:
         candidates: list[Path] = []
         if provider:
-            candidates.append(client_dir / provider / sid / f"rules{ext}")
+            candidates.append(client_dir / provider / sid / f"{sid}{ext}")
         candidates.append(client_dir / f"{sid}{ext}")
         for path in candidates:
             if path.is_file() and path.stat().st_size > 0:
                 return path
         if client_dir.is_dir():
-            for path in client_dir.rglob(f"{sid}/rules{ext}"):
+            for path in client_dir.rglob(f"{sid}/{sid}{ext}"):
                 if path.is_file() and path.stat().st_size > 0:
                     return path
     return None

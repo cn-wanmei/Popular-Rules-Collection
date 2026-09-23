@@ -4,1421 +4,1421 @@ run_id: 20260922T165316519697Z-run
 ir_schema: semantic_ir_v2
 ir_digest: 22fbd9b6c53a2f82b1de83a8e8c3cf178a9699d7fd118401a1cea3be0afc5eee
 entries:
-- path: adobe/all/rules.yaml
+- path: adobe/adobe.yaml
   entity: provider_aggregate
   id: adobe
   display_name: Adobe
   provider: adobe
   rule_count: 140
   sha256: ef3ac3c8b808f3607979ee18f972964675ac844ba119bdc62ced262beed7f609
-- path: aggregate/developer/rules.yaml
+- path: aggregate/developer/developer.yaml
   entity: aggregate
   id: developer
   display_name: developer
   provider: null
   rule_count: 684
   sha256: 00b0147f49c7544605b746929f53f1254f136ea5a1cfab6c739fec03319032be
-- path: airbnb/airbnb/rules.yaml
+- path: airbnb/airbnb/airbnb.yaml
   entity: service
   id: airbnb
   display_name: Airbnb
   provider: airbnb
   rule_count: 83
   sha256: d8a51625747ebfbaee531dd68b8316c374d4a121d8c3a84b4d2a6e6510000124
-- path: airbnb/all/rules.yaml
+- path: airbnb/airbnb.yaml
   entity: provider_aggregate
   id: airbnb_aggregate
   display_name: Airbnb
   provider: airbnb
   rule_count: 83
   sha256: 767a6cd9669c12f0dc2482d2001007b5b34e48b27b489766802d240a930d8572
-- path: alibaba/1688/rules.yaml
+- path: alibaba/1688/1688.yaml
   entity: service
   id: '1688'
   display_name: '1688'
   provider: alibaba
   rule_count: 3
   sha256: b62b7b716aa20203a6427c9a6cf7c5c353dbbb9e3b3067bce4ca6c7c466a9d63
-- path: alibaba/alibabacloud/rules.yaml
+- path: alibaba/alibabacloud/alibabacloud.yaml
   entity: service
   id: alibabacloud
   display_name: Alibaba Cloud
   provider: alibaba
   rule_count: 100
   sha256: ac38a1245af6b9d4eb755a5372a4d86d48fe42949e5fc0bc744352116c56227d
-- path: alibaba/alipay/rules.yaml
+- path: alibaba/alipay/alipay.yaml
   entity: service
   id: alipay
   display_name: Alipay
   provider: alibaba
   rule_count: 21
   sha256: 6bdaca9dd81de9f99708b8d8b012ba7f65b7977da0e1c1270ae00e87d01d430a
-- path: alibaba/all/rules.yaml
+- path: alibaba/alibaba.yaml
   entity: provider_aggregate
   id: alibaba
   display_name: Alibaba
   provider: alibaba
   rule_count: 574
   sha256: 0d8547c289645b9a4ed38f39b7f05d32df1c6de8d547a4ecb08848e55f4f413b
-- path: alibaba/cainiao/rules.yaml
+- path: alibaba/cainiao/cainiao.yaml
   entity: service
   id: cainiao
   display_name: Cainiao
   provider: alibaba
   rule_count: 1
   sha256: b6816bf706d86107868dee1ce8046bfe0852f1dfade2239438eb10b9fa00df90
-- path: alibaba/dingding/rules.yaml
+- path: alibaba/dingding/dingding.yaml
   entity: service
   id: dingding
   display_name: DingTalk
   provider: alibaba
   rule_count: 6
   sha256: d0145ba172abb29209309842ea482071de21567afb400ad965ae283a0107c752
-- path: alibaba/taobao/rules.yaml
+- path: alibaba/taobao/taobao.yaml
   entity: service
   id: taobao
   display_name: Taobao
   provider: alibaba
   rule_count: 14
   sha256: d153a11a905a74c864a88f50ce6f29faa77afb6acec70cabbd58733cbb67c4b1
-- path: alibaba/tmall/rules.yaml
+- path: alibaba/tmall/tmall.yaml
   entity: service
   id: tmall
   display_name: Tmall
   provider: alibaba
   rule_count: 8
   sha256: fea890ac8ae801b084c1643918ea8003b7240e04fc5de4b4afe3c8f334e3a1a8
-- path: alibaba/xianyu/rules.yaml
+- path: alibaba/xianyu/xianyu.yaml
   entity: service
   id: xianyu
   display_name: Xianyu
   provider: alibaba
   rule_count: 16
   sha256: 6107abfa3f65a141946963417f4fda709f1044b67bc413128f63edd5acfd809f
-- path: amazon/all/rules.yaml
+- path: amazon/amazon.yaml
   entity: provider_aggregate
   id: amazon
   display_name: Amazon
   provider: amazon
   rule_count: 283
   sha256: 8a9c3164b44f9dbc8952de5c8e7b5ed88487dbb70813e40f7f9d7ec63c21945d
-- path: amazon/aws/rules.yaml
+- path: amazon/aws/aws.yaml
   entity: service
   id: aws
   display_name: AWS
   provider: amazon
   rule_count: 78
   sha256: 593247858654f8a2d3c387a57aaac6e50de0b8e3e223d995b654437b1f490084
-- path: amazon/primevideo/rules.yaml
+- path: amazon/primevideo/primevideo.yaml
   entity: service
   id: primevideo
   display_name: Prime Video
   provider: amazon
   rule_count: 26
   sha256: 85c20940e41d6d0b327308d0f9c254994caac5863a057a50e9cb9a1d9d98f3f3
-- path: apple/all/rules.yaml
+- path: apple/apple.yaml
   entity: provider_aggregate
   id: apple
   display_name: Apple
   provider: apple
   rule_count: 2044
   sha256: 682e9bf5cc43880feb50e7816eff7a39320329fbb4f8c1e79ec1d114e6e3b532
-- path: apple/appledev/rules.yaml
+- path: apple/appledev/appledev.yaml
   entity: service
   id: appledev
   display_name: Apple Developer
   provider: apple
   rule_count: 40
   sha256: 7bfe160a468932a5034639a9ffa88894bff3386bffca3000ca20d0c362cf33bd
-- path: apple/applemusic/rules.yaml
+- path: apple/applemusic/applemusic.yaml
   entity: service
   id: applemusic
   display_name: Apple Music
   provider: apple
   rule_count: 10
   sha256: f16854d92a656dbac02a90c9d3810f471f790c8241d37cfa9abf5f3119cade39
-- path: apple/appletv/rules.yaml
+- path: apple/appletv/appletv.yaml
   entity: service
   id: appletv
   display_name: Apple TV
   provider: apple
   rule_count: 8
   sha256: 3e860804673d9d7fe191218f0953eda8eb88d2a79f26459cf2985aa78cf74742
-- path: apple/appstore/rules.yaml
+- path: apple/appstore/appstore.yaml
   entity: service
   id: appstore
   display_name: App Store
   provider: apple
   rule_count: 4
   sha256: ed696165dfb7052619c3decb27d26b076005a691dd6c7a6e82cb22219214fadd
-- path: apple/findmy/rules.yaml
+- path: apple/findmy/findmy.yaml
   entity: service
   id: findmy
   display_name: Find My
   provider: apple
   rule_count: 6
   sha256: 7adb1977c7a66aac7a3c55e9a3e212e825d404679c72fea43ef82948a8c2e545
-- path: apple/icloud/rules.yaml
+- path: apple/icloud/icloud.yaml
   entity: service
   id: icloud
   display_name: iCloud
   provider: apple
   rule_count: 62
   sha256: 2bcf758aa9b225b3d9d8da07b5125d42701879b0724b5b9869e6a10d1c66f005
-- path: apple/testflight/rules.yaml
+- path: apple/testflight/testflight.yaml
   entity: service
   id: testflight
   display_name: TestFlight
   provider: apple
   rule_count: 6
   sha256: dac8caf9eea977df5ab0e32c5719a31d11d9e97a6797e3974423836b2f8deaa5
-- path: atlassian/all/rules.yaml
+- path: atlassian/atlassian.yaml
   entity: provider_aggregate
   id: atlassian
   display_name: Atlassian
   provider: atlassian
   rule_count: 11
   sha256: 12e169773e0b15c2aeffcb16eda5146be609bb7db4ccd0881eea26d598f35ba6
-- path: atlassian/trello/rules.yaml
+- path: atlassian/trello/trello.yaml
   entity: service
   id: trello
   display_name: Trello
   provider: atlassian
   rule_count: 2
   sha256: 2f033103b3edc5c016ae74762e361389fc99239f41eba67cfaa5893e6e72173d
-- path: baidu/all/rules.yaml
+- path: baidu/baidu.yaml
   entity: provider_aggregate
   id: baidu
   display_name: Baidu
   provider: baidu
   rule_count: 323
   sha256: c7986f74371cee6b14d64bffb04d409d55761b483e4763cc350dc7ab06943171
-- path: bluesky/all/rules.yaml
+- path: bluesky/bluesky.yaml
   entity: provider_aggregate
   id: bluesky_aggregate
   display_name: Bluesky
   provider: bluesky
   rule_count: 3
   sha256: 37f885e0b281393c8e7b5bfdd14e32fdce2bbe5dcb1fc73c9425b15c362b3ae1
-- path: bluesky/bluesky/rules.yaml
+- path: bluesky/bluesky/bluesky.yaml
   entity: service
   id: bluesky
   display_name: Bluesky
   provider: bluesky
   rule_count: 3
   sha256: b3e4a3ad6748cf43a99616afe430840dca402d0e40ed76db72a7430eda6a310c
-- path: booking/all/rules.yaml
+- path: booking/booking.yaml
   entity: provider_aggregate
   id: booking_aggregate
   display_name: Booking.com
   provider: booking
   rule_count: 3
   sha256: b1f7e5ab2fcd1b3b1e7d37bd2ba7e192b059a7556655158228889e7b81283009
-- path: booking/booking/rules.yaml
+- path: booking/booking/booking.yaml
   entity: service
   id: booking
   display_name: Booking.com
   provider: booking
   rule_count: 3
   sha256: 96744160cf24e0b954be6817b32929885e31882b7d04069a3e66d59e68b4323a
-- path: bytedance/all/rules.yaml
+- path: bytedance/bytedance.yaml
   entity: provider_aggregate
   id: bytedance
   display_name: ByteDance
   provider: bytedance
   rule_count: 1097
   sha256: 36542479576c3f9d1156980a29da2afbd53335b42bc7a5b88064b94e7ad0194d
-- path: bytedance/doubao/rules.yaml
+- path: bytedance/doubao/doubao.yaml
   entity: service
   id: doubao
   display_name: Doubao
   provider: bytedance
   rule_count: 32
   sha256: a8691930e62c64c035c3d3b760ee0263cee1e3173397eb282245397074d01248
-- path: bytedance/douyin/rules.yaml
+- path: bytedance/douyin/douyin.yaml
   entity: service
   id: douyin
   display_name: Douyin
   provider: bytedance
   rule_count: 78
   sha256: 899499a764619009a3a6a410bdf3659d5d20f640013ee2fb9d9360489a15089a
-- path: bytedance/tiktok/rules.yaml
+- path: bytedance/tiktok/tiktok.yaml
   entity: service
   id: tiktok
   display_name: TikTok
   provider: bytedance
   rule_count: 63
   sha256: f28680c3a9e822859916c94467b1c3a375fee9cda2e69747463e391d779b1f0e
-- path: canva/all/rules.yaml
+- path: canva/canva.yaml
   entity: provider_aggregate
   id: canva_aggregate
   display_name: Canva
   provider: canva
   rule_count: 6
   sha256: 38c8734f3f0a1f1383b7a9f9a8e4008d97c04e8ef7a8545aa96aa7601c1d84fb
-- path: canva/canva/rules.yaml
+- path: canva/canva/canva.yaml
   entity: service
   id: canva
   display_name: Canva
   provider: canva
   rule_count: 6
   sha256: 974a9700013c7c30f7c0aee5f63011ae1f52914c17111fdd972dbd798a42a093
-- path: category/developer/all/rules.yaml
+- path: category/developer/developer.yaml
   entity: category
   id: developer
   display_name: Developer Ecosystem
   provider: null
   rule_count: 370
   sha256: 70e92dfbbe304d8370181d023ae3a53531485b5ba998ab38ffacf9051109c2a6
-- path: china/all/rules.yaml
+- path: china/china.yaml
   entity: domestic_aggregate
   id: china
   display_name: China
   provider: null
   rule_count: 111329
   sha256: 5c2c1f1cedbfe186b8e2ae1877be2daab6cb74b87c0ede377cf713051d107f0f
-- path: cloudflare/all/rules.yaml
+- path: cloudflare/cloudflare.yaml
   entity: provider_aggregate
   id: cloudflare
   display_name: Cloudflare
   provider: cloudflare
   rule_count: 98
   sha256: 27f49b21c5c37fc431d1827f7fedd0d6dfe19e707ddf5b16fb67c17a8a08c47d
-- path: cursor/all/rules.yaml
+- path: cursor/cursor.yaml
   entity: provider_aggregate
   id: cursor_aggregate
   display_name: Cursor
   provider: cursor
   rule_count: 4
   sha256: 8185888c8d614891f1eaaf2ea9281cfd8c3d66e9c69ed16a77129c3e2267bb92
-- path: cursor/cursor/rules.yaml
+- path: cursor/cursor/cursor.yaml
   entity: service
   id: cursor
   display_name: Cursor
   provider: cursor
   rule_count: 4
   sha256: 7c3754f9ba20ddfff372fe7144c1bfda9aaacf179685815b5fddee8416fb28ac
-- path: deepseek/all/rules.yaml
+- path: deepseek/deepseek.yaml
   entity: provider_aggregate
   id: deepseek_aggregate
   display_name: DeepSeek
   provider: deepseek
   rule_count: 2
   sha256: 720a530e4fa52715ecc2ec281bf5e9ae486d70f64f38d74c16b1f2d99cece1d1
-- path: deepseek/deepseek/rules.yaml
+- path: deepseek/deepseek/deepseek.yaml
   entity: service
   id: deepseek
   display_name: DeepSeek
   provider: deepseek
   rule_count: 2
   sha256: cb95158a020c088f6b207dcb9073e6cb4dd7f4e401938a516c783e1953e7254d
-- path: dewu/all/rules.yaml
+- path: dewu/dewu.yaml
   entity: provider_aggregate
   id: dewu_aggregate
   display_name: Dewu
   provider: dewu
   rule_count: 45
   sha256: 07170fd36ff40acca2f577ef7ce2fba02f871429072c9c8c7248994e84dd6d64
-- path: dewu/dewu/rules.yaml
+- path: dewu/dewu/dewu.yaml
   entity: service
   id: dewu
   display_name: Dewu
   provider: dewu
   rule_count: 45
   sha256: 69924deeb23182a0388cc5ce646eda9ea8f800dd2818d945c3e0ccae332f4be3
-- path: elevenlabs/all/rules.yaml
+- path: elevenlabs/elevenlabs.yaml
   entity: provider_aggregate
   id: elevenlabs_aggregate
   display_name: ElevenLabs
   provider: elevenlabs
   rule_count: 2
   sha256: bd2be47d3505b10f8963d8c340a8d4f955e0cbdb7510894d32a521f0231f0332
-- path: elevenlabs/elevenlabs/rules.yaml
+- path: elevenlabs/elevenlabs/elevenlabs.yaml
   entity: service
   id: elevenlabs
   display_name: ElevenLabs
   provider: elevenlabs
   rule_count: 2
   sha256: c5247ef76d9fb99e772dbf1d0a08a91639a87c80fba7c3d7f41aeb1d893987df
-- path: google/all/rules.yaml
+- path: google/google.yaml
   entity: provider_aggregate
   id: google
   display_name: Google
   provider: google
   rule_count: 1267
   sha256: 7689389ce0c695bb281e966107c5f4f032f101a9d833cdddc9782edd228ec151
-- path: google/firebase/rules.yaml
+- path: google/firebase/firebase.yaml
   entity: service
   id: firebase
   display_name: Firebase
   provider: google
   rule_count: 23
   sha256: 6fd9b8948fe49414beba8656e57f714f88ac77a3b54c444fc4a82b3211c38f61
-- path: google/googlefcm/rules.yaml
+- path: google/googlefcm/googlefcm.yaml
   entity: service
   id: googlefcm
   display_name: Google FCM
   provider: google
   rule_count: 41
   sha256: 69b1716b55a8a86c9b51860b248d7baf369cf3570223a72946d6bafc56cdc236
-- path: google/youtube/rules.yaml
+- path: google/youtube/youtube.yaml
   entity: service
   id: youtube
   display_name: YouTube
   provider: google
   rule_count: 189
   sha256: 98781b41bec38a065263a73bbd7ef41e4d73253431be51b6e4e7885dd891e340
-- path: google/youtubemusic/rules.yaml
+- path: google/youtubemusic/youtubemusic.yaml
   entity: service
   id: youtubemusic
   display_name: YouTube Music
   provider: google
   rule_count: 2
   sha256: e817bd84d7ecc2bfe507c10d39248d81631518c316be54304d1f8f6aad436916
-- path: groq/all/rules.yaml
+- path: groq/groq.yaml
   entity: provider_aggregate
   id: groq_aggregate
   display_name: Groq
   provider: groq
   rule_count: 1
   sha256: 32d2cf25f6d3496603b4a8f6f3d3dceadcd9fa7f37a2fdbd51b7d3d0340f0b67
-- path: groq/groq/rules.yaml
+- path: groq/groq/groq.yaml
   entity: service
   id: groq
   display_name: Groq
   provider: groq
   rule_count: 1
   sha256: 4279837fdf9615fd137c242f5c044d02706e9f888daffb057b5e0bd6b6e965f1
-- path: hoyoverse/all/rules.yaml
+- path: hoyoverse/hoyoverse.yaml
   entity: provider_aggregate
   id: hoyoverse
   display_name: HoYoverse
   provider: hoyoverse
   rule_count: 15
   sha256: 441d028db464b70252858046d768023b00f8046b752e4c8920dd3b3dc1f17e49
-- path: huawei/all/rules.yaml
+- path: huawei/huawei.yaml
   entity: provider_aggregate
   id: huawei
   display_name: Huawei
   provider: huawei
   rule_count: 402
   sha256: b67bf7d2a25d2969a3580667ff1bccb3184b85c4915eda2b98b8c2b84e9a4f44
-- path: huggingface/all/rules.yaml
+- path: huggingface/huggingface.yaml
   entity: provider_aggregate
   id: huggingface_aggregate
   display_name: Hugging Face
   provider: huggingface
   rule_count: 3
   sha256: bb2681984c979a7018d96ceabf50893a84f6b25f65eb8d649698aa075b386cd3
-- path: huggingface/huggingface/rules.yaml
+- path: huggingface/huggingface/huggingface.yaml
   entity: service
   id: huggingface
   display_name: Hugging Face
   provider: huggingface
   rule_count: 3
   sha256: 5d63a864e8e3d3816f606b9b90af726879bcb370e2845773dbf01efee5db84b0
-- path: meta/all/rules.yaml
+- path: meta/meta.yaml
   entity: provider_aggregate
   id: meta
   display_name: Meta
   provider: meta
   rule_count: 596
   sha256: cb84a4bb47c06f796b5cb7e31031aa8b8bd04c4eb62efd20cbf5af7ce57b4461
-- path: meta/facebook/rules.yaml
+- path: meta/facebook/facebook.yaml
   entity: service
   id: facebook
   display_name: Facebook
   provider: meta
   rule_count: 576
   sha256: cf67d156cda052b9a294b3684f6b7fbe018080ef0e62e89f3ef4cb063dba8eee
-- path: meta/instagram/rules.yaml
+- path: meta/instagram/instagram.yaml
   entity: service
   id: instagram
   display_name: Instagram
   provider: meta
   rule_count: 76
   sha256: 359853d680a363a22c97afc6c19de480f6a8d3d7f53e0e2945e4bf9d31dcd0ad
-- path: meta/messenger/rules.yaml
+- path: meta/messenger/messenger.yaml
   entity: service
   id: messenger
   display_name: Messenger
   provider: meta
   rule_count: 4
   sha256: 5524272acd6c700fb52ee1962602a84a938a004e6a4565d69d1eda41376d0da6
-- path: meta/threads/rules.yaml
+- path: meta/threads/threads.yaml
   entity: service
   id: threads
   display_name: Threads
   provider: meta
   rule_count: 1
   sha256: 68ea0e1053152856468586b268ec7ccb7f4622d8f60cee17e097494321b6a45a
-- path: meta/whatsapp/rules.yaml
+- path: meta/whatsapp/whatsapp.yaml
   entity: service
   id: whatsapp
   display_name: WhatsApp
   provider: meta
   rule_count: 28
   sha256: 6b9261227cd6be7a6c69434229048d315114bf1c2e7915f9cf8195a7ab5f1ba1
-- path: microsoft/all/rules.yaml
+- path: microsoft/microsoft.yaml
   entity: provider_aggregate
   id: microsoft
   display_name: Microsoft
   provider: microsoft
   rule_count: 981
   sha256: 8202019d290ed722d71b322bc48d2ce5a070e06822f16aae243668d319a45b89
-- path: microsoft/azure/rules.yaml
+- path: microsoft/azure/azure.yaml
   entity: service
   id: azure
   display_name: Microsoft Azure
   provider: microsoft
   rule_count: 151
   sha256: 04d2d67e86cb41a98f49d809686ad75ac22092e3d4070b061904ac6a9d3d3916
-- path: microsoft/onedrive/rules.yaml
+- path: microsoft/onedrive/onedrive.yaml
   entity: service
   id: onedrive
   display_name: OneDrive
   provider: microsoft
   rule_count: 18
   sha256: 4e603f1729a5590b04c5e6e4a860b9615b3ce822e1e6a33da70cb03e1bb352ba
-- path: microsoft/teams/rules.yaml
+- path: microsoft/teams/teams.yaml
   entity: service
   id: teams
   display_name: Microsoft Teams
   provider: microsoft
   rule_count: 4
   sha256: 21c77e4b968c5ba9997aee3658c4e05457886ba75c57b418a41d045e0bccfafb
-- path: netease/all/rules.yaml
+- path: netease/netease.yaml
   entity: provider_aggregate
   id: netease
   display_name: NetEase
   provider: netease
   rule_count: 81
   sha256: dbf1d8abb207b0a30830b364ab7a325a63d45b6921df398d33c7a2072e552b27
-- path: netlify/all/rules.yaml
+- path: netlify/netlify.yaml
   entity: provider_aggregate
   id: netlify_aggregate
   display_name: Netlify
   provider: netlify
   rule_count: 10
   sha256: 75ea58ff8e8a6780e3975740a2ec14452c4bf0399532f16bdebae983a4757c5f
-- path: netlify/netlify/rules.yaml
+- path: netlify/netlify/netlify.yaml
   entity: service
   id: netlify
   display_name: Netlify
   provider: netlify
   rule_count: 10
   sha256: 3a51b3f75f22969a05a491c13baf42f3aa36b295448112fc153ba81cd5ce50dd
-- path: perplexity/all/rules.yaml
+- path: perplexity/perplexity.yaml
   entity: provider_aggregate
   id: perplexity_aggregate
   display_name: Perplexity
   provider: perplexity
   rule_count: 7
   sha256: d876beaa8d65aa984b79bb713d3890f520a6131a3678c2748d4b4015b2cbca64
-- path: perplexity/perplexity/rules.yaml
+- path: perplexity/perplexity/perplexity.yaml
   entity: service
   id: perplexity
   display_name: Perplexity
   provider: perplexity
   rule_count: 7
   sha256: 0e3114456a89772c92803f07ba213cf01d60a4294d94d980584970c82e48eb17
-- path: roblox/all/rules.yaml
+- path: roblox/roblox.yaml
   entity: provider_aggregate
   id: roblox_aggregate
   display_name: Roblox
   provider: roblox
   rule_count: 52
   sha256: b27c2991fbc2d93b5b41a5db723073b60b17a530ebe56095615d1d2006590f2f
-- path: roblox/roblox/rules.yaml
+- path: roblox/roblox/roblox.yaml
   entity: service
   id: roblox
   display_name: Roblox
   provider: roblox
   rule_count: 52
   sha256: 3278b10ab4d7ed38e52a60c7ada49db2bf8037be1090d2ef88307aab0e6a3460
-- path: signal/all/rules.yaml
+- path: signal/signal.yaml
   entity: provider_aggregate
   id: signal_aggregate
   display_name: Signal
   provider: signal
   rule_count: 8
   sha256: 551efdf1c70d8bcc6eeed65993550760cbebe58ff24cbd1d223f99e81dfca37c
-- path: signal/signal/rules.yaml
+- path: signal/signal/signal.yaml
   entity: service
   id: signal
   display_name: Signal
   provider: signal
   rule_count: 8
   sha256: a2626465282be061cefa0d03d8f9f360c8cba72787a41d0b0253f9095336d9ac
-- path: snap/all/rules.yaml
+- path: snap/snap.yaml
   entity: provider_aggregate
   id: snap
   display_name: Snap
   provider: snap
   rule_count: 9
   sha256: 23ab830c3ffd92e93a9102574efcaccb9e743dc86e64b2b5d75d08c1b1115cd8
-- path: snap/snapchat/rules.yaml
+- path: snap/snapchat/snapchat.yaml
   entity: service
   id: snapchat
   display_name: Snapchat
   provider: snap
   rule_count: 9
   sha256: 3cc1153a9fdf572e6276659743b3ca286200aa1cfe67af9b0196488886efa79c
-- path: tencent/all/rules.yaml
+- path: tencent/tencent.yaml
   entity: provider_aggregate
   id: tencent
   display_name: Tencent
   provider: tencent
   rule_count: 879
   sha256: af0b44381aa111bf0a8538fd94543f28515f79e6341312bc8565405db4a54b19
-- path: tencent/qqmail/rules.yaml
+- path: tencent/qqmail/qqmail.yaml
   entity: service
   id: qqmail
   display_name: QQ Mail
   provider: tencent
   rule_count: 1
   sha256: 3d57e452368f40c51b9876c9f1959196c5e315707a37d4c9cd07af54bd8e6325
-- path: tencent/qqmusic/rules.yaml
+- path: tencent/qqmusic/qqmusic.yaml
   entity: service
   id: qqmusic
   display_name: QQ Music
   provider: tencent
   rule_count: 1
   sha256: 1818c880de62dc17540466d43118c92f0ac8577b1febb3b1b82a1dae1ed32ac5
-- path: tencent/tencentcloud/rules.yaml
+- path: tencent/tencentcloud/tencentcloud.yaml
   entity: service
   id: tencentcloud
   display_name: Tencent Cloud
   provider: tencent
   rule_count: 105
   sha256: 51f796f48cf9347cc348baed3fd148ab96d554dbdd3bbf8efa3d1534d606ec99
-- path: tencent/tencentvideo/rules.yaml
+- path: tencent/tencentvideo/tencentvideo.yaml
   entity: service
   id: tencentvideo
   display_name: Tencent Video
   provider: tencent
   rule_count: 51
   sha256: 46e82e945f5823598cbdfbafc7cb6d7c5c70dd23f8b63fe48752477dc2e5ff20
-- path: tencent/wechat/rules.yaml
+- path: tencent/wechat/wechat.yaml
   entity: service
   id: wechat
   display_name: WeChat
   provider: tencent
   rule_count: 30
   sha256: 4e9dc5846021ec9acfa70cf3801dd09bd5df987ecd30ca1a0e39434182c93753
-- path: tidal/all/rules.yaml
+- path: tidal/tidal.yaml
   entity: provider_aggregate
   id: tidal_aggregate
   display_name: TIDAL
   provider: tidal
   rule_count: 3
   sha256: 9910a2a0b0cfb6e1b0b0225d21981d9c7aff344c355be40e00313cd0778c43b6
-- path: tidal/tidal/rules.yaml
+- path: tidal/tidal/tidal.yaml
   entity: service
   id: tidal
   display_name: TIDAL
   provider: tidal
   rule_count: 3
   sha256: ab6cd37b33cd64b71588c78c62f125854267b32b56aaaf3b298de6d7f11f8de2
-- path: uber/all/rules.yaml
+- path: uber/uber.yaml
   entity: provider_aggregate
   id: uber_aggregate
   display_name: Uber
   provider: uber
   rule_count: 3
   sha256: 05f035bcacf789e572686454cf393ae20cc92f3a4c51b873045c42381618f64f
-- path: uber/uber/rules.yaml
+- path: uber/uber/uber.yaml
   entity: service
   id: uber
   display_name: Uber
   provider: uber
   rule_count: 3
   sha256: ebf030e7dbcd16d93e9a2aa55252d4abeb32c46bf62c1c71b0c950beed7bd200
-- path: unmapped/12306/rules.yaml
+- path: unmapped/12306/12306.yaml
   entity: unmapped_service
   id: '12306'
   display_name: '12306'
   provider: null
   rule_count: 15
   sha256: e3d3557558d7192501a8e522218996738113efc03c88831c3d379ffc88592841
-- path: unmapped/abc/rules.yaml
+- path: unmapped/abc/abc.yaml
   entity: unmapped_service
   id: abc
   display_name: abc
   provider: null
   rule_count: 6
   sha256: 4c2a08681774723fbde503279e988e1963bcd4a0f1cd562b549bceeccab16a6c
-- path: unmapped/acfun/rules.yaml
+- path: unmapped/acfun/acfun.yaml
   entity: unmapped_service
   id: acfun
   display_name: acfun
   provider: null
   rule_count: 10
   sha256: 3a6215de9dacac04a523755395e752ba9b6beffb26e1a526b70c95823b3d5e4e
-- path: unmapped/ai/rules.yaml
+- path: unmapped/ai/ai.yaml
   entity: unmapped_service
   id: ai
   display_name: ai
   provider: null
   rule_count: 181
   sha256: e44586c3bfe21ac9f20e6aba8d62066ee4146749c1c40ac11f95422299baa69c
-- path: unmapped/aisuite/rules.yaml
+- path: unmapped/aisuite/aisuite.yaml
   entity: unmapped_service
   id: aisuite
   display_name: aisuite
   provider: null
   rule_count: 96
   sha256: d7096ffe6ad62064b75f04f287e88ea9b30077fadc174f80c3c2f574cb25341f
-- path: unmapped/amap/rules.yaml
+- path: unmapped/amap/amap.yaml
   entity: unmapped_service
   id: amap
   display_name: amap
   provider: null
   rule_count: 16
   sha256: dbc793ee1853fd22d95f8dc9f26ffcd8081073c6fa0b52594278dc87487130bc
-- path: unmapped/anthropic/rules.yaml
+- path: unmapped/anthropic/anthropic.yaml
   entity: unmapped_service
   id: anthropic
   display_name: anthropic
   provider: null
   rule_count: 9
   sha256: 839a0e80e8ec2804a9b259727dd48e11ad75160fb8c8a91ffac94fcfea5f324e
-- path: unmapped/bahamut/rules.yaml
+- path: unmapped/bahamut/bahamut.yaml
   entity: unmapped_service
   id: bahamut
   display_name: bahamut
   provider: null
   rule_count: 7
   sha256: 1586368445af53be651e2f624c18ca4fd0038b371fd42933d71b6546f2931be4
-- path: unmapped/battlenet/rules.yaml
+- path: unmapped/battlenet/battlenet.yaml
   entity: unmapped_service
   id: battlenet
   display_name: battlenet
   provider: null
   rule_count: 62
   sha256: e17b76d79ba2b9da29009248be554e160f8982181640457aaac797ef58f9f040
-- path: unmapped/bbc/rules.yaml
+- path: unmapped/bbc/bbc.yaml
   entity: unmapped_service
   id: bbc
   display_name: bbc
   provider: null
   rule_count: 30
   sha256: 6c848ef313888e801993bcaeb3a5c0cb19dd208e4e4ef1fae11fea640f68fe37
-- path: unmapped/bilibili/rules.yaml
+- path: unmapped/bilibili/bilibili.yaml
   entity: unmapped_service
   id: bilibili
   display_name: bilibili
   provider: null
   rule_count: 136
   sha256: c3845f5b5440e97637750dc2d06735ffbd2e953d1a1c72bf6d0695fc5f9361da
-- path: unmapped/binance/rules.yaml
+- path: unmapped/binance/binance.yaml
   entity: unmapped_service
   id: binance
   display_name: binance
   provider: null
   rule_count: 12
   sha256: a5ac450d256cf969493895016287a46a5ebc6f94ecf574d5f4347bb36041f634
-- path: unmapped/boc/rules.yaml
+- path: unmapped/boc/boc.yaml
   entity: unmapped_service
   id: boc
   display_name: boc
   provider: null
   rule_count: 22
   sha256: 22178af8a41be47ae450c59b19caf20c9c71db6130f1af3312d1d8ae4c3561d9
-- path: unmapped/bocom/rules.yaml
+- path: unmapped/bocom/bocom.yaml
   entity: unmapped_service
   id: bocom
   display_name: bocom
   provider: null
   rule_count: 6
   sha256: dbfe2ebcadd506fc61dfbd43fd75e9fdf29ef62035b092a4ad28ba856b38c088
-- path: unmapped/ccb/rules.yaml
+- path: unmapped/ccb/ccb.yaml
   entity: unmapped_service
   id: ccb
   display_name: ccb
   provider: null
   rule_count: 18
   sha256: 8d769f895fc282d7cebb37ba5d063ed512628d5d7aefb8149e7f60ad1edcbf04
-- path: unmapped/cctv/rules.yaml
+- path: unmapped/cctv/cctv.yaml
   entity: unmapped_service
   id: cctv
   display_name: cctv
   provider: null
   rule_count: 44
   sha256: 249deb83a83d99879c43c6b970258cd5fa43af3842fe5b3804ea2f6e4c3d1894
-- path: unmapped/ceb/rules.yaml
+- path: unmapped/ceb/ceb.yaml
   entity: unmapped_service
   id: ceb
   display_name: ceb
   provider: null
   rule_count: 15
   sha256: 70da5294ad3fc3f2e046dc60808f0a7e9637c2a1e9acc0f5ef050af6a9b58634
-- path: unmapped/chinamobile/rules.yaml
+- path: unmapped/chinamobile/chinamobile.yaml
   entity: unmapped_service
   id: chinamobile
   display_name: chinamobile
   provider: null
   rule_count: 38
   sha256: 0e9399c150f49236138d6a05963bd39ebb5f5974b0b8274d6a26ea331db7af2a
-- path: unmapped/chinatelecom/rules.yaml
+- path: unmapped/chinatelecom/chinatelecom.yaml
   entity: unmapped_service
   id: chinatelecom
   display_name: chinatelecom
   provider: null
   rule_count: 83
   sha256: 1d3a216fefaf1948bcf90efbdebbaf0359fbd8f6f7519e07f1b79a56c805ba07
-- path: unmapped/chinaunicom/rules.yaml
+- path: unmapped/chinaunicom/chinaunicom.yaml
   entity: unmapped_service
   id: chinaunicom
   display_name: chinaunicom
   provider: null
   rule_count: 34
   sha256: 1176ccc3735dbffdaab6e0a35f3bed9f69c0c09301a9aea0eb463fce89dc0a6b
-- path: unmapped/claude/rules.yaml
+- path: unmapped/claude/claude.yaml
   entity: unmapped_service
   id: claude
   display_name: claude
   provider: null
   rule_count: 3
   sha256: e8f9db28e1116dbcb9862aaa538af6ec3ce87ba017cbea75bd6706287543c8f9
-- path: unmapped/cmb/rules.yaml
+- path: unmapped/cmb/cmb.yaml
   entity: unmapped_service
   id: cmb
   display_name: cmb
   provider: null
   rule_count: 38
   sha256: a8c2dcd9d3af5d1b26f2364d9685aaf699ef6df78ea181adfdafde38a767a2d2
-- path: unmapped/copilot/rules.yaml
+- path: unmapped/copilot/copilot.yaml
   entity: unmapped_service
   id: copilot
   display_name: copilot
   provider: null
   rule_count: 49
   sha256: 8eafdab57e235a7e07ac0038bf43c6c2125c282631304149ce1b8c3ab613d5b6
-- path: unmapped/ctrip/rules.yaml
+- path: unmapped/ctrip/ctrip.yaml
   entity: unmapped_service
   id: ctrip
   display_name: ctrip
   provider: null
   rule_count: 29
   sha256: 79a40ca941e3984526d4500b516104df133547144b95b45df153988011ad09c1
-- path: unmapped/didi/rules.yaml
+- path: unmapped/didi/didi.yaml
   entity: unmapped_service
   id: didi
   display_name: didi
   provider: null
   rule_count: 25
   sha256: e3d10471e09f64294bdf6540a0cb06cbcaf99c2d52e4f3933d7f2acaf56f26bc
-- path: unmapped/digitalocean/rules.yaml
+- path: unmapped/digitalocean/digitalocean.yaml
   entity: unmapped_service
   id: digitalocean
   display_name: digitalocean
   provider: null
   rule_count: 6
   sha256: 3f66f511c2f67e26035b21eebca00e22590a371023c045ca956c650d97571807
-- path: unmapped/discord/rules.yaml
+- path: unmapped/discord/discord.yaml
   entity: unmapped_service
   id: discord
   display_name: discord
   provider: null
   rule_count: 31
   sha256: 5c9acff89b56f2f13475fadd7f52d66c2d9f624b3329c16b5c95d2128622e7bd
-- path: unmapped/disney/rules.yaml
+- path: unmapped/disney/disney.yaml
   entity: unmapped_service
   id: disney
   display_name: disney
   provider: null
   rule_count: 177
   sha256: 19e073e6c0a569024d3268fea21c336e38fd19b36b17c209e430e8173ea0e0fa
-- path: unmapped/docker/rules.yaml
+- path: unmapped/docker/docker.yaml
   entity: unmapped_service
   id: docker
   display_name: docker
   provider: null
   rule_count: 12
   sha256: 8d94130647418435f4c5bfa96bf1d95031735cd9acc3a3bb15883ab93a4b9380
-- path: unmapped/douyu/rules.yaml
+- path: unmapped/douyu/douyu.yaml
   entity: unmapped_service
   id: douyu
   display_name: douyu
   provider: null
   rule_count: 13
   sha256: 681e8687fd265d2a43a3e1be9ca76993afd7d0f14f44d907f8fa0575194b2854
-- path: unmapped/dropbox/rules.yaml
+- path: unmapped/dropbox/dropbox.yaml
   entity: unmapped_service
   id: dropbox
   display_name: dropbox
   provider: null
   rule_count: 17
   sha256: 89264e324bd761028f67582db1a9867d65b2ab4d3a0318b0a4b7cc7ac31cef26
-- path: unmapped/ea/rules.yaml
+- path: unmapped/ea/ea.yaml
   entity: unmapped_service
   id: ea
   display_name: ea
   provider: null
   rule_count: 165
   sha256: 192dec0c90c7d3c736d963f34c560f6de4a8c41d349a690302e544e7afb6e53a
-- path: unmapped/ebay/rules.yaml
+- path: unmapped/ebay/ebay.yaml
   entity: unmapped_service
   id: ebay
   display_name: ebay
   provider: null
   rule_count: 370
   sha256: 4fbad0de9cf956399003133fd50f77a3caf0c4ec9b4930d7c484722b05ae0ab7
-- path: unmapped/eleme/rules.yaml
+- path: unmapped/eleme/eleme.yaml
   entity: unmapped_service
   id: eleme
   display_name: eleme
   provider: null
   rule_count: 13
   sha256: 49f17648aee14b85dfbbf114a82c23e686ef18469ef8ecb13f21853ddd164f93
-- path: unmapped/emby/rules.yaml
+- path: unmapped/emby/emby.yaml
   entity: unmapped_service
   id: emby
   display_name: emby
   provider: null
   rule_count: 52
   sha256: 75685977c6d9b306f24adb0a1f9badb832540adb8e55be7db8758024a6ba9a97
-- path: unmapped/epic/rules.yaml
+- path: unmapped/epic/epic.yaml
   entity: unmapped_service
   id: epic
   display_name: epic
   provider: null
   rule_count: 15
   sha256: 556901ed27fd9be92019cd142bed65727d2cbf2cb00d02e0e67a41bb5e9ba2ab
-- path: unmapped/figma/rules.yaml
+- path: unmapped/figma/figma.yaml
   entity: unmapped_service
   id: figma
   display_name: figma
   provider: null
   rule_count: 1
   sha256: ac93d0123db02ca1c004e188eadc8a3d35c18ecb42db648b2bb17bb993e2bce0
-- path: unmapped/gaode/rules.yaml
+- path: unmapped/gaode/gaode.yaml
   entity: unmapped_service
   id: gaode
   display_name: gaode
   provider: null
   rule_count: 9
   sha256: 31d10d43f6cac8eacf25e4aacdb325a582b42c91c99a0169c26090ef6efab5fc
-- path: unmapped/garena/rules.yaml
+- path: unmapped/garena/garena.yaml
   entity: unmapped_service
   id: garena
   display_name: garena
   provider: null
   rule_count: 15
   sha256: 22795074ee6a4cfcae3aa3b22e1c619f991567d3783df37fc84b2d7ece7e2da4
-- path: unmapped/gemini/rules.yaml
+- path: unmapped/gemini/gemini.yaml
   entity: unmapped_service
   id: gemini
   display_name: gemini
   provider: null
   rule_count: 13
   sha256: 6364deccfd1811673122c8410af2db6296a54b07896fd7aa2b5d8a064ef80567
-- path: unmapped/github/rules.yaml
+- path: unmapped/github/github.yaml
   entity: unmapped_service
   id: github
   display_name: github
   provider: null
   rule_count: 96
   sha256: 7f46df9da349fc92bf5916ebf5c003c6d3f8909ef2d3bb1d772e009f118f1b6d
-- path: unmapped/gitlab/rules.yaml
+- path: unmapped/gitlab/gitlab.yaml
   entity: unmapped_service
   id: gitlab
   display_name: gitlab
   provider: null
   rule_count: 6
   sha256: d9c4ad74ec83d404922ec0c0b21df102b11ab1b194b2fdacd117e7c3d3296423
-- path: unmapped/hashicorp/rules.yaml
+- path: unmapped/hashicorp/hashicorp.yaml
   entity: unmapped_service
   id: hashicorp
   display_name: hashicorp
   provider: null
   rule_count: 8
   sha256: 36f8d970a477a1ba4c1aa803537a72ce4ac7552bb0b8bed14cdb08ceadad408f
-- path: unmapped/hbo/rules.yaml
+- path: unmapped/hbo/hbo.yaml
   entity: unmapped_service
   id: hbo
   display_name: hbo
   provider: null
   rule_count: 48
   sha256: 00763f713802ce916006e49a618f9ac9c424cc44ec01f0e967bc807816d2808e
-- path: unmapped/heroku/rules.yaml
+- path: unmapped/heroku/heroku.yaml
   entity: unmapped_service
   id: heroku
   display_name: heroku
   provider: null
   rule_count: 12
   sha256: ee371cca74e74b2630077e4c2b33c1df222d15ac868956bcc8f2d0cda9226ed2
-- path: unmapped/himalaya/rules.yaml
+- path: unmapped/himalaya/himalaya.yaml
   entity: unmapped_service
   id: himalaya
   display_name: himalaya
   provider: null
   rule_count: 17
   sha256: ebeaefda3aae7420819da072206781c8c551bdb389a1bb9d83e48cb59da9eab0
-- path: unmapped/hulu/rules.yaml
+- path: unmapped/hulu/hulu.yaml
   entity: unmapped_service
   id: hulu
   display_name: hulu
   provider: null
   rule_count: 59
   sha256: e989c4c81ef6d36ddde81b7d7a2dad3be980eb3bb4f3ee59cb6ae6320066c625
-- path: unmapped/huya/rules.yaml
+- path: unmapped/huya/huya.yaml
   entity: unmapped_service
   id: huya
   display_name: huya
   provider: null
   rule_count: 5
   sha256: 4dd012f2f375eb8ff038f00a3597deb585da9b40c5c280939b9c0052836769ef
-- path: unmapped/icbc/rules.yaml
+- path: unmapped/icbc/icbc.yaml
   entity: unmapped_service
   id: icbc
   display_name: icbc
   provider: null
   rule_count: 58
   sha256: c116fc90eea963cebd7418040a8aaffdc6427dea5c81bbac9fdfaaf66c790a97
-- path: unmapped/iqiyi/rules.yaml
+- path: unmapped/iqiyi/iqiyi.yaml
   entity: unmapped_service
   id: iqiyi
   display_name: iqiyi
   provider: null
   rule_count: 67
   sha256: b649a1865245d348bb1ba0cb1610e3d366632ecb2aa8e93883d2a47be878a240
-- path: unmapped/jetbrains/rules.yaml
+- path: unmapped/jetbrains/jetbrains.yaml
   entity: unmapped_service
   id: jetbrains
   display_name: jetbrains
   provider: null
   rule_count: 25
   sha256: 518c5d342e398302659681aced8218cda3bda3c15585563fc4a669bcfd498d26
-- path: unmapped/jingdong/rules.yaml
+- path: unmapped/jingdong/jingdong.yaml
   entity: unmapped_service
   id: jingdong
   display_name: jingdong
   provider: null
   rule_count: 277
   sha256: 22d96e64bcbe0f2b33917bea97965a61c0d05a35787988cc48a87ee9cc5d74d7
-- path: unmapped/kakaotalk/rules.yaml
+- path: unmapped/kakaotalk/kakaotalk.yaml
   entity: unmapped_service
   id: kakaotalk
   display_name: kakaotalk
   provider: null
   rule_count: 15
   sha256: 96ca0873b2567bab6e5e79a47e5d21d3ab2562db12e73d06a8d7edf7839b03e7
-- path: unmapped/kuaishou/rules.yaml
+- path: unmapped/kuaishou/kuaishou.yaml
   entity: unmapped_service
   id: kuaishou
   display_name: kuaishou
   provider: null
   rule_count: 678
   sha256: f573825e7768dd660ca9932c1c1d52bef5bca51ef60d7c6379754b0e75cca3cb
-- path: unmapped/kugou/rules.yaml
+- path: unmapped/kugou/kugou.yaml
   entity: unmapped_service
   id: kugou
   display_name: kugou
   provider: null
   rule_count: 19
   sha256: 2c4c9865939abe372cf4e2c0b2b32cff2db065eb80972f2abbc9508498f85991
-- path: unmapped/kuwo/rules.yaml
+- path: unmapped/kuwo/kuwo.yaml
   entity: unmapped_service
   id: kuwo
   display_name: kuwo
   provider: null
   rule_count: 3
   sha256: dda6117059ed2fcd4d6988da3c578dc5d52882fc2df31b4905d9b19265fbecf0
-- path: unmapped/letv/rules.yaml
+- path: unmapped/letv/letv.yaml
   entity: unmapped_service
   id: letv
   display_name: letv
   provider: null
   rule_count: 13
   sha256: 05ca4839ffe9bfc82f021949f072c1bba5ba51ba53f6e09b7c532a5504ce7b50
-- path: unmapped/line/rules.yaml
+- path: unmapped/line/line.yaml
   entity: unmapped_service
   id: line
   display_name: line
   provider: null
   rule_count: 37
   sha256: f07a96317be8453de706e4b2a016aecba680541bbe8cbf05c25413bcf9fc627a
-- path: unmapped/linkedin/rules.yaml
+- path: unmapped/linkedin/linkedin.yaml
   entity: unmapped_service
   id: linkedin
   display_name: linkedin
   provider: null
   rule_count: 12
   sha256: 8f3cae447e52a02b83e5782b1725f5a6fffeea595f356b523fc23ca91c9870b2
-- path: unmapped/meituan/rules.yaml
+- path: unmapped/meituan/meituan.yaml
   entity: unmapped_service
   id: meituan
   display_name: meituan
   provider: null
   rule_count: 7
   sha256: 312e599cca64b33d0929355df764efd5d35af78e4969f01d9bbd77583e3f37af
-- path: unmapped/minecraft/rules.yaml
+- path: unmapped/minecraft/minecraft.yaml
   entity: unmapped_service
   id: minecraft
   display_name: minecraft
   provider: null
   rule_count: 6
   sha256: 0611fb7565ccb1f9811addcca49f01b5446af86bcb1eea68fe47c3e4db00ad9a
-- path: unmapped/netflix/rules.yaml
+- path: unmapped/netflix/netflix.yaml
   entity: unmapped_service
   id: netflix
   display_name: netflix
   provider: null
   rule_count: 42
   sha256: 8e883375097af9e0013212a1d300548afb735ce27e30bfc6902ddf2041a71b65
-- path: unmapped/nintendo/rules.yaml
+- path: unmapped/nintendo/nintendo.yaml
   entity: unmapped_service
   id: nintendo
   display_name: nintendo
   provider: null
   rule_count: 126
   sha256: 79d4a0ea7b5b0519fdb73706b94766eeec0d5d12ca4b795f9f9d42f596def73b
-- path: unmapped/notion/rules.yaml
+- path: unmapped/notion/notion.yaml
   entity: unmapped_service
   id: notion
   display_name: notion
   provider: null
   rule_count: 8
   sha256: 81e857f7bdcad7620188610e8c4e19927a611672f0adcdeeee01e1730b04feb2
-- path: unmapped/okx/rules.yaml
+- path: unmapped/okx/okx.yaml
   entity: unmapped_service
   id: okx
   display_name: okx
   provider: null
   rule_count: 3
   sha256: fd1aa743ddf61ce3cc9ee19e9a7fad83dd85177f0c3a88d16dbbdf43ab27fe20
-- path: unmapped/openai/rules.yaml
+- path: unmapped/openai/openai.yaml
   entity: unmapped_service
   id: openai
   display_name: openai
   provider: null
   rule_count: 53
   sha256: dec92816af1754263d71185ae620e7aa65a1b1b6e27048fe91c2417662791523
-- path: unmapped/oppo/rules.yaml
+- path: unmapped/oppo/oppo.yaml
   entity: unmapped_service
   id: oppo
   display_name: oppo
   provider: null
   rule_count: 56
   sha256: 032e320684e9265b409cac3e4211a7ac0fa15ac7a06d69b935687dd5258eee73
-- path: unmapped/oracle/rules.yaml
+- path: unmapped/oracle/oracle.yaml
   entity: unmapped_service
   id: oracle
   display_name: oracle
   provider: null
   rule_count: 27
   sha256: 1ed12cd994ffa7a8feddee996938b1b6f0f2e7e64956a252c849098213f7aa0b
-- path: unmapped/paypal/rules.yaml
+- path: unmapped/paypal/paypal.yaml
   entity: unmapped_service
   id: paypal
   display_name: paypal
   provider: null
   rule_count: 247
   sha256: 5416693612b330544df3a444244e4c25a3fe6e97b1ed4942e0c4dc2f0f6fbb89
-- path: unmapped/pinduoduo/rules.yaml
+- path: unmapped/pinduoduo/pinduoduo.yaml
   entity: unmapped_service
   id: pinduoduo
   display_name: pinduoduo
   provider: null
   rule_count: 3
   sha256: 74a61dc99c81ec2a81976eadf312aae9fcb6d7eb90b3eb2885ebabd59303e38b
-- path: unmapped/pingan/rules.yaml
+- path: unmapped/pingan/pingan.yaml
   entity: unmapped_service
   id: pingan
   display_name: pingan
   provider: null
   rule_count: 27
   sha256: c67976613cbdba1f57c55a5e8affd030c35ba4822a2ecd8b90f7479a10cab0c8
-- path: unmapped/pinterest/rules.yaml
+- path: unmapped/pinterest/pinterest.yaml
   entity: unmapped_service
   id: pinterest
   display_name: pinterest
   provider: null
   rule_count: 23
   sha256: 59b00f64cbf567ec05ab1ecea914fdad33d3285be2ce9cb9de61bf9659b8300e
-- path: unmapped/playstation/rules.yaml
+- path: unmapped/playstation/playstation.yaml
   entity: unmapped_service
   id: playstation
   display_name: playstation
   provider: null
   rule_count: 4
   sha256: c8e87569f3f5fd3d96daa017a90101baea422c2575b97258b52c2c1daaeacd29
-- path: unmapped/pptv/rules.yaml
+- path: unmapped/pptv/pptv.yaml
   entity: unmapped_service
   id: pptv
   display_name: pptv
   provider: null
   rule_count: 19
   sha256: 15cf2c4e2703996c67f687befdab9d8e0c7edfab5cec51e29d894c78d7bc9e15
-- path: unmapped/private/rules.yaml
+- path: unmapped/private/private.yaml
   entity: unmapped_service
   id: private
   display_name: private
   provider: null
   rule_count: 248
   sha256: 2e11c79acb834e01fa094d7ed87501772123dd248f226caf94a9f693c3f176c4
-- path: unmapped/psbc/rules.yaml
+- path: unmapped/psbc/psbc.yaml
   entity: unmapped_service
   id: psbc
   display_name: psbc
   provider: null
   rule_count: 3
   sha256: 70dfb513cd8a5059c0a71fe9ce974a2b188735efa397e0c56a040923436da026
-- path: unmapped/reddit/rules.yaml
+- path: unmapped/reddit/reddit.yaml
   entity: unmapped_service
   id: reddit
   display_name: reddit
   provider: null
   rule_count: 15
   sha256: 3d1ad6c2e340c0fc37a184b8863cb0c6c35e4a03ae00aee460e4582aa91b46cb
-- path: unmapped/restricted/rules.yaml
+- path: unmapped/restricted/restricted.yaml
   entity: unmapped_service
   id: restricted
   display_name: restricted
   provider: null
   rule_count: 6662
   sha256: 53b73859601e9b7f97c44789c67cf0ba1fc908643f94bd86a2d0b0c1351b42f5
-- path: unmapped/riotgames/rules.yaml
+- path: unmapped/riotgames/riotgames.yaml
   entity: unmapped_service
   id: riotgames
   display_name: riotgames
   provider: null
   rule_count: 55
   sha256: ef475b6580b070f1cd5f9a81bb74490379978b0c5febfbee74ef10900fd32f07
-- path: unmapped/rockstar/rules.yaml
+- path: unmapped/rockstar/rockstar.yaml
   entity: unmapped_service
   id: rockstar
   display_name: rockstar
   provider: null
   rule_count: 5
   sha256: 364d91e491b50aeeeb7ef4830057fe9a3059323f42b0d4f3a147728f341810c1
-- path: unmapped/scholar/rules.yaml
+- path: unmapped/scholar/scholar.yaml
   entity: unmapped_service
   id: scholar
   display_name: scholar
   provider: null
   rule_count: 231
   sha256: 0ef050a64e8efcda168e2545c5a1073e9deceee4fa32ce72250a08730bdf0aa2
-- path: unmapped/shopify/rules.yaml
+- path: unmapped/shopify/shopify.yaml
   entity: unmapped_service
   id: shopify
   display_name: shopify
   provider: null
   rule_count: 8
   sha256: c7dd613770cc73c91788009686b03beec012cffe2f198f3adbd5635c7482b392
-- path: unmapped/slack/rules.yaml
+- path: unmapped/slack/slack.yaml
   entity: unmapped_service
   id: slack
   display_name: slack
   provider: null
   rule_count: 11
   sha256: b64b9c3da1655abeb6193c7a492d9a3f3ecdb851c3569b41a98b09d6cc9a30bc
-- path: unmapped/sohu/rules.yaml
+- path: unmapped/sohu/sohu.yaml
   entity: unmapped_service
   id: sohu
   display_name: sohu
   provider: null
   rule_count: 53
   sha256: fb5954f7e3064c46f595d3131ab73618d66ceb8f71477d9ca64a7ed3d4d87453
-- path: unmapped/soundcloud/rules.yaml
+- path: unmapped/soundcloud/soundcloud.yaml
   entity: unmapped_service
   id: soundcloud
   display_name: soundcloud
   provider: null
   rule_count: 5
   sha256: 6cca072087f99a5691e9746f517e620743d1ff08811f41473e51f942cc603bc8
-- path: unmapped/speedtest/rules.yaml
+- path: unmapped/speedtest/speedtest.yaml
   entity: unmapped_service
   id: speedtest
   display_name: speedtest
   provider: null
   rule_count: 5
   sha256: 714a92ff769855dce40f5ab17f224af945839134f41a47d11f8ceba75ebd07df
-- path: unmapped/spotify/rules.yaml
+- path: unmapped/spotify/spotify.yaml
   entity: unmapped_service
   id: spotify
   display_name: spotify
   provider: null
   rule_count: 38
   sha256: ca89fe916a313ed90dd48483efa1f63e1e0c2af15f461ec7f02a8aa86306dd54
-- path: unmapped/steam/rules.yaml
+- path: unmapped/steam/steam.yaml
   entity: unmapped_service
   id: steam
   display_name: steam
   provider: null
   rule_count: 84
   sha256: e376c7f962f5d5f2093e38a4b5571c6bdbc35da005f4db44413d2ab2ae4d9250
-- path: unmapped/stripe/rules.yaml
+- path: unmapped/stripe/stripe.yaml
   entity: unmapped_service
   id: stripe
   display_name: stripe
   provider: null
   rule_count: 1
   sha256: abd203e113d395ada5aff271cd0014ac40c7c71a5787a242284a00f0a1c84fd3
-- path: unmapped/stun/rules.yaml
+- path: unmapped/stun/stun.yaml
   entity: unmapped_service
   id: stun
   display_name: stun
   provider: null
   rule_count: 366
   sha256: c1d4186e0260c7a126986dbdbc9d5a0df1c61125708d5b12237cd48f4df676ea
-- path: unmapped/telegram/rules.yaml
+- path: unmapped/telegram/telegram.yaml
   entity: unmapped_service
   id: telegram
   display_name: telegram
   provider: null
   rule_count: 57
   sha256: d4c86ff6ebde33651fe80ff456e57fb8aa4deb4553fb12240ef9d157798a37bb
-- path: unmapped/tongcheng/rules.yaml
+- path: unmapped/tongcheng/tongcheng.yaml
   entity: unmapped_service
   id: tongcheng
   display_name: tongcheng
   provider: null
   rule_count: 8
   sha256: 06f937b53282fdf4980867298770f2d7c37ccd5aa9935a9ffbf2e865495e1c6a
-- path: unmapped/twitch/rules.yaml
+- path: unmapped/twitch/twitch.yaml
   entity: unmapped_service
   id: twitch
   display_name: twitch
   provider: null
   rule_count: 22
   sha256: 919fd3cf7fcfdc92eccfa8ed533086399a0c52a1295e7fd5a1791a1b7a9d4ab9
-- path: unmapped/twitter/rules.yaml
+- path: unmapped/twitter/twitter.yaml
   entity: unmapped_service
   id: twitter
   display_name: twitter
   provider: null
   rule_count: 34
   sha256: 282532b2710b0eff749e6781c32f51a786aabc08c6539097cbdcfe574ebdd626
-- path: unmapped/ubisoft/rules.yaml
+- path: unmapped/ubisoft/ubisoft.yaml
   entity: unmapped_service
   id: ubisoft
   display_name: ubisoft
   provider: null
   rule_count: 1
   sha256: d5588d9564a74bd3268110631003d1ae0cf32caa30eea85ebed49b5ca016e53d
-- path: unmapped/unionpay/rules.yaml
+- path: unmapped/unionpay/unionpay.yaml
   entity: unmapped_service
   id: unionpay
   display_name: unionpay
   provider: null
   rule_count: 16
   sha256: d4fedb0b57390ff901fa6845803a152b0362233fd4abe7cd866a5080e46213cf
-- path: unmapped/vercel/rules.yaml
+- path: unmapped/vercel/vercel.yaml
   entity: unmapped_service
   id: vercel
   display_name: vercel
   provider: null
   rule_count: 27
   sha256: c5031f5e39da3b65f7da9b07cbc9af8990f60d14e112eaafcbeccd5d252a6a54
-- path: unmapped/vivo/rules.yaml
+- path: unmapped/vivo/vivo.yaml
   entity: unmapped_service
   id: vivo
   display_name: vivo
   provider: null
   rule_count: 14
   sha256: 9decf81059375d342186ed4ef43db44148078227b58fa5ba5fe6ae33c98246d0
-- path: unmapped/weibo/rules.yaml
+- path: unmapped/weibo/weibo.yaml
   entity: unmapped_service
   id: weibo
   display_name: weibo
   provider: null
   rule_count: 4
   sha256: e6cebdd32719ab46722529292d168bcef6bbbb0000d6f407f60d88cf954a2757
-- path: unmapped/wetv/rules.yaml
+- path: unmapped/wetv/wetv.yaml
   entity: unmapped_service
   id: wetv
   display_name: wetv
   provider: null
   rule_count: 9
   sha256: 70eecf1f87b13799210e8d6ff4b95e58f2d7f5828a10d707a332efa0bb470f34
-- path: unmapped/wikipedia/rules.yaml
+- path: unmapped/wikipedia/wikipedia.yaml
   entity: unmapped_service
   id: wikipedia
   display_name: wikipedia
   provider: null
   rule_count: 12
   sha256: 8386a1d081dad1ccca0e866767a5d4b04d4d52f53acbd2fdd8620bf0476745c0
-- path: unmapped/xbox/rules.yaml
+- path: unmapped/xbox/xbox.yaml
   entity: unmapped_service
   id: xbox
   display_name: xbox
   provider: null
   rule_count: 42
   sha256: c8d0d18de1f75e0d29cdde75ac75dfd53d5c30fd82c00f0cfcccaf48e695c6da
-- path: unmapped/xiaohongshu/rules.yaml
+- path: unmapped/xiaohongshu/xiaohongshu.yaml
   entity: unmapped_service
   id: xiaohongshu
   display_name: xiaohongshu
   provider: null
   rule_count: 4
   sha256: 0af35a11d20eff29e7ffec049118701ba6a71fff7eb3561c953af02813d35bf0
-- path: unmapped/ximalaya/rules.yaml
+- path: unmapped/ximalaya/ximalaya.yaml
   entity: unmapped_service
   id: ximalaya
   display_name: ximalaya
   provider: null
   rule_count: 5
   sha256: 4245fb7506b0a6bbcc5725d422481c75cc1378022a7ab387763fe0513798a415
-- path: unmapped/youku/rules.yaml
+- path: unmapped/youku/youku.yaml
   entity: unmapped_service
   id: youku
   display_name: youku
   provider: null
   rule_count: 60
   sha256: 0f40c5f12d136d4285da4721f04f4961bb04ca7645f9dbcc7a0f62479a9525a9
-- path: unmapped/zhihu/rules.yaml
+- path: unmapped/zhihu/zhihu.yaml
   entity: unmapped_service
   id: zhihu
   display_name: zhihu
   provider: null
   rule_count: 7
   sha256: 2b9ca3e0fa53685c18834f884e33bacafa30b1200bcb3069203d80e9e615e646
-- path: unmapped/zoom/rules.yaml
+- path: unmapped/zoom/zoom.yaml
   entity: unmapped_service
   id: zoom
   display_name: zoom
   provider: null
   rule_count: 3
   sha256: fc500e1314ce51017dd10f85b8841003d4dc1d5fd383bee4d719a485c7dc12c8
-- path: walmart/all/rules.yaml
+- path: walmart/walmart.yaml
   entity: provider_aggregate
   id: walmart_aggregate
   display_name: Walmart
   provider: walmart
   rule_count: 10
   sha256: 37103dd0ffaa8e4f6c3e224cfc8b014a876f5b319189ad4d0daecf6abe75379b
-- path: walmart/walmart/rules.yaml
+- path: walmart/walmart/walmart.yaml
   entity: service
   id: walmart
   display_name: Walmart
   provider: walmart
   rule_count: 10
   sha256: 4488dbdeb476af5b3c2547316253c70645c684c402b9b8173377d839fec6eeb2
-- path: wise/all/rules.yaml
+- path: wise/wise.yaml
   entity: provider_aggregate
   id: wise_aggregate
   display_name: Wise
   provider: wise
   rule_count: 2
   sha256: 0d3b7ca608cc2945acd8ed781251461a504a487c951617d74a32d0e59f1efb9b
-- path: wise/wise/rules.yaml
+- path: wise/wise/wise.yaml
   entity: service
   id: wise
   display_name: Wise
   provider: wise
   rule_count: 2
   sha256: e6b91f916e71cd65dbbd2d2721fb28bebcf86c7051219fef01124b8702aab823
-- path: xai/all/rules.yaml
+- path: xai/xai.yaml
   entity: provider_aggregate
   id: xai
   display_name: xAI
   provider: xai
   rule_count: 4
   sha256: b4b749416ef27876105f0b2f80f5e2fe43476f6538443865718c77f57c88aac0
-- path: xiaomi/all/rules.yaml
+- path: xiaomi/xiaomi.yaml
   entity: provider_aggregate
   id: xiaomi
   display_name: Xiaomi

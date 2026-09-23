@@ -20,6 +20,11 @@ jobs:
       - name: Install YAML parser
         run: python -m pip install --disable-pip-version-check --no-input pyyaml
       - name: Validate rule directory contract
-        run: PYTHONPATH=. python scripts/directory_gate.py
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            PYTHONPATH=. python scripts/directory_gate.py --policy-only
+          else
+            PYTHONPATH=. python scripts/directory_gate.py
+          fi
       - name: Validate current service documentation SSOT
         run: PYTHONPATH=. python scripts/docs_ssot_gate.py
