@@ -112,11 +112,13 @@ def test_rule_tree_uses_entity_named_files(tmp_path: Path) -> None:
         "aggregate/developer/developer.yaml",
         "unmapped/mystery/mystery.yaml",
         "airbnb/airbnb.yaml",
+        "airbnb/airbnb/airbnb.yaml",
     }
     assert set(manifest["files"]) == expected
     assert (out / "apple/apple.yaml").is_file()
     assert (out / "apple/appstore/appstore.yaml").is_file()
     assert (out / "airbnb/airbnb.yaml").is_file()
+    assert (out / "airbnb/airbnb/airbnb.yaml").is_file()
     assert not (out / "apple/all/rules.yaml").exists()
     assert not (out / "apple/appstore/rules.yaml").exists()
 
