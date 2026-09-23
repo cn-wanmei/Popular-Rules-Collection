@@ -26,10 +26,10 @@
 | 客户端 | 路径 | 链接 |
 |--------|------|------|
 | Mihomo | `generated/mihomo/tiktok.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/tiktok.yaml) |
-| sing-box | `generated/sing-box/tiktok.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/tiktok.json) |
+| sing-box | `generated/singbox/tiktok.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/tiktok.json) |
 | Surge | `generated/surge/tiktok.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/tiktok.list) |
 | Shadowrocket | `generated/shadowrocket/tiktok.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/tiktok.list) |
-| Quantumult X | `generated/quantumult-x/tiktok.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/tiktok.list) |
+| Quantumult X | `generated/quantumultx/tiktok.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/tiktok.list) |
 | Egern | `generated/egern/tiktok.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/tiktok.yaml) |
 | Loon | `generated/loon/tiktok.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/tiktok.list) |
 
@@ -57,10 +57,10 @@
 
 ## 数据位置
 
-- Schema: `database/services/tiktok.yaml`
-- Domains: `database/domains/tiktok.txt`
-- IPs: `database/ips/tiktok.txt`（若有）
-- Product page: `rule/ByteDance/…`（见 generate_rule_pages）
+- Schema: `config/service_model/services.yaml`
+- Service definition: `config/service_primary.yaml`
+- Client artifacts: `generated/<client>/tiktok.(yaml|json|list)`
+- Product page: `docs/rules/tiktok.md`
 
 ---
-_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
+_本页受仓库 Docs SSOT Gate 校验；请以当前 SSOT 配置与生成产物路径为准。_
