@@ -6,6 +6,15 @@
 当前配置服务数：90
 当前规则文档总数：209
 
+## 当前新增独立子服务
+
+- [Apple Media](applemedia.md) (`applemedia` · service)
+- [Apple News](applenews.md) (`applenews` · service)
+- [Bing](bing.md) (`bing` · service)
+- [王者荣耀（国服）](honorofkings_cn.md) (`honorofkings_cn` · service)
+- [Honor of Kings Global](honorofkings_global.md) (`honorofkings_global` · service)
+- [网易邮箱](neteasemail.md) (`neteasemail` · service)
+
 ## 当前配置服务
 
 ### 12306
