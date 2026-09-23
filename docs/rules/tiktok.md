@@ -25,7 +25,7 @@ https://www.tiktok.com/
 
 ## Provenance
 
-本服务的 Source 来源、快照、release digest、policy digest 与生成器身份由 immutable lineage 管理；本页不再引用已退休的 `database/services/`、`database/domains/`、旧客户端目录或已退休文档生成脚本。
+本服务的 Source 来源、快照、release digest、policy digest 与生成器身份由 immutable lineage 管理；本页不保存历史目录路径，只引用当前 Service SSOT 与 manifest 驱动的运行时路径模型。
 
 ## 维护规则
 
