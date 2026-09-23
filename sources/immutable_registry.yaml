@@ -809,3 +809,211 @@ bindings:
     release_digest: fe8b3504fe8ce38843ef700996725fd4dc1581a19ae7a1524fe15a35ca4193d0
     release_identity_version: '2'
     expected_sha256: dbf2e6a868c722d919abaf57d554add4034fcf1d3ec46b01c67e4496d43b27d8
+
+  neteasemusic:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 6ac4128eadd2e18ed7fe197f4083078a3e8b0659
+    verified_input_commit: 6c6b571d63eb31f13d296626be26b6981fe89e58
+    artifact_path: generated/source/neteasemusic/domains.txt
+    release_path: releases/neteasemusic/snap-neteasemusic-e44060214727df2dca508867/release.json
+    snapshot_id: snap-neteasemusic-e44060214727df2dca508867
+    content_digest: 618883a29cdfbf0e3d87b9997c6c99357f00299b2e460c7363c24e76ad28e1d3
+    evidence_digest: 9f550d29171152bcb0ced5af74c108e01a567f013812c19d37979e962dd6364f
+    policy_digest: e925b917a4e953bf920a3d3c2e94d1fc1e658c2dc0e7ae9789e7c8616c0ec544
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: e44060214727df2dca508867a3fa1750123b6cd6f255c9669adb9fcb1e810755
+    release_identity_version: '2'
+    expected_sha256: 1bebcfa45f4f4448a8342dc3ed62adbbe1c11da216c2e656dc235523fa98460e
+
+  douyin:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 6ac4128eadd2e18ed7fe197f4083078a3e8b0659
+    verified_input_commit: 6c6b571d63eb31f13d296626be26b6981fe89e58
+    artifact_path: generated/source/douyin/domains.txt
+    release_path: releases/douyin/snap-douyin-d70de7165afed60394f679be/release.json
+    snapshot_id: snap-douyin-d70de7165afed60394f679be
+    content_digest: 71e34cd52461859ccd32b96a0599b5705e473f47988e292e7cee971ba2dd2442
+    evidence_digest: a8e828017e2ce00fbf19a9dc09ea077a3ae0ec31fec9d5f8dbc62eb9d1b61b47
+    policy_digest: d28004d05d51fb8a06871a630ab44c2033d5888e724437edb24637348287b7b3
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: d70de7165afed60394f679bef13156e7dc535afde217cb3b54b6a14a68d34acf
+    release_identity_version: '2'
+    expected_sha256: 9f2436a4bdd6a0e048de2b7134f21c66693b00a62b37772832d037db9eb84d20
+
+  appledev:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 6ac4128eadd2e18ed7fe197f4083078a3e8b0659
+    verified_input_commit: 6c6b571d63eb31f13d296626be26b6981fe89e58
+    artifact_path: generated/source/appledev/domains.txt
+    release_path: releases/appledev/snap-appledev-0f9aebbb855d26eaea22e764/release.json
+    snapshot_id: snap-appledev-0f9aebbb855d26eaea22e764
+    content_digest: 6571d910903bce7bb525d0901761910424b847797d9aa28d868c6a40088ed098
+    evidence_digest: 4b57b99d9d94c53b48afbe974f496ed8baf1a0a3186dba6f02ec6eaebdc1738b
+    policy_digest: fca0694176fab00f253a2b8165f0e07220af625dfae0c0ee47b2d10e4830e169
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 0f9aebbb855d26eaea22e764528ed8385477ca4ad49e1147214b08d3532568a9
+    release_identity_version: '2'
+    expected_sha256: 42e429a1ca8a8a588d4f5394e0b54866612ee8ed86d972636b7c58786fffa128
+
+  findmy:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 6ac4128eadd2e18ed7fe197f4083078a3e8b0659
+    verified_input_commit: 6c6b571d63eb31f13d296626be26b6981fe89e58
+    artifact_path: generated/source/findmy/domains.txt
+    release_path: releases/findmy/snap-findmy-685aad71cf0c0a95171921de/release.json
+    snapshot_id: snap-findmy-685aad71cf0c0a95171921de
+    content_digest: 34612edff0aabe88d492ea519b122619b695de05b8c866c202b076ca6ab2fe45
+    evidence_digest: 86029f64f84a66cedd341a7c0e97319b4d8de59ad4870a5dd6380e6dc7cd1663
+    policy_digest: e974e77badd7d342ab201c31d40b8d76a0849031aeafbe1241b5de420c807b70
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 685aad71cf0c0a95171921dea154ba4e89d22ff27eca834cd47e86f42f17498a
+    release_identity_version: '2'
+    expected_sha256: 43896ca41a1e65b90eb3ed86d62755291a1f0962a7e70b4c868c899cec00bbae
+
+  azure:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 6ac4128eadd2e18ed7fe197f4083078a3e8b0659
+    verified_input_commit: 6c6b571d63eb31f13d296626be26b6981fe89e58
+    artifact_path: generated/source/azure/domains.txt
+    release_path: releases/azure/snap-azure-1272a5f03d5d3e7c4fa32ba5/release.json
+    snapshot_id: snap-azure-1272a5f03d5d3e7c4fa32ba5
+    content_digest: a16f317a7f5dea1e04c4523d7e9872a3ba5136673f6b6898b7716b09025a60f5
+    evidence_digest: 0dadf87a287e012746bf8e9a4f38c8629d26da7130d49129b47481968b4a9bfd
+    policy_digest: 6c22e3375e375f6b2cdc3f162877ace7d51d8fe849faff4ddf973383dcee81a5
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 1272a5f03d5d3e7c4fa32ba5cd21db05e41b0375f979c152ec79791be3db0618
+    release_identity_version: '2'
+    expected_sha256: d0cbe166d8528f5482d66e9f91259f6284e47c4f73951f31bb9e6e70f6912925
+
+  feishu:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 6ac4128eadd2e18ed7fe197f4083078a3e8b0659
+    verified_input_commit: 6c6b571d63eb31f13d296626be26b6981fe89e58
+    artifact_path: generated/source/feishu/domains.txt
+    release_path: releases/feishu/snap-feishu-774ba504c00dc3a9c58bb77b/release.json
+    snapshot_id: snap-feishu-774ba504c00dc3a9c58bb77b
+    content_digest: b5691f9763d1c0cfdf10727bde56aec2f0ca0b7036b0f7eabef5a43f0ad572aa
+    evidence_digest: df166673194a9607433f5539135c3df57c4808f260f88824926cd7e8afbbd3f7
+    policy_digest: bddc163b10901803c2fcdafa51621b776f049831eb042b8b051e3ee18a5ca311
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 774ba504c00dc3a9c58bb77b0cba8c9458b323718aa5eeedf8ee10fc7e8c0211
+    release_identity_version: '2'
+    expected_sha256: 74c638e6478c8f9f404ed8aaf6ee2f06d78bf889354f5785620077b3efdf4be7
+
+  appletv:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 6ac4128eadd2e18ed7fe197f4083078a3e8b0659
+    verified_input_commit: 6c6b571d63eb31f13d296626be26b6981fe89e58
+    artifact_path: generated/source/appletv/domains.txt
+    release_path: releases/appletv/snap-appletv-36044ac0ef189622fcd1c9bd/release.json
+    snapshot_id: snap-appletv-36044ac0ef189622fcd1c9bd
+    content_digest: 8bfb08f7cb5c397e26abb0198331f4d283c5cb76eccb34c4af0d7e7e0246032e
+    evidence_digest: c5cd49d0be9c966c7990fde4a5cfd730549e42a54a9cfa3bfb8f5029c242ae62
+    policy_digest: 679fa28e918bce1dbbf0edd360d7b1d5b8c676e04ea53b8ac72090fabc0a736e
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 36044ac0ef189622fcd1c9bdf910aa29039bcee68834ca65e7e9be4f766363e8
+    release_identity_version: '2'
+    expected_sha256: 5061e47e6eff66e987b77169859a45f8e8ecd17a0977af89f397e9c9669437c1
+
+  youtube:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 6ac4128eadd2e18ed7fe197f4083078a3e8b0659
+    verified_input_commit: 6c6b571d63eb31f13d296626be26b6981fe89e58
+    artifact_path: generated/source/youtube/domains.txt
+    release_path: releases/youtube/snap-youtube-ea6794cdfc9366447a0922c2/release.json
+    snapshot_id: snap-youtube-ea6794cdfc9366447a0922c2
+    content_digest: bce5ce05f54d97806f350ff4b2738b0175b402d59db5bd2ad0e9983555ded0c7
+    evidence_digest: c619c76e2e5a57fad07bf9d8c33a2b83859072c12251e6da064998e5bc586405
+    policy_digest: 679fa28e918bce1dbbf0edd360d7b1d5b8c676e04ea53b8ac72090fabc0a736e
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: ea6794cdfc9366447a0922c2757ccdf1ba2ee277ede37f4c2c02f140564fa29b
+    release_identity_version: '2'
+    expected_sha256: 47f11e5933ead0ccd54ffe3ba061747427f248cf6a1102bc474b9e1327fbe52b
+
+  googlefcm:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 6ac4128eadd2e18ed7fe197f4083078a3e8b0659
+    verified_input_commit: 6c6b571d63eb31f13d296626be26b6981fe89e58
+    artifact_path: generated/source/googlefcm/domains.txt
+    release_path: releases/googlefcm/snap-googlefcm-0a56c2f6cc053405abb62c45/release.json
+    snapshot_id: snap-googlefcm-0a56c2f6cc053405abb62c45
+    content_digest: 7f6f0b0aebe1b7f01c29314122a04f65a831b4b54bc748d9888aecd1ff482364
+    evidence_digest: 6aa37de7f752f4744814c9c8d543bcd915ca3729351db927034f82a33b9d59c8
+    policy_digest: 679fa28e918bce1dbbf0edd360d7b1d5b8c676e04ea53b8ac72090fabc0a736e
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 0a56c2f6cc053405abb62c45ddf4bfe3dfa7920f4abf37fb5d240db9e087bbac
+    release_identity_version: '2'
+    expected_sha256: da759f830d1e481bdc87a50e5074070361d240fe49ac26ec2dddb092a2484c34
+
+  xbox:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 6ac4128eadd2e18ed7fe197f4083078a3e8b0659
+    verified_input_commit: 6c6b571d63eb31f13d296626be26b6981fe89e58
+    artifact_path: generated/source/xbox/domains.txt
+    release_path: releases/xbox/snap-xbox-be1a85faaec0bb69f03aae37/release.json
+    snapshot_id: snap-xbox-be1a85faaec0bb69f03aae37
+    content_digest: da8e479d82f2530446da5833a01af1f2379b79e959b56438c281cc79f4612773
+    evidence_digest: ab3861679402d0f169c79f4e8ab3d704973eadca1c423a1174c29bfb38fb6161
+    policy_digest: 679fa28e918bce1dbbf0edd360d7b1d5b8c676e04ea53b8ac72090fabc0a736e
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: be1a85faaec0bb69f03aae37f5ab72fa04f6979ae42645bf4579020e3d29a91a
+    release_identity_version: '2'
+    expected_sha256: 133447f12552d5b34801e4025ebe1aeb48015ddc46f0536743bb777db05d408b
+
+  github:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 6ac4128eadd2e18ed7fe197f4083078a3e8b0659
+    verified_input_commit: 6c6b571d63eb31f13d296626be26b6981fe89e58
+    artifact_path: generated/source/github/domains.txt
+    release_path: releases/github/snap-github-995bb5798306780932ce16f1/release.json
+    snapshot_id: snap-github-995bb5798306780932ce16f1
+    content_digest: 6d44d4cdd5f3f22589b9b71299c03bf443224b0254a9718dec3ed89de42a837e
+    evidence_digest: 7658ebd09e184e732f31edf701bb59747df1a0325edeff5fa958a45c5c022d49
+    policy_digest: 679fa28e918bce1dbbf0edd360d7b1d5b8c676e04ea53b8ac72090fabc0a736e
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 995bb5798306780932ce16f1836098b86d108732f2c04543dae7b8ba31e62d73
+    release_identity_version: '2'
+    expected_sha256: a5be6162b13d1bf1efcce72190ae9aa526b9fb790c79713578e72700340cab98
+
+  tencentvideo:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 6ac4128eadd2e18ed7fe197f4083078a3e8b0659
+    verified_input_commit: 6c6b571d63eb31f13d296626be26b6981fe89e58
+    artifact_path: generated/source/tencentvideo/domains.txt
+    release_path: releases/tencentvideo/snap-tencentvideo-0f255bfc922db6125299fcbf/release.json
+    snapshot_id: snap-tencentvideo-0f255bfc922db6125299fcbf
+    content_digest: ec349aad951edd0b3cca859f77991910491e694979104700b3ff20628ea87ab4
+    evidence_digest: f0990d266636753f48fbeb43244d5ce53027de9001e69f902a6290103d13dceb
+    policy_digest: 679fa28e918bce1dbbf0edd360d7b1d5b8c676e04ea53b8ac72090fabc0a736e
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 0f255bfc922db6125299fcbf82539f3f774a047cccdef07592690da61d8f0b22
+    release_identity_version: '2'
+    expected_sha256: 6b83e05be0657dfde8e66fbfb48bc25a56e6665ae080474d007cc8ac078f0306
+
+  siri:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 6ac4128eadd2e18ed7fe197f4083078a3e8b0659
+    verified_input_commit: 6c6b571d63eb31f13d296626be26b6981fe89e58
+    artifact_path: generated/source/siri/domains.txt
+    release_path: releases/siri/snap-siri-47e2e3f224b653abe0a7da30/release.json
+    snapshot_id: snap-siri-47e2e3f224b653abe0a7da30
+    content_digest: 1d851bb995202ee6dc202e1fa1dfee60c575076116e66ae388c4abd9c4dbb7b8
+    evidence_digest: 4c4448eefe3b88a3cd71cbaa0412192fee7cb42ee768407e717ecd0cef6bc65f
+    policy_digest: 679fa28e918bce1dbbf0edd360d7b1d5b8c676e04ea53b8ac72090fabc0a736e
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 47e2e3f224b653abe0a7da30c5c3dc5900b59646dc4430a9f3a91bc5e6a142fe
+    release_identity_version: '2'
+    expected_sha256: 1b3f31ead0a29d01e784a930e7ca0f85a0a37fcb4425dacfe168fe8ec389dd3a
