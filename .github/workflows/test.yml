@@ -60,3 +60,5 @@ jobs:
 
       - name: Repository tests
         run: python -m pytest tests/ --ignore=tests/engine/ -q
+
+# CI retrigger checkpoint after restoring current service documentation SSOT.
