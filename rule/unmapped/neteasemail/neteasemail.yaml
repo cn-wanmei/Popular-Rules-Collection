@@ -1,0 +1,23 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: unmapped_service
+id: neteasemail
+display_name: neteasemail
+generated_from:
+  run_id: 20260923T140517872828Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d49e60d1e7476d62a19422503f98ee405af8454bd7bb2c8a703bb304192c7d5e
+stats:
+  total: 3
+  by_type:
+    DOMAIN_SUFFIX: 3
+rules:
+- id: c84fc139587d13454beed191a235171aa9198ed41eef991fdca640b098ce233e
+  type: DOMAIN_SUFFIX
+  value: mail.126.com
+- id: 8fab36b0dc7cd60e109e8465cac4c42dc6361c4b815a41bd9a56469ddfd35e08
+  type: DOMAIN_SUFFIX
+  value: mail.163.com
+- id: 21c7da4083e39160404f9a07671e2b1e57a2f48fffa04b9619b75f8b3f5490f0
+  type: DOMAIN_SUFFIX
+  value: mail.yeah.net

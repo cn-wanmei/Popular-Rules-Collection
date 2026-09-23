@@ -1,0 +1,62 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: unmapped_service
+id: googleearth
+display_name: googleearth
+generated_from:
+  run_id: 20260923T140517872828Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d49e60d1e7476d62a19422503f98ee405af8454bd7bb2c8a703bb304192c7d5e
+stats:
+  total: 16
+  by_type:
+    DOMAIN_SUFFIX: 16
+rules:
+- id: 3ea3346f809d577864730288fdb5ba61cad0b33e4efa61a02797cad9800768e5
+  type: DOMAIN_SUFFIX
+  value: earth-pa.clients6.google.com
+- id: f936649b0519673982b15d235182dd5e22dd45f04fd63e333430a68e693a0e4a
+  type: DOMAIN_SUFFIX
+  value: earth.google.com
+- id: 8e84e65b61ed8af94e1f6133ef11c07228dce99c454e7948bef2860ed8f5320f
+  type: DOMAIN_SUFFIX
+  value: kh.google.com
+- id: 95d124d230beb43fee4023f04410d61427e06d69587bd1dbec9d2e76f5b9572e
+  type: DOMAIN_SUFFIX
+  value: khm.google.com
+- id: bb63788fcef688aa3a6be3868306eb778345cc5c07d6dd6348b76ec247620a3e
+  type: DOMAIN_SUFFIX
+  value: khm.googleapis.com
+- id: f59e20b619a4475c91c3478eb2468d9544ab7625f902c224bf7165e07edfcdb3
+  type: DOMAIN_SUFFIX
+  value: khm0.google.com
+- id: 4300219516342db81218e56b991b6bddca8caf97639a6cff670ea18c493b0731
+  type: DOMAIN_SUFFIX
+  value: khm0.googleapis.com
+- id: 23721d4b67078a0f6fc4b5d3452ce2686ce4448fc92e7f780364fe020d9aaf9c
+  type: DOMAIN_SUFFIX
+  value: khm1.google.com
+- id: 2abc2189aa3bba9490f08b89b4418ed14c26d4b68add93e44ccd10380adfe1f8
+  type: DOMAIN_SUFFIX
+  value: khm1.googleapis.com
+- id: 99618ceb5e21bc4b48406e28c390fb6adb03e8b11aee3418767ec80b3c645d3d
+  type: DOMAIN_SUFFIX
+  value: khm2.google.com
+- id: f19e133feea299d149bcb02e6ad9e9b718f5b26257166304e4837f373ddce4ec
+  type: DOMAIN_SUFFIX
+  value: khm2.googleapis.com
+- id: 2f4eca9b9ad998112457f5d84e704eb8933d5ffcb95c12c3b50162b7af873237
+  type: DOMAIN_SUFFIX
+  value: khm3.google.com
+- id: 3a8c657fc0f39c90a2c6cb58dfbaf82cc2323376b5e77c3be369f68036fc94a3
+  type: DOMAIN_SUFFIX
+  value: khm3.googleapis.com
+- id: 1b539c86bdb67de62416aa74cbb2a43906e06f30267ed216564d7f6b191c0d18
+  type: DOMAIN_SUFFIX
+  value: khmdb.google.com
+- id: ef57d8c3de88fc73dd849b3143f07fd3d05b528f44d645f7d1872ecbb8054817
+  type: DOMAIN_SUFFIX
+  value: khmdb.googleapis.com
+- id: 91d99c16aa005eceab261e85028bcd64cf48950af2a3397687f390458f905053
+  type: DOMAIN_SUFFIX
+  value: mw1.google.com

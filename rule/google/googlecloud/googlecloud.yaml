@@ -1,0 +1,30 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: googlecloud
+display_name: Google Cloud
+generated_from:
+  run_id: 20260923T140517872828Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d49e60d1e7476d62a19422503f98ee405af8454bd7bb2c8a703bb304192c7d5e
+stats:
+  total: 5
+  by_type:
+    DOMAIN_SUFFIX: 5
+rules:
+- id: a1e9bc8c6b7072093134f5605bb8a810e2f77601517dfa246e08767a6e931ae5
+  type: DOMAIN_SUFFIX
+  value: cloud.google.com
+- id: a256225021dff681bd4ff9b857e0fa3f929dc9dde468bb2eb4ac3d2f70b09efe
+  type: DOMAIN_SUFFIX
+  value: console.cloud.google.com
+- id: 89b85f99647aaa97d80b0322c0731fdda1bc9ab818d63ed3157e8ad1914bfe83
+  type: DOMAIN_SUFFIX
+  value: docs.cloud.google.com
+- id: ce698295fda77e6a219d17a8590db92d14b18f9da34ed0926b32580016ae48ef
+  type: DOMAIN_SUFFIX
+  value: partners.cloud.google.com
+- id: c178b5bce7e3980290448f4a4f7602436de049ff91dfc68a4ff4d03d3fe25d86
+  type: DOMAIN_SUFFIX
+  value: status.cloud.google.com
+provider: google

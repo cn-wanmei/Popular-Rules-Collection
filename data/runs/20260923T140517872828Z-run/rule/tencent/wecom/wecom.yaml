@@ -1,0 +1,24 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: wecom
+display_name: WeCom
+generated_from:
+  run_id: 20260923T140517872828Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d49e60d1e7476d62a19422503f98ee405af8454bd7bb2c8a703bb304192c7d5e
+stats:
+  total: 3
+  by_type:
+    DOMAIN_SUFFIX: 3
+rules:
+- id: fa90f45bda65619ab93eedf9bca43cc293d9758c2bcd89c8b61443e3207c1771
+  type: DOMAIN_SUFFIX
+  value: developer.work.weixin.qq.com
+- id: 277e4cadc1813f56e829baf26e819bbf866a423be8f3d9bef167657e7e2bc478
+  type: DOMAIN_SUFFIX
+  value: open.work.weixin.qq.com
+- id: 6bd9835824563437a56c10b47a355ad40010157a735b6db07231570dbf247042
+  type: DOMAIN_SUFFIX
+  value: work.weixin.qq.com
+provider: tencent

@@ -1,7 +1,6 @@
 DOMAIN-SUFFIX,digitalassetlinks.org
 DOMAIN-SUFFIX,pixate.com
 DOMAIN-SUFFIX,scholar.google.dk
-DOMAIN,alt3-mtalk.google.com
 DOMAIN-SUFFIX,android.googlesource.com
 DOMAIN-SUFFIX,redirector.xn--ngstr-lra8j.com
 DOMAIN-SUFFIX,paxlicense.org
@@ -32,7 +31,6 @@ DOMAIN-SUFFIX,scholar.google.com.hk
 DOMAIN-SUFFIX,google.co.zw
 DOMAIN,www.destinationurl.com
 DOMAIN-SUFFIX,fflick.com
-IP-CIDR,74.125.28.188/32
 DOMAIN-SUFFIX,synergyse.com
 DOMAIN-SUFFIX,scholar.google.com.br
 DOMAIN-SUFFIX,blogspot.hk
@@ -67,7 +65,6 @@ DOMAIN,googletagservices.com
 DOMAIN,safebrowsing-cache.google.com
 DOMAIN-SUFFIX,usvimosquitoproject.com
 DOMAIN-SUFFIX,blogspot.ae
-IP-CIDR,64.233.186.188/32
 DOMAIN-SUFFIX,youtube.ma
 DOMAIN-SUFFIX,download.mlcc.google.com
 DOMAIN-SUFFIX,pub.dev
@@ -116,7 +113,6 @@ DOMAIN-SUFFIX,youtube.hr
 DOMAIN-SUFFIX,youtube.com.ar
 DOMAIN-SUFFIX,youtube.bg
 DOMAIN-SUFFIX,gerritcodereview.com
-IP-CIDR,172.217.218.188/32
 DOMAIN-SUFFIX,google.com.py
 DOMAIN-SUFFIX,google.ae
 DOMAIN-SUFFIX,google.cd
@@ -132,7 +128,6 @@ DOMAIN-SUFFIX,gle
 DOMAIN-SUFFIX,alt1-mtalk.google.com
 DOMAIN-SUFFIX,youtube.al
 DOMAIN-SUFFIX,googleanalytics.com
-DOMAIN,mtalk.google.com
 DOMAIN-SUFFIX,adwords.com
 DOMAIN-SUFFIX,blogspot.li
 DOMAIN-SUFFIX,googleapis.cn
@@ -146,13 +141,10 @@ DOMAIN-SUFFIX,google.net
 DOMAIN-SUFFIX,googledrive.com
 DOMAIN,qpx.googleflights.net
 DOMAIN-SUFFIX,fitbit.com
-DOMAIN,alt6-mtalk.google.com
-IP-CIDR,74.125.203.188/32
 DOMAIN-SUFFIX,blogspot.my
 DOMAIN-SUFFIX,performanceparameters.googleapis.com
 DOMAIN-SUFFIX,googleoptimize.com
 DOMAIN-SUFFIX,app-measurement.net
-DOMAIN-SUFFIX,yt3.ggpht.com
 DOMAIN-SUFFIX,google.de
 DOMAIN-SUFFIX,blog.google
 DOMAIN-SUFFIX,blogspot.in
@@ -163,7 +155,6 @@ DOMAIN-SUFFIX,crbug.com
 DOMAIN-SUFFIX,nest.com
 DOMAIN-SUFFIX,partylikeits1986.org
 DOMAIN-SUFFIX,google.com.pa
-IP-CIDR,142.250.96.188/32
 DOMAIN-SUFFIX,gipscorp.com
 DOMAIN-SUFFIX,google.cv
 DOMAIN-SUFFIX,youtube.qa
@@ -174,7 +165,6 @@ DOMAIN-SUFFIX,google.com.fj
 DOMAIN,google-analytics.com
 DOMAIN-SUFFIX,google.com.bd
 DOMAIN-SUFFIX,google.ca
-IP-CIDR,74.125.127.188/32
 DOMAIN-SUFFIX,google.com.na
 IP-CIDR,74.125.0.0/16
 DOMAIN-SUFFIX,blogspot.com.mt
@@ -205,7 +195,6 @@ DOMAIN-SUFFIX,googlecompare.co.uk
 DOMAIN-SUFFIX,googledomains.com
 DOMAIN-SUFFIX,www.destinationurl.com
 DOMAIN-SUFFIX,scholar.google.de
-IP-CIDR,142.250.31.188/32
 DOMAIN-SUFFIX,alkalicore-pa.clients6.google.com
 DOMAIN-SUFFIX,get.new
 DOMAIN-SUFFIX,ssl.gstatic.com
@@ -229,10 +218,10 @@ DOMAIN-SUFFIX,google.co.mz
 DOMAIN-SUFFIX,picasa.com
 DOMAIN-SUFFIX,questvisual.com
 DOMAIN-SUFFIX,scholar.google.fr
-IP-CIDR,108.177.125.188/32
 DOMAIN-SUFFIX,froogle.com
 DOMAIN-SUFFIX,www.pxcc.com
 DOMAIN-SUFFIX,blogspot.am
+DOMAIN-SUFFIX,drive.google.com
 DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
 DOMAIN-SUFFIX,widevine.com
 DOMAIN-SUFFIX,youtube.co.ma
@@ -289,7 +278,6 @@ DOMAIN-SUFFIX,youtube.lk
 DOMAIN-SUFFIX,blogspot.vn
 DOMAIN-SUFFIX,googleplus.com
 DOMAIN-SUFFIX,redirector.c.mail.google.com
-IP-CIDR,64.233.189.188/32
 DOMAIN-SUFFIX,blogspot.co.ke
 DOMAIN-SUFFIX,adgoogle.net
 DOMAIN-SUFFIX,youtube.md
@@ -331,7 +319,6 @@ DOMAIN-SUFFIX,www.recaptcha-cn.net
 DOMAIN-SUFFIX,youtube.com.ni
 DOMAIN-SUFFIX,blogspot.pe
 DOMAIN-SUFFIX,kaggle.net
-DOMAIN,firebaseinstallations.googleapis.com
 DOMAIN-SUFFIX,tensorflow.org
 DOMAIN-SUFFIX,mail-ads.google.com
 DOMAIN-SUFFIX,youtubefanfest.com
@@ -347,13 +334,13 @@ DOMAIN-SUFFIX,webappfieldguide.com
 DOMAIN-SUFFIX,pagead-googlehosted.l.google.com
 DOMAIN-SUFFIX,hey.boo
 DOMAIN-SUFFIX,on2.com
-IP-CIDR,209.85.233.188/32
 DOMAIN-SUFFIX,zynamics.com
 DOMAIN-SUFFIX,prod-controlbe.floonet.goog
 DOMAIN-SUFFIX,service.urchin.com
 DOMAIN-SUFFIX,google.gm
 DOMAIN-SUFFIX,www-googletagmanager.l.google.com
 DOMAIN-SUFFIX,youtube.com.co
+DOMAIN-SUFFIX,console.firebase.google.com
 DOMAIN-SUFFIX,ampproject.org
 DOMAIN-SUFFIX,blogspot.ug
 DOMAIN-SUFFIX,google.tl
@@ -388,9 +375,7 @@ DOMAIN-SUFFIX,youtube.gt
 DOMAIN-SUFFIX,csi.gstatic.com
 DOMAIN-SUFFIX,google.mn
 DOMAIN-SUFFIX,google.ad
-DOMAIN,android.apis.google.com
 DOMAIN-SUFFIX,run.app
-DOMAIN,alt2-mtalk.google.com
 DOMAIN-SUFFIX,youtube.am
 DOMAIN-SUFFIX,google.la
 DOMAIN-SUFFIX,googletagservices-cn.com
@@ -476,12 +461,10 @@ DOMAIN-SUFFIX,gvt3.com
 DOMAIN,redirector.c.pack.google.com
 DOMAIN-SUFFIX,alt7-mtalk.google.com
 DOMAIN,g1.gstatic.com
-IP-CIDR,74.125.23.188/32
 DOMAIN-SUFFIX,youtube.ae
 DOMAIN-SUFFIX,google.lk
 DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,urchin.com
-IP-CIDR,74.125.137.188/32
 DOMAIN-SUFFIX,265.com
 DOMAIN-SUFFIX,googleventures.com
 DOMAIN-SUFFIX,googleads-cn.com
@@ -511,7 +494,6 @@ DOMAIN-SUFFIX,bumpshare.com
 DOMAIN-SUFFIX,blogspot.dk
 DOMAIN-KEYWORD,recaptcha
 DOMAIN-SUFFIX,youtube.com
-IP-CIDR,64.233.177.188/32
 DOMAIN-SUFFIX,pittpatt.com
 DOMAIN-SUFFIX,scholar.google.nl
 DOMAIN-SUFFIX,hindiweb.com
@@ -547,9 +529,7 @@ DOMAIN-SUFFIX,ggoogle.com
 DOMAIN-SUFFIX,analytics-alv.google.com
 DOMAIN-SUFFIX,youtube.ru
 DOMAIN-SUFFIX,brocaproject.com
-DOMAIN,alt4-mtalk.google.com
 DOMAIN-SUFFIX,google.vg
-IP-CIDR,172.253.63.188/32
 DOMAIN-SUFFIX,kaggleusercontent.com
 DOMAIN-SUFFIX,google.com.pg
 DOMAIN-SUFFIX,googlebot.com
@@ -599,7 +579,6 @@ DOMAIN-SUFFIX,google.st
 DOMAIN-SUFFIX,youtube.co.th
 DOMAIN-SUFFIX,google.com.gt
 DOMAIN-SUFFIX,youtube.az
-DOMAIN,mtalk-staging.google.com
 DOMAIN-SUFFIX,youtube.co.hu
 DOMAIN-SUFFIX,firebaseremoteconfig.googleapis.com
 DOMAIN-SUFFIX,youtube.ug
@@ -630,7 +609,6 @@ DOMAIN-SUFFIX,scholar.google.com.my
 DOMAIN-SUFFIX,get.dev
 DOMAIN-SUFFIX,blogspot.re
 DOMAIN-SUFFIX,google.co.uk
-DOMAIN,device-provisioning.googleapis.com
 DOMAIN-SUFFIX,unfiltered.news
 DOMAIN,fonts.gstatic.com
 DOMAIN-SUFFIX,bumptunes.com
@@ -653,8 +631,8 @@ DOMAIN-SUFFIX,youtube.fi
 DOMAIN-SUFFIX,cloudrobotics.com
 DOMAIN-SUFFIX,getoutline.org
 DOMAIN-SUFFIX,scholar.google.com.do
+DOMAIN-SUFFIX,docs.google.com
 DOMAIN-SUFFIX,stcroixmosquito.com
-IP-CIDR,173.194.218.188/32
 DOMAIN-SUFFIX,golang.net
 DOMAIN-SUFFIX,youtube.pk
 DOMAIN-SUFFIX,scholar.google.co.cr
@@ -673,6 +651,7 @@ DOMAIN-SUFFIX,google.co.ck
 DOMAIN-SUFFIX,coova.net
 DOMAIN-SUFFIX,google.co.ls
 DOMAIN-SUFFIX,youtubego.com
+DOMAIN-SUFFIX,docs.cloud.google.com
 DOMAIN-SUFFIX,g0.gstatic.com
 DOMAIN-SUFFIX,scholar.google.com.co
 DOMAIN-SUFFIX,clientservices.googleapis.com
@@ -704,9 +683,7 @@ DOMAIN-SUFFIX,quickoffice.com
 DOMAIN-SUFFIX,blogspot.no
 DOMAIN,redirector.c.chat.google.com
 DOMAIN-SUFFIX,pagead.l.google.com
-IP-CIDR,142.250.10.188/32
 DOMAIN-SUFFIX,youtube.hu
-DOMAIN,alt7-mtalk.google.com
 DOMAIN-SUFFIX,googleapis-cn.com
 DOMAIN,avail.googleflights.net
 DOMAIN-SUFFIX,youtube.co.cr
@@ -727,7 +704,6 @@ DOMAIN-SUFFIX,googlecapital.com
 DOMAIN-SUFFIX,waymo.com
 DOMAIN-SUFFIX,google.kg
 DOMAIN-SUFFIX,g1.gstatic.com
-DOMAIN,alt5-mtalk.google.com
 DOMAIN-SUFFIX,blogspot.sk
 DOMAIN-SUFFIX,google.com.gi
 DOMAIN-SUFFIX,blogspot.com.cy
@@ -741,7 +717,6 @@ DOMAIN-SUFFIX,google-access.net
 DOMAIN-SUFFIX,google.com.mt
 DOMAIN,fonts.googleapis.com
 DOMAIN,redirector.offline-maps.gvt1.com
-IP-CIDR,64.233.187.188/32
 DOMAIN-SUFFIX,google.ee
 DOMAIN-SUFFIX,gstaticadssl.l.google.com
 DOMAIN-SUFFIX,youtube.kr
@@ -779,6 +754,7 @@ DOMAIN-SUFFIX,scholar.google.hn
 DOMAIN-SUFFIX,webrtc.org
 DOMAIN-SUFFIX,neverware.com
 DOMAIN-SUFFIX,android.com
+DOMAIN-SUFFIX,music.youtube.com
 DOMAIN-SUFFIX,google.ba
 DOMAIN,beacons.gvt2.com
 DOMAIN-SUFFIX,google.co.tz
@@ -801,10 +777,12 @@ DOMAIN-SUFFIX,youtube.se
 DOMAIN-KEYWORD,chrome
 DOMAIN-SUFFIX,blogspot.jp
 DOMAIN-SUFFIX,gvt6.com
+DOMAIN-SUFFIX,cloud.google.com
 DOMAIN-KEYWORD,google
 DOMAIN-SUFFIX,scholar.google.com.ni
 DOMAIN-SUFFIX,connectivitycheck.gstatic.com
 DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,console.cloud.google.com
 DOMAIN,beacons2.gvt2.com
 DOMAIN-SUFFIX,youtube.com.tn
 DOMAIN-SUFFIX,webpkgcache.com
@@ -842,7 +820,6 @@ DOMAIN-SUFFIX,google.mk
 DOMAIN-SUFFIX,youtube.at
 DOMAIN-SUFFIX,thecleversense.com
 DOMAIN-SUFFIX,oauthz.com
-IP-CIDR,172.253.122.188/32
 DOMAIN,prod-controlbe.floonet.goog
 DOMAIN-SUFFIX,google-analytics.com
 DOMAIN-SUFFIX,deps.dev
@@ -850,7 +827,6 @@ DOMAIN-SUFFIX,doubleclick.net
 DOMAIN,app-analytics-services.com
 DOMAIN,www.pxcc.com
 DOMAIN-SUFFIX,youtube.sn
-IP-CIDR,74.125.24.188/32
 DOMAIN-SUFFIX,html5rocks.com
 DOMAIN-SUFFIX,angulardart.org
 DOMAIN-SUFFIX,orbitera.com
@@ -859,7 +835,6 @@ DOMAIN-SUFFIX,clients1.google.com
 DOMAIN-SUFFIX,google.cg
 DOMAIN,c.admob.com
 DOMAIN-SUFFIX,google.co.za
-DOMAIN,mtalk4.google.com
 DOMAIN-SUFFIX,blogspot.ru
 DOMAIN-SUFFIX,googleblog.com
 DOMAIN-SUFFIX,screenwisetrendspanel.com
@@ -945,6 +920,7 @@ DOMAIN-SUFFIX,howtogetmo.co.uk
 DOMAIN-SUFFIX,google.lv
 DOMAIN-SUFFIX,alt3-mtalk.google.com
 DOMAIN-SUFFIX,scholar.l.google.com
+DOMAIN-SUFFIX,status.cloud.google.com
 DOMAIN-SUFFIX,google.lu
 DOMAIN,redirector.gcpcdn.gvt1.com
 DOMAIN-SUFFIX,blink.org
@@ -958,7 +934,6 @@ DOMAIN-SUFFIX,google-ohttp-relay-safebrowsing.fastly-edge.com
 DOMAIN-SUFFIX,youtube.com.hk
 DOMAIN-SUFFIX,googlevads-cn.com
 DOMAIN-SUFFIX,google.com.ni
-IP-CIDR,173.194.175.188/32
 DOMAIN-SUFFIX,youtubego.id
 DOMAIN-SUFFIX,admob.com
 DOMAIN-SUFFIX,itasoftware.com
@@ -971,7 +946,6 @@ DOMAIN,dl.l.google.com
 DOMAIN-SUFFIX,google.ml
 DOMAIN,www-google-analytics.l.google.com
 DOMAIN-SUFFIX,googleflights-cn.net
-DOMAIN,mtalk-dev.google.com
 DOMAIN,app-measurement.com
 DOMAIN-SUFFIX,xn--9trs65b.com
 DOMAIN,fontfiles.googleapis.com
@@ -993,6 +967,7 @@ DOMAIN-SUFFIX,google.sc
 DOMAIN,connectivitycheck.gstatic.com
 DOMAIN-SUFFIX,asp-cc.com
 DOMAIN-SUFFIX,xn--p8j9a0d9c9a.xn--q9jyb4c
+DOMAIN-SUFFIX,partners.cloud.google.com
 DOMAIN-SUFFIX,tiltbrush.com
 DOMAIN-SUFFIX,baselinestudy.org
 DOMAIN-SUFFIX,onefifteen.net
@@ -1004,7 +979,6 @@ DOMAIN,googletraveladservices.com
 DOMAIN-SUFFIX,blogblog.com
 DOMAIN,googleoptimize-cn.com
 DOMAIN-SUFFIX,google.co.id
-IP-CIDR,172.217.194.188/32
 DOMAIN-SUFFIX,chromercise.com
 DOMAIN-SUFFIX,adtrafficquality.google
 DOMAIN-SUFFIX,google.bf
@@ -1026,7 +1000,6 @@ DOMAIN-SUFFIX,redirector.gcpcdn.gvt1.com
 DOMAIN,cn.widevine.com
 DOMAIN-SUFFIX,google.cl
 DOMAIN-SUFFIX,google.ie
-IP-CIDR,74.125.206.188/32
 DOMAIN-SUFFIX,youtube.tv
 DOMAIN-SUFFIX,youtube.ni
 DOMAIN-SUFFIX,scholar.google.com.ph
@@ -1060,9 +1033,8 @@ DOMAIN-SUFFIX,c.pki.goog
 DOMAIN-SUFFIX,youtube.com.bh
 IP-CIDR6,2620:120:e000::/40
 DOMAIN-SUFFIX,g2.gstatic.com
-DOMAIN,alt1-mtalk.google.com
+DOMAIN-SUFFIX,android.apis.google.com
 DOMAIN-SUFFIX,google.co
-IP-CIDR,64.233.188.188/32
 DOMAIN-SUFFIX,youtube.it
 DOMAIN-SUFFIX,bumptop.ca
 DOMAIN-SUFFIX,slides.new
@@ -1178,7 +1150,6 @@ DOMAIN-SUFFIX,youtube.com.lb
 DOMAIN-SUFFIX,www.gstatic.com
 DOMAIN-SUFFIX,verilystudyhub.com
 DOMAIN-SUFFIX,google.it
-IP-CIDR,172.217.219.188/32
 DOMAIN-SUFFIX,download.tensorflow.google.com
 DOMAIN-SUFFIX,on.here
 DOMAIN-SUFFIX,alt2-mtalk.google.com
@@ -1206,8 +1177,6 @@ DOMAIN-SUFFIX,kaggle.com
 DOMAIN-SUFFIX,googlezip.net
 DOMAIN-SUFFIX,scholar.google.gr
 DOMAIN-SUFFIX,youtube.co.jp
-DOMAIN,alt8-mtalk.google.com
-IP-CIDR,74.125.204.188/32
 DOMAIN-SUFFIX,blogspot.com.ar
 DOMAIN-SUFFIX,scholar.google.hu
 DOMAIN-SUFFIX,update.crashlytics.com
@@ -1249,9 +1218,7 @@ DOMAIN,c.android.clients.google.com
 DOMAIN,safebrowsing.googleapis.com
 DOMAIN-SUFFIX,gstaticcnapps.cn
 DOMAIN-SUFFIX,opensourceinsight.dev
-DOMAIN-KEYWORD,youtube
 DOMAIN-SUFFIX,youtube.com.kw
 DOMAIN,clickserver.googleads.com
 DOMAIN-SUFFIX,adsense.com
-IP-CIDR,142.250.4.188/32
 DOMAIN-SUFFIX,fuchsia.dev

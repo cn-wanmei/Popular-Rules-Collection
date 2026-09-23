@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: baidunetdisk
+display_name: Baidu Netdisk
+generated_from:
+  run_id: 20260923T140517872828Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d49e60d1e7476d62a19422503f98ee405af8454bd7bb2c8a703bb304192c7d5e
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 7f357d896af78ab36d7c89db052d3b6faf1ba05a8b21a08f02af7dd62e46b948
+  type: DOMAIN_SUFFIX
+  value: pan.baidu.com
+- id: f032847fc868b68a8580efad3aaaaeb9033ec7f2a294e36e0260055073aeba2d
+  type: DOMAIN_SUFFIX
+  value: webpush.pan.baidu.com
+provider: baidu

@@ -1,0 +1,20 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: unmapped_service
+id: honorofkings_global
+display_name: honorofkings_global
+generated_from:
+  run_id: 20260923T140517872828Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d49e60d1e7476d62a19422503f98ee405af8454bd7bb2c8a703bb304192c7d5e
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 81585a960aceed153878cde9cd7fb63d797f7b33e8641adbebf105e31e967fb2
+  type: DOMAIN_SUFFIX
+  value: honorofkings.com
+- id: ff4874b068395f614544b78677c561d0622e8e5db89b9834b58375e643222dde
+  type: DOMAIN_SUFFIX
+  value: www.honorofkings.com

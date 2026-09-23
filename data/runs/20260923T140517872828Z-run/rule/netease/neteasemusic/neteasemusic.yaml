@@ -1,0 +1,45 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: neteasemusic
+display_name: NetEase Cloud Music
+generated_from:
+  run_id: 20260923T140517872828Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d49e60d1e7476d62a19422503f98ee405af8454bd7bb2c8a703bb304192c7d5e
+stats:
+  total: 10
+  by_type:
+    DOMAIN_SUFFIX: 10
+rules:
+- id: e0d825b65c1c88c30bf1ba6033749dce7047f22496a16ef019f97205ed3bc34c
+  type: DOMAIN_SUFFIX
+  value: 163yun.com
+- id: 1c7582be8b9b9f4c24119991cb310023738029493a675890c3773eb10c3508ef
+  type: DOMAIN_SUFFIX
+  value: api.iplay.163.com
+- id: af21595c9293ce73a142a129e3dfefe858317ce8d0232bf4cfd90535de78f8c1
+  type: DOMAIN_SUFFIX
+  value: hz.netease.com
+- id: e9fb5c6cd20876fd3b582e57910e02cb7781a75548bdfc3be52a3c3fb1eab3f0
+  type: DOMAIN_SUFFIX
+  value: mam.netease.com
+- id: 80c061701007e7ec936493b6dabbeb606e3048203300b28482b5cce5da724e3b
+  type: DOMAIN_SUFFIX
+  value: music.126.com
+- id: 19f97268fa591ccd1e26b85a3f118f7671d7b9676964087176fafbfd8e4a8bbd
+  type: DOMAIN_SUFFIX
+  value: music.126.net
+- id: 94034513d7c003b063a8646199080099248648203e08d56724705e4bf865a55b
+  type: DOMAIN_SUFFIX
+  value: music.163.com
+- id: 5593edeb9710e404c02ec186ecb7c0937a0c0564bc17a9d80818147463202c03
+  type: DOMAIN_SUFFIX
+  value: music.163.com.163jiasu.com
+- id: afa35e03ab5a4dd3cb7dacdb88debd8a161a2630685ead36a9277dddc045d31d
+  type: DOMAIN_SUFFIX
+  value: netease.ugcvideoss.ourdvs.com
+- id: 2a1a63cf412e017846e6e04e2ef1a0f6d50e8053f44e4b283a3f32cec473aa80
+  type: DOMAIN_SUFFIX
+  value: yun-app.net
+provider: netease

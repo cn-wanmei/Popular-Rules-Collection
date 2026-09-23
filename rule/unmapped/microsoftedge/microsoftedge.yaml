@@ -1,0 +1,26 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: unmapped_service
+id: microsoftedge
+display_name: microsoftedge
+generated_from:
+  run_id: 20260923T140517872828Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d49e60d1e7476d62a19422503f98ee405af8454bd7bb2c8a703bb304192c7d5e
+stats:
+  total: 4
+  by_type:
+    DOMAIN: 4
+rules:
+- id: 1f519ae9ccb6fd217b137cc44384773641d6370333e38379d746115a6ac4e0b0
+  type: DOMAIN
+  value: edge.activity.windows.com
+- id: 96413bae052ba042d27ea04f6d7cda4ae80584b7c8723a5dfe2f2ea0a522bc6f
+  type: DOMAIN
+  value: edge.microsoft.com
+- id: fca1983ad8bde57279b3aa7e1759c388e8c70552b0d8c7d46e61ac2659168c95
+  type: DOMAIN
+  value: iecvlist.microsoft.com
+- id: 0755d3769bae2e72d4fa312d3978f0b0770e5347e4e9e1fe4d680d23775b9ec0
+  type: DOMAIN
+  value: msedge.api.cdp.microsoft.com

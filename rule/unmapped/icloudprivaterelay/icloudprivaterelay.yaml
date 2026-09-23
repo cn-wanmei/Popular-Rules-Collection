@@ -1,0 +1,33 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: unmapped_service
+id: icloudprivaterelay
+display_name: icloudprivaterelay
+generated_from:
+  run_id: 20260923T140517872828Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d49e60d1e7476d62a19422503f98ee405af8454bd7bb2c8a703bb304192c7d5e
+stats:
+  total: 6
+  by_type:
+    DOMAIN: 4
+    DOMAIN_SUFFIX: 2
+rules:
+- id: fefee40af24126d50d71edb624f330db6df31a9e3f7536ba63ce5a606656eba1
+  type: DOMAIN
+  value: mask-api.fe.apple-dns.net
+- id: 7cd15dd4bc4f8ec5ba58cef7764dbcfff0de95e3f697fbbaf61e71b6eece3c20
+  type: DOMAIN
+  value: mask-api.icloud.com
+- id: 994b824b2aabcb561aa4f27b5cc468abb928462f149528518af12c122c078dba
+  type: DOMAIN
+  value: mask-t.apple-dns.net
+- id: d589acf49e7980340137e7b837d78f06ae637b9df99636aeab65229eba3b6299
+  type: DOMAIN
+  value: mask.apple-dns.net
+- id: 9e7d9f9b5f6b622385b03c803507fc9cc99dc9f67d86c9352d3a9c034e21f4e7
+  type: DOMAIN_SUFFIX
+  value: mask-h2.icloud.com
+- id: 54995f81494796fb1daf3f1fca051ab24dafa070ac85723de0ff8d4b9dfa98c4
+  type: DOMAIN_SUFFIX
+  value: mask.icloud.com

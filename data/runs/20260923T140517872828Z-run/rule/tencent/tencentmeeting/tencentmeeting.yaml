@@ -1,0 +1,24 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: tencentmeeting
+display_name: Tencent Meeting
+generated_from:
+  run_id: 20260923T140517872828Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d49e60d1e7476d62a19422503f98ee405af8454bd7bb2c8a703bb304192c7d5e
+stats:
+  total: 3
+  by_type:
+    DOMAIN_SUFFIX: 3
+rules:
+- id: aa044607b100f02ab3bfcd736268acca82b638c8816ba5f9fb6143c0094bf1ab
+  type: DOMAIN_SUFFIX
+  value: cdn.meeting.tencent.com
+- id: d8dc91b1171175317b80b7ea5e6f9d1d920bb43935b7531cc6a2e26671362bc5
+  type: DOMAIN_SUFFIX
+  value: meeting.tencent.com
+- id: 4735a417d28e35e3ea893e29b113491c52ef069f0f6bd76efdbe3ab44eb71039
+  type: DOMAIN_SUFFIX
+  value: report.meeting.tencent.com
+provider: tencent

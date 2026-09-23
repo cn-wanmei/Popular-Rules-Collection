@@ -1,0 +1,60 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: youdao
+display_name: Youdao
+generated_from:
+  run_id: 20260923T140517872828Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d49e60d1e7476d62a19422503f98ee405af8454bd7bb2c8a703bb304192c7d5e
+stats:
+  total: 15
+  by_type:
+    DOMAIN_SUFFIX: 15
+rules:
+- id: 8a69be6a3f7b780348aaa9dc55b85938c34f13217539c81abb930b4be8a64fdd
+  type: DOMAIN_SUFFIX
+  value: ai.youdao.com
+- id: bcc45459795f1e436398e3caec65e152333ae1b74de97d7a24bca563a207767d
+  type: DOMAIN_SUFFIX
+  value: baoku.youdao.com
+- id: 07d053b94773d11f9be6614632522ecef8e24967924d1a4a7574def13647f26f
+  type: DOMAIN_SUFFIX
+  value: c.youdao.com
+- id: eb83432a484aa48653bc70d89400cbce45abd99b7bdb80ff33f0ededf307bd6c
+  type: DOMAIN_SUFFIX
+  value: dsp.youdao.com
+- id: bb8cd69f35aba17411cd00735b903d8da1cba0c260222c27304f79d88d4f95d7
+  type: DOMAIN_SUFFIX
+  value: f.youdao.com
+- id: abb1897c7235cb69a5a4c3837be9ba10eb224ad45621e6b7d59557472fa06964
+  type: DOMAIN_SUFFIX
+  value: hr.youdao.com
+- id: c2460994edb3def78f7568f5172847f4f75d2525c6f7b6b1acce6a8b99b4bbfc
+  type: DOMAIN_SUFFIX
+  value: ir.youdao.com
+- id: 5b8cbab0ba80bc341496fd330a510b16616ed2994e5cf2273517f59a731a3608
+  type: DOMAIN_SUFFIX
+  value: ke.youdao.com
+- id: d7dc218f7c0bd07d6d361dafcc88e39322c941fe6de946c6d912312947c36490
+  type: DOMAIN_SUFFIX
+  value: lobsterai.youdao.com
+- id: 6b8f508eca2f5ad12ccde50c817dd311e9fedc83f4a8e4e45cb9c46e29fd4f7f
+  type: DOMAIN_SUFFIX
+  value: school.youdao.com
+- id: 41c1c7e976afbfbe719db6b06360076bab39161bd98f0be6cc31da99f745bc57
+  type: DOMAIN_SUFFIX
+  value: shared.youdao.com
+- id: 2e7bb8da653f805dea681b7f507caa6c44afc3d650d7f244f941ae022c65f5ca
+  type: DOMAIN_SUFFIX
+  value: smart.youdao.com
+- id: e62ad7e670c27741b7054c9a2e82fdb17facebfbe9278ae89c4592caa2dcc1f5
+  type: DOMAIN_SUFFIX
+  value: tongdao.youdao.com
+- id: 948662a280d7b720b54b07fba7e8e67e0f7db439a44e90cd9e13e3c6581eeaf9
+  type: DOMAIN_SUFFIX
+  value: www.youdao.com
+- id: c0f60cfc80ed98aad8224d5555d553187b7a1da6a078c81d05f9bceb19772b09
+  type: DOMAIN_SUFFIX
+  value: zhihui.youdao.com
+provider: netease
