@@ -12,6 +12,9 @@ services:
   googlecloud: {id: googlecloud, provider: google, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   firebase: {id: firebase, provider: google, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   youtubemusic: {id: youtubemusic, provider: google, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
+  google-search: {id: google-search, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  googlevoice: {id: googlevoice, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  googleearth: {id: googleearth, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   apple-core: {id: apple-core, provider: apple, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: apple}
   apple-shared: {id: apple-shared, provider: apple, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
   icloud: {id: icloud, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
@@ -22,6 +25,12 @@ services:
   testflight: {id: testflight, provider: apple, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   appledev: {id: appledev, provider: apple, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   findmy: {id: findmy, provider: apple, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
+  appleid: {id: appleid, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  applemail: {id: applemail, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  applemedia: {id: applemedia, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  applenews: {id: applenews, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  applefirmware: {id: applefirmware, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  icloudprivaterelay: {id: icloudprivaterelay, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   onedrive: {id: onedrive, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   teams: {id: teams, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   xbox: {id: xbox, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
@@ -29,6 +38,10 @@ services:
   microsoft-core: {id: microsoft-core, provider: microsoft, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: microsoft}
   microsoft-shared: {id: microsoft-shared, provider: microsoft, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
   azure: {id: azure, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
+  microsoftedge: {id: microsoftedge, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  bing: {id: bing, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  outlook: {id: outlook, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  office: {id: office, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   tencentvideo: {id: tencentvideo, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   tencent-core: {id: tencent-core, provider: tencent, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: tencent}
   tencent-shared: {id: tencent-shared, provider: tencent, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
@@ -39,6 +52,9 @@ services:
   wecom: {id: wecom, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   tencentmeeting: {id: tencentmeeting, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   tencentcloud: {id: tencentcloud, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
+  wegame: {id: wegame, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  honorofkings-cn: {id: honorofkings-cn, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  honorofkings-global: {id: honorofkings-global, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   alibaba-core: {id: alibaba-core, provider: alibaba, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: alibaba}
   alibaba-shared: {id: alibaba-shared, provider: alibaba, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
   taobao: {id: taobao, provider: alibaba, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
@@ -51,18 +67,27 @@ services:
   baidu-shared: {id: baidu-shared, provider: baidu, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
   baidutieba: {id: baidutieba, provider: baidu, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   baidunetdisk: {id: baidunetdisk, provider: baidu, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
+  baidumaps: {id: baidumaps, provider: baidu, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  baiduwiki: {id: baiduwiki, provider: baidu, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  baiduwenku: {id: baiduwenku, provider: baidu, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   amazon-core: {id: amazon-core, provider: amazon, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: amazon}
   amazon-shared: {id: amazon-shared, provider: amazon, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
   aws: {id: aws, provider: amazon, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   bytedance-core: {id: bytedance-core, provider: bytedance, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: bytedance}
   bytedance-shared: {id: bytedance-shared, provider: bytedance, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
   douyin: {id: douyin, provider: bytedance, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  capcut: {id: capcut, provider: bytedance, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  toutiao: {id: toutiao, provider: bytedance, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  xigua: {id: xigua, provider: bytedance, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  volcengine: {id: volcengine, provider: bytedance, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   doubao: {id: doubao, provider: bytedance, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   feishu: {id: feishu, provider: bytedance, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   netease-core: {id: netease-core, provider: netease, scope: provider_core, visibility: internal, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   netease-shared: {id: netease-shared, provider: netease, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   neteasemusic: {id: neteasemusic, provider: netease, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   youdao: {id: youdao, provider: netease, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
+  netease163mail: {id: netease163mail, provider: netease, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  neteasegames: {id: neteasegames, provider: netease, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   deepseek: {id: deepseek, provider: deepseek, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   perplexity: {id: perplexity, provider: perplexity, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   grok: {id: grok, provider: xai, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
