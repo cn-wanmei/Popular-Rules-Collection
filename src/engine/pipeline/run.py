@@ -153,14 +153,39 @@ def run_pipeline(sources_root: Path, data_root: Path, *, run_id: str | None = No
         }
 
     def handler_directory() -> dict[str, Any]:
-        report = validate_directory_contract(ROOT)
+        # Build the browse distribution first, then gate that same immutable Run.
+        # ROOT/rule is only the published tree and must never be used as the
+        # current-build Directory Gate input.
+        rule_manifest = build_rule_tree(
+            run_dir / "ir",
+            run_dir / "rule",
+            hierarchy_path=ROOT / "config" / "ruleset_hierarchy.yaml",
+            policy_path=ROOT / "config" / "service_model" / "directories.yaml",
+            run_id=run_id,
+        )
+        report = validate_directory_contract(
+            ROOT,
+            rule_root=run_dir / "rule",
+            generated_root=run_dir / "artifacts",
+        )
         (run_dir / "directory_gate.json").write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-        return {"status": "ok" if report["pass"] else "blocked", "errors": report["errors"], "canonical_rule_files": report["canonical_rule_files"], "generated_rule_files": report["generated_rule_files"]}
+        return {
+            "status": "ok" if report["pass"] else "blocked",
+            "errors": report["errors"],
+            "canonical_rule_files": report["canonical_rule_files"],
+            "generated_rule_files": report["generated_rule_files"],
+            "rule_distribution": rule_manifest,
+        }
 
     def handler_adapters() -> dict[str, Any]:
         report = build_all_clients(run_dir / "ir", run_dir / "artifacts")
-        rule_manifest = build_rule_tree(run_dir / "ir", run_dir / "rule", hierarchy_path=ROOT / "config" / "ruleset_hierarchy.yaml", run_id=run_id)
-        return {"status": "ok", "clients": sorted(report.get("clients", {})), "parallel": report.get("parallel", False), "source_contract": report.get("source_contract"), "directory_contract": report.get("directory_contract"), "rule_distribution": rule_manifest}
+        return {
+            "status": "ok",
+            "clients": sorted(report.get("clients", {})),
+            "parallel": report.get("parallel", False),
+            "source_contract": report.get("source_contract"),
+            "directory_contract": report.get("directory_contract"),
+        }
 
     def handler_diff() -> dict[str, Any]:
         baseline = data_root / "baseline" / "canonical.json"; report = run_diff(run_dir / "canonical", baseline if baseline.exists() else None, run_dir / "reports" / "diff")
