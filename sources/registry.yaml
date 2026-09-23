@@ -75,6 +75,20 @@ sources:
   - {path: generated/source/neteasemail/domains.txt, name: neteasemail, service: neteasemail, local: PRS_neteasemail.domains.txt, enabled: true}  # Batch4; awaiting immutable Source release
   - {path: generated/source/honorofkings_cn/domains.txt, name: honorofkings_cn, service: honorofkings_cn, local: PRS_honorofkings_cn.domains.txt, enabled: true}  # Exact immutable Source release bound
   - {path: generated/source/honorofkings_global/domains.txt, name: honorofkings_global, service: honorofkings_global, local: PRS_honorofkings_global.domains.txt, enabled: true}  # Exact immutable Source release bound
+  - {path: generated/source/office/domains.txt, name: office, service: office, local: PRS_office.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/outlook/domains.txt, name: outlook, service: outlook, local: PRS_outlook.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/googlemaps/domains.txt, name: googlemaps, service: googlemaps, local: PRS_googlemaps.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/gmail/domains.txt, name: gmail, service: gmail, local: PRS_gmail.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/volcengine/domains.txt, name: volcengine, service: volcengine, local: PRS_volcengine.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/xigua/domains.txt, name: xigua, service: xigua, local: PRS_xigua.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/toutiao/domains.txt, name: toutiao, service: toutiao, local: PRS_toutiao.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/capcut/domains.txt, name: capcut, service: capcut, local: PRS_capcut.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/baiduwenku/domains.txt, name: baiduwenku, service: baiduwenku, local: PRS_baiduwenku.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/baiduwiki/domains.txt, name: baiduwiki, service: baiduwiki, local: PRS_baiduwiki.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/baidumaps/domains.txt, name: baidumaps, service: baidumaps, local: PRS_baidumaps.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/neteasegames/domains.txt, name: neteasegames, service: neteasegames, local: PRS_neteasegames.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/netease163mail/domains.txt, name: netease163mail, service: netease163mail, local: PRS_netease163mail.domains.txt, enabled: true}  # Source-owned; pending immutable binding
+  - {path: generated/source/wegame/domains.txt, name: wegame, service: wegame, local: PRS_wegame.domains.txt, enabled: true}  # Source-owned; pending immutable binding
 
 - id: blackmatrix7
   name: BlackMatrix7 ios_rule_script
@@ -87,6 +101,17 @@ sources:
   notes: Largest curated multi-client rule set.
   fetch: {type: github_raw, owner: blackmatrix7, repo: ios_rule_script, branch: master}
   rules:
+  - {path: rule/Clash/Bing/Bing.list, name: bing, service: bing, local: Clash_Bing.list}
+  - {path: rule/Clash/MicrosoftEdge/MicrosoftEdge.list, name: microsoftedge, service: microsoftedge, local: Clash_MicrosoftEdge.list}
+  - {path: rule/Clash/GoogleEarth/GoogleEarth.list, name: googleearth, service: googleearth, local: Clash_GoogleEarth.list}
+  - {path: rule/Clash/GoogleVoice/GoogleVoice.list, name: googlevoice, service: googlevoice, local: Clash_GoogleVoice.list}
+  - {path: rule/Clash/GoogleSearch/GoogleSearch.list, name: google-search, service: google-search, local: Clash_GoogleSearch.list}
+  - {path: rule/Clash/iCloudPrivateRelay/iCloudPrivateRelay.list, name: icloudprivaterelay, service: icloudprivaterelay, local: Clash_iCloudPrivateRelay.list}
+  - {path: rule/Clash/AppleFirmware/AppleFirmware.list, name: applefirmware, service: applefirmware, local: Clash_AppleFirmware.list}
+  - {path: rule/Clash/AppleNews/AppleNews.list, name: applenews, service: applenews, local: Clash_AppleNews.list}
+  - {path: rule/Clash/AppleMedia/AppleMedia.list, name: applemedia, service: applemedia, local: Clash_AppleMedia.list}
+  - {path: rule/Clash/AppleMail/AppleMail.list, name: applemail, service: applemail, local: Clash_AppleMail.list}
+  - {path: rule/Clash/AppleID/AppleID.list, name: appleid, service: appleid, local: Clash_AppleID.list}
   - {path: rule/Clash/Apple/Apple.yaml, name: apple, local: Clash_Apple.yaml}
   - {path: rule/Clash/Google/Google.yaml, name: google, local: Clash_Google.yaml}
   - {path: rule/Clash/Telegram/Telegram.yaml, name: telegram, local: Clash_Telegram.yaml}

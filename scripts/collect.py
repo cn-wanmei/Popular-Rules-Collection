@@ -50,6 +50,23 @@ def immutable_binding_for(service: str) -> dict[str, Any] | None:
     return binding
 
 
+def _service_from_rule(entry: dict[str, Any]) -> str:
+    explicit = str(entry.get("service") or entry.get("name") or "").strip()
+    if explicit:
+        service = explicit
+    else:
+        path = Path(str(entry.get("path") or ""))
+        parts = path.parts
+        # PRS files use generated/source/<service>/..., so the service is the
+        # directory immediately above the artifact filename.
+        service = parts[-2] if len(parts) >= 2 else path.stem
+    service = service.casefold()
+    for prefix in ("clash_", "surge_"):
+        if service.startswith(prefix):
+            service = service[len(prefix):]
+    return service
+
+
 
 def utc_now() -> datetime:
     return datetime.now(timezone.utc)
@@ -72,8 +89,14 @@ def source_runtime_enabled(source: dict[str, Any]) -> bool:
     # Phase 2 permits single-service production activation while the PRS
     # source itself remains globally disabled.
     if source.get("id") == "popular-rules-source":
+        # Only entries with an ACTIVE immutable Source binding are runtime-eligible.
+        # Pending/review candidates remain visible but never enter production acquisition.
         return any(
-            isinstance(entry, dict) and entry.get("enabled") is True
+            isinstance(entry, dict)
+            and entry.get("enabled") is True
+            and immutable_binding_for(
+_service_from_rule(entry)
+            ) is not None
             for entry in (source.get("rules") or source.get("files") or [])
         )
     return False
@@ -106,14 +129,14 @@ def rules_for(src: dict[str, Any]) -> list[dict[str, str]]:
             print(f"  WARN {src.get('id')}: rules[{i}] invalid: {entry!r}")
             continue
         local = str(entry.get("local") or entry.get("name") or Path(str(entry["path"])).name)
-        service = str(entry.get("service") or entry.get("name") or Path(local).stem).lower()
-        for prefix in ("clash_", "surge_"):
-            if service.startswith(prefix):
-                service = service[len(prefix):]
+        service = _service_from_rule(entry)
         # Phase 2 supports service-level promotion without changing the
         # upstream source's global enabled state. Disabled rules remain visible
         # to registry/orphan validation but are not acquired.
         if entry.get("enabled") is False:
+            continue
+        # PRS production acquisition is allowed only for a durable immutable binding.
+        if src.get("id") == "popular-rules-source" and immutable_binding_for(service) is None:
             continue
         out.append({"path": str(entry["path"]), "name": local, "service": service})
     return out
