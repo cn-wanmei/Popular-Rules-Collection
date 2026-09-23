@@ -21,6 +21,7 @@ layout:
   generated_aggregate: "generated/{client}/{provider}/{provider}"
   generated_service: "generated/{client}/{provider}/{service}/{service}"
   generated_china: "generated/{client}/china/china"
+  generated_category: "generated/{client}/categories/{category}/{category}"
 
 semantics:
   provider_aggregate: "union_of_provider_direct_rules_and_all_declared_services"
