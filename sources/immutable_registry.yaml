@@ -234,3 +234,130 @@ bindings:
     release_digest: b0e2b0246cd52df7418f5c1432a5b94e3825e2db6586c8194964b85c5367aae4
     release_identity_version: '2'
     expected_sha256: cd4e26d63fd5b6184eab7527bbbde38350cc2ef4685c6e1e206c27b545e1ca6e
+alibabacloud:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0b0c105d2627b9482ce35b94be3da377eb509c40
+    verified_input_commit: eab00509880bdd7016a3dcab5f1eee21f79caf37
+    artifact_path: generated/source/alibabacloud/domains.txt
+    release_path: releases/alibabacloud/snap-alibabacloud-461ca160d076aaffa913407c/release.json
+    snapshot_id: snap-alibabacloud-461ca160d076aaffa913407c
+    content_digest: b35d38a44b2feef82aec6fe7b46ce7096ab380fab0bb3d94674ac54933192860
+    evidence_digest: e83a1ac708e9ae0095ffb66e845c5310dd8ef5511495b378b5fbb5bed92d75ac
+    policy_digest: 679fa28e918bce1dbbf0edd360d7b1d5b8c676e04ea53b8ac72090fabc0a736e
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 461ca160d076aaffa913407cec0ab2f66c7e24fd98102c34bee05f04afa29886
+    release_identity_version: '2'
+    expected_sha256: 27ac8f54d3b16824b68ad637e9800cee77efe9b38cc02ef7af99647035eb2338
+
+  deepseek:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0b0c105d2627b9482ce35b94be3da377eb509c40
+    verified_input_commit: eab00509880bdd7016a3dcab5f1eee21f79caf37
+    artifact_path: generated/source/deepseek/domains.txt
+    release_path: releases/deepseek/snap-deepseek-e74c191a25236d73593d589b/release.json
+    snapshot_id: snap-deepseek-e74c191a25236d73593d589b
+    content_digest: fe8a0928038519346854c53651fdad0b23a5ca2a59d456a89b955f7f31daee6c
+    evidence_digest: 8472fbd6aacb22687254c4a1c4588ede0a045e5fe982600f653052344507509b
+    policy_digest: 679fa28e918bce1dbbf0edd360d7b1d5b8c676e04ea53b8ac72090fabc0a736e
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: e74c191a25236d73593d589baa8ad8b72736fa8f73868270433c7f9a2922a36a
+    release_identity_version: '2'
+    expected_sha256: 52822c92e87fadcfdc6711133f1270ee77ef030459603a46cf6fa80f75856530
+
+  perplexity:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0b0c105d2627b9482ce35b94be3da377eb509c40
+    verified_input_commit: eab00509880bdd7016a3dcab5f1eee21f79caf37
+    artifact_path: generated/source/perplexity/domains.txt
+    release_path: releases/perplexity/snap-perplexity-5843c1ce73203b9d968be9fc/release.json
+    snapshot_id: snap-perplexity-5843c1ce73203b9d968be9fc
+    content_digest: 87ca59f295227a08c595d84079fcb904ca8a4d5a4269fee11f3ad840d2af5976
+    evidence_digest: 0f5bc6279feb999bd4472600989a4d71c62ea90fd22338ddbd71de7fde204e32
+    policy_digest: 679fa28e918bce1dbbf0edd360d7b1d5b8c676e04ea53b8ac72090fabc0a736e
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 5843c1ce73203b9d968be9fcfa8f07402960bda96bfec00c2a8dccad6793d7ec
+    release_identity_version: '2'
+    expected_sha256: 5aef9f1b25c7bebdf882c7e8d47ef4ba03b463f2db77bf192ed3c3bdcaee3262
+
+  groq:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0b0c105d2627b9482ce35b94be3da377eb509c40
+    verified_input_commit: eab00509880bdd7016a3dcab5f1eee21f79caf37
+    artifact_path: generated/source/groq/domains.txt
+    release_path: releases/groq/snap-groq-c073c7adcd8f0db5ebe9a92a/release.json
+    snapshot_id: snap-groq-c073c7adcd8f0db5ebe9a92a
+    content_digest: 88efc1a66cdffe57858d1067819be3e176fe946795bd9dbff08355ab7ce2c98c
+    evidence_digest: eed60e927f41c66a40cfa5295be617a77c72851b664552d8fd6e3be9b243c12a
+    policy_digest: 679fa28e918bce1dbbf0edd360d7b1d5b8c676e04ea53b8ac72090fabc0a736e
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: c073c7ad8f0db5ebe9a92af7b84d77505c173aa305b96f9edabe50bd68fcb8
+    release_identity_version: '2'
+    expected_sha256: d779541783d4c835ad341a13ae3c3a008bfa3e535b46f79518b92bdef17588bb
+
+  huggingface:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0b0c105d2627b9482ce35b94be3da377eb509c40
+    verified_input_commit: eab00509880bdd7016a3dcab5f1eee21f79caf37
+    artifact_path: generated/source/huggingface/domains.txt
+    release_path: releases/huggingface/snap-huggingface-c41977bf6c8dade8b423273a/release.json
+    snapshot_id: snap-huggingface-c41977bf6c8dade8b423273a
+    content_digest: 74e48c56d6a5727806021cf7f2e0a9e9d3ac8cb12b7358d681f5f220bba046e1
+    evidence_digest: 767ab522ab9394e41bc9d36150ff99618d617f0d2ebb8fa4112a5c6c7a31098a
+    policy_digest: 679fa28e918bce1dbbf0edd360d7b1d5b8c676e04ea53b8ac72090fabc0a736e
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: c41977bf6c8dade8b423273a5458334309cc33735237c1030fa6260c640d6183
+    release_identity_version: '2'
+    expected_sha256: 67f5861b31232701f884efd38d9436dd89183fccbd01d6f10d791b9ef6fbf4b8
+
+  messenger:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0b0c105d2627b9482ce35b94be3da377eb509c40
+    verified_input_commit: eab00509880bdd7016a3dcab5f1eee21f79caf37
+    artifact_path: generated/source/messenger/domains.txt
+    release_path: releases/messenger/snap-messenger-0a0d45654f4b394bb85deabf/release.json
+    snapshot_id: snap-messenger-0a0d45654f4b394bb85deabf
+    content_digest: afe8fa86464c22479db5c1609a1f7f9f23c6ae71394f81d3cad19a2229247ab9
+    evidence_digest: 4f0ed0ad9b4f0063f3b6e59aca2f8bda4cf4239d7ecb21fd30dbf16ff90dc366
+    policy_digest: 679fa28e918bce1dbbf0edd360d7b1d5b8c676e04ea53b8ac72090fabc0a736e
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 0a0d45654f4b394bb85deabf1dc9c23fe94681a7f03b4f6c4c032112fec1b1a9
+    release_identity_version: '2'
+    expected_sha256: c8ef00eed5f51bd8d8ec2b73083a3ef012100c73aac382a76848338ae80c7e29
+
+  roblox:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0b0c105d2627b9482ce35b94be3da377eb509c40
+    verified_input_commit: eab00509880bdd7016a3dcab5f1eee21f79caf37
+    artifact_path: generated/source/roblox/domains.txt
+    release_path: releases/roblox/snap-roblox-36d3732a073e69dc0d883708/release.json
+    snapshot_id: snap-roblox-36d3732a073e69dc0d883708
+    content_digest: 45af99014ad0d13e734fffe512d9f678ef36b5a5e4bc0805329d60256c984d2a
+    evidence_digest: 952d93a71378a5ca888f8305c3c04e26db9abf14f979b530aee65903d85eb687
+    policy_digest: 679fa28e918bce1dbbf0edd360d7b1d5b8c676e04ea53b8ac72090fabc0a736e
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 36d3732a073e69dc0d883708b9450802462e9e6483d87f03ce1ba6dfbdf0846b
+    release_identity_version: '2'
+    expected_sha256: 78ec22e347f51777e3a904bcff00aedd73837f99196820e74d269c1df194420c
+
+  signal:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0b0c105d2627b9482ce35b94be3da377eb509c40
+    verified_input_commit: eab00509880bdd7016a3dcab5f1eee21f79caf37
+    artifact_path: generated/source/signal/domains.txt
+    release_path: releases/signal/snap-signal-82644ff2cbaddc4da87ede48/release.json
+    snapshot_id: snap-signal-82644ff2cbaddc4da87ede48
+    content_digest: 7db91717b26af2108a12e3178f8fe973fca34d44fb2ebbce2f2dfdd69ba99200
+    evidence_digest: d85fae12a0e34d459328ff79e6c6ecbce831762ddebffba973180833bd6ea5f7
+    policy_digest: 679fa28e918bce1dbbf0edd360d7b1d5b8c676e04ea53b8ac72090fabc0a736e
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 82644ff2cbaddc4da87ede48d44752f3c277a4cae9be2ab2097165733cc11940
+    release_identity_version: '2'
+    expected_sha256: 951505d128d003a7fc541bf70a163363a8ddb6826398f42c5f0253d488a23475
