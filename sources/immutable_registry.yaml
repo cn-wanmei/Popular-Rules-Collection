@@ -745,3 +745,67 @@ applenews:
     release_digest: 4d29b0251917fe7adfa58912d05f14a9a1a5cd9acf899ceafbd53cb99270f21a
     release_identity_version: '2'
     expected_sha256: 79475b58f1217281f2f2bb54eea0a778d74104a8cf0d6be48a496911c41739b6
+
+  qq:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 56489947e6e078acee322f2146c4200e1f933b61
+    verified_input_commit: e8bea553618b97e7b04d1ff02fd02c29da04a178
+    artifact_path: generated/source/qq/domains.txt
+    release_path: releases/qq/snap-qq-42284c05d41505b9e118a7f1/release.json
+    snapshot_id: snap-qq-42284c05d41505b9e118a7f1
+    content_digest: bca8f813211b84089944658b808628d92d25124b28ece2895a69f8481bfec4d3
+    evidence_digest: f622a75da1c8bddbd0bd110033b745c80a631ab019d46bb281bcbbecad547aad
+    policy_digest: f61b83c08e1573627508c86312b2d51a7bd4578ae196e2b0f976b1bde9aabed1
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 42284c05d41505b9e118a7f19a049ae0c32363103e94db7cac29c239b97c9702
+    release_identity_version: '2'
+    expected_sha256: affdc4b54821f0a4f2af88292cdf05a444939508a14d87602574abebf92a55cd
+
+  neteaseemail:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 56489947e6e078acee322f2146c4200e1f933b61
+    verified_input_commit: e8bea553618b97e7b04d1ff02fd02c29da04a178
+    artifact_path: generated/source/neteaseemail/domains.txt
+    release_path: releases/neteaseemail/snap-neteaseemail-ca49474722c49d305fb0a67c/release.json
+    snapshot_id: snap-neteaseemail-ca49474722c49d305fb0a67c
+    content_digest: 9296334130a453d5460a776f39ef35ed5e0c18f687cc1451b009367781c1d590
+    evidence_digest: 0e04b23a5ffe3409d9c688a37442c45ba2d7b121a000a68a7f25ba362154faa7
+    policy_digest: 732ea10755317b02b5b12dc4d708d7a3eba368f2f9736d094f135d30e392a7e9
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: ca49474722c49d305fb0a67ca95fb082255ca50069baa11d03e27a56df8aba49
+    release_identity_version: '2'
+    expected_sha256: 2aebbb6663c3a4d3e1349f17a7c0ad4e00612bdaa90def806ff72318ae41b0ec
+
+  honorofkings_cn:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 56489947e6e078acee322f2146c4200e1f933b61
+    verified_input_commit: e8bea553618b97e7b04d1ff02fd02c29da04a178
+    artifact_path: generated/source/honorofkings_cn/domains.txt
+    release_path: releases/honorofkings_cn/snap-honorofkings_cn-57adb02773f5157159b68a91/release.json
+    snapshot_id: snap-honorofkings_cn-57adb02773f5157159b68a91
+    content_digest: 7fc1bf6018b8658b5afaffa1ef9cfadb611c6897e8e88cf18a0aed83d0d2f282
+    evidence_digest: 951005cb237df6b5241599df6fc03e658c2136f716127cce74a9dc63fb880e48
+    policy_digest: 3dc2eeaac4a02dd24067a7f77461ea0b10a76f51df759eea61a3ca0dc94cba2a
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: 57adb02773f5157159b68a91e7b844b358f37eff0c56e82096f01cf06efd8be9
+    release_identity_version: '2'
+    expected_sha256: fc776b27c2e5e728d34abd5ad2dd7396cc45c565465c53b854b84e90c2292909
+
+  honorofkings_global:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 56489947e6e078acee322f2146c4200e1f933b61
+    verified_input_commit: e8bea553618b97e7b04d1ff02fd02c29da04a178
+    artifact_path: generated/source/honorofkings_global/domains.txt
+    release_path: releases/honorofkings_global/snap-honorofkings_global-fe8b3504fe8ce38843ef7009/release.json
+    snapshot_id: snap-honorofkings_global-fe8b3504fe8ce38843ef7009
+    content_digest: 67674cc06147d4cce0c477d9cb62142463d12bcc60b89383d26a5775157b8289
+    evidence_digest: a7b580012d453895bc4a173487ce801fcfa92fd5fe1493ec14fc0bffebe470dd
+    policy_digest: c2c4987920dc31609831b57754e93946f0fffb163036f746e954f34221281720
+    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
+    release_digest: fe8b3504fe8ce38843ef700996725fd4dc1581a19ae7a1524fe15a35ca4193d0
+    release_identity_version: '2'
+    expected_sha256: dbf2e6a868c722d919abaf57d554add4034fcf1d3ec46b01c67e4496d43b27d8
