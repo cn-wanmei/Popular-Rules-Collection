@@ -55,6 +55,33 @@ def _rows(rules_by_id: dict[str, dict[str, Any]], rule_ids: set[str]) -> list[di
     return sorted(rows, key=lambda row: (row["type"], row["value"], row["id"]))
 
 
+def _load_distribution_layout(policy_path: Path) -> dict[str, str]:
+    policy = _load_yaml(Path(policy_path))
+    if policy.get("schema") != "rule_distribution_policy_v2":
+        raise RuntimeError("Unsupported rule distribution policy schema")
+    layout = policy.get("layout") or {}
+    required = (
+        "human_aggregate",
+        "human_service",
+        "human_china",
+        "human_category",
+        "human_group",
+        "human_aggregate_entity",
+        "human_unmapped_service",
+    )
+    if not all(isinstance(layout.get(key), str) and layout.get(key).strip() for key in required):
+        raise RuntimeError("Directory policy is missing human distribution path templates")
+    return {key: str(layout[key]).strip() for key in required}
+
+
+def _render_rule_path(output_dir: Path, template: str, **values: str) -> Path:
+    rendered = template.format(**values)
+    parts = Path(rendered).parts
+    if not parts or parts[0] != "rule" or any(part in {"", ".", ".."} for part in parts):
+        raise RuntimeError(f"invalid human rule distribution path template result: {rendered!r}")
+    return output_dir.joinpath(*parts[1:])
+
+
 def _write_entity(
     output: Path,
     *,
@@ -105,6 +132,7 @@ def build_rule_tree(
     *,
     hierarchy_path: Path,
     run_id: str,
+    policy_path: Path | None = None,
 ) -> dict[str, Any]:
     ir_dir = Path(ir_dir)
     output_dir = Path(output_dir)
@@ -121,6 +149,8 @@ def build_rule_tree(
     if not resolved_run_id:
         raise RuntimeError("run_id is required for human rule distribution")
 
+    policy_path = Path(policy_path) if policy_path is not None else ROOT / "config" / "service_model" / "directories.yaml"
+    layout = _load_distribution_layout(policy_path)
     hierarchy = _load_yaml(Path(hierarchy_path))
     providers = hierarchy.get("providers") or {}
     categories = hierarchy.get("categories") or {}
@@ -152,7 +182,7 @@ def build_rule_tree(
             rows = _rows(rules, memberships.get(service_id, set()))
             if rows:
                 _write_entity(
-                    output_dir / _slug(provider_id) / _slug(service_id) / "rules.yaml",
+                    _render_rule_path(output_dir, layout["human_service"], provider=_slug(provider_id), service=_slug(service_id)),
                     entity="service",
                     entity_id=service_id,
                     display_name=str(service_meta.get("display_name") or service_id),
@@ -168,7 +198,7 @@ def build_rule_tree(
         rows = _rows(rules, aggregate_ids)
         if rows:
             _write_entity(
-                output_dir / _slug(provider_id) / "all" / "rules.yaml",
+                _render_rule_path(output_dir, layout["human_aggregate"], provider=_slug(provider_id)),
                 entity="provider_aggregate",
                 entity_id=aggregate_id,
                 display_name=str(meta.get("display_name") or provider_id),
@@ -182,7 +212,7 @@ def build_rule_tree(
     rows = _rows(rules, memberships.get("china", set()))
     if rows:
         _write_entity(
-            output_dir / "china" / "all" / "rules.yaml",
+            _render_rule_path(output_dir, layout["human_china"], provider="china"),
             entity="domestic_aggregate",
             entity_id="china",
             display_name="China",
@@ -208,7 +238,7 @@ def build_rule_tree(
         rows = _rows(rules, category_ids)
         if rows:
             _write_entity(
-                output_dir / "category" / _slug(category_id) / "all" / "rules.yaml",
+                _render_rule_path(output_dir, layout["human_category"], category=_slug(category_id)),
                 entity="category",
                 entity_id=category_id,
                 display_name=str(category_meta.get("display_name") or category_id),
@@ -237,8 +267,19 @@ def build_rule_tree(
         else:
             entity = "unmapped_service"
             root_name = "unmapped"
+        template_key = {
+            "group": "human_group",
+            "aggregate": "human_aggregate_entity",
+            "unmapped_service": "human_unmapped_service",
+        }[entity]
         _write_entity(
-            output_dir / root_name / _slug(entity_id) / "rules.yaml",
+            _render_rule_path(
+                output_dir,
+                layout[template_key],
+                group=_slug(entity_id),
+                aggregate=_slug(entity_id),
+                service=_slug(entity_id),
+            ),
             entity=entity,
             entity_id=entity_id,
             display_name=entity_id,
@@ -299,9 +340,10 @@ def main() -> int:
     parser.add_argument("--ir", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--hierarchy", type=Path, default=ROOT / "config" / "ruleset_hierarchy.yaml")
+    parser.add_argument("--policy", type=Path, default=ROOT / "config" / "service_model" / "directories.yaml")
     parser.add_argument("--run-id", required=True)
     args = parser.parse_args()
-    manifest = build_rule_tree(args.ir, args.output, hierarchy_path=args.hierarchy, run_id=args.run_id)
+    manifest = build_rule_tree(args.ir, args.output, hierarchy_path=args.hierarchy, run_id=args.run_id, policy_path=args.policy)
     print(json.dumps(manifest, indent=2, ensure_ascii=False))
     return 0
 
