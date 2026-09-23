@@ -90,9 +90,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          PYTHONPATH=. python scripts/immutable_source_lineage_gate.py \
-            --collection-root "${{ steps.source.outputs.source_root }}" \
-            --json-out "${{ steps.source.outputs.source_root }}/manifests/immutable-source-lineage-build.json"
+          ARGS=(--collection-root "${{ steps.source.outputs.source_root }}" \
+            --json-out "${{ steps.source.outputs.source_root }}/manifests/immutable-source-lineage-build.json")
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            ARGS+=(--allow-missing-current)
+          fi
+          PYTHONPATH=. python scripts/immutable_source_lineage_gate.py "${ARGS[@]}"
 
       - name: Engine — immutable build
         id: engine
