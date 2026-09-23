@@ -252,6 +252,38 @@
 ### google
 - [YouTube Music](youtubemusic.md) (`youtubemusic` · service)
 
+## 新增当前子服务索引
+
+本节收录本次 Service SSOT 扩展的独立子服务页面。具体可用规则文件必须以 `generated/manifest.json` 当前产物为准。
+
+- [Apple ID](appleid.md) (`appleid` · service)
+- [Apple Mail](applemail.md) (`applemail` · service)
+- [Apple Media](applemedia.md) (`applemedia` · service)
+- [Apple News](applenews.md) (`applenews` · service)
+- [Apple Firmware](applefirmware.md) (`applefirmware` · service)
+- [iCloud Private Relay](icloudprivaterelay.md) (`icloudprivaterelay` · service)
+- [Google Search](google-search.md) (`google-search` · service)
+- [Google Voice](googlevoice.md) (`googlevoice` · service)
+- [Google Earth](googleearth.md) (`googleearth` · service)
+- [Gmail](gmail.md) (`gmail` · service)
+- [Google Maps](googlemaps.md) (`googlemaps` · service)
+- [Microsoft Edge](microsoftedge.md) (`microsoftedge` · service)
+- [Bing](bing.md) (`bing` · service)
+- [Outlook](outlook.md) (`outlook` · service)
+- [Microsoft 365](office.md) (`office` · service)
+- [CapCut](capcut.md) (`capcut` · service)
+- [Toutiao](toutiao.md) (`toutiao` · service)
+- [Xigua Video](xigua.md) (`xigua` · service)
+- [Volcano Engine](volcengine.md) (`volcengine` · service)
+- [NetEase Mail](netease163mail.md) (`netease163mail` · service)
+- [NetEase Games](neteasegames.md) (`neteasegames` · service)
+- [Baidu Maps](baidumaps.md) (`baidumaps` · service)
+- [Baidu Wiki](baiduwiki.md) (`baiduwiki` · service)
+- [Baidu Wenku](baiduwenku.md) (`baiduwenku` · service)
+- [WeGame](wegame.md) (`wegame` · service)
+- [Honor of Kings CN](honorofkings-cn.md) (`honorofkings-cn` · service)
+- [Honor of Kings Global](honorofkings-global.md) (`honorofkings-global` · service)
+
 ## 其他历史/聚合页面
 
 下列页面不属于当前 `config/service_primary.yaml` 的 90 个生产服务 SSOT，但保留用于历史、聚合或兼容导航；其订阅路径不得脱离当前 `generated/manifest.json` 单独使用。

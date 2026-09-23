@@ -1,66 +1,33 @@
 # TikTok
 
-> 用于匹配 **TikTok** 相关域名/IP 的分流规则（来自上游标准化合并）。
+> TikTok 独立服务页面。运行时规则以当前 Service SSOT、Source immutable lineage 与 `generated/manifest.json` 为准。
 
 | 项目 | 内容 |
-|------|------|
+|---|---|
 | Rule ID | `tiktok` |
 | Primary Ecosystem | **ByteDance** (`bytedance`) |
 | Service Type | service |
-| Tags | bytedance, social |
-| 类型 | domain |
-| Domains | 60 |
-| CIDR | 0 |
-| 最后更新 | 2026-09-01 |
-| Sources | blackmatrix7 / metacubex / v2fly / dler |
-| Confidence | HIGH |
+| 当前数据真源 | `generated/manifest.json` |
 
-## 用途
+## 一键订阅路径
 
-用于匹配 **TikTok** 相关域名/IP 的分流规则（来自上游标准化合并）。
+当前客户端规则统一遵循：
 
-支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+`generated/<client>/<ecosystem>/<service-or-all>/rules.*`
 
-## 一键订阅
+支持客户端：
 
-| 客户端 | 路径 | 链接 |
-|--------|------|------|
-| Mihomo | `generated/mihomo/tiktok.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/tiktok.yaml) |
-| sing-box | `generated/sing-box/tiktok.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/tiktok.json) |
-| Surge | `generated/surge/tiktok.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/tiktok.list) |
-| Shadowrocket | `generated/shadowrocket/tiktok.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/tiktok.list) |
-| Quantumult X | `generated/quantumult-x/tiktok.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/tiktok.list) |
-| Egern | `generated/egern/tiktok.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/tiktok.yaml) |
-| Loon | `generated/loon/tiktok.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/tiktok.list) |
-
-## CDN 镜像（Mihomo）
-
-| 镜像 | 链接 |
-|------|------|
-| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/tiktok.yaml |
-| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/tiktok.yaml |
-| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/tiktok.yaml |
-| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/tiktok.yaml |
+`Mihomo` · `sing-box` · `Surge` · `Shadowrocket` · `Quantumult X` · `Egern` · `Loon`
 
 ## 官方网站
 
-[官方站点](https://www.tiktok.com)
+https://www.tiktok.com/
 
-## 规则来源（Provenance）
+## Provenance
 
-- `blackmatrix7`
-- `metacubex`
-- `v2fly`
-- `dler`
+本服务的 Source 来源、快照、release digest、policy digest 与生成器身份由 immutable lineage 管理；本页不再引用已退休的 `database/services/`、`database/domains/`、旧客户端目录或已退休文档生成脚本。
 
-由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
+## 维护规则
 
-## 数据位置
+本页属于当前文档 SSOT，仅描述服务身份与路径模型；具体域名规则不得在此页重复维护。
 
-- Schema: `database/services/tiktok.yaml`
-- Domains: `database/domains/tiktok.txt`
-- IPs: `database/ips/tiktok.txt`（若有）
-- Product page: `rule/ByteDance/…`（见 generate_rule_pages）
-
----
-_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
