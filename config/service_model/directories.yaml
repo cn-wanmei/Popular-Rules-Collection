@@ -54,7 +54,7 @@ china:
     - oppo
     - vivo
   require_domain_and_ip_coverage: true
-  note: "China/all represents the complete China rule universe except providers explicitly separated into independent service trees."
+  note: "China aggregate represents the complete China rule universe except providers explicitly separated into independent service trees."
 
 providers:
   # Provider aggregates include every declared service under the provider.
