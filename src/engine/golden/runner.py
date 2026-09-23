@@ -92,7 +92,7 @@ def run_golden(run_dir: Path) -> dict[str, Any]:
         service_files = []
         for service_id in sorted(declared_service_ids):
             provider = str((graph["services"][service_id]).get("provider"))
-            path = mihomo_dir / provider / service_id / "rules.yaml"
+            path = mihomo_dir / provider / service_id / f"{service_id}.yaml"
             if path.is_file() and path.stat().st_size > 0:
                 service_files.append(path)
         service_count = len(service_files)
