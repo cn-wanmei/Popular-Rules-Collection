@@ -36,6 +36,7 @@
 
 ### apple
 - [Apple](apple.md) (`apple` · aggregate)
+- [Siri](siri.md) (`siri` · service)
 - [Apple Developer](appledev.md) (`appledev` · service)
 - [App Store](appstore.md) (`appstore` · service)
 
@@ -137,6 +138,7 @@
 
 ### google
 - [Google](google.md) (`google` · aggregate)
+- [GCP](gcp.md) (`gcp` · service · alias review)
 - [Google Cloud](googlecloud.md) (`googlecloud` · service)
 
 ### xai
