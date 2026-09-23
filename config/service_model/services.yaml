@@ -92,3 +92,27 @@ services:
   booking: {id: booking, provider: booking, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   wise: {id: wise, provider: wise, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
   roblox: {id: roblox, provider: roblox, scope: product, visibility: public, status: active, materialization: {state: materialized}, coverage: {state: partial}}
+  googlevoice: {id: googlevoice, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  googleearth: {id: googleearth, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  appleid: {id: appleid, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  applemail: {id: applemail, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  applemedia: {id: applemedia, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  applenews: {id: applenews, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  applefirmware: {id: applefirmware, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  icloudprivaterelay: {id: icloudprivaterelay, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  microsoftedge: {id: microsoftedge, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  bing: {id: bing, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  outlook: {id: outlook, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  office: {id: office, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  wegame: {id: wegame, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  honorofkings_cn: {id: honorofkings_cn, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  honorofkings_global: {id: honorofkings_global, provider: tencent, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  baidumaps: {id: baidumaps, provider: baidu, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  baiduwiki: {id: baiduwiki, provider: baidu, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  baiduwenku: {id: baiduwenku, provider: baidu, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  capcut: {id: capcut, provider: bytedance, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  toutiao: {id: toutiao, provider: bytedance, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  xigua: {id: xigua, provider: bytedance, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  volcengine: {id: volcengine, provider: bytedance, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  netease163mail: {id: netease163mail, provider: netease, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  neteasegames: {id: neteasegames, provider: netease, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
