@@ -7,3 +7,13 @@
 - Rule files: **203**
 
 Do not hand-edit files under this tree. Rebuild the same immutable Run after changing upstream or Canonical inputs.
+
+## Distribution naming
+
+Each entity directory contains one same-named primary rule file. Examples:
+
+- `rule/apple/apple.yaml` — Apple provider aggregate.
+- `rule/apple/appstore/appstore.yaml` — App Store service.
+- `rule/china/china.yaml` — China aggregate.
+
+The synthetic `all/rules.yaml` layer is not part of the V3 contract.
