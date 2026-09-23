@@ -11,7 +11,7 @@ services:
   netease: {primary_category: netease, display_name: NetEase, categories: [netease, china], service_type: aggregate, children: [youdao, neteasemusic, netease163mail, neteasegames]}
   jingdong: {primary_category: jingdong, display_name: JingDong, categories: [jingdong, china], service_type: aggregate}
   microsoft: {primary_category: microsoft, display_name: Microsoft, categories: [microsoft], service_type: aggregate, children: [onedrive, xbox, github, teams, azure, microsoftedge, bing, outlook, office]}
-  google: {primary_category: google, display_name: Google, categories: [google], service_type: aggregate, children: [youtube, googlefcm, googledrive, firebase, gcp, googlecloud, youtubemusic, googlesearch, googlevoice, googleearth, gmail, googlemaps]}
+  google: {primary_category: google, display_name: Google, categories: [google], service_type: aggregate, children: [youtube, googlefcm, googledrive, firebase, gcp, googlecloud, youtubemusic, google-search, googlevoice, googleearth, gmail, googlemaps]}
   amazon: {primary_category: amazon, display_name: Amazon, categories: [amazon, streaming], service_type: aggregate, children: [aws]}
   unionpay: {primary_category: unionpay, display_name: UnionPay, categories: [finance, china], service_type: aggregate, children: [icbc, ccb, abc, boc, cmb, psbc, ceb, bocom, pingan]}
   chinamobile: {primary_category: chinamobile, display_name: ChinaMobile, categories: [china], service_type: service}
@@ -85,7 +85,7 @@ services:
   trello: {primary_category: atlassian, display_name: Trello, categories: [atlassian, developer], service_type: service, parent: atlassian}
   messenger: {primary_category: meta, display_name: Messenger, categories: [meta, social], service_type: service, parent: meta}
   youtubemusic: {primary_category: google, display_name: "YouTube Music", categories: [google, streaming], service_type: service, parent: google}
-  googlesearch: {primary_category: google, display_name: "Google Search", categories: [google], service_type: service, parent: google}
+  google-search: {primary_category: google, display_name: "Google Search", categories: [google], service_type: service, parent: google}
   googlevoice: {primary_category: google, display_name: "Google Voice", categories: [google], service_type: service, parent: google}
   googleearth: {primary_category: google, display_name: "Google Earth", categories: [google], service_type: service, parent: google}
   gmail: {primary_category: google, display_name: Gmail, categories: [google], service_type: service, parent: google}
