@@ -260,13 +260,10 @@ def build_rule_tree(
             continue
         if entity_id in group_ids:
             entity = "group"
-            root_name = "group"
         elif entity_id in aggregate_ids:
             entity = "aggregate"
-            root_name = "aggregate"
         else:
             entity = "unmapped_service"
-            root_name = "unmapped"
         template_key = {
             "group": "human_group",
             "aggregate": "human_aggregate_entity",
