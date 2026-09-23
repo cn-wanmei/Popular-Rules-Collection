@@ -77,7 +77,13 @@ def source_runtime_enabled(source: dict[str, Any]) -> bool:
         return any(
             isinstance(entry, dict)
             and entry.get("enabled") is True
-            and immutable_binding_for(str(entry.get("service") or entry.get("name") or "")) is not None
+            and immutable_binding_for(
+                str(
+                    entry.get("service")
+                    or entry.get("name")
+                    or Path(str(entry.get("path") or "")).stem
+                )
+            ) is not None
             for entry in (source.get("rules") or source.get("files") or [])
         )
     return False
