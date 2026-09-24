@@ -8,21 +8,21 @@
     "singbox",
     "surge"
   ],
-  "collection_date": "2026-09-23",
+  "collection_date": "2026-09-24",
   "file_count": 1739,
   "files": [
     {
-      "file": "_promotion/20260923T140517872828Z-run.json",
+      "file": "_promotion/20260924T002533480494Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "f0413260e09a76a8a7cedda5c2b2c4a81c31d17d2635db902a3e67c9a9213437",
+      "sha256": "4f643bc89b28c5192aa84be099354c8baaead1fd68fc5ea3c07ff7bd4839ccb6",
       "size": 179361
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "f0413260e09a76a8a7cedda5c2b2c4a81c31d17d2635db902a3e67c9a9213437",
+      "sha256": "4f643bc89b28c5192aa84be099354c8baaead1fd68fc5ea3c07ff7bd4839ccb6",
       "size": 179361
     },
     {
@@ -156,18 +156,18 @@
     {
       "file": "egern/apple/apple.yaml",
       "kind": "client_rules",
-      "rule_count": 2012,
+      "rule_count": 2011,
       "scope": "egern",
-      "sha256": "ec973615eaae63efce9a66cc4e11fd188d33732c16d20d8c742c443cbdb0aed8",
-      "size": 51066
+      "sha256": "c3ec0820aae917b6067210adab3c1fcf277f51858b0b2bee180232c92c6c13f4",
+      "size": 51030
     },
     {
       "file": "egern/apple/appledev/appledev.yaml",
       "kind": "client_rules",
-      "rule_count": 78,
+      "rule_count": 38,
       "scope": "egern",
-      "sha256": "984b3335ed629bb4d8f5122ed57cdb8bfad48075f29e33b6ca5a01ea27386dd6",
-      "size": 2028
+      "sha256": "1c395609ac4ded6e3b35327e27f502baee1971d9340ccdd33e57d162bc09124d",
+      "size": 966
     },
     {
       "file": "egern/apple/applemedia/applemedia.yaml",
@@ -308,10 +308,10 @@
     {
       "file": "egern/bytedance/bytedance.yaml",
       "kind": "client_rules",
-      "rule_count": 1098,
+      "rule_count": 1092,
       "scope": "egern",
-      "sha256": "6519f3ff251e3fb82378f25967624f99ddfca1299cbc0ba4ea3810a0dd942103",
-      "size": 23381
+      "sha256": "267cfcfac95e6e4ceaa62ec1417e33c498c0840e4de0ddaf7e10070bfe207d90",
+      "size": 23141
     },
     {
       "file": "egern/bytedance/doubao/doubao.yaml",
@@ -1012,10 +1012,10 @@
     {
       "file": "egern/categories/other/other.yaml",
       "kind": "client_rules",
-      "rule_count": 128716,
+      "rule_count": 128575,
       "scope": "egern",
-      "sha256": "99658e3463b594c3b8badfa6bc335ddd6df36d819e9723e474865034d4d45c7b",
-      "size": 2466138
+      "sha256": "3da0fec52bcf122e92c0d42bd072400e8ce8708aabc3c8f9132138d4c9dd8a60",
+      "size": 2462151
     },
     {
       "file": "egern/categories/paypal/paypal.yaml",
@@ -1428,10 +1428,10 @@
     {
       "file": "egern/google/google.yaml",
       "kind": "client_rules",
-      "rule_count": 1224,
+      "rule_count": 1220,
       "scope": "egern",
-      "sha256": "52f1b40be5fe56b07bdcb56a35c4de043f968300fc8e199222dc51964e0104e4",
-      "size": 27001
+      "sha256": "e81775715d31e0c8e124e4f39366ffd1b231242bd4f37eae35e67753347c0cd6",
+      "size": 26867
     },
     {
       "file": "egern/google/googlecloud/googlecloud.yaml",
@@ -1580,10 +1580,10 @@
     {
       "file": "egern/microsoft/microsoft.yaml",
       "kind": "client_rules",
-      "rule_count": 979,
+      "rule_count": 952,
       "scope": "egern",
-      "sha256": "93b6f27516c57c6a8e67039cb99c3fb1fbd6fe07bd2d6f207199a627679ba71f",
-      "size": 25714
+      "sha256": "1e83e498d6ab3494da53d3c2a09cf3b25a9f7b6386c3748c338bc1771981bdf4",
+      "size": 24337
     },
     {
       "file": "egern/microsoft/onedrive/onedrive.yaml",
@@ -1724,18 +1724,18 @@
     {
       "file": "egern/tencent/tencent.yaml",
       "kind": "client_rules",
-      "rule_count": 848,
+      "rule_count": 745,
       "scope": "egern",
-      "sha256": "9d2996585defffc7bce2ed252c88c9d555646923ddd8c7b2ac07a362b9b6fac0",
-      "size": 17997
+      "sha256": "786210b9ee613ec9729c1d9b296ee88008427f492a50a1613a3de9d2e61ade6b",
+      "size": 15783
     },
     {
       "file": "egern/tencent/tencentcloud/tencentcloud.yaml",
       "kind": "client_rules",
-      "rule_count": 105,
+      "rule_count": 1,
       "scope": "egern",
-      "sha256": "ce1eda3fd4c5770b616180d4389fe8235181cf5420a4ffe0414a8a8549083b66",
-      "size": 2290
+      "sha256": "340b759c37b59fa272e7525dbe1a2f6705b3498530549629b29d983ed711e1fd",
+      "size": 43
     },
     {
       "file": "egern/tencent/tencentmeeting/tencentmeeting.yaml",
@@ -2446,16 +2446,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geosite",
-      "sha256": "01b4e077d5a8a8841d632e7c8fcf983dcc8c646940ea5ea947f4570cd6070070",
-      "size": 3968537
+      "sha256": "7797a50ebebbae9503a0bfdd0c436f45dfe6444a1b5e7d33b53b4a324f9b421e",
+      "size": 3974603
     },
     {
       "file": "geosite/reject_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 191080,
+      "rule_count": 191401,
       "scope": "geosite",
-      "sha256": "6fa6797ea510d086c845ca402f99206e758641b346516a16421779bfceefc201",
-      "size": 6643657
+      "sha256": "eefb3eea516a3094a768b9052cde953a5c3e5c618e36306db0c3fb39edd3578c",
+      "size": 6654217
     },
     {
       "file": "ip/adblock.txt",
@@ -2884,18 +2884,18 @@
     {
       "file": "loon/apple/apple.list",
       "kind": "client_rules",
-      "rule_count": 2012,
+      "rule_count": 2011,
       "scope": "loon",
-      "sha256": "2225911bdc2447c1ce61c9632e69ea62b8f400efa49abfc483661b2d8668173a",
-      "size": 65841
+      "sha256": "9c93345712c1a9bbddfcb2235f18e771fd544e761b52a175b275eeb61a24aefc",
+      "size": 65804
     },
     {
       "file": "loon/apple/appledev/appledev.list",
       "kind": "client_rules",
-      "rule_count": 78,
+      "rule_count": 38,
       "scope": "loon",
-      "sha256": "dbfa23005c75d55e4320788e1619fe1fa882e511d0ca653cff31c6c946226b5f",
-      "size": 2633
+      "sha256": "880ef2af533f4de69013bfcbf0d69c2a9635f1ad051fe5ef692448f6addf25cd",
+      "size": 1251
     },
     {
       "file": "loon/apple/applemedia/applemedia.list",
@@ -3036,10 +3036,10 @@
     {
       "file": "loon/bytedance/bytedance.list",
       "kind": "client_rules",
-      "rule_count": 1098,
+      "rule_count": 1092,
       "scope": "loon",
-      "sha256": "122afc64987963812b8b23967c98e0021903ca9befdfd63035a9014707a0f914",
-      "size": 32066
+      "sha256": "cda72480c052301a858c885784ac18d3f8c5f2a8c02401ae60de1637db10a378",
+      "size": 31820
     },
     {
       "file": "loon/bytedance/doubao/doubao.list",
@@ -3740,10 +3740,10 @@
     {
       "file": "loon/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128578,
+      "rule_count": 128437,
       "scope": "loon",
-      "sha256": "2988d1b4f3302404ebf1eeed69997c56abe3ac1b9fd6d6f676dedc2bd60539d5",
-      "size": 3480393
+      "sha256": "836b83ab93b49f3bae4ed119cdcf2708447a274559d49b9330635d7a695d419e",
+      "size": 3476139
     },
     {
       "file": "loon/categories/paypal/paypal.list",
@@ -4156,10 +4156,10 @@
     {
       "file": "loon/google/google.list",
       "kind": "client_rules",
-      "rule_count": 1224,
+      "rule_count": 1220,
       "scope": "loon",
-      "sha256": "f61fa6e3eecac62e9ed3a04b5abc1976fe6ac836ef03202517ebda437a3918bf",
-      "size": 35955
+      "sha256": "2917007f8f45a3a4b8fdeb64f2d0823fbd7b07301a125b6754096bad0bbc0714",
+      "size": 35796
     },
     {
       "file": "loon/google/googlecloud/googlecloud.list",
@@ -4308,10 +4308,10 @@
     {
       "file": "loon/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 979,
+      "rule_count": 952,
       "scope": "loon",
-      "sha256": "7a8c9fd48cb15c7210acf1c1f1ac8dc8c68d8ef0c63943eebe7f201ed9b30b5e",
-      "size": 32929
+      "sha256": "45dc75e23ad72bec20c7d29892cf49474645f9477add8d99b39b7f6c676855a3",
+      "size": 31525
     },
     {
       "file": "loon/microsoft/onedrive/onedrive.list",
@@ -4452,18 +4452,18 @@
     {
       "file": "loon/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 848,
+      "rule_count": 745,
       "scope": "loon",
-      "sha256": "a5991e344f385e524ae3608fda367fec7a2dd40ba96d04bee1bac112ffb69607",
-      "size": 23980
+      "sha256": "41adfc9ae7c129b017dce9809d6c18babe5735a6c3af4232453862112eec9c81",
+      "size": 21572
     },
     {
       "file": "loon/tencent/tencentcloud/tencentcloud.list",
       "kind": "client_rules",
-      "rule_count": 105,
+      "rule_count": 1,
       "scope": "loon",
-      "sha256": "e2840790020927d91206298d48d2ae637593d187d1456cf4513cc5874d57b8d0",
-      "size": 2462
+      "sha256": "327feaeb8a41e1de71d2f4957fd10a3e5d561f7545e15881ed38c3ef71371d68",
+      "size": 32
     },
     {
       "file": "loon/tencent/tencentmeeting/tencentmeeting.list",
@@ -4700,18 +4700,18 @@
     {
       "file": "mihomo/apple/apple.yaml",
       "kind": "client_rules",
-      "rule_count": 2012,
+      "rule_count": 2011,
       "scope": "mihomo",
-      "sha256": "f9075b0e692a506f34e9c31c8dc675004079dff079d3e0d54fe6a43d1e944131",
-      "size": 73898
+      "sha256": "86aead6712ae2c1330e3d491edd7730b381d697d953961b9683127dc7c559192",
+      "size": 73857
     },
     {
       "file": "mihomo/apple/appledev/appledev.yaml",
       "kind": "client_rules",
-      "rule_count": 78,
+      "rule_count": 38,
       "scope": "mihomo",
-      "sha256": "d5418e57f0815fcc9ee04f215d06c8f0a27f54c61b89a1f66665122b16588a05",
-      "size": 2954
+      "sha256": "b13baf780488fecdd57c121d333ddb2c8941e842bb8c0c7a9a409602efbe6268",
+      "size": 1412
     },
     {
       "file": "mihomo/apple/applemedia/applemedia.yaml",
@@ -4852,10 +4852,10 @@
     {
       "file": "mihomo/bytedance/bytedance.yaml",
       "kind": "client_rules",
-      "rule_count": 1098,
+      "rule_count": 1092,
       "scope": "mihomo",
-      "sha256": "42ff6da49874d4ef85f5cf043355f70002ff4c542cf12dc71946e0024ae81250",
-      "size": 36467
+      "sha256": "b1896834adc04f87809eef43972cb5f976719a500ea75953f0f665a350633725",
+      "size": 36197
     },
     {
       "file": "mihomo/bytedance/doubao/doubao.yaml",
@@ -5556,10 +5556,10 @@
     {
       "file": "mihomo/categories/other/other.yaml",
       "kind": "client_rules",
-      "rule_count": 128716,
+      "rule_count": 128575,
       "scope": "mihomo",
-      "sha256": "72e1761a4feb5950990063bba820a1a7bb3c1a2049ed565650e4651e6684dab9",
-      "size": 4000929
+      "sha256": "7e9163ea6eed7d830e2eaeafbdbed58bc4f274669391da5d02ce7f9a8b984059",
+      "size": 3996111
     },
     {
       "file": "mihomo/categories/paypal/paypal.yaml",
@@ -5972,10 +5972,10 @@
     {
       "file": "mihomo/google/google.yaml",
       "kind": "client_rules",
-      "rule_count": 1224,
+      "rule_count": 1220,
       "scope": "mihomo",
-      "sha256": "416522b5addb93fdc70906034586587551cdda5c4f78f92ccfd98ff375dc4f99",
-      "size": 40860
+      "sha256": "c2aa6414f9a0747b93c17fe2d663ce356f4fc6581ba57c9d3d0e341942bdccb6",
+      "size": 40685
     },
     {
       "file": "mihomo/google/googlecloud/googlecloud.yaml",
@@ -6124,10 +6124,10 @@
     {
       "file": "mihomo/microsoft/microsoft.yaml",
       "kind": "client_rules",
-      "rule_count": 979,
+      "rule_count": 952,
       "scope": "mihomo",
-      "sha256": "6bd03e6d407ffc865de9696d18c2f90499c5c96c253bd731159f21313e32d71c",
-      "size": 36854
+      "sha256": "db3e4394a84bd288e89350e3fd0a1639ea492f693b8ba71fc02ac71944cadace",
+      "size": 35342
     },
     {
       "file": "mihomo/microsoft/onedrive/onedrive.yaml",
@@ -6268,18 +6268,18 @@
     {
       "file": "mihomo/tencent/tencent.yaml",
       "kind": "client_rules",
-      "rule_count": 848,
+      "rule_count": 745,
       "scope": "mihomo",
-      "sha256": "abd1adcd4d5d4ebf92211e9dd06af3fc5caeecdbc5f68a8f0e1c1709c8614001",
-      "size": 27381
+      "sha256": "96a7d395ef26b0e7005208d103c3e93a89726b30045ad2f88fbb1d5b971c5565",
+      "size": 24561
     },
     {
       "file": "mihomo/tencent/tencentcloud/tencentcloud.yaml",
       "kind": "client_rules",
-      "rule_count": 105,
+      "rule_count": 1,
       "scope": "mihomo",
-      "sha256": "4a14d5b0b8978bce24f2b664b96bd46cdd4192b8c7578320b81cf59988d8d114",
-      "size": 2891
+      "sha256": "71d8d00ecb51ecd7d2a7a018a6ff98d258657cf0c1520cfbce526062feefb8f1",
+      "size": 45
     },
     {
       "file": "mihomo/tencent/tencentmeeting/tencentmeeting.yaml",
@@ -6566,16 +6566,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "254d1b98e4f171c514b6ee90cfb8bc492404511474691fc02549d440ccd5f1c0",
-      "size": 387510
+      "sha256": "dc89d10166a0b570c952991f180c50b58a1838a30f249903ce5431503d31c60d",
+      "size": 386652
     },
     {
       "file": "provider/aws_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 11267,
+      "rule_count": 11245,
       "scope": "provider",
-      "sha256": "074167b8a0fbbc24879c6009518693297f39d702ddfeb388383caeb2fd842fed",
-      "size": 481579
+      "sha256": "1e06dbee2fc8ddd19b2a7316f3cca52e596235e5afb904c5539534a489b6be12",
+      "size": 480546
     },
     {
       "file": "provider/cloudflare.txt",
@@ -6614,7 +6614,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "c977772630d786f07787e203d30a4ccd6994b7358a875d5281b9001fb43968bb",
+      "sha256": "c7edbb642db0e9615cab0ec761ac1f628bd9e18ab1111ab0987b89ae892fc4f8",
       "size": 4595
     },
     {
@@ -6630,7 +6630,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "a79301cabbd75ed49e37800adcb7ecfa41b701c2c388f43fb7dd4f701f0a219e",
+      "sha256": "61e6987526adc0e7f50654dcc6e332a41b2badcc6c26efb5de08a98a581a97c8",
       "size": 36972
     },
     {
@@ -6780,18 +6780,18 @@
     {
       "file": "quantumultx/apple/apple.list",
       "kind": "client_rules",
-      "rule_count": 2012,
+      "rule_count": 2011,
       "scope": "quantumultx",
-      "sha256": "00f423cfe6ccd1eb7032312f8e1f25a7d256f25711158ef25456b970f4b3625c",
-      "size": 77939
+      "sha256": "a692d71898365a22291c9ed61a04b7e5b3d92e193d7ad4293b89e032e81e4322",
+      "size": 77896
     },
     {
       "file": "quantumultx/apple/appledev/appledev.list",
       "kind": "client_rules",
-      "rule_count": 78,
+      "rule_count": 38,
       "scope": "quantumultx",
-      "sha256": "85eb3f3b429433fdaf6a5ac6fb5ec0f30784871553df6416e9cf4875ee84ef7c",
-      "size": 3101
+      "sha256": "05a9fdfe806d348830ff1ba5534bfe08aee3d7783b559f384cb28229d0bd8fc4",
+      "size": 1479
     },
     {
       "file": "quantumultx/apple/applemedia/applemedia.list",
@@ -6932,10 +6932,10 @@
     {
       "file": "quantumultx/bytedance/bytedance.list",
       "kind": "client_rules",
-      "rule_count": 1098,
+      "rule_count": 1092,
       "scope": "quantumultx",
-      "sha256": "6e5fa0bb102841c62fa32d77c4dca8212a7489edb1dc9ebff7cbf95733223d9a",
-      "size": 38656
+      "sha256": "82222b2e1b79b56b2ffc645412e4d9e665cd7d1b466a11683ae4d627028bc305",
+      "size": 38374
     },
     {
       "file": "quantumultx/bytedance/doubao/doubao.list",
@@ -7636,10 +7636,10 @@
     {
       "file": "quantumultx/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128578,
+      "rule_count": 128437,
       "scope": "quantumultx",
-      "sha256": "fbfef4771b3274fe0878695783604cf2dd077f3712979bf71e454a54c55c8539",
-      "size": 4252689
+      "sha256": "70988c72e552cdc7ab0d2b0e1fe429fd0d260837c8a3b8568e422d3cdb777a95",
+      "size": 4247383
     },
     {
       "file": "quantumultx/categories/paypal/paypal.list",
@@ -8052,10 +8052,10 @@
     {
       "file": "quantumultx/google/google.list",
       "kind": "client_rules",
-      "rule_count": 1224,
+      "rule_count": 1220,
       "scope": "quantumultx",
-      "sha256": "69a02d8a06be6bcd38bd14b89589e307c205396548e63aa89641d3db8b55842c",
-      "size": 43309
+      "sha256": "23c7a6282d1977da7f33e03026a4b1488cf575a5e075a997207bd5eba7595866",
+      "size": 43126
     },
     {
       "file": "quantumultx/google/googlecloud/googlecloud.list",
@@ -8204,10 +8204,10 @@
     {
       "file": "quantumultx/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 979,
+      "rule_count": 952,
       "scope": "quantumultx",
-      "sha256": "18a1d090456b15ef03c7cc33138c2463e7df940079d3ae54a185dcd00bf45096",
-      "size": 38803
+      "sha256": "cb52980135984123f244a904be04c3a6917992794f7e83a546c4517c26d7f9dd",
+      "size": 37237
     },
     {
       "file": "quantumultx/microsoft/onedrive/onedrive.list",
@@ -8348,18 +8348,18 @@
     {
       "file": "quantumultx/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 848,
+      "rule_count": 745,
       "scope": "quantumultx",
-      "sha256": "ec575508bd2ea95d66d305377162ed3d2e4aad3181228ff2cc7968483a72a213",
-      "size": 29314
+      "sha256": "ca6ccbe79b189fe97abb80a3089ff76eca6f29e1ba77ffeea6688c6f72bbdcbb",
+      "size": 26082
     },
     {
       "file": "quantumultx/tencent/tencentcloud/tencentcloud.list",
       "kind": "client_rules",
-      "rule_count": 105,
+      "rule_count": 1,
       "scope": "quantumultx",
-      "sha256": "015135393d8f54ff2db1aca6810fd65567c3bb9ed59b8b1e28ffdf7d731f4dd3",
-      "size": 3300
+      "sha256": "602242e45a1c3513e72fc67d65f22c1c60fa7a5c00a693e76be74aaae4e88f0c",
+      "size": 38
     },
     {
       "file": "quantumultx/tencent/tencentmeeting/tencentmeeting.list",
@@ -8596,18 +8596,18 @@
     {
       "file": "shadowrocket/apple/apple.list",
       "kind": "client_rules",
-      "rule_count": 2012,
+      "rule_count": 2011,
       "scope": "shadowrocket",
-      "sha256": "2225911bdc2447c1ce61c9632e69ea62b8f400efa49abfc483661b2d8668173a",
-      "size": 65841
+      "sha256": "9c93345712c1a9bbddfcb2235f18e771fd544e761b52a175b275eeb61a24aefc",
+      "size": 65804
     },
     {
       "file": "shadowrocket/apple/appledev/appledev.list",
       "kind": "client_rules",
-      "rule_count": 78,
+      "rule_count": 38,
       "scope": "shadowrocket",
-      "sha256": "dbfa23005c75d55e4320788e1619fe1fa882e511d0ca653cff31c6c946226b5f",
-      "size": 2633
+      "sha256": "880ef2af533f4de69013bfcbf0d69c2a9635f1ad051fe5ef692448f6addf25cd",
+      "size": 1251
     },
     {
       "file": "shadowrocket/apple/applemedia/applemedia.list",
@@ -8748,10 +8748,10 @@
     {
       "file": "shadowrocket/bytedance/bytedance.list",
       "kind": "client_rules",
-      "rule_count": 1098,
+      "rule_count": 1092,
       "scope": "shadowrocket",
-      "sha256": "122afc64987963812b8b23967c98e0021903ca9befdfd63035a9014707a0f914",
-      "size": 32066
+      "sha256": "cda72480c052301a858c885784ac18d3f8c5f2a8c02401ae60de1637db10a378",
+      "size": 31820
     },
     {
       "file": "shadowrocket/bytedance/doubao/doubao.list",
@@ -9452,10 +9452,10 @@
     {
       "file": "shadowrocket/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128578,
+      "rule_count": 128437,
       "scope": "shadowrocket",
-      "sha256": "2988d1b4f3302404ebf1eeed69997c56abe3ac1b9fd6d6f676dedc2bd60539d5",
-      "size": 3480393
+      "sha256": "836b83ab93b49f3bae4ed119cdcf2708447a274559d49b9330635d7a695d419e",
+      "size": 3476139
     },
     {
       "file": "shadowrocket/categories/paypal/paypal.list",
@@ -9868,10 +9868,10 @@
     {
       "file": "shadowrocket/google/google.list",
       "kind": "client_rules",
-      "rule_count": 1224,
+      "rule_count": 1220,
       "scope": "shadowrocket",
-      "sha256": "f61fa6e3eecac62e9ed3a04b5abc1976fe6ac836ef03202517ebda437a3918bf",
-      "size": 35955
+      "sha256": "2917007f8f45a3a4b8fdeb64f2d0823fbd7b07301a125b6754096bad0bbc0714",
+      "size": 35796
     },
     {
       "file": "shadowrocket/google/googlecloud/googlecloud.list",
@@ -10020,10 +10020,10 @@
     {
       "file": "shadowrocket/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 979,
+      "rule_count": 952,
       "scope": "shadowrocket",
-      "sha256": "7a8c9fd48cb15c7210acf1c1f1ac8dc8c68d8ef0c63943eebe7f201ed9b30b5e",
-      "size": 32929
+      "sha256": "45dc75e23ad72bec20c7d29892cf49474645f9477add8d99b39b7f6c676855a3",
+      "size": 31525
     },
     {
       "file": "shadowrocket/microsoft/onedrive/onedrive.list",
@@ -10164,18 +10164,18 @@
     {
       "file": "shadowrocket/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 848,
+      "rule_count": 745,
       "scope": "shadowrocket",
-      "sha256": "a5991e344f385e524ae3608fda367fec7a2dd40ba96d04bee1bac112ffb69607",
-      "size": 23980
+      "sha256": "41adfc9ae7c129b017dce9809d6c18babe5735a6c3af4232453862112eec9c81",
+      "size": 21572
     },
     {
       "file": "shadowrocket/tencent/tencentcloud/tencentcloud.list",
       "kind": "client_rules",
-      "rule_count": 105,
+      "rule_count": 1,
       "scope": "shadowrocket",
-      "sha256": "e2840790020927d91206298d48d2ae637593d187d1456cf4513cc5874d57b8d0",
-      "size": 2462
+      "sha256": "327feaeb8a41e1de71d2f4957fd10a3e5d561f7545e15881ed38c3ef71371d68",
+      "size": 32
     },
     {
       "file": "shadowrocket/tencent/tencentmeeting/tencentmeeting.list",
@@ -10414,16 +10414,16 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "4ef9131b7074d770d6b125697244f63dacc85ad4897b7dc387107abaddf868f3",
-      "size": 61216
+      "sha256": "f232c85f4270a51052761bf03bb4e2704f87961679af75cda2f3cea43a1afcac",
+      "size": 61175
     },
     {
       "file": "singbox/apple/appledev/appledev.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "5229410eb5132e00215c650932135a962776e2cb8634a919181c35f259f553ca",
-      "size": 2480
+      "sha256": "fca51182a1e24101c2ab28ce2ce0aab9c57ee3a9a0bca896ab366cf691e6d210",
+      "size": 1218
     },
     {
       "file": "singbox/apple/applemedia/applemedia.json",
@@ -10566,8 +10566,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "752a6485535a6f6dcc0e70569434e0edc58b5aa065b053f2719c114e94686714",
-      "size": 28961
+      "sha256": "5eaf894a115c9da41d6b4fe4632830d47595dd036bba3b5dfeacb05c55ccda13",
+      "size": 28691
     },
     {
       "file": "singbox/bytedance/doubao/doubao.json",
@@ -11270,8 +11270,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "33dbe0f68db114b869acbac4606da49ef255fcbf9ae711cae043130e2894ef03",
-      "size": 3109822
+      "sha256": "2bf27296e93416e9fb4c8ae72fa4fb9241ee342aeec4505f331fae3c7bfda285",
+      "size": 3105130
     },
     {
       "file": "singbox/categories/paypal/paypal.json",
@@ -11686,8 +11686,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "d02480195a9086f0c8132d419074224afd519911fc6cde1041572080b95f9e8c",
-      "size": 33211
+      "sha256": "66bcd1829f3a5a71991f02785f2d5e5cabee35548ed243edd31242e1ea78889d",
+      "size": 33057
     },
     {
       "file": "singbox/google/googlecloud/googlecloud.json",
@@ -11838,8 +11838,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "c5de8e92f07c5a4d23d3f328408474ffb1a58e83e4698d9199eb7e9a200e5b23",
-      "size": 30699
+      "sha256": "c409d63d021df98a2427cd5c39029a8b45e692b9b3d9164d52391b77e32fda19",
+      "size": 29187
     },
     {
       "file": "singbox/microsoft/onedrive/onedrive.json",
@@ -11982,16 +11982,16 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "b3d560c265fd4002fc9312e0c0b5a83e5153c0a4d023780d4c79694e9126c76c",
-      "size": 22313
+      "sha256": "8fb3e44adc8328c9add9c3cdf9b923989a3de730c47a04f608f1657db822562f",
+      "size": 19598
     },
     {
       "file": "singbox/tencent/tencentcloud/tencentcloud.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "ac781f4eb2747c973be9882980dc640855a33a70ae8978c04097fd8ef7048e47",
-      "size": 2877
+      "sha256": "30a72b4a74d5c40af2ff8a93aa092709876916c49780371a34a51f71777ef0b4",
+      "size": 110
     },
     {
       "file": "singbox/tencent/tencentmeeting/tencentmeeting.json",
@@ -12228,18 +12228,18 @@
     {
       "file": "surge/apple/apple.list",
       "kind": "client_rules",
-      "rule_count": 2012,
+      "rule_count": 2011,
       "scope": "surge",
-      "sha256": "2225911bdc2447c1ce61c9632e69ea62b8f400efa49abfc483661b2d8668173a",
-      "size": 65841
+      "sha256": "9c93345712c1a9bbddfcb2235f18e771fd544e761b52a175b275eeb61a24aefc",
+      "size": 65804
     },
     {
       "file": "surge/apple/appledev/appledev.list",
       "kind": "client_rules",
-      "rule_count": 78,
+      "rule_count": 38,
       "scope": "surge",
-      "sha256": "dbfa23005c75d55e4320788e1619fe1fa882e511d0ca653cff31c6c946226b5f",
-      "size": 2633
+      "sha256": "880ef2af533f4de69013bfcbf0d69c2a9635f1ad051fe5ef692448f6addf25cd",
+      "size": 1251
     },
     {
       "file": "surge/apple/applemedia/applemedia.list",
@@ -12380,10 +12380,10 @@
     {
       "file": "surge/bytedance/bytedance.list",
       "kind": "client_rules",
-      "rule_count": 1098,
+      "rule_count": 1092,
       "scope": "surge",
-      "sha256": "122afc64987963812b8b23967c98e0021903ca9befdfd63035a9014707a0f914",
-      "size": 32066
+      "sha256": "cda72480c052301a858c885784ac18d3f8c5f2a8c02401ae60de1637db10a378",
+      "size": 31820
     },
     {
       "file": "surge/bytedance/doubao/doubao.list",
@@ -13084,10 +13084,10 @@
     {
       "file": "surge/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128578,
+      "rule_count": 128437,
       "scope": "surge",
-      "sha256": "2988d1b4f3302404ebf1eeed69997c56abe3ac1b9fd6d6f676dedc2bd60539d5",
-      "size": 3480393
+      "sha256": "836b83ab93b49f3bae4ed119cdcf2708447a274559d49b9330635d7a695d419e",
+      "size": 3476139
     },
     {
       "file": "surge/categories/paypal/paypal.list",
@@ -13500,10 +13500,10 @@
     {
       "file": "surge/google/google.list",
       "kind": "client_rules",
-      "rule_count": 1224,
+      "rule_count": 1220,
       "scope": "surge",
-      "sha256": "f61fa6e3eecac62e9ed3a04b5abc1976fe6ac836ef03202517ebda437a3918bf",
-      "size": 35955
+      "sha256": "2917007f8f45a3a4b8fdeb64f2d0823fbd7b07301a125b6754096bad0bbc0714",
+      "size": 35796
     },
     {
       "file": "surge/google/googlecloud/googlecloud.list",
@@ -13652,10 +13652,10 @@
     {
       "file": "surge/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 979,
+      "rule_count": 952,
       "scope": "surge",
-      "sha256": "7a8c9fd48cb15c7210acf1c1f1ac8dc8c68d8ef0c63943eebe7f201ed9b30b5e",
-      "size": 32929
+      "sha256": "45dc75e23ad72bec20c7d29892cf49474645f9477add8d99b39b7f6c676855a3",
+      "size": 31525
     },
     {
       "file": "surge/microsoft/onedrive/onedrive.list",
@@ -13796,18 +13796,18 @@
     {
       "file": "surge/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 848,
+      "rule_count": 745,
       "scope": "surge",
-      "sha256": "a5991e344f385e524ae3608fda367fec7a2dd40ba96d04bee1bac112ffb69607",
-      "size": 23980
+      "sha256": "41adfc9ae7c129b017dce9809d6c18babe5735a6c3af4232453862112eec9c81",
+      "size": 21572
     },
     {
       "file": "surge/tencent/tencentcloud/tencentcloud.list",
       "kind": "client_rules",
-      "rule_count": 105,
+      "rule_count": 1,
       "scope": "surge",
-      "sha256": "e2840790020927d91206298d48d2ae637593d187d1456cf4513cc5874d57b8d0",
-      "size": 2462
+      "sha256": "327feaeb8a41e1de71d2f4957fd10a3e5d561f7545e15881ed38c3ef71371d68",
+      "size": 32
     },
     {
       "file": "surge/tencent/tencentmeeting/tencentmeeting.list",
@@ -13922,7 +13922,7 @@
       "size": 4409
     }
   ],
-  "generated_at": "2026-09-23T14:11:58.425561+00:00",
+  "generated_at": "2026-09-24T00:33:16.136152+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "network_dataset_directories": [
     "asn",
