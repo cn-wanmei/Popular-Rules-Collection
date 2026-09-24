@@ -1,5 +1,8 @@
 <a id="top"></a>
 
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/fluent/service.svg" alt="服务集图标" width="72" height="72">
+
+
 # aggregate — 服务集说明
 
 > 当前 `rule/` 没有顶级聚合文件 `aggregate/aggregate.yaml`，因此本页是服务集导航，不伪造不存在的订阅文件。
