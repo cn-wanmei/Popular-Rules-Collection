@@ -1,7 +1,7 @@
 {
   "schema": "prc_icon_library_v4",
   "version": 4,
-  "release": "2026.09.25-prc-icon-matrix-2",
+  "release": "2026.09.25-prc-icon-matrix-3",
   "updated": "2026-09-25",
   "official_layer": {
     "id": "official",
@@ -9,15 +9,78 @@
     "rule": "仅复用已有可信 brand.* 身份；不把 placeholder 或 generic semantic 图标视为官方品牌"
   },
   "style_layers": [
-    {"id":"lucide","name":"Lucide","style":"refined-outline","license":"ISC","source":"https://lucide.dev/icons/","usage":"本地自有 semantic glyph；强调轻量、留白、圆角和连接节点"},
-    {"id":"tabler","name":"Tabler Icons","style":"precision-outline","license":"MIT","source":"https://tabler.io/icons","usage":"本地自有 semantic glyph；强调网格、细线和高识别度结构"},
-    {"id":"phosphor","name":"Phosphor","style":"bold-geometric","license":"MIT","source":"https://phosphoricons.com/","usage":"本地自有 semantic glyph；强调几何轮廓、实心节点与视觉重量"},
-    {"id":"material-symbols","name":"Material Symbols","style":"rounded-filled","license":"Apache-2.0","source":"https://fonts.google.com/icons","usage":"本地自有 semantic glyph；强调块面、圆角和信息层级"},
-    {"id":"fluent","name":"Fluent UI System Icons","style":"layered-soft","license":"MIT","source":"https://github.com/microsoft/fluentui-system-icons","usage":"本地自有 semantic glyph；强调前后层、柔和圆角和企业 UI 气质"},
-    {"id":"heroicons","name":"Heroicons","style":"shield-outline","license":"MIT","source":"https://heroicons.com/","usage":"本地自有 semantic glyph；强调安全、结构和清晰 outline"},
-    {"id":"remix","name":"Remix Icon","style":"stacked-linefill","license":"Remix Icon License v1.0","source":"https://remixicon.com/","usage":"本地自有 semantic glyph；强调 line/fill 对比与层叠结构"},
-    {"id":"bootstrap","name":"Bootstrap Icons","style":"balanced-outline","license":"MIT","source":"https://icons.getbootstrap.com/","usage":"本地自有 semantic glyph；强调稳定比例、通用 UI 和小尺寸可读性"},
-    {"id":"solar","name":"Solar Icons","style":"radial-accent","license":"MIT + CC BY 4.0 third-party elements","source":"https://solar-icons.com/","usage":"本地自有 semantic glyph；强调中心焦点、轨道和动态能量感"}
+    {
+      "id": "lucide",
+      "name": "Lucide",
+      "style": "refined-outline",
+      "license": "ISC",
+      "source": "https://lucide.dev/icons/",
+      "usage": "本地自有 semantic glyph；浏览器容器、轻线条、圆角、路由焦点"
+    },
+    {
+      "id": "tabler",
+      "name": "Tabler Icons",
+      "style": "precision-stack",
+      "license": "MIT",
+      "source": "https://tabler.io/icons",
+      "usage": "本地自有 semantic glyph；堆叠条目、精准网格、离散节点"
+    },
+    {
+      "id": "phosphor",
+      "name": "Phosphor",
+      "style": "bold-geometric",
+      "license": "MIT",
+      "source": "https://phosphoricons.com/",
+      "usage": "本地自有 semantic glyph；粗轮廓、几何外形、高识别节点"
+    },
+    {
+      "id": "material-symbols",
+      "name": "Material Symbols",
+      "style": "rounded-filled",
+      "license": "Apache-2.0",
+      "source": "https://fonts.google.com/icons",
+      "usage": "本地自有 semantic glyph；大色块、圆角容器、信息层级"
+    },
+    {
+      "id": "fluent",
+      "name": "Fluent UI System Icons",
+      "style": "layered-soft",
+      "license": "MIT",
+      "source": "https://github.com/microsoft/fluentui-system-icons",
+      "usage": "本地自有 semantic glyph；前后叠层、柔和圆角、企业 UI"
+    },
+    {
+      "id": "heroicons",
+      "name": "Heroicons",
+      "style": "secure-outline",
+      "license": "MIT",
+      "source": "https://heroicons.com/",
+      "usage": "本地自有 semantic glyph；边界、中心网络、清晰 outline"
+    },
+    {
+      "id": "remix",
+      "name": "Remix Icon",
+      "style": "stacked-linefill",
+      "license": "Remix Icon License v1.0",
+      "source": "https://remixicon.com/",
+      "usage": "本地自有 semantic glyph；line/fill 对比、层叠、偏心焦点"
+    },
+    {
+      "id": "hugeicons",
+      "name": "Hugeicons",
+      "style": "bulk-rounded",
+      "license": "MIT (free set)",
+      "source": "https://github.com/hugeicons/hugeicons",
+      "usage": "本地自有 semantic glyph；厚重圆角、bulk 层次、紧凑结构"
+    },
+    {
+      "id": "solar",
+      "name": "Solar Icons",
+      "style": "radial-orbit",
+      "license": "MIT + upstream-specific terms may apply to third-party elements",
+      "source": "https://solar-icons.com/",
+      "usage": "本地自有 semantic glyph；中心焦点、轨道、八向节奏"
+    }
   ],
   "coverage": {
     "rule_entries": 262,
@@ -33,7 +96,20 @@
   },
   "local_assets": {
     "license": "CC0-1.0",
-    "note": "九种风格均为本仓库自有 semantic glyph；仅参考对应开放图标库的设计语言，不复制第三方图标源码",
-    "generated_by": "PRC Icon Library V4"
+    "note": "九种 active fallback 风格均为本仓库自有 semantic glyph；第三方图标库仅作为视觉设计语言参考，不复制原始 SVG",
+    "generated_by": "PRC Icon Library V4 — Visual Rebuild"
+  },
+  "visual_contract": {
+    "canvas": "64x64",
+    "safe_margin": "约 8px",
+    "default_weight": "2.25–3.4px",
+    "philosophy": "先轮廓、再结构、最后焦点；拒绝无语义装饰",
+    "constraints": [
+      "不嵌入文字",
+      "不嵌入第三方 Logo",
+      "不使用 image / foreignObject / script / 外部资源",
+      "fallback 只表达服务语义，不冒充品牌身份",
+      "16/20/24px 仍需保留主轮廓与焦点"
+    ]
   }
 }
