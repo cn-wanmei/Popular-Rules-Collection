@@ -17,7 +17,7 @@
 
 ## 2. 本次重构
 
-已建立 `docs/services/**/README.md` 独立服务文档体系，包含服务集、独立服务、子服务、七客户端 Raw、rule_count、SHA-256、更新时间、Run/IR、Icon System 3 身份和使用方式。
+已建立 `docs/services/**/README.md` 独立服务文档体系，包含服务集、独立服务、子服务、七客户端 Raw、rule_count、SHA-256、更新时间、Run/IR、Icon Library V4 身份和使用方式。
 
 已建立 `docs/SERVICE_CATALOG.md`，按顶级服务集组织 262 条规则索引记录。
 
@@ -28,8 +28,8 @@
 - `docs/USAGE.md`：修正七客户端实际目录与使用方式。
 - `docs/architecture.md`：修正 `rule/manifest.json` 漂移，当前索引为 `rule/_index.yaml`。
 - `docs/rule-layout.md`：标记为历史 V1 Reference，避免与当前 V3 混淆。
-- `docs/CLIENT_ICON_PROFILES.md`、`docs/CLIENT_ICON_URLS.md`：切换到 Current Icon System 3。
-- `docs/ICON_LIBRARY.md`、`docs/ICON_ENGINE.md`、`docs/POLICY_ICONS.md`：更新 Current V3 SSOT 边界。
+- `docs/CLIENT_ICON_PROFILES.md`、`docs/CLIENT_ICON_URLS.md`：切换到 Current Icon Library V4。
+- `docs/ICON_LIBRARY.md`、`docs/ICON_ENGINE.md`、`docs/POLICY_ICONS.md`：更新 Current V4 SSOT 边界。
 - `docs/RULE_USAGE_GUIDE.md`：更新为服务目录驱动的当前使用说明。
 
 ## 4. 统计口径特别说明
@@ -53,4 +53,4 @@
 
 ## 7. Icon V4 重构
 
-当前 Rule Index 262 条记录实现 100% 图标覆盖：86 条可信品牌图精确复用、49 条可信品牌图安全继承、127 条九风格 semantic fallback。缺失身份不使用假品牌 Logo。
+当前 Rule Index 262 条记录实现 100% 图标覆盖：85 条可信品牌图精确复用、49 条可信品牌图安全继承、128 条九风格 semantic fallback。缺失身份不使用假品牌 Logo。
