@@ -1,6 +1,6 @@
 # 文档一致性审计
 
-> 审计基线：2026-09-24 Release；当前规则与发行数据直接读取 `rule/_index.yaml`、`generated/manifest.json` 和 Icon System 3 当前 Release。
+> 审计基线：2026-09-24 Release；当前规则与发行数据直接读取 `rule/_index.yaml`、`generated/manifest.json` 和 Icon Library V4 当前 Release。
 
 ## 1. 发行快照
 
@@ -53,4 +53,4 @@
 
 ## 7. Icon V4 重构
 
-当前 Rule Index 262 条记录实现 100% 图标覆盖：92 条精确复用、52 条安全继承、118 条九风格 semantic fallback。缺失身份不使用假品牌 Logo。
+当前 Rule Index 262 条记录实现 100% 图标覆盖：86 条可信品牌图精确复用、49 条可信品牌图安全继承、127 条九风格 semantic fallback。缺失身份不使用假品牌 Logo。

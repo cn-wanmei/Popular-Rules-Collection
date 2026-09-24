@@ -93,7 +93,7 @@
       "display_name": "Adobe",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/adobe.png",
         "identity": "brand.adobe",
         "role": "service",
@@ -118,7 +118,7 @@
       "display_name": "Airbnb",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/airbnb.png",
         "identity": "brand.airbnb",
         "role": "service",
@@ -131,7 +131,7 @@
       "display_name": "Airbnb",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/airbnb.png",
         "identity": "brand.airbnb",
         "role": "service",
@@ -144,7 +144,7 @@
       "display_name": "1688",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/1688.png",
         "identity": "brand.1688",
         "role": "service",
@@ -157,7 +157,7 @@
       "display_name": "Alibaba",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/alibaba.png",
         "identity": "brand.alibaba",
         "role": "service",
@@ -170,7 +170,7 @@
       "display_name": "Alipay",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/alipay.png",
         "identity": "brand.alipay",
         "role": "service",
@@ -195,7 +195,7 @@
       "display_name": "Cainiao",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/cainiao.png",
         "identity": "brand.cainiao",
         "role": "service",
@@ -208,7 +208,7 @@
       "display_name": "DingTalk",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/dingding.png",
         "identity": "brand.dingding",
         "role": "service",
@@ -243,13 +243,12 @@
       "path": "alibaba/taobao/taobao.yaml",
       "id": "taobao",
       "display_name": "Taobao",
-      "primary": "official",
+      "primary": "material-symbols",
       "icon": {
-        "type": "existing-v3",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/taobao.png",
-        "identity": "brand.placeholder",
-        "role": "service",
-        "digest": "9ade8c0dd461c72a86657f7c35417a625ea38eeab43fc45b3c945223ab361f77"
+        "type": "style-fallback",
+        "style": "material-symbols",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/material-symbols/service.svg",
+        "identity": "semantic.fallback.material-symbols"
       }
     },
     {
@@ -294,7 +293,7 @@
       "display_name": "Amazon",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/amazon.png",
         "identity": "brand.amazon",
         "role": "service",
@@ -307,7 +306,7 @@
       "display_name": "AWS",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/aws.png",
         "identity": "brand.aws",
         "role": "service",
@@ -332,7 +331,7 @@
       "display_name": "Twitch",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/twitch.png",
         "identity": "brand.twitch",
         "role": "service",
@@ -345,7 +344,7 @@
       "display_name": "Anthropic",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/anthropic.png",
         "identity": "brand.anthropic",
         "role": "service",
@@ -358,7 +357,7 @@
       "display_name": "Anthropic",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/anthropic.png",
         "identity": "brand.anthropic",
         "role": "service",
@@ -371,7 +370,7 @@
       "display_name": "Apple",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/apple.png",
         "identity": "brand.apple",
         "role": "service",
@@ -420,7 +419,7 @@
       "display_name": "Apple TV",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/appletv.png",
         "identity": "brand.appletv",
         "role": "service",
@@ -445,7 +444,7 @@
       "display_name": "Atlassian",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/atlassian.png",
         "identity": "brand.atlassian",
         "role": "service",
@@ -458,7 +457,7 @@
       "display_name": "Trello",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/trello.png",
         "identity": "brand.trello",
         "role": "service",
@@ -495,7 +494,7 @@
       "display_name": "Baidu",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/baidu.png",
         "identity": "brand.baidu",
         "role": "service",
@@ -544,7 +543,7 @@
       "display_name": "Bilibili",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/bilibili.png",
         "identity": "brand.bilibili",
         "role": "service",
@@ -557,7 +556,7 @@
       "display_name": "Bilibili",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/bilibili.png",
         "identity": "brand.bilibili",
         "role": "service",
@@ -570,7 +569,7 @@
       "display_name": "Binance",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/binance.png",
         "identity": "brand.binance",
         "role": "service",
@@ -583,7 +582,7 @@
       "display_name": "Binance",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/binance.png",
         "identity": "brand.binance",
         "role": "service",
@@ -620,7 +619,7 @@
       "display_name": "Bluesky",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/bluesky.png",
         "identity": "brand.bluesky",
         "role": "service",
@@ -633,7 +632,7 @@
       "display_name": "Bluesky",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/bluesky.png",
         "identity": "brand.bluesky",
         "role": "service",
@@ -694,7 +693,7 @@
       "display_name": "Booking.com",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/booking.png",
         "identity": "brand.booking",
         "role": "service",
@@ -707,7 +706,7 @@
       "display_name": "Booking.com",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/booking.png",
         "identity": "brand.booking",
         "role": "service",
@@ -744,7 +743,7 @@
       "display_name": "Canva",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/canva.png",
         "identity": "brand.canva",
         "role": "service",
@@ -757,7 +756,7 @@
       "display_name": "Canva",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/canva.png",
         "identity": "brand.canva",
         "role": "service",
@@ -852,91 +851,84 @@
       "path": "china/china.yaml",
       "id": "china",
       "display_name": "China",
-      "primary": "official",
+      "primary": "solar",
       "icon": {
-        "type": "existing-v3",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/china.png",
-        "identity": "semantic.china",
-        "role": "strategy",
-        "digest": "a75da3d0c09c3974679f94018d96a8d96a3c4a3c6b1c3fb257f551330df4cf2d"
+        "type": "style-fallback",
+        "style": "solar",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/solar/service.svg",
+        "identity": "semantic.fallback.solar"
       }
     },
     {
       "path": "chinamobile/chinamobile.yaml",
       "id": "chinamobile_aggregate",
       "display_name": "China Mobile",
-      "primary": "official",
+      "primary": "heroicons",
       "icon": {
-        "type": "existing-v3",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/chinamobile.png",
-        "identity": "semantic.chinamobile",
-        "role": "special",
-        "digest": "d0e3b2a0742b6f32c19f90f1fdd944f3421d79fcb141b735ee6dd76868a2411f"
+        "type": "style-fallback",
+        "style": "heroicons",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/heroicons/service.svg",
+        "identity": "semantic.fallback.heroicons"
       }
     },
     {
       "path": "chinamobile/chinamobile/chinamobile.yaml",
       "id": "chinamobile",
       "display_name": "China Mobile",
-      "primary": "official",
+      "primary": "bootstrap",
       "icon": {
-        "type": "existing-v3",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/chinamobile.png",
-        "identity": "semantic.chinamobile",
-        "role": "special",
-        "digest": "d0e3b2a0742b6f32c19f90f1fdd944f3421d79fcb141b735ee6dd76868a2411f"
+        "type": "style-fallback",
+        "style": "bootstrap",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/bootstrap/service.svg",
+        "identity": "semantic.fallback.bootstrap"
       }
     },
     {
       "path": "chinatelecom/chinatelecom.yaml",
       "id": "chinatelecom_aggregate",
       "display_name": "China Telecom",
-      "primary": "official",
+      "primary": "tabler",
       "icon": {
-        "type": "existing-v3",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/chinatelecom.png",
-        "identity": "semantic.chinatelecom",
-        "role": "special",
-        "digest": "5e8d06f054c333623fba1e1819a916be9256c83f8e455d23eae68e6e597f3a69"
+        "type": "style-fallback",
+        "style": "tabler",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/tabler/service.svg",
+        "identity": "semantic.fallback.tabler"
       }
     },
     {
       "path": "chinatelecom/chinatelecom/chinatelecom.yaml",
       "id": "chinatelecom",
       "display_name": "China Telecom",
-      "primary": "official",
+      "primary": "remix",
       "icon": {
-        "type": "existing-v3",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/chinatelecom.png",
-        "identity": "semantic.chinatelecom",
-        "role": "special",
-        "digest": "5e8d06f054c333623fba1e1819a916be9256c83f8e455d23eae68e6e597f3a69"
+        "type": "style-fallback",
+        "style": "remix",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/remix/service.svg",
+        "identity": "semantic.fallback.remix"
       }
     },
     {
       "path": "chinaunicom/chinaunicom.yaml",
       "id": "chinaunicom_aggregate",
       "display_name": "China Unicom",
-      "primary": "official",
+      "primary": "lucide",
       "icon": {
-        "type": "existing-v3",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/chinaunicom.png",
-        "identity": "semantic.chinaunicom",
-        "role": "special",
-        "digest": "51767422a6eed9d8d00f45560288430d375281ca2c4e77fbeff202e2060bd1bc"
+        "type": "style-fallback",
+        "style": "lucide",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/lucide/service.svg",
+        "identity": "semantic.fallback.lucide"
       }
     },
     {
       "path": "chinaunicom/chinaunicom/chinaunicom.yaml",
       "id": "chinaunicom",
       "display_name": "China Unicom",
-      "primary": "official",
+      "primary": "solar",
       "icon": {
-        "type": "existing-v3",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/chinaunicom.png",
-        "identity": "semantic.chinaunicom",
-        "role": "special",
-        "digest": "51767422a6eed9d8d00f45560288430d375281ca2c4e77fbeff202e2060bd1bc"
+        "type": "style-fallback",
+        "style": "solar",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/solar/service.svg",
+        "identity": "semantic.fallback.solar"
       }
     },
     {
@@ -945,7 +937,7 @@
       "display_name": "Cloudflare",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/cloudflare.png",
         "identity": "brand.cloudflare",
         "role": "service",
@@ -1006,7 +998,7 @@
       "display_name": "Cursor",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/cursor.png",
         "identity": "brand.cursor",
         "role": "service",
@@ -1019,7 +1011,7 @@
       "display_name": "Cursor",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/cursor.png",
         "identity": "brand.cursor",
         "role": "service",
@@ -1080,7 +1072,7 @@
       "display_name": "DigitalOcean",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/digitalocean.png",
         "identity": "brand.digitalocean",
         "role": "service",
@@ -1093,7 +1085,7 @@
       "display_name": "DigitalOcean",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/digitalocean.png",
         "identity": "brand.digitalocean",
         "role": "service",
@@ -1142,7 +1134,7 @@
       "display_name": "Docker",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/docker.png",
         "identity": "brand.docker",
         "role": "service",
@@ -1155,7 +1147,7 @@
       "display_name": "Docker",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/docker.png",
         "identity": "brand.docker",
         "role": "service",
@@ -1192,7 +1184,7 @@
       "display_name": "Dropbox",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/dropbox.png",
         "identity": "brand.dropbox",
         "role": "service",
@@ -1205,7 +1197,7 @@
       "display_name": "Dropbox",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/dropbox.png",
         "identity": "brand.dropbox",
         "role": "service",
@@ -1218,7 +1210,7 @@
       "display_name": "Electronic Arts",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/ea.png",
         "identity": "brand.ea",
         "role": "service",
@@ -1231,7 +1223,7 @@
       "display_name": "Electronic Arts",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/ea.png",
         "identity": "brand.ea",
         "role": "service",
@@ -1244,7 +1236,7 @@
       "display_name": "eBay",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/ebay.png",
         "identity": "brand.ebay",
         "role": "service",
@@ -1257,7 +1249,7 @@
       "display_name": "eBay",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/ebay.png",
         "identity": "brand.ebay",
         "role": "service",
@@ -1294,7 +1286,7 @@
       "display_name": "Emby",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/emby.png",
         "identity": "brand.emby",
         "role": "service",
@@ -1307,7 +1299,7 @@
       "display_name": "Emby",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/emby.png",
         "identity": "brand.emby",
         "role": "service",
@@ -1320,7 +1312,7 @@
       "display_name": "Epic Games",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/epic.png",
         "identity": "brand.epic",
         "role": "service",
@@ -1333,7 +1325,7 @@
       "display_name": "Epic Games",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/epic.png",
         "identity": "brand.epic",
         "role": "service",
@@ -1346,7 +1338,7 @@
       "display_name": "Figma",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/figma.png",
         "identity": "brand.figma",
         "role": "service",
@@ -1359,7 +1351,7 @@
       "display_name": "Figma",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/figma.png",
         "identity": "brand.figma",
         "role": "service",
@@ -1396,7 +1388,7 @@
       "display_name": "GitLab",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/gitlab.png",
         "identity": "brand.gitlab",
         "role": "service",
@@ -1409,7 +1401,7 @@
       "display_name": "GitLab",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/gitlab.png",
         "identity": "brand.gitlab",
         "role": "service",
@@ -1422,7 +1414,7 @@
       "display_name": "Firebase",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/firebase.png",
         "identity": "brand.firebase",
         "role": "service",
@@ -1447,7 +1439,7 @@
       "display_name": "Google",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/google.png",
         "identity": "brand.google",
         "role": "service",
@@ -1520,7 +1512,7 @@
       "display_name": "HBO",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/hbo.png",
         "identity": "brand.hbo",
         "role": "service",
@@ -1533,7 +1525,7 @@
       "display_name": "HBO",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/hbo.png",
         "identity": "brand.hbo",
         "role": "service",
@@ -1582,7 +1574,7 @@
       "display_name": "Huawei",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/huawei.png",
         "identity": "brand.huawei",
         "role": "service",
@@ -1619,7 +1611,7 @@
       "display_name": "HashiCorp",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/hashicorp.png",
         "identity": "brand.hashicorp",
         "role": "service",
@@ -1692,7 +1684,7 @@
       "display_name": "JetBrains",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/jetbrains.png",
         "identity": "brand.jetbrains",
         "role": "service",
@@ -1705,7 +1697,7 @@
       "display_name": "JetBrains",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/jetbrains.png",
         "identity": "brand.jetbrains",
         "role": "service",
@@ -1742,7 +1734,7 @@
       "display_name": "KakaoTalk",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/kakaotalk.png",
         "identity": "brand.kakaotalk",
         "role": "service",
@@ -1755,7 +1747,7 @@
       "display_name": "KakaoTalk",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/kakaotalk.png",
         "identity": "brand.kakaotalk",
         "role": "service",
@@ -1864,7 +1856,7 @@
       "display_name": "LINE",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/line.png",
         "identity": "brand.line",
         "role": "service",
@@ -1877,7 +1869,7 @@
       "display_name": "LINE",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/line.png",
         "identity": "brand.line",
         "role": "service",
@@ -1890,7 +1882,7 @@
       "display_name": "Meituan",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/meituan.png",
         "identity": "brand.meituan",
         "role": "service",
@@ -1903,7 +1895,7 @@
       "display_name": "Meituan",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/meituan.png",
         "identity": "brand.meituan",
         "role": "service",
@@ -1916,7 +1908,7 @@
       "display_name": "Facebook",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/facebook.png",
         "identity": "brand.facebook",
         "role": "service",
@@ -1929,7 +1921,7 @@
       "display_name": "Instagram",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/instagram.png",
         "identity": "brand.instagram",
         "role": "service",
@@ -1942,7 +1934,7 @@
       "display_name": "Meta",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/meta.png",
         "identity": "brand.meta",
         "role": "service",
@@ -1955,7 +1947,7 @@
       "display_name": "Threads",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/threads.png",
         "identity": "brand.threads",
         "role": "service",
@@ -1968,7 +1960,7 @@
       "display_name": "WhatsApp",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/whatsapp.png",
         "identity": "brand.whatsapp",
         "role": "service",
@@ -1981,7 +1973,7 @@
       "display_name": "GitHub",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/github.png",
         "identity": "brand.github",
         "role": "service",
@@ -1994,7 +1986,7 @@
       "display_name": "LinkedIn",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/linkedin.png",
         "identity": "brand.linkedin",
         "role": "service",
@@ -2007,7 +1999,7 @@
       "display_name": "Microsoft",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/microsoft.png",
         "identity": "brand.microsoft",
         "role": "service",
@@ -2068,7 +2060,7 @@
       "display_name": "Netlify",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/netlify.png",
         "identity": "brand.netlify",
         "role": "service",
@@ -2081,7 +2073,7 @@
       "display_name": "Netlify",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/netlify.png",
         "identity": "brand.netlify",
         "role": "service",
@@ -2094,7 +2086,7 @@
       "display_name": "Nintendo",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/nintendo.png",
         "identity": "brand.nintendo",
         "role": "service",
@@ -2107,7 +2099,7 @@
       "display_name": "Nintendo",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/nintendo.png",
         "identity": "brand.nintendo",
         "role": "service",
@@ -2120,7 +2112,7 @@
       "display_name": "Notion",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/notion.png",
         "identity": "brand.notion",
         "role": "service",
@@ -2133,7 +2125,7 @@
       "display_name": "Notion",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/notion.png",
         "identity": "brand.notion",
         "role": "service",
@@ -2146,7 +2138,7 @@
       "display_name": "OKX",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/okx.png",
         "identity": "brand.okx",
         "role": "service",
@@ -2159,7 +2151,7 @@
       "display_name": "OKX",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/okx.png",
         "identity": "brand.okx",
         "role": "service",
@@ -2184,7 +2176,7 @@
       "display_name": "Speedtest",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/speedtest.png",
         "identity": "brand.speedtest",
         "role": "service",
@@ -2197,7 +2189,7 @@
       "display_name": "OPPO",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/oppo.png",
         "identity": "brand.oppo",
         "role": "service",
@@ -2210,7 +2202,7 @@
       "display_name": "OPPO",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/oppo.png",
         "identity": "brand.oppo",
         "role": "service",
@@ -2223,7 +2215,7 @@
       "display_name": "Oracle",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/oracle.png",
         "identity": "brand.oracle",
         "role": "service",
@@ -2236,7 +2228,7 @@
       "display_name": "Oracle",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/oracle.png",
         "identity": "brand.oracle",
         "role": "service",
@@ -2249,7 +2241,7 @@
       "display_name": "PayPal",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/paypal.png",
         "identity": "brand.paypal",
         "role": "service",
@@ -2262,7 +2254,7 @@
       "display_name": "PayPal",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/paypal.png",
         "identity": "brand.paypal",
         "role": "service",
@@ -2323,7 +2315,7 @@
       "display_name": "Pinterest",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/pinterest.png",
         "identity": "brand.pinterest",
         "role": "service",
@@ -2336,7 +2328,7 @@
       "display_name": "Pinterest",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/pinterest.png",
         "identity": "brand.pinterest",
         "role": "service",
@@ -2349,7 +2341,7 @@
       "display_name": "PlayStation",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/playstation.png",
         "identity": "brand.playstation",
         "role": "service",
@@ -2362,7 +2354,7 @@
       "display_name": "PlayStation",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/playstation.png",
         "identity": "brand.playstation",
         "role": "service",
@@ -2423,7 +2415,7 @@
       "display_name": "Reddit",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/reddit.png",
         "identity": "brand.reddit",
         "role": "service",
@@ -2436,7 +2428,7 @@
       "display_name": "Reddit",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/reddit.png",
         "identity": "brand.reddit",
         "role": "service",
@@ -2473,7 +2465,7 @@
       "display_name": "Rockstar Games",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/rockstar.png",
         "identity": "brand.rockstar",
         "role": "service",
@@ -2486,7 +2478,7 @@
       "display_name": "Rockstar Games",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/rockstar.png",
         "identity": "brand.rockstar",
         "role": "service",
@@ -2499,7 +2491,7 @@
       "display_name": "Heroku",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/heroku.png",
         "identity": "brand.heroku",
         "role": "service",
@@ -2524,7 +2516,7 @@
       "display_name": "Slack",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/slack.png",
         "identity": "brand.slack",
         "role": "service",
@@ -2537,7 +2529,7 @@
       "display_name": "Shopify",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/shopify.png",
         "identity": "brand.shopify",
         "role": "service",
@@ -2550,7 +2542,7 @@
       "display_name": "Shopify",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/shopify.png",
         "identity": "brand.shopify",
         "role": "service",
@@ -2575,7 +2567,7 @@
       "display_name": "Snapchat",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/snapchat.png",
         "identity": "brand.snapchat",
         "role": "service",
@@ -2612,7 +2604,7 @@
       "display_name": "SoundCloud",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/soundcloud.png",
         "identity": "brand.soundcloud",
         "role": "service",
@@ -2625,7 +2617,7 @@
       "display_name": "SoundCloud",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/soundcloud.png",
         "identity": "brand.soundcloud",
         "role": "service",
@@ -2660,13 +2652,12 @@
       "path": "special/private/private.yaml",
       "id": "private",
       "display_name": "Private",
-      "primary": "official",
+      "primary": "tabler",
       "icon": {
-        "type": "existing-v3",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/private.png",
-        "identity": "semantic.private",
-        "role": "strategy",
-        "digest": "bffc4f856eaeb0201b3d7e79905c8115c1dc0738fad200127b917962c254bd37"
+        "type": "style-fallback",
+        "style": "tabler",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/tabler/service.svg",
+        "identity": "semantic.fallback.tabler"
       }
     },
     {
@@ -2697,13 +2688,12 @@
       "path": "special/stun/stun.yaml",
       "id": "stun",
       "display_name": "STUN",
-      "primary": "official",
+      "primary": "phosphor",
       "icon": {
-        "type": "existing-v3",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/stun.png",
-        "identity": "semantic.stun",
-        "role": "special",
-        "digest": "5c2ed99557ae3b99b2a5883b28037c03e981144e5906ea39e124da6a1b1df4ed"
+        "type": "style-fallback",
+        "style": "phosphor",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/phosphor/service.svg",
+        "identity": "semantic.fallback.phosphor"
       }
     },
     {
@@ -2712,7 +2702,7 @@
       "display_name": "Spotify",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/spotify.png",
         "identity": "brand.spotify",
         "role": "service",
@@ -2725,7 +2715,7 @@
       "display_name": "Spotify",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/spotify.png",
         "identity": "brand.spotify",
         "role": "service",
@@ -2738,7 +2728,7 @@
       "display_name": "Steam",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/steam.png",
         "identity": "brand.steam",
         "role": "service",
@@ -2751,7 +2741,7 @@
       "display_name": "Steam",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/steam.png",
         "identity": "brand.steam",
         "role": "service",
@@ -2764,7 +2754,7 @@
       "display_name": "Stripe",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/stripe.png",
         "identity": "brand.stripe",
         "role": "service",
@@ -2777,7 +2767,7 @@
       "display_name": "Stripe",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/stripe.png",
         "identity": "brand.stripe",
         "role": "service",
@@ -2790,7 +2780,7 @@
       "display_name": "QQ Mail",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/qqmail.png",
         "identity": "brand.qqmail",
         "role": "service",
@@ -2803,7 +2793,7 @@
       "display_name": "QQ Music",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/qqmusic.png",
         "identity": "brand.qqmusic",
         "role": "service",
@@ -2816,7 +2806,7 @@
       "display_name": "Tencent",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/tencent.png",
         "identity": "brand.tencent",
         "role": "service",
@@ -2877,7 +2867,7 @@
       "display_name": "TIDAL",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/tidal.png",
         "identity": "brand.tidal",
         "role": "service",
@@ -2890,7 +2880,7 @@
       "display_name": "TIDAL",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/tidal.png",
         "identity": "brand.tidal",
         "role": "service",
@@ -2927,7 +2917,7 @@
       "display_name": "Twitter",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/twitter.png",
         "identity": "brand.twitter",
         "role": "service",
@@ -2940,7 +2930,7 @@
       "display_name": "Twitter",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/twitter.png",
         "identity": "brand.twitter",
         "role": "service",
@@ -2953,7 +2943,7 @@
       "display_name": "Uber",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/uber.png",
         "identity": "brand.uber",
         "role": "service",
@@ -2966,7 +2956,7 @@
       "display_name": "Uber",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/uber.png",
         "identity": "brand.uber",
         "role": "service",
@@ -2979,7 +2969,7 @@
       "display_name": "Ubisoft",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/ubisoft.png",
         "identity": "brand.ubisoft",
         "role": "service",
@@ -2992,7 +2982,7 @@
       "display_name": "Ubisoft",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/ubisoft.png",
         "identity": "brand.ubisoft",
         "role": "service",
@@ -3029,7 +3019,7 @@
       "display_name": "Vercel",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/vercel.png",
         "identity": "brand.vercel",
         "role": "service",
@@ -3042,7 +3032,7 @@
       "display_name": "Vercel",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/vercel.png",
         "identity": "brand.vercel",
         "role": "service",
@@ -3055,7 +3045,7 @@
       "display_name": "vivo",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/vivo.png",
         "identity": "brand.vivo",
         "role": "service",
@@ -3068,7 +3058,7 @@
       "display_name": "vivo",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/vivo.png",
         "identity": "brand.vivo",
         "role": "service",
@@ -3081,7 +3071,7 @@
       "display_name": "Walmart",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/walmart.png",
         "identity": "brand.walmart",
         "role": "service",
@@ -3094,7 +3084,7 @@
       "display_name": "Walmart",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/walmart.png",
         "identity": "brand.walmart",
         "role": "service",
@@ -3107,7 +3097,7 @@
       "display_name": "Weibo",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/weibo.png",
         "identity": "brand.weibo",
         "role": "service",
@@ -3120,7 +3110,7 @@
       "display_name": "Weibo",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/weibo.png",
         "identity": "brand.weibo",
         "role": "service",
@@ -3145,7 +3135,7 @@
       "display_name": "Wikipedia",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/wikipedia.png",
         "identity": "brand.wikipedia",
         "role": "service",
@@ -3158,7 +3148,7 @@
       "display_name": "Wise",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/wise.png",
         "identity": "brand.wise",
         "role": "service",
@@ -3171,7 +3161,7 @@
       "display_name": "Wise",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/wise.png",
         "identity": "brand.wise",
         "role": "service",
@@ -3220,7 +3210,7 @@
       "display_name": "Xiaomi",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/xiaomi.png",
         "identity": "brand.xiaomi",
         "role": "service",
@@ -3257,7 +3247,7 @@
       "display_name": "Zhihu",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/zhihu.png",
         "identity": "brand.zhihu",
         "role": "service",
@@ -3270,7 +3260,7 @@
       "display_name": "Zhihu",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/zhihu.png",
         "identity": "brand.zhihu",
         "role": "service",
@@ -3283,7 +3273,7 @@
       "display_name": "Zoom",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/zoom.png",
         "identity": "brand.zoom",
         "role": "service",
@@ -3296,7 +3286,7 @@
       "display_name": "Zoom",
       "primary": "official",
       "icon": {
-        "type": "existing-v3",
+        "type": "existing-v3-brand",
         "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/zoom.png",
         "identity": "brand.zoom",
         "role": "service",
@@ -7118,10 +7108,9 @@
   },
   "coverage": {
     "rule_entries": 262,
-    "unique_service_ids": 261,
-    "exact_v3": 92,
-    "inherited_v3": 52,
-    "style_fallback": 118,
+    "exact_v3": 85,
+    "inherited_v3": 49,
+    "style_fallback": 128,
     "coverage_pct": 100
   }
 }
