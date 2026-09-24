@@ -32,11 +32,17 @@
 - `docs/ICON_LIBRARY.md`、`docs/ICON_ENGINE.md`、`docs/POLICY_ICONS.md`：更新 Current V3 SSOT 边界。
 - `docs/RULE_USAGE_GUIDE.md`：更新为服务目录驱动的当前使用说明。
 
-## 4. 历史文档处理
+## 4. 统计口径特别说明
+
+`rule/_index.yaml` 的 `rule_count` 是当前服务的**语义规则数量**，也是服务页主要使用的规则数量。
+
+`generated/manifest.json` 中客户端文件的 `rule_count` 是发行清单记录字段。当前 **262 个 sing-box 客户端规则条目该字段全部为 0**；抽查当前 `generated/singbox/12306/12306.json` 可见其 `rules` 数组实际包含 `domain_suffix` 数据。因此文档不会把 sing-box Manifest 的 0 当成“该服务没有规则”，也不会擅自修改生成产物统计。
+
+## 5. 历史文档处理
 
 带有 Phase、V1、V2、Freeze 或明确历史日期的文档属于演进记录。本次不把历史结论伪装成当前规范，而是保留其历史证据属性，并要求当前使用优先从根 README、SERVICE_CATALOG、RULE_USAGE_GUIDE、ARCHITECTURE 和 ICON_USAGE 进入。
 
-## 5. 统一 SSOT
+## 6. 统一 SSOT
 
 - 规则服务语义索引：`rule/_index.yaml`
 - 客户端最终文件清单：`generated/manifest.json`
