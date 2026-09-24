@@ -27,7 +27,8 @@ for e in idx.get("entries") or []:
         out["by_id"].setdefault(sid,[]).append(item)
     else:
         st=style_for(sid)
-        item={"path":e.get("path"),"id":sid,"display_name":e.get("display_name"),"primary":st,"icon":{"type":"style-fallback","style":st,"raw":V4RAW+st+"/service.svg","identity":"semantic.fallback."+st}}\n        out["entries"].append(item)\n        out["by_id"].setdefault(sid,[]).append(item)
+        item={"path":e.get("path"),"id":sid,"display_name":e.get("display_name"),"primary":st,"icon":{"type":"style-fallback","style":st,"raw":V4RAW+st+"/service.svg","identity":"semantic.fallback."+st}}
+        out["entries"].append(item)\n        out["by_id"].setdefault(sid,[]).append(item)
 out["coverage"]={"rule_entries":len(idx.get("entries") or []),"unique_service_ids":len(out["by_id"]),"coverage_pct":100,"official_brand":sum(1 for x in out["entries"] if x["primary"]=="official"),"semantic_fallback":sum(1 for x in out["entries"] if x["primary"]!="official")}
 OUT.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 print("entries",len(out["entries"]),"unique_ids",len(out["by_id"]))
