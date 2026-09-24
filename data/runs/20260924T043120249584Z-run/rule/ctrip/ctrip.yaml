@@ -1,0 +1,102 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: ctrip_aggregate
+display_name: Trip.com
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 29
+  by_type:
+    DOMAIN_SUFFIX: 29
+rules:
+- id: 5fb542ba111c730d13625405187c2dd59787c8d926f2f715f3db8c21493ffa9a
+  type: DOMAIN_SUFFIX
+  value: c-ctrip.com
+- id: 3b0e65f0535f930fe747b2fce133b7be63d30b5a249150cd009bcce23b6d6f4b
+  type: DOMAIN_SUFFIX
+  value: colinker.com
+- id: 13f6078f8b36bdce5f9614ea69ca7fc654147418f39737ca554b6795d1a376ed
+  type: DOMAIN_SUFFIX
+  value: ctrip.cn
+- id: 03092c3efb450b4c97f9266b9a88c317bcf081151f39c5e67047129d4a73c51e
+  type: DOMAIN_SUFFIX
+  value: ctrip.co.id
+- id: df8b72932951e83185228f52d7d704795c689f49c0f054696f07f5076ef9cac2
+  type: DOMAIN_SUFFIX
+  value: ctrip.co.kr
+- id: 902d94d359a316533454314e3333a640af4c8606442142622b960637a89a7f95
+  type: DOMAIN_SUFFIX
+  value: ctrip.co.th
+- id: 120a1ef5b957b4e3b84fadb9a7017d9fe7a754c66c496672b392fbff24a489f6
+  type: DOMAIN_SUFFIX
+  value: ctrip.com
+- id: 520cc7cc661124aafca7e7542c8b6fc400520a555a7453939b8def843384d7ca
+  type: DOMAIN_SUFFIX
+  value: ctrip.com.hk
+- id: 5aab2c9258ad62ec9ac0cd63f3bfb761bf6cbf56968bdcf2842bdccd83239940
+  type: DOMAIN_SUFFIX
+  value: ctrip.my
+- id: 5dee453c87e6ebeb3d3d59c4226de98d0a8c34b9594eb8acf2079a50403e2f9c
+  type: DOMAIN_SUFFIX
+  value: ctrip.sg
+- id: 4f7f65e14318215272acd236c09d694aeb77589ff9e82ca891b00055c379d091
+  type: DOMAIN_SUFFIX
+  value: ctripbiz.com
+- id: a93ff693b96bceeb8b69af1800dc15bae770a254f61e0cc38926106dbdccd5a1
+  type: DOMAIN_SUFFIX
+  value: ctripbuy.hk
+- id: d913a00f9ea9968fa5fc65c196bb7fdf24cf6a6174700ff19ef4094c1d5d89a5
+  type: DOMAIN_SUFFIX
+  value: ctripteam.com
+- id: 675932cfb4cfb4f328699d8435817d5021d9f8c6b5db0c6e908ec83ba1eeaab2
+  type: DOMAIN_SUFFIX
+  value: doticloud.com
+- id: 4df4cac47b3e84e5c1dc7287567cf6f9095d937d57ffcf36b30461fedbfbe7b3
+  type: DOMAIN_SUFFIX
+  value: easytrip.com
+- id: 83e46619f697a40db8c0cc726f216edebe7736e5eb508c99eb2790ca643fb131
+  type: DOMAIN_SUFFIX
+  value: hhtravel.com
+- id: eeef83b2a47b88444d163cd9524813f8e3ebbd837741b2b91cfc2f444a352248
+  type: DOMAIN_SUFFIX
+  value: hhtravel.com.tw
+- id: 274adab9022fefb2f7686f86b87d50c5c4ecde70b544002efa1e2b0979ebe9d8
+  type: DOMAIN_SUFFIX
+  value: izuchebao.com
+- id: ea4feab031c9bb9b1b5f860fbaf9cfb6d079a22adf220bca71db8cdd19aa982b
+  type: DOMAIN_SUFFIX
+  value: lvtds.com
+- id: 73fd56967be90750f205384d0c6f0db7b9e6d7ca219f989fb8ea7bc7c0666f18
+  type: DOMAIN_SUFFIX
+  value: shuntu.cn
+- id: 967a000290f6806b3b80ea3b360b8e2efb71fb07067f4a53c502b8036172e812
+  type: DOMAIN_SUFFIX
+  value: skysea.com
+- id: b4793c69f92f8238de26cc2682ca64220bef2c1c888de1d81ec4b29a5e8efcbf
+  type: DOMAIN_SUFFIX
+  value: suanya.cn
+- id: c07a1f0f26f7069d9dc57d53867980ec385c546022a8445f85c81dca6d65acb0
+  type: DOMAIN_SUFFIX
+  value: suanya.com
+- id: 1864d1ee1f340a837cda825919953cf7acd05605f741b302bb1bdb86512969d7
+  type: DOMAIN_SUFFIX
+  value: tieyou.com
+- id: 7734e82120e8b706e98cefddc60ee6ef968fc68737b7176e74b7d86d234bda6d
+  type: DOMAIN_SUFFIX
+  value: toptown.cn
+- id: 7be6cc44d96da6870dcd66e9b5ec13ad06439bf64120874fcdc7dfb3c5527e3e
+  type: DOMAIN_SUFFIX
+  value: toursbms.com
+- id: 13cabe14beef84e69af66732010437995bc8174863b5e667c9330a3f55032747
+  type: DOMAIN_SUFFIX
+  value: trip.com
+- id: 2b649aec2023477e85d1ab75d64706e781c12a6cca6f354cca2d1f1ac113e878
+  type: DOMAIN_SUFFIX
+  value: tripcdn.com
+- id: 777d0f82df9b568640befd1180adfa2f9feada512448d2ab8db2e9b0743fe189
+  type: DOMAIN_SUFFIX
+  value: vipdlt.com
+provider: ctrip

@@ -1,0 +1,40 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: notion_aggregate
+display_name: Notion
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 8
+  by_type:
+    DOMAIN: 1
+    DOMAIN_SUFFIX: 7
+rules:
+- id: 194fadb3523258abc6cd1ace93d5d956ab9cd4170d0536552ed2363bef55ab18
+  type: DOMAIN
+  value: http-inputs-notion.splunkcloud.com
+- id: e86258e36290f2fb06d432263d63a5be93a0eef89a0c73e76dfac12020c949d6
+  type: DOMAIN_SUFFIX
+  value: notion-static.com
+- id: 4114f866069a2ec239d88e1ba9dbba6dcb40ccf966e4f510dfae816ea25aea8e
+  type: DOMAIN_SUFFIX
+  value: notion-status.com
+- id: d4a248c35d2f47ff2198bcf18d4d462cc312eca8a8d344c62ba7efbb012542db
+  type: DOMAIN_SUFFIX
+  value: notion.com
+- id: 4479d6998786202ed519036ac3eee07a33f77cdab72e53fae3a0da0623123445
+  type: DOMAIN_SUFFIX
+  value: notion.new
+- id: ef228eb877d6de3c2bcda9c18db407bf9d30bba37d4bc035961ac66d393e7ce0
+  type: DOMAIN_SUFFIX
+  value: notion.site
+- id: 34d7921f8a893653778dd62047b22ecb32e513a168a0ca99ab4715abbd3dae80
+  type: DOMAIN_SUFFIX
+  value: notion.so
+- id: 2ab9e6b7cd3df577d150b92f4de322525e278ed1ede1677f2b0701d7866aabc3
+  type: DOMAIN_SUFFIX
+  value: notionusercontent.com
+provider: notion

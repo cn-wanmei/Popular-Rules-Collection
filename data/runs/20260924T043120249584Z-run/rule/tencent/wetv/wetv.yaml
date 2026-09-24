@@ -1,0 +1,45 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: wetv
+display_name: WeTV
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 9
+  by_type:
+    DOMAIN: 1
+    DOMAIN_SUFFIX: 5
+    IP_CIDR: 1
+    PROCESS_NAME: 2
+rules:
+- id: 367ab6988593c3371b811086523e87f3a0c1832bfb4ed038d3242ed2bd6b0a63
+  type: DOMAIN
+  value: wetv.qq.com
+- id: 6a1b4646dcf0852aa46da94d2d8f97fc50e649433a08a9dc7765062ba05cbf53
+  type: DOMAIN_SUFFIX
+  value: iflix-images.akamaized.net
+- id: f2d38fc48e5d9f4b8566151fd0a900382cbe05b1af2dfe6f72c9ece25ad6a786
+  type: DOMAIN_SUFFIX
+  value: iflix.com
+- id: bf00441b2b063258904cbb70932a11d0c82051cc33832c81839eef818a7e6bf8
+  type: DOMAIN_SUFFIX
+  value: vv.video.qq.com
+- id: deadf4ad148c887060ae06d8da85b884fb8d4ebb46b4035a456b4e91fc8cc6df
+  type: DOMAIN_SUFFIX
+  value: wetv.vip
+- id: ff42657d50e5597f5a478fdd987ed53d513bcb45e345cb4adace2d1bb4a01bc7
+  type: DOMAIN_SUFFIX
+  value: wetvinfo.com
+- id: ea3512d4e68e0ff19a6b13e36505c028b13e62182f135c9a82e6c2687633fa15
+  type: IP_CIDR
+  value: 150.109.28.51/32
+- id: b824e6db464d71245a43b80282c3f3f458a52cb76403642eb357e8706c1e91fb
+  type: PROCESS_NAME
+  value: com.tencent.qqlivei18n
+- id: 1cb80fc7b98e565f0fe2ca91439c93ebf8091e3121af83e486edffcd5e98489c
+  type: PROCESS_NAME
+  value: com.tencent.qqlivei18n.us
+provider: tencent

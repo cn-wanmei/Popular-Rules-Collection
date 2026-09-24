@@ -1,0 +1,36 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: meituan
+display_name: Meituan
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 7
+  by_type:
+    DOMAIN_SUFFIX: 7
+rules:
+- id: 74307436296b70aff3f17526c54379d464a1e0c21ec30f07439fe187fb7f0a35
+  type: DOMAIN_SUFFIX
+  value: dianping.com
+- id: b217c34812a03961d126f8e94b15e253d9783ec6c491f49bcca1109eb4cbd231
+  type: DOMAIN_SUFFIX
+  value: maoyan.com
+- id: c82a2cc7905b0baecd3993a520d708deb2f45ae9b71958aaaf4a7b4ad9a664ce
+  type: DOMAIN_SUFFIX
+  value: meituan.com
+- id: 9e40f2f6fc431080669999754e2bcb48e4e2c6c237d028351238ed59e62fc6f2
+  type: DOMAIN_SUFFIX
+  value: meituan.net
+- id: a4dc5983849854e7c299230cfb1e4d093bee526553967f9a8f1f6c7a39c9d72e
+  type: DOMAIN_SUFFIX
+  value: mtyun.com
+- id: dd2136d1304681cf34297a9ef127fcdba5eba667db90e27b2627674ff8c5511b
+  type: DOMAIN_SUFFIX
+  value: neixin.cn
+- id: 5ac04a916099a05f1af8493d7eae64a6aaccf367783107427c592c659ecf4cfe
+  type: DOMAIN_SUFFIX
+  value: sankuai.com
+provider: meituan

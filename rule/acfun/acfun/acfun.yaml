@@ -1,0 +1,45 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: acfun
+display_name: AcFun
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 10
+  by_type:
+    DOMAIN_SUFFIX: 10
+rules:
+- id: b7e9c51ca16880111baf671d81b8928d38af027eb4de2522a59cb5899c1967a8
+  type: DOMAIN_SUFFIX
+  value: ac.fun
+- id: 7e0a916d09aca8956782d7c32bc8e1e4c28e4be08d8897a6a25f74e7a20ad1e3
+  type: DOMAIN_SUFFIX
+  value: acfun.cn
+- id: 891b94102542b141bb0cd050dbdd71b28eb177b6e7523130a6a56f12051b1d34
+  type: DOMAIN_SUFFIX
+  value: acfun.com
+- id: e29f4a6fdbedb6a08d2d8a3eda8a26ba1bb790a4048224ee98b376c18dd4219f
+  type: DOMAIN_SUFFIX
+  value: acfun.net
+- id: 5f0840ff81ffba33edc774da019d8f3e77cc9961d3094e68431cc06ad9cc13df
+  type: DOMAIN_SUFFIX
+  value: acfun.tv
+- id: 230a9b530d0ddbc930b645687aa9109be74b3592aca90ea6bc432ab8b133762a
+  type: DOMAIN_SUFFIX
+  value: acfunchina.cn
+- id: 7fb2584f394b73e484062d98cd74e8aa48131fc1def39500cd38edab9c7da897
+  type: DOMAIN_SUFFIX
+  value: acfunchina.com
+- id: 1ffd3bb112fdc0961d3bf4f9a6b84e79fabf0e254530e89a6c854398539ac311
+  type: DOMAIN_SUFFIX
+  value: acfunchina.net
+- id: 775d9c88be874729f1035d92bef34ecd529d5dac0e01db08656e4514dd76a230
+  type: DOMAIN_SUFFIX
+  value: aixifan.com
+- id: 9f11ca6c3f03c7b91647bf331b2f02df351f4883d4b21031165f76adfff54bb8
+  type: DOMAIN_SUFFIX
+  value: apilog-web.acfun.cn
+provider: acfun

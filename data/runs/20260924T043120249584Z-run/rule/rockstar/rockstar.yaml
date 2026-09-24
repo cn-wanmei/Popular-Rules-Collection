@@ -1,0 +1,30 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: rockstar_aggregate
+display_name: Rockstar Games
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 5
+  by_type:
+    DOMAIN_SUFFIX: 5
+rules:
+- id: 1a1b45a82a49816751de24d0a6d6ba531080f146c3629009d12640e8baa76c9b
+  type: DOMAIN_SUFFIX
+  value: gamedownloads-rockstargames-com.akamaized.net
+- id: 436bdca0e55dc31529b2279b2c52a68002885a24474d1c52cdb075b28868e062
+  type: DOMAIN_SUFFIX
+  value: media-rockstargames-com.akamaized.net
+- id: 95e04938079b0ce3e7c680db2ad9e9945a3fbcef475ec3d382b7b306311a6345
+  type: DOMAIN_SUFFIX
+  value: rockstargames.com
+- id: ef905ae89c4b6b1a8491592efe3db5a2a0cb09cc0f6b05a9c38d5244eee7459c
+  type: DOMAIN_SUFFIX
+  value: rsg.sc
+- id: a9b29ba24e2627cb8a6e809e229da03be25e281cc4358272e4d8025b60e1a6c2
+  type: DOMAIN_SUFFIX
+  value: videos-rockstargames-com.akamaized.net
+provider: rockstar

@@ -5,10 +5,13 @@ DOMAIN-SUFFIX,acmvalidations.com
 DOMAIN-SUFFIX,amazonprimevideo.com.cn
 DOMAIN-SUFFIX,amazonbusiness.org
 DOMAIN-SUFFIX,kindle.co.uk
+IP-CIDR,99.181.64.0/18
 DOMAIN-SUFFIX,amazon.ae
+DOMAIN-SUFFIX,twitchcdn.net
 DOMAIN-KEYWORD,kindle
 DOMAIN-SUFFIX,amazontrust.com
 DOMAIN-SUFFIX,amazonaws.com
+IP-CIDR,103.53.48.0/23
 DOMAIN-SUFFIX,amzndns-cn.biz
 DOMAIN,d1v5ir2lpwr8os.cloudfront.net
 DOMAIN-SUFFIX,awsstatic.com
@@ -30,6 +33,9 @@ DOMAIN-KEYWORD,avoddashs
 DOMAIN-SUFFIX,amazon.com.co
 DOMAIN-SUFFIX,awseducate.com
 DOMAIN-KEYWORD,imdb
+IP-CIDR,52.223.208.0/21
+IP-CIDR,185.42.204.0/22
+DOMAIN-SUFFIX,twitch-ext.rootonline.de
 DOMAIN-SUFFIX,wholekidsfoundation.org
 DOMAIN-SUFFIX,aboutamazon.in
 DOMAIN-SUFFIX,amazonwebservices.cn
@@ -64,6 +70,7 @@ DOMAIN-SUFFIX,amazonnow.cn
 DOMAIN-SUFFIX,amazonaws.biz
 DOMAIN-SUFFIX,amazon.com.au
 DOMAIN-SUFFIX,amazonprimevideos.com
+IP-CIDR,199.9.248.0/21
 DOMAIN-SUFFIX,amazon.jobs
 DOMAIN-SUFFIX,aws
 DOMAIN-SUFFIX,aboutamazon.pl
@@ -96,6 +103,7 @@ DOMAIN-SUFFIX,amazonaws.info
 DOMAIN-SUFFIX,aboutamazon.es
 DOMAIN-SUFFIX,nwcdinfosec.cn
 DOMAIN-SUFFIX,amazon.ca
+DOMAIN-SUFFIX,twitch.tv
 DOMAIN-SUFFIX,aws.dev
 DOMAIN-SUFFIX,amazon.pl
 DOMAIN-SUFFIX,amazonworkdocs.com.cn
@@ -106,6 +114,7 @@ DOMAIN-SUFFIX,aboutamazon.jp
 DOMAIN-SUFFIX,atv-ps.amazon.com
 DOMAIN-SUFFIX,aws.a2z.com
 DOMAIN-SUFFIX,boxofficemojo.com
+DOMAIN-KEYWORD,ttvnw
 DOMAIN-SUFFIX,amazon.sa
 DOMAIN-SUFFIX,images-eu.ssl-images-amazon.com
 DOMAIN-SUFFIX,awsloft-stockholm.com
@@ -116,6 +125,7 @@ IP-CIDR,52.77.0.0/16
 DOMAIN-SUFFIX,amzndns.co.uk
 DOMAIN-SUFFIX,amzndns.com
 DOMAIN-SUFFIX,amazon.cn
+DOMAIN-SUFFIX,twitchsvc.net
 DOMAIN-SUFFIX,awsstatic.cn
 DOMAIN-SUFFIX,amzn.asia
 IP-CIDR,18.208.0.0/13
@@ -124,6 +134,7 @@ DOMAIN-SUFFIX,amazon-launchpad.com
 DOMAIN-SUFFIX,wholecitiesfoundation.org
 DOMAIN-SUFFIX,assoc-amazon.cn
 DOMAIN-SUFFIX,amazon.cl
+DOMAIN-SUFFIX,live-video.net
 DOMAIN-SUFFIX,amazonvideo.cc
 DOMAIN-SUFFIX,cloudfront.cn
 DOMAIN-SUFFIX,amplifyapp.com
@@ -163,6 +174,7 @@ DOMAIN-SUFFIX,amazonworkdocs.cn
 DOMAIN-SUFFIX,awstrust.com
 DOMAIN-SUFFIX,serving-sys.com
 DOMAIN-SUFFIX,wholefoodsmarket.com
+IP-CIDR,52.223.192.0/20
 DOMAIN-KEYWORD,xn--jlq480n2rg
 DOMAIN-KEYWORD,yamaxun
 DOMAIN-SUFFIX,wholefoods.com
@@ -170,6 +182,7 @@ DOMAIN-SUFFIX,aboutamazon.com.au
 DOMAIN-SUFFIX,alexafund.cn
 DOMAIN-SUFFIX,seattlespheres.com
 DOMAIN-SUFFIX,amazonaws-china.com
+IP-CIDR,52.223.224.0/19
 DOMAIN-SUFFIX,z.cn
 DOMAIN,images-cn-8.ssl-images-amazon.com
 DOMAIN,dmqdd6hw24ucf.cloudfront.net
@@ -188,10 +201,12 @@ DOMAIN-SUFFIX,amazonfctours.com
 DOMAIN-SUFFIX,aws-iot-hackathon.com
 DOMAIN-SUFFIX,amazonstudiosguilds.com
 DOMAIN-SUFFIX,awswaf.com
+DOMAIN-SUFFIX,jtvnw.net
 DOMAIN-KEYWORD,xn--cckwcxetd
 DOMAIN-SUFFIX,amazonsdi.com
 DOMAIN-SUFFIX,amazonuniversity.jobs
 DOMAIN-SUFFIX,aboutamazon.com
+IP-CIDR,192.108.239.0/24
 DOMAIN-SUFFIX,amazon.fr
 DOMAIN-SUFFIX,awsautoscaling.com
 DOMAIN-SUFFIX,amazonauthorinsights.com
@@ -204,6 +219,7 @@ DOMAIN-SUFFIX,audible.com
 DOMAIN-SUFFIX,amazon.com.tr
 DOMAIN-SUFFIX,amplifyframework.com
 DOMAIN-SUFFIX,awsloft-johannesburg.com
+DOMAIN-SUFFIX,ext-twitch.tv
 DOMAIN-SUFFIX,acmvalidationsaws.com
 DOMAIN-SUFFIX,aws-border.cn
 DOMAIN-SUFFIX,amazonaws.co.uk
@@ -213,11 +229,14 @@ DOMAIN-SUFFIX,cloudfront.com
 DOMAIN-SUFFIX,amazoncognito.com
 DOMAIN-SUFFIX,awsapps.com.cn
 DOMAIN-SUFFIX,amazon.co.za
+IP-CIDR,23.160.0.0/24
 DOMAIN-SUFFIX,awscloud.com
 DOMAIN,images-cn.ssl-images-amazon.com
+IP-CIDR,192.16.64.0/21
 DOMAIN-SUFFIX,awsthinkbox.com
 DOMAIN-SUFFIX,d25xi40x97liuc.cloudfront.net
 DOMAIN-SUFFIX,amazonbusinessblog.com
+IP-CIDR6,2402:2a80::/32
 DOMAIN-SUFFIX,amazon.de
 DOMAIN-SUFFIX,amazonpay.in
 DOMAIN-SUFFIX,amazonlaunchpad.com
@@ -240,6 +259,7 @@ DOMAIN-SUFFIX,amazon.nl
 DOMAIN-SUFFIX,amazoninspire.cn
 DOMAIN-SUFFIX,amazonaws.cn
 DOMAIN-KEYWORD,zappos
+DOMAIN-SUFFIX,ttvnw.net
 DOMAIN-SUFFIX,amazon.es
 DOMAIN-SUFFIX,awseducate.org
 DOMAIN-SUFFIX,elasticbeanstalk.com
@@ -250,6 +270,7 @@ DOMAIN-SUFFIX,aws-icp-domain-manager.cn
 DOMAIN-SUFFIX,amazonnow.com.cn
 DOMAIN-SUFFIX,amazon.com.ng
 DOMAIN-SUFFIX,nwcddns.cn
+IP-CIDR,45.113.128.0/22
 DOMAIN-SUFFIX,amaaozn.com
 DOMAIN-SUFFIX,amzn.com
 DOMAIN-SUFFIX,wholeplanetfoundation.org

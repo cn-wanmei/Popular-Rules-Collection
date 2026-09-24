@@ -1,0 +1,51 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: wikimedia_aggregate
+display_name: Wikimedia
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 12
+  by_type:
+    DOMAIN_SUFFIX: 12
+rules:
+- id: e4cb864556b7dc63ead4484187f959773f7a8cedd876228f28a7e588066191d7
+  type: DOMAIN_SUFFIX
+  value: mediawiki.org
+- id: b38f3766fa4066b52503f9aa7ddfa0c287ed27de72886e8b12695cc3f667450a
+  type: DOMAIN_SUFFIX
+  value: wikibooks.org
+- id: a94bfd216749820d17440f3cf2f52153bba40daef79f37477cb07be7e64c411f
+  type: DOMAIN_SUFFIX
+  value: wikidata.org
+- id: f9acf1d5e9169c8b6f92045e934799b46b74dec82fb06d3458e1bddcade83bc9
+  type: DOMAIN_SUFFIX
+  value: wikileaks.org
+- id: 3653ce9604f6981d7a8ab653972d22bcead66cf620ae343cbd2931db99b7e33d
+  type: DOMAIN_SUFFIX
+  value: wikimedia.org
+- id: e49be8d3458f5e8fc77a33b022376738f3d79ac776a3d36371b747cf7649c637
+  type: DOMAIN_SUFFIX
+  value: wikinews.org
+- id: d5426e519198692363a5cdaa553cac58dd57e674a24c42d4d82b5677729a775a
+  type: DOMAIN_SUFFIX
+  value: wikipedia.org
+- id: 2370155e058733de016b44a1373980c8be1c632c9526902c8e58e8357f7b6f24
+  type: DOMAIN_SUFFIX
+  value: wikiquote.org
+- id: 273a5ac0a7c1e005990db9853d5ba5d2cff5725b567aac57537642c8b7556cd4
+  type: DOMAIN_SUFFIX
+  value: wikisource.org
+- id: b92cdd4be60a3271e7ecbe28fe6af3fd2b7756a8058c85ac2ee8fd0d780c2c7f
+  type: DOMAIN_SUFFIX
+  value: wikiversity.org
+- id: 79122a0a27cac5ee3ac02b5968f247bec15664239a1fffba1e1bd5d0c4d47f4f
+  type: DOMAIN_SUFFIX
+  value: wikivoyage.org
+- id: 3ec26ad0e3c6c33186dbf2b7165a05378bae5d1bcfe890e65e0546118329bd1d
+  type: DOMAIN_SUFFIX
+  value: wiktionary.org
+provider: wikimedia

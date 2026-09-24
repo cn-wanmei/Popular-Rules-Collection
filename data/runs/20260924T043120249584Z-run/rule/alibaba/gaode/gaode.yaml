@@ -1,0 +1,42 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: gaode
+display_name: Gaode
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 9
+  by_type:
+    DOMAIN_SUFFIX: 9
+rules:
+- id: a6ff9b80f7d9583e3b1a10a3fd5af9859a73cd2b27181b29175923c8dd385279
+  type: DOMAIN_SUFFIX
+  value: a-map.cn
+- id: c0e1d67e6be568b584c5edf0e5599670bd79b46adeb53946ccff34f890aa1d6d
+  type: DOMAIN_SUFFIX
+  value: a-map.co
+- id: 0306e237539b86de0d5e6858d0991dc4c7c4d85b9f03a556703f5b211866f122
+  type: DOMAIN_SUFFIX
+  value: a-map.link
+- id: d41a0d336650b9d7e10356b2b9494305d49137c1752f213d2ce467b204c25ded
+  type: DOMAIN_SUFFIX
+  value: a-map.vip
+- id: dd9226a2bf0efa404a987ce637cc0f662e45621d690444ee488004205726d029
+  type: DOMAIN_SUFFIX
+  value: amap.com
+- id: 0ed89bf39b2f738e95d252643030883d94e565dc6584df5a64c5c2e1840f613c
+  type: DOMAIN_SUFFIX
+  value: amapauto.com
+- id: ce8fb0547ff79caaf7a85dc597517d6d4cbc4963028d364440ae78c492ec2ee1
+  type: DOMAIN_SUFFIX
+  value: anav.com
+- id: 8f37c390bd76fc63c1d3dace884f794d76af1aedb86e9536085b7ffafdc015eb
+  type: DOMAIN_SUFFIX
+  value: autonavi.com
+- id: d043c037d04e88f4957c89e965c963ef96a0ceb8fb76448475a00402088fd460
+  type: DOMAIN_SUFFIX
+  value: gaode.com
+provider: alibaba

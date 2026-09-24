@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: googlevoice
+display_name: Google Voice
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 1
+  by_type:
+    DOMAIN: 1
+rules:
+- id: 953d2ebffebc65f15322eda08bd1761afae41ce54de9eaa6e5ce2d5af96ff348
+  type: DOMAIN
+  value: lens.l.google.com
+provider: google

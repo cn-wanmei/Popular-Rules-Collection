@@ -1,0 +1,51 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: binance_aggregate
+display_name: Binance
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 12
+  by_type:
+    DOMAIN_SUFFIX: 12
+rules:
+- id: f3b222dbebe297ad63089b98028c244ded42cbabb6467a418d7740fb136ebf0f
+  type: DOMAIN_SUFFIX
+  value: appsflayer.com
+- id: 903e7e979290e57818526cc294dd6c914aac448a618d154c31ad3d0e9739833b
+  type: DOMAIN_SUFFIX
+  value: binance.cloud
+- id: 63be5b87948989b1f2956132301496519487e87a0e90b14109ace0431fbcaf47
+  type: DOMAIN_SUFFIX
+  value: binance.com
+- id: b7b39bf068c640a8bfe8512f08c02620b82fa18249e55c36fa6ab2e6f6f3844a
+  type: DOMAIN_SUFFIX
+  value: binance.me
+- id: 699923eef9288a34393fba3c9b8ac3b52e52a0def88b20eb874d695994120e65
+  type: DOMAIN_SUFFIX
+  value: binancecnt.com
+- id: e0251d4344b6c239daf7717212b96d24afaec89ca82b14a703442174d029c9c0
+  type: DOMAIN_SUFFIX
+  value: binancefuture.com
+- id: cb8c63aa74c34216cd2e9ec3fa0cfe6d6794de4b8b0055277a6e94b62ea1a4a0
+  type: DOMAIN_SUFFIX
+  value: bnappzh.co
+- id: 7b90d5bb1f1119aa7e88c429f3daeac9a0acd804b97ae49983a23b85cb241a20
+  type: DOMAIN_SUFFIX
+  value: bnbstatic.com
+- id: 805a86692421945295426d558be769dd2be9c9fc7f4857ceac05874056e736e0
+  type: DOMAIN_SUFFIX
+  value: bnbzh.ac
+- id: bd1a51e94b83ba1b4f4526a864162d97ed3480e6959e2769d080a38db9770d5e
+  type: DOMAIN_SUFFIX
+  value: bntrace.com
+- id: 50d29b7ad3d2f8e38072c1f36913424d4e5b2463d688d86805ddb68d028fd117
+  type: DOMAIN_SUFFIX
+  value: saasexch.cc
+- id: 819196c4d1346dba17f12659afddebca9385be3ceaf69a3137db4dde171459b1
+  type: DOMAIN_SUFFIX
+  value: saasexch.com
+provider: binance

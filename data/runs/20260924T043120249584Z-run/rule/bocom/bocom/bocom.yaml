@@ -1,0 +1,33 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: bocom
+display_name: Bank of Communications
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 6
+  by_type:
+    DOMAIN_SUFFIX: 6
+rules:
+- id: 4a6d6b8ea894584abb8fa402c1ade71e66551a2fc468af5cc91f1a4f30e6d642
+  type: DOMAIN_SUFFIX
+  value: 95559.com.cn
+- id: cc95618927c334364cd35c32333b944b922236c3dd757d2961d92c5b5c1bdf0d
+  type: DOMAIN_SUFFIX
+  value: 95559.sh.cn
+- id: ddf129a1084fc925b42829ebbf62f8267cea32e4358a44a65d4305448a319312
+  type: DOMAIN_SUFFIX
+  value: bankcomm.com
+- id: e6a0e0b4587877d719710e62914d79be088f0cc9211fe811449fdfb5c57cd9d9
+  type: DOMAIN_SUFFIX
+  value: bankcomm.com.au
+- id: 94beb10431a4e18879d69005316962dac3c5aaf6470aa408d601f3dc7dbb796d
+  type: DOMAIN_SUFFIX
+  value: bankcomm.com.mo
+- id: 0c1b8b63bdc774c1a554099cb28e58a0fbcd06ec0d092a8538289ce55e371486
+  type: DOMAIN_SUFFIX
+  value: bankcomm.com.tw
+provider: bocom

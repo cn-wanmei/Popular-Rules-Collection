@@ -1,0 +1,30 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: ximalaya_aggregate
+display_name: Ximalaya
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 5
+  by_type:
+    DOMAIN_SUFFIX: 5
+rules:
+- id: eeaefcaaed99673e405a540891bd413c34bad31ded0369172b10d877eb7fd1c2
+  type: DOMAIN_SUFFIX
+  value: adbehavior.ximalaya.com
+- id: cefc50548a1bafc11e9f64947e60290ae7693ec4ed42efc3fe1505599a2d2d9c
+  type: DOMAIN_SUFFIX
+  value: adse.wsa.ximalaya.com
+- id: c77f22367dae6ebf06cdbf1f747993d34b760da080fd85b6231d4962b871a3b3
+  type: DOMAIN_SUFFIX
+  value: adse.ximalaya.com
+- id: 78c820162488f86acff8bbc82d24429bce5f6c822e089e3385cca4b093f1fc11
+  type: DOMAIN_SUFFIX
+  value: ximalaya.com
+- id: 89a2255077cb277531f7408473fc351e09aa6cc5f6972904f99849e40380ec83
+  type: DOMAIN_SUFFIX
+  value: xmcdn.com
+provider: ximalaya

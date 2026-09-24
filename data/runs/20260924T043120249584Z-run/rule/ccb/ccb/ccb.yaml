@@ -1,0 +1,69 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: ccb
+display_name: China Construction Bank
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 18
+  by_type:
+    DOMAIN_SUFFIX: 18
+rules:
+- id: aa883b20dab7a9349bb0f14611d9d62827dcfbaf664050543a0a6bc8b486422c
+  type: DOMAIN_SUFFIX
+  value: ccb-life.com.cn
+- id: e9e5179f2b22e011b38b2a69d33c8338b0544cc756bac2b2bfdc2aef57aac35b
+  type: DOMAIN_SUFFIX
+  value: ccb.cn
+- id: caefaa3baa179c3be6610e5fb32309231ac059d0c594a5d50349b5ea91001b6f
+  type: DOMAIN_SUFFIX
+  value: ccb.com
+- id: 9673c358d60ed4a16568a8c1bcc0932a01b59bee81c03bc87d5b35c36d725177
+  type: DOMAIN_SUFFIX
+  value: ccb.com.cn
+- id: 9f2ef77a2897a6f4daeb603e3f170fca623f43bdd7795ea37a8c0d8ff6567a8e
+  type: DOMAIN_SUFFIX
+  value: ccbcos.com
+- id: 1e8833095a74addbfc0e8281fb531e9744dab2602d72f5f0a9fa4d5b8949c638
+  type: DOMAIN_SUFFIX
+  value: ccbfund.cn
+- id: ad7f37abda950542533a913737829e632df28ccb9fb5e0deb80e948b07fdd0dc
+  type: DOMAIN_SUFFIX
+  value: ccbfund.com
+- id: 5dd4767107e462e8c1d0be4bd54555d70e700a28704229d9343900ebcfe7746c
+  type: DOMAIN_SUFFIX
+  value: ccbfund.com.cn
+- id: 819d34313221bafbe1453aad07bd70832df5c3c2e76882e5f4057d0cb009e22d
+  type: DOMAIN_SUFFIX
+  value: ccbfutures.cn
+- id: 148f8238551bf8256a9035ec5e9c4705e020426c897b62e59074f02327d0019b
+  type: DOMAIN_SUFFIX
+  value: ccbfutures.com
+- id: 4a433701439969cabbdbd0e4db3e024bca2bfbc49cd0235610b1fdd5dc8fcf4c
+  type: DOMAIN_SUFFIX
+  value: ccbhome.cn
+- id: e26165c854256634e79beedc14057c8872df22a61fd3b023abf837333aaaf03e
+  type: DOMAIN_SUFFIX
+  value: ccbhome.net
+- id: 844c0998973566713324c4d4b57a5ef19dd29e09ffa54fb9165bedd57969df80
+  type: DOMAIN_SUFFIX
+  value: ccbintl.com.hk
+- id: 3c454c55bfe252c1e440a13225af0d3c3a8282c2feea9c11799ac05587334be5
+  type: DOMAIN_SUFFIX
+  value: ccbleasing.com
+- id: 0c0b37a20f0fac87b23e0b468f5657117c3a95bbfc0a4c1d3dee407181173593
+  type: DOMAIN_SUFFIX
+  value: ccblife-test.com.cn
+- id: 8a998ca883a7a389fa59c0c4db90fee8f0309775cdcf8d36af6cd108386dd99e
+  type: DOMAIN_SUFFIX
+  value: ccbseoul.com
+- id: a505f37dc6eca6231fc9bfb0c12f28e4285b21ce90c30f73cc4e439b86ab582a
+  type: DOMAIN_SUFFIX
+  value: ccbtrust.com.cn
+- id: 85250e8ba6c4195814a236740f6156128756fb3fe06afcf08cec714f42115fcb
+  type: DOMAIN_SUFFIX
+  value: ccbxt.com
+provider: ccb

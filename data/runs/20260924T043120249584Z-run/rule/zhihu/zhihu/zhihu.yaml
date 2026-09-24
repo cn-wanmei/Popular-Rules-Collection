@@ -1,0 +1,38 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: zhihu
+display_name: Zhihu
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 7
+  by_type:
+    DOMAIN_SUFFIX: 2
+    IP_CIDR: 4
+    IP_CIDR6: 1
+rules:
+- id: 8c759070c9aca3d99fc8342515458631bd1dfcdac8a566217c4875ba676e2653
+  type: DOMAIN_SUFFIX
+  value: zhihu.com
+- id: d499b8273e7d5bee1374c4a50eb91111b2c2c65ee1534f74c141d7145690c2cc
+  type: DOMAIN_SUFFIX
+  value: zhimg.com
+- id: 510692c9bda5fb84a38b21fb1dcdf54845477e2310251e553460831825a32996
+  type: IP_CIDR
+  value: 103.41.167.226/32
+- id: df44cb62130d4db3280e39801c5ed62a5e7f27834f87f31b044dd6b7a3564713
+  type: IP_CIDR
+  value: 103.41.167.234/31
+- id: 89a922bd989e03a6696ce42176078227365c527727a65ff6e625730dde572e11
+  type: IP_CIDR
+  value: 103.41.167.236/32
+- id: 71c73cac42de27f2a8131161e527b4e1bdb37084226961539f83caffb9093c14
+  type: IP_CIDR
+  value: 118.89.204.198/32
+- id: 8c4f63d9150c3b9f5a82936764fc96a6b55a4460baacbc0cad1940e246444d7f
+  type: IP_CIDR6
+  value: 2402:4e00:1200:ed00:0:9089:6dac:96b6/128
+provider: zhihu

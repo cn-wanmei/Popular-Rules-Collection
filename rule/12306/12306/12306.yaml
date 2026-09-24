@@ -1,0 +1,60 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: '12306'
+display_name: '12306'
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 15
+  by_type:
+    DOMAIN_SUFFIX: 15
+rules:
+- id: 0691f88623e7ba33083a48fcfdc4f51c966775e9508b44418c51ec619140ffe3
+  type: DOMAIN_SUFFIX
+  value: 12306.cn
+- id: 136f92c3562a882b6015c889ba1edb0ce99dbcfabd139a8bdc6b075ece19b030
+  type: DOMAIN_SUFFIX
+  value: 95306.cn
+- id: 17b56b4090bbc470ba591b9d9d47bc438c0d0ecc3b36e78c0ca75c579a8dd5d3
+  type: DOMAIN_SUFFIX
+  value: 95572.com
+- id: e5e60ad654f6b02928cd21d5fdcd4bfcf15b0702487961704fead459413cb056
+  type: DOMAIN_SUFFIX
+  value: china-railway.com.cn
+- id: a45d314eb6ba8b34304f62670c104dc605917ae62641ba22655252a3ad07b88f
+  type: DOMAIN_SUFFIX
+  value: china-ric.com
+- id: 548dcd2cfde0c09d75905f72805f03c018d6d01b7fe8749003986b32fbf9ac25
+  type: DOMAIN_SUFFIX
+  value: crct.com
+- id: 149ec466bd75b82fea9afd3b5826b056e0eadfa692f0ca2054911cff7a5bd17b
+  type: DOMAIN_SUFFIX
+  value: cre.cn
+- id: e83f2102ad239d21052329783014cf314f6ba0e179bc247db8200416eac1b6fe
+  type: DOMAIN_SUFFIX
+  value: crecc.com.cn
+- id: eb04682569a1bc3a815ccc5db19f800ec8d43016254dc8321bf7d2f457b030ca
+  type: DOMAIN_SUFFIX
+  value: creip.cn
+- id: 3fe589dc9a4bd73f0fd9d11a2ba970fcab077462cb2d440d34727b83576935da
+  type: DOMAIN_SUFFIX
+  value: crscl.com.cn
+- id: 78cc6641393631fb42bd571456c1a71e3c02bdfd9c67b1b4f6944a6399d1b14a
+  type: DOMAIN_SUFFIX
+  value: gzrailway.com.cn
+- id: 98fb981388c63a8d2556420dd2dd8236f525c0fca9e214000cc60bd49a63b2b0
+  type: DOMAIN_SUFFIX
+  value: nntlj.com
+- id: 18badbcc76975a6df3e3402039ca890f86a1ebd8196c8a9012ad0f42a25fbdf5
+  type: DOMAIN_SUFFIX
+  value: peoplerail.com
+- id: 2298d88b2d40eac50ad6bfd35dea3eb878259b427477876b3e6e4776c9205c4a
+  type: DOMAIN_SUFFIX
+  value: rails.cn
+- id: d081073d14e27bd14a50e2fbddf70ac1a795fc5498179732c7a22b1721bee396
+  type: DOMAIN_SUFFIX
+  value: tdpress.com
+provider: '12306'

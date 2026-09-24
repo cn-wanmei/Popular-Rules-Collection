@@ -1,0 +1,61 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: kakaotalk
+display_name: KakaoTalk
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 15
+  by_type:
+    DOMAIN_SUFFIX: 9
+    IP_CIDR: 6
+rules:
+- id: b6e83246d72cace17eb15068fcbb61a60ee44f3ee4fda29529168d6bbb9f4eb1
+  type: DOMAIN_SUFFIX
+  value: daum.net
+- id: facf8e469cce6032322b9bc8230a47f439971b66423c5d3cb347ec65039e09e0
+  type: DOMAIN_SUFFIX
+  value: daumcdn.net
+- id: b501c79f26cc45ab7c2f721e98262754a4f59504d0fb1fa600e0ac920694eea5
+  type: DOMAIN_SUFFIX
+  value: daumkakao.io
+- id: ba4cbf8f7f627e747162e2287a76bc8a208e45c02d0e1057a6bfdd3160658a60
+  type: DOMAIN_SUFFIX
+  value: daumpotplayer.com
+- id: d0d7467b75c9e42660cf3a09279129bd99fe4b911c8ece324fc4f8c37e341594
+  type: DOMAIN_SUFFIX
+  value: kakao.co.kr
+- id: 5ddbc54b85887723301300f22e813eadbd21473574a74d97c5bac9a668d31580
+  type: DOMAIN_SUFFIX
+  value: kakao.com
+- id: 112d28e88fd8caf9b33788ca7ec2411b071a6e43141141ddd12d0212f25c7b21
+  type: DOMAIN_SUFFIX
+  value: kakaocdn.net
+- id: 9e217b8e0e3c3d4ef0b788c7fc4578addfc26f3d8fcce3eb25ab53e449a0d3af
+  type: DOMAIN_SUFFIX
+  value: kakaocorp.com
+- id: ad3e5badf883114bda50b652a22b9964e59be1b88603237c738bdf16939eb51b
+  type: DOMAIN_SUFFIX
+  value: potplayer.tv
+- id: df600d5e4f63b782fad1dd31313859f6c42bb3b4e3f21bedbccd76cbcaf51c8d
+  type: IP_CIDR
+  value: 1.201.0.0/24
+- id: 81d37e5522fd1f601413cc47fd14337d70fcf1402a524e06976982579f0bad17
+  type: IP_CIDR
+  value: 103.246.56.0/22
+- id: ac909c36d4f2cae52e46965965c5eb24a34ffe381e6ce039b7a58e8383c78d21
+  type: IP_CIDR
+  value: 103.27.148.0/22
+- id: ed18cdbae204e0c9eddd8e98999b16a0b15bc4c7cbc1ee2c8bdf89876b519a1a
+  type: IP_CIDR
+  value: 110.76.140.0/22
+- id: 38764dacffb8f74ffa3b8311039ca958b21b3d4f776a82e6a028a59134ca8217
+  type: IP_CIDR
+  value: 113.61.104.0/22
+- id: ac185af0881c7598addc1bc829e9d2c61fc1da7d719d4a354b15e7d2bfee9939
+  type: IP_CIDR
+  value: 27.0.236.0/22
+provider: kakaotalk

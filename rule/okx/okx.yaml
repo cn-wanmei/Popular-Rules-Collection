@@ -1,0 +1,24 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: okx_aggregate
+display_name: OKX
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 3
+  by_type:
+    DOMAIN_SUFFIX: 3
+rules:
+- id: 38707ae94b38ffbe47ab171392dfc4ccd68ee73e68c236fcf720914653829af7
+  type: DOMAIN_SUFFIX
+  value: okex.com
+- id: a5aa2556497996bcf2d8c06f481c5c6357ec40fbc284a0c892b345253b138a49
+  type: DOMAIN_SUFFIX
+  value: oklink.com
+- id: 59864e10e4700fa35b18b3d46ab1776fc1488bae7bad8e351480a3d3d642547d
+  type: DOMAIN_SUFFIX
+  value: okx.com
+provider: okx

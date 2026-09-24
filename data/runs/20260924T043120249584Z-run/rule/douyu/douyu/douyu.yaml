@@ -1,0 +1,54 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: douyu
+display_name: DouYu
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 13
+  by_type:
+    DOMAIN_SUFFIX: 13
+rules:
+- id: d7da58fba9b65a56a8751e8f5b427e2327ee4a58f6321d200ece113755f031d9
+  type: DOMAIN_SUFFIX
+  value: bytefcdnrd.com
+- id: b35bc1270b0273c0c3b81c9fe679996a8a36a9dde6f18e7616aa178de34a1944
+  type: DOMAIN_SUFFIX
+  value: douyu.com
+- id: 58f958f74eb8f420add3dac4b2e0cd09f08591371eb2da84c8632e78786fe14d
+  type: DOMAIN_SUFFIX
+  value: douyu.tv
+- id: 480de03caa908c07725e98327731ee7784b9e9d76c83e05319b13b6f80552d69
+  type: DOMAIN_SUFFIX
+  value: douyuba.cn
+- id: 4afcb8013ed956cb0a26d33cd82aebf14f4645e07f5e208e5dd865c85b6824dc
+  type: DOMAIN_SUFFIX
+  value: douyucdn.cn
+- id: 9219aff6cfe8981c35adc5d6294c45cf8f553afa804ed15400a5bb1830c802de
+  type: DOMAIN_SUFFIX
+  value: douyucdn2.cn
+- id: b753ee1fac3ff2eb7ebdc029e561a818875b5269ead5e350fb95487d6235afab
+  type: DOMAIN_SUFFIX
+  value: douyupcdn.cn
+- id: f6dd2dc5dbfe11f30b675fc80c9e005e5107e19a2a8193f356c7cbd75a33e776
+  type: DOMAIN_SUFFIX
+  value: douyuscdn.com
+- id: 128eb6aa59eccfebfef44c9dca5441335fbe3d67766637b7c0c8e5f89cc722ff
+  type: DOMAIN_SUFFIX
+  value: douyutv.com
+- id: d5b85b8d2faf30f16129f32932a559f86a9125ef197dca092ca90d1342f27283
+  type: DOMAIN_SUFFIX
+  value: doyonoc.com
+- id: 2f607d04764fa359da77aa8a0cac2c6ec043abd3bfc804a43c1ffb6335f56526
+  type: DOMAIN_SUFFIX
+  value: edgesrv.com
+- id: 5459b7a7dac7e400adf377a84b8859dfc00bf1897bbe74e40eec77bf91c58adf
+  type: DOMAIN_SUFFIX
+  value: guguyuyin.com
+- id: b3eec54a217a7bed8090bacbfae3a71d44b84924321a0a5649d6f2fd4efba33e
+  type: DOMAIN_SUFFIX
+  value: oywtv.com
+provider: douyu

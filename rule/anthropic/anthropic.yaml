@@ -1,0 +1,43 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: anthropic_aggregate
+display_name: Anthropic
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 9
+  by_type:
+    DOMAIN: 1
+    DOMAIN_SUFFIX: 8
+rules:
+- id: bc3901b93f154c2c06585b2a296491a81b8fa0c8608e09938f5e20ffa46469b0
+  type: DOMAIN
+  value: servd-anthropic-website.b-cdn.net
+- id: edfa5266714a59797be064395e485a0c1cf839fa58ce9bf9ba223767f04b29a7
+  type: DOMAIN_SUFFIX
+  value: anthropic.com
+- id: 734be7985ea69dad88b504600eae8d24902fcc6f8aa4e84f7a459001106c2118
+  type: DOMAIN_SUFFIX
+  value: clau.de
+- id: cd6d7260e7aea5a5c2802ebe7ce8d6a3434d9945147a5893a2738d5915a22fff
+  type: DOMAIN_SUFFIX
+  value: claude.ai
+- id: 8479c10bdebd2ec4b99a97713726c55cce831cdbed43c9b8a5da7396bf1452c5
+  type: DOMAIN_SUFFIX
+  value: claude.com
+- id: 77f4452e9aa9ab8a75a0d86ebf14d7141f93a91b2a9c5617475fdc87eef9ffcd
+  type: DOMAIN_SUFFIX
+  value: claudemcpclient.com
+- id: efa7a50310411d7b1966bbfc6da7a8a21acda39f7889bafac6a7bc0ea8485691
+  type: DOMAIN_SUFFIX
+  value: claudemcpcontent.com
+- id: 6ec04269283c4950ffcbabb9ec409eea0743f0ca63b9bcf66e6462279e21db02
+  type: DOMAIN_SUFFIX
+  value: claudeusercontent.com
+- id: 5f697b4485fa19020868cccde2ed13a4be1276121f860a4e7d163e25df1548a2
+  type: DOMAIN_SUFFIX
+  value: servd-anthropic-website.b-cdn.net
+provider: anthropic

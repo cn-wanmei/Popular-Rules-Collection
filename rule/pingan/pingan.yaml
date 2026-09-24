@@ -1,0 +1,96 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: pingan_aggregate
+display_name: Ping An
+generated_from:
+  run_id: 20260924T043120249584Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7
+stats:
+  total: 27
+  by_type:
+    DOMAIN_SUFFIX: 27
+rules:
+- id: bdea856057ba1ee0294320b773287258a59b908867bd0b716be56eb6881119a0
+  type: DOMAIN_SUFFIX
+  value: 1010-0000.com
+- id: ae5281a0ea8085e160f2156fe24b3de163f10ebc34afb4b45361abc630f34f83
+  type: DOMAIN_SUFFIX
+  value: 18ebank.com
+- id: 03fcbd15d8316ce49161a9cf965f624897977ec5f2df3d51a53f88d6c386258a
+  type: DOMAIN_SUFFIX
+  value: 1qianbao.cn
+- id: c15b394c8493e27c34e455050c7efc44b5a97f9e90021733b500f8953384aa06
+  type: DOMAIN_SUFFIX
+  value: 1qianbao.com
+- id: 5dbabec896c279e62198ca01897fbffce466c8bc74c2d8588b507fd1bb457fa5
+  type: DOMAIN_SUFFIX
+  value: 1qianbao.com.cn
+- id: 8303850ac588aebb9032b42b1d30d2cf6f9a83020539e0f3ee3e524eedbdc7fe
+  type: DOMAIN_SUFFIX
+  value: 1qianbao.net
+- id: a6a5ae6b5c27ffcc696fbed250d4921fc14038a3167455d89f453421e2ae9c26
+  type: DOMAIN_SUFFIX
+  value: 4008000000.com
+- id: 67344ce0b65d29165a8af95612209fb645f09d6e20a0a06a2a280752d5cefc4f
+  type: DOMAIN_SUFFIX
+  value: 4008824365.com
+- id: a1785c412c8a57524ffbc078d3d6073d5be8b5a769b36281e797c49fa57c5112
+  type: DOMAIN_SUFFIX
+  value: 4008880999.cn
+- id: 690ef7387d6d56a4fe8c709ff47fe9fdde0ef4824c15a8f53fd61c68f36477ad
+  type: DOMAIN_SUFFIX
+  value: 4008880999.com
+- id: e05575aca86c7a71a70107f941bc6bfde8a9494f831241bdef926e3a6eb98752
+  type: DOMAIN_SUFFIX
+  value: 4008880999.net
+- id: 0c886e044680eb6176a4c20529fbefd28b620bd835e1c5ae296ad164793511e2
+  type: DOMAIN_SUFFIX
+  value: eka.cn
+- id: dd82d8920adc1c6a024069bbc6160df7bb77975644c253f764f8565145dcf852
+  type: DOMAIN_SUFFIX
+  value: ekapay.cn
+- id: 1fc3f05e272b68240f0233d49f05bfdc93cb3f294a50dfd010421474ffceff96
+  type: DOMAIN_SUFFIX
+  value: mingyuanfund.com
+- id: d21c7baaf4ca35871beb2cbc15a8347ae9e120e491cdbb57ba5286010406a31c
+  type: DOMAIN_SUFFIX
+  value: olatop.cn
+- id: 8b9b53b7f46d018fc087225626acc9a33680f2eca5ca42bba0316a623c1943a4
+  type: DOMAIN_SUFFIX
+  value: olatop.com
+- id: 906a4dce803dd18be20296c2a372cedd008814b2f3e398ce1da8a3419a37be8c
+  type: DOMAIN_SUFFIX
+  value: olatop.net
+- id: f4cedf2e9704adf0a1efcf430c66dad6e052d9109fd6c44251421d859822cff1
+  type: DOMAIN_SUFFIX
+  value: pingan.com
+- id: f52127ad537bd294eb1a99a5c94188fa05ef93a33d65737a2f8ae92347c11b57
+  type: DOMAIN_SUFFIX
+  value: pingan.com.cn
+- id: c908974bb9a50f12019aa78432aa05a644d6811c815d45d296e11c74189a5845
+  type: DOMAIN_SUFFIX
+  value: pingan.com.hk
+- id: 3f371d00e2b3117b96370f9e952fd53ddc7223011d7b189b5007051706f4b789
+  type: DOMAIN_SUFFIX
+  value: pinganonline.com.cn
+- id: 41e12b44a0635d03ea0ac9465f4c33b4a1533f7a2e0028aba387427ecbed14ef
+  type: DOMAIN_SUFFIX
+  value: pinganventures.com
+- id: 030dbe109d72d8525bfeaf3f6cf39b10bd2dc5e1b58e4926b7ae6e8404d214fb
+  type: DOMAIN_SUFFIX
+  value: yiqianbao.com.cn
+- id: 75d192e6614162b6cf4777efd7eb0ff799cb4819689f44392fecaef4d14988e6
+  type: DOMAIN_SUFFIX
+  value: yiqianbao.net
+- id: 49aff6282a609ad6a28066edbbc3207a1ae01664c6629a881f331714ab752179
+  type: DOMAIN_SUFFIX
+  value: yqb.com
+- id: 718e985333cb1b8d26daca83bc23ee656720cfdaf0f937e3e71aa2909ae91754
+  type: DOMAIN_SUFFIX
+  value: yqbimg.com
+- id: 593a76e157b45f0ce065672101139ac8b63391bb481362ab2575e18af6f4919f
+  type: DOMAIN_SUFFIX
+  value: yqbimg.net
+provider: pingan

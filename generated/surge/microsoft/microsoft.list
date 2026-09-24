@@ -30,6 +30,7 @@ DOMAIN-SUFFIX,crossborderexpansion.com
 DOMAIN-SUFFIX,azure-dns-9.cn
 DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com
 DOMAIN-SUFFIX,bingapis.com
+DOMAIN,msedge.api.cdp.microsoft.com
 DOMAIN-SUFFIX,msappproxy.cn
 DOMAIN-SUFFIX,microsoft-ppe.com
 DOMAIN,ctldl.windowsupdate.com
@@ -71,6 +72,7 @@ DOMAIN-SUFFIX,a1158.g.akamai.net
 DOMAIN-SUFFIX,productionresultssa0.blob.core.windows.net
 DOMAIN-SUFFIX,fluidpreview.com
 DOMAIN-SUFFIX,cbdstest.download.prss.microsoft.com
+DOMAIN-SUFFIX,l-0005.l-msedge.net
 DOMAIN-SUFFIX,windows.net
 DOMAIN-SUFFIX,vscode.download.prss.microsoft.com
 DOMAIN-SUFFIX,azurestackhubuat.download.prss.microsoft.com
@@ -83,6 +85,7 @@ DOMAIN,rsm.download.prss.microsoft.com
 DOMAIN-SUFFIX,vsassets.io
 DOMAIN-SUFFIX,o365weve-dev.com
 DOMAIN-SUFFIX,windows-int.net
+DOMAIN-SUFFIX,bizographics.com
 DOMAIN-SUFFIX,explorebing.com
 DOMAIN-SUFFIX,windows8.hk
 DOMAIN-SUFFIX,microsoftreactor.org
@@ -117,6 +120,7 @@ DOMAIN-SUFFIX,yammerusercontent.com
 DOMAIN-SUFFIX,azure-test.net
 DOMAIN,oemsoc.download.prss.microsoft.com
 DOMAIN-SUFFIX,hotmail.co
+DOMAIN,edge.activity.windows.com
 DOMAIN-SUFFIX,opentranslatorstothings.org
 DOMAIN,mpnbenefitsrtl.download.prss.microsoft.com
 DOMAIN-SUFFIX,flipwithsurface.com
@@ -144,6 +148,7 @@ DOMAIN-SUFFIX,octocaptcha.com
 DOMAIN-SUFFIX,efproject.net
 DOMAIN-SUFFIX,flightsimulator.azureedge.net
 DOMAIN-SUFFIX,skypeforbusiness.com
+DOMAIN-SUFFIX,linkedin.cn
 DOMAIN-SUFFIX,xbox360.com
 DOMAIN-SUFFIX,livetileedge.dsx.mp.microsoft.com.edgekey.net
 DOMAIN-SUFFIX,apisof.net
@@ -177,6 +182,7 @@ DOMAIN,img-prod-cms-rt-microsoft-com.akamaized.net
 DOMAIN-SUFFIX,microsoftnewskids.net
 DOMAIN-SUFFIX,microsoftcloud.com
 DOMAIN-SUFFIX,azureedge.us
+DOMAIN-SUFFIX,licdn.cn
 DOMAIN-SUFFIX,tailwindtraders.com
 DOMAIN-SUFFIX,microsoftreactor.com.cn
 DOMAIN-SUFFIX,outlookmobile.com
@@ -302,6 +308,7 @@ DOMAIN-SUFFIX,azurecr.cn
 DOMAIN-SUFFIX,xamarin.com
 DOMAIN-SUFFIX,microsoftreactor.cn
 DOMAIN-SUFFIX,mstea.ms
+DOMAIN,licdn.cn.cdn20.com
 DOMAIN,msproduct.download.prss.microsoft.com
 DOMAIN-SUFFIX,github.blog
 DOMAIN-SUFFIX,storage.live.com
@@ -384,12 +391,14 @@ DOMAIN-SUFFIX,microsoft.cat
 DOMAIN-SUFFIX,github.io
 DOMAIN-SUFFIX,microsoftiotcentral.com
 DOMAIN-SUFFIX,ie10.com
+DOMAIN-SUFFIX,l-0005.dc-msedge.net
 DOMAIN-SUFFIX,bingtoolbar.com
 DOMAIN-SUFFIX,office365love.com
 DOMAIN-SUFFIX,xboxone.eu
 DOMAIN-SUFFIX,copilot-telemetry-service.githubusercontent.com
 DOMAIN-SUFFIX,bethesda.net
 DOMAIN-SUFFIX,microsoftgamestack.com
+DOMAIN-SUFFIX,rawgithub.com
 DOMAIN-SUFFIX,www.microsoft.com
 DOMAIN-SUFFIX,microsoft.lu
 DOMAIN-SUFFIX,msa.akadns6.net
@@ -467,6 +476,7 @@ DOMAIN-SUFFIX,chinacloudapp.cn
 DOMAIN-SUFFIX,live.com.au
 DOMAIN-SUFFIX,msn.com.nsatc.net
 DOMAIN-SUFFIX,unlocklimitlesslearning.com
+DOMAIN-SUFFIX,linkedin.at
 DOMAIN-SUFFIX,statics.teams.cdn.office.net
 DOMAIN-SUFFIX,azchcdnl.com
 DOMAIN-SUFFIX,microsoft.by
@@ -483,6 +493,7 @@ DOMAIN-SUFFIX,visualstudio-staging.com
 DOMAIN-SUFFIX,myvs.download.prss.microsoft.com
 DOMAIN-SUFFIX,microsoftpartnersolutions.com
 DOMAIN-SUFFIX,onedrive.live.com
+DOMAIN,linkedin.sc.omtrdc.net
 DOMAIN,msdprod-ad.download.prss.microsoft.com
 DOMAIN-SUFFIX,microsoft.lt
 DOMAIN-SUFFIX,itacademy.download.prss.microsoft.com
@@ -562,6 +573,7 @@ DOMAIN-SUFFIX,azureiotsuite.cn
 DOMAIN-SUFFIX,powershellgallery.com
 DOMAIN-SUFFIX,nelreports.net
 DOMAIN-SUFFIX,outlookgroups.ms
+DOMAIN,edge.microsoft.com
 DOMAIN-SUFFIX,azure-dns-7.cn
 DOMAIN-SUFFIX,blazor.net
 DOMAIN-SUFFIX,gamepass.com
@@ -630,6 +642,7 @@ DOMAIN-SUFFIX,xboxplayanywhere.com
 DOMAIN-SUFFIX,bingsettingssearch.trafficmanager.net
 DOMAIN-SUFFIX,svc.ms
 DOMAIN-SUFFIX,joinms.com.cn
+DOMAIN-SUFFIX,github-avatars.oss-cn-hongkong.aliyuncs.com
 DOMAIN-SUFFIX,videobreakdown.com
 DOMAIN-SUFFIX,githubsupport.com
 DOMAIN-SUFFIX,azuresmartspaces.net
@@ -649,6 +662,7 @@ DOMAIN-SUFFIX,msidentity.cn
 DOMAIN-SUFFIX,management-azure-devices-int.net
 DOMAIN-SUFFIX,microsoftaffiliates.com
 DOMAIN-SUFFIX,msftauthimages.cn
+DOMAIN-SUFFIX,rawgit.com
 DOMAIN-SUFFIX,productionresultssa11.blob.core.windows.net
 DOMAIN-SUFFIX,trustcenter.cn
 DOMAIN-SUFFIX,ovi.com.cn
@@ -689,6 +703,7 @@ DOMAIN-SUFFIX,azure-apim.net
 DOMAIN-SUFFIX,translatetheweb.com
 DOMAIN-SUFFIX,visualstudio.net
 DOMAIN,vlportal.download.prss.microsoft.com
+DOMAIN-SUFFIX,github-atom-io-herokuapp-com.freetls.fastly.net
 DOMAIN-SUFFIX,azureedge-test.net
 DOMAIN-SUFFIX,xboxlive.cn
 DOMAIN-SUFFIX,productionresultssa5.blob.core.windows.net
@@ -716,10 +731,12 @@ DOMAIN-SUFFIX,microsoftapps.azurewebsites.net
 DOMAIN-SUFFIX,mpnevolution.com
 DOMAIN-SUFFIX,browser.events.data.msn.com
 DOMAIN-SUFFIX,sqlserveronlinux.com
+DOMAIN-SUFFIX,licdn.com
 DOMAIN-SUFFIX,microsoftsiteselection.com
 DOMAIN-SUFFIX,mcchcdn.com
 DOMAIN-SUFFIX,microsoftaccountguard.com
 DOMAIN-SUFFIX,microsoftedge.com
+DOMAIN,e122475.dscg.akamaiedge.net
 DOMAIN-KEYWORD,skype
 DOMAIN-SUFFIX,here.net
 DOMAIN,officecdn-microsoft-com.akamaized.net
@@ -828,6 +845,7 @@ DOMAIN-SUFFIX,microsoft.ch
 DOMAIN-SUFFIX,onedrive.eu
 DOMAIN,azurestackhub.download.prss.microsoft.com
 DOMAIN-SUFFIX,imaginecup.pl
+DOMAIN-SUFFIX,lnkd.in
 DOMAIN-SUFFIX,azchcdnp.com
 DOMAIN-SUFFIX,msftnet.org
 DOMAIN-SUFFIX,download.microsoft.com
@@ -906,6 +924,7 @@ DOMAIN-SUFFIX,spo-msedge.net
 DOMAIN-SUFFIX,cs11.wpc.v0cdn.net
 DOMAIN-SUFFIX,live.com.akadns.net
 DOMAIN-SUFFIX,vfsforgit.org
+DOMAIN-SUFFIX,linkedin.com
 DOMAIN-SUFFIX,msft.net
 DOMAIN-SUFFIX,msn.net
 DOMAIN-SUFFIX,microsofttranslator.com
@@ -927,6 +946,7 @@ DOMAIN-SUFFIX,xbox.eu
 DOMAIN-SUFFIX,azurecomm.net
 DOMAIN-SUFFIX,brazilpartneruniversity.com
 DOMAIN-SUFFIX,nugettest.org
+DOMAIN,iecvlist.microsoft.com
 DOMAIN,surface.downloads.prss.microsoft.com
 DOMAIN-SUFFIX,bing.com.cn
 DOMAIN-SUFFIX,chinacloud-mobile.cn
