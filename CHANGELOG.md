@@ -1,3 +1,17 @@
+## [2026.09.25] — Icon Library V4 Visual Rebuild
+
+### Changed
+- active matrix 调整为 Official + Lucide + Tabler + Phosphor + Material Symbols + Fluent + Heroicons + Remix + Hugeicons + Solar。
+- 从 active matrix 移除 Bootstrap，加入 Hugeicons，补足厚重圆角 / bulk 视觉语言。
+- 重做 8 个既有 fallback SVG，并新增 Hugeicons fallback glyph。
+- 统一 64×64、约 8px 安全边距、小尺寸优先和「主轮廓 → 服务结构 → 焦点节点」三层构建规则。
+- Official / V3 brand asset 继续保持身份优先，不用 UI 风格仿制真实品牌 Logo。
+- Rule Index 与 Icon Service Index 路径级校验保持 262 / 262：缺失 0、重复 0、多余 0。
+- Active Icon Release 更新为 `2026.09.25-prc-icon-matrix-3`。
+
+### Compatibility
+- `assets/icons/v4/styles/bootstrap/service.svg` 暂保留，仅用于历史 Raw URL 兼容；当前 SSOT 不再引用。
+
 # Changelog
 
 ## [1.0.1] — 2026-09-01
