@@ -13,15 +13,15 @@
 | 4 | Material Symbols | outlined / rounded / sharp | Apache-2.0 | 通用 UI |
 | 5 | Fluent | regular / filled | MIT | 企业化、管理面板 |
 | 6 | Heroicons | outline / solid | MIT | 现代 Web UI |
-| 7 | Remix | line / fill | Apache-2.0 | 服务 / 状态双态 |
+| 7 | Remix | line / fill | Remix Icon License v1.0 | 服务 / 状态双态 |
 | 8 | Bootstrap | outline / fill | MIT | 高兼容 UI |
-| 9 | Solar | multi-weight | CC-BY-4.0 | 特色主题、强调图形 |
+| 9 | Solar | multi-weight | MIT upstream + CC BY 4.0 for listed third-party elements | 特色主题、强调图形 |
 
 ## 核心原则
 
 真实品牌图标优先保留。九种风格只作为 UI / semantic fallback 视觉层，不把品牌 Logo 仿造成另一套库的 Logo。
 
-当规则服务没有可信品牌图标时，系统从九种设计语言中确定性选择一个**本仓库自有 semantic glyph**，从而保证 100% 图标覆盖。
+当规则服务没有可信品牌图标时，系统从九种设计语言中确定性选择一个**本仓库自有 semantic glyph**，从而保证 100% 图标覆盖。九种库只作为风格参考，不把第三方原始 SVG 当作本仓库自有资产。
 
 ## 当前覆盖
 
