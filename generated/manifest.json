@@ -9,21 +9,21 @@
     "surge"
   ],
   "collection_date": "2026-09-24",
-  "file_count": 1739,
+  "file_count": 1403,
   "files": [
     {
-      "file": "_promotion/20260924T002533480494Z-run.json",
+      "file": "_promotion/20260924T035204642634Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "4f643bc89b28c5192aa84be099354c8baaead1fd68fc5ea3c07ff7bd4839ccb6",
-      "size": 179361
+      "sha256": "1856681b34727c79104cd5da10259c92d9054051caebe20b49b0fd487825be51",
+      "size": 141079
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "4f643bc89b28c5192aa84be099354c8baaead1fd68fc5ea3c07ff7bd4839ccb6",
-      "size": 179361
+      "sha256": "1856681b34727c79104cd5da10259c92d9054051caebe20b49b0fd487825be51",
+      "size": 141079
     },
     {
       "file": "asn/metadata.yaml",
@@ -60,26 +60,18 @@
     {
       "file": "egern/alibaba/1688/1688.yaml",
       "kind": "client_rules",
-      "rule_count": 3,
+      "rule_count": 2,
       "scope": "egern",
-      "sha256": "f9b5fed40b3e212ffd111f5f97092cf7e58811f1eed3405568003733e854b5f4",
-      "size": 73
+      "sha256": "d694f99aba8d648bbf4030375823b00734f258bf617909d0a105296fc1ad2140",
+      "size": 53
     },
     {
       "file": "egern/alibaba/alibaba.yaml",
       "kind": "client_rules",
-      "rule_count": 573,
+      "rule_count": 556,
       "scope": "egern",
-      "sha256": "2805535ca7b065530dcae014c5d2c1b36991d75ecba68cd66084901b4c03c538",
-      "size": 12213
-    },
-    {
-      "file": "egern/alibaba/alibabacloud/alibabacloud.yaml",
-      "kind": "client_rules",
-      "rule_count": 12,
-      "scope": "egern",
-      "sha256": "2094f3a9df5eaf94ec6ab98fd0b538e45843c385aa5019163fa5aa7863a460de",
-      "size": 333
+      "sha256": "80f87b04c0a9d6a4b520743ed0e85cb669f548adef9aac1d0a07fce8354895d9",
+      "size": 11803
     },
     {
       "file": "egern/alibaba/alipay/alipay.yaml",
@@ -100,18 +92,18 @@
     {
       "file": "egern/alibaba/dingding/dingding.yaml",
       "kind": "client_rules",
-      "rule_count": 6,
+      "rule_count": 3,
       "scope": "egern",
-      "sha256": "9ebf7b50d2b1dfd04011fd277793b2bb4f89502cde7458496211f0332e1bf6a3",
-      "size": 173
+      "sha256": "a8fed0966fef695f702828facefcaf539ddd3fc306d1f20c3283df9559194717",
+      "size": 91
     },
     {
       "file": "egern/alibaba/taobao/taobao.yaml",
       "kind": "client_rules",
-      "rule_count": 14,
+      "rule_count": 1,
       "scope": "egern",
-      "sha256": "3e41ec5d767912bb53b965d1dbc8a65878ec2892b18aeaff8af5984c302dd753",
-      "size": 349
+      "sha256": "9762455ccdcd319605610b377fae45d853d759a24d192455a9c974ed43c3d08e",
+      "size": 41
     },
     {
       "file": "egern/alibaba/tmall/tmall.yaml",
@@ -156,42 +148,10 @@
     {
       "file": "egern/apple/apple.yaml",
       "kind": "client_rules",
-      "rule_count": 2011,
+      "rule_count": 2000,
       "scope": "egern",
-      "sha256": "c3ec0820aae917b6067210adab3c1fcf277f51858b0b2bee180232c92c6c13f4",
-      "size": 51030
-    },
-    {
-      "file": "egern/apple/appledev/appledev.yaml",
-      "kind": "client_rules",
-      "rule_count": 38,
-      "scope": "egern",
-      "sha256": "1c395609ac4ded6e3b35327e27f502baee1971d9340ccdd33e57d162bc09124d",
-      "size": 966
-    },
-    {
-      "file": "egern/apple/applemedia/applemedia.yaml",
-      "kind": "client_rules",
-      "rule_count": 52,
-      "scope": "egern",
-      "sha256": "ac9fc90d0674a5bce350cf096842857897fb91638f60318e0471efd99e6d19dd",
-      "size": 1209
-    },
-    {
-      "file": "egern/apple/applemusic/applemusic.yaml",
-      "kind": "client_rules",
-      "rule_count": 9,
-      "scope": "egern",
-      "sha256": "75b8c801dcc480f845afd889fe44b497b6c18b5d22347d7bc8b0bc4cab33f69d",
-      "size": 274
-    },
-    {
-      "file": "egern/apple/applenews/applenews.yaml",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "egern",
-      "sha256": "5628222bac75e848589ee6fea8eb5e7b45cd39d92e4b9ca3eb454471c77cc21f",
-      "size": 83
+      "sha256": "4b9f973bcb06626c622f70b2daa96012b7e55f72a954fc239255bfa60034173e",
+      "size": 50753
     },
     {
       "file": "egern/apple/appletv/appletv.yaml",
@@ -200,38 +160,6 @@
       "scope": "egern",
       "sha256": "a56cc6c3e54b51c251cfc2e75adec3ef34aef6a492ec22aa7a4edfc9dc2b4300",
       "size": 215
-    },
-    {
-      "file": "egern/apple/appstore/appstore.yaml",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "egern",
-      "sha256": "6e675aeb04794b9570643f03c9c28458896e93f2823db4292e9c0b728b3dc763",
-      "size": 63
-    },
-    {
-      "file": "egern/apple/findmy/findmy.yaml",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "egern",
-      "sha256": "d6e72b2eb95e348c58f0cd1ddd17451d8d7b935ea3a3a82ea1d4883be41ee9a3",
-      "size": 99
-    },
-    {
-      "file": "egern/apple/icloud/icloud.yaml",
-      "kind": "client_rules",
-      "rule_count": 60,
-      "scope": "egern",
-      "sha256": "4f5f9dfffdce462a9714e97845b0c3d49188ba80fab00953144599a74d6e1cc1",
-      "size": 1202
-    },
-    {
-      "file": "egern/apple/testflight/testflight.yaml",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "egern",
-      "sha256": "2517f4cdd954557a82a159d071a090d60059c91ef64f033a2dfcc3c5b467e22a",
-      "size": 67
     },
     {
       "file": "egern/atlassian/atlassian.yaml",
@@ -252,10 +180,10 @@
     {
       "file": "egern/baidu/baidu.yaml",
       "kind": "client_rules",
-      "rule_count": 285,
+      "rule_count": 2,
       "scope": "egern",
-      "sha256": "14776410186c6991285c8f5f8d4ceb50b3f4f4ae4b93810fc0b9ef030920843f",
-      "size": 5668
+      "sha256": "ce7bcc18df9028413f290d16e0e937d7b2cb3126d20d651ac882a65b6bdb05e4",
+      "size": 67
     },
     {
       "file": "egern/baidu/baidunetdisk/baidunetdisk.yaml",
@@ -264,14 +192,6 @@
       "scope": "egern",
       "sha256": "ce7bcc18df9028413f290d16e0e937d7b2cb3126d20d651ac882a65b6bdb05e4",
       "size": 67
-    },
-    {
-      "file": "egern/baidu/baidutieba/baidutieba.yaml",
-      "kind": "client_rules",
-      "rule_count": 32,
-      "scope": "egern",
-      "sha256": "d28d705da5cce9e858a5b62c09e1a727d782232bef9ee23aba5a9ace422a5edd",
-      "size": 805
     },
     {
       "file": "egern/bluesky/bluesky/bluesky.yaml",
@@ -308,10 +228,10 @@
     {
       "file": "egern/bytedance/bytedance.yaml",
       "kind": "client_rules",
-      "rule_count": 1092,
+      "rule_count": 1081,
       "scope": "egern",
-      "sha256": "267cfcfac95e6e4ceaa62ec1417e33c498c0840e4de0ddaf7e10070bfe207d90",
-      "size": 23141
+      "sha256": "ee09c1ad061e6cb1e8bae6f92e3d27c59e99af64abb561ea24645e011a5ba367",
+      "size": 22845
     },
     {
       "file": "egern/bytedance/doubao/doubao.yaml",
@@ -320,30 +240,6 @@
       "scope": "egern",
       "sha256": "e9394dd4fa9a5f57725738b044227515a849b564bf2171cb2c832933d91e83b5",
       "size": 120
-    },
-    {
-      "file": "egern/bytedance/douyin/douyin.yaml",
-      "kind": "client_rules",
-      "rule_count": 13,
-      "scope": "egern",
-      "sha256": "36c01d1ea2ed4bfef60c615126c8236326ea42bdbff8db3bb0ed00eaeb17c66a",
-      "size": 293
-    },
-    {
-      "file": "egern/bytedance/feishu/feishu.yaml",
-      "kind": "client_rules",
-      "rule_count": 43,
-      "scope": "egern",
-      "sha256": "ab15a60253dedb4cb7a867c014e02118c2ccc2df8b808a84d59c6a93b08d874d",
-      "size": 944
-    },
-    {
-      "file": "egern/bytedance/tiktok/tiktok.yaml",
-      "kind": "client_rules",
-      "rule_count": 29,
-      "scope": "egern",
-      "sha256": "f545313861f2a074a3af2d522f3cf2f67175e46d2db75c3657cddf98321e738b",
-      "size": 643
     },
     {
       "file": "egern/canva/canva/canva.yaml",
@@ -482,14 +378,6 @@
       "size": 247
     },
     {
-      "file": "egern/categories/bing/bing.yaml",
-      "kind": "client_rules",
-      "rule_count": 9,
-      "scope": "egern",
-      "sha256": "026827bbc65ee53f78c948d5cdff30fbe406863b3b50cf93bd69cda5664ed588",
-      "size": 209
-    },
-    {
       "file": "egern/categories/boc/boc.yaml",
       "kind": "client_rules",
       "rule_count": 22,
@@ -554,28 +442,12 @@
       "size": 694
     },
     {
-      "file": "egern/categories/claude/claude.yaml",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "egern",
-      "sha256": "af10c995ee4a0de762bd421c0f6f82d15750f44ff9c50405a897b23e189eecc2",
-      "size": 79
-    },
-    {
       "file": "egern/categories/cmb/cmb.yaml",
       "kind": "client_rules",
       "rule_count": 38,
       "scope": "egern",
       "sha256": "3567d454cf003165de5053c9df0abf3b4dd11d8bedc49daa947c08d67953e49a",
       "size": 728
-    },
-    {
-      "file": "egern/categories/copilot/copilot.yaml",
-      "kind": "client_rules",
-      "rule_count": 45,
-      "scope": "egern",
-      "sha256": "04112a4f74277abb9326d4df3845854064318dd33defc632b2d0c10b3aeaa151",
-      "size": 1216
     },
     {
       "file": "egern/categories/ctrip/ctrip.yaml",
@@ -608,14 +480,6 @@
       "scope": "egern",
       "sha256": "9954c4b21970cdb434a0e50ec8fd621419c6b2176d086d77add359f215251ffe",
       "size": 155
-    },
-    {
-      "file": "egern/categories/discord/discord.yaml",
-      "kind": "client_rules",
-      "rule_count": 28,
-      "scope": "egern",
-      "sha256": "62aa250a68dc34805ccf8ad2a1fb6ec200dbd4b28b6f4428195f0672b6cb619a",
-      "size": 644
     },
     {
       "file": "egern/categories/disney/disney.yaml",
@@ -714,14 +578,6 @@
       "size": 334
     },
     {
-      "file": "egern/categories/gemini/gemini.yaml",
-      "kind": "client_rules",
-      "rule_count": 9,
-      "scope": "egern",
-      "sha256": "ab3245616e0bdd163b49939288031085adb4054c8e7369125aba0b972a171ea0",
-      "size": 248
-    },
-    {
       "file": "egern/categories/github/github.yaml",
       "kind": "client_rules",
       "rule_count": 29,
@@ -792,22 +648,6 @@
       "scope": "egern",
       "sha256": "27881f2f60ca9f832a204b8ab12f33a040b936a3db7bddca278ce797878f9e3f",
       "size": 340
-    },
-    {
-      "file": "egern/categories/honorofkings_cn/honorofkings_cn.yaml",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "egern",
-      "sha256": "da797291b80672836185cf7f17536e0f01e4616e651d5539dbbb923568ae2a81",
-      "size": 36
-    },
-    {
-      "file": "egern/categories/honorofkings_global/honorofkings_global.yaml",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "egern",
-      "sha256": "e6e0d91261788377fc87a1ded2948746d8cbc5bdf7fa70dc21cf0ad44c7365d8",
-      "size": 69
     },
     {
       "file": "egern/categories/hulu/hulu.yaml",
@@ -946,22 +786,6 @@
       "size": 159
     },
     {
-      "file": "egern/categories/neteasemail/neteasemail.yaml",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "egern",
-      "sha256": "8d4f752aad0740fecd9fe52a8176f0813e39803d9b7c3c1ed467eb83c2434e48",
-      "size": 77
-    },
-    {
-      "file": "egern/categories/netflix/netflix.yaml",
-      "kind": "client_rules",
-      "rule_count": 31,
-      "scope": "egern",
-      "sha256": "375d19b6a5d9aac8aba1176079d8cb902667440270d15149452cc317f16b3d13",
-      "size": 739
-    },
-    {
       "file": "egern/categories/nintendo/nintendo.yaml",
       "kind": "client_rules",
       "rule_count": 126,
@@ -986,14 +810,6 @@
       "size": 65
     },
     {
-      "file": "egern/categories/openai/openai.yaml",
-      "kind": "client_rules",
-      "rule_count": 31,
-      "scope": "egern",
-      "sha256": "725bef1d219c61e382a0ee0851b1446e0a42ec7ce929551372c756a2ea869be2",
-      "size": 841
-    },
-    {
       "file": "egern/categories/oppo/oppo.yaml",
       "kind": "client_rules",
       "rule_count": 56,
@@ -1012,10 +828,10 @@
     {
       "file": "egern/categories/other/other.yaml",
       "kind": "client_rules",
-      "rule_count": 128575,
+      "rule_count": 128327,
       "scope": "egern",
-      "sha256": "3da0fec52bcf122e92c0d42bd072400e8ce8708aabc3c8f9132138d4c9dd8a60",
-      "size": 2462151
+      "sha256": "1773f0409069a3ef92b438e9f278a0c35d1d6b327bc75950a7a6a64deb530672",
+      "size": 2456462
     },
     {
       "file": "egern/categories/paypal/paypal.yaml",
@@ -1130,14 +946,6 @@
       "size": 179
     },
     {
-      "file": "egern/categories/siri/siri.yaml",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "egern",
-      "sha256": "469904152daaadbab5c1190344c7781d51e2132c19a8c1001574e8f170643da6",
-      "size": 43
-    },
-    {
       "file": "egern/categories/slack/slack.yaml",
       "kind": "client_rules",
       "rule_count": 11,
@@ -1200,14 +1008,6 @@
       "scope": "egern",
       "sha256": "74bb0962197c42abe45c1ae00937aff28e9d21dad299c2860fefea3621c615cd",
       "size": 8835
-    },
-    {
-      "file": "egern/categories/telegram/telegram.yaml",
-      "kind": "client_rules",
-      "rule_count": 24,
-      "scope": "egern",
-      "sha256": "e1e17dde11e31edb31aca7525b803c3c34fe97026d613e5d25416b36656ad705",
-      "size": 459
     },
     {
       "file": "egern/categories/tongcheng/tongcheng.yaml",
@@ -1290,14 +1090,6 @@
       "size": 262
     },
     {
-      "file": "egern/categories/xbox/xbox.yaml",
-      "kind": "client_rules",
-      "rule_count": 42,
-      "scope": "egern",
-      "sha256": "576b52fa620e9c4f60d4db5a07d2cc3fcb1bb8f32071970e551163f15ea50fce",
-      "size": 921
-    },
-    {
       "file": "egern/categories/xiaohongshu/xiaohongshu.yaml",
       "kind": "client_rules",
       "rule_count": 4,
@@ -1340,10 +1132,10 @@
     {
       "file": "egern/china/china.yaml",
       "kind": "client_rules",
-      "rule_count": 109393,
+      "rule_count": 109584,
       "scope": "egern",
-      "sha256": "80acf72cc70a7b705188119428ac66fcffc8f27e70e7a3f762d290d827143943",
-      "size": 2041369
+      "sha256": "72ddd0af18b6085c42d6c7e7d2fd732e1911f6811a8fc52161ab041ff1fb24ab",
+      "size": 2045059
     },
     {
       "file": "egern/cloudflare/cloudflare.yaml",
@@ -1368,22 +1160,6 @@
       "scope": "egern",
       "sha256": "997c71bcbfd2601cda9e3a99c0a23d27d5f977913234552086912b86b09fcc39",
       "size": 93
-    },
-    {
-      "file": "egern/deepseek/deepseek/deepseek.yaml",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "egern",
-      "sha256": "8d4f7ef514e79a6a793c9a428761a3b4bfbf66837d222b026a1fc459028b701a",
-      "size": 60
-    },
-    {
-      "file": "egern/deepseek/deepseek.yaml",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "egern",
-      "sha256": "4d02dcd00588a03a3b1ead7abebbcc6817760939f7b4e5ab82c285775e0c1ba1",
-      "size": 60
     },
     {
       "file": "egern/dewu/dewu/dewu.yaml",
@@ -1428,10 +1204,10 @@
     {
       "file": "egern/google/google.yaml",
       "kind": "client_rules",
-      "rule_count": 1220,
+      "rule_count": 1214,
       "scope": "egern",
-      "sha256": "e81775715d31e0c8e124e4f39366ffd1b231242bd4f37eae35e67753347c0cd6",
-      "size": 26867
+      "sha256": "2a52894df36bfba5b78f30ed111e72fe63d885ebb144549e4237fe7931e994f7",
+      "size": 26713
     },
     {
       "file": "egern/google/googlecloud/googlecloud.yaml",
@@ -1442,52 +1218,12 @@
       "size": 163
     },
     {
-      "file": "egern/google/googledrive/googledrive.yaml",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "egern",
-      "sha256": "fa24f894c964b7f98eb6ce256b838993390fdf2126bcc5ccea28d775ab0fe0f4",
-      "size": 114
-    },
-    {
       "file": "egern/google/googlefcm/googlefcm.yaml",
       "kind": "client_rules",
       "rule_count": 13,
       "scope": "egern",
       "sha256": "7d9ce3304df0ddcead7d1500cecc736d711ff0436e7bbf42805e2eafb0ab83a4",
       "size": 378
-    },
-    {
-      "file": "egern/google/youtube/youtube.yaml",
-      "kind": "client_rules",
-      "rule_count": 175,
-      "scope": "egern",
-      "sha256": "dbc776cd62d35da7c3ab447af867b75db88db8e02423e5d99bc617a3a673d7fe",
-      "size": 3360
-    },
-    {
-      "file": "egern/google/youtubemusic/youtubemusic.yaml",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "egern",
-      "sha256": "ad42e1b9fbb10e0222012852e00ff53b057a23c4983163ec7761d38e989c7084",
-      "size": 43
-    },
-    {
-      "file": "egern/groq/groq/groq.yaml",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "egern",
-      "sha256": "8547c4a275dbcd37bb11ce0b45755e9ee7162e4f505ff627ff5e52406945a209",
-      "size": 34
-    },
-    {
-      "file": "egern/groq/groq.yaml",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "egern",
-      "sha256": "8547c4a275dbcd37bb11ce0b45755e9ee7162e4f505ff627ff5e52406945a209",
-      "size": 34
     },
     {
       "file": "egern/hoyoverse/hoyoverse.yaml",
@@ -1506,22 +1242,6 @@
       "size": 8899
     },
     {
-      "file": "egern/huggingface/huggingface/huggingface.yaml",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "egern",
-      "sha256": "f7baa81276902e5ab089b4d23966f368e73b273026a9ef553a21495bf1c2d8e0",
-      "size": 67
-    },
-    {
-      "file": "egern/huggingface/huggingface.yaml",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "egern",
-      "sha256": "d238d2c143ca4c982cce0dc12636c5171afa931f22ce196b22ec9199763352b8",
-      "size": 67
-    },
-    {
       "file": "egern/meta/facebook/facebook.yaml",
       "kind": "client_rules",
       "rule_count": 1363,
@@ -1536,14 +1256,6 @@
       "scope": "egern",
       "sha256": "f0dd559405a8578a2b37058e134be8aee9edf5d8b7d9d2953662967e43e7ac6c",
       "size": 3603
-    },
-    {
-      "file": "egern/meta/messenger/messenger.yaml",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "egern",
-      "sha256": "3bbcc69c7f5998c0a7704d47fa10ec6ee1f18b38de37f5e4791632a77033481e",
-      "size": 89
     },
     {
       "file": "egern/meta/meta.yaml",
@@ -1570,52 +1282,20 @@
       "size": 969
     },
     {
-      "file": "egern/microsoft/azure/azure.yaml",
-      "kind": "client_rules",
-      "rule_count": 149,
-      "scope": "egern",
-      "sha256": "1e498a19e332380917b57451b5ea8df466ed89b38f74d0ffc8fbc31ff19f6836",
-      "size": 3442
-    },
-    {
       "file": "egern/microsoft/microsoft.yaml",
       "kind": "client_rules",
-      "rule_count": 952,
+      "rule_count": 944,
       "scope": "egern",
-      "sha256": "1e83e498d6ab3494da53d3c2a09cf3b25a9f7b6386c3748c338bc1771981bdf4",
-      "size": 24337
-    },
-    {
-      "file": "egern/microsoft/onedrive/onedrive.yaml",
-      "kind": "client_rules",
-      "rule_count": 13,
-      "scope": "egern",
-      "sha256": "9d236b39807a44344203db1fafcfef20c9eba74fd90281a5532e09cf9643abb8",
-      "size": 334
-    },
-    {
-      "file": "egern/microsoft/teams/teams.yaml",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "egern",
-      "sha256": "4966ca8c5c4a33bce66059c722fc906cb30cc86335260e1eb9e4a664b9fa3dbe",
-      "size": 129
+      "sha256": "a9e5febff1216011f73d03409fbc598b196cca8140e2d5332ed28501707c5242",
+      "size": 24129
     },
     {
       "file": "egern/netease/netease.yaml",
       "kind": "client_rules",
-      "rule_count": 97,
+      "rule_count": 96,
       "scope": "egern",
-      "sha256": "148bbfe37d9d521057c325f0fa3e46fd217cd706d8507ecde1bde0b6c5949e58",
-      "size": 2072
-    },
-    {
-      "file": "egern/netease/neteasemusic/neteasemusic.yaml",
-      "kind": "client_rules",
-      "rule_count": 10,
-      "scope": "egern",
-      "sha256": "6f4a6c9cf63c3eb9719648ffb6bd474c69f06efa36b0babb126a93572392f3c5",
-      "size": 250
+      "sha256": "2b3cf08d3901b5b6153e4bc653de2a6bd6d12251940518c53b64adc41950b746",
+      "size": 2036
     },
     {
       "file": "egern/netease/youdao/youdao.yaml",
@@ -1640,54 +1320,6 @@
       "scope": "egern",
       "sha256": "fff595c547486dfe7109d810825f5cba10b166e0eb62a4d639248c35c6afd392",
       "size": 298
-    },
-    {
-      "file": "egern/perplexity/perplexity/perplexity.yaml",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "egern",
-      "sha256": "d0c6b2883632969476e59bcd80cfa7c75ef5b56c7d3978d20520521393717f79",
-      "size": 104
-    },
-    {
-      "file": "egern/perplexity/perplexity.yaml",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "egern",
-      "sha256": "704558aa6384c1f104ea6f6599eb613876bfc91dc2bbbf92469f486454c9388e",
-      "size": 104
-    },
-    {
-      "file": "egern/roblox/roblox/roblox.yaml",
-      "kind": "client_rules",
-      "rule_count": 47,
-      "scope": "egern",
-      "sha256": "ebd3cb34f9b2671e53aaf72a10d87a0c509c5d7d07ae2906a39cd65326c99e3d",
-      "size": 891
-    },
-    {
-      "file": "egern/roblox/roblox.yaml",
-      "kind": "client_rules",
-      "rule_count": 47,
-      "scope": "egern",
-      "sha256": "fbe092afac0201d92eeed5752d75233ef4b9953e953ceb7dc89a0f0e9d1e90c5",
-      "size": 891
-    },
-    {
-      "file": "egern/signal/signal/signal.yaml",
-      "kind": "client_rules",
-      "rule_count": 8,
-      "scope": "egern",
-      "sha256": "aad443e9505758a121e9fc8cd59bec048aed8cc780c21744b5e4dcdd9ec9f301",
-      "size": 171
-    },
-    {
-      "file": "egern/signal/signal.yaml",
-      "kind": "client_rules",
-      "rule_count": 8,
-      "scope": "egern",
-      "sha256": "340cbd7ca154a5fb90b86afcc12e363293ddd8c501b47e1190e8ca86d7e59862",
-      "size": 171
     },
     {
       "file": "egern/snap/snap.yaml",
@@ -1724,18 +1356,18 @@
     {
       "file": "egern/tencent/tencent.yaml",
       "kind": "client_rules",
-      "rule_count": 745,
+      "rule_count": 815,
       "scope": "egern",
-      "sha256": "786210b9ee613ec9729c1d9b296ee88008427f492a50a1613a3de9d2e61ade6b",
-      "size": 15783
+      "sha256": "a46359af8a81133c988f7b63091d7300fe4a60447a431e3a68c52285158f9852",
+      "size": 17085
     },
     {
       "file": "egern/tencent/tencentcloud/tencentcloud.yaml",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 105,
       "scope": "egern",
-      "sha256": "340b759c37b59fa272e7525dbe1a2f6705b3498530549629b29d983ed711e1fd",
-      "size": 43
+      "sha256": "ce1eda3fd4c5770b616180d4389fe8235181cf5420a4ffe0414a8a8549083b66",
+      "size": 2290
     },
     {
       "file": "egern/tencent/tencentmeeting/tencentmeeting.yaml",
@@ -1744,22 +1376,6 @@
       "scope": "egern",
       "sha256": "978a336576e93243dd54194e2d93a6bf514457f5f603864163e81829ee74a248",
       "size": 108
-    },
-    {
-      "file": "egern/tencent/tencentvideo/tencentvideo.yaml",
-      "kind": "client_rules",
-      "rule_count": 17,
-      "scope": "egern",
-      "sha256": "359bccc8982fe0b33131a7eca7b2728e3917e232f171f558c08993e57c17a83c",
-      "size": 566
-    },
-    {
-      "file": "egern/tencent/wechat/wechat.yaml",
-      "kind": "client_rules",
-      "rule_count": 28,
-      "scope": "egern",
-      "sha256": "35bc9a005d281bb278f9833823d616b8c09033b0b1d11767ab254c8ff2e99e91",
-      "size": 613
     },
     {
       "file": "egern/tencent/wecom/wecom.yaml",
@@ -1854,320 +1470,320 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "04877c9319ee124ab8079dac7caa706e5b800b18bb74a1d9a7c78ff779eeaacb",
-      "size": 312637
+      "sha256": "d43f68c1409edd79e5fb01dbab9bf753c66948e5473fd3a6a68cf44ba0b183ad",
+      "size": 327845
     },
     {
       "file": "geoip/au_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 18172,
+      "rule_count": 18846,
       "scope": "geoip",
-      "sha256": "02bbf48d998a2227cec295f785a98abea8d20ba2f2955910094f695acf5ba95f",
-      "size": 463573
+      "sha256": "a4bb335818607bdc70954a501e2d8dad3b358b538c9f432a83043f901d417a27",
+      "size": 484965
     },
     {
       "file": "geoip/au_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "04877c9319ee124ab8079dac7caa706e5b800b18bb74a1d9a7c78ff779eeaacb",
-      "size": 312637
+      "sha256": "d43f68c1409edd79e5fb01dbab9bf753c66948e5473fd3a6a68cf44ba0b183ad",
+      "size": 327845
     },
     {
       "file": "geoip/au_surge.list",
       "kind": "network_dataset",
-      "rule_count": 18172,
+      "rule_count": 18846,
       "scope": "geoip",
-      "sha256": "02bbf48d998a2227cec295f785a98abea8d20ba2f2955910094f695acf5ba95f",
-      "size": 463573
+      "sha256": "a4bb335818607bdc70954a501e2d8dad3b358b538c9f432a83043f901d417a27",
+      "size": 484965
     },
     {
       "file": "geoip/cn.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "4ab7e15eeeb3a999bc85a3d1b37b15528f4d22b67507f5a94c40536afbe547bd",
-      "size": 155270
+      "sha256": "7ccbb7096875a3f91df8231a0c97183fcc3b400b15c04807f945af3bb166ec2d",
+      "size": 153085
     },
     {
       "file": "geoip/cn_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 9741,
+      "rule_count": 9612,
       "scope": "geoip",
-      "sha256": "d3470905feb79d5e9981a4146b7b3d22ce9c4a5c9731d6e505f41b12e9da0532",
-      "size": 236666
+      "sha256": "c54b45df1fec96756f9cd75fd6334d5d198712536ba4ddb5a281c7f3526d7534",
+      "size": 233388
     },
     {
       "file": "geoip/cn_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "4ab7e15eeeb3a999bc85a3d1b37b15528f4d22b67507f5a94c40536afbe547bd",
-      "size": 155270
+      "sha256": "7ccbb7096875a3f91df8231a0c97183fcc3b400b15c04807f945af3bb166ec2d",
+      "size": 153085
     },
     {
       "file": "geoip/cn_surge.list",
       "kind": "network_dataset",
-      "rule_count": 9741,
+      "rule_count": 9612,
       "scope": "geoip",
-      "sha256": "d3470905feb79d5e9981a4146b7b3d22ce9c4a5c9731d6e505f41b12e9da0532",
-      "size": 236666
+      "sha256": "c54b45df1fec96756f9cd75fd6334d5d198712536ba4ddb5a281c7f3526d7534",
+      "size": 233388
     },
     {
       "file": "geoip/de.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "a996ced0e3f995b6231e3f685a0dcf9d505069d83cd0b6c007da439f5524df6c",
-      "size": 1394125
+      "sha256": "9e2f59de3eb35f244930167ed874d302b16be2970ad7ccd9bb7d536cef622bd8",
+      "size": 1396583
     },
     {
       "file": "geoip/de_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 72029,
+      "rule_count": 72165,
       "scope": "geoip",
-      "sha256": "7f788b4c14d73e906df59ce9484bf08dbb82981950fc74db5caa5c8f23d836cf",
-      "size": 2012817
+      "sha256": "27826f9e728e137f70f884fc5b4697b84a8282b3ef1c90bcba353cb1901cc748",
+      "size": 2016424
     },
     {
       "file": "geoip/de_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "a996ced0e3f995b6231e3f685a0dcf9d505069d83cd0b6c007da439f5524df6c",
-      "size": 1394125
+      "sha256": "9e2f59de3eb35f244930167ed874d302b16be2970ad7ccd9bb7d536cef622bd8",
+      "size": 1396583
     },
     {
       "file": "geoip/de_surge.list",
       "kind": "network_dataset",
-      "rule_count": 72029,
+      "rule_count": 72165,
       "scope": "geoip",
-      "sha256": "7f788b4c14d73e906df59ce9484bf08dbb82981950fc74db5caa5c8f23d836cf",
-      "size": 2012817
+      "sha256": "27826f9e728e137f70f884fc5b4697b84a8282b3ef1c90bcba353cb1901cc748",
+      "size": 2016424
     },
     {
       "file": "geoip/gb.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "647862cd5386653aa988bd144eb02692461925ef5cbb403ce97aa8ce341a8ad5",
-      "size": 877769
+      "sha256": "9537d8e40cf621158449ebba43e2b582c183fd033506d70c5ba8f95926eecc17",
+      "size": 876575
     },
     {
       "file": "geoip/gb_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 50234,
+      "rule_count": 50215,
       "scope": "geoip",
-      "sha256": "d353d62bc390f0c1f620c97567926d7dcfcb663e4ecb72c33bda53efe2d53498",
-      "size": 1294038
+      "sha256": "6847d4ad5fba49f74899c6b11e17ffed026208abb147489abccf94129a1d25c6",
+      "size": 1292560
     },
     {
       "file": "geoip/gb_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "647862cd5386653aa988bd144eb02692461925ef5cbb403ce97aa8ce341a8ad5",
-      "size": 877769
+      "sha256": "9537d8e40cf621158449ebba43e2b582c183fd033506d70c5ba8f95926eecc17",
+      "size": 876575
     },
     {
       "file": "geoip/gb_surge.list",
       "kind": "network_dataset",
-      "rule_count": 50234,
+      "rule_count": 50215,
       "scope": "geoip",
-      "sha256": "d353d62bc390f0c1f620c97567926d7dcfcb663e4ecb72c33bda53efe2d53498",
-      "size": 1294038
+      "sha256": "6847d4ad5fba49f74899c6b11e17ffed026208abb147489abccf94129a1d25c6",
+      "size": 1292560
     },
     {
       "file": "geoip/hk.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "e851086f553004578356bc30ccd474e9f7143b39851878d0d2be21e12473c663",
-      "size": 277110
+      "sha256": "0ef60cc93876d348bee482dec998d59bc55b8107162b11b47fc06347f73fbac7",
+      "size": 277382
     },
     {
       "file": "geoip/hk_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 16188,
+      "rule_count": 16199,
       "scope": "geoip",
-      "sha256": "2be9dd5cfc399becc46dbf6d61d20520d19b26d65e6503b4c2db1c689c0bb4fd",
-      "size": 411241
+      "sha256": "a5b39cd94ffd14409cb07c7a0d28f5818b0534f53ec1ad554f2bbae8ec065399",
+      "size": 411603
     },
     {
       "file": "geoip/hk_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "e851086f553004578356bc30ccd474e9f7143b39851878d0d2be21e12473c663",
-      "size": 277110
+      "sha256": "0ef60cc93876d348bee482dec998d59bc55b8107162b11b47fc06347f73fbac7",
+      "size": 277382
     },
     {
       "file": "geoip/hk_surge.list",
       "kind": "network_dataset",
-      "rule_count": 16188,
+      "rule_count": 16199,
       "scope": "geoip",
-      "sha256": "2be9dd5cfc399becc46dbf6d61d20520d19b26d65e6503b4c2db1c689c0bb4fd",
-      "size": 411241
+      "sha256": "a5b39cd94ffd14409cb07c7a0d28f5818b0534f53ec1ad554f2bbae8ec065399",
+      "size": 411603
     },
     {
       "file": "geoip/id.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "ce8bccd03942ca5343b326024158b3fdfb6433ac3b13b5130031fd778bb5268d",
-      "size": 199576
+      "sha256": "1d96843ea913cedfb936e204cbe3eafe0770b669881c3a49d5e3b098cbfdf5f9",
+      "size": 185716
     },
     {
       "file": "geoip/id_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 11423,
+      "rule_count": 10814,
       "scope": "geoip",
-      "sha256": "6d19914e3c5050138732b0f365cfce8e12ef22516258dfc05989736018a48ef5",
-      "size": 295770
+      "sha256": "c38fdba7ac72a5f88ac5c07de87f5e64836a2a3e8e81398e446cfbb1e32ac777",
+      "size": 276434
     },
     {
       "file": "geoip/id_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "ce8bccd03942ca5343b326024158b3fdfb6433ac3b13b5130031fd778bb5268d",
-      "size": 199576
+      "sha256": "1d96843ea913cedfb936e204cbe3eafe0770b669881c3a49d5e3b098cbfdf5f9",
+      "size": 185716
     },
     {
       "file": "geoip/id_surge.list",
       "kind": "network_dataset",
-      "rule_count": 11423,
+      "rule_count": 10814,
       "scope": "geoip",
-      "sha256": "6d19914e3c5050138732b0f365cfce8e12ef22516258dfc05989736018a48ef5",
-      "size": 295770
+      "sha256": "c38fdba7ac72a5f88ac5c07de87f5e64836a2a3e8e81398e446cfbb1e32ac777",
+      "size": 276434
     },
     {
       "file": "geoip/in.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "615ba377e329b53632b3325354a662b46fcd39c1c268fddb91a28836f407e8f1",
-      "size": 364263
+      "sha256": "82b1e4bbd7b531868c337fcfb5bc24a1749974c13db94fa04e19e058445b5bc4",
+      "size": 364439
     },
     {
       "file": "geoip/in_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 20742,
+      "rule_count": 20748,
       "scope": "geoip",
-      "sha256": "d722e5110533084382d555dc0fe8c37f2e9818a2d6bdd6510c15900318dbc2d5",
-      "size": 537688
+      "sha256": "89b040eb1953ea0a80236d8a46ff9cad11e040e2170a6e0fa4c679b497a8d877",
+      "size": 537927
     },
     {
       "file": "geoip/in_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "615ba377e329b53632b3325354a662b46fcd39c1c268fddb91a28836f407e8f1",
-      "size": 364263
+      "sha256": "82b1e4bbd7b531868c337fcfb5bc24a1749974c13db94fa04e19e058445b5bc4",
+      "size": 364439
     },
     {
       "file": "geoip/in_surge.list",
       "kind": "network_dataset",
-      "rule_count": 20742,
+      "rule_count": 20748,
       "scope": "geoip",
-      "sha256": "d722e5110533084382d555dc0fe8c37f2e9818a2d6bdd6510c15900318dbc2d5",
-      "size": 537688
+      "sha256": "89b040eb1953ea0a80236d8a46ff9cad11e040e2170a6e0fa4c679b497a8d877",
+      "size": 537927
     },
     {
       "file": "geoip/jp.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "e73b882b76c06ffc5b428a0a93ac24a8c465a7c42a01174eb3dbc59ae85b67b8",
-      "size": 301966
+      "sha256": "4095d6d0c40dbd9f831a36a0a0da6ffe9ce82cff3b2c36721b8106b5df0b4391",
+      "size": 303511
     },
     {
       "file": "geoip/jp_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 17365,
+      "rule_count": 17446,
       "scope": "geoip",
-      "sha256": "1564edb8551c035fd41832eade18b21b4a4ababb8876fd343641066700fd8a24",
-      "size": 446207
+      "sha256": "8728ae15d6f9fa3ef68166da184b3fc9d188e79ed207232cbdce914856738357",
+      "size": 448410
     },
     {
       "file": "geoip/jp_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "e73b882b76c06ffc5b428a0a93ac24a8c465a7c42a01174eb3dbc59ae85b67b8",
-      "size": 301966
+      "sha256": "4095d6d0c40dbd9f831a36a0a0da6ffe9ce82cff3b2c36721b8106b5df0b4391",
+      "size": 303511
     },
     {
       "file": "geoip/jp_surge.list",
       "kind": "network_dataset",
-      "rule_count": 17365,
+      "rule_count": 17446,
       "scope": "geoip",
-      "sha256": "1564edb8551c035fd41832eade18b21b4a4ababb8876fd343641066700fd8a24",
-      "size": 446207
+      "sha256": "8728ae15d6f9fa3ef68166da184b3fc9d188e79ed207232cbdce914856738357",
+      "size": 448410
     },
     {
       "file": "geoip/kr.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "6454b5a2b432b104ba6387e5068c25cd73fddae0b7e6406719fc30c62f511c70",
-      "size": 94313
+      "sha256": "dddabc25662fa085504a47e7cf8fab13145698cd9617955648467d5a193ec62c",
+      "size": 94256
     },
     {
       "file": "geoip/kr_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 5458,
+      "rule_count": 5454,
       "scope": "geoip",
-      "sha256": "32b827e0978a3eb1de6f046cab3b762c6e7e78aa40c5c9f0bf8fd6560610ee7a",
-      "size": 139516
+      "sha256": "2719ce0e16d0b34f5c376f3ef0846e899d6671a601e199fb9e23dacca2c689b6",
+      "size": 139427
     },
     {
       "file": "geoip/kr_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "6454b5a2b432b104ba6387e5068c25cd73fddae0b7e6406719fc30c62f511c70",
-      "size": 94313
+      "sha256": "dddabc25662fa085504a47e7cf8fab13145698cd9617955648467d5a193ec62c",
+      "size": 94256
     },
     {
       "file": "geoip/kr_surge.list",
       "kind": "network_dataset",
-      "rule_count": 5458,
+      "rule_count": 5454,
       "scope": "geoip",
-      "sha256": "32b827e0978a3eb1de6f046cab3b762c6e7e78aa40c5c9f0bf8fd6560610ee7a",
-      "size": 139516
+      "sha256": "2719ce0e16d0b34f5c376f3ef0846e899d6671a601e199fb9e23dacca2c689b6",
+      "size": 139427
     },
     {
       "file": "geoip/my.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "2da6be40addc1b737321f0b6e98bc278fe4b0327a5d77653c24a0f87156afe97",
-      "size": 66731
+      "sha256": "c81c9cdb91251d985deae8b7f795a3f58fa2f8b1938c109cebfbf039d9fe342b",
+      "size": 66305
     },
     {
       "file": "geoip/my_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 3845,
+      "rule_count": 3816,
       "scope": "geoip",
-      "sha256": "e87652bee82f1baf3f1b629271c4e5bbcb90204ee3fc1f1b0888c14f1b18f414",
-      "size": 98736
+      "sha256": "fa4a0e4387e5963a2deadc1581c10e9843d852015c790c358afef1fe6e880cfe",
+      "size": 98081
     },
     {
       "file": "geoip/my_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "2da6be40addc1b737321f0b6e98bc278fe4b0327a5d77653c24a0f87156afe97",
-      "size": 66731
+      "sha256": "c81c9cdb91251d985deae8b7f795a3f58fa2f8b1938c109cebfbf039d9fe342b",
+      "size": 66305
     },
     {
       "file": "geoip/my_surge.list",
       "kind": "network_dataset",
-      "rule_count": 3845,
+      "rule_count": 3816,
       "scope": "geoip",
-      "sha256": "e87652bee82f1baf3f1b629271c4e5bbcb90204ee3fc1f1b0888c14f1b18f414",
-      "size": 98736
+      "sha256": "fa4a0e4387e5963a2deadc1581c10e9843d852015c790c358afef1fe6e880cfe",
+      "size": 98081
     },
     {
       "file": "geoip/private.txt",
@@ -2206,160 +1822,160 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "eecebd03b93f759aed3e8d9b04664c56d3fac635d2ac11c07faec5f1981ead7e",
-      "size": 244730
+      "sha256": "53145533291cff6487a26264f51abe388ef8c36a8f8262d8097802e8743a1f0c",
+      "size": 243525
     },
     {
       "file": "geoip/sg_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 14028,
+      "rule_count": 13976,
       "scope": "geoip",
-      "sha256": "600e217ae4e5966d071681d91cf7765e2d4beac32174a605269305875286ee29",
-      "size": 361335
+      "sha256": "d8e670e28a957f1fc71dec920772ea4a2b81f13e863b443e76e0ee172e3096c8",
+      "size": 359641
     },
     {
       "file": "geoip/sg_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "eecebd03b93f759aed3e8d9b04664c56d3fac635d2ac11c07faec5f1981ead7e",
-      "size": 244730
+      "sha256": "53145533291cff6487a26264f51abe388ef8c36a8f8262d8097802e8743a1f0c",
+      "size": 243525
     },
     {
       "file": "geoip/sg_surge.list",
       "kind": "network_dataset",
-      "rule_count": 14028,
+      "rule_count": 13976,
       "scope": "geoip",
-      "sha256": "600e217ae4e5966d071681d91cf7765e2d4beac32174a605269305875286ee29",
-      "size": 361335
+      "sha256": "d8e670e28a957f1fc71dec920772ea4a2b81f13e863b443e76e0ee172e3096c8",
+      "size": 359641
     },
     {
       "file": "geoip/th.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "4e7030527f96ad5f611444c840cde5a6817848f8800b5f370ae389203fd16a66",
-      "size": 78732
+      "sha256": "e2770ad07b86ffdcdc677031292885199086525baa297c5de9edff2292a2d2e1",
+      "size": 62769
     },
     {
       "file": "geoip/th_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 4195,
+      "rule_count": 3500,
       "scope": "geoip",
-      "sha256": "d0fdf0a684dc83be0aeac2e908bc65379af7411b68e1a5b78972b6270c17be5a",
-      "size": 114418
+      "sha256": "29293ff4b7b57cf3d6d66370725a55b213ed6b59fb4f0a3f0883abd78e144984",
+      "size": 92176
     },
     {
       "file": "geoip/th_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "4e7030527f96ad5f611444c840cde5a6817848f8800b5f370ae389203fd16a66",
-      "size": 78732
+      "sha256": "e2770ad07b86ffdcdc677031292885199086525baa297c5de9edff2292a2d2e1",
+      "size": 62769
     },
     {
       "file": "geoip/th_surge.list",
       "kind": "network_dataset",
-      "rule_count": 4195,
+      "rule_count": 3500,
       "scope": "geoip",
-      "sha256": "d0fdf0a684dc83be0aeac2e908bc65379af7411b68e1a5b78972b6270c17be5a",
-      "size": 114418
+      "sha256": "29293ff4b7b57cf3d6d66370725a55b213ed6b59fb4f0a3f0883abd78e144984",
+      "size": 92176
     },
     {
       "file": "geoip/tw.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "866c48a69b8de1be12d416f4e6cffb791817ca3f2db87684a65011eb28c961d7",
-      "size": 84860
+      "sha256": "73e9a6104fc5791f45349c36a905cd9af2b8af9b32eb9f3d3eb23a425a8b2532",
+      "size": 87847
     },
     {
       "file": "geoip/tw_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 4703,
+      "rule_count": 4827,
       "scope": "geoip",
-      "sha256": "421bd1da5618fb497fd678b8b10a0f9180352a510f8f6aee11076cd6c4e25cd1",
-      "size": 124750
+      "sha256": "b6fc72eafe3c633cd3f595e2e209e9b619350e5b9dc7f8b5468d2dc58b407ac3",
+      "size": 128857
     },
     {
       "file": "geoip/tw_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "866c48a69b8de1be12d416f4e6cffb791817ca3f2db87684a65011eb28c961d7",
-      "size": 84860
+      "sha256": "73e9a6104fc5791f45349c36a905cd9af2b8af9b32eb9f3d3eb23a425a8b2532",
+      "size": 87847
     },
     {
       "file": "geoip/tw_surge.list",
       "kind": "network_dataset",
-      "rule_count": 4703,
+      "rule_count": 4827,
       "scope": "geoip",
-      "sha256": "421bd1da5618fb497fd678b8b10a0f9180352a510f8f6aee11076cd6c4e25cd1",
-      "size": 124750
+      "sha256": "b6fc72eafe3c633cd3f595e2e209e9b619350e5b9dc7f8b5468d2dc58b407ac3",
+      "size": 128857
     },
     {
       "file": "geoip/us.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "93d78026f3526a75ff564653bdaf84d57290ef702c67a2d179c8b3c181f2f8a4",
-      "size": 5370253
+      "sha256": "f2e6d39f7b7a54e7872589f6484b7715858f4265ec5e159cf9422839ce737643",
+      "size": 5102869
     },
     {
       "file": "geoip/us_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 283587,
+      "rule_count": 271337,
       "scope": "geoip",
-      "sha256": "a6cc468e62fd00c3c15ab8628e744ed8a481b7818963a429073147dcfad8e644",
-      "size": 7795583
+      "sha256": "eba07b281d08d22a1c1103813cc0b290ada20227ded265a40518ccbb77f35406",
+      "size": 7419213
     },
     {
       "file": "geoip/us_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "93d78026f3526a75ff564653bdaf84d57290ef702c67a2d179c8b3c181f2f8a4",
-      "size": 5370253
+      "sha256": "f2e6d39f7b7a54e7872589f6484b7715858f4265ec5e159cf9422839ce737643",
+      "size": 5102869
     },
     {
       "file": "geoip/us_surge.list",
       "kind": "network_dataset",
-      "rule_count": 283587,
+      "rule_count": 271337,
       "scope": "geoip",
-      "sha256": "a6cc468e62fd00c3c15ab8628e744ed8a481b7818963a429073147dcfad8e644",
-      "size": 7795583
+      "sha256": "eba07b281d08d22a1c1103813cc0b290ada20227ded265a40518ccbb77f35406",
+      "size": 7419213
     },
     {
       "file": "geoip/vn.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "4cbef1d0d69af4154f784ee5ab9cd0f33bfb12b937bbd225bb79e4279fa07abd",
-      "size": 66269
+      "sha256": "bc73abfda3c5536bf66bd2171236574beb9a01a418afbf2051bc9feac5d61a0e",
+      "size": 66405
     },
     {
       "file": "geoip/vn_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 3821,
+      "rule_count": 3828,
       "scope": "geoip",
-      "sha256": "50932b99fa853dec323167478dc140f770616fa4212b3b61ae97020f0e555f87",
-      "size": 98429
+      "sha256": "096d716c13e1c0778632e9613f19fadb840754f4ad8c6dda3fec8ea28081180f",
+      "size": 98622
     },
     {
       "file": "geoip/vn_singbox_cidrs.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geoip",
-      "sha256": "4cbef1d0d69af4154f784ee5ab9cd0f33bfb12b937bbd225bb79e4279fa07abd",
-      "size": 66269
+      "sha256": "bc73abfda3c5536bf66bd2171236574beb9a01a418afbf2051bc9feac5d61a0e",
+      "size": 66405
     },
     {
       "file": "geoip/vn_surge.list",
       "kind": "network_dataset",
-      "rule_count": 3821,
+      "rule_count": 3828,
       "scope": "geoip",
-      "sha256": "50932b99fa853dec323167478dc140f770616fa4212b3b61ae97020f0e555f87",
-      "size": 98429
+      "sha256": "096d716c13e1c0778632e9613f19fadb840754f4ad8c6dda3fec8ea28081180f",
+      "size": 98622
     },
     {
       "file": "geosite/apple-cn.txt",
@@ -2518,8 +2134,8 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "ip",
-      "sha256": "22ba1542879dcd3606aee02c21c725eef2e82c5c3ae27905dfdf05749dd9e538",
-      "size": 154400
+      "sha256": "0263d8871434167bd8e36fc694885fb5ff2892b2e8caebe159b9ac32ce332003",
+      "size": 154302
     },
     {
       "file": "ip/chinamobile.txt",
@@ -2788,26 +2404,18 @@
     {
       "file": "loon/alibaba/1688/1688.list",
       "kind": "client_rules",
-      "rule_count": 3,
+      "rule_count": 2,
       "scope": "loon",
-      "sha256": "f277a33ba0d42adb8e9f3c25205164706ce0f1d381ab8594cbda6d8c98e15b12",
-      "size": 78
+      "sha256": "070c60ab074ac79fd288a4bf1e83f297696792be169a2a5442b74223c0154542",
+      "size": 50
     },
     {
       "file": "loon/alibaba/alibaba.list",
       "kind": "client_rules",
-      "rule_count": 573,
+      "rule_count": 556,
       "scope": "loon",
-      "sha256": "09c457085bdf615b08c9f3d0b88b643a77222dff8b468dfae3468eee37adea9e",
-      "size": 16412
-    },
-    {
-      "file": "loon/alibaba/alibabacloud/alibabacloud.list",
-      "kind": "client_rules",
-      "rule_count": 12,
-      "scope": "loon",
-      "sha256": "3e192fa2579d1847976b821708b6895261ab96836866db484266761ca40ddc34",
-      "size": 410
+      "sha256": "701cbbb38fa2453a8b024ae77013c3d14e62dc811351c6fa24bc1f846af5be17",
+      "size": 15866
     },
     {
       "file": "loon/alibaba/alipay/alipay.list",
@@ -2828,18 +2436,18 @@
     {
       "file": "loon/alibaba/dingding/dingding.list",
       "kind": "client_rules",
-      "rule_count": 6,
+      "rule_count": 3,
       "scope": "loon",
-      "sha256": "da3195020983902476bc4a931024925a94738198687f0894d59d3e4fe097b99d",
-      "size": 202
+      "sha256": "8b2e06d6ebc687edb9179c28917a8de9d146388a178d21315107c24035690d12",
+      "size": 96
     },
     {
       "file": "loon/alibaba/taobao/taobao.list",
       "kind": "client_rules",
-      "rule_count": 14,
+      "rule_count": 1,
       "scope": "loon",
-      "sha256": "fb452a15240a76a0c2d826b1d4b95930d7714f110c889183a80c7f46e42da589",
-      "size": 442
+      "sha256": "996855b2169576c646b74dc117f2f1f029c01721d28e0afb1a16acb3558ae794",
+      "size": 30
     },
     {
       "file": "loon/alibaba/tmall/tmall.list",
@@ -2884,42 +2492,10 @@
     {
       "file": "loon/apple/apple.list",
       "kind": "client_rules",
-      "rule_count": 2011,
+      "rule_count": 2000,
       "scope": "loon",
-      "sha256": "9c93345712c1a9bbddfcb2235f18e771fd544e761b52a175b275eeb61a24aefc",
-      "size": 65804
-    },
-    {
-      "file": "loon/apple/appledev/appledev.list",
-      "kind": "client_rules",
-      "rule_count": 38,
-      "scope": "loon",
-      "sha256": "880ef2af533f4de69013bfcbf0d69c2a9635f1ad051fe5ef692448f6addf25cd",
-      "size": 1251
-    },
-    {
-      "file": "loon/apple/applemedia/applemedia.list",
-      "kind": "client_rules",
-      "rule_count": 52,
-      "scope": "loon",
-      "sha256": "5ac47d8098b7481255a8c358680fbcdb93c4b6713b2c2bdffa1052b282141f31",
-      "size": 1606
-    },
-    {
-      "file": "loon/apple/applemusic/applemusic.list",
-      "kind": "client_rules",
-      "rule_count": 9,
-      "scope": "loon",
-      "sha256": "6c9ee0134d96218df1a7e5137038471c239e347e1c0c2e0a83453579b4f7f2dd",
-      "size": 327
-    },
-    {
-      "file": "loon/apple/applenews/applenews.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "loon",
-      "sha256": "06940ffc98875135804817fe403bbc41bccbcb63c5addc1d38878fe11bba2bb6",
-      "size": 80
+      "sha256": "d34b44154c9aad6ae33f4e4a4ca3f4fb89e831b1d0553ee4607543809577c500",
+      "size": 65439
     },
     {
       "file": "loon/apple/appletv/appletv.list",
@@ -2928,38 +2504,6 @@
       "scope": "loon",
       "sha256": "77616b096395fbee12c0d51e6cb284dfc6accc40a675e68c6cfdecb0f6622738",
       "size": 252
-    },
-    {
-      "file": "loon/apple/appstore/appstore.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "loon",
-      "sha256": "3231742b074ab119a0bbe6dfdb4968e9cac336ddda212be7167394353e205733",
-      "size": 60
-    },
-    {
-      "file": "loon/apple/findmy/findmy.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "loon",
-      "sha256": "12564d30212ec652337537e02d8e1e5adb05a2be30625cb992875ea393d01ace",
-      "size": 104
-    },
-    {
-      "file": "loon/apple/icloud/icloud.list",
-      "kind": "client_rules",
-      "rule_count": 60,
-      "scope": "loon",
-      "sha256": "f871ca7b21957200391f6fcf630a3e4397dd688e8c406bf63c8cbdce0a57a2af",
-      "size": 1663
-    },
-    {
-      "file": "loon/apple/testflight/testflight.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "loon",
-      "sha256": "aff0ff78cf45fee1ffaaaeef90fc3f12e83df3210cc9616c361073abb56c5481",
-      "size": 64
     },
     {
       "file": "loon/atlassian/atlassian.list",
@@ -2980,10 +2524,10 @@
     {
       "file": "loon/baidu/baidu.list",
       "kind": "client_rules",
-      "rule_count": 285,
+      "rule_count": 2,
       "scope": "loon",
-      "sha256": "794421a20cfdf3bf0e8063add07aeb339b784f4f14586998a805d0a3b9175665",
-      "size": 7929
+      "sha256": "88bc62517ed3c058d30f3d0d92d818a9c4d614b0c8d02a9220f1614f3c25b271",
+      "size": 64
     },
     {
       "file": "loon/baidu/baidunetdisk/baidunetdisk.list",
@@ -2992,14 +2536,6 @@
       "scope": "loon",
       "sha256": "88bc62517ed3c058d30f3d0d92d818a9c4d614b0c8d02a9220f1614f3c25b271",
       "size": 64
-    },
-    {
-      "file": "loon/baidu/baidutieba/baidutieba.list",
-      "kind": "client_rules",
-      "rule_count": 32,
-      "scope": "loon",
-      "sha256": "8fd60b9ac90e8f28a5e529aa6bdc4630ad98b77d668e00692b649e20c173d8c2",
-      "size": 1042
     },
     {
       "file": "loon/bluesky/bluesky/bluesky.list",
@@ -3036,10 +2572,10 @@
     {
       "file": "loon/bytedance/bytedance.list",
       "kind": "client_rules",
-      "rule_count": 1092,
+      "rule_count": 1081,
       "scope": "loon",
-      "sha256": "cda72480c052301a858c885784ac18d3f8c5f2a8c02401ae60de1637db10a378",
-      "size": 31820
+      "sha256": "20465ed9d7b1961cfd1869bbabf1d9d143a2a9a6202bd29d302396a87fc48135",
+      "size": 31436
     },
     {
       "file": "loon/bytedance/doubao/doubao.list",
@@ -3048,30 +2584,6 @@
       "scope": "loon",
       "sha256": "2ddcdb67d2b9bf06ee5d6c390f8a5092516c4cd7c4ee4ce257751606a55c9522",
       "size": 133
-    },
-    {
-      "file": "loon/bytedance/douyin/douyin.list",
-      "kind": "client_rules",
-      "rule_count": 13,
-      "scope": "loon",
-      "sha256": "64cb96507f9faea32b1517fa1007e8bd09225ee39eafdff0b89235a841344f3b",
-      "size": 378
-    },
-    {
-      "file": "loon/bytedance/feishu/feishu.list",
-      "kind": "client_rules",
-      "rule_count": 43,
-      "scope": "loon",
-      "sha256": "e795720343bc19d960e581e10307930a420fc77427259fb85a2ea77e7ff91ae9",
-      "size": 1269
-    },
-    {
-      "file": "loon/bytedance/tiktok/tiktok.list",
-      "kind": "client_rules",
-      "rule_count": 29,
-      "scope": "loon",
-      "sha256": "fca60f34ec7e85927b692358832431a444e065ec0ed8a9b7a7dd98f4fb872168",
-      "size": 856
     },
     {
       "file": "loon/canva/canva/canva.list",
@@ -3210,14 +2722,6 @@
       "size": 324
     },
     {
-      "file": "loon/categories/bing/bing.list",
-      "kind": "client_rules",
-      "rule_count": 9,
-      "scope": "loon",
-      "sha256": "66091e0c24edf3f3b5451a15f02e193b6f55d33fce10ee91f8f15c1f14069dd7",
-      "size": 262
-    },
-    {
       "file": "loon/categories/boc/boc.list",
       "kind": "client_rules",
       "rule_count": 22,
@@ -3282,28 +2786,12 @@
       "size": 928
     },
     {
-      "file": "loon/categories/claude/claude.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "loon",
-      "sha256": "45a0dd38f5fd0d30335f35f2a5b49cd656f9df82000c7b8625386adc002fafac",
-      "size": 84
-    },
-    {
       "file": "loon/categories/cmb/cmb.list",
       "kind": "client_rules",
       "rule_count": 38,
       "scope": "loon",
       "sha256": "ede46d36497f83495031e72e5d57a6ead66cf4d73214c693a38673df5927eb69",
       "size": 1013
-    },
-    {
-      "file": "loon/categories/copilot/copilot.list",
-      "kind": "client_rules",
-      "rule_count": 45,
-      "scope": "loon",
-      "sha256": "f5c0464dea1630e5f85affa5fc3ce6d7189fceb8c5db8a51c0894dafd7a1fa87",
-      "size": 1557
     },
     {
       "file": "loon/categories/ctrip/ctrip.list",
@@ -3336,14 +2824,6 @@
       "scope": "loon",
       "sha256": "2249f4d9d7c087a734121fecc705b64d2436f16c60c51b9f4749b2660d3f58d2",
       "size": 184
-    },
-    {
-      "file": "loon/categories/discord/discord.list",
-      "kind": "client_rules",
-      "rule_count": 28,
-      "scope": "loon",
-      "sha256": "38bc7822f6b297008c3b396bc4ef45c771e4fdcb1e4616e5d2d3309dd235c241",
-      "size": 849
     },
     {
       "file": "loon/categories/disney/disney.list",
@@ -3442,14 +2922,6 @@
       "size": 435
     },
     {
-      "file": "loon/categories/gemini/gemini.list",
-      "kind": "client_rules",
-      "rule_count": 9,
-      "scope": "loon",
-      "sha256": "bea919970470082d46f185ce1cc512e77226fc8cf13429206adbc8f8cb21264f",
-      "size": 301
-    },
-    {
       "file": "loon/categories/github/github.list",
       "kind": "client_rules",
       "rule_count": 29,
@@ -3520,22 +2992,6 @@
       "scope": "loon",
       "sha256": "e34c85ffe825cccb7b5a705a1d0a735d8084cd5c61bdc09d8b355c64655238a7",
       "size": 457
-    },
-    {
-      "file": "loon/categories/honorofkings_cn/honorofkings_cn.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "loon",
-      "sha256": "b80657e4c5a31d353fc271092be5bf6a6c8d2a8b7b74f070d3e1eea0e2937889",
-      "size": 25
-    },
-    {
-      "file": "loon/categories/honorofkings_global/honorofkings_global.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "loon",
-      "sha256": "bbaf070767dce5b6bf89a3efadf1d86facd56f3bc68c9e719f1b0ef6d77dea93",
-      "size": 66
     },
     {
       "file": "loon/categories/hulu/hulu.list",
@@ -3674,22 +3130,6 @@
       "size": 188
     },
     {
-      "file": "loon/categories/neteasemail/neteasemail.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "loon",
-      "sha256": "50f04d42088292bfa82ee7ae51adb5068f8c9d9c7fb370489a347364cf66fbdb",
-      "size": 82
-    },
-    {
-      "file": "loon/categories/netflix/netflix.list",
-      "kind": "client_rules",
-      "rule_count": 31,
-      "scope": "loon",
-      "sha256": "9b6b8c47788a054f0b4fe7a77698c1a2c690095e0edace493683875be054651f",
-      "size": 968
-    },
-    {
       "file": "loon/categories/nintendo/nintendo.list",
       "kind": "client_rules",
       "rule_count": 126,
@@ -3714,14 +3154,6 @@
       "size": 70
     },
     {
-      "file": "loon/categories/openai/openai.list",
-      "kind": "client_rules",
-      "rule_count": 31,
-      "scope": "loon",
-      "sha256": "c31640abb035119d7b50bb3ccd9f7873bd84b87529daf9a5bda2196b2af3196f",
-      "size": 1070
-    },
-    {
       "file": "loon/categories/oppo/oppo.list",
       "kind": "client_rules",
       "rule_count": 56,
@@ -3740,10 +3172,10 @@
     {
       "file": "loon/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128437,
+      "rule_count": 128189,
       "scope": "loon",
-      "sha256": "836b83ab93b49f3bae4ed119cdcf2708447a274559d49b9330635d7a695d419e",
-      "size": 3476139
+      "sha256": "5680c18b693fb5ccf9ca1e0f322157c7b6e1ad9ecc4f9a836c1713083d2e8902",
+      "size": 3467850
     },
     {
       "file": "loon/categories/paypal/paypal.list",
@@ -3858,14 +3290,6 @@
       "size": 224
     },
     {
-      "file": "loon/categories/siri/siri.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "loon",
-      "sha256": "3a344b11ee89c28b57a98a0ff77c06d14d29f962f5d97b55da08fe60d44eb012",
-      "size": 32
-    },
-    {
       "file": "loon/categories/slack/slack.list",
       "kind": "client_rules",
       "rule_count": 11,
@@ -3928,14 +3352,6 @@
       "scope": "loon",
       "sha256": "2cbfc9053f8cc29dbd4ca88f557e860174e7dd9757c61a3561adbfddd944f02f",
       "size": 9207
-    },
-    {
-      "file": "loon/categories/telegram/telegram.list",
-      "kind": "client_rules",
-      "rule_count": 24,
-      "scope": "loon",
-      "sha256": "465dd90e816d4965318a69520dfbcfc525a4304ef9f94c76aa39ba3b28f2fac8",
-      "size": 632
     },
     {
       "file": "loon/categories/tongcheng/tongcheng.list",
@@ -4018,14 +3434,6 @@
       "size": 339
     },
     {
-      "file": "loon/categories/xbox/xbox.list",
-      "kind": "client_rules",
-      "rule_count": 42,
-      "scope": "loon",
-      "sha256": "1d7b9783d705e8220d20c233e9a8e5033cf1735c10cfe9daca26dabbb888c86a",
-      "size": 1238
-    },
-    {
       "file": "loon/categories/xiaohongshu/xiaohongshu.list",
       "kind": "client_rules",
       "rule_count": 4,
@@ -4068,10 +3476,10 @@
     {
       "file": "loon/china/china.list",
       "kind": "client_rules",
-      "rule_count": 109393,
+      "rule_count": 109584,
       "scope": "loon",
-      "sha256": "d9ba19a67e74e6cff98c4aa91519285563ef8ed77203e21686a5a23ade8fbf64",
-      "size": 2916519
+      "sha256": "1513c860af70aceb8191cd24f7aeca98f6e2e906045051cbf6a34333f80692a6",
+      "size": 2921737
     },
     {
       "file": "loon/cloudflare/cloudflare.list",
@@ -4096,22 +3504,6 @@
       "scope": "loon",
       "sha256": "cf6d3b7d5e7676c85bdc5a2ac0c8df34e27e99ca6c0276e06791b0aa5969ca3e",
       "size": 106
-    },
-    {
-      "file": "loon/deepseek/deepseek/deepseek.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "loon",
-      "sha256": "8cb505121e51b125ba96a1810880f2a1e9a08fb16e10a532b425160b1592fc75",
-      "size": 57
-    },
-    {
-      "file": "loon/deepseek/deepseek.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "loon",
-      "sha256": "b2f3915a8bbd3438f363af5082248801e41bb6b28503eddce4605593159e5eb1",
-      "size": 57
     },
     {
       "file": "loon/dewu/dewu/dewu.list",
@@ -4156,10 +3548,10 @@
     {
       "file": "loon/google/google.list",
       "kind": "client_rules",
-      "rule_count": 1220,
+      "rule_count": 1214,
       "scope": "loon",
-      "sha256": "2917007f8f45a3a4b8fdeb64f2d0823fbd7b07301a125b6754096bad0bbc0714",
-      "size": 35796
+      "sha256": "58f0718ce3e04b2dd71b5981feaa8d9ddbaac7ff27d7514138382d1f1303ae2f",
+      "size": 35594
     },
     {
       "file": "loon/google/googlecloud/googlecloud.list",
@@ -4170,52 +3562,12 @@
       "size": 184
     },
     {
-      "file": "loon/google/googledrive/googledrive.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "loon",
-      "sha256": "84a008f97853fdb3a0d1032060c85107d841c9c002f0a1d4e930d40663e21785",
-      "size": 127
-    },
-    {
       "file": "loon/google/googlefcm/googlefcm.list",
       "kind": "client_rules",
       "rule_count": 13,
       "scope": "loon",
       "sha256": "d5416f51714c2a6e111c090136eaf04f90a352fdb549125dfefd63fa89259c85",
       "size": 463
-    },
-    {
-      "file": "loon/google/youtube/youtube.list",
-      "kind": "client_rules",
-      "rule_count": 175,
-      "scope": "loon",
-      "sha256": "8ed912f62e8595ec7dc2dde6b6f9a147cfe50eae7efb446199eaedf47b1b3afd",
-      "size": 4741
-    },
-    {
-      "file": "loon/google/youtubemusic/youtubemusic.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "loon",
-      "sha256": "a60e91405db5cb168ef66f1e3ba655d8d34ee131fab60d8098c08bd61907037c",
-      "size": 32
-    },
-    {
-      "file": "loon/groq/groq/groq.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "loon",
-      "sha256": "c25618d6e673762890944bbccf594711322787bac1820a38e340f48b81fe0c5c",
-      "size": 23
-    },
-    {
-      "file": "loon/groq/groq.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "loon",
-      "sha256": "c25618d6e673762890944bbccf594711322787bac1820a38e340f48b81fe0c5c",
-      "size": 23
     },
     {
       "file": "loon/hoyoverse/hoyoverse.list",
@@ -4234,22 +3586,6 @@
       "size": 12096
     },
     {
-      "file": "loon/huggingface/huggingface/huggingface.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "loon",
-      "sha256": "93ac108c376e42fab6faf0a6b436df1c57a3dfebfb09543c973709062df02bb5",
-      "size": 72
-    },
-    {
-      "file": "loon/huggingface/huggingface.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "loon",
-      "sha256": "1831eaa5d3ab9c3e4fc65c87464e461fac3d597f012b256bbae1d28ea7675553",
-      "size": 72
-    },
-    {
       "file": "loon/meta/facebook/facebook.list",
       "kind": "client_rules",
       "rule_count": 1363,
@@ -4264,14 +3600,6 @@
       "scope": "loon",
       "sha256": "7b2b7eee3d4c08cc3e4218e10f837f3277d3432c057718892a735ce77565d947",
       "size": 4781
-    },
-    {
-      "file": "loon/meta/messenger/messenger.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "loon",
-      "sha256": "09a3b2dc0a2426405bcd2803dfcaf5d32994e5c78967de6f89f16386cc298f45",
-      "size": 102
     },
     {
       "file": "loon/meta/meta.list",
@@ -4298,52 +3626,20 @@
       "size": 1177
     },
     {
-      "file": "loon/microsoft/azure/azure.list",
-      "kind": "client_rules",
-      "rule_count": 149,
-      "scope": "loon",
-      "sha256": "07bf1de2f7242099aff9e090775cbb8718465f42fa329b85930d71688fba0cd7",
-      "size": 4615
-    },
-    {
       "file": "loon/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 952,
+      "rule_count": 944,
       "scope": "loon",
-      "sha256": "45dc75e23ad72bec20c7d29892cf49474645f9477add8d99b39b7f6c676855a3",
-      "size": 31525
-    },
-    {
-      "file": "loon/microsoft/onedrive/onedrive.list",
-      "kind": "client_rules",
-      "rule_count": 13,
-      "scope": "loon",
-      "sha256": "e642c6e93971b09f83dfc6ee2226e2e07f8699cba5a8fb25c95e1550f0d84e8d",
-      "size": 419
-    },
-    {
-      "file": "loon/microsoft/teams/teams.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "loon",
-      "sha256": "2d809abb0f51b6a37b362078c2a748eb47fb34c3a49582ce9594abb15c4597c2",
-      "size": 142
+      "sha256": "8a110f9283b3b96bbd8a0d5a69db40116b17af0590dcdf26d6a6e7d46d8d7fdb",
+      "size": 31253
     },
     {
       "file": "loon/netease/netease.list",
       "kind": "client_rules",
-      "rule_count": 97,
+      "rule_count": 96,
       "scope": "loon",
-      "sha256": "48b6162019c4dff1c228e66ad46735796fa31e6e1aa65630609fdd494d7c312f",
-      "size": 2689
-    },
-    {
-      "file": "loon/netease/neteasemusic/neteasemusic.list",
-      "kind": "client_rules",
-      "rule_count": 10,
-      "scope": "loon",
-      "sha256": "68cad9f49ceb75c822358a2a150815dc0100a3ceb9511c6feca1d04ff52a0032",
-      "size": 311
+      "sha256": "4b9e27de00514c77cd7b038930010803f868282a7efdffd735c1bb73455432a3",
+      "size": 2645
     },
     {
       "file": "loon/netease/youdao/youdao.list",
@@ -4368,54 +3664,6 @@
       "scope": "loon",
       "sha256": "eee97813d86a0b63a1cb5009a77fe446e02a4bb0b763c0856613aff8272262a6",
       "size": 359
-    },
-    {
-      "file": "loon/perplexity/perplexity/perplexity.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "loon",
-      "sha256": "797ee9906d070a3c0ddb9fefa5395269dd7a16f66975513e43991981112c7604",
-      "size": 117
-    },
-    {
-      "file": "loon/perplexity/perplexity.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "loon",
-      "sha256": "dcee3521182ec81c31813ec34caa756de3c969c7039ab7ae0f60bf6e14c68bdc",
-      "size": 117
-    },
-    {
-      "file": "loon/roblox/roblox/roblox.list",
-      "kind": "client_rules",
-      "rule_count": 47,
-      "scope": "loon",
-      "sha256": "3566a109b9428ac8fafe028bbebe7a1da825fcbc57499fbcc52f7cf03447ef25",
-      "size": 1248
-    },
-    {
-      "file": "loon/roblox/roblox.list",
-      "kind": "client_rules",
-      "rule_count": 47,
-      "scope": "loon",
-      "sha256": "e541341dc495b8a023544d484fbac55c0eceae2ec794f73337c6f4d753ecdbc4",
-      "size": 1248
-    },
-    {
-      "file": "loon/signal/signal/signal.list",
-      "kind": "client_rules",
-      "rule_count": 8,
-      "scope": "loon",
-      "sha256": "d404ebe1a0340d346680483db81f22ccf0a147fe441624d09ca55b1aba1ae2e0",
-      "size": 216
-    },
-    {
-      "file": "loon/signal/signal.list",
-      "kind": "client_rules",
-      "rule_count": 8,
-      "scope": "loon",
-      "sha256": "6735c7557fb210e7a29c69918ea42ddbb39ea7bc995cf8333f0f6c7a5b3c0720",
-      "size": 216
     },
     {
       "file": "loon/snap/snap.list",
@@ -4452,18 +3700,18 @@
     {
       "file": "loon/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 745,
+      "rule_count": 815,
       "scope": "loon",
-      "sha256": "41adfc9ae7c129b017dce9809d6c18babe5735a6c3af4232453862112eec9c81",
-      "size": 21572
+      "sha256": "9c2d54d8ac9c124ebf8f808b8ce3d9e4c5281d1083f1fe7a7c309eda83324877",
+      "size": 22804
     },
     {
       "file": "loon/tencent/tencentcloud/tencentcloud.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 105,
       "scope": "loon",
-      "sha256": "327feaeb8a41e1de71d2f4957fd10a3e5d561f7545e15881ed38c3ef71371d68",
-      "size": 32
+      "sha256": "e2840790020927d91206298d48d2ae637593d187d1456cf4513cc5874d57b8d0",
+      "size": 2462
     },
     {
       "file": "loon/tencent/tencentmeeting/tencentmeeting.list",
@@ -4472,22 +3720,6 @@
       "scope": "loon",
       "sha256": "38e9aa5e60f537aad392eba3234f1d1adbd63bfa6e027b4d35028fb37f9fa861",
       "size": 113
-    },
-    {
-      "file": "loon/tencent/tencentvideo/tencentvideo.list",
-      "kind": "client_rules",
-      "rule_count": 17,
-      "scope": "loon",
-      "sha256": "aa4b8c6a68478d9a449872c99814092a8bc6a2670a451787e1ed479f4bb43ee9",
-      "size": 683
-    },
-    {
-      "file": "loon/tencent/wechat/wechat.list",
-      "kind": "client_rules",
-      "rule_count": 28,
-      "scope": "loon",
-      "sha256": "a459440007cc8da398a7bf7753e841490e2e007bddbff1c39b321ae04dfb405e",
-      "size": 818
     },
     {
       "file": "loon/tencent/wecom/wecom.list",
@@ -4604,26 +3836,18 @@
     {
       "file": "mihomo/alibaba/1688/1688.yaml",
       "kind": "client_rules",
-      "rule_count": 3,
+      "rule_count": 2,
       "scope": "mihomo",
-      "sha256": "2d9e60573f1f5c106bdffd7963c769fcf613badef585701e7e08d36581084f28",
-      "size": 99
+      "sha256": "3641fa377438aac1955e0e7b43334e8f38853eddd7766c647d74c70cdbb71bce",
+      "size": 67
     },
     {
       "file": "mihomo/alibaba/alibaba.yaml",
       "kind": "client_rules",
-      "rule_count": 573,
+      "rule_count": 556,
       "scope": "mihomo",
-      "sha256": "14c90f462556c77cda24a3f8fb8369c2f519eb5e16cc423f9689b714ac598bf7",
-      "size": 18713
-    },
-    {
-      "file": "mihomo/alibaba/alibabacloud/alibabacloud.yaml",
-      "kind": "client_rules",
-      "rule_count": 12,
-      "scope": "mihomo",
-      "sha256": "d3278476b578e053e01ca57000878547a0c79a520da1b2678e38a782c6266f88",
-      "size": 467
+      "sha256": "82abcaaf9d43d4d7b61d765ba9aef0a1f415c8882df6a5acf23b48ce88b75177",
+      "size": 18099
     },
     {
       "file": "mihomo/alibaba/alipay/alipay.yaml",
@@ -4644,18 +3868,18 @@
     {
       "file": "mihomo/alibaba/dingding/dingding.yaml",
       "kind": "client_rules",
-      "rule_count": 6,
+      "rule_count": 3,
       "scope": "mihomo",
-      "sha256": "4cd84caa821c5b346edb2aafa857d509cb5bb131bd346261eed3e1c9e95d1277",
-      "size": 235
+      "sha256": "81de92dc2074633cf93de6cbf45abc03f1c1fb56e3270490b952eb9c0736e92c",
+      "size": 117
     },
     {
       "file": "mihomo/alibaba/taobao/taobao.yaml",
       "kind": "client_rules",
-      "rule_count": 14,
+      "rule_count": 1,
       "scope": "mihomo",
-      "sha256": "1ccf8fe78a545642856bea7d317e9d61c0cb76b9fb6184915473b9bc129d9882",
-      "size": 507
+      "sha256": "8f1270422747bfb0a67b59352cab62cb971fc889f09c927a9c927c9c1e7f58cb",
+      "size": 43
     },
     {
       "file": "mihomo/alibaba/tmall/tmall.yaml",
@@ -4700,42 +3924,10 @@
     {
       "file": "mihomo/apple/apple.yaml",
       "kind": "client_rules",
-      "rule_count": 2011,
+      "rule_count": 2000,
       "scope": "mihomo",
-      "sha256": "86aead6712ae2c1330e3d491edd7730b381d697d953961b9683127dc7c559192",
-      "size": 73857
-    },
-    {
-      "file": "mihomo/apple/appledev/appledev.yaml",
-      "kind": "client_rules",
-      "rule_count": 38,
-      "scope": "mihomo",
-      "sha256": "b13baf780488fecdd57c121d333ddb2c8941e842bb8c0c7a9a409602efbe6268",
-      "size": 1412
-    },
-    {
-      "file": "mihomo/apple/applemedia/applemedia.yaml",
-      "kind": "client_rules",
-      "rule_count": 52,
-      "scope": "mihomo",
-      "sha256": "83328d040283c9439eb3183955d3a425e82f4ae957b51428ec386acd574c1c1e",
-      "size": 1823
-    },
-    {
-      "file": "mihomo/apple/applemusic/applemusic.yaml",
-      "kind": "client_rules",
-      "rule_count": 9,
-      "scope": "mihomo",
-      "sha256": "0cbe1e13d2ddbf5d184f92dbbca67fc09e7e09e059d0f385b14b20283fceae07",
-      "size": 372
-    },
-    {
-      "file": "mihomo/apple/applenews/applenews.yaml",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "mihomo",
-      "sha256": "33e5ff98d893c1d8666393a5c7f057c86cb77d2e9d6f31afc309776bac2a6649",
-      "size": 97
+      "sha256": "3ae56ce176152b4d9d5e72089d99fa7d9934e90cb9e6fe9a0976c205dbe081c9",
+      "size": 73448
     },
     {
       "file": "mihomo/apple/appletv/appletv.yaml",
@@ -4744,38 +3936,6 @@
       "scope": "mihomo",
       "sha256": "5b7d9702576f9c72f641a4516dc8a6a70f7f37f003b0e7ba18716411ca21a46f",
       "size": 289
-    },
-    {
-      "file": "mihomo/apple/appstore/appstore.yaml",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "mihomo",
-      "sha256": "304ed3e821ccd1791ae20a40528bd224140de029b287540ff7647f756e80e30a",
-      "size": 77
-    },
-    {
-      "file": "mihomo/apple/findmy/findmy.yaml",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "mihomo",
-      "sha256": "3b19a5bc39e9152bb912ab21c7112091287a04639ad0033576fde838edab348d",
-      "size": 125
-    },
-    {
-      "file": "mihomo/apple/icloud/icloud.yaml",
-      "kind": "client_rules",
-      "rule_count": 60,
-      "scope": "mihomo",
-      "sha256": "a0ecc6d0176ea1e0a2a18815d120705043b589ceb72939f92681a447ce58e236",
-      "size": 1912
-    },
-    {
-      "file": "mihomo/apple/testflight/testflight.yaml",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "mihomo",
-      "sha256": "3a010c2fbad229014584baedef475be8ecd949198e447aff3c1ae1551400d5f6",
-      "size": 81
     },
     {
       "file": "mihomo/atlassian/atlassian.yaml",
@@ -4796,10 +3956,10 @@
     {
       "file": "mihomo/baidu/baidu.yaml",
       "kind": "client_rules",
-      "rule_count": 285,
+      "rule_count": 2,
       "scope": "mihomo",
-      "sha256": "842f771ab48dc301ad7ea9bd6e67983527c116b239d26153ed489d4899aaad06",
-      "size": 9078
+      "sha256": "13cf0d5a9ef674dc7314ee367ae8184beeca50775e9d1205bfb748771288e878",
+      "size": 81
     },
     {
       "file": "mihomo/baidu/baidunetdisk/baidunetdisk.yaml",
@@ -4808,14 +3968,6 @@
       "scope": "mihomo",
       "sha256": "13cf0d5a9ef674dc7314ee367ae8184beeca50775e9d1205bfb748771288e878",
       "size": 81
-    },
-    {
-      "file": "mihomo/baidu/baidutieba/baidutieba.yaml",
-      "kind": "client_rules",
-      "rule_count": 32,
-      "scope": "mihomo",
-      "sha256": "fff62329b3e34765c2ca5e8904a6d1b040f56f029c7e71ae1643cc75ce9b6a41",
-      "size": 1179
     },
     {
       "file": "mihomo/bluesky/bluesky/bluesky.yaml",
@@ -4852,10 +4004,10 @@
     {
       "file": "mihomo/bytedance/bytedance.yaml",
       "kind": "client_rules",
-      "rule_count": 1092,
+      "rule_count": 1081,
       "scope": "mihomo",
-      "sha256": "b1896834adc04f87809eef43972cb5f976719a500ea75953f0f665a350633725",
-      "size": 36197
+      "sha256": "336a1f03b254782b9ced6532e189b55e76b1edb23fed9f72466791e25a513a52",
+      "size": 35769
     },
     {
       "file": "mihomo/bytedance/doubao/doubao.yaml",
@@ -4864,30 +4016,6 @@
       "scope": "mihomo",
       "sha256": "b0c3919f5f02ec740d85551f3ae806555f596b7a2441923d22725a3685228428",
       "size": 158
-    },
-    {
-      "file": "mihomo/bytedance/douyin/douyin.yaml",
-      "kind": "client_rules",
-      "rule_count": 13,
-      "scope": "mihomo",
-      "sha256": "05db5ca71bc239c2210741d70f0f4ed18906f13ba73f5d133bb1a423d1bf702b",
-      "size": 439
-    },
-    {
-      "file": "mihomo/bytedance/feishu/feishu.yaml",
-      "kind": "client_rules",
-      "rule_count": 43,
-      "scope": "mihomo",
-      "sha256": "78264618d0eb56e6f7166013234ec9e70172c2ed9e5df4cb7edc0d5b9f09fe10",
-      "size": 1450
-    },
-    {
-      "file": "mihomo/bytedance/tiktok/tiktok.yaml",
-      "kind": "client_rules",
-      "rule_count": 29,
-      "scope": "mihomo",
-      "sha256": "48be29cd6ad037d3343645d2a7b3b924fdc7cd733b36bae180e1895ccf169336",
-      "size": 981
     },
     {
       "file": "mihomo/canva/canva/canva.yaml",
@@ -5026,14 +4154,6 @@
       "size": 381
     },
     {
-      "file": "mihomo/categories/bing/bing.yaml",
-      "kind": "client_rules",
-      "rule_count": 9,
-      "scope": "mihomo",
-      "sha256": "a9880699cba8eafd3d5610614411307f2fa3a4ebcdf92eb2f98ac24d23b5e7d6",
-      "size": 307
-    },
-    {
       "file": "mihomo/categories/boc/boc.yaml",
       "kind": "client_rules",
       "rule_count": 22,
@@ -5098,28 +4218,12 @@
       "size": 1073
     },
     {
-      "file": "mihomo/categories/claude/claude.yaml",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "mihomo",
-      "sha256": "de79cbdf93e6e1ab2f2693cbee36bbea38f5524398b1b891ae5c23662759330c",
-      "size": 105
-    },
-    {
       "file": "mihomo/categories/cmb/cmb.yaml",
       "kind": "client_rules",
       "rule_count": 38,
       "scope": "mihomo",
       "sha256": "4c41d975d6ec707c147808df3fbc11006add97bea48293f6a73e155992a49848",
       "size": 1174
-    },
-    {
-      "file": "mihomo/categories/copilot/copilot.yaml",
-      "kind": "client_rules",
-      "rule_count": 45,
-      "scope": "mihomo",
-      "sha256": "2afbe684632e06db353dc023b12dada9bd13f8684a545cc4929aac01dd1831a2",
-      "size": 1746
     },
     {
       "file": "mihomo/categories/ctrip/ctrip.yaml",
@@ -5152,14 +4256,6 @@
       "scope": "mihomo",
       "sha256": "e0765730bbe25bc1b34f7ae593d3d0929415411cecd63d3b2c9982956a45e0d3",
       "size": 217
-    },
-    {
-      "file": "mihomo/categories/discord/discord.yaml",
-      "kind": "client_rules",
-      "rule_count": 28,
-      "scope": "mihomo",
-      "sha256": "805540e13263852d6650e9d2dedbd9b9cb4b07afaaff78b2e22fdf5bd1f9b2d5",
-      "size": 970
     },
     {
       "file": "mihomo/categories/disney/disney.yaml",
@@ -5258,14 +4354,6 @@
       "size": 504
     },
     {
-      "file": "mihomo/categories/gemini/gemini.yaml",
-      "kind": "client_rules",
-      "rule_count": 9,
-      "scope": "mihomo",
-      "sha256": "849d4061f99893905988ad3ad43c67ce4d7129f7bc090c1d15c8449b7c39e5d0",
-      "size": 346
-    },
-    {
       "file": "mihomo/categories/github/github.yaml",
       "kind": "client_rules",
       "rule_count": 29,
@@ -5336,22 +4424,6 @@
       "scope": "mihomo",
       "sha256": "27a422735622cafe9f6b7456895946a619f16a04957c5d8a5937585ec6038ef6",
       "size": 534
-    },
-    {
-      "file": "mihomo/categories/honorofkings_cn/honorofkings_cn.yaml",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "mihomo",
-      "sha256": "c801b6086d68857437ae86a76d7001e3436bca952e8fa4e5da31a43caeef6096",
-      "size": 38
-    },
-    {
-      "file": "mihomo/categories/honorofkings_global/honorofkings_global.yaml",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "mihomo",
-      "sha256": "1e275a936ae073beaf6dc84f4598876b9ecd67098c21055f57f156227d3f12c2",
-      "size": 83
     },
     {
       "file": "mihomo/categories/hulu/hulu.yaml",
@@ -5490,22 +4562,6 @@
       "size": 221
     },
     {
-      "file": "mihomo/categories/neteasemail/neteasemail.yaml",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "mihomo",
-      "sha256": "595c255c562051e10c578e29d157ae53479b4e22b578bb20f1c4b06a2b914468",
-      "size": 103
-    },
-    {
-      "file": "mihomo/categories/netflix/netflix.yaml",
-      "kind": "client_rules",
-      "rule_count": 31,
-      "scope": "mihomo",
-      "sha256": "d95dcc3ded0430222e3b5b4849c7e889376bd9cc17837de981974c5c78a4c072",
-      "size": 1101
-    },
-    {
       "file": "mihomo/categories/nintendo/nintendo.yaml",
       "kind": "client_rules",
       "rule_count": 126,
@@ -5530,14 +4586,6 @@
       "size": 91
     },
     {
-      "file": "mihomo/categories/openai/openai.yaml",
-      "kind": "client_rules",
-      "rule_count": 31,
-      "scope": "mihomo",
-      "sha256": "d67137469ae09f88de4a2b0d2b4f8aa97cc888971038cb75637f24f1d730e3cd",
-      "size": 1203
-    },
-    {
       "file": "mihomo/categories/oppo/oppo.yaml",
       "kind": "client_rules",
       "rule_count": 56,
@@ -5556,10 +4604,10 @@
     {
       "file": "mihomo/categories/other/other.yaml",
       "kind": "client_rules",
-      "rule_count": 128575,
+      "rule_count": 128327,
       "scope": "mihomo",
-      "sha256": "7e9163ea6eed7d830e2eaeafbdbed58bc4f274669391da5d02ce7f9a8b984059",
-      "size": 3996111
+      "sha256": "fb6a60f752654a289091cb79f43ca5e5c093ccd5d388bf73defe30e65b44ccf8",
+      "size": 3986830
     },
     {
       "file": "mihomo/categories/paypal/paypal.yaml",
@@ -5674,14 +4722,6 @@
       "size": 265
     },
     {
-      "file": "mihomo/categories/siri/siri.yaml",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "mihomo",
-      "sha256": "ca6881f2f56a522a0bdb2f0ea2c5397e6e8b9c5dca41b149ead23eb0dfa35c00",
-      "size": 45
-    },
-    {
       "file": "mihomo/categories/slack/slack.yaml",
       "kind": "client_rules",
       "rule_count": 11,
@@ -5744,14 +4784,6 @@
       "scope": "mihomo",
       "sha256": "09db8c7910547fddacd94f908dfd2113a6de089fc6591eaef88ece115ef774e7",
       "size": 10680
-    },
-    {
-      "file": "mihomo/categories/telegram/telegram.yaml",
-      "kind": "client_rules",
-      "rule_count": 24,
-      "scope": "mihomo",
-      "sha256": "d5bbfa3347e30a5578994e423c6de39c517280b67f8a1c5c7a64aa21b3173741",
-      "size": 737
     },
     {
       "file": "mihomo/categories/tongcheng/tongcheng.yaml",
@@ -5834,14 +4866,6 @@
       "size": 396
     },
     {
-      "file": "mihomo/categories/xbox/xbox.yaml",
-      "kind": "client_rules",
-      "rule_count": 42,
-      "scope": "mihomo",
-      "sha256": "dfc5ec31fb2fddff9e7babbbd51803244b557fbf62855a7a93a9357c19a55876",
-      "size": 1415
-    },
-    {
       "file": "mihomo/categories/xiaohongshu/xiaohongshu.yaml",
       "kind": "client_rules",
       "rule_count": 4,
@@ -5884,10 +4908,10 @@
     {
       "file": "mihomo/china/china.yaml",
       "kind": "client_rules",
-      "rule_count": 109393,
+      "rule_count": 109584,
       "scope": "mihomo",
-      "sha256": "46a0f0cf7feaa5d7b7e51064056660cef0a62a1e6e437e76c896cd73aebe27a2",
-      "size": 3354100
+      "sha256": "e099f46fbea317b65a68d0307393e3cf3f75f91fe9481c9f0fe82c3d51806604",
+      "size": 3360082
     },
     {
       "file": "mihomo/cloudflare/cloudflare.yaml",
@@ -5912,22 +4936,6 @@
       "scope": "mihomo",
       "sha256": "33eaacd59faf5db8d7f3903f21d1bcf0f45a7496a4fa2f4281257f3f190786a3",
       "size": 131
-    },
-    {
-      "file": "mihomo/deepseek/deepseek/deepseek.yaml",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "mihomo",
-      "sha256": "07b1594c19742d40dd25aac4bfefb0ee7a206237ee13d9137c8b6c63b91c886f",
-      "size": 74
-    },
-    {
-      "file": "mihomo/deepseek/deepseek.yaml",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "mihomo",
-      "sha256": "2136b63b2437ccce9af2d08e4f8acf32a64e5eca64ba95d54625093056cdfa90",
-      "size": 74
     },
     {
       "file": "mihomo/dewu/dewu/dewu.yaml",
@@ -5972,10 +4980,10 @@
     {
       "file": "mihomo/google/google.yaml",
       "kind": "client_rules",
-      "rule_count": 1220,
+      "rule_count": 1214,
       "scope": "mihomo",
-      "sha256": "c2aa6414f9a0747b93c17fe2d663ce356f4fc6581ba57c9d3d0e341942bdccb6",
-      "size": 40685
+      "sha256": "be742aa564434d2bdf4957ed1097c1ae556a6a594f1e7d98c9ea8f9bdf7089c2",
+      "size": 40459
     },
     {
       "file": "mihomo/google/googlecloud/googlecloud.yaml",
@@ -5986,52 +4994,12 @@
       "size": 213
     },
     {
-      "file": "mihomo/google/googledrive/googledrive.yaml",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "mihomo",
-      "sha256": "021b9e63e6823d66e8b75fda35eed0994e7bec2bedb25312bdd67ed700f177d6",
-      "size": 152
-    },
-    {
       "file": "mihomo/google/googlefcm/googlefcm.yaml",
       "kind": "client_rules",
       "rule_count": 13,
       "scope": "mihomo",
       "sha256": "f4adc194c1a8fd435cedecc165ad44745e869c22b5413233c46cb6db44fd2bbc",
       "size": 524
-    },
-    {
-      "file": "mihomo/google/youtube/youtube.yaml",
-      "kind": "client_rules",
-      "rule_count": 175,
-      "scope": "mihomo",
-      "sha256": "ccfc3e449582fd8411f707ef1ec3e95ec3ed33bf3f48037ba236c1306bb680a6",
-      "size": 5450
-    },
-    {
-      "file": "mihomo/google/youtubemusic/youtubemusic.yaml",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "mihomo",
-      "sha256": "cd7efd82870175dd4b898ce9e39795eca59f834864f0301123b64d78aeab1991",
-      "size": 45
-    },
-    {
-      "file": "mihomo/groq/groq/groq.yaml",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "mihomo",
-      "sha256": "24769b3652104a91275ec5ee60905da7789952f17c0a333f9d519b981ffe26cf",
-      "size": 36
-    },
-    {
-      "file": "mihomo/groq/groq.yaml",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "mihomo",
-      "sha256": "24769b3652104a91275ec5ee60905da7789952f17c0a333f9d519b981ffe26cf",
-      "size": 36
     },
     {
       "file": "mihomo/hoyoverse/hoyoverse.yaml",
@@ -6050,22 +5018,6 @@
       "size": 13713
     },
     {
-      "file": "mihomo/huggingface/huggingface/huggingface.yaml",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "mihomo",
-      "sha256": "fb41fa1ecfe857539cd6f420865cba910dbbfc57f4bc8e6c58853177fc080a7f",
-      "size": 93
-    },
-    {
-      "file": "mihomo/huggingface/huggingface.yaml",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "mihomo",
-      "sha256": "184c309dc24167c22024eba9b779afaedf10e8a28090d7fbeb268838e78ddfe2",
-      "size": 93
-    },
-    {
       "file": "mihomo/meta/facebook/facebook.yaml",
       "kind": "client_rules",
       "rule_count": 1363,
@@ -6080,14 +5032,6 @@
       "scope": "mihomo",
       "sha256": "1f19019b5d97f506a5131757bca55d323596c87f7fa44d0b6e8faaada34f0153",
       "size": 5398
-    },
-    {
-      "file": "mihomo/meta/messenger/messenger.yaml",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "mihomo",
-      "sha256": "4876a91b282ff17e6ed5367aac22d16e7ed29561d6d718416ff64a7ad0f60a13",
-      "size": 127
     },
     {
       "file": "mihomo/meta/meta.yaml",
@@ -6114,52 +5058,20 @@
       "size": 1358
     },
     {
-      "file": "mihomo/microsoft/azure/azure.yaml",
-      "kind": "client_rules",
-      "rule_count": 149,
-      "scope": "mihomo",
-      "sha256": "f9efa81c4dd7b352452638bafc4ba0576651e62562fc834a571a2f6f9b61e28c",
-      "size": 5220
-    },
-    {
       "file": "mihomo/microsoft/microsoft.yaml",
       "kind": "client_rules",
-      "rule_count": 952,
+      "rule_count": 944,
       "scope": "mihomo",
-      "sha256": "db3e4394a84bd288e89350e3fd0a1639ea492f693b8ba71fc02ac71944cadace",
-      "size": 35342
-    },
-    {
-      "file": "mihomo/microsoft/onedrive/onedrive.yaml",
-      "kind": "client_rules",
-      "rule_count": 13,
-      "scope": "mihomo",
-      "sha256": "9fe157a4dfbdc67e83912a912227efdd564611a757b300f58ac299a372dda867",
-      "size": 480
-    },
-    {
-      "file": "mihomo/microsoft/teams/teams.yaml",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "mihomo",
-      "sha256": "48634bf08fb1fb581d69eb6c3bcdcb6bda8eba1a33fb236373adfa37509269d6",
-      "size": 167
+      "sha256": "57205a49dafe7dfda3145e4dc84cc0110723ddedb863d6ee0fc89f1919936b04",
+      "size": 35038
     },
     {
       "file": "mihomo/netease/netease.yaml",
       "kind": "client_rules",
-      "rule_count": 97,
+      "rule_count": 96,
       "scope": "mihomo",
-      "sha256": "2f71089583fc0dd327203fc530ab3b3d46e8331a7d938206af07983b021d1c15",
-      "size": 3086
-    },
-    {
-      "file": "mihomo/netease/neteasemusic/neteasemusic.yaml",
-      "kind": "client_rules",
-      "rule_count": 10,
-      "scope": "mihomo",
-      "sha256": "e507a6284999044f86e802028cfa2e50a388fbc49e44694ff31c924e5eeba4cf",
-      "size": 360
+      "sha256": "04c71e71cf09d89965e4535298fe9a7f56053ea56a9e2ede7b7e388b795fdb71",
+      "size": 3038
     },
     {
       "file": "mihomo/netease/youdao/youdao.yaml",
@@ -6184,54 +5096,6 @@
       "scope": "mihomo",
       "sha256": "3d90b5e73342375a2a88b7b8b2b4aaede7c1b2ae46cb989862d6105563d73404",
       "size": 408
-    },
-    {
-      "file": "mihomo/perplexity/perplexity/perplexity.yaml",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "mihomo",
-      "sha256": "8d3efb61bf20f0832d7449c5363b03b5426237bdbcd54a9fb861aa024516f20a",
-      "size": 142
-    },
-    {
-      "file": "mihomo/perplexity/perplexity.yaml",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "mihomo",
-      "sha256": "421dd1697735c6afbb0584ffc09bf230478b0e12332e5b7b8714dd2ffbbc62a3",
-      "size": 142
-    },
-    {
-      "file": "mihomo/roblox/roblox/roblox.yaml",
-      "kind": "client_rules",
-      "rule_count": 47,
-      "scope": "mihomo",
-      "sha256": "af14e8da23d48901575d00c9498aff18853640e4e40a1365dd7c631d40f774cd",
-      "size": 1445
-    },
-    {
-      "file": "mihomo/roblox/roblox.yaml",
-      "kind": "client_rules",
-      "rule_count": 47,
-      "scope": "mihomo",
-      "sha256": "4c2eb9f020e7e055c0d5b3aeb90a2203b0ad73e97bf89553836fff4c859f9f30",
-      "size": 1445
-    },
-    {
-      "file": "mihomo/signal/signal/signal.yaml",
-      "kind": "client_rules",
-      "rule_count": 8,
-      "scope": "mihomo",
-      "sha256": "cece961af006ac9e2329333401c9fe8ed7969c5809c9058ef5d597778a094272",
-      "size": 257
-    },
-    {
-      "file": "mihomo/signal/signal.yaml",
-      "kind": "client_rules",
-      "rule_count": 8,
-      "scope": "mihomo",
-      "sha256": "be8ffdc103345a4db59e6058c89667507214270b984c8048799771e52f327e86",
-      "size": 257
     },
     {
       "file": "mihomo/snap/snap.yaml",
@@ -6268,18 +5132,18 @@
     {
       "file": "mihomo/tencent/tencent.yaml",
       "kind": "client_rules",
-      "rule_count": 745,
+      "rule_count": 815,
       "scope": "mihomo",
-      "sha256": "96a7d395ef26b0e7005208d103c3e93a89726b30045ad2f88fbb1d5b971c5565",
-      "size": 24561
+      "sha256": "ffd99b4fb3655a38fef5c2353669a3c7de41ec54b5788ca8d6307b6e1e65a039",
+      "size": 26073
     },
     {
       "file": "mihomo/tencent/tencentcloud/tencentcloud.yaml",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 105,
       "scope": "mihomo",
-      "sha256": "71d8d00ecb51ecd7d2a7a018a6ff98d258657cf0c1520cfbce526062feefb8f1",
-      "size": 45
+      "sha256": "4a14d5b0b8978bce24f2b664b96bd46cdd4192b8c7578320b81cf59988d8d114",
+      "size": 2891
     },
     {
       "file": "mihomo/tencent/tencentmeeting/tencentmeeting.yaml",
@@ -6288,22 +5152,6 @@
       "scope": "mihomo",
       "sha256": "fa31a78a1963d44f5f6671fae7d0fae025ebe586ebbc845ea85de2e718d142e5",
       "size": 134
-    },
-    {
-      "file": "mihomo/tencent/tencentvideo/tencentvideo.yaml",
-      "kind": "client_rules",
-      "rule_count": 17,
-      "scope": "mihomo",
-      "sha256": "f14dccc167b0e1779686f8a13e0967b1126fc83c214248a9b895407c4e051dc4",
-      "size": 760
-    },
-    {
-      "file": "mihomo/tencent/wechat/wechat.yaml",
-      "kind": "client_rules",
-      "rule_count": 28,
-      "scope": "mihomo",
-      "sha256": "b5ef816d85e3d72beeb5832cf28e67ac74aa6f597bd30be116c8f39b08802fe5",
-      "size": 939
     },
     {
       "file": "mihomo/tencent/wecom/wecom.yaml",
@@ -6396,18 +5244,18 @@
     {
       "file": "mmdb/ASN.mmdb",
       "kind": "network_dataset",
-      "rule_count": 30,
+      "rule_count": 12,
       "scope": "mmdb",
-      "sha256": "7dcc428e82ef1e9514de68e7413afbf58cccfa56de760448a69768a0b08f5950",
-      "size": 12103050
+      "sha256": "d8a649084d78e662cc7091ec64840c4ab534eef33e573649697fee253f2f9f4c",
+      "size": 12072490
     },
     {
       "file": "mmdb/Country.mmdb",
       "kind": "network_dataset",
-      "rule_count": 2,
+      "rule_count": 3,
       "scope": "mmdb",
-      "sha256": "21606dfffd4ec39542ec40782bebd37b71310471816e1338b6f6430190cbc85d",
-      "size": 7780891
+      "sha256": "f35228dd74b70ae0ac72dcd2b86d03e0510264e20a0ec21ebb6aa32fa4f85c38",
+      "size": 7705141
     },
     {
       "file": "mmdb/geoip-lite.dat",
@@ -6422,16 +5270,16 @@
       "kind": "network_dataset",
       "rule_count": 2,
       "scope": "mmdb",
-      "sha256": "f3370cf391831bb01e1e662df88596164d136e7d9f81a91c00bae26587e02d72",
-      "size": 16907278
+      "sha256": "3cf2236c19063c1c80803368cca5ff589c5033129fdf9ba154230c689b81fc2a",
+      "size": 16635240
     },
     {
       "file": "mmdb/geosite.dat",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "mmdb",
-      "sha256": "12dfa24f466986cfe1ead0c67e554e5c67642bb6b204ea64172178d25825f216",
-      "size": 4248684
+      "sha256": "a55daa4a79c7b0824d5410b1cdd37a7584306b533b263bb79cd2ab84b70f6c61",
+      "size": 4248700
     },
     {
       "file": "network/dns.txt",
@@ -6566,16 +5414,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "dc89d10166a0b570c952991f180c50b58a1838a30f249903ce5431503d31c60d",
-      "size": 386652
+      "sha256": "0cfffc72d64346933e1e6115d10339d2385c6217b07c9e64eefe327824c05e3b",
+      "size": 386682
     },
     {
       "file": "provider/aws_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 11245,
+      "rule_count": 11246,
       "scope": "provider",
-      "sha256": "1e06dbee2fc8ddd19b2a7316f3cca52e596235e5afb904c5539534a489b6be12",
-      "size": 480546
+      "sha256": "8448e473197c1f50c77e82b9ffeea1ae13d76a82615c467f82ec5934a3bcb6cd",
+      "size": 480585
     },
     {
       "file": "provider/cloudflare.txt",
@@ -6614,7 +5462,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "c7edbb642db0e9615cab0ec761ac1f628bd9e18ab1111ab0987b89ae892fc4f8",
+      "sha256": "9decf76aaa1834d7f100a7df1f747ae00b6eb6fddb95473b9548ad2dfb4c1932",
       "size": 4595
     },
     {
@@ -6630,7 +5478,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "61e6987526adc0e7f50654dcc6e332a41b2badcc6c26efb5de08a98a581a97c8",
+      "sha256": "6094f06b0309d089798e83751678ef1487887632c540ba5c15d8183ecfc7425f",
       "size": 36972
     },
     {
@@ -6684,26 +5532,18 @@
     {
       "file": "quantumultx/alibaba/1688/1688.list",
       "kind": "client_rules",
-      "rule_count": 3,
+      "rule_count": 2,
       "scope": "quantumultx",
-      "sha256": "05b4d3dcb7df4551ce633b1f77d68d4d8b919cb087fc23a246b436c582db8aa0",
-      "size": 96
+      "sha256": "f8fdf70d2abcd57ecf0c0ca403fcbf5af9d32e5d8698636cbda487a23143be84",
+      "size": 62
     },
     {
       "file": "quantumultx/alibaba/alibaba.list",
       "kind": "client_rules",
-      "rule_count": 573,
+      "rule_count": 556,
       "scope": "quantumultx",
-      "sha256": "be8328e2716e9b9adcbf5928cf8e6f7372eb4bc3e443d5d371d144b535f1c97e",
-      "size": 19958
-    },
-    {
-      "file": "quantumultx/alibaba/alibabacloud/alibabacloud.list",
-      "kind": "client_rules",
-      "rule_count": 12,
-      "scope": "quantumultx",
-      "sha256": "30b4f727ee5709df8bb1f88fa574c9e677565727c8b0eac09839729aa618fa3f",
-      "size": 482
+      "sha256": "7666c2dc3d23d00281a0b3ff2365969f8c2d9a9c4a3a16d52ed6afd5c5cd0686",
+      "size": 19310
     },
     {
       "file": "quantumultx/alibaba/alipay/alipay.list",
@@ -6724,18 +5564,18 @@
     {
       "file": "quantumultx/alibaba/dingding/dingding.list",
       "kind": "client_rules",
-      "rule_count": 6,
+      "rule_count": 3,
       "scope": "quantumultx",
-      "sha256": "007036dafe5915d89b3220527629388106d36cf7742e8399c3448a41765c3dfe",
-      "size": 238
+      "sha256": "cad7e6764b506d98d66b68ff927fa6c3fc81bae6c83c1b4c646ca67deea012bf",
+      "size": 114
     },
     {
       "file": "quantumultx/alibaba/taobao/taobao.list",
       "kind": "client_rules",
-      "rule_count": 14,
+      "rule_count": 1,
       "scope": "quantumultx",
-      "sha256": "9fa328c6b101d9a17476517b7bea3d3b801df5c99e6cf87b9ec5b7579ca0f465",
-      "size": 526
+      "sha256": "e7b8929097b4883ec2c996ddf3c064787fb63fd79940012bb9d404322ad916f0",
+      "size": 36
     },
     {
       "file": "quantumultx/alibaba/tmall/tmall.list",
@@ -6780,42 +5620,10 @@
     {
       "file": "quantumultx/apple/apple.list",
       "kind": "client_rules",
-      "rule_count": 2011,
+      "rule_count": 2000,
       "scope": "quantumultx",
-      "sha256": "a692d71898365a22291c9ed61a04b7e5b3d92e193d7ad4293b89e032e81e4322",
-      "size": 77896
-    },
-    {
-      "file": "quantumultx/apple/appledev/appledev.list",
-      "kind": "client_rules",
-      "rule_count": 38,
-      "scope": "quantumultx",
-      "sha256": "05a9fdfe806d348830ff1ba5534bfe08aee3d7783b559f384cb28229d0bd8fc4",
-      "size": 1479
-    },
-    {
-      "file": "quantumultx/apple/applemedia/applemedia.list",
-      "kind": "client_rules",
-      "rule_count": 52,
-      "scope": "quantumultx",
-      "sha256": "7efb89f2cb41d2de7ca0c5147c56d7023f2e5db8a6c42ab38dd50efc45545967",
-      "size": 1918
-    },
-    {
-      "file": "quantumultx/apple/applemusic/applemusic.list",
-      "kind": "client_rules",
-      "rule_count": 9,
-      "scope": "quantumultx",
-      "sha256": "d8e146be7b50709438f98eba8339fdac258e71952db3d639cdb5e204b2c37ed8",
-      "size": 381
-    },
-    {
-      "file": "quantumultx/apple/applenews/applenews.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "quantumultx",
-      "sha256": "7b836f44f4a4957fc0542e4f45b629af6bd39bc4e7f75f60c37223ad3f91ac2c",
-      "size": 92
+      "sha256": "5be4ed522ed60fb987131e9d71d34dffa592cd711b6d5db45deb08ff6dadf07b",
+      "size": 77465
     },
     {
       "file": "quantumultx/apple/appletv/appletv.list",
@@ -6824,38 +5632,6 @@
       "scope": "quantumultx",
       "sha256": "ddcb54f4b4a6aa8ef447cbbb7275839af0cde0c5b95aa25f339cde87154eae36",
       "size": 294
-    },
-    {
-      "file": "quantumultx/apple/appstore/appstore.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "quantumultx",
-      "sha256": "e1853f54f3d12af8fede63cb60ec9ac02f87aa3f17d0cb49315bce3e5a0439c8",
-      "size": 72
-    },
-    {
-      "file": "quantumultx/apple/findmy/findmy.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "quantumultx",
-      "sha256": "ec36b845147b0cb9365c7c859273d45d4df890dc4dde47df8575cd468724fd07",
-      "size": 122
-    },
-    {
-      "file": "quantumultx/apple/icloud/icloud.list",
-      "kind": "client_rules",
-      "rule_count": 60,
-      "scope": "quantumultx",
-      "sha256": "75b25fc3f6f2d5d9b7c244da69787a0ae3ef586e2c3498433811bf7b7fcdbaa1",
-      "size": 2023
-    },
-    {
-      "file": "quantumultx/apple/testflight/testflight.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "quantumultx",
-      "sha256": "3b90fb7f730560d90a3a69de7f4ed20e5db6ba0d6a8abc1b61595871c28b1b82",
-      "size": 76
     },
     {
       "file": "quantumultx/atlassian/atlassian.list",
@@ -6876,10 +5652,10 @@
     {
       "file": "quantumultx/baidu/baidu.list",
       "kind": "client_rules",
-      "rule_count": 285,
+      "rule_count": 2,
       "scope": "quantumultx",
-      "sha256": "d689eee1c7cdbc89aaf84e5ac3d92ae7ac300fc7381cdc8345225dc76e413ce1",
-      "size": 9639
+      "sha256": "74827c58ff080f920060801334473bf5729aac3d8a90cfd3efe1769ef56f2ff0",
+      "size": 76
     },
     {
       "file": "quantumultx/baidu/baidunetdisk/baidunetdisk.list",
@@ -6888,14 +5664,6 @@
       "scope": "quantumultx",
       "sha256": "74827c58ff080f920060801334473bf5729aac3d8a90cfd3efe1769ef56f2ff0",
       "size": 76
-    },
-    {
-      "file": "quantumultx/baidu/baidutieba/baidutieba.list",
-      "kind": "client_rules",
-      "rule_count": 32,
-      "scope": "quantumultx",
-      "sha256": "ca99d00b283f45130efbb6307dbe2fe87b37f4b66d70b92ebee20c914756764c",
-      "size": 1234
     },
     {
       "file": "quantumultx/bluesky/bluesky/bluesky.list",
@@ -6932,10 +5700,10 @@
     {
       "file": "quantumultx/bytedance/bytedance.list",
       "kind": "client_rules",
-      "rule_count": 1092,
+      "rule_count": 1081,
       "scope": "quantumultx",
-      "sha256": "82222b2e1b79b56b2ffc645412e4d9e665cd7d1b466a11683ae4d627028bc305",
-      "size": 38374
+      "sha256": "2c2cfab4488a4b46dd223a145d8a3d9f6db0d75903f20a83035e798761a64265",
+      "size": 37924
     },
     {
       "file": "quantumultx/bytedance/doubao/doubao.list",
@@ -6944,30 +5712,6 @@
       "scope": "quantumultx",
       "sha256": "1c32a1a5131850eda27c2dae0a98fe9e791fee1395ce03d84ac36ec2e81d1df2",
       "size": 157
-    },
-    {
-      "file": "quantumultx/bytedance/douyin/douyin.list",
-      "kind": "client_rules",
-      "rule_count": 13,
-      "scope": "quantumultx",
-      "sha256": "ce376c120b769734c2739c8ccd13426d3c5d04b200e41b9d867c2e9b9d18a70e",
-      "size": 456
-    },
-    {
-      "file": "quantumultx/bytedance/feishu/feishu.list",
-      "kind": "client_rules",
-      "rule_count": 43,
-      "scope": "quantumultx",
-      "sha256": "9180690a18d2c231903bdf3e71a5ebaa97394b33eb6142040bdfd0a915f98744",
-      "size": 1527
-    },
-    {
-      "file": "quantumultx/bytedance/tiktok/tiktok.list",
-      "kind": "client_rules",
-      "rule_count": 29,
-      "scope": "quantumultx",
-      "sha256": "5733c64ca6bf992987f39e5349458ff9a8243e5ec8f2501e9497df02019994b1",
-      "size": 1030
     },
     {
       "file": "quantumultx/canva/canva/canva.list",
@@ -7106,14 +5850,6 @@
       "size": 396
     },
     {
-      "file": "quantumultx/categories/bing/bing.list",
-      "kind": "client_rules",
-      "rule_count": 9,
-      "scope": "quantumultx",
-      "sha256": "d878efd20f455f35ef2155b57ba33bf4bf66cda23b2daf6de577d617e7bfb094",
-      "size": 316
-    },
-    {
       "file": "quantumultx/categories/boc/boc.list",
       "kind": "client_rules",
       "rule_count": 22,
@@ -7178,28 +5914,12 @@
       "size": 1134
     },
     {
-      "file": "quantumultx/categories/claude/claude.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "quantumultx",
-      "sha256": "cfa3610c1ea056c51c6f57e58f4fd58d2ca4f4300362fdc1cf7c4fa5981fa2a5",
-      "size": 102
-    },
-    {
       "file": "quantumultx/categories/cmb/cmb.list",
       "kind": "client_rules",
       "rule_count": 38,
       "scope": "quantumultx",
       "sha256": "d3f299d571d54a17299fe9f308387706ec635d8434b408d0b41f4a4e4e1b89ac",
       "size": 1241
-    },
-    {
-      "file": "quantumultx/categories/copilot/copilot.list",
-      "kind": "client_rules",
-      "rule_count": 45,
-      "scope": "quantumultx",
-      "sha256": "042e20785f6f3304b3fcc63657fa164f738cad0f536ab7c3588bdf22b64143d7",
-      "size": 1827
     },
     {
       "file": "quantumultx/categories/ctrip/ctrip.list",
@@ -7232,14 +5952,6 @@
       "scope": "quantumultx",
       "sha256": "f9e5ff9003edf3d47bf33b74e25049a4e3784f11d84a257db81c398f51f84e5b",
       "size": 220
-    },
-    {
-      "file": "quantumultx/categories/discord/discord.list",
-      "kind": "client_rules",
-      "rule_count": 28,
-      "scope": "quantumultx",
-      "sha256": "1694279b28fe8802bb5f451db043d6c9640984dbc44e45c4de42d410c06fb380",
-      "size": 1017
     },
     {
       "file": "quantumultx/categories/disney/disney.list",
@@ -7338,14 +6050,6 @@
       "size": 525
     },
     {
-      "file": "quantumultx/categories/gemini/gemini.list",
-      "kind": "client_rules",
-      "rule_count": 9,
-      "scope": "quantumultx",
-      "sha256": "600a7e6fd436fe61fc3a27315f2abd21a49bd50bed0731b70fb7031e84c41f46",
-      "size": 355
-    },
-    {
       "file": "quantumultx/categories/github/github.list",
       "kind": "client_rules",
       "rule_count": 29,
@@ -7416,22 +6120,6 @@
       "scope": "quantumultx",
       "sha256": "ee680cd439788e7c5177d8f85ec7ca591d0201b63a23ebba5277924081934434",
       "size": 559
-    },
-    {
-      "file": "quantumultx/categories/honorofkings_cn/honorofkings_cn.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "quantumultx",
-      "sha256": "cdf1f4ca3861d0d777b23657c23312054063e0310b355c018898e00c8bb12713",
-      "size": 31
-    },
-    {
-      "file": "quantumultx/categories/honorofkings_global/honorofkings_global.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "quantumultx",
-      "sha256": "c938d2b517de180d2f1bc984a0df52b686aaa03251eaef7c74d6152cd5683a23",
-      "size": 78
     },
     {
       "file": "quantumultx/categories/hulu/hulu.list",
@@ -7570,22 +6258,6 @@
       "size": 224
     },
     {
-      "file": "quantumultx/categories/neteasemail/neteasemail.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "quantumultx",
-      "sha256": "82b0258d273a9a53cafb2628268f174d4eec6d19d005377f78ce4f993fccfd39",
-      "size": 100
-    },
-    {
-      "file": "quantumultx/categories/netflix/netflix.list",
-      "kind": "client_rules",
-      "rule_count": 31,
-      "scope": "quantumultx",
-      "sha256": "782dc91005ff39719935b485272af09c3c7b84f57b6cc7585fa84a9201535d83",
-      "size": 1154
-    },
-    {
       "file": "quantumultx/categories/nintendo/nintendo.list",
       "kind": "client_rules",
       "rule_count": 126,
@@ -7610,14 +6282,6 @@
       "size": 88
     },
     {
-      "file": "quantumultx/categories/openai/openai.list",
-      "kind": "client_rules",
-      "rule_count": 31,
-      "scope": "quantumultx",
-      "sha256": "0db193ce0e89c32b57367ac96af4f49f5c553763ec800848b3efdd79f44b1790",
-      "size": 1256
-    },
-    {
       "file": "quantumultx/categories/oppo/oppo.list",
       "kind": "client_rules",
       "rule_count": 56,
@@ -7636,10 +6300,10 @@
     {
       "file": "quantumultx/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128437,
+      "rule_count": 128189,
       "scope": "quantumultx",
-      "sha256": "70988c72e552cdc7ab0d2b0e1fe429fd0d260837c8a3b8568e422d3cdb777a95",
-      "size": 4247383
+      "sha256": "516a73714e2a8e3ce13bf92065959f9fd8964a6412d14ac3393158beeedf9806",
+      "size": 4237812
     },
     {
       "file": "quantumultx/categories/paypal/paypal.list",
@@ -7754,14 +6418,6 @@
       "size": 272
     },
     {
-      "file": "quantumultx/categories/siri/siri.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "quantumultx",
-      "sha256": "7669428c56fc9a835a3c1fd4db1620bf712badcdd85fda662bc4b0c9d7c46589",
-      "size": 38
-    },
-    {
       "file": "quantumultx/categories/slack/slack.list",
       "kind": "client_rules",
       "rule_count": 11,
@@ -7824,14 +6480,6 @@
       "scope": "quantumultx",
       "sha256": "0d9845c94ec33314f6108e8208e858e4420832d1800355041d9be440bdb86849",
       "size": 11435
-    },
-    {
-      "file": "quantumultx/categories/telegram/telegram.list",
-      "kind": "client_rules",
-      "rule_count": 24,
-      "scope": "quantumultx",
-      "sha256": "4e84505d6134fe7d4c7876f7c946e03d6aca35abf73afa6884c13781073bc358",
-      "size": 776
     },
     {
       "file": "quantumultx/categories/tongcheng/tongcheng.list",
@@ -7914,14 +6562,6 @@
       "size": 411
     },
     {
-      "file": "quantumultx/categories/xbox/xbox.list",
-      "kind": "client_rules",
-      "rule_count": 42,
-      "scope": "quantumultx",
-      "sha256": "0492dfb3ae9680e8c4ea6f0d20e14a539e3118c54123c4f4acc026a8b4dba83c",
-      "size": 1490
-    },
-    {
       "file": "quantumultx/categories/xiaohongshu/xiaohongshu.list",
       "kind": "client_rules",
       "rule_count": 4,
@@ -7964,10 +6604,10 @@
     {
       "file": "quantumultx/china/china.list",
       "kind": "client_rules",
-      "rule_count": 109393,
+      "rule_count": 109584,
       "scope": "quantumultx",
-      "sha256": "2d8168d82638d90cf274062b7f83d6b8d195af8a3c7fe466839364948206b03b",
-      "size": 3572877
+      "sha256": "9a088d69651cc096dddd5bcdeb10e73c2352315cda5857d0fa07fafe4efc3251",
+      "size": 3579241
     },
     {
       "file": "quantumultx/cloudflare/cloudflare.list",
@@ -7992,22 +6632,6 @@
       "scope": "quantumultx",
       "sha256": "b9d3e89469ad52b06d7c1e45daf4027e187af65341e769665110752720e6d4a3",
       "size": 130
-    },
-    {
-      "file": "quantumultx/deepseek/deepseek/deepseek.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "quantumultx",
-      "sha256": "ae7df39676c36d31f2626c128aa4ca78eab263989629912a82278d585d4c0123",
-      "size": 69
-    },
-    {
-      "file": "quantumultx/deepseek/deepseek.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "quantumultx",
-      "sha256": "85a54543712a9f01aaf263b37485e9a6f5977c9e44a5b530afc10aa5b3c842c9",
-      "size": 69
     },
     {
       "file": "quantumultx/dewu/dewu/dewu.list",
@@ -8052,10 +6676,10 @@
     {
       "file": "quantumultx/google/google.list",
       "kind": "client_rules",
-      "rule_count": 1220,
+      "rule_count": 1214,
       "scope": "quantumultx",
-      "sha256": "23c7a6282d1977da7f33e03026a4b1488cf575a5e075a997207bd5eba7595866",
-      "size": 43126
+      "sha256": "e2ca09bce1db9f4e01585b51ba2fc16b7c5e1b980cb9ebfdffbcef948ccb602b",
+      "size": 42888
     },
     {
       "file": "quantumultx/google/googlecloud/googlecloud.list",
@@ -8066,52 +6690,12 @@
       "size": 214
     },
     {
-      "file": "quantumultx/google/googledrive/googledrive.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "quantumultx",
-      "sha256": "829cea1d9a0d937ea72f3e36c8e2312aae34c7f0551126c258db0f093cc9c3ef",
-      "size": 151
-    },
-    {
       "file": "quantumultx/google/googlefcm/googlefcm.list",
       "kind": "client_rules",
       "rule_count": 13,
       "scope": "quantumultx",
       "sha256": "ce563c7fdabf600c1031bfcbecd471a4fe9eb0ccf8b8cfe6ca91f0da49ec4a2c",
       "size": 541
-    },
-    {
-      "file": "quantumultx/google/youtube/youtube.list",
-      "kind": "client_rules",
-      "rule_count": 175,
-      "scope": "quantumultx",
-      "sha256": "dbc817074beeb3c33d1e8190d390acdd99b70868d86adcd56762e7e092b9cb0d",
-      "size": 5791
-    },
-    {
-      "file": "quantumultx/google/youtubemusic/youtubemusic.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "quantumultx",
-      "sha256": "ce143bc9ee5700d6f1e336ebe5eea50e12adb279ea04a22f8b5a672c82be2bd3",
-      "size": 38
-    },
-    {
-      "file": "quantumultx/groq/groq/groq.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "quantumultx",
-      "sha256": "da666a5f7e9258f4b35d36f6d6d8f06fe53d9ba2e9548257fcfab28a308c94ca",
-      "size": 29
-    },
-    {
-      "file": "quantumultx/groq/groq.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "quantumultx",
-      "sha256": "da666a5f7e9258f4b35d36f6d6d8f06fe53d9ba2e9548257fcfab28a308c94ca",
-      "size": 29
     },
     {
       "file": "quantumultx/hoyoverse/hoyoverse.list",
@@ -8130,22 +6714,6 @@
       "size": 14508
     },
     {
-      "file": "quantumultx/huggingface/huggingface/huggingface.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "quantumultx",
-      "sha256": "6da753b5e373a842dd4ebf3b159ff427b3b8c24dc7c3a55d8792bd19dc3bdfd8",
-      "size": 90
-    },
-    {
-      "file": "quantumultx/huggingface/huggingface.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "quantumultx",
-      "sha256": "998b1d67760abee16adf40d5cf85ef4ef851595b6d36ec7cf8ab09e2581bdef7",
-      "size": 90
-    },
-    {
       "file": "quantumultx/meta/facebook/facebook.list",
       "kind": "client_rules",
       "rule_count": 1363,
@@ -8160,14 +6728,6 @@
       "scope": "quantumultx",
       "sha256": "7e4515f15a8849b8600944e70e5432a6bb6f0942240a2ff39cc766b7126be61f",
       "size": 5693
-    },
-    {
-      "file": "quantumultx/meta/messenger/messenger.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "quantumultx",
-      "sha256": "47d2863f628ab668918a20f8382ba8f6b9f71d2b715cc90b6d72c0d63af256d6",
-      "size": 126
     },
     {
       "file": "quantumultx/meta/meta.list",
@@ -8194,52 +6754,20 @@
       "size": 1457
     },
     {
-      "file": "quantumultx/microsoft/azure/azure.list",
-      "kind": "client_rules",
-      "rule_count": 149,
-      "scope": "quantumultx",
-      "sha256": "1b55e08932bc31296e11df714876e342d9510636223e638ea6ba18438c27c0d0",
-      "size": 5509
-    },
-    {
       "file": "quantumultx/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 952,
+      "rule_count": 944,
       "scope": "quantumultx",
-      "sha256": "cb52980135984123f244a904be04c3a6917992794f7e83a546c4517c26d7f9dd",
-      "size": 37237
-    },
-    {
-      "file": "quantumultx/microsoft/onedrive/onedrive.list",
-      "kind": "client_rules",
-      "rule_count": 13,
-      "scope": "quantumultx",
-      "sha256": "37ec5f93432e033619654acf251005bc8997a4b32f95bac1bf7ff1e18e33a04d",
-      "size": 497
-    },
-    {
-      "file": "quantumultx/microsoft/teams/teams.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "quantumultx",
-      "sha256": "3aa79edf086e479bfdc5404975773bf287506ebac256e75d2495164ac701e6e2",
-      "size": 166
+      "sha256": "b35357c19536ba54df517e465dc59fe03368a3ff27c56d32bf9b02b330f3ecaa",
+      "size": 36917
     },
     {
       "file": "quantumultx/netease/netease.list",
       "kind": "client_rules",
-      "rule_count": 97,
+      "rule_count": 96,
       "scope": "quantumultx",
-      "sha256": "7ea76445652420f40df07699d963f21afa44af1088a2a03524c9fbcc1d8d1e81",
-      "size": 3307
-    },
-    {
-      "file": "quantumultx/netease/neteasemusic/neteasemusic.list",
-      "kind": "client_rules",
-      "rule_count": 10,
-      "scope": "quantumultx",
-      "sha256": "1e5e12b9761275e7d604b5180b5cd51d2d817f7b1617f4ed9e5af040167791f9",
-      "size": 371
+      "sha256": "28681dbb45517df98a61a2c9c7f3cca0589f02221c018e11721e065a59622785",
+      "size": 3257
     },
     {
       "file": "quantumultx/netease/youdao/youdao.list",
@@ -8264,54 +6792,6 @@
       "scope": "quantumultx",
       "sha256": "913f3dda96349b93634b823bf957fb5d1e2ff0d3f1dca93ddde62d30a497d607",
       "size": 419
-    },
-    {
-      "file": "quantumultx/perplexity/perplexity/perplexity.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "quantumultx",
-      "sha256": "ab7882e1deac32c6dd67d9daeb627e5f5a1da3803a24e39c6a7f0e98d6af6d6a",
-      "size": 141
-    },
-    {
-      "file": "quantumultx/perplexity/perplexity.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "quantumultx",
-      "sha256": "492fd2c1a6bd7ee6ff1fab7c0fb3f03ddb3f3391780c8a7bcdd50a4f91bd41be",
-      "size": 141
-    },
-    {
-      "file": "quantumultx/roblox/roblox/roblox.list",
-      "kind": "client_rules",
-      "rule_count": 47,
-      "scope": "quantumultx",
-      "sha256": "9a7512f3895d6ce49bfc42f01ad534939cfa68db2b4f057cabfe687006b6a3f6",
-      "size": 1530
-    },
-    {
-      "file": "quantumultx/roblox/roblox.list",
-      "kind": "client_rules",
-      "rule_count": 47,
-      "scope": "quantumultx",
-      "sha256": "ccf84ca508d6b65b570eb746b6d43d988851da542baf41505c843e9109a1102c",
-      "size": 1530
-    },
-    {
-      "file": "quantumultx/signal/signal/signal.list",
-      "kind": "client_rules",
-      "rule_count": 8,
-      "scope": "quantumultx",
-      "sha256": "486cd6b8e1b67f93179a8378daf926573b6b81447c1b99bd33a396225d2435d4",
-      "size": 264
-    },
-    {
-      "file": "quantumultx/signal/signal.list",
-      "kind": "client_rules",
-      "rule_count": 8,
-      "scope": "quantumultx",
-      "sha256": "6cdf070f545ef641d8e3707945f8aff4e9d1fc3df3316d81a7938da6a66b439c",
-      "size": 264
     },
     {
       "file": "quantumultx/snap/snap.list",
@@ -8348,18 +6828,18 @@
     {
       "file": "quantumultx/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 745,
+      "rule_count": 815,
       "scope": "quantumultx",
-      "sha256": "ca6ccbe79b189fe97abb80a3089ff76eca6f29e1ba77ffeea6688c6f72bbdcbb",
-      "size": 26082
+      "sha256": "d81c63b57471b979473fbd4bdf7ffd101c23a3f9cfb14eb8d0073d1487b4f617",
+      "size": 27940
     },
     {
       "file": "quantumultx/tencent/tencentcloud/tencentcloud.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 105,
       "scope": "quantumultx",
-      "sha256": "602242e45a1c3513e72fc67d65f22c1c60fa7a5c00a693e76be74aaae4e88f0c",
-      "size": 38
+      "sha256": "015135393d8f54ff2db1aca6810fd65567c3bb9ed59b8b1e28ffdf7d731f4dd3",
+      "size": 3300
     },
     {
       "file": "quantumultx/tencent/tencentmeeting/tencentmeeting.list",
@@ -8368,22 +6848,6 @@
       "scope": "quantumultx",
       "sha256": "72ddc48c4f66b1fefe9455e9a0a678151ae7326c0b61b11dfa6d4871104e5768",
       "size": 131
-    },
-    {
-      "file": "quantumultx/tencent/tencentvideo/tencentvideo.list",
-      "kind": "client_rules",
-      "rule_count": 17,
-      "scope": "quantumultx",
-      "sha256": "075f84b120fd00c0376e45a63b2fab530bdee3471589ddc77960c728895f77d4",
-      "size": 785
-    },
-    {
-      "file": "quantumultx/tencent/wechat/wechat.list",
-      "kind": "client_rules",
-      "rule_count": 28,
-      "scope": "quantumultx",
-      "sha256": "98bbaae821daee9141126a493c384f0ca718b92ee3aee410913af9df67cb9d62",
-      "size": 986
     },
     {
       "file": "quantumultx/tencent/wecom/wecom.list",
@@ -8500,26 +6964,18 @@
     {
       "file": "shadowrocket/alibaba/1688/1688.list",
       "kind": "client_rules",
-      "rule_count": 3,
+      "rule_count": 2,
       "scope": "shadowrocket",
-      "sha256": "f277a33ba0d42adb8e9f3c25205164706ce0f1d381ab8594cbda6d8c98e15b12",
-      "size": 78
+      "sha256": "070c60ab074ac79fd288a4bf1e83f297696792be169a2a5442b74223c0154542",
+      "size": 50
     },
     {
       "file": "shadowrocket/alibaba/alibaba.list",
       "kind": "client_rules",
-      "rule_count": 573,
+      "rule_count": 556,
       "scope": "shadowrocket",
-      "sha256": "09c457085bdf615b08c9f3d0b88b643a77222dff8b468dfae3468eee37adea9e",
-      "size": 16412
-    },
-    {
-      "file": "shadowrocket/alibaba/alibabacloud/alibabacloud.list",
-      "kind": "client_rules",
-      "rule_count": 12,
-      "scope": "shadowrocket",
-      "sha256": "3e192fa2579d1847976b821708b6895261ab96836866db484266761ca40ddc34",
-      "size": 410
+      "sha256": "701cbbb38fa2453a8b024ae77013c3d14e62dc811351c6fa24bc1f846af5be17",
+      "size": 15866
     },
     {
       "file": "shadowrocket/alibaba/alipay/alipay.list",
@@ -8540,18 +6996,18 @@
     {
       "file": "shadowrocket/alibaba/dingding/dingding.list",
       "kind": "client_rules",
-      "rule_count": 6,
+      "rule_count": 3,
       "scope": "shadowrocket",
-      "sha256": "da3195020983902476bc4a931024925a94738198687f0894d59d3e4fe097b99d",
-      "size": 202
+      "sha256": "8b2e06d6ebc687edb9179c28917a8de9d146388a178d21315107c24035690d12",
+      "size": 96
     },
     {
       "file": "shadowrocket/alibaba/taobao/taobao.list",
       "kind": "client_rules",
-      "rule_count": 14,
+      "rule_count": 1,
       "scope": "shadowrocket",
-      "sha256": "fb452a15240a76a0c2d826b1d4b95930d7714f110c889183a80c7f46e42da589",
-      "size": 442
+      "sha256": "996855b2169576c646b74dc117f2f1f029c01721d28e0afb1a16acb3558ae794",
+      "size": 30
     },
     {
       "file": "shadowrocket/alibaba/tmall/tmall.list",
@@ -8596,42 +7052,10 @@
     {
       "file": "shadowrocket/apple/apple.list",
       "kind": "client_rules",
-      "rule_count": 2011,
+      "rule_count": 2000,
       "scope": "shadowrocket",
-      "sha256": "9c93345712c1a9bbddfcb2235f18e771fd544e761b52a175b275eeb61a24aefc",
-      "size": 65804
-    },
-    {
-      "file": "shadowrocket/apple/appledev/appledev.list",
-      "kind": "client_rules",
-      "rule_count": 38,
-      "scope": "shadowrocket",
-      "sha256": "880ef2af533f4de69013bfcbf0d69c2a9635f1ad051fe5ef692448f6addf25cd",
-      "size": 1251
-    },
-    {
-      "file": "shadowrocket/apple/applemedia/applemedia.list",
-      "kind": "client_rules",
-      "rule_count": 52,
-      "scope": "shadowrocket",
-      "sha256": "5ac47d8098b7481255a8c358680fbcdb93c4b6713b2c2bdffa1052b282141f31",
-      "size": 1606
-    },
-    {
-      "file": "shadowrocket/apple/applemusic/applemusic.list",
-      "kind": "client_rules",
-      "rule_count": 9,
-      "scope": "shadowrocket",
-      "sha256": "6c9ee0134d96218df1a7e5137038471c239e347e1c0c2e0a83453579b4f7f2dd",
-      "size": 327
-    },
-    {
-      "file": "shadowrocket/apple/applenews/applenews.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "shadowrocket",
-      "sha256": "06940ffc98875135804817fe403bbc41bccbcb63c5addc1d38878fe11bba2bb6",
-      "size": 80
+      "sha256": "d34b44154c9aad6ae33f4e4a4ca3f4fb89e831b1d0553ee4607543809577c500",
+      "size": 65439
     },
     {
       "file": "shadowrocket/apple/appletv/appletv.list",
@@ -8640,38 +7064,6 @@
       "scope": "shadowrocket",
       "sha256": "77616b096395fbee12c0d51e6cb284dfc6accc40a675e68c6cfdecb0f6622738",
       "size": 252
-    },
-    {
-      "file": "shadowrocket/apple/appstore/appstore.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "shadowrocket",
-      "sha256": "3231742b074ab119a0bbe6dfdb4968e9cac336ddda212be7167394353e205733",
-      "size": 60
-    },
-    {
-      "file": "shadowrocket/apple/findmy/findmy.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "shadowrocket",
-      "sha256": "12564d30212ec652337537e02d8e1e5adb05a2be30625cb992875ea393d01ace",
-      "size": 104
-    },
-    {
-      "file": "shadowrocket/apple/icloud/icloud.list",
-      "kind": "client_rules",
-      "rule_count": 60,
-      "scope": "shadowrocket",
-      "sha256": "f871ca7b21957200391f6fcf630a3e4397dd688e8c406bf63c8cbdce0a57a2af",
-      "size": 1663
-    },
-    {
-      "file": "shadowrocket/apple/testflight/testflight.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "shadowrocket",
-      "sha256": "aff0ff78cf45fee1ffaaaeef90fc3f12e83df3210cc9616c361073abb56c5481",
-      "size": 64
     },
     {
       "file": "shadowrocket/atlassian/atlassian.list",
@@ -8692,10 +7084,10 @@
     {
       "file": "shadowrocket/baidu/baidu.list",
       "kind": "client_rules",
-      "rule_count": 285,
+      "rule_count": 2,
       "scope": "shadowrocket",
-      "sha256": "794421a20cfdf3bf0e8063add07aeb339b784f4f14586998a805d0a3b9175665",
-      "size": 7929
+      "sha256": "88bc62517ed3c058d30f3d0d92d818a9c4d614b0c8d02a9220f1614f3c25b271",
+      "size": 64
     },
     {
       "file": "shadowrocket/baidu/baidunetdisk/baidunetdisk.list",
@@ -8704,14 +7096,6 @@
       "scope": "shadowrocket",
       "sha256": "88bc62517ed3c058d30f3d0d92d818a9c4d614b0c8d02a9220f1614f3c25b271",
       "size": 64
-    },
-    {
-      "file": "shadowrocket/baidu/baidutieba/baidutieba.list",
-      "kind": "client_rules",
-      "rule_count": 32,
-      "scope": "shadowrocket",
-      "sha256": "8fd60b9ac90e8f28a5e529aa6bdc4630ad98b77d668e00692b649e20c173d8c2",
-      "size": 1042
     },
     {
       "file": "shadowrocket/bluesky/bluesky/bluesky.list",
@@ -8748,10 +7132,10 @@
     {
       "file": "shadowrocket/bytedance/bytedance.list",
       "kind": "client_rules",
-      "rule_count": 1092,
+      "rule_count": 1081,
       "scope": "shadowrocket",
-      "sha256": "cda72480c052301a858c885784ac18d3f8c5f2a8c02401ae60de1637db10a378",
-      "size": 31820
+      "sha256": "20465ed9d7b1961cfd1869bbabf1d9d143a2a9a6202bd29d302396a87fc48135",
+      "size": 31436
     },
     {
       "file": "shadowrocket/bytedance/doubao/doubao.list",
@@ -8760,30 +7144,6 @@
       "scope": "shadowrocket",
       "sha256": "2ddcdb67d2b9bf06ee5d6c390f8a5092516c4cd7c4ee4ce257751606a55c9522",
       "size": 133
-    },
-    {
-      "file": "shadowrocket/bytedance/douyin/douyin.list",
-      "kind": "client_rules",
-      "rule_count": 13,
-      "scope": "shadowrocket",
-      "sha256": "64cb96507f9faea32b1517fa1007e8bd09225ee39eafdff0b89235a841344f3b",
-      "size": 378
-    },
-    {
-      "file": "shadowrocket/bytedance/feishu/feishu.list",
-      "kind": "client_rules",
-      "rule_count": 43,
-      "scope": "shadowrocket",
-      "sha256": "e795720343bc19d960e581e10307930a420fc77427259fb85a2ea77e7ff91ae9",
-      "size": 1269
-    },
-    {
-      "file": "shadowrocket/bytedance/tiktok/tiktok.list",
-      "kind": "client_rules",
-      "rule_count": 29,
-      "scope": "shadowrocket",
-      "sha256": "fca60f34ec7e85927b692358832431a444e065ec0ed8a9b7a7dd98f4fb872168",
-      "size": 856
     },
     {
       "file": "shadowrocket/canva/canva/canva.list",
@@ -8922,14 +7282,6 @@
       "size": 324
     },
     {
-      "file": "shadowrocket/categories/bing/bing.list",
-      "kind": "client_rules",
-      "rule_count": 9,
-      "scope": "shadowrocket",
-      "sha256": "66091e0c24edf3f3b5451a15f02e193b6f55d33fce10ee91f8f15c1f14069dd7",
-      "size": 262
-    },
-    {
       "file": "shadowrocket/categories/boc/boc.list",
       "kind": "client_rules",
       "rule_count": 22,
@@ -8994,28 +7346,12 @@
       "size": 928
     },
     {
-      "file": "shadowrocket/categories/claude/claude.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "shadowrocket",
-      "sha256": "45a0dd38f5fd0d30335f35f2a5b49cd656f9df82000c7b8625386adc002fafac",
-      "size": 84
-    },
-    {
       "file": "shadowrocket/categories/cmb/cmb.list",
       "kind": "client_rules",
       "rule_count": 38,
       "scope": "shadowrocket",
       "sha256": "ede46d36497f83495031e72e5d57a6ead66cf4d73214c693a38673df5927eb69",
       "size": 1013
-    },
-    {
-      "file": "shadowrocket/categories/copilot/copilot.list",
-      "kind": "client_rules",
-      "rule_count": 45,
-      "scope": "shadowrocket",
-      "sha256": "f5c0464dea1630e5f85affa5fc3ce6d7189fceb8c5db8a51c0894dafd7a1fa87",
-      "size": 1557
     },
     {
       "file": "shadowrocket/categories/ctrip/ctrip.list",
@@ -9048,14 +7384,6 @@
       "scope": "shadowrocket",
       "sha256": "2249f4d9d7c087a734121fecc705b64d2436f16c60c51b9f4749b2660d3f58d2",
       "size": 184
-    },
-    {
-      "file": "shadowrocket/categories/discord/discord.list",
-      "kind": "client_rules",
-      "rule_count": 28,
-      "scope": "shadowrocket",
-      "sha256": "38bc7822f6b297008c3b396bc4ef45c771e4fdcb1e4616e5d2d3309dd235c241",
-      "size": 849
     },
     {
       "file": "shadowrocket/categories/disney/disney.list",
@@ -9154,14 +7482,6 @@
       "size": 435
     },
     {
-      "file": "shadowrocket/categories/gemini/gemini.list",
-      "kind": "client_rules",
-      "rule_count": 9,
-      "scope": "shadowrocket",
-      "sha256": "bea919970470082d46f185ce1cc512e77226fc8cf13429206adbc8f8cb21264f",
-      "size": 301
-    },
-    {
       "file": "shadowrocket/categories/github/github.list",
       "kind": "client_rules",
       "rule_count": 29,
@@ -9232,22 +7552,6 @@
       "scope": "shadowrocket",
       "sha256": "e34c85ffe825cccb7b5a705a1d0a735d8084cd5c61bdc09d8b355c64655238a7",
       "size": 457
-    },
-    {
-      "file": "shadowrocket/categories/honorofkings_cn/honorofkings_cn.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "shadowrocket",
-      "sha256": "b80657e4c5a31d353fc271092be5bf6a6c8d2a8b7b74f070d3e1eea0e2937889",
-      "size": 25
-    },
-    {
-      "file": "shadowrocket/categories/honorofkings_global/honorofkings_global.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "shadowrocket",
-      "sha256": "bbaf070767dce5b6bf89a3efadf1d86facd56f3bc68c9e719f1b0ef6d77dea93",
-      "size": 66
     },
     {
       "file": "shadowrocket/categories/hulu/hulu.list",
@@ -9386,22 +7690,6 @@
       "size": 188
     },
     {
-      "file": "shadowrocket/categories/neteasemail/neteasemail.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "shadowrocket",
-      "sha256": "50f04d42088292bfa82ee7ae51adb5068f8c9d9c7fb370489a347364cf66fbdb",
-      "size": 82
-    },
-    {
-      "file": "shadowrocket/categories/netflix/netflix.list",
-      "kind": "client_rules",
-      "rule_count": 31,
-      "scope": "shadowrocket",
-      "sha256": "9b6b8c47788a054f0b4fe7a77698c1a2c690095e0edace493683875be054651f",
-      "size": 968
-    },
-    {
       "file": "shadowrocket/categories/nintendo/nintendo.list",
       "kind": "client_rules",
       "rule_count": 126,
@@ -9426,14 +7714,6 @@
       "size": 70
     },
     {
-      "file": "shadowrocket/categories/openai/openai.list",
-      "kind": "client_rules",
-      "rule_count": 31,
-      "scope": "shadowrocket",
-      "sha256": "c31640abb035119d7b50bb3ccd9f7873bd84b87529daf9a5bda2196b2af3196f",
-      "size": 1070
-    },
-    {
       "file": "shadowrocket/categories/oppo/oppo.list",
       "kind": "client_rules",
       "rule_count": 56,
@@ -9452,10 +7732,10 @@
     {
       "file": "shadowrocket/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128437,
+      "rule_count": 128189,
       "scope": "shadowrocket",
-      "sha256": "836b83ab93b49f3bae4ed119cdcf2708447a274559d49b9330635d7a695d419e",
-      "size": 3476139
+      "sha256": "5680c18b693fb5ccf9ca1e0f322157c7b6e1ad9ecc4f9a836c1713083d2e8902",
+      "size": 3467850
     },
     {
       "file": "shadowrocket/categories/paypal/paypal.list",
@@ -9570,14 +7850,6 @@
       "size": 224
     },
     {
-      "file": "shadowrocket/categories/siri/siri.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "shadowrocket",
-      "sha256": "3a344b11ee89c28b57a98a0ff77c06d14d29f962f5d97b55da08fe60d44eb012",
-      "size": 32
-    },
-    {
       "file": "shadowrocket/categories/slack/slack.list",
       "kind": "client_rules",
       "rule_count": 11,
@@ -9640,14 +7912,6 @@
       "scope": "shadowrocket",
       "sha256": "2cbfc9053f8cc29dbd4ca88f557e860174e7dd9757c61a3561adbfddd944f02f",
       "size": 9207
-    },
-    {
-      "file": "shadowrocket/categories/telegram/telegram.list",
-      "kind": "client_rules",
-      "rule_count": 24,
-      "scope": "shadowrocket",
-      "sha256": "465dd90e816d4965318a69520dfbcfc525a4304ef9f94c76aa39ba3b28f2fac8",
-      "size": 632
     },
     {
       "file": "shadowrocket/categories/tongcheng/tongcheng.list",
@@ -9730,14 +7994,6 @@
       "size": 339
     },
     {
-      "file": "shadowrocket/categories/xbox/xbox.list",
-      "kind": "client_rules",
-      "rule_count": 42,
-      "scope": "shadowrocket",
-      "sha256": "1d7b9783d705e8220d20c233e9a8e5033cf1735c10cfe9daca26dabbb888c86a",
-      "size": 1238
-    },
-    {
       "file": "shadowrocket/categories/xiaohongshu/xiaohongshu.list",
       "kind": "client_rules",
       "rule_count": 4,
@@ -9780,10 +8036,10 @@
     {
       "file": "shadowrocket/china/china.list",
       "kind": "client_rules",
-      "rule_count": 109393,
+      "rule_count": 109584,
       "scope": "shadowrocket",
-      "sha256": "d9ba19a67e74e6cff98c4aa91519285563ef8ed77203e21686a5a23ade8fbf64",
-      "size": 2916519
+      "sha256": "1513c860af70aceb8191cd24f7aeca98f6e2e906045051cbf6a34333f80692a6",
+      "size": 2921737
     },
     {
       "file": "shadowrocket/cloudflare/cloudflare.list",
@@ -9808,22 +8064,6 @@
       "scope": "shadowrocket",
       "sha256": "cf6d3b7d5e7676c85bdc5a2ac0c8df34e27e99ca6c0276e06791b0aa5969ca3e",
       "size": 106
-    },
-    {
-      "file": "shadowrocket/deepseek/deepseek/deepseek.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "shadowrocket",
-      "sha256": "8cb505121e51b125ba96a1810880f2a1e9a08fb16e10a532b425160b1592fc75",
-      "size": 57
-    },
-    {
-      "file": "shadowrocket/deepseek/deepseek.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "shadowrocket",
-      "sha256": "b2f3915a8bbd3438f363af5082248801e41bb6b28503eddce4605593159e5eb1",
-      "size": 57
     },
     {
       "file": "shadowrocket/dewu/dewu/dewu.list",
@@ -9868,10 +8108,10 @@
     {
       "file": "shadowrocket/google/google.list",
       "kind": "client_rules",
-      "rule_count": 1220,
+      "rule_count": 1214,
       "scope": "shadowrocket",
-      "sha256": "2917007f8f45a3a4b8fdeb64f2d0823fbd7b07301a125b6754096bad0bbc0714",
-      "size": 35796
+      "sha256": "58f0718ce3e04b2dd71b5981feaa8d9ddbaac7ff27d7514138382d1f1303ae2f",
+      "size": 35594
     },
     {
       "file": "shadowrocket/google/googlecloud/googlecloud.list",
@@ -9882,52 +8122,12 @@
       "size": 184
     },
     {
-      "file": "shadowrocket/google/googledrive/googledrive.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "shadowrocket",
-      "sha256": "84a008f97853fdb3a0d1032060c85107d841c9c002f0a1d4e930d40663e21785",
-      "size": 127
-    },
-    {
       "file": "shadowrocket/google/googlefcm/googlefcm.list",
       "kind": "client_rules",
       "rule_count": 13,
       "scope": "shadowrocket",
       "sha256": "d5416f51714c2a6e111c090136eaf04f90a352fdb549125dfefd63fa89259c85",
       "size": 463
-    },
-    {
-      "file": "shadowrocket/google/youtube/youtube.list",
-      "kind": "client_rules",
-      "rule_count": 175,
-      "scope": "shadowrocket",
-      "sha256": "8ed912f62e8595ec7dc2dde6b6f9a147cfe50eae7efb446199eaedf47b1b3afd",
-      "size": 4741
-    },
-    {
-      "file": "shadowrocket/google/youtubemusic/youtubemusic.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "shadowrocket",
-      "sha256": "a60e91405db5cb168ef66f1e3ba655d8d34ee131fab60d8098c08bd61907037c",
-      "size": 32
-    },
-    {
-      "file": "shadowrocket/groq/groq/groq.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "shadowrocket",
-      "sha256": "c25618d6e673762890944bbccf594711322787bac1820a38e340f48b81fe0c5c",
-      "size": 23
-    },
-    {
-      "file": "shadowrocket/groq/groq.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "shadowrocket",
-      "sha256": "c25618d6e673762890944bbccf594711322787bac1820a38e340f48b81fe0c5c",
-      "size": 23
     },
     {
       "file": "shadowrocket/hoyoverse/hoyoverse.list",
@@ -9946,22 +8146,6 @@
       "size": 12096
     },
     {
-      "file": "shadowrocket/huggingface/huggingface/huggingface.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "shadowrocket",
-      "sha256": "93ac108c376e42fab6faf0a6b436df1c57a3dfebfb09543c973709062df02bb5",
-      "size": 72
-    },
-    {
-      "file": "shadowrocket/huggingface/huggingface.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "shadowrocket",
-      "sha256": "1831eaa5d3ab9c3e4fc65c87464e461fac3d597f012b256bbae1d28ea7675553",
-      "size": 72
-    },
-    {
       "file": "shadowrocket/meta/facebook/facebook.list",
       "kind": "client_rules",
       "rule_count": 1363,
@@ -9976,14 +8160,6 @@
       "scope": "shadowrocket",
       "sha256": "7b2b7eee3d4c08cc3e4218e10f837f3277d3432c057718892a735ce77565d947",
       "size": 4781
-    },
-    {
-      "file": "shadowrocket/meta/messenger/messenger.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "shadowrocket",
-      "sha256": "09a3b2dc0a2426405bcd2803dfcaf5d32994e5c78967de6f89f16386cc298f45",
-      "size": 102
     },
     {
       "file": "shadowrocket/meta/meta.list",
@@ -10010,52 +8186,20 @@
       "size": 1177
     },
     {
-      "file": "shadowrocket/microsoft/azure/azure.list",
-      "kind": "client_rules",
-      "rule_count": 149,
-      "scope": "shadowrocket",
-      "sha256": "07bf1de2f7242099aff9e090775cbb8718465f42fa329b85930d71688fba0cd7",
-      "size": 4615
-    },
-    {
       "file": "shadowrocket/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 952,
+      "rule_count": 944,
       "scope": "shadowrocket",
-      "sha256": "45dc75e23ad72bec20c7d29892cf49474645f9477add8d99b39b7f6c676855a3",
-      "size": 31525
-    },
-    {
-      "file": "shadowrocket/microsoft/onedrive/onedrive.list",
-      "kind": "client_rules",
-      "rule_count": 13,
-      "scope": "shadowrocket",
-      "sha256": "e642c6e93971b09f83dfc6ee2226e2e07f8699cba5a8fb25c95e1550f0d84e8d",
-      "size": 419
-    },
-    {
-      "file": "shadowrocket/microsoft/teams/teams.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "shadowrocket",
-      "sha256": "2d809abb0f51b6a37b362078c2a748eb47fb34c3a49582ce9594abb15c4597c2",
-      "size": 142
+      "sha256": "8a110f9283b3b96bbd8a0d5a69db40116b17af0590dcdf26d6a6e7d46d8d7fdb",
+      "size": 31253
     },
     {
       "file": "shadowrocket/netease/netease.list",
       "kind": "client_rules",
-      "rule_count": 97,
+      "rule_count": 96,
       "scope": "shadowrocket",
-      "sha256": "48b6162019c4dff1c228e66ad46735796fa31e6e1aa65630609fdd494d7c312f",
-      "size": 2689
-    },
-    {
-      "file": "shadowrocket/netease/neteasemusic/neteasemusic.list",
-      "kind": "client_rules",
-      "rule_count": 10,
-      "scope": "shadowrocket",
-      "sha256": "68cad9f49ceb75c822358a2a150815dc0100a3ceb9511c6feca1d04ff52a0032",
-      "size": 311
+      "sha256": "4b9e27de00514c77cd7b038930010803f868282a7efdffd735c1bb73455432a3",
+      "size": 2645
     },
     {
       "file": "shadowrocket/netease/youdao/youdao.list",
@@ -10080,54 +8224,6 @@
       "scope": "shadowrocket",
       "sha256": "eee97813d86a0b63a1cb5009a77fe446e02a4bb0b763c0856613aff8272262a6",
       "size": 359
-    },
-    {
-      "file": "shadowrocket/perplexity/perplexity/perplexity.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "shadowrocket",
-      "sha256": "797ee9906d070a3c0ddb9fefa5395269dd7a16f66975513e43991981112c7604",
-      "size": 117
-    },
-    {
-      "file": "shadowrocket/perplexity/perplexity.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "shadowrocket",
-      "sha256": "dcee3521182ec81c31813ec34caa756de3c969c7039ab7ae0f60bf6e14c68bdc",
-      "size": 117
-    },
-    {
-      "file": "shadowrocket/roblox/roblox/roblox.list",
-      "kind": "client_rules",
-      "rule_count": 47,
-      "scope": "shadowrocket",
-      "sha256": "3566a109b9428ac8fafe028bbebe7a1da825fcbc57499fbcc52f7cf03447ef25",
-      "size": 1248
-    },
-    {
-      "file": "shadowrocket/roblox/roblox.list",
-      "kind": "client_rules",
-      "rule_count": 47,
-      "scope": "shadowrocket",
-      "sha256": "e541341dc495b8a023544d484fbac55c0eceae2ec794f73337c6f4d753ecdbc4",
-      "size": 1248
-    },
-    {
-      "file": "shadowrocket/signal/signal/signal.list",
-      "kind": "client_rules",
-      "rule_count": 8,
-      "scope": "shadowrocket",
-      "sha256": "d404ebe1a0340d346680483db81f22ccf0a147fe441624d09ca55b1aba1ae2e0",
-      "size": 216
-    },
-    {
-      "file": "shadowrocket/signal/signal.list",
-      "kind": "client_rules",
-      "rule_count": 8,
-      "scope": "shadowrocket",
-      "sha256": "6735c7557fb210e7a29c69918ea42ddbb39ea7bc995cf8333f0f6c7a5b3c0720",
-      "size": 216
     },
     {
       "file": "shadowrocket/snap/snap.list",
@@ -10164,18 +8260,18 @@
     {
       "file": "shadowrocket/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 745,
+      "rule_count": 815,
       "scope": "shadowrocket",
-      "sha256": "41adfc9ae7c129b017dce9809d6c18babe5735a6c3af4232453862112eec9c81",
-      "size": 21572
+      "sha256": "9c2d54d8ac9c124ebf8f808b8ce3d9e4c5281d1083f1fe7a7c309eda83324877",
+      "size": 22804
     },
     {
       "file": "shadowrocket/tencent/tencentcloud/tencentcloud.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 105,
       "scope": "shadowrocket",
-      "sha256": "327feaeb8a41e1de71d2f4957fd10a3e5d561f7545e15881ed38c3ef71371d68",
-      "size": 32
+      "sha256": "e2840790020927d91206298d48d2ae637593d187d1456cf4513cc5874d57b8d0",
+      "size": 2462
     },
     {
       "file": "shadowrocket/tencent/tencentmeeting/tencentmeeting.list",
@@ -10184,22 +8280,6 @@
       "scope": "shadowrocket",
       "sha256": "38e9aa5e60f537aad392eba3234f1d1adbd63bfa6e027b4d35028fb37f9fa861",
       "size": 113
-    },
-    {
-      "file": "shadowrocket/tencent/tencentvideo/tencentvideo.list",
-      "kind": "client_rules",
-      "rule_count": 17,
-      "scope": "shadowrocket",
-      "sha256": "aa4b8c6a68478d9a449872c99814092a8bc6a2670a451787e1ed479f4bb43ee9",
-      "size": 683
-    },
-    {
-      "file": "shadowrocket/tencent/wechat/wechat.list",
-      "kind": "client_rules",
-      "rule_count": 28,
-      "scope": "shadowrocket",
-      "sha256": "a459440007cc8da398a7bf7753e841490e2e007bddbff1c39b321ae04dfb405e",
-      "size": 818
     },
     {
       "file": "shadowrocket/tencent/wecom/wecom.list",
@@ -10318,24 +8398,16 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "0b394e6cabfbcdf87cee143bbebc03702ab3c785ef08b9787f58345e8ae8ce67",
-      "size": 150
+      "sha256": "53aa9bb843e63dc238fdde160bdde9e11818af6ed8df48e7b049314096b1d193",
+      "size": 125
     },
     {
       "file": "singbox/alibaba/alibaba.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "57125162d1d4d7664a251c2eaad73c397153572cff27a420b553a54006ab1148",
-      "size": 15154
-    },
-    {
-      "file": "singbox/alibaba/alibabacloud/alibabacloud.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "98a2425a2ec5eb1e06bbd868de2ebfdb0dbef2c41d64609283c51b6456fa5985",
-      "size": 455
+      "sha256": "55c38c3591e622ec2cdc0655d9659482ace64c55fd2139d8f5f4dc6bf3278490",
+      "size": 14659
     },
     {
       "file": "singbox/alibaba/alipay/alipay.json",
@@ -10358,16 +8430,16 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "b8154e986287b61f616ced97be8eca689ba17196396eefe5df814a8ad3aa1352",
-      "size": 265
+      "sha256": "55be33466898f159c86f48abd901b1ff286e5ed476088e493ce69fc9793572f6",
+      "size": 168
     },
     {
       "file": "singbox/alibaba/taobao/taobao.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "031c7b52e7b1eba60417f49a1d4288744cab3b3fb2a810d64ecdc3f7bcf0d0a2",
-      "size": 481
+      "sha256": "ae91d5362dcde42b009dd5963a4ff3458ab253bf5efe8b713d6d7b36c2af7a11",
+      "size": 108
     },
     {
       "file": "singbox/alibaba/tmall/tmall.json",
@@ -10414,40 +8486,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "f232c85f4270a51052761bf03bb4e2704f87961679af75cda2f3cea43a1afcac",
-      "size": 61175
-    },
-    {
-      "file": "singbox/apple/appledev/appledev.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "fca51182a1e24101c2ab28ce2ce0aab9c57ee3a9a0bca896ab366cf691e6d210",
-      "size": 1218
-    },
-    {
-      "file": "singbox/apple/applemedia/applemedia.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "618fc1fc5f5025043db76a7a022eb03b58c119754fe4d60605846fe4f8c95e94",
-      "size": 1531
-    },
-    {
-      "file": "singbox/apple/applemusic/applemusic.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "484c6efd852a7718cb915def539be5978a36b2b71545593ad3e7c4b821eda624",
-      "size": 381
-    },
-    {
-      "file": "singbox/apple/applenews/applenews.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "ff9f55f63c86b8b3b024f4b341b7bb89e68174e6d9435dc83c2aa12734002b0a",
-      "size": 155
+      "sha256": "2135d098808a9914e747ab4bfb2396c2a690a804c1c9b30dd1b6d7a60c23117d",
+      "size": 60843
     },
     {
       "file": "singbox/apple/appletv/appletv.json",
@@ -10456,38 +8496,6 @@
       "scope": "singbox",
       "sha256": "1a61a492dde21e2a0919564e64edd8bfd9bb62c886708c64fe0950d9e9eb4259",
       "size": 312
-    },
-    {
-      "file": "singbox/apple/appstore/appstore.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "b2136c56bff2be6de9bf545acc93df4b99f566ee20b9a8f22122b2ffdda43fea",
-      "size": 135
-    },
-    {
-      "file": "singbox/apple/findmy/findmy.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "406b89ccd97bf31f4413f43cdf0f19e75e8d2d51f539834bb8a495da79a58338",
-      "size": 176
-    },
-    {
-      "file": "singbox/apple/icloud/icloud.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "2a051f6f437a163919c6d5c7e21da304ac5cf868caa52d23732723039d62c636",
-      "size": 1564
-    },
-    {
-      "file": "singbox/apple/testflight/testflight.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "fd988fbb0868fe4ab91c80aef6b2dccc062a900f6a6da904a8d57fecf8dcf1c1",
-      "size": 139
     },
     {
       "file": "singbox/atlassian/atlassian.json",
@@ -10510,8 +8518,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "16544d23e5305bc1431c1f2a6c5f10118fc8a3094b5f38f6901ad2b0ffa391ce",
-      "size": 7155
+      "sha256": "3df566deaf78e0964d4581701a81970be27a93d24ff794f3703bfdbf5d092f96",
+      "size": 139
     },
     {
       "file": "singbox/baidu/baidunetdisk/baidunetdisk.json",
@@ -10520,14 +8528,6 @@
       "scope": "singbox",
       "sha256": "3df566deaf78e0964d4581701a81970be27a93d24ff794f3703bfdbf5d092f96",
       "size": 139
-    },
-    {
-      "file": "singbox/baidu/baidutieba/baidutieba.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "95bc06139e28b9021f72fad97af30650069d4312c5a250be6e28dc65d911fac8",
-      "size": 1027
     },
     {
       "file": "singbox/bluesky/bluesky/bluesky.json",
@@ -10566,8 +8566,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "5eaf894a115c9da41d6b4fe4632830d47595dd036bba3b5dfeacb05c55ccda13",
-      "size": 28691
+      "sha256": "539d988198ecf12787f03f5383b5b5f73463e3904383e2563e7af1cab759241f",
+      "size": 28340
     },
     {
       "file": "singbox/bytedance/doubao/doubao.json",
@@ -10576,30 +8576,6 @@
       "scope": "singbox",
       "sha256": "de8ba490b7ac06377b961f84b33a985e94e492ffcee8f34d89d26f3f50083825",
       "size": 202
-    },
-    {
-      "file": "singbox/bytedance/douyin/douyin.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "6782e4247bc7d9aa4cfea43b6e87c26deeda032b7f47038be3238fa9809c48b4",
-      "size": 420
-    },
-    {
-      "file": "singbox/bytedance/feishu/feishu.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "71ea29ea0b79de9516a2ea92e20cecba2d52c65cf6d8eae02207f4e9fbef74c2",
-      "size": 1221
-    },
-    {
-      "file": "singbox/bytedance/tiktok/tiktok.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "1c9e2134977cc13d158200cfc733b2d1f07d3d367b4a459e08a1843ee628ce43",
-      "size": 850
     },
     {
       "file": "singbox/canva/canva/canva.json",
@@ -10738,14 +8714,6 @@
       "size": 369
     },
     {
-      "file": "singbox/categories/bing/bing.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "5d71048a0bfce5cbfaced4b5b59fa78528ceef62e036a850266f8c63920aeffe",
-      "size": 316
-    },
-    {
       "file": "singbox/categories/boc/boc.json",
       "kind": "client_rules",
       "rule_count": 0,
@@ -10810,28 +8778,12 @@
       "size": 940
     },
     {
-      "file": "singbox/categories/claude/claude.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "d0b998716176b5a9beb22de90a20bbacad4e3c3b26d3f1bb24b873225e9a5762",
-      "size": 156
-    },
-    {
       "file": "singbox/categories/cmb/cmb.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
       "sha256": "3ba0d515d105e3861cd6f9ff25ea5743e3fa1f6a2babd96a889160b321799b32",
       "size": 980
-    },
-    {
-      "file": "singbox/categories/copilot/copilot.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "cb791479c778a22c40f0d6e16e1ea2d0a42934d79871150f35d602d8c3965730",
-      "size": 1503
     },
     {
       "file": "singbox/categories/ctrip/ctrip.json",
@@ -10864,14 +8816,6 @@
       "scope": "singbox",
       "sha256": "839a5dc050a31cf15618026c1f5d80dd186c978bf81b284fb2318f502449d2d3",
       "size": 247
-    },
-    {
-      "file": "singbox/categories/discord/discord.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "c738b2498300ef902243a700f616ff95a7d1678a9f7cbbab8b0069baa3f97aa6",
-      "size": 846
     },
     {
       "file": "singbox/categories/disney/disney.json",
@@ -10970,14 +8914,6 @@
       "size": 471
     },
     {
-      "file": "singbox/categories/gemini/gemini.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "b016f11a371199e7b76171b71f34f6838cb4685478df3085745f6e32deacd6f2",
-      "size": 355
-    },
-    {
       "file": "singbox/categories/github/github.json",
       "kind": "client_rules",
       "rule_count": 0,
@@ -11048,22 +8984,6 @@
       "scope": "singbox",
       "sha256": "32c08c36fd6ff9103218e19a0a257c1e3e9635f628b550dc8ad26aa6a6e6104c",
       "size": 487
-    },
-    {
-      "file": "singbox/categories/honorofkings_cn/honorofkings_cn.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "6be0811ed9cf0071b81cd8498b1d95b40c2531e06ca9b8c88fc8d4573d58df78",
-      "size": 103
-    },
-    {
-      "file": "singbox/categories/honorofkings_global/honorofkings_global.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "da91bf44023f2ad5e42a38cf8cc5c879698b118cdd3d5d7d0ebd0d2aa962dd88",
-      "size": 141
     },
     {
       "file": "singbox/categories/hulu/hulu.json",
@@ -11202,22 +9122,6 @@
       "size": 251
     },
     {
-      "file": "singbox/categories/neteasemail/neteasemail.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "b26ebbf190f1e8ca6070ba0e679479e3f8505483dd2bf8b40c2a8a770b13b807",
-      "size": 154
-    },
-    {
-      "file": "singbox/categories/netflix/netflix.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "371724ae3719918abf9d9422f8342b8bce97325552fb72c6ab0ef1805413707c",
-      "size": 956
-    },
-    {
       "file": "singbox/categories/nintendo/nintendo.json",
       "kind": "client_rules",
       "rule_count": 0,
@@ -11242,14 +9146,6 @@
       "size": 142
     },
     {
-      "file": "singbox/categories/openai/openai.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "52a01ce167f8b6686eb85c5ecf1f5129c1f8da437016312949956dd6412818b5",
-      "size": 1058
-    },
-    {
       "file": "singbox/categories/oppo/oppo.json",
       "kind": "client_rules",
       "rule_count": 0,
@@ -11270,8 +9166,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "2bf27296e93416e9fb4c8ae72fa4fb9241ee342aeec4505f331fae3c7bfda285",
-      "size": 3105130
+      "sha256": "733acf84d26e15b879f354a267a4cce33d27c9e4e35d00e829415e2d7c832c1a",
+      "size": 3098201
     },
     {
       "file": "singbox/categories/paypal/paypal.json",
@@ -11386,14 +9282,6 @@
       "size": 281
     },
     {
-      "file": "singbox/categories/siri/siri.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "bce0fc845a2dbbc393478621bb6b6334af30fc6902d65bd66175cbcdc6adc4fd",
-      "size": 110
-    },
-    {
       "file": "singbox/categories/slack/slack.json",
       "kind": "client_rules",
       "rule_count": 0,
@@ -11456,14 +9344,6 @@
       "scope": "singbox",
       "sha256": "6a50424f05306bd4cd98db2548be32ad7babf6735749deaef6a52c400e3a12cf",
       "size": 10740
-    },
-    {
-      "file": "singbox/categories/telegram/telegram.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "e465341c9a2b7b3b7b5aa08bfd28469ab9e75e76fc093d8652a100729fee4dff",
-      "size": 641
     },
     {
       "file": "singbox/categories/tongcheng/tongcheng.json",
@@ -11546,14 +9426,6 @@
       "size": 384
     },
     {
-      "file": "singbox/categories/xbox/xbox.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "f8e752082af14540006a83b7bb15bddd1b5c88bf029785b7b2cacb56a30eda9c",
-      "size": 1193
-    },
-    {
       "file": "singbox/categories/xiaohongshu/xiaohongshu.json",
       "kind": "client_rules",
       "rule_count": 0,
@@ -11598,8 +9470,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "ccb4ff290dceb92a0ae62140cb87d4bb12af95868d41e11d4cec1c9b30fbdc10",
-      "size": 2588410
+      "sha256": "f2a2c252bc0801c35fbf4f1056676c0621c76767e9e6a22a98c5758bcb8db3d0",
+      "size": 2593055
     },
     {
       "file": "singbox/cloudflare/cloudflare.json",
@@ -11624,22 +9496,6 @@
       "scope": "singbox",
       "sha256": "8a5bf410a8e6d3c8cf71918cddec42cee6fdf5a11906c17ccedf20a749c56170",
       "size": 175
-    },
-    {
-      "file": "singbox/deepseek/deepseek/deepseek.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "dc0f0476dd3b6378925d0518d5f7edfdc3a3d394ed28d45c385293b1b5a1b908",
-      "size": 132
-    },
-    {
-      "file": "singbox/deepseek/deepseek.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "c2ed149a0fd933754afb25f7c811afce439410f05e33797d20e165eb524fc5bd",
-      "size": 132
     },
     {
       "file": "singbox/dewu/dewu/dewu.json",
@@ -11686,8 +9542,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "66bcd1829f3a5a71991f02785f2d5e5cabee35548ed243edd31242e1ea78889d",
-      "size": 33057
+      "sha256": "6050b33f256f9e3b93d6b1ddbf2705fe3ff7ae6eaa190cd8c7d3d520885c414c",
+      "size": 32873
     },
     {
       "file": "singbox/google/googlecloud/googlecloud.json",
@@ -11698,52 +9554,12 @@
       "size": 250
     },
     {
-      "file": "singbox/google/googledrive/googledrive.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "b9ec576bd24cfdbd2b2912a0247d222e043b7898ebbe0151951f1916e6991633",
-      "size": 196
-    },
-    {
       "file": "singbox/google/googlefcm/googlefcm.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
       "sha256": "44b2ab01b2f1e2b5b9d2870fdcbd74a950b3846910fc1b5198f13f384d953422",
       "size": 505
-    },
-    {
-      "file": "singbox/google/youtube/youtube.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "a8b10fa5d6a6d9f699f92855b5a555f25766432447eaa8cb98e86f212ae3f53c",
-      "size": 4297
-    },
-    {
-      "file": "singbox/google/youtubemusic/youtubemusic.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "f61497395c2e42fd47cb8984679f4f98be4d8a76eabc207a0a2dae14eca64019",
-      "size": 110
-    },
-    {
-      "file": "singbox/groq/groq/groq.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "8ac7f7c5656b493690d65176e01f050ea7cbc0f5215f64fad736dac3be72524a",
-      "size": 101
-    },
-    {
-      "file": "singbox/groq/groq.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "8ac7f7c5656b493690d65176e01f050ea7cbc0f5215f64fad736dac3be72524a",
-      "size": 101
     },
     {
       "file": "singbox/hoyoverse/hoyoverse.json",
@@ -11762,22 +9578,6 @@
       "size": 10971
     },
     {
-      "file": "singbox/huggingface/huggingface/huggingface.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "98808522585ab08934f264cfcd8da5a0df681b840e912cc24567650e0c5cbca1",
-      "size": 144
-    },
-    {
-      "file": "singbox/huggingface/huggingface.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "87a5fdd83232a1851bc616fe534c3509b39a29e04d4f5adfa0e6bbe735be8b6e",
-      "size": 144
-    },
-    {
       "file": "singbox/meta/facebook/facebook.json",
       "kind": "client_rules",
       "rule_count": 0,
@@ -11792,14 +9592,6 @@
       "scope": "singbox",
       "sha256": "6dfc1a315a5d7c5bb1d6e0c838253c54a8e01552868de1e3cb3b337493f4633d",
       "size": 4439
-    },
-    {
-      "file": "singbox/meta/messenger/messenger.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "663b037d469cbc77fd0c87baa92b221b4a172d87a4b3ae9106868a05f4052e9a",
-      "size": 171
     },
     {
       "file": "singbox/meta/meta.json",
@@ -11826,52 +9618,20 @@
       "size": 1288
     },
     {
-      "file": "singbox/microsoft/azure/azure.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "990071dffbfa931e482efb2eaa64c0955aea8dc8396f8a37312303e8907a2285",
-      "size": 4249
-    },
-    {
       "file": "singbox/microsoft/microsoft.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "c409d63d021df98a2427cd5c39029a8b45e692b9b3d9164d52391b77e32fda19",
-      "size": 29187
-    },
-    {
-      "file": "singbox/microsoft/onedrive/onedrive.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "16271543c5b999ba8c94065dfbbd3ba3fdaff685ead50ee599b8fd469e527898",
-      "size": 461
-    },
-    {
-      "file": "singbox/microsoft/teams/teams.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "cf92bddec22af302fe170ec2710da48e43cdc91c96253732fd777f3fdc5eb7ea",
-      "size": 211
+      "sha256": "23ef3fea4d8caa8c8441a5a531e56b875664a125da99aa804ffd738352a2d3a9",
+      "size": 28939
     },
     {
       "file": "singbox/netease/netease.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "ae240ce3e6a36b898e895747b2a0d779f048570caa26a3f6b520af0a97ef65f3",
-      "size": 2647
-    },
-    {
-      "file": "singbox/netease/neteasemusic/neteasemusic.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "6b13990ebd35a7e07690b6efd58f16e5bbee238063178689310ce1cded1d0a08",
-      "size": 362
+      "sha256": "191d0859d5aa1f9f9f259f33b6b6e256f395aba87f9cc1bec32c2e057060f08a",
+      "size": 2606
     },
     {
       "file": "singbox/netease/youdao/youdao.json",
@@ -11896,54 +9656,6 @@
       "scope": "singbox",
       "sha256": "4a6e83709fa39ec5ecf4c6f20b04841601abb3a8fb92a0fa1661ef387af26407",
       "size": 410
-    },
-    {
-      "file": "singbox/perplexity/perplexity/perplexity.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "c642832286f35cbd6e214264d8514aba7b6c2dde7b9ae7270d3ca20b57cf38cf",
-      "size": 186
-    },
-    {
-      "file": "singbox/perplexity/perplexity.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "8631823a1b22b72988f3536936f0b8c30799071084b0149a82bb66c84b8c8ed6",
-      "size": 186
-    },
-    {
-      "file": "singbox/roblox/roblox/roblox.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "7c1efe39d61bb981ede0898c97ce918b2030a5a223601cef9f858a1d5e1c492e",
-      "size": 1188
-    },
-    {
-      "file": "singbox/roblox/roblox.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "851df4972e11e814c5fac75eaca89ddb3ae8b5f52a9ec417697ebbd2deac0de3",
-      "size": 1188
-    },
-    {
-      "file": "singbox/signal/signal/signal.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "923fdfd3c97eaa419cc28146d93339ebc93101048610597a539c14236fdc0201",
-      "size": 273
-    },
-    {
-      "file": "singbox/signal/signal.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "9f7d08caaf018d35022e86bac8f64cfa3c07648f69fa7ae137f0ee887908d9a8",
-      "size": 273
     },
     {
       "file": "singbox/snap/snap.json",
@@ -11982,16 +9694,16 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "8fb3e44adc8328c9add9c3cdf9b923989a3de730c47a04f608f1657db822562f",
-      "size": 19598
+      "sha256": "5739b03453a3512dc48d1fdfab4b45115d79b73da6a45036bfaca40530325744",
+      "size": 21236
     },
     {
       "file": "singbox/tencent/tencentcloud/tencentcloud.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "30a72b4a74d5c40af2ff8a93aa092709876916c49780371a34a51f71777ef0b4",
-      "size": 110
+      "sha256": "ac781f4eb2747c973be9882980dc640855a33a70ae8978c04097fd8ef7048e47",
+      "size": 2877
     },
     {
       "file": "singbox/tencent/tencentmeeting/tencentmeeting.json",
@@ -12000,22 +9712,6 @@
       "scope": "singbox",
       "sha256": "0d022cc07c90197b4c80bd464fbdad2255a9343b145701a5e97e342f82f604bb",
       "size": 185
-    },
-    {
-      "file": "singbox/tencent/tencentvideo/tencentvideo.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "641db712dbe305179a959ddc07d733252f2f86c88646709acb3b07cfbcc30dbe",
-      "size": 713
-    },
-    {
-      "file": "singbox/tencent/wechat/wechat.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
-      "sha256": "bef5df11f6081283a996fcba7cb50c9aea4c3c9568f91d8b2f4e9930c2af45ad",
-      "size": 815
     },
     {
       "file": "singbox/tencent/wecom/wecom.json",
@@ -12132,26 +9828,18 @@
     {
       "file": "surge/alibaba/1688/1688.list",
       "kind": "client_rules",
-      "rule_count": 3,
+      "rule_count": 2,
       "scope": "surge",
-      "sha256": "f277a33ba0d42adb8e9f3c25205164706ce0f1d381ab8594cbda6d8c98e15b12",
-      "size": 78
+      "sha256": "070c60ab074ac79fd288a4bf1e83f297696792be169a2a5442b74223c0154542",
+      "size": 50
     },
     {
       "file": "surge/alibaba/alibaba.list",
       "kind": "client_rules",
-      "rule_count": 573,
+      "rule_count": 556,
       "scope": "surge",
-      "sha256": "09c457085bdf615b08c9f3d0b88b643a77222dff8b468dfae3468eee37adea9e",
-      "size": 16412
-    },
-    {
-      "file": "surge/alibaba/alibabacloud/alibabacloud.list",
-      "kind": "client_rules",
-      "rule_count": 12,
-      "scope": "surge",
-      "sha256": "3e192fa2579d1847976b821708b6895261ab96836866db484266761ca40ddc34",
-      "size": 410
+      "sha256": "701cbbb38fa2453a8b024ae77013c3d14e62dc811351c6fa24bc1f846af5be17",
+      "size": 15866
     },
     {
       "file": "surge/alibaba/alipay/alipay.list",
@@ -12172,18 +9860,18 @@
     {
       "file": "surge/alibaba/dingding/dingding.list",
       "kind": "client_rules",
-      "rule_count": 6,
+      "rule_count": 3,
       "scope": "surge",
-      "sha256": "da3195020983902476bc4a931024925a94738198687f0894d59d3e4fe097b99d",
-      "size": 202
+      "sha256": "8b2e06d6ebc687edb9179c28917a8de9d146388a178d21315107c24035690d12",
+      "size": 96
     },
     {
       "file": "surge/alibaba/taobao/taobao.list",
       "kind": "client_rules",
-      "rule_count": 14,
+      "rule_count": 1,
       "scope": "surge",
-      "sha256": "fb452a15240a76a0c2d826b1d4b95930d7714f110c889183a80c7f46e42da589",
-      "size": 442
+      "sha256": "996855b2169576c646b74dc117f2f1f029c01721d28e0afb1a16acb3558ae794",
+      "size": 30
     },
     {
       "file": "surge/alibaba/tmall/tmall.list",
@@ -12228,42 +9916,10 @@
     {
       "file": "surge/apple/apple.list",
       "kind": "client_rules",
-      "rule_count": 2011,
+      "rule_count": 2000,
       "scope": "surge",
-      "sha256": "9c93345712c1a9bbddfcb2235f18e771fd544e761b52a175b275eeb61a24aefc",
-      "size": 65804
-    },
-    {
-      "file": "surge/apple/appledev/appledev.list",
-      "kind": "client_rules",
-      "rule_count": 38,
-      "scope": "surge",
-      "sha256": "880ef2af533f4de69013bfcbf0d69c2a9635f1ad051fe5ef692448f6addf25cd",
-      "size": 1251
-    },
-    {
-      "file": "surge/apple/applemedia/applemedia.list",
-      "kind": "client_rules",
-      "rule_count": 52,
-      "scope": "surge",
-      "sha256": "5ac47d8098b7481255a8c358680fbcdb93c4b6713b2c2bdffa1052b282141f31",
-      "size": 1606
-    },
-    {
-      "file": "surge/apple/applemusic/applemusic.list",
-      "kind": "client_rules",
-      "rule_count": 9,
-      "scope": "surge",
-      "sha256": "6c9ee0134d96218df1a7e5137038471c239e347e1c0c2e0a83453579b4f7f2dd",
-      "size": 327
-    },
-    {
-      "file": "surge/apple/applenews/applenews.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "surge",
-      "sha256": "06940ffc98875135804817fe403bbc41bccbcb63c5addc1d38878fe11bba2bb6",
-      "size": 80
+      "sha256": "d34b44154c9aad6ae33f4e4a4ca3f4fb89e831b1d0553ee4607543809577c500",
+      "size": 65439
     },
     {
       "file": "surge/apple/appletv/appletv.list",
@@ -12272,38 +9928,6 @@
       "scope": "surge",
       "sha256": "77616b096395fbee12c0d51e6cb284dfc6accc40a675e68c6cfdecb0f6622738",
       "size": 252
-    },
-    {
-      "file": "surge/apple/appstore/appstore.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "surge",
-      "sha256": "3231742b074ab119a0bbe6dfdb4968e9cac336ddda212be7167394353e205733",
-      "size": 60
-    },
-    {
-      "file": "surge/apple/findmy/findmy.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "surge",
-      "sha256": "12564d30212ec652337537e02d8e1e5adb05a2be30625cb992875ea393d01ace",
-      "size": 104
-    },
-    {
-      "file": "surge/apple/icloud/icloud.list",
-      "kind": "client_rules",
-      "rule_count": 60,
-      "scope": "surge",
-      "sha256": "f871ca7b21957200391f6fcf630a3e4397dd688e8c406bf63c8cbdce0a57a2af",
-      "size": 1663
-    },
-    {
-      "file": "surge/apple/testflight/testflight.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "surge",
-      "sha256": "aff0ff78cf45fee1ffaaaeef90fc3f12e83df3210cc9616c361073abb56c5481",
-      "size": 64
     },
     {
       "file": "surge/atlassian/atlassian.list",
@@ -12324,10 +9948,10 @@
     {
       "file": "surge/baidu/baidu.list",
       "kind": "client_rules",
-      "rule_count": 285,
+      "rule_count": 2,
       "scope": "surge",
-      "sha256": "794421a20cfdf3bf0e8063add07aeb339b784f4f14586998a805d0a3b9175665",
-      "size": 7929
+      "sha256": "88bc62517ed3c058d30f3d0d92d818a9c4d614b0c8d02a9220f1614f3c25b271",
+      "size": 64
     },
     {
       "file": "surge/baidu/baidunetdisk/baidunetdisk.list",
@@ -12336,14 +9960,6 @@
       "scope": "surge",
       "sha256": "88bc62517ed3c058d30f3d0d92d818a9c4d614b0c8d02a9220f1614f3c25b271",
       "size": 64
-    },
-    {
-      "file": "surge/baidu/baidutieba/baidutieba.list",
-      "kind": "client_rules",
-      "rule_count": 32,
-      "scope": "surge",
-      "sha256": "8fd60b9ac90e8f28a5e529aa6bdc4630ad98b77d668e00692b649e20c173d8c2",
-      "size": 1042
     },
     {
       "file": "surge/bluesky/bluesky/bluesky.list",
@@ -12380,10 +9996,10 @@
     {
       "file": "surge/bytedance/bytedance.list",
       "kind": "client_rules",
-      "rule_count": 1092,
+      "rule_count": 1081,
       "scope": "surge",
-      "sha256": "cda72480c052301a858c885784ac18d3f8c5f2a8c02401ae60de1637db10a378",
-      "size": 31820
+      "sha256": "20465ed9d7b1961cfd1869bbabf1d9d143a2a9a6202bd29d302396a87fc48135",
+      "size": 31436
     },
     {
       "file": "surge/bytedance/doubao/doubao.list",
@@ -12392,30 +10008,6 @@
       "scope": "surge",
       "sha256": "2ddcdb67d2b9bf06ee5d6c390f8a5092516c4cd7c4ee4ce257751606a55c9522",
       "size": 133
-    },
-    {
-      "file": "surge/bytedance/douyin/douyin.list",
-      "kind": "client_rules",
-      "rule_count": 13,
-      "scope": "surge",
-      "sha256": "64cb96507f9faea32b1517fa1007e8bd09225ee39eafdff0b89235a841344f3b",
-      "size": 378
-    },
-    {
-      "file": "surge/bytedance/feishu/feishu.list",
-      "kind": "client_rules",
-      "rule_count": 43,
-      "scope": "surge",
-      "sha256": "e795720343bc19d960e581e10307930a420fc77427259fb85a2ea77e7ff91ae9",
-      "size": 1269
-    },
-    {
-      "file": "surge/bytedance/tiktok/tiktok.list",
-      "kind": "client_rules",
-      "rule_count": 29,
-      "scope": "surge",
-      "sha256": "fca60f34ec7e85927b692358832431a444e065ec0ed8a9b7a7dd98f4fb872168",
-      "size": 856
     },
     {
       "file": "surge/canva/canva/canva.list",
@@ -12554,14 +10146,6 @@
       "size": 324
     },
     {
-      "file": "surge/categories/bing/bing.list",
-      "kind": "client_rules",
-      "rule_count": 9,
-      "scope": "surge",
-      "sha256": "66091e0c24edf3f3b5451a15f02e193b6f55d33fce10ee91f8f15c1f14069dd7",
-      "size": 262
-    },
-    {
       "file": "surge/categories/boc/boc.list",
       "kind": "client_rules",
       "rule_count": 22,
@@ -12626,28 +10210,12 @@
       "size": 928
     },
     {
-      "file": "surge/categories/claude/claude.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "surge",
-      "sha256": "45a0dd38f5fd0d30335f35f2a5b49cd656f9df82000c7b8625386adc002fafac",
-      "size": 84
-    },
-    {
       "file": "surge/categories/cmb/cmb.list",
       "kind": "client_rules",
       "rule_count": 38,
       "scope": "surge",
       "sha256": "ede46d36497f83495031e72e5d57a6ead66cf4d73214c693a38673df5927eb69",
       "size": 1013
-    },
-    {
-      "file": "surge/categories/copilot/copilot.list",
-      "kind": "client_rules",
-      "rule_count": 45,
-      "scope": "surge",
-      "sha256": "f5c0464dea1630e5f85affa5fc3ce6d7189fceb8c5db8a51c0894dafd7a1fa87",
-      "size": 1557
     },
     {
       "file": "surge/categories/ctrip/ctrip.list",
@@ -12680,14 +10248,6 @@
       "scope": "surge",
       "sha256": "2249f4d9d7c087a734121fecc705b64d2436f16c60c51b9f4749b2660d3f58d2",
       "size": 184
-    },
-    {
-      "file": "surge/categories/discord/discord.list",
-      "kind": "client_rules",
-      "rule_count": 28,
-      "scope": "surge",
-      "sha256": "38bc7822f6b297008c3b396bc4ef45c771e4fdcb1e4616e5d2d3309dd235c241",
-      "size": 849
     },
     {
       "file": "surge/categories/disney/disney.list",
@@ -12786,14 +10346,6 @@
       "size": 435
     },
     {
-      "file": "surge/categories/gemini/gemini.list",
-      "kind": "client_rules",
-      "rule_count": 9,
-      "scope": "surge",
-      "sha256": "bea919970470082d46f185ce1cc512e77226fc8cf13429206adbc8f8cb21264f",
-      "size": 301
-    },
-    {
       "file": "surge/categories/github/github.list",
       "kind": "client_rules",
       "rule_count": 29,
@@ -12864,22 +10416,6 @@
       "scope": "surge",
       "sha256": "e34c85ffe825cccb7b5a705a1d0a735d8084cd5c61bdc09d8b355c64655238a7",
       "size": 457
-    },
-    {
-      "file": "surge/categories/honorofkings_cn/honorofkings_cn.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "surge",
-      "sha256": "b80657e4c5a31d353fc271092be5bf6a6c8d2a8b7b74f070d3e1eea0e2937889",
-      "size": 25
-    },
-    {
-      "file": "surge/categories/honorofkings_global/honorofkings_global.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "surge",
-      "sha256": "bbaf070767dce5b6bf89a3efadf1d86facd56f3bc68c9e719f1b0ef6d77dea93",
-      "size": 66
     },
     {
       "file": "surge/categories/hulu/hulu.list",
@@ -13018,22 +10554,6 @@
       "size": 188
     },
     {
-      "file": "surge/categories/neteasemail/neteasemail.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "surge",
-      "sha256": "50f04d42088292bfa82ee7ae51adb5068f8c9d9c7fb370489a347364cf66fbdb",
-      "size": 82
-    },
-    {
-      "file": "surge/categories/netflix/netflix.list",
-      "kind": "client_rules",
-      "rule_count": 31,
-      "scope": "surge",
-      "sha256": "9b6b8c47788a054f0b4fe7a77698c1a2c690095e0edace493683875be054651f",
-      "size": 968
-    },
-    {
       "file": "surge/categories/nintendo/nintendo.list",
       "kind": "client_rules",
       "rule_count": 126,
@@ -13058,14 +10578,6 @@
       "size": 70
     },
     {
-      "file": "surge/categories/openai/openai.list",
-      "kind": "client_rules",
-      "rule_count": 31,
-      "scope": "surge",
-      "sha256": "c31640abb035119d7b50bb3ccd9f7873bd84b87529daf9a5bda2196b2af3196f",
-      "size": 1070
-    },
-    {
       "file": "surge/categories/oppo/oppo.list",
       "kind": "client_rules",
       "rule_count": 56,
@@ -13084,10 +10596,10 @@
     {
       "file": "surge/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128437,
+      "rule_count": 128189,
       "scope": "surge",
-      "sha256": "836b83ab93b49f3bae4ed119cdcf2708447a274559d49b9330635d7a695d419e",
-      "size": 3476139
+      "sha256": "5680c18b693fb5ccf9ca1e0f322157c7b6e1ad9ecc4f9a836c1713083d2e8902",
+      "size": 3467850
     },
     {
       "file": "surge/categories/paypal/paypal.list",
@@ -13202,14 +10714,6 @@
       "size": 224
     },
     {
-      "file": "surge/categories/siri/siri.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "surge",
-      "sha256": "3a344b11ee89c28b57a98a0ff77c06d14d29f962f5d97b55da08fe60d44eb012",
-      "size": 32
-    },
-    {
       "file": "surge/categories/slack/slack.list",
       "kind": "client_rules",
       "rule_count": 11,
@@ -13272,14 +10776,6 @@
       "scope": "surge",
       "sha256": "2cbfc9053f8cc29dbd4ca88f557e860174e7dd9757c61a3561adbfddd944f02f",
       "size": 9207
-    },
-    {
-      "file": "surge/categories/telegram/telegram.list",
-      "kind": "client_rules",
-      "rule_count": 24,
-      "scope": "surge",
-      "sha256": "465dd90e816d4965318a69520dfbcfc525a4304ef9f94c76aa39ba3b28f2fac8",
-      "size": 632
     },
     {
       "file": "surge/categories/tongcheng/tongcheng.list",
@@ -13362,14 +10858,6 @@
       "size": 339
     },
     {
-      "file": "surge/categories/xbox/xbox.list",
-      "kind": "client_rules",
-      "rule_count": 42,
-      "scope": "surge",
-      "sha256": "1d7b9783d705e8220d20c233e9a8e5033cf1735c10cfe9daca26dabbb888c86a",
-      "size": 1238
-    },
-    {
       "file": "surge/categories/xiaohongshu/xiaohongshu.list",
       "kind": "client_rules",
       "rule_count": 4,
@@ -13412,10 +10900,10 @@
     {
       "file": "surge/china/china.list",
       "kind": "client_rules",
-      "rule_count": 109393,
+      "rule_count": 109584,
       "scope": "surge",
-      "sha256": "d9ba19a67e74e6cff98c4aa91519285563ef8ed77203e21686a5a23ade8fbf64",
-      "size": 2916519
+      "sha256": "1513c860af70aceb8191cd24f7aeca98f6e2e906045051cbf6a34333f80692a6",
+      "size": 2921737
     },
     {
       "file": "surge/cloudflare/cloudflare.list",
@@ -13440,22 +10928,6 @@
       "scope": "surge",
       "sha256": "cf6d3b7d5e7676c85bdc5a2ac0c8df34e27e99ca6c0276e06791b0aa5969ca3e",
       "size": 106
-    },
-    {
-      "file": "surge/deepseek/deepseek/deepseek.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "surge",
-      "sha256": "8cb505121e51b125ba96a1810880f2a1e9a08fb16e10a532b425160b1592fc75",
-      "size": 57
-    },
-    {
-      "file": "surge/deepseek/deepseek.list",
-      "kind": "client_rules",
-      "rule_count": 2,
-      "scope": "surge",
-      "sha256": "b2f3915a8bbd3438f363af5082248801e41bb6b28503eddce4605593159e5eb1",
-      "size": 57
     },
     {
       "file": "surge/dewu/dewu/dewu.list",
@@ -13500,10 +10972,10 @@
     {
       "file": "surge/google/google.list",
       "kind": "client_rules",
-      "rule_count": 1220,
+      "rule_count": 1214,
       "scope": "surge",
-      "sha256": "2917007f8f45a3a4b8fdeb64f2d0823fbd7b07301a125b6754096bad0bbc0714",
-      "size": 35796
+      "sha256": "58f0718ce3e04b2dd71b5981feaa8d9ddbaac7ff27d7514138382d1f1303ae2f",
+      "size": 35594
     },
     {
       "file": "surge/google/googlecloud/googlecloud.list",
@@ -13514,52 +10986,12 @@
       "size": 184
     },
     {
-      "file": "surge/google/googledrive/googledrive.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "surge",
-      "sha256": "84a008f97853fdb3a0d1032060c85107d841c9c002f0a1d4e930d40663e21785",
-      "size": 127
-    },
-    {
       "file": "surge/google/googlefcm/googlefcm.list",
       "kind": "client_rules",
       "rule_count": 13,
       "scope": "surge",
       "sha256": "d5416f51714c2a6e111c090136eaf04f90a352fdb549125dfefd63fa89259c85",
       "size": 463
-    },
-    {
-      "file": "surge/google/youtube/youtube.list",
-      "kind": "client_rules",
-      "rule_count": 175,
-      "scope": "surge",
-      "sha256": "8ed912f62e8595ec7dc2dde6b6f9a147cfe50eae7efb446199eaedf47b1b3afd",
-      "size": 4741
-    },
-    {
-      "file": "surge/google/youtubemusic/youtubemusic.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "surge",
-      "sha256": "a60e91405db5cb168ef66f1e3ba655d8d34ee131fab60d8098c08bd61907037c",
-      "size": 32
-    },
-    {
-      "file": "surge/groq/groq/groq.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "surge",
-      "sha256": "c25618d6e673762890944bbccf594711322787bac1820a38e340f48b81fe0c5c",
-      "size": 23
-    },
-    {
-      "file": "surge/groq/groq.list",
-      "kind": "client_rules",
-      "rule_count": 1,
-      "scope": "surge",
-      "sha256": "c25618d6e673762890944bbccf594711322787bac1820a38e340f48b81fe0c5c",
-      "size": 23
     },
     {
       "file": "surge/hoyoverse/hoyoverse.list",
@@ -13578,22 +11010,6 @@
       "size": 12096
     },
     {
-      "file": "surge/huggingface/huggingface/huggingface.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "surge",
-      "sha256": "93ac108c376e42fab6faf0a6b436df1c57a3dfebfb09543c973709062df02bb5",
-      "size": 72
-    },
-    {
-      "file": "surge/huggingface/huggingface.list",
-      "kind": "client_rules",
-      "rule_count": 3,
-      "scope": "surge",
-      "sha256": "1831eaa5d3ab9c3e4fc65c87464e461fac3d597f012b256bbae1d28ea7675553",
-      "size": 72
-    },
-    {
       "file": "surge/meta/facebook/facebook.list",
       "kind": "client_rules",
       "rule_count": 1363,
@@ -13608,14 +11024,6 @@
       "scope": "surge",
       "sha256": "7b2b7eee3d4c08cc3e4218e10f837f3277d3432c057718892a735ce77565d947",
       "size": 4781
-    },
-    {
-      "file": "surge/meta/messenger/messenger.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "surge",
-      "sha256": "09a3b2dc0a2426405bcd2803dfcaf5d32994e5c78967de6f89f16386cc298f45",
-      "size": 102
     },
     {
       "file": "surge/meta/meta.list",
@@ -13642,52 +11050,20 @@
       "size": 1177
     },
     {
-      "file": "surge/microsoft/azure/azure.list",
-      "kind": "client_rules",
-      "rule_count": 149,
-      "scope": "surge",
-      "sha256": "07bf1de2f7242099aff9e090775cbb8718465f42fa329b85930d71688fba0cd7",
-      "size": 4615
-    },
-    {
       "file": "surge/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 952,
+      "rule_count": 944,
       "scope": "surge",
-      "sha256": "45dc75e23ad72bec20c7d29892cf49474645f9477add8d99b39b7f6c676855a3",
-      "size": 31525
-    },
-    {
-      "file": "surge/microsoft/onedrive/onedrive.list",
-      "kind": "client_rules",
-      "rule_count": 13,
-      "scope": "surge",
-      "sha256": "e642c6e93971b09f83dfc6ee2226e2e07f8699cba5a8fb25c95e1550f0d84e8d",
-      "size": 419
-    },
-    {
-      "file": "surge/microsoft/teams/teams.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "surge",
-      "sha256": "2d809abb0f51b6a37b362078c2a748eb47fb34c3a49582ce9594abb15c4597c2",
-      "size": 142
+      "sha256": "8a110f9283b3b96bbd8a0d5a69db40116b17af0590dcdf26d6a6e7d46d8d7fdb",
+      "size": 31253
     },
     {
       "file": "surge/netease/netease.list",
       "kind": "client_rules",
-      "rule_count": 97,
+      "rule_count": 96,
       "scope": "surge",
-      "sha256": "48b6162019c4dff1c228e66ad46735796fa31e6e1aa65630609fdd494d7c312f",
-      "size": 2689
-    },
-    {
-      "file": "surge/netease/neteasemusic/neteasemusic.list",
-      "kind": "client_rules",
-      "rule_count": 10,
-      "scope": "surge",
-      "sha256": "68cad9f49ceb75c822358a2a150815dc0100a3ceb9511c6feca1d04ff52a0032",
-      "size": 311
+      "sha256": "4b9e27de00514c77cd7b038930010803f868282a7efdffd735c1bb73455432a3",
+      "size": 2645
     },
     {
       "file": "surge/netease/youdao/youdao.list",
@@ -13712,54 +11088,6 @@
       "scope": "surge",
       "sha256": "eee97813d86a0b63a1cb5009a77fe446e02a4bb0b763c0856613aff8272262a6",
       "size": 359
-    },
-    {
-      "file": "surge/perplexity/perplexity/perplexity.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "surge",
-      "sha256": "797ee9906d070a3c0ddb9fefa5395269dd7a16f66975513e43991981112c7604",
-      "size": 117
-    },
-    {
-      "file": "surge/perplexity/perplexity.list",
-      "kind": "client_rules",
-      "rule_count": 4,
-      "scope": "surge",
-      "sha256": "dcee3521182ec81c31813ec34caa756de3c969c7039ab7ae0f60bf6e14c68bdc",
-      "size": 117
-    },
-    {
-      "file": "surge/roblox/roblox/roblox.list",
-      "kind": "client_rules",
-      "rule_count": 47,
-      "scope": "surge",
-      "sha256": "3566a109b9428ac8fafe028bbebe7a1da825fcbc57499fbcc52f7cf03447ef25",
-      "size": 1248
-    },
-    {
-      "file": "surge/roblox/roblox.list",
-      "kind": "client_rules",
-      "rule_count": 47,
-      "scope": "surge",
-      "sha256": "e541341dc495b8a023544d484fbac55c0eceae2ec794f73337c6f4d753ecdbc4",
-      "size": 1248
-    },
-    {
-      "file": "surge/signal/signal/signal.list",
-      "kind": "client_rules",
-      "rule_count": 8,
-      "scope": "surge",
-      "sha256": "d404ebe1a0340d346680483db81f22ccf0a147fe441624d09ca55b1aba1ae2e0",
-      "size": 216
-    },
-    {
-      "file": "surge/signal/signal.list",
-      "kind": "client_rules",
-      "rule_count": 8,
-      "scope": "surge",
-      "sha256": "6735c7557fb210e7a29c69918ea42ddbb39ea7bc995cf8333f0f6c7a5b3c0720",
-      "size": 216
     },
     {
       "file": "surge/snap/snap.list",
@@ -13796,18 +11124,18 @@
     {
       "file": "surge/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 745,
+      "rule_count": 815,
       "scope": "surge",
-      "sha256": "41adfc9ae7c129b017dce9809d6c18babe5735a6c3af4232453862112eec9c81",
-      "size": 21572
+      "sha256": "9c2d54d8ac9c124ebf8f808b8ce3d9e4c5281d1083f1fe7a7c309eda83324877",
+      "size": 22804
     },
     {
       "file": "surge/tencent/tencentcloud/tencentcloud.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 105,
       "scope": "surge",
-      "sha256": "327feaeb8a41e1de71d2f4957fd10a3e5d561f7545e15881ed38c3ef71371d68",
-      "size": 32
+      "sha256": "e2840790020927d91206298d48d2ae637593d187d1456cf4513cc5874d57b8d0",
+      "size": 2462
     },
     {
       "file": "surge/tencent/tencentmeeting/tencentmeeting.list",
@@ -13816,22 +11144,6 @@
       "scope": "surge",
       "sha256": "38e9aa5e60f537aad392eba3234f1d1adbd63bfa6e027b4d35028fb37f9fa861",
       "size": 113
-    },
-    {
-      "file": "surge/tencent/tencentvideo/tencentvideo.list",
-      "kind": "client_rules",
-      "rule_count": 17,
-      "scope": "surge",
-      "sha256": "aa4b8c6a68478d9a449872c99814092a8bc6a2670a451787e1ed479f4bb43ee9",
-      "size": 683
-    },
-    {
-      "file": "surge/tencent/wechat/wechat.list",
-      "kind": "client_rules",
-      "rule_count": 28,
-      "scope": "surge",
-      "sha256": "a459440007cc8da398a7bf7753e841490e2e007bddbff1c39b321ae04dfb405e",
-      "size": 818
     },
     {
       "file": "surge/tencent/wecom/wecom.list",
@@ -13922,7 +11234,7 @@
       "size": 4409
     }
   ],
-  "generated_at": "2026-09-24T00:33:16.136152+00:00",
+  "generated_at": "2026-09-24T03:57:49.350732+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "network_dataset_directories": [
     "asn",
