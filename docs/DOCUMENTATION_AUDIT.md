@@ -47,6 +47,10 @@
 - 规则服务语义索引：`rule/_index.yaml`
 - 客户端最终文件清单：`generated/manifest.json`
 - Network Dataset 清单：`generated/network_manifest.json`
-- 当前图标 SSOT：`assets/icons/v3/release-pointer.json`
+- 当前图标 SSOT：`assets/icons/v4/release-pointer.json`
 - 服务说明页：`docs/services/**/README.md`
 - 全量服务目录：`docs/SERVICE_CATALOG.md`
+
+## 7. Icon V4 重构
+
+当前 Rule Index 262 条记录实现 100% 图标覆盖：92 条精确复用、52 条安全继承、118 条九风格 semantic fallback。缺失身份不使用假品牌 Logo。
