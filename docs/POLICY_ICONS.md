@@ -1,13 +1,12 @@
-# 策略 / 网络类图标 — Current V3
+# 策略 / 网络类图标 — Current V4
 
-策略与网络数据集不使用品牌 Logo，使用 Icon System 3 中显式绑定的 semantic identity。
+策略、网络、数据集不使用品牌 Logo。它们使用 semantic identity；服务缺失品牌图标时则由 V4 九风格 fallback 覆盖。
 
-| 语义 | 示例 |
+| 语义 | 使用原则 |
 |---|---|
-| strategy | direct / proxy / reject / global / select / urltest |
-| network | lan / dns / private / network |
-| dataset | china / geoip / geosite / asn |
+| strategy | 几何 / UI semantic |
+| network | 几何 / UI semantic |
+| dataset | 几何 / UI semantic |
+| service fallback | 九风格 semantic glyph |
 
-准确 URL 与 digest 应从当前 V3 client index 获取，不再使用旧 `assets/icons/png/` Raw 模板。
-
-详见 [ICON_USAGE.md](ICON_USAGE.md)。
+当前解析入口：assets/icons/v4/service-index.json。
