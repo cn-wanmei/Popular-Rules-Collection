@@ -1,7 +1,7 @@
 {
   "schema": "prc_icon_library_v4",
   "version": 4,
-  "release": "2026.09.25-prc-icon-matrix-1",
+  "release": "2026.09.25-prc-icon-matrix-2",
   "updated": "2026-09-25",
   "official_layer": {
     "id": "official",
@@ -9,96 +9,15 @@
     "rule": "仅复用已有可信 brand.* 身份；不把 placeholder 或 generic semantic 图标视为官方品牌"
   },
   "style_layers": [
-    {
-      "id": "lucide",
-      "name": "Lucide",
-      "style": "outline",
-      "license": "ISC",
-      "source": "https://lucide.dev/icons/",
-      "usage": "风格参考层；实际 V4 fallback asset 为本仓库自有 semantic glyph",
-      "reference_library": "Lucide",
-      "reference_license": "ISC"
-    },
-    {
-      "id": "tabler",
-      "name": "Tabler Icons",
-      "style": "outline-filled",
-      "license": "MIT",
-      "source": "https://tabler.io/icons",
-      "usage": "风格参考层；实际 V4 fallback asset 为本仓库自有 semantic glyph",
-      "reference_library": "Tabler Icons",
-      "reference_license": "MIT"
-    },
-    {
-      "id": "phosphor",
-      "name": "Phosphor",
-      "style": "multi-weight",
-      "license": "MIT",
-      "source": "https://phosphoricons.com/",
-      "usage": "风格参考层；实际 V4 fallback asset 为本仓库自有 semantic glyph",
-      "reference_library": "Phosphor",
-      "reference_license": "MIT"
-    },
-    {
-      "id": "material-symbols",
-      "name": "Material Symbols",
-      "style": "outlined-rounded-sharp",
-      "license": "Apache-2.0",
-      "source": "https://fonts.google.com/icons",
-      "usage": "风格参考层；实际 V4 fallback asset 为本仓库自有 semantic glyph",
-      "reference_library": "Material Symbols",
-      "reference_license": "Apache-2.0"
-    },
-    {
-      "id": "fluent",
-      "name": "Fluent UI System Icons",
-      "style": "regular-filled",
-      "license": "MIT",
-      "source": "https://github.com/microsoft/fluentui-system-icons",
-      "usage": "风格参考层；实际 V4 fallback asset 为本仓库自有 semantic glyph",
-      "reference_library": "Fluent UI System Icons",
-      "reference_license": "MIT"
-    },
-    {
-      "id": "heroicons",
-      "name": "Heroicons",
-      "style": "outline-solid",
-      "license": "MIT",
-      "source": "https://heroicons.com/",
-      "usage": "风格参考层；实际 V4 fallback asset 为本仓库自有 semantic glyph",
-      "reference_library": "Heroicons",
-      "reference_license": "MIT"
-    },
-    {
-      "id": "remix",
-      "name": "Remix Icon",
-      "style": "line-fill",
-      "license": "Remix Icon License v1.0",
-      "source": "https://remixicon.com/",
-      "usage": "风格参考层；实际 V4 fallback asset 为本仓库自有 semantic glyph",
-      "reference_library": "Remix Icon",
-      "reference_license": "Remix Icon License v1.0 (effective January 2026)"
-    },
-    {
-      "id": "bootstrap",
-      "name": "Bootstrap Icons",
-      "style": "outline-fill",
-      "license": "MIT",
-      "source": "https://icons.getbootstrap.com/",
-      "usage": "风格参考层；实际 V4 fallback asset 为本仓库自有 semantic glyph",
-      "reference_library": "Bootstrap Icons",
-      "reference_license": "MIT"
-    },
-    {
-      "id": "solar",
-      "name": "Solar Icons",
-      "style": "multi-weight",
-      "license": "MIT (upstream) + CC BY 4.0 for listed third-party elements",
-      "source": "https://solar-icons.com/",
-      "usage": "风格参考层；实际 V4 fallback asset 为本仓库自有 semantic glyph",
-      "reference_library": "Solar Icons",
-      "reference_license": "MIT + CC BY 4.0 third-party elements"
-    }
+    {"id":"lucide","name":"Lucide","style":"refined-outline","license":"ISC","source":"https://lucide.dev/icons/","usage":"本地自有 semantic glyph；强调轻量、留白、圆角和连接节点"},
+    {"id":"tabler","name":"Tabler Icons","style":"precision-outline","license":"MIT","source":"https://tabler.io/icons","usage":"本地自有 semantic glyph；强调网格、细线和高识别度结构"},
+    {"id":"phosphor","name":"Phosphor","style":"bold-geometric","license":"MIT","source":"https://phosphoricons.com/","usage":"本地自有 semantic glyph；强调几何轮廓、实心节点与视觉重量"},
+    {"id":"material-symbols","name":"Material Symbols","style":"rounded-filled","license":"Apache-2.0","source":"https://fonts.google.com/icons","usage":"本地自有 semantic glyph；强调块面、圆角和信息层级"},
+    {"id":"fluent","name":"Fluent UI System Icons","style":"layered-soft","license":"MIT","source":"https://github.com/microsoft/fluentui-system-icons","usage":"本地自有 semantic glyph；强调前后层、柔和圆角和企业 UI 气质"},
+    {"id":"heroicons","name":"Heroicons","style":"shield-outline","license":"MIT","source":"https://heroicons.com/","usage":"本地自有 semantic glyph；强调安全、结构和清晰 outline"},
+    {"id":"remix","name":"Remix Icon","style":"stacked-linefill","license":"Remix Icon License v1.0","source":"https://remixicon.com/","usage":"本地自有 semantic glyph；强调 line/fill 对比与层叠结构"},
+    {"id":"bootstrap","name":"Bootstrap Icons","style":"balanced-outline","license":"MIT","source":"https://icons.getbootstrap.com/","usage":"本地自有 semantic glyph；强调稳定比例、通用 UI 和小尺寸可读性"},
+    {"id":"solar","name":"Solar Icons","style":"radial-accent","license":"MIT + CC BY 4.0 third-party elements","source":"https://solar-icons.com/","usage":"本地自有 semantic glyph；强调中心焦点、轨道和动态能量感"}
   ],
   "coverage": {
     "rule_entries": 262,
@@ -114,7 +33,7 @@
   },
   "local_assets": {
     "license": "CC0-1.0",
-    "note": "本仓库自有 semantic fallback glyph；九种风格仅参考对应开放图标库的设计语言",
+    "note": "九种风格均为本仓库自有 semantic glyph；仅参考对应开放图标库的设计语言，不复制第三方图标源码",
     "generated_by": "PRC Icon Library V4"
   }
 }
