@@ -63,4 +63,4 @@
 
 ## 10. Icon V4 覆盖口径
 
-当前 Rule Index 262 条记录全部拥有 V4 图标解析结果：92 条精确复用、52 条安全继承、118 条九风格 semantic fallback。fallback 只用于视觉覆盖，不代表官方品牌 Logo。
+当前 Rule Index 262 条记录全部拥有 V4 图标解析结果：85 条精确复用、49 条安全继承、128 条九风格 semantic fallback。fallback 只用于视觉覆盖，不代表官方品牌 Logo。
