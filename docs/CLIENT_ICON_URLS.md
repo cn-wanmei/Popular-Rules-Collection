@@ -1,21 +1,19 @@
-# 客户端 Icon URL — Current V3
+# 客户端 Icon URL — Current V4
 
-图标与规则文件解耦。当前生产消费入口是 Icon System 3 当前不可变 Release。
+当前服务图标不是通过旧的 assets/icons/png/{size} 模板猜路径，而是通过 V4 Service Index 精确解析。
 
-## 当前 SSOT
+## 解析链
 
-```text
-assets/icons/v3/release-pointer.json
+assets/icons/v4/release-pointer.json
       ↓
-assets/icons/v3/releases/<version>/
+assets/icons/v4/service-index.json
       ↓
-index/clients/<client>.json
+primary = official | one of nine styles
       ↓
-entry.path + digest
-```
+icon.raw
 
-当前 Release：`2026.09.22-5e0e48ad55c6`
+## V4 Fallback Raw
 
-Raw 模式：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/<version>/<entry.path>`
+https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/<style>/service.svg
 
-不要把 Legacy `assets/icons/png/`、`rendered/` 或旧 V2 页面当作 Current V3 SSOT。
+真实品牌图标继续从 Current V3 client index 的已发布资产解析。
