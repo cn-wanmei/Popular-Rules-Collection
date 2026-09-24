@@ -1,27 +1,34 @@
 # PRC Icon Library V4 — Style Guide
 
-当前体系：9 种主流开放图标设计语言的**本地风格适配层** + 1 个品牌原生 / 官方优先层。公开的 2026 图标生态资料持续将其中多套列为主流集合。
+当前体系：**9 种主流开放图标设计语言的本地风格适配层 + 1 个品牌原生 / 官方优先层**。本次视觉修订重点不是简单换线宽，而是重新建立统一的「规则服务」图形语法：**外框 / 容器 + 服务结构 + 路由节点 + 留白**。
 
 ## 10 种风格
 
-| 层 | 风格 | 视觉方向 | License | 适合场景 |
-|---|---|---|---|---|
-| Official | Brand Native | 保留品牌原生身份 | 按来源 | 品牌服务首选 |
-| 1 | Lucide | 轻量 outline | ISC | 主界面、信息密集目录 |
-| 2 | Tabler | 清晰 outline / filled | MIT | Dashboard、服务目录 |
-| 3 | Phosphor | 多字重 | MIT | 层级、状态、强调 |
-| 4 | Material Symbols | outlined / rounded / sharp | Apache-2.0 | 通用 UI |
-| 5 | Fluent | regular / filled | MIT | 企业化、管理面板 |
-| 6 | Heroicons | outline / solid | MIT | 现代 Web UI |
-| 7 | Remix | line / fill | Remix Icon License v1.0 | 服务 / 状态双态 |
-| 8 | Bootstrap | outline / fill | MIT | 高兼容 UI |
-| 9 | Solar | multi-weight | MIT upstream + CC BY 4.0 for listed third-party elements | 特色主题、强调图形 |
+| 层 | 风格 | 新视觉方向 | 核心识别点 |
+|---|---|---|---|
+| Official | Brand Native | 保留品牌原生身份 | 真实品牌 Logo，不二次仿制 |
+| 1 | Lucide | refined-outline | 大留白、圆角容器、轻量连接节点 |
+| 2 | Tabler | precision-outline | 网格化结构、细线、双层信息 |
+| 3 | Phosphor | bold-geometric | 六边 / 几何容器、粗轮廓、实心节点 |
+| 4 | Material Symbols | rounded-filled | 块面、圆角、强弱层级、双节点 |
+| 5 | Fluent | layered-soft | 前后叠层、柔和圆角、企业 UI 感 |
+| 6 | Heroicons | shield-outline | Shield / 安全边界 / 中心路由节点 |
+| 7 | Remix | stacked-linefill | line + fill、层叠数据块 |
+| 8 | Bootstrap | balanced-outline | 圆形容器、稳定比例、小尺寸清晰 |
+| 9 | Solar | radial-accent | 中心焦点、轨道、放射连接 |
 
-## 核心原则
+## 本次优化解决的问题
 
-真实品牌图标优先保留。九种风格只作为 UI / semantic fallback 视觉层，不把品牌 Logo 仿造成另一套库的 Logo。
+旧 V4 的主要问题是：**每个风格只有一个过于简单的通用图形，虽然完成了 100% 覆盖，但视觉信息量不足，实际观感不如 V3 品牌图标。**
 
-当规则服务没有可信品牌图标时，系统从九种设计语言中确定性选择一个**本仓库自有 semantic glyph**，从而保证 100% 图标覆盖。九种库只作为风格参考，不把第三方原始 SVG 当作本仓库自有资产。
+因此本次不再追求“像某个图标库”，而改为：
+
+1. **保留 V3 品牌图标的优先级**：可信品牌身份仍然直接使用 V3 已发布品牌资产。
+2. **九风格统一设计语言**：每个 fallback 都拥有明确的几何骨架，而不是简单的方框 + 三条线。
+3. **小尺寸优先**：64×64 SVG 在 16 / 20 / 24 / 32 px 下仍保留主轮廓和识别节点。
+4. **禁止假品牌**：fallback 只表达“服务 / 规则 / 路由”的语义，不冒充官方 Logo。
+5. **统一视觉重量**：不同风格可以有不同性格，但都遵循相近的视觉占比、边距和中心重心。
+6. **避免装饰过度**：不加入会干扰规则目录检索的复杂纹理和文字。
 
 ## 当前覆盖
 
@@ -33,10 +40,14 @@ Rule Index：262 条。
 
 ## SSOT
 
-- assets/icons/v4/release-pointer.json
-- assets/icons/v4/manifest.json
-- assets/icons/v4/service-index.json
-- assets/icons/v4/styles/<style>/service.svg
+- `assets/icons/v4/release-pointer.json`
+- `assets/icons/v4/manifest.json`
+- `assets/icons/v4/service-index.json`
+- `assets/icons/v4/styles/<style>/service.svg`
+
+## 资产原则
+
+九种风格均为**本仓库自有 semantic glyph**。Lucide、Tabler、Phosphor、Material Symbols、Fluent、Heroicons、Remix、Bootstrap、Solar 只作为设计语言参考；不把第三方原始 SVG 冒充为本仓库资产。
 
 ## 参考源
 
