@@ -1,5 +1,5 @@
 schema: source_health_status_v1
-generated_at: '2026-09-24T03:51:18.666077Z'
+generated_at: '2026-09-24T04:13:27.718645Z'
 policy: config/health_policy.yaml
 lifecycle_registry: sources/lifecycle.yaml
 sources:
@@ -46,7 +46,7 @@ sources:
     last_success: '2026-09-23T14:01:53.740806+00:00'
     last_attempt: '2026-09-24T03:48:42.024884+00:00'
     failure_count: 2
-    age_hours: 13
+    age_hours: 14
     rules_declared: 1
   loyalsoldier:
     lifecycle: active
