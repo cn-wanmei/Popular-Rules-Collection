@@ -22,6 +22,11 @@ providers:
       appletv: {display_name: Apple TV, status: existing}
       applemusic: {display_name: Apple Music, status: existing}
       icloud: {display_name: iCloud, status: existing}
+      applefirmware: {display_name: "Apple Firmware", status: existing}
+      appleid: {display_name: "Apple ID", status: existing}
+      applemail: {display_name: "Apple Mail", status: existing}
+      icloudprivaterelay: {display_name: "iCloud Private Relay", status: existing}
+      siri: {display_name: Siri, status: existing}
   google:
     display_name: Google
     aggregate: google
@@ -38,6 +43,11 @@ providers:
       googlemaps: {display_name: Google Maps, status: planned}
       googleplay: {display_name: Google Play, status: planned}
       googlephotos: {display_name: Google Photos, status: planned}
+      gemini: {display_name: Gemini, status: existing}
+      google-search: {display_name: "Google Search", status: existing}
+      googleearth: {display_name: "Google Earth", status: existing}
+      googlevoice: {display_name: "Google Voice", status: existing}
+      scholar: {display_name: "Google Scholar", status: existing}
   microsoft:
     display_name: Microsoft
     aggregate: microsoft
@@ -48,6 +58,13 @@ providers:
       office365: {display_name: Microsoft 365, status: planned}
       sharepoint: {display_name: SharePoint, status: planned}
       powerbi: {display_name: Power BI, status: planned}
+      bing: {display_name: Bing, status: existing}
+      copilot: {display_name: "Microsoft Copilot", status: existing}
+      github: {display_name: GitHub, status: existing}
+      linkedin: {display_name: LinkedIn, status: existing}
+      microsoftedge: {display_name: "Microsoft Edge", status: existing}
+      minecraft: {display_name: Minecraft, status: existing}
+      xbox: {display_name: Xbox, status: existing}
   amazon:
     display_name: Amazon
     aggregate: amazon
@@ -57,6 +74,7 @@ providers:
       kindle: {display_name: Kindle, status: planned}
       audible: {display_name: Audible, status: planned}
       aws: {display_name: AWS, status: planned}
+      twitch: {display_name: Twitch, status: existing}
   tencent:
     display_name: Tencent
     aggregate: tencent
@@ -72,6 +90,9 @@ providers:
       tencentdocs: {display_name: Tencent Docs, status: planned}
       wegame: {display_name: WeGame, status: planned}
       qqbrowser: {display_name: QQ Browser, status: planned}
+      honorofkings_cn: {display_name: "王者荣耀（国服）", status: existing}
+      honorofkings_global: {display_name: "Honor of Kings Global", status: existing}
+      wetv: {display_name: WeTV, status: existing}
   alibaba:
     display_name: Alibaba
     aggregate: alibaba
@@ -87,6 +108,10 @@ providers:
       aliexpress: {display_name: AliExpress, status: planned}
       lazada: {display_name: Lazada, status: planned}
       xianyu: {display_name: Xianyu, status: existing}
+      amap: {display_name: AMap, status: existing}
+      eleme: {display_name: Ele.me, status: existing}
+      gaode: {display_name: Gaode, status: existing}
+      youku: {display_name: Youku, status: existing}
   bytedance:
     display_name: ByteDance
     aggregate: bytedance
@@ -121,6 +146,7 @@ providers:
       youdao: {display_name: Youdao, status: planned}
       yanxuan: {display_name: Yanxuan, status: planned}
       lofter: {display_name: LOFTER, status: planned}
+      neteasemail: {display_name: "NetEase Mail", status: existing}
   huawei:
     display_name: Huawei
     aggregate: huawei
@@ -286,6 +312,445 @@ providers:
     aggregate: roblox_aggregate
     services:
       roblox: {display_name: Roblox, status: planned}
+  # Rule-mapping policy: high-confidence ownership uses an explicit parent provider;
+  # uncertain/generic entities use an independent service provider or the special provider.
+  special:
+    display_name: "Special / Generic"
+    aggregate: special
+    services:
+      ai: {display_name: AI, status: existing}
+      aisuite: {display_name: "AI Suite", status: existing}
+      private: {display_name: Private, status: existing}
+      restricted: {display_name: Restricted, status: existing}
+      stun: {display_name: STUN, status: existing}
+  anthropic:
+    display_name: Anthropic
+    aggregate: anthropic_aggregate
+    services:
+      anthropic: {display_name: Anthropic, status: existing}
+  blizzard:
+    display_name: "Blizzard Entertainment"
+    aggregate: blizzard_aggregate
+    services:
+      battlenet: {display_name: Battle.net, status: existing}
+  disney:
+    display_name: Disney
+    aggregate: disney_aggregate
+    services:
+      disney: {display_name: Disney, status: existing}
+      hulu: {display_name: Hulu, status: existing}
+  ibm:
+    display_name: IBM
+    aggregate: ibm_aggregate
+    services:
+      hashicorp: {display_name: HashiCorp, status: existing}
+  salesforce:
+    display_name: Salesforce
+    aggregate: salesforce_aggregate
+    services:
+      heroku: {display_name: Heroku, status: existing}
+      slack: {display_name: Slack, status: existing}
+  ookla:
+    display_name: Ookla
+    aggregate: ookla_aggregate
+    services:
+      speedtest: {display_name: Speedtest, status: existing}
+  wikimedia:
+    display_name: Wikimedia
+    aggregate: wikimedia_aggregate
+    services:
+      wikipedia: {display_name: Wikipedia, status: existing}
+  discord:
+    display_name: Discord
+    aggregate: discord_aggregate
+    services:
+      discord: {display_name: Discord, status: existing}
+  hbo:
+    display_name: HBO
+    aggregate: hbo_aggregate
+    services:
+      hbo: {display_name: HBO, status: existing}
+  huya:
+    display_name: Huya
+    aggregate: huya_aggregate
+    services:
+      huya: {display_name: Huya, status: existing}
+  netflix:
+    display_name: Netflix
+    aggregate: netflix_aggregate
+    services:
+      netflix: {display_name: Netflix, status: existing}
+  docker:
+    display_name: Docker
+    aggregate: docker_aggregate
+    services:
+      docker: {display_name: Docker, status: existing}
+  "12306":
+    display_name: 12306
+    aggregate: 12306_aggregate
+    services:
+      12306: {display_name: 12306, status: existing}
+  abc:
+    display_name: "Agricultural Bank of China"
+    aggregate: abc_aggregate
+    services:
+      abc: {display_name: "Agricultural Bank of China", status: existing}
+  acfun:
+    display_name: AcFun
+    aggregate: acfun_aggregate
+    services:
+      acfun: {display_name: AcFun, status: existing}
+  bahamut:
+    display_name: Bahamut
+    aggregate: bahamut_aggregate
+    services:
+      bahamut: {display_name: Bahamut, status: existing}
+  bbc:
+    display_name: BBC
+    aggregate: bbc_aggregate
+    services:
+      bbc: {display_name: BBC, status: existing}
+  bilibili:
+    display_name: Bilibili
+    aggregate: bilibili_aggregate
+    services:
+      bilibili: {display_name: Bilibili, status: existing}
+  binance:
+    display_name: Binance
+    aggregate: binance_aggregate
+    services:
+      binance: {display_name: Binance, status: existing}
+  boc:
+    display_name: "Bank of China"
+    aggregate: boc_aggregate
+    services:
+      boc: {display_name: "Bank of China", status: existing}
+  bocom:
+    display_name: "Bank of Communications"
+    aggregate: bocom_aggregate
+    services:
+      bocom: {display_name: "Bank of Communications", status: existing}
+  ccb:
+    display_name: "China Construction Bank"
+    aggregate: ccb_aggregate
+    services:
+      ccb: {display_name: "China Construction Bank", status: existing}
+  cctv:
+    display_name: CCTV
+    aggregate: cctv_aggregate
+    services:
+      cctv: {display_name: CCTV, status: existing}
+  ceb:
+    display_name: "China Everbright Bank"
+    aggregate: ceb_aggregate
+    services:
+      ceb: {display_name: "China Everbright Bank", status: existing}
+  chinamobile:
+    display_name: "China Mobile"
+    aggregate: chinamobile_aggregate
+    services:
+      chinamobile: {display_name: "China Mobile", status: existing}
+  chinatelecom:
+    display_name: "China Telecom"
+    aggregate: chinatelecom_aggregate
+    services:
+      chinatelecom: {display_name: "China Telecom", status: existing}
+  chinaunicom:
+    display_name: "China Unicom"
+    aggregate: chinaunicom_aggregate
+    services:
+      chinaunicom: {display_name: "China Unicom", status: existing}
+  cmb:
+    display_name: "China Merchants Bank"
+    aggregate: cmb_aggregate
+    services:
+      cmb: {display_name: "China Merchants Bank", status: existing}
+  ctrip:
+    display_name: Trip.com
+    aggregate: ctrip_aggregate
+    services:
+      ctrip: {display_name: Trip.com, status: existing}
+  didi:
+    display_name: DiDi
+    aggregate: didi_aggregate
+    services:
+      didi: {display_name: DiDi, status: existing}
+  digitalocean:
+    display_name: DigitalOcean
+    aggregate: digitalocean_aggregate
+    services:
+      digitalocean: {display_name: DigitalOcean, status: existing}
+  douyu:
+    display_name: DouYu
+    aggregate: douyu_aggregate
+    services:
+      douyu: {display_name: DouYu, status: existing}
+  dropbox:
+    display_name: Dropbox
+    aggregate: dropbox_aggregate
+    services:
+      dropbox: {display_name: Dropbox, status: existing}
+  ea:
+    display_name: "Electronic Arts"
+    aggregate: ea_aggregate
+    services:
+      ea: {display_name: "Electronic Arts", status: existing}
+  ebay:
+    display_name: eBay
+    aggregate: ebay_aggregate
+    services:
+      ebay: {display_name: eBay, status: existing}
+  emby:
+    display_name: Emby
+    aggregate: emby_aggregate
+    services:
+      emby: {display_name: Emby, status: existing}
+  epic:
+    display_name: "Epic Games"
+    aggregate: epic_aggregate
+    services:
+      epic: {display_name: "Epic Games", status: existing}
+  figma:
+    display_name: Figma
+    aggregate: figma_aggregate
+    services:
+      figma: {display_name: Figma, status: existing}
+  garena:
+    display_name: Garena
+    aggregate: garena_aggregate
+    services:
+      garena: {display_name: Garena, status: existing}
+  gitlab:
+    display_name: GitLab
+    aggregate: gitlab_aggregate
+    services:
+      gitlab: {display_name: GitLab, status: existing}
+  himalaya:
+    display_name: Himalaya
+    aggregate: himalaya_aggregate
+    services:
+      himalaya: {display_name: Himalaya, status: existing}
+  icbc:
+    display_name: "Industrial and Commercial Bank of China"
+    aggregate: icbc_aggregate
+    services:
+      icbc: {display_name: "Industrial and Commercial Bank of China", status: existing}
+  iqiyi:
+    display_name: iQIYI
+    aggregate: iqiyi_aggregate
+    services:
+      iqiyi: {display_name: iQIYI, status: existing}
+  jetbrains:
+    display_name: JetBrains
+    aggregate: jetbrains_aggregate
+    services:
+      jetbrains: {display_name: JetBrains, status: existing}
+  jingdong:
+    display_name: JingDong
+    aggregate: jingdong_aggregate
+    services:
+      jingdong: {display_name: JingDong, status: existing}
+  kakaotalk:
+    display_name: KakaoTalk
+    aggregate: kakaotalk_aggregate
+    services:
+      kakaotalk: {display_name: KakaoTalk, status: existing}
+  kuaishou:
+    display_name: Kuaishou
+    aggregate: kuaishou_aggregate
+    services:
+      kuaishou: {display_name: Kuaishou, status: existing}
+  kugou:
+    display_name: KuGou
+    aggregate: kugou_aggregate
+    services:
+      kugou: {display_name: KuGou, status: existing}
+  kuwo:
+    display_name: Kuwo
+    aggregate: kuwo_aggregate
+    services:
+      kuwo: {display_name: Kuwo, status: existing}
+  letv:
+    display_name: LeTV
+    aggregate: letv_aggregate
+    services:
+      letv: {display_name: LeTV, status: existing}
+  line:
+    display_name: LINE
+    aggregate: line_aggregate
+    services:
+      line: {display_name: LINE, status: existing}
+  meituan:
+    display_name: Meituan
+    aggregate: meituan_aggregate
+    services:
+      meituan: {display_name: Meituan, status: existing}
+  nintendo:
+    display_name: Nintendo
+    aggregate: nintendo_aggregate
+    services:
+      nintendo: {display_name: Nintendo, status: existing}
+  notion:
+    display_name: Notion
+    aggregate: notion_aggregate
+    services:
+      notion: {display_name: Notion, status: existing}
+  okx:
+    display_name: OKX
+    aggregate: okx_aggregate
+    services:
+      okx: {display_name: OKX, status: existing}
+  oppo:
+    display_name: OPPO
+    aggregate: oppo_aggregate
+    services:
+      oppo: {display_name: OPPO, status: existing}
+  oracle:
+    display_name: Oracle
+    aggregate: oracle_aggregate
+    services:
+      oracle: {display_name: Oracle, status: existing}
+  paypal:
+    display_name: PayPal
+    aggregate: paypal_aggregate
+    services:
+      paypal: {display_name: PayPal, status: existing}
+  pinduoduo:
+    display_name: Pinduoduo
+    aggregate: pinduoduo_aggregate
+    services:
+      pinduoduo: {display_name: Pinduoduo, status: existing}
+  pingan:
+    display_name: "Ping An"
+    aggregate: pingan_aggregate
+    services:
+      pingan: {display_name: "Ping An", status: existing}
+  pinterest:
+    display_name: Pinterest
+    aggregate: pinterest_aggregate
+    services:
+      pinterest: {display_name: Pinterest, status: existing}
+  playstation:
+    display_name: PlayStation
+    aggregate: playstation_aggregate
+    services:
+      playstation: {display_name: PlayStation, status: existing}
+  pptv:
+    display_name: PPTV
+    aggregate: pptv_aggregate
+    services:
+      pptv: {display_name: PPTV, status: existing}
+  psbc:
+    display_name: "Postal Savings Bank of China"
+    aggregate: psbc_aggregate
+    services:
+      psbc: {display_name: "Postal Savings Bank of China", status: existing}
+  reddit:
+    display_name: Reddit
+    aggregate: reddit_aggregate
+    services:
+      reddit: {display_name: Reddit, status: existing}
+  riotgames:
+    display_name: "Riot Games"
+    aggregate: riotgames_aggregate
+    services:
+      riotgames: {display_name: "Riot Games", status: existing}
+  rockstar:
+    display_name: "Rockstar Games"
+    aggregate: rockstar_aggregate
+    services:
+      rockstar: {display_name: "Rockstar Games", status: existing}
+  shopify:
+    display_name: Shopify
+    aggregate: shopify_aggregate
+    services:
+      shopify: {display_name: Shopify, status: existing}
+  sohu:
+    display_name: Sohu
+    aggregate: sohu_aggregate
+    services:
+      sohu: {display_name: Sohu, status: existing}
+  soundcloud:
+    display_name: SoundCloud
+    aggregate: soundcloud_aggregate
+    services:
+      soundcloud: {display_name: SoundCloud, status: existing}
+  spotify:
+    display_name: Spotify
+    aggregate: spotify_aggregate
+    services:
+      spotify: {display_name: Spotify, status: existing}
+  steam:
+    display_name: Steam
+    aggregate: steam_aggregate
+    services:
+      steam: {display_name: Steam, status: existing}
+  stripe:
+    display_name: Stripe
+    aggregate: stripe_aggregate
+    services:
+      stripe: {display_name: Stripe, status: existing}
+  telegram:
+    display_name: Telegram
+    aggregate: telegram_aggregate
+    services:
+      telegram: {display_name: Telegram, status: existing}
+  tongcheng:
+    display_name: Tongcheng
+    aggregate: tongcheng_aggregate
+    services:
+      tongcheng: {display_name: Tongcheng, status: existing}
+  twitter:
+    display_name: Twitter
+    aggregate: twitter_aggregate
+    services:
+      twitter: {display_name: Twitter, status: existing}
+  ubisoft:
+    display_name: Ubisoft
+    aggregate: ubisoft_aggregate
+    services:
+      ubisoft: {display_name: Ubisoft, status: existing}
+  unionpay:
+    display_name: UnionPay
+    aggregate: unionpay_aggregate
+    services:
+      unionpay: {display_name: UnionPay, status: existing}
+  vercel:
+    display_name: Vercel
+    aggregate: vercel_aggregate
+    services:
+      vercel: {display_name: Vercel, status: existing}
+  vivo:
+    display_name: vivo
+    aggregate: vivo_aggregate
+    services:
+      vivo: {display_name: vivo, status: existing}
+  weibo:
+    display_name: Weibo
+    aggregate: weibo_aggregate
+    services:
+      weibo: {display_name: Weibo, status: existing}
+  xiaohongshu:
+    display_name: Xiaohongshu
+    aggregate: xiaohongshu_aggregate
+    services:
+      xiaohongshu: {display_name: Xiaohongshu, status: existing}
+  ximalaya:
+    display_name: Ximalaya
+    aggregate: ximalaya_aggregate
+    services:
+      ximalaya: {display_name: Ximalaya, status: existing}
+  zhihu:
+    display_name: Zhihu
+    aggregate: zhihu_aggregate
+    services:
+      zhihu: {display_name: Zhihu, status: existing}
+  zoom:
+    display_name: Zoom
+    aggregate: zoom_aggregate
+    services:
+      zoom: {display_name: Zoom, status: existing}
+
 categories:
   developer:
     display_name: Developer Ecosystem
