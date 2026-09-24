@@ -1,0 +1,28 @@
+{
+  "source": "lm-firefly",
+  "fetch": "github_raw",
+  "files_ok": 0,
+  "files_not_modified": 0,
+  "files_skipped": 0,
+  "files_failed": 1,
+  "empty_blocked": 0,
+  "required_failures": 0,
+  "rules_declared": 1,
+  "conditional_cache_hits": 0,
+  "scheduler_skips": 0,
+  "files": [
+    {
+      "name": "LM_Firefly_AppleDev.list",
+      "path": "Apple/AppleDev.list",
+      "service": "appledev",
+      "status": "failed",
+      "decision": "FETCH_ERROR",
+      "reason": "TypeError",
+      "error": "TypeError: FetchResult.__init__() missing 1 required positional argument: 'url'"
+    }
+  ],
+  "registry_priority": 80,
+  "registry_trust": "high",
+  "critical": false,
+  "concurrency_workers": 1
+}
