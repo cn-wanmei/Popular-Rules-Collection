@@ -27,7 +27,7 @@
 | 顶级服务集 | **116** |
 | Generated 文件 | **1984** |
 | 客户端 | **7** |
-| Icon Release | `2026.09.22-5e0e48ad55c6` |
+| Icon Release | `2026.09.25-prc-icon-matrix-1` |
 
 ## 七客户端发行目录
 
