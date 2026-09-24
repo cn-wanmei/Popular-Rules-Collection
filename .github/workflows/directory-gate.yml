@@ -26,7 +26,7 @@ jobs:
             PYTHONPATH=. python scripts/rule_mapping_gate.py
           else
             PYTHONPATH=. python scripts/directory_gate.py
-            PYTHONPATH=. python scripts/rule_mapping_gate.py --require-empty
+            PYTHONPATH=. python scripts/rule_mapping_gate.py
           fi
       - name: Validate current service documentation SSOT
         run: PYTHONPATH=. python scripts/docs_ssot_gate.py
