@@ -73,11 +73,11 @@
       "id": "remix",
       "name": "Remix Icon",
       "style": "line-fill",
-      "license": "Apache-2.0",
+      "license": "Remix Icon License v1.0",
       "source": "https://remixicon.com/",
       "usage": "风格参考层；实际 V4 fallback asset 为本仓库自有 semantic glyph",
       "reference_library": "Remix Icon",
-      "reference_license": "Apache-2.0"
+      "reference_license": "Remix Icon License v1.0 (effective January 2026)"
     },
     {
       "id": "bootstrap",
@@ -93,11 +93,11 @@
       "id": "solar",
       "name": "Solar Icons",
       "style": "multi-weight",
-      "license": "CC-BY-4.0",
+      "license": "MIT (upstream) + CC BY 4.0 for listed third-party elements",
       "source": "https://solar-icons.com/",
       "usage": "风格参考层；实际 V4 fallback asset 为本仓库自有 semantic glyph",
       "reference_library": "Solar Icons",
-      "reference_license": "CC-BY-4.0"
+      "reference_license": "MIT + CC BY 4.0 third-party elements"
     }
   ],
   "coverage": {
