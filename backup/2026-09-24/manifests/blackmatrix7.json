@@ -3,13 +3,13 @@
   "fetch": "github_raw",
   "files_ok": 0,
   "files_not_modified": 0,
-  "files_skipped": 122,
-  "files_failed": 32,
+  "files_skipped": 123,
+  "files_failed": 31,
   "empty_blocked": 0,
   "required_failures": 0,
   "rules_declared": 154,
   "conditional_cache_hits": 0,
-  "scheduler_skips": 122,
+  "scheduler_skips": 123,
   "files": [
     {
       "name": "Clash_12306.yaml",
@@ -1806,10 +1806,16 @@
       "name": "QuantumultX_TencentCloud.list",
       "path": "rule/QuantumultX/Cloud/TencentCloud/TencentCloud.list",
       "service": "tencentcloud",
-      "status": "failed",
-      "decision": "FETCH_ERROR",
-      "reason": "TypeError",
-      "error": "TypeError: FetchResult.__init__() missing 1 required positional argument: 'url'"
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Cloud/TencentCloud/TencentCloud.list",
+      "status": "skipped",
+      "decision": "SKIP_RETRY_WINDOW",
+      "reason": "failure_backoff_active",
+      "sha256": "e5421c2f2f93e2f2e28cfcc2c7c85d62b5ad013fc5204445de513b50437c0ded",
+      "cas_sha256": "e5421c2f2f93e2f2e28cfcc2c7c85d62b5ad013fc5204445de513b50437c0ded",
+      "size": 3955,
+      "cached_from_cas": true,
+      "local": "sources/blackmatrix7/QuantumultX_TencentCloud.list",
+      "cas_object": "data/cas/acquisition/e5/421c2f2f93e2f2e28cfcc2c7c85d62b5ad013fc5204445de513b50437c0ded"
     },
     {
       "name": "Clash_TencentVideo.yaml",
