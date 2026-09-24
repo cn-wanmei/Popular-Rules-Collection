@@ -1,18 +1,29 @@
-# 图标库 — Current Icon System 3
+# 图标库 — Current V4
 
-## SSOT
+当前图标库采用 9 种主流开放图标设计语言 + 1 个品牌原生 / 官方优先层。
 
-当前入口：`assets/icons/v3/release-pointer.json` → 不可变 Release `2026.09.22-5e0e48ad55c6`。Release 内含 manifest、QA/Gate 证据和 7 个客户端 index。
+## 10 层
 
-## 服务页
+1. Official / Brand Native
+2. Lucide — outline — ISC
+3. Tabler Icons — outline / filled — MIT
+4. Phosphor — multi-weight — MIT
+5. Material Symbols — outlined / rounded / sharp — Apache-2.0
+6. Fluent UI System Icons — regular / filled — MIT
+7. Heroicons — outline / solid — MIT
+8. Remix Icon — line / fill — Apache-2.0
+9. Bootstrap Icons — outline / fill — MIT
+10. Solar Icons — multi-weight — CC-BY-4.0
 
-服务说明页使用 service_id → icon identity 的显式绑定，页面记录 identity、role、style、path、digest，不猜测 Logo。
+## 覆盖
 
-## 语义边界
+当前 Rule Index 的 262 条记录全部拥有 V4 图标解析结果：92 条精确复用 V3、52 条安全继承、118 条九风格 fallback。
 
-- brand：服务品牌身份
-- strategy：DIRECT / PROXY / REJECT 等策略语义
-- dataset / network：China / GeoIP / ASN / LAN 等数据语义
-- placeholder：没有独立且已验证品牌身份时的显式占位
+## 安全原则
 
-Legacy `assets/icons/manifest.yaml`、`registry.yaml`、旧 profiles 与旧 PNG 路径继续作为兼容/历史资产，不代表当前 V3 发布状态。
+- 品牌 Logo 与 UI 风格严格分层。
+- semantic fallback 用于覆盖，不代表官方身份。
+- aggregate 仅在有精确基础服务图标时继承。
+- 不使用 favicon 作为永久品牌资产。
+
+详细规范：ICON_STYLE_GUIDE_V4.md
