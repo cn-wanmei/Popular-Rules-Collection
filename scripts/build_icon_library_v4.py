@@ -22,7 +22,9 @@ for e in idx.get("entries") or []:
     sid=e["id"]
     icon=v3.get(sid) or v3.get(re.sub(r"_aggregate$","",sid))
     if icon and str(icon.get("identity","")).startswith("brand.") and icon.get("identity") != "brand.placeholder":
-        item={"path":e.get("path"),"id":sid,"display_name":e.get("display_name"),"primary":"official","icon":{"type":"existing-v3-brand","raw":V3RAW+icon["path"],"identity":icon.get("identity"),"role":icon.get("role"),"digest":icon.get("digest")}}        out["entries"].append(item)\n        out["by_id"].setdefault(sid,[]).append(item)
+        item={"path":e.get("path"),"id":sid,"display_name":e.get("display_name"),"primary":"official","icon":{"type":"existing-v3-brand","raw":V3RAW+icon["path"],"identity":icon.get("identity"),"role":icon.get("role"),"digest":icon.get("digest")}}
+        out["entries"].append(item)
+        out["by_id"].setdefault(sid,[]).append(item)
     else:
         st=style_for(sid)
         item={"path":e.get("path"),"id":sid,"display_name":e.get("display_name"),"primary":st,"icon":{"type":"style-fallback","style":st,"raw":V4RAW+st+"/service.svg","identity":"semantic.fallback."+st}}\n        out["entries"].append(item)\n        out["by_id"].setdefault(sid,[]).append(item)
