@@ -23,8 +23,10 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "pull_request" ]; then
             PYTHONPATH=. python scripts/directory_gate.py --policy-only
+            PYTHONPATH=. python scripts/rule_mapping_gate.py
           else
             PYTHONPATH=. python scripts/directory_gate.py
+            PYTHONPATH=. python scripts/rule_mapping_gate.py --require-empty
           fi
       - name: Validate current service documentation SSOT
         run: PYTHONPATH=. python scripts/docs_ssot_gate.py
