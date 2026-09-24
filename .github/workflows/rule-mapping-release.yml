@@ -1,0 +1,35 @@
+name: Rule Mapping Release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "config/ruleset_hierarchy.yaml"
+      - "scripts/rule_mapping_gate.py"
+      - ".github/workflows/rule-mapping-release.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: rule-mapping-release
+  cancel-in-progress: false
+
+jobs:
+  dispatch-build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: write
+    steps:
+      - name: Dispatch immutable Build
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh workflow run build.yml \
+            --repo "${{ github.repository }}" \
+            --ref main \
+            -f collection_date="" \
+            -f skip_large=false \
+            -f dry_run=false
+          echo "Build Client Rules dispatched for mapping release."
