@@ -33,3 +33,7 @@
 ## 防止漂移
 
 服务页、服务目录和根 README 的服务快捷目录按当前 Release 数据维护。不要手工改发行数字、Raw URL、SHA-256 或图标路径。
+
+## 图标体系
+
+当前服务图标入口：[Icon Library V4](../assets/icons/v4/README.md) · [Style Guide](ICON_STYLE_GUIDE_V4.md)。V3 作为现有品牌资产来源与兼容层保留。
