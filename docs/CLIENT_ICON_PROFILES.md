@@ -1,17 +1,17 @@
-# 客户端 Icon Profile — Current V3
+# 客户端 Icon Profile — Current V4
 
-当前图标 SSOT：`assets/icons/v3/release-pointer.json`。它指向不可变 Icon System 3 Release，并为 7 个客户端提供独立 client index。
+规则 Builder 不嵌入图标；服务文档和 UI 使用 V4 Service Index 解析图标。
 
-| 客户端 | 当前 Index |
+| 客户端 | Icon 读取层 |
 |---|---|
-| Mihomo | `index/clients/mihomo.json` |
-| sing-box | `index/clients/singbox.json` |
-| Surge | `index/clients/surge.json` |
-| Shadowrocket | `index/clients/shadowrocket.json` |
-| Quantumult X | `index/clients/quantumultx.json` |
-| Egern | `index/clients/egern.json` |
-| Loon | `index/clients/loon.json` |
+| Mihomo | Icon Matrix V4 / Service Index |
+| sing-box | Icon Matrix V4 / Service Index |
+| Surge | Icon Matrix V4 / Service Index |
+| Shadowrocket | Icon Matrix V4 / Service Index |
+| Quantumult X | Icon Matrix V4 / Service Index |
+| Egern | Icon Matrix V4 / Service Index |
+| Loon | Icon Matrix V4 / Service Index |
 
-准确图标 URL 与 digest 必须从对应 client index 读取，不应继续根据旧 `assets/icons/png/{size}/` 模板猜路径。
+当前 Icon Pointer：assets/icons/v4/release-pointer.json
 
-详见 [ICON_USAGE.md](ICON_USAGE.md)。
+V3 client indexes 保留为现有品牌资产来源；V4 决定当前服务页面的主图标层和 fallback 策略。
