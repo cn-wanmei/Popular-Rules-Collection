@@ -1,7 +1,7 @@
 {
   "schema": "icon_service_index_v4",
   "version": 4,
-  "release": "2026.09.25-prc-icon-matrix-1",
+  "release": "2026.09.25-prc-icon-matrix-3",
   "styles": [
     "official",
     "lucide",
@@ -11,7 +11,7 @@
     "fluent",
     "heroicons",
     "remix",
-    "bootstrap",
+    "hugeicons",
     "solar"
   ],
   "entries": [
@@ -19,12 +19,12 @@
       "path": "12306/12306.yaml",
       "id": "12306_aggregate",
       "display_name": "12306",
-      "primary": "bootstrap",
+      "primary": "hugeicons",
       "icon": {
         "type": "style-fallback",
-        "style": "bootstrap",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/bootstrap/service.svg",
-        "identity": "semantic.fallback.bootstrap"
+        "style": "hugeicons",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/hugeicons/service.svg",
+        "identity": "semantic.fallback.hugeicons"
       }
     },
     {
@@ -405,12 +405,12 @@
       "path": "apple/applemail/applemail.yaml",
       "id": "applemail",
       "display_name": "Apple Mail",
-      "primary": "bootstrap",
+      "primary": "hugeicons",
       "icon": {
         "type": "style-fallback",
-        "style": "bootstrap",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/bootstrap/service.svg",
-        "identity": "semantic.fallback.bootstrap"
+        "style": "hugeicons",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/hugeicons/service.svg",
+        "identity": "semantic.fallback.hugeicons"
       }
     },
     {
@@ -529,12 +529,12 @@
       "path": "bbc/bbc/bbc.yaml",
       "id": "bbc",
       "display_name": "BBC",
-      "primary": "bootstrap",
+      "primary": "hugeicons",
       "icon": {
         "type": "style-fallback",
-        "style": "bootstrap",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/bootstrap/service.svg",
-        "identity": "semantic.fallback.bootstrap"
+        "style": "hugeicons",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/hugeicons/service.svg",
+        "identity": "semantic.fallback.hugeicons"
       }
     },
     {
@@ -667,12 +667,12 @@
       "path": "bocom/bocom.yaml",
       "id": "bocom_aggregate",
       "display_name": "Bank of Communications",
-      "primary": "bootstrap",
+      "primary": "hugeicons",
       "icon": {
         "type": "style-fallback",
-        "style": "bootstrap",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/bootstrap/service.svg",
-        "identity": "semantic.fallback.bootstrap"
+        "style": "hugeicons",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/hugeicons/service.svg",
+        "identity": "semantic.fallback.hugeicons"
       }
     },
     {
@@ -729,12 +729,12 @@
       "path": "bytedance/doubao/doubao.yaml",
       "id": "doubao",
       "display_name": "Doubao",
-      "primary": "bootstrap",
+      "primary": "hugeicons",
       "icon": {
         "type": "style-fallback",
-        "style": "bootstrap",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/bootstrap/service.svg",
-        "identity": "semantic.fallback.bootstrap"
+        "style": "hugeicons",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/hugeicons/service.svg",
+        "identity": "semantic.fallback.hugeicons"
       }
     },
     {
@@ -839,12 +839,12 @@
       "path": "ceb/ceb/ceb.yaml",
       "id": "ceb",
       "display_name": "China Everbright Bank",
-      "primary": "bootstrap",
+      "primary": "hugeicons",
       "icon": {
         "type": "style-fallback",
-        "style": "bootstrap",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/bootstrap/service.svg",
-        "identity": "semantic.fallback.bootstrap"
+        "style": "hugeicons",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/hugeicons/service.svg",
+        "identity": "semantic.fallback.hugeicons"
       }
     },
     {
@@ -875,12 +875,12 @@
       "path": "chinamobile/chinamobile/chinamobile.yaml",
       "id": "chinamobile",
       "display_name": "China Mobile",
-      "primary": "bootstrap",
+      "primary": "hugeicons",
       "icon": {
         "type": "style-fallback",
-        "style": "bootstrap",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/bootstrap/service.svg",
-        "identity": "semantic.fallback.bootstrap"
+        "style": "hugeicons",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/hugeicons/service.svg",
+        "identity": "semantic.fallback.hugeicons"
       }
     },
     {
@@ -948,12 +948,12 @@
       "path": "cmb/cmb.yaml",
       "id": "cmb_aggregate",
       "display_name": "China Merchants Bank",
-      "primary": "bootstrap",
+      "primary": "hugeicons",
       "icon": {
         "type": "style-fallback",
-        "style": "bootstrap",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/bootstrap/service.svg",
-        "identity": "semantic.fallback.bootstrap"
+        "style": "hugeicons",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/hugeicons/service.svg",
+        "identity": "semantic.fallback.hugeicons"
       }
     },
     {
@@ -1425,12 +1425,12 @@
       "path": "google/google-search/google-search.yaml",
       "id": "google-search",
       "display_name": "Google Search",
-      "primary": "bootstrap",
+      "primary": "hugeicons",
       "icon": {
         "type": "style-fallback",
-        "style": "bootstrap",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/bootstrap/service.svg",
-        "identity": "semantic.fallback.bootstrap"
+        "style": "hugeicons",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/hugeicons/service.svg",
+        "identity": "semantic.fallback.hugeicons"
       }
     },
     {
@@ -1548,12 +1548,12 @@
       "path": "himalaya/himalaya/himalaya.yaml",
       "id": "himalaya",
       "display_name": "Himalaya",
-      "primary": "bootstrap",
+      "primary": "hugeicons",
       "icon": {
         "type": "style-fallback",
-        "style": "bootstrap",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/bootstrap/service.svg",
-        "identity": "semantic.fallback.bootstrap"
+        "style": "hugeicons",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/hugeicons/service.svg",
+        "identity": "semantic.fallback.hugeicons"
       }
     },
     {
@@ -1622,12 +1622,12 @@
       "path": "ibm/ibm.yaml",
       "id": "ibm_aggregate",
       "display_name": "IBM",
-      "primary": "bootstrap",
+      "primary": "hugeicons",
       "icon": {
         "type": "style-fallback",
-        "style": "bootstrap",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/bootstrap/service.svg",
-        "identity": "semantic.fallback.bootstrap"
+        "style": "hugeicons",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/hugeicons/service.svg",
+        "identity": "semantic.fallback.hugeicons"
       }
     },
     {
@@ -1658,12 +1658,12 @@
       "path": "iqiyi/iqiyi.yaml",
       "id": "iqiyi_aggregate",
       "display_name": "iQIYI",
-      "primary": "bootstrap",
+      "primary": "hugeicons",
       "icon": {
         "type": "style-fallback",
-        "style": "bootstrap",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/bootstrap/service.svg",
-        "identity": "semantic.fallback.bootstrap"
+        "style": "hugeicons",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/hugeicons/service.svg",
+        "identity": "semantic.fallback.hugeicons"
       }
     },
     {
@@ -2578,12 +2578,12 @@
       "path": "sohu/sohu.yaml",
       "id": "sohu_aggregate",
       "display_name": "Sohu",
-      "primary": "bootstrap",
+      "primary": "hugeicons",
       "icon": {
         "type": "style-fallback",
-        "style": "bootstrap",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/bootstrap/service.svg",
-        "identity": "semantic.fallback.bootstrap"
+        "style": "hugeicons",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/hugeicons/service.svg",
+        "identity": "semantic.fallback.hugeicons"
       }
     },
     {
@@ -2628,12 +2628,12 @@
       "path": "special/ai/ai.yaml",
       "id": "ai",
       "display_name": "AI",
-      "primary": "bootstrap",
+      "primary": "hugeicons",
       "icon": {
         "type": "style-fallback",
-        "style": "bootstrap",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/bootstrap/service.svg",
-        "identity": "semantic.fallback.bootstrap"
+        "style": "hugeicons",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/hugeicons/service.svg",
+        "identity": "semantic.fallback.hugeicons"
       }
     },
     {
@@ -2664,12 +2664,12 @@
       "path": "special/restricted/restricted.yaml",
       "id": "restricted",
       "display_name": "Restricted",
-      "primary": "bootstrap",
+      "primary": "hugeicons",
       "icon": {
         "type": "style-fallback",
-        "style": "bootstrap",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/bootstrap/service.svg",
-        "identity": "semantic.fallback.bootstrap"
+        "style": "hugeicons",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/hugeicons/service.svg",
+        "identity": "semantic.fallback.hugeicons"
       }
     },
     {
@@ -2891,12 +2891,12 @@
       "path": "tongcheng/tongcheng.yaml",
       "id": "tongcheng_aggregate",
       "display_name": "Tongcheng",
-      "primary": "bootstrap",
+      "primary": "hugeicons",
       "icon": {
         "type": "style-fallback",
-        "style": "bootstrap",
-        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/bootstrap/service.svg",
-        "identity": "semantic.fallback.bootstrap"
+        "style": "hugeicons",
+        "raw": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/hugeicons/service.svg",
+        "identity": "semantic.fallback.hugeicons"
       }
     },
     {
