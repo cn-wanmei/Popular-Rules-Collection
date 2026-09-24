@@ -47,7 +47,7 @@
 
 ## 7. 图标
 
-当前 Icon SSOT：`assets/icons/v3/release-pointer.json` → Icon System 3 Release → client index。服务页直接嵌入对应服务身份图标；没有独立身份时明确使用 placeholder。
+当前 Icon SSOT：`assets/icons/v4/release-pointer.json` → V4 Service Index → Official / 9-style semantic fallback。
 
 ## 8. 常见错误
 
@@ -60,3 +60,7 @@
 ## 9. 自动化消费
 
 读取 `generated/manifest.json` → 过滤 `kind=client_rules` → 按客户端和精确 `file` 选择 → 使用 Raw URL 下载 → 用 sha256 做缓存/变化检测。
+
+## 10. Icon V4 覆盖口径
+
+当前 Rule Index 262 条记录全部拥有 V4 图标解析结果：92 条精确复用、52 条安全继承、118 条九风格 semantic fallback。fallback 只用于视觉覆盖，不代表官方品牌 Logo。
