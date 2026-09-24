@@ -46,4 +46,4 @@ V4 Release：2026.09.25-prc-icon-matrix-1
 - assets/icons/v4/styles/<style>/service.svg
 
 ## 授权提醒
-UI 图标库许可证与品牌商标权是两回事；品牌图标继续遵守各品牌商标与资产使用要求。
+九种库在 V4 中仅作为**风格参考**；真正提交到 `assets/icons/v4/styles/` 的 fallback glyph 是本仓库自有的 CC0 semantic asset。第三方库的参考许可证不自动转移到本仓库。Remix 已在 2026 年 1 月更新为 Remix Icon License v1.0；Solar 上游仓库为 MIT，同时列出部分第三方元素的 CC BY 4.0 要求，详见其官方 LICENSE。citeturn661064search10turn661064search6turn661064search12
