@@ -385,7 +385,7 @@ providers:
     aggregate: docker_aggregate
     services:
       docker: {display_name: Docker, status: existing}
-  12306:
+  "12306":
     display_name: 12306
     aggregate: 12306_aggregate
     services:
