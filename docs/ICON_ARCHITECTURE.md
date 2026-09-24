@@ -1,13 +1,21 @@
-# Icon Asset Pipeline — Current V3
+# Icon Architecture — Current V4
 
-```text
-Service Registry → Icon identity / provenance / license
-→ Icon System 3 deterministic build
-→ 7 styles + QA / Gate + 7 client indexes
-→ immutable V3 release
-→ assets/icons/v3/release-pointer.json
-```
+## Current pipeline
 
-当前生产权威是 `assets/icons/v3/release-pointer.json` 指向的不可变 release。旧 `assets/icons/manifest.yaml` / `registry.yaml` 仅用于兼容或历史追踪，不代表当前 V3 发布状态。
+Service ID / semantic role
+      ↓
+V4 Service Index
+      ├── Official / Brand Native
+      └── 9 Style Semantic Fallbacks
+      ↓
+Service docs / UI
 
-硬约束：service→icon 必须显式绑定；stable asset 必须可追溯 source/provenance/license；brand、strategy、dataset 语义分离；Builder 不得猜 Logo；sing-box rule JSON 不包含 icon payload。
+## 关键不变量
+
+- 每条 Rule Index 记录都有图标解析结果。
+- 真实品牌身份优先，不重绘成假品牌 Logo。
+- fallback 必须显式标记为 semantic。
+- 图标资产与规则文件解耦。
+- 当前 V4 Pointer 是用户侧图标 SSOT。
+
+覆盖：262 / 262。
