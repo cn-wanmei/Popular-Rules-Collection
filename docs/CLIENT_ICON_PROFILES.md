@@ -1,25 +1,17 @@
-# 客户端 Icon Profile（P4）
+# 客户端 Icon Profile — Current V3
 
-规则 Builder **不**写入图标。客户端按 Profile 取 URL：
+当前图标 SSOT：`assets/icons/v3/release-pointer.json`。它指向不可变 Icon System 3 Release，并为 7 个客户端提供独立 client index。
 
-```bash
-python scripts/icon_resolver.py google --profile client
-```
+| 客户端 | 当前 Index |
+|---|---|
+| Mihomo | `index/clients/mihomo.json` |
+| sing-box | `index/clients/singbox.json` |
+| Surge | `index/clients/surge.json` |
+| Shadowrocket | `index/clients/shadowrocket.json` |
+| Quantumult X | `index/clients/quantumultx.json` |
+| Egern | `index/clients/egern.json` |
+| Loon | `index/clients/loon.json` |
 
-配置见 `assets/icons/client_profiles.yaml`。
+准确图标 URL 与 digest 必须从对应 client index 读取，不应继续根据旧 `assets/icons/png/{size}/` 模板猜路径。
 
-| 客户端 | Profile | 推荐尺寸 |
-|--------|---------|----------|
-| Surge | client | 256 |
-| Loon | client | 256 |
-| Egern | client | 256 |
-| Mihomo | client | 128 |
-| sing-box | client | 128 |
-| Shadowrocket | client | 256 |
-| Quantumult X | client | 256 |
-
-```text
-https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
-```
-
-单色：`…/monochrome/{size}/{icon_key}.png`
+详见 [ICON_USAGE.md](ICON_USAGE.md)。

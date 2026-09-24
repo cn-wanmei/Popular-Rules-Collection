@@ -1,38 +1,30 @@
-# 规则目录与使用场景
+# 规则目录与服务选择
 
-## 三层边界
+> 当前目录模型以 `rule/_index.yaml` 为准。旧版 Provider/Group 平铺路径不再作为当前规则路径规范。
 
-`data/runs/<run-id>/canonical` 是 V3 Canonical 真源；`data/runs/<run-id>/ir` 是语义中间层；最终从同一个 Run 生成两个面向消费者的发行投影：
+## 当前模型
 
-```text
-Semantic IR
-   ├── rule/                         用户浏览 / 搜索 / 选择
-   └── generated/
-         ├── <client>/               客户端规则
-         └── <network-scope>/        网络数据
-```
+rule/_index.yaml
+      ↓
+服务集 / Provider
+      ↓
+独立服务 / 子服务
+      ↓
+docs/services/<同层级>/README.md
+      ↓
+generated/<client>/<同层级> + Raw URL
 
-## 人类可读规则树
+## 使用入口
 
-```text
-rule/
-├── <provider>/all/rules.yaml
-├── <provider>/<service>/rules.yaml
-├── china/all/rules.yaml
-├── category/<category>/all/rules.yaml
-├── group/<group>/rules.yaml
-├── aggregate/<aggregate>/rules.yaml
-└── unmapped/<service>/rules.yaml
-```
+- [全量服务目录](SERVICE_CATALOG.md)
+- [完整使用说明](RULE_USAGE_GUIDE.md)
+- [规则索引](../rule/_index.yaml)
+- [Generated Manifest](../generated/manifest.json)
 
-每个 `rules.yaml` 都是通用、客户端无关的规则记录，并带有 Run ID 与 Semantic IR digest；它不是编辑源，也不是客户端运行时格式。
+## 规则字段
 
-## 客户端与网络发行
+每条规则索引记录包含 `entity`、`id`、`display_name`、`rule_count` 和 `sha256`。当前 Release 共 262 条索引记录。服务页面进一步补充七客户端实际编译产物统计。
 
-`generated/<client>/...` 由 Client Adapter 编译；`generated/<network-scope>/...` 是网络数据发行树。
+## 选择原则
 
-## SSOT
-
-V3 Canonical=`data/runs/<run-id>/canonical`；Semantic IR=`data/runs/<run-id>/ir`；用户规则发行入口=`rule/`；机器订阅入口=`generated/`。
-
-`rules/` 已删除，不再存在第三套规则目录。
+服务集适合宽覆盖；独立子服务适合精确分流。不要从聚合规则手工复制规则来创建第三套子规则。

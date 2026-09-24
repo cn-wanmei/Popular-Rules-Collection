@@ -1,29 +1,19 @@
 # Architecture — Current V3
 
+> 当前架构与 [ARCHITECTURE.md](ARCHITECTURE.md) 保持一致；本文件作为兼容入口。
+
 ```text
-upstream → Collect → immutable backup
-→ Canonical → Semantic IR
-→ ├─ human Rule Browse Distribution → rule/
-  └─ Client / Network Distributions → generated/
-→ deterministic RC → atomic Git publish
+Upstream
+  ↓
+Collect → immutable backup/<date>
+  ↓
+V3 Engine
+  ↓
+Canonical → Semantic IR
+  ├── rule/               人类浏览 / 服务选择
+  └── generated/          客户端 + Network Dataset
+  ↓
+Deterministic Release Candidate → Atomic Publish
 ```
 
-| Layer | Role |
-|---|---|
-| `sources/` | upstream source definitions |
-| `backup/<date>` | immutable input |
-| `data/runs/<run>/canonical` | **V3 Canonical truth** |
-| `data/runs/<run>/ir` | **Semantic IR** |
-| `rule/` | **human browsing / search / selection distribution** |
-| `generated/<client>` | **client rule distribution** |
-| `generated/<network>` | **network dataset distribution** |
-| `docs/` | architecture, usage and audit documentation |
-| `rules/` | **deleted; never recreate as a third rule tree** |
-
-`rule/` and `generated/` are sibling projections of one immutable Run. The human tree is built from Semantic IR, not copied back from a client adapter.
-
-## Release invariant
-
-`rule/manifest.json` and `generated/manifest.json` are bound to the same Run and Semantic IR digest. Publish and rollback replace both projections together.
-
-Popular-Rules-Source remains the upstream evidence supply; Collection consumes it through immutable Source lineage.
+当前规则总索引是 `rule/_index.yaml`，客户端最终文件清单是 `generated/manifest.json`；不存在当前使用的 `rule/manifest.json`。

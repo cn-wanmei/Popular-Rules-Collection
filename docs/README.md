@@ -1,31 +1,35 @@
-# 文档与生产链 SSOT
+# 文档与生产 / 规则使用入口
 
-## 当前生产 SSOT
-- `README.md`：生产边界与入口
-- `docs/PRODUCTION_RULE_CHAIN.md`：完整生产 DAG
-- `docs/GENERATED_OUTPUTS.md`：最终发行目录契约
-- `docs/ROUTING_CONTRACT.md` / `docs/ROUTING_DECISION_SSOT.md`：分流决策规范
-- `assets/icons/v3/release-pointer.json`：当前 Icon System 3 release
-- `generated/manifest.json`：最终文件清单
-- `generated/network_manifest.json`：Network Dataset provenance
+> 当前文档体系以 2026-09-24 Release 为基线。历史 Phase / V1 / V2 / Freeze 文档仅用于追溯，不覆盖当前 SSOT。
 
-## 当前 V3 真源
+## 当前 SSOT
+
+| 用途 | 入口 |
+|---|---|
+| 项目 / 快速入口 | [根 README](../README.md) |
+| 服务 / 子服务全量目录 | [SERVICE_CATALOG.md](SERVICE_CATALOG.md) |
+| 每个服务独立说明 | [services/](services/) |
+| 规则语义索引 | [rule/_index.yaml](../rule/_index.yaml) |
+| 客户端文件清单 | [generated/manifest.json](../generated/manifest.json) |
+| Network Dataset provenance | [generated/network_manifest.json](../generated/network_manifest.json) |
+| 当前 Icon System 3 | [ICON_USAGE.md](ICON_USAGE.md) |
+
+## 文档分层
+
 ```text
-upstream → backup/<collection-date> → data/runs/<run-id>/canonical
-→ data/runs/<run-id>/ir → 7 client adapters + Network Dataset
-→ Release Candidate → generated/
+当前 Release
+├── README.md                    项目首页 / 服务快捷目录
+├── docs/SERVICE_CATALOG.md      262 条规则的全量服务目录
+├── docs/services/**/README.md   每个服务 / 子服务独立说明
+├── docs/RULE_USAGE_GUIDE.md     面向使用者的完整教程
+├── docs/GENERATED_OUTPUTS.md    最终发行结构
+├── docs/NETWORK_DATASETS.md     Network Dataset
+└── docs/ARCHITECTURE.md         当前生产架构
+
+历史记录
+└── docs/PHASE* / V1 / V2 / Freeze / dated reports
 ```
 
-## 目录边界
-| 路径 | 当前职责 |
-|---|---|
-| `data/runs/<run>/canonical/` | V3 Canonical 真源 |
-| `data/runs/<run>/ir/` | Semantic IR |
-| `generated/<client>/` | 最终客户端规则 |
-| `generated/<network-scope>/` | Network Dataset |
-| `rule/` | V1 历史浏览/迁移树 |
-| `rules/` | V3 目录契约 |
-| `database/services/` | Legacy evidence |
-| `docs/rules/` | 人类可读派生说明页 |
+## 防止漂移
 
-历史 Phase / V1 / V2 文档仅作记录，不覆盖当前 SSOT。
+服务页、服务目录和根 README 的服务快捷目录按当前 Release 数据维护。不要手工改发行数字、Raw URL、SHA-256 或图标路径。

@@ -1,21 +1,19 @@
-# PRC Icon Engine
+# PRC Icon Engine — Current V3
 
-**官方身份 + 仓库统一视觉**。
+图标渲染引擎属于 Icon System 3 内部生产组件。当前消费链路：
 
 ```text
-Source SVG → Normalize (512, ~82% safe) → Render
-  transparent  (= assets/icons/png/{size}/ 客户端主路径)
-  light tile / dark tile / monochrome
+Icon Identity
+  ↓
+Source / License / Provenance
+  ↓
+Normalize / Render
+  ↓
+Visual + Identity + Client QA
+  ↓
+Immutable V3 Release
+  ↓
+7 client indexes
 ```
 
-| mode | 用途 |
-|------|------|
-| brand_preserve | 保留品牌色；单色黑 SI 着色 |
-| semantic | Policy/Dataset 几何 |
-
-```bash
-python scripts/icon_engine.py --force
-python scripts/icon_contact_sheet.py
-```
-
-禁止：AI 造标、假 verified、打断旧 URL。
+当前消费者应读取 `assets/icons/v3/release-pointer.json` 与对应 client index，而不是直接依赖 Legacy `assets/icons/png/{size}/`。

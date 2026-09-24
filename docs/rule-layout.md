@@ -1,39 +1,9 @@
-# rule/ layout (Primary Ecosystem)
+# rule/ layout — Historical Reference
 
-Physical path is derived **only** from `primary_category` + display names.
+> **历史说明：** 本页保留旧 V1 layout 设计，不能作为当前 Release 的路径规范。
 
-```text
-config/categories.yaml          # category definitions
-config/service_primary.yaml     # service identity / primary category
-rule/_index.yaml + rule/{Ecosystem}/{Service}/  # V1 Canonical Service Model
-database/services/*.yaml        # Legacy Source; not a V3 runtime input
-```
+当前入口：[rule/_index.yaml](../rule/_index.yaml) · [SERVICE_CATALOG.md](SERVICE_CATALOG.md) · [ARCHITECTURE.md](ARCHITECTURE.md)
 
-Examples:
+旧文档曾使用 `rule/{Ecosystem}/{Service}/` 与 V1 Canonical Service Model；当前 Release 的实际规则发行路径直接读取 `rule/_index.yaml`，例如 `alibaba/alipay/alipay.yaml`。
 
-| Service | Path |
-|---------|------|
-| wechat | `rule/Tencent/WeChat/` |
-| alipay | `rule/Alibaba/Alipay/` |
-| douyin | `rule/ByteDance/Douyin/` |
-| icbc (future) | `rule/UnionPay/ICBC/` |
-| xbox | `rule/Microsoft/Xbox/` |
-
-Do not treat `database/services/` as a V3 runtime source. V1 model changes must pass the final migration gate.
-
-## Phase 8 source-of-truth boundary
-
-The V1 Canonical Service Model is rooted at `rule/`. The historical `database/services/` tree is Legacy Source evidence and is not a V3 runtime input.
-
-```text
-config/categories.yaml
-config/service_primary.yaml
-        ↓
-rule/_index.yaml + rule/{Ecosystem}/{Service}/
-        ↓
-V1 Canonical Service Model
-        ↓
-V3 Engine
-```
-
-Do not reintroduce `database/services/` as a V3 runtime dependency. Changes to the V1 model must pass the final migration gate.
+V3 Canonical 真源位于 `data/runs/<run>/canonical/`；`rule/` 是同一 Semantic IR Run 的人类可读发行投影。

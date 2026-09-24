@@ -1,23 +1,13 @@
-# 策略 / 网络类图标
+# 策略 / 网络类图标 — Current V3
 
-策略与网络数据集 **不使用品牌 Logo**，统一使用本仓库几何图标（`status: verified`，CC0-1.0）。
+策略与网络数据集不使用品牌 Logo，使用 Icon System 3 中显式绑定的 semantic identity。
 
-| icon_key | 用途 | 推荐策略语境 |
-|----------|------|----------------|
-| `direct` | 直连 | LAN / China / 国内媒体 |
-| `proxy` | 代理 | 海外 Service |
-| `reject` | 拒绝 | 广告 / 部分 restricted |
-| `dns` | DNS | DNS 相关规则 |
-| `lan` | 局域网 | RFC1918 等 |
-| `china` | 国内汇总 | China Domain / CIDR |
-| `geoip` | GeoIP | 国家库 |
-| `geosite` | GeoSite | 分类域名库 |
-| `asn` | ASN | ASN 元数据 / MMDB |
-| `global` | 全球 | 兜底 |
-| `placeholder` | 占位 | 尚无品牌图的服务 |
+| 语义 | 示例 |
+|---|---|
+| strategy | direct / proxy / reject / global / select / urltest |
+| network | lan / dns / private / network |
+| dataset | china / geoip / geosite / asn |
 
-```text
-https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/256/direct.png
-```
+准确 URL 与 digest 应从当前 V3 client index 获取，不再使用旧 `assets/icons/png/` Raw 模板。
 
-Service 品牌图标见 [ICON_REGISTRY.md](./ICON_REGISTRY.md)；规则页由 `generate_rule_pages.py` 自动挂载。
+详见 [ICON_USAGE.md](ICON_USAGE.md)。
