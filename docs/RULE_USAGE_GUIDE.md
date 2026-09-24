@@ -43,7 +43,7 @@
 - IR Digest：`f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7`
 - Generated files：**1984**
 
-服务页分别展示语义 rule_count 与客户端编译 rule_count；不要将二者混为一个统计值。
+服务页分别展示语义 rule_count 与客户端 Manifest 的 rule_count 字段。注意：当前 **262 个 sing-box 条目在 Manifest 中的 rule_count 都是 0**，这不等于其 JSON `rules` 数组为空；服务的可读规则数量应以 `rule/_index.yaml` 的语义 rule_count 为准，sing-box 文件本身仍应直接检查其 JSON 内容。
 
 ## 7. 图标
 
