@@ -1,0 +1,97 @@
+{
+  "schema": "prc_icon_library_v4",
+  "version": 4,
+  "release": "2026.09.25-prc-icon-matrix-1",
+  "updated": "2026-09-25",
+  "official_layer": {
+    "id": "official",
+    "name": "品牌原生 / 官方优先",
+    "rule": "真实品牌身份优先保留；不将品牌 Logo 风格化重绘"
+  },
+  "style_layers": [
+    {
+      "id": "lucide",
+      "name": "Lucide",
+      "style": "outline",
+      "license": "ISC",
+      "source": "https://lucide.dev/icons/",
+      "usage": "缺失身份时的 semantic fallback 参考层"
+    },
+    {
+      "id": "tabler",
+      "name": "Tabler Icons",
+      "style": "outline-filled",
+      "license": "MIT",
+      "source": "https://tabler.io/icons",
+      "usage": "缺失身份时的 semantic fallback 参考层"
+    },
+    {
+      "id": "phosphor",
+      "name": "Phosphor",
+      "style": "multi-weight",
+      "license": "MIT",
+      "source": "https://phosphoricons.com/",
+      "usage": "缺失身份时的 semantic fallback 参考层"
+    },
+    {
+      "id": "material-symbols",
+      "name": "Material Symbols",
+      "style": "outlined-rounded-sharp",
+      "license": "Apache-2.0",
+      "source": "https://fonts.google.com/icons",
+      "usage": "缺失身份时的 semantic fallback 参考层"
+    },
+    {
+      "id": "fluent",
+      "name": "Fluent UI System Icons",
+      "style": "regular-filled",
+      "license": "MIT",
+      "source": "https://github.com/microsoft/fluentui-system-icons",
+      "usage": "缺失身份时的 semantic fallback 参考层"
+    },
+    {
+      "id": "heroicons",
+      "name": "Heroicons",
+      "style": "outline-solid",
+      "license": "MIT",
+      "source": "https://heroicons.com/",
+      "usage": "缺失身份时的 semantic fallback 参考层"
+    },
+    {
+      "id": "remix",
+      "name": "Remix Icon",
+      "style": "line-fill",
+      "license": "Apache-2.0",
+      "source": "https://remixicon.com/",
+      "usage": "缺失身份时的 semantic fallback 参考层"
+    },
+    {
+      "id": "bootstrap",
+      "name": "Bootstrap Icons",
+      "style": "outline-fill",
+      "license": "MIT",
+      "source": "https://icons.getbootstrap.com/",
+      "usage": "缺失身份时的 semantic fallback 参考层"
+    },
+    {
+      "id": "solar",
+      "name": "Solar Icons",
+      "style": "multi-weight",
+      "license": "CC-BY-4.0",
+      "source": "https://solar-icons.com/",
+      "usage": "缺失身份时的 semantic fallback 参考层"
+    }
+  ],
+  "coverage": {
+    "rule_entries": 262,
+    "exact_v3": 92,
+    "inherited_v3": 52,
+    "style_fallback": 118,
+    "coverage_pct": 100
+  },
+  "safety": {
+    "no_fake_brand_marks": true,
+    "no_favicon_as_primary": true,
+    "brand_trademark_warning": true
+  }
+}
