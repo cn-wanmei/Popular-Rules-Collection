@@ -1,67 +1,39 @@
 <a id="top"></a>
 
-<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/placeholder.png" alt="China Everbright Bank 图标" width="72" height="72">
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/heroicons/service.svg" alt="China Everbright Bank 图标" width="72" height="72">
 
 # China Everbright Bank — 分流规则说明
 
-> 当前 Release 自动生成的服务说明。发行数字、Raw 地址、SHA-256 和图标身份均来自当前 SSOT。
+> 当前 Release 服务说明页。图标使用 PRC Icon Library V4；规则数据继续以当前 Rule / Generated SSOT 为准。
 
-## 1. 服务基本信息
+## 1. 服务信息
 
 | 项目 | 当前值 |
 |---|---|
-| 显示名称 | **China Everbright Bank** |
 | Service ID | `ceb_aggregate` |
-| 类型 | 服务集 / Provider 聚合 |
-| Provider / 服务集 | `ceb` |
-| 规则浏览路径 | `ceb/ceb.yaml` |
+| 类型 | provider_aggregate |
+| Provider | `ceb` |
 | 语义规则数量 | **15** |
 | 语义 SHA-256 | `019fe58ec0dda1d94c653a343b2505e6e8f4fa5d6610cefa32bc5257d3d570ec` |
 | Collection Date | `2026-09-24` |
 | Generated At | `2026-09-24T04:39:15.367236+00:00` |
-| Immutable Run | `20260924T043120249584Z-run` |
-| Semantic IR Digest | `f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7` |
-| Icon Identity | `semantic.placeholder` |
-| Icon Role | `strategy` |
-| Icon Release | `2026.09.22-5e0e48ad55c6` |
-
-## 2. 规则用途
-
-这是 **China Everbright Bank 服务集的聚合规则**，用于一次覆盖该服务集当前已登记的相关规则。需要更精确分流时，应直接使用下方独立子服务，而不是手工拆分聚合文件。
-
-不要仅根据服务名称、Provider、ASN、GeoIP 或历史规则推断未列出的域名/IP；Service Rule 与 Network Dataset 属于不同语义层。
-
-## 3. 服务集与子服务
-
-当前规则文件：
-```text
-rule/ceb/ceb.yaml
-```
-
-这是顶级服务集 **ceb** 的入口，共 2 个已登记规则条目。
-
-| 同服务集条目 | 类型 | 规则数 | 文档 |
-|---|---|---:|---|
-| `ceb_aggregate` / China Everbright Bank | 服务集 / Provider 聚合 | 15 | [打开](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/services/ceb/README.md) |
-| `ceb` / China Everbright Bank | 独立服务 | 15 | [打开](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/services/ceb/ceb/README.md) |
-
-## 4. 更新时间与发行状态
-
-| 指标 | 当前值 |
-|---|---|
-| 数据更新日期 | **2026-09-24** |
-| Release 生成时间 | `2026-09-24T04:39:15.367236+00:00` |
 | Run ID | `20260924T043120249584Z-run` |
 | IR Digest | `f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7` |
-| 语义 rule_count | **15** |
-| 客户端生成覆盖 | **7/7** |
-| 客户端 rule_count 范围 | 0–15 |
 
-> 当前 Manifest 只有 Release 级 Generated At，本页不伪造单文件更新时间。判断本服务是否变化，请比较 SHA-256。
+## 2. 图标适配
 
-## 5. 七客户端独立 Raw 订阅
+主图标层：**heroicons semantic fallback**
 
-| 客户端 | 实际文件 | rule_count | 大小(bytes) | SHA-256 | Raw |
+- Style：`heroicons`
+- Identity：`semantic.fallback.heroicons`
+- Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/heroicons/service.svg`
+- 该图标用于覆盖缺失身份，不代表官方品牌 Logo。
+
+9 种可选视觉语言：Lucide、Tabler、Phosphor、Material Symbols、Fluent UI、Heroicons、Remix、Bootstrap、Solar。
+
+## 3. 七客户端 Raw
+
+| 客户端 | 文件 | Manifest rule_count | size | SHA-256 | Raw |
 |---|---|---:|---:|---|---|
 | egern | `egern/ceb/ceb.yaml` | 15 | 303 | `c2071d6ab330ec378ecd25ee9d959da6800f153bb6dacb9171a0f14516d4f7e1` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/ceb/ceb.yaml) |
 | loon | `loon/ceb/ceb.list` | 15 | 404 | `257115a9535cbc5ad15cefb55fcc431bb9eb5a25fa5785eab81ec3216b6a4f5b` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/ceb/ceb.list) |
@@ -71,84 +43,36 @@ rule/ceb/ceb.yaml
 | singbox | `singbox/ceb/ceb.json` | 0 | 440 | `37a173c5c09de0873532ab145c4bc06a995ad408dccd686875c05174978184b9` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/ceb/ceb.json) |
 | surge | `surge/ceb/ceb.list` | 15 | 404 | `257115a9535cbc5ad15cefb55fcc431bb9eb5a25fa5785eab81ec3216b6a4f5b` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/ceb/ceb.list) |
 
-### 5.1 Raw 地址直接复制
+## 4. 使用方法
 
-- **egern**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/ceb/ceb.yaml`
-- **loon**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/ceb/ceb.list`
-- **mihomo**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/ceb/ceb.yaml`
-- **quantumultx**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/ceb/ceb.list`
-- **shadowrocket**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/ceb/ceb.list`
-- **singbox**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/ceb/ceb.json`
-- **surge**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/ceb/ceb.list`
+选择客户端 → 复制对应 Raw → 加入客户端远程 Rule Set / Rule Provider / rule-set → 再绑定自己的 DIRECT / PROXY / REJECT 等策略。
 
-## 6. 客户端使用方法
+不要跨客户端复用另一种格式的规则文件，也不要把 `rule/` 浏览树直接作为客户端运行时输入。
 
-1. 选择你实际使用的客户端。
-2. 复制本页该客户端专属 Raw 地址。
-3. 在客户端的远程 Rule Set / Rule Provider / rule-set 功能中添加。
-4. 按自己的配置把命中的规则交给 DIRECT / PROXY / REJECT 等策略。
-5. 更新时重新拉取远程资源；自动化系统可通过 SHA-256 做缓存/变更检测。
+## 5. 服务集与独立子服务
 
-### 6.1 Mihomo 示例
-```yaml
-rule-providers:
-  ceb_aggregate:
-    type: http
-    behavior: classical
-    format: yaml
-    url: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/ceb/ceb.yaml"
-    path: ./ruleset/ceb_aggregate.yaml
-    interval: 86400
+服务集用于较宽覆盖；独立子服务用于精确分流。父级与子级同时存在时，实际命中关系由客户端规则顺序决定。
 
-rules:
-  - RULE-SET,ceb_aggregate,PROXY
-```
+## 6. 图标来源与安全规则
 
-> 示例用于展示接入结构；实际 behavior / format / 策略组名称应与你使用的 Mihomo 版本和当前规则格式一致。
+真实品牌图标优先；缺失品牌身份时只使用 semantic fallback。禁止把风格化 fallback 冒充品牌官方 Logo，禁止用 favicon 作为永久主图标。
 
-### 6.2 其他客户端
+## 7. 完整性检查
 
-sing-box、Surge、Shadowrocket、Quantumult X、Egern、Loon：使用本页对应客户端的 Raw 地址，通过其支持的远程规则机制导入。不要跨客户端复用另一种格式的文件。
-
-## 7. 服务集与独立子服务如何选择
-
-**服务集：** 适合希望一次覆盖同一 Provider / 产品家族多个成员的场景。
-
-**独立子服务：** 适合精确分流单一产品或子系统。直接使用该子服务的独立 Raw，不要从聚合文件手工复制、拆分、再发布。
-
-**父级与子级同时加载：** 最终行为由客户端规则顺序决定；通常让更具体的子服务规则先于更宽泛的聚合规则。
-
-## 8. 图标
-
-<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/placeholder.png" alt="China Everbright Bank icon" width="56" height="56">
-
-| 属性 | 当前值 |
+| 项目 | SSOT |
 |---|---|
-| Identity | `semantic.placeholder` |
-| Role | `strategy` |
-| Style / Size / Format | `minimal` / 128px / png |
-| Icon Release | `2026.09.22-5e0e48ad55c6` |
-| Icon Digest | `df792f3e1738dc253658bd9714d47a41dd91aa8a2cd0063185da91a817a90c09` |
-| Icon Raw | [打开](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/placeholder.png) |
-
-## 9. 完整性检查
-
-| 检查项 | 权威来源 |
-|---|---|
-| Service ID / 路径 | `rule/_index.yaml` |
-| 语义 rule_count / SHA-256 | `rule/_index.yaml` |
+| 服务 ID / 语义规则数 / SHA-256 | `rule/_index.yaml` |
 | 客户端文件 / rule_count / size / SHA-256 | `generated/manifest.json` |
-| 更新时间 / Run / IR | `generated/manifest.json` + `rule/_index.yaml` |
-| Icon Identity / Digest | Icon System 3 当前 client index |
+| 图标主层 / fallback | `assets/icons/v4/service-index.json` |
+| 当前图标 Release | `assets/icons/v4/release-pointer.json` |
 
-**禁止手工修改派生发行物。** 规则变化应回到上游 / Canonical / 生产链，生成新的 Immutable Run。
+本页属于派生文档，不要手工维护发行数字、Raw、SHA 或图标地址。
 
-## 10. 相关入口
+## 8. 相关入口
 
 - [服务总目录](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.md)
+- [V4 图标库说明](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/assets/icons/v4/README.md)
 - [完整使用说明](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/RULE_USAGE_GUIDE.md)
-- [规则索引](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/rule/_index.yaml)
-- [Generated Manifest](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/generated/manifest.json)
 - [Icon Usage](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/ICON_USAGE.md)
 
 [回到顶部](#top)
