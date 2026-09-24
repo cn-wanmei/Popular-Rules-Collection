@@ -15,7 +15,7 @@
 | Network Dataset 清单 | [generated/network_manifest.json](generated/network_manifest.json) |
 | 当前 Icon SSOT | [ICON_USAGE.md](docs/ICON_USAGE.md) |
 
-## 图标体系\n\n[Icon Library V4：10 层风格说明](docs/ICON_STYLE_GUIDE_V4.md) · [V4 图标库](assets/icons/v4/README.md)\n\n## 当前发行状态
+## 图标体系\n\n[Icon Library V4：10 层视觉矩阵](docs/ICON_STYLE_GUIDE_V4.md) · [V4 图标库](assets/icons/v4/README.md)\n\n## 当前发行状态
 
 | 指标 | 当前值 |
 |---|---|
@@ -27,7 +27,7 @@
 | 顶级服务集 | **116** |
 | Generated 文件 | **1984** |
 | 客户端 | **7** |
-| Icon Release | `2026.09.25-prc-icon-matrix-1` |
+| Icon Release | `2026.09.25-prc-icon-matrix-3` |
 
 ## 七客户端发行目录
 
