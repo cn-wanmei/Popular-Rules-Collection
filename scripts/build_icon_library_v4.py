@@ -17,15 +17,15 @@ def style_for(sid):
     return STYLES[h]
 idx=yaml.safe_load(RULE.read_text(encoding="utf-8")) or {}
 v3=json.loads(V3.read_text(encoding="utf-8")).get("entries") or {}
-out={"schema":"icon_service_index_v4","version":4,"release":"2026.09.25-prc-icon-matrix-1","styles":["official"]+STYLES,"entries":{}}
+out={"schema":"icon_service_index_v4","version":4,"release":"2026.09.25-prc-icon-matrix-1","styles":["official"]+STYLES,"entries":[],"by_id":{}}
 for e in idx.get("entries") or []:
     sid=e["id"]
     icon=v3.get(sid) or v3.get(re.sub(r"_aggregate$","",sid))
     if icon:
-        out["entries"][sid]={"display_name":e.get("display_name"),"primary":"official","icon":{"type":"existing-v3","raw":V3RAW+icon["path"],"identity":icon.get("identity"),"role":icon.get("role"),"digest":icon.get("digest")}}
+        item={"path":e.get("path"),"id":sid,"display_name":e.get("display_name"),"primary":"official","icon":{"type":"existing-v3","raw":V3RAW+icon["path"],"identity":icon.get("identity"),"role":icon.get("role"),"digest":icon.get("digest")}}\n        out["entries"].append(item)\n        out["by_id"].setdefault(sid,[]).append(item)
     else:
         st=style_for(sid)
-        out["entries"][sid]={"display_name":e.get("display_name"),"primary":st,"icon":{"type":"style-fallback","style":st,"raw":V4RAW+st+"/service.svg","identity":"semantic.fallback."+st}}
-out["coverage"]={"rule_entries":len(idx.get("entries") or []),"coverage_pct":100}
+        item={"path":e.get("path"),"id":sid,"display_name":e.get("display_name"),"primary":st,"icon":{"type":"style-fallback","style":st,"raw":V4RAW+st+"/service.svg","identity":"semantic.fallback."+st}}\n        out["entries"].append(item)\n        out["by_id"].setdefault(sid,[]).append(item)
+out["coverage"]={"rule_entries":len(idx.get("entries") or []),"unique_service_ids":len(out["by_id"]),"coverage_pct":100}
 OUT.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-print("entries",len(out["entries"]))
+print("entries",len(out["entries"]),"unique_ids",len(out["by_id"]))
