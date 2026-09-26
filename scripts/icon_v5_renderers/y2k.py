@@ -1,0 +1,6 @@
+from .common import image_tag,shell
+
+def render(image_href: str,title: str)->str:
+    defs='''<linearGradient id="cyber" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00F0FF"/><stop offset=".5" stop-color="#7C4DFF"/><stop offset="1" stop-color="#FF2BD6"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>'''
+    body=f'''<rect width="512" height="512" rx="116" fill="#090F1D"/><rect x="44" y="44" width="424" height="424" rx="104" fill="none" stroke="url(#cyber)" stroke-width="9"/><path d="M82 116H430M82 166H430M82 346H430M82 396H430" stroke="#FFF" stroke-opacity=".08" stroke-width="2"/><path d="M110 100h64M338 100h64M110 412h64M338 412h64" stroke="#5BE7FF" stroke-width="7" stroke-linecap="round" opacity=".8"/><circle cx="110" cy="108" r="10" fill="#00F0FF" filter="url(#glow)"/><circle cx="402" cy="404" r="10" fill="#FF2BD6" filter="url(#glow)"/>{image_tag(image_href,x=130,y=130,size=252,opacity=.34,extra='transform="translate(-8 0)"')}{image_tag(image_href,x=130,y=130,size=252,opacity=.40,extra='transform="translate(8 0)"')}{image_tag(image_href,x=130,y=130,size=252)}'''
+    return shell(body,title,defs)
