@@ -11,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CLIENT_DIRS = ("mihomo", "singbox", "surge", "shadowrocket", "quantumultx", "egern", "loon")
 NETWORK_DIRS = ("network", "geosite", "geoip", "provider", "asn", "ip", "policies", "mmdb")
+LAYOUT_SCHEMA = "directory_layout_v2"
 
 
 def sha256_file(path: Path) -> str:
@@ -84,6 +85,7 @@ def main() -> int:
     network_scopes = sorted({item["scope"] for item in files if item["kind"] == "network_dataset"})
     manifest = {
         "schema": "generated_distribution_manifest_v2",
+        "layout_schema": LAYOUT_SCHEMA,
         "generated_at": now,
         "collection_date": args.date,
         "generated_root": str(generated),
