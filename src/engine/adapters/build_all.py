@@ -35,7 +35,7 @@ def _load_ir(ir_dir: Path) -> tuple[list[dict[str, Any]], dict[str, list[str]], 
     ir_manifest = json.loads(ir_manifest_path.read_text(encoding="utf-8")) if ir_manifest_path.is_file() else {}
     ir_digest = str(ir_manifest.get("ir_digest") or "").strip()
     if not ir_digest:
-        raise RuntimeError("Semantic IR manifest is missing ir_digest")
+        ir_digest = hashlib.sha256(ir_path.read_bytes()).hexdigest()
     memberships = data.get("memberships")
     entities = data.get("entities")
     semantic_intent = data.get("semantic_intent") or {}
