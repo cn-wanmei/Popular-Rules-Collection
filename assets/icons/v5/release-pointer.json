@@ -1,0 +1,16 @@
+{
+  "schema": "icon_release_pointer_v5",
+  "status": "rc_ready",
+  "registry": "registry.json",
+  "run_id": "20260925T002821756614Z-run",
+  "snapshot_id": "bootstrap-rule-index",
+  "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+  "renderer_version": "prc-icon-renderer-v5.0.0",
+  "active": true,
+  "coverage": {
+    "service_count": 146,
+    "complete_8_of_8": 146,
+    "missing": []
+  },
+  "release_tag": "icon-v5-rc1"
+}

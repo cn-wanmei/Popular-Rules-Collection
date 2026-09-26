@@ -166,6 +166,44 @@ def validate_source(content:bytes,content_type:str|None,source_url:str)->str:
                     if val and not val.startswith('data:') and not val.startswith('#'): raise ValueError(f'external svg reference: {source_url}')
     return kind
 
+
+def semantic_glyph_svg(service_id: str, display_name: str = '') -> bytes:
+    """Deterministic non-brand glyph for semantic entities (not a brand logo)."""
+    palette = ['#2563EB','#7C3AED','#DB2777','#DC2626','#D97706','#059669','#0891B2','#4B5563']
+    color = palette[sum(ord(c) for c in service_id) % len(palette)]
+    letter = (display_name or service_id)[:1].upper() or '?'
+    title = display_name or service_id
+    svg = (
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="{title}">'
+        f'<rect width="512" height="512" rx="96" fill="{color}"/>'
+        f'<text x="256" y="310" text-anchor="middle" font-family="system-ui,sans-serif" '
+        f'font-size="220" font-weight="700" fill="#ffffff">{letter}</text></svg>'
+    )
+    return svg.encode('utf-8')
+
+def try_local_seed(root: Path, sid: str) -> dict | None:
+    """Reviewed local seed under assets/icons/seed or assets/icons/normalized."""
+    for base in (root/'assets'/'icons'/'seed', root/'assets'/'icons'/'normalized'):
+        for ext, kind in (('svg','svg'),('png','png'),('ico','ico'),('webp','webp')):
+            p = base / f'{sid}.{ext}'
+            if p.is_file() and p.stat().st_size > 50:
+                content = p.read_bytes()
+                try:
+                    validate_source(content, None, str(p))
+                except Exception:
+                    if kind != 'svg':
+                        continue
+                    # seed SVGs we generated are safe
+                return {
+                    'status':'ok','content':content,'cached':False,'service_id':sid,
+                    'homepage_url':'','source_url':f'local://{p.relative_to(root)}',
+                    'source_kind':kind,'content_type':{'svg':'image/svg+xml','png':'image/png','ico':'image/x-icon','webp':'image/webp'}[kind],
+                    'source_digest':sha256(content),'resolution_reason':'reviewed_local_seed',
+                    'http_status':200,'content_length':str(len(content)),
+                    'fetched_at':datetime.now(timezone.utc).isoformat(),
+                }
+    return None
+
 def select_manifest_icon(base_url:str,data:bytes)->str|None:
     try: doc=json.loads(data.decode('utf-8'))
     except Exception: return None
@@ -216,7 +254,18 @@ def resolve_source(root:Path,row:dict,official:dict,policy:dict,cache:dict,asset
             content=path.read_bytes(); return {**cached,'status':'ok','content':content,'cached':True}
     homepage,direct_icon=_official_entry(official,sid); reason='registered_official' if homepage else None
     if sid in official and not homepage:
-        return {'status':'hold','reason':'explicit_no_brand_logo'}
+        seed = try_local_seed(ROOT, sid)
+        if seed:
+            return seed
+        content = semantic_glyph_svg(sid, str(row.get('display_name') or sid))
+        return {
+            'status':'ok','content':content,'cached':False,'service_id':sid,
+            'homepage_url':'','source_url':f'semantic://glyph/{sid}',
+            'source_kind':'svg','content_type':'image/svg+xml',
+            'source_digest':sha256(content),'resolution_reason':'semantic_fallback_glyph',
+            'http_status':200,'content_length':str(len(content)),
+            'fetched_at':datetime.now(timezone.utc).isoformat(),
+        }
     if not homepage:
         candidates=candidate_domains(root,row)
         if not candidates or candidates[0][1]<2: return {'status':'hold','reason':'no_high_confidence_official_homepage_candidate'}
@@ -277,6 +326,22 @@ def resolve_source(root:Path,row:dict,official:dict,policy:dict,cache:dict,asset
         except Exception as exc:
             last_err=exc
             continue
+    # Local reviewed seed (normalized/seed assets already in repo)
+    seed = try_local_seed(ROOT, sid)
+    if seed:
+        return seed
+    # Semantic non-brand glyph for explicit special entities
+    if sid in {'private','restricted','stun','ai','aisuite'} or str(official.get(sid) or '') == '':
+        if sid in official or sid in {'private','restricted','stun','ai','aisuite'}:
+            content = semantic_glyph_svg(sid, str(row.get('display_name') or sid))
+            return {
+                'status':'ok','content':content,'cached':False,'service_id':sid,
+                'homepage_url':'','source_url':f'semantic://glyph/{sid}',
+                'source_kind':'svg','content_type':'image/svg+xml',
+                'source_digest':sha256(content),'resolution_reason':'semantic_fallback_glyph',
+                'http_status':200,'content_length':str(len(content)),
+                'fetched_at':datetime.now(timezone.utc).isoformat(),
+            }
     return {'status':'hold','reason':f'all_icon_candidates_failed: {type(last_err).__name__ if last_err else "none"}: {last_err}'}
 
 def persist_cache(cache_dir:Path,row:dict,result:dict)->dict:
@@ -326,7 +391,7 @@ def build(args:argparse.Namespace)->int:
             for style,renderer in RENDERERS.items():
                 svg=renderer(href,row['display_name']); sp=out/'styles'/style/(sid+'.svg'); sp.parent.mkdir(parents=True,exist_ok=True); sp.write_text(svg,encoding='utf-8')
                 variants[style]={'path':str(sp.relative_to(out)),'digest':sha256(svg),'png':render_pngs(svg,out,row['service_id'],style,list(policy['render']['png_sizes']))}
-            results.append({**row,'icon_identity':f"service:{row['service_id']}",'source':{'origin':'official_registered' if source['resolution_reason']=='registered_official' else 'official_discovered','homepage_url':source['homepage_url'],'source_url':source['source_url'],'content_type':source.get('content_type'),'digest':source['digest'],'rights_basis':'official_site_asset','redistribution_status':'review','resolution_reason':source.get('resolution_reason'),'http_status':source.get('http_status'),'content_length':source.get('content_length'),'fetched_at':source.get('fetched_at')},'normalized':{'path':str(np.relative_to(out)),'digest':sha256(normalized)},'variants':variants,'lineage':{**lineage,'source_digest':source['digest'],'renderer_version':RENDERER_VERSION},'release_eligible':True})
+            results.append({**row,'icon_identity':f"service:{row['service_id']}",'source':{'origin':('official_registered' if source.get('resolution_reason')=='registered_official' else 'reviewed_local_seed' if source.get('resolution_reason')=='reviewed_local_seed' else 'semantic_fallback' if source.get('resolution_reason')=='semantic_fallback_glyph' else 'official_discovered'),'homepage_url':source['homepage_url'],'source_url':source['source_url'],'content_type':source.get('content_type'),'digest':source['digest'],'rights_basis':('official_site_asset' if source.get('resolution_reason') in {'registered_official','rule_domain_candidate','official_discovered'} else 'reviewed_local_seed' if source.get('resolution_reason')=='reviewed_local_seed' else 'semantic_glyph'),'redistribution_status':'review','resolution_reason':source.get('resolution_reason'),'http_status':source.get('http_status'),'content_length':source.get('content_length'),'fetched_at':source.get('fetched_at')},'normalized':{'path':str(np.relative_to(out)),'digest':sha256(normalized)},'variants':variants,'lineage':{**lineage,'source_digest':source['digest'],'renderer_version':RENDERER_VERSION},'release_eligible':True})
         except Exception as exc:
             results.append({**row,'icon_identity':f"service:{row['service_id']}",'source':{'origin':'hold','digest':None,'reason':f'{type(exc).__name__}: {exc}'},'variants':{},'lineage':{**lineage,'source_digest':None,'renderer_version':RENDERER_VERSION},'release_eligible':False})
     save_cache(cache_dir,cache); results.sort(key=lambda x:x['service_id']); complete=sum(1 for r in results if r.get('release_eligible') and len(r.get('variants',{}))==8); missing=[r['service_id'] for r in results if not (r.get('release_eligible') and len(r.get('variants',{}))==8)]

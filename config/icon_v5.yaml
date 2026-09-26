@@ -1,7 +1,7 @@
 version: 5
 schema: icon_policy_v5
 active: true
-status: bootstrap
+status: phase2_acquisition
 variants:
 - source_original
 - glassmorphism
@@ -29,7 +29,11 @@ service_universe:
   - aggregate
   - category
   - domestic_aggregate
+  include_child_services: true
   require_bidirectional_coverage: true
+  require_100_percent: true
+  coverage_definition: all service entities including independent child services under
+    each provider; provider_aggregate reuses parent identity
 official_sources:
   explicit_registry: config/official_sites.yaml
   candidate_from_rule_domains: true
@@ -104,6 +108,7 @@ release:
   forbid_active_missing: true
   forbid_orphans: true
   require_immutable_lineage: true
+  require_100_percent_services: true
 historical:
   v3: historical_only
   v4: historical_only
