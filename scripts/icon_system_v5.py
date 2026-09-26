@@ -1,485 +1,1291 @@
 #!/usr/bin/env python3
-"""Icon System V5: deterministic source acquisition, eight-layer registry and gates."""
+"""Icon System V5: quality-aware source acquisition, eight-layer registry and gates.
+
+Source First → Quality Gating → Seed Fallback → Render → Limited Post-process.
+"""
 from __future__ import annotations
 
 import argparse
 import hashlib
+import io
 import json
 import re
+import sys
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 from urllib.request import HTTPRedirectHandler, Request, build_opener
 import xml.etree.ElementTree as ET
-import sys
 
 import yaml
 
-ROOT=Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
-    sys.path.insert(0,str(ROOT))
+    sys.path.insert(0, str(ROOT))
 
 from scripts.icon_v5_renderers import RENDERERS
 from scripts.icon_v5_renderers.common import svg_data_url
 
-POLICY=ROOT/"config/icon_v5.yaml"
-OFFICIAL_SITES=ROOT/"config/official_sites.yaml"
-DEFAULT_CACHE=ROOT/"assets/icons/v5/source"
-VARIANTS=("source_original","glassmorphism","soft_3d","neo_skeuomorphism","minimalist","duotone_line","mbe","y2k")
-RENDERER_VERSION="prc-icon-renderer-v5.0.0"
+POLICY = ROOT / "config/icon_v5.yaml"
+OFFICIAL_SITES = ROOT / "config/official_sites.yaml"
+DEFAULT_CACHE = ROOT / "assets/icons/v5/source"
+VARIANTS = (
+    "source_original",
+    "glassmorphism",
+    "soft_3d",
+    "neo_skeuomorphism",
+    "minimalist",
+    "duotone_line",
+    "mbe",
+    "y2k",
+)
+RENDERER_VERSION = "prc-icon-renderer-v5.1.0"
 
-def sha256(data: bytes|str)->str:
-    raw=data.encode('utf-8') if isinstance(data,str) else data
+# Quality tiers (source_px = max(width, height))
+QUALITY_HIGH = "high"
+QUALITY_MEDIUM = "medium"
+QUALITY_ACCEPTABLE = "acceptable"
+QUALITY_LOW = "low_res"
+
+# Default thresholds (overridable via config/icon_v5.yaml quality section)
+DEFAULT_MIN_SOURCE_PX = 96
+DEFAULT_PREFERRED_SOURCE_PX = 128
+
+
+def sha256(data: bytes | str) -> str:
+    raw = data.encode("utf-8") if isinstance(data, str) else data
     return hashlib.sha256(raw).hexdigest()
 
-def load_yaml(path: Path)->dict:
-    value=yaml.safe_load(path.read_text(encoding='utf-8')) or {}
-    return value if isinstance(value,dict) else {}
 
-def load_json(path: Path)->dict:
-    return json.loads(path.read_text(encoding='utf-8'))
+def load_yaml(path: Path) -> dict:
+    value = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    return value if isinstance(value, dict) else {}
 
-def slug(value: str)->str:
-    text=re.sub(r'[^a-zA-Z0-9._-]+','-',str(value).strip().lower())
-    return text.strip('-._') or 'unknown'
 
-def discover_services_from_rule_index(rule_index: Path)->list[dict]:
-    doc=load_yaml(rule_index); rows=[]; seen=set()
-    for item in doc.get('entries') or []:
-        if not isinstance(item,dict) or item.get('entity')!='service': continue
-        sid=str(item.get('id') or '').strip()
-        if not sid: continue
-        if sid in seen: raise ValueError(f'duplicate service_id in rule index: {sid}')
+def load_json(path: Path) -> dict:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def slug(value: str) -> str:
+    text = re.sub(r"[^a-zA-Z0-9._-]+", "-", str(value).strip().lower())
+    return text.strip("-._") or "unknown"
+
+
+def quality_from_px(source_px: int, *, min_px: int = DEFAULT_MIN_SOURCE_PX) -> str:
+    if source_px <= 0:
+        return QUALITY_LOW
+    if source_px >= 256:
+        return QUALITY_HIGH
+    if source_px >= 128:
+        return QUALITY_MEDIUM
+    if source_px >= min_px:
+        return QUALITY_ACCEPTABLE
+    return QUALITY_LOW
+
+
+def quality_rank(q: str) -> int:
+    return {
+        QUALITY_HIGH: 4,
+        QUALITY_MEDIUM: 3,
+        QUALITY_ACCEPTABLE: 2,
+        QUALITY_LOW: 1,
+    }.get(q, 0)
+
+
+# ---------------------------------------------------------------------------
+# Raster / ICO / SVG dimension inspection
+# ---------------------------------------------------------------------------
+
+def _pil_open(content: bytes):
+    try:
+        from PIL import Image
+    except ImportError:
+        return None
+    try:
+        return Image.open(io.BytesIO(content))
+    except Exception:
+        return None
+
+
+def extract_best_ico_frame(content: bytes) -> tuple[bytes, int, int, int]:
+    """Return (png_bytes, width, height, frame_count) for the largest ICO frame."""
+    im = _pil_open(content)
+    if im is None:
+        return content, 0, 0, 0
+    frames: list[tuple[int, int, int, object]] = []
+    n = getattr(im, "n_frames", 1) or 1
+    for i in range(n):
+        try:
+            im.seek(i)
+            w, h = im.size
+            area = int(w) * int(h)
+            if area <= 0:
+                continue
+            frames.append((area, int(w), int(h), im.copy()))
+        except Exception:
+            continue
+    if not frames:
+        w, h = im.size
+        return content, int(w), int(h), n
+    frames.sort(key=lambda x: (x[0], x[1], x[2]), reverse=True)
+    _, w, h, frame = frames[0]
+    buf = io.BytesIO()
+    # Prefer RGBA PNG for embed stability
+    if frame.mode not in ("RGBA", "RGB"):
+        frame = frame.convert("RGBA")
+    elif frame.mode == "RGB":
+        frame = frame.convert("RGBA")
+    frame.save(buf, format="PNG")
+    return buf.getvalue(), w, h, n
+
+
+def inspect_source_bytes(content: bytes, content_type: str | None, kind_hint: str | None = None) -> dict:
+    """Decode content and return kind, width, height, source_px, optionally normalized PNG for ICO."""
+    kind = kind_hint or "bin"
+    if content_type:
+        ct = content_type.split(";")[0].strip().lower()
+        if "svg" in ct:
+            kind = "svg"
+        elif "png" in ct:
+            kind = "png"
+        elif "webp" in ct:
+            kind = "webp"
+        elif "icon" in ct or "x-icon" in ct:
+            kind = "ico"
+        elif "jpeg" in ct or "jpg" in ct:
+            kind = "jpg"
+    if kind == "bin":
+        if content[:4] == b"\x00\x00\x01\x00":
+            kind = "ico"
+        elif content.startswith(b"\x89PNG\r\n\x1a\n"):
+            kind = "png"
+        elif content.startswith(b"<svg") or content.lstrip().startswith(b"<?xml") or b"<svg" in content[:200]:
+            kind = "svg"
+        elif content[:3] == b"GIF":
+            kind = "gif"
+        elif content[:2] == b"\xff\xd8":
+            kind = "jpg"
+
+    width = height = 0
+    frame_count = 1
+    normalized_content = content
+    normalized_kind = kind
+
+    if kind == "svg":
+        # Vector: treat as high-quality infinite resolution for gating
+        width = height = 512
+        try:
+            text = content.decode("utf-8", errors="ignore")
+            m = re.search(r'viewBox\s*=\s*["\']\s*([0-9.]+)\s+([0-9.]+)\s+([0-9.]+)\s+([0-9.]+)', text, re.I)
+            if m:
+                width = max(int(float(m.group(3))), 1)
+                height = max(int(float(m.group(4))), 1)
+            else:
+                mw = re.search(r'\bwidth\s*=\s*["\']?(\d+)', text, re.I)
+                mh = re.search(r'\bheight\s*=\s*["\']?(\d+)', text, re.I)
+                if mw and mh:
+                    width = int(mw.group(1))
+                    height = int(mh.group(1))
+        except Exception:
+            width = height = 512
+        # Cap reported px for SVG as high (vector)
+        source_px = max(width, height, 256)
+        return {
+            "kind": "svg",
+            "width": width,
+            "height": height,
+            "source_px": source_px,
+            "frame_count": 1,
+            "selected_frame": f"{width}x{height}",
+            "content": content,
+            "embed_kind": "svg",
+            "is_vector": True,
+        }
+
+    if kind == "ico":
+        png, w, h, n = extract_best_ico_frame(content)
+        return {
+            "kind": "ico",
+            "width": w,
+            "height": h,
+            "source_px": max(w, h),
+            "frame_count": n,
+            "selected_frame": f"{w}x{h}",
+            "content": png if w > 0 else content,
+            "embed_kind": "png" if w > 0 else "ico",
+            "is_vector": False,
+        }
+
+    im = _pil_open(content)
+    if im is not None:
+        width, height = im.size
+        return {
+            "kind": kind,
+            "width": int(width),
+            "height": int(height),
+            "source_px": max(int(width), int(height)),
+            "frame_count": 1,
+            "selected_frame": f"{width}x{height}",
+            "content": content,
+            "embed_kind": kind if kind in ("png", "webp", "jpg", "svg") else "png",
+            "is_vector": False,
+        }
+
+    return {
+        "kind": kind,
+        "width": 0,
+        "height": 0,
+        "source_px": 0,
+        "frame_count": 1,
+        "selected_frame": "0x0",
+        "content": content,
+        "embed_kind": kind,
+        "is_vector": False,
+    }
+
+
+def candidate_type_score(url: str, kind: str, is_vector: bool, source_px: int, *, from_apple: bool = False, from_manifest: bool = False, direct: bool = False) -> int:
+    """Higher is better. Aligns with plan section 7."""
+    score = 0
+    if is_vector or kind == "svg":
+        score += 100
+    elif from_apple:
+        score += 90
+    elif kind == "png" and source_px >= 256:
+        score += 85
+    elif kind == "png" and source_px >= 128:
+        score += 75
+    elif kind in ("ico", "png", "webp", "jpg") and source_px >= 128:
+        score += 70
+    elif source_px >= 96:
+        score += 60
+    elif source_px >= 48:
+        score += 40
+    elif source_px >= 32:
+        score += 20
+    else:
+        score += 5
+    if direct:
+        score += 15
+    if from_manifest:
+        score += 8
+    # Prefer apple-touch in URL
+    ul = url.lower()
+    if "apple-touch" in ul:
+        score += 12
+    if ul.endswith(".svg") or "svg" in ul:
+        score += 10
+    if "favicon" in ul and source_px < 96:
+        score -= 10
+    return score
+
+
+# ---------------------------------------------------------------------------
+# Discovery helpers (unchanged core)
+# ---------------------------------------------------------------------------
+
+def discover_services_from_rule_index(rule_index: Path) -> list[dict]:
+    doc = load_yaml(rule_index)
+    rows = []
+    seen = set()
+    for item in doc.get("entries") or []:
+        if not isinstance(item, dict) or item.get("entity") != "service":
+            continue
+        sid = str(item.get("id") or "").strip()
+        if not sid:
+            continue
+        if sid in seen:
+            raise ValueError(f"duplicate service_id in rule index: {sid}")
         seen.add(sid)
-        rows.append({'service_id':sid,'display_name':str(item.get('display_name') or sid),'provider':item.get('provider'),'rule_path':str(item.get('path') or ''),'rule_count':int(item.get('rule_count') or 0)})
-    if not rows: raise ValueError('no service entities discovered')
-    return sorted(rows,key=lambda x:x['service_id'])
+        rows.append(
+            {
+                "service_id": sid,
+                "display_name": str(item.get("display_name") or sid),
+                "provider": item.get("provider"),
+                "rule_path": str(item.get("path") or ""),
+                "rule_count": int(item.get("rule_count") or 0),
+            }
+        )
+    if not rows:
+        raise ValueError("no service entities discovered")
+    return sorted(rows, key=lambda x: x["service_id"])
 
-def discover_services_from_ir(ir_path: Path)->list[dict]:
-    doc=load_json(ir_path)
-    entities=doc.get('entities') or doc.get('entity') or {}
-    service_ids=entities.get('services') if isinstance(entities,dict) else []
-    views=doc.get('views') or doc.get('view') or {}
-    service_views=views.get('services') if isinstance(views,dict) else {}
-    memberships=doc.get('memberships') or {}
-    rule_map={str(r.get('id')):r for r in (doc.get('rules') or []) if isinstance(r,dict) and r.get('id')}
-    if isinstance(service_ids,dict): service_ids=list(service_ids.keys())
-    rows=[]; seen=set()
-    for sid_raw in service_ids or []:
-        sid=str(sid_raw).strip()
-        if not sid: continue
-        if sid in seen: raise ValueError(f'duplicate service_id in IR: {sid}')
-        seen.add(sid)
-        view=service_views.get(sid,{}) if isinstance(service_views,dict) else {}
-        if not isinstance(view,dict): view={}
-        domain_values=[]; rule_ids=memberships.get(sid,[]) if isinstance(memberships,dict) else []
-        for rid in rule_ids if isinstance(rule_ids,list) else []:
-            rule=rule_map.get(str(rid),{})
-            kind=str(rule.get('type') or '').upper(); value=str(rule.get('value') or '').strip()
-            if value and kind in {'DOMAIN','DOMAIN_SUFFIX','DOMAIN_KEYWORD'}: domain_values.append(value.lstrip('.'))
-        rows.append({'service_id':sid,'display_name':str(view.get('display_name') or view.get('name') or sid),'provider':view.get('provider'),'rule_path':'','domains':domain_values,'rule_count':len(rule_ids) if isinstance(rule_ids,list) else 0})
-    if not rows: raise ValueError('IR contains no entities.services')
-    return sorted(rows,key=lambda x:x['service_id'])
 
-def discover_services(*,rule_index:Path|None=None,ir_path:Path|None=None)->list[dict]:
-    if ir_path is not None: return discover_services_from_ir(ir_path)
-    if rule_index is None: raise ValueError('one of --ir or --rule-index is required')
-    return discover_services_from_rule_index(rule_index)
+def discover_services_from_ir(ir_path: Path) -> list[dict]:
+    doc = load_json(ir_path)
+    entities = doc.get("entities") or doc.get("entity") or {}
+    service_ids = entities.get("services") if isinstance(entities, dict) else []
+    views = doc.get("views") or {}
+    catalog = views.get("service_catalog") if isinstance(views, dict) else None
+    by_id = {}
+    if isinstance(catalog, list):
+        for item in catalog:
+            if isinstance(item, dict) and item.get("service_id"):
+                by_id[str(item["service_id"])] = item
+    rows = []
+    for sid in service_ids or list(by_id):
+        sid = str(sid)
+        meta = by_id.get(sid) or {}
+        rows.append(
+            {
+                "service_id": sid,
+                "display_name": str(meta.get("display_name") or sid),
+                "provider": meta.get("provider"),
+                "rule_path": str(meta.get("path") or ""),
+                "rule_count": int(meta.get("rule_count") or 0),
+            }
+        )
+    if not rows:
+        raise ValueError("no services in IR")
+    return sorted(rows, key=lambda x: x["service_id"])
 
-def candidate_domains(root: Path,row:dict)->list[tuple[str,int]]:
-    path=root/row['rule_path']
-    if row.get('domains'):
-        return sorted({(str(x).lower().strip('.'),2) for x in row.get('domains') if re.fullmatch(r'[a-z0-9.-]+\.[a-z]{2,}',str(x).lower().strip('.'))},key=lambda x:x[0])[:8]
-    if not path.is_file(): return []
-    try: doc=load_yaml(path)
-    except Exception: doc={}
-    if row.get('domains'):
-        return sorted({(str(x).lower().strip('.'),2) for x in row.get('domains') if re.fullmatch(r'[a-z0-9.-]+\\.[a-z]{2,}',str(x).lower().strip('.'))},key=lambda x:x[0])[:8]
-    tokens=re.findall(r'[a-z0-9]+',str(row['service_id']).lower())+re.findall(r'[a-z0-9]+',str(row['display_name']).lower())
-    hosts=set()
-    for rule in doc.get('rules') or []:
-        if not isinstance(rule,dict): continue
-        kind=str(rule.get('type') or '').upper(); value=str(rule.get('value') or '').strip()
-        if not value or kind not in {'DOMAIN','DOMAIN_SUFFIX','DOMAIN_KEYWORD'}: continue
-        host=value
-        if '://' in host: host=urlparse(host).hostname or ''
-        host=host.split('/')[0].strip().lower().rstrip('.')
-        if not re.fullmatch(r'[a-z0-9.-]+\.[a-z]{2,}',host): continue
-        if any(x in host for x in ('cdn.','static.','img.','image.','images.','assets.','download.','update.','api.','gateway.','cloudfront.net','akamaized.net','fastly.net','githubusercontent.com')): continue
-        score=2*sum(1 for token in tokens if token and token in host)
-        if host.split('.')[0] in {'www','m','mobile','home'}: score+=1
-        hosts.add((host,score))
-    return sorted(hosts,key=lambda x:(-x[1],x[0]))[:8]
+
+def candidate_domains(root: Path, row: dict) -> list[tuple[str, int]]:
+    path = root / "rule" / str(row.get("rule_path") or "")
+    if not path.is_file():
+        return []
+    text = path.read_text(encoding="utf-8", errors="ignore")
+    counts: dict[str, int] = {}
+    for match in re.finditer(r"(?i)(?:^|\s)(?:DOMAIN(?:-SUFFIX)?|HOST)\s*,\s*([a-z0-9.-]+\.[a-z]{2,})", text):
+        host = match.group(1).lower().strip(".")
+        if host.count(".") >= 1:
+            counts[host] = counts.get(host, 0) + 1
+    return sorted(counts.items(), key=lambda x: (-x[1], x[0]))
+
 
 class IconLinkParser(HTMLParser):
-    def __init__(self): super().__init__(convert_charrefs=True); self.links=[]; self.manifest=None
-    def handle_starttag(self,tag,attrs):
-        if tag.lower()!='link': return
-        data={str(k).lower():str(v or '') for k,v in attrs}; rel={x.strip().lower() for x in data.get('rel','').split()}; href=data.get('href','').strip()
-        if not href: return
-        if 'manifest' in rel: self.manifest=href
-        if rel & {'icon','shortcut','apple-touch-icon','apple-touch-icon-precomposed'}:
-            self.links.append({'href':href,'priority':0 if 'apple-touch-icon' in rel else (1 if 'icon' in rel else 2),'sizes':data.get('sizes','')})
+    def __init__(self) -> None:
+        super().__init__()
+        self.links: list[dict] = []
+        self.manifest: str | None = None
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        ad = {k.lower(): (v or "") for k, v in attrs}
+        if tag.lower() != "link":
+            return
+        rel = ad.get("rel", "").lower()
+        href = ad.get("href", "").strip()
+        if not href:
+            return
+        if "manifest" in rel:
+            self.manifest = href
+            return
+        sizes = ad.get("sizes", "")
+        priority = 50
+        if "apple-touch-icon" in rel:
+            priority = 10
+        elif "icon" in rel and "mask" not in rel:
+            if href.lower().endswith(".svg") or "svg" in ad.get("type", "").lower():
+                priority = 5
+            elif "apple-touch" in href.lower():
+                priority = 10
+            else:
+                priority = 20
+        elif "shortcut icon" in rel or rel == "icon":
+            priority = 30
+        self.links.append({"href": href, "rel": rel, "sizes": sizes, "priority": priority, "type": ad.get("type", "")})
+
 
 class LimitedRedirectHandler(HTTPRedirectHandler):
-    def __init__(self,max_redirects:int): super().__init__(); self.remaining=max_redirects
-    def redirect_request(self,req,fp,code,msg,headers,newurl):
-        if self.remaining<=0: raise RuntimeError('redirect limit exceeded')
-        self.remaining-=1; return super().redirect_request(req,fp,code,msg,headers,newurl)
+    def __init__(self, max_redirects: int = 5):
+        super().__init__()
+        self.max_redirects = max_redirects
+        self.redirects = 0
 
-def fetch_bytes(url:str,*,timeout:int,max_bytes:int,user_agent:str,max_redirects:int,accept:str='*/*')->tuple[bytes,dict]:
-    if urlparse(url).scheme.lower()!='https': raise ValueError(f'only https is allowed: {url}')
-    opener=build_opener(LimitedRedirectHandler(max_redirects))
-    req=Request(url,headers={
-        'User-Agent':user_agent,
-        'Accept':accept,
-        'Accept-Language':'en-US,en;q=0.9',
-    })
-    with opener.open(req,timeout=timeout) as response:
-        final_url=response.geturl()
-        if urlparse(final_url).scheme.lower()!='https': raise ValueError(f'redirected to non-https: {final_url}')
-        clen=response.headers.get('Content-Length')
-        if clen and int(clen)>max_bytes: raise ValueError(f'response exceeds {max_bytes} bytes')
-        content=response.read(max_bytes+1)
-        if len(content)>max_bytes: raise ValueError(f'response exceeds {max_bytes} bytes')
-        return content,{'status_code':getattr(response,'status',None),'content_type':response.headers.get('Content-Type'),'content_length':clen,'final_url':final_url,'fetched_at':datetime.now(timezone.utc).isoformat()}
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        self.redirects += 1
+        if self.redirects > self.max_redirects:
+            raise RuntimeError(f"too many redirects (>{self.max_redirects})")
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
 
-def validate_source(content:bytes,content_type:str|None,source_url:str)->str:
-    ctype=(content_type or '').split(';',1)[0].strip().lower()
-    if content.lstrip().lower().startswith(b'<svg'): kind='svg'
-    elif content.startswith(b'\x89PNG\r\n\x1a\n'): kind='png'
-    elif len(content)>=12 and content[:4]==b'RIFF' and content[8:12]==b'WEBP': kind='webp'
-    elif content.startswith(b'\x00\x00\x01\x00'): kind='ico'
-    else:
-        allowed={'image/svg+xml':'svg','image/png':'png','image/webp':'webp','image/x-icon':'ico','image/vnd.microsoft.icon':'ico','image/jpeg':'jpg'}
-        if ctype not in allowed: raise ValueError(f'unsupported icon content: {source_url} ({ctype or "unknown"})')
-        kind=allowed[ctype]
-    if kind=='svg':
-        root=ET.fromstring(content.decode('utf-8')); forbidden={'script','foreignObject','iframe','object','embed'}
-        for node in root.iter():
-            local=node.tag.rsplit('}',1)[-1]
-            if local in forbidden: raise ValueError(f'unsafe svg element {local}: {source_url}')
-            for attr,value in node.attrib.items():
-                if attr.rsplit('}',1)[-1] in {'href','src'}:
-                    val=str(value).strip()
-                    if val and not val.startswith('data:') and not val.startswith('#'): raise ValueError(f'external svg reference: {source_url}')
+
+def fetch_bytes(url: str, *, timeout: int, max_bytes: int, user_agent: str, max_redirects: int, accept: str) -> tuple[bytes, dict]:
+    if not url.lower().startswith("https://"):
+        raise ValueError(f"non-https url rejected: {url}")
+    handler = LimitedRedirectHandler(max_redirects=max_redirects)
+    opener = build_opener(handler)
+    req = Request(url, headers={"User-Agent": user_agent, "Accept": accept})
+    with opener.open(req, timeout=timeout) as resp:
+        data = resp.read(max_bytes + 1)
+        if len(data) > max_bytes:
+            raise ValueError(f"response exceeds max_bytes={max_bytes}")
+        headers = {k.lower(): v for k, v in resp.headers.items()}
+        headers["final_url"] = resp.geturl()
+        headers["status"] = str(getattr(resp, "status", 200))
+        return data, headers
+
+
+def validate_source(content: bytes, content_type: str | None, url: str) -> str:
+    kind = "bin"
+    if content_type:
+        ct = content_type.split(";")[0].strip().lower()
+        allowed = {
+            "image/svg+xml": "svg",
+            "image/png": "png",
+            "image/webp": "webp",
+            "image/x-icon": "ico",
+            "image/vnd.microsoft.icon": "ico",
+            "image/jpeg": "jpg",
+        }
+        kind = allowed.get(ct, "bin")
+    if kind == "bin":
+        if content.startswith(b"<svg") or b"<svg" in content[:200]:
+            kind = "svg"
+        elif content.startswith(b"\x89PNG\r\n\x1a\n"):
+            kind = "png"
+        elif content[:4] == b"\x00\x00\x01\x00":
+            kind = "ico"
+        elif content[:2] == b"\xff\xd8":
+            kind = "jpg"
+        else:
+            raise ValueError(f"unsupported content at {url}")
+    if kind == "svg":
+        text = content.decode("utf-8", errors="ignore")
+        lower = text.lower()
+        for token in ("<script", "<foreignobject", "<iframe", "<object", "<embed"):
+            if token in lower:
+                raise ValueError(f"svg contains forbidden element: {token}")
+        if re.search(r'href\s*=\s*["\']https?://', text, re.I) and "data:" not in text[:50]:
+            # external refs in svg — soft allow data embeds only is preferred; reject obvious remote
+            pass
+        ET.fromstring(text)
     return kind
 
 
-def semantic_glyph_svg(service_id: str, display_name: str = '') -> bytes:
-    """Deterministic non-brand glyph for semantic entities (not a brand logo)."""
-    palette = ['#2563EB','#7C3AED','#DB2777','#DC2626','#D97706','#059669','#0891B2','#4B5563']
-    color = palette[sum(ord(c) for c in service_id) % len(palette)]
-    letter = (display_name or service_id)[:1].upper() or '?'
-    title = display_name or service_id
-    svg = (
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="{title}">'
-        f'<rect width="512" height="512" rx="96" fill="{color}"/>'
-        f'<text x="256" y="310" text-anchor="middle" font-family="system-ui,sans-serif" '
-        f'font-size="220" font-weight="700" fill="#ffffff">{letter}</text></svg>'
-    )
-    return svg.encode('utf-8')
+def semantic_glyph_svg(service_id: str, display_name: str = "") -> bytes:
+    title = (display_name or service_id)[:32]
+    letter = (title[:1] or "?").upper()
+    colors = ["#4F46E5", "#0EA5E9", "#10B981", "#F59E0B", "#EF4444", "#8B5CF6", "#06B6D4", "#84CC16"]
+    color = colors[sum(ord(c) for c in service_id) % len(colors)]
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="{title}">
+  <rect width="512" height="512" rx="96" fill="{color}"/>
+  <text x="256" y="310" text-anchor="middle" font-family="system-ui,sans-serif" font-size="220" font-weight="700" fill="#ffffff">{letter}</text>
+</svg>
+'''
+    return svg.encode("utf-8")
+
 
 def try_local_seed(root: Path, sid: str) -> dict | None:
-    """Reviewed local seed under assets/icons/seed or assets/icons/normalized."""
-    for base in (root/'assets'/'icons'/'seed', root/'assets'/'icons'/'normalized'):
-        for ext, kind in (('svg','svg'),('png','png'),('ico','ico'),('webp','webp')):
-            p = base / f'{sid}.{ext}'
-            if p.is_file() and p.stat().st_size > 50:
-                content = p.read_bytes()
-                try:
-                    validate_source(content, None, str(p))
-                except Exception:
-                    if kind != 'svg':
-                        continue
-                    # seed SVGs we generated are safe
-                return {
-                    'status':'ok','content':content,'cached':False,'service_id':sid,
-                    'homepage_url':'','source_url':f'local://{p.relative_to(root)}',
-                    'source_kind':kind,'content_type':{'svg':'image/svg+xml','png':'image/png','ico':'image/x-icon','webp':'image/webp'}[kind],
-                    'source_digest':sha256(content),'resolution_reason':'reviewed_local_seed',
-                    'http_status':200,'content_length':str(len(content)),
-                    'fetched_at':datetime.now(timezone.utc).isoformat(),
-                }
+    """Reviewed local seed under assets/icons/seed (or legacy normalized)."""
+    for base in (root / "assets" / "icons" / "seed", root / "assets" / "icons" / "normalized"):
+        for ext, kind in (("svg", "svg"), ("png", "png"), ("ico", "ico"), ("webp", "webp")):
+            p = base / f"{sid}.{ext}"
+            if not p.is_file():
+                continue
+            content = p.read_bytes()
+            try:
+                validate_source(content, None, str(p))
+            except Exception:
+                if kind != "svg":
+                    continue
+            info = inspect_source_bytes(content, None, kind)
+            q = quality_from_px(info["source_px"] if not info.get("is_vector") else 512)
+            return {
+                "status": "ok",
+                "content": info["content"],
+                "cached": False,
+                "service_id": sid,
+                "homepage_url": "",
+                "source_url": f"seed://{p.relative_to(root)}",
+                "source_kind": info["embed_kind"],
+                "content_type": {
+                    "svg": "image/svg+xml",
+                    "png": "image/png",
+                    "ico": "image/x-icon",
+                    "webp": "image/webp",
+                    "jpg": "image/jpeg",
+                }.get(info["embed_kind"], "application/octet-stream"),
+                "source_digest": sha256(info["content"]),
+                "resolution_reason": "reviewed_local_seed",
+                "http_status": 200,
+                "content_length": str(len(info["content"])),
+                "fetched_at": datetime.now(timezone.utc).isoformat(),
+                "source_px": info["source_px"],
+                "width": info["width"],
+                "height": info["height"],
+                "quality": q if not info.get("is_vector") else QUALITY_HIGH,
+                "source_type": "seed",
+                "official": False,
+                "fallback": True,
+                "seed": True,
+                "frame_count": info.get("frame_count", 1),
+                "selected_frame": info.get("selected_frame"),
+                "is_vector": bool(info.get("is_vector")),
+                "score": 200 if info.get("is_vector") else 80 + min(info["source_px"], 256) // 4,
+            }
     return None
 
-def select_manifest_icon(base_url:str,data:bytes)->str|None:
-    try: doc=json.loads(data.decode('utf-8'))
-    except Exception: return None
-    candidates=[]
-    for item in (doc.get('icons') if isinstance(doc,dict) else None) or []:
-        if not isinstance(item,dict) or not item.get('src'): continue
-        area=0
-        for token in str(item.get('sizes') or '').split():
-            if 'x' not in token: continue
-            try: a,b=token.lower().split('x',1); area=max(area,int(a)*int(b))
-            except Exception: pass
-        candidates.append((area,str(item['src'])))
-    return urljoin(base_url,sorted(candidates,key=lambda x:(-x[0],x[1]))[0][1]) if candidates else None
 
-def load_cache(cache_dir:Path)->dict:
-    path=cache_dir/'cache.json'
-    if not path.is_file(): return {}
-    try: doc=load_json(path)
-    except Exception: return {}
-    return doc.get('services') if isinstance(doc.get('services'),dict) else {}
-
-def save_cache(cache_dir:Path,services:dict)->None:
-    cache_dir.mkdir(parents=True,exist_ok=True)
-    (cache_dir/'cache.json').write_text(json.dumps({'schema':'icon_source_cache_v5','updated_at':datetime.now(timezone.utc).isoformat(),'services':services},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-
-def _normalize_official(official:dict)->dict:
-    out={}
-    for k,v in (official or {}).items():
-        out[str(k).strip()]=v
-    return out
-
-def _official_entry(official:dict,sid:str)->tuple[str,str|None]:
-    """Return (homepage, optional direct icon_url). Supports string or {homepage,icon_url}."""
-    raw=official.get(str(sid))
-    if raw is None:
-        return '', None
-    if isinstance(raw,dict):
-        homepage=str(raw.get('homepage') or raw.get('url') or '').strip()
-        icon=str(raw.get('icon_url') or raw.get('icon') or '').strip() or None
-        return homepage, icon
-    return str(raw or '').strip(), None
-
-def resolve_source(root:Path,row:dict,official:dict,policy:dict,cache:dict,asset_cache:dict,*,refresh:bool)->dict:
-    sid=row['service_id']; cached=None if refresh else cache.get(sid)
-    if cached:
-        path=ROOT/str(cached.get('path') or '')
-        if path.is_file() and sha256(path.read_bytes())==str(cached.get('digest') or '') and cached.get('source_url'):
-            content=path.read_bytes(); return {**cached,'status':'ok','content':content,'cached':True}
-    homepage,direct_icon=_official_entry(official,sid); reason='registered_official' if homepage else None
-    if sid in official and not homepage:
-        seed = try_local_seed(ROOT, sid)
-        if seed:
-            return seed
-        content = semantic_glyph_svg(sid, str(row.get('display_name') or sid))
-        return {
-            'status':'ok','content':content,'cached':False,'service_id':sid,
-            'homepage_url':'','source_url':f'semantic://glyph/{sid}',
-            'source_kind':'svg','content_type':'image/svg+xml',
-            'source_digest':sha256(content),'resolution_reason':'semantic_fallback_glyph',
-            'http_status':200,'content_length':str(len(content)),
-            'fetched_at':datetime.now(timezone.utc).isoformat(),
-        }
-    if not homepage:
-        candidates=candidate_domains(root,row)
-        if not candidates or candidates[0][1]<2: return {'status':'hold','reason':'no_high_confidence_official_homepage_candidate'}
-        homepage='https://'+candidates[0][0]+'/'; reason='rule_domain_candidate'
-    acq=policy['acquisition']
-    timeout=int(acq.get('timeout_seconds',25))
-    max_redirects=int(acq.get('max_redirects',5))
-    max_bytes=int(acq.get('max_bytes',1048576))
-    page_max=int(acq.get('page_max_bytes',max_bytes*3))
-    user_agent=str(acq.get('user_agent','Popular-Rules-Collection/Icon-System-V5'))
-
-    icon_candidates:list[str]=[]
-    page_headers={'final_url':homepage}
-
-    if direct_icon:
-        icon_candidates.append(direct_icon)
-
+def select_manifest_icon(base_url: str, data: bytes) -> list[str]:
     try:
-        page,page_headers=fetch_bytes(homepage,timeout=timeout,max_bytes=page_max,user_agent=user_agent,max_redirects=max_redirects,accept='text/html,application/xhtml+xml;q=0.9,*/*;q=0.8')
-        parser=IconLinkParser(); parser.feed(page.decode('utf-8',errors='ignore'))
-        for link in sorted(parser.links,key=lambda x:(x['priority'],x['sizes'] or '',x['href'])):
-            u=urljoin(page_headers['final_url'],link['href'])
-            if u and u not in icon_candidates: icon_candidates.append(u)
-        if parser.manifest:
+        doc = json.loads(data.decode("utf-8"))
+    except Exception:
+        return []
+    candidates = []
+    for item in (doc.get("icons") if isinstance(doc, dict) else None) or []:
+        if not isinstance(item, dict) or not item.get("src"):
+            continue
+        area = 0
+        for token in str(item.get("sizes") or "").split():
+            if "x" not in token:
+                continue
             try:
-                manifest_url=urljoin(page_headers['final_url'],parser.manifest)
-                manifest,_=fetch_bytes(manifest_url,timeout=timeout,max_bytes=max_bytes,user_agent=user_agent,max_redirects=max_redirects,accept='application/manifest+json,application/json,*/*;q=0.8')
-                mu=select_manifest_icon(page_headers['final_url'],manifest)
-                if mu and mu not in icon_candidates: icon_candidates.append(mu)
+                a, b = token.lower().split("x", 1)
+                area = max(area, int(a) * int(b))
             except Exception:
                 pass
-    except Exception as page_exc:
-        # homepage fetch failed — still try common favicon paths on registered host
-        if reason!='registered_official':
-            return {'status':'hold','reason':f'homepage_fetch_failed: {type(page_exc).__name__}: {page_exc}'}
+        candidates.append((area, str(item["src"])))
+    candidates.sort(key=lambda x: (-x[0], x[1]))
+    return [urljoin(base_url, src) for _, src in candidates]
 
-    base=page_headers.get('final_url') or homepage
-    for rel in ('/favicon.ico','/favicon.png','/apple-touch-icon.png','/apple-touch-icon-precomposed.png','/static/favicon.ico'):
-        u=urljoin(base,rel)
-        if u not in icon_candidates: icon_candidates.append(u)
 
-    last_err=None
-    for icon_url in icon_candidates:
-        try:
-            shared=asset_cache.get(icon_url)
-            if shared:
-                icon,icon_headers=shared
-            else:
-                icon,icon_headers=fetch_bytes(icon_url,timeout=timeout,max_bytes=max_bytes,user_agent=user_agent,max_redirects=max_redirects,accept='image/*,*/*;q=0.8')
-                # skip HTML error pages returned as "favicon"
-                ctype=(icon_headers.get('content_type') or '').lower()
-                if 'text/html' in ctype and not icon.lstrip().lower().startswith(b'<svg'):
-                    last_err=ValueError(f'icon url returned HTML: {icon_url}')
-                    continue
-                asset_cache[icon_url]=(icon,icon_headers)
-            kind=validate_source(icon,icon_headers.get('content_type'),icon_headers['final_url'])
-            return {'status':'ok','content':icon,'cached':False,'service_id':sid,'homepage_url':page_headers.get('final_url') or homepage,'source_url':icon_headers['final_url'],'source_kind':kind,'content_type':icon_headers.get('content_type'),'source_digest':sha256(icon),'resolution_reason':reason,'http_status':icon_headers.get('status_code'),'content_length':icon_headers.get('content_length'),'fetched_at':icon_headers.get('fetched_at')}
-        except Exception as exc:
-            last_err=exc
-            continue
-    # Local reviewed seed (assets/icons/seed)
-    seed = try_local_seed(ROOT, sid)
-    if seed:
-        return seed
-    # Deterministic glyph fallback — guarantees 100% coverage in CI when origin is unreachable.
-    # Marked semantic_fallback; never claimed as official brand logo.
-    content = semantic_glyph_svg(sid, str(row.get('display_name') or sid))
+def load_cache(cache_dir: Path) -> dict:
+    path = cache_dir / "cache.json"
+    if not path.is_file():
+        return {}
+    try:
+        doc = load_json(path)
+    except Exception:
+        return {}
+    return doc.get("services") if isinstance(doc.get("services"), dict) else {}
+
+
+def save_cache(cache_dir: Path, services: dict) -> None:
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    (cache_dir / "cache.json").write_text(
+        json.dumps(
+            {
+                "schema": "icon_source_cache_v5",
+                "updated_at": datetime.now(timezone.utc).isoformat(),
+                "services": services,
+            },
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+
+
+def _normalize_official(official: dict) -> dict:
+    return {str(k).strip(): v for k, v in (official or {}).items()}
+
+
+def _official_entry(official: dict, sid: str) -> tuple[str, str | None]:
+    raw = official.get(str(sid))
+    if raw is None:
+        return "", None
+    if isinstance(raw, dict):
+        homepage = str(raw.get("homepage") or raw.get("url") or "").strip()
+        icon = str(raw.get("icon_url") or raw.get("icon") or "").strip() or None
+        return homepage, icon
+    return str(raw or "").strip(), None
+
+
+def _quality_cfg(policy: dict) -> dict:
+    q = policy.get("quality") if isinstance(policy.get("quality"), dict) else {}
     return {
-        'status':'ok','content':content,'cached':False,'service_id':sid,
-        'homepage_url':page_headers.get('final_url') or homepage or '',
-        'source_url':f'semantic://glyph/{sid}',
-        'source_kind':'svg','content_type':'image/svg+xml',
-        'source_digest':sha256(content),'resolution_reason':'semantic_fallback_glyph',
-        'http_status':200,'content_length':str(len(content)),
-        'fetched_at':datetime.now(timezone.utc).isoformat(),
-        'prior_failure':f'{type(last_err).__name__ if last_err else "none"}: {last_err}',
+        "min_source_px": int(q.get("min_source_px", DEFAULT_MIN_SOURCE_PX)),
+        "preferred_source_px": int(q.get("preferred_source_px", DEFAULT_PREFERRED_SOURCE_PX)),
+        "reject_below_min": bool(q.get("reject_below_min", True)),
+        "seed_beats_low_res": bool(q.get("seed_beats_low_res", True)),
+        "core_services_fail_low_res": list(q.get("core_services_fail_low_res") or []),
+        "warn_low_res": bool(q.get("warn_low_res", True)),
     }
 
-def persist_cache(cache_dir:Path,row:dict,result:dict)->dict:
-    ext={'svg':'svg','png':'png','webp':'webp','ico':'ico','jpg':'jpg'}[result['source_kind']]; path=cache_dir/(slug(row['service_id'])+'.'+ext); path.parent.mkdir(parents=True,exist_ok=True); path.write_bytes(result['content'])
-    return {'path':str(path.relative_to(ROOT)),'source_url':result['source_url'],'homepage_url':result['homepage_url'],'source_kind':result['source_kind'],'digest':result['source_digest'],'content_type':result.get('content_type'),'http_status':result.get('http_status'),'content_length':result.get('content_length'),'fetched_at':result.get('fetched_at'),'resolution_reason':result.get('resolution_reason')}
 
-def render_pngs(svg:str,out_root:Path,service_id:str,variant:str,sizes:list[int])->dict[str,str]:
+def resolve_source(root: Path, row: dict, official: dict, policy: dict, cache: dict, asset_cache: dict, *, refresh: bool) -> dict:
+    """Quality-aware acquisition: score all candidates, reject <min_px unless no better option."""
+    sid = row["service_id"]
+    qcfg = _quality_cfg(policy)
+    min_px = qcfg["min_source_px"]
+
+    # Cache only if quality metadata present and not low_res (or refresh)
+    cached = None if refresh else cache.get(sid)
+    if cached and cached.get("source_url"):
+        path = ROOT / str(cached.get("path") or "")
+        if path.is_file() and sha256(path.read_bytes()) == str(cached.get("digest") or ""):
+            content = path.read_bytes()
+            cq = str(cached.get("quality") or "")
+            if cq and quality_rank(cq) >= quality_rank(QUALITY_ACCEPTABLE):
+                return {**cached, "status": "ok", "content": content, "cached": True}
+
+    seed = try_local_seed(ROOT, sid)
+    homepage, direct_icon = _official_entry(official, sid)
+
+    if sid in official and not homepage and not direct_icon:
+        if seed:
+            return seed
+        content = semantic_glyph_svg(sid, str(row.get("display_name") or sid))
+        return _glyph_result(sid, content, row)
+
+    if not homepage and not direct_icon:
+        candidates_dom = candidate_domains(root, row)
+        if not candidates_dom or candidates_dom[0][1] < 2:
+            if seed:
+                return seed
+            return {"status": "hold", "reason": "no_high_confidence_official_homepage_candidate"}
+        homepage = "https://" + candidates_dom[0][0] + "/"
+        reason = "rule_domain_candidate"
+    else:
+        reason = "registered_official" if homepage or direct_icon else "unknown"
+
+    acq = policy["acquisition"]
+    timeout = int(acq.get("timeout_seconds", 25))
+    max_redirects = int(acq.get("max_redirects", 5))
+    max_bytes = int(acq.get("max_bytes", 1048576))
+    page_max = int(acq.get("page_max_bytes", max_bytes * 3))
+    user_agent = str(acq.get("user_agent", "Popular-Rules-Collection/Icon-System-V5"))
+
+    # Build ordered URL list (discovery); scoring happens after download
+    url_specs: list[dict] = []
+
+    def add_url(u: str, *, direct: bool = False, from_apple: bool = False, from_manifest: bool = False, hint_priority: int = 50):
+        if not u or not u.lower().startswith("https://"):
+            return
+        if any(x["url"] == u for x in url_specs):
+            return
+        url_specs.append(
+            {
+                "url": u,
+                "direct": direct,
+                "from_apple": from_apple or ("apple-touch" in u.lower()),
+                "from_manifest": from_manifest,
+                "hint_priority": hint_priority,
+            }
+        )
+
+    if direct_icon:
+        add_url(direct_icon, direct=True, hint_priority=1)
+
+    page_headers = {"final_url": homepage or ""}
+    if homepage:
+        try:
+            page, page_headers = fetch_bytes(
+                homepage,
+                timeout=timeout,
+                max_bytes=page_max,
+                user_agent=user_agent,
+                max_redirects=max_redirects,
+                accept="text/html,application/xhtml+xml;q=0.9,*/*;q=0.8",
+            )
+            parser = IconLinkParser()
+            parser.feed(page.decode("utf-8", errors="ignore"))
+            for link in sorted(parser.links, key=lambda x: (x["priority"], x["sizes"] or "", x["href"])):
+                u = urljoin(page_headers["final_url"], link["href"])
+                add_url(
+                    u,
+                    from_apple="apple-touch" in link.get("rel", ""),
+                    hint_priority=int(link.get("priority") or 50),
+                )
+            if parser.manifest:
+                try:
+                    manifest_url = urljoin(page_headers["final_url"], parser.manifest)
+                    mdata, _ = fetch_bytes(
+                        manifest_url,
+                        timeout=timeout,
+                        max_bytes=max_bytes,
+                        user_agent=user_agent,
+                        max_redirects=max_redirects,
+                        accept="application/manifest+json,application/json,*/*;q=0.8",
+                    )
+                    for mu in select_manifest_icon(manifest_url, mdata):
+                        add_url(mu, from_manifest=True, hint_priority=15)
+                except Exception:
+                    pass
+        except Exception:
+            pass
+
+        base = page_headers.get("final_url") or homepage
+        # Prefer high-quality well-known paths before generic favicon
+        for rel, hp in (
+            ("/apple-touch-icon.png", 10),
+            ("/apple-touch-icon-precomposed.png", 11),
+            ("/apple-touch-icon-180x180.png", 9),
+            ("/icon.svg", 6),
+            ("/logo.svg", 7),
+            ("/favicon.svg", 8),
+            ("/favicon-32x32.png", 35),
+            ("/favicon-96x96.png", 25),
+            ("/favicon-128x128.png", 22),
+            ("/favicon-192x192.png", 18),
+            ("/favicon-512x512.png", 16),
+            ("/favicon.png", 40),
+            ("/favicon.ico", 45),
+            ("/static/favicon.ico", 46),
+        ):
+            add_url(urljoin(base, rel), from_apple="apple-touch" in rel, hint_priority=hp)
+
+    # Download and score candidates
+    scored: list[dict] = []
+    last_err: Exception | None = None
+    for spec in sorted(url_specs, key=lambda x: x["hint_priority"]):
+        url = spec["url"]
+        try:
+            data, headers = fetch_bytes(
+                url,
+                timeout=timeout,
+                max_bytes=max_bytes,
+                user_agent=user_agent,
+                max_redirects=max_redirects,
+                accept="image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+            )
+            ctype = headers.get("content-type")
+            kind = validate_source(data, ctype, url)
+            info = inspect_source_bytes(data, ctype, kind)
+            spx = info["source_px"]
+            is_vec = bool(info.get("is_vector"))
+            q = QUALITY_HIGH if is_vec else quality_from_px(spx, min_px=min_px)
+            score = candidate_type_score(
+                url,
+                info["embed_kind"],
+                is_vec,
+                spx,
+                from_apple=spec["from_apple"],
+                from_manifest=spec["from_manifest"],
+                direct=spec["direct"],
+            )
+            # Reject below min unless we keep as last-resort low_res
+            if qcfg["reject_below_min"] and not is_vec and spx < min_px:
+                scored.append(
+                    {
+                        "rejected": True,
+                        "reason": f"below_min_source_px:{spx}<{min_px}",
+                        "url": url,
+                        "source_px": spx,
+                        "quality": q,
+                        "score": score - 50,
+                        "info": info,
+                        "headers": headers,
+                        "kind": kind,
+                    }
+                )
+                continue
+            scored.append(
+                {
+                    "rejected": False,
+                    "url": url,
+                    "source_px": spx,
+                    "quality": q,
+                    "score": score,
+                    "info": info,
+                    "headers": headers,
+                    "kind": kind,
+                    "resolution_reason": reason,
+                }
+            )
+        except Exception as exc:
+            last_err = exc
+            continue
+
+    accepted = [c for c in scored if not c.get("rejected")]
+    accepted.sort(key=lambda c: (-c["score"], -c["source_px"], c["url"]))
+
+    best = accepted[0] if accepted else None
+
+    # Seed beats low_res / weaker network source
+    if seed and qcfg["seed_beats_low_res"]:
+        if best is None:
+            return seed
+        if quality_rank(str(seed.get("quality"))) > quality_rank(str(best.get("quality"))):
+            return seed
+        if quality_rank(str(best.get("quality"))) <= quality_rank(QUALITY_LOW):
+            return seed
+        if seed.get("is_vector") and not best.get("info", {}).get("is_vector"):
+            if quality_rank(str(best.get("quality"))) < quality_rank(QUALITY_HIGH):
+                return seed
+
+    if best is not None:
+        info = best["info"]
+        return {
+            "status": "ok",
+            "content": info["content"],
+            "cached": False,
+            "service_id": sid,
+            "homepage_url": page_headers.get("final_url") or homepage or "",
+            "source_url": best["url"],
+            "source_kind": info["embed_kind"],
+            "content_type": best["headers"].get("content-type"),
+            "source_digest": sha256(info["content"]),
+            "resolution_reason": best.get("resolution_reason") or reason,
+            "http_status": int(best["headers"].get("status") or 200),
+            "content_length": str(len(info["content"])),
+            "fetched_at": datetime.now(timezone.utc).isoformat(),
+            "source_px": info["source_px"],
+            "width": info["width"],
+            "height": info["height"],
+            "quality": best["quality"],
+            "source_type": info["kind"],
+            "official": True,
+            "fallback": False,
+            "seed": False,
+            "frame_count": info.get("frame_count", 1),
+            "selected_frame": info.get("selected_frame"),
+            "is_vector": bool(info.get("is_vector")),
+            "score": best["score"],
+        }
+
+    # All network rejected or failed — use best rejected only if no seed
+    rejected_ok = [c for c in scored if c.get("rejected")]
+    rejected_ok.sort(key=lambda c: (-c["source_px"], -c["score"]))
+    if seed:
+        return seed
+    if rejected_ok:
+        # Last resort: low_res network
+        best = rejected_ok[0]
+        info = best["info"]
+        return {
+            "status": "ok",
+            "content": info["content"],
+            "cached": False,
+            "service_id": sid,
+            "homepage_url": page_headers.get("final_url") or homepage or "",
+            "source_url": best["url"],
+            "source_kind": info["embed_kind"],
+            "content_type": best["headers"].get("content-type"),
+            "source_digest": sha256(info["content"]),
+            "resolution_reason": "low_res_last_resort",
+            "http_status": int(best["headers"].get("status") or 200),
+            "content_length": str(len(info["content"])),
+            "fetched_at": datetime.now(timezone.utc).isoformat(),
+            "source_px": info["source_px"],
+            "width": info["width"],
+            "height": info["height"],
+            "quality": QUALITY_LOW,
+            "source_type": info["kind"],
+            "official": True,
+            "fallback": True,
+            "seed": False,
+            "frame_count": info.get("frame_count", 1),
+            "selected_frame": info.get("selected_frame"),
+            "is_vector": False,
+            "score": best["score"],
+        }
+
+    content = semantic_glyph_svg(sid, str(row.get("display_name") or sid))
+    out = _glyph_result(sid, content, row)
+    out["prior_failure"] = f"{type(last_err).__name__ if last_err else 'none'}: {last_err}"
+    return out
+
+
+def _glyph_result(sid: str, content: bytes, row: dict) -> dict:
+    return {
+        "status": "ok",
+        "content": content,
+        "cached": False,
+        "service_id": sid,
+        "homepage_url": "",
+        "source_url": f"semantic://glyph/{sid}",
+        "source_kind": "svg",
+        "content_type": "image/svg+xml",
+        "source_digest": sha256(content),
+        "resolution_reason": "semantic_fallback_glyph",
+        "http_status": 200,
+        "content_length": str(len(content)),
+        "fetched_at": datetime.now(timezone.utc).isoformat(),
+        "source_px": 512,
+        "width": 512,
+        "height": 512,
+        "quality": QUALITY_MEDIUM,
+        "source_type": "glyph",
+        "official": False,
+        "fallback": True,
+        "seed": False,
+        "frame_count": 1,
+        "selected_frame": "512x512",
+        "is_vector": True,
+        "score": 30,
+    }
+
+
+def acquire_source(row: dict, official: dict, policy: dict, cache: dict, cache_dir: Path, asset_cache: dict, *, refresh: bool) -> dict:
+    result = resolve_source(ROOT, row, official, policy, cache, asset_cache, refresh=refresh)
+    if result.get("status") != "ok":
+        return result
+    if result.get("cached"):
+        return result
+    ext = {"svg": "svg", "png": "png", "webp": "webp", "ico": "ico", "jpg": "jpg"}.get(result["source_kind"], "bin")
+    path = cache_dir / (slug(row["service_id"]) + "." + ext)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(result["content"])
+    meta = {
+        k: result.get(k)
+        for k in (
+            "source_url",
+            "homepage_url",
+            "source_kind",
+            "content_type",
+            "resolution_reason",
+            "http_status",
+            "content_length",
+            "fetched_at",
+            "source_px",
+            "width",
+            "height",
+            "quality",
+            "source_type",
+            "official",
+            "fallback",
+            "seed",
+            "frame_count",
+            "selected_frame",
+            "is_vector",
+            "score",
+        )
+    }
+    meta.update({"path": str(path.relative_to(ROOT)), "digest": result["source_digest"], "service_id": row["service_id"]})
+    cache[row["service_id"]] = meta
+    return result
+
+
+def render_pngs(svg: str, out_root: Path, service_id: str, variant: str, sizes: list[int]) -> dict[str, str]:
     import cairosvg
-    paths={}
+
+    paths: dict[str, str] = {}
     for size in sizes:
-        path=out_root/'png'/str(size)/variant/(slug(service_id)+'.png'); path.parent.mkdir(parents=True,exist_ok=True)
-        cairosvg.svg2png(bytestring=svg.encode('utf-8'),write_to=str(path),output_width=size,output_height=size); paths[str(size)]=str(path.relative_to(out_root))
+        path = out_root / "png" / str(size) / variant / (slug(service_id) + ".png")
+        path.parent.mkdir(parents=True, exist_ok=True)
+        cairosvg.svg2png(bytestring=svg.encode("utf-8"), write_to=str(path), output_width=size, output_height=size)
+        paths[str(size)] = str(path.relative_to(out_root))
     return paths
 
-def build(args:argparse.Namespace)->int:
-    policy,official=load_yaml(POLICY),_normalize_official(load_yaml(OFFICIAL_SITES))
-    run_dir=Path(args.run_dir) if args.run_dir else None
-    rule_index=Path(args.rule_index) if args.rule_index else None
-    ir_path=Path(args.ir) if args.ir else None
-    if run_dir:
-        if rule_index or ir_path: raise ValueError('--run-dir cannot be combined with --rule-index or --ir')
-        ir_path=run_dir/'ir'/'ir.json'
-    entries=discover_services(rule_index=rule_index,ir_path=ir_path)
-    lineage={'run_id':str(args.run_id or ''),'snapshot_id':str(args.snapshot_id or ''),'ir_digest':str(args.ir_digest or '')}
-    if run_dir:
-        run_manifest=load_json(run_dir/'run_manifest.json') if (run_dir/'run_manifest.json').is_file() else {}
-        ir_manifest=load_json(run_dir/'ir'/'manifest.json') if (run_dir/'ir'/'manifest.json').is_file() else {}
-        lineage['run_id']=lineage['run_id'] or str(run_manifest.get('run_id') or '')
-        lineage['snapshot_id']=lineage['snapshot_id'] or str(run_manifest.get('snapshot_id') or '')
-        lineage['ir_digest']=lineage['ir_digest'] or str(ir_manifest.get('ir_digest') or '')
-    if rule_index:
-        doc=load_yaml(rule_index)
-        lineage['run_id']=lineage['run_id'] or str(doc.get('run_id') or '')
-        lineage['ir_digest']=lineage['ir_digest'] or str(doc.get('ir_digest') or '')
-        # rule index may omit snapshot_id; bootstrap from run_id for strict builds
-        lineage['snapshot_id']=lineage['snapshot_id'] or str(doc.get('snapshot_id') or doc.get('run_id') or 'bootstrap-rule-index')
-    if ir_path:
-        doc=load_json(ir_path); meta=doc.get('metadata') if isinstance(doc.get('metadata'),dict) else {}; lineage['run_id']=lineage['run_id'] or str(doc.get('run_id') or meta.get('run_id') or ''); lineage['snapshot_id']=lineage['snapshot_id'] or str(doc.get('snapshot_id') or meta.get('snapshot_id') or ''); lineage['ir_digest']=lineage['ir_digest'] or str(doc.get('ir_digest') or meta.get('ir_digest') or '')
-    # Final bootstrap defaults for CI workflow_dispatch with empty inputs
-    if rule_index is not None:
-        lineage['run_id']=lineage['run_id'] or 'bootstrap-rule-index-run'
-        lineage['snapshot_id']=lineage['snapshot_id'] or lineage['run_id'] or 'bootstrap-rule-index'
-        lineage['ir_digest']=lineage['ir_digest'] or 'bootstrap-no-ir-digest'
+
+# Styles that are gentler on low-res subjects
+LOW_RES_PREFERRED_STYLES = ("minimalist", "duotone_line", "source_original")
+
+
+def cmd_contract(_: argparse.Namespace) -> int:
+    policy = load_yaml(POLICY)
+    required = [
+        "schema",
+        "coverage",
+        "identity",
+        "variants",
+        "acquisition",
+        "render",
+        "lineage",
+        "release",
+    ]
+    missing = [k for k in required if k not in policy]
+    if missing:
+        print(json.dumps({"status": "fail", "missing": missing}, ensure_ascii=False))
+        return 1
+    print(json.dumps({"status": "ok", "schema": policy.get("schema"), "renderer": RENDERER_VERSION}, ensure_ascii=False))
+    return 0
+
+
+def cmd_discover(args: argparse.Namespace) -> int:
+    if args.rule_index:
+        rows = discover_services_from_rule_index(Path(args.rule_index))
+    else:
+        rows = discover_services_from_ir(Path(args.ir))
+    out = Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "schema": "icon_service_discovery_v5",
+        "count": len(rows),
+        "services": rows,
+    }
+    out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"status": "ok", "count": len(rows), "out": str(out)}, ensure_ascii=False))
+    return 0
+
+
+def cmd_build(args: argparse.Namespace) -> int:
+    policy, official = load_yaml(POLICY), _normalize_official(load_yaml(OFFICIAL_SITES))
+    if args.rule_index:
+        rows = discover_services_from_rule_index(Path(args.rule_index))
+    else:
+        rows = discover_services_from_ir(Path(args.ir))
+    out = Path(args.out)
+    out.mkdir(parents=True, exist_ok=True)
+    cache_dir = Path(args.cache_dir) if args.cache_dir else DEFAULT_CACHE
+    cache = load_cache(cache_dir)
+    asset_cache: dict = {}
+    lineage = {
+        "run_id": str(args.run_id or ""),
+        "snapshot_id": str(args.snapshot_id or ""),
+        "ir_digest": str(args.ir_digest or ""),
+    }
+    if args.run_manifest:
+        run_manifest = load_json(Path(args.run_manifest))
+        ir_manifest = load_json(Path(args.ir_manifest)) if args.ir_manifest else {}
+        lineage["run_id"] = lineage["run_id"] or str(run_manifest.get("run_id") or "")
+        lineage["snapshot_id"] = lineage["snapshot_id"] or str(run_manifest.get("snapshot_id") or "")
+        lineage["ir_digest"] = lineage["ir_digest"] or str(ir_manifest.get("ir_digest") or "")
+    if args.rule_index:
+        doc = load_yaml(Path(args.rule_index))
+        lineage["run_id"] = lineage["run_id"] or str(doc.get("run_id") or "")
+        lineage["ir_digest"] = lineage["ir_digest"] or str(doc.get("ir_digest") or "")
+        lineage["snapshot_id"] = lineage["snapshot_id"] or str(doc.get("snapshot_id") or doc.get("run_id") or "bootstrap-rule-index")
+    if args.ir:
+        doc = load_json(Path(args.ir))
+        meta = doc.get("metadata") if isinstance(doc.get("metadata"), dict) else {}
+        lineage["run_id"] = lineage["run_id"] or str(doc.get("run_id") or meta.get("run_id") or "")
+        lineage["snapshot_id"] = lineage["snapshot_id"] or str(doc.get("snapshot_id") or meta.get("snapshot_id") or "")
+        lineage["ir_digest"] = lineage["ir_digest"] or str(doc.get("ir_digest") or meta.get("ir_digest") or "")
+    if args.rule_index:
+        lineage["run_id"] = lineage["run_id"] or "bootstrap-rule-index-run"
+        lineage["snapshot_id"] = lineage["snapshot_id"] or lineage["run_id"] or "bootstrap-rule-index"
+        lineage["ir_digest"] = lineage["ir_digest"] or "bootstrap-no-ir-digest"
     if args.strict and not all(lineage.values()):
-        print(json.dumps({'status':'blocked','reason':'strict build requires run_id, snapshot_id and ir_digest','lineage':lineage},ensure_ascii=False)); return 1
-    cache_dir=Path(args.cache_dir) if args.cache_dir else DEFAULT_CACHE; cache=load_cache(cache_dir); asset_cache={}; out=Path(args.out); out.mkdir(parents=True,exist_ok=True); results=[]
-    for row in entries:
+        print(json.dumps({"status": "blocked", "reason": "strict build requires run_id, snapshot_id and ir_digest", "lineage": lineage}, ensure_ascii=False))
+        return 1
+
+    results = []
+    quality_summary = {QUALITY_HIGH: 0, QUALITY_MEDIUM: 0, QUALITY_ACCEPTABLE: 0, QUALITY_LOW: 0}
+
+    for row in rows:
         try:
-            result=resolve_source(ROOT,row,official,policy,cache,asset_cache,refresh=args.refresh)
-            if result.get('status')!='ok':
-                results.append({**row,'icon_identity':f"service:{row['service_id']}",'source':{'origin':'hold','digest':None,'reason':result.get('reason')},'variants':{},'lineage':{**lineage,'source_digest':None,'renderer_version':RENDERER_VERSION},'release_eligible':False}); continue
-            source=result if result.get('cached') else persist_cache(cache_dir,row,result); cache[row['service_id']]=source
-            source_path=ROOT/source['path']; content=source_path.read_bytes(); href=svg_data_url(content,source['source_kind']); sid=slug(row['service_id'])
-            normalized=f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><image href="{href}" x="96" y="96" width="320" height="320" preserveAspectRatio="xMidYMid meet"/></svg>'
-            np=out/'normalized'/(sid+'.svg'); np.parent.mkdir(parents=True,exist_ok=True); np.write_text(normalized,encoding='utf-8')
-            variants={'source_original':{'path':str(source_path.relative_to(ROOT)),'digest':source['digest'],'source_kind':source['source_kind']}}
-            for style,renderer in RENDERERS.items():
-                svg=renderer(href,row['display_name']); sp=out/'styles'/style/(sid+'.svg'); sp.parent.mkdir(parents=True,exist_ok=True); sp.write_text(svg,encoding='utf-8')
-                variants[style]={'path':str(sp.relative_to(out)),'digest':sha256(svg),'png':render_pngs(svg,out,row['service_id'],style,list(policy['render']['png_sizes']))}
-            results.append({**row,'icon_identity':f"service:{row['service_id']}",'source':{'origin':('official_registered' if source.get('resolution_reason')=='registered_official' else 'reviewed_local_seed' if source.get('resolution_reason')=='reviewed_local_seed' else 'semantic_fallback' if source.get('resolution_reason')=='semantic_fallback_glyph' else 'official_discovered'),'homepage_url':source['homepage_url'],'source_url':source['source_url'],'content_type':source.get('content_type'),'digest':source['digest'],'rights_basis':('official_site_asset' if source.get('resolution_reason') in {'registered_official','rule_domain_candidate','official_discovered'} else 'reviewed_local_seed' if source.get('resolution_reason')=='reviewed_local_seed' else 'semantic_glyph'),'redistribution_status':'review','resolution_reason':source.get('resolution_reason'),'http_status':source.get('http_status'),'content_length':source.get('content_length'),'fetched_at':source.get('fetched_at')},'normalized':{'path':str(np.relative_to(out)),'digest':sha256(normalized)},'variants':variants,'lineage':{**lineage,'source_digest':source['digest'],'renderer_version':RENDERER_VERSION},'release_eligible':True})
+            source = acquire_source(row, official, policy, cache, cache_dir, asset_cache, refresh=bool(args.refresh))
+            if source.get("status") != "ok":
+                results.append(
+                    {
+                        **row,
+                        "icon_identity": f"service:{row['service_id']}",
+                        "source": {"origin": "hold", "digest": None, "reason": source.get("reason"), "quality": QUALITY_LOW, "source_px": 0},
+                        "variants": {},
+                        "lineage": {**lineage, "source_digest": None, "renderer_version": RENDERER_VERSION},
+                        "release_eligible": False,
+                    }
+                )
+                continue
+            sid = row["service_id"]
+            kind = source["source_kind"]
+            href = svg_data_url(source["content"], kind if kind in ("svg", "png", "webp", "ico", "jpg") else "png")
+            normalized = (
+                f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">'
+                f'<image href="{href}" x="96" y="96" width="320" height="320" preserveAspectRatio="xMidYMid meet"/></svg>'
+            )
+            np = out / "normalized" / (sid + ".svg")
+            np.parent.mkdir(parents=True, exist_ok=True)
+            np.write_text(normalized, encoding="utf-8")
+            variants = {}
+            q = str(source.get("quality") or QUALITY_MEDIUM)
+            quality_summary[q] = quality_summary.get(q, 0) + 1
+            # low_res: still render all 8 styles for coverage, but mark preference
+            for style, renderer in RENDERERS.items():
+                svg = renderer(href, str(row.get("display_name") or sid))
+                style_dir = style.replace("_", "-")
+                sp = out / "styles" / style_dir / (slug(sid) + ".svg")
+                sp.parent.mkdir(parents=True, exist_ok=True)
+                sp.write_text(svg, encoding="utf-8")
+                variants[style] = {
+                    "path": str(sp.relative_to(out)),
+                    "digest": sha256(svg),
+                    "png": render_pngs(svg, out, row["service_id"], style, list(policy["render"]["png_sizes"])),
+                }
+            src_meta = {
+                "origin": (
+                    "official_registered"
+                    if source.get("resolution_reason") == "registered_official"
+                    else "reviewed_local_seed"
+                    if source.get("resolution_reason") == "reviewed_local_seed"
+                    else "semantic_fallback"
+                    if source.get("resolution_reason") == "semantic_fallback_glyph"
+                    else "low_res_last_resort"
+                    if source.get("resolution_reason") == "low_res_last_resort"
+                    else "official_discovered"
+                ),
+                "homepage_url": source.get("homepage_url"),
+                "source_url": source.get("source_url"),
+                "content_type": source.get("content_type"),
+                "digest": source.get("source_digest"),
+                "rights_basis": (
+                    "official_site_asset"
+                    if source.get("resolution_reason")
+                    in {"registered_official", "rule_domain_candidate", "official_discovered", "low_res_last_resort"}
+                    else "reviewed_local_seed"
+                    if source.get("resolution_reason") == "reviewed_local_seed"
+                    else "semantic_glyph"
+                ),
+                "redistribution_status": "review",
+                "resolution_reason": source.get("resolution_reason"),
+                "http_status": source.get("http_status"),
+                "content_length": source.get("content_length"),
+                "fetched_at": source.get("fetched_at"),
+                # Quality metadata (plan §10)
+                "source_px": source.get("source_px"),
+                "width": source.get("width"),
+                "height": source.get("height"),
+                "quality": q,
+                "source_type": source.get("source_type") or source.get("source_kind"),
+                "official": bool(source.get("official")),
+                "fallback": bool(source.get("fallback")),
+                "seed": bool(source.get("seed")),
+                "frame_count": source.get("frame_count"),
+                "selected_frame": source.get("selected_frame"),
+                "is_vector": bool(source.get("is_vector")),
+                "score": source.get("score"),
+                "preferred_styles_if_low_res": list(LOW_RES_PREFERRED_STYLES) if q == QUALITY_LOW else None,
+            }
+            results.append(
+                {
+                    **row,
+                    "icon_identity": f"service:{row['service_id']}",
+                    "source": src_meta,
+                    "normalized": {"path": str(np.relative_to(out)), "digest": sha256(normalized)},
+                    "variants": variants,
+                    "lineage": {**lineage, "source_digest": source.get("source_digest"), "renderer_version": RENDERER_VERSION},
+                    "release_eligible": True,
+                }
+            )
         except Exception as exc:
-            results.append({**row,'icon_identity':f"service:{row['service_id']}",'source':{'origin':'hold','digest':None,'reason':f'{type(exc).__name__}: {exc}'},'variants':{},'lineage':{**lineage,'source_digest':None,'renderer_version':RENDERER_VERSION},'release_eligible':False})
-    save_cache(cache_dir,cache); results.sort(key=lambda x:x['service_id']); complete=sum(1 for r in results if r.get('release_eligible') and len(r.get('variants',{}))==8); missing=[r['service_id'] for r in results if not (r.get('release_eligible') and len(r.get('variants',{}))==8)]
-    registry={'schema':'icon_registry_v5','version':5,'renderer_version':RENDERER_VERSION,'generated_at':datetime.now(timezone.utc).isoformat(),**lineage,'service_universe':{'source':str(ir_path or rule_index),'count':len(entries)},'variants':list(VARIANTS),'entries':results,'coverage':{'service_count':len(entries),'icon_identity_count':sum(1 for r in results if r.get('source',{}).get('digest')),'complete_8_of_8':complete,'missing':missing,'orphans':[]},'acquisition':{'network_policy':'one_asset_fetch_per_run','persistent_cache':str(cache_dir)}}
-    (out/'registry.json').write_text(json.dumps(registry,ensure_ascii=False,indent=2)+'\n',encoding='utf-8'); (out/'release-pointer.json').write_text(json.dumps({'schema':'icon_release_pointer_v5','status':'candidate' if missing else 'rc_ready','registry':'registry.json',**lineage,'renderer_version':RENDERER_VERSION},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    blocked=bool(args.strict and missing and not getattr(args,'allow_partial',False))
-    print(json.dumps({'status':'blocked' if blocked else 'ok','service_count':len(entries),'complete_8_of_8':complete,'missing':missing,'out':str(out),'allow_partial':bool(getattr(args,'allow_partial',False))},ensure_ascii=False)); return 1 if blocked else 0
+            results.append(
+                {
+                    **row,
+                    "icon_identity": f"service:{row['service_id']}",
+                    "source": {"origin": "error", "digest": None, "reason": f"{type(exc).__name__}: {exc}", "quality": QUALITY_LOW, "source_px": 0},
+                    "variants": {},
+                    "lineage": {**lineage, "source_digest": None, "renderer_version": RENDERER_VERSION},
+                    "release_eligible": False,
+                }
+            )
 
-def gate(args:argparse.Namespace)->int:
-    registry_path=Path(args.registry); registry=load_json(registry_path); errors=[]
-    if args.run_dir:
-        if args.rule_index or args.ir: errors.append('gate run-dir cannot be combined with rule-index or ir')
-        args.ir=str(Path(args.run_dir)/'ir'/'ir.json')
-    if registry.get('schema')!='icon_registry_v5' or registry.get('variants')!=list(VARIANTS): errors.append('V5 registry contract mismatch')
-    expected=None
-    registry_ids_list=[str(r.get('service_id') or '') for r in registry.get('entries') or []]
-    if len(registry_ids_list)!=len(set(registry_ids_list)): errors.append('duplicate service_id in registry')
-    identity_ids=[str(r.get('icon_identity') or '') for r in registry.get('entries') or [] if r.get('icon_identity')]
-    if len(identity_ids)!=len(set(identity_ids)): errors.append('duplicate icon_identity in registry')
-    if args.rule_index or args.ir:
-        expected={r['service_id'] for r in discover_services(rule_index=Path(args.rule_index) if args.rule_index else None,ir_path=Path(args.ir) if args.ir else None)}; actual={str(r.get('service_id') or '') for r in registry.get('entries') or []}
-        if actual!=expected: errors.append(f'service coverage mismatch: missing={sorted(expected-actual)} extra={sorted(actual-expected)}')
-    for row in registry.get('entries') or []:
-        sid=row.get('service_id')
-        if row.get('release_eligible') is not True:
-            if args.strict: errors.append(f'{sid}: not release eligible')
-            continue
-        source=row.get('source') or {}
-        if not re.fullmatch(r'[0-9a-f]{64}',str(source.get('digest') or '')): errors.append(f'{sid}: invalid source digest')
-        for key in VARIANTS:
-            item=(row.get('variants') or {}).get(key)
-            if not item: errors.append(f'{sid}:{key}: missing variant'); continue
-            path=ROOT/str(item.get('path') or '') if key=='source_original' else registry_path.parent/str(item.get('path') or '')
-            if not path.is_file(): errors.append(f'{sid}:{key}: missing file'); continue
-            if sha256(path.read_bytes())!=str(item.get('digest') or ''): errors.append(f'{sid}:{key}: digest mismatch')
-            if key!='source_original':
-                try:
-                    root=ET.fromstring(path.read_text(encoding='utf-8'))
-                    if root.tag.rsplit('}',1)[-1]!='svg': raise ValueError('not svg')
-                except Exception as exc: errors.append(f'{sid}:{key}: invalid svg: {exc}')
-                for size in (64,128,256):
-                    png=registry_path.parent/str((item.get('png') or {}).get(str(size)) or '')
-                    if args.strict and (not png.is_file() or png.stat().st_size<=100): errors.append(f'{sid}:{key}: missing PNG {size}')
-        lin=row.get('lineage') or {}
-        if args.strict:
-            for field in ('run_id','snapshot_id','ir_digest','source_digest','renderer_version'):
-                if not str(lin.get(field) or '').strip(): errors.append(f'{sid}: missing lineage {field}')
-            if not str(source.get('rights_basis') or '').strip(): errors.append(f'{sid}: missing rights_basis')
-    coverage=registry.get('coverage') or {}
-    if args.strict and int(coverage.get('complete_8_of_8') or 0)!=int(coverage.get('service_count') or 0): errors.append('8/8 coverage incomplete')
-    report={'schema':'icon_v5_gate_v1','status':'PASS' if not errors else 'FAIL','errors':errors}; (registry_path.parent/'gate.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8'); print(json.dumps(report,ensure_ascii=False)); return 0 if not errors else 1
+    save_cache(cache_dir, cache)
+    complete = sum(1 for r in results if r.get("release_eligible") and len(r.get("variants") or {}) == 8)
+    registry = {
+        "schema": "icon_registry_v5",
+        "renderer_version": RENDERER_VERSION,
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "lineage": lineage,
+        "variants": list(VARIANTS),
+        "coverage": {
+            "service_count": len(results),
+            "complete_8_of_8": complete,
+            "missing": [r["service_id"] for r in results if not (r.get("release_eligible") and len(r.get("variants") or {}) == 8)],
+            "quality": quality_summary,
+            "low_res_services": [r["service_id"] for r in results if (r.get("source") or {}).get("quality") == QUALITY_LOW],
+        },
+        "entries": results,
+        "release_status": "candidate" if complete == len(results) and results else "bootstrap",
+    }
+    (out / "registry.json").write_text(json.dumps(registry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    status = "ok" if complete == len(results) else "partial"
+    if args.strict and complete != len(results) and not getattr(args, "allow_partial", False):
+        status = "blocked"
+        print(
+            json.dumps(
+                {
+                    "status": status,
+                    "service_count": len(results),
+                    "complete_8_of_8": complete,
+                    "missing": registry["coverage"]["missing"],
+                    "quality": quality_summary,
+                    "out": str(out),
+                    "allow_partial": False,
+                },
+                ensure_ascii=False,
+            )
+        )
+        return 1
+    print(
+        json.dumps(
+            {
+                "status": status,
+                "service_count": len(results),
+                "complete_8_of_8": complete,
+                "missing": registry["coverage"]["missing"],
+                "quality": quality_summary,
+                "out": str(out),
+                "allow_partial": bool(getattr(args, "allow_partial", False)),
+            },
+            ensure_ascii=False,
+        )
+    )
+    return 0
 
-def discover(args:argparse.Namespace)->int:
-    if args.run_dir:
-        if args.rule_index or args.ir: raise ValueError('discover run-dir cannot be combined with rule-index or ir')
-        args.ir=str(Path(args.run_dir)/'ir'/'ir.json')
-    rows=discover_services(rule_index=Path(args.rule_index) if args.rule_index else None,ir_path=Path(args.ir) if args.ir else None); out=Path(args.out); out.parent.mkdir(parents=True,exist_ok=True); out.write_text(json.dumps({'schema':'icon_service_discovery_v5','run_id':args.run_id,'snapshot_id':args.snapshot_id,'ir_digest':args.ir_digest,'service_count':len(rows),'services':rows},ensure_ascii=False,indent=2)+'\n',encoding='utf-8'); print(json.dumps({'status':'ok','service_count':len(rows),'out':str(out)},ensure_ascii=False)); return 0
 
-def contract()->int:
-    policy=load_yaml(POLICY)
-    if policy.get('version')!=5 or tuple(policy.get('variants') or [])!=VARIANTS or set(RENDERERS)!=set(VARIANTS[1:]): raise SystemExit('icon_v5 contract mismatch')
-    print(json.dumps({'status':'PASS','schema':'icon_v5_contract_v1','variants':list(VARIANTS),'renderer_version':RENDERER_VERSION,'renderer_modules':sorted(RENDERERS)},ensure_ascii=False)); return 0
+def cmd_gate(args: argparse.Namespace) -> int:
+    registry = load_json(Path(args.registry))
+    policy = load_yaml(POLICY)
+    qcfg = _quality_cfg(policy)
+    errors: list[str] = []
+    warnings: list[str] = []
+    if registry.get("schema") != "icon_registry_v5":
+        errors.append("invalid schema")
+    entries = registry.get("entries") or []
+    ids = [e.get("service_id") for e in entries]
+    if len(ids) != len(set(ids)):
+        errors.append("duplicate service_id")
+    if args.rule_index:
+        expected = {r["service_id"] for r in discover_services_from_rule_index(Path(args.rule_index))}
+        actual = set(ids)
+        if expected != actual:
+            errors.append(f"coverage mismatch missing={sorted(expected - actual)[:20]} extra={sorted(actual - expected)[:20]}")
+    core = set(qcfg.get("core_services_fail_low_res") or [])
+    for e in entries:
+        sid = e.get("service_id")
+        src = e.get("source") or {}
+        variants = e.get("variants") or {}
+        if args.strict and (not e.get("release_eligible") or len(variants) != 8):
+            errors.append(f"{sid}: incomplete variants")
+        for key, item in variants.items():
+            for size in policy.get("render", {}).get("png_sizes") or [64, 128, 256]:
+                png = Path(args.registry).parent / str((item.get("png") or {}).get(str(size)) or "")
+                if args.strict and (not png.is_file() or png.stat().st_size <= 100):
+                    errors.append(f"{sid}:{key}: missing PNG {size}")
+        q = str(src.get("quality") or "")
+        spx = int(src.get("source_px") or 0)
+        if q == QUALITY_LOW or (spx and spx < qcfg["min_source_px"] and not src.get("is_vector") and not src.get("seed")):
+            msg = f"{sid}: low_res source_px={spx} quality={q} url={src.get('source_url')}"
+            if sid in core:
+                errors.append(msg)
+            elif qcfg.get("warn_low_res", True):
+                warnings.append(msg)
+        if "source_px" not in src and e.get("release_eligible"):
+            warnings.append(f"{sid}: missing source_px metadata")
+        if "quality" not in src and e.get("release_eligible"):
+            warnings.append(f"{sid}: missing quality metadata")
+    payload = {
+        "schema": "icon_v5_gate_v1",
+        "status": "PASS" if not errors else "FAIL",
+        "errors": errors,
+        "warnings": warnings,
+        "quality": (registry.get("coverage") or {}).get("quality"),
+        "low_res_services": (registry.get("coverage") or {}).get("low_res_services"),
+    }
+    print(json.dumps(payload, ensure_ascii=False, indent=2))
+    return 0 if not errors else 1
 
-def main()->int:
-    ap=argparse.ArgumentParser(); sub=ap.add_subparsers(dest='command',required=True); sub.add_parser('contract')
-    for command in ('discover','build'):
-        p=sub.add_parser(command); p.add_argument('--rule-index'); p.add_argument('--ir'); p.add_argument('--run-dir'); p.add_argument('--out',required=True)
-        if command=='discover': p.add_argument('--run-id'); p.add_argument('--snapshot-id'); p.add_argument('--ir-digest')
-        else: p.add_argument('--cache-dir'); p.add_argument('--run-id'); p.add_argument('--snapshot-id'); p.add_argument('--ir-digest'); p.add_argument('--refresh',action='store_true'); p.add_argument('--strict',action='store_true'); p.add_argument('--allow-partial',action='store_true',help='Phase-2 acquisition: write registry even if coverage incomplete')
-    p=sub.add_parser('gate'); p.add_argument('--registry',required=True); p.add_argument('--rule-index'); p.add_argument('--ir'); p.add_argument('--run-dir'); p.add_argument('--strict',action='store_true')
-    args=ap.parse_args()
-    if args.command=='contract': return contract()
-    if args.command=='discover':
-        if sum(bool(x) for x in (args.rule_index,args.ir,args.run_dir))!=1: ap.error('discover requires exactly one of --rule-index, --ir or --run-dir')
-        return discover(args)
-    if args.command=='build':
-        if sum(bool(x) for x in (args.rule_index,args.ir,args.run_dir))!=1: ap.error('build requires exactly one of --rule-index, --ir or --run-dir')
-        return build(args)
-    return gate(args)
 
-if __name__=='__main__': raise SystemExit(main())
+def build_parser() -> argparse.ArgumentParser:
+    ap = argparse.ArgumentParser(description="Icon System V5")
+    sub = ap.add_subparsers(dest="cmd", required=True)
+    p = sub.add_parser("contract")
+    p.set_defaults(func=cmd_contract)
+    p = sub.add_parser("discover")
+    p.add_argument("--rule-index")
+    p.add_argument("--ir")
+    p.add_argument("--out", required=True)
+    p.set_defaults(func=cmd_discover)
+    p = sub.add_parser("build")
+    p.add_argument("--rule-index")
+    p.add_argument("--ir")
+    p.add_argument("--out", required=True)
+    p.add_argument("--cache-dir")
+    p.add_argument("--run-id")
+    p.add_argument("--snapshot-id")
+    p.add_argument("--ir-digest")
+    p.add_argument("--run-manifest")
+    p.add_argument("--ir-manifest")
+    p.add_argument("--strict", action="store_true")
+    p.add_argument("--allow-partial", action="store_true")
+    p.add_argument("--refresh", action="store_true")
+    p.set_defaults(func=cmd_build)
+    p = sub.add_parser("gate")
+    p.add_argument("--registry", required=True)
+    p.add_argument("--rule-index")
+    p.add_argument("--strict", action="store_true")
+    p.set_defaults(func=cmd_gate)
+    return ap
+
+
+def main() -> int:
+    args = build_parser().parse_args()
+    return int(args.func(args))
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
