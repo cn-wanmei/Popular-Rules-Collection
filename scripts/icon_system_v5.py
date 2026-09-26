@@ -62,7 +62,7 @@ def discover_services_from_ir(ir_path: Path)->list[dict]:
         if not sid: continue
         if sid in seen: raise ValueError(f'duplicate service_id in IR: {sid}')
         seen.add(sid)
-        rows.append({'service_id':sid,'display_name':str(item.get('display_name') or item.get('name') or sid),'provider':item.get('provider'),'rule_path':str(item.get('rule_path') or ''),'rule_count':int(item.get('rule_count') or 0)})
+        rows.append({'service_id':sid,'display_name':str(item.get('display_name') or item.get('name') or sid),'provider':item.get('provider'),'rule_path':str(item.get('rule_path') or ''),'domains':list(item.get('domains') or []),'rule_count':int(item.get('rule_count') or 0)})
     if not rows: raise ValueError('IR contains no discoverable services; expected services/service_index')
     return sorted(rows,key=lambda x:x['service_id'])
 
@@ -74,8 +74,10 @@ def discover_services(*,rule_index:Path|None=None,ir_path:Path|None=None)->list[
 def candidate_domains(root: Path,row:dict)->list[tuple[str,int]]:
     path=root/row['rule_path']
     if not path.is_file(): return []
-    try: doc=load_yaml(path)
-    except Exception: return []
+    try: doc=load_yaml(path) if path.is_file() else {}
+    except Exception: doc={}
+    if row.get('domains'):
+        return sorted({(str(x).lower().strip('.'),2) for x in row.get('domains') if re.fullmatch(r'[a-z0-9.-]+\\.[a-z]{2,}',str(x).lower().strip('.'))},key=lambda x:x[0])[:8]
     tokens=re.findall(r'[a-z0-9]+',str(row['service_id']).lower())+re.findall(r'[a-z0-9]+',str(row['display_name']).lower())
     hosts=set()
     for rule in doc.get('rules') or []:
@@ -166,7 +168,7 @@ def save_cache(cache_dir:Path,services:dict)->None:
     cache_dir.mkdir(parents=True,exist_ok=True)
     (cache_dir/'cache.json').write_text(json.dumps({'schema':'icon_source_cache_v5','updated_at':datetime.now(timezone.utc).isoformat(),'services':services},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 
-def resolve_source(root:Path,row:dict,official:dict,policy:dict,cache:dict,*,refresh:bool)->dict:
+def resolve_source(root:Path,row:dict,official:dict,policy:dict,cache:dict,asset_cache:dict,*,refresh:bool)->dict:
     sid=row['service_id']; cached=None if refresh else cache.get(sid)
     if cached:
         path=ROOT/str(cached.get('path') or '')
@@ -189,7 +191,12 @@ def resolve_source(root:Path,row:dict,official:dict,policy:dict,cache:dict,*,ref
         manifest,_=fetch_bytes(manifest_url,timeout=int(acq['timeout_seconds']),max_bytes=int(acq['max_bytes']),user_agent=str(acq['user_agent']),max_redirects=int(acq['max_redirects']))
         icon_url=select_manifest_icon(page_headers['final_url'],manifest)
     if not icon_url: icon_url=urljoin(page_headers['final_url'],'/favicon.ico')
-    icon,icon_headers=fetch_bytes(icon_url,timeout=int(acq['timeout_seconds']),max_bytes=int(acq['max_bytes']),user_agent=str(acq['user_agent']),max_redirects=int(acq['max_redirects']))
+    shared=asset_cache.get(icon_url)
+    if shared:
+        icon,icon_headers=shared
+    else:
+        icon,icon_headers=fetch_bytes(icon_url,timeout=int(acq['timeout_seconds']),max_bytes=int(acq['max_bytes']),user_agent=str(acq['user_agent']),max_redirects=int(acq['max_redirects']))
+        asset_cache[icon_url]=(icon,icon_headers)
     kind=validate_source(icon,icon_headers.get('content_type'),icon_headers['final_url'])
     return {'status':'ok','content':icon,'cached':False,'service_id':sid,'homepage_url':page_headers['final_url'],'source_url':icon_headers['final_url'],'source_kind':kind,'content_type':icon_headers.get('content_type'),'source_digest':sha256(icon),'resolution_reason':reason,'http_status':icon_headers.get('status_code'),'content_length':icon_headers.get('content_length'),'fetched_at':icon_headers.get('fetched_at')}
 
@@ -210,11 +217,13 @@ def build(args:argparse.Namespace)->int:
     lineage={'run_id':str(args.run_id or ''),'snapshot_id':str(args.snapshot_id or ''),'ir_digest':str(args.ir_digest or '')}
     if rule_index:
         doc=load_yaml(rule_index); lineage['run_id']=lineage['run_id'] or str(doc.get('run_id') or ''); lineage['ir_digest']=lineage['ir_digest'] or str(doc.get('ir_digest') or '')
+    if ir_path:
+        doc=load_json(ir_path); meta=doc.get('metadata') if isinstance(doc.get('metadata'),dict) else {}; lineage['run_id']=lineage['run_id'] or str(doc.get('run_id') or meta.get('run_id') or ''); lineage['snapshot_id']=lineage['snapshot_id'] or str(doc.get('snapshot_id') or meta.get('snapshot_id') or ''); lineage['ir_digest']=lineage['ir_digest'] or str(doc.get('ir_digest') or meta.get('ir_digest') or '')
     if args.strict and not all(lineage.values()): print(json.dumps({'status':'blocked','reason':'strict build requires run_id, snapshot_id and ir_digest'},ensure_ascii=False)); return 1
-    cache_dir=Path(args.cache_dir) if args.cache_dir else DEFAULT_CACHE; cache=load_cache(cache_dir); out=Path(args.out); out.mkdir(parents=True,exist_ok=True); results=[]
+    cache_dir=Path(args.cache_dir) if args.cache_dir else DEFAULT_CACHE; cache=load_cache(cache_dir); asset_cache={}; out=Path(args.out); out.mkdir(parents=True,exist_ok=True); results=[]
     for row in entries:
         try:
-            result=resolve_source(ROOT,row,official,policy,cache,refresh=args.refresh)
+            result=resolve_source(ROOT,row,official,policy,cache,asset_cache,refresh=args.refresh)
             if result.get('status')!='ok':
                 results.append({**row,'icon_identity':f"service:{row['service_id']}",'source':{'origin':'hold','digest':None,'reason':result.get('reason')},'variants':{},'lineage':{**lineage,'source_digest':None,'renderer_version':RENDERER_VERSION},'release_eligible':False}); continue
             source=result if result.get('cached') else persist_cache(cache_dir,row,result); cache[row['service_id']]=source
@@ -237,6 +246,10 @@ def gate(args:argparse.Namespace)->int:
     registry_path=Path(args.registry); registry=load_json(registry_path); errors=[]
     if registry.get('schema')!='icon_registry_v5' or registry.get('variants')!=list(VARIANTS): errors.append('V5 registry contract mismatch')
     expected=None
+    registry_ids_list=[str(r.get('service_id') or '') for r in registry.get('entries') or []]
+    if len(registry_ids_list)!=len(set(registry_ids_list)): errors.append('duplicate service_id in registry')
+    identity_ids=[str(r.get('icon_identity') or '') for r in registry.get('entries') or [] if r.get('icon_identity')]
+    if len(identity_ids)!=len(set(identity_ids)): errors.append('duplicate icon_identity in registry')
     if args.rule_index or args.ir:
         expected={r['service_id'] for r in discover_services(rule_index=Path(args.rule_index) if args.rule_index else None,ir_path=Path(args.ir) if args.ir else None)}; actual={str(r.get('service_id') or '') for r in registry.get('entries') or []}
         if actual!=expected: errors.append(f'service coverage mismatch: missing={sorted(expected-actual)} extra={sorted(actual-expected)}')
