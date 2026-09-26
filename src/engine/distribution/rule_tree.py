@@ -155,7 +155,7 @@ def build_rule_tree(
             service_meta = service_meta if isinstance(service_meta, dict) else {}
             rows = _rows(rules, memberships.get(service_id, set()))
             if rows:
-                service_path = output_dir / EntityPathResolver.human_service(provider_id, service_id)
+                service_path = output_dir / EntityPathResolver.human_service(provider_id, service_id).relative_to("rule")
                 service_paths.add(service_path.relative_to(output_dir).as_posix())
                 _write_entity(
                     service_path,
@@ -173,7 +173,7 @@ def build_rule_tree(
             aggregate_ids.update(memberships.get(str(service_id), set()))
         rows = _rows(rules, aggregate_ids)
         if rows:
-            aggregate_path = output_dir / EntityPathResolver.human_provider(provider_id)
+            aggregate_path = output_dir / EntityPathResolver.human_provider(provider_id).relative_to("rule")
             if aggregate_path.relative_to(output_dir).as_posix() in service_paths:
                 continue
             _write_entity(
@@ -191,7 +191,7 @@ def build_rule_tree(
     rows = _rows(rules, memberships.get("china", set()))
     if rows:
         _write_entity(
-            output_dir / EntityPathResolver.human_china(),
+            output_dir / EntityPathResolver.human_china().relative_to("rule"),
             entity="domestic_aggregate",
             entity_id="china",
             display_name="China",
@@ -217,7 +217,7 @@ def build_rule_tree(
         rows = _rows(rules, category_ids)
         if rows:
             _write_entity(
-                output_dir / EntityPathResolver.human_category(category_id),
+                output_dir / EntityPathResolver.human_category(category_id).relative_to("rule"),
                 entity="category",
                 entity_id=category_id,
                 display_name=str(category_meta.get("display_name") or category_id),
@@ -249,7 +249,7 @@ def build_rule_tree(
             "unmapped_service": EntityPathResolver.human_unmapped_service,
         }[entity]
         _write_entity(
-            output_dir / path_resolver(entity_id),
+            output_dir / path_resolver(entity_id).relative_to("rule"),
             entity=entity,
             entity_id=entity_id,
             display_name=entity_id,
