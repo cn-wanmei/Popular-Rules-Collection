@@ -1,44 +1,32 @@
-# Icon System V5 — registered official homepages (and optional direct icon URLs)
-# Format: service_id: homepage URL
-# Optional extended: service_id: {homepage: URL, icon_url: URL}
-
-"12306": https://www.12306.cn
-"1688": https://www.1688.com
+'12306': https://www.12306.cn
+'1688': https://www.1688.com
 abc: https://www.abchina.com
 acfun: https://www.acfun.cn
+ai: https://openai.com
 airbnb: https://www.airbnb.com
+aisuite: https://openai.com
 alipay: https://www.alipay.com
 amap: https://www.amap.com
-cainiao: https://www.cainiao.com
-dingding: https://www.dingtalk.com
-eleme: https://www.ele.me
-gaode: https://www.amap.com
-taobao: https://www.taobao.com
-tmall: https://www.tmall.com
-xianyu: https://www.goofish.com
-youku: https://www.youku.com
-aws: https://aws.amazon.com
-primevideo: https://www.primevideo.com
-twitch: https://www.twitch.tv
 anthropic: https://www.anthropic.com
 apple: https://www.apple.com
 applefirmware: https://www.apple.com
 appleid: https://appleid.apple.com
 applemail: https://www.icloud.com
 appletv: https://tv.apple.com
-icloudprivaterelay: https://www.apple.com/icloud
-trello: https://trello.com
+aws: https://aws.amazon.com
 bahamut: https://www.gamer.com.tw
 baidunetdisk: https://pan.baidu.com
+battlenet: https://battle.net
 bbc: https://www.bbc.com
 bilibili: https://www.bilibili.com
-binance: https://www.binance.com
-battlenet: https://battle.net
+binance:
+  homepage: https://www.binance.com
+  icon_url: https://bin.bnbstatic.com/static/images/common/favicon.ico
 bluesky: https://bsky.app
 boc: https://www.boc.cn
 bocom: https://www.bankcomm.com
 booking: https://www.booking.com
-doubao: https://www.doubao.com
+cainiao: https://www.cainiao.com
 canva: https://www.canva.com
 ccb: https://www.ccb.com
 cctv: https://www.cctv.com
@@ -52,17 +40,24 @@ cursor: https://cursor.com
 dewu: https://www.dewu.com
 didi: https://www.didiglobal.com
 digitalocean: https://www.digitalocean.com
+dingding: https://www.dingtalk.com
 disney: https://www.disneyplus.com
 docker: https://www.docker.com
+doubao: https://www.doubao.com
+douyu:
+  homepage: https://www.douyu.com
+  icon_url: https://www.douyu.com/favicon.ico
 dropbox: https://www.dropbox.com
 ea: https://www.ea.com
 ebay: https://www.ebay.com
+eleme: https://www.ele.me
 elevenlabs: https://elevenlabs.io
 emby: https://emby.media
 epic: https://store.epicgames.com
 facebook: https://www.facebook.com
 figma: https://www.figma.com
 firebase: https://firebase.google.com
+gaode: https://www.amap.com
 garena: https://www.garena.com
 github: https://github.com
 gitlab: https://gitlab.com
@@ -80,13 +75,20 @@ hoyoverse: https://www.hoyoverse.com
 hulu: https://www.hulu.com
 huya: https://www.huya.com
 icbc: https://www.icbc.com.cn
+icloudprivaterelay: https://www.apple.com/icloud
 instagram: https://www.instagram.com
 iqiyi: https://www.iqiyi.com
+jd:
+  homepage: https://www.jd.com
+  icon_url: https://www.jd.com/favicon.ico
 jetbrains: https://www.jetbrains.com
-jingdong: https://www.jd.com
-jd: https://www.jd.com
+jingdong:
+  homepage: https://www.jd.com
+  icon_url: https://www.jd.com/favicon.ico
 kakaotalk: https://www.kakaocorp.com
-kuaishou: https://www.kuaishou.com
+kuaishou:
+  homepage: https://www.kuaishou.com
+  icon_url: https://www.kuaishou.com/favicon.ico
 kugou: https://www.kugou.com
 kuwo: https://www.kuwo.cn
 letv: https://www.le.com
@@ -110,12 +112,16 @@ pingan: https://www.pingan.com
 pinterest: https://www.pinterest.com
 playstation: https://www.playstation.com
 pptv: https://www.pptv.com
+primevideo: https://www.primevideo.com
+private: ''
 psbc: https://www.psbc.com
 qqmail: https://mail.qq.com
 qqmusic: https://y.qq.com
 reddit: https://www.reddit.com
+restricted: ''
 riotgames: https://www.riotgames.com
 rockstar: https://www.rockstargames.com
+scholar: https://scholar.google.com
 shopify: https://www.shopify.com
 slack: https://slack.com
 snapchat: https://www.snapchat.com
@@ -125,19 +131,24 @@ speedtest: https://www.speedtest.net
 spotify: https://www.spotify.com
 steam: https://store.steampowered.com
 stripe: https://stripe.com
+stun: ''
+taobao: https://www.taobao.com
 telegram: https://telegram.org
 tencentcloud: https://cloud.tencent.com
 tencentmeeting: https://meeting.tencent.com
 threads: https://www.threads.net
 tidal: https://tidal.com
 tiktok: https://www.tiktok.com
+tmall: https://www.tmall.com
 tongcheng: https://www.ly.com
 trello: https://trello.com
 twitch: https://www.twitch.tv
 twitter: https://x.com
 uber: https://www.uber.com
 ubisoft: https://www.ubisoft.com
-unionpay: https://www.unionpay.com
+unionpay:
+  homepage: https://www.unionpayintl.com
+  icon_url: https://www.unionpayintl.com/favicon.ico
 vercel: https://vercel.com
 vivo: https://www.vivo.com
 walmart: https://www.walmart.com
@@ -149,15 +160,10 @@ whatsapp: https://www.whatsapp.com
 wikipedia: https://www.wikipedia.org
 wise: https://wise.com
 xbox: https://www.xbox.com
+xianyu: https://www.goofish.com
 xiaohongshu: https://www.xiaohongshu.com
 ximalaya: https://www.ximalaya.com
 youdao: https://www.youdao.com
+youku: https://www.youku.com
 zhihu: https://www.zhihu.com
 zoom: https://zoom.us
-# semantic / generic entities — no brand logo; held by design
-ai: https://openai.com
-aisuite: https://openai.com
-private: ""
-restricted: ""
-scholar: https://scholar.google.com
-stun: ""
