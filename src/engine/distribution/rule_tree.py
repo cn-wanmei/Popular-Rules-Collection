@@ -174,9 +174,7 @@ def build_rule_tree(
             aggregate_ids.update(memberships.get(str(service_id), set()))
         rows = _rows(rules, aggregate_ids)
         if rows:
-            aggregate_path = output_dir / EntityPathResolver.human_provider(provider_id).relative_to("rule")
-            if aggregate_path.relative_to(output_dir).as_posix() in service_paths:
-                continue
+            aggregate_path = output_dir / EntityPathResolver.human_provider(provider_id, aggregate_id).relative_to("rule")
             _write_entity(
                 aggregate_path,
                 entity="provider_aggregate",
