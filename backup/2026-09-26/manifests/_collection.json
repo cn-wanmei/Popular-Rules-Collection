@@ -2,7 +2,7 @@
   "schema": "collection_manifest_v1",
   "collection_id": "2026-09-26-0ae15503d5cea15709c6",
   "date": "2026-09-26",
-  "created_at": "2026-09-26T11:46:48.496701+00:00",
+  "created_at": "2026-09-26T12:53:31.257955+00:00",
   "root": "backup/2026-09-26",
   "execution": {
     "mode": "dag",
@@ -41,18 +41,18 @@
       "attempts": [
         {
           "attempt": 1,
-          "started_at": "2026-09-26T11:45:59.788530+00:00",
+          "started_at": "2026-09-26T12:52:42.128230+00:00",
           "returncode": 0,
           "stdout_tail": "  OK ARTIFACT mmdb-country bytes=7705141 sha256=f35228dd74b7…\n  OK ARTIFACT mmdb-asn bytes=12072490 sha256=d8a649084d78…\n  OK ARTIFACT dat-geoip-lite bytes=207157 sha256=f5fc84951927…\n  OK ARTIFACT dat-geoip bytes=16635240 sha256=3cf2236c1906…\n  OK ARTIFACT dat-geosite bytes=4253127 sha256=cf958f4f2611…\n  OK geoip-cn kind=geoip lines=9612\n  OK geoip-hk kind=geoip lines=16199\n  OK geoip-tw kind=geoip lines=4827\n  OK geoip-jp kind=geoip lines=17446\n  OK geoip-kr kind=geoip lines=5454\n  OK geoip-sg kind=geoip lines=13976\n  OK geoip-us kind=geoip lines=271337\n  OK geoip-de kind=geoip lines=72165\n  OK geoip-gb kind=geoip lines=50215\n  OK geoip-au kind=geoip lines=18846\n  OK geoip-my kind=geoip lines=3816\n  OK geoip-in kind=geoip lines=20748\n  OK geoip-id kind=geoip lines=10814\n  OK geoip-vn kind=geoip lines=3828\n  OK geoip-th kind=geoip lines=3500\n  OK geoip-private kind=geoip lines=18\n  OK ARTIFACT geoip-mmdb bytes=7705141 sha256=f35228dd74b7…\n  OK geosite-direct kind=geosite lines=111366\n  OK geosite-proxy kind=geosite lines=27250\n  OK geosite-reject kind=geosite lines=192055\n  OK geosite-china kind=geosite lines=110694\n  OK geosite-apple-cn kind=geosite lines=165\n  OK geosite-google-cn kind=geosite lines=112\n  OK provider-cloudflare kind=provider lines=15\n  OK provider-cloudflare-v6 kind=provider lines=7\n  OK provider-aws kind=provider lines=11454\n  OK provider-googlecloud kind=provider lines=1159\n  OK provider-goog kind=provider lines=152\n  OK provider-oracle kind=provider lines=1398\n[collect_datasets] ok=34 failed=0 skipped=9\n",
           "stderr_tail": ""
         }
       ],
-      "duration_seconds": 17.679,
-      "duration_ms": 17678.648,
+      "duration_seconds": 17.247,
+      "duration_ms": 17247.054,
       "task_identity": "8841bcc93f34457f743870b36137e53e44d92d703e0b48d436284928a7a33888",
       "contract_version": "dag_node_v1",
-      "input_digest": "a87c9d06254a4f48e09e2302b4355ca2450f125709f20cac31a554953547f2d5",
-      "output_digest": "ef775318f9865d819b9cbc8aeab1044e7d6857f6100b7524d63517842cdad771",
+      "input_digest": "a704a6ff067c54f926ed59a822deaf65bb71af84a4f66ee71a55acf42c3d08cc",
+      "output_digest": "cc2bcfc5c660114ce0895a8a680c439ba84695e536856ce3301d06e5a0277ed5",
       "deps": [
         "validate_dataset_registry"
       ]
@@ -63,18 +63,18 @@
       "attempts": [
         {
           "attempt": 1,
-          "started_at": "2026-09-26T11:45:59.788722+00:00",
+          "started_at": "2026-09-26T12:52:42.128541+00:00",
           "returncode": 0,
           "stdout_tail": "  OK loyalsoldier-geoip-cn scope=country → china lines=9612\n  OK china-operator-cn scope=country → china lines=6206\n  OK china-operator-unicom scope=carrier → chinaunicom lines=1731\n  WRITE database/ips/china.txt  in=9686+15818 out=9686\n  WRITE database/ips/chinaunicom.txt  in=3795+1731 out=3795\n[collect_ip] sources_ok=3 failed=0 targets=2\n",
           "stderr_tail": ""
         }
       ],
-      "duration_seconds": 48.707,
-      "duration_ms": 48707.339,
+      "duration_seconds": 49.129,
+      "duration_ms": 49128.722,
       "task_identity": "1d347dbd3ef0f416a1b53baf0c1ec009ef4bd3806b13de37432625aea2878606",
       "contract_version": "dag_node_v1",
-      "input_digest": "208d8b3b500ee723f75cce63b3eb70b4c7aa4d1a5b0a0758e5bb6a4b3881bdf4",
-      "output_digest": "aebe5bcfd22dbeaa156071286b92675a1feb8a1b581087bc748fd0ee626354c0",
+      "input_digest": "c33cef9f06cdbd1e8b227369cd27ab91f1d002956896131ae14958a4895451b6",
+      "output_digest": "d5c0bd4d3aee43f11f00b0e11d3563635df807a36fa07bf00998b85ba7c0b235",
       "deps": [
         "validate_ip_registry"
       ]
@@ -85,18 +85,18 @@
       "attempts": [
         {
           "attempt": 1,
-          "started_at": "2026-09-26T11:45:59.789106+00:00",
+          "started_at": "2026-09-26T12:52:42.129023+00:00",
           "returncode": 0,
           "stdout_tail": "  OK provider-cloudflare lines=15\n  OK provider-cloudflare-v6 lines=7\n  OK provider-aws lines=11251\n  OK provider-googlecloud lines=1103\n  OK provider-goog lines=145\n  OK provider-oracle lines=1107\n[collect_providers] ok=6 failed=0\n",
           "stderr_tail": ""
         }
       ],
-      "duration_seconds": 0.95,
-      "duration_ms": 949.797,
+      "duration_seconds": 0.764,
+      "duration_ms": 764.369,
       "task_identity": "b573613110cdee1d448dd595c463e456b2a855ee6f029899b3f37d8dc1e8e430",
       "contract_version": "dag_node_v1",
-      "input_digest": "1df36329f38dcf78687a2f2bb7787f8b6c9f453c9a0af0e74fe154b1c98a4231",
-      "output_digest": "f5debc42d4d072ff973f4e4309829d392d236370dcd7eacf052ded3e63b150cb",
+      "input_digest": "c191207e56e2785cd176e91163549e408acdb6901aef37db74daea2645be6f69",
+      "output_digest": "9c8645d46e024ec6aee5577b86cc56782810518a9109615488b35aeff5cead00",
       "deps": [
         "validate_dataset_registry"
       ]
@@ -107,18 +107,18 @@
       "attempts": [
         {
           "attempt": 1,
-          "started_at": "2026-09-26T11:45:59.789920+00:00",
+          "started_at": "2026-09-26T12:52:42.129564+00:00",
           "returncode": 0,
-          "stdout_tail": "[collect] registry v3 date=2026-09-26 sources=6 workers=12 force=False\n[collect] → popular-rules-source (github_raw, 76 rules)\n[collect] → blackmatrix7 (github_raw, 154 rules)\n[collect] → metacubex (github_raw, 76 rules)\n[collect] → v2fly (github_raw, 56 rules)\n[collect] → dler (github_raw, 20 rules)\n[collect] → lm-firefly (github_raw, 1 rules)\n[collect] done ok=18 not_modified=0 skipped=300 failed=7 required_failures=0\n",
+          "stdout_tail": "[collect] registry v3 date=2026-09-26 sources=6 workers=12 force=False\n[collect] → popular-rules-source (github_raw, 127 rules)\n[collect] → blackmatrix7 (github_raw, 154 rules)\n[collect] → metacubex (github_raw, 76 rules)\n[collect] → v2fly (github_raw, 56 rules)\n[collect] → dler (github_raw, 20 rules)\n[collect] → lm-firefly (github_raw, 1 rules)\n[collect] done ok=18 not_modified=0 skipped=304 failed=3 required_failures=0\n",
           "stderr_tail": ""
         }
       ],
-      "duration_seconds": 11.915,
-      "duration_ms": 11915.085,
+      "duration_seconds": 10.529,
+      "duration_ms": 10528.988,
       "task_identity": "a91364d15f2cb3bef30ab4928607af804208ec429afd66faa3ed4b7749493613",
       "contract_version": "dag_node_v1",
-      "input_digest": "1d1983da7cecd7a8c6f29839ce62883fc3573640d9b1fac54b163e55b71fdc2d",
-      "output_digest": "d954ff54ad1c68d0328e96e0088ad0d771bab1bc388b78ff8347ad241a8f7b51",
+      "input_digest": "289299874c518d2c51d35ec92f6a6720451cc19ac348452bf70548236d93f6b0",
+      "output_digest": "d83277a6803946b00d9c02895b2b50b605f0365d72413ec24844e11510108f51",
       "deps": [
         "validate_registry"
       ]
@@ -129,18 +129,18 @@
       "attempts": [
         {
           "attempt": 1,
-          "started_at": "2026-09-26T11:45:59.420144+00:00",
+          "started_at": "2026-09-26T12:52:41.740615+00:00",
           "returncode": 0,
           "stdout_tail": "[validate_dataset_registry] files=7 errors=0 warnings=0\n",
           "stderr_tail": ""
         }
       ],
-      "duration_seconds": 0.076,
-      "duration_ms": 75.886,
+      "duration_seconds": 0.125,
+      "duration_ms": 128.197,
       "task_identity": "1aff89ef4c58911295993eae40faf44da9a310fcfbabd359377f33f4ff4729fd",
       "contract_version": "dag_node_v1",
       "input_digest": "d2ddc8f49d30db4e1038da7934ec346ad2314f80d0c0efd884b00f92b0957b59",
-      "output_digest": "4b3061f34a7c7a2c684b4f39783c9d30572f4b6c7f0ae4a90e124db4757d9f97",
+      "output_digest": "92b6b1dc449638689a5e9433b81c7a386e6fec701a6d8009a9d89f0bffa81648",
       "deps": []
     },
     "validate_ip_registry": {
@@ -149,18 +149,18 @@
       "attempts": [
         {
           "attempt": 1,
-          "started_at": "2026-09-26T11:45:59.420404+00:00",
+          "started_at": "2026-09-26T12:52:41.740966+00:00",
           "returncode": 0,
           "stdout_tail": "[validate_ip_registry] sources=4 errors=0 warnings=1\n  WARN  china-operator-cernet: carrier source folded into country id 'china'\n",
           "stderr_tail": ""
         }
       ],
-      "duration_seconds": 0.267,
-      "duration_ms": 267.164,
+      "duration_seconds": 0.271,
+      "duration_ms": 270.481,
       "task_identity": "58fb925533b7dbdcfe7c3aef203798fd061189d68498dfe9065ececd01e371e0",
       "contract_version": "dag_node_v1",
       "input_digest": "d7f6b638b719f71c01421f1c9c942cac3c1ed608b51e7bb6892783aaa337ed90",
-      "output_digest": "94165ab0cecd38e01f27e16c34e3e835e68d6da8b768e3c1242ac3abe2cebc21",
+      "output_digest": "2287f82fb8b5bb423b4ce6f1fb4151f18084da5b3749d8038ccf860bd522c0f7",
       "deps": []
     },
     "validate_registry": {
@@ -169,20 +169,20 @@
       "attempts": [
         {
           "attempt": 1,
-          "started_at": "2026-09-26T11:45:59.420836+00:00",
+          "started_at": "2026-09-26T12:52:41.741419+00:00",
           "returncode": 0,
-          "stdout_tail": "[validate_registry] registry=221 primary=246 orphans=0 errors=0 warnings=4\n  WARN  baidu: aggregate without children\n  WARN  jingdong: aggregate without children\n  WARN  restricted: aggregate without children\n  WARN  25 primary-only ids (not in registry rules) — ok if intentional\n",
+          "stdout_tail": "[validate_registry] registry=267 primary=298 orphans=0 errors=0 warnings=4\n  WARN  baidu: aggregate without children\n  WARN  jingdong: aggregate without children\n  WARN  restricted: aggregate without children\n  WARN  31 primary-only ids (not in registry rules) — ok if intentional\n",
           "stderr_tail": ""
         }
       ],
-      "duration_seconds": 0.367,
-      "duration_ms": 366.546,
+      "duration_seconds": 0.386,
+      "duration_ms": 385.826,
       "task_identity": "72622a3e3b63eaab535009902d57e9ecfdcc345c003fe8d8c107da731366d688",
       "contract_version": "dag_node_v1",
       "input_digest": "ed83240e404d100d9e4844244992239a4a0b63459ba274fcfc226099365fe21e",
-      "output_digest": "178bb516f801ebc3adfa36af043752f1c4d9b40489e00d1b3e8d64f304a40d03",
+      "output_digest": "79990685dec001fc1e919008ca5e402700cae3955a4f759970a9a93b5892c8e7",
       "deps": []
     }
   },
-  "manifest_sha256": "071f5c9b72b343455c24aea90530ce2c4a7bec3f717c1d4e18cc7cfb261fccae"
+  "manifest_sha256": "22caf9fd2e113d1f5b9392f0082115aac2b699de134e100dc2d57c36ee2b4757"
 }
