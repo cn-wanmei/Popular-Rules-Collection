@@ -3,8 +3,8 @@
 这是 `docs/rules/` 的当前导航契约。
 
 生产日期：`2026-09-22`
-当前配置服务数：90
-当前规则文档总数：209
+当前配置服务数：175
+当前规则文档总数：288
 
 ## 当前新增独立子服务
 
@@ -422,4 +422,56 @@
 
 ## 维护规则
 
-当前 90 个配置服务页面必须通过 `scripts/docs_ssot_gate.py`。当 manifest 发生路径变化时，CI 应先更新页面，再允许合入。
+当前配置服务页面必须通过 `scripts/docs_ssot_gate.py`。当 manifest 发生路径变化时，CI 应先更新页面，再允许合入。
+
+
+## 2026-09-26 服务补全批次
+
+本批次页面均遵循 V3 docs/rules SSOT；页面状态由当前 Source evidence、immutable release 与 Collection canary 决定。
+
+- [adobefonts](adobefonts.md) (`adobefonts` · service)
+- [adobestock](adobestock.md) (`adobestock` · service)
+- [amazonmusic](amazonmusic.md) (`amazonmusic` · service)
+- [anthropicclaude](anthropicclaude.md) (`anthropicclaude` · service)
+- [anthropicplatform](anthropicplatform.md) (`anthropicplatform` · service)
+- [applebooks](applebooks.md) (`applebooks` · service)
+- [applemaps](applemaps.md) (`applemaps` · service)
+- [applepodcasts](applepodcasts.md) (`applepodcasts` · service)
+- [audible](audible.md) (`audible` · service)
+- [baiduzhidao](baiduzhidao.md) (`baiduzhidao` · service)
+- [chatgpt](chatgpt.md) (`chatgpt` · service)
+- [goodreads](goodreads.md) (`goodreads` · service)
+- [googlecalendar](googlecalendar.md) (`googlecalendar` · service)
+- [googlechat](googlechat.md) (`googlechat` · service)
+- [googlecontacts](googlecontacts.md) (`googlecontacts` · service)
+- [googledocs](googledocs.md) (`googledocs` · service)
+- [googleforms](googleforms.md) (`googleforms` · service)
+- [googlegroups](googlegroups.md) (`googlegroups` · service)
+- [googlemeet](googlemeet.md) (`googlemeet` · service)
+- [googlenews](googlenews.md) (`googlenews` · service)
+- [googlephotos](googlephotos.md) (`googlephotos` · service)
+- [googleplay](googleplay.md) (`googleplay` · service)
+- [googlesheets](googlesheets.md) (`googlesheets` · service)
+- [googlesites](googlesites.md) (`googlesites` · service)
+- [googleslides](googleslides.md) (`googleslides` · service)
+- [googlevids](googlevids.md) (`googlevids` · service)
+- [googleworkspacestudio](googleworkspacestudio.md) (`googleworkspacestudio` · service)
+- [huaweiappgallery](huaweiappgallery.md) (`huaweiappgallery` · service)
+- [huaweicloud](huaweicloud.md) (`huaweicloud` · service)
+- [jdcloud](jdcloud.md) (`jdcloud` · service)
+- [kuaishouopen](kuaishouopen.md) (`kuaishouopen` · service)
+- [micloud](micloud.md) (`micloud` · service)
+- [ms365excel](ms365excel.md) (`ms365excel` · service)
+- [ms365loop](ms365loop.md) (`ms365loop` · service)
+- [ms365mesh](ms365mesh.md) (`ms365mesh` · service)
+- [ms365onenote](ms365onenote.md) (`ms365onenote` · service)
+- [ms365planner](ms365planner.md) (`ms365planner` · service)
+- [ms365powerpoint](ms365powerpoint.md) (`ms365powerpoint` · service)
+- [ms365word](ms365word.md) (`ms365word` · service)
+- [openaiapi](openaiapi.md) (`openaiapi` · service)
+- [openaiplatform](openaiplatform.md) (`openaiplatform` · service)
+- [quanminkge](quanminkge.md) (`quanminkge` · service)
+- [stripedashboard](stripedashboard.md) (`stripedashboard` · service)
+- [tencent_music](tencent_music.md) (`tencent_music` · service)
+- [venmo](venmo.md) (`venmo` · service)
+- [xaigrok](xaigrok.md) (`xaigrok` · service)
