@@ -72,6 +72,8 @@ def evaluate_release(run_dir: Path) -> dict[str, Any]:
     gates["artifacts_present"] = (run_dir / "artifacts").exists()
     rule_root = run_dir / "rule"
     gates["rule_distribution_present"] = (rule_root / "manifest.json").exists() and (rule_root / "_index.yaml").exists()
+    directory_validation = _load_json(run_dir / "directory_validation.json")
+    gates["directory_manifest_validation"] = directory_validation.get("pass") is True
     gates["diff_present"] = (run_dir / "reports" / "diff" / "latest.json").exists()
     gates["baseline_evidence_present"] = (run_dir / "metrics" / "baseline-evidence.json").exists()
 
