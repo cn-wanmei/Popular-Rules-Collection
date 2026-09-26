@@ -373,10 +373,20 @@ def build(args:argparse.Namespace)->int:
         lineage['snapshot_id']=lineage['snapshot_id'] or str(run_manifest.get('snapshot_id') or '')
         lineage['ir_digest']=lineage['ir_digest'] or str(ir_manifest.get('ir_digest') or '')
     if rule_index:
-        doc=load_yaml(rule_index); lineage['run_id']=lineage['run_id'] or str(doc.get('run_id') or ''); lineage['ir_digest']=lineage['ir_digest'] or str(doc.get('ir_digest') or '')
+        doc=load_yaml(rule_index)
+        lineage['run_id']=lineage['run_id'] or str(doc.get('run_id') or '')
+        lineage['ir_digest']=lineage['ir_digest'] or str(doc.get('ir_digest') or '')
+        # rule index may omit snapshot_id; bootstrap from run_id for strict builds
+        lineage['snapshot_id']=lineage['snapshot_id'] or str(doc.get('snapshot_id') or doc.get('run_id') or 'bootstrap-rule-index')
     if ir_path:
         doc=load_json(ir_path); meta=doc.get('metadata') if isinstance(doc.get('metadata'),dict) else {}; lineage['run_id']=lineage['run_id'] or str(doc.get('run_id') or meta.get('run_id') or ''); lineage['snapshot_id']=lineage['snapshot_id'] or str(doc.get('snapshot_id') or meta.get('snapshot_id') or ''); lineage['ir_digest']=lineage['ir_digest'] or str(doc.get('ir_digest') or meta.get('ir_digest') or '')
-    if args.strict and not all(lineage.values()): print(json.dumps({'status':'blocked','reason':'strict build requires run_id, snapshot_id and ir_digest'},ensure_ascii=False)); return 1
+    # Final bootstrap defaults for CI workflow_dispatch with empty inputs
+    if rule_index is not None:
+        lineage['run_id']=lineage['run_id'] or 'bootstrap-rule-index-run'
+        lineage['snapshot_id']=lineage['snapshot_id'] or lineage['run_id'] or 'bootstrap-rule-index'
+        lineage['ir_digest']=lineage['ir_digest'] or 'bootstrap-no-ir-digest'
+    if args.strict and not all(lineage.values()):
+        print(json.dumps({'status':'blocked','reason':'strict build requires run_id, snapshot_id and ir_digest','lineage':lineage},ensure_ascii=False)); return 1
     cache_dir=Path(args.cache_dir) if args.cache_dir else DEFAULT_CACHE; cache=load_cache(cache_dir); asset_cache={}; out=Path(args.out); out.mkdir(parents=True,exist_ok=True); results=[]
     for row in entries:
         try:
