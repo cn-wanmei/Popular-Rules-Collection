@@ -150,8 +150,7 @@ def _build_client(
         entity_rules = [rules_by_id[rid] for rid in sorted(provider_ids) if rid in rules_by_id and rid in projected_ids]
         if entity_rules:
             path = artifacts_dir / EntityPathResolver.generated_provider(client, provider).relative_to("generated")
-            collision_path = artifacts_dir / EntityPathResolver.generated_service(client, provider, provider).relative_to("generated")
-            if path == collision_path:
+            if provider in provider_services[provider]:
                 continue
             path = path.with_name(path.name + meta["ext"])
             _render_view(render, entity_rules, path)
@@ -221,7 +220,7 @@ def build_all_clients(ir_dir: Path, artifacts_dir: Path, *, views: list[str] | N
     probe_report = validate_semantic_probes(rules, memberships)
     capabilities = _load_capabilities()
     service_provider, provider_services, provider_aggregates, china_exclusions = _load_directory_contract()
-    report: dict[str, Any] = {"schema": "adapter_build_v5", "clients": {}, "views": {"services": sorted(entities.get("services", [])), "aggregate": True, "china": True}, "source_contract": "semantic_ir_v2", "directory_contract": EntityPathResolver.LAYOUT_SCHEMA, "resolver": "EntityPathResolver", "run_id": str(run_id or "").strip() or None, "ir_digest": ir_digest, "china_excluded_independent_providers": sorted(china_exclusions), "semantic_intent": semantic_intent, "semantic_probes": probe_report, "v2_runtime_dependency": 0, "parallel": True}
+    report: dict[str, Any] = {"schema": "adapter_build_v5", "clients": {}, "views": {"services": sorted(entities.get("services", [])), "aggregate": True, "china": True}, "source_contract": "semantic_ir_v2", "directory_contract": EntityPathResolver.LAYOUT_SCHEMA, "layout_schema": EntityPathResolver.LAYOUT_SCHEMA, "resolver": "EntityPathResolver", "run_id": str(run_id or "").strip() or None, "ir_digest": ir_digest, "china_excluded_independent_providers": sorted(china_exclusions), "semantic_intent": semantic_intent, "semantic_probes": probe_report, "v2_runtime_dependency": 0, "parallel": True}
     with ThreadPoolExecutor(max_workers=min(8, max(1, len(CLIENTS))), thread_name_prefix="adapter") as pool:
         futures = {pool.submit(_build_client, client, meta, rules, memberships, artifacts_dir, capabilities, service_provider, provider_services, provider_aggregates, china_exclusions, ): client for client, meta in CLIENTS.items()}
         for future in as_completed(futures):
