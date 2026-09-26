@@ -1,63 +1,44 @@
 # xAI
 
-> 用于匹配 **xAI** 相关域名/IP 的分流规则（来自上游标准化合并）。
+> Current V3 service documentation. 本页记录当前 Service SSOT 身份，不等同于 Production 发布资格。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `xai` |
-| Primary Ecosystem | **AI** (`ai`) |
-| Service Type | service |
-| Tags | ai |
-| 类型 | domain |
-| Domains | 4 |
-| CIDR | 0 |
-| 最后更新 | 2026-09-01 |
-| Sources | metacubex |
-| Confidence | HIGH |
+| Primary Ecosystem | `xai` |
+| Service Type | aggregate |
+| Parent Aggregate | `ai` |
+| Dedicated client outputs | 7 / 7 |
+| Current State | candidate / review-required |
 
-## 用途
+## 当前生产订阅路径
 
-用于匹配 **xAI** 相关域名/IP 的分流规则（来自上游标准化合并）。
+- `egern/xai/xai/xai.yaml`
+- `loon/xai/xai/xai.list`
+- `mihomo/xai/xai/xai.yaml`
+- `quantumultx/xai/xai/xai.list`
+- `shadowrocket/xai/xai/xai.list`
+- `singbox/xai/xai/xai.json`
+- `surge/xai/xai/xai.list`
 
-支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+## 当前真源边界
 
-## 一键订阅
+- V3 Canonical：`data/runs/<run-id>/canonical/`
+- Semantic IR：`data/runs/<run-id>/ir/`
+- 最终发行：`generated/`
+- `rule/`：V1 历史浏览/迁移树
+- `rules/`：V3 目录契约
+- Legacy evidence：`database/services/`，不是 V3 Runtime 真源
 
-| 客户端 | 路径 | 链接 |
-|--------|------|------|
-| Mihomo | `generated/mihomo/xai.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/xai.yaml) |
-| sing-box | `generated/sing-box/xai.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/xai.json) |
-| Surge | `generated/surge/xai.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/xai.list) |
-| Shadowrocket | `generated/shadowrocket/xai.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/xai.list) |
-| Quantumult X | `generated/quantumult-x/xai.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/xai.list) |
-| Egern | `generated/egern/xai.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/xai.yaml) |
-| Loon | `generated/loon/xai.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/xai.list) |
+## Service Completion 状态
 
-## CDN 镜像（Mihomo）
+- Source 证据：按当前 Source evidence gate 验证
+- Source immutable release：PENDING
+- Collection exact binding：PENDING
+- Semantic / overlap audit：PENDING
+- Seven-client：当前 manifest 已有产物
+- Golden：PENDING
+- Canary：PENDING
+- Production：PENDING
 
-| 镜像 | 链接 |
-|------|------|
-| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/xai.yaml |
-| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/xai.yaml |
-| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/xai.yaml |
-| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/xai.yaml |
-
-## 官方网站
-
-_未在 config/official_sites.yaml 配置_
-
-## 规则来源（Provenance）
-
-- `metacubex`
-
-由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
-
-## 数据位置
-
-- Schema: `database/services/xai.yaml`
-- Domains: `database/domains/xai.txt`
-- IPs: `database/ips/xai.txt`（若有）
-- Product page: `rule/AI/…`（见 generate_rule_pages）
-
----
-_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
+> Candidate / Source release 不等于 Production；生产资格必须由 immutable provenance 与现有硬门决定。
