@@ -231,8 +231,21 @@ def render_pngs(svg:str,out_root:Path,service_id:str,variant:str,sizes:list[int]
     return paths
 
 def build(args:argparse.Namespace)->int:
-    policy,official=load_yaml(POLICY),load_yaml(OFFICIAL_SITES); rule_index=Path(args.rule_index) if args.rule_index else None; ir_path=Path(args.ir) if args.ir else None; entries=discover_services(rule_index=rule_index,ir_path=ir_path)
+    policy,official=load_yaml(POLICY),load_yaml(OFFICIAL_SITES)
+    run_dir=Path(args.run_dir) if args.run_dir else None
+    rule_index=Path(args.rule_index) if args.rule_index else None
+    ir_path=Path(args.ir) if args.ir else None
+    if run_dir:
+        if rule_index or ir_path: raise ValueError('--run-dir cannot be combined with --rule-index or --ir')
+        ir_path=run_dir/'ir'/'ir.json'
+    entries=discover_services(rule_index=rule_index,ir_path=ir_path)
     lineage={'run_id':str(args.run_id or ''),'snapshot_id':str(args.snapshot_id or ''),'ir_digest':str(args.ir_digest or '')}
+    if run_dir:
+        run_manifest=load_json(run_dir/'run_manifest.json') if (run_dir/'run_manifest.json').is_file() else {}
+        ir_manifest=load_json(run_dir/'ir'/'manifest.json') if (run_dir/'ir'/'manifest.json').is_file() else {}
+        lineage['run_id']=lineage['run_id'] or str(run_manifest.get('run_id') or '')
+        lineage['snapshot_id']=lineage['snapshot_id'] or str(run_manifest.get('snapshot_id') or '')
+        lineage['ir_digest']=lineage['ir_digest'] or str(ir_manifest.get('ir_digest') or '')
     if rule_index:
         doc=load_yaml(rule_index); lineage['run_id']=lineage['run_id'] or str(doc.get('run_id') or ''); lineage['ir_digest']=lineage['ir_digest'] or str(doc.get('ir_digest') or '')
     if ir_path:
@@ -312,17 +325,17 @@ def contract()->int:
 def main()->int:
     ap=argparse.ArgumentParser(); sub=ap.add_subparsers(dest='command',required=True); sub.add_parser('contract')
     for command in ('discover','build'):
-        p=sub.add_parser(command); p.add_argument('--rule-index'); p.add_argument('--ir'); p.add_argument('--out',required=True)
+        p=sub.add_parser(command); p.add_argument('--rule-index'); p.add_argument('--ir'); p.add_argument('--run-dir'); p.add_argument('--out',required=True)
         if command=='discover': p.add_argument('--run-id'); p.add_argument('--snapshot-id'); p.add_argument('--ir-digest')
         else: p.add_argument('--cache-dir'); p.add_argument('--run-id'); p.add_argument('--snapshot-id'); p.add_argument('--ir-digest'); p.add_argument('--refresh',action='store_true'); p.add_argument('--strict',action='store_true')
     p=sub.add_parser('gate'); p.add_argument('--registry',required=True); p.add_argument('--rule-index'); p.add_argument('--ir'); p.add_argument('--strict',action='store_true')
     args=ap.parse_args()
     if args.command=='contract': return contract()
     if args.command=='discover':
-        if not args.rule_index and not args.ir: ap.error('discover requires --rule-index or --ir')
+        if sum(bool(x) for x in (args.rule_index,args.ir,args.run_dir))!=1: ap.error('discover requires exactly one of --rule-index, --ir or --run-dir')
         return discover(args)
     if args.command=='build':
-        if not args.rule_index and not args.ir: ap.error('build requires --rule-index or --ir')
+        if sum(bool(x) for x in (args.rule_index,args.ir,args.run_dir))!=1: ap.error('build requires exactly one of --rule-index, --ir or --run-dir')
         return build(args)
     return gate(args)
 
