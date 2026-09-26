@@ -6,7 +6,7 @@ aggregates:
   microsoft: {id: microsoft, kind: aggregate, provider: microsoft, scope: ecosystem, members: [microsoft-core, microsoft-shared, azure, onedrive, teams, xbox, github, microsoftedge, bing, outlook, office, ms365-word, ms365-excel, ms365-powerpoint, ms365-onenote, ms365-planner, ms365-loop, ms365-mesh], exclude: []}
   tencent: {id: tencent, kind: aggregate, provider: tencent, scope: ecosystem, members: [tencent-core, tencent-shared, wechat, qq, qqmusic, qqmail, wecom, tencentmeeting, tencentcloud, tencentvideo, wegame, honorofkings_cn, honorofkings_global], exclude: []}
   alibaba: {id: alibaba, kind: aggregate, provider: alibaba, scope: ecosystem, members: [alibaba-core, alibaba-shared, taobao, tmall, alibabacloud, "1688", dingding, cainiao], exclude: []}
-  baidu: {id: baidu, kind: aggregate, provider: baidu, scope: ecosystem, members: [baidu-core, baidu-shared, baidunetdisk, baidutieba, baidumaps, baiduwiki, baiduwenku], exclude: []}
+  baidu: {id: baidu, kind: aggregate, provider: baidu, scope: ecosystem, members: [baidu-core, baidu-shared, baidunetdisk, baidutieba, baidumaps, baiduwiki, baiduwenku, baidu-zhidao], exclude: []}
   amazon: {id: amazon, kind: aggregate, provider: amazon, scope: ecosystem, members: [amazon-core, amazon-shared, aws, amazonmusic, audible, goodreads], exclude: []}
   bytedance: {id: bytedance, kind: aggregate, provider: bytedance, scope: ecosystem, members: [bytedance-core, bytedance-shared, doubao, feishu, douyin, capcut, toutiao, xigua, volcengine], exclude: []}
   netease: {id: netease, kind: aggregate, provider: netease, scope: ecosystem, members: [netease-core, netease-shared, youdao, neteasemusic, netease163mail, neteasegames], exclude: []}
@@ -19,3 +19,7 @@ aggregates:
   xai: {id: xai, kind: aggregate, provider: xai, scope: ecosystem, members: [grok, xai-grok], exclude: []}
   stripe: {id: stripe, kind: aggregate, provider: stripe, scope: ecosystem, members: [stripe-dashboard], exclude: []}
   paypal: {id: paypal, kind: aggregate, provider: paypal, scope: ecosystem, members: [paypal-core, venmo, xoom], exclude: []}
+  huawei: {id: huawei, kind: aggregate, provider: huawei, scope: ecosystem, members: [huawei-core, huawei-shared, huawei-cloud, huawei-appgallery], exclude: []}
+  xiaomi: {id: xiaomi, kind: aggregate, provider: xiaomi, scope: ecosystem, members: [mi-cloud], exclude: []}
+  jingdong: {id: jingdong, kind: aggregate, provider: jingdong, scope: ecosystem, members: [jd-cloud], exclude: []}
+  kuaishou: {id: kuaishou, kind: aggregate, provider: kuaishou, scope: ecosystem, members: [kuaishou, kuaishou-open], exclude: []}
