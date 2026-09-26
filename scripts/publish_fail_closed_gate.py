@@ -16,8 +16,9 @@ REQUIRED_SNIPPETS = (
     "--require-latest",
     "scripts/immutable_source_lineage_gate.py",
     "scripts/partial_production_invariant_gate.py",
-    "scripts/icon_v3_gate.py",
-    "assets/icons/v3/releases/latest/manifest.json",
+    "scripts/icon_system_v5.py",
+    "assets/icons/v5/registry.json",
+    "assets/icons/v5/release-pointer.json",
 )
 
 def main() -> int:
