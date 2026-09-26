@@ -149,9 +149,7 @@ def _build_client(
             provider_ids.update(memberships.get(service, []))
         entity_rules = [rules_by_id[rid] for rid in sorted(provider_ids) if rid in rules_by_id and rid in projected_ids]
         if entity_rules:
-            path = artifacts_dir / EntityPathResolver.generated_provider(client, provider).relative_to("generated")
-            if provider in provider_services[provider]:
-                continue
+            path = artifacts_dir / EntityPathResolver.generated_provider(client, provider, aggregate).relative_to("generated")
             path = path.with_name(path.name + meta["ext"])
             _render_view(render, entity_rules, path)
             emitted_files += 1
