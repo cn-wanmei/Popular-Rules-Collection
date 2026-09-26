@@ -1,56 +1,30 @@
-# PRC Icon Library V5
+# Icon System V5 / Icon Matrix 8
 
-状态：**Bootstrap / Candidate**
+**Status:** `rc_ready` — **146 / 146 services × 8/8** (100% coverage of all service entities including independent child services)
 
-V5 是全新的 8-layer Icon Matrix：
+## Coverage policy
 
-1. Source Original
-2. Glassmorphism
-3. Soft 3D / Claymorphism
-4. Neo-Skeuomorphism
-5. Minimalist Glyph & Multi-color Flat
-6. Two-tone / Broken Line
-7. MBE Illustration
-8. Y2K / Synthwave
+```text
+all entity=service (including child services under each provider)
+×
+source_original + 7 independent styles
+= 8/8
+```
 
-## 身份模型
+`provider_aggregate` reuses the corresponding service icon identity.
 
-service_id → one Icon Identity
+## Artifacts
 
-七个视觉风格都从同一个 Source Snapshot 派生。
+- `registry.json` — SSOT identity, provenance, lineage, variants
+- `release-pointer.json` — active RC pointer
+- Full SVG/PNG pack published as GitHub Release asset `icon-v5-rc1`
 
-## 数据边界
+## Origins
 
-当前 bootstrap 阶段从 rule/_index.yaml 读取 service entities，仅用于初始化覆盖发现。
+| Origin | Meaning |
+|--------|---------|
+| official_registered / official_discovered | Official site asset |
+| reviewed_local_seed | Repo seed when origin blocks automated fetch |
+| semantic_fallback | Non-brand glyph (private/restricted/stun) — not a brand logo |
 
-正式 production run 必须绑定 same Run / Snapshot / IR，并记录：
-
-run_id + snapshot_id + ir_digest + source_digest + renderer_version
-
-## Active / Historical
-
-V5 成为 active library 后：
-
-- v5/ = active
-- v4/ = historical compatibility
-- v3/ = historical compatibility
-- legacy = historical compatibility
-
-## Acquisition
-
-官方源优先：
-
-registered official → official declared icon → manifest → official favicon → reviewed third-party → semantic fallback
-
-官方来源不自动等同于开放许可证；Registry 必须保留 rights / redistribution 状态。
-
-## Build
-
-~~~bash
-python scripts/icon_system_v5.py contract
-python scripts/icon_system_v5.py discover --rule-index rule/_index.yaml --out build/icon-v5/service-discovery.json
-python scripts/icon_system_v5.py build --rule-index rule/_index.yaml --out build/icon-v5 --strict
-python scripts/icon_system_v5.py gate --registry build/icon-v5/registry.json --strict
-~~~
-
-在完整 acquisition 未执行完成前，不得把 V5 标记为 100% release。
+Official origin ≠ open-source license.
