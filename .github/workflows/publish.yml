@@ -176,12 +176,46 @@ jobs:
       - name: Publish fail-closed policy gate
         run: python scripts/publish_fail_closed_gate.py --workflow .github/workflows/publish.yml --status-workflow .github/workflows/status.yml
 
-      - name: Verify Icon System 3 stable release
+      - name: Verify Icon System V5 active release
         shell: bash
         run: |
           set -euo pipefail
-          test -s assets/icons/v3/releases/latest/manifest.json
-          python scripts/icon_v3_gate.py --build-root assets/icons/v3/releases/latest
+          test -s assets/icons/v5/registry.json
+          test -s assets/icons/v5/release-pointer.json
+          test -f scripts/icon_system_v5.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          reg=json.loads(Path("assets/icons/v5/registry.json").read_text(encoding="utf-8"))
+          ptr=json.loads(Path("assets/icons/v5/release-pointer.json").read_text(encoding="utf-8"))
+          if reg.get("schema") != "icon_registry_v5":
+              raise SystemExit(f"invalid registry schema: {reg.get('schema')}")
+          cov = reg.get("coverage") or {}
+          sc = int(cov.get("service_count") or 0)
+          complete = int(cov.get("complete_8_of_8") or 0)
+          if sc < 1 or complete != sc:
+              raise SystemExit(f"incomplete icon coverage: {cov}")
+          if list(cov.get("missing") or []):
+              raise SystemExit(f"icon coverage missing: {cov.get('missing')[:20]}")
+          if not (ptr.get("active") is True or ptr.get("status") in {"active", "rc_ready"}):
+              raise SystemExit(f"release-pointer not active: {ptr}")
+          entries = reg.get("entries") or []
+          if len(entries) != sc:
+              raise SystemExit(f"entry count mismatch entries={len(entries)} service_count={sc}")
+          # At least one derived style path must exist per service
+          for e in entries:
+              variants = e.get("variants") or {}
+              if len(variants) < 7:
+                  raise SystemExit(f"{e.get('service_id')}: fewer than 7 derived variants")
+          print(
+              f"icon v5 gate: PASS services={sc} complete={complete} "
+              f"pointer={ptr.get('status')} renderer={reg.get('renderer_version')}"
+          )
+          PY
+          # Service-id coverage vs rule index (no PNG path hard-fail for historical source_original)
+          if [ -f rule/_index.yaml ]; then
+            python scripts/icon_system_v5.py gate --registry assets/icons/v5/registry.json --rule-index rule/_index.yaml
+          fi
 
       - name: Verify complete generated distribution
         shell: bash
