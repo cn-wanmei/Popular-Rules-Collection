@@ -36,39 +36,61 @@ def provider_model():
         services[pid]={str(s).strip().casefold() for s in (node.get("services") or {}) if str(s).strip()}
     return sorted(set(ids)),services
 def move_tree():
-    providers,services=provider_model(); rm={}; gm={}
-    rr=ROOT/"rule"
-    for p in providers:
-        src=rr/p/f"{p}.yaml"; dst=rr/p/p/f"{p}.yaml"
-        if not src.is_file(): continue
-        dst.parent.mkdir(parents=True,exist_ok=True)
-        if p in services.get(p,set()):
-            if not dst.is_file(): raise RuntimeError(f"missing nested same-name rule: {dst}")
-            src.unlink(); rm[src.relative_to(rr).as_posix()]=None
-        else:
-            if dst.exists() and dst.read_bytes()!=src.read_bytes(): raise RuntimeError(f"rule conflict: {src} -> {dst}")
-            if not dst.exists(): src.replace(dst)
-            else: src.unlink()
-            rm[src.relative_to(rr).as_posix()]=dst.relative_to(rr).as_posix()
-    gr=ROOT/"generated"
-    for c in CLIENTS:
-        cr=gr/c
-        if not cr.is_dir(): continue
-        for p in providers:
-            same=p in services.get(p,set())
-            for ext in EXTENSIONS:
-                src=cr/p/f"{p}{ext}"; dst=cr/p/p/f"{p}{ext}"
-                if not src.is_file(): continue
-                dst.parent.mkdir(parents=True,exist_ok=True); sr=src.relative_to(gr).as_posix(); dr=dst.relative_to(gr).as_posix()
-                if same:
-                    if not dst.is_file(): raise RuntimeError(f"missing nested same-name generated file: {dst}")
-                    src.unlink(); gm[sr]=None
-                else:
-                    if dst.exists() and dst.read_bytes()!=src.read_bytes(): raise RuntimeError(f"generated conflict: {src} -> {dst}")
-                    if not dst.exists(): src.replace(dst)
-                    else: src.unlink()
-                    gm[sr]=dr
-    return providers,services,rm,gm
+    providers, services = provider_model()
+    rm, gm = {}, {}
+    special_rule = {"china", "category", "group", "aggregate", "unmapped"}
+    rr = ROOT / "rule"
+
+    # Migrate every physical provider aggregate, not only entries present in
+    # ruleset_hierarchy.yaml. This covers legacy services such as 12306.
+    if rr.is_dir():
+        for directory in sorted(rr.iterdir()):
+            if not directory.is_dir() or directory.name in special_rule:
+                continue
+            provider = directory.name
+            src = directory / f"{provider}.yaml"
+            dst = directory / provider / f"{provider}.yaml"
+            if not src.is_file():
+                continue
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            source_rel = src.relative_to(rr).as_posix()
+            target_rel = dst.relative_to(rr).as_posix()
+            if dst.exists():
+                src.unlink()
+                rm[source_rel] = None
+            else:
+                src.replace(dst)
+                rm[source_rel] = target_rel
+
+    gr = ROOT / "generated"
+    special_generated = {"china", "categories", "_promotion"}
+    if gr.is_dir():
+        for client_dir in sorted(gr.iterdir()):
+            if not client_dir.is_dir() or client_dir.name not in CLIENTS:
+                continue
+            client = client_dir.name
+            for directory in sorted(client_dir.iterdir()):
+                if not directory.is_dir() or directory.name in special_generated:
+                    continue
+                provider = directory.name
+                for ext in EXTENSIONS:
+                    src = directory / f"{provider}{ext}"
+                    dst = directory / provider / f"{provider}{ext}"
+                    if not src.is_file():
+                        continue
+                    dst.parent.mkdir(parents=True, exist_ok=True)
+                    source_rel = src.relative_to(gr).as_posix()
+                    target_rel = dst.relative_to(gr).as_posix()
+                    if dst.exists():
+                        src.unlink()
+                        gm[source_rel] = None
+                    else:
+                        src.replace(dst)
+                        gm[source_rel] = target_rel
+
+    return providers, services, rm, gm
+
+
 def rewrite_rule_metadata(providers,services):
     rr=ROOT/"rule"; idx=y(rr/"_index.yaml"); new=[]
     for e in idx.get("entries") or []:
