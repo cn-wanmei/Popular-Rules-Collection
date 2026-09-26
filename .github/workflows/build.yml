@@ -34,7 +34,7 @@ on:
         required: false
         default: ""
       skip_large:
-        description: "Skip configured mega service sets"
+        description: "Diagnostic-only partial build; production Build/Publish requires a complete collection"
         type: boolean
         default: false
 
@@ -85,6 +85,18 @@ jobs:
           [ -n "$(find "$source_root/sources" -type f -print -quit)" ] || { echo "Collected source root is empty"; exit 1; }
           echo "collection_date=$day" >> "$GITHUB_OUTPUT"
           echo "source_root=$source_root" >> "$GITHUB_OUTPUT"
+
+      - name: Production Collection Completeness Gate
+        if: ${{ github.event_name != 'pull_request' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ inputs.skip_large }}" = "true" ]; then
+            echo "Production builds cannot use skip_large=true; partial input is diagnostic-only."
+            exit 1
+          fi
+          PYTHONPATH=. python scripts/production_collection_gate.py \
+            --collection-root "${{ steps.source.outputs.source_root }}"
 
       - name: Immutable Source Lineage Gate
         shell: bash
