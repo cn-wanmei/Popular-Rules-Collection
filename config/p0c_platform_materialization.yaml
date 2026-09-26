@@ -1,0 +1,12 @@
+version: 1
+schema: p0c_platform_materialization_v1
+baseline: 2026-09-26
+status: candidate_only
+policy:
+  source_release_required: true
+  exact_immutable_binding_required: true
+  collection_production_requires_canary: true
+platforms:
+  google: [gmail, google-calendar, google-chat, google-contacts, google-docs, googledrive, google-forms, google-groups, google-meet, google-sheets, google-sites, google-slides, google-vids, google-workspace-studio, google-maps, google-photos, google-play, google-news, google-voice, google-earth]
+  microsoft: [ms365-word, ms365-excel, ms365-powerpoint, ms365-onenote, ms365-planner, ms365-loop, ms365-mesh]
+  apple: [applepodcasts, applebooks, applemaps]
