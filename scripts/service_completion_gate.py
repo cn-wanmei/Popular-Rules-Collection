@@ -21,6 +21,7 @@ def main() -> int:
     registry = y("config/service_registry.yaml")
     membership = y("config/service_membership.yaml")
     policy = y("config/service_domain_policy.yaml")
+    services_model = y("config/service_model/services.yaml")
 
     if len(targets) != 200:
         failures.append(f"company target count != 200: {len(targets)}")
@@ -51,6 +52,15 @@ def main() -> int:
             failures.append(f"{group} registry missing: {missing}")
 
     verified_domains = policy.get("verified_p0c") or {}
+    priority_domains = policy.get("verified_priority_wave") or {}
+    expected_priority = set("huawei-cloud mi-cloud jd-cloud kugou kuwo quanmin-k-ge amazonmusic audible goodreads messenger adobe-firefly adobe-stock adobe-fonts openai-api openai-platform chatgpt anthropic-claude anthropic-platform xai-grok stripe-dashboard venmo".split())
+    missing_priority_domains = sorted(expected_priority - set(priority_domains))
+    if missing_priority_domains:
+        failures.append(f"priority wave domain policy missing: {missing_priority_domains}")
+    model_services_text = str(services_model.get("services") or services_model.get("registry") or services_model)
+    missing_priority_services = sorted(sid for sid in expected_priority if sid not in model_services_text)
+    if missing_priority_services:
+        failures.append(f"priority wave service model missing: {missing_priority_services}")
     for sid in p0c:
         if sid not in verified_domains:
             failures.append(f"missing P0-C domain policy: {sid}")
@@ -65,6 +75,7 @@ def main() -> int:
         "company_count": len(targets),
         "completion_matrix_count": len(records),
         "p0c_verified_policy_count": len(verified_domains),
+        "priority_wave_policy_count": len(priority_domains),
         "lineage_lock": lineage,
         "failures": failures,
     }
