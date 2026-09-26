@@ -42,7 +42,7 @@ def test_rule_distribution_is_derived_from_ir_and_deterministic(tmp_path: Path):
     assert first["status"] == "ready"
     assert first["rule_file_count"] == 4
     assert (a / "acme" / "mail" / "mail.yaml").exists()
-    assert (a / "acme" / "acme.yaml").exists()
+    assert (a / "acme" / "acme" / "acme.yaml").exists()
     assert (a / "category" / "communication" / "communication.yaml").exists()
     assert (a / "aggregate" / "communication" / "communication.yaml").exists()
     assert first["ir_digest"] == second["ir_digest"]
