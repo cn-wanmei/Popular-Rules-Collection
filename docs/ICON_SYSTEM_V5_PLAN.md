@@ -121,8 +121,8 @@ rule file → 每个客户端各自请求图标
 2. 官方站点 HTML 中明确声明的 icon / apple-touch-icon
 3. 官方 Web Manifest 中声明的 icon
 4. 官方站点 favicon（仅作为 **official-origin asset**，不得自动声称为官方品牌 Logo）
-5. 已审核的第三方品牌资产
-6. semantic fallback（只在明确不具备品牌身份时使用）
+5. 已审核的第三方品牌资产（V5 runtime 首轮不自动启用，进入 review/hold）
+6. semantic fallback（V5 runtime 首轮不自动启用，只作为显式审查方案）
 
 第三方资产永远不能标记为 official。
 
@@ -174,7 +174,7 @@ Acquisition 必须：
 - 拒绝外部远程 SVG/image 引用
 - 记录最终 URL
 - 记录 HTTP 状态 / Content-Type / 长度 / SHA-256
-- source cache 使用 content-addressed digest
+- source cache 采用持久化 digest 校验和 source URL 映射；正式发布时可进一步接入 Engine CAS，不得把缓存文件名本身当作身份
 - 严禁无限爬站
 
 ## 5. Rights / Provenance
@@ -287,7 +287,7 @@ Acquisition 必须：
 
 ### 强制要求
 
-7 个 renderer 必须是 **7 个独立算法模块**。
+7 个 renderer 必须是 **7 个独立算法模块**，对应 `scripts/icon_v5_renderers/` 下的独立实现文件。
 
 允许共享：
 
@@ -316,6 +316,8 @@ render(base, style) + 7 个不同 CSS wrapper。
 - 256 PNG
 - 128 PNG
 - 64 PNG
+
+V5 build 已将 SVG 通过 CairoSVG 栅格化为 64/128/256；QA 仍需检查 24/32/48/64/128/256。
 
 QA 还必须检查：
 
@@ -362,6 +364,8 @@ assets/icons/
 ~~~
 
 V3/V4/Legacy 不再成为 active SSOT。
+
+V5 bootstrap 阶段允许从 `rule/_index.yaml` 发现服务；正式 production acquisition 优先通过 `--run-dir` 读取同一 Engine Run 的 `ir/ir.json` 与 `ir/manifest.json`，并从 run manifest 绑定 `run_id/snapshot_id`。
 
 历史版本仍保留 Git 历史与 immutable release evidence，以支持 rollback 和审计。
 
@@ -729,6 +733,6 @@ V5 只有在以下条件同时成立后才算“完成”：
 
 ## 21. 本次实现范围
 
-本次提交先把 **V5 的架构、契约、自动化和 CI 边界一次建立正确**，随后由受控 branch writer 执行完整官方 source acquisition 与 146+ service 的首轮构建。
+本次提交先把 **V5 的架构、契约、自动化和 CI 边界一次建立正确**；随后由受控 branch writer 在 Engine Run 上执行完整官方 source acquisition 与当前 service universe 的首轮构建。V5 不把 bootstrap Rule Index 当作正式生产输入。
 
 受限于当前执行环境无法直接访问互联网源站，不能在本次离线提交中伪造“已抓取全部官方图标”；因此所有未 acquisition 的服务必须真实进入 review/hold，不得用假图标把 coverage 填满。
