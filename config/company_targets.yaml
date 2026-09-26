@@ -1,0 +1,209 @@
+version: 1
+schema: popular_rules_service_completion_company_targets_v1
+baseline: 2026-09-26
+source_of_truth: execution_plan_2026-09-26
+count:
+  domestic: 100
+  global: 100
+  total: 200
+companies:
+  - {company_id: D001, region: domestic, batch: D1, name: "华为"}
+  - {company_id: D002, region: domestic, batch: D1, name: "腾讯"}
+  - {company_id: D003, region: domestic, batch: D1, name: "字节跳动"}
+  - {company_id: D004, region: domestic, batch: D1, name: "阿里巴巴集团"}
+  - {company_id: D005, region: domestic, batch: D1, name: "小米集团"}
+  - {company_id: D006, region: domestic, batch: D1, name: "京东集团"}
+  - {company_id: D007, region: domestic, batch: D1, name: "拼多多"}
+  - {company_id: D008, region: domestic, batch: D1, name: "美团"}
+  - {company_id: D009, region: domestic, batch: D1, name: "蚂蚁集团"}
+  - {company_id: D010, region: domestic, batch: D1, name: "百度"}
+  - {company_id: D011, region: domestic, batch: D1, name: "网易"}
+  - {company_id: D012, region: domestic, batch: D1, name: "快手"}
+  - {company_id: D013, region: domestic, batch: D1, name: "联想集团"}
+  - {company_id: D014, region: domestic, batch: D1, name: "中兴通讯"}
+  - {company_id: D015, region: domestic, batch: D1, name: "中国移动"}
+  - {company_id: D016, region: domestic, batch: D1, name: "滴滴"}
+  - {company_id: D017, region: domestic, batch: D1, name: "携程集团"}
+  - {company_id: D018, region: domestic, batch: D1, name: "中国电信"}
+  - {company_id: D019, region: domestic, batch: D1, name: "中国联通"}
+  - {company_id: D020, region: domestic, batch: D1, name: "比亚迪"}
+  - {company_id: D021, region: domestic, batch: D1, name: "OPPO"}
+  - {company_id: D022, region: domestic, batch: D1, name: "vivo"}
+  - {company_id: D023, region: domestic, batch: D1, name: "荣耀"}
+  - {company_id: D024, region: domestic, batch: D1, name: "360集团"}
+  - {company_id: D025, region: domestic, batch: D1, name: "哔哩哔哩"}
+  - {company_id: D026, region: domestic, batch: D2, name: "腾讯音乐娱乐集团"}
+  - {company_id: D027, region: domestic, batch: D2, name: "科大讯飞"}
+  - {company_id: D028, region: domestic, batch: D2, name: "石墨文档"}
+  - {company_id: D029, region: domestic, batch: D2, name: "深信服"}
+  - {company_id: D030, region: domestic, batch: D2, name: "海尔智家"}
+  - {company_id: D031, region: domestic, batch: D2, name: "海尔消费金融/日日顺相关数字业务"}
+  - {company_id: D032, region: domestic, batch: D2, name: "京东物流"}
+  - {company_id: D033, region: domestic, batch: D2, name: "顺丰控股"}
+  - {company_id: D034, region: domestic, batch: D2, name: "贝壳"}
+  - {company_id: D035, region: domestic, batch: D2, name: "微博"}
+  - {company_id: D036, region: domestic, batch: D2, name: "唯品会"}
+  - {company_id: D037, region: domestic, batch: D2, name: "同程旅行"}
+  - {company_id: D038, region: domestic, batch: D2, name: "去哪儿"}
+  - {company_id: D039, region: domestic, batch: D2, name: "得物"}
+  - {company_id: D040, region: domestic, batch: D2, name: "BOSS直聘"}
+  - {company_id: D041, region: domestic, batch: D2, name: "芒果超媒"}
+  - {company_id: D042, region: domestic, batch: D2, name: "世纪华通"}
+  - {company_id: D043, region: domestic, batch: D2, name: "三七互娱"}
+  - {company_id: D044, region: domestic, batch: D2, name: "恺英网络"}
+  - {company_id: D045, region: domestic, batch: D2, name: "完美世界"}
+  - {company_id: D046, region: domestic, batch: D2, name: "网易有道"}
+  - {company_id: D047, region: domestic, batch: D2, name: "金山软件"}
+  - {company_id: D048, region: domestic, batch: D2, name: "金蝶国际"}
+  - {company_id: D049, region: domestic, batch: D2, name: "用友网络"}
+  - {company_id: D050, region: domestic, batch: D2, name: "网宿科技"}
+  - {company_id: D051, region: domestic, batch: D3, name: "东方财富"}
+  - {company_id: D052, region: domestic, batch: D3, name: "同花顺"}
+  - {company_id: D053, region: domestic, batch: D3, name: "货拉拉"}
+  - {company_id: D054, region: domestic, batch: D3, name: "满帮集团"}
+  - {company_id: D055, region: domestic, batch: D3, name: "平安科技"}
+  - {company_id: D056, region: domestic, batch: D3, name: "陆金所"}
+  - {company_id: D057, region: domestic, batch: D3, name: "迅雷"}
+  - {company_id: D058, region: domestic, batch: D3, name: "搜狐"}
+  - {company_id: D059, region: domestic, batch: D3, name: "爱奇艺"}
+  - {company_id: D060, region: domestic, batch: D3, name: "虎牙"}
+  - {company_id: D061, region: domestic, batch: D3, name: "斗鱼"}
+  - {company_id: D062, region: domestic, batch: D3, name: "酷狗/腾讯音乐体系"}
+  - {company_id: D063, region: domestic, batch: D3, name: "喜马拉雅"}
+  - {company_id: D064, region: domestic, batch: D3, name: "汽车之家"}
+  - {company_id: D065, region: domestic, batch: D3, name: "小红书"}
+  - {company_id: D066, region: domestic, batch: D3, name: "智联招聘"}
+  - {company_id: D067, region: domestic, batch: D3, name: "58集团"}
+  - {company_id: D068, region: domestic, batch: D3, name: "安居客"}
+  - {company_id: D069, region: domestic, batch: D3, name: "亚朵集团"}
+  - {company_id: D070, region: domestic, batch: D3, name: "哈啰"}
+  - {company_id: D071, region: domestic, batch: D3, name: "曹操出行"}
+  - {company_id: D072, region: domestic, batch: D3, name: "T3出行"}
+  - {company_id: D073, region: domestic, batch: D3, name: "神州信息"}
+  - {company_id: D074, region: domestic, batch: D3, name: "科大讯飞医疗/相关数字业务"}
+  - {company_id: D075, region: domestic, batch: D3, name: "商汤科技"}
+  - {company_id: D076, region: domestic, batch: D4, name: "寒武纪"}
+  - {company_id: D077, region: domestic, batch: D4, name: "壁仞科技"}
+  - {company_id: D078, region: domestic, batch: D4, name: "昆仑芯"}
+  - {company_id: D079, region: domestic, batch: D4, name: "智谱AI"}
+  - {company_id: D080, region: domestic, batch: D4, name: "月之暗面"}
+  - {company_id: D081, region: domestic, batch: D4, name: "MiniMax"}
+  - {company_id: D082, region: domestic, batch: D4, name: "DeepSeek"}
+  - {company_id: D083, region: domestic, batch: D4, name: "百川智能"}
+  - {company_id: D084, region: domestic, batch: D4, name: "零一万物"}
+  - {company_id: D085, region: domestic, batch: D4, name: "书生·InternLM / 上海人工智能实验室"}
+  - {company_id: D086, region: domestic, batch: D4, name: "昆仑万维"}
+  - {company_id: D087, region: domestic, batch: D4, name: "科大讯飞（重复项）"}
+  - {company_id: D088, region: domestic, batch: D4, name: "海康威视"}
+  - {company_id: D089, region: domestic, batch: D4, name: "大华股份"}
+  - {company_id: D090, region: domestic, batch: D4, name: "大疆创新"}
+  - {company_id: D091, region: domestic, batch: D4, name: "传音控股"}
+  - {company_id: D092, region: domestic, batch: D4, name: "石头科技"}
+  - {company_id: D093, region: domestic, batch: D4, name: "追觅科技"}
+  - {company_id: D094, region: domestic, batch: D4, name: "极米科技"}
+  - {company_id: D095, region: domestic, batch: D4, name: "涂鸦智能"}
+  - {company_id: D096, region: domestic, batch: D4, name: "安克创新"}
+  - {company_id: D097, region: domestic, batch: D4, name: "软通动力"}
+  - {company_id: D098, region: domestic, batch: D4, name: "创新奇智"}
+  - {company_id: D099, region: domestic, batch: D4, name: "国联股份"}
+  - {company_id: D100, region: domestic, batch: D4, name: "上海钢联"}
+  - {company_id: O001, region: global, batch: O1, name: "Microsoft 微软"}
+  - {company_id: O002, region: global, batch: O1, name: "Apple 苹果"}
+  - {company_id: O003, region: global, batch: O1, name: "Alphabet（Google）谷歌"}
+  - {company_id: O004, region: global, batch: O1, name: "NVIDIA 英伟达"}
+  - {company_id: O005, region: global, batch: O1, name: "Amazon 亚马逊"}
+  - {company_id: O006, region: global, batch: O1, name: "Meta Platforms"}
+  - {company_id: O007, region: global, batch: O1, name: "TSMC 台积电"}
+  - {company_id: O008, region: global, batch: O1, name: "Samsung Electronics 三星电子"}
+  - {company_id: O009, region: global, batch: O1, name: "Oracle 甲骨文"}
+  - {company_id: O010, region: global, batch: O1, name: "Broadcom 博通"}
+  - {company_id: O011, region: global, batch: O1, name: "ASML 阿斯麦"}
+  - {company_id: O012, region: global, batch: O1, name: "AMD 超威半导体"}
+  - {company_id: O013, region: global, batch: O1, name: "SAP"}
+  - {company_id: O014, region: global, batch: O1, name: "Salesforce"}
+  - {company_id: O015, region: global, batch: O1, name: "Sony 索尼"}
+  - {company_id: O016, region: global, batch: O1, name: "IBM"}
+  - {company_id: O017, region: global, batch: O1, name: "Cisco 思科"}
+  - {company_id: O018, region: global, batch: O1, name: "Qualcomm 高通"}
+  - {company_id: O019, region: global, batch: O1, name: "Adobe"}
+  - {company_id: O020, region: global, batch: O1, name: "Tesla 特斯拉"}
+  - {company_id: O021, region: global, batch: O1, name: "ServiceNow"}
+  - {company_id: O022, region: global, batch: O1, name: "Dell Technologies 戴尔科技"}
+  - {company_id: O023, region: global, batch: O1, name: "Intel 英特尔"}
+  - {company_id: O024, region: global, batch: O1, name: "Applied Materials 应用材料"}
+  - {company_id: O025, region: global, batch: O1, name: "Micron 美光"}
+  - {company_id: O026, region: global, batch: O1, name: "SK hynix SK海力士"}
+  - {company_id: O027, region: global, batch: O1, name: "Arm Holdings"}
+  - {company_id: O028, region: global, batch: O1, name: "Texas Instruments 德州仪器"}
+  - {company_id: O029, region: global, batch: O1, name: "Palo Alto Networks"}
+  - {company_id: O030, region: global, batch: O1, name: "Siemens 西门子"}
+  - {company_id: O031, region: global, batch: O1, name: "Schneider Electric 施耐德电气"}
+  - {company_id: O032, region: global, batch: O2, name: "Booking Holdings"}
+  - {company_id: O033, region: global, batch: O2, name: "Uber"}
+  - {company_id: O034, region: global, batch: O2, name: "Netflix"}
+  - {company_id: O035, region: global, batch: O2, name: "Shopify"}
+  - {company_id: O036, region: global, batch: O2, name: "Spotify"}
+  - {company_id: O037, region: global, batch: O2, name: "Airbnb"}
+  - {company_id: O038, region: global, batch: O2, name: "PayPal"}
+  - {company_id: O039, region: global, batch: O2, name: "Stripe"}
+  - {company_id: O040, region: global, batch: O2, name: "OpenAI"}
+  - {company_id: O041, region: global, batch: O2, name: "Anthropic"}
+  - {company_id: O042, region: global, batch: O2, name: "SpaceX"}
+  - {company_id: O043, region: global, batch: O2, name: "Palantir Technologies"}
+  - {company_id: O044, region: global, batch: O2, name: "xAI"}
+  - {company_id: O045, region: global, batch: O2, name: "Databricks"}
+  - {company_id: O046, region: global, batch: O2, name: "Snowflake"}
+  - {company_id: O047, region: global, batch: O2, name: "Atlassian"}
+  - {company_id: O048, region: global, batch: O2, name: "Workday"}
+  - {company_id: O049, region: global, batch: O2, name: "Intuit"}
+  - {company_id: O050, region: global, batch: O2, name: "Synopsys 新思科技"}
+  - {company_id: O051, region: global, batch: O2, name: "Cadence Design Systems 铿腾电子"}
+  - {company_id: O052, region: global, batch: O2, name: "Lam Research 泛林集团"}
+  - {company_id: O053, region: global, batch: O2, name: "KLA"}
+  - {company_id: O054, region: global, batch: O2, name: "Tokyo Electron 东京电子"}
+  - {company_id: O055, region: global, batch: O2, name: "MediaTek 联发科技"}
+  - {company_id: O056, region: global, batch: O3, name: "Nintendo 任天堂"}
+  - {company_id: O057, region: global, batch: O3, name: "LG Electronics LG电子"}
+  - {company_id: O058, region: global, batch: O3, name: "Panasonic Holdings 松下控股"}
+  - {company_id: O059, region: global, batch: O3, name: "Hitachi 日立"}
+  - {company_id: O060, region: global, batch: O3, name: "Fujitsu 富士通"}
+  - {company_id: O061, region: global, batch: O3, name: "NEC"}
+  - {company_id: O062, region: global, batch: O3, name: "NTT DATA"}
+  - {company_id: O063, region: global, batch: O3, name: "LY Corporation"}
+  - {company_id: O064, region: global, batch: O3, name: "Rakuten 乐天集团"}
+  - {company_id: O065, region: global, batch: O3, name: "Mercado Libre"}
+  - {company_id: O066, region: global, batch: O3, name: "Sea Limited"}
+  - {company_id: O067, region: global, batch: O3, name: "Grab Holdings"}
+  - {company_id: O068, region: global, batch: O3, name: "Coupang"}
+  - {company_id: O069, region: global, batch: O3, name: "Kakao"}
+  - {company_id: O070, region: global, batch: O3, name: "Prosus"}
+  - {company_id: O071, region: global, batch: O3, name: "Ericsson 爱立信"}
+  - {company_id: O072, region: global, batch: O3, name: "Nokia 诺基亚"}
+  - {company_id: O073, region: global, batch: O3, name: "Equinix"}
+  - {company_id: O074, region: global, batch: O3, name: "Arista Networks"}
+  - {company_id: O075, region: global, batch: O3, name: "HPE"}
+  - {company_id: O076, region: global, batch: O4, name: "NetApp"}
+  - {company_id: O077, region: global, batch: O4, name: "Super Micro Computer 超微电脑"}
+  - {company_id: O078, region: global, batch: O4, name: "Cloudflare"}
+  - {company_id: O079, region: global, batch: O4, name: "CrowdStrike"}
+  - {company_id: O080, region: global, batch: O4, name: "Fortinet"}
+  - {company_id: O081, region: global, batch: O4, name: "MongoDB"}
+  - {company_id: O082, region: global, batch: O4, name: "Datadog"}
+  - {company_id: O083, region: global, batch: O4, name: "Zoom Communications"}
+  - {company_id: O084, region: global, batch: O4, name: "Okta"}
+  - {company_id: O085, region: global, batch: O4, name: "HubSpot"}
+  - {company_id: O086, region: global, batch: O4, name: "Twilio"}
+  - {company_id: O087, region: global, batch: O4, name: "Autodesk 欧特克"}
+  - {company_id: O088, region: global, batch: O4, name: "Dassault Systèmes 达索系统"}
+  - {company_id: O089, region: global, batch: O4, name: "Roblox"}
+  - {company_id: O090, region: global, batch: O4, name: "Epic Games"}
+  - {company_id: O091, region: global, batch: O4, name: "Electronic Arts EA"}
+  - {company_id: O092, region: global, batch: O4, name: "Take-Two Interactive"}
+  - {company_id: O093, region: global, batch: O4, name: "Unity Software"}
+  - {company_id: O094, region: global, batch: O4, name: "Block"}
+  - {company_id: O095, region: global, batch: O4, name: "Coinbase"}
+  - {company_id: O096, region: global, batch: O4, name: "Motorola Solutions"}
+  - {company_id: O097, region: global, batch: O4, name: "FANUC 发那科"}
+  - {company_id: O098, region: global, batch: O4, name: "Keyence 基恩士"}
+  - {company_id: O099, region: global, batch: O4, name: "GlobalFoundries 格芯"}
+  - {company_id: O100, region: global, batch: O4, name: "UMC 联电"}
