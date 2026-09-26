@@ -8,6 +8,8 @@ on:
       - "scripts/migrate_directory_layout_v2.py"
       - ".github/workflows/directory-layout-v2-migration.yml"
 
+# rerun-on-latest-main
+
 jobs:
   migrate:
     runs-on: ubuntu-latest
