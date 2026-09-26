@@ -91,21 +91,54 @@ def move_tree():
     return providers, services, rm, gm
 
 
-def rewrite_rule_metadata(providers,services):
-    rr=ROOT/"rule"; idx=y(rr/"_index.yaml"); new=[]
-    for e in idx.get("entries") or []:
-        if not isinstance(e,dict): continue
-        e=dict(e); path=str(e.get("path") or ""); parts=Path(path).parts
-        if len(parts)==2 and parts[0] in providers and parts[1]==f"{parts[0]}.yaml":
-            if parts[0] in services.get(parts[0],set()): continue
-            e["path"]=f"{parts[0]}/{parts[0]}/{parts[0]}.yaml"
-        new.append(e)
-    new.sort(key=lambda e:str(e.get("path") or ""))
-    idx["layout_schema"]=LAYOUT; idx["validation"]={"duplicate_paths":0,"legacy_layout":0,"layout_schema":LAYOUT}; idx["entries"]=new; idx["status"]="ready"; wy(rr/"_index.yaml",idx)
-    m=j(rr/"manifest.json"); files=sorted(p.relative_to(rr).as_posix() for p in rr.rglob("*.yaml") if p.name not in {"_index.yaml","README.md"})
-    m["layout_schema"]=LAYOUT; m["validation"]={"duplicate_paths":0,"legacy_layout":0,"layout_schema":LAYOUT}; m["files"]=files; m["rule_file_count"]=len(files); m["rule_count"]=sum(int(e.get("rule_count") or 0) for e in new)
-    m["entities"]={"provider_aggregates":sum(1 for e in new if e.get("entity")=="provider_aggregate"),"services":sum(1 for e in new if e.get("entity")=="service"),"categories":sum(1 for e in new if e.get("entity")=="category"),"other":sum(1 for e in new if e.get("entity") not in {"provider_aggregate","service","category"})}
-    wj(rr/"manifest.json",m)
+def rewrite_rule_metadata(rule_moves):
+    rr = ROOT / "rule"
+    idx_path = rr / "_index.yaml"
+    idx = y(idx_path)
+    new_entries = []
+    for entry in idx.get("entries") or []:
+        if not isinstance(entry, dict):
+            continue
+        item = dict(entry)
+        path = str(item.get("path") or "")
+        if path in rule_moves:
+            mapped = rule_moves[path]
+            if mapped is None:
+                continue
+            item["path"] = mapped
+        new_entries.append(item)
+    new_entries.sort(key=lambda e: str(e.get("path") or ""))
+    idx["layout_schema"] = LAYOUT
+    idx["validation"] = {"duplicate_paths": 0, "legacy_layout": 0, "layout_schema": LAYOUT}
+    idx["entries"] = new_entries
+    idx["status"] = "ready"
+    wy(idx_path, idx)
+
+    mp = rr / "manifest.json"
+    manifest = j(mp)
+    files = sorted(
+        p.relative_to(rr).as_posix()
+        for p in rr.rglob("*.yaml")
+        if p.name not in {"_index.yaml", "README.md"}
+    )
+    manifest["layout_schema"] = LAYOUT
+    manifest["validation"] = {"duplicate_paths": 0, "legacy_layout": 0, "layout_schema": LAYOUT}
+    manifest["files"] = files
+    manifest["rule_file_count"] = len(files)
+    manifest["rule_count"] = sum(int(e.get("rule_count") or 0) for e in new_entries)
+    manifest["entities"] = {
+        "provider_aggregates": sum(1 for e in new_entries if e.get("entity") == "provider_aggregate"),
+        "services": sum(1 for e in new_entries if e.get("entity") == "service"),
+        "categories": sum(1 for e in new_entries if e.get("entity") == "category"),
+        "other": sum(
+            1
+            for e in new_entries
+            if e.get("entity") not in {"provider_aggregate", "service", "category"}
+        ),
+    }
+    wj(mp, manifest)
+
+
 def rewrite_generated_metadata(gm):
     gr=ROOT/"generated"; mp=gr/"manifest.json"; m=j(mp); rows=[]
     network={"network","geosite","geoip","provider","asn","ip","policies","mmdb"}
@@ -149,7 +182,7 @@ def rewrite_changelog():
     if "[2026.09.26] — Directory Layout v2" not in s:
         e="## [2026.09.26] — Directory Layout v2\n\n### Changed\n- Unified provider aggregate and child-service path generation.\n- Added EntityPathResolver and fail-closed layout validation.\n- Updated Rule Index, Generated Manifest and release metadata.\n\n### Fixed\n- Removed legacy duplicate provider aggregate files.\n- Preserved existing same-name child services such as 12306.\n\n### Documentation\n- Added docs/layout.md and compact README quick navigation.\n\n"; f.write_text(e+s,encoding="utf-8")
 def main():
-    providers,services,rm,gm=move_tree(); rewrite_rule_metadata(providers,services); rewrite_generated_metadata(gm); rewrite_docs(providers); rewrite_readme(); rewrite_changelog()
+    providers,services,rm,gm=move_tree(); rewrite_rule_metadata(rm); rewrite_generated_metadata(gm); rewrite_docs(providers); rewrite_readme(); rewrite_changelog()
     # fail-closed final assertions
     required=("rule/12306/12306/12306.yaml","rule/apple/apple/apple.yaml","rule/apple/appletv/appletv.yaml","generated/mihomo/12306/12306/12306.yaml","generated/mihomo/apple/apple/apple.yaml","generated/mihomo/apple/appletv/appletv.yaml")
     forbidden=("rule/12306/12306.yaml","rule/apple/apple.yaml","generated/mihomo/12306/12306.yaml","generated/mihomo/apple/apple.yaml")
