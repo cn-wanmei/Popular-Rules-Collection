@@ -1,0 +1,25 @@
+{
+  "schema": "rule_distribution_gate_v4",
+  "pass": true,
+  "errors": [],
+  "human_rule_files": 262,
+  "canonical_rule_files": 262,
+  "generated_rule_files": 0,
+  "alternate_rule_tree_exists": false,
+  "china_excluded_independent_providers": [
+    "alibaba",
+    "baidu",
+    "bytedance",
+    "huawei",
+    "jd",
+    "meituan",
+    "netease",
+    "oppo",
+    "tencent",
+    "vivo",
+    "xiaomi"
+  ],
+  "policy": "config/service_model/directories.yaml",
+  "rule_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/data/runs/20260926T071821627709Z-run/rule",
+  "layout_schema": "directory_layout_v2"
+}
