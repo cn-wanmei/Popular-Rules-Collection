@@ -1,9 +1,17 @@
-# rule/ layout — Historical Reference
+# Rule Layout
 
-> **历史说明：** 本页保留旧 V1 layout 设计，不能作为当前 Release 的路径规范。
+当前规则目录采用 **Directory Layout v2**。
 
-当前入口：[rule/_index.yaml](../rule/_index.yaml) · [SERVICE_CATALOG.md](SERVICE_CATALOG.md) · [ARCHITECTURE.md](ARCHITECTURE.md)
+- Provider 聚合：`rule/{provider}/{aggregate}/{aggregate}.yaml`
+- 子服务：`rule/{provider}/{service}/{service}.yaml`
+- `rule/` 只用于人工浏览与选择，不作为客户端运行时输入。
+- 聚合与同名子服务可以同时存在，因为使用不同的实体 ID 与目录层。
 
-旧文档曾使用 `rule/{Ecosystem}/{Service}/` 与 V1 Canonical Service Model；当前 Release 的实际规则发行路径直接读取 `rule/_index.yaml`，例如 `alibaba/alipay/alipay.yaml`。
+示例：
 
-V3 Canonical 真源位于 `data/runs/<run>/canonical/`；`rule/` 是同一 Semantic IR Run 的人类可读发行投影。
+```text
+rule/acfun/acfun_aggregate/acfun_aggregate.yaml
+rule/acfun/acfun/acfun.yaml
+```
+
+详细规范见 [docs/layout.md](layout.md) 与 [rule/_index.yaml](../rule/_index.yaml)。
