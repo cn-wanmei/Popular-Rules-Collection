@@ -7,17 +7,10 @@ import json
 from pathlib import Path
 
 from src.engine.validation.directory_contract import validate
+from src.engine.distribution.path_resolver import EntityPathResolver
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED_LAYOUT = {
-    "human_aggregate": "rule/{provider}/{provider}.yaml",
-    "human_service": "rule/{provider}/{service}/{service}.yaml",
-    "human_china": "rule/china/china.yaml",
-    "human_category": "rule/category/{category}/{category}.yaml",
-    "human_group": "rule/group/{group}/{group}.yaml",
-    "human_aggregate_entity": "rule/aggregate/{aggregate}/{aggregate}.yaml",
-    "human_unmapped_service": "rule/unmapped/{service}/{service}.yaml",
-}
+EXPECTED_LAYOUT = EntityPathResolver.HUMAN_LAYOUT
 
 
 def _policy_report(root: Path) -> dict:
