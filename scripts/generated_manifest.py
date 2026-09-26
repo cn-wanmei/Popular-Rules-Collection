@@ -85,6 +85,7 @@ def main() -> int:
     network_scopes = sorted({item["scope"] for item in files if item["kind"] == "network_dataset"})
     manifest = {
         "schema": "generated_distribution_manifest_v2",
+        "schema_version": 2,
         "layout_schema": LAYOUT_SCHEMA,
         "generated_at": now,
         "collection_date": args.date,
