@@ -11,7 +11,7 @@
 | Service ID | `12306_aggregate` |
 | 类型 | provider_aggregate |
 | Provider / 服务集 | `12306` |
-| 规则浏览路径 | `12306/12306.yaml` |
+| 规则浏览路径 | `12306/12306/12306.yaml` |
 | 语义规则数量 | **15** |
 | 语义 SHA-256 | `2ef5eeb87c93a93456c746403a80094d13bed6a3ae8450ffaf7104092a2edbcc` |
 | Collection Date | `2026-09-24` |
@@ -40,23 +40,23 @@
 
 | 客户端 | 文件 | Manifest rule_count | size | SHA-256 | Raw |
 |---|---|---:|---:|---|---|
-| egern | `egern/12306/12306.yaml` | 15 | 286 | `e39acc1ad8bc5689cfc54b599ca08874c3cf8e801f6983b1d980abd2e0014d72` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/12306/12306.yaml) |
-| loon | `loon/12306/12306.list` | 15 | 387 | `566a9d335ced77bb3c7aa00d2b5f8f9e5fecd40760cabec377dedb1aa1a80646` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/12306/12306.list) |
-| mihomo | `mihomo/12306/12306.yaml` | 15 | 456 | `64c0ff004fb1069fe46c0cf54b5ae6798b18ca6adfff98787d754a28a8cc929f` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/12306/12306.yaml) |
-| quantumultx | `quantumultx/12306/12306.list` | 15 | 477 | `eb11c2fa8a25638c891b030bfe5aa4bdaca6ec988d5129a17c3a78bb4d3224ad` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/12306/12306.list) |
-| shadowrocket | `shadowrocket/12306/12306.list` | 15 | 387 | `566a9d335ced77bb3c7aa00d2b5f8f9e5fecd40760cabec377dedb1aa1a80646` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/12306/12306.list) |
-| singbox | `singbox/12306/12306.json` | 0 | 423 | `784227d5fd61eb017b6141a02b9dfc8112a23808017ad50cafe07669c2f328f0` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/12306/12306.json) |
-| surge | `surge/12306/12306.list` | 15 | 387 | `566a9d335ced77bb3c7aa00d2b5f8f9e5fecd40760cabec377dedb1aa1a80646` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/12306/12306.list) |
+| egern | `egern/12306/12306.yaml` | 15 | 286 | `e39acc1ad8bc5689cfc54b599ca08874c3cf8e801f6983b1d980abd2e0014d72` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/12306/12306/12306.yaml) |
+| loon | `loon/12306/12306.list` | 15 | 387 | `566a9d335ced77bb3c7aa00d2b5f8f9e5fecd40760cabec377dedb1aa1a80646` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/12306/12306/12306.list) |
+| mihomo | `mihomo/12306/12306.yaml` | 15 | 456 | `64c0ff004fb1069fe46c0cf54b5ae6798b18ca6adfff98787d754a28a8cc929f` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/12306/12306/12306.yaml) |
+| quantumultx | `quantumultx/12306/12306.list` | 15 | 477 | `eb11c2fa8a25638c891b030bfe5aa4bdaca6ec988d5129a17c3a78bb4d3224ad` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/12306/12306/12306.list) |
+| shadowrocket | `shadowrocket/12306/12306.list` | 15 | 387 | `566a9d335ced77bb3c7aa00d2b5f8f9e5fecd40760cabec377dedb1aa1a80646` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/12306/12306/12306.list) |
+| singbox | `singbox/12306/12306.json` | 0 | 423 | `784227d5fd61eb017b6141a02b9dfc8112a23808017ad50cafe07669c2f328f0` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/12306/12306/12306.json) |
+| surge | `surge/12306/12306.list` | 15 | 387 | `566a9d335ced77bb3c7aa00d2b5f8f9e5fecd40760cabec377dedb1aa1a80646` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/12306/12306/12306.list) |
 
 ### 4.1 Raw 地址直接复制
 
-- **egern**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/12306/12306.yaml`
-- **loon**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/12306/12306.list`
-- **mihomo**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/12306/12306.yaml`
-- **quantumultx**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/12306/12306.list`
-- **shadowrocket**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/12306/12306.list`
-- **singbox**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/12306/12306.json`
-- **surge**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/12306/12306.list`
+- **egern**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/12306/12306/12306.yaml`
+- **loon**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/12306/12306/12306.list`
+- **mihomo**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/12306/12306/12306.yaml`
+- **quantumultx**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/12306/12306/12306.list`
+- **shadowrocket**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/12306/12306/12306.list`
+- **singbox**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/12306/12306/12306.json`
+- **surge**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/12306/12306/12306.list`
 
 ## 5. 使用方法
 
@@ -72,7 +72,7 @@ rule-providers:
     type: http
     behavior: classical
     format: yaml
-    url: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/12306/12306.yaml"
+    url: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/12306/12306/12306.yaml"
     path: ./ruleset/12306_aggregate.yaml
     interval: 86400
 
