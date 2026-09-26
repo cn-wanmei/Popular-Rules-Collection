@@ -1,7 +1,13 @@
-version: 5
-schema: icon_policy_v5
-active: true
-status: phase2_acquisition
+schema: icon_system_v5
+version: 5.1.0
+coverage:
+  entity: service
+  require_all_services: true
+  include_child_services: true
+  provider_aggregate_reuses_service_identity: true
+identity:
+  key: service_id
+  formula: "1 service_id = 1 icon_identity = 1 source + 7 derived styles"
 variants:
 - source_original
 - glassmorphism
@@ -11,35 +17,11 @@ variants:
 - duotone_line
 - mbe
 - y2k
-clients:
-- mihomo
-- singbox
-- surge
-- shadowrocket
-- quantumultx
-- egern
-- loon
-service_universe:
-  source: same_run_ir
-  bootstrap_projection: rule/_index.yaml
-  include_entities:
-  - service
-  exclude_entities:
-  - provider_aggregate
-  - aggregate
-  - category
-  - domestic_aggregate
-  include_child_services: true
-  require_bidirectional_coverage: true
-  require_100_percent: true
-  coverage_definition: all service entities including independent child services under
-    each provider; provider_aggregate reuses parent identity
-official_sources:
-  explicit_registry: config/official_sites.yaml
-  candidate_from_rule_domains: true
-  discovery_requires_https: true
+official_sites: config/official_sites.yaml
+candidate_from_rule_domains: true
+discovery_requires_https: true
 acquisition:
-  user_agent: Popular-Rules-Collection/Icon-System-V5
+  user_agent: Popular-Rules-Collection/Icon-System-V5.1
   timeout_seconds: 30
   max_redirects: 5
   max_bytes: 2097152
@@ -64,12 +46,30 @@ acquisition:
   - embed
   reject_external_svg_refs: true
   page_max_bytes: 3145728
+quality:
+  min_source_px: 96
+  preferred_source_px: 128
+  reject_below_min: true
+  seed_beats_low_res: true
+  warn_low_res: true
+  core_services_fail_low_res:
+  - abc
+  - 12306
+  - alipay
+  - wechat
+  - github
+  - google
+  - apple
+  - microsoft
+  - netflix
+  - telegram
 source_priority:
-- registered_official
-- official_declared_icon
-- official_manifest_icon
-- official_site_favicon
-- reviewed_third_party
+- official_svg
+- apple_touch_icon
+- high_res_png
+- ico_max_frame
+- favicon
+- reviewed_local_seed
 - semantic_fallback
 rights:
   official_site_asset_is_not_automatically_open_license: true
@@ -92,7 +92,7 @@ render:
   - 64
   - 128
   - 256
-  renderer_version: prc-icon-renderer-v5.0.0
+  renderer_version: prc-icon-renderer-v5.1.0
 lineage:
   required:
   - run_id
