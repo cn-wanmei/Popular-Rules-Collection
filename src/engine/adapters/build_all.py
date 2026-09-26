@@ -148,8 +148,8 @@ def _build_client(
             provider_ids.update(memberships.get(service, []))
         entity_rules = [rules_by_id[rid] for rid in sorted(provider_ids) if rid in rules_by_id and rid in projected_ids]
         if entity_rules:
-            path = artifacts_dir / EntityPathResolver.generated_provider(client, provider)
-            collision_path = artifacts_dir / EntityPathResolver.generated_service(client, provider, provider)
+            path = artifacts_dir / EntityPathResolver.generated_provider(client, provider).relative_to("generated")
+            collision_path = artifacts_dir / EntityPathResolver.generated_service(client, provider, provider).relative_to("generated")
             if path == collision_path:
                 continue
             path = path.with_name(path.name + meta["ext"])
@@ -160,7 +160,7 @@ def _build_client(
     for service, provider in sorted(service_provider.items()):
         entity_rules = [rules_by_id[rid] for rid in memberships.get(service, []) if rid in rules_by_id and rid in projected_ids]
         if entity_rules:
-            path = artifacts_dir / EntityPathResolver.generated_service(client, provider, service)
+            path = artifacts_dir / EntityPathResolver.generated_service(client, provider, service).relative_to("generated")
             path = path.with_name(path.name + meta["ext"])
             _render_view(render, entity_rules, path)
             emitted_files += 1
@@ -177,7 +177,7 @@ def _build_client(
     china_ids.difference_update(excluded_ids)
     china_rules = [rules_by_id[rid] for rid in sorted(china_ids) if rid in rules_by_id and rid in projected_ids]
     if china_rules:
-        path = artifacts_dir / EntityPathResolver.generated_china(client)
+        path = artifacts_dir / EntityPathResolver.generated_china(client).relative_to("generated")
         path = path.with_name(path.name + meta["ext"])
         _render_view(render, china_rules, path)
         emitted_files += 1
@@ -200,7 +200,7 @@ def _build_client(
                 category_rules[entity].setdefault(rid, rule)
     for category, by_id in sorted(category_rules.items()):
         entity_rules = [by_id[rid] for rid in sorted(by_id)]
-        path = artifacts_dir / EntityPathResolver.generated_category(client, category)
+        path = artifacts_dir / EntityPathResolver.generated_category(client, category).relative_to("generated")
         path = path.with_name(path.name + meta["ext"])
         _render_view(render, entity_rules, path)
         emitted_files += 1
