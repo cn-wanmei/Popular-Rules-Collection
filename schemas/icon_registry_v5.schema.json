@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cn-wanmei.github.io/Popular-Rules-Collection/schemas/icon_registry_v5.schema.json",
+  "title": "Popular Rules Collection Icon Registry V5",
+  "type": "object",
+  "required": ["schema", "version", "renderer_version", "generated_at", "service_universe", "variants", "entries", "coverage"],
+  "properties": {
+    "schema": {"const": "icon_registry_v5"},
+    "version": {"const": 5},
+    "renderer_version": {"type": "string", "minLength": 1},
+    "generated_at": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "minLength": 1},
+    "snapshot_id": {"type": "string", "minLength": 1},
+    "ir_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "service_universe": {
+      "type": "object",
+      "required": ["source", "count"],
+      "properties": {
+        "source": {"type": "string"},
+        "count": {"type": "integer", "minimum": 0}
+      }
+    },
+    "variants": {
+      "type": "array",
+      "const": [
+        "source_original",
+        "glassmorphism",
+        "soft_3d",
+        "neo_skeuomorphism",
+        "minimalist",
+        "duotone_line",
+        "mbe",
+        "y2k"
+      ]
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["service_id", "icon_identity", "source", "variants", "lineage"],
+        "properties": {
+          "service_id": {"type": "string", "minLength": 1},
+          "icon_identity": {"type": "string", "minLength": 1},
+          "display_name": {"type": "string"},
+          "provider": {"type": ["string", "null"]},
+          "source": {
+            "type": "object",
+            "required": ["origin", "digest", "source_url"],
+            "properties": {
+              "origin": {"type": "string"},
+              "homepage_url": {"type": ["string", "null"]},
+              "source_url": {"type": "string", "format": "uri"},
+              "content_type": {"type": ["string", "null"]},
+              "digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+              "rights_basis": {"type": "string"},
+              "redistribution_status": {"type": "string"}
+            }
+          },
+          "variants": {
+            "type": "object",
+            "required": ["source_original", "glassmorphism", "soft_3d", "neo_skeuomorphism", "minimalist", "duotone_line", "mbe", "y2k"]
+          },
+          "lineage": {
+            "type": "object",
+            "required": ["run_id", "snapshot_id", "ir_digest", "source_digest", "renderer_version"]
+          }
+        }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "required": ["service_count", "icon_identity_count", "complete_8_of_8", "missing"],
+      "properties": {
+        "service_count": {"type": "integer", "minimum": 0},
+        "icon_identity_count": {"type": "integer", "minimum": 0},
+        "complete_8_of_8": {"type": "integer", "minimum": 0},
+        "missing": {"type": "array", "items": {"type": "string"}},
+        "orphans": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+schema: icon_client_policy_v5
+version: 5
+preferred_style:
+  mihomo: minimalist
+  singbox: minimalist
+  surge: glassmorphism
+  shadowrocket: minimalist
+  quantumultx: duotone_line
+  egern: glassmorphism
+  loon: soft_3d
+require_registry_v5: true
+allow_historical_fallback: false

@@ -1,52 +1,66 @@
 # Icons
 
-**使用说明（SSOT）→ [docs/ICON_USAGE.md](../../docs/ICON_USAGE.md)**
+当前规划：Icon System V5 / Icon Matrix 8
 
-| 交付 | 路径 |
-|------|------|
-| Legacy PNG | `png/{64,128,256}/{id}.png` |
-| Legacy SVG | `source/{id}.svg` |
-| Legacy 元数据 | `manifest.yaml` |
-| Icon System 3 Registry | `v3/registry.yaml` |
-| Icon System 3 Release | `v3/releases/latest/` |
-| Icon System 3 客户端索引 | `v3/releases/latest/index/clients/` |
-| Icon System 3 总预览 | `v3/releases/latest/previews/{style}/master-all.svg` |
+SSOT 文档：
 
-## Icon System 3.0
+- docs/ICON_SYSTEM_V5_PLAN.md
+- docs/ICON_USAGE.md
 
-新生产链为：
+## Active
 
-```text
-Service Catalog
-  ↓
-Icon Identity
-  ↓
-Source / License / Provenance
-  ↓
-Role Binding
-  ↓
-Official / Gradient / Liquid Glass / Soft 3D / Minimal / Dark-Neon / Monochrome
-  ↓
-Visual + Identity + Client QA
-  ↓
-Master / Role / Legibility Review
-  ↓
-7 Client Index
-  ↓
+V5：
+
+assets/icons/v5/
+
+包含：
+
+- Source Original
+- Glassmorphism
+- Soft 3D / Claymorphism
+- Neo-Skeuomorphism
+- Minimalist Glyph & Multi-color Flat
+- Two-tone / Broken Line
+- MBE Illustration
+- Y2K / Synthwave
+
+## Historical
+
+以下仅保留历史兼容、回滚与审计：
+
+- v4/
+- v3/
+- legacy
+
+V3/V4 不再定义 V5 的身份、来源或覆盖口径。
+
+## 生产原则
+
+~~~text
+same Run / Snapshot / IR
+        ↓
+Icon Acquisition
+        ↓
+Source Snapshot
+        ↓
+Source Original
+        ↓
+7 independent renderers
+        ↓
+QA + Coverage + Lineage
+        ↓
 Immutable Release
-```
+~~~
 
-V3 不直接覆盖 Legacy 图标目录。Legacy 资产继续作为 previous-good / rollback 基线，直到 V3 完成覆盖、审阅和稳定发布。
+规则文件、客户端生成物和图标系统均为同一 Run 的兄弟投影。
 
-策略组、客户端策略组使用独立的 semantic Icon Identity；真实品牌图标使用 Service Identity。两者禁止通过文件名隐式复用。
+规则文件不得自身联网抓取图标；客户端也不得绕过 Icon Registry 各自抓取。
 
-旧版手工写入 main 的 Icon workflow 已退出生产写入路径；V3 workflow 在 PR 上执行 fail-closed QA，Release 使用受控 workflow 生成不可变版本。
+## 命令
 
-### Legacy 本地命令
-
-```bash
-python scripts/icon_no_black.py
-python scripts/build_icons.py --force
-python scripts/icon_validate.py
-python scripts/icon_cleanup_dirs.py
-```
+~~~bash
+python scripts/icon_system_v5.py contract
+python scripts/icon_system_v5.py discover --rule-index rule/_index.yaml --out build/icon-v5/service-discovery.json
+python scripts/icon_system_v5.py build --rule-index rule/_index.yaml --out build/icon-v5 --strict
+python scripts/icon_system_v5.py gate --registry build/icon-v5/registry.json --strict
+~~~

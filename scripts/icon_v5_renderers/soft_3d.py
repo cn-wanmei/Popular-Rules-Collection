@@ -1,0 +1,6 @@
+from .common import image_tag,shell
+
+def render(image_href: str,title: str)->str:
+    defs='''<filter id="depth"><feDropShadow dx="10" dy="18" stdDeviation="12" flood-opacity=".22"/></filter><linearGradient id="clay" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF"/><stop offset=".56" stop-color="#EEF4FB"/><stop offset="1" stop-color="#D7E2F0"/></linearGradient>'''
+    body=f'''<rect width="512" height="512" rx="116" fill="#EDF3F9"/><path d="M88 104h286" stroke="#FFF" stroke-width="18" stroke-linecap="round"/><rect x="70" y="70" width="372" height="372" rx="116" fill="#B9C8D9" opacity=".64" transform="translate(10 16)"/><rect x="56" y="56" width="372" height="372" rx="116" fill="url(#clay)" filter="url(#depth)"/><path d="M96 98h290M96 402h246" stroke="#FFF" stroke-width="8" stroke-linecap="round" opacity=".75"/>{image_tag(image_href,x=116,y=116,size=252,opacity=.28,extra='transform="translate(8 12)"')}{image_tag(image_href,x=108,y=108,size=252)}'''
+    return shell(body,title,defs)
