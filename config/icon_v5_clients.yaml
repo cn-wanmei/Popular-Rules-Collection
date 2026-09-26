@@ -1,5 +1,6 @@
 schema: icon_client_policy_v5
 version: 5
+active: true
 preferred_style:
   mihomo: minimalist
   singbox: minimalist
@@ -10,3 +11,12 @@ preferred_style:
   loon: soft_3d
 require_registry_v5: true
 allow_historical_fallback: false
+forbid_legacy_paths:
+  - assets/icons/v3
+  - assets/icons/v4
+  - assets/icons/normalized
+  - assets/icons/png
+  - assets/icons/rendered
+  - assets/icons/source
+resolver: scripts/icon_resolver_v5.py
+registry: assets/icons/v5/registry.json
