@@ -1,5 +1,5 @@
 version: 2
-updated: '2026-09-18'
+updated: "2026-09-26"
 defaults: {service_type: service}
 services:
   ai: {primary_category: ai, display_name: AI, categories: [ai], service_type: aggregate, children: [openai, claude, gemini, copilot, anthropic, perplexity, groq, xai, mistral, huggingface, deepseek, grok, cursor, elevenlabs]}
@@ -9,7 +9,7 @@ services:
   baidu: {primary_category: baidu, display_name: Baidu, categories: [baidu, china], service_type: aggregate, children: [baidunetdisk, baidutieba, baidumaps, baiduwiki, baiduwenku]}
   bytedance: {primary_category: bytedance, display_name: ByteDance, categories: [bytedance, china], service_type: aggregate, children: [douyin, doubao, feishu, tiktok, capcut, toutiao, xigua, volcengine]}
   netease: {primary_category: netease, display_name: NetEase, categories: [netease, china], service_type: aggregate, children: [youdao, neteasemusic, neteasemail, netease163mail, neteasegames]}
-  jingdong: {primary_category: jingdong, display_name: JingDong, categories: [jingdong, china], service_type: aggregate}
+  jingdong: {primary_category: jingdong, display_name: JingDong, categories: [china], service_type: aggregate, children: [jdcloud]}
   microsoft: {primary_category: microsoft, display_name: Microsoft, categories: [microsoft], service_type: aggregate, children: [onedrive, xbox, github, teams, azure, bing, microsoftedge, outlook, office]}
   google: {primary_category: google, display_name: Google, categories: [google], service_type: aggregate, children: [youtube, googlefcm, googledrive, firebase, gcp, googlecloud, youtubemusic, google-search, googlevoice, googleearth, gmail, googlemaps]}
   amazon: {primary_category: amazon, display_name: Amazon, categories: [amazon, streaming], service_type: aggregate, children: [aws]}
@@ -26,16 +26,16 @@ services:
   honorofkings_cn: {primary_category: tencent, display_name: "王者荣耀（国服）", categories: [tencent, gaming, china], service_type: service, parent: tencent}
   honorofkings_global: {primary_category: tencent, display_name: "Honor of Kings Global", categories: [tencent, gaming], service_type: service, parent: tencent}
   neteasemail: {primary_category: netease, display_name: "网易邮箱", categories: [netease, china], service_type: service, parent: netease}
-  openai: {primary_category: ai, display_name: OpenAI, categories: [ai], service_type: service, parent: ai}
+  openai: {primary_category: ai, display_name: OpenAI, categories: [ai], service_type: aggregate, parent: ai, children: [openaiapi, openaiplatform, chatgpt]}
   claude: {primary_category: ai, display_name: Claude, categories: [ai], service_type: service, parent: ai}
   gemini: {primary_category: ai, display_name: Gemini, categories: [ai], service_type: service, parent: ai}
   copilot: {primary_category: ai, display_name: Copilot, categories: [ai], service_type: service, parent: ai}
-  anthropic: {primary_category: ai, display_name: Anthropic, categories: [ai], service_type: service, parent: ai}
+  anthropic: {primary_category: ai, display_name: Anthropic, categories: [ai], service_type: aggregate, parent: ai, children: [anthropicclaude, anthropicplatform]}
   perplexity: {primary_category: perplexity, display_name: Perplexity, categories: [ai], service_type: service}
   groq: {primary_category: groq, display_name: Groq, categories: [ai], service_type: service}
   huggingface: {primary_category: huggingface, display_name: "Hugging Face", categories: [ai], service_type: service}
   deepseek: {primary_category: deepseek, display_name: DeepSeek, categories: [ai], service_type: service}
-  grok: {primary_category: xai, display_name: Grok, categories: [ai], service_type: service}
+  grok: {primary_category: xai, display_name: Grok, categories: [ai], service_type: service, parent: xai}
   cursor: {primary_category: cursor, display_name: Cursor, categories: [developer, ai], service_type: service}
   elevenlabs: {primary_category: elevenlabs, display_name: ElevenLabs, categories: [ai], service_type: service}
   github: {primary_category: microsoft, display_name: GitHub, categories: [microsoft, developer], service_type: service, parent: microsoft}
@@ -123,3 +123,60 @@ services:
   baiduwiki: {primary_category: baidu, display_name: "Baidu Wiki", categories: [baidu, china], service_type: service, parent: baidu}
   baiduwenku: {primary_category: baidu, display_name: "Baidu Wenku", categories: [baidu, china], service_type: service, parent: baidu}
   wegame: {primary_category: tencent, display_name: WeGame, categories: [tencent, china, gaming], service_type: service, parent: tencent}
+
+  adobe: {primary_category: other, display_name: Adobe, categories: [other], service_type: aggregate, children: [adobe-firefly, adobe-stock, adobe-fonts]}
+  huawei: {primary_category: china, display_name: Huawei, categories: [china], service_type: aggregate, children: [huaweicloud, huaweiappgallery]}
+  xiaomi: {primary_category: china, display_name: Xiaomi, categories: [china], service_type: aggregate, children: [micloud]}
+  tencent_music: {primary_category: china, display_name: Tencent Music Entertainment, categories: [china], service_type: aggregate, children: [kugou, kuwo, quanminkge]}
+  xai: {primary_category: xai, display_name: xAI, categories: [ai], service_type: aggregate, children: [xai-grok]}
+  stripe: {primary_category: finance, display_name: Stripe, categories: [finance], service_type: aggregate, children: [stripedashboard]}
+  paypal: {primary_category: finance, display_name: PayPal, categories: [finance], service_type: aggregate, children: [paypalcore, venmo, xoom]}
+  kuaishou: {primary_category: china, display_name: Kuaishou, categories: [china], service_type: aggregate, children: [kuaishouopen]}
+  adobefirefly: {primary_category: other, display_name: Adobe Firefly, categories: [other, developer], service_type: service, parent: adobe}
+  adobefonts: {primary_category: other, display_name: Adobe Fonts, categories: [other, developer], service_type: service, parent: adobe}
+  adobestock: {primary_category: other, display_name: Adobe Stock, categories: [other, developer], service_type: service, parent: adobe}
+  amazonmusic: {primary_category: amazon, display_name: Amazon Music, categories: [amazon, streaming], service_type: service, parent: amazon}
+  anthropicclaude: {primary_category: ai, display_name: Claude, categories: [ai], service_type: service, parent: anthropic}
+  anthropicplatform: {primary_category: ai, display_name: Claude Platform, categories: [ai, developer], service_type: service, parent: anthropic}
+  applebooks: {primary_category: apple, display_name: Apple Books, categories: [apple], service_type: service, parent: apple}
+  applemaps: {primary_category: apple, display_name: Apple Maps, categories: [apple], service_type: service, parent: apple}
+  applepodcasts: {primary_category: apple, display_name: Apple Podcasts, categories: [apple, streaming], service_type: service, parent: apple}
+  audible: {primary_category: amazon, display_name: Audible, categories: [amazon, streaming], service_type: service, parent: amazon}
+  baiduzhidao: {primary_category: baidu, display_name: Baidu Zhidao, categories: [baidu, china], service_type: service, parent: baidu}
+  chatgpt: {primary_category: ai, display_name: ChatGPT, categories: [ai], service_type: service, parent: openai}
+  goodreads: {primary_category: amazon, display_name: Goodreads, categories: [amazon], service_type: service, parent: amazon}
+  googlecalendar: {primary_category: google, display_name: Google Calendar, categories: [google], service_type: service, parent: google}
+  googlechat: {primary_category: google, display_name: Google Chat, categories: [google], service_type: service, parent: google}
+  googlecontacts: {primary_category: google, display_name: Google Contacts, categories: [google], service_type: service, parent: google}
+  googledocs: {primary_category: google, display_name: Google Docs, categories: [google], service_type: service, parent: google}
+  googleforms: {primary_category: google, display_name: Google Forms, categories: [google], service_type: service, parent: google}
+  googlegroups: {primary_category: google, display_name: Google Groups, categories: [google], service_type: service, parent: google}
+  googlemeet: {primary_category: google, display_name: Google Meet, categories: [google], service_type: service, parent: google}
+  googlenews: {primary_category: google, display_name: Google News, categories: [google], service_type: service, parent: google}
+  googlephotos: {primary_category: google, display_name: Google Photos, categories: [google], service_type: service, parent: google}
+  googleplay: {primary_category: google, display_name: Google Play, categories: [google], service_type: service, parent: google}
+  googlesheets: {primary_category: google, display_name: Google Sheets, categories: [google], service_type: service, parent: google}
+  googlesites: {primary_category: google, display_name: Google Sites, categories: [google], service_type: service, parent: google}
+  googleslides: {primary_category: google, display_name: Google Slides, categories: [google], service_type: service, parent: google}
+  googlevids: {primary_category: google, display_name: Google Vids, categories: [google], service_type: service, parent: google}
+  googleworkspacestudio: {primary_category: google, display_name: Google Workspace Studio, categories: [google], service_type: service, parent: google}
+  huaweiappgallery: {primary_category: china, display_name: HUAWEI AppGallery, categories: [china], service_type: service, parent: huawei}
+  huaweicloud: {primary_category: china, display_name: Huawei Cloud, categories: [china, developer], service_type: service, parent: huawei}
+  jdcloud: {primary_category: jingdong, display_name: JD Cloud, categories: [jingdong, china, developer], service_type: service, parent: jingdong}
+  kuaishouopen: {primary_category: china, display_name: Kuaishou Open Platform, categories: [china, developer], service_type: service, parent: kuaishou}
+  kugou: {primary_category: china, display_name: Kugou, categories: [china, streaming], service_type: service, parent: tencent_music}
+  kuwo: {primary_category: china, display_name: Kuwo, categories: [china, streaming], service_type: service, parent: tencent_music}
+  micloud: {primary_category: china, display_name: Mi Cloud, categories: [china], service_type: service, parent: xiaomi}
+  ms365excel: {primary_category: microsoft, display_name: Microsoft Excel web, categories: [microsoft, developer], service_type: service, parent: microsoft}
+  ms365loop: {primary_category: microsoft, display_name: Microsoft Loop, categories: [microsoft, developer], service_type: service, parent: microsoft}
+  ms365mesh: {primary_category: microsoft, display_name: Microsoft Mesh, categories: [microsoft, developer], service_type: service, parent: microsoft}
+  ms365onenote: {primary_category: microsoft, display_name: Microsoft OneNote web, categories: [microsoft], service_type: service, parent: microsoft}
+  ms365planner: {primary_category: microsoft, display_name: Microsoft Planner, categories: [microsoft, developer], service_type: service, parent: microsoft}
+  ms365powerpoint: {primary_category: microsoft, display_name: Microsoft PowerPoint web, categories: [microsoft], service_type: service, parent: microsoft}
+  ms365word: {primary_category: microsoft, display_name: Microsoft Word web, categories: [microsoft], service_type: service, parent: microsoft}
+  openaiapi: {primary_category: ai, display_name: OpenAI API, categories: [ai, developer], service_type: service, parent: openai}
+  openaiplatform: {primary_category: ai, display_name: OpenAI Platform, categories: [ai, developer], service_type: service, parent: openai}
+  quanminkge: {primary_category: china, display_name: 全民K歌, categories: [china, streaming], service_type: service, parent: tencent_music}
+  stripedashboard: {primary_category: finance, display_name: Stripe Dashboard, categories: [finance, developer], service_type: service, parent: stripe}
+  venmo: {primary_category: finance, display_name: Venmo, categories: [finance], service_type: service, parent: paypal}
+  xaigrok: {primary_category: xai, display_name: Grok, categories: [ai], service_type: service, parent: xai}
