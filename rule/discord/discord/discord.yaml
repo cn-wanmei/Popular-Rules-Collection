@@ -1,0 +1,109 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: discord
+display_name: Discord
+generated_from:
+  run_id: 20260926T143116491820Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 261afcfa7b6d087f1dd3cd21ecc73cbbd2ada7da77ab8cebaa9069fdd7559047
+stats:
+  total: 31
+  by_type:
+    DOMAIN: 2
+    DOMAIN_SUFFIX: 29
+rules:
+- id: 1f1cf8240ad30b4d6fb3d14ac50b68cfd6d11b868ce5560cf3fe13e3a8b0a9ad
+  type: DOMAIN
+  value: discord-attachments-uploads-prd.storage.googleapis.com
+- id: c11602c06a5782def447be316dd3541fa75932162276b280e4d1c1c46c391162
+  type: DOMAIN
+  value: hammerandchisel.ssl.zendesk.com
+- id: 1e8f0ab3edc74f7a692ac6fa0bb1b3946dd2a37c720a93fb57c14cf277f920b4
+  type: DOMAIN_SUFFIX
+  value: airhorn.solutions
+- id: 2d82dac168619807e9d1bd2b58aee0ddc7811b3860b8c802de9c847c2ebbc004
+  type: DOMAIN_SUFFIX
+  value: airhornbot.com
+- id: b75193a82ff5913373eb1ef83c1eb34ad18cc2daa682f201ba7132c9860d3a3e
+  type: DOMAIN_SUFFIX
+  value: bigbeans.solutions
+- id: 4ffe3d3745b6509837afcb52816c5abdac338c8b680c87dd89cc9f6ba43f1600
+  type: DOMAIN_SUFFIX
+  value: dis.gd
+- id: 2a830b8230880a50530b224e4b5a83fd095a98bc521db6840a3e07fb4acf1076
+  type: DOMAIN_SUFFIX
+  value: discord-activities.com
+- id: 8e0318f542b8e436c8c270690de319f36865146b59e12683a0478685fb18384e
+  type: DOMAIN_SUFFIX
+  value: discord-attachments-uploads-prd.storage.googleapis.com
+- id: e59ccd91538fc095bfdb3c93360afaad0058b0ed9cc3bfbadbc32262b14c2f2b
+  type: DOMAIN_SUFFIX
+  value: discord.co
+- id: 51103f4003afb344cf5863872ae35ea722d803697a4f195886c1c33f990c4256
+  type: DOMAIN_SUFFIX
+  value: discord.com
+- id: 8cc16c51c2af04c073c781dea4518a767b98bac1daf3cbc0f784b3183a62b353
+  type: DOMAIN_SUFFIX
+  value: discord.design
+- id: e78263d1f47fcea8bd174e245fd0e477f925b023347fb9beaff4cc3f43a9ec95
+  type: DOMAIN_SUFFIX
+  value: discord.dev
+- id: 189464a3c745ce125b781339aae472fc2b526a21d6b08221406f94261f3d3ef9
+  type: DOMAIN_SUFFIX
+  value: discord.gg
+- id: 7c1d073d6787a7c0c5bff95df14a2af2bdd6e2693df8bc2bc6b77606ed33f265
+  type: DOMAIN_SUFFIX
+  value: discord.gift
+- id: 97dfc6f3068ca9f3e4fd7dc9926f12a5652b58dfe1886ca26f506d1e422de760
+  type: DOMAIN_SUFFIX
+  value: discord.gifts
+- id: 5ef7224d666b4a985b2b5e6422a9b97ced0d8127c39652680ca98f14d21d0d4f
+  type: DOMAIN_SUFFIX
+  value: discord.media
+- id: 5fe5427d8c46b23ff8c0d3ccf772311cb3c98fc856fd98759e6e0bee937850ee
+  type: DOMAIN_SUFFIX
+  value: discord.new
+- id: bc1e1c9a10b10c368791372c2a089efe81d908e19412feedfa2e7b978478632f
+  type: DOMAIN_SUFFIX
+  value: discord.store
+- id: c7b706f8d185b86f5e183388e26b145fa313ea2a21b3dc793e61d28c1d5cbf59
+  type: DOMAIN_SUFFIX
+  value: discord.tools
+- id: 83c450233c5aa07a4372ea08880c5555f9f9f3f9c5362ca244561cf320a62488
+  type: DOMAIN_SUFFIX
+  value: discordactivities.com
+- id: 4d8e41a65f0cbc18a27559c71a7923bec6f505f3739e58174ab8bbf1803084b8
+  type: DOMAIN_SUFFIX
+  value: discordapp.com
+- id: c50bdad409d61fe80f9e1c4481caee8da25f5b433ce73cfa3612e0dfe2c21543
+  type: DOMAIN_SUFFIX
+  value: discordapp.io
+- id: b74cc56a33f5442dd452d4fad11f7626da56b0242cb96e4ff544f8f53a969103
+  type: DOMAIN_SUFFIX
+  value: discordapp.net
+- id: 3116aab66aff74a4ce60251330a9f36b9e8b2a7b8c134f74acb0ac27860941ee
+  type: DOMAIN_SUFFIX
+  value: discordapp.page.link
+- id: 188678663245724fe57f4508a85fb0bb5dcd9946947fbb5b6d4173b28ca9dc60
+  type: DOMAIN_SUFFIX
+  value: discordcdn.com
+- id: 8302fa99cab87e8ce63705e9930201be63580b4b5d8ece9a891cca43d68d6b76
+  type: DOMAIN_SUFFIX
+  value: discordmerch.com
+- id: fabfdf3813a5aae71f8e334b4977e4aee82eae6e47fd75237a722b68e097c9ab
+  type: DOMAIN_SUFFIX
+  value: discordpartygames.com
+- id: 21a4fb85b2706ff75917dd768c8c319dca87d4da177e8bc9c7c7dc031d14f47b
+  type: DOMAIN_SUFFIX
+  value: discordsays.com
+- id: 42f915e52edb07b7e80fbc2a83527e277919891063793d269e817c726c0f436a
+  type: DOMAIN_SUFFIX
+  value: discordstatus.com
+- id: fa1ebee09739343d02a2fa157cbd4269885062d68581037f44996a3de78002b5
+  type: DOMAIN_SUFFIX
+  value: hammerandchisel.ssl.zendesk.com
+- id: 8cc6fb1812b0814cea6d5b511c812712c103721660d0e31d0df28506d5d6edaa
+  type: DOMAIN_SUFFIX
+  value: watchanimeattheoffice.com
+provider: discord

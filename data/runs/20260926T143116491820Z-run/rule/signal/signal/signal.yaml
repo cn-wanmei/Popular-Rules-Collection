@@ -1,0 +1,39 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: signal
+display_name: Signal
+generated_from:
+  run_id: 20260926T143116491820Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 261afcfa7b6d087f1dd3cd21ecc73cbbd2ada7da77ab8cebaa9069fdd7559047
+stats:
+  total: 8
+  by_type:
+    DOMAIN_SUFFIX: 8
+rules:
+- id: c57584f99930d16863a2d9adb76d6fc298cf923d0c66f45ccc77635ff3dec1fe
+  type: DOMAIN_SUFFIX
+  value: signal.art
+- id: 662098f4067c6483c854784a7219a8b3bc0f076e2d0422654db83aad3a57c047
+  type: DOMAIN_SUFFIX
+  value: signal.group
+- id: b0331d174ca3df2a175ffc0f25af4c0c60c7d4e1cfcc86ab3ef2f7d049723167
+  type: DOMAIN_SUFFIX
+  value: signal.link
+- id: d3475beccdbd1307cff5d6c27e0dd4ce774cf3273c9014efd91ccceecd1125dc
+  type: DOMAIN_SUFFIX
+  value: signal.me
+- id: aa11100aa3b4ba0d793d13438e3fc83aa078830021bdfb22099a778a9a018e78
+  type: DOMAIN_SUFFIX
+  value: signal.org
+- id: b77a34deee4ba41dc5a3475487c2df9625b5876cd12ba3c7a9619521c3e3cae9
+  type: DOMAIN_SUFFIX
+  value: signal.tube
+- id: 8f70ff967d892fedce5ae049cb878c80d801d32c65df437d371146ddb3ba5f1e
+  type: DOMAIN_SUFFIX
+  value: signalusers.org
+- id: 45a69a7ebc3a118ecd121d2d67cb7ea6ba2c79378a5ccf7911abdc924222ebb8
+  type: DOMAIN_SUFFIX
+  value: whispersystems.org
+provider: signal

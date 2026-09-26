@@ -1,0 +1,24 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: huggingface
+display_name: Hugging Face
+generated_from:
+  run_id: 20260926T143116491820Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 261afcfa7b6d087f1dd3cd21ecc73cbbd2ada7da77ab8cebaa9069fdd7559047
+stats:
+  total: 3
+  by_type:
+    DOMAIN_SUFFIX: 3
+rules:
+- id: 23ce9b0bb30743a28e9bfe9c130d547e6ab86585c4c6a0ac5af45bc047487d82
+  type: DOMAIN_SUFFIX
+  value: hf.co
+- id: 01f0c65ec0a494dfe9d33b70ba0bf634349de5385ea933a6d93792d4e6ff6eb8
+  type: DOMAIN_SUFFIX
+  value: hf.space
+- id: a0b5d83115d257a7761d3bc935081e264de0ffab6356ba6ea1b9a0504ec04771
+  type: DOMAIN_SUFFIX
+  value: huggingface.co
+provider: huggingface

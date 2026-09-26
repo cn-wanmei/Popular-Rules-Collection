@@ -1,0 +1,37 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: perplexity
+display_name: Perplexity
+generated_from:
+  run_id: 20260926T143116491820Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 261afcfa7b6d087f1dd3cd21ecc73cbbd2ada7da77ab8cebaa9069fdd7559047
+stats:
+  total: 7
+  by_type:
+    DOMAIN: 2
+    DOMAIN_SUFFIX: 5
+rules:
+- id: de18c0486aa7576441fb332673440ef7066bec4598d151c03ed0b8fdc4f4dc6f
+  type: DOMAIN
+  value: ppl-ai-file-upload.s3.amazonaws.com
+- id: 73e5f4f554ad54208eecfc6ad0c539c9ae484522d264af4772f25c4b547a091a
+  type: DOMAIN
+  value: pplx-res.cloudinary.com
+- id: 14492ed9048ac582eab638de59d5dbe831818db358879948c3009062d6d43ad0
+  type: DOMAIN_SUFFIX
+  value: perplexity.ai
+- id: eaa1636dd8aaa0fa86a309af401c10d55177133149f4439d8ea3bd19155c050b
+  type: DOMAIN_SUFFIX
+  value: perplexity.com
+- id: 82081ca30a264d2c2ceaccb5b564dac2bb73c5df2fc9e3a6a4d28b5f3405def8
+  type: DOMAIN_SUFFIX
+  value: ppl-ai-file-upload.s3.amazonaws.com
+- id: c7f70a342db2de341d1a4df82ee06fa777d09f1439de99733c85f22f26f65655
+  type: DOMAIN_SUFFIX
+  value: pplx-res.cloudinary.com
+- id: 8454f070e44f501852d3de6ff6e307dc35f813f2458120f8f5fb26cea10a9cce
+  type: DOMAIN_SUFFIX
+  value: pplx.ai
+provider: perplexity

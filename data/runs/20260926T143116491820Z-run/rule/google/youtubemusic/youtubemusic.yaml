@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: youtubemusic
+display_name: YouTube Music
+generated_from:
+  run_id: 20260926T143116491820Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 261afcfa7b6d087f1dd3cd21ecc73cbbd2ada7da77ab8cebaa9069fdd7559047
+stats:
+  total: 2
+  by_type:
+    PROCESS_NAME: 2
+rules:
+- id: fef206c47b83877b7f9a4909bda0e2bb2da63c7205783bd506ee421b9de13a7d
+  type: PROCESS_NAME
+  value: com.google.android.apps.youtube.music
+- id: 94f81911390bfa77dc47850582ac6e288d09e3848ccee52269c82323dade0964
+  type: PROCESS_NAME
+  value: com.google.android.youtube.tvmusic
+provider: google

@@ -1,0 +1,27 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: messenger
+display_name: Messenger
+generated_from:
+  run_id: 20260926T143116491820Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 261afcfa7b6d087f1dd3cd21ecc73cbbd2ada7da77ab8cebaa9069fdd7559047
+stats:
+  total: 4
+  by_type:
+    DOMAIN_SUFFIX: 4
+rules:
+- id: 890e492a29da7c5aa8db725e036afa65cb74ff857d05df6faa6412da9183b488
+  type: DOMAIN_SUFFIX
+  value: fbmessenger.com
+- id: dac355d5e79f7f52de0dee5debabcdf079ee81764abdb12e4378216000c9bb0d
+  type: DOMAIN_SUFFIX
+  value: m.me
+- id: 413b0b5b7bcb3c0b85817d707c17929aaf6d3516cadfb38e9330ee7cbdac4889
+  type: DOMAIN_SUFFIX
+  value: messenger.com
+- id: 3553e31caf16ba9689e140377f553c9cd2da5e4e4207785fa3951dbcff9565a6
+  type: DOMAIN_SUFFIX
+  value: nbabot.net
+provider: meta

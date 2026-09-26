@@ -383,33 +383,33 @@
       "source": "database/provider/cloudflare6.txt"
     },
     {
-      "bytes": 386893,
+      "bytes": 386923,
       "file": "provider/aws.txt",
       "id": "provider-aws",
       "kind": "provider",
-      "lines": 11454,
+      "lines": 11455,
       "scope": "provider",
-      "sha256": "48a08fddd2786a9a9860948faa6c190155ad437a85a3350da4718e254d1e952f",
+      "sha256": "585d33b68c4dfb3c2cedb40e7dd0b7f7fc0d538c465c8b6785abbecb0b0fbc95",
       "source": "database/provider/aws.txt"
     },
     {
-      "bytes": 36972,
+      "bytes": 36971,
       "file": "provider/googlecloud.txt",
       "id": "provider-googlecloud",
       "kind": "provider",
       "lines": 1159,
       "scope": "provider",
-      "sha256": "2ecb4ce189d0bb9039cf488cdb642aece232a91afcff412b42d5c5bf8c13c805",
+      "sha256": "90b2aa4c701dee57aaafa80b513537c6af73684fba908a9f93a99067a35b28ad",
       "source": "database/provider/googlecloud.txt"
     },
     {
-      "bytes": 4595,
+      "bytes": 4594,
       "file": "provider/goog.txt",
       "id": "provider-goog",
       "kind": "provider",
       "lines": 152,
       "scope": "provider",
-      "sha256": "d09881faf6fe0894eda53773be79ed9bf7513260a54d02b091a591a22f8f9ce8",
+      "sha256": "4a4fc38d40fd9c392ed676f5699f39b3fd9b0bed290bdef250d6dd34bec5e90f",
       "source": "database/provider/goog.txt"
     },
     {
@@ -803,7 +803,7 @@
       "source": "database/ips/zhihu.txt"
     }
   ],
-  "generated_at": "2026-09-26T07:26:04.525465+00:00",
+  "generated_at": "2026-09-26T14:37:32.865953+00:00",
   "missing_optional": [],
   "runtime_contract": "network_dataset_distribution_v2",
   "schema": "network_publication_v2",
@@ -815,5 +815,5 @@
     "provider_cidrs_are_not_service_ownership": true,
     "service_rules": "generated/<client>/..."
   },
-  "source_commit": "a2f9e5e8d647753a1ca63652089df1e59172fb33"
+  "source_commit": "a6e5a1559787cf9db974a0c6e1b2815674e88bf1"
 }

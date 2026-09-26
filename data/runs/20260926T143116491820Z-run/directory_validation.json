@@ -1,0 +1,13 @@
+{
+  "schema": "distribution_manifest_validation_v1",
+  "layout_schema": "directory_layout_v2",
+  "pass": true,
+  "errors": [],
+  "duplicate_paths": 0,
+  "legacy_layout": 0,
+  "rule_run_id": "20260926T143116491820Z-run",
+  "generated_run_id": "20260926T143116491820Z-run",
+  "ir_digest_match": true,
+  "resolver": "EntityPathResolver",
+  "artifacts_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/data/runs/20260926T143116491820Z-run/artifacts"
+}

@@ -1,0 +1,34 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: findmy
+display_name: Find My
+generated_from:
+  run_id: 20260926T143116491820Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 261afcfa7b6d087f1dd3cd21ecc73cbbd2ada7da77ab8cebaa9069fdd7559047
+stats:
+  total: 6
+  by_type:
+    DOMAIN: 3
+    HOST: 3
+rules:
+- id: 238fc705dbd23f3d81043eff29370966f985e19d1cce4734246211f314507577
+  type: DOMAIN
+  value: fmfmobile.icloud.com
+- id: 11c357ed4a9affae18bb368b5278e6111281a29871113dafd2c9117265d36c2d
+  type: DOMAIN
+  value: fmipmobile.icloud.com
+- id: c2b25ce8bd8805855beae5012d275a7d396ee11df505f88d5093107290bcfccc
+  type: DOMAIN
+  value: statici.icloud.com
+- id: bbee2289375b61228ae998c53b5e2bbc0bcfdf38b7af0080fb4bf3ed1596823c
+  type: HOST
+  value: fmfmobile.icloud.com
+- id: 7bad046356cd41303dc4cc5eb51350128f0fbb2ae391a55880d43975610d3048
+  type: HOST
+  value: fmipmobile.icloud.com
+- id: 4a275803a2fac4b56be8a1106f42b0d148c85e8282dcb48b8f4cb5864f1f23c5
+  type: HOST
+  value: statici.icloud.com
+provider: apple

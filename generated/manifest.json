@@ -9,21 +9,21 @@
     "surge"
   ],
   "collection_date": "2026-09-26",
-  "file_count": 1984,
+  "file_count": 2264,
   "files": [
     {
-      "file": "_promotion/20260926T071821627709Z-run.json",
+      "file": "_promotion/20260926T143116491820Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "1ecf9bbf5fa8227285a71119345d44ebc98198aae97624454efd867286a75f1d",
-      "size": 216931
+      "sha256": "f849e43f6ed4145649ea57996904589269822ac2a742c7ee31838bca8a787af0",
+      "size": 249948
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "1ecf9bbf5fa8227285a71119345d44ebc98198aae97624454efd867286a75f1d",
-      "size": 216931
+      "sha256": "f849e43f6ed4145649ea57996904589269822ac2a742c7ee31838bca8a787af0",
+      "size": 249948
     },
     {
       "file": "asn/metadata.yaml",
@@ -108,10 +108,10 @@
     {
       "file": "egern/alibaba/1688/1688.yaml",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 2,
       "scope": "egern",
-      "sha256": "5def9c3fc9300746308e27e4f49806c482418ee0603ff7483696aae854559580",
-      "size": 38
+      "sha256": "d694f99aba8d648bbf4030375823b00734f258bf617909d0a105296fc1ad2140",
+      "size": 53
     },
     {
       "file": "egern/alibaba/alibaba/alibaba.yaml",
@@ -120,6 +120,14 @@
       "scope": "egern",
       "sha256": "d9a4508f6f40898454f8339521840f55b39a8550c7ad0eb07fca642b7f4813a0",
       "size": 12473
+    },
+    {
+      "file": "egern/alibaba/alibabacloud/alibabacloud.yaml",
+      "kind": "client_rules",
+      "rule_count": 100,
+      "scope": "egern",
+      "sha256": "6746192a816992d0fcf3ba61a945153338ca1f2de5d394b0d9fb1885769f9b7d",
+      "size": 2669
     },
     {
       "file": "egern/alibaba/alipay/alipay.yaml",
@@ -244,18 +252,34 @@
     {
       "file": "egern/anthropic/anthropic_aggregate/anthropic_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 9,
+      "rule_count": 10,
       "scope": "egern",
-      "sha256": "6d08dc3118aa45c9c6b9a68891960d84aa9f74a3cff8b81ce7ea064173aea778",
-      "size": 259
+      "sha256": "eda8ddee40c001faaab3614ab087f5ef0b6fe56aa3c792a9005e25b907f15782",
+      "size": 283
+    },
+    {
+      "file": "egern/anthropic/claude/claude.yaml",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "egern",
+      "sha256": "53deef6c517c4022ddf74314bfb99d16b2b9385b4b2a866bc4ad31ef2f67bdf1",
+      "size": 91
     },
     {
       "file": "egern/apple/apple/apple.yaml",
       "kind": "client_rules",
-      "rule_count": 2015,
+      "rule_count": 2037,
       "scope": "egern",
-      "sha256": "c44c331e76304b35bae1efc0977440d156bb8c72b9b66aed751a2bff0c3e9a86",
-      "size": 51124
+      "sha256": "390ff13b7655e417f241557442af366d111a585616b98a8908e92f8f31f89477",
+      "size": 51723
+    },
+    {
+      "file": "egern/apple/appledev/appledev.yaml",
+      "kind": "client_rules",
+      "rule_count": 80,
+      "scope": "egern",
+      "sha256": "76ae2846c5b1f5a66df7c0331d91b0857dab977ffaad73fbd0a73b6718907b56",
+      "size": 2143
     },
     {
       "file": "egern/apple/applefirmware/applefirmware.yaml",
@@ -282,12 +306,44 @@
       "size": 62
     },
     {
+      "file": "egern/apple/applemusic/applemusic.yaml",
+      "kind": "client_rules",
+      "rule_count": 9,
+      "scope": "egern",
+      "sha256": "8a83a448cea2afeadee45f08f44121c19ea76e28c98da6eb3baeb56f74fee974",
+      "size": 286
+    },
+    {
       "file": "egern/apple/appletv/appletv.yaml",
       "kind": "client_rules",
-      "rule_count": 7,
+      "rule_count": 14,
       "scope": "egern",
-      "sha256": "a56cc6c3e54b51c251cfc2e75adec3ef34aef6a492ec22aa7a4edfc9dc2b4300",
-      "size": 215
+      "sha256": "906f28d40f807a3c6b4fc775cb1298b260a79b65238ce375b50ff2e40956decb",
+      "size": 423
+    },
+    {
+      "file": "egern/apple/appstore/appstore.yaml",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "egern",
+      "sha256": "26986eae6fcfdfe4a5f43b38c52cdbf936ba169e7d6ed16923528da33190163b",
+      "size": 56
+    },
+    {
+      "file": "egern/apple/findmy/findmy.yaml",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "egern",
+      "sha256": "6fe5215f99b8a34b408118ccbfddc80d41c51fe905115215b5c2956d34a942e8",
+      "size": 92
+    },
+    {
+      "file": "egern/apple/icloud/icloud.yaml",
+      "kind": "client_rules",
+      "rule_count": 167,
+      "scope": "egern",
+      "sha256": "44e589a4cc3a9fa3a6ca9a3b97304ee7b38cdd6b2307cb888329e26d758fa4c4",
+      "size": 3314
     },
     {
       "file": "egern/apple/icloudprivaterelay/icloudprivaterelay.yaml",
@@ -296,6 +352,14 @@
       "scope": "egern",
       "sha256": "c32c92f5cb8632017d4831dcac68fe54cfb1565183c1726a82334fd82279985e",
       "size": 188
+    },
+    {
+      "file": "egern/apple/testflight/testflight.yaml",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "egern",
+      "sha256": "27c9380b1e9dca412d14245e9f072ef447163cab38af76c03aaf34c07a33ea58",
+      "size": 97
     },
     {
       "file": "egern/atlassian/atlassian/atlassian.yaml",
@@ -332,10 +396,10 @@
     {
       "file": "egern/baidu/baidu/baidu.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 325,
       "scope": "egern",
-      "sha256": "ce7bcc18df9028413f290d16e0e937d7b2cb3126d20d651ac882a65b6bdb05e4",
-      "size": 67
+      "sha256": "403fb3b0d22eaa3dceaf7a8c183133ee2abb5c5900abdf67534860587bba60ff",
+      "size": 6503
     },
     {
       "file": "egern/baidu/baidunetdisk/baidunetdisk.yaml",
@@ -476,18 +540,34 @@
     {
       "file": "egern/bytedance/bytedance/bytedance.yaml",
       "kind": "client_rules",
-      "rule_count": 1087,
+      "rule_count": 1100,
       "scope": "egern",
-      "sha256": "2cd3fc062d49543857ee31ab994ce306e2af8c3729b1590b69eafcf529c1937c",
-      "size": 23085
+      "sha256": "f41425d80245c5c0bf6122521919e821d1a28eea542c5642dbc09ebad004c55f",
+      "size": 23431
     },
     {
       "file": "egern/bytedance/doubao/doubao.yaml",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 36,
       "scope": "egern",
-      "sha256": "e9394dd4fa9a5f57725738b044227515a849b564bf2171cb2c832933d91e83b5",
-      "size": 120
+      "sha256": "c78807f3b1d62acde0199663da7a636630cbb8f2816c66f568ea437ad3056347",
+      "size": 755
+    },
+    {
+      "file": "egern/bytedance/douyin/douyin.yaml",
+      "kind": "client_rules",
+      "rule_count": 90,
+      "scope": "egern",
+      "sha256": "9bffcfb0ba4b91e56a30cbe047e0a807d7bedb7da4ecfcc98353e291b56cfae3",
+      "size": 1905
+    },
+    {
+      "file": "egern/bytedance/tiktok/tiktok.yaml",
+      "kind": "client_rules",
+      "rule_count": 117,
+      "scope": "egern",
+      "sha256": "32f2cc35ac47e8d40b045ee100e7fe23ebd9fbe5be4f3c0316b7c7055c505ae7",
+      "size": 2798
     },
     {
       "file": "egern/canva/canva/canva.yaml",
@@ -516,10 +596,10 @@
     {
       "file": "egern/categories/other/other.yaml",
       "kind": "client_rules",
-      "rule_count": 128822,
+      "rule_count": 129323,
       "scope": "egern",
-      "sha256": "786b32db2ff50f13cf08eb0a79bca3798643c509136f4f8a5d690c4872c3ec3f",
-      "size": 2466908
+      "sha256": "ee041a9319869cb2d924d4472ae6273e6e8129e38df806af68903e6ebf489f05",
+      "size": 2479027
     },
     {
       "file": "egern/ccb/ccb/ccb.yaml",
@@ -572,10 +652,10 @@
     {
       "file": "egern/china/china.yaml",
       "kind": "client_rules",
-      "rule_count": 109963,
+      "rule_count": 109751,
       "scope": "egern",
-      "sha256": "56ca46e351557f66b06e8110d2a32ebe985c8a1f510d36f93e723cc1f47470e0",
-      "size": 2052261
+      "sha256": "aaaaade45eefb0d070ce085d329607307c097c7552383ddf02851f0ed0fbfec0",
+      "size": 2048167
     },
     {
       "file": "egern/chinamobile/chinamobile/chinamobile.yaml",
@@ -682,6 +762,22 @@
       "size": 93
     },
     {
+      "file": "egern/deepseek/deepseek/deepseek.yaml",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "egern",
+      "sha256": "696ce28faa18bc4b5148d6d98d1f8790ff9528cea8fb64f62a60ce510819a182",
+      "size": 101
+    },
+    {
+      "file": "egern/deepseek/deepseek_aggregate/deepseek_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "egern",
+      "sha256": "4d02dcd00588a03a3b1ead7abebbcc6817760939f7b4e5ab82c285775e0c1ba1",
+      "size": 60
+    },
+    {
       "file": "egern/dewu/dewu/dewu.yaml",
       "kind": "client_rules",
       "rule_count": 45,
@@ -728,6 +824,22 @@
       "scope": "egern",
       "sha256": "9954c4b21970cdb434a0e50ec8fd621419c6b2176d086d77add359f215251ffe",
       "size": 155
+    },
+    {
+      "file": "egern/discord/discord/discord.yaml",
+      "kind": "client_rules",
+      "rule_count": 63,
+      "scope": "egern",
+      "sha256": "8864e3dc3c6859afc3fc7b4816b50872b59fe7de4ab7a6f0d36c622d9380d6c2",
+      "size": 1497
+    },
+    {
+      "file": "egern/discord/discord_aggregate/discord_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 31,
+      "scope": "egern",
+      "sha256": "57e99a51708f7b9248d7a6e993d983f093ee6cbce301004dce26e4be3e7b0ef0",
+      "size": 816
     },
     {
       "file": "egern/disney/disney/disney.yaml",
@@ -932,18 +1044,26 @@
     {
       "file": "egern/google/firebase/firebase.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 25,
       "scope": "egern",
-      "sha256": "6985899fca85511f44a961cea702814d6098f7bc776ce456a3420b159277fde9",
-      "size": 79
+      "sha256": "ba02401d8028380e5a04d5d23b03ce063e0ed3c2023b5f9ec507d74b1fbb6d3c",
+      "size": 879
+    },
+    {
+      "file": "egern/google/gemini/gemini.yaml",
+      "kind": "client_rules",
+      "rule_count": 13,
+      "scope": "egern",
+      "sha256": "c6b28f35293d8c6ec463cd528f5f2838ef6d1fbc1dbe207e5a1c263be56ce9f8",
+      "size": 382
     },
     {
       "file": "egern/google/google/google.yaml",
       "kind": "client_rules",
-      "rule_count": 1469,
+      "rule_count": 1525,
       "scope": "egern",
-      "sha256": "940c01e8e32e8e86a919ebfea8b204d2e742c79d7fbfced21d7ba635d27b1c6c",
-      "size": 31986
+      "sha256": "14f361ad7ecb0fd9d9a103d6c9c327f927a93c89822319066d7b3ef3896999aa",
+      "size": 33425
     },
     {
       "file": "egern/google/google-search/google-search.yaml",
@@ -972,10 +1092,10 @@
     {
       "file": "egern/google/googlefcm/googlefcm.yaml",
       "kind": "client_rules",
-      "rule_count": 13,
+      "rule_count": 95,
       "scope": "egern",
-      "sha256": "7d9ce3304df0ddcead7d1500cecc736d711ff0436e7bbf42805e2eafb0ab83a4",
-      "size": 378
+      "sha256": "9f42d57e33d5a44fa2428d59a1647dad42cc2bacce0896ebf3d965617aa2b5b5",
+      "size": 2543
     },
     {
       "file": "egern/google/googlevoice/googlevoice.yaml",
@@ -992,6 +1112,30 @@
       "scope": "egern",
       "sha256": "300e15d5329445fad2fa6bb02f2ff75ba53a1cdaad285ded6547fb694eb77b8b",
       "size": 6110
+    },
+    {
+      "file": "egern/google/youtube/youtube.yaml",
+      "kind": "client_rules",
+      "rule_count": 703,
+      "scope": "egern",
+      "sha256": "06e435560e574605b8c67b6d4d0d6a5e36f2428dd786b7233b2450fa19b51829",
+      "size": 13677
+    },
+    {
+      "file": "egern/groq/groq/groq.yaml",
+      "kind": "client_rules",
+      "rule_count": 1,
+      "scope": "egern",
+      "sha256": "8547c4a275dbcd37bb11ce0b45755e9ee7162e4f505ff627ff5e52406945a209",
+      "size": 34
+    },
+    {
+      "file": "egern/groq/groq_aggregate/groq_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 1,
+      "scope": "egern",
+      "sha256": "8547c4a275dbcd37bb11ce0b45755e9ee7162e4f505ff627ff5e52406945a209",
+      "size": 34
     },
     {
       "file": "egern/hbo/hbo/hbo.yaml",
@@ -1040,6 +1184,22 @@
       "scope": "egern",
       "sha256": "fcca26c070a04c394ab3383d0939402d64ae5b5f737d23d9b60aad545a581a0f",
       "size": 8899
+    },
+    {
+      "file": "egern/huggingface/huggingface/huggingface.yaml",
+      "kind": "client_rules",
+      "rule_count": 6,
+      "scope": "egern",
+      "sha256": "403f1717dcbe31a98d50a5f11289ec1bac790202b6871ac4dc6d6a29922158a5",
+      "size": 115
+    },
+    {
+      "file": "egern/huggingface/huggingface_aggregate/huggingface_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "egern",
+      "sha256": "d238d2c143ca4c982cce0dc12636c5171afa931f22ce196b22ec9199763352b8",
+      "size": 67
     },
     {
       "file": "egern/huya/huya/huya.yaml",
@@ -1266,6 +1426,14 @@
       "size": 3603
     },
     {
+      "file": "egern/meta/messenger/messenger.yaml",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "egern",
+      "sha256": "3bbcc69c7f5998c0a7704d47fa10ec6ee1f18b38de37f5e4791632a77033481e",
+      "size": 89
+    },
+    {
       "file": "egern/meta/meta/meta.yaml",
       "kind": "client_rules",
       "rule_count": 596,
@@ -1290,12 +1458,28 @@
       "size": 969
     },
     {
+      "file": "egern/microsoft/azure/azure.yaml",
+      "kind": "client_rules",
+      "rule_count": 151,
+      "scope": "egern",
+      "sha256": "6bfcfc9644f07014541f19fe1fe47c894daff4f78cdd29dd6acc92c3a7524d46",
+      "size": 3492
+    },
+    {
+      "file": "egern/microsoft/copilot/copilot.yaml",
+      "kind": "client_rules",
+      "rule_count": 49,
+      "scope": "egern",
+      "sha256": "1f08a8fea066bb7a298a8b1757fb4e3149df8e6499e0c58c82bf887c27288ff6",
+      "size": 1359
+    },
+    {
       "file": "egern/microsoft/github/github.yaml",
       "kind": "client_rules",
-      "rule_count": 29,
+      "rule_count": 179,
       "scope": "egern",
-      "sha256": "73a5537b760282c7d2a07287d7f61cc0fb013f61e1bb26acabdac31780f95ffe",
-      "size": 661
+      "sha256": "9d31626675c3f3588d6fcba89e357c5488b05477ba3a43e5cb366172c317bf89",
+      "size": 5566
     },
     {
       "file": "egern/microsoft/linkedin/linkedin.yaml",
@@ -1308,10 +1492,10 @@
     {
       "file": "egern/microsoft/microsoft/microsoft.yaml",
       "kind": "client_rules",
-      "rule_count": 991,
+      "rule_count": 1054,
       "scope": "egern",
-      "sha256": "4f46dacdb5ed0a6daf8fe9cc8e682378e8002f182db3817bcdfdfe08a2a666bc",
-      "size": 26032
+      "sha256": "e0ea15a65267a7e4e95d2445ecab4d3d9ba62b81c5aa2fc45ee8854f403e3137",
+      "size": 27682
     },
     {
       "file": "egern/microsoft/microsoftedge/microsoftedge.yaml",
@@ -1330,6 +1514,30 @@
       "size": 299
     },
     {
+      "file": "egern/microsoft/onedrive/onedrive.yaml",
+      "kind": "client_rules",
+      "rule_count": 16,
+      "scope": "egern",
+      "sha256": "c6579deb6ad80d2a26cb8b778df9d571829753db4584e0968e38a640431a5ba5",
+      "size": 395
+    },
+    {
+      "file": "egern/microsoft/teams/teams.yaml",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "egern",
+      "sha256": "831bfe755a9629251aa0b52c54e7a6d420e0050fcc2eea245e7cb154213f2472",
+      "size": 141
+    },
+    {
+      "file": "egern/microsoft/xbox/xbox.yaml",
+      "kind": "client_rules",
+      "rule_count": 42,
+      "scope": "egern",
+      "sha256": "886cde4325b1b453c1b779c3da6de068ddd15f2f5b619270748999f8efdaf03c",
+      "size": 933
+    },
+    {
       "file": "egern/netease/netease/netease.yaml",
       "kind": "client_rules",
       "rule_count": 96,
@@ -1344,6 +1552,22 @@
       "scope": "egern",
       "sha256": "919cf1cd941d4f28bc0af0af012134b2504a203268745ea03e4658e9f2df96f2",
       "size": 349
+    },
+    {
+      "file": "egern/netflix/netflix/netflix.yaml",
+      "kind": "client_rules",
+      "rule_count": 96,
+      "scope": "egern",
+      "sha256": "4db974029aea63dd1e548269c9d848fee184f80e83f5078d030e10f9f8adce82",
+      "size": 2424
+    },
+    {
+      "file": "egern/netflix/netflix_aggregate/netflix_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 41,
+      "scope": "egern",
+      "sha256": "497f85aa97fcc35998a560394e146ab91b495c81f6c04ed5144d8e21522b6a6e",
+      "size": 1195
     },
     {
       "file": "egern/netlify/netlify/netlify.yaml",
@@ -1426,6 +1650,22 @@
       "size": 139
     },
     {
+      "file": "egern/openai/openai/openai.yaml",
+      "kind": "client_rules",
+      "rule_count": 79,
+      "scope": "egern",
+      "sha256": "a9dc324389a3d606a61e86c9358a655863d1d1df96b01c6ddd10999aa72903fa",
+      "size": 2290
+    },
+    {
+      "file": "egern/openai/openai_aggregate/openai_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 53,
+      "scope": "egern",
+      "sha256": "461393093d908044bdb80fbafb1f641ca77766a6274ed69bec18632833878ea9",
+      "size": 1601
+    },
+    {
       "file": "egern/oppo/oppo/oppo.yaml",
       "kind": "client_rules",
       "rule_count": 56,
@@ -1472,6 +1712,22 @@
       "scope": "egern",
       "sha256": "0029376eafca1f7b978153379e4d2a6865bf865195803141f0c7f2410068ca8a",
       "size": 5707
+    },
+    {
+      "file": "egern/perplexity/perplexity/perplexity.yaml",
+      "kind": "client_rules",
+      "rule_count": 10,
+      "scope": "egern",
+      "sha256": "779cecc63c35915f2ba616355b18248e126110b1e1b0c937a3bb7b44586a64d6",
+      "size": 285
+    },
+    {
+      "file": "egern/perplexity/perplexity_aggregate/perplexity_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 7,
+      "scope": "egern",
+      "sha256": "35d5d64e5d88ac54ad635b3f583f9e1548849a6da5a73723d615d377f3581e66",
+      "size": 230
     },
     {
       "file": "egern/pinduoduo/pinduoduo/pinduoduo.yaml",
@@ -1602,6 +1858,22 @@
       "size": 1228
     },
     {
+      "file": "egern/roblox/roblox/roblox.yaml",
+      "kind": "client_rules",
+      "rule_count": 96,
+      "scope": "egern",
+      "sha256": "68d7faee7bc60cd40cb36308cd9306d0851a712d2f755898a55c7fce07afb5d2",
+      "size": 1913
+    },
+    {
+      "file": "egern/roblox/roblox_aggregate/roblox_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 52,
+      "scope": "egern",
+      "sha256": "535a9a22f282a20b19ecd7470fb036e5329c8f46675deb41a22629b4bf49618b",
+      "size": 1145
+    },
+    {
       "file": "egern/rockstar/rockstar/rockstar.yaml",
       "kind": "client_rules",
       "rule_count": 5,
@@ -1656,6 +1928,22 @@
       "scope": "egern",
       "sha256": "181f854de4d399a049cac20f4a46507b7e4c72175520679aef4862a8ace5c755",
       "size": 179
+    },
+    {
+      "file": "egern/signal/signal/signal.yaml",
+      "kind": "client_rules",
+      "rule_count": 16,
+      "scope": "egern",
+      "sha256": "88f3351583e1c2f9be7246d342414a4e88c0e86463a60b21c7bc2467c24ef25c",
+      "size": 323
+    },
+    {
+      "file": "egern/signal/signal_aggregate/signal_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 8,
+      "scope": "egern",
+      "sha256": "340cbd7ca154a5fb90b86afcc12e363293ddd8c501b47e1190e8ca86d7e59862",
+      "size": 171
     },
     {
       "file": "egern/snap/snap/snap.yaml",
@@ -1802,6 +2090,22 @@
       "size": 33
     },
     {
+      "file": "egern/telegram/telegram/telegram.yaml",
+      "kind": "client_rules",
+      "rule_count": 88,
+      "scope": "egern",
+      "sha256": "6fa0858ea8a913e045e92742bda2c2b461b5d5c35ba4eb2ebbfc098569bbabb6",
+      "size": 1768
+    },
+    {
+      "file": "egern/telegram/telegram_aggregate/telegram_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 51,
+      "scope": "egern",
+      "sha256": "e8ba13d5e368b081b3922691cad05b4ec1b989fec80fe0b8db02c59e6f7a63ba",
+      "size": 1087
+    },
+    {
       "file": "egern/tencent/qqmail/qqmail.yaml",
       "kind": "client_rules",
       "rule_count": 1,
@@ -1820,10 +2124,10 @@
     {
       "file": "egern/tencent/tencent/tencent.yaml",
       "kind": "client_rules",
-      "rule_count": 819,
+      "rule_count": 889,
       "scope": "egern",
-      "sha256": "c0af881046019473629a962fc51d276cfbe698578db1be7109edaaeeb0a33d25",
-      "size": 17179
+      "sha256": "ca678ac5d3bc93b9999eca3b98d9eda56ea5f3092142c9745dab4f7f2a644050",
+      "size": 19171
     },
     {
       "file": "egern/tencent/tencentcloud/tencentcloud.yaml",
@@ -1840,6 +2144,22 @@
       "scope": "egern",
       "sha256": "978a336576e93243dd54194e2d93a6bf514457f5f603864163e81829ee74a248",
       "size": 108
+    },
+    {
+      "file": "egern/tencent/tencentvideo/tencentvideo.yaml",
+      "kind": "client_rules",
+      "rule_count": 51,
+      "scope": "egern",
+      "sha256": "1626ede30d4516b7b34fcbc01323aafcf8d2a03828ee05367a9d08318f37ceb9",
+      "size": 1626
+    },
+    {
+      "file": "egern/tencent/wechat/wechat.yaml",
+      "kind": "client_rules",
+      "rule_count": 30,
+      "scope": "egern",
+      "sha256": "f8ca123043390f03d456eba81b8a160249e5c32220a03ef1ac7fad40bcfa9857",
+      "size": 664
     },
     {
       "file": "egern/tencent/wecom/wecom.yaml",
@@ -3116,10 +3436,10 @@
     {
       "file": "loon/alibaba/1688/1688.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 2,
       "scope": "loon",
-      "sha256": "1904aba10d8aebcb3d74b8fa4f41edf2670349370e09428a68d9f68c1e3f467a",
-      "size": 27
+      "sha256": "070c60ab074ac79fd288a4bf1e83f297696792be169a2a5442b74223c0154542",
+      "size": 50
     },
     {
       "file": "loon/alibaba/alibaba/alibaba.list",
@@ -3128,6 +3448,14 @@
       "scope": "loon",
       "sha256": "2120d97d23d48702d779e23ba48733162c8c4d7dcf08596ae5a88687a67cdbbc",
       "size": 16808
+    },
+    {
+      "file": "loon/alibaba/alibabacloud/alibabacloud.list",
+      "kind": "client_rules",
+      "rule_count": 100,
+      "scope": "loon",
+      "sha256": "64f243d43b985d78240521753b543bb01a540df9e262433e7f64a21993a75560",
+      "size": 3450
     },
     {
       "file": "loon/alibaba/alipay/alipay.list",
@@ -3252,18 +3580,34 @@
     {
       "file": "loon/anthropic/anthropic_aggregate/anthropic_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 9,
+      "rule_count": 10,
       "scope": "loon",
-      "sha256": "3138a28adfae2ae9280dbc69687b8d90ecb00081c3e1c2c2c4f488f10613f5bd",
-      "size": 293
+      "sha256": "a8da6661019ee9abd262f548394096d39e06f336603c87e8c263011df9421bc1",
+      "size": 318
+    },
+    {
+      "file": "loon/anthropic/claude/claude.list",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "loon",
+      "sha256": "e22906098a08537bca78fe642e8dcf401700595c436d131bfdbb9f446c58e19b",
+      "size": 77
     },
     {
       "file": "loon/apple/apple/apple.list",
       "kind": "client_rules",
-      "rule_count": 2015,
+      "rule_count": 2037,
       "scope": "loon",
-      "sha256": "ae5a234ff9ad30ae2ca4fb9bd923b000949f313116c7b437791024af28afe84d",
-      "size": 65874
+      "sha256": "16d836f12b793d1657949811613c749de16147591f26ff141ff58beeb4e18517",
+      "size": 66516
+    },
+    {
+      "file": "loon/apple/appledev/appledev.list",
+      "kind": "client_rules",
+      "rule_count": 80,
+      "scope": "loon",
+      "sha256": "6eac4689ec08fefa1525f3639546f6a5457cebdb05525308db94c09ecf70a55c",
+      "size": 2764
     },
     {
       "file": "loon/apple/applefirmware/applefirmware.list",
@@ -3290,12 +3634,44 @@
       "size": 59
     },
     {
+      "file": "loon/apple/applemusic/applemusic.list",
+      "kind": "client_rules",
+      "rule_count": 9,
+      "scope": "loon",
+      "sha256": "72f48e8f04d62a2395435aadc76ac6664e88918358e988e85113c30b74839f3d",
+      "size": 285
+    },
+    {
       "file": "loon/apple/appletv/appletv.list",
       "kind": "client_rules",
-      "rule_count": 7,
+      "rule_count": 14,
       "scope": "loon",
-      "sha256": "77616b096395fbee12c0d51e6cb284dfc6accc40a675e68c6cfdecb0f6622738",
-      "size": 252
+      "sha256": "ad2f56c634f94db81170603cb53171eea567cb83eda697f38ba71a4881d0614b",
+      "size": 462
+    },
+    {
+      "file": "loon/apple/appstore/appstore.list",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "loon",
+      "sha256": "20062ff2d80616e5fbdb360b54c8a9f184e8ec5be47601a4dd79345e8892ec4f",
+      "size": 46
+    },
+    {
+      "file": "loon/apple/findmy/findmy.list",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "loon",
+      "sha256": "5b265680521a97c68c0bc4ccd06c64aee3aa935074caf85df0e33d26f4c9c98d",
+      "size": 83
+    },
+    {
+      "file": "loon/apple/icloud/icloud.list",
+      "kind": "client_rules",
+      "rule_count": 167,
+      "scope": "loon",
+      "sha256": "d25077c72fcd4fa429df156ad9be9c8b73c1f67391fd8c02d56021d63f2a649d",
+      "size": 4593
     },
     {
       "file": "loon/apple/icloudprivaterelay/icloudprivaterelay.list",
@@ -3304,6 +3680,14 @@
       "scope": "loon",
       "sha256": "bf918251648db75d5218ce67d009fbcf3de10dd6a74f596b67dfa869218bd494",
       "size": 177
+    },
+    {
+      "file": "loon/apple/testflight/testflight.list",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "loon",
+      "sha256": "cb0c1488da836ff8c3bae8044d596556845fbb184e442bfc41235b5bb6b2d8dd",
+      "size": 76
     },
     {
       "file": "loon/atlassian/atlassian/atlassian.list",
@@ -3340,10 +3724,10 @@
     {
       "file": "loon/baidu/baidu/baidu.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 325,
       "scope": "loon",
-      "sha256": "88bc62517ed3c058d30f3d0d92d818a9c4d614b0c8d02a9220f1614f3c25b271",
-      "size": 64
+      "sha256": "bede901474798922f221e3eac3e13d6a3e70c66c539dca90bd907cd7b4fc332b",
+      "size": 9065
     },
     {
       "file": "loon/baidu/baidunetdisk/baidunetdisk.list",
@@ -3484,18 +3868,34 @@
     {
       "file": "loon/bytedance/bytedance/bytedance.list",
       "kind": "client_rules",
-      "rule_count": 1087,
+      "rule_count": 1100,
       "scope": "loon",
-      "sha256": "3aafb86b4f0915f07ada7f6f83fa9cfb9deb76ad5807a9f7bd6f7c577b589f6e",
-      "size": 31682
+      "sha256": "ea2e64ce6c50a46c6dc4c39271b81b3cc6483bfbbc20e6e99000ef25e1f3e8c4",
+      "size": 32079
     },
     {
       "file": "loon/bytedance/doubao/doubao.list",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 36,
       "scope": "loon",
-      "sha256": "2ddcdb67d2b9bf06ee5d6c390f8a5092516c4cd7c4ee4ce257751606a55c9522",
-      "size": 133
+      "sha256": "0e17d10dcc489024ca1b0f2f9f326f896b062d84cdb66e54d5a1d4f4338fafd8",
+      "size": 1024
+    },
+    {
+      "file": "loon/bytedance/douyin/douyin.list",
+      "kind": "client_rules",
+      "rule_count": 90,
+      "scope": "loon",
+      "sha256": "e93924fbd9d5a1103890e8774ff63a7136582c57314c186462276ef21381c40d",
+      "size": 2580
+    },
+    {
+      "file": "loon/bytedance/tiktok/tiktok.list",
+      "kind": "client_rules",
+      "rule_count": 117,
+      "scope": "loon",
+      "sha256": "52ef0d87f2fb14d14b50ee78830a21cbcbec4010b608f50cd219c3a3658faf36",
+      "size": 3615
     },
     {
       "file": "loon/canva/canva/canva.list",
@@ -3524,10 +3924,10 @@
     {
       "file": "loon/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128684,
+      "rule_count": 129180,
       "scope": "loon",
-      "sha256": "4528f290ba6a917349f9800444b4d5668a938a222a762a783f0e5ced4471bd5e",
-      "size": 3482011
+      "sha256": "78434f6f5dff8fc374b8607e685baa7f1c4cbf1e678e3fe1dfda78f1b02cdd1a",
+      "size": 3496659
     },
     {
       "file": "loon/ccb/ccb/ccb.list",
@@ -3580,10 +3980,10 @@
     {
       "file": "loon/china/china.list",
       "kind": "client_rules",
-      "rule_count": 109963,
+      "rule_count": 109751,
       "scope": "loon",
-      "sha256": "5d9b9ce2cd5075eb4e614822ac70b133fbb3fffbd56f8ca1e822532e75b1f35e",
-      "size": 2931971
+      "sha256": "c12335c57213d7c3dd5227a2c8da3592356a8720cc643836c6feef2aeb34575f",
+      "size": 2926180
     },
     {
       "file": "loon/chinamobile/chinamobile/chinamobile.list",
@@ -3690,6 +4090,22 @@
       "size": 106
     },
     {
+      "file": "loon/deepseek/deepseek/deepseek.list",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "loon",
+      "sha256": "586155a8c5c3d31bedcc56930f0df5ba568afd79d554d07f583bcd703a828112",
+      "size": 114
+    },
+    {
+      "file": "loon/deepseek/deepseek_aggregate/deepseek_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "loon",
+      "sha256": "b2f3915a8bbd3438f363af5082248801e41bb6b28503eddce4605593159e5eb1",
+      "size": 57
+    },
+    {
       "file": "loon/dewu/dewu/dewu.list",
       "kind": "client_rules",
       "rule_count": 45,
@@ -3736,6 +4152,22 @@
       "scope": "loon",
       "sha256": "2249f4d9d7c087a734121fecc705b64d2436f16c60c51b9f4749b2660d3f58d2",
       "size": 184
+    },
+    {
+      "file": "loon/discord/discord/discord.list",
+      "kind": "client_rules",
+      "rule_count": 63,
+      "scope": "loon",
+      "sha256": "29dd0ec2b9d0db0ccebdc04123833a8e1cb76b13cc17c5fd488bcb5aa1a6d8a2",
+      "size": 1956
+    },
+    {
+      "file": "loon/discord/discord_aggregate/discord_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 31,
+      "scope": "loon",
+      "sha256": "a5f989b2ce7bef10511f4203670c2cad213621206d437428221ac8791a24471c",
+      "size": 1019
     },
     {
       "file": "loon/disney/disney/disney.list",
@@ -3940,18 +4372,26 @@
     {
       "file": "loon/google/firebase/firebase.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 25,
       "scope": "loon",
-      "sha256": "0a5a0660d654733603aa9ef67806748c3a28908194512bea34b8f0515040a376",
-      "size": 76
+      "sha256": "362a0ba0179ee3ef811cf00db816646816a512a6ea5dfece103baf3b43da011b",
+      "size": 1060
+    },
+    {
+      "file": "loon/google/gemini/gemini.list",
+      "kind": "client_rules",
+      "rule_count": 13,
+      "scope": "loon",
+      "sha256": "605702efe5aec5edb07d1c03174a10157bdd2e9dc4e67fa01e7ad3bd80bd4633",
+      "size": 417
     },
     {
       "file": "loon/google/google/google.list",
       "kind": "client_rules",
-      "rule_count": 1469,
+      "rule_count": 1525,
       "scope": "loon",
-      "sha256": "7ec075df8775e23243e175d4aead923a9e31fe484abda4d9a6a3c378c6e38a79",
-      "size": 42887
+      "sha256": "4e32f70be57cc6db770eac9d1aa5e6b7ec058140d278d42df8b969c9c5ec55b6",
+      "size": 44496
     },
     {
       "file": "loon/google/google-search/google-search.list",
@@ -3980,10 +4420,10 @@
     {
       "file": "loon/google/googlefcm/googlefcm.list",
       "kind": "client_rules",
-      "rule_count": 13,
+      "rule_count": 95,
       "scope": "loon",
-      "sha256": "d5416f51714c2a6e111c090136eaf04f90a352fdb549125dfefd63fa89259c85",
-      "size": 463
+      "sha256": "8a10cf6fcd7591ec04983b998c9afd6143161e7dcd5d8192bed58a9e11cbdbdb",
+      "size": 2737
     },
     {
       "file": "loon/google/googlevoice/googlevoice.list",
@@ -4000,6 +4440,30 @@
       "scope": "loon",
       "sha256": "ec50c23930c5148ba59cf2ddeec539c6d551ed527b747d472d00d8ede8e56c83",
       "size": 8512
+    },
+    {
+      "file": "loon/google/youtube/youtube.list",
+      "kind": "client_rules",
+      "rule_count": 703,
+      "scope": "loon",
+      "sha256": "f88472785334f11f592afdcbb6c1bb4c8734a84de6fed306fce36a6791842493",
+      "size": 19202
+    },
+    {
+      "file": "loon/groq/groq/groq.list",
+      "kind": "client_rules",
+      "rule_count": 1,
+      "scope": "loon",
+      "sha256": "c25618d6e673762890944bbccf594711322787bac1820a38e340f48b81fe0c5c",
+      "size": 23
+    },
+    {
+      "file": "loon/groq/groq_aggregate/groq_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 1,
+      "scope": "loon",
+      "sha256": "c25618d6e673762890944bbccf594711322787bac1820a38e340f48b81fe0c5c",
+      "size": 23
     },
     {
       "file": "loon/hbo/hbo/hbo.list",
@@ -4048,6 +4512,22 @@
       "scope": "loon",
       "sha256": "ff0118db6673896b8d88570ef8a36427087b77953be3d16a6ec53b38033af232",
       "size": 12096
+    },
+    {
+      "file": "loon/huggingface/huggingface/huggingface.list",
+      "kind": "client_rules",
+      "rule_count": 6,
+      "scope": "loon",
+      "sha256": "3d2903176228d3e20da3898a4413bc7966b588801b9cd1633417ee414a46c8db",
+      "size": 144
+    },
+    {
+      "file": "loon/huggingface/huggingface_aggregate/huggingface_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "loon",
+      "sha256": "1831eaa5d3ab9c3e4fc65c87464e461fac3d597f012b256bbae1d28ea7675553",
+      "size": 72
     },
     {
       "file": "loon/huya/huya/huya.list",
@@ -4274,6 +4754,14 @@
       "size": 4781
     },
     {
+      "file": "loon/meta/messenger/messenger.list",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "loon",
+      "sha256": "09a3b2dc0a2426405bcd2803dfcaf5d32994e5c78967de6f89f16386cc298f45",
+      "size": 102
+    },
+    {
       "file": "loon/meta/meta/meta.list",
       "kind": "client_rules",
       "rule_count": 596,
@@ -4298,12 +4786,28 @@
       "size": 1177
     },
     {
+      "file": "loon/microsoft/azure/azure.list",
+      "kind": "client_rules",
+      "rule_count": 151,
+      "scope": "loon",
+      "sha256": "6d0e42b896a02eadcf35acd25e70e2063618efa810c538a9feb680b8fc495783",
+      "size": 4662
+    },
+    {
+      "file": "loon/microsoft/copilot/copilot.list",
+      "kind": "client_rules",
+      "rule_count": 49,
+      "scope": "loon",
+      "sha256": "4831305a8b0bbf9d1996e0d030386e5c5a8069c5a107c3fcfde846cd88f8d87c",
+      "size": 1536
+    },
+    {
       "file": "loon/microsoft/github/github.list",
       "kind": "client_rules",
-      "rule_count": 29,
+      "rule_count": 179,
       "scope": "loon",
-      "sha256": "1e777cec08c6d93022edf17978bf59db849c6fd1980b4b23225f7044d371e773",
-      "size": 874
+      "sha256": "0e9478b0914920ed7735d5cf884f02438b1728e662b25158e770f8712bfbe719",
+      "size": 6759
     },
     {
       "file": "loon/microsoft/linkedin/linkedin.list",
@@ -4316,10 +4820,10 @@
     {
       "file": "loon/microsoft/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 991,
+      "rule_count": 1054,
       "scope": "loon",
-      "sha256": "cb03352dbe1f8975fe8fee881ff0457ebdcc02db85a5c6ec3ac378f7d1dd07ec",
-      "size": 33294
+      "sha256": "cfd65fd15ef5e66a2ad127a3765b2b514a6c9bab712c4b878e6efd2d884e299b",
+      "size": 35257
     },
     {
       "file": "loon/microsoft/microsoftedge/microsoftedge.list",
@@ -4338,6 +4842,30 @@
       "size": 376
     },
     {
+      "file": "loon/microsoft/onedrive/onedrive.list",
+      "kind": "client_rules",
+      "rule_count": 16,
+      "scope": "loon",
+      "sha256": "c8f86f71aa796fae87042f301c82219a1acb457e292e98dedfb27e494395cde6",
+      "size": 487
+    },
+    {
+      "file": "loon/microsoft/teams/teams.list",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "loon",
+      "sha256": "bd7adf3e7e854122d67b3a9f6295a21b75f54b62be712f71e8448d4b93cac90e",
+      "size": 135
+    },
+    {
+      "file": "loon/microsoft/xbox/xbox.list",
+      "kind": "client_rules",
+      "rule_count": 42,
+      "scope": "loon",
+      "sha256": "68fa5f4685fb11dffe637d0e3b0f9b97217e10186e2073834a858bc84b49a80b",
+      "size": 1210
+    },
+    {
       "file": "loon/netease/netease/netease.list",
       "kind": "client_rules",
       "rule_count": 96,
@@ -4352,6 +4880,22 @@
       "scope": "loon",
       "sha256": "ce8b995aa786e698fba3c46475eafea704e2daf6a6e19a54d3112f6cd2a0024a",
       "size": 450
+    },
+    {
+      "file": "loon/netflix/netflix/netflix.list",
+      "kind": "client_rules",
+      "rule_count": 92,
+      "scope": "loon",
+      "sha256": "26a06e73ad181ea1320e88d9742d04140ba02d72abfb929b283d227887717aea",
+      "size": 2831
+    },
+    {
+      "file": "loon/netflix/netflix_aggregate/netflix_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 37,
+      "scope": "loon",
+      "sha256": "2ad5a2972e90618e514391c643eaf73ba67c50344e1b2a1abfe4941ae95d53ea",
+      "size": 1169
     },
     {
       "file": "loon/netlify/netlify/netlify.list",
@@ -4434,6 +4978,22 @@
       "size": 141
     },
     {
+      "file": "loon/openai/openai/openai.list",
+      "kind": "client_rules",
+      "rule_count": 78,
+      "scope": "loon",
+      "sha256": "6fcfb50e1f8a4beeec98cfcb5b4863d0cf65120b66d2f6d665573b1900a7d4ca",
+      "size": 2640
+    },
+    {
+      "file": "loon/openai/openai_aggregate/openai_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 52,
+      "scope": "loon",
+      "sha256": "dd26915c63dbc594d18fa1450729c1fb7693611d2b19e5b7dbb425b0d3b56b55",
+      "size": 1771
+    },
+    {
       "file": "loon/oppo/oppo/oppo.list",
       "kind": "client_rules",
       "rule_count": 56,
@@ -4480,6 +5040,22 @@
       "scope": "loon",
       "sha256": "d6ca96cc7343b98be5b431dbbeb2e247e48c91ad26c9fbe8ae22bbd962469199",
       "size": 7645
+    },
+    {
+      "file": "loon/perplexity/perplexity/perplexity.list",
+      "kind": "client_rules",
+      "rule_count": 10,
+      "scope": "loon",
+      "sha256": "098e266abdcecdc177f251bb6a4d9db59b209d4fb80c953a18bd0c85081c885a",
+      "size": 320
+    },
+    {
+      "file": "loon/perplexity/perplexity_aggregate/perplexity_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 7,
+      "scope": "loon",
+      "sha256": "18aa13cf92a8af56fbedb385f8adc42ca13c07c1c69f029ae6a152a9f2ad9e74",
+      "size": 241
     },
     {
       "file": "loon/pinduoduo/pinduoduo/pinduoduo.list",
@@ -4610,6 +5186,22 @@
       "size": 1649
     },
     {
+      "file": "loon/roblox/roblox/roblox.list",
+      "kind": "client_rules",
+      "rule_count": 96,
+      "scope": "loon",
+      "sha256": "3e25711e03406c156ce5597eec31ca2be396e7a377fb0f4f880d95b720c860b8",
+      "size": 2622
+    },
+    {
+      "file": "loon/roblox/roblox_aggregate/roblox_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 52,
+      "scope": "loon",
+      "sha256": "e5c55569d86ad4bfd2c278b838c9bb9aa9e31cc2f122d7dbe19b5dfb445efd72",
+      "size": 1502
+    },
+    {
       "file": "loon/rockstar/rockstar/rockstar.list",
       "kind": "client_rules",
       "rule_count": 5,
@@ -4664,6 +5256,22 @@
       "scope": "loon",
       "sha256": "5105b789d99fff1c9e857eeea40e7ae63593c2b71e95293382aca0d5aa8fa283",
       "size": 224
+    },
+    {
+      "file": "loon/signal/signal/signal.list",
+      "kind": "client_rules",
+      "rule_count": 16,
+      "scope": "loon",
+      "sha256": "e50e139368693270320977e38e8c4312e10384bf1a4fc7257e073e43f965ec88",
+      "size": 432
+    },
+    {
+      "file": "loon/signal/signal_aggregate/signal_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 8,
+      "scope": "loon",
+      "sha256": "6735c7557fb210e7a29c69918ea42ddbb39ea7bc995cf8333f0f6c7a5b3c0720",
+      "size": 216
     },
     {
       "file": "loon/snap/snap/snap.list",
@@ -4810,6 +5418,22 @@
       "size": 22
     },
     {
+      "file": "loon/telegram/telegram/telegram.list",
+      "kind": "client_rules",
+      "rule_count": 88,
+      "scope": "loon",
+      "sha256": "23d2b6b1aecffb1f87c333e9824e8d0c4fad22bae00e1c3b8a6d1b89e342c4a1",
+      "size": 2229
+    },
+    {
+      "file": "loon/telegram/telegram_aggregate/telegram_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 51,
+      "scope": "loon",
+      "sha256": "f6fd078cf1d63f03119b0d0923f095b474515249fc1df4a92e3c313b228f4677",
+      "size": 1280
+    },
+    {
       "file": "loon/tencent/qqmail/qqmail.list",
       "kind": "client_rules",
       "rule_count": 1,
@@ -4828,10 +5452,10 @@
     {
       "file": "loon/tencent/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 819,
+      "rule_count": 889,
       "scope": "loon",
-      "sha256": "0259e1ba1fe1ad4f6666ae31f4c691670bdb348a26f5891dfe8fa6f8c4744858",
-      "size": 22924
+      "sha256": "037546ec9dc12f7f7aed02b16fe8668bd9547b96535aa40a5a715019a7826525",
+      "size": 25166
     },
     {
       "file": "loon/tencent/tencentcloud/tencentcloud.list",
@@ -4848,6 +5472,22 @@
       "scope": "loon",
       "sha256": "38e9aa5e60f537aad392eba3234f1d1adbd63bfa6e027b4d35028fb37f9fa861",
       "size": 113
+    },
+    {
+      "file": "loon/tencent/tencentvideo/tencentvideo.list",
+      "kind": "client_rules",
+      "rule_count": 51,
+      "scope": "loon",
+      "sha256": "77a18c40a9d8b694e5281619f6782554808a3a0d1097d1d08ad47881090eb25e",
+      "size": 1715
+    },
+    {
+      "file": "loon/tencent/wechat/wechat.list",
+      "kind": "client_rules",
+      "rule_count": 30,
+      "scope": "loon",
+      "sha256": "689ca0c40b16b37352e888e8fdae395a6d6ef8b3e304c399c47d217a377c8cbc",
+      "size": 817
     },
     {
       "file": "loon/tencent/wecom/wecom.list",
@@ -5212,10 +5852,10 @@
     {
       "file": "mihomo/alibaba/1688/1688.yaml",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 2,
       "scope": "mihomo",
-      "sha256": "58119694ea6566fd65437f4550c724f8a4748f5ca07f678e68dd2b1173bf76d2",
-      "size": 40
+      "sha256": "3641fa377438aac1955e0e7b43334e8f38853eddd7766c647d74c70cdbb71bce",
+      "size": 67
     },
     {
       "file": "mihomo/alibaba/alibaba/alibaba.yaml",
@@ -5224,6 +5864,14 @@
       "scope": "mihomo",
       "sha256": "40f780669591d366b0c993b89b0e83809a341d92a15180900a7c16b79e5e626c",
       "size": 19177
+    },
+    {
+      "file": "mihomo/alibaba/alibabacloud/alibabacloud.yaml",
+      "kind": "client_rules",
+      "rule_count": 100,
+      "scope": "mihomo",
+      "sha256": "5237ad866acf67e70e3b026f953c59b596c0dce747871dc689f5324771beea01",
+      "size": 3859
     },
     {
       "file": "mihomo/alibaba/alipay/alipay.yaml",
@@ -5348,18 +5996,34 @@
     {
       "file": "mihomo/anthropic/anthropic_aggregate/anthropic_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 9,
+      "rule_count": 10,
       "scope": "mihomo",
-      "sha256": "d941ca7b4fe94b003df1197ed64ad27586aa8bbea35cf8421c59e2ee32a92182",
-      "size": 338
+      "sha256": "f213c63f68ab6639322c9b08646a807b70202a717a16a02839c5adf5a7b61eae",
+      "size": 367
+    },
+    {
+      "file": "mihomo/anthropic/claude/claude.yaml",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "mihomo",
+      "sha256": "c14ac4a5228a8f618f1abca5046158271441740e81d02ecf880103261080723c",
+      "size": 98
     },
     {
       "file": "mihomo/apple/apple/apple.yaml",
       "kind": "client_rules",
-      "rule_count": 2015,
+      "rule_count": 2037,
       "scope": "mihomo",
-      "sha256": "707956eb45643aeb4f7cd590b6d75000cc1e14040326cd2b43c63aebcf3f1cae",
-      "size": 73943
+      "sha256": "8bc25f1a7ec9219f945283dfd0a3aa7b9b2c322086b7e8b59a1dbc2e82bde2b3",
+      "size": 74673
+    },
+    {
+      "file": "mihomo/apple/appledev/appledev.yaml",
+      "kind": "client_rules",
+      "rule_count": 80,
+      "scope": "mihomo",
+      "sha256": "b33df1fe3d828eceb1db26fe168905efaa725292b9edd521fc2d1d6a07efb93f",
+      "size": 3093
     },
     {
       "file": "mihomo/apple/applefirmware/applefirmware.yaml",
@@ -5386,12 +6050,44 @@
       "size": 76
     },
     {
+      "file": "mihomo/apple/applemusic/applemusic.yaml",
+      "kind": "client_rules",
+      "rule_count": 9,
+      "scope": "mihomo",
+      "sha256": "c10d96e4afa96b8fb42793876f73f1ac58832f24a13dba9ab18d99ea5604f9e5",
+      "size": 330
+    },
+    {
       "file": "mihomo/apple/appletv/appletv.yaml",
       "kind": "client_rules",
-      "rule_count": 7,
+      "rule_count": 14,
       "scope": "mihomo",
-      "sha256": "5b7d9702576f9c72f641a4516dc8a6a70f7f37f003b0e7ba18716411ca21a46f",
-      "size": 289
+      "sha256": "e73909c3d832bf9557ece5bc750e29719b74d27c30b0cef34d9c7224b77096cb",
+      "size": 527
+    },
+    {
+      "file": "mihomo/apple/appstore/appstore.yaml",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "mihomo",
+      "sha256": "49091913e98d3fcc674827d591aff82801843f809a399f6cba41fc341abcbe2b",
+      "size": 63
+    },
+    {
+      "file": "mihomo/apple/findmy/findmy.yaml",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "mihomo",
+      "sha256": "5ddf74f367ee282f4acac4fa8b9640f018fa4a9c215491540dc1542ff2f406e7",
+      "size": 104
+    },
+    {
+      "file": "mihomo/apple/icloud/icloud.yaml",
+      "kind": "client_rules",
+      "rule_count": 167,
+      "scope": "mihomo",
+      "sha256": "15062659007a9610954584d1e2cbadf9b04f99a4ac67c22f6f395bc9dfbcb4b6",
+      "size": 5270
     },
     {
       "file": "mihomo/apple/icloudprivaterelay/icloudprivaterelay.yaml",
@@ -5400,6 +6096,14 @@
       "scope": "mihomo",
       "sha256": "0fdc63f3aeb89dc5f5626224b9c4c09cb8a7425824132c5b16fda8f133f46323",
       "size": 210
+    },
+    {
+      "file": "mihomo/apple/testflight/testflight.yaml",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "mihomo",
+      "sha256": "0f7555ec1b40aa0df26b2f47c32d189d9c2f4cfe977219c89ef4a6874b922e6b",
+      "size": 97
     },
     {
       "file": "mihomo/atlassian/atlassian/atlassian.yaml",
@@ -5436,10 +6140,10 @@
     {
       "file": "mihomo/baidu/baidu/baidu.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 325,
       "scope": "mihomo",
-      "sha256": "13cf0d5a9ef674dc7314ee367ae8184beeca50775e9d1205bfb748771288e878",
-      "size": 81
+      "sha256": "0adbce07d9fe7bb00d0614be7fc7dfa907164487028de7d4e0ff06ddba2a4d1d",
+      "size": 10374
     },
     {
       "file": "mihomo/baidu/baidunetdisk/baidunetdisk.yaml",
@@ -5580,18 +6284,34 @@
     {
       "file": "mihomo/bytedance/bytedance/bytedance.yaml",
       "kind": "client_rules",
-      "rule_count": 1087,
+      "rule_count": 1100,
       "scope": "mihomo",
-      "sha256": "08abbbb54493ebd7d22e18930f6288fd2f0df76efdc6f2e03e68c1899ff95221",
-      "size": 36039
+      "sha256": "494ae7a205e9836446aea4d5b89c0368513210011d11f1c3564de1d15ca10e2d",
+      "size": 36488
     },
     {
       "file": "mihomo/bytedance/doubao/doubao.yaml",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 36,
       "scope": "mihomo",
-      "sha256": "b0c3919f5f02ec740d85551f3ae806555f596b7a2441923d22725a3685228428",
-      "size": 158
+      "sha256": "8bd8a91cbe6f7cb80af85f9fc9090e1bd6281b198379615277385e005acc7d40",
+      "size": 1177
+    },
+    {
+      "file": "mihomo/bytedance/douyin/douyin.yaml",
+      "kind": "client_rules",
+      "rule_count": 90,
+      "scope": "mihomo",
+      "sha256": "2261c7007af3dc5fd509bd21f83407f465e6d33c0d81859207f52fa20665511e",
+      "size": 2949
+    },
+    {
+      "file": "mihomo/bytedance/tiktok/tiktok.yaml",
+      "kind": "client_rules",
+      "rule_count": 117,
+      "scope": "mihomo",
+      "sha256": "55faa644b6fab654f122e69dc573575ae00dfa8d453b1b6b085abe9d2aca88da",
+      "size": 4092
     },
     {
       "file": "mihomo/canva/canva/canva.yaml",
@@ -5620,10 +6340,10 @@
     {
       "file": "mihomo/categories/other/other.yaml",
       "kind": "client_rules",
-      "rule_count": 128822,
+      "rule_count": 129323,
       "scope": "mihomo",
-      "sha256": "2c62fafd70e1804745a59cb688c2c3854d7c6504c9b4e95bd3e8299fac9fab36",
-      "size": 4002971
+      "sha256": "feee22bbe5596e1f5e5054f18cf3815f3aeb82dcfac08810d8da3b97bf49a645",
+      "size": 4019944
     },
     {
       "file": "mihomo/ccb/ccb/ccb.yaml",
@@ -5676,10 +6396,10 @@
     {
       "file": "mihomo/china/china.yaml",
       "kind": "client_rules",
-      "rule_count": 109963,
+      "rule_count": 109751,
       "scope": "mihomo",
-      "sha256": "539d9cb19530ae3da6d757b4de8c44cbdba873ed38a4cecfdc339251c4d73052",
-      "size": 3371832
+      "sha256": "35424a36ab902067edd04fa31dc7a695e2657e04cd887453c8b4ddd73fed543d",
+      "size": 3365193
     },
     {
       "file": "mihomo/chinamobile/chinamobile/chinamobile.yaml",
@@ -5786,6 +6506,22 @@
       "size": 131
     },
     {
+      "file": "mihomo/deepseek/deepseek/deepseek.yaml",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "mihomo",
+      "sha256": "1b427e84f8dae49b9b57bc7239cf0c7b585059da067e123fe57b6f1dcc15b0bb",
+      "size": 139
+    },
+    {
+      "file": "mihomo/deepseek/deepseek_aggregate/deepseek_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "mihomo",
+      "sha256": "2136b63b2437ccce9af2d08e4f8acf32a64e5eca64ba95d54625093056cdfa90",
+      "size": 74
+    },
+    {
       "file": "mihomo/dewu/dewu/dewu.yaml",
       "kind": "client_rules",
       "rule_count": 45,
@@ -5832,6 +6568,22 @@
       "scope": "mihomo",
       "sha256": "e0765730bbe25bc1b34f7ae593d3d0929415411cecd63d3b2c9982956a45e0d3",
       "size": 217
+    },
+    {
+      "file": "mihomo/discord/discord/discord.yaml",
+      "kind": "client_rules",
+      "rule_count": 63,
+      "scope": "mihomo",
+      "sha256": "92866e923d0574dda0ed6fd05d31ebfacebb8e0eada815a07d4a0b0864d204b6",
+      "size": 2217
+    },
+    {
+      "file": "mihomo/discord/discord_aggregate/discord_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 31,
+      "scope": "mihomo",
+      "sha256": "c75cd4911d384bebe8199b73044579d42d9375c5819f3bab0791671205516d3d",
+      "size": 1152
     },
     {
       "file": "mihomo/disney/disney/disney.yaml",
@@ -6036,18 +6788,26 @@
     {
       "file": "mihomo/google/firebase/firebase.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 25,
       "scope": "mihomo",
-      "sha256": "288e8a05f8f972b2fb186f288db663432c4bc29c96990a48a82bf548a0f232ed",
-      "size": 93
+      "sha256": "0b3cbaf343fd86aa15ef1e58ab4149aa7e840939563a660eb093af98aceb0a60",
+      "size": 1169
+    },
+    {
+      "file": "mihomo/google/gemini/gemini.yaml",
+      "kind": "client_rules",
+      "rule_count": 13,
+      "scope": "mihomo",
+      "sha256": "1aa2f76b9d26c17eb1eacd98d9b25cef20d00bbd23d0dffd815609f0dfeddfeb",
+      "size": 478
     },
     {
       "file": "mihomo/google/google/google.yaml",
       "kind": "client_rules",
-      "rule_count": 1469,
+      "rule_count": 1525,
       "scope": "mihomo",
-      "sha256": "f5a6e4e6fb56befed1de2f12d19c99b03626a75f28b9b3e25b215390b98aea71",
-      "size": 48772
+      "sha256": "c55e56c28780d2b46dff11d7099b7782980d3fcb898f75dfd82ab481b808f017",
+      "size": 50605
     },
     {
       "file": "mihomo/google/google-search/google-search.yaml",
@@ -6076,10 +6836,10 @@
     {
       "file": "mihomo/google/googlefcm/googlefcm.yaml",
       "kind": "client_rules",
-      "rule_count": 13,
+      "rule_count": 95,
       "scope": "mihomo",
-      "sha256": "f4adc194c1a8fd435cedecc165ad44745e869c22b5413233c46cb6db44fd2bbc",
-      "size": 524
+      "sha256": "df92b0b4113d731fc7939a81c925caabc7baddba149eb512d3efc0c0ed5eb881",
+      "size": 3126
     },
     {
       "file": "mihomo/google/googlevoice/googlevoice.yaml",
@@ -6096,6 +6856,30 @@
       "scope": "mihomo",
       "sha256": "eb4cbaa612e0a210420aa39922826459de3154fcf3ad48a4917ac82426fe0a0c",
       "size": 9741
+    },
+    {
+      "file": "mihomo/google/youtube/youtube.yaml",
+      "kind": "client_rules",
+      "rule_count": 703,
+      "scope": "mihomo",
+      "sha256": "2bf8578f7e073e1ae070da8ee696d1395d4b6015defc4508df1e2b356b1691e3",
+      "size": 22023
+    },
+    {
+      "file": "mihomo/groq/groq/groq.yaml",
+      "kind": "client_rules",
+      "rule_count": 1,
+      "scope": "mihomo",
+      "sha256": "24769b3652104a91275ec5ee60905da7789952f17c0a333f9d519b981ffe26cf",
+      "size": 36
+    },
+    {
+      "file": "mihomo/groq/groq_aggregate/groq_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 1,
+      "scope": "mihomo",
+      "sha256": "24769b3652104a91275ec5ee60905da7789952f17c0a333f9d519b981ffe26cf",
+      "size": 36
     },
     {
       "file": "mihomo/hbo/hbo/hbo.yaml",
@@ -6144,6 +6928,22 @@
       "scope": "mihomo",
       "sha256": "f7b649709e5e74982f60b5b9afa76c6fc77bfddae0f1b7e6bf3c1e81563c3f36",
       "size": 13713
+    },
+    {
+      "file": "mihomo/huggingface/huggingface/huggingface.yaml",
+      "kind": "client_rules",
+      "rule_count": 6,
+      "scope": "mihomo",
+      "sha256": "a6947ac61301024b0bb0e1477ba27e1dafb15100a9557fd8da368c7ba0a22873",
+      "size": 177
+    },
+    {
+      "file": "mihomo/huggingface/huggingface_aggregate/huggingface_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "mihomo",
+      "sha256": "184c309dc24167c22024eba9b779afaedf10e8a28090d7fbeb268838e78ddfe2",
+      "size": 93
     },
     {
       "file": "mihomo/huya/huya/huya.yaml",
@@ -6370,6 +7170,14 @@
       "size": 5398
     },
     {
+      "file": "mihomo/meta/messenger/messenger.yaml",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "mihomo",
+      "sha256": "4876a91b282ff17e6ed5367aac22d16e7ed29561d6d718416ff64a7ad0f60a13",
+      "size": 127
+    },
+    {
       "file": "mihomo/meta/meta/meta.yaml",
       "kind": "client_rules",
       "rule_count": 596,
@@ -6394,12 +7202,28 @@
       "size": 1358
     },
     {
+      "file": "mihomo/microsoft/azure/azure.yaml",
+      "kind": "client_rules",
+      "rule_count": 151,
+      "scope": "mihomo",
+      "sha256": "ed9dd41b289d473bf87f0d67ced15392c86738338ee67a4814d152ef7882d455",
+      "size": 5275
+    },
+    {
+      "file": "mihomo/microsoft/copilot/copilot.yaml",
+      "kind": "client_rules",
+      "rule_count": 49,
+      "scope": "mihomo",
+      "sha256": "1b613b1ec28074e8775d8bde402953c67368c5855b0580f5ad4325022f65f9e3",
+      "size": 1741
+    },
+    {
       "file": "mihomo/microsoft/github/github.yaml",
       "kind": "client_rules",
-      "rule_count": 29,
+      "rule_count": 179,
       "scope": "mihomo",
-      "sha256": "87bb97f9eddda103b8e8417576a219ae72c900b1d989537beb0550db63ede5ac",
-      "size": 999
+      "sha256": "eb50a687837297ad92831f25022972f84689d722669936f7f076031c4fbae731",
+      "size": 7484
     },
     {
       "file": "mihomo/microsoft/linkedin/linkedin.yaml",
@@ -6412,10 +7236,10 @@
     {
       "file": "mihomo/microsoft/microsoft/microsoft.yaml",
       "kind": "client_rules",
-      "rule_count": 991,
+      "rule_count": 1054,
       "scope": "mihomo",
-      "sha256": "69d201c0a1f4b6c337f3545930e40e6bac97292e885e28e6f78add96d5c01c4b",
-      "size": 37267
+      "sha256": "2458799223a65848113a60d5ed58968cd87c9e5c4543d6f2204d90dd2243de84",
+      "size": 39482
     },
     {
       "file": "mihomo/microsoft/microsoftedge/microsoftedge.yaml",
@@ -6434,6 +7258,30 @@
       "size": 433
     },
     {
+      "file": "mihomo/microsoft/onedrive/onedrive.yaml",
+      "kind": "client_rules",
+      "rule_count": 16,
+      "scope": "mihomo",
+      "sha256": "1f6d85c09516eeb0407254a4060e15904bc43d50f92772fb20c98e0bb291f2fc",
+      "size": 560
+    },
+    {
+      "file": "mihomo/microsoft/teams/teams.yaml",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "mihomo",
+      "sha256": "fc86ea841a0482d85d46bba18cf3b6f88714b34aae150c27aa690ddb2f1ead35",
+      "size": 160
+    },
+    {
+      "file": "mihomo/microsoft/xbox/xbox.yaml",
+      "kind": "client_rules",
+      "rule_count": 42,
+      "scope": "mihomo",
+      "sha256": "3553e67b745c9cc01b2381a1871137f28cad2fe2677e9a5213eeb90ae63574a0",
+      "size": 1387
+    },
+    {
       "file": "mihomo/netease/netease/netease.yaml",
       "kind": "client_rules",
       "rule_count": 96,
@@ -6448,6 +7296,22 @@
       "scope": "mihomo",
       "sha256": "8cf60a115b7de674dc559239185b29defb25c1f1730b429e75faf93c0c9edd7e",
       "size": 519
+    },
+    {
+      "file": "mihomo/netflix/netflix/netflix.yaml",
+      "kind": "client_rules",
+      "rule_count": 96,
+      "scope": "mihomo",
+      "sha256": "128d54489f1cedd52badc57f8ef37761f18825b8bc37f1eb7d95af829299a18b",
+      "size": 3474
+    },
+    {
+      "file": "mihomo/netflix/netflix_aggregate/netflix_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 41,
+      "scope": "mihomo",
+      "sha256": "e1037b47c51347b6085a1ba6dfd3d5000957a297cf6143e64b7c2a572b89c459",
+      "size": 1592
     },
     {
       "file": "mihomo/netlify/netlify/netlify.yaml",
@@ -6530,6 +7394,22 @@
       "size": 170
     },
     {
+      "file": "mihomo/openai/openai/openai.yaml",
+      "kind": "client_rules",
+      "rule_count": 79,
+      "scope": "mihomo",
+      "sha256": "ae8175d0711479b96065a2bd1695bd98234030485cbb96e21d423a7067c9ef1a",
+      "size": 3036
+    },
+    {
+      "file": "mihomo/openai/openai_aggregate/openai_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 53,
+      "scope": "mihomo",
+      "sha256": "78d18ed85184ccf028f8aebc5bfa8cff6963cfd7c914f7149129b49a8c94466d",
+      "size": 2063
+    },
+    {
       "file": "mihomo/oppo/oppo/oppo.yaml",
       "kind": "client_rules",
       "rule_count": 56,
@@ -6576,6 +7456,22 @@
       "scope": "mihomo",
       "sha256": "b1e3346011b9953817bd8cb04511d2cd14faa8ef9119541b3e861d43a784503d",
       "size": 8642
+    },
+    {
+      "file": "mihomo/perplexity/perplexity/perplexity.yaml",
+      "kind": "client_rules",
+      "rule_count": 10,
+      "scope": "mihomo",
+      "sha256": "711461261bfce4478465b3d21eee89dbde789628f2786a02c4806ce520f92cec",
+      "size": 369
+    },
+    {
+      "file": "mihomo/perplexity/perplexity_aggregate/perplexity_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 7,
+      "scope": "mihomo",
+      "sha256": "c6be6ecccd49072fc5f147fbc7c42a78c3e254ac526792d38941044590892aec",
+      "size": 278
     },
     {
       "file": "mihomo/pinduoduo/pinduoduo/pinduoduo.yaml",
@@ -6706,6 +7602,22 @@
       "size": 1878
     },
     {
+      "file": "mihomo/roblox/roblox/roblox.yaml",
+      "kind": "client_rules",
+      "rule_count": 96,
+      "scope": "mihomo",
+      "sha256": "56275b53af8157815ae5c8af4a2fb858d38beeefdd3a10dd89f635f513bade08",
+      "size": 3015
+    },
+    {
+      "file": "mihomo/roblox/roblox_aggregate/roblox_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 52,
+      "scope": "mihomo",
+      "sha256": "270c5e232267442347d9daa26333125c72c8f21d44697c85220b4c3b43b03fbf",
+      "size": 1719
+    },
+    {
       "file": "mihomo/rockstar/rockstar/rockstar.yaml",
       "kind": "client_rules",
       "rule_count": 5,
@@ -6760,6 +7672,22 @@
       "scope": "mihomo",
       "sha256": "a312dd0daae705d8bc4c9ded99e3e1058c5a89b1a11ebcdd7fc63dc0371e2e3b",
       "size": 265
+    },
+    {
+      "file": "mihomo/signal/signal/signal.yaml",
+      "kind": "client_rules",
+      "rule_count": 16,
+      "scope": "mihomo",
+      "sha256": "26708b6beed6728c4ac573bc0f9eb7f241adc85be1d2b8e467b9332594a91438",
+      "size": 505
+    },
+    {
+      "file": "mihomo/signal/signal_aggregate/signal_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 8,
+      "scope": "mihomo",
+      "sha256": "be8ffdc103345a4db59e6058c89667507214270b984c8048799771e52f327e86",
+      "size": 257
     },
     {
       "file": "mihomo/snap/snap/snap.yaml",
@@ -6906,6 +7834,22 @@
       "size": 35
     },
     {
+      "file": "mihomo/telegram/telegram/telegram.yaml",
+      "kind": "client_rules",
+      "rule_count": 88,
+      "scope": "mihomo",
+      "sha256": "58178dc13e8e010b2116e7b4e9090d2a45a238b74c732d918f63136d79718d47",
+      "size": 2590
+    },
+    {
+      "file": "mihomo/telegram/telegram_aggregate/telegram_aggregate.yaml",
+      "kind": "client_rules",
+      "rule_count": 51,
+      "scope": "mihomo",
+      "sha256": "53b8c88a4d94a728c5d4d858c90f56d0cba3fedeacae19ca068eeee72ba22750",
+      "size": 1493
+    },
+    {
       "file": "mihomo/tencent/qqmail/qqmail.yaml",
       "kind": "client_rules",
       "rule_count": 1,
@@ -6924,10 +7868,10 @@
     {
       "file": "mihomo/tencent/tencent/tencent.yaml",
       "kind": "client_rules",
-      "rule_count": 819,
+      "rule_count": 889,
       "scope": "mihomo",
-      "sha256": "2d52b685da10b0dfa0121b0f720701281cb13534ef1d2c743307282e26cce6c5",
-      "size": 26209
+      "sha256": "3858f82f1b14f6989edcd1e3a86dba3029aa4c05c0f9f56a3e84a00b0b81eb41",
+      "size": 28731
     },
     {
       "file": "mihomo/tencent/tencentcloud/tencentcloud.yaml",
@@ -6944,6 +7888,22 @@
       "scope": "mihomo",
       "sha256": "fa31a78a1963d44f5f6671fae7d0fae025ebe586ebbc845ea85de2e718d142e5",
       "size": 134
+    },
+    {
+      "file": "mihomo/tencent/tencentvideo/tencentvideo.yaml",
+      "kind": "client_rules",
+      "rule_count": 51,
+      "scope": "mihomo",
+      "sha256": "3c86d1ec8ae3a5ea8caf1894b348343ef75ab33f99f866146d79ed7d07346da2",
+      "size": 1928
+    },
+    {
+      "file": "mihomo/tencent/wechat/wechat.yaml",
+      "kind": "client_rules",
+      "rule_count": 30,
+      "scope": "mihomo",
+      "sha256": "2eb98ffa54787fec5628a3b3a47e57463c41aeb1189343fc1163b5fac5b959c5",
+      "size": 946
     },
     {
       "file": "mihomo/tencent/wecom/wecom.yaml",
@@ -7406,16 +8366,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "48a08fddd2786a9a9860948faa6c190155ad437a85a3350da4718e254d1e952f",
-      "size": 386893
+      "sha256": "585d33b68c4dfb3c2cedb40e7dd0b7f7fc0d538c465c8b6785abbecb0b0fbc95",
+      "size": 386923
     },
     {
       "file": "provider/aws_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 11251,
+      "rule_count": 11252,
       "scope": "provider",
-      "sha256": "347ab15c71bc2ab47f2a9afa2ca8ada62d16673c9b173c9fba2f88a56ed4f416",
-      "size": 480841
+      "sha256": "1858e9d02346bfd6ee6649c0d3855ed5b86be269c9af6b37a0d72cf805d0f655",
+      "size": 480880
     },
     {
       "file": "provider/cloudflare.txt",
@@ -7454,8 +8414,8 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "d09881faf6fe0894eda53773be79ed9bf7513260a54d02b091a591a22f8f9ce8",
-      "size": 4595
+      "sha256": "4a4fc38d40fd9c392ed676f5699f39b3fd9b0bed290bdef250d6dd34bec5e90f",
+      "size": 4594
     },
     {
       "file": "provider/goog_mihomo.list",
@@ -7470,8 +8430,8 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "2ecb4ce189d0bb9039cf488cdb642aece232a91afcff412b42d5c5bf8c13c805",
-      "size": 36972
+      "sha256": "90b2aa4c701dee57aaafa80b513537c6af73684fba908a9f93a99067a35b28ad",
+      "size": 36971
     },
     {
       "file": "provider/googlecloud_mihomo.list",
@@ -7572,10 +8532,10 @@
     {
       "file": "quantumultx/alibaba/1688/1688.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 2,
       "scope": "quantumultx",
-      "sha256": "93b00530ac875d14c54300a5c43b4d3af79843259237dc3f558cdb52ead59166",
-      "size": 33
+      "sha256": "f8fdf70d2abcd57ecf0c0ca403fcbf5af9d32e5d8698636cbda487a23143be84",
+      "size": 62
     },
     {
       "file": "quantumultx/alibaba/alibaba/alibaba.list",
@@ -7584,6 +8544,14 @@
       "scope": "quantumultx",
       "sha256": "deea6e1b3695aeec8919da966f4596794f00b54ead36ea77c836867deb12d213",
       "size": 20456
+    },
+    {
+      "file": "quantumultx/alibaba/alibabacloud/alibabacloud.list",
+      "kind": "client_rules",
+      "rule_count": 100,
+      "scope": "quantumultx",
+      "sha256": "62f6ce98e84b250c95673d6490ac98a94b5c332d0735424763a82d8df4a06b28",
+      "size": 4050
     },
     {
       "file": "quantumultx/alibaba/alipay/alipay.list",
@@ -7708,18 +8676,34 @@
     {
       "file": "quantumultx/anthropic/anthropic_aggregate/anthropic_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 9,
+      "rule_count": 10,
       "scope": "quantumultx",
-      "sha256": "07e236d886e60a4e5efd6b2cff4d685a4735d937b0f85731efb7586c34fa6f71",
-      "size": 347
+      "sha256": "0276c20822e66d3aa42fe66688cb145b333462d9a8f4d249d19a023e2221b01d",
+      "size": 378
+    },
+    {
+      "file": "quantumultx/anthropic/claude/claude.list",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "quantumultx",
+      "sha256": "a33c086bcc9bc4d95263cdf633bbf7b88bc1b67ed5d4278a5590d4fee25315ac",
+      "size": 95
     },
     {
       "file": "quantumultx/apple/apple/apple.list",
       "kind": "client_rules",
-      "rule_count": 2015,
+      "rule_count": 2037,
       "scope": "quantumultx",
-      "sha256": "2ba568fce2ea955a88fa60f1fd535973bec776ad405db3a58f277bf1939d0817",
-      "size": 77990
+      "sha256": "c95b2f0a729df538263cd0669ad49d33f024fb283bced1aac2b88944762b48b1",
+      "size": 78764
+    },
+    {
+      "file": "quantumultx/apple/appledev/appledev.list",
+      "kind": "client_rules",
+      "rule_count": 80,
+      "scope": "quantumultx",
+      "sha256": "ac4c1eb11563556e002980f926ace41f2b544ace106699c7aecad869af937602",
+      "size": 3244
     },
     {
       "file": "quantumultx/apple/applefirmware/applefirmware.list",
@@ -7746,12 +8730,44 @@
       "size": 71
     },
     {
+      "file": "quantumultx/apple/applemusic/applemusic.list",
+      "kind": "client_rules",
+      "rule_count": 9,
+      "scope": "quantumultx",
+      "sha256": "6793ed65d64f1a0ef5a5144d29ccdba33ea7fe7c73946a0b3f44dd7c17af0254",
+      "size": 339
+    },
+    {
       "file": "quantumultx/apple/appletv/appletv.list",
       "kind": "client_rules",
-      "rule_count": 7,
+      "rule_count": 14,
       "scope": "quantumultx",
-      "sha256": "ddcb54f4b4a6aa8ef447cbbb7275839af0cde0c5b95aa25f339cde87154eae36",
-      "size": 294
+      "sha256": "e0206da286c1bad4846a27f1058419396f23ffbf336a37e0c911c0e3c76f930f",
+      "size": 546
+    },
+    {
+      "file": "quantumultx/apple/appstore/appstore.list",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "quantumultx",
+      "sha256": "5b652fd33d2b0ded89198f9686aaaa039918210cf24f05aedb509c705edc765e",
+      "size": 58
+    },
+    {
+      "file": "quantumultx/apple/findmy/findmy.list",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "quantumultx",
+      "sha256": "f49652adc0d7696a4ec35da264370354b2121ae760d86a32f02f3b72347b3707",
+      "size": 101
+    },
+    {
+      "file": "quantumultx/apple/icloud/icloud.list",
+      "kind": "client_rules",
+      "rule_count": 167,
+      "scope": "quantumultx",
+      "sha256": "a48ca42fce5135e72169ace7448a548ed2656104bddf06ce2d7c45d084a8ab97",
+      "size": 5595
     },
     {
       "file": "quantumultx/apple/icloudprivaterelay/icloudprivaterelay.list",
@@ -7760,6 +8776,14 @@
       "scope": "quantumultx",
       "sha256": "5a10d4d1c4e98ab0c720fd649f186f5a1a0defd32243198f2f9af720c96481d8",
       "size": 213
+    },
+    {
+      "file": "quantumultx/apple/testflight/testflight.list",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "quantumultx",
+      "sha256": "4857deed7c441d12d85ec01676bd080a3a1edb1644c56e93bd7980b4f3ba38ad",
+      "size": 94
     },
     {
       "file": "quantumultx/atlassian/atlassian/atlassian.list",
@@ -7796,10 +8820,10 @@
     {
       "file": "quantumultx/baidu/baidu/baidu.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 325,
       "scope": "quantumultx",
-      "sha256": "74827c58ff080f920060801334473bf5729aac3d8a90cfd3efe1769ef56f2ff0",
-      "size": 76
+      "sha256": "e49a99467cf6113fa7f839da25504430d1672fb46197921d4b73141eb473c3c5",
+      "size": 11015
     },
     {
       "file": "quantumultx/baidu/baidunetdisk/baidunetdisk.list",
@@ -7940,18 +8964,34 @@
     {
       "file": "quantumultx/bytedance/bytedance/bytedance.list",
       "kind": "client_rules",
-      "rule_count": 1087,
+      "rule_count": 1100,
       "scope": "quantumultx",
-      "sha256": "9b8f5b99eb4d255fa6b6ea92e1a543fa0a45931fa05900189acd7e6d72f03cce",
-      "size": 38206
+      "sha256": "67572d5725b3ac8bc1a64fea14487069b2685255318b718108f1dad32650f992",
+      "size": 38681
     },
     {
       "file": "quantumultx/bytedance/doubao/doubao.list",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 36,
       "scope": "quantumultx",
-      "sha256": "1c32a1a5131850eda27c2dae0a98fe9e791fee1395ce03d84ac36ec2e81d1df2",
-      "size": 157
+      "sha256": "1fdfb72ee9ba4c07de6ac4ce468641a8bd439536308ebb89deb9ee58dbc667f4",
+      "size": 1240
+    },
+    {
+      "file": "quantumultx/bytedance/douyin/douyin.list",
+      "kind": "client_rules",
+      "rule_count": 90,
+      "scope": "quantumultx",
+      "sha256": "a659685d446c148ee4244959640af377e40580817f9773cb45a91108712cf31e",
+      "size": 3120
+    },
+    {
+      "file": "quantumultx/bytedance/tiktok/tiktok.list",
+      "kind": "client_rules",
+      "rule_count": 117,
+      "scope": "quantumultx",
+      "sha256": "967d91436e3fb305aa6d03f3ac58748603b3498d098a61de52f315e5e081d4fd",
+      "size": 4317
     },
     {
       "file": "quantumultx/canva/canva/canva.list",
@@ -7980,10 +9020,10 @@
     {
       "file": "quantumultx/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128684,
+      "rule_count": 129180,
       "scope": "quantumultx",
-      "sha256": "10a31ca6af46d8c95302ee47cef287718259985b2093fcdd1e0f83a7e168266a",
-      "size": 4254943
+      "sha256": "85072b77cbbda9273619a3e7353a8cfcbeea21a3b77285f2784fb4f4a540bf85",
+      "size": 4272731
     },
     {
       "file": "quantumultx/ccb/ccb/ccb.list",
@@ -8036,10 +9076,10 @@
     {
       "file": "quantumultx/china/china.list",
       "kind": "client_rules",
-      "rule_count": 109963,
+      "rule_count": 109751,
       "scope": "quantumultx",
-      "sha256": "09b75384ed54a4bd81d96fc08c83e37a8cfe4038951ffc9c5715b4381b1ecc4b",
-      "size": 3591749
+      "sha256": "07b8c2f9ab55968c47584068fa349b9129e8229a04a28471ee15a1b4007a2068",
+      "size": 3584686
     },
     {
       "file": "quantumultx/chinamobile/chinamobile/chinamobile.list",
@@ -8146,6 +9186,22 @@
       "size": 130
     },
     {
+      "file": "quantumultx/deepseek/deepseek/deepseek.list",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "quantumultx",
+      "sha256": "f996bdc73841f2d8ce1373d26845e4dfb7f9633600bf6a907be0124263d27109",
+      "size": 138
+    },
+    {
+      "file": "quantumultx/deepseek/deepseek_aggregate/deepseek_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "quantumultx",
+      "sha256": "85a54543712a9f01aaf263b37485e9a6f5977c9e44a5b530afc10aa5b3c842c9",
+      "size": 69
+    },
+    {
       "file": "quantumultx/dewu/dewu/dewu.list",
       "kind": "client_rules",
       "rule_count": 45,
@@ -8192,6 +9248,22 @@
       "scope": "quantumultx",
       "sha256": "f9e5ff9003edf3d47bf33b74e25049a4e3784f11d84a257db81c398f51f84e5b",
       "size": 220
+    },
+    {
+      "file": "quantumultx/discord/discord/discord.list",
+      "kind": "client_rules",
+      "rule_count": 63,
+      "scope": "quantumultx",
+      "sha256": "3940ad9edaef475e074a24ddc504cbebd1f861a3f47955a66bf801d6e58f4452",
+      "size": 2334
+    },
+    {
+      "file": "quantumultx/discord/discord_aggregate/discord_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 31,
+      "scope": "quantumultx",
+      "sha256": "0228b4d47ec9251ff48b083bd65fa04de5022e3848e80617234c2ac84a9a1a8d",
+      "size": 1205
     },
     {
       "file": "quantumultx/disney/disney/disney.list",
@@ -8396,18 +9468,26 @@
     {
       "file": "quantumultx/google/firebase/firebase.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 25,
       "scope": "quantumultx",
-      "sha256": "fafc6fac9b7b1ea42c37cb0cfa900899b694c95199ec15d9a78a7ab05a034460",
-      "size": 88
+      "sha256": "27b9105a665db7fd8862a8a750f0c68fb78e3ce028b48deda3ca3ccc49f99cdf",
+      "size": 1210
+    },
+    {
+      "file": "quantumultx/google/gemini/gemini.list",
+      "kind": "client_rules",
+      "rule_count": 13,
+      "scope": "quantumultx",
+      "sha256": "9c01f38504432f4c3df630085c5982adff9c1fb657adeda68a579812b5dae05a",
+      "size": 495
     },
     {
       "file": "quantumultx/google/google/google.list",
       "kind": "client_rules",
-      "rule_count": 1469,
+      "rule_count": 1525,
       "scope": "quantumultx",
-      "sha256": "b00d1dc03692f8256886c1bf1f2158aa99b22911566508a2d90189f00b8a6bcc",
-      "size": 51711
+      "sha256": "cf4e5c9ed9a4bc8d04fd9dd9ad2a02b679e60e995fe10deb57328634e2b752af",
+      "size": 53708
     },
     {
       "file": "quantumultx/google/google-search/google-search.list",
@@ -8436,10 +9516,10 @@
     {
       "file": "quantumultx/google/googlefcm/googlefcm.list",
       "kind": "client_rules",
-      "rule_count": 13,
+      "rule_count": 95,
       "scope": "quantumultx",
-      "sha256": "ce563c7fdabf600c1031bfcbecd471a4fe9eb0ccf8b8cfe6ca91f0da49ec4a2c",
-      "size": 541
+      "sha256": "20439b9cd70b3642a4f264e6b133625ba172b14ba3d4d3f804ed071c097758e2",
+      "size": 3411
     },
     {
       "file": "quantumultx/google/googlevoice/googlevoice.list",
@@ -8456,6 +9536,30 @@
       "scope": "quantumultx",
       "sha256": "63a9c752c0118fd116b366cddcc026cdc202a30cdd681bdbd14745a32234b097",
       "size": 10342
+    },
+    {
+      "file": "quantumultx/google/youtube/youtube.list",
+      "kind": "client_rules",
+      "rule_count": 703,
+      "scope": "quantumultx",
+      "sha256": "e1eb03f716fd968930e3103d0f747e308e2fa855eabb8041a6f8878508847f6d",
+      "size": 23426
+    },
+    {
+      "file": "quantumultx/groq/groq/groq.list",
+      "kind": "client_rules",
+      "rule_count": 1,
+      "scope": "quantumultx",
+      "sha256": "da666a5f7e9258f4b35d36f6d6d8f06fe53d9ba2e9548257fcfab28a308c94ca",
+      "size": 29
+    },
+    {
+      "file": "quantumultx/groq/groq_aggregate/groq_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 1,
+      "scope": "quantumultx",
+      "sha256": "da666a5f7e9258f4b35d36f6d6d8f06fe53d9ba2e9548257fcfab28a308c94ca",
+      "size": 29
     },
     {
       "file": "quantumultx/hbo/hbo/hbo.list",
@@ -8504,6 +9608,22 @@
       "scope": "quantumultx",
       "sha256": "f3459fe3d337f67b434cc68b837f86768e56e63d47459d9f0c3da4b6c9cc9b61",
       "size": 14508
+    },
+    {
+      "file": "quantumultx/huggingface/huggingface/huggingface.list",
+      "kind": "client_rules",
+      "rule_count": 6,
+      "scope": "quantumultx",
+      "sha256": "9d5adc1e92f92f9be798ca36a7c4c0aa078d32a6b03478c30bfc2b6d9c4f20b0",
+      "size": 180
+    },
+    {
+      "file": "quantumultx/huggingface/huggingface_aggregate/huggingface_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "quantumultx",
+      "sha256": "998b1d67760abee16adf40d5cf85ef4ef851595b6d36ec7cf8ab09e2581bdef7",
+      "size": 90
     },
     {
       "file": "quantumultx/huya/huya/huya.list",
@@ -8730,6 +9850,14 @@
       "size": 5693
     },
     {
+      "file": "quantumultx/meta/messenger/messenger.list",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "quantumultx",
+      "sha256": "47d2863f628ab668918a20f8382ba8f6b9f71d2b715cc90b6d72c0d63af256d6",
+      "size": 126
+    },
+    {
       "file": "quantumultx/meta/meta/meta.list",
       "kind": "client_rules",
       "rule_count": 596,
@@ -8754,12 +9882,28 @@
       "size": 1457
     },
     {
+      "file": "quantumultx/microsoft/azure/azure.list",
+      "kind": "client_rules",
+      "rule_count": 151,
+      "scope": "quantumultx",
+      "sha256": "713d7d975704efcfcddd1dda841e6733f8e74f3d91ff977ed407236ac7744598",
+      "size": 5568
+    },
+    {
+      "file": "quantumultx/microsoft/copilot/copilot.list",
+      "kind": "client_rules",
+      "rule_count": 49,
+      "scope": "quantumultx",
+      "sha256": "ffcb6c804e18629a697fc1506adf59532fc289cc8e3aa4d259f41600ebac0016",
+      "size": 1834
+    },
+    {
       "file": "quantumultx/microsoft/github/github.list",
       "kind": "client_rules",
-      "rule_count": 29,
+      "rule_count": 179,
       "scope": "quantumultx",
-      "sha256": "7d6b5553c4d8a1a7c92ee8c0a9fc2adb98d54d7388d487458ac57c6830cc4d91",
-      "size": 1048
+      "sha256": "7de3d60f524a6b43225165c939b60bee10f593dfc06879236572e9c4c147e821",
+      "size": 7833
     },
     {
       "file": "quantumultx/microsoft/linkedin/linkedin.list",
@@ -8772,10 +9916,10 @@
     {
       "file": "quantumultx/microsoft/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 991,
+      "rule_count": 1054,
       "scope": "quantumultx",
-      "sha256": "7afc4d914f2623f165f15a5e4edffdd4256a95c628c1b43c34566135ccf65ff1",
-      "size": 39240
+      "sha256": "0148cadb16bb2bd7878ec307091cf7b6cef2f71510b267f334f0b6a6afe41f56",
+      "size": 41585
     },
     {
       "file": "quantumultx/microsoft/microsoftedge/microsoftedge.list",
@@ -8794,6 +9938,30 @@
       "size": 448
     },
     {
+      "file": "quantumultx/microsoft/onedrive/onedrive.list",
+      "kind": "client_rules",
+      "rule_count": 16,
+      "scope": "quantumultx",
+      "sha256": "8e2155ff537760216ad2ae6579e08aea8ae07e1dd4c85add939f66a22076ae05",
+      "size": 583
+    },
+    {
+      "file": "quantumultx/microsoft/teams/teams.list",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "quantumultx",
+      "sha256": "22695efb846f04d57e2a8c2a7dc64dfe76fabab9889a0315e1ae15331d374e38",
+      "size": 159
+    },
+    {
+      "file": "quantumultx/microsoft/xbox/xbox.list",
+      "kind": "client_rules",
+      "rule_count": 42,
+      "scope": "quantumultx",
+      "sha256": "758854bc28fdae528964676fe9273d6c582e5878b41c25107bce19ec09555569",
+      "size": 1462
+    },
+    {
       "file": "quantumultx/netease/netease/netease.list",
       "kind": "client_rules",
       "rule_count": 96,
@@ -8808,6 +9976,22 @@
       "scope": "quantumultx",
       "sha256": "e62f1e3642954bcdfdb6730934b4b49d3ea7c8c31751562017275e01dcfd5eba",
       "size": 540
+    },
+    {
+      "file": "quantumultx/netflix/netflix/netflix.list",
+      "kind": "client_rules",
+      "rule_count": 92,
+      "scope": "quantumultx",
+      "sha256": "fa8b48e80dd3149d8e1fc27add5a5b0cc41edd25c8f4303fde02513e40f502aa",
+      "size": 3383
+    },
+    {
+      "file": "quantumultx/netflix/netflix_aggregate/netflix_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 37,
+      "scope": "quantumultx",
+      "sha256": "d48b358ca21b70c097fc03636460854cef1b18230a76360366c4804792736c25",
+      "size": 1391
     },
     {
       "file": "quantumultx/netlify/netlify/netlify.list",
@@ -8890,6 +10074,22 @@
       "size": 171
     },
     {
+      "file": "quantumultx/openai/openai/openai.list",
+      "kind": "client_rules",
+      "rule_count": 78,
+      "scope": "quantumultx",
+      "sha256": "0c8a18a9c115edcf9b79515642a067802dea3ecc17d1664819e62f0f3b64e09d",
+      "size": 3112
+    },
+    {
+      "file": "quantumultx/openai/openai_aggregate/openai_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 52,
+      "scope": "quantumultx",
+      "sha256": "ba2cdac134fdcfbcf50dc9e78e9745044f8adb13f193373b30d382e92b336fdd",
+      "size": 2087
+    },
+    {
       "file": "quantumultx/oppo/oppo/oppo.list",
       "kind": "client_rules",
       "rule_count": 56,
@@ -8936,6 +10136,22 @@
       "scope": "quantumultx",
       "sha256": "80fefac88af5d641e11e52e122f6b7ab47f6cc7419c7255712b81db919f781a7",
       "size": 9127
+    },
+    {
+      "file": "quantumultx/perplexity/perplexity/perplexity.list",
+      "kind": "client_rules",
+      "rule_count": 10,
+      "scope": "quantumultx",
+      "sha256": "fedf8d2d4114bdde8665486c5a479528c47bd4a9cfb22e5b9c017dfdb74fe0fa",
+      "size": 380
+    },
+    {
+      "file": "quantumultx/perplexity/perplexity_aggregate/perplexity_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 7,
+      "scope": "quantumultx",
+      "sha256": "bd3530d4965add39cdef6cd424d9c578dfb596d6c0de54ffe7fd786fa5ec3c9d",
+      "size": 283
     },
     {
       "file": "quantumultx/pinduoduo/pinduoduo/pinduoduo.list",
@@ -9066,6 +10282,22 @@
       "size": 1979
     },
     {
+      "file": "quantumultx/roblox/roblox/roblox.list",
+      "kind": "client_rules",
+      "rule_count": 96,
+      "scope": "quantumultx",
+      "sha256": "5f91d30565583061d7106b5fdb184f6cb327bed21140c362935b8704ebc8e78a",
+      "size": 3198
+    },
+    {
+      "file": "quantumultx/roblox/roblox_aggregate/roblox_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 52,
+      "scope": "quantumultx",
+      "sha256": "b5f6ccaad580e2ed72042ed271466ed3dcf4f0637670b4719993821b062f00d5",
+      "size": 1814
+    },
+    {
       "file": "quantumultx/rockstar/rockstar/rockstar.list",
       "kind": "client_rules",
       "rule_count": 5,
@@ -9120,6 +10352,22 @@
       "scope": "quantumultx",
       "sha256": "b688151fe6ba049644f9dd4baadf1280ff921c7be461577a41eea6797c054778",
       "size": 272
+    },
+    {
+      "file": "quantumultx/signal/signal/signal.list",
+      "kind": "client_rules",
+      "rule_count": 16,
+      "scope": "quantumultx",
+      "sha256": "61954711d7259eda30b707dc047b91067a152b9a251fdd6c75697351f5202129",
+      "size": 528
+    },
+    {
+      "file": "quantumultx/signal/signal_aggregate/signal_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 8,
+      "scope": "quantumultx",
+      "sha256": "6cdf070f545ef641d8e3707945f8aff4e9d1fc3df3316d81a7938da6a66b439c",
+      "size": 264
     },
     {
       "file": "quantumultx/snap/snap/snap.list",
@@ -9266,6 +10514,22 @@
       "size": 28
     },
     {
+      "file": "quantumultx/telegram/telegram/telegram.list",
+      "kind": "client_rules",
+      "rule_count": 88,
+      "scope": "quantumultx",
+      "sha256": "2c750dd51e5901744ec7ebedbc8f84536fe9920103f107a6000e912fc6b1f0b2",
+      "size": 2811
+    },
+    {
+      "file": "quantumultx/telegram/telegram_aggregate/telegram_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 51,
+      "scope": "quantumultx",
+      "sha256": "ea05f6994c38f5377bc079a86037f64270ae5a5f36fe4ffdae306ea2e8398f01",
+      "size": 1630
+    },
+    {
       "file": "quantumultx/tencent/qqmail/qqmail.list",
       "kind": "client_rules",
       "rule_count": 1,
@@ -9284,10 +10548,10 @@
     {
       "file": "quantumultx/tencent/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 819,
+      "rule_count": 889,
       "scope": "quantumultx",
-      "sha256": "e7df6959895fa5eb917502b2b95370cb300f0cb202bc8dc00ee37fb0db8e022e",
-      "size": 28086
+      "sha256": "30077ce25ed1fb3bb6353f82ce065b81054e89a293a102f0f2ae960763281179",
+      "size": 30812
     },
     {
       "file": "quantumultx/tencent/tencentcloud/tencentcloud.list",
@@ -9304,6 +10568,22 @@
       "scope": "quantumultx",
       "sha256": "72ddc48c4f66b1fefe9455e9a0a678151ae7326c0b61b11dfa6d4871104e5768",
       "size": 131
+    },
+    {
+      "file": "quantumultx/tencent/tencentvideo/tencentvideo.list",
+      "kind": "client_rules",
+      "rule_count": 51,
+      "scope": "quantumultx",
+      "sha256": "79e8040cf49816ad706a40234e24ace14575300aaf50d30259e801ba7df48fe3",
+      "size": 2085
+    },
+    {
+      "file": "quantumultx/tencent/wechat/wechat.list",
+      "kind": "client_rules",
+      "rule_count": 30,
+      "scope": "quantumultx",
+      "sha256": "0c06b2610feb7119d1e8cf67f755514b87881e215964777a8c92088f1661f777",
+      "size": 997
     },
     {
       "file": "quantumultx/tencent/wecom/wecom.list",
@@ -9668,10 +10948,10 @@
     {
       "file": "shadowrocket/alibaba/1688/1688.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 2,
       "scope": "shadowrocket",
-      "sha256": "1904aba10d8aebcb3d74b8fa4f41edf2670349370e09428a68d9f68c1e3f467a",
-      "size": 27
+      "sha256": "070c60ab074ac79fd288a4bf1e83f297696792be169a2a5442b74223c0154542",
+      "size": 50
     },
     {
       "file": "shadowrocket/alibaba/alibaba/alibaba.list",
@@ -9680,6 +10960,14 @@
       "scope": "shadowrocket",
       "sha256": "2120d97d23d48702d779e23ba48733162c8c4d7dcf08596ae5a88687a67cdbbc",
       "size": 16808
+    },
+    {
+      "file": "shadowrocket/alibaba/alibabacloud/alibabacloud.list",
+      "kind": "client_rules",
+      "rule_count": 100,
+      "scope": "shadowrocket",
+      "sha256": "64f243d43b985d78240521753b543bb01a540df9e262433e7f64a21993a75560",
+      "size": 3450
     },
     {
       "file": "shadowrocket/alibaba/alipay/alipay.list",
@@ -9804,18 +11092,34 @@
     {
       "file": "shadowrocket/anthropic/anthropic_aggregate/anthropic_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 9,
+      "rule_count": 10,
       "scope": "shadowrocket",
-      "sha256": "3138a28adfae2ae9280dbc69687b8d90ecb00081c3e1c2c2c4f488f10613f5bd",
-      "size": 293
+      "sha256": "a8da6661019ee9abd262f548394096d39e06f336603c87e8c263011df9421bc1",
+      "size": 318
+    },
+    {
+      "file": "shadowrocket/anthropic/claude/claude.list",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "shadowrocket",
+      "sha256": "e22906098a08537bca78fe642e8dcf401700595c436d131bfdbb9f446c58e19b",
+      "size": 77
     },
     {
       "file": "shadowrocket/apple/apple/apple.list",
       "kind": "client_rules",
-      "rule_count": 2015,
+      "rule_count": 2037,
       "scope": "shadowrocket",
-      "sha256": "ae5a234ff9ad30ae2ca4fb9bd923b000949f313116c7b437791024af28afe84d",
-      "size": 65874
+      "sha256": "16d836f12b793d1657949811613c749de16147591f26ff141ff58beeb4e18517",
+      "size": 66516
+    },
+    {
+      "file": "shadowrocket/apple/appledev/appledev.list",
+      "kind": "client_rules",
+      "rule_count": 80,
+      "scope": "shadowrocket",
+      "sha256": "6eac4689ec08fefa1525f3639546f6a5457cebdb05525308db94c09ecf70a55c",
+      "size": 2764
     },
     {
       "file": "shadowrocket/apple/applefirmware/applefirmware.list",
@@ -9842,12 +11146,44 @@
       "size": 59
     },
     {
+      "file": "shadowrocket/apple/applemusic/applemusic.list",
+      "kind": "client_rules",
+      "rule_count": 9,
+      "scope": "shadowrocket",
+      "sha256": "72f48e8f04d62a2395435aadc76ac6664e88918358e988e85113c30b74839f3d",
+      "size": 285
+    },
+    {
       "file": "shadowrocket/apple/appletv/appletv.list",
       "kind": "client_rules",
-      "rule_count": 7,
+      "rule_count": 14,
       "scope": "shadowrocket",
-      "sha256": "77616b096395fbee12c0d51e6cb284dfc6accc40a675e68c6cfdecb0f6622738",
-      "size": 252
+      "sha256": "ad2f56c634f94db81170603cb53171eea567cb83eda697f38ba71a4881d0614b",
+      "size": 462
+    },
+    {
+      "file": "shadowrocket/apple/appstore/appstore.list",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "shadowrocket",
+      "sha256": "20062ff2d80616e5fbdb360b54c8a9f184e8ec5be47601a4dd79345e8892ec4f",
+      "size": 46
+    },
+    {
+      "file": "shadowrocket/apple/findmy/findmy.list",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "shadowrocket",
+      "sha256": "5b265680521a97c68c0bc4ccd06c64aee3aa935074caf85df0e33d26f4c9c98d",
+      "size": 83
+    },
+    {
+      "file": "shadowrocket/apple/icloud/icloud.list",
+      "kind": "client_rules",
+      "rule_count": 167,
+      "scope": "shadowrocket",
+      "sha256": "d25077c72fcd4fa429df156ad9be9c8b73c1f67391fd8c02d56021d63f2a649d",
+      "size": 4593
     },
     {
       "file": "shadowrocket/apple/icloudprivaterelay/icloudprivaterelay.list",
@@ -9856,6 +11192,14 @@
       "scope": "shadowrocket",
       "sha256": "bf918251648db75d5218ce67d009fbcf3de10dd6a74f596b67dfa869218bd494",
       "size": 177
+    },
+    {
+      "file": "shadowrocket/apple/testflight/testflight.list",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "shadowrocket",
+      "sha256": "cb0c1488da836ff8c3bae8044d596556845fbb184e442bfc41235b5bb6b2d8dd",
+      "size": 76
     },
     {
       "file": "shadowrocket/atlassian/atlassian/atlassian.list",
@@ -9892,10 +11236,10 @@
     {
       "file": "shadowrocket/baidu/baidu/baidu.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 325,
       "scope": "shadowrocket",
-      "sha256": "88bc62517ed3c058d30f3d0d92d818a9c4d614b0c8d02a9220f1614f3c25b271",
-      "size": 64
+      "sha256": "bede901474798922f221e3eac3e13d6a3e70c66c539dca90bd907cd7b4fc332b",
+      "size": 9065
     },
     {
       "file": "shadowrocket/baidu/baidunetdisk/baidunetdisk.list",
@@ -10036,18 +11380,34 @@
     {
       "file": "shadowrocket/bytedance/bytedance/bytedance.list",
       "kind": "client_rules",
-      "rule_count": 1087,
+      "rule_count": 1100,
       "scope": "shadowrocket",
-      "sha256": "3aafb86b4f0915f07ada7f6f83fa9cfb9deb76ad5807a9f7bd6f7c577b589f6e",
-      "size": 31682
+      "sha256": "ea2e64ce6c50a46c6dc4c39271b81b3cc6483bfbbc20e6e99000ef25e1f3e8c4",
+      "size": 32079
     },
     {
       "file": "shadowrocket/bytedance/doubao/doubao.list",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 36,
       "scope": "shadowrocket",
-      "sha256": "2ddcdb67d2b9bf06ee5d6c390f8a5092516c4cd7c4ee4ce257751606a55c9522",
-      "size": 133
+      "sha256": "0e17d10dcc489024ca1b0f2f9f326f896b062d84cdb66e54d5a1d4f4338fafd8",
+      "size": 1024
+    },
+    {
+      "file": "shadowrocket/bytedance/douyin/douyin.list",
+      "kind": "client_rules",
+      "rule_count": 90,
+      "scope": "shadowrocket",
+      "sha256": "e93924fbd9d5a1103890e8774ff63a7136582c57314c186462276ef21381c40d",
+      "size": 2580
+    },
+    {
+      "file": "shadowrocket/bytedance/tiktok/tiktok.list",
+      "kind": "client_rules",
+      "rule_count": 117,
+      "scope": "shadowrocket",
+      "sha256": "52ef0d87f2fb14d14b50ee78830a21cbcbec4010b608f50cd219c3a3658faf36",
+      "size": 3615
     },
     {
       "file": "shadowrocket/canva/canva/canva.list",
@@ -10076,10 +11436,10 @@
     {
       "file": "shadowrocket/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128684,
+      "rule_count": 129180,
       "scope": "shadowrocket",
-      "sha256": "4528f290ba6a917349f9800444b4d5668a938a222a762a783f0e5ced4471bd5e",
-      "size": 3482011
+      "sha256": "78434f6f5dff8fc374b8607e685baa7f1c4cbf1e678e3fe1dfda78f1b02cdd1a",
+      "size": 3496659
     },
     {
       "file": "shadowrocket/ccb/ccb/ccb.list",
@@ -10132,10 +11492,10 @@
     {
       "file": "shadowrocket/china/china.list",
       "kind": "client_rules",
-      "rule_count": 109963,
+      "rule_count": 109751,
       "scope": "shadowrocket",
-      "sha256": "5d9b9ce2cd5075eb4e614822ac70b133fbb3fffbd56f8ca1e822532e75b1f35e",
-      "size": 2931971
+      "sha256": "c12335c57213d7c3dd5227a2c8da3592356a8720cc643836c6feef2aeb34575f",
+      "size": 2926180
     },
     {
       "file": "shadowrocket/chinamobile/chinamobile/chinamobile.list",
@@ -10242,6 +11602,22 @@
       "size": 106
     },
     {
+      "file": "shadowrocket/deepseek/deepseek/deepseek.list",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "shadowrocket",
+      "sha256": "586155a8c5c3d31bedcc56930f0df5ba568afd79d554d07f583bcd703a828112",
+      "size": 114
+    },
+    {
+      "file": "shadowrocket/deepseek/deepseek_aggregate/deepseek_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "shadowrocket",
+      "sha256": "b2f3915a8bbd3438f363af5082248801e41bb6b28503eddce4605593159e5eb1",
+      "size": 57
+    },
+    {
       "file": "shadowrocket/dewu/dewu/dewu.list",
       "kind": "client_rules",
       "rule_count": 45,
@@ -10288,6 +11664,22 @@
       "scope": "shadowrocket",
       "sha256": "2249f4d9d7c087a734121fecc705b64d2436f16c60c51b9f4749b2660d3f58d2",
       "size": 184
+    },
+    {
+      "file": "shadowrocket/discord/discord/discord.list",
+      "kind": "client_rules",
+      "rule_count": 63,
+      "scope": "shadowrocket",
+      "sha256": "29dd0ec2b9d0db0ccebdc04123833a8e1cb76b13cc17c5fd488bcb5aa1a6d8a2",
+      "size": 1956
+    },
+    {
+      "file": "shadowrocket/discord/discord_aggregate/discord_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 31,
+      "scope": "shadowrocket",
+      "sha256": "a5f989b2ce7bef10511f4203670c2cad213621206d437428221ac8791a24471c",
+      "size": 1019
     },
     {
       "file": "shadowrocket/disney/disney/disney.list",
@@ -10492,18 +11884,26 @@
     {
       "file": "shadowrocket/google/firebase/firebase.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 25,
       "scope": "shadowrocket",
-      "sha256": "0a5a0660d654733603aa9ef67806748c3a28908194512bea34b8f0515040a376",
-      "size": 76
+      "sha256": "362a0ba0179ee3ef811cf00db816646816a512a6ea5dfece103baf3b43da011b",
+      "size": 1060
+    },
+    {
+      "file": "shadowrocket/google/gemini/gemini.list",
+      "kind": "client_rules",
+      "rule_count": 13,
+      "scope": "shadowrocket",
+      "sha256": "605702efe5aec5edb07d1c03174a10157bdd2e9dc4e67fa01e7ad3bd80bd4633",
+      "size": 417
     },
     {
       "file": "shadowrocket/google/google/google.list",
       "kind": "client_rules",
-      "rule_count": 1469,
+      "rule_count": 1525,
       "scope": "shadowrocket",
-      "sha256": "7ec075df8775e23243e175d4aead923a9e31fe484abda4d9a6a3c378c6e38a79",
-      "size": 42887
+      "sha256": "4e32f70be57cc6db770eac9d1aa5e6b7ec058140d278d42df8b969c9c5ec55b6",
+      "size": 44496
     },
     {
       "file": "shadowrocket/google/google-search/google-search.list",
@@ -10532,10 +11932,10 @@
     {
       "file": "shadowrocket/google/googlefcm/googlefcm.list",
       "kind": "client_rules",
-      "rule_count": 13,
+      "rule_count": 95,
       "scope": "shadowrocket",
-      "sha256": "d5416f51714c2a6e111c090136eaf04f90a352fdb549125dfefd63fa89259c85",
-      "size": 463
+      "sha256": "8a10cf6fcd7591ec04983b998c9afd6143161e7dcd5d8192bed58a9e11cbdbdb",
+      "size": 2737
     },
     {
       "file": "shadowrocket/google/googlevoice/googlevoice.list",
@@ -10552,6 +11952,30 @@
       "scope": "shadowrocket",
       "sha256": "ec50c23930c5148ba59cf2ddeec539c6d551ed527b747d472d00d8ede8e56c83",
       "size": 8512
+    },
+    {
+      "file": "shadowrocket/google/youtube/youtube.list",
+      "kind": "client_rules",
+      "rule_count": 703,
+      "scope": "shadowrocket",
+      "sha256": "f88472785334f11f592afdcbb6c1bb4c8734a84de6fed306fce36a6791842493",
+      "size": 19202
+    },
+    {
+      "file": "shadowrocket/groq/groq/groq.list",
+      "kind": "client_rules",
+      "rule_count": 1,
+      "scope": "shadowrocket",
+      "sha256": "c25618d6e673762890944bbccf594711322787bac1820a38e340f48b81fe0c5c",
+      "size": 23
+    },
+    {
+      "file": "shadowrocket/groq/groq_aggregate/groq_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 1,
+      "scope": "shadowrocket",
+      "sha256": "c25618d6e673762890944bbccf594711322787bac1820a38e340f48b81fe0c5c",
+      "size": 23
     },
     {
       "file": "shadowrocket/hbo/hbo/hbo.list",
@@ -10600,6 +12024,22 @@
       "scope": "shadowrocket",
       "sha256": "ff0118db6673896b8d88570ef8a36427087b77953be3d16a6ec53b38033af232",
       "size": 12096
+    },
+    {
+      "file": "shadowrocket/huggingface/huggingface/huggingface.list",
+      "kind": "client_rules",
+      "rule_count": 6,
+      "scope": "shadowrocket",
+      "sha256": "3d2903176228d3e20da3898a4413bc7966b588801b9cd1633417ee414a46c8db",
+      "size": 144
+    },
+    {
+      "file": "shadowrocket/huggingface/huggingface_aggregate/huggingface_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "shadowrocket",
+      "sha256": "1831eaa5d3ab9c3e4fc65c87464e461fac3d597f012b256bbae1d28ea7675553",
+      "size": 72
     },
     {
       "file": "shadowrocket/huya/huya/huya.list",
@@ -10826,6 +12266,14 @@
       "size": 4781
     },
     {
+      "file": "shadowrocket/meta/messenger/messenger.list",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "shadowrocket",
+      "sha256": "09a3b2dc0a2426405bcd2803dfcaf5d32994e5c78967de6f89f16386cc298f45",
+      "size": 102
+    },
+    {
       "file": "shadowrocket/meta/meta/meta.list",
       "kind": "client_rules",
       "rule_count": 596,
@@ -10850,12 +12298,28 @@
       "size": 1177
     },
     {
+      "file": "shadowrocket/microsoft/azure/azure.list",
+      "kind": "client_rules",
+      "rule_count": 151,
+      "scope": "shadowrocket",
+      "sha256": "6d0e42b896a02eadcf35acd25e70e2063618efa810c538a9feb680b8fc495783",
+      "size": 4662
+    },
+    {
+      "file": "shadowrocket/microsoft/copilot/copilot.list",
+      "kind": "client_rules",
+      "rule_count": 49,
+      "scope": "shadowrocket",
+      "sha256": "4831305a8b0bbf9d1996e0d030386e5c5a8069c5a107c3fcfde846cd88f8d87c",
+      "size": 1536
+    },
+    {
       "file": "shadowrocket/microsoft/github/github.list",
       "kind": "client_rules",
-      "rule_count": 29,
+      "rule_count": 179,
       "scope": "shadowrocket",
-      "sha256": "1e777cec08c6d93022edf17978bf59db849c6fd1980b4b23225f7044d371e773",
-      "size": 874
+      "sha256": "0e9478b0914920ed7735d5cf884f02438b1728e662b25158e770f8712bfbe719",
+      "size": 6759
     },
     {
       "file": "shadowrocket/microsoft/linkedin/linkedin.list",
@@ -10868,10 +12332,10 @@
     {
       "file": "shadowrocket/microsoft/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 991,
+      "rule_count": 1054,
       "scope": "shadowrocket",
-      "sha256": "cb03352dbe1f8975fe8fee881ff0457ebdcc02db85a5c6ec3ac378f7d1dd07ec",
-      "size": 33294
+      "sha256": "cfd65fd15ef5e66a2ad127a3765b2b514a6c9bab712c4b878e6efd2d884e299b",
+      "size": 35257
     },
     {
       "file": "shadowrocket/microsoft/microsoftedge/microsoftedge.list",
@@ -10890,6 +12354,30 @@
       "size": 376
     },
     {
+      "file": "shadowrocket/microsoft/onedrive/onedrive.list",
+      "kind": "client_rules",
+      "rule_count": 16,
+      "scope": "shadowrocket",
+      "sha256": "c8f86f71aa796fae87042f301c82219a1acb457e292e98dedfb27e494395cde6",
+      "size": 487
+    },
+    {
+      "file": "shadowrocket/microsoft/teams/teams.list",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "shadowrocket",
+      "sha256": "bd7adf3e7e854122d67b3a9f6295a21b75f54b62be712f71e8448d4b93cac90e",
+      "size": 135
+    },
+    {
+      "file": "shadowrocket/microsoft/xbox/xbox.list",
+      "kind": "client_rules",
+      "rule_count": 42,
+      "scope": "shadowrocket",
+      "sha256": "68fa5f4685fb11dffe637d0e3b0f9b97217e10186e2073834a858bc84b49a80b",
+      "size": 1210
+    },
+    {
       "file": "shadowrocket/netease/netease/netease.list",
       "kind": "client_rules",
       "rule_count": 96,
@@ -10904,6 +12392,22 @@
       "scope": "shadowrocket",
       "sha256": "ce8b995aa786e698fba3c46475eafea704e2daf6a6e19a54d3112f6cd2a0024a",
       "size": 450
+    },
+    {
+      "file": "shadowrocket/netflix/netflix/netflix.list",
+      "kind": "client_rules",
+      "rule_count": 92,
+      "scope": "shadowrocket",
+      "sha256": "26a06e73ad181ea1320e88d9742d04140ba02d72abfb929b283d227887717aea",
+      "size": 2831
+    },
+    {
+      "file": "shadowrocket/netflix/netflix_aggregate/netflix_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 37,
+      "scope": "shadowrocket",
+      "sha256": "2ad5a2972e90618e514391c643eaf73ba67c50344e1b2a1abfe4941ae95d53ea",
+      "size": 1169
     },
     {
       "file": "shadowrocket/netlify/netlify/netlify.list",
@@ -10986,6 +12490,22 @@
       "size": 141
     },
     {
+      "file": "shadowrocket/openai/openai/openai.list",
+      "kind": "client_rules",
+      "rule_count": 78,
+      "scope": "shadowrocket",
+      "sha256": "6fcfb50e1f8a4beeec98cfcb5b4863d0cf65120b66d2f6d665573b1900a7d4ca",
+      "size": 2640
+    },
+    {
+      "file": "shadowrocket/openai/openai_aggregate/openai_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 52,
+      "scope": "shadowrocket",
+      "sha256": "dd26915c63dbc594d18fa1450729c1fb7693611d2b19e5b7dbb425b0d3b56b55",
+      "size": 1771
+    },
+    {
       "file": "shadowrocket/oppo/oppo/oppo.list",
       "kind": "client_rules",
       "rule_count": 56,
@@ -11032,6 +12552,22 @@
       "scope": "shadowrocket",
       "sha256": "d6ca96cc7343b98be5b431dbbeb2e247e48c91ad26c9fbe8ae22bbd962469199",
       "size": 7645
+    },
+    {
+      "file": "shadowrocket/perplexity/perplexity/perplexity.list",
+      "kind": "client_rules",
+      "rule_count": 10,
+      "scope": "shadowrocket",
+      "sha256": "098e266abdcecdc177f251bb6a4d9db59b209d4fb80c953a18bd0c85081c885a",
+      "size": 320
+    },
+    {
+      "file": "shadowrocket/perplexity/perplexity_aggregate/perplexity_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 7,
+      "scope": "shadowrocket",
+      "sha256": "18aa13cf92a8af56fbedb385f8adc42ca13c07c1c69f029ae6a152a9f2ad9e74",
+      "size": 241
     },
     {
       "file": "shadowrocket/pinduoduo/pinduoduo/pinduoduo.list",
@@ -11162,6 +12698,22 @@
       "size": 1649
     },
     {
+      "file": "shadowrocket/roblox/roblox/roblox.list",
+      "kind": "client_rules",
+      "rule_count": 96,
+      "scope": "shadowrocket",
+      "sha256": "3e25711e03406c156ce5597eec31ca2be396e7a377fb0f4f880d95b720c860b8",
+      "size": 2622
+    },
+    {
+      "file": "shadowrocket/roblox/roblox_aggregate/roblox_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 52,
+      "scope": "shadowrocket",
+      "sha256": "e5c55569d86ad4bfd2c278b838c9bb9aa9e31cc2f122d7dbe19b5dfb445efd72",
+      "size": 1502
+    },
+    {
       "file": "shadowrocket/rockstar/rockstar/rockstar.list",
       "kind": "client_rules",
       "rule_count": 5,
@@ -11216,6 +12768,22 @@
       "scope": "shadowrocket",
       "sha256": "5105b789d99fff1c9e857eeea40e7ae63593c2b71e95293382aca0d5aa8fa283",
       "size": 224
+    },
+    {
+      "file": "shadowrocket/signal/signal/signal.list",
+      "kind": "client_rules",
+      "rule_count": 16,
+      "scope": "shadowrocket",
+      "sha256": "e50e139368693270320977e38e8c4312e10384bf1a4fc7257e073e43f965ec88",
+      "size": 432
+    },
+    {
+      "file": "shadowrocket/signal/signal_aggregate/signal_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 8,
+      "scope": "shadowrocket",
+      "sha256": "6735c7557fb210e7a29c69918ea42ddbb39ea7bc995cf8333f0f6c7a5b3c0720",
+      "size": 216
     },
     {
       "file": "shadowrocket/snap/snap/snap.list",
@@ -11362,6 +12930,22 @@
       "size": 22
     },
     {
+      "file": "shadowrocket/telegram/telegram/telegram.list",
+      "kind": "client_rules",
+      "rule_count": 88,
+      "scope": "shadowrocket",
+      "sha256": "23d2b6b1aecffb1f87c333e9824e8d0c4fad22bae00e1c3b8a6d1b89e342c4a1",
+      "size": 2229
+    },
+    {
+      "file": "shadowrocket/telegram/telegram_aggregate/telegram_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 51,
+      "scope": "shadowrocket",
+      "sha256": "f6fd078cf1d63f03119b0d0923f095b474515249fc1df4a92e3c313b228f4677",
+      "size": 1280
+    },
+    {
       "file": "shadowrocket/tencent/qqmail/qqmail.list",
       "kind": "client_rules",
       "rule_count": 1,
@@ -11380,10 +12964,10 @@
     {
       "file": "shadowrocket/tencent/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 819,
+      "rule_count": 889,
       "scope": "shadowrocket",
-      "sha256": "0259e1ba1fe1ad4f6666ae31f4c691670bdb348a26f5891dfe8fa6f8c4744858",
-      "size": 22924
+      "sha256": "037546ec9dc12f7f7aed02b16fe8668bd9547b96535aa40a5a715019a7826525",
+      "size": 25166
     },
     {
       "file": "shadowrocket/tencent/tencentcloud/tencentcloud.list",
@@ -11400,6 +12984,22 @@
       "scope": "shadowrocket",
       "sha256": "38e9aa5e60f537aad392eba3234f1d1adbd63bfa6e027b4d35028fb37f9fa861",
       "size": 113
+    },
+    {
+      "file": "shadowrocket/tencent/tencentvideo/tencentvideo.list",
+      "kind": "client_rules",
+      "rule_count": 51,
+      "scope": "shadowrocket",
+      "sha256": "77a18c40a9d8b694e5281619f6782554808a3a0d1097d1d08ad47881090eb25e",
+      "size": 1715
+    },
+    {
+      "file": "shadowrocket/tencent/wechat/wechat.list",
+      "kind": "client_rules",
+      "rule_count": 30,
+      "scope": "shadowrocket",
+      "sha256": "689ca0c40b16b37352e888e8fdae395a6d6ef8b3e304c399c47d217a377c8cbc",
+      "size": 817
     },
     {
       "file": "shadowrocket/tencent/wecom/wecom.list",
@@ -11766,8 +13366,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "1a023aed9efd90442da80140af164147e31a2050c992a1e6f4da58ed3e7798de",
-      "size": 105
+      "sha256": "53aa9bb843e63dc238fdde160bdde9e11818af6ed8df48e7b049314096b1d193",
+      "size": 125
     },
     {
       "file": "singbox/alibaba/alibaba/alibaba.json",
@@ -11776,6 +13376,14 @@
       "scope": "singbox",
       "sha256": "74da4be42a0181eb1287a8d5447c1ed0cc5cca73d8f3d736c58c44260de8a469",
       "size": 15499
+    },
+    {
+      "file": "singbox/alibaba/alibabacloud/alibabacloud.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "1699969d3d05e93f4dd5ed6d328046d5dbf4fdaf95a354e42ad992d98355b5cd",
+      "size": 3231
     },
     {
       "file": "singbox/alibaba/alipay/alipay.json",
@@ -11902,16 +13510,32 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "34fdcb9c288664bc3f3e5bd93453db8990bcb81681fb27c6f6038a275285e70f",
-      "size": 380
+      "sha256": "6068e2b2660aedf20492e04e875e25f099476181043820f8e55114c1c1088687",
+      "size": 409
+    },
+    {
+      "file": "singbox/anthropic/claude/claude.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "b1f5f8973fd792a7619a3d76db1c01f30c0e330dcbe948f36f1d1b3324d40075",
+      "size": 182
     },
     {
       "file": "singbox/apple/apple/apple.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "ba1816a272f2d8c9019c36676857683df19c823a9b761d8e69e8aa4d6f37df24",
-      "size": 61289
+      "sha256": "90dd3429ef8bbe12cce97eaac75e2c26596223ef312f3d8cf9416431b7190dad",
+      "size": 61998
+    },
+    {
+      "file": "singbox/apple/appledev/appledev.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "2f8dc3a26ea4595ca028b65a649670eaba2a52db0c9b1d3d771a03e0892ea085",
+      "size": 2605
     },
     {
       "file": "singbox/apple/applefirmware/applefirmware.json",
@@ -11938,12 +13562,44 @@
       "size": 134
     },
     {
+      "file": "singbox/apple/applemusic/applemusic.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "8350b700326153a636950ca2336bfb621ab56f208a0398ddb4b112a4b87794f4",
+      "size": 407
+    },
+    {
       "file": "singbox/apple/appletv/appletv.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "1a61a492dde21e2a0919564e64edd8bfd9bb62c886708c64fe0950d9e9eb4259",
-      "size": 312
+      "sha256": "00a63efa3780f182d54b862fc6a3caee981c5a55391fd997aea2e12af7038063",
+      "size": 569
+    },
+    {
+      "file": "singbox/apple/appstore/appstore.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "02cffdc3207de9a615f58d566933fd86437ef3d4f9886602f2f3175082577ce3",
+      "size": 128
+    },
+    {
+      "file": "singbox/apple/findmy/findmy.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "d77e47fe0b839afa64de3d837331dc66c7d013e3cfdbfd21a88e43a74b59f67b",
+      "size": 169
+    },
+    {
+      "file": "singbox/apple/icloud/icloud.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "714608dbd5c36e56ba7b15c3b5fd7d0b33347b74cb84e7e37376975b545dc2ef",
+      "size": 4239
     },
     {
       "file": "singbox/apple/icloudprivaterelay/icloudprivaterelay.json",
@@ -11952,6 +13608,14 @@
       "scope": "singbox",
       "sha256": "487181afc53a66cae440f0de4fe4816499164db300dd4127df2343ce9054e58c",
       "size": 294
+    },
+    {
+      "file": "singbox/apple/testflight/testflight.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "38f1b0f7aa9c3c77240e93180e0e30915331ee15dbd05e52d800d81887b8efbd",
+      "size": 188
     },
     {
       "file": "singbox/atlassian/atlassian/atlassian.json",
@@ -11990,8 +13654,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "3df566deaf78e0964d4581701a81970be27a93d24ff794f3703bfdbf5d092f96",
-      "size": 139
+      "sha256": "91da328586a69a2ac7314193421a2e5d164f21e362f0d8ebedc2719feb778842",
+      "size": 8204
     },
     {
       "file": "singbox/baidu/baidunetdisk/baidunetdisk.json",
@@ -12134,16 +13798,32 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "d0c4080d89d5caaf83b65a686b23516dab08ec598b46f0b737af8d136a1d2aa2",
-      "size": 28610
+      "sha256": "5ca08984e79462538a21bde8700f908a5721398965c740ceffe0455ed392c918",
+      "size": 29035
     },
     {
       "file": "singbox/bytedance/doubao/doubao.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "de8ba490b7ac06377b961f84b33a985e94e492ffcee8f34d89d26f3f50083825",
-      "size": 202
+      "sha256": "5d5426d2bdd3a5b35d86ec06915d19e842ffa30909486da9fbae9303285f04aa",
+      "size": 997
+    },
+    {
+      "file": "singbox/bytedance/douyin/douyin.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "6e12c8e1cc7903d3ac00c094782449ac4d3ddac512c0f0fd83f7fb13b22315ef",
+      "size": 2431
+    },
+    {
+      "file": "singbox/bytedance/tiktok/tiktok.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "f673a73b2b5289f945fff4084f5b762d42b04bccc14bd0c0c36655393d0be2c3",
+      "size": 3473
     },
     {
       "file": "singbox/canva/canva/canva.json",
@@ -12174,8 +13854,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "790d645b6b8499b297789a8a934c3afd8b456bbaac14017f6a8ca86c10ba13b1",
-      "size": 3111122
+      "sha256": "a91fe383c83c7d295f0ee275213ce3ca3dd4fb7192bebfcd49c7e9e08b2c1383",
+      "size": 3125746
     },
     {
       "file": "singbox/ccb/ccb/ccb.json",
@@ -12230,8 +13910,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "2e2844e346e4da4f3385dcaae9c1d3eede6da02706b5adbec1c86dfd1b98f69a",
-      "size": 2602152
+      "sha256": "4876a219846493f1edaefcaad9c04943a93c0d8bc1f34df181100aa154867bfb",
+      "size": 2596998
     },
     {
       "file": "singbox/chinamobile/chinamobile/chinamobile.json",
@@ -12338,6 +14018,22 @@
       "size": 175
     },
     {
+      "file": "singbox/deepseek/deepseek/deepseek.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "fcc26b7e152c263bd8cd2df4a821764acb32f62a981bd9591e66b1b2da2ac24e",
+      "size": 183
+    },
+    {
+      "file": "singbox/deepseek/deepseek_aggregate/deepseek_aggregate.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "c2ed149a0fd933754afb25f7c811afce439410f05e33797d20e165eb524fc5bd",
+      "size": 132
+    },
+    {
       "file": "singbox/dewu/dewu/dewu.json",
       "kind": "client_rules",
       "rule_count": 0,
@@ -12384,6 +14080,22 @@
       "scope": "singbox",
       "sha256": "839a5dc050a31cf15618026c1f5d80dd186c978bf81b284fb2318f502449d2d3",
       "size": 247
+    },
+    {
+      "file": "singbox/discord/discord/discord.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "13411c635a856a62bc2cb16e58433d15d6ae5a8b786c44ecac9b9e4170600f9a",
+      "size": 1888
+    },
+    {
+      "file": "singbox/discord/discord_aggregate/discord_aggregate.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "2731fd28505e98435672000ccfc43f6d0bc4976e319ae5816b1a24f84a8af795",
+      "size": 1047
     },
     {
       "file": "singbox/disney/disney/disney.json",
@@ -12590,16 +14302,24 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "5c1a3c9fb2198dfa0475794defa8edef9302e893a78cdef634bd4442faa33aff",
-      "size": 151
+      "sha256": "b7f3e9517b57115334cd37c83358e236c62dfc0740fe092bfc8bd73e6d4e0068",
+      "size": 1066
+    },
+    {
+      "file": "singbox/google/gemini/gemini.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "dae9958d0b90c152f27cad614343551205020652ff103607a904737cb6264e26",
+      "size": 537
     },
     {
       "file": "singbox/google/google/google.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "00f69c4143dcf9c8823aff3da1c8fa1f4fb670a701d82f90bc29178fa55cf535",
-      "size": 39421
+      "sha256": "53b3da6084ebe99078e94df2d050d4ee41f96b54fda515bde2e20f1515462f86",
+      "size": 41140
     },
     {
       "file": "singbox/google/google-search/google-search.json",
@@ -12630,8 +14350,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "44b2ab01b2f1e2b5b9d2870fdcbd74a950b3846910fc1b5198f13f384d953422",
-      "size": 505
+      "sha256": "cc56c2cc97f8ce4f08775a729587eb172b8e670a0f4a5ed3cfffaf97ec5aa1f4",
+      "size": 3108
     },
     {
       "file": "singbox/google/googlevoice/googlevoice.json",
@@ -12648,6 +14368,30 @@
       "scope": "singbox",
       "sha256": "d5b545ad9faa037f1444a62031a1cb04a9a75cd27493f790b04e3491d8b3eabb",
       "size": 7711
+    },
+    {
+      "file": "singbox/google/youtube/youtube.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "a669455b03ddcbb22167ffcbca66b2fb367baf68e8977751fe4aaf8c92d5d5bf",
+      "size": 17282
+    },
+    {
+      "file": "singbox/groq/groq/groq.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "8ac7f7c5656b493690d65176e01f050ea7cbc0f5215f64fad736dac3be72524a",
+      "size": 101
+    },
+    {
+      "file": "singbox/groq/groq_aggregate/groq_aggregate.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "8ac7f7c5656b493690d65176e01f050ea7cbc0f5215f64fad736dac3be72524a",
+      "size": 101
     },
     {
       "file": "singbox/hbo/hbo/hbo.json",
@@ -12696,6 +14440,22 @@
       "scope": "singbox",
       "sha256": "8e682a6881ac7f69832a27b1cd6f1556a84835bf1496aa1f54d6c071a0a3ad2d",
       "size": 10971
+    },
+    {
+      "file": "singbox/huggingface/huggingface/huggingface.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "dd23614ba95b18cc45f9984241265a780a0537e9910110697c53d4ce21f81fd2",
+      "size": 207
+    },
+    {
+      "file": "singbox/huggingface/huggingface_aggregate/huggingface_aggregate.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "87a5fdd83232a1851bc616fe534c3509b39a29e04d4f5adfa0e6bbe735be8b6e",
+      "size": 144
     },
     {
       "file": "singbox/huya/huya/huya.json",
@@ -12922,6 +14682,14 @@
       "size": 4439
     },
     {
+      "file": "singbox/meta/messenger/messenger.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "663b037d469cbc77fd0c87baa92b221b4a172d87a4b3ae9106868a05f4052e9a",
+      "size": 171
+    },
+    {
       "file": "singbox/meta/meta/meta.json",
       "kind": "client_rules",
       "rule_count": 0,
@@ -12946,12 +14714,28 @@
       "size": 1288
     },
     {
+      "file": "singbox/microsoft/azure/azure.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "8e3ac0ad790d9be143b9d876a90942b61e4d5ccd6921dd2955826f02f8d69b25",
+      "size": 4323
+    },
+    {
+      "file": "singbox/microsoft/copilot/copilot.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "0871000642da7a64dfe9235da58c49ee26526a1e2f9e46847fd9dde8905a64c8",
+      "size": 1708
+    },
+    {
       "file": "singbox/microsoft/github/github.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "9a5225afdc1dbaef1e79ca0c81e6573171d2971568018c0033c38443ce93da30",
-      "size": 868
+      "sha256": "c6198a19af14d6fd108c18bcc64e359707dbacb37acef6650852c40fbfa25b01",
+      "size": 6551
     },
     {
       "file": "singbox/microsoft/linkedin/linkedin.json",
@@ -12966,8 +14750,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "096e384c8411f97e789d25698dcb134c1ca6212293aacd141ad51e3d893c42dd",
-      "size": 31077
+      "sha256": "75ac401c5f4b7fa0b8ce562216c561b7e1ada30fa02eb6ea3ce2fbcd2eb7fbd5",
+      "size": 33056
     },
     {
       "file": "singbox/microsoft/microsoftedge/microsoftedge.json",
@@ -12986,6 +14770,30 @@
       "size": 421
     },
     {
+      "file": "singbox/microsoft/onedrive/onedrive.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "b2f1fcdd5b9a93c52175a0709be22fc297b594bbb2c5dd8186dc578abccd2c9e",
+      "size": 551
+    },
+    {
+      "file": "singbox/microsoft/teams/teams.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "0e1e1f8a6ecf6d7d949dc262fbdfa52f7c215be04f597dd92bc5aefe95f7a756",
+      "size": 237
+    },
+    {
+      "file": "singbox/microsoft/xbox/xbox.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "8828c9b465cd86c53d49137eb31370267d8faf3972ea93b93a5157e5adaf90ef",
+      "size": 1219
+    },
+    {
       "file": "singbox/netease/netease/netease.json",
       "kind": "client_rules",
       "rule_count": 0,
@@ -13000,6 +14808,22 @@
       "scope": "singbox",
       "sha256": "491a41d6ee6c96cef455478afeff5dc501e79b5bb0e38f9ec6d2752bd4484afd",
       "size": 486
+    },
+    {
+      "file": "singbox/netflix/netflix/netflix.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "cebab5376c876d2e04a4294ff30d2f4c3bb4fdf250d84d856cfb07813fda96bc",
+      "size": 3008
+    },
+    {
+      "file": "singbox/netflix/netflix_aggregate/netflix_aggregate.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "8bb0edaa6f13628d4f43d38e17ab7b75d80b7e97b0fe29c6a0d1157985b4f678",
+      "size": 1504
     },
     {
       "file": "singbox/netlify/netlify/netlify.json",
@@ -13082,6 +14906,22 @@
       "size": 240
     },
     {
+      "file": "singbox/openai/openai/openai.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "3f1fec898926003d5a494b129037db837ded8e171a6d1023f8b171d44ae299d5",
+      "size": 2803
+    },
+    {
+      "file": "singbox/openai/openai_aggregate/openai_aggregate.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "dc8056f1fa2f7143852cdc00a84db03625abad9718c4a3dd9e9f32404e90908c",
+      "size": 1984
+    },
+    {
       "file": "singbox/oppo/oppo/oppo.json",
       "kind": "client_rules",
       "rule_count": 0,
@@ -13128,6 +14968,22 @@
       "scope": "singbox",
       "sha256": "373242602bdb6a1a7fd64dae6cbf1fd75ec53a21b0e415f9502f0378bdc81e7a",
       "size": 7018
+    },
+    {
+      "file": "singbox/perplexity/perplexity/perplexity.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "ff8765b7e0a12fc8eab6c2faca0447d9abcba8c8a26258df80261ef5b485c1db",
+      "size": 411
+    },
+    {
+      "file": "singbox/perplexity/perplexity_aggregate/perplexity_aggregate.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "d46dd19e78dd9bd8935fc7436009e9ce987a056dcae0e46b8a350742a6ed1d4b",
+      "size": 341
     },
     {
       "file": "singbox/pinduoduo/pinduoduo/pinduoduo.json",
@@ -13258,6 +15114,22 @@
       "size": 1565
     },
     {
+      "file": "singbox/roblox/roblox/roblox.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "22c054183926a08fa9b792b3d2047b020aa716d0252d72c23f44ffa35cd2d639",
+      "size": 2469
+    },
+    {
+      "file": "singbox/roblox/roblox_aggregate/roblox_aggregate.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "6b83ce1aa4b6dd3a5fe907454b197e0df5ebf6bef08da060ee7564e252c4d620",
+      "size": 1481
+    },
+    {
       "file": "singbox/rockstar/rockstar/rockstar.json",
       "kind": "client_rules",
       "rule_count": 0,
@@ -13312,6 +15184,22 @@
       "scope": "singbox",
       "sha256": "dcd55bd5b4872947ecb651179e5efcca251dd0af9866370dd2b1a3a22cfeca1a",
       "size": 281
+    },
+    {
+      "file": "singbox/signal/signal/signal.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "eb1bb7c0b7b94527e0210e679db30e20fd26d78de51f079d7d4e1343c2696fcb",
+      "size": 465
+    },
+    {
+      "file": "singbox/signal/signal_aggregate/signal_aggregate.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "9f7d08caaf018d35022e86bac8f64cfa3c07648f69fa7ae137f0ee887908d9a8",
+      "size": 273
     },
     {
       "file": "singbox/snap/snap/snap.json",
@@ -13458,6 +15346,22 @@
       "size": 100
     },
     {
+      "file": "singbox/telegram/telegram/telegram.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "eb999819b1ad83d35268681837ed3c95a407d4483c494375b222796b654741f8",
+      "size": 2298
+    },
+    {
+      "file": "singbox/telegram/telegram_aggregate/telegram_aggregate.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "05f1b04a4f412ed258cb837fe8c7f303a2b5039fb99ea99d06d664af5f3fcbbe",
+      "size": 1432
+    },
+    {
       "file": "singbox/tencent/qqmail/qqmail.json",
       "kind": "client_rules",
       "rule_count": 0,
@@ -13478,8 +15382,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "383f3737f9430db65e574678392d4d706920278f6c3cacb9ef92a469045715ff",
-      "size": 21350
+      "sha256": "272e2871b61ae178a7de90ed1f92612557b30e6faf7f176ddfacb85467340461",
+      "size": 23692
     },
     {
       "file": "singbox/tencent/tencentcloud/tencentcloud.json",
@@ -13496,6 +15400,22 @@
       "scope": "singbox",
       "sha256": "0d022cc07c90197b4c80bd464fbdad2255a9343b145701a5e97e342f82f604bb",
       "size": 185
+    },
+    {
+      "file": "singbox/tencent/tencentvideo/tencentvideo.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "dd1bbcc838469b4da1556768458f8f88cbfd998ca7c1983d12a544f18480eff8",
+      "size": 1957
+    },
+    {
+      "file": "singbox/tencent/wechat/wechat.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "31e14fc69d4ddade7fd3c7ba49bd2be2e40e6575c5c97fc65a0151bfc19035c0",
+      "size": 890
     },
     {
       "file": "singbox/tencent/wecom/wecom.json",
@@ -13860,10 +15780,10 @@
     {
       "file": "surge/alibaba/1688/1688.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 2,
       "scope": "surge",
-      "sha256": "1904aba10d8aebcb3d74b8fa4f41edf2670349370e09428a68d9f68c1e3f467a",
-      "size": 27
+      "sha256": "070c60ab074ac79fd288a4bf1e83f297696792be169a2a5442b74223c0154542",
+      "size": 50
     },
     {
       "file": "surge/alibaba/alibaba/alibaba.list",
@@ -13872,6 +15792,14 @@
       "scope": "surge",
       "sha256": "2120d97d23d48702d779e23ba48733162c8c4d7dcf08596ae5a88687a67cdbbc",
       "size": 16808
+    },
+    {
+      "file": "surge/alibaba/alibabacloud/alibabacloud.list",
+      "kind": "client_rules",
+      "rule_count": 100,
+      "scope": "surge",
+      "sha256": "64f243d43b985d78240521753b543bb01a540df9e262433e7f64a21993a75560",
+      "size": 3450
     },
     {
       "file": "surge/alibaba/alipay/alipay.list",
@@ -13996,18 +15924,34 @@
     {
       "file": "surge/anthropic/anthropic_aggregate/anthropic_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 9,
+      "rule_count": 10,
       "scope": "surge",
-      "sha256": "3138a28adfae2ae9280dbc69687b8d90ecb00081c3e1c2c2c4f488f10613f5bd",
-      "size": 293
+      "sha256": "a8da6661019ee9abd262f548394096d39e06f336603c87e8c263011df9421bc1",
+      "size": 318
+    },
+    {
+      "file": "surge/anthropic/claude/claude.list",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "surge",
+      "sha256": "e22906098a08537bca78fe642e8dcf401700595c436d131bfdbb9f446c58e19b",
+      "size": 77
     },
     {
       "file": "surge/apple/apple/apple.list",
       "kind": "client_rules",
-      "rule_count": 2015,
+      "rule_count": 2037,
       "scope": "surge",
-      "sha256": "ae5a234ff9ad30ae2ca4fb9bd923b000949f313116c7b437791024af28afe84d",
-      "size": 65874
+      "sha256": "16d836f12b793d1657949811613c749de16147591f26ff141ff58beeb4e18517",
+      "size": 66516
+    },
+    {
+      "file": "surge/apple/appledev/appledev.list",
+      "kind": "client_rules",
+      "rule_count": 80,
+      "scope": "surge",
+      "sha256": "6eac4689ec08fefa1525f3639546f6a5457cebdb05525308db94c09ecf70a55c",
+      "size": 2764
     },
     {
       "file": "surge/apple/applefirmware/applefirmware.list",
@@ -14034,12 +15978,44 @@
       "size": 59
     },
     {
+      "file": "surge/apple/applemusic/applemusic.list",
+      "kind": "client_rules",
+      "rule_count": 9,
+      "scope": "surge",
+      "sha256": "72f48e8f04d62a2395435aadc76ac6664e88918358e988e85113c30b74839f3d",
+      "size": 285
+    },
+    {
       "file": "surge/apple/appletv/appletv.list",
       "kind": "client_rules",
-      "rule_count": 7,
+      "rule_count": 14,
       "scope": "surge",
-      "sha256": "77616b096395fbee12c0d51e6cb284dfc6accc40a675e68c6cfdecb0f6622738",
-      "size": 252
+      "sha256": "ad2f56c634f94db81170603cb53171eea567cb83eda697f38ba71a4881d0614b",
+      "size": 462
+    },
+    {
+      "file": "surge/apple/appstore/appstore.list",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "surge",
+      "sha256": "20062ff2d80616e5fbdb360b54c8a9f184e8ec5be47601a4dd79345e8892ec4f",
+      "size": 46
+    },
+    {
+      "file": "surge/apple/findmy/findmy.list",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "surge",
+      "sha256": "5b265680521a97c68c0bc4ccd06c64aee3aa935074caf85df0e33d26f4c9c98d",
+      "size": 83
+    },
+    {
+      "file": "surge/apple/icloud/icloud.list",
+      "kind": "client_rules",
+      "rule_count": 167,
+      "scope": "surge",
+      "sha256": "d25077c72fcd4fa429df156ad9be9c8b73c1f67391fd8c02d56021d63f2a649d",
+      "size": 4593
     },
     {
       "file": "surge/apple/icloudprivaterelay/icloudprivaterelay.list",
@@ -14048,6 +16024,14 @@
       "scope": "surge",
       "sha256": "bf918251648db75d5218ce67d009fbcf3de10dd6a74f596b67dfa869218bd494",
       "size": 177
+    },
+    {
+      "file": "surge/apple/testflight/testflight.list",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "surge",
+      "sha256": "cb0c1488da836ff8c3bae8044d596556845fbb184e442bfc41235b5bb6b2d8dd",
+      "size": 76
     },
     {
       "file": "surge/atlassian/atlassian/atlassian.list",
@@ -14084,10 +16068,10 @@
     {
       "file": "surge/baidu/baidu/baidu.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 325,
       "scope": "surge",
-      "sha256": "88bc62517ed3c058d30f3d0d92d818a9c4d614b0c8d02a9220f1614f3c25b271",
-      "size": 64
+      "sha256": "bede901474798922f221e3eac3e13d6a3e70c66c539dca90bd907cd7b4fc332b",
+      "size": 9065
     },
     {
       "file": "surge/baidu/baidunetdisk/baidunetdisk.list",
@@ -14228,18 +16212,34 @@
     {
       "file": "surge/bytedance/bytedance/bytedance.list",
       "kind": "client_rules",
-      "rule_count": 1087,
+      "rule_count": 1100,
       "scope": "surge",
-      "sha256": "3aafb86b4f0915f07ada7f6f83fa9cfb9deb76ad5807a9f7bd6f7c577b589f6e",
-      "size": 31682
+      "sha256": "ea2e64ce6c50a46c6dc4c39271b81b3cc6483bfbbc20e6e99000ef25e1f3e8c4",
+      "size": 32079
     },
     {
       "file": "surge/bytedance/doubao/doubao.list",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 36,
       "scope": "surge",
-      "sha256": "2ddcdb67d2b9bf06ee5d6c390f8a5092516c4cd7c4ee4ce257751606a55c9522",
-      "size": 133
+      "sha256": "0e17d10dcc489024ca1b0f2f9f326f896b062d84cdb66e54d5a1d4f4338fafd8",
+      "size": 1024
+    },
+    {
+      "file": "surge/bytedance/douyin/douyin.list",
+      "kind": "client_rules",
+      "rule_count": 90,
+      "scope": "surge",
+      "sha256": "e93924fbd9d5a1103890e8774ff63a7136582c57314c186462276ef21381c40d",
+      "size": 2580
+    },
+    {
+      "file": "surge/bytedance/tiktok/tiktok.list",
+      "kind": "client_rules",
+      "rule_count": 117,
+      "scope": "surge",
+      "sha256": "52ef0d87f2fb14d14b50ee78830a21cbcbec4010b608f50cd219c3a3658faf36",
+      "size": 3615
     },
     {
       "file": "surge/canva/canva/canva.list",
@@ -14268,10 +16268,10 @@
     {
       "file": "surge/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128684,
+      "rule_count": 129180,
       "scope": "surge",
-      "sha256": "4528f290ba6a917349f9800444b4d5668a938a222a762a783f0e5ced4471bd5e",
-      "size": 3482011
+      "sha256": "78434f6f5dff8fc374b8607e685baa7f1c4cbf1e678e3fe1dfda78f1b02cdd1a",
+      "size": 3496659
     },
     {
       "file": "surge/ccb/ccb/ccb.list",
@@ -14324,10 +16324,10 @@
     {
       "file": "surge/china/china.list",
       "kind": "client_rules",
-      "rule_count": 109963,
+      "rule_count": 109751,
       "scope": "surge",
-      "sha256": "5d9b9ce2cd5075eb4e614822ac70b133fbb3fffbd56f8ca1e822532e75b1f35e",
-      "size": 2931971
+      "sha256": "c12335c57213d7c3dd5227a2c8da3592356a8720cc643836c6feef2aeb34575f",
+      "size": 2926180
     },
     {
       "file": "surge/chinamobile/chinamobile/chinamobile.list",
@@ -14434,6 +16434,22 @@
       "size": 106
     },
     {
+      "file": "surge/deepseek/deepseek/deepseek.list",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "surge",
+      "sha256": "586155a8c5c3d31bedcc56930f0df5ba568afd79d554d07f583bcd703a828112",
+      "size": 114
+    },
+    {
+      "file": "surge/deepseek/deepseek_aggregate/deepseek_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "surge",
+      "sha256": "b2f3915a8bbd3438f363af5082248801e41bb6b28503eddce4605593159e5eb1",
+      "size": 57
+    },
+    {
       "file": "surge/dewu/dewu/dewu.list",
       "kind": "client_rules",
       "rule_count": 45,
@@ -14480,6 +16496,22 @@
       "scope": "surge",
       "sha256": "2249f4d9d7c087a734121fecc705b64d2436f16c60c51b9f4749b2660d3f58d2",
       "size": 184
+    },
+    {
+      "file": "surge/discord/discord/discord.list",
+      "kind": "client_rules",
+      "rule_count": 63,
+      "scope": "surge",
+      "sha256": "29dd0ec2b9d0db0ccebdc04123833a8e1cb76b13cc17c5fd488bcb5aa1a6d8a2",
+      "size": 1956
+    },
+    {
+      "file": "surge/discord/discord_aggregate/discord_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 31,
+      "scope": "surge",
+      "sha256": "a5f989b2ce7bef10511f4203670c2cad213621206d437428221ac8791a24471c",
+      "size": 1019
     },
     {
       "file": "surge/disney/disney/disney.list",
@@ -14684,18 +16716,26 @@
     {
       "file": "surge/google/firebase/firebase.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 25,
       "scope": "surge",
-      "sha256": "0a5a0660d654733603aa9ef67806748c3a28908194512bea34b8f0515040a376",
-      "size": 76
+      "sha256": "362a0ba0179ee3ef811cf00db816646816a512a6ea5dfece103baf3b43da011b",
+      "size": 1060
+    },
+    {
+      "file": "surge/google/gemini/gemini.list",
+      "kind": "client_rules",
+      "rule_count": 13,
+      "scope": "surge",
+      "sha256": "605702efe5aec5edb07d1c03174a10157bdd2e9dc4e67fa01e7ad3bd80bd4633",
+      "size": 417
     },
     {
       "file": "surge/google/google/google.list",
       "kind": "client_rules",
-      "rule_count": 1469,
+      "rule_count": 1525,
       "scope": "surge",
-      "sha256": "7ec075df8775e23243e175d4aead923a9e31fe484abda4d9a6a3c378c6e38a79",
-      "size": 42887
+      "sha256": "4e32f70be57cc6db770eac9d1aa5e6b7ec058140d278d42df8b969c9c5ec55b6",
+      "size": 44496
     },
     {
       "file": "surge/google/google-search/google-search.list",
@@ -14724,10 +16764,10 @@
     {
       "file": "surge/google/googlefcm/googlefcm.list",
       "kind": "client_rules",
-      "rule_count": 13,
+      "rule_count": 95,
       "scope": "surge",
-      "sha256": "d5416f51714c2a6e111c090136eaf04f90a352fdb549125dfefd63fa89259c85",
-      "size": 463
+      "sha256": "8a10cf6fcd7591ec04983b998c9afd6143161e7dcd5d8192bed58a9e11cbdbdb",
+      "size": 2737
     },
     {
       "file": "surge/google/googlevoice/googlevoice.list",
@@ -14744,6 +16784,30 @@
       "scope": "surge",
       "sha256": "ec50c23930c5148ba59cf2ddeec539c6d551ed527b747d472d00d8ede8e56c83",
       "size": 8512
+    },
+    {
+      "file": "surge/google/youtube/youtube.list",
+      "kind": "client_rules",
+      "rule_count": 703,
+      "scope": "surge",
+      "sha256": "f88472785334f11f592afdcbb6c1bb4c8734a84de6fed306fce36a6791842493",
+      "size": 19202
+    },
+    {
+      "file": "surge/groq/groq/groq.list",
+      "kind": "client_rules",
+      "rule_count": 1,
+      "scope": "surge",
+      "sha256": "c25618d6e673762890944bbccf594711322787bac1820a38e340f48b81fe0c5c",
+      "size": 23
+    },
+    {
+      "file": "surge/groq/groq_aggregate/groq_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 1,
+      "scope": "surge",
+      "sha256": "c25618d6e673762890944bbccf594711322787bac1820a38e340f48b81fe0c5c",
+      "size": 23
     },
     {
       "file": "surge/hbo/hbo/hbo.list",
@@ -14792,6 +16856,22 @@
       "scope": "surge",
       "sha256": "ff0118db6673896b8d88570ef8a36427087b77953be3d16a6ec53b38033af232",
       "size": 12096
+    },
+    {
+      "file": "surge/huggingface/huggingface/huggingface.list",
+      "kind": "client_rules",
+      "rule_count": 6,
+      "scope": "surge",
+      "sha256": "3d2903176228d3e20da3898a4413bc7966b588801b9cd1633417ee414a46c8db",
+      "size": 144
+    },
+    {
+      "file": "surge/huggingface/huggingface_aggregate/huggingface_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 3,
+      "scope": "surge",
+      "sha256": "1831eaa5d3ab9c3e4fc65c87464e461fac3d597f012b256bbae1d28ea7675553",
+      "size": 72
     },
     {
       "file": "surge/huya/huya/huya.list",
@@ -15018,6 +17098,14 @@
       "size": 4781
     },
     {
+      "file": "surge/meta/messenger/messenger.list",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "surge",
+      "sha256": "09a3b2dc0a2426405bcd2803dfcaf5d32994e5c78967de6f89f16386cc298f45",
+      "size": 102
+    },
+    {
       "file": "surge/meta/meta/meta.list",
       "kind": "client_rules",
       "rule_count": 596,
@@ -15042,12 +17130,28 @@
       "size": 1177
     },
     {
+      "file": "surge/microsoft/azure/azure.list",
+      "kind": "client_rules",
+      "rule_count": 151,
+      "scope": "surge",
+      "sha256": "6d0e42b896a02eadcf35acd25e70e2063618efa810c538a9feb680b8fc495783",
+      "size": 4662
+    },
+    {
+      "file": "surge/microsoft/copilot/copilot.list",
+      "kind": "client_rules",
+      "rule_count": 49,
+      "scope": "surge",
+      "sha256": "4831305a8b0bbf9d1996e0d030386e5c5a8069c5a107c3fcfde846cd88f8d87c",
+      "size": 1536
+    },
+    {
       "file": "surge/microsoft/github/github.list",
       "kind": "client_rules",
-      "rule_count": 29,
+      "rule_count": 179,
       "scope": "surge",
-      "sha256": "1e777cec08c6d93022edf17978bf59db849c6fd1980b4b23225f7044d371e773",
-      "size": 874
+      "sha256": "0e9478b0914920ed7735d5cf884f02438b1728e662b25158e770f8712bfbe719",
+      "size": 6759
     },
     {
       "file": "surge/microsoft/linkedin/linkedin.list",
@@ -15060,10 +17164,10 @@
     {
       "file": "surge/microsoft/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 991,
+      "rule_count": 1054,
       "scope": "surge",
-      "sha256": "cb03352dbe1f8975fe8fee881ff0457ebdcc02db85a5c6ec3ac378f7d1dd07ec",
-      "size": 33294
+      "sha256": "cfd65fd15ef5e66a2ad127a3765b2b514a6c9bab712c4b878e6efd2d884e299b",
+      "size": 35257
     },
     {
       "file": "surge/microsoft/microsoftedge/microsoftedge.list",
@@ -15082,6 +17186,30 @@
       "size": 376
     },
     {
+      "file": "surge/microsoft/onedrive/onedrive.list",
+      "kind": "client_rules",
+      "rule_count": 16,
+      "scope": "surge",
+      "sha256": "c8f86f71aa796fae87042f301c82219a1acb457e292e98dedfb27e494395cde6",
+      "size": 487
+    },
+    {
+      "file": "surge/microsoft/teams/teams.list",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "surge",
+      "sha256": "bd7adf3e7e854122d67b3a9f6295a21b75f54b62be712f71e8448d4b93cac90e",
+      "size": 135
+    },
+    {
+      "file": "surge/microsoft/xbox/xbox.list",
+      "kind": "client_rules",
+      "rule_count": 42,
+      "scope": "surge",
+      "sha256": "68fa5f4685fb11dffe637d0e3b0f9b97217e10186e2073834a858bc84b49a80b",
+      "size": 1210
+    },
+    {
       "file": "surge/netease/netease/netease.list",
       "kind": "client_rules",
       "rule_count": 96,
@@ -15096,6 +17224,22 @@
       "scope": "surge",
       "sha256": "ce8b995aa786e698fba3c46475eafea704e2daf6a6e19a54d3112f6cd2a0024a",
       "size": 450
+    },
+    {
+      "file": "surge/netflix/netflix/netflix.list",
+      "kind": "client_rules",
+      "rule_count": 92,
+      "scope": "surge",
+      "sha256": "26a06e73ad181ea1320e88d9742d04140ba02d72abfb929b283d227887717aea",
+      "size": 2831
+    },
+    {
+      "file": "surge/netflix/netflix_aggregate/netflix_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 37,
+      "scope": "surge",
+      "sha256": "2ad5a2972e90618e514391c643eaf73ba67c50344e1b2a1abfe4941ae95d53ea",
+      "size": 1169
     },
     {
       "file": "surge/netlify/netlify/netlify.list",
@@ -15178,6 +17322,22 @@
       "size": 141
     },
     {
+      "file": "surge/openai/openai/openai.list",
+      "kind": "client_rules",
+      "rule_count": 78,
+      "scope": "surge",
+      "sha256": "6fcfb50e1f8a4beeec98cfcb5b4863d0cf65120b66d2f6d665573b1900a7d4ca",
+      "size": 2640
+    },
+    {
+      "file": "surge/openai/openai_aggregate/openai_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 52,
+      "scope": "surge",
+      "sha256": "dd26915c63dbc594d18fa1450729c1fb7693611d2b19e5b7dbb425b0d3b56b55",
+      "size": 1771
+    },
+    {
       "file": "surge/oppo/oppo/oppo.list",
       "kind": "client_rules",
       "rule_count": 56,
@@ -15224,6 +17384,22 @@
       "scope": "surge",
       "sha256": "d6ca96cc7343b98be5b431dbbeb2e247e48c91ad26c9fbe8ae22bbd962469199",
       "size": 7645
+    },
+    {
+      "file": "surge/perplexity/perplexity/perplexity.list",
+      "kind": "client_rules",
+      "rule_count": 10,
+      "scope": "surge",
+      "sha256": "098e266abdcecdc177f251bb6a4d9db59b209d4fb80c953a18bd0c85081c885a",
+      "size": 320
+    },
+    {
+      "file": "surge/perplexity/perplexity_aggregate/perplexity_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 7,
+      "scope": "surge",
+      "sha256": "18aa13cf92a8af56fbedb385f8adc42ca13c07c1c69f029ae6a152a9f2ad9e74",
+      "size": 241
     },
     {
       "file": "surge/pinduoduo/pinduoduo/pinduoduo.list",
@@ -15354,6 +17530,22 @@
       "size": 1649
     },
     {
+      "file": "surge/roblox/roblox/roblox.list",
+      "kind": "client_rules",
+      "rule_count": 96,
+      "scope": "surge",
+      "sha256": "3e25711e03406c156ce5597eec31ca2be396e7a377fb0f4f880d95b720c860b8",
+      "size": 2622
+    },
+    {
+      "file": "surge/roblox/roblox_aggregate/roblox_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 52,
+      "scope": "surge",
+      "sha256": "e5c55569d86ad4bfd2c278b838c9bb9aa9e31cc2f122d7dbe19b5dfb445efd72",
+      "size": 1502
+    },
+    {
       "file": "surge/rockstar/rockstar/rockstar.list",
       "kind": "client_rules",
       "rule_count": 5,
@@ -15408,6 +17600,22 @@
       "scope": "surge",
       "sha256": "5105b789d99fff1c9e857eeea40e7ae63593c2b71e95293382aca0d5aa8fa283",
       "size": 224
+    },
+    {
+      "file": "surge/signal/signal/signal.list",
+      "kind": "client_rules",
+      "rule_count": 16,
+      "scope": "surge",
+      "sha256": "e50e139368693270320977e38e8c4312e10384bf1a4fc7257e073e43f965ec88",
+      "size": 432
+    },
+    {
+      "file": "surge/signal/signal_aggregate/signal_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 8,
+      "scope": "surge",
+      "sha256": "6735c7557fb210e7a29c69918ea42ddbb39ea7bc995cf8333f0f6c7a5b3c0720",
+      "size": 216
     },
     {
       "file": "surge/snap/snap/snap.list",
@@ -15554,6 +17762,22 @@
       "size": 22
     },
     {
+      "file": "surge/telegram/telegram/telegram.list",
+      "kind": "client_rules",
+      "rule_count": 88,
+      "scope": "surge",
+      "sha256": "23d2b6b1aecffb1f87c333e9824e8d0c4fad22bae00e1c3b8a6d1b89e342c4a1",
+      "size": 2229
+    },
+    {
+      "file": "surge/telegram/telegram_aggregate/telegram_aggregate.list",
+      "kind": "client_rules",
+      "rule_count": 51,
+      "scope": "surge",
+      "sha256": "f6fd078cf1d63f03119b0d0923f095b474515249fc1df4a92e3c313b228f4677",
+      "size": 1280
+    },
+    {
       "file": "surge/tencent/qqmail/qqmail.list",
       "kind": "client_rules",
       "rule_count": 1,
@@ -15572,10 +17796,10 @@
     {
       "file": "surge/tencent/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 819,
+      "rule_count": 889,
       "scope": "surge",
-      "sha256": "0259e1ba1fe1ad4f6666ae31f4c691670bdb348a26f5891dfe8fa6f8c4744858",
-      "size": 22924
+      "sha256": "037546ec9dc12f7f7aed02b16fe8668bd9547b96535aa40a5a715019a7826525",
+      "size": 25166
     },
     {
       "file": "surge/tencent/tencentcloud/tencentcloud.list",
@@ -15592,6 +17816,22 @@
       "scope": "surge",
       "sha256": "38e9aa5e60f537aad392eba3234f1d1adbd63bfa6e027b4d35028fb37f9fa861",
       "size": 113
+    },
+    {
+      "file": "surge/tencent/tencentvideo/tencentvideo.list",
+      "kind": "client_rules",
+      "rule_count": 51,
+      "scope": "surge",
+      "sha256": "77a18c40a9d8b694e5281619f6782554808a3a0d1097d1d08ad47881090eb25e",
+      "size": 1715
+    },
+    {
+      "file": "surge/tencent/wechat/wechat.list",
+      "kind": "client_rules",
+      "rule_count": 30,
+      "scope": "surge",
+      "sha256": "689ca0c40b16b37352e888e8fdae395a6d6ef8b3e304c399c47d217a377c8cbc",
+      "size": 817
     },
     {
       "file": "surge/tencent/wecom/wecom.list",
@@ -15882,7 +18122,7 @@
       "size": 71
     }
   ],
-  "generated_at": "2026-09-26T07:26:04.571110+00:00",
+  "generated_at": "2026-09-26T14:37:32.903049+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "layout_schema": "directory_layout_v2",
   "network_dataset_directories": [
