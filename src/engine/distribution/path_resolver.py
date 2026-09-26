@@ -15,7 +15,7 @@ LAYOUT_SCHEMA = "directory_layout_v2"
 
 HUMAN_LAYOUT = {
     "human_root": "rule",
-    "human_aggregate": "rule/{provider}/{provider}/{provider}.yaml",
+    "human_aggregate": "rule/{provider}/{aggregate}/{aggregate}.yaml",
     "human_service": "rule/{provider}/{service}/{service}.yaml",
     "human_china": "rule/china/china.yaml",
     "human_category": "rule/category/{category}/{category}.yaml",
@@ -26,7 +26,7 @@ HUMAN_LAYOUT = {
 
 GENERATED_LAYOUT = {
     "generated_client_root": "generated/{client}",
-    "generated_aggregate": "generated/{client}/{provider}/{provider}/{provider}",
+    "generated_aggregate": "generated/{client}/{provider}/{aggregate}/{aggregate}",
     "generated_service": "generated/{client}/{provider}/{service}/{service}",
     "generated_china": "generated/{client}/china/china",
     "generated_category": "generated/{client}/categories/{category}/{category}",
