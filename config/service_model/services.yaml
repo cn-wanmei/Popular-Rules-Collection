@@ -165,3 +165,11 @@ services:
   xai-grok: {id: xai-grok, provider: xai, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
   stripe-dashboard: {id: stripe-dashboard, provider: stripe, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
   venmo: {id: venmo, provider: paypal, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  huawei-appgallery: {id: huawei-appgallery, provider: huawei, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  openai: {id: openai, provider: openai, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  claude: {id: claude, provider: anthropic, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  paypal-core: {id: paypal-core, provider: paypal, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  xoom: {id: xoom, provider: paypal, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  baidu-zhidao: {id: baidu-zhidao, provider: baidu, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  kuaishou: {id: kuaishou, provider: kuaishou, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  kuaishou-open: {id: kuaishou-open, provider: kuaishou, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
