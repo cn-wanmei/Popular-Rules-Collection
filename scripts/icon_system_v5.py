@@ -275,6 +275,9 @@ def build(args:argparse.Namespace)->int:
 
 def gate(args:argparse.Namespace)->int:
     registry_path=Path(args.registry); registry=load_json(registry_path); errors=[]
+    if args.run_dir:
+        if args.rule_index or args.ir: errors.append('gate run-dir cannot be combined with rule-index or ir')
+        args.ir=str(Path(args.run_dir)/'ir'/'ir.json')
     if registry.get('schema')!='icon_registry_v5' or registry.get('variants')!=list(VARIANTS): errors.append('V5 registry contract mismatch')
     expected=None
     registry_ids_list=[str(r.get('service_id') or '') for r in registry.get('entries') or []]
@@ -315,6 +318,9 @@ def gate(args:argparse.Namespace)->int:
     report={'schema':'icon_v5_gate_v1','status':'PASS' if not errors else 'FAIL','errors':errors}; (registry_path.parent/'gate.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8'); print(json.dumps(report,ensure_ascii=False)); return 0 if not errors else 1
 
 def discover(args:argparse.Namespace)->int:
+    if args.run_dir:
+        if args.rule_index or args.ir: raise ValueError('discover run-dir cannot be combined with rule-index or ir')
+        args.ir=str(Path(args.run_dir)/'ir'/'ir.json')
     rows=discover_services(rule_index=Path(args.rule_index) if args.rule_index else None,ir_path=Path(args.ir) if args.ir else None); out=Path(args.out); out.parent.mkdir(parents=True,exist_ok=True); out.write_text(json.dumps({'schema':'icon_service_discovery_v5','run_id':args.run_id,'snapshot_id':args.snapshot_id,'ir_digest':args.ir_digest,'service_count':len(rows),'services':rows},ensure_ascii=False,indent=2)+'\n',encoding='utf-8'); print(json.dumps({'status':'ok','service_count':len(rows),'out':str(out)},ensure_ascii=False)); return 0
 
 def contract()->int:
@@ -328,7 +334,7 @@ def main()->int:
         p=sub.add_parser(command); p.add_argument('--rule-index'); p.add_argument('--ir'); p.add_argument('--run-dir'); p.add_argument('--out',required=True)
         if command=='discover': p.add_argument('--run-id'); p.add_argument('--snapshot-id'); p.add_argument('--ir-digest')
         else: p.add_argument('--cache-dir'); p.add_argument('--run-id'); p.add_argument('--snapshot-id'); p.add_argument('--ir-digest'); p.add_argument('--refresh',action='store_true'); p.add_argument('--strict',action='store_true')
-    p=sub.add_parser('gate'); p.add_argument('--registry',required=True); p.add_argument('--rule-index'); p.add_argument('--ir'); p.add_argument('--strict',action='store_true')
+    p=sub.add_parser('gate'); p.add_argument('--registry',required=True); p.add_argument('--rule-index'); p.add_argument('--ir'); p.add_argument('--run-dir'); p.add_argument('--strict',action='store_true')
     args=ap.parse_args()
     if args.command=='contract': return contract()
     if args.command=='discover':
