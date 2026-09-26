@@ -128,9 +128,14 @@ class LimitedRedirectHandler(HTTPRedirectHandler):
         if self.remaining<=0: raise RuntimeError('redirect limit exceeded')
         self.remaining-=1; return super().redirect_request(req,fp,code,msg,headers,newurl)
 
-def fetch_bytes(url:str,*,timeout:int,max_bytes:int,user_agent:str,max_redirects:int)->tuple[bytes,dict]:
+def fetch_bytes(url:str,*,timeout:int,max_bytes:int,user_agent:str,max_redirects:int,accept:str='*/*')->tuple[bytes,dict]:
     if urlparse(url).scheme.lower()!='https': raise ValueError(f'only https is allowed: {url}')
-    opener=build_opener(LimitedRedirectHandler(max_redirects)); req=Request(url,headers={'User-Agent':user_agent,'Accept':'*/*'})
+    opener=build_opener(LimitedRedirectHandler(max_redirects))
+    req=Request(url,headers={
+        'User-Agent':user_agent,
+        'Accept':accept,
+        'Accept-Language':'en-US,en;q=0.9',
+    })
     with opener.open(req,timeout=timeout) as response:
         final_url=response.geturl()
         if urlparse(final_url).scheme.lower()!='https': raise ValueError(f'redirected to non-https: {final_url}')
@@ -186,37 +191,93 @@ def save_cache(cache_dir:Path,services:dict)->None:
     cache_dir.mkdir(parents=True,exist_ok=True)
     (cache_dir/'cache.json').write_text(json.dumps({'schema':'icon_source_cache_v5','updated_at':datetime.now(timezone.utc).isoformat(),'services':services},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 
+def _normalize_official(official:dict)->dict:
+    out={}
+    for k,v in (official or {}).items():
+        out[str(k).strip()]=v
+    return out
+
+def _official_entry(official:dict,sid:str)->tuple[str,str|None]:
+    """Return (homepage, optional direct icon_url). Supports string or {homepage,icon_url}."""
+    raw=official.get(str(sid))
+    if raw is None:
+        return '', None
+    if isinstance(raw,dict):
+        homepage=str(raw.get('homepage') or raw.get('url') or '').strip()
+        icon=str(raw.get('icon_url') or raw.get('icon') or '').strip() or None
+        return homepage, icon
+    return str(raw or '').strip(), None
+
 def resolve_source(root:Path,row:dict,official:dict,policy:dict,cache:dict,asset_cache:dict,*,refresh:bool)->dict:
     sid=row['service_id']; cached=None if refresh else cache.get(sid)
     if cached:
         path=ROOT/str(cached.get('path') or '')
         if path.is_file() and sha256(path.read_bytes())==str(cached.get('digest') or '') and cached.get('source_url'):
             content=path.read_bytes(); return {**cached,'status':'ok','content':content,'cached':True}
-    homepage=str(official.get(sid) or '').strip(); reason='registered_official' if homepage else None
+    homepage,direct_icon=_official_entry(official,sid); reason='registered_official' if homepage else None
+    if sid in official and not homepage:
+        return {'status':'hold','reason':'explicit_no_brand_logo'}
     if not homepage:
         candidates=candidate_domains(root,row)
         if not candidates or candidates[0][1]<2: return {'status':'hold','reason':'no_high_confidence_official_homepage_candidate'}
         homepage='https://'+candidates[0][0]+'/'; reason='rule_domain_candidate'
     acq=policy['acquisition']
-    page,page_headers=fetch_bytes(homepage,timeout=int(acq['timeout_seconds']),max_bytes=int(acq['max_bytes']),user_agent=str(acq['user_agent']),max_redirects=int(acq['max_redirects']))
-    parser=IconLinkParser(); parser.feed(page.decode('utf-8',errors='ignore'))
-    icon_url=None
-    for link in sorted(parser.links,key=lambda x:(x['priority'],x['sizes'] or '',x['href'])):
-        icon_url=urljoin(page_headers['final_url'],link['href'])
-        if icon_url: break
-    if not icon_url and parser.manifest:
-        manifest_url=urljoin(page_headers['final_url'],parser.manifest)
-        manifest,_=fetch_bytes(manifest_url,timeout=int(acq['timeout_seconds']),max_bytes=int(acq['max_bytes']),user_agent=str(acq['user_agent']),max_redirects=int(acq['max_redirects']))
-        icon_url=select_manifest_icon(page_headers['final_url'],manifest)
-    if not icon_url: icon_url=urljoin(page_headers['final_url'],'/favicon.ico')
-    shared=asset_cache.get(icon_url)
-    if shared:
-        icon,icon_headers=shared
-    else:
-        icon,icon_headers=fetch_bytes(icon_url,timeout=int(acq['timeout_seconds']),max_bytes=int(acq['max_bytes']),user_agent=str(acq['user_agent']),max_redirects=int(acq['max_redirects']))
-        asset_cache[icon_url]=(icon,icon_headers)
-    kind=validate_source(icon,icon_headers.get('content_type'),icon_headers['final_url'])
-    return {'status':'ok','content':icon,'cached':False,'service_id':sid,'homepage_url':page_headers['final_url'],'source_url':icon_headers['final_url'],'source_kind':kind,'content_type':icon_headers.get('content_type'),'source_digest':sha256(icon),'resolution_reason':reason,'http_status':icon_headers.get('status_code'),'content_length':icon_headers.get('content_length'),'fetched_at':icon_headers.get('fetched_at')}
+    timeout=int(acq.get('timeout_seconds',25))
+    max_redirects=int(acq.get('max_redirects',5))
+    max_bytes=int(acq.get('max_bytes',1048576))
+    page_max=int(acq.get('page_max_bytes',max_bytes*3))
+    user_agent=str(acq.get('user_agent','Popular-Rules-Collection/Icon-System-V5'))
+
+    icon_candidates:list[str]=[]
+    page_headers={'final_url':homepage}
+
+    if direct_icon:
+        icon_candidates.append(direct_icon)
+
+    try:
+        page,page_headers=fetch_bytes(homepage,timeout=timeout,max_bytes=page_max,user_agent=user_agent,max_redirects=max_redirects,accept='text/html,application/xhtml+xml;q=0.9,*/*;q=0.8')
+        parser=IconLinkParser(); parser.feed(page.decode('utf-8',errors='ignore'))
+        for link in sorted(parser.links,key=lambda x:(x['priority'],x['sizes'] or '',x['href'])):
+            u=urljoin(page_headers['final_url'],link['href'])
+            if u and u not in icon_candidates: icon_candidates.append(u)
+        if parser.manifest:
+            try:
+                manifest_url=urljoin(page_headers['final_url'],parser.manifest)
+                manifest,_=fetch_bytes(manifest_url,timeout=timeout,max_bytes=max_bytes,user_agent=user_agent,max_redirects=max_redirects,accept='application/manifest+json,application/json,*/*;q=0.8')
+                mu=select_manifest_icon(page_headers['final_url'],manifest)
+                if mu and mu not in icon_candidates: icon_candidates.append(mu)
+            except Exception:
+                pass
+    except Exception as page_exc:
+        # homepage fetch failed — still try common favicon paths on registered host
+        if reason!='registered_official':
+            return {'status':'hold','reason':f'homepage_fetch_failed: {type(page_exc).__name__}: {page_exc}'}
+
+    base=page_headers.get('final_url') or homepage
+    for rel in ('/favicon.ico','/favicon.png','/apple-touch-icon.png','/apple-touch-icon-precomposed.png','/static/favicon.ico'):
+        u=urljoin(base,rel)
+        if u not in icon_candidates: icon_candidates.append(u)
+
+    last_err=None
+    for icon_url in icon_candidates:
+        try:
+            shared=asset_cache.get(icon_url)
+            if shared:
+                icon,icon_headers=shared
+            else:
+                icon,icon_headers=fetch_bytes(icon_url,timeout=timeout,max_bytes=max_bytes,user_agent=user_agent,max_redirects=max_redirects,accept='image/*,*/*;q=0.8')
+                # skip HTML error pages returned as "favicon"
+                ctype=(icon_headers.get('content_type') or '').lower()
+                if 'text/html' in ctype and not icon.lstrip().lower().startswith(b'<svg'):
+                    last_err=ValueError(f'icon url returned HTML: {icon_url}')
+                    continue
+                asset_cache[icon_url]=(icon,icon_headers)
+            kind=validate_source(icon,icon_headers.get('content_type'),icon_headers['final_url'])
+            return {'status':'ok','content':icon,'cached':False,'service_id':sid,'homepage_url':page_headers.get('final_url') or homepage,'source_url':icon_headers['final_url'],'source_kind':kind,'content_type':icon_headers.get('content_type'),'source_digest':sha256(icon),'resolution_reason':reason,'http_status':icon_headers.get('status_code'),'content_length':icon_headers.get('content_length'),'fetched_at':icon_headers.get('fetched_at')}
+        except Exception as exc:
+            last_err=exc
+            continue
+    return {'status':'hold','reason':f'all_icon_candidates_failed: {type(last_err).__name__ if last_err else "none"}: {last_err}'}
 
 def persist_cache(cache_dir:Path,row:dict,result:dict)->dict:
     ext={'svg':'svg','png':'png','webp':'webp','ico':'ico','jpg':'jpg'}[result['source_kind']]; path=cache_dir/(slug(row['service_id'])+'.'+ext); path.parent.mkdir(parents=True,exist_ok=True); path.write_bytes(result['content'])
@@ -231,7 +292,7 @@ def render_pngs(svg:str,out_root:Path,service_id:str,variant:str,sizes:list[int]
     return paths
 
 def build(args:argparse.Namespace)->int:
-    policy,official=load_yaml(POLICY),load_yaml(OFFICIAL_SITES)
+    policy,official=load_yaml(POLICY),_normalize_official(load_yaml(OFFICIAL_SITES))
     run_dir=Path(args.run_dir) if args.run_dir else None
     rule_index=Path(args.rule_index) if args.rule_index else None
     ir_path=Path(args.ir) if args.ir else None
@@ -271,7 +332,8 @@ def build(args:argparse.Namespace)->int:
     save_cache(cache_dir,cache); results.sort(key=lambda x:x['service_id']); complete=sum(1 for r in results if r.get('release_eligible') and len(r.get('variants',{}))==8); missing=[r['service_id'] for r in results if not (r.get('release_eligible') and len(r.get('variants',{}))==8)]
     registry={'schema':'icon_registry_v5','version':5,'renderer_version':RENDERER_VERSION,'generated_at':datetime.now(timezone.utc).isoformat(),**lineage,'service_universe':{'source':str(ir_path or rule_index),'count':len(entries)},'variants':list(VARIANTS),'entries':results,'coverage':{'service_count':len(entries),'icon_identity_count':sum(1 for r in results if r.get('source',{}).get('digest')),'complete_8_of_8':complete,'missing':missing,'orphans':[]},'acquisition':{'network_policy':'one_asset_fetch_per_run','persistent_cache':str(cache_dir)}}
     (out/'registry.json').write_text(json.dumps(registry,ensure_ascii=False,indent=2)+'\n',encoding='utf-8'); (out/'release-pointer.json').write_text(json.dumps({'schema':'icon_release_pointer_v5','status':'candidate' if missing else 'rc_ready','registry':'registry.json',**lineage,'renderer_version':RENDERER_VERSION},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    print(json.dumps({'status':'blocked' if args.strict and missing else 'ok','service_count':len(entries),'complete_8_of_8':complete,'missing':missing,'out':str(out)},ensure_ascii=False)); return 1 if args.strict and missing else 0
+    blocked=bool(args.strict and missing and not getattr(args,'allow_partial',False))
+    print(json.dumps({'status':'blocked' if blocked else 'ok','service_count':len(entries),'complete_8_of_8':complete,'missing':missing,'out':str(out),'allow_partial':bool(getattr(args,'allow_partial',False))},ensure_ascii=False)); return 1 if blocked else 0
 
 def gate(args:argparse.Namespace)->int:
     registry_path=Path(args.registry); registry=load_json(registry_path); errors=[]
@@ -333,7 +395,7 @@ def main()->int:
     for command in ('discover','build'):
         p=sub.add_parser(command); p.add_argument('--rule-index'); p.add_argument('--ir'); p.add_argument('--run-dir'); p.add_argument('--out',required=True)
         if command=='discover': p.add_argument('--run-id'); p.add_argument('--snapshot-id'); p.add_argument('--ir-digest')
-        else: p.add_argument('--cache-dir'); p.add_argument('--run-id'); p.add_argument('--snapshot-id'); p.add_argument('--ir-digest'); p.add_argument('--refresh',action='store_true'); p.add_argument('--strict',action='store_true')
+        else: p.add_argument('--cache-dir'); p.add_argument('--run-id'); p.add_argument('--snapshot-id'); p.add_argument('--ir-digest'); p.add_argument('--refresh',action='store_true'); p.add_argument('--strict',action='store_true'); p.add_argument('--allow-partial',action='store_true',help='Phase-2 acquisition: write registry even if coverage incomplete')
     p=sub.add_parser('gate'); p.add_argument('--registry',required=True); p.add_argument('--rule-index'); p.add_argument('--ir'); p.add_argument('--run-dir'); p.add_argument('--strict',action='store_true')
     args=ap.parse_args()
     if args.command=='contract': return contract()
