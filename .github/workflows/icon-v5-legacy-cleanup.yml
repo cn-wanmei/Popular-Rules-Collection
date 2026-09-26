@@ -1,0 +1,81 @@
+name: Icon V5 Legacy Cleanup
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type DELETE-LEGACY-ICONS to confirm removal of V1-V4 icon trees and scripts'
+        required: true
+
+jobs:
+  cleanup:
+    if: ${{ inputs.confirm == 'DELETE-LEGACY-ICONS' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Remove legacy icon systems (keep V5 only)
+        run: |
+          set -euo pipefail
+          # Asset trees
+          rm -rf assets/icons/v3 assets/icons/v4
+          rm -rf assets/icons/normalized assets/icons/png assets/icons/rendered
+          rm -rf assets/icons/source assets/icons/metadata
+          rm -f assets/icons/manifest.yaml assets/icons/registry.yaml
+          rm -f assets/icons/decisions.yaml assets/icons/themes.yaml
+          rm -f assets/icons/payment_overrides.yaml assets/icons/visual_baseline.json
+          rm -f assets/icons/.icon-qa-trigger
+          # Keep: v5/, seed/, client_profiles.yaml, profiles.yaml, README.md
+
+          # Config
+          rm -f config/icon_v3.yaml
+
+          # Legacy scripts (keep icon_system_v5, icon_v5_renderers, icon_resolver_v5)
+          cd scripts
+          for f in \
+            build_icon_library_v4.py build_icons.py \
+            icon_cleanup_dirs.py icon_client_adapter.py icon_color_identity_fix.py \
+            icon_config_sync.py icon_contact_sheet.py icon_coverage.py \
+            icon_dark_contrast_audit.py icon_engine.py icon_identity_si_refresh.py \
+            icon_import_official.py icon_no_black.py icon_optical.py \
+            icon_p0_p1_apply.py icon_p1_p4_apply.py icon_p2_apply.py \
+            icon_payment_semantic_test.py icon_phase2_core.py icon_phase3_to_final.py \
+            icon_policy_set.py icon_qa.py icon_registry_build.py icon_render_overrides.py \
+            icon_resolver.py icon_restore_si_identity.py icon_schema_v2_migrate.py \
+            icon_service_bidirectional.py icon_source_overrides.py icon_stats_hook.py \
+            icon_system_v3.py icon_upgrade_hot_si.py icon_v3_collect.py icon_v3_gate.py \
+            icon_v3_release.py icon_v4_resolver.py icon_validate.py icon_visual_regression.py \
+            sync_service_icons.py
+          do
+            rm -f "$f"
+          done
+          cd ..
+
+          # Legacy ICON docs (keep ICON_SYSTEM_V5*)
+          if [ -d docs ]; then
+            find docs -maxdepth 1 -type f \( -name 'ICON_*' -o -name '*ICON*' \) ! -name 'ICON_SYSTEM_V5*' -print -delete || true
+          fi
+      - name: Open cleanup PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          BRANCH="chore/icon-v5-only-$(date -u +%Y%m%d%H%M%S)"
+          git config user.name "icon-v5-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing to delete"
+            exit 0
+          fi
+          git commit -m "chore(icon): remove V1-V4 icon systems; keep V5 only"
+          git push -u origin "$BRANCH"
+          gh pr create --title "chore(icon): remove V1-V4 icon systems (V5 only)" \
+            --body "Deletes legacy icon asset trees (v3/v4/normalized/png/rendered/source), legacy scripts, and non-V5 ICON docs. Keeps \`assets/icons/v5\`, seed, client_profiles, resolver_v5, and icon_system_v5." \
+            --base main --head "$BRANCH"

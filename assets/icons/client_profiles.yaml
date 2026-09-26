@@ -1,48 +1,44 @@
-version: 1
-updated: '2026-08-31'
-description: Per-client Icon Profile + URL templates
-default_profile: client
+version: 5
+updated: '2026-09-26'
+description: Per-client Icon Profile for Icon System V5 / Matrix 8
+default_profile: v5
+active_system: v5
 clients:
-  surge:
-    profile: client
-    formats:
-    - png
-    preferred_size: 256
-    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
-  loon:
-    profile: client
-    formats:
-    - png
-    preferred_size: 256
-    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
-  egern:
-    profile: client
-    formats:
-    - png
-    preferred_size: 256
-    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
   mihomo:
-    profile: client
-    formats:
-    - png
+    preferred_style: minimalist
+    formats: [png, svg]
     preferred_size: 128
-    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v5/png/{size}/{style}/{service_id}.png
+    svg_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v5/styles/{style}/{service_id}.svg
   singbox:
-    profile: client
-    formats:
-    - png
+    preferred_style: minimalist
+    formats: [png, svg]
     preferred_size: 128
-    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v5/png/{size}/{style}/{service_id}.png
+    svg_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v5/styles/{style}/{service_id}.svg
+  surge:
+    preferred_style: glassmorphism
+    formats: [png]
+    preferred_size: 256
+    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v5/png/{size}/{style}/{service_id}.png
   shadowrocket:
-    profile: client
-    formats:
-    - png
+    preferred_style: minimalist
+    formats: [png]
     preferred_size: 256
-    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
+    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v5/png/{size}/{style}/{service_id}.png
   quantumultx:
-    profile: client
-    formats:
-    - png
+    preferred_style: duotone_line
+    formats: [png]
     preferred_size: 256
-    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/png/{size}/{icon_key}.png
-resolver: python scripts/icon_resolver.py {service_id} --profile client
+    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v5/png/{size}/{style}/{service_id}.png
+  egern:
+    preferred_style: glassmorphism
+    formats: [png, svg]
+    preferred_size: 256
+    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v5/png/{size}/{style}/{service_id}.png
+    svg_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v5/styles/{style}/{service_id}.svg
+  loon:
+    preferred_style: soft_3d
+    formats: [png]
+    preferred_size: 256
+    url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v5/png/{size}/{style}/{service_id}.png
