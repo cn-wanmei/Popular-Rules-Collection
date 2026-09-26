@@ -20,3 +20,8 @@ platforms:
     concrete_p0c_services: [applepodcasts, applebooks, applemaps]
 p1_core_aggregates: [tencent, bytedance, alibaba, ant, huawei, xiaomi, jingdong, pinduoduo, meituan, baidu, netease, kuaishou]
 p2_core_aggregates: [amazon, meta, oracle, adobe, salesforce, atlassian, cloudflare, openai, anthropic, xai, databricks, snowflake, stripe, paypal]
+verified_priority_wave:
+  p1: [huawei-cloud, mi-cloud, jd-cloud, kugou, kuwo, quanmin-k-ge]
+  p2: [amazonmusic, audible, goodreads, messenger, adobe-firefly, adobe-stock, adobe-fonts, openai-api, openai-platform, chatgpt, anthropic-claude, anthropic-platform, xai-grok, stripe-dashboard, venmo]
+  state: candidate_only
+  source_evidence: official_web
