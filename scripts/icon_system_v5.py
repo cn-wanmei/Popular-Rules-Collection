@@ -317,12 +317,20 @@ def discover_services_from_ir(ir_path: Path) -> list[dict]:
     entities = doc.get("entities") or doc.get("entity") or {}
     service_ids = entities.get("services") if isinstance(entities, dict) else []
     views = doc.get("views") or {}
+    by_id: dict = {}
     catalog = views.get("service_catalog") if isinstance(views, dict) else None
-    by_id = {}
     if isinstance(catalog, list):
         for item in catalog:
             if isinstance(item, dict) and item.get("service_id"):
                 by_id[str(item["service_id"])] = item
+    # semantic_ir_v2 compact shape: views.services = {id: {display_name, provider}}
+    services_view = views.get("services") if isinstance(views, dict) else None
+    if isinstance(services_view, dict):
+        for sid, meta in services_view.items():
+            if isinstance(meta, dict):
+                by_id.setdefault(str(sid), meta)
+            else:
+                by_id.setdefault(str(sid), {})
     rows = []
     for sid in service_ids or list(by_id):
         sid = str(sid)
