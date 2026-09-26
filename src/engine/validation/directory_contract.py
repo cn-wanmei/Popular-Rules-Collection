@@ -47,14 +47,17 @@ def _provider_metadata(root: Path) -> tuple[dict[str,str], dict[str,set[str]]]:
 
 def _entity_expectation(root: Path,path: Path,aggregates:dict[str,str],services:dict[str,set[str]]) -> tuple[str,str,str|None]:
     parts=path.relative_to(root).parts
+    if len(parts)==3 and parts[0] in _ENTITY_TYPES:
+        return _ENTITY_TYPES[parts[0]],parts[1],None
+    if parts==("china","china.yaml"):
+        return "domestic_aggregate","china",None
     if len(parts)==3:
         provider,name,_=parts
-        if provider=="china" and name=="china": return "domestic_aggregate","china",None
         if provider in aggregates and name==provider and name not in services.get(provider,set()):
             return "provider_aggregate",aggregates.get(provider,provider),provider
         return "service",name,provider
     if len(parts)==4 and parts[0] in _ENTITY_TYPES:
-        return _ENTITY_TYPES[parts[0]],parts[1],None
+        return _ENTITY_TYPES[parts[0]],parts[2],None
     return "invalid","",None
 
 def _validate_rule_payload(root:Path,path:Path,expected_run_id:str|None,aggregates:dict[str,str],services:dict[str,set[str]])->list[str]:
