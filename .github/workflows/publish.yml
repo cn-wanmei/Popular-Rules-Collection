@@ -130,6 +130,26 @@ jobs:
           print("human rule distribution identity: PASS")
           PY
           echo "Downloaded exact immutable artifact ${ARTIFACT_NAME} (build_run=${EXPECTED_BUILD_RUN_ID}, head_sha=${EXPECTED_BUILD_SHA}, engine_run=${ENGINE_RUN_ID})."
+      - name: Verify build was a complete production run
+        shell: bash
+        run: |
+          set -euo pipefail
+          RUN_ID="$(cat release-candidate/run-id.txt)"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          run_id=Path("release-candidate/run-id.txt").read_text(encoding="utf-8").strip()
+          manifest=json.loads(Path(f"release-candidate/data/runs/{run_id}/run_manifest.json").read_text(encoding="utf-8"))
+          if manifest.get("skip_large") is not False:
+              raise SystemExit("publish blocked: build run was created with skip_large=true")
+          collection_id=manifest.get("collection_id")
+          day=Path("release-candidate/collection-date.txt").read_text(encoding="utf-8").strip()
+          collection=json.loads(Path(f"backup/{day}/manifests/_collection.json").read_text(encoding="utf-8"))
+          if collection_id != collection.get("collection_id"):
+              raise SystemExit(f"publish blocked: collection identity mismatch {collection_id!r} != {collection.get('collection_id')!r}")
+          print(f"complete production build verified: run={run_id} collection={collection_id}")
+          PY
+
       - name: Architecture Gate
         run: python scripts/architecture_gate.py
 
@@ -144,6 +164,14 @@ jobs:
           PYTHONPATH=. python scripts/immutable_source_lineage_gate.py \
             --collection-root "backup/${DAY}" \
             --json-out "release-candidate/immutable-source-lineage-publish.json"
+
+      - name: Production Collection Completeness Gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          DAY="$(cat release-candidate/collection-date.txt)"
+          PYTHONPATH=. python scripts/production_collection_gate.py \
+            --collection-root "backup/${DAY}"
 
       - name: Publish fail-closed policy gate
         run: python scripts/publish_fail_closed_gate.py --workflow .github/workflows/publish.yml --status-workflow .github/workflows/status.yml
