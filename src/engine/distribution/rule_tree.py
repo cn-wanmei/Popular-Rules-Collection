@@ -108,6 +108,7 @@ def build_rule_tree(
     *,
     hierarchy_path: Path,
     run_id: str,
+    policy_path: Path | None = None,
 ) -> dict[str, Any]:
     ir_dir = Path(ir_dir)
     output_dir = Path(output_dir)
