@@ -83,6 +83,22 @@ def test_semantic_probes_verify_behavior() -> None:
     assert all(item["expected"] == item["matched"] for item in report["probes"])
 
 
+def test_semantic_probes_are_idempotent_after_ir_projection() -> None:
+    rules, report = apply_semantic_intent(
+        [_rule('r1', 'alibaba'), _rule('r2', 'alipay'), _rule('r3', 'taobao'), _rule('r4', 'tmall')],
+        {'alibaba': ['r1', 'r2', 'r3', 'r4']},
+        policy_path=POLICY,
+    )
+    reparsed = [{k: v for k, v in rule.items() if k != 'provenance'} for rule in rules]
+    probe = validate_semantic_probes(
+        reparsed,
+        {'alibaba': ['r1', 'r2', 'r3', 'r4']},
+        policy_path=POLICY,
+        semantic_intent=report,
+    )
+    assert all(item['expected'] == item['matched'] for item in probe['probes'])
+
+
 def test_probe_fails_when_policy_projection_is_broken() -> None:
     rules = [
         _rule("r1", "alibaba"),
