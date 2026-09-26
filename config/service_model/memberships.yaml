@@ -12,7 +12,7 @@ aggregates:
   netease: {id: netease, kind: aggregate, provider: netease, scope: ecosystem, members: [netease-core, netease-shared, youdao, neteasemusic, netease163mail, neteasegames], exclude: []}
   atlassian: {id: atlassian, kind: aggregate, provider: atlassian, scope: ecosystem, members: [atlassian-core, atlassian-shared, bitbucket, trello], exclude: []}
   meta: {id: meta, kind: aggregate, provider: meta, scope: ecosystem, members: [meta-core, meta-shared, messenger], exclude: []}
-  tencent_music: {id: tencent_music, kind: aggregate, provider: tencent_music, scope: ecosystem, members: [qqmusic, kugou, kuwo, quanmin-k-ge], exclude: []}
+  tencent_music: {id: tencent_music, kind: aggregate, provider: tencent_music, scope: ecosystem, members: [kugou, kuwo, quanmin-k-ge], exclude: []}
   adobe: {id: adobe, kind: aggregate, provider: adobe, scope: ecosystem, members: [adobe-firefly, adobe-stock, adobe-fonts], exclude: []}
   openai: {id: openai, kind: aggregate, provider: openai, scope: ecosystem, members: [openai, openai-api, openai-platform, chatgpt], exclude: []}
   anthropic: {id: anthropic, kind: aggregate, provider: anthropic, scope: ecosystem, members: [claude, anthropic-claude, anthropic-platform], exclude: []}
