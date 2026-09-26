@@ -1,55 +1,65 @@
-name: Icon System 3.0
+name: Icon System 5.0
 
 on:
   pull_request:
     branches: [main]
     paths:
-      - "assets/icons/**"
-      - "config/icon_v3.yaml"
+      - "assets/icons/v5/**"
+      - "config/icon_v5.yaml"
       - "config/icons.yaml"
       - "config/official_sites.yaml"
-      - "schemas/icon_registry_v3.schema.json"
-      - "scripts/icon_system_v3.py"
-      - "scripts/icon_v3_*.py"
-      - "tests/test_icon_system_v3.py"
+      - "schemas/icon_registry_v5.schema.json"
+      - "scripts/icon_system_v5.py"
+      - "tests/test_icon_system_v5.py"
+      - "docs/ICON_SYSTEM_V5_PLAN.md"
+      - "rule/_index.yaml"
+      - "config/service_model/services.yaml"
   workflow_dispatch:
 
 concurrency:
-  group: icon-v3-${{ github.ref }}
+  group: icon-v5-\${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  icon-v3:
+  icon-v5-contract:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 20
     permissions:
       contents: read
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
-          ref: ${{ github.sha }}
+          ref: \${{ github.sha }}
           fetch-depth: 1
+
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: "3.12.14"
           cache: pip
           cache-dependency-path: requirements.lock
+
       - name: Install locked dependencies
         run: python -m pip install -r requirements.lock
+
       - name: Compile
-        run: python -m compileall -q scripts/icon_system_v3.py scripts/icon_v3_gate.py scripts/icon_v3_collect.py scripts/icon_v3_release.py tests/test_icon_system_v3.py
+        run: python -m compileall -q scripts/icon_system_v5.py tests/test_icon_system_v5.py
+
       - name: Unit tests
-        run: python -m unittest -v tests/test_icon_system_v3.py
-      - name: Build seven styles and client assets
-        run: python scripts/icon_system_v3.py all --out build/icon-v3
-      - name: Fail-closed Icon QA
-        run: python scripts/icon_v3_gate.py --build-root build/icon-v3
-      - name: Upstream source metadata
-        run: python scripts/icon_v3_collect.py --fetch --output build/icon-v3/upstream-sources.json
-      - name: Upload evidence
+        run: python -m unittest -v tests/test_icon_system_v5.py
+
+      - name: V5 Contract
+        run: python scripts/icon_system_v5.py contract
+
+      - name: Service discovery contract
+        run: |
+          python scripts/icon_system_v5.py discover \
+            --rule-index rule/_index.yaml \
+            --out build/icon-v5/service-discovery.json
+
+      - name: Upload V5 contract evidence
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
-          name: icon-system-v3-evidence-${{ github.sha }}
-          path: build/icon-v3
+          name: icon-system-v5-contract-\${{ github.sha }}
+          path: build/icon-v5
           if-no-files-found: error
           retention-days: 30

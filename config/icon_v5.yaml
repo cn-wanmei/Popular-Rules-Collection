@@ -1,0 +1,74 @@
+version: 5
+schema: icon_policy_v5
+active: true
+status: bootstrap
+variants:
+  - source_original
+  - glassmorphism
+  - soft_3d
+  - neo_skeuomorphism
+  - minimalist
+  - duotone_line
+  - mbe
+  - y2k
+clients:
+  - mihomo
+  - singbox
+  - surge
+  - shadowrocket
+  - quantumultx
+  - egern
+  - loon
+service_universe:
+  source: same_run_ir
+  bootstrap_projection: rule/_index.yaml
+  include_entities: [service]
+  exclude_entities: [provider_aggregate, aggregate, category, domestic_aggregate]
+  require_bidirectional_coverage: true
+official_sources:
+  explicit_registry: config/official_sites.yaml
+  candidate_from_rule_domains: true
+  discovery_requires_https: true
+acquisition:
+  user_agent: Popular-Rules-Collection/Icon-System-V5
+  timeout_seconds: 25
+  max_redirects: 3
+  max_bytes: 1048576
+  allowed_schemes: [https]
+  allowed_mime: [image/svg+xml, image/png, image/webp, image/x-icon, image/vnd.microsoft.icon, image/jpeg]
+  one_asset_fetch_per_run: true
+  cache_key: [service_id, resolved_source_url]
+  reject_svg: [script, foreignObject, iframe, object, embed]
+  reject_external_svg_refs: true
+source_priority:
+  - registered_official
+  - official_declared_icon
+  - official_manifest_icon
+  - official_site_favicon
+  - reviewed_third_party
+  - semantic_fallback
+rights:
+  official_site_asset_is_not_automatically_open_license: true
+  require_rights_basis: true
+  allowed_redistribution_status: [verified, review]
+  never_infer_license_from_origin: true
+  never_label_third_party_as_official: true
+render:
+  canvas: 512
+  png_sizes: [64, 128, 256]
+  qa_sizes: [24, 32, 48, 64, 128, 256]
+  renderer_version: prc-icon-renderer-v5.0.0
+lineage:
+  required: [run_id, snapshot_id, ir_digest, source_digest, renderer_version]
+  same_run_required: true
+  source_digest_is_distinct_from_rule_digest: true
+release:
+  fail_closed: true
+  require_8_of_8: true
+  forbid_active_missing: true
+  forbid_orphans: true
+  require_immutable_lineage: true
+historical:
+  v3: historical_only
+  v4: historical_only
+  legacy: historical_only

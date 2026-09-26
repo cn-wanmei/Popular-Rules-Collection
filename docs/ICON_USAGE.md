@@ -1,60 +1,95 @@
-# 图标使用说明 — Current V4
+# 图标使用说明 — Icon System V5
 
-当前 Release：`2026.09.25-prc-icon-matrix-3`
+当前架构：**Icon System V5 / Icon Matrix 8**
 
-`assets/icons/v4/release-pointer.json` 是当前图标体系入口，指向 V4 10 层 Icon Matrix。
+## 八层
 
-## 当前 10 层
+1. Source Original
+2. Glassmorphism
+3. Soft 3D / Claymorphism
+4. Neo-Skeuomorphism
+5. Minimalist Glyph & Multi-color Flat
+6. Two-tone / Broken Line
+7. MBE Illustration
+8. Y2K / Synthwave
 
-1. Official / Brand Native
-2. Lucide
-3. Tabler Icons
-4. Phosphor
-5. Material Symbols
-6. Fluent UI System Icons
-7. Heroicons
-8. Remix Icon
-9. Hugeicons
-10. Solar Icons
+## Identity 解析
 
-## 解析链
+~~~text
+Service ID
+   ↓
+Icon Registry V5
+   ↓
+Icon Identity
+   ↓
+Source Original + 7 Derived Variants
+~~~
 
-```text
-Service ID / Rule Path
-        ↓
-assets/icons/v4/service-index.json
-        ↓
-primary layer
-        ↓
-asset URL
-```
+不要根据服务名猜图标 URL。
 
-不要根据服务名猜测图标地址；以 `service-index.json` 的 `raw` 字段为准。
+优先从 Registry 的 source.source_url 以及对应 variant 的 path 读取。
 
-## 选择规则
+## Source 原则
 
-### 有可信品牌身份
+来源优先级：
 
-`Official → 已验证 V3 brand asset`
+Registered Official → Official Declared → Manifest → Official-Origin Favicon → Reviewed Third-Party → Semantic Fallback
 
-不对真实品牌 Logo 重新做九种 UI 风格仿制。
+注意：
 
-### 没有可信品牌身份
+- 官方网站来源 ≠ 自动获得开放许可证。
+- favicon 是 official-origin asset 时，也不能自动声称它就是官方品牌 Logo。
+- 第三方品牌资产不得标记为 official。
+- 无品牌身份的语义 fallback 不得冒充品牌。
 
-`9-style semantic fallback`
+## 八层关系
 
-fallback 是「语义覆盖」，不是品牌认证。
+Source Original 是 identity source。
 
-## 安全边界
+其它七层：
 
-- 不把 fallback 标记为官方 Logo。
-- 不把 favicon 当作永久主图标。
-- strategy / network / dataset 不冒充品牌身份。
-- 第三方参考库只定义视觉语言，不改变服务身份事实。
-- V3 资产仍是品牌图标的 previous-good / compatibility source。
+derived_from(source_digest)
 
-## 当前覆盖
+不会生成新的 icon_identity。
 
-当前 Rule Index 共 262 条，与 Icon Service Index 路径级一一对应，缺失 0、重复 0、额外 0；覆盖率 100%。
+## Coverage
 
-详见 `ICON_STYLE_GUIDE_V4.md` 与 `../assets/icons/v4/README.md`。
+V5 的正式覆盖口径为 current_run_service_ids，而不是固定写死某一个历史数量。
+
+每个 service：
+
+8 / 8
+
+缺失任何一层：
+
+release = blocked
+
+同时检查：
+
+service → icon
+
+和：
+
+icon → active service
+
+## Run / Lineage
+
+V5 必须绑定：
+
+- run_id
+- snapshot_id
+- ir_digest
+- source_digest
+- renderer_version
+
+Source digest 与 Rule digest 分离。
+
+## 客户端
+
+客户端通过 preferred_style 选择视觉层，不重新抓取图标，不改变 Icon Identity。
+
+## 历史版本
+
+V3/V4/Legacy 仅作为历史兼容和回滚依据。
+
+V5 active 后，新的 service icon 只进入 V5。
