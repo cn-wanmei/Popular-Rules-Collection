@@ -12,13 +12,17 @@ from pathlib import Path
 from urllib.parse import urljoin, urlparse
 from urllib.request import HTTPRedirectHandler, Request, build_opener
 import xml.etree.ElementTree as ET
+import sys
 
 import yaml
+
+ROOT=Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0,str(ROOT))
 
 from scripts.icon_v5_renderers import RENDERERS
 from scripts.icon_v5_renderers.common import svg_data_url
 
-ROOT=Path(__file__).resolve().parents[1]
 POLICY=ROOT/"config/icon_v5.yaml"
 OFFICIAL_SITES=ROOT/"config/official_sites.yaml"
 DEFAULT_CACHE=ROOT/"assets/icons/v5/source"
@@ -73,8 +77,10 @@ def discover_services(*,rule_index:Path|None=None,ir_path:Path|None=None)->list[
 
 def candidate_domains(root: Path,row:dict)->list[tuple[str,int]]:
     path=root/row['rule_path']
+    if row.get('domains'):
+        return sorted({(str(x).lower().strip('.'),2) for x in row.get('domains') if re.fullmatch(r'[a-z0-9.-]+\.[a-z]{2,}',str(x).lower().strip('.'))},key=lambda x:x[0])[:8]
     if not path.is_file(): return []
-    try: doc=load_yaml(path) if path.is_file() else {}
+    try: doc=load_yaml(path)
     except Exception: doc={}
     if row.get('domains'):
         return sorted({(str(x).lower().strip('.'),2) for x in row.get('domains') if re.fullmatch(r'[a-z0-9.-]+\\.[a-z]{2,}',str(x).lower().strip('.'))},key=lambda x:x[0])[:8]
