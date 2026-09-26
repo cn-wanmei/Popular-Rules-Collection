@@ -57,17 +57,29 @@ def discover_services_from_rule_index(rule_index: Path)->list[dict]:
     return sorted(rows,key=lambda x:x['service_id'])
 
 def discover_services_from_ir(ir_path: Path)->list[dict]:
-    doc=load_json(ir_path); raw=doc.get('services') or doc.get('service_index') or []
-    if isinstance(raw,dict): raw=list(raw.values())
+    doc=load_json(ir_path)
+    entities=doc.get('entities') or doc.get('entity') or {}
+    service_ids=entities.get('services') if isinstance(entities,dict) else []
+    views=doc.get('views') or doc.get('view') or {}
+    service_views=views.get('services') if isinstance(views,dict) else {}
+    memberships=doc.get('memberships') or {}
+    rule_map={str(r.get('id')):r for r in (doc.get('rules') or []) if isinstance(r,dict) and r.get('id')}
+    if isinstance(service_ids,dict): service_ids=list(service_ids.keys())
     rows=[]; seen=set()
-    for item in raw:
-        if not isinstance(item,dict): continue
-        sid=str(item.get('service_id') or item.get('id') or '').strip()
+    for sid_raw in service_ids or []:
+        sid=str(sid_raw).strip()
         if not sid: continue
         if sid in seen: raise ValueError(f'duplicate service_id in IR: {sid}')
         seen.add(sid)
-        rows.append({'service_id':sid,'display_name':str(item.get('display_name') or item.get('name') or sid),'provider':item.get('provider'),'rule_path':str(item.get('rule_path') or ''),'domains':list(item.get('domains') or []),'rule_count':int(item.get('rule_count') or 0)})
-    if not rows: raise ValueError('IR contains no discoverable services; expected services/service_index')
+        view=service_views.get(sid,{}) if isinstance(service_views,dict) else {}
+        if not isinstance(view,dict): view={}
+        domain_values=[]; rule_ids=memberships.get(sid,[]) if isinstance(memberships,dict) else []
+        for rid in rule_ids if isinstance(rule_ids,list) else []:
+            rule=rule_map.get(str(rid),{})
+            kind=str(rule.get('type') or '').upper(); value=str(rule.get('value') or '').strip()
+            if value and kind in {'DOMAIN','DOMAIN_SUFFIX','DOMAIN_KEYWORD'}: domain_values.append(value.lstrip('.'))
+        rows.append({'service_id':sid,'display_name':str(view.get('display_name') or view.get('name') or sid),'provider':view.get('provider'),'rule_path':'','domains':domain_values,'rule_count':len(rule_ids) if isinstance(rule_ids,list) else 0})
+    if not rows: raise ValueError('IR contains no entities.services')
     return sorted(rows,key=lambda x:x['service_id'])
 
 def discover_services(*,rule_index:Path|None=None,ir_path:Path|None=None)->list[dict]:
