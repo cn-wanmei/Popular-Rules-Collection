@@ -301,6 +301,7 @@ jobs:
             --require-latest
           python scripts/partial_production_invariant_gate.py --run-id "${RUN_ID}"
           python scripts/classify_service_artifacts.py
+          PYTHONPATH=. python scripts/relocate_unmapped_rules.py
           PYTHONPATH=. python scripts/rule_mapping_gate.py --require-empty
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

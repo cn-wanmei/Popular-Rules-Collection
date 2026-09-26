@@ -212,6 +212,12 @@ providers:
     aggregate: deepseek_aggregate
     services:
       deepseek: {display_name: DeepSeek, status: planned}
+  openai:
+    display_name: OpenAI
+    aggregate: openai_aggregate
+    services:
+      openai: {display_name: OpenAI, status: existing}
+      chatgpt: {display_name: ChatGPT, status: planned}
   perplexity:
     display_name: Perplexity
     aggregate: perplexity_aggregate
@@ -328,6 +334,7 @@ providers:
     aggregate: anthropic_aggregate
     services:
       anthropic: {display_name: Anthropic, status: existing}
+      claude: {display_name: Claude, status: existing}
   blizzard:
     display_name: "Blizzard Entertainment"
     aggregate: blizzard_aggregate
