@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
     inputs:
       skip_large:
-        description: "Skip mega service sets for a fast collection"
+        description: "Diagnostic-only partial collection; never hand off to production Build/Publish"
         type: boolean
         default: false
 
@@ -160,7 +160,7 @@ jobs:
           exit 1
 
       - name: Trigger Build Client Rules
-        if: ${{ steps.commit.outputs.changed == 'true' }}
+        if: ${{ steps.commit.outputs.changed == 'true' && inputs.skip_large != true }}
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
@@ -173,3 +173,7 @@ jobs:
             -f skip_large="${{ inputs.skip_large }}" \
             -f dry_run=false
           echo "Build Client Rules dispatched for collection ${{ steps.date.outputs.day }}."
+
+      - name: Skip production handoff for partial collection
+        if: ${{ steps.commit.outputs.changed == 'true' && inputs.skip_large == true }}
+        run: echo "skip_large=true is diagnostic-only; production Build/Publish handoff is intentionally blocked."
