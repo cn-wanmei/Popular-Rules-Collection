@@ -173,3 +173,5 @@ services:
   baidu-zhidao: {id: baidu-zhidao, provider: baidu, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   kuaishou: {id: kuaishou, provider: kuaishou, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   kuaishou-open: {id: kuaishou-open, provider: kuaishou, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  huawei-core: {id: huawei-core, provider: huawei, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: huawei}
+  huawei-shared: {id: huawei-shared, provider: huawei, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
