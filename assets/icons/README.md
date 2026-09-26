@@ -1,19 +1,18 @@
 # Icons
 
-当前规划：Icon System V5 / Icon Matrix 8
+当前 active：**Icon System V5 / Icon Matrix 8**
 
-SSOT 文档：
+SSOT：
 
-- docs/ICON_SYSTEM_V5_PLAN.md
-- docs/ICON_USAGE.md
+- `docs/ICON_SYSTEM_V5_PLAN.md`
+- `assets/icons/v5/registry.json`
+- `assets/icons/v5/release-pointer.json`
 
 ## Active
 
-V5：
+V5：`assets/icons/v5/`
 
-assets/icons/v5/
-
-包含：
+Coverage：**146 / 146 services × 8/8**（含各 provider 下独立子服务）
 
 - Source Original
 - Glassmorphism
@@ -24,43 +23,33 @@ assets/icons/v5/
 - MBE Illustration
 - Y2K / Synthwave
 
+完整 SVG/PNG 包：Release [`icon-v5-rc1`](https://github.com/cn-wanmei/Popular-Rules-Collection/releases/tag/icon-v5-rc1)
+
 ## Historical
 
-以下仅保留历史兼容、回滚与审计：
-
-- v4/
-- v3/
-- legacy
-
-V3/V4 不再定义 V5 的身份、来源或覆盖口径。
+- `v4/` / `v3/` / `legacy` — 仅历史兼容与审计，不参与 V5 SSOT
 
 ## 生产原则
 
-~~~text
+```text
 same Run / Snapshot / IR
         ↓
 Icon Acquisition
         ↓
 Source Snapshot
         ↓
-Source Original
-        ↓
 7 independent renderers
         ↓
 QA + Coverage + Lineage
         ↓
 Immutable Release
-~~~
-
-规则文件、客户端生成物和图标系统均为同一 Run 的兄弟投影。
-
-规则文件不得自身联网抓取图标；客户端也不得绕过 Icon Registry 各自抓取。
+```
 
 ## 命令
 
-~~~bash
+```bash
 python scripts/icon_system_v5.py contract
 python scripts/icon_system_v5.py discover --rule-index rule/_index.yaml --out build/icon-v5/service-discovery.json
 python scripts/icon_system_v5.py build --rule-index rule/_index.yaml --out build/icon-v5 --strict
-python scripts/icon_system_v5.py gate --registry build/icon-v5/registry.json --strict
-~~~
+python scripts/icon_system_v5.py gate --registry build/icon-v5/registry.json --rule-index rule/_index.yaml --strict
+```
