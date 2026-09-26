@@ -1,0 +1,50 @@
+name: Directory Layout v2 Migration
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/migrate_directory_layout_v2.py"
+      - ".github/workflows/directory-layout-v2-migration.yml"
+
+jobs:
+  migrate:
+    if: github.event.head_commit.message != 'chore(migrate): apply directory layout v2'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12.14"
+      - run: python -m pip install -r requirements.lock
+      - name: Apply migration
+        run: PYTHONPATH=. python scripts/migrate_directory_layout_v2.py
+      - name: Verify migration
+        run: |
+          set -euo pipefail
+          test ! -e rule/12306/12306.yaml
+          test -s rule/12306/12306/12306.yaml
+          test ! -e rule/apple/apple.yaml
+          test -s rule/apple/apple/apple.yaml
+          test -s rule/apple/appletv/appletv.yaml
+          test ! -e generated/mihomo/12306/12306.yaml
+          test -s generated/mihomo/12306/12306/12306.yaml
+          test ! -e generated/mihomo/apple/apple.yaml
+          test -s generated/mihomo/apple/apple/apple.yaml
+          test -s generated/mihomo/apple/appletv/appletv.yaml
+          python scripts/architecture_gate.py
+          PYTHONPATH=. python -m pytest tests/test_directory_layout_v2.py tests/test_manifest_validator.py -q
+          PYTHONPATH=. python scripts/directory_gate.py --root . --json-out reports/directory-layout-v2-gate.json
+      - name: Commit migration
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore(migrate): apply directory layout v2"
+          git push origin HEAD:main
