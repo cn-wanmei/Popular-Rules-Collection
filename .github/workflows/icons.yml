@@ -4,62 +4,90 @@ on:
   pull_request:
     branches: [main]
     paths:
-      - "assets/icons/v5/**"
-      - "config/icon_v5.yaml"
-      - "config/icons.yaml"
-      - "config/official_sites.yaml"
-      - "schemas/icon_registry_v5.schema.json"
-      - "scripts/icon_system_v5.py"
-      - "tests/test_icon_system_v5.py"
-      - "docs/ICON_SYSTEM_V5_PLAN.md"
-      - "rule/_index.yaml"
-      - "config/service_model/services.yaml"
+      - 'assets/icons/v5/**'
+      - 'config/icon_v5.yaml'
+      - 'config/official_sites.yaml'
+      - 'schemas/icon_registry_v5.schema.json'
+      - 'scripts/icon_system_v5.py'
+      - 'scripts/icon_v5_renderers/**'
+      - 'tests/test_icon_system_v5.py'
+      - 'docs/ICON_SYSTEM_V5_PLAN.md'
+      - 'rule/_index.yaml'
   workflow_dispatch:
+    inputs:
+      run_id: {description: 'Immutable Engine run id', required: false, default: ''}
+      snapshot_id: {description: 'Immutable snapshot id', required: false, default: ''}
+      ir_digest: {description: 'Semantic IR sha256', required: false, default: ''}
+      refresh: {description: 'Ignore source cache and reacquire icons', required: false, default: false, type: boolean}
 
 concurrency:
-  group: icon-v5-\${{ github.ref }}
+  group: icon-v5-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  icon-v5-contract:
+  contract:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     permissions:
       contents: read
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
-          ref: \${{ github.sha }}
+          ref: ${{ github.sha }}
           fetch-depth: 1
-
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
-          python-version: "3.12.14"
+          python-version: '3.12.14'
           cache: pip
           cache-dependency-path: requirements.lock
-
-      - name: Install locked dependencies
-        run: python -m pip install -r requirements.lock
-
-      - name: Compile
-        run: python -m compileall -q scripts/icon_system_v5.py tests/test_icon_system_v5.py
-
-      - name: Unit tests
-        run: python -m unittest -v tests/test_icon_system_v5.py
-
-      - name: V5 Contract
-        run: python scripts/icon_system_v5.py contract
-
-      - name: Service discovery contract
-        run: |
-          python scripts/icon_system_v5.py discover \
-            --rule-index rule/_index.yaml \
-            --out build/icon-v5/service-discovery.json
-
-      - name: Upload V5 contract evidence
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+      - run: python -m pip install -r requirements.lock
+      - run: python -m compileall -q scripts/icon_system_v5.py scripts/icon_v5_renderers tests/test_icon_system_v5.py
+      - run: python -m unittest -v tests/test_icon_system_v5.py
+      - run: python scripts/icon_system_v5.py contract
+      - run: python scripts/icon_system_v5.py discover --rule-index rule/_index.yaml --out build/icon-v5/service-discovery.json
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
-          name: icon-system-v5-contract-\${{ github.sha }}
+          name: icon-system-v5-contract-${{ github.sha }}
+          path: build/icon-v5
+          if-no-files-found: error
+          retention-days: 30
+
+  network-acquisition:
+    if: ${{ github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.14'
+          cache: pip
+          cache-dependency-path: requirements.lock
+      - run: python -m pip install -r requirements.lock
+      - name: Build V5 acquisition package
+        run: >-
+          python scripts/icon_system_v5.py build
+          --rule-index rule/_index.yaml
+          --out build/icon-v5
+          --run-id '${{ inputs.run_id }}'
+          --snapshot-id '${{ inputs.snapshot_id }}'
+          --ir-digest '${{ inputs.ir_digest }}'
+          --strict
+          ${{ inputs.refresh && '--refresh' || '' }}
+      - name: Gate V5 package
+        run: >-
+          python scripts/icon_system_v5.py gate
+          --registry build/icon-v5/registry.json
+          --rule-index rule/_index.yaml
+          --strict
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: icon-system-v5-network-build-${{ github.sha }}
           path: build/icon-v5
           if-no-files-found: error
           retention-days: 30
