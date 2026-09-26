@@ -1,0 +1,22 @@
+version: 1
+schema: service_registry_v1
+baseline: 2026-09-26
+source_program: Popular-Rules-Source/config/service_completion_program.yaml
+rules:
+  service_identity_is_unique: true
+  candidate_is_not_production: true
+  self_built_requires_official_evidence: true
+  shared_infra_requires_review: true
+platforms:
+  google:
+    aggregate: google
+    concrete_p0c_services: [gmail, google-calendar, google-chat, google-contacts, google-docs, googledrive, google-forms, google-groups, google-meet, google-sheets, google-sites, google-slides, google-vids, google-workspace-studio, google-maps, google-photos, google-play, google-news, google-voice, google-earth]
+  microsoft:
+    aggregate: microsoft
+    concrete_p0c_services: [ms365-word, ms365-excel, ms365-powerpoint, ms365-onenote, ms365-planner, ms365-loop, ms365-mesh]
+    existing_nodes_to_augment: [outlook, teams]
+  apple:
+    aggregate: apple
+    concrete_p0c_services: [applepodcasts, applebooks, applemaps]
+p1_core_aggregates: [tencent, bytedance, alibaba, ant, huawei, xiaomi, jingdong, pinduoduo, meituan, baidu, netease, kuaishou]
+p2_core_aggregates: [amazon, meta, oracle, adobe, salesforce, atlassian, cloudflare, openai, anthropic, xai, databricks, snowflake, stripe, paypal]
