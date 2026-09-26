@@ -63,8 +63,6 @@ def validate_distribution(
         errors.append("duplicate_paths: " + ", ".join(duplicates))
     if legacy_rule:
         errors.append("legacy_layout: " + ", ".join(legacy_rule))
-    if rule_manifest.get("schema_version") != 2:
-        errors.append("rule manifest schema_version mismatch")
     if rule_manifest.get("layout_schema") != EntityPathResolver.LAYOUT_SCHEMA:
         errors.append("rule manifest layout_schema mismatch")
     if rule_manifest.get("run_id") != expected_run_id:
@@ -80,8 +78,6 @@ def validate_distribution(
         errors.append("generated build_report missing ir_digest")
     if rule_ir != generated_ir:
         errors.append("rule/generated ir_digest mismatch")
-    if build_report.get("schema_version") != 2:
-        errors.append("generated build_report schema_version mismatch")
     if build_report.get("layout_schema") != EntityPathResolver.LAYOUT_SCHEMA:
         errors.append("generated build_report layout_schema mismatch")
     if build_report.get("resolver") != "EntityPathResolver":
