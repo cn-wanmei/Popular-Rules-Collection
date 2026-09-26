@@ -12,7 +12,8 @@ on:
       - 'scripts/icon_v5_renderers/**'
       - 'tests/test_icon_system_v5.py'
       - 'docs/ICON_SYSTEM_V5_PLAN.md'
-      - 'rule/_index.yaml'
+      - 'rule/**'
+      - 'config/service_model/**'
   workflow_dispatch:
     inputs:
       run_id: {description: 'Immutable Engine run id', required: false, default: ''}
