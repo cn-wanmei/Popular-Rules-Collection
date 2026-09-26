@@ -1,3 +1,20 @@
+## [2026.09.26] — Directory Layout v2
+
+### Changed
+- Provider aggregate paths use provider/{aggregate}/{aggregate}.
+- Child services keep provider/{service}/{service}.
+- Generated client paths follow the same entity hierarchy.
+- EntityPathResolver is the shared output path contract.
+- Added fail-closed duplicate / legacy-layout validation and Run ID / Semantic IR digest checks.
+
+### Fixed
+- Restored provider aggregate artifacts that had been removed during the partial cutover.
+- Removed stale 12306 direct aggregate duplicates while preserving the registered 12306 service artifact.
+- Updated Rule Index, Generated Manifest and promotion metadata.
+
+### Documentation
+- Added docs/layout.md and aligned the root README with the new directory contract.
+
 ## [2026.09.25] — Icon Library V4 Visual Rebuild
 
 ### Changed
