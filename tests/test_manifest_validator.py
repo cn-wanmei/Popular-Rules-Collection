@@ -4,7 +4,7 @@ from src.engine.validation.manifest_validator import validate_distribution
 def _manifest(root, files):
     root.mkdir(parents=True, exist_ok=True)
     (root / "manifest.json").write_text(
-        '{"schema":"human_rule_distribution_manifest_v1","status":"ready","run_id":"run-1","ir_digest":"abc","layout_schema":"directory_layout_v2","files":' + str(files).replace("'", '"') + "}",
+        '{"schema":"human_rule_distribution_manifest_v1","schema_version":2,"status":"ready","run_id":"run-1","ir_digest":"abc","layout_schema":"directory_layout_v2","files":' + str(files).replace("'", '"') + "}",
         encoding="utf-8",
     )
 
