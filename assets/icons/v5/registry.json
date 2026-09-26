@@ -2,10 +2,10 @@
   "schema": "icon_registry_v5",
   "version": 5,
   "renderer_version": "prc-icon-renderer-v5.0.0",
-  "generated_at": "2026-09-26T07:24:55.285252+00:00",
-  "run_id": "20260925T002821756614Z-run",
-  "snapshot_id": "bootstrap-rule-index",
-  "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+  "generated_at": "2026-09-26T08:58:00.774677+00:00",
+  "run_id": "20260926T071821627709Z-run",
+  "snapshot_id": "20260926T071821627709Z-run",
+  "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
   "service_universe": {
     "source": "rule/_index.yaml",
     "count": 146
@@ -39,7 +39,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "25214",
-        "fetched_at": "2026-09-26T07:21:05.901729+00:00"
+        "fetched_at": "2026-09-26T08:48:23.254801+00:00"
       },
       "normalized": {
         "path": "normalized/12306.svg",
@@ -116,9 +116,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "fb8f0b4b3217544b3acbaa852a994383411c696e047af8e3be2461780d10029e",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -129,7 +129,7 @@
       "display_name": "1688",
       "provider": "alibaba",
       "rule_path": "alibaba/1688/1688.yaml",
-      "rule_count": 2,
+      "rule_count": 1,
       "icon_identity": "service:1688",
       "source": {
         "origin": "official_registered",
@@ -142,7 +142,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "9484",
-        "fetched_at": "2026-09-26T07:21:07.822619+00:00"
+        "fetched_at": "2026-09-26T08:48:25.131709+00:00"
       },
       "normalized": {
         "path": "normalized/1688.svg",
@@ -219,9 +219,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "563f9550b5c8ed02d8091cc7302a30afd2f9ebd747cce0598d7c4cbd71857546",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -236,7 +236,7 @@
       "icon_identity": "service:abc",
       "source": {
         "origin": "official_registered",
-        "homepage_url": "https://www.abchina.com/cn/",
+        "homepage_url": "https://www.abchina.com",
         "source_url": "https://www.abchina.com/favicon.ico",
         "content_type": "image/x-icon",
         "digest": "ee4cf23632b38cd3ba6d10b8e21e59aa3d5801ceec5ead1f34ca414189b0c150",
@@ -245,7 +245,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1150",
-        "fetched_at": "2026-09-26T07:21:10.641636+00:00"
+        "fetched_at": "2026-09-26T08:48:26.905970+00:00"
       },
       "normalized": {
         "path": "normalized/abc.svg",
@@ -322,9 +322,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "ee4cf23632b38cd3ba6d10b8e21e59aa3d5801ceec5ead1f34ca414189b0c150",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -340,29 +340,29 @@
       "source": {
         "origin": "official_registered",
         "homepage_url": "https://www.acfun.cn",
-        "source_url": "https://cdn.aixifan.com/ico/favicon.ico",
-        "content_type": "image/x-icon",
-        "digest": "45912eb39ed2e2010516a2bb07d8c226d2ff531e42fd977892ee900c4cc4a7e9",
+        "source_url": "https://www.acfun.cn/sr/icon-512x512.png",
+        "content_type": "image/png",
+        "digest": "90a7ad3b4eaa579048ec5f035cc24c14da8ecb87562355dde324d5f1560287c5",
         "rights_basis": "official_site_asset",
         "redistribution_status": "review",
         "resolution_reason": "registered_official",
         "http_status": 200,
-        "content_length": "4286",
-        "fetched_at": "2026-09-26T07:21:18.866524+00:00"
+        "content_length": "236147",
+        "fetched_at": "2026-09-26T08:52:33.845520+00:00"
       },
       "normalized": {
         "path": "normalized/acfun.svg",
-        "digest": "5abe23e9f35d24a6e2bb4ddf041db89db3839088a16deca662f21ba951570a3e"
+        "digest": "a6d30a5ac7703825ee6400522a38aa459282a7c1d0b2204db25430fd17af54c2"
       },
       "variants": {
         "source_original": {
-          "path": "assets/icons/v5/source/acfun.ico",
-          "digest": "45912eb39ed2e2010516a2bb07d8c226d2ff531e42fd977892ee900c4cc4a7e9",
-          "source_kind": "ico"
+          "path": "assets/icons/v5/source/acfun.png",
+          "digest": "90a7ad3b4eaa579048ec5f035cc24c14da8ecb87562355dde324d5f1560287c5",
+          "source_kind": "png"
         },
         "glassmorphism": {
           "path": "styles/glassmorphism/acfun.svg",
-          "digest": "31c193aa62028d2e3f834a57920910bb46bcb86390fe5f65a5b5b7bd40ee4b37",
+          "digest": "2828a85255819371179f22c12bcb7086b14c9dd64a4aa601cf9ccc3eb4298550",
           "png": {
             "64": "png/64/glassmorphism/acfun.png",
             "128": "png/128/glassmorphism/acfun.png",
@@ -371,7 +371,7 @@
         },
         "soft_3d": {
           "path": "styles/soft_3d/acfun.svg",
-          "digest": "f04e15740aedf397aaac7710e7c230bfda4bca2947c642f070394590ee8aa5f4",
+          "digest": "6103e9256c925d6d1fe9a5974622b05fa70d193c12a82be80ab67bea24ea241c",
           "png": {
             "64": "png/64/soft_3d/acfun.png",
             "128": "png/128/soft_3d/acfun.png",
@@ -380,7 +380,7 @@
         },
         "neo_skeuomorphism": {
           "path": "styles/neo_skeuomorphism/acfun.svg",
-          "digest": "04d051a4deccefcbe0b016f1c881845b377d33bd736f9264ed12135841d9cb7f",
+          "digest": "21bbf2bb2c5562e9bfc3f20c8d2b087beb9e44fba81368ee623c445004b03f8f",
           "png": {
             "64": "png/64/neo_skeuomorphism/acfun.png",
             "128": "png/128/neo_skeuomorphism/acfun.png",
@@ -389,7 +389,7 @@
         },
         "minimalist": {
           "path": "styles/minimalist/acfun.svg",
-          "digest": "fe0beba91d6aff18a12b136967eac5511477afbddbe297a5840141a9ae1a7b62",
+          "digest": "a0aa0bb0c67d68189c33bbc3b21e165a66220be860a3d0bb6846132baac31562",
           "png": {
             "64": "png/64/minimalist/acfun.png",
             "128": "png/128/minimalist/acfun.png",
@@ -398,7 +398,7 @@
         },
         "duotone_line": {
           "path": "styles/duotone_line/acfun.svg",
-          "digest": "2af7519e859768167b92ba5b00712b76292d3e7122097be5597e6987780a23d9",
+          "digest": "ecd8d761335d65f5824e37a6b60460dab3277f3f4c0ddf9a350401fa55f3c473",
           "png": {
             "64": "png/64/duotone_line/acfun.png",
             "128": "png/128/duotone_line/acfun.png",
@@ -407,7 +407,7 @@
         },
         "mbe": {
           "path": "styles/mbe/acfun.svg",
-          "digest": "f740142e2681129628468a9ad8b1cd4e85366292308f3b43badc02b78b3d5f83",
+          "digest": "cda077db58dcd9128448eb46422a84996fa0959addc2556f2495f92d55794fa0",
           "png": {
             "64": "png/64/mbe/acfun.png",
             "128": "png/128/mbe/acfun.png",
@@ -416,7 +416,7 @@
         },
         "y2k": {
           "path": "styles/y2k/acfun.svg",
-          "digest": "08a2651aa49b209601b481779032e9a24a8b564f69ac358b9eea59aedb9888fa",
+          "digest": "55e2f9c23aa390c44994c35bb52a100a6719d97e161b57b3819aed759a44791d",
           "png": {
             "64": "png/64/y2k/acfun.png",
             "128": "png/128/y2k/acfun.png",
@@ -425,10 +425,10 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
-        "source_digest": "45912eb39ed2e2010516a2bb07d8c226d2ff531e42fd977892ee900c4cc4a7e9",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
+        "source_digest": "90a7ad3b4eaa579048ec5f035cc24c14da8ecb87562355dde324d5f1560287c5",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
       "release_eligible": true
@@ -442,7 +442,7 @@
       "icon_identity": "service:ai",
       "source": {
         "origin": "semantic_fallback",
-        "homepage_url": "",
+        "homepage_url": "https://openai.com",
         "source_url": "semantic://glyph/ai",
         "content_type": "image/svg+xml",
         "digest": "4fef77909d5ee777361c8f3dc8a92735618a08171e38b635f110774ecfb259b8",
@@ -451,7 +451,7 @@
         "resolution_reason": "semantic_fallback_glyph",
         "http_status": 200,
         "content_length": "285",
-        "fetched_at": "2026-09-26T07:21:19.219079+00:00"
+        "fetched_at": "2026-09-26T08:52:34.936358+00:00"
       },
       "normalized": {
         "path": "normalized/ai.svg",
@@ -528,9 +528,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "4fef77909d5ee777361c8f3dc8a92735618a08171e38b635f110774ecfb259b8",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -554,7 +554,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1692",
-        "fetched_at": "2026-09-26T07:21:19.955223+00:00"
+        "fetched_at": "2026-09-26T08:52:36.075627+00:00"
       },
       "normalized": {
         "path": "normalized/airbnb.svg",
@@ -631,9 +631,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "34ef20800623f6f8e5e0d0c99445d756a3e58863843e72268aed19f98f98a91c",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -648,7 +648,7 @@
       "icon_identity": "service:aisuite",
       "source": {
         "origin": "semantic_fallback",
-        "homepage_url": "",
+        "homepage_url": "https://openai.com",
         "source_url": "semantic://glyph/aisuite",
         "content_type": "image/svg+xml",
         "digest": "62398c8c50cc2bc5eedd241eaa321fce7e73261aeec7a306eee1c374ef59c2a9",
@@ -657,7 +657,7 @@
         "resolution_reason": "semantic_fallback_glyph",
         "http_status": 200,
         "content_length": "291",
-        "fetched_at": "2026-09-26T07:21:20.264326+00:00"
+        "fetched_at": "2026-09-26T08:52:36.880689+00:00"
       },
       "normalized": {
         "path": "normalized/aisuite.svg",
@@ -734,9 +734,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "62398c8c50cc2bc5eedd241eaa321fce7e73261aeec7a306eee1c374ef59c2a9",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -760,7 +760,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "4286",
-        "fetched_at": "2026-09-26T07:21:21.522296+00:00"
+        "fetched_at": "2026-09-26T08:52:39.681991+00:00"
       },
       "normalized": {
         "path": "normalized/alipay.svg",
@@ -837,9 +837,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "b662de58b15b34d1bf4d2a8bc546f7062a3faaa22acd2ecbbbad70f1e7f37a39",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -863,7 +863,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "16958",
-        "fetched_at": "2026-09-26T07:21:24.796594+00:00"
+        "fetched_at": "2026-09-26T08:52:42.489550+00:00"
       },
       "normalized": {
         "path": "normalized/amap.svg",
@@ -940,9 +940,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "d219abdca9f32fbe1b2bf870ee38860efc7307c35863f344e88c120ad54f53cd",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -966,7 +966,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "3175",
-        "fetched_at": "2026-09-26T07:21:25.073809+00:00"
+        "fetched_at": "2026-09-26T08:52:43.174776+00:00"
       },
       "normalized": {
         "path": "normalized/anthropic.svg",
@@ -1043,9 +1043,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "c91922918edeef31af5e969413c0eecf583707d14588de3fecc1d649b4303bf7",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -1069,7 +1069,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "22382",
-        "fetched_at": "2026-09-26T07:21:25.318611+00:00"
+        "fetched_at": "2026-09-26T08:52:43.363366+00:00"
       },
       "normalized": {
         "path": "normalized/applefirmware.svg",
@@ -1146,9 +1146,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "5493c61cf725cf3a1d63cd9d07de75b0d6faa5564e772f7d0a6074f341442938",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -1172,7 +1172,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "15267",
-        "fetched_at": "2026-09-26T07:21:26.273427+00:00"
+        "fetched_at": "2026-09-26T08:52:44.455916+00:00"
       },
       "normalized": {
         "path": "normalized/appleid.svg",
@@ -1249,9 +1249,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "0a75c3ad2fd01adc1f379ff94a1c36de852854de61bb3135e79b3d2f7fa537c9",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -1275,7 +1275,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "15406",
-        "fetched_at": "2026-09-26T07:21:26.554687+00:00"
+        "fetched_at": "2026-09-26T08:52:45.470806+00:00"
       },
       "normalized": {
         "path": "normalized/applemail.svg",
@@ -1352,9 +1352,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "5abc82b050a4a03e9e7a2e7eed1806e79c04b46fe7c5791a02b7a3da788b50d0",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -1378,7 +1378,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "22248",
-        "fetched_at": "2026-09-26T07:21:26.879102+00:00"
+        "fetched_at": "2026-09-26T08:52:46.121493+00:00"
       },
       "normalized": {
         "path": "normalized/appletv.svg",
@@ -1455,9 +1455,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "a1b026c2067bc4bd43aa50933fa3a40ed23676eb554e76e68078193d14016c5e",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -1481,7 +1481,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "2352",
-        "fetched_at": "2026-09-26T07:21:27.318389+00:00"
+        "fetched_at": "2026-09-26T08:52:47.132972+00:00"
       },
       "normalized": {
         "path": "normalized/aws.svg",
@@ -1558,9 +1558,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "00c07620175369ea6cd90de865de38cc11901ce9f90293971999d4a478441b42",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -1584,7 +1584,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "10340",
-        "fetched_at": "2026-09-26T07:21:27.990005+00:00"
+        "fetched_at": "2026-09-26T08:52:48.818130+00:00"
       },
       "normalized": {
         "path": "normalized/bahamut.svg",
@@ -1661,9 +1661,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "dc080cd5e96fa5aebf6701a3bf726dea550e1b829daf78a2c8abc5c1ee1fda6c",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -1687,7 +1687,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "4286",
-        "fetched_at": "2026-09-26T07:21:30.566413+00:00"
+        "fetched_at": "2026-09-26T08:52:57.953284+00:00"
       },
       "normalized": {
         "path": "normalized/baidunetdisk.svg",
@@ -1764,9 +1764,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "7e352d358af25cacc5bf410c4a9de04056967b83e3fb8defec30d694129cefb3",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -1790,7 +1790,7 @@
         "resolution_reason": "reviewed_local_seed",
         "http_status": 200,
         "content_length": "298",
-        "fetched_at": "2026-09-26T07:21:33.067851+00:00"
+        "fetched_at": "2026-09-26T08:53:03.600416+00:00"
       },
       "normalized": {
         "path": "normalized/battlenet.svg",
@@ -1867,9 +1867,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "fb731fcbe3e222dec46962e27d04515f861efb603b728ed5f2c69d6efd88a441",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -1893,7 +1893,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "662",
-        "fetched_at": "2026-09-26T07:21:33.502697+00:00"
+        "fetched_at": "2026-09-26T08:53:04.295559+00:00"
       },
       "normalized": {
         "path": "normalized/bbc.svg",
@@ -1970,9 +1970,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "c0924b1ab28c6bf0d80a0ca6c8d4c20532b8cf27da8ecf28d5e57109fe0b1bfb",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -1996,7 +1996,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "40766",
-        "fetched_at": "2026-09-26T07:21:35.594046+00:00"
+        "fetched_at": "2026-09-26T08:53:06.038934+00:00"
       },
       "normalized": {
         "path": "normalized/bilibili.svg",
@@ -2073,9 +2073,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "cccf93bd64c30b6c8670cb871460213029d11161555d63eef9ce791c825f2544",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -2099,7 +2099,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "4286",
-        "fetched_at": "2026-09-26T07:21:35.931701+00:00"
+        "fetched_at": "2026-09-26T08:53:06.934122+00:00"
       },
       "normalized": {
         "path": "normalized/binance.svg",
@@ -2176,9 +2176,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "8318ebbcb1cb4729eb0f78bb058dc618c3b63f9f9f0070a1a7a3265fdc79b833",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -2202,7 +2202,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "7783",
-        "fetched_at": "2026-09-26T07:21:36.279877+00:00"
+        "fetched_at": "2026-09-26T08:53:08.413959+00:00"
       },
       "normalized": {
         "path": "normalized/bluesky.svg",
@@ -2279,9 +2279,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "eb14a7ed3cead85c71ac878fcff399abd445d8d998ab76953f23fdecc02e90f5",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -2305,7 +2305,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1150",
-        "fetched_at": "2026-09-26T07:21:44.996125+00:00"
+        "fetched_at": "2026-09-26T08:53:16.020736+00:00"
       },
       "normalized": {
         "path": "normalized/boc.svg",
@@ -2382,9 +2382,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "d943ce00fb62c37509cbb07959cb941b6f85f9e6bfe7ce2f478c5317ed220467",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -2408,7 +2408,7 @@
         "resolution_reason": "reviewed_local_seed",
         "http_status": 200,
         "content_length": "295",
-        "fetched_at": "2026-09-26T07:21:50.484469+00:00"
+        "fetched_at": "2026-09-26T08:53:19.766592+00:00"
       },
       "normalized": {
         "path": "normalized/bocom.svg",
@@ -2485,9 +2485,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "2fceb59868fb238f55914493110a39415a2614e26c35d1d240889ad0eb03dbf9",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -2511,7 +2511,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "4824",
-        "fetched_at": "2026-09-26T07:21:51.845238+00:00"
+        "fetched_at": "2026-09-26T08:53:21.957522+00:00"
       },
       "normalized": {
         "path": "normalized/booking.svg",
@@ -2588,9 +2588,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "578d57776a91f8e07f48cf632be50e20d3d1d43a3f8546861f2e23740fec6b9a",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -2614,7 +2614,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "6154",
-        "fetched_at": "2026-09-26T07:21:52.800533+00:00"
+        "fetched_at": "2026-09-26T08:53:23.030409+00:00"
       },
       "normalized": {
         "path": "normalized/cainiao.svg",
@@ -2691,9 +2691,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "302f10e3139a6af3f3b1fb1c6e7257e049e2654108a08b5e2c4738e9656978ae",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -2717,7 +2717,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "4414",
-        "fetched_at": "2026-09-26T07:21:53.053386+00:00"
+        "fetched_at": "2026-09-26T08:53:23.908491+00:00"
       },
       "normalized": {
         "path": "normalized/canva.svg",
@@ -2794,9 +2794,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "ec2fbad47e598fe06c7a2b825224b3b1b8d8221f3002e6370e627d459ff0634a",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -2820,7 +2820,7 @@
         "resolution_reason": "reviewed_local_seed",
         "http_status": 200,
         "content_length": "293",
-        "fetched_at": "2026-09-26T07:21:58.781833+00:00"
+        "fetched_at": "2026-09-26T08:53:27.191881+00:00"
       },
       "normalized": {
         "path": "normalized/ccb.svg",
@@ -2897,9 +2897,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "003f0bb1497e9d3d3beb3323b0ce7caca44353162de467393a2d8da2759d0b0f",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -2923,7 +2923,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1150",
-        "fetched_at": "2026-09-26T07:21:59.630496+00:00"
+        "fetched_at": "2026-09-26T08:53:29.345513+00:00"
       },
       "normalized": {
         "path": "normalized/cctv.svg",
@@ -3000,9 +3000,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "874b465ad27f9d26906787511ff8f0ea670ed69f6dbd7390f45fc8cf944c06bf",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -3026,7 +3026,7 @@
         "resolution_reason": "reviewed_local_seed",
         "http_status": 200,
         "content_length": "293",
-        "fetched_at": "2026-09-26T07:22:02.620878+00:00"
+        "fetched_at": "2026-09-26T08:53:32.446353+00:00"
       },
       "normalized": {
         "path": "normalized/ceb.svg",
@@ -3103,9 +3103,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "af2034e912669cd926ffed818b4c82ee6667fad0ffeb6c84180e18dd0a5a7c3a",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -3121,29 +3121,29 @@
       "source": {
         "origin": "reviewed_local_seed",
         "homepage_url": "",
-        "source_url": "local://assets/icons/normalized/chinamobile.svg",
+        "source_url": "local://assets/icons/seed/chinamobile.svg",
         "content_type": "image/svg+xml",
-        "digest": "48205d2872d41a10be55f06b8c7fd569e3f0cefaed8beb4b5d9c26f410d01f98",
+        "digest": "779ce68511b8f0807e45f6e27b9833f2cb6f38fb541772f6847630980ad690b9",
         "rights_basis": "reviewed_local_seed",
         "redistribution_status": "review",
         "resolution_reason": "reviewed_local_seed",
         "http_status": 200,
-        "content_length": "743",
-        "fetched_at": "2026-09-26T07:22:09.069744+00:00"
+        "content_length": "305",
+        "fetched_at": "2026-09-26T08:53:38.327990+00:00"
       },
       "normalized": {
         "path": "normalized/chinamobile.svg",
-        "digest": "4de48a1083d7babdf7c426ff700391835bb039f7664ea2cf4158f86326a079c5"
+        "digest": "e845cc384e699f74bcb1c979840d95c97ed6f7cdd7372108453515313a9672da"
       },
       "variants": {
         "source_original": {
           "path": "assets/icons/v5/source/chinamobile.svg",
-          "digest": "48205d2872d41a10be55f06b8c7fd569e3f0cefaed8beb4b5d9c26f410d01f98",
+          "digest": "779ce68511b8f0807e45f6e27b9833f2cb6f38fb541772f6847630980ad690b9",
           "source_kind": "svg"
         },
         "glassmorphism": {
           "path": "styles/glassmorphism/chinamobile.svg",
-          "digest": "15116dc1fc9577d76b7430529fcf135554ec09a5e1e802dc9137229a6e18edd1",
+          "digest": "2ee954907ea6e080dbe77ecd37ef354b59931c531db4dd70edfec40fdcfe13b2",
           "png": {
             "64": "png/64/glassmorphism/chinamobile.png",
             "128": "png/128/glassmorphism/chinamobile.png",
@@ -3152,7 +3152,7 @@
         },
         "soft_3d": {
           "path": "styles/soft_3d/chinamobile.svg",
-          "digest": "014fe7d9b23e646850ef93b78aa871aa7e5919e0bc6038e5446b9d5586345b8f",
+          "digest": "a073a888f21c1752c703287c1637f5384013dc3cee5b9e8fd29fe0975390aa7a",
           "png": {
             "64": "png/64/soft_3d/chinamobile.png",
             "128": "png/128/soft_3d/chinamobile.png",
@@ -3161,7 +3161,7 @@
         },
         "neo_skeuomorphism": {
           "path": "styles/neo_skeuomorphism/chinamobile.svg",
-          "digest": "8782938db437e455156e894ea6b90714b25d484a2617cd8bc0f902f16c9070bc",
+          "digest": "45cea8f4ec0af10568e0940bbc9941b18e90efd027872cff036d9b4d0f8128be",
           "png": {
             "64": "png/64/neo_skeuomorphism/chinamobile.png",
             "128": "png/128/neo_skeuomorphism/chinamobile.png",
@@ -3170,7 +3170,7 @@
         },
         "minimalist": {
           "path": "styles/minimalist/chinamobile.svg",
-          "digest": "a93ac8f8f1b791e73f23eb6ddcd658a1c29e39c82cf21e6e3aa918536775d06b",
+          "digest": "002df6589a70fe2d82842ee6595abfb1e3aeb5dca51a6631cffd30955b521255",
           "png": {
             "64": "png/64/minimalist/chinamobile.png",
             "128": "png/128/minimalist/chinamobile.png",
@@ -3179,7 +3179,7 @@
         },
         "duotone_line": {
           "path": "styles/duotone_line/chinamobile.svg",
-          "digest": "62cc9c9580308047c3a4a8172d2c65fb635830fc622c6a1495c1caf29462b2ce",
+          "digest": "c35dbe3581f76051043e613ff5f298711faa7e1c5481540328b8cb632e340276",
           "png": {
             "64": "png/64/duotone_line/chinamobile.png",
             "128": "png/128/duotone_line/chinamobile.png",
@@ -3188,7 +3188,7 @@
         },
         "mbe": {
           "path": "styles/mbe/chinamobile.svg",
-          "digest": "3b2c39031d6b73f95edede2681c14e5843181ab5b4ce97fcd4c36332e3c65b5d",
+          "digest": "76c2c27d5c51d775a0601883caac588cfcd5961a7c9a31eba4c80b16e322d715",
           "png": {
             "64": "png/64/mbe/chinamobile.png",
             "128": "png/128/mbe/chinamobile.png",
@@ -3197,7 +3197,7 @@
         },
         "y2k": {
           "path": "styles/y2k/chinamobile.svg",
-          "digest": "e41ed88cad1afa7e684c89081d007ed5b7315903fd9b7456ab10fae6e5174e27",
+          "digest": "11091054145ac29cc08e7098226b37f117a7acb49ac80b0748c002e5dbab03d4",
           "png": {
             "64": "png/64/y2k/chinamobile.png",
             "128": "png/128/y2k/chinamobile.png",
@@ -3206,10 +3206,10 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
-        "source_digest": "48205d2872d41a10be55f06b8c7fd569e3f0cefaed8beb4b5d9c26f410d01f98",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
+        "source_digest": "779ce68511b8f0807e45f6e27b9833f2cb6f38fb541772f6847630980ad690b9",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
       "release_eligible": true
@@ -3232,7 +3232,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "48371",
-        "fetched_at": "2026-09-26T07:22:12.774050+00:00"
+        "fetched_at": "2026-09-26T08:53:42.586148+00:00"
       },
       "normalized": {
         "path": "normalized/chinatelecom.svg",
@@ -3309,9 +3309,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "34e2e578f13f58908751549391327fce57cb58c484fa7b8a8dbd5b6151134826",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -3335,7 +3335,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1150",
-        "fetched_at": "2026-09-26T07:22:15.439871+00:00"
+        "fetched_at": "2026-09-26T08:53:47.648818+00:00"
       },
       "normalized": {
         "path": "normalized/chinaunicom.svg",
@@ -3412,9 +3412,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "4971cfe23fb3f442cde587d4c9f334a65720351a1b1d9f191bf6e7c4ed741709",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -3438,7 +3438,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "17542",
-        "fetched_at": "2026-09-26T07:22:18.190329+00:00"
+        "fetched_at": "2026-09-26T08:53:50.994949+00:00"
       },
       "normalized": {
         "path": "normalized/cmb.svg",
@@ -3515,9 +3515,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "8d60fe71baaa288eaab43c76caf2354c475040b38d3858f99a0cb3a17ea6207b",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -3541,7 +3541,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1150",
-        "fetched_at": "2026-09-26T07:22:21.244642+00:00"
+        "fetched_at": "2026-09-26T08:53:53.958296+00:00"
       },
       "normalized": {
         "path": "normalized/ctrip.svg",
@@ -3618,9 +3618,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "77c041422eac0aeeb1f7506cfc67cccfb9afd062ebabd6790e79117ebeeb6d47",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -3644,7 +3644,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "6194",
-        "fetched_at": "2026-09-26T07:22:21.637701+00:00"
+        "fetched_at": "2026-09-26T08:53:55.355123+00:00"
       },
       "normalized": {
         "path": "normalized/cursor.svg",
@@ -3721,9 +3721,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "a57fcff6994c83bd2acc0ea84d8b950b0ace6e00c1bf25d9abc7d15704de73db",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -3747,7 +3747,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "16958",
-        "fetched_at": "2026-09-26T07:22:24.227845+00:00"
+        "fetched_at": "2026-09-26T08:53:58.436142+00:00"
       },
       "normalized": {
         "path": "normalized/dewu.svg",
@@ -3824,9 +3824,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "93376efb9c77c57f9f1aef4208c0b48ad421ed45fc7d6c1a557c751769cdbcae",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -3850,7 +3850,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": null,
-        "fetched_at": "2026-09-26T07:22:24.650918+00:00"
+        "fetched_at": "2026-09-26T08:53:59.284601+00:00"
       },
       "normalized": {
         "path": "normalized/didi.svg",
@@ -3927,9 +3927,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "c948f3e8c878fb3505d4327b1b32342641a20015e96ff70437b3921930031ad1",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -3953,7 +3953,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "3116",
-        "fetched_at": "2026-09-26T07:22:24.870677+00:00"
+        "fetched_at": "2026-09-26T08:53:59.742029+00:00"
       },
       "normalized": {
         "path": "normalized/digitalocean.svg",
@@ -4030,9 +4030,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "6cc0fbb307c7fa878642b68b5ebdd6babf55ed19d015bb33d98c6cf78381be29",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -4056,7 +4056,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "11431",
-        "fetched_at": "2026-09-26T07:22:26.767894+00:00"
+        "fetched_at": "2026-09-26T08:54:01.643204+00:00"
       },
       "normalized": {
         "path": "normalized/dingding.svg",
@@ -4133,9 +4133,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "b3fb0715857df5d23213b5265166fabcb7f7b4b290890d7b5682a027cf39c85d",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -4159,7 +4159,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "35962",
-        "fetched_at": "2026-09-26T07:22:27.335709+00:00"
+        "fetched_at": "2026-09-26T08:54:02.764176+00:00"
       },
       "normalized": {
         "path": "normalized/disney.svg",
@@ -4236,9 +4236,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "b58d06685518f21a1c86868e832c7dfd0da3763f542a438b9a561cf50319630a",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -4262,7 +4262,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "2900",
-        "fetched_at": "2026-09-26T07:22:27.650333+00:00"
+        "fetched_at": "2026-09-26T08:54:03.371119+00:00"
       },
       "normalized": {
         "path": "normalized/docker.svg",
@@ -4339,9 +4339,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "5cb5caeeef34a0979a0b21640ea6bbbfb8345a9fff0d0e910c345ce4d0b65718",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -4365,7 +4365,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "16241",
-        "fetched_at": "2026-09-26T07:22:31.038894+00:00"
+        "fetched_at": "2026-09-26T08:54:07.325663+00:00"
       },
       "normalized": {
         "path": "normalized/doubao.svg",
@@ -4442,9 +4442,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "3f28577d66d871b84808041c7982e3a9163c8e024087e546650f340704fe92a4",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -4468,7 +4468,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "15406",
-        "fetched_at": "2026-09-26T07:22:31.771026+00:00"
+        "fetched_at": "2026-09-26T08:54:09.123326+00:00"
       },
       "normalized": {
         "path": "normalized/douyu.svg",
@@ -4545,9 +4545,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "b0f6ed478689f94269ab825a5af5f16ba50e7b6e2031686953b50f1ee81fa05e",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -4571,7 +4571,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "4286",
-        "fetched_at": "2026-09-26T07:22:32.661808+00:00"
+        "fetched_at": "2026-09-26T08:54:11.621873+00:00"
       },
       "normalized": {
         "path": "normalized/dropbox.svg",
@@ -4648,9 +4648,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "c0906d540d89dbe1f09b24f17b7f35b81350e8d381c1558b075c28ea913c450d",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -4674,7 +4674,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": null,
-        "fetched_at": "2026-09-26T07:22:33.041347+00:00"
+        "fetched_at": "2026-09-26T08:54:11.988325+00:00"
       },
       "normalized": {
         "path": "normalized/ea.svg",
@@ -4751,9 +4751,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "f91662fcf9369d49ac30f8c4fac39db6f81455037594e92820421ea81c27f060",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -4777,7 +4777,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1150",
-        "fetched_at": "2026-09-26T07:22:33.800454+00:00"
+        "fetched_at": "2026-09-26T08:54:12.648936+00:00"
       },
       "normalized": {
         "path": "normalized/ebay.svg",
@@ -4854,9 +4854,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "042bedf532330f2d71bf73a973d3852eebc9e523645f11130e3c2dada8e61f28",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -4880,7 +4880,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1476",
-        "fetched_at": "2026-09-26T07:22:36.947630+00:00"
+        "fetched_at": "2026-09-26T08:54:15.930959+00:00"
       },
       "normalized": {
         "path": "normalized/eleme.svg",
@@ -4957,9 +4957,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "57b86ba6696d4058b224b4fd691a8a0cec7d090391b60d10b9301c11198da8b3",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -4983,7 +4983,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": null,
-        "fetched_at": "2026-09-26T07:22:37.520248+00:00"
+        "fetched_at": "2026-09-26T08:54:17.073346+00:00"
       },
       "normalized": {
         "path": "normalized/elevenlabs.svg",
@@ -5060,9 +5060,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "7936b8ae0c53b049edec573876bfb2b44b450fdce10675bd98f29182833d373e",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -5086,7 +5086,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "7219",
-        "fetched_at": "2026-09-26T07:22:37.776925+00:00"
+        "fetched_at": "2026-09-26T08:54:17.625349+00:00"
       },
       "normalized": {
         "path": "normalized/emby.svg",
@@ -5163,9 +5163,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "7c83066c7032c373bc036337bc98f72bb234a89962182b021bd73c64979623c1",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -5181,29 +5181,29 @@
       "source": {
         "origin": "reviewed_local_seed",
         "homepage_url": "",
-        "source_url": "local://assets/icons/normalized/epic.svg",
+        "source_url": "local://assets/icons/seed/epic.svg",
         "content_type": "image/svg+xml",
-        "digest": "81f66bf7542581d2370988fb9b6a0183e2346959bee364cc9b750e26faaf00ff",
+        "digest": "3422f6c446bdb38f3e538ec7a7e3ab7be5517fc99eb0c09a1ca18b40b402ac7f",
         "rights_basis": "reviewed_local_seed",
         "redistribution_status": "review",
         "resolution_reason": "reviewed_local_seed",
         "http_status": 200,
-        "content_length": "3013",
-        "fetched_at": "2026-09-26T07:22:38.221444+00:00"
+        "content_length": "301",
+        "fetched_at": "2026-09-26T08:54:18.978689+00:00"
       },
       "normalized": {
         "path": "normalized/epic.svg",
-        "digest": "72d88fa97baeb40070f377efc3dd297948ba0f98afe4a909f88f10c3b505602d"
+        "digest": "df647ec9f24d3de4656cd5680072005935c061243732caae9e22a33fd46a01ca"
       },
       "variants": {
         "source_original": {
           "path": "assets/icons/v5/source/epic.svg",
-          "digest": "81f66bf7542581d2370988fb9b6a0183e2346959bee364cc9b750e26faaf00ff",
+          "digest": "3422f6c446bdb38f3e538ec7a7e3ab7be5517fc99eb0c09a1ca18b40b402ac7f",
           "source_kind": "svg"
         },
         "glassmorphism": {
           "path": "styles/glassmorphism/epic.svg",
-          "digest": "59582e612d01a1fad20b1936230f9f45dcb5e9d7235d89edb8da761cae6f5ec5",
+          "digest": "87d522d3ddd53af1a1e1b22a9b3eb147e906ceca7399e4beb8a77bab4efdf682",
           "png": {
             "64": "png/64/glassmorphism/epic.png",
             "128": "png/128/glassmorphism/epic.png",
@@ -5212,7 +5212,7 @@
         },
         "soft_3d": {
           "path": "styles/soft_3d/epic.svg",
-          "digest": "03688ce1b6965f81b83d4380d2d704594bd4030b99451506c005458b79bd9894",
+          "digest": "2b73c77fece9142d07f1aa4ccee8475a42352ddd817366ea4165f736f6a6ae8c",
           "png": {
             "64": "png/64/soft_3d/epic.png",
             "128": "png/128/soft_3d/epic.png",
@@ -5221,7 +5221,7 @@
         },
         "neo_skeuomorphism": {
           "path": "styles/neo_skeuomorphism/epic.svg",
-          "digest": "8b3bee4347b4d0233244ee5d7e20781885907ee7e70bbc0d6b873dbcfd883da1",
+          "digest": "d1bf50d25bb694a3601817b32fab7b75dce84dc2dad956cef20b22ccc2039589",
           "png": {
             "64": "png/64/neo_skeuomorphism/epic.png",
             "128": "png/128/neo_skeuomorphism/epic.png",
@@ -5230,7 +5230,7 @@
         },
         "minimalist": {
           "path": "styles/minimalist/epic.svg",
-          "digest": "ca37c1cc6adda893667be7b23f9bf08f0ee93cf73e54a714cd9fdf7e2f869a25",
+          "digest": "b96e34790bf5a9ab38aa17fbb922d52c14c20ed100d48457f436b1ca97bc3f76",
           "png": {
             "64": "png/64/minimalist/epic.png",
             "128": "png/128/minimalist/epic.png",
@@ -5239,7 +5239,7 @@
         },
         "duotone_line": {
           "path": "styles/duotone_line/epic.svg",
-          "digest": "a0354d0160bff9bf417d1bf776561e3d29f05fb5bb80feceaa436f269708b031",
+          "digest": "435afb379bbf04c8a18eb4b4f3367be6042060648a2304d806c6c2484858db7a",
           "png": {
             "64": "png/64/duotone_line/epic.png",
             "128": "png/128/duotone_line/epic.png",
@@ -5248,7 +5248,7 @@
         },
         "mbe": {
           "path": "styles/mbe/epic.svg",
-          "digest": "90bc9fd75ad7ce0a877add838e1c78dfdf6422b942974ac13d61ed29483c88bc",
+          "digest": "41089b6a293391cf008eac28ac45f69e3ad2d62cdfc2a37656ea3885016d3c35",
           "png": {
             "64": "png/64/mbe/epic.png",
             "128": "png/128/mbe/epic.png",
@@ -5257,7 +5257,7 @@
         },
         "y2k": {
           "path": "styles/y2k/epic.svg",
-          "digest": "46aafcee4cba54e936018a9a78a6f6fb1a3cb7b0eb5cfa4c29d0896fa64414ef",
+          "digest": "0f2e2f2f157e30d6c88e709bc0072f8d7e6db2b2ef48d77b273c2cbc5c9598e4",
           "png": {
             "64": "png/64/y2k/epic.png",
             "128": "png/128/y2k/epic.png",
@@ -5266,10 +5266,10 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
-        "source_digest": "81f66bf7542581d2370988fb9b6a0183e2346959bee364cc9b750e26faaf00ff",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
+        "source_digest": "3422f6c446bdb38f3e538ec7a7e3ab7be5517fc99eb0c09a1ca18b40b402ac7f",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
       "release_eligible": true
@@ -5292,7 +5292,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "20366",
-        "fetched_at": "2026-09-26T07:22:38.811640+00:00"
+        "fetched_at": "2026-09-26T08:54:19.468750+00:00"
       },
       "normalized": {
         "path": "normalized/facebook.svg",
@@ -5369,9 +5369,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "8924f44d76426a340b105cbdc5b93678c6b772e847b393f2568d94847c0d8d80",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -5395,7 +5395,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1915",
-        "fetched_at": "2026-09-26T07:22:39.654702+00:00"
+        "fetched_at": "2026-09-26T08:54:20.739183+00:00"
       },
       "normalized": {
         "path": "normalized/figma.svg",
@@ -5472,9 +5472,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "fd5c5885314352ef57d1cacbd6bdfc8ef963e8f0b9dff6da53a2bd6cfd6e9faf",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -5498,7 +5498,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "2763",
-        "fetched_at": "2026-09-26T07:22:40.126046+00:00"
+        "fetched_at": "2026-09-26T08:54:22.132543+00:00"
       },
       "normalized": {
         "path": "normalized/firebase.svg",
@@ -5575,9 +5575,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "f7d596ba99b42959b41076af51a73edae82cb366d8199ae465d42fcad144a70b",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -5601,7 +5601,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "16958",
-        "fetched_at": "2026-09-26T07:21:24.796594+00:00"
+        "fetched_at": "2026-09-26T08:52:42.489550+00:00"
       },
       "normalized": {
         "path": "normalized/gaode.svg",
@@ -5678,9 +5678,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "d219abdca9f32fbe1b2bf870ee38860efc7307c35863f344e88c120ad54f53cd",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -5695,7 +5695,7 @@
       "icon_identity": "service:garena",
       "source": {
         "origin": "official_registered",
-        "homepage_url": "https://intl.garena.com/",
+        "homepage_url": "https://www.garena.mx/",
         "source_url": "https://cdngarenanow-a.akamaihd.net/webmain/static/favicon.ico",
         "content_type": "application/octet-stream",
         "digest": "2718a74b957935c247823e5c371952a4f56a254d4ebd9bb66422630fd8d3c775",
@@ -5704,7 +5704,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "7406",
-        "fetched_at": "2026-09-26T07:22:46.843686+00:00"
+        "fetched_at": "2026-09-26T08:54:27.524423+00:00"
       },
       "normalized": {
         "path": "normalized/garena.svg",
@@ -5781,9 +5781,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "2718a74b957935c247823e5c371952a4f56a254d4ebd9bb66422630fd8d3c775",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -5807,7 +5807,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "958",
-        "fetched_at": "2026-09-26T07:22:47.158457+00:00"
+        "fetched_at": "2026-09-26T08:54:28.574578+00:00"
       },
       "normalized": {
         "path": "normalized/github.svg",
@@ -5884,9 +5884,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "74cf90ac2fe6624ab1056cacea11cf7ed4f8bef54bbb0e869638013bba45bc08",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -5910,7 +5910,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "6405",
-        "fetched_at": "2026-09-26T07:22:47.482670+00:00"
+        "fetched_at": "2026-09-26T08:54:29.575246+00:00"
       },
       "normalized": {
         "path": "normalized/gitlab.svg",
@@ -5987,9 +5987,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "8274a7c15c1c7c5a07fdb684f8a7e5b417fe74ea2321fdd1c830fc9b18b50cb0",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -6013,7 +6013,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "5430",
-        "fetched_at": "2026-09-26T07:22:47.706101+00:00"
+        "fetched_at": "2026-09-26T08:54:30.016360+00:00"
       },
       "normalized": {
         "path": "normalized/google-search.svg",
@@ -6090,9 +6090,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "6da5620880159634213e197fafca1dde0272153be3e4590818533fab8d040770",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -6116,7 +6116,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "9447",
-        "fetched_at": "2026-09-26T07:22:48.089998+00:00"
+        "fetched_at": "2026-09-26T08:54:31.460402+00:00"
       },
       "normalized": {
         "path": "normalized/googlecloud.svg",
@@ -6193,9 +6193,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "a332b54b620a2fa04413561c01c925cd40f936581c7bed52df424ecccc9c08b4",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -6219,7 +6219,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "15086",
-        "fetched_at": "2026-09-26T07:22:48.383168+00:00"
+        "fetched_at": "2026-09-26T08:54:32.546309+00:00"
       },
       "normalized": {
         "path": "normalized/googleearth.svg",
@@ -6296,9 +6296,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "bb1dd5d8c69776521d2a5fd53f980654de50260cc8ebe9a6a826a10b444a1c94",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -6322,7 +6322,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "2763",
-        "fetched_at": "2026-09-26T07:22:40.126046+00:00"
+        "fetched_at": "2026-09-26T08:54:22.132543+00:00"
       },
       "normalized": {
         "path": "normalized/googlefcm.svg",
@@ -6399,9 +6399,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "f7d596ba99b42959b41076af51a73edae82cb366d8199ae465d42fcad144a70b",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -6425,7 +6425,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "827",
-        "fetched_at": "2026-09-26T07:22:49.397312+00:00"
+        "fetched_at": "2026-09-26T08:54:34.843348+00:00"
       },
       "normalized": {
         "path": "normalized/googlevoice.svg",
@@ -6502,9 +6502,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "8657bd13763477ea9d924f71b889634fd0d7abb51417d0628be34202ccd17b69",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -6520,29 +6520,29 @@
       "source": {
         "origin": "reviewed_local_seed",
         "homepage_url": "",
-        "source_url": "local://assets/icons/normalized/hashicorp.svg",
+        "source_url": "local://assets/icons/seed/hashicorp.svg",
         "content_type": "image/svg+xml",
-        "digest": "a40566e2919ccf1ac03d954fa1e62c62b1f68e13708c09052c44dfcb0130e467",
+        "digest": "b5037c163814916200ae726262f77d3a0bc256181a069ea9949cbf45391c8adc",
         "rights_basis": "reviewed_local_seed",
         "redistribution_status": "review",
         "resolution_reason": "reviewed_local_seed",
         "http_status": 200,
-        "content_length": "547",
-        "fetched_at": "2026-09-26T07:22:49.865292+00:00"
+        "content_length": "300",
+        "fetched_at": "2026-09-26T08:54:36.281127+00:00"
       },
       "normalized": {
         "path": "normalized/hashicorp.svg",
-        "digest": "5c42a7953951bc8f2869b93523ea3a53da79fa230a326e232f1ab7ab3e478221"
+        "digest": "8e6eeaf9d796af5904ac0d9060ff1e8541be1177efdd43f42ede9be969a09175"
       },
       "variants": {
         "source_original": {
           "path": "assets/icons/v5/source/hashicorp.svg",
-          "digest": "a40566e2919ccf1ac03d954fa1e62c62b1f68e13708c09052c44dfcb0130e467",
+          "digest": "b5037c163814916200ae726262f77d3a0bc256181a069ea9949cbf45391c8adc",
           "source_kind": "svg"
         },
         "glassmorphism": {
           "path": "styles/glassmorphism/hashicorp.svg",
-          "digest": "0def1159972a6ef4b8be0e5f44e6bbc6f239ec21c6cb9e99ad4f0d14b7ec961b",
+          "digest": "dd20959a255196ab9cc013eb5aecfc96c12d809f3410c36ce4f1013f734d3d74",
           "png": {
             "64": "png/64/glassmorphism/hashicorp.png",
             "128": "png/128/glassmorphism/hashicorp.png",
@@ -6551,7 +6551,7 @@
         },
         "soft_3d": {
           "path": "styles/soft_3d/hashicorp.svg",
-          "digest": "a6bab997fb217e94c61b67c407b9a3831001233a5a657ed218130d6b6211b967",
+          "digest": "c23008cf5536aba97d29ce2234622c524b8f819dcbbdd3e7fb68d34dfb49cbad",
           "png": {
             "64": "png/64/soft_3d/hashicorp.png",
             "128": "png/128/soft_3d/hashicorp.png",
@@ -6560,7 +6560,7 @@
         },
         "neo_skeuomorphism": {
           "path": "styles/neo_skeuomorphism/hashicorp.svg",
-          "digest": "4a97f2663e57ad774a3fb7bcf2affe9e296d678624d337bf409410ce13e25827",
+          "digest": "914183474b5f0042043c32f9be377b8a5655fab32b0c12db8cc42890c9a2221e",
           "png": {
             "64": "png/64/neo_skeuomorphism/hashicorp.png",
             "128": "png/128/neo_skeuomorphism/hashicorp.png",
@@ -6569,7 +6569,7 @@
         },
         "minimalist": {
           "path": "styles/minimalist/hashicorp.svg",
-          "digest": "70d0a1f7771ac2c729f27b49b448996a62349d671202c6e4415d830240ce89dd",
+          "digest": "a50fc9564ec0a2bb97956c326e706f109fa1a817be8d1438db754bf8dba23531",
           "png": {
             "64": "png/64/minimalist/hashicorp.png",
             "128": "png/128/minimalist/hashicorp.png",
@@ -6578,7 +6578,7 @@
         },
         "duotone_line": {
           "path": "styles/duotone_line/hashicorp.svg",
-          "digest": "9c459bd9660356f6551d7e2c11f49aa04ca70275717bc61a03dfc77144e9a597",
+          "digest": "82e6f147bb8b64acc882631e97eda638518edf1705826bcb05d6615816b1f924",
           "png": {
             "64": "png/64/duotone_line/hashicorp.png",
             "128": "png/128/duotone_line/hashicorp.png",
@@ -6587,7 +6587,7 @@
         },
         "mbe": {
           "path": "styles/mbe/hashicorp.svg",
-          "digest": "6e8ef7ce9cc6704d1f3435875292748543b61901da4b5b8c06228c503d2d8446",
+          "digest": "b519c76ed36e3dc4eaf47c9b31aa0476f957e1dd393138a565cf2d73de5dfa29",
           "png": {
             "64": "png/64/mbe/hashicorp.png",
             "128": "png/128/mbe/hashicorp.png",
@@ -6596,7 +6596,7 @@
         },
         "y2k": {
           "path": "styles/y2k/hashicorp.svg",
-          "digest": "c2d7354560128f4234651fcae2a0721310a5c3cf788905be4b6665d7f0b558df",
+          "digest": "ee5035fc22206cd353fc88b5cc6d803932c00f1b9b1e2e48de80623831a3e42d",
           "png": {
             "64": "png/64/y2k/hashicorp.png",
             "128": "png/128/y2k/hashicorp.png",
@@ -6605,10 +6605,10 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
-        "source_digest": "a40566e2919ccf1ac03d954fa1e62c62b1f68e13708c09052c44dfcb0130e467",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
+        "source_digest": "b5037c163814916200ae726262f77d3a0bc256181a069ea9949cbf45391c8adc",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
       "release_eligible": true
@@ -6631,7 +6631,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "3157",
-        "fetched_at": "2026-09-26T07:22:50.534371+00:00"
+        "fetched_at": "2026-09-26T08:54:36.987403+00:00"
       },
       "normalized": {
         "path": "normalized/hbo.svg",
@@ -6708,9 +6708,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "def031c4890e1ba75c3f29404e01112304a1e224658cdc06dc30ffed3d0ba498",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -6728,27 +6728,27 @@
         "homepage_url": "https://www.heroku.com",
         "source_url": "https://www.heroku.com/wp-content/uploads/2025/01/apple-touch-icon-180x180-1.png?w=180",
         "content_type": "image/png",
-        "digest": "1f0ca3d19a56372316c4f681d192ae8466346f91c12de34dc576d7568732c00b",
+        "digest": "c169df3bfcca841d984b922b6aeebe386d2ad5f8da2bf6ac4fd11c3e42fb9c95",
         "rights_basis": "official_site_asset",
         "redistribution_status": "review",
         "resolution_reason": "registered_official",
         "http_status": 200,
-        "content_length": "9972",
-        "fetched_at": "2026-09-26T07:22:50.736948+00:00"
+        "content_length": "5626",
+        "fetched_at": "2026-09-26T08:54:37.910316+00:00"
       },
       "normalized": {
         "path": "normalized/heroku.svg",
-        "digest": "2a282d51b1a7b10ee2a4be8232094457bd57863035d29104b6df595b3b0cbf34"
+        "digest": "a1014dd5df52054c77b21490517b47f68bad1b2f1f3b26bed4282daf1b68b7d7"
       },
       "variants": {
         "source_original": {
           "path": "assets/icons/v5/source/heroku.png",
-          "digest": "1f0ca3d19a56372316c4f681d192ae8466346f91c12de34dc576d7568732c00b",
+          "digest": "c169df3bfcca841d984b922b6aeebe386d2ad5f8da2bf6ac4fd11c3e42fb9c95",
           "source_kind": "png"
         },
         "glassmorphism": {
           "path": "styles/glassmorphism/heroku.svg",
-          "digest": "048cc36a95a965949abebfbb72d6c54af8504a9d1eb15074e02ac091a67b7dc4",
+          "digest": "454f544354dc2b866a08ab11f6299857d20e7b167fbd1c27d5ab74ebb7c3827c",
           "png": {
             "64": "png/64/glassmorphism/heroku.png",
             "128": "png/128/glassmorphism/heroku.png",
@@ -6757,7 +6757,7 @@
         },
         "soft_3d": {
           "path": "styles/soft_3d/heroku.svg",
-          "digest": "843def40a70c570d8c217cf89dcdef23cb6099445885814c45a691c849a6d573",
+          "digest": "43346f50f796dd43c1dad0947fd9e64956068e8223ad6e3d75268480ff37cb2a",
           "png": {
             "64": "png/64/soft_3d/heroku.png",
             "128": "png/128/soft_3d/heroku.png",
@@ -6766,7 +6766,7 @@
         },
         "neo_skeuomorphism": {
           "path": "styles/neo_skeuomorphism/heroku.svg",
-          "digest": "4a6901ed15c6485a2ff654705bfb0aefff2b9111f38f7b00264800c568bc49c7",
+          "digest": "17cdde381a4489821e10621ea542f229ca77e407bcb3d9948c160482aff9b63d",
           "png": {
             "64": "png/64/neo_skeuomorphism/heroku.png",
             "128": "png/128/neo_skeuomorphism/heroku.png",
@@ -6775,7 +6775,7 @@
         },
         "minimalist": {
           "path": "styles/minimalist/heroku.svg",
-          "digest": "d620e902c2ceb14eb3fdaa56b2608c33696e0c684d323e4664dbbbb77a825266",
+          "digest": "67b96dbcab01c67d82e331b417f8e5ffd10b9305d7e33b076b752cdbe361c017",
           "png": {
             "64": "png/64/minimalist/heroku.png",
             "128": "png/128/minimalist/heroku.png",
@@ -6784,7 +6784,7 @@
         },
         "duotone_line": {
           "path": "styles/duotone_line/heroku.svg",
-          "digest": "b4bc4b1279f8af325ce4d5e54fd87bf4fdbb424a2c4722a2ec03a26748cfda6d",
+          "digest": "e8f6606a2c980017cfcc66dd04993c099b863169f524a935f48b4f05a1732422",
           "png": {
             "64": "png/64/duotone_line/heroku.png",
             "128": "png/128/duotone_line/heroku.png",
@@ -6793,7 +6793,7 @@
         },
         "mbe": {
           "path": "styles/mbe/heroku.svg",
-          "digest": "6984769cfe68bec1b2251ca4f334e626c6ab03d1b0bb70ceff089260da4add30",
+          "digest": "18af5d826d6eb323591673eb483b98f7c481547a23d3aa911c7fc2016808c900",
           "png": {
             "64": "png/64/mbe/heroku.png",
             "128": "png/128/mbe/heroku.png",
@@ -6802,7 +6802,7 @@
         },
         "y2k": {
           "path": "styles/y2k/heroku.svg",
-          "digest": "14bdcd8e8b569dfcbb4a535bdf4c299596231e9a57ecd745486073ccc6f90584",
+          "digest": "986aa5497dc2651795467559c6abdffaf42c96969aa58444ecc4bc981edc7294",
           "png": {
             "64": "png/64/y2k/heroku.png",
             "128": "png/128/y2k/heroku.png",
@@ -6811,10 +6811,10 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
-        "source_digest": "1f0ca3d19a56372316c4f681d192ae8466346f91c12de34dc576d7568732c00b",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
+        "source_digest": "c169df3bfcca841d984b922b6aeebe386d2ad5f8da2bf6ac4fd11c3e42fb9c95",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
       "release_eligible": true
@@ -6837,7 +6837,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "9662",
-        "fetched_at": "2026-09-26T07:22:53.269219+00:00"
+        "fetched_at": "2026-09-26T08:54:40.017184+00:00"
       },
       "normalized": {
         "path": "normalized/himalaya.svg",
@@ -6914,9 +6914,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "8639eac456f95fb5ef8da146e7908360fd7afd08249d858b2043dc0339db6293",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -6931,30 +6931,30 @@
       "icon_identity": "service:hulu",
       "source": {
         "origin": "official_registered",
-        "homepage_url": "https://www.hulu.com/welcome",
-        "source_url": "https://www.hulu.com/static/icons/apple-touch-icon.png",
+        "homepage_url": "https://www.disneyplus.com/",
+        "source_url": "https://static-assets.bamgrid.com/product/disneyplus/favicons/disPlus-favicon-180x180.7d56f648dc95f591721935193bc827cb.png",
         "content_type": "image/png",
-        "digest": "20c038b7c6993fe80ea06e8e0e6c84aefd87bbbe340fc6114fc9dce4b810da12",
+        "digest": "b58d06685518f21a1c86868e832c7dfd0da3763f542a438b9a561cf50319630a",
         "rights_basis": "official_site_asset",
         "redistribution_status": "review",
         "resolution_reason": "registered_official",
         "http_status": 200,
-        "content_length": "2017",
-        "fetched_at": "2026-09-26T07:22:54.050978+00:00"
+        "content_length": "35962",
+        "fetched_at": "2026-09-26T08:54:02.764176+00:00"
       },
       "normalized": {
         "path": "normalized/hulu.svg",
-        "digest": "bfeb8d2de91f7d0e537d7ce0b45a54abdec24e6fd1cf3bd9df54bcc49ff2d345"
+        "digest": "36f488a9eabb328160c03e78eb301e9346ce86045053c2b52cfefb1a647835ef"
       },
       "variants": {
         "source_original": {
           "path": "assets/icons/v5/source/hulu.png",
-          "digest": "20c038b7c6993fe80ea06e8e0e6c84aefd87bbbe340fc6114fc9dce4b810da12",
+          "digest": "b58d06685518f21a1c86868e832c7dfd0da3763f542a438b9a561cf50319630a",
           "source_kind": "png"
         },
         "glassmorphism": {
           "path": "styles/glassmorphism/hulu.svg",
-          "digest": "76424d44d47e605f2467a0e782791020a6785b1e1164fa5c8565bd1288464ca3",
+          "digest": "00add7a9c6d2f3fdef1d0bee10a57f76c32cb0861eaef4cc2c0bcefcf62f12db",
           "png": {
             "64": "png/64/glassmorphism/hulu.png",
             "128": "png/128/glassmorphism/hulu.png",
@@ -6963,7 +6963,7 @@
         },
         "soft_3d": {
           "path": "styles/soft_3d/hulu.svg",
-          "digest": "9a1808cc1c7a2178771dc1eb44e766bee3bac5e47095e31c7c1af53431294f92",
+          "digest": "49d7b13813eb91dba9bf6a2d20acd7d63dca0f55baabf27c4d8dd5ee29afba64",
           "png": {
             "64": "png/64/soft_3d/hulu.png",
             "128": "png/128/soft_3d/hulu.png",
@@ -6972,7 +6972,7 @@
         },
         "neo_skeuomorphism": {
           "path": "styles/neo_skeuomorphism/hulu.svg",
-          "digest": "605dba28c23a7ab6356e2756bb7c4da460607ca79ccfcedd8ac67ed16cb4d763",
+          "digest": "c51fef9bee4f0b863ee0a0e53344a6bbbf1ef86082bd6f0e975cbc51205e50c6",
           "png": {
             "64": "png/64/neo_skeuomorphism/hulu.png",
             "128": "png/128/neo_skeuomorphism/hulu.png",
@@ -6981,7 +6981,7 @@
         },
         "minimalist": {
           "path": "styles/minimalist/hulu.svg",
-          "digest": "58e83026f131095604a174ffa06cd8736c83b463d637932ab3d0fa0718406a97",
+          "digest": "1edf108ef5541fde1c3a628a3b6e1d4c1b29c718a621cfbdc4341eec26ceeefe",
           "png": {
             "64": "png/64/minimalist/hulu.png",
             "128": "png/128/minimalist/hulu.png",
@@ -6990,7 +6990,7 @@
         },
         "duotone_line": {
           "path": "styles/duotone_line/hulu.svg",
-          "digest": "9330f81113276783b661e4b03ec6a51723eef15afdae386885176f8dee274877",
+          "digest": "afadd9e652ade49840247ece83b3a20d376b9cde11a3414bc9f42b8922ec9591",
           "png": {
             "64": "png/64/duotone_line/hulu.png",
             "128": "png/128/duotone_line/hulu.png",
@@ -6999,7 +6999,7 @@
         },
         "mbe": {
           "path": "styles/mbe/hulu.svg",
-          "digest": "82d0bae485844be7dc2bf73592069f969dae44a001f220c772cc0d70ee918fac",
+          "digest": "f3a858da266011a770242bf3aa430694968388ff7f9ede9d161dd7815b7c515f",
           "png": {
             "64": "png/64/mbe/hulu.png",
             "128": "png/128/mbe/hulu.png",
@@ -7008,7 +7008,7 @@
         },
         "y2k": {
           "path": "styles/y2k/hulu.svg",
-          "digest": "6d33f6696649f8f5ca39dc22e9c36c274b71082972b8100f56224d10bb938534",
+          "digest": "078a2cc94b1b290eb5bc3cb2f79fff196b0bba108230b08bc0118e2247cf98ac",
           "png": {
             "64": "png/64/y2k/hulu.png",
             "128": "png/128/y2k/hulu.png",
@@ -7017,10 +7017,10 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
-        "source_digest": "20c038b7c6993fe80ea06e8e0e6c84aefd87bbbe340fc6114fc9dce4b810da12",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
+        "source_digest": "b58d06685518f21a1c86868e832c7dfd0da3763f542a438b9a561cf50319630a",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
       "release_eligible": true
@@ -7043,7 +7043,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1415",
-        "fetched_at": "2026-09-26T07:22:54.862622+00:00"
+        "fetched_at": "2026-09-26T08:54:42.797748+00:00"
       },
       "normalized": {
         "path": "normalized/huya.svg",
@@ -7120,9 +7120,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "24083005553e743a5f0c69991ad45928de3b9e89f97e67e78b4501c730e0bb6b",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -7146,7 +7146,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "2034",
-        "fetched_at": "2026-09-26T07:22:57.728285+00:00"
+        "fetched_at": "2026-09-26T08:54:44.662623+00:00"
       },
       "normalized": {
         "path": "normalized/icbc.svg",
@@ -7223,9 +7223,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "a2382fa766fd421dbee5c8a379bcd978b08a4cec0a40724ed4ec5e7ac5ff48b5",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -7249,7 +7249,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "22382",
-        "fetched_at": "2026-09-26T07:21:25.318611+00:00"
+        "fetched_at": "2026-09-26T08:52:43.363366+00:00"
       },
       "normalized": {
         "path": "normalized/icloudprivaterelay.svg",
@@ -7326,9 +7326,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "5493c61cf725cf3a1d63cd9d07de75b0d6faa5564e772f7d0a6074f341442938",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -7352,7 +7352,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "2730",
-        "fetched_at": "2026-09-26T07:22:58.484781+00:00"
+        "fetched_at": "2026-09-26T08:54:45.875311+00:00"
       },
       "normalized": {
         "path": "normalized/instagram.svg",
@@ -7429,9 +7429,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "5fc67217d19e913319a38a06cec24b8e7c57a0548bcf102dee5d52b17065446f",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -7455,7 +7455,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "32038",
-        "fetched_at": "2026-09-26T07:23:04.325758+00:00"
+        "fetched_at": "2026-09-26T08:54:49.308916+00:00"
       },
       "normalized": {
         "path": "normalized/iqiyi.svg",
@@ -7532,9 +7532,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "4134a7da324ec4060a2b11843d3bd8d5545b266a27ff72b0b82bddbc3e6a8b39",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -7558,7 +7558,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "6788",
-        "fetched_at": "2026-09-26T07:23:04.887016+00:00"
+        "fetched_at": "2026-09-26T08:54:50.498213+00:00"
       },
       "normalized": {
         "path": "normalized/jetbrains.svg",
@@ -7635,9 +7635,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "754e0bacaa46fa63273b1f6f7796bc917f6ed896f90bfeba16c7f0614ae21cee",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -7652,7 +7652,7 @@
       "icon_identity": "service:jingdong",
       "source": {
         "origin": "official_registered",
-        "homepage_url": "https://corporate.jd.com/home",
+        "homepage_url": "https://global.jd.com/",
         "source_url": "https://www.jd.com/favicon.ico",
         "content_type": "image/x-icon",
         "digest": "99adfd5e001df9645a32518bafaedfff7746575bf239e1fe9a236ea9f94ed0d4",
@@ -7661,7 +7661,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "25214",
-        "fetched_at": "2026-09-26T07:23:07.016209+00:00"
+        "fetched_at": "2026-09-26T08:54:53.253352+00:00"
       },
       "normalized": {
         "path": "normalized/jingdong.svg",
@@ -7738,9 +7738,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "99adfd5e001df9645a32518bafaedfff7746575bf239e1fe9a236ea9f94ed0d4",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -7764,7 +7764,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "32956",
-        "fetched_at": "2026-09-26T07:23:10.527590+00:00"
+        "fetched_at": "2026-09-26T08:54:57.236900+00:00"
       },
       "normalized": {
         "path": "normalized/kakaotalk.svg",
@@ -7841,9 +7841,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "a0939f151f03ceb81d0c659bce1c685c5d1d8ae4bc561da1f1ab7863677ab0df",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -7867,7 +7867,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "4286",
-        "fetched_at": "2026-09-26T07:23:13.420952+00:00"
+        "fetched_at": "2026-09-26T08:55:19.940785+00:00"
       },
       "normalized": {
         "path": "normalized/kuaishou.svg",
@@ -7944,9 +7944,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "b41bf5fb2d4ac584399902bb5b342f4b41e48c875053d962d3fe3d8a95abb4b3",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -7970,7 +7970,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1150",
-        "fetched_at": "2026-09-26T07:23:21.055842+00:00"
+        "fetched_at": "2026-09-26T08:55:26.891135+00:00"
       },
       "normalized": {
         "path": "normalized/kugou.svg",
@@ -8047,9 +8047,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "78339bbc8393aea26d56c4285488b17a16d60ddc4a698e6b2cfc5d753c91ef24",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -8073,7 +8073,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "2083",
-        "fetched_at": "2026-09-26T07:23:22.919675+00:00"
+        "fetched_at": "2026-09-26T08:55:30.531809+00:00"
       },
       "normalized": {
         "path": "normalized/kuwo.svg",
@@ -8150,9 +8150,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "5d4dc8f8e5c598656f1bb9527a62b82a336482e295c14dccab1591e7d3a67a92",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -8176,7 +8176,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "4286",
-        "fetched_at": "2026-09-26T07:23:28.572695+00:00"
+        "fetched_at": "2026-09-26T08:55:34.874370+00:00"
       },
       "normalized": {
         "path": "normalized/letv.svg",
@@ -8253,9 +8253,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "9ff2639ffb5ea67131098fff21b5ca8ae5865080da6f6b9841ac1b920a96a7ff",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -8279,7 +8279,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "4393",
-        "fetched_at": "2026-09-26T07:23:32.800722+00:00"
+        "fetched_at": "2026-09-26T08:55:43.206214+00:00"
       },
       "normalized": {
         "path": "normalized/line.svg",
@@ -8356,9 +8356,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "36ee297444a88fdddfcb5a83ea73406c552a28871e9346c5432c0a1d954316da",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -8382,7 +8382,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "24838",
-        "fetched_at": "2026-09-26T07:23:33.145480+00:00"
+        "fetched_at": "2026-09-26T08:55:43.863570+00:00"
       },
       "normalized": {
         "path": "normalized/linkedin.svg",
@@ -8459,9 +8459,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "19b079c09197fba68d021fa3ba394ec91703909ffd237efa3eb9a2bca13148ec",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -8485,7 +8485,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "15086",
-        "fetched_at": "2026-09-26T07:23:36.178527+00:00"
+        "fetched_at": "2026-09-26T08:55:47.548338+00:00"
       },
       "normalized": {
         "path": "normalized/meituan.svg",
@@ -8562,9 +8562,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "a6f4dd99edf8c49563be4c90ed0b509adb6b890d1a3c35caaa6d799a21c022de",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -8579,7 +8579,7 @@
       "icon_identity": "service:microsoftedge",
       "source": {
         "origin": "official_registered",
-        "homepage_url": "https://explore.microsoft.com/en-us/edge/?cs=909571841&form=MA13FJ",
+        "homepage_url": "https://explore.microsoft.com/en-us/edge/?cs=1405855778&form=MA13FJ",
         "source_url": "https://explore.microsoft.com/apple-touch-icon.png",
         "content_type": "image/png",
         "digest": "578bb8e292aa702811a3421e719f1e418924d11f3f51c2e7279c73a26ad86905",
@@ -8588,7 +8588,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "14180",
-        "fetched_at": "2026-09-26T07:23:37.044877+00:00"
+        "fetched_at": "2026-09-26T08:55:48.545329+00:00"
       },
       "normalized": {
         "path": "normalized/microsoftedge.svg",
@@ -8665,9 +8665,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "578bb8e292aa702811a3421e719f1e418924d11f3f51c2e7279c73a26ad86905",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -8691,7 +8691,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "915",
-        "fetched_at": "2026-09-26T07:23:37.553591+00:00"
+        "fetched_at": "2026-09-26T08:55:48.916432+00:00"
       },
       "normalized": {
         "path": "normalized/minecraft.svg",
@@ -8768,9 +8768,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "8cf9283469987a91b50dd9b7a924cd86c92c9e91514467d5df94bfb2eec01481",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -8794,7 +8794,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1417",
-        "fetched_at": "2026-09-26T07:23:37.794210+00:00"
+        "fetched_at": "2026-09-26T08:55:49.924424+00:00"
       },
       "normalized": {
         "path": "normalized/netlify.svg",
@@ -8871,9 +8871,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "3e79c01aa9a888d576441a5bc28288d70dd6b4ad1f8cae37c4f88e99543a4483",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -8888,7 +8888,7 @@
       "icon_identity": "service:nintendo",
       "source": {
         "origin": "official_registered",
-        "homepage_url": "https://www.nintendo.com/us/",
+        "homepage_url": "https://www.nintendo.com/es-mx/",
         "source_url": "https://assets.nintendo.com/image/upload/ncom/icons/fav-icons/apple-touch-icon.png",
         "content_type": "image/png",
         "digest": "ffd169baa5b931c28e76c6a1febbf0733d3e8b813e3b01b90ee31fdb09d6d2de",
@@ -8897,7 +8897,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "6142",
-        "fetched_at": "2026-09-26T07:23:38.116803+00:00"
+        "fetched_at": "2026-09-26T08:55:54.663402+00:00"
       },
       "normalized": {
         "path": "normalized/nintendo.svg",
@@ -8974,9 +8974,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "ffd169baa5b931c28e76c6a1febbf0733d3e8b813e3b01b90ee31fdb09d6d2de",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -9000,7 +9000,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "8078",
-        "fetched_at": "2026-09-26T07:23:38.394231+00:00"
+        "fetched_at": "2026-09-26T08:55:55.538398+00:00"
       },
       "normalized": {
         "path": "normalized/notion.svg",
@@ -9077,9 +9077,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "483846a85e43e22879445047b83b22033e70fcc25ab34809ebadb7f856507ee0",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -9094,7 +9094,7 @@
       "icon_identity": "service:okx",
       "source": {
         "origin": "official_registered",
-        "homepage_url": "https://www.okx.com/en-us",
+        "homepage_url": "https://www.okx.com",
         "source_url": "https://www.okx.com/cdn/assets/imgs/253/59830BB78B18A776.png",
         "content_type": "image/png",
         "digest": "2c13b2131e9568bf6946cf6e980440040a3dd09ec5a4ca750b7ec1c2310a7903",
@@ -9103,7 +9103,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "331",
-        "fetched_at": "2026-09-26T07:23:39.716008+00:00"
+        "fetched_at": "2026-09-26T08:55:56.674289+00:00"
       },
       "normalized": {
         "path": "normalized/okx.svg",
@@ -9180,9 +9180,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "2c13b2131e9568bf6946cf6e980440040a3dd09ec5a4ca750b7ec1c2310a7903",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -9197,7 +9197,7 @@
       "icon_identity": "service:oppo",
       "source": {
         "origin": "official_registered",
-        "homepage_url": "https://www.oppo.com/en/",
+        "homepage_url": "https://www.oppo.com/mx/",
         "source_url": "https://www.oppo.com/jimu/oppo-site/resources/images/favicon.ico",
         "content_type": "image/x-icon",
         "digest": "619fad8b67cd54f49d3c1424d16c278b28da8fe8d1811b2cf4174c00400f7cfb",
@@ -9206,7 +9206,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "16958",
-        "fetched_at": "2026-09-26T07:23:40.161349+00:00"
+        "fetched_at": "2026-09-26T08:55:57.026308+00:00"
       },
       "normalized": {
         "path": "normalized/oppo.svg",
@@ -9283,9 +9283,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "619fad8b67cd54f49d3c1424d16c278b28da8fe8d1811b2cf4174c00400f7cfb",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -9309,7 +9309,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "15406",
-        "fetched_at": "2026-09-26T07:23:40.581865+00:00"
+        "fetched_at": "2026-09-26T08:55:57.363068+00:00"
       },
       "normalized": {
         "path": "normalized/oracle.svg",
@@ -9386,9 +9386,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "2fd4f0ef64ea34fc2f73d168de23b663c4fb23fc24bd0619f4fa9e480e13891b",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -9403,7 +9403,7 @@
       "icon_identity": "service:paypal",
       "source": {
         "origin": "official_registered",
-        "homepage_url": "https://www.paypal.com/us/home",
+        "homepage_url": "https://www.paypal.com/mx/home",
         "source_url": "https://www.paypalobjects.com/marketing/web/icons/monogram/pp114.png",
         "content_type": "image/png",
         "digest": "49d7a91e2b9688e32d16cb9b1be1b61315cf7086b2fc66b51c2dcf9075fc1014",
@@ -9412,7 +9412,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1555",
-        "fetched_at": "2026-09-26T07:23:41.346214+00:00"
+        "fetched_at": "2026-09-26T08:55:58.041083+00:00"
       },
       "normalized": {
         "path": "normalized/paypal.svg",
@@ -9489,9 +9489,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "49d7a91e2b9688e32d16cb9b1be1b61315cf7086b2fc66b51c2dcf9075fc1014",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -9515,7 +9515,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "2741",
-        "fetched_at": "2026-09-26T07:23:43.149759+00:00"
+        "fetched_at": "2026-09-26T08:55:59.728242+00:00"
       },
       "normalized": {
         "path": "normalized/pinduoduo.svg",
@@ -9592,9 +9592,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "b4f29e73875ca7d6aa5d1bfcfdb2aa5893cd3602a4f3fd873c59acf1d49cbe53",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -9618,7 +9618,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "9375",
-        "fetched_at": "2026-09-26T07:23:48.541512+00:00"
+        "fetched_at": "2026-09-26T08:56:05.006856+00:00"
       },
       "normalized": {
         "path": "normalized/pingan.svg",
@@ -9695,9 +9695,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "bb9082bcce55bd7d0935ee6c261e0dec0ba7ea8c9403024f58deefda43ab0b92",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -9721,7 +9721,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "3352",
-        "fetched_at": "2026-09-26T07:23:49.026158+00:00"
+        "fetched_at": "2026-09-26T08:56:06.010849+00:00"
       },
       "normalized": {
         "path": "normalized/pinterest.svg",
@@ -9798,9 +9798,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "5410764149903d1db37bbd92d37aa6e08ff4c129bd13d7d9e65762312d4da774",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -9815,7 +9815,7 @@
       "icon_identity": "service:playstation",
       "source": {
         "origin": "official_registered",
-        "homepage_url": "https://www.playstation.com/en-us/",
+        "homepage_url": "https://www.playstation.com/es-mx/",
         "source_url": "https://gmedia.playstation.com/is/image/SIEPDC/ps-logo-favicon?$icon-128-128--t$",
         "content_type": "image/jpeg",
         "digest": "a68a661906560adcfb502d1fa250baec79d4586986efdd1d4c1c5d5df84e4fa0",
@@ -9824,7 +9824,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "8225",
-        "fetched_at": "2026-09-26T07:23:49.589040+00:00"
+        "fetched_at": "2026-09-26T08:56:07.020940+00:00"
       },
       "normalized": {
         "path": "normalized/playstation.svg",
@@ -9901,9 +9901,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "a68a661906560adcfb502d1fa250baec79d4586986efdd1d4c1c5d5df84e4fa0",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -9927,7 +9927,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "4286",
-        "fetched_at": "2026-09-26T07:23:58.682354+00:00"
+        "fetched_at": "2026-09-26T08:56:26.170405+00:00"
       },
       "normalized": {
         "path": "normalized/pptv.svg",
@@ -10004,9 +10004,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "74138aee282f5aa8c6a137fc80c21b29d7c3d349d53997da9894b45917da8db7",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -10030,7 +10030,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1651",
-        "fetched_at": "2026-09-26T07:23:59.205639+00:00"
+        "fetched_at": "2026-09-26T08:56:27.531952+00:00"
       },
       "normalized": {
         "path": "normalized/primevideo.svg",
@@ -10107,9 +10107,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "38de3345adfa48d16ec7a66dee64c7abf98a06bb57ce9dfae84fd56e96c4ed96",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -10133,7 +10133,7 @@
         "resolution_reason": "reviewed_local_seed",
         "http_status": 200,
         "content_length": "295",
-        "fetched_at": "2026-09-26T07:23:59.311998+00:00"
+        "fetched_at": "2026-09-26T08:56:27.611936+00:00"
       },
       "normalized": {
         "path": "normalized/private.svg",
@@ -10210,9 +10210,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "4e019314d5d65793d0e2cb45aedc514f44e99b0c81f10bc3b6956bbb0146c6ef",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -10236,7 +10236,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1150",
-        "fetched_at": "2026-09-26T07:24:01.317679+00:00"
+        "fetched_at": "2026-09-26T08:56:30.924720+00:00"
       },
       "normalized": {
         "path": "normalized/psbc.svg",
@@ -10313,9 +10313,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "bc8e67faacb1a075e30cf2a39a215ef1e70f434e86737c29238ac9609c10ac77",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -10339,7 +10339,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "713",
-        "fetched_at": "2026-09-26T07:24:05.399687+00:00"
+        "fetched_at": "2026-09-26T08:56:34.343128+00:00"
       },
       "normalized": {
         "path": "normalized/qqmail.svg",
@@ -10416,9 +10416,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "c2963244e7c78a619bf5bdb6d1fd34e605bc63558f5cc4fbeae0d6d5d1b49c77",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -10442,7 +10442,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "4286",
-        "fetched_at": "2026-09-26T07:24:07.961238+00:00"
+        "fetched_at": "2026-09-26T08:56:45.041961+00:00"
       },
       "normalized": {
         "path": "normalized/qqmusic.svg",
@@ -10519,9 +10519,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "4c47f906dbe8c1fb52f2128b91b563b5f3f05ed153ac267f062a5b66e566756b",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -10545,7 +10545,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "2441",
-        "fetched_at": "2026-09-26T07:24:08.172240+00:00"
+        "fetched_at": "2026-09-26T08:56:45.274486+00:00"
       },
       "normalized": {
         "path": "normalized/reddit.svg",
@@ -10622,9 +10622,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "3fcb0febd3450b5edbd536a86dbfe6dd7bad6bd39d3976801b069e14d15da5d3",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -10648,7 +10648,7 @@
         "resolution_reason": "reviewed_local_seed",
         "http_status": 200,
         "content_length": "298",
-        "fetched_at": "2026-09-26T07:24:08.298631+00:00"
+        "fetched_at": "2026-09-26T08:56:45.374782+00:00"
       },
       "normalized": {
         "path": "normalized/restricted.svg",
@@ -10725,9 +10725,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "f3c160f977e3a7fffabd4e4ff0e5a74414a8166c92a5b7101bc768b70000dd20",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -10751,7 +10751,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": null,
-        "fetched_at": "2026-09-26T07:24:08.660188+00:00"
+        "fetched_at": "2026-09-26T08:56:45.914472+00:00"
       },
       "normalized": {
         "path": "normalized/riotgames.svg",
@@ -10828,9 +10828,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "bc65fb6cf306c7de60abb905a93fbfc6262fec167899fbf853805e21bc58ab6d",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -10854,7 +10854,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "5911",
-        "fetched_at": "2026-09-26T07:24:09.129297+00:00"
+        "fetched_at": "2026-09-26T08:56:46.571208+00:00"
       },
       "normalized": {
         "path": "normalized/rockstar.svg",
@@ -10931,9 +10931,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "5882eb239a34a344bc223fa220a3039bc4e3a539d7846268f50b5163a5f7138f",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -10957,7 +10957,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": null,
-        "fetched_at": "2026-09-26T07:24:09.425497+00:00"
+        "fetched_at": "2026-09-26T08:56:47.600790+00:00"
       },
       "normalized": {
         "path": "normalized/scholar.svg",
@@ -11034,9 +11034,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "8dac42076bd03098a771ac315fa277e0b70fa3030cc708554d74ed506fa3c2de",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -11060,7 +11060,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "3754",
-        "fetched_at": "2026-09-26T07:24:09.670404+00:00"
+        "fetched_at": "2026-09-26T08:56:48.416245+00:00"
       },
       "normalized": {
         "path": "normalized/shopify.svg",
@@ -11137,9 +11137,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "b4f8929dca6d35346d63a49605eed3ab4f8ca0e706dfc5c3aa0a79eed98954fe",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -11163,7 +11163,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "702",
-        "fetched_at": "2026-09-26T07:24:10.139346+00:00"
+        "fetched_at": "2026-09-26T08:56:49.518212+00:00"
       },
       "normalized": {
         "path": "normalized/slack.svg",
@@ -11240,9 +11240,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "ca3872d0fb85ff9858bcbdc529d6e1db32c029c681c6e723e4f2ecb1c7defea6",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -11266,7 +11266,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "6999",
-        "fetched_at": "2026-09-26T07:24:10.540356+00:00"
+        "fetched_at": "2026-09-26T08:56:50.356713+00:00"
       },
       "normalized": {
         "path": "normalized/snapchat.svg",
@@ -11343,9 +11343,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "e43fdb8eb95a0cf5a5027633152640a8df4ab802ad13d498643ed2a4bed21d72",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -11369,7 +11369,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "6889",
-        "fetched_at": "2026-09-26T07:24:12.380682+00:00"
+        "fetched_at": "2026-09-26T08:56:53.657298+00:00"
       },
       "normalized": {
         "path": "normalized/sohu.svg",
@@ -11446,9 +11446,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "a203be242e01860f675a62a0427cbda398203de4d39dd317b1e45a267369d859",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -11472,7 +11472,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "3144",
-        "fetched_at": "2026-09-26T07:24:13.180068+00:00"
+        "fetched_at": "2026-09-26T08:56:55.108046+00:00"
       },
       "normalized": {
         "path": "normalized/soundcloud.svg",
@@ -11549,9 +11549,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "608fb5818e36946c66fe5173146d4ae81489a8bc3ec5cb8801093aa0123a3cd1",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -11575,7 +11575,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "5102",
-        "fetched_at": "2026-09-26T07:24:13.835817+00:00"
+        "fetched_at": "2026-09-26T08:56:55.993439+00:00"
       },
       "normalized": {
         "path": "normalized/speedtest.svg",
@@ -11652,9 +11652,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "a3448941adc8c86188d0e1b65d14cf605ece6296a17c5a7b257972cf22520398",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -11678,7 +11678,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "15086",
-        "fetched_at": "2026-09-26T07:24:14.232433+00:00"
+        "fetched_at": "2026-09-26T08:56:56.764673+00:00"
       },
       "normalized": {
         "path": "normalized/spotify.svg",
@@ -11755,9 +11755,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "0f31d2eacc14d9e4ff0462210d15547cbe67935d32713b8605629f0f6cf5f378",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -11781,7 +11781,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "38554",
-        "fetched_at": "2026-09-26T07:24:14.693248+00:00"
+        "fetched_at": "2026-09-26T08:56:57.310430+00:00"
       },
       "normalized": {
         "path": "normalized/steam.svg",
@@ -11858,9 +11858,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "9f890a9debcdfccc339149a7943be9aff9e4c9203c2fa37d5671a5b2c88503ad",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -11875,7 +11875,7 @@
       "icon_identity": "service:stripe",
       "source": {
         "origin": "official_registered",
-        "homepage_url": "https://stripe.com",
+        "homepage_url": "https://stripe.com/en-mx",
         "source_url": "https://images.stripeassets.com/fzn2n1nzq965/4vVgZi0ZMoEzOhkcv7EVwK/8cce6fdcf2733b2ec8e99548908847ed/favicon.png?w=180&h=180",
         "content_type": "image/png",
         "digest": "cb86ad335799c963a12003be1ef5ca21afe578fb4fa0592dd344294b42a5aba2",
@@ -11884,7 +11884,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "3143",
-        "fetched_at": "2026-09-26T07:24:15.397595+00:00"
+        "fetched_at": "2026-09-26T08:56:58.944424+00:00"
       },
       "normalized": {
         "path": "normalized/stripe.svg",
@@ -11961,9 +11961,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "cb86ad335799c963a12003be1ef5ca21afe578fb4fa0592dd344294b42a5aba2",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -11987,7 +11987,7 @@
         "resolution_reason": "reviewed_local_seed",
         "http_status": 200,
         "content_length": "292",
-        "fetched_at": "2026-09-26T07:24:15.503769+00:00"
+        "fetched_at": "2026-09-26T08:56:59.024474+00:00"
       },
       "normalized": {
         "path": "normalized/stun.svg",
@@ -12064,9 +12064,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "f030c33b38ee812c65e79e336f8062b9f8f66fdbb2e2cb48690f554f6c381088",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -12090,7 +12090,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "4540",
-        "fetched_at": "2026-09-26T07:24:16.182341+00:00"
+        "fetched_at": "2026-09-26T08:57:00.249661+00:00"
       },
       "normalized": {
         "path": "normalized/taobao.svg",
@@ -12167,9 +12167,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "c6c57174b28f92c3b5bf64b020ba8436862de7091c238ca898f252ed6d3ac8b5",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -12180,7 +12180,7 @@
       "display_name": "Tencent Cloud",
       "provider": "tencent",
       "rule_path": "tencent/tencentcloud/tencentcloud.yaml",
-      "rule_count": 1,
+      "rule_count": 105,
       "icon_identity": "service:tencentcloud",
       "source": {
         "origin": "official_registered",
@@ -12193,7 +12193,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "949",
-        "fetched_at": "2026-09-26T07:24:17.601101+00:00"
+        "fetched_at": "2026-09-26T08:57:01.755479+00:00"
       },
       "normalized": {
         "path": "normalized/tencentcloud.svg",
@@ -12270,9 +12270,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "5171df10b79863d76d591705e52b93b4c5295e64d874e41fca5ecac351f5f45e",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -12296,7 +12296,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "13689",
-        "fetched_at": "2026-09-26T07:24:20.295118+00:00"
+        "fetched_at": "2026-09-26T08:57:04.216287+00:00"
       },
       "normalized": {
         "path": "normalized/tencentmeeting.svg",
@@ -12373,9 +12373,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "40f08c632268086cff8bbbbe6c292b95ccf5effbb1f7dfa9966592ed40df48c9",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -12399,7 +12399,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "2552",
-        "fetched_at": "2026-09-26T07:24:22.053187+00:00"
+        "fetched_at": "2026-09-26T08:57:05.654349+00:00"
       },
       "normalized": {
         "path": "normalized/threads.svg",
@@ -12476,9 +12476,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "773d273b14d0463dccf3f587db8449b11ec23c805c9cad9ad2a783c5ab4cd8dd",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -12502,7 +12502,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "7406",
-        "fetched_at": "2026-09-26T07:24:22.487414+00:00"
+        "fetched_at": "2026-09-26T08:57:06.679231+00:00"
       },
       "normalized": {
         "path": "normalized/tidal.svg",
@@ -12579,9 +12579,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "dc0e7b523fa6989f293dcbb344b0ea021257ea90ad84577266fbb58ffec53aea",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -12605,7 +12605,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "192",
-        "fetched_at": "2026-09-26T07:24:22.998234+00:00"
+        "fetched_at": "2026-09-26T08:57:07.644626+00:00"
       },
       "normalized": {
         "path": "normalized/tmall.svg",
@@ -12682,9 +12682,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "46fc26e5398bc35cb6836d3d50b2f7eed0b2f9138e8bf6362201c2211d04b9ee",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -12708,7 +12708,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "4286",
-        "fetched_at": "2026-09-26T07:24:24.265250+00:00"
+        "fetched_at": "2026-09-26T08:57:09.133202+00:00"
       },
       "normalized": {
         "path": "normalized/tongcheng.svg",
@@ -12785,9 +12785,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "f850b35a0b4f2e30a29dbdbeb1c5c324ac321cd08e886137548d7040a745af1b",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -12811,7 +12811,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "2710",
-        "fetched_at": "2026-09-26T07:24:24.985480+00:00"
+        "fetched_at": "2026-09-26T08:57:10.799538+00:00"
       },
       "normalized": {
         "path": "normalized/trello.svg",
@@ -12888,9 +12888,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "6245384a876e446ac4c95de04e2598c8d68023d845f4151599584afabc6203ab",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -12914,7 +12914,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "276",
-        "fetched_at": "2026-09-26T07:24:25.243305+00:00"
+        "fetched_at": "2026-09-26T08:57:11.274147+00:00"
       },
       "normalized": {
         "path": "normalized/twitch.svg",
@@ -12991,9 +12991,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "896c7970517c9271ad64fc6279248ab0cafcd1ce236d2a02068650ec8cd928b0",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -13017,7 +13017,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "13160",
-        "fetched_at": "2026-09-26T07:24:25.980126+00:00"
+        "fetched_at": "2026-09-26T08:57:12.013012+00:00"
       },
       "normalized": {
         "path": "normalized/twitter.svg",
@@ -13094,9 +13094,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "a83542eb0563242949d7dbde720014fb7ab48ae14ed59f43eec34907cb90c477",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -13111,7 +13111,7 @@
       "icon_identity": "service:uber",
       "source": {
         "origin": "official_registered",
-        "homepage_url": "https://www.uber.com",
+        "homepage_url": "https://www.uber.com/mx/en/",
         "source_url": "https://www.uber.com/_static/bafeeed0a39bd111.png",
         "content_type": "image/png",
         "digest": "5973cf7d8e7c3725cb8037e943ea6e42936e8882e8d3cb0225d7d7c2c799d5fb",
@@ -13120,7 +13120,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1398",
-        "fetched_at": "2026-09-26T07:24:26.531051+00:00"
+        "fetched_at": "2026-09-26T08:57:13.058947+00:00"
       },
       "normalized": {
         "path": "normalized/uber.svg",
@@ -13197,9 +13197,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "5973cf7d8e7c3725cb8037e943ea6e42936e8882e8d3cb0225d7d7c2c799d5fb",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -13214,7 +13214,7 @@
       "icon_identity": "service:ubisoft",
       "source": {
         "origin": "official_registered",
-        "homepage_url": "https://www.ubisoft.com/en-us",
+        "homepage_url": "https://www.ubisoft.com/es-mx",
         "source_url": "https://static-dm.ubisoft.com/1wd-ubisoft-com/prod//_next/static/favicon.ico",
         "content_type": "image/vnd.microsoft.icon",
         "digest": "3068771b8da545750c18ba631ffff40085b2227c96ae28be839968fa4f20864f",
@@ -13223,7 +13223,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "93062",
-        "fetched_at": "2026-09-26T07:24:26.995626+00:00"
+        "fetched_at": "2026-09-26T08:57:15.800855+00:00"
       },
       "normalized": {
         "path": "normalized/ubisoft.svg",
@@ -13300,9 +13300,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "3068771b8da545750c18ba631ffff40085b2227c96ae28be839968fa4f20864f",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -13326,7 +13326,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "22588",
-        "fetched_at": "2026-09-26T07:24:27.901336+00:00"
+        "fetched_at": "2026-09-26T08:57:18.082328+00:00"
       },
       "normalized": {
         "path": "normalized/unionpay.svg",
@@ -13403,9 +13403,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "44fb39fd2ffca1347c2b8fa695ab3511025aff7566e91d9f365583535b91481f",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -13429,7 +13429,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "375",
-        "fetched_at": "2026-09-26T07:24:28.370526+00:00"
+        "fetched_at": "2026-09-26T08:57:19.069727+00:00"
       },
       "normalized": {
         "path": "normalized/vercel.svg",
@@ -13506,9 +13506,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "c38eb2bf7d235f4146dac4dba9812b4b79a91a1d144686938db21f29b79df0c2",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -13523,7 +13523,7 @@
       "icon_identity": "service:vivo",
       "source": {
         "origin": "official_registered",
-        "homepage_url": "https://www.vivo.com/en",
+        "homepage_url": "https://www.vivo.com/mx",
         "source_url": "https://www.vivo.com/favicon.ico",
         "content_type": "image/x-icon",
         "digest": "165a914ce6362e3c795a4dac39b5b4c5931846e402c692af00ce31af2882d95c",
@@ -13532,7 +13532,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "2081",
-        "fetched_at": "2026-09-26T07:24:33.244089+00:00"
+        "fetched_at": "2026-09-26T08:57:25.512750+00:00"
       },
       "normalized": {
         "path": "normalized/vivo.svg",
@@ -13609,9 +13609,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "165a914ce6362e3c795a4dac39b5b4c5931846e402c692af00ce31af2882d95c",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -13635,7 +13635,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "15086",
-        "fetched_at": "2026-09-26T07:24:33.498534+00:00"
+        "fetched_at": "2026-09-26T08:57:25.950802+00:00"
       },
       "normalized": {
         "path": "normalized/walmart.svg",
@@ -13712,9 +13712,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "f1b33bcf89cc6bd1250bff866ff90189ac7fa52eda7d0ed3a9a4ed041a6a1260",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -13738,7 +13738,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "667",
-        "fetched_at": "2026-09-26T07:24:35.336330+00:00"
+        "fetched_at": "2026-09-26T08:57:27.506815+00:00"
       },
       "normalized": {
         "path": "normalized/wecom.svg",
@@ -13815,9 +13815,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "3b008723baeeb52d8224af6efa66fc0b43e19df56e1d291115f8dac344b490d3",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -13832,7 +13832,7 @@
       "icon_identity": "service:weibo",
       "source": {
         "origin": "official_registered",
-        "homepage_url": "https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2F&domain=weibo.com&ua=Popular-Rules-Collection%2FIcon-System-V5&_rand=1790407476259&sudaref=",
+        "homepage_url": "https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2F&domain=weibo.com&ua=Popular-Rules-Collection%2FIcon-System-V5&_rand=1790413048853&sudaref=",
         "source_url": "https://passport.weibo.com/favicon.ico",
         "content_type": "image/x-icon",
         "digest": "db39034db39398bf56b93bfc5cb0fd232d0f686da12bcce5c108d5fbbaeb4cc4",
@@ -13841,7 +13841,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "5430",
-        "fetched_at": "2026-09-26T07:24:38.320426+00:00"
+        "fetched_at": "2026-09-26T08:57:30.991947+00:00"
       },
       "normalized": {
         "path": "normalized/weibo.svg",
@@ -13918,9 +13918,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "db39034db39398bf56b93bfc5cb0fd232d0f686da12bcce5c108d5fbbaeb4cc4",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -13944,7 +13944,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "4286",
-        "fetched_at": "2026-09-26T07:24:39.732791+00:00"
+        "fetched_at": "2026-09-26T08:57:32.868452+00:00"
       },
       "normalized": {
         "path": "normalized/wetv.svg",
@@ -14021,9 +14021,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "f520dcfc6f8dba2d12824aaa5130c6675dda760b0573cd422ac1fea48e2790fb",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -14047,7 +14047,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1133",
-        "fetched_at": "2026-09-26T07:24:40.368695+00:00"
+        "fetched_at": "2026-09-26T08:57:33.481374+00:00"
       },
       "normalized": {
         "path": "normalized/whatsapp.svg",
@@ -14124,9 +14124,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "1ab6db0cc2eb55d911f151b0aa339c55b6b225efcceddb8ff2050cab1410e347",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -14150,7 +14150,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1313",
-        "fetched_at": "2026-09-26T07:24:40.688719+00:00"
+        "fetched_at": "2026-09-26T08:57:33.991232+00:00"
       },
       "normalized": {
         "path": "normalized/wikipedia.svg",
@@ -14227,9 +14227,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "4c8bf96d667fa2e9f072bdd8e9f25c8ba6ba2ad55df1af7d9ea0dd575c12abee",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -14253,7 +14253,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1114",
-        "fetched_at": "2026-09-26T07:24:41.604686+00:00"
+        "fetched_at": "2026-09-26T08:57:35.296831+00:00"
       },
       "normalized": {
         "path": "normalized/wise.svg",
@@ -14330,9 +14330,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "0306b7127c224a8a0b95e74a080628119c534224d58a7c01e73630af3b9dbc2f",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -14356,7 +14356,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "5197",
-        "fetched_at": "2026-09-26T07:24:42.223425+00:00"
+        "fetched_at": "2026-09-26T08:57:36.562078+00:00"
       },
       "normalized": {
         "path": "normalized/xianyu.svg",
@@ -14433,9 +14433,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "32f54976f983e5fd93ed4b8d1e485eb4bd40aa1ad7359fbe2270323c213d144f",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -14459,7 +14459,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "2482",
-        "fetched_at": "2026-09-26T07:24:46.188187+00:00"
+        "fetched_at": "2026-09-26T08:57:42.657948+00:00"
       },
       "normalized": {
         "path": "normalized/xiaohongshu.svg",
@@ -14536,9 +14536,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "2912c4df1ab479d734ef132e9c45b4f17afa80b2aa3eaf4438acd54afc70b20a",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -14562,7 +14562,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "9662",
-        "fetched_at": "2026-09-26T07:22:53.269219+00:00"
+        "fetched_at": "2026-09-26T08:54:40.017184+00:00"
       },
       "normalized": {
         "path": "normalized/ximalaya.svg",
@@ -14639,9 +14639,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "8639eac456f95fb5ef8da146e7908360fd7afd08249d858b2043dc0339db6293",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -14665,7 +14665,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "1410",
-        "fetched_at": "2026-09-26T07:24:50.330051+00:00"
+        "fetched_at": "2026-09-26T08:57:48.346205+00:00"
       },
       "normalized": {
         "path": "normalized/youdao.svg",
@@ -14742,9 +14742,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "a676340a10eaf66f819ac6f93b9b8a92eebd304743d0017aaf2f9cdf5614608a",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -14759,30 +14759,30 @@
       "icon_identity": "service:youku",
       "source": {
         "origin": "official_registered",
-        "homepage_url": "https://www.youku.com",
-        "source_url": "https://www.youku.com/favicon.ico",
-        "content_type": "image/vnd.microsoft.icon",
-        "digest": "4c42f39c6e0254900256e70bb876eceacd0f5f2434ec6502d4e9d81de686a3da",
+        "homepage_url": "https://www.youku.com/ku/webhome",
+        "source_url": "https://img.alicdn.com/imgextra/i2/O1CN01BeAcgL1ywY0G5nSn8_!!6000000006643-2-tps-195-195.png",
+        "content_type": "image/png",
+        "digest": "9c478717154e99c0fb62105aaf601d34782d1768da7a428fd6e98116211e7999",
         "rights_basis": "official_site_asset",
         "redistribution_status": "review",
         "resolution_reason": "registered_official",
         "http_status": 200,
-        "content_length": "9662",
-        "fetched_at": "2026-09-26T07:24:52.716934+00:00"
+        "content_length": "5444",
+        "fetched_at": "2026-09-26T08:57:57.593419+00:00"
       },
       "normalized": {
         "path": "normalized/youku.svg",
-        "digest": "182d1fac03dafc561a692b6281c60d86439434b388b43b69d10e59eae2a71fb1"
+        "digest": "c9f0975e09a71da6c2f20951f0842ad8f1a17726e1fedd576cc236588a36c8b9"
       },
       "variants": {
         "source_original": {
-          "path": "assets/icons/v5/source/youku.ico",
-          "digest": "4c42f39c6e0254900256e70bb876eceacd0f5f2434ec6502d4e9d81de686a3da",
-          "source_kind": "ico"
+          "path": "assets/icons/v5/source/youku.png",
+          "digest": "9c478717154e99c0fb62105aaf601d34782d1768da7a428fd6e98116211e7999",
+          "source_kind": "png"
         },
         "glassmorphism": {
           "path": "styles/glassmorphism/youku.svg",
-          "digest": "c3b5d49b431bf84007f2080bef82b1634a89e2463770e4337297e905621ed8c8",
+          "digest": "0e9bad954de8682b54231e3e9ab3e4019c966af1faad4bfd5ce40a14dd816159",
           "png": {
             "64": "png/64/glassmorphism/youku.png",
             "128": "png/128/glassmorphism/youku.png",
@@ -14791,7 +14791,7 @@
         },
         "soft_3d": {
           "path": "styles/soft_3d/youku.svg",
-          "digest": "fe4082a555d3e1ac2a9ddc7e0c665fa952838cf2834cfb8cd6763359592902dc",
+          "digest": "14782b69863ecca086cfc7471b942c95867ad9b8d6407978c9d45da86aeb6b33",
           "png": {
             "64": "png/64/soft_3d/youku.png",
             "128": "png/128/soft_3d/youku.png",
@@ -14800,7 +14800,7 @@
         },
         "neo_skeuomorphism": {
           "path": "styles/neo_skeuomorphism/youku.svg",
-          "digest": "8f8d5e765e9e9b6d77ad4630f78ebb9911c03c548bf37f2f95efe2c26fe6f380",
+          "digest": "e071fd73dc31e1dd6f474aa055d351cfc1256ba8785a903354ea414d5d9cc787",
           "png": {
             "64": "png/64/neo_skeuomorphism/youku.png",
             "128": "png/128/neo_skeuomorphism/youku.png",
@@ -14809,7 +14809,7 @@
         },
         "minimalist": {
           "path": "styles/minimalist/youku.svg",
-          "digest": "953aa49c42436e7efc1610cde14728d5fda4de095a0645df695176713a5e4559",
+          "digest": "369771a558c0a9cd01f99074bc4fe8e030a8f999874513c17d40964e5d965c9f",
           "png": {
             "64": "png/64/minimalist/youku.png",
             "128": "png/128/minimalist/youku.png",
@@ -14818,7 +14818,7 @@
         },
         "duotone_line": {
           "path": "styles/duotone_line/youku.svg",
-          "digest": "8f5ad17f1001b6da52f9cca1dcf99703a3c1c6025f22d86c29d2f833d267b2d7",
+          "digest": "debd7e3521cd4c1b2faa893ebaf04cddadc3526aeaf033d348b47450c61fa75c",
           "png": {
             "64": "png/64/duotone_line/youku.png",
             "128": "png/128/duotone_line/youku.png",
@@ -14827,7 +14827,7 @@
         },
         "mbe": {
           "path": "styles/mbe/youku.svg",
-          "digest": "8e341657c47aab14a1dbb2e3a27d70d43d647161424552acf22ef28d57e5a012",
+          "digest": "7b6b3467d1035906cf11ed21f887f1d6b26305ee0cdebb6714218c28e43b62c5",
           "png": {
             "64": "png/64/mbe/youku.png",
             "128": "png/128/mbe/youku.png",
@@ -14836,7 +14836,7 @@
         },
         "y2k": {
           "path": "styles/y2k/youku.svg",
-          "digest": "64abd0e1bf650c6d055cfb71ca5d5064e74c315e889322c5697489096fa58369",
+          "digest": "db9a10128bf125e9919c3f7f0aaf4b6eaf718cf8742af664d47e30b18e550956",
           "png": {
             "64": "png/64/y2k/youku.png",
             "128": "png/128/y2k/youku.png",
@@ -14845,10 +14845,10 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
-        "source_digest": "4c42f39c6e0254900256e70bb876eceacd0f5f2434ec6502d4e9d81de686a3da",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
+        "source_digest": "9c478717154e99c0fb62105aaf601d34782d1768da7a428fd6e98116211e7999",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
       "release_eligible": true
@@ -14871,7 +14871,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "7045",
-        "fetched_at": "2026-09-26T07:24:54.663335+00:00"
+        "fetched_at": "2026-09-26T08:57:59.704866+00:00"
       },
       "normalized": {
         "path": "normalized/zhihu.svg",
@@ -14948,9 +14948,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "71383b441c36573dc7ad955ab67b95bf4a36e60de69e0d118ee6bef2a0fe85a7",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
@@ -14974,7 +14974,7 @@
         "resolution_reason": "registered_official",
         "http_status": 200,
         "content_length": "4286",
-        "fetched_at": "2026-09-26T07:24:55.147928+00:00"
+        "fetched_at": "2026-09-26T08:58:00.667014+00:00"
       },
       "normalized": {
         "path": "normalized/zoom.svg",
@@ -15051,9 +15051,9 @@
         }
       },
       "lineage": {
-        "run_id": "20260925T002821756614Z-run",
-        "snapshot_id": "bootstrap-rule-index",
-        "ir_digest": "24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310",
+        "run_id": "20260926T071821627709Z-run",
+        "snapshot_id": "20260926T071821627709Z-run",
+        "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
         "source_digest": "58b6fee1a883d9b798dea9dbf8f262fb8875e035bfa571792b8967c4c0434d26",
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
