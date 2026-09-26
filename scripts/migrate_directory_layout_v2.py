@@ -28,39 +28,57 @@ def dir_digest(path):
             if f.is_file() and f.suffix in EXTENSIONS: items.append((f.relative_to(path).as_posix(),sha(f)))
     return hashlib.sha256(json.dumps(items,ensure_ascii=False,sort_keys=True).encode()).hexdigest() if items else None
 def provider_model():
-    p=y(ROOT/"config/ruleset_hierarchy.yaml").get("providers") or {}
-    ids=[]; services={}
-    for raw,node in p.items():
-        if not isinstance(node,dict): continue
-        pid=str(raw).strip().casefold(); ids.append(pid)
-        services[pid]={str(s).strip().casefold() for s in (node.get("services") or {}) if str(s).strip()}
-    return sorted(set(ids)),services
+    p = y(ROOT / "config/ruleset_hierarchy.yaml").get("providers") or {}
+    ids, services, aggregates = [], {}, {}
+    for raw, node in p.items():
+        if not isinstance(node, dict):
+            continue
+        pid = str(raw).strip().casefold()
+        if not pid:
+            continue
+        ids.append(pid)
+        aggregates[pid] = str(node.get("aggregate") or pid).strip().casefold()
+        services[pid] = {str(s).strip().casefold() for s in (node.get("services") or {}) if str(s).strip()}
+    return sorted(set(ids)), services, aggregates
+
 def move_tree():
-    providers, services = provider_model()
+    providers, services, aggregates = provider_model()
     rm, gm = {}, {}
     special_rule = {"china", "category", "group", "aggregate", "unmapped"}
     rr = ROOT / "rule"
 
-    # Migrate every physical provider aggregate, not only entries present in
-    # ruleset_hierarchy.yaml. This covers legacy services such as 12306.
+    # Known hierarchy providers: move the provider aggregate to its aggregate
+    # identity directory. Unknown direct aggregates (for example 12306) are
+    # only removed when an already-existing nested same-name service proves
+    # that the direct file is a stale duplicate.
     if rr.is_dir():
         for directory in sorted(rr.iterdir()):
             if not directory.is_dir() or directory.name in special_rule:
                 continue
             provider = directory.name
             src = directory / f"{provider}.yaml"
-            dst = directory / provider / f"{provider}.yaml"
             if not src.is_file():
                 continue
-            dst.parent.mkdir(parents=True, exist_ok=True)
-            source_rel = src.relative_to(rr).as_posix()
-            target_rel = dst.relative_to(rr).as_posix()
-            if dst.exists():
-                src.unlink()
-                rm[source_rel] = None
-            else:
-                src.replace(dst)
+            if provider in aggregates:
+                aggregate = aggregates[provider]
+                dst = directory / aggregate / f"{aggregate}.yaml"
+                dst.parent.mkdir(parents=True, exist_ok=True)
+                source_rel = src.relative_to(rr).as_posix()
+                target_rel = dst.relative_to(rr).as_posix()
+                if dst.exists() and dst.read_bytes() != src.read_bytes():
+                    raise RuntimeError(f"conflicting rule aggregate target: {src} -> {dst}")
+                if not dst.exists():
+                    src.replace(dst)
+                else:
+                    src.unlink()
                 rm[source_rel] = target_rel
+            else:
+                nested = directory / provider / f"{provider}.yaml"
+                if nested.is_file():
+                    src.unlink()
+                    rm[src.relative_to(rr).as_posix()] = None
+                else:
+                    raise RuntimeError(f"unknown provider legacy aggregate without nested service target: {src}")
 
     gr = ROOT / "generated"
     special_generated = {"china", "categories", "_promotion"}
@@ -68,29 +86,32 @@ def move_tree():
         for client_dir in sorted(gr.iterdir()):
             if not client_dir.is_dir() or client_dir.name not in CLIENTS:
                 continue
-            client = client_dir.name
             for directory in sorted(client_dir.iterdir()):
                 if not directory.is_dir() or directory.name in special_generated:
                     continue
                 provider = directory.name
                 for ext in EXTENSIONS:
                     src = directory / f"{provider}{ext}"
-                    dst = directory / provider / f"{provider}{ext}"
                     if not src.is_file():
                         continue
+                    if provider in aggregates:
+                        aggregate = aggregates[provider]
+                        dst = directory / aggregate / f"{aggregate}{ext}"
+                    else:
+                        dst = directory / provider / f"{provider}{ext}"
                     dst.parent.mkdir(parents=True, exist_ok=True)
                     source_rel = src.relative_to(gr).as_posix()
                     target_rel = dst.relative_to(gr).as_posix()
-                    if dst.exists():
-                        src.unlink()
-                        gm[source_rel] = None
-                    else:
+                    if dst.exists() and dst.read_bytes() != src.read_bytes():
+                        if provider not in aggregates and dst.name == f"{provider}{ext}":
+                            raise RuntimeError(f"unknown provider nested service conflicts with legacy aggregate: {src} -> {dst}")
+                        raise RuntimeError(f"conflicting generated aggregate target: {src} -> {dst}")
+                    if not dst.exists():
                         src.replace(dst)
-                        gm[source_rel] = target_rel
-
-    return providers, services, rm, gm
-
-
+                    else:
+                        src.unlink()
+                    gm[source_rel] = target_rel if provider in aggregates else None
+    return providers, services, aggregates, rm, gm
 def rewrite_rule_metadata(rule_moves):
     rr = ROOT / "rule"
     idx_path = rr / "_index.yaml"
@@ -157,12 +178,12 @@ def rewrite_generated_metadata(gm):
                 if nk: nd[nk]=val
             v["artifact_digests"]=dict(sorted(nd.items())); v["artifact_count"]=len(nd)
         v["layout_schema"]=LAYOUT; v["client_digests"]={c:dir_digest(gr/c) for c in CLIENTS}; wj(p,v)
-def rewrite_docs(providers):
+def rewrite_docs(providers, aggregates):
     dr=ROOT/"docs/services"
     for p in providers:
         f=dr/p/"README.md"
         if not f.is_file(): continue
-        s=f.read_text(encoding="utf-8"); s=re.sub(r"(规则浏览路径\s*\|\s*)`[^`]+`",lambda m:m.group(1)+f"`{p}/{p}/{p}.yaml`",s)
+        s=f.read_text(encoding="utf-8"); s=re.sub(r"(规则浏览路径\s*\|\s*)`[^`]+`",lambda m:m.group(1)+f"`{p}/{aggregates[p]}/{aggregates[p]}.yaml`",s)
         for c in CLIENTS: s=re.sub(rf"(generated/{re.escape(c)}/{re.escape(p)}/){re.escape(p)}(\.(?:yaml|json|list))",rf"generated/{c}/{p}/{p}/{p}\2",s)
         f.write_text(s,encoding="utf-8")
     (ROOT/"docs/layout.md").write_text("""# Directory Layout v2\n\n## Rule\n\nProvider aggregate: rule/{provider}/{provider}/{provider}.yaml\n\nChild service: rule/{provider}/{service}/{service}.yaml\n\nExamples:\n\n    rule/12306/12306/12306.yaml\n    rule/apple/apple/apple.yaml\n    rule/apple/appletv/appletv.yaml\n\n## Generated\n\nProvider aggregate: generated/{client}/{provider}/{provider}/{provider}\n\nChild service: generated/{client}/{provider}/{service}/{service}\n\nThe rule and generated trees are sibling projections of one Semantic IR Run. EntityPathResolver is the shared path contract. Layout validation blocks duplicate and legacy paths before release.\n""",encoding="utf-8")
@@ -182,9 +203,9 @@ def rewrite_changelog():
     if "[2026.09.26] — Directory Layout v2" not in s:
         e="## [2026.09.26] — Directory Layout v2\n\n### Changed\n- Unified provider aggregate and child-service path generation.\n- Added EntityPathResolver and fail-closed layout validation.\n- Updated Rule Index, Generated Manifest and release metadata.\n\n### Fixed\n- Removed legacy duplicate provider aggregate files.\n- Preserved existing same-name child services such as 12306.\n\n### Documentation\n- Added docs/layout.md and compact README quick navigation.\n\n"; f.write_text(e+s,encoding="utf-8")
 def main():
-    providers,services,rm,gm=move_tree(); rewrite_rule_metadata(rm); rewrite_generated_metadata(gm); rewrite_docs(providers); rewrite_readme(); rewrite_changelog()
+    providers,services,aggregates,rm,gm=move_tree(); rewrite_rule_metadata(rm); rewrite_generated_metadata(gm); rewrite_docs(providers,aggregates); rewrite_readme(); rewrite_changelog()
     # fail-closed final assertions
-    required=("rule/12306/12306/12306.yaml","rule/apple/apple/apple.yaml","rule/apple/appletv/appletv.yaml","generated/mihomo/12306/12306/12306.yaml","generated/mihomo/apple/apple/apple.yaml","generated/mihomo/apple/appletv/appletv.yaml")
+    required=("rule/12306/12306/12306.yaml","rule/acfun/acfun_aggregate/acfun_aggregate.yaml","rule/apple/apple/apple.yaml","rule/apple/appletv/appletv.yaml","generated/mihomo/12306/12306/12306.yaml","generated/mihomo/acfun/acfun_aggregate/acfun_aggregate.yaml","generated/mihomo/apple/apple/apple.yaml","generated/mihomo/apple/appletv/appletv.yaml")
     forbidden=("rule/12306/12306.yaml","rule/apple/apple.yaml","generated/mihomo/12306/12306.yaml","generated/mihomo/apple/apple.yaml")
     for r in required:
         if not (ROOT/r).is_file(): raise RuntimeError(f"missing required migrated path: {r}")
