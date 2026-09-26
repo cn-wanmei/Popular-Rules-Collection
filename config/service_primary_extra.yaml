@@ -75,7 +75,7 @@ services:
   wechat: {primary_category: tencent, display_name: WeChat, categories: [tencent, china], service_type: service, parent: tencent}
   wikipedia: {primary_category: other, display_name: Wikipedia, categories: [other], service_type: service}
   wise: {primary_category: finance, display_name: Wise, categories: [finance], service_type: service}
-  xai: {primary_category: ai, display_name: xAI, categories: [ai], service_type: service, parent: ai}
+  xai: {primary_category: xai, display_name: xAI, categories: [xai, ai], service_type: aggregate, parent: ai, children: [xaigrok]}
   xianyu: {primary_category: alibaba, display_name: Xianyu, categories: [alibaba, china], service_type: service, parent: alibaba}
   xbox: {primary_category: microsoft, display_name: Xbox, categories: [microsoft, gaming], service_type: service, parent: microsoft}
   youtubemusic: {primary_category: google, display_name: YouTubeMusic, categories: [google, streaming], service_type: service, parent: google}
@@ -85,8 +85,8 @@ services:
   alibaba: {primary_category: alibaba, display_name: Alibaba, categories: [alibaba, china], service_type: aggregate}
   alipay: {primary_category: alibaba, display_name: Alipay, categories: [alibaba, china], service_type: service, parent: alibaba}
   amap: {primary_category: alibaba, display_name: Amap, categories: [alibaba, china], service_type: service, parent: alibaba}
-  amazon: {primary_category: amazon, display_name: Amazon, categories: [amazon], service_type: service}
-  anthropic: {primary_category: ai, display_name: Anthropic, categories: [ai], service_type: service, parent: ai}
+  amazon: {primary_category: amazon, display_name: Amazon, categories: [amazon], service_type: aggregate, children: [aws, amazonmusic, audible, goodreads]}
+  anthropic: {primary_category: ai, display_name: Anthropic, categories: [ai], service_type: aggregate, parent: ai, children: [anthropicclaude, anthropicplatform]}
   apple: {primary_category: apple, display_name: Apple, categories: [apple], service_type: aggregate}
   aws: {primary_category: amazon, display_name: AWS, categories: [amazon, developer], service_type: service}
   baidu: {primary_category: baidu, display_name: Baidu, categories: [baidu, china], service_type: aggregate}
@@ -157,7 +157,7 @@ services:
   weibo: {primary_category: china, display_name: Weibo, categories: [china], service_type: service, parent: china}
   whatsapp: {primary_category: social, display_name: WhatsApp, categories: [social], service_type: service}
   xiaohongshu: {primary_category: china, display_name: Xiaohongshu, categories: [china], service_type: service, parent: china}
-  xiaomi: {primary_category: other, display_name: Xiaomi, categories: [other, china], service_type: service}
+  xiaomi: {primary_category: other, display_name: Xiaomi, categories: [other, china], service_type: aggregate, children: [micloud]}
   youku: {primary_category: alibaba, display_name: Youku, categories: [alibaba, china, streaming], service_type: service, parent: alibaba}
   youtube: {primary_category: google, display_name: YouTube, categories: [google, streaming], service_type: service, parent: google}
   zhihu: {primary_category: china, display_name: Zhihu, categories: [china], service_type: service, parent: china}
@@ -221,3 +221,16 @@ aggregate_overrides:
   unionpay: {primary_category: unionpay, display_name: UnionPay, categories: [finance, china], service_type: aggregate, children: [icbc, ccb, abc, boc, cmb, psbc, ceb, bocom, pingan]}
 
   tencent_music: {primary_category: china, display_name: Tencent Music Entertainment, categories: [china, streaming], service_type: aggregate, children: [kugou, kuwo, quanminkge]}
+  adobe-firefly: {primary_category: other, display_name: "Adobe Firefly", categories: [other, ai], service_type: service, parent: adobe}
+  adobe-stock: {primary_category: other, display_name: "Adobe Stock", categories: [other], service_type: service, parent: adobe}
+  adobe-fonts: {primary_category: other, display_name: "Adobe Fonts", categories: [other, developer], service_type: service, parent: adobe}
+  amazonmusic: {primary_category: amazon, display_name: "Amazon Music", categories: [amazon, streaming], service_type: service, parent: amazon}
+  audible: {primary_category: amazon, display_name: Audible, categories: [amazon, streaming], service_type: service, parent: amazon}
+  goodreads: {primary_category: amazon, display_name: Goodreads, categories: [amazon], service_type: service, parent: amazon}
+  anthropicclaude: {primary_category: ai, display_name: Claude, categories: [ai], service_type: service, parent: anthropic}
+  anthropicplatform: {primary_category: ai, display_name: "Claude Platform", categories: [ai, developer], service_type: service, parent: anthropic}
+  xaigrok: {primary_category: xai, display_name: Grok, categories: [xai, ai], service_type: service, parent: xai}
+  micloud: {primary_category: other, display_name: "Mi Cloud", categories: [other, china], service_type: service, parent: xiaomi}
+  paypalcore: {primary_category: finance, display_name: PayPal, categories: [finance], service_type: service, parent: paypal}
+  venmo: {primary_category: finance, display_name: Venmo, categories: [finance], service_type: service, parent: paypal}
+  xoom: {primary_category: finance, display_name: Xoom, categories: [finance], service_type: service, parent: paypal}
