@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""Icon System V5: source acquisition, eight-layer rendering, registry and gates."""
+"""Icon System V5: deterministic source acquisition, eight-layer registry and gates."""
 from __future__ import annotations
 
 import argparse
-import base64
 import hashlib
 import json
 import re
@@ -11,604 +10,289 @@ from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
-from urllib.request import Request, urlopen
+from urllib.request import HTTPRedirectHandler, Request, build_opener
 import xml.etree.ElementTree as ET
 
 import yaml
 
-ROOT = Path(__file__).resolve().parents[1]
-POLICY = ROOT / "config" / "icon_v5.yaml"
-OFFICIAL_SITES = ROOT / "config" / "official_sites.yaml"
-VARIANTS = (
-    "source_original",
-    "glassmorphism",
-    "soft_3d",
-    "neo_skeuomorphism",
-    "minimalist",
-    "duotone_line",
-    "mbe",
-    "y2k",
-)
-STYLE_VARIANTS = VARIANTS[1:]
-RENDERER_VERSION = "prc-icon-renderer-v5.0.0"
+from scripts.icon_v5_renderers import RENDERERS
+from scripts.icon_v5_renderers.common import svg_data_url
 
+ROOT=Path(__file__).resolve().parents[1]
+POLICY=ROOT/"config/icon_v5.yaml"
+OFFICIAL_SITES=ROOT/"config/official_sites.yaml"
+DEFAULT_CACHE=ROOT/"assets/icons/v5/source"
+VARIANTS=("source_original","glassmorphism","soft_3d","neo_skeuomorphism","minimalist","duotone_line","mbe","y2k")
+RENDERER_VERSION="prc-icon-renderer-v5.0.0"
 
-def sha256(data: bytes | str) -> str:
-    raw = data.encode("utf-8") if isinstance(data, str) else data
+def sha256(data: bytes|str)->str:
+    raw=data.encode('utf-8') if isinstance(data,str) else data
     return hashlib.sha256(raw).hexdigest()
 
+def load_yaml(path: Path)->dict:
+    value=yaml.safe_load(path.read_text(encoding='utf-8')) or {}
+    return value if isinstance(value,dict) else {}
 
-def load_yaml(path: Path) -> dict:
-    value = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
-    return value if isinstance(value, dict) else {}
+def load_json(path: Path)->dict:
+    return json.loads(path.read_text(encoding='utf-8'))
 
+def slug(value: str)->str:
+    text=re.sub(r'[^a-zA-Z0-9._-]+','-',str(value).strip().lower())
+    return text.strip('-._') or 'unknown'
 
-def load_json(path: Path) -> dict:
-    return json.loads(path.read_text(encoding="utf-8"))
-
-
-def slug(value: str) -> str:
-    text = re.sub(r"[^a-zA-Z0-9._-]+", "-", str(value).strip().lower())
-    return text.strip("-._") or "unknown"
-
-
-def discover_services(rule_index: Path) -> list[dict]:
-    doc = load_yaml(rule_index)
-    rows = []
-    seen = set()
-    for row in doc.get("entries") or []:
-        if not isinstance(row, dict) or row.get("entity") != "service":
-            continue
-        sid = str(row.get("id") or "").strip()
-        if not sid:
-            continue
-        if sid in seen:
-            raise ValueError(f"duplicate service_id in rule index: {sid}")
+def discover_services_from_rule_index(rule_index: Path)->list[dict]:
+    doc=load_yaml(rule_index); rows=[]; seen=set()
+    for item in doc.get('entries') or []:
+        if not isinstance(item,dict) or item.get('entity')!='service': continue
+        sid=str(item.get('id') or '').strip()
+        if not sid: continue
+        if sid in seen: raise ValueError(f'duplicate service_id in rule index: {sid}')
         seen.add(sid)
-        rows.append({
-            "service_id": sid,
-            "display_name": str(row.get("display_name") or sid),
-            "provider": row.get("provider"),
-            "rule_path": str(row.get("path") or ""),
-            "rule_count": int(row.get("rule_count") or 0),
-        })
-    if not rows:
-        raise ValueError("no service entities discovered")
-    return sorted(rows, key=lambda x: x["service_id"])
+        rows.append({'service_id':sid,'display_name':str(item.get('display_name') or sid),'provider':item.get('provider'),'rule_path':str(item.get('path') or ''),'rule_count':int(item.get('rule_count') or 0)})
+    if not rows: raise ValueError('no service entities discovered')
+    return sorted(rows,key=lambda x:x['service_id'])
 
+def discover_services_from_ir(ir_path: Path)->list[dict]:
+    doc=load_json(ir_path); raw=doc.get('services') or doc.get('service_index') or []
+    if isinstance(raw,dict): raw=list(raw.values())
+    rows=[]; seen=set()
+    for item in raw:
+        if not isinstance(item,dict): continue
+        sid=str(item.get('service_id') or item.get('id') or '').strip()
+        if not sid: continue
+        if sid in seen: raise ValueError(f'duplicate service_id in IR: {sid}')
+        seen.add(sid)
+        rows.append({'service_id':sid,'display_name':str(item.get('display_name') or item.get('name') or sid),'provider':item.get('provider'),'rule_path':str(item.get('rule_path') or ''),'rule_count':int(item.get('rule_count') or 0)})
+    if not rows: raise ValueError('IR contains no discoverable services; expected services/service_index')
+    return sorted(rows,key=lambda x:x['service_id'])
 
-def candidate_domains(root: Path, row: dict) -> list[str]:
-    path = root / row["rule_path"]
-    if not path.is_file():
-        return []
-    try:
-        doc = load_yaml(path)
-    except Exception:
-        return []
-    values = []
-    for rule in doc.get("rules") or []:
-        if not isinstance(rule, dict):
-            continue
-        kind = str(rule.get("type") or "").upper()
-        value = str(rule.get("value") or "").strip()
-        if value and kind in {"DOMAIN", "DOMAIN_SUFFIX", "DOMAIN_KEYWORD"}:
-            values.append(value.lstrip("."))
-    hosts = []
-    for value in values:
-        host = value
-        if "://" in host:
-            host = urlparse(host).hostname or ""
-        host = host.split("/")[0].strip().lower().rstrip(".")
-        if not re.fullmatch(r"[a-z0-9.-]+\.[a-z]{2,}", host):
-            continue
-        if any(bad in host for bad in (
-            "cdn.", "static.", "img.", "image.", "images.", "assets.",
-            "download.", "update.", "api.", "gateway.", "cloudfront.net",
-            "akamaized.net", "fastly.net", "githubusercontent.com",
-        )):
-            continue
-        if host not in hosts:
-            hosts.append(host)
-    tokens = re.findall(r"[a-z0-9]+", str(row["service_id"]).lower())
-    display_tokens = re.findall(r"[a-z0-9]+", str(row["display_name"]).lower())
-    return sorted(
-        hosts,
-        key=lambda h: (
-            -sum(1 for t in tokens + display_tokens if t and t in h),
-            h.count("."),
-            h,
-        ),
-    )[:8]
+def discover_services(*,rule_index:Path|None=None,ir_path:Path|None=None)->list[dict]:
+    if ir_path is not None: return discover_services_from_ir(ir_path)
+    if rule_index is None: raise ValueError('one of --ir or --rule-index is required')
+    return discover_services_from_rule_index(rule_index)
 
-
-def official_url(sid: str, official: dict) -> str | None:
-    value = official.get(sid)
-    return str(value).strip() if value else None
-
+def candidate_domains(root: Path,row:dict)->list[tuple[str,int]]:
+    path=root/row['rule_path']
+    if not path.is_file(): return []
+    try: doc=load_yaml(path)
+    except Exception: return []
+    tokens=re.findall(r'[a-z0-9]+',str(row['service_id']).lower())+re.findall(r'[a-z0-9]+',str(row['display_name']).lower())
+    hosts=set()
+    for rule in doc.get('rules') or []:
+        if not isinstance(rule,dict): continue
+        kind=str(rule.get('type') or '').upper(); value=str(rule.get('value') or '').strip()
+        if not value or kind not in {'DOMAIN','DOMAIN_SUFFIX','DOMAIN_KEYWORD'}: continue
+        host=value
+        if '://' in host: host=urlparse(host).hostname or ''
+        host=host.split('/')[0].strip().lower().rstrip('.')
+        if not re.fullmatch(r'[a-z0-9.-]+\.[a-z]{2,}',host): continue
+        if any(x in host for x in ('cdn.','static.','img.','image.','images.','assets.','download.','update.','api.','gateway.','cloudfront.net','akamaized.net','fastly.net','githubusercontent.com')): continue
+        score=2*sum(1 for token in tokens if token and token in host)
+        if host.split('.')[0] in {'www','m','mobile','home'}: score+=1
+        hosts.add((host,score))
+    return sorted(hosts,key=lambda x:(-x[1],x[0]))[:8]
 
 class IconLinkParser(HTMLParser):
-    def __init__(self):
-        super().__init__(convert_charrefs=True)
-        self.links: list[tuple[str, str]] = []
+    def __init__(self): super().__init__(convert_charrefs=True); self.links=[]; self.manifest=None
+    def handle_starttag(self,tag,attrs):
+        if tag.lower()!='link': return
+        data={str(k).lower():str(v or '') for k,v in attrs}; rel={x.strip().lower() for x in data.get('rel','').split()}; href=data.get('href','').strip()
+        if not href: return
+        if 'manifest' in rel: self.manifest=href
+        if rel & {'icon','shortcut','apple-touch-icon','apple-touch-icon-precomposed'}:
+            self.links.append({'href':href,'priority':0 if 'apple-touch-icon' in rel else (1 if 'icon' in rel else 2),'sizes':data.get('sizes','')})
 
-    def handle_starttag(self, tag, attrs):
-        data = {str(k).lower(): str(v or "") for k, v in attrs}
-        if tag.lower() != "link":
-            return
-        rel = {x.strip().lower() for x in data.get("rel", "").split()}
-        href = data.get("href", "").strip()
-        if href and rel & {"icon", "shortcut", "apple-touch-icon", "apple-touch-icon-precomposed"}:
-            self.links.append((" ".join(sorted(rel)), href))
+class LimitedRedirectHandler(HTTPRedirectHandler):
+    def __init__(self,max_redirects:int): super().__init__(); self.remaining=max_redirects
+    def redirect_request(self,req,fp,code,msg,headers,newurl):
+        if self.remaining<=0: raise RuntimeError('redirect limit exceeded')
+        self.remaining-=1; return super().redirect_request(req,fp,code,msg,headers,newurl)
 
+def fetch_bytes(url:str,*,timeout:int,max_bytes:int,user_agent:str,max_redirects:int)->tuple[bytes,dict]:
+    if urlparse(url).scheme.lower()!='https': raise ValueError(f'only https is allowed: {url}')
+    opener=build_opener(LimitedRedirectHandler(max_redirects)); req=Request(url,headers={'User-Agent':user_agent,'Accept':'*/*'})
+    with opener.open(req,timeout=timeout) as response:
+        final_url=response.geturl()
+        if urlparse(final_url).scheme.lower()!='https': raise ValueError(f'redirected to non-https: {final_url}')
+        clen=response.headers.get('Content-Length')
+        if clen and int(clen)>max_bytes: raise ValueError(f'response exceeds {max_bytes} bytes')
+        content=response.read(max_bytes+1)
+        if len(content)>max_bytes: raise ValueError(f'response exceeds {max_bytes} bytes')
+        return content,{'status_code':getattr(response,'status',None),'content_type':response.headers.get('Content-Type'),'content_length':clen,'final_url':final_url,'fetched_at':datetime.now(timezone.utc).isoformat()}
 
-def fetch_bytes(url: str, *, timeout: int, max_bytes: int, user_agent: str) -> tuple[bytes, dict]:
-    parsed = urlparse(url)
-    if parsed.scheme.lower() != "https":
-        raise ValueError(f"only https is allowed: {url}")
-    req = Request(url, headers={"User-Agent": user_agent, "Accept": "*/*"})
-    with urlopen(req, timeout=timeout) as response:
-        final_url = response.geturl()
-        if urlparse(final_url).scheme.lower() != "https":
-            raise ValueError(f"redirected to non-https: {final_url}")
-        content = response.read(max_bytes + 1)
-        if len(content) > max_bytes:
-            raise ValueError(f"response exceeds {max_bytes} bytes")
-        return content, {
-            "status_code": getattr(response, "status", None),
-            "content_type": response.headers.get("Content-Type"),
-            "final_url": final_url,
-        }
-
-
-def validate_source(content: bytes, content_type: str | None, source_url: str) -> str:
-    ctype = (content_type or "").split(";", 1)[0].strip().lower()
-    if content.lstrip().lower().startswith(b"<svg"):
-        kind = "svg"
-    elif content.startswith(b"\x89PNG\r\n\x1a\n"):
-        kind = "png"
-    elif len(content) >= 12 and content[:4] == b"RIFF" and content[8:12] == b"WEBP":
-        kind = "webp"
-    elif content.startswith(b"\x00\x00\x01\x00"):
-        kind = "ico"
+def validate_source(content:bytes,content_type:str|None,source_url:str)->str:
+    ctype=(content_type or '').split(';',1)[0].strip().lower()
+    if content.lstrip().lower().startswith(b'<svg'): kind='svg'
+    elif content.startswith(b'\x89PNG\r\n\x1a\n'): kind='png'
+    elif len(content)>=12 and content[:4]==b'RIFF' and content[8:12]==b'WEBP': kind='webp'
+    elif content.startswith(b'\x00\x00\x01\x00'): kind='ico'
     else:
-        allowed = {
-            "image/svg+xml": "svg",
-            "image/png": "png",
-            "image/webp": "webp",
-            "image/x-icon": "ico",
-            "image/vnd.microsoft.icon": "ico",
-            "image/jpeg": "jpg",
-        }
-        if ctype not in allowed:
-            raise ValueError(f"unsupported icon content: {source_url} ({ctype or 'unknown'})")
-        kind = allowed[ctype]
-    if kind == "svg":
-        try:
-            root = ET.fromstring(content.decode("utf-8"))
-        except Exception as exc:
-            raise ValueError(f"invalid svg: {source_url}: {exc}") from exc
-        forbidden = {"script", "foreignObject", "iframe", "object", "embed"}
+        allowed={'image/svg+xml':'svg','image/png':'png','image/webp':'webp','image/x-icon':'ico','image/vnd.microsoft.icon':'ico','image/jpeg':'jpg'}
+        if ctype not in allowed: raise ValueError(f'unsupported icon content: {source_url} ({ctype or "unknown"})')
+        kind=allowed[ctype]
+    if kind=='svg':
+        root=ET.fromstring(content.decode('utf-8')); forbidden={'script','foreignObject','iframe','object','embed'}
         for node in root.iter():
-            local = node.tag.rsplit("}", 1)[-1]
-            if local in forbidden:
-                raise ValueError(f"unsafe svg element {local}: {source_url}")
-            for attr, value in node.attrib.items():
-                if attr.rsplit("}", 1)[-1] in {"href", "src"}:
-                    val = str(value).strip()
-                    if val and not val.startswith("data:") and not val.startswith("#"):
-                        raise ValueError(f"external svg reference: {source_url}")
+            local=node.tag.rsplit('}',1)[-1]
+            if local in forbidden: raise ValueError(f'unsafe svg element {local}: {source_url}')
+            for attr,value in node.attrib.items():
+                if attr.rsplit('}',1)[-1] in {'href','src'}:
+                    val=str(value).strip()
+                    if val and not val.startswith('data:') and not val.startswith('#'): raise ValueError(f'external svg reference: {source_url}')
     return kind
 
+def select_manifest_icon(base_url:str,data:bytes)->str|None:
+    try: doc=json.loads(data.decode('utf-8'))
+    except Exception: return None
+    candidates=[]
+    for item in (doc.get('icons') if isinstance(doc,dict) else None) or []:
+        if not isinstance(item,dict) or not item.get('src'): continue
+        area=0
+        for token in str(item.get('sizes') or '').split():
+            if 'x' not in token: continue
+            try: a,b=token.lower().split('x',1); area=max(area,int(a)*int(b))
+            except Exception: pass
+        candidates.append((area,str(item['src'])))
+    return urljoin(base_url,sorted(candidates,key=lambda x:(-x[0],x[1]))[0][1]) if candidates else None
 
-def svg_data_url(content: bytes, kind: str) -> str:
-    mime = {
-        "svg": "image/svg+xml",
-        "png": "image/png",
-        "webp": "image/webp",
-        "ico": "image/x-icon",
-        "jpg": "image/jpeg",
-    }[kind]
-    return "data:" + mime + ";base64," + base64.b64encode(content).decode("ascii")
+def load_cache(cache_dir:Path)->dict:
+    path=cache_dir/'cache.json'
+    if not path.is_file(): return {}
+    try: doc=load_json(path)
+    except Exception: return {}
+    return doc.get('services') if isinstance(doc.get('services'),dict) else {}
 
+def save_cache(cache_dir:Path,services:dict)->None:
+    cache_dir.mkdir(parents=True,exist_ok=True)
+    (cache_dir/'cache.json').write_text(json.dumps({'schema':'icon_source_cache_v5','updated_at':datetime.now(timezone.utc).isoformat(),'services':services},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 
-def _xml_escape(value: str) -> str:
-    return str(value).replace("&", "&amp;").replace('"', "&quot;").replace("<", "&lt;").replace(">", "&gt;")
-
-
-def _svg_shell(body: str, title: str, background: str = "#ffffff") -> str:
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="{_xml_escape(title)}">
-  <defs>
-    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="22" stdDeviation="22" flood-opacity=".20"/></filter>
-    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="18"/></filter>
-    <linearGradient id="cyber" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00F0FF"/><stop offset=".5" stop-color="#7C4DFF"/><stop offset="1" stop-color="#FF2BD6"/></linearGradient>
-  </defs>
-  <rect width="512" height="512" rx="112" fill="{background}"/>
-  {body}
-</svg>'''
-
-
-def render_variant(image_href: str, title: str, style: str) -> str:
-    if style == "glassmorphism":
-        body = f'''
-  <circle cx="140" cy="130" r="140" fill="#8EC5FF" opacity=".34" filter="url(#soft)"/>
-  <circle cx="388" cy="376" r="150" fill="#D79CFF" opacity=".30" filter="url(#soft)"/>
-  <rect x="54" y="54" width="404" height="404" rx="96" fill="#FFFFFF" fill-opacity=".36" stroke="#FFFFFF" stroke-opacity=".72" stroke-width="4" filter="url(#shadow)"/>
-  <rect x="66" y="66" width="380" height="380" rx="84" fill="none" stroke="#FFFFFF" stroke-opacity=".30" stroke-width="2"/>
-  <image href="{image_href}" x="112" y="112" width="288" height="288" preserveAspectRatio="xMidYMid meet"/>
-'''
-    elif style == "soft_3d":
-        body = f'''
-  <rect x="60" y="76" width="392" height="392" rx="112" fill="#DDE7F6" filter="url(#shadow)"/>
-  <rect x="48" y="48" width="392" height="392" rx="112" fill="#F8FAFC"/>
-  <path d="M84 84h320" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" opacity=".9"/>
-  <image href="{image_href}" x="118" y="128" width="276" height="276" preserveAspectRatio="xMidYMid meet" opacity=".28" transform="translate(8 14)"/>
-  <image href="{image_href}" x="112" y="112" width="276" height="276" preserveAspectRatio="xMidYMid meet"/>
-'''
-    elif style == "neo_skeuomorphism":
-        body = f'''
-  <rect x="54" y="54" width="404" height="404" rx="92" fill="#E9EEF7" stroke="#FFFFFF" stroke-width="8" filter="url(#shadow)"/>
-  <path d="M106 122c0-18 14-32 32-32h236" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" opacity=".9"/>
-  <path d="M100 382c0 22 18 40 40 40h232" fill="none" stroke="#B7C2D6" stroke-width="12" stroke-linecap="round" opacity=".58"/>
-  <rect x="88" y="88" width="336" height="336" rx="82" fill="none" stroke="#B7C2D6" stroke-width="4"/>
-  <image href="{image_href}" x="122" y="122" width="268" height="268" preserveAspectRatio="xMidYMid meet"/>
-'''
-    elif style == "minimalist":
-        body = f'''
-  <circle cx="256" cy="256" r="196" fill="#F8FAFC"/>
-  <path d="M126 382c42 34 84 50 130 50s88-16 130-50" fill="none" stroke="#CBD5E1" stroke-width="10" stroke-linecap="round"/>
-  <circle cx="256" cy="256" r="164" fill="none" stroke="#E2E8F0" stroke-width="4"/>
-  <image href="{image_href}" x="124" y="124" width="264" height="264" preserveAspectRatio="xMidYMid meet"/>
-'''
-    elif style == "duotone_line":
-        body = f'''
-  <rect x="48" y="48" width="416" height="416" rx="84" fill="#FFFFFF"/>
-  <path d="M126 372V140h260v232z" fill="none" stroke="#111827" stroke-width="12" stroke-linejoin="round"/>
-  <path d="M100 206h72M340 206h72M206 100v72M206 340v72" stroke="#7C3AED" stroke-width="12" stroke-linecap="round"/>
-  <image href="{image_href}" x="132" y="132" width="248" height="248" preserveAspectRatio="xMidYMid meet" opacity=".92"/>
-'''
-    elif style == "mbe":
-        body = f'''
-  <path d="M82 176c-10-72 48-124 112-106 42-48 130-18 138 42 72 4 116 86 72 144 22 76-52 138-122 108-50 48-142 28-160-34-76 2-116-72-62-128z" fill="#F1F5FF" stroke="#111827" stroke-width="12" stroke-linejoin="round"/>
-  <circle cx="108" cy="138" r="10" fill="#7C3AED"/>
-  <circle cx="398" cy="148" r="10" fill="#06B6D4"/>
-  <circle cx="410" cy="366" r="10" fill="#EC4899"/>
-  <path d="M116 394l-34 38M394 388l38 36M410 108l30-24M100 106l-34-26" stroke="#111827" stroke-width="10" stroke-linecap="round"/>
-  <image href="{image_href}" x="132" y="132" width="248" height="248" preserveAspectRatio="xMidYMid meet"/>
-'''
-    elif style == "y2k":
-        body = f'''
-  <rect x="40" y="40" width="432" height="432" rx="112" fill="#0B1020" stroke="#5BE7FF" stroke-width="6" filter="url(#shadow)"/>
-  <rect x="58" y="58" width="396" height="396" rx="96" fill="none" stroke="url(#cyber)" stroke-width="10"/>
-  <path d="M92 120h328M92 184h328M92 328h328M92 392h328" stroke="#FFFFFF" stroke-opacity=".08" stroke-width="2"/>
-  <circle cx="394" cy="118" r="18" fill="#00F0FF" opacity=".85"/>
-  <path d="M112 112l18 18M130 112l-18 18M382 380l22 22M404 380l-22 22" stroke="#FF2BD6" stroke-width="7" stroke-linecap="round"/>
-  <image href="{image_href}" x="124" y="124" width="264" height="264" preserveAspectRatio="xMidYMid meet"/>
-'''
-    else:
-        raise ValueError(f"unsupported style: {style}")
-    return _svg_shell(body, title)
-
-
-def write_preview(style: str, entries: list[dict], root: Path) -> None:
-    cols = 8
-    rows = (len(entries) + cols - 1) // cols
-    width, height = cols * 104, rows * 120
-    out = root / "previews" / style
-    out.mkdir(parents=True, exist_ok=True)
-    nodes = []
-    for i, row in enumerate(entries):
-        c, r = i % cols, i // cols
-        x, y = c * 104 + 4, r * 120 + 4
-        nodes.append(
-            f'<rect x="{x}" y="{y}" width="96" height="96" rx="20" fill="#fff" stroke="#E2E8F0"/>'
-            f'<image href="../styles/{style}/{slug(row["service_id"])}.svg" x="{x+8}" y="{y+8}" width="80" height="80"/>'
-        )
-    (out / "master-all.svg").write_text(
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}">' + "".join(nodes) + "</svg>",
-        encoding="utf-8",
-    )
-
-
-def resolve_source(root: Path, row: dict, official: dict, policy: dict) -> dict:
-    sid = row["service_id"]
-    homepage = official_url(sid, official)
-    reason = "registered_official" if homepage else None
+def resolve_source(root:Path,row:dict,official:dict,policy:dict,cache:dict,*,refresh:bool)->dict:
+    sid=row['service_id']; cached=None if refresh else cache.get(sid)
+    if cached:
+        path=ROOT/str(cached.get('path') or '')
+        if path.is_file() and sha256(path.read_bytes())==str(cached.get('digest') or '') and cached.get('source_url'):
+            content=path.read_bytes(); return {**cached,'status':'ok','content':content,'cached':True}
+    homepage=str(official.get(sid) or '').strip(); reason='registered_official' if homepage else None
     if not homepage:
-        candidates = candidate_domains(root, row)
-        if candidates:
-            homepage = "https://" + candidates[0] + "/"
-            reason = "rule_domain_candidate"
-    if not homepage:
-        return {"status": "hold", "service_id": sid, "reason": "no_official_homepage_candidate"}
-    acq = policy["acquisition"]
-    page, page_headers = fetch_bytes(
-        homepage,
-        timeout=int(acq["timeout_seconds"]),
-        max_bytes=int(acq["max_bytes"]),
-        user_agent=str(acq["user_agent"]),
-    )
-    parser = IconLinkParser()
-    parser.feed(page.decode("utf-8", errors="ignore"))
-    icon_url = urljoin(page_headers["final_url"], parser.links[0][1]) if parser.links else urljoin(page_headers["final_url"], "/favicon.ico")
-    icon, headers = fetch_bytes(
-        icon_url,
-        timeout=int(acq["timeout_seconds"]),
-        max_bytes=int(acq["max_bytes"]),
-        user_agent=str(acq["user_agent"]),
-    )
-    kind = validate_source(icon, headers.get("content_type"), headers["final_url"])
-    return {
-        "status": "ok",
-        "service_id": sid,
-        "homepage_url": page_headers["final_url"],
-        "source_url": headers["final_url"],
-        "source_kind": kind,
-        "content_type": headers.get("content_type"),
-        "source_digest": sha256(icon),
-        "content": icon,
-        "resolution_reason": reason,
-        "homepage_digest": sha256(page),
-    }
+        candidates=candidate_domains(root,row)
+        if not candidates or candidates[0][1]<2: return {'status':'hold','reason':'no_high_confidence_official_homepage_candidate'}
+        homepage='https://'+candidates[0][0]+'/'; reason='rule_domain_candidate'
+    acq=policy['acquisition']
+    page,page_headers=fetch_bytes(homepage,timeout=int(acq['timeout_seconds']),max_bytes=int(acq['max_bytes']),user_agent=str(acq['user_agent']),max_redirects=int(acq['max_redirects']))
+    parser=IconLinkParser(); parser.feed(page.decode('utf-8',errors='ignore'))
+    icon_url=None
+    for link in sorted(parser.links,key=lambda x:(x['priority'],x['sizes'] or '',x['href'])):
+        icon_url=urljoin(page_headers['final_url'],link['href'])
+        if icon_url: break
+    if not icon_url and parser.manifest:
+        manifest_url=urljoin(page_headers['final_url'],parser.manifest)
+        manifest,_=fetch_bytes(manifest_url,timeout=int(acq['timeout_seconds']),max_bytes=int(acq['max_bytes']),user_agent=str(acq['user_agent']),max_redirects=int(acq['max_redirects']))
+        icon_url=select_manifest_icon(page_headers['final_url'],manifest)
+    if not icon_url: icon_url=urljoin(page_headers['final_url'],'/favicon.ico')
+    icon,icon_headers=fetch_bytes(icon_url,timeout=int(acq['timeout_seconds']),max_bytes=int(acq['max_bytes']),user_agent=str(acq['user_agent']),max_redirects=int(acq['max_redirects']))
+    kind=validate_source(icon,icon_headers.get('content_type'),icon_headers['final_url'])
+    return {'status':'ok','content':icon,'cached':False,'service_id':sid,'homepage_url':page_headers['final_url'],'source_url':icon_headers['final_url'],'source_kind':kind,'content_type':icon_headers.get('content_type'),'source_digest':sha256(icon),'resolution_reason':reason,'http_status':icon_headers.get('status_code'),'content_length':icon_headers.get('content_length'),'fetched_at':icon_headers.get('fetched_at')}
 
+def persist_cache(cache_dir:Path,row:dict,result:dict)->dict:
+    ext={'svg':'svg','png':'png','webp':'webp','ico':'ico','jpg':'jpg'}[result['source_kind']]; path=cache_dir/(slug(row['service_id'])+'.'+ext); path.parent.mkdir(parents=True,exist_ok=True); path.write_bytes(result['content'])
+    return {'path':str(path.relative_to(ROOT)),'source_url':result['source_url'],'homepage_url':result['homepage_url'],'source_kind':result['source_kind'],'digest':result['source_digest'],'content_type':result.get('content_type'),'http_status':result.get('http_status'),'content_length':result.get('content_length'),'fetched_at':result.get('fetched_at'),'resolution_reason':result.get('resolution_reason')}
 
-def build(args: argparse.Namespace) -> int:
-    policy = load_yaml(POLICY)
-    official = load_yaml(OFFICIAL_SITES)
-    rule_index = Path(args.rule_index)
-    entries = discover_services(rule_index)
-    rule_doc = load_yaml(rule_index)
-    lineage = {
-        "run_id": str(args.run_id or rule_doc.get("run_id") or ""),
-        "snapshot_id": str(args.snapshot_id or ""),
-        "ir_digest": str(args.ir_digest or rule_doc.get("ir_digest") or ""),
-    }
-    out = Path(args.out)
-    out.mkdir(parents=True, exist_ok=True)
-    (out / "source" / "original").mkdir(parents=True, exist_ok=True)
-    (out / "normalized").mkdir(parents=True, exist_ok=True)
-    for style in STYLE_VARIANTS:
-        (out / "styles" / style).mkdir(parents=True, exist_ok=True)
+def render_pngs(svg:str,out_root:Path,service_id:str,variant:str,sizes:list[int])->dict[str,str]:
+    import cairosvg
+    paths={}
+    for size in sizes:
+        path=out_root/'png'/str(size)/variant/(slug(service_id)+'.png'); path.parent.mkdir(parents=True,exist_ok=True)
+        cairosvg.svg2png(bytestring=svg.encode('utf-8'),write_to=str(path),output_width=size,output_height=size); paths[str(size)]=str(path.relative_to(out_root))
+    return paths
 
-    results = []
-    acquired_by_url: dict[str, dict] = {}
+def build(args:argparse.Namespace)->int:
+    policy,official=load_yaml(POLICY),load_yaml(OFFICIAL_SITES); rule_index=Path(args.rule_index) if args.rule_index else None; ir_path=Path(args.ir) if args.ir else None; entries=discover_services(rule_index=rule_index,ir_path=ir_path)
+    lineage={'run_id':str(args.run_id or ''),'snapshot_id':str(args.snapshot_id or ''),'ir_digest':str(args.ir_digest or '')}
+    if rule_index:
+        doc=load_yaml(rule_index); lineage['run_id']=lineage['run_id'] or str(doc.get('run_id') or ''); lineage['ir_digest']=lineage['ir_digest'] or str(doc.get('ir_digest') or '')
+    if args.strict and not all(lineage.values()): print(json.dumps({'status':'blocked','reason':'strict build requires run_id, snapshot_id and ir_digest'},ensure_ascii=False)); return 1
+    cache_dir=Path(args.cache_dir) if args.cache_dir else DEFAULT_CACHE; cache=load_cache(cache_dir); out=Path(args.out); out.mkdir(parents=True,exist_ok=True); results=[]
     for row in entries:
         try:
-            result = resolve_source(ROOT, row, official, policy)
+            result=resolve_source(ROOT,row,official,policy,cache,refresh=args.refresh)
+            if result.get('status')!='ok':
+                results.append({**row,'icon_identity':f"service:{row['service_id']}",'source':{'origin':'hold','digest':None,'reason':result.get('reason')},'variants':{},'lineage':{**lineage,'source_digest':None,'renderer_version':RENDERER_VERSION},'release_eligible':False}); continue
+            source=result if result.get('cached') else persist_cache(cache_dir,row,result); cache[row['service_id']]=source
+            source_path=ROOT/source['path']; content=source_path.read_bytes(); href=svg_data_url(content,source['source_kind']); sid=slug(row['service_id'])
+            normalized=f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><image href="{href}" x="96" y="96" width="320" height="320" preserveAspectRatio="xMidYMid meet"/></svg>'
+            np=out/'normalized'/(sid+'.svg'); np.parent.mkdir(parents=True,exist_ok=True); np.write_text(normalized,encoding='utf-8')
+            variants={'source_original':{'path':str(source_path.relative_to(ROOT)),'digest':source['digest'],'source_kind':source['source_kind']}}
+            for style,renderer in RENDERERS.items():
+                svg=renderer(href,row['display_name']); sp=out/'styles'/style/(sid+'.svg'); sp.parent.mkdir(parents=True,exist_ok=True); sp.write_text(svg,encoding='utf-8')
+                variants[style]={'path':str(sp.relative_to(out)),'digest':sha256(svg),'png':render_pngs(svg,out,row['service_id'],style,list(policy['render']['png_sizes']))}
+            results.append({**row,'icon_identity':f"service:{row['service_id']}",'source':{'origin':'official_registered' if source['resolution_reason']=='registered_official' else 'official_discovered','homepage_url':source['homepage_url'],'source_url':source['source_url'],'content_type':source.get('content_type'),'digest':source['digest'],'rights_basis':'official_site_asset','redistribution_status':'review','resolution_reason':source.get('resolution_reason'),'http_status':source.get('http_status'),'content_length':source.get('content_length'),'fetched_at':source.get('fetched_at')},'normalized':{'path':str(np.relative_to(out)),'digest':sha256(normalized)},'variants':variants,'lineage':{**lineage,'source_digest':source['digest'],'renderer_version':RENDERER_VERSION},'release_eligible':True})
         except Exception as exc:
-            result = {"status": "hold", "service_id": row["service_id"], "reason": f"{type(exc).__name__}: {exc}"}
-        if result.get("status") != "ok":
-            results.append({
-                **row,
-                "icon_identity": f"service:{row['service_id']}",
-                "source": {
-                    "origin": "unresolved",
-                    "homepage_url": result.get("homepage_url"),
-                    "source_url": result.get("source_url"),
-                    "digest": None,
-                    "rights_basis": "review",
-                    "redistribution_status": "review",
-                    "reason": result.get("reason"),
-                },
-                "variants": {},
-                "lineage": {**lineage, "source_digest": None, "renderer_version": RENDERER_VERSION},
-                "release_eligible": False,
-            })
+            results.append({**row,'icon_identity':f"service:{row['service_id']}",'source':{'origin':'hold','digest':None,'reason':f'{type(exc).__name__}: {exc}'},'variants':{},'lineage':{**lineage,'source_digest':None,'renderer_version':RENDERER_VERSION},'release_eligible':False})
+    save_cache(cache_dir,cache); results.sort(key=lambda x:x['service_id']); complete=sum(1 for r in results if r.get('release_eligible') and len(r.get('variants',{}))==8); missing=[r['service_id'] for r in results if not (r.get('release_eligible') and len(r.get('variants',{}))==8)]
+    registry={'schema':'icon_registry_v5','version':5,'renderer_version':RENDERER_VERSION,'generated_at':datetime.now(timezone.utc).isoformat(),**lineage,'service_universe':{'source':str(ir_path or rule_index),'count':len(entries)},'variants':list(VARIANTS),'entries':results,'coverage':{'service_count':len(entries),'icon_identity_count':sum(1 for r in results if r.get('source',{}).get('digest')),'complete_8_of_8':complete,'missing':missing,'orphans':[]},'acquisition':{'network_policy':'one_asset_fetch_per_run','persistent_cache':str(cache_dir)}}
+    (out/'registry.json').write_text(json.dumps(registry,ensure_ascii=False,indent=2)+'\n',encoding='utf-8'); (out/'release-pointer.json').write_text(json.dumps({'schema':'icon_release_pointer_v5','status':'candidate' if missing else 'rc_ready','registry':'registry.json',**lineage,'renderer_version':RENDERER_VERSION},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    print(json.dumps({'status':'blocked' if args.strict and missing else 'ok','service_count':len(entries),'complete_8_of_8':complete,'missing':missing,'out':str(out)},ensure_ascii=False)); return 1 if args.strict and missing else 0
+
+def gate(args:argparse.Namespace)->int:
+    registry_path=Path(args.registry); registry=load_json(registry_path); errors=[]
+    if registry.get('schema')!='icon_registry_v5' or registry.get('variants')!=list(VARIANTS): errors.append('V5 registry contract mismatch')
+    expected=None
+    if args.rule_index or args.ir:
+        expected={r['service_id'] for r in discover_services(rule_index=Path(args.rule_index) if args.rule_index else None,ir_path=Path(args.ir) if args.ir else None)}; actual={str(r.get('service_id') or '') for r in registry.get('entries') or []}
+        if actual!=expected: errors.append(f'service coverage mismatch: missing={sorted(expected-actual)} extra={sorted(actual-expected)}')
+    for row in registry.get('entries') or []:
+        sid=row.get('service_id')
+        if row.get('release_eligible') is not True:
+            if args.strict: errors.append(f'{sid}: not release eligible')
             continue
-
-        source_url = str(result["source_url"])
-        if source_url in acquired_by_url:
-            cached = acquired_by_url[source_url]
-            result = {**result, "content": cached["content"], "source_digest": cached["source_digest"], "source_kind": cached["source_kind"]}
-        else:
-            acquired_by_url[source_url] = result
-
-        kind = result["source_kind"]
-        ext = {"svg": "svg", "png": "png", "webp": "webp", "ico": "ico", "jpg": "jpg"}[kind]
-        sid = slug(row["service_id"])
-        source_rel = f"source/original/{sid}.{ext}"
-        (out / source_rel).write_bytes(result["content"])
-        image_href = svg_data_url(result["content"], kind)
-        normalized = _svg_shell(
-            f'<image href="{image_href}" x="96" y="96" width="320" height="320" preserveAspectRatio="xMidYMid meet"/>',
-            row["display_name"],
-        )
-        normalized_rel = f"normalized/{sid}.svg"
-        (out / normalized_rel).write_text(normalized, encoding="utf-8")
-        variants = {
-            "source_original": {"path": source_rel, "digest": result["source_digest"], "source_kind": kind}
-        }
-        for style in STYLE_VARIANTS:
-            rendered = render_variant(image_href, row["display_name"], style)
-            rel = f"styles/{style}/{sid}.svg"
-            (out / rel).write_text(rendered, encoding="utf-8")
-            variants[style] = {"path": rel, "digest": sha256(rendered)}
-
-        results.append({
-            **row,
-            "icon_identity": f"service:{row['service_id']}",
-            "source": {
-                "origin": "official",
-                "homepage_url": result["homepage_url"],
-                "source_url": result["source_url"],
-                "content_type": result.get("content_type"),
-                "digest": result["source_digest"],
-                "rights_basis": "official_site_asset",
-                "redistribution_status": "review",
-                "resolution_reason": result["resolution_reason"],
-                "homepage_digest": result.get("homepage_digest"),
-            },
-            "normalized": {"path": normalized_rel, "digest": sha256(normalized)},
-            "variants": variants,
-            "lineage": {
-                **lineage,
-                "source_digest": result["source_digest"],
-                "renderer_version": RENDERER_VERSION,
-            },
-            "release_eligible": True,
-        })
-
-    for style in STYLE_VARIANTS:
-        write_preview(style, results, out)
-
-    complete = sum(1 for row in results if row.get("release_eligible") and all(k in row.get("variants", {}) for k in VARIANTS))
-    missing = [row["service_id"] for row in results if not all(k in row.get("variants", {}) for k in VARIANTS)]
-    manifest = {
-        "schema": "icon_registry_v5",
-        "version": 5,
-        "renderer_version": RENDERER_VERSION,
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "run_id": lineage["run_id"],
-        "snapshot_id": lineage["snapshot_id"],
-        "ir_digest": lineage["ir_digest"],
-        "service_universe": {"source": str(rule_index), "count": len(entries)},
-        "variants": list(VARIANTS),
-        "entries": results,
-        "coverage": {
-            "service_count": len(entries),
-            "icon_identity_count": sum(1 for x in results if x.get("source", {}).get("digest")),
-            "complete_8_of_8": complete,
-            "missing": missing,
-            "orphans": [],
-        },
-        "acquisition": {
-            "unique_source_urls": len(acquired_by_url),
-            "network_policy": "one_asset_fetch_per_run",
-        },
-    }
-    (out / "registry.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    (out / "release-pointer.json").write_text(
-        json.dumps({
-            "schema": "icon_release_pointer_v5",
-            "status": "candidate" if missing else "rc_ready",
-            "registry": "registry.json",
-            "renderer_version": RENDERER_VERSION,
-            "run_id": lineage["run_id"],
-            "snapshot_id": lineage["snapshot_id"],
-            "ir_digest": lineage["ir_digest"],
-        }, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-    print(json.dumps({
-        "status": "ok" if (not args.strict or not missing) else "blocked",
-        "service_count": len(entries),
-        "complete_8_of_8": complete,
-        "missing": missing,
-        "unique_source_urls": len(acquired_by_url),
-        "out": str(out),
-    }, ensure_ascii=False))
-    return 0 if (not args.strict or not missing) else 1
-
-
-def gate(args: argparse.Namespace) -> int:
-    registry_path = Path(args.registry)
-    registry = load_json(registry_path)
-    errors = []
-    if registry.get("schema") != "icon_registry_v5":
-        errors.append("schema mismatch")
-    if registry.get("variants") != list(VARIANTS):
-        errors.append("eight-layer variant contract mismatch")
-    entries = registry.get("entries") or []
-    ids = [str(x.get("service_id") or "") for x in entries]
-    if len(ids) != len(set(ids)):
-        errors.append("duplicate service_id in registry")
-    for row in entries:
-        sid = row.get("service_id")
-        if row.get("release_eligible") is not True:
-            if args.strict:
-                errors.append(f"{sid}: not release eligible")
-            continue
-        source = row.get("source") or {}
-        digest = str(source.get("digest") or "")
-        if not re.fullmatch(r"[0-9a-f]{64}", digest):
-            errors.append(f"{sid}: invalid source digest")
+        source=row.get('source') or {}
+        if not re.fullmatch(r'[0-9a-f]{64}',str(source.get('digest') or '')): errors.append(f'{sid}: invalid source digest')
         for key in VARIANTS:
-            item = (row.get("variants") or {}).get(key)
-            if not item:
-                errors.append(f"{sid}:{key}: missing variant")
-                continue
-            path = registry_path.parent / str(item.get("path") or "")
-            if not path.is_file():
-                errors.append(f"{sid}:{key}: missing file")
-                continue
-            got = sha256(path.read_bytes())
-            if got != str(item.get("digest") or ""):
-                errors.append(f"{sid}:{key}: digest mismatch")
-            if key != "source_original":
+            item=(row.get('variants') or {}).get(key)
+            if not item: errors.append(f'{sid}:{key}: missing variant'); continue
+            path=ROOT/str(item.get('path') or '') if key=='source_original' else registry_path.parent/str(item.get('path') or '')
+            if not path.is_file(): errors.append(f'{sid}:{key}: missing file'); continue
+            if sha256(path.read_bytes())!=str(item.get('digest') or ''): errors.append(f'{sid}:{key}: digest mismatch')
+            if key!='source_original':
                 try:
-                    root = ET.fromstring(path.read_text(encoding="utf-8"))
-                    if root.tag.rsplit("}", 1)[-1] != "svg":
-                        raise ValueError("not svg")
-                except Exception as exc:
-                    errors.append(f"{sid}:{key}: invalid svg: {exc}")
-        lin = row.get("lineage") or {}
-        for field in ("run_id", "renderer_version"):
-            if not str(lin.get(field) or "").strip():
-                errors.append(f"{sid}: missing lineage {field}")
-    coverage = registry.get("coverage") or {}
-    if args.strict and int(coverage.get("complete_8_of_8") or 0) != int(coverage.get("service_count") or 0):
-        errors.append("8/8 coverage incomplete")
-    report = {"schema": "icon_v5_gate_v1", "status": "PASS" if not errors else "FAIL", "errors": errors}
-    out = registry_path.parent / "gate.json"
-    out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps(report, ensure_ascii=False))
-    return 0 if not errors else 1
+                    root=ET.fromstring(path.read_text(encoding='utf-8'))
+                    if root.tag.rsplit('}',1)[-1]!='svg': raise ValueError('not svg')
+                except Exception as exc: errors.append(f'{sid}:{key}: invalid svg: {exc}')
+                for size in (64,128,256):
+                    png=registry_path.parent/str((item.get('png') or {}).get(str(size)) or '')
+                    if args.strict and (not png.is_file() or png.stat().st_size<=100): errors.append(f'{sid}:{key}: missing PNG {size}')
+        lin=row.get('lineage') or {}
+        if args.strict:
+            for field in ('run_id','snapshot_id','ir_digest','source_digest','renderer_version'):
+                if not str(lin.get(field) or '').strip(): errors.append(f'{sid}: missing lineage {field}')
+            if not str(source.get('rights_basis') or '').strip(): errors.append(f'{sid}: missing rights_basis')
+    coverage=registry.get('coverage') or {}
+    if args.strict and int(coverage.get('complete_8_of_8') or 0)!=int(coverage.get('service_count') or 0): errors.append('8/8 coverage incomplete')
+    report={'schema':'icon_v5_gate_v1','status':'PASS' if not errors else 'FAIL','errors':errors}; (registry_path.parent/'gate.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8'); print(json.dumps(report,ensure_ascii=False)); return 0 if not errors else 1
 
+def discover(args:argparse.Namespace)->int:
+    rows=discover_services(rule_index=Path(args.rule_index) if args.rule_index else None,ir_path=Path(args.ir) if args.ir else None); out=Path(args.out); out.parent.mkdir(parents=True,exist_ok=True); out.write_text(json.dumps({'schema':'icon_service_discovery_v5','run_id':args.run_id,'snapshot_id':args.snapshot_id,'ir_digest':args.ir_digest,'service_count':len(rows),'services':rows},ensure_ascii=False,indent=2)+'\n',encoding='utf-8'); print(json.dumps({'status':'ok','service_count':len(rows),'out':str(out)},ensure_ascii=False)); return 0
 
-def discover(args: argparse.Namespace) -> int:
-    rows = discover_services(Path(args.rule_index))
-    doc = load_yaml(Path(args.rule_index))
-    result = {
-        "schema": "icon_service_discovery_v5",
-        "run_id": doc.get("run_id"),
-        "ir_digest": doc.get("ir_digest"),
-        "service_count": len(rows),
-        "services": rows,
-    }
-    out = Path(args.out)
-    out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"status": "ok", "service_count": len(rows), "out": str(out)}, ensure_ascii=False))
-    return 0
+def contract()->int:
+    policy=load_yaml(POLICY)
+    if policy.get('version')!=5 or tuple(policy.get('variants') or [])!=VARIANTS or set(RENDERERS)!=set(VARIANTS[1:]): raise SystemExit('icon_v5 contract mismatch')
+    print(json.dumps({'status':'PASS','schema':'icon_v5_contract_v1','variants':list(VARIANTS),'renderer_version':RENDERER_VERSION,'renderer_modules':sorted(RENDERERS)},ensure_ascii=False)); return 0
 
-
-def contract() -> int:
-    policy = load_yaml(POLICY)
-    if policy.get("version") != 5:
-        raise SystemExit("icon_v5 policy version mismatch")
-    if tuple(policy.get("variants") or []) != VARIANTS:
-        raise SystemExit("icon_v5 variant contract mismatch")
-    print(json.dumps({"status": "PASS", "schema": "icon_v5_contract_v1", "variants": list(VARIANTS), "renderer_version": RENDERER_VERSION}, ensure_ascii=False))
-    return 0
-
-
-def main() -> int:
-    ap = argparse.ArgumentParser()
-    sub = ap.add_subparsers(dest="command", required=True)
-    sub.add_parser("contract")
-    p = sub.add_parser("discover")
-    p.add_argument("--rule-index", type=Path, required=True)
-    p.add_argument("--out", type=Path, required=True)
-    p = sub.add_parser("build")
-    p.add_argument("--rule-index", type=Path, required=True)
-    p.add_argument("--out", type=Path, required=True)
-    p.add_argument("--run-id")
-    p.add_argument("--snapshot-id")
-    p.add_argument("--ir-digest")
-    p.add_argument("--strict", action="store_true")
-    p = sub.add_parser("gate")
-    p.add_argument("--registry", type=Path, required=True)
-    p.add_argument("--strict", action="store_true")
-    args = ap.parse_args()
-    if args.command == "contract":
-        return contract()
-    if args.command == "discover":
+def main()->int:
+    ap=argparse.ArgumentParser(); sub=ap.add_subparsers(dest='command',required=True); sub.add_parser('contract')
+    for command in ('discover','build'):
+        p=sub.add_parser(command); p.add_argument('--rule-index'); p.add_argument('--ir'); p.add_argument('--out',required=True)
+        if command=='discover': p.add_argument('--run-id'); p.add_argument('--snapshot-id'); p.add_argument('--ir-digest')
+        else: p.add_argument('--cache-dir'); p.add_argument('--run-id'); p.add_argument('--snapshot-id'); p.add_argument('--ir-digest'); p.add_argument('--refresh',action='store_true'); p.add_argument('--strict',action='store_true')
+    p=sub.add_parser('gate'); p.add_argument('--registry',required=True); p.add_argument('--rule-index'); p.add_argument('--ir'); p.add_argument('--strict',action='store_true')
+    args=ap.parse_args()
+    if args.command=='contract': return contract()
+    if args.command=='discover':
+        if not args.rule_index and not args.ir: ap.error('discover requires --rule-index or --ir')
         return discover(args)
-    if args.command == "build":
+    if args.command=='build':
+        if not args.rule_index and not args.ir: ap.error('build requires --rule-index or --ir')
         return build(args)
-    if args.command == "gate":
-        return gate(args)
-    return 2
+    return gate(args)
 
-
-if __name__ == "__main__":
-    raise SystemExit(main())
+if __name__=='__main__': raise SystemExit(main())
