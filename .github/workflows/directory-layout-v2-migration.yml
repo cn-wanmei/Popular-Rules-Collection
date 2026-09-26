@@ -9,6 +9,7 @@ on:
       - ".github/workflows/directory-layout-v2-migration.yml"
 
 # rerun-on-latest-main
+# validated-on-f61
 
 jobs:
   migrate:
