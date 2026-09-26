@@ -5,121 +5,121 @@ bindings:
   '1688':
     status: active
     source_id: popular-rules-source
-    source_ref: bd0c73624eef698e7cd1a51f23cf9d9719d927e2
-    verified_input_commit: 460b2d7bfb6491b8d468feed9a374026e5913598
+    source_ref: e42ee6110f9723e15c02f270073efcffd2d3f191
+    verified_input_commit: e42ee6110f9723e15c02f270073efcffd2d3f191
     artifact_path: generated/source/1688/domains.txt
-    release_path: releases/1688/snap-1688-954c3b4b2e56716d074be878/release.json
-    snapshot_id: snap-1688-954c3b4b2e56716d074be878
-    content_digest: 8b275a8312a7f8946e2125eb50aa698ef3e19cbc9c9f549252efbac13ba48b74
-    evidence_digest: 8d643d7fcb05865fe7a7f88ac3897d026012b9ba5bfd408369e21011e7957a80
+    release_path: releases/1688/snap-1688-7f7af0f41726f736391a28f9/release.json
+    snapshot_id: snap-1688-7f7af0f41726f736391a28f9
+    content_digest: 844d55ee74f858b2d7282050674bd1001b084675053aeb97ee824583dd8a54b6
+    evidence_digest: 2aa78f295619f75d12fcedde4f197b574fba17c8cea1653a13cf61b12fdc032a
     policy_digest: 877e7af68e1242e56c8ef24540b44ea4507caf68a99cfc5df90cacfe610d954d
-    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
-    release_digest: 954c3b4b2e56716d074be87887349f13755b9b56111dcbc8069f29800531351b
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 7f7af0f41726f736391a28f9fb31f62367cac08df1d38d2d373c6f416bfac64e
     release_identity_version: '2'
     expected_sha256: 967830ff02fd030cac91ea074a159d5380885dc5ab731dba5080bc99ef3da8cc
   cainiao:
     status: active
     source_id: popular-rules-source
-    source_ref: bd0c73624eef698e7cd1a51f23cf9d9719d927e2
-    verified_input_commit: 460b2d7bfb6491b8d468feed9a374026e5913598
+    source_ref: e42ee6110f9723e15c02f270073efcffd2d3f191
+    verified_input_commit: e42ee6110f9723e15c02f270073efcffd2d3f191
     artifact_path: generated/source/cainiao/domains.txt
-    release_path: releases/cainiao/snap-cainiao-6fb6742fb29460ba81c778ea/release.json
-    snapshot_id: snap-cainiao-6fb6742fb29460ba81c778ea
-    content_digest: 96708779c82adde450e5f85688fddd698b2738462784608d8f95b6f4587e0ac7
-    evidence_digest: 5dc42bfaac1ddbd7ca97f099211a6f74761bff86967bdd6dad9e60af0169233d
+    release_path: releases/cainiao/snap-cainiao-ee03968b4ad0f97349d796d2/release.json
+    snapshot_id: snap-cainiao-ee03968b4ad0f97349d796d2
+    content_digest: e515672f80acb6093e21dbecddb8259479012cf45cd52c031500513e5e0ac705
+    evidence_digest: abc7055b8b1003cd6d25ba2f4c0694f894231d5cd97a0485df380e0d24bb77c8
     policy_digest: 70093b9709724c22863c6f1840b5cb8e31afcd4b768d3c3a454a1a94ffb30d11
-    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
-    release_digest: 6fb6742fb29460ba81c778ea3e4cbec6dbe3baf3e6dd6dad9516271ed3b9f0b9
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: ee03968b4ad0f97349d796d2840142d87afeb47f51e290047265c2b912a645fd
     release_identity_version: '2'
     expected_sha256: 49d81715b12d8915f089f4d09710c6ca41cad95f84414daf068990ea7fb4897d
   dingding:
     status: active
     source_id: popular-rules-source
-    source_ref: bd0c73624eef698e7cd1a51f23cf9d9719d927e2
-    verified_input_commit: 460b2d7bfb6491b8d468feed9a374026e5913598
+    source_ref: e42ee6110f9723e15c02f270073efcffd2d3f191
+    verified_input_commit: e42ee6110f9723e15c02f270073efcffd2d3f191
     artifact_path: generated/source/dingding/domains.txt
-    release_path: releases/dingding/snap-dingding-b9abab2ce6401505d89e2cc7/release.json
-    snapshot_id: snap-dingding-b9abab2ce6401505d89e2cc7
+    release_path: releases/dingding/snap-dingding-09ae1ecd000f1688f61e99a0/release.json
+    snapshot_id: snap-dingding-09ae1ecd000f1688f61e99a0
     content_digest: 34a9c9a2ea1729d68b4a16a9afe009c4b954a314376d6963dba254b97319db99
     evidence_digest: 908695e97748a94fdae74a98a24393d90cb37da2d3ae78cfd8bdfba21b986306
     policy_digest: cfe3591541d8facb101548dfa5faf385b0607ce3250325f33fc3ec97940775b9
-    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
-    release_digest: b9abab2ce6401505d89e2cc7eae3355b53204fef2a8a4910533a7c7b28c733de
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 09ae1ecd000f1688f61e99a07f7c36fae8ad0dbd7c9287f8857344ec6e3a70ad
     release_identity_version: '2'
     expected_sha256: 750c04135f0867724f2bd0e7af6a55763e6b1d044114d30c50982c8ed6d56935
   qqmail:
     status: active
     source_id: popular-rules-source
-    source_ref: bd0c73624eef698e7cd1a51f23cf9d9719d927e2
-    verified_input_commit: 460b2d7bfb6491b8d468feed9a374026e5913598
+    source_ref: e42ee6110f9723e15c02f270073efcffd2d3f191
+    verified_input_commit: e42ee6110f9723e15c02f270073efcffd2d3f191
     artifact_path: generated/source/qqmail/domains.txt
-    release_path: releases/qqmail/snap-qqmail-6b294a6a56c74356d45a8983/release.json
-    snapshot_id: snap-qqmail-6b294a6a56c74356d45a8983
+    release_path: releases/qqmail/snap-qqmail-013babbee1bf9cf46a1741a1/release.json
+    snapshot_id: snap-qqmail-013babbee1bf9cf46a1741a1
     content_digest: 5695daafc911f85c95b0820fe2617c01500a10aa4943675a32bbc1f4d7bd3e7b
     evidence_digest: c567a56a23d7dae0b10c46a5fdbe7422e8679be0d2a36beaf74a8b248372cae2
     policy_digest: 76f1bd1a05ff00cc35ab53d87022a857ca245534bae06cf5193126139e55c45d
-    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
-    release_digest: 6b294a6a56c74356d45a89838e2c265b58e718cc43e2dd1be8c0bd95fcfd0584
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 013babbee1bf9cf46a1741a16aeaea147fc1673ce991fa8bd61a975be480ca55
     release_identity_version: '2'
     expected_sha256: e9f05b72a86ad9be815cde834ae1cd2097877c16dcea5eacb23885f52af4f24d
   qqmusic:
     status: active
     source_id: popular-rules-source
-    source_ref: bd0c73624eef698e7cd1a51f23cf9d9719d927e2
-    verified_input_commit: 460b2d7bfb6491b8d468feed9a374026e5913598
+    source_ref: e42ee6110f9723e15c02f270073efcffd2d3f191
+    verified_input_commit: e42ee6110f9723e15c02f270073efcffd2d3f191
     artifact_path: generated/source/qqmusic/domains.txt
-    release_path: releases/qqmusic/snap-qqmusic-144f8b8b6ac75b2d1e5cd045/release.json
-    snapshot_id: snap-qqmusic-144f8b8b6ac75b2d1e5cd045
+    release_path: releases/qqmusic/snap-qqmusic-421df9f4465ad7fb35ed9c06/release.json
+    snapshot_id: snap-qqmusic-421df9f4465ad7fb35ed9c06
     content_digest: 6fa3c128a8c14a735bda9ae14ae4c8879d5f2db025ff897bd31eb6cc588603dd
     evidence_digest: 561ad2e29159553a986957a2d4514e7755b6026e107829d585bc48bdbb158299
     policy_digest: e6069e703f8cb8b561a732d5c95bb9499373d96f1070f5674dd76c58b69fe864
-    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
-    release_digest: 144f8b8b6ac75b2d1e5cd045733a418e63bbc8cce4e4883dda8ebb082b2c3ec6
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 421df9f4465ad7fb35ed9c069cea8fc6e2109829878e63139fd3706d939d874f
     release_identity_version: '2'
     expected_sha256: 7b339dafb02213f9b29d7582664a1f802b9045ea27b99a47eeb6780c261a9119
   taobao:
     status: active
     source_id: popular-rules-source
-    source_ref: bd0c73624eef698e7cd1a51f23cf9d9719d927e2
-    verified_input_commit: 460b2d7bfb6491b8d468feed9a374026e5913598
+    source_ref: e42ee6110f9723e15c02f270073efcffd2d3f191
+    verified_input_commit: e42ee6110f9723e15c02f270073efcffd2d3f191
     artifact_path: generated/source/taobao/domains.txt
-    release_path: releases/taobao/snap-taobao-9d9ea3dd71d0ef067dd7c6a1/release.json
-    snapshot_id: snap-taobao-9d9ea3dd71d0ef067dd7c6a1
-    content_digest: ffff0ab3df04e6fb51fccff8916d5e804b6fc22c944012cc889a75461234e216
-    evidence_digest: 5cd2f41f3ae96b791058e1abb54099fd17d5b4d6469c580775c5173fff10eb4c
+    release_path: releases/taobao/snap-taobao-08524dda3bcdc0c994fa68aa/release.json
+    snapshot_id: snap-taobao-08524dda3bcdc0c994fa68aa
+    content_digest: 074c0768906e769658bb0db41b8ffbb331da7a6ebefbf92ea4d1283524b947c6
+    evidence_digest: 407a13a09959fdecbc2f8ef598b9cfffd09ad7c58134a5bdd49b75f69dacef3b
     policy_digest: 9e38c8ab8072e03dc76b9f462b72c893730db1977cd0bb401988aa2f4e427038
-    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
-    release_digest: 9d9ea3dd71d0ef067dd7c6a1f04270a3cfa35033297f9b7701eb9a6dc59ffba5
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 08524dda3bcdc0c994fa68aad8694e55873a1cb138523b5ccd16919b72165775
     release_identity_version: '2'
     expected_sha256: 818ce8e07ffdc768387f91f4b1c5e03a75fe4a039c649aaad7d491dc264640a6
   tencentcloud:
     status: active
     source_id: popular-rules-source
-    source_ref: bd0c73624eef698e7cd1a51f23cf9d9719d927e2
-    verified_input_commit: 460b2d7bfb6491b8d468feed9a374026e5913598
+    source_ref: e42ee6110f9723e15c02f270073efcffd2d3f191
+    verified_input_commit: e42ee6110f9723e15c02f270073efcffd2d3f191
     artifact_path: generated/source/tencentcloud/domains.txt
-    release_path: releases/tencentcloud/snap-tencentcloud-99be32d627feeda81e8555b9/release.json
-    snapshot_id: snap-tencentcloud-99be32d627feeda81e8555b9
-    content_digest: 613fe80607e0bb552de910316d268265efbe2b6cc0691203d41b786cf54e9772
-    evidence_digest: 7930856180b40d046e882fe0e5663e9571a1214edeedbdb2078118cc330c326c
+    release_path: releases/tencentcloud/snap-tencentcloud-2de54e71b5b8c6523f75deeb/release.json
+    snapshot_id: snap-tencentcloud-2de54e71b5b8c6523f75deeb
+    content_digest: 91e8192ba238875b0dbe0f55d6f7c12567d07d56b6629ae9a92918327a760017
+    evidence_digest: ec9eb183267d02793f66cc2f6dfef8c77ef83656db9d412b472050f1baadee08
     policy_digest: 58510f5c59ea5fddf470ff6d169b6fa0444c14a843e0409cd341c80c486546a4
-    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
-    release_digest: 99be32d627feeda81e8555b922e27896c35dd84803222b82c4bef9c44b86adc3
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 2de54e71b5b8c6523f75deebc42ed90edc95d6969969b62c9e2038e55526d545
     release_identity_version: '2'
     expected_sha256: 3aee7d20287e15c9e109c97d04571758bc4b66fd74ace8d84967827e36260991
   tmall:
     status: active
     source_id: popular-rules-source
-    source_ref: bd0c73624eef698e7cd1a51f23cf9d9719d927e2
-    verified_input_commit: 460b2d7bfb6491b8d468feed9a374026e5913598
+    source_ref: e42ee6110f9723e15c02f270073efcffd2d3f191
+    verified_input_commit: e42ee6110f9723e15c02f270073efcffd2d3f191
     artifact_path: generated/source/tmall/domains.txt
-    release_path: releases/tmall/snap-tmall-e874413d8245a8df0eb4b75e/release.json
-    snapshot_id: snap-tmall-e874413d8245a8df0eb4b75e
-    content_digest: f6aca74ba68593d61d9abeb2d6fded60d6f33ec92bb2c8c39b8ac1e2cd05c475
-    evidence_digest: 6f0f1a5fa9ac48f6b610a01a700347f531503c15efcaf06fa69a3abb9412e36e
+    release_path: releases/tmall/snap-tmall-8c73b1a776b6d61356214c4c/release.json
+    snapshot_id: snap-tmall-8c73b1a776b6d61356214c4c
+    content_digest: f67634d7d9404b3142e8ba764a5c6a69ed2064d9e8aed5bcd88ff4081e346a58
+    evidence_digest: 1e277dca85ead81c508e8ddc447cb82683d0d13c50aa4d8f4cda74a03899a0fd
     policy_digest: b4b1b408ca2bfe03e2af68103ed2e3dc598350120217d287733a119f9c7f82aa
-    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
-    release_digest: e874413d8245a8df0eb4b75ef606b93d8cc3aac33fce4304da145143452ba50e
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 8c73b1a776b6d61356214c4cd196b052e956210727de484a8f3a492044714609
     release_identity_version: '2'
     expected_sha256: 4f2521212149543f1f267cb4b7d9bb89a544f168b33bd12ecd3207aaaedd412d
   baidunetdisk:
