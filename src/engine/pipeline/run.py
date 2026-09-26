@@ -23,6 +23,7 @@ from src.engine.release.evidence import build_sbom, retention_plan
 from src.engine.release.state_machine import evaluate_release
 from src.engine.snapshot.engine import create_source_snapshot, load_snapshot_manifest
 from src.engine.validation.directory_contract import validate as validate_directory_contract
+from src.engine.validation.manifest_validator import validate_distribution
 from src.engine.validation.source_semantic import run_source_semantic_gate
 from src.engine.service_semantics.contract import validate_service_semantics
 from src.engine.observation.contract import observe_run
@@ -160,7 +161,6 @@ def run_pipeline(sources_root: Path, data_root: Path, *, run_id: str | None = No
             run_dir / "ir",
             run_dir / "rule",
             hierarchy_path=ROOT / "config" / "ruleset_hierarchy.yaml",
-            policy_path=ROOT / "config" / "service_model" / "directories.yaml",
             run_id=run_id,
         )
         report = validate_directory_contract(
@@ -178,13 +178,23 @@ def run_pipeline(sources_root: Path, data_root: Path, *, run_id: str | None = No
         }
 
     def handler_adapters() -> dict[str, Any]:
-        report = build_all_clients(run_dir / "ir", run_dir / "artifacts")
+        report = build_all_clients(run_dir / "ir", run_dir / "artifacts", run_id=run_id)
+        validation = validate_distribution(
+            rule_root=run_dir / "rule",
+            artifacts_root=run_dir / "artifacts",
+            build_report=report,
+            expected_run_id=run_id,
+        )
+        (run_dir / "directory_validation.json").write_text(
+            json.dumps(validation, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+        )
         return {
-            "status": "ok",
+            "status": "ok" if validation["pass"] else "blocked",
             "clients": sorted(report.get("clients", {})),
             "parallel": report.get("parallel", False),
             "source_contract": report.get("source_contract"),
             "directory_contract": report.get("directory_contract"),
+            "directory_validation": validation,
         }
 
     def handler_diff() -> dict[str, Any]:
