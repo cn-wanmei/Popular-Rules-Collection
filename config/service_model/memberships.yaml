@@ -1,9 +1,9 @@
 version: 1
-updated: "2026-09-17"
+updated: "2026-09-26"
 aggregates:
-  google: {id: google, kind: aggregate, provider: google, scope: ecosystem, members: [google-core, google-shared, gmail, google-search, googlecloud, firebase, googledrive, youtubemusic, youtube, googlefcm, gcp, googlevoice, googleearth, googlemaps], exclude: []}
-  apple: {id: apple, kind: aggregate, provider: apple, scope: ecosystem, members: [apple-core, apple-shared, icloud, appstore, testflight, appledev, findmy, applemusic, appletv, siri, appleid, applemail, applemedia, applenews, applefirmware, icloudprivaterelay], exclude: []}
-  microsoft: {id: microsoft, kind: aggregate, provider: microsoft, scope: ecosystem, members: [microsoft-core, microsoft-shared, azure, onedrive, teams, xbox, github, microsoftedge, bing, outlook, office], exclude: []}
+  google: {id: google, kind: aggregate, provider: google, scope: ecosystem, members: [google-core, google-shared, gmail, google-search, googlecloud, firebase, googledrive, youtubemusic, youtube, googlefcm, gcp, googlevoice, googleearth, googlemaps, google-calendar, google-chat, google-contacts, google-docs, google-forms, google-groups, google-meet, google-sheets, google-sites, google-slides, google-vids, google-workspace-studio, google-maps, google-photos, google-play, google-news, google-earth], exclude: []}
+  apple: {id: apple, kind: aggregate, provider: apple, scope: ecosystem, members: [apple-core, apple-shared, icloud, appstore, testflight, appledev, findmy, applemusic, appletv, siri, appleid, applemail, applemedia, applenews, applefirmware, icloudprivaterelay, applepodcasts, applebooks, applemaps], exclude: []}
+  microsoft: {id: microsoft, kind: aggregate, provider: microsoft, scope: ecosystem, members: [microsoft-core, microsoft-shared, azure, onedrive, teams, xbox, github, microsoftedge, bing, outlook, office, ms365-word, ms365-excel, ms365-powerpoint, ms365-onenote, ms365-planner, ms365-loop, ms365-mesh], exclude: []}
   tencent: {id: tencent, kind: aggregate, provider: tencent, scope: ecosystem, members: [tencent-core, tencent-shared, wechat, qq, qqmusic, qqmail, wecom, tencentmeeting, tencentcloud, tencentvideo, wegame, honorofkings_cn, honorofkings_global], exclude: []}
   alibaba: {id: alibaba, kind: aggregate, provider: alibaba, scope: ecosystem, members: [alibaba-core, alibaba-shared, taobao, tmall, alibabacloud, "1688", dingding, cainiao], exclude: []}
   baidu: {id: baidu, kind: aggregate, provider: baidu, scope: ecosystem, members: [baidu-core, baidu-shared, baidunetdisk, baidutieba, baidumaps, baiduwiki, baiduwenku], exclude: []}
