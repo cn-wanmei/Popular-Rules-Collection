@@ -53,14 +53,18 @@ def _entity_expectation(root: Path,path: Path,aggregates:dict[str,str],services:
         if provider in aggregates and name==provider and name not in services.get(provider,set()):
             return "provider_aggregate",aggregates.get(provider,provider),provider
         return "service",name,provider
-    return _ENTITY_TYPES[parts[0]],parts[1],None
+    if len(parts)==4 and parts[0] in _ENTITY_TYPES:
+        return _ENTITY_TYPES[parts[0]],parts[1],None
+    return "invalid","",None
 
 def _validate_rule_payload(root:Path,path:Path,expected_run_id:str|None,aggregates:dict[str,str],services:dict[str,set[str]])->list[str]:
     try: payload=_load_yaml(path)
     except (OSError,UnicodeDecodeError,ValueError,yaml.YAMLError) as exc: return [f"invalid human rule payload: {path.relative_to(root)}: {exc}"]
     errors=[]
-    entity,entity_id,provider=_entity_expectation(root,path,aggregates,services)
     rel=path.relative_to(root).as_posix()
+    entity,entity_id,provider=_entity_expectation(root,path,aggregates,services)
+    if entity=="invalid":
+        return [f"invalid human rule path: {rel}"]
     if payload.get("schema")!="human_rule_distribution_v1": errors.append(f"invalid human rule schema: {rel}")
     if payload.get("entity")!=entity: errors.append(f"human rule entity mismatch: {rel}")
     if str(payload.get("id") or "").strip()!=entity_id: errors.append(f"human rule id mismatch: {rel}")
