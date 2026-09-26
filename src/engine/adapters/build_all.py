@@ -1,6 +1,7 @@
 """Parallel native client projections from the Semantic IR contract."""
 from __future__ import annotations
 
+import hashlib
 import json
 from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
