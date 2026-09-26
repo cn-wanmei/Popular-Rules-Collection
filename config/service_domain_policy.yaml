@@ -36,3 +36,25 @@ verified_p0c:
 existing_node_augmentations:
   outlook: {candidate_exact: [outlook.cloud.microsoft, outlook.office.com, outlook.office365.com], status: REVIEW_REQUIRED}
   teams: {candidate_exact: [teams.cloud.microsoft], status: REVIEW_REQUIRED}
+verified_priority_wave:
+  huawei-cloud: {exact: [console-intl.huaweicloud.com], source: https://console-intl.huaweicloud.com/console/?locale=en-us}
+  mi-cloud: {exact: [i.mi.com], source: https://www.mi.com/sg/support/article/KA-07435/}
+  jd-cloud: {exact: [www.jdcloud.com], source: https://www.jdcloud.com/}
+  kugou: {exact: [www.kugou.com], source: https://www.kugou.com/}
+  kuwo: {exact: [m.kuwo.cn], source: https://m.kuwo.cn/newh5app/ranklist_detail/16}
+  quanmin-k-ge: {exact: [kg.qq.com], source: https://kg.qq.com/}
+  amazonmusic: {exact: [music.amazon.com], source: https://music.amazon.com/}
+  audible: {exact: [audible.com], source: https://www.audible.com/}
+  goodreads: {exact: [goodreads.com], source: https://www.goodreads.com/}
+  messenger: {exact: [www.messenger.com], source: https://messenger.com/}
+  adobe-firefly: {exact: [firefly.adobe.com], source: https://firefly.adobe.com/}
+  adobe-stock: {exact: [stock.adobe.com], source: https://stock.adobe.com/}
+  adobe-fonts: {exact: [fonts.adobe.com], source: https://fonts.adobe.com/}
+  openai-api: {exact: [api.openai.com], source: https://developers.openai.com/api/docs}
+  openai-platform: {exact: [platform.openai.com], source: https://platform.openai.com/}
+  chatgpt: {exact: [chatgpt.com], source: https://chatgpt.com/}
+  anthropic-claude: {exact: [claude.ai], source: https://claude.ai/}
+  anthropic-platform: {exact: [platform.claude.com], source: https://console.anthropic.com/}
+  xai-grok: {exact: [grok.com], source: https://grok.com/}
+  stripe-dashboard: {exact: [dashboard.stripe.com], source: https://dashboard.stripe.com/}
+  venmo: {exact: [venmo.com], source: https://venmo.com/}
