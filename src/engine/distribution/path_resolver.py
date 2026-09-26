@@ -50,9 +50,10 @@ class EntityPathResolver:
         return text
 
     @classmethod
-    def human_provider(cls, provider: str) -> Path:
+    def human_provider(cls, provider: str, aggregate: str | None = None) -> Path:
         provider = cls._safe(provider)
-        return Path("rule") / provider / provider / f"{provider}.yaml"
+        aggregate = cls._safe(aggregate or provider)
+        return Path("rule") / provider / aggregate / f"{aggregate}.yaml"
 
     @classmethod
     def human_service(cls, provider: str, service: str) -> Path:
@@ -85,10 +86,11 @@ class EntityPathResolver:
         return Path("rule") / "unmapped" / service / f"{service}.yaml"
 
     @classmethod
-    def generated_provider(cls, client: str, provider: str) -> Path:
+    def generated_provider(cls, client: str, provider: str, aggregate: str | None = None) -> Path:
         client = cls._safe(client)
         provider = cls._safe(provider)
-        return Path("generated") / client / provider / provider / provider
+        aggregate = cls._safe(aggregate or provider)
+        return Path("generated") / client / provider / aggregate / aggregate
 
     @classmethod
     def generated_service(cls, client: str, provider: str, service: str) -> Path:
