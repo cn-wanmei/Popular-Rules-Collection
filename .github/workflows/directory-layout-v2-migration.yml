@@ -1,5 +1,5 @@
 name: Directory Layout v2 Migration
-# Retry after fail-closed legacy path validation fix.
+# Retry after special namespace validation fix.
 
 on:
   push:
