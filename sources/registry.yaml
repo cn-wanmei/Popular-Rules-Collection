@@ -1,6 +1,6 @@
 # Registry V3 — Source + Fetcher + Collection Manifest
 version: 3
-last_updated: '2026-09-23'  # immutable source bridge activation verified; immutable acquisition URL pin gate verified
+last_updated: '2026-09-26'
 sources:
 - id: popular-rules-source
   name: Popular-Rules-Source (official domain generation)
@@ -90,6 +90,57 @@ sources:
   - {path: generated/source/netease163mail/domains.txt, name: netease163mail, service: netease163mail, local: PRS_netease163mail.domains.txt, enabled: true}  # Source-owned; pending immutable binding
   - {path: generated/source/wegame/domains.txt, name: wegame, service: wegame, local: PRS_wegame.domains.txt, enabled: true}  # Source-owned; pending immutable binding
 
+  - {path: generated/source/adobefirefly/domains.txt, name: adobefirefly, service: adobefirefly, local: PRS_adobefirefly.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/adobefonts/domains.txt, name: adobefonts, service: adobefonts, local: PRS_adobefonts.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/adobestock/domains.txt, name: adobestock, service: adobestock, local: PRS_adobestock.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/amazonmusic/domains.txt, name: amazonmusic, service: amazonmusic, local: PRS_amazonmusic.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/anthropicclaude/domains.txt, name: anthropicclaude, service: anthropicclaude, local: PRS_anthropicclaude.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/anthropicplatform/domains.txt, name: anthropicplatform, service: anthropicplatform, local: PRS_anthropicplatform.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/applebooks/domains.txt, name: applebooks, service: applebooks, local: PRS_applebooks.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/applemaps/domains.txt, name: applemaps, service: applemaps, local: PRS_applemaps.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/applepodcasts/domains.txt, name: applepodcasts, service: applepodcasts, local: PRS_applepodcasts.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/audible/domains.txt, name: audible, service: audible, local: PRS_audible.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/baiduzhidao/domains.txt, name: baiduzhidao, service: baiduzhidao, local: PRS_baiduzhidao.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/chatgpt/domains.txt, name: chatgpt, service: chatgpt, local: PRS_chatgpt.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/goodreads/domains.txt, name: goodreads, service: goodreads, local: PRS_goodreads.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/googlecalendar/domains.txt, name: googlecalendar, service: googlecalendar, local: PRS_googlecalendar.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/googlechat/domains.txt, name: googlechat, service: googlechat, local: PRS_googlechat.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/googlecontacts/domains.txt, name: googlecontacts, service: googlecontacts, local: PRS_googlecontacts.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/googledocs/domains.txt, name: googledocs, service: googledocs, local: PRS_googledocs.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/googleearth/domains.txt, name: googleearth, service: googleearth, local: PRS_googleearth.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/googleforms/domains.txt, name: googleforms, service: googleforms, local: PRS_googleforms.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/googlegroups/domains.txt, name: googlegroups, service: googlegroups, local: PRS_googlegroups.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/googlemeet/domains.txt, name: googlemeet, service: googlemeet, local: PRS_googlemeet.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/googlenews/domains.txt, name: googlenews, service: googlenews, local: PRS_googlenews.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/googlephotos/domains.txt, name: googlephotos, service: googlephotos, local: PRS_googlephotos.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/googleplay/domains.txt, name: googleplay, service: googleplay, local: PRS_googleplay.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/googlesheets/domains.txt, name: googlesheets, service: googlesheets, local: PRS_googlesheets.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/googlesites/domains.txt, name: googlesites, service: googlesites, local: PRS_googlesites.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/googleslides/domains.txt, name: googleslides, service: googleslides, local: PRS_googleslides.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/googlevids/domains.txt, name: googlevids, service: googlevids, local: PRS_googlevids.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/googlevoice/domains.txt, name: googlevoice, service: googlevoice, local: PRS_googlevoice.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/googleworkspacestudio/domains.txt, name: googleworkspacestudio, service: googleworkspacestudio, local: PRS_googleworkspacestudio.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/huaweiappgallery/domains.txt, name: huaweiappgallery, service: huaweiappgallery, local: PRS_huaweiappgallery.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/huaweicloud/domains.txt, name: huaweicloud, service: huaweicloud, local: PRS_huaweicloud.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/jdcloud/domains.txt, name: jdcloud, service: jdcloud, local: PRS_jdcloud.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/kuaishou/domains.txt, name: kuaishou, service: kuaishou, local: PRS_kuaishou.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/kuaishouopen/domains.txt, name: kuaishouopen, service: kuaishouopen, local: PRS_kuaishouopen.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/kugou/domains.txt, name: kugou, service: kugou, local: PRS_kugou.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/kuwo/domains.txt, name: kuwo, service: kuwo, local: PRS_kuwo.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/micloud/domains.txt, name: micloud, service: micloud, local: PRS_micloud.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/ms365excel/domains.txt, name: ms365excel, service: ms365excel, local: PRS_ms365excel.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/ms365loop/domains.txt, name: ms365loop, service: ms365loop, local: PRS_ms365loop.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/ms365mesh/domains.txt, name: ms365mesh, service: ms365mesh, local: PRS_ms365mesh.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/ms365onenote/domains.txt, name: ms365onenote, service: ms365onenote, local: PRS_ms365onenote.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/ms365planner/domains.txt, name: ms365planner, service: ms365planner, local: PRS_ms365planner.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/ms365powerpoint/domains.txt, name: ms365powerpoint, service: ms365powerpoint, local: PRS_ms365powerpoint.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/ms365word/domains.txt, name: ms365word, service: ms365word, local: PRS_ms365word.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/openaiapi/domains.txt, name: openaiapi, service: openaiapi, local: PRS_openaiapi.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/openaiplatform/domains.txt, name: openaiplatform, service: openaiplatform, local: PRS_openaiplatform.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/quanminkge/domains.txt, name: quanminkge, service: quanminkge, local: PRS_quanminkge.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/stripedashboard/domains.txt, name: stripedashboard, service: stripedashboard, local: PRS_stripedashboard.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/venmo/domains.txt, name: venmo, service: venmo, local: PRS_venmo.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
+  - {path: generated/source/xaigrok/domains.txt, name: xaigrok, service: xaigrok, local: PRS_xaigrok.domains.txt, enabled: false}  # Registered for completion; awaiting exact immutable Source release
 - id: blackmatrix7
   name: BlackMatrix7 ios_rule_script
   url: https://github.com/blackmatrix7/ios_rule_script
