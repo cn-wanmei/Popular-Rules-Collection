@@ -1,22 +1,15 @@
-version: 1
-updated: "2026-08-31"
-description: Icon Profile → preferred variant role
+version: 5
+updated: "2026-09-26"
+description: Icon System V5 preferred style roles (client presentation only; does not change icon identity)
 profiles:
-  brand:
-    preferred: [brand, simple, default]
-    description: 官方/可信品牌视觉优先
-  colorful:
-    preferred: [brand, simple, default]
-    description: 彩色品牌（多色原样保留）
-  minimal:
-    preferred: [flat, simple, brand, default]
-    description: 统一扁平/极简
-  monochrome:
-    preferred: [mono, brand, default]
-    description: "单色版=display_color 单色，禁止纯黑"
-  network:
-    preferred: [network, default]
-    description: 网络/策略几何标
-  client:
-    preferred: [brand, simple, default]
-    description: 客户端默认
+  v5:
+    preferred: [minimalist, glassmorphism, soft_3d, neo_skeuomorphism, duotone_line, mbe, y2k, source_original]
+    description: V5 Matrix 8 — client selects preferred_style only
+  minimalist:
+    preferred: [minimalist]
+  glassmorphism:
+    preferred: [glassmorphism]
+  soft_3d:
+    preferred: [soft_3d]
+  duotone_line:
+    preferred: [duotone_line]
