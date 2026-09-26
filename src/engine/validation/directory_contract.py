@@ -29,6 +29,7 @@ def _valid_rule_path(root: Path, path: Path) -> bool:
     if any(part in {".","..","all","rules"} for part in parts): return False
     if not parts or not parts[-1].endswith(".yaml"): return False
     if not all(_NAME_RE.fullmatch(part) for part in parts[:-1]): return False
+    if parts == ("china", "china.yaml"): return True
     if len(parts) == 3: return parts[2] == f"{parts[1]}.yaml"
     if len(parts) == 4: return parts[0] in _ENTITY_TYPES and parts[3] == f"{parts[2]}.yaml"
     return False
