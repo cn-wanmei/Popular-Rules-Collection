@@ -3,20 +3,25 @@ schema: rule_distribution_policy_v2
 updated: "2026-09-26"
 root: rule
 
+# V3 distribution contract. Canonical truth is materialized per run under
+# data/runs/<run-id>/canonical and Semantic IR under data/runs/<run-id>/ir.
+# Provider/China semantics below remain the existing production hierarchy.
+# The human rule tree and generated client trees are sibling projections of one Run.
 layout:
   human_root: "rule"
+  # Provider aggregates use an identity directory. Child services remain provider/service/service.yaml.
   human_aggregate: "rule/{provider}/{provider}/{provider}.yaml"
   human_service: "rule/{provider}/{service}/{service}.yaml"
-  human_china: "rule/china/china/china.yaml"
-  human_category: "rule/category/{category}/{category}/{category}.yaml"
-  human_group: "rule/group/{group}/{group}/{group}.yaml"
-  human_aggregate_entity: "rule/aggregate/{aggregate}/{aggregate}/{aggregate}.yaml"
-  human_unmapped_service: "rule/unmapped/{service}/{service}/{service}.yaml"
+  human_china: "rule/china/china.yaml"
+  human_category: "rule/category/{category}/{category}.yaml"
+  human_group: "rule/group/{group}/{group}.yaml"
+  human_aggregate_entity: "rule/aggregate/{aggregate}/{aggregate}.yaml"
+  human_unmapped_service: "rule/unmapped/{service}/{service}.yaml"
   generated_client_root: "generated/{client}"
   generated_aggregate: "generated/{client}/{provider}/{provider}/{provider}"
   generated_service: "generated/{client}/{provider}/{service}/{service}"
-  generated_china: "generated/{client}/china/china/china"
-  generated_category: "generated/{client}/categories/{category}/{category}/{category}"
+  generated_china: "generated/{client}/china/china"
+  generated_category: "generated/{client}/categories/{category}/{category}"
 
 semantics:
   provider_aggregate: "union_of_provider_direct_rules_and_all_declared_services"
@@ -24,12 +29,87 @@ semantics:
   human_browse_output: true
   generated_output: true
   generated_named_files: true
+  layout_schema: "directory_layout_v2"
+  no_synthetic_all_directory: true
   source_of_truth: "data/runs/<run-id>/canonical"
   semantic_intermediate: "data/runs/<run-id>/ir"
   same_run_required: true
   rule_is_not_runtime_input: true
   generated_is_not_canonical_input: true
   no_alternate_rule_root: true
+
+# Providers with independent service directories are intentionally NOT folded
+# into the China aggregate. Their own aggregate/service trees are authoritative.
+china:
+  id: china
+  display_name: China
+  kind: domestic_aggregate
+  include: domestic_rule_universe
+  exclude_independent_providers:
+    - alibaba
+    - tencent
+    - baidu
+    - jd
+    - meituan
+    - bytedance
+    - netease
+    - huawei
+    - xiaomi
+    - oppo
+    - vivo
+  require_domain_and_ip_coverage: true
+  note: "China aggregate represents the complete China rule universe except providers explicitly separated into independent service trees."
+
+providers:
+  # Provider aggregates include every declared service under the provider.
+  apple:
+    aggregate_path: rule/apple/apple
+    services_from: service_model
+  google:
+    aggregate_path: rule/google/google
+    services_from: service_model
+  microsoft:
+    aggregate_path: rule/microsoft/microsoft
+    services_from: service_model
+  amazon:
+    aggregate_path: rule/amazon/amazon
+    services_from: service_model
+  tencent:
+    aggregate_path: rule/tencent/tencent
+    services_from: service_model
+  alibaba:
+    aggregate_path: rule/alibaba/alibaba
+    services_from: service_model
+  baidu:
+    aggregate_path: rule/baidu/baidu
+    services_from: service_model
+  bytedance:
+    aggregate_path: rule/bytedance/bytedance
+    services_from: service_model
+  netease:
+    aggregate_path: rule/netease/netease
+    services_from: service_model
+  huawei:
+    aggregate_path: rule/huawei/huawei
+    services_from: service_model
+  xiaomi:
+    aggregate_path: rule/xiaomi/xiaomi
+    services_from: service_model
+  atlassian:
+    aggregate_path: rule/atlassian/atlassian
+    services_from: service_model
+  meta:
+    aggregate_path: rule/meta/meta
+    services_from: service_model
+  cloudflare:
+    aggregate_path: rule/cloudflare/cloudflare
+    services_from: service_model
+  adobe:
+    aggregate_path: rule/adobe/adobe
+    services_from: service_model
+  hoyoverse:
+    aggregate_path: rule/hoyoverse/hoyoverse
+    services_from: service_model
 
 invariants:
   - provider_semantics_are_preserved
