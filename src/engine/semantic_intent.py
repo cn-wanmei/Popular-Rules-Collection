@@ -172,6 +172,7 @@ def validate_semantic_probes(
     memberships: dict[str, list[str]],
     *,
     policy_path: Path | None = None,
+    semantic_intent: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     """Run configured behavioral probes against the post-policy semantic IR."""
     path = Path(policy_path or DEFAULT_POLICY_PATH)
@@ -192,9 +193,19 @@ def validate_semantic_probes(
         target_rules = [rules_by_id[rid] for rid in sorted(target_ids) if rid in rules_by_id]
         policy_id = str(policy["id"])
         scoped_rules = []
+        applied_rule_ids = set()
+        if isinstance(semantic_intent, dict):
+            for item in semantic_intent.get("applied") or []:
+                if isinstance(item, dict) and str(item.get("policy_id")) == policy_id:
+                    rule_id = str(item.get("rule_id") or "")
+                    if rule_id:
+                        applied_rule_ids.add(rule_id)
         for rule in target_rules:
+            rule_id = str(rule.get("id") or "")
             markers = ((rule.get("provenance") or {}).get("semantic_transformations") or [])
-            if any(str(m.get("policy_id")) == policy_id for m in markers if isinstance(m, dict)):
+            marker_match = any(str(m.get("policy_id")) == policy_id for m in markers if isinstance(m, dict))
+            report_match = rule_id in applied_rule_ids
+            if marker_match or report_match:
                 scoped_rules.append(rule)
 
         for host in [str(x) for x in probes.get("matches") or []]:
