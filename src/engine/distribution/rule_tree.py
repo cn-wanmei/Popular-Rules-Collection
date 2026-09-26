@@ -267,6 +267,7 @@ def build_rule_tree(
     records.sort(key=lambda item: item["path"])
     index = {
         "schema": "human_rule_distribution_index_v1",
+        "schema_version": 2,
         "status": "ready",
         "run_id": resolved_run_id,
         "ir_schema": IR_SCHEMA,
@@ -279,6 +280,7 @@ def build_rule_tree(
     manifest = {
         "schema": MANIFEST_SCHEMA,
         "version": 1,
+        "schema_version": 2,
         "status": "ready" if records else "empty",
         "run_id": resolved_run_id,
         "ir_schema": IR_SCHEMA,
