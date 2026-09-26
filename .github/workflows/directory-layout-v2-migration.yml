@@ -1,5 +1,5 @@
 name: Directory Layout v2 Migration
-# Retry after china aggregate path validation fix.
+# Retry after v2 manifest fixture fix.
 
 on:
   push:
