@@ -5,9 +5,9 @@
   "targets": {
     "china": {
       "maps_to": "china",
-      "updated_at": "2026-09-26T00:30:01.347396+00:00",
+      "updated_at": "2026-09-26T02:29:33.677662+00:00",
       "cidr_count": 9686,
-      "existing_lines_before": 9685,
+      "existing_lines_before": 9686,
       "incoming_lines": 15819,
       "contributions": [
         {
@@ -21,7 +21,7 @@
             "branch": "release"
           },
           "lines_in": 9612,
-          "fetched_at": "2026-09-26T00:30:01.347396+00:00",
+          "fetched_at": "2026-09-26T02:29:33.677662+00:00",
           "notes": "Country CN prefixes only. Never attribute to a product service."
         },
         {
@@ -35,7 +35,7 @@
             "branch": "ip-lists"
           },
           "lines_in": 6207,
-          "fetched_at": "2026-09-26T00:30:01.347396+00:00",
+          "fetched_at": "2026-09-26T02:29:33.677662+00:00",
           "notes": "Alternate CN aggregate; merged + containment-deduped into china."
         }
       ],
@@ -43,9 +43,9 @@
     },
     "chinaunicom": {
       "maps_to": "chinaunicom",
-      "updated_at": "2026-09-26T00:30:01.347396+00:00",
+      "updated_at": "2026-09-26T02:29:33.677662+00:00",
       "cidr_count": 3795,
-      "existing_lines_before": 3791,
+      "existing_lines_before": 3795,
       "incoming_lines": 1731,
       "contributions": [
         {
@@ -59,7 +59,7 @@
             "branch": "ip-lists"
           },
           "lines_in": 1731,
-          "fetched_at": "2026-09-26T00:30:01.347396+00:00",
+          "fetched_at": "2026-09-26T02:29:33.677662+00:00",
           "notes": ""
         }
       ],
