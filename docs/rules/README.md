@@ -427,6 +427,8 @@
 
 ## 2026-09-26 服务补全批次
 
+- [adobefirefly](adobefirefly.md) (`adobefirefly` · service)
+
 本批次页面均遵循 V3 docs/rules SSOT；页面状态由当前 Source evidence、immutable release 与 Collection canary 决定。
 
 - [adobefonts](adobefonts.md) (`adobefonts` · service)
