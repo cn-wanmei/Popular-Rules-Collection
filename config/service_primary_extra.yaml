@@ -1,5 +1,5 @@
 version: 1
-updated: "2026-09-26" 1
+updated: "2026-09-26"
 services:
   abc: {primary_category: unionpay, display_name: ABC, categories: [finance, china], service_type: service, parent: unionpay}
   adblock-light: {primary_category: privacy, display_name: AdBlock-Light, categories: [privacy], service_type: service, parent: adblock}
