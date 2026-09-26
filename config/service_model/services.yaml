@@ -145,3 +145,23 @@ services:
   applepodcasts: {id: applepodcasts, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
   applebooks: {id: applebooks, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
   applemaps: {id: applemaps, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  huawei-cloud: {id: huawei-cloud, provider: huawei, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P1}
+  mi-cloud: {id: mi-cloud, provider: xiaomi, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P1}
+  jd-cloud: {id: jd-cloud, provider: jingdong, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P1}
+  kugou: {id: kugou, provider: tencent_music, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P1}
+  kuwo: {id: kuwo, provider: tencent_music, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P1}
+  quanmin-k-ge: {id: quanmin-k-ge, provider: tencent_music, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P1}
+  amazonmusic: {id: amazonmusic, provider: amazon, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  audible: {id: audible, provider: amazon, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  goodreads: {id: goodreads, provider: amazon, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  adobe-firefly: {id: adobe-firefly, provider: adobe, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  adobe-stock: {id: adobe-stock, provider: adobe, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  adobe-fonts: {id: adobe-fonts, provider: adobe, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  openai-api: {id: openai-api, provider: openai, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  openai-platform: {id: openai-platform, provider: openai, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  chatgpt: {id: chatgpt, provider: openai, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  anthropic-claude: {id: anthropic-claude, provider: anthropic, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  anthropic-platform: {id: anthropic-platform, provider: anthropic, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  xai-grok: {id: xai-grok, provider: xai, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  stripe-dashboard: {id: stripe-dashboard, provider: stripe, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  venmo: {id: venmo, provider: paypal, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
