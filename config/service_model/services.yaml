@@ -1,5 +1,5 @@
 version: 1
-updated: "2026-09-17"
+updated: "2026-09-26"
 services:
   google-core: {id: google-core, provider: google, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: google}
   google-shared: {id: google-shared, provider: google, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}
@@ -117,3 +117,61 @@ services:
   volcengine: {id: volcengine, provider: bytedance, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   netease163mail: {id: netease163mail, provider: netease, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
   neteasegames: {id: neteasegames, provider: netease, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+
+  google-calendar: {id: google-calendar, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  google-chat: {id: google-chat, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  google-contacts: {id: google-contacts, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  google-docs: {id: google-docs, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  google-forms: {id: google-forms, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  google-groups: {id: google-groups, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  google-meet: {id: google-meet, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  google-sheets: {id: google-sheets, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  google-sites: {id: google-sites, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  google-slides: {id: google-slides, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  google-vids: {id: google-vids, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  google-workspace-studio: {id: google-workspace-studio, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  google-maps: {id: google-maps, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  google-photos: {id: google-photos, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  google-play: {id: google-play, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  google-news: {id: google-news, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  google-earth: {id: google-earth, provider: google, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  ms365-word: {id: ms365-word, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  ms365-excel: {id: ms365-excel, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  ms365-powerpoint: {id: ms365-powerpoint, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  ms365-onenote: {id: ms365-onenote, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  ms365-planner: {id: ms365-planner, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  ms365-loop: {id: ms365-loop, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  ms365-mesh: {id: ms365-mesh, provider: microsoft, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  applepodcasts: {id: applepodcasts, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  applebooks: {id: applebooks, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  applemaps: {id: applemaps, provider: apple, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P0-C}
+  huawei-cloud: {id: huawei-cloud, provider: huawei, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P1}
+  mi-cloud: {id: mi-cloud, provider: xiaomi, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P1}
+  jd-cloud: {id: jd-cloud, provider: jingdong, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P1}
+  kugou: {id: kugou, provider: tencent_music, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P1}
+  kuwo: {id: kuwo, provider: tencent_music, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P1}
+  quanmin-k-ge: {id: quanmin-k-ge, provider: tencent_music, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P1}
+  amazonmusic: {id: amazonmusic, provider: amazon, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  audible: {id: audible, provider: amazon, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  goodreads: {id: goodreads, provider: amazon, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  adobe-firefly: {id: adobe-firefly, provider: adobe, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  adobe-stock: {id: adobe-stock, provider: adobe, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  adobe-fonts: {id: adobe-fonts, provider: adobe, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  openai-api: {id: openai-api, provider: openai, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  openai-platform: {id: openai-platform, provider: openai, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  chatgpt: {id: chatgpt, provider: openai, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  anthropic-claude: {id: anthropic-claude, provider: anthropic, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  anthropic-platform: {id: anthropic-platform, provider: anthropic, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  xai-grok: {id: xai-grok, provider: xai, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  stripe-dashboard: {id: stripe-dashboard, provider: stripe, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  venmo: {id: venmo, provider: paypal, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}, completion_phase: P2}
+  huawei-appgallery: {id: huawei-appgallery, provider: huawei, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  openai: {id: openai, provider: openai, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  claude: {id: claude, provider: anthropic, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  paypal-core: {id: paypal-core, provider: paypal, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  xoom: {id: xoom, provider: paypal, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  baidu-zhidao: {id: baidu-zhidao, provider: baidu, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  kuaishou: {id: kuaishou, provider: kuaishou, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  kuaishou-open: {id: kuaishou-open, provider: kuaishou, scope: product, visibility: public, status: active, materialization: {state: candidate}, coverage: {state: unknown}}
+  huawei-core: {id: huawei-core, provider: huawei, scope: provider_core, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: partial}, legacy_body: huawei}
+  huawei-shared: {id: huawei-shared, provider: huawei, scope: shared_infrastructure, visibility: internal, status: active, materialization: {state: materialized}, coverage: {state: unknown}}

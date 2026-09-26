@@ -1,5 +1,5 @@
 version: 1
-updated: "2026-09-17"
+updated: "2026-09-26"
 providers:
   google: {id: google, kind: provider, name: Google, scope: ecosystem, status: active}
   apple: {id: apple, kind: provider, name: Apple, scope: ecosystem, status: active}
@@ -34,3 +34,14 @@ providers:
   booking: {id: booking, kind: provider, name: Booking, scope: ecosystem, status: active}
   wise: {id: wise, kind: provider, name: Wise, scope: ecosystem, status: active}
   roblox: {id: roblox, kind: provider, name: Roblox, scope: ecosystem, status: active}
+
+  huawei: {id: huawei, kind: provider, name: Huawei, scope: ecosystem, status: active}
+  xiaomi: {id: xiaomi, kind: provider, name: Xiaomi, scope: ecosystem, status: active}
+  jingdong: {id: jingdong, kind: provider, name: JD, scope: ecosystem, status: active}
+  tencent_music: {id: tencent_music, kind: provider, name: Tencent Music Entertainment, scope: ecosystem, status: active}
+  adobe: {id: adobe, kind: provider, name: Adobe, scope: ecosystem, status: active}
+  openai: {id: openai, kind: provider, name: OpenAI, scope: ecosystem, status: active}
+  anthropic: {id: anthropic, kind: provider, name: Anthropic, scope: ecosystem, status: active}
+  stripe: {id: stripe, kind: provider, name: Stripe, scope: ecosystem, status: active}
+  paypal: {id: paypal, kind: provider, name: PayPal, scope: ecosystem, status: active}
+  kuaishou: {id: kuaishou, kind: provider, name: Kuaishou, scope: ecosystem, status: active}

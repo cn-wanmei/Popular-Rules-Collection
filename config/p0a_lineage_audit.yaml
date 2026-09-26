@@ -1,0 +1,12 @@
+version: 1
+schema: p0a_lineage_audit_v1
+baseline: 2026-09-26
+immutable_sequence: [qqmail, qqmusic, taobao, tencentcloud, tmall]
+historical_identity_policy: never_rewrite
+collection_binding_status:
+  qqmail: active
+  qqmusic: active
+  taobao: active
+  tencentcloud: active
+  tmall: active
+next_action: verify_current_source_release_and_run_collection_canary_without_modifying_historical_identity

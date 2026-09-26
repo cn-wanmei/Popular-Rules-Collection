@@ -1,0 +1,51 @@
+version: 1
+schema: service_membership_v1
+baseline: 2026-09-26
+principle: canonical_service_once_multiple_views
+aggregates:
+  google:
+    primary_provider: google
+    members: [gmail, google-search, youtube, googledrive, google-calendar, google-chat, google-contacts, google-docs, google-forms, google-groups, google-meet, google-sheets, google-sites, google-slides, google-vids, google-workspace-studio, google-maps, google-photos, google-play, google-news, google-voice, google-earth, googlecloud, firebase, googlefcm, googleearth]
+  microsoft:
+    primary_provider: microsoft
+    members: [microsoft-core, azure, onedrive, teams, outlook, office, bing, microsoftedge, github, linkedin, ms365-word, ms365-excel, ms365-powerpoint, ms365-onenote, ms365-planner, ms365-loop, ms365-mesh]
+  apple:
+    primary_provider: apple
+    members: [apple-core, appleid, appstore, testflight, appledev, findmy, icloud, applemusic, appletv, siri, applemail, applemedia, applenews, applefirmware, icloudprivaterelay, applepodcasts, applebooks, applemaps]
+  tencent:
+    primary_provider: tencent
+    members: [wechat, qq, qqmusic, qqmail, wecom, tencentmeeting, tencentcloud, tencentvideo, wegame, honorofkings_cn, honorofkings_global]
+  bytedance:
+    primary_provider: bytedance
+    members: [douyin, doubao, feishu, tiktok]
+  alibaba:
+    primary_provider: alibaba
+    members: [taobao, tmall, 1688, alibabacloud, dingding, cainiao, youku, eleme, amap, gaode, xianyu]
+  ant:
+    primary_provider: ant
+    members: [alipay]
+candidate_trees:
+  p1:
+    huawei: [huawei-account, huawei-cloud, huawei-appgallery, huawei-mobile-services]
+    xiaomi: [xiaomi-account, mi-cloud, getapps, mi-home]
+    jingdong: [jd, jd-logistics, jd-cloud, jd-health, jd-finance]
+    pinduoduo: [pinduoduo, temu]
+    meituan: [meituan, waimai, dianping, maicai, hotel]
+    baidu: [baidu-search, baidunetdisk, baidutieba, baidumaps, baiduwiki, baiduwenku]
+    netease: [neteasemusic, neteasemail, neteasegames, youdao]
+    kuaishou: [kuaishou, kuaishou-commerce, kuaishou-video]
+  p2:
+    amazon: [aws, primevideo, twitch, amazonmusic, kindle, audible, amazonpay, imdb, goodreads]
+    meta: [facebook, instagram, whatsapp, messenger, threads, meta-ai, quest, horizon]
+    oracle: [oracle-cloud, mysql, java, netsuite]
+    adobe: [creative-cloud, acrobat, photoshop, lightroom, express, firefly, behance, adobe-stock, adobe-fonts, workfront, experience-cloud, marketo]
+    salesforce: [salesforce-core, slack, heroku]
+    atlassian: [jira, confluence, bitbucket, trello, loom, jira-service-management, compass, statuspage]
+    cloudflare: [workers, pages, r2, d1, kv, images, stream, zero-trust, access, gateway, warp, turnstile, dns, waf, email-routing, browser-rendering, ai-gateway]
+    openai: [openai-core, chatgpt, openai-api, openai-platform]
+    anthropic: [claude, anthropic-api, anthropic-console]
+    xai: [grok, xai-api, xai-console]
+    databricks: [databricks-workspace, databricks-sql, databricks-marketplace, databricks-accounts]
+    snowflake: [snowflake-snowsight, snowflake-marketplace, snowflake-developer, snowflake-accounts]
+    stripe: [dashboard, connect, billing, docs, terminal]
+    paypal: [paypal-core, venmo, xoom]
