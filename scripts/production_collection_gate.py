@@ -22,10 +22,8 @@ def _load_json(path: Path, label: str) -> dict[str, Any]:
 
 def validate_collection_root(collection_root: Path) -> dict[str, Any]:
     root = collection_root.expanduser().resolve()
-    manifest_path = root / "manifests" / "_collection.json"
-    day_manifest_path = root / "manifests" / "_day.json"
-
-    manifest = _load_json(manifest_path, "collection manifest")
+    manifest = _load_json(root / "manifests" / "_collection.json", "collection manifest")
+    day_manifest = _load_json(root / "manifests" / "_day.json", "service collection day manifest")
     errors: list[str] = []
 
     if manifest.get("schema") != "collection_manifest_v1":
@@ -37,11 +35,14 @@ def validate_collection_root(collection_root: Path) -> dict[str, Any]:
             "collection status is blocked: "
             + ", ".join(str(x) for x in (manifest.get("critical_failures") or ["unknown"]))
         )
-    if manifest.get("root") != str(root.relative_to(Path.cwd().resolve())):
-        # The workflow passes repository-relative roots. Keep the check strict while
-        # remaining usable from the repository root.
-        expected = str(root.relative_to(Path.cwd().resolve()))
-        errors.append(f"collection manifest root mismatch: expected {expected!r}, got {manifest.get('root')!r}")
+
+    date = str(manifest.get("date") or "")
+    expected_root = Path("backup") / date
+    if manifest.get("root") != str(expected_root):
+        errors.append(
+            f"collection manifest root mismatch: expected {str(expected_root)!r}, "
+            f"got {manifest.get('root')!r}"
+        )
     if manifest.get("skip_large") is not False:
         errors.append(
             "production build requires a complete collection snapshot: "
@@ -54,12 +55,13 @@ def validate_collection_root(collection_root: Path) -> dict[str, Any]:
             f"service_rules collection node is not healthy: {service_node.get('status')!r}"
         )
 
-    day_manifest = _load_json(day_manifest_path, "service collection day manifest")
     if day_manifest.get("schema") != "collection_manifest_v2":
-        errors.append(f"unsupported service day manifest schema: {day_manifest.get('schema')!r}")
-    if manifest.get("date") != day_manifest.get("date"):
         errors.append(
-            f"collection/day date mismatch: {manifest.get('date')!r} != {day_manifest.get('date')!r}"
+            f"unsupported service day manifest schema: {day_manifest.get('schema')!r}"
+        )
+    if date != str(day_manifest.get("date") or ""):
+        errors.append(
+            f"collection/day date mismatch: {date!r} != {day_manifest.get('date')!r}"
         )
 
     required_failures: list[dict[str, Any]] = []
@@ -70,10 +72,7 @@ def validate_collection_root(collection_root: Path) -> dict[str, Any]:
         failures = int(source.get("required_failures") or 0)
         if failures:
             required_failures.append(
-                {
-                    "source": source.get("source"),
-                    "required_failures": failures,
-                }
+                {"source": source.get("source"), "required_failures": failures}
             )
     if required_failures:
         errors.append(f"required source failures present: {required_failures}")
