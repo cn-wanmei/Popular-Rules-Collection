@@ -1,51 +1,66 @@
-# Icons
+# Icons — Icon System V5 / Matrix 8
 
-当前 active：**Icon System V5 / Icon Matrix 8**
+**Active system: V5 only**
 
-SSOT：
+| | |
+|--|--|
+| Coverage | **146 / 146** services × **8/8** (含独立子服务) |
+| Release | [`icon-v5-1.0.0`](https://github.com/cn-wanmei/Popular-Rules-Collection/releases/tag/icon-v5-1.0.0) |
+| Registry | `assets/icons/v5/registry.json` |
+| Pointer | `assets/icons/v5/release-pointer.json` |
+| Client policy | `config/icon_v5_clients.yaml` |
+| Client URL profiles | `assets/icons/client_profiles.yaml` |
 
-- `docs/ICON_SYSTEM_V5_PLAN.md`
-- `assets/icons/v5/registry.json`
-- `assets/icons/v5/release-pointer.json`
+## Eight layers
 
-## Active
-
-V5：`assets/icons/v5/`
-
-Coverage：**146 / 146 services × 8/8**（含各 provider 下独立子服务）
-
-- Source Original
-- Glassmorphism
-- Soft 3D / Claymorphism
-- Neo-Skeuomorphism
-- Minimalist Glyph & Multi-color Flat
-- Two-tone / Broken Line
-- MBE Illustration
-- Y2K / Synthwave
-
-完整 SVG/PNG 包：Release [`icon-v5-rc1`](https://github.com/cn-wanmei/Popular-Rules-Collection/releases/tag/icon-v5-rc1)
-
-## Historical
-
-- `v4/` / `v3/` / `legacy` — 仅历史兼容与审计，不参与 V5 SSOT
-
-## 生产原则
+1. Source Original  
+2. Glassmorphism  
+3. Soft 3D / Claymorphism  
+4. Neo-Skeuomorphism  
+5. Minimalist Glyph & Multi-color Flat  
+6. Two-tone / Broken Line  
+7. MBE Illustration  
+8. Y2K / Synthwave  
 
 ```text
-same Run / Snapshot / IR
-        ↓
-Icon Acquisition
-        ↓
-Source Snapshot
-        ↓
-7 independent renderers
-        ↓
-QA + Coverage + Lineage
-        ↓
-Immutable Release
+1 service_id = 1 icon_identity = 1 source + 7 derived styles
 ```
 
-## 命令
+## Client preferred style
+
+| Client | Style |
+|--------|-------|
+| mihomo / singbox / shadowrocket | minimalist |
+| surge / egern | glassmorphism |
+| quantumultx | duotone_line |
+| loon | soft_3d |
+
+```bash
+python scripts/icon_resolver_v5.py \
+  --registry assets/icons/v5/registry.json \
+  --service-id github \
+  --client mihomo
+```
+
+## Layout
+
+```text
+assets/icons/v5/
+├── registry.json
+├── release-pointer.json
+├── normalized/
+├── styles/{glassmorphism,soft-3d,...}/
+├── png/{64,128,256}/
+└── seed/          # reviewed seeds only
+```
+
+Full SVG/PNG pack: Release asset `icon-v5-rc1-full-pack.zip` (tag `icon-v5-1.0.0`).
+
+## Historical systems
+
+V1 / V2 / V3 / V4 icon systems are **removed** from the active tree. Do not reference legacy `assets/icons/v3`, `v4`, root `normalized/`, `png/`, `rendered/`, or `icon_system_v3.py`.
+
+## Commands
 
 ```bash
 python scripts/icon_system_v5.py contract
