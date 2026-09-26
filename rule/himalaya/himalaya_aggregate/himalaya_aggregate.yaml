@@ -1,0 +1,66 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: himalaya_aggregate
+display_name: Himalaya
+generated_from:
+  run_id: 20260925T002821756614Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310
+stats:
+  total: 17
+  by_type:
+    DOMAIN_SUFFIX: 17
+rules:
+- id: 3a169c881a1b5f8602d78e4c5daf466d8c0f4b89f3910377b3c8c5a54f98bdf4
+  type: DOMAIN_SUFFIX
+  value: 9nali.com
+- id: c66756cf0a7658c2b299a22ee0f26c375e127e8b57cc67f23363d8344ba96719
+  type: DOMAIN_SUFFIX
+  value: conchdate.com
+- id: 53cf24b7daf368e265d7dc9876563e7f2feafa93b38ba490014ac3dec2fe32a1
+  type: DOMAIN_SUFFIX
+  value: himalaya.com
+- id: 72eec2397f2a0fd8b0f218eeebd5ea9a2e7bb70dc6cd0f74b9deef739d683fe3
+  type: DOMAIN_SUFFIX
+  value: himalaya.cool
+- id: 2511105a94453db6211889feb542c1fdf542820d33ea91698357d109cfade5aa
+  type: DOMAIN_SUFFIX
+  value: qingxuetang.com
+- id: 6e020643eedea5a16b58b69a50cf3c968eddb376a3f6fd10d8c5174d46d38e24
+  type: DOMAIN_SUFFIX
+  value: soundconch.com
+- id: edd3c72c4e05dad0d6c837bfec494c616bc84d0beea774e932874680b25fd044
+  type: DOMAIN_SUFFIX
+  value: tableauxmly.com
+- id: 80f9ded11bb2f0a9b331f235772e116e6a2d90f96a9988a91b276cf52fe7dbe1
+  type: DOMAIN_SUFFIX
+  value: xima.tv
+- id: 78c820162488f86acff8bbc82d24429bce5f6c822e089e3385cca4b093f1fc11
+  type: DOMAIN_SUFFIX
+  value: ximalaya.com
+- id: b4ea19d1ecff59e8e10dca43462ea46b71cc31babb2846570bd19e4d8cb90655
+  type: DOMAIN_SUFFIX
+  value: ximalaya.fm
+- id: bf1c137538895d22deaeade3899dd1418b9b214a0d3bf7fddebc18fce4885563
+  type: DOMAIN_SUFFIX
+  value: ximalaya.tv
+- id: b162c6029939bc420f5ae2bf5c672a24343702888453cb93d9e88557da0e4638
+  type: DOMAIN_SUFFIX
+  value: ximalayadata.com
+- id: 89a2255077cb277531f7408473fc351e09aa6cc5f6972904f99849e40380ec83
+  type: DOMAIN_SUFFIX
+  value: xmcdn.com
+- id: b283f2cefba3b0f882e713d407c747029265430536f409de7a41fecacd259b79
+  type: DOMAIN_SUFFIX
+  value: zhishif.com
+- id: 539ed49454c4062eb01b60b147e2f61739c335768a6639651f767130ac7cf9ea
+  type: DOMAIN_SUFFIX
+  value: zhishinn.com
+- id: 634bbb2e191a1fbe6e4c2303b0d60962894c273b369104d4b742c5d77ba7eab1
+  type: DOMAIN_SUFFIX
+  value: zhishiu.com
+- id: 71a0da97831133d0524195b6856e229303befd445ffc667befae3ec078745220
+  type: DOMAIN_SUFFIX
+  value: zhishiv.com
+provider: himalaya

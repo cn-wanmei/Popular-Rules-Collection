@@ -1,0 +1,81 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: boc_aggregate
+display_name: Bank of China
+generated_from:
+  run_id: 20260925T002821756614Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310
+stats:
+  total: 22
+  by_type:
+    DOMAIN_SUFFIX: 22
+rules:
+- id: b50c755437c6887dee92ee988d5285dd868d86a6afb1946c637a3892433f51c0
+  type: DOMAIN_SUFFIX
+  value: bank-of-china.com
+- id: 5df87139e041a7a427cba3f20d1ff228bb097643ac46aeb5da52045da8717d3e
+  type: DOMAIN_SUFFIX
+  value: bankofchina.com
+- id: 0bfe412ba9e1105862178b24128bbb1b713a33bd520486292f70af6496d69dbe
+  type: DOMAIN_SUFFIX
+  value: boc.cn
+- id: 7cebfbd078b46951a0590e9f6077f879c04ff88a6a77e55e5899e242c4809435
+  type: DOMAIN_SUFFIX
+  value: bocamchina.com
+- id: 81bdd8d76b8c5dbd297011bd1b0f8b68cbf3357cfc1631efc4c33bc067e71161
+  type: DOMAIN_SUFFIX
+  value: bocaviation.com
+- id: 889d84c3dc5a1b3808f4ca4c2b39361f926655c06d237201afeadf3f9b79dfe8
+  type: DOMAIN_SUFFIX
+  value: boccfc.cc
+- id: 30bcd1a493cd6de61707cee42085a43e6beb2ee461578ac07ba451ca87d552b6
+  type: DOMAIN_SUFFIX
+  value: boccfc.cn
+- id: 2109c626262782f7516153177ff841d01938e7f332eb8d32b44b737745be3a75
+  type: DOMAIN_SUFFIX
+  value: bocfullertonbank.com
+- id: 2221303ecf654da3e30e9c8802e7ddfcc2d21c9fbca02ccae1f06b023258a47e
+  type: DOMAIN_SUFFIX
+  value: bocgi.com
+- id: 196db90ffb92e454b54e641655d354d9fe58ae2a2d036a9f3d71858a5d77e0e7
+  type: DOMAIN_SUFFIX
+  value: bocgins.com
+- id: 3df8dd2e03f18b22cc3e562e0bd97f33c380ee5d5a444dc0e3cc297b944a1a05
+  type: DOMAIN_SUFFIX
+  value: bochk.com
+- id: c4d4b51c0990b08d03de0cf045eb55eeeefb60c47252edfd072470b2de12c324
+  type: DOMAIN_SUFFIX
+  value: bochkonline.com
+- id: 127f8f732ca0f1041dbf1ad38e0caf2ca3d95b401361836a518676a45347187a
+  type: DOMAIN_SUFFIX
+  value: bocichina.cn
+- id: 087cfe2ca1643fb50c9c6d80ac05c41355aa10469e0b30b0ef3def9e16298ad2
+  type: DOMAIN_SUFFIX
+  value: bocichina.com
+- id: c06297699d05f422bdbbf8d701bd6eb789788f475173eccaea8e9017abcb2934
+  type: DOMAIN_SUFFIX
+  value: bocichina.com.cn
+- id: 5597addd7e5c0ac6e27f6d02cdd68d09d58c7b25f272551860043cec8b1d23a3
+  type: DOMAIN_SUFFIX
+  value: bocifunds.cn
+- id: 5af3328d2eaa37e831e109a264cb1ee75d3e61847a529afb00930082818df492
+  type: DOMAIN_SUFFIX
+  value: bocifunds.com
+- id: fe2f7c33b53d712d289e659676ad56bfdc24f7bccb7720fd2c2db6da4cb50729
+  type: DOMAIN_SUFFIX
+  value: bocifunds.com.cn
+- id: 48a4be3b096a5bc952f5b8b15dcf15636e51c1358764e8619e2c045be11d52d3
+  type: DOMAIN_SUFFIX
+  value: bocigroup.com
+- id: 834fd8bb30227d9e985fd5ef5e477c6be62a902aeae068a886ce4f893dd71efb
+  type: DOMAIN_SUFFIX
+  value: bocim.com
+- id: 29f9a87d5a0df22f28aade5a6b235d612673c91a92d000a6cc385a5c3f230a01
+  type: DOMAIN_SUFFIX
+  value: bocservices.com.cn
+- id: c5e2e7c11658535653f7d847160596bf5a42a28a19915b89c28aed8b407e6258
+  type: DOMAIN_SUFFIX
+  value: ftcwifi.com
+provider: boc

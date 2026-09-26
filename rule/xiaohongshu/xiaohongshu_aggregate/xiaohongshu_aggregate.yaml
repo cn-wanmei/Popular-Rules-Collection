@@ -1,0 +1,27 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: xiaohongshu_aggregate
+display_name: Xiaohongshu
+generated_from:
+  run_id: 20260925T002821756614Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310
+stats:
+  total: 4
+  by_type:
+    DOMAIN_SUFFIX: 4
+rules:
+- id: a8c6438a8671c1240604882eefd15db57d186b7167b5b8b63df8abbea2775559
+  type: DOMAIN_SUFFIX
+  value: fengkongcloud.com
+- id: 818a9a73e7bc0731297c57a2d31e8ce01d8f1c06252d7f3eb23efc0323eee6ac
+  type: DOMAIN_SUFFIX
+  value: xhscdn.com
+- id: a92f6568d645dcdb618210fa5d24f255e6038444756b4f64fc9a289a9cf7f1f0
+  type: DOMAIN_SUFFIX
+  value: xhscdn.net
+- id: 1c79b5c644c757b2c4f8fe1607c85a50d9f8a0f1489a3a98125fb5a7cebbbe01
+  type: DOMAIN_SUFFIX
+  value: xiaohongshu.com
+provider: xiaohongshu

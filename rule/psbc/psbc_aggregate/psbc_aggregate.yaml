@@ -1,0 +1,24 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: psbc_aggregate
+display_name: Postal Savings Bank of China
+generated_from:
+  run_id: 20260925T002821756614Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310
+stats:
+  total: 3
+  by_type:
+    DOMAIN_SUFFIX: 3
+rules:
+- id: a87fd16ade02d288e22ee2538c00f1db2cccf5d9af797c9a0229ac413815aa0f
+  type: DOMAIN_SUFFIX
+  value: 95580.net
+- id: 631e8e346d8965a438678c75e0304b07a3e8cbe6142306019b9544c078c5f9f9
+  type: DOMAIN_SUFFIX
+  value: psbc.com
+- id: c03b8db13fcb471c225de041210b3a412f7c5f85f2d173df852535ee42c95e4d
+  type: DOMAIN_SUFFIX
+  value: psbcoa.com.cn
+provider: psbc

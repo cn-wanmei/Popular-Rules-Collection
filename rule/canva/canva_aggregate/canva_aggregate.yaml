@@ -1,0 +1,33 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: canva_aggregate
+display_name: Canva
+generated_from:
+  run_id: 20260925T002821756614Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310
+stats:
+  total: 6
+  by_type:
+    DOMAIN_SUFFIX: 6
+rules:
+- id: 06862cb43a9c668aef120f51284e866c5102db13aac978e5d322892e5b5c28fa
+  type: DOMAIN_SUFFIX
+  value: affinity-beta.s3.amazonaws.com
+- id: c813d8d6ba5b6902bcc1f8d2a78ab344375394715f6bf784099c42459fdcb035
+  type: DOMAIN_SUFFIX
+  value: affinity-lessons.s3.amazonaws.com
+- id: 0523eb102e2efa872a2e7b99712e724af52bf7d1b48bbb9abd987f79f6040eec
+  type: DOMAIN_SUFFIX
+  value: affinity.api.serifservices.com
+- id: ef6c026d04d58974fd86e6b488f3fd6fcf1fd4834a460c98b1f8eda34e78c3e9
+  type: DOMAIN_SUFFIX
+  value: affinity.studio
+- id: 078dfc711578cbf09861c1a83ae085e213c62464350454f63b6fb50b5ad8c6ea
+  type: DOMAIN_SUFFIX
+  value: canva.com
+- id: 91adebc8dad9b82f087e21c468ee9791f4b1fe5ceae3971fb759d0241c236b7f
+  type: DOMAIN_SUFFIX
+  value: canvastatus.com
+provider: canva

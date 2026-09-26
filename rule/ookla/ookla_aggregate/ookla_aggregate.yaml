@@ -1,0 +1,31 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: ookla_aggregate
+display_name: Ookla
+generated_from:
+  run_id: 20260925T002821756614Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310
+stats:
+  total: 5
+  by_type:
+    DOMAIN_KEYWORD: 1
+    DOMAIN_SUFFIX: 4
+rules:
+- id: 49187272a2c9d584e7388a2b581609a9e0f6d62cfd8ec171ee3c38aaf1c79dac
+  type: DOMAIN_KEYWORD
+  value: speedtest
+- id: 1926ebb3548050153193269348df9f5d810f42c33a206277678b7aba2c7ce837
+  type: DOMAIN_SUFFIX
+  value: fast.com
+- id: 0d427e21478521357ff4943c91b078242892ad497cbceab445e0cda5bc8a13bd
+  type: DOMAIN_SUFFIX
+  value: ooklaserver.net
+- id: 91a469587d9b629b86c6f59289b20faf7b54bbced1cf5cfd0ac876e4d96f6404
+  type: DOMAIN_SUFFIX
+  value: speed.cloudflare.com
+- id: 90e703717518d806ae53a4775a5ae2124509f80e199e01d38119ddf6d186e254
+  type: DOMAIN_SUFFIX
+  value: speed.dler.io
+provider: ookla

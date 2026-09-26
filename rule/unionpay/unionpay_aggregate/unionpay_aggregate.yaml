@@ -1,0 +1,63 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: unionpay_aggregate
+display_name: UnionPay
+generated_from:
+  run_id: 20260925T002821756614Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310
+stats:
+  total: 16
+  by_type:
+    DOMAIN_SUFFIX: 16
+rules:
+- id: cde81306f655fa18d218a9bb89937410621753cc7a4e96ce081ca99de448fc97
+  type: DOMAIN_SUFFIX
+  value: 95516.com
+- id: 52a19271e5d92e951bf9fd26cafba2f845fca727fcd34099556a5e8b39d1236c
+  type: DOMAIN_SUFFIX
+  value: 95516.net
+- id: d4ddccf086999c22950935843f3e83b59e54b3a41a956b09d05341603ebfce9c
+  type: DOMAIN_SUFFIX
+  value: airepay.net
+- id: be961700e6e69beb8032b99e2d9ed4086105e9f8e390c0f0cc237eacf7e6fe45
+  type: DOMAIN_SUFFIX
+  value: chinapay.cn
+- id: fbaeaf1eb5756e91c7b5774326775ef0dcdca9bfbc03ed3e516a67adcdcf6dc6
+  type: DOMAIN_SUFFIX
+  value: chinapay.com
+- id: a9d728e1c87f55c116edc11ad3419c18fec0e69fbe69ed111ceb635b74ad51e4
+  type: DOMAIN_SUFFIX
+  value: chinapayhongkong.com
+- id: 5b43b78a3b4eea07f47e1e336a16bf7db1ec1f0ac660dd47dcc62429ac2d6e71
+  type: DOMAIN_SUFFIX
+  value: chinaunionpay.com
+- id: 84bcb195687dc67699253d1ccbdbfa411bf4ffba1c7bd55918e54da519da2dd3
+  type: DOMAIN_SUFFIX
+  value: chinaunionpay.com.cn
+- id: 5be02dc52187eb918d11ed0cec83b21ce098603183302a0d25e93e7c3052f8e5
+  type: DOMAIN_SUFFIX
+  value: chinaunionpay.net
+- id: 8def7467d2e5ba1b0392cbad0456a07c208e0183ec08d0021796098f409986ef
+  type: DOMAIN_SUFFIX
+  value: cup.com.cn
+- id: 65d36ee515f05d3429d0a251babda09a300d553304ab58f18e49cff6635eb5ab
+  type: DOMAIN_SUFFIX
+  value: cup62.cn
+- id: e216f97d22315954fad0588a0f3cd9883673d61e034d272cf206cb20831259bb
+  type: DOMAIN_SUFFIX
+  value: unionpay.com
+- id: b8e912017f6952eaa6aefe8303879cc5474b9fbf3db66800df2c0c19c6bde0a1
+  type: DOMAIN_SUFFIX
+  value: unionpay.net
+- id: db20002b4d1c827137e8c3171278b8594bbe5b7b1daa020f0cde2a7a4077581d
+  type: DOMAIN_SUFFIX
+  value: unionpayintl.cn
+- id: dc26718e112abf552cd94393ea55f16b9e4917cf40cd9bd7f21a875612991d0f
+  type: DOMAIN_SUFFIX
+  value: unionpayintl.com
+- id: 425a2876712c7bf5e73095ee52b66aa8de67a1c62154e323c29bbf548c6e8d7a
+  type: DOMAIN_SUFFIX
+  value: unionpaysecure.com
+provider: unionpay

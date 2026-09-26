@@ -1,0 +1,24 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: zoom_aggregate
+display_name: Zoom
+generated_from:
+  run_id: 20260925T002821756614Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310
+stats:
+  total: 3
+  by_type:
+    DOMAIN_SUFFIX: 3
+rules:
+- id: d95f1159c776303b833138513bf00e21bb0bf9796dcf10aefbe15c3d42494782
+  type: DOMAIN_SUFFIX
+  value: zoom.com
+- id: 9e40cc80b401b0d4cde513801b038fdad299b0e6e630596f52e3c2a6aa9c3930
+  type: DOMAIN_SUFFIX
+  value: zoom.com.cn
+- id: 939af31fca9f1902d9abfbeb73afc8989f89224cf8255483d1e26ce828da89a1
+  type: DOMAIN_SUFFIX
+  value: zoom.us
+provider: zoom
