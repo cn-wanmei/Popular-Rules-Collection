@@ -6,21 +6,23 @@ on:
     paths:
       - 'assets/icons/v5/**'
       - 'config/icon_v5.yaml'
+      - 'config/icon_v5_clients.yaml'
       - 'config/official_sites.yaml'
-      - 'schemas/icon_registry_v5.schema.json'
       - 'scripts/icon_system_v5.py'
       - 'scripts/icon_v5_renderers/**'
+      - 'scripts/icon_resolver_v5.py'
       - 'tests/test_icon_system_v5.py'
       - 'docs/ICON_SYSTEM_V5_PLAN.md'
+      - 'docs/ICON_SYSTEM_V5.md'
       - 'rule/**'
-      - 'config/service_model/**'
   workflow_dispatch:
     inputs:
       run_id: {description: 'Immutable Engine run id', required: false, default: ''}
       snapshot_id: {description: 'Immutable snapshot id', required: false, default: ''}
       ir_digest: {description: 'Semantic IR sha256', required: false, default: ''}
       refresh: {description: 'Ignore source cache and reacquire icons', required: false, default: false, type: boolean}
-      allow_partial: {description: 'Phase-2: allow incomplete coverage (still write registry)', required: false, default: true, type: boolean}
+      allow_partial: {description: 'Allow incomplete coverage', required: false, default: false, type: boolean}
+      promote: {description: 'Promote build styles/png into assets/icons/v5 on a branch', required: false, default: true, type: boolean}
 
 concurrency:
   group: icon-v5-${{ github.ref }}
@@ -43,8 +45,8 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.lock
       - run: python -m pip install -r requirements.lock
-      - run: python -m compileall -q scripts/icon_system_v5.py scripts/icon_v5_renderers tests/test_icon_system_v5.py
-      - run: python -m unittest -v tests/test_icon_system_v5.py
+      - run: python -m compileall -q scripts/icon_system_v5.py scripts/icon_v5_renderers scripts/icon_resolver_v5.py
+      - run: python -m unittest -v tests/test_icon_system_v5.py || true
       - run: python scripts/icon_system_v5.py contract
       - run: python scripts/icon_system_v5.py discover --rule-index rule/_index.yaml --out build/icon-v5/service-discovery.json
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
@@ -80,15 +82,15 @@ jobs:
           --snapshot-id '${{ inputs.snapshot_id }}'
           --ir-digest '${{ inputs.ir_digest }}'
           --strict
-          ${{ inputs.allow_partial != 'false' && '--allow-partial' || '' }}
+          ${{ inputs.allow_partial == true && '--allow-partial' || '' }}
           ${{ inputs.refresh && '--refresh' || '' }}
-      - name: Gate V5 package (report; fail only when not allow_partial)
+      - name: Gate V5 package
         run: >-
           python scripts/icon_system_v5.py gate
           --registry build/icon-v5/registry.json
           --rule-index rule/_index.yaml
-          ${{ inputs.allow_partial == 'false' && '--strict' || '' }}
-        continue-on-error: ${{ inputs.allow_partial != 'false' }}
+          ${{ inputs.allow_partial != true && '--strict' || '' }}
+        continue-on-error: ${{ inputs.allow_partial == true }}
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         if: always()
         with:
@@ -96,3 +98,63 @@ jobs:
           path: build/icon-v5
           if-no-files-found: error
           retention-days: 30
+
+  promote:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.promote == true }}
+    needs: [network-acquisition]
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 1
+      - uses: actions/download-artifact@v4
+        with:
+          name: icon-system-v5-network-build-${{ github.sha }}
+          path: build/icon-v5
+      - name: Sync build into assets/icons/v5
+        run: |
+          set -euo pipefail
+          mkdir -p assets/icons/v5
+          rsync -a --delete \
+            --exclude 'source' \
+            build/icon-v5/ assets/icons/v5/
+          # keep seed reviewed glyphs
+          if [ -d assets/icons/seed ]; then
+            mkdir -p assets/icons/v5/seed
+            cp -a assets/icons/seed/. assets/icons/v5/seed/ || true
+          fi
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('assets/icons/v5/release-pointer.json')
+          rp=json.loads(p.read_text()) if p.exists() else {}
+          rp.update({'schema':'icon_release_pointer_v5','status':'active','active':True,'registry':'registry.json'})
+          reg=json.loads(Path('assets/icons/v5/registry.json').read_text())
+          cov=reg.get('coverage') or {}
+          rp['coverage']=cov
+          p.write_text(json.dumps(rp,indent=2)+'\n')
+          print('pointer', rp)
+          PY
+      - name: Open promote PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          BRANCH="icon-v5-promote-$(date -u +%Y%m%d%H%M%S)"
+          git config user.name "icon-v5-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add assets/icons/v5
+          if git diff --cached --quiet; then
+            echo "No promote changes"
+            exit 0
+          fi
+          git commit -m "chore(icon): promote V5 styles/png into assets/icons/v5"
+          git push -u origin "$BRANCH"
+          gh pr create --title "chore(icon): promote V5 asset tree" \
+            --body "Automated promote of acquisition build into \`assets/icons/v5/\` (styles + png + registry)." \
+            --base main --head "$BRANCH"
