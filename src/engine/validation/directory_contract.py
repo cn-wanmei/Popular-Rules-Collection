@@ -54,8 +54,8 @@ def _entity_expectation(root: Path,path: Path,aggregates:dict[str,str],services:
         return "domestic_aggregate","china",None
     if len(parts)==3:
         provider,name,_=parts
-        if provider in aggregates and name==provider and name not in services.get(provider,set()):
-            return "provider_aggregate",aggregates.get(provider,provider),provider
+        if provider in aggregates and name==aggregates.get(provider):
+            return "provider_aggregate",aggregates[provider],provider
         return "service",name,provider
     if len(parts)==4 and parts[0] in _ENTITY_TYPES:
         return _ENTITY_TYPES[parts[0]],parts[2],None
