@@ -1,63 +1,44 @@
 # Kuaishou
 
-> 用于匹配 **Kuaishou** 相关域名/IP 的分流规则（来自上游标准化合并）。
+> Current V3 service documentation. 本页记录当前 Service SSOT 身份，不等同于 Production 发布资格。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `kuaishou` |
-| Primary Ecosystem | **China** (`china`) |
-| Service Type | service |
-| Tags | china |
-| 类型 | domain |
-| Domains | 678 |
-| CIDR | 0 |
-| 最后更新 | 2026-09-01 |
-| Sources | blackmatrix7 |
-| Confidence | HIGH |
+| Primary Ecosystem | `kuaishou` |
+| Service Type | aggregate |
+| Parent Aggregate | `china` |
+| Dedicated client outputs | 7 / 7 |
+| Current State | candidate / review-required |
 
-## 用途
+## 当前生产订阅路径
 
-用于匹配 **Kuaishou** 相关域名/IP 的分流规则（来自上游标准化合并）。
+- `egern/kuaishou/kuaishou/kuaishou.yaml`
+- `loon/kuaishou/kuaishou/kuaishou.list`
+- `mihomo/kuaishou/kuaishou/kuaishou.yaml`
+- `quantumultx/kuaishou/kuaishou/kuaishou.list`
+- `shadowrocket/kuaishou/kuaishou/kuaishou.list`
+- `singbox/kuaishou/kuaishou/kuaishou.json`
+- `surge/kuaishou/kuaishou/kuaishou.list`
 
-支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+## 当前真源边界
 
-## 一键订阅
+- V3 Canonical：`data/runs/<run-id>/canonical/`
+- Semantic IR：`data/runs/<run-id>/ir/`
+- 最终发行：`generated/`
+- `rule/`：V1 历史浏览/迁移树
+- `rules/`：V3 目录契约
+- Legacy evidence：`database/services/`，不是 V3 Runtime 真源
 
-| 客户端 | 路径 | 链接 |
-|--------|------|------|
-| Mihomo | `generated/mihomo/kuaishou.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/kuaishou.yaml) |
-| sing-box | `generated/sing-box/kuaishou.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/kuaishou.json) |
-| Surge | `generated/surge/kuaishou.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/kuaishou.list) |
-| Shadowrocket | `generated/shadowrocket/kuaishou.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/kuaishou.list) |
-| Quantumult X | `generated/quantumult-x/kuaishou.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/kuaishou.list) |
-| Egern | `generated/egern/kuaishou.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/kuaishou.yaml) |
-| Loon | `generated/loon/kuaishou.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/kuaishou.list) |
+## Service Completion 状态
 
-## CDN 镜像（Mihomo）
+- Source 证据：按当前 Source evidence gate 验证
+- Source immutable release：PENDING
+- Collection exact binding：PENDING
+- Semantic / overlap audit：PENDING
+- Seven-client：当前 manifest 已有产物
+- Golden：PENDING
+- Canary：PENDING
+- Production：PENDING
 
-| 镜像 | 链接 |
-|------|------|
-| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/kuaishou.yaml |
-| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/kuaishou.yaml |
-| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/kuaishou.yaml |
-| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/kuaishou.yaml |
-
-## 官方网站
-
-_未在 config/official_sites.yaml 配置_
-
-## 规则来源（Provenance）
-
-- `blackmatrix7`
-
-由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
-
-## 数据位置
-
-- Schema: `database/services/kuaishou.yaml`
-- Domains: `database/domains/kuaishou.txt`
-- IPs: `database/ips/kuaishou.txt`（若有）
-- Product page: `rule/China/…`（见 generate_rule_pages）
-
----
-_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
+> Candidate / Source release 不等于 Production；生产资格必须由 immutable provenance 与现有硬门决定。

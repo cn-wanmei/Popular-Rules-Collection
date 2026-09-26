@@ -1,25 +1,19 @@
-# Adobe
+# Adobe Fonts
 
 > Current V3 service documentation. 本页记录当前 Service SSOT 身份，不等同于 Production 发布资格。
 
 | 项目 | 内容 |
 |------|------|
-| Rule ID | `adobe` |
+| Rule ID | `adobefonts` |
 | Primary Ecosystem | `adobe` |
-| Service Type | aggregate |
-| Parent Aggregate | — |
-| Dedicated client outputs | 7 / 7 |
+| Service Type | service |
+| Parent Aggregate | `adobe` |
+| Dedicated client outputs | 0 / 7 |
 | Current State | candidate / review-required |
 
 ## 当前生产订阅路径
 
-- `egern/adobe/adobe/adobe.yaml`
-- `loon/adobe/adobe/adobe.list`
-- `mihomo/adobe/adobe/adobe.yaml`
-- `quantumultx/adobe/adobe/adobe.list`
-- `shadowrocket/adobe/adobe/adobe.list`
-- `singbox/adobe/adobe/adobe.json`
-- `surge/adobe/adobe/adobe.list`
+当前尚未在 generated/manifest.json 中物化独立生产客户端产物。
 
 ## 当前真源边界
 
@@ -36,7 +30,7 @@
 - Source immutable release：PENDING
 - Collection exact binding：PENDING
 - Semantic / overlap audit：PENDING
-- Seven-client：当前 manifest 已有产物
+- Seven-client：PENDING
 - Golden：PENDING
 - Canary：PENDING
 - Production：PENDING

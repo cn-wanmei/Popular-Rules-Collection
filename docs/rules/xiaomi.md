@@ -1,63 +1,44 @@
 # Xiaomi
 
-> 用于匹配 **Xiaomi** 相关域名/IP 的分流规则（来自上游标准化合并）。
+> Current V3 service documentation. 本页记录当前 Service SSOT 身份，不等同于 Production 发布资格。
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `xiaomi` |
-| Primary Ecosystem | **Other** (`other`) |
-| Service Type | service |
-| Tags | other, china |
-| 类型 | mixed |
-| Domains | 148 |
-| CIDR | 9 |
-| 最后更新 | 2026-09-01 |
-| Sources | blackmatrix7 |
-| Confidence | HIGH |
+| Primary Ecosystem | `xiaomi` |
+| Service Type | aggregate |
+| Parent Aggregate | — |
+| Dedicated client outputs | 7 / 7 |
+| Current State | candidate / review-required |
 
-## 用途
+## 当前生产订阅路径
 
-用于匹配 **Xiaomi** 相关域名/IP 的分流规则（来自上游标准化合并）。
+- `egern/xiaomi/xiaomi/xiaomi.yaml`
+- `loon/xiaomi/xiaomi/xiaomi.list`
+- `mihomo/xiaomi/xiaomi/xiaomi.yaml`
+- `quantumultx/xiaomi/xiaomi/xiaomi.list`
+- `shadowrocket/xiaomi/xiaomi/xiaomi.list`
+- `singbox/xiaomi/xiaomi/xiaomi.json`
+- `surge/xiaomi/xiaomi/xiaomi.list`
 
-支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+## 当前真源边界
 
-## 一键订阅
+- V3 Canonical：`data/runs/<run-id>/canonical/`
+- Semantic IR：`data/runs/<run-id>/ir/`
+- 最终发行：`generated/`
+- `rule/`：V1 历史浏览/迁移树
+- `rules/`：V3 目录契约
+- Legacy evidence：`database/services/`，不是 V3 Runtime 真源
 
-| 客户端 | 路径 | 链接 |
-|--------|------|------|
-| Mihomo | `generated/mihomo/xiaomi.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/xiaomi.yaml) |
-| sing-box | `generated/sing-box/xiaomi.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/xiaomi.json) |
-| Surge | `generated/surge/xiaomi.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/xiaomi.list) |
-| Shadowrocket | `generated/shadowrocket/xiaomi.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/xiaomi.list) |
-| Quantumult X | `generated/quantumult-x/xiaomi.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/xiaomi.list) |
-| Egern | `generated/egern/xiaomi.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/xiaomi.yaml) |
-| Loon | `generated/loon/xiaomi.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/xiaomi.list) |
+## Service Completion 状态
 
-## CDN 镜像（Mihomo）
+- Source 证据：按当前 Source evidence gate 验证
+- Source immutable release：PENDING
+- Collection exact binding：PENDING
+- Semantic / overlap audit：PENDING
+- Seven-client：当前 manifest 已有产物
+- Golden：PENDING
+- Canary：PENDING
+- Production：PENDING
 
-| 镜像 | 链接 |
-|------|------|
-| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/xiaomi.yaml |
-| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/xiaomi.yaml |
-| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/xiaomi.yaml |
-| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/xiaomi.yaml |
-
-## 官方网站
-
-_未在 config/official_sites.yaml 配置_
-
-## 规则来源（Provenance）
-
-- `blackmatrix7`
-
-由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
-
-## 数据位置
-
-- Schema: `database/services/xiaomi.yaml`
-- Domains: `database/domains/xiaomi.txt`
-- IPs: `database/ips/xiaomi.txt`（若有）
-- Product page: `rule/Other/…`（见 generate_rule_pages）
-
----
-_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
+> Candidate / Source release 不等于 Production；生产资格必须由 immutable provenance 与现有硬门决定。
