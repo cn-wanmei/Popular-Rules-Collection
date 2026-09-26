@@ -3,14 +3,12 @@ status: ready
 run_id: 20260925T002821756614Z-run
 ir_schema: semantic_ir_v2
 ir_digest: 24e4972616eaa8900bcf59508191e2d70bd8fe341b727834999bd430b47ce310
+layout_schema: directory_layout_v2
+validation:
+  duplicate_paths: 0
+  legacy_layout: 0
+  layout_schema: directory_layout_v2
 entries:
-- path: 12306/12306.yaml
-  entity: provider_aggregate
-  id: 12306_aggregate
-  display_name: '12306'
-  provider: '12306'
-  rule_count: 15
-  sha256: 2e62c74093ba08bc74b1da33f793b6c043393145f0221541dd13cfd9fc5dd9ae
 - path: 12306/12306/12306.yaml
   entity: service
   id: '12306'
@@ -18,7 +16,7 @@ entries:
   provider: '12306'
   rule_count: 15
   sha256: 6f37079cc1b2aa13ad84ebcb4a616c5651788e52b4a7a74abe871638bb2f9607
-- path: abc/abc.yaml
+- path: abc/abc_aggregate/abc_aggregate.yaml
   entity: provider_aggregate
   id: abc_aggregate
   display_name: Agricultural Bank of China
@@ -32,7 +30,7 @@ entries:
   provider: abc
   rule_count: 6
   sha256: 1c991e66174581658950b55cc26f8edc23dc2de90c42e45b0eb84b326bef79a2
-- path: acfun/acfun.yaml
+- path: acfun/acfun_aggregate/acfun_aggregate.yaml
   entity: provider_aggregate
   id: acfun_aggregate
   display_name: AcFun
@@ -46,7 +44,7 @@ entries:
   provider: acfun
   rule_count: 10
   sha256: fb68b86b6dca3ad8065145c92b2eda7f388078acf47a73966a9ae8e8a3bf1d8d
-- path: adobe/adobe.yaml
+- path: adobe/adobe/adobe.yaml
   entity: provider_aggregate
   id: adobe
   display_name: Adobe
@@ -60,7 +58,7 @@ entries:
   provider: null
   rule_count: 684
   sha256: 0c1e50379410b7a7436e3f7c2ae58c4d1cf15601a68f06b41ba75254300235de
-- path: airbnb/airbnb.yaml
+- path: airbnb/airbnb_aggregate/airbnb_aggregate.yaml
   entity: provider_aggregate
   id: airbnb_aggregate
   display_name: Airbnb
@@ -81,7 +79,7 @@ entries:
   provider: alibaba
   rule_count: 2
   sha256: 9c7b6d86cc3d44e6b685540d1bfb886d40bbeb0b292c143606cbc851e955c8eb
-- path: alibaba/alibaba.yaml
+- path: alibaba/alibaba/alibaba.yaml
   entity: provider_aggregate
   id: alibaba
   display_name: Alibaba
@@ -158,7 +156,7 @@ entries:
   provider: alibaba
   rule_count: 60
   sha256: ee05a8f89601d4a4384bac1ec21ea23cc622fe356e3d0d997a9b7e65a751d471
-- path: amazon/amazon.yaml
+- path: amazon/amazon/amazon.yaml
   entity: provider_aggregate
   id: amazon
   display_name: Amazon
@@ -186,7 +184,7 @@ entries:
   provider: amazon
   rule_count: 22
   sha256: 1e533454aad8fa3b7221aa69f8b32b1e526460551f1384629aeb546d078fbfc9
-- path: anthropic/anthropic.yaml
+- path: anthropic/anthropic_aggregate/anthropic_aggregate.yaml
   entity: provider_aggregate
   id: anthropic_aggregate
   display_name: Anthropic
@@ -200,7 +198,7 @@ entries:
   provider: anthropic
   rule_count: 9
   sha256: caf0c377bb036170842ad22c823819139089023233c19569934677018dfc4d48
-- path: apple/apple.yaml
+- path: apple/apple/apple.yaml
   entity: provider_aggregate
   id: apple
   display_name: Apple
@@ -242,7 +240,7 @@ entries:
   provider: apple
   rule_count: 6
   sha256: 1070c2061eb8d24be1ad60069ed5a8ae93787d919ef850909c4da9cf9544dace
-- path: atlassian/atlassian.yaml
+- path: atlassian/atlassian/atlassian.yaml
   entity: provider_aggregate
   id: atlassian
   display_name: Atlassian
@@ -256,7 +254,7 @@ entries:
   provider: atlassian
   rule_count: 2
   sha256: d1572975b2b6d7ccc0b88c7006397275fd8c0252429fc8345a46d629b429f6b9
-- path: bahamut/bahamut.yaml
+- path: bahamut/bahamut_aggregate/bahamut_aggregate.yaml
   entity: provider_aggregate
   id: bahamut_aggregate
   display_name: Bahamut
@@ -270,7 +268,7 @@ entries:
   provider: bahamut
   rule_count: 7
   sha256: 15bc43c61c637837925b04d09e14445b2892453bf9bdafb1be9b15befbb8c251
-- path: baidu/baidu.yaml
+- path: baidu/baidu/baidu.yaml
   entity: provider_aggregate
   id: baidu
   display_name: Baidu
@@ -284,7 +282,7 @@ entries:
   provider: baidu
   rule_count: 2
   sha256: 01c68dda26e7bc302f3068615196ae9af2f24ffbc614a709ad8c0fe6d56054c8
-- path: bbc/bbc.yaml
+- path: bbc/bbc_aggregate/bbc_aggregate.yaml
   entity: provider_aggregate
   id: bbc_aggregate
   display_name: BBC
@@ -298,7 +296,7 @@ entries:
   provider: bbc
   rule_count: 30
   sha256: 6e6b23f154ea848b39a9b483ff85b6bf0768f0d3ab90c4698d6be66e61e1d7ad
-- path: bilibili/bilibili.yaml
+- path: bilibili/bilibili_aggregate/bilibili_aggregate.yaml
   entity: provider_aggregate
   id: bilibili_aggregate
   display_name: Bilibili
@@ -312,7 +310,7 @@ entries:
   provider: bilibili
   rule_count: 136
   sha256: 4524a828f5acc0f4a406cde3197ed27de058a2e034bb6c06d82e3137cff9d1dd
-- path: binance/binance.yaml
+- path: binance/binance_aggregate/binance_aggregate.yaml
   entity: provider_aggregate
   id: binance_aggregate
   display_name: Binance
@@ -333,14 +331,14 @@ entries:
   provider: blizzard
   rule_count: 62
   sha256: 04e19a064a30d888ed8307df921af770df84df9fa9353ee61e1e59e32d3e69ab
-- path: blizzard/blizzard.yaml
+- path: blizzard/blizzard_aggregate/blizzard_aggregate.yaml
   entity: provider_aggregate
   id: blizzard_aggregate
   display_name: Blizzard Entertainment
   provider: blizzard
   rule_count: 62
   sha256: fe6b708a23dac44d18db512ac337a65633c70098a832d22bb72458fd28621450
-- path: bluesky/bluesky.yaml
+- path: bluesky/bluesky_aggregate/bluesky_aggregate.yaml
   entity: provider_aggregate
   id: bluesky_aggregate
   display_name: Bluesky
@@ -354,7 +352,7 @@ entries:
   provider: bluesky
   rule_count: 3
   sha256: 870f1aaccc8a5b4d55b7a91ff3795237cbd22811c590611ee2edb5e6efb0949c
-- path: boc/boc.yaml
+- path: boc/boc_aggregate/boc_aggregate.yaml
   entity: provider_aggregate
   id: boc_aggregate
   display_name: Bank of China
@@ -368,7 +366,7 @@ entries:
   provider: boc
   rule_count: 22
   sha256: e515be9ae594052380b4fac5386df7f4a988743499fb131fc667f2f91aee7853
-- path: bocom/bocom.yaml
+- path: bocom/bocom_aggregate/bocom_aggregate.yaml
   entity: provider_aggregate
   id: bocom_aggregate
   display_name: Bank of Communications
@@ -382,7 +380,7 @@ entries:
   provider: bocom
   rule_count: 6
   sha256: 819c423262753e9c760818d2892110a2a58d3371818b42460d4a20edf573491e
-- path: booking/booking.yaml
+- path: booking/booking_aggregate/booking_aggregate.yaml
   entity: provider_aggregate
   id: booking_aggregate
   display_name: Booking.com
@@ -396,7 +394,7 @@ entries:
   provider: booking
   rule_count: 3
   sha256: 0033b306417a349598ef5d96850109c18585bca0cc5f089f00382d677d22634e
-- path: bytedance/bytedance.yaml
+- path: bytedance/bytedance/bytedance.yaml
   entity: provider_aggregate
   id: bytedance
   display_name: ByteDance
@@ -410,7 +408,7 @@ entries:
   provider: bytedance
   rule_count: 4
   sha256: 663be06ef44ee016466c48f7d106ed8b65a12d378a1437b7f326d9a886b036ae
-- path: canva/canva.yaml
+- path: canva/canva_aggregate/canva_aggregate.yaml
   entity: provider_aggregate
   id: canva_aggregate
   display_name: Canva
@@ -431,7 +429,7 @@ entries:
   provider: null
   rule_count: 136
   sha256: e7ceb43363423855a6cd604de8a8dc74a308e25d6c64a1bc0b4aecdc0a2edcf7
-- path: ccb/ccb.yaml
+- path: ccb/ccb_aggregate/ccb_aggregate.yaml
   entity: provider_aggregate
   id: ccb_aggregate
   display_name: China Construction Bank
@@ -445,7 +443,7 @@ entries:
   provider: ccb
   rule_count: 18
   sha256: 71cd30280c31f48da7433ae2101010a17bf2b9b8b390f845cdb074cbfa21a110
-- path: cctv/cctv.yaml
+- path: cctv/cctv_aggregate/cctv_aggregate.yaml
   entity: provider_aggregate
   id: cctv_aggregate
   display_name: CCTV
@@ -459,7 +457,7 @@ entries:
   provider: cctv
   rule_count: 44
   sha256: 377db2d44c7d799910c52a47d67a2044213d7a12a02b22a64fbd04f7372e0cca
-- path: ceb/ceb.yaml
+- path: ceb/ceb_aggregate/ceb_aggregate.yaml
   entity: provider_aggregate
   id: ceb_aggregate
   display_name: China Everbright Bank
@@ -480,7 +478,7 @@ entries:
   provider: null
   rule_count: 111330
   sha256: 985dad5802178b7e889bc6bfe7c51fb06ce2ae8ebd9bb614400db66cabde2308
-- path: chinamobile/chinamobile.yaml
+- path: chinamobile/chinamobile_aggregate/chinamobile_aggregate.yaml
   entity: provider_aggregate
   id: chinamobile_aggregate
   display_name: China Mobile
@@ -494,7 +492,7 @@ entries:
   provider: chinamobile
   rule_count: 38
   sha256: 6772c0cb6daf182fbcab1c2377d3754151d0513a02143b18ad66b102e782e713
-- path: chinatelecom/chinatelecom.yaml
+- path: chinatelecom/chinatelecom_aggregate/chinatelecom_aggregate.yaml
   entity: provider_aggregate
   id: chinatelecom_aggregate
   display_name: China Telecom
@@ -508,7 +506,7 @@ entries:
   provider: chinatelecom
   rule_count: 83
   sha256: ec9e88ae55c8a5c749892cc576d9310269687141e276b8c8504065e4b13605f0
-- path: chinaunicom/chinaunicom.yaml
+- path: chinaunicom/chinaunicom_aggregate/chinaunicom_aggregate.yaml
   entity: provider_aggregate
   id: chinaunicom_aggregate
   display_name: China Unicom
@@ -522,14 +520,14 @@ entries:
   provider: chinaunicom
   rule_count: 34
   sha256: c3a18e3619f6ab5c534085e5d97b40c5b6299957bab40bc8064e1085e80b1921
-- path: cloudflare/cloudflare.yaml
+- path: cloudflare/cloudflare/cloudflare.yaml
   entity: provider_aggregate
   id: cloudflare
   display_name: Cloudflare
   provider: cloudflare
   rule_count: 98
   sha256: 1df8a5c1447c58b8bc7b5282fd5835e6cadd6a0c40cddaef2bbc2e4099e7256c
-- path: cmb/cmb.yaml
+- path: cmb/cmb_aggregate/cmb_aggregate.yaml
   entity: provider_aggregate
   id: cmb_aggregate
   display_name: China Merchants Bank
@@ -543,7 +541,7 @@ entries:
   provider: cmb
   rule_count: 38
   sha256: 14d14b42fcdb84f9bc5dc9cd90d10bb78c52915e42c188f28e043542eafdb311
-- path: ctrip/ctrip.yaml
+- path: ctrip/ctrip_aggregate/ctrip_aggregate.yaml
   entity: provider_aggregate
   id: ctrip_aggregate
   display_name: Trip.com
@@ -557,7 +555,7 @@ entries:
   provider: ctrip
   rule_count: 29
   sha256: c62ba4d0466da9c17e9eca03435203333ce980435aa5b0d0473607fd10b3cf21
-- path: cursor/cursor.yaml
+- path: cursor/cursor_aggregate/cursor_aggregate.yaml
   entity: provider_aggregate
   id: cursor_aggregate
   display_name: Cursor
@@ -571,7 +569,7 @@ entries:
   provider: cursor
   rule_count: 4
   sha256: ace1e41e3feb0063fd9044fa75c05c1d1a15a88121d193a66fc1108df80e2818
-- path: dewu/dewu.yaml
+- path: dewu/dewu_aggregate/dewu_aggregate.yaml
   entity: provider_aggregate
   id: dewu_aggregate
   display_name: Dewu
@@ -585,7 +583,7 @@ entries:
   provider: dewu
   rule_count: 45
   sha256: 6371ac6508e210c926e28ed7b6d2cb0bca544409dc5411eab4587fe63bb7d857
-- path: didi/didi.yaml
+- path: didi/didi_aggregate/didi_aggregate.yaml
   entity: provider_aggregate
   id: didi_aggregate
   display_name: DiDi
@@ -599,7 +597,7 @@ entries:
   provider: didi
   rule_count: 25
   sha256: 1fd46a3ab2b439c039f6d6f7062d7418bc7fcaef8abfd1e856872f1f78e5ca05
-- path: digitalocean/digitalocean.yaml
+- path: digitalocean/digitalocean_aggregate/digitalocean_aggregate.yaml
   entity: provider_aggregate
   id: digitalocean_aggregate
   display_name: DigitalOcean
@@ -613,7 +611,7 @@ entries:
   provider: digitalocean
   rule_count: 6
   sha256: 827eff528c7641bcf0bce88271a52b3975804e0d1d8a4e6c1b4e6782ef91cd12
-- path: disney/disney.yaml
+- path: disney/disney_aggregate/disney_aggregate.yaml
   entity: provider_aggregate
   id: disney_aggregate
   display_name: Disney
@@ -634,7 +632,7 @@ entries:
   provider: disney
   rule_count: 59
   sha256: f79b712b169dc1765f2dc83fde7a86b922781f0dc9537b11d21758a7b3652dc4
-- path: docker/docker.yaml
+- path: docker/docker_aggregate/docker_aggregate.yaml
   entity: provider_aggregate
   id: docker_aggregate
   display_name: Docker
@@ -648,7 +646,7 @@ entries:
   provider: docker
   rule_count: 12
   sha256: ead75c07422618e15206b4ba8fe3fe8ca9ff3e28a8d3cbbc03e279e16bf58ece
-- path: douyu/douyu.yaml
+- path: douyu/douyu_aggregate/douyu_aggregate.yaml
   entity: provider_aggregate
   id: douyu_aggregate
   display_name: DouYu
@@ -662,7 +660,7 @@ entries:
   provider: douyu
   rule_count: 13
   sha256: 68df3ef75fc658ddf2534028358ec18219df76417e6f5cb40a31e1572ad82c42
-- path: dropbox/dropbox.yaml
+- path: dropbox/dropbox_aggregate/dropbox_aggregate.yaml
   entity: provider_aggregate
   id: dropbox_aggregate
   display_name: Dropbox
@@ -676,7 +674,7 @@ entries:
   provider: dropbox
   rule_count: 17
   sha256: 834a716ecb598fa391674931fff4e462e3faa943a4ebbfae3cd5da0d27bf3ef9
-- path: ea/ea.yaml
+- path: ea/ea_aggregate/ea_aggregate.yaml
   entity: provider_aggregate
   id: ea_aggregate
   display_name: Electronic Arts
@@ -690,7 +688,7 @@ entries:
   provider: ea
   rule_count: 165
   sha256: a78c4153499c704a48671cc59180ed7655ab131d90ff42ca17d004b9ea746bc7
-- path: ebay/ebay.yaml
+- path: ebay/ebay_aggregate/ebay_aggregate.yaml
   entity: provider_aggregate
   id: ebay_aggregate
   display_name: eBay
@@ -704,7 +702,7 @@ entries:
   provider: ebay
   rule_count: 370
   sha256: 2a420696bebd8592bf60b3b57a4f3e759263f262711c47369493d87aad6e5a6b
-- path: elevenlabs/elevenlabs.yaml
+- path: elevenlabs/elevenlabs_aggregate/elevenlabs_aggregate.yaml
   entity: provider_aggregate
   id: elevenlabs_aggregate
   display_name: ElevenLabs
@@ -718,7 +716,7 @@ entries:
   provider: elevenlabs
   rule_count: 2
   sha256: 8833a93c239cdc9d9a63397bbd366be785968cb8db3e1b5438f245f677073277
-- path: emby/emby.yaml
+- path: emby/emby_aggregate/emby_aggregate.yaml
   entity: provider_aggregate
   id: emby_aggregate
   display_name: Emby
@@ -732,7 +730,7 @@ entries:
   provider: emby
   rule_count: 52
   sha256: 7fdd2c96e40f3af61f96278674f023c57b79a28f5a7dce6853bce5525c81c642
-- path: epic/epic.yaml
+- path: epic/epic_aggregate/epic_aggregate.yaml
   entity: provider_aggregate
   id: epic_aggregate
   display_name: Epic Games
@@ -746,7 +744,7 @@ entries:
   provider: epic
   rule_count: 15
   sha256: 07e665a4faa867d716a6bbd01d04b1ab0d9589bdedf3de49d519ee560f28a74b
-- path: figma/figma.yaml
+- path: figma/figma_aggregate/figma_aggregate.yaml
   entity: provider_aggregate
   id: figma_aggregate
   display_name: Figma
@@ -760,7 +758,7 @@ entries:
   provider: figma
   rule_count: 1
   sha256: 923d96db6af0f0780ca3ae443debf16b033bbfb4fb2842d82ae94b7a21fdfdc0
-- path: garena/garena.yaml
+- path: garena/garena_aggregate/garena_aggregate.yaml
   entity: provider_aggregate
   id: garena_aggregate
   display_name: Garena
@@ -774,7 +772,7 @@ entries:
   provider: garena
   rule_count: 15
   sha256: f7be1fdd76ad5145467a0a4203d372735a4916d272118c77d4f825d58174b879
-- path: gitlab/gitlab.yaml
+- path: gitlab/gitlab_aggregate/gitlab_aggregate.yaml
   entity: provider_aggregate
   id: gitlab_aggregate
   display_name: GitLab
@@ -802,7 +800,7 @@ entries:
   provider: google
   rule_count: 1
   sha256: 01060de0d5cee1910cf7037dc956c19b019b0f4465663afd72a03d5b4d531eab
-- path: google/google.yaml
+- path: google/google/google.yaml
   entity: provider_aggregate
   id: google
   display_name: Google
@@ -844,7 +842,7 @@ entries:
   provider: google
   rule_count: 231
   sha256: 697e8455dfce8a64e25c8cf3ec00cf771e93d9d9751309e0ed2b411debdef188
-- path: hbo/hbo.yaml
+- path: hbo/hbo_aggregate/hbo_aggregate.yaml
   entity: provider_aggregate
   id: hbo_aggregate
   display_name: HBO
@@ -858,7 +856,7 @@ entries:
   provider: hbo
   rule_count: 48
   sha256: e8f0db42f3fa02a03db4bff03a9d81e934483d470b432b3e23a4bd8e44ab1bd3
-- path: himalaya/himalaya.yaml
+- path: himalaya/himalaya_aggregate/himalaya_aggregate.yaml
   entity: provider_aggregate
   id: himalaya_aggregate
   display_name: Himalaya
@@ -872,21 +870,21 @@ entries:
   provider: himalaya
   rule_count: 17
   sha256: 1dc96584c645c155955abc748d632244459129713b1c831ebfab7dfe6b2cf46a
-- path: hoyoverse/hoyoverse.yaml
+- path: hoyoverse/hoyoverse/hoyoverse.yaml
   entity: provider_aggregate
   id: hoyoverse
   display_name: HoYoverse
   provider: hoyoverse
   rule_count: 15
   sha256: d22e6442269b5208eb5f7b4ad1ebbee723a5e6b6e4d15a4d6641b5f29c19e869
-- path: huawei/huawei.yaml
+- path: huawei/huawei/huawei.yaml
   entity: provider_aggregate
   id: huawei
   display_name: Huawei
   provider: huawei
   rule_count: 402
   sha256: 8602be08cdc64c9cfb7c36e3ace634c3b15bdfa329cf830690333c6f7dbcf100
-- path: huya/huya.yaml
+- path: huya/huya_aggregate/huya_aggregate.yaml
   entity: provider_aggregate
   id: huya_aggregate
   display_name: Huya
@@ -907,14 +905,14 @@ entries:
   provider: ibm
   rule_count: 8
   sha256: 184a24ec139efa190f5d666e19078185c4bfeab31d3524e0a6c781481ef8feb9
-- path: ibm/ibm.yaml
+- path: ibm/ibm_aggregate/ibm_aggregate.yaml
   entity: provider_aggregate
   id: ibm_aggregate
   display_name: IBM
   provider: ibm
   rule_count: 8
   sha256: 0f3bf4051bb91d4e4aac012e9be03e8dca06a4d75dd26f9f6dafb9943839b6b7
-- path: icbc/icbc.yaml
+- path: icbc/icbc_aggregate/icbc_aggregate.yaml
   entity: provider_aggregate
   id: icbc_aggregate
   display_name: Industrial and Commercial Bank of China
@@ -928,7 +926,7 @@ entries:
   provider: icbc
   rule_count: 58
   sha256: 8a77e99ddd79b1220694567ce2d83258c11bd329801c95156b396a7c5beb588d
-- path: iqiyi/iqiyi.yaml
+- path: iqiyi/iqiyi_aggregate/iqiyi_aggregate.yaml
   entity: provider_aggregate
   id: iqiyi_aggregate
   display_name: iQIYI
@@ -942,7 +940,7 @@ entries:
   provider: iqiyi
   rule_count: 67
   sha256: cd2393241e63fb75a5fa8ef72688772b3b22aff6afa59453e700219ca5bc9ccc
-- path: jetbrains/jetbrains.yaml
+- path: jetbrains/jetbrains_aggregate/jetbrains_aggregate.yaml
   entity: provider_aggregate
   id: jetbrains_aggregate
   display_name: JetBrains
@@ -956,7 +954,7 @@ entries:
   provider: jetbrains
   rule_count: 25
   sha256: c95d9e437678dbb937882a03223c61ee483e1e6ce3c6c970f129f884a32e4c9d
-- path: jingdong/jingdong.yaml
+- path: jingdong/jingdong_aggregate/jingdong_aggregate.yaml
   entity: provider_aggregate
   id: jingdong_aggregate
   display_name: JingDong
@@ -970,7 +968,7 @@ entries:
   provider: jingdong
   rule_count: 277
   sha256: 56d4ca4b130c58d9838e4598a01a1f0657dcd4896f56df9b5c17ce1cca998770
-- path: kakaotalk/kakaotalk.yaml
+- path: kakaotalk/kakaotalk_aggregate/kakaotalk_aggregate.yaml
   entity: provider_aggregate
   id: kakaotalk_aggregate
   display_name: KakaoTalk
@@ -984,7 +982,7 @@ entries:
   provider: kakaotalk
   rule_count: 15
   sha256: 83dd34ecbfe7f6987d3cc45202dac443953fa325d45927de85143e567f365661
-- path: kuaishou/kuaishou.yaml
+- path: kuaishou/kuaishou_aggregate/kuaishou_aggregate.yaml
   entity: provider_aggregate
   id: kuaishou_aggregate
   display_name: Kuaishou
@@ -998,7 +996,7 @@ entries:
   provider: kuaishou
   rule_count: 678
   sha256: 881ea3213b6711d916922eca25e10f8c70dba3735cdd460563163321c0e0aa07
-- path: kugou/kugou.yaml
+- path: kugou/kugou_aggregate/kugou_aggregate.yaml
   entity: provider_aggregate
   id: kugou_aggregate
   display_name: KuGou
@@ -1012,7 +1010,7 @@ entries:
   provider: kugou
   rule_count: 19
   sha256: ea5d9e63c6a29e43698750876c670ba59f2897feb65a554867e0d16a99b5e643
-- path: kuwo/kuwo.yaml
+- path: kuwo/kuwo_aggregate/kuwo_aggregate.yaml
   entity: provider_aggregate
   id: kuwo_aggregate
   display_name: Kuwo
@@ -1026,7 +1024,7 @@ entries:
   provider: kuwo
   rule_count: 3
   sha256: ddb020ce3bca5e38052e6d858e760a29ab71400bd567170a6a3143e82c53ffa5
-- path: letv/letv.yaml
+- path: letv/letv_aggregate/letv_aggregate.yaml
   entity: provider_aggregate
   id: letv_aggregate
   display_name: LeTV
@@ -1040,7 +1038,7 @@ entries:
   provider: letv
   rule_count: 13
   sha256: 3fb76593586d1cab7b27cccd7f214db19e351c38a679e3821e7576951b8f3991
-- path: line/line.yaml
+- path: line/line_aggregate/line_aggregate.yaml
   entity: provider_aggregate
   id: line_aggregate
   display_name: LINE
@@ -1054,7 +1052,7 @@ entries:
   provider: line
   rule_count: 37
   sha256: a5cd3b33a4d4c2cc75342b5930c9b1a911f530640d9cedf7082e192e677f1584
-- path: meituan/meituan.yaml
+- path: meituan/meituan_aggregate/meituan_aggregate.yaml
   entity: provider_aggregate
   id: meituan_aggregate
   display_name: Meituan
@@ -1082,7 +1080,7 @@ entries:
   provider: meta
   rule_count: 76
   sha256: fa517f2c8abcd9aaf8ac246d9a502f16b9c518d38324634cfa161435fa00809b
-- path: meta/meta.yaml
+- path: meta/meta/meta.yaml
   entity: provider_aggregate
   id: meta
   display_name: Meta
@@ -1117,7 +1115,7 @@ entries:
   provider: microsoft
   rule_count: 12
   sha256: 1c6b23b0cf10a672ef45e689028c1575a05b42f0c6b62889fe30826d2eafc560
-- path: microsoft/microsoft.yaml
+- path: microsoft/microsoft/microsoft.yaml
   entity: provider_aggregate
   id: microsoft
   display_name: Microsoft
@@ -1138,7 +1136,7 @@ entries:
   provider: microsoft
   rule_count: 6
   sha256: 5585ff3a0dc373384bc940ebd34e09c85c049b83703cba21d73ea60e8330ddcc
-- path: netease/netease.yaml
+- path: netease/netease/netease.yaml
   entity: provider_aggregate
   id: netease
   display_name: NetEase
@@ -1152,7 +1150,7 @@ entries:
   provider: netease
   rule_count: 15
   sha256: 40df3f2791be69b66a664027407b4a1523a1908ab5013df1ffefc30b1c985585
-- path: netlify/netlify.yaml
+- path: netlify/netlify_aggregate/netlify_aggregate.yaml
   entity: provider_aggregate
   id: netlify_aggregate
   display_name: Netlify
@@ -1166,7 +1164,7 @@ entries:
   provider: netlify
   rule_count: 10
   sha256: 720107d0520dbc58b2b28d1689e0d3da8f44c6b12f7a80a24e2f0f332ac32004
-- path: nintendo/nintendo.yaml
+- path: nintendo/nintendo_aggregate/nintendo_aggregate.yaml
   entity: provider_aggregate
   id: nintendo_aggregate
   display_name: Nintendo
@@ -1180,7 +1178,7 @@ entries:
   provider: nintendo
   rule_count: 126
   sha256: faf13cdb740a011752528db4c6bcebe10ea60dbc9be4fdded86a20cb1e3afb0f
-- path: notion/notion.yaml
+- path: notion/notion_aggregate/notion_aggregate.yaml
   entity: provider_aggregate
   id: notion_aggregate
   display_name: Notion
@@ -1194,7 +1192,7 @@ entries:
   provider: notion
   rule_count: 8
   sha256: 5012498d87dcf440b0e943e13b8ddf36fd4a43a1fcc08ee4edcebb98b1069134
-- path: okx/okx.yaml
+- path: okx/okx_aggregate/okx_aggregate.yaml
   entity: provider_aggregate
   id: okx_aggregate
   display_name: OKX
@@ -1208,7 +1206,7 @@ entries:
   provider: okx
   rule_count: 3
   sha256: 243f7fe546c6560da8be3f2f6a210d5d223b5a28e7cfba0483d88161121fbd9c
-- path: ookla/ookla.yaml
+- path: ookla/ookla_aggregate/ookla_aggregate.yaml
   entity: provider_aggregate
   id: ookla_aggregate
   display_name: Ookla
@@ -1222,7 +1220,7 @@ entries:
   provider: ookla
   rule_count: 5
   sha256: b44731e051bd9fa2def03edc880d41ec032e58c59078b3f30caaf3d0926aa8d7
-- path: oppo/oppo.yaml
+- path: oppo/oppo_aggregate/oppo_aggregate.yaml
   entity: provider_aggregate
   id: oppo_aggregate
   display_name: OPPO
@@ -1236,7 +1234,7 @@ entries:
   provider: oppo
   rule_count: 56
   sha256: 3269a496edb4188e4986b2709d3d92cf2ed67e6c4ec8f6b0049a5e3a1906a65d
-- path: oracle/oracle.yaml
+- path: oracle/oracle_aggregate/oracle_aggregate.yaml
   entity: provider_aggregate
   id: oracle_aggregate
   display_name: Oracle
@@ -1250,7 +1248,7 @@ entries:
   provider: oracle
   rule_count: 27
   sha256: b9a4da22d001e8edbca076c4a342367b4c657cd753f6fca0b2bf87892c881b98
-- path: paypal/paypal.yaml
+- path: paypal/paypal_aggregate/paypal_aggregate.yaml
   entity: provider_aggregate
   id: paypal_aggregate
   display_name: PayPal
@@ -1264,7 +1262,7 @@ entries:
   provider: paypal
   rule_count: 247
   sha256: ddd44464d15c95895308c2f2203e5cf4afc0b87d714ac3951e063c870b784c1c
-- path: pinduoduo/pinduoduo.yaml
+- path: pinduoduo/pinduoduo_aggregate/pinduoduo_aggregate.yaml
   entity: provider_aggregate
   id: pinduoduo_aggregate
   display_name: Pinduoduo
@@ -1278,7 +1276,7 @@ entries:
   provider: pinduoduo
   rule_count: 3
   sha256: 3407f34f352598fc72a5c374c74086f19b606078cf584c3ced51d0c833d5ba8e
-- path: pingan/pingan.yaml
+- path: pingan/pingan_aggregate/pingan_aggregate.yaml
   entity: provider_aggregate
   id: pingan_aggregate
   display_name: Ping An
@@ -1292,7 +1290,7 @@ entries:
   provider: pingan
   rule_count: 27
   sha256: 8d7a7860d4d690d5702f84207467c50d5a1f74019ca83d014d5ef85adc9579c1
-- path: pinterest/pinterest.yaml
+- path: pinterest/pinterest_aggregate/pinterest_aggregate.yaml
   entity: provider_aggregate
   id: pinterest_aggregate
   display_name: Pinterest
@@ -1306,7 +1304,7 @@ entries:
   provider: pinterest
   rule_count: 23
   sha256: c4bfdfc8e927a4363e32f0006d82f006edbd55277ce1c9de70c137ac44b990b3
-- path: playstation/playstation.yaml
+- path: playstation/playstation_aggregate/playstation_aggregate.yaml
   entity: provider_aggregate
   id: playstation_aggregate
   display_name: PlayStation
@@ -1320,7 +1318,7 @@ entries:
   provider: playstation
   rule_count: 4
   sha256: 6f3f58ba8f01312045f8a7b31e9567e54d04699aec2601f53b4fb6395f3f2e79
-- path: pptv/pptv.yaml
+- path: pptv/pptv_aggregate/pptv_aggregate.yaml
   entity: provider_aggregate
   id: pptv_aggregate
   display_name: PPTV
@@ -1334,7 +1332,7 @@ entries:
   provider: pptv
   rule_count: 19
   sha256: 1acb0b786ad6c3c5565764cd64f661ee97e5d9558e189ecea2b6937eb3179e89
-- path: psbc/psbc.yaml
+- path: psbc/psbc_aggregate/psbc_aggregate.yaml
   entity: provider_aggregate
   id: psbc_aggregate
   display_name: Postal Savings Bank of China
@@ -1348,7 +1346,7 @@ entries:
   provider: psbc
   rule_count: 3
   sha256: bec790e364c10894ae3ad140ce47a182998a5508687e06e4d991d04315b73de1
-- path: reddit/reddit.yaml
+- path: reddit/reddit_aggregate/reddit_aggregate.yaml
   entity: provider_aggregate
   id: reddit_aggregate
   display_name: Reddit
@@ -1362,7 +1360,7 @@ entries:
   provider: reddit
   rule_count: 15
   sha256: c90afc52fbf949094776fcec1eb04a2977bf3b5333c2210093602c319a7b94f2
-- path: riotgames/riotgames.yaml
+- path: riotgames/riotgames_aggregate/riotgames_aggregate.yaml
   entity: provider_aggregate
   id: riotgames_aggregate
   display_name: Riot Games
@@ -1376,7 +1374,7 @@ entries:
   provider: riotgames
   rule_count: 55
   sha256: f5f4c7a6e6520a410aff6938875a95d0e8523e25ecd2dfb43d1e29104b5cd53e
-- path: rockstar/rockstar.yaml
+- path: rockstar/rockstar_aggregate/rockstar_aggregate.yaml
   entity: provider_aggregate
   id: rockstar_aggregate
   display_name: Rockstar Games
@@ -1397,7 +1395,7 @@ entries:
   provider: salesforce
   rule_count: 12
   sha256: 8c692e8642a2248b70f27564ab418924fe7744963b9bceb9869dc4160a7547a7
-- path: salesforce/salesforce.yaml
+- path: salesforce/salesforce_aggregate/salesforce_aggregate.yaml
   entity: provider_aggregate
   id: salesforce_aggregate
   display_name: Salesforce
@@ -1411,7 +1409,7 @@ entries:
   provider: salesforce
   rule_count: 11
   sha256: e74e43588cd559c6ff6df0696ee391ab902829510df2630ceeea45ac0cf49d1d
-- path: shopify/shopify.yaml
+- path: shopify/shopify_aggregate/shopify_aggregate.yaml
   entity: provider_aggregate
   id: shopify_aggregate
   display_name: Shopify
@@ -1425,7 +1423,7 @@ entries:
   provider: shopify
   rule_count: 8
   sha256: 3bdf37fa9f16262f1828b36a3e4238fa40633e55feb495a9b102889888b17912
-- path: snap/snap.yaml
+- path: snap/snap/snap.yaml
   entity: provider_aggregate
   id: snap
   display_name: Snap
@@ -1439,7 +1437,7 @@ entries:
   provider: snap
   rule_count: 9
   sha256: 745b736bbc7d401afa2eaf0c4e1268ac3563073865b17b8b0831750acb6bf1ed
-- path: sohu/sohu.yaml
+- path: sohu/sohu_aggregate/sohu_aggregate.yaml
   entity: provider_aggregate
   id: sohu_aggregate
   display_name: Sohu
@@ -1453,7 +1451,7 @@ entries:
   provider: sohu
   rule_count: 53
   sha256: 987fd9b97714c3af0c7bb64035a18f9aa07f5cad0d13eb0e16e914a7bafe2aeb
-- path: soundcloud/soundcloud.yaml
+- path: soundcloud/soundcloud_aggregate/soundcloud_aggregate.yaml
   entity: provider_aggregate
   id: soundcloud_aggregate
   display_name: SoundCloud
@@ -1495,7 +1493,7 @@ entries:
   provider: special
   rule_count: 6662
   sha256: 54e57944e9ddb5d0ad135b647e45f5dc1362a81ea299abf46e2e18a2f9e24d6f
-- path: special/special.yaml
+- path: special/special/special.yaml
   entity: provider_aggregate
   id: special
   display_name: Special / Generic
@@ -1509,7 +1507,7 @@ entries:
   provider: special
   rule_count: 366
   sha256: 628609822552e0d7f9b5ab80bba112238480c7c4facc45a62c9b52c748616a7f
-- path: spotify/spotify.yaml
+- path: spotify/spotify_aggregate/spotify_aggregate.yaml
   entity: provider_aggregate
   id: spotify_aggregate
   display_name: Spotify
@@ -1523,7 +1521,7 @@ entries:
   provider: spotify
   rule_count: 38
   sha256: f6649924deb51ac41f1984f0c19dbf83094ecf160c08fbced1589b85dc9c1525
-- path: steam/steam.yaml
+- path: steam/steam_aggregate/steam_aggregate.yaml
   entity: provider_aggregate
   id: steam_aggregate
   display_name: Steam
@@ -1537,7 +1535,7 @@ entries:
   provider: steam
   rule_count: 84
   sha256: 0a89ed3ba6157a8684e3bb6c372655ab8d6342421d94d5519a6905136cc2cf10
-- path: stripe/stripe.yaml
+- path: stripe/stripe_aggregate/stripe_aggregate.yaml
   entity: provider_aggregate
   id: stripe_aggregate
   display_name: Stripe
@@ -1565,7 +1563,7 @@ entries:
   provider: tencent
   rule_count: 1
   sha256: 850a78df394b7257d3dd1c352b865727e0106ec875261d69359e397af56e97f6
-- path: tencent/tencent.yaml
+- path: tencent/tencent/tencent.yaml
   entity: provider_aggregate
   id: tencent
   display_name: Tencent
@@ -1600,7 +1598,7 @@ entries:
   provider: tencent
   rule_count: 9
   sha256: a9b7e1063e76bd5713f7966c1fb1678cf9d17d41cb7474a8508765c4d8901a46
-- path: tidal/tidal.yaml
+- path: tidal/tidal_aggregate/tidal_aggregate.yaml
   entity: provider_aggregate
   id: tidal_aggregate
   display_name: TIDAL
@@ -1614,7 +1612,7 @@ entries:
   provider: tidal
   rule_count: 3
   sha256: 7368e6841a88e26bc1d6dd07465b601c0f6d5320328511c941e5cb649457e313
-- path: tongcheng/tongcheng.yaml
+- path: tongcheng/tongcheng_aggregate/tongcheng_aggregate.yaml
   entity: provider_aggregate
   id: tongcheng_aggregate
   display_name: Tongcheng
@@ -1628,7 +1626,7 @@ entries:
   provider: tongcheng
   rule_count: 8
   sha256: f935ecdb35cad13ecce8bf5eee773f36fe3e15543636df0f10c0bdeef8c0dea4
-- path: twitter/twitter.yaml
+- path: twitter/twitter_aggregate/twitter_aggregate.yaml
   entity: provider_aggregate
   id: twitter_aggregate
   display_name: Twitter
@@ -1642,7 +1640,7 @@ entries:
   provider: twitter
   rule_count: 34
   sha256: 31a09a4a731a797b4b045a33b63a5b120d501a7fd7ef670f57893d611c117b67
-- path: uber/uber.yaml
+- path: uber/uber_aggregate/uber_aggregate.yaml
   entity: provider_aggregate
   id: uber_aggregate
   display_name: Uber
@@ -1656,7 +1654,7 @@ entries:
   provider: uber
   rule_count: 3
   sha256: 13fe832fb8c85e2cdbc829ba202db3828ee7a05a7b00f42829a455462d22d140
-- path: ubisoft/ubisoft.yaml
+- path: ubisoft/ubisoft_aggregate/ubisoft_aggregate.yaml
   entity: provider_aggregate
   id: ubisoft_aggregate
   display_name: Ubisoft
@@ -1670,7 +1668,7 @@ entries:
   provider: ubisoft
   rule_count: 1
   sha256: b6e9b50e7ee497330f47e1c75509ba6c307134ecb93422130a01b98666379e61
-- path: unionpay/unionpay.yaml
+- path: unionpay/unionpay_aggregate/unionpay_aggregate.yaml
   entity: provider_aggregate
   id: unionpay_aggregate
   display_name: UnionPay
@@ -1684,7 +1682,7 @@ entries:
   provider: unionpay
   rule_count: 16
   sha256: cd80a4623f8fe654a142aa4973ef7f58c6bebe78839ea93537937276a8447036
-- path: vercel/vercel.yaml
+- path: vercel/vercel_aggregate/vercel_aggregate.yaml
   entity: provider_aggregate
   id: vercel_aggregate
   display_name: Vercel
@@ -1698,7 +1696,7 @@ entries:
   provider: vercel
   rule_count: 27
   sha256: 37695770e288e3d13b7c20fb3564939deb12253095518111ae744b4d2cb504b9
-- path: vivo/vivo.yaml
+- path: vivo/vivo_aggregate/vivo_aggregate.yaml
   entity: provider_aggregate
   id: vivo_aggregate
   display_name: vivo
@@ -1712,7 +1710,7 @@ entries:
   provider: vivo
   rule_count: 14
   sha256: b2a1286fd284b47cff5dfae7d5293e30a53f60a49bd28fa2b4bffcf7082dc47d
-- path: walmart/walmart.yaml
+- path: walmart/walmart_aggregate/walmart_aggregate.yaml
   entity: provider_aggregate
   id: walmart_aggregate
   display_name: Walmart
@@ -1726,7 +1724,7 @@ entries:
   provider: walmart
   rule_count: 10
   sha256: 11e3f17c496ded0e7429cee0c496efb7eb3968bff1a4b5e747f6725d67fa04ef
-- path: weibo/weibo.yaml
+- path: weibo/weibo_aggregate/weibo_aggregate.yaml
   entity: provider_aggregate
   id: weibo_aggregate
   display_name: Weibo
@@ -1740,7 +1738,7 @@ entries:
   provider: weibo
   rule_count: 4
   sha256: abaae6344905d4e54f3afdcced3412bf5d414253caae223fdb2f7df9001f6c7d
-- path: wikimedia/wikimedia.yaml
+- path: wikimedia/wikimedia_aggregate/wikimedia_aggregate.yaml
   entity: provider_aggregate
   id: wikimedia_aggregate
   display_name: Wikimedia
@@ -1754,7 +1752,7 @@ entries:
   provider: wikimedia
   rule_count: 12
   sha256: 37c1120ab057da2972f765db664cec51129b8ed6ae0f15a65ebc54a302c0ebb4
-- path: wise/wise.yaml
+- path: wise/wise_aggregate/wise_aggregate.yaml
   entity: provider_aggregate
   id: wise_aggregate
   display_name: Wise
@@ -1768,14 +1766,14 @@ entries:
   provider: wise
   rule_count: 2
   sha256: b79bd3524bc8fd0c0089583ead35c56201a744efabc4126ad5b85b23575140df
-- path: xai/xai.yaml
+- path: xai/xai/xai.yaml
   entity: provider_aggregate
   id: xai
   display_name: xAI
   provider: xai
   rule_count: 4
   sha256: bf0a7679d2d82f623095dc3f4165ab96394abced6cf5e722a705662bb6c63dd7
-- path: xiaohongshu/xiaohongshu.yaml
+- path: xiaohongshu/xiaohongshu_aggregate/xiaohongshu_aggregate.yaml
   entity: provider_aggregate
   id: xiaohongshu_aggregate
   display_name: Xiaohongshu
@@ -1789,14 +1787,14 @@ entries:
   provider: xiaohongshu
   rule_count: 4
   sha256: 188d0e9c24ca1371aa55e5e7d606750f71ade74de0225c342919f6848ad65a4d
-- path: xiaomi/xiaomi.yaml
+- path: xiaomi/xiaomi/xiaomi.yaml
   entity: provider_aggregate
   id: xiaomi
   display_name: Xiaomi
   provider: xiaomi
   rule_count: 159
   sha256: 41f563026717ce0bf6d38a4f7abdcb6b0ca6964250d504a01c8cbc7a95532acf
-- path: ximalaya/ximalaya.yaml
+- path: ximalaya/ximalaya_aggregate/ximalaya_aggregate.yaml
   entity: provider_aggregate
   id: ximalaya_aggregate
   display_name: Ximalaya
@@ -1810,7 +1808,7 @@ entries:
   provider: ximalaya
   rule_count: 5
   sha256: 4f47e342d682b3a6d4a9604f1fc68f306081e576375e9ae1563e193a546642bb
-- path: zhihu/zhihu.yaml
+- path: zhihu/zhihu_aggregate/zhihu_aggregate.yaml
   entity: provider_aggregate
   id: zhihu_aggregate
   display_name: Zhihu
@@ -1824,7 +1822,7 @@ entries:
   provider: zhihu
   rule_count: 7
   sha256: f960f34e0af8336c08b56c16c74e65a7affb33bd6ef41493f3490ee80d3e2e54
-- path: zoom/zoom.yaml
+- path: zoom/zoom_aggregate/zoom_aggregate.yaml
   entity: provider_aggregate
   id: zoom_aggregate
   display_name: Zoom
