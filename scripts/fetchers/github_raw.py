@@ -140,7 +140,10 @@ class GitHubRawFetcher(BaseFetcher):
                 if "domains.txt" not in required_files:
                     raise ValueError(f"immutable release missing domains.txt checksum for {immutable['service']}")
         except ValueError as exc:
-            return FetchResult(ok=False, source_id="", path=path, name=name, error=str(exc))
+            error_url = str(entry.get("url") or _upstream_urls(self.cfg, path)[0])
+            return FetchResult(
+                ok=False, source_id="", path=path, name=name, url=error_url, error=str(exc)
+            )
 
         urls = _upstream_urls(cfg, path)
         last_error: str | None = None
