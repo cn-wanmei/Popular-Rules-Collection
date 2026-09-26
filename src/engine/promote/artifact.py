@@ -169,6 +169,8 @@ def promote_run(run_dir: Path, generated_root: Path, *, baseline_path: Path | No
             raise RuntimeError("Promotion refused: no publishable artifacts")
         record = {
             "schema": "promotion_v4",
+            "schema_version": 2,
+            "layout_schema": "directory_layout_v2",
             "promoted_at": datetime.now(timezone.utc).isoformat(),
             "run_id": run_dir.name,
             "release_state": "RC_READY",
@@ -179,6 +181,7 @@ def promote_run(run_dir: Path, generated_root: Path, *, baseline_path: Path | No
             "artifact_digests": digests,
             "client_digests": validation["release_manifest"].get("client_digests"),
             "cas_verified": True,
+            "ir_digest": validation["release_manifest"].get("ir_digest"),
         }
         (staging / "_promotion").mkdir(parents=True, exist_ok=True)
         (staging / "_promotion" / "latest.json").write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
