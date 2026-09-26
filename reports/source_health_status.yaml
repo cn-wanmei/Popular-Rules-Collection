@@ -1,5 +1,5 @@
 schema: source_health_status_v1
-generated_at: '2026-09-26T10:50:04.515647Z'
+generated_at: '2026-09-26T11:15:25.438035Z'
 policy: config/health_policy.yaml
 lifecycle_registry: sources/lifecycle.yaml
 sources:
@@ -15,11 +15,11 @@ sources:
   blackmatrix7:
     lifecycle: active
     status: healthy
-    reason: last success 3h ago
+    reason: last success 4h ago
     last_success: '2026-09-26T07:15:24.558774+00:00'
     last_attempt: '2026-09-26T07:15:24.558763+00:00'
     failure_count: 0
-    age_hours: 3
+    age_hours: 4
     rules_declared: 154
   dler:
     lifecycle: active
@@ -69,11 +69,11 @@ sources:
   popular-rules-source:
     lifecycle: active
     status: healthy
-    reason: last success 3h ago
+    reason: last success 4h ago
     last_success: '2026-09-26T07:15:20.713416+00:00'
     last_attempt: '2026-09-26T07:15:20.713406+00:00'
     failure_count: 0
-    age_hours: 3
+    age_hours: 4
     rules_declared: 18
   sukkaw:
     lifecycle: active
