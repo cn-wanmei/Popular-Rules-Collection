@@ -215,7 +215,7 @@ def build_all_clients(ir_dir: Path, artifacts_dir: Path, *, views: list[str] | N
     artifacts_dir = Path(artifacts_dir)
     artifacts_dir.mkdir(parents=True, exist_ok=True)
     rules, memberships, entities, semantic_intent, ir_digest = _load_ir(Path(ir_dir))
-    probe_report = validate_semantic_probes(rules, memberships)
+    probe_report = validate_semantic_probes(rules, memberships, semantic_intent=semantic_intent)
     capabilities = _load_capabilities()
     service_provider, provider_services, provider_aggregates, china_exclusions = _load_directory_contract()
     report: dict[str, Any] = {"schema": "adapter_build_v5", "schema_version": 2, "clients": {}, "views": {"services": sorted(entities.get("services", [])), "aggregate": True, "china": True}, "source_contract": "semantic_ir_v2", "directory_contract": EntityPathResolver.LAYOUT_SCHEMA, "layout_schema": EntityPathResolver.LAYOUT_SCHEMA, "resolver": "EntityPathResolver", "run_id": str(run_id or "").strip() or None, "ir_digest": ir_digest, "china_excluded_independent_providers": sorted(china_exclusions), "semantic_intent": semantic_intent, "semantic_probes": probe_report, "v2_runtime_dependency": 0, "parallel": True}
