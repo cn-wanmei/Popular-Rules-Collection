@@ -2,7 +2,7 @@ name: Engine v3 Independent Kernel
 
 on:
   push:
-    branches: [main, master]
+    branches: [main]
     paths:
       - "src/engine/**"
       - "tests/engine/**"
@@ -11,10 +11,8 @@ on:
       - "requirements.txt"
       - "requirements.lock"
       - ".github/workflows/engine-v3.yml"
-      - ".github/workflows/build.yml"
-      - ".github/workflows/publish.yml"
   pull_request:
-    branches: [main, master]
+    branches: [main]
     paths:
       - "src/engine/**"
       - "tests/engine/**"
@@ -23,8 +21,6 @@ on:
       - "requirements.txt"
       - "requirements.lock"
       - ".github/workflows/engine-v3.yml"
-      - ".github/workflows/build.yml"
-      - ".github/workflows/publish.yml"
 
 jobs:
   engine-gates:
