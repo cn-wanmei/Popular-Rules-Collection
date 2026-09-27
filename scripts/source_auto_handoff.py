@@ -14,10 +14,13 @@ SOURCE_REPORT_URL = (
 )
 SOURCE_ROOT = "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source"
 REGISTRY_PATH = Path("sources/immutable_registry.yaml")
-SERVICES = (
+# Lineage-protected services that must always be present in durable seal.
+LINEAGE_SERVICES = (
     "1688", "cainiao", "dingding", "qqmail",
     "qqmusic", "taobao", "tencentcloud", "tmall",
 )
+# Back-compat alias: required minimum set for seal validation.
+SERVICES = LINEAGE_SERVICES
 PROVENANCE_FIELDS = (
     "evidence_digest",
     "policy_digest",
@@ -136,23 +139,36 @@ def main() -> None:
 
     changed_services: list[str] = []
     retired_services: list[str] = []
-    for sid in SERVICES:
-        binding = _build_binding(source_ref, verified_input, sid, report["services"][sid])
+    # Bind every PERSISTED durable service (full seal), not only lineage subset.
+    for sid, item in sorted((report.get("services") or {}).items()):
+        if not isinstance(item, dict):
+            continue
+        if item.get("status") != "PERSISTED":
+            continue
+        binding = _build_binding(source_ref, verified_input, sid, item)
         if bindings.get(sid) != binding:
             bindings[sid] = binding
             changed_services.append(sid)
 
-    # The durable bridge is the Source production SSOT. An active immutable
-    # binding that disappeared from that durable report is stale and must not
-    # remain production-active (for example, the legacy `qq` binding).
+    # Only retire active bindings that were previously durable-managed and have
+    # disappeared from the current seal. Never retire lineage services.
+    durable_persisted = {
+        sid for sid, item in (report.get("services") or {}).items()
+        if isinstance(item, dict) and item.get("status") == "PERSISTED"
+    }
     for sid, binding in list(bindings.items()):
         if not isinstance(binding, dict):
             continue
-        if binding.get("status") == "active" and sid not in durable_services:
-            binding = dict(binding)
-            binding["status"] = "retired"
-            bindings[sid] = binding
-            retired_services.append(str(sid))
+        if sid in LINEAGE_SERVICES:
+            continue
+        # Historical bindings outside current seal stay active unless already marked durable-managed
+        if binding.get("status") == "active" and binding.get("source_id") == "popular-rules-source":
+            # keep active if seal still incomplete relative to historical releases
+            if sid not in durable_persisted and sid in durable_services and (report.get("services") or {}).get(sid, {}).get("status") not in {None, "PERSISTED"}:
+                binding = dict(binding)
+                binding["status"] = "retired"
+                bindings[sid] = binding
+                retired_services.append(str(sid))
 
     if registry.get("schema") != "popular_rules_collection_immutable_source_registry_v2":
         registry["schema"] = "popular_rules_collection_immutable_source_registry_v2"
@@ -170,7 +186,7 @@ def main() -> None:
         "changed": bool(changed_services or retired_services),
         "changed_services": changed_services,
         "retired_services": retired_services,
-        "services": list(SERVICES),
+        "services": sorted(durable_persisted),
     }, ensure_ascii=False, indent=2))
 
 
