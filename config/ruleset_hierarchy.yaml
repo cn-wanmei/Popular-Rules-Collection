@@ -117,6 +117,60 @@ providers:
       scholar:
         display_name: Google Scholar
         status: existing
+      google-calendar:
+        display_name: Google Calendar
+        status: existing
+      google-chat:
+        display_name: Google Chat
+        status: existing
+      google-contacts:
+        display_name: Google Contacts
+        status: existing
+      google-docs:
+        display_name: Google Docs
+        status: existing
+      google-forms:
+        display_name: Google Forms
+        status: existing
+      google-groups:
+        display_name: Google Groups
+        status: existing
+      google-meet:
+        display_name: Google Meet
+        status: existing
+      google-sheets:
+        display_name: Google Sheets
+        status: existing
+      google-sites:
+        display_name: Google Sites
+        status: existing
+      google-slides:
+        display_name: Google Slides
+        status: existing
+      google-vids:
+        display_name: Google Vids
+        status: existing
+      google-workspace-studio:
+        display_name: Google Workspace Studio
+        status: existing
+      google-maps:
+        display_name: Google Maps
+        status: existing
+      google-photos:
+        display_name: Google Photos
+        status: existing
+      google-play:
+        display_name: Google Play
+        status: existing
+      google-news:
+        display_name: Google News
+        status: existing
+      google-voice:
+        display_name: Google Voice
+        status: existing
+      google-earth:
+        display_name: Google Earth
+        status: existing
   microsoft:
     display_name: Microsoft
     aggregate: microsoft
@@ -159,6 +213,27 @@ providers:
         status: existing
       xbox:
         display_name: Xbox
+        status: existing
+      ms365-word:
+        display_name: Word
+        status: existing
+      ms365-excel:
+        display_name: Excel
+        status: existing
+      ms365-powerpoint:
+        display_name: PowerPoint
+        status: existing
+      ms365-onenote:
+        display_name: OneNote
+        status: existing
+      ms365-planner:
+        display_name: Planner
+        status: existing
+      ms365-loop:
+        display_name: Loop
+        status: existing
+      ms365-mesh:
+        display_name: Mesh
         status: existing
   amazon:
     display_name: Amazon
@@ -1301,6 +1376,69 @@ providers:
     services:
       zoom:
         display_name: Zoom
+        status: existing
+  lenovo:
+    display_name: Lenovo
+    aggregate: lenovo_aggregate
+    services:
+      lenovo:
+        display_name: Lenovo
+        status: existing
+  zte:
+    display_name: ZTE
+    aggregate: zte_aggregate
+    services:
+      zte:
+        display_name: ZTE
+        status: existing
+  byd:
+    display_name: BYD
+    aggregate: byd_aggregate
+    services:
+      byd:
+        display_name: BYD
+        status: existing
+  honor:
+    display_name: Honor
+    aggregate: honor_aggregate
+    services:
+      honor:
+        display_name: Honor
+        status: existing
+  qihoo360:
+    display_name: '360'
+    aggregate: qihoo360_aggregate
+    services:
+      qihoo360:
+        display_name: '360'
+        status: existing
+  nvidia:
+    display_name: NVIDIA
+    aggregate: nvidia_aggregate
+    services:
+      nvidia:
+        display_name: NVIDIA
+        status: existing
+  samsung:
+    display_name: Samsung
+    aggregate: samsung_aggregate
+    services:
+      samsung:
+        display_name: Samsung
+        status: existing
+  tesla:
+    display_name: Tesla
+    aggregate: tesla_aggregate
+    services:
+      tesla:
+        display_name: Tesla
+        status: existing
+  intel:
+    display_name: Intel
+    aggregate: intel_aggregate
+    services:
+      intel:
+        display_name: Intel
         status: existing
 categories:
   developer:
