@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: heytap
+display_name: HeyTap
+generated_from:
+  run_id: 20260927T090903515473Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: a4f16e0ef8857a27183331f869cfa98d4c3cc64ceba72105e47da39c310aed99
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: a1cd6ce54ad641942a4e2c57a282c7d5b4c136f164e18b63af0e308ff20e98e9
+  type: DOMAIN_SUFFIX
+  value: heytap.com
+- id: 74b50bf4a106c205e92d10f33d116e254e2579955457805cf81846de14d5c111
+  type: DOMAIN_SUFFIX
+  value: www.heytap.com
+provider: heytap

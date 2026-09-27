@@ -1,0 +1,24 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: zhipu_aggregate
+display_name: 智谱AI
+generated_from:
+  run_id: 20260927T090903515473Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: a4f16e0ef8857a27183331f869cfa98d4c3cc64ceba72105e47da39c310aed99
+stats:
+  total: 3
+  by_type:
+    DOMAIN_SUFFIX: 3
+rules:
+- id: 23b3e83600dc8ec77c67597f89c7791be7c3a99bb5bc236557cb23cf35e3f907
+  type: DOMAIN_SUFFIX
+  value: chatglm.cn
+- id: 3241381087a0b5244c19bc21bc118e648c4502e44618259c03239c96652acba6
+  type: DOMAIN_SUFFIX
+  value: www.zhipuai.cn
+- id: b069723111fe1484d7fb3a0d11e611f6ce8e50d2dcc0de86dbd55a1f97d47953
+  type: DOMAIN_SUFFIX
+  value: zhipuai.cn
+provider: zhipu

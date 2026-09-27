@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: arm_aggregate
+display_name: Arm
+generated_from:
+  run_id: 20260927T090903515473Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: a4f16e0ef8857a27183331f869cfa98d4c3cc64ceba72105e47da39c310aed99
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: d76ebff7560c1139e6ec72d7ace4b5415d782294d64fc862477ee71b5e307b13
+  type: DOMAIN_SUFFIX
+  value: arm.com
+- id: 852735c73a349c00ea90a0fe1b1d9db324d9857ee949d748c986e46c7eaa7e51
+  type: DOMAIN_SUFFIX
+  value: www.arm.com
+provider: arm

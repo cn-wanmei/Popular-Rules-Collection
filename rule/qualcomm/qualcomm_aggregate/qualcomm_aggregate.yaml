@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: qualcomm_aggregate
+display_name: Qualcomm
+generated_from:
+  run_id: 20260927T090903515473Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: a4f16e0ef8857a27183331f869cfa98d4c3cc64ceba72105e47da39c310aed99
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: f868105e990c13a4a633d10231a07e4c5d4f0e1a62fd8483e5bd985619f534da
+  type: DOMAIN_SUFFIX
+  value: qualcomm.com
+- id: 7e8b3f1ec3389654dfc49e53feed20ea36cbdc086f77c6a8d07eb6159114bd22
+  type: DOMAIN_SUFFIX
+  value: www.qualcomm.com
+provider: qualcomm

@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: xunlei
+display_name: 迅雷
+generated_from:
+  run_id: 20260927T090903515473Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: a4f16e0ef8857a27183331f869cfa98d4c3cc64ceba72105e47da39c310aed99
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 67b14f0a4895be64d2a6565ba738883e4df4761b030853a75f3823a2155d6c35
+  type: DOMAIN_SUFFIX
+  value: www.xunlei.com
+- id: 00a3c3297ab42394b28fdec170d405aee159088d4ec33d868bcdbd036d5a8a93
+  type: DOMAIN_SUFFIX
+  value: xunlei.com
+provider: xunlei

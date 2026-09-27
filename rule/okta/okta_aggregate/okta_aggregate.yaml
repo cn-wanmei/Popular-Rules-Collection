@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: okta_aggregate
+display_name: Okta
+generated_from:
+  run_id: 20260927T090903515473Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: a4f16e0ef8857a27183331f869cfa98d4c3cc64ceba72105e47da39c310aed99
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: a72166132165204080eec9070acbb204cf28074dbaa7893a4579f05bef2a0735
+  type: DOMAIN_SUFFIX
+  value: okta.com
+- id: 0422209f730221c63bd566ebe38a240b3e10abff8f2960e583537efefd6d2176
+  type: DOMAIN_SUFFIX
+  value: www.okta.com
+provider: okta

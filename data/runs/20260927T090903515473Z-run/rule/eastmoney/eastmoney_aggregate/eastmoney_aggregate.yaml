@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: eastmoney_aggregate
+display_name: 东方财富
+generated_from:
+  run_id: 20260927T090903515473Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: a4f16e0ef8857a27183331f869cfa98d4c3cc64ceba72105e47da39c310aed99
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 225b557052cc2576be64d3b2f8b1f61f1f438d908285866166646be127bd7b66
+  type: DOMAIN_SUFFIX
+  value: eastmoney.com
+- id: 7dd08c0e19015a98ae273d46ef302ca0e98cd3e708309ec528bc8f7c4eb44048
+  type: DOMAIN_SUFFIX
+  value: www.eastmoney.com
+provider: eastmoney

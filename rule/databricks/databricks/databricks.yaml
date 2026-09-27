@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: databricks
+display_name: Databricks
+generated_from:
+  run_id: 20260927T090903515473Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: a4f16e0ef8857a27183331f869cfa98d4c3cc64ceba72105e47da39c310aed99
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 612946f6f78601827aa105b98673cb2d3cb76e3523cedea619969d99daebf2a3
+  type: DOMAIN_SUFFIX
+  value: databricks.com
+- id: fb28ff9f48702fdb559375d9f5de896696da9b35b8cc2d73e79212a34ddcc729
+  type: DOMAIN_SUFFIX
+  value: www.databricks.com
+provider: databricks

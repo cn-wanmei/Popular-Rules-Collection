@@ -383,13 +383,13 @@
       "source": "database/provider/cloudflare6.txt"
     },
     {
-      "bytes": 386923,
+      "bytes": 386893,
       "file": "provider/aws.txt",
       "id": "provider-aws",
       "kind": "provider",
-      "lines": 11455,
+      "lines": 11454,
       "scope": "provider",
-      "sha256": "461d8bd3e67ab4f54e714de2ace16038404733fbe1ddbb756c3304b625e7befc",
+      "sha256": "7f1c41fbc32d407ab1a73c0f9660b00d369a55d8cf93ab2a89c1eb8c6ac54148",
       "source": "database/provider/aws.txt"
     },
     {
@@ -513,13 +513,13 @@
       "source": "database/ips/chinamobile.txt"
     },
     {
-      "bytes": 60062,
+      "bytes": 60079,
       "file": "ip/chinaunicom.txt",
       "id": "chinaunicom",
       "kind": "service_ip",
-      "lines": 3795,
+      "lines": 3796,
       "scope": "ip",
-      "sha256": "c544c23438126e53461adb0eb7ef856d9b440af556714fc871bc775c464de2dc",
+      "sha256": "85379931ef249b9dd64431758f71f3381607e1c64cac48ac18f41ea62cd87e54",
       "source": "database/ips/chinaunicom.txt"
     },
     {
@@ -803,7 +803,7 @@
       "source": "database/ips/zhihu.txt"
     }
   ],
-  "generated_at": "2026-09-27T07:22:11.410444+00:00",
+  "generated_at": "2026-09-27T09:15:33.600158+00:00",
   "missing_optional": [],
   "runtime_contract": "network_dataset_distribution_v2",
   "schema": "network_publication_v2",
@@ -815,5 +815,5 @@
     "provider_cidrs_are_not_service_ownership": true,
     "service_rules": "generated/<client>/..."
   },
-  "source_commit": "9a360527e0672360912bb7f23987b06e256d72b7"
+  "source_commit": "a648c09f51698e7d6081d27af91ba5f6a87a24a4"
 }

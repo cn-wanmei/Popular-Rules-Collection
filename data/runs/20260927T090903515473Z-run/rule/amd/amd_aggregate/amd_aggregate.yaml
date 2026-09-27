@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: amd_aggregate
+display_name: AMD
+generated_from:
+  run_id: 20260927T090903515473Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: a4f16e0ef8857a27183331f869cfa98d4c3cc64ceba72105e47da39c310aed99
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: fe771d85709c0308586338a6c87c9c2a34861e80f8215db687b1b58a15323bac
+  type: DOMAIN_SUFFIX
+  value: amd.com
+- id: e22a6b7ef49407826439e267d4ff042f391e41ea8ee1bed1fe469237bb73a012
+  type: DOMAIN_SUFFIX
+  value: www.amd.com
+provider: amd

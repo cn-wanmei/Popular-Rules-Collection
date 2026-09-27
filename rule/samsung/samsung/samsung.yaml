@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: samsung
+display_name: Samsung
+generated_from:
+  run_id: 20260927T090903515473Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: a4f16e0ef8857a27183331f869cfa98d4c3cc64ceba72105e47da39c310aed99
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 313119c9979ca461dabf30942ea062101c8696bdf62097433bc4bca69732ae49
+  type: DOMAIN_SUFFIX
+  value: samsung.com
+- id: 8c995d8a307893897db20b2a628b453ac27ce75f37e6cdbc0e6b9a4b5906ede2
+  type: DOMAIN_SUFFIX
+  value: www.samsung.com
+provider: samsung

@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: sap
+display_name: SAP
+generated_from:
+  run_id: 20260927T090903515473Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: a4f16e0ef8857a27183331f869cfa98d4c3cc64ceba72105e47da39c310aed99
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: c34bc36a6a824354d20a8eda611cacdb892747e4f62dccc82fe6901dfe531c96
+  type: DOMAIN_SUFFIX
+  value: sap.com
+- id: dc7cb6f08815c8af4dae2cca8d0767c1621c87cc124cedeea2cb29989fda20a2
+  type: DOMAIN_SUFFIX
+  value: www.sap.com
+provider: sap

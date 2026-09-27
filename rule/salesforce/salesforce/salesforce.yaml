@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: salesforce
+display_name: Salesforce
+generated_from:
+  run_id: 20260927T090903515473Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: a4f16e0ef8857a27183331f869cfa98d4c3cc64ceba72105e47da39c310aed99
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 9d5b3593ca9211a5a9bf7841edd25dd9f859f9b4706a28837714cf36c96a9491
+  type: DOMAIN_SUFFIX
+  value: salesforce.com
+- id: 72c03ede4562c73a9f501e190fa6b873e2b9a987607b224127849342f5bf6f86
+  type: DOMAIN_SUFFIX
+  value: www.salesforce.com
+provider: salesforce

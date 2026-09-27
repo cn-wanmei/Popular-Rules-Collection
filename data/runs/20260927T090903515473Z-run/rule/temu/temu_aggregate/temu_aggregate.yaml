@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: temu_aggregate
+display_name: Temu
+generated_from:
+  run_id: 20260927T090903515473Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: a4f16e0ef8857a27183331f869cfa98d4c3cc64ceba72105e47da39c310aed99
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 7d5d31f4622384126fb9235fb5d44e8e06ab2db28272312a0c34b13bec80507b
+  type: DOMAIN_SUFFIX
+  value: temu.com
+- id: e110e156cff0f98436e8e8183af365081abfb83892335681999fb1d558f3f20c
+  type: DOMAIN_SUFFIX
+  value: www.temu.com
+provider: temu

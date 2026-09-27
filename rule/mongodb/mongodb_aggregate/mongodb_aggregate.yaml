@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: mongodb_aggregate
+display_name: MongoDB
+generated_from:
+  run_id: 20260927T090903515473Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: a4f16e0ef8857a27183331f869cfa98d4c3cc64ceba72105e47da39c310aed99
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 017642a0985ce00975df8c2c1493eab4ba57799784bb66a842dd5c911d33fd45
+  type: DOMAIN_SUFFIX
+  value: mongodb.com
+- id: 893af0d0fe0c885dd82cd126719f255ad9b1a3ef23429e6e0d5bb0c3f5c4534b
+  type: DOMAIN_SUFFIX
+  value: www.mongodb.com
+provider: mongodb

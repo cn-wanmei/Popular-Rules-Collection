@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: yonyou
+display_name: 用友
+generated_from:
+  run_id: 20260927T090903515473Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: a4f16e0ef8857a27183331f869cfa98d4c3cc64ceba72105e47da39c310aed99
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: d99b028bd782e7c976e5ab39db3b76915c09f0d6f6b7bf8a0b745dc84ce638be
+  type: DOMAIN_SUFFIX
+  value: www.yonyou.com
+- id: e57919c160b5a60f756d7ff5a28998097709bc50eb6ffde3dfee8da476131a35
+  type: DOMAIN_SUFFIX
+  value: yonyou.com
+provider: yonyou

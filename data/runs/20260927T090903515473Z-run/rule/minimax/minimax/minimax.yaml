@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: minimax
+display_name: MiniMax
+generated_from:
+  run_id: 20260927T090903515473Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: a4f16e0ef8857a27183331f869cfa98d4c3cc64ceba72105e47da39c310aed99
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 20209cfb41c5fc874942f7b00159257960f72a608807eb5d57c5e5a3ff221866
+  type: DOMAIN_SUFFIX
+  value: minimaxi.com
+- id: 5327bc4073312b1fd169e6637a3f3ae9f83f98c151f9d324bba5d451d90fbf6e
+  type: DOMAIN_SUFFIX
+  value: www.minimaxi.com
+provider: minimax

@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: cisco
+display_name: Cisco
+generated_from:
+  run_id: 20260927T090903515473Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: a4f16e0ef8857a27183331f869cfa98d4c3cc64ceba72105e47da39c310aed99
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: c54ec7cea51d29005ff3b26687c58619c8b7e3a646ba9e09de80d3ffc49df37c
+  type: DOMAIN_SUFFIX
+  value: cisco.com
+- id: 70dcbe9eba79ded63c11922eb624335006ddad99110504164e43f66d390f9b7a
+  type: DOMAIN_SUFFIX
+  value: www.cisco.com
+provider: cisco

@@ -1,0 +1,24 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: nvidia
+display_name: NVIDIA
+generated_from:
+  run_id: 20260927T090903515473Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: a4f16e0ef8857a27183331f869cfa98d4c3cc64ceba72105e47da39c310aed99
+stats:
+  total: 3
+  by_type:
+    DOMAIN_SUFFIX: 3
+rules:
+- id: dd92986cbbd666af064d47fb5b6df4505de1b49644ebe0c2e3630e96261b6c22
+  type: DOMAIN_SUFFIX
+  value: developer.nvidia.com
+- id: ea7094fbd6f3770b60c4655b92c15cb7efd481f40290f8626de868f96df8f6eb
+  type: DOMAIN_SUFFIX
+  value: nvidia.com
+- id: b95a5673c7d3edb8201e57a0ddbc2eee74a27be30a3300aa342d9a80e47742e8
+  type: DOMAIN_SUFFIX
+  value: www.nvidia.com
+provider: nvidia

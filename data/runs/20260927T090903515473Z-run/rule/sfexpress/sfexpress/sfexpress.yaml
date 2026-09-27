@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: sfexpress
+display_name: 顺丰
+generated_from:
+  run_id: 20260927T090903515473Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: a4f16e0ef8857a27183331f869cfa98d4c3cc64ceba72105e47da39c310aed99
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: ce671a9929e9db0f8e310ce1f431ef2daf2165c28482d8ef122a29518371ad4b
+  type: DOMAIN_SUFFIX
+  value: sf-express.com
+- id: ed1ad8e7f0c4d70624f72bcbb27b366f8682e4ccc18a62ed1f8d5a3509959a2e
+  type: DOMAIN_SUFFIX
+  value: www.sf-express.com
+provider: sfexpress
