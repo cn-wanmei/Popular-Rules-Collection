@@ -240,14 +240,14 @@
       "name": "Clash_AppleMedia.list",
       "path": "rule/Clash/AppleMedia/AppleMedia.list",
       "service": "applemedia",
-      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleMedia/AppleMedia.list",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/generated/source/applemedia/domains.txt",
       "status_code": null,
       "etag": null,
       "last_modified": null,
       "decision": "FETCH_INITIAL",
       "reason": "no_successful_snapshot",
       "status": "failed",
-      "error": "immutable source binding for applemedia is not active"
+      "error": "immutable release missing: HTTP 404 releases/applemedia/snap-applemedia-5042d174723b9a5737d6f038/release.json"
     },
     {
       "name": "Clash_AppleMusic.yaml",
