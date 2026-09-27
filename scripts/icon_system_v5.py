@@ -1221,7 +1221,19 @@ def cmd_gate(args: argparse.Namespace) -> int:
         expected = {r["service_id"] for r in discover_services_from_rule_index(Path(args.rule_index))}
         actual = set(ids)
         if expected != actual:
-            errors.append(f"coverage mismatch missing={sorted(expected - actual)[:20]} extra={sorted(actual - expected)[:20]}")
+            missing = sorted(expected - actual)
+            extra = sorted(actual - expected)
+            # Rule tree growth can outpace icon coverage. Allow gap as warning so
+            # Publish of rules is not blocked while Icon V5 backfill continues.
+            if missing:
+                msg = f"coverage gap missing icons for {len(missing)} services: {missing[:20]}"
+                if getattr(args, "allow_coverage_gap", False):
+                    warnings.append(msg)
+                else:
+                    errors.append(f"coverage mismatch missing={missing[:20]} extra={extra[:20]}")
+            if extra:
+                # Orphan icons in registry are still hard errors (stale identity risk)
+                errors.append(f"coverage mismatch extra icons not in rule index: {extra[:20]}")
     core = set(qcfg.get("core_services_fail_low_res") or [])
     for e in entries:
         sid = e.get("service_id")
@@ -1286,6 +1298,11 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--registry", required=True)
     p.add_argument("--rule-index")
     p.add_argument("--strict", action="store_true")
+    p.add_argument(
+        "--allow-coverage-gap",
+        action="store_true",
+        help="Warn (do not fail) when rule index has services without icon registry entries",
+    )
     p.set_defaults(func=cmd_gate)
     return ap
 
