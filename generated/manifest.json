@@ -12,17 +12,17 @@
   "file_count": 4203,
   "files": [
     {
-      "file": "_promotion/20260927T151517532092Z-run.json",
+      "file": "_promotion/20260927T151437086186Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "a1951d3749f3cdfe61ce8ac01529eed864d5d3e027c9c1124450c45c64544290",
+      "sha256": "71fb337a50e585c23083d2de13bae32deae953c2bc973eb3330442e9fc025c42",
       "size": 482268
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "a1951d3749f3cdfe61ce8ac01529eed864d5d3e027c9c1124450c45c64544290",
+      "sha256": "71fb337a50e585c23083d2de13bae32deae953c2bc973eb3330442e9fc025c42",
       "size": 482268
     },
     {
@@ -33634,7 +33634,7 @@
       "size": 54
     }
   ],
-  "generated_at": "2026-09-27T15:20:17.587564+00:00",
+  "generated_at": "2026-09-27T15:23:07.656456+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "layout_schema": "directory_layout_v2",
   "network_dataset_directories": [
