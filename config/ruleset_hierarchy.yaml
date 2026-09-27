@@ -542,7 +542,7 @@ providers:
         status: existing
   cloudflare:
     display_name: Cloudflare
-    aggregate: cloudflare
+    aggregate: cloudflare_aggregate
     services:
       workers:
         display_name: Cloudflare Workers
@@ -1549,13 +1549,7 @@ providers:
   ai:
     display_name: AI
     aggregate: ai_aggregate
-    services:
-      groq:
-        display_name: Groq
-        status: existing
-      huggingface:
-        display_name: Hugging Face
-        status: existing
+    services: {}
 categories:
   developer:
     display_name: Developer Ecosystem
