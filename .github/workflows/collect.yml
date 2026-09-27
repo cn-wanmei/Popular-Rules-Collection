@@ -19,7 +19,9 @@ on:
         default: false
 
 concurrency:
-  group: collect-main
+  # Serialize all Collect runs that write generated snapshot paths on main.
+  # cancel-in-progress must stay false so an in-flight DAG is never interrupted mid-commit.
+  group: upstream-collection-main
   cancel-in-progress: false
 
 jobs:
@@ -127,15 +129,22 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add -A "backup/${DAY}/" database/ data/collection/ sources/health.yaml reports/
+          COLLECT_PATHS=("backup/${DAY}/" database/ data/collection/ sources/health.yaml reports/)
+
+          stage_collection() {
+            git add -A "${COLLECT_PATHS[@]}"
+          }
+
+          stage_collection
           if git diff --staged --quiet; then
             echo "No collection changes."
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git commit -m "chore(collect): snapshot ${DAY}"
+          SNAPSHOT_COMMIT="$(git rev-parse HEAD)"
 
-          git add -A "backup/${DAY}/" database/ data/collection/ sources/health.yaml reports/
+          stage_collection
           if [ -n "$(git status --porcelain=v1)" ]; then
             echo "Collection workspace is dirty after commit. Residual changes:"
             git status --short
@@ -144,19 +153,39 @@ jobs:
             exit 1
           fi
 
-          for attempt in 1 2 3; do
+          # Generated collection artifacts are not hand-merged.
+          # On concurrent main movement: abort rebase, re-apply THIS snapshot onto origin/main, retry push.
+          for attempt in 1 2 3 4 5; do
+            echo "Publish attempt ${attempt} (snapshot ${SNAPSHOT_COMMIT})..."
             git fetch --prune origin main
-            if ! git rebase --autostash origin/main; then
+
+            if git rebase --autostash origin/main; then
+              if git push origin HEAD:main; then
+                echo "Published collection snapshot on attempt ${attempt}."
+                echo "changed=true" >> "$GITHUB_OUTPUT"
+                exit 0
+              fi
+              echo "Push rejected on attempt ${attempt}; retrying with regenerated commit on origin/main."
+            else
+              echo "Rebase conflict on attempt ${attempt}; aborting and re-applying generated snapshot onto origin/main."
               git rebase --abort || true
-              exit 1
             fi
-            if git push origin HEAD:main; then
-              echo "Published collection snapshot on attempt ${attempt}."
-              echo "changed=true" >> "$GITHUB_OUTPUT"
+
+            # Reset to latest main and re-apply only the generated collection paths from our snapshot.
+            git reset --hard origin/main
+            git checkout "${SNAPSHOT_COMMIT}" -- "${COLLECT_PATHS[@]}" || true
+            stage_collection
+            if git diff --staged --quiet; then
+              echo "Snapshot content already present on origin/main; treating as published."
+              echo "changed=false" >> "$GITHUB_OUTPUT"
               exit 0
             fi
-            sleep $((attempt * 3))
+            git commit -m "chore(collect): snapshot ${DAY} (retry ${attempt})"
+            SNAPSHOT_COMMIT="$(git rev-parse HEAD)"
+            sleep $((attempt * 4))
           done
+
+          echo "Failed to publish collection snapshot after retries."
           exit 1
 
       - name: Trigger Build Client Rules
