@@ -1524,6 +1524,111 @@ sources:
     service: getapps
     local: PRS_getapps.domains.txt
     enabled: false
+  - path: generated/source/37games/domains.txt
+    name: 37games
+    service: 37games
+    local: PRS_37games.domains.txt
+    enabled: true
+  - path: generated/source/aliexpress/domains.txt
+    name: aliexpress
+    service: aliexpress
+    local: PRS_aliexpress.domains.txt
+    enabled: true
+  - path: generated/source/alipay/domains.txt
+    name: alipay
+    service: alipay
+    local: PRS_alipay.domains.txt
+    enabled: true
+  - path: generated/source/amap/domains.txt
+    name: amap
+    service: amap
+    local: PRS_amap.domains.txt
+    enabled: true
+  - path: generated/source/arista/domains.txt
+    name: arista
+    service: arista
+    local: PRS_arista.domains.txt
+    enabled: true
+  - path: generated/source/boss/domains.txt
+    name: boss
+    service: boss
+    local: PRS_boss.domains.txt
+    enabled: true
+  - path: generated/source/eleme/domains.txt
+    name: eleme
+    service: eleme
+    local: PRS_eleme.domains.txt
+    enabled: true
+  - path: generated/source/fliggy/domains.txt
+    name: fliggy
+    service: fliggy
+    local: PRS_fliggy.domains.txt
+    enabled: true
+  - path: generated/source/jianying/domains.txt
+    name: jianying
+    service: jianying
+    local: PRS_jianying.domains.txt
+    enabled: true
+  - path: generated/source/lazada/domains.txt
+    name: lazada
+    service: lazada
+    local: PRS_lazada.domains.txt
+    enabled: true
+  - path: generated/source/linkedin/domains.txt
+    name: linkedin
+    service: linkedin
+    local: PRS_linkedin.domains.txt
+    enabled: true
+  - path: generated/source/powerbi/domains.txt
+    name: powerbi
+    service: powerbi
+    local: PRS_powerbi.domains.txt
+    enabled: true
+  - path: generated/source/qqbrowser/domains.txt
+    name: qqbrowser
+    service: qqbrowser
+    local: PRS_qqbrowser.domains.txt
+    enabled: true
+  - path: generated/source/sharepoint/domains.txt
+    name: sharepoint
+    service: sharepoint
+    local: PRS_sharepoint.domains.txt
+    enabled: true
+  - path: generated/source/shiji/domains.txt
+    name: shiji
+    service: shiji
+    local: PRS_shiji.domains.txt
+    enabled: true
+  - path: generated/source/supermicro/domains.txt
+    name: supermicro
+    service: supermicro
+    local: PRS_supermicro.domains.txt
+    enabled: true
+  - path: generated/source/tencentdocs/domains.txt
+    name: tencentdocs
+    service: tencentdocs
+    local: PRS_tencentdocs.domains.txt
+    enabled: true
+  - path: generated/source/wanmei/domains.txt
+    name: wanmei
+    service: wanmei
+    local: PRS_wanmei.domains.txt
+    enabled: true
+  - path: generated/source/wetv/domains.txt
+    name: wetv
+    service: wetv
+    local: PRS_wetv.domains.txt
+    enabled: true
+  - path: generated/source/xianyu/domains.txt
+    name: xianyu
+    service: xianyu
+    local: PRS_xianyu.domains.txt
+    enabled: true
+  - path: generated/source/youku/domains.txt
+    name: youku
+    service: youku
+    local: PRS_youku.domains.txt
+    enabled: true
 - id: blackmatrix7
   name: BlackMatrix7 ios_rule_script
   url: https://github.com/blackmatrix7/ios_rule_script
