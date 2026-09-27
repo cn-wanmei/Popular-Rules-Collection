@@ -521,6 +521,9 @@ providers:
       trello:
         display_name: Trello
         status: planned
+      atlassian:
+        display_name: Atlassian
+        status: existing
   meta:
     display_name: Meta
     aggregate: meta
@@ -1547,6 +1550,482 @@ providers:
     display_name: AI
     aggregate: ai_aggregate
     services: {}
+  temu:
+    display_name: Temu
+    aggregate: temu_aggregate
+    services:
+      temu:
+        display_name: Temu
+        status: existing
+  heytap:
+    display_name: HeyTap
+    aggregate: heytap_aggregate
+    services:
+      heytap:
+        display_name: HeyTap
+        status: existing
+  migu:
+    display_name: 咪咕
+    aggregate: migu_aggregate
+    services:
+      migu:
+        display_name: 咪咕
+        status: existing
+  ctyun:
+    display_name: 天翼云
+    aggregate: ctyun_aggregate
+    services:
+      ctyun:
+        display_name: 天翼云
+        status: existing
+  woyun:
+    display_name: 联通云
+    aggregate: woyun_aggregate
+    services:
+      woyun:
+        display_name: 联通云
+        status: existing
+  sfexpress:
+    display_name: 顺丰
+    aggregate: sfexpress_aggregate
+    services:
+      sfexpress:
+        display_name: 顺丰
+        status: existing
+  beike:
+    display_name: 贝壳
+    aggregate: beike_aggregate
+    services:
+      beike:
+        display_name: 贝壳
+        status: existing
+  vipshop:
+    display_name: 唯品会
+    aggregate: vipshop_aggregate
+    services:
+      vipshop:
+        display_name: 唯品会
+        status: existing
+  kingdee:
+    display_name: 金蝶
+    aggregate: kingdee_aggregate
+    services:
+      kingdee:
+        display_name: 金蝶
+        status: existing
+  yonyou:
+    display_name: 用友
+    aggregate: yonyou_aggregate
+    services:
+      yonyou:
+        display_name: 用友
+        status: existing
+  sangfor:
+    display_name: 深信服
+    aggregate: sangfor_aggregate
+    services:
+      sangfor:
+        display_name: 深信服
+        status: existing
+  haier:
+    display_name: 海尔智家
+    aggregate: haier_aggregate
+    services:
+      haier:
+        display_name: 海尔智家
+        status: existing
+  wangsu:
+    display_name: 网宿科技
+    aggregate: wangsu_aggregate
+    services:
+      wangsu:
+        display_name: 网宿科技
+        status: existing
+  perfectworld:
+    display_name: 完美世界
+    aggregate: perfectworld_aggregate
+    services:
+      perfectworld:
+        display_name: 完美世界
+        status: existing
+  tonghuashun:
+    display_name: 同花顺
+    aggregate: tonghuashun_aggregate
+    services:
+      tonghuashun:
+        display_name: 同花顺
+        status: existing
+  huolala:
+    display_name: 货拉拉
+    aggregate: huolala_aggregate
+    services:
+      huolala:
+        display_name: 货拉拉
+        status: existing
+  manbang:
+    display_name: 满帮
+    aggregate: manbang_aggregate
+    services:
+      manbang:
+        display_name: 满帮
+        status: existing
+  zhaopin:
+    display_name: 智联招聘
+    aggregate: zhaopin_aggregate
+    services:
+      zhaopin:
+        display_name: 智联招聘
+        status: existing
+  wuba:
+    display_name: 58同城
+    aggregate: wuba_aggregate
+    services:
+      wuba:
+        display_name: 58同城
+        status: existing
+  anjuke:
+    display_name: 安居客
+    aggregate: anjuke_aggregate
+    services:
+      anjuke:
+        display_name: 安居客
+        status: existing
+  hellobike:
+    display_name: 哈啰
+    aggregate: hellobike_aggregate
+    services:
+      hellobike:
+        display_name: 哈啰
+        status: existing
+  caocao:
+    display_name: 曹操出行
+    aggregate: caocao_aggregate
+    services:
+      caocao:
+        display_name: 曹操出行
+        status: existing
+  t3go:
+    display_name: T3出行
+    aggregate: t3go_aggregate
+    services:
+      t3go:
+        display_name: T3出行
+        status: existing
+  sensetime:
+    display_name: 商汤科技
+    aggregate: sensetime_aggregate
+    services:
+      sensetime:
+        display_name: 商汤科技
+        status: existing
+  zhipu:
+    display_name: 智谱AI
+    aggregate: zhipu_aggregate
+    services:
+      zhipu:
+        display_name: 智谱AI
+        status: existing
+  moonshot:
+    display_name: 月之暗面
+    aggregate: moonshot_aggregate
+    services:
+      moonshot:
+        display_name: 月之暗面
+        status: existing
+  minimax:
+    display_name: MiniMax
+    aggregate: minimax_aggregate
+    services:
+      minimax:
+        display_name: MiniMax
+        status: existing
+  baichuan:
+    display_name: 百川智能
+    aggregate: baichuan_aggregate
+    services:
+      baichuan:
+        display_name: 百川智能
+        status: existing
+  yi:
+    display_name: 零一万物
+    aggregate: yi_aggregate
+    services:
+      yi:
+        display_name: 零一万物
+        status: existing
+  cambricon:
+    display_name: 寒武纪
+    aggregate: cambricon_aggregate
+    services:
+      cambricon:
+        display_name: 寒武纪
+        status: existing
+  hikvision:
+    display_name: 海康威视
+    aggregate: hikvision_aggregate
+    services:
+      hikvision:
+        display_name: 海康威视
+        status: existing
+  dahua:
+    display_name: 大华股份
+    aggregate: dahua_aggregate
+    services:
+      dahua:
+        display_name: 大华股份
+        status: existing
+  dji:
+    display_name: 大疆
+    aggregate: dji_aggregate
+    services:
+      dji:
+        display_name: 大疆
+        status: existing
+  tuya:
+    display_name: 涂鸦智能
+    aggregate: tuya_aggregate
+    services:
+      tuya:
+        display_name: 涂鸦智能
+        status: existing
+  anker:
+    display_name: 安克创新
+    aggregate: anker_aggregate
+    services:
+      anker:
+        display_name: 安克创新
+        status: existing
+  sap:
+    display_name: SAP
+    aggregate: sap_aggregate
+    services:
+      sap:
+        display_name: SAP
+        status: existing
+  sony:
+    display_name: Sony
+    aggregate: sony_aggregate
+    services:
+      sony:
+        display_name: Sony
+        status: existing
+  qualcomm:
+    display_name: Qualcomm
+    aggregate: qualcomm_aggregate
+    services:
+      qualcomm:
+        display_name: Qualcomm
+        status: existing
+  arm:
+    display_name: Arm
+    aggregate: arm_aggregate
+    services:
+      arm:
+        display_name: Arm
+        status: existing
+  tsmc:
+    display_name: TSMC
+    aggregate: tsmc_aggregate
+    services:
+      tsmc:
+        display_name: TSMC
+        status: existing
+  servicenow:
+    display_name: ServiceNow
+    aggregate: servicenow_aggregate
+    services:
+      servicenow:
+        display_name: ServiceNow
+        status: existing
+  databricks:
+    display_name: Databricks
+    aggregate: databricks_aggregate
+    services:
+      databricks:
+        display_name: Databricks
+        status: existing
+  snowflake:
+    display_name: Snowflake
+    aggregate: snowflake_aggregate
+    services:
+      snowflake:
+        display_name: Snowflake
+        status: existing
+  workday:
+    display_name: Workday
+    aggregate: workday_aggregate
+    services:
+      workday:
+        display_name: Workday
+        status: existing
+  palantir:
+    display_name: Palantir
+    aggregate: palantir_aggregate
+    services:
+      palantir:
+        display_name: Palantir
+        status: existing
+  spacex:
+    display_name: SpaceX
+    aggregate: spacex_aggregate
+    services:
+      spacex:
+        display_name: SpaceX
+        status: existing
+  starlink:
+    display_name: Starlink
+    aggregate: starlink_aggregate
+    services:
+      starlink:
+        display_name: Starlink
+        status: existing
+  intuit:
+    display_name: Intuit
+    aggregate: intuit_aggregate
+    services:
+      intuit:
+        display_name: Intuit
+        status: existing
+  mediatek:
+    display_name: MediaTek
+    aggregate: mediatek_aggregate
+    services:
+      mediatek:
+        display_name: MediaTek
+        status: existing
+  lg:
+    display_name: LG
+    aggregate: lg_aggregate
+    services:
+      lg:
+        display_name: LG
+        status: existing
+  panasonic:
+    display_name: Panasonic
+    aggregate: panasonic_aggregate
+    services:
+      panasonic:
+        display_name: Panasonic
+        status: existing
+  rakuten:
+    display_name: Rakuten
+    aggregate: rakuten_aggregate
+    services:
+      rakuten:
+        display_name: Rakuten
+        status: existing
+  linecorp:
+    display_name: LINE
+    aggregate: linecorp_aggregate
+    services:
+      linecorp:
+        display_name: LINE
+        status: existing
+  grab:
+    display_name: Grab
+    aggregate: grab_aggregate
+    services:
+      grab:
+        display_name: Grab
+        status: existing
+  shopee:
+    display_name: Shopee
+    aggregate: shopee_aggregate
+    services:
+      shopee:
+        display_name: Shopee
+        status: existing
+  coupang:
+    display_name: Coupang
+    aggregate: coupang_aggregate
+    services:
+      coupang:
+        display_name: Coupang
+        status: existing
+  kakao:
+    display_name: Kakao
+    aggregate: kakao_aggregate
+    services:
+      kakao:
+        display_name: Kakao
+        status: existing
+  ericsson:
+    display_name: Ericsson
+    aggregate: ericsson_aggregate
+    services:
+      ericsson:
+        display_name: Ericsson
+        status: existing
+  nokia:
+    display_name: Nokia
+    aggregate: nokia_aggregate
+    services:
+      nokia:
+        display_name: Nokia
+        status: existing
+  crowdstrike:
+    display_name: CrowdStrike
+    aggregate: crowdstrike_aggregate
+    services:
+      crowdstrike:
+        display_name: CrowdStrike
+        status: existing
+  fortinet:
+    display_name: Fortinet
+    aggregate: fortinet_aggregate
+    services:
+      fortinet:
+        display_name: Fortinet
+        status: existing
+  okta:
+    display_name: Okta
+    aggregate: okta_aggregate
+    services:
+      okta:
+        display_name: Okta
+        status: existing
+  hubspot:
+    display_name: HubSpot
+    aggregate: hubspot_aggregate
+    services:
+      hubspot:
+        display_name: HubSpot
+        status: existing
+  twilio:
+    display_name: Twilio
+    aggregate: twilio_aggregate
+    services:
+      twilio:
+        display_name: Twilio
+        status: existing
+  autodesk:
+    display_name: Autodesk
+    aggregate: autodesk_aggregate
+    services:
+      autodesk:
+        display_name: Autodesk
+        status: existing
+  unity:
+    display_name: Unity
+    aggregate: unity_aggregate
+    services:
+      unity:
+        display_name: Unity
+        status: existing
+  coinbase:
+    display_name: Coinbase
+    aggregate: coinbase_aggregate
+    services:
+      coinbase:
+        display_name: Coinbase
+        status: existing
+  epicgames:
+    display_name: Epic Games
+    aggregate: epicgames_aggregate
+    services:
+      epicgames:
+        display_name: Epic Games
+        status: existing
 categories:
   developer:
     display_name: Developer Ecosystem

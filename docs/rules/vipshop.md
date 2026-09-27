@@ -1,10 +1,10 @@
-# Nintendo
+# 唯品会
 
 > Current V3 service documentation.
 
 | 项目 | 内容 |
 |------|------|
-| Rule ID | `nintendo` |
+| Rule ID | `vipshop` |
 | Service Type | service |
 | Release Date | 2026-09-27 |
 | Status | official seed candidate |
