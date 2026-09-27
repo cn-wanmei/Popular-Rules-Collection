@@ -1,6 +1,6 @@
 # Apple Books
 
-> Current V3 service documentation. 本页记录当前 Service SSOT 身份，不等同于 Production 发布资格。
+> Current V3 service documentation. Subscription paths are derived from `generated/manifest.json`.
 
 | 项目 | 内容 |
 |------|------|
@@ -8,12 +8,12 @@
 | Primary Ecosystem | `apple` |
 | Service Type | service |
 | Parent Aggregate | `apple` |
+| Release Date | 2026-09-27 |
 | Dedicated client outputs | 0 / 7 |
-| Current State | candidate / review-required |
 
 ## 当前生产订阅路径
 
-当前尚未在 generated/manifest.json 中物化独立生产客户端产物。
+当前 Release Candidate 未物化该服务独立客户端产物；不得根据历史页面或旧目录猜测订阅地址。
 
 ## 当前真源边界
 
@@ -22,17 +22,11 @@
 - 最终发行：`generated/`
 - `rule/`：V1 历史浏览/迁移树
 - `rules/`：V3 目录契约
-- Legacy evidence：`database/services/`，不是 V3 Runtime 真源
+- `database/services/`：Legacy evidence，不是 V3 Runtime 真源
 
-## Service Completion 状态
+## 目录契约
 
-- Source 证据：已登记，等待当前 Source evidence gate
-- Source immutable release：PENDING
-- Collection exact binding：PENDING
-- Semantic / overlap audit：PENDING
-- Seven-client：PENDING
-- Golden：PENDING
-- Canary：PENDING
-- Production：PENDING
+当前客户端目录只能使用 `mihomo`、`singbox`、`surge`、`shadowrocket`、`quantumultx`、`egern`、`loon`。历史 `sing-box` / `quantumult-x` 名称不属于当前目录契约。
 
-> Candidate / Source release 不等于 Production；生产资格必须由 immutable provenance 与现有硬门决定。
+---
+_页面日期来源：2026-09-27。生产路径来源：generated/manifest.json。_
