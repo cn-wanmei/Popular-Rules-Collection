@@ -2754,3 +2754,25 @@ services:
     - google
     service_type: service
     parent: google
+  baidu-zhidao:
+    primary_category: baidu
+    display_name: 百度知道
+    categories:
+    - baidu
+    - china
+    service_type: service
+    parent: baidu
+  huawei-appgallery:
+    primary_category: china
+    display_name: 华为应用市场
+    categories:
+    - china
+    service_type: service
+    parent: huawei
+  kuaishou-open:
+    primary_category: china
+    display_name: 快手开放平台
+    categories:
+    - china
+    service_type: service
+    parent: kuaishou
