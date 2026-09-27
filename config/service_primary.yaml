@@ -1161,7 +1161,6 @@ services:
     display_name: Apple Podcasts
     categories:
     - apple
-    - streaming
     service_type: service
     parent: apple
   audible:
@@ -1604,3 +1603,178 @@ services:
     categories:
     - developer
     service_type: service
+  google-calendar:
+    primary_category: google
+    display_name: Google Calendar
+    categories:
+    - google
+    service_type: service
+    parent: google
+  google-chat:
+    primary_category: google
+    display_name: Google Chat
+    categories:
+    - google
+    service_type: service
+    parent: google
+  google-contacts:
+    primary_category: google
+    display_name: Google Contacts
+    categories:
+    - google
+    service_type: service
+    parent: google
+  google-docs:
+    primary_category: google
+    display_name: Google Docs
+    categories:
+    - google
+    service_type: service
+    parent: google
+  google-forms:
+    primary_category: google
+    display_name: Google Forms
+    categories:
+    - google
+    service_type: service
+    parent: google
+  google-groups:
+    primary_category: google
+    display_name: Google Groups
+    categories:
+    - google
+    service_type: service
+    parent: google
+  google-meet:
+    primary_category: google
+    display_name: Google Meet
+    categories:
+    - google
+    service_type: service
+    parent: google
+  google-sheets:
+    primary_category: google
+    display_name: Google Sheets
+    categories:
+    - google
+    service_type: service
+    parent: google
+  google-sites:
+    primary_category: google
+    display_name: Google Sites
+    categories:
+    - google
+    service_type: service
+    parent: google
+  google-slides:
+    primary_category: google
+    display_name: Google Slides
+    categories:
+    - google
+    service_type: service
+    parent: google
+  google-vids:
+    primary_category: google
+    display_name: Google Vids
+    categories:
+    - google
+    service_type: service
+    parent: google
+  google-workspace-studio:
+    primary_category: google
+    display_name: Google Workspace Studio
+    categories:
+    - google
+    service_type: service
+    parent: google
+  google-maps:
+    primary_category: google
+    display_name: Google Maps
+    categories:
+    - google
+    service_type: service
+    parent: google
+  google-photos:
+    primary_category: google
+    display_name: Google Photos
+    categories:
+    - google
+    service_type: service
+    parent: google
+  google-play:
+    primary_category: google
+    display_name: Google Play
+    categories:
+    - google
+    service_type: service
+    parent: google
+  google-news:
+    primary_category: google
+    display_name: Google News
+    categories:
+    - google
+    service_type: service
+    parent: google
+  google-voice:
+    primary_category: google
+    display_name: Google Voice
+    categories:
+    - google
+    service_type: service
+    parent: google
+  google-earth:
+    primary_category: google
+    display_name: Google Earth
+    categories:
+    - google
+    service_type: service
+    parent: google
+  ms365-word:
+    primary_category: microsoft
+    display_name: Microsoft Word
+    categories:
+    - microsoft
+    service_type: service
+    parent: microsoft
+  ms365-excel:
+    primary_category: microsoft
+    display_name: Microsoft Excel
+    categories:
+    - microsoft
+    service_type: service
+    parent: microsoft
+  ms365-powerpoint:
+    primary_category: microsoft
+    display_name: Microsoft PowerPoint
+    categories:
+    - microsoft
+    service_type: service
+    parent: microsoft
+  ms365-onenote:
+    primary_category: microsoft
+    display_name: Microsoft OneNote
+    categories:
+    - microsoft
+    service_type: service
+    parent: microsoft
+  ms365-planner:
+    primary_category: microsoft
+    display_name: Microsoft Planner
+    categories:
+    - microsoft
+    service_type: service
+    parent: microsoft
+  ms365-loop:
+    primary_category: microsoft
+    display_name: Microsoft Loop
+    categories:
+    - microsoft
+    service_type: service
+    parent: microsoft
+  ms365-mesh:
+    primary_category: microsoft
+    display_name: Microsoft Mesh
+    categories:
+    - microsoft
+    service_type: service
+    parent: microsoft
