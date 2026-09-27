@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: haier_aggregate
+display_name: 海尔智家
+generated_from:
+  run_id: 20260927T110031070233Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 92779926d6b74fcd6572a7d93c91e31db4f9887a5e4ae5995607cc638242a592
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 7ea10052fdf05decc8da12b82439ceb4492cde89a8732d9cb464ca48c90978f2
+  type: DOMAIN_SUFFIX
+  value: haier.com
+- id: 3aa3666d2d7b3fda2506d8a90c231b70fd56e72a09bdc84c5b7a798f774a3f69
+  type: DOMAIN_SUFFIX
+  value: www.haier.com
+provider: haier

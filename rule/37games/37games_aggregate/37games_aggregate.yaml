@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: 37games_aggregate
+display_name: 三七互娱
+generated_from:
+  run_id: 20260927T110031070233Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 92779926d6b74fcd6572a7d93c91e31db4f9887a5e4ae5995607cc638242a592
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: a08a6887ef126fcc1a73b79a36398b07fc08a563677f8fee2a8972bcd9a3ece4
+  type: DOMAIN_SUFFIX
+  value: 37.com
+- id: 03edcbcf5d436f7009a9ff205e26c12e15aea2745797cac8386a3e74696720d0
+  type: DOMAIN_SUFFIX
+  value: www.37.com
+provider: 37games

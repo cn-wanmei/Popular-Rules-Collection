@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: sangfor_aggregate
+display_name: 深信服
+generated_from:
+  run_id: 20260927T110031070233Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 92779926d6b74fcd6572a7d93c91e31db4f9887a5e4ae5995607cc638242a592
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: c6c6336b11cb1db20d7f613acbe2a5009df2f31af6fcbcd7c4be0d1d1d9e17d5
+  type: DOMAIN_SUFFIX
+  value: sangfor.com.cn
+- id: 23f866157e137922766cd075dcbccd462809d726a664526e2470b7c96d53c008
+  type: DOMAIN_SUFFIX
+  value: www.sangfor.com.cn
+provider: sangfor

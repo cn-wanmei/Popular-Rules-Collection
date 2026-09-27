@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: lark
+display_name: Lark
+generated_from:
+  run_id: 20260927T110031070233Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 92779926d6b74fcd6572a7d93c91e31db4f9887a5e4ae5995607cc638242a592
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 96c976ade10b18a838e7595beabfe04a6cc73cf52ab6d5bd73ad13c14c32a33a
+  type: DOMAIN_SUFFIX
+  value: larksuite.com
+- id: aea8a73860f9f8d029b6ed0f8a5c832341582ae31fe34d5ce1f87af4a8b9a2bc
+  type: DOMAIN_SUFFIX
+  value: www.larksuite.com
+provider: bytedance

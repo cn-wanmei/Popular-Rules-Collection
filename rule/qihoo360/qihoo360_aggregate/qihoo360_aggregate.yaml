@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: qihoo360_aggregate
+display_name: '360'
+generated_from:
+  run_id: 20260927T110031070233Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 92779926d6b74fcd6572a7d93c91e31db4f9887a5e4ae5995607cc638242a592
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 2055bdccf9c2475ff2611803d3488ee7265aa9c43d7f2ae4f84e83c396194953
+  type: DOMAIN_SUFFIX
+  value: 360.cn
+- id: 30bff2f577763f5ebabee1039cdb758546a8aa85d977263017b5d08de3b42eb6
+  type: DOMAIN_SUFFIX
+  value: www.360.cn
+provider: qihoo360

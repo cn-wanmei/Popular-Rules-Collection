@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: spacex
+display_name: SpaceX
+generated_from:
+  run_id: 20260927T110031070233Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 92779926d6b74fcd6572a7d93c91e31db4f9887a5e4ae5995607cc638242a592
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 638fcec39675f7c6742e3efbdc208f82a92600fd9c949da952735fccce53ebc3
+  type: DOMAIN_SUFFIX
+  value: spacex.com
+- id: d85aaa6db6d4d628adf6f7a45fda943c21b7f25edf91d61b7d6d9d9b6b92e1a7
+  type: DOMAIN_SUFFIX
+  value: www.spacex.com
+provider: spacex

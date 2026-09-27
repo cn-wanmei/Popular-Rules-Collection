@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: hikvision
+display_name: 海康威视
+generated_from:
+  run_id: 20260927T110031070233Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 92779926d6b74fcd6572a7d93c91e31db4f9887a5e4ae5995607cc638242a592
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 0f4142351ff71df014aa0105dd1dd61884deaaf3f727b68a4a0bba510c5bcd81
+  type: DOMAIN_SUFFIX
+  value: hikvision.com
+- id: 991bcdc3f32b72ba19c0cde38bc65a3ceebecbd8057602f2d7ea0758ffcd69b1
+  type: DOMAIN_SUFFIX
+  value: www.hikvision.com
+provider: hikvision

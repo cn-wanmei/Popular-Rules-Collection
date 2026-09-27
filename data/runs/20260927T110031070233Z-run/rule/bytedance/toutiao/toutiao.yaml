@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: toutiao
+display_name: Toutiao
+generated_from:
+  run_id: 20260927T110031070233Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 92779926d6b74fcd6572a7d93c91e31db4f9887a5e4ae5995607cc638242a592
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 5794601902d755d57c9452fa8bc1957210739c1520f6c3716ba2e268f60fdfba
+  type: DOMAIN_SUFFIX
+  value: toutiao.com
+- id: a4cdc94c862ac5817bc5662b434741a0c2c2dba1b5aa8fe03e617ad6e3436816
+  type: DOMAIN_SUFFIX
+  value: www.toutiao.com
+provider: bytedance

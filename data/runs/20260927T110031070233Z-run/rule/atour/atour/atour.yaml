@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: atour
+display_name: 亚朵
+generated_from:
+  run_id: 20260927T110031070233Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 92779926d6b74fcd6572a7d93c91e31db4f9887a5e4ae5995607cc638242a592
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 47303196a27eb64055277e298bf50382ac21210f5a624eadb45472b800265a15
+  type: DOMAIN_SUFFIX
+  value: www.yaduo.com
+- id: 62520cc073303fca52a1bf104920802273bc0b7278ed68b9203fd955809f7144
+  type: DOMAIN_SUFFIX
+  value: yaduo.com
+provider: atour
