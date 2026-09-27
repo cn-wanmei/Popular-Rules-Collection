@@ -495,13 +495,11 @@ services:
     - streaming
     service_type: service
   cloudflare:
-    primary_category: developer
+    primary_category: network
     display_name: Cloudflare
     categories:
-    - developer
     - network
     service_type: service
-    parent: developer
   wechat:
     primary_category: tencent
     display_name: WeChat
@@ -1778,3 +1776,93 @@ services:
     - microsoft
     service_type: service
     parent: microsoft
+  iflytek:
+    primary_category: china
+    display_name: 科大讯飞
+    categories:
+    - china
+    service_type: service
+  shimo:
+    primary_category: china
+    display_name: 石墨文档
+    categories:
+    - china
+    service_type: service
+  xunlei:
+    primary_category: china
+    display_name: 迅雷
+    categories:
+    - china
+    service_type: service
+  mgtv:
+    primary_category: streaming
+    display_name: 芒果TV
+    categories:
+    - streaming
+    service_type: service
+  eastmoney:
+    primary_category: finance
+    display_name: 东方财富
+    categories:
+    - finance
+    service_type: service
+  autohome:
+    primary_category: china
+    display_name: 汽车之家
+    categories:
+    - china
+    service_type: service
+  qunar:
+    primary_category: china
+    display_name: 去哪儿
+    categories:
+    - china
+    service_type: service
+  zhipin:
+    primary_category: china
+    display_name: BOSS直聘
+    categories:
+    - china
+    service_type: service
+  wps:
+    primary_category: china
+    display_name: WPS
+    categories:
+    - china
+    service_type: service
+  ibm:
+    primary_category: developer
+    display_name: IBM
+    categories:
+    - developer
+    service_type: service
+  amd:
+    primary_category: developer
+    display_name: AMD
+    categories:
+    - developer
+    service_type: service
+  cisco:
+    primary_category: network
+    display_name: Cisco
+    categories:
+    - network
+    service_type: service
+  salesforce:
+    primary_category: other
+    display_name: Salesforce
+    categories:
+    - other
+    service_type: service
+  datadog:
+    primary_category: developer
+    display_name: Datadog
+    categories:
+    - developer
+    service_type: service
+  mongodb:
+    primary_category: developer
+    display_name: MongoDB
+    categories:
+    - developer
+    service_type: service
