@@ -1866,3 +1866,429 @@ services:
     categories:
     - developer
     service_type: service
+  temu:
+    primary_category: china
+    display_name: Temu
+    categories:
+    - china
+    service_type: service
+  heytap:
+    primary_category: china
+    display_name: HeyTap
+    categories:
+    - china
+    service_type: service
+  migu:
+    primary_category: china
+    display_name: 咪咕
+    categories:
+    - china
+    service_type: service
+  ctyun:
+    primary_category: china
+    display_name: 天翼云
+    categories:
+    - china
+    service_type: service
+  woyun:
+    primary_category: china
+    display_name: 联通云
+    categories:
+    - china
+    service_type: service
+  sfexpress:
+    primary_category: china
+    display_name: 顺丰
+    categories:
+    - china
+    service_type: service
+  beike:
+    primary_category: china
+    display_name: 贝壳
+    categories:
+    - china
+    service_type: service
+  vipshop:
+    primary_category: china
+    display_name: 唯品会
+    categories:
+    - china
+    service_type: service
+  tongcheng:
+    primary_category: china
+    display_name: 同程旅行
+    categories:
+    - china
+    service_type: service
+  kingdee:
+    primary_category: china
+    display_name: 金蝶
+    categories:
+    - china
+    service_type: service
+  yonyou:
+    primary_category: china
+    display_name: 用友
+    categories:
+    - china
+    service_type: service
+  sangfor:
+    primary_category: china
+    display_name: 深信服
+    categories:
+    - china
+    service_type: service
+  haier:
+    primary_category: china
+    display_name: 海尔智家
+    categories:
+    - china
+    service_type: service
+  wangsu:
+    primary_category: china
+    display_name: 网宿科技
+    categories:
+    - china
+    service_type: service
+  perfectworld:
+    primary_category: china
+    display_name: 完美世界
+    categories:
+    - china
+    service_type: service
+  tonghuashun:
+    primary_category: china
+    display_name: 同花顺
+    categories:
+    - china
+    service_type: service
+  huolala:
+    primary_category: china
+    display_name: 货拉拉
+    categories:
+    - china
+    service_type: service
+  manbang:
+    primary_category: china
+    display_name: 满帮
+    categories:
+    - china
+    service_type: service
+  zhaopin:
+    primary_category: china
+    display_name: 智联招聘
+    categories:
+    - china
+    service_type: service
+  wuba:
+    primary_category: china
+    display_name: 58同城
+    categories:
+    - china
+    service_type: service
+  anjuke:
+    primary_category: china
+    display_name: 安居客
+    categories:
+    - china
+    service_type: service
+  hellobike:
+    primary_category: china
+    display_name: 哈啰
+    categories:
+    - china
+    service_type: service
+  caocao:
+    primary_category: china
+    display_name: 曹操出行
+    categories:
+    - china
+    service_type: service
+  t3go:
+    primary_category: china
+    display_name: T3出行
+    categories:
+    - china
+    service_type: service
+  sensetime:
+    primary_category: china
+    display_name: 商汤科技
+    categories:
+    - china
+    service_type: service
+  zhipu:
+    primary_category: china
+    display_name: 智谱AI
+    categories:
+    - china
+    service_type: service
+  moonshot:
+    primary_category: china
+    display_name: 月之暗面
+    categories:
+    - china
+    service_type: service
+  minimax:
+    primary_category: china
+    display_name: MiniMax
+    categories:
+    - china
+    service_type: service
+  baichuan:
+    primary_category: china
+    display_name: 百川智能
+    categories:
+    - china
+    service_type: service
+  yi:
+    primary_category: china
+    display_name: 零一万物
+    categories:
+    - china
+    service_type: service
+  cambricon:
+    primary_category: china
+    display_name: 寒武纪
+    categories:
+    - china
+    service_type: service
+  hikvision:
+    primary_category: china
+    display_name: 海康威视
+    categories:
+    - china
+    service_type: service
+  dahua:
+    primary_category: china
+    display_name: 大华股份
+    categories:
+    - china
+    service_type: service
+  dji:
+    primary_category: china
+    display_name: 大疆
+    categories:
+    - china
+    service_type: service
+  tuya:
+    primary_category: china
+    display_name: 涂鸦智能
+    categories:
+    - china
+    service_type: service
+  anker:
+    primary_category: china
+    display_name: 安克创新
+    categories:
+    - china
+    service_type: service
+  sap:
+    primary_category: other
+    display_name: SAP
+    categories:
+    - other
+    service_type: service
+  sony:
+    primary_category: other
+    display_name: Sony
+    categories:
+    - other
+    service_type: service
+  qualcomm:
+    primary_category: other
+    display_name: Qualcomm
+    categories:
+    - other
+    service_type: service
+  arm:
+    primary_category: other
+    display_name: Arm
+    categories:
+    - other
+    service_type: service
+  tsmc:
+    primary_category: other
+    display_name: TSMC
+    categories:
+    - other
+    service_type: service
+  servicenow:
+    primary_category: other
+    display_name: ServiceNow
+    categories:
+    - other
+    service_type: service
+  databricks:
+    primary_category: other
+    display_name: Databricks
+    categories:
+    - other
+    service_type: service
+  snowflake:
+    primary_category: other
+    display_name: Snowflake
+    categories:
+    - other
+    service_type: service
+  workday:
+    primary_category: other
+    display_name: Workday
+    categories:
+    - other
+    service_type: service
+  palantir:
+    primary_category: other
+    display_name: Palantir
+    categories:
+    - other
+    service_type: service
+  spacex:
+    primary_category: other
+    display_name: SpaceX
+    categories:
+    - other
+    service_type: service
+  starlink:
+    primary_category: other
+    display_name: Starlink
+    categories:
+    - other
+    service_type: service
+  intuit:
+    primary_category: other
+    display_name: Intuit
+    categories:
+    - other
+    service_type: service
+  mediatek:
+    primary_category: other
+    display_name: MediaTek
+    categories:
+    - other
+    service_type: service
+  nintendo:
+    primary_category: other
+    display_name: Nintendo
+    categories:
+    - other
+    service_type: service
+  lg:
+    primary_category: other
+    display_name: LG
+    categories:
+    - other
+    service_type: service
+  panasonic:
+    primary_category: other
+    display_name: Panasonic
+    categories:
+    - other
+    service_type: service
+  rakuten:
+    primary_category: other
+    display_name: Rakuten
+    categories:
+    - other
+    service_type: service
+  linecorp:
+    primary_category: other
+    display_name: LINE
+    categories:
+    - other
+    service_type: service
+  grab:
+    primary_category: other
+    display_name: Grab
+    categories:
+    - other
+    service_type: service
+  shopee:
+    primary_category: other
+    display_name: Shopee
+    categories:
+    - other
+    service_type: service
+  coupang:
+    primary_category: other
+    display_name: Coupang
+    categories:
+    - other
+    service_type: service
+  kakao:
+    primary_category: other
+    display_name: Kakao
+    categories:
+    - other
+    service_type: service
+  ericsson:
+    primary_category: other
+    display_name: Ericsson
+    categories:
+    - other
+    service_type: service
+  nokia:
+    primary_category: other
+    display_name: Nokia
+    categories:
+    - other
+    service_type: service
+  crowdstrike:
+    primary_category: other
+    display_name: CrowdStrike
+    categories:
+    - other
+    service_type: service
+  fortinet:
+    primary_category: other
+    display_name: Fortinet
+    categories:
+    - other
+    service_type: service
+  okta:
+    primary_category: other
+    display_name: Okta
+    categories:
+    - other
+    service_type: service
+  hubspot:
+    primary_category: other
+    display_name: HubSpot
+    categories:
+    - other
+    service_type: service
+  twilio:
+    primary_category: other
+    display_name: Twilio
+    categories:
+    - other
+    service_type: service
+  autodesk:
+    primary_category: other
+    display_name: Autodesk
+    categories:
+    - other
+    service_type: service
+  unity:
+    primary_category: other
+    display_name: Unity
+    categories:
+    - other
+    service_type: service
+  coinbase:
+    primary_category: other
+    display_name: Coinbase
+    categories:
+    - other
+    service_type: service
+  ea:
+    primary_category: other
+    display_name: Electronic Arts
+    categories:
+    - other
+    service_type: service
+  epicgames:
+    primary_category: other
+    display_name: Epic Games
+    categories:
+    - other
+    service_type: service
