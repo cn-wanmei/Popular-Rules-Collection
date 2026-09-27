@@ -737,3 +737,71 @@
 - [Coinbase](coinbase.md) (`coinbase` · service)
 
 - [Epic Games](epicgames.md) (`epicgames` · service)
+
+- [Broadcom](broadcom.md) (`broadcom` · service)
+
+- [ASML](asml.md) (`asml` · service)
+
+- [Micron](micron.md) (`micron` · service)
+
+- [SK hynix](skhynix.md) (`skhynix` · service)
+
+- [Texas Instruments](ti.md) (`ti` · service)
+
+- [Siemens](siemens.md) (`siemens` · service)
+
+- [Schneider Electric](schneider.md) (`schneider` · service)
+
+- [Dell](dell.md) (`dell` · service)
+
+- [Palo Alto Networks](paloalto.md) (`paloalto` · service)
+
+- [Synopsys](synopsys.md) (`synopsys` · service)
+
+- [Cadence](cadence.md) (`cadence` · service)
+
+- [Lam Research](lamresearch.md) (`lamresearch` · service)
+
+- [KLA](kla.md) (`kla` · service)
+
+- [Hitachi](hitachi.md) (`hitachi` · service)
+
+- [Fujitsu](fujitsu.md) (`fujitsu` · service)
+
+- [NEC](nec.md) (`nec` · service)
+
+- [Mercado Libre](mercadolibre.md) (`mercadolibre` · service)
+
+- [HPE](hpe.md) (`hpe` · service)
+
+- [NetApp](netapp.md) (`netapp` · service)
+
+- [Equinix](equinix.md) (`equinix` · service)
+
+- [Dassault Systèmes](dassault.md) (`dassault` · service)
+
+- [Block](block.md) (`block` · service)
+
+- [Take-Two](take2.md) (`take2` · service)
+
+- [GlobalFoundries](globalfoundries.md) (`globalfoundries` · service)
+
+- [UMC](umc.md) (`umc` · service)
+
+- [陆金所](lufax.md) (`lufax` · service)
+
+- [亚朵](atour.md) (`atour` · service)
+
+- [传音](transsion.md) (`transsion` · service)
+
+- [石头科技](roborock.md) (`roborock` · service)
+
+- [追觅](dreame.md) (`dreame` · service)
+
+- [极米](xgimi.md) (`xgimi` · service)
+
+- [书生InternLM](internlm.md) (`internlm` · service)
+
+- [壁仞科技](birentech.md) (`birentech` · service)
+
+- [昆仑芯](kunlunxin.md) (`kunlunxin` · service)
