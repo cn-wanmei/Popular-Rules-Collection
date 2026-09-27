@@ -813,3 +813,21 @@
 - [米家](mihome.md) (`mihome` · service · parent `xiaomi`)
 
 - [GetApps](getapps.md) (`getapps` · service · parent `xiaomi`)
+
+## Subtree wave (2026-09-27)
+
+- [三七互娱](37games.md) (`37games` · service)
+- [AliExpress](aliexpress.md) (`aliexpress` · service)
+- [Arista](arista.md) (`arista` · service)
+- [BOSS直聘](boss.md) (`boss` · service)
+- [Fliggy](fliggy.md) (`fliggy` · service)
+- [Google Drive](googledrive.md) (`googledrive` · service)
+- [剪映](jianying.md) (`jianying` · service)
+- [Lazada](lazada.md) (`lazada` · service)
+- [Power BI](powerbi.md) (`powerbi` · service)
+- [QQ浏览器](qqbrowser.md) (`qqbrowser` · service)
+- [SharePoint](sharepoint.md) (`sharepoint` · service)
+- [世纪华通](shiji.md) (`shiji` · service)
+- [Supermicro](supermicro.md) (`supermicro` · service)
+- [腾讯文档](tencentdocs.md) (`tencentdocs` · service)
+- [完美世界](wanmei.md) (`wanmei` · service)
