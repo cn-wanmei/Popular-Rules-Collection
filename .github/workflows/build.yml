@@ -7,8 +7,6 @@ on:
   pull_request:
     branches: [main]
     paths:
-      - "backup/**"
-      - "database/**"
       - "sources/datasets/**"
       - "sources/ip_registry.yaml"
       - "scripts/build_network_bundle.py"
