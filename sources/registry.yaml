@@ -1504,6 +1504,26 @@ sources:
     service: kunlunxin
     local: PRS_kunlunxin.domains.txt
     enabled: false
+  - path: generated/source/lark/domains.txt
+    name: lark
+    service: lark
+    local: PRS_lark.domains.txt
+    enabled: false
+  - path: generated/source/qqdoc/domains.txt
+    name: qqdoc
+    service: qqdoc
+    local: PRS_qqdoc.domains.txt
+    enabled: false
+  - path: generated/source/mihome/domains.txt
+    name: mihome
+    service: mihome
+    local: PRS_mihome.domains.txt
+    enabled: false
+  - path: generated/source/getapps/domains.txt
+    name: getapps
+    service: getapps
+    local: PRS_getapps.domains.txt
+    enabled: false
 - id: blackmatrix7
   name: BlackMatrix7 ios_rule_script
   url: https://github.com/blackmatrix7/ios_rule_script
