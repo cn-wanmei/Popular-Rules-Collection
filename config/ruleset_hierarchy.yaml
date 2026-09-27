@@ -423,6 +423,12 @@ providers:
       baidusearch:
         display_name: Baidu Search
         status: planned
+      baidu-zhidao:
+        display_name: 百度知道
+        status: existing
+      baiduwenku:
+        display_name: 百度文库
+        status: existing
   netease:
     display_name: NetEase
     aggregate: netease
@@ -466,6 +472,9 @@ providers:
         status: planned
       huawei-cloud:
         display_name: Huawei Cloud
+        status: existing
+      huawei-appgallery:
+        display_name: 华为应用市场
         status: existing
   xiaomi:
     display_name: Xiaomi
@@ -1125,6 +1134,9 @@ providers:
     services:
       kuaishou:
         display_name: Kuaishou
+        status: existing
+      kuaishou-open:
+        display_name: 快手开放平台
         status: existing
   kugou:
     display_name: KuGou
