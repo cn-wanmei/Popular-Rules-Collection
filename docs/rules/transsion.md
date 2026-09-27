@@ -1,6 +1,6 @@
-# 平安科技
+# 传音
 
-| Rule ID | `pingan` |
+| Rule ID | `transsion` |
 | Status | official seed candidate |
 
 Company-root seed only.

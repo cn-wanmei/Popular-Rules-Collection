@@ -1,6 +1,6 @@
-# 平安科技
+# 亚朵
 
-| Rule ID | `pingan` |
+| Rule ID | `atour` |
 | Status | official seed candidate |
 
 Company-root seed only.

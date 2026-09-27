@@ -1,6 +1,6 @@
-# 平安科技
+# ASML
 
-| Rule ID | `pingan` |
+| Rule ID | `asml` |
 | Status | official seed candidate |
 
 Company-root seed only.

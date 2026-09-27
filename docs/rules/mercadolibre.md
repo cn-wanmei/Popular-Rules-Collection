@@ -1,6 +1,6 @@
-# 平安科技
+# Mercado Libre
 
-| Rule ID | `pingan` |
+| Rule ID | `mercadolibre` |
 | Status | official seed candidate |
 
 Company-root seed only.

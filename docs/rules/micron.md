@@ -1,6 +1,6 @@
-# 平安科技
+# Micron
 
-| Rule ID | `pingan` |
+| Rule ID | `micron` |
 | Status | official seed candidate |
 
 Company-root seed only.

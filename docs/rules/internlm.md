@@ -1,6 +1,6 @@
-# 平安科技
+# 书生InternLM
 
-| Rule ID | `pingan` |
+| Rule ID | `internlm` |
 | Status | official seed candidate |
 
 Company-root seed only.

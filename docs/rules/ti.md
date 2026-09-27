@@ -1,6 +1,6 @@
-# 平安科技
+# Texas Instruments
 
-| Rule ID | `pingan` |
+| Rule ID | `ti` |
 | Status | official seed candidate |
 
 Company-root seed only.

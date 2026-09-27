@@ -1212,7 +1212,7 @@ providers:
     aggregate: pingan_aggregate
     services:
       pingan:
-        display_name: Ping An
+        display_name: 平安科技
         status: existing
   pinterest:
     display_name: Pinterest
@@ -2025,6 +2025,244 @@ providers:
     services:
       epicgames:
         display_name: Epic Games
+        status: existing
+  broadcom:
+    display_name: Broadcom
+    aggregate: broadcom_aggregate
+    services:
+      broadcom:
+        display_name: Broadcom
+        status: existing
+  asml:
+    display_name: ASML
+    aggregate: asml_aggregate
+    services:
+      asml:
+        display_name: ASML
+        status: existing
+  micron:
+    display_name: Micron
+    aggregate: micron_aggregate
+    services:
+      micron:
+        display_name: Micron
+        status: existing
+  skhynix:
+    display_name: SK hynix
+    aggregate: skhynix_aggregate
+    services:
+      skhynix:
+        display_name: SK hynix
+        status: existing
+  ti:
+    display_name: Texas Instruments
+    aggregate: ti_aggregate
+    services:
+      ti:
+        display_name: Texas Instruments
+        status: existing
+  siemens:
+    display_name: Siemens
+    aggregate: siemens_aggregate
+    services:
+      siemens:
+        display_name: Siemens
+        status: existing
+  schneider:
+    display_name: Schneider Electric
+    aggregate: schneider_aggregate
+    services:
+      schneider:
+        display_name: Schneider Electric
+        status: existing
+  dell:
+    display_name: Dell
+    aggregate: dell_aggregate
+    services:
+      dell:
+        display_name: Dell
+        status: existing
+  paloalto:
+    display_name: Palo Alto Networks
+    aggregate: paloalto_aggregate
+    services:
+      paloalto:
+        display_name: Palo Alto Networks
+        status: existing
+  synopsys:
+    display_name: Synopsys
+    aggregate: synopsys_aggregate
+    services:
+      synopsys:
+        display_name: Synopsys
+        status: existing
+  cadence:
+    display_name: Cadence
+    aggregate: cadence_aggregate
+    services:
+      cadence:
+        display_name: Cadence
+        status: existing
+  lamresearch:
+    display_name: Lam Research
+    aggregate: lamresearch_aggregate
+    services:
+      lamresearch:
+        display_name: Lam Research
+        status: existing
+  kla:
+    display_name: KLA
+    aggregate: kla_aggregate
+    services:
+      kla:
+        display_name: KLA
+        status: existing
+  hitachi:
+    display_name: Hitachi
+    aggregate: hitachi_aggregate
+    services:
+      hitachi:
+        display_name: Hitachi
+        status: existing
+  fujitsu:
+    display_name: Fujitsu
+    aggregate: fujitsu_aggregate
+    services:
+      fujitsu:
+        display_name: Fujitsu
+        status: existing
+  nec:
+    display_name: NEC
+    aggregate: nec_aggregate
+    services:
+      nec:
+        display_name: NEC
+        status: existing
+  mercadolibre:
+    display_name: Mercado Libre
+    aggregate: mercadolibre_aggregate
+    services:
+      mercadolibre:
+        display_name: Mercado Libre
+        status: existing
+  hpe:
+    display_name: HPE
+    aggregate: hpe_aggregate
+    services:
+      hpe:
+        display_name: HPE
+        status: existing
+  netapp:
+    display_name: NetApp
+    aggregate: netapp_aggregate
+    services:
+      netapp:
+        display_name: NetApp
+        status: existing
+  equinix:
+    display_name: Equinix
+    aggregate: equinix_aggregate
+    services:
+      equinix:
+        display_name: Equinix
+        status: existing
+  dassault:
+    display_name: Dassault Systèmes
+    aggregate: dassault_aggregate
+    services:
+      dassault:
+        display_name: Dassault Systèmes
+        status: existing
+  block:
+    display_name: Block
+    aggregate: block_aggregate
+    services:
+      block:
+        display_name: Block
+        status: existing
+  take2:
+    display_name: Take-Two
+    aggregate: take2_aggregate
+    services:
+      take2:
+        display_name: Take-Two
+        status: existing
+  globalfoundries:
+    display_name: GlobalFoundries
+    aggregate: globalfoundries_aggregate
+    services:
+      globalfoundries:
+        display_name: GlobalFoundries
+        status: existing
+  umc:
+    display_name: UMC
+    aggregate: umc_aggregate
+    services:
+      umc:
+        display_name: UMC
+        status: existing
+  lufax:
+    display_name: 陆金所
+    aggregate: lufax_aggregate
+    services:
+      lufax:
+        display_name: 陆金所
+        status: existing
+  atour:
+    display_name: 亚朵
+    aggregate: atour_aggregate
+    services:
+      atour:
+        display_name: 亚朵
+        status: existing
+  transsion:
+    display_name: 传音
+    aggregate: transsion_aggregate
+    services:
+      transsion:
+        display_name: 传音
+        status: existing
+  roborock:
+    display_name: 石头科技
+    aggregate: roborock_aggregate
+    services:
+      roborock:
+        display_name: 石头科技
+        status: existing
+  dreame:
+    display_name: 追觅
+    aggregate: dreame_aggregate
+    services:
+      dreame:
+        display_name: 追觅
+        status: existing
+  xgimi:
+    display_name: 极米
+    aggregate: xgimi_aggregate
+    services:
+      xgimi:
+        display_name: 极米
+        status: existing
+  internlm:
+    display_name: 书生InternLM
+    aggregate: internlm_aggregate
+    services:
+      internlm:
+        display_name: 书生InternLM
+        status: existing
+  birentech:
+    display_name: 壁仞科技
+    aggregate: birentech_aggregate
+    services:
+      birentech:
+        display_name: 壁仞科技
+        status: existing
+  kunlunxin:
+    display_name: 昆仑芯
+    aggregate: kunlunxin_aggregate
+    services:
+      kunlunxin:
+        display_name: 昆仑芯
         status: existing
 categories:
   developer:

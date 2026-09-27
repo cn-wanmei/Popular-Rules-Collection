@@ -1,6 +1,6 @@
-# 平安科技
+# UMC
 
-| Rule ID | `pingan` |
+| Rule ID | `umc` |
 | Status | official seed candidate |
 
 Company-root seed only.

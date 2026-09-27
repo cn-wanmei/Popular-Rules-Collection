@@ -1,6 +1,6 @@
-# 平安科技
+# Cadence
 
-| Rule ID | `pingan` |
+| Rule ID | `cadence` |
 | Status | official seed candidate |
 
 Company-root seed only.

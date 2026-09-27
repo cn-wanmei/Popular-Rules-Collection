@@ -1,6 +1,6 @@
-# 平安科技
+# KLA
 
-| Rule ID | `pingan` |
+| Rule ID | `kla` |
 | Status | official seed candidate |
 
 Company-root seed only.

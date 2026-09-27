@@ -1,6 +1,6 @@
-# 平安科技
+# Schneider Electric
 
-| Rule ID | `pingan` |
+| Rule ID | `schneider` |
 | Status | official seed candidate |
 
 Company-root seed only.

@@ -1,6 +1,6 @@
-# 平安科技
+# NetApp
 
-| Rule ID | `pingan` |
+| Rule ID | `netapp` |
 | Status | official seed candidate |
 
 Company-root seed only.

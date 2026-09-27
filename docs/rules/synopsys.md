@@ -1,6 +1,6 @@
-# 平安科技
+# Synopsys
 
-| Rule ID | `pingan` |
+| Rule ID | `synopsys` |
 | Status | official seed candidate |
 
 Company-root seed only.

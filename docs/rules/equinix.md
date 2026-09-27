@@ -1,6 +1,6 @@
-# 平安科技
+# Equinix
 
-| Rule ID | `pingan` |
+| Rule ID | `equinix` |
 | Status | official seed candidate |
 
 Company-root seed only.

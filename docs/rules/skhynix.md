@@ -1,6 +1,6 @@
-# 平安科技
+# SK hynix
 
-| Rule ID | `pingan` |
+| Rule ID | `skhynix` |
 | Status | official seed candidate |
 
 Company-root seed only.

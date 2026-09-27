@@ -1,6 +1,6 @@
-# 平安科技
+# Siemens
 
-| Rule ID | `pingan` |
+| Rule ID | `siemens` |
 | Status | official seed candidate |
 
 Company-root seed only.

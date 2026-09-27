@@ -1,6 +1,6 @@
-# 平安科技
+# Lam Research
 
-| Rule ID | `pingan` |
+| Rule ID | `lamresearch` |
 | Status | official seed candidate |
 
 Company-root seed only.

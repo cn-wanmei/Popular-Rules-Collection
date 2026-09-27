@@ -1,6 +1,6 @@
-# 平安科技
+# 陆金所
 
-| Rule ID | `pingan` |
+| Rule ID | `lufax` |
 | Status | official seed candidate |
 
 Company-root seed only.

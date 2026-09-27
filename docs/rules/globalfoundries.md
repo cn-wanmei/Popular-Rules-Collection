@@ -1,6 +1,6 @@
-# 平安科技
+# GlobalFoundries
 
-| Rule ID | `pingan` |
+| Rule ID | `globalfoundries` |
 | Status | official seed candidate |
 
 Company-root seed only.

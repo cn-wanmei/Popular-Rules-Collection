@@ -1,6 +1,6 @@
-# 平安科技
+# Dassault Systèmes
 
-| Rule ID | `pingan` |
+| Rule ID | `dassault` |
 | Status | official seed candidate |
 
 Company-root seed only.

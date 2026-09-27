@@ -1329,6 +1329,181 @@ sources:
     service: epicgames
     local: PRS_epicgames.domains.txt
     enabled: false
+  - path: generated/source/broadcom/domains.txt
+    name: broadcom
+    service: broadcom
+    local: PRS_broadcom.domains.txt
+    enabled: false
+  - path: generated/source/asml/domains.txt
+    name: asml
+    service: asml
+    local: PRS_asml.domains.txt
+    enabled: false
+  - path: generated/source/micron/domains.txt
+    name: micron
+    service: micron
+    local: PRS_micron.domains.txt
+    enabled: false
+  - path: generated/source/skhynix/domains.txt
+    name: skhynix
+    service: skhynix
+    local: PRS_skhynix.domains.txt
+    enabled: false
+  - path: generated/source/ti/domains.txt
+    name: ti
+    service: ti
+    local: PRS_ti.domains.txt
+    enabled: false
+  - path: generated/source/siemens/domains.txt
+    name: siemens
+    service: siemens
+    local: PRS_siemens.domains.txt
+    enabled: false
+  - path: generated/source/schneider/domains.txt
+    name: schneider
+    service: schneider
+    local: PRS_schneider.domains.txt
+    enabled: false
+  - path: generated/source/dell/domains.txt
+    name: dell
+    service: dell
+    local: PRS_dell.domains.txt
+    enabled: false
+  - path: generated/source/paloalto/domains.txt
+    name: paloalto
+    service: paloalto
+    local: PRS_paloalto.domains.txt
+    enabled: false
+  - path: generated/source/synopsys/domains.txt
+    name: synopsys
+    service: synopsys
+    local: PRS_synopsys.domains.txt
+    enabled: false
+  - path: generated/source/cadence/domains.txt
+    name: cadence
+    service: cadence
+    local: PRS_cadence.domains.txt
+    enabled: false
+  - path: generated/source/lamresearch/domains.txt
+    name: lamresearch
+    service: lamresearch
+    local: PRS_lamresearch.domains.txt
+    enabled: false
+  - path: generated/source/kla/domains.txt
+    name: kla
+    service: kla
+    local: PRS_kla.domains.txt
+    enabled: false
+  - path: generated/source/hitachi/domains.txt
+    name: hitachi
+    service: hitachi
+    local: PRS_hitachi.domains.txt
+    enabled: false
+  - path: generated/source/fujitsu/domains.txt
+    name: fujitsu
+    service: fujitsu
+    local: PRS_fujitsu.domains.txt
+    enabled: false
+  - path: generated/source/nec/domains.txt
+    name: nec
+    service: nec
+    local: PRS_nec.domains.txt
+    enabled: false
+  - path: generated/source/mercadolibre/domains.txt
+    name: mercadolibre
+    service: mercadolibre
+    local: PRS_mercadolibre.domains.txt
+    enabled: false
+  - path: generated/source/hpe/domains.txt
+    name: hpe
+    service: hpe
+    local: PRS_hpe.domains.txt
+    enabled: false
+  - path: generated/source/netapp/domains.txt
+    name: netapp
+    service: netapp
+    local: PRS_netapp.domains.txt
+    enabled: false
+  - path: generated/source/equinix/domains.txt
+    name: equinix
+    service: equinix
+    local: PRS_equinix.domains.txt
+    enabled: false
+  - path: generated/source/dassault/domains.txt
+    name: dassault
+    service: dassault
+    local: PRS_dassault.domains.txt
+    enabled: false
+  - path: generated/source/block/domains.txt
+    name: block
+    service: block
+    local: PRS_block.domains.txt
+    enabled: false
+  - path: generated/source/take2/domains.txt
+    name: take2
+    service: take2
+    local: PRS_take2.domains.txt
+    enabled: false
+  - path: generated/source/globalfoundries/domains.txt
+    name: globalfoundries
+    service: globalfoundries
+    local: PRS_globalfoundries.domains.txt
+    enabled: false
+  - path: generated/source/umc/domains.txt
+    name: umc
+    service: umc
+    local: PRS_umc.domains.txt
+    enabled: false
+  - path: generated/source/pingan/domains.txt
+    name: pingan
+    service: pingan
+    local: PRS_pingan.domains.txt
+    enabled: false
+  - path: generated/source/lufax/domains.txt
+    name: lufax
+    service: lufax
+    local: PRS_lufax.domains.txt
+    enabled: false
+  - path: generated/source/atour/domains.txt
+    name: atour
+    service: atour
+    local: PRS_atour.domains.txt
+    enabled: false
+  - path: generated/source/transsion/domains.txt
+    name: transsion
+    service: transsion
+    local: PRS_transsion.domains.txt
+    enabled: false
+  - path: generated/source/roborock/domains.txt
+    name: roborock
+    service: roborock
+    local: PRS_roborock.domains.txt
+    enabled: false
+  - path: generated/source/dreame/domains.txt
+    name: dreame
+    service: dreame
+    local: PRS_dreame.domains.txt
+    enabled: false
+  - path: generated/source/xgimi/domains.txt
+    name: xgimi
+    service: xgimi
+    local: PRS_xgimi.domains.txt
+    enabled: false
+  - path: generated/source/internlm/domains.txt
+    name: internlm
+    service: internlm
+    local: PRS_internlm.domains.txt
+    enabled: false
+  - path: generated/source/birentech/domains.txt
+    name: birentech
+    service: birentech
+    local: PRS_birentech.domains.txt
+    enabled: false
+  - path: generated/source/kunlunxin/domains.txt
+    name: kunlunxin
+    service: kunlunxin
+    local: PRS_kunlunxin.domains.txt
+    enabled: false
 - id: blackmatrix7
   name: BlackMatrix7 ios_rule_script
   url: https://github.com/blackmatrix7/ios_rule_script

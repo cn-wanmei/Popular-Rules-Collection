@@ -1,6 +1,6 @@
-# 平安科技
+# Hitachi
 
-| Rule ID | `pingan` |
+| Rule ID | `hitachi` |
 | Status | official seed candidate |
 
 Company-root seed only.

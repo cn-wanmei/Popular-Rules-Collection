@@ -1,6 +1,6 @@
-# 平安科技
+# NEC
 
-| Rule ID | `pingan` |
+| Rule ID | `nec` |
 | Status | official seed candidate |
 
 Company-root seed only.

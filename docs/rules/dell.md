@@ -1,6 +1,6 @@
-# 平安科技
+# Dell
 
-| Rule ID | `pingan` |
+| Rule ID | `dell` |
 | Status | official seed candidate |
 
 Company-root seed only.

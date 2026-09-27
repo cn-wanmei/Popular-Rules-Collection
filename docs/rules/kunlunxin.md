@@ -1,6 +1,6 @@
-# 平安科技
+# 昆仑芯
 
-| Rule ID | `pingan` |
+| Rule ID | `kunlunxin` |
 | Status | official seed candidate |
 
 Company-root seed only.

@@ -1,6 +1,6 @@
-# 平安科技
+# Take-Two
 
-| Rule ID | `pingan` |
+| Rule ID | `take2` |
 | Status | official seed candidate |
 
 Company-root seed only.

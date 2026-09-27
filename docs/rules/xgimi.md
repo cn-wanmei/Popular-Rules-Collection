@@ -1,6 +1,6 @@
-# 平安科技
+# 极米
 
-| Rule ID | `pingan` |
+| Rule ID | `xgimi` |
 | Status | official seed candidate |
 
 Company-root seed only.

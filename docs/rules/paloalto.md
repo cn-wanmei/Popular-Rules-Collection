@@ -1,6 +1,6 @@
-# 平安科技
+# Palo Alto Networks
 
-| Rule ID | `pingan` |
+| Rule ID | `paloalto` |
 | Status | official seed candidate |
 
 Company-root seed only.

@@ -1,6 +1,6 @@
-# 平安科技
+# Block
 
-| Rule ID | `pingan` |
+| Rule ID | `block` |
 | Status | official seed candidate |
 
 Company-root seed only.

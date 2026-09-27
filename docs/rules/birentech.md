@@ -1,6 +1,6 @@
-# 平安科技
+# 壁仞科技
 
-| Rule ID | `pingan` |
+| Rule ID | `birentech` |
 | Status | official seed candidate |
 
 Company-root seed only.

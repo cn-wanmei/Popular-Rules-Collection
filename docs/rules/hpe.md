@@ -1,6 +1,6 @@
-# 平安科技
+# HPE
 
-| Rule ID | `pingan` |
+| Rule ID | `hpe` |
 | Status | official seed candidate |
 
 Company-root seed only.
