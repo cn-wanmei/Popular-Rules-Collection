@@ -764,6 +764,131 @@ sources:
     service: zte
     local: PRS_zte.domains.txt
     enabled: false
+  - path: generated/source/google-calendar/domains.txt
+    name: google-calendar
+    service: google-calendar
+    local: PRS_google-calendar.domains.txt
+    enabled: false
+  - path: generated/source/google-chat/domains.txt
+    name: google-chat
+    service: google-chat
+    local: PRS_google-chat.domains.txt
+    enabled: false
+  - path: generated/source/google-contacts/domains.txt
+    name: google-contacts
+    service: google-contacts
+    local: PRS_google-contacts.domains.txt
+    enabled: false
+  - path: generated/source/google-docs/domains.txt
+    name: google-docs
+    service: google-docs
+    local: PRS_google-docs.domains.txt
+    enabled: false
+  - path: generated/source/google-forms/domains.txt
+    name: google-forms
+    service: google-forms
+    local: PRS_google-forms.domains.txt
+    enabled: false
+  - path: generated/source/google-groups/domains.txt
+    name: google-groups
+    service: google-groups
+    local: PRS_google-groups.domains.txt
+    enabled: false
+  - path: generated/source/google-meet/domains.txt
+    name: google-meet
+    service: google-meet
+    local: PRS_google-meet.domains.txt
+    enabled: false
+  - path: generated/source/google-sheets/domains.txt
+    name: google-sheets
+    service: google-sheets
+    local: PRS_google-sheets.domains.txt
+    enabled: false
+  - path: generated/source/google-sites/domains.txt
+    name: google-sites
+    service: google-sites
+    local: PRS_google-sites.domains.txt
+    enabled: false
+  - path: generated/source/google-slides/domains.txt
+    name: google-slides
+    service: google-slides
+    local: PRS_google-slides.domains.txt
+    enabled: false
+  - path: generated/source/google-vids/domains.txt
+    name: google-vids
+    service: google-vids
+    local: PRS_google-vids.domains.txt
+    enabled: false
+  - path: generated/source/google-workspace-studio/domains.txt
+    name: google-workspace-studio
+    service: google-workspace-studio
+    local: PRS_google-workspace-studio.domains.txt
+    enabled: false
+  - path: generated/source/google-maps/domains.txt
+    name: google-maps
+    service: google-maps
+    local: PRS_google-maps.domains.txt
+    enabled: false
+  - path: generated/source/google-photos/domains.txt
+    name: google-photos
+    service: google-photos
+    local: PRS_google-photos.domains.txt
+    enabled: false
+  - path: generated/source/google-play/domains.txt
+    name: google-play
+    service: google-play
+    local: PRS_google-play.domains.txt
+    enabled: false
+  - path: generated/source/google-news/domains.txt
+    name: google-news
+    service: google-news
+    local: PRS_google-news.domains.txt
+    enabled: false
+  - path: generated/source/google-voice/domains.txt
+    name: google-voice
+    service: google-voice
+    local: PRS_google-voice.domains.txt
+    enabled: false
+  - path: generated/source/google-earth/domains.txt
+    name: google-earth
+    service: google-earth
+    local: PRS_google-earth.domains.txt
+    enabled: false
+  - path: generated/source/ms365-word/domains.txt
+    name: ms365-word
+    service: ms365-word
+    local: PRS_ms365-word.domains.txt
+    enabled: false
+  - path: generated/source/ms365-excel/domains.txt
+    name: ms365-excel
+    service: ms365-excel
+    local: PRS_ms365-excel.domains.txt
+    enabled: false
+  - path: generated/source/ms365-powerpoint/domains.txt
+    name: ms365-powerpoint
+    service: ms365-powerpoint
+    local: PRS_ms365-powerpoint.domains.txt
+    enabled: false
+  - path: generated/source/ms365-onenote/domains.txt
+    name: ms365-onenote
+    service: ms365-onenote
+    local: PRS_ms365-onenote.domains.txt
+    enabled: false
+  - path: generated/source/ms365-planner/domains.txt
+    name: ms365-planner
+    service: ms365-planner
+    local: PRS_ms365-planner.domains.txt
+    enabled: false
+  - path: generated/source/ms365-loop/domains.txt
+    name: ms365-loop
+    service: ms365-loop
+    local: PRS_ms365-loop.domains.txt
+    enabled: false
+  - path: generated/source/ms365-mesh/domains.txt
+    name: ms365-mesh
+    service: ms365-mesh
+    local: PRS_ms365-mesh.domains.txt
+    enabled: false
 - id: blackmatrix7
   name: BlackMatrix7 ios_rule_script
   url: https://github.com/blackmatrix7/ios_rule_script

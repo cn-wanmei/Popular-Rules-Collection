@@ -1,13 +1,13 @@
-# Apple Books
+# Microsoft OneNote
 
 > Current V3 service documentation. Subscription paths are derived from `generated/manifest.json`.
 
 | 项目 | 内容 |
 |------|------|
-| Rule ID | `applebooks` |
-| Primary Ecosystem | `apple` |
+| Rule ID | `ms365-onenote` |
+| Primary Ecosystem | `microsoft` |
 | Service Type | service |
-| Parent Aggregate | `apple` |
+| Parent Aggregate | `microsoft` |
 | Release Date | 2026-09-27 |
 | Dedicated client outputs | 0 / 7 |
 

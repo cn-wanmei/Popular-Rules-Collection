@@ -1,27 +1,32 @@
 # Gmail
 
+> Current V3 service documentation. Subscription paths are derived from `generated/manifest.json`.
+
 | 项目 | 内容 |
-|---|---|
+|------|------|
 | Rule ID | `gmail` |
+| Primary Ecosystem | `google` |
 | Service Type | service |
-| Current SSOT | `config/service_primary.yaml` |
-| Source lifecycle | `config/service_production_gate.yaml` |
+| Parent Aggregate | `google` |
+| Release Date | 2026-09-27 |
+| Dedicated client outputs | 0 / 7 |
 
-## 说明
+## 当前生产订阅路径
 
-本页属于当前 Service SSOT 的独立子服务入口。域名与各客户端可订阅文件以当前 `generated/manifest.json` 及发布流水线产物为准；本页不复制域名清单，避免与运行时数据产生第二真源。
+当前 Release Candidate 未物化该服务独立客户端产物；不得根据历史页面或旧目录猜测订阅地址。
 
-## 当前路径模型
+## 当前真源边界
 
-客户端规则统一使用：
+- V3 Canonical：`data/runs/<run-id>/canonical/`
+- Semantic IR：`data/runs/<run-id>/ir/`
+- 最终发行：`generated/`
+- `rule/`：V1 历史浏览/迁移树
+- `rules/`：V3 目录契约
+- `database/services/`：Legacy evidence，不是 V3 Runtime 真源
 
-`generated/<client>/<ecosystem>/<service-or-all>/rules.*`
+## 目录契约
 
-客户端目录：
+当前客户端目录只能使用 `mihomo`、`singbox`、`surge`、`shadowrocket`、`quantumultx`、`egern`、`loon`。历史 `sing-box` / `quantumult-x` 名称不属于当前目录契约。
 
-`mihomo` · `singbox` · `surge` · `shadowrocket` · `quantumultx` · `egern` · `loon`
-
-## 生命周期
-
-Source 与 Collection 的 immutable lineage 未完成精确绑定前，本页只作为服务身份与导航入口，不将候选状态误标为 Production。
-
+---
+_页面日期来源：2026-09-27。生产路径来源：generated/manifest.json。_

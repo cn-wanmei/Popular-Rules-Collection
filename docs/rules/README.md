@@ -521,3 +521,53 @@
 - [Tesla](tesla.md) (`tesla` · service)
 
 - [Intel](intel.md) (`intel` · service)
+
+- [google-calendar](google-calendar.md) (`google-calendar` · service)
+
+- [google-chat](google-chat.md) (`google-chat` · service)
+
+- [google-contacts](google-contacts.md) (`google-contacts` · service)
+
+- [google-docs](google-docs.md) (`google-docs` · service)
+
+- [google-forms](google-forms.md) (`google-forms` · service)
+
+- [google-groups](google-groups.md) (`google-groups` · service)
+
+- [google-meet](google-meet.md) (`google-meet` · service)
+
+- [google-sheets](google-sheets.md) (`google-sheets` · service)
+
+- [google-sites](google-sites.md) (`google-sites` · service)
+
+- [google-slides](google-slides.md) (`google-slides` · service)
+
+- [google-vids](google-vids.md) (`google-vids` · service)
+
+- [google-workspace-studio](google-workspace-studio.md) (`google-workspace-studio` · service)
+
+- [google-maps](google-maps.md) (`google-maps` · service)
+
+- [google-photos](google-photos.md) (`google-photos` · service)
+
+- [google-play](google-play.md) (`google-play` · service)
+
+- [google-news](google-news.md) (`google-news` · service)
+
+- [google-voice](google-voice.md) (`google-voice` · service)
+
+- [google-earth](google-earth.md) (`google-earth` · service)
+
+- [ms365-word](ms365-word.md) (`ms365-word` · service)
+
+- [ms365-excel](ms365-excel.md) (`ms365-excel` · service)
+
+- [ms365-powerpoint](ms365-powerpoint.md) (`ms365-powerpoint` · service)
+
+- [ms365-onenote](ms365-onenote.md) (`ms365-onenote` · service)
+
+- [ms365-planner](ms365-planner.md) (`ms365-planner` · service)
+
+- [ms365-loop](ms365-loop.md) (`ms365-loop` · service)
+
+- [ms365-mesh](ms365-mesh.md) (`ms365-mesh` · service)

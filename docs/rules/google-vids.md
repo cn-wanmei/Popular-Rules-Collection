@@ -1,13 +1,13 @@
-# Apple Books
+# Google Vids
 
 > Current V3 service documentation. Subscription paths are derived from `generated/manifest.json`.
 
 | 项目 | 内容 |
 |------|------|
-| Rule ID | `applebooks` |
-| Primary Ecosystem | `apple` |
+| Rule ID | `google-vids` |
+| Primary Ecosystem | `google` |
 | Service Type | service |
-| Parent Aggregate | `apple` |
+| Parent Aggregate | `google` |
 | Release Date | 2026-09-27 |
 | Dedicated client outputs | 0 / 7 |
 
