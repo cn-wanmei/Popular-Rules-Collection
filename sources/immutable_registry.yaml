@@ -5,8 +5,8 @@ bindings:
   '1688':
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/1688/domains.txt
     release_path: releases/1688/snap-1688-222302f3a20ecb7c08c72ed0/release.json
     snapshot_id: snap-1688-222302f3a20ecb7c08c72ed0
@@ -20,8 +20,8 @@ bindings:
   cainiao:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/cainiao/domains.txt
     release_path: releases/cainiao/snap-cainiao-a8a898392298ebaa644a783e/release.json
     snapshot_id: snap-cainiao-a8a898392298ebaa644a783e
@@ -35,8 +35,8 @@ bindings:
   dingding:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/dingding/domains.txt
     release_path: releases/dingding/snap-dingding-09ae1ecd000f1688f61e99a0/release.json
     snapshot_id: snap-dingding-09ae1ecd000f1688f61e99a0
@@ -50,8 +50,8 @@ bindings:
   qqmail:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/qqmail/domains.txt
     release_path: releases/qqmail/snap-qqmail-013babbee1bf9cf46a1741a1/release.json
     snapshot_id: snap-qqmail-013babbee1bf9cf46a1741a1
@@ -65,8 +65,8 @@ bindings:
   qqmusic:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/qqmusic/domains.txt
     release_path: releases/qqmusic/snap-qqmusic-421df9f4465ad7fb35ed9c06/release.json
     snapshot_id: snap-qqmusic-421df9f4465ad7fb35ed9c06
@@ -80,8 +80,8 @@ bindings:
   taobao:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/taobao/domains.txt
     release_path: releases/taobao/snap-taobao-834d549e8982036ce1438963/release.json
     snapshot_id: snap-taobao-834d549e8982036ce1438963
@@ -95,8 +95,8 @@ bindings:
   tencentcloud:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/tencentcloud/domains.txt
     release_path: releases/tencentcloud/snap-tencentcloud-e55bc8c508e839813ae20cd0/release.json
     snapshot_id: snap-tencentcloud-e55bc8c508e839813ae20cd0
@@ -110,8 +110,8 @@ bindings:
   tmall:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/tmall/domains.txt
     release_path: releases/tmall/snap-tmall-17de7049e2f7bf67cb88c785/release.json
     snapshot_id: snap-tmall-17de7049e2f7bf67cb88c785
@@ -125,8 +125,8 @@ bindings:
   baidunetdisk:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/baidunetdisk/domains.txt
     release_path: releases/baidunetdisk/snap-baidunetdisk-2030ef27118ea52d548a5667/release.json
     snapshot_id: snap-baidunetdisk-2030ef27118ea52d548a5667
@@ -140,8 +140,8 @@ bindings:
   doubao:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/doubao/domains.txt
     release_path: releases/doubao/snap-doubao-5396a151dcae37583b6bd589/release.json
     snapshot_id: snap-doubao-5396a151dcae37583b6bd589
@@ -155,8 +155,8 @@ bindings:
   firebase:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/firebase/domains.txt
     release_path: releases/firebase/snap-firebase-7161fac5d50d09fc4a2605be/release.json
     snapshot_id: snap-firebase-7161fac5d50d09fc4a2605be
@@ -170,8 +170,8 @@ bindings:
   googlecloud:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/googlecloud/domains.txt
     release_path: releases/googlecloud/snap-googlecloud-b6d12a6bdc42f9c4ae1d0b74/release.json
     snapshot_id: snap-googlecloud-b6d12a6bdc42f9c4ae1d0b74
@@ -185,8 +185,8 @@ bindings:
   tencentmeeting:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/tencentmeeting/domains.txt
     release_path: releases/tencentmeeting/snap-tencentmeeting-19826cb5a6a9fb912f7be3fc/release.json
     snapshot_id: snap-tencentmeeting-19826cb5a6a9fb912f7be3fc
@@ -200,8 +200,8 @@ bindings:
   wecom:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/wecom/domains.txt
     release_path: releases/wecom/snap-wecom-019997bd4957a3511ce1304b/release.json
     snapshot_id: snap-wecom-019997bd4957a3511ce1304b
@@ -215,8 +215,8 @@ bindings:
   youdao:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/youdao/domains.txt
     release_path: releases/youdao/snap-youdao-fc97f5d207d4c3358c6a4d6b/release.json
     snapshot_id: snap-youdao-fc97f5d207d4c3358c6a4d6b
@@ -230,8 +230,8 @@ bindings:
   alibabacloud:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/alibabacloud/domains.txt
     release_path: releases/alibabacloud/snap-alibabacloud-c121379a018839c4e2c1ad91/release.json
     snapshot_id: snap-alibabacloud-c121379a018839c4e2c1ad91
@@ -245,8 +245,8 @@ bindings:
   deepseek:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/deepseek/domains.txt
     release_path: releases/deepseek/snap-deepseek-0c14562b294e2ad50feadc74/release.json
     snapshot_id: snap-deepseek-0c14562b294e2ad50feadc74
@@ -260,8 +260,8 @@ bindings:
   perplexity:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/perplexity/domains.txt
     release_path: releases/perplexity/snap-perplexity-ada0cc4943c05a38442ca859/release.json
     snapshot_id: snap-perplexity-ada0cc4943c05a38442ca859
@@ -275,8 +275,8 @@ bindings:
   groq:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/groq/domains.txt
     release_path: releases/groq/snap-groq-3f8b97712755dd76acdc77ab/release.json
     snapshot_id: snap-groq-3f8b97712755dd76acdc77ab
@@ -290,8 +290,8 @@ bindings:
   huggingface:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/huggingface/domains.txt
     release_path: releases/huggingface/snap-huggingface-226053190707e71c9f66141c/release.json
     snapshot_id: snap-huggingface-226053190707e71c9f66141c
@@ -305,8 +305,8 @@ bindings:
   messenger:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/messenger/domains.txt
     release_path: releases/messenger/snap-messenger-b3b52c8322960d4f19279550/release.json
     snapshot_id: snap-messenger-b3b52c8322960d4f19279550
@@ -320,8 +320,8 @@ bindings:
   roblox:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/roblox/domains.txt
     release_path: releases/roblox/snap-roblox-7ab801cc1c6d8e5d601d0289/release.json
     snapshot_id: snap-roblox-7ab801cc1c6d8e5d601d0289
@@ -335,8 +335,8 @@ bindings:
   signal:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/signal/domains.txt
     release_path: releases/signal/snap-signal-ab3deea2dbc34fa008c60d6c/release.json
     snapshot_id: snap-signal-ab3deea2dbc34fa008c60d6c
@@ -350,8 +350,8 @@ bindings:
   applenews:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/applenews/domains.txt
     release_path: releases/applenews/snap-applenews-5b92e365d4fca996fc468b19/release.json
     snapshot_id: snap-applenews-5b92e365d4fca996fc468b19
@@ -363,25 +363,25 @@ bindings:
     release_identity_version: '2'
     expected_sha256: 4522d284378586a45801098349f25e71a467ddd0574beedbb17674be393fac3e
   baidu:
-    status: retired
+    status: active
     source_id: popular-rules-source
-    source_ref: eb6a510a75ed7a59b53e581fd05d6215ec6bb35d
-    verified_input_commit: 1993fefd3187daa921c8547b1f56608875658fbe
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/baidu/domains.txt
-    release_path: releases/baidu/snap-baidu-d4750fd40c6e1042256ee4c8/release.json
-    snapshot_id: snap-baidu-d4750fd40c6e1042256ee4c8
+    release_path: releases/baidu/snap-baidu-584ae9eeb87fa1dabd00d11f/release.json
+    snapshot_id: snap-baidu-584ae9eeb87fa1dabd00d11f
     content_digest: 7727809e237517bf95020fe0b389355b5be2a8dfe04cc803662697fc7b92fc30
     evidence_digest: b5ab24a4ad93dbde4c240aa846eb917bfa8ea67628ef79e7d45cf4f645cdfdeb
-    policy_digest: e9c5f2a02dd25bc0df638dbff8274d8643ac6ea6d1de46cf9e466b564b665897
-    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
-    release_digest: d4750fd40c6e1042256ee4c8a836afc75cb2beaf3f15feed462e5d001ffd8bd6
+    policy_digest: 679fa28e918bce1dbbf0edd360d7b1d5b8c676e04ea53b8ac72090fabc0a736e
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 584ae9eeb87fa1dabd00d11f6c29b5f1da9eeb13ead928f44f30041041df1d77
     release_identity_version: '2'
     expected_sha256: 1cfb395a2fa64482b9d2b5ab6f13c939c876fa85a7f5e0248e4289c10bcb06ec
   bing:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/bing/domains.txt
     release_path: releases/bing/snap-bing-3f36698777489885ba7fdbfd/release.json
     snapshot_id: snap-bing-3f36698777489885ba7fdbfd
@@ -395,8 +395,8 @@ bindings:
   tiktok:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/tiktok/domains.txt
     release_path: releases/tiktok/snap-tiktok-d7c408670d9f72fda616937c/release.json
     snapshot_id: snap-tiktok-d7c408670d9f72fda616937c
@@ -410,8 +410,8 @@ bindings:
   applemedia:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/applemedia/domains.txt
     release_path: releases/applemedia/snap-applemedia-5042d174723b9a5737d6f038/release.json
     snapshot_id: snap-applemedia-5042d174723b9a5737d6f038
@@ -425,8 +425,8 @@ bindings:
   copilot:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/copilot/domains.txt
     release_path: releases/copilot/snap-copilot-9f6da111d1453ad19fc927d2/release.json
     snapshot_id: snap-copilot-9f6da111d1453ad19fc927d2
@@ -440,8 +440,8 @@ bindings:
   claude:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/claude/domains.txt
     release_path: releases/claude/snap-claude-4aec84cea09e5629117513fa/release.json
     snapshot_id: snap-claude-4aec84cea09e5629117513fa
@@ -455,8 +455,8 @@ bindings:
   gemini:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/gemini/domains.txt
     release_path: releases/gemini/snap-gemini-9e01a42e8140aafccd75f9ea/release.json
     snapshot_id: snap-gemini-9e01a42e8140aafccd75f9ea
@@ -470,8 +470,8 @@ bindings:
   openai:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/openai/domains.txt
     release_path: releases/openai/snap-openai-cda1ed8e109c4abd8bf521dd/release.json
     snapshot_id: snap-openai-cda1ed8e109c4abd8bf521dd
@@ -485,8 +485,8 @@ bindings:
   telegram:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/telegram/domains.txt
     release_path: releases/telegram/snap-telegram-ae2063026508ed946661df66/release.json
     snapshot_id: snap-telegram-ae2063026508ed946661df66
@@ -500,8 +500,8 @@ bindings:
   discord:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/discord/domains.txt
     release_path: releases/discord/snap-discord-e5a47c19f5c45c25c613f6f6/release.json
     snapshot_id: snap-discord-e5a47c19f5c45c25c613f6f6
@@ -530,8 +530,8 @@ bindings:
   appstore:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/appstore/domains.txt
     release_path: releases/appstore/snap-appstore-d141bbc12b271c916f41990c/release.json
     snapshot_id: snap-appstore-d141bbc12b271c916f41990c
@@ -545,8 +545,8 @@ bindings:
   testflight:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/testflight/domains.txt
     release_path: releases/testflight/snap-testflight-922accff387fa39f172c3c41/release.json
     snapshot_id: snap-testflight-922accff387fa39f172c3c41
@@ -560,8 +560,8 @@ bindings:
   icloud:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/icloud/domains.txt
     release_path: releases/icloud/snap-icloud-d3bceca16ccfbb5fe06c64f6/release.json
     snapshot_id: snap-icloud-d3bceca16ccfbb5fe06c64f6
@@ -575,8 +575,8 @@ bindings:
   applemusic:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/applemusic/domains.txt
     release_path: releases/applemusic/snap-applemusic-da04320590fe88862d5e36fb/release.json
     snapshot_id: snap-applemusic-da04320590fe88862d5e36fb
@@ -590,8 +590,8 @@ bindings:
   googledrive:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/googledrive/domains.txt
     release_path: releases/googledrive/snap-googledrive-a3f033b61b8bc0b99e39f7ca/release.json
     snapshot_id: snap-googledrive-a3f033b61b8bc0b99e39f7ca
@@ -605,8 +605,8 @@ bindings:
   youtubemusic:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/youtubemusic/domains.txt
     release_path: releases/youtubemusic/snap-youtubemusic-0e39136672e2e05e52470bd5/release.json
     snapshot_id: snap-youtubemusic-0e39136672e2e05e52470bd5
@@ -620,8 +620,8 @@ bindings:
   onedrive:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/onedrive/domains.txt
     release_path: releases/onedrive/snap-onedrive-241ab9a1831b3f0a3affb85a/release.json
     snapshot_id: snap-onedrive-241ab9a1831b3f0a3affb85a
@@ -635,8 +635,8 @@ bindings:
   teams:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/teams/domains.txt
     release_path: releases/teams/snap-teams-b7790f52024c56ece9273ef3/release.json
     snapshot_id: snap-teams-b7790f52024c56ece9273ef3
@@ -650,8 +650,8 @@ bindings:
   wechat:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/wechat/domains.txt
     release_path: releases/wechat/snap-wechat-84a8d3ac3ff682614f4d7470/release.json
     snapshot_id: snap-wechat-84a8d3ac3ff682614f4d7470
@@ -665,8 +665,8 @@ bindings:
   baidutieba:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/baidutieba/domains.txt
     release_path: releases/baidutieba/snap-baidutieba-9badf818529f1807c7959832/release.json
     snapshot_id: snap-baidutieba-9badf818529f1807c7959832
@@ -680,8 +680,8 @@ bindings:
   qq:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/qq/domains.txt
     release_path: releases/qq/snap-qq-e8b755c0889d871584191efb/release.json
     snapshot_id: snap-qq-e8b755c0889d871584191efb
@@ -708,40 +708,40 @@ bindings:
     release_identity_version: '2'
     expected_sha256: 2aebbb6663c3a4d3e1349f17a7c0ad4e00612bdaa90def806ff72318ae41b0ec
   honorofkings_cn:
-    status: retired
+    status: active
     source_id: popular-rules-source
-    source_ref: 56489947e6e078acee322f2146c4200e1f933b61
-    verified_input_commit: e8bea553618b97e7b04d1ff02fd02c29da04a178
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/honorofkings_cn/domains.txt
-    release_path: releases/honorofkings_cn/snap-honorofkings_cn-57adb02773f5157159b68a91/release.json
-    snapshot_id: snap-honorofkings_cn-57adb02773f5157159b68a91
-    content_digest: 7fc1bf6018b8658b5afaffa1ef9cfadb611c6897e8e88cf18a0aed83d0d2f282
-    evidence_digest: 951005cb237df6b5241599df6fc03e658c2136f716127cce74a9dc63fb880e48
-    policy_digest: 3dc2eeaac4a02dd24067a7f77461ea0b10a76f51df759eea61a3ca0dc94cba2a
-    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
-    release_digest: 57adb02773f5157159b68a91e7b844b358f37eff0c56e82096f01cf06efd8be9
+    release_path: releases/honorofkings_cn/snap-honorofkings_cn-a804aed53545aac4f58d34d8/release.json
+    snapshot_id: snap-honorofkings_cn-a804aed53545aac4f58d34d8
+    content_digest: 5fa9ebb3ba99b2f4dd3c2fe41776fe8e3e030817c126be6be558438f6f33eba3
+    evidence_digest: 614bb7c4146e3aefe82aaaa87044b4e622fdabaf330ab4bb31ca664696b16958
+    policy_digest: 9b41e23cc49fd84b4d74aaf90cc1459df8c95394eb6bed9266193392f1222cff
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: a804aed53545aac4f58d34d88537443431ba0c92a9ac3819e0a85c5e0db49d00
     release_identity_version: '2'
     expected_sha256: fc776b27c2e5e728d34abd5ad2dd7396cc45c565465c53b854b84e90c2292909
   honorofkings_global:
-    status: retired
+    status: active
     source_id: popular-rules-source
-    source_ref: 56489947e6e078acee322f2146c4200e1f933b61
-    verified_input_commit: e8bea553618b97e7b04d1ff02fd02c29da04a178
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/honorofkings_global/domains.txt
-    release_path: releases/honorofkings_global/snap-honorofkings_global-fe8b3504fe8ce38843ef7009/release.json
-    snapshot_id: snap-honorofkings_global-fe8b3504fe8ce38843ef7009
-    content_digest: 67674cc06147d4cce0c477d9cb62142463d12bcc60b89383d26a5775157b8289
-    evidence_digest: a7b580012d453895bc4a173487ce801fcfa92fd5fe1493ec14fc0bffebe470dd
-    policy_digest: c2c4987920dc31609831b57754e93946f0fffb163036f746e954f34221281720
-    generator_digest: 4b9aa8f4f82bbf045f6d0f5e97035d5229c3105ec91cff8784c75c6ec64e8f17
-    release_digest: fe8b3504fe8ce38843ef700996725fd4dc1581a19ae7a1524fe15a35ca4193d0
+    release_path: releases/honorofkings_global/snap-honorofkings_global-9271ce0b7c8d6b9d6d1836fa/release.json
+    snapshot_id: snap-honorofkings_global-9271ce0b7c8d6b9d6d1836fa
+    content_digest: a65a9070a8efb6ef57dd2a698711cdbb30a9ba3963e8c009bf538d47b65590af
+    evidence_digest: 733edbee49f42727e7ad36e9b529cd06e634f05ba4b1ee43e5a41384c4a4151c
+    policy_digest: 4ba44b3e8b8a3a36eb1f7c340fdb0a9b5ed59db996c29122cef22b0be5f8fbc0
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 9271ce0b7c8d6b9d6d1836fadc05ed115871fa0d88a94c82c942d81b93331f01
     release_identity_version: '2'
     expected_sha256: dbf2e6a868c722d919abaf57d554add4034fcf1d3ec46b01c67e4496d43b27d8
   neteasemusic:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/neteasemusic/domains.txt
     release_path: releases/neteasemusic/snap-neteasemusic-34efc854219f96a2aa121d84/release.json
     snapshot_id: snap-neteasemusic-34efc854219f96a2aa121d84
@@ -755,8 +755,8 @@ bindings:
   douyin:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/douyin/domains.txt
     release_path: releases/douyin/snap-douyin-3780b3c2b6ee1a9abdccf245/release.json
     snapshot_id: snap-douyin-3780b3c2b6ee1a9abdccf245
@@ -770,8 +770,8 @@ bindings:
   appledev:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/appledev/domains.txt
     release_path: releases/appledev/snap-appledev-69881d2207a1d8d4377f2166/release.json
     snapshot_id: snap-appledev-69881d2207a1d8d4377f2166
@@ -785,8 +785,8 @@ bindings:
   findmy:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/findmy/domains.txt
     release_path: releases/findmy/snap-findmy-5dbfa7a125855e4ee11e3daf/release.json
     snapshot_id: snap-findmy-5dbfa7a125855e4ee11e3daf
@@ -800,8 +800,8 @@ bindings:
   azure:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/azure/domains.txt
     release_path: releases/azure/snap-azure-b3a73e93d99fb11dc21e4888/release.json
     snapshot_id: snap-azure-b3a73e93d99fb11dc21e4888
@@ -815,8 +815,8 @@ bindings:
   feishu:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/feishu/domains.txt
     release_path: releases/feishu/snap-feishu-dd8e2cd8a4ac32fa8b355226/release.json
     snapshot_id: snap-feishu-dd8e2cd8a4ac32fa8b355226
@@ -830,8 +830,8 @@ bindings:
   appletv:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/appletv/domains.txt
     release_path: releases/appletv/snap-appletv-b983ca24d850eeada428f1da/release.json
     snapshot_id: snap-appletv-b983ca24d850eeada428f1da
@@ -845,8 +845,8 @@ bindings:
   youtube:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/youtube/domains.txt
     release_path: releases/youtube/snap-youtube-58b8afe3b6062febd60fd519/release.json
     snapshot_id: snap-youtube-58b8afe3b6062febd60fd519
@@ -860,8 +860,8 @@ bindings:
   googlefcm:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/googlefcm/domains.txt
     release_path: releases/googlefcm/snap-googlefcm-d2649b705a9906c0296cdbaf/release.json
     snapshot_id: snap-googlefcm-d2649b705a9906c0296cdbaf
@@ -875,8 +875,8 @@ bindings:
   xbox:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/xbox/domains.txt
     release_path: releases/xbox/snap-xbox-c056e17cbe3622251ba30c82/release.json
     snapshot_id: snap-xbox-c056e17cbe3622251ba30c82
@@ -890,8 +890,8 @@ bindings:
   github:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/github/domains.txt
     release_path: releases/github/snap-github-293b2b0db400e778bcfe88a7/release.json
     snapshot_id: snap-github-293b2b0db400e778bcfe88a7
@@ -905,8 +905,8 @@ bindings:
   tencentvideo:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/tencentvideo/domains.txt
     release_path: releases/tencentvideo/snap-tencentvideo-0bbc97349dbece8ea2628b3f/release.json
     snapshot_id: snap-tencentvideo-0bbc97349dbece8ea2628b3f
@@ -920,8 +920,8 @@ bindings:
   siri:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/siri/domains.txt
     release_path: releases/siri/snap-siri-440b4c5a63d59b410d5e32fa/release.json
     snapshot_id: snap-siri-440b4c5a63d59b410d5e32fa
@@ -935,8 +935,8 @@ bindings:
   neteasemail:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/neteasemail/domains.txt
     release_path: releases/neteasemail/snap-neteasemail-8f25db6f713ea62f08bd565b/release.json
     snapshot_id: snap-neteasemail-8f25db6f713ea62f08bd565b
@@ -950,8 +950,8 @@ bindings:
   adobe-firefly:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/adobe-firefly/domains.txt
     release_path: releases/adobe-firefly/snap-adobe-firefly-278e98581b6f8e62e261931a/release.json
     snapshot_id: snap-adobe-firefly-278e98581b6f8e62e261931a
@@ -965,8 +965,8 @@ bindings:
   adobe-fonts:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/adobe-fonts/domains.txt
     release_path: releases/adobe-fonts/snap-adobe-fonts-0cfd6c78ffb842903de0152c/release.json
     snapshot_id: snap-adobe-fonts-0cfd6c78ffb842903de0152c
@@ -980,8 +980,8 @@ bindings:
   adobe-stock:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/adobe-stock/domains.txt
     release_path: releases/adobe-stock/snap-adobe-stock-fb5983c8b0ef609fde49e4e0/release.json
     snapshot_id: snap-adobe-stock-fb5983c8b0ef609fde49e4e0
@@ -995,8 +995,8 @@ bindings:
   amazonmusic:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/amazonmusic/domains.txt
     release_path: releases/amazonmusic/snap-amazonmusic-8f36e1717aca94afda1ee0d0/release.json
     snapshot_id: snap-amazonmusic-8f36e1717aca94afda1ee0d0
@@ -1010,8 +1010,8 @@ bindings:
   anthropic-claude:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/anthropic-claude/domains.txt
     release_path: releases/anthropic-claude/snap-anthropic-claude-57b3b3b1999c5d83d8f322a5/release.json
     snapshot_id: snap-anthropic-claude-57b3b3b1999c5d83d8f322a5
@@ -1025,8 +1025,8 @@ bindings:
   anthropic-platform:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/anthropic-platform/domains.txt
     release_path: releases/anthropic-platform/snap-anthropic-platform-7bf2ee650853808906839699/release.json
     snapshot_id: snap-anthropic-platform-7bf2ee650853808906839699
@@ -1040,8 +1040,8 @@ bindings:
   audible:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/audible/domains.txt
     release_path: releases/audible/snap-audible-2ae1b9d59ebdc6174db597b1/release.json
     snapshot_id: snap-audible-2ae1b9d59ebdc6174db597b1
@@ -1055,8 +1055,8 @@ bindings:
   chatgpt:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/chatgpt/domains.txt
     release_path: releases/chatgpt/snap-chatgpt-cc1e48c936f2293870e7e2c0/release.json
     snapshot_id: snap-chatgpt-cc1e48c936f2293870e7e2c0
@@ -1070,8 +1070,8 @@ bindings:
   goodreads:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/goodreads/domains.txt
     release_path: releases/goodreads/snap-goodreads-eb7a2c816de0efe942519ac8/release.json
     snapshot_id: snap-goodreads-eb7a2c816de0efe942519ac8
@@ -1085,8 +1085,8 @@ bindings:
   huawei-cloud:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/huawei-cloud/domains.txt
     release_path: releases/huawei-cloud/snap-huawei-cloud-baad7d83f4093ace2f04705c/release.json
     snapshot_id: snap-huawei-cloud-baad7d83f4093ace2f04705c
@@ -1100,8 +1100,8 @@ bindings:
   jd-cloud:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/jd-cloud/domains.txt
     release_path: releases/jd-cloud/snap-jd-cloud-7364b0a4c509c49727621c40/release.json
     snapshot_id: snap-jd-cloud-7364b0a4c509c49727621c40
@@ -1115,8 +1115,8 @@ bindings:
   kugou:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/kugou/domains.txt
     release_path: releases/kugou/snap-kugou-bd7700e11c8ff2c07e7b9321/release.json
     snapshot_id: snap-kugou-bd7700e11c8ff2c07e7b9321
@@ -1130,8 +1130,8 @@ bindings:
   kuwo:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/kuwo/domains.txt
     release_path: releases/kuwo/snap-kuwo-c36f7d9497fdd5e0b0806d93/release.json
     snapshot_id: snap-kuwo-c36f7d9497fdd5e0b0806d93
@@ -1145,8 +1145,8 @@ bindings:
   mi-cloud:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/mi-cloud/domains.txt
     release_path: releases/mi-cloud/snap-mi-cloud-e876da13d4a50a1abf1ddb7a/release.json
     snapshot_id: snap-mi-cloud-e876da13d4a50a1abf1ddb7a
@@ -1160,8 +1160,8 @@ bindings:
   openai-api:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/openai-api/domains.txt
     release_path: releases/openai-api/snap-openai-api-c8952ba8249663ca6f49098d/release.json
     snapshot_id: snap-openai-api-c8952ba8249663ca6f49098d
@@ -1175,8 +1175,8 @@ bindings:
   openai-platform:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/openai-platform/domains.txt
     release_path: releases/openai-platform/snap-openai-platform-769b5880b0899016f4335a85/release.json
     snapshot_id: snap-openai-platform-769b5880b0899016f4335a85
@@ -1190,8 +1190,8 @@ bindings:
   quanmin-k-ge:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/quanmin-k-ge/domains.txt
     release_path: releases/quanmin-k-ge/snap-quanmin-k-ge-00c1b63526a1b67c5f490aaf/release.json
     snapshot_id: snap-quanmin-k-ge-00c1b63526a1b67c5f490aaf
@@ -1205,8 +1205,8 @@ bindings:
   stripe-dashboard:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/stripe-dashboard/domains.txt
     release_path: releases/stripe-dashboard/snap-stripe-dashboard-e5667382cb3f12c246ad8660/release.json
     snapshot_id: snap-stripe-dashboard-e5667382cb3f12c246ad8660
@@ -1220,8 +1220,8 @@ bindings:
   venmo:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/venmo/domains.txt
     release_path: releases/venmo/snap-venmo-ad97a6f5008ebab004dbad8a/release.json
     snapshot_id: snap-venmo-ad97a6f5008ebab004dbad8a
@@ -1235,8 +1235,8 @@ bindings:
   xai-grok:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/xai-grok/domains.txt
     release_path: releases/xai-grok/snap-xai-grok-0f56662ce92c5717e8909b9d/release.json
     snapshot_id: snap-xai-grok-0f56662ce92c5717e8909b9d
@@ -1250,8 +1250,8 @@ bindings:
   applebooks:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/applebooks/domains.txt
     release_path: releases/applebooks/snap-applebooks-1a82b91eb9b4c8feecb94c8a/release.json
     snapshot_id: snap-applebooks-1a82b91eb9b4c8feecb94c8a
@@ -1265,8 +1265,8 @@ bindings:
   applemaps:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/applemaps/domains.txt
     release_path: releases/applemaps/snap-applemaps-71a1a34ed238b4cf742e293e/release.json
     snapshot_id: snap-applemaps-71a1a34ed238b4cf742e293e
@@ -1280,8 +1280,8 @@ bindings:
   applepodcasts:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/applepodcasts/domains.txt
     release_path: releases/applepodcasts/snap-applepodcasts-4bfb9ca6b27a141e7aa9fa0c/release.json
     snapshot_id: snap-applepodcasts-4bfb9ca6b27a141e7aa9fa0c
@@ -1295,8 +1295,8 @@ bindings:
   gmail:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/gmail/domains.txt
     release_path: releases/gmail/snap-gmail-c3a855e07fa2cf45651ae3a4/release.json
     snapshot_id: snap-gmail-c3a855e07fa2cf45651ae3a4
@@ -1310,8 +1310,8 @@ bindings:
   google-calendar:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/google-calendar/domains.txt
     release_path: releases/google-calendar/snap-google-calendar-1b852f9159dd62fdc2bbde01/release.json
     snapshot_id: snap-google-calendar-1b852f9159dd62fdc2bbde01
@@ -1325,8 +1325,8 @@ bindings:
   google-chat:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/google-chat/domains.txt
     release_path: releases/google-chat/snap-google-chat-25e1acd75e54a275f491a913/release.json
     snapshot_id: snap-google-chat-25e1acd75e54a275f491a913
@@ -1340,8 +1340,8 @@ bindings:
   google-contacts:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/google-contacts/domains.txt
     release_path: releases/google-contacts/snap-google-contacts-3ad5c7ecb05956597c4ae5ca/release.json
     snapshot_id: snap-google-contacts-3ad5c7ecb05956597c4ae5ca
@@ -1355,8 +1355,8 @@ bindings:
   google-docs:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/google-docs/domains.txt
     release_path: releases/google-docs/snap-google-docs-373a011368bfd8cccaccc4dd/release.json
     snapshot_id: snap-google-docs-373a011368bfd8cccaccc4dd
@@ -1370,8 +1370,8 @@ bindings:
   google-earth:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/google-earth/domains.txt
     release_path: releases/google-earth/snap-google-earth-d9b76bf3506634dccd2b96e2/release.json
     snapshot_id: snap-google-earth-d9b76bf3506634dccd2b96e2
@@ -1385,8 +1385,8 @@ bindings:
   google-forms:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/google-forms/domains.txt
     release_path: releases/google-forms/snap-google-forms-559aea19004e62de9eb7175d/release.json
     snapshot_id: snap-google-forms-559aea19004e62de9eb7175d
@@ -1400,8 +1400,8 @@ bindings:
   google-groups:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/google-groups/domains.txt
     release_path: releases/google-groups/snap-google-groups-ee345194168348f5b9b4cad2/release.json
     snapshot_id: snap-google-groups-ee345194168348f5b9b4cad2
@@ -1415,8 +1415,8 @@ bindings:
   google-maps:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/google-maps/domains.txt
     release_path: releases/google-maps/snap-google-maps-ad2f1a8bcd3a536fca6b3dac/release.json
     snapshot_id: snap-google-maps-ad2f1a8bcd3a536fca6b3dac
@@ -1430,8 +1430,8 @@ bindings:
   google-meet:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/google-meet/domains.txt
     release_path: releases/google-meet/snap-google-meet-c4280ce1e242a4dd7b758342/release.json
     snapshot_id: snap-google-meet-c4280ce1e242a4dd7b758342
@@ -1445,8 +1445,8 @@ bindings:
   google-news:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/google-news/domains.txt
     release_path: releases/google-news/snap-google-news-78c4526fe0a249e933aed4ff/release.json
     snapshot_id: snap-google-news-78c4526fe0a249e933aed4ff
@@ -1460,8 +1460,8 @@ bindings:
   google-photos:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/google-photos/domains.txt
     release_path: releases/google-photos/snap-google-photos-c2fe7615ea4cf011cdbc31de/release.json
     snapshot_id: snap-google-photos-c2fe7615ea4cf011cdbc31de
@@ -1475,8 +1475,8 @@ bindings:
   google-play:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/google-play/domains.txt
     release_path: releases/google-play/snap-google-play-8521d59544a0decf823e859c/release.json
     snapshot_id: snap-google-play-8521d59544a0decf823e859c
@@ -1490,8 +1490,8 @@ bindings:
   google-sheets:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/google-sheets/domains.txt
     release_path: releases/google-sheets/snap-google-sheets-6de01de6e87331067661ad92/release.json
     snapshot_id: snap-google-sheets-6de01de6e87331067661ad92
@@ -1505,8 +1505,8 @@ bindings:
   google-sites:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/google-sites/domains.txt
     release_path: releases/google-sites/snap-google-sites-8110ded44cc74b3e78e32ecc/release.json
     snapshot_id: snap-google-sites-8110ded44cc74b3e78e32ecc
@@ -1520,8 +1520,8 @@ bindings:
   google-slides:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/google-slides/domains.txt
     release_path: releases/google-slides/snap-google-slides-4b5f8f5fff72ee076ba11416/release.json
     snapshot_id: snap-google-slides-4b5f8f5fff72ee076ba11416
@@ -1535,8 +1535,8 @@ bindings:
   google-vids:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/google-vids/domains.txt
     release_path: releases/google-vids/snap-google-vids-e595a5032f87e5544cb3874e/release.json
     snapshot_id: snap-google-vids-e595a5032f87e5544cb3874e
@@ -1550,8 +1550,8 @@ bindings:
   google-voice:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/google-voice/domains.txt
     release_path: releases/google-voice/snap-google-voice-d823134be8c59031aa5055d8/release.json
     snapshot_id: snap-google-voice-d823134be8c59031aa5055d8
@@ -1565,8 +1565,8 @@ bindings:
   google-workspace-studio:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/google-workspace-studio/domains.txt
     release_path: releases/google-workspace-studio/snap-google-workspace-studio-a936fad5df9362c828fb9d68/release.json
     snapshot_id: snap-google-workspace-studio-a936fad5df9362c828fb9d68
@@ -1580,8 +1580,8 @@ bindings:
   ms365-excel:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/ms365-excel/domains.txt
     release_path: releases/ms365-excel/snap-ms365-excel-84491a426ae08f1b75786d09/release.json
     snapshot_id: snap-ms365-excel-84491a426ae08f1b75786d09
@@ -1595,8 +1595,8 @@ bindings:
   ms365-loop:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/ms365-loop/domains.txt
     release_path: releases/ms365-loop/snap-ms365-loop-65886fc777a8ed550f93fb60/release.json
     snapshot_id: snap-ms365-loop-65886fc777a8ed550f93fb60
@@ -1610,8 +1610,8 @@ bindings:
   ms365-mesh:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/ms365-mesh/domains.txt
     release_path: releases/ms365-mesh/snap-ms365-mesh-cb11ed05173e638e4642ab11/release.json
     snapshot_id: snap-ms365-mesh-cb11ed05173e638e4642ab11
@@ -1625,8 +1625,8 @@ bindings:
   ms365-onenote:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/ms365-onenote/domains.txt
     release_path: releases/ms365-onenote/snap-ms365-onenote-5115ce5bb375c71660f5b78f/release.json
     snapshot_id: snap-ms365-onenote-5115ce5bb375c71660f5b78f
@@ -1640,8 +1640,8 @@ bindings:
   ms365-planner:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/ms365-planner/domains.txt
     release_path: releases/ms365-planner/snap-ms365-planner-c6ee135c73112ab31f5132b3/release.json
     snapshot_id: snap-ms365-planner-c6ee135c73112ab31f5132b3
@@ -1655,8 +1655,8 @@ bindings:
   ms365-powerpoint:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/ms365-powerpoint/domains.txt
     release_path: releases/ms365-powerpoint/snap-ms365-powerpoint-0e7ea85ee45bd767f51ac6b6/release.json
     snapshot_id: snap-ms365-powerpoint-0e7ea85ee45bd767f51ac6b6
@@ -1670,8 +1670,8 @@ bindings:
   ms365-word:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/ms365-word/domains.txt
     release_path: releases/ms365-word/snap-ms365-word-0eb9e29c143572c255507c67/release.json
     snapshot_id: snap-ms365-word-0eb9e29c143572c255507c67
@@ -1685,8 +1685,8 @@ bindings:
   office:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/office/domains.txt
     release_path: releases/office/snap-office-16c488c0914d570060921459/release.json
     snapshot_id: snap-office-16c488c0914d570060921459
@@ -1700,8 +1700,8 @@ bindings:
   outlook:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/outlook/domains.txt
     release_path: releases/outlook/snap-outlook-5b6d555db235bd3f501eae14/release.json
     snapshot_id: snap-outlook-5b6d555db235bd3f501eae14
@@ -1715,8 +1715,8 @@ bindings:
   amd:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/amd/domains.txt
     release_path: releases/amd/snap-amd-d39c5ad3a11f464cc588c7f6/release.json
     snapshot_id: snap-amd-d39c5ad3a11f464cc588c7f6
@@ -1730,8 +1730,8 @@ bindings:
   arm:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/arm/domains.txt
     release_path: releases/arm/snap-arm-09d5469ad7bdd751fb9b70ea/release.json
     snapshot_id: snap-arm-09d5469ad7bdd751fb9b70ea
@@ -1745,8 +1745,8 @@ bindings:
   atlassian:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/atlassian/domains.txt
     release_path: releases/atlassian/snap-atlassian-b7b664182b05e06d3e50139e/release.json
     snapshot_id: snap-atlassian-b7b664182b05e06d3e50139e
@@ -1760,8 +1760,8 @@ bindings:
   autohome:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/autohome/domains.txt
     release_path: releases/autohome/snap-autohome-119d2c8be99debed50fda277/release.json
     snapshot_id: snap-autohome-119d2c8be99debed50fda277
@@ -1775,8 +1775,8 @@ bindings:
   beike:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/beike/domains.txt
     release_path: releases/beike/snap-beike-ae0847a06f68cb6ccc9b1d93/release.json
     snapshot_id: snap-beike-ae0847a06f68cb6ccc9b1d93
@@ -1790,8 +1790,8 @@ bindings:
   cisco:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/cisco/domains.txt
     release_path: releases/cisco/snap-cisco-9a3aaeb43d6d3a0a5e07a015/release.json
     snapshot_id: snap-cisco-9a3aaeb43d6d3a0a5e07a015
@@ -1805,8 +1805,8 @@ bindings:
   coinbase:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/coinbase/domains.txt
     release_path: releases/coinbase/snap-coinbase-428453f560b2b36a037ae4a8/release.json
     snapshot_id: snap-coinbase-428453f560b2b36a037ae4a8
@@ -1820,8 +1820,8 @@ bindings:
   crowdstrike:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/crowdstrike/domains.txt
     release_path: releases/crowdstrike/snap-crowdstrike-93425b240aa10465a1666359/release.json
     snapshot_id: snap-crowdstrike-93425b240aa10465a1666359
@@ -1835,8 +1835,8 @@ bindings:
   ctyun:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/ctyun/domains.txt
     release_path: releases/ctyun/snap-ctyun-4274fec1e04159015436e52f/release.json
     snapshot_id: snap-ctyun-4274fec1e04159015436e52f
@@ -1850,8 +1850,8 @@ bindings:
   databricks:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/databricks/domains.txt
     release_path: releases/databricks/snap-databricks-d612a4dc8584d5154f905273/release.json
     snapshot_id: snap-databricks-d612a4dc8584d5154f905273
@@ -1865,8 +1865,8 @@ bindings:
   datadog:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/datadog/domains.txt
     release_path: releases/datadog/snap-datadog-507e01df7ff9a667069ba1fd/release.json
     snapshot_id: snap-datadog-507e01df7ff9a667069ba1fd
@@ -1880,8 +1880,8 @@ bindings:
   eastmoney:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/eastmoney/domains.txt
     release_path: releases/eastmoney/snap-eastmoney-1aebbd7125a8244e9014e3ff/release.json
     snapshot_id: snap-eastmoney-1aebbd7125a8244e9014e3ff
@@ -1895,8 +1895,8 @@ bindings:
   heytap:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/heytap/domains.txt
     release_path: releases/heytap/snap-heytap-c0fad031b445f1ba2e0df58f/release.json
     snapshot_id: snap-heytap-c0fad031b445f1ba2e0df58f
@@ -1910,8 +1910,8 @@ bindings:
   ibm:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/ibm/domains.txt
     release_path: releases/ibm/snap-ibm-37965a10aeb0c5a5dcbd06cc/release.json
     snapshot_id: snap-ibm-37965a10aeb0c5a5dcbd06cc
@@ -1925,8 +1925,8 @@ bindings:
   iflytek:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/iflytek/domains.txt
     release_path: releases/iflytek/snap-iflytek-4efe816c7539950150d3efde/release.json
     snapshot_id: snap-iflytek-4efe816c7539950150d3efde
@@ -1940,8 +1940,8 @@ bindings:
   intel:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/intel/domains.txt
     release_path: releases/intel/snap-intel-ae6db8931e41867ab2c9ce5d/release.json
     snapshot_id: snap-intel-ae6db8931e41867ab2c9ce5d
@@ -1955,8 +1955,8 @@ bindings:
   kingdee:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/kingdee/domains.txt
     release_path: releases/kingdee/snap-kingdee-42ceda0ada5607414b5eea3f/release.json
     snapshot_id: snap-kingdee-42ceda0ada5607414b5eea3f
@@ -1970,8 +1970,8 @@ bindings:
   mgtv:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/mgtv/domains.txt
     release_path: releases/mgtv/snap-mgtv-ffd1b433e2f0ebb7e775204b/release.json
     snapshot_id: snap-mgtv-ffd1b433e2f0ebb7e775204b
@@ -1985,8 +1985,8 @@ bindings:
   migu:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/migu/domains.txt
     release_path: releases/migu/snap-migu-2c130d2595cc59d07fca2f2c/release.json
     snapshot_id: snap-migu-2c130d2595cc59d07fca2f2c
@@ -2000,8 +2000,8 @@ bindings:
   minimax:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/minimax/domains.txt
     release_path: releases/minimax/snap-minimax-c9a118b15225676be85a7e13/release.json
     snapshot_id: snap-minimax-c9a118b15225676be85a7e13
@@ -2015,8 +2015,8 @@ bindings:
   mongodb:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/mongodb/domains.txt
     release_path: releases/mongodb/snap-mongodb-f2f9a87cf8d835b8983e37f3/release.json
     snapshot_id: snap-mongodb-f2f9a87cf8d835b8983e37f3
@@ -2030,8 +2030,8 @@ bindings:
   moonshot:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/moonshot/domains.txt
     release_path: releases/moonshot/snap-moonshot-caaddf9c7a19a0dffbd811fd/release.json
     snapshot_id: snap-moonshot-caaddf9c7a19a0dffbd811fd
@@ -2045,8 +2045,8 @@ bindings:
   nvidia:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/nvidia/domains.txt
     release_path: releases/nvidia/snap-nvidia-a6059abb14e07ee76462cbe5/release.json
     snapshot_id: snap-nvidia-a6059abb14e07ee76462cbe5
@@ -2060,8 +2060,8 @@ bindings:
   okta:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/okta/domains.txt
     release_path: releases/okta/snap-okta-eacf3a9a634e3b2ac73a25b0/release.json
     snapshot_id: snap-okta-eacf3a9a634e3b2ac73a25b0
@@ -2075,8 +2075,8 @@ bindings:
   qualcomm:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/qualcomm/domains.txt
     release_path: releases/qualcomm/snap-qualcomm-cd7555bc47c58157a10b7850/release.json
     snapshot_id: snap-qualcomm-cd7555bc47c58157a10b7850
@@ -2090,8 +2090,8 @@ bindings:
   qunar:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/qunar/domains.txt
     release_path: releases/qunar/snap-qunar-88bfe5677a93332e63577a9c/release.json
     snapshot_id: snap-qunar-88bfe5677a93332e63577a9c
@@ -2105,8 +2105,8 @@ bindings:
   salesforce:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/salesforce/domains.txt
     release_path: releases/salesforce/snap-salesforce-31ea38c4cef525d27776ca23/release.json
     snapshot_id: snap-salesforce-31ea38c4cef525d27776ca23
@@ -2120,8 +2120,8 @@ bindings:
   samsung:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/samsung/domains.txt
     release_path: releases/samsung/snap-samsung-2145c8ff882fa86961ad29d9/release.json
     snapshot_id: snap-samsung-2145c8ff882fa86961ad29d9
@@ -2135,8 +2135,8 @@ bindings:
   sap:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/sap/domains.txt
     release_path: releases/sap/snap-sap-f44a3acab908f192ae52c5ac/release.json
     snapshot_id: snap-sap-f44a3acab908f192ae52c5ac
@@ -2150,8 +2150,8 @@ bindings:
   sfexpress:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/sfexpress/domains.txt
     release_path: releases/sfexpress/snap-sfexpress-a5cd2546c841102ce8e7b4d2/release.json
     snapshot_id: snap-sfexpress-a5cd2546c841102ce8e7b4d2
@@ -2165,8 +2165,8 @@ bindings:
   shimo:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/shimo/domains.txt
     release_path: releases/shimo/snap-shimo-88a8b1eb120cde0c758e15b8/release.json
     snapshot_id: snap-shimo-88a8b1eb120cde0c758e15b8
@@ -2180,8 +2180,8 @@ bindings:
   snowflake:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/snowflake/domains.txt
     release_path: releases/snowflake/snap-snowflake-5e58fc10ac5e533519bfa88c/release.json
     snapshot_id: snap-snowflake-5e58fc10ac5e533519bfa88c
@@ -2195,8 +2195,8 @@ bindings:
   sony:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/sony/domains.txt
     release_path: releases/sony/snap-sony-382278062b14392df186ceec/release.json
     snapshot_id: snap-sony-382278062b14392df186ceec
@@ -2210,8 +2210,8 @@ bindings:
   temu:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/temu/domains.txt
     release_path: releases/temu/snap-temu-755cb28a74f87d97853dc205/release.json
     snapshot_id: snap-temu-755cb28a74f87d97853dc205
@@ -2225,8 +2225,8 @@ bindings:
   tesla:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/tesla/domains.txt
     release_path: releases/tesla/snap-tesla-314c9a27dfa03ba8ee211f51/release.json
     snapshot_id: snap-tesla-314c9a27dfa03ba8ee211f51
@@ -2240,8 +2240,8 @@ bindings:
   twilio:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/twilio/domains.txt
     release_path: releases/twilio/snap-twilio-f7887186eddfb1d28d9fd50b/release.json
     snapshot_id: snap-twilio-f7887186eddfb1d28d9fd50b
@@ -2255,8 +2255,8 @@ bindings:
   vipshop:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/vipshop/domains.txt
     release_path: releases/vipshop/snap-vipshop-73e31c6722deb6afbde50474/release.json
     snapshot_id: snap-vipshop-73e31c6722deb6afbde50474
@@ -2270,8 +2270,8 @@ bindings:
   wps:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/wps/domains.txt
     release_path: releases/wps/snap-wps-861720e326a9c4914d78ecb1/release.json
     snapshot_id: snap-wps-861720e326a9c4914d78ecb1
@@ -2285,8 +2285,8 @@ bindings:
   xunlei:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/xunlei/domains.txt
     release_path: releases/xunlei/snap-xunlei-44fbe977943e79cd5112f682/release.json
     snapshot_id: snap-xunlei-44fbe977943e79cd5112f682
@@ -2300,8 +2300,8 @@ bindings:
   yonyou:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/yonyou/domains.txt
     release_path: releases/yonyou/snap-yonyou-86528b8d7bffa51440d11b83/release.json
     snapshot_id: snap-yonyou-86528b8d7bffa51440d11b83
@@ -2315,8 +2315,8 @@ bindings:
   zhipin:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/zhipin/domains.txt
     release_path: releases/zhipin/snap-zhipin-7fb74eecaa4a447df440a8e2/release.json
     snapshot_id: snap-zhipin-7fb74eecaa4a447df440a8e2
@@ -2330,8 +2330,8 @@ bindings:
   zhipu:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/zhipu/domains.txt
     release_path: releases/zhipu/snap-zhipu-b777d801e25dcde103be6414/release.json
     snapshot_id: snap-zhipu-b777d801e25dcde103be6414
@@ -2345,8 +2345,8 @@ bindings:
   37games:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/37games/domains.txt
     release_path: releases/37games/snap-37games-8a465d1cde5472566a14998b/release.json
     snapshot_id: snap-37games-8a465d1cde5472566a14998b
@@ -2360,8 +2360,8 @@ bindings:
   aliexpress:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/aliexpress/domains.txt
     release_path: releases/aliexpress/snap-aliexpress-96471da327814186bdb36a68/release.json
     snapshot_id: snap-aliexpress-96471da327814186bdb36a68
@@ -2375,8 +2375,8 @@ bindings:
   alipay:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/alipay/domains.txt
     release_path: releases/alipay/snap-alipay-7e39ca630ab553d1bd55c414/release.json
     snapshot_id: snap-alipay-7e39ca630ab553d1bd55c414
@@ -2390,8 +2390,8 @@ bindings:
   amap:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/amap/domains.txt
     release_path: releases/amap/snap-amap-e135e4fdc9f54e283658b727/release.json
     snapshot_id: snap-amap-e135e4fdc9f54e283658b727
@@ -2405,8 +2405,8 @@ bindings:
   anjuke:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/anjuke/domains.txt
     release_path: releases/anjuke/snap-anjuke-0e1ad2a9baadd35c14c4008a/release.json
     snapshot_id: snap-anjuke-0e1ad2a9baadd35c14c4008a
@@ -2420,8 +2420,8 @@ bindings:
   anker:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/anker/domains.txt
     release_path: releases/anker/snap-anker-9a9b06e7d8a0555ff7d6aedc/release.json
     snapshot_id: snap-anker-9a9b06e7d8a0555ff7d6aedc
@@ -2435,8 +2435,8 @@ bindings:
   arista:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/arista/domains.txt
     release_path: releases/arista/snap-arista-840df54358b90619c408e5f4/release.json
     snapshot_id: snap-arista-840df54358b90619c408e5f4
@@ -2450,8 +2450,8 @@ bindings:
   asml:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/asml/domains.txt
     release_path: releases/asml/snap-asml-5c02ccc337a824804f8d06c3/release.json
     snapshot_id: snap-asml-5c02ccc337a824804f8d06c3
@@ -2465,8 +2465,8 @@ bindings:
   atour:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/atour/domains.txt
     release_path: releases/atour/snap-atour-48582d816984996f87f1adf8/release.json
     snapshot_id: snap-atour-48582d816984996f87f1adf8
@@ -2480,8 +2480,8 @@ bindings:
   autodesk:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/autodesk/domains.txt
     release_path: releases/autodesk/snap-autodesk-ec9852888af1e9f52eadafd2/release.json
     snapshot_id: snap-autodesk-ec9852888af1e9f52eadafd2
@@ -2495,8 +2495,8 @@ bindings:
   baichuan:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/baichuan/domains.txt
     release_path: releases/baichuan/snap-baichuan-e2d81430dd580b43da427a5d/release.json
     snapshot_id: snap-baichuan-e2d81430dd580b43da427a5d
@@ -2510,8 +2510,8 @@ bindings:
   boss:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/boss/domains.txt
     release_path: releases/boss/snap-boss-b8731077f1f1142b7d25a49d/release.json
     snapshot_id: snap-boss-b8731077f1f1142b7d25a49d
@@ -2525,8 +2525,8 @@ bindings:
   byd:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/byd/domains.txt
     release_path: releases/byd/snap-byd-372c75d54b5df2d6a71260d7/release.json
     snapshot_id: snap-byd-372c75d54b5df2d6a71260d7
@@ -2540,8 +2540,8 @@ bindings:
   capcut:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/capcut/domains.txt
     release_path: releases/capcut/snap-capcut-467bf7a873d3f21cf1d2dd12/release.json
     snapshot_id: snap-capcut-467bf7a873d3f21cf1d2dd12
@@ -2555,8 +2555,8 @@ bindings:
   dji:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/dji/domains.txt
     release_path: releases/dji/snap-dji-91217fbce3ff00d9c9cf090e/release.json
     snapshot_id: snap-dji-91217fbce3ff00d9c9cf090e
@@ -2570,8 +2570,8 @@ bindings:
   eleme:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/eleme/domains.txt
     release_path: releases/eleme/snap-eleme-8452b1a92a8c2c3d7503cf0e/release.json
     snapshot_id: snap-eleme-8452b1a92a8c2c3d7503cf0e
@@ -2585,8 +2585,8 @@ bindings:
   fliggy:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/fliggy/domains.txt
     release_path: releases/fliggy/snap-fliggy-1d25258037024c0da23217a3/release.json
     snapshot_id: snap-fliggy-1d25258037024c0da23217a3
@@ -2600,8 +2600,8 @@ bindings:
   haier:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/haier/domains.txt
     release_path: releases/haier/snap-haier-1d11d592bffb5709f2455f4f/release.json
     snapshot_id: snap-haier-1d11d592bffb5709f2455f4f
@@ -2615,8 +2615,8 @@ bindings:
   hikvision:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/hikvision/domains.txt
     release_path: releases/hikvision/snap-hikvision-48addd781bb964a4f72692f1/release.json
     snapshot_id: snap-hikvision-48addd781bb964a4f72692f1
@@ -2630,8 +2630,8 @@ bindings:
   honor:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/honor/domains.txt
     release_path: releases/honor/snap-honor-aa063550b6daa7a8994cc454/release.json
     snapshot_id: snap-honor-aa063550b6daa7a8994cc454
@@ -2645,8 +2645,8 @@ bindings:
   jianying:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/jianying/domains.txt
     release_path: releases/jianying/snap-jianying-34e07211430e783cee781fb1/release.json
     snapshot_id: snap-jianying-34e07211430e783cee781fb1
@@ -2660,8 +2660,8 @@ bindings:
   lark:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/lark/domains.txt
     release_path: releases/lark/snap-lark-0cd1d2b00d1ebd7917aee675/release.json
     snapshot_id: snap-lark-0cd1d2b00d1ebd7917aee675
@@ -2675,8 +2675,8 @@ bindings:
   lazada:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/lazada/domains.txt
     release_path: releases/lazada/snap-lazada-afca946398e6ec1cb9830db0/release.json
     snapshot_id: snap-lazada-afca946398e6ec1cb9830db0
@@ -2690,8 +2690,8 @@ bindings:
   lenovo:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/lenovo/domains.txt
     release_path: releases/lenovo/snap-lenovo-c8d84c550ab4949633bcea79/release.json
     snapshot_id: snap-lenovo-c8d84c550ab4949633bcea79
@@ -2705,8 +2705,8 @@ bindings:
   linkedin:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/linkedin/domains.txt
     release_path: releases/linkedin/snap-linkedin-454eb7556f0cd23a8662a2c1/release.json
     snapshot_id: snap-linkedin-454eb7556f0cd23a8662a2c1
@@ -2720,8 +2720,8 @@ bindings:
   palantir:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/palantir/domains.txt
     release_path: releases/palantir/snap-palantir-491431496aa1b899bd134242/release.json
     snapshot_id: snap-palantir-491431496aa1b899bd134242
@@ -2735,8 +2735,8 @@ bindings:
   powerbi:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/powerbi/domains.txt
     release_path: releases/powerbi/snap-powerbi-4a7b12792a8bd819db4df285/release.json
     snapshot_id: snap-powerbi-4a7b12792a8bd819db4df285
@@ -2750,8 +2750,8 @@ bindings:
   qihoo360:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/qihoo360/domains.txt
     release_path: releases/qihoo360/snap-qihoo360-74e11f09fbd29db005e57f0b/release.json
     snapshot_id: snap-qihoo360-74e11f09fbd29db005e57f0b
@@ -2765,8 +2765,8 @@ bindings:
   qqbrowser:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/qqbrowser/domains.txt
     release_path: releases/qqbrowser/snap-qqbrowser-ebac3c840c0e682c1defa4ee/release.json
     snapshot_id: snap-qqbrowser-ebac3c840c0e682c1defa4ee
@@ -2780,8 +2780,8 @@ bindings:
   sangfor:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/sangfor/domains.txt
     release_path: releases/sangfor/snap-sangfor-853e2291a329729bcd847e1b/release.json
     snapshot_id: snap-sangfor-853e2291a329729bcd847e1b
@@ -2795,8 +2795,8 @@ bindings:
   sharepoint:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/sharepoint/domains.txt
     release_path: releases/sharepoint/snap-sharepoint-7ac4887e7cccbafc954801e2/release.json
     snapshot_id: snap-sharepoint-7ac4887e7cccbafc954801e2
@@ -2810,8 +2810,8 @@ bindings:
   shiji:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/shiji/domains.txt
     release_path: releases/shiji/snap-shiji-87063a5991e518f0494da16a/release.json
     snapshot_id: snap-shiji-87063a5991e518f0494da16a
@@ -2825,8 +2825,8 @@ bindings:
   spacex:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/spacex/domains.txt
     release_path: releases/spacex/snap-spacex-5d404d39dedfc8686cc2046f/release.json
     snapshot_id: snap-spacex-5d404d39dedfc8686cc2046f
@@ -2840,8 +2840,8 @@ bindings:
   supermicro:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/supermicro/domains.txt
     release_path: releases/supermicro/snap-supermicro-b18020358a7546e1a2002884/release.json
     snapshot_id: snap-supermicro-b18020358a7546e1a2002884
@@ -2855,8 +2855,8 @@ bindings:
   tencentdocs:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/tencentdocs/domains.txt
     release_path: releases/tencentdocs/snap-tencentdocs-7e4c7db2344d088c45437ab1/release.json
     snapshot_id: snap-tencentdocs-7e4c7db2344d088c45437ab1
@@ -2870,8 +2870,8 @@ bindings:
   toutiao:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/toutiao/domains.txt
     release_path: releases/toutiao/snap-toutiao-583bb5fa98024c20171de812/release.json
     snapshot_id: snap-toutiao-583bb5fa98024c20171de812
@@ -2885,8 +2885,8 @@ bindings:
   tsmc:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/tsmc/domains.txt
     release_path: releases/tsmc/snap-tsmc-98385619ef65a81e411bd03f/release.json
     snapshot_id: snap-tsmc-98385619ef65a81e411bd03f
@@ -2900,8 +2900,8 @@ bindings:
   volcengine:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/volcengine/domains.txt
     release_path: releases/volcengine/snap-volcengine-85d9246bf3b4a723cd3da58f/release.json
     snapshot_id: snap-volcengine-85d9246bf3b4a723cd3da58f
@@ -2915,8 +2915,8 @@ bindings:
   wanmei:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/wanmei/domains.txt
     release_path: releases/wanmei/snap-wanmei-3130e157694aecca69c95383/release.json
     snapshot_id: snap-wanmei-3130e157694aecca69c95383
@@ -2930,8 +2930,8 @@ bindings:
   wetv:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/wetv/domains.txt
     release_path: releases/wetv/snap-wetv-46ca72cdff558797584c76c6/release.json
     snapshot_id: snap-wetv-46ca72cdff558797584c76c6
@@ -2945,8 +2945,8 @@ bindings:
   xianyu:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/xianyu/domains.txt
     release_path: releases/xianyu/snap-xianyu-9c17d7cdd33a5e0cc0f5930d/release.json
     snapshot_id: snap-xianyu-9c17d7cdd33a5e0cc0f5930d
@@ -2960,8 +2960,8 @@ bindings:
   xigua:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/xigua/domains.txt
     release_path: releases/xigua/snap-xigua-2b53bc5f66746fd60b9ab31c/release.json
     snapshot_id: snap-xigua-2b53bc5f66746fd60b9ab31c
@@ -2975,8 +2975,8 @@ bindings:
   youku:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/youku/domains.txt
     release_path: releases/youku/snap-youku-0bb384a769720979e5455877/release.json
     snapshot_id: snap-youku-0bb384a769720979e5455877
@@ -2990,8 +2990,8 @@ bindings:
   zte:
     status: active
     source_id: popular-rules-source
-    source_ref: 7c57cf67ebfe8ce20c1f172e02a7ca541e3a081b
-    verified_input_commit: 1a0ff63fba077814ae40fa63050834aa699a30cc
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
     artifact_path: generated/source/zte/domains.txt
     release_path: releases/zte/snap-zte-95b5ec6396a3b58bdced15f1/release.json
     snapshot_id: snap-zte-95b5ec6396a3b58bdced15f1
@@ -3002,3 +3002,633 @@ bindings:
     release_digest: 95b5ec6396a3b58bdced15f105abca72ee07624ab5dd2e40b446d166dad61d4a
     release_identity_version: '2'
     expected_sha256: 334eb08f7ee4a5986bc99a53c6ce0ee0f15f5f8e3ee7478082ab75df274bfe17
+  baidu-zhidao:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/baidu-zhidao/domains.txt
+    release_path: releases/baidu-zhidao/snap-baidu-zhidao-22bb74edb99604a53226a40a/release.json
+    snapshot_id: snap-baidu-zhidao-22bb74edb99604a53226a40a
+    content_digest: a77f1c05d372e5e6ba5d6a1953f3360c40569e1632f8c45be41a1ea767c306f6
+    evidence_digest: 868234f86901d11037261e602ba3ab257728bf059e37997e7e518baec226edee
+    policy_digest: e94b5b7eb2da61f092a4710a999bf48b5be368eac960cf165ca0363359657a97
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 22bb74edb99604a53226a40a1ba9de15d68ab0dfec75aeb61082f41fb6b51c6c
+    release_identity_version: '2'
+    expected_sha256: efe92777239c613df711070bd216576c92785e9ad1bf1798c283e85427f8216d
+  baidumaps:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/baidumaps/domains.txt
+    release_path: releases/baidumaps/snap-baidumaps-8867eda7f9ffa6e53540fd3e/release.json
+    snapshot_id: snap-baidumaps-8867eda7f9ffa6e53540fd3e
+    content_digest: 6d72738debe8a0a48c32d5f786383b11fbde90b2769f1902e8f775ead6e92685
+    evidence_digest: 499f11189a0821ab51f67dd7f86b579ed9db8ccdbac5dca2480ba1b77b4eb706
+    policy_digest: efff48c35fe4ff3ec4a2680a3b51c969512bd1f9ca096de124fa10c82216e99c
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 8867eda7f9ffa6e53540fd3e8d7718cfe2debf13a0e8d7517e7ce384607b82da
+    release_identity_version: '2'
+    expected_sha256: 80c338b4fbebc0714b8ef3e2b36de1410c9bb2cd1d1921d7e292ea4af65bd9d2
+  baiduwenku:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/baiduwenku/domains.txt
+    release_path: releases/baiduwenku/snap-baiduwenku-57c72c17e64bf2eacf87141d/release.json
+    snapshot_id: snap-baiduwenku-57c72c17e64bf2eacf87141d
+    content_digest: 5710f9aa899f49d44ca2256a82722665f23c835d9635401f8ddbf879958ee627
+    evidence_digest: aa39c90bc62745272f4819cf81782191fe5a7ed258fc49d5bcf1e7090551b2af
+    policy_digest: ce3be5a9950ad6a52e7bb0b7c721da2adebfd21c7e9fd704dbcdb781b9de233e
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 57c72c17e64bf2eacf87141de79125609051cbaeb91ea12d0c35d62ae4e2f30f
+    release_identity_version: '2'
+    expected_sha256: 540279a8f3126bd7bc30b1f0cf4ac8c860175961bf41ff58af309c2d9dfb6095
+  birentech:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/birentech/domains.txt
+    release_path: releases/birentech/snap-birentech-794172d42ff5ff0de1bf0533/release.json
+    snapshot_id: snap-birentech-794172d42ff5ff0de1bf0533
+    content_digest: 952251b7c5ba9f2224013f5db51af8c16df4b2585694e51ceef5af4fc5d20b50
+    evidence_digest: 506dcc3e253834b5551326dd4931ae6ed37d14d1960db5ebeb057bddd942f656
+    policy_digest: b4b3745929ac5fa8a2eac465b94b2a4c800027c294d2ef7126c6e9225ec65138
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 794172d42ff5ff0de1bf0533d0b038ca06cadcf05b7ebd813c3f2e3fbb1fc177
+    release_identity_version: '2'
+    expected_sha256: 889442b1a0d9171682cb2c58e347423f40b36871b79d20388b88909506a6154b
+  block:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/block/domains.txt
+    release_path: releases/block/snap-block-cb6da11205c0a980ace1edc2/release.json
+    snapshot_id: snap-block-cb6da11205c0a980ace1edc2
+    content_digest: ad7b17f04003735b06c40120606765953eb41391a2e0e25ef38dfe5caf967c11
+    evidence_digest: ae88b152c3615b40443d9b51f4c4e3c85ddc5e5415072a6c1f5592accabd2041
+    policy_digest: 0dc715a7aa101d03762ac1bc8286b4b953a5608aadb88b830d0a318133924ece
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: cb6da11205c0a980ace1edc2d9aadc6abf145745de4ffb887b46bd1e11f8c010
+    release_identity_version: '2'
+    expected_sha256: 216155188bbb79854fdd28c4f569e692f51ee6750715c4cdf1f2ad4290c011a8
+  broadcom:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/broadcom/domains.txt
+    release_path: releases/broadcom/snap-broadcom-ac0fc70c68986ce443e28b2e/release.json
+    snapshot_id: snap-broadcom-ac0fc70c68986ce443e28b2e
+    content_digest: f5e758ce4d0b945f1d0cca84ddd80191f97703f8139f7f3c0d309a93b902a1fb
+    evidence_digest: 8f2a7fddc46a1ac787b08abe1eb02a29b39caaf32b31339bd177205ba8582e48
+    policy_digest: 75509d0009a848d24498fa3ea03151f47a55c50c12807e807eb050720e942210
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: ac0fc70c68986ce443e28b2ea54cb821e212f79c30c92822c309f4624414dd81
+    release_identity_version: '2'
+    expected_sha256: a5478ba4074e071398160f3de17162b86ea20316a213cb09ccdaab8fbe0f9204
+  cadence:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/cadence/domains.txt
+    release_path: releases/cadence/snap-cadence-bf842312e32dcf5a9ebf321b/release.json
+    snapshot_id: snap-cadence-bf842312e32dcf5a9ebf321b
+    content_digest: ef8fa1f13964bb18d3d96964993d51bab49048b9c5eb5a6181fe79e46137308e
+    evidence_digest: 7f7a86d9516e78d4e8b53e5fbde3bb657e19b1cfcf3a6904b9c2c5e12e447cb1
+    policy_digest: 89affa2e8de7040910005e909534fad089fe0fd62b803895570eb926ea8cddcc
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: bf842312e32dcf5a9ebf321b1ac0d4055f244a30e6bb519484d6b7dc5a436b34
+    release_identity_version: '2'
+    expected_sha256: baad13e6bbb9cb11177db6752c147260f26f1a2ab06d809f84334de2cd9c9753
+  cambricon:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/cambricon/domains.txt
+    release_path: releases/cambricon/snap-cambricon-d21f4caa20bc6d2bb1874893/release.json
+    snapshot_id: snap-cambricon-d21f4caa20bc6d2bb1874893
+    content_digest: f7539f9a25c7a45a33777bac4931a6154b613e568bdd926f2d8a741d54f159f0
+    evidence_digest: 69f418f44ab227a0f98ef874d165ff90e796ad6efc7b2d4d8d378c609ef46f3e
+    policy_digest: 7ed84c7452d2701e52395802e161290152f36b030675f271aaca48748aca2d83
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: d21f4caa20bc6d2bb1874893e724d506296d93e5e2b6ecda74ba6ba0f91f4cb9
+    release_identity_version: '2'
+    expected_sha256: 36d083e359dbf7472f15c2f9edd07b1d2ac66baae0959d6f001d79fd36fb4ad9
+  caocao:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/caocao/domains.txt
+    release_path: releases/caocao/snap-caocao-3bbf9c257b72eeb1e63eeb54/release.json
+    snapshot_id: snap-caocao-3bbf9c257b72eeb1e63eeb54
+    content_digest: 9c241138901704c84f6dc98090fcf3c142107e698e2bb1105208f587af0c81ff
+    evidence_digest: 1095f57eefdfe44be5a2dfbea94e581ca0e594d3cd56f35e084d08c36ba66048
+    policy_digest: 535630ea42e8f0ee86e1e081412fa1daaf33a01ce7c1f4571225d9f5527ea253
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 3bbf9c257b72eeb1e63eeb5481e536bebce3f7342f29632fe06816c7bbdbcc6e
+    release_identity_version: '2'
+    expected_sha256: 0cd28f9409fee0f710aef0fc0a5cf9dbe846fc27fee684a7861cf75e6e10a2ca
+  coupang:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/coupang/domains.txt
+    release_path: releases/coupang/snap-coupang-95e69a8ae18aaaaeed2b0c26/release.json
+    snapshot_id: snap-coupang-95e69a8ae18aaaaeed2b0c26
+    content_digest: f240da37238c27c7ecba9498a7fadbdc30b560baab71b05823000387d15276e9
+    evidence_digest: c64a2dcdda4740dad5c56eaa62df6bdbf799fd5edbbfdc7ffe0b4525e21183c4
+    policy_digest: 24325953e1c67ccc6258b8b2b13934b308c6a0196760f2c83b5cd398bd94551b
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 95e69a8ae18aaaaeed2b0c268af23047632caffbd0e60446ef52f960a21cfbde
+    release_identity_version: '2'
+    expected_sha256: 6bafedd8697e91ac5e36becc2bf65463a675db534957daae4923e945e3905ef1
+  dahua:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/dahua/domains.txt
+    release_path: releases/dahua/snap-dahua-bf8000a4d702228a37044d1a/release.json
+    snapshot_id: snap-dahua-bf8000a4d702228a37044d1a
+    content_digest: 37a9b60de1203154651d0a151a22c1cc1625245379853e61fb717089bffb290f
+    evidence_digest: 8aa47cb3a2f53d728b987cd9b55178dae5c8724785bfc113b1022e6292567b88
+    policy_digest: 3007f3e584f8627a63f8c0dc8ef0f736cdd2a4b4221d4af35d6266e37b5b877f
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: bf8000a4d702228a37044d1aa562f1f16161589f67424233980c32837ee0df8e
+    release_identity_version: '2'
+    expected_sha256: 44bbc061ad124e9b87203535d03feeebce340918a3b7c841fd8afbe5871c5519
+  dassault:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/dassault/domains.txt
+    release_path: releases/dassault/snap-dassault-ddd455ea2301cc82ea31bd00/release.json
+    snapshot_id: snap-dassault-ddd455ea2301cc82ea31bd00
+    content_digest: 3462b76da7d140d3cd816693a3953d533884e68d4b670d014e53c9f0bac1d677
+    evidence_digest: 0fd81d8c4b1d38a35af88205a3736ef1141c5e34a43fbd32285bc0b2e429c307
+    policy_digest: 522b2d64c53006c997054f69f3a77c36ce7f00598c9a8deabc4efbb1eb4bbca9
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: ddd455ea2301cc82ea31bd000ef961cebbc1008d5c86bbae840f9d33ac7c6ab9
+    release_identity_version: '2'
+    expected_sha256: 5e362d7ce7438330f81f288db2dcc47528eb045f37543782842ccdb3fb76dfda
+  dell:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/dell/domains.txt
+    release_path: releases/dell/snap-dell-38841c4b161c8f903f219bcc/release.json
+    snapshot_id: snap-dell-38841c4b161c8f903f219bcc
+    content_digest: 44ada0f087d052a497cde9f8e7590852b3dbe0f1696ae8b51bd32c75a8b988eb
+    evidence_digest: 87bfeb0091afce4995dc236a1b7eed179fcdc742527ee6fe1da4df7a510d52c0
+    policy_digest: be709bd555cc400a7d654ec3d7be83621463cd17bb0bef38991c2bfe9f1e1f73
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 38841c4b161c8f903f219bcc040ddb66b7801c2adff5776e184bebfd049cc8e7
+    release_identity_version: '2'
+    expected_sha256: feacca95cbb376b0a5930cfd089a18304cbc5547809133f64b5db23a2cfef35b
+  dreame:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/dreame/domains.txt
+    release_path: releases/dreame/snap-dreame-bed5113970f4051c281f1664/release.json
+    snapshot_id: snap-dreame-bed5113970f4051c281f1664
+    content_digest: 4f27cecacda79eea6768722502e2da081235280a3fbd76242df2ef1cce2ac3c5
+    evidence_digest: 6ef2e75b2bcd748e2a689f3869ae07dd0d8b06e2f48b210f70455f369b0802e2
+    policy_digest: f98eccaf2114d9b0cc03ccc2b1a8dc85a99a594f294f7e2e1a3a18b2cbe75688
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: bed5113970f4051c281f1664929247bb122dde24c3911014abb79540635b12e8
+    release_identity_version: '2'
+    expected_sha256: 7584a0e037279a4c0f2f135be184d47f4000bbb57cdc83565349abb07a50c5ed
+  ea:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/ea/domains.txt
+    release_path: releases/ea/snap-ea-e0d2eb677f682743dd48cf3d/release.json
+    snapshot_id: snap-ea-e0d2eb677f682743dd48cf3d
+    content_digest: f166ab43000ab70e2a5512a994aa313adce9e54ba08f5460d1b3124e99e4f792
+    evidence_digest: fc7f99fcb1bca374f11fffcb8e05562b23f21589438843aa7b3926f30c7ae489
+    policy_digest: dfb4106687c27f25ae989d1a70cb9baf48e5cfb204e71f88cf5812cb4a407748
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: e0d2eb677f682743dd48cf3ddf744f21ad540e69007b37e89e9ba32d93ac4713
+    release_identity_version: '2'
+    expected_sha256: 0e188374a6b99528c51bef182a0626a0e4fbf1cc93afa72bd2b2d8904fdadade
+  epicgames:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/epicgames/domains.txt
+    release_path: releases/epicgames/snap-epicgames-f438fd86b26ddbc65fa37dfa/release.json
+    snapshot_id: snap-epicgames-f438fd86b26ddbc65fa37dfa
+    content_digest: 425745d7bfcab5c94c71b398002286d5b47b544199f9f81bf9f30934ffc96ed1
+    evidence_digest: 6e6023ad75f2ce60fa29a9ce143ad8c7d21cebd50abec5cea7bd5fb57278d417
+    policy_digest: 5839a37505802e78a55e153922bd113189514b76fff01c2f6638f85c7a22f254
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: f438fd86b26ddbc65fa37dfa0db0d0d244164141dce36974e122c4a0b0580ca7
+    release_identity_version: '2'
+    expected_sha256: 928bc8a2e9937214e0ddd3b22804e12f7a21afc8eb11194732a05adfb925a6fd
+  equinix:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/equinix/domains.txt
+    release_path: releases/equinix/snap-equinix-2316b82548e279bd0ff99e56/release.json
+    snapshot_id: snap-equinix-2316b82548e279bd0ff99e56
+    content_digest: 696298c942beab57909ca02a0c7120e34258dfe727e1edc20b6772a613d429a9
+    evidence_digest: a0d625c03f0e62b60034d61dd22feeaa66e86c9611a84a6708b509f9e7934fce
+    policy_digest: 3904383e8908cf332e2292a6cb7f6f045d0a66bf7b67704e6f3a2c48c9350b34
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 2316b82548e279bd0ff99e56763c28221dae7b922e45053d8a7a92e5a7caea15
+    release_identity_version: '2'
+    expected_sha256: dc772691d6819b0527bcde5018814b39109c6b3958db34ef05abc97dd018b730
+  ericsson:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/ericsson/domains.txt
+    release_path: releases/ericsson/snap-ericsson-75e2c108606fe72e56369e2a/release.json
+    snapshot_id: snap-ericsson-75e2c108606fe72e56369e2a
+    content_digest: 5b4920938b2adf797bc7ea0fcd3294e271411c477c34ae383be32ada7bb8f27d
+    evidence_digest: 35fbc0234ef4dcd2faa9153138e4d8d1090ec9cf67b0f2ac5d3b11d85e5bbcbe
+    policy_digest: 0760c3206be98f84c0c08b37afa33f4dc7603693d3b1ededccc5ee9e2f9c7df7
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 75e2c108606fe72e56369e2abf29faddd4a199c91846d41e990200a1088efe77
+    release_identity_version: '2'
+    expected_sha256: 5a48d4120d0dc255210eca462f0024762b65883881249195d41f2d1e7e6af47c
+  fortinet:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/fortinet/domains.txt
+    release_path: releases/fortinet/snap-fortinet-a088ad8c0dcb6f363911a3ab/release.json
+    snapshot_id: snap-fortinet-a088ad8c0dcb6f363911a3ab
+    content_digest: f0f03806eab40c826743859a0ea8780b477a0d20cf4cea9f261364ec37740098
+    evidence_digest: 7a1f2a6a4a49467fa4023501057396cbeffde9900be96dd3cfc1a306a558093c
+    policy_digest: 76de6ee8b262466dda7ff0ce505e6473a6caedd2b391e518c4a2498cc4f65943
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: a088ad8c0dcb6f363911a3aba36d51c57de36245e4e4cbfce4c6a5b634817588
+    release_identity_version: '2'
+    expected_sha256: 1f3a7a27c245ca6ea830ab79b7fe927fb8de09212c1184398ce8b0791f38fa15
+  fujitsu:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/fujitsu/domains.txt
+    release_path: releases/fujitsu/snap-fujitsu-ce2d7e601c70496da9f4590f/release.json
+    snapshot_id: snap-fujitsu-ce2d7e601c70496da9f4590f
+    content_digest: 7df0320fa6415aeb563cf85f165613997c774ee669081c849e8d6e48f9b1d9aa
+    evidence_digest: 349e653ebcc694d47a6e393e995255aaecbbf3a04a1c2a4b31919f67d9cba315
+    policy_digest: 03c60b90ad3831011c82ea2fc8f546241e0babdcc4c4eaccc3ba673bfc8e8ac7
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: ce2d7e601c70496da9f4590f5632280aec5dbe610151591e9d170f659677ce1f
+    release_identity_version: '2'
+    expected_sha256: 668f08979061b1654e02061c7fba391168d1064383a7cebb9abcec5cfef7cdff
+  getapps:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/getapps/domains.txt
+    release_path: releases/getapps/snap-getapps-6eb3c67a2267c1e2d1684dd5/release.json
+    snapshot_id: snap-getapps-6eb3c67a2267c1e2d1684dd5
+    content_digest: cdf3bb7746bcae26f8931a10a902850abdb6446c3832b932ddf7df25fc6eec0e
+    evidence_digest: bb0dad842ab9735d0830ae24c76baf242dff2dd6a38ff6bd8e940d85f4e47138
+    policy_digest: 5d8b7fd53f7caf5e35c0bd919fd62484e90399a8a43d7c46affb59888edb52d2
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 6eb3c67a2267c1e2d1684dd5e18ca6ffdf10f749ba0407cfe051026b9bfa6dbd
+    release_identity_version: '2'
+    expected_sha256: dbb2f3ffebf94c60ba68aa1a6bfe44b0819d04be27e16f68f13326ba5e30a038
+  globalfoundries:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/globalfoundries/domains.txt
+    release_path: releases/globalfoundries/snap-globalfoundries-17db302f7b18defdd35ba751/release.json
+    snapshot_id: snap-globalfoundries-17db302f7b18defdd35ba751
+    content_digest: 3e4d3e8ad809aedb72da10262df691d8a719f89be847efa6d67c3116f83cdc30
+    evidence_digest: 10344bb18a242042794b04391f7dba387b1c0131cc491c26716d706c67b8ae7b
+    policy_digest: d51be51b250f45a266521e21dee63ee543d00987eed01c0d7ac5dc4cfd52fc6e
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 17db302f7b18defdd35ba7516674d10f11458602eb7160af41fbb4aed8af5d2b
+    release_identity_version: '2'
+    expected_sha256: 151da8877ce118789c403c3349dce4d263cb0e42ddf49a8802c123871ef8db97
+  grab:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/grab/domains.txt
+    release_path: releases/grab/snap-grab-df7ca87a00ca3902947bf0e4/release.json
+    snapshot_id: snap-grab-df7ca87a00ca3902947bf0e4
+    content_digest: de0cbde103a8a5d14c0f0974a9f73e861b776ec071d9774396788453196c0aa4
+    evidence_digest: b9f455f0b0d36013dc7b924982a59d625db2789c33f0da1ffc9c8a0013334a59
+    policy_digest: 0795dafcef0e8462ad72e5c47d98bd03bfd57ac901069b91977c8a02cd33715f
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: df7ca87a00ca3902947bf0e47a6ae1f091402c563d71f47745aa36d6c52cb15a
+    release_identity_version: '2'
+    expected_sha256: 2f7e3fff55984a77e7bea385846a0d7f6f8267c1a6b96fdf54e51343a047f002
+  hellobike:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/hellobike/domains.txt
+    release_path: releases/hellobike/snap-hellobike-2f40b385c128e7087ab9bcbe/release.json
+    snapshot_id: snap-hellobike-2f40b385c128e7087ab9bcbe
+    content_digest: 20cd378aa149fa91b4e348d4d1bdb1114770b5a6d6d187a6c5be6b9d6dcb3fa3
+    evidence_digest: 35fa5c85f8a60e0bcb354c8a29f140a1a9a5a70566305897b5e9cc66f73f6f8b
+    policy_digest: 00c4d4c44daa8736319933034b3d66d0ce1a50b96a155506db7202e0f2705fa4
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 2f40b385c128e7087ab9bcbee5ed6d0a3864e3716212db42c5f4e20e4a2b98dc
+    release_identity_version: '2'
+    expected_sha256: 4d8a69216f3a2516f6eb39f7587fc5a08acbe7965878f4a12ffdb297a0c0a46e
+  hitachi:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/hitachi/domains.txt
+    release_path: releases/hitachi/snap-hitachi-1e6851042c68c063a98be11b/release.json
+    snapshot_id: snap-hitachi-1e6851042c68c063a98be11b
+    content_digest: f291ba19c323ccc8b214d546d63ab4f13592f2853d84f131c886bcb095e71358
+    evidence_digest: b1bc47386e47d6e8f0ae0ae3ae95d80246f74b4f285e5be431b96ed3188c8abb
+    policy_digest: fc9a816bdd25cc2f07d72ee4cd74443defffca11d02bcd0629b189dbb3396b06
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 1e6851042c68c063a98be11bd4b63d9eee4f0a31667d41e222a660bc7c18ce51
+    release_identity_version: '2'
+    expected_sha256: 8dc04ad288ec8f3a280f5d47bc6ed7046768c2aca6998a97fd1f3d724b644335
+  hpe:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/hpe/domains.txt
+    release_path: releases/hpe/snap-hpe-7cfb13d56eca4924255a598a/release.json
+    snapshot_id: snap-hpe-7cfb13d56eca4924255a598a
+    content_digest: 62920042e7a3e8a9f12a605f40e11ebd046655a6f6ec7a814da79c00509cf7be
+    evidence_digest: 06dd9b6c28aa120a8efbd32f8e44dfae7b31dbb46a71a91cd15713cff43a130c
+    policy_digest: 77a1ee210015c0724c3c3e6cbe386c20ea2c74e671c4af78814d0f6e7695f961
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 7cfb13d56eca4924255a598acc21e7ffb5733ab1db18e67182e1bef2b9da6846
+    release_identity_version: '2'
+    expected_sha256: 8988c63d2efe3a88bd1e34c63dd04e0b6e027d93bf2454a0633a6440635988fb
+  huawei-appgallery:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/huawei-appgallery/domains.txt
+    release_path: releases/huawei-appgallery/snap-huawei-appgallery-c9ac2197b482ac3a9910d1e1/release.json
+    snapshot_id: snap-huawei-appgallery-c9ac2197b482ac3a9910d1e1
+    content_digest: e9d93743027b84fe00fd279a21e2150492fb3eff88d5f34b92d9c06936f349b9
+    evidence_digest: 561f234c7241ca11ca1cf8857edae82ea4b0272f6523584f5fcea995158fb8d9
+    policy_digest: 1bb1d0c9c74e2f0b6061cedfe51ab552c801e33dc5261f7ab51645588a051996
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: c9ac2197b482ac3a9910d1e1ad975903cbb533559e395b0a39da9efc7bd1555c
+    release_identity_version: '2'
+    expected_sha256: 7de5c1ee4831dc01da1dc9b968ac92b186b2c7f54b28becd3343ba2f72b48bf4
+  hubspot:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/hubspot/domains.txt
+    release_path: releases/hubspot/snap-hubspot-0fa3424c1491866458aefa94/release.json
+    snapshot_id: snap-hubspot-0fa3424c1491866458aefa94
+    content_digest: 49cfde284d2c0c8d7fe3a091363523f28fe5b48260ce3ad1ad6964383994fe8d
+    evidence_digest: fbe32af05f47731bd1880f3b9c72cb55938808d210cad2a409206c60cc71a491
+    policy_digest: 9a0b8908f6880d28ba13f2f442536429ff761404b9c3bd78272204ead8bd5af4
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 0fa3424c1491866458aefa9446fcf752de086c540436749989749e8c912e8517
+    release_identity_version: '2'
+    expected_sha256: 8e337e567cc60bc1984796327884cf5407358d4a04d650856febb82f3e5ebfb7
+  huolala:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/huolala/domains.txt
+    release_path: releases/huolala/snap-huolala-13fa7bcccc08372345ff0dad/release.json
+    snapshot_id: snap-huolala-13fa7bcccc08372345ff0dad
+    content_digest: 094040a7c4a3cdb7c213494e1c9e8ab9ba5422a5b849acb946e0366893343250
+    evidence_digest: d1b4cd91d243d0c245305f219f55a42c77b62696817d36da22df281819012524
+    policy_digest: 4c4db2c9b184ab285be3117f6b578de95cae34f3554415fc772813786b83aafb
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 13fa7bcccc08372345ff0dad971236a288ee2fb6fc778955d81b3c19d63f7108
+    release_identity_version: '2'
+    expected_sha256: a8f0819bf14ff5035a38f32be7dcec79f2bbc51fdab0a145fb99a2bf15ee8d42
+  internlm:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/internlm/domains.txt
+    release_path: releases/internlm/snap-internlm-5012fe6fb6f7f401aaa09c07/release.json
+    snapshot_id: snap-internlm-5012fe6fb6f7f401aaa09c07
+    content_digest: e8125d223b592b7a75ce6d786fad718fc6e4fd3ec9525a538aa951f265ba6353
+    evidence_digest: f7138a80373a77e7b1a4437a5e538e7795c547f0c54d9ae5ab9db33055daccf2
+    policy_digest: 586aa0f401964e223ebadf858bf59c0882af211889cd1fe3cda2a8c2e7778e35
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 5012fe6fb6f7f401aaa09c0797d0fd334755f6c219403853f596fa59e00a889f
+    release_identity_version: '2'
+    expected_sha256: 19fa052d1a556587d4b5f5cb4bf6490864b2ef981a660c59731676240481b69b
+  intuit:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/intuit/domains.txt
+    release_path: releases/intuit/snap-intuit-89bf1839c3bf60c58b5e6c65/release.json
+    snapshot_id: snap-intuit-89bf1839c3bf60c58b5e6c65
+    content_digest: ba2de36afd4738a576f5e9338b6279f4c359512bbe3567b30f9f8c003982c7bf
+    evidence_digest: 0bab1593b6bbe27758d76b4d9399ddd0fbb53f2194faad8dbcbbb285b849f065
+    policy_digest: 2ef2960294943923e26f2f7464fa351f3435b92b5b7ad646c6a933a5642d420f
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 89bf1839c3bf60c58b5e6c6535f662696e9461f14c2ed9eb6917498f5f8f3bbd
+    release_identity_version: '2'
+    expected_sha256: 7d40aa3cea91810aa2b1a4eeaaa6c755183159a7c7d35b690399997638593d0c
+  jdcloud:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/jdcloud/domains.txt
+    release_path: releases/jdcloud/snap-jdcloud-0249ba9080d754056cd6a446/release.json
+    snapshot_id: snap-jdcloud-0249ba9080d754056cd6a446
+    content_digest: e26567df97ed552b92b53c0a0166cf1930d57ef00ba8b6e43b5f9e0afee08748
+    evidence_digest: fe49f66b9cf02d2952d262238b5d0874ec8c482e23979bb4f535feabd67202c4
+    policy_digest: 581ea4b77029a4ba15162d2b6d0e5ff818a5261e380615c494aea37fcc0313b1
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 0249ba9080d754056cd6a446118dcf91be2551a743fe9efd34b090f0b2a5e78f
+    release_identity_version: '2'
+    expected_sha256: cc8432fa5a2a31edc97f8e5bb334ad965f8df834e51aabd81dd44dc950b36680
+  kakao:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/kakao/domains.txt
+    release_path: releases/kakao/snap-kakao-6653968a2323e837dd09ce60/release.json
+    snapshot_id: snap-kakao-6653968a2323e837dd09ce60
+    content_digest: 84aed8b66678bffe8bdb00c174fe33b55d09ee21cd8072c08972f5e6e677aa62
+    evidence_digest: c51b2c868f8621d85ae5452d4148bc604185a2d472b1f565014c1fff0d2c1b28
+    policy_digest: 7d6c41338fd88c123f48f526fc0a7d705c8fc0bd5d1ab0a2b29bc78835e42b85
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 6653968a2323e837dd09ce60c1ad740a547c0cec72afe1f7f365ac901e0f675b
+    release_identity_version: '2'
+    expected_sha256: 62eff430a2bd10de1399cf1eec53a946caa4b233b68bab87e672e7ab462d2598
+  kla:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/kla/domains.txt
+    release_path: releases/kla/snap-kla-1ba9c282fa51eb3b77b7384d/release.json
+    snapshot_id: snap-kla-1ba9c282fa51eb3b77b7384d
+    content_digest: 53881085addc9dc8de57fd5eed2af5cd4c263182537a01438bebc96ba654c4cc
+    evidence_digest: 9e4ec73a26bbcd14885dd76d17e09b8688e3df4fb77f53a54d962833d631627b
+    policy_digest: a6501ebe6b4656b98073f43cdf6e44061cca95b650cf158be59d6fd5dba8c795
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 1ba9c282fa51eb3b77b7384d30f48e2e930761fc673c1ed9e73c5a5badae8e34
+    release_identity_version: '2'
+    expected_sha256: 2030640d99035eaa95afcb19d1620da665161aa54600cdbb1605e764dc1be246
+  kuaishou:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/kuaishou/domains.txt
+    release_path: releases/kuaishou/snap-kuaishou-fc5e356125b8d4a98b6162b8/release.json
+    snapshot_id: snap-kuaishou-fc5e356125b8d4a98b6162b8
+    content_digest: 63c8454cd0f525d41998fb9e7a8ac8a58a4e85315c4594c9b1ef210fd2eb7207
+    evidence_digest: c46e8837ba6ea5e5a7a3fe27ffeef33494458f85b43679553ad972d6095275cf
+    policy_digest: 9a7fb5d5e2f5949614d6669ad38a602f16312bdcf192988ca493a1b38afb6907
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: fc5e356125b8d4a98b6162b84379aab551220f2464f12b8a1786e9ff737672ba
+    release_identity_version: '2'
+    expected_sha256: 3c1165c1475150333a13824935a42af66c4e6706bb7d2d341bd768d237e37290
+  kuaishou-open:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/kuaishou-open/domains.txt
+    release_path: releases/kuaishou-open/snap-kuaishou-open-a37b0a3c3d40ccfaa1207456/release.json
+    snapshot_id: snap-kuaishou-open-a37b0a3c3d40ccfaa1207456
+    content_digest: 17366c797d59d73187037e3cae7d6a10b2e141848963d7e8a459db6f169b6695
+    evidence_digest: 3c4d7289c10d3711786e06bea8f8e5cbdfdd42d2f123dc427375b856bcea9621
+    policy_digest: f5b0479352bb67fe12cdc5036af8888b9ac52201641e1e2c20a630099515720e
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: a37b0a3c3d40ccfaa1207456c6a3150f9638645ee1ce4c007bf22ea64f98992b
+    release_identity_version: '2'
+    expected_sha256: 43691e658d3a661259004eb14b8b3c9cd261e78bc0ba1e7a27882c4e479e1d87
+  kunlunxin:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/kunlunxin/domains.txt
+    release_path: releases/kunlunxin/snap-kunlunxin-9fde1b492b2230d9e4248208/release.json
+    snapshot_id: snap-kunlunxin-9fde1b492b2230d9e4248208
+    content_digest: 2b07a67943c23a953a349cb172b19e07ae37bffd2a1f97c68d6ea8976fc3f999
+    evidence_digest: 91bf8ba44eaf839502aac17706fabfdac3ad4627c37931e5305fba757e8040e6
+    policy_digest: 36ff8b5a6e36ac83583bd5b3814c0871b0db33073b38588b72997835b0f03676
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 9fde1b492b2230d9e424820841f4ea2db46cf0bfb4614972f84693ad78c836c8
+    release_identity_version: '2'
+    expected_sha256: 2d0db43d0319a1f314862b233605fe6dd03fe3c970a94d2b591859ab5dd8e726
+  lamresearch:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/lamresearch/domains.txt
+    release_path: releases/lamresearch/snap-lamresearch-ff551d8ce98b44de573d829c/release.json
+    snapshot_id: snap-lamresearch-ff551d8ce98b44de573d829c
+    content_digest: b43dc0efedb5d854afdb2a7ed52fe91fad52a90529febcdd281f1b9098188ffa
+    evidence_digest: d780988887fa7b263e25bc238a8b0153a57b82a7b0dcb68c596bd58b28684996
+    policy_digest: af9630d09ca5ee736ccb295041fd3984f3a8b9e7df116be2dc28cf2e58121e82
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: ff551d8ce98b44de573d829cfb7ada6d616bb10073e828aa2a599efd13e3c45c
+    release_identity_version: '2'
+    expected_sha256: 54b3fb89dc6be0dfa3f71a11a26a795ec2fa02f16267b8ca5e0f2f2e11ab6dc7
+  lg:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/lg/domains.txt
+    release_path: releases/lg/snap-lg-1d42e32c240053ac7978daba/release.json
+    snapshot_id: snap-lg-1d42e32c240053ac7978daba
+    content_digest: 70101307d14ade2258d0422d5cfe9c75a98ec24d408f5913caa1aaf52dbae96b
+    evidence_digest: 6b2ea774c5f6eea4647c4ee3d9f31ce441bcb0364754a0c1d42f5b4ac0f9bdb5
+    policy_digest: e636f7f9b2b1c86d6089939776ee2ab4fa8dfea84ccde18513e01fa66df3124c
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 1d42e32c240053ac7978dabab394f680871d7edf14fd1fd60d7a21488ed00b72
+    release_identity_version: '2'
+    expected_sha256: 9ea35142e9a3743dd8d3b99cc4d6b39071902332780ccb60405e143d1321a08b
+  linecorp:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/linecorp/domains.txt
+    release_path: releases/linecorp/snap-linecorp-0e2c59bbc6e835b157fe80da/release.json
+    snapshot_id: snap-linecorp-0e2c59bbc6e835b157fe80da
+    content_digest: fc49ad2cbf29715b83c969e4e0ce358aac34955014f04934072ba345f4e3909f
+    evidence_digest: d6da92546bf692088810617f3a7e3520e131473fe8f92686cea8bc1cd5e0242e
+    policy_digest: 25897348bbf172e63de4e793e85a55eca18c6ca60b40a9037f8a24e5d1ff634e
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 0e2c59bbc6e835b157fe80da1fd6622a3b7668e5aee42d2fa97288cd3faf0e2f
+    release_identity_version: '2'
+    expected_sha256: 768ad4dd996e3bc5cb4f3e12ecfc5fbf071c956c07c74e69584cdc2207e62dcf
+  lufax:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/lufax/domains.txt
+    release_path: releases/lufax/snap-lufax-86bfaf82bd01f21101af7538/release.json
+    snapshot_id: snap-lufax-86bfaf82bd01f21101af7538
+    content_digest: 65c0423c50672f34b5fa8411ca41cb1a0c1e1ed2666e93c3335f39a5adfdffad
+    evidence_digest: d536c813829b760179793d2d6168536681fe16d9dc6d9820fa480d1ff530b44c
+    policy_digest: 390555612bb128d09d4fcb6f2b881a5b46c4c2381b1d302d76a8bd36862663a1
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 86bfaf82bd01f21101af7538f3e08cf573ed4297100b38abd06a8f316a4e890c
+    release_identity_version: '2'
+    expected_sha256: d9df309ea3f910ff20d505d83a15aecaaeafb22144fab97a6af1afd005c36ad9
+  manbang:
+    status: active
+    source_id: popular-rules-source
+    source_ref: 0ced44186c74cf570ada6696068ddb66d7b774b5
+    verified_input_commit: 390c06f8bbdddcc071cdab8b9049991b2937f8e3
+    artifact_path: generated/source/manbang/domains.txt
+    release_path: releases/manbang/snap-manbang-8f6bf55c006138879b3f0539/release.json
+    snapshot_id: snap-manbang-8f6bf55c006138879b3f0539
+    content_digest: 40387fcdeccd5aa8720ffca4576c3b72fea456cb644e74480c86858c83883a04
+    evidence_digest: f7bc10150d6f328dbc69b91765d33d54b82f4cf6984db6adb9e0030dd6211867
+    policy_digest: 7dfa2b129eaacfa3bcc299686a38e65080b6d299b2cc3a42d60b3418d4dd2226
+    generator_digest: 68b7ed6b20e97d175fb8d2599cb462c161504a190944f030f7976c8a1c9b78d8
+    release_digest: 8f6bf55c006138879b3f0539c481f557d57d225b067bd70d07d4d54b659927f7
+    release_identity_version: '2'
+    expected_sha256: cfaee622c7302bc0ae63b99b3fa3ea117fa8874b50ee50a35664acc9a7df429b
