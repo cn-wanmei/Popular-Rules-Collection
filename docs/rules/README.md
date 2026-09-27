@@ -477,3 +477,29 @@
 - [tencent_music](tencent_music.md) (`tencent_music` · service)
 - [venmo](venmo.md) (`venmo` · service)
 - [xaigrok](xaigrok.md) (`xaigrok` · service)
+
+- [Adobe Firefly](adobe-firefly.md) (`adobe-firefly` · service)
+
+- [Adobe Fonts](adobe-fonts.md) (`adobe-fonts` · service)
+
+- [Adobe Stock](adobe-stock.md) (`adobe-stock` · service)
+
+- [Claude](anthropic-claude.md) (`anthropic-claude` · service)
+
+- [Anthropic Platform](anthropic-platform.md) (`anthropic-platform` · service)
+
+- [Huawei Cloud](huawei-cloud.md) (`huawei-cloud` · service)
+
+- [JD Cloud](jd-cloud.md) (`jd-cloud` · service)
+
+- [Mi Cloud](mi-cloud.md) (`mi-cloud` · service)
+
+- [OpenAI API](openai-api.md) (`openai-api` · service)
+
+- [OpenAI Platform](openai-platform.md) (`openai-platform` · service)
+
+- [全民K歌](quanmin-k-ge.md) (`quanmin-k-ge` · service)
+
+- [Stripe Dashboard](stripe-dashboard.md) (`stripe-dashboard` · service)
+
+- [Grok](xai-grok.md) (`xai-grok` · service)
