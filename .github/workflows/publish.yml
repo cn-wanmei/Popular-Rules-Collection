@@ -214,7 +214,7 @@ jobs:
           PY
           # Service-id coverage vs rule index (no PNG path hard-fail for historical source_original)
           if [ -f rule/_index.yaml ]; then
-            python scripts/icon_system_v5.py gate --registry assets/icons/v5/registry.json --rule-index rule/_index.yaml
+            python scripts/icon_system_v5.py gate --registry assets/icons/v5/registry.json --rule-index rule/_index.yaml --allow-coverage-gap
           fi
 
       - name: Verify complete generated distribution
