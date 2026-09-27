@@ -2292,3 +2292,213 @@ services:
     categories:
     - other
     service_type: service
+  broadcom:
+    primary_category: other
+    display_name: Broadcom
+    categories:
+    - other
+    service_type: service
+  asml:
+    primary_category: other
+    display_name: ASML
+    categories:
+    - other
+    service_type: service
+  micron:
+    primary_category: other
+    display_name: Micron
+    categories:
+    - other
+    service_type: service
+  skhynix:
+    primary_category: other
+    display_name: SK hynix
+    categories:
+    - other
+    service_type: service
+  ti:
+    primary_category: other
+    display_name: Texas Instruments
+    categories:
+    - other
+    service_type: service
+  siemens:
+    primary_category: other
+    display_name: Siemens
+    categories:
+    - other
+    service_type: service
+  schneider:
+    primary_category: other
+    display_name: Schneider Electric
+    categories:
+    - other
+    service_type: service
+  dell:
+    primary_category: other
+    display_name: Dell
+    categories:
+    - other
+    service_type: service
+  paloalto:
+    primary_category: other
+    display_name: Palo Alto Networks
+    categories:
+    - other
+    service_type: service
+  synopsys:
+    primary_category: other
+    display_name: Synopsys
+    categories:
+    - other
+    service_type: service
+  cadence:
+    primary_category: other
+    display_name: Cadence
+    categories:
+    - other
+    service_type: service
+  lamresearch:
+    primary_category: other
+    display_name: Lam Research
+    categories:
+    - other
+    service_type: service
+  kla:
+    primary_category: other
+    display_name: KLA
+    categories:
+    - other
+    service_type: service
+  hitachi:
+    primary_category: other
+    display_name: Hitachi
+    categories:
+    - other
+    service_type: service
+  fujitsu:
+    primary_category: other
+    display_name: Fujitsu
+    categories:
+    - other
+    service_type: service
+  nec:
+    primary_category: other
+    display_name: NEC
+    categories:
+    - other
+    service_type: service
+  mercadolibre:
+    primary_category: other
+    display_name: Mercado Libre
+    categories:
+    - other
+    service_type: service
+  hpe:
+    primary_category: other
+    display_name: HPE
+    categories:
+    - other
+    service_type: service
+  netapp:
+    primary_category: other
+    display_name: NetApp
+    categories:
+    - other
+    service_type: service
+  equinix:
+    primary_category: other
+    display_name: Equinix
+    categories:
+    - other
+    service_type: service
+  dassault:
+    primary_category: other
+    display_name: Dassault Systèmes
+    categories:
+    - other
+    service_type: service
+  block:
+    primary_category: other
+    display_name: Block
+    categories:
+    - other
+    service_type: service
+  take2:
+    primary_category: other
+    display_name: Take-Two
+    categories:
+    - other
+    service_type: service
+  globalfoundries:
+    primary_category: other
+    display_name: GlobalFoundries
+    categories:
+    - other
+    service_type: service
+  umc:
+    primary_category: other
+    display_name: UMC
+    categories:
+    - other
+    service_type: service
+  pingan:
+    primary_category: china
+    display_name: 平安科技
+    categories:
+    - china
+    service_type: service
+  lufax:
+    primary_category: china
+    display_name: 陆金所
+    categories:
+    - china
+    service_type: service
+  atour:
+    primary_category: china
+    display_name: 亚朵
+    categories:
+    - china
+    service_type: service
+  transsion:
+    primary_category: china
+    display_name: 传音
+    categories:
+    - china
+    service_type: service
+  roborock:
+    primary_category: china
+    display_name: 石头科技
+    categories:
+    - china
+    service_type: service
+  dreame:
+    primary_category: china
+    display_name: 追觅
+    categories:
+    - china
+    service_type: service
+  xgimi:
+    primary_category: china
+    display_name: 极米
+    categories:
+    - china
+    service_type: service
+  internlm:
+    primary_category: china
+    display_name: 书生InternLM
+    categories:
+    - china
+    service_type: service
+  birentech:
+    primary_category: china
+    display_name: 壁仞科技
+    categories:
+    - china
+    service_type: service
+  kunlunxin:
+    primary_category: china
+    display_name: 昆仑芯
+    categories:
+    - china
+    service_type: service
