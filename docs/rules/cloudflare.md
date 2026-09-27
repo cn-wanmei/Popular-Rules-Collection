@@ -5,10 +5,10 @@
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `cloudflare` |
-| Primary Ecosystem | `developer` |
+| Primary Ecosystem | `network` |
 | Service Type | service |
-| Parent Aggregate | `developer` |
-| Release Date | 2026-09-22 |
+| Parent Aggregate | `network` |
+| Release Date | 2026-09-27 |
 | Dedicated client outputs | 0 / 7 |
 
 ## 当前生产订阅路径
@@ -29,4 +29,4 @@
 当前客户端目录只能使用 `mihomo`、`singbox`、`surge`、`shadowrocket`、`quantumultx`、`egern`、`loon`。历史 `sing-box` / `quantumult-x` 名称不属于当前目录契约。
 
 ---
-_页面日期来源：2026-09-22。生产路径来源：generated/manifest.json。_
+_页面日期来源：2026-09-27。生产路径来源：generated/manifest.json。_
