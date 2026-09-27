@@ -1,5 +1,5 @@
 {
-  "binding_count": 103,
+  "binding_count": 107,
   "collection_root": "backup/2026-09-27",
   "failures": [],
   "historical_count": 0,
@@ -10,13 +10,13 @@
     "1688": {
       "actual_sha256": "967830ff02fd030cac91ea074a159d5380885dc5ab731dba5080bc99ef3da8cc",
       "collection_manifest_status": "ok",
-      "content_digest": "f50c233d77d3ab4d1e3c4c5d16af7845cb1440793d64c3188ecefed6240475b1",
+      "content_digest": "9b59827fc82415eded98bc10ec20b30ab5ede34ba066666c3b038bb0b09aa6b3",
       "expected_sha256": "967830ff02fd030cac91ea074a159d5380885dc5ab731dba5080bc99ef3da8cc",
       "lineage_mode": "current",
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_1688.domains.txt",
-      "release_path": "releases/1688/snap-1688-4152b558b34476df1a55a8d8/release.json",
-      "snapshot_id": "snap-1688-4152b558b34476df1a55a8d8",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "release_path": "releases/1688/snap-1688-222302f3a20ecb7c08c72ed0/release.json",
+      "snapshot_id": "snap-1688-222302f3a20ecb7c08c72ed0",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "adobe-firefly": {
@@ -28,7 +28,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_adobe-firefly.domains.txt",
       "release_path": "releases/adobe-firefly/snap-adobe-firefly-278e98581b6f8e62e261931a/release.json",
       "snapshot_id": "snap-adobe-firefly-278e98581b6f8e62e261931a",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "adobe-fonts": {
@@ -40,7 +40,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_adobe-fonts.domains.txt",
       "release_path": "releases/adobe-fonts/snap-adobe-fonts-0cfd6c78ffb842903de0152c/release.json",
       "snapshot_id": "snap-adobe-fonts-0cfd6c78ffb842903de0152c",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "adobe-stock": {
@@ -52,7 +52,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_adobe-stock.domains.txt",
       "release_path": "releases/adobe-stock/snap-adobe-stock-fb5983c8b0ef609fde49e4e0/release.json",
       "snapshot_id": "snap-adobe-stock-fb5983c8b0ef609fde49e4e0",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "alibabacloud": {
@@ -64,7 +64,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_alibabacloud.domains.txt",
       "release_path": "releases/alibabacloud/snap-alibabacloud-c121379a018839c4e2c1ad91/release.json",
       "snapshot_id": "snap-alibabacloud-c121379a018839c4e2c1ad91",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "amazonmusic": {
@@ -76,7 +76,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_amazonmusic.domains.txt",
       "release_path": "releases/amazonmusic/snap-amazonmusic-8f36e1717aca94afda1ee0d0/release.json",
       "snapshot_id": "snap-amazonmusic-8f36e1717aca94afda1ee0d0",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "anthropic-claude": {
@@ -88,7 +88,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_anthropic-claude.domains.txt",
       "release_path": "releases/anthropic-claude/snap-anthropic-claude-57b3b3b1999c5d83d8f322a5/release.json",
       "snapshot_id": "snap-anthropic-claude-57b3b3b1999c5d83d8f322a5",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "anthropic-platform": {
@@ -100,7 +100,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_anthropic-platform.domains.txt",
       "release_path": "releases/anthropic-platform/snap-anthropic-platform-7bf2ee650853808906839699/release.json",
       "snapshot_id": "snap-anthropic-platform-7bf2ee650853808906839699",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "applebooks": {
@@ -112,7 +112,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_applebooks.domains.txt",
       "release_path": "releases/applebooks/snap-applebooks-1a82b91eb9b4c8feecb94c8a/release.json",
       "snapshot_id": "snap-applebooks-1a82b91eb9b4c8feecb94c8a",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "appledev": {
@@ -124,7 +124,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_appledev.domains.txt",
       "release_path": "releases/appledev/snap-appledev-69881d2207a1d8d4377f2166/release.json",
       "snapshot_id": "snap-appledev-69881d2207a1d8d4377f2166",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "applemaps": {
@@ -136,7 +136,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_applemaps.domains.txt",
       "release_path": "releases/applemaps/snap-applemaps-71a1a34ed238b4cf742e293e/release.json",
       "snapshot_id": "snap-applemaps-71a1a34ed238b4cf742e293e",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "applemusic": {
@@ -148,7 +148,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_applemusic.domains.txt",
       "release_path": "releases/applemusic/snap-applemusic-da04320590fe88862d5e36fb/release.json",
       "snapshot_id": "snap-applemusic-da04320590fe88862d5e36fb",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "applenews": {
@@ -160,7 +160,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_applenews.domains.txt",
       "release_path": "releases/applenews/snap-applenews-5b92e365d4fca996fc468b19/release.json",
       "snapshot_id": "snap-applenews-5b92e365d4fca996fc468b19",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "applepodcasts": {
@@ -172,7 +172,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_applepodcasts.domains.txt",
       "release_path": "releases/applepodcasts/snap-applepodcasts-4bfb9ca6b27a141e7aa9fa0c/release.json",
       "snapshot_id": "snap-applepodcasts-4bfb9ca6b27a141e7aa9fa0c",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "appletv": {
@@ -184,7 +184,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_appletv.domains.txt",
       "release_path": "releases/appletv/snap-appletv-b983ca24d850eeada428f1da/release.json",
       "snapshot_id": "snap-appletv-b983ca24d850eeada428f1da",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "appstore": {
@@ -196,7 +196,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_appstore.domains.txt",
       "release_path": "releases/appstore/snap-appstore-d141bbc12b271c916f41990c/release.json",
       "snapshot_id": "snap-appstore-d141bbc12b271c916f41990c",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "audible": {
@@ -208,7 +208,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_audible.domains.txt",
       "release_path": "releases/audible/snap-audible-2ae1b9d59ebdc6174db597b1/release.json",
       "snapshot_id": "snap-audible-2ae1b9d59ebdc6174db597b1",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "azure": {
@@ -220,7 +220,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_azure.domains.txt",
       "release_path": "releases/azure/snap-azure-b3a73e93d99fb11dc21e4888/release.json",
       "snapshot_id": "snap-azure-b3a73e93d99fb11dc21e4888",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "baidunetdisk": {
@@ -232,7 +232,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_baidunetdisk.domains.txt",
       "release_path": "releases/baidunetdisk/snap-baidunetdisk-2030ef27118ea52d548a5667/release.json",
       "snapshot_id": "snap-baidunetdisk-2030ef27118ea52d548a5667",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "baidutieba": {
@@ -244,7 +244,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_baidutieba.domains.txt",
       "release_path": "releases/baidutieba/snap-baidutieba-9badf818529f1807c7959832/release.json",
       "snapshot_id": "snap-baidutieba-9badf818529f1807c7959832",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "bing": {
@@ -256,19 +256,19 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_bing.domains.txt",
       "release_path": "releases/bing/snap-bing-3f36698777489885ba7fdbfd/release.json",
       "snapshot_id": "snap-bing-3f36698777489885ba7fdbfd",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "cainiao": {
       "actual_sha256": "49d81715b12d8915f089f4d09710c6ca41cad95f84414daf068990ea7fb4897d",
       "collection_manifest_status": "ok",
-      "content_digest": "17b79aeeff4f509ec6b5ae788c73f7e280c420991cffbea68dafba483633a1f4",
+      "content_digest": "a229ef177b43628969b2cfb273a9b3f5794c40e3cfc9f4c9d9135fc10de15734",
       "expected_sha256": "49d81715b12d8915f089f4d09710c6ca41cad95f84414daf068990ea7fb4897d",
       "lineage_mode": "current",
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_cainiao.domains.txt",
-      "release_path": "releases/cainiao/snap-cainiao-179bcd0d35e42488cc41692b/release.json",
-      "snapshot_id": "snap-cainiao-179bcd0d35e42488cc41692b",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "release_path": "releases/cainiao/snap-cainiao-a8a898392298ebaa644a783e/release.json",
+      "snapshot_id": "snap-cainiao-a8a898392298ebaa644a783e",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "chatgpt": {
@@ -280,7 +280,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_chatgpt.domains.txt",
       "release_path": "releases/chatgpt/snap-chatgpt-cc1e48c936f2293870e7e2c0/release.json",
       "snapshot_id": "snap-chatgpt-cc1e48c936f2293870e7e2c0",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "claude": {
@@ -292,7 +292,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_claude.domains.txt",
       "release_path": "releases/claude/snap-claude-4aec84cea09e5629117513fa/release.json",
       "snapshot_id": "snap-claude-4aec84cea09e5629117513fa",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "copilot": {
@@ -304,7 +304,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_copilot.domains.txt",
       "release_path": "releases/copilot/snap-copilot-9f6da111d1453ad19fc927d2/release.json",
       "snapshot_id": "snap-copilot-9f6da111d1453ad19fc927d2",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "deepseek": {
@@ -316,7 +316,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_deepseek.domains.txt",
       "release_path": "releases/deepseek/snap-deepseek-0c14562b294e2ad50feadc74/release.json",
       "snapshot_id": "snap-deepseek-0c14562b294e2ad50feadc74",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "dingding": {
@@ -328,7 +328,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_dingding.domains.txt",
       "release_path": "releases/dingding/snap-dingding-09ae1ecd000f1688f61e99a0/release.json",
       "snapshot_id": "snap-dingding-09ae1ecd000f1688f61e99a0",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "discord": {
@@ -340,19 +340,19 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_discord.domains.txt",
       "release_path": "releases/discord/snap-discord-e5a47c19f5c45c25c613f6f6/release.json",
       "snapshot_id": "snap-discord-e5a47c19f5c45c25c613f6f6",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "doubao": {
       "actual_sha256": "ee704267566d37d064cb0e3581164f84944ce87369448e8aac43c66a432ea01c",
       "collection_manifest_status": "ok",
-      "content_digest": "e9b1f242b8f1aff249ae4d8ac5475e9de8dbcd25fa12371d8a257034da5fff8a",
+      "content_digest": "11daa0f1cf73e523ebacecfc976178f3e98a825e629115ad5296fe613a6229ff",
       "expected_sha256": "ee704267566d37d064cb0e3581164f84944ce87369448e8aac43c66a432ea01c",
       "lineage_mode": "current",
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_doubao.domains.txt",
-      "release_path": "releases/doubao/snap-doubao-9f9124c0c24b39a949792104/release.json",
-      "snapshot_id": "snap-doubao-9f9124c0c24b39a949792104",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "release_path": "releases/doubao/snap-doubao-5396a151dcae37583b6bd589/release.json",
+      "snapshot_id": "snap-doubao-5396a151dcae37583b6bd589",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "douyin": {
@@ -364,7 +364,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_douyin.domains.txt",
       "release_path": "releases/douyin/snap-douyin-3780b3c2b6ee1a9abdccf245/release.json",
       "snapshot_id": "snap-douyin-3780b3c2b6ee1a9abdccf245",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "feishu": {
@@ -376,7 +376,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_feishu.domains.txt",
       "release_path": "releases/feishu/snap-feishu-dd8e2cd8a4ac32fa8b355226/release.json",
       "snapshot_id": "snap-feishu-dd8e2cd8a4ac32fa8b355226",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "findmy": {
@@ -388,19 +388,19 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_findmy.domains.txt",
       "release_path": "releases/findmy/snap-findmy-5dbfa7a125855e4ee11e3daf/release.json",
       "snapshot_id": "snap-findmy-5dbfa7a125855e4ee11e3daf",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "firebase": {
       "actual_sha256": "dc5c083ec391e1f4bdca61547e81a9304f6c03de548d51b13cba52feb71d62ac",
       "collection_manifest_status": "ok",
-      "content_digest": "4ae2b9893d26604cbac36b7c23e5338eea440a23c0422ec4da2640f3ea53f37e",
+      "content_digest": "e9cd986f3e9246c58145f0c12287d5fb5296807ebad8dfbe43655bd671a9821e",
       "expected_sha256": "dc5c083ec391e1f4bdca61547e81a9304f6c03de548d51b13cba52feb71d62ac",
       "lineage_mode": "current",
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_firebase.domains.txt",
-      "release_path": "releases/firebase/snap-firebase-a5574fd6cc7df4f1b8b30508/release.json",
-      "snapshot_id": "snap-firebase-a5574fd6cc7df4f1b8b30508",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "release_path": "releases/firebase/snap-firebase-7161fac5d50d09fc4a2605be/release.json",
+      "snapshot_id": "snap-firebase-7161fac5d50d09fc4a2605be",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "gemini": {
@@ -412,7 +412,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_gemini.domains.txt",
       "release_path": "releases/gemini/snap-gemini-9e01a42e8140aafccd75f9ea/release.json",
       "snapshot_id": "snap-gemini-9e01a42e8140aafccd75f9ea",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "github": {
@@ -424,7 +424,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_github.domains.txt",
       "release_path": "releases/github/snap-github-293b2b0db400e778bcfe88a7/release.json",
       "snapshot_id": "snap-github-293b2b0db400e778bcfe88a7",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "gmail": {
@@ -436,7 +436,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_gmail.domains.txt",
       "release_path": "releases/gmail/snap-gmail-c3a855e07fa2cf45651ae3a4/release.json",
       "snapshot_id": "snap-gmail-c3a855e07fa2cf45651ae3a4",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "goodreads": {
@@ -448,7 +448,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_goodreads.domains.txt",
       "release_path": "releases/goodreads/snap-goodreads-eb7a2c816de0efe942519ac8/release.json",
       "snapshot_id": "snap-goodreads-eb7a2c816de0efe942519ac8",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "google-calendar": {
@@ -460,7 +460,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_google-calendar.domains.txt",
       "release_path": "releases/google-calendar/snap-google-calendar-1b852f9159dd62fdc2bbde01/release.json",
       "snapshot_id": "snap-google-calendar-1b852f9159dd62fdc2bbde01",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "google-chat": {
@@ -472,7 +472,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_google-chat.domains.txt",
       "release_path": "releases/google-chat/snap-google-chat-25e1acd75e54a275f491a913/release.json",
       "snapshot_id": "snap-google-chat-25e1acd75e54a275f491a913",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "google-contacts": {
@@ -484,7 +484,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_google-contacts.domains.txt",
       "release_path": "releases/google-contacts/snap-google-contacts-3ad5c7ecb05956597c4ae5ca/release.json",
       "snapshot_id": "snap-google-contacts-3ad5c7ecb05956597c4ae5ca",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "google-docs": {
@@ -496,7 +496,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_google-docs.domains.txt",
       "release_path": "releases/google-docs/snap-google-docs-373a011368bfd8cccaccc4dd/release.json",
       "snapshot_id": "snap-google-docs-373a011368bfd8cccaccc4dd",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "google-earth": {
@@ -508,7 +508,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_google-earth.domains.txt",
       "release_path": "releases/google-earth/snap-google-earth-d9b76bf3506634dccd2b96e2/release.json",
       "snapshot_id": "snap-google-earth-d9b76bf3506634dccd2b96e2",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "google-forms": {
@@ -520,7 +520,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_google-forms.domains.txt",
       "release_path": "releases/google-forms/snap-google-forms-559aea19004e62de9eb7175d/release.json",
       "snapshot_id": "snap-google-forms-559aea19004e62de9eb7175d",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "google-groups": {
@@ -532,7 +532,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_google-groups.domains.txt",
       "release_path": "releases/google-groups/snap-google-groups-ee345194168348f5b9b4cad2/release.json",
       "snapshot_id": "snap-google-groups-ee345194168348f5b9b4cad2",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "google-maps": {
@@ -544,7 +544,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_google-maps.domains.txt",
       "release_path": "releases/google-maps/snap-google-maps-ad2f1a8bcd3a536fca6b3dac/release.json",
       "snapshot_id": "snap-google-maps-ad2f1a8bcd3a536fca6b3dac",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "google-meet": {
@@ -556,7 +556,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_google-meet.domains.txt",
       "release_path": "releases/google-meet/snap-google-meet-c4280ce1e242a4dd7b758342/release.json",
       "snapshot_id": "snap-google-meet-c4280ce1e242a4dd7b758342",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "google-news": {
@@ -568,7 +568,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_google-news.domains.txt",
       "release_path": "releases/google-news/snap-google-news-78c4526fe0a249e933aed4ff/release.json",
       "snapshot_id": "snap-google-news-78c4526fe0a249e933aed4ff",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "google-photos": {
@@ -580,7 +580,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_google-photos.domains.txt",
       "release_path": "releases/google-photos/snap-google-photos-c2fe7615ea4cf011cdbc31de/release.json",
       "snapshot_id": "snap-google-photos-c2fe7615ea4cf011cdbc31de",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "google-play": {
@@ -592,7 +592,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_google-play.domains.txt",
       "release_path": "releases/google-play/snap-google-play-8521d59544a0decf823e859c/release.json",
       "snapshot_id": "snap-google-play-8521d59544a0decf823e859c",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "google-sheets": {
@@ -604,7 +604,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_google-sheets.domains.txt",
       "release_path": "releases/google-sheets/snap-google-sheets-6de01de6e87331067661ad92/release.json",
       "snapshot_id": "snap-google-sheets-6de01de6e87331067661ad92",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "google-sites": {
@@ -616,7 +616,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_google-sites.domains.txt",
       "release_path": "releases/google-sites/snap-google-sites-8110ded44cc74b3e78e32ecc/release.json",
       "snapshot_id": "snap-google-sites-8110ded44cc74b3e78e32ecc",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "google-slides": {
@@ -628,7 +628,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_google-slides.domains.txt",
       "release_path": "releases/google-slides/snap-google-slides-4b5f8f5fff72ee076ba11416/release.json",
       "snapshot_id": "snap-google-slides-4b5f8f5fff72ee076ba11416",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "google-vids": {
@@ -640,7 +640,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_google-vids.domains.txt",
       "release_path": "releases/google-vids/snap-google-vids-e595a5032f87e5544cb3874e/release.json",
       "snapshot_id": "snap-google-vids-e595a5032f87e5544cb3874e",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "google-voice": {
@@ -652,7 +652,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_google-voice.domains.txt",
       "release_path": "releases/google-voice/snap-google-voice-d823134be8c59031aa5055d8/release.json",
       "snapshot_id": "snap-google-voice-d823134be8c59031aa5055d8",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "google-workspace-studio": {
@@ -664,19 +664,19 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_google-workspace-studio.domains.txt",
       "release_path": "releases/google-workspace-studio/snap-google-workspace-studio-a936fad5df9362c828fb9d68/release.json",
       "snapshot_id": "snap-google-workspace-studio-a936fad5df9362c828fb9d68",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "googlecloud": {
       "actual_sha256": "9ba115a86285dab8cbe59a46dad765ea1b549969c8509351c02d12fa21974374",
       "collection_manifest_status": "ok",
-      "content_digest": "b6d45c685aea0fe275a03bc1c1cd4565d5468663c8333eb09d4ff7352c1b9b20",
+      "content_digest": "4ef7c658655527e8258248e7dbef26acdb4ef27f6939f018adcb5ca8b028a37f",
       "expected_sha256": "9ba115a86285dab8cbe59a46dad765ea1b549969c8509351c02d12fa21974374",
       "lineage_mode": "current",
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_googlecloud.domains.txt",
-      "release_path": "releases/googlecloud/snap-googlecloud-c6f2f1a871af186052767530/release.json",
-      "snapshot_id": "snap-googlecloud-c6f2f1a871af186052767530",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "release_path": "releases/googlecloud/snap-googlecloud-b6d12a6bdc42f9c4ae1d0b74/release.json",
+      "snapshot_id": "snap-googlecloud-b6d12a6bdc42f9c4ae1d0b74",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "googledrive": {
@@ -688,7 +688,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_googledrive.domains.txt",
       "release_path": "releases/googledrive/snap-googledrive-a3f033b61b8bc0b99e39f7ca/release.json",
       "snapshot_id": "snap-googledrive-a3f033b61b8bc0b99e39f7ca",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "googlefcm": {
@@ -700,7 +700,19 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_googlefcm.domains.txt",
       "release_path": "releases/googlefcm/snap-googlefcm-d2649b705a9906c0296cdbaf/release.json",
       "snapshot_id": "snap-googlefcm-d2649b705a9906c0296cdbaf",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
+      "status": "verified"
+    },
+    "groq": {
+      "actual_sha256": "d779541783d4c835ad341a13ae3c3a008bfa3e535b46f79518b92bdef17588bb",
+      "collection_manifest_status": "ok",
+      "content_digest": "88efc1a66cdffe57858d1067819be3e176fe946795bd9dbff08355ab7ce2c98c",
+      "expected_sha256": "d779541783d4c835ad341a13ae3c3a008bfa3e535b46f79518b92bdef17588bb",
+      "lineage_mode": "current",
+      "local": "backup/2026-09-27/sources/popular-rules-source/PRS_groq.domains.txt",
+      "release_path": "releases/groq/snap-groq-3f8b97712755dd76acdc77ab/release.json",
+      "snapshot_id": "snap-groq-3f8b97712755dd76acdc77ab",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "huawei-cloud": {
@@ -712,7 +724,19 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_huawei-cloud.domains.txt",
       "release_path": "releases/huawei-cloud/snap-huawei-cloud-baad7d83f4093ace2f04705c/release.json",
       "snapshot_id": "snap-huawei-cloud-baad7d83f4093ace2f04705c",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
+      "status": "verified"
+    },
+    "huggingface": {
+      "actual_sha256": "67f5861b31232701f884efd38d9436dd89183fccbd01d6f10d791b9ef6fbf4b8",
+      "collection_manifest_status": "ok",
+      "content_digest": "74e48c56d6a5727806021cf7f2e0a9e9d3ac8cb12b7358d681f5f220bba046e1",
+      "expected_sha256": "67f5861b31232701f884efd38d9436dd89183fccbd01d6f10d791b9ef6fbf4b8",
+      "lineage_mode": "current",
+      "local": "backup/2026-09-27/sources/popular-rules-source/PRS_huggingface.domains.txt",
+      "release_path": "releases/huggingface/snap-huggingface-226053190707e71c9f66141c/release.json",
+      "snapshot_id": "snap-huggingface-226053190707e71c9f66141c",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "icloud": {
@@ -724,7 +748,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_icloud.domains.txt",
       "release_path": "releases/icloud/snap-icloud-d3bceca16ccfbb5fe06c64f6/release.json",
       "snapshot_id": "snap-icloud-d3bceca16ccfbb5fe06c64f6",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "jd-cloud": {
@@ -736,7 +760,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_jd-cloud.domains.txt",
       "release_path": "releases/jd-cloud/snap-jd-cloud-7364b0a4c509c49727621c40/release.json",
       "snapshot_id": "snap-jd-cloud-7364b0a4c509c49727621c40",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "kugou": {
@@ -748,7 +772,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_kugou.domains.txt",
       "release_path": "releases/kugou/snap-kugou-bd7700e11c8ff2c07e7b9321/release.json",
       "snapshot_id": "snap-kugou-bd7700e11c8ff2c07e7b9321",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "kuwo": {
@@ -760,7 +784,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_kuwo.domains.txt",
       "release_path": "releases/kuwo/snap-kuwo-c36f7d9497fdd5e0b0806d93/release.json",
       "snapshot_id": "snap-kuwo-c36f7d9497fdd5e0b0806d93",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "messenger": {
@@ -772,7 +796,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_messenger.domains.txt",
       "release_path": "releases/messenger/snap-messenger-b3b52c8322960d4f19279550/release.json",
       "snapshot_id": "snap-messenger-b3b52c8322960d4f19279550",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "mi-cloud": {
@@ -784,7 +808,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_mi-cloud.domains.txt",
       "release_path": "releases/mi-cloud/snap-mi-cloud-e876da13d4a50a1abf1ddb7a/release.json",
       "snapshot_id": "snap-mi-cloud-e876da13d4a50a1abf1ddb7a",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "ms365-excel": {
@@ -796,7 +820,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_ms365-excel.domains.txt",
       "release_path": "releases/ms365-excel/snap-ms365-excel-84491a426ae08f1b75786d09/release.json",
       "snapshot_id": "snap-ms365-excel-84491a426ae08f1b75786d09",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "ms365-loop": {
@@ -808,7 +832,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_ms365-loop.domains.txt",
       "release_path": "releases/ms365-loop/snap-ms365-loop-65886fc777a8ed550f93fb60/release.json",
       "snapshot_id": "snap-ms365-loop-65886fc777a8ed550f93fb60",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "ms365-mesh": {
@@ -820,7 +844,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_ms365-mesh.domains.txt",
       "release_path": "releases/ms365-mesh/snap-ms365-mesh-cb11ed05173e638e4642ab11/release.json",
       "snapshot_id": "snap-ms365-mesh-cb11ed05173e638e4642ab11",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "ms365-onenote": {
@@ -832,7 +856,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_ms365-onenote.domains.txt",
       "release_path": "releases/ms365-onenote/snap-ms365-onenote-5115ce5bb375c71660f5b78f/release.json",
       "snapshot_id": "snap-ms365-onenote-5115ce5bb375c71660f5b78f",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "ms365-planner": {
@@ -844,7 +868,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_ms365-planner.domains.txt",
       "release_path": "releases/ms365-planner/snap-ms365-planner-c6ee135c73112ab31f5132b3/release.json",
       "snapshot_id": "snap-ms365-planner-c6ee135c73112ab31f5132b3",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "ms365-powerpoint": {
@@ -856,7 +880,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_ms365-powerpoint.domains.txt",
       "release_path": "releases/ms365-powerpoint/snap-ms365-powerpoint-0e7ea85ee45bd767f51ac6b6/release.json",
       "snapshot_id": "snap-ms365-powerpoint-0e7ea85ee45bd767f51ac6b6",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "ms365-word": {
@@ -868,7 +892,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_ms365-word.domains.txt",
       "release_path": "releases/ms365-word/snap-ms365-word-0eb9e29c143572c255507c67/release.json",
       "snapshot_id": "snap-ms365-word-0eb9e29c143572c255507c67",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "neteasemail": {
@@ -880,7 +904,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_neteasemail.domains.txt",
       "release_path": "releases/neteasemail/snap-neteasemail-8f25db6f713ea62f08bd565b/release.json",
       "snapshot_id": "snap-neteasemail-8f25db6f713ea62f08bd565b",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "neteasemusic": {
@@ -892,7 +916,19 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_neteasemusic.domains.txt",
       "release_path": "releases/neteasemusic/snap-neteasemusic-34efc854219f96a2aa121d84/release.json",
       "snapshot_id": "snap-neteasemusic-34efc854219f96a2aa121d84",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
+      "status": "verified"
+    },
+    "office": {
+      "actual_sha256": "623f37f7c0f0e9461ee4ff096b99d2319da5aede22587ef7c9a66c5cd27b9abb",
+      "collection_manifest_status": "ok",
+      "content_digest": "f7d2b869a94a9a1647041aed9bcd309c98a401f3f5da049360ebf917cb437cac",
+      "expected_sha256": "623f37f7c0f0e9461ee4ff096b99d2319da5aede22587ef7c9a66c5cd27b9abb",
+      "lineage_mode": "current",
+      "local": "backup/2026-09-27/sources/popular-rules-source/PRS_office.domains.txt",
+      "release_path": "releases/office/snap-office-16c488c0914d570060921459/release.json",
+      "snapshot_id": "snap-office-16c488c0914d570060921459",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "onedrive": {
@@ -904,7 +940,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_onedrive.domains.txt",
       "release_path": "releases/onedrive/snap-onedrive-241ab9a1831b3f0a3affb85a/release.json",
       "snapshot_id": "snap-onedrive-241ab9a1831b3f0a3affb85a",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "openai": {
@@ -916,7 +952,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_openai.domains.txt",
       "release_path": "releases/openai/snap-openai-cda1ed8e109c4abd8bf521dd/release.json",
       "snapshot_id": "snap-openai-cda1ed8e109c4abd8bf521dd",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "openai-api": {
@@ -928,7 +964,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_openai-api.domains.txt",
       "release_path": "releases/openai-api/snap-openai-api-c8952ba8249663ca6f49098d/release.json",
       "snapshot_id": "snap-openai-api-c8952ba8249663ca6f49098d",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "openai-platform": {
@@ -940,7 +976,19 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_openai-platform.domains.txt",
       "release_path": "releases/openai-platform/snap-openai-platform-769b5880b0899016f4335a85/release.json",
       "snapshot_id": "snap-openai-platform-769b5880b0899016f4335a85",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
+      "status": "verified"
+    },
+    "outlook": {
+      "actual_sha256": "2cf4ceaf91afdef806d9b2cae6ef046ede59a681fbfc4c10c51126555423d217",
+      "collection_manifest_status": "ok",
+      "content_digest": "7a29eaa2dd61b55085a715b69149d645a81e16a9fd1e7a19e632b58dd77d650d",
+      "expected_sha256": "2cf4ceaf91afdef806d9b2cae6ef046ede59a681fbfc4c10c51126555423d217",
+      "lineage_mode": "current",
+      "local": "backup/2026-09-27/sources/popular-rules-source/PRS_outlook.domains.txt",
+      "release_path": "releases/outlook/snap-outlook-5b6d555db235bd3f501eae14/release.json",
+      "snapshot_id": "snap-outlook-5b6d555db235bd3f501eae14",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "perplexity": {
@@ -952,7 +1000,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_perplexity.domains.txt",
       "release_path": "releases/perplexity/snap-perplexity-ada0cc4943c05a38442ca859/release.json",
       "snapshot_id": "snap-perplexity-ada0cc4943c05a38442ca859",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "qq": {
@@ -964,7 +1012,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_qq.domains.txt",
       "release_path": "releases/qq/snap-qq-e8b755c0889d871584191efb/release.json",
       "snapshot_id": "snap-qq-e8b755c0889d871584191efb",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "qqmail": {
@@ -976,7 +1024,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_qqmail.domains.txt",
       "release_path": "releases/qqmail/snap-qqmail-013babbee1bf9cf46a1741a1/release.json",
       "snapshot_id": "snap-qqmail-013babbee1bf9cf46a1741a1",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "qqmusic": {
@@ -988,7 +1036,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_qqmusic.domains.txt",
       "release_path": "releases/qqmusic/snap-qqmusic-421df9f4465ad7fb35ed9c06/release.json",
       "snapshot_id": "snap-qqmusic-421df9f4465ad7fb35ed9c06",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "quanmin-k-ge": {
@@ -1000,7 +1048,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_quanmin-k-ge.domains.txt",
       "release_path": "releases/quanmin-k-ge/snap-quanmin-k-ge-00c1b63526a1b67c5f490aaf/release.json",
       "snapshot_id": "snap-quanmin-k-ge-00c1b63526a1b67c5f490aaf",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "signal": {
@@ -1012,7 +1060,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_signal.domains.txt",
       "release_path": "releases/signal/snap-signal-ab3deea2dbc34fa008c60d6c/release.json",
       "snapshot_id": "snap-signal-ab3deea2dbc34fa008c60d6c",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "siri": {
@@ -1024,7 +1072,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_siri.domains.txt",
       "release_path": "releases/siri/snap-siri-440b4c5a63d59b410d5e32fa/release.json",
       "snapshot_id": "snap-siri-440b4c5a63d59b410d5e32fa",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "stripe-dashboard": {
@@ -1036,19 +1084,19 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_stripe-dashboard.domains.txt",
       "release_path": "releases/stripe-dashboard/snap-stripe-dashboard-e5667382cb3f12c246ad8660/release.json",
       "snapshot_id": "snap-stripe-dashboard-e5667382cb3f12c246ad8660",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "taobao": {
       "actual_sha256": "818ce8e07ffdc768387f91f4b1c5e03a75fe4a039c649aaad7d491dc264640a6",
       "collection_manifest_status": "ok",
-      "content_digest": "fa6d0024d3340d6515720815443badd75f6fde9e656cec48432d247fe4775767",
+      "content_digest": "d89a0f34a493bcf1119a64c3971149088d8d505d42f766b6980b88a93c90a8ff",
       "expected_sha256": "818ce8e07ffdc768387f91f4b1c5e03a75fe4a039c649aaad7d491dc264640a6",
       "lineage_mode": "current",
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_taobao.domains.txt",
-      "release_path": "releases/taobao/snap-taobao-50646cfa0e93b38a8153bf8d/release.json",
-      "snapshot_id": "snap-taobao-50646cfa0e93b38a8153bf8d",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "release_path": "releases/taobao/snap-taobao-834d549e8982036ce1438963/release.json",
+      "snapshot_id": "snap-taobao-834d549e8982036ce1438963",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "teams": {
@@ -1060,7 +1108,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_teams.domains.txt",
       "release_path": "releases/teams/snap-teams-b7790f52024c56ece9273ef3/release.json",
       "snapshot_id": "snap-teams-b7790f52024c56ece9273ef3",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "telegram": {
@@ -1072,19 +1120,19 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_telegram.domains.txt",
       "release_path": "releases/telegram/snap-telegram-ae2063026508ed946661df66/release.json",
       "snapshot_id": "snap-telegram-ae2063026508ed946661df66",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "tencentcloud": {
       "actual_sha256": "3aee7d20287e15c9e109c97d04571758bc4b66fd74ace8d84967827e36260991",
       "collection_manifest_status": "ok",
-      "content_digest": "4e3efbfa99a08c812706a48e00a047f7f12f0559a115b063f3c2e0e3b8d5338c",
+      "content_digest": "073c3031c90820457209336550d39bbd4976b9f91c1486be5b0795a2c302057f",
       "expected_sha256": "3aee7d20287e15c9e109c97d04571758bc4b66fd74ace8d84967827e36260991",
       "lineage_mode": "current",
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_tencentcloud.domains.txt",
-      "release_path": "releases/tencentcloud/snap-tencentcloud-11f2a09f18218925500878fc/release.json",
-      "snapshot_id": "snap-tencentcloud-11f2a09f18218925500878fc",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "release_path": "releases/tencentcloud/snap-tencentcloud-e55bc8c508e839813ae20cd0/release.json",
+      "snapshot_id": "snap-tencentcloud-e55bc8c508e839813ae20cd0",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "tencentmeeting": {
@@ -1096,7 +1144,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_tencentmeeting.domains.txt",
       "release_path": "releases/tencentmeeting/snap-tencentmeeting-19826cb5a6a9fb912f7be3fc/release.json",
       "snapshot_id": "snap-tencentmeeting-19826cb5a6a9fb912f7be3fc",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "tencentvideo": {
@@ -1108,7 +1156,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_tencentvideo.domains.txt",
       "release_path": "releases/tencentvideo/snap-tencentvideo-0bbc97349dbece8ea2628b3f/release.json",
       "snapshot_id": "snap-tencentvideo-0bbc97349dbece8ea2628b3f",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "testflight": {
@@ -1120,7 +1168,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_testflight.domains.txt",
       "release_path": "releases/testflight/snap-testflight-922accff387fa39f172c3c41/release.json",
       "snapshot_id": "snap-testflight-922accff387fa39f172c3c41",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "tiktok": {
@@ -1132,19 +1180,19 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_tiktok.domains.txt",
       "release_path": "releases/tiktok/snap-tiktok-d7c408670d9f72fda616937c/release.json",
       "snapshot_id": "snap-tiktok-d7c408670d9f72fda616937c",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "tmall": {
       "actual_sha256": "4f2521212149543f1f267cb4b7d9bb89a544f168b33bd12ecd3207aaaedd412d",
       "collection_manifest_status": "ok",
-      "content_digest": "10b4d4e1a7f91ad76779e9be520dc83be278556cab7bce0cc560998a3283da31",
+      "content_digest": "89e2ce020e9bb3a7538b80836127c59290470c896aa2a42438011eecce6dbc98",
       "expected_sha256": "4f2521212149543f1f267cb4b7d9bb89a544f168b33bd12ecd3207aaaedd412d",
       "lineage_mode": "current",
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_tmall.domains.txt",
-      "release_path": "releases/tmall/snap-tmall-ea8c65fe854188e13fb67584/release.json",
-      "snapshot_id": "snap-tmall-ea8c65fe854188e13fb67584",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "release_path": "releases/tmall/snap-tmall-17de7049e2f7bf67cb88c785/release.json",
+      "snapshot_id": "snap-tmall-17de7049e2f7bf67cb88c785",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "venmo": {
@@ -1156,7 +1204,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_venmo.domains.txt",
       "release_path": "releases/venmo/snap-venmo-ad97a6f5008ebab004dbad8a/release.json",
       "snapshot_id": "snap-venmo-ad97a6f5008ebab004dbad8a",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "wechat": {
@@ -1168,19 +1216,19 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_wechat.domains.txt",
       "release_path": "releases/wechat/snap-wechat-84a8d3ac3ff682614f4d7470/release.json",
       "snapshot_id": "snap-wechat-84a8d3ac3ff682614f4d7470",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "wecom": {
       "actual_sha256": "738ec6e8a3576e5d8d455ddd5abfa5ffabf035889b33f4d5189455c2aebb0e69",
       "collection_manifest_status": "ok",
-      "content_digest": "b99529ae162c2062aca28ec2e856758c4ef69a362046ff7b939c5879b4543a13",
+      "content_digest": "db460bdf48dea3a45074782eac15db372d558bc0c466cfba9f22fa22b85dfd11",
       "expected_sha256": "738ec6e8a3576e5d8d455ddd5abfa5ffabf035889b33f4d5189455c2aebb0e69",
       "lineage_mode": "current",
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_wecom.domains.txt",
-      "release_path": "releases/wecom/snap-wecom-c6975c7fa31bc2c96407e444/release.json",
-      "snapshot_id": "snap-wecom-c6975c7fa31bc2c96407e444",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "release_path": "releases/wecom/snap-wecom-019997bd4957a3511ce1304b/release.json",
+      "snapshot_id": "snap-wecom-019997bd4957a3511ce1304b",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "xai-grok": {
@@ -1192,7 +1240,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_xai-grok.domains.txt",
       "release_path": "releases/xai-grok/snap-xai-grok-0f56662ce92c5717e8909b9d/release.json",
       "snapshot_id": "snap-xai-grok-0f56662ce92c5717e8909b9d",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "xbox": {
@@ -1204,7 +1252,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_xbox.domains.txt",
       "release_path": "releases/xbox/snap-xbox-c056e17cbe3622251ba30c82/release.json",
       "snapshot_id": "snap-xbox-c056e17cbe3622251ba30c82",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "youdao": {
@@ -1216,7 +1264,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_youdao.domains.txt",
       "release_path": "releases/youdao/snap-youdao-fc97f5d207d4c3358c6a4d6b/release.json",
       "snapshot_id": "snap-youdao-fc97f5d207d4c3358c6a4d6b",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "youtube": {
@@ -1228,7 +1276,7 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_youtube.domains.txt",
       "release_path": "releases/youtube/snap-youtube-58b8afe3b6062febd60fd519/release.json",
       "snapshot_id": "snap-youtube-58b8afe3b6062febd60fd519",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     },
     "youtubemusic": {
@@ -1240,10 +1288,10 @@
       "local": "backup/2026-09-27/sources/popular-rules-source/PRS_youtubemusic.domains.txt",
       "release_path": "releases/youtubemusic/snap-youtubemusic-0e39136672e2e05e52470bd5/release.json",
       "snapshot_id": "snap-youtubemusic-0e39136672e2e05e52470bd5",
-      "source_ref": "dcbaeb5973d0ea794e10c573c92dd3df9ed14745",
+      "source_ref": "de8e45a1d6137c36731f8b8bd91c7b5d491b7e26",
       "status": "verified"
     }
   },
   "status": "PASS",
-  "verified_count": 103
+  "verified_count": 107
 }
