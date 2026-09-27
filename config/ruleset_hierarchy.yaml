@@ -507,7 +507,7 @@ providers:
         status: existing
   atlassian:
     display_name: Atlassian
-    aggregate: atlassian
+    aggregate: atlassian_aggregate
     services:
       jira:
         display_name: Jira
