@@ -1,66 +1,15 @@
 # YouTube
 
-> 用于匹配 **YouTube** 相关域名/IP 的分流规则（来自上游标准化合并）。
+> Current V3 service documentation.
 
 | 项目 | 内容 |
 |------|------|
 | Rule ID | `youtube` |
-| Primary Ecosystem | **Google** (`google`) |
 | Service Type | service |
-| Tags | google, streaming |
-| 类型 | mixed |
-| Domains | 184 |
-| CIDR | 3 |
-| 最后更新 | 2026-09-01 |
-| Sources | blackmatrix7 / metacubex / v2fly / dler |
-| Confidence | HIGH |
+| Release Date | 2026-09-27 |
+| Status | official seed candidate |
 
-## 用途
-
-用于匹配 **YouTube** 相关域名/IP 的分流规则（来自上游标准化合并）。
-
-支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
-
-## 一键订阅
-
-| 客户端 | 路径 | 链接 |
-|--------|------|------|
-| Mihomo | `generated/mihomo/youtube.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/youtube.yaml) |
-| sing-box | `generated/sing-box/youtube.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/youtube.json) |
-| Surge | `generated/surge/youtube.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/youtube.list) |
-| Shadowrocket | `generated/shadowrocket/youtube.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/youtube.list) |
-| Quantumult X | `generated/quantumult-x/youtube.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/youtube.list) |
-| Egern | `generated/egern/youtube.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/youtube.yaml) |
-| Loon | `generated/loon/youtube.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/youtube.list) |
-
-## CDN 镜像（Mihomo）
-
-| 镜像 | 链接 |
-|------|------|
-| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/youtube.yaml |
-| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/youtube.yaml |
-| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/youtube.yaml |
-| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/youtube.yaml |
-
-## 官方网站
-
-[官方站点](https://www.youtube.com)
-
-## 规则来源（Provenance）
-
-- `blackmatrix7`
-- `metacubex`
-- `v2fly`
-- `dler`
-
-由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
-
-## 数据位置
-
-- Schema: `database/services/youtube.yaml`
-- Domains: `database/domains/youtube.txt`
-- IPs: `database/ips/youtube.txt`（若有）
-- Product page: `rule/Google/…`（见 generate_rule_pages）
+Company-root / product official seed. Sub-service tree not fully claimed unless declared in hierarchy.
 
 ---
-_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
+_2026-09-27_

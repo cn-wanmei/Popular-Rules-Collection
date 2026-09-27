@@ -1,10 +1,10 @@
-# WeTV
+# QQ浏览器
 
 > Current V3 service documentation.
 
 | 项目 | 内容 |
 |------|------|
-| Rule ID | `wetv` |
+| Rule ID | `qqbrowser` |
 | Service Type | service |
 | Release Date | 2026-09-27 |
 | Status | official seed candidate |
