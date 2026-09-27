@@ -601,3 +601,139 @@
 - [Datadog](datadog.md) (`datadog` · service)
 
 - [MongoDB](mongodb.md) (`mongodb` · service)
+
+- [Temu](temu.md) (`temu` · service)
+
+- [HeyTap](heytap.md) (`heytap` · service)
+
+- [咪咕](migu.md) (`migu` · service)
+
+- [天翼云](ctyun.md) (`ctyun` · service)
+
+- [联通云](woyun.md) (`woyun` · service)
+
+- [顺丰](sfexpress.md) (`sfexpress` · service)
+
+- [贝壳](beike.md) (`beike` · service)
+
+- [唯品会](vipshop.md) (`vipshop` · service)
+
+- [金蝶](kingdee.md) (`kingdee` · service)
+
+- [用友](yonyou.md) (`yonyou` · service)
+
+- [深信服](sangfor.md) (`sangfor` · service)
+
+- [海尔智家](haier.md) (`haier` · service)
+
+- [网宿科技](wangsu.md) (`wangsu` · service)
+
+- [完美世界](perfectworld.md) (`perfectworld` · service)
+
+- [同花顺](tonghuashun.md) (`tonghuashun` · service)
+
+- [货拉拉](huolala.md) (`huolala` · service)
+
+- [满帮](manbang.md) (`manbang` · service)
+
+- [智联招聘](zhaopin.md) (`zhaopin` · service)
+
+- [58同城](wuba.md) (`wuba` · service)
+
+- [安居客](anjuke.md) (`anjuke` · service)
+
+- [哈啰](hellobike.md) (`hellobike` · service)
+
+- [曹操出行](caocao.md) (`caocao` · service)
+
+- [T3出行](t3go.md) (`t3go` · service)
+
+- [商汤科技](sensetime.md) (`sensetime` · service)
+
+- [智谱AI](zhipu.md) (`zhipu` · service)
+
+- [月之暗面](moonshot.md) (`moonshot` · service)
+
+- [MiniMax](minimax.md) (`minimax` · service)
+
+- [百川智能](baichuan.md) (`baichuan` · service)
+
+- [零一万物](yi.md) (`yi` · service)
+
+- [寒武纪](cambricon.md) (`cambricon` · service)
+
+- [海康威视](hikvision.md) (`hikvision` · service)
+
+- [大华股份](dahua.md) (`dahua` · service)
+
+- [大疆](dji.md) (`dji` · service)
+
+- [涂鸦智能](tuya.md) (`tuya` · service)
+
+- [安克创新](anker.md) (`anker` · service)
+
+- [SAP](sap.md) (`sap` · service)
+
+- [Sony](sony.md) (`sony` · service)
+
+- [Qualcomm](qualcomm.md) (`qualcomm` · service)
+
+- [Arm](arm.md) (`arm` · service)
+
+- [TSMC](tsmc.md) (`tsmc` · service)
+
+- [ServiceNow](servicenow.md) (`servicenow` · service)
+
+- [Databricks](databricks.md) (`databricks` · service)
+
+- [Snowflake](snowflake.md) (`snowflake` · service)
+
+- [Workday](workday.md) (`workday` · service)
+
+- [Palantir](palantir.md) (`palantir` · service)
+
+- [SpaceX](spacex.md) (`spacex` · service)
+
+- [Starlink](starlink.md) (`starlink` · service)
+
+- [Intuit](intuit.md) (`intuit` · service)
+
+- [MediaTek](mediatek.md) (`mediatek` · service)
+
+- [LG](lg.md) (`lg` · service)
+
+- [Panasonic](panasonic.md) (`panasonic` · service)
+
+- [Rakuten](rakuten.md) (`rakuten` · service)
+
+- [LINE](linecorp.md) (`linecorp` · service)
+
+- [Grab](grab.md) (`grab` · service)
+
+- [Shopee](shopee.md) (`shopee` · service)
+
+- [Coupang](coupang.md) (`coupang` · service)
+
+- [Kakao](kakao.md) (`kakao` · service)
+
+- [Ericsson](ericsson.md) (`ericsson` · service)
+
+- [Nokia](nokia.md) (`nokia` · service)
+
+- [CrowdStrike](crowdstrike.md) (`crowdstrike` · service)
+
+- [Fortinet](fortinet.md) (`fortinet` · service)
+
+- [Okta](okta.md) (`okta` · service)
+
+- [HubSpot](hubspot.md) (`hubspot` · service)
+
+- [Twilio](twilio.md) (`twilio` · service)
+
+- [Autodesk](autodesk.md) (`autodesk` · service)
+
+- [Unity](unity.md) (`unity` · service)
+
+- [Coinbase](coinbase.md) (`coinbase` · service)
+
+- [Epic Games](epicgames.md) (`epicgames` · service)
