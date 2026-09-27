@@ -733,7 +733,7 @@ sources:
     name: intel
     service: intel
     local: PRS_intel.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/lenovo/domains.txt
     name: lenovo
     service: lenovo
@@ -743,7 +743,7 @@ sources:
     name: nvidia
     service: nvidia
     local: PRS_nvidia.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/qihoo360/domains.txt
     name: qihoo360
     service: qihoo360
@@ -753,12 +753,12 @@ sources:
     name: samsung
     service: samsung
     local: PRS_samsung.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/tesla/domains.txt
     name: tesla
     service: tesla
     local: PRS_tesla.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/zte/domains.txt
     name: zte
     service: zte
@@ -893,67 +893,67 @@ sources:
     name: iflytek
     service: iflytek
     local: PRS_iflytek.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/shimo/domains.txt
     name: shimo
     service: shimo
     local: PRS_shimo.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/xunlei/domains.txt
     name: xunlei
     service: xunlei
     local: PRS_xunlei.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/mgtv/domains.txt
     name: mgtv
     service: mgtv
     local: PRS_mgtv.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/eastmoney/domains.txt
     name: eastmoney
     service: eastmoney
     local: PRS_eastmoney.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/autohome/domains.txt
     name: autohome
     service: autohome
     local: PRS_autohome.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/qunar/domains.txt
     name: qunar
     service: qunar
     local: PRS_qunar.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/zhipin/domains.txt
     name: zhipin
     service: zhipin
     local: PRS_zhipin.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/wps/domains.txt
     name: wps
     service: wps
     local: PRS_wps.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/ibm/domains.txt
     name: ibm
     service: ibm
     local: PRS_ibm.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/amd/domains.txt
     name: amd
     service: amd
     local: PRS_amd.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/cisco/domains.txt
     name: cisco
     service: cisco
     local: PRS_cisco.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/salesforce/domains.txt
     name: salesforce
     service: salesforce
     local: PRS_salesforce.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/cloudflare/domains.txt
     name: cloudflare
     service: cloudflare
@@ -963,32 +963,32 @@ sources:
     name: datadog
     service: datadog
     local: PRS_datadog.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/mongodb/domains.txt
     name: mongodb
     service: mongodb
     local: PRS_mongodb.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/temu/domains.txt
     name: temu
     service: temu
     local: PRS_temu.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/heytap/domains.txt
     name: heytap
     service: heytap
     local: PRS_heytap.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/migu/domains.txt
     name: migu
     service: migu
     local: PRS_migu.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/ctyun/domains.txt
     name: ctyun
     service: ctyun
     local: PRS_ctyun.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/woyun/domains.txt
     name: woyun
     service: woyun
@@ -998,17 +998,17 @@ sources:
     name: sfexpress
     service: sfexpress
     local: PRS_sfexpress.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/beike/domains.txt
     name: beike
     service: beike
     local: PRS_beike.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/vipshop/domains.txt
     name: vipshop
     service: vipshop
     local: PRS_vipshop.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/tongcheng/domains.txt
     name: tongcheng
     service: tongcheng
@@ -1018,12 +1018,12 @@ sources:
     name: kingdee
     service: kingdee
     local: PRS_kingdee.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/yonyou/domains.txt
     name: yonyou
     service: yonyou
     local: PRS_yonyou.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/sangfor/domains.txt
     name: sangfor
     service: sangfor
@@ -1098,17 +1098,17 @@ sources:
     name: zhipu
     service: zhipu
     local: PRS_zhipu.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/moonshot/domains.txt
     name: moonshot
     service: moonshot
     local: PRS_moonshot.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/minimax/domains.txt
     name: minimax
     service: minimax
     local: PRS_minimax.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/baichuan/domains.txt
     name: baichuan
     service: baichuan
@@ -1153,22 +1153,22 @@ sources:
     name: sap
     service: sap
     local: PRS_sap.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/sony/domains.txt
     name: sony
     service: sony
     local: PRS_sony.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/qualcomm/domains.txt
     name: qualcomm
     service: qualcomm
     local: PRS_qualcomm.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/arm/domains.txt
     name: arm
     service: arm
     local: PRS_arm.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/tsmc/domains.txt
     name: tsmc
     service: tsmc
@@ -1183,17 +1183,17 @@ sources:
     name: databricks
     service: databricks
     local: PRS_databricks.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/snowflake/domains.txt
     name: snowflake
     service: snowflake
     local: PRS_snowflake.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/atlassian/domains.txt
     name: atlassian
     service: atlassian
     local: PRS_atlassian.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/workday/domains.txt
     name: workday
     service: workday
@@ -1283,7 +1283,7 @@ sources:
     name: crowdstrike
     service: crowdstrike
     local: PRS_crowdstrike.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/fortinet/domains.txt
     name: fortinet
     service: fortinet
@@ -1293,7 +1293,7 @@ sources:
     name: okta
     service: okta
     local: PRS_okta.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/hubspot/domains.txt
     name: hubspot
     service: hubspot
@@ -1303,7 +1303,7 @@ sources:
     name: twilio
     service: twilio
     local: PRS_twilio.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/autodesk/domains.txt
     name: autodesk
     service: autodesk
@@ -1318,7 +1318,7 @@ sources:
     name: coinbase
     service: coinbase
     local: PRS_coinbase.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/ea/domains.txt
     name: ea
     service: ea
