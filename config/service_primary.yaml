@@ -2502,3 +2502,31 @@ services:
     categories:
     - china
     service_type: service
+  lark:
+    primary_category: china
+    display_name: Lark
+    categories:
+    - china
+    service_type: service
+    parent: bytedance
+  qqdoc:
+    primary_category: china
+    display_name: 腾讯文档
+    categories:
+    - china
+    service_type: service
+    parent: tencent
+  mihome:
+    primary_category: china
+    display_name: 米家
+    categories:
+    - china
+    service_type: service
+    parent: xiaomi
+  getapps:
+    primary_category: china
+    display_name: GetApps
+    categories:
+    - china
+    service_type: service
+    parent: xiaomi

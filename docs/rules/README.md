@@ -805,3 +805,11 @@
 - [壁仞科技](birentech.md) (`birentech` · service)
 
 - [昆仑芯](kunlunxin.md) (`kunlunxin` · service)
+
+- [Lark](lark.md) (`lark` · service · parent `bytedance`)
+
+- [腾讯文档](qqdoc.md) (`qqdoc` · service · parent `tencent`)
+
+- [米家](mihome.md) (`mihome` · service · parent `xiaomi`)
+
+- [GetApps](getapps.md) (`getapps` · service · parent `xiaomi`)

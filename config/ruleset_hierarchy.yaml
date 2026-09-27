@@ -299,7 +299,7 @@ providers:
         status: planned
       wegame:
         display_name: WeGame
-        status: planned
+        status: existing
       qqbrowser:
         display_name: QQ Browser
         status: planned
@@ -314,6 +314,9 @@ providers:
         status: existing
       quanmin-k-ge:
         display_name: 全民K歌
+        status: existing
+      qqdoc:
+        display_name: 腾讯文档
         status: existing
   alibaba:
     display_name: Alibaba
@@ -385,16 +388,16 @@ providers:
         status: planned
       lark:
         display_name: Lark
-        status: planned
+        status: existing
       capcut:
-        display_name: CapCut
-        status: planned
+        display_name: 剪映/CapCut
+        status: existing
       jianying:
         display_name: Jianying
         status: planned
       volcengine:
-        display_name: Volcano Engine
-        status: planned
+        display_name: 火山引擎
+        status: existing
       doubao:
         display_name: Doubao
         status: planned
@@ -472,14 +475,14 @@ providers:
         display_name: Mi Cloud
         status: planned
       mihome:
-        display_name: Mi Home
-        status: planned
+        display_name: 米家
+        status: existing
       miaccount:
         display_name: Mi Account
         status: planned
       getapps:
         display_name: GetApps
-        status: planned
+        status: existing
       mi-cloud:
         display_name: Mi Cloud
         status: existing
@@ -1106,6 +1109,9 @@ providers:
       jd-logistics:
         display_name: JD Logistics
         status: planned
+      jdcloud:
+        display_name: 京东云
+        status: existing
   kakaotalk:
     display_name: KakaoTalk
     aggregate: kakaotalk_aggregate
