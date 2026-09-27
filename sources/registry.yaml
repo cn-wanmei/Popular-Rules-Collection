@@ -969,6 +969,366 @@ sources:
     service: mongodb
     local: PRS_mongodb.domains.txt
     enabled: false
+  - path: generated/source/temu/domains.txt
+    name: temu
+    service: temu
+    local: PRS_temu.domains.txt
+    enabled: false
+  - path: generated/source/heytap/domains.txt
+    name: heytap
+    service: heytap
+    local: PRS_heytap.domains.txt
+    enabled: false
+  - path: generated/source/migu/domains.txt
+    name: migu
+    service: migu
+    local: PRS_migu.domains.txt
+    enabled: false
+  - path: generated/source/ctyun/domains.txt
+    name: ctyun
+    service: ctyun
+    local: PRS_ctyun.domains.txt
+    enabled: false
+  - path: generated/source/woyun/domains.txt
+    name: woyun
+    service: woyun
+    local: PRS_woyun.domains.txt
+    enabled: false
+  - path: generated/source/sfexpress/domains.txt
+    name: sfexpress
+    service: sfexpress
+    local: PRS_sfexpress.domains.txt
+    enabled: false
+  - path: generated/source/beike/domains.txt
+    name: beike
+    service: beike
+    local: PRS_beike.domains.txt
+    enabled: false
+  - path: generated/source/vipshop/domains.txt
+    name: vipshop
+    service: vipshop
+    local: PRS_vipshop.domains.txt
+    enabled: false
+  - path: generated/source/tongcheng/domains.txt
+    name: tongcheng
+    service: tongcheng
+    local: PRS_tongcheng.domains.txt
+    enabled: false
+  - path: generated/source/kingdee/domains.txt
+    name: kingdee
+    service: kingdee
+    local: PRS_kingdee.domains.txt
+    enabled: false
+  - path: generated/source/yonyou/domains.txt
+    name: yonyou
+    service: yonyou
+    local: PRS_yonyou.domains.txt
+    enabled: false
+  - path: generated/source/sangfor/domains.txt
+    name: sangfor
+    service: sangfor
+    local: PRS_sangfor.domains.txt
+    enabled: false
+  - path: generated/source/haier/domains.txt
+    name: haier
+    service: haier
+    local: PRS_haier.domains.txt
+    enabled: false
+  - path: generated/source/wangsu/domains.txt
+    name: wangsu
+    service: wangsu
+    local: PRS_wangsu.domains.txt
+    enabled: false
+  - path: generated/source/perfectworld/domains.txt
+    name: perfectworld
+    service: perfectworld
+    local: PRS_perfectworld.domains.txt
+    enabled: false
+  - path: generated/source/tonghuashun/domains.txt
+    name: tonghuashun
+    service: tonghuashun
+    local: PRS_tonghuashun.domains.txt
+    enabled: false
+  - path: generated/source/huolala/domains.txt
+    name: huolala
+    service: huolala
+    local: PRS_huolala.domains.txt
+    enabled: false
+  - path: generated/source/manbang/domains.txt
+    name: manbang
+    service: manbang
+    local: PRS_manbang.domains.txt
+    enabled: false
+  - path: generated/source/zhaopin/domains.txt
+    name: zhaopin
+    service: zhaopin
+    local: PRS_zhaopin.domains.txt
+    enabled: false
+  - path: generated/source/wuba/domains.txt
+    name: wuba
+    service: wuba
+    local: PRS_wuba.domains.txt
+    enabled: false
+  - path: generated/source/anjuke/domains.txt
+    name: anjuke
+    service: anjuke
+    local: PRS_anjuke.domains.txt
+    enabled: false
+  - path: generated/source/hellobike/domains.txt
+    name: hellobike
+    service: hellobike
+    local: PRS_hellobike.domains.txt
+    enabled: false
+  - path: generated/source/caocao/domains.txt
+    name: caocao
+    service: caocao
+    local: PRS_caocao.domains.txt
+    enabled: false
+  - path: generated/source/t3go/domains.txt
+    name: t3go
+    service: t3go
+    local: PRS_t3go.domains.txt
+    enabled: false
+  - path: generated/source/sensetime/domains.txt
+    name: sensetime
+    service: sensetime
+    local: PRS_sensetime.domains.txt
+    enabled: false
+  - path: generated/source/zhipu/domains.txt
+    name: zhipu
+    service: zhipu
+    local: PRS_zhipu.domains.txt
+    enabled: false
+  - path: generated/source/moonshot/domains.txt
+    name: moonshot
+    service: moonshot
+    local: PRS_moonshot.domains.txt
+    enabled: false
+  - path: generated/source/minimax/domains.txt
+    name: minimax
+    service: minimax
+    local: PRS_minimax.domains.txt
+    enabled: false
+  - path: generated/source/baichuan/domains.txt
+    name: baichuan
+    service: baichuan
+    local: PRS_baichuan.domains.txt
+    enabled: false
+  - path: generated/source/yi/domains.txt
+    name: yi
+    service: yi
+    local: PRS_yi.domains.txt
+    enabled: false
+  - path: generated/source/cambricon/domains.txt
+    name: cambricon
+    service: cambricon
+    local: PRS_cambricon.domains.txt
+    enabled: false
+  - path: generated/source/hikvision/domains.txt
+    name: hikvision
+    service: hikvision
+    local: PRS_hikvision.domains.txt
+    enabled: false
+  - path: generated/source/dahua/domains.txt
+    name: dahua
+    service: dahua
+    local: PRS_dahua.domains.txt
+    enabled: false
+  - path: generated/source/dji/domains.txt
+    name: dji
+    service: dji
+    local: PRS_dji.domains.txt
+    enabled: false
+  - path: generated/source/tuya/domains.txt
+    name: tuya
+    service: tuya
+    local: PRS_tuya.domains.txt
+    enabled: false
+  - path: generated/source/anker/domains.txt
+    name: anker
+    service: anker
+    local: PRS_anker.domains.txt
+    enabled: false
+  - path: generated/source/sap/domains.txt
+    name: sap
+    service: sap
+    local: PRS_sap.domains.txt
+    enabled: false
+  - path: generated/source/sony/domains.txt
+    name: sony
+    service: sony
+    local: PRS_sony.domains.txt
+    enabled: false
+  - path: generated/source/qualcomm/domains.txt
+    name: qualcomm
+    service: qualcomm
+    local: PRS_qualcomm.domains.txt
+    enabled: false
+  - path: generated/source/arm/domains.txt
+    name: arm
+    service: arm
+    local: PRS_arm.domains.txt
+    enabled: false
+  - path: generated/source/tsmc/domains.txt
+    name: tsmc
+    service: tsmc
+    local: PRS_tsmc.domains.txt
+    enabled: false
+  - path: generated/source/servicenow/domains.txt
+    name: servicenow
+    service: servicenow
+    local: PRS_servicenow.domains.txt
+    enabled: false
+  - path: generated/source/databricks/domains.txt
+    name: databricks
+    service: databricks
+    local: PRS_databricks.domains.txt
+    enabled: false
+  - path: generated/source/snowflake/domains.txt
+    name: snowflake
+    service: snowflake
+    local: PRS_snowflake.domains.txt
+    enabled: false
+  - path: generated/source/atlassian/domains.txt
+    name: atlassian
+    service: atlassian
+    local: PRS_atlassian.domains.txt
+    enabled: false
+  - path: generated/source/workday/domains.txt
+    name: workday
+    service: workday
+    local: PRS_workday.domains.txt
+    enabled: false
+  - path: generated/source/palantir/domains.txt
+    name: palantir
+    service: palantir
+    local: PRS_palantir.domains.txt
+    enabled: false
+  - path: generated/source/spacex/domains.txt
+    name: spacex
+    service: spacex
+    local: PRS_spacex.domains.txt
+    enabled: false
+  - path: generated/source/starlink/domains.txt
+    name: starlink
+    service: starlink
+    local: PRS_starlink.domains.txt
+    enabled: false
+  - path: generated/source/intuit/domains.txt
+    name: intuit
+    service: intuit
+    local: PRS_intuit.domains.txt
+    enabled: false
+  - path: generated/source/mediatek/domains.txt
+    name: mediatek
+    service: mediatek
+    local: PRS_mediatek.domains.txt
+    enabled: false
+  - path: generated/source/nintendo/domains.txt
+    name: nintendo
+    service: nintendo
+    local: PRS_nintendo.domains.txt
+    enabled: false
+  - path: generated/source/lg/domains.txt
+    name: lg
+    service: lg
+    local: PRS_lg.domains.txt
+    enabled: false
+  - path: generated/source/panasonic/domains.txt
+    name: panasonic
+    service: panasonic
+    local: PRS_panasonic.domains.txt
+    enabled: false
+  - path: generated/source/rakuten/domains.txt
+    name: rakuten
+    service: rakuten
+    local: PRS_rakuten.domains.txt
+    enabled: false
+  - path: generated/source/linecorp/domains.txt
+    name: linecorp
+    service: linecorp
+    local: PRS_linecorp.domains.txt
+    enabled: false
+  - path: generated/source/grab/domains.txt
+    name: grab
+    service: grab
+    local: PRS_grab.domains.txt
+    enabled: false
+  - path: generated/source/shopee/domains.txt
+    name: shopee
+    service: shopee
+    local: PRS_shopee.domains.txt
+    enabled: false
+  - path: generated/source/coupang/domains.txt
+    name: coupang
+    service: coupang
+    local: PRS_coupang.domains.txt
+    enabled: false
+  - path: generated/source/kakao/domains.txt
+    name: kakao
+    service: kakao
+    local: PRS_kakao.domains.txt
+    enabled: false
+  - path: generated/source/ericsson/domains.txt
+    name: ericsson
+    service: ericsson
+    local: PRS_ericsson.domains.txt
+    enabled: false
+  - path: generated/source/nokia/domains.txt
+    name: nokia
+    service: nokia
+    local: PRS_nokia.domains.txt
+    enabled: false
+  - path: generated/source/crowdstrike/domains.txt
+    name: crowdstrike
+    service: crowdstrike
+    local: PRS_crowdstrike.domains.txt
+    enabled: false
+  - path: generated/source/fortinet/domains.txt
+    name: fortinet
+    service: fortinet
+    local: PRS_fortinet.domains.txt
+    enabled: false
+  - path: generated/source/okta/domains.txt
+    name: okta
+    service: okta
+    local: PRS_okta.domains.txt
+    enabled: false
+  - path: generated/source/hubspot/domains.txt
+    name: hubspot
+    service: hubspot
+    local: PRS_hubspot.domains.txt
+    enabled: false
+  - path: generated/source/twilio/domains.txt
+    name: twilio
+    service: twilio
+    local: PRS_twilio.domains.txt
+    enabled: false
+  - path: generated/source/autodesk/domains.txt
+    name: autodesk
+    service: autodesk
+    local: PRS_autodesk.domains.txt
+    enabled: false
+  - path: generated/source/unity/domains.txt
+    name: unity
+    service: unity
+    local: PRS_unity.domains.txt
+    enabled: false
+  - path: generated/source/coinbase/domains.txt
+    name: coinbase
+    service: coinbase
+    local: PRS_coinbase.domains.txt
+    enabled: false
+  - path: generated/source/ea/domains.txt
+    name: ea
+    service: ea
+    local: PRS_ea.domains.txt
+    enabled: false
+  - path: generated/source/epicgames/domains.txt
+    name: epicgames
+    service: epicgames
+    local: PRS_epicgames.domains.txt
+    enabled: false
 - id: blackmatrix7
   name: BlackMatrix7 ios_rule_script
   url: https://github.com/blackmatrix7/ios_rule_script
