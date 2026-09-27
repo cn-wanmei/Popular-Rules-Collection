@@ -723,12 +723,12 @@ sources:
     name: byd
     service: byd
     local: PRS_byd.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/honor/domains.txt
     name: honor
     service: honor
     local: PRS_honor.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/intel/domains.txt
     name: intel
     service: intel
@@ -738,7 +738,7 @@ sources:
     name: lenovo
     service: lenovo
     local: PRS_lenovo.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/nvidia/domains.txt
     name: nvidia
     service: nvidia
@@ -748,7 +748,7 @@ sources:
     name: qihoo360
     service: qihoo360
     local: PRS_qihoo360.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/samsung/domains.txt
     name: samsung
     service: samsung
@@ -763,7 +763,7 @@ sources:
     name: zte
     service: zte
     local: PRS_zte.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/google-calendar/domains.txt
     name: google-calendar
     service: google-calendar
@@ -1028,12 +1028,12 @@ sources:
     name: sangfor
     service: sangfor
     local: PRS_sangfor.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/haier/domains.txt
     name: haier
     service: haier
     local: PRS_haier.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/wangsu/domains.txt
     name: wangsu
     service: wangsu
@@ -1073,7 +1073,7 @@ sources:
     name: anjuke
     service: anjuke
     local: PRS_anjuke.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/hellobike/domains.txt
     name: hellobike
     service: hellobike
@@ -1113,7 +1113,7 @@ sources:
     name: baichuan
     service: baichuan
     local: PRS_baichuan.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/yi/domains.txt
     name: yi
     service: yi
@@ -1128,7 +1128,7 @@ sources:
     name: hikvision
     service: hikvision
     local: PRS_hikvision.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/dahua/domains.txt
     name: dahua
     service: dahua
@@ -1138,7 +1138,7 @@ sources:
     name: dji
     service: dji
     local: PRS_dji.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/tuya/domains.txt
     name: tuya
     service: tuya
@@ -1148,7 +1148,7 @@ sources:
     name: anker
     service: anker
     local: PRS_anker.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/sap/domains.txt
     name: sap
     service: sap
@@ -1173,7 +1173,7 @@ sources:
     name: tsmc
     service: tsmc
     local: PRS_tsmc.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/servicenow/domains.txt
     name: servicenow
     service: servicenow
@@ -1203,12 +1203,12 @@ sources:
     name: palantir
     service: palantir
     local: PRS_palantir.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/spacex/domains.txt
     name: spacex
     service: spacex
     local: PRS_spacex.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/starlink/domains.txt
     name: starlink
     service: starlink
@@ -1308,7 +1308,7 @@ sources:
     name: autodesk
     service: autodesk
     local: PRS_autodesk.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/unity/domains.txt
     name: unity
     service: unity
@@ -1338,7 +1338,7 @@ sources:
     name: asml
     service: asml
     local: PRS_asml.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/micron/domains.txt
     name: micron
     service: micron
@@ -1468,7 +1468,7 @@ sources:
     name: atour
     service: atour
     local: PRS_atour.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/transsion/domains.txt
     name: transsion
     service: transsion
@@ -1508,7 +1508,7 @@ sources:
     name: lark
     service: lark
     local: PRS_lark.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/qqdoc/domains.txt
     name: qqdoc
     service: qqdoc

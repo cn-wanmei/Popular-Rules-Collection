@@ -2683,3 +2683,74 @@ services:
     - microsoft
     service_type: service
     parent: microsoft
+  applemusic:
+    primary_category: apple
+    display_name: Apple Music
+    categories:
+    - apple
+    service_type: service
+    parent: apple
+  appletv:
+    primary_category: apple
+    display_name: Apple TV
+    categories:
+    - apple
+    service_type: service
+    parent: apple
+  googledrive:
+    primary_category: google
+    display_name: Google Drive
+    categories:
+    - google
+    service_type: service
+    parent: google
+  googlefcm:
+    primary_category: google
+    display_name: Google FCM
+    categories:
+    - google
+    service_type: service
+    parent: google
+  icloud:
+    primary_category: apple
+    display_name: iCloud
+    categories:
+    - apple
+    service_type: service
+    parent: apple
+  onedrive:
+    primary_category: microsoft
+    display_name: OneDrive
+    categories:
+    - microsoft
+    service_type: service
+    parent: microsoft
+  siri:
+    primary_category: apple
+    display_name: Siri
+    categories:
+    - apple
+    service_type: service
+    parent: apple
+  teams:
+    primary_category: microsoft
+    display_name: Microsoft Teams
+    categories:
+    - microsoft
+    service_type: service
+    parent: microsoft
+  xbox:
+    primary_category: microsoft
+    display_name: Xbox
+    categories:
+    - microsoft
+    - gaming
+    service_type: service
+    parent: microsoft
+  youtube:
+    primary_category: google
+    display_name: YouTube
+    categories:
+    - google
+    service_type: service
+    parent: google
