@@ -831,3 +831,6 @@
 - [Supermicro](supermicro.md) (`supermicro` · service)
 - [腾讯文档](tencentdocs.md) (`tencentdocs` · service)
 - [完美世界](wanmei.md) (`wanmei` · service)
+- [baidu-zhidao](baidu-zhidao.md) (`baidu-zhidao` · service)
+- [huawei-appgallery](huawei-appgallery.md) (`huawei-appgallery` · service)
+- [kuaishou-open](kuaishou-open.md) (`kuaishou-open` · service)
