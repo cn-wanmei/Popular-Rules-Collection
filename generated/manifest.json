@@ -9,21 +9,21 @@
     "surge"
   ],
   "collection_date": "2026-09-27",
-  "file_count": 2663,
+  "file_count": 2684,
   "files": [
     {
-      "file": "_promotion/20260927T051327713126Z-run.json",
+      "file": "_promotion/20260927T055509146545Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "1ad50b6bbdc24795cee8bf04bdc9e198dfec116a28d97c16503ea288e63847e3",
-      "size": 297689
+      "sha256": "c72c206e861ef82d7719f2fd882207e8afd9f35e7b3c9c76f22b1bc4cacdcb52",
+      "size": 300240
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "1ad50b6bbdc24795cee8bf04bdc9e198dfec116a28d97c16503ea288e63847e3",
-      "size": 297689
+      "sha256": "c72c206e861ef82d7719f2fd882207e8afd9f35e7b3c9c76f22b1bc4cacdcb52",
+      "size": 300240
     },
     {
       "file": "asn/metadata.yaml",
@@ -468,6 +468,14 @@
     {
       "file": "egern/atlassian/atlassian/atlassian.yaml",
       "kind": "client_rules",
+      "rule_count": 14,
+      "scope": "egern",
+      "sha256": "bab29316362d0561e8dfea6256ffc4d260d315e1192e534cc34f130387c14ac6",
+      "size": 290
+    },
+    {
+      "file": "egern/atlassian/atlassian_aggregate/atlassian_aggregate.yaml",
+      "kind": "client_rules",
       "rule_count": 11,
       "scope": "egern",
       "sha256": "c52fde55245508e12952f1cf42483f17b57773d4dbe483783118345f65299afd",
@@ -716,10 +724,10 @@
     {
       "file": "egern/categories/other/other.yaml",
       "kind": "client_rules",
-      "rule_count": 129237,
+      "rule_count": 129241,
       "scope": "egern",
-      "sha256": "76a10357bf0ff4ed0eea8c8cc99e92b76ec6631ff72c7d9074d74a2657684a87",
-      "size": 2478370
+      "sha256": "59e9a48c13719707c9d40c566502a9634b7d7cced7b62b05e9da37ca4c195cf7",
+      "size": 2478467
     },
     {
       "file": "egern/ccb/ccb/ccb.yaml",
@@ -1412,10 +1420,10 @@
     {
       "file": "egern/groq/groq/groq.yaml",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 2,
       "scope": "egern",
-      "sha256": "8547c4a275dbcd37bb11ce0b45755e9ee7162e4f505ff627ff5e52406945a209",
-      "size": 34
+      "sha256": "0926584f44e4ee588e2ab97efd77b096b9275d05628321c5d2b5d3ab4317c4e8",
+      "size": 49
     },
     {
       "file": "egern/groq/groq_aggregate/groq_aggregate.yaml",
@@ -1484,10 +1492,10 @@
     {
       "file": "egern/huggingface/huggingface/huggingface.yaml",
       "kind": "client_rules",
-      "rule_count": 6,
+      "rule_count": 9,
       "scope": "egern",
-      "sha256": "403f1717dcbe31a98d50a5f11289ec1bac790202b6871ac4dc6d6a29922158a5",
-      "size": 115
+      "sha256": "93a4964aeaf715d550538ee6ee8e4c29261d91454728bc05677da106b8347b73",
+      "size": 163
     },
     {
       "file": "egern/huggingface/huggingface_aggregate/huggingface_aggregate.yaml",
@@ -1636,34 +1644,34 @@
     {
       "file": "egern/kugou/kugou/kugou.yaml",
       "kind": "client_rules",
-      "rule_count": 20,
+      "rule_count": 1,
       "scope": "egern",
-      "sha256": "88912cd6932f032fb3a8ffa2140e34b1225319ce322a3bb38ba7c05dfc1e2b03",
-      "size": 442
+      "sha256": "922482f6c6166c48277d76164ddd59e0045ade71cea519268fcd04efdaa2ac79",
+      "size": 39
     },
     {
       "file": "egern/kugou/kugou_aggregate/kugou_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 20,
+      "rule_count": 1,
       "scope": "egern",
-      "sha256": "e800b67cd08c3cb9c8d75bba08ff0dcf727b61517153c2a5cdbc3369862eaacf",
-      "size": 442
+      "sha256": "922482f6c6166c48277d76164ddd59e0045ade71cea519268fcd04efdaa2ac79",
+      "size": 39
     },
     {
       "file": "egern/kuwo/kuwo/kuwo.yaml",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 1,
       "scope": "egern",
-      "sha256": "fea6580b9479463d510bc130710bb0c7f9e3ffdbda38ef72fc44775b6e4695ee",
-      "size": 80
+      "sha256": "33ce7761362866faab6eb44103371fdb75d0b24786aa99b9917a0e0c95ab4e06",
+      "size": 35
     },
     {
       "file": "egern/kuwo/kuwo_aggregate/kuwo_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 1,
       "scope": "egern",
-      "sha256": "e0a42c223fb33f427fa364c1aeee7f8dae0fd36decbfbd37d5f4476453d46546",
-      "size": 80
+      "sha256": "33ce7761362866faab6eb44103371fdb75d0b24786aa99b9917a0e0c95ab4e06",
+      "size": 35
     },
     {
       "file": "egern/letv/letv/letv.yaml",
@@ -1804,10 +1812,10 @@
     {
       "file": "egern/microsoft/microsoft/microsoft.yaml",
       "kind": "client_rules",
-      "rule_count": 1083,
+      "rule_count": 1087,
       "scope": "egern",
-      "sha256": "950aabfa3aadfcf6b2a1be1f5eeb0c05dd25be28ebadc6297b61dcd334607216",
-      "size": 28571
+      "sha256": "328689b10a23d9ec67ced3c405d1311aea7670ca1a7da7c695c4c5a5a2afff73",
+      "size": 28668
     },
     {
       "file": "egern/microsoft/microsoftedge/microsoftedge.yaml",
@@ -1882,12 +1890,28 @@
       "size": 46
     },
     {
+      "file": "egern/microsoft/office/office.yaml",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "egern",
+      "sha256": "d6327ea89d57bff456dc70de74a758114e8d920b95479e3075948cef33a8eaf4",
+      "size": 57
+    },
+    {
       "file": "egern/microsoft/onedrive/onedrive.yaml",
       "kind": "client_rules",
       "rule_count": 29,
       "scope": "egern",
       "sha256": "768f0b83002d2da6db48248f1b8800cd24aea77677d21a653717dcf77d185b5e",
       "size": 710
+    },
+    {
+      "file": "egern/microsoft/outlook/outlook.yaml",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "egern",
+      "sha256": "11f86fd926954e7e8345308c7d1327bbeee7434494b7b24f1cb10318a61a5595",
+      "size": 113
     },
     {
       "file": "egern/microsoft/teams/teams.yaml",
@@ -4252,6 +4276,14 @@
     {
       "file": "loon/atlassian/atlassian/atlassian.list",
       "kind": "client_rules",
+      "rule_count": 14,
+      "scope": "loon",
+      "sha256": "d16a8504fe4713cdf2d0198b35139ad9aa5c69daa3ef91b72e7809e7dc2e1184",
+      "size": 383
+    },
+    {
+      "file": "loon/atlassian/atlassian_aggregate/atlassian_aggregate.list",
+      "kind": "client_rules",
       "rule_count": 11,
       "scope": "loon",
       "sha256": "bd2a8be185306fbd9ed278ce7f9d7fe541e488dae72d708c9045906260b8d0da",
@@ -4500,10 +4532,10 @@
     {
       "file": "loon/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 129094,
+      "rule_count": 129098,
       "scope": "loon",
-      "sha256": "b07fe34d8e48b594498c99a5d3b9b2ef4b3493cf713e109764e518fb42d6d2cf",
-      "size": 3495314
+      "sha256": "6e85a86efadf0c6c24bd3af21d48aa61d1222d9e7b717969490b75828fb80a6e",
+      "size": 3495443
     },
     {
       "file": "loon/ccb/ccb/ccb.list",
@@ -5196,10 +5228,10 @@
     {
       "file": "loon/groq/groq/groq.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 2,
       "scope": "loon",
-      "sha256": "c25618d6e673762890944bbccf594711322787bac1820a38e340f48b81fe0c5c",
-      "size": 23
+      "sha256": "6f746c300e1071b157ab3336ce94fbc0ea4c5925fdfb9916237bf8654639be56",
+      "size": 46
     },
     {
       "file": "loon/groq/groq_aggregate/groq_aggregate.list",
@@ -5268,10 +5300,10 @@
     {
       "file": "loon/huggingface/huggingface/huggingface.list",
       "kind": "client_rules",
-      "rule_count": 6,
+      "rule_count": 9,
       "scope": "loon",
-      "sha256": "3d2903176228d3e20da3898a4413bc7966b588801b9cd1633417ee414a46c8db",
-      "size": 144
+      "sha256": "753704450f7045e30e5c20f8b6a9d75ba4a99f7aab8b578764b4d93fa1f2f7f2",
+      "size": 216
     },
     {
       "file": "loon/huggingface/huggingface_aggregate/huggingface_aggregate.list",
@@ -5420,34 +5452,34 @@
     {
       "file": "loon/kugou/kugou/kugou.list",
       "kind": "client_rules",
-      "rule_count": 20,
+      "rule_count": 1,
       "scope": "loon",
-      "sha256": "468abe8a4295222c0c6e87ab7787209051496519d3905ff35362c3387fcc428b",
-      "size": 583
+      "sha256": "73f5c429cee0c2c69886d5d8a72b9a9eac9bb604f15d3ea52f746e0d54edb95f",
+      "size": 28
     },
     {
       "file": "loon/kugou/kugou_aggregate/kugou_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 20,
+      "rule_count": 1,
       "scope": "loon",
-      "sha256": "18c1e81dd57a4d5c68c024914913b3d10017430cf346ffd9cdf2841fb9d29af7",
-      "size": 583
+      "sha256": "73f5c429cee0c2c69886d5d8a72b9a9eac9bb604f15d3ea52f746e0d54edb95f",
+      "size": 28
     },
     {
       "file": "loon/kuwo/kuwo/kuwo.list",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 1,
       "scope": "loon",
-      "sha256": "7b8c4a4d47905fe772158f741389c3283445c3d1d58e11f1f25d270423b8275c",
-      "size": 93
+      "sha256": "bbd28ac11a73d559e12b069d0aa3b0ebbaaaa521ad49d71e22bfff509edd1b2d",
+      "size": 24
     },
     {
       "file": "loon/kuwo/kuwo_aggregate/kuwo_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 1,
       "scope": "loon",
-      "sha256": "ac0a5be6bf261c70a57fd470ee7de09927db746cbe2ff890934ce3a521834a9b",
-      "size": 93
+      "sha256": "bbd28ac11a73d559e12b069d0aa3b0ebbaaaa521ad49d71e22bfff509edd1b2d",
+      "size": 24
     },
     {
       "file": "loon/letv/letv/letv.list",
@@ -5588,10 +5620,10 @@
     {
       "file": "loon/microsoft/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 1083,
+      "rule_count": 1087,
       "scope": "loon",
-      "sha256": "1bb363edbb8a1f9a69e0825f6572eca351fceee182356a7f5fc0f0f14c365696",
-      "size": 36378
+      "sha256": "de7b4d85c011a5ec7017852b376ddb13f05948495b57605f40e0d8a8dd1fe7bc",
+      "size": 36507
     },
     {
       "file": "loon/microsoft/microsoftedge/microsoftedge.list",
@@ -5666,12 +5698,28 @@
       "size": 35
     },
     {
+      "file": "loon/microsoft/office/office.list",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "loon",
+      "sha256": "e57ed84309975f31dd0a12862223ce4a79566a4c9dd93ef9568b0b35795f0463",
+      "size": 54
+    },
+    {
       "file": "loon/microsoft/onedrive/onedrive.list",
       "kind": "client_rules",
       "rule_count": 29,
       "scope": "loon",
       "sha256": "7c15b2a25814b5c90d80d7af7248d6bf029a917bda25275d763494197b0f0e3d",
       "size": 906
+    },
+    {
+      "file": "loon/microsoft/outlook/outlook.list",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "loon",
+      "sha256": "8f677f082795f029285f01fdad239b25cae3eab3b014f004ee35f6a281004334",
+      "size": 126
     },
     {
       "file": "loon/microsoft/teams/teams.list",
@@ -7124,6 +7172,14 @@
     {
       "file": "mihomo/atlassian/atlassian/atlassian.yaml",
       "kind": "client_rules",
+      "rule_count": 14,
+      "scope": "mihomo",
+      "sha256": "f2d343fc9ed4544dca3d0440f050e698290e93e6207a184ce7d182905591c157",
+      "size": 448
+    },
+    {
+      "file": "mihomo/atlassian/atlassian_aggregate/atlassian_aggregate.yaml",
+      "kind": "client_rules",
       "rule_count": 11,
       "scope": "mihomo",
       "sha256": "2416d458e94519b248bd029edff9b33e25607e0d26daf47da88f3c8bc63f5289",
@@ -7372,10 +7428,10 @@
     {
       "file": "mihomo/categories/other/other.yaml",
       "kind": "client_rules",
-      "rule_count": 129237,
+      "rule_count": 129241,
       "scope": "mihomo",
-      "sha256": "c384d89e94647a6e6da017f1c699b9a3d0d32a246a6c188c5985efd03fbf3ec4",
-      "size": 4018255
+      "sha256": "17b7dacf6236a812e765ae8c6943b05e4f546b3de61d3db1cf9984321e6ed33f",
+      "size": 4018400
     },
     {
       "file": "mihomo/ccb/ccb/ccb.yaml",
@@ -8068,10 +8124,10 @@
     {
       "file": "mihomo/groq/groq/groq.yaml",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 2,
       "scope": "mihomo",
-      "sha256": "24769b3652104a91275ec5ee60905da7789952f17c0a333f9d519b981ffe26cf",
-      "size": 36
+      "sha256": "4c77bbfc30b1ead4c6894a8cbf55c6192e08ab0e190cbc5dafdf6fe0ea60f7bd",
+      "size": 63
     },
     {
       "file": "mihomo/groq/groq_aggregate/groq_aggregate.yaml",
@@ -8140,10 +8196,10 @@
     {
       "file": "mihomo/huggingface/huggingface/huggingface.yaml",
       "kind": "client_rules",
-      "rule_count": 6,
+      "rule_count": 9,
       "scope": "mihomo",
-      "sha256": "a6947ac61301024b0bb0e1477ba27e1dafb15100a9557fd8da368c7ba0a22873",
-      "size": 177
+      "sha256": "4cea8a5a043aecc2f30706751252136adeea56e7761eb42fd69dfa5e96d43282",
+      "size": 261
     },
     {
       "file": "mihomo/huggingface/huggingface_aggregate/huggingface_aggregate.yaml",
@@ -8292,34 +8348,34 @@
     {
       "file": "mihomo/kugou/kugou/kugou.yaml",
       "kind": "client_rules",
-      "rule_count": 20,
+      "rule_count": 1,
       "scope": "mihomo",
-      "sha256": "272d5b8e77fd805d068921d3b64eb55fa0c91eed0c2e889b9f249e714ac9e50b",
-      "size": 672
+      "sha256": "8cb76280cc61431b3656f54c7f7a92139e80afa7408de5d8c315d06b0a4ec74c",
+      "size": 41
     },
     {
       "file": "mihomo/kugou/kugou_aggregate/kugou_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 20,
+      "rule_count": 1,
       "scope": "mihomo",
-      "sha256": "8a2114749771d0ecf572e4d5211d33fa99723936d1613666c36c92fcfb885be2",
-      "size": 672
+      "sha256": "8cb76280cc61431b3656f54c7f7a92139e80afa7408de5d8c315d06b0a4ec74c",
+      "size": 41
     },
     {
       "file": "mihomo/kuwo/kuwo/kuwo.yaml",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 1,
       "scope": "mihomo",
-      "sha256": "a37ae6fa5d52ccfd051ee25191ee76cade66fffa05b8def1b6336c8f858d7bb6",
-      "size": 118
+      "sha256": "527533bf5520afebfef97dafec3362d92e32db14abf937f9f477efddbffe2652",
+      "size": 37
     },
     {
       "file": "mihomo/kuwo/kuwo_aggregate/kuwo_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 1,
       "scope": "mihomo",
-      "sha256": "af569a194715b27e75abafaada21e73cff8cad76e34d8a3fec9417be63248e02",
-      "size": 118
+      "sha256": "527533bf5520afebfef97dafec3362d92e32db14abf937f9f477efddbffe2652",
+      "size": 37
     },
     {
       "file": "mihomo/letv/letv/letv.yaml",
@@ -8460,10 +8516,10 @@
     {
       "file": "mihomo/microsoft/microsoft/microsoft.yaml",
       "kind": "client_rules",
-      "rule_count": 1083,
+      "rule_count": 1087,
       "scope": "mihomo",
-      "sha256": "e9457edcecc49b77a1198c1f5ccc246953413690acc600bb0538320af371d169",
-      "size": 40719
+      "sha256": "f06bbb4a493dfb5dc9ceb82d52a4bfff9573d2f11966381e521bd79cb91ada79",
+      "size": 40864
     },
     {
       "file": "mihomo/microsoft/microsoftedge/microsoftedge.yaml",
@@ -8538,12 +8594,28 @@
       "size": 48
     },
     {
+      "file": "mihomo/microsoft/office/office.yaml",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "mihomo",
+      "sha256": "a9ac1106d6017d0c01d660474cb4105a74bc5acde68474e1a7791ac54b0ae151",
+      "size": 71
+    },
+    {
       "file": "mihomo/microsoft/onedrive/onedrive.yaml",
       "kind": "client_rules",
       "rule_count": 29,
       "scope": "mihomo",
       "sha256": "dd4f2925e8fc542f99c8c9ec810cef69b4c597410388eeb32b2a54e4d05d0d2a",
       "size": 1031
+    },
+    {
+      "file": "mihomo/microsoft/outlook/outlook.yaml",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "mihomo",
+      "sha256": "2ca3ad8dbb38f72f68bc9cad97d2724317c08769fd702e5273d5c6cde2ca974c",
+      "size": 151
     },
     {
       "file": "mihomo/microsoft/teams/teams.yaml",
@@ -9734,16 +9806,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "72ebb94e25b3fb90a19eb784c01990dd7d067826235f8cfabf5004a7098179fd",
-      "size": 386893
+      "sha256": "461d8bd3e67ab4f54e714de2ace16038404733fbe1ddbb756c3304b625e7befc",
+      "size": 386923
     },
     {
       "file": "provider/aws_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 11251,
+      "rule_count": 11252,
       "scope": "provider",
-      "sha256": "347ab15c71bc2ab47f2a9afa2ca8ada62d16673c9b173c9fba2f88a56ed4f416",
-      "size": 480841
+      "sha256": "1858e9d02346bfd6ee6649c0d3855ed5b86be269c9af6b37a0d72cf805d0f655",
+      "size": 480880
     },
     {
       "file": "provider/cloudflare.txt",
@@ -10260,6 +10332,14 @@
     {
       "file": "quantumultx/atlassian/atlassian/atlassian.list",
       "kind": "client_rules",
+      "rule_count": 14,
+      "scope": "quantumultx",
+      "sha256": "8afc52b574efc7301730988a3b93e8a041e457f5cdc4ccedf00570bd1b42b258",
+      "size": 467
+    },
+    {
+      "file": "quantumultx/atlassian/atlassian_aggregate/atlassian_aggregate.list",
+      "kind": "client_rules",
       "rule_count": 11,
       "scope": "quantumultx",
       "sha256": "3a0a917523182ae95557bdaed122f788702794f307d7246b5ce2163cb7b3bdbc",
@@ -10508,10 +10588,10 @@
     {
       "file": "quantumultx/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 129094,
+      "rule_count": 129098,
       "scope": "quantumultx",
-      "sha256": "7a0f0c95b006c0662f9ad669614c0a30aca09eff8bb1aeeccab256aca09f301f",
-      "size": 4270870
+      "sha256": "1756657733d47b56c8ed946083b49af5b1fde193398e34297db1dac593d0f622",
+      "size": 4271023
     },
     {
       "file": "quantumultx/ccb/ccb/ccb.list",
@@ -11204,10 +11284,10 @@
     {
       "file": "quantumultx/groq/groq/groq.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 2,
       "scope": "quantumultx",
-      "sha256": "da666a5f7e9258f4b35d36f6d6d8f06fe53d9ba2e9548257fcfab28a308c94ca",
-      "size": 29
+      "sha256": "616cd2d9049463adbe0870da5c5b9dbd8e337f3858e519172ddda5ec698c276a",
+      "size": 58
     },
     {
       "file": "quantumultx/groq/groq_aggregate/groq_aggregate.list",
@@ -11276,10 +11356,10 @@
     {
       "file": "quantumultx/huggingface/huggingface/huggingface.list",
       "kind": "client_rules",
-      "rule_count": 6,
+      "rule_count": 9,
       "scope": "quantumultx",
-      "sha256": "9d5adc1e92f92f9be798ca36a7c4c0aa078d32a6b03478c30bfc2b6d9c4f20b0",
-      "size": 180
+      "sha256": "384be8f4a70d13dfa351d9a9ac96060710054aca6169ace88bef61b19248fd3d",
+      "size": 270
     },
     {
       "file": "quantumultx/huggingface/huggingface_aggregate/huggingface_aggregate.list",
@@ -11428,34 +11508,34 @@
     {
       "file": "quantumultx/kugou/kugou/kugou.list",
       "kind": "client_rules",
-      "rule_count": 20,
+      "rule_count": 1,
       "scope": "quantumultx",
-      "sha256": "eb9b2984d8cfc1be73e103102193ac2c6521d696093eeb151d1d325ec598e94b",
-      "size": 703
+      "sha256": "e4d1a878ecd63224a98a0051e7ce16727c400e6f7d7eac9d350825f6f58c35df",
+      "size": 34
     },
     {
       "file": "quantumultx/kugou/kugou_aggregate/kugou_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 20,
+      "rule_count": 1,
       "scope": "quantumultx",
-      "sha256": "04ee6f6dc556e1a7fa92d7c2092fc362972f1c44db7fbbd2240d96d94a5785b1",
-      "size": 703
+      "sha256": "e4d1a878ecd63224a98a0051e7ce16727c400e6f7d7eac9d350825f6f58c35df",
+      "size": 34
     },
     {
       "file": "quantumultx/kuwo/kuwo/kuwo.list",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 1,
       "scope": "quantumultx",
-      "sha256": "2767b668b0f4cfc2655e9c5c114d9885163be8b8aee5f05669d67e55afdae0aa",
-      "size": 117
+      "sha256": "35b0dc9e9ce0327b3ee1fec6a10166c7bf5982096dfbf09fcb886fed86b860a6",
+      "size": 30
     },
     {
       "file": "quantumultx/kuwo/kuwo_aggregate/kuwo_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 1,
       "scope": "quantumultx",
-      "sha256": "98245d68829e194f40a2b9c4a02720945497974eeb22df961e44596832ee8aaf",
-      "size": 117
+      "sha256": "35b0dc9e9ce0327b3ee1fec6a10166c7bf5982096dfbf09fcb886fed86b860a6",
+      "size": 30
     },
     {
       "file": "quantumultx/letv/letv/letv.list",
@@ -11596,10 +11676,10 @@
     {
       "file": "quantumultx/microsoft/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 1083,
+      "rule_count": 1087,
       "scope": "quantumultx",
-      "sha256": "7f893b92ddb7203920bd6a9636fe2253f0157941ef2569b5a7408a2b274008b2",
-      "size": 42880
+      "sha256": "f2cc62975a0bc0d6314821b0e8790a389b9f44bf7172e1942cf160bbd15ae7e6",
+      "size": 43033
     },
     {
       "file": "quantumultx/microsoft/microsoftedge/microsoftedge.list",
@@ -11674,12 +11754,28 @@
       "size": 41
     },
     {
+      "file": "quantumultx/microsoft/office/office.list",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "quantumultx",
+      "sha256": "03a7dcd3ac8d1bd24bdec737e421cbaf8e036a0f9224aeafdaa538ea4328e4de",
+      "size": 66
+    },
+    {
       "file": "quantumultx/microsoft/onedrive/onedrive.list",
       "kind": "client_rules",
       "rule_count": 29,
       "scope": "quantumultx",
       "sha256": "739276fe6280c33687458037ac9a6a2070214b47dfcbf1731e27b1dc8da00cfa",
       "size": 1080
+    },
+    {
+      "file": "quantumultx/microsoft/outlook/outlook.list",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "quantumultx",
+      "sha256": "c3d54ab9f01cc0dae1ff3f5fc043e49e85684f1a009e441141cec9ac6eb4be01",
+      "size": 150
     },
     {
       "file": "quantumultx/microsoft/teams/teams.list",
@@ -13132,6 +13228,14 @@
     {
       "file": "shadowrocket/atlassian/atlassian/atlassian.list",
       "kind": "client_rules",
+      "rule_count": 14,
+      "scope": "shadowrocket",
+      "sha256": "d16a8504fe4713cdf2d0198b35139ad9aa5c69daa3ef91b72e7809e7dc2e1184",
+      "size": 383
+    },
+    {
+      "file": "shadowrocket/atlassian/atlassian_aggregate/atlassian_aggregate.list",
+      "kind": "client_rules",
       "rule_count": 11,
       "scope": "shadowrocket",
       "sha256": "bd2a8be185306fbd9ed278ce7f9d7fe541e488dae72d708c9045906260b8d0da",
@@ -13380,10 +13484,10 @@
     {
       "file": "shadowrocket/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 129094,
+      "rule_count": 129098,
       "scope": "shadowrocket",
-      "sha256": "b07fe34d8e48b594498c99a5d3b9b2ef4b3493cf713e109764e518fb42d6d2cf",
-      "size": 3495314
+      "sha256": "6e85a86efadf0c6c24bd3af21d48aa61d1222d9e7b717969490b75828fb80a6e",
+      "size": 3495443
     },
     {
       "file": "shadowrocket/ccb/ccb/ccb.list",
@@ -14076,10 +14180,10 @@
     {
       "file": "shadowrocket/groq/groq/groq.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 2,
       "scope": "shadowrocket",
-      "sha256": "c25618d6e673762890944bbccf594711322787bac1820a38e340f48b81fe0c5c",
-      "size": 23
+      "sha256": "6f746c300e1071b157ab3336ce94fbc0ea4c5925fdfb9916237bf8654639be56",
+      "size": 46
     },
     {
       "file": "shadowrocket/groq/groq_aggregate/groq_aggregate.list",
@@ -14148,10 +14252,10 @@
     {
       "file": "shadowrocket/huggingface/huggingface/huggingface.list",
       "kind": "client_rules",
-      "rule_count": 6,
+      "rule_count": 9,
       "scope": "shadowrocket",
-      "sha256": "3d2903176228d3e20da3898a4413bc7966b588801b9cd1633417ee414a46c8db",
-      "size": 144
+      "sha256": "753704450f7045e30e5c20f8b6a9d75ba4a99f7aab8b578764b4d93fa1f2f7f2",
+      "size": 216
     },
     {
       "file": "shadowrocket/huggingface/huggingface_aggregate/huggingface_aggregate.list",
@@ -14300,34 +14404,34 @@
     {
       "file": "shadowrocket/kugou/kugou/kugou.list",
       "kind": "client_rules",
-      "rule_count": 20,
+      "rule_count": 1,
       "scope": "shadowrocket",
-      "sha256": "468abe8a4295222c0c6e87ab7787209051496519d3905ff35362c3387fcc428b",
-      "size": 583
+      "sha256": "73f5c429cee0c2c69886d5d8a72b9a9eac9bb604f15d3ea52f746e0d54edb95f",
+      "size": 28
     },
     {
       "file": "shadowrocket/kugou/kugou_aggregate/kugou_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 20,
+      "rule_count": 1,
       "scope": "shadowrocket",
-      "sha256": "18c1e81dd57a4d5c68c024914913b3d10017430cf346ffd9cdf2841fb9d29af7",
-      "size": 583
+      "sha256": "73f5c429cee0c2c69886d5d8a72b9a9eac9bb604f15d3ea52f746e0d54edb95f",
+      "size": 28
     },
     {
       "file": "shadowrocket/kuwo/kuwo/kuwo.list",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 1,
       "scope": "shadowrocket",
-      "sha256": "7b8c4a4d47905fe772158f741389c3283445c3d1d58e11f1f25d270423b8275c",
-      "size": 93
+      "sha256": "bbd28ac11a73d559e12b069d0aa3b0ebbaaaa521ad49d71e22bfff509edd1b2d",
+      "size": 24
     },
     {
       "file": "shadowrocket/kuwo/kuwo_aggregate/kuwo_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 1,
       "scope": "shadowrocket",
-      "sha256": "ac0a5be6bf261c70a57fd470ee7de09927db746cbe2ff890934ce3a521834a9b",
-      "size": 93
+      "sha256": "bbd28ac11a73d559e12b069d0aa3b0ebbaaaa521ad49d71e22bfff509edd1b2d",
+      "size": 24
     },
     {
       "file": "shadowrocket/letv/letv/letv.list",
@@ -14468,10 +14572,10 @@
     {
       "file": "shadowrocket/microsoft/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 1083,
+      "rule_count": 1087,
       "scope": "shadowrocket",
-      "sha256": "1bb363edbb8a1f9a69e0825f6572eca351fceee182356a7f5fc0f0f14c365696",
-      "size": 36378
+      "sha256": "de7b4d85c011a5ec7017852b376ddb13f05948495b57605f40e0d8a8dd1fe7bc",
+      "size": 36507
     },
     {
       "file": "shadowrocket/microsoft/microsoftedge/microsoftedge.list",
@@ -14546,12 +14650,28 @@
       "size": 35
     },
     {
+      "file": "shadowrocket/microsoft/office/office.list",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "shadowrocket",
+      "sha256": "e57ed84309975f31dd0a12862223ce4a79566a4c9dd93ef9568b0b35795f0463",
+      "size": 54
+    },
+    {
       "file": "shadowrocket/microsoft/onedrive/onedrive.list",
       "kind": "client_rules",
       "rule_count": 29,
       "scope": "shadowrocket",
       "sha256": "7c15b2a25814b5c90d80d7af7248d6bf029a917bda25275d763494197b0f0e3d",
       "size": 906
+    },
+    {
+      "file": "shadowrocket/microsoft/outlook/outlook.list",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "shadowrocket",
+      "sha256": "8f677f082795f029285f01fdad239b25cae3eab3b014f004ee35f6a281004334",
+      "size": 126
     },
     {
       "file": "shadowrocket/microsoft/teams/teams.list",
@@ -16006,6 +16126,14 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
+      "sha256": "6f81bfcbb4e68177f9f55b2866a55802655ff8326819dd7282c27961a249fb93",
+      "size": 422
+    },
+    {
+      "file": "singbox/atlassian/atlassian_aggregate/atlassian_aggregate.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
       "sha256": "8736b41c8a34799bfff6682f7c554cebbef93589fae6981e69e8bb61b29bf692",
       "size": 347
     },
@@ -16254,8 +16382,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "b84047b97b3302dda054c6202abb812eb932510ded546033644832f8fd32fa81",
-      "size": 3124659
+      "sha256": "8b830b7292530caba599353931b94a056f208eda1ca6f3bdcaed8c79451d347e",
+      "size": 3124776
     },
     {
       "file": "singbox/ccb/ccb/ccb.json",
@@ -16950,8 +17078,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "8ac7f7c5656b493690d65176e01f050ea7cbc0f5215f64fad736dac3be72524a",
-      "size": 101
+      "sha256": "e2ee79e276b5ed216b826dde8b975f2a6ada4d92d9fbbdf5b12e59dc050dc5f5",
+      "size": 121
     },
     {
       "file": "singbox/groq/groq_aggregate/groq_aggregate.json",
@@ -17022,8 +17150,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "dd23614ba95b18cc45f9984241265a780a0537e9910110697c53d4ce21f81fd2",
-      "size": 207
+      "sha256": "058d84b4e074a97da6b183cf8f09b2b1c07978181188e68b198a29ea1428091f",
+      "size": 270
     },
     {
       "file": "singbox/huggingface/huggingface_aggregate/huggingface_aggregate.json",
@@ -17174,32 +17302,32 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "a763bce6779408d1fe555ea4227397b1037f86fea8c72427300681a1aff7d905",
-      "size": 604
+      "sha256": "4a103e209326d1140e7c7b232e32cf1f771347adbc88e00f4c5a46215ef07437",
+      "size": 106
     },
     {
       "file": "singbox/kugou/kugou_aggregate/kugou_aggregate.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "992d9e45bfcf94412c7320b78631ad2cbe1066811a744113b907941ef363b898",
-      "size": 604
+      "sha256": "4a103e209326d1140e7c7b232e32cf1f771347adbc88e00f4c5a46215ef07437",
+      "size": 106
     },
     {
       "file": "singbox/kuwo/kuwo/kuwo.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "805e1b6b8e2aba69a59500f6f3ab65636132bef4bfa0f5753e664a213e7f4b07",
-      "size": 162
+      "sha256": "fd89c427db66d84cb6086d8dfe2b66315fb86d29b29201325fc04e983e093836",
+      "size": 102
     },
     {
       "file": "singbox/kuwo/kuwo_aggregate/kuwo_aggregate.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "76d5a4f52a4c0c8676d3cc66992c48f7cfd902c16adba1f4817bf2d7d8b0c92a",
-      "size": 162
+      "sha256": "fd89c427db66d84cb6086d8dfe2b66315fb86d29b29201325fc04e983e093836",
+      "size": 102
     },
     {
       "file": "singbox/letv/letv/letv.json",
@@ -17342,8 +17470,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "502f03b4c8af3c7669171046bce9444ba7fe54ee1689c3d6f2e70df56cc9018c",
-      "size": 34090
+      "sha256": "9ce6bd593ef435cc5469d0c5061469baabfedfa0e61ae8784d073ded296761d9",
+      "size": 34207
     },
     {
       "file": "singbox/microsoft/microsoftedge/microsoftedge.json",
@@ -17418,12 +17546,28 @@
       "size": 113
     },
     {
+      "file": "singbox/microsoft/office/office.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "6533b242a36ad076686ce23c1e8fd5a674557791e9bdeddc772fb65916ec66c4",
+      "size": 129
+    },
+    {
       "file": "singbox/microsoft/onedrive/onedrive.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
       "sha256": "ec28821042a3265f40c08ebee3bf6d554637dd1680ece6c00f78f5d04daf0630",
       "size": 931
+    },
+    {
+      "file": "singbox/microsoft/outlook/outlook.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "5642d3b42818599b9160cdc33f85072539ee10fc3286dca9d1e29b77d332b4c2",
+      "size": 195
     },
     {
       "file": "singbox/microsoft/teams/teams.json",
@@ -18876,6 +19020,14 @@
     {
       "file": "surge/atlassian/atlassian/atlassian.list",
       "kind": "client_rules",
+      "rule_count": 14,
+      "scope": "surge",
+      "sha256": "d16a8504fe4713cdf2d0198b35139ad9aa5c69daa3ef91b72e7809e7dc2e1184",
+      "size": 383
+    },
+    {
+      "file": "surge/atlassian/atlassian_aggregate/atlassian_aggregate.list",
+      "kind": "client_rules",
       "rule_count": 11,
       "scope": "surge",
       "sha256": "bd2a8be185306fbd9ed278ce7f9d7fe541e488dae72d708c9045906260b8d0da",
@@ -19124,10 +19276,10 @@
     {
       "file": "surge/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 129094,
+      "rule_count": 129098,
       "scope": "surge",
-      "sha256": "b07fe34d8e48b594498c99a5d3b9b2ef4b3493cf713e109764e518fb42d6d2cf",
-      "size": 3495314
+      "sha256": "6e85a86efadf0c6c24bd3af21d48aa61d1222d9e7b717969490b75828fb80a6e",
+      "size": 3495443
     },
     {
       "file": "surge/ccb/ccb/ccb.list",
@@ -19820,10 +19972,10 @@
     {
       "file": "surge/groq/groq/groq.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 2,
       "scope": "surge",
-      "sha256": "c25618d6e673762890944bbccf594711322787bac1820a38e340f48b81fe0c5c",
-      "size": 23
+      "sha256": "6f746c300e1071b157ab3336ce94fbc0ea4c5925fdfb9916237bf8654639be56",
+      "size": 46
     },
     {
       "file": "surge/groq/groq_aggregate/groq_aggregate.list",
@@ -19892,10 +20044,10 @@
     {
       "file": "surge/huggingface/huggingface/huggingface.list",
       "kind": "client_rules",
-      "rule_count": 6,
+      "rule_count": 9,
       "scope": "surge",
-      "sha256": "3d2903176228d3e20da3898a4413bc7966b588801b9cd1633417ee414a46c8db",
-      "size": 144
+      "sha256": "753704450f7045e30e5c20f8b6a9d75ba4a99f7aab8b578764b4d93fa1f2f7f2",
+      "size": 216
     },
     {
       "file": "surge/huggingface/huggingface_aggregate/huggingface_aggregate.list",
@@ -20044,34 +20196,34 @@
     {
       "file": "surge/kugou/kugou/kugou.list",
       "kind": "client_rules",
-      "rule_count": 20,
+      "rule_count": 1,
       "scope": "surge",
-      "sha256": "468abe8a4295222c0c6e87ab7787209051496519d3905ff35362c3387fcc428b",
-      "size": 583
+      "sha256": "73f5c429cee0c2c69886d5d8a72b9a9eac9bb604f15d3ea52f746e0d54edb95f",
+      "size": 28
     },
     {
       "file": "surge/kugou/kugou_aggregate/kugou_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 20,
+      "rule_count": 1,
       "scope": "surge",
-      "sha256": "18c1e81dd57a4d5c68c024914913b3d10017430cf346ffd9cdf2841fb9d29af7",
-      "size": 583
+      "sha256": "73f5c429cee0c2c69886d5d8a72b9a9eac9bb604f15d3ea52f746e0d54edb95f",
+      "size": 28
     },
     {
       "file": "surge/kuwo/kuwo/kuwo.list",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 1,
       "scope": "surge",
-      "sha256": "7b8c4a4d47905fe772158f741389c3283445c3d1d58e11f1f25d270423b8275c",
-      "size": 93
+      "sha256": "bbd28ac11a73d559e12b069d0aa3b0ebbaaaa521ad49d71e22bfff509edd1b2d",
+      "size": 24
     },
     {
       "file": "surge/kuwo/kuwo_aggregate/kuwo_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 1,
       "scope": "surge",
-      "sha256": "ac0a5be6bf261c70a57fd470ee7de09927db746cbe2ff890934ce3a521834a9b",
-      "size": 93
+      "sha256": "bbd28ac11a73d559e12b069d0aa3b0ebbaaaa521ad49d71e22bfff509edd1b2d",
+      "size": 24
     },
     {
       "file": "surge/letv/letv/letv.list",
@@ -20212,10 +20364,10 @@
     {
       "file": "surge/microsoft/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 1083,
+      "rule_count": 1087,
       "scope": "surge",
-      "sha256": "1bb363edbb8a1f9a69e0825f6572eca351fceee182356a7f5fc0f0f14c365696",
-      "size": 36378
+      "sha256": "de7b4d85c011a5ec7017852b376ddb13f05948495b57605f40e0d8a8dd1fe7bc",
+      "size": 36507
     },
     {
       "file": "surge/microsoft/microsoftedge/microsoftedge.list",
@@ -20290,12 +20442,28 @@
       "size": 35
     },
     {
+      "file": "surge/microsoft/office/office.list",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "surge",
+      "sha256": "e57ed84309975f31dd0a12862223ce4a79566a4c9dd93ef9568b0b35795f0463",
+      "size": 54
+    },
+    {
       "file": "surge/microsoft/onedrive/onedrive.list",
       "kind": "client_rules",
       "rule_count": 29,
       "scope": "surge",
       "sha256": "7c15b2a25814b5c90d80d7af7248d6bf029a917bda25275d763494197b0f0e3d",
       "size": 906
+    },
+    {
+      "file": "surge/microsoft/outlook/outlook.list",
+      "kind": "client_rules",
+      "rule_count": 4,
+      "scope": "surge",
+      "sha256": "8f677f082795f029285f01fdad239b25cae3eab3b014f004ee35f6a281004334",
+      "size": 126
     },
     {
       "file": "surge/microsoft/teams/teams.list",
@@ -21314,7 +21482,7 @@
       "size": 71
     }
   ],
-  "generated_at": "2026-09-27T05:18:22.156138+00:00",
+  "generated_at": "2026-09-27T06:03:22.056821+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "layout_schema": "directory_layout_v2",
   "network_dataset_directories": [
