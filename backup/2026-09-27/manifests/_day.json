@@ -4918,13 +4918,13 @@
       "fetch": "github_raw",
       "files_ok": 0,
       "files_not_modified": 0,
-      "files_skipped": 74,
-      "files_failed": 2,
+      "files_skipped": 76,
+      "files_failed": 0,
       "empty_blocked": 0,
       "required_failures": 0,
       "rules_declared": 76,
       "conditional_cache_hits": 0,
-      "scheduler_skips": 74,
+      "scheduler_skips": 76,
       "files": [
         {
           "name": "geosite_acfun.list",
@@ -5591,26 +5591,30 @@
           "path": "geo/geosite/kugou.list",
           "service": "kugou",
           "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/generated/source/kugou/domains.txt",
-          "status_code": null,
-          "etag": null,
-          "last_modified": null,
-          "decision": "FETCH_DUE",
-          "reason": "freshness_window_expired",
-          "status": "failed",
-          "error": "immutable release missing: HTTP 404 releases/kugou/snap-kugou-bd7700e11c8ff2c07e7b9321/release.json"
+          "status": "skipped",
+          "decision": "SKIP_RETRY_WINDOW",
+          "reason": "failure_backoff_active",
+          "sha256": "7259ab825d9e4797294f668211e03dc9438de818094cee6d0d48f2ad8b3a8d72",
+          "cas_sha256": "7259ab825d9e4797294f668211e03dc9438de818094cee6d0d48f2ad8b3a8d72",
+          "size": 326,
+          "cached_from_cas": true,
+          "local": "sources/metacubex/geosite_kugou.list",
+          "cas_object": "data/cas/acquisition/72/59ab825d9e4797294f668211e03dc9438de818094cee6d0d48f2ad8b3a8d72"
         },
         {
           "name": "geosite_kuwo.list",
           "path": "geo/geosite/kuwo.list",
           "service": "kuwo",
           "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/generated/source/kuwo/domains.txt",
-          "status_code": null,
-          "etag": null,
-          "last_modified": null,
-          "decision": "FETCH_DUE",
-          "reason": "freshness_window_expired",
-          "status": "failed",
-          "error": "immutable release missing: HTTP 404 releases/kuwo/snap-kuwo-c36f7d9497fdd5e0b0806d93/release.json"
+          "status": "skipped",
+          "decision": "SKIP_RETRY_WINDOW",
+          "reason": "failure_backoff_active",
+          "sha256": "79fd18dbb0f7331144a336689c8c5944bd1fbbeefd491993f4372290c686ee42",
+          "cas_sha256": "79fd18dbb0f7331144a336689c8c5944bd1fbbeefd491993f4372290c686ee42",
+          "size": 32,
+          "cached_from_cas": true,
+          "local": "sources/metacubex/geosite_kuwo.list",
+          "cas_object": "data/cas/acquisition/79/fd18dbb0f7331144a336689c8c5944bd1fbbeefd491993f4372290c686ee42"
         },
         {
           "name": "geosite_messenger.list",
@@ -7282,5 +7286,5 @@
     }
   ],
   "schema": "collection_manifest_v2",
-  "manifest_sha256": "d6d0558505443220a3576213254a1189ac546093d96f7981c77557553c7afe08"
+  "manifest_sha256": "d01bb15eb0403a4209cbc9302f71184fb650998227c191981bd960801e65836f"
 }
