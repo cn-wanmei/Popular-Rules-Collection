@@ -719,6 +719,51 @@ sources:
     service: xai-grok
     local: PRS_xai-grok.domains.txt
     enabled: true
+  - path: generated/source/byd/domains.txt
+    name: byd
+    service: byd
+    local: PRS_byd.domains.txt
+    enabled: false
+  - path: generated/source/honor/domains.txt
+    name: honor
+    service: honor
+    local: PRS_honor.domains.txt
+    enabled: false
+  - path: generated/source/intel/domains.txt
+    name: intel
+    service: intel
+    local: PRS_intel.domains.txt
+    enabled: false
+  - path: generated/source/lenovo/domains.txt
+    name: lenovo
+    service: lenovo
+    local: PRS_lenovo.domains.txt
+    enabled: false
+  - path: generated/source/nvidia/domains.txt
+    name: nvidia
+    service: nvidia
+    local: PRS_nvidia.domains.txt
+    enabled: false
+  - path: generated/source/qihoo360/domains.txt
+    name: qihoo360
+    service: qihoo360
+    local: PRS_qihoo360.domains.txt
+    enabled: false
+  - path: generated/source/samsung/domains.txt
+    name: samsung
+    service: samsung
+    local: PRS_samsung.domains.txt
+    enabled: false
+  - path: generated/source/tesla/domains.txt
+    name: tesla
+    service: tesla
+    local: PRS_tesla.domains.txt
+    enabled: false
+  - path: generated/source/zte/domains.txt
+    name: zte
+    service: zte
+    local: PRS_zte.domains.txt
+    enabled: false
 - id: blackmatrix7
   name: BlackMatrix7 ios_rule_script
   url: https://github.com/blackmatrix7/ios_rule_script
