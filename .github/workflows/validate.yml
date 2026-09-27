@@ -165,7 +165,8 @@ jobs:
           source_sha = requested_sha
           artifact_sha = requested_sha
           resolution = "immutable_registry_binding"
-          needed = {"CI", "Phase 2 Source Gate"}
+          # phase2-gate merged into CI; only require CI workflow success
+          needed = {"CI"}
 
           def observe_gate_runs(commit_sha):
               runs = get_json(
@@ -240,7 +241,7 @@ jobs:
                   },
                   ensure_ascii=False, indent=2
               ) + "\n",
-              encoding="utf-8",
+                  encoding="utf-8",
           )
           PY
 
