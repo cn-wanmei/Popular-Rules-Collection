@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: honorofkings_global
+display_name: Honor of Kings Global
+generated_from:
+  run_id: 20260927T151517532092Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 81585a960aceed153878cde9cd7fb63d797f7b33e8641adbebf105e31e967fb2
+  type: DOMAIN_SUFFIX
+  value: honorofkings.com
+- id: ff4874b068395f614544b78677c561d0622e8e5db89b9834b58375e643222dde
+  type: DOMAIN_SUFFIX
+  value: www.honorofkings.com
+provider: tencent

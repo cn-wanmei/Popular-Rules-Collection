@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: globalfoundries_aggregate
+display_name: GlobalFoundries
+generated_from:
+  run_id: 20260927T151517532092Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 2542ebd5dfe7bfd2954cb632ff0d097cb416f9f870746d4f66867ee72e1956c2
+  type: DOMAIN_SUFFIX
+  value: gf.com
+- id: c783805666a43e6f3121367a0ffc0849b1ad3b25ee1edd53bd9f4ae806b11e8c
+  type: DOMAIN_SUFFIX
+  value: www.gf.com
+provider: globalfoundries

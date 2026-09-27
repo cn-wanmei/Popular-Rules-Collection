@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: dassault_aggregate
+display_name: Dassault Systèmes
+generated_from:
+  run_id: 20260927T151517532092Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: fd83321826c560bc376026c1c6b6a82eda34f95fe1787244d8485b737b2ad34f
+  type: DOMAIN_SUFFIX
+  value: 3ds.com
+- id: 4782b0e1e89d0d8a8bfa00c8135fcb443ec68625dd0cff705e4411fef30a0c57
+  type: DOMAIN_SUFFIX
+  value: www.3ds.com
+provider: dassault
