@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: google-vids
+display_name: Google Vids
+generated_from:
+  run_id: 20260927T035120100788Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 6caec2313906e732d194a16eaf7089c5620a7ff58543108911ef2b9d19752f6e
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: e29051e6d2ebb37355b81e5b385883edcd00c2ebffb71c0237adcdf162e8d53d
+  type: DOMAIN_SUFFIX
+  value: vids.google.com
+provider: google

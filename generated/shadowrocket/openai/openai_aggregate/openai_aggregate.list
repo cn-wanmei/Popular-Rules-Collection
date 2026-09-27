@@ -5,6 +5,7 @@ DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,algolia.net
 DOMAIN-SUFFIX,segment.io
 DOMAIN,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,platform.openai.com
 DOMAIN-SUFFIX,openai.com
 DOMAIN,o33249.ingest.sentry.io
 DOMAIN,production-openaicom-storage.azureedge.net
@@ -25,8 +26,10 @@ DOMAIN-SUFFIX,identrust.com
 DOMAIN-SUFFIX,client-api.arkoselabs.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,api.statsig.com
+DOMAIN-SUFFIX,static.cloudflareinsights.com
 DOMAIN,openaicom.imgix.net
 IP-CIDR,64.23.132.171/32
+DOMAIN-SUFFIX,openai-api.arkoselabs.com
 DOMAIN,openaiassets.blob.core.windows.net
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,chatgpt.site
@@ -35,7 +38,9 @@ DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,o33249.ingest.sentry.io
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN-SUFFIX,api.openai.com
 DOMAIN,openai-api.arkoselabs.com
+DOMAIN-SUFFIX,chat.openai.com.cdn.cloudflare.net
 DOMAIN-SUFFIX,openaicom.imgix.net
 DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,openaiassets.blob.core.windows.net

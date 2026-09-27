@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: qq
+display_name: QQ
+generated_from:
+  run_id: 20260927T035120100788Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 6caec2313906e732d194a16eaf7089c5620a7ff58543108911ef2b9d19752f6e
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: bea8162bba9a2212182a5dcaaf5a3f981d3d0f21ed899070ff2f85f43e0cf758
+  type: DOMAIN_SUFFIX
+  value: im.qq.com
+provider: tencent

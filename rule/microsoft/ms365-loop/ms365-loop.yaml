@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: ms365-loop
+display_name: Loop
+generated_from:
+  run_id: 20260927T035120100788Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 6caec2313906e732d194a16eaf7089c5620a7ff58543108911ef2b9d19752f6e
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: 9497fa800bf3e4ebf98af33c90039e38ff693383aafd7e95026c2015e3c960f2
+  type: DOMAIN_SUFFIX
+  value: loop.cloud.microsoft
+provider: microsoft

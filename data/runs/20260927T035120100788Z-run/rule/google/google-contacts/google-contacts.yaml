@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: google-contacts
+display_name: Google Contacts
+generated_from:
+  run_id: 20260927T035120100788Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 6caec2313906e732d194a16eaf7089c5620a7ff58543108911ef2b9d19752f6e
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: d6ba9f4ddd81e321d9ae6940e00dd9b24d5fbb1c4dc7fb5f41f1347bcb0445df
+  type: DOMAIN_SUFFIX
+  value: contacts.google.com
+provider: google

@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: ms365-onenote
+display_name: OneNote
+generated_from:
+  run_id: 20260927T035120100788Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 6caec2313906e732d194a16eaf7089c5620a7ff58543108911ef2b9d19752f6e
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: 54a364e113d927d49a5cf8401d2a3d9478140da70801c51df1187aecdd88426f
+  type: DOMAIN_SUFFIX
+  value: onenote.cloud.microsoft
+provider: microsoft

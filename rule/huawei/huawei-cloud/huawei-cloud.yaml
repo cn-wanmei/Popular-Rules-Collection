@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: huawei-cloud
+display_name: Huawei Cloud
+generated_from:
+  run_id: 20260927T035120100788Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 6caec2313906e732d194a16eaf7089c5620a7ff58543108911ef2b9d19752f6e
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: 4dc65fcc31e04f0de66eb9df2d3736fe9c6b753d14c080a9a0f7cb9122f6ce83
+  type: DOMAIN_SUFFIX
+  value: console-intl.huaweicloud.com
+provider: huawei

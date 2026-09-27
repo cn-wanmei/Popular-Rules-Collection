@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: amazonmusic
+display_name: Amazon Music
+generated_from:
+  run_id: 20260927T035120100788Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 6caec2313906e732d194a16eaf7089c5620a7ff58543108911ef2b9d19752f6e
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: cac9188771c1f9f45e7a6763c1fd8ccdbe9e292aa3a3a5bbad68d60f2c61d998
+  type: DOMAIN_SUFFIX
+  value: music.amazon.com
+provider: amazon

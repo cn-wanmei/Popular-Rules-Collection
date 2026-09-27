@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: google-slides
+display_name: Google Slides
+generated_from:
+  run_id: 20260927T035120100788Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 6caec2313906e732d194a16eaf7089c5620a7ff58543108911ef2b9d19752f6e
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: d3901e6d06977d7226eee3c94eaa78ebc4b0bd9f382b7f4a9273b7c31c4a7ccf
+  type: DOMAIN_SUFFIX
+  value: slides.google.com
+provider: google

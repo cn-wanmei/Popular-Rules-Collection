@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: openai-platform
+display_name: OpenAI Platform
+generated_from:
+  run_id: 20260927T035120100788Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 6caec2313906e732d194a16eaf7089c5620a7ff58543108911ef2b9d19752f6e
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: 34519f4cd9d9ff3ed0568990f51a0bf0cba38475893f6bd557c7367ff05c745f
+  type: DOMAIN_SUFFIX
+  value: platform.openai.com
+provider: openai
