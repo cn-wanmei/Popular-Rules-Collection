@@ -9,21 +9,21 @@
     "surge"
   ],
   "collection_date": "2026-09-27",
-  "file_count": 2670,
+  "file_count": 2663,
   "files": [
     {
-      "file": "_promotion/20260927T050737653481Z-run.json",
+      "file": "_promotion/20260927T051327713126Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "d7160c01f8a3b102a98e2d133ede0e3a435ddac8992228d4955908772a393a02",
-      "size": 298677
+      "sha256": "1ad50b6bbdc24795cee8bf04bdc9e198dfec116a28d97c16503ea288e63847e3",
+      "size": 297689
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "d7160c01f8a3b102a98e2d133ede0e3a435ddac8992228d4955908772a393a02",
-      "size": 298677
+      "sha256": "1ad50b6bbdc24795cee8bf04bdc9e198dfec116a28d97c16503ea288e63847e3",
+      "size": 297689
     },
     {
       "file": "asn/metadata.yaml",
@@ -827,14 +827,6 @@
     },
     {
       "file": "egern/cloudflare/cloudflare/cloudflare.yaml",
-      "kind": "client_rules",
-      "rule_count": 196,
-      "scope": "egern",
-      "sha256": "08ab88465080839fb5215d2cae16ab90c9c211df6775b5618ad6b36023c3acbd",
-      "size": 4615
-    },
-    {
-      "file": "egern/cloudflare/cloudflare_aggregate/cloudflare_aggregate.yaml",
       "kind": "client_rules",
       "rule_count": 98,
       "scope": "egern",
@@ -4620,14 +4612,6 @@
     {
       "file": "loon/cloudflare/cloudflare/cloudflare.list",
       "kind": "client_rules",
-      "rule_count": 196,
-      "scope": "loon",
-      "sha256": "822abb58aee0674569f23251dd8ece39e641f77302bdc7e57480b143cfa91ea0",
-      "size": 6012
-    },
-    {
-      "file": "loon/cloudflare/cloudflare_aggregate/cloudflare_aggregate.list",
-      "kind": "client_rules",
       "rule_count": 98,
       "scope": "loon",
       "sha256": "e7d45de73cbec3aeb2e50cc768a938413bb049968661555abf346d75ab54163a",
@@ -7499,14 +7483,6 @@
     },
     {
       "file": "mihomo/cloudflare/cloudflare/cloudflare.yaml",
-      "kind": "client_rules",
-      "rule_count": 196,
-      "scope": "mihomo",
-      "sha256": "cf138bc7f7f2f678ac7d0e95e19aa3ca5c59a4d925411d08b864f660bdb363ba",
-      "size": 6805
-    },
-    {
-      "file": "mihomo/cloudflare/cloudflare_aggregate/cloudflare_aggregate.yaml",
       "kind": "client_rules",
       "rule_count": 98,
       "scope": "mihomo",
@@ -10644,14 +10620,6 @@
     {
       "file": "quantumultx/cloudflare/cloudflare/cloudflare.list",
       "kind": "client_rules",
-      "rule_count": 196,
-      "scope": "quantumultx",
-      "sha256": "a50e96a4098483296e36d289785fc77b6e19373597908ba8adce37b77130c41c",
-      "size": 7232
-    },
-    {
-      "file": "quantumultx/cloudflare/cloudflare_aggregate/cloudflare_aggregate.list",
-      "kind": "client_rules",
       "rule_count": 98,
       "scope": "quantumultx",
       "sha256": "38c654c361e0d911f3bc093983161379cc324b4268c37cc4f4c42ef03c86c94a",
@@ -13523,14 +13491,6 @@
     },
     {
       "file": "shadowrocket/cloudflare/cloudflare/cloudflare.list",
-      "kind": "client_rules",
-      "rule_count": 196,
-      "scope": "shadowrocket",
-      "sha256": "822abb58aee0674569f23251dd8ece39e641f77302bdc7e57480b143cfa91ea0",
-      "size": 6012
-    },
-    {
-      "file": "shadowrocket/cloudflare/cloudflare_aggregate/cloudflare_aggregate.list",
       "kind": "client_rules",
       "rule_count": 98,
       "scope": "shadowrocket",
@@ -16406,14 +16366,6 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "ff06dcf60ce6291e845f8a2b26983e84f436a40d6a1c98159b855ceda56ae1dc",
-      "size": 5657
-    },
-    {
-      "file": "singbox/cloudflare/cloudflare_aggregate/cloudflare_aggregate.json",
-      "kind": "client_rules",
-      "rule_count": 0,
-      "scope": "singbox",
       "sha256": "f9f3ffcedbde83b9e30ed845866d43b27fb19139958e6a13407ad0da42093e70",
       "size": 2859
     },
@@ -19284,14 +19236,6 @@
     {
       "file": "surge/cloudflare/cloudflare/cloudflare.list",
       "kind": "client_rules",
-      "rule_count": 196,
-      "scope": "surge",
-      "sha256": "822abb58aee0674569f23251dd8ece39e641f77302bdc7e57480b143cfa91ea0",
-      "size": 6012
-    },
-    {
-      "file": "surge/cloudflare/cloudflare_aggregate/cloudflare_aggregate.list",
-      "kind": "client_rules",
       "rule_count": 98,
       "scope": "surge",
       "sha256": "e7d45de73cbec3aeb2e50cc768a938413bb049968661555abf346d75ab54163a",
@@ -21370,7 +21314,7 @@
       "size": 71
     }
   ],
-  "generated_at": "2026-09-27T05:15:48.303513+00:00",
+  "generated_at": "2026-09-27T05:18:22.156138+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "layout_schema": "directory_layout_v2",
   "network_dataset_directories": [
