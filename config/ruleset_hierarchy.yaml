@@ -235,6 +235,12 @@ providers:
       ms365-mesh:
         display_name: Mesh
         status: existing
+      office:
+        display_name: Microsoft Office
+        status: existing
+      outlook:
+        display_name: Microsoft Outlook
+        status: existing
   amazon:
     display_name: Amazon
     aggregate: amazon
@@ -619,14 +625,14 @@ providers:
     services:
       groq:
         display_name: Groq
-        status: planned
+        status: existing
   huggingface:
     display_name: Hugging Face
     aggregate: huggingface_aggregate
     services:
       huggingface:
         display_name: Hugging Face
-        status: planned
+        status: existing
   cursor:
     display_name: Cursor
     aggregate: cursor_aggregate
@@ -1539,6 +1545,16 @@ providers:
     services:
       mongodb:
         display_name: MongoDB
+        status: existing
+  ai:
+    display_name: AI
+    aggregate: ai_aggregate
+    services:
+      groq:
+        display_name: Groq
+        status: existing
+      huggingface:
+        display_name: Hugging Face
         status: existing
 categories:
   developer:
