@@ -1549,3 +1549,58 @@ services:
     - other
     service_type: service
     parent: adobe
+  lenovo:
+    primary_category: china
+    display_name: Lenovo
+    categories:
+    - china
+    service_type: service
+  zte:
+    primary_category: china
+    display_name: ZTE
+    categories:
+    - china
+    service_type: service
+  byd:
+    primary_category: china
+    display_name: BYD
+    categories:
+    - china
+    service_type: service
+  honor:
+    primary_category: china
+    display_name: Honor
+    categories:
+    - china
+    service_type: service
+  qihoo360:
+    primary_category: china
+    display_name: '360'
+    categories:
+    - china
+    service_type: service
+  nvidia:
+    primary_category: developer
+    display_name: NVIDIA
+    categories:
+    - developer
+    - ai
+    service_type: service
+  samsung:
+    primary_category: other
+    display_name: Samsung
+    categories:
+    - other
+    service_type: service
+  tesla:
+    primary_category: other
+    display_name: Tesla
+    categories:
+    - other
+    service_type: service
+  intel:
+    primary_category: developer
+    display_name: Intel
+    categories:
+    - developer
+    service_type: service

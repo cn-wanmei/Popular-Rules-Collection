@@ -503,3 +503,21 @@
 - [Stripe Dashboard](stripe-dashboard.md) (`stripe-dashboard` · service)
 
 - [Grok](xai-grok.md) (`xai-grok` · service)
+
+- [Lenovo](lenovo.md) (`lenovo` · service)
+
+- [ZTE](zte.md) (`zte` · service)
+
+- [BYD](byd.md) (`byd` · service)
+
+- [Honor](honor.md) (`honor` · service)
+
+- [360](qihoo360.md) (`qihoo360` · service)
+
+- [NVIDIA](nvidia.md) (`nvidia` · service)
+
+- [Samsung](samsung.md) (`samsung` · service)
+
+- [Tesla](tesla.md) (`tesla` · service)
+
+- [Intel](intel.md) (`intel` · service)
