@@ -2270,6 +2270,42 @@ providers:
       kunlunxin:
         display_name: 昆仑芯
         status: existing
+  arista:
+    display_name: Arista Networks
+    aggregate: arista_aggregate
+    services:
+      arista:
+        display_name: Arista
+  supermicro:
+    display_name: Supermicro
+    aggregate: supermicro_aggregate
+    services:
+      supermicro:
+        display_name: Supermicro
+  shiji:
+    display_name: 世纪华通
+    aggregate: shiji_aggregate
+    services:
+      shiji:
+        display_name: 世纪华通
+  37games:
+    display_name: 三七互娱
+    aggregate: 37games_aggregate
+    services:
+      37games:
+        display_name: 三七互娱
+  wanmei:
+    display_name: 完美世界
+    aggregate: wanmei_aggregate
+    services:
+      wanmei:
+        display_name: 完美世界
+  boss:
+    display_name: BOSS直聘
+    aggregate: boss_aggregate
+    services:
+      boss:
+        display_name: BOSS直聘
 categories:
   developer:
     display_name: Developer Ecosystem
