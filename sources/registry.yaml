@@ -889,6 +889,86 @@ sources:
     service: ms365-mesh
     local: PRS_ms365-mesh.domains.txt
     enabled: true
+  - path: generated/source/iflytek/domains.txt
+    name: iflytek
+    service: iflytek
+    local: PRS_iflytek.domains.txt
+    enabled: false
+  - path: generated/source/shimo/domains.txt
+    name: shimo
+    service: shimo
+    local: PRS_shimo.domains.txt
+    enabled: false
+  - path: generated/source/xunlei/domains.txt
+    name: xunlei
+    service: xunlei
+    local: PRS_xunlei.domains.txt
+    enabled: false
+  - path: generated/source/mgtv/domains.txt
+    name: mgtv
+    service: mgtv
+    local: PRS_mgtv.domains.txt
+    enabled: false
+  - path: generated/source/eastmoney/domains.txt
+    name: eastmoney
+    service: eastmoney
+    local: PRS_eastmoney.domains.txt
+    enabled: false
+  - path: generated/source/autohome/domains.txt
+    name: autohome
+    service: autohome
+    local: PRS_autohome.domains.txt
+    enabled: false
+  - path: generated/source/qunar/domains.txt
+    name: qunar
+    service: qunar
+    local: PRS_qunar.domains.txt
+    enabled: false
+  - path: generated/source/zhipin/domains.txt
+    name: zhipin
+    service: zhipin
+    local: PRS_zhipin.domains.txt
+    enabled: false
+  - path: generated/source/wps/domains.txt
+    name: wps
+    service: wps
+    local: PRS_wps.domains.txt
+    enabled: false
+  - path: generated/source/ibm/domains.txt
+    name: ibm
+    service: ibm
+    local: PRS_ibm.domains.txt
+    enabled: false
+  - path: generated/source/amd/domains.txt
+    name: amd
+    service: amd
+    local: PRS_amd.domains.txt
+    enabled: false
+  - path: generated/source/cisco/domains.txt
+    name: cisco
+    service: cisco
+    local: PRS_cisco.domains.txt
+    enabled: false
+  - path: generated/source/salesforce/domains.txt
+    name: salesforce
+    service: salesforce
+    local: PRS_salesforce.domains.txt
+    enabled: false
+  - path: generated/source/cloudflare/domains.txt
+    name: cloudflare
+    service: cloudflare
+    local: PRS_cloudflare.domains.txt
+    enabled: false
+  - path: generated/source/datadog/domains.txt
+    name: datadog
+    service: datadog
+    local: PRS_datadog.domains.txt
+    enabled: false
+  - path: generated/source/mongodb/domains.txt
+    name: mongodb
+    service: mongodb
+    local: PRS_mongodb.domains.txt
+    enabled: false
 - id: blackmatrix7
   name: BlackMatrix7 ios_rule_script
   url: https://github.com/blackmatrix7/ios_rule_script
