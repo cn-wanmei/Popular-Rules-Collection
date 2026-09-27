@@ -1459,88 +1459,93 @@ services:
     categories:
     - ai
     service_type: service
-    provider: anthropic
+    parent: anthropic
   anthropic-platform:
     primary_category: ai
     display_name: Anthropic Platform
     categories:
     - ai
     service_type: service
-    provider: anthropic
+    parent: anthropic
   huawei-cloud:
-    primary_category: cloud
+    primary_category: china
     display_name: Huawei Cloud
     categories:
-    - cloud
+    - china
+    - developer
     service_type: service
-    provider: huawei
+    parent: huawei
   jd-cloud:
-    primary_category: cloud
+    primary_category: jingdong
     display_name: JD Cloud
     categories:
-    - cloud
+    - jingdong
+    - developer
     service_type: service
-    provider: jingdong
+    parent: jingdong
   mi-cloud:
-    primary_category: cloud
+    primary_category: china
     display_name: Mi Cloud
     categories:
-    - cloud
+    - china
     service_type: service
-    provider: xiaomi
+    parent: xiaomi
   openai-api:
     primary_category: ai
     display_name: OpenAI API
     categories:
     - ai
     service_type: service
-    provider: openai
+    parent: openai
   openai-platform:
     primary_category: ai
     display_name: OpenAI Platform
     categories:
     - ai
     service_type: service
-    provider: openai
+    parent: openai
   quanmin-k-ge:
-    primary_category: media
+    primary_category: tencent
     display_name: 全民K歌
     categories:
-    - media
+    - tencent
+    - streaming
     service_type: service
-    provider: tencent
+    parent: tencent
   stripe-dashboard:
     primary_category: finance
     display_name: Stripe Dashboard
     categories:
     - finance
     service_type: service
-    provider: stripe
+    parent: stripe
   xai-grok:
-    primary_category: ai
+    primary_category: xai
     display_name: Grok
     categories:
+    - xai
     - ai
     service_type: service
-    provider: xai
+    parent: xai
   adobe-firefly:
-    primary_category: design
+    primary_category: other
     display_name: Adobe Firefly
     categories:
-    - design
+    - other
+    - developer
     service_type: service
-    provider: adobe
+    parent: adobe
   adobe-fonts:
-    primary_category: design
+    primary_category: other
     display_name: Adobe Fonts
     categories:
-    - design
+    - other
     service_type: service
-    provider: adobe
+    parent: adobe
   adobe-stock:
-    primary_category: design
+    primary_category: other
     display_name: Adobe Stock
     categories:
-    - design
+    - other
     service_type: service
-    provider: adobe
+    parent: adobe
