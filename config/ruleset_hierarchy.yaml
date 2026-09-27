@@ -550,6 +550,9 @@ providers:
       warp:
         display_name: Cloudflare WARP
         status: planned
+      cloudflare:
+        display_name: Cloudflare
+        status: existing
   hoyoverse:
     display_name: HoYoverse
     aggregate: hoyoverse
@@ -795,6 +798,9 @@ providers:
       hashicorp:
         display_name: HashiCorp
         status: existing
+      ibm:
+        display_name: IBM
+        status: existing
   salesforce:
     display_name: Salesforce
     aggregate: salesforce_aggregate
@@ -804,6 +810,9 @@ providers:
         status: existing
       slack:
         display_name: Slack
+        status: existing
+      salesforce:
+        display_name: Salesforce
         status: existing
   ookla:
     display_name: Ookla
@@ -1439,6 +1448,97 @@ providers:
     services:
       intel:
         display_name: Intel
+        status: existing
+  iflytek:
+    display_name: 科大讯飞
+    aggregate: iflytek_aggregate
+    services:
+      iflytek:
+        display_name: 科大讯飞
+        status: existing
+  shimo:
+    display_name: 石墨文档
+    aggregate: shimo_aggregate
+    services:
+      shimo:
+        display_name: 石墨文档
+        status: existing
+  xunlei:
+    display_name: 迅雷
+    aggregate: xunlei_aggregate
+    services:
+      xunlei:
+        display_name: 迅雷
+        status: existing
+  mgtv:
+    display_name: 芒果TV
+    aggregate: mgtv_aggregate
+    services:
+      mgtv:
+        display_name: 芒果TV
+        status: existing
+  eastmoney:
+    display_name: 东方财富
+    aggregate: eastmoney_aggregate
+    services:
+      eastmoney:
+        display_name: 东方财富
+        status: existing
+  autohome:
+    display_name: 汽车之家
+    aggregate: autohome_aggregate
+    services:
+      autohome:
+        display_name: 汽车之家
+        status: existing
+  qunar:
+    display_name: 去哪儿
+    aggregate: qunar_aggregate
+    services:
+      qunar:
+        display_name: 去哪儿
+        status: existing
+  zhipin:
+    display_name: BOSS直聘
+    aggregate: zhipin_aggregate
+    services:
+      zhipin:
+        display_name: BOSS直聘
+        status: existing
+  kingsoft:
+    display_name: Kingsoft
+    aggregate: kingsoft_aggregate
+    services:
+      wps:
+        display_name: WPS
+        status: existing
+  amd:
+    display_name: AMD
+    aggregate: amd_aggregate
+    services:
+      amd:
+        display_name: AMD
+        status: existing
+  cisco:
+    display_name: Cisco
+    aggregate: cisco_aggregate
+    services:
+      cisco:
+        display_name: Cisco
+        status: existing
+  datadog:
+    display_name: Datadog
+    aggregate: datadog_aggregate
+    services:
+      datadog:
+        display_name: Datadog
+        status: existing
+  mongodb:
+    display_name: MongoDB
+    aggregate: mongodb_aggregate
+    services:
+      mongodb:
+        display_name: MongoDB
         status: existing
 categories:
   developer:
