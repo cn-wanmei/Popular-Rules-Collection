@@ -2530,3 +2530,156 @@ services:
     - china
     service_type: service
     parent: xiaomi
+  37games:
+    primary_category: china
+    display_name: 三七互娱
+    categories:
+    - china
+    - gaming
+    service_type: service
+  aliexpress:
+    primary_category: alibaba
+    display_name: AliExpress
+    categories:
+    - alibaba
+    - china
+    - commerce
+    service_type: service
+    parent: alibaba
+  arista:
+    primary_category: network
+    display_name: Arista
+    categories:
+    - network
+    - developer
+    service_type: service
+  boss:
+    primary_category: china
+    display_name: BOSS直聘
+    categories:
+    - china
+    service_type: service
+  fliggy:
+    primary_category: alibaba
+    display_name: Fliggy
+    categories:
+    - alibaba
+    - china
+    service_type: service
+    parent: alibaba
+  jianying:
+    primary_category: bytedance
+    display_name: 剪映
+    categories:
+    - bytedance
+    - china
+    service_type: service
+    parent: bytedance
+  lazada:
+    primary_category: alibaba
+    display_name: Lazada
+    categories:
+    - alibaba
+    - china
+    - commerce
+    service_type: service
+    parent: alibaba
+  powerbi:
+    primary_category: microsoft
+    display_name: Power BI
+    categories:
+    - microsoft
+    - developer
+    service_type: service
+    parent: microsoft
+  qqbrowser:
+    primary_category: tencent
+    display_name: QQ浏览器
+    categories:
+    - tencent
+    - china
+    service_type: service
+    parent: tencent
+  sharepoint:
+    primary_category: microsoft
+    display_name: SharePoint
+    categories:
+    - microsoft
+    service_type: service
+    parent: microsoft
+  shiji:
+    primary_category: china
+    display_name: 世纪华通
+    categories:
+    - china
+    - gaming
+    service_type: service
+  supermicro:
+    primary_category: developer
+    display_name: Supermicro
+    categories:
+    - developer
+    service_type: service
+  tencentdocs:
+    primary_category: tencent
+    display_name: 腾讯文档
+    categories:
+    - tencent
+    - china
+    service_type: service
+    parent: tencent
+  wanmei:
+    primary_category: china
+    display_name: 完美世界
+    categories:
+    - china
+    - gaming
+    service_type: service
+  amap:
+    primary_category: alibaba
+    display_name: 高德地图
+    categories:
+    - alibaba
+    - china
+    service_type: service
+    parent: alibaba
+  eleme:
+    primary_category: alibaba
+    display_name: 饿了么
+    categories:
+    - alibaba
+    - china
+    service_type: service
+    parent: alibaba
+  youku:
+    primary_category: alibaba
+    display_name: 优酷
+    categories:
+    - alibaba
+    - china
+    service_type: service
+    parent: alibaba
+  xianyu:
+    primary_category: alibaba
+    display_name: 闲鱼
+    categories:
+    - alibaba
+    - china
+    - commerce
+    service_type: service
+    parent: alibaba
+  wetv:
+    primary_category: tencent
+    display_name: WeTV
+    categories:
+    - tencent
+    - china
+    service_type: service
+    parent: tencent
+  linkedin:
+    primary_category: microsoft
+    display_name: LinkedIn
+    categories:
+    - microsoft
+    service_type: service
+    parent: microsoft
