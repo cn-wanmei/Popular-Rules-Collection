@@ -803,7 +803,7 @@
       "source": "database/ips/zhihu.txt"
     }
   ],
-  "generated_at": "2026-09-27T03:57:08.976437+00:00",
+  "generated_at": "2026-09-27T05:15:48.261288+00:00",
   "missing_optional": [],
   "runtime_contract": "network_dataset_distribution_v2",
   "schema": "network_publication_v2",
@@ -815,5 +815,5 @@
     "provider_cidrs_are_not_service_ownership": true,
     "service_rules": "generated/<client>/..."
   },
-  "source_commit": "8499432b8ff91867e19ed43e74adc45bc7bd330d"
+  "source_commit": "503718b1a5d96bbcb109d06ddca683de729ea018"
 }

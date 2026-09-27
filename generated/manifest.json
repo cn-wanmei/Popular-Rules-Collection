@@ -9,21 +9,21 @@
     "surge"
   ],
   "collection_date": "2026-09-27",
-  "file_count": 2663,
+  "file_count": 2670,
   "files": [
     {
-      "file": "_promotion/20260927T035120100788Z-run.json",
+      "file": "_promotion/20260927T050737653481Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "1e80c5625ad21c0ed6e546a775f943f509bbc20e5c2694c630fc89d3101ae01f",
-      "size": 297689
+      "sha256": "d7160c01f8a3b102a98e2d133ede0e3a435ddac8992228d4955908772a393a02",
+      "size": 298677
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "1e80c5625ad21c0ed6e546a775f943f509bbc20e5c2694c630fc89d3101ae01f",
-      "size": 297689
+      "sha256": "d7160c01f8a3b102a98e2d133ede0e3a435ddac8992228d4955908772a393a02",
+      "size": 298677
     },
     {
       "file": "asn/metadata.yaml",
@@ -827,6 +827,14 @@
     },
     {
       "file": "egern/cloudflare/cloudflare/cloudflare.yaml",
+      "kind": "client_rules",
+      "rule_count": 196,
+      "scope": "egern",
+      "sha256": "08ab88465080839fb5215d2cae16ab90c9c211df6775b5618ad6b36023c3acbd",
+      "size": 4615
+    },
+    {
+      "file": "egern/cloudflare/cloudflare_aggregate/cloudflare_aggregate.yaml",
       "kind": "client_rules",
       "rule_count": 98,
       "scope": "egern",
@@ -1636,34 +1644,34 @@
     {
       "file": "egern/kugou/kugou/kugou.yaml",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 20,
       "scope": "egern",
-      "sha256": "922482f6c6166c48277d76164ddd59e0045ade71cea519268fcd04efdaa2ac79",
-      "size": 39
+      "sha256": "88912cd6932f032fb3a8ffa2140e34b1225319ce322a3bb38ba7c05dfc1e2b03",
+      "size": 442
     },
     {
       "file": "egern/kugou/kugou_aggregate/kugou_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 20,
       "scope": "egern",
-      "sha256": "922482f6c6166c48277d76164ddd59e0045ade71cea519268fcd04efdaa2ac79",
-      "size": 39
+      "sha256": "e800b67cd08c3cb9c8d75bba08ff0dcf727b61517153c2a5cdbc3369862eaacf",
+      "size": 442
     },
     {
       "file": "egern/kuwo/kuwo/kuwo.yaml",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 4,
       "scope": "egern",
-      "sha256": "33ce7761362866faab6eb44103371fdb75d0b24786aa99b9917a0e0c95ab4e06",
-      "size": 35
+      "sha256": "fea6580b9479463d510bc130710bb0c7f9e3ffdbda38ef72fc44775b6e4695ee",
+      "size": 80
     },
     {
       "file": "egern/kuwo/kuwo_aggregate/kuwo_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 4,
       "scope": "egern",
-      "sha256": "33ce7761362866faab6eb44103371fdb75d0b24786aa99b9917a0e0c95ab4e06",
-      "size": 35
+      "sha256": "e0a42c223fb33f427fa364c1aeee7f8dae0fd36decbfbd37d5f4476453d46546",
+      "size": 80
     },
     {
       "file": "egern/letv/letv/letv.yaml",
@@ -4612,6 +4620,14 @@
     {
       "file": "loon/cloudflare/cloudflare/cloudflare.list",
       "kind": "client_rules",
+      "rule_count": 196,
+      "scope": "loon",
+      "sha256": "822abb58aee0674569f23251dd8ece39e641f77302bdc7e57480b143cfa91ea0",
+      "size": 6012
+    },
+    {
+      "file": "loon/cloudflare/cloudflare_aggregate/cloudflare_aggregate.list",
+      "kind": "client_rules",
       "rule_count": 98,
       "scope": "loon",
       "sha256": "e7d45de73cbec3aeb2e50cc768a938413bb049968661555abf346d75ab54163a",
@@ -5420,34 +5436,34 @@
     {
       "file": "loon/kugou/kugou/kugou.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 20,
       "scope": "loon",
-      "sha256": "73f5c429cee0c2c69886d5d8a72b9a9eac9bb604f15d3ea52f746e0d54edb95f",
-      "size": 28
+      "sha256": "468abe8a4295222c0c6e87ab7787209051496519d3905ff35362c3387fcc428b",
+      "size": 583
     },
     {
       "file": "loon/kugou/kugou_aggregate/kugou_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 20,
       "scope": "loon",
-      "sha256": "73f5c429cee0c2c69886d5d8a72b9a9eac9bb604f15d3ea52f746e0d54edb95f",
-      "size": 28
+      "sha256": "18c1e81dd57a4d5c68c024914913b3d10017430cf346ffd9cdf2841fb9d29af7",
+      "size": 583
     },
     {
       "file": "loon/kuwo/kuwo/kuwo.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 4,
       "scope": "loon",
-      "sha256": "bbd28ac11a73d559e12b069d0aa3b0ebbaaaa521ad49d71e22bfff509edd1b2d",
-      "size": 24
+      "sha256": "7b8c4a4d47905fe772158f741389c3283445c3d1d58e11f1f25d270423b8275c",
+      "size": 93
     },
     {
       "file": "loon/kuwo/kuwo_aggregate/kuwo_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 4,
       "scope": "loon",
-      "sha256": "bbd28ac11a73d559e12b069d0aa3b0ebbaaaa521ad49d71e22bfff509edd1b2d",
-      "size": 24
+      "sha256": "ac0a5be6bf261c70a57fd470ee7de09927db746cbe2ff890934ce3a521834a9b",
+      "size": 93
     },
     {
       "file": "loon/letv/letv/letv.list",
@@ -7484,6 +7500,14 @@
     {
       "file": "mihomo/cloudflare/cloudflare/cloudflare.yaml",
       "kind": "client_rules",
+      "rule_count": 196,
+      "scope": "mihomo",
+      "sha256": "cf138bc7f7f2f678ac7d0e95e19aa3ca5c59a4d925411d08b864f660bdb363ba",
+      "size": 6805
+    },
+    {
+      "file": "mihomo/cloudflare/cloudflare_aggregate/cloudflare_aggregate.yaml",
+      "kind": "client_rules",
       "rule_count": 98,
       "scope": "mihomo",
       "sha256": "cbed116454ccb6c19418744441b19ff7826d2fe4f19031116a39309de06065ef",
@@ -8292,34 +8316,34 @@
     {
       "file": "mihomo/kugou/kugou/kugou.yaml",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 20,
       "scope": "mihomo",
-      "sha256": "8cb76280cc61431b3656f54c7f7a92139e80afa7408de5d8c315d06b0a4ec74c",
-      "size": 41
+      "sha256": "272d5b8e77fd805d068921d3b64eb55fa0c91eed0c2e889b9f249e714ac9e50b",
+      "size": 672
     },
     {
       "file": "mihomo/kugou/kugou_aggregate/kugou_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 20,
       "scope": "mihomo",
-      "sha256": "8cb76280cc61431b3656f54c7f7a92139e80afa7408de5d8c315d06b0a4ec74c",
-      "size": 41
+      "sha256": "8a2114749771d0ecf572e4d5211d33fa99723936d1613666c36c92fcfb885be2",
+      "size": 672
     },
     {
       "file": "mihomo/kuwo/kuwo/kuwo.yaml",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 4,
       "scope": "mihomo",
-      "sha256": "527533bf5520afebfef97dafec3362d92e32db14abf937f9f477efddbffe2652",
-      "size": 37
+      "sha256": "a37ae6fa5d52ccfd051ee25191ee76cade66fffa05b8def1b6336c8f858d7bb6",
+      "size": 118
     },
     {
       "file": "mihomo/kuwo/kuwo_aggregate/kuwo_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 4,
       "scope": "mihomo",
-      "sha256": "527533bf5520afebfef97dafec3362d92e32db14abf937f9f477efddbffe2652",
-      "size": 37
+      "sha256": "af569a194715b27e75abafaada21e73cff8cad76e34d8a3fec9417be63248e02",
+      "size": 118
     },
     {
       "file": "mihomo/letv/letv/letv.yaml",
@@ -10620,6 +10644,14 @@
     {
       "file": "quantumultx/cloudflare/cloudflare/cloudflare.list",
       "kind": "client_rules",
+      "rule_count": 196,
+      "scope": "quantumultx",
+      "sha256": "a50e96a4098483296e36d289785fc77b6e19373597908ba8adce37b77130c41c",
+      "size": 7232
+    },
+    {
+      "file": "quantumultx/cloudflare/cloudflare_aggregate/cloudflare_aggregate.list",
+      "kind": "client_rules",
       "rule_count": 98,
       "scope": "quantumultx",
       "sha256": "38c654c361e0d911f3bc093983161379cc324b4268c37cc4f4c42ef03c86c94a",
@@ -11428,34 +11460,34 @@
     {
       "file": "quantumultx/kugou/kugou/kugou.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 20,
       "scope": "quantumultx",
-      "sha256": "e4d1a878ecd63224a98a0051e7ce16727c400e6f7d7eac9d350825f6f58c35df",
-      "size": 34
+      "sha256": "eb9b2984d8cfc1be73e103102193ac2c6521d696093eeb151d1d325ec598e94b",
+      "size": 703
     },
     {
       "file": "quantumultx/kugou/kugou_aggregate/kugou_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 20,
       "scope": "quantumultx",
-      "sha256": "e4d1a878ecd63224a98a0051e7ce16727c400e6f7d7eac9d350825f6f58c35df",
-      "size": 34
+      "sha256": "04ee6f6dc556e1a7fa92d7c2092fc362972f1c44db7fbbd2240d96d94a5785b1",
+      "size": 703
     },
     {
       "file": "quantumultx/kuwo/kuwo/kuwo.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 4,
       "scope": "quantumultx",
-      "sha256": "35b0dc9e9ce0327b3ee1fec6a10166c7bf5982096dfbf09fcb886fed86b860a6",
-      "size": 30
+      "sha256": "2767b668b0f4cfc2655e9c5c114d9885163be8b8aee5f05669d67e55afdae0aa",
+      "size": 117
     },
     {
       "file": "quantumultx/kuwo/kuwo_aggregate/kuwo_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 4,
       "scope": "quantumultx",
-      "sha256": "35b0dc9e9ce0327b3ee1fec6a10166c7bf5982096dfbf09fcb886fed86b860a6",
-      "size": 30
+      "sha256": "98245d68829e194f40a2b9c4a02720945497974eeb22df961e44596832ee8aaf",
+      "size": 117
     },
     {
       "file": "quantumultx/letv/letv/letv.list",
@@ -13492,6 +13524,14 @@
     {
       "file": "shadowrocket/cloudflare/cloudflare/cloudflare.list",
       "kind": "client_rules",
+      "rule_count": 196,
+      "scope": "shadowrocket",
+      "sha256": "822abb58aee0674569f23251dd8ece39e641f77302bdc7e57480b143cfa91ea0",
+      "size": 6012
+    },
+    {
+      "file": "shadowrocket/cloudflare/cloudflare_aggregate/cloudflare_aggregate.list",
+      "kind": "client_rules",
       "rule_count": 98,
       "scope": "shadowrocket",
       "sha256": "e7d45de73cbec3aeb2e50cc768a938413bb049968661555abf346d75ab54163a",
@@ -14300,34 +14340,34 @@
     {
       "file": "shadowrocket/kugou/kugou/kugou.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 20,
       "scope": "shadowrocket",
-      "sha256": "73f5c429cee0c2c69886d5d8a72b9a9eac9bb604f15d3ea52f746e0d54edb95f",
-      "size": 28
+      "sha256": "468abe8a4295222c0c6e87ab7787209051496519d3905ff35362c3387fcc428b",
+      "size": 583
     },
     {
       "file": "shadowrocket/kugou/kugou_aggregate/kugou_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 20,
       "scope": "shadowrocket",
-      "sha256": "73f5c429cee0c2c69886d5d8a72b9a9eac9bb604f15d3ea52f746e0d54edb95f",
-      "size": 28
+      "sha256": "18c1e81dd57a4d5c68c024914913b3d10017430cf346ffd9cdf2841fb9d29af7",
+      "size": 583
     },
     {
       "file": "shadowrocket/kuwo/kuwo/kuwo.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 4,
       "scope": "shadowrocket",
-      "sha256": "bbd28ac11a73d559e12b069d0aa3b0ebbaaaa521ad49d71e22bfff509edd1b2d",
-      "size": 24
+      "sha256": "7b8c4a4d47905fe772158f741389c3283445c3d1d58e11f1f25d270423b8275c",
+      "size": 93
     },
     {
       "file": "shadowrocket/kuwo/kuwo_aggregate/kuwo_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 4,
       "scope": "shadowrocket",
-      "sha256": "bbd28ac11a73d559e12b069d0aa3b0ebbaaaa521ad49d71e22bfff509edd1b2d",
-      "size": 24
+      "sha256": "ac0a5be6bf261c70a57fd470ee7de09927db746cbe2ff890934ce3a521834a9b",
+      "size": 93
     },
     {
       "file": "shadowrocket/letv/letv/letv.list",
@@ -16366,6 +16406,14 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
+      "sha256": "ff06dcf60ce6291e845f8a2b26983e84f436a40d6a1c98159b855ceda56ae1dc",
+      "size": 5657
+    },
+    {
+      "file": "singbox/cloudflare/cloudflare_aggregate/cloudflare_aggregate.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
       "sha256": "f9f3ffcedbde83b9e30ed845866d43b27fb19139958e6a13407ad0da42093e70",
       "size": 2859
     },
@@ -17174,32 +17222,32 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "4a103e209326d1140e7c7b232e32cf1f771347adbc88e00f4c5a46215ef07437",
-      "size": 106
+      "sha256": "a763bce6779408d1fe555ea4227397b1037f86fea8c72427300681a1aff7d905",
+      "size": 604
     },
     {
       "file": "singbox/kugou/kugou_aggregate/kugou_aggregate.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "4a103e209326d1140e7c7b232e32cf1f771347adbc88e00f4c5a46215ef07437",
-      "size": 106
+      "sha256": "992d9e45bfcf94412c7320b78631ad2cbe1066811a744113b907941ef363b898",
+      "size": 604
     },
     {
       "file": "singbox/kuwo/kuwo/kuwo.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "fd89c427db66d84cb6086d8dfe2b66315fb86d29b29201325fc04e983e093836",
-      "size": 102
+      "sha256": "805e1b6b8e2aba69a59500f6f3ab65636132bef4bfa0f5753e664a213e7f4b07",
+      "size": 162
     },
     {
       "file": "singbox/kuwo/kuwo_aggregate/kuwo_aggregate.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "fd89c427db66d84cb6086d8dfe2b66315fb86d29b29201325fc04e983e093836",
-      "size": 102
+      "sha256": "76d5a4f52a4c0c8676d3cc66992c48f7cfd902c16adba1f4817bf2d7d8b0c92a",
+      "size": 162
     },
     {
       "file": "singbox/letv/letv/letv.json",
@@ -19236,6 +19284,14 @@
     {
       "file": "surge/cloudflare/cloudflare/cloudflare.list",
       "kind": "client_rules",
+      "rule_count": 196,
+      "scope": "surge",
+      "sha256": "822abb58aee0674569f23251dd8ece39e641f77302bdc7e57480b143cfa91ea0",
+      "size": 6012
+    },
+    {
+      "file": "surge/cloudflare/cloudflare_aggregate/cloudflare_aggregate.list",
+      "kind": "client_rules",
       "rule_count": 98,
       "scope": "surge",
       "sha256": "e7d45de73cbec3aeb2e50cc768a938413bb049968661555abf346d75ab54163a",
@@ -20044,34 +20100,34 @@
     {
       "file": "surge/kugou/kugou/kugou.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 20,
       "scope": "surge",
-      "sha256": "73f5c429cee0c2c69886d5d8a72b9a9eac9bb604f15d3ea52f746e0d54edb95f",
-      "size": 28
+      "sha256": "468abe8a4295222c0c6e87ab7787209051496519d3905ff35362c3387fcc428b",
+      "size": 583
     },
     {
       "file": "surge/kugou/kugou_aggregate/kugou_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 20,
       "scope": "surge",
-      "sha256": "73f5c429cee0c2c69886d5d8a72b9a9eac9bb604f15d3ea52f746e0d54edb95f",
-      "size": 28
+      "sha256": "18c1e81dd57a4d5c68c024914913b3d10017430cf346ffd9cdf2841fb9d29af7",
+      "size": 583
     },
     {
       "file": "surge/kuwo/kuwo/kuwo.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 4,
       "scope": "surge",
-      "sha256": "bbd28ac11a73d559e12b069d0aa3b0ebbaaaa521ad49d71e22bfff509edd1b2d",
-      "size": 24
+      "sha256": "7b8c4a4d47905fe772158f741389c3283445c3d1d58e11f1f25d270423b8275c",
+      "size": 93
     },
     {
       "file": "surge/kuwo/kuwo_aggregate/kuwo_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 4,
       "scope": "surge",
-      "sha256": "bbd28ac11a73d559e12b069d0aa3b0ebbaaaa521ad49d71e22bfff509edd1b2d",
-      "size": 24
+      "sha256": "ac0a5be6bf261c70a57fd470ee7de09927db746cbe2ff890934ce3a521834a9b",
+      "size": 93
     },
     {
       "file": "surge/letv/letv/letv.list",
@@ -21314,7 +21370,7 @@
       "size": 71
     }
   ],
-  "generated_at": "2026-09-27T03:57:09.008900+00:00",
+  "generated_at": "2026-09-27T05:15:48.303513+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "layout_schema": "directory_layout_v2",
   "network_dataset_directories": [
