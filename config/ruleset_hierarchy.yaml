@@ -542,7 +542,7 @@ providers:
         status: existing
   cloudflare:
     display_name: Cloudflare
-    aggregate: cloudflare_aggregate
+    aggregate: cloudflare
     services:
       workers:
         display_name: Cloudflare Workers
@@ -556,9 +556,6 @@ providers:
       warp:
         display_name: Cloudflare WARP
         status: planned
-      cloudflare:
-        display_name: Cloudflare
-        status: existing
   hoyoverse:
     display_name: HoYoverse
     aggregate: hoyoverse
