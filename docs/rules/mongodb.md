@@ -1,13 +1,13 @@
-# Cloudflare
+# MongoDB
 
 > Current V3 service documentation. Subscription paths are derived from `generated/manifest.json`.
 
 | 项目 | 内容 |
 |------|------|
-| Rule ID | `cloudflare` |
-| Primary Ecosystem | `network` |
+| Rule ID | `mongodb` |
+| Primary Ecosystem | `developer` |
 | Service Type | service |
-| Parent Aggregate | `network` |
+| Parent Aggregate | `developer` |
 | Release Date | 2026-09-27 |
 | Dedicated client outputs | 0 / 7 |
 

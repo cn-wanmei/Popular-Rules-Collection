@@ -1,10 +1,10 @@
-# Cloudflare
+# Cisco
 
 > Current V3 service documentation. Subscription paths are derived from `generated/manifest.json`.
 
 | 项目 | 内容 |
 |------|------|
-| Rule ID | `cloudflare` |
+| Rule ID | `cisco` |
 | Primary Ecosystem | `network` |
 | Service Type | service |
 | Parent Aggregate | `network` |

@@ -571,3 +571,33 @@
 - [ms365-loop](ms365-loop.md) (`ms365-loop` · service)
 
 - [ms365-mesh](ms365-mesh.md) (`ms365-mesh` · service)
+
+- [科大讯飞](iflytek.md) (`iflytek` · service)
+
+- [石墨文档](shimo.md) (`shimo` · service)
+
+- [迅雷](xunlei.md) (`xunlei` · service)
+
+- [芒果TV](mgtv.md) (`mgtv` · service)
+
+- [东方财富](eastmoney.md) (`eastmoney` · service)
+
+- [汽车之家](autohome.md) (`autohome` · service)
+
+- [去哪儿](qunar.md) (`qunar` · service)
+
+- [BOSS直聘](zhipin.md) (`zhipin` · service)
+
+- [WPS](wps.md) (`wps` · service)
+
+- [IBM](ibm.md) (`ibm` · service)
+
+- [AMD](amd.md) (`amd` · service)
+
+- [Cisco](cisco.md) (`cisco` · service)
+
+- [Salesforce](salesforce.md) (`salesforce` · service)
+
+- [Datadog](datadog.md) (`datadog` · service)
+
+- [MongoDB](mongodb.md) (`mongodb` · service)
