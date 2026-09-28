@@ -1,8 +1,8 @@
 {
   "schema": "icon_registry_v5",
   "version": 5,
-  "renderer_version": "prc-icon-renderer-v5.0.0",
-  "generated_at": "2026-09-26T08:58:00.774677+00:00",
+  "renderer_version": "prc-icon-renderer-v5.1.0",
+  "generated_at": "2026-09-28T13:20:11.090065+00:00",
   "run_id": "20260926T071821627709Z-run",
   "snapshot_id": "20260926T071821627709Z-run",
   "ir_digest": "b617e209b98c2fa3aa6a2886af92f66d6c98d9bed171dda82eb9ae6b2d1c94ee",
@@ -15058,14 +15058,2013 @@
         "renderer_version": "prc-icon-renderer-v5.0.0"
       },
       "release_eligible": true
+    },
+    {
+      "service_id": "adobe-firefly",
+      "display_name": "Adobe Firefly",
+      "provider": "adobe",
+      "rule_path": "adobe/adobe-firefly/adobe-firefly.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:adobe-firefly",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "adobe-fonts",
+      "display_name": "Adobe Fonts",
+      "provider": "adobe",
+      "rule_path": "adobe/adobe-fonts/adobe-fonts.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:adobe-fonts",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "37games",
+      "display_name": "三七互娱",
+      "provider": "37games",
+      "rule_path": "37games/37games/37games.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:37games",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "adobe-stock",
+      "display_name": "Adobe Stock",
+      "provider": "adobe",
+      "rule_path": "adobe/adobe-stock/adobe-stock.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:adobe-stock",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "alibabacloud",
+      "display_name": "Alibaba Cloud",
+      "provider": "alibaba",
+      "rule_path": "alibaba/alibabacloud/alibabacloud.yaml",
+      "rule_count": 100,
+      "icon_identity": "service:alibabacloud",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "aliexpress",
+      "display_name": "AliExpress",
+      "provider": "alibaba",
+      "rule_path": "alibaba/aliexpress/aliexpress.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:aliexpress",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "amazonmusic",
+      "display_name": "Amazon Music",
+      "provider": "amazon",
+      "rule_path": "amazon/amazonmusic/amazonmusic.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:amazonmusic",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "amd",
+      "display_name": "AMD",
+      "provider": "amd",
+      "rule_path": "amd/amd/amd.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:amd",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "anjuke",
+      "display_name": "安居客",
+      "provider": "anjuke",
+      "rule_path": "anjuke/anjuke/anjuke.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:anjuke",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "anker",
+      "display_name": "安克创新",
+      "provider": "anker",
+      "rule_path": "anker/anker/anker.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:anker",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "anthropic-claude",
+      "display_name": "Claude",
+      "provider": "anthropic",
+      "rule_path": "anthropic/anthropic-claude/anthropic-claude.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:anthropic-claude",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "anthropic-platform",
+      "display_name": "Anthropic Platform",
+      "provider": "anthropic",
+      "rule_path": "anthropic/anthropic-platform/anthropic-platform.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:anthropic-platform",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "applebooks",
+      "display_name": "Apple Books",
+      "provider": "apple",
+      "rule_path": "apple/applebooks/applebooks.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:applebooks",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "appledev",
+      "display_name": "Apple Developer",
+      "provider": "apple",
+      "rule_path": "apple/appledev/appledev.yaml",
+      "rule_count": 40,
+      "icon_identity": "service:appledev",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "applemaps",
+      "display_name": "Apple Maps",
+      "provider": "apple",
+      "rule_path": "apple/applemaps/applemaps.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:applemaps",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "applemedia",
+      "display_name": "Apple Media",
+      "provider": "apple",
+      "rule_path": "apple/applemedia/applemedia.yaml",
+      "rule_count": 52,
+      "icon_identity": "service:applemedia",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "applemusic",
+      "display_name": "Apple Music",
+      "provider": "apple",
+      "rule_path": "apple/applemusic/applemusic.yaml",
+      "rule_count": 16,
+      "icon_identity": "service:applemusic",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "applenews",
+      "display_name": "Apple News",
+      "provider": "apple",
+      "rule_path": "apple/applenews/applenews.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:applenews",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "applepodcasts",
+      "display_name": "Apple Podcasts",
+      "provider": "apple",
+      "rule_path": "apple/applepodcasts/applepodcasts.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:applepodcasts",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "appstore",
+      "display_name": "App Store",
+      "provider": "apple",
+      "rule_path": "apple/appstore/appstore.yaml",
+      "rule_count": 6,
+      "icon_identity": "service:appstore",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "arista",
+      "display_name": "Arista",
+      "provider": "arista",
+      "rule_path": "arista/arista/arista.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:arista",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "arm",
+      "display_name": "Arm",
+      "provider": "arm",
+      "rule_path": "arm/arm/arm.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:arm",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "baiduwenku",
+      "display_name": "百度文库",
+      "provider": "baidu",
+      "rule_path": "baidu/baiduwenku/baiduwenku.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:baiduwenku",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "atlassian",
+      "display_name": "Atlassian",
+      "provider": "atlassian",
+      "rule_path": "atlassian/atlassian/atlassian.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:atlassian",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "atour",
+      "display_name": "亚朵",
+      "provider": "atour",
+      "rule_path": "atour/atour/atour.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:atour",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "audible",
+      "display_name": "Audible",
+      "provider": "amazon",
+      "rule_path": "amazon/audible/audible.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:audible",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "autodesk",
+      "display_name": "Autodesk",
+      "provider": "autodesk",
+      "rule_path": "autodesk/autodesk/autodesk.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:autodesk",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "autohome",
+      "display_name": "汽车之家",
+      "provider": "autohome",
+      "rule_path": "autohome/autohome/autohome.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:autohome",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "azure",
+      "display_name": "Microsoft Azure",
+      "provider": "microsoft",
+      "rule_path": "microsoft/azure/azure.yaml",
+      "rule_count": 151,
+      "icon_identity": "service:azure",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "baichuan",
+      "display_name": "百川智能",
+      "provider": "baichuan",
+      "rule_path": "baichuan/baichuan/baichuan.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:baichuan",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "baidu-zhidao",
+      "display_name": "百度知道",
+      "provider": "baidu",
+      "rule_path": "baidu/baidu-zhidao/baidu-zhidao.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:baidu-zhidao",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "baidumaps",
+      "display_name": "Baidu Maps",
+      "provider": "baidu",
+      "rule_path": "baidu/baidumaps/baidumaps.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:baidumaps",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "baidutieba",
+      "display_name": "Baidu Tieba",
+      "provider": "baidu",
+      "rule_path": "baidu/baidutieba/baidutieba.yaml",
+      "rule_count": 32,
+      "icon_identity": "service:baidutieba",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "asml",
+      "display_name": "ASML",
+      "provider": "asml",
+      "rule_path": "asml/asml/asml.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:asml",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "beike",
+      "display_name": "贝壳",
+      "provider": "beike",
+      "rule_path": "beike/beike/beike.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:beike",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "bing",
+      "display_name": "Bing",
+      "provider": "microsoft",
+      "rule_path": "microsoft/bing/bing.yaml",
+      "rule_count": 9,
+      "icon_identity": "service:bing",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "birentech",
+      "display_name": "壁仞科技",
+      "provider": "birentech",
+      "rule_path": "birentech/birentech/birentech.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:birentech",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "block",
+      "display_name": "Block",
+      "provider": "block",
+      "rule_path": "block/block/block.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:block",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "boss",
+      "display_name": "BOSS直聘",
+      "provider": "boss",
+      "rule_path": "boss/boss/boss.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:boss",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "broadcom",
+      "display_name": "Broadcom",
+      "provider": "broadcom",
+      "rule_path": "broadcom/broadcom/broadcom.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:broadcom",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "byd",
+      "display_name": "BYD",
+      "provider": "byd",
+      "rule_path": "byd/byd/byd.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:byd",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "cadence",
+      "display_name": "Cadence",
+      "provider": "cadence",
+      "rule_path": "cadence/cadence/cadence.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:cadence",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "cambricon",
+      "display_name": "寒武纪",
+      "provider": "cambricon",
+      "rule_path": "cambricon/cambricon/cambricon.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:cambricon",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "caocao",
+      "display_name": "曹操出行",
+      "provider": "caocao",
+      "rule_path": "caocao/caocao/caocao.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:caocao",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "capcut",
+      "display_name": "剪映/CapCut",
+      "provider": "bytedance",
+      "rule_path": "bytedance/capcut/capcut.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:capcut",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "chatgpt",
+      "display_name": "ChatGPT",
+      "provider": "openai",
+      "rule_path": "openai/chatgpt/chatgpt.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:chatgpt",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "cisco",
+      "display_name": "Cisco",
+      "provider": "cisco",
+      "rule_path": "cisco/cisco/cisco.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:cisco",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "claude",
+      "display_name": "Claude",
+      "provider": "anthropic",
+      "rule_path": "anthropic/claude/claude.yaml",
+      "rule_count": 4,
+      "icon_identity": "service:claude",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "coinbase",
+      "display_name": "Coinbase",
+      "provider": "coinbase",
+      "rule_path": "coinbase/coinbase/coinbase.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:coinbase",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "copilot",
+      "display_name": "Microsoft Copilot",
+      "provider": "microsoft",
+      "rule_path": "microsoft/copilot/copilot.yaml",
+      "rule_count": 69,
+      "icon_identity": "service:copilot",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "coupang",
+      "display_name": "Coupang",
+      "provider": "coupang",
+      "rule_path": "coupang/coupang/coupang.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:coupang",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "crowdstrike",
+      "display_name": "CrowdStrike",
+      "provider": "crowdstrike",
+      "rule_path": "crowdstrike/crowdstrike/crowdstrike.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:crowdstrike",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "ctyun",
+      "display_name": "天翼云",
+      "provider": "ctyun",
+      "rule_path": "ctyun/ctyun/ctyun.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:ctyun",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "dahua",
+      "display_name": "大华股份",
+      "provider": "dahua",
+      "rule_path": "dahua/dahua/dahua.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:dahua",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "dassault",
+      "display_name": "Dassault Systèmes",
+      "provider": "dassault",
+      "rule_path": "dassault/dassault/dassault.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:dassault",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "databricks",
+      "display_name": "Databricks",
+      "provider": "databricks",
+      "rule_path": "databricks/databricks/databricks.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:databricks",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "datadog",
+      "display_name": "Datadog",
+      "provider": "datadog",
+      "rule_path": "datadog/datadog/datadog.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:datadog",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "deepseek",
+      "display_name": "DeepSeek",
+      "provider": "deepseek",
+      "rule_path": "deepseek/deepseek/deepseek.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:deepseek",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "dell",
+      "display_name": "Dell",
+      "provider": "dell",
+      "rule_path": "dell/dell/dell.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:dell",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "discord",
+      "display_name": "Discord",
+      "provider": "discord",
+      "rule_path": "discord/discord/discord.yaml",
+      "rule_count": 31,
+      "icon_identity": "service:discord",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "dji",
+      "display_name": "大疆",
+      "provider": "dji",
+      "rule_path": "dji/dji/dji.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:dji",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "douyin",
+      "display_name": "Douyin",
+      "provider": "bytedance",
+      "rule_path": "bytedance/douyin/douyin.yaml",
+      "rule_count": 80,
+      "icon_identity": "service:douyin",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "dreame",
+      "display_name": "追觅",
+      "provider": "dreame",
+      "rule_path": "dreame/dreame/dreame.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:dreame",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "eastmoney",
+      "display_name": "东方财富",
+      "provider": "eastmoney",
+      "rule_path": "eastmoney/eastmoney/eastmoney.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:eastmoney",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "epicgames",
+      "display_name": "Epic Games",
+      "provider": "epicgames",
+      "rule_path": "epicgames/epicgames/epicgames.yaml",
+      "rule_count": 3,
+      "icon_identity": "service:epicgames",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "equinix",
+      "display_name": "Equinix",
+      "provider": "equinix",
+      "rule_path": "equinix/equinix/equinix.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:equinix",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "ericsson",
+      "display_name": "Ericsson",
+      "provider": "ericsson",
+      "rule_path": "ericsson/ericsson/ericsson.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:ericsson",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "feishu",
+      "display_name": "Feishu",
+      "provider": "bytedance",
+      "rule_path": "bytedance/feishu/feishu.yaml",
+      "rule_count": 43,
+      "icon_identity": "service:feishu",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "findmy",
+      "display_name": "Find My",
+      "provider": "apple",
+      "rule_path": "apple/findmy/findmy.yaml",
+      "rule_count": 9,
+      "icon_identity": "service:findmy",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "fliggy",
+      "display_name": "Fliggy",
+      "provider": "alibaba",
+      "rule_path": "alibaba/fliggy/fliggy.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:fliggy",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "fortinet",
+      "display_name": "Fortinet",
+      "provider": "fortinet",
+      "rule_path": "fortinet/fortinet/fortinet.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:fortinet",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "fujitsu",
+      "display_name": "Fujitsu",
+      "provider": "fujitsu",
+      "rule_path": "fujitsu/fujitsu/fujitsu.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:fujitsu",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "gemini",
+      "display_name": "Gemini",
+      "provider": "google",
+      "rule_path": "google/gemini/gemini.yaml",
+      "rule_count": 16,
+      "icon_identity": "service:gemini",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "getapps",
+      "display_name": "GetApps",
+      "provider": "xiaomi",
+      "rule_path": "xiaomi/getapps/getapps.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:getapps",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "globalfoundries",
+      "display_name": "GlobalFoundries",
+      "provider": "globalfoundries",
+      "rule_path": "globalfoundries/globalfoundries/globalfoundries.yaml",
+      "rule_count": 2,
+      "icon_identity": "service:globalfoundries",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "gmail",
+      "display_name": "Gmail",
+      "provider": "google",
+      "rule_path": "google/gmail/gmail.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:gmail",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "goodreads",
+      "display_name": "Goodreads",
+      "provider": "amazon",
+      "rule_path": "amazon/goodreads/goodreads.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:goodreads",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "google-calendar",
+      "display_name": "Google Calendar",
+      "provider": "google",
+      "rule_path": "google/google-calendar/google-calendar.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:google-calendar",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "google-chat",
+      "display_name": "Google Chat",
+      "provider": "google",
+      "rule_path": "google/google-chat/google-chat.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:google-chat",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
+    },
+    {
+      "service_id": "google-contacts",
+      "display_name": "Google Contacts",
+      "provider": "google",
+      "rule_path": "google/google-contacts/google-contacts.yaml",
+      "rule_count": 1,
+      "icon_identity": "service:google-contacts",
+      "source": {
+        "origin": "hold",
+        "digest": null,
+        "reason": "no_high_confidence_official_homepage_candidate",
+        "quality": "low_res",
+        "source_px": 0
+      },
+      "variants": {},
+      "lineage": {
+        "run_id": "20260928T063304421542Z-run",
+        "snapshot_id": "20260928T063304421542Z-run",
+        "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
+        "source_digest": null,
+        "renderer_version": "prc-icon-renderer-v5.1.0"
+      },
+      "release_eligible": false
     }
   ],
   "coverage": {
-    "service_count": 146,
-    "icon_identity_count": 146,
+    "service_count": 226,
     "complete_8_of_8": 146,
-    "missing": [],
-    "orphans": []
+    "missing": [
+      "adobe-firefly",
+      "adobe-fonts",
+      "37games",
+      "adobe-stock",
+      "alibabacloud",
+      "aliexpress",
+      "amazonmusic",
+      "amd",
+      "anjuke",
+      "anker",
+      "anthropic-claude",
+      "anthropic-platform",
+      "applebooks",
+      "appledev",
+      "applemaps",
+      "applemedia",
+      "applemusic",
+      "applenews",
+      "applepodcasts",
+      "appstore",
+      "arista",
+      "arm",
+      "baiduwenku",
+      "atlassian",
+      "atour",
+      "audible",
+      "autodesk",
+      "autohome",
+      "azure",
+      "baichuan",
+      "baidu-zhidao",
+      "baidumaps",
+      "baidutieba",
+      "asml",
+      "beike",
+      "bing",
+      "birentech",
+      "block",
+      "boss",
+      "broadcom",
+      "byd",
+      "cadence",
+      "cambricon",
+      "caocao",
+      "capcut",
+      "chatgpt",
+      "cisco",
+      "claude",
+      "coinbase",
+      "copilot",
+      "coupang",
+      "crowdstrike",
+      "ctyun",
+      "dahua",
+      "dassault",
+      "databricks",
+      "datadog",
+      "deepseek",
+      "dell",
+      "discord",
+      "dji",
+      "douyin",
+      "dreame",
+      "eastmoney",
+      "epicgames",
+      "equinix",
+      "ericsson",
+      "feishu",
+      "findmy",
+      "fliggy",
+      "fortinet",
+      "fujitsu",
+      "gemini",
+      "getapps",
+      "globalfoundries",
+      "gmail",
+      "goodreads",
+      "google-calendar",
+      "google-chat",
+      "google-contacts"
+    ]
   },
   "acquisition": {
     "network_policy": "one_asset_fetch_per_run",
