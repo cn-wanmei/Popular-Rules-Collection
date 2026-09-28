@@ -95,6 +95,45 @@ jobs:
           PYTHONPATH=. python scripts/production_collection_gate.py \
             --collection-root "${{ steps.source.outputs.source_root }}"
 
+      - name: Preflight — active bindings vs collection snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          ROOT="${{ steps.source.outputs.source_root }}"
+          python - <<'PY'
+          import yaml
+          from pathlib import Path
+          root = Path("${{ steps.source.outputs.source_root }}")
+          im = yaml.safe_load(Path("sources/immutable_registry.yaml").read_text(encoding="utf-8")) or {}
+          active = [k for k,v in (im.get("bindings") or {}).items() if isinstance(v, dict) and v.get("status") == "active"]
+          reg = yaml.safe_load(Path("sources/registry.yaml").read_text(encoding="utf-8")) or {}
+          rules = []
+          for src in reg.get("sources") or []:
+              if src.get("id") == "popular-rules-source":
+                  rules = [r for r in (src.get("rules") or []) if r.get("enabled") is True]
+          manifest = root / "manifests" / "popular-rules-source.json"
+          files = 0
+          if manifest.is_file():
+              import json
+              data = json.loads(manifest.read_text(encoding="utf-8"))
+              files = len(data.get("files") or [])
+          print(f"active_bindings={len(active)} enabled_prs_rules={len(rules)} collection_manifest_files={files} root={root}")
+          missing_enable = [s for s in active if not any(str(r.get("service")) == s for r in rules)]
+          if missing_enable:
+              print("ERROR: active binding without enabled registry rule:")
+              for s in missing_enable[:40]:
+                  print(f"  - {s}")
+              raise SystemExit(1)
+          if files < len(active):
+              print(
+                  f"ERROR: collection snapshot incomplete for Build: "
+                  f"manifest_files={files} < active_bindings={len(active)}. "
+                  f"Run Collect Upstream after handoff, then re-run Build."
+              )
+              raise SystemExit(1)
+          print("preflight OK")
+          PY
+
       - name: Immutable Source Lineage Gate
         shell: bash
         run: |
