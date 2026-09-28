@@ -21,16 +21,17 @@ on:
       snapshot_id: {description: 'Immutable snapshot id (empty = bootstrap from run_id)', required: false, default: ''}
       ir_digest: {description: 'Semantic IR sha256 (empty = read from rule/_index.yaml)', required: false, default: ''}
       refresh: {description: 'Ignore source cache and reacquire icons', required: false, default: false, type: boolean}
-      allow_partial: {description: 'Allow incomplete coverage', required: false, default: false, type: boolean}
+      allow_partial: {description: 'Allow incomplete coverage (acquisition default true; promote still gated)', required: false, default: true, type: boolean}
       promote: {description: 'Promote build styles/png into assets/icons/v5 on a branch', required: false, default: true, type: boolean}
 
 concurrency:
-  group: icon-v5-${{ github.ref }}
-  cancel-in-progress: true
+  # PR: cancel superseded runs on same ref. Dispatch: isolate by run_id (no mutual cancel).
+  group: ${{ github.event_name == 'workflow_dispatch' && format('icon-v5-dispatch-{0}', github.run_id) || format('icon-v5-{0}', github.ref) }}
+  cancel-in-progress: ${{ github.event_name != 'workflow_dispatch' }}
 
 jobs:
   contract:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 30
     permissions:
       contents: read
@@ -46,7 +47,22 @@ jobs:
           cache-dependency-path: requirements.lock
       - run: python -m pip install -r requirements.lock
       - run: python -m compileall -q scripts/icon_system_v5.py scripts/icon_v5_renderers scripts/icon_resolver_v5.py
-      - run: python -m unittest -v tests/test_icon_system_v5.py || true
+      - name: Unit tests
+        id: unit-tests
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          mkdir -p build
+          python -m unittest -v tests/test_icon_system_v5.py 2>&1 | tee build/icon-v5-unit-tests.txt
+      - name: Unit test summary
+        if: always()
+        run: |
+          if [ -f build/icon-v5-unit-tests.txt ]; then
+            echo "## Icon V5 unit tests" >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+            tail -n 80 build/icon-v5-unit-tests.txt >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          fi
       - run: python scripts/icon_system_v5.py contract
       - run: python scripts/icon_system_v5.py discover --rule-index rule/_index.yaml --out build/icon-v5/service-discovery.json
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
@@ -58,7 +74,7 @@ jobs:
 
   network-acquisition:
     if: ${{ github.event_name == 'workflow_dispatch' }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 90
     permissions:
       contents: read
@@ -82,7 +98,10 @@ jobs:
           from pathlib import Path
           doc = yaml.safe_load(Path('rule/_index.yaml').read_text(encoding='utf-8')) or {}
           run_id = os.environ.get('INPUT_RUN_ID','').strip() or str(doc.get('run_id') or 'bootstrap-rule-index-run')
-          ir_digest = os.environ.get('INPUT_IR_DIGEST','').strip() or str(doc.get('ir_digest') or 'bootstrap-no-ir-digest')
+          # Prefer real IR digest; leave empty when absent (do not invent bootstrap placeholder)
+          ir_digest = os.environ.get('INPUT_IR_DIGEST','').strip() or str(doc.get('ir_digest') or '')
+          if ir_digest in ('bootstrap-no-ir-digest', 'None'):
+              ir_digest = '' 
           snapshot_id = os.environ.get('INPUT_SNAPSHOT_ID','').strip() or str(doc.get('snapshot_id') or run_id)
           Path(os.environ['GITHUB_OUTPUT']).open('a').write(
               f'run_id={run_id}\nsnapshot_id={snapshot_id}\nir_digest={ir_digest}\n'
@@ -100,9 +119,8 @@ jobs:
           --out build/icon-v5
           --run-id '${{ steps.lineage.outputs.run_id }}'
           --snapshot-id '${{ steps.lineage.outputs.snapshot_id }}'
-          --ir-digest '${{ steps.lineage.outputs.ir_digest }}'
-          --strict
-          ${{ inputs.allow_partial == true && '--allow-partial' || '' }}
+          ${{ steps.lineage.outputs.ir_digest != '' && format('--ir-digest {0}', steps.lineage.outputs.ir_digest) || '' }}
+          ${{ inputs.allow_partial == true && '--allow-partial' || '--strict' }}
           ${{ inputs.refresh && '--refresh' || '' }}
       - name: Gate V5 package
         run: >-
@@ -122,7 +140,7 @@ jobs:
   promote:
     if: ${{ github.event_name == 'workflow_dispatch' && inputs.promote == true }}
     needs: [network-acquisition]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 60
     permissions:
       contents: write
@@ -135,6 +153,26 @@ jobs:
         with:
           name: icon-system-v5-network-build-${{ github.sha }}
           path: build/icon-v5
+      - name: Validate registry before promote
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, sys
+          from pathlib import Path
+          p = Path("build/icon-v5/registry.json")
+          if not p.is_file():
+              print("No registry.json in artifact; skip promote")
+              raise SystemExit(0)
+          reg = json.loads(p.read_text(encoding="utf-8"))
+          cov = reg.get("coverage") or {}
+          complete = int(cov.get("complete_8_of_8") or 0)
+          total = int(cov.get("service_count") or len(reg.get("entries") or reg.get("services") or []) or 0)
+          print(f"promote precheck complete_8_of_8={complete} service_count={total}")
+          if total > 0 and complete / total < 0.90:
+              print(f"ERROR: coverage {complete}/{total} < 90%; refuse promote", file=sys.stderr)
+              raise SystemExit(1)
+          print("coverage OK for promote")
+          PY
       - name: Sync build into assets/icons/v5
         run: |
           set -euo pipefail
@@ -143,7 +181,10 @@ jobs:
             exit 0
           fi
           mkdir -p assets/icons/v5
+          # Never clobber human-maintained seed tree or pointer via blind rsync
           rsync -a \
+            --exclude 'seed/' \
+            --exclude 'release-pointer.json' \
             build/icon-v5/ assets/icons/v5/
           if [ -d assets/icons/seed ]; then
             mkdir -p assets/icons/v5/seed
