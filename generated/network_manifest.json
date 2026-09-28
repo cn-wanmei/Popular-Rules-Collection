@@ -1,5 +1,5 @@
 {
-  "collection_date": "2026-09-27",
+  "collection_date": "2026-09-28",
   "file_count": 81,
   "files": [
     {
@@ -18,7 +18,7 @@
       "kind": "binary",
       "scope": "mmdb",
       "sha256": "f35228dd74b70ae0ac72dcd2b86d03e0510264e20a0ec21ebb6aa32fa4f85c38",
-      "source": "backup/2026-09-27/datasets/mmdb-country.bin"
+      "source": "backup/2026-09-28/datasets/mmdb-country.bin"
     },
     {
       "bytes": 12072490,
@@ -27,7 +27,7 @@
       "kind": "binary",
       "scope": "mmdb",
       "sha256": "d8a649084d78e662cc7091ec64840c4ab534eef33e573649697fee253f2f9f4c",
-      "source": "backup/2026-09-27/datasets/mmdb-asn.bin"
+      "source": "backup/2026-09-28/datasets/mmdb-asn.bin"
     },
     {
       "bytes": 207157,
@@ -36,7 +36,7 @@
       "kind": "binary",
       "scope": "mmdb",
       "sha256": "f5fc84951927a431b4505876b8f2fa3183dfddd6f9605958ac6bccd63aa64972",
-      "source": "backup/2026-09-27/datasets/dat-geoip-lite.bin"
+      "source": "backup/2026-09-28/datasets/dat-geoip-lite.bin"
     },
     {
       "bytes": 16635240,
@@ -45,7 +45,7 @@
       "kind": "binary",
       "scope": "mmdb",
       "sha256": "3cf2236c19063c1c80803368cca5ff589c5033129fdf9ba154230c689b81fc2a",
-      "source": "backup/2026-09-27/datasets/dat-geoip.bin"
+      "source": "backup/2026-09-28/datasets/dat-geoip.bin"
     },
     {
       "bytes": 4253214,
@@ -54,7 +54,7 @@
       "kind": "binary",
       "scope": "mmdb",
       "sha256": "9fc41342298b8e9794ff40b3d3045809a0fd0e61162a9718226c593fc30644d6",
-      "source": "backup/2026-09-27/datasets/dat-geosite.bin"
+      "source": "backup/2026-09-28/datasets/dat-geosite.bin"
     },
     {
       "bytes": 153085,
@@ -223,7 +223,7 @@
       "kind": "geoip",
       "scope": "mmdb",
       "sha256": "f35228dd74b70ae0ac72dcd2b86d03e0510264e20a0ec21ebb6aa32fa4f85c38",
-      "source": "backup/2026-09-27/datasets/geoip-mmdb.bin"
+      "source": "backup/2026-09-28/datasets/geoip-mmdb.bin"
     },
     {
       "bytes": 1412572,
@@ -246,13 +246,13 @@
       "source": "database/geosite/proxy.txt"
     },
     {
-      "bytes": 3992906,
+      "bytes": 3998983,
       "file": "geosite/reject.txt",
       "id": "geosite-reject",
       "kind": "geosite",
-      "lines": 192363,
+      "lines": 192682,
       "scope": "geosite",
-      "sha256": "081606d2485d73ead332c3d633e09a69c608f7ca1a9d42e67b56bd212df0a5a0",
+      "sha256": "1478ae8e12000dce43d0d0972658e686e65c9970a5ac47b74db33f12627934c5",
       "source": "database/geosite/reject.txt"
     },
     {
@@ -389,7 +389,7 @@
       "kind": "provider",
       "lines": 11454,
       "scope": "provider",
-      "sha256": "346e2f7f336440a3b5733327e8cfaec4a5a6e4bc924249c8c125f20c581e16fe",
+      "sha256": "1effddec33411d4888658a64c48259ec6528f408a28e3ee9e1344bbfbf5a3072",
       "source": "database/provider/aws.txt"
     },
     {
@@ -399,7 +399,7 @@
       "kind": "provider",
       "lines": 1159,
       "scope": "provider",
-      "sha256": "af238dfc452a5eb9053b7b9c5a10e4b80276e0acb543082d46e4866cc1a418aa",
+      "sha256": "66767841e632a23d45dd0f0d32fd45ec4d814b7b363412f6577ba58cf2c92b1c",
       "source": "database/provider/googlecloud.txt"
     },
     {
@@ -409,7 +409,7 @@
       "kind": "provider",
       "lines": 152,
       "scope": "provider",
-      "sha256": "ee83d2bdbe690e1239d6ec8da9dad6bf275b7a4bb51ffd3f42028de33e30984a",
+      "sha256": "0db69fb4dafa553173d958915f08dbd5fca2ac48779e8175fe80d709b03cedb1",
       "source": "database/provider/goog.txt"
     },
     {
@@ -803,7 +803,7 @@
       "source": "database/ips/zhihu.txt"
     }
   ],
-  "generated_at": "2026-09-27T15:23:07.614945+00:00",
+  "generated_at": "2026-09-28T00:46:06.477198+00:00",
   "missing_optional": [],
   "runtime_contract": "network_dataset_distribution_v2",
   "schema": "network_publication_v2",
@@ -815,5 +815,5 @@
     "provider_cidrs_are_not_service_ownership": true,
     "service_rules": "generated/<client>/..."
   },
-  "source_commit": "0f112705cccbaf1bd2902e536dfa4d6b396411b9"
+  "source_commit": "6946c1c54f607b792607f23b1b1e532cd1184875"
 }
