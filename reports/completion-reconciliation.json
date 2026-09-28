@@ -1,0 +1,168 @@
+{
+  "schema": "completion_reconciliation_v1",
+  "generated_at": "2026-09-28T06:21:57.780848+00:00",
+  "active_bindings": 281,
+  "rule_index_services": 394,
+  "active_not_in_rule_index": [
+    "baidu"
+  ],
+  "core_subtrees": {
+    "tencent": {
+      "hierarchy_children": 16,
+      "children": [
+        "honorofkings_cn",
+        "honorofkings_global",
+        "qq",
+        "qqbrowser",
+        "qqdoc",
+        "qqmail",
+        "qqmusic",
+        "quanmin-k-ge",
+        "tencentcloud",
+        "tencentdocs",
+        "tencentmeeting",
+        "tencentvideo",
+        "wechat",
+        "wecom",
+        "wegame",
+        "wetv"
+      ],
+      "planned_discovery": [
+        "qqzone",
+        "tenpay",
+        "tencentads",
+        "tencentmap",
+        "wetype",
+        "sogou"
+      ]
+    },
+    "bytedance": {
+      "hierarchy_children": 10,
+      "children": [
+        "capcut",
+        "doubao",
+        "douyin",
+        "feishu",
+        "jianying",
+        "lark",
+        "tiktok",
+        "toutiao",
+        "volcengine",
+        "xigua"
+      ],
+      "planned_discovery": [
+        "pipixia",
+        "fanqie",
+        "dongchedi",
+        "oceanengine"
+      ]
+    },
+    "alibaba": {
+      "hierarchy_children": 15,
+      "children": [
+        "1688",
+        "alibabacloud",
+        "aliexpress",
+        "alipay",
+        "amap",
+        "cainiao",
+        "dingding",
+        "eleme",
+        "fliggy",
+        "gaode",
+        "lazada",
+        "taobao",
+        "tmall",
+        "xianyu",
+        "youku"
+      ],
+      "planned_discovery": [
+        "quark",
+        "uc",
+        "hema",
+        "taobaolive"
+      ]
+    },
+    "google": {
+      "hierarchy_children": 35,
+      "children": [
+        "firebase",
+        "gemini",
+        "gmail",
+        "google-calendar",
+        "google-chat",
+        "google-contacts",
+        "google-docs",
+        "google-earth",
+        "google-forms",
+        "google-groups",
+        "google-maps",
+        "google-meet",
+        "google-news",
+        "google-photos",
+        "google-play",
+        "google-search",
+        "google-sheets",
+        "google-sites",
+        "google-slides",
+        "google-vids",
+        "google-voice",
+        "google-workspace-studio",
+        "googlecloud",
+        "googledocs",
+        "googledrive",
+        "googleearth",
+        "googlefcm",
+        "googlemaps",
+        "googlephotos",
+        "googleplay",
+        "googlesheets",
+        "googlevoice",
+        "scholar",
+        "youtube",
+        "youtubemusic"
+      ],
+      "planned_discovery": [
+        "googleworkspace",
+        "googlemeet",
+        "googlechat",
+        "googlecalendar",
+        "googletranslate"
+      ]
+    },
+    "microsoft": {
+      "hierarchy_children": 22,
+      "children": [
+        "azure",
+        "bing",
+        "copilot",
+        "github",
+        "linkedin",
+        "microsoftedge",
+        "minecraft",
+        "ms365-excel",
+        "ms365-loop",
+        "ms365-mesh",
+        "ms365-onenote",
+        "ms365-planner",
+        "ms365-powerpoint",
+        "ms365-word",
+        "office",
+        "office365",
+        "onedrive",
+        "outlook",
+        "powerbi",
+        "sharepoint",
+        "teams",
+        "xbox"
+      ],
+      "planned_discovery": [
+        "microsoft365",
+        "dynamics",
+        "powerautomate",
+        "powerapps",
+        "visualstudio"
+      ]
+    }
+  }
+}
