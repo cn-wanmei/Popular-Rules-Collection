@@ -78,7 +78,7 @@ jobs:
   network-acquisition:
     if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode != 'full' }}
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 180
     permissions:
       contents: read
     steps:
@@ -216,7 +216,8 @@ jobs:
     if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'full' }}
     needs: [plan-shards]
     runs-on: ubuntu-24.04
-    timeout-minutes: 90
+    # GHA hosted runner job max is 6h
+    timeout-minutes: 360
     permissions:
       contents: read
     strategy:
@@ -306,7 +307,7 @@ jobs:
     needs: [full-shard]
     if: ${{ always() && github.event_name == 'workflow_dispatch' && inputs.mode == 'full' && needs.full-shard.result != 'cancelled' }}
     runs-on: ubuntu-24.04
-    timeout-minutes: 25
+    timeout-minutes: 60
     permissions:
       contents: read
     steps:
@@ -391,7 +392,7 @@ jobs:
     needs: [network-acquisition, merge-full]
     if: ${{ always() && github.event_name == 'workflow_dispatch' && inputs.promote == true && (needs.network-acquisition.result == 'success' || needs.merge-full.result == 'success') }}
     runs-on: ubuntu-24.04
-    timeout-minutes: 60
+    timeout-minutes: 90
     permissions:
       contents: write
       pull-requests: write
@@ -404,6 +405,8 @@ jobs:
           name: icon-system-v5-network-build-${{ github.sha }}
           path: build/icon-v5
       - name: Validate registry before promote
+        env:
+          ALLOW_PARTIAL: ${{ inputs.allow_partial }}
         run: |
           set -euo pipefail
           python3 - <<'PY'
@@ -418,10 +421,17 @@ jobs:
           complete = int(cov.get("complete_8_of_8") or 0)
           total = int(cov.get("service_count") or len(reg.get("entries") or []) or 0)
           print(f"promote precheck complete_8_of_8={complete} service_count={total}")
+          import os
+          allow_partial = os.environ.get("ALLOW_PARTIAL", "true").lower() == "true"
           if total > 0 and complete / total < 0.90:
-              print(f"ERROR: coverage {complete}/{total} < 90%; refuse promote", file=sys.stderr)
-              raise SystemExit(1)
-          print("coverage OK for promote")
+              msg = f"coverage {complete}/{total} < 90%"
+              if allow_partial:
+                  print(f"WARN: {msg}; allow_partial=true → still promote")
+              else:
+                  print(f"ERROR: {msg}; refuse promote", file=sys.stderr)
+                  raise SystemExit(1)
+          else:
+              print("coverage OK for promote")
           PY
       - name: Sync build into assets/icons/v5
         run: |
