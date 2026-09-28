@@ -22,7 +22,8 @@ on:
       ir_digest: {description: 'Semantic IR sha256 (empty = read from rule/_index.yaml)', required: false, default: ''}
       refresh: {description: 'Ignore source cache and reacquire icons', required: false, default: false, type: boolean}
       allow_partial: {description: 'Allow incomplete coverage (acquisition default true; promote still gated)', required: false, default: true, type: boolean}
-      promote: {description: 'Promote build styles/png into assets/icons/v5 on a branch', required: false, default: true, type: boolean}
+      promote: {description: 'Promote build into assets/icons/v5 via PR only (never direct main write)', required: false, default: false, type: boolean}
+      mode: {description: 'incremental (default) | full', required: false, default: 'incremental', type: choice, options: ['incremental', 'full']}
 
 concurrency:
   # PR: cancel superseded runs on same ref. Dispatch: isolate by run_id (no mutual cancel).
@@ -75,7 +76,8 @@ jobs:
   network-acquisition:
     if: ${{ github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-24.04
-    timeout-minutes: 45
+    # Phase-1 SLA: incremental ≤30, full ≤120 (shared job; mode selects wall budget)
+    timeout-minutes: ${{ inputs.mode == 'full' && 120 || 30 }}
     permissions:
       contents: read
     steps:
@@ -112,6 +114,35 @@ jobs:
           INPUT_RUN_ID: ${{ inputs.run_id }}
           INPUT_SNAPSHOT_ID: ${{ inputs.snapshot_id }}
           INPUT_IR_DIGEST: ${{ inputs.ir_digest }}
+      - name: Restore production baseline into build workspace
+        if: ${{ inputs.mode != 'full' && inputs.refresh != true }}
+        run: |
+          set -euo pipefail
+          mkdir -p build/icon-v5
+          if [ -d assets/icons/v5 ] && [ -f assets/icons/v5/registry.json ]; then
+            # Snapshot isolation: copy into workspace; never write back to production from this job
+            rsync -a \
+              --exclude 'seed/' \
+              --exclude '.tmp/' \
+              --exclude '.failed/' \
+              assets/icons/v5/ build/icon-v5/
+            echo "baseline restored: $(find build/icon-v5/styles -name '*.svg' 2>/dev/null | wc -l) style files"
+          else
+            echo "no production baseline present; cold start"
+          fi
+
+      - name: Restore Actions icon build cache
+        if: ${{ inputs.mode != 'full' && inputs.refresh != true }}
+        uses: actions/cache@1bd1e32a3bdc45362d1e726936510391af94cc21
+        with:
+          path: |
+            build/icon-v5
+            assets/icons/v5/source
+          key: icon-v5-build-${{ hashFiles('config/icon_v5.yaml', 'config/official_sites.yaml', 'scripts/icon_v5_renderers/**', 'scripts/icon_system_v5.py') }}-${{ github.sha }}
+          restore-keys: |
+            icon-v5-build-${{ hashFiles('config/icon_v5.yaml', 'config/official_sites.yaml', 'scripts/icon_v5_renderers/**', 'scripts/icon_system_v5.py') }}-
+            icon-v5-build-
+
       - name: Build V5 acquisition package
         run: >-
           python scripts/icon_system_v5.py build
@@ -119,11 +150,39 @@ jobs:
           --out build/icon-v5
           --run-id '${{ steps.lineage.outputs.run_id }}'
           --snapshot-id '${{ steps.lineage.outputs.snapshot_id }}'
-          --concurrency 12
-          ${{ inputs.refresh != true && '--incremental' || '' }}
+          --concurrency 16
+          ${{ (inputs.mode != 'full' && inputs.refresh != true) && '--incremental' || '' }}
           ${{ steps.lineage.outputs.ir_digest != '' && format('--ir-digest {0}', steps.lineage.outputs.ir_digest) || '' }}
           ${{ inputs.allow_partial == true && '--allow-partial' || '--strict' }}
-          ${{ inputs.refresh && '--refresh' || '' }}
+          ${{ (inputs.refresh == true || inputs.mode == 'full') && '--refresh' || '' }}
+
+      - name: Acquisition metrics summary
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json, time
+          from pathlib import Path
+          reg = Path("build/icon-v5/registry.json")
+          if not reg.is_file():
+              print("no registry; skip metrics")
+              raise SystemExit(0)
+          data = json.loads(reg.read_text(encoding="utf-8"))
+          cov = data.get("coverage") or {}
+          complete = int(cov.get("complete_8_of_8") or 0)
+          total = int(cov.get("service_count") or 0)
+          missing = cov.get("missing") or []
+          summary = {
+              "mode": "${{ inputs.mode }}",
+              "complete_8_of_8": complete,
+              "service_count": total,
+              "gap_count": len(missing),
+              "renderer_version": data.get("renderer_version"),
+              "variants": data.get("variants"),
+          }
+          Path("build/icon-v5/acquisition-metrics.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
+          print(json.dumps(summary, ensure_ascii=False))
+          print(f"::notice::icon acquisition complete={complete}/{total} gap={len(missing)}")
+          PY
       - name: Gate V5 package
         run: >-
           python scripts/icon_system_v5.py gate
