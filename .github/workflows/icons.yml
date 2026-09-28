@@ -481,7 +481,10 @@ jobs:
           git config user.name "icon-v5-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$BRANCH"
-          git add assets/icons/v5 assets/icon-source-cache || true
+          git add assets/icons/v5
+          if [ -d assets/icon-source-cache ]; then
+            git add assets/icon-source-cache || true
+          fi
           if git diff --cached --quiet; then
             echo "No promote changes"
             exit 0
