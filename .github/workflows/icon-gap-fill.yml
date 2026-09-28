@@ -6,6 +6,12 @@ on:
     paths:
       - 'rule/_index.yaml'
       - 'rule/**'
+      - 'config/icon_v5.yaml'
+      - 'config/official_sites.yaml'
+      - 'assets/icons/v5/registry.json'
+  schedule:
+    # Daily gap sweep (UTC) so gap-fill is not dead code
+    - cron: '30 6 * * *'
   workflow_dispatch:
 
 concurrency:
@@ -53,7 +59,7 @@ jobs:
           report = json.loads(Path("build/gap-report.json").read_text(encoding="utf-8"))
           gap = report.get("coverage_gap") or []
           # Cap auto-fill batch to avoid runaway CI
-          gap = gap[:40]
+          gap = gap[:80]
           out = os.environ["GITHUB_OUTPUT"]
           with open(out, "a", encoding="utf-8") as f:
               f.write(f"has_gap={'true' if gap else 'false'}\n")
