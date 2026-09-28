@@ -1,0 +1,67 @@
+{
+  "schema": "icon_seed_audit_v5",
+  "seed_files": 10,
+  "warnings": 0,
+  "findings": [
+    {
+      "path": "assets/icons/seed/12306.svg",
+      "status": "ok",
+      "flags": [],
+      "bytes": 308
+    },
+    {
+      "path": "assets/icons/seed/abc.svg",
+      "status": "ok",
+      "flags": [],
+      "bytes": 311
+    },
+    {
+      "path": "assets/icons/seed/alipay.svg",
+      "status": "ok",
+      "flags": [],
+      "bytes": 309
+    },
+    {
+      "path": "assets/icons/seed/boc.svg",
+      "status": "ok",
+      "flags": [],
+      "bytes": 316
+    },
+    {
+      "path": "assets/icons/seed/ccb.svg",
+      "status": "ok",
+      "flags": [],
+      "bytes": 291
+    },
+    {
+      "path": "assets/icons/seed/cmb.svg",
+      "status": "ok",
+      "flags": [],
+      "bytes": 306
+    },
+    {
+      "path": "assets/icons/seed/github.svg",
+      "status": "ok",
+      "flags": [],
+      "bytes": 309
+    },
+    {
+      "path": "assets/icons/seed/icbc.svg",
+      "status": "ok",
+      "flags": [],
+      "bytes": 307
+    },
+    {
+      "path": "assets/icons/seed/psbc.svg",
+      "status": "ok",
+      "flags": [],
+      "bytes": 307
+    },
+    {
+      "path": "assets/icons/seed/wechat.svg",
+      "status": "ok",
+      "flags": [],
+      "bytes": 309
+    }
+  ]
+}
