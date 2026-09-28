@@ -1,23 +1,35 @@
-# Icon Pipeline V5 — Production Architecture (Phase 1)
+# Icon Pipeline V5 — Production Architecture
 
-**SSOT styles (8 only):** `source_original`, `glassmorphism`, `soft_3d`, `neo_skeuomorphism`, `minimalist`, `duotone_line`, `mbe`, `y2k`
+**SSOT variants (8):** `source_original`, `glassmorphism`, `soft_3d`, `neo_skeuomorphism`, `minimalist`, `duotone_line`, `mbe`, `y2k`
 
 ## Modes
 
-| Mode | Timeout | Baseline | Incremental | Refresh |
-|------|--------:|----------|-------------|---------|
-| `incremental` (default) | 30 min | rsync `assets/icons/v5` → `build/icon-v5` | yes | no |
-| `full` | 120 min | skip | no | yes |
+| Mode | Timeout | Baseline | Shards | Promote |
+|------|--------:|----------|--------|---------|
+| `incremental` (default) | 30m | rsync production → build | no | opt-in PR |
+| `full` | 40m × N shards + merge | cold / refresh | `hash(service_id)%N` | opt-in PR after ≥90% |
+
+## Phase status
+
+| Phase | Status | Deliverables |
+|------:|--------|--------------|
+| 1 | done | baseline, mode SLA, Actions cache, promote opt-in |
+| 2 | done | `assets/icon-source-cache/`, entry `source_hash` + `renderer_version` invalidation |
+| 3 | done | `shard-plan` / matrix full build / `merge-shards` / coverage gate ≥90% |
+| 4 | done | `build-manifest.json`, CAS `objects/sha256/`, `failures.json` queue |
+
+## CLI
+
+```bash
+python scripts/icon_system_v5.py build --incremental --concurrency 16 ...
+python scripts/icon_system_v5.py build --shard-index 0 --shard-count 4 ...
+python scripts/icon_system_v5.py shard-plan --shards 4 --out build/matrix.json
+python scripts/icon_system_v5.py merge-shards --registries-glob 'shards/**/registry.json' --out build/icon-v5/registry.json
+python scripts/icon_system_v5.py write-manifest --registry ... --out build-manifest.json
+```
 
 ## Rules
 
-1. Production tree is **not** a runner scratchpad — write via artifact → PR → merge only.
-2. Partial acquisition artifacts are allowed; **promote remains opt-in** and gated (≥90% complete_8_of_8).
-3. Coverage is **dynamic rule-index × 8/8**, never a fixed 146.
-
-## Phase roadmap
-
-- Phase 1 (this): baseline, mode SLA, Actions cache, metrics JSON
-- Phase 2: richer source cache + registry source_hash/renderer_version driven invalidation
-- Phase 3: matrix shards (`hash(service_id)%N`) + merge
-- Phase 4: manifest + CAS + failed queue
+1. Never write production from runner except via promote PR.
+2. Partial artifacts allowed; production requires coverage gate.
+3. Coverage = dynamic rule-index services × 8/8.
