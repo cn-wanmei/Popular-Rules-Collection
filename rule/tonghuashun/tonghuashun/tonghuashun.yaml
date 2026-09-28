@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: tonghuashun
+display_name: 同花顺
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 2e997e3fd4b8702e1bce7a9c68c5bc940ddc366e7233518e7a23a8546bc423fa
+  type: DOMAIN_SUFFIX
+  value: 10jqka.com.cn
+- id: 7389109745fc6a6cda360cad9cccbd18fc92219a11f6f176649f02ab002bf48d
+  type: DOMAIN_SUFFIX
+  value: www.10jqka.com.cn
+provider: tonghuashun

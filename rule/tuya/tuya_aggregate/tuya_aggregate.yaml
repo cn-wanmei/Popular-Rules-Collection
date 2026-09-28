@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: tuya_aggregate
+display_name: 涂鸦智能
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: f536167fc9fb56658271647def9c89867abf5b71cbeae31cfaa7a1a71e8e75b9
+  type: DOMAIN_SUFFIX
+  value: tuya.com
+- id: 3e1c9b9ae7480ed88cd445244a7fc0feac519ae48ec0740e94c0b71d65479c8a
+  type: DOMAIN_SUFFIX
+  value: www.tuya.com
+provider: tuya

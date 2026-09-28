@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: nokia_aggregate
+display_name: Nokia
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: dbf2a0205daf31c6888afaa628ba329c651367ed41108cdd659c3d1f9539dce5
+  type: DOMAIN_SUFFIX
+  value: nokia.com
+- id: e8e70468e16bcdacb37afc54c1db7d987b1c824a12425ebb302d84a36cb0c480
+  type: DOMAIN_SUFFIX
+  value: www.nokia.com
+provider: nokia

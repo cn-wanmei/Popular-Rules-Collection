@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: roborock_aggregate
+display_name: 石头科技
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: e961dd79935b176f09b439fdded4dfe29224c8cd84bdcd111da5e4561af03a7f
+  type: DOMAIN_SUFFIX
+  value: roborock.com
+- id: a0c6222345b62309e2a0677eb7a12f9dd89f5354a5d788e6a9169d4f7bd48699
+  type: DOMAIN_SUFFIX
+  value: www.roborock.com
+provider: roborock

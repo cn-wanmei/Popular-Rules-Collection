@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: umc_aggregate
+display_name: UMC
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 2f7ab6b2e88930ae67c1004b0d07c0d0917387a5267f1a6a147fc24ef7355401
+  type: DOMAIN_SUFFIX
+  value: umc.com
+- id: 77cadfc7494e12d94bf08d6b518752662178325e100eb409c6c342fbfd89f511
+  type: DOMAIN_SUFFIX
+  value: www.umc.com
+provider: umc

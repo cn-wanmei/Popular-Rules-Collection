@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: skhynix_aggregate
+display_name: SK hynix
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 6cfff106add485a7a5533cf8cebf38ed85e2aa3a005a17cfec1e1742d1982f8e
+  type: DOMAIN_SUFFIX
+  value: skhynix.com
+- id: 67302aa1556a14f36ad6cdeaaae99d4bc8fa0103f1a0edc991806bafc76d77ef
+  type: DOMAIN_SUFFIX
+  value: www.skhynix.com
+provider: skhynix

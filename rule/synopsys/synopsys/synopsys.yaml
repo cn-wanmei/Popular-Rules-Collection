@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: synopsys
+display_name: Synopsys
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 8f005061f4674a6227458815b66349ad481cf2b430070b705a485bc0b4b70502
+  type: DOMAIN_SUFFIX
+  value: synopsys.com
+- id: f02bc8b8c14cd9d1b42dcaa08a1ecb8e38ce4b80b4e77684260cc0235ce4ca87
+  type: DOMAIN_SUFFIX
+  value: www.synopsys.com
+provider: synopsys

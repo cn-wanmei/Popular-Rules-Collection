@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: zhaopin_aggregate
+display_name: 智联招聘
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 761aa7e73c58004a20d042253af2ce7f85f21c29e9e68335a54ff03459e47241
+  type: DOMAIN_SUFFIX
+  value: www.zhaopin.com
+- id: c2b2e82620cd99d60109b1c79a2576af603d8be367ceea4b56e4526591a1b6d5
+  type: DOMAIN_SUFFIX
+  value: zhaopin.com
+provider: zhaopin

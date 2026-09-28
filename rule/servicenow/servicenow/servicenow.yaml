@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: servicenow
+display_name: ServiceNow
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: f8c597bc07950664f9a5dde5cbbb2fb61971185e0fb561701a0ec8508e13e1df
+  type: DOMAIN_SUFFIX
+  value: servicenow.com
+- id: caeeb385f336747fdeb1757c4644e75698d27ee8d627435da37e1df529e98893
+  type: DOMAIN_SUFFIX
+  value: www.servicenow.com
+provider: servicenow

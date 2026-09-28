@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: take2_aggregate
+display_name: Take-Two
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 8d7b2b2a6380b674fe061b41e4c4f744b1da139c51fa4b214633bf8b05bfb538
+  type: DOMAIN_SUFFIX
+  value: take2games.com
+- id: 9bc8cde5a257a3f9b2964039792f511efcc1dfe832c0fa189e8ad0d02a27364f
+  type: DOMAIN_SUFFIX
+  value: www.take2games.com
+provider: take2

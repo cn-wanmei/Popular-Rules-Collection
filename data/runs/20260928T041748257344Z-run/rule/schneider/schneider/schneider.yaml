@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: schneider
+display_name: Schneider Electric
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: c65c159fbcf03ca4b5a4cda33708e20495b8b15a450cab66259a9480af672279
+  type: DOMAIN_SUFFIX
+  value: se.com
+- id: 187722f484ebe7b7571435332c61fa1b54df07b4ceeacc1c758e4c1e0f3b668f
+  type: DOMAIN_SUFFIX
+  value: www.se.com
+provider: schneider

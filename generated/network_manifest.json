@@ -48,12 +48,12 @@
       "source": "backup/2026-09-28/datasets/dat-geoip.bin"
     },
     {
-      "bytes": 4253214,
+      "bytes": 4252318,
       "file": "mmdb/geosite.dat",
       "id": "dat-geosite",
       "kind": "binary",
       "scope": "mmdb",
-      "sha256": "9fc41342298b8e9794ff40b3d3045809a0fd0e61162a9718226c593fc30644d6",
+      "sha256": "6469ae5005669a5de5a4845e0b50cb55beedec2b6e5fab476b33a2fd9ec2cee7",
       "source": "backup/2026-09-28/datasets/dat-geosite.bin"
     },
     {
@@ -389,7 +389,7 @@
       "kind": "provider",
       "lines": 11454,
       "scope": "provider",
-      "sha256": "1effddec33411d4888658a64c48259ec6528f408a28e3ee9e1344bbfbf5a3072",
+      "sha256": "246168c1095b92535475797b14220941c86ec4abfa1c55f598ca741bbdefeb10",
       "source": "database/provider/aws.txt"
     },
     {
@@ -399,7 +399,7 @@
       "kind": "provider",
       "lines": 1159,
       "scope": "provider",
-      "sha256": "66767841e632a23d45dd0f0d32fd45ec4d814b7b363412f6577ba58cf2c92b1c",
+      "sha256": "7bb2fcd20e5225d19fb1a35616bfc0e93048efda050f4d2f19a9b093ea7b6a03",
       "source": "database/provider/googlecloud.txt"
     },
     {
@@ -409,7 +409,7 @@
       "kind": "provider",
       "lines": 152,
       "scope": "provider",
-      "sha256": "0db69fb4dafa553173d958915f08dbd5fca2ac48779e8175fe80d709b03cedb1",
+      "sha256": "5413a47159e8575952bda0229d8a40da129cae7b3e34f4830e0cde8379b68823",
       "source": "database/provider/goog.txt"
     },
     {
@@ -803,7 +803,7 @@
       "source": "database/ips/zhihu.txt"
     }
   ],
-  "generated_at": "2026-09-28T04:05:59.225463+00:00",
+  "generated_at": "2026-09-28T04:24:41.062808+00:00",
   "missing_optional": [],
   "runtime_contract": "network_dataset_distribution_v2",
   "schema": "network_publication_v2",
@@ -815,5 +815,5 @@
     "provider_cidrs_are_not_service_ownership": true,
     "service_rules": "generated/<client>/..."
   },
-  "source_commit": "3229e0736bdec47e5d9072f90b52e82c8ca3b80d"
+  "source_commit": "dbf54d781b65c4cd96249b24d24aad23be96387c"
 }

@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: qqdoc
+display_name: 腾讯文档
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: 01884a95a2554f8b9d5c8f4d9a82de215d65e1ed031a83bd137f2b63ebbe143c
+  type: DOMAIN_SUFFIX
+  value: docs.qq.com
+provider: tencent

@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: wegame
+display_name: WeGame
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 79c6fbc14707022839aff52b26647eac6e9e696f5ceed540167c42a7b6d7e1a2
+  type: DOMAIN_SUFFIX
+  value: wegame.com.cn
+- id: 68e1baa724b35c348c63cdde06494d04719b09b6fb7e46aadfdccd657654e15e
+  type: DOMAIN_SUFFIX
+  value: www.wegame.com.cn
+provider: tencent

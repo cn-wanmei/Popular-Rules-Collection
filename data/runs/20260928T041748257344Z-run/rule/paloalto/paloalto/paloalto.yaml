@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: paloalto
+display_name: Palo Alto Networks
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 13bf6ab43732a42cf3d565c2bcc2fb4853bb7a3ce4e05ebe14c3c6ef798712be
+  type: DOMAIN_SUFFIX
+  value: paloaltonetworks.com
+- id: ca50d064c7fc4fa88d3462d12aa879f5e5f2fc2ba305e51495d16663819743b2
+  type: DOMAIN_SUFFIX
+  value: www.paloaltonetworks.com
+provider: paloalto

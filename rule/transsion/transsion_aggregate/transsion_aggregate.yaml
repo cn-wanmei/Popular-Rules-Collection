@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: transsion_aggregate
+display_name: 传音
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 8dae45cf9c9400a73c08704f6835d348cd589a9c5345bd6812dcb3b782bbc36b
+  type: DOMAIN_SUFFIX
+  value: transsion.com
+- id: d03e07850a49cf6585831e230785415462ec8d077f01445872d01323be98d5a5
+  type: DOMAIN_SUFFIX
+  value: www.transsion.com
+provider: transsion

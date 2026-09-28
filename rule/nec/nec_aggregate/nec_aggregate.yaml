@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: nec_aggregate
+display_name: NEC
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 9259d8268070f78521d1a546ac3d68e4243fa106994c6464a833bb6ee1cff1d3
+  type: DOMAIN_SUFFIX
+  value: nec.com
+- id: ee97b0739090f3db4608eab3a27fd6db1d4b977fcf978b9119fde4b053441f95
+  type: DOMAIN_SUFFIX
+  value: www.nec.com
+provider: nec

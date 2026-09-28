@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: xgimi_aggregate
+display_name: 极米
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: e982283714378085afeb5ed687b4ffe95c1da356a208e07d570c07f17561e69f
+  type: DOMAIN_SUFFIX
+  value: www.xgimi.com
+- id: 2b3b4dae92e0ea5644c88359feb739d088f40c3d20affc9e2b734a8addec7d2d
+  type: DOMAIN_SUFFIX
+  value: xgimi.com
+provider: xgimi

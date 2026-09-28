@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: rakuten_aggregate
+display_name: Rakuten
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: d4d395be973f987c30d22b44ea20aacf35cebe14544f3b7f8b7ae3054aa8665d
+  type: DOMAIN_SUFFIX
+  value: rakuten.com
+- id: 4d68b5a31a8a99b0124a2ed9ddc5656320666d62bcad75431eacc33f0f30ef22
+  type: DOMAIN_SUFFIX
+  value: www.rakuten.com
+provider: rakuten

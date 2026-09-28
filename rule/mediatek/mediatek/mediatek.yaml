@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: mediatek
+display_name: MediaTek
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: aaa0d7d36676f448731e27c15046c5843274762afac761e15d12603fdf26d47d
+  type: DOMAIN_SUFFIX
+  value: mediatek.com
+- id: aa5344227378075d4b534c7b55fecb8b53a805812703849db96268a52ba92f9c
+  type: DOMAIN_SUFFIX
+  value: www.mediatek.com
+provider: mediatek

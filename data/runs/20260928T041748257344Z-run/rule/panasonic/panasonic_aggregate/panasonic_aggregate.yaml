@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: panasonic_aggregate
+display_name: Panasonic
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 052cf2c98ca4a30995761189775e08cf27f82d05d59743512504d4a939ac7ffa
+  type: DOMAIN_SUFFIX
+  value: panasonic.com
+- id: 6bfc6a818b7622988cc546f2add85f447cb613dcc2010177c04dd3edfd932bd2
+  type: DOMAIN_SUFFIX
+  value: www.panasonic.com
+provider: panasonic

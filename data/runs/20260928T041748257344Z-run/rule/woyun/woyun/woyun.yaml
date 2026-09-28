@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: woyun
+display_name: 联通云
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: aa15c7e16ee74a901fc11852203f927564645f3acd16ad87ca17751d24522801
+  type: DOMAIN_SUFFIX
+  value: cucloud.cn
+- id: 54ead02b4c6a7f5ad839d27f7ec48e6dad9d4840caa2481a1a96f4e0719efdcf
+  type: DOMAIN_SUFFIX
+  value: www.cucloud.cn
+provider: woyun

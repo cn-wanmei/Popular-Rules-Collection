@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: shopee
+display_name: Shopee
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 5c04cff4126f21ae2a99bdb74da4805b6a5194c4536afb3e71b671454987ab9c
+  type: DOMAIN_SUFFIX
+  value: shopee.com
+- id: 9c774f6f35b18904a5c26cf2278f8b69947a88aa02c879ace9d5da8de5854859
+  type: DOMAIN_SUFFIX
+  value: www.shopee.com
+provider: shopee

@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: mercadolibre
+display_name: Mercado Libre
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 922286a5278a6dcf9815028d05dc72dac202c4df57476436747631a24620a7df
+  type: DOMAIN_SUFFIX
+  value: mercadolibre.com
+- id: 366f30763c212df5f46050826cf734bf9392eb21303b02ea69a5de318507f7df
+  type: DOMAIN_SUFFIX
+  value: www.mercadolibre.com
+provider: mercadolibre

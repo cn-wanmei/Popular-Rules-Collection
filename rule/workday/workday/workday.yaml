@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: workday
+display_name: Workday
+generated_from:
+  run_id: 20260928T041748257344Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: d6d3c35a21685d5fc5b2a872b3897eef334c7100dd98a436d86949f05e1321d1
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: ddddc27c397480be3d3e4dd4adf489e40c5cf664786c83fbde260b80109cfa8f
+  type: DOMAIN_SUFFIX
+  value: workday.com
+- id: 2785e38b77eff79de1caeca74753aacdffcc8b638e1ed60a25628b0bdb62875b
+  type: DOMAIN_SUFFIX
+  value: www.workday.com
+provider: workday
