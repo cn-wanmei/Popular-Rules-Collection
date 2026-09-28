@@ -231,6 +231,24 @@ def main() -> int:
         ),
     }
     print(json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True))
+    # Fail-closed summary (avoid silent FAIL when failures list is large / log-truncated)
+    if report["status"] != "PASS":
+        print(
+            f"[immutable_source_lineage_gate] FAIL "
+            f"bindings={report['binding_count']} verified={report['verified_count']} "
+            f"failures={len(report['failures'])}",
+            flush=True,
+        )
+        for item in report["failures"][:80]:
+            print(f"  - {item}", flush=True)
+        if len(report["failures"]) > 80:
+            print(f"  - ... {len(report['failures']) - 80} more", flush=True)
+        if report["binding_count"] != report["verified_count"] and not report["failures"]:
+            print(
+                "  - invariant: verified_count must equal active binding_count "
+                "(collection snapshot incomplete relative to immutable_registry)",
+                flush=True,
+            )
     if args.json_out:
         out = ROOT / args.json_out
         out.parent.mkdir(parents=True, exist_ok=True)
