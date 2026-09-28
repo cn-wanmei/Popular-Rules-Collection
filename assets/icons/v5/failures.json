@@ -1,0 +1,2369 @@
+{
+  "schema": "icon_failures_v5",
+  "services": {
+    "applenews": {
+      "service": "applenews",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443085+00:00"
+    },
+    "ai": {
+      "service": "ai",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443096+00:00"
+    },
+    "baidumaps": {
+      "service": "baidumaps",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443101+00:00"
+    },
+    "bahamut": {
+      "service": "bahamut",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443104+00:00"
+    },
+    "bbc": {
+      "service": "bbc",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443107+00:00"
+    },
+    "boss": {
+      "service": "boss",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443110+00:00"
+    },
+    "caocao": {
+      "service": "caocao",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443112+00:00"
+    },
+    "crowdstrike": {
+      "service": "crowdstrike",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443115+00:00"
+    },
+    "deepseek": {
+      "service": "deepseek",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443117+00:00"
+    },
+    "douyin": {
+      "service": "douyin",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443120+00:00"
+    },
+    "bilibili": {
+      "service": "bilibili",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443122+00:00"
+    },
+    "eleme": {
+      "service": "eleme",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443125+00:00"
+    },
+    "gemini": {
+      "service": "gemini",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443127+00:00"
+    },
+    "gmail": {
+      "service": "gmail",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443130+00:00"
+    },
+    "google-chat": {
+      "service": "google-chat",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443132+00:00"
+    },
+    "google-earth": {
+      "service": "google-earth",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443134+00:00"
+    },
+    "google-slides": {
+      "service": "google-slides",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443136+00:00"
+    },
+    "lamresearch": {
+      "service": "lamresearch",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443139+00:00"
+    },
+    "lazada": {
+      "service": "lazada",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443141+00:00"
+    },
+    "emby": {
+      "service": "emby",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443143+00:00"
+    },
+    "lufax": {
+      "service": "lufax",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443146+00:00"
+    },
+    "ms365-mesh": {
+      "service": "ms365-mesh",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443148+00:00"
+    },
+    "linkedin": {
+      "service": "linkedin",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443151+00:00"
+    },
+    "qqbrowser": {
+      "service": "qqbrowser",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443154+00:00"
+    },
+    "qualcomm": {
+      "service": "qualcomm",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443156+00:00"
+    },
+    "yonyou": {
+      "service": "yonyou",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443158+00:00"
+    },
+    "roblox": {
+      "service": "roblox",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443160+00:00"
+    },
+    "roborock": {
+      "service": "roborock",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443163+00:00"
+    },
+    "pinterest": {
+      "service": "pinterest",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443165+00:00"
+    },
+    "spacex": {
+      "service": "spacex",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443167+00:00"
+    },
+    "soundcloud": {
+      "service": "soundcloud",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443169+00:00"
+    },
+    "speedtest": {
+      "service": "speedtest",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443171+00:00"
+    },
+    "stripe": {
+      "service": "stripe",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443174+00:00"
+    },
+    "tencentcloud": {
+      "service": "tencentcloud",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443177+00:00"
+    },
+    "umc": {
+      "service": "umc",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443179+00:00"
+    },
+    "tiktok": {
+      "service": "tiktok",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443181+00:00"
+    },
+    "wecom": {
+      "service": "wecom",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443183+00:00"
+    },
+    "wuba": {
+      "service": "wuba",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443186+00:00"
+    },
+    "xunlei": {
+      "service": "xunlei",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443189+00:00"
+    },
+    "weibo": {
+      "service": "weibo",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443199+00:00"
+    },
+    "zhaopin": {
+      "service": "zhaopin",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443204+00:00"
+    },
+    "reddit": {
+      "service": "reddit",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:37.443208+00:00"
+    },
+    "airbnb": {
+      "service": "airbnb",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174736+00:00"
+    },
+    "arm": {
+      "service": "arm",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174745+00:00"
+    },
+    "audible": {
+      "service": "audible",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174750+00:00"
+    },
+    "autodesk": {
+      "service": "autodesk",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174752+00:00"
+    },
+    "baichuan": {
+      "service": "baichuan",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174755+00:00"
+    },
+    "cambricon": {
+      "service": "cambricon",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174758+00:00"
+    },
+    "aisuite": {
+      "service": "aisuite",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174790+00:00"
+    },
+    "coupang": {
+      "service": "coupang",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174793+00:00"
+    },
+    "dji": {
+      "service": "dji",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174796+00:00"
+    },
+    "ceb": {
+      "service": "ceb",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174798+00:00"
+    },
+    "equinix": {
+      "service": "equinix",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174801+00:00"
+    },
+    "ericsson": {
+      "service": "ericsson",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174803+00:00"
+    },
+    "fujitsu": {
+      "service": "fujitsu",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174805+00:00"
+    },
+    "douyu": {
+      "service": "douyu",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174808+00:00"
+    },
+    "google-docs": {
+      "service": "google-docs",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174810+00:00"
+    },
+    "google-voice": {
+      "service": "google-voice",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174812+00:00"
+    },
+    "gaode": {
+      "service": "gaode",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174814+00:00"
+    },
+    "honorofkings_global": {
+      "service": "honorofkings_global",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174817+00:00"
+    },
+    "hpe": {
+      "service": "hpe",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174819+00:00"
+    },
+    "intuit": {
+      "service": "intuit",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174821+00:00"
+    },
+    "googlevoice": {
+      "service": "googlevoice",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174823+00:00"
+    },
+    "messenger": {
+      "service": "messenger",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174825+00:00"
+    },
+    "micron": {
+      "service": "micron",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174828+00:00"
+    },
+    "migu": {
+      "service": "migu",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174830+00:00"
+    },
+    "mihome": {
+      "service": "mihome",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174833+00:00"
+    },
+    "letv": {
+      "service": "letv",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174835+00:00"
+    },
+    "nokia": {
+      "service": "nokia",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174837+00:00"
+    },
+    "openai-api": {
+      "service": "openai-api",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174840+00:00"
+    },
+    "minecraft": {
+      "service": "minecraft",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174842+00:00"
+    },
+    "palantir": {
+      "service": "palantir",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174844+00:00"
+    },
+    "perfectworld": {
+      "service": "perfectworld",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174846+00:00"
+    },
+    "oppo": {
+      "service": "oppo",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174849+00:00"
+    },
+    "servicenow": {
+      "service": "servicenow",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174851+00:00"
+    },
+    "shopee": {
+      "service": "shopee",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174853+00:00"
+    },
+    "scholar": {
+      "service": "scholar",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174855+00:00"
+    },
+    "tesla": {
+      "service": "tesla",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174858+00:00"
+    },
+    "ti": {
+      "service": "ti",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174860+00:00"
+    },
+    "taobao": {
+      "service": "taobao",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174862+00:00"
+    },
+    "unity": {
+      "service": "unity",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174864+00:00"
+    },
+    "vipshop": {
+      "service": "vipshop",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174867+00:00"
+    },
+    "uber": {
+      "service": "uber",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174869+00:00"
+    },
+    "whatsapp": {
+      "service": "whatsapp",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174871+00:00"
+    },
+    "youku": {
+      "service": "youku",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:40.174873+00:00"
+    },
+    "abc": {
+      "service": "abc",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275463+00:00"
+    },
+    "aliexpress": {
+      "service": "aliexpress",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275473+00:00"
+    },
+    "anthropic-platform": {
+      "service": "anthropic-platform",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275477+00:00"
+    },
+    "applemaps": {
+      "service": "applemaps",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275479+00:00"
+    },
+    "atlassian": {
+      "service": "atlassian",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275482+00:00"
+    },
+    "atour": {
+      "service": "atour",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275485+00:00"
+    },
+    "baiduwenku": {
+      "service": "baiduwenku",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275488+00:00"
+    },
+    "acfun": {
+      "service": "acfun",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275490+00:00"
+    },
+    "binance": {
+      "service": "binance",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275493+00:00"
+    },
+    "datadog": {
+      "service": "datadog",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275495+00:00"
+    },
+    "bocom": {
+      "service": "bocom",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275498+00:00"
+    },
+    "discord": {
+      "service": "discord",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275500+00:00"
+    },
+    "didi": {
+      "service": "didi",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275503+00:00"
+    },
+    "eastmoney": {
+      "service": "eastmoney",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275505+00:00"
+    },
+    "epicgames": {
+      "service": "epicgames",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275507+00:00"
+    },
+    "google-calendar": {
+      "service": "google-calendar",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275509+00:00"
+    },
+    "google-news": {
+      "service": "google-news",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275511+00:00"
+    },
+    "disney": {
+      "service": "disney",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275513+00:00"
+    },
+    "google-sheets": {
+      "service": "google-sheets",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275515+00:00"
+    },
+    "google-search": {
+      "service": "google-search",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275518+00:00"
+    },
+    "google-vids": {
+      "service": "google-vids",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275520+00:00"
+    },
+    "line": {
+      "service": "line",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275523+00:00"
+    },
+    "honor": {
+      "service": "honor",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275525+00:00"
+    },
+    "huawei-cloud": {
+      "service": "huawei-cloud",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275527+00:00"
+    },
+    "heroku": {
+      "service": "heroku",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275530+00:00"
+    },
+    "huggingface": {
+      "service": "huggingface",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275532+00:00"
+    },
+    "huolala": {
+      "service": "huolala",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275534+00:00"
+    },
+    "internlm": {
+      "service": "internlm",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275537+00:00"
+    },
+    "paypal": {
+      "service": "paypal",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275539+00:00"
+    },
+    "rockstar": {
+      "service": "rockstar",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275541+00:00"
+    },
+    "kakaotalk": {
+      "service": "kakaotalk",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275543+00:00"
+    },
+    "kuaishou": {
+      "service": "kuaishou",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275546+00:00"
+    },
+    "lg": {
+      "service": "lg",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275548+00:00"
+    },
+    "google-sites": {
+      "service": "google-sites",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275550+00:00"
+    },
+    "kuwo": {
+      "service": "kuwo",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275552+00:00"
+    },
+    "ms365-word": {
+      "service": "ms365-word",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275555+00:00"
+    },
+    "microsoftedge": {
+      "service": "microsoftedge",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275557+00:00"
+    },
+    "netlify": {
+      "service": "netlify",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275559+00:00"
+    },
+    "hubspot": {
+      "service": "hubspot",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275562+00:00"
+    },
+    "powerbi": {
+      "service": "powerbi",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275564+00:00"
+    },
+    "rakuten": {
+      "service": "rakuten",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275566+00:00"
+    },
+    "openai": {
+      "service": "openai",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275569+00:00"
+    },
+    "jd-cloud": {
+      "service": "jd-cloud",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275571+00:00"
+    },
+    "snowflake": {
+      "service": "snowflake",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275574+00:00"
+    },
+    "riotgames": {
+      "service": "riotgames",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275576+00:00"
+    },
+    "teams": {
+      "service": "teams",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275578+00:00"
+    },
+    "stun": {
+      "service": "stun",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275581+00:00"
+    },
+    "sohu": {
+      "service": "sohu",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275583+00:00"
+    },
+    "tmall": {
+      "service": "tmall",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275585+00:00"
+    },
+    "trello": {
+      "service": "trello",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275588+00:00"
+    },
+    "wangsu": {
+      "service": "wangsu",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275590+00:00"
+    },
+    "twitch": {
+      "service": "twitch",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275592+00:00"
+    },
+    "wechat": {
+      "service": "wechat",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275595+00:00"
+    },
+    "wikipedia": {
+      "service": "wikipedia",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275605+00:00"
+    },
+    "workday": {
+      "service": "workday",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275610+00:00"
+    },
+    "xai-grok": {
+      "service": "xai-grok",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275614+00:00"
+    },
+    "yi": {
+      "service": "yi",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275619+00:00"
+    },
+    "youtubemusic": {
+      "service": "youtubemusic",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275624+00:00"
+    },
+    "zhipin": {
+      "service": "zhipin",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275629+00:00"
+    },
+    "wise": {
+      "service": "wise",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275632+00:00"
+    },
+    "zoom": {
+      "service": "zoom",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:33.275635+00:00"
+    },
+    "applemedia": {
+      "service": "applemedia",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768510+00:00"
+    },
+    "applepodcasts": {
+      "service": "applepodcasts",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768521+00:00"
+    },
+    "bing": {
+      "service": "bing",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768525+00:00"
+    },
+    "broadcom": {
+      "service": "broadcom",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768528+00:00"
+    },
+    "1688": {
+      "service": "1688",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768531+00:00"
+    },
+    "dell": {
+      "service": "dell",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768534+00:00"
+    },
+    "cainiao": {
+      "service": "cainiao",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768537+00:00"
+    },
+    "dingding": {
+      "service": "dingding",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768539+00:00"
+    },
+    "doubao": {
+      "service": "doubao",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768542+00:00"
+    },
+    "elevenlabs": {
+      "service": "elevenlabs",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768544+00:00"
+    },
+    "fortinet": {
+      "service": "fortinet",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768546+00:00"
+    },
+    "getapps": {
+      "service": "getapps",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768549+00:00"
+    },
+    "globalfoundries": {
+      "service": "globalfoundries",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768551+00:00"
+    },
+    "goodreads": {
+      "service": "goodreads",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768554+00:00"
+    },
+    "google-forms": {
+      "service": "google-forms",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768556+00:00"
+    },
+    "google-photos": {
+      "service": "google-photos",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768558+00:00"
+    },
+    "googledrive": {
+      "service": "googledrive",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768560+00:00"
+    },
+    "epic": {
+      "service": "epic",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768563+00:00"
+    },
+    "jianying": {
+      "service": "jianying",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768565+00:00"
+    },
+    "kingdee": {
+      "service": "kingdee",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768567+00:00"
+    },
+    "kunlunxin": {
+      "service": "kunlunxin",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768569+00:00"
+    },
+    "lenovo": {
+      "service": "lenovo",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768572+00:00"
+    },
+    "minimax": {
+      "service": "minimax",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768575+00:00"
+    },
+    "nec": {
+      "service": "nec",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768577+00:00"
+    },
+    "neteasemail": {
+      "service": "neteasemail",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768579+00:00"
+    },
+    "neteasemusic": {
+      "service": "neteasemusic",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768581+00:00"
+    },
+    "hulu": {
+      "service": "hulu",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768584+00:00"
+    },
+    "nvidia": {
+      "service": "nvidia",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768586+00:00"
+    },
+    "okta": {
+      "service": "okta",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768588+00:00"
+    },
+    "paloalto": {
+      "service": "paloalto",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768591+00:00"
+    },
+    "nintendo": {
+      "service": "nintendo",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768593+00:00"
+    },
+    "qq": {
+      "service": "qq",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768596+00:00"
+    },
+    "sfexpress": {
+      "service": "sfexpress",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768598+00:00"
+    },
+    "shiji": {
+      "service": "shiji",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768600+00:00"
+    },
+    "starlink": {
+      "service": "starlink",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768603+00:00"
+    },
+    "stripe-dashboard": {
+      "service": "stripe-dashboard",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768605+00:00"
+    },
+    "t3go": {
+      "service": "t3go",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768607+00:00"
+    },
+    "restricted": {
+      "service": "restricted",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768610+00:00"
+    },
+    "private": {
+      "service": "private",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768613+00:00"
+    },
+    "ubisoft": {
+      "service": "ubisoft",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768616+00:00"
+    },
+    "tencentdocs": {
+      "service": "tencentdocs",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768618+00:00"
+    },
+    "tencentvideo": {
+      "service": "tencentvideo",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768620+00:00"
+    },
+    "tonghuashun": {
+      "service": "tonghuashun",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768623+00:00"
+    },
+    "tuya": {
+      "service": "tuya",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768626+00:00"
+    },
+    "telegram": {
+      "service": "telegram",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768628+00:00"
+    },
+    "venmo": {
+      "service": "venmo",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768630+00:00"
+    },
+    "volcengine": {
+      "service": "volcengine",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768633+00:00"
+    },
+    "wanmei": {
+      "service": "wanmei",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768635+00:00"
+    },
+    "woyun": {
+      "service": "woyun",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768637+00:00"
+    },
+    "xigua": {
+      "service": "xigua",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768640+00:00"
+    },
+    "primevideo": {
+      "service": "primevideo",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:46:59.768642+00:00"
+    },
+    "adobe-firefly": {
+      "service": "adobe-firefly",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012764+00:00"
+    },
+    "12306": {
+      "service": "12306",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012775+00:00"
+    },
+    "applebooks": {
+      "service": "applebooks",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012778+00:00"
+    },
+    "firebase": {
+      "service": "firebase",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012780+00:00"
+    },
+    "appstore": {
+      "service": "appstore",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012782+00:00"
+    },
+    "baidu-zhidao": {
+      "service": "baidu-zhidao",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012785+00:00"
+    },
+    "beike": {
+      "service": "beike",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012787+00:00"
+    },
+    "appletv": {
+      "service": "appletv",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012789+00:00"
+    },
+    "cctv": {
+      "service": "cctv",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012790+00:00"
+    },
+    "chinatelecom": {
+      "service": "chinatelecom",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012792+00:00"
+    },
+    "claude": {
+      "service": "claude",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012794+00:00"
+    },
+    "chinaunicom": {
+      "service": "chinaunicom",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012796+00:00"
+    },
+    "cursor": {
+      "service": "cursor",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012798+00:00"
+    },
+    "dewu": {
+      "service": "dewu",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012799+00:00"
+    },
+    "ea": {
+      "service": "ea",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012801+00:00"
+    },
+    "anjuke": {
+      "service": "anjuke",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012802+00:00"
+    },
+    "figma": {
+      "service": "figma",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012804+00:00"
+    },
+    "github": {
+      "service": "github",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012806+00:00"
+    },
+    "google-meet": {
+      "service": "google-meet",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012808+00:00"
+    },
+    "google-workspace-studio": {
+      "service": "google-workspace-studio",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012809+00:00"
+    },
+    "gitlab": {
+      "service": "gitlab",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012811+00:00"
+    },
+    "grab": {
+      "service": "grab",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012813+00:00"
+    },
+    "groq": {
+      "service": "groq",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012815+00:00"
+    },
+    "googlecloud": {
+      "service": "googlecloud",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012817+00:00"
+    },
+    "huawei-appgallery": {
+      "service": "huawei-appgallery",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012819+00:00"
+    },
+    "hashicorp": {
+      "service": "hashicorp",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012821+00:00"
+    },
+    "icloud": {
+      "service": "icloud",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012822+00:00"
+    },
+    "take2": {
+      "service": "take2",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012824+00:00"
+    },
+    "icbc": {
+      "service": "icbc",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012827+00:00"
+    },
+    "kakao": {
+      "service": "kakao",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012828+00:00"
+    },
+    "kla": {
+      "service": "kla",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012830+00:00"
+    },
+    "jetbrains": {
+      "service": "jetbrains",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012832+00:00"
+    },
+    "lark": {
+      "service": "lark",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012834+00:00"
+    },
+    "linecorp": {
+      "service": "linecorp",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012835+00:00"
+    },
+    "kugou": {
+      "service": "kugou",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012837+00:00"
+    },
+    "moonshot": {
+      "service": "moonshot",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012839+00:00"
+    },
+    "openai-platform": {
+      "service": "openai-platform",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012841+00:00"
+    },
+    "sangfor": {
+      "service": "sangfor",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012842+00:00"
+    },
+    "meituan": {
+      "service": "meituan",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012848+00:00"
+    },
+    "skhynix": {
+      "service": "skhynix",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012851+00:00"
+    },
+    "shopify": {
+      "service": "shopify",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012855+00:00"
+    },
+    "jdcloud": {
+      "service": "jdcloud",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012856+00:00"
+    },
+    "spotify": {
+      "service": "spotify",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012858+00:00"
+    },
+    "tsmc": {
+      "service": "tsmc",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012860+00:00"
+    },
+    "tidal": {
+      "service": "tidal",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012862+00:00"
+    },
+    "youdao": {
+      "service": "youdao",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012864+00:00"
+    },
+    "zhihu": {
+      "service": "zhihu",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:54:06.012865+00:00"
+    },
+    "adobe-stock": {
+      "service": "adobe-stock",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371488+00:00"
+    },
+    "37games": {
+      "service": "37games",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371499+00:00"
+    },
+    "anker": {
+      "service": "anker",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371503+00:00"
+    },
+    "amap": {
+      "service": "amap",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371506+00:00"
+    },
+    "anthropic-claude": {
+      "service": "anthropic-claude",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371509+00:00"
+    },
+    "anthropic": {
+      "service": "anthropic",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371512+00:00"
+    },
+    "azure": {
+      "service": "azure",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371514+00:00"
+    },
+    "baidutieba": {
+      "service": "baidutieba",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371517+00:00"
+    },
+    "applefirmware": {
+      "service": "applefirmware",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371519+00:00"
+    },
+    "bluesky": {
+      "service": "bluesky",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371521+00:00"
+    },
+    "ccb": {
+      "service": "ccb",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371524+00:00"
+    },
+    "coinbase": {
+      "service": "coinbase",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371526+00:00"
+    },
+    "cmb": {
+      "service": "cmb",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371528+00:00"
+    },
+    "dahua": {
+      "service": "dahua",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371531+00:00"
+    },
+    "databricks": {
+      "service": "databricks",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371533+00:00"
+    },
+    "ctrip": {
+      "service": "ctrip",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371536+00:00"
+    },
+    "findmy": {
+      "service": "findmy",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371538+00:00"
+    },
+    "fliggy": {
+      "service": "fliggy",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371540+00:00"
+    },
+    "google-contacts": {
+      "service": "google-contacts",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371542+00:00"
+    },
+    "dropbox": {
+      "service": "dropbox",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371544+00:00"
+    },
+    "hitachi": {
+      "service": "hitachi",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371547+00:00"
+    },
+    "googlefcm": {
+      "service": "googlefcm",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371549+00:00"
+    },
+    "iflytek": {
+      "service": "iflytek",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371551+00:00"
+    },
+    "siemens": {
+      "service": "siemens",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371554+00:00"
+    },
+    "huya": {
+      "service": "huya",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371556+00:00"
+    },
+    "mediatek": {
+      "service": "mediatek",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371558+00:00"
+    },
+    "mercadolibre": {
+      "service": "mercadolibre",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371560+00:00"
+    },
+    "mongodb": {
+      "service": "mongodb",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371562+00:00"
+    },
+    "ms365-loop": {
+      "service": "ms365-loop",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371565+00:00"
+    },
+    "ms365-powerpoint": {
+      "service": "ms365-powerpoint",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371567+00:00"
+    },
+    "jingdong": {
+      "service": "jingdong",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371569+00:00"
+    },
+    "outlook": {
+      "service": "outlook",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371571+00:00"
+    },
+    "notion": {
+      "service": "notion",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371574+00:00"
+    },
+    "pingan": {
+      "service": "pingan",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371576+00:00"
+    },
+    "samsung": {
+      "service": "samsung",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371579+00:00"
+    },
+    "schneider": {
+      "service": "schneider",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371581+00:00"
+    },
+    "sharepoint": {
+      "service": "sharepoint",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371583+00:00"
+    },
+    "playstation": {
+      "service": "playstation",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371585+00:00"
+    },
+    "siri": {
+      "service": "siri",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371588+00:00"
+    },
+    "sony": {
+      "service": "sony",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371590+00:00"
+    },
+    "synopsys": {
+      "service": "synopsys",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371592+00:00"
+    },
+    "temu": {
+      "service": "temu",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371594+00:00"
+    },
+    "instagram": {
+      "service": "instagram",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371596+00:00"
+    },
+    "threads": {
+      "service": "threads",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371599+00:00"
+    },
+    "transsion": {
+      "service": "transsion",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371602+00:00"
+    },
+    "twilio": {
+      "service": "twilio",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371604+00:00"
+    },
+    "tongcheng": {
+      "service": "tongcheng",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371606+00:00"
+    },
+    "twitter": {
+      "service": "twitter",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371608+00:00"
+    },
+    "walmart": {
+      "service": "walmart",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371610+00:00"
+    },
+    "xgimi": {
+      "service": "xgimi",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371612+00:00"
+    },
+    "wetv": {
+      "service": "wetv",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371614+00:00"
+    },
+    "xianyu": {
+      "service": "xianyu",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371616+00:00"
+    },
+    "xiaohongshu": {
+      "service": "xiaohongshu",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371618+00:00"
+    },
+    "youtube": {
+      "service": "youtube",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371621+00:00"
+    },
+    "zte": {
+      "service": "zte",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371623+00:00"
+    },
+    "ximalaya": {
+      "service": "ximalaya",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:49:32.371625+00:00"
+    },
+    "amd": {
+      "service": "amd",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211395+00:00"
+    },
+    "appledev": {
+      "service": "appledev",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211405+00:00"
+    },
+    "alipay": {
+      "service": "alipay",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211410+00:00"
+    },
+    "applemusic": {
+      "service": "applemusic",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211413+00:00"
+    },
+    "birentech": {
+      "service": "birentech",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211416+00:00"
+    },
+    "applemail": {
+      "service": "applemail",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211419+00:00"
+    },
+    "cadence": {
+      "service": "cadence",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211421+00:00"
+    },
+    "ctyun": {
+      "service": "ctyun",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211424+00:00"
+    },
+    "dreame": {
+      "service": "dreame",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211426+00:00"
+    },
+    "booking": {
+      "service": "booking",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211429+00:00"
+    },
+    "ebay": {
+      "service": "ebay",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211431+00:00"
+    },
+    "facebook": {
+      "service": "facebook",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211434+00:00"
+    },
+    "google-maps": {
+      "service": "google-maps",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211437+00:00"
+    },
+    "garena": {
+      "service": "garena",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211439+00:00"
+    },
+    "googleearth": {
+      "service": "googleearth",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211441+00:00"
+    },
+    "hellobike": {
+      "service": "hellobike",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211444+00:00"
+    },
+    "hbo": {
+      "service": "hbo",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211446+00:00"
+    },
+    "intel": {
+      "service": "intel",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211448+00:00"
+    },
+    "himalaya": {
+      "service": "himalaya",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211450+00:00"
+    },
+    "manbang": {
+      "service": "manbang",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211453+00:00"
+    },
+    "mgtv": {
+      "service": "mgtv",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211455+00:00"
+    },
+    "mi-cloud": {
+      "service": "mi-cloud",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211457+00:00"
+    },
+    "ms365-excel": {
+      "service": "ms365-excel",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211460+00:00"
+    },
+    "iqiyi": {
+      "service": "iqiyi",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211462+00:00"
+    },
+    "netflix": {
+      "service": "netflix",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211464+00:00"
+    },
+    "onedrive": {
+      "service": "onedrive",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211467+00:00"
+    },
+    "okx": {
+      "service": "okx",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211469+00:00"
+    },
+    "oracle": {
+      "service": "oracle",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211472+00:00"
+    },
+    "signal": {
+      "service": "signal",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211474+00:00"
+    },
+    "qqmusic": {
+      "service": "qqmusic",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211476+00:00"
+    },
+    "slack": {
+      "service": "slack",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211479+00:00"
+    },
+    "snapchat": {
+      "service": "snapchat",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211481+00:00"
+    },
+    "steam": {
+      "service": "steam",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211483+00:00"
+    },
+    "wegame": {
+      "service": "wegame",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211486+00:00"
+    },
+    "zhipu": {
+      "service": "zhipu",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211488+00:00"
+    },
+    "tencentmeeting": {
+      "service": "tencentmeeting",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:48:45.211490+00:00"
+    },
+    "alibabacloud": {
+      "service": "alibabacloud",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435577+00:00"
+    },
+    "amazonmusic": {
+      "service": "amazonmusic",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435588+00:00"
+    },
+    "adobe-fonts": {
+      "service": "adobe-fonts",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435593+00:00"
+    },
+    "arista": {
+      "service": "arista",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435597+00:00"
+    },
+    "asml": {
+      "service": "asml",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435600+00:00"
+    },
+    "autohome": {
+      "service": "autohome",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435604+00:00"
+    },
+    "appleid": {
+      "service": "appleid",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435607+00:00"
+    },
+    "aws": {
+      "service": "aws",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435610+00:00"
+    },
+    "baidunetdisk": {
+      "service": "baidunetdisk",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435613+00:00"
+    },
+    "block": {
+      "service": "block",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435617+00:00"
+    },
+    "battlenet": {
+      "service": "battlenet",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435620+00:00"
+    },
+    "byd": {
+      "service": "byd",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435623+00:00"
+    },
+    "boc": {
+      "service": "boc",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435626+00:00"
+    },
+    "capcut": {
+      "service": "capcut",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435629+00:00"
+    },
+    "chatgpt": {
+      "service": "chatgpt",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435632+00:00"
+    },
+    "canva": {
+      "service": "canva",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435635+00:00"
+    },
+    "cisco": {
+      "service": "cisco",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435638+00:00"
+    },
+    "copilot": {
+      "service": "copilot",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435641+00:00"
+    },
+    "dassault": {
+      "service": "dassault",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435644+00:00"
+    },
+    "chinamobile": {
+      "service": "chinamobile",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435647+00:00"
+    },
+    "digitalocean": {
+      "service": "digitalocean",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435650+00:00"
+    },
+    "feishu": {
+      "service": "feishu",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435653+00:00"
+    },
+    "google-groups": {
+      "service": "google-groups",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435657+00:00"
+    },
+    "google-play": {
+      "service": "google-play",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435660+00:00"
+    },
+    "haier": {
+      "service": "haier",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435664+00:00"
+    },
+    "heytap": {
+      "service": "heytap",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435666+00:00"
+    },
+    "hikvision": {
+      "service": "hikvision",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435669+00:00"
+    },
+    "honorofkings_cn": {
+      "service": "honorofkings_cn",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435672+00:00"
+    },
+    "ibm": {
+      "service": "ibm",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435675+00:00"
+    },
+    "docker": {
+      "service": "docker",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435678+00:00"
+    },
+    "kuaishou-open": {
+      "service": "kuaishou-open",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435685+00:00"
+    },
+    "ms365-onenote": {
+      "service": "ms365-onenote",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435689+00:00"
+    },
+    "ms365-planner": {
+      "service": "ms365-planner",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435694+00:00"
+    },
+    "netapp": {
+      "service": "netapp",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435698+00:00"
+    },
+    "office": {
+      "service": "office",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435702+00:00"
+    },
+    "panasonic": {
+      "service": "panasonic",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435705+00:00"
+    },
+    "perplexity": {
+      "service": "perplexity",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435707+00:00"
+    },
+    "icloudprivaterelay": {
+      "service": "icloudprivaterelay",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435710+00:00"
+    },
+    "pinduoduo": {
+      "service": "pinduoduo",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435713+00:00"
+    },
+    "pptv": {
+      "service": "pptv",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435716+00:00"
+    },
+    "qihoo360": {
+      "service": "qihoo360",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435718+00:00"
+    },
+    "qqdoc": {
+      "service": "qqdoc",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435721+00:00"
+    },
+    "psbc": {
+      "service": "psbc",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435724+00:00"
+    },
+    "quanmin-k-ge": {
+      "service": "quanmin-k-ge",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435728+00:00"
+    },
+    "qunar": {
+      "service": "qunar",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435730+00:00"
+    },
+    "salesforce": {
+      "service": "salesforce",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435733+00:00"
+    },
+    "sap": {
+      "service": "sap",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435735+00:00"
+    },
+    "sensetime": {
+      "service": "sensetime",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435737+00:00"
+    },
+    "shimo": {
+      "service": "shimo",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435740+00:00"
+    },
+    "supermicro": {
+      "service": "supermicro",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435743+00:00"
+    },
+    "testflight": {
+      "service": "testflight",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435746+00:00"
+    },
+    "toutiao": {
+      "service": "toutiao",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435749+00:00"
+    },
+    "qqmail": {
+      "service": "qqmail",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435751+00:00"
+    },
+    "unionpay": {
+      "service": "unionpay",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435754+00:00"
+    },
+    "vercel": {
+      "service": "vercel",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435757+00:00"
+    },
+    "wps": {
+      "service": "wps",
+      "reason": "no_high_confidence_official_homepage_candidate",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435759+00:00"
+    },
+    "vivo": {
+      "service": "vivo",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435761+00:00"
+    },
+    "xbox": {
+      "service": "xbox",
+      "reason": "incomplete",
+      "retry": 1,
+      "last_fail": "2026-09-28T15:51:10.435764+00:00"
+    }
+  }
+}
