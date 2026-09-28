@@ -171,6 +171,21 @@ providers:
       google-earth:
         display_name: Google Earth
         status: existing
+      googleworkspace:
+        display_name: googleworkspace
+        status: planned
+      googlemeet:
+        display_name: googlemeet
+        status: planned
+      googlechat:
+        display_name: googlechat
+        status: planned
+      googlecalendar:
+        display_name: googlecalendar
+        status: planned
+      googletranslate:
+        display_name: googletranslate
+        status: planned
   microsoft:
     display_name: Microsoft
     aggregate: microsoft
@@ -241,6 +256,21 @@ providers:
       outlook:
         display_name: Microsoft Outlook
         status: existing
+      microsoft365:
+        display_name: microsoft365
+        status: planned
+      dynamics:
+        display_name: dynamics
+        status: planned
+      powerautomate:
+        display_name: powerautomate
+        status: planned
+      powerapps:
+        display_name: powerapps
+        status: planned
+      visualstudio:
+        display_name: visualstudio
+        status: planned
   amazon:
     display_name: Amazon
     aggregate: amazon
@@ -318,6 +348,24 @@ providers:
       qqdoc:
         display_name: 腾讯文档
         status: existing
+      qqzone:
+        display_name: qqzone
+        status: planned
+      tenpay:
+        display_name: tenpay
+        status: planned
+      tencentads:
+        display_name: tencentads
+        status: planned
+      tencentmap:
+        display_name: tencentmap
+        status: planned
+      wetype:
+        display_name: wetype
+        status: planned
+      sogou:
+        display_name: sogou
+        status: planned
   alibaba:
     display_name: Alibaba
     aggregate: alibaba
@@ -367,6 +415,18 @@ providers:
       youku:
         display_name: Youku
         status: existing
+      quark:
+        display_name: quark
+        status: planned
+      uc:
+        display_name: uc
+        status: planned
+      hema:
+        display_name: hema
+        status: planned
+      taobaolive:
+        display_name: taobaolive
+        status: planned
   bytedance:
     display_name: ByteDance
     aggregate: bytedance
@@ -400,6 +460,18 @@ providers:
         status: existing
       doubao:
         display_name: Doubao
+        status: planned
+      pipixia:
+        display_name: pipixia
+        status: planned
+      fanqie:
+        display_name: fanqie
+        status: planned
+      dongchedi:
+        display_name: dongchedi
+        status: planned
+      oceanengine:
+        display_name: oceanengine
         status: planned
   baidu:
     display_name: Baidu
