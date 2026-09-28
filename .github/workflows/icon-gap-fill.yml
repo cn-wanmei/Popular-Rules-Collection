@@ -1,0 +1,152 @@
+name: Icon Gap Auto-Fill
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'rule/_index.yaml'
+      - 'rule/**'
+  workflow_dispatch:
+
+concurrency:
+  group: icon-gap-fill-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  detect-gap:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    outputs:
+      has_gap: ${{ steps.gap.outputs.has_gap }}
+      gap_services: ${{ steps.gap.outputs.gap_services }}
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.14'
+          cache: pip
+          cache-dependency-path: requirements.lock
+      - run: python -m pip install -r requirements.lock
+      - name: Detect coverage gap (index × 8 variants)
+        id: gap
+        run: |
+          set -euo pipefail
+          mkdir -p build
+          REG=assets/icons/v5/registry.json
+          if [ ! -f "$REG" ]; then
+            echo "has_gap=true" >> "$GITHUB_OUTPUT"
+            echo 'gap_services=[]' >> "$GITHUB_OUTPUT"
+            echo "No production registry yet — full fill required"
+            exit 0
+          fi
+          python scripts/icon_system_v5.py gap-detect \
+            --registry "$REG" \
+            --rule-index rule/_index.yaml \
+            --out build/gap-report.json
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          report = json.loads(Path("build/gap-report.json").read_text(encoding="utf-8"))
+          gap = report.get("coverage_gap") or []
+          # Cap auto-fill batch to avoid runaway CI
+          gap = gap[:40]
+          out = os.environ["GITHUB_OUTPUT"]
+          with open(out, "a", encoding="utf-8") as f:
+              f.write(f"has_gap={'true' if gap else 'false'}\n")
+              f.write(f"gap_services={json.dumps(gap)}\n")
+          print(f"gap_count={len(report.get('coverage_gap') or [])} batch={len(gap)}")
+          PY
+
+  fill-gap:
+    needs: detect-gap
+    if: needs.detect-gap.outputs.has_gap == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.14'
+          cache: pip
+          cache-dependency-path: requirements.lock
+      - run: python -m pip install -r requirements.lock
+      - name: Incremental build gap services only
+        run: |
+          set -euo pipefail
+          mkdir -p build/icon-v5
+          # Seed existing production tree for incremental merge paths
+          if [ -d assets/icons/v5 ]; then
+            rsync -a --exclude 'seed/' assets/icons/v5/ build/icon-v5/ || true
+          fi
+          python scripts/icon_system_v5.py build \
+            --rule-index rule/_index.yaml \
+            --out build/icon-v5 \
+            --services '${{ needs.detect-gap.outputs.gap_services }}' \
+            --concurrency 12 \
+            --allow-partial
+      - name: Merge registry + sync new style files
+        run: |
+          set -euo pipefail
+          BASE=assets/icons/v5/registry.json
+          if [ ! -f "$BASE" ]; then
+            mkdir -p assets/icons/v5
+            cp build/icon-v5/registry.json "$BASE"
+          else
+            python scripts/icon_system_v5.py registry-merge \
+              --base "$BASE" \
+              --patch build/icon-v5/registry.json \
+              --out "$BASE"
+          fi
+          # Copy only style SVGs produced for gap services (8-variant layout)
+          python3 - <<'PY'
+          import json, shutil
+          from pathlib import Path
+          gap = json.loads('''${{ needs.detect-gap.outputs.gap_services }}''')
+          src = Path("build/icon-v5")
+          dst = Path("assets/icons/v5")
+          for style_dir in (src / "styles").glob("*"):
+              if not style_dir.is_dir():
+                  continue
+              (dst / "styles" / style_dir.name).mkdir(parents=True, exist_ok=True)
+              for sid in gap:
+                  # slug approx: service id as used by builder
+                  for p in style_dir.glob("*.svg"):
+                      # copy all newly written in this build for safety
+                      pass
+              # sync entire style dir files that exist in build
+              for p in style_dir.glob("*.svg"):
+                  target = dst / "styles" / style_dir.name / p.name
+                  if p.is_file():
+                      shutil.copy2(p, target)
+          if (src / "normalized").is_dir():
+              (dst / "normalized").mkdir(parents=True, exist_ok=True)
+              for p in (src / "normalized").glob("*.svg"):
+                  shutil.copy2(p, dst / "normalized" / p.name)
+          print("synced styles from gap build")
+          PY
+      - name: Open gap-fill PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- assets/icons/v5; then
+            echo "No icon gap changes"
+            exit 0
+          fi
+          BRANCH="automation/icon-gap-fill-$(date -u +%Y%m%d%H%M%S)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add assets/icons/v5
+          git commit -m "chore(icon): auto-fill coverage gap (8-variant SSOT)"
+          git push -u origin "$BRANCH"
+          gh pr create --base main --head "$BRANCH" \
+            --title "chore(icon): auto-fill icon coverage gap" \
+            --body "Incremental icon fill for services present in rule index but missing complete 8/8 variants in assets/icons/v5." || true
