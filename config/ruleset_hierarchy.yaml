@@ -2318,6 +2318,10 @@ providers:
     services:
       boss:
         display_name: BOSS直聘
+  '1688':
+    display_name: '1688'
+    aggregate: '1688'
+    services: {}
 categories:
   developer:
     display_name: Developer Ecosystem
