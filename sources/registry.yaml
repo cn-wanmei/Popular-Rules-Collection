@@ -1,5 +1,5 @@
 version: 3
-last_updated: '2026-09-27'
+last_updated: '2026-09-28'
 sources:
 - id: popular-rules-source
   name: Popular-Rules-Source (official domain generation)
@@ -993,7 +993,7 @@ sources:
     name: woyun
     service: woyun
     local: PRS_woyun.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/sfexpress/domains.txt
     name: sfexpress
     service: sfexpress
@@ -1013,7 +1013,7 @@ sources:
     name: tongcheng
     service: tongcheng
     local: PRS_tongcheng.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/kingdee/domains.txt
     name: kingdee
     service: kingdee
@@ -1038,17 +1038,17 @@ sources:
     name: wangsu
     service: wangsu
     local: PRS_wangsu.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/perfectworld/domains.txt
     name: perfectworld
     service: perfectworld
     local: PRS_perfectworld.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/tonghuashun/domains.txt
     name: tonghuashun
     service: tonghuashun
     local: PRS_tonghuashun.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/huolala/domains.txt
     name: huolala
     service: huolala
@@ -1063,12 +1063,12 @@ sources:
     name: zhaopin
     service: zhaopin
     local: PRS_zhaopin.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/wuba/domains.txt
     name: wuba
     service: wuba
     local: PRS_wuba.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/anjuke/domains.txt
     name: anjuke
     service: anjuke
@@ -1088,12 +1088,12 @@ sources:
     name: t3go
     service: t3go
     local: PRS_t3go.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/sensetime/domains.txt
     name: sensetime
     service: sensetime
     local: PRS_sensetime.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/zhipu/domains.txt
     name: zhipu
     service: zhipu
@@ -1118,7 +1118,7 @@ sources:
     name: yi
     service: yi
     local: PRS_yi.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/cambricon/domains.txt
     name: cambricon
     service: cambricon
@@ -1143,7 +1143,7 @@ sources:
     name: tuya
     service: tuya
     local: PRS_tuya.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/anker/domains.txt
     name: anker
     service: anker
@@ -1178,7 +1178,7 @@ sources:
     name: servicenow
     service: servicenow
     local: PRS_servicenow.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/databricks/domains.txt
     name: databricks
     service: databricks
@@ -1198,7 +1198,7 @@ sources:
     name: workday
     service: workday
     local: PRS_workday.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/palantir/domains.txt
     name: palantir
     service: palantir
@@ -1213,7 +1213,7 @@ sources:
     name: starlink
     service: starlink
     local: PRS_starlink.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/intuit/domains.txt
     name: intuit
     service: intuit
@@ -1223,12 +1223,12 @@ sources:
     name: mediatek
     service: mediatek
     local: PRS_mediatek.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/nintendo/domains.txt
     name: nintendo
     service: nintendo
     local: PRS_nintendo.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/lg/domains.txt
     name: lg
     service: lg
@@ -1238,12 +1238,12 @@ sources:
     name: panasonic
     service: panasonic
     local: PRS_panasonic.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/rakuten/domains.txt
     name: rakuten
     service: rakuten
     local: PRS_rakuten.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/linecorp/domains.txt
     name: linecorp
     service: linecorp
@@ -1258,7 +1258,7 @@ sources:
     name: shopee
     service: shopee
     local: PRS_shopee.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/coupang/domains.txt
     name: coupang
     service: coupang
@@ -1278,7 +1278,7 @@ sources:
     name: nokia
     service: nokia
     local: PRS_nokia.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/crowdstrike/domains.txt
     name: crowdstrike
     service: crowdstrike
@@ -1313,7 +1313,7 @@ sources:
     name: unity
     service: unity
     local: PRS_unity.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/coinbase/domains.txt
     name: coinbase
     service: coinbase
@@ -1343,27 +1343,27 @@ sources:
     name: micron
     service: micron
     local: PRS_micron.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/skhynix/domains.txt
     name: skhynix
     service: skhynix
     local: PRS_skhynix.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/ti/domains.txt
     name: ti
     service: ti
     local: PRS_ti.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/siemens/domains.txt
     name: siemens
     service: siemens
     local: PRS_siemens.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/schneider/domains.txt
     name: schneider
     service: schneider
     local: PRS_schneider.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/dell/domains.txt
     name: dell
     service: dell
@@ -1373,12 +1373,12 @@ sources:
     name: paloalto
     service: paloalto
     local: PRS_paloalto.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/synopsys/domains.txt
     name: synopsys
     service: synopsys
     local: PRS_synopsys.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/cadence/domains.txt
     name: cadence
     service: cadence
@@ -1408,12 +1408,12 @@ sources:
     name: nec
     service: nec
     local: PRS_nec.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/mercadolibre/domains.txt
     name: mercadolibre
     service: mercadolibre
     local: PRS_mercadolibre.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/hpe/domains.txt
     name: hpe
     service: hpe
@@ -1423,7 +1423,7 @@ sources:
     name: netapp
     service: netapp
     local: PRS_netapp.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/equinix/domains.txt
     name: equinix
     service: equinix
@@ -1443,7 +1443,7 @@ sources:
     name: take2
     service: take2
     local: PRS_take2.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/globalfoundries/domains.txt
     name: globalfoundries
     service: globalfoundries
@@ -1453,12 +1453,12 @@ sources:
     name: umc
     service: umc
     local: PRS_umc.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/pingan/domains.txt
     name: pingan
     service: pingan
     local: PRS_pingan.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/lufax/domains.txt
     name: lufax
     service: lufax
@@ -1473,12 +1473,12 @@ sources:
     name: transsion
     service: transsion
     local: PRS_transsion.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/roborock/domains.txt
     name: roborock
     service: roborock
     local: PRS_roborock.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/dreame/domains.txt
     name: dreame
     service: dreame
@@ -1488,7 +1488,7 @@ sources:
     name: xgimi
     service: xgimi
     local: PRS_xgimi.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/internlm/domains.txt
     name: internlm
     service: internlm
@@ -1513,12 +1513,12 @@ sources:
     name: qqdoc
     service: qqdoc
     local: PRS_qqdoc.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/mihome/domains.txt
     name: mihome
     service: mihome
     local: PRS_mihome.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/getapps/domains.txt
     name: getapps
     service: getapps
