@@ -127,7 +127,7 @@ jobs:
           fi
       - name: Restore Actions icon build cache
         if: ${{ inputs.refresh != true }}
-        uses: actions/cache@1bd1e32a3bdc45362d1e726936510391af94cc21
+        uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684
         with:
           path: |
             build/icon-v5
