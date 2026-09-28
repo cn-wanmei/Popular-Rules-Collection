@@ -168,7 +168,7 @@
         "is_vector": true,
         "score": 110,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:44:10.471381+00:00",
+        "fetched_at": "2026-09-28T18:59:49.556221+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "dde0756765de8218ec7fb2998f6420a632bbf5531794f66e6a9bc061119e3a97"
       },
@@ -240,7 +240,7 @@
         "is_vector": false,
         "score": 102,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:44:25.066428+00:00",
+        "fetched_at": "2026-09-28T19:00:31.598429+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "0e97e83c5ddd0c4533fdab6c3ea3b8d77d3a84ea9caf9021e0d26c11318ea4cb"
       },
@@ -312,7 +312,7 @@
         "is_vector": true,
         "score": 200,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:44:25.067782+00:00",
+        "fetched_at": "2026-09-28T19:00:33.081737+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "0dcd0e5cccbe57ec27d8eda7888e5f7984e18dbe8850dd4bd20706be546f2ceb"
       },
@@ -408,7 +408,7 @@
         "is_vector": true,
         "score": 200,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:44:52.338007+00:00",
+        "fetched_at": "2026-09-28T19:00:59.331246+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "fb731fcbe3e222dec46962e27d04515f861efb603b728ed5f2c69d6efd88a441"
       },
@@ -504,7 +504,7 @@
         "is_vector": true,
         "score": 200,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:45:27.128791+00:00",
+        "fetched_at": "2026-09-28T19:02:19.824635+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "2e1304942b5f251284c1618582ff36f508720d60213939932681d79a43a47909"
       },
@@ -624,7 +624,7 @@
         "is_vector": true,
         "score": 30,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:46:35.788648+00:00",
+        "fetched_at": "2026-09-28T19:09:32.065937+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "e558ec9c3f8c50944d2ce518e3c278123bf4d1c56dc908db0fbe0bd302438e2a"
       },
@@ -768,7 +768,7 @@
         "is_vector": true,
         "score": 200,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:46:35.792281+00:00",
+        "fetched_at": "2026-09-28T19:08:01.835059+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "779ce68511b8f0807e45f6e27b9833f2cb6f38fb541772f6847630980ad690b9"
       },
@@ -2370,69 +2370,65 @@
       "icon_identity": "service:1688",
       "source": {
         "origin": null,
-        "digest": "6999b67ea2cef23a4d5e664db74d755c6bdd30b35899655f08b71ad77c736eba",
+        "digest": "0578eba88ed90096abc3995992c4d6503a6a4fea2dd7ca01510d00fa34621a77",
         "url": null,
-        "quality": "low_res",
-        "source_px": 64,
-        "source_kind": "png",
-        "source_type": "ico",
-        "official": true,
+        "quality": "medium",
+        "source_px": 512,
+        "source_kind": "svg",
+        "source_type": "glyph",
+        "official": false,
         "fallback": true,
         "seed": false,
         "frame_count": 1,
-        "selected_frame": "64x64",
-        "is_vector": false,
-        "score": -20,
+        "selected_frame": "512x512",
+        "is_vector": true,
+        "score": 30,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:44:51.274199+00:00",
-        "preferred_styles_if_low_res": [
-          "minimalist",
-          "duotone_line",
-          "source_original"
-        ],
-        "source_hash": "6999b67ea2cef23a4d5e664db74d755c6bdd30b35899655f08b71ad77c736eba"
+        "fetched_at": "2026-09-28T18:56:57.983184+00:00",
+        "preferred_styles_if_low_res": null,
+        "source_hash": "0578eba88ed90096abc3995992c4d6503a6a4fea2dd7ca01510d00fa34621a77"
       },
-      "source_hash": "6999b67ea2cef23a4d5e664db74d755c6bdd30b35899655f08b71ad77c736eba",
+      "source_hash": "0578eba88ed90096abc3995992c4d6503a6a4fea2dd7ca01510d00fa34621a77",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/1688.svg",
-        "digest": "0a93d1ddf38e32cc3e9ef0f44afafa460c870a27de2c1f22e91d0b319c9c8855"
+        "digest": "495e255a76b866bda3a8f8feb1945e7afae5adf28dab2e153f85b8f666acad50"
       },
       "variants": {
         "glassmorphism": {
           "path": "styles/glassmorphism/1688.svg",
-          "digest": "45f211cb268489e7b40299d4db585a7b012f44dd80b21ce057b74533e684d23e"
+          "digest": "8d4039f7f73165150038165e4e8631291d1b447f015b2ba165d9102e6ff36408"
         },
         "soft_3d": {
           "path": "styles/soft-3d/1688.svg",
-          "digest": "8e9c457e88f7b80b386ab63b0ca10491f65ca7d955676dcd854781cbe91e0d08"
+          "digest": "f99e8af8f153aae3ca9ec5a74372d0c3301c4a7a0e636b46fda92275ea291452"
         },
         "neo_skeuomorphism": {
           "path": "styles/neo-skeuomorphism/1688.svg",
-          "digest": "9958ff5d4db437e911420ccb3de98c3bbd83a078272e5a440cc726a388d0aef8"
+          "digest": "b92fa3a6792707424fafd07421b12a217b52ed75e6632a9a9127c4ccf679baae"
         },
         "minimalist": {
           "path": "styles/minimalist/1688.svg",
-          "digest": "91d6cd547f413eb5d2f775482efd33ba963a58c59d334faaaf82e185f229da90"
+          "digest": "a6710546f90a76ee8ff72489d76e10c283145e549b9ba6190b99aab88fa071da"
         },
         "duotone_line": {
           "path": "styles/duotone-line/1688.svg",
-          "digest": "752ba5b26f6be67d76f1b68e1ae580b00f4bab48beaae4799547746fb477fbb4"
+          "digest": "511acfe9e2de373784d867aa9d73a7662915c256205cbecc57b7d4aa498ec01a"
         },
         "mbe": {
           "path": "styles/mbe/1688.svg",
-          "digest": "14ccd9743f6402684966ceaf44ffc7d03281fa9eec3b77b4f34811a80b842b58"
+          "digest": "b1f745b3b6295745da80367ca2493e5260514f66afe0378d5c823d168d1f6af3"
         },
         "y2k": {
           "path": "styles/y2k/1688.svg",
-          "digest": "0387ce6831ed9c6657996129d82f70fc0f6c5ad701c4d6bda8edbe6dbe59db03"
+          "digest": "a922048a30445a12dbb4188edb8e9f16474cbc93e66c8679a22612c9a05c5453"
         }
       },
       "lineage": {
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "6999b67ea2cef23a4d5e664db74d755c6bdd30b35899655f08b71ad77c736eba",
+        "source_digest": "0578eba88ed90096abc3995992c4d6503a6a4fea2dd7ca01510d00fa34621a77",
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -2484,7 +2480,7 @@
         "is_vector": false,
         "score": 75,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:45:23.333063+00:00",
+        "fetched_at": "2026-09-28T19:04:21.794018+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "302f10e3139a6af3f3b1fb1c6e7257e049e2654108a08b5e2c4738e9656978ae"
       },
@@ -4168,7 +4164,7 @@
         "is_vector": true,
         "score": 30,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:42:51.410080+00:00",
+        "fetched_at": "2026-09-28T18:58:22.753298+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "ea39825d7522725ef15ab775126912b40edbdbd00c522d79cfabf5bcacefaaee"
       },
@@ -4264,7 +4260,7 @@
         "is_vector": true,
         "score": 110,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:42:53.175520+00:00",
+        "fetched_at": "2026-09-28T19:00:33.077905+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "f337d7b7e60e15b9c5a80954822eb6c6fad5fb2612854e2bfbce7455d8bea6e6"
       },
@@ -4336,7 +4332,7 @@
         "is_vector": false,
         "score": 102,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:43:00.706197+00:00",
+        "fetched_at": "2026-09-28T19:01:45.411112+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "c0924b1ab28c6bf0d80a0ca6c8d4c20532b8cf27da8ecf28d5e57109fe0b1bfb"
       },
@@ -4528,7 +4524,7 @@
         "is_vector": false,
         "score": 90,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:43:13.196375+00:00",
+        "fetched_at": "2026-09-28T19:01:57.623751+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "cccf93bd64c30b6c8670cb871460213029d11161555d63eef9ce791c825f2544"
       },
@@ -5996,7 +5992,7 @@
         "is_vector": false,
         "score": -20,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:42:33.353152+00:00",
+        "fetched_at": "2026-09-28T18:59:16.289278+00:00",
         "preferred_styles_if_low_res": [
           "minimalist",
           "duotone_line",
@@ -6096,7 +6092,7 @@
         "is_vector": false,
         "score": 90,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:42:45.421360+00:00",
+        "fetched_at": "2026-09-28T18:59:26.871568+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "c91922918edeef31af5e969413c0eecf583707d14588de3fecc1d649b4303bf7"
       },
@@ -6216,7 +6212,7 @@
         "is_vector": false,
         "score": 102,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:43:07.149913+00:00",
+        "fetched_at": "2026-09-28T18:59:49.065185+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "5632d96aa4610d69778c5090d99e5c7fdc8964a95bde7bdcb3165aa821dd5d3d"
       },
@@ -6288,7 +6284,7 @@
         "is_vector": false,
         "score": 102,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:43:24.640139+00:00",
+        "fetched_at": "2026-09-28T19:02:19.822580+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "eb14a7ed3cead85c71ac878fcff399abd445d8d998ab76953f23fdecc02e90f5"
       },
@@ -6360,7 +6356,7 @@
         "is_vector": true,
         "score": 200,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:43:24.641707+00:00",
+        "fetched_at": "2026-09-28T19:04:21.799170+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "003f0bb1497e9d3d3beb3323b0ce7caca44353162de467393a2d8da2759d0b0f"
       },
@@ -8436,7 +8432,7 @@
         "is_vector": false,
         "score": 85,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:42:13.739310+00:00",
+        "fetched_at": "2026-09-28T18:59:05.574701+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "db1e0a9370aebf3b090495e6243a5479814e6a263f075da9bd09a30d6dc6a76f"
       },
@@ -8556,7 +8552,7 @@
         "is_vector": false,
         "score": -20,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:42:33.088524+00:00",
+        "fetched_at": "2026-09-28T19:00:14.125014+00:00",
         "preferred_styles_if_low_res": [
           "minimalist",
           "duotone_line",
@@ -8704,7 +8700,7 @@
         "is_vector": false,
         "score": 102,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:42:57.223073+00:00",
+        "fetched_at": "2026-09-28T19:03:44.716922+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "578d57776a91f8e07f48cf632be50e20d3d1d43a3f8546861f2e23740fec6b9a"
       },
@@ -10164,7 +10160,7 @@
         "is_vector": true,
         "score": 200,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:44:21.810401+00:00",
+        "fetched_at": "2026-09-28T18:56:23.986218+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "41e95c5e7d6517c6d217109df8ec1f27cdf89be5df3506758edba84bfe2bcc9d"
       },
@@ -10404,7 +10400,7 @@
         "is_vector": false,
         "score": 102,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:45:21.964109+00:00",
+        "fetched_at": "2026-09-28T19:00:17.106096+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "a1b026c2067bc4bd43aa50933fa3a40ed23676eb554e76e68078193d14016c5e"
       },
@@ -10476,7 +10472,7 @@
         "is_vector": true,
         "score": 30,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:47:52.613717+00:00",
+        "fetched_at": "2026-09-28T19:07:09.457274+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "60ddcc725b19c345f143a46bae1b129add685380aef58dc12e81b948d3d15b89"
       },
@@ -10548,7 +10544,7 @@
         "is_vector": true,
         "score": 30,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:48:35.603108+00:00",
+        "fetched_at": "2026-09-28T19:09:06.744476+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "da51c2fc5ea3e3b0119d512bb9db391d7a7a7d60fb8921b18f571596f9f0fde1"
       },
@@ -10644,7 +10640,7 @@
         "is_vector": true,
         "score": 30,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:48:37.646356+00:00",
+        "fetched_at": "2026-09-28T19:09:08.227114+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "83239cb5b7beb402a75219745dc61a6f3a17b97a4503df44cbb35f40e7d865a7"
       },
@@ -12396,7 +12392,7 @@
         "is_vector": false,
         "score": 102,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:42:28.484458+00:00",
+        "fetched_at": "2026-09-28T18:58:36.644149+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "a3b0572f1eac888ee1071a63f6cad84cd71434c4675ed13d97bf35284358679a"
       },
@@ -12588,7 +12584,7 @@
         "is_vector": true,
         "score": 30,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:42:51.472371+00:00",
+        "fetched_at": "2026-09-28T18:58:59.802389+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "df62f2ca3056a427feebdf4490613fab9a50c04c9c9bf408be1e4f8e12d73452"
       },
@@ -12708,7 +12704,7 @@
         "is_vector": true,
         "score": 200,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:42:51.479353+00:00",
+        "fetched_at": "2026-09-28T19:07:09.458385+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "af2034e912669cd926ffed818b4c82ee6667fad0ffeb6c84180e18dd0a5a7c3a"
       },
@@ -14124,7 +14120,7 @@
         "is_vector": true,
         "score": 200,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:42:20.539107+00:00",
+        "fetched_at": "2026-09-28T18:56:57.993809+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "2c35ec8d4a525dc58d4e4e83676cbe1efc2cb115cdf610383e3ef8440255fb34"
       },
@@ -14340,7 +14336,7 @@
         "is_vector": false,
         "score": 93,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:43:27.251482+00:00",
+        "fetched_at": "2026-09-28T18:57:59.512562+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "90a7ad3b4eaa579048ec5f035cc24c14da8ecb87562355dde324d5f1560287c5"
       },
@@ -14412,7 +14408,7 @@
         "is_vector": false,
         "score": -25,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:43:28.270617+00:00",
+        "fetched_at": "2026-09-28T19:01:58.723970+00:00",
         "preferred_styles_if_low_res": [
           "minimalist",
           "duotone_line",
@@ -14512,7 +14508,7 @@
         "is_vector": true,
         "score": 200,
         "http_status": 200,
-        "fetched_at": "2026-09-28T15:43:28.272194+00:00",
+        "fetched_at": "2026-09-28T19:02:46.649531+00:00",
         "preferred_styles_if_low_res": null,
         "source_hash": "2fceb59868fb238f55914493110a39415a2614e26c35d1d240889ad0eb03dbf9"
       },
@@ -16885,7 +16881,7 @@
     "mbe",
     "y2k"
   ],
-  "generated_at": "2026-09-28T15:57:43.233269+00:00",
+  "generated_at": "2026-09-28T19:09:32.355288+00:00",
   "coverage": {
     "service_count": 394,
     "complete_8_of_8": 0,
