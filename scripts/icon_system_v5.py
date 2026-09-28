@@ -1700,7 +1700,7 @@ def cmd_quality_audit(args: argparse.Namespace) -> int:
     entries = {str(e.get("service_id")): e for e in (reg.get("entries") or []) if e.get("service_id")}
     index_ids = set()
     if args.rule_index and Path(args.rule_index).is_file():
-        index_ids = {str(r.get("service_id")) for r in discover_services(Path(args.rule_index))}
+        index_ids = {str(r.get("service_id")) for r in discover_services_from_rule_index(Path(args.rule_index))}
     low: list[dict] = []
     incomplete: list[dict] = []
     for sid, e in sorted(entries.items()):
