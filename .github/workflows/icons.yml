@@ -75,7 +75,7 @@ jobs:
   network-acquisition:
     if: ${{ github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-24.04
-    timeout-minutes: 90
+    timeout-minutes: 45
     permissions:
       contents: read
     steps:
@@ -119,6 +119,8 @@ jobs:
           --out build/icon-v5
           --run-id '${{ steps.lineage.outputs.run_id }}'
           --snapshot-id '${{ steps.lineage.outputs.snapshot_id }}'
+          --concurrency 12
+          ${{ inputs.refresh != true && '--incremental' || '' }}
           ${{ steps.lineage.outputs.ir_digest != '' && format('--ir-digest {0}', steps.lineage.outputs.ir_digest) || '' }}
           ${{ inputs.allow_partial == true && '--allow-partial' || '--strict' }}
           ${{ inputs.refresh && '--refresh' || '' }}
