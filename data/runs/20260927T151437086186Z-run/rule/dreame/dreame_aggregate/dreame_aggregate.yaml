@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: dreame_aggregate
+display_name: 追觅
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 40c63461362ae0af3134a64d5f443edc3809876abad2baf1e34add8e40af83e5
+  type: DOMAIN_SUFFIX
+  value: dreametech.com
+- id: 4e5561101d4fb3b1204f294ab94152705e61dd4d7ed6d667b196e5eadabc83fe
+  type: DOMAIN_SUFFIX
+  value: www.dreametech.com
+provider: dreame

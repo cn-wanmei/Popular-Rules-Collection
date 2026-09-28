@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: block_aggregate
+display_name: Block
+generated_from:
+  run_id: 20260928T003720542271Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 1883b5966d218e9250398575d86fb6fc7a584868dba62c293709342c29c0a0f6
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: ae6177864378af4923db2de70939f63d8e02cec5571b147f820ccfc1cb9481ca
+  type: DOMAIN_SUFFIX
+  value: block.xyz
+- id: 30ba3f8ac56765a0ef7a4176acbca37befe847482d3281f975b91c43a8c505a5
+  type: DOMAIN_SUFFIX
+  value: www.block.xyz
+provider: block

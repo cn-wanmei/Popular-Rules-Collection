@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: stripe-dashboard
+display_name: Stripe Dashboard
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: adb64dfd70d8c8f06a06aae98aaa8c5bf512617e4e9af6d0a8e5337730fd0159
+  type: DOMAIN_SUFFIX
+  value: dashboard.stripe.com
+provider: stripe

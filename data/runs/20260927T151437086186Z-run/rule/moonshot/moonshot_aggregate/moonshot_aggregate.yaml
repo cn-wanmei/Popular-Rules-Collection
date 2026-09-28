@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: moonshot_aggregate
+display_name: 月之暗面
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 43dc71289cead18692523a50590444394602c41be380a87fb7695b9c59d6b323
+  type: DOMAIN_SUFFIX
+  value: moonshot.cn
+- id: 13e3af92beb76a2d149546984a199f5c21146e0832dbda33ab29f6c9c88dae09
+  type: DOMAIN_SUFFIX
+  value: www.moonshot.cn
+provider: moonshot

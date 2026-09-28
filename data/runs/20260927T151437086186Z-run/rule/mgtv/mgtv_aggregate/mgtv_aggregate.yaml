@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: mgtv_aggregate
+display_name: 芒果TV
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: eb497972527188b153c6b4fb1a266c5fbdae632c3b3c62942d00807215e7d1f2
+  type: DOMAIN_SUFFIX
+  value: mgtv.com
+- id: e4dc3528f5a22f55778a11d54eab9f6b41776f1e82a5879452871faffb028fee
+  type: DOMAIN_SUFFIX
+  value: www.mgtv.com
+provider: mgtv

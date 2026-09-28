@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: lazada
+display_name: Lazada
+generated_from:
+  run_id: 20260927T151517532092Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 01c205fd714f688dfa83848989ac6a0ec5448ac614a047cde5e076cb1c2eabb1
+  type: DOMAIN_SUFFIX
+  value: lazada.com
+- id: d15c914b91a95db5ba52e48f5c1aac612cb0cf0a45d17ad6a9e6d1f087e53dc9
+  type: DOMAIN_SUFFIX
+  value: www.lazada.com
+provider: alibaba

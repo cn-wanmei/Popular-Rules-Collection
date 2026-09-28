@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: kingdee
+display_name: 金蝶
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 0d321b265468d27306f0a549d6b0e24c3a188b0e45a24fc957a22d10931c98c1
+  type: DOMAIN_SUFFIX
+  value: kingdee.com
+- id: 6bb7c902b8664d1736ffdd962b427cb52df266cbc2a324cdbcfa3fcf0dc12ebb
+  type: DOMAIN_SUFFIX
+  value: www.kingdee.com
+provider: kingdee

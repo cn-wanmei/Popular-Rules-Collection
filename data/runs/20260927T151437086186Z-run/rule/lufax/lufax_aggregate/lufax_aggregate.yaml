@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: lufax_aggregate
+display_name: 陆金所
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: bb988f21707665cc6d877d6569a44e5984e0bcd2d571aa6a5985b2222b814ddc
+  type: DOMAIN_SUFFIX
+  value: lu.com
+- id: 40103c4d007a1927e17acd46e198544ba42595e2ed17b848bdcbf24e2f763b10
+  type: DOMAIN_SUFFIX
+  value: www.lu.com
+provider: lufax

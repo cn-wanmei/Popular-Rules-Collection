@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: hellobike_aggregate
+display_name: 哈啰
+generated_from:
+  run_id: 20260928T003720542271Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 1883b5966d218e9250398575d86fb6fc7a584868dba62c293709342c29c0a0f6
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 574e454043c75f37846c438cc1bbbb1d7fb0a500fc39d4f313ef145aee54102d
+  type: DOMAIN_SUFFIX
+  value: hellobike.com
+- id: a145304b50c1c5979f45519dfe8797ec5eac2425467ed48652bf29f7556d41b8
+  type: DOMAIN_SUFFIX
+  value: www.hellobike.com
+provider: hellobike

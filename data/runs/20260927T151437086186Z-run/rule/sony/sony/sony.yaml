@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: sony
+display_name: Sony
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 7c9b42ad09e712c1c11b761422ded9502cb743073b139e8eaeece9792259e3af
+  type: DOMAIN_SUFFIX
+  value: sony.com
+- id: 3ae40beefdfd4886ad3bc4537c1f8ed0b71a0d37ccf091588625889378412b52
+  type: DOMAIN_SUFFIX
+  value: www.sony.com
+provider: sony

@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: internlm_aggregate
+display_name: 书生InternLM
+generated_from:
+  run_id: 20260928T003720542271Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 1883b5966d218e9250398575d86fb6fc7a584868dba62c293709342c29c0a0f6
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: b1af335426e19555690249c330f1e8c46ec0d562c07d4f518ba179ba599db20c
+  type: DOMAIN_SUFFIX
+  value: internlm.intern-ai.org.cn
+provider: internlm

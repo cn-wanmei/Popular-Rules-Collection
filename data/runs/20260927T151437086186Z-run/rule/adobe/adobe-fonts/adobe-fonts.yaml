@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: adobe-fonts
+display_name: Adobe Fonts
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: 6051f90d15a513a3af4ddc910d2e4fdd9e5afd92074c6d367ef5eacb3052ff5d
+  type: DOMAIN_SUFFIX
+  value: fonts.adobe.com
+provider: adobe

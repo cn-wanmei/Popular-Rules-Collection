@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: qunar_aggregate
+display_name: 去哪儿
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 1b35d21c75e495b43d3665fb69aad7a15b4e942fcfaafd82f050657035dc0ade
+  type: DOMAIN_SUFFIX
+  value: qunar.com
+- id: 5fbf0268497914b5cc1bf522c5db7efa9592543b8bcbe2789890df1b0bfde801
+  type: DOMAIN_SUFFIX
+  value: www.qunar.com
+provider: qunar

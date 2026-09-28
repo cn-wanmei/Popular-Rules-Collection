@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: cambricon
+display_name: 寒武纪
+generated_from:
+  run_id: 20260928T003720542271Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 1883b5966d218e9250398575d86fb6fc7a584868dba62c293709342c29c0a0f6
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 1032d7b54003d6a3d2a8f23cbbe372a233dd41e3b3728567c8df387fec4724a5
+  type: DOMAIN_SUFFIX
+  value: cambricon.com
+- id: 8fb2b3989cc24c7efb0ba4c2d427123cd9fc1f5e14a650d9006eb7bbe08fdb90
+  type: DOMAIN_SUFFIX
+  value: www.cambricon.com
+provider: cambricon

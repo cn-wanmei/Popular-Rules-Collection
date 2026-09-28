@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: fujitsu_aggregate
+display_name: Fujitsu
+generated_from:
+  run_id: 20260928T003720542271Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 1883b5966d218e9250398575d86fb6fc7a584868dba62c293709342c29c0a0f6
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 48b55b5ea13cdf18b798ac57c8b41d7fa51b0f1aa1ba11545e5540b1f76487ac
+  type: DOMAIN_SUFFIX
+  value: fujitsu.com
+- id: 42ff3fd18b5967e1f412071943e1a75db3a860b4acac818be8c49d0cd002b4dc
+  type: DOMAIN_SUFFIX
+  value: www.fujitsu.com
+provider: fujitsu

@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: wanmei_aggregate
+display_name: 完美世界
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: a36d6684399976233c107b67c9e131b90aeabe34932232c771796c361c8cebfb
+  type: DOMAIN_SUFFIX
+  value: wanmei.com
+- id: 6ca02e556836a02a380fdef6d1f3f3d5926946adb503eb02af6572247c2b7611
+  type: DOMAIN_SUFFIX
+  value: www.wanmei.com
+provider: wanmei

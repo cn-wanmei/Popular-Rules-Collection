@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: powerbi
+display_name: Power BI
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: fecc550509041bc0000b2814fe93c032393a82a2033a76bdd57745a4e6678ae7
+  type: DOMAIN_SUFFIX
+  value: app.powerbi.com
+- id: 48cd587c1abf04d39c401e5a86f56f993967af5ed7b4c8a4963c269320b09127
+  type: DOMAIN_SUFFIX
+  value: powerbi.microsoft.com
+provider: microsoft

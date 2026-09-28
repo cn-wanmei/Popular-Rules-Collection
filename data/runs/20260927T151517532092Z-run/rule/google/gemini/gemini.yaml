@@ -1,0 +1,65 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: gemini
+display_name: Gemini
+generated_from:
+  run_id: 20260927T151517532092Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 16
+  by_type:
+    DOMAIN: 3
+    DOMAIN_KEYWORD: 3
+    DOMAIN_SUFFIX: 10
+rules:
+- id: a3ee44c74a767bee76123f9a2c17d078a2bebda0c356b21cf52b4fd1ad6ba27e
+  type: DOMAIN
+  value: ai.google.dev
+- id: 005fd239c7ff2578c0fa4f78fb8452be1fa4104b0302bf1537c5c7326e70d955
+  type: DOMAIN
+  value: alkalimakersuite-pa.clients6.google.com
+- id: f8d363676df4286ae9a4a75781f358c053eadfce002544c4a70e77e7ad87436c
+  type: DOMAIN
+  value: makersuite.google.com
+- id: ea1df48ef2ff33f2cdf265c4a93db2e1a1bb338242bba96c268b9f29d10d3395
+  type: DOMAIN_KEYWORD
+  value: colab
+- id: 13bbbc9710f2fa0465bacf0f0555892a70d5eca4b492642339a8295a117b43ba
+  type: DOMAIN_KEYWORD
+  value: developerprofiles
+- id: 8bb8506d9c97bcec40ba94e17218d05700c01c1d8b60be2df09a1ebd46fb75ec
+  type: DOMAIN_KEYWORD
+  value: generativelanguage
+- id: 1a9ce371c8846a9dbc2b803ab27f13f17c1434b73defe83b4bff1ad8b96182af
+  type: DOMAIN_SUFFIX
+  value: ai.google.dev
+- id: 3b93f7c03bd63f7fa7259787c099c8bcc9d691fcf2d2d1b2229ab5a5f9ebd568
+  type: DOMAIN_SUFFIX
+  value: alkalimakersuite-pa.clients6.google.com
+- id: 9a2dc26c1266806ca58155bea220927063ce370029638c76e59948c0fbce4ab9
+  type: DOMAIN_SUFFIX
+  value: apis.google.com
+- id: 73ae3cd3fca1e3ead1fe49653ca65aeef9dc16256b1188ad052254c2bc9564b5
+  type: DOMAIN_SUFFIX
+  value: bard.google.com
+- id: 511e3c894e0db4536e21b0cc337cde56d10ed7c32f5b204ff485e5d745ec5633
+  type: DOMAIN_SUFFIX
+  value: deepmind.com
+- id: 321fb2968372ab6aec738cbe3a788e58c93bdd6a85ca5136f4fa9386ed949883
+  type: DOMAIN_SUFFIX
+  value: deepmind.google
+- id: 33c37e47108053fb4ebad025c630161d6678eab35b9368e189b77c8cc9b113c7
+  type: DOMAIN_SUFFIX
+  value: gemini.google.com
+- id: 519b18789d57caa1cc93878842fd725f4fc797642a4c8f68e3939247506b2948
+  type: DOMAIN_SUFFIX
+  value: generativeai.google
+- id: e34bba05f8ff0e1bbef07c2aca793362ee60d80e81912f8900ad741b9a74b56e
+  type: DOMAIN_SUFFIX
+  value: makersuite.google.com
+- id: c88a55f06b01aebdb5a1ab771a4203d536e508c6469630e306bdb66f4977764b
+  type: DOMAIN_SUFFIX
+  value: proactivebackend-pa.googleapis.com
+provider: google

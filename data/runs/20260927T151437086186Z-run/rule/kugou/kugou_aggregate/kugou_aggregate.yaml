@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: kugou_aggregate
+display_name: KuGou
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: 09a288c6b0f6ff15f8d3c5fed83b43796d2723f70aab5bdd83fb74705f1752f5
+  type: DOMAIN_SUFFIX
+  value: www.kugou.com
+provider: kugou

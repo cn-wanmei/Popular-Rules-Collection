@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: dahua
+display_name: 大华股份
+generated_from:
+  run_id: 20260928T003720542271Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 1883b5966d218e9250398575d86fb6fc7a584868dba62c293709342c29c0a0f6
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: af9a31cc05700bba9e2c550d86427284d1f792c6effaec677d75f29155f87106
+  type: DOMAIN_SUFFIX
+  value: dahuatech.com
+- id: 35a15dfbab2efeb55af7065da90b5b7150b287176c4c82b4fa5175fce230d49f
+  type: DOMAIN_SUFFIX
+  value: www.dahuatech.com
+provider: dahua

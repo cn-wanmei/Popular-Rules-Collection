@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: equinix_aggregate
+display_name: Equinix
+generated_from:
+  run_id: 20260928T003720542271Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 1883b5966d218e9250398575d86fb6fc7a584868dba62c293709342c29c0a0f6
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 48d8d7342880a863b206eebbdf24fb6784ff8ff4951a1cf39e1d8644c4b62c83
+  type: DOMAIN_SUFFIX
+  value: equinix.com
+- id: 73ea27be8ad5ebf2312f888596058f5abe70d4b459ac0beed2b8665e1c103931
+  type: DOMAIN_SUFFIX
+  value: www.equinix.com
+provider: equinix

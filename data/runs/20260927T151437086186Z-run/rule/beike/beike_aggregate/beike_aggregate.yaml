@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: beike_aggregate
+display_name: 贝壳
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 7fcf17944e3ad2fb225c5b52bdfa41b09d1b8974fe0bc545fc1b59ed4a66a7f2
+  type: DOMAIN_SUFFIX
+  value: ke.com
+- id: 407d0d8ae39a3490671e4d364c58ac2dc1a4b2d9384b9906a4d236ff501dca63
+  type: DOMAIN_SUFFIX
+  value: www.ke.com
+provider: beike

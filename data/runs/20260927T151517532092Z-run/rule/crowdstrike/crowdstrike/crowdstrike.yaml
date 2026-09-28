@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: crowdstrike
+display_name: CrowdStrike
+generated_from:
+  run_id: 20260927T151517532092Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 5e95fba464c7df0f3085aaa46730ff35f7f4f552d342d31f0a9174ffca3eef61
+  type: DOMAIN_SUFFIX
+  value: crowdstrike.com
+- id: f2cf966f1130596ca4068f67cc13f06492c50b17253ebda14a21d5ee42ac7ed8
+  type: DOMAIN_SUFFIX
+  value: www.crowdstrike.com
+provider: crowdstrike

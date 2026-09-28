@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: coupang
+display_name: Coupang
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: ac8040049f92fea45e3bc5652cb5e68c084ba46fc363c624a0d020a2f78f9e51
+  type: DOMAIN_SUFFIX
+  value: coupang.com
+- id: ea67158ee4279d8336e5ac53428eeff0cbe28e3f2c9cb31be390fb65782b6bdd
+  type: DOMAIN_SUFFIX
+  value: www.coupang.com
+provider: coupang

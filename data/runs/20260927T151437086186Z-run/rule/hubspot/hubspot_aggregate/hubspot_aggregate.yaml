@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: hubspot_aggregate
+display_name: HubSpot
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: c5b22700811901b7e5916c169d0c12e7610682951232bb303067fc5eaf80aebf
+  type: DOMAIN_SUFFIX
+  value: hubspot.com
+- id: d95c5ccbd9dd367cb164615e608b234e4c887ad830e9527050bf0b0a79193775
+  type: DOMAIN_SUFFIX
+  value: www.hubspot.com
+provider: hubspot

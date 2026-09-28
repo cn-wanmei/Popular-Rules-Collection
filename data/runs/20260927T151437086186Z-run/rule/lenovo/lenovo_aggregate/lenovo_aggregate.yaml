@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: lenovo_aggregate
+display_name: Lenovo
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: b176340dafd8ba1902749a99b5a2c21c53048f64803182bc458ad63ea2a2f1e8
+  type: DOMAIN_SUFFIX
+  value: lenovo.com
+- id: 79360f26455115ee9109aa4922442c82ee18d7599c49383f7f9c8560bd1bb020
+  type: DOMAIN_SUFFIX
+  value: www.lenovo.com
+provider: lenovo

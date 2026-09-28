@@ -563,12 +563,12 @@ sources:
     name: jdcloud
     service: jdcloud
     local: PRS_jdcloud.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/kuaishou/domains.txt
     name: kuaishou
     service: kuaishou
     local: PRS_kuaishou.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/kuaishouopen/domains.txt
     name: kuaishouopen
     service: kuaishouopen
@@ -1053,12 +1053,12 @@ sources:
     name: huolala
     service: huolala
     local: PRS_huolala.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/manbang/domains.txt
     name: manbang
     service: manbang
     local: PRS_manbang.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/zhaopin/domains.txt
     name: zhaopin
     service: zhaopin
@@ -1078,12 +1078,12 @@ sources:
     name: hellobike
     service: hellobike
     local: PRS_hellobike.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/caocao/domains.txt
     name: caocao
     service: caocao
     local: PRS_caocao.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/t3go/domains.txt
     name: t3go
     service: t3go
@@ -1123,7 +1123,7 @@ sources:
     name: cambricon
     service: cambricon
     local: PRS_cambricon.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/hikvision/domains.txt
     name: hikvision
     service: hikvision
@@ -1133,7 +1133,7 @@ sources:
     name: dahua
     service: dahua
     local: PRS_dahua.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/dji/domains.txt
     name: dji
     service: dji
@@ -1218,7 +1218,7 @@ sources:
     name: intuit
     service: intuit
     local: PRS_intuit.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/mediatek/domains.txt
     name: mediatek
     service: mediatek
@@ -1233,7 +1233,7 @@ sources:
     name: lg
     service: lg
     local: PRS_lg.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/panasonic/domains.txt
     name: panasonic
     service: panasonic
@@ -1248,12 +1248,12 @@ sources:
     name: linecorp
     service: linecorp
     local: PRS_linecorp.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/grab/domains.txt
     name: grab
     service: grab
     local: PRS_grab.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/shopee/domains.txt
     name: shopee
     service: shopee
@@ -1263,17 +1263,17 @@ sources:
     name: coupang
     service: coupang
     local: PRS_coupang.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/kakao/domains.txt
     name: kakao
     service: kakao
     local: PRS_kakao.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/ericsson/domains.txt
     name: ericsson
     service: ericsson
     local: PRS_ericsson.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/nokia/domains.txt
     name: nokia
     service: nokia
@@ -1288,7 +1288,7 @@ sources:
     name: fortinet
     service: fortinet
     local: PRS_fortinet.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/okta/domains.txt
     name: okta
     service: okta
@@ -1298,7 +1298,7 @@ sources:
     name: hubspot
     service: hubspot
     local: PRS_hubspot.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/twilio/domains.txt
     name: twilio
     service: twilio
@@ -1323,17 +1323,17 @@ sources:
     name: ea
     service: ea
     local: PRS_ea.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/epicgames/domains.txt
     name: epicgames
     service: epicgames
     local: PRS_epicgames.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/broadcom/domains.txt
     name: broadcom
     service: broadcom
     local: PRS_broadcom.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/asml/domains.txt
     name: asml
     service: asml
@@ -1368,7 +1368,7 @@ sources:
     name: dell
     service: dell
     local: PRS_dell.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/paloalto/domains.txt
     name: paloalto
     service: paloalto
@@ -1383,27 +1383,27 @@ sources:
     name: cadence
     service: cadence
     local: PRS_cadence.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/lamresearch/domains.txt
     name: lamresearch
     service: lamresearch
     local: PRS_lamresearch.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/kla/domains.txt
     name: kla
     service: kla
     local: PRS_kla.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/hitachi/domains.txt
     name: hitachi
     service: hitachi
     local: PRS_hitachi.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/fujitsu/domains.txt
     name: fujitsu
     service: fujitsu
     local: PRS_fujitsu.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/nec/domains.txt
     name: nec
     service: nec
@@ -1418,7 +1418,7 @@ sources:
     name: hpe
     service: hpe
     local: PRS_hpe.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/netapp/domains.txt
     name: netapp
     service: netapp
@@ -1428,17 +1428,17 @@ sources:
     name: equinix
     service: equinix
     local: PRS_equinix.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/dassault/domains.txt
     name: dassault
     service: dassault
     local: PRS_dassault.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/block/domains.txt
     name: block
     service: block
     local: PRS_block.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/take2/domains.txt
     name: take2
     service: take2
@@ -1448,7 +1448,7 @@ sources:
     name: globalfoundries
     service: globalfoundries
     local: PRS_globalfoundries.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/umc/domains.txt
     name: umc
     service: umc
@@ -1463,7 +1463,7 @@ sources:
     name: lufax
     service: lufax
     local: PRS_lufax.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/atour/domains.txt
     name: atour
     service: atour
@@ -1483,7 +1483,7 @@ sources:
     name: dreame
     service: dreame
     local: PRS_dreame.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/xgimi/domains.txt
     name: xgimi
     service: xgimi
@@ -1493,17 +1493,17 @@ sources:
     name: internlm
     service: internlm
     local: PRS_internlm.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/birentech/domains.txt
     name: birentech
     service: birentech
     local: PRS_birentech.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/kunlunxin/domains.txt
     name: kunlunxin
     service: kunlunxin
     local: PRS_kunlunxin.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/lark/domains.txt
     name: lark
     service: lark
@@ -1523,7 +1523,7 @@ sources:
     name: getapps
     service: getapps
     local: PRS_getapps.domains.txt
-    enabled: false
+    enabled: true
   - path: generated/source/37games/domains.txt
     name: 37games
     service: 37games
@@ -1628,6 +1628,21 @@ sources:
     name: youku
     service: youku
     local: PRS_youku.domains.txt
+    enabled: true
+  - path: generated/source/baidu-zhidao/domains.txt
+    name: baidu-zhidao
+    service: baidu-zhidao
+    local: PRS_baidu-zhidao.domains.txt
+    enabled: true
+  - path: generated/source/huawei-appgallery/domains.txt
+    name: huawei-appgallery
+    service: huawei-appgallery
+    local: PRS_huawei-appgallery.domains.txt
+    enabled: true
+  - path: generated/source/kuaishou-open/domains.txt
+    name: kuaishou-open
+    service: kuaishou-open
+    local: PRS_kuaishou-open.domains.txt
     enabled: true
 - id: blackmatrix7
   name: BlackMatrix7 ios_rule_script

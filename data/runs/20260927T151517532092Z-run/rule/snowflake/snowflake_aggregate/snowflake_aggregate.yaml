@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: snowflake_aggregate
+display_name: Snowflake
+generated_from:
+  run_id: 20260927T151517532092Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 67bce520e63cecec1190c361c8c3eb5a1091cbd7fd4c3bd730d86dc2487afd09
+  type: DOMAIN_SUFFIX
+  value: snowflake.com
+- id: 2a0bb3e48d385df9ccf86a01d5abae0e88a39dcf5802b5bb1657b1d5bcf139f2
+  type: DOMAIN_SUFFIX
+  value: www.snowflake.com
+provider: snowflake

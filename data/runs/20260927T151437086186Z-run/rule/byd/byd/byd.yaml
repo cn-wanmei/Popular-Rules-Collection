@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: byd
+display_name: BYD
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: d66ba92c56b480ac939744a53ba707419f2ddf53e23e284a93b92d1e3a435890
+  type: DOMAIN_SUFFIX
+  value: byd.com
+- id: c7e193454ec0c47d502c154e9bbbe977bdb026ef3acbe0c29803a42b28a0febc
+  type: DOMAIN_SUFFIX
+  value: www.byd.com
+provider: byd

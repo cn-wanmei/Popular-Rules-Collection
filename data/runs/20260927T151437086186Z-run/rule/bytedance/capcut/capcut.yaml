@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: capcut
+display_name: 剪映/CapCut
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 55e9c1138ac8a9154882f5513891cb4f5b69d7356911d69591e016b065b57c09
+  type: DOMAIN_SUFFIX
+  value: capcut.com
+- id: fad041482e086a9676f16808ea1911d420d434d552b479d08d60ad360718533a
+  type: DOMAIN_SUFFIX
+  value: www.capcut.com
+provider: bytedance

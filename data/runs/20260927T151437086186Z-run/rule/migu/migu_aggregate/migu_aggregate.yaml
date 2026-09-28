@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: migu_aggregate
+display_name: 咪咕
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 23d43643e54cbc58c8ec0e9401100591b40bf10bd51fe2b62e5d85425bb3d058
+  type: DOMAIN_SUFFIX
+  value: migu.cn
+- id: 6adc16f9733143e3792341baec470af2baa3839a4e541df5f37f46d2a70962f6
+  type: DOMAIN_SUFFIX
+  value: www.migu.cn
+provider: migu

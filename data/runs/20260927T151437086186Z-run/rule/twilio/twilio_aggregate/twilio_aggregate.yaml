@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: twilio_aggregate
+display_name: Twilio
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: b66b0427da12135f49c865a79655910d003e82fa66fa7ff071e2ac8cd4cd5ec9
+  type: DOMAIN_SUFFIX
+  value: twilio.com
+- id: 08fb5a077d621abf270dd7a90b43ab6a800771a3c0da5d28f984041324d606fb
+  type: DOMAIN_SUFFIX
+  value: www.twilio.com
+provider: twilio

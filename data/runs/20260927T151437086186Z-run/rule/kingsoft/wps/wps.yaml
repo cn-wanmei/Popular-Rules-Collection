@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: wps
+display_name: WPS
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 2ba98c256e7405f1bbe9e09df7e7a3fc9225e9fe31f2604e4f6dd17d1af0a581
+  type: DOMAIN_SUFFIX
+  value: wps.cn
+- id: 4c8b77f5a0965a00b815afb55b09fee232f223f034fb0b91bdca94898b9e3120
+  type: DOMAIN_SUFFIX
+  value: www.wps.cn
+provider: kingsoft

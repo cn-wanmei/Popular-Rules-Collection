@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: linecorp_aggregate
+display_name: LINE
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 2b29298a05ef69d482a0e58ebb87d44e6b47033bbe0104b599ce79bbb01d3481
+  type: DOMAIN_SUFFIX
+  value: line.me
+- id: c8c519520ee68f6d06a2212feb6af780dc58823e04a5556476b586c89a2c3727
+  type: DOMAIN_SUFFIX
+  value: www.line.me
+provider: linecorp

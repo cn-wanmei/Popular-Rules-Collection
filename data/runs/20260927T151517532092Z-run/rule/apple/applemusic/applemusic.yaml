@@ -1,0 +1,65 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: applemusic
+display_name: Apple Music
+generated_from:
+  run_id: 20260927T151517532092Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 16
+  by_type:
+    DOMAIN: 6
+    DOMAIN_SUFFIX: 9
+    PROCESS_NAME: 1
+rules:
+- id: 1adf1471a5736827df63db1ba124218bfac21c97227def5e30dab7c9c976158f
+  type: DOMAIN
+  value: aod-ssl.itunes.apple.com
+- id: 899fd095d09f2ec6e1ac70d230c9ce859f9d9f3ab5f1443c13af3955badfa78b
+  type: DOMAIN
+  value: aod.itunes.apple.com
+- id: d1e0c6d6c32d2d4b4277da824db24cb1cd84b909a717258ac017aafc3d041679
+  type: DOMAIN
+  value: audio-ssl.itunes.apple.com
+- id: 2135b6edc6018a70758e6de201b009afa650747cdb33eae4e85f4a3ca27dbd9b
+  type: DOMAIN
+  value: audio.itunes.apple.com
+- id: 9f87aa49405e0d5f8a177f13eef090544366726e3204258611885d56ac419a28
+  type: DOMAIN
+  value: mvod.itunes.apple.com
+- id: 5bc59ebe59e154d4be6efcca97d45c1ef45d7118d0c9ff99076406bb5de21f86
+  type: DOMAIN
+  value: streamingaudio.itunes.apple.com
+- id: e377b0d8f75cf60bbad8b04577f281a44c89d4ecb47157f4ee6d948256ef185b
+  type: DOMAIN_SUFFIX
+  value: aod-ssl.itunes.apple.com
+- id: b8e1905a9e68a3a574b18fcaab5087e8954a0ba3e309c6cdbc1e9ae5b9c4fc2a
+  type: DOMAIN_SUFFIX
+  value: aod.itunes.apple.com
+- id: 4ea3a2ba17c0888f81c2b42c747fe35c8048560bc14718ef3f9b6dea0b1f9cb5
+  type: DOMAIN_SUFFIX
+  value: applemusic.com
+- id: b0241c95feeec2c18f839d0b048a820b0bf4e0a11ff6a4bc5514ad5b67f3f6e5
+  type: DOMAIN_SUFFIX
+  value: audio-ssl.itunes.apple.com
+- id: c35459e480df34f2530ca1ebda277bc24fee42080283fe7e724381afa27f01be
+  type: DOMAIN_SUFFIX
+  value: audio.itunes.apple.com
+- id: 9e455c65b0edaa36a1d68da227cb380ede5c6a36111015374a861453eb1d1c20
+  type: DOMAIN_SUFFIX
+  value: blobstore.apple.com
+- id: ea19978d4fd5fa6a2dc6acd13bd8b1851e2769697adbdb0528958183a82f7ac6
+  type: DOMAIN_SUFFIX
+  value: music.apple.com
+- id: 3bc978d9aa72249fde7e3386e5f2d7402a9c0ee95f4e172ccfe5826d5fec52a9
+  type: DOMAIN_SUFFIX
+  value: mvod.itunes.apple.com
+- id: d22886a1b2873b5ad07468b4561ec66179705cf249f6e9e3c09ca08618a5f019
+  type: DOMAIN_SUFFIX
+  value: streamingaudio.itunes.apple.com
+- id: c275b6e3f3ad7c7baee980c5e6440f3695c94ac477e1eb768247979f2168eb0e
+  type: PROCESS_NAME
+  value: Music
+provider: apple

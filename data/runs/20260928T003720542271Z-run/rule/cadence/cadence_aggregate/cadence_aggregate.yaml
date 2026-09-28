@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: cadence_aggregate
+display_name: Cadence
+generated_from:
+  run_id: 20260928T003720542271Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 1883b5966d218e9250398575d86fb6fc7a584868dba62c293709342c29c0a0f6
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: ff49d587166dfe34850f167d7ba69b268446547e0a706a0ea0a2852dee15c572
+  type: DOMAIN_SUFFIX
+  value: cadence.com
+- id: e2ac8f268543351f60784c72e5438a83f94f6de8a49882f19c8cf0dc51da004d
+  type: DOMAIN_SUFFIX
+  value: www.cadence.com
+provider: cadence

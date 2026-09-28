@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: honor_aggregate
+display_name: Honor
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 8c351d56c9a2ee080e90e43fd29e186a31d65d4f4bc99fce1f237de157ae172b
+  type: DOMAIN_SUFFIX
+  value: honor.com
+- id: d72fcc57902ae0b02495db4717433eb13deca26fe3ac6d7c9438fc147f14036e
+  type: DOMAIN_SUFFIX
+  value: www.honor.com
+provider: honor

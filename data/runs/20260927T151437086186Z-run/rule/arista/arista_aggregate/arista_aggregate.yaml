@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: arista_aggregate
+display_name: Arista Networks
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: afe89fd9c50ee049c62c37f3d7fb540f6489c37698e486aef7e43b17fbf56326
+  type: DOMAIN_SUFFIX
+  value: arista.com
+- id: 510752923cd16ef353a0f6ffdde3ebc6e70a312e76d25ed1a4de9b4aa70e2367
+  type: DOMAIN_SUFFIX
+  value: www.arista.com
+provider: arista

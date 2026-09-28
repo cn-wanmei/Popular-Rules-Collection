@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: dell
+display_name: Dell
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 4a8188f0fdce751499940582d2d2e1752c03a8c881521e21352671d3e85d09f4
+  type: DOMAIN_SUFFIX
+  value: dell.com
+- id: d8c4da713ad3c770ac661d5a6db96b706e542353ac409fb958494744e83d282b
+  type: DOMAIN_SUFFIX
+  value: www.dell.com
+provider: dell

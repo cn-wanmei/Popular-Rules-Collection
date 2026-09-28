@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: baiduwenku
+display_name: 百度文库
+generated_from:
+  run_id: 20260928T003720542271Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 1883b5966d218e9250398575d86fb6fc7a584868dba62c293709342c29c0a0f6
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: c68a36f4a4baa866bd437b5a03553cd987ba50ba807eb5d11c8510a949555669
+  type: DOMAIN_SUFFIX
+  value: wenku.baidu.com
+provider: baidu

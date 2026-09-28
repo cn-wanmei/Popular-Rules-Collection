@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: baichuan
+display_name: 百川智能
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: ed1885f49f6551348695be44cdbc1f8b82dd21a5e313b16e1a47b4feee513dca
+  type: DOMAIN_SUFFIX
+  value: baichuan-ai.com
+- id: 49b9dd428b02e521f443db9f212baf6afa95b3099a0665d965e7e6a0debffe35
+  type: DOMAIN_SUFFIX
+  value: www.baichuan-ai.com
+provider: baichuan

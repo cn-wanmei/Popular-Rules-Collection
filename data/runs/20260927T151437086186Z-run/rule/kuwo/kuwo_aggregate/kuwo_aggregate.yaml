@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: kuwo_aggregate
+display_name: Kuwo
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: 38f5c532b7f572bb8c432c14bf7c563e6de693ca9c657eb067e9963795c26174
+  type: DOMAIN_SUFFIX
+  value: m.kuwo.cn
+provider: kuwo

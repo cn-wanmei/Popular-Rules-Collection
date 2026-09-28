@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: hpe_aggregate
+display_name: HPE
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: b793d2f0f638ddc50a2d151ae3a3a9eec6139e8f70edd035faee6cff8e51d7c8
+  type: DOMAIN_SUFFIX
+  value: hpe.com
+- id: 9737a5f073630572e3ce0eadbfa11a6e33d2a3d2223f6ad994c7b3e297be8bfc
+  type: DOMAIN_SUFFIX
+  value: www.hpe.com
+provider: hpe

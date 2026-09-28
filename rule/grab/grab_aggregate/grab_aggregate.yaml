@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: grab_aggregate
+display_name: Grab
+generated_from:
+  run_id: 20260928T003720542271Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 1883b5966d218e9250398575d86fb6fc7a584868dba62c293709342c29c0a0f6
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 8e649ddb2701b9153f793d6ea051ff1f48a9c1fc77554e43ea5696fadbf532ea
+  type: DOMAIN_SUFFIX
+  value: grab.com
+- id: e67ce1288c4882f7653ea14e920f05f2ee8d1d637338b18415aa407b42c58fcf
+  type: DOMAIN_SUFFIX
+  value: www.grab.com
+provider: grab

@@ -1,0 +1,24 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: dingding
+display_name: DingTalk
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 3
+  by_type:
+    DOMAIN_SUFFIX: 3
+rules:
+- id: b30234ff6fb4ff2c083b00adc10acf07dd2fa634005515136a712829016b82df
+  type: DOMAIN_SUFFIX
+  value: page.dingtalk.com
+- id: e7fdcc7c52363f3cd27ff9376ad61f315ad151a8c2b91ece0a28709c4374b3f9
+  type: DOMAIN_SUFFIX
+  value: table.dingtalk.com
+- id: 04d415024b6d22d943cca67b4655f93bf8d3e8d012cb7645e2993dea6fd1feff
+  type: DOMAIN_SUFFIX
+  value: www.dingtalk.com
+provider: alibaba

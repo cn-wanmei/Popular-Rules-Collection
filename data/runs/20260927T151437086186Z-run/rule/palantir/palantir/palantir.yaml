@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: palantir
+display_name: Palantir
+generated_from:
+  run_id: 20260927T151437086186Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: fdc5346abc4731485a1866ba8a4237a820194f3d8afc31bfb71078557e1cc6db
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 58df9c6e578e4674947c93e5a257719efada91781034c5672448a1da0f74d261
+  type: DOMAIN_SUFFIX
+  value: palantir.com
+- id: 951b4bec76cf583face890cb3c788c75dfa85807846ab27f6114e74cd7b9a71c
+  type: DOMAIN_SUFFIX
+  value: www.palantir.com
+provider: palantir
