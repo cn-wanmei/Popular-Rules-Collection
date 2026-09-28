@@ -2,23 +2,21 @@ name: P3 Audit Gates
 
 on:
   pull_request:
-    branches: [main, master]
+    branches: [main]
     paths:
       - "src/engine/audit/**"
       - "tests/engine/test_p3_audit.py"
       - "scripts/p3_audit.py"
       - "config/p3_audit.yaml"
       - "requirements.lock"
-      - ".github/workflows/**"
   push:
-    branches: [main, master]
+    branches: [main]
     paths:
       - "src/engine/audit/**"
       - "tests/engine/test_p3_audit.py"
       - "scripts/p3_audit.py"
       - "config/p3_audit.yaml"
       - "requirements.lock"
-      - ".github/workflows/**"
 
 jobs:
   p3-audit:

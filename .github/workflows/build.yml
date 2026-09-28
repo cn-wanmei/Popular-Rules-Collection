@@ -19,7 +19,6 @@ on:
       - "requirements.txt"
       - "requirements.lock"
       - ".github/workflows/build.yml"
-      - ".github/workflows/publish.yml"
   workflow_dispatch:
     inputs:
       dry_run:

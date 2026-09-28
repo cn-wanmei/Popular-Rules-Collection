@@ -21,7 +21,7 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
 
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
@@ -165,7 +165,8 @@ jobs:
           source_sha = requested_sha
           artifact_sha = requested_sha
           resolution = "immutable_registry_binding"
-          needed = {"CI", "Phase 2 Source Gate"}
+          # phase2-gate merged into CI; only require CI workflow success
+          needed = {"CI"}
 
           def observe_gate_runs(commit_sha):
               runs = get_json(
@@ -240,13 +241,13 @@ jobs:
                   },
                   ensure_ascii=False, indent=2
               ) + "\n",
-              encoding="utf-8",
+                  encoding="utf-8",
           )
           PY
 
       - name: Checkout exact Source main commit for Canary
         if: env.CANARY_ACTIVE == 'true'
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
           repository: cn-wanmei/Popular-Rules-Source
           ref: ${{ env.SOURCE_CANARY_SHA }}

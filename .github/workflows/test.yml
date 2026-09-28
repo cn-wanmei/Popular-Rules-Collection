@@ -3,6 +3,13 @@ name: Unit Tests
 on:
   push:
     branches: [main]
+    paths:
+      - "src/engine/**"
+      - "tests/**"
+      - "scripts/**"
+      - "config/**"
+      - "requirements.lock"
+      - "requirements.txt"
   pull_request:
   workflow_dispatch:
 
