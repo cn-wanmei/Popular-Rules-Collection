@@ -712,7 +712,11 @@ def resolve_source(root: Path, row: dict, official: dict, policy: dict, cache: d
     # Cache only if quality metadata present and not low_res (or refresh)
     cached = None if refresh else cache.get(sid)
     if cached and cached.get("source_url"):
-        path = ROOT / str(cached.get("path") or "")
+        raw_path = str(cached.get("path") or "")
+        path = Path(raw_path)
+        if not path.is_absolute():
+            path = ROOT / path
+        path = path.resolve()
         if path.is_file() and sha256(path.read_bytes()) == str(cached.get("digest") or ""):
             content = path.read_bytes()
             cq = str(cached.get("quality") or "")
@@ -1057,7 +1061,13 @@ def acquire_source(row: dict, official: dict, policy: dict, cache: dict, cache_d
             "score",
         )
     }
-    meta.update({"path": str(path.relative_to(ROOT)), "digest": result["source_digest"], "service_id": row["service_id"]})
+    abs_path = path.resolve() if path.is_absolute() else (ROOT / path).resolve()
+    try:
+        rel = str(abs_path.relative_to(ROOT.resolve()))
+    except ValueError:
+        rel = str(path)
+    meta.update({"path": rel, "digest": result["source_digest"], "service_id": row["service_id"]})
+    path = abs_path
     cache[row["service_id"]] = meta
     return result
 
@@ -1243,6 +1253,10 @@ def cmd_build(args: argparse.Namespace) -> int:
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     cache_dir = Path(args.cache_dir) if args.cache_dir else DEFAULT_CACHE
+    if not cache_dir.is_absolute():
+        cache_dir = (ROOT / cache_dir).resolve()
+    else:
+        cache_dir = cache_dir.resolve()
     cache = load_cache(cache_dir)
     asset_cache: dict = {}
     lineage = {
