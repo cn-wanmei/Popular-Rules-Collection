@@ -158,3 +158,26 @@ jobs:
           gh pr create --base main --head "$BRANCH" \
             --title "chore(icon): auto-fill icon coverage gap" \
             --body "Incremental icon fill for services present in rule index but missing complete 8/8 variants in assets/icons/v5." || true
+      - name: Gap-fill metrics
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          for p in (Path("build/icon-v5/registry.json"), Path("assets/icons/v5/registry.json")):
+              if p.is_file():
+                  reg = json.loads(p.read_text(encoding="utf-8"))
+                  cov = reg.get("coverage") or {}
+                  m = {
+                      "workflow": "icon-gap-fill",
+                      "complete_8_of_8": cov.get("complete_8_of_8"),
+                      "service_count": cov.get("service_count"),
+                      "gap_count": len(cov.get("missing") or []),
+                      "renderer_version": reg.get("renderer_version"),
+                  }
+                  Path("build").mkdir(exist_ok=True)
+                  Path("build/gap-fill-metrics.json").write_text(json.dumps(m, indent=2) + "\n", encoding="utf-8")
+                  print(json.dumps(m, ensure_ascii=False))
+                  break
+          PY
+

@@ -1693,6 +1693,135 @@ def cmd_write_manifest(args: argparse.Namespace) -> int:
     print(json.dumps({"status": "ok", "services": len(manifest["services"]), "out": str(out)}, ensure_ascii=False))
     return 0
 
+
+def cmd_quality_audit(args: argparse.Namespace) -> int:
+    """List incomplete / low_res / weak sources for targeted re-acquisition (C2)."""
+    reg = load_json(Path(args.registry))
+    entries = {str(e.get("service_id")): e for e in (reg.get("entries") or []) if e.get("service_id")}
+    index_ids = set()
+    if args.rule_index and Path(args.rule_index).is_file():
+        index_ids = {str(r.get("service_id")) for r in discover_services(Path(args.rule_index))}
+    low: list[dict] = []
+    incomplete: list[dict] = []
+    for sid, e in sorted(entries.items()):
+        src = e.get("source") if isinstance(e.get("source"), dict) else {}
+        q = str(src.get("quality") or e.get("quality") or "")
+        px = int(src.get("source_px") or 0)
+        nvar = len(e.get("variants") or {})
+        eligible = bool(e.get("release_eligible") and nvar == 8)
+        row = {
+            "service_id": sid,
+            "quality": q or "unknown",
+            "source_px": px,
+            "variants": nvar,
+            "release_eligible": eligible,
+            "url": src.get("url") or src.get("source_url") or "",
+            "origin": src.get("origin") or src.get("resolution_reason") or "",
+        }
+        if not eligible or nvar < 8:
+            incomplete.append(row)
+        elif q == QUALITY_LOW or (px and px < DEFAULT_MIN_SOURCE_PX):
+            low.append(row)
+    missing_index = sorted(index_ids - set(entries.keys())) if index_ids else []
+    for sid in missing_index:
+        incomplete.append(
+            {
+                "service_id": sid,
+                "quality": "missing",
+                "source_px": 0,
+                "variants": 0,
+                "release_eligible": False,
+                "url": "",
+                "origin": "not_in_registry",
+            }
+        )
+    retarget = sorted({r["service_id"] for r in incomplete + low})
+    report = {
+        "schema": "icon_quality_audit_v5",
+        "renderer_version": reg.get("renderer_version") or RENDERER_VERSION,
+        "registry_complete_8_of_8": (reg.get("coverage") or {}).get("complete_8_of_8"),
+        "incomplete_count": len(incomplete),
+        "low_res_count": len(low),
+        "retarget_count": len(retarget),
+        "retarget_services": retarget,
+        "incomplete": incomplete[:500],
+        "low_res": low[:500],
+    }
+    out = Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({k: report[k] for k in ("incomplete_count", "low_res_count", "retarget_count", "renderer_version")}, ensure_ascii=False))
+    return 0
+
+
+def cmd_seed_audit(args: argparse.Namespace) -> int:
+    """Review seed SVGs for embedded bitmaps / empty files (C2)."""
+    roots = [ROOT / "assets/icons/seed", ROOT / "assets/icons/v5/seed"]
+    findings: list[dict] = []
+    for root in roots:
+        if not root.is_dir():
+            continue
+        for p in sorted(root.glob("*.svg")):
+            try:
+                text = p.read_text(encoding="utf-8", errors="replace")
+            except Exception as exc:
+                findings.append({"path": str(p.relative_to(ROOT)), "status": "error", "reason": str(exc)})
+                continue
+            flags = []
+            low = text.lower()
+            if "<image" in low or "data:image" in low or "base64," in low:
+                flags.append("bitmap_embed")
+            if len(text.strip()) < 80:
+                flags.append("too_small")
+            if "path" not in low and "circle" not in low and "rect" not in low and "polygon" not in low:
+                flags.append("no_vector_primitives")
+            findings.append(
+                {
+                    "path": str(p.relative_to(ROOT)),
+                    "service_hint": p.stem,
+                    "bytes": len(text.encode("utf-8")),
+                    "status": "warn" if flags else "ok",
+                    "flags": flags,
+                }
+            )
+    report = {
+        "schema": "icon_seed_audit_v5",
+        "seed_files": len(findings),
+        "warnings": sum(1 for f in findings if f.get("status") == "warn"),
+        "findings": findings,
+    }
+    out = Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"seed_files": report["seed_files"], "warnings": report["warnings"]}, ensure_ascii=False))
+    return 0
+
+
+def cmd_sync_pointer(args: argparse.Namespace) -> int:
+    """Align release-pointer.json with registry renderer + coverage (C3)."""
+    reg = load_json(Path(args.registry))
+    ptr_path = Path(args.pointer)
+    ptr = load_json(ptr_path) if ptr_path.is_file() else {}
+    ptr.update(
+        {
+            "schema": "icon_release_pointer_v5",
+            "status": "active",
+            "active": True,
+            "registry": "registry.json",
+            "renderer_version": reg.get("renderer_version") or RENDERER_VERSION,
+            "coverage": reg.get("coverage") or {},
+            "run_id": reg.get("run_id") or ptr.get("run_id"),
+            "snapshot_id": reg.get("snapshot_id") or ptr.get("snapshot_id"),
+            "ir_digest": reg.get("ir_digest") if reg.get("ir_digest") is not None else ptr.get("ir_digest"),
+            "synced_at": datetime.now(timezone.utc).isoformat(),
+        }
+    )
+    ptr_path.parent.mkdir(parents=True, exist_ok=True)
+    ptr_path.write_text(json.dumps(ptr, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"status": "ok", "renderer_version": ptr["renderer_version"], "coverage": ptr.get("coverage")}, ensure_ascii=False))
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     ap = argparse.ArgumentParser(description="Icon System V5")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -1761,6 +1890,18 @@ def build_parser() -> argparse.ArgumentParser:
         help="Warn (do not fail) when rule index has services without icon registry entries",
     )
     p.set_defaults(func=cmd_gate)
+    p = sub.add_parser("quality-audit")
+    p.add_argument("--registry", required=True)
+    p.add_argument("--rule-index")
+    p.add_argument("--out", required=True)
+    p.set_defaults(func=cmd_quality_audit)
+    p = sub.add_parser("seed-audit")
+    p.add_argument("--out", required=True)
+    p.set_defaults(func=cmd_seed_audit)
+    p = sub.add_parser("sync-pointer")
+    p.add_argument("--registry", required=True)
+    p.add_argument("--pointer", required=True)
+    p.set_defaults(func=cmd_sync_pointer)
     return ap
 
 

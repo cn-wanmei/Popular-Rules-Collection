@@ -1,0 +1,134 @@
+name: Icon Quality Retarget
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: Max services to retarget this run
+        required: false
+        default: '60'
+      promote:
+        description: Open promote PR after success
+        required: false
+        default: false
+        type: boolean
+
+concurrency:
+  group: icon-quality-retarget-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  retarget:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.14'
+          cache: pip
+          cache-dependency-path: requirements.lock
+      - run: python -m pip install -r requirements.lock
+      - name: Quality + seed audit
+        run: |
+          set -euo pipefail
+          mkdir -p build/icon-v5 reports
+          python scripts/icon_system_v5.py quality-audit \
+            --registry assets/icons/v5/registry.json \
+            --rule-index rule/_index.yaml \
+            --out reports/icon-quality-audit.json
+          python scripts/icon_system_v5.py seed-audit \
+            --out reports/icon-seed-audit.json
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          n = int(os.environ.get("BATCH", "60"))
+          rep = json.loads(Path("reports/icon-quality-audit.json").read_text(encoding="utf-8"))
+          ids = (rep.get("retarget_services") or [])[:n]
+          Path("build/retarget-services.json").write_text(json.dumps(ids), encoding="utf-8")
+          print(f"retarget batch={len(ids)} total={rep.get('retarget_count')}")
+          PY
+        env:
+          BATCH: ${{ inputs.batch_size }}
+      - name: Baseline restore
+        run: |
+          set -euo pipefail
+          mkdir -p build/icon-v5
+          if [ -f assets/icons/v5/registry.json ]; then
+            rsync -a --exclude 'seed/' assets/icons/v5/ build/icon-v5/
+          fi
+      - name: Targeted rebuild (refresh sources for batch)
+        run: |
+          set -euo pipefail
+          SERVICES=$(cat build/retarget-services.json)
+          if [ "$SERVICES" = "[]" ]; then
+            echo "Nothing to retarget"
+            exit 0
+          fi
+          python scripts/icon_system_v5.py build \
+            --rule-index rule/_index.yaml \
+            --out build/icon-v5 \
+            --services "$SERVICES" \
+            --concurrency 16 \
+            --allow-partial \
+            --refresh
+      - name: Sync release pointer in build tree
+        run: |
+          python scripts/icon_system_v5.py sync-pointer \
+            --registry build/icon-v5/registry.json \
+            --pointer build/icon-v5/release-pointer.json || true
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: icon-quality-retarget-${{ github.sha }}
+          path: |
+            build/icon-v5
+            reports/icon-quality-audit.json
+            reports/icon-seed-audit.json
+          retention-days: 30
+      - name: Metrics summary
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          reg_path = Path("build/icon-v5/registry.json")
+          if not reg_path.is_file():
+              raise SystemExit(0)
+          reg = json.loads(reg_path.read_text(encoding="utf-8"))
+          cov = reg.get("coverage") or {}
+          metrics = {
+              "complete_8_of_8": cov.get("complete_8_of_8"),
+              "service_count": cov.get("service_count"),
+              "renderer_version": reg.get("renderer_version"),
+              "gap_count": len(cov.get("missing") or []),
+          }
+          Path("build/icon-v5/acquisition-metrics.json").write_text(json.dumps(metrics, indent=2) + "\n")
+          print(json.dumps(metrics, ensure_ascii=False))
+          print(f"::notice::retarget complete={metrics.get('complete_8_of_8')}/{metrics.get('service_count')}")
+          PY
+      - name: Promote PR (optional)
+        if: ${{ inputs.promote == true }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if [ ! -f build/icon-v5/registry.json ]; then exit 0; fi
+          rsync -a --exclude 'seed/' build/icon-v5/ assets/icons/v5/
+          mkdir -p reports
+          cp -f reports/icon-quality-audit.json reports/ 2>/dev/null || true
+          BRANCH="icon-v5-retarget-$(date -u +%Y%m%d%H%M%S)"
+          git config user.name "icon-v5-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add assets/icons/v5 reports || true
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "chore(icon): quality retarget batch into assets/icons/v5"
+          git push -u origin "$BRANCH"
+          gh pr create --title "chore(icon): quality retarget promote" \
+            --body "C2 targeted re-acquisition promote." --base main --head "$BRANCH"
