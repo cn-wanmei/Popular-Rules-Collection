@@ -9,21 +9,21 @@
     "surge"
   ],
   "collection_date": "2026-09-28",
-  "file_count": 4189,
+  "file_count": 4196,
   "files": [
     {
-      "file": "_promotion/20260928T003720542271Z-run.json",
+      "file": "_promotion/20260928T035733250329Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "a3ae9fd217d01115475dc2d42c6c98a44df6e03e1a49089f31941230f8035351",
-      "size": 480558
+      "sha256": "c7ec7958a789edef15c8974a0092fb477a72f06c2c095c5bebdb62a72047309e",
+      "size": 481280
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "a3ae9fd217d01115475dc2d42c6c98a44df6e03e1a49089f31941230f8035351",
-      "size": 480558
+      "sha256": "c7ec7958a789edef15c8974a0092fb477a72f06c2c095c5bebdb62a72047309e",
+      "size": 481280
     },
     {
       "file": "asn/metadata.yaml",
@@ -48,6 +48,14 @@
       "scope": "egern",
       "sha256": "e39acc1ad8bc5689cfc54b599ca08874c3cf8e801f6983b1d980abd2e0014d72",
       "size": 286
+    },
+    {
+      "file": "egern/1688/1688/1688.yaml",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "egern",
+      "sha256": "2d75fb6bb28bece798df13d77afa2116058facf389901155bada72cd8f49112e",
+      "size": 53
     },
     {
       "file": "egern/37games/37games/37games.yaml",
@@ -5578,6 +5586,14 @@
       "size": 387
     },
     {
+      "file": "loon/1688/1688/1688.list",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "loon",
+      "sha256": "dbb02b5250e89af4a871f4ea6a5fb975f1383baf81192cb2033a715f86424107",
+      "size": 50
+    },
+    {
       "file": "loon/37games/37games/37games.list",
       "kind": "client_rules",
       "rule_count": 2,
@@ -10192,6 +10208,14 @@
       "scope": "mihomo",
       "sha256": "64c0ff004fb1069fe46c0cf54b5ae6798b18ca6adfff98787d754a28a8cc929f",
       "size": 456
+    },
+    {
+      "file": "mihomo/1688/1688/1688.yaml",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "mihomo",
+      "sha256": "5fc114865e8ba2e735d810c2a46822b5728dca4dbc08a2ab85173917f7a7d137",
+      "size": 67
     },
     {
       "file": "mihomo/37games/37games/37games.yaml",
@@ -15074,6 +15098,14 @@
       "size": 477
     },
     {
+      "file": "quantumultx/1688/1688/1688.list",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "quantumultx",
+      "sha256": "6f4db15a68cbc7b70791ef6eb135e0f4431ed05946cf7acb5bf0b4993fc5d6fe",
+      "size": 62
+    },
+    {
       "file": "quantumultx/37games/37games/37games.list",
       "kind": "client_rules",
       "rule_count": 2,
@@ -19688,6 +19720,14 @@
       "scope": "shadowrocket",
       "sha256": "566a9d335ced77bb3c7aa00d2b5f8f9e5fecd40760cabec377dedb1aa1a80646",
       "size": 387
+    },
+    {
+      "file": "shadowrocket/1688/1688/1688.list",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "shadowrocket",
+      "sha256": "dbb02b5250e89af4a871f4ea6a5fb975f1383baf81192cb2033a715f86424107",
+      "size": 50
     },
     {
       "file": "shadowrocket/37games/37games/37games.list",
@@ -24306,6 +24346,14 @@
       "size": 423
     },
     {
+      "file": "singbox/1688/1688/1688.json",
+      "kind": "client_rules",
+      "rule_count": 0,
+      "scope": "singbox",
+      "sha256": "b998d0baa6735d965efff9e80e0f834d1378849892488a5ac2bc401f0f7a372b",
+      "size": 125
+    },
+    {
       "file": "singbox/37games/37games/37games.json",
       "kind": "client_rules",
       "rule_count": 0,
@@ -28922,6 +28970,14 @@
       "size": 387
     },
     {
+      "file": "surge/1688/1688/1688.list",
+      "kind": "client_rules",
+      "rule_count": 2,
+      "scope": "surge",
+      "sha256": "dbb02b5250e89af4a871f4ea6a5fb975f1383baf81192cb2033a715f86424107",
+      "size": 50
+    },
+    {
       "file": "surge/37games/37games/37games.list",
       "kind": "client_rules",
       "rule_count": 2,
@@ -33522,7 +33578,7 @@
       "size": 54
     }
   ],
-  "generated_at": "2026-09-28T00:46:06.520770+00:00",
+  "generated_at": "2026-09-28T04:05:59.268607+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "layout_schema": "directory_layout_v2",
   "network_dataset_directories": [
