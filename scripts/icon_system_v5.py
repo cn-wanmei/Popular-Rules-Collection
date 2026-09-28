@@ -16,6 +16,9 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 from urllib.request import HTTPRedirectHandler, Request, build_opener
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import threading
+import time
 import xml.etree.ElementTree as ET
 
 import yaml
@@ -408,20 +411,39 @@ class LimitedRedirectHandler(HTTPRedirectHandler):
         return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 
-def fetch_bytes(url: str, *, timeout: int, max_bytes: int, user_agent: str, max_redirects: int, accept: str) -> tuple[bytes, dict]:
+def fetch_bytes(
+    url: str,
+    *,
+    timeout: int,
+    max_bytes: int,
+    user_agent: str,
+    max_redirects: int,
+    accept: str,
+    max_retries: int = 3,
+) -> tuple[bytes, dict]:
     if not url.lower().startswith("https://"):
         raise ValueError(f"non-https url rejected: {url}")
-    handler = LimitedRedirectHandler(max_redirects=max_redirects)
-    opener = build_opener(handler)
-    req = Request(url, headers={"User-Agent": user_agent, "Accept": accept})
-    with opener.open(req, timeout=timeout) as resp:
-        data = resp.read(max_bytes + 1)
-        if len(data) > max_bytes:
-            raise ValueError(f"response exceeds max_bytes={max_bytes}")
-        headers = {k.lower(): v for k, v in resp.headers.items()}
-        headers["final_url"] = resp.geturl()
-        headers["status"] = str(getattr(resp, "status", 200))
-        return data, headers
+    last_exc: Exception | None = None
+    for attempt in range(1, max(1, max_retries) + 1):
+        try:
+            handler = LimitedRedirectHandler(max_redirects=max_redirects)
+            opener = build_opener(handler)
+            req = Request(url, headers={"User-Agent": user_agent, "Accept": accept})
+            with opener.open(req, timeout=timeout) as resp:
+                data = resp.read(max_bytes + 1)
+                if len(data) > max_bytes:
+                    raise ValueError(f"response exceeds max_bytes={max_bytes}")
+                headers = {k.lower(): v for k, v in resp.headers.items()}
+                headers["final_url"] = resp.geturl()
+                headers["status"] = str(getattr(resp, "status", 200))
+                return data, headers
+        except Exception as exc:  # network flaky: retry then bubble
+            last_exc = exc
+            if attempt >= max_retries:
+                break
+            time.sleep(min(8.0, 2.0 ** attempt))
+    assert last_exc is not None
+    raise last_exc
 
 
 def validate_source(content: bytes, content_type: str | None, url: str) -> str:
@@ -1000,6 +1022,111 @@ def cmd_discover(args: argparse.Namespace) -> int:
     return 0
 
 
+
+def _service_variants_complete(out: Path, sid: str) -> bool:
+    """True when all 8 variant SVG paths exist under styles/."""
+    for style in VARIANTS:
+        style_dir = style.replace("_", "-")
+        path = out / "styles" / style_dir / (slug(sid) + ".svg")
+        if not path.is_file() or path.stat().st_size < 32:
+            return False
+    return True
+
+
+def _process_one_row(
+    row: dict,
+    *,
+    official: dict,
+    policy: dict,
+    cache: dict,
+    cache_dir: Path,
+    asset_cache: dict,
+    out: Path,
+    lineage: dict,
+    refresh: bool,
+    cache_lock: threading.Lock,
+) -> dict:
+    """Acquire + render one service (thread-safe via cache_lock for shared dicts)."""
+    try:
+        with cache_lock:
+            source = acquire_source(row, official, policy, cache, cache_dir, asset_cache, refresh=refresh)
+        if source.get("status") != "ok":
+            return {
+                **row,
+                "icon_identity": f"service:{row['service_id']}",
+                "source": {"origin": "hold", "digest": None, "reason": source.get("reason"), "quality": QUALITY_LOW, "source_px": 0},
+                "variants": {},
+                "lineage": {**lineage, "source_digest": None, "renderer_version": RENDERER_VERSION},
+                "release_eligible": False,
+            }
+        sid = row["service_id"]
+        kind = source["source_kind"]
+        href = svg_data_url(source["content"], kind if kind in ("svg", "png", "webp", "ico", "jpg") else "png")
+        normalized = (
+            f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">'
+            f'<image href="{href}" x="96" y="96" width="320" height="320" preserveAspectRatio="xMidYMid meet"/></svg>'
+        )
+        np = out / "normalized" / (sid + ".svg")
+        np.parent.mkdir(parents=True, exist_ok=True)
+        np.write_text(normalized, encoding="utf-8")
+        variants = {}
+        q = str(source.get("quality") or QUALITY_MEDIUM)
+        display = str(row.get("display_name") or sid)
+        for style, renderer in RENDERERS.items():
+            # Renderers consume image data-URL (href), not outer wrapper SVG
+            svg = renderer(href, display)
+            style_dir = style.replace("_", "-")
+            sp = out / "styles" / style_dir / (slug(sid) + ".svg")
+            sp.parent.mkdir(parents=True, exist_ok=True)
+            sp.write_text(svg, encoding="utf-8")
+            variants[style] = {"path": str(sp.relative_to(out)), "digest": sha256(svg)}
+            try:
+                sizes = list((policy.get("render") or {}).get("png_sizes") or [])
+                if sizes:
+                    render_pngs(svg, out, sid, style, sizes)
+            except Exception:
+                pass
+        src_meta = {
+            "origin": source.get("origin"),
+            "digest": source.get("source_digest"),
+            "url": source.get("url"),
+            "quality": q,
+            "source_px": source.get("source_px") or 0,
+            "source_kind": source.get("source_kind"),
+            "source_type": source.get("source_type") or source.get("source_kind"),
+            "official": bool(source.get("official")),
+            "fallback": bool(source.get("fallback")),
+            "seed": bool(source.get("seed")),
+            "frame_count": source.get("frame_count"),
+            "selected_frame": source.get("selected_frame"),
+            "is_vector": bool(source.get("is_vector")),
+            "score": source.get("score"),
+            "http_status": source.get("http_status"),
+            "fetched_at": source.get("fetched_at"),
+            "preferred_styles_if_low_res": list(LOW_RES_PREFERRED_STYLES) if q == QUALITY_LOW else None,
+        }
+        return {
+            **row,
+            "icon_identity": f"service:{row['service_id']}",
+            "source": src_meta,
+            "normalized": {"path": str(np.relative_to(out)), "digest": sha256(normalized)},
+            "variants": variants,
+            "lineage": {**lineage, "source_digest": source.get("source_digest"), "renderer_version": RENDERER_VERSION},
+            "release_eligible": len(variants) == 8,
+            "_quality_bucket": q,
+        }
+    except Exception as exc:
+        return {
+            **row,
+            "icon_identity": f"service:{row['service_id']}",
+            "source": {"origin": "error", "digest": None, "reason": f"{type(exc).__name__}: {exc}", "quality": QUALITY_LOW, "source_px": 0},
+            "variants": {},
+            "lineage": {**lineage, "source_digest": None, "renderer_version": RENDERER_VERSION},
+            "release_eligible": False,
+            "_quality_bucket": QUALITY_LOW,
+        }
+
+
 def cmd_build(args: argparse.Namespace) -> int:
     policy, official = load_yaml(POLICY), _normalize_official(load_yaml(OFFICIAL_SITES))
     if args.rule_index:
@@ -1036,120 +1163,76 @@ def cmd_build(args: argparse.Namespace) -> int:
     if args.rule_index:
         lineage["run_id"] = lineage["run_id"] or "bootstrap-rule-index-run"
         lineage["snapshot_id"] = lineage["snapshot_id"] or lineage["run_id"] or "bootstrap-rule-index"
-        lineage["ir_digest"] = lineage["ir_digest"] or "bootstrap-no-ir-digest"
-    if args.strict and not all(lineage.values()):
-        print(json.dumps({"status": "blocked", "reason": "strict build requires run_id, snapshot_id and ir_digest", "lineage": lineage}, ensure_ascii=False))
+        lineage["ir_digest"] = lineage["ir_digest"] or ""  # never invent fake digest
+    if args.strict and (not lineage.get("run_id") or not lineage.get("snapshot_id")):
+        print(json.dumps({"status": "blocked", "reason": "strict build requires run_id and snapshot_id", "lineage": lineage}, ensure_ascii=False))
         return 1
 
-    results = []
-    quality_summary = {QUALITY_HIGH: 0, QUALITY_MEDIUM: 0, QUALITY_ACCEPTABLE: 0, QUALITY_LOW: 0}
-
-    for row in rows:
+    # Optional service filter (JSON list or comma-separated)
+    only: set[str] | None = None
+    raw_services = getattr(args, "services", None)
+    if raw_services:
         try:
-            source = acquire_source(row, official, policy, cache, cache_dir, asset_cache, refresh=bool(args.refresh))
-            if source.get("status") != "ok":
-                results.append(
-                    {
-                        **row,
-                        "icon_identity": f"service:{row['service_id']}",
-                        "source": {"origin": "hold", "digest": None, "reason": source.get("reason"), "quality": QUALITY_LOW, "source_px": 0},
-                        "variants": {},
-                        "lineage": {**lineage, "source_digest": None, "renderer_version": RENDERER_VERSION},
-                        "release_eligible": False,
-                    }
-                )
-                continue
-            sid = row["service_id"]
-            kind = source["source_kind"]
-            href = svg_data_url(source["content"], kind if kind in ("svg", "png", "webp", "ico", "jpg") else "png")
-            normalized = (
-                f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">'
-                f'<image href="{href}" x="96" y="96" width="320" height="320" preserveAspectRatio="xMidYMid meet"/></svg>'
-            )
-            np = out / "normalized" / (sid + ".svg")
-            np.parent.mkdir(parents=True, exist_ok=True)
-            np.write_text(normalized, encoding="utf-8")
-            variants = {}
-            q = str(source.get("quality") or QUALITY_MEDIUM)
-            quality_summary[q] = quality_summary.get(q, 0) + 1
-            # low_res: still render all 8 styles for coverage, but mark preference
-            for style, renderer in RENDERERS.items():
-                svg = renderer(href, str(row.get("display_name") or sid))
-                style_dir = style.replace("_", "-")
-                sp = out / "styles" / style_dir / (slug(sid) + ".svg")
-                sp.parent.mkdir(parents=True, exist_ok=True)
-                sp.write_text(svg, encoding="utf-8")
-                variants[style] = {
-                    "path": str(sp.relative_to(out)),
-                    "digest": sha256(svg),
-                    "png": render_pngs(svg, out, row["service_id"], style, list(policy["render"]["png_sizes"])),
-                }
-            src_meta = {
-                "origin": (
-                    "official_registered"
-                    if source.get("resolution_reason") == "registered_official"
-                    else "reviewed_local_seed"
-                    if source.get("resolution_reason") == "reviewed_local_seed"
-                    else "semantic_fallback"
-                    if source.get("resolution_reason") == "semantic_fallback_glyph"
-                    else "low_res_last_resort"
-                    if source.get("resolution_reason") == "low_res_last_resort"
-                    else "official_discovered"
-                ),
-                "homepage_url": source.get("homepage_url"),
-                "source_url": source.get("source_url"),
-                "content_type": source.get("content_type"),
-                "digest": source.get("source_digest"),
-                "rights_basis": (
-                    "official_site_asset"
-                    if source.get("resolution_reason")
-                    in {"registered_official", "rule_domain_candidate", "official_discovered", "low_res_last_resort"}
-                    else "reviewed_local_seed"
-                    if source.get("resolution_reason") == "reviewed_local_seed"
-                    else "semantic_glyph"
-                ),
-                "redistribution_status": "review",
-                "resolution_reason": source.get("resolution_reason"),
-                "http_status": source.get("http_status"),
-                "content_length": source.get("content_length"),
-                "fetched_at": source.get("fetched_at"),
-                # Quality metadata (plan §10)
-                "source_px": source.get("source_px"),
-                "width": source.get("width"),
-                "height": source.get("height"),
-                "quality": q,
-                "source_type": source.get("source_type") or source.get("source_kind"),
-                "official": bool(source.get("official")),
-                "fallback": bool(source.get("fallback")),
-                "seed": bool(source.get("seed")),
-                "frame_count": source.get("frame_count"),
-                "selected_frame": source.get("selected_frame"),
-                "is_vector": bool(source.get("is_vector")),
-                "score": source.get("score"),
-                "preferred_styles_if_low_res": list(LOW_RES_PREFERRED_STYLES) if q == QUALITY_LOW else None,
-            }
-            results.append(
-                {
-                    **row,
-                    "icon_identity": f"service:{row['service_id']}",
-                    "source": src_meta,
-                    "normalized": {"path": str(np.relative_to(out)), "digest": sha256(normalized)},
-                    "variants": variants,
-                    "lineage": {**lineage, "source_digest": source.get("source_digest"), "renderer_version": RENDERER_VERSION},
-                    "release_eligible": True,
-                }
-            )
-        except Exception as exc:
-            results.append(
-                {
-                    **row,
-                    "icon_identity": f"service:{row['service_id']}",
-                    "source": {"origin": "error", "digest": None, "reason": f"{type(exc).__name__}: {exc}", "quality": QUALITY_LOW, "source_px": 0},
-                    "variants": {},
-                    "lineage": {**lineage, "source_digest": None, "renderer_version": RENDERER_VERSION},
-                    "release_eligible": False,
-                }
-            )
+            parsed = json.loads(raw_services) if str(raw_services).strip().startswith("[") else [x.strip() for x in str(raw_services).split(",") if x.strip()]
+            only = {str(x) for x in parsed}
+        except Exception:
+            only = {x.strip() for x in str(raw_services).split(",") if x.strip()}
+        rows = [r for r in rows if str(r.get("service_id")) in only]
+
+    # Incremental: skip services that already have complete 8-variant tree + registry entry
+    if getattr(args, "incremental", False) and not getattr(args, "refresh", False):
+        prev = {}
+        reg_path = out / "registry.json"
+        if reg_path.is_file():
+            try:
+                prev = {str(e.get("service_id")): e for e in (load_json(reg_path).get("entries") or []) if e.get("service_id")}
+            except Exception:
+                prev = {}
+        kept = []
+        todo = []
+        for r in rows:
+            sid = str(r.get("service_id"))
+            if sid in prev and prev[sid].get("release_eligible") and _service_variants_complete(out, sid):
+                kept.append(prev[sid])
+            else:
+                todo.append(r)
+        print(json.dumps({"incremental": True, "cached_services": len(kept), "to_build": len(todo)}, ensure_ascii=False))
+        rows = todo
+        results = list(kept)
+    else:
+        results = []
+
+    quality_summary = {QUALITY_HIGH: 0, QUALITY_MEDIUM: 0, QUALITY_ACCEPTABLE: 0, QUALITY_LOW: 0}
+    cache_lock = threading.Lock()
+    concurrency = max(1, int(getattr(args, "concurrency", 1) or 1))
+
+    def _run(row: dict) -> dict:
+        return _process_one_row(
+            row,
+            official=official,
+            policy=policy,
+            cache=cache,
+            cache_dir=cache_dir,
+            asset_cache=asset_cache,
+            out=out,
+            lineage=lineage,
+            refresh=bool(args.refresh),
+            cache_lock=cache_lock,
+        )
+
+    if concurrency == 1:
+        built = [_run(row) for row in rows]
+    else:
+        built = []
+        with ThreadPoolExecutor(max_workers=concurrency) as pool:
+            futs = {pool.submit(_run, row): row for row in rows}
+            for fut in as_completed(futs):
+                built.append(fut.result())
+
+    for item in built:
+        q = item.pop("_quality_bucket", None) or (item.get("source") or {}).get("quality") or QUALITY_LOW
+        quality_summary[q] = quality_summary.get(q, 0) + 1
+        results.append(item)
 
     save_cache(cache_dir, cache)
     complete = sum(1 for r in results if r.get("release_eligible") and len(r.get("variants") or {}) == 8)
@@ -1270,6 +1353,104 @@ def cmd_gate(args: argparse.Namespace) -> int:
     return 0 if not errors else 1
 
 
+
+def cmd_gap_detect(args: argparse.Namespace) -> int:
+    """Compare rule index services vs registry entries (8-variant SSOT)."""
+    rows = discover_services_from_rule_index(Path(args.rule_index))
+    index_ids = [str(r.get("service_id")) for r in rows]
+    reg_path = Path(args.registry)
+    entries = []
+    if reg_path.is_file():
+        reg = load_json(reg_path)
+        entries = reg.get("entries") or []
+    present = {
+        str(e.get("service_id"))
+        for e in entries
+        if e.get("release_eligible") and len(e.get("variants") or {}) == 8
+    }
+    gap = [sid for sid in index_ids if sid not in present]
+    orphan = sorted(present - set(index_ids))
+    report = {
+        "schema": "icon_gap_report_v5",
+        "variants": list(VARIANTS),
+        "index_service_count": len(index_ids),
+        "registry_complete_8_of_8": len(present),
+        "coverage_gap": gap,
+        "orphan_icons": orphan,
+        "gap_count": len(gap),
+    }
+    out = Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"status": "ok", "gap_count": len(gap), "out": str(out)}, ensure_ascii=False))
+    return 0
+
+
+def cmd_registry_merge(args: argparse.Namespace) -> int:
+    """Merge patch registry entries into base (by service_id)."""
+    base = load_json(Path(args.base)) if Path(args.base).is_file() else {"schema": "icon_registry_v5", "entries": []}
+    patch = load_json(Path(args.patch))
+    by = {str(e.get("service_id")): e for e in (base.get("entries") or []) if e.get("service_id")}
+    for e in patch.get("entries") or []:
+        sid = str(e.get("service_id") or "")
+        if sid:
+            by[sid] = e
+    entries = list(by.values())
+    complete = sum(1 for e in entries if e.get("release_eligible") and len(e.get("variants") or {}) == 8)
+    base["entries"] = entries
+    base["variants"] = list(VARIANTS)
+    base["renderer_version"] = RENDERER_VERSION
+    base["generated_at"] = datetime.now(timezone.utc).isoformat()
+    base["coverage"] = {
+        "service_count": len(entries),
+        "complete_8_of_8": complete,
+        "missing": [e["service_id"] for e in entries if not (e.get("release_eligible") and len(e.get("variants") or {}) == 8)],
+    }
+    out = Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(base, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"status": "ok", "service_count": len(entries), "complete_8_of_8": complete, "out": str(out)}, ensure_ascii=False))
+    return 0
+
+
+def cmd_audit_match(args: argparse.Namespace) -> int:
+    """Report brand-match risks using registry provenance + official_sites."""
+    rows = discover_services_from_rule_index(Path(args.rule_index))
+    official = _normalize_official(load_yaml(OFFICIAL_SITES))
+    reg = load_json(Path(args.registry)) if Path(args.registry).is_file() else {}
+    by_reg = {str(e.get("service_id")): e for e in (reg.get("entries") or [])}
+    issues = []
+    for row in rows:
+        sid = str(row.get("service_id"))
+        entry = by_reg.get(sid) or {}
+        src = entry.get("source") or {}
+        origin = str(src.get("origin") or "")
+        url = str(src.get("url") or "")
+        off_url, _ = _official_entry(official, sid)
+        parent = str(row.get("provider") or row.get("provider_aggregate") or "")
+        if origin in ("semantic_fallback", "glyph", "hold") and off_url:
+            issues.append({"service": sid, "issue_type": "glyph_when_official_available", "severity": "high", "available_url": off_url})
+        if "favicon.ico" in url and off_url and off_url != url:
+            issues.append({"service": sid, "issue_type": "favicon_when_better_available", "severity": "high", "current_url": url, "recommended_url": off_url})
+        if parent and parent != sid and origin in ("inherited", "provider_aggregate"):
+            issues.append({"service": sid, "issue_type": "child_using_parent_icon", "severity": "medium", "parent": parent})
+        q = src.get("quality")
+        if q == QUALITY_LOW:
+            issues.append({"service": sid, "issue_type": "low_res_source", "severity": "medium", "source_px": src.get("source_px")})
+    report = {
+        "schema": "icon_match_audit_v5",
+        "variants": list(VARIANTS),
+        "total_services": len(rows),
+        "issues_found": len(issues),
+        "issues": sorted(issues, key=lambda x: {"high": 0, "medium": 1, "low": 2}.get(x.get("severity"), 9)),
+    }
+    out = Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"status": "ok", "issues_found": len(issues), "out": str(out)}, ensure_ascii=False))
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     ap = argparse.ArgumentParser(description="Icon System V5")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -1293,7 +1474,25 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--strict", action="store_true")
     p.add_argument("--allow-partial", action="store_true")
     p.add_argument("--refresh", action="store_true")
+    p.add_argument("--concurrency", type=int, default=8, help="Parallel service workers (default 8)")
+    p.add_argument("--incremental", action="store_true", help="Skip services with complete 8/8 variant tree")
+    p.add_argument("--services", help="JSON list or comma-separated service_ids to build")
     p.set_defaults(func=cmd_build)
+    p = sub.add_parser("gap-detect")
+    p.add_argument("--registry", required=True)
+    p.add_argument("--rule-index", required=True)
+    p.add_argument("--out", required=True)
+    p.set_defaults(func=cmd_gap_detect)
+    p = sub.add_parser("registry-merge")
+    p.add_argument("--base", required=True)
+    p.add_argument("--patch", required=True)
+    p.add_argument("--out", required=True)
+    p.set_defaults(func=cmd_registry_merge)
+    p = sub.add_parser("audit-match")
+    p.add_argument("--registry", required=True)
+    p.add_argument("--rule-index", required=True)
+    p.add_argument("--out", required=True)
+    p.set_defaults(func=cmd_audit_match)
     p = sub.add_parser("gate")
     p.add_argument("--registry", required=True)
     p.add_argument("--rule-index")
