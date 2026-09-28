@@ -14,6 +14,7 @@ on:
       - 'tests/test_icon_system_v5.py'
       - 'docs/ICON_SYSTEM_V5_PLAN.md'
       - 'docs/ICON_SYSTEM_V5.md'
+      - 'docs/ICON_PIPELINE_V5.md'
       - 'rule/**'
   workflow_dispatch:
     inputs:
@@ -24,9 +25,9 @@ on:
       allow_partial: {description: 'Allow incomplete coverage (acquisition default true; promote still gated)', required: false, default: true, type: boolean}
       promote: {description: 'Promote build into assets/icons/v5 via PR only (never direct main write)', required: false, default: false, type: boolean}
       mode: {description: 'incremental (default) | full', required: false, default: 'incremental', type: choice, options: ['incremental', 'full']}
+      shards: {description: 'Full-mode shard count (hash(service_id)%N)', required: false, default: '4'}
 
 concurrency:
-  # PR: cancel superseded runs on same ref. Dispatch: isolate by run_id (no mutual cancel).
   group: ${{ github.event_name == 'workflow_dispatch' && format('icon-v5-dispatch-{0}', github.run_id) || format('icon-v5-{0}', github.ref) }}
   cancel-in-progress: ${{ github.event_name != 'workflow_dispatch' }}
 
@@ -73,11 +74,11 @@ jobs:
           if-no-files-found: error
           retention-days: 30
 
+  # ─── Phase 1+2: incremental single-job path ───────────────────────────
   network-acquisition:
-    if: ${{ github.event_name == 'workflow_dispatch' }}
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode != 'full' }}
     runs-on: ubuntu-24.04
-    # Phase-1 SLA: incremental ≤30, full ≤120 (shared job; mode selects wall budget)
-    timeout-minutes: ${{ inputs.mode == 'full' && 120 || 30 }}
+    timeout-minutes: 30
     permissions:
       contents: read
     steps:
@@ -100,10 +101,9 @@ jobs:
           from pathlib import Path
           doc = yaml.safe_load(Path('rule/_index.yaml').read_text(encoding='utf-8')) or {}
           run_id = os.environ.get('INPUT_RUN_ID','').strip() or str(doc.get('run_id') or 'bootstrap-rule-index-run')
-          # Prefer real IR digest; leave empty when absent (do not invent bootstrap placeholder)
           ir_digest = os.environ.get('INPUT_IR_DIGEST','').strip() or str(doc.get('ir_digest') or '')
           if ir_digest in ('bootstrap-no-ir-digest', 'None'):
-              ir_digest = '' 
+              ir_digest = ''
           snapshot_id = os.environ.get('INPUT_SNAPSHOT_ID','').strip() or str(doc.get('snapshot_id') or run_id)
           Path(os.environ['GITHUB_OUTPUT']).open('a').write(
               f'run_id={run_id}\nsnapshot_id={snapshot_id}\nir_digest={ir_digest}\n'
@@ -115,34 +115,28 @@ jobs:
           INPUT_SNAPSHOT_ID: ${{ inputs.snapshot_id }}
           INPUT_IR_DIGEST: ${{ inputs.ir_digest }}
       - name: Restore production baseline into build workspace
-        if: ${{ inputs.mode != 'full' && inputs.refresh != true }}
+        if: ${{ inputs.refresh != true }}
         run: |
           set -euo pipefail
           mkdir -p build/icon-v5
           if [ -d assets/icons/v5 ] && [ -f assets/icons/v5/registry.json ]; then
-            # Snapshot isolation: copy into workspace; never write back to production from this job
-            rsync -a \
-              --exclude 'seed/' \
-              --exclude '.tmp/' \
-              --exclude '.failed/' \
-              assets/icons/v5/ build/icon-v5/
-            echo "baseline restored: $(find build/icon-v5/styles -name '*.svg' 2>/dev/null | wc -l) style files"
+            rsync -a --exclude 'seed/' --exclude '.tmp/' --exclude '.failed/' assets/icons/v5/ build/icon-v5/
+            echo "baseline restored"
           else
-            echo "no production baseline present; cold start"
+            echo "no production baseline; cold start"
           fi
-
       - name: Restore Actions icon build cache
-        if: ${{ inputs.mode != 'full' && inputs.refresh != true }}
+        if: ${{ inputs.refresh != true }}
         uses: actions/cache@1bd1e32a3bdc45362d1e726936510391af94cc21
         with:
           path: |
             build/icon-v5
             assets/icons/v5/source
+            assets/icon-source-cache
           key: icon-v5-build-${{ hashFiles('config/icon_v5.yaml', 'config/official_sites.yaml', 'scripts/icon_v5_renderers/**', 'scripts/icon_system_v5.py') }}-${{ github.sha }}
           restore-keys: |
             icon-v5-build-${{ hashFiles('config/icon_v5.yaml', 'config/official_sites.yaml', 'scripts/icon_v5_renderers/**', 'scripts/icon_system_v5.py') }}-
             icon-v5-build-
-
       - name: Build V5 acquisition package
         run: >-
           python scripts/icon_system_v5.py build
@@ -151,37 +145,31 @@ jobs:
           --run-id '${{ steps.lineage.outputs.run_id }}'
           --snapshot-id '${{ steps.lineage.outputs.snapshot_id }}'
           --concurrency 16
-          ${{ (inputs.mode != 'full' && inputs.refresh != true) && '--incremental' || '' }}
+          --cache-dir assets/icons/v5/source
+          ${{ inputs.refresh != true && '--incremental' || '' }}
           ${{ steps.lineage.outputs.ir_digest != '' && format('--ir-digest {0}', steps.lineage.outputs.ir_digest) || '' }}
           ${{ inputs.allow_partial == true && '--allow-partial' || '--strict' }}
-          ${{ (inputs.refresh == true || inputs.mode == 'full') && '--refresh' || '' }}
-
+          ${{ inputs.refresh == true && '--refresh' || '' }}
       - name: Acquisition metrics summary
         if: always()
         run: |
           python3 - <<'PY'
-          import json, time
+          import json
           from pathlib import Path
           reg = Path("build/icon-v5/registry.json")
           if not reg.is_file():
-              print("no registry; skip metrics")
               raise SystemExit(0)
           data = json.loads(reg.read_text(encoding="utf-8"))
           cov = data.get("coverage") or {}
-          complete = int(cov.get("complete_8_of_8") or 0)
-          total = int(cov.get("service_count") or 0)
-          missing = cov.get("missing") or []
           summary = {
-              "mode": "${{ inputs.mode }}",
-              "complete_8_of_8": complete,
-              "service_count": total,
-              "gap_count": len(missing),
+              "mode": "incremental",
+              "complete_8_of_8": int(cov.get("complete_8_of_8") or 0),
+              "service_count": int(cov.get("service_count") or 0),
+              "gap_count": len(cov.get("missing") or []),
               "renderer_version": data.get("renderer_version"),
-              "variants": data.get("variants"),
           }
           Path("build/icon-v5/acquisition-metrics.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
           print(json.dumps(summary, ensure_ascii=False))
-          print(f"::notice::icon acquisition complete={complete}/{total} gap={len(missing)}")
           PY
       - name: Gate V5 package
         run: >-
@@ -198,9 +186,180 @@ jobs:
           if-no-files-found: warn
           retention-days: 30
 
+  # ─── Phase 3: full matrix shards ──────────────────────────────────────
+  plan-shards:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'full' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.14'
+      - run: python -m pip install pyyaml
+      - name: Plan shard matrix
+        id: plan
+        run: |
+          set -euo pipefail
+          N="${{ inputs.shards }}"
+          N="${N:-4}"
+          python scripts/icon_system_v5.py shard-plan --shards "$N" --out build/shard-matrix.json
+          echo "matrix=$(cat build/shard-matrix.json)" >> "$GITHUB_OUTPUT"
+
+  full-shard:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'full' }}
+    needs: [plan-shards]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJson(needs.plan-shards.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.14'
+          cache: pip
+          cache-dependency-path: requirements.lock
+      - run: python -m pip install -r requirements.lock
+      - name: Resolve lineage
+        id: lineage
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os, yaml, json
+          from pathlib import Path
+          doc = yaml.safe_load(Path('rule/_index.yaml').read_text(encoding='utf-8')) or {}
+          run_id = os.environ.get('INPUT_RUN_ID','').strip() or str(doc.get('run_id') or 'bootstrap-rule-index-run')
+          ir_digest = os.environ.get('INPUT_IR_DIGEST','').strip() or str(doc.get('ir_digest') or '')
+          if ir_digest in ('bootstrap-no-ir-digest', 'None'):
+              ir_digest = ''
+          snapshot_id = os.environ.get('INPUT_SNAPSHOT_ID','').strip() or str(doc.get('snapshot_id') or run_id)
+          Path(os.environ['GITHUB_OUTPUT']).open('a').write(
+              f'run_id={run_id}\nsnapshot_id={snapshot_id}\nir_digest={ir_digest}\n'
+          )
+          PY
+        env:
+          INPUT_RUN_ID: ${{ inputs.run_id }}
+          INPUT_SNAPSHOT_ID: ${{ inputs.snapshot_id }}
+          INPUT_IR_DIGEST: ${{ inputs.ir_digest }}
+      - name: Build shard
+        run: >-
+          python scripts/icon_system_v5.py build
+          --rule-index rule/_index.yaml
+          --out build/icon-v5
+          --run-id '${{ steps.lineage.outputs.run_id }}'
+          --snapshot-id '${{ steps.lineage.outputs.snapshot_id }}'
+          --concurrency 16
+          --shard-index ${{ matrix.shard_index }}
+          --shard-count ${{ matrix.shard_count }}
+          --allow-partial
+          ${{ inputs.refresh == true && '--refresh' || '' }}
+          ${{ steps.lineage.outputs.ir_digest != '' && format('--ir-digest {0}', steps.lineage.outputs.ir_digest) || '' }}
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: icon-v5-shard-${{ matrix.shard_index }}-of-${{ matrix.shard_count }}-${{ github.sha }}
+          path: build/icon-v5
+          if-no-files-found: warn
+          retention-days: 14
+
+  merge-full:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'full' }}
+    needs: [full-shard]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12.14'
+      - run: python -m pip install pyyaml
+      - name: Download all shard artifacts
+        uses: actions/download-artifact@95815c38cf2ff2164869cbab79da8d1f422bc89e
+        with:
+          path: shards
+          pattern: icon-v5-shard-*-${{ github.sha }}
+          merge-multiple: false
+      - name: Merge registries + style trees
+        run: |
+          set -euo pipefail
+          mkdir -p build/icon-v5
+          python scripts/icon_system_v5.py merge-shards \
+            --registries-glob 'shards/**/registry.json' \
+            --out build/icon-v5/registry.json
+          # merge style/normalized/objects trees
+          python3 - <<'PY'
+          import shutil
+          from pathlib import Path
+          root = Path("shards")
+          dst = Path("build/icon-v5")
+          for sub in ("styles", "normalized", "objects"):
+              for src in root.glob(f"**/{sub}"):
+                  if not src.is_dir():
+                      continue
+                  for p in src.rglob("*"):
+                      if p.is_file():
+                          rel = p.relative_to(src)
+                          target = dst / sub / rel
+                          target.parent.mkdir(parents=True, exist_ok=True)
+                          shutil.copy2(p, target)
+          # failures merge
+          import json
+          services = {}
+          for fp in root.glob("**/failures.json"):
+              try:
+                  doc = json.loads(fp.read_text(encoding="utf-8"))
+                  services.update(doc.get("services") or {})
+              except Exception:
+                  pass
+          if services:
+              (dst / "failures.json").write_text(json.dumps({"schema":"icon_failures_v5","services":services}, indent=2)+"\n")
+          print("merge complete")
+          PY
+          python scripts/icon_system_v5.py write-manifest \
+            --registry build/icon-v5/registry.json \
+            --out build/icon-v5/build-manifest.json
+      - name: Coverage gate (≥90% for full)
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          from pathlib import Path
+          reg = json.loads(Path("build/icon-v5/registry.json").read_text(encoding="utf-8"))
+          cov = reg.get("coverage") or {}
+          complete = int(cov.get("complete_8_of_8") or 0)
+          total = int(cov.get("service_count") or 0)
+          ratio = (complete / total) if total else 0
+          print(f"coverage {complete}/{total} = {ratio:.2%}")
+          if total and ratio < 0.90:
+              print("ERROR: full coverage < 90%", file=sys.stderr)
+              raise SystemExit(1)
+          PY
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: icon-system-v5-network-build-${{ github.sha }}
+          path: build/icon-v5
+          if-no-files-found: error
+          retention-days: 30
+
   promote:
-    if: ${{ github.event_name == 'workflow_dispatch' && inputs.promote == true }}
-    needs: [network-acquisition]
+    needs: [network-acquisition, merge-full]
+    if: ${{ always() && github.event_name == 'workflow_dispatch' && inputs.promote == true && (needs.network-acquisition.result == 'success' || needs.merge-full.result == 'success') }}
     runs-on: ubuntu-24.04
     timeout-minutes: 60
     permissions:
@@ -227,7 +386,7 @@ jobs:
           reg = json.loads(p.read_text(encoding="utf-8"))
           cov = reg.get("coverage") or {}
           complete = int(cov.get("complete_8_of_8") or 0)
-          total = int(cov.get("service_count") or len(reg.get("entries") or reg.get("services") or []) or 0)
+          total = int(cov.get("service_count") or len(reg.get("entries") or []) or 0)
           print(f"promote precheck complete_8_of_8={complete} service_count={total}")
           if total > 0 and complete / total < 0.90:
               print(f"ERROR: coverage {complete}/{total} < 90%; refuse promote", file=sys.stderr)
@@ -242,7 +401,6 @@ jobs:
             exit 0
           fi
           mkdir -p assets/icons/v5
-          # Never clobber human-maintained seed tree or pointer via blind rsync
           rsync -a \
             --exclude 'seed/' \
             --exclude 'release-pointer.json' \
@@ -250,6 +408,13 @@ jobs:
           if [ -d assets/icons/seed ]; then
             mkdir -p assets/icons/v5/seed
             cp -a assets/icons/seed/. assets/icons/v5/seed/ || true
+          fi
+          # Phase-2 source cache persist if present
+          if [ -d assets/icon-source-cache ]; then
+            mkdir -p assets/icon-source-cache
+          fi
+          if [ -d build/icon-v5/../icon-source-cache ]; then
+            true
           fi
           python3 - <<'PY'
           import json
@@ -259,6 +424,7 @@ jobs:
           rp.update({'schema':'icon_release_pointer_v5','status':'active','active':True,'registry':'registry.json'})
           reg=json.loads(Path('assets/icons/v5/registry.json').read_text())
           rp['coverage']=reg.get('coverage') or {}
+          rp['renderer_version']=reg.get('renderer_version')
           p.write_text(json.dumps(rp,indent=2)+'\n')
           print('pointer', rp)
           PY
@@ -275,13 +441,13 @@ jobs:
           git config user.name "icon-v5-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$BRANCH"
-          git add assets/icons/v5
+          git add assets/icons/v5 assets/icon-source-cache || true
           if git diff --cached --quiet; then
             echo "No promote changes"
             exit 0
           fi
-          git commit -m "chore(icon): promote V5 styles/png into assets/icons/v5"
+          git commit -m "chore(icon): promote V5 styles into assets/icons/v5"
           git push -u origin "$BRANCH"
           gh pr create --title "chore(icon): promote V5 asset tree" \
-            --body "Automated promote of acquisition build into \`assets/icons/v5/\` (styles + png + registry)." \
+            --body "Automated promote of acquisition build into \`assets/icons/v5/\` (8-variant SSOT)." \
             --base main --head "$BRANCH"

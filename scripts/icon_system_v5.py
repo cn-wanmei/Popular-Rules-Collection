@@ -33,6 +33,9 @@ from scripts.icon_v5_renderers.common import svg_data_url
 POLICY = ROOT / "config/icon_v5.yaml"
 OFFICIAL_SITES = ROOT / "config/official_sites.yaml"
 DEFAULT_CACHE = ROOT / "assets/icons/v5/source"
+SOURCE_CACHE_ROOT = ROOT / "assets/icon-source-cache"
+FAILURES_PATH_DEFAULT = ROOT / "assets/icons/v5/failures.json"
+OBJECTS_DIR_NAME = "objects"
 VARIANTS = (
     "source_original",
     "glassmorphism",
@@ -570,6 +573,81 @@ def select_manifest_icon(base_url: str, data: bytes) -> list[str]:
     return [urljoin(base_url, src) for _, src in candidates]
 
 
+
+def service_source_hash(source: dict) -> str:
+    """Stable hash for invalidation: digest preferred, else url+kind+px."""
+    dig = source.get("digest") or source.get("source_digest")
+    if dig:
+        return str(dig)
+    raw = "|".join(
+        [
+            str(source.get("url") or ""),
+            str(source.get("source_kind") or source.get("kind") or ""),
+            str(source.get("source_px") or 0),
+            str(source.get("origin") or ""),
+        ]
+    )
+    return sha256(raw)
+
+
+def cas_write_object(out_root: Path, content: bytes) -> str:
+    """Content-addressed store under out_root/objects/sha256/xx/hash. Returns hex digest."""
+    digest = sha256(content)
+    dest = out_root / OBJECTS_DIR_NAME / "sha256" / digest[:2] / digest
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    if not dest.is_file():
+        dest.write_bytes(content)
+    return digest
+
+
+def persist_source_cache_entry(sid: str, source: dict, content: bytes | None, cache_root: Path = SOURCE_CACHE_ROOT) -> None:
+    """Phase-2 disk source cache: per-service metadata + optional logo bytes."""
+    svc_dir = cache_root / slug(sid)
+    svc_dir.mkdir(parents=True, exist_ok=True)
+    meta = {
+        "service_id": sid,
+        "source_hash": service_source_hash(source),
+        "url": source.get("url"),
+        "origin": source.get("origin"),
+        "quality": source.get("quality"),
+        "source_px": source.get("source_px"),
+        "source_kind": source.get("source_kind") or source.get("kind"),
+        "renderer_version": RENDERER_VERSION,
+        "updated_at": datetime.now(timezone.utc).isoformat(),
+    }
+    (svc_dir / "source.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if content:
+        kind = str(source.get("source_kind") or source.get("kind") or "bin")
+        ext = {"svg": "svg", "png": "png", "webp": "webp", "ico": "ico", "jpg": "jpg"}.get(kind, "bin")
+        (svc_dir / f"logo.{ext}").write_bytes(content)
+
+
+def shard_of(service_id: str, shard_count: int) -> int:
+    if shard_count <= 1:
+        return 0
+    h = sha256(str(service_id))
+    return int(h[:8], 16) % shard_count
+
+
+def load_failures(path: Path) -> dict:
+    if not path.is_file():
+        return {"schema": "icon_failures_v5", "services": {}}
+    try:
+        doc = load_json(path)
+        if not isinstance(doc.get("services"), dict):
+            doc["services"] = {}
+        return doc
+    except Exception:
+        return {"schema": "icon_failures_v5", "services": {}}
+
+
+def save_failures(path: Path, doc: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    doc["schema"] = "icon_failures_v5"
+    doc["updated_at"] = datetime.now(timezone.utc).isoformat()
+    path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
 def load_cache(cache_dir: Path) -> dict:
     path = cache_dir / "cache.json"
     if not path.is_file():
@@ -1105,10 +1183,24 @@ def _process_one_row(
             "fetched_at": source.get("fetched_at"),
             "preferred_styles_if_low_res": list(LOW_RES_PREFERRED_STYLES) if q == QUALITY_LOW else None,
         }
+        # Phase-2/4: CAS + disk source cache + registry invalidation metadata
+        content_bytes = source.get("content")
+        if isinstance(content_bytes, (bytes, bytearray)):
+            try:
+                cas_write_object(out, bytes(content_bytes))
+            except Exception:
+                pass
+            try:
+                persist_source_cache_entry(sid, {**src_meta, "source_digest": source.get("source_digest")}, bytes(content_bytes))
+            except Exception:
+                pass
+        src_meta["source_hash"] = service_source_hash({**src_meta, "digest": source.get("source_digest")})
         return {
             **row,
             "icon_identity": f"service:{row['service_id']}",
             "source": src_meta,
+            "source_hash": src_meta["source_hash"],
+            "renderer_version": RENDERER_VERSION,
             "normalized": {"path": str(np.relative_to(out)), "digest": sha256(normalized)},
             "variants": variants,
             "lineage": {**lineage, "source_digest": source.get("source_digest"), "renderer_version": RENDERER_VERSION},
@@ -1179,6 +1271,12 @@ def cmd_build(args: argparse.Namespace) -> int:
             only = {x.strip() for x in str(raw_services).split(",") if x.strip()}
         rows = [r for r in rows if str(r.get("service_id")) in only]
 
+    shard_count = int(getattr(args, "shard_count", 0) or 0)
+    shard_index = int(getattr(args, "shard_index", 0) or 0)
+    if shard_count > 1:
+        rows = [r for r in rows if shard_of(str(r.get("service_id")), shard_count) == shard_index]
+        print(json.dumps({"shard_index": shard_index, "shard_count": shard_count, "shard_services": len(rows)}, ensure_ascii=False))
+
     # Incremental: skip services that already have complete 8-variant tree + registry entry
     if getattr(args, "incremental", False) and not getattr(args, "refresh", False):
         prev = {}
@@ -1192,8 +1290,17 @@ def cmd_build(args: argparse.Namespace) -> int:
         todo = []
         for r in rows:
             sid = str(r.get("service_id"))
-            if sid in prev and prev[sid].get("release_eligible") and _service_variants_complete(out, sid):
-                kept.append(prev[sid])
+            pe = prev.get(sid) or {}
+            same_renderer = str(pe.get("renderer_version") or (pe.get("lineage") or {}).get("renderer_version") or "") == RENDERER_VERSION
+            has_hash = bool(pe.get("source_hash") or (pe.get("source") or {}).get("source_hash") or (pe.get("source") or {}).get("digest"))
+            if (
+                sid in prev
+                and pe.get("release_eligible")
+                and _service_variants_complete(out, sid)
+                and same_renderer
+                and has_hash
+            ):
+                kept.append(pe)
             else:
                 todo.append(r)
         print(json.dumps({"incremental": True, "cached_services": len(kept), "to_build": len(todo)}, ensure_ascii=False))
@@ -1253,6 +1360,47 @@ def cmd_build(args: argparse.Namespace) -> int:
         "release_status": "candidate" if complete == len(results) and results else "bootstrap",
     }
     (out / "registry.json").write_text(json.dumps(registry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    # Phase-4: failures queue + build manifest
+    failures_path = Path(getattr(args, "failures_out", None) or (out / "failures.json"))
+    fail_doc = load_failures(failures_path)
+    for r in results:
+        sid = str(r.get("service_id"))
+        ok = bool(r.get("release_eligible") and len(r.get("variants") or {}) == 8)
+        if ok:
+            fail_doc.get("services", {}).pop(sid, None)
+        else:
+            prev_f = (fail_doc.get("services") or {}).get(sid) or {}
+            fail_doc.setdefault("services", {})[sid] = {
+                "service": sid,
+                "reason": (r.get("source") or {}).get("reason") or (r.get("source") or {}).get("origin") or "incomplete",
+                "retry": int(prev_f.get("retry") or 0) + 1,
+                "last_fail": datetime.now(timezone.utc).isoformat(),
+            }
+    save_failures(failures_path, fail_doc)
+
+    manifest = {
+        "schema": "icon_build_manifest_v5",
+        "version": datetime.now(timezone.utc).strftime("%Y.%m"),
+        "renderer_version": RENDERER_VERSION,
+        "variants": list(VARIANTS),
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "lineage": lineage,
+        "shard_index": int(getattr(args, "shard_index", 0) or 0),
+        "shard_count": int(getattr(args, "shard_count", 0) or 0) or 1,
+        "services": [
+            {
+                "id": str(r.get("service_id")),
+                "source_hash": r.get("source_hash") or (r.get("source") or {}).get("source_hash"),
+                "render_hash": sha256(json.dumps(r.get("variants") or {}, sort_keys=True)),
+                "release_eligible": bool(r.get("release_eligible")),
+                "renderer_version": RENDERER_VERSION,
+            }
+            for r in results
+        ],
+    }
+    (out / "build-manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
     status = "ok" if complete == len(results) else "partial"
     if args.strict and complete != len(results) and not getattr(args, "allow_partial", False):
         status = "blocked"
@@ -1451,6 +1599,85 @@ def cmd_audit_match(args: argparse.Namespace) -> int:
     return 0
 
 
+
+def cmd_shard_plan(args: argparse.Namespace) -> int:
+    """Emit GitHub Actions matrix JSON for full builds: hash(service_id)%N."""
+    n = max(1, int(args.shards))
+    matrix = {"include": [{"shard_index": i, "shard_count": n} for i in range(n)]}
+    out = Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(matrix, ensure_ascii=False) + "\n", encoding="utf-8")
+    # Also print for GITHUB_OUTPUT consumers
+    print(json.dumps(matrix, ensure_ascii=False))
+    return 0
+
+
+def cmd_merge_shards(args: argparse.Namespace) -> int:
+    """Merge multiple shard registry.json files into one."""
+    paths = [Path(p) for p in (args.registries or [])]
+    if args.registries_glob:
+        from glob import glob
+        paths.extend(Path(p) for p in sorted(glob(args.registries_glob)))
+    if not paths:
+        print(json.dumps({"status": "error", "reason": "no registries"}, ensure_ascii=False))
+        return 1
+    base: dict = {"schema": "icon_registry_v5", "entries": []}
+    for p in paths:
+        if not p.is_file():
+            continue
+        patch = load_json(p)
+        # reuse registry-merge logic
+        by = {str(e.get("service_id")): e for e in (base.get("entries") or []) if e.get("service_id")}
+        for e in patch.get("entries") or []:
+            sid = str(e.get("service_id") or "")
+            if sid:
+                by[sid] = e
+        base["entries"] = list(by.values())
+        if patch.get("renderer_version"):
+            base["renderer_version"] = patch["renderer_version"]
+    entries = base.get("entries") or []
+    complete = sum(1 for e in entries if e.get("release_eligible") and len(e.get("variants") or {}) == 8)
+    base["variants"] = list(VARIANTS)
+    base["renderer_version"] = base.get("renderer_version") or RENDERER_VERSION
+    base["generated_at"] = datetime.now(timezone.utc).isoformat()
+    base["coverage"] = {
+        "service_count": len(entries),
+        "complete_8_of_8": complete,
+        "missing": [e["service_id"] for e in entries if not (e.get("release_eligible") and len(e.get("variants") or {}) == 8)],
+    }
+    out = Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(base, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"status": "ok", "service_count": len(entries), "complete_8_of_8": complete, "out": str(out)}, ensure_ascii=False))
+    return 0
+
+
+def cmd_write_manifest(args: argparse.Namespace) -> int:
+    """Write/refresh build-manifest.json from an existing registry."""
+    reg = load_json(Path(args.registry))
+    entries = reg.get("entries") or []
+    manifest = {
+        "schema": "icon_build_manifest_v5",
+        "version": datetime.now(timezone.utc).strftime("%Y.%m"),
+        "renderer_version": reg.get("renderer_version") or RENDERER_VERSION,
+        "variants": reg.get("variants") or list(VARIANTS),
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "services": [
+            {
+                "id": str(e.get("service_id")),
+                "source_hash": e.get("source_hash") or (e.get("source") or {}).get("source_hash"),
+                "render_hash": sha256(json.dumps(e.get("variants") or {}, sort_keys=True)),
+                "release_eligible": bool(e.get("release_eligible")),
+            }
+            for e in entries
+        ],
+    }
+    out = Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"status": "ok", "services": len(manifest["services"]), "out": str(out)}, ensure_ascii=False))
+    return 0
+
 def build_parser() -> argparse.ArgumentParser:
     ap = argparse.ArgumentParser(description="Icon System V5")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -1477,7 +1704,23 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--concurrency", type=int, default=8, help="Parallel service workers (default 8)")
     p.add_argument("--incremental", action="store_true", help="Skip services with complete 8/8 variant tree")
     p.add_argument("--services", help="JSON list or comma-separated service_ids to build")
+    p.add_argument("--shard-index", type=int, default=0)
+    p.add_argument("--shard-count", type=int, default=0, help="If >1, only build hash(service_id)%count == index")
+    p.add_argument("--failures-out", help="Path to failures.json (default: <out>/failures.json)")
     p.set_defaults(func=cmd_build)
+    p = sub.add_parser("shard-plan")
+    p.add_argument("--shards", type=int, default=4)
+    p.add_argument("--out", required=True)
+    p.set_defaults(func=cmd_shard_plan)
+    p = sub.add_parser("merge-shards")
+    p.add_argument("--registries", nargs="*", default=[])
+    p.add_argument("--registries-glob")
+    p.add_argument("--out", required=True)
+    p.set_defaults(func=cmd_merge_shards)
+    p = sub.add_parser("write-manifest")
+    p.add_argument("--registry", required=True)
+    p.add_argument("--out", required=True)
+    p.set_defaults(func=cmd_write_manifest)
     p = sub.add_parser("gap-detect")
     p.add_argument("--registry", required=True)
     p.add_argument("--rule-index", required=True)
