@@ -422,7 +422,7 @@ def fetch_bytes(
     user_agent: str,
     max_redirects: int,
     accept: str,
-    max_retries: int = 3,
+    max_retries: int = 2,
 ) -> tuple[bytes, dict]:
     if not url.lower().startswith("https://"):
         raise ValueError(f"non-https url rejected: {url}")
@@ -740,11 +740,16 @@ def resolve_source(root: Path, row: dict, official: dict, policy: dict, cache: d
         reason = "registered_official" if homepage or direct_icon else "unknown"
 
     acq = policy["acquisition"]
-    timeout = int(acq.get("timeout_seconds", 25))
+    # B1: tighter network budgets (quality without exhaustive crawl)
+    timeout = min(int(acq.get("timeout_seconds", 25)), int(acq.get("per_url_timeout_seconds", 12)))
+    page_timeout = min(timeout, int(acq.get("page_timeout_seconds", 10)))
     max_redirects = int(acq.get("max_redirects", 5))
     max_bytes = int(acq.get("max_bytes", 1048576))
     page_max = int(acq.get("page_max_bytes", max_bytes * 3))
     user_agent = str(acq.get("user_agent", "Popular-Rules-Collection/Icon-System-V5"))
+    max_candidate_downloads = int(acq.get("max_candidate_downloads", 10))
+    stop_on_svg = bool(acq.get("stop_on_svg", True))
+    stop_on_hires_px = int(acq.get("stop_on_hires_px", 256))
 
     # Build ordered URL list (discovery); scoring happens after download
     url_specs: list[dict] = []
@@ -772,11 +777,12 @@ def resolve_source(root: Path, row: dict, official: dict, policy: dict, cache: d
         try:
             page, page_headers = fetch_bytes(
                 homepage,
-                timeout=timeout,
+                timeout=page_timeout,
                 max_bytes=page_max,
                 user_agent=user_agent,
                 max_redirects=max_redirects,
                 accept="text/html,application/xhtml+xml;q=0.9,*/*;q=0.8",
+                max_retries=2,
             )
             parser = IconLinkParser()
             parser.feed(page.decode("utf-8", errors="ignore"))
@@ -825,10 +831,12 @@ def resolve_source(root: Path, row: dict, official: dict, policy: dict, cache: d
         ):
             add_url(urljoin(base, rel), from_apple="apple-touch" in rel, hint_priority=hp)
 
-    # Download and score candidates
+    # Download and score candidates (B1: early exit + hard cap)
     scored: list[dict] = []
     last_err: Exception | None = None
-    for spec in sorted(url_specs, key=lambda x: x["hint_priority"]):
+    ordered_specs = sorted(url_specs, key=lambda x: x["hint_priority"])[: max(1, max_candidate_downloads)]
+    downloads = 0
+    for spec in ordered_specs:
         url = spec["url"]
         try:
             data, headers = fetch_bytes(
@@ -838,7 +846,9 @@ def resolve_source(root: Path, row: dict, official: dict, policy: dict, cache: d
                 user_agent=user_agent,
                 max_redirects=max_redirects,
                 accept="image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+                max_retries=2,
             )
+            downloads += 1
             ctype = headers.get("content-type")
             kind = validate_source(data, ctype, url)
             info = inspect_source_bytes(data, ctype, kind)
@@ -883,6 +893,11 @@ def resolve_source(root: Path, row: dict, official: dict, policy: dict, cache: d
                     "resolution_reason": reason,
                 }
             )
+            # Early stop: SVG or high-res raster is good enough
+            if stop_on_svg and is_vec:
+                break
+            if stop_on_hires_px and spx >= stop_on_hires_px:
+                break
         except Exception as exc:
             last_err = exc
             continue
