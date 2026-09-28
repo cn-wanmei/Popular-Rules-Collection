@@ -16,6 +16,8 @@ jobs:
   detect-gap:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
+    permissions:
+      contents: read
     outputs:
       has_gap: ${{ steps.gap.outputs.has_gap }}
       gap_services: ${{ steps.gap.outputs.gap_services }}
