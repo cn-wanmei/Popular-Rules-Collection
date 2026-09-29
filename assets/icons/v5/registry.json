@@ -154,7 +154,7 @@
       "icon_identity": "service:appleid",
       "source": {
         "origin": null,
-        "digest": "dde0756765de8218ec7fb2998f6420a632bbf5531794f66e6a9bc061119e3a97",
+        "digest": null,
         "url": null,
         "quality": "high",
         "source_px": 512,
@@ -170,9 +170,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T18:59:49.556221+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "dde0756765de8218ec7fb2998f6420a632bbf5531794f66e6a9bc061119e3a97"
+        "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13"
       },
-      "source_hash": "dde0756765de8218ec7fb2998f6420a632bbf5531794f66e6a9bc061119e3a97",
+      "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/appleid.svg",
@@ -212,7 +212,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "dde0756765de8218ec7fb2998f6420a632bbf5531794f66e6a9bc061119e3a97",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -226,7 +226,7 @@
       "icon_identity": "service:aws",
       "source": {
         "origin": null,
-        "digest": "0e97e83c5ddd0c4533fdab6c3ea3b8d77d3a84ea9caf9021e0d26c11318ea4cb",
+        "digest": null,
         "url": null,
         "quality": "medium",
         "source_px": 144,
@@ -242,9 +242,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T19:00:31.598429+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "0e97e83c5ddd0c4533fdab6c3ea3b8d77d3a84ea9caf9021e0d26c11318ea4cb"
+        "source_hash": "136109b8cf6e7d34688e06968a43a5b054dc4404833bb785656f174d21b30769"
       },
-      "source_hash": "0e97e83c5ddd0c4533fdab6c3ea3b8d77d3a84ea9caf9021e0d26c11318ea4cb",
+      "source_hash": "136109b8cf6e7d34688e06968a43a5b054dc4404833bb785656f174d21b30769",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/aws.svg",
@@ -284,7 +284,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "0e97e83c5ddd0c4533fdab6c3ea3b8d77d3a84ea9caf9021e0d26c11318ea4cb",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -298,7 +298,7 @@
       "icon_identity": "service:baidunetdisk",
       "source": {
         "origin": null,
-        "digest": "0dcd0e5cccbe57ec27d8eda7888e5f7984e18dbe8850dd4bd20706be546f2ceb",
+        "digest": null,
         "url": null,
         "quality": "high",
         "source_px": 512,
@@ -314,9 +314,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T19:00:33.081737+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "0dcd0e5cccbe57ec27d8eda7888e5f7984e18dbe8850dd4bd20706be546f2ceb"
+        "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13"
       },
-      "source_hash": "0dcd0e5cccbe57ec27d8eda7888e5f7984e18dbe8850dd4bd20706be546f2ceb",
+      "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/baidunetdisk.svg",
@@ -356,7 +356,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "0dcd0e5cccbe57ec27d8eda7888e5f7984e18dbe8850dd4bd20706be546f2ceb",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -394,7 +394,7 @@
       "icon_identity": "service:battlenet",
       "source": {
         "origin": null,
-        "digest": "fb731fcbe3e222dec46962e27d04515f861efb603b728ed5f2c69d6efd88a441",
+        "digest": null,
         "url": null,
         "quality": "high",
         "source_px": 512,
@@ -410,9 +410,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T19:00:59.331246+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "fb731fcbe3e222dec46962e27d04515f861efb603b728ed5f2c69d6efd88a441"
+        "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13"
       },
-      "source_hash": "fb731fcbe3e222dec46962e27d04515f861efb603b728ed5f2c69d6efd88a441",
+      "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/battlenet.svg",
@@ -452,7 +452,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "fb731fcbe3e222dec46962e27d04515f861efb603b728ed5f2c69d6efd88a441",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -490,7 +490,7 @@
       "icon_identity": "service:boc",
       "source": {
         "origin": null,
-        "digest": "2e1304942b5f251284c1618582ff36f508720d60213939932681d79a43a47909",
+        "digest": null,
         "url": null,
         "quality": "high",
         "source_px": 512,
@@ -506,9 +506,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T19:02:19.824635+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "2e1304942b5f251284c1618582ff36f508720d60213939932681d79a43a47909"
+        "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13"
       },
-      "source_hash": "2e1304942b5f251284c1618582ff36f508720d60213939932681d79a43a47909",
+      "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/boc.svg",
@@ -548,7 +548,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "2e1304942b5f251284c1618582ff36f508720d60213939932681d79a43a47909",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -610,7 +610,7 @@
       "icon_identity": "service:canva",
       "source": {
         "origin": null,
-        "digest": "e558ec9c3f8c50944d2ce518e3c278123bf4d1c56dc908db0fbe0bd302438e2a",
+        "digest": null,
         "url": null,
         "quality": "medium",
         "source_px": 512,
@@ -626,9 +626,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T19:09:32.065937+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "e558ec9c3f8c50944d2ce518e3c278123bf4d1c56dc908db0fbe0bd302438e2a"
+        "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13"
       },
-      "source_hash": "e558ec9c3f8c50944d2ce518e3c278123bf4d1c56dc908db0fbe0bd302438e2a",
+      "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/canva.svg",
@@ -668,7 +668,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "e558ec9c3f8c50944d2ce518e3c278123bf4d1c56dc908db0fbe0bd302438e2a",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -754,7 +754,7 @@
       "icon_identity": "service:chinamobile",
       "source": {
         "origin": null,
-        "digest": "779ce68511b8f0807e45f6e27b9833f2cb6f38fb541772f6847630980ad690b9",
+        "digest": null,
         "url": null,
         "quality": "high",
         "source_px": 512,
@@ -770,9 +770,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T19:08:01.835059+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "779ce68511b8f0807e45f6e27b9833f2cb6f38fb541772f6847630980ad690b9"
+        "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13"
       },
-      "source_hash": "779ce68511b8f0807e45f6e27b9833f2cb6f38fb541772f6847630980ad690b9",
+      "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/chinamobile.svg",
@@ -812,7 +812,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "779ce68511b8f0807e45f6e27b9833f2cb6f38fb541772f6847630980ad690b9",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -2370,7 +2370,7 @@
       "icon_identity": "service:1688",
       "source": {
         "origin": null,
-        "digest": "0578eba88ed90096abc3995992c4d6503a6a4fea2dd7ca01510d00fa34621a77",
+        "digest": null,
         "url": null,
         "quality": "medium",
         "source_px": 512,
@@ -2386,9 +2386,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T18:56:57.983184+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "0578eba88ed90096abc3995992c4d6503a6a4fea2dd7ca01510d00fa34621a77"
+        "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13"
       },
-      "source_hash": "0578eba88ed90096abc3995992c4d6503a6a4fea2dd7ca01510d00fa34621a77",
+      "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/1688.svg",
@@ -2428,7 +2428,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "0578eba88ed90096abc3995992c4d6503a6a4fea2dd7ca01510d00fa34621a77",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -2466,7 +2466,7 @@
       "icon_identity": "service:cainiao",
       "source": {
         "origin": null,
-        "digest": "302f10e3139a6af3f3b1fb1c6e7257e049e2654108a08b5e2c4738e9656978ae",
+        "digest": null,
         "url": null,
         "quality": "medium",
         "source_px": 151,
@@ -2482,9 +2482,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T19:04:21.794018+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "302f10e3139a6af3f3b1fb1c6e7257e049e2654108a08b5e2c4738e9656978ae"
+        "source_hash": "dedc5863809c2b76d5347ae7a988b53dfca915948e53455e54e3733eea94ebd1"
       },
-      "source_hash": "302f10e3139a6af3f3b1fb1c6e7257e049e2654108a08b5e2c4738e9656978ae",
+      "source_hash": "dedc5863809c2b76d5347ae7a988b53dfca915948e53455e54e3733eea94ebd1",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/cainiao.svg",
@@ -2524,7 +2524,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "302f10e3139a6af3f3b1fb1c6e7257e049e2654108a08b5e2c4738e9656978ae",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -4150,7 +4150,7 @@
       "icon_identity": "service:ai",
       "source": {
         "origin": null,
-        "digest": "ea39825d7522725ef15ab775126912b40edbdbd00c522d79cfabf5bcacefaaee",
+        "digest": null,
         "url": null,
         "quality": "medium",
         "source_px": 512,
@@ -4166,9 +4166,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T18:58:22.753298+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "ea39825d7522725ef15ab775126912b40edbdbd00c522d79cfabf5bcacefaaee"
+        "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13"
       },
-      "source_hash": "ea39825d7522725ef15ab775126912b40edbdbd00c522d79cfabf5bcacefaaee",
+      "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/ai.svg",
@@ -4208,7 +4208,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "ea39825d7522725ef15ab775126912b40edbdbd00c522d79cfabf5bcacefaaee",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -4246,7 +4246,7 @@
       "icon_identity": "service:bahamut",
       "source": {
         "origin": null,
-        "digest": "f337d7b7e60e15b9c5a80954822eb6c6fad5fb2612854e2bfbce7455d8bea6e6",
+        "digest": null,
         "url": null,
         "quality": "high",
         "source_px": 256,
@@ -4262,9 +4262,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T19:00:33.077905+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "f337d7b7e60e15b9c5a80954822eb6c6fad5fb2612854e2bfbce7455d8bea6e6"
+        "source_hash": "c024f6013062cf468673d58085fc1c4828fa1fade6520cdf4695e1e5df1e3cca"
       },
-      "source_hash": "f337d7b7e60e15b9c5a80954822eb6c6fad5fb2612854e2bfbce7455d8bea6e6",
+      "source_hash": "c024f6013062cf468673d58085fc1c4828fa1fade6520cdf4695e1e5df1e3cca",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/bahamut.svg",
@@ -4304,7 +4304,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "f337d7b7e60e15b9c5a80954822eb6c6fad5fb2612854e2bfbce7455d8bea6e6",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -4318,7 +4318,7 @@
       "icon_identity": "service:bbc",
       "source": {
         "origin": null,
-        "digest": "c0924b1ab28c6bf0d80a0ca6c8d4c20532b8cf27da8ecf28d5e57109fe0b1bfb",
+        "digest": null,
         "url": null,
         "quality": "medium",
         "source_px": 180,
@@ -4334,9 +4334,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T19:01:45.411112+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "c0924b1ab28c6bf0d80a0ca6c8d4c20532b8cf27da8ecf28d5e57109fe0b1bfb"
+        "source_hash": "a2333d8e338df402dcc580fe5c6d740dcab4299bc914ed8b8620ca400a095c94"
       },
-      "source_hash": "c0924b1ab28c6bf0d80a0ca6c8d4c20532b8cf27da8ecf28d5e57109fe0b1bfb",
+      "source_hash": "a2333d8e338df402dcc580fe5c6d740dcab4299bc914ed8b8620ca400a095c94",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/bbc.svg",
@@ -4376,7 +4376,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "c0924b1ab28c6bf0d80a0ca6c8d4c20532b8cf27da8ecf28d5e57109fe0b1bfb",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -4510,7 +4510,7 @@
       "icon_identity": "service:bilibili",
       "source": {
         "origin": null,
-        "digest": "cccf93bd64c30b6c8670cb871460213029d11161555d63eef9ce791c825f2544",
+        "digest": null,
         "url": null,
         "quality": "high",
         "source_px": 512,
@@ -4526,9 +4526,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T19:01:57.623751+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "cccf93bd64c30b6c8670cb871460213029d11161555d63eef9ce791c825f2544"
+        "source_hash": "78f5ad9ab01280aaaf0b76b5dd61ad502cebd76afd65a21a7782379d1828e2f4"
       },
-      "source_hash": "cccf93bd64c30b6c8670cb871460213029d11161555d63eef9ce791c825f2544",
+      "source_hash": "78f5ad9ab01280aaaf0b76b5dd61ad502cebd76afd65a21a7782379d1828e2f4",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/bilibili.svg",
@@ -4568,7 +4568,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "cccf93bd64c30b6c8670cb871460213029d11161555d63eef9ce791c825f2544",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -5978,69 +5978,65 @@
       "icon_identity": "service:amap",
       "source": {
         "origin": null,
-        "digest": "d6b1c177184c7cfe296e92e8a8150d7f575e2006b03db5bb085872051436184f",
+        "digest": "c4478ea9679bd1f758c82932670e02957f64d5c4d70cedef8e69b09e7388e634",
         "url": null,
-        "quality": "low_res",
-        "source_px": 64,
-        "source_kind": "png",
-        "source_type": "ico",
-        "official": true,
+        "quality": "medium",
+        "source_px": 512,
+        "source_kind": "svg",
+        "source_type": "glyph",
+        "official": false,
         "fallback": true,
         "seed": false,
         "frame_count": 1,
-        "selected_frame": "64x64",
-        "is_vector": false,
-        "score": -20,
+        "selected_frame": "512x512",
+        "is_vector": true,
+        "score": 30,
         "http_status": 200,
-        "fetched_at": "2026-09-28T18:59:16.289278+00:00",
-        "preferred_styles_if_low_res": [
-          "minimalist",
-          "duotone_line",
-          "source_original"
-        ],
-        "source_hash": "d6b1c177184c7cfe296e92e8a8150d7f575e2006b03db5bb085872051436184f"
+        "fetched_at": "2026-09-29T03:18:20.190382+00:00",
+        "preferred_styles_if_low_res": null,
+        "source_hash": "c4478ea9679bd1f758c82932670e02957f64d5c4d70cedef8e69b09e7388e634"
       },
-      "source_hash": "d6b1c177184c7cfe296e92e8a8150d7f575e2006b03db5bb085872051436184f",
+      "source_hash": "c4478ea9679bd1f758c82932670e02957f64d5c4d70cedef8e69b09e7388e634",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/amap.svg",
-        "digest": "49d2ef2bb6a8b5b5c9e73d8e6ef8c45e421569df0a6786a85bbe7c0b723a942e"
+        "digest": "ed573aaaa7cc01a23c6b3f9d76520965a213b7c43ea67de0256982af21314b01"
       },
       "variants": {
         "glassmorphism": {
           "path": "styles/glassmorphism/amap.svg",
-          "digest": "14ae0866698c6979453135cb3693666ded2b746d78acee078612c596fef7c21a"
+          "digest": "43ac984ddfad901f021510a8a2bf7b016bd331fb6b470aa6f7061e60c7a7559d"
         },
         "soft_3d": {
           "path": "styles/soft-3d/amap.svg",
-          "digest": "0fd4ebf342db66af816632aca7e052e37e226304096388987d50276e2835d972"
+          "digest": "c30a9a29063a1e34ace13495607ca4716d6437867bb95a1cc70f33b89203b449"
         },
         "neo_skeuomorphism": {
           "path": "styles/neo-skeuomorphism/amap.svg",
-          "digest": "de44f61ad562b6c46609d11b212a1332e5a1ade18baa8cec3f14e7a9a27e0dc0"
+          "digest": "2687b0b8020574be04f05ac1874ab6e7c8a9b238b35ab5b26a8a4fe127d3128b"
         },
         "minimalist": {
           "path": "styles/minimalist/amap.svg",
-          "digest": "92efc6c753803a8df6159ab0b505cb2ca7904421bdba47f5f5b540d83048c3ce"
+          "digest": "f3952e0be201d05f5f327217b7c0a932ff1e9430e73a33827c30d76c2dcab352"
         },
         "duotone_line": {
           "path": "styles/duotone-line/amap.svg",
-          "digest": "48b070764f476582cf846d04b378e8c51d6fe9d78e7f727b9156af394c346044"
+          "digest": "01c19bf421539955ab7765b4cd423b14fd808107209998742168e004e74dcbf5"
         },
         "mbe": {
           "path": "styles/mbe/amap.svg",
-          "digest": "41c59c9d5d8bd8ae3b842d53426df19e0807df508e471860092b68a799e9f0af"
+          "digest": "3ef2c558262e33433ab3c3ce879c4f3a947f0f8894c466b3de073157e5e81ee8"
         },
         "y2k": {
           "path": "styles/y2k/amap.svg",
-          "digest": "2ecda71c10f521f00ec3ef78982f95c9236162df5c1bf8e01d0e2f32dd991329"
+          "digest": "2524cb6d0c5fe9ae80620a07668a116b23aef515ac190f59cc7dbbf3363bfd08"
         }
       },
       "lineage": {
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "d6b1c177184c7cfe296e92e8a8150d7f575e2006b03db5bb085872051436184f",
+        "source_digest": "c4478ea9679bd1f758c82932670e02957f64d5c4d70cedef8e69b09e7388e634",
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -6078,7 +6074,7 @@
       "icon_identity": "service:anthropic",
       "source": {
         "origin": null,
-        "digest": "c91922918edeef31af5e969413c0eecf583707d14588de3fecc1d649b4303bf7",
+        "digest": null,
         "url": null,
         "quality": "high",
         "source_px": 256,
@@ -6094,9 +6090,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T18:59:26.871568+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "c91922918edeef31af5e969413c0eecf583707d14588de3fecc1d649b4303bf7"
+        "source_hash": "120e81e4696d11e450325edea98b80350e08a7c99ac6a90cd94bae7997901316"
       },
-      "source_hash": "c91922918edeef31af5e969413c0eecf583707d14588de3fecc1d649b4303bf7",
+      "source_hash": "120e81e4696d11e450325edea98b80350e08a7c99ac6a90cd94bae7997901316",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/anthropic.svg",
@@ -6136,7 +6132,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "c91922918edeef31af5e969413c0eecf583707d14588de3fecc1d649b4303bf7",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -6198,7 +6194,7 @@
       "icon_identity": "service:applefirmware",
       "source": {
         "origin": null,
-        "digest": "5632d96aa4610d69778c5090d99e5c7fdc8964a95bde7bdcb3165aa821dd5d3d",
+        "digest": null,
         "url": null,
         "quality": "medium",
         "source_px": 152,
@@ -6214,9 +6210,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T18:59:49.065185+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "5632d96aa4610d69778c5090d99e5c7fdc8964a95bde7bdcb3165aa821dd5d3d"
+        "source_hash": "a3550f4dba365e4602c3e1279bf93f2d67a23a1abd0327510f451ef7bff6617a"
       },
-      "source_hash": "5632d96aa4610d69778c5090d99e5c7fdc8964a95bde7bdcb3165aa821dd5d3d",
+      "source_hash": "a3550f4dba365e4602c3e1279bf93f2d67a23a1abd0327510f451ef7bff6617a",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/applefirmware.svg",
@@ -6256,7 +6252,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "5632d96aa4610d69778c5090d99e5c7fdc8964a95bde7bdcb3165aa821dd5d3d",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -6270,7 +6266,7 @@
       "icon_identity": "service:bluesky",
       "source": {
         "origin": null,
-        "digest": "eb14a7ed3cead85c71ac878fcff399abd445d8d998ab76953f23fdecc02e90f5",
+        "digest": null,
         "url": null,
         "quality": "medium",
         "source_px": 180,
@@ -6286,9 +6282,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T19:02:19.822580+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "eb14a7ed3cead85c71ac878fcff399abd445d8d998ab76953f23fdecc02e90f5"
+        "source_hash": "a2333d8e338df402dcc580fe5c6d740dcab4299bc914ed8b8620ca400a095c94"
       },
-      "source_hash": "eb14a7ed3cead85c71ac878fcff399abd445d8d998ab76953f23fdecc02e90f5",
+      "source_hash": "a2333d8e338df402dcc580fe5c6d740dcab4299bc914ed8b8620ca400a095c94",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/bluesky.svg",
@@ -6328,7 +6324,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "eb14a7ed3cead85c71ac878fcff399abd445d8d998ab76953f23fdecc02e90f5",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -6342,7 +6338,7 @@
       "icon_identity": "service:ccb",
       "source": {
         "origin": null,
-        "digest": "003f0bb1497e9d3d3beb3323b0ce7caca44353162de467393a2d8da2759d0b0f",
+        "digest": null,
         "url": null,
         "quality": "high",
         "source_px": 512,
@@ -6358,9 +6354,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T19:04:21.799170+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "003f0bb1497e9d3d3beb3323b0ce7caca44353162de467393a2d8da2759d0b0f"
+        "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13"
       },
-      "source_hash": "003f0bb1497e9d3d3beb3323b0ce7caca44353162de467393a2d8da2759d0b0f",
+      "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/ccb.svg",
@@ -6400,7 +6396,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "003f0bb1497e9d3d3beb3323b0ce7caca44353162de467393a2d8da2759d0b0f",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -8418,7 +8414,7 @@
       "icon_identity": "service:alipay",
       "source": {
         "origin": null,
-        "digest": "db1e0a9370aebf3b090495e6243a5479814e6a263f075da9bd09a30d6dc6a76f",
+        "digest": null,
         "url": null,
         "quality": "high",
         "source_px": 2600,
@@ -8434,9 +8430,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T18:59:05.574701+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "db1e0a9370aebf3b090495e6243a5479814e6a263f075da9bd09a30d6dc6a76f"
+        "source_hash": "4578284057ca8f3a630224d033018ce4235a34a5c0919d4d3621e8fb3d6e814d"
       },
-      "source_hash": "db1e0a9370aebf3b090495e6243a5479814e6a263f075da9bd09a30d6dc6a76f",
+      "source_hash": "4578284057ca8f3a630224d033018ce4235a34a5c0919d4d3621e8fb3d6e814d",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/alipay.svg",
@@ -8476,7 +8472,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "db1e0a9370aebf3b090495e6243a5479814e6a263f075da9bd09a30d6dc6a76f",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -8552,7 +8548,7 @@
         "is_vector": false,
         "score": -20,
         "http_status": 200,
-        "fetched_at": "2026-09-28T19:00:14.125014+00:00",
+        "fetched_at": "2026-09-29T03:18:40.093760+00:00",
         "preferred_styles_if_low_res": [
           "minimalist",
           "duotone_line",
@@ -8686,7 +8682,7 @@
       "icon_identity": "service:booking",
       "source": {
         "origin": null,
-        "digest": "578d57776a91f8e07f48cf632be50e20d3d1d43a3f8546861f2e23740fec6b9a",
+        "digest": null,
         "url": null,
         "quality": "medium",
         "source_px": 180,
@@ -8702,9 +8698,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T19:03:44.716922+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "578d57776a91f8e07f48cf632be50e20d3d1d43a3f8546861f2e23740fec6b9a"
+        "source_hash": "a2333d8e338df402dcc580fe5c6d740dcab4299bc914ed8b8620ca400a095c94"
       },
-      "source_hash": "578d57776a91f8e07f48cf632be50e20d3d1d43a3f8546861f2e23740fec6b9a",
+      "source_hash": "a2333d8e338df402dcc580fe5c6d740dcab4299bc914ed8b8620ca400a095c94",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/booking.svg",
@@ -8744,7 +8740,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "578d57776a91f8e07f48cf632be50e20d3d1d43a3f8546861f2e23740fec6b9a",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -10146,7 +10142,7 @@
       "icon_identity": "service:12306",
       "source": {
         "origin": null,
-        "digest": "41e95c5e7d6517c6d217109df8ec1f27cdf89be5df3506758edba84bfe2bcc9d",
+        "digest": null,
         "url": null,
         "quality": "high",
         "source_px": 512,
@@ -10162,9 +10158,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T18:56:23.986218+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "41e95c5e7d6517c6d217109df8ec1f27cdf89be5df3506758edba84bfe2bcc9d"
+        "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13"
       },
-      "source_hash": "41e95c5e7d6517c6d217109df8ec1f27cdf89be5df3506758edba84bfe2bcc9d",
+      "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/12306.svg",
@@ -10204,7 +10200,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "41e95c5e7d6517c6d217109df8ec1f27cdf89be5df3506758edba84bfe2bcc9d",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -10386,7 +10382,7 @@
       "icon_identity": "service:appletv",
       "source": {
         "origin": null,
-        "digest": "a1b026c2067bc4bd43aa50933fa3a40ed23676eb554e76e68078193d14016c5e",
+        "digest": null,
         "url": null,
         "quality": "medium",
         "source_px": 180,
@@ -10402,9 +10398,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T19:00:17.106096+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "a1b026c2067bc4bd43aa50933fa3a40ed23676eb554e76e68078193d14016c5e"
+        "source_hash": "a2333d8e338df402dcc580fe5c6d740dcab4299bc914ed8b8620ca400a095c94"
       },
-      "source_hash": "a1b026c2067bc4bd43aa50933fa3a40ed23676eb554e76e68078193d14016c5e",
+      "source_hash": "a2333d8e338df402dcc580fe5c6d740dcab4299bc914ed8b8620ca400a095c94",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/appletv.svg",
@@ -10444,7 +10440,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "a1b026c2067bc4bd43aa50933fa3a40ed23676eb554e76e68078193d14016c5e",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -10458,7 +10454,7 @@
       "icon_identity": "service:cctv",
       "source": {
         "origin": null,
-        "digest": "60ddcc725b19c345f143a46bae1b129add685380aef58dc12e81b948d3d15b89",
+        "digest": null,
         "url": null,
         "quality": "medium",
         "source_px": 512,
@@ -10474,9 +10470,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T19:07:09.457274+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "60ddcc725b19c345f143a46bae1b129add685380aef58dc12e81b948d3d15b89"
+        "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13"
       },
-      "source_hash": "60ddcc725b19c345f143a46bae1b129add685380aef58dc12e81b948d3d15b89",
+      "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/cctv.svg",
@@ -10516,7 +10512,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "60ddcc725b19c345f143a46bae1b129add685380aef58dc12e81b948d3d15b89",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -10530,7 +10526,7 @@
       "icon_identity": "service:chinatelecom",
       "source": {
         "origin": null,
-        "digest": "da51c2fc5ea3e3b0119d512bb9db391d7a7a7d60fb8921b18f571596f9f0fde1",
+        "digest": null,
         "url": null,
         "quality": "medium",
         "source_px": 512,
@@ -10546,9 +10542,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T19:09:06.744476+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "da51c2fc5ea3e3b0119d512bb9db391d7a7a7d60fb8921b18f571596f9f0fde1"
+        "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13"
       },
-      "source_hash": "da51c2fc5ea3e3b0119d512bb9db391d7a7a7d60fb8921b18f571596f9f0fde1",
+      "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/chinatelecom.svg",
@@ -10588,7 +10584,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "da51c2fc5ea3e3b0119d512bb9db391d7a7a7d60fb8921b18f571596f9f0fde1",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -10626,7 +10622,7 @@
       "icon_identity": "service:chinaunicom",
       "source": {
         "origin": null,
-        "digest": "83239cb5b7beb402a75219745dc61a6f3a17b97a4503df44cbb35f40e7d865a7",
+        "digest": null,
         "url": null,
         "quality": "medium",
         "source_px": 512,
@@ -10642,9 +10638,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T19:09:08.227114+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "83239cb5b7beb402a75219745dc61a6f3a17b97a4503df44cbb35f40e7d865a7"
+        "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13"
       },
-      "source_hash": "83239cb5b7beb402a75219745dc61a6f3a17b97a4503df44cbb35f40e7d865a7",
+      "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/chinaunicom.svg",
@@ -10684,7 +10680,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "83239cb5b7beb402a75219745dc61a6f3a17b97a4503df44cbb35f40e7d865a7",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -12378,7 +12374,7 @@
       "icon_identity": "service:airbnb",
       "source": {
         "origin": null,
-        "digest": "a3b0572f1eac888ee1071a63f6cad84cd71434c4675ed13d97bf35284358679a",
+        "digest": null,
         "url": null,
         "quality": "medium",
         "source_px": 180,
@@ -12394,9 +12390,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T18:58:36.644149+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "a3b0572f1eac888ee1071a63f6cad84cd71434c4675ed13d97bf35284358679a"
+        "source_hash": "a2333d8e338df402dcc580fe5c6d740dcab4299bc914ed8b8620ca400a095c94"
       },
-      "source_hash": "a3b0572f1eac888ee1071a63f6cad84cd71434c4675ed13d97bf35284358679a",
+      "source_hash": "a2333d8e338df402dcc580fe5c6d740dcab4299bc914ed8b8620ca400a095c94",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/airbnb.svg",
@@ -12436,7 +12432,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "a3b0572f1eac888ee1071a63f6cad84cd71434c4675ed13d97bf35284358679a",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -12570,7 +12566,7 @@
       "icon_identity": "service:aisuite",
       "source": {
         "origin": null,
-        "digest": "df62f2ca3056a427feebdf4490613fab9a50c04c9c9bf408be1e4f8e12d73452",
+        "digest": null,
         "url": null,
         "quality": "medium",
         "source_px": 512,
@@ -12586,9 +12582,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T18:58:59.802389+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "df62f2ca3056a427feebdf4490613fab9a50c04c9c9bf408be1e4f8e12d73452"
+        "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13"
       },
-      "source_hash": "df62f2ca3056a427feebdf4490613fab9a50c04c9c9bf408be1e4f8e12d73452",
+      "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/aisuite.svg",
@@ -12628,7 +12624,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "df62f2ca3056a427feebdf4490613fab9a50c04c9c9bf408be1e4f8e12d73452",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -12690,7 +12686,7 @@
       "icon_identity": "service:ceb",
       "source": {
         "origin": null,
-        "digest": "af2034e912669cd926ffed818b4c82ee6667fad0ffeb6c84180e18dd0a5a7c3a",
+        "digest": null,
         "url": null,
         "quality": "high",
         "source_px": 512,
@@ -12706,9 +12702,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T19:07:09.458385+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "af2034e912669cd926ffed818b4c82ee6667fad0ffeb6c84180e18dd0a5a7c3a"
+        "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13"
       },
-      "source_hash": "af2034e912669cd926ffed818b4c82ee6667fad0ffeb6c84180e18dd0a5a7c3a",
+      "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/ceb.svg",
@@ -12748,7 +12744,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "af2034e912669cd926ffed818b4c82ee6667fad0ffeb6c84180e18dd0a5a7c3a",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -14106,7 +14102,7 @@
       "icon_identity": "service:abc",
       "source": {
         "origin": null,
-        "digest": "2c35ec8d4a525dc58d4e4e83676cbe1efc2cb115cdf610383e3ef8440255fb34",
+        "digest": null,
         "url": null,
         "quality": "high",
         "source_px": 512,
@@ -14122,9 +14118,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T18:56:57.993809+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "2c35ec8d4a525dc58d4e4e83676cbe1efc2cb115cdf610383e3ef8440255fb34"
+        "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13"
       },
-      "source_hash": "2c35ec8d4a525dc58d4e4e83676cbe1efc2cb115cdf610383e3ef8440255fb34",
+      "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/abc.svg",
@@ -14164,7 +14160,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "2c35ec8d4a525dc58d4e4e83676cbe1efc2cb115cdf610383e3ef8440255fb34",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -14322,7 +14318,7 @@
       "icon_identity": "service:acfun",
       "source": {
         "origin": null,
-        "digest": "90a7ad3b4eaa579048ec5f035cc24c14da8ecb87562355dde324d5f1560287c5",
+        "digest": null,
         "url": null,
         "quality": "high",
         "source_px": 512,
@@ -14338,9 +14334,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T18:57:59.512562+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "90a7ad3b4eaa579048ec5f035cc24c14da8ecb87562355dde324d5f1560287c5"
+        "source_hash": "78f5ad9ab01280aaaf0b76b5dd61ad502cebd76afd65a21a7782379d1828e2f4"
       },
-      "source_hash": "90a7ad3b4eaa579048ec5f035cc24c14da8ecb87562355dde324d5f1560287c5",
+      "source_hash": "78f5ad9ab01280aaaf0b76b5dd61ad502cebd76afd65a21a7782379d1828e2f4",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/acfun.svg",
@@ -14380,7 +14376,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "90a7ad3b4eaa579048ec5f035cc24c14da8ecb87562355dde324d5f1560287c5",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -14408,7 +14404,7 @@
         "is_vector": false,
         "score": -25,
         "http_status": 200,
-        "fetched_at": "2026-09-28T19:01:58.723970+00:00",
+        "fetched_at": "2026-09-29T03:18:40.999378+00:00",
         "preferred_styles_if_low_res": [
           "minimalist",
           "duotone_line",
@@ -14494,7 +14490,7 @@
       "icon_identity": "service:bocom",
       "source": {
         "origin": null,
-        "digest": "2fceb59868fb238f55914493110a39415a2614e26c35d1d240889ad0eb03dbf9",
+        "digest": null,
         "url": null,
         "quality": "high",
         "source_px": 512,
@@ -14510,9 +14506,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-28T19:02:46.649531+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "2fceb59868fb238f55914493110a39415a2614e26c35d1d240889ad0eb03dbf9"
+        "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13"
       },
-      "source_hash": "2fceb59868fb238f55914493110a39415a2614e26c35d1d240889ad0eb03dbf9",
+      "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/bocom.svg",
@@ -14552,7 +14548,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "2fceb59868fb238f55914493110a39415a2614e26c35d1d240889ad0eb03dbf9",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -16881,7 +16877,7 @@
     "mbe",
     "y2k"
   ],
-  "generated_at": "2026-09-28T19:09:32.355288+00:00",
+  "generated_at": "2026-09-29T03:18:44.382963+00:00",
   "coverage": {
     "service_count": 394,
     "complete_8_of_8": 0,
