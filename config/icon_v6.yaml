@@ -16,17 +16,17 @@ v5:
 v6:
   repo: cn-wanmei/Popular-Rules-Icon
   branch: dist
-  release_id: icon-2026.09.29.2
+  release_id: icon-2026.09.29.3
   # Content-addressed path; no release tag inside file URL
   path_template: "v/{variant_hash}{ext}"
-  manifest_path: manifests/icon-2026.09.29.2.json
+  manifest_path: manifests/icon-2026.09.29.3.json
   mirrors:
     raw: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/{path}"
     jsdelivr: "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Icon@dist/{path}"
     fastly: "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Icon@dist/{path}"
   # Shadow period: if V6 entry missing, fall back to V5
   fallback_to_v5: true
-  # Tier-0 canary services published in icon-2026.09.29.2
+  # Tier-0 canary services published in icon-2026.09.29.3
   canary_services:
     - github
     - google
