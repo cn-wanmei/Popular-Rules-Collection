@@ -5978,7 +5978,7 @@
       "icon_identity": "service:amap",
       "source": {
         "origin": null,
-        "digest": "c4478ea9679bd1f758c82932670e02957f64d5c4d70cedef8e69b09e7388e634",
+        "digest": null,
         "url": null,
         "quality": "medium",
         "source_px": 512,
@@ -5994,9 +5994,9 @@
         "http_status": 200,
         "fetched_at": "2026-09-29T03:18:20.190382+00:00",
         "preferred_styles_if_low_res": null,
-        "source_hash": "c4478ea9679bd1f758c82932670e02957f64d5c4d70cedef8e69b09e7388e634"
+        "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13"
       },
-      "source_hash": "c4478ea9679bd1f758c82932670e02957f64d5c4d70cedef8e69b09e7388e634",
+      "source_hash": "e70c15023c2f1845a2996fd0667e4b3490994e5be4c851da283b0af347075a13",
       "renderer_version": "prc-icon-renderer-v5.1.0",
       "normalized": {
         "path": "normalized/amap.svg",
@@ -6036,7 +6036,7 @@
         "run_id": "20260928T063304421542Z-run",
         "snapshot_id": "20260928T063304421542Z-run",
         "ir_digest": "d465fe7724fe05143da3c70d97c337789591c85007c28bfe5c6c5e74e9497161",
-        "source_digest": "c4478ea9679bd1f758c82932670e02957f64d5c4d70cedef8e69b09e7388e634",
+        "source_digest": null,
         "renderer_version": "prc-icon-renderer-v5.1.0"
       },
       "release_eligible": false
@@ -8548,7 +8548,7 @@
         "is_vector": false,
         "score": -20,
         "http_status": 200,
-        "fetched_at": "2026-09-29T03:18:40.093760+00:00",
+        "fetched_at": "2026-09-29T08:04:09.821120+00:00",
         "preferred_styles_if_low_res": [
           "minimalist",
           "duotone_line",
@@ -14404,7 +14404,7 @@
         "is_vector": false,
         "score": -25,
         "http_status": 200,
-        "fetched_at": "2026-09-29T03:18:40.999378+00:00",
+        "fetched_at": "2026-09-29T08:04:11.851506+00:00",
         "preferred_styles_if_low_res": [
           "minimalist",
           "duotone_line",
@@ -16877,7 +16877,7 @@
     "mbe",
     "y2k"
   ],
-  "generated_at": "2026-09-29T03:18:44.382963+00:00",
+  "generated_at": "2026-09-29T08:04:14.980998+00:00",
   "coverage": {
     "service_count": 394,
     "complete_8_of_8": 0,
