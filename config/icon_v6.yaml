@@ -1,0 +1,49 @@
+# Icon System 6.0 — Collection shadow / cutover switch (ADR-Freeze-Rev.3.1)
+# Default remains V5 until R4 validation completes.
+schema: icon_system_v6_provider
+version: "0.1.0"
+updated: "2026-09-29"
+
+# Active provider for client materialization
+# v5 = assets/icons/v5 in this repo (current production)
+# v6 = Popular-Rules-Icon dist content-addressed URLs
+provider: v5
+
+v5:
+  base_path: assets/icons/v5
+  registry: assets/icons/v5/registry.json
+
+v6:
+  repo: cn-wanmei/Popular-Rules-Icon
+  branch: dist
+  release_id: icon-2026.09.29.1
+  # Content-addressed path; no release tag inside file URL
+  path_template: "v/{variant_hash}{ext}"
+  manifest_path: manifests/icon-2026.09.29.1.json
+  mirrors:
+    raw: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/{path}"
+    jsdelivr: "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Icon@dist/{path}"
+    fastly: "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Icon@dist/{path}"
+  # Shadow period: if V6 entry missing, fall back to V5
+  fallback_to_v5: true
+  # Tier-0 canary services published in icon-2026.09.29.1
+  canary_services:
+    - github
+    - google
+    - apple
+    - microsoft
+    - openai
+    - cloudflare
+    - telegram
+    - discord
+    - wechat
+    - alipay
+
+rollback:
+  # Flip provider back to v5; Icon-side production/rollback pointers remain source of truth for release_id
+  provider: v5
+
+notes: |
+  R4 shadow switch: keep provider=v5 in production.
+  To test V6: set provider=v6 locally or in a feature branch; compare canary_services against V5.
+  Full cutover (R5) only after shadow report is accepted.
