@@ -42,7 +42,9 @@ jobs:
               'phase2/tencentcloud-canary','phase2/tmall-canary','phase2/tmall-canary-current','phase2/tmall-canary-current-v2',
               'feat/phase2-exit-preflight-current','fix/phase2-production-unlock-parallel-services-current',
               'activate/tencentcloud-production-current','chore/audit-cleanup-docs-20260920','chore/repo-cleanup-20260921',
-              'automation/source-handoff-ffc7375b31080ea735c8bcc8ee59066b969c382f'
+              'automation/source-handoff-ffc7375b31080ea735c8bcc8ee59066b969c382f',
+              'automation/icon-gap-fill-20260930084736','chore/test-v5-tree-delete-20260930',
+              'feat/icon-v6-clean1-finalize-20260930','feat/unify-service-icon-identity-20260930'
             ];
             for (const branch of branches) {
               try {
