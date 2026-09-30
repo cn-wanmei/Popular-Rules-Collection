@@ -3,9 +3,9 @@
   "kind": "geoip",
   "scope": "geoip",
   "path": "database/geoip/tw.txt",
-  "lines": 4827,
-  "sha256_source": "6677bbce50d6f4062936429b83083e9a0183f58be3bb7841a519c14bebbfe374",
-  "fetched_at": "2026-09-30T01:13:12.858155+00:00",
+  "lines": 4834,
+  "sha256_source": "49bfea9b449cceb5d8249f30e3366171921b171494a3927687598ab8293b9d4c",
+  "fetched_at": "2026-09-30T16:47:46.024185+00:00",
   "source": {
     "owner": "Loyalsoldier",
     "repo": "geoip",

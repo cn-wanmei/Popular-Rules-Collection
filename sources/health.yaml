@@ -8,19 +8,19 @@ sources:
     empty_blocked: 0
     rules_declared: 8
   blackmatrix7:
-    last_attempt: '2026-09-30T01:18:31.846085+00:00'
-    last_success: '2026-09-30T01:18:31.846091+00:00'
+    last_attempt: '2026-09-30T16:52:57.417069+00:00'
+    last_success: '2026-09-30T16:52:57.417079+00:00'
     failure_count: 0
-    files_ok: 2
-    files_failed: 16
+    files_ok: 0
+    files_failed: 43
     empty_blocked: 0
     rules_declared: 154
-    files_not_modified: 108
-    files_skipped: 28
-    conditional_cache_hits: 108
-    scheduler_skips: 28
+    files_not_modified: 0
+    files_skipped: 111
+    conditional_cache_hits: 0
+    scheduler_skips: 111
     fetch_workers: 12
-    cas_objects: 138
+    cas_objects: 111
     status: degraded
   loyalsoldier:
     last_attempt: '2026-08-27T04:42:15.893581+00:00'
@@ -47,69 +47,69 @@ sources:
     empty_blocked: 0
     rules_declared: 3
   metacubex:
-    last_attempt: '2026-09-30T01:18:49.725621+00:00'
-    files_ok: 10
-    files_failed: 2
+    last_attempt: '2026-09-30T16:53:05.188226+00:00'
+    files_ok: 0
+    files_failed: 23
     empty_blocked: 0
     rules_declared: 76
-    last_success: '2026-09-30T01:18:49.725626+00:00'
+    last_success: '2026-09-30T16:53:05.188236+00:00'
     failure_count: 0
-    files_not_modified: 43
-    files_skipped: 21
-    conditional_cache_hits: 43
-    scheduler_skips: 21
+    files_not_modified: 0
+    files_skipped: 53
+    conditional_cache_hits: 0
+    scheduler_skips: 53
     fetch_workers: 12
-    cas_objects: 74
+    cas_objects: 53
     status: degraded
   v2fly:
-    last_attempt: '2026-09-30T01:19:03.132417+00:00'
+    last_attempt: '2026-09-30T16:53:10.612753+00:00'
     files_ok: 0
-    files_failed: 1
+    files_failed: 16
     empty_blocked: 0
     rules_declared: 56
-    last_success: '2026-09-30T01:19:03.132423+00:00'
+    last_success: '2026-09-30T16:53:10.612762+00:00'
     failure_count: 0
-    files_not_modified: 40
-    files_skipped: 15
-    conditional_cache_hits: 40
-    scheduler_skips: 15
+    files_not_modified: 0
+    files_skipped: 40
+    conditional_cache_hits: 0
+    scheduler_skips: 40
     fetch_workers: 12
-    cas_objects: 55
+    cas_objects: 40
     status: degraded
   dler:
-    last_attempt: '2026-09-30T01:19:07.077574+00:00'
+    last_attempt: '2026-09-30T16:53:13.304662+00:00'
     files_ok: 0
-    files_failed: 0
+    files_failed: 8
     empty_blocked: 0
     rules_declared: 20
-    last_success: '2026-09-30T01:19:07.077583+00:00'
+    last_success: '2026-09-30T16:53:13.304668+00:00'
     failure_count: 0
-    files_not_modified: 12
-    files_skipped: 8
-    conditional_cache_hits: 12
-    scheduler_skips: 8
+    files_not_modified: 0
+    files_skipped: 12
+    conditional_cache_hits: 0
+    scheduler_skips: 12
     fetch_workers: 12
-    cas_objects: 20
-    status: healthy
+    cas_objects: 12
+    status: degraded
   lm-firefly:
-    last_attempt: '2026-09-30T01:19:07.079114+00:00'
+    last_attempt: '2026-09-30T16:53:13.693371+00:00'
     files_ok: 0
     files_not_modified: 0
-    files_skipped: 1
-    files_failed: 0
+    files_skipped: 0
+    files_failed: 1
     empty_blocked: 0
     rules_declared: 1
     conditional_cache_hits: 0
-    scheduler_skips: 1
+    scheduler_skips: 0
     fetch_workers: 1
-    cas_objects: 1
+    cas_objects: 0
     last_success: '2026-09-30T01:19:07.079122+00:00'
-    failure_count: 0
-    status: healthy
-    last_failure: '2026-09-29T01:49:13.742295+00:00'
+    failure_count: 1
+    status: down
+    last_failure: '2026-09-30T16:53:13.693377+00:00'
     reason: all fetches failed
   popular-rules-source:
-    last_attempt: '2026-09-30T01:17:50.868971+00:00'
+    last_attempt: '2026-09-30T16:52:42.802341+00:00'
     files_ok: 281
     files_not_modified: 0
     files_skipped: 0
@@ -120,7 +120,7 @@ sources:
     scheduler_skips: 0
     fetch_workers: 12
     cas_objects: 281
-    last_success: '2026-09-30T01:17:50.868978+00:00'
+    last_success: '2026-09-30T16:52:42.802350+00:00'
     failure_count: 0
     status: healthy
-updated_at: '2026-09-30T01:19:07.100672+00:00'
+updated_at: '2026-09-30T16:53:13.716047+00:00'
