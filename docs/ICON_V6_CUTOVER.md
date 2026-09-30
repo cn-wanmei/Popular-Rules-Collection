@@ -25,7 +25,7 @@
 
 原 R14 manifest 的 variant `path` 曾记录为 `.bin`，而 dist 物理文件是 `.png`；R14.1 已修正为 `.png`。resolver 当前生成 `.png` URL，后续必须由 release gate 持续验证两者一致。
 
-Icon Repository 当前 `release.yml` 与 `incremental.yml` 仍属于 placeholder/scaffold，说明完整的可重复 release writer 尚未在主线固化。因此不能把当前 dist 存在误认为生产链路已经完整健康。
+Icon Repository 已将 `release.yml` 固化为 fail-closed V6 release writer，并在主线 CI 中通过 L0-L1；但当前 state snapshot 仍缺少 canonical `ai`，因此 writer 在实际发布时会按设计阻断。`incremental.yml` 仍是 scaffold，因此完整的 acquisition→state→release 生产链尚未端到端闭环。
 
 ## V5 removal gate
 
