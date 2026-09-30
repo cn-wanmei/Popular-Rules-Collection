@@ -30,7 +30,7 @@ Therefore the previous "100% Collection coverage" wording is not valid under the
 6. Icon R14/R20 documentation had conflicting status ("done" vs "in progress").
 7. Icon release pointers claimed 100% Collection coverage despite 89 orphan entries and one missing canonical service.
 8. Icon release manifest records .bin paths, while physical dist objects are .png; resolver currently constructs .png URLs.
-9. Icon main release.yml and incremental.yml are placeholder/scaffold workflows, so the reproducible release writer is not yet proven by mainline CI.
+9. Icon main `release.yml` is now a fail-closed V6 release writer; `incremental.yml` remains scaffold, so acquisition→state→release is not yet proven end-to-end.
 
 ## Production-chain verdict
 
@@ -42,7 +42,7 @@ Blocking items before V5 removal:
 - zero production orphans;
 - no V5 fallback dependency;
 - manifest/physical-path consistency;
-- reproducible release writer and validation workflow;
+- reproducible release writer and end-to-end acquisition/release validation;
 - resolver end-to-end verification against immutable manifest.
 
 ## Current project status
