@@ -2,8 +2,8 @@
 
 **Date:** 2026-09-30  
 **Default provider:** `v6`  
-**Active dist release:** `icon-2026.09.30.r14`  
-**Manifest:** `manifests/icon-2026.09.30.r14.json`  
+**Active dist release:** `icon-2026.09.30.r14.1`  
+**Manifest:** `manifests/icon-2026.09.30.r14.1.json`  
 **Canonical Collection service universe:** 394
 
 ## Current verified state
@@ -19,7 +19,7 @@
 
 ## 已修正的配置漂移
 
-原配置/文档混用了 `icon-2026.09.30.styles8`、`icon-2026.09.30.freeze1` 与实际 dist release `icon-2026.09.30.r14`。当前以 `r14` 为唯一已验证发布指针。
+原配置/文档混用了 `icon-2026.09.30.styles8`、`icon-2026.09.30.freeze1` 与实际 dist release `icon-2026.09.30.r14.1`。当前以 `r14` 为唯一已验证发布指针。
 
 ## 已发现的生产链路问题
 
