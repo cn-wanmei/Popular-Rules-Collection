@@ -108,3 +108,5 @@ Gates → Immutable Release Candidate → Publish
 - [Icon Usage](docs/ICON_USAGE.md)
 
 > `rule/` 与 `generated/` 都是派生发行物。不要手工修补规则数字、Raw URL、SHA-256 或图标路径。
+
+> V5 runtime provider/configuration has been removed; only the physical legacy archive remains until the retirement gate completes.
