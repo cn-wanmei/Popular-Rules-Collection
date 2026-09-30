@@ -2,6 +2,9 @@ name: Icon V5 Retirement Gate
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - v5-retirement-gate:
 
 jobs:
   retirement-gate:
