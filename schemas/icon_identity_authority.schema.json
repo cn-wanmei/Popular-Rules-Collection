@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cn-wanmei.github.io/Popular-Rules-Collection/schemas/icon_identity_authority.schema.json",
+  "title": "Popular Rules Icon Identity Authority",
+  "type": "object",
+  "required": ["schema", "version", "authority", "canonical_fields", "identity_semantics", "icon_rules", "synchronization", "migration"],
+  "properties": {
+    "schema": {"const": "icon_identity_authority_v1"},
+    "version": {"const": 1},
+    "authority": {"type": "object"},
+    "canonical_fields": {"type": "array", "const": ["service_id", "display_name", "provider"]},
+    "identity_semantics": {"type": "object"},
+    "icon_rules": {"type": "object"},
+    "synchronization": {"type": "object"},
+    "migration": {"type": "object"}
+  },
+  "additionalProperties": false
+}
