@@ -40,3 +40,5 @@ Physical V5 assets are retained only until the retirement-gate commit is recorde
 > Retirement gate evidence check is deterministic and uses the exact final clean1 state.
 
 > Retirement gate uses sparse checkout because the Collection repository contains a large historical V5 tree; this does not change the retirement criteria.
+
+> The final retirement gate uses non-cone sparse-checkout to avoid materializing the large legacy V5 tree.
