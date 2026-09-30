@@ -1,43 +1,57 @@
-# Icon V6 R5 Cutover
+# Icon System V6 — Final Clean Cutover
 
 **Date:** 2026-09-30  
 **Default provider:** `v6`  
-**Active dist release:** `icon-2026.09.30.r14.1`  
-**Manifest:** `manifests/icon-2026.09.30.r14.1.json`  
+**Active immutable release:** `icon-2026.09.30.clean1`  
+**Manifest:** `manifests/icon-2026.09.30.clean1.json`  
 **Canonical Collection service universe:** 394
 
-## Current verified state
+## Verified release
 
-当前 Icon dist manifest 含 482 个条目。与 Collection 当前 `rule/_index.yaml` 的 canonical `entity: service` 集合对比：393/394 个 canonical service_id 存在；89 个 dist 条目不属于当前 Collection service universe；`ai` 缺失。
+The first clean V6 release was built and published by the Icon Repository release writer.
 
-因此当前状态是：
+- canonical entries: **394/394**
+- production orphan entries: **0**
+- variants: **8 styles × 128/256**
+- variant records: **6304**
+- physical referenced objects missing: **0**
+- strict V6 manifest gate: **PASS**
+- release writer build-and-gate: **PASS**
+- release writer publish: **PASS**
 
-- V6 已作为默认生产 provider；
-- V6 身份覆盖尚未达到 100%；
-- V5 仍保留为临时 rollback/fallback 安全网；
-- 不得清理 V5。
+The missing `ai` canonical service was completed in the exact clean state snapshot and materialized into clean1.
 
-## 已修正的配置漂移
+## Identity boundary
 
-原配置/文档混用了 `icon-2026.09.30.styles8`、`icon-2026.09.30.freeze1` 与实际 dist release `icon-2026.09.30.r14.1`。当前以 `r14.1` 为唯一已验证发布指针。
+`Popular-Rules-Collection/rule/_index.yaml` is the sole service identity authority.
 
-## 已发现的生产链路问题
+`Popular-Rules-Icon` consumes the canonical `service_id`, `display_name`, and `provider` and must not invent, rename, merge, or reinterpret services.
 
-原 R14 manifest 的 variant `path` 曾记录为 `.bin`，而 dist 物理文件是 `.png`；R14.1 已修正为 `.png`。resolver 当前生成 `.png` URL，后续必须由 release gate 持续验证两者一致。
+The 89 historical/orphan production identities were removed from production Registry/state and archived in the Icon repository audit record.
 
-Icon Repository 已将 `release.yml` 固化为 fail-closed V6 release writer，并在主线 CI 中通过 L0-L1；但当前 state snapshot 仍缺少 canonical `ai`，因此 writer 在实际发布时会按设计阻断。`incremental.yml` 仍是 scaffold，因此完整的 acquisition→state→release 生产链尚未端到端闭环。
+## Cutover
 
-## V5 removal gate
+Collection now uses:
 
-只有以下条件全部满足，才能删除 `assets/icons/v5`：
+```text
+provider: v6
+release_id: icon-2026.09.30.clean1
+fallback_to_v5: false
+rollback:
+  provider: v6
+  release_id: icon-2026.09.30.r14.1
+```
 
-1. Collection canonical services = V6 entries = 100%；
-2. production dist 中 zero orphan entries；
-3. zero production fallback to V5；
-4. resolver 能在固定 manifest 上成功解析；
-5. manifest path 与物理对象扩展名完全一致；
-6. Icon Repository 有可重复的 release writer + validation workflow；
-7. Collection 全仓库无 V5 active reference；
-8. 回滚方案已经迁移到独立 immutable release，而不依赖 V5 本地资产。
+V5 is no longer part of production or rollback.
 
-在上述条件满足前，V5 必须保留，但不得继续扩充。
+## V5 retirement
+
+The V5 local asset tree is retired and must be deleted from Collection after the final retirement gate passes. V5 code and active automation are removed or retained only as historical documentation where required for audit.
+
+## Resolver
+
+The Collection V6 resolver is fail-closed. Missing or invalid V6 assets return an error; it never falls back to a Collection-local V5 asset.
+
+## Completion state
+
+All eight retirement conditions are satisfied by the clean1 evidence chain. The final action is to execute the retirement gate and delete `assets/icons/v5` and the obsolete V5 runtime/test implementation.
