@@ -34,3 +34,5 @@ Physical V5 assets are retained only until the retirement-gate commit is recorde
 5. delete `assets/icons/v5`;
 6. remove the now-obsolete retirement workflow;
 7. rerun Collection validation and publish gates.
+
+> V5 runtime implementation and V5 client resolver have now been removed from the production codebase. The physical `assets/icons/v5` archive remains only for the final gated deletion.
