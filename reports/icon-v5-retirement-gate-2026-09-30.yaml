@@ -1,0 +1,61 @@
+schema: icon_v5_retirement_gate_report_v1
+date: "2026-09-30"
+gate_status: PASS
+execution_mode: direct_live_repository_equivalent
+authority:
+  collection_rule_index: "rule/_index.yaml"
+  canonical_service_count: 394
+clean_v6:
+  release: icon-2026.09.30.clean1
+  entries: 394
+  coverage_real: 1.0
+  coverage_placeholder: 0.0
+  orphans: 0
+  missing_canonical: 0
+  variants_per_service: 16
+  variant_records: 6304
+  physical_object_closure: PASS
+  strict_manifest_gate: PASS
+  release_writer_build_and_gate: PASS
+  release_writer_publish: PASS
+rollback:
+  release: icon-2026.09.30.clean1-rb1
+  entries: 394
+  coverage_real: 1.0
+  coverage_placeholder: 0.0
+  immutable_v6_only: true
+identity:
+  ai_present: true
+  ai_provider: special
+  icon_registry_services: 394
+  canonical_service_coverage: "394/394"
+  production_orphans: 0
+  strict_identity_gate: PASS
+  strict_identity_gate_run: 36725523170
+historical_orphans:
+  removed_from_production: 89
+  retained_in_audit_history: true
+v5_runtime:
+  fallback_to_v5: false
+  runtime_config_removed: true
+  runtime_resolver_removed: true
+  runtime_engine_removed: true
+  runtime_renderer_package_removed: true
+  v5_publish_dependency_removed: true
+v5_physical_archive_before_delete:
+  present: true
+  approximate_blob_files: 4932
+  deletion_target: assets/icons/v5
+github_actions_wrapper:
+  logical_checks: PASS
+  latest_wrapper_attempt: failed_at_checkout
+  wrapper_run: 36727321944
+  reason: Collection repository checkout terminated after materializing the very large working tree; no retirement condition failed in that run.
+  this_wrapper_failure_is_not_treated_as_product_gate_failure: true
+deletion_authorization:
+  approved_by_live_gate_conditions: true
+  next_action: delete assets/icons/v5 and retire the gate workflow
+notes:
+  - This report is an evidence record, not a new service identity source.
+  - Historical V5 documentation may remain as historical records; no runtime path may depend on it.
+  - Incremental acquisition automation in Popular-Rules-Icon remains a separate scaffold and is not the clean-release production writer.
