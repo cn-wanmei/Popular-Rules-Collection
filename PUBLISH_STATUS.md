@@ -7,17 +7,16 @@ Repository: https://github.com/cn-wanmei/Popular-Rules-Collection
 <!-- AUTO-GENERATED:BEGIN -->
 ## Automated status
 
-Generated at: `2026-09-29T11:14:34.392488Z`
+Generated at: `2026-09-30T01:22:59.938787Z`
 
 ### Collection
-- Latest snapshot date: `2026-09-29`
-- Collection ID: `2026-09-29-7b1a992177ed1afb8c6c`
+- Latest snapshot date: `2026-09-30`
+- Collection ID: `2026-09-30-3fb4cdf3bc5483d222a2`
 - Status: `ok`
-- Root: `backup/2026-09-29`
+- Root: `backup/2026-09-30`
 
 ### Source health
-- `failed`: 1
-- `healthy`: 5
+- `healthy`: 6
 - `stale`: 4
 
 ### Generated clients
