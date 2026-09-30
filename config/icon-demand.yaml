@@ -1,0 +1,15 @@
+# R6 — Collection icon demand (overrides Icon default when present)
+schema: icon_demand_v1
+version: "1.0.0"
+updated: "2026-09-30"
+defaults:
+  styles:
+    - source_original
+  sizes: [128, 256]
+  formats: [png]
+  tier0_require_real: true
+  allow_placeholder: false
+clients:
+  generic:
+    styles: [source_original]
+    sizes: [128, 256]
