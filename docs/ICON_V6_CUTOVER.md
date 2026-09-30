@@ -23,9 +23,9 @@
 
 V5 is no longer a production dependency. `config/icon_v6.yaml` now has `fallback_to_v5: false` and the active resolver is V6-only.
 
-Physical V5 assets are retained only until the retirement-gate commit is recorded. They are not read by production configuration.
+Physical V5 assets have now been deleted. They were not part of the V6 runtime path.
 
-## Final retirement sequence
+## Final retirement sequence — COMPLETE
 
 1. clean1 production verified;
 2. independent V6 rollback published;
@@ -34,6 +34,8 @@ Physical V5 assets are retained only until the retirement-gate commit is recorde
 5. delete `assets/icons/v5`;
 6. remove the now-obsolete retirement workflow;
 7. rerun Collection validation and publish gates.
+
+**Final state: COMPLETE.**
 
 > V5 runtime implementation and V5 client resolver have now been removed from the production codebase. The physical `assets/icons/v5` archive remains only for the final gated deletion.
 

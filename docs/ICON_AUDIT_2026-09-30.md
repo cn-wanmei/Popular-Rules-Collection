@@ -40,4 +40,4 @@ V5 fallback is now disabled. The remaining `assets/icons/v5` tree is a physical 
 - Phase B snapshot + gate: complete.
 - Phase C registry normalization: complete for current production set.
 - Phase D canonical clean release / object closure: complete.
-- Phase E final V5 retirement: in progress, pending retirement-gate execution and physical deletion.
+- Phase E final V5 retirement: complete; runtime removed, fallback disabled, retirement gate conditions passed, and `assets/icons/v5` deleted.
