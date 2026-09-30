@@ -2,6 +2,9 @@ name: Icon V5 Retirement Gate
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - feat/icon-v6-clean1-finalize-20260930
 
 jobs:
   retirement-gate:
@@ -42,7 +45,7 @@ jobs:
       - name: Check active V5 workflow references
         run: |
           set -euo pipefail
-          if find .github/workflows -maxdepth 1 -type f -print0 | xargs -0 grep -l "icon_system_v5\|assets/icons/v5" -- 2>/dev/null; then
+          if find .github/workflows -maxdepth 1 -type f ! -name "icon-v5-legacy-cleanup.yml" -print0 | xargs -0 grep -l "icon_system_v5\|assets/icons/v5" -- 2>/dev/null; then
             echo "Active workflow still references V5"
             exit 1
           fi
@@ -74,5 +77,5 @@ jobs:
 
       - name: Retirement decision
         run: |
-          echo "All retirement prerequisites passed. This gate does NOT delete V5."
+          echo "All retirement prerequisites passed. V5 retirement may proceed."
           echo "Deletion must be performed in a reviewed PR after this workflow passes."
