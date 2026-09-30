@@ -1,30 +1,17 @@
-# Icon System V5 / Icon Matrix 8
+# Icon System V5 — Legacy Fallback Archive
 
-**Status:** `rc_ready` — **146 / 146 services × 8/8** (100% coverage of all service entities including independent child services)
+**Status:** `legacy_fallback_only`
 
-## Coverage policy
+V5 已退出正常生产路径。Collection 当前默认使用 Icon System V6：
+`config/icon_v6.yaml` → `cn-wanmei/Popular-Rules-Icon@dist`。
 
-```text
-all entity=service (including child services under each provider)
-×
-source_original + 7 independent styles
-= 8/8
-```
+本目录暂时保留的目的仅为：
 
-`provider_aggregate` reuses the corresponding service icon identity.
+- V6 身份边界迁移期间的回滚；
+- V6 生产链故障时的临时兜底；
+- 历史审计与可复现证据。
 
-## Artifacts
+禁止继续运行 V5 自动补全、质量重抓或 promote 工作流。
 
-- `registry.json` — SSOT identity, provenance, lineage, variants
-- `release-pointer.json` — active RC pointer
-- Full SVG/PNG pack published as GitHub Release asset `icon-v5-rc1`
-
-## Origins
-
-| Origin | Meaning |
-|--------|---------|
-| official_registered / official_discovered | Official site asset |
-| reviewed_local_seed | Repo seed when origin blocks automated fetch |
-| semantic_fallback | Non-brand glyph (private/restricted/stun) — not a brand logo |
-
-Official origin ≠ open-source license.
+历史 V5 曾以 146 service 为 bootstrap 基准；该数字不代表当前 Collection service universe。
+当前 canonical service universe 由 Collection `rule/_index.yaml` 决定。
