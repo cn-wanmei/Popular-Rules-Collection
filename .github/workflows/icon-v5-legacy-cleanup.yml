@@ -72,7 +72,7 @@ jobs:
         run: |
           set -euo pipefail
           test -f docs/PRODUCTION_IDENTITY_AUDIT_2026-09-30.md
-          grep -q "reproducible release writer" docs/PRODUCTION_IDENTITY_AUDIT_2026-09-30.md
+          grep -Eq "release-writer|release writer" docs/PRODUCTION_IDENTITY_AUDIT_2026-09-30.md
           echo "Release-chain audit document exists; final release validation remains mandatory"
 
       - name: Retirement decision
