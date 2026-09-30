@@ -1,10 +1,18 @@
 name: Icon V5 Retirement Gate
 
 on:
-  workflow_dispatch:
   push:
     branches:
-      - v5-retirement-gate:
+      - main
+    paths:
+      - 'config/icon_v6.yaml'
+      - 'docs/ICON_V6_CUTOVER.md'
+      - '.github/workflows/icon-v5-legacy-cleanup.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: icon-v5-retirement-gate
+  cancel-in-progress: false
 
 jobs:
   retirement-gate:
@@ -18,64 +26,68 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Check V6 production configuration
+      - name: Verify V6 production configuration
+        run: |
+          set -euo pipefail
+          grep -Eq '^provider: v6$' config/icon_v6.yaml
+          grep -Eq '^  release_id: icon-2026.09.30.clean1$' config/icon_v6.yaml
+          grep -Eq '^  fallback_to_v5: false$' config/icon_v6.yaml
+          grep -Eq '^  release_id: icon-2026.09.30.clean1-rb1$' config/icon_v6.yaml
+
+      - name: Verify clean1 and independent rollback manifests
         run: |
           set -euo pipefail
           python3 - <<'PY'
-          import yaml
-          from pathlib import Path
-          cfg = yaml.safe_load(Path("config/icon_v6.yaml").read_text(encoding="utf-8"))
-          assert cfg.get("provider") == "v6", "V6 is not the selected production provider"
-          v6 = cfg.get("v6") or {}
-          assert v6.get("release_id"), "V6 release_id is missing"
-          print("provider=v6 release_id=", v6["release_id"])
+          import json
+          import urllib.request
+
+          base = "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/manifests/"
+          for release in ("icon-2026.09.30.clean1", "icon-2026.09.30.clean1-rb1"):
+              with urllib.request.urlopen(base + release + ".json", timeout=30) as r:
+                  m = json.loads(r.read().decode("utf-8"))
+              assert len(m.get("entries", [])) == 394, release
+              assert m.get("coverage_real") == 1.0, release
+              assert m.get("coverage_placeholder") == 0.0, release
+              ids = [e.get("service_id") for e in m.get("entries", [])]
+              assert len(ids) == len(set(ids)) == 394, release
+              for e in m["entries"]:
+                  variants = e.get("variants") or {}
+                  assert len(variants) == 16, (release, e.get("service_id"))
+                  for meta in variants.values():
+                      assert str(meta.get("path", "")).startswith("/v/")
+                      assert str(meta.get("path", "")).endswith(".png")
+              print(release, "PASS")
           PY
 
-      - name: Check current V5 safety dependency
+      - name: Verify physical V5 tree still exists for gated deletion
         run: |
-          set -euo pipefail
-          python3 - <<'PY'
-          import yaml
-          from pathlib import Path
-          cfg = yaml.safe_load(Path("config/icon_v6.yaml").read_text(encoding="utf-8"))
-          assert (cfg.get("v6") or {}).get("fallback_to_v5") is False,               "V5 fallback is still enabled; retirement is blocked"
-          print("V5 fallback disabled")
-          PY
+          test -d assets/icons/v5
 
-      - name: Check active V5 workflow references
+      - name: Verify no active V5 runtime references
         run: |
           set -euo pipefail
-          if find .github/workflows -maxdepth 1 -type f -print0 | xargs -0 grep -l "icon_system_v5\|assets/icons/v5" -- 2>/dev/null; then
-            echo "Active workflow still references V5"
+          if grep -RInE             'assets/icons/v5|fallback_to_v5|icon_resolver_v5|icon_system_v5|Icon System V5.*production'             config scripts .github/workflows             --exclude='icon-v5-legacy-cleanup.yml'; then
+            echo "Active production/runtime V5 reference found"
             exit 1
           fi
-          echo "No active workflow references V5"
 
-      - name: Check V5 assets are no longer referenced by production config
+      - name: Verify clean1 release writer evidence
         run: |
           set -euo pipefail
-          if grep -RIn --exclude-dir=.git --exclude='*.md' --exclude='icon-v5-legacy-cleanup.yml'               "assets/icons/v5\|config/icon_v5\|icon_resolver_v5\|icon_system_v5"               config scripts .github 2>/dev/null; then
-            echo "Production configuration/code still references V5"
-            exit 1
-          fi
-          echo "No production references to V5"
+          grep -Eq 'release-writer build-and-gate: **PASS**|release-writer build-and-gate: PASS' docs/ICON_V6_CUTOVER.md
+          grep -Eq 'release-writer publish: **PASS**|release-writer publish: PASS' docs/ICON_V6_CUTOVER.md
+          grep -Eq '394/394' docs/ICON_V6_CUTOVER.md
+          ! grep -Eq '89|393/394|missing.*ai' docs/ICON_V6_CUTOVER.md
 
-      - name: Check V6 canonical coverage evidence
+      - name: Verify V5 is not referenced by client resolver configuration
         run: |
           set -euo pipefail
-          test -f docs/ICON_V6_CUTOVER.md
-          grep -Eq "394/394|100%" docs/ICON_V6_CUTOVER.md
-          ! grep -Eq "89 .*orphan|missing.*ai|393/394" docs/ICON_V6_CUTOVER.md
-          echo "Canonical V6 coverage evidence is clean"
+          ! grep -RInE 'V5|v5'             config/icon_v6.yaml scripts/icon_resolver_v6.py             --exclude='icon-v5-legacy-cleanup.yml' 2>/dev/null || {
+              echo "Unexpected V5 reference in production resolver/config"
+              exit 1
+          }
 
-      - name: Check release chain evidence
+      - name: Retirement gate result
         run: |
-          set -euo pipefail
-          test -f docs/PRODUCTION_IDENTITY_AUDIT_2026-09-30.md
-          grep -q "reproducible release writer" docs/PRODUCTION_IDENTITY_AUDIT_2026-09-30.md
-          echo "Release-chain audit document exists; final release validation remains mandatory"
-
-      - name: Retirement decision
-        run: |
-          echo "All retirement prerequisites passed. This gate does NOT delete V5."
-          echo "Deletion must be performed in a reviewed PR after this workflow passes."
+          echo "ICON_V5_RETIREMENT_GATE=PASS"
+          echo "V5 assets may be physically deleted in the next reviewed commit."
