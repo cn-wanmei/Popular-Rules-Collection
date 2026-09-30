@@ -17,8 +17,8 @@ class IconResolverV6Tests(unittest.TestCase):
                     "service_id": "demo",
                     "variants": {
                         "source_original:256:png": {
-                            "variant_hash": "abc123",
-                            "path": "/v/abc123.png",
+                            "variant_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                            "path": "/v/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.png",
                         }
                     },
                 }
@@ -26,7 +26,7 @@ class IconResolverV6Tests(unittest.TestCase):
         }
         self.assertEqual(
             resolver.resolve(manifest, "demo"),
-            "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Icon@dist/v/abc123.png",
+            "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Icon@dist/v/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.png",
         )
 
     def test_invalid_manifest_path_is_rejected(self) -> None:
@@ -37,7 +37,7 @@ class IconResolverV6Tests(unittest.TestCase):
                     "service_id": "demo",
                     "variants": {
                         "source_original:256:png": {
-                            "variant_hash": "abc123",
+                            "variant_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                             "path": "/v/abc123.bin",
                         }
                     },
