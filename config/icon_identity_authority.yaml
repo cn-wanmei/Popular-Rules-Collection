@@ -1,0 +1,59 @@
+schema: icon_identity_authority_v1
+version: 1
+authority:
+  service_identity: Popular-Rules-Collection
+  canonical_published_index:
+    repository: cn-wanmei/Popular-Rules-Collection
+    ref: main
+    path: rule/_index.yaml
+    selection:
+      include_entity: service
+      exclude_entities:
+        - provider_aggregate
+        - aggregate
+        - domestic_aggregate
+        - category
+  rule: Icon Registry MUST NOT define, rename, merge, or reinterpret Collection service identities.
+canonical_fields:
+  - service_id
+  - display_name
+  - provider
+identity_semantics:
+  service_id:
+    unique_within_canonical_service_universe: true
+    opaque_identifier: true
+    must_match_collection: true
+  display_name:
+    authoritative_source: collection
+    icon_registry_may_mirror: true
+    icon_registry_may_override: false
+  provider:
+    authoritative_source: collection
+    icon_registry_may_mirror: true
+    icon_registry_may_override: false
+  entity:
+    canonical_value_for_icon_eligibility: service
+    non_service_entities_never_count_as_service_icons: true
+  aliases:
+    may_describe_lookup_aliases: true
+    must_not_replace_canonical_service_id: true
+icon_rules:
+  service_icon_binds_to_service_id: true
+  aggregate_icon_does_not_satisfy_child_service: true
+  child_service_icon_does_not_redefine_parent_aggregate: true
+  product_icon_is_not_automatically_parent_brand_icon: true
+  parent_brand_icon_is_not_automatically_product_icon: true
+  generic_or_placeholder_asset_is_not_real_service_coverage: true
+  visual_duplicate_requires_identity_review: true
+synchronization:
+  method: pinned_snapshot
+  snapshot_generated_from: canonical_published_index
+  icon_repository_must_pin_collection_commit: true
+  drift_gate_required: true
+  runtime_network_fetch_for_identity: false
+migration:
+  phase_a_contract: done_by_this_change
+  phase_b_snapshot_and_gate: required
+  phase_c_registry_normalization: required
+  phase_d_asset_identity_review: required
+  phase_e_strict_ci_gate: required
