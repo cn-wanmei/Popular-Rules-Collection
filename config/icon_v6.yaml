@@ -13,21 +13,32 @@ v5:
 v6:
   repo: cn-wanmei/Popular-Rules-Icon
   branch: dist
-  release_id: icon-2026.09.30.styles8
-  path_template: "v/{variant_hash}{ext}"
-  manifest_path: manifests/icon-2026.09.30.styles8.json
+  release_id: icon-2026.09.30.r14.1
+  path_template: "v/{variant_hash}.png"
+  manifest_path: manifests/icon-2026.09.30.r14.1.json
   mirrors:
     raw: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/{path}"
     jsdelivr: "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Icon@dist/{path}"
     fastly: "https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Icon@dist/{path}"
-  # Safety: if V6 entry missing, fall back to V5 local assets
+  # Temporary migration fallback only. It must remain until V6 identity and production gates are green.
   fallback_to_v5: true
-  # All frozen services are in scope (247); list omitted — resolver uses full manifest
+  canonical_collection:
+    repository: cn-wanmei/Popular-Rules-Collection
+    path: rule/_index.yaml
+    service_count: 394
+  current_dist:
+    manifest_entries: 482
+    canonical_services_present: 393
+    canonical_services_missing: 1
+    orphan_entries: 89
+    missing_service_ids: [ai]
   canary_services: []
 
 rollback:
   provider: v5
 
 notes: |
-  R5 cutover 2026-09-30: provider=v6, release_id=icon-2026.09.30.styles8.
-  Rollback: set provider=v5.
+  R5 cutover 2026-09-30: provider=v6, release_id=icon-2026.09.30.r14.1.
+  V6 is active but migration is not complete: current dist has 89 orphan entries and misses canonical service ai.
+  V5 is retained only as a temporary rollback/fallback safety net.
+  V5 removal gate: zero canonical misses, zero production orphans, zero fallback use, resolver verification, manifest/physical consistency, and a reproducible release writer.

@@ -1,3 +1,13 @@
+# Historical Notice — Icon System V5
+
+> **Superseded on 2026-09-30.** This document is a historical V5 architecture/implementation plan.
+>
+> Current production direction is Icon System 6.0 in `cn-wanmei/Popular-Rules-Icon`.
+>
+> Numeric coverage, service counts, release IDs, and workflow assumptions below are historical V5 bootstrap values and MUST NOT be used as current project status.
+>
+> Current status is maintained in `docs/ICON_V6_CUTOVER.md`, `config/icon_v6.yaml`, and the identity-boundary audit documents.
+
 # Icon System V5 — 最终规划方案
 
 > 状态：Architecture Final / Bootstrap Implementation  
