@@ -19,11 +19,11 @@
 
 ## 已修正的配置漂移
 
-原配置/文档混用了 `icon-2026.09.30.styles8`、`icon-2026.09.30.freeze1` 与实际 dist release `icon-2026.09.30.r14.1`。当前以 `r14` 为唯一已验证发布指针。
+原配置/文档混用了 `icon-2026.09.30.styles8`、`icon-2026.09.30.freeze1` 与实际 dist release `icon-2026.09.30.r14.1`。当前以 `r14.1` 为唯一已验证发布指针。
 
 ## 已发现的生产链路问题
 
-实际 dist manifest 的 variant `path` 记录为 `.bin`，而 dist 物理文件是 `.png`；resolver 当前直接生成 `.png` URL。该元数据不一致必须由 release gate 阻断，不能继续扩大。
+原 R14 manifest 的 variant `path` 曾记录为 `.bin`，而 dist 物理文件是 `.png`；R14.1 已修正为 `.png`。resolver 当前生成 `.png` URL，后续必须由 release gate 持续验证两者一致。
 
 Icon Repository 当前 `release.yml` 与 `incremental.yml` 仍属于 placeholder/scaffold，说明完整的可重复 release writer 尚未在主线固化。因此不能把当前 dist 存在误认为生产链路已经完整健康。
 
