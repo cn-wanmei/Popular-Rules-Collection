@@ -1,8 +1,9 @@
-# Icon System 6.0 — canonical V6 production
+# Icon System 6.0 — Collection provider switch
 schema: icon_system_v6_provider
 version: "1.2.0"
 updated: "2026-09-30"
 
+# Production provider
 provider: v6
 
 v6:
@@ -25,16 +26,19 @@ v6:
     canonical_services_present: 394
     canonical_services_missing: 0
     orphan_entries: 0
-    missing_service_ids: []
-  canary_services: []
+    coverage: "100%"
 
 rollback:
   provider: v6
-  release_id: icon-2026.09.30.r14.1
-  manifest_path: manifests/icon-2026.09.30.r14.1.json
+  repo: cn-wanmei/Popular-Rules-Icon
+  branch: dist
+  release_id: icon-2026.09.30.clean1-rb1
+  manifest_path: manifests/icon-2026.09.30.clean1-rb1.json
+  dependency: "Popular-Rules-Icon immutable V6 release only"
 
 notes: |
-  Canonical V6 production release icon-2026.09.30.clean1.
-  Collection service identity is authoritative; V6 manifest is 394/394 canonical with zero production orphans.
-  V5 fallback is disabled.
-  Independent rollback is V6 icon-2026.09.30.r14.1 and does not depend on assets/icons/v5.
+  V6 is the sole production icon provider.
+  Collection owns canonical service identity; Icon Registry consumes it.
+  Production release is icon-2026.09.30.clean1.
+  Rollback release is icon-2026.09.30.clean1-rb1.
+  V5 fallback has been disabled. V5 local assets are pending final removal only after the retirement gate has passed.
