@@ -1,9 +1,8 @@
-# Icon System 6.0 — Collection provider switch
+# Icon System 6.0 — Collection provider
 schema: icon_system_v6_provider
-version: "1.2.0"
+version: "1.3.0"
 updated: "2026-09-30"
 
-# Production provider
 provider: v6
 
 v6:
@@ -39,6 +38,6 @@ rollback:
 notes: |
   V6 is the sole production icon provider.
   Collection owns canonical service identity; Icon Registry consumes it.
-  Production release is icon-2026.09.30.clean1.
-  Rollback release is icon-2026.09.30.clean1-rb1.
-  V5 fallback has been disabled. V5 local assets are pending final removal only after the retirement gate has passed.
+  Production: icon-2026.09.30.clean1.
+  Rollback: icon-2026.09.30.clean1-rb1.
+  V5 fallback is disabled and V5 physical assets are retired after the Collection retirement gate.
