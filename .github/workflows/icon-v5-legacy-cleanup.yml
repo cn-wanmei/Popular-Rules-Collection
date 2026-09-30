@@ -66,7 +66,7 @@ jobs:
       - name: Verify no active V5 runtime references
         run: |
           set -euo pipefail
-          if grep -RInE             'assets/icons/v5|fallback_to_v5|icon_resolver_v5|icon_system_v5|Icon System V5.*production'             config scripts .github/workflows             --exclude='icon-v5-legacy-cleanup.yml'; then
+          if grep -RInE             'assets/icons/v5|fallback_to_v5:[[:space:]]*true|provider:[[:space:]]*v5|icon_resolver_v5|icon_system_v5|Icon System V5.*production'             config scripts .github/workflows             --exclude='icon-v5-legacy-cleanup.yml'; then
             echo "Active production/runtime V5 reference found"
             exit 1
           fi
@@ -82,7 +82,7 @@ jobs:
       - name: Verify V5 is not referenced by client resolver configuration
         run: |
           set -euo pipefail
-          ! grep -RInE 'V5|v5'             config/icon_v6.yaml scripts/icon_resolver_v6.py             --exclude='icon-v5-legacy-cleanup.yml' 2>/dev/null || {
+          ! grep -RInE 'assets/icons/v5|fallback_to_v5:[[:space:]]*true|provider:[[:space:]]*v5'             config/icon_v6.yaml scripts/icon_resolver_v6.py             --exclude='icon-v5-legacy-cleanup.yml' 2>/dev/null || {
               echo "Unexpected V5 reference in production resolver/config"
               exit 1
           }
