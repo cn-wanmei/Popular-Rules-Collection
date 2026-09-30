@@ -1,6 +1,6 @@
 # Icon System 6.0 — Collection provider switch (R5 cutover)
 schema: icon_system_v6_provider
-version: "1.0.0"
+version: "1.1.0"
 updated: "2026-09-30"
 
 # R5: default production provider is V6 (Popular-Rules-Icon freeze)
@@ -13,9 +13,9 @@ v5:
 v6:
   repo: cn-wanmei/Popular-Rules-Icon
   branch: dist
-  release_id: icon-2026.09.30.freeze1
+  release_id: icon-2026.09.30.styles8
   path_template: "v/{variant_hash}{ext}"
-  manifest_path: manifests/icon-2026.09.30.freeze1.json
+  manifest_path: manifests/icon-2026.09.30.styles8.json
   mirrors:
     raw: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/{path}"
     jsdelivr: "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Icon@dist/{path}"
@@ -29,5 +29,5 @@ rollback:
   provider: v5
 
 notes: |
-  R5 cutover 2026-09-30: provider=v6, release_id=icon-2026.09.30.freeze1.
+  R5 cutover 2026-09-30: provider=v6, release_id=icon-2026.09.30.styles8.
   Rollback: set provider=v5.
