@@ -15,18 +15,20 @@
 | 目录规范 | [docs/layout.md](docs/layout.md) | Directory Layout v2 |
 
 </small>
-## 图标体系\n\n[Icon System 6.0](https://github.com/cn-wanmei/Popular-Rules-Icon) · [V6 切换状态](docs/ICON_V6_CUTOVER.md) · V5 legacy fallback（迁移完成前保留）\n\n## 当前项目状态（2026-09-30）
+## 图标体系\n\n[Icon System 6.0](https://github.com/cn-wanmei/Popular-Rules-Icon) · [V6 切换状态](docs/ICON_V6_CUTOVER.md) · V5 已退出运行时路径，物理资产正在最终退休\n\n## 当前项目状态（2026-09-30）
 
 | 项目 | 状态 |
 |---|---|
 | 服务身份权威 | Collection `rule/_index.yaml` |
 | Canonical service | **394** |
 | Icon V6 active provider | **v6** |
-| V6 manifest | `icon-2026.09.30.r14.1` |
-| Canonical service coverage | **393/394** |
-| V6 orphan entries | **89** |
-| V5 | **legacy fallback only / 暂不删除** |
-| V6 完整生产链 | **尚未证明可复现** |
+| V6 manifest | `icon-2026.09.30.clean1` |
+| Canonical service coverage | **394/394 (100%)** |
+| V6 orphan entries | **0** |
+| AI canonical service | **已补齐** |
+| V5 fallback | **disabled** |
+| V5 physical assets | **待 retirement gate 后删除** |
+| V6 clean production writer | **PASS** |
 
 > 当前不应把历史 262 条规则、146 service、V5/V4 icon coverage 当作 2026-09-30 的实时状态。
 
