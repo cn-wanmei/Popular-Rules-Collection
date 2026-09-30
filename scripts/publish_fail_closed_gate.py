@@ -17,12 +17,14 @@ REQUIRED_SNIPPETS = (
     "scripts/immutable_source_lineage_gate.py",
     "scripts/partial_production_invariant_gate.py",
     "config/icon_v6.yaml",
-    "provider: v6",
-    "fallback_to_v5: false",
-    "release_id: icon-2026.09.30.clean1",
-    "scripts/immutable_source_lineage_gate.py",
-
+    "Verify V6 icon release binding",
+    'cfg.get("provider") == "v6"',
+    'v6.get("release_id") == "icon-2026.09.30.clean1"',
+    'v6.get("fallback_to_v5") is False',
+    '(cfg.get("rollback") or {}).get("provider") == "v6"',
+    '(cfg.get("rollback") or {}).get("release_id") == "icon-2026.09.30.r14.1"',
 )
+
 
 def main() -> int:
     parser = argparse.ArgumentParser()
@@ -51,6 +53,7 @@ def main() -> int:
     for error in errors:
         print(f" - {error}")
     return 0 if not errors else 1
+
 
 if __name__ == "__main__":
     raise SystemExit(main())
