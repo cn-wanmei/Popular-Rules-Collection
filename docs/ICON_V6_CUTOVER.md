@@ -38,3 +38,5 @@ Physical V5 assets are retained only until the retirement-gate commit is recorde
 > V5 runtime implementation and V5 client resolver have now been removed from the production codebase. The physical `assets/icons/v5` archive remains only for the final gated deletion.
 
 > Retirement gate evidence check is deterministic and uses the exact final clean1 state.
+
+> Retirement gate uses sparse checkout because the Collection repository contains a large historical V5 tree; this does not change the retirement criteria.
