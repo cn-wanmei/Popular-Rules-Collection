@@ -15,7 +15,7 @@
 | 目录规范 | [docs/layout.md](docs/layout.md) | Directory Layout v2 |
 
 </small>
-## 图标体系\n\n[Icon Library V4：10 层视觉矩阵](docs/ICON_STYLE_GUIDE_V4.md) · [V4 图标库](assets/icons/v4/README.md)\n\n## 当前发行状态
+## 图标体系\n\n[Icon System 6.0](https://github.com/cn-wanmei/Popular-Rules-Icon) · [V6 切换状态](docs/ICON_V6_CUTOVER.md) · V5 legacy fallback（迁移完成前保留）\n\n## 当前发行状态
 
 | 指标 | 当前值 |
 |---|---|
