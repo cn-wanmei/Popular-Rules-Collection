@@ -18,7 +18,7 @@ def load_provider(path: Path) -> dict:
     text = path.read_text(encoding="utf-8")
     if yaml:
         return yaml.safe_load(text)
-    out: dict = {"provider": "v5", "v6": {}}
+    out: dict = {"provider": "v6", "v6": {}}
     section = None
     for line in text.splitlines():
         if line.startswith("provider:"):
@@ -101,15 +101,9 @@ def main() -> int:
             print(url)
             return 0
     except Exception as exc:
-        if (cfg.get("v6") or {}).get("fallback_to_v5") is True if "cfg" in locals() else False:
-            print(f"V6_ERROR fallback_v5 service={args.service}: {exc}", file=sys.stderr)
-            return 3
         print(f"V6_ERROR {args.service}: {exc}", file=sys.stderr)
         return 1
 
-    if (cfg.get("v6") or {}).get("fallback_to_v5") is True:
-        print(f"V6_MISS fallback_v5 service={args.service}", file=sys.stderr)
-        return 3
     print(f"NOT_FOUND {args.service}", file=sys.stderr)
     return 1
 
