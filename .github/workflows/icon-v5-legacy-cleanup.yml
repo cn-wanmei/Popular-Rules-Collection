@@ -25,6 +25,13 @@ jobs:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
           fetch-depth: 1
+          sparse-checkout: |
+            config
+            scripts
+            .github/workflows
+            docs
+            README.md
+          sparse-checkout-cone-mode: true
 
       - name: Verify V6 production configuration
         run: |
@@ -61,7 +68,10 @@ jobs:
 
       - name: Verify physical V5 tree still exists for gated deletion
         run: |
-          test -d assets/icons/v5
+          set -euo pipefail
+          git cat-file -e HEAD:assets/icons/v5/README.md
+          git cat-file -e HEAD:assets/icons/v5/registry.json
+          echo "V5 physical tree exists in the current commit"
 
       - name: Verify no active V5 runtime references
         run: |
