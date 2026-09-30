@@ -42,3 +42,5 @@ Physical V5 assets are retained only until the retirement-gate commit is recorde
 > Retirement gate uses sparse checkout because the Collection repository contains a large historical V5 tree; this does not change the retirement criteria.
 
 > The final retirement gate uses non-cone sparse-checkout to avoid materializing the large legacy V5 tree.
+
+> Final V5 retirement gate is repository-independent and validates the live main tree directly.
