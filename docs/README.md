@@ -12,8 +12,8 @@
 | 规则语义索引 | [rule/_index.yaml](../rule/_index.yaml) |
 | 客户端文件清单 | [generated/manifest.json](../generated/manifest.json) |
 | Network Dataset provenance | [generated/network_manifest.json](../generated/network_manifest.json) |
-| 当前 Icon Usage | [ICON_USAGE.md](ICON_USAGE.md) |
-| 当前 Icon Style Guide | [ICON_STYLE_GUIDE_V4.md](ICON_STYLE_GUIDE_V4.md) |
+| Icon System 6.0 | [Popular-Rules-Icon](https://github.com/cn-wanmei/Popular-Rules-Icon) |
+| Icon V6 cutover | [ICON_V6_CUTOVER.md](ICON_V6_CUTOVER.md) |
 
 ## 文档分层
 
@@ -26,8 +26,8 @@
 ├── docs/GENERATED_OUTPUTS.md
 ├── docs/NETWORK_DATASETS.md
 ├── docs/ARCHITECTURE.md
-├── docs/ICON_USAGE.md
-└── docs/ICON_STYLE_GUIDE_V4.md
+├── docs/ICON_V6_CUTOVER.md
+└── (Icon 资产与指南见 Popular-Rules-Icon)
 
 图标 SSOT
 └── assets/icons/v4/

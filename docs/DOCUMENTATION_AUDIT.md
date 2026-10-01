@@ -40,7 +40,7 @@
 
 ## 5. 历史文档处理
 
-带有 Phase、V1、V2、Freeze 或明确历史日期的文档属于演进记录。本次不把历史结论伪装成当前规范，而是保留其历史证据属性，并要求当前使用优先从根 README、SERVICE_CATALOG、RULE_USAGE_GUIDE、ARCHITECTURE 和 ICON_USAGE 进入。
+带有 Phase、V1、V2、Freeze 或明确历史日期的文档属于演进记录。本次不把历史结论伪装成当前规范，而是保留其历史证据属性，并要求当前使用优先从根 README、SERVICE_CATALOG、RULE_USAGE_GUIDE、ARCHITECTURE 和 Icon 仓 / ICON_V6_CUTOVER 进入。
 
 ## 6. 统一 SSOT
 

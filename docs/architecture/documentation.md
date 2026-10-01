@@ -17,6 +17,6 @@ Every service page must use current paths and identities from the release manife
 - Outputs: `docs/GENERATED_OUTPUTS.md`
 - Rule catalog: `docs/RULE_CATALOG.md`
 - Routing: `docs/ROUTING_*.md`
-- Icons: `docs/ICON_USAGE.md` + `assets/icons/v3/release-pointer.json`
+- Icons: [Popular-Rules-Icon](https://github.com/cn-wanmei/Popular-Rules-Icon) + `config/icon_v6.yaml`
 
 Removed historical documentation generators are not current runtime dependencies.

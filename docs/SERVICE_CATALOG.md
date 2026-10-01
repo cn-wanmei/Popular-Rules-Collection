@@ -21,7 +21,7 @@
 - [完整规则使用说明](RULE_USAGE_GUIDE.md)
 - [规则索引](../rule/_index.yaml)
 - [Generated Manifest](../generated/manifest.json)
-- [Icon Usage](ICON_USAGE.md)
+- [Icon System 6.0](https://github.com/cn-wanmei/Popular-Rules-Icon)
 
 ## 全量服务目录
 
