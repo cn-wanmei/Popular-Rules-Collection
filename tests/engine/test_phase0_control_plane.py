@@ -51,7 +51,7 @@ def test_ir_uses_engine_version_ssot():
 
 
 def test_phase0_doc_exists():
-    path = Path(__file__).resolve().parents[2] / "docs" / "PHASE0_CONTROL_PLANE.md"
+    path = Path(__file__).resolve().parents[2] / "docs" / "archive" / "phases" / "PHASE0_CONTROL_PLANE.md"
     data = path.read_text(encoding="utf-8")
     assert "V1 runtime cutover" in data
 
