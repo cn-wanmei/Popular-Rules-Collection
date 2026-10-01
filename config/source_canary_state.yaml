@@ -182,7 +182,7 @@ services:
       content_digest: 073c3031c90820457209336550d39bbd4976b9f91c1486be5b0795a2c302057f
       production_activation_record: TENCENTCLOUD_PRODUCTION_ACTIVATION_2026-10-01.md
   tmall:
-    state: canary
+    state: production
     enabled: true
     source_verification:
       source_commit: 7957ce7c695f6090b9f74ae55d691375744deaf4
@@ -193,7 +193,7 @@ services:
     attestation:
       status: passed
       promotion_blocked: false
-      note: canary_qualification_pass_2026-10-01_run_36802753035
+      note: production_unlock_2026-10-01_canary_run_36802753035
       source_release: releases/tmall/snap-tmall-17de7049e2f7bf67cb88c785/release.json
       snapshot_id: snap-tmall-17de7049e2f7bf67cb88c785
       content_digest: 89e2ce020e9bb3a7538b80836127c59290470c896aa2a42438011eecce6dbc98
@@ -202,6 +202,8 @@ services:
       semantic_run_id: canary-tmall-release-2
       rollback_run_id: rollback-tmall-d73fa2383e63c8ae
       observation_run_id: observe-tmall-b6fb082f4121797c
+      production_unlock_run_id: '36802753035'
+      production_activation_record: TMALL_PRODUCTION_ACTIVATION_2026-10-01.md
       reconciliation_pass: true
       seven_client_semantic_pass: true
       rollback_pass: true
