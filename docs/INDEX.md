@@ -17,3 +17,5 @@
 - [Popular-Rules-Icon](https://github.com/cn-wanmei/Popular-Rules-Icon)
 
 Phase / date-stamped planning docs not listed here are historical; prefer SSOT configs and CI status over narrative status tables.
+- [phases/](archive/phases/) — PHASE/P1–P3/V1–V2 historical plans
+- [icon-v5 schemas](../schemas/archive/icon-v5/) / [configs](../config/archive/icon-v5/) / [reports](../reports/archive/icon-v5/)
