@@ -15,7 +15,12 @@
 | 目录规范 | [docs/layout.md](docs/layout.md) | Directory Layout v2 |
 
 </small>
-## 图标体系\n\n[Icon System 6.0](https://github.com/cn-wanmei/Popular-Rules-Icon) · [V6 切换状态](docs/ICON_V6_CUTOVER.md) · V5 已从运行时与物理资产中完全退休\n\n## 当前项目状态（2026-09-30）
+
+## 图标体系
+
+[Icon System 6.0](https://github.com/cn-wanmei/Popular-Rules-Icon) · [V6 切换状态](docs/ICON_V6_CUTOVER.md) · V5 已从运行时与物理资产中完全退休
+
+## 当前项目状态（2026-09-30）
 
 | 项目 | 状态 |
 |---|---|
@@ -34,17 +39,25 @@
 
 ## 当前发行状态
 
-| 指标 | 当前值 |
+> **权威实时状态**：根目录 [`PUBLISH_STATUS.md`](PUBLISH_STATUS.md)（由 `status.yml` CI 自动生成）。下表为审计对齐快照，避免与机器状态混淆。
+
+| 指标 | 当前值（对齐 PUBLISH_STATUS 2026-09-30） |
 |---|---|
-| Collection Date | **2026-09-24** |
+| Latest snapshot date | **2026-09-30** |
+| Collection ID | `2026-09-30-3fb4cdf3bc5483d222a2` |
+| Collection status | `ok` |
+| Snapshot root | `backup/2026-09-30` |
+| 客户端 | **7**（egern / loon / mihomo / quantumultx / shadowrocket / singbox / surge） |
+| Icon V6 release | `icon-2026.09.30.clean1` |
+| Source health (snapshot) | healthy: 5 · stale: 4 · failed: 1 |
+
+历史发行指纹（2026-09-24 immutable run，仅作对照）：
+
+| 指标 | 值 |
+|---|---|
 | Generated At | `2026-09-24T04:39:15.367236+00:00` |
 | Immutable Run | `20260924T043120249584Z-run` |
 | Semantic IR Digest | `f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7` |
-| 规则索引条目 | **262** |
-| 顶级服务集 | **116** |
-| Generated 文件 | **1984** |
-| 客户端 | **7** |
-| Icon Release | `2026.09.25-prc-icon-matrix-3` |
 
 ## 七客户端发行目录
 
@@ -79,6 +92,7 @@
 | `generated/<network-scope>/` | Network Dataset |
 | `docs/services/` | 服务 / 子服务独立说明 |
 | `docs/SERVICE_CATALOG.md` | 全量服务目录 |
+| `docs/archive/activation/` | 历史冻结 / 激活证据（非当前策略） |
 
 ## 生产链
 
@@ -106,7 +120,10 @@ Gates → Immutable Release Candidate → Publish
 - [Network Datasets](docs/NETWORK_DATASETS.md)
 - [Architecture](docs/ARCHITECTURE.md)
 - [Icon Usage](docs/ICON_USAGE.md)
+- [历史激活档案](docs/archive/activation/README.md)
 
 > `rule/` 与 `generated/` 都是派生发行物。不要手工修补规则数字、Raw URL、SHA-256 或图标路径。
 
 > V5 runtime provider/configuration and physical legacy assets have been fully retired after the final gate.
+
+> 根目录不再保留 freeze/activation 策略文件；历史证据见 `docs/archive/activation/`。
