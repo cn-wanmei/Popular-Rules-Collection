@@ -167,23 +167,30 @@ services:
       seed_only_count: 0
       conflict_count: 0
   tencentcloud:
-    state: verified
-    enabled: false
+    state: production
+    enabled: true
     source_verification:
       run: 35678280042
       source_commit: ffc7375b31080ea735c8bcc8ee59066b969c382f
       snapshot_id: snap-tencentcloud-88cd0f5dc164b2937a59521f
       content_digest: 414a94c084a576e5770e6d2e3ab6ef9b9c09cbbeb4de1848c5a812459490c499
-    attestation: {status: pending}
+    attestation:
+      status: passed
+      note: operator_promoted_2026-10-01_active_immutable_binding_and_source_production
+      source_release: releases/tencentcloud/snap-tencentcloud-e55bc8c508e839813ae20cd0/release.json
+      snapshot_id: snap-tencentcloud-e55bc8c508e839813ae20cd0
+      content_digest: 073c3031c90820457209336550d39bbd4976b9f91c1486be5b0795a2c302057f
+      production_activation_record: TENCENTCLOUD_PRODUCTION_ACTIVATION_2026-10-01.md
   tmall:
-    state: verified
-    enabled: false
+    state: canary
+    enabled: true
     source_verification:
       source_commit: ffc7375b31080ea735c8bcc8ee59066b969c382f
       verified_input_commit: 4cfabcfc3e77806bc054035162ae64f93fa0505b
       snapshot_id: snap-tmall-42b106e61c7dad4f4aa02477
       content_digest: c5f6ca64ece3eeba17c154a2ee9edc9f9a36e4e9c2f67e5fc53f82c4a7
-    lineage_status: aligned_to_immutable_registry_pending_reverification
+    lineage_status: aligned_to_immutable_registry
     attestation:
       status: pending
-      promotion_blocked: true
+      promotion_blocked: false
+      note: canary_armed_2026-10-01_awaiting_source_canary_dispatch
