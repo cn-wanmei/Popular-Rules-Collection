@@ -22,7 +22,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: phase2-Popular-Rules-Collection--github-workflows-phase2-source-gate-yml-${{ github.ref }}
+  group: source-upstream-gate-Popular-Rules-Collection-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
