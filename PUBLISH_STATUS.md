@@ -7,7 +7,7 @@ Repository: https://github.com/cn-wanmei/Popular-Rules-Collection
 <!-- AUTO-GENERATED:BEGIN -->
 ## Automated status
 
-Generated at: `2026-10-01T03:24:09.166610Z`
+Generated at: `2026-10-01T03:43:48.828384Z`
 
 ### Collection
 - Latest snapshot date: `2026-10-01`
@@ -16,8 +16,7 @@ Generated at: `2026-10-01T03:24:09.166610Z`
 - Root: `backup/2026-10-01`
 
 ### Source health
-- `healthy`: 6
-- `retired`: 4
+- `healthy`: 10
 
 ### Generated clients
 - egern: `generated/egern`
