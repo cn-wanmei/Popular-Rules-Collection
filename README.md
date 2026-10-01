@@ -97,6 +97,7 @@ Gates → Immutable Release Candidate → Publish
 
 ## 文档
 
+- [文档索引](docs/INDEX.md)
 - [服务规则目录](docs/SERVICE_CATALOG.md)
 - [规则完整使用说明](docs/RULE_USAGE_GUIDE.md)
 - [文档一致性审计](docs/DOCUMENTATION_AUDIT.md)

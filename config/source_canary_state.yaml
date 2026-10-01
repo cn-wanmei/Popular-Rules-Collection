@@ -158,7 +158,7 @@ services:
       observation_run_id: observe-taobao-ed5b9063e584f5c4
       observation_started_at: '2026-09-22T02:48:27.399246+00:00'
       production_unlock_run_id: '35680687328'
-      production_activation_record: TAOBAO_PRODUCTION_ACTIVATION_2026-09-22.md
+      production_activation_record: docs/archive/activation/TAOBAO_PRODUCTION_ACTIVATION_2026-09-22.md
       reconciliation_pass: true
       seven_client_semantic_pass: true
       rollback_pass: true
