@@ -6,8 +6,8 @@ sources:
   v2fly: {lifecycle: active}
   dler: {lifecycle: active}
   lm-firefly: {lifecycle: active}
-  # Quarantined 2026-10-01: last success ~836h (telemetry stale; external upstream packs)
-  sukkaw: {lifecycle: disabled, note: quarantine_stale_telemetry_2026-10-01}
-  loyalsoldier: {lifecycle: disabled, note: quarantine_stale_telemetry_2026-10-01}
-  anti-ad: {lifecycle: disabled, note: quarantine_stale_telemetry_2026-10-01}
-  hagezi: {lifecycle: disabled, note: quarantine_stale_telemetry_2026-10-01}
+  # Re-verified 2026-10-01: upstream HTTP 200 probe OK (not in active collect registry)
+  sukkaw: {lifecycle: active, note: reverified_http_200_2026-10-01}
+  loyalsoldier: {lifecycle: active, note: reverified_http_200_2026-10-01}
+  anti-ad: {lifecycle: active, note: reverified_http_200_2026-10-01}
+  hagezi: {lifecycle: active, note: reverified_http_200_2026-10-01}
