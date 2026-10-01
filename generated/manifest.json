@@ -12,17 +12,17 @@
   "file_count": 4707,
   "files": [
     {
-      "file": "_promotion/20261001T032316352001Z-run.json",
+      "file": "_promotion/20261001T035225150281Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "681ab9536c524963ed4f482c66d9fd954b9d0dd2feea59e4172636c18b03ab99",
+      "sha256": "e0d8b42bc628e00df651bed2b9ad17ed8bcd5c881066640b233b0d79397de633",
       "size": 542960
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "681ab9536c524963ed4f482c66d9fd954b9d0dd2feea59e4172636c18b03ab99",
+      "sha256": "e0d8b42bc628e00df651bed2b9ad17ed8bcd5c881066640b233b0d79397de633",
       "size": 542960
     },
     {
@@ -1156,10 +1156,10 @@
     {
       "file": "egern/categories/other/other.yaml",
       "kind": "client_rules",
-      "rule_count": 129364,
+      "rule_count": 129467,
       "scope": "egern",
-      "sha256": "271296dd573b9b3d2bc064fbb1c3dcc59e5b1e684960ee5b9e4f03c078a41792",
-      "size": 2481222
+      "sha256": "5238fcc34068fac61818efc0c029c25c1199811fdc5354fc1d3d73a32fd3592f",
+      "size": 2483422
     },
     {
       "file": "egern/ccb/ccb/ccb.yaml",
@@ -4500,18 +4500,18 @@
     {
       "file": "egern/tencent/tencent/tencent.yaml",
       "kind": "client_rules",
-      "rule_count": 815,
+      "rule_count": 918,
       "scope": "egern",
-      "sha256": "9224623c8a029455a93be61a632244b022798ada733df5b6b1176a097ffd37b8",
-      "size": 17799
+      "sha256": "c3695ce0c9d2a9046844c0bb6abc60e7054c80d0c5214e10c1abb85395ad97d9",
+      "size": 19999
     },
     {
       "file": "egern/tencent/tencentcloud/tencentcloud.yaml",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 105,
       "scope": "egern",
-      "sha256": "340b759c37b59fa272e7525dbe1a2f6705b3498530549629b29d983ed711e1fd",
-      "size": 43
+      "sha256": "ce1eda3fd4c5770b616180d4389fe8235181cf5420a4ffe0414a8a8549083b66",
+      "size": 2290
     },
     {
       "file": "egern/tencent/tencentdocs/tencentdocs.yaml",
@@ -7276,10 +7276,10 @@
     {
       "file": "loon/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 129221,
+      "rule_count": 129324,
       "scope": "loon",
-      "sha256": "bc22c73c9fe7225bea7cd0d163fe03bfed65856d33cb54eb8bc02ee1f94bff25",
-      "size": 3499607
+      "sha256": "fd9c60076e3e207c07712a7a52fb281e733ef251d0cd63fe6caac8c3ca29e78f",
+      "size": 3502015
     },
     {
       "file": "loon/ccb/ccb/ccb.list",
@@ -10620,18 +10620,18 @@
     {
       "file": "loon/tencent/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 815,
+      "rule_count": 918,
       "scope": "loon",
-      "sha256": "78afde5b4790771e5f83e3c003f82f1a8d08a1b929bbf5c94dea5d491880036d",
-      "size": 23818
+      "sha256": "c21c218ef4e970fe628154d574446fd4d8cdf709c95174fbc09f899bbb97580b",
+      "size": 26226
     },
     {
       "file": "loon/tencent/tencentcloud/tencentcloud.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 105,
       "scope": "loon",
-      "sha256": "327feaeb8a41e1de71d2f4957fd10a3e5d561f7545e15881ed38c3ef71371d68",
-      "size": 32
+      "sha256": "e2840790020927d91206298d48d2ae637593d187d1456cf4513cc5874d57b8d0",
+      "size": 2462
     },
     {
       "file": "loon/tencent/tencentdocs/tencentdocs.list",
@@ -12484,10 +12484,10 @@
     {
       "file": "mihomo/categories/other/other.yaml",
       "kind": "client_rules",
-      "rule_count": 129364,
+      "rule_count": 129467,
       "scope": "mihomo",
-      "sha256": "5248f3b8d97929bbdc536d91fc839103068fcf24093a629cc452b92ebb095b32",
-      "size": 4023056
+      "sha256": "a6ead8e073be5986b3a298ba950bb52e812e3ed574f043a26e67ba7fced9127f",
+      "size": 4025876
     },
     {
       "file": "mihomo/ccb/ccb/ccb.yaml",
@@ -15828,18 +15828,18 @@
     {
       "file": "mihomo/tencent/tencent/tencent.yaml",
       "kind": "client_rules",
-      "rule_count": 815,
+      "rule_count": 918,
       "scope": "mihomo",
-      "sha256": "1f62366f8362b98af5411a766840ee6fb9ad7da2c2e46228c1ddc73ca0c66505",
-      "size": 27087
+      "sha256": "040c853758564438ff289ab87172e1ee64e13dd22d342e9424d4d55d7605a235",
+      "size": 29907
     },
     {
       "file": "mihomo/tencent/tencentcloud/tencentcloud.yaml",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 105,
       "scope": "mihomo",
-      "sha256": "71d8d00ecb51ecd7d2a7a018a6ff98d258657cf0c1520cfbce526062feefb8f1",
-      "size": 45
+      "sha256": "4a14d5b0b8978bce24f2b664b96bd46cdd4192b8c7578320b81cf59988d8d114",
+      "size": 2891
     },
     {
       "file": "mihomo/tencent/tencentdocs/tencentdocs.yaml",
@@ -16790,7 +16790,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "d68cc48ed82d1a5d39cf07730870bb9b3e3479633f06c42b581b65aee856c736",
+      "sha256": "2580a38e96a714762786dfe7c7d99eaff3d796b998bf84580c44db7fdfe20620",
       "size": 4595
     },
     {
@@ -16806,16 +16806,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "b3623f83e46e334335a67a148d09a6ba2250911dcc62498910d51f4808b39f41",
-      "size": 37103
+      "sha256": "68631d901c79945c6235eb412e7c04c032b7c8ed8a8ab0928e996695985eccee",
+      "size": 36972
     },
     {
       "file": "provider/googlecloud_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 1107,
+      "rule_count": 1103,
       "scope": "provider",
-      "sha256": "9ce293929f4695539f165d20a65ff1bd42edfd6a3be6c0bb6cb53fd957f1131a",
-      "size": 45754
+      "sha256": "4dc6e1d1c86ebe07c046573ad512ba81ca7e72d8c2040538fbc942c540babb4b",
+      "size": 45587
     },
     {
       "file": "provider/oracle.txt",
@@ -17956,10 +17956,10 @@
     {
       "file": "quantumultx/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 129221,
+      "rule_count": 129324,
       "scope": "quantumultx",
-      "sha256": "328106de6280a35bc6d9048528efeda42682d1b9189f97c760a0c2cf934433b7",
-      "size": 4275719
+      "sha256": "9a925e87cec33caf3b207834ecfd90cc8044a97cd9f7b8b3afe953d54a662c9d",
+      "size": 4278951
     },
     {
       "file": "quantumultx/ccb/ccb/ccb.list",
@@ -21300,18 +21300,18 @@
     {
       "file": "quantumultx/tencent/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 815,
+      "rule_count": 918,
       "scope": "quantumultx",
-      "sha256": "2a86a63bfdf8d3be906cfc38a7b46fc3f2a3be5827180c91d122cfe02a37ec48",
-      "size": 28814
+      "sha256": "9648204defd5a7738a8f18886a9e5013193ec9d6f0a2abf513c616a5b806ce9d",
+      "size": 32046
     },
     {
       "file": "quantumultx/tencent/tencentcloud/tencentcloud.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 105,
       "scope": "quantumultx",
-      "sha256": "602242e45a1c3513e72fc67d65f22c1c60fa7a5c00a693e76be74aaae4e88f0c",
-      "size": 38
+      "sha256": "015135393d8f54ff2db1aca6810fd65567c3bb9ed59b8b1e28ffdf7d731f4dd3",
+      "size": 3300
     },
     {
       "file": "quantumultx/tencent/tencentdocs/tencentdocs.list",
@@ -23164,10 +23164,10 @@
     {
       "file": "shadowrocket/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 129221,
+      "rule_count": 129324,
       "scope": "shadowrocket",
-      "sha256": "bc22c73c9fe7225bea7cd0d163fe03bfed65856d33cb54eb8bc02ee1f94bff25",
-      "size": 3499607
+      "sha256": "fd9c60076e3e207c07712a7a52fb281e733ef251d0cd63fe6caac8c3ca29e78f",
+      "size": 3502015
     },
     {
       "file": "shadowrocket/ccb/ccb/ccb.list",
@@ -26508,18 +26508,18 @@
     {
       "file": "shadowrocket/tencent/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 815,
+      "rule_count": 918,
       "scope": "shadowrocket",
-      "sha256": "78afde5b4790771e5f83e3c003f82f1a8d08a1b929bbf5c94dea5d491880036d",
-      "size": 23818
+      "sha256": "c21c218ef4e970fe628154d574446fd4d8cdf709c95174fbc09f899bbb97580b",
+      "size": 26226
     },
     {
       "file": "shadowrocket/tencent/tencentcloud/tencentcloud.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 105,
       "scope": "shadowrocket",
-      "sha256": "327feaeb8a41e1de71d2f4957fd10a3e5d561f7545e15881ed38c3ef71371d68",
-      "size": 32
+      "sha256": "e2840790020927d91206298d48d2ae637593d187d1456cf4513cc5874d57b8d0",
+      "size": 2462
     },
     {
       "file": "shadowrocket/tencent/tencentdocs/tencentdocs.list",
@@ -28374,8 +28374,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "18bd478bec41fe466bd6025df6d672d51bbe64c7fa913807e6fac094e62f6979",
-      "size": 3128146
+      "sha256": "0c0b09af53dd9a04f618d1d18120c4d0ac8701ff628b6d808c1dedc8efe18963",
+      "size": 3130861
     },
     {
       "file": "singbox/ccb/ccb/ccb.json",
@@ -31718,16 +31718,16 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "e59a21e343deac51829d64973d3590f4424552fffbaf5014c26c17b5974a76e8",
-      "size": 21950
+      "sha256": "9ac9f8f8b57b803be1ea7f652dd3c0ee3d88f0ef6d9ec1338897172e324d7988",
+      "size": 24665
     },
     {
       "file": "singbox/tencent/tencentcloud/tencentcloud.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "30a72b4a74d5c40af2ff8a93aa092709876916c49780371a34a51f71777ef0b4",
-      "size": 110
+      "sha256": "ac781f4eb2747c973be9882980dc640855a33a70ae8978c04097fd8ef7048e47",
+      "size": 2877
     },
     {
       "file": "singbox/tencent/tencentdocs/tencentdocs.json",
@@ -33580,10 +33580,10 @@
     {
       "file": "surge/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 129221,
+      "rule_count": 129324,
       "scope": "surge",
-      "sha256": "bc22c73c9fe7225bea7cd0d163fe03bfed65856d33cb54eb8bc02ee1f94bff25",
-      "size": 3499607
+      "sha256": "fd9c60076e3e207c07712a7a52fb281e733ef251d0cd63fe6caac8c3ca29e78f",
+      "size": 3502015
     },
     {
       "file": "surge/ccb/ccb/ccb.list",
@@ -36924,18 +36924,18 @@
     {
       "file": "surge/tencent/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 815,
+      "rule_count": 918,
       "scope": "surge",
-      "sha256": "78afde5b4790771e5f83e3c003f82f1a8d08a1b929bbf5c94dea5d491880036d",
-      "size": 23818
+      "sha256": "c21c218ef4e970fe628154d574446fd4d8cdf709c95174fbc09f899bbb97580b",
+      "size": 26226
     },
     {
       "file": "surge/tencent/tencentcloud/tencentcloud.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 105,
       "scope": "surge",
-      "sha256": "327feaeb8a41e1de71d2f4957fd10a3e5d561f7545e15881ed38c3ef71371d68",
-      "size": 32
+      "sha256": "e2840790020927d91206298d48d2ae637593d187d1456cf4513cc5874d57b8d0",
+      "size": 2462
     },
     {
       "file": "surge/tencent/tencentdocs/tencentdocs.list",
@@ -37666,7 +37666,7 @@
       "size": 54
     }
   ],
-  "generated_at": "2026-10-01T03:31:30.974537+00:00",
+  "generated_at": "2026-10-01T04:01:03.968450+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "layout_schema": "directory_layout_v2",
   "network_dataset_directories": [
