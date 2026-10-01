@@ -20,7 +20,7 @@
 
 [Icon System 6.0](https://github.com/cn-wanmei/Popular-Rules-Icon) · [V6 切换状态](docs/ICON_V6_CUTOVER.md) · V5 已从运行时与物理资产中完全退休
 
-## 当前项目状态（2026-09-30）
+## 当前项目状态
 
 | 项目 | 状态 |
 |---|---|
@@ -39,25 +39,10 @@
 
 ## 当前发行状态
 
-> **权威实时状态**：根目录 [`PUBLISH_STATUS.md`](PUBLISH_STATUS.md)（由 `status.yml` CI 自动生成）。下表为审计对齐快照，避免与机器状态混淆。
-
-| 指标 | 当前值（对齐 PUBLISH_STATUS 2026-09-30） |
-|---|---|
-| Latest snapshot date | **2026-09-30** |
-| Collection ID | `2026-09-30-3fb4cdf3bc5483d222a2` |
-| Collection status | `ok` |
-| Snapshot root | `backup/2026-09-30` |
-| 客户端 | **7**（egern / loon / mihomo / quantumultx / shadowrocket / singbox / surge） |
-| Icon V6 release | `icon-2026.09.30.clean1` |
-| Source health (snapshot) | healthy: 5 · stale: 4 · failed: 1 |
-
-历史发行指纹（2026-09-24 immutable run，仅作对照）：
-
-| 指标 | 值 |
-|---|---|
-| Generated At | `2026-09-24T04:39:15.367236+00:00` |
-| Immutable Run | `20260924T043120249584Z-run` |
-| Semantic IR Digest | `f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7` |
+> **权威实时状态**：根目录 [`PUBLISH_STATUS.md`](PUBLISH_STATUS.md)（由 `status.yml` CI 自动生成，含 snapshot 日期、Collection ID、Source health、客户端输出）。**请勿在 README 手写这些数字。**
+>
+> 客户端固定为 7 套：egern / loon / mihomo / quantumultx / shadowrocket / singbox / surge。  
+> Icon V6 production release 与回滚 ID 以 [`config/icon_v6.yaml`](config/icon_v6.yaml) 及 Icon 仓 `config/release-pointers.yaml` 为准。
 
 ## 七客户端发行目录
 
@@ -119,11 +104,12 @@ Gates → Immutable Release Candidate → Publish
 - [Generated Outputs](docs/GENERATED_OUTPUTS.md)
 - [Network Datasets](docs/NETWORK_DATASETS.md)
 - [Architecture](docs/ARCHITECTURE.md)
-- [Icon Usage](docs/ICON_USAGE.md)
+- [Icon System 6.0（外部）](https://github.com/cn-wanmei/Popular-Rules-Icon)
+- [V6 切换状态](docs/ICON_V6_CUTOVER.md)
 - [历史激活档案](docs/archive/activation/README.md)
 
 > `rule/` 与 `generated/` 都是派生发行物。不要手工修补规则数字、Raw URL、SHA-256 或图标路径。
 
 > V5 runtime provider/configuration and physical legacy assets have been fully retired after the final gate.
 
-> 根目录不再保留 freeze/activation 策略文件；历史证据见 `docs/archive/activation/`。
+> 根目录若仍有 freeze/activation **存根**，仅作重定向；正文与证据在 `docs/archive/activation/`。策略以当前 SSOT 与 CI 为准，勿把存根当现行策略。

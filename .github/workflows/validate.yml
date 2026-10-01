@@ -44,9 +44,6 @@ jobs:
       - name: IP registry validate
         run: python scripts/validate_ip_registry.py
 
-      - name: Icon validate (soft)
-        continue-on-error: true
-        run: python scripts/icon_validate.py
 
       - name: Dataset quality gate
         run: |
