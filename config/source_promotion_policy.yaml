@@ -7,8 +7,9 @@ prs:
   enabled: false
 
 canary:
-  enabled: false
-  services: []
+  enabled: true
+  services:
+    - tmall
   single_active_service: true
   require_official_evidence_only: true
   require_seed_only_zero: true
@@ -40,6 +41,8 @@ production_unlock:
     - dingding
     - qqmail
     - qqmusic
+    - taobao
+    - tencentcloud
   requires:
     - source_release_verified
     - immutable_lineage_match
