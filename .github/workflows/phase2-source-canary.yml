@@ -1,5 +1,5 @@
-name: Phase 2 Source Canary
-# Phase 2 contract: bind Canary to an exact Source-main commit and wait for its gates.
+name: Source Canary
+# Bind Canary to an exact Source-main commit and wait for its gates (production path; formerly Phase 2 naming).
 
 on:
   pull_request:
@@ -217,7 +217,7 @@ jobs:
           )
           if verified_commit["sha"] != verified_input_sha:
               raise SystemExit("FAIL-CLOSED: verified input commit could not be resolved exactly")
-          needed = {"CI", "Phase 2 Source Gate"}
+          needed = {"CI"}
 
           def observe_gate_runs(commit_sha):
               runs = get_json(

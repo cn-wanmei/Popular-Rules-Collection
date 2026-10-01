@@ -1,4 +1,4 @@
-name: Phase 2 Upstream Gate
+name: Source Upstream Gate
 
 on:
   pull_request:
@@ -48,7 +48,7 @@ jobs:
               data = yaml.safe_load(fh) or {}
           entry = next(x for x in data['sources'] if x.get('id') == 'popular-rules-source')
           assert entry.get('enabled') is False
-          print('PRS registry: disabled during Phase 2')
+          print('PRS registry: disabled (immutable handoff path; bulk registry fetch off)')
           PY
       - run: python scripts/partial_production_invariant_gate.py
       - run: python scripts/source_provenance_gate.py
