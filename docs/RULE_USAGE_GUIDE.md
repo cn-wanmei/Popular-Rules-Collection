@@ -68,3 +68,12 @@
 ## Documentation Layer
 
 每服务说明（含七客户端 Raw 与 Icon V6）见 [SERVICE_CATALOG.generated.md](SERVICE_CATALOG.generated.md) 与 `docs/services/` / `docs/rules/`。机器段由 `scripts/generate_rule_docs.py` 生成，请勿手改数字与 Raw。
+
+## Path Links（目录内快速链接）
+
+在 GitHub 打开任意服务目录即可看到自动生成的 `README.md`：
+
+- `rule/{provider}/{service}/README.md` — 说明文档链接 + 七客户端 Raw
+- `generated/{client}/.../README.md` — **本文件** Raw + 说明文档链接
+
+策略：**G3**（短指针，非第二套说明书）。正式说明仍以 `docs/rules/` 与 `docs/services/` 为准。

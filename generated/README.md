@@ -1,11 +1,13 @@
+<!-- PATH_LINKS_GENERATED_START -->
 # Generated client rules
 
-This tree is **machine-produced** from Semantic IR. Do not hand-edit.
+Machine-produced client rule files. Do not hand-edit rule payloads.
 
-Per-service documentation (identity, Icon V6, seven-client Raw, rule ↔ generated binding):
-
-- [SERVICE_CATALOG.generated.md](../docs/SERVICE_CATALOG.generated.md)
-- [docs/rules/](../docs/rules/)
-- [docs/services/](../docs/services/)
+- Run (from index): `20261002T044009684916Z-run`
+- Catalog: [docs/SERVICE_CATALOG.generated.md](../docs/SERVICE_CATALOG.generated.md)
+- Docs index: [docs/rules/](../docs/rules/)
 
 Clients: egern, loon, mihomo, quantumultx, shadowrocket, singbox, surge
+
+Each leaf directory has a short `README.md` (Path Links G3): this file's Raw URL + link to service documentation.
+<!-- PATH_LINKS_GENERATED_END -->

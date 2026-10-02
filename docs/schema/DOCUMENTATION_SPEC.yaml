@@ -76,3 +76,29 @@ notes:
 # - Service pages include rule↔generated path binding and singbox rule_count caveat
 # - Do NOT require per-file README under rule/** or generated/** client trees
 # - Human narrative remains docs/overrides only; rule/ and generated/ stay production artifacts
+
+# ---------------------------------------------------------------------------
+# Path Links G3 (2026-10-02) — quick pointers under rule/ and generated/
+# ---------------------------------------------------------------------------
+path_links:
+  version: "1.0"
+  strategy: G3
+  filename: README.md
+  markers:
+    start: "<!-- PATH_LINKS_GENERATED_START -->"
+    end: "<!-- PATH_LINKS_GENERATED_END -->"
+  rule_tree:
+    enabled: true
+    # One README.md beside each _index entry file (same directory as *.yaml)
+  generated_tree:
+    enabled: true
+    # One short README.md beside each client_rules file (all 7 clients)
+  principles:
+    - pointers_only_no_second_doc_ssot
+    - raw_urls_only_from_manifest
+    - fully_regenerable
+    - do_not_hand_edit
+  docs_url_templates:
+    rules: "https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/rules/{service_id}.md"
+    services: "https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/services/{provider}/{service_dir}/README.md"
+  raw_url_template: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/{file}"

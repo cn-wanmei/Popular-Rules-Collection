@@ -28,3 +28,11 @@ Phase / date-stamped planning docs not listed here are historical; prefer SSOT c
 - Service pages: `docs/services/**` (tree) and `docs/rules/{id}.md` (by id)
 - Overrides: `docs/overrides/`
 
+## Path Links G3
+
+Short `README.md` pointers beside rule/client files:
+
+- [`rule/`](../rule/) — browse tree + per-service Raw links
+- [`generated/`](../generated/) — per-client leaf Raw + docs link
+- [PATH_LINKS_G3.md](schema/PATH_LINKS_G3.md)
+
