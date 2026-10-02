@@ -36,11 +36,11 @@ EXPECTED_CLIENTS = {"egern", "loon", "mihomo", "quantumultx", "shadowrocket", "s
 legacy_markers = (
     "generated/sing-box",
     "generated/quantumult-x",
-    "database/domains/",
+    "database/" + "domains/",
     "scripts/generate_docs.py",
     "scripts/generate_rule_pages.py",
 )
-legacy_service_prefix = "database/services/"
+legacy_service_prefix = "database/" + "services/"
 
 errors: list[str] = []
 if clients != EXPECTED_CLIENTS:

@@ -253,11 +253,21 @@ def main() -> int:
     default_size = int(icon_docs.get("default_size") or 256)
 
     icon_path = ROOT / "docs" / "generated" / "icon_manifest_cache.json"
-    env_path = Path(__import__("os").environ.get("ICON_MANIFEST_PATH", ""))
+    env_raw = (__import__("os").environ.get("ICON_MANIFEST_PATH") or "").strip()
+    candidates: list[Path] = []
+    if env_raw:
+        candidates.append(Path(env_raw))
+    candidates.extend(
+        [
+            icon_path,
+            Path("/tmp/doclayer/clean1.json"),
+            Path("/tmp/docfix/clean1.json"),
+        ]
+    )
     icon_data = None
-    for candidate in (env_path, icon_path, Path("/tmp/doclayer/clean1.json")):
-        if candidate and Path(candidate).exists():
-            icon_data = load_json(Path(candidate))
+    for candidate in candidates:
+        if candidate.is_file():
+            icon_data = load_json(candidate)
             break
     if icon_data is None and release_id:
         import urllib.request
