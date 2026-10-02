@@ -1,4 +1,4 @@
-<img src="https://github.com/cn-wanmei/Popular-Rules-Icon" alt="Google 图标" width="72" height="72">
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/ba416daa42ad9c46d582068bc25a4675eb141efdfc99be76c01cdfa9ce10e94c.png" alt="google icon" width="72" height="72">
 
 # Google — 分流规则说明
 

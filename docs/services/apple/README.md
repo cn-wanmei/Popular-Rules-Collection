@@ -1,4 +1,4 @@
-<img src="https://github.com/cn-wanmei/Popular-Rules-Icon" alt="Apple 图标" width="72" height="72">
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/09ac85f79dbc5d7d93d9ed5792b574da81830c9dd13edd0c87d75878900c078e.png" alt="apple icon" width="72" height="72">
 
 # Apple — 分流规则说明
 

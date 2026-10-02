@@ -1,4 +1,4 @@
-<img src="https://github.com/cn-wanmei/Popular-Rules-Icon" alt="Microsoft 图标" width="72" height="72">
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/c2d94d9422e0ed93f244564b0b39703977abf696b40a88d6a124d5a7ea99b275.png" alt="microsoft icon" width="72" height="72">
 
 # Microsoft — 分流规则说明
 
