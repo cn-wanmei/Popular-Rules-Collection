@@ -1,11 +1,11 @@
 version: 2
 state_machine:
-  - review
-  - verified
-  - canary
-  - production
+- review
+- verified
+- canary
+- production
 services:
-  "1688":
+  '1688':
     state: production
     enabled: true
     source_verification:
@@ -63,7 +63,11 @@ services:
   dingding:
     state: production
     enabled: true
-    source_verification: {run: 35527947816, source_commit: 260015bd17db578388e42840d7bf2297b0aa3959, snapshot_id: snap-dingding-89a6d893bf7b14692a25ea66, content_digest: 89a6d893bf7b14692a25ea66c32f17fbbc9de909581c38843e4a5adf6066a35e}
+    source_verification:
+      run: 35527947816
+      source_commit: 260015bd17db578388e42840d7bf2297b0aa3959
+      snapshot_id: snap-dingding-89a6d893bf7b14692a25ea66
+      content_digest: 89a6d893bf7b14692a25ea66c32f17fbbc9de909581c38843e4a5adf6066a35e
     attestation:
       status: passed
       source_release: releases/dingding/snap-dingding-89a6d893bf7b14692a25ea66/release.json
@@ -181,6 +185,12 @@ services:
       snapshot_id: snap-tencentcloud-e55bc8c508e839813ae20cd0
       content_digest: 073c3031c90820457209336550d39bbd4976b9f91c1486be5b0795a2c302057f
       production_activation_record: TENCENTCLOUD_PRODUCTION_ACTIVATION_2026-10-01.md
+      reconciliation_run_id: reconcile-tencentcloud-operator-2026-10-01
+      v3_run_id: canary-tencentcloud-operator-2026-10-01
+      semantic_run_id: canary-tencentcloud-operator-2026-10-01
+      rollback_run_id: rollback-tencentcloud-operator-2026-10-01
+      observation_started_at: '2026-10-01T00:00:00+00:00'
+      observation_run_id: observe-tencentcloud-operator-2026-10-01
   tmall:
     state: production
     enabled: true
@@ -209,3 +219,4 @@ services:
       rollback_pass: true
       observation_pass: true
       production_unlock_qualification: PASS
+      observation_started_at: '2026-10-01T00:00:00+00:00'

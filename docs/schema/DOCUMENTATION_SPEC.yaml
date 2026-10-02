@@ -102,3 +102,5 @@ path_links:
     rules: "https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/rules/{service_id}.md"
     services: "https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/services/{provider}/{service_dir}/README.md"
   raw_url_template: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/{file}"
+
+# directory_contract allows nested rule/**/README.md for Path Links G3

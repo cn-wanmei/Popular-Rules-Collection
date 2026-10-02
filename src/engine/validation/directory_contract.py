@@ -25,10 +25,20 @@ def _rule_files(root: Path) -> list[Path]:
 
 def _valid_rule_path(root: Path, path: Path) -> bool:
     parts = path.relative_to(root).parts
-    if parts in {("README.md",), ("_index.yaml",), ("manifest.json",)}: return True
-    if any(part in {".","..","all","rules"} for part in parts): return False
-    if not parts or not parts[-1].endswith(".yaml"): return False
-    if not all(_NAME_RE.fullmatch(part) for part in parts[:-1]): return False
+    # Root metadata + Path Links G3 pointers (README.md at any depth).
+    if parts in {("_index.yaml",), ("manifest.json",)}:
+        return True
+    if parts and parts[-1] == "README.md":
+        parents = parts[:-1]
+        if any(part in {".", "..", "all", "rules"} for part in parents):
+            return False
+        return all(_NAME_RE.fullmatch(part) for part in parents) if parents else True
+    if any(part in {".", "..", "all", "rules"} for part in parts):
+        return False
+    if not parts or not parts[-1].endswith(".yaml"):
+        return False
+    if not all(_NAME_RE.fullmatch(part) for part in parts[:-1]):
+        return False
     if parts == ("china", "china.yaml"): return True
     if len(parts) == 3: return parts[2] == f"{parts[1]}.yaml"
     if len(parts) == 4: return parts[0] in _ENTITY_TYPES and parts[3] == f"{parts[2]}.yaml"
