@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `amazon` |
 | 规则浏览路径 | `rule/amazon/goodreads/goodreads.yaml` |
-| 规则数量 | **1** |
-| SHA-256 | `58120a0d3967a799b19728df86c0345d945023544d22fca7152407bced3c39b5` |
+| 规则数量（_index） | **1** |
+| SHA-256 | `cc36d5ef400390cfd5a048b81614f8ad8a82ae3cab564b7d4508bec9110c83d0` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/b7bbedbc020d9e661b8356f8cad4fae9b4cd7bd6abd645b0a3e7a03bfc1d447e.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/b7bbedbc020d9e661b8356f8cad4fae9b4cd7bd6abd645b0a3e7a03bfc1d447e.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/d7377cc5b4fb199c5cecbd65ed828431b9f35441e37570d63a1ffdd08d5a04f4.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/a637c56dda8e290c125f27ca39dfe85b6a30fd363ff2e3b4d54736be1dc682c1.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/amazon/goodreads/goodreads.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/amazon/goodreads/goodreads.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/amazon/goodreads/goodreads.yaml`](../../../../rule/amazon/goodreads/goodreads.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `goodreads` |
+| Client `egern` | `generated/egern/amazon/goodreads/goodreads.yaml` |
+| Client `loon` | `generated/loon/amazon/goodreads/goodreads.list` |
+| Client `mihomo` | `generated/mihomo/amazon/goodreads/goodreads.yaml` |
+| Client `quantumultx` | `generated/quantumultx/amazon/goodreads/goodreads.list` |
+| Client `shadowrocket` | `generated/shadowrocket/amazon/goodreads/goodreads.list` |
+| Client `singbox` | `generated/singbox/amazon/goodreads/goodreads.json` |
+| Client `surge` | `generated/surge/amazon/goodreads/goodreads.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/amazon/goodreads/goodreads.yaml` |
+| loon | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/amazon/goodreads/goodreads.list` |
+| mihomo | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/amazon/goodreads/goodreads.yaml` |
+| quantumultx | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/amazon/goodreads/goodreads.list` |
+| shadowrocket | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/amazon/goodreads/goodreads.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/amazon/goodreads/goodreads.json` |
+| surge | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/amazon/goodreads/goodreads.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

@@ -15,22 +15,24 @@
 | 类型 | provider_aggregate |
 | Provider | `unionpay` |
 | 规则浏览路径 | `rule/unionpay/unionpay_aggregate/unionpay_aggregate.yaml` |
-| 规则数量 | **16** |
-| SHA-256 | `c942980073de83bd0db8d1e8838b2ce262783d6ad336465cfd7bd8b4641f5ba8` |
+| 规则数量（_index） | **16** |
+| SHA-256 | `7443fb9fe4f86987d9a79ef21bfd5d52d49e1fe54958a4a27e29501f99bdfada` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
 - Icon 映射自：`unionpay`
+- Object：`v/8d887873ebb298cb193ea0e00a08868b9adaae49bac6c05017b5489765056e9c.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/8d887873ebb298cb193ea0e00a08868b9adaae49bac6c05017b5489765056e9c.png`
 
 | 风格 | 256 |
@@ -44,26 +46,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/06d6aeeb602a7f598a91bc3cc06da7fd632f7cd3a4e37b0accd9b702216230d9.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/74ffe4e1a96d9c96a00759a6e93664ecc9393030376fde75fbd5cd156a9d120e.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/unionpay/unionpay_aggregate/unionpay_aggregate.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/unionpay/unionpay_aggregate/unionpay_aggregate.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/unionpay/unionpay_aggregate/unionpay_aggregate.yaml`](../../../../rule/unionpay/unionpay_aggregate/unionpay_aggregate.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `unionpay_aggregate` |
+| Client `egern` | `generated/egern/unionpay/unionpay_aggregate/unionpay_aggregate.yaml` |
+| Client `loon` | `generated/loon/unionpay/unionpay_aggregate/unionpay_aggregate.list` |
+| Client `mihomo` | `generated/mihomo/unionpay/unionpay_aggregate/unionpay_aggregate.yaml` |
+| Client `quantumultx` | `generated/quantumultx/unionpay/unionpay_aggregate/unionpay_aggregate.list` |
+| Client `shadowrocket` | `generated/shadowrocket/unionpay/unionpay_aggregate/unionpay_aggregate.list` |
+| Client `singbox` | `generated/singbox/unionpay/unionpay_aggregate/unionpay_aggregate.json` |
+| Client `surge` | `generated/surge/unionpay/unionpay_aggregate/unionpay_aggregate.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 16 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/unionpay/unionpay_aggregate/unionpay_aggregate.yaml` |
+| loon | 16 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/unionpay/unionpay_aggregate/unionpay_aggregate.list` |
+| mihomo | 16 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/unionpay/unionpay_aggregate/unionpay_aggregate.yaml` |
+| quantumultx | 16 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/unionpay/unionpay_aggregate/unionpay_aggregate.list` |
+| shadowrocket | 16 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/unionpay/unionpay_aggregate/unionpay_aggregate.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/unionpay/unionpay_aggregate/unionpay_aggregate.json` |
+| surge | 16 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/unionpay/unionpay_aggregate/unionpay_aggregate.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

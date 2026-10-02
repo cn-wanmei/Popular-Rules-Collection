@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `micron` |
 | 规则浏览路径 | `rule/micron/micron/micron.yaml` |
-| 规则数量 | **2** |
-| SHA-256 | `0f78e63f23c1bbb5ebe2c0b59a6dc4be8c246402fdff03119a6248b096d8f4ab` |
+| 规则数量（_index） | **2** |
+| SHA-256 | `fdb425c407c180461060238159adc5990b966a68665393d4144982dfe1fa381f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/7231f5df4fdc336ba23aa4d769509967074b10b0dde4ec2ee259b340a5cf14fd.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/7231f5df4fdc336ba23aa4d769509967074b10b0dde4ec2ee259b340a5cf14fd.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/0de74a1e1ea1c3304f23efb96a5d12ae3e65078d457803b58b581a937ead5a4e.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/2887d7ad5cf5de9101f4573f19a4e1b75cf682d00e13220c497a54f16efd0d0d.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/micron/micron/micron.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/micron/micron/micron.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/micron/micron/micron.yaml`](../../../../rule/micron/micron/micron.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `micron` |
+| Client `egern` | `generated/egern/micron/micron/micron.yaml` |
+| Client `loon` | `generated/loon/micron/micron/micron.list` |
+| Client `mihomo` | `generated/mihomo/micron/micron/micron.yaml` |
+| Client `quantumultx` | `generated/quantumultx/micron/micron/micron.list` |
+| Client `shadowrocket` | `generated/shadowrocket/micron/micron/micron.list` |
+| Client `singbox` | `generated/singbox/micron/micron/micron.json` |
+| Client `surge` | `generated/surge/micron/micron/micron.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/micron/micron/micron.yaml` |
+| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/micron/micron/micron.list` |
+| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/micron/micron/micron.yaml` |
+| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/micron/micron/micron.list` |
+| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/micron/micron/micron.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/micron/micron/micron.json` |
+| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/micron/micron/micron.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

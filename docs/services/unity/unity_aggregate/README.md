@@ -15,22 +15,24 @@
 | 类型 | provider_aggregate |
 | Provider | `unity` |
 | 规则浏览路径 | `rule/unity/unity_aggregate/unity_aggregate.yaml` |
-| 规则数量 | **2** |
-| SHA-256 | `3fb1e180a11657b6078b80498a0f2e6a407e6193407372c924ecab0cf7aca2a3` |
+| 规则数量（_index） | **2** |
+| SHA-256 | `520b6d508dd034ff4023a846fe14abe0e44468ea353ac5d6dfff6706ca99cbb9` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
 - Icon 映射自：`unity`
+- Object：`v/5b7a779fb653d2908e457197bc05776baed2c3bb6f16010f35e08c97988dc35f.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/5b7a779fb653d2908e457197bc05776baed2c3bb6f16010f35e08c97988dc35f.png`
 
 | 风格 | 256 |
@@ -44,26 +46,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/71c3b5a54c37e20bb08ed502c811db48587388cca44805f703ba2bee45034ee4.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/0ae5a70d77259b5fa73e72ff537daea1a79072fe652ab7ff6f25fdc89aa23851.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/unity/unity_aggregate/unity_aggregate.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/unity/unity_aggregate/unity_aggregate.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/unity/unity_aggregate/unity_aggregate.yaml`](../../../../rule/unity/unity_aggregate/unity_aggregate.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `unity_aggregate` |
+| Client `egern` | `generated/egern/unity/unity_aggregate/unity_aggregate.yaml` |
+| Client `loon` | `generated/loon/unity/unity_aggregate/unity_aggregate.list` |
+| Client `mihomo` | `generated/mihomo/unity/unity_aggregate/unity_aggregate.yaml` |
+| Client `quantumultx` | `generated/quantumultx/unity/unity_aggregate/unity_aggregate.list` |
+| Client `shadowrocket` | `generated/shadowrocket/unity/unity_aggregate/unity_aggregate.list` |
+| Client `singbox` | `generated/singbox/unity/unity_aggregate/unity_aggregate.json` |
+| Client `surge` | `generated/surge/unity/unity_aggregate/unity_aggregate.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/unity/unity_aggregate/unity_aggregate.yaml` |
+| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/unity/unity_aggregate/unity_aggregate.list` |
+| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/unity/unity_aggregate/unity_aggregate.yaml` |
+| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/unity/unity_aggregate/unity_aggregate.list` |
+| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/unity/unity_aggregate/unity_aggregate.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/unity/unity_aggregate/unity_aggregate.json` |
+| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/unity/unity_aggregate/unity_aggregate.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `line` |
 | 规则浏览路径 | `rule/line/line/line.yaml` |
-| 规则数量 | **37** |
-| SHA-256 | `fc3790a4dbf0b1fa737f5ff531f214a1d9bd87db746b511de98f8957548b7040` |
+| 规则数量（_index） | **37** |
+| SHA-256 | `6f6b801bbb4bd410f2fd004bb2fa9bd5e87b62fce1e64570c11f0a869f0b68fc` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/eb64a0046eb31ea7d7fc3095c8a1d986e2d3acc09aea75e88b7833a9f9489f48.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/eb64a0046eb31ea7d7fc3095c8a1d986e2d3acc09aea75e88b7833a9f9489f48.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/9641905f1e12392ec2bcc504c8a71e3c936a0ea6638675ae41c4984eb770601b.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/4f39a876e4b88437ae052290df1cd9d8731a596f88a6ae8224fd30b8dc6abbe5.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/line/line/line.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/line/line/line.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/line/line/line.yaml`](../../../../rule/line/line/line.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `line` |
+| Client `egern` | `generated/egern/line/line/line.yaml` |
+| Client `loon` | `generated/loon/line/line/line.list` |
+| Client `mihomo` | `generated/mihomo/line/line/line.yaml` |
+| Client `quantumultx` | `generated/quantumultx/line/line/line.list` |
+| Client `shadowrocket` | `generated/shadowrocket/line/line/line.list` |
+| Client `singbox` | `generated/singbox/line/line/line.json` |
+| Client `surge` | `generated/surge/line/line/line.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 44 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/line/line/line.yaml` |
+| loon | 44 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/line/line/line.list` |
+| mihomo | 44 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/line/line/line.yaml` |
+| quantumultx | 44 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/line/line/line.list` |
+| shadowrocket | 44 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/line/line/line.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/line/line/line.json` |
+| surge | 44 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/line/line/line.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

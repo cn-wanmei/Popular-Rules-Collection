@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `ceb` |
 | 规则浏览路径 | `rule/ceb/ceb/ceb.yaml` |
-| 规则数量 | **15** |
-| SHA-256 | `963d048e0a931381ea97d51fd7366247dc416a3896e64d9114bba4ecc010ddc7` |
+| 规则数量（_index） | **15** |
+| SHA-256 | `cf248b9713f603b7fe68f063215f4e41e312ab48110a786079ac79e1d17a8c06` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/64503800f7ce9274c5272f0edb4c134da2ea8ad81897ae5f767e676cdc151ff2.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/64503800f7ce9274c5272f0edb4c134da2ea8ad81897ae5f767e676cdc151ff2.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/01f9e1f1a3f37eaff384b21154278873f979bda62a3ce3aaeca0c7f814f5d82c.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/24930e93b783121a287257ef4fd53445bc891d3d733ae3599ff47b8e34ba0410.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/ceb/ceb/ceb.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/ceb/ceb/ceb.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/ceb/ceb/ceb.yaml`](../../../../rule/ceb/ceb/ceb.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `ceb` |
+| Client `egern` | `generated/egern/ceb/ceb/ceb.yaml` |
+| Client `loon` | `generated/loon/ceb/ceb/ceb.list` |
+| Client `mihomo` | `generated/mihomo/ceb/ceb/ceb.yaml` |
+| Client `quantumultx` | `generated/quantumultx/ceb/ceb/ceb.list` |
+| Client `shadowrocket` | `generated/shadowrocket/ceb/ceb/ceb.list` |
+| Client `singbox` | `generated/singbox/ceb/ceb/ceb.json` |
+| Client `surge` | `generated/surge/ceb/ceb/ceb.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 15 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/ceb/ceb/ceb.yaml` |
+| loon | 15 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/ceb/ceb/ceb.list` |
+| mihomo | 15 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/ceb/ceb/ceb.yaml` |
+| quantumultx | 15 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/ceb/ceb/ceb.list` |
+| shadowrocket | 15 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/ceb/ceb/ceb.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/ceb/ceb/ceb.json` |
+| surge | 15 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/ceb/ceb/ceb.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

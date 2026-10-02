@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `baidu` |
 | 规则浏览路径 | `rule/baidu/baidu-zhidao/baidu-zhidao.yaml` |
-| 规则数量 | **1** |
-| SHA-256 | `9a44612f4f873d6f44d5df4c251058e3bccd480ad56b6dd6eda43d898ee271ed` |
+| 规则数量（_index） | **1** |
+| SHA-256 | `34d60d17b6a7ca5431bc4ed065900b40c8348ab672b45c0dfbb8ccb833f36fdd` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/0facb6d46d928ca024a889c089063fd98d9fb833a385a260bf61afc5b70179fb.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/0facb6d46d928ca024a889c089063fd98d9fb833a385a260bf61afc5b70179fb.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/ad0f3d07b8a1b4b01326545c81fef0b1f22b8922a09529e41f9cf5d21f0db421.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/30c82a6903949ac90f198c63e9ce82e3a885b57d223c6b1c79fbf2966c7c92d6.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/baidu/baidu-zhidao/baidu-zhidao.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/baidu/baidu-zhidao/baidu-zhidao.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/baidu/baidu-zhidao/baidu-zhidao.yaml`](../../../../rule/baidu/baidu-zhidao/baidu-zhidao.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `baidu-zhidao` |
+| Client `egern` | `generated/egern/baidu/baidu-zhidao/baidu-zhidao.yaml` |
+| Client `loon` | `generated/loon/baidu/baidu-zhidao/baidu-zhidao.list` |
+| Client `mihomo` | `generated/mihomo/baidu/baidu-zhidao/baidu-zhidao.yaml` |
+| Client `quantumultx` | `generated/quantumultx/baidu/baidu-zhidao/baidu-zhidao.list` |
+| Client `shadowrocket` | `generated/shadowrocket/baidu/baidu-zhidao/baidu-zhidao.list` |
+| Client `singbox` | `generated/singbox/baidu/baidu-zhidao/baidu-zhidao.json` |
+| Client `surge` | `generated/surge/baidu/baidu-zhidao/baidu-zhidao.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/baidu/baidu-zhidao/baidu-zhidao.yaml` |
+| loon | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/baidu/baidu-zhidao/baidu-zhidao.list` |
+| mihomo | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/baidu/baidu-zhidao/baidu-zhidao.yaml` |
+| quantumultx | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/baidu/baidu-zhidao/baidu-zhidao.list` |
+| shadowrocket | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/baidu/baidu-zhidao/baidu-zhidao.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/baidu/baidu-zhidao/baidu-zhidao.json` |
+| surge | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/baidu/baidu-zhidao/baidu-zhidao.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

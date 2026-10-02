@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `chinatelecom` |
 | 规则浏览路径 | `rule/chinatelecom/chinatelecom/chinatelecom.yaml` |
-| 规则数量 | **83** |
-| SHA-256 | `44a331943690d392e3df65a0773a9774bfd78421c7fc92699a85298fe54565ab` |
+| 规则数量（_index） | **83** |
+| SHA-256 | `690e911c4284da77d9e4da5bb5593dffe10f7f088b5a48d6a77f7f7cc4be5092` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/f72d2a5f07990a3469121ee46407a2a96269813c184e9251d221feff13ca55ef.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/f72d2a5f07990a3469121ee46407a2a96269813c184e9251d221feff13ca55ef.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/595f4e002d5c9c71a3802d567cee5bb6e5edf5d8b1f17208ca6131e261a53adb.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/0bc26e400db31ee9496ce06bc9b6c0005eef403423af3e872f5a21e83b3d3010.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/chinatelecom/chinatelecom/chinatelecom.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/chinatelecom/chinatelecom/chinatelecom.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/chinatelecom/chinatelecom/chinatelecom.yaml`](../../../../rule/chinatelecom/chinatelecom/chinatelecom.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `chinatelecom` |
+| Client `egern` | `generated/egern/chinatelecom/chinatelecom/chinatelecom.yaml` |
+| Client `loon` | `generated/loon/chinatelecom/chinatelecom/chinatelecom.list` |
+| Client `mihomo` | `generated/mihomo/chinatelecom/chinatelecom/chinatelecom.yaml` |
+| Client `quantumultx` | `generated/quantumultx/chinatelecom/chinatelecom/chinatelecom.list` |
+| Client `shadowrocket` | `generated/shadowrocket/chinatelecom/chinatelecom/chinatelecom.list` |
+| Client `singbox` | `generated/singbox/chinatelecom/chinatelecom/chinatelecom.json` |
+| Client `surge` | `generated/surge/chinatelecom/chinatelecom/chinatelecom.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 83 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/chinatelecom/chinatelecom/chinatelecom.yaml` |
+| loon | 83 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/chinatelecom/chinatelecom/chinatelecom.list` |
+| mihomo | 83 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/chinatelecom/chinatelecom/chinatelecom.yaml` |
+| quantumultx | 83 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/chinatelecom/chinatelecom/chinatelecom.list` |
+| shadowrocket | 83 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/chinatelecom/chinatelecom/chinatelecom.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/chinatelecom/chinatelecom/chinatelecom.json` |
+| surge | 83 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/chinatelecom/chinatelecom/chinatelecom.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

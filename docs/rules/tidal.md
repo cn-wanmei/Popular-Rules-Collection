@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `tidal` |
 | 规则浏览路径 | `rule/tidal/tidal/tidal.yaml` |
-| 规则数量 | **3** |
-| SHA-256 | `0f4b2d4091f68715230571b4588da7475328eb482cf1f81d07dce76dc4eb0b07` |
+| 规则数量（_index） | **3** |
+| SHA-256 | `fd810a11b2eac411eddbdd402f850791e6222b99aa463d1d9d3e2e31e2cff10c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/9c6e22d1d5340d9a0e629268fe69ad751d362f37ade1530465f8e413a5aa698b.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/9c6e22d1d5340d9a0e629268fe69ad751d362f37ade1530465f8e413a5aa698b.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/aefd00afc40317d10cfa22c776fb747381e8a8a5ad979dc5b994a03f1fdadecd.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/d410711475fdb6877128067fd3010c4fe5e9c0042e5191b0dfe7fdb700bce40c.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/tidal/tidal/tidal.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/tidal/tidal/tidal.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/tidal/tidal/tidal.yaml`](../../../../rule/tidal/tidal/tidal.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `tidal` |
+| Client `egern` | `generated/egern/tidal/tidal/tidal.yaml` |
+| Client `loon` | `generated/loon/tidal/tidal/tidal.list` |
+| Client `mihomo` | `generated/mihomo/tidal/tidal/tidal.yaml` |
+| Client `quantumultx` | `generated/quantumultx/tidal/tidal/tidal.list` |
+| Client `shadowrocket` | `generated/shadowrocket/tidal/tidal/tidal.list` |
+| Client `singbox` | `generated/singbox/tidal/tidal/tidal.json` |
+| Client `surge` | `generated/surge/tidal/tidal/tidal.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/tidal/tidal/tidal.yaml` |
+| loon | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/tidal/tidal/tidal.list` |
+| mihomo | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/tidal/tidal/tidal.yaml` |
+| quantumultx | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/tidal/tidal/tidal.list` |
+| shadowrocket | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/tidal/tidal/tidal.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/tidal/tidal/tidal.json` |
+| surge | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/tidal/tidal/tidal.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

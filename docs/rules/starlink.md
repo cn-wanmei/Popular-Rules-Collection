@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `starlink` |
 | 规则浏览路径 | `rule/starlink/starlink/starlink.yaml` |
-| 规则数量 | **2** |
-| SHA-256 | `1dc92e0504ccbb6084733b1ae4f3a569f95e69cbc16afef249aede7427aec03d` |
+| 规则数量（_index） | **2** |
+| SHA-256 | `230a7df4eade6303928cbae4925975aab7943cbb002ecd3a5fc9c78025f9ff07` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/45c3beb3c794bb55213e546ef15e91b119fb979fba15e89246abb75b3a80707d.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/45c3beb3c794bb55213e546ef15e91b119fb979fba15e89246abb75b3a80707d.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/e267b9e9d1cb65f140f3258524e673281503681a367386964b44eea725d39b9d.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/4838736340d558ec261b2857891a042e3f6a95ccf490d315086e967019afe5e6.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/starlink/starlink/starlink.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/starlink/starlink/starlink.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/starlink/starlink/starlink.yaml`](../../../../rule/starlink/starlink/starlink.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `starlink` |
+| Client `egern` | `generated/egern/starlink/starlink/starlink.yaml` |
+| Client `loon` | `generated/loon/starlink/starlink/starlink.list` |
+| Client `mihomo` | `generated/mihomo/starlink/starlink/starlink.yaml` |
+| Client `quantumultx` | `generated/quantumultx/starlink/starlink/starlink.list` |
+| Client `shadowrocket` | `generated/shadowrocket/starlink/starlink/starlink.list` |
+| Client `singbox` | `generated/singbox/starlink/starlink/starlink.json` |
+| Client `surge` | `generated/surge/starlink/starlink/starlink.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/starlink/starlink/starlink.yaml` |
+| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/starlink/starlink/starlink.list` |
+| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/starlink/starlink/starlink.yaml` |
+| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/starlink/starlink/starlink.list` |
+| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/starlink/starlink/starlink.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/starlink/starlink/starlink.json` |
+| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/starlink/starlink/starlink.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

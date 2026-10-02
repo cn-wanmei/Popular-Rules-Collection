@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `supermicro` |
 | 规则浏览路径 | `rule/supermicro/supermicro/supermicro.yaml` |
-| 规则数量 | **2** |
-| SHA-256 | `53930eda9bc345609e4403f271cbb74d56f86b8c567c67720dd91e1044e7beef` |
+| 规则数量（_index） | **2** |
+| SHA-256 | `a0b8d1861d8f3fb79e03911ce2ad787263fbbc86588a49ce2f8669a5b8be0d0f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/48c8db9a365f81aee9e77d78aff319b453c6a590124b4f8825f42811887e18e4.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/48c8db9a365f81aee9e77d78aff319b453c6a590124b4f8825f42811887e18e4.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/1e16b46766d7eec15f45adc3f7bc4508024daaaf84e046a04ab9373d411c9c57.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/9bb8eccb91aa419fb4d68ca797cf502d62339cc26645e2b3630b088dc04a17b8.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/supermicro/supermicro/supermicro.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/supermicro/supermicro/supermicro.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/supermicro/supermicro/supermicro.yaml`](../../../../rule/supermicro/supermicro/supermicro.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `supermicro` |
+| Client `egern` | `generated/egern/supermicro/supermicro/supermicro.yaml` |
+| Client `loon` | `generated/loon/supermicro/supermicro/supermicro.list` |
+| Client `mihomo` | `generated/mihomo/supermicro/supermicro/supermicro.yaml` |
+| Client `quantumultx` | `generated/quantumultx/supermicro/supermicro/supermicro.list` |
+| Client `shadowrocket` | `generated/shadowrocket/supermicro/supermicro/supermicro.list` |
+| Client `singbox` | `generated/singbox/supermicro/supermicro/supermicro.json` |
+| Client `surge` | `generated/surge/supermicro/supermicro/supermicro.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/supermicro/supermicro/supermicro.yaml` |
+| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/supermicro/supermicro/supermicro.list` |
+| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/supermicro/supermicro/supermicro.yaml` |
+| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/supermicro/supermicro/supermicro.list` |
+| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/supermicro/supermicro/supermicro.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/supermicro/supermicro/supermicro.json` |
+| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/supermicro/supermicro/supermicro.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

@@ -13,41 +13,58 @@
 | 类型 | provider_aggregate |
 | Provider | `huawei` |
 | 规则浏览路径 | `rule/huawei/huawei/huawei.yaml` |
-| 规则数量 | **404** |
-| SHA-256 | `dd8ae660d69f9041107c76d52bc375893cbc785bc5952c724361763f575bff35` |
+| 规则数量（_index） | **404** |
+| SHA-256 | `6f0929346afc32dc488ec090ea0a490c102bdeee12d75fb9aba8ab1e26506367` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
 - Icon：unavailable for this service_id in production manifest
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/huawei/huawei/huawei.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/huawei/huawei/huawei.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/huawei/huawei/huawei.yaml`](../../../../rule/huawei/huawei/huawei.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `huawei` |
+| Client `egern` | `generated/egern/huawei/huawei/huawei.yaml` |
+| Client `loon` | `generated/loon/huawei/huawei/huawei.list` |
+| Client `mihomo` | `generated/mihomo/huawei/huawei/huawei.yaml` |
+| Client `quantumultx` | `generated/quantumultx/huawei/huawei/huawei.list` |
+| Client `shadowrocket` | `generated/shadowrocket/huawei/huawei/huawei.list` |
+| Client `singbox` | `generated/singbox/huawei/huawei/huawei.json` |
+| Client `surge` | `generated/surge/huawei/huawei/huawei.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 404 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/huawei/huawei/huawei.yaml` |
+| loon | 404 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/huawei/huawei/huawei.list` |
+| mihomo | 404 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/huawei/huawei/huawei.yaml` |
+| quantumultx | 404 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/huawei/huawei/huawei.list` |
+| shadowrocket | 404 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/huawei/huawei/huawei.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/huawei/huawei/huawei.json` |
+| surge | 404 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/huawei/huawei/huawei.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

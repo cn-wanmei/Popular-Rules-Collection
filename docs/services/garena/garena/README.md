@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `garena` |
 | 规则浏览路径 | `rule/garena/garena/garena.yaml` |
-| 规则数量 | **15** |
-| SHA-256 | `8c51a3046b49328cf60fa47cc3ad531134220892b5b85b8002dcdabd4ccd532c` |
+| 规则数量（_index） | **15** |
+| SHA-256 | `443a390139704f71598b0d6743b2e4362abaa10aa4d2d2f819c29f97ba29a9b1` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/6a0976a28d098b25f212bf59ebe762604820a3e55d143bb2ab58e4b8b1aaaa22.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/6a0976a28d098b25f212bf59ebe762604820a3e55d143bb2ab58e4b8b1aaaa22.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/21e3aab7126d22e593e6a6f9a0124cb89c4ad8d960af8e1a7369f33d7a8186af.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/84e8a16906010cd7a9018e5d2ef12c287cdc7d9f08913d506fffddd785326966.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/garena/garena/garena.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/garena/garena/garena.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/garena/garena/garena.yaml`](../../../../rule/garena/garena/garena.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `garena` |
+| Client `egern` | `generated/egern/garena/garena/garena.yaml` |
+| Client `loon` | `generated/loon/garena/garena/garena.list` |
+| Client `mihomo` | `generated/mihomo/garena/garena/garena.yaml` |
+| Client `quantumultx` | `generated/quantumultx/garena/garena/garena.list` |
+| Client `shadowrocket` | `generated/shadowrocket/garena/garena/garena.list` |
+| Client `singbox` | `generated/singbox/garena/garena/garena.json` |
+| Client `surge` | `generated/surge/garena/garena/garena.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 15 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/garena/garena/garena.yaml` |
+| loon | 15 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/garena/garena/garena.list` |
+| mihomo | 15 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/garena/garena/garena.yaml` |
+| quantumultx | 15 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/garena/garena/garena.list` |
+| shadowrocket | 15 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/garena/garena/garena.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/garena/garena/garena.json` |
+| surge | 15 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/garena/garena/garena.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

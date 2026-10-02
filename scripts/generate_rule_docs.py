@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import json
-import re
+import os
 from pathlib import Path
 from typing import Any
 
@@ -26,7 +26,6 @@ STYLES = [
     "mbe",
     "y2k",
 ]
-# provider root pages without a matching icon service_id
 ICON_REP = {
     "apple": "appleid",
     "microsoft": "microsoftedge",
@@ -54,25 +53,47 @@ def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def build_manifest_index(files: list[dict]) -> dict[str, dict[str, str]]:
-    """Map rule-relative path and service_id -> {client: generated relative file}."""
-    idx: dict[str, dict[str, str]] = {}
+def build_manifest_index(
+    files: list[dict],
+) -> tuple[dict[str, dict[str, dict]], dict[str, dict[str, dict]]]:
+    """Index client_rules by path-without-ext and by service_id."""
+    by_relstem: dict[str, dict[str, dict]] = {}
+    by_sid: dict[str, dict[str, dict]] = {}
     for f in files:
         if f.get("kind") != "client_rules":
             continue
         rel = f.get("file") or ""
         parts = rel.split("/")
-        if len(parts) < 2 or parts[0] not in CLIENTS:
+        if len(parts) < 4 or parts[0] not in CLIENTS:
             continue
         client = parts[0]
-        rest = "/".join(parts[1:])
-        idx.setdefault(rest, {})[client] = rel
-        # also key by service directory name and file stem (layout v2)
-        if len(parts) >= 4:
-            idx.setdefault(parts[2], {})[client] = rel
-            stem = Path(parts[-1]).stem
-            idx.setdefault(stem, {})[client] = rel
-    return idx
+        stem_path = "/".join(parts[1:-1] + [Path(parts[-1]).stem])
+        meta = {"file": rel, "rule_count": f.get("rule_count")}
+        by_relstem.setdefault(stem_path, {})[client] = meta
+        sid = Path(parts[-1]).stem
+        by_sid.setdefault(sid, {})[client] = meta
+        by_sid.setdefault(parts[2], {})[client] = meta
+    return by_relstem, by_sid
+
+
+def raw_for_entry(
+    rule_path: str,
+    service_id: str,
+    by_relstem: dict[str, dict[str, dict]],
+    by_sid: dict[str, dict[str, dict]],
+) -> dict[str, dict]:
+    stem_path = str(Path(rule_path).with_suffix(""))
+    for key in (stem_path, service_id):
+        if key in by_relstem and by_relstem[key]:
+            return dict(by_relstem[key])
+        if key in by_sid and by_sid[key]:
+            return dict(by_sid[key])
+    parts = Path(rule_path).parts
+    if len(parts) >= 2:
+        alt = "/".join(list(parts[:-1]) + [Path(parts[-1]).stem])
+        if alt in by_relstem:
+            return dict(by_relstem[alt])
+    return dict(by_sid.get(service_id) or {})
 
 
 def resolve_icon_id(service_id: str, icon_ids: set[str]) -> str | None:
@@ -130,15 +151,6 @@ def icon_payload(
     }
 
 
-def raw_for_path(rule_path: str, service_id: str, man_idx: dict[str, dict[str, str]]) -> dict[str, str]:
-    # Prefer exact path match (provider/service/file.yaml), then service_id keys.
-    for key in (rule_path, service_id, Path(rule_path).stem):
-        m = man_idx.get(key) or {}
-        if m:
-            return {c: m[c] for c in CLIENTS if c in m}
-    return {}
-
-
 def render_generated_block(rec: dict) -> str:
     lines: list[str] = []
     icon = rec["icon"]
@@ -152,7 +164,7 @@ def render_generated_block(rec: dict) -> str:
     lines.append(
         f"> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `{icon.get('release_id')}`。"
     )
-    lines.append(f"> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。")
+    lines.append("> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。")
     lines.append("")
     lines.append("## 1. 服务基本信息")
     lines.append("")
@@ -163,7 +175,7 @@ def render_generated_block(rec: dict) -> str:
     lines.append(f"| 类型 | {rec['entity']} |")
     lines.append(f"| Provider | `{rec['provider']}` |")
     lines.append(f"| 规则浏览路径 | `rule/{rec['path']}` |")
-    lines.append(f"| 规则数量 | **{rec['rule_count']}** |")
+    lines.append(f"| 规则数量（_index） | **{rec['rule_count']}** |")
     lines.append(f"| SHA-256 | `{rec['sha256']}` |")
     lines.append("")
     lines.append("## 2. 构建指纹")
@@ -177,10 +189,12 @@ def render_generated_block(rec: dict) -> str:
     lines.append("## 3. 图标（Icon System 6.0）")
     lines.append("")
     if icon.get("available"):
+        lines.append("- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）")
         lines.append(f"- Release：`{icon['release_id']}`")
         lines.append(f"- 默认：`{icon['style']}` @ {icon['size']}px")
         if icon.get("service_id_used") != rec["service_id"]:
             lines.append(f"- Icon 映射自：`{icon['service_id_used']}`")
+        lines.append(f"- Object：`v/{icon.get('variant_hash')}.png`")
         lines.append(f"- Raw：`{icon['url']}`")
         if icon.get("variants_256"):
             lines.append("")
@@ -191,29 +205,54 @@ def render_generated_block(rec: dict) -> str:
     else:
         lines.append("- Icon：unavailable for this service_id in production manifest")
     lines.append("")
-    lines.append("## 4. 七客户端 Raw")
+    lines.append("## 4. 仓库路径绑定（rule ↔ generated）")
     lines.append("")
-    lines.append("| 客户端 | Raw URL |")
+    lines.append("| 层 | 路径 |")
     lines.append("|---|---|")
+    lines.append(f"| Human browse（非运行时） | [`rule/{rec['path']}`](../../../../rule/{rec['path']}) |")
+    lines.append(f"| Index 条目 | `rule/_index.yaml` → id `{rec['service_id']}` |")
     raw = rec.get("raw") or {}
     for c in CLIENTS:
-        rel = raw.get(c)
-        if rel:
-            lines.append(f"| {c} | `{RAW_BASE}{rel}` |")
+        meta = raw.get(c)
+        if meta and meta.get("file"):
+            lines.append(f"| Client `{c}` | `generated/{meta['file']}` |")
         else:
-            lines.append(f"| {c} | _not in manifest_ |")
+            lines.append(f"| Client `{c}` | _not in manifest_ |")
     lines.append("")
-    lines.append("## 5. Source")
+    lines.append("## 5. 七客户端 Raw 与 rule_count")
+    lines.append("")
+    lines.append("| 客户端 | Manifest rule_count | Raw URL |")
+    lines.append("|---|---:|---|")
+    for c in CLIENTS:
+        meta = raw.get(c) or {}
+        rel = meta.get("file")
+        rc = meta.get("rule_count")
+        rc_s = "—" if rc is None else str(rc)
+        if rel:
+            lines.append(f"| {c} | {rc_s} | `{RAW_BASE}{rel}` |")
+        else:
+            lines.append(f"| {c} | — | _not in manifest_ |")
+    lines.append("")
+    lines.append(
+        "> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；"
+        "sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。"
+        "以文件存在与 `_index` 的 rule_count 为准。"
+    )
+    lines.append("")
+    lines.append("## 6. Source")
     lines.append("")
     lines.append(
         "证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；"
         "Collection 不复制 evidence 正文。"
     )
     lines.append("")
-    lines.append("## 6. 使用注意")
+    lines.append("## 7. 使用注意")
     lines.append("")
     lines.append("- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。")
     lines.append("- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。")
+    lines.append(
+        "- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)"
+    )
     lines.append("")
     return "\n".join(lines)
 
@@ -225,16 +264,10 @@ def merge_page(existing: str | None, generated: str, override: str | None) -> st
     if ovr:
         body += ovr.rstrip() + "\n"
     body += f"{OVR_END}\n"
-    if not existing:
-        return body
-    # preserve content outside markers if any trailing human notes after old structure
-    if GEN_START in existing and GEN_END in existing:
-        return body
     return body
 
 
 def services_readme_path(rule_path: str) -> Path:
-    # path: provider/service/file.yaml -> docs/services/provider/service/README.md
     parts = Path(rule_path).parts
     if len(parts) >= 2:
         return ROOT / "docs" / "services" / parts[0] / parts[1] / "README.md"
@@ -244,8 +277,8 @@ def services_readme_path(rule_path: str) -> Path:
 def main() -> int:
     idx = load_yaml(ROOT / "rule" / "_index.yaml")
     man = load_json(ROOT / "generated" / "manifest.json")
-    icon_docs = load_yaml(ROOT / "config" / "icon_docs.yaml") or {}
-    icon_v6 = load_yaml(ROOT / "config" / "icon_v6.yaml") or {}
+    icon_docs = load_yaml(ROOT / "config" / "icon_docs.yaml")
+    icon_v6 = load_yaml(ROOT / "config" / "icon_v6.yaml")
     release_id = (icon_v6.get("v6") or {}).get("release_id") or icon_docs.get(
         "production_release_id"
     )
@@ -253,15 +286,15 @@ def main() -> int:
     default_size = int(icon_docs.get("default_size") or 256)
 
     icon_path = ROOT / "docs" / "generated" / "icon_manifest_cache.json"
-    env_raw = (__import__("os").environ.get("ICON_MANIFEST_PATH") or "").strip()
     candidates: list[Path] = []
+    env_raw = (os.environ.get("ICON_MANIFEST_PATH") or "").strip()
     if env_raw:
         candidates.append(Path(env_raw))
     candidates.extend(
         [
             icon_path,
             Path("/tmp/doclayer/clean1.json"),
-            Path("/tmp/docfix/clean1.json"),
+            Path("/tmp/docv2/clean1.json"),
         ]
     )
     icon_data = None
@@ -271,6 +304,7 @@ def main() -> int:
             break
     if icon_data is None and release_id:
         import urllib.request
+
         url = (
             "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/"
             f"dist/manifests/{release_id}.json"
@@ -285,10 +319,10 @@ def main() -> int:
             icon_data = {"entries": [], "release_id": release_id}
     if icon_data is None:
         icon_data = {"entries": [], "release_id": release_id}
+
     icon_by_id = {e["service_id"]: e for e in icon_data.get("entries") or []}
     icon_ids = set(icon_by_id)
-
-    man_idx = build_manifest_index(man.get("files") or [])
+    by_relstem, by_sid = build_manifest_index(man.get("files") or [])
     run_id = idx.get("run_id")
     ir_digest = idx.get("ir_digest")
     ir_schema = idx.get("ir_schema")
@@ -297,8 +331,7 @@ def main() -> int:
     for ent in idx.get("entries") or []:
         sid = str(ent["id"])
         path = ent["path"]
-        raw_map = raw_for_path(path, sid, man_idx)
-        # also try without confusing entity paths
+        raw_map = raw_for_entry(path, sid, by_relstem, by_sid)
         rec = {
             "service_id": sid,
             "display_name": ent.get("display_name") or sid,
@@ -318,7 +351,6 @@ def main() -> int:
         }
         records.append(rec)
 
-    # docs-index.json
     index_out = {
         "documentation_contract_version": "1.0",
         "run_id": run_id,
@@ -353,20 +385,13 @@ def main() -> int:
         sid = rec["service_id"]
         gen = render_generated_block(rec)
         ovr_path = overrides_dir / f"{sid}.md"
-        ovr = ovr_path.read_text(encoding="utf-8") if ovr_path.exists() else None
-        if ovr and ovr_path.name == "README.md":
-            ovr = None
-        # rules flat
+        ovr = ovr_path.read_text(encoding="utf-8") if ovr_path.is_file() else None
         rp = rules_dir / f"{sid}.md"
-        prev = rp.read_text(encoding="utf-8") if rp.exists() else None
-        rp.write_text(merge_page(prev, gen, ovr), encoding="utf-8")
-        # services tree
+        rp.write_text(merge_page(None, gen, ovr), encoding="utf-8")
         sp = services_readme_path(rec["path"])
         sp.parent.mkdir(parents=True, exist_ok=True)
-        prev_s = sp.read_text(encoding="utf-8") if sp.exists() else None
-        sp.write_text(merge_page(prev_s, gen, ovr), encoding="utf-8")
+        sp.write_text(merge_page(None, gen, ovr), encoding="utf-8")
 
-    # catalog
     cat_lines = [
         "# Service Catalog (generated)",
         "",
@@ -375,7 +400,7 @@ def main() -> int:
         f"Services: **{len(records)}**  ",
         f"Icon release: `{release_id}`",
         "",
-        "Do not hand-edit. Source: `rule/_index.yaml`.",
+        "Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.",
         "",
         "| Service ID | Display | Provider | Entity | Rules | Clients | Docs |",
         "|---|---|---|---|---:|---:|---|",
@@ -390,7 +415,6 @@ def main() -> int:
         "\n".join(cat_lines), encoding="utf-8"
     )
 
-    # docs/rules/README.md index (required by docs_ssot_gate)
     readme_lines = [
         "# Rule documentation index",
         "",
@@ -405,6 +429,29 @@ def main() -> int:
         readme_lines.append(f"- [{r['display_name']}]({sid}.md)")
     readme_lines.append("")
     (rules_dir / "README.md").write_text("\n".join(readme_lines), encoding="utf-8")
+
+    # Root generated README (single file, not per-service) — points to catalog
+    gen_readme = ROOT / "generated" / "README.md"
+    if gen_readme.parent.exists():
+        gen_readme.write_text(
+            "\n".join(
+                [
+                    "# Generated client rules",
+                    "",
+                    "This tree is **machine-produced** from Semantic IR. Do not hand-edit.",
+                    "",
+                    "Per-service documentation (identity, Icon V6, seven-client Raw, rule ↔ generated binding):",
+                    "",
+                    "- [SERVICE_CATALOG.generated.md](../docs/SERVICE_CATALOG.generated.md)",
+                    "- [docs/rules/](../docs/rules/)",
+                    "- [docs/services/](../docs/services/)",
+                    "",
+                    "Clients: " + ", ".join(CLIENTS),
+                    "",
+                ]
+            ),
+            encoding="utf-8",
+        )
 
     print(
         f"generate_rule_docs: wrote {len(records)} services; run_id={run_id}; index={out_index}"

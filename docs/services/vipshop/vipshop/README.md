@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `vipshop` |
 | 规则浏览路径 | `rule/vipshop/vipshop/vipshop.yaml` |
-| 规则数量 | **2** |
-| SHA-256 | `acb1dd657e65a3d5780c69dcd1e4c49173272ead29457b6de615dc3d781a64dc` |
+| 规则数量（_index） | **2** |
+| SHA-256 | `12f30b0486767d66a7801e8e577c2d91ae1f1102efbb5443fd740f3591f25ce5` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/b3a679096c4ed10e82ee9bede16b71a12ecc570850225dd39170a0e80ca8501c.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/b3a679096c4ed10e82ee9bede16b71a12ecc570850225dd39170a0e80ca8501c.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/5a070bb6721740a6689f4a092cf2a9f90ce5f32fff3a53623662f0e01b61bff8.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/8ddfc7a0374bb4db68fa24b4b71763a1974ed76af74f19dc6b2aa2592980e7e1.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/vipshop/vipshop/vipshop.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/vipshop/vipshop/vipshop.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/vipshop/vipshop/vipshop.yaml`](../../../../rule/vipshop/vipshop/vipshop.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `vipshop` |
+| Client `egern` | `generated/egern/vipshop/vipshop/vipshop.yaml` |
+| Client `loon` | `generated/loon/vipshop/vipshop/vipshop.list` |
+| Client `mihomo` | `generated/mihomo/vipshop/vipshop/vipshop.yaml` |
+| Client `quantumultx` | `generated/quantumultx/vipshop/vipshop/vipshop.list` |
+| Client `shadowrocket` | `generated/shadowrocket/vipshop/vipshop/vipshop.list` |
+| Client `singbox` | `generated/singbox/vipshop/vipshop/vipshop.json` |
+| Client `surge` | `generated/surge/vipshop/vipshop/vipshop.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/vipshop/vipshop/vipshop.yaml` |
+| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/vipshop/vipshop/vipshop.list` |
+| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/vipshop/vipshop/vipshop.yaml` |
+| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/vipshop/vipshop/vipshop.list` |
+| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/vipshop/vipshop/vipshop.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/vipshop/vipshop/vipshop.json` |
+| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/vipshop/vipshop/vipshop.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

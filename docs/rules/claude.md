@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `anthropic` |
 | 规则浏览路径 | `rule/anthropic/claude/claude.yaml` |
-| 规则数量 | **3** |
-| SHA-256 | `fcb02f703077a57ac45bb772dc6742e474540250e2b3f7dfc5d20e9a832ffbc7` |
+| 规则数量（_index） | **4** |
+| SHA-256 | `81ed981c92024567620852c50a0c12260216962c822dce480f28c6a8cb9198e0` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/fbf08aa4be76879b39ecc0d8bae6961267280359c10b22a196c5ef3d2ead3815.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/fbf08aa4be76879b39ecc0d8bae6961267280359c10b22a196c5ef3d2ead3815.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/42c5fb37a5b433fce6a8030222ed89770dd0a9219477716c649392d133577292.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/1c669d39f3a2228c2f8f85d8c4662c2cbfedb58e6edb312f71e51747d421f30a.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/anthropic/claude/claude.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/anthropic/claude/claude.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/anthropic/claude/claude.yaml`](../../../../rule/anthropic/claude/claude.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `claude` |
+| Client `egern` | `generated/egern/anthropic/claude/claude.yaml` |
+| Client `loon` | `generated/loon/anthropic/claude/claude.list` |
+| Client `mihomo` | `generated/mihomo/anthropic/claude/claude.yaml` |
+| Client `quantumultx` | `generated/quantumultx/anthropic/claude/claude.list` |
+| Client `shadowrocket` | `generated/shadowrocket/anthropic/claude/claude.list` |
+| Client `singbox` | `generated/singbox/anthropic/claude/claude.json` |
+| Client `surge` | `generated/surge/anthropic/claude/claude.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 6 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/anthropic/claude/claude.yaml` |
+| loon | 6 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/anthropic/claude/claude.list` |
+| mihomo | 6 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/anthropic/claude/claude.yaml` |
+| quantumultx | 6 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/anthropic/claude/claude.list` |
+| shadowrocket | 6 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/anthropic/claude/claude.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/anthropic/claude/claude.json` |
+| surge | 6 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/anthropic/claude/claude.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

@@ -15,22 +15,24 @@
 | 类型 | provider_aggregate |
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google/google.yaml` |
-| 规则数量 | **1500** |
-| SHA-256 | `84f592952c1b71a48e8948ed9adb7af07e1504c54cf72ef16e45eacd1916d272` |
+| 规则数量（_index） | **1558** |
+| SHA-256 | `bb59b01091f7ca61fe9d2a87740af28512955d822f3d2839d5bb8e4ffc9fe18e` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
 - Icon 映射自：`google-calendar`
+- Object：`v/ba416daa42ad9c46d582068bc25a4675eb141efdfc99be76c01cdfa9ce10e94c.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/ba416daa42ad9c46d582068bc25a4675eb141efdfc99be76c01cdfa9ce10e94c.png`
 
 | 风格 | 256 |
@@ -44,26 +46,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/1cedc8f924b8a13cf0de370eefa1a695706f2e16e92b47eb8a50227e2c637a2d.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/52e2cee21204695862ef08866e4ceedb0238d9a93851aa82819dd9edd8849786.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/google/google/google.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/google/google/google.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/google/google/google.yaml`](../../../../rule/google/google/google.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `google` |
+| Client `egern` | `generated/egern/google/google/google.yaml` |
+| Client `loon` | `generated/loon/google/google/google.list` |
+| Client `mihomo` | `generated/mihomo/google/google/google.yaml` |
+| Client `quantumultx` | `generated/quantumultx/google/google/google.list` |
+| Client `shadowrocket` | `generated/shadowrocket/google/google/google.list` |
+| Client `singbox` | `generated/singbox/google/google/google.json` |
+| Client `surge` | `generated/surge/google/google/google.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 1548 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/google/google/google.yaml` |
+| loon | 1548 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/google/google/google.list` |
+| mihomo | 1548 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/google/google/google.yaml` |
+| quantumultx | 1548 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/google/google/google.list` |
+| shadowrocket | 1548 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/google/google/google.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/google/google/google.json` |
+| surge | 1548 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/google/google/google.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

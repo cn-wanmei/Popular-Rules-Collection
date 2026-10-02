@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `xiaomi` |
 | 规则浏览路径 | `rule/xiaomi/mi-cloud/mi-cloud.yaml` |
-| 规则数量 | **1** |
-| SHA-256 | `945591295b1e64532877becb669400ea0d6a3baf3e1938ca9981455017d0e00e` |
+| 规则数量（_index） | **1** |
+| SHA-256 | `0cf354cdd9149363f66e7b4f0977b520da4ed1d04d4a5f7911ad51cd79a96715` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/9a21eb75bf77f96f5ea810e8a84bd508ad7ca4ff8f993544540bf18bcc8c7009.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/9a21eb75bf77f96f5ea810e8a84bd508ad7ca4ff8f993544540bf18bcc8c7009.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/fecc21040d2bf197811f421ab82d0895851052edc0892166540a1151ca5cbbfd.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3e827cd076866653b1da5f6b818c7e84751d384161314a153d3aeddaab61f92c.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/xiaomi/mi-cloud/mi-cloud.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/xiaomi/mi-cloud/mi-cloud.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/xiaomi/mi-cloud/mi-cloud.yaml`](../../../../rule/xiaomi/mi-cloud/mi-cloud.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `mi-cloud` |
+| Client `egern` | `generated/egern/xiaomi/mi-cloud/mi-cloud.yaml` |
+| Client `loon` | `generated/loon/xiaomi/mi-cloud/mi-cloud.list` |
+| Client `mihomo` | `generated/mihomo/xiaomi/mi-cloud/mi-cloud.yaml` |
+| Client `quantumultx` | `generated/quantumultx/xiaomi/mi-cloud/mi-cloud.list` |
+| Client `shadowrocket` | `generated/shadowrocket/xiaomi/mi-cloud/mi-cloud.list` |
+| Client `singbox` | `generated/singbox/xiaomi/mi-cloud/mi-cloud.json` |
+| Client `surge` | `generated/surge/xiaomi/mi-cloud/mi-cloud.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/xiaomi/mi-cloud/mi-cloud.yaml` |
+| loon | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/xiaomi/mi-cloud/mi-cloud.list` |
+| mihomo | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/xiaomi/mi-cloud/mi-cloud.yaml` |
+| quantumultx | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/xiaomi/mi-cloud/mi-cloud.list` |
+| shadowrocket | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/xiaomi/mi-cloud/mi-cloud.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/xiaomi/mi-cloud/mi-cloud.json` |
+| surge | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/xiaomi/mi-cloud/mi-cloud.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

@@ -8,3 +8,7 @@
 - Layout: `directory_layout_v2`
 
 Do not hand-edit files under this tree. Rebuild the same immutable Run after changing upstream or Canonical inputs.
+
+## Documentation Layer
+
+Per-service docs (rule ↔ generated binding, seven-client Raw, Icon V6): see [docs/SERVICE_CATALOG.generated.md](../docs/SERVICE_CATALOG.generated.md) and [docs/rules/](../docs/rules/).

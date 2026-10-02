@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `ccb` |
 | 规则浏览路径 | `rule/ccb/ccb/ccb.yaml` |
-| 规则数量 | **18** |
-| SHA-256 | `cc523b6007bbeb343ad61924f5284c960ef317f30e5d14ef93c15c425290d230` |
+| 规则数量（_index） | **18** |
+| SHA-256 | `8df632e7e8ff7908e4d17cb0b893c583d50bdd9ef8a7c66c3262b24a43d0d3f0` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/8e68cf83c93b789509fee8a66a4eff189d05ee8f209d95000afd22e20fc48844.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/8e68cf83c93b789509fee8a66a4eff189d05ee8f209d95000afd22e20fc48844.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/1ffb3413f52d6c20f7b4cdbcadede71439d45225f341633df34124b0f9384c2c.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/64ec17d350404a788776f3ef9d0c1116fd10f0275f218cf17be6a21bb57b645e.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/ccb/ccb/ccb.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/ccb/ccb/ccb.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/ccb/ccb/ccb.yaml`](../../../../rule/ccb/ccb/ccb.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `ccb` |
+| Client `egern` | `generated/egern/ccb/ccb/ccb.yaml` |
+| Client `loon` | `generated/loon/ccb/ccb/ccb.list` |
+| Client `mihomo` | `generated/mihomo/ccb/ccb/ccb.yaml` |
+| Client `quantumultx` | `generated/quantumultx/ccb/ccb/ccb.list` |
+| Client `shadowrocket` | `generated/shadowrocket/ccb/ccb/ccb.list` |
+| Client `singbox` | `generated/singbox/ccb/ccb/ccb.json` |
+| Client `surge` | `generated/surge/ccb/ccb/ccb.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 18 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/ccb/ccb/ccb.yaml` |
+| loon | 18 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/ccb/ccb/ccb.list` |
+| mihomo | 18 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/ccb/ccb/ccb.yaml` |
+| quantumultx | 18 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/ccb/ccb/ccb.list` |
+| shadowrocket | 18 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/ccb/ccb/ccb.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/ccb/ccb/ccb.json` |
+| surge | 18 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/ccb/ccb/ccb.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

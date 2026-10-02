@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google-meet/google-meet.yaml` |
-| 规则数量 | **1** |
-| SHA-256 | `fa48a1d32625898ace94e35b9b0614acda4382c57530c9721e3531dc6cb2e0d2` |
+| 规则数量（_index） | **1** |
+| SHA-256 | `aaa63d52b52ea2948558fe0513cac5a73e60431477eb38a1f33952b40e10a720` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/ba416daa42ad9c46d582068bc25a4675eb141efdfc99be76c01cdfa9ce10e94c.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/ba416daa42ad9c46d582068bc25a4675eb141efdfc99be76c01cdfa9ce10e94c.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/1cedc8f924b8a13cf0de370eefa1a695706f2e16e92b47eb8a50227e2c637a2d.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/52e2cee21204695862ef08866e4ceedb0238d9a93851aa82819dd9edd8849786.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/google/google-meet/google-meet.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/google/google-meet/google-meet.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/google/google-meet/google-meet.yaml`](../../../../rule/google/google-meet/google-meet.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `google-meet` |
+| Client `egern` | `generated/egern/google/google-meet/google-meet.yaml` |
+| Client `loon` | `generated/loon/google/google-meet/google-meet.list` |
+| Client `mihomo` | `generated/mihomo/google/google-meet/google-meet.yaml` |
+| Client `quantumultx` | `generated/quantumultx/google/google-meet/google-meet.list` |
+| Client `shadowrocket` | `generated/shadowrocket/google/google-meet/google-meet.list` |
+| Client `singbox` | `generated/singbox/google/google-meet/google-meet.json` |
+| Client `surge` | `generated/surge/google/google-meet/google-meet.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/google/google-meet/google-meet.yaml` |
+| loon | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/google/google-meet/google-meet.list` |
+| mihomo | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/google/google-meet/google-meet.yaml` |
+| quantumultx | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/google/google-meet/google-meet.list` |
+| shadowrocket | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/google/google-meet/google-meet.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/google/google-meet/google-meet.json` |
+| surge | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/google/google-meet/google-meet.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

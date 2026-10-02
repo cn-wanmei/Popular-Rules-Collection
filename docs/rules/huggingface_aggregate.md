@@ -15,22 +15,24 @@
 | 类型 | provider_aggregate |
 | Provider | `huggingface` |
 | 规则浏览路径 | `rule/huggingface/huggingface_aggregate/huggingface_aggregate.yaml` |
-| 规则数量 | **3** |
-| SHA-256 | `19357d117c51d2862a965b934e7085e4b0205d4b89a53259cc74de78fad384ce` |
+| 规则数量（_index） | **3** |
+| SHA-256 | `b41a27083519a54575c509ef14be0221d1253e4f0741a8c519fb42c6320f7002` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
 - Icon 映射自：`huggingface`
+- Object：`v/590fb60b29186564277f6cb6741d2dbc21823719a1c2fc415816570c9aa00d80.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/590fb60b29186564277f6cb6741d2dbc21823719a1c2fc415816570c9aa00d80.png`
 
 | 风格 | 256 |
@@ -44,26 +46,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/fbf9cdd8e57ec59ee5bd7b1d64fdb0b9687472a99eae27af1513795b0c39c6ac.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/5c7bbf7a3b0b920458770989a580b7fe3caa1c1c58d808b63ffbf6e57d656d9c.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/huggingface/huggingface_aggregate/huggingface_aggregate.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/huggingface/huggingface_aggregate/huggingface_aggregate.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/huggingface/huggingface_aggregate/huggingface_aggregate.yaml`](../../../../rule/huggingface/huggingface_aggregate/huggingface_aggregate.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `huggingface_aggregate` |
+| Client `egern` | `generated/egern/huggingface/huggingface_aggregate/huggingface_aggregate.yaml` |
+| Client `loon` | `generated/loon/huggingface/huggingface_aggregate/huggingface_aggregate.list` |
+| Client `mihomo` | `generated/mihomo/huggingface/huggingface_aggregate/huggingface_aggregate.yaml` |
+| Client `quantumultx` | `generated/quantumultx/huggingface/huggingface_aggregate/huggingface_aggregate.list` |
+| Client `shadowrocket` | `generated/shadowrocket/huggingface/huggingface_aggregate/huggingface_aggregate.list` |
+| Client `singbox` | `generated/singbox/huggingface/huggingface_aggregate/huggingface_aggregate.json` |
+| Client `surge` | `generated/surge/huggingface/huggingface_aggregate/huggingface_aggregate.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/huggingface/huggingface_aggregate/huggingface_aggregate.yaml` |
+| loon | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/huggingface/huggingface_aggregate/huggingface_aggregate.list` |
+| mihomo | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/huggingface/huggingface_aggregate/huggingface_aggregate.yaml` |
+| quantumultx | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/huggingface/huggingface_aggregate/huggingface_aggregate.list` |
+| shadowrocket | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/huggingface/huggingface_aggregate/huggingface_aggregate.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/huggingface/huggingface_aggregate/huggingface_aggregate.json` |
+| surge | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/huggingface/huggingface_aggregate/huggingface_aggregate.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

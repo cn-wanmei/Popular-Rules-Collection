@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `psbc` |
 | 规则浏览路径 | `rule/psbc/psbc/psbc.yaml` |
-| 规则数量 | **3** |
-| SHA-256 | `8c5c8fdfd7ed50a37bb75c9ef351d9a3a8e4bb219d142930644bdd420e7e1ed7` |
+| 规则数量（_index） | **3** |
+| SHA-256 | `66c0321442a3490c8c897a8474f6817e837d106055b70fd07adad88a3e2c77a4` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/b1f6b85e99b6bc15d397b027b0cf749a438b688994b92d165820066d56e46bd4.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/b1f6b85e99b6bc15d397b027b0cf749a438b688994b92d165820066d56e46bd4.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/b880306d77b4fbf3278b1f93f2ba34e5d6360a857ffe9d236613c2ff42a4c82a.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/4cdeb3d57d404323f59a8a2be6715625d661ef836a262adba0ed2d2f9087e5a1.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/psbc/psbc/psbc.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/psbc/psbc/psbc.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/psbc/psbc/psbc.yaml`](../../../../rule/psbc/psbc/psbc.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `psbc` |
+| Client `egern` | `generated/egern/psbc/psbc/psbc.yaml` |
+| Client `loon` | `generated/loon/psbc/psbc/psbc.list` |
+| Client `mihomo` | `generated/mihomo/psbc/psbc/psbc.yaml` |
+| Client `quantumultx` | `generated/quantumultx/psbc/psbc/psbc.list` |
+| Client `shadowrocket` | `generated/shadowrocket/psbc/psbc/psbc.list` |
+| Client `singbox` | `generated/singbox/psbc/psbc/psbc.json` |
+| Client `surge` | `generated/surge/psbc/psbc/psbc.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/psbc/psbc/psbc.yaml` |
+| loon | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/psbc/psbc/psbc.list` |
+| mihomo | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/psbc/psbc/psbc.yaml` |
+| quantumultx | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/psbc/psbc/psbc.list` |
+| shadowrocket | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/psbc/psbc/psbc.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/psbc/psbc/psbc.json` |
+| surge | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/psbc/psbc/psbc.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

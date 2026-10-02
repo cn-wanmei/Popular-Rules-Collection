@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `snap` |
 | 规则浏览路径 | `rule/snap/snapchat/snapchat.yaml` |
-| 规则数量 | **9** |
-| SHA-256 | `307a59e732b54592d327f86f461c7eb745b5872c097111ebb41462371ba55593` |
+| 规则数量（_index） | **9** |
+| SHA-256 | `428081abddf693fd9ec50f6d5080993e3e06c03b667d7a7ce50eadd05552332d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/20a246773807219f75446fcbd1883262e67198dda0927d7c2794a7a608674632.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/20a246773807219f75446fcbd1883262e67198dda0927d7c2794a7a608674632.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/9a7b4431985a49c4b16201dea17ea12fe1f81b8eefc325b4ce2c84c2c83677e0.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/2c88af25d7bc26f16578cb3e0b48c9c93471ca4b82a81d47c54d761f7dccc77d.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/snap/snapchat/snapchat.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/snap/snapchat/snapchat.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/snap/snapchat/snapchat.yaml`](../../../../rule/snap/snapchat/snapchat.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `snapchat` |
+| Client `egern` | `generated/egern/snap/snapchat/snapchat.yaml` |
+| Client `loon` | `generated/loon/snap/snapchat/snapchat.list` |
+| Client `mihomo` | `generated/mihomo/snap/snapchat/snapchat.yaml` |
+| Client `quantumultx` | `generated/quantumultx/snap/snapchat/snapchat.list` |
+| Client `shadowrocket` | `generated/shadowrocket/snap/snapchat/snapchat.list` |
+| Client `singbox` | `generated/singbox/snap/snapchat/snapchat.json` |
+| Client `surge` | `generated/surge/snap/snapchat/snapchat.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 9 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/snap/snapchat/snapchat.yaml` |
+| loon | 9 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/snap/snapchat/snapchat.list` |
+| mihomo | 9 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/snap/snapchat/snapchat.yaml` |
+| quantumultx | 9 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/snap/snapchat/snapchat.list` |
+| shadowrocket | 9 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/snap/snapchat/snapchat.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/snap/snapchat/snapchat.json` |
+| surge | 9 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/snap/snapchat/snapchat.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

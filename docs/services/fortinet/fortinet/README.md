@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `fortinet` |
 | 规则浏览路径 | `rule/fortinet/fortinet/fortinet.yaml` |
-| 规则数量 | **2** |
-| SHA-256 | `c7f002493cac59da3bb677cca96c6c73618e452801c855e13d53039e441b1675` |
+| 规则数量（_index） | **2** |
+| SHA-256 | `1daa6da4cb5716a95084f70dd01f57272a601eca9def9ba38970c85a2f1fa464` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/b477c60ecfcb026bd942789dacb21cde6cdc29c72b8c5b793126153c9f2788c7.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/b477c60ecfcb026bd942789dacb21cde6cdc29c72b8c5b793126153c9f2788c7.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/6e52d8f8472cabb25bb4f73ad96709c1e255dc8a229fc478ee55534bcf8aa072.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/5afdadd546753bdc3ba0f826492f424caaecd2869201dd04253fb5854281bde0.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/fortinet/fortinet/fortinet.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/fortinet/fortinet/fortinet.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/fortinet/fortinet/fortinet.yaml`](../../../../rule/fortinet/fortinet/fortinet.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `fortinet` |
+| Client `egern` | `generated/egern/fortinet/fortinet/fortinet.yaml` |
+| Client `loon` | `generated/loon/fortinet/fortinet/fortinet.list` |
+| Client `mihomo` | `generated/mihomo/fortinet/fortinet/fortinet.yaml` |
+| Client `quantumultx` | `generated/quantumultx/fortinet/fortinet/fortinet.list` |
+| Client `shadowrocket` | `generated/shadowrocket/fortinet/fortinet/fortinet.list` |
+| Client `singbox` | `generated/singbox/fortinet/fortinet/fortinet.json` |
+| Client `surge` | `generated/surge/fortinet/fortinet/fortinet.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/fortinet/fortinet/fortinet.yaml` |
+| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/fortinet/fortinet/fortinet.list` |
+| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/fortinet/fortinet/fortinet.yaml` |
+| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/fortinet/fortinet/fortinet.list` |
+| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/fortinet/fortinet/fortinet.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/fortinet/fortinet/fortinet.json` |
+| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/fortinet/fortinet/fortinet.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

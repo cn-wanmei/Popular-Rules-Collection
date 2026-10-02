@@ -13,41 +13,58 @@
 | 类型 | provider_aggregate |
 | Provider | `hoyoverse` |
 | 规则浏览路径 | `rule/hoyoverse/hoyoverse/hoyoverse.yaml` |
-| 规则数量 | **15** |
-| SHA-256 | `d0a08d8ae222dee1694d8da744fba13ef91f7cc653a29d74c89e175886e92c01` |
+| 规则数量（_index） | **15** |
+| SHA-256 | `055b702139f7216b2739436d54320917128ee0a9325e638c5087ca7af7817602` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
 - Icon：unavailable for this service_id in production manifest
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/hoyoverse/hoyoverse/hoyoverse.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/hoyoverse/hoyoverse/hoyoverse.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/hoyoverse/hoyoverse/hoyoverse.yaml`](../../../../rule/hoyoverse/hoyoverse/hoyoverse.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `hoyoverse` |
+| Client `egern` | `generated/egern/hoyoverse/hoyoverse/hoyoverse.yaml` |
+| Client `loon` | `generated/loon/hoyoverse/hoyoverse/hoyoverse.list` |
+| Client `mihomo` | `generated/mihomo/hoyoverse/hoyoverse/hoyoverse.yaml` |
+| Client `quantumultx` | `generated/quantumultx/hoyoverse/hoyoverse/hoyoverse.list` |
+| Client `shadowrocket` | `generated/shadowrocket/hoyoverse/hoyoverse/hoyoverse.list` |
+| Client `singbox` | `generated/singbox/hoyoverse/hoyoverse/hoyoverse.json` |
+| Client `surge` | `generated/surge/hoyoverse/hoyoverse/hoyoverse.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 15 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/hoyoverse/hoyoverse/hoyoverse.yaml` |
+| loon | 15 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/hoyoverse/hoyoverse/hoyoverse.list` |
+| mihomo | 15 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/hoyoverse/hoyoverse/hoyoverse.yaml` |
+| quantumultx | 15 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/hoyoverse/hoyoverse/hoyoverse.list` |
+| shadowrocket | 15 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/hoyoverse/hoyoverse/hoyoverse.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/hoyoverse/hoyoverse/hoyoverse.json` |
+| surge | 15 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/hoyoverse/hoyoverse/hoyoverse.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

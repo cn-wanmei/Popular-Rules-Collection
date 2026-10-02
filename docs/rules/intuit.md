@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `intuit` |
 | 规则浏览路径 | `rule/intuit/intuit/intuit.yaml` |
-| 规则数量 | **2** |
-| SHA-256 | `3fdbe96f97b5ec996185ecc8a89f03735a73884c5c6675d70f87bfc18c1a6401` |
+| 规则数量（_index） | **2** |
+| SHA-256 | `bc0315ebd2d754a3e20c790d0e645e136953bab0a278b7c0d2c47d24140a8c3c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/0ffcfd4b80f36e6f6dea3df0ec18f0972dd8ee9d0244bf1bc116c51b00de1e6c.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/0ffcfd4b80f36e6f6dea3df0ec18f0972dd8ee9d0244bf1bc116c51b00de1e6c.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/4ed4a527310a79ea2d7ae44699c225101b5d2b600b6a0a47f83ee204a558a886.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/4c07622b437a8292090a81ed033ef6c8eafda4c43874b5cb286dfd04638f3260.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/intuit/intuit/intuit.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/intuit/intuit/intuit.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/intuit/intuit/intuit.yaml`](../../../../rule/intuit/intuit/intuit.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `intuit` |
+| Client `egern` | `generated/egern/intuit/intuit/intuit.yaml` |
+| Client `loon` | `generated/loon/intuit/intuit/intuit.list` |
+| Client `mihomo` | `generated/mihomo/intuit/intuit/intuit.yaml` |
+| Client `quantumultx` | `generated/quantumultx/intuit/intuit/intuit.list` |
+| Client `shadowrocket` | `generated/shadowrocket/intuit/intuit/intuit.list` |
+| Client `singbox` | `generated/singbox/intuit/intuit/intuit.json` |
+| Client `surge` | `generated/surge/intuit/intuit/intuit.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/intuit/intuit/intuit.yaml` |
+| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/intuit/intuit/intuit.list` |
+| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/intuit/intuit/intuit.yaml` |
+| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/intuit/intuit/intuit.list` |
+| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/intuit/intuit/intuit.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/intuit/intuit/intuit.json` |
+| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/intuit/intuit/intuit.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

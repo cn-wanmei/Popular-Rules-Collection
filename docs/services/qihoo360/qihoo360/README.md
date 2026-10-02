@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `qihoo360` |
 | 规则浏览路径 | `rule/qihoo360/qihoo360/qihoo360.yaml` |
-| 规则数量 | **2** |
-| SHA-256 | `576d6d2b838288b3386155eca7496232d2e6c81f464bcf0847e00dc60662dd58` |
+| 规则数量（_index） | **2** |
+| SHA-256 | `f8ca7d64e3cc5e9c2c87b5138cd2c30fe8e7f69412be58aa05ba98229d10ba38` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/23a14192819c9b7a6ed311b301bb76f626b88af0aef0b7e58bd6b1587fef4f0c.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/23a14192819c9b7a6ed311b301bb76f626b88af0aef0b7e58bd6b1587fef4f0c.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/ec28d5f318c609bf69b9378cb515420c622a8ac81b0abb54a723fabdc027d51c.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/f062a95e19216d2bdca317cb472fab86a7b9f5c6e495ec2b6884fb464c3b03f3.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/qihoo360/qihoo360/qihoo360.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/qihoo360/qihoo360/qihoo360.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/qihoo360/qihoo360/qihoo360.yaml`](../../../../rule/qihoo360/qihoo360/qihoo360.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `qihoo360` |
+| Client `egern` | `generated/egern/qihoo360/qihoo360/qihoo360.yaml` |
+| Client `loon` | `generated/loon/qihoo360/qihoo360/qihoo360.list` |
+| Client `mihomo` | `generated/mihomo/qihoo360/qihoo360/qihoo360.yaml` |
+| Client `quantumultx` | `generated/quantumultx/qihoo360/qihoo360/qihoo360.list` |
+| Client `shadowrocket` | `generated/shadowrocket/qihoo360/qihoo360/qihoo360.list` |
+| Client `singbox` | `generated/singbox/qihoo360/qihoo360/qihoo360.json` |
+| Client `surge` | `generated/surge/qihoo360/qihoo360/qihoo360.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/qihoo360/qihoo360/qihoo360.yaml` |
+| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/qihoo360/qihoo360/qihoo360.list` |
+| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/qihoo360/qihoo360/qihoo360.yaml` |
+| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/qihoo360/qihoo360/qihoo360.list` |
+| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/qihoo360/qihoo360/qihoo360.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/qihoo360/qihoo360/qihoo360.json` |
+| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/qihoo360/qihoo360/qihoo360.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

@@ -15,22 +15,24 @@
 | 类型 | provider_aggregate |
 | Provider | `snowflake` |
 | 规则浏览路径 | `rule/snowflake/snowflake_aggregate/snowflake_aggregate.yaml` |
-| 规则数量 | **2** |
-| SHA-256 | `0936557d1f2d3b86de71376b8265d79ae66c8d1be57050b33246e5eafa737c92` |
+| 规则数量（_index） | **2** |
+| SHA-256 | `aa5f2727a8d386f26ec96fe953481a723bf7a6a4507bf506a6e0cc5797774451` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
 - Icon 映射自：`snowflake`
+- Object：`v/6ddb1fd9e41ff39d802d9e76c40ce90fc0345f1a1fa35dd778d9efd061ca979f.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/6ddb1fd9e41ff39d802d9e76c40ce90fc0345f1a1fa35dd778d9efd061ca979f.png`
 
 | 风格 | 256 |
@@ -44,26 +46,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/a0ff77a00c11d70cafbc93f72a594b5142f20284e02671965cffcb55a90b2072.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/36a360881a027886f66c63ed63a7cee56b8fcf9c37a442f81e6272dd3ee4f56b.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/snowflake/snowflake_aggregate/snowflake_aggregate.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/snowflake/snowflake_aggregate/snowflake_aggregate.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/snowflake/snowflake_aggregate/snowflake_aggregate.yaml`](../../../../rule/snowflake/snowflake_aggregate/snowflake_aggregate.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `snowflake_aggregate` |
+| Client `egern` | `generated/egern/snowflake/snowflake_aggregate/snowflake_aggregate.yaml` |
+| Client `loon` | `generated/loon/snowflake/snowflake_aggregate/snowflake_aggregate.list` |
+| Client `mihomo` | `generated/mihomo/snowflake/snowflake_aggregate/snowflake_aggregate.yaml` |
+| Client `quantumultx` | `generated/quantumultx/snowflake/snowflake_aggregate/snowflake_aggregate.list` |
+| Client `shadowrocket` | `generated/shadowrocket/snowflake/snowflake_aggregate/snowflake_aggregate.list` |
+| Client `singbox` | `generated/singbox/snowflake/snowflake_aggregate/snowflake_aggregate.json` |
+| Client `surge` | `generated/surge/snowflake/snowflake_aggregate/snowflake_aggregate.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/snowflake/snowflake_aggregate/snowflake_aggregate.yaml` |
+| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/snowflake/snowflake_aggregate/snowflake_aggregate.list` |
+| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/snowflake/snowflake_aggregate/snowflake_aggregate.yaml` |
+| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/snowflake/snowflake_aggregate/snowflake_aggregate.list` |
+| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/snowflake/snowflake_aggregate/snowflake_aggregate.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/snowflake/snowflake_aggregate/snowflake_aggregate.json` |
+| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/snowflake/snowflake_aggregate/snowflake_aggregate.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

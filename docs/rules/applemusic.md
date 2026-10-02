@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/applemusic/applemusic.yaml` |
-| 规则数量 | **9** |
-| SHA-256 | `2da3a35a35b4bd6e206e47d0ea2005596b8cfe9609fad4a98edda70be7786736` |
+| 规则数量（_index） | **16** |
+| SHA-256 | `874765f52054ff6bd66b18fdd4c6d7b7cfa6e97fb993729bb6e0473d86d15dc7` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/ed4c2b4c0f11f716942c685da40dfefaa3e8130746b8bd0518704b5bfadce2cf.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/ed4c2b4c0f11f716942c685da40dfefaa3e8130746b8bd0518704b5bfadce2cf.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/0e8618dca3aa93e83b9c24ecd4215d24d0dc0839bfef24c9c7a5c214167e8250.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/bbfc0a9e349821675b8e17d13d8c57653c4a2c672b1278cb99a6ac92aaf71d5e.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/apple/applemusic/applemusic.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/apple/applemusic/applemusic.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/apple/applemusic/applemusic.yaml`](../../../../rule/apple/applemusic/applemusic.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `applemusic` |
+| Client `egern` | `generated/egern/apple/applemusic/applemusic.yaml` |
+| Client `loon` | `generated/loon/apple/applemusic/applemusic.list` |
+| Client `mihomo` | `generated/mihomo/apple/applemusic/applemusic.yaml` |
+| Client `quantumultx` | `generated/quantumultx/apple/applemusic/applemusic.list` |
+| Client `shadowrocket` | `generated/shadowrocket/apple/applemusic/applemusic.list` |
+| Client `singbox` | `generated/singbox/apple/applemusic/applemusic.json` |
+| Client `surge` | `generated/surge/apple/applemusic/applemusic.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 18 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/apple/applemusic/applemusic.yaml` |
+| loon | 18 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/apple/applemusic/applemusic.list` |
+| mihomo | 18 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/apple/applemusic/applemusic.yaml` |
+| quantumultx | 18 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/apple/applemusic/applemusic.list` |
+| shadowrocket | 18 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/apple/applemusic/applemusic.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/apple/applemusic/applemusic.json` |
+| surge | 18 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/apple/applemusic/applemusic.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

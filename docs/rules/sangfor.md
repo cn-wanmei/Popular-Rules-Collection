@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `sangfor` |
 | 规则浏览路径 | `rule/sangfor/sangfor/sangfor.yaml` |
-| 规则数量 | **2** |
-| SHA-256 | `2fc01ab1809dffb8daf38ec68bfe64c66173dba1f9be79a6b9a103ceedda1279` |
+| 规则数量（_index） | **2** |
+| SHA-256 | `e313559e0a78cf161018d7b10c5ae238193b43bf8cc1dc6fd20253d5f7581af2` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/7b7358ea02a794064ef7d5892dfa878e3a8ccefbe1a10a6b7dc5659d477d3f05.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/7b7358ea02a794064ef7d5892dfa878e3a8ccefbe1a10a6b7dc5659d477d3f05.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3f96b96dab65e5cfca85f4d91a0f0ff3ca416566994661eee1f76940b42525b3.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/54b1f50ad47368095d0b7d1c258b029b0c9ce7657a1dcd0796eeb3def02462fa.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/sangfor/sangfor/sangfor.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/sangfor/sangfor/sangfor.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/sangfor/sangfor/sangfor.yaml`](../../../../rule/sangfor/sangfor/sangfor.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `sangfor` |
+| Client `egern` | `generated/egern/sangfor/sangfor/sangfor.yaml` |
+| Client `loon` | `generated/loon/sangfor/sangfor/sangfor.list` |
+| Client `mihomo` | `generated/mihomo/sangfor/sangfor/sangfor.yaml` |
+| Client `quantumultx` | `generated/quantumultx/sangfor/sangfor/sangfor.list` |
+| Client `shadowrocket` | `generated/shadowrocket/sangfor/sangfor/sangfor.list` |
+| Client `singbox` | `generated/singbox/sangfor/sangfor/sangfor.json` |
+| Client `surge` | `generated/surge/sangfor/sangfor/sangfor.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/sangfor/sangfor/sangfor.yaml` |
+| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/sangfor/sangfor/sangfor.list` |
+| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/sangfor/sangfor/sangfor.yaml` |
+| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/sangfor/sangfor/sangfor.list` |
+| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/sangfor/sangfor/sangfor.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/sangfor/sangfor/sangfor.json` |
+| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/sangfor/sangfor/sangfor.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

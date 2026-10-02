@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `blizzard` |
 | 规则浏览路径 | `rule/blizzard/battlenet/battlenet.yaml` |
-| 规则数量 | **62** |
-| SHA-256 | `e3ab22a6337427a18d88e006f9b5ef1f190b713356b69b466772a854cdd9fb22` |
+| 规则数量（_index） | **62** |
+| SHA-256 | `c5afdccc642b90c7de56b751ecfdd94ca6928222cfd04981cebc3801a89466b4` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/a7241c398fe3948e5b50a21a6409aba47574c7552c4f60b510a542b1c4c41b74.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/a7241c398fe3948e5b50a21a6409aba47574c7552c4f60b510a542b1c4c41b74.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/876511cfddf5668b2646d186f5c7bd7b85f8822f0e3f06c200c4f8db43da9ec3.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/b2852a029d3da6df9dc5d2b0df21a8e8d552a55e9673749146827210de2ba15d.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/blizzard/battlenet/battlenet.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/blizzard/battlenet/battlenet.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/blizzard/battlenet/battlenet.yaml`](../../../../rule/blizzard/battlenet/battlenet.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `battlenet` |
+| Client `egern` | `generated/egern/blizzard/battlenet/battlenet.yaml` |
+| Client `loon` | `generated/loon/blizzard/battlenet/battlenet.list` |
+| Client `mihomo` | `generated/mihomo/blizzard/battlenet/battlenet.yaml` |
+| Client `quantumultx` | `generated/quantumultx/blizzard/battlenet/battlenet.list` |
+| Client `shadowrocket` | `generated/shadowrocket/blizzard/battlenet/battlenet.list` |
+| Client `singbox` | `generated/singbox/blizzard/battlenet/battlenet.json` |
+| Client `surge` | `generated/surge/blizzard/battlenet/battlenet.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 62 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/blizzard/battlenet/battlenet.yaml` |
+| loon | 62 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/blizzard/battlenet/battlenet.list` |
+| mihomo | 62 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/blizzard/battlenet/battlenet.yaml` |
+| quantumultx | 62 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/blizzard/battlenet/battlenet.list` |
+| shadowrocket | 62 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/blizzard/battlenet/battlenet.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/blizzard/battlenet/battlenet.json` |
+| surge | 62 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/blizzard/battlenet/battlenet.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `salesforce` |
 | 规则浏览路径 | `rule/salesforce/heroku/heroku.yaml` |
-| 规则数量 | **12** |
-| SHA-256 | `5912b8840b796b43e02f97014c064b62f039fe835bee7eed5dcb57f309c08cfc` |
+| 规则数量（_index） | **12** |
+| SHA-256 | `a828172b37b8d47097c77faa7aab65e931ca9155fa30f7af10da993cc40e7fe8` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/70add7fbf10b881895722b038e122291fae1d84c292ddd5d3c60940d63c885ec.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/70add7fbf10b881895722b038e122291fae1d84c292ddd5d3c60940d63c885ec.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/f4dabeec7d7e81e2784c4d51dc9d6316ed909c974bfca69b4c3877e3de798c7e.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/88f1af1f613923c3400d70e83a685e93bdd7e32c38f3d259eaa951f0f30e4403.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/salesforce/heroku/heroku.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/salesforce/heroku/heroku.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/salesforce/heroku/heroku.yaml`](../../../../rule/salesforce/heroku/heroku.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `heroku` |
+| Client `egern` | `generated/egern/salesforce/heroku/heroku.yaml` |
+| Client `loon` | `generated/loon/salesforce/heroku/heroku.list` |
+| Client `mihomo` | `generated/mihomo/salesforce/heroku/heroku.yaml` |
+| Client `quantumultx` | `generated/quantumultx/salesforce/heroku/heroku.list` |
+| Client `shadowrocket` | `generated/shadowrocket/salesforce/heroku/heroku.list` |
+| Client `singbox` | `generated/singbox/salesforce/heroku/heroku.json` |
+| Client `surge` | `generated/surge/salesforce/heroku/heroku.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 24 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/salesforce/heroku/heroku.yaml` |
+| loon | 24 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/salesforce/heroku/heroku.list` |
+| mihomo | 24 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/salesforce/heroku/heroku.yaml` |
+| quantumultx | 24 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/salesforce/heroku/heroku.list` |
+| shadowrocket | 24 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/salesforce/heroku/heroku.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/salesforce/heroku/heroku.json` |
+| surge | 24 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/salesforce/heroku/heroku.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

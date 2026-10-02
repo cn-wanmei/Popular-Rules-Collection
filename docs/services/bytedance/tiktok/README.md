@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `bytedance` |
 | 规则浏览路径 | `rule/bytedance/tiktok/tiktok.yaml` |
-| 规则数量 | **29** |
-| SHA-256 | `1afab5e28c8314c566e5ce94e0029c236b269df5135d2c574160c6c6fea77230` |
+| 规则数量（_index） | **66** |
+| SHA-256 | `708b72a313a9aba00e8911ebfbb08caec4fa0c21514c8066034923c2dd619b40` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/1eb99337fed36ee35b96f8a7735b0f8c15267bd4c450445efdccf7600a31489b.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/1eb99337fed36ee35b96f8a7735b0f8c15267bd4c450445efdccf7600a31489b.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/4201420cfff09fa9e1e2f809e26b127aa6bbc0bbb2d5b5d4c4e604f898bc4087.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/321d053b0a720e772191d1c649c875452c5e29d44519f7ccab2e5254024c175a.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/bytedance/tiktok/tiktok.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/bytedance/tiktok/tiktok.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/bytedance/tiktok/tiktok.yaml`](../../../../rule/bytedance/tiktok/tiktok.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `tiktok` |
+| Client `egern` | `generated/egern/bytedance/tiktok/tiktok.yaml` |
+| Client `loon` | `generated/loon/bytedance/tiktok/tiktok.list` |
+| Client `mihomo` | `generated/mihomo/bytedance/tiktok/tiktok.yaml` |
+| Client `quantumultx` | `generated/quantumultx/bytedance/tiktok/tiktok.list` |
+| Client `shadowrocket` | `generated/shadowrocket/bytedance/tiktok/tiktok.list` |
+| Client `singbox` | `generated/singbox/bytedance/tiktok/tiktok.json` |
+| Client `surge` | `generated/surge/bytedance/tiktok/tiktok.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 146 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/bytedance/tiktok/tiktok.yaml` |
+| loon | 146 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/bytedance/tiktok/tiktok.list` |
+| mihomo | 146 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/bytedance/tiktok/tiktok.yaml` |
+| quantumultx | 146 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/bytedance/tiktok/tiktok.list` |
+| shadowrocket | 146 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/bytedance/tiktok/tiktok.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/bytedance/tiktok/tiktok.json` |
+| surge | 146 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/bytedance/tiktok/tiktok.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

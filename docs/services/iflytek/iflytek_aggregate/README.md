@@ -15,22 +15,24 @@
 | 类型 | provider_aggregate |
 | Provider | `iflytek` |
 | 规则浏览路径 | `rule/iflytek/iflytek_aggregate/iflytek_aggregate.yaml` |
-| 规则数量 | **2** |
-| SHA-256 | `f65356f9cde55eeb8a72a8a7b079d6312c8267dcf2a50c7d7f30fe2913ff1563` |
+| 规则数量（_index） | **2** |
+| SHA-256 | `965244a7077e4b4a1a79124ba292d1ff656e8713feaa110b6e1f1b1accd48daa` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
 - Icon 映射自：`iflytek`
+- Object：`v/1727be71967a0cd8d3494174bab7dbe815dd6b1f5b304e6e0406d8b30de8d8a2.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/1727be71967a0cd8d3494174bab7dbe815dd6b1f5b304e6e0406d8b30de8d8a2.png`
 
 | 风格 | 256 |
@@ -44,26 +46,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/2ccb10232569b23cf27650fb63c3e146dd6690127dda619a8bbf3d4d6c2f8b2a.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/52cc241db910a6b1d965d15a37ef88736e4680a97dd9cf86e4838dc53013a361.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/iflytek/iflytek_aggregate/iflytek_aggregate.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/iflytek/iflytek_aggregate/iflytek_aggregate.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/iflytek/iflytek_aggregate/iflytek_aggregate.yaml`](../../../../rule/iflytek/iflytek_aggregate/iflytek_aggregate.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `iflytek_aggregate` |
+| Client `egern` | `generated/egern/iflytek/iflytek_aggregate/iflytek_aggregate.yaml` |
+| Client `loon` | `generated/loon/iflytek/iflytek_aggregate/iflytek_aggregate.list` |
+| Client `mihomo` | `generated/mihomo/iflytek/iflytek_aggregate/iflytek_aggregate.yaml` |
+| Client `quantumultx` | `generated/quantumultx/iflytek/iflytek_aggregate/iflytek_aggregate.list` |
+| Client `shadowrocket` | `generated/shadowrocket/iflytek/iflytek_aggregate/iflytek_aggregate.list` |
+| Client `singbox` | `generated/singbox/iflytek/iflytek_aggregate/iflytek_aggregate.json` |
+| Client `surge` | `generated/surge/iflytek/iflytek_aggregate/iflytek_aggregate.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/iflytek/iflytek_aggregate/iflytek_aggregate.yaml` |
+| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/iflytek/iflytek_aggregate/iflytek_aggregate.list` |
+| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/iflytek/iflytek_aggregate/iflytek_aggregate.yaml` |
+| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/iflytek/iflytek_aggregate/iflytek_aggregate.list` |
+| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/iflytek/iflytek_aggregate/iflytek_aggregate.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/iflytek/iflytek_aggregate/iflytek_aggregate.json` |
+| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/iflytek/iflytek_aggregate/iflytek_aggregate.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

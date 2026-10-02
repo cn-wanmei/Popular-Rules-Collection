@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/azure/azure.yaml` |
-| 规则数量 | **149** |
-| SHA-256 | `dc9f4c18c9e8c730373183b1f99051e6fbe6c8b44c761f54a19ccd9e746f048e` |
+| 规则数量（_index） | **151** |
+| SHA-256 | `1a1da772adc3f54e1da6fca7530f3d1b8b6203cb835971bce2d8b6432861b74c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/94dd44c2d6cdc75b6199d10dd009d82b9facdb523cb0b679eb4df4cf5ecd3374.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/94dd44c2d6cdc75b6199d10dd009d82b9facdb523cb0b679eb4df4cf5ecd3374.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/40c57c9c6c9690f357cfa086a87867144c57f666d4e6dd1b29e65d8bf494b070.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/0dd86ac5c9857c4a8a4167986822799d0692fb9ad297b5656a35fe779c0d1fe1.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/microsoft/azure/azure.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/microsoft/azure/azure.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/microsoft/azure/azure.yaml`](../../../../rule/microsoft/azure/azure.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `azure` |
+| Client `egern` | `generated/egern/microsoft/azure/azure.yaml` |
+| Client `loon` | `generated/loon/microsoft/azure/azure.list` |
+| Client `mihomo` | `generated/mihomo/microsoft/azure/azure.yaml` |
+| Client `quantumultx` | `generated/quantumultx/microsoft/azure/azure.list` |
+| Client `shadowrocket` | `generated/shadowrocket/microsoft/azure/azure.list` |
+| Client `singbox` | `generated/singbox/microsoft/azure/azure.json` |
+| Client `surge` | `generated/surge/microsoft/azure/azure.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 300 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/microsoft/azure/azure.yaml` |
+| loon | 300 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/microsoft/azure/azure.list` |
+| mihomo | 300 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/microsoft/azure/azure.yaml` |
+| quantumultx | 300 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/microsoft/azure/azure.list` |
+| shadowrocket | 300 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/microsoft/azure/azure.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/microsoft/azure/azure.json` |
+| surge | 300 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/microsoft/azure/azure.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

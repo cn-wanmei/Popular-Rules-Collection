@@ -70,3 +70,9 @@ notes:
   - Category is optional; missing must not fail coverage.
   - provider_aggregate without icon id may use base id or representative map.
   - rule/ is browse-only; clients consume generated/ only.
+
+# v1.1 notes (2026-10-02)
+# - Raw matching is extension-agnostic (yaml/list/json) under directory_layout_v2
+# - Service pages include rule↔generated path binding and singbox rule_count caveat
+# - Do NOT require per-file README under rule/** or generated/** client trees
+# - Human narrative remains docs/overrides only; rule/ and generated/ stay production artifacts

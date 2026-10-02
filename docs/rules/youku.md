@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `alibaba` |
 | 规则浏览路径 | `rule/alibaba/youku/youku.yaml` |
-| 规则数量 | **61** |
-| SHA-256 | `bef4d359ed62f98b94448c0de020c54a08327be78bfaa1297e72bb610f65d26d` |
+| 规则数量（_index） | **61** |
+| SHA-256 | `5219fb0eccc2dde0541738ecf241512f9e798fa07e415bdd7ad938c7ddeeaf71` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/2e73de0c10e3d715f7b7b65b47cc9df6fd24d932cf326983b99d2ddeecfa9812.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/2e73de0c10e3d715f7b7b65b47cc9df6fd24d932cf326983b99d2ddeecfa9812.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/9729d4f5a73535d4aea522596ba57c4839fe036fb89b6870545147bc94c2bde2.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/cafc8eb323839257bd0ad871775c8d6339169eac3b37a7d9ae7d77346d504555.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/alibaba/youku/youku.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/alibaba/youku/youku.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/alibaba/youku/youku.yaml`](../../../../rule/alibaba/youku/youku.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `youku` |
+| Client `egern` | `generated/egern/alibaba/youku/youku.yaml` |
+| Client `loon` | `generated/loon/alibaba/youku/youku.list` |
+| Client `mihomo` | `generated/mihomo/alibaba/youku/youku.yaml` |
+| Client `quantumultx` | `generated/quantumultx/alibaba/youku/youku.list` |
+| Client `shadowrocket` | `generated/shadowrocket/alibaba/youku/youku.list` |
+| Client `singbox` | `generated/singbox/alibaba/youku/youku.json` |
+| Client `surge` | `generated/surge/alibaba/youku/youku.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 68 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/alibaba/youku/youku.yaml` |
+| loon | 68 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/alibaba/youku/youku.list` |
+| mihomo | 68 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/alibaba/youku/youku.yaml` |
+| quantumultx | 68 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/alibaba/youku/youku.list` |
+| shadowrocket | 68 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/alibaba/youku/youku.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/alibaba/youku/youku.json` |
+| surge | 68 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/alibaba/youku/youku.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

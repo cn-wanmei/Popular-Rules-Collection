@@ -15,22 +15,24 @@
 | 类型 | provider_aggregate |
 | Provider | `mgtv` |
 | 规则浏览路径 | `rule/mgtv/mgtv_aggregate/mgtv_aggregate.yaml` |
-| 规则数量 | **2** |
-| SHA-256 | `e8492e7cd4f6484b680427ecc3d0fc818b60386d5ef4ff9060d921374c91fe30` |
+| 规则数量（_index） | **2** |
+| SHA-256 | `a2d99203e7faae5f2dcb84ef84666cfbd38a037863c5d3ef3530c48fde26f75a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
 - Icon 映射自：`mgtv`
+- Object：`v/06ca6baa6d17a731a3bb8a250b99986cef0f7f5a50d97381c9dadfa11446166d.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/06ca6baa6d17a731a3bb8a250b99986cef0f7f5a50d97381c9dadfa11446166d.png`
 
 | 风格 | 256 |
@@ -44,26 +46,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/4b3840be9cfe24198cb84e9d37a821b358669593475b5f7515f81a5bdafdea19.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/a024ece939c6c14875bfbd1edf4d69d4c82e002bf0d24920e296c53a11f2a09f.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/mgtv/mgtv_aggregate/mgtv_aggregate.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/mgtv/mgtv_aggregate/mgtv_aggregate.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/mgtv/mgtv_aggregate/mgtv_aggregate.yaml`](../../../../rule/mgtv/mgtv_aggregate/mgtv_aggregate.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `mgtv_aggregate` |
+| Client `egern` | `generated/egern/mgtv/mgtv_aggregate/mgtv_aggregate.yaml` |
+| Client `loon` | `generated/loon/mgtv/mgtv_aggregate/mgtv_aggregate.list` |
+| Client `mihomo` | `generated/mihomo/mgtv/mgtv_aggregate/mgtv_aggregate.yaml` |
+| Client `quantumultx` | `generated/quantumultx/mgtv/mgtv_aggregate/mgtv_aggregate.list` |
+| Client `shadowrocket` | `generated/shadowrocket/mgtv/mgtv_aggregate/mgtv_aggregate.list` |
+| Client `singbox` | `generated/singbox/mgtv/mgtv_aggregate/mgtv_aggregate.json` |
+| Client `surge` | `generated/surge/mgtv/mgtv_aggregate/mgtv_aggregate.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/mgtv/mgtv_aggregate/mgtv_aggregate.yaml` |
+| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/mgtv/mgtv_aggregate/mgtv_aggregate.list` |
+| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/mgtv/mgtv_aggregate/mgtv_aggregate.yaml` |
+| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/mgtv/mgtv_aggregate/mgtv_aggregate.list` |
+| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/mgtv/mgtv_aggregate/mgtv_aggregate.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/mgtv/mgtv_aggregate/mgtv_aggregate.json` |
+| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/mgtv/mgtv_aggregate/mgtv_aggregate.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

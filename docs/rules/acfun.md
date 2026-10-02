@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `acfun` |
 | 规则浏览路径 | `rule/acfun/acfun/acfun.yaml` |
-| 规则数量 | **10** |
-| SHA-256 | `74168a91455ee172a56ba3f177ff32ac949f9291161a95b4014f9b05b89a6b86` |
+| 规则数量（_index） | **10** |
+| SHA-256 | `473f7f3d950d400faa301b5512d815a6301ba1961b7a11a560389a2be9129c0c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/590b2c8a77808b97efc5f8033e1558ea789858b323189750158a3dbe6e40bbcb.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/590b2c8a77808b97efc5f8033e1558ea789858b323189750158a3dbe6e40bbcb.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/c7f4a330b299829695bf18bebb3dc629165bc68f861e53ce1ec80a81ef7eeb95.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/9b27d455eb660662e733ea9f93b7d417fc4f45b5decc86a3691e5ea012097f39.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/acfun/acfun/acfun.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/acfun/acfun/acfun.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/acfun/acfun/acfun.yaml`](../../../../rule/acfun/acfun/acfun.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `acfun` |
+| Client `egern` | `generated/egern/acfun/acfun/acfun.yaml` |
+| Client `loon` | `generated/loon/acfun/acfun/acfun.list` |
+| Client `mihomo` | `generated/mihomo/acfun/acfun/acfun.yaml` |
+| Client `quantumultx` | `generated/quantumultx/acfun/acfun/acfun.list` |
+| Client `shadowrocket` | `generated/shadowrocket/acfun/acfun/acfun.list` |
+| Client `singbox` | `generated/singbox/acfun/acfun/acfun.json` |
+| Client `surge` | `generated/surge/acfun/acfun/acfun.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 12 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/acfun/acfun/acfun.yaml` |
+| loon | 12 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/acfun/acfun/acfun.list` |
+| mihomo | 12 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/acfun/acfun/acfun.yaml` |
+| quantumultx | 12 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/acfun/acfun/acfun.list` |
+| shadowrocket | 12 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/acfun/acfun/acfun.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/acfun/acfun/acfun.json` |
+| surge | 12 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/acfun/acfun/acfun.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->

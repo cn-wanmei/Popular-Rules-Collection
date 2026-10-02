@@ -15,21 +15,23 @@
 | 类型 | service |
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/findmy/findmy.yaml` |
-| 规则数量 | **3** |
-| SHA-256 | `467fa2a2ebabfc1b6d368743105fd79b73ee611162e6bd0bf30d6ce5bb39150f` |
+| 规则数量（_index） | **9** |
+| SHA-256 | `8d956006f1cce27cb815bf1ee36e7b9de6682bf817e907d820fa2910bd1d005d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T014107215128Z-run` |
-| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| Run ID | `20261002T044009684916Z-run` |
+| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
 
+- Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
 - Release：`icon-2026.09.30.clean1`
 - 默认：`source_original` @ 256px
+- Object：`v/d2b3eae5e2ecc43724059a364c935276f2c953467a7b56c4177e5b48f95dcd91.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/d2b3eae5e2ecc43724059a364c935276f2c953467a7b56c4177e5b48f95dcd91.png`
 
 | 风格 | 256 |
@@ -43,26 +45,43 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/d55de30bc264333f6adf5f43311175c2bc81d415caff78b43c4e90c45dc3284a.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/43d09ac7602ad1e7afa7634b9c68ca8ba7c2da267d9492e4458e3a9091d9c363.png) |
 
-## 4. 七客户端 Raw
+## 4. 仓库路径绑定（rule ↔ generated）
 
-| 客户端 | Raw URL |
+| 层 | 路径 |
 |---|---|
-| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/apple/findmy/findmy.yaml` |
-| loon | _not in manifest_ |
-| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/apple/findmy/findmy.yaml` |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| Human browse（非运行时） | [`rule/apple/findmy/findmy.yaml`](../../../../rule/apple/findmy/findmy.yaml) |
+| Index 条目 | `rule/_index.yaml` → id `findmy` |
+| Client `egern` | `generated/egern/apple/findmy/findmy.yaml` |
+| Client `loon` | `generated/loon/apple/findmy/findmy.list` |
+| Client `mihomo` | `generated/mihomo/apple/findmy/findmy.yaml` |
+| Client `quantumultx` | `generated/quantumultx/apple/findmy/findmy.list` |
+| Client `shadowrocket` | `generated/shadowrocket/apple/findmy/findmy.list` |
+| Client `singbox` | `generated/singbox/apple/findmy/findmy.json` |
+| Client `surge` | `generated/surge/apple/findmy/findmy.list` |
 
-## 5. Source
+## 5. 七客户端 Raw 与 rule_count
+
+| 客户端 | Manifest rule_count | Raw URL |
+|---|---:|---|
+| egern | 6 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/apple/findmy/findmy.yaml` |
+| loon | 6 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/apple/findmy/findmy.list` |
+| mihomo | 6 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/apple/findmy/findmy.yaml` |
+| quantumultx | 6 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/apple/findmy/findmy.list` |
+| shadowrocket | 6 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/apple/findmy/findmy.list` |
+| singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/apple/findmy/findmy.json` |
+| surge | 6 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/apple/findmy/findmy.list` |
+
+> **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
+
+## 6. Source
 
 证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 6. 使用注意
+## 7. 使用注意
 
 - 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
 - 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+- 目录总表：[SERVICE_CATALOG.generated.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.generated.md)
 <!-- DOC_LAYER_GENERATED_END -->
 
 <!-- DOC_LAYER_OVERRIDES_START -->
