@@ -3,9 +3,8 @@ name: Client GitHub Release Packages
 # Produces the 7 client zip artifacts + RELEASE_NOTES and publishes a GitHub Release.
 # Safe to run after a successful Publish Release Candidate.
 #
-# Note: zip filenames intentionally contain ':' per product contract.
-# GitHub Actions artifacts cannot contain ':'; we therefore skip
-# upload-artifact and publish directly via `gh release create`.
+# Note: zip filenames intentionally contain ':' and '[]' per product contract.
+# GitHub Actions artifacts cannot contain ':'; we skip upload-artifact.
 
 on:
   workflow_dispatch:
@@ -61,8 +60,7 @@ jobs:
           echo "safe_stamp=$SAFE_STAMP" >> "$GITHUB_OUTPUT"
           ls -la release-packages/
           test -f release-packages/RELEASE_NOTES.md
-          # expect exactly 7 zips
-          test "$(ls -1 release-packages/*.zip | wc -l)" = "7"
+          test "$(find release-packages -maxdepth 1 -name '*.zip' | wc -l)" = "7"
 
       - name: Create GitHub Release
         if: ${{ inputs.dry_run != true }}
@@ -77,13 +75,12 @@ jobs:
             gh release delete "$SAFE_TAG" --yes || true
             git push origin ":refs/tags/$SAFE_TAG" || true
           fi
-          # gh release accepts ':' in asset filenames
+          # Build asset list with find to avoid shell glob issues with []
+          mapfile -t ASSETS < <(find release-packages -maxdepth 1 -type f \( -name '*.zip' -o -name 'RELEASE_NOTES.md' -o -name 'SHA256SUMS.txt' -o -name 'release-meta.json' \) | sort)
+          test "${#ASSETS[@]}" -ge 8
           gh release create "$SAFE_TAG" \
             --title "Rules Collection — ${STAMP}" \
             --notes-file "$BODY_FILE" \
-            release-packages/*.zip \
-            release-packages/RELEASE_NOTES.md \
-            release-packages/SHA256SUMS.txt \
-            release-packages/release-meta.json
+            "${ASSETS[@]}"
           echo "Created release: $SAFE_TAG"
           gh release view "$SAFE_TAG" --json assets --jq '.assets[].name'
