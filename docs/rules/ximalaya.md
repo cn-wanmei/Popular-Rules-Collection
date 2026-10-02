@@ -1,63 +1,68 @@
-# Ximalaya
+<!-- DOC_LAYER_GENERATED_START -->
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/e827aa7df4ad9c2b28cbc026cb75e2120c624f6e77c1c83a6606c65708bb0413.png" alt="ximalaya icon" width="72" height="72">
 
-> 用于匹配 **Ximalaya** 相关域名/IP 的分流规则（来自上游标准化合并）。
+# Ximalaya — 分流规则说明
 
-| 项目 | 内容 |
-|------|------|
-| Rule ID | `ximalaya` |
-| Primary Ecosystem | **China** (`china`) |
-| Service Type | service |
-| Tags | china, streaming |
-| 类型 | domain |
-| Domains | 5 |
-| CIDR | 0 |
-| 最后更新 | 2026-09-01 |
-| Sources | metacubex |
-| Confidence | HIGH |
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
 
-## 用途
+## 1. 服务基本信息
 
-用于匹配 **Ximalaya** 相关域名/IP 的分流规则（来自上游标准化合并）。
+| 项目 | 当前值 |
+|---|---|
+| Service ID | `ximalaya` |
+| 类型 | service |
+| Provider | `ximalaya` |
+| 规则浏览路径 | `rule/ximalaya/ximalaya/ximalaya.yaml` |
+| 规则数量 | **5** |
+| SHA-256 | `1b8c2788cd5bf2530fca81ed417d75716f7fd3d83b9c0cf4c01296141f135be8` |
 
-支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+## 2. 构建指纹
 
-## 一键订阅
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
 
-| 客户端 | 路径 | 链接 |
-|--------|------|------|
-| Mihomo | `generated/mihomo/ximalaya.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/ximalaya.yaml) |
-| sing-box | `generated/sing-box/ximalaya.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/ximalaya.json) |
-| Surge | `generated/surge/ximalaya.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/ximalaya.list) |
-| Shadowrocket | `generated/shadowrocket/ximalaya.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/ximalaya.list) |
-| Quantumult X | `generated/quantumult-x/ximalaya.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/ximalaya.list) |
-| Egern | `generated/egern/ximalaya.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/ximalaya.yaml) |
-| Loon | `generated/loon/ximalaya.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/ximalaya.list) |
+## 3. 图标（Icon System 6.0）
 
-## CDN 镜像（Mihomo）
+- Release：`icon-2026.09.30.clean1`
+- 默认：`source_original` @ 256px
+- Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/e827aa7df4ad9c2b28cbc026cb75e2120c624f6e77c1c83a6606c65708bb0413.png`
 
-| 镜像 | 链接 |
-|------|------|
-| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/ximalaya.yaml |
-| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/ximalaya.yaml |
-| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/ximalaya.yaml |
-| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/ximalaya.yaml |
+| 风格 | 256 |
+|---|---|
+| `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/e827aa7df4ad9c2b28cbc026cb75e2120c624f6e77c1c83a6606c65708bb0413.png) |
+| `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/9cecb02fb1e502f8edc2866b2ebb33752c72b4c3d8ea23002d8ac5088fd0b36e.png) |
+| `duotone_line` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/ad7b7fb5c5505587f2dc51878ece3ec706079bd2c2fb3f82bc69a6162231dce1.png) |
+| `soft_3d` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/f221aefd8a0649eede271260a9fd6d870f2af4a1b64ede98a0407523c0413059.png) |
+| `glassmorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/d50ea45132e7e72d399707345e4c00bd9000cbada2c007d97613e157dbace8ab.png) |
+| `neo_skeuomorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/98a1ac8026c352e9b11933b39d9215d1fc260e87f958f431f9436191ea506b5b.png) |
+| `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/1d0fc44d648e57c08e0f0e786887e838360d839c2e4d38fea39614f41ea627ac.png) |
+| `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/2d540fedfcb48ca8c0cc5b4bdc667bcb2d456e2609dd56393ad3d30d3db4c8e1.png) |
 
-## 官方网站
+## 4. 七客户端 Raw
 
-_未在 config/official_sites.yaml 配置_
+| 客户端 | Raw URL |
+|---|---|
+| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/ximalaya/ximalaya/ximalaya.yaml` |
+| loon | _not in manifest_ |
+| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/ximalaya/ximalaya/ximalaya.yaml` |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
 
-## 规则来源（Provenance）
+## 5. Source
 
-- `metacubex`
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
+## 6. 使用注意
 
-## 数据位置
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
 
-- Schema: `database/services/ximalaya.yaml`
-- Domains: `database/domains/ximalaya.txt`
-- IPs: `database/ips/ximalaya.txt`（若有）
-- Product page: `rule/China/…`（见 generate_rule_pages）
-
----
-_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->

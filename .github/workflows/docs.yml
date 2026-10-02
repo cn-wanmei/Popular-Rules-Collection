@@ -1,0 +1,71 @@
+name: Documentation Layer
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Build Client Rules"]
+    types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - "rule/_index.yaml"
+      - "generated/manifest.json"
+      - "config/icon_v6.yaml"
+      - "config/icon_docs.yaml"
+      - "scripts/generate_rule_docs.py"
+      - "scripts/validate_rule_docs.py"
+      - "docs/schema/**"
+      - "docs/overrides/**"
+
+concurrency:
+  group: documentation-layer
+  cancel-in-progress: false
+
+jobs:
+  docs:
+    if: >
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: python -m pip install --disable-pip-version-check pyyaml
+
+      - name: Generate rule docs
+        run: python scripts/generate_rule_docs.py
+
+      - name: Validate rule docs
+        run: python scripts/validate_rule_docs.py
+
+      - name: Commit docs (B1 controlled write)
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/rules docs/services docs/generated docs/SERVICE_CATALOG.generated.md || true
+          if git diff --staged --quiet; then
+            echo "No documentation changes."
+            exit 0
+          fi
+          git commit -m "docs(layer): regenerate service documentation [skip ci]"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "Published documentation on attempt ${attempt}."
+              exit 0
+            fi
+            echo "Push rejected; rebase and retry ${attempt}"
+            git pull --rebase origin main || true
+          done
+          echo "Failed to push documentation"
+          exit 1

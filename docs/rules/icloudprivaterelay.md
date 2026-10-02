@@ -1,27 +1,68 @@
-# iCloud Private Relay
+<!-- DOC_LAYER_GENERATED_START -->
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/d2b3eae5e2ecc43724059a364c935276f2c953467a7b56c4177e5b48f95dcd91.png" alt="icloudprivaterelay icon" width="72" height="72">
 
-| 项目 | 内容 |
+# iCloud Private Relay — 分流规则说明
+
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
+
+## 1. 服务基本信息
+
+| 项目 | 当前值 |
 |---|---|
-| Rule ID | `icloudprivaterelay` |
-| Service Type | service |
-| Current SSOT | `config/service_primary.yaml` |
-| Source lifecycle | `config/service_production_gate.yaml` |
+| Service ID | `icloudprivaterelay` |
+| 类型 | service |
+| Provider | `apple` |
+| 规则浏览路径 | `rule/apple/icloudprivaterelay/icloudprivaterelay.yaml` |
+| 规则数量 | **6** |
+| SHA-256 | `fc7ffd9fe3a8ec13d31140529e040c995ad741ecf7fa8e7e1ffa7f8afa2ffbad` |
 
-## 说明
+## 2. 构建指纹
 
-本页属于当前 Service SSOT 的独立子服务入口。域名与各客户端可订阅文件以当前 `generated/manifest.json` 及发布流水线产物为准；本页不复制域名清单，避免与运行时数据产生第二真源。
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
 
-## 当前路径模型
+## 3. 图标（Icon System 6.0）
 
-客户端规则统一使用：
+- Release：`icon-2026.09.30.clean1`
+- 默认：`source_original` @ 256px
+- Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/d2b3eae5e2ecc43724059a364c935276f2c953467a7b56c4177e5b48f95dcd91.png`
 
-`generated/<client>/<ecosystem>/<service-or-all>/rules.*`
+| 风格 | 256 |
+|---|---|
+| `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/d2b3eae5e2ecc43724059a364c935276f2c953467a7b56c4177e5b48f95dcd91.png) |
+| `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/f829e8f59df9ec3af24fc9f19efcf5a47d6b13c51d8eaec88b28ee184f5bec92.png) |
+| `duotone_line` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/6ef265c06845b9680991508361cdced9ef77c4d23ee15900b68bc23320c330d1.png) |
+| `soft_3d` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/18041b89a90d7f7593d9bac20c4a2f2527b2c5cae7d3d21e4d38b7ee760503a4.png) |
+| `glassmorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/179d4616384b11178b79d1722241925787d4b7f89a586f54c39ebb88216b4494.png) |
+| `neo_skeuomorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/1fcf038d690a12cea91e5dc4b9f30eff3978af3dd7df8b5f59ae87ab4a1ea3ef.png) |
+| `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/d55de30bc264333f6adf5f43311175c2bc81d415caff78b43c4e90c45dc3284a.png) |
+| `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/43d09ac7602ad1e7afa7634b9c68ca8ba7c2da267d9492e4458e3a9091d9c363.png) |
 
-客户端目录：
+## 4. 七客户端 Raw
 
-`mihomo` · `singbox` · `surge` · `shadowrocket` · `quantumultx` · `egern` · `loon`
+| 客户端 | Raw URL |
+|---|---|
+| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/apple/icloudprivaterelay/icloudprivaterelay.yaml` |
+| loon | _not in manifest_ |
+| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/apple/icloudprivaterelay/icloudprivaterelay.yaml` |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
 
-## 生命周期
+## 5. Source
 
-Source 与 Collection 的 immutable lineage 未完成精确绑定前，本页只作为服务身份与导航入口，不将候选状态误标为 Production。
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
+## 6. 使用注意
+
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
+
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->

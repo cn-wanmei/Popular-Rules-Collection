@@ -1,63 +1,68 @@
-# ICBC
+<!-- DOC_LAYER_GENERATED_START -->
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/517e5e82652b038a92f0800e12cd97c52e5ac8e15b871435aae98b835a5dda82.png" alt="icbc icon" width="72" height="72">
 
-> 用于匹配 **ICBC** 相关域名/IP 的分流规则（来自上游标准化合并）。
+# Industrial and Commercial Bank of China — 分流规则说明
 
-| 项目 | 内容 |
-|------|------|
-| Rule ID | `icbc` |
-| Primary Ecosystem | **UnionPay** (`unionpay`) |
-| Service Type | service |
-| Tags | finance, china |
-| 类型 | domain |
-| Domains | 58 |
-| CIDR | 0 |
-| 最后更新 | 2026-09-01 |
-| Sources | blackmatrix7 |
-| Confidence | HIGH |
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
 
-## 用途
+## 1. 服务基本信息
 
-用于匹配 **ICBC** 相关域名/IP 的分流规则（来自上游标准化合并）。
+| 项目 | 当前值 |
+|---|---|
+| Service ID | `icbc` |
+| 类型 | service |
+| Provider | `icbc` |
+| 规则浏览路径 | `rule/icbc/icbc/icbc.yaml` |
+| 规则数量 | **58** |
+| SHA-256 | `3890116ddcc6700acbec58878fac94045c05d2c4f339adf0b9cf505cefdf5b0b` |
 
-支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+## 2. 构建指纹
 
-## 一键订阅
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
 
-| 客户端 | 路径 | 链接 |
-|--------|------|------|
-| Mihomo | `generated/mihomo/icbc.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/icbc.yaml) |
-| sing-box | `generated/sing-box/icbc.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/icbc.json) |
-| Surge | `generated/surge/icbc.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/icbc.list) |
-| Shadowrocket | `generated/shadowrocket/icbc.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/icbc.list) |
-| Quantumult X | `generated/quantumult-x/icbc.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/icbc.list) |
-| Egern | `generated/egern/icbc.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/icbc.yaml) |
-| Loon | `generated/loon/icbc.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/icbc.list) |
+## 3. 图标（Icon System 6.0）
 
-## CDN 镜像（Mihomo）
+- Release：`icon-2026.09.30.clean1`
+- 默认：`source_original` @ 256px
+- Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/517e5e82652b038a92f0800e12cd97c52e5ac8e15b871435aae98b835a5dda82.png`
 
-| 镜像 | 链接 |
-|------|------|
-| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/icbc.yaml |
-| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/icbc.yaml |
-| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/icbc.yaml |
-| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/icbc.yaml |
+| 风格 | 256 |
+|---|---|
+| `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/517e5e82652b038a92f0800e12cd97c52e5ac8e15b871435aae98b835a5dda82.png) |
+| `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/de207f4335715fd6fd7e95b4e380749baa2c8ff3fac7842a8d5b5fa1b2bf4e10.png) |
+| `duotone_line` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/f76be7db851a388980573d46756a00e9f3f141fa1d8050011fa4736a5d45cf42.png) |
+| `soft_3d` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/10527d3bb41389136e5e249e4319ffc9e074fef1e52d6e6cf9b8e260522f88c4.png) |
+| `glassmorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/bd6443d9adc9a8b04e7080bcb1a615e7ca3b243378a481922851935381a0d101.png) |
+| `neo_skeuomorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/6f2034782cd210387ee1d23a7cf6cbafdec2f8e88643d917ff3375d3c424e433.png) |
+| `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/b9a4f154a279bd3966ef1a8e3ed4c9ae6bfda16e7c5f0e01062fe69dc5856943.png) |
+| `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3aaa9310638068e006e4e77dc416b5d77b6ea510bdb7de3c725bbf4630014971.png) |
 
-## 官方网站
+## 4. 七客户端 Raw
 
-_未在 config/official_sites.yaml 配置_
+| 客户端 | Raw URL |
+|---|---|
+| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/icbc/icbc/icbc.yaml` |
+| loon | _not in manifest_ |
+| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/icbc/icbc/icbc.yaml` |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
 
-## 规则来源（Provenance）
+## 5. Source
 
-- `blackmatrix7`
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
+## 6. 使用注意
 
-## 数据位置
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
 
-- Schema: `database/services/icbc.yaml`
-- Domains: `database/domains/icbc.txt`
-- IPs: `database/ips/icbc.txt`（若有）
-- Product page: `rule/UnionPay/…`（见 generate_rule_pages）
-
----
-_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->

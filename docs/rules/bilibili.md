@@ -1,66 +1,68 @@
-# BiliBili
+<!-- DOC_LAYER_GENERATED_START -->
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/2533129df04f76f4ab42b20d7aa12cdd080314ea4de583410df667c5ab1664e9.png" alt="bilibili icon" width="72" height="72">
 
-> 用于匹配 **BiliBili** 相关域名/IP 的分流规则（来自上游标准化合并）。
+# Bilibili — 分流规则说明
 
-| 项目 | 内容 |
-|------|------|
-| Rule ID | `bilibili` |
-| Primary Ecosystem | **China** (`china`) |
-| Service Type | service |
-| Tags | china |
-| 类型 | mixed |
-| Domains | 122 |
-| CIDR | 8 |
-| 最后更新 | 2026-09-01 |
-| Sources | blackmatrix7 / metacubex / v2fly / dler |
-| Confidence | HIGH |
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
 
-## 用途
+## 1. 服务基本信息
 
-用于匹配 **BiliBili** 相关域名/IP 的分流规则（来自上游标准化合并）。
+| 项目 | 当前值 |
+|---|---|
+| Service ID | `bilibili` |
+| 类型 | service |
+| Provider | `bilibili` |
+| 规则浏览路径 | `rule/bilibili/bilibili/bilibili.yaml` |
+| 规则数量 | **135** |
+| SHA-256 | `e028c7d8935cee3425e483767bace1c624f0b887be78b7bd0d2a8ff4d2ed7825` |
 
-支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+## 2. 构建指纹
 
-## 一键订阅
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
 
-| 客户端 | 路径 | 链接 |
-|--------|------|------|
-| Mihomo | `generated/mihomo/bilibili.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/bilibili.yaml) |
-| sing-box | `generated/sing-box/bilibili.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/bilibili.json) |
-| Surge | `generated/surge/bilibili.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/bilibili.list) |
-| Shadowrocket | `generated/shadowrocket/bilibili.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/bilibili.list) |
-| Quantumult X | `generated/quantumult-x/bilibili.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/bilibili.list) |
-| Egern | `generated/egern/bilibili.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/bilibili.yaml) |
-| Loon | `generated/loon/bilibili.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/bilibili.list) |
+## 3. 图标（Icon System 6.0）
 
-## CDN 镜像（Mihomo）
+- Release：`icon-2026.09.30.clean1`
+- 默认：`source_original` @ 256px
+- Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/2533129df04f76f4ab42b20d7aa12cdd080314ea4de583410df667c5ab1664e9.png`
 
-| 镜像 | 链接 |
-|------|------|
-| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/bilibili.yaml |
-| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/bilibili.yaml |
-| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/bilibili.yaml |
-| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/bilibili.yaml |
+| 风格 | 256 |
+|---|---|
+| `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/2533129df04f76f4ab42b20d7aa12cdd080314ea4de583410df667c5ab1664e9.png) |
+| `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/c1106ff7b40a6371271abde8d35262d21112094baac296dff931cde6bea528d3.png) |
+| `duotone_line` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/96b76eb3738714b5b3ad44dabbefe8fd533fd024f7950005f943849d32070822.png) |
+| `soft_3d` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/cb480460e19751af3cf1c410368d9bd85932237ad46baf20e8e375497a6fbdda.png) |
+| `glassmorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/ead9ee770eb02141961c06074944cff184aaaca2ae1a2a869c8286b5f9143a72.png) |
+| `neo_skeuomorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/204339407d80ec9714ab6ac369e4ff2a8c8a519d5c9c79ea4baa3a4c9d6d3da3.png) |
+| `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/39fdd4852f86ba2979876ec117a046b84c2bb7a5022e36d2d308d9729b982e00.png) |
+| `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/a724d1e9b7a201e9219ebee077db893f2003e3cb67e7fb670161cf39106eb000.png) |
 
-## 官方网站
+## 4. 七客户端 Raw
 
-_未在 config/official_sites.yaml 配置_
+| 客户端 | Raw URL |
+|---|---|
+| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/bilibili/bilibili/bilibili.yaml` |
+| loon | _not in manifest_ |
+| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/bilibili/bilibili/bilibili.yaml` |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
 
-## 规则来源（Provenance）
+## 5. Source
 
-- `blackmatrix7`
-- `metacubex`
-- `v2fly`
-- `dler`
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
+## 6. 使用注意
 
-## 数据位置
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
 
-- Schema: `database/services/bilibili.yaml`
-- Domains: `database/domains/bilibili.txt`
-- IPs: `database/ips/bilibili.txt`（若有）
-- Product page: `rule/China/…`（见 generate_rule_pages）
-
----
-_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->

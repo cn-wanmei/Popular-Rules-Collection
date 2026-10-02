@@ -1,63 +1,68 @@
-# Sohu
+<!-- DOC_LAYER_GENERATED_START -->
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3944c154ac395ef97aad7bb9d8ba83001e47710d1baf3ddec413a271bc49a09f.png" alt="sohu icon" width="72" height="72">
 
-> 用于匹配 **Sohu** 相关域名/IP 的分流规则（来自上游标准化合并）。
+# Sohu — 分流规则说明
 
-| 项目 | 内容 |
-|------|------|
-| Rule ID | `sohu` |
-| Primary Ecosystem | **China** (`china`) |
-| Service Type | service |
-| Tags | china, streaming |
-| 类型 | domain |
-| Domains | 53 |
-| CIDR | 0 |
-| 最后更新 | 2026-09-01 |
-| Sources | blackmatrix7 |
-| Confidence | HIGH |
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
 
-## 用途
+## 1. 服务基本信息
 
-用于匹配 **Sohu** 相关域名/IP 的分流规则（来自上游标准化合并）。
+| 项目 | 当前值 |
+|---|---|
+| Service ID | `sohu` |
+| 类型 | service |
+| Provider | `sohu` |
+| 规则浏览路径 | `rule/sohu/sohu/sohu.yaml` |
+| 规则数量 | **53** |
+| SHA-256 | `bc18fcaf00c23e65d8f8b54634fe66b53585649d8e630b3d168471e3cf5b98aa` |
 
-支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+## 2. 构建指纹
 
-## 一键订阅
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
 
-| 客户端 | 路径 | 链接 |
-|--------|------|------|
-| Mihomo | `generated/mihomo/sohu.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/sohu.yaml) |
-| sing-box | `generated/sing-box/sohu.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/sohu.json) |
-| Surge | `generated/surge/sohu.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/sohu.list) |
-| Shadowrocket | `generated/shadowrocket/sohu.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/sohu.list) |
-| Quantumult X | `generated/quantumult-x/sohu.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/sohu.list) |
-| Egern | `generated/egern/sohu.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/sohu.yaml) |
-| Loon | `generated/loon/sohu.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/sohu.list) |
+## 3. 图标（Icon System 6.0）
 
-## CDN 镜像（Mihomo）
+- Release：`icon-2026.09.30.clean1`
+- 默认：`source_original` @ 256px
+- Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3944c154ac395ef97aad7bb9d8ba83001e47710d1baf3ddec413a271bc49a09f.png`
 
-| 镜像 | 链接 |
-|------|------|
-| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/sohu.yaml |
-| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/sohu.yaml |
-| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/sohu.yaml |
-| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/sohu.yaml |
+| 风格 | 256 |
+|---|---|
+| `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3944c154ac395ef97aad7bb9d8ba83001e47710d1baf3ddec413a271bc49a09f.png) |
+| `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/1586d3619d0a409dbd99231a5dcc668e0176fda4ff90b14cf6007190583bd241.png) |
+| `duotone_line` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/16b06a85d82384eac83437d3d4c04d507007f3880b9c59eba7df74e5afe38092.png) |
+| `soft_3d` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/86bfa6b7ad1286fd712c2b6905d7400ddf06bca37ca528712c5307d09e8d5027.png) |
+| `glassmorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3bc62643d411d996ab9c786063aa05752ed35e686aafd34f817e57e5325f869f.png) |
+| `neo_skeuomorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/40dd8cc514ae2c79aec0755e24aa82e741326ae38cfeef71ab08ee32ea5fb7aa.png) |
+| `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/b42a06dc30287f3d2a4fee43ac96a9038656375c03d0094812abb2fb0274618a.png) |
+| `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/c65d3e99e772c8691144f8dbd1927ff1948d55d17861f3c990038d5c061f959f.png) |
 
-## 官方网站
+## 4. 七客户端 Raw
 
-_未在 config/official_sites.yaml 配置_
+| 客户端 | Raw URL |
+|---|---|
+| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/sohu/sohu/sohu.yaml` |
+| loon | _not in manifest_ |
+| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/sohu/sohu/sohu.yaml` |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
 
-## 规则来源（Provenance）
+## 5. Source
 
-- `blackmatrix7`
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
+## 6. 使用注意
 
-## 数据位置
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
 
-- Schema: `database/services/sohu.yaml`
-- Domains: `database/domains/sohu.txt`
-- IPs: `database/ips/sohu.txt`（若有）
-- Product page: `rule/China/…`（见 generate_rule_pages）
-
----
-_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->

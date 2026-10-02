@@ -1,63 +1,68 @@
-# Weibo
+<!-- DOC_LAYER_GENERATED_START -->
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/52f06e683b2cffee3028fd286681dd9e3794d42a47ccefef0632b853a41219ce.png" alt="weibo icon" width="72" height="72">
 
-> 用于匹配 **Weibo** 相关域名/IP 的分流规则（来自上游标准化合并）。
+# Weibo — 分流规则说明
 
-| 项目 | 内容 |
-|------|------|
-| Rule ID | `weibo` |
-| Primary Ecosystem | **China** (`china`) |
-| Service Type | service |
-| Tags | china |
-| 类型 | domain |
-| Domains | 4 |
-| CIDR | 0 |
-| 最后更新 | 2026-09-01 |
-| Sources | blackmatrix7 |
-| Confidence | HIGH |
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
 
-## 用途
+## 1. 服务基本信息
 
-用于匹配 **Weibo** 相关域名/IP 的分流规则（来自上游标准化合并）。
+| 项目 | 当前值 |
+|---|---|
+| Service ID | `weibo` |
+| 类型 | service |
+| Provider | `weibo` |
+| 规则浏览路径 | `rule/weibo/weibo/weibo.yaml` |
+| 规则数量 | **4** |
+| SHA-256 | `45243c6d6633f6ea6e3a6c52550a72d9c4b69f817386fa97f18fa801b77590eb` |
 
-支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+## 2. 构建指纹
 
-## 一键订阅
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
 
-| 客户端 | 路径 | 链接 |
-|--------|------|------|
-| Mihomo | `generated/mihomo/weibo.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/weibo.yaml) |
-| sing-box | `generated/sing-box/weibo.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/weibo.json) |
-| Surge | `generated/surge/weibo.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/weibo.list) |
-| Shadowrocket | `generated/shadowrocket/weibo.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/weibo.list) |
-| Quantumult X | `generated/quantumult-x/weibo.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/weibo.list) |
-| Egern | `generated/egern/weibo.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/weibo.yaml) |
-| Loon | `generated/loon/weibo.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/weibo.list) |
+## 3. 图标（Icon System 6.0）
 
-## CDN 镜像（Mihomo）
+- Release：`icon-2026.09.30.clean1`
+- 默认：`source_original` @ 256px
+- Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/52f06e683b2cffee3028fd286681dd9e3794d42a47ccefef0632b853a41219ce.png`
 
-| 镜像 | 链接 |
-|------|------|
-| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/weibo.yaml |
-| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/weibo.yaml |
-| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/weibo.yaml |
-| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/weibo.yaml |
+| 风格 | 256 |
+|---|---|
+| `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/52f06e683b2cffee3028fd286681dd9e3794d42a47ccefef0632b853a41219ce.png) |
+| `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/73a0f3af02d37036f93fa889e9c6b69661fc2c70937c74d9646b47c092a24cb0.png) |
+| `duotone_line` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/6dd69d2a00683e6872f2f286b0698a8bc2d160ee3d9ae4250e0d89be17e072f2.png) |
+| `soft_3d` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/9e1944353f697b1794d2c2e5182e3d102550dcd381640c2e8077589904b752d7.png) |
+| `glassmorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/7ca8f905c615a3e42ebf8a71c7d1930ef9f229c16f76747115a24621a9448c8b.png) |
+| `neo_skeuomorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/1183c73bf3680c991e019affbff4bd93513c3580c2e4fad570c500b2b1a67d0c.png) |
+| `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/ddfd4c200400ae931687e031cd4aa8e920b9be41e37e0da91712084c8261226e.png) |
+| `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/b41f6bd90d33bfc0db1a22c521bb5665dfc07ac66ac77d9e24d361290de36b7d.png) |
 
-## 官方网站
+## 4. 七客户端 Raw
 
-_未在 config/official_sites.yaml 配置_
+| 客户端 | Raw URL |
+|---|---|
+| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/weibo/weibo/weibo.yaml` |
+| loon | _not in manifest_ |
+| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/weibo/weibo/weibo.yaml` |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
 
-## 规则来源（Provenance）
+## 5. Source
 
-- `blackmatrix7`
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
+## 6. 使用注意
 
-## 数据位置
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
 
-- Schema: `database/services/weibo.yaml`
-- Domains: `database/domains/weibo.txt`
-- IPs: `database/ips/weibo.txt`（若有）
-- Product page: `rule/China/…`（见 generate_rule_pages）
-
----
-_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->

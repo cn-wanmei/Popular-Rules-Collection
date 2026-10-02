@@ -1,0 +1,69 @@
+<!-- DOC_LAYER_GENERATED_START -->
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/69ffe4bdb5635292d403d1e09fe33ca7845913dee002b7ac6ef543980a68759b.png" alt="zhipin_aggregate icon" width="72" height="72">
+
+# BOSS直聘 — 分流规则说明
+
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
+
+## 1. 服务基本信息
+
+| 项目 | 当前值 |
+|---|---|
+| Service ID | `zhipin_aggregate` |
+| 类型 | provider_aggregate |
+| Provider | `zhipin` |
+| 规则浏览路径 | `rule/zhipin/zhipin_aggregate/zhipin_aggregate.yaml` |
+| 规则数量 | **2** |
+| SHA-256 | `f6fc76ae5c94bc27433f14c837c4e4c0af71cfe3a07ce31653851401b68517b3` |
+
+## 2. 构建指纹
+
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
+
+## 3. 图标（Icon System 6.0）
+
+- Release：`icon-2026.09.30.clean1`
+- 默认：`source_original` @ 256px
+- Icon 映射自：`zhipin`
+- Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/69ffe4bdb5635292d403d1e09fe33ca7845913dee002b7ac6ef543980a68759b.png`
+
+| 风格 | 256 |
+|---|---|
+| `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/69ffe4bdb5635292d403d1e09fe33ca7845913dee002b7ac6ef543980a68759b.png) |
+| `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/ce94b0149a47f8f3c9c6c6b4fac68d5e6f5880c9bc0b201017a8edf5c16a5ce8.png) |
+| `duotone_line` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/850000e8146cc093c276fbc1514454eea7143496739feefe35868e93cbc81b59.png) |
+| `soft_3d` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/6d87e36ff924166a1a4e7e86b713f5c4bcc1b384fc222ff12ae2ce234f1d339a.png) |
+| `glassmorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/57e9df73fc6c9c887120ed09f845e7c70450db962063708ffdfd7193f61eccd6.png) |
+| `neo_skeuomorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3186ecf44dbe6a61547c5118d07cb792f6673dc68874ba601be7971c696e8f67.png) |
+| `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/751b934f2e8cc913af38a94fc51912c3d6654ed3cf7eb991317287ca53337bb3.png) |
+| `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/c8e5af6f1ba0548a4e47509c0bdb580c115a6371941525579b4adbf85881b3bd.png) |
+
+## 4. 七客户端 Raw
+
+| 客户端 | Raw URL |
+|---|---|
+| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/zhipin/zhipin_aggregate/zhipin_aggregate.yaml` |
+| loon | _not in manifest_ |
+| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/zhipin/zhipin_aggregate/zhipin_aggregate.yaml` |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
+
+## 5. Source
+
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
+
+## 6. 使用注意
+
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
+
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->

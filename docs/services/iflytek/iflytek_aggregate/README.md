@@ -1,0 +1,69 @@
+<!-- DOC_LAYER_GENERATED_START -->
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/1727be71967a0cd8d3494174bab7dbe815dd6b1f5b304e6e0406d8b30de8d8a2.png" alt="iflytek_aggregate icon" width="72" height="72">
+
+# 科大讯飞 — 分流规则说明
+
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
+
+## 1. 服务基本信息
+
+| 项目 | 当前值 |
+|---|---|
+| Service ID | `iflytek_aggregate` |
+| 类型 | provider_aggregate |
+| Provider | `iflytek` |
+| 规则浏览路径 | `rule/iflytek/iflytek_aggregate/iflytek_aggregate.yaml` |
+| 规则数量 | **2** |
+| SHA-256 | `f65356f9cde55eeb8a72a8a7b079d6312c8267dcf2a50c7d7f30fe2913ff1563` |
+
+## 2. 构建指纹
+
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
+
+## 3. 图标（Icon System 6.0）
+
+- Release：`icon-2026.09.30.clean1`
+- 默认：`source_original` @ 256px
+- Icon 映射自：`iflytek`
+- Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/1727be71967a0cd8d3494174bab7dbe815dd6b1f5b304e6e0406d8b30de8d8a2.png`
+
+| 风格 | 256 |
+|---|---|
+| `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/1727be71967a0cd8d3494174bab7dbe815dd6b1f5b304e6e0406d8b30de8d8a2.png) |
+| `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/373c0f7c086d962ac852cc887dde3f39001b80995decd00ad13ba2e1658e934e.png) |
+| `duotone_line` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/e50a3fb9d170d948792b552cd4bc0a31abade3edafd4fb582384b526370c26a9.png) |
+| `soft_3d` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/6d82d63e076a515899e0773905e4c6aeea1f78c2bee2b09daf596474644403f5.png) |
+| `glassmorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/8d26a80ae5698de53294c5467d55f912a63f0ac42ab966a54830dd8374a5e8d7.png) |
+| `neo_skeuomorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/24ce1e465ac362862e2c0d4468b9deacd449be0808915c3acf945299a72e4d93.png) |
+| `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/2ccb10232569b23cf27650fb63c3e146dd6690127dda619a8bbf3d4d6c2f8b2a.png) |
+| `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/52cc241db910a6b1d965d15a37ef88736e4680a97dd9cf86e4838dc53013a361.png) |
+
+## 4. 七客户端 Raw
+
+| 客户端 | Raw URL |
+|---|---|
+| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/iflytek/iflytek_aggregate/iflytek_aggregate.yaml` |
+| loon | _not in manifest_ |
+| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/iflytek/iflytek_aggregate/iflytek_aggregate.yaml` |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
+
+## 5. Source
+
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
+
+## 6. 使用注意
+
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
+
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->

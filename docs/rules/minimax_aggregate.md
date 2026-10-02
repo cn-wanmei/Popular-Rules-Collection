@@ -1,0 +1,69 @@
+<!-- DOC_LAYER_GENERATED_START -->
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/c01db486661f0b328b34ece6f235ddd10883b94771ef9491cf782da7bf30195a.png" alt="minimax_aggregate icon" width="72" height="72">
+
+# MiniMax — 分流规则说明
+
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
+
+## 1. 服务基本信息
+
+| 项目 | 当前值 |
+|---|---|
+| Service ID | `minimax_aggregate` |
+| 类型 | provider_aggregate |
+| Provider | `minimax` |
+| 规则浏览路径 | `rule/minimax/minimax_aggregate/minimax_aggregate.yaml` |
+| 规则数量 | **2** |
+| SHA-256 | `735bfc41a178f9d7ccd362d17850fe1854e2085789d879edcf4457ecd271f339` |
+
+## 2. 构建指纹
+
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
+
+## 3. 图标（Icon System 6.0）
+
+- Release：`icon-2026.09.30.clean1`
+- 默认：`source_original` @ 256px
+- Icon 映射自：`minimax`
+- Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/c01db486661f0b328b34ece6f235ddd10883b94771ef9491cf782da7bf30195a.png`
+
+| 风格 | 256 |
+|---|---|
+| `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/c01db486661f0b328b34ece6f235ddd10883b94771ef9491cf782da7bf30195a.png) |
+| `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/57f817a1e44e81708e885bd4caf6f2e47fa6bae6b82fe9c304e6a8289f5b0888.png) |
+| `duotone_line` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/5cf6f05bc689a9eac1fabd36efaa663ce1e10ff1ae2fd39d620db32a55a614a9.png) |
+| `soft_3d` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/7c53391b89ce9484c434ede2752fabfd40b5ca4477ddbdd6e7d816157a299eed.png) |
+| `glassmorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/e0238653255a846f400f223051ea695b373e7f6c1524dd24a3cfada63f337be8.png) |
+| `neo_skeuomorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/85bc9d5b803a862fda540c014f0546d0ddeb3d10683ba5cbe219386f019be8bc.png) |
+| `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/8f8f4c9d4adf5d795bdacc01089ae168decccc5fab56e625aee1e8f94b4954ab.png) |
+| `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/9fe596694ca6d403c12352350486e3a674d186fa6fba3fd5cf48906481842aa6.png) |
+
+## 4. 七客户端 Raw
+
+| 客户端 | Raw URL |
+|---|---|
+| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/minimax/minimax_aggregate/minimax_aggregate.yaml` |
+| loon | _not in manifest_ |
+| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/minimax/minimax_aggregate/minimax_aggregate.yaml` |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
+
+## 5. Source
+
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
+
+## 6. 使用注意
+
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
+
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->

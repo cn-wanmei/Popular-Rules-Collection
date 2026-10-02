@@ -1,0 +1,69 @@
+<!-- DOC_LAYER_GENERATED_START -->
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/fe994da990c0d2a69f96462be7505b8fc035acf5e21091bbad4e8e993bd6b733.png" alt="bocom_aggregate icon" width="72" height="72">
+
+# Bank of Communications — 分流规则说明
+
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
+
+## 1. 服务基本信息
+
+| 项目 | 当前值 |
+|---|---|
+| Service ID | `bocom_aggregate` |
+| 类型 | provider_aggregate |
+| Provider | `bocom` |
+| 规则浏览路径 | `rule/bocom/bocom_aggregate/bocom_aggregate.yaml` |
+| 规则数量 | **6** |
+| SHA-256 | `2bae032957267201d713b5def79ee05e098fa106827118710a9404d73dd06235` |
+
+## 2. 构建指纹
+
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
+
+## 3. 图标（Icon System 6.0）
+
+- Release：`icon-2026.09.30.clean1`
+- 默认：`source_original` @ 256px
+- Icon 映射自：`bocom`
+- Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/fe994da990c0d2a69f96462be7505b8fc035acf5e21091bbad4e8e993bd6b733.png`
+
+| 风格 | 256 |
+|---|---|
+| `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/fe994da990c0d2a69f96462be7505b8fc035acf5e21091bbad4e8e993bd6b733.png) |
+| `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/905103ddb4316d460f428c238752d1fb0f17e7565f366f3f3effb23c42e2b5c7.png) |
+| `duotone_line` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/6d3f108193a5de07e4431e7d5252ba5aeb2925ed364e826c0153fcb2412d638e.png) |
+| `soft_3d` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/ed75b27459e02934f60d96771953eae0c8669391673a063851bf409bc1d20228.png) |
+| `glassmorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/e36c9b919617ffddd26a56871111c0ea5f54f81fc55f3da9d5cede63bc6bef5e.png) |
+| `neo_skeuomorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/829d12ec29fed33263d8b8f12fed61977af1663546f86a9483d6e8c7892cae1f.png) |
+| `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/456fabd50bfddf6517a72d00966bb9ad7438999cbaba2c8b9a7a7f23984e19dc.png) |
+| `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/869e2e4ed3cfbb44084d5cf57c6529dfbf064644f2ae3dfc3e6a71570aa83850.png) |
+
+## 4. 七客户端 Raw
+
+| 客户端 | Raw URL |
+|---|---|
+| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/bocom/bocom_aggregate/bocom_aggregate.yaml` |
+| loon | _not in manifest_ |
+| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/bocom/bocom_aggregate/bocom_aggregate.yaml` |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
+
+## 5. Source
+
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
+
+## 6. 使用注意
+
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
+
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->

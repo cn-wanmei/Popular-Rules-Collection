@@ -1,6 +1,8 @@
+<!-- DOC_LAYER_GENERATED_START -->
 # Developer Ecosystem — 分流规则说明
 
-> 当前服务页由 Rule Index、Generated Manifest 与 Icon System 6.0 共同驱动。品牌身份优先；无可信品牌身份时使用本地 semantic fallback。
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
 
 ## 1. 服务基本信息
 
@@ -8,78 +10,44 @@
 |---|---|
 | Service ID | `developer` |
 | 类型 | category |
-| Provider / 服务集 | `null` |
-| 规则浏览路径 | `category/developer/developer.yaml` |
-| 语义规则数量 | **136** |
-| 语义 SHA-256 | `78be62ea07e672ca348dee7ee47a786f6aaaec31d07a55d7c53ceb8883b34b55` |
-| Collection Date | `2026-09-24` |
-| Generated At | `2026-09-24T04:39:15.367236+00:00` |
-| Run ID | `20260924T043120249584Z-run` |
-| Semantic IR Digest | `f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7` |
+| Provider | `` |
+| 规则浏览路径 | `rule/category/developer/developer.yaml` |
+| 规则数量 | **285** |
+| SHA-256 | `b501b9ccfb5b475782571a0e50408ecbdd69e8cc7ec557d0953b7af399cbfd3e` |
 
-## 2. 图标适配
+## 2. 构建指纹
 
-主图标：**Icon V6**（见 Icon 仓 dist manifest）
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
 
-- Style：`source_original`
-- 本地 V4 Raw：`https://github.com/cn-wanmei/Popular-Rules-Icon
+## 3. 图标（Icon System 6.0）
 
-风格层：Icon V6 production styles（见 `config/variant-policy.yaml` / STYLE_SYSTEM_V1）。
-
-## 3. 服务集与层级
-
-所属服务集：[category](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/services/category/README.md)
-
-当前层级由 `rule/_index.yaml` 的物理路径决定，不根据品牌名称猜测父子关系。
+- Icon：unavailable for this service_id in production manifest
 
 ## 4. 七客户端 Raw
 
-| 客户端 | 文件 | Manifest rule_count | size | SHA-256 | Raw |
-|---|---|---:|---:|---|---|
-| egern | **未生成 / 未登记** | — | — | — | — |
-| loon | **未生成 / 未登记** | — | — | — | — |
-| mihomo | **未生成 / 未登记** | — | — | — | — |
-| quantumultx | **未生成 / 未登记** | — | — | — | — |
-| shadowrocket | **未生成 / 未登记** | — | — | — | — |
-| singbox | **未生成 / 未登记** | — | — | — | — |
-| surge | **未生成 / 未登记** | — | — | — | — |
-
-### 4.1 Raw 地址直接复制
-
-
-## 5. 使用方法
-
-选择客户端 → 复制对应 Raw → 加入远程 Rule Set / Rule Provider / rule-set → 绑定自己的 DIRECT / PROXY / REJECT 等策略。
-
-不要跨客户端复用其他目录的 YAML、JSON、LIST；`rule/` 不是客户端运行时输入。
-
-## 6. 服务集与独立子服务
-
-**服务集：** 适合较宽覆盖面。
-
-**独立服务 / 子服务：** 适合精确分流；直接使用该服务自己的 Raw，不要从聚合规则手工拆分。
-
-**父子规则同时加载：** 实际优先级由客户端规则顺序决定。
-
-## 7. 更新、统计与完整性
-
-| 检查项 | 权威来源 |
+| 客户端 | Raw URL |
 |---|---|
-| 语义规则数量 / Service SHA-256 | `rule/_index.yaml` |
-| 客户端文件 / rule_count / size / SHA-256 | `generated/manifest.json` |
-| 当前 Icon 主层 | Icon V6 `icon-2026.09.30.clean1` |
-| Icon Release | `icon-2026.09.30.clean1` |
+| egern | _not in manifest_ |
+| loon | _not in manifest_ |
+| mihomo | _not in manifest_ |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
 
-统计口径：`rule_count` 是 Manifest 对客户端文件记录的字段，不同客户端可能有不同口径；服务本身的主要规则数量以 `rule/_index.yaml` 语义 `rule_count` 为准。
+## 5. Source
 
-当前 Collection Date：`2026-09-24`；Release Generated At：`2026-09-24T04:39:15.367236+00:00`。
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 8. 相关入口
+## 6. 使用注意
 
-- [服务总目录](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.md)
-- [Icon System 6.0](https://github.com/cn-wanmei/Popular-Rules-Icon)
-- [V4 Style Guide](https://github.com/cn-wanmei/Popular-Rules-Icon)
-- [完整规则使用说明](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/RULE_USAGE_GUIDE.md)
-- [规则索引](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/rule/_index.yaml)
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
 
-[回到顶部](#top)
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->

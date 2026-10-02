@@ -1,3 +1,5 @@
+> **机器目录表**已迁移至 [SERVICE_CATALOG.generated.md](SERVICE_CATALOG.generated.md)（Documentation Layer v1，与 `rule/_index.yaml` 同步）。
+
 # 服务规则目录
 
 > 当前 Release 的全量服务 / 子服务 / 服务集导航。使用方式：**先找服务集 → 再选独立服务 → 最后复制目标客户端 Raw**。

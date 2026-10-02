@@ -19,3 +19,12 @@
 Phase / date-stamped planning docs not listed here are historical; prefer SSOT configs and CI status over narrative status tables.
 - [phases/](archive/phases/) — PHASE/P1–P3/V1–V2 historical plans
 - [icon-v5 schemas](../schemas/archive/icon-v5/) / [configs](../config/archive/icon-v5/) / [reports](../reports/archive/icon-v5/)
+
+## Documentation Layer v1
+
+- [Schema / contract](schema/DOCUMENTATION_SPEC.yaml)
+- [Generated service catalog](SERVICE_CATALOG.generated.md)
+- [docs-index.json](generated/docs-index.json)
+- Service pages: `docs/services/**` (tree) and `docs/rules/{id}.md` (by id)
+- Overrides: `docs/overrides/`
+

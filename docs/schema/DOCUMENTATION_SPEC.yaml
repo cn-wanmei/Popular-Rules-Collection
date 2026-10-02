@@ -1,0 +1,72 @@
+# Documentation Layer v1.0 contract — frozen for generators and validators.
+documentation_contract_version: "1.0"
+updated: "2026-10-02"
+
+depends:
+  ir_schema: semantic_ir_v2
+  icon_system: v6
+  layout_schema: directory_layout_v2
+
+principles:
+  - semantic_ir_derived_chain_is_source_of_truth
+  - docs_are_regenerable
+  - machine_sections_separated_from_overrides
+  - raw_urls_only_from_generated_manifest
+  - icons_only_from_icon_v6_dist
+
+inputs:
+  - rule/_index.yaml
+  - generated/manifest.json
+  - config/icon_v6.yaml
+  - config/icon_docs.yaml
+  - Icon dist production manifest (via icon_v6.release_id)
+  - docs/overrides/{service_id}.md (optional)
+
+outputs:
+  - docs/generated/docs-index.json
+  - docs/rules/{service_id}.md
+  - docs/services/**/README.md (generated sections)
+  - docs/SERVICE_CATALOG.generated.md
+
+required_fields_per_service:
+  - service_id
+  - display_name
+  - provider
+  - entity
+  - path
+  - rule_count
+  - sha256
+  - run_id
+  - ir_digest
+  - clients
+  - raw
+  - icon
+
+optional_fields:
+  - category
+  - source_link
+
+icon_defaults:
+  style: source_original
+  size: 256
+  format: png
+
+clients:
+  - egern
+  - loon
+  - mihomo
+  - quantumultx
+  - shadowrocket
+  - singbox
+  - surge
+
+forbidden_in_consumer_docs:
+  - assets/icons/v3
+  - assets/icons/v4
+  - assets/icons/v5
+  - Icon Library V4
+
+notes:
+  - Category is optional; missing must not fail coverage.
+  - provider_aggregate without icon id may use base id or representative map.
+  - rule/ is browse-only; clients consume generated/ only.

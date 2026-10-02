@@ -1,65 +1,68 @@
-# WhatsApp
+<!-- DOC_LAYER_GENERATED_START -->
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/42f4f454478c5349d6c8650d06c1c044073422bab531decf416c6fa2214c867b.png" alt="whatsapp icon" width="72" height="72">
 
-> 用于匹配 **WhatsApp** 相关域名/IP 的分流规则（来自上游标准化合并）。
+# WhatsApp — 分流规则说明
 
-| 项目 | 内容 |
-|------|------|
-| Rule ID | `whatsapp` |
-| Primary Ecosystem | **Social** (`social`) |
-| Service Type | service |
-| Tags | social |
-| 类型 | mixed |
-| Domains | 17 |
-| CIDR | 11 |
-| 最后更新 | 2026-09-01 |
-| Sources | blackmatrix7 / metacubex / v2fly |
-| Confidence | HIGH |
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
 
-## 用途
+## 1. 服务基本信息
 
-用于匹配 **WhatsApp** 相关域名/IP 的分流规则（来自上游标准化合并）。
+| 项目 | 当前值 |
+|---|---|
+| Service ID | `whatsapp` |
+| 类型 | service |
+| Provider | `meta` |
+| 规则浏览路径 | `rule/meta/whatsapp/whatsapp.yaml` |
+| 规则数量 | **28** |
+| SHA-256 | `9837c31911c7d92e758f8aed2d0a64832e82362b18e08d220ab2d1a541eddd59` |
 
-支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+## 2. 构建指纹
 
-## 一键订阅
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
 
-| 客户端 | 路径 | 链接 |
-|--------|------|------|
-| Mihomo | `generated/mihomo/whatsapp.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/whatsapp.yaml) |
-| sing-box | `generated/sing-box/whatsapp.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/whatsapp.json) |
-| Surge | `generated/surge/whatsapp.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/whatsapp.list) |
-| Shadowrocket | `generated/shadowrocket/whatsapp.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/whatsapp.list) |
-| Quantumult X | `generated/quantumult-x/whatsapp.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/whatsapp.list) |
-| Egern | `generated/egern/whatsapp.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/whatsapp.yaml) |
-| Loon | `generated/loon/whatsapp.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/whatsapp.list) |
+## 3. 图标（Icon System 6.0）
 
-## CDN 镜像（Mihomo）
+- Release：`icon-2026.09.30.clean1`
+- 默认：`source_original` @ 256px
+- Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/42f4f454478c5349d6c8650d06c1c044073422bab531decf416c6fa2214c867b.png`
 
-| 镜像 | 链接 |
-|------|------|
-| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/whatsapp.yaml |
-| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/whatsapp.yaml |
-| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/whatsapp.yaml |
-| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/whatsapp.yaml |
+| 风格 | 256 |
+|---|---|
+| `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/42f4f454478c5349d6c8650d06c1c044073422bab531decf416c6fa2214c867b.png) |
+| `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/a99afc6858eb7704b6817a98496e825eac48046cca371742e81bfe42eba67fd9.png) |
+| `duotone_line` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/2d900fa78cf7390933c4ec90ed5b8afbb4547f9049f27af907e706c58fbd2bc1.png) |
+| `soft_3d` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/52aed2bc90f19d97ccc971fb5c437d0e0c39b613ed99834f500d36085a1e15c6.png) |
+| `glassmorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/6303ba94d6b5acf523e223d879f71904cdb05addb566ea4379b8871bf48977e5.png) |
+| `neo_skeuomorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/59d1713c22dd819d98b45a3dbe88416a742d780d5544fc830cf1170bdea570b7.png) |
+| `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/984ecdbd8f4404d7a3f75734b6f957548dd3ed37da3b66d6d56a9d38ff0021cd.png) |
+| `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/ea7d7f1f11984f774310ae6761703f4147a6113213d31c03a09907f1e812ee93.png) |
 
-## 官方网站
+## 4. 七客户端 Raw
 
-[官方站点](https://www.whatsapp.com)
+| 客户端 | Raw URL |
+|---|---|
+| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/meta/whatsapp/whatsapp.yaml` |
+| loon | _not in manifest_ |
+| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/meta/whatsapp/whatsapp.yaml` |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
 
-## 规则来源（Provenance）
+## 5. Source
 
-- `blackmatrix7`
-- `metacubex`
-- `v2fly`
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
+## 6. 使用注意
 
-## 数据位置
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
 
-- Schema: `database/services/whatsapp.yaml`
-- Domains: `database/domains/whatsapp.txt`
-- IPs: `database/ips/whatsapp.txt`（若有）
-- Product page: `rule/Social/…`（见 generate_rule_pages）
-
----
-_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->

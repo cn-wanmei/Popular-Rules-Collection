@@ -1,7 +1,10 @@
+<!-- DOC_LAYER_GENERATED_START -->
 <img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/8f967ccad1b9a8f83cb449a5014e793ea7e751aac7c2a27e557115a1719f1c78.png" alt="private icon" width="72" height="72">
+
 # Private — 分流规则说明
 
-> 当前服务页由 Rule Index、Generated Manifest 与 **Icon System 6.0** 共同驱动。默认展示风格 `source_original` @ 256px（release `icon-2026.09.30.clean1`）。
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
 
 ## 1. 服务基本信息
 
@@ -9,28 +12,26 @@
 |---|---|
 | Service ID | `private` |
 | 类型 | service |
-| Provider / 服务集 | `special` |
-| 规则浏览路径 | `special/private/private.yaml` |
-| 语义规则数量 | **248** |
-| 语义 SHA-256 | `5c0256bcee53889aede4f76fcc92ef8dca5038d3485a03320e6772a14b84dbf6` |
-| Collection Date | `2026-09-24` |
-| Generated At | `2026-09-24T04:39:15.367236+00:00` |
-| Run ID | `20260924T043120249584Z-run` |
-| Semantic IR Digest | `f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7` |
+| Provider | `special` |
+| 规则浏览路径 | `rule/special/private/private.yaml` |
+| 规则数量 | **248** |
+| SHA-256 | `9280ce4e745efa3d77a403dd018454cd568457269ab675a6d89e0a3cd27091b7` |
 
-## 2. 图标适配
+## 2. 构建指纹
 
-主图标：**Icon V6**（`source_original` / 256px）
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
+
+## 3. 图标（Icon System 6.0）
 
 - Release：`icon-2026.09.30.clean1`
-- Style：`source_original`
-- Variant key：`source_original:256:png`
-- Object：`v/8f967ccad1b9a8f83cb449a5014e793ea7e751aac7c2a27e557115a1719f1c78.png`
+- 默认：`source_original` @ 256px
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/8f967ccad1b9a8f83cb449a5014e793ea7e751aac7c2a27e557115a1719f1c78.png`
 
-### 8 风格（256）
-
-| 风格 | 256 PNG |
+| 风格 | 256 |
 |---|---|
 | `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/8f967ccad1b9a8f83cb449a5014e793ea7e751aac7c2a27e557115a1719f1c78.png) |
 | `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/c85f9582c5aa97bca933761fa3f8475db4543504a9edc7f973c6c72166d27fbc.png) |
@@ -41,86 +42,27 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/92bbc85cd11ebbeb254ed2f34584d4792152c1801037d1988f8e8916d7c60b9b.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/991436bf0c8be386d5d7d9ea13ec10dae9ad91cddcfef65504a50d72abe2f6c2.png) |
 
-解析契约：Collection `config/icon_v6.yaml` + `config/icon_docs.yaml` → Icon `dist` / `icon-2026.09.30.clean1`。
-
-
-## 3. 服务集与层级
-
-所属服务集：[special](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/services/special/README.md)
-
-当前层级由 `rule/_index.yaml` 的物理路径决定，不根据品牌名称猜测父子关系。
-
 ## 4. 七客户端 Raw
 
-| 客户端 | 文件 | Manifest rule_count | size | SHA-256 | Raw |
-|---|---|---:|---:|---|---|
-| egern | `egern/special/private/private.yaml` | 248 | 5507 | `9de00cf88b9cec540c522cc564396e0a22b7cfe01e9229f3a6bba94ca7827166` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/special/private/private.yaml) |
-| loon | `loon/special/private/private.list` | 248 | 6587 | `85256f8dbfcc205fa09f20d9a50173bf9732ac06abf5cbc082d071eb6ea59e8d` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/special/private/private.list) |
-| mihomo | `mihomo/special/private/private.yaml` | 248 | 7588 | `8cfc1ca7076d5ded05f9fe3b73af4c8b293ebadf832df4dec795b41bab302579` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/special/private/private.yaml) |
-| quantumultx | `quantumultx/special/private/private.list` | 248 | 8081 | `c224232966df9a2ff2745d62f5666f9867056e2053738b30604c21fd83360e0d` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/special/private/private.list) |
-| shadowrocket | `shadowrocket/special/private/private.list` | 248 | 6587 | `85256f8dbfcc205fa09f20d9a50173bf9732ac06abf5cbc082d071eb6ea59e8d` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/special/private/private.list) |
-| singbox | `singbox/special/private/private.json` | 0 | 6851 | `2092c55dc4fa5a5222c0e519347cd36b30e9e1a3d9c21aac27dd54cc040d2ebf` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/special/private/private.json) |
-| surge | `surge/special/private/private.list` | 248 | 6587 | `85256f8dbfcc205fa09f20d9a50173bf9732ac06abf5cbc082d071eb6ea59e8d` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/special/private/private.list) |
-
-### 4.1 Raw 地址直接复制
-
-- **egern**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/special/private/private.yaml`
-- **loon**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/special/private/private.list`
-- **mihomo**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/special/private/private.yaml`
-- **quantumultx**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/special/private/private.list`
-- **shadowrocket**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/special/private/private.list`
-- **singbox**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/special/private/private.json`
-- **surge**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/special/private/private.list`
-
-## 5. 使用方法
-
-选择客户端 → 复制对应 Raw → 加入远程 Rule Set / Rule Provider / rule-set → 绑定自己的 DIRECT / PROXY / REJECT 等策略。
-
-不要跨客户端复用其他目录的 YAML、JSON、LIST；`rule/` 不是客户端运行时输入。
-
-### 5.1 Mihomo 结构示例
-
-```yaml
-rule-providers:
-  private:
-    type: http
-    behavior: classical
-    format: yaml
-    url: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/special/private/private.yaml"
-    path: ./ruleset/private.yaml
-    interval: 86400
-
-rules:
-  - RULE-SET,private,PROXY
-```
-
-## 6. 服务集与独立子服务
-
-**服务集：** 适合较宽覆盖面。
-
-**独立服务 / 子服务：** 适合精确分流；直接使用该服务自己的 Raw，不要从聚合规则手工拆分。
-
-**父子规则同时加载：** 实际优先级由客户端规则顺序决定。
-
-## 7. 更新、统计与完整性
-
-| 检查项 | 权威来源 |
+| 客户端 | Raw URL |
 |---|---|
-| 语义规则数量 / Service SHA-256 | `rule/_index.yaml` |
-| 客户端文件 / rule_count / size / SHA-256 | `generated/manifest.json` |
-| 当前 Icon 主层 | Icon V6 `icon-2026.09.30.clean1` |
-| Icon Release | `icon-2026.09.30.clean1` |
+| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/special/private/private.yaml` |
+| loon | _not in manifest_ |
+| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/special/private/private.yaml` |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
 
-统计口径：`rule_count` 是 Manifest 对客户端文件记录的字段，不同客户端可能有不同口径；服务本身的主要规则数量以 `rule/_index.yaml` 语义 `rule_count` 为准。
+## 5. Source
 
-当前 Collection Date：`2026-09-24`；Release Generated At：`2026-09-24T04:39:15.367236+00:00`。
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 8. 相关入口
+## 6. 使用注意
 
-- [服务总目录](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.md)
-- [Icon System 6.0](https://github.com/cn-wanmei/Popular-Rules-Icon)
-- [Icon variant policy](https://github.com/cn-wanmei/Popular-Rules-Icon/blob/main/config/variant-policy.yaml)
-- [完整规则使用说明](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/RULE_USAGE_GUIDE.md)
-- [规则索引](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/rule/_index.yaml)
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
 
-[回到顶部](#top)
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->

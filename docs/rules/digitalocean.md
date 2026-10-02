@@ -1,64 +1,68 @@
-# DigitalOcean
+<!-- DOC_LAYER_GENERATED_START -->
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3a922701b95283e73e0de594e39d6cb2a37b4d42cba51ff9419c09a8a542272e.png" alt="digitalocean icon" width="72" height="72">
 
-> 用于匹配 **DigitalOcean** 相关域名/IP 的分流规则（来自上游标准化合并）。
+# DigitalOcean — 分流规则说明
 
-| 项目 | 内容 |
-|------|------|
-| Rule ID | `digitalocean` |
-| Primary Ecosystem | **Developer** (`developer`) |
-| Service Type | service |
-| Tags | developer |
-| 类型 | domain |
-| Domains | 6 |
-| CIDR | 0 |
-| 最后更新 | 2026-09-01 |
-| Sources | blackmatrix7 / v2fly |
-| Confidence | HIGH |
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
 
-## 用途
+## 1. 服务基本信息
 
-用于匹配 **DigitalOcean** 相关域名/IP 的分流规则（来自上游标准化合并）。
+| 项目 | 当前值 |
+|---|---|
+| Service ID | `digitalocean` |
+| 类型 | service |
+| Provider | `digitalocean` |
+| 规则浏览路径 | `rule/digitalocean/digitalocean/digitalocean.yaml` |
+| 规则数量 | **6** |
+| SHA-256 | `c90a3ffb39f2acbbe9dbdedece4ce83158a91a42bde35aa82532fe8a17b363d2` |
 
-支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+## 2. 构建指纹
 
-## 一键订阅
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
 
-| 客户端 | 路径 | 链接 |
-|--------|------|------|
-| Mihomo | `generated/mihomo/digitalocean.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/digitalocean.yaml) |
-| sing-box | `generated/sing-box/digitalocean.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/digitalocean.json) |
-| Surge | `generated/surge/digitalocean.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/digitalocean.list) |
-| Shadowrocket | `generated/shadowrocket/digitalocean.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/digitalocean.list) |
-| Quantumult X | `generated/quantumult-x/digitalocean.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/digitalocean.list) |
-| Egern | `generated/egern/digitalocean.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/digitalocean.yaml) |
-| Loon | `generated/loon/digitalocean.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/digitalocean.list) |
+## 3. 图标（Icon System 6.0）
 
-## CDN 镜像（Mihomo）
+- Release：`icon-2026.09.30.clean1`
+- 默认：`source_original` @ 256px
+- Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3a922701b95283e73e0de594e39d6cb2a37b4d42cba51ff9419c09a8a542272e.png`
 
-| 镜像 | 链接 |
-|------|------|
-| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/digitalocean.yaml |
-| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/digitalocean.yaml |
-| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/digitalocean.yaml |
-| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/digitalocean.yaml |
+| 风格 | 256 |
+|---|---|
+| `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3a922701b95283e73e0de594e39d6cb2a37b4d42cba51ff9419c09a8a542272e.png) |
+| `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/f3c52df0f04216a90837f72fd4a4236e64472057161a751cdd087feb14d6f567.png) |
+| `duotone_line` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/453582a32eeac453ad3cf63115a384bedf1054d20c465785540027fe02df986e.png) |
+| `soft_3d` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/7851e49bb7f7f6c4cb35360425bbeb7f2727ddd2be1366403f29d2accf647e96.png) |
+| `glassmorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/0ae702ddede859ca7dd406e92ec459240b7807cbbf3f344ad9e1e8d60739e4dc.png) |
+| `neo_skeuomorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/87bf633d52616d2bd2a6723b3762fd5b5cf41a8e4f8bfc4ee672cd66c99c738c.png) |
+| `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/8b90a33363607b5258c7d2430895e0b9a6f8f81f9b1adb54303685f27206c104.png) |
+| `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/16e21a210f9690297b21b970ce5ab3bbf98488bfcfc396b7e8acb132fa845cff.png) |
 
-## 官方网站
+## 4. 七客户端 Raw
 
-_未在 config/official_sites.yaml 配置_
+| 客户端 | Raw URL |
+|---|---|
+| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/digitalocean/digitalocean/digitalocean.yaml` |
+| loon | _not in manifest_ |
+| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/digitalocean/digitalocean/digitalocean.yaml` |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
 
-## 规则来源（Provenance）
+## 5. Source
 
-- `blackmatrix7`
-- `v2fly`
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
+## 6. 使用注意
 
-## 数据位置
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
 
-- Schema: `database/services/digitalocean.yaml`
-- Domains: `database/domains/digitalocean.txt`
-- IPs: `database/ips/digitalocean.txt`（若有）
-- Product page: `rule/Developer/…`（见 generate_rule_pages）
-
----
-_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->

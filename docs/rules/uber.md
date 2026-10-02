@@ -1,40 +1,68 @@
-# Uber
+<!-- DOC_LAYER_GENERATED_START -->
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/6e15d94f4addba4d3746bc5ec176159a579da053f701ff5f81eb69138023f3d2.png" alt="uber icon" width="72" height="72">
 
-> Current V3 service documentation. Subscription paths are derived from `generated/manifest.json`.
+# Uber — 分流规则说明
 
-| 项目 | 内容 |
-|------|------|
-| Rule ID | `uber` |
-| Primary Ecosystem | `uber` |
-| Service Type | service |
-| Parent Aggregate | — |
-| Release Date | 2026-09-22 |
-| Dedicated client outputs | 7 / 7 |
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
 
-## 当前生产订阅路径
+## 1. 服务基本信息
 
-| 客户端 | 路径 | Raw |
-|--------|------|-----|
-| egern | `egern/uber/uber/rules.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/egern/uber/uber/rules.yaml) |
-| loon | `loon/uber/uber/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/loon/uber/uber/rules.list) |
-| mihomo | `mihomo/uber/uber/rules.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/mihomo/uber/uber/rules.yaml) |
-| quantumultx | `quantumultx/uber/uber/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/quantumultx/uber/uber/rules.list) |
-| shadowrocket | `shadowrocket/uber/uber/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/shadowrocket/uber/uber/rules.list) |
-| singbox | `singbox/uber/uber/rules.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/singbox/uber/uber/rules.json) |
-| surge | `surge/uber/uber/rules.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/surge/uber/uber/rules.list) |
+| 项目 | 当前值 |
+|---|---|
+| Service ID | `uber` |
+| 类型 | service |
+| Provider | `uber` |
+| 规则浏览路径 | `rule/uber/uber/uber.yaml` |
+| 规则数量 | **3** |
+| SHA-256 | `e64736809587aab9351553c3b2bfd82d3bd457861b882a091703b623d96bbec6` |
 
-## 当前真源边界
+## 2. 构建指纹
 
-- V3 Canonical：`data/runs/<run-id>/canonical/`
-- Semantic IR：`data/runs/<run-id>/ir/`
-- 最终发行：`generated/`
-- `rule/`：V1 历史浏览/迁移树
-- `rules/`：V3 目录契约
-- `database/services/`：Legacy evidence，不是 V3 Runtime 真源
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
 
-## 目录契约
+## 3. 图标（Icon System 6.0）
 
-当前客户端目录只能使用 `mihomo`、`singbox`、`surge`、`shadowrocket`、`quantumultx`、`egern`、`loon`。历史 `sing-box` / `quantumult-x` 名称不属于当前目录契约。
+- Release：`icon-2026.09.30.clean1`
+- 默认：`source_original` @ 256px
+- Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/6e15d94f4addba4d3746bc5ec176159a579da053f701ff5f81eb69138023f3d2.png`
 
----
-_页面日期来源：2026-09-22。生产路径来源：generated/manifest.json。_
+| 风格 | 256 |
+|---|---|
+| `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/6e15d94f4addba4d3746bc5ec176159a579da053f701ff5f81eb69138023f3d2.png) |
+| `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/40f5d3392e9e62035f3a6b1e1cc23ba810894a42181dcfcf7f9c58ec664e3ef8.png) |
+| `duotone_line` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/5edcf495600b8f833066442e662c22ca5266b04b2bbb153f6f24f24cc14f30ad.png) |
+| `soft_3d` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/be3291d2a0366d2d63f8c3d5f861cb19f774752aed1631860df794c60b461871.png) |
+| `glassmorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/f79c6b29d9a48a1ba14657724cd28aecd2895c28fbfe3f3c826de57e9feaeb18.png) |
+| `neo_skeuomorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/f7de6b528fb33ed3a99c4637f05144a865e194db4eb215887786717d4da3e302.png) |
+| `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/91ca92791ce4758d07eca263dfa5444d46f5934358980b0d166e327a377149cf.png) |
+| `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/638b63540d08d5452a301fe2f490168d366b86ab21fac20ea020daf6aaeefccf.png) |
+
+## 4. 七客户端 Raw
+
+| 客户端 | Raw URL |
+|---|---|
+| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/uber/uber/uber.yaml` |
+| loon | _not in manifest_ |
+| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/uber/uber/uber.yaml` |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
+
+## 5. Source
+
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
+
+## 6. 使用注意
+
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
+
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->

@@ -1,44 +1,68 @@
-# PayPal
+<!-- DOC_LAYER_GENERATED_START -->
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/7f4c21522abab79942fc65a641c14ed910123c80d0cf01aada9920666a2aa4ad.png" alt="paypal icon" width="72" height="72">
 
-> Current V3 service documentation. 本页记录当前 Service SSOT 身份，不等同于 Production 发布资格。
+# PayPal — 分流规则说明
 
-| 项目 | 内容 |
-|------|------|
-| Rule ID | `paypal` |
-| Primary Ecosystem | `paypal` |
-| Service Type | aggregate |
-| Parent Aggregate | — |
-| Dedicated client outputs | 7 / 7 |
-| Current State | candidate / review-required |
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
 
-## 当前生产订阅路径
+## 1. 服务基本信息
 
-- `egern/paypal/paypal/paypal.yaml`
-- `loon/paypal/paypal/paypal.list`
-- `mihomo/paypal/paypal/paypal.yaml`
-- `quantumultx/paypal/paypal/paypal.list`
-- `shadowrocket/paypal/paypal/paypal.list`
-- `singbox/paypal/paypal/paypal.json`
-- `surge/paypal/paypal/paypal.list`
+| 项目 | 当前值 |
+|---|---|
+| Service ID | `paypal` |
+| 类型 | service |
+| Provider | `paypal` |
+| 规则浏览路径 | `rule/paypal/paypal/paypal.yaml` |
+| 规则数量 | **247** |
+| SHA-256 | `67d0e9eef9a935c9cac37cb7a8d11cc5f7c9120a3806e3554d26b84f82386b6f` |
 
-## 当前真源边界
+## 2. 构建指纹
 
-- V3 Canonical：`data/runs/<run-id>/canonical/`
-- Semantic IR：`data/runs/<run-id>/ir/`
-- 最终发行：`generated/`
-- `rule/`：V1 历史浏览/迁移树
-- `rules/`：V3 目录契约
-- Legacy evidence：`database/services/`，不是 V3 Runtime 真源
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
 
-## Service Completion 状态
+## 3. 图标（Icon System 6.0）
 
-- Source 证据：按当前 Source evidence gate 验证
-- Source immutable release：PENDING
-- Collection exact binding：PENDING
-- Semantic / overlap audit：PENDING
-- Seven-client：当前 manifest 已有产物
-- Golden：PENDING
-- Canary：PENDING
-- Production：PENDING
+- Release：`icon-2026.09.30.clean1`
+- 默认：`source_original` @ 256px
+- Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/7f4c21522abab79942fc65a641c14ed910123c80d0cf01aada9920666a2aa4ad.png`
 
-> Candidate / Source release 不等于 Production；生产资格必须由 immutable provenance 与现有硬门决定。
+| 风格 | 256 |
+|---|---|
+| `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/7f4c21522abab79942fc65a641c14ed910123c80d0cf01aada9920666a2aa4ad.png) |
+| `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/09362ee5a19222064997adfa3179458f2290bf857e2e5f7dcdc66dc518be25e1.png) |
+| `duotone_line` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/123133cae6373feeee47c95f754788f87b73cf8271dd57600d19e2cbfaeb6a10.png) |
+| `soft_3d` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/07eddc847ea54068630ac1aac173961170124baab23c591ee3c76cd085e225b2.png) |
+| `glassmorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/ae32f11032169b8db25c7902085c6eb0ceb809ce0154e97a47399b13c42e05ac.png) |
+| `neo_skeuomorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/f92dc04da2223bf755272533e7f26b26a4542735fe5bbcb71d69257e6db82106.png) |
+| `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3cf999605fab3746b37bb25440f5eb087621e8c7fd5a61ae695564fefef207fd.png) |
+| `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/80449c3fc52e4aa9d8102fa092cc0a0b5c8b31f8b10fa642a44074edae1dbf73.png) |
+
+## 4. 七客户端 Raw
+
+| 客户端 | Raw URL |
+|---|---|
+| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/paypal/paypal/paypal.yaml` |
+| loon | _not in manifest_ |
+| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/paypal/paypal/paypal.yaml` |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
+
+## 5. Source
+
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
+
+## 6. 使用注意
+
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
+
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->

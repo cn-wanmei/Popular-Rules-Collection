@@ -1,63 +1,68 @@
-# Pinduoduo
+<!-- DOC_LAYER_GENERATED_START -->
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/a4dedeb65d9a39d745af8ef84f2d26339fe852c8390199f72fbda21ebe335049.png" alt="pinduoduo icon" width="72" height="72">
 
-> 用于匹配 **Pinduoduo** 相关域名/IP 的分流规则（来自上游标准化合并）。
+# Pinduoduo — 分流规则说明
 
-| 项目 | 内容 |
-|------|------|
-| Rule ID | `pinduoduo` |
-| Primary Ecosystem | **China** (`china`) |
-| Service Type | service |
-| Tags | china |
-| 类型 | domain |
-| Domains | 3 |
-| CIDR | 0 |
-| 最后更新 | 2026-09-01 |
-| Sources | blackmatrix7 |
-| Confidence | HIGH |
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
 
-## 用途
+## 1. 服务基本信息
 
-用于匹配 **Pinduoduo** 相关域名/IP 的分流规则（来自上游标准化合并）。
+| 项目 | 当前值 |
+|---|---|
+| Service ID | `pinduoduo` |
+| 类型 | service |
+| Provider | `pinduoduo` |
+| 规则浏览路径 | `rule/pinduoduo/pinduoduo/pinduoduo.yaml` |
+| 规则数量 | **3** |
+| SHA-256 | `53a70cbd7820fa6ee9fa6477b955e867dfc8cacad49fe3a368a02f78c1a3323c` |
 
-支持：Mihomo · sing-box · Surge · Shadowrocket · Quantumult X · Egern · Loon
+## 2. 构建指纹
 
-## 一键订阅
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
 
-| 客户端 | 路径 | 链接 |
-|--------|------|------|
-| Mihomo | `generated/mihomo/pinduoduo.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/pinduoduo.yaml) |
-| sing-box | `generated/sing-box/pinduoduo.json` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/sing-box/pinduoduo.json) |
-| Surge | `generated/surge/pinduoduo.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/pinduoduo.list) |
-| Shadowrocket | `generated/shadowrocket/pinduoduo.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/pinduoduo.list) |
-| Quantumult X | `generated/quantumult-x/pinduoduo.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumult-x/pinduoduo.list) |
-| Egern | `generated/egern/pinduoduo.yaml` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/pinduoduo.yaml) |
-| Loon | `generated/loon/pinduoduo.list` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/pinduoduo.list) |
+## 3. 图标（Icon System 6.0）
 
-## CDN 镜像（Mihomo）
+- Release：`icon-2026.09.30.clean1`
+- 默认：`source_original` @ 256px
+- Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/a4dedeb65d9a39d745af8ef84f2d26339fe852c8390199f72fbda21ebe335049.png`
 
-| 镜像 | 链接 |
-|------|------|
-| GitHub Raw | https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/pinduoduo.yaml |
-| jsDelivr | https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/pinduoduo.yaml |
-| Fastly | https://fastly.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Collection@main/generated/mihomo/pinduoduo.yaml |
-| Cloudflare 加速 | https://ghproxy.net/https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/pinduoduo.yaml |
+| 风格 | 256 |
+|---|---|
+| `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/a4dedeb65d9a39d745af8ef84f2d26339fe852c8390199f72fbda21ebe335049.png) |
+| `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/fe80b9c6876495792158f72df2de6a748ac44a4345420e1bbc075f1e28ee25a0.png) |
+| `duotone_line` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3af12feb0f415065aacb23ea12d27b48d33e43ee96b5678f3cc8510a4f6c4466.png) |
+| `soft_3d` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/d5928cdab09570ae2a8592b371a492a5ea46b878742c70e363c907f5025d22d8.png) |
+| `glassmorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/c1a62f955c62e20d5ca3e095b8c8c6f075863b36604c0326189d158dd133e2bb.png) |
+| `neo_skeuomorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/c0a3abdb8fe0374e23f6b7d4ab9aaf8a83b1311ed6fff8befe3843f9187ddb71.png) |
+| `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/cf3a77ef5b52e7be7f1821a3ddcae4984ed95cd7bc2ac15308b09e85762676c6.png) |
+| `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/e177459595f84bea8e2984003c018b1a1f94beaed6834b6e41cbc0e07921f204.png) |
 
-## 官方网站
+## 4. 七客户端 Raw
 
-_未在 config/official_sites.yaml 配置_
+| 客户端 | Raw URL |
+|---|---|
+| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/pinduoduo/pinduoduo/pinduoduo.yaml` |
+| loon | _not in manifest_ |
+| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/pinduoduo/pinduoduo/pinduoduo.yaml` |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
 
-## 规则来源（Provenance）
+## 5. Source
 
-- `blackmatrix7`
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-由 Popular-Rules-Collection 自动采集、标准化、去重并构建。**请勿把本页当作域名清单。**
+## 6. 使用注意
 
-## 数据位置
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
 
-- Schema: `database/services/pinduoduo.yaml`
-- Domains: `database/domains/pinduoduo.txt`
-- IPs: `database/ips/pinduoduo.txt`（若有）
-- Product page: `rule/China/…`（见 generate_rule_pages）
-
----
-_由 `scripts/generate_docs.py` 自动生成，勿长期手工维护。_
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->

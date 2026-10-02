@@ -64,3 +64,7 @@
 ## 10. Icon V4 覆盖口径
 
 当前 Rule Index 262 条记录全部拥有 V4 图标解析结果：85 条精确复用、49 条安全继承、128 条九风格 semantic fallback。fallback 只用于视觉覆盖，不代表官方品牌 Logo。
+
+## Documentation Layer
+
+每服务说明（含七客户端 Raw 与 Icon V6）见 [SERVICE_CATALOG.generated.md](SERVICE_CATALOG.generated.md) 与 `docs/services/` / `docs/rules/`。机器段由 `scripts/generate_rule_docs.py` 生成，请勿手改数字与 Raw。

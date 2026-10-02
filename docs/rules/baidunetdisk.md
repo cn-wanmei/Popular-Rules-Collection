@@ -1,32 +1,68 @@
-# Baidu Netdisk
+<!-- DOC_LAYER_GENERATED_START -->
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/4d3472753d1df948fff0521164552c25362907f91a6a7afad623fb6c91edc004.png" alt="baidunetdisk icon" width="72" height="72">
 
-> Current V3 service documentation. Subscription paths are derived from `generated/manifest.json`.
+# Baidu Netdisk — 分流规则说明
 
-| 项目 | 内容 |
-|------|------|
-| Rule ID | `baidunetdisk` |
-| Primary Ecosystem | `baidu` |
-| Service Type | service |
-| Parent Aggregate | `baidu` |
-| Release Date | 2026-09-22 |
-| Dedicated client outputs | 0 / 7 |
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
 
-## 当前生产订阅路径
+## 1. 服务基本信息
 
-当前 Release Candidate 未物化该服务独立客户端产物；不得根据历史页面或旧目录猜测订阅地址。
+| 项目 | 当前值 |
+|---|---|
+| Service ID | `baidunetdisk` |
+| 类型 | service |
+| Provider | `baidu` |
+| 规则浏览路径 | `rule/baidu/baidunetdisk/baidunetdisk.yaml` |
+| 规则数量 | **2** |
+| SHA-256 | `00a5138dd545a5369259dbcadb08d0256933f9246d5d479b230d0d950faada9c` |
 
-## 当前真源边界
+## 2. 构建指纹
 
-- V3 Canonical：`data/runs/<run-id>/canonical/`
-- Semantic IR：`data/runs/<run-id>/ir/`
-- 最终发行：`generated/`
-- `rule/`：V1 历史浏览/迁移树
-- `rules/`：V3 目录契约
-- `database/services/`：Legacy evidence，不是 V3 Runtime 真源
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
 
-## 目录契约
+## 3. 图标（Icon System 6.0）
 
-当前客户端目录只能使用 `mihomo`、`singbox`、`surge`、`shadowrocket`、`quantumultx`、`egern`、`loon`。历史 `sing-box` / `quantumult-x` 名称不属于当前目录契约。
+- Release：`icon-2026.09.30.clean1`
+- 默认：`source_original` @ 256px
+- Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/4d3472753d1df948fff0521164552c25362907f91a6a7afad623fb6c91edc004.png`
 
----
-_页面日期来源：2026-09-22。生产路径来源：generated/manifest.json。_
+| 风格 | 256 |
+|---|---|
+| `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/4d3472753d1df948fff0521164552c25362907f91a6a7afad623fb6c91edc004.png) |
+| `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/5650fd400355793bcff59e3e5861d340adb5a0afeef50ddbdc21712794f51694.png) |
+| `duotone_line` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/a0eb4a7ffc1a28b64865c8bff50187a4cb60b3d2829e91d1b3b77fdde10a56c8.png) |
+| `soft_3d` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/9274c1fa3107df5221ba681b397e8ec555f591dfa29002b9defc205515a38f19.png) |
+| `glassmorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/ef6635dd9f7cc931ba91f5c49d1d60d1c41af3beada4337feb5ff6c222b6039a.png) |
+| `neo_skeuomorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/1277e74dfc2d12d062d056a3e358fc3df1bcdca94b62a7527532d95783830aa2.png) |
+| `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/feeb350f7f492529f75a3e6e4d20032e1708b7eb458a412c0a91b5c53a2e5b10.png) |
+| `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/ef6d2f5421f354aaecd333919da33277a3190a0fd26687232ebede2919a91365.png) |
+
+## 4. 七客户端 Raw
+
+| 客户端 | Raw URL |
+|---|---|
+| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/baidu/baidunetdisk/baidunetdisk.yaml` |
+| loon | _not in manifest_ |
+| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/baidu/baidunetdisk/baidunetdisk.yaml` |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
+
+## 5. Source
+
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
+
+## 6. 使用注意
+
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
+
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->

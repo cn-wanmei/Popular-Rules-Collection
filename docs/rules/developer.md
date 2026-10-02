@@ -1,32 +1,53 @@
-# Developer
+<!-- DOC_LAYER_GENERATED_START -->
+# Developer Ecosystem — 分流规则说明
 
-> Current V3 service documentation. Subscription paths are derived from `generated/manifest.json`.
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
 
-| 项目 | 内容 |
-|------|------|
-| Rule ID | `developer` |
-| Primary Ecosystem | `developer` |
-| Service Type | aggregate |
-| Parent Aggregate | — |
-| Release Date | 2026-09-22 |
-| Dedicated client outputs | 0 / 7 |
+## 1. 服务基本信息
 
-## 当前生产订阅路径
+| 项目 | 当前值 |
+|---|---|
+| Service ID | `developer` |
+| 类型 | category |
+| Provider | `` |
+| 规则浏览路径 | `rule/category/developer/developer.yaml` |
+| 规则数量 | **285** |
+| SHA-256 | `b501b9ccfb5b475782571a0e50408ecbdd69e8cc7ec557d0953b7af399cbfd3e` |
 
-当前 Release Candidate 未物化该服务独立客户端产物；不得根据历史页面或旧目录猜测订阅地址。
+## 2. 构建指纹
 
-## 当前真源边界
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
 
-- V3 Canonical：`data/runs/<run-id>/canonical/`
-- Semantic IR：`data/runs/<run-id>/ir/`
-- 最终发行：`generated/`
-- `rule/`：V1 历史浏览/迁移树
-- `rules/`：V3 目录契约
-- `database/services/`：Legacy evidence，不是 V3 Runtime 真源
+## 3. 图标（Icon System 6.0）
 
-## 目录契约
+- Icon：unavailable for this service_id in production manifest
 
-当前客户端目录只能使用 `mihomo`、`singbox`、`surge`、`shadowrocket`、`quantumultx`、`egern`、`loon`。历史 `sing-box` / `quantumult-x` 名称不属于当前目录契约。
+## 4. 七客户端 Raw
 
----
-_页面日期来源：2026-09-22。生产路径来源：generated/manifest.json。_
+| 客户端 | Raw URL |
+|---|---|
+| egern | _not in manifest_ |
+| loon | _not in manifest_ |
+| mihomo | _not in manifest_ |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
+
+## 5. Source
+
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
+
+## 6. 使用注意
+
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
+
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->

@@ -1,7 +1,10 @@
+<!-- DOC_LAYER_GENERATED_START -->
 <img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/220490fe647829b187cf6ccc6532039087da3c0994bf9d6e8bdca8e9fddedfff.png" alt="nintendo icon" width="72" height="72">
+
 # Nintendo — 分流规则说明
 
-> 当前服务页由 Rule Index、Generated Manifest 与 **Icon System 6.0** 共同驱动。默认展示风格 `source_original` @ 256px（release `icon-2026.09.30.clean1`）。
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
 
 ## 1. 服务基本信息
 
@@ -9,28 +12,26 @@
 |---|---|
 | Service ID | `nintendo` |
 | 类型 | service |
-| Provider / 服务集 | `nintendo` |
-| 规则浏览路径 | `nintendo/nintendo/nintendo.yaml` |
-| 语义规则数量 | **126** |
-| 语义 SHA-256 | `63fd5c8c6ed3b2cd952dfd49d2d000ab7f17eaf64378e3f3598113a059791a53` |
-| Collection Date | `2026-09-24` |
-| Generated At | `2026-09-24T04:39:15.367236+00:00` |
-| Run ID | `20260924T043120249584Z-run` |
-| Semantic IR Digest | `f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7` |
+| Provider | `nintendo` |
+| 规则浏览路径 | `rule/nintendo/nintendo/nintendo.yaml` |
+| 规则数量 | **127** |
+| SHA-256 | `f71f476aa4bce1134d11719e74a9abe50c32648d822f91a3b394b2b4dd9150ba` |
 
-## 2. 图标适配
+## 2. 构建指纹
 
-主图标：**Icon V6**（`source_original` / 256px）
+| 项目 | 当前值 |
+|---|---|
+| Run ID | `20261002T014107215128Z-run` |
+| IR digest | `18000d4560eb6fe4768f5b449c2cf4d73cf2251628aff6f7ff34c9cc26540d6d` |
+| IR schema | `semantic_ir_v2` |
+
+## 3. 图标（Icon System 6.0）
 
 - Release：`icon-2026.09.30.clean1`
-- Style：`source_original`
-- Variant key：`source_original:256:png`
-- Object：`v/220490fe647829b187cf6ccc6532039087da3c0994bf9d6e8bdca8e9fddedfff.png`
+- 默认：`source_original` @ 256px
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/220490fe647829b187cf6ccc6532039087da3c0994bf9d6e8bdca8e9fddedfff.png`
 
-### 8 风格（256）
-
-| 风格 | 256 PNG |
+| 风格 | 256 |
 |---|---|
 | `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/220490fe647829b187cf6ccc6532039087da3c0994bf9d6e8bdca8e9fddedfff.png) |
 | `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3d49334fd8990354d637520b2e7ea45d290423716e2bdc8ec8aca56df2729ae1.png) |
@@ -41,86 +42,27 @@
 | `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/1a5b72bfc7f6d77fb69830f1c7272d6d21b1f5f6b1322f578dcac09ceabd2070.png) |
 | `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/5df96a6ed94a3fcbadf19ade8c2639a60d204907a3cd55259652d323f414c3a8.png) |
 
-解析契约：Collection `config/icon_v6.yaml` + `config/icon_docs.yaml` → Icon `dist` / `icon-2026.09.30.clean1`。
-
-
-## 3. 服务集与层级
-
-所属服务集：[nintendo](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/services/nintendo/README.md)
-
-当前层级由 `rule/_index.yaml` 的物理路径决定，不根据品牌名称猜测父子关系。
-
 ## 4. 七客户端 Raw
 
-| 客户端 | 文件 | Manifest rule_count | size | SHA-256 | Raw |
-|---|---|---:|---:|---|---|
-| egern | `egern/nintendo/nintendo/nintendo.yaml` | 126 | 2965 | `2e25d3b26324192dd3a276252c94a60251d2ed821aada354d69277320ceb183e` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/nintendo/nintendo/nintendo.yaml) |
-| loon | `loon/nintendo/nintendo/nintendo.list` | 126 | 3935 | `f41d787fbe38411ac1cf54890c08073ad860c285135a2a829960375e1a835351` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/nintendo/nintendo/nintendo.list) |
-| mihomo | `mihomo/nintendo/nintendo/nintendo.yaml` | 126 | 4448 | `92f54ca2cb43a710158b3c83b8739c878373e9c49767b21dc4efd17b9640522d` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/nintendo/nintendo/nintendo.yaml) |
-| quantumultx | `quantumultx/nintendo/nintendo/nintendo.list` | 126 | 4693 | `dc09ce45326a77283681d429ca21928cdc3d883ed01d456c14cd220bea1c7c6f` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/nintendo/nintendo/nintendo.list) |
-| shadowrocket | `shadowrocket/nintendo/nintendo/nintendo.list` | 126 | 3935 | `f41d787fbe38411ac1cf54890c08073ad860c285135a2a829960375e1a835351` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/nintendo/nintendo/nintendo.list) |
-| singbox | `singbox/nintendo/nintendo/nintendo.json` | 0 | 3671 | `111df9b72395ff8d2b412e63dab8e2acefe91caf8c6a02141cc99134c414f39c` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/nintendo/nintendo/nintendo.json) |
-| surge | `surge/nintendo/nintendo/nintendo.list` | 126 | 3935 | `f41d787fbe38411ac1cf54890c08073ad860c285135a2a829960375e1a835351` | [Raw](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/nintendo/nintendo/nintendo.list) |
-
-### 4.1 Raw 地址直接复制
-
-- **egern**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/nintendo/nintendo/nintendo.yaml`
-- **loon**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/nintendo/nintendo/nintendo.list`
-- **mihomo**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/nintendo/nintendo/nintendo.yaml`
-- **quantumultx**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/nintendo/nintendo/nintendo.list`
-- **shadowrocket**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/nintendo/nintendo/nintendo.list`
-- **singbox**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/nintendo/nintendo/nintendo.json`
-- **surge**：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/nintendo/nintendo/nintendo.list`
-
-## 5. 使用方法
-
-选择客户端 → 复制对应 Raw → 加入远程 Rule Set / Rule Provider / rule-set → 绑定自己的 DIRECT / PROXY / REJECT 等策略。
-
-不要跨客户端复用其他目录的 YAML、JSON、LIST；`rule/` 不是客户端运行时输入。
-
-### 5.1 Mihomo 结构示例
-
-```yaml
-rule-providers:
-  nintendo:
-    type: http
-    behavior: classical
-    format: yaml
-    url: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/nintendo/nintendo/nintendo.yaml"
-    path: ./ruleset/nintendo.yaml
-    interval: 86400
-
-rules:
-  - RULE-SET,nintendo,PROXY
-```
-
-## 6. 服务集与独立子服务
-
-**服务集：** 适合较宽覆盖面。
-
-**独立服务 / 子服务：** 适合精确分流；直接使用该服务自己的 Raw，不要从聚合规则手工拆分。
-
-**父子规则同时加载：** 实际优先级由客户端规则顺序决定。
-
-## 7. 更新、统计与完整性
-
-| 检查项 | 权威来源 |
+| 客户端 | Raw URL |
 |---|---|
-| 语义规则数量 / Service SHA-256 | `rule/_index.yaml` |
-| 客户端文件 / rule_count / size / SHA-256 | `generated/manifest.json` |
-| 当前 Icon 主层 | Icon V6 `icon-2026.09.30.clean1` |
-| Icon Release | `icon-2026.09.30.clean1` |
+| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/nintendo/nintendo/nintendo.yaml` |
+| loon | _not in manifest_ |
+| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/nintendo/nintendo/nintendo.yaml` |
+| quantumultx | _not in manifest_ |
+| shadowrocket | _not in manifest_ |
+| singbox | _not in manifest_ |
+| surge | _not in manifest_ |
 
-统计口径：`rule_count` 是 Manifest 对客户端文件记录的字段，不同客户端可能有不同口径；服务本身的主要规则数量以 `rule/_index.yaml` 语义 `rule_count` 为准。
+## 5. Source
 
-当前 Collection Date：`2026-09-24`；Release Generated At：`2026-09-24T04:39:15.367236+00:00`。
+证据与 lifecycle 见 [Popular-Rules-Source](https://github.com/cn-wanmei/Popular-Rules-Source)；Collection 不复制 evidence 正文。
 
-## 8. 相关入口
+## 6. 使用注意
 
-- [服务总目录](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.md)
-- [Icon System 6.0](https://github.com/cn-wanmei/Popular-Rules-Icon)
-- [Icon variant policy](https://github.com/cn-wanmei/Popular-Rules-Icon/blob/main/config/variant-policy.yaml)
-- [完整规则使用说明](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/RULE_USAGE_GUIDE.md)
-- [规则索引](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/rule/_index.yaml)
+- 选择客户端后复制对应 Raw，加入 Rule Provider / rule-set，再绑定策略。
+- 不要跨客户端混用格式；不要把 `rule/` 当作运行时输入。
+<!-- DOC_LAYER_GENERATED_END -->
 
-[回到顶部](#top)
+<!-- DOC_LAYER_OVERRIDES_START -->
+<!-- DOC_LAYER_OVERRIDES_END -->
