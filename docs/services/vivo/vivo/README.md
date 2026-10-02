@@ -1,8 +1,7 @@
-<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/vivo.png" alt="vivo 图标" width="72" height="72">
-
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/060d6ce0c6d0de9c048a35a2a52022debe0c0895127b43a20772c0b50cd671b6.png" alt="vivo icon" width="72" height="72">
 # vivo — 分流规则说明
 
-> 当前服务页由 Rule Index、Generated Manifest 与 Icon Library V4 共同驱动。品牌身份优先；无可信品牌身份时使用本地 semantic fallback。
+> 当前服务页由 Rule Index、Generated Manifest 与 **Icon System 6.0** 共同驱动。默认展示风格 `source_original` @ 256px（release `icon-2026.09.30.clean1`）。
 
 ## 1. 服务基本信息
 
@@ -21,16 +20,29 @@
 
 ## 2. 图标适配
 
-主图标：**Official / Brand Native**
+主图标：**Icon V6**（`source_original` / 256px）
 
-- Identity：`brand.vivo`
-- 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/vivo.png`
-- Digest：`f09ccbbc7330d5c8a095503625e7a477049a98f86dfd664346d32b7a78e7f2cc`
+- Release：`icon-2026.09.30.clean1`
+- Style：`source_original`
+- Variant key：`source_original:256:png`
+- Object：`v/060d6ce0c6d0de9c048a35a2a52022debe0c0895127b43a20772c0b50cd671b6.png`
+- Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/060d6ce0c6d0de9c048a35a2a52022debe0c0895127b43a20772c0b50cd671b6.png`
 
-本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。
+### 8 风格（256）
 
-风格层参考：Lucide / Tabler / Phosphor / Material Symbols / Fluent UI / Heroicons / Remix / Bootstrap / Solar。
+| 风格 | 256 PNG |
+|---|---|
+| `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/060d6ce0c6d0de9c048a35a2a52022debe0c0895127b43a20772c0b50cd671b6.png) |
+| `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/c8c0da5e673ef911449a92ad72ddb8abc8c82a1cea5fe6cd9c30c9c0da446f9b.png) |
+| `duotone_line` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/fbbd72f4face291ed57c3d16b9afa1c6d7a1135df245b9463d39abfb038c8b6f.png) |
+| `soft_3d` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/adcd718f632f99a3d9173149552b6da5a0c6ee2fe7c0840ea935dc8d57363cf1.png) |
+| `glassmorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/9157ac126b355ed02825adfbff6c8fd520580ec534e6e0056383f735a2e6d744.png) |
+| `neo_skeuomorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/e232f45b5f3a5c898361adeb54e884e95a6dde0e4ddea830c665d702399c93b8.png) |
+| `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/7281e352adc68ff9f647abdeadc351c96acb9f6f242023de357e3f58771e665a.png) |
+| `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/2e1c94e6796b072dca10648689407a0c7a3a4f32fd79b7a25e39c9498208cbf8.png) |
+
+解析契约：Collection `config/icon_v6.yaml` + `config/icon_docs.yaml` → Icon `dist` / `icon-2026.09.30.clean1`。
+
 
 ## 3. 服务集与层级
 
@@ -96,8 +108,8 @@ rules:
 |---|---|
 | 语义规则数量 / Service SHA-256 | `rule/_index.yaml` |
 | 客户端文件 / rule_count / size / SHA-256 | `generated/manifest.json` |
-| 当前 Icon 主层 / fallback | `assets/icons/v4/service-index.json` |
-| Icon Release | `assets/icons/v4/release-pointer.json` |
+| 当前 Icon 主层 | Icon V6 `icon-2026.09.30.clean1` |
+| Icon Release | `icon-2026.09.30.clean1` |
 
 统计口径：`rule_count` 是 Manifest 对客户端文件记录的字段，不同客户端可能有不同口径；服务本身的主要规则数量以 `rule/_index.yaml` 语义 `rule_count` 为准。
 
@@ -106,8 +118,8 @@ rules:
 ## 8. 相关入口
 
 - [服务总目录](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.md)
-- [V4 图标库](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/assets/icons/v4/README.md)
-- [V4 Style Guide](https://github.com/cn-wanmei/Popular-Rules-Icon)
+- [Icon System 6.0](https://github.com/cn-wanmei/Popular-Rules-Icon)
+- [Icon variant policy](https://github.com/cn-wanmei/Popular-Rules-Icon/blob/main/config/variant-policy.yaml)
 - [完整规则使用说明](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/RULE_USAGE_GUIDE.md)
 - [规则索引](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/rule/_index.yaml)
 

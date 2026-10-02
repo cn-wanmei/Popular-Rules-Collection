@@ -1,8 +1,7 @@
-<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/fluent/service.svg" alt="WeTV 图标" width="72" height="72">
-
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3e9a453c5d653d8dd93f0c0aea3db63e449ace16c877ae42d4a1500603517b8c.png" alt="wetv icon" width="72" height="72">
 # WeTV — 分流规则说明
 
-> 当前服务页由 Rule Index、Generated Manifest 与 Icon Library V4 共同驱动。品牌身份优先；无可信品牌身份时使用本地 semantic fallback。
+> 当前服务页由 Rule Index、Generated Manifest 与 **Icon System 6.0** 共同驱动。默认展示风格 `source_original` @ 256px（release `icon-2026.09.30.clean1`）。
 
 ## 1. 服务基本信息
 
@@ -21,14 +20,29 @@
 
 ## 2. 图标适配
 
-主图标：**fluent semantic fallback**
+主图标：**Icon V6**（`source_original` / 256px）
 
-- Style：`fluent`
-- Identity：`semantic.fallback.fluent`
-- 本地 V4 Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/fluent/service.svg`
-- 语义：仅用于完整覆盖规则服务，不代表官方品牌 Logo。
+- Release：`icon-2026.09.30.clean1`
+- Style：`source_original`
+- Variant key：`source_original:256:png`
+- Object：`v/3e9a453c5d653d8dd93f0c0aea3db63e449ace16c877ae42d4a1500603517b8c.png`
+- Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3e9a453c5d653d8dd93f0c0aea3db63e449ace16c877ae42d4a1500603517b8c.png`
 
-风格层参考：Lucide / Tabler / Phosphor / Material Symbols / Fluent UI / Heroicons / Remix / Bootstrap / Solar。
+### 8 风格（256）
+
+| 风格 | 256 PNG |
+|---|---|
+| `source_original` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3e9a453c5d653d8dd93f0c0aea3db63e449ace16c877ae42d4a1500603517b8c.png) |
+| `minimalist` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/1397f54aa94885538dcc46ede0400826ddd472f9eea0c3d8bf5b0b83069ca333.png) |
+| `duotone_line` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/80813fc72996f42db3da428aed1dc7c6dcd1ae04f6ff809cf63be19a58e5bc28.png) |
+| `soft_3d` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/989fe8af2c84e71fa430791404c8ed5df2e564de60f4895700a029be0d2883fe.png) |
+| `glassmorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/05f0972a7ace979c41cc79aa98618ceaa6334b64f452d8e01e26717f24f94e99.png) |
+| `neo_skeuomorphism` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/73aec8d3ddb934168d83379885791ede82c4d46b642968b7c3b5f2a4f7724644.png) |
+| `mbe` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/b8322ad5b4e2e8f63fb1f3f56fcb5e83613008fb8a6dff028d1f6f8776e66375.png) |
+| `y2k` | [link](https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/06192604ec27c55214f8bb36a8fcffc4f472e51920c23e67e7d5e5d59476fd7f.png) |
+
+解析契约：Collection `config/icon_v6.yaml` + `config/icon_docs.yaml` → Icon `dist` / `icon-2026.09.30.clean1`。
+
 
 ## 3. 服务集与层级
 
@@ -94,8 +108,8 @@ rules:
 |---|---|
 | 语义规则数量 / Service SHA-256 | `rule/_index.yaml` |
 | 客户端文件 / rule_count / size / SHA-256 | `generated/manifest.json` |
-| 当前 Icon 主层 / fallback | `assets/icons/v4/service-index.json` |
-| Icon Release | `assets/icons/v4/release-pointer.json` |
+| 当前 Icon 主层 | Icon V6 `icon-2026.09.30.clean1` |
+| Icon Release | `icon-2026.09.30.clean1` |
 
 统计口径：`rule_count` 是 Manifest 对客户端文件记录的字段，不同客户端可能有不同口径；服务本身的主要规则数量以 `rule/_index.yaml` 语义 `rule_count` 为准。
 
@@ -104,8 +118,8 @@ rules:
 ## 8. 相关入口
 
 - [服务总目录](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.md)
-- [V4 图标库](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/assets/icons/v4/README.md)
-- [V4 Style Guide](https://github.com/cn-wanmei/Popular-Rules-Icon)
+- [Icon System 6.0](https://github.com/cn-wanmei/Popular-Rules-Icon)
+- [Icon variant policy](https://github.com/cn-wanmei/Popular-Rules-Icon/blob/main/config/variant-policy.yaml)
 - [完整规则使用说明](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/RULE_USAGE_GUIDE.md)
 - [规则索引](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/rule/_index.yaml)
 

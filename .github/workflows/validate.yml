@@ -45,6 +45,13 @@ jobs:
         run: python scripts/validate_ip_registry.py
 
 
+
+      - name: Icon docs V6 consumer gate
+        run: |
+          python scripts/validate_icon_docs.py
+          python scripts/check_icon_pointers.py
+          python scripts/validate_icon_docs_sample_urls.py
+
       - name: Dataset quality gate
         run: |
           python scripts/dataset_diff.py

@@ -1,8 +1,8 @@
-<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/solar/service.svg" alt="UnionPay 图标" width="72" height="72">
+<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/8d887873ebb298cb193ea0e00a08868b9adaae49bac6c05017b5489765056e9c.png" alt="service icon" width="72" height="72">
 
 # UnionPay — 分流规则说明
 
-> 当前服务页由 Rule Index、Generated Manifest 与 Icon Library V4 共同驱动。品牌身份优先；无可信品牌身份时使用本地 semantic fallback。
+> 当前服务页由 Rule Index、Generated Manifest 与 Icon System 6.0 共同驱动。品牌身份优先；无可信品牌身份时使用本地 semantic fallback。
 
 ## 1. 服务基本信息
 
@@ -25,10 +25,9 @@
 
 - Style：`solar`
 - Identity：`semantic.fallback.solar`
-- 本地 V4 Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v4/styles/solar/service.svg`
-- 语义：仅用于完整覆盖规则服务，不代表官方品牌 Logo。
+- 本地 V4 Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/8d887873ebb298cb193ea0e00a08868b9adaae49bac6c05017b5489765056e9c.png
 
-风格层参考：Lucide / Tabler / Phosphor / Material Symbols / Fluent UI / Heroicons / Remix / Bootstrap / Solar。
+风格层：Icon V6 production styles（见 `config/variant-policy.yaml` / STYLE_SYSTEM_V1）。
 
 ## 3. 服务集与层级
 
@@ -94,8 +93,8 @@ rules:
 |---|---|
 | 语义规则数量 / Service SHA-256 | `rule/_index.yaml` |
 | 客户端文件 / rule_count / size / SHA-256 | `generated/manifest.json` |
-| 当前 Icon 主层 / fallback | `assets/icons/v4/service-index.json` |
-| Icon Release | `assets/icons/v4/release-pointer.json` |
+| 当前 Icon 主层 | Icon V6 `icon-2026.09.30.clean1` |
+| Icon Release | `icon-2026.09.30.clean1` |
 
 统计口径：`rule_count` 是 Manifest 对客户端文件记录的字段，不同客户端可能有不同口径；服务本身的主要规则数量以 `rule/_index.yaml` 语义 `rule_count` 为准。
 
@@ -104,7 +103,7 @@ rules:
 ## 8. 相关入口
 
 - [服务总目录](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/SERVICE_CATALOG.md)
-- [V4 图标库](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/assets/icons/v4/README.md)
+- [Icon System 6.0](https://github.com/cn-wanmei/Popular-Rules-Icon)
 - [V4 Style Guide](https://github.com/cn-wanmei/Popular-Rules-Icon)
 - [完整规则使用说明](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/RULE_USAGE_GUIDE.md)
 - [规则索引](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/rule/_index.yaml)

@@ -1,0 +1,11 @@
+schema: icon_docs_consumer_v1
+version: 1.0.0
+icon_repo: cn-wanmei/Popular-Rules-Icon
+dist_branch: dist
+default_style: source_original
+default_size: 256
+default_format: png
+url_template: https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/{variant_hash}.png
+jsdelivr_template: https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Icon@dist/v/{variant_hash}.png
+production_release_id: icon-2026.09.30.clean1
+variant_key: source_original:256:png

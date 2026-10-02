@@ -47,7 +47,7 @@
 
 ## 7. 图标
 
-当前 Icon SSOT：`assets/icons/v4/release-pointer.json` → V4 Service Index → Official / 9-style semantic fallback。
+当前 Icon SSOT：`release-pointer.json` → V4 Service Index → Official / 9-style semantic fallback。
 
 ## 8. 常见错误
 

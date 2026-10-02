@@ -1,6 +1,6 @@
 # 文档一致性审计
 
-> 审计基线：2026-09-24 Release；当前规则与发行数据直接读取 `rule/_index.yaml`、`generated/manifest.json` 和 Icon Library V4 当前 Release。
+> 审计基线：2026-09-24 Release；当前规则与发行数据直接读取 `rule/_index.yaml`、`generated/manifest.json` 和 Icon System 6.0 当前 Release。
 
 ## 1. 发行快照
 
@@ -17,7 +17,7 @@
 
 ## 2. 本次重构
 
-已建立 `docs/services/**/README.md` 独立服务文档体系，包含服务集、独立服务、子服务、七客户端 Raw、rule_count、SHA-256、更新时间、Run/IR、Icon Library V4 身份和使用方式。
+已建立 `docs/services/**/README.md` 独立服务文档体系，包含服务集、独立服务、子服务、七客户端 Raw、rule_count、SHA-256、更新时间、Run/IR、Icon System 6.0 身份和使用方式。
 
 已建立 `docs/SERVICE_CATALOG.md`，按顶级服务集组织 262 条规则索引记录。
 
@@ -28,7 +28,7 @@
 - `docs/USAGE.md`：修正七客户端实际目录与使用方式。
 - `docs/architecture.md`：修正 `rule/manifest.json` 漂移，当前索引为 `rule/_index.yaml`。
 - `docs/rule-layout.md`：标记为历史 V1 Reference，避免与当前 V3 混淆。
-- `docs/CLIENT_ICON_PROFILES.md`、`docs/CLIENT_ICON_URLS.md`：切换到 Current Icon Library V4。
+- `docs/CLIENT_ICON_PROFILES.md`、`docs/CLIENT_ICON_URLS.md`：切换到 Current Icon System 6.0。
 - `docs/ICON_LIBRARY.md`、`docs/ICON_ENGINE.md`、`docs/POLICY_ICONS.md`：更新 Current V4 SSOT 边界。
 - `docs/RULE_USAGE_GUIDE.md`：更新为服务目录驱动的当前使用说明。
 
@@ -47,7 +47,7 @@
 - 规则服务语义索引：`rule/_index.yaml`
 - 客户端最终文件清单：`generated/manifest.json`
 - Network Dataset 清单：`generated/network_manifest.json`
-- 当前图标 SSOT：`assets/icons/v4/release-pointer.json`
+- 当前图标 SSOT：`release-pointer.json`
 - 服务说明页：`docs/services/**/README.md`
 - 全量服务目录：`docs/SERVICE_CATALOG.md`
 

@@ -1,6 +1,6 @@
 # 文档与生产 / 规则使用入口
 
-> 当前文档体系以 2026-09-24 Release 为基线；Icon Library V4 在 2026-09-25 进行了独立视觉重构。历史 Phase / V1 / V2 / Freeze 文档仅用于追溯，不覆盖当前 SSOT。
+> 当前文档体系以 2026-09-24 Release 为基线；Icon System 6.0 在 2026-09-25 进行了独立视觉重构。历史 Phase / V1 / V2 / Freeze 文档仅用于追溯，不覆盖当前 SSOT。
 
 ## 当前 SSOT
 
@@ -30,7 +30,7 @@
 └── (Icon 资产与指南见 Popular-Rules-Icon)
 
 图标 SSOT
-└── assets/icons/v4/
+└── 
     ├── release-pointer.json
     ├── manifest.json
     ├── service-index.json
@@ -45,4 +45,4 @@
 
 服务页、服务目录和根 README 的服务快捷目录按当前 Release 数据维护。不要手工改发行数字、Raw URL、SHA-256 或图标路径。
 
-图标必须遵循 `assets/icons/v4/release-pointer.json → manifest.json / service-index.json` 的 SSOT 链路。任何服务的最终图标地址以 `service-index.json` 为准，不根据文件名自行推断。
+图标必须遵循 `release-pointer.json → manifest.json / service-index.json` 的 SSOT 链路。任何服务的最终图标地址以 `service-index.json` 为准，不根据文件名自行推断。
