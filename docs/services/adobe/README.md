@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/adobe.png" alt="Adobe 图标" width="72" height="72">
+<img src="https://github.com/cn-wanmei/Popular-Rules-Icon" alt="Adobe 图标" width="72" height="72">
 
 # Adobe — 分流规则说明
 
@@ -25,7 +25,7 @@
 
 - Identity：`brand.adobe`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/adobe.png`
+- Icon Raw：`https://github.com/cn-wanmei/Popular-Rules-Icon
 - Digest：`ef06076095076ecaf5e3f9d60578a9b3991d1478a0710db25770a2d3feb2b5b9`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

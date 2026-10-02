@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/tencent.png" alt="Tencent 图标" width="72" height="72">
+<img src="https://github.com/cn-wanmei/Popular-Rules-Icon" alt="Tencent 图标" width="72" height="72">
 
 # Tencent — 分流规则说明
 
@@ -25,7 +25,7 @@
 
 - Identity：`brand.tencent`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/tencent.png`
+- Icon Raw：`https://github.com/cn-wanmei/Popular-Rules-Icon
 - Digest：`1b5c3833135a6d080735ee707b796c7012ebd2d10d362f8cf833e40f78f1ed69`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

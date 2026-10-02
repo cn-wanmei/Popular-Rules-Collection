@@ -25,7 +25,7 @@
 
 - Identity：`brand.jetbrains`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/jetbrains.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/cd45ecf6eb711faf6cd4126e59187c2a10714e4990c0b55e08124c239a3f8655.png
 - Digest：`a4177164adb32fabd7fb361c998d141d7f0c05ca91c7286849d662e582c4bc11`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

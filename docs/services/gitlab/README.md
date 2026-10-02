@@ -25,7 +25,7 @@
 
 - Identity：`brand.gitlab`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/gitlab.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/465750621f1a7ddc3ed14783976794ff3fb4a12b859d7958dfae0e9d3c936760.png
 - Digest：`227eac3506058b9663b4e38fdfceeeadf3f9d7893c3b3a5eb652fce84a780b4b`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

@@ -1,17 +1,21 @@
 #!/usr/bin/env python3
-"""Validate service docs consume Icon V6 only (no Collection V4 paths)."""
+"""Validate service docs consume Icon V6 only (no Collection legacy icon paths)."""
 from __future__ import annotations
 
-import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 FORBIDDEN = [
+    "assets/icons/v3",
     "assets/icons/v4",
+    "assets/icons/v5",
     "Icon Library V4",
+    "Icon Library V3",
+    "/assets/icons/v3/",
     "/assets/icons/v4/",
+    "/assets/icons/v5/",
 ]
 
 def main() -> int:
@@ -29,7 +33,7 @@ def main() -> int:
         if len(bad) > 50:
             print(f"  ... and {len(bad) - 50} more")
         return 1
-    print("validate_icon_docs: OK (no V4 icon paths in docs/)")
+    print("validate_icon_docs: OK (no legacy Collection icon paths in docs/)")
     return 0
 
 if __name__ == "__main__":

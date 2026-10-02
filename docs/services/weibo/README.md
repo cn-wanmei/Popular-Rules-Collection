@@ -25,7 +25,7 @@
 
 - Identity：`brand.weibo`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/weibo.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/52f06e683b2cffee3028fd286681dd9e3794d42a47ccefef0632b853a41219ce.png
 - Digest：`2fc8b010231849407b81644e50b0b18cf6d0f3a281474735f80e12a527ecaeb9`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

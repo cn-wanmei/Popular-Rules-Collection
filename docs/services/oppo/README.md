@@ -25,7 +25,7 @@
 
 - Identity：`brand.oppo`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/oppo.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/bd8ed08d9dc62c8afb5738bdf65c546d586ab4fcfe777491d04245c296459d43.png
 - Digest：`537cc298378d3afa7790696ee168ec0138c8a97ba605ddf9970d031eb498e789`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

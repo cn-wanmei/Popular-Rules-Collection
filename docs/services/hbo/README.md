@@ -25,7 +25,7 @@
 
 - Identity：`brand.hbo`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/hbo.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/24af9ad216f8dc3c21686bc588225dc95ea2946c8e4c87aad3152968119c884e.png
 - Digest：`b75b585ddf59dc1582d5ea58e22352ad9fed55ba3dd7de3be9189355814c3fb6`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

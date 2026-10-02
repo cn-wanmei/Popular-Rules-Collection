@@ -25,7 +25,7 @@
 
 - Identity：`brand.paypal`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/paypal.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/7f4c21522abab79942fc65a641c14ed910123c80d0cf01aada9920666a2aa4ad.png
 - Digest：`ce51f54524ca09f7b13ef53ecf9a70c7a011a0878642a4066bfe03dd27664d71`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

@@ -25,7 +25,7 @@
 
 - Identity：`brand.wise`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/wise.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/ea203c0fecd422e786f1c18cd531421b9517e5b37a72f4a77aed3d61f8cf4e00.png
 - Digest：`8e95d73697e17e8a01332072f4d052bbd30c28ef2b884b45336943ee29ed3892`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

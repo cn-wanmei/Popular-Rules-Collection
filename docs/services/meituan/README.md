@@ -25,7 +25,7 @@
 
 - Identity：`brand.meituan`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/meituan.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/e010750bd1b5b3521802a8b31220f3ec2612f78711f1b5e8f914e202b21afa8a.png
 - Digest：`af3e3aae6aaeb87af2e61623f9c9ee00157fe2c60e3216a1215e0970db29d031`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

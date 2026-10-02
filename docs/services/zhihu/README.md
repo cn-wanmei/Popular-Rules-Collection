@@ -25,7 +25,7 @@
 
 - Identity：`brand.zhihu`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/zhihu.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/8f09677384db959d430740233fa453d9b632673f67df0d347f5520deed3a41b4.png
 - Digest：`537a6c335a4fdc1d6b4297cd1d57940e9d6fa7774aa12ccbacb861408b3fb780`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

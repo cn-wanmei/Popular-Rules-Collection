@@ -25,7 +25,7 @@
 
 - Identity：`brand.line`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/line.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/eb64a0046eb31ea7d7fc3095c8a1d986e2d3acc09aea75e88b7833a9f9489f48.png
 - Digest：`3b7bcde5ea30a9cbe06a9a62765d8f72736f177c7e1423547b3933401b6636a8`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

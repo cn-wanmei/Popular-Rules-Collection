@@ -25,7 +25,7 @@
 
 - Identity：`brand.docker`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/docker.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3b42e75d1284e3b610bd3347f92364f5efde42faf14c6e376461724b31bfb2e0.png
 - Digest：`27da839bac7a20fcae61e72ba9c490b19f0a922b98fa6fe27c7c38c92e5a510d`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

@@ -25,7 +25,7 @@
 
 - Identity：`brand.figma`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/figma.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/de65196014dcd7745d3a9772d1b012a463febb87f2a55f03bb25ade423cc7928.png
 - Digest：`a083f185dee10ba5476111db3344340098de8d1b1431746e69ace8ca0829b22f`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

@@ -25,7 +25,7 @@
 
 - Identity：`brand.bilibili`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/bilibili.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/2533129df04f76f4ab42b20d7aa12cdd080314ea4de583410df667c5ab1664e9.png
 - Digest：`e0381cf8256360ce89acd003d443b74c6805c94424352e2ee4eaa9f5580dae7c`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

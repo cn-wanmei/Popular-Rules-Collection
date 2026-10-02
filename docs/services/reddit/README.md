@@ -25,7 +25,7 @@
 
 - Identity：`brand.reddit`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/reddit.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3be65c801d2130eddd8db577a6b5dca4103534e8095ce9341e95de6f17936e04.png
 - Digest：`876c22dbaaff9fdc20c974ea0c65248efa49872ff1735b4feed18d38343a23bf`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

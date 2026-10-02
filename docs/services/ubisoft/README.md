@@ -25,7 +25,7 @@
 
 - Identity：`brand.ubisoft`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/ubisoft.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/b177414815d322215bd57f49b81ea2b99b0b0ad5bab23b4649f85910ad15f427.png
 - Digest：`b129b8f12dabb7b9d4126a34e9b23711d895ee830343818eb44f853ee951a978`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

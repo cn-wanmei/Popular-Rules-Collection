@@ -25,7 +25,7 @@
 
 - Identity：`brand.zoom`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/zoom.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/5586b22f3a07207a86f5dc21a243b23096c48da3067c739c51dfce09dd833397.png
 - Digest：`40b276a69dc15eff192e82de6e1851c6f91330e8189b50cfa61f2e05d56f8e30`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

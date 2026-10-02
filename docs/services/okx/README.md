@@ -25,7 +25,7 @@
 
 - Identity：`brand.okx`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/okx.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/bd4865c72529c3ab2346620add3900ff6bd2557313760459b7e4b42266c44049.png
 - Digest：`a6ac69a0463a2ffb0f50ed224c72b617156512f24e484ffda447434c259b67bd`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

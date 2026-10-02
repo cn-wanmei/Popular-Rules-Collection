@@ -25,7 +25,7 @@
 
 - Identity：`brand.vercel`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/vercel.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/f9568d116f18e996e262a3ba609d075e12080ca0f7da52294d5fd8a382c4b339.png
 - Digest：`4c3d1f713494edbf1c4dc048f322fb5d6facd95eb8e06aa8ebffe5c6e25eb44e`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

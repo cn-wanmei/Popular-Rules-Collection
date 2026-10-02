@@ -25,7 +25,7 @@
 
 - Identity：`brand.airbnb`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/airbnb.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/089c95447a0d6ae831f3c4369393fd029a5fba251858298ea08a667328212562.png
 - Digest：`9c7037c8f417b7d1ed435d71552e9040c9d797fbee02a1eac100c0d1895f8edc`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

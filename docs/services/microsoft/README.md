@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/microsoft.png" alt="Microsoft 图标" width="72" height="72">
+<img src="https://github.com/cn-wanmei/Popular-Rules-Icon" alt="Microsoft 图标" width="72" height="72">
 
 # Microsoft — 分流规则说明
 
@@ -25,7 +25,7 @@
 
 - Identity：`brand.microsoft`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/microsoft.png`
+- Icon Raw：`https://github.com/cn-wanmei/Popular-Rules-Icon
 - Digest：`06118455adfd5a732c466eee495948ffd0149ad144ce239d3d0cf0f60aab6ca6`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

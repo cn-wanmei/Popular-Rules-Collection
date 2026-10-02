@@ -25,7 +25,7 @@
 
 - Identity：`brand.tidal`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/tidal.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/9c6e22d1d5340d9a0e629268fe69ad751d362f37ade1530465f8e413a5aa698b.png
 - Digest：`fd9143db7ac291e1039cbf98ccbc36a87ca59e00fff0b4f9b27a524eb7223e78`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

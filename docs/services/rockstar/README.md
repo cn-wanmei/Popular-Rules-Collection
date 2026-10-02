@@ -25,7 +25,7 @@
 
 - Identity：`brand.rockstar`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/rockstar.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/1945738391d47d728a3f001886f0a5b7aca64b79ca7018767a757b9b29bad6bc.png
 - Digest：`e612da538c5cac08c892c16ff69baf78a7782c38377fad0cc89a181f3edf8dc5`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

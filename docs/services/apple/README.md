@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/apple.png" alt="Apple 图标" width="72" height="72">
+<img src="https://github.com/cn-wanmei/Popular-Rules-Icon" alt="Apple 图标" width="72" height="72">
 
 # Apple — 分流规则说明
 
@@ -25,7 +25,7 @@
 
 - Identity：`brand.apple`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/apple.png`
+- Icon Raw：`https://github.com/cn-wanmei/Popular-Rules-Icon
 - Digest：`2be4f77df5e8f4b6486da4ce9fff209a8e7888f065d0f4e1812c24fcefee707a`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

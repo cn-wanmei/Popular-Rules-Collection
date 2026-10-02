@@ -25,7 +25,7 @@
 
 - Identity：`brand.oracle`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/oracle.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3a9d3d04c14f08d56fde891a01acad3cc149de92bebf0dc7ea77a4c416ef6e20.png
 - Digest：`87cfa17000cd44818cf4c003eb10fcd612c16997e7b39df1a1f28dabf63810b8`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

@@ -25,7 +25,7 @@
 
 - Identity：`brand.spotify`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/spotify.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/e16be57129fd0889adbf834607fda8bdfbed15da809096fed86b340c2283761d.png
 - Digest：`60dce5d4c7d10c196d83dc40fc3db745a7cdf3a515cbf5ad6a0c49dfe37fb3e0`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

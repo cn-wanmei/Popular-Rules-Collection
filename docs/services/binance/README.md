@@ -25,7 +25,7 @@
 
 - Identity：`brand.binance`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/binance.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/5da44c4d0a0052a855cf93a197c8505c04b1f86c060a3ba1f64d08b1da464d77.png
 - Digest：`c5c75ce4d0322b0fd37719539b7298a54030b3a3f8dac624ee1c10dc85431ec8`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

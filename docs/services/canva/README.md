@@ -25,7 +25,7 @@
 
 - Identity：`brand.canva`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/canva.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/9e4851cd773f354ba45b65c7c9bef1c7863042478cb2a72ce100bb9eea8c427c.png
 - Digest：`b702c02b8f33c31b36556b9cf1c3339c622a51cca90f5d2d6c560f2643c42c50`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

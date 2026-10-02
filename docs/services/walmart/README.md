@@ -25,7 +25,7 @@
 
 - Identity：`brand.walmart`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/walmart.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/d90e949bc4222c932411dc0b8944c1202d53c47dbdff4a3f29475e2bcb214702.png
 - Digest：`868762990d768d32af6e2636c8be742e796f32a8616687f70b44d0ef85d4f641`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

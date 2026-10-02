@@ -25,7 +25,7 @@
 
 - Identity：`brand.ebay`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/ebay.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/0b9e4b8b2199dabaa26a395344e398883681f6a7c5d0eb0f44528f9cf5a4a28d.png
 - Digest：`48cb415ebb5b613ef2dbac4b27f70be158c53ccda9b2c19f3bea62e914cb8918`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

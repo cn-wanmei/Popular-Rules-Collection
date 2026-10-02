@@ -25,7 +25,7 @@
 
 - Identity：`brand.digitalocean`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/digitalocean.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/3a922701b95283e73e0de594e39d6cb2a37b4d42cba51ff9419c09a8a542272e.png
 - Digest：`60c652b79d43af1975e31a9ec181a679d8e1322e853a3b1b9685f1567dc32d1d`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

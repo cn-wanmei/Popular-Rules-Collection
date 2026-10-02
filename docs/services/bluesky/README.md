@@ -25,7 +25,7 @@
 
 - Identity：`brand.bluesky`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/bluesky.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/d6b8649eab4ebef39074a632eb5647cebc0355dca074a87dd20660ffc689685f.png
 - Digest：`f11c952cf68eaa56a80ae58143e5b64a134361ccb952d13ec4f268b1c0175822`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

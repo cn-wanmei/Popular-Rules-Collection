@@ -25,7 +25,7 @@
 
 - Identity：`brand.netlify`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/netlify.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/a92faca6f106f1cf96dd4db2e068e7fb53997031a9a55ebb4dac74425487f292.png
 - Digest：`070ae1296802d73bb43fd3f96bc6dbb226fa99a3f33f15bde350f3817ecb3763`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

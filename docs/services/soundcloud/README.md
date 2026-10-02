@@ -25,7 +25,7 @@
 
 - Identity：`brand.soundcloud`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/soundcloud.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/c352aba3bb61f96abde362e1e94857677215f4659fd3718fa40a22f2c734b6be.png
 - Digest：`32095fc966027c27523b076e8680c0c9fa0237cf8270525936d5b2e7da3da9d1`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

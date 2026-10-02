@@ -25,7 +25,7 @@
 
 - Identity：`brand.nintendo`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/nintendo.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/220490fe647829b187cf6ccc6532039087da3c0994bf9d6e8bdca8e9fddedfff.png
 - Digest：`1efed3a10d10ddaac7c1a234d00053f525a9e2057d68d209b3cc37f6e90a596f`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

@@ -25,7 +25,7 @@
 
 - Identity：`brand.twitter`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/twitter.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/b83caaaedf2c161c0cfbe2f14cab740e43eb23489f9e98fe32ca62580e4fb312.png
 - Digest：`e2d2e3cb41dedc005a41bc2539175d0427911e92e2adfe533b6e979eacfdf182`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

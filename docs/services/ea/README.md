@@ -25,7 +25,7 @@
 
 - Identity：`brand.ea`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/ea.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/c88502a5cc532ff6ea81afca8ff4fd566383a4426ef0f3e0f63b9d76e76e28f7.png
 - Digest：`e0fc9feaa624bf156380321bebe3cf572f19584be49a499e1d684b9958be0940`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

@@ -25,7 +25,7 @@
 
 - Identity：`brand.pinterest`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/pinterest.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/718fc2740fedec41fa280da86fa50700ce468f460d18d90e183824f279938662.png
 - Digest：`9e7836c6e12e82eaaed48c8fe504ff79f508497b8aab05e825675172ddfffcc8`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

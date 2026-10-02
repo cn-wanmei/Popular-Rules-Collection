@@ -25,7 +25,7 @@
 
 - Identity：`brand.epic`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/epic.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/f217d4660ea9de257a8a7ba1e3137f7875dd30350b133c8040dd55afdf78b6cc.png
 - Digest：`5861f5a72a290bf4f3df25e4746a9acf34569c5736ee376128ec0f297aa05912`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

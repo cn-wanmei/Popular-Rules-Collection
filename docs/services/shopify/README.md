@@ -25,7 +25,7 @@
 
 - Identity：`brand.shopify`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/shopify.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/b98d19a88ca205af642647d8edd372d00929ab5594e5c6f7bd66e6f176db5749.png
 - Digest：`c49bdc344bf4a5a14a548314ce779a50f32c81d14af68129c7d9cce6ad52706f`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

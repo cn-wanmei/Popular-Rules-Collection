@@ -25,7 +25,7 @@
 
 - Identity：`brand.stripe`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/stripe.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/2cf11d9837f0f2f67fdeb8105ed941679cad41a6fbf23ce855148d784b74a7ab.png
 - Digest：`a611c7e22dce7819b88cf7c646f52cd815f8fafc002bbc57410048ec686ca55a`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

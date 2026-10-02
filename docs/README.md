@@ -37,7 +37,7 @@
     └── styles/<style>/service.svg
 
 历史 / 兼容
-└── assets/icons/v3/
+└── 
     └── 作为品牌原生图标来源与回滚兼容层保留
 ```
 

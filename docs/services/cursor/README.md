@@ -25,7 +25,7 @@
 
 - Identity：`brand.cursor`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/cursor.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/931eff504bd5e5666ddbf6bd0a6a332e957248877dd2c794d9952aabb444770f.png
 - Digest：`fc14011fefdd68d6563f7c4d1545c2d093d04cf352adf5c0fc42a93ac872d407`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

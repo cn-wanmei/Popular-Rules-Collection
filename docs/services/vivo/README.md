@@ -25,7 +25,7 @@
 
 - Identity：`brand.vivo`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/vivo.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/060d6ce0c6d0de9c048a35a2a52022debe0c0895127b43a20772c0b50cd671b6.png
 - Digest：`f09ccbbc7330d5c8a095503625e7a477049a98f86dfd664346d32b7a78e7f2cc`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

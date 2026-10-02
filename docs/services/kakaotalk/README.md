@@ -25,7 +25,7 @@
 
 - Identity：`brand.kakaotalk`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/kakaotalk.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/9c427bf61c9e70ded4d1ed528b1c77ed7de2bbcb5aafb6e0163c30e473e63a7c.png
 - Digest：`838b648a65feff3efd012b7ead9d51fb8b6e0a4820c981551a9d6fee09c53e49`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

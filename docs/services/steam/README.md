@@ -25,7 +25,7 @@
 
 - Identity：`brand.steam`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/steam.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/2fedd1b0c976e040cfd2324ab5ba92224548392fe8f70a15c63458a41f4916b4.png
 - Digest：`d902ef3c9e455ee267f5aa919b0fb6f7d878868fb41032ff47fc295c70700793`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

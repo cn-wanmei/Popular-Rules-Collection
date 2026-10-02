@@ -25,7 +25,7 @@
 
 - Identity：`brand.booking`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/booking.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/c44aa24847897d0fc69f0dc5fa3b391eff4272724dd2b7e1a18a621a5f23c9a3.png
 - Digest：`491282d96889c72f5a765eb2b53380170197343bc6751750c3e6f28c280243d0`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

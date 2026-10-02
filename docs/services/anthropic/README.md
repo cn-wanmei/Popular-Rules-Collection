@@ -25,7 +25,7 @@
 
 - Identity：`brand.anthropic`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/anthropic.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/fbf08aa4be76879b39ecc0d8bae6961267280359c10b22a196c5ef3d2ead3815.png
 - Digest：`eb234ca13dcb65281d3fda9aa26529b0b24e6f3c45f7a69b313ad1884ddd72d1`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。

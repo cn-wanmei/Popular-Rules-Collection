@@ -25,7 +25,7 @@
 
 - Identity：`brand.playstation`
 - 来源：Current V3 已发布品牌身份资产
-- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/assets/icons/v3/releases/2026.09.22-5e0e48ad55c6/clients/mihomo/128/playstation.png`
+- Icon Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/8b530b167e7bee2068c202ab7fd6a408997533387810c77dbfa0d9a7303f61a1.png
 - Digest：`0f6cdc50fdfb3a27a7c80dcbf361bebb9e9cada417276828196444e22d4eed80`
 
 本服务存在可信品牌身份，因此 V4 不使用九风格 fallback 重绘该品牌 Logo。
