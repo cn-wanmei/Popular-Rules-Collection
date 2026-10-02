@@ -16,14 +16,14 @@
 | Provider | `bocom` |
 | 规则浏览路径 | `rule/bocom/bocom_aggregate/bocom_aggregate.yaml` |
 | 规则数量（_index） | **6** |
-| SHA-256 | `8f147075817af93986a5a0e53bb0f4757585b39a0a95a309ba65d2b95a02d652` |
+| SHA-256 | `a091b62ad62da931a58539557d3f0265b248ef46386322375b8ea6af9c46460d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T044009684916Z-run` |
-| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
+| Run ID | `20261002T115057087712Z-run` |
+| IR digest | `1d51d73ebbfad3d3359e68ab1aee81f2826155b35de6dafdb56f990e5b354b4b` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

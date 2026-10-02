@@ -16,14 +16,14 @@
 | Provider | `honor` |
 | 规则浏览路径 | `rule/honor/honor_aggregate/honor_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `9e384eb3ac26274695427e6452e9e05080f00a9b2ea55335d7689936aa63b1f0` |
+| SHA-256 | `c5ab67c4e367c6df46e4f0be101b3000a018c987303f910b46a57bea4d9771e3` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T044009684916Z-run` |
-| IR digest | `c521d99f688fcc0153fd1539247060ae2dc5fcb38be6b3c97778ba1e53750dee` |
+| Run ID | `20261002T115057087712Z-run` |
+| IR digest | `1d51d73ebbfad3d3359e68ab1aee81f2826155b35de6dafdb56f990e5b354b4b` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
