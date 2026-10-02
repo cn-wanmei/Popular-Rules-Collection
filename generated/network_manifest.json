@@ -383,13 +383,13 @@
       "source": "database/provider/cloudflare6.txt"
     },
     {
-      "bytes": 387576,
+      "bytes": 387755,
       "file": "provider/aws.txt",
       "id": "provider-aws",
       "kind": "provider",
-      "lines": 11474,
+      "lines": 11479,
       "scope": "provider",
-      "sha256": "6371a9c516c09f9056412e03214ed8a52c3f2fe38f1b06527ae28aa487dfb239",
+      "sha256": "2b522ac152a0e7a7aa63257ca998a6f745b05fccbc24cf58512587918af28cd1",
       "source": "database/provider/aws.txt"
     },
     {
@@ -399,7 +399,7 @@
       "kind": "provider",
       "lines": 1163,
       "scope": "provider",
-      "sha256": "c5e23720e869f123278dc44bc90ace070a866af5efe354c7c75e1bdd2fe3ad0b",
+      "sha256": "66d6cace41350de155cf7ce126b602f47e7262bb7764c1a872c496d1269f5f61",
       "source": "database/provider/googlecloud.txt"
     },
     {
@@ -409,7 +409,7 @@
       "kind": "provider",
       "lines": 152,
       "scope": "provider",
-      "sha256": "12ca80b47cab8c90dcbc3288c2bea4b8a4526b436d0b61fd68bf6a4cdc9cf298",
+      "sha256": "2f78763227c08bdcfa6ad211394be04b453202b874935f9032f55422d933efcb",
       "source": "database/provider/goog.txt"
     },
     {
@@ -513,13 +513,13 @@
       "source": "database/ips/chinamobile.txt"
     },
     {
-      "bytes": 60096,
+      "bytes": 60111,
       "file": "ip/chinaunicom.txt",
       "id": "chinaunicom",
       "kind": "service_ip",
-      "lines": 3797,
+      "lines": 3798,
       "scope": "ip",
-      "sha256": "c590f5b6a9741ae72b31584dae106cfc2df1cc7c21cace70c96044f3d201999a",
+      "sha256": "e7a6328c49cb08f90743a9dddb33e0e5a31581f7b4c0373ff5a61d34732d1382",
       "source": "database/ips/chinaunicom.txt"
     },
     {
@@ -803,7 +803,7 @@
       "source": "database/ips/zhihu.txt"
     }
   ],
-  "generated_at": "2026-10-02T04:48:25.819403+00:00",
+  "generated_at": "2026-10-02T11:59:25.707258+00:00",
   "missing_optional": [],
   "runtime_contract": "network_dataset_distribution_v2",
   "schema": "network_publication_v2",
@@ -815,5 +815,5 @@
     "provider_cidrs_are_not_service_ownership": true,
     "service_rules": "generated/<client>/..."
   },
-  "source_commit": "93ae22cbf868e9cae85001fe9279bc67ae1906b7"
+  "source_commit": "57c8640e0c498fdecbbfcc57dfa4b3e72ef0d4f8"
 }
