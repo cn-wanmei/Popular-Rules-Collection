@@ -36,3 +36,8 @@ Short `README.md` pointers beside rule/client files:
 - [`generated/`](../generated/) — per-client leaf Raw + docs link
 - [PATH_LINKS_G3.md](schema/PATH_LINKS_G3.md)
 
+## Archives
+
+- Historical audits / cutover notes: [archive/audits/](archive/audits/)
+- Phase / status archives: [archive/](archive/)
+
