@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `paloalto_aggregate` |
+| Rule ID | `paloalto_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `paloalto` |
 | 规则浏览路径 | `rule/paloalto/paloalto_aggregate/paloalto_aggregate.yaml` |

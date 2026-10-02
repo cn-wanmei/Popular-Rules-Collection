@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `okx_aggregate` |
+| Rule ID | `okx_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `okx` |
 | 规则浏览路径 | `rule/okx/okx_aggregate/okx_aggregate.yaml` |

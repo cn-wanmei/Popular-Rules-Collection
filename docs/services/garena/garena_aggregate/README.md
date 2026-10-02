@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `garena_aggregate` |
+| Rule ID | `garena_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `garena` |
 | 规则浏览路径 | `rule/garena/garena_aggregate/garena_aggregate.yaml` |

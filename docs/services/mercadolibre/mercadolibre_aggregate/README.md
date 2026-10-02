@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `mercadolibre_aggregate` |
+| Rule ID | `mercadolibre_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `mercadolibre` |
 | 规则浏览路径 | `rule/mercadolibre/mercadolibre_aggregate/mercadolibre_aggregate.yaml` |

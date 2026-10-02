@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `unionpay_aggregate` |
+| Rule ID | `unionpay_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `unionpay` |
 | 规则浏览路径 | `rule/unionpay/unionpay_aggregate/unionpay_aggregate.yaml` |

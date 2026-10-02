@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `canva_aggregate` |
+| Rule ID | `canva_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `canva` |
 | 规则浏览路径 | `rule/canva/canva_aggregate/canva_aggregate.yaml` |

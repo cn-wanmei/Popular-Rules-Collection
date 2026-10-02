@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `haier_aggregate` |
+| Rule ID | `haier_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `haier` |
 | 规则浏览路径 | `rule/haier/haier_aggregate/haier_aggregate.yaml` |

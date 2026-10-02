@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `coinbase_aggregate` |
+| Rule ID | `coinbase_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `coinbase` |
 | 规则浏览路径 | `rule/coinbase/coinbase_aggregate/coinbase_aggregate.yaml` |

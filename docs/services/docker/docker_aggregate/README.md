@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `docker_aggregate` |
+| Rule ID | `docker_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `docker` |
 | 规则浏览路径 | `rule/docker/docker_aggregate/docker_aggregate.yaml` |

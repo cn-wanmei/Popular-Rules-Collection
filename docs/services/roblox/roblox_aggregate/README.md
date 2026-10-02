@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `roblox_aggregate` |
+| Rule ID | `roblox_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `roblox` |
 | 规则浏览路径 | `rule/roblox/roblox_aggregate/roblox_aggregate.yaml` |

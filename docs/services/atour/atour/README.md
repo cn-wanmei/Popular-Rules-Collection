@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `atour` |
+| Rule ID | `atour` |
 | 类型 | service |
 | Provider | `atour` |
 | 规则浏览路径 | `rule/atour/atour/atour.yaml` |

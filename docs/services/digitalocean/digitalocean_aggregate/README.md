@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `digitalocean_aggregate` |
+| Rule ID | `digitalocean_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `digitalocean` |
 | 规则浏览路径 | `rule/digitalocean/digitalocean_aggregate/digitalocean_aggregate.yaml` |

@@ -181,7 +181,15 @@
       "entity": "aggregate",
       "path": "aggregate/developer/developer.yaml",
       "rule_count": 684,
-      "clients": [],
+      "clients": [
+        "egern",
+        "loon",
+        "mihomo",
+        "quantumultx",
+        "shadowrocket",
+        "singbox",
+        "surge"
+      ],
       "icon_available": false
     },
     {
@@ -1829,7 +1837,15 @@
       "entity": "category",
       "path": "category/developer/developer.yaml",
       "rule_count": 285,
-      "clients": [],
+      "clients": [
+        "egern",
+        "loon",
+        "mihomo",
+        "quantumultx",
+        "shadowrocket",
+        "singbox",
+        "surge"
+      ],
       "icon_available": false
     },
     {

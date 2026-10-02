@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `cctv_aggregate` |
+| Rule ID | `cctv_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `cctv` |
 | 规则浏览路径 | `rule/cctv/cctv_aggregate/cctv_aggregate.yaml` |

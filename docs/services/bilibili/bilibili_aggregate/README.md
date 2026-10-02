@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `bilibili_aggregate` |
+| Rule ID | `bilibili_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `bilibili` |
 | 规则浏览路径 | `rule/bilibili/bilibili_aggregate/bilibili_aggregate.yaml` |

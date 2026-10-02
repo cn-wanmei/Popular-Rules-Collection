@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `kugou_aggregate` |
+| Rule ID | `kugou_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `kugou` |
 | 规则浏览路径 | `rule/kugou/kugou_aggregate/kugou_aggregate.yaml` |

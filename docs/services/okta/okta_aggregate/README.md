@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `okta_aggregate` |
+| Rule ID | `okta_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `okta` |
 | 规则浏览路径 | `rule/okta/okta_aggregate/okta_aggregate.yaml` |

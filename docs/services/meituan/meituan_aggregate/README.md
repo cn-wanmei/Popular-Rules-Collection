@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `meituan_aggregate` |
+| Rule ID | `meituan_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `meituan` |
 | 规则浏览路径 | `rule/meituan/meituan_aggregate/meituan_aggregate.yaml` |

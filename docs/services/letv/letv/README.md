@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `letv` |
+| Rule ID | `letv` |
 | 类型 | service |
 | Provider | `letv` |
 | 规则浏览路径 | `rule/letv/letv/letv.yaml` |

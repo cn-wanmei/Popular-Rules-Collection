@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `block` |
+| Rule ID | `block` |
 | 类型 | service |
 | Provider | `block` |
 | 规则浏览路径 | `rule/block/block/block.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `chinatelecom_aggregate` |
+| Rule ID | `chinatelecom_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `chinatelecom` |
 | 规则浏览路径 | `rule/chinatelecom/chinatelecom_aggregate/chinatelecom_aggregate.yaml` |

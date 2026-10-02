@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `ericsson_aggregate` |
+| Rule ID | `ericsson_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `ericsson` |
 | 规则浏览路径 | `rule/ericsson/ericsson_aggregate/ericsson_aggregate.yaml` |

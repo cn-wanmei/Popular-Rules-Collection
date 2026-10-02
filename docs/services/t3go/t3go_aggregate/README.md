@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `t3go_aggregate` |
+| Rule ID | `t3go_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `t3go` |
 | 规则浏览路径 | `rule/t3go/t3go_aggregate/t3go_aggregate.yaml` |

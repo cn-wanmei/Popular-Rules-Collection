@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `tuya_aggregate` |
+| Rule ID | `tuya_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `tuya` |
 | 规则浏览路径 | `rule/tuya/tuya_aggregate/tuya_aggregate.yaml` |

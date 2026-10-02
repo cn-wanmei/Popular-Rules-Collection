@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `snowflake_aggregate` |
+| Rule ID | `snowflake_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `snowflake` |
 | 规则浏览路径 | `rule/snowflake/snowflake_aggregate/snowflake_aggregate.yaml` |

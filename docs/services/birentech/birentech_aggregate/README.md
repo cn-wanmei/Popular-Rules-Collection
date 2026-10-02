@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `birentech_aggregate` |
+| Rule ID | `birentech_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `birentech` |
 | 规则浏览路径 | `rule/birentech/birentech_aggregate/birentech_aggregate.yaml` |

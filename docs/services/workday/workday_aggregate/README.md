@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `workday_aggregate` |
+| Rule ID | `workday_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `workday` |
 | 规则浏览路径 | `rule/workday/workday_aggregate/workday_aggregate.yaml` |

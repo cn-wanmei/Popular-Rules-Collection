@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `mongodb_aggregate` |
+| Rule ID | `mongodb_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `mongodb` |
 | 规则浏览路径 | `rule/mongodb/mongodb_aggregate/mongodb_aggregate.yaml` |

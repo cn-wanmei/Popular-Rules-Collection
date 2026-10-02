@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `twitter_aggregate` |
+| Rule ID | `twitter_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `twitter` |
 | 规则浏览路径 | `rule/twitter/twitter_aggregate/twitter_aggregate.yaml` |

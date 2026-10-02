@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `starlink_aggregate` |
+| Rule ID | `starlink_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `starlink` |
 | 规则浏览路径 | `rule/starlink/starlink_aggregate/starlink_aggregate.yaml` |

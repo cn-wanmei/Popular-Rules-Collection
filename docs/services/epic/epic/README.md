@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `epic` |
+| Rule ID | `epic` |
 | 类型 | service |
 | Provider | `epic` |
 | 规则浏览路径 | `rule/epic/epic/epic.yaml` |

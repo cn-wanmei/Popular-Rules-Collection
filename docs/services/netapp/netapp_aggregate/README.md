@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `netapp_aggregate` |
+| Rule ID | `netapp_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `netapp` |
 | 规则浏览路径 | `rule/netapp/netapp_aggregate/netapp_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `huolala_aggregate` |
+| Rule ID | `huolala_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `huolala` |
 | 规则浏览路径 | `rule/huolala/huolala_aggregate/huolala_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `atour_aggregate` |
+| Rule ID | `atour_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `atour` |
 | 规则浏览路径 | `rule/atour/atour_aggregate/atour_aggregate.yaml` |

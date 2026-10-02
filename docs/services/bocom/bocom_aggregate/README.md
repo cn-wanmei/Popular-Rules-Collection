@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `bocom_aggregate` |
+| Rule ID | `bocom_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `bocom` |
 | 规则浏览路径 | `rule/bocom/bocom_aggregate/bocom_aggregate.yaml` |

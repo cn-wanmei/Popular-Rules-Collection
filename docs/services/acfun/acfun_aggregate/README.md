@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `acfun_aggregate` |
+| Rule ID | `acfun_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `acfun` |
 | 规则浏览路径 | `rule/acfun/acfun_aggregate/acfun_aggregate.yaml` |

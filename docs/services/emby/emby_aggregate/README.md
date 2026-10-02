@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `emby_aggregate` |
+| Rule ID | `emby_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `emby` |
 | 规则浏览路径 | `rule/emby/emby_aggregate/emby_aggregate.yaml` |

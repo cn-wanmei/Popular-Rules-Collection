@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `ccb_aggregate` |
+| Rule ID | `ccb_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `ccb` |
 | 规则浏览路径 | `rule/ccb/ccb_aggregate/ccb_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `ubisoft_aggregate` |
+| Rule ID | `ubisoft_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `ubisoft` |
 | 规则浏览路径 | `rule/ubisoft/ubisoft_aggregate/ubisoft_aggregate.yaml` |

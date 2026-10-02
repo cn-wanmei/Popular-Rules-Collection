@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `crowdstrike_aggregate` |
+| Rule ID | `crowdstrike_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `crowdstrike` |
 | 规则浏览路径 | `rule/crowdstrike/crowdstrike_aggregate/crowdstrike_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `qihoo360_aggregate` |
+| Rule ID | `qihoo360_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `qihoo360` |
 | 规则浏览路径 | `rule/qihoo360/qihoo360_aggregate/qihoo360_aggregate.yaml` |

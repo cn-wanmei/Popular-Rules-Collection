@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `temu_aggregate` |
+| Rule ID | `temu_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `temu` |
 | 规则浏览路径 | `rule/temu/temu_aggregate/temu_aggregate.yaml` |

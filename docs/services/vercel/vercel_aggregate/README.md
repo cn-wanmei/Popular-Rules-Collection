@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `vercel_aggregate` |
+| Rule ID | `vercel_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `vercel` |
 | 规则浏览路径 | `rule/vercel/vercel_aggregate/vercel_aggregate.yaml` |

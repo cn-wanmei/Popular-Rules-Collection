@@ -9,6 +9,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `blizzard_aggregate` |
+| Rule ID | `blizzard_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `blizzard` |
 | 规则浏览路径 | `rule/blizzard/blizzard_aggregate/blizzard_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `deepseek_aggregate` |
+| Rule ID | `deepseek_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `deepseek` |
 | 规则浏览路径 | `rule/deepseek/deepseek_aggregate/deepseek_aggregate.yaml` |

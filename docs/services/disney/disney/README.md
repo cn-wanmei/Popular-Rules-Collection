@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `disney` |
+| Rule ID | `disney` |
 | 类型 | service |
 | Provider | `disney` |
 | 规则浏览路径 | `rule/disney/disney/disney.yaml` |

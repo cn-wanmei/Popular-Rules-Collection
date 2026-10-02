@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `globalfoundries_aggregate` |
+| Rule ID | `globalfoundries_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `globalfoundries` |
 | 规则浏览路径 | `rule/globalfoundries/globalfoundries_aggregate/globalfoundries_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `bluesky_aggregate` |
+| Rule ID | `bluesky_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `bluesky` |
 | 规则浏览路径 | `rule/bluesky/bluesky_aggregate/bluesky_aggregate.yaml` |

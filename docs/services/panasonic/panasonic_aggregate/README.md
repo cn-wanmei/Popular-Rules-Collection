@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `panasonic_aggregate` |
+| Rule ID | `panasonic_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `panasonic` |
 | 规则浏览路径 | `rule/panasonic/panasonic_aggregate/panasonic_aggregate.yaml` |

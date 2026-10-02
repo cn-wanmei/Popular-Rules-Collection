@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `ea` |
+| Rule ID | `ea` |
 | 类型 | service |
 | Provider | `ea` |
 | 规则浏览路径 | `rule/ea/ea/ea.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `eastmoney_aggregate` |
+| Rule ID | `eastmoney_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `eastmoney` |
 | 规则浏览路径 | `rule/eastmoney/eastmoney_aggregate/eastmoney_aggregate.yaml` |

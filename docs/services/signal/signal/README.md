@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `signal` |
+| Rule ID | `signal` |
 | 类型 | service |
 | Provider | `signal` |
 | 规则浏览路径 | `rule/signal/signal/signal.yaml` |

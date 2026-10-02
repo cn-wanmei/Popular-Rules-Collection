@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `signal_aggregate` |
+| Rule ID | `signal_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `signal` |
 | 规则浏览路径 | `rule/signal/signal_aggregate/signal_aggregate.yaml` |

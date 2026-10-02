@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `dassault_aggregate` |
+| Rule ID | `dassault_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `dassault` |
 | 规则浏览路径 | `rule/dassault/dassault_aggregate/dassault_aggregate.yaml` |

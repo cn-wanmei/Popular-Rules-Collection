@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `qualcomm_aggregate` |
+| Rule ID | `qualcomm_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `qualcomm` |
 | 规则浏览路径 | `rule/qualcomm/qualcomm_aggregate/qualcomm_aggregate.yaml` |

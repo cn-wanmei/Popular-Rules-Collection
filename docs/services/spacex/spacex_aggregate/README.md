@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `spacex_aggregate` |
+| Rule ID | `spacex_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `spacex` |
 | 规则浏览路径 | `rule/spacex/spacex_aggregate/spacex_aggregate.yaml` |

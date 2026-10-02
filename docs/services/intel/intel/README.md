@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `intel` |
+| Rule ID | `intel` |
 | 类型 | service |
 | Provider | `intel` |
 | 规则浏览路径 | `rule/intel/intel/intel.yaml` |

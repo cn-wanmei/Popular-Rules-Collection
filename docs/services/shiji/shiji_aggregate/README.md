@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `shiji_aggregate` |
+| Rule ID | `shiji_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `shiji` |
 | 规则浏览路径 | `rule/shiji/shiji_aggregate/shiji_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `lamresearch_aggregate` |
+| Rule ID | `lamresearch_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `lamresearch` |
 | 规则浏览路径 | `rule/lamresearch/lamresearch_aggregate/lamresearch_aggregate.yaml` |

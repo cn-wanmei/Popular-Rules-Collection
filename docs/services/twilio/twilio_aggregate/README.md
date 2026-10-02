@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `twilio_aggregate` |
+| Rule ID | `twilio_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `twilio` |
 | 规则浏览路径 | `rule/twilio/twilio_aggregate/twilio_aggregate.yaml` |

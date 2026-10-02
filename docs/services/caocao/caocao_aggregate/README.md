@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `caocao_aggregate` |
+| Rule ID | `caocao_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `caocao` |
 | 规则浏览路径 | `rule/caocao/caocao_aggregate/caocao_aggregate.yaml` |

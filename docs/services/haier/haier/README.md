@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `haier` |
+| Rule ID | `haier` |
 | 类型 | service |
 | Provider | `haier` |
 | 规则浏览路径 | `rule/haier/haier/haier.yaml` |

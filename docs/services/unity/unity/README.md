@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `unity` |
+| Rule ID | `unity` |
 | 类型 | service |
 | Provider | `unity` |
 | 规则浏览路径 | `rule/unity/unity/unity.yaml` |

@@ -9,6 +9,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `snap` |
+| Rule ID | `snap` |
 | 类型 | provider_aggregate |
 | Provider | `snap` |
 | 规则浏览路径 | `rule/snap/snap/snap.yaml` |

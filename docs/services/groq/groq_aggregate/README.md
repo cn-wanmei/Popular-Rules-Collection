@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `groq_aggregate` |
+| Rule ID | `groq_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `groq` |
 | 规则浏览路径 | `rule/groq/groq_aggregate/groq_aggregate.yaml` |

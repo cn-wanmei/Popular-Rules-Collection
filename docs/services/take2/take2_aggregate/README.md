@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `take2_aggregate` |
+| Rule ID | `take2_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `take2` |
 | 规则浏览路径 | `rule/take2/take2_aggregate/take2_aggregate.yaml` |

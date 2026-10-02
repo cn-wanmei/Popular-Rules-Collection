@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `coupang_aggregate` |
+| Rule ID | `coupang_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `coupang` |
 | 规则浏览路径 | `rule/coupang/coupang_aggregate/coupang_aggregate.yaml` |

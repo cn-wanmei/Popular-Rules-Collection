@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `chinamobile_aggregate` |
+| Rule ID | `chinamobile_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `chinamobile` |
 | 规则浏览路径 | `rule/chinamobile/chinamobile_aggregate/chinamobile_aggregate.yaml` |

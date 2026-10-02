@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `nokia_aggregate` |
+| Rule ID | `nokia_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `nokia` |
 | 规则浏览路径 | `rule/nokia/nokia_aggregate/nokia_aggregate.yaml` |

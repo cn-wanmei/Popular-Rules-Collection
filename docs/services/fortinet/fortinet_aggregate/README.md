@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `fortinet_aggregate` |
+| Rule ID | `fortinet_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `fortinet` |
 | 规则浏览路径 | `rule/fortinet/fortinet_aggregate/fortinet_aggregate.yaml` |

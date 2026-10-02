@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `take2` |
+| Rule ID | `take2` |
 | 类型 | service |
 | Provider | `take2` |
 | 规则浏览路径 | `rule/take2/take2/take2.yaml` |

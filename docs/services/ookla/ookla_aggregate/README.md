@@ -9,6 +9,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `ookla_aggregate` |
+| Rule ID | `ookla_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `ookla` |
 | 规则浏览路径 | `rule/ookla/ookla_aggregate/ookla_aggregate.yaml` |

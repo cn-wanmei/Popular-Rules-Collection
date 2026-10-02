@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `wuba_aggregate` |
+| Rule ID | `wuba_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `wuba` |
 | 规则浏览路径 | `rule/wuba/wuba_aggregate/wuba_aggregate.yaml` |

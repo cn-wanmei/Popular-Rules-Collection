@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `kuwo_aggregate` |
+| Rule ID | `kuwo_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `kuwo` |
 | 规则浏览路径 | `rule/kuwo/kuwo_aggregate/kuwo_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `amd_aggregate` |
+| Rule ID | `amd_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `amd` |
 | 规则浏览路径 | `rule/amd/amd_aggregate/amd_aggregate.yaml` |

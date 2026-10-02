@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `fujitsu_aggregate` |
+| Rule ID | `fujitsu_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `fujitsu` |
 | 规则浏览路径 | `rule/fujitsu/fujitsu_aggregate/fujitsu_aggregate.yaml` |

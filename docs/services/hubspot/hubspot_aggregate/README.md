@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `hubspot_aggregate` |
+| Rule ID | `hubspot_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `hubspot` |
 | 规则浏览路径 | `rule/hubspot/hubspot_aggregate/hubspot_aggregate.yaml` |

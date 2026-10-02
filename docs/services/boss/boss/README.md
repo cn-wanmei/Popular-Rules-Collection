@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `boss` |
+| Rule ID | `boss` |
 | 类型 | service |
 | Provider | `boss` |
 | 规则浏览路径 | `rule/boss/boss/boss.yaml` |

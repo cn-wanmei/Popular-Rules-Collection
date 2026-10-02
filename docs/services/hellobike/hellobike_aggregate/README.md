@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `hellobike_aggregate` |
+| Rule ID | `hellobike_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `hellobike` |
 | 规则浏览路径 | `rule/hellobike/hellobike_aggregate/hellobike_aggregate.yaml` |

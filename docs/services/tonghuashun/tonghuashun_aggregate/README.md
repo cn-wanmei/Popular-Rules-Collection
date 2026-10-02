@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `tonghuashun_aggregate` |
+| Rule ID | `tonghuashun_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `tonghuashun` |
 | 规则浏览路径 | `rule/tonghuashun/tonghuashun_aggregate/tonghuashun_aggregate.yaml` |

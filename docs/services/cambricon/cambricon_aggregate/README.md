@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `cambricon_aggregate` |
+| Rule ID | `cambricon_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `cambricon` |
 | 规则浏览路径 | `rule/cambricon/cambricon_aggregate/cambricon_aggregate.yaml` |

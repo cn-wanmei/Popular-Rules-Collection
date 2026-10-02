@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `37games_aggregate` |
+| Rule ID | `37games_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `37games` |
 | 规则浏览路径 | `rule/37games/37games_aggregate/37games_aggregate.yaml` |

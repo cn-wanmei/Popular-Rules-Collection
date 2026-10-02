@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `playstation_aggregate` |
+| Rule ID | `playstation_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `playstation` |
 | 规则浏览路径 | `rule/playstation/playstation_aggregate/playstation_aggregate.yaml` |

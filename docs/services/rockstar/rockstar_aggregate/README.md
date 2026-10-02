@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `rockstar_aggregate` |
+| Rule ID | `rockstar_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `rockstar` |
 | 规则浏览路径 | `rule/rockstar/rockstar_aggregate/rockstar_aggregate.yaml` |

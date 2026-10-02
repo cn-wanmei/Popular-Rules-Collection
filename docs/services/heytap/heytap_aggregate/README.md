@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `heytap_aggregate` |
+| Rule ID | `heytap_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `heytap` |
 | 规则浏览路径 | `rule/heytap/heytap_aggregate/heytap_aggregate.yaml` |

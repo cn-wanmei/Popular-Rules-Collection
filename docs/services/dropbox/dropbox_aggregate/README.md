@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `dropbox_aggregate` |
+| Rule ID | `dropbox_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `dropbox` |
 | 规则浏览路径 | `rule/dropbox/dropbox_aggregate/dropbox_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `baichuan_aggregate` |
+| Rule ID | `baichuan_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `baichuan` |
 | 规则浏览路径 | `rule/baichuan/baichuan_aggregate/baichuan_aggregate.yaml` |

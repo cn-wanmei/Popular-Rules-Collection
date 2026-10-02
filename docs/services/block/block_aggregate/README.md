@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `block_aggregate` |
+| Rule ID | `block_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `block` |
 | 规则浏览路径 | `rule/block/block_aggregate/block_aggregate.yaml` |

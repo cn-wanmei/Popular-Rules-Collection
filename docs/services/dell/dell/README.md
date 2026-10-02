@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `dell` |
+| Rule ID | `dell` |
 | 类型 | service |
 | Provider | `dell` |
 | 规则浏览路径 | `rule/dell/dell/dell.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `arm` |
+| Rule ID | `arm` |
 | 类型 | service |
 | Provider | `arm` |
 | 规则浏览路径 | `rule/arm/arm/arm.yaml` |

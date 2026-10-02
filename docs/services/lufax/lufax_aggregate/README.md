@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `lufax_aggregate` |
+| Rule ID | `lufax_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `lufax` |
 | 规则浏览路径 | `rule/lufax/lufax_aggregate/lufax_aggregate.yaml` |

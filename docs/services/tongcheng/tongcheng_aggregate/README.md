@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `tongcheng_aggregate` |
+| Rule ID | `tongcheng_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `tongcheng` |
 | 规则浏览路径 | `rule/tongcheng/tongcheng_aggregate/tongcheng_aggregate.yaml` |

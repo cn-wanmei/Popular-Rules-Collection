@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `atlassian_aggregate` |
+| Rule ID | `atlassian_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `atlassian` |
 | 规则浏览路径 | `rule/atlassian/atlassian_aggregate/atlassian_aggregate.yaml` |

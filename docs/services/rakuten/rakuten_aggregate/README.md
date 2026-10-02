@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `rakuten_aggregate` |
+| Rule ID | `rakuten_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `rakuten` |
 | 规则浏览路径 | `rule/rakuten/rakuten_aggregate/rakuten_aggregate.yaml` |

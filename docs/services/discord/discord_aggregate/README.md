@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `discord_aggregate` |
+| Rule ID | `discord_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `discord` |
 | 规则浏览路径 | `rule/discord/discord_aggregate/discord_aggregate.yaml` |

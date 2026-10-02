@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `tsmc_aggregate` |
+| Rule ID | `tsmc_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `tsmc` |
 | 规则浏览路径 | `rule/tsmc/tsmc_aggregate/tsmc_aggregate.yaml` |

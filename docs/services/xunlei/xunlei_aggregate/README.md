@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `xunlei_aggregate` |
+| Rule ID | `xunlei_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `xunlei` |
 | 规则浏览路径 | `rule/xunlei/xunlei_aggregate/xunlei_aggregate.yaml` |

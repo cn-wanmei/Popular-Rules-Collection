@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `migu_aggregate` |
+| Rule ID | `migu_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `migu` |
 | 规则浏览路径 | `rule/migu/migu_aggregate/migu_aggregate.yaml` |

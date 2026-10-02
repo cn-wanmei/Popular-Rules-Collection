@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `schneider_aggregate` |
+| Rule ID | `schneider_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `schneider` |
 | 规则浏览路径 | `rule/schneider/schneider_aggregate/schneider_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `dewu_aggregate` |
+| Rule ID | `dewu_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `dewu` |
 | 规则浏览路径 | `rule/dewu/dewu_aggregate/dewu_aggregate.yaml` |

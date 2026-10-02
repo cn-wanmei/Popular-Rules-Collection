@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `elevenlabs_aggregate` |
+| Rule ID | `elevenlabs_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `elevenlabs` |
 | 规则浏览路径 | `rule/elevenlabs/elevenlabs_aggregate/elevenlabs_aggregate.yaml` |

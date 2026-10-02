@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `autodesk_aggregate` |
+| Rule ID | `autodesk_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `autodesk` |
 | 规则浏览路径 | `rule/autodesk/autodesk_aggregate/autodesk_aggregate.yaml` |

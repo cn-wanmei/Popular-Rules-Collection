@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `sap` |
+| Rule ID | `sap` |
 | 类型 | service |
 | Provider | `sap` |
 | 规则浏览路径 | `rule/sap/sap/sap.yaml` |

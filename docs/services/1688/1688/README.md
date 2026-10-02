@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `1688` |
+| Rule ID | `1688` |
 | 类型 | provider_aggregate |
 | Provider | `1688` |
 | 规则浏览路径 | `rule/1688/1688/1688.yaml` |

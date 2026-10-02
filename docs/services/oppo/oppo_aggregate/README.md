@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `oppo_aggregate` |
+| Rule ID | `oppo_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `oppo` |
 | 规则浏览路径 | `rule/oppo/oppo_aggregate/oppo_aggregate.yaml` |

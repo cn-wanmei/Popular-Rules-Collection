@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `lenovo_aggregate` |
+| Rule ID | `lenovo_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `lenovo` |
 | 规则浏览路径 | `rule/lenovo/lenovo_aggregate/lenovo_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `honor` |
+| Rule ID | `honor` |
 | 类型 | service |
 | Provider | `honor` |
 | 规则浏览路径 | `rule/honor/honor/honor.yaml` |

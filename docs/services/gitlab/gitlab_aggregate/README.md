@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `gitlab_aggregate` |
+| Rule ID | `gitlab_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `gitlab` |
 | 规则浏览路径 | `rule/gitlab/gitlab_aggregate/gitlab_aggregate.yaml` |

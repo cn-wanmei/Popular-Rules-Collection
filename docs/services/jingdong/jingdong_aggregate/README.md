@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `jingdong_aggregate` |
+| Rule ID | `jingdong_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `jingdong` |
 | 规则浏览路径 | `rule/jingdong/jingdong_aggregate/jingdong_aggregate.yaml` |

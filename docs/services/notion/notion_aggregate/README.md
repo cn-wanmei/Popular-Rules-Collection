@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `notion_aggregate` |
+| Rule ID | `notion_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `notion` |
 | 规则浏览路径 | `rule/notion/notion_aggregate/notion_aggregate.yaml` |

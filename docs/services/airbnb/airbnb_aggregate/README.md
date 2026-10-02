@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `airbnb_aggregate` |
+| Rule ID | `airbnb_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `airbnb` |
 | 规则浏览路径 | `rule/airbnb/airbnb_aggregate/airbnb_aggregate.yaml` |

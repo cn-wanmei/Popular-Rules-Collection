@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `amd` |
+| Rule ID | `amd` |
 | 类型 | service |
 | Provider | `amd` |
 | 规则浏览路径 | `rule/amd/amd/amd.yaml` |

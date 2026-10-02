@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `cursor_aggregate` |
+| Rule ID | `cursor_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `cursor` |
 | 规则浏览路径 | `rule/cursor/cursor_aggregate/cursor_aggregate.yaml` |

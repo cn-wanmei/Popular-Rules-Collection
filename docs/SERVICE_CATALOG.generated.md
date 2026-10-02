@@ -169,8 +169,8 @@ Do not hand-edit. Source: `rule/_index.yaml`.
 | `deepseek_aggregate` | DeepSeek | `deepseek` | provider_aggregate | 2 | 2 | [deepseek_aggregate](rules/deepseek_aggregate.md) |
 | `dell` | Dell | `dell` | service | 2 | 2 | [dell](rules/dell.md) |
 | `dell_aggregate` | Dell | `dell` | provider_aggregate | 2 | 2 | [dell_aggregate](rules/dell_aggregate.md) |
-| `developer` | developer | `` | aggregate | 684 | 0 | [developer](rules/developer.md) |
-| `developer` | Developer Ecosystem | `` | category | 285 | 0 | [developer](rules/developer.md) |
+| `developer` | developer | `` | aggregate | 684 | 7 | [developer](rules/developer.md) |
+| `developer` | Developer Ecosystem | `` | category | 285 | 7 | [developer](rules/developer.md) |
 | `dewu` | Dewu | `dewu` | service | 45 | 2 | [dewu](rules/dewu.md) |
 | `dewu_aggregate` | Dewu | `dewu` | provider_aggregate | 45 | 2 | [dewu_aggregate](rules/dewu_aggregate.md) |
 | `didi` | DiDi | `didi` | service | 25 | 2 | [didi](rules/didi.md) |

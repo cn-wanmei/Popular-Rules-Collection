@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `weibo_aggregate` |
+| Rule ID | `weibo_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `weibo` |
 | 规则浏览路径 | `rule/weibo/weibo_aggregate/weibo_aggregate.yaml` |

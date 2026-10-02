@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `arm_aggregate` |
+| Rule ID | `arm_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `arm` |
 | 规则浏览路径 | `rule/arm/arm_aggregate/arm_aggregate.yaml` |

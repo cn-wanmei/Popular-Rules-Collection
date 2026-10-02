@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `huya` |
+| Rule ID | `huya` |
 | 类型 | service |
 | Provider | `huya` |
 | 规则浏览路径 | `rule/huya/huya/huya.yaml` |

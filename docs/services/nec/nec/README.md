@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `nec` |
+| Rule ID | `nec` |
 | 类型 | service |
 | Provider | `nec` |
 | 规则浏览路径 | `rule/nec/nec/nec.yaml` |

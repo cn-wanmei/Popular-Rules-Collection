@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `mgtv_aggregate` |
+| Rule ID | `mgtv_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `mgtv` |
 | 规则浏览路径 | `rule/mgtv/mgtv_aggregate/mgtv_aggregate.yaml` |

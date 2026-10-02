@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `netlify_aggregate` |
+| Rule ID | `netlify_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `netlify` |
 | 规则浏览路径 | `rule/netlify/netlify_aggregate/netlify_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `threads` |
+| Rule ID | `threads` |
 | 类型 | service |
 | Provider | `meta` |
 | 规则浏览路径 | `rule/meta/threads/threads.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `linecorp_aggregate` |
+| Rule ID | `linecorp_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `linecorp` |
 | 规则浏览路径 | `rule/linecorp/linecorp_aggregate/linecorp_aggregate.yaml` |

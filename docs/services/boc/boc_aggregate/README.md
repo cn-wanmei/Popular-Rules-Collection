@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `boc_aggregate` |
+| Rule ID | `boc_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `boc` |
 | 规则浏览路径 | `rule/boc/boc_aggregate/boc_aggregate.yaml` |

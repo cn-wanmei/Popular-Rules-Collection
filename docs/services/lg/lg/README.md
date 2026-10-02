@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `lg` |
+| Rule ID | `lg` |
 | 类型 | service |
 | Provider | `lg` |
 | 规则浏览路径 | `rule/lg/lg/lg.yaml` |

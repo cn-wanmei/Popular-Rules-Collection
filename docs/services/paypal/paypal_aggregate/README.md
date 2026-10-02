@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `paypal_aggregate` |
+| Rule ID | `paypal_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `paypal` |
 | 规则浏览路径 | `rule/paypal/paypal_aggregate/paypal_aggregate.yaml` |

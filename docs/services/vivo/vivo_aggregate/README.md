@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `vivo_aggregate` |
+| Rule ID | `vivo_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `vivo` |
 | 规则浏览路径 | `rule/vivo/vivo_aggregate/vivo_aggregate.yaml` |

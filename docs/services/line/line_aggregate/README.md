@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `line_aggregate` |
+| Rule ID | `line_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `line` |
 | 规则浏览路径 | `rule/line/line_aggregate/line_aggregate.yaml` |

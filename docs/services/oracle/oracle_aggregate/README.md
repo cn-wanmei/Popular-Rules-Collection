@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `oracle_aggregate` |
+| Rule ID | `oracle_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `oracle` |
 | 规则浏览路径 | `rule/oracle/oracle_aggregate/oracle_aggregate.yaml` |

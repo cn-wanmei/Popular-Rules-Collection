@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `grab_aggregate` |
+| Rule ID | `grab_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `grab` |
 | 规则浏览路径 | `rule/grab/grab_aggregate/grab_aggregate.yaml` |

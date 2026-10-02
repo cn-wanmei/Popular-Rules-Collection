@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `yonyou_aggregate` |
+| Rule ID | `yonyou_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `yonyou` |
 | 规则浏览路径 | `rule/yonyou/yonyou_aggregate/yonyou_aggregate.yaml` |

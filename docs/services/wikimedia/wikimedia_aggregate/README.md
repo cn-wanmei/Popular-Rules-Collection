@@ -9,6 +9,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `wikimedia_aggregate` |
+| Rule ID | `wikimedia_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `wikimedia` |
 | 规则浏览路径 | `rule/wikimedia/wikimedia_aggregate/wikimedia_aggregate.yaml` |

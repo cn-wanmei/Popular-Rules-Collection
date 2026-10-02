@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `minimax_aggregate` |
+| Rule ID | `minimax_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `minimax` |
 | 规则浏览路径 | `rule/minimax/minimax_aggregate/minimax_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `yi` |
+| Rule ID | `yi` |
 | 类型 | service |
 | Provider | `yi` |
 | 规则浏览路径 | `rule/yi/yi/yi.yaml` |

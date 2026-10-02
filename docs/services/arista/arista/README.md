@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `arista` |
+| Rule ID | `arista` |
 | 类型 | service |
 | Provider | `arista` |
 | 规则浏览路径 | `rule/arista/arista/arista.yaml` |

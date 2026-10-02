@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `hbo` |
+| Rule ID | `hbo` |
 | 类型 | service |
 | Provider | `hbo` |
 | 规则浏览路径 | `rule/hbo/hbo/hbo.yaml` |

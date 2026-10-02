@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `tidal_aggregate` |
+| Rule ID | `tidal_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `tidal` |
 | 规则浏览路径 | `rule/tidal/tidal_aggregate/tidal_aggregate.yaml` |

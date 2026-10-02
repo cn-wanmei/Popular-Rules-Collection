@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `byd_aggregate` |
+| Rule ID | `byd_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `byd` |
 | 规则浏览路径 | `rule/byd/byd_aggregate/byd_aggregate.yaml` |

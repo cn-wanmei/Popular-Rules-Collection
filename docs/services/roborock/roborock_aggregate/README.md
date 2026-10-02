@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `roborock_aggregate` |
+| Rule ID | `roborock_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `roborock` |
 | 规则浏览路径 | `rule/roborock/roborock_aggregate/roborock_aggregate.yaml` |

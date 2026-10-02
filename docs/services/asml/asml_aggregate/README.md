@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `asml_aggregate` |
+| Rule ID | `asml_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `asml` |
 | 规则浏览路径 | `rule/asml/asml_aggregate/asml_aggregate.yaml` |

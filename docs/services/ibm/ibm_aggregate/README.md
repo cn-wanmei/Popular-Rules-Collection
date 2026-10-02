@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `ibm_aggregate` |
+| Rule ID | `ibm_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `ibm` |
 | 规则浏览路径 | `rule/ibm/ibm_aggregate/ibm_aggregate.yaml` |
