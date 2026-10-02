@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `skhynix_aggregate` |
+| Rule ID | `skhynix_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `skhynix` |
 | 规则浏览路径 | `rule/skhynix/skhynix_aggregate/skhynix_aggregate.yaml` |

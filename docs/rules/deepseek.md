@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `deepseek` |
+| Rule ID | `deepseek` |
 | 类型 | service |
 | Provider | `deepseek` |
 | 规则浏览路径 | `rule/deepseek/deepseek/deepseek.yaml` |

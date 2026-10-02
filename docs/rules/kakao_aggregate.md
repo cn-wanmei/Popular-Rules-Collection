@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `kakao_aggregate` |
+| Rule ID | `kakao_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `kakao` |
 | 规则浏览路径 | `rule/kakao/kakao_aggregate/kakao_aggregate.yaml` |

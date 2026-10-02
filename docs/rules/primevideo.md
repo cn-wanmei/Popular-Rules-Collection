@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `primevideo` |
+| Rule ID | `primevideo` |
 | 类型 | service |
 | Provider | `amazon` |
 | 规则浏览路径 | `rule/amazon/primevideo/primevideo.yaml` |

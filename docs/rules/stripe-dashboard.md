@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `stripe-dashboard` |
+| Rule ID | `stripe-dashboard` |
 | 类型 | service |
 | Provider | `stripe` |
 | 规则浏览路径 | `rule/stripe/stripe-dashboard/stripe-dashboard.yaml` |

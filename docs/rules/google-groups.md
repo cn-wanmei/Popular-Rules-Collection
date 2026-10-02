@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `google-groups` |
+| Rule ID | `google-groups` |
 | 类型 | service |
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google-groups/google-groups.yaml` |

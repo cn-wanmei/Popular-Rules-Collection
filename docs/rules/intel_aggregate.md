@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `intel_aggregate` |
+| Rule ID | `intel_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `intel` |
 | 规则浏览路径 | `rule/intel/intel_aggregate/intel_aggregate.yaml` |

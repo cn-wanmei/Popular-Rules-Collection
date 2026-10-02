@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `37games` |
+| Rule ID | `37games` |
 | 类型 | service |
 | Provider | `37games` |
 | 规则浏览路径 | `rule/37games/37games/37games.yaml` |

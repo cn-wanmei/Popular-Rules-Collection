@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `mediatek_aggregate` |
+| Rule ID | `mediatek_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `mediatek` |
 | 规则浏览路径 | `rule/mediatek/mediatek_aggregate/mediatek_aggregate.yaml` |

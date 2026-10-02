@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `abc_aggregate` |
+| Rule ID | `abc_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `abc` |
 | 规则浏览路径 | `rule/abc/abc_aggregate/abc_aggregate.yaml` |

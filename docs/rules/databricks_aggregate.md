@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `databricks_aggregate` |
+| Rule ID | `databricks_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `databricks` |
 | 规则浏览路径 | `rule/databricks/databricks_aggregate/databricks_aggregate.yaml` |

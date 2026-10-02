@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `zoom_aggregate` |
+| Rule ID | `zoom_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `zoom` |
 | 规则浏览路径 | `rule/zoom/zoom_aggregate/zoom_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `micron` |
+| Rule ID | `micron` |
 | 类型 | service |
 | Provider | `micron` |
 | 规则浏览路径 | `rule/micron/micron/micron.yaml` |

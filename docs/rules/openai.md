@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `openai` |
+| Rule ID | `openai` |
 | 类型 | service |
 | Provider | `openai` |
 | 规则浏览路径 | `rule/openai/openai/openai.yaml` |

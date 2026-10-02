@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `okx` |
+| Rule ID | `okx` |
 | 类型 | service |
 | Provider | `okx` |
 | 规则浏览路径 | `rule/okx/okx/okx.yaml` |

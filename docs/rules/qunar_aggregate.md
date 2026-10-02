@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `qunar_aggregate` |
+| Rule ID | `qunar_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `qunar` |
 | 规则浏览路径 | `rule/qunar/qunar_aggregate/qunar_aggregate.yaml` |

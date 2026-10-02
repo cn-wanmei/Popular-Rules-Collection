@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `transsion_aggregate` |
+| Rule ID | `transsion_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `transsion` |
 | 规则浏览路径 | `rule/transsion/transsion_aggregate/transsion_aggregate.yaml` |

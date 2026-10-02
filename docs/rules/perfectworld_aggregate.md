@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `perfectworld_aggregate` |
+| Rule ID | `perfectworld_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `perfectworld` |
 | 规则浏览路径 | `rule/perfectworld/perfectworld_aggregate/perfectworld_aggregate.yaml` |

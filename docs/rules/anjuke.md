@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `anjuke` |
+| Rule ID | `anjuke` |
 | 类型 | service |
 | Provider | `anjuke` |
 | 规则浏览路径 | `rule/anjuke/anjuke/anjuke.yaml` |

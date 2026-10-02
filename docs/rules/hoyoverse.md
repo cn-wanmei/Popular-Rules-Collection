@@ -9,6 +9,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `hoyoverse` |
+| Rule ID | `hoyoverse` |
 | 类型 | provider_aggregate |
 | Provider | `hoyoverse` |
 | 规则浏览路径 | `rule/hoyoverse/hoyoverse/hoyoverse.yaml` |

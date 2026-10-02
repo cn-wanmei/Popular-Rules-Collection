@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `tencentvideo` |
+| Rule ID | `tencentvideo` |
 | 类型 | service |
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/tencentvideo/tencentvideo.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `hpe` |
+| Rule ID | `hpe` |
 | 类型 | service |
 | Provider | `hpe` |
 | 规则浏览路径 | `rule/hpe/hpe/hpe.yaml` |

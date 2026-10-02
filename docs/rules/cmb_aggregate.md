@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `cmb_aggregate` |
+| Rule ID | `cmb_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `cmb` |
 | 规则浏览路径 | `rule/cmb/cmb_aggregate/cmb_aggregate.yaml` |

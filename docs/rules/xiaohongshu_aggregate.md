@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `xiaohongshu_aggregate` |
+| Rule ID | `xiaohongshu_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `xiaohongshu` |
 | 规则浏览路径 | `rule/xiaohongshu/xiaohongshu_aggregate/xiaohongshu_aggregate.yaml` |

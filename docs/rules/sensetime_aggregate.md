@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `sensetime_aggregate` |
+| Rule ID | `sensetime_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `sensetime` |
 | 规则浏览路径 | `rule/sensetime/sensetime_aggregate/sensetime_aggregate.yaml` |

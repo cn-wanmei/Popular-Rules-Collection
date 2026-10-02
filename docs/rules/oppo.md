@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `oppo` |
+| Rule ID | `oppo` |
 | 类型 | service |
 | Provider | `oppo` |
 | 规则浏览路径 | `rule/oppo/oppo/oppo.yaml` |

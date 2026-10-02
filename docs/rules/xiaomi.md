@@ -9,6 +9,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `xiaomi` |
+| Rule ID | `xiaomi` |
 | 类型 | provider_aggregate |
 | Provider | `xiaomi` |
 | 规则浏览路径 | `rule/xiaomi/xiaomi/xiaomi.yaml` |

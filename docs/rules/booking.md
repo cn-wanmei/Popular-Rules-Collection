@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `booking` |
+| Rule ID | `booking` |
 | 类型 | service |
 | Provider | `booking` |
 | 规则浏览路径 | `rule/booking/booking/booking.yaml` |

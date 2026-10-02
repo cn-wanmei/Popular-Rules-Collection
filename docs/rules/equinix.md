@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `equinix` |
+| Rule ID | `equinix` |
 | 类型 | service |
 | Provider | `equinix` |
 | 规则浏览路径 | `rule/equinix/equinix/equinix.yaml` |

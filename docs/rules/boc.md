@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `boc` |
+| Rule ID | `boc` |
 | 类型 | service |
 | Provider | `boc` |
 | 规则浏览路径 | `rule/boc/boc/boc.yaml` |

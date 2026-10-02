@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `eastmoney` |
+| Rule ID | `eastmoney` |
 | 类型 | service |
 | Provider | `eastmoney` |
 | 规则浏览路径 | `rule/eastmoney/eastmoney/eastmoney.yaml` |

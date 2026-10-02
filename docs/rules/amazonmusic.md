@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `amazonmusic` |
+| Rule ID | `amazonmusic` |
 | 类型 | service |
 | Provider | `amazon` |
 | 规则浏览路径 | `rule/amazon/amazonmusic/amazonmusic.yaml` |

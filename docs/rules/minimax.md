@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `minimax` |
+| Rule ID | `minimax` |
 | 类型 | service |
 | Provider | `minimax` |
 | 规则浏览路径 | `rule/minimax/minimax/minimax.yaml` |

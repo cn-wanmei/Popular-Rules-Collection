@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `testflight` |
+| Rule ID | `testflight` |
 | 类型 | service |
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/testflight/testflight.yaml` |

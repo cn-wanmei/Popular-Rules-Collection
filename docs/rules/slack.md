@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `slack` |
+| Rule ID | `slack` |
 | 类型 | service |
 | Provider | `salesforce` |
 | 规则浏览路径 | `rule/salesforce/slack/slack.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `private` |
+| Rule ID | `private` |
 | 类型 | service |
 | Provider | `special` |
 | 规则浏览路径 | `rule/special/private/private.yaml` |

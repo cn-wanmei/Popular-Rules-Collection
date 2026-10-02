@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `stripe` |
+| Rule ID | `stripe` |
 | 类型 | service |
 | Provider | `stripe` |
 | 规则浏览路径 | `rule/stripe/stripe/stripe.yaml` |

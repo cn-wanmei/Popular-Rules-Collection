@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `wanmei_aggregate` |
+| Rule ID | `wanmei_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `wanmei` |
 | 规则浏览路径 | `rule/wanmei/wanmei_aggregate/wanmei_aggregate.yaml` |

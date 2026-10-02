@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `nintendo` |
+| Rule ID | `nintendo` |
 | 类型 | service |
 | Provider | `nintendo` |
 | 规则浏览路径 | `rule/nintendo/nintendo/nintendo.yaml` |

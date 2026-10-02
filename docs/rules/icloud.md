@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `icloud` |
+| Rule ID | `icloud` |
 | 类型 | service |
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/icloud/icloud.yaml` |

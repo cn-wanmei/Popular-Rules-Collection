@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `reddit_aggregate` |
+| Rule ID | `reddit_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `reddit` |
 | 规则浏览路径 | `rule/reddit/reddit_aggregate/reddit_aggregate.yaml` |

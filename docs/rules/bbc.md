@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `bbc` |
+| Rule ID | `bbc` |
 | 类型 | service |
 | Provider | `bbc` |
 | 规则浏览路径 | `rule/bbc/bbc/bbc.yaml` |

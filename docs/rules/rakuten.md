@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `rakuten` |
+| Rule ID | `rakuten` |
 | 类型 | service |
 | Provider | `rakuten` |
 | 规则浏览路径 | `rule/rakuten/rakuten/rakuten.yaml` |

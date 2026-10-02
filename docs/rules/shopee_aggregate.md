@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `shopee_aggregate` |
+| Rule ID | `shopee_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `shopee` |
 | 规则浏览路径 | `rule/shopee/shopee_aggregate/shopee_aggregate.yaml` |

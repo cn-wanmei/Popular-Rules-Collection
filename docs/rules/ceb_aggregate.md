@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `ceb_aggregate` |
+| Rule ID | `ceb_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `ceb` |
 | 规则浏览路径 | `rule/ceb/ceb_aggregate/ceb_aggregate.yaml` |

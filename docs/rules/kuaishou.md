@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `kuaishou` |
+| Rule ID | `kuaishou` |
 | 类型 | service |
 | Provider | `kuaishou` |
 | 规则浏览路径 | `rule/kuaishou/kuaishou/kuaishou.yaml` |

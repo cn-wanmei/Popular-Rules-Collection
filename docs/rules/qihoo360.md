@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `qihoo360` |
+| Rule ID | `qihoo360` |
 | 类型 | service |
 | Provider | `qihoo360` |
 | 规则浏览路径 | `rule/qihoo360/qihoo360/qihoo360.yaml` |

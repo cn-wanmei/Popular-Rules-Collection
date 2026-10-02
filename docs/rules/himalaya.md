@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `himalaya` |
+| Rule ID | `himalaya` |
 | 类型 | service |
 | Provider | `himalaya` |
 | 规则浏览路径 | `rule/himalaya/himalaya/himalaya.yaml` |

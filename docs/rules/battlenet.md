@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `battlenet` |
+| Rule ID | `battlenet` |
 | 类型 | service |
 | Provider | `blizzard` |
 | 规则浏览路径 | `rule/blizzard/battlenet/battlenet.yaml` |

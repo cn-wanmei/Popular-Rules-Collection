@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `ctrip` |
+| Rule ID | `ctrip` |
 | 类型 | service |
 | Provider | `ctrip` |
 | 规则浏览路径 | `rule/ctrip/ctrip/ctrip.yaml` |

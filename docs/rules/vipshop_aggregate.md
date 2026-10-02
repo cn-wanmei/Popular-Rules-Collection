@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `vipshop_aggregate` |
+| Rule ID | `vipshop_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `vipshop` |
 | 规则浏览路径 | `rule/vipshop/vipshop_aggregate/vipshop_aggregate.yaml` |

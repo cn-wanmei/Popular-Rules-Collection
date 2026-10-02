@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `pinterest_aggregate` |
+| Rule ID | `pinterest_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `pinterest` |
 | 规则浏览路径 | `rule/pinterest/pinterest_aggregate/pinterest_aggregate.yaml` |

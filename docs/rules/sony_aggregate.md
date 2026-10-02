@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `sony_aggregate` |
+| Rule ID | `sony_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `sony` |
 | 规则浏览路径 | `rule/sony/sony_aggregate/sony_aggregate.yaml` |

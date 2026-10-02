@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `ctyun_aggregate` |
+| Rule ID | `ctyun_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `ctyun` |
 | 规则浏览路径 | `rule/ctyun/ctyun_aggregate/ctyun_aggregate.yaml` |

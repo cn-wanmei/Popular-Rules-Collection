@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `intuit` |
+| Rule ID | `intuit` |
 | 类型 | service |
 | Provider | `intuit` |
 | 规则浏览路径 | `rule/intuit/intuit/intuit.yaml` |

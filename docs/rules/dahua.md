@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `dahua` |
+| Rule ID | `dahua` |
 | 类型 | service |
 | Provider | `dahua` |
 | 规则浏览路径 | `rule/dahua/dahua/dahua.yaml` |

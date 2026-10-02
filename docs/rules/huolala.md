@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `huolala` |
+| Rule ID | `huolala` |
 | 类型 | service |
 | Provider | `huolala` |
 | 规则浏览路径 | `rule/huolala/huolala/huolala.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `lark` |
+| Rule ID | `lark` |
 | 类型 | service |
 | Provider | `bytedance` |
 | 规则浏览路径 | `rule/bytedance/lark/lark.yaml` |

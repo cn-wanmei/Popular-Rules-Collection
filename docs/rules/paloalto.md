@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `paloalto` |
+| Rule ID | `paloalto` |
 | 类型 | service |
 | Provider | `paloalto` |
 | 规则浏览路径 | `rule/paloalto/paloalto/paloalto.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `didi_aggregate` |
+| Rule ID | `didi_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `didi` |
 | 规则浏览路径 | `rule/didi/didi_aggregate/didi_aggregate.yaml` |

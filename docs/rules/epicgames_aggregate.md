@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `epicgames_aggregate` |
+| Rule ID | `epicgames_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `epicgames` |
 | 规则浏览路径 | `rule/epicgames/epicgames_aggregate/epicgames_aggregate.yaml` |

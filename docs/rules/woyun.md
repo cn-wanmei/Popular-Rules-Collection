@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `woyun` |
+| Rule ID | `woyun` |
 | 类型 | service |
 | Provider | `woyun` |
 | 规则浏览路径 | `rule/woyun/woyun/woyun.yaml` |

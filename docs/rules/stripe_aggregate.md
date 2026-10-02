@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `stripe_aggregate` |
+| Rule ID | `stripe_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `stripe` |
 | 规则浏览路径 | `rule/stripe/stripe_aggregate/stripe_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `cisco_aggregate` |
+| Rule ID | `cisco_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `cisco` |
 | 规则浏览路径 | `rule/cisco/cisco_aggregate/cisco_aggregate.yaml` |

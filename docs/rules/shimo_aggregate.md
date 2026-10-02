@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `shimo_aggregate` |
+| Rule ID | `shimo_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `shimo` |
 | 规则浏览路径 | `rule/shimo/shimo_aggregate/shimo_aggregate.yaml` |

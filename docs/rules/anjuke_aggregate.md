@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `anjuke_aggregate` |
+| Rule ID | `anjuke_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `anjuke` |
 | 规则浏览路径 | `rule/anjuke/anjuke_aggregate/anjuke_aggregate.yaml` |

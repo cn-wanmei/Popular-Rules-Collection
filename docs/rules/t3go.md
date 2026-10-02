@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `t3go` |
+| Rule ID | `t3go` |
 | 类型 | service |
 | Provider | `t3go` |
 | 规则浏览路径 | `rule/t3go/t3go/t3go.yaml` |

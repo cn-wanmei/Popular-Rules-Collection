@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `cadence_aggregate` |
+| Rule ID | `cadence_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `cadence` |
 | 规则浏览路径 | `rule/cadence/cadence_aggregate/cadence_aggregate.yaml` |

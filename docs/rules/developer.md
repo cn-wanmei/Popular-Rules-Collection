@@ -9,6 +9,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `developer` |
+| Rule ID | `developer` |
 | 类型 | category |
 | Provider | `` |
 | 规则浏览路径 | `rule/category/developer/developer.yaml` |
@@ -31,13 +32,13 @@
 
 | 客户端 | Raw URL |
 |---|---|
-| egern | _not in manifest_ |
-| loon | _not in manifest_ |
-| mihomo | _not in manifest_ |
-| quantumultx | _not in manifest_ |
-| shadowrocket | _not in manifest_ |
-| singbox | _not in manifest_ |
-| surge | _not in manifest_ |
+| egern | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/categories/developer/developer.yaml` |
+| loon | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/categories/developer/developer.list` |
+| mihomo | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/categories/developer/developer.yaml` |
+| quantumultx | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/categories/developer/developer.list` |
+| shadowrocket | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/categories/developer/developer.list` |
+| singbox | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/categories/developer/developer.json` |
+| surge | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/categories/developer/developer.list` |
 
 ## 5. Source
 

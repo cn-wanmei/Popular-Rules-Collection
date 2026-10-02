@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `kla_aggregate` |
+| Rule ID | `kla_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `kla` |
 | 规则浏览路径 | `rule/kla/kla_aggregate/kla_aggregate.yaml` |

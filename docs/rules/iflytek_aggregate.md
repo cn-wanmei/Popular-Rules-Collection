@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `iflytek_aggregate` |
+| Rule ID | `iflytek_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `iflytek` |
 | 规则浏览路径 | `rule/iflytek/iflytek_aggregate/iflytek_aggregate.yaml` |

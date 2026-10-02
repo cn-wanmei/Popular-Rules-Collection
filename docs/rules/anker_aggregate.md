@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `anker_aggregate` |
+| Rule ID | `anker_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `anker` |
 | 规则浏览路径 | `rule/anker/anker_aggregate/anker_aggregate.yaml` |

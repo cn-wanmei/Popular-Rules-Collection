@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `nvidia` |
+| Rule ID | `nvidia` |
 | 类型 | service |
 | Provider | `nvidia` |
 | 规则浏览路径 | `rule/nvidia/nvidia/nvidia.yaml` |

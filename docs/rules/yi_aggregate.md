@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `yi_aggregate` |
+| Rule ID | `yi_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `yi` |
 | 规则浏览路径 | `rule/yi/yi_aggregate/yi_aggregate.yaml` |

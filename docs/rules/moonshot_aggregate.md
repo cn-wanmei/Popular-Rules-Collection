@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `moonshot_aggregate` |
+| Rule ID | `moonshot_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `moonshot` |
 | 规则浏览路径 | `rule/moonshot/moonshot_aggregate/moonshot_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `baiduwenku` |
+| Rule ID | `baiduwenku` |
 | 类型 | service |
 | Provider | `baidu` |
 | 规则浏览路径 | `rule/baidu/baiduwenku/baiduwenku.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `hikvision_aggregate` |
+| Rule ID | `hikvision_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `hikvision` |
 | 规则浏览路径 | `rule/hikvision/hikvision_aggregate/hikvision_aggregate.yaml` |

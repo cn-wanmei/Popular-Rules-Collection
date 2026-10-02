@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `unity_aggregate` |
+| Rule ID | `unity_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `unity` |
 | 规则浏览路径 | `rule/unity/unity_aggregate/unity_aggregate.yaml` |

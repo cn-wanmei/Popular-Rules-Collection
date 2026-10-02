@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `palantir_aggregate` |
+| Rule ID | `palantir_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `palantir` |
 | 规则浏览路径 | `rule/palantir/palantir_aggregate/palantir_aggregate.yaml` |

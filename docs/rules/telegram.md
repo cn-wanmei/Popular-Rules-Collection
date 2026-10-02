@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `telegram` |
+| Rule ID | `telegram` |
 | 类型 | service |
 | Provider | `telegram` |
 | 规则浏览路径 | `rule/telegram/telegram/telegram.yaml` |

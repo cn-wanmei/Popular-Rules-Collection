@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `siemens_aggregate` |
+| Rule ID | `siemens_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `siemens` |
 | 规则浏览路径 | `rule/siemens/siemens_aggregate/siemens_aggregate.yaml` |

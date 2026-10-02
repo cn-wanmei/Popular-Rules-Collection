@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `supermicro` |
+| Rule ID | `supermicro` |
 | 类型 | service |
 | Provider | `supermicro` |
 | 规则浏览路径 | `rule/supermicro/supermicro/supermicro.yaml` |

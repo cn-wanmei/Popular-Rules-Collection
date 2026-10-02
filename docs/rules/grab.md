@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `grab` |
+| Rule ID | `grab` |
 | 类型 | service |
 | Provider | `grab` |
 | 规则浏览路径 | `rule/grab/grab/grab.yaml` |

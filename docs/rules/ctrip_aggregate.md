@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `ctrip_aggregate` |
+| Rule ID | `ctrip_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `ctrip` |
 | 规则浏览路径 | `rule/ctrip/ctrip_aggregate/ctrip_aggregate.yaml` |

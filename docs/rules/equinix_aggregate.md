@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `equinix_aggregate` |
+| Rule ID | `equinix_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `equinix` |
 | 规则浏览路径 | `rule/equinix/equinix_aggregate/equinix_aggregate.yaml` |

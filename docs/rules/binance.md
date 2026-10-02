@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `binance` |
+| Rule ID | `binance` |
 | 类型 | service |
 | Provider | `binance` |
 | 规则浏览路径 | `rule/binance/binance/binance.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `soundcloud_aggregate` |
+| Rule ID | `soundcloud_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `soundcloud` |
 | 规则浏览路径 | `rule/soundcloud/soundcloud_aggregate/soundcloud_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `honorofkings_cn` |
+| Rule ID | `honorofkings_cn` |
 | 类型 | service |
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/honorofkings_cn/honorofkings_cn.yaml` |

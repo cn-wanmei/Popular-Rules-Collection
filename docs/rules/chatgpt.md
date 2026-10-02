@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `chatgpt` |
+| Rule ID | `chatgpt` |
 | 类型 | service |
 | Provider | `openai` |
 | 规则浏览路径 | `rule/openai/chatgpt/chatgpt.yaml` |

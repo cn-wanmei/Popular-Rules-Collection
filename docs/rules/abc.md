@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `abc` |
+| Rule ID | `abc` |
 | 类型 | service |
 | Provider | `abc` |
 | 规则浏览路径 | `rule/abc/abc/abc.yaml` |

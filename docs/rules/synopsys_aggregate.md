@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `synopsys_aggregate` |
+| Rule ID | `synopsys_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `synopsys` |
 | 规则浏览路径 | `rule/synopsys/synopsys_aggregate/synopsys_aggregate.yaml` |

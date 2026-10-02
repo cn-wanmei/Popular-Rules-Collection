@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `12306_aggregate` |
+| Rule ID | `12306_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `12306` |
 | 规则浏览路径 | `rule/12306/12306_aggregate/12306_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `groq` |
+| Rule ID | `groq` |
 | 类型 | service |
 | Provider | `groq` |
 | 规则浏览路径 | `rule/groq/groq/groq.yaml` |

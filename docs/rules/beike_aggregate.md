@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `beike_aggregate` |
+| Rule ID | `beike_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `beike` |
 | 规则浏览路径 | `rule/beike/beike_aggregate/beike_aggregate.yaml` |

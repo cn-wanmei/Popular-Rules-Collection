@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `meta` |
+| Rule ID | `meta` |
 | 类型 | provider_aggregate |
 | Provider | `meta` |
 | 规则浏览路径 | `rule/meta/meta/meta.yaml` |

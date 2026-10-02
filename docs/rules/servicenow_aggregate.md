@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `servicenow_aggregate` |
+| Rule ID | `servicenow_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `servicenow` |
 | 规则浏览路径 | `rule/servicenow/servicenow_aggregate/servicenow_aggregate.yaml` |

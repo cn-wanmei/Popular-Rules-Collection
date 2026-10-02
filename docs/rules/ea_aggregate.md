@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `ea_aggregate` |
+| Rule ID | `ea_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `ea` |
 | 规则浏览路径 | `rule/ea/ea_aggregate/ea_aggregate.yaml` |

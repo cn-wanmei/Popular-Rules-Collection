@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `shiji` |
+| Rule ID | `shiji` |
 | 类型 | service |
 | Provider | `shiji` |
 | 规则浏览路径 | `rule/shiji/shiji/shiji.yaml` |

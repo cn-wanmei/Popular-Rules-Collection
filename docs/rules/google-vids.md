@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `google-vids` |
+| Rule ID | `google-vids` |
 | 类型 | service |
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google-vids/google-vids.yaml` |

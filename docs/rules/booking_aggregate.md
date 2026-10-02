@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `booking_aggregate` |
+| Rule ID | `booking_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `booking` |
 | 规则浏览路径 | `rule/booking/booking_aggregate/booking_aggregate.yaml` |

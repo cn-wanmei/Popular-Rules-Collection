@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `shopify_aggregate` |
+| Rule ID | `shopify_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `shopify` |
 | 规则浏览路径 | `rule/shopify/shopify_aggregate/shopify_aggregate.yaml` |

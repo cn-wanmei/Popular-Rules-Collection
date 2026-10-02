@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `kla` |
+| Rule ID | `kla` |
 | 类型 | service |
 | Provider | `kla` |
 | 规则浏览路径 | `rule/kla/kla/kla.yaml` |

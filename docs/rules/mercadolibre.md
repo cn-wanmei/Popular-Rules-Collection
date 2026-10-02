@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `mercadolibre` |
+| Rule ID | `mercadolibre` |
 | 类型 | service |
 | Provider | `mercadolibre` |
 | 规则浏览路径 | `rule/mercadolibre/mercadolibre/mercadolibre.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `openai-platform` |
+| Rule ID | `openai-platform` |
 | 类型 | service |
 | Provider | `openai` |
 | 规则浏览路径 | `rule/openai/openai-platform/openai-platform.yaml` |

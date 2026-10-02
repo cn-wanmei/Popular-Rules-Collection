@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `byd` |
+| Rule ID | `byd` |
 | 类型 | service |
 | Provider | `byd` |
 | 规则浏览路径 | `rule/byd/byd/byd.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `workday` |
+| Rule ID | `workday` |
 | 类型 | service |
 | Provider | `workday` |
 | 规则浏览路径 | `rule/workday/workday/workday.yaml` |

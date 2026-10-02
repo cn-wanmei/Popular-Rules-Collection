@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `zhaopin` |
+| Rule ID | `zhaopin` |
 | 类型 | service |
 | Provider | `zhaopin` |
 | 规则浏览路径 | `rule/zhaopin/zhaopin/zhaopin.yaml` |

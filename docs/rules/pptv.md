@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `pptv` |
+| Rule ID | `pptv` |
 | 类型 | service |
 | Provider | `pptv` |
 | 规则浏览路径 | `rule/pptv/pptv/pptv.yaml` |

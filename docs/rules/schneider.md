@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `schneider` |
+| Rule ID | `schneider` |
 | 类型 | service |
 | Provider | `schneider` |
 | 规则浏览路径 | `rule/schneider/schneider/schneider.yaml` |

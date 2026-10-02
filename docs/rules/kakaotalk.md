@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `kakaotalk` |
+| Rule ID | `kakaotalk` |
 | 类型 | service |
 | Provider | `kakaotalk` |
 | 规则浏览路径 | `rule/kakaotalk/kakaotalk/kakaotalk.yaml` |

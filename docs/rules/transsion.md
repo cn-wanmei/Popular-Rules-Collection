@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `transsion` |
+| Rule ID | `transsion` |
 | 类型 | service |
 | Provider | `transsion` |
 | 规则浏览路径 | `rule/transsion/transsion/transsion.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `alibaba` |
+| Rule ID | `alibaba` |
 | 类型 | provider_aggregate |
 | Provider | `alibaba` |
 | 规则浏览路径 | `rule/alibaba/alibaba/alibaba.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `fujitsu` |
+| Rule ID | `fujitsu` |
 | 类型 | service |
 | Provider | `fujitsu` |
 | 规则浏览路径 | `rule/fujitsu/fujitsu/fujitsu.yaml` |

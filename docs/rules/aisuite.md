@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `aisuite` |
+| Rule ID | `aisuite` |
 | 类型 | service |
 | Provider | `special` |
 | 规则浏览路径 | `rule/special/aisuite/aisuite.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `ximalaya_aggregate` |
+| Rule ID | `ximalaya_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `ximalaya` |
 | 规则浏览路径 | `rule/ximalaya/ximalaya_aggregate/ximalaya_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `vipshop` |
+| Rule ID | `vipshop` |
 | 类型 | service |
 | Provider | `vipshop` |
 | 规则浏览路径 | `rule/vipshop/vipshop/vipshop.yaml` |

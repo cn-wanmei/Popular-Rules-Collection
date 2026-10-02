@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `soundcloud` |
+| Rule ID | `soundcloud` |
 | 类型 | service |
 | Provider | `soundcloud` |
 | 规则浏览路径 | `rule/soundcloud/soundcloud/soundcloud.yaml` |

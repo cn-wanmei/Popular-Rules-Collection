@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `bilibili` |
+| Rule ID | `bilibili` |
 | 类型 | service |
 | Provider | `bilibili` |
 | 规则浏览路径 | `rule/bilibili/bilibili/bilibili.yaml` |

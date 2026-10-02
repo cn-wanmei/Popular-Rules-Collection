@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `huggingface_aggregate` |
+| Rule ID | `huggingface_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `huggingface` |
 | 规则浏览路径 | `rule/huggingface/huggingface_aggregate/huggingface_aggregate.yaml` |

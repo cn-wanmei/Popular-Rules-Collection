@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `pinduoduo_aggregate` |
+| Rule ID | `pinduoduo_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `pinduoduo` |
 | 规则浏览路径 | `rule/pinduoduo/pinduoduo_aggregate/pinduoduo_aggregate.yaml` |

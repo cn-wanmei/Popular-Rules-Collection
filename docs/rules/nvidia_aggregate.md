@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `nvidia_aggregate` |
+| Rule ID | `nvidia_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `nvidia` |
 | 规则浏览路径 | `rule/nvidia/nvidia_aggregate/nvidia_aggregate.yaml` |

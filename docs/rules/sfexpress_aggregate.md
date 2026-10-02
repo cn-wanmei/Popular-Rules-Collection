@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `sfexpress_aggregate` |
+| Rule ID | `sfexpress_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `sfexpress` |
 | 规则浏览路径 | `rule/sfexpress/sfexpress_aggregate/sfexpress_aggregate.yaml` |

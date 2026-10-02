@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `arista_aggregate` |
+| Rule ID | `arista_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `arista` |
 | 规则浏览路径 | `rule/arista/arista_aggregate/arista_aggregate.yaml` |

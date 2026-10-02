@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `disney_aggregate` |
+| Rule ID | `disney_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `disney` |
 | 规则浏览路径 | `rule/disney/disney_aggregate/disney_aggregate.yaml` |

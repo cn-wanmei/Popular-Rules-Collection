@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `bahamut_aggregate` |
+| Rule ID | `bahamut_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `bahamut` |
 | 规则浏览路径 | `rule/bahamut/bahamut_aggregate/bahamut_aggregate.yaml` |

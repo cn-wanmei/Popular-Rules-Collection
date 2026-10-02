@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `binance_aggregate` |
+| Rule ID | `binance_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `binance` |
 | 规则浏览路径 | `rule/binance/binance_aggregate/binance_aggregate.yaml` |

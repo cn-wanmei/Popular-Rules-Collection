@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `yonyou` |
+| Rule ID | `yonyou` |
 | 类型 | service |
 | Provider | `yonyou` |
 | 规则浏览路径 | `rule/yonyou/yonyou/yonyou.yaml` |

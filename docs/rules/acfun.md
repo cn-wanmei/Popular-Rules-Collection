@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `acfun` |
+| Rule ID | `acfun` |
 | 类型 | service |
 | Provider | `acfun` |
 | 规则浏览路径 | `rule/acfun/acfun/acfun.yaml` |

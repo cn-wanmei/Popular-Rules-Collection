@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `himalaya_aggregate` |
+| Rule ID | `himalaya_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `himalaya` |
 | 规则浏览路径 | `rule/himalaya/himalaya_aggregate/himalaya_aggregate.yaml` |

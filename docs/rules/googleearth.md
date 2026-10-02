@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `googleearth` |
+| Rule ID | `googleearth` |
 | 类型 | service |
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/googleearth/googleearth.yaml` |

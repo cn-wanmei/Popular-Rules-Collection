@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `sharepoint` |
+| Rule ID | `sharepoint` |
 | 类型 | service |
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/sharepoint/sharepoint.yaml` |

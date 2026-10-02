@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `wangsu_aggregate` |
+| Rule ID | `wangsu_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `wangsu` |
 | 规则浏览路径 | `rule/wangsu/wangsu_aggregate/wangsu_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `adobe-stock` |
+| Rule ID | `adobe-stock` |
 | 类型 | service |
 | Provider | `adobe` |
 | 规则浏览路径 | `rule/adobe/adobe-stock/adobe-stock.yaml` |

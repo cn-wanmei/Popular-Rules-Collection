@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `xigua` |
+| Rule ID | `xigua` |
 | 类型 | service |
 | Provider | `bytedance` |
 | 规则浏览路径 | `rule/bytedance/xigua/xigua.yaml` |

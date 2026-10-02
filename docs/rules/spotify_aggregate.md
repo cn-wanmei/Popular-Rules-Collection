@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `spotify_aggregate` |
+| Rule ID | `spotify_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `spotify` |
 | 规则浏览路径 | `rule/spotify/spotify_aggregate/spotify_aggregate.yaml` |

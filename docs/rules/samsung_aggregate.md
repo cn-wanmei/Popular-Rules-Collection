@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `samsung_aggregate` |
+| Rule ID | `samsung_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `samsung` |
 | 规则浏览路径 | `rule/samsung/samsung_aggregate/samsung_aggregate.yaml` |

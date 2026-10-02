@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `autohome_aggregate` |
+| Rule ID | `autohome_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `autohome` |
 | 规则浏览路径 | `rule/autohome/autohome_aggregate/autohome_aggregate.yaml` |

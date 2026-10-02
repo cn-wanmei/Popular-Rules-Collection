@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `skhynix` |
+| Rule ID | `skhynix` |
 | 类型 | service |
 | Provider | `skhynix` |
 | 规则浏览路径 | `rule/skhynix/skhynix/skhynix.yaml` |

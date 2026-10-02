@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `ti` |
+| Rule ID | `ti` |
 | 类型 | service |
 | Provider | `ti` |
 | 规则浏览路径 | `rule/ti/ti/ti.yaml` |

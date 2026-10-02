@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `notion` |
+| Rule ID | `notion` |
 | 类型 | service |
 | Provider | `notion` |
 | 规则浏览路径 | `rule/notion/notion/notion.yaml` |

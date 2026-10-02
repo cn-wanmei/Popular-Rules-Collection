@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `roblox` |
+| Rule ID | `roblox` |
 | 类型 | service |
 | Provider | `roblox` |
 | 规则浏览路径 | `rule/roblox/roblox/roblox.yaml` |

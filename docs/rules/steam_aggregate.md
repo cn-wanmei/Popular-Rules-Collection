@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `steam_aggregate` |
+| Rule ID | `steam_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `steam` |
 | 规则浏览路径 | `rule/steam/steam_aggregate/steam_aggregate.yaml` |

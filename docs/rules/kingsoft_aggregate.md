@@ -9,6 +9,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `kingsoft_aggregate` |
+| Rule ID | `kingsoft_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `kingsoft` |
 | 规则浏览路径 | `rule/kingsoft/kingsoft_aggregate/kingsoft_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `fortinet` |
+| Rule ID | `fortinet` |
 | 类型 | service |
 | Provider | `fortinet` |
 | 规则浏览路径 | `rule/fortinet/fortinet/fortinet.yaml` |

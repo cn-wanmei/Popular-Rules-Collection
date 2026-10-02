@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `pptv_aggregate` |
+| Rule ID | `pptv_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `pptv` |
 | 规则浏览路径 | `rule/pptv/pptv_aggregate/pptv_aggregate.yaml` |

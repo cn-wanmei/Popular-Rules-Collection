@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `jd-cloud` |
+| Rule ID | `jd-cloud` |
 | 类型 | service |
 | Provider | `jingdong` |
 | 规则浏览路径 | `rule/jingdong/jd-cloud/jd-cloud.yaml` |

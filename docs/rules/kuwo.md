@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `kuwo` |
+| Rule ID | `kuwo` |
 | 类型 | service |
 | Provider | `kuwo` |
 | 规则浏览路径 | `rule/kuwo/kuwo/kuwo.yaml` |

@@ -9,6 +9,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `xai` |
+| Rule ID | `xai` |
 | 类型 | provider_aggregate |
 | Provider | `xai` |
 | 规则浏览路径 | `rule/xai/xai/xai.yaml` |

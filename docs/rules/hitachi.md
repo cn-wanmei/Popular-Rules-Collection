@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `hitachi` |
+| Rule ID | `hitachi` |
 | 类型 | service |
 | Provider | `hitachi` |
 | 规则浏览路径 | `rule/hitachi/hitachi/hitachi.yaml` |

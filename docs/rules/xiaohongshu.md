@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `xiaohongshu` |
+| Rule ID | `xiaohongshu` |
 | 类型 | service |
 | Provider | `xiaohongshu` |
 | 规则浏览路径 | `rule/xiaohongshu/xiaohongshu/xiaohongshu.yaml` |

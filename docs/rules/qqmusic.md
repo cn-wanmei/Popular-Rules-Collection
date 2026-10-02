@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `qqmusic` |
+| Rule ID | `qqmusic` |
 | 类型 | service |
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/qqmusic/qqmusic.yaml` |

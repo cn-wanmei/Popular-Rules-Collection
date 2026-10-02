@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `kunlunxin_aggregate` |
+| Rule ID | `kunlunxin_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `kunlunxin` |
 | 规则浏览路径 | `rule/kunlunxin/kunlunxin_aggregate/kunlunxin_aggregate.yaml` |

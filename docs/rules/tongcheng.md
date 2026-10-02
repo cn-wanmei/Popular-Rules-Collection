@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `tongcheng` |
+| Rule ID | `tongcheng` |
 | 类型 | service |
 | Provider | `tongcheng` |
 | 规则浏览路径 | `rule/tongcheng/tongcheng/tongcheng.yaml` |

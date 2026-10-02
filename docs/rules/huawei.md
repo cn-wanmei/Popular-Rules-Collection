@@ -9,6 +9,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `huawei` |
+| Rule ID | `huawei` |
 | 类型 | provider_aggregate |
 | Provider | `huawei` |
 | 规则浏览路径 | `rule/huawei/huawei/huawei.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `wechat` |
+| Rule ID | `wechat` |
 | 类型 | service |
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/wechat/wechat.yaml` |

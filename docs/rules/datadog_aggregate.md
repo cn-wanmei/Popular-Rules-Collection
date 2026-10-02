@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `datadog_aggregate` |
+| Rule ID | `datadog_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `datadog` |
 | 规则浏览路径 | `rule/datadog/datadog_aggregate/datadog_aggregate.yaml` |

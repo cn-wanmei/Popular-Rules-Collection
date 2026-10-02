@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `intuit_aggregate` |
+| Rule ID | `intuit_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `intuit` |
 | 规则浏览路径 | `rule/intuit/intuit_aggregate/intuit_aggregate.yaml` |

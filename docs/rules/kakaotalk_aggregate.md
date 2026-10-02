@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `kakaotalk_aggregate` |
+| Rule ID | `kakaotalk_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `kakaotalk` |
 | 规则浏览路径 | `rule/kakaotalk/kakaotalk_aggregate/kakaotalk_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `zhipu_aggregate` |
+| Rule ID | `zhipu_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `zhipu` |
 | 规则浏览路径 | `rule/zhipu/zhipu_aggregate/zhipu_aggregate.yaml` |

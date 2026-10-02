@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `riotgames` |
+| Rule ID | `riotgames` |
 | 类型 | service |
 | Provider | `riotgames` |
 | 规则浏览路径 | `rule/riotgames/riotgames/riotgames.yaml` |

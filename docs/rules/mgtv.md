@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `mgtv` |
+| Rule ID | `mgtv` |
 | 类型 | service |
 | Provider | `mgtv` |
 | 规则浏览路径 | `rule/mgtv/mgtv/mgtv.yaml` |

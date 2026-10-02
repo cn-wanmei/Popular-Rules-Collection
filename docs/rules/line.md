@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `line` |
+| Rule ID | `line` |
 | 类型 | service |
 | Provider | `line` |
 | 规则浏览路径 | `rule/line/line/line.yaml` |

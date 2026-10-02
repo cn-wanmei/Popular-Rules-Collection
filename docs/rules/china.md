@@ -9,6 +9,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `china` |
+| Rule ID | `china` |
 | 类型 | domestic_aggregate |
 | Provider | `` |
 | 规则浏览路径 | `rule/china/china.yaml` |

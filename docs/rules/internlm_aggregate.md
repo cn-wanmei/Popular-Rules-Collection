@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `internlm_aggregate` |
+| Rule ID | `internlm_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `internlm` |
 | 规则浏览路径 | `rule/internlm/internlm_aggregate/internlm_aggregate.yaml` |

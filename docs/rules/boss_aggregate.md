@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `boss_aggregate` |
+| Rule ID | `boss_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `boss` |
 | 规则浏览路径 | `rule/boss/boss_aggregate/boss_aggregate.yaml` |

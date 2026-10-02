@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `dassault` |
+| Rule ID | `dassault` |
 | 类型 | service |
 | Provider | `dassault` |
 | 规则浏览路径 | `rule/dassault/dassault/dassault.yaml` |

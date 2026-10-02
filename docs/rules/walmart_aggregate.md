@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `walmart_aggregate` |
+| Rule ID | `walmart_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `walmart` |
 | 规则浏览路径 | `rule/walmart/walmart_aggregate/walmart_aggregate.yaml` |

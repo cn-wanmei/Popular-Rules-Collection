@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `nokia` |
+| Rule ID | `nokia` |
 | 类型 | service |
 | Provider | `nokia` |
 | 规则浏览路径 | `rule/nokia/nokia/nokia.yaml` |

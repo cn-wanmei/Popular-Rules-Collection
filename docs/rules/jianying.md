@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `jianying` |
+| Rule ID | `jianying` |
 | 类型 | service |
 | Provider | `bytedance` |
 | 规则浏览路径 | `rule/bytedance/jianying/jianying.yaml` |

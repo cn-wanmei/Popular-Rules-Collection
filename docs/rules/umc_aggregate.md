@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `umc_aggregate` |
+| Rule ID | `umc_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `umc` |
 | 规则浏览路径 | `rule/umc/umc_aggregate/umc_aggregate.yaml` |

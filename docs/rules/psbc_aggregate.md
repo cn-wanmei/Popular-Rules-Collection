@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `psbc_aggregate` |
+| Rule ID | `psbc_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `psbc` |
 | 规则浏览路径 | `rule/psbc/psbc_aggregate/psbc_aggregate.yaml` |

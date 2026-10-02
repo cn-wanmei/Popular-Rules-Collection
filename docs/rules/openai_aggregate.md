@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `openai_aggregate` |
+| Rule ID | `openai_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `openai` |
 | 规则浏览路径 | `rule/openai/openai_aggregate/openai_aggregate.yaml` |

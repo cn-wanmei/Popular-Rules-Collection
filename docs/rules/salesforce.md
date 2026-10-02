@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `salesforce` |
+| Rule ID | `salesforce` |
 | 类型 | service |
 | Provider | `salesforce` |
 | 规则浏览路径 | `rule/salesforce/salesforce/salesforce.yaml` |

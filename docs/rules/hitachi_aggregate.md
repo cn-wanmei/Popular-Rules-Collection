@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `hitachi_aggregate` |
+| Rule ID | `hitachi_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `hitachi` |
 | 规则浏览路径 | `rule/hitachi/hitachi_aggregate/hitachi_aggregate.yaml` |

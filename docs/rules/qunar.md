@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `qunar` |
+| Rule ID | `qunar` |
 | 类型 | service |
 | Provider | `qunar` |
 | 规则浏览路径 | `rule/qunar/qunar/qunar.yaml` |

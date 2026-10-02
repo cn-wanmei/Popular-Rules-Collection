@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `zhaopin_aggregate` |
+| Rule ID | `zhaopin_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `zhaopin` |
 | 规则浏览路径 | `rule/zhaopin/zhaopin_aggregate/zhaopin_aggregate.yaml` |

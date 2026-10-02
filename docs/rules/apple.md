@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `apple` |
+| Rule ID | `apple` |
 | 类型 | provider_aggregate |
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/apple/apple.yaml` |

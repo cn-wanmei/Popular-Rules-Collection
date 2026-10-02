@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `bbc_aggregate` |
+| Rule ID | `bbc_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `bbc` |
 | 规则浏览路径 | `rule/bbc/bbc_aggregate/bbc_aggregate.yaml` |

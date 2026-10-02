@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `baidu-zhidao` |
+| Rule ID | `baidu-zhidao` |
 | 类型 | service |
 | Provider | `baidu` |
 | 规则浏览路径 | `rule/baidu/baidu-zhidao/baidu-zhidao.yaml` |

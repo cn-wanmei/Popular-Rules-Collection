@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `zoom` |
+| Rule ID | `zoom` |
 | 类型 | service |
 | Provider | `zoom` |
 | 规则浏览路径 | `rule/zoom/zoom/zoom.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `ccb` |
+| Rule ID | `ccb` |
 | 类型 | service |
 | Provider | `ccb` |
 | 规则浏览路径 | `rule/ccb/ccb/ccb.yaml` |

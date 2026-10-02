@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `speedtest` |
+| Rule ID | `speedtest` |
 | 类型 | service |
 | Provider | `ookla` |
 | 规则浏览路径 | `rule/ookla/speedtest/speedtest.yaml` |

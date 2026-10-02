@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `bahamut` |
+| Rule ID | `bahamut` |
 | 类型 | service |
 | Provider | `bahamut` |
 | 规则浏览路径 | `rule/bahamut/bahamut/bahamut.yaml` |

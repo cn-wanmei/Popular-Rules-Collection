@@ -9,6 +9,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `amazon` |
+| Rule ID | `amazon` |
 | 类型 | provider_aggregate |
 | Provider | `amazon` |
 | 规则浏览路径 | `rule/amazon/amazon/amazon.yaml` |

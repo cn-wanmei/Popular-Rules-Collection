@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `nec_aggregate` |
+| Rule ID | `nec_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `nec` |
 | 规则浏览路径 | `rule/nec/nec_aggregate/nec_aggregate.yaml` |

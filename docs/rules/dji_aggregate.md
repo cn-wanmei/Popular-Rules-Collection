@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `dji_aggregate` |
+| Rule ID | `dji_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `dji` |
 | 规则浏览路径 | `rule/dji/dji_aggregate/dji_aggregate.yaml` |

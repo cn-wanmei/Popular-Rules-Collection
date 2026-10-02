@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `manbang_aggregate` |
+| Rule ID | `manbang_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `manbang` |
 | 规则浏览路径 | `rule/manbang/manbang_aggregate/manbang_aggregate.yaml` |

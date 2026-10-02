@@ -9,6 +9,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `special` |
+| Rule ID | `special` |
 | 类型 | provider_aggregate |
 | Provider | `special` |
 | 规则浏览路径 | `rule/special/special/special.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `migu` |
+| Rule ID | `migu` |
 | 类型 | service |
 | Provider | `migu` |
 | 规则浏览路径 | `rule/migu/migu/migu.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `figma_aggregate` |
+| Rule ID | `figma_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `figma` |
 | 规则浏览路径 | `rule/figma/figma_aggregate/figma_aggregate.yaml` |

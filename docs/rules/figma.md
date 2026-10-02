@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `figma` |
+| Rule ID | `figma` |
 | 类型 | service |
 | Provider | `figma` |
 | 规则浏览路径 | `rule/figma/figma/figma.yaml` |

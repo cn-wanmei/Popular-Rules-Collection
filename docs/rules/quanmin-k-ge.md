@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `quanmin-k-ge` |
+| Rule ID | `quanmin-k-ge` |
 | 类型 | service |
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/quanmin-k-ge/quanmin-k-ge.yaml` |

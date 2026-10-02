@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `epicgames` |
+| Rule ID | `epicgames` |
 | 类型 | service |
 | Provider | `epicgames` |
 | 规则浏览路径 | `rule/epicgames/epicgames/epicgames.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `riotgames_aggregate` |
+| Rule ID | `riotgames_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `riotgames` |
 | 规则浏览路径 | `rule/riotgames/riotgames_aggregate/riotgames_aggregate.yaml` |

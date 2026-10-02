@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `paypal` |
+| Rule ID | `paypal` |
 | 类型 | service |
 | Provider | `paypal` |
 | 规则浏览路径 | `rule/paypal/paypal/paypal.yaml` |

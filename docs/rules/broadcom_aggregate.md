@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `broadcom_aggregate` |
+| Rule ID | `broadcom_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `broadcom` |
 | 规则浏览路径 | `rule/broadcom/broadcom_aggregate/broadcom_aggregate.yaml` |

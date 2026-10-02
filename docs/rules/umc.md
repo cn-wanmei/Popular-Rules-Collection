@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `umc` |
+| Rule ID | `umc` |
 | 类型 | service |
 | Provider | `umc` |
 | 规则浏览路径 | `rule/umc/umc/umc.yaml` |

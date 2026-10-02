@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `jetbrains_aggregate` |
+| Rule ID | `jetbrains_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `jetbrains` |
 | 规则浏览路径 | `rule/jetbrains/jetbrains_aggregate/jetbrains_aggregate.yaml` |

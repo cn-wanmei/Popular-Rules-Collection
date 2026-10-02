@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `spacex` |
+| Rule ID | `spacex` |
 | 类型 | service |
 | Provider | `spacex` |
 | 规则浏览路径 | `rule/spacex/spacex/spacex.yaml` |

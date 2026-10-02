@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `ms365-onenote` |
+| Rule ID | `ms365-onenote` |
 | 类型 | service |
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/ms365-onenote/ms365-onenote.yaml` |

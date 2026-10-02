@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `uber_aggregate` |
+| Rule ID | `uber_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `uber` |
 | 规则浏览路径 | `rule/uber/uber_aggregate/uber_aggregate.yaml` |

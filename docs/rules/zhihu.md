@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `zhihu` |
+| Rule ID | `zhihu` |
 | 类型 | service |
 | Provider | `zhihu` |
 | 规则浏览路径 | `rule/zhihu/zhihu/zhihu.yaml` |

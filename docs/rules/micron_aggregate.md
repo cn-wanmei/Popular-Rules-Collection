@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `micron_aggregate` |
+| Rule ID | `micron_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `micron` |
 | 规则浏览路径 | `rule/micron/micron_aggregate/micron_aggregate.yaml` |

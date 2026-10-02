@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `temu` |
+| Rule ID | `temu` |
 | 类型 | service |
 | Provider | `temu` |
 | 规则浏览路径 | `rule/temu/temu/temu.yaml` |

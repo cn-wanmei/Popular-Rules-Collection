@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `salesforce_aggregate` |
+| Rule ID | `salesforce_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `salesforce` |
 | 规则浏览路径 | `rule/salesforce/salesforce_aggregate/salesforce_aggregate.yaml` |

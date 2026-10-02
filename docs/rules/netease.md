@@ -9,6 +9,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `netease` |
+| Rule ID | `netease` |
 | 类型 | provider_aggregate |
 | Provider | `netease` |
 | 规则浏览路径 | `rule/netease/netease/netease.yaml` |

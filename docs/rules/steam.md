@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `steam` |
+| Rule ID | `steam` |
 | 类型 | service |
 | Provider | `steam` |
 | 规则浏览路径 | `rule/steam/steam/steam.yaml` |

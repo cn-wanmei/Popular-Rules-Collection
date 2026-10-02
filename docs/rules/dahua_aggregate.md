@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `dahua_aggregate` |
+| Rule ID | `dahua_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `dahua` |
 | 规则浏览路径 | `rule/dahua/dahua_aggregate/dahua_aggregate.yaml` |

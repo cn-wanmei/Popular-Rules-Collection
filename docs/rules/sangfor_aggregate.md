@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `sangfor_aggregate` |
+| Rule ID | `sangfor_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `sangfor` |
 | 规则浏览路径 | `rule/sangfor/sangfor_aggregate/sangfor_aggregate.yaml` |

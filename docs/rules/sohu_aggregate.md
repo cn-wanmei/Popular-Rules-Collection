@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `sohu_aggregate` |
+| Rule ID | `sohu_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `sohu` |
 | 规则浏览路径 | `rule/sohu/sohu_aggregate/sohu_aggregate.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `qualcomm` |
+| Rule ID | `qualcomm` |
 | 类型 | service |
 | Provider | `qualcomm` |
 | 规则浏览路径 | `rule/qualcomm/qualcomm/qualcomm.yaml` |

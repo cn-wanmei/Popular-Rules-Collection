@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `letv_aggregate` |
+| Rule ID | `letv_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `letv` |
 | 规则浏览路径 | `rule/letv/letv_aggregate/letv_aggregate.yaml` |

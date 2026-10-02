@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `bocom` |
+| Rule ID | `bocom` |
 | 类型 | service |
 | Provider | `bocom` |
 | 规则浏览路径 | `rule/bocom/bocom/bocom.yaml` |

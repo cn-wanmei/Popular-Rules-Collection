@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `iqiyi_aggregate` |
+| Rule ID | `iqiyi_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `iqiyi` |
 | 规则浏览路径 | `rule/iqiyi/iqiyi_aggregate/iqiyi_aggregate.yaml` |

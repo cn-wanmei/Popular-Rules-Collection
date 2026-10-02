@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `wps` |
+| Rule ID | `wps` |
 | 类型 | service |
 | Provider | `kingsoft` |
 | 规则浏览路径 | `rule/kingsoft/wps/wps.yaml` |

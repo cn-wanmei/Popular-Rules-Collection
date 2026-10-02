@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `canva` |
+| Rule ID | `canva` |
 | 类型 | service |
 | Provider | `canva` |
 | 规则浏览路径 | `rule/canva/canva/canva.yaml` |

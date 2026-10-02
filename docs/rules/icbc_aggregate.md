@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `icbc_aggregate` |
+| Rule ID | `icbc_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `icbc` |
 | 规则浏览路径 | `rule/icbc/icbc_aggregate/icbc_aggregate.yaml` |

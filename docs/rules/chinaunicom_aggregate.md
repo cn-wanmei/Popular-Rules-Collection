@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `chinaunicom_aggregate` |
+| Rule ID | `chinaunicom_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `chinaunicom` |
 | 规则浏览路径 | `rule/chinaunicom/chinaunicom_aggregate/chinaunicom_aggregate.yaml` |

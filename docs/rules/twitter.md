@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `twitter` |
+| Rule ID | `twitter` |
 | 类型 | service |
 | Provider | `twitter` |
 | 规则浏览路径 | `rule/twitter/twitter/twitter.yaml` |

@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `garena` |
+| Rule ID | `garena` |
 | 类型 | service |
 | Provider | `garena` |
 | 规则浏览路径 | `rule/garena/garena/garena.yaml` |

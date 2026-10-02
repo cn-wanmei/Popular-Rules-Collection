@@ -11,6 +11,7 @@
 | 项目 | 当前值 |
 |---|---|
 | Service ID | `hpe_aggregate` |
+| Rule ID | `hpe_aggregate` |
 | 类型 | provider_aggregate |
 | Provider | `hpe` |
 | 规则浏览路径 | `rule/hpe/hpe_aggregate/hpe_aggregate.yaml` |
