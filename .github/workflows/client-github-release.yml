@@ -1,0 +1,78 @@
+name: Client GitHub Release Packages
+
+# Produces the 7 client zip artifacts + RELEASE_NOTES and publishes a GitHub Release.
+# Safe to run after a successful Publish Release Candidate.
+
+on:
+  workflow_dispatch:
+    inputs:
+      stamp:
+        description: "Override stamp (default: current UTC). Format example 2026-10-2-13[03:57]"
+        required: false
+        type: string
+        default: ""
+      dry_run:
+        description: "If true, only package artifacts, do not create GitHub Release"
+        required: false
+        type: boolean
+        default: false
+
+concurrency:
+  group: client-github-release
+  cancel-in-progress: false
+
+jobs:
+  package-and-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Package 7 client zips
+        id: pkg
+        run: |
+          set -euo pipefail
+          python scripts/package_client_releases.py \
+            --generated-root generated \
+            --out-dir release-packages \
+            ${{ inputs.stamp != '' && format('--stamp {0}', inputs.stamp) || '' }}
+          echo "stamp=$(python -c "import json; print(json.load(open('release-packages/release-meta.json'))['stamp'])")" >> "$GITHUB_OUTPUT"
+          ls -la release-packages/
+
+      - name: Upload package artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: client-release-packages-${{ steps.pkg.outputs.stamp }}
+          path: release-packages/
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Create GitHub Release
+        if: ${{ inputs.dry_run != true }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          STAMP="${{ steps.pkg.outputs.stamp }}"
+          TAG="rules-${STAMP}"
+          # sanitize tag for git (replace [ ] : with -)
+          SAFE_TAG=$(echo "$TAG" | tr '[]:' '---' | tr -s '-' | sed 's/-$//')
+          BODY_FILE=release-packages/RELEASE_NOTES.md
+          # Attach all 7 zips + notes + sums
+          gh release create "$SAFE_TAG" \
+            --title "Rules Collection — ${STAMP}" \
+            --notes-file "$BODY_FILE" \
+            release-packages/*.zip \
+            release-packages/RELEASE_NOTES.md \
+            release-packages/SHA256SUMS.txt \
+            release-packages/release-meta.json
+          echo "Created release: $SAFE_TAG"
