@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """package_client_releases.py — Build 7 client rule zip artifacts + release notes.
 
-Filesystem-safe naming (required by shell / gh / Actions):
+Filesystem-safe naming (required by shell / gh / Actions / architecture_gate):
   {client}-{YYYY}-{M}-{D}-{HH}-{MM}-{SS}.zip
   e.g. egern-2026-10-2-13-25-31.zip
 
@@ -13,6 +13,8 @@ Outputs under --out-dir:
   - RELEASE_NOTES.md
   - SHA256SUMS.txt
   - release-meta.json
+
+Trigger: manual workflow_dispatch only (never on build/publish).
 """
 
 from __future__ import annotations
@@ -57,7 +59,6 @@ def _format_stamp_safe(dt: datetime) -> str:
 def _sanitize_stamp(stamp: str) -> str:
     """Convert any user-provided stamp into a safe filename fragment."""
     s = stamp.strip()
-    # 2026-10-2-13[25:31] → 2026-10-2-13-25-31
     s = s.replace("[", "-").replace("]", "").replace(":", "-")
     s = _UNSAFE.sub("-", s)
     s = re.sub(r"-+", "-", s).strip("-")
