@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """package_client_releases.py — Build 7 client rule zip artifacts + release notes.
 
-Naming (exact user contract):
-  {client}-{YYYY}-{M}-{D}-{H}[{MM}:{SS}]..zip
-  e.g. egern-2026-10-2-13[03:57]..zip
+Filesystem-safe naming (required by shell / gh / Actions):
+  {client}-{YYYY}-{M}-{D}-{HH}-{MM}-{SS}.zip
+  e.g. egern-2026-10-2-13-25-31.zip
+
+Human-readable stamp (for notes/title only):
+  {YYYY}-{M}-{D}-{H}[{MM}:{SS}]  e.g. 2026-10-2-13[25:31]
 
 Outputs under --out-dir:
   - 7 client zips
@@ -17,7 +20,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-import os
+import re
 import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
@@ -33,18 +36,35 @@ CLIENTS = (
     "surge",
 )
 
+# Characters that break shell glob, Actions artifacts, or gh path matching
+_UNSAFE = re.compile(r"[\[\]:*?\"<>|\\/]")
+
 
 def _now() -> datetime:
     return datetime.now(timezone.utc)
 
 
-def _format_stamp(dt: datetime) -> str:
-    # Matches user example style: 2026-10-2-13[03:57]
+def _format_stamp_human(dt: datetime) -> str:
+    """Display-only stamp matching product language."""
     return f"{dt.year}-{dt.month}-{dt.day}-{dt.hour}[{dt.minute:02d}:{dt.second:02d}]"
 
 
+def _format_stamp_safe(dt: datetime) -> str:
+    """Filename/tag-safe stamp: no colon, brackets, or spaces."""
+    return f"{dt.year}-{dt.month}-{dt.day}-{dt.hour:02d}-{dt.minute:02d}-{dt.second:02d}"
+
+
+def _sanitize_stamp(stamp: str) -> str:
+    """Convert any user-provided stamp into a safe filename fragment."""
+    s = stamp.strip()
+    # 2026-10-2-13[25:31] → 2026-10-2-13-25-31
+    s = s.replace("[", "-").replace("]", "").replace(":", "-")
+    s = _UNSAFE.sub("-", s)
+    s = re.sub(r"-+", "-", s).strip("-")
+    return s
+
+
 def _count_rules_in_tree(root: Path) -> int:
-    """Best-effort rule line count for LIST / YAML / JSON client outputs."""
     total = 0
     if not root.is_dir():
         return 0
@@ -74,13 +94,11 @@ def _sha256_file(path: Path) -> str:
 
 
 def _zip_dir(src: Path, dest_zip: Path) -> int:
-    """Zip directory contents. Returns number of files added."""
     count = 0
     with zipfile.ZipFile(dest_zip, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as zf:
         for p in sorted(src.rglob("*")):
             if p.is_file():
-                arcname = p.relative_to(src).as_posix()
-                zf.write(p, arcname)
+                zf.write(p, p.relative_to(src).as_posix())
                 count += 1
     return count
 
@@ -96,7 +114,8 @@ def _load_json(path: Path) -> dict[str, Any] | None:
 
 def build_notes(
     *,
-    stamp: str,
+    stamp_human: str,
+    stamp_safe: str,
     run_id: str,
     collection_id: str,
     client_stats: dict[str, dict[str, Any]],
@@ -105,11 +124,12 @@ def build_notes(
     index_services: int | None,
 ) -> str:
     lines: list[str] = []
-    lines.append(f"# Popular-Rules-Collection Release Notes — {stamp}")
+    lines.append(f"# Popular-Rules-Collection Release Notes — {stamp_human}")
     lines.append("")
     lines.append("## 总览")
     lines.append("")
-    lines.append(f"- **发布时间戳**: `{stamp}`")
+    lines.append(f"- **发布时间戳（展示）**: `{stamp_human}`")
+    lines.append(f"- **文件名时间戳（安全）**: `{stamp_safe}`")
     lines.append(f"- **Run ID**: `{run_id or 'n/a'}`")
     lines.append(f"- **Collection / Snapshot**: `{collection_id or 'n/a'}`")
     if latest:
@@ -136,13 +156,13 @@ def build_notes(
     lines.append("")
     lines.append("### 新增服务 / 规则")
     lines.append("")
-    lines.append("- 新增服务数：见本次 Collection 相对上一 snapshot 的 `reports/v1/` 与 dataset_diff 输出（CI 自动附注）。")
+    lines.append("- 新增服务数：见本次 Collection 相对上一 snapshot 的 `reports/v1/` 与 dataset_diff 输出。")
     lines.append("- 新增规则条目：由各客户端 builder 增量体现；完整 diff 在 immutable evidence 中。")
     lines.append("")
     lines.append("### 失效 / 过期 / 删除")
     lines.append("")
     lines.append("- 失效或删除的服务与规则：由 Source health + intentional_unmaterialized + 上一 baseline 对比产生。")
-    lines.append("- 详细列表位于 `reports/` 与对应 run 的 release evidence，不在此人工抄写。")
+    lines.append("- 详细列表位于 `reports/` 与对应 run 的 release evidence。")
     lines.append("")
     lines.append("### 使用方式")
     lines.append("")
@@ -151,40 +171,18 @@ def build_notes(
     lines.append("3. 图标请使用 [Popular-Rules-Icon](https://github.com/cn-wanmei/Popular-Rules-Icon) 对应风格包。")
     lines.append("")
     lines.append("---")
-    lines.append("*本说明由 `scripts/package_client_releases.py` 自动生成。*")
+    lines.append("*本说明由 `scripts/package_client_releases.py` 自动生成。发布仅通过手动 workflow_dispatch 触发。*")
     lines.append("")
     return "\n".join(lines)
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "--generated-root",
-        type=Path,
-        default=Path("generated"),
-        help="Path to generated/ directory",
-    )
-    parser.add_argument(
-        "--out-dir",
-        type=Path,
-        default=Path("release-packages"),
-        help="Output directory for zips and notes",
-    )
-    parser.add_argument(
-        "--stamp",
-        default="",
-        help="Override timestamp stamp (default: current UTC)",
-    )
-    parser.add_argument(
-        "--run-id",
-        default="",
-        help="Engine run id (optional)",
-    )
-    parser.add_argument(
-        "--collection-id",
-        default="",
-        help="Collection id (optional)",
-    )
+    parser.add_argument("--generated-root", type=Path, default=Path("generated"))
+    parser.add_argument("--out-dir", type=Path, default=Path("release-packages"))
+    parser.add_argument("--stamp", default="", help="Override stamp (human or safe form)")
+    parser.add_argument("--run-id", default="")
+    parser.add_argument("--collection-id", default="")
     args = parser.parse_args()
 
     gen = args.generated_root
@@ -192,7 +190,13 @@ def main() -> int:
         raise SystemExit(f"generated root not found: {gen}")
 
     dt = _now()
-    stamp = args.stamp or _format_stamp(dt)
+    if args.stamp:
+        stamp_human = args.stamp
+        stamp_safe = _sanitize_stamp(args.stamp)
+    else:
+        stamp_human = _format_stamp_human(dt)
+        stamp_safe = _format_stamp_safe(dt)
+
     out = args.out_dir
     out.mkdir(parents=True, exist_ok=True)
 
@@ -221,7 +225,7 @@ def main() -> int:
         src = gen / client
         if not src.is_dir():
             raise SystemExit(f"missing client directory: {src}")
-        zip_name = f"{client}-{stamp}..zip"
+        zip_name = f"{client}-{stamp_safe}.zip"
         dest = out / zip_name
         file_count = _zip_dir(src, dest)
         rule_count = _count_rules_in_tree(src)
@@ -237,7 +241,8 @@ def main() -> int:
         print(f"[package] {zip_name} files={file_count} rules≈{rule_count}")
 
     notes = build_notes(
-        stamp=stamp,
+        stamp_human=stamp_human,
+        stamp_safe=stamp_safe,
         run_id=run_id,
         collection_id=collection_id,
         client_stats=client_stats,
@@ -257,18 +262,21 @@ def main() -> int:
 
     meta = {
         "schema": "client_release_package_v1",
-        "stamp": stamp,
+        "stamp_human": stamp_human,
+        "stamp_safe": stamp_safe,
         "generated_at": dt.isoformat(),
         "run_id": run_id,
         "collection_id": collection_id,
         "clients": client_stats,
         "total_rules_estimate": total_rules,
         "zip_count": len(zips),
+        "trigger": "manual_workflow_dispatch_only",
     }
-    meta_path = out / "release-meta.json"
-    meta_path.write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (out / "release-meta.json").write_text(
+        json.dumps(meta, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
 
-    print(f"[package] wrote {len(zips)} zips + RELEASE_NOTES.md + SHA256SUMS.txt")
+    print(f"[package] wrote {len(zips)} zips + notes (safe_stamp={stamp_safe})")
     print(f"[package] total rules estimate: {total_rules}")
     return 0
 

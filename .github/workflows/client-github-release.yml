@@ -1,21 +1,20 @@
 name: Client GitHub Release Packages
 
-# Produces the 7 client zip artifacts + RELEASE_NOTES and publishes a GitHub Release.
-# Safe to run after a successful Publish Release Candidate.
-#
-# Note: zip filenames intentionally contain ':' and '[]' per product contract.
-# GitHub Actions artifacts cannot contain ':'; we skip upload-artifact.
+# Manual-only packaging of 7 client rule zips + GitHub Release.
+# NEVER triggered by push / build / publish / schedule.
+# Run from Actions → Client GitHub Release Packages → Run workflow
+# after a successful Publish Release Candidate when you want user-facing zips.
 
 on:
   workflow_dispatch:
     inputs:
       stamp:
-        description: "Override stamp (default: current UTC). Format example 2026-10-2-13[03:57]"
+        description: "Optional stamp override (safe form preferred: 2026-10-2-13-25-31)"
         required: false
         type: string
         default: ""
       dry_run:
-        description: "If true, only package artifacts, do not create GitHub Release"
+        description: "Package only; do not create GitHub Release"
         required: false
         type: boolean
         default: false
@@ -54,13 +53,33 @@ jobs:
               --generated-root generated \
               --out-dir release-packages
           fi
-          STAMP=$(python -c "import json; print(json.load(open('release-packages/release-meta.json'))['stamp'])")
-          SAFE_STAMP=$(echo "$STAMP" | tr '[]:' '---' | tr -s '-' | sed 's/-$//')
-          echo "stamp=$STAMP" >> "$GITHUB_OUTPUT"
-          echo "safe_stamp=$SAFE_STAMP" >> "$GITHUB_OUTPUT"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          meta = json.loads(Path("release-packages/release-meta.json").read_text(encoding="utf-8"))
+          stamp_safe = meta["stamp_safe"]
+          stamp_human = meta.get("stamp_human") or stamp_safe
+          zips = list(Path("release-packages").glob("*.zip"))
+          assert len(zips) == 7, f"expected 7 zips, got {len(zips)}"
+          for z in zips:
+              assert ":" not in z.name and "[" not in z.name, z.name
+          out = Path("${{ github.workspace }}") / "pkg_out.txt"
+          # write outputs via GITHUB_OUTPUT
+          import os
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+              f.write(f"stamp_safe={stamp_safe}\n")
+              f.write(f"stamp_human={stamp_human}\n")
+          print(f"stamp_safe={stamp_safe} stamp_human={stamp_human} zips={len(zips)}")
+          PY
           ls -la release-packages/
-          test -f release-packages/RELEASE_NOTES.md
-          test "$(find release-packages -maxdepth 1 -name '*.zip' | wc -l)" = "7"
+
+      - name: Upload package artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: client-release-packages-${{ steps.pkg.outputs.stamp_safe }}
+          path: release-packages/
+          if-no-files-found: error
+          retention-days: 30
 
       - name: Create GitHub Release
         if: ${{ inputs.dry_run != true }}
@@ -68,19 +87,31 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          STAMP="${{ steps.pkg.outputs.stamp }}"
-          SAFE_TAG="rules-${{ steps.pkg.outputs.safe_stamp }}"
+          set -f   # disable pathname expansion
+          STAMP_SAFE="${{ steps.pkg.outputs.stamp_safe }}"
+          STAMP_HUMAN="${{ steps.pkg.outputs.stamp_human }}"
+          SAFE_TAG="rules-${STAMP_SAFE}"
           BODY_FILE=release-packages/RELEASE_NOTES.md
+
           if gh release view "$SAFE_TAG" >/dev/null 2>&1; then
             gh release delete "$SAFE_TAG" --yes || true
             git push origin ":refs/tags/$SAFE_TAG" || true
           fi
-          # Build asset list with find to avoid shell glob issues with []
-          mapfile -t ASSETS < <(find release-packages -maxdepth 1 -type f \( -name '*.zip' -o -name 'RELEASE_NOTES.md' -o -name 'SHA256SUMS.txt' -o -name 'release-meta.json' \) | sort)
-          test "${#ASSETS[@]}" -ge 8
+
+          # Null-delimited asset list — never relies on shell glob of zip names
+          ASSET_ARGS=()
+          while IFS= read -r -d '' f; do
+            ASSET_ARGS+=("$f")
+          done < <(find release-packages -maxdepth 1 -type f \
+            \( -name '*.zip' -o -name 'RELEASE_NOTES.md' -o -name 'SHA256SUMS.txt' -o -name 'release-meta.json' \) \
+            -print0 | sort -z)
+
+          test "${#ASSET_ARGS[@]}" -ge 8
+
           gh release create "$SAFE_TAG" \
-            --title "Rules Collection — ${STAMP}" \
+            --title "Rules Collection — ${STAMP_HUMAN}" \
             --notes-file "$BODY_FILE" \
-            "${ASSETS[@]}"
+            "${ASSET_ARGS[@]}"
+
           echo "Created release: $SAFE_TAG"
           gh release view "$SAFE_TAG" --json assets --jq '.assets[].name'
