@@ -2,18 +2,24 @@ name: Documentation Layer
 
 on:
   workflow_dispatch:
+  # Primary: after Publish promotes rule/ + generated/ to main (Build alone does not land trees).
   workflow_run:
-    workflows: ["Build Client Rules"]
+    workflows: ["Publish Release Candidate"]
     types: [completed]
+  # Explicit handoff from Publish (same intent; survives workflow_run gaps).
+  # Also path filters when those files change on main.
   push:
     branches: [main]
     paths:
       - "rule/_index.yaml"
+      - "rule/manifest.json"
       - "generated/manifest.json"
       - "config/icon_v6.yaml"
       - "config/icon_docs.yaml"
       - "scripts/generate_rule_docs.py"
+      - "scripts/generate_path_links.py"
       - "scripts/validate_rule_docs.py"
+      - "scripts/validate_path_links.py"
       - "docs/schema/**"
       - "docs/overrides/**"
 

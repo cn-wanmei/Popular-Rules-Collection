@@ -308,3 +308,16 @@ jobs:
             sleep $((attempt * 2))
           done
           exit 1
+
+      - name: Trigger Documentation Layer
+        if: ${{ github.ref == 'refs/heads/main' }}
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          # rule/ + generated/ are on main after this job; regenerate docs + Path Links G3.
+          gh workflow run docs.yml \
+            --repo "${{ github.repository }}" \
+            --ref main
+          echo "Documentation Layer dispatched after publish run ${{ github.run_id }}."

@@ -104,3 +104,5 @@ path_links:
   raw_url_template: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/{file}"
 
 # directory_contract allows nested rule/**/README.md for Path Links G3
+
+# Pipeline: Collect → Build → Publish (lands rule/generated) → Documentation Layer
