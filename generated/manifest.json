@@ -8,21 +8,21 @@
     "singbox",
     "surge"
   ],
-  "collection_date": "2026-10-02",
+  "collection_date": "2026-10-03",
   "file_count": 4707,
   "files": [
     {
-      "file": "_promotion/20261002T115057087712Z-run.json",
+      "file": "_promotion/20261003T011251680696Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "6a273675acd7135af1aa45dafa3fe15e5940f2154a3deaec2e831df261d96976",
+      "sha256": "48b668913d4a8e5df816e1779192299a6570f2060f06bacb06274167efcfc356",
       "size": 542960
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "6a273675acd7135af1aa45dafa3fe15e5940f2154a3deaec2e831df261d96976",
+      "sha256": "48b668913d4a8e5df816e1779192299a6570f2060f06bacb06274167efcfc356",
       "size": 542960
     },
     {
@@ -164,10 +164,10 @@
     {
       "file": "egern/alibaba/alibaba/alibaba.yaml",
       "kind": "client_rules",
-      "rule_count": 538,
+      "rule_count": 598,
       "scope": "egern",
-      "sha256": "0700bb1dadc4a84abf5e6b8eeff70361838b4a61e413fd4813c3e8da99f99879",
-      "size": 11475
+      "sha256": "df1e6225ed1f6cd4f1ed16e29fb9fd8bc621e7bc070d7d5c099fbcb842471b39",
+      "size": 12639
     },
     {
       "file": "egern/alibaba/alibabacloud/alibabacloud.yaml",
@@ -188,18 +188,18 @@
     {
       "file": "egern/alibaba/alipay/alipay.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 23,
       "scope": "egern",
-      "sha256": "4ca40de95d88444b8a3838dd88a390e13f0b6c2fdf51b66197da403f839b7dff",
-      "size": 57
+      "sha256": "c8a8be0d4641024737f81274a1f95d4971055575a4632f7ce1600055a02f9e1c",
+      "size": 501
     },
     {
       "file": "egern/alibaba/amap/amap.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 18,
       "scope": "egern",
-      "sha256": "89d3a87a2a154a790617115b4a610536a4f00d0a99d19cf851ad6bb5c5e3c59b",
-      "size": 53
+      "sha256": "11d1b4e8b01a1f6ec5c57b67a831081c8a69e7836a694d19f39d769b298b58e3",
+      "size": 368
     },
     {
       "file": "egern/alibaba/cainiao/cainiao.yaml",
@@ -220,10 +220,10 @@
     {
       "file": "egern/alibaba/eleme/eleme.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 15,
       "scope": "egern",
-      "sha256": "2b0df0ba09389f5daaf84315cf401afb07b523b587a8c167bc1f69de02f092db",
-      "size": 49
+      "sha256": "dc7dbbe957e02569498063a847166b3cd4f376386cdb93a044c967047323737b",
+      "size": 289
     },
     {
       "file": "egern/alibaba/fliggy/fliggy.yaml",
@@ -268,18 +268,18 @@
     {
       "file": "egern/alibaba/xianyu/xianyu.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 18,
       "scope": "egern",
-      "sha256": "72917bf78770ed2c1e91637588814e80c5d2bd6b57403ea14765879ea2c1fef7",
-      "size": 59
+      "sha256": "69355a6f68a8a84857c05b5786389952abb189ae8ea85d8829eb34463bc82b7f",
+      "size": 336
     },
     {
       "file": "egern/alibaba/youku/youku.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 68,
       "scope": "egern",
-      "sha256": "9ad04fc1f76eef8b60a2b1c24e0cb9f17bbbf6dc5452a8b0e78e1a67d5ab3179",
-      "size": 55
+      "sha256": "9e7b5fdc01dd1476e08c811f0a94e947e30c9e5aa96f5e100854f1e5c68b750c",
+      "size": 1428
     },
     {
       "file": "egern/amazon/amazon/amazon.yaml",
@@ -620,18 +620,18 @@
     {
       "file": "egern/atlassian/atlassian/atlassian.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 16,
       "scope": "egern",
-      "sha256": "00fb0688913f94f5a57346c2a3a922c9e1c10974df041ecf12b76b0acd8fa024",
-      "size": 63
+      "sha256": "8d137dae676aac4241e7db7fa92253762e0e0688520686da9bb7468c3afaf2a2",
+      "size": 334
     },
     {
       "file": "egern/atlassian/atlassian_aggregate/atlassian_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 12,
       "scope": "egern",
-      "sha256": "4d432337a5885728d830915e93ebd9325417d1ab5fed4acfff81c39c99dcfdd2",
-      "size": 100
+      "sha256": "ca308c4f41ee9a7ec278c036561f19f8781f9a183be6289a0f1c4e8817401768",
+      "size": 254
     },
     {
       "file": "egern/atlassian/trello/trello.yaml",
@@ -1156,10 +1156,10 @@
     {
       "file": "egern/categories/other/other.yaml",
       "kind": "client_rules",
-      "rule_count": 129093,
+      "rule_count": 129467,
       "scope": "egern",
-      "sha256": "6e3908040ff8d48fc3abb271b1d071704d310d781d330d3a58999f04c87ce6d4",
-      "size": 2475007
+      "sha256": "5238fcc34068fac61818efc0c029c25c1199811fdc5354fc1d3d73a32fd3592f",
+      "size": 2483422
     },
     {
       "file": "egern/ccb/ccb/ccb.yaml",
@@ -1212,10 +1212,10 @@
     {
       "file": "egern/china/china.yaml",
       "kind": "client_rules",
-      "rule_count": 109526,
+      "rule_count": 109488,
       "scope": "egern",
-      "sha256": "d103a1aec08f01ab14172289dabd5e6950083e6238d06980a7ef3c109214ba2e",
-      "size": 2043883
+      "sha256": "e0ac8ae7226aa39f346e88b980b771e60dcdd18e0ac14ec9975fdabf312c8955",
+      "size": 2043180
     },
     {
       "file": "egern/chinamobile/chinamobile/chinamobile.yaml",
@@ -1668,18 +1668,18 @@
     {
       "file": "egern/ea/ea/ea.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 167,
       "scope": "egern",
-      "sha256": "be03717c7f0f34d5c109b902fc1536e5eb524ea4ad3af01c6009e06aa54fe3cb",
-      "size": 49
+      "sha256": "d876740f8768a0a319d82a8c48ebfa3c8b5ffd8ad7a889d5ada6731e2e213f5e",
+      "size": 3898
     },
     {
       "file": "egern/ea/ea_aggregate/ea_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 166,
       "scope": "egern",
-      "sha256": "be03717c7f0f34d5c109b902fc1536e5eb524ea4ad3af01c6009e06aa54fe3cb",
-      "size": 49
+      "sha256": "fc9e120801abf86dc5068a609dd5303311259ba13893ebf7b805c111f31faf63",
+      "size": 3885
     },
     {
       "file": "egern/eastmoney/eastmoney/eastmoney.yaml",
@@ -2676,10 +2676,10 @@
     {
       "file": "egern/kuaishou/kuaishou/kuaishou.yaml",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 679,
       "scope": "egern",
-      "sha256": "b2782669316d1232beab1928db0514719612da3884a75c269d2190677212c466",
-      "size": 42
+      "sha256": "99de70f46e07ed8ef0113e6d12376e503b7eda1b367714a645597d804838db57",
+      "size": 13821
     },
     {
       "file": "egern/kuaishou/kuaishou-open/kuaishou-open.yaml",
@@ -2692,10 +2692,10 @@
     {
       "file": "egern/kuaishou/kuaishou_aggregate/kuaishou_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 680,
       "scope": "egern",
-      "sha256": "c9873fa605224a3fefd83a632c7c5667e29313166206f75f70e7770ed654e42d",
-      "size": 66
+      "sha256": "68f0284b54670d7f21f12c158d7c518c2ab9d20db6ef2a6d0412ee29d41dfdcd",
+      "size": 13845
     },
     {
       "file": "egern/kugou/kugou/kugou.yaml",
@@ -3036,18 +3036,18 @@
     {
       "file": "egern/microsoft/linkedin/linkedin.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 14,
       "scope": "egern",
-      "sha256": "5d5ac8dc6d926b94275323e93b136fcc8c880f46c997eb8f40d119a6ee6398b8",
-      "size": 61
+      "sha256": "5dc146d5499a6cee0f9dbe014b410a2609eaaf35258c5e5fd30ac37b99323c98",
+      "size": 337
     },
     {
       "file": "egern/microsoft/microsoft/microsoft.yaml",
       "kind": "client_rules",
-      "rule_count": 1078,
+      "rule_count": 1089,
       "scope": "egern",
-      "sha256": "95eb63414cab74619d40d8e8fffc68b975a837eeba982fee945dec07c1effc04",
-      "size": 28457
+      "sha256": "2b4cdafb2dc8b73c5b2c8c50dae27fc6f8bbed60a9329821f913c0dcae8abb81",
+      "size": 28702
     },
     {
       "file": "egern/microsoft/microsoftedge/microsoftedge.yaml",
@@ -3340,18 +3340,18 @@
     {
       "file": "egern/nintendo/nintendo/nintendo.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 128,
       "scope": "egern",
-      "sha256": "66929b98e9d2e0045d0ec06987174d4e1cc8d7dd44d32019c2a527757e8d1e95",
-      "size": 61
+      "sha256": "c91eda9711cf9f1ca0e8c1d5704f348452c4aa41bb82f83eefb6571cb8f34360",
+      "size": 3007
     },
     {
       "file": "egern/nintendo/nintendo_aggregate/nintendo_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 127,
       "scope": "egern",
-      "sha256": "66929b98e9d2e0045d0ec06987174d4e1cc8d7dd44d32019c2a527757e8d1e95",
-      "size": 61
+      "sha256": "ef79c6d2d002ce68014ffd86adaddcee495d61f5653022a8b8c1d21c30115c0e",
+      "size": 2988
     },
     {
       "file": "egern/nokia/nokia/nokia.yaml",
@@ -3644,18 +3644,18 @@
     {
       "file": "egern/pingan/pingan/pingan.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 29,
       "scope": "egern",
-      "sha256": "d6cd0d08fde495219aa7f83d9f6c2f1686c0dfd1c669d5d0d140184ce647ca11",
-      "size": 58
+      "sha256": "bea7044ad0ab166bba88ba95012c552a0e7d32de083b39c30e8a9a3dd77bddf0",
+      "size": 579
     },
     {
       "file": "egern/pingan/pingan_aggregate/pingan_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 28,
       "scope": "egern",
-      "sha256": "dcdde139f7b2a468cf6eb3cc117be08fbb3684d0b5b865f85c484f982e73d1d0",
-      "size": 58
+      "sha256": "3b4afbe682d1c12806784365cf26989c669c2e155dd5a25835ef8cad5b6e326e",
+      "size": 562
     },
     {
       "file": "egern/pinterest/pinterest/pinterest.yaml",
@@ -4500,10 +4500,10 @@
     {
       "file": "egern/tencent/tencent/tencent.yaml",
       "kind": "client_rules",
-      "rule_count": 914,
+      "rule_count": 918,
       "scope": "egern",
-      "sha256": "15172e33a2a33dcffd08951cb6edc88739e83500d5d45890dbe5f973c6d54dca",
-      "size": 19905
+      "sha256": "c3695ce0c9d2a9046844c0bb6abc60e7054c80d0c5214e10c1abb85395ad97d9",
+      "size": 19999
     },
     {
       "file": "egern/tencent/tencentcloud/tencentcloud.yaml",
@@ -4564,10 +4564,10 @@
     {
       "file": "egern/tencent/wetv/wetv.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 9,
       "scope": "egern",
-      "sha256": "23faec88098883ec87d3088f79e4f587076577414088b7640ae64d509db890b5",
-      "size": 53
+      "sha256": "ea6712eff5a99d0bf358181ab3d87ff0b2ac2bc37be812832ee7367f61978fcf",
+      "size": 224
     },
     {
       "file": "egern/tesla/tesla/tesla.yaml",
@@ -4620,18 +4620,18 @@
     {
       "file": "egern/tongcheng/tongcheng/tongcheng.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 10,
       "scope": "egern",
-      "sha256": "2c12eb6cb60acf1afdecefd4cf151dc3a2d6b45ec668aed2469fd056acd0d4fd",
-      "size": 49
+      "sha256": "0e273f124544018b9bc7cf9123719f488c1096cebf806d49427774fd41deb59e",
+      "size": 178
     },
     {
       "file": "egern/tongcheng/tongcheng_aggregate/tongcheng_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 9,
       "scope": "egern",
-      "sha256": "2c12eb6cb60acf1afdecefd4cf151dc3a2d6b45ec668aed2469fd056acd0d4fd",
-      "size": 49
+      "sha256": "77305dd9dfda1be4722243a5d27f792ee536cc8fc4beb2478a25f74aa1f41401",
+      "size": 165
     },
     {
       "file": "egern/tonghuashun/tonghuashun/tonghuashun.yaml",
@@ -5822,32 +5822,32 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geosite",
-      "sha256": "1c843518efb5e733ffb520c7ea6ad5fc2534bcd56fd6f1b003cb91b32b400dbb",
-      "size": 407137
+      "sha256": "ee16f276c6896ff7511848e0ab17fc991ad3f997abd157d19f33affa540d43f8",
+      "size": 407148
     },
     {
       "file": "geosite/proxy_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 27259,
+      "rule_count": 27260,
       "scope": "geosite",
-      "sha256": "9afc08cc86a13fdf03acdd64bedd25d60ae066502ee48843569912d02937944f",
-      "size": 788761
+      "sha256": "1a8ac0f8dee798c6d265998526929df901d7d496140b8b71d6eb13f9bb46aa45",
+      "size": 788786
     },
     {
       "file": "geosite/reject.txt",
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geosite",
-      "sha256": "b9fcd747b4d2feb77a2c5ee6da5fdea92b6ac8b24947c25b61e6f898028642d0",
-      "size": 3877567
+      "sha256": "5c9dd66372ad64694930b07a7169333759f36bd8a66a66b9e6b7154be966fa28",
+      "size": 3883961
     },
     {
       "file": "geosite/reject_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 186434,
+      "rule_count": 186771,
       "scope": "geosite",
-      "sha256": "1f6e295884e4dbe64639b5e710b638b87540b47ff916d9121e6063433a072d48",
-      "size": 6487643
+      "sha256": "86deef7271811b21c0ecb7d9bd9f2eda581bd250fc0618221996d77583a01470",
+      "size": 6498755
     },
     {
       "file": "ip/adblock.txt",
@@ -6284,10 +6284,10 @@
     {
       "file": "loon/alibaba/alibaba/alibaba.list",
       "kind": "client_rules",
-      "rule_count": 538,
+      "rule_count": 598,
       "scope": "loon",
-      "sha256": "28b29e47ec7e3f4262190b1779efcc9e15e8c69b8a8bd550c109387167ceda0e",
-      "size": 15394
+      "sha256": "d6762ae7c150caa3b3d6c90cd8acf187dd70705b647c7da5b307311779cda4b3",
+      "size": 17038
     },
     {
       "file": "loon/alibaba/alibabacloud/alibabacloud.list",
@@ -6308,18 +6308,18 @@
     {
       "file": "loon/alibaba/alipay/alipay.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 23,
       "scope": "loon",
-      "sha256": "fc107fbe1619fec3ac11b7204f82e03f3b8f763cdb8c85d9ef54b092143e619a",
-      "size": 54
+      "sha256": "62555ae59f118265e6fb1b91e0401152da971c6964d62dbefa4fb9eeeac0bafb",
+      "size": 647
     },
     {
       "file": "loon/alibaba/amap/amap.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 18,
       "scope": "loon",
-      "sha256": "17f0b486b4fe061686798ae80869f8cfe4836cdd3f58fb4b8e387a19d7a8157a",
-      "size": 50
+      "sha256": "9089ceede387268f5d238ee4188c92973d2bdeddf593cc14fe1208f3c8d6d0c4",
+      "size": 493
     },
     {
       "file": "loon/alibaba/cainiao/cainiao.list",
@@ -6340,10 +6340,10 @@
     {
       "file": "loon/alibaba/eleme/eleme.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 15,
       "scope": "loon",
-      "sha256": "3f8b134a9619bc4a68a789fd25f1baccb1b96ae05d0a254a52c61cc892661aa0",
-      "size": 46
+      "sha256": "2527c499c1861aa79ff5f4469f1283c964e6de19bb7e56de91c3b120204e1217",
+      "size": 390
     },
     {
       "file": "loon/alibaba/fliggy/fliggy.list",
@@ -6388,18 +6388,18 @@
     {
       "file": "loon/alibaba/xianyu/xianyu.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 18,
       "scope": "loon",
-      "sha256": "754f83a293c74803fd741554adc4e225d49f28472da77f0531b91b697ccff5ff",
-      "size": 56
+      "sha256": "e66398d84c18c4164b2cd5fed96988656320b53cb68793567a4dbe67e083e0fc",
+      "size": 461
     },
     {
       "file": "loon/alibaba/youku/youku.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 68,
       "scope": "loon",
-      "sha256": "ef3fa5734730cbe7394c0a37550c67c2ef35ed16b9af897af0a725aa3c7e8134",
-      "size": 52
+      "sha256": "b6f0207713af887659135ea8e5a3ca039073bec0b2832d9874ed650a18c5b118",
+      "size": 1934
     },
     {
       "file": "loon/amazon/amazon/amazon.list",
@@ -6740,18 +6740,18 @@
     {
       "file": "loon/atlassian/atlassian/atlassian.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 16,
       "scope": "loon",
-      "sha256": "467e602a8e7a924302305d6011194e9246e13fb8f522442c39b7d08aa15dac0e",
-      "size": 60
+      "sha256": "766613cee1911e787811fffd56929c740b05176677b7a66af5b5b033c9b2d243",
+      "size": 443
     },
     {
       "file": "loon/atlassian/atlassian_aggregate/atlassian_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 12,
       "scope": "loon",
-      "sha256": "fed45e93445e6e2292628b2bd7d10e1edac678908e1fa98cc1cf27b2a98d0b48",
-      "size": 113
+      "sha256": "083f1062dadca36e318d56dc19a97421e1649360719c5ea9cd5bac2e6627c78a",
+      "size": 331
     },
     {
       "file": "loon/atlassian/trello/trello.list",
@@ -7276,10 +7276,10 @@
     {
       "file": "loon/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128950,
+      "rule_count": 129324,
       "scope": "loon",
-      "sha256": "b453c6189ad77118ee1782730a15595c2f66d318dd9aafe56ab092a06ddffccc",
-      "size": 3490655
+      "sha256": "fd9c60076e3e207c07712a7a52fb281e733ef251d0cd63fe6caac8c3ca29e78f",
+      "size": 3502015
     },
     {
       "file": "loon/ccb/ccb/ccb.list",
@@ -7332,10 +7332,10 @@
     {
       "file": "loon/china/china.list",
       "kind": "client_rules",
-      "rule_count": 109526,
+      "rule_count": 109488,
       "scope": "loon",
-      "sha256": "4f346f6db69ddb5ba26a5a8ba0eea68c3deec643bf083d8ab824bee44576d370",
-      "size": 2920096
+      "sha256": "227768e70eb5595a9ff189f9792a433389b195698e94bae98cde14272ee5f3c0",
+      "size": 2919089
     },
     {
       "file": "loon/chinamobile/chinamobile/chinamobile.list",
@@ -7788,18 +7788,18 @@
     {
       "file": "loon/ea/ea/ea.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 167,
       "scope": "loon",
-      "sha256": "e5c4252fbe44214135b543dedf1e7ef3c0cd9abab0a63887d62137ee3db77caf",
-      "size": 46
+      "sha256": "e13647da16e525df95b45e8184728b5a9141ca79d2828e0df96374bd55b45352",
+      "size": 5189
     },
     {
       "file": "loon/ea/ea_aggregate/ea_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 166,
       "scope": "loon",
-      "sha256": "e5c4252fbe44214135b543dedf1e7ef3c0cd9abab0a63887d62137ee3db77caf",
-      "size": 46
+      "sha256": "63511d9fa185f925f1717399f0cdd6baf0eb0424bf9d08fb1f7181b60de01beb",
+      "size": 5168
     },
     {
       "file": "loon/eastmoney/eastmoney/eastmoney.list",
@@ -8796,10 +8796,10 @@
     {
       "file": "loon/kuaishou/kuaishou/kuaishou.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 679,
       "scope": "loon",
-      "sha256": "4cfd4c1d7f7e8262abc3889a32ae10f42829a730097d6c07ed0786ec3d5bdd42",
-      "size": 31
+      "sha256": "7a0e2dcffc07b519f62e5019e22579ef8194f3e2266fe5133e049f7ba442b901",
+      "size": 19234
     },
     {
       "file": "loon/kuaishou/kuaishou-open/kuaishou-open.list",
@@ -8812,10 +8812,10 @@
     {
       "file": "loon/kuaishou/kuaishou_aggregate/kuaishou_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 680,
       "scope": "loon",
-      "sha256": "d970e54ec2fac8ffd2fb8b972b69dcb5b83c9bfe3555ffd602b7fb6704e4150a",
-      "size": 63
+      "sha256": "322ab6f4fcb4e8655551c921276a9ae3d580bf81a0ddf02715a7dcc1afb3cde7",
+      "size": 19266
     },
     {
       "file": "loon/kugou/kugou/kugou.list",
@@ -9156,18 +9156,18 @@
     {
       "file": "loon/microsoft/linkedin/linkedin.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 14,
       "scope": "loon",
-      "sha256": "ca54507c09e2c8ca40466db1e4df54ae347c396b3583aec4cb13e37e307af466",
-      "size": 58
+      "sha256": "82a9e66bd241bfce3ae863f81068ae90d9537a58e80fa2a453ba42b13c3c6678",
+      "size": 397
     },
     {
       "file": "loon/microsoft/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 1078,
+      "rule_count": 1089,
       "scope": "loon",
-      "sha256": "8337f37fa92b9333e628fed67eb4dd96a3f3217fc585090fb3cfd8f27000e639",
-      "size": 36245
+      "sha256": "434989c518514b90df1670c07e4e88d6eee8400615a0453ba2c7836c529d2134",
+      "size": 36557
     },
     {
       "file": "loon/microsoft/microsoftedge/microsoftedge.list",
@@ -9460,18 +9460,18 @@
     {
       "file": "loon/nintendo/nintendo/nintendo.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 128,
       "scope": "loon",
-      "sha256": "aff23e896010633149a8704bf9df723b0fbaf63f926ff7fb2bc5f47633f808b0",
-      "size": 58
+      "sha256": "008198ec914c57e6e772fde7a13594b16aabc82f1c19e5342079e34e49d934f2",
+      "size": 3993
     },
     {
       "file": "loon/nintendo/nintendo_aggregate/nintendo_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 127,
       "scope": "loon",
-      "sha256": "aff23e896010633149a8704bf9df723b0fbaf63f926ff7fb2bc5f47633f808b0",
-      "size": 58
+      "sha256": "fc582778f8bfd11307ac7f289d804248fe0ccce96ff828c2fdef8319c12f2660",
+      "size": 3966
     },
     {
       "file": "loon/nokia/nokia/nokia.list",
@@ -9764,18 +9764,18 @@
     {
       "file": "loon/pingan/pingan/pingan.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 29,
       "scope": "loon",
-      "sha256": "09fcce99cc94b2c50488c9f4b664c362d243718e0b4a2a0bd09b1b80105bdc1a",
-      "size": 55
+      "sha256": "9c9d115113961e72c08082cbf078624b4542241aad04c305ce75c858fcde0539",
+      "size": 792
     },
     {
       "file": "loon/pingan/pingan_aggregate/pingan_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 28,
       "scope": "loon",
-      "sha256": "57e4f941b68dc4c44d13ddec26b5db1ebc79838041a8f84c52575440bca032f0",
-      "size": 55
+      "sha256": "2f46767a605824628ec8f742c0902cfa82b63f180480111f664fe38c9364a5af",
+      "size": 767
     },
     {
       "file": "loon/pinterest/pinterest/pinterest.list",
@@ -10620,10 +10620,10 @@
     {
       "file": "loon/tencent/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 914,
+      "rule_count": 918,
       "scope": "loon",
-      "sha256": "dbcbeec3e407a0c55cbfebd329a704e243ce900d93e16798ec1473dee59a4c85",
-      "size": 26106
+      "sha256": "c21c218ef4e970fe628154d574446fd4d8cdf709c95174fbc09f899bbb97580b",
+      "size": 26226
     },
     {
       "file": "loon/tencent/tencentcloud/tencentcloud.list",
@@ -10684,10 +10684,10 @@
     {
       "file": "loon/tencent/wetv/wetv.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 9,
       "scope": "loon",
-      "sha256": "236e1d47f4adefc385a352b608c244aa7c8fed718f15f8600dd98d32fa736d2f",
-      "size": 50
+      "sha256": "cd0f4eb3094a5e68c203be8c3df52ee8e93c42f76a3157de4ead93c0ca6432b5",
+      "size": 239
     },
     {
       "file": "loon/tesla/tesla/tesla.list",
@@ -10740,18 +10740,18 @@
     {
       "file": "loon/tongcheng/tongcheng/tongcheng.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 10,
       "scope": "loon",
-      "sha256": "045ff5f5ce04fde4cc9ec5ddadf8e50fc8a6f8abb5caa1ebaab37eec4f1a2a4c",
-      "size": 46
+      "sha256": "3c1026a6e96a0a7ff39cb9e905f207eb2f4be26488246067e163083b16e61970",
+      "size": 239
     },
     {
       "file": "loon/tongcheng/tongcheng_aggregate/tongcheng_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 9,
       "scope": "loon",
-      "sha256": "045ff5f5ce04fde4cc9ec5ddadf8e50fc8a6f8abb5caa1ebaab37eec4f1a2a4c",
-      "size": 46
+      "sha256": "9383947d2540feee5c73c09d8b4102fd3a562eaef7cd4e0bea145bf71f015146",
+      "size": 218
     },
     {
       "file": "loon/tonghuashun/tonghuashun/tonghuashun.list",
@@ -11492,10 +11492,10 @@
     {
       "file": "mihomo/alibaba/alibaba/alibaba.yaml",
       "kind": "client_rules",
-      "rule_count": 538,
+      "rule_count": 598,
       "scope": "mihomo",
-      "sha256": "700520b90bcd9077ed2cac40edc0a848e1be3de0bdaa5c4b9cba6ec57edfa48d",
-      "size": 17555
+      "sha256": "302a0b215c7c2afe6549c08df884195eab735c757312b073a980f912a2c3201b",
+      "size": 19439
     },
     {
       "file": "mihomo/alibaba/alibabacloud/alibabacloud.yaml",
@@ -11516,18 +11516,18 @@
     {
       "file": "mihomo/alibaba/alipay/alipay.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 23,
       "scope": "mihomo",
-      "sha256": "fb991ad8337522eaf9f1ae95ca3e3e6e021b3d5ea9c8d4e00a400eb560cea640",
-      "size": 71
+      "sha256": "bc79a50dd423286e33633a866354e78dc52bcd590f92c812a29f270ad7c14f59",
+      "size": 748
     },
     {
       "file": "mihomo/alibaba/amap/amap.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 18,
       "scope": "mihomo",
-      "sha256": "7beb303d6d1022bd1865d33e0589b566cbaab805a86cc96065caad3c2ccf6519",
-      "size": 67
+      "sha256": "0cd8a2d2db9b00c72c1c59c089b28f8c49dfc8f3b8d5b000b1869cc761cf30be",
+      "size": 574
     },
     {
       "file": "mihomo/alibaba/cainiao/cainiao.yaml",
@@ -11548,10 +11548,10 @@
     {
       "file": "mihomo/alibaba/eleme/eleme.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 15,
       "scope": "mihomo",
-      "sha256": "35664b40cf7f7793add5bc3740ba87d15e05b75f2c02f92ac4c2761713220068",
-      "size": 63
+      "sha256": "e028b31a18b595beda4b2ba3b75afa5f312efb40361da6a1937531bd8f597741",
+      "size": 459
     },
     {
       "file": "mihomo/alibaba/fliggy/fliggy.yaml",
@@ -11596,18 +11596,18 @@
     {
       "file": "mihomo/alibaba/xianyu/xianyu.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 18,
       "scope": "mihomo",
-      "sha256": "84a2a02b936fa764cfcbe5c8923b29303512d881225a7fb4466aec03d3adf8d4",
-      "size": 73
+      "sha256": "800bc28f7f7be2b6cb6b028a77ef5a4875270c16f1bc9f7245c63ba43c19758f",
+      "size": 542
     },
     {
       "file": "mihomo/alibaba/youku/youku.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 68,
       "scope": "mihomo",
-      "sha256": "98b55a66ede0b1642614cadf963739e0193d45f8bfff8b64c820e8a200793c4a",
-      "size": 69
+      "sha256": "1ce7514d09d1ae120459ec0e7e30ad18ff9a9950dda2e094784dd1b61bbf6dea",
+      "size": 2215
     },
     {
       "file": "mihomo/amazon/amazon/amazon.yaml",
@@ -11948,18 +11948,18 @@
     {
       "file": "mihomo/atlassian/atlassian/atlassian.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 16,
       "scope": "mihomo",
-      "sha256": "30fb2abdfddd263546e3c942b7295aff3b866eca7a807be2cbb2bface74388ba",
-      "size": 77
+      "sha256": "577b73e075c4cd5a666ded8814e41d8e055c3698d93cf938f47a4c971b1c3343",
+      "size": 516
     },
     {
       "file": "mihomo/atlassian/atlassian_aggregate/atlassian_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 12,
       "scope": "mihomo",
-      "sha256": "0748dd058fc187b8707970651a4aba3b4b0eaaa591c84ca414e7a33dd24d8948",
-      "size": 138
+      "sha256": "b3444248ee3c668c5c80bb08e131f52f6a2aeb65d6ff4b1365c2a5da2559c96e",
+      "size": 388
     },
     {
       "file": "mihomo/atlassian/trello/trello.yaml",
@@ -12484,10 +12484,10 @@
     {
       "file": "mihomo/categories/other/other.yaml",
       "kind": "client_rules",
-      "rule_count": 129093,
+      "rule_count": 129467,
       "scope": "mihomo",
-      "sha256": "e3b12aa7d376cab29e2cc67289ce39b0fb461f2be2f508e3e7346fb1e2c0898b",
-      "size": 4013020
+      "sha256": "a6ead8e073be5986b3a298ba950bb52e812e3ed574f043a26e67ba7fced9127f",
+      "size": 4025876
     },
     {
       "file": "mihomo/ccb/ccb/ccb.yaml",
@@ -12540,10 +12540,10 @@
     {
       "file": "mihomo/china/china.yaml",
       "kind": "client_rules",
-      "rule_count": 109526,
+      "rule_count": 109488,
       "scope": "mihomo",
-      "sha256": "3520985a2e0d2c8db2d3dd9724ee7c474717ab509d0a18fe12ce6e2ea6f031b0",
-      "size": 3358209
+      "sha256": "a8e6de90dd6096bf3ddbd20d605adf72e01348f07d33aaff3e5278f6ae787f7f",
+      "size": 3357050
     },
     {
       "file": "mihomo/chinamobile/chinamobile/chinamobile.yaml",
@@ -12996,18 +12996,18 @@
     {
       "file": "mihomo/ea/ea/ea.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 167,
       "scope": "mihomo",
-      "sha256": "68b7ab2722148b49e270b714eda69793e7bc0e9c382be67b538227d31f1daa81",
-      "size": 63
+      "sha256": "9d651335ba467a214061f6259194109ae52ef17d0b2b7e45ff78bf1ed700d33c",
+      "size": 5866
     },
     {
       "file": "mihomo/ea/ea_aggregate/ea_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 166,
       "scope": "mihomo",
-      "sha256": "68b7ab2722148b49e270b714eda69793e7bc0e9c382be67b538227d31f1daa81",
-      "size": 63
+      "sha256": "7bc1f5e942f526af014a89063621f65829ce62492f45d08cbc25511f47373df1",
+      "size": 5841
     },
     {
       "file": "mihomo/eastmoney/eastmoney/eastmoney.yaml",
@@ -14004,10 +14004,10 @@
     {
       "file": "mihomo/kuaishou/kuaishou/kuaishou.yaml",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 679,
       "scope": "mihomo",
-      "sha256": "65632526dc291aa169df8850f1365b1b921dd9d53297496f396c06dee41e0c5e",
-      "size": 44
+      "sha256": "e0b8aed2c1e81d423d5bf4cff69e429e5b2e3f748c7ee64c11469005e9b77cfd",
+      "size": 21959
     },
     {
       "file": "mihomo/kuaishou/kuaishou-open/kuaishou-open.yaml",
@@ -14020,10 +14020,10 @@
     {
       "file": "mihomo/kuaishou/kuaishou_aggregate/kuaishou_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 680,
       "scope": "mihomo",
-      "sha256": "70704a19118768cf45be6869e3d5c9948b51cd41363fd25b955538543f4a3752",
-      "size": 80
+      "sha256": "86a1af5c2e3c35b6df844bd9bac1168f8344e4567a9f1b3f1266ac4740a0331e",
+      "size": 21995
     },
     {
       "file": "mihomo/kugou/kugou/kugou.yaml",
@@ -14364,18 +14364,18 @@
     {
       "file": "mihomo/microsoft/linkedin/linkedin.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 14,
       "scope": "mihomo",
-      "sha256": "1336c4df16c379e3a179ea0e73743f2ff3f0e0f6b7e5739783fbc5b11a0894f6",
-      "size": 75
+      "sha256": "32489b39f0aa685ea68b4fdb35141e59c2a744c4a75d3458b1abc619cd62d2d0",
+      "size": 462
     },
     {
       "file": "mihomo/microsoft/microsoft/microsoft.yaml",
       "kind": "client_rules",
-      "rule_count": 1078,
+      "rule_count": 1089,
       "scope": "mihomo",
-      "sha256": "7f0186247f6aebff0094fc328fa3a8dc904840677931af1d832b300b3579659c",
-      "size": 40566
+      "sha256": "841ac7eaddfacb0c4f6e17dfefb1d9018dfd5f9b1ce2a80dc7425d8ee81dfb55",
+      "size": 40922
     },
     {
       "file": "mihomo/microsoft/microsoftedge/microsoftedge.yaml",
@@ -14668,18 +14668,18 @@
     {
       "file": "mihomo/nintendo/nintendo/nintendo.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 128,
       "scope": "mihomo",
-      "sha256": "9c16c1abafab3faa14bdd2fc351025c6b6bd60d25e1a479cce7fdf4baf8307be",
-      "size": 75
+      "sha256": "0c72ed2a36440fca88cd908e946e5cb134e580d5ea6f6d9678568221e5ee03e5",
+      "size": 4514
     },
     {
       "file": "mihomo/nintendo/nintendo_aggregate/nintendo_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 127,
       "scope": "mihomo",
-      "sha256": "9c16c1abafab3faa14bdd2fc351025c6b6bd60d25e1a479cce7fdf4baf8307be",
-      "size": 75
+      "sha256": "5fc26830757541d665db294b584d2f7c53378558a6726b5f154d2c818502c36d",
+      "size": 4483
     },
     {
       "file": "mihomo/nokia/nokia/nokia.yaml",
@@ -14972,18 +14972,18 @@
     {
       "file": "mihomo/pingan/pingan/pingan.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 29,
       "scope": "mihomo",
-      "sha256": "dfee31876ed20272cb817661a0f58de17eac3a0d4735a9181bde4c215442554a",
-      "size": 72
+      "sha256": "73846a6db2e9b23eb5babec7f581cf1be274e5a71b13f71e2974c33d4e552261",
+      "size": 917
     },
     {
       "file": "mihomo/pingan/pingan_aggregate/pingan_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 28,
       "scope": "mihomo",
-      "sha256": "5d389fdd4ac00246329d55c927af8a434869ff30032ca1feae5d8d8ed6b464c9",
-      "size": 72
+      "sha256": "260df5a3c07969fb7e8d323933955c7f129a0eb953860ee30187c960b26d274a",
+      "size": 888
     },
     {
       "file": "mihomo/pinterest/pinterest/pinterest.yaml",
@@ -15828,10 +15828,10 @@
     {
       "file": "mihomo/tencent/tencent/tencent.yaml",
       "kind": "client_rules",
-      "rule_count": 914,
+      "rule_count": 918,
       "scope": "mihomo",
-      "sha256": "3ae39590b752162f5c93e7aee448a72a07d28c45d3bf3d053bb3284b1e67eab0",
-      "size": 29771
+      "sha256": "040c853758564438ff289ab87172e1ee64e13dd22d342e9424d4d55d7605a235",
+      "size": 29907
     },
     {
       "file": "mihomo/tencent/tencentcloud/tencentcloud.yaml",
@@ -15892,10 +15892,10 @@
     {
       "file": "mihomo/tencent/wetv/wetv.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 9,
       "scope": "mihomo",
-      "sha256": "0ca5185d9992a7bccdfa99af2bcb7dc76abedf6d265120d28ce2ad44ee76350b",
-      "size": 67
+      "sha256": "112fb1db6e43db40864868171d6ed4f8c262685684d4b0b6a5086c18e5460a72",
+      "size": 284
     },
     {
       "file": "mihomo/tesla/tesla/tesla.yaml",
@@ -15948,18 +15948,18 @@
     {
       "file": "mihomo/tongcheng/tongcheng/tongcheng.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 10,
       "scope": "mihomo",
-      "sha256": "dcab22cc5790ab90020fdb4673ed0d7cd633bd8d2f622a1961659647af26bfb1",
-      "size": 63
+      "sha256": "0d0b3553d03d56a84ef173cc957a226435ef15ac08182e9fd086aa6b4f313f0a",
+      "size": 288
     },
     {
       "file": "mihomo/tongcheng/tongcheng_aggregate/tongcheng_aggregate.yaml",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 9,
       "scope": "mihomo",
-      "sha256": "dcab22cc5790ab90020fdb4673ed0d7cd633bd8d2f622a1961659647af26bfb1",
-      "size": 63
+      "sha256": "dfbd14dd662d48461074cb6123d300fec6b14c81af2e666a7eaf0c8544c5052f",
+      "size": 263
     },
     {
       "file": "mihomo/tonghuashun/tonghuashun/tonghuashun.yaml",
@@ -16742,16 +16742,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "2b522ac152a0e7a7aa63257ca998a6f745b05fccbc24cf58512587918af28cd1",
-      "size": 387755
+      "sha256": "be27c28102a1606c38d87633b450c5a45cb5c2440b05897842182eb950d1932b",
+      "size": 387947
     },
     {
       "file": "provider/aws_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 11276,
+      "rule_count": 11281,
       "scope": "provider",
-      "sha256": "d27ee8b84f2f33559e02aa2ee4449a911b9e0a84a83e47c7803593c7096eacbd",
-      "size": 481928
+      "sha256": "bb46758c2bd52e7d2ccf26e8b008144dfd25dbc3f1495428651b1d45a81e8842",
+      "size": 482165
     },
     {
       "file": "provider/cloudflare.txt",
@@ -16790,7 +16790,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "2f78763227c08bdcfa6ad211394be04b453202b874935f9032f55422d933efcb",
+      "sha256": "e3e0c65a5ee37a64f5579e10b05e17d241b17304adc67cd7d0c9bc007e14dc51",
       "size": 4595
     },
     {
@@ -16806,7 +16806,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "66d6cace41350de155cf7ce126b602f47e7262bb7764c1a872c496d1269f5f61",
+      "sha256": "eaba7f125f8a660d79b18d2083449a5861927b535f7babe494dd6cf53adee1e8",
       "size": 37103
     },
     {
@@ -16964,10 +16964,10 @@
     {
       "file": "quantumultx/alibaba/alibaba/alibaba.list",
       "kind": "client_rules",
-      "rule_count": 538,
+      "rule_count": 598,
       "scope": "quantumultx",
-      "sha256": "5f635145bc52c3e88a33ae00a3beb3c022331b211e99acaaee1b6c28de4f3a74",
-      "size": 18730
+      "sha256": "381d38d4cfd347b1c02a71a93ddcc86f092611c5e1c7e4ac0d208597e9423e8b",
+      "size": 20734
     },
     {
       "file": "quantumultx/alibaba/alibabacloud/alibabacloud.list",
@@ -16988,18 +16988,18 @@
     {
       "file": "quantumultx/alibaba/alipay/alipay.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 23,
       "scope": "quantumultx",
-      "sha256": "2eaff5f9a2b4f35b46ddb0da27608486465e571ca246ef2079c2fc64bf698063",
-      "size": 66
+      "sha256": "87ae773e2c237902ff5d06cfdb8fb342fdcb07c0bc20ef2d6070d6b32b2acd11",
+      "size": 785
     },
     {
       "file": "quantumultx/alibaba/amap/amap.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 18,
       "scope": "quantumultx",
-      "sha256": "9dfb828a163f5edc25bab9ea9a374a222c938bed9bbc36efc4414d386aea99d8",
-      "size": 62
+      "sha256": "33cc48890e48b170e44fe67289b55e18e2fcb0659b6fdf20757ca4044ba6b256",
+      "size": 601
     },
     {
       "file": "quantumultx/alibaba/cainiao/cainiao.list",
@@ -17020,10 +17020,10 @@
     {
       "file": "quantumultx/alibaba/eleme/eleme.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 15,
       "scope": "quantumultx",
-      "sha256": "b6522bf86bd549086675c1426565f5c92819d0db2abce5c6a08b57fb03deff3f",
-      "size": 58
+      "sha256": "5d63bc57b2977e8276120f6a45ef819f5b03f1c4db1aec47d344d5c06505e121",
+      "size": 480
     },
     {
       "file": "quantumultx/alibaba/fliggy/fliggy.list",
@@ -17068,18 +17068,18 @@
     {
       "file": "quantumultx/alibaba/xianyu/xianyu.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 18,
       "scope": "quantumultx",
-      "sha256": "477252c4a5dd551a7d4b60bf4bea6d1bb66ffeb8920e30d53b120281dff0d16c",
-      "size": 68
+      "sha256": "3806c1465240a8fdd79f8105e65081ba9e49770969f2ae26861606e30a526b06",
+      "size": 569
     },
     {
       "file": "quantumultx/alibaba/youku/youku.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 68,
       "scope": "quantumultx",
-      "sha256": "e9f16b3827ebca8c5b1c1b1bc6c8e38288c246bc11a599b2288963af8ff35988",
-      "size": 64
+      "sha256": "932afd1c9271931734922ffaf38e2c88467193ae3cbab6010e63a6bc2ac0eea1",
+      "size": 2344
     },
     {
       "file": "quantumultx/amazon/amazon/amazon.list",
@@ -17420,18 +17420,18 @@
     {
       "file": "quantumultx/atlassian/atlassian/atlassian.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 16,
       "scope": "quantumultx",
-      "sha256": "790e6f0ebf21191c174e7adbf6992fecb5aa7b3583044ab61aa505fa99fc7a32",
-      "size": 72
+      "sha256": "bf2ab44dbaedddd0786ff811813ed116cb9df6f2cdcbd062a9393f693bcd8bfe",
+      "size": 539
     },
     {
       "file": "quantumultx/atlassian/atlassian_aggregate/atlassian_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 12,
       "scope": "quantumultx",
-      "sha256": "a9eed2726e17429b3122f4026cf6c3375194b93cdd9f26ed444e68a43a010904",
-      "size": 137
+      "sha256": "acba3aa3483de0a71cf8846e61e5e4892517ce67857f2e053f88f0fd42891bd6",
+      "size": 403
     },
     {
       "file": "quantumultx/atlassian/trello/trello.list",
@@ -17956,10 +17956,10 @@
     {
       "file": "quantumultx/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128950,
+      "rule_count": 129324,
       "scope": "quantumultx",
-      "sha256": "9e5b359fbba5808310f3f65e50a0129e2b42ea3800cf5a73f0785f8fcbc337bd",
-      "size": 4265343
+      "sha256": "9a925e87cec33caf3b207834ecfd90cc8044a97cd9f7b8b3afe953d54a662c9d",
+      "size": 4278951
     },
     {
       "file": "quantumultx/ccb/ccb/ccb.list",
@@ -18012,10 +18012,10 @@
     {
       "file": "quantumultx/china/china.list",
       "kind": "client_rules",
-      "rule_count": 109526,
+      "rule_count": 109488,
       "scope": "quantumultx",
-      "sha256": "7d9fe4eb23c73d0efe1b71dc7e0f36e0efe861a41df21304e3d0843d70f45040",
-      "size": 3577252
+      "sha256": "00eb8bab481405187dfe85087b3040ea7ba646d06bd1995d453404cc24105d07",
+      "size": 3576017
     },
     {
       "file": "quantumultx/chinamobile/chinamobile/chinamobile.list",
@@ -18468,18 +18468,18 @@
     {
       "file": "quantumultx/ea/ea/ea.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 167,
       "scope": "quantumultx",
-      "sha256": "7462eb0d39d5515f374fa8b94e2f9c31ccac5531bbfb5a9c3ac73ad84d9e17cd",
-      "size": 58
+      "sha256": "d77cc7dd8963485824e5630664d1f9a6ac65d1979fdebb760d4ceeacfd5c02d5",
+      "size": 6191
     },
     {
       "file": "quantumultx/ea/ea_aggregate/ea_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 166,
       "scope": "quantumultx",
-      "sha256": "7462eb0d39d5515f374fa8b94e2f9c31ccac5531bbfb5a9c3ac73ad84d9e17cd",
-      "size": 58
+      "sha256": "856a07e5a7e88f3b8b5d839f5caf17554c91f5b425317fc2c40a732f78c1ee09",
+      "size": 6164
     },
     {
       "file": "quantumultx/eastmoney/eastmoney/eastmoney.list",
@@ -19476,10 +19476,10 @@
     {
       "file": "quantumultx/kuaishou/kuaishou/kuaishou.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 679,
       "scope": "quantumultx",
-      "sha256": "4e5b8394fac7a1a01392cc5fda76803fe5033c16bdefaebdcc930f67b8f6d178",
-      "size": 37
+      "sha256": "65df5f46ed4a5d7a1978ae549f8089a36f832b3df5bfac5e2ff5ed443bbeb005",
+      "size": 23308
     },
     {
       "file": "quantumultx/kuaishou/kuaishou-open/kuaishou-open.list",
@@ -19492,10 +19492,10 @@
     {
       "file": "quantumultx/kuaishou/kuaishou_aggregate/kuaishou_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 680,
       "scope": "quantumultx",
-      "sha256": "9ded07a550b2c2ee0e9b0a2f009f427305dc3c0b11867f338dc8da658b527e71",
-      "size": 75
+      "sha256": "d2e2734674340bb0c4850b1ae89407fcdd5fc864a95eea6c1cace08960502032",
+      "size": 23346
     },
     {
       "file": "quantumultx/kugou/kugou/kugou.list",
@@ -19836,18 +19836,18 @@
     {
       "file": "quantumultx/microsoft/linkedin/linkedin.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 14,
       "scope": "quantumultx",
-      "sha256": "77ab45842a7c5c4f6c416b7b7cf23c93792a4c53f192ce04742b3b706e6a0d41",
-      "size": 70
+      "sha256": "bb155c6e2fbef7d54c5eb80a5560ed0bc7bef91def5cbd6f842413e09cf65acf",
+      "size": 481
     },
     {
       "file": "quantumultx/microsoft/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 1078,
+      "rule_count": 1089,
       "scope": "quantumultx",
-      "sha256": "a10a6162e753153c0b9d8244796f55e5abaf43aed52046c478138a8628c8f2e7",
-      "size": 42717
+      "sha256": "92c29f33077e3cef015a10f39f0137c85cb0f62d3a6411d42b24ab7f56ed6b5a",
+      "size": 43095
     },
     {
       "file": "quantumultx/microsoft/microsoftedge/microsoftedge.list",
@@ -20140,18 +20140,18 @@
     {
       "file": "quantumultx/nintendo/nintendo/nintendo.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 128,
       "scope": "quantumultx",
-      "sha256": "ba04da8d04e8d340391fd5dbab300460f8216d7d8aaaa17829527b678a42f65f",
-      "size": 70
+      "sha256": "d6ff3231f5321d427d005dcf3bcc33debfb473857ea07bbf9f3e0aa3f3e7a260",
+      "size": 4763
     },
     {
       "file": "quantumultx/nintendo/nintendo_aggregate/nintendo_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 127,
       "scope": "quantumultx",
-      "sha256": "ba04da8d04e8d340391fd5dbab300460f8216d7d8aaaa17829527b678a42f65f",
-      "size": 70
+      "sha256": "833642d980bb4b53b08d5330b0969eb6d8e01a217f7eddbb9f6f662235ba1b34",
+      "size": 4730
     },
     {
       "file": "quantumultx/nokia/nokia/nokia.list",
@@ -20444,18 +20444,18 @@
     {
       "file": "quantumultx/pingan/pingan/pingan.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 29,
       "scope": "quantumultx",
-      "sha256": "85584f34ae90e10c579f67a6ef4b2b4f7284f7dbb49da7715c2d5578aec7f0db",
-      "size": 67
+      "sha256": "5d77ab1cc17bbca6c43b7354f63b652f6962bc2ac1573a581188bd4fc38a646a",
+      "size": 966
     },
     {
       "file": "quantumultx/pingan/pingan_aggregate/pingan_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 28,
       "scope": "quantumultx",
-      "sha256": "2885be2b1d6edf6d512264bc41fd28f13663756dee2f1d7139bf1dfdd40754cd",
-      "size": 67
+      "sha256": "b3e9b993ca2ff3be8ca7f1d453f0bbee44d363fadbf76679cddca54ac50826a2",
+      "size": 935
     },
     {
       "file": "quantumultx/pinterest/pinterest/pinterest.list",
@@ -21300,10 +21300,10 @@
     {
       "file": "quantumultx/tencent/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 914,
+      "rule_count": 918,
       "scope": "quantumultx",
-      "sha256": "a9de99bb6f186b014f56b79717755687c9a5f2745deba9075739e2726c2cc142",
-      "size": 31900
+      "sha256": "9648204defd5a7738a8f18886a9e5013193ec9d6f0a2abf513c616a5b806ce9d",
+      "size": 32046
     },
     {
       "file": "quantumultx/tencent/tencentcloud/tencentcloud.list",
@@ -21364,10 +21364,10 @@
     {
       "file": "quantumultx/tencent/wetv/wetv.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 9,
       "scope": "quantumultx",
-      "sha256": "a15306b04fa87551b0804be7c3b70849326120f420bcf09500842022e378d688",
-      "size": 62
+      "sha256": "eca6bc600cd2f6e2cecb13bcc083068ee9f9ac13b54c4ff5bb69529ddab3417f",
+      "size": 295
     },
     {
       "file": "quantumultx/tesla/tesla/tesla.list",
@@ -21420,18 +21420,18 @@
     {
       "file": "quantumultx/tongcheng/tongcheng/tongcheng.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 10,
       "scope": "quantumultx",
-      "sha256": "714fe7382e6982581efc43f89c1d03825ff0c2df1049f30ede7ac359d499ddd3",
-      "size": 58
+      "sha256": "802854380379bb8df73d6d340cf5de9f077e183168e89ff5c32b89697a968758",
+      "size": 299
     },
     {
       "file": "quantumultx/tongcheng/tongcheng_aggregate/tongcheng_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 9,
       "scope": "quantumultx",
-      "sha256": "714fe7382e6982581efc43f89c1d03825ff0c2df1049f30ede7ac359d499ddd3",
-      "size": 58
+      "sha256": "8b821d3d37ff208c776bc7d994f3ab34b27de05f252cc65bc339cc96ed72a9c1",
+      "size": 272
     },
     {
       "file": "quantumultx/tonghuashun/tonghuashun/tonghuashun.list",
@@ -22172,10 +22172,10 @@
     {
       "file": "shadowrocket/alibaba/alibaba/alibaba.list",
       "kind": "client_rules",
-      "rule_count": 538,
+      "rule_count": 598,
       "scope": "shadowrocket",
-      "sha256": "28b29e47ec7e3f4262190b1779efcc9e15e8c69b8a8bd550c109387167ceda0e",
-      "size": 15394
+      "sha256": "d6762ae7c150caa3b3d6c90cd8acf187dd70705b647c7da5b307311779cda4b3",
+      "size": 17038
     },
     {
       "file": "shadowrocket/alibaba/alibabacloud/alibabacloud.list",
@@ -22196,18 +22196,18 @@
     {
       "file": "shadowrocket/alibaba/alipay/alipay.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 23,
       "scope": "shadowrocket",
-      "sha256": "fc107fbe1619fec3ac11b7204f82e03f3b8f763cdb8c85d9ef54b092143e619a",
-      "size": 54
+      "sha256": "62555ae59f118265e6fb1b91e0401152da971c6964d62dbefa4fb9eeeac0bafb",
+      "size": 647
     },
     {
       "file": "shadowrocket/alibaba/amap/amap.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 18,
       "scope": "shadowrocket",
-      "sha256": "17f0b486b4fe061686798ae80869f8cfe4836cdd3f58fb4b8e387a19d7a8157a",
-      "size": 50
+      "sha256": "9089ceede387268f5d238ee4188c92973d2bdeddf593cc14fe1208f3c8d6d0c4",
+      "size": 493
     },
     {
       "file": "shadowrocket/alibaba/cainiao/cainiao.list",
@@ -22228,10 +22228,10 @@
     {
       "file": "shadowrocket/alibaba/eleme/eleme.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 15,
       "scope": "shadowrocket",
-      "sha256": "3f8b134a9619bc4a68a789fd25f1baccb1b96ae05d0a254a52c61cc892661aa0",
-      "size": 46
+      "sha256": "2527c499c1861aa79ff5f4469f1283c964e6de19bb7e56de91c3b120204e1217",
+      "size": 390
     },
     {
       "file": "shadowrocket/alibaba/fliggy/fliggy.list",
@@ -22276,18 +22276,18 @@
     {
       "file": "shadowrocket/alibaba/xianyu/xianyu.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 18,
       "scope": "shadowrocket",
-      "sha256": "754f83a293c74803fd741554adc4e225d49f28472da77f0531b91b697ccff5ff",
-      "size": 56
+      "sha256": "e66398d84c18c4164b2cd5fed96988656320b53cb68793567a4dbe67e083e0fc",
+      "size": 461
     },
     {
       "file": "shadowrocket/alibaba/youku/youku.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 68,
       "scope": "shadowrocket",
-      "sha256": "ef3fa5734730cbe7394c0a37550c67c2ef35ed16b9af897af0a725aa3c7e8134",
-      "size": 52
+      "sha256": "b6f0207713af887659135ea8e5a3ca039073bec0b2832d9874ed650a18c5b118",
+      "size": 1934
     },
     {
       "file": "shadowrocket/amazon/amazon/amazon.list",
@@ -22628,18 +22628,18 @@
     {
       "file": "shadowrocket/atlassian/atlassian/atlassian.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 16,
       "scope": "shadowrocket",
-      "sha256": "467e602a8e7a924302305d6011194e9246e13fb8f522442c39b7d08aa15dac0e",
-      "size": 60
+      "sha256": "766613cee1911e787811fffd56929c740b05176677b7a66af5b5b033c9b2d243",
+      "size": 443
     },
     {
       "file": "shadowrocket/atlassian/atlassian_aggregate/atlassian_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 12,
       "scope": "shadowrocket",
-      "sha256": "fed45e93445e6e2292628b2bd7d10e1edac678908e1fa98cc1cf27b2a98d0b48",
-      "size": 113
+      "sha256": "083f1062dadca36e318d56dc19a97421e1649360719c5ea9cd5bac2e6627c78a",
+      "size": 331
     },
     {
       "file": "shadowrocket/atlassian/trello/trello.list",
@@ -23164,10 +23164,10 @@
     {
       "file": "shadowrocket/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128950,
+      "rule_count": 129324,
       "scope": "shadowrocket",
-      "sha256": "b453c6189ad77118ee1782730a15595c2f66d318dd9aafe56ab092a06ddffccc",
-      "size": 3490655
+      "sha256": "fd9c60076e3e207c07712a7a52fb281e733ef251d0cd63fe6caac8c3ca29e78f",
+      "size": 3502015
     },
     {
       "file": "shadowrocket/ccb/ccb/ccb.list",
@@ -23220,10 +23220,10 @@
     {
       "file": "shadowrocket/china/china.list",
       "kind": "client_rules",
-      "rule_count": 109526,
+      "rule_count": 109488,
       "scope": "shadowrocket",
-      "sha256": "4f346f6db69ddb5ba26a5a8ba0eea68c3deec643bf083d8ab824bee44576d370",
-      "size": 2920096
+      "sha256": "227768e70eb5595a9ff189f9792a433389b195698e94bae98cde14272ee5f3c0",
+      "size": 2919089
     },
     {
       "file": "shadowrocket/chinamobile/chinamobile/chinamobile.list",
@@ -23676,18 +23676,18 @@
     {
       "file": "shadowrocket/ea/ea/ea.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 167,
       "scope": "shadowrocket",
-      "sha256": "e5c4252fbe44214135b543dedf1e7ef3c0cd9abab0a63887d62137ee3db77caf",
-      "size": 46
+      "sha256": "e13647da16e525df95b45e8184728b5a9141ca79d2828e0df96374bd55b45352",
+      "size": 5189
     },
     {
       "file": "shadowrocket/ea/ea_aggregate/ea_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 166,
       "scope": "shadowrocket",
-      "sha256": "e5c4252fbe44214135b543dedf1e7ef3c0cd9abab0a63887d62137ee3db77caf",
-      "size": 46
+      "sha256": "63511d9fa185f925f1717399f0cdd6baf0eb0424bf9d08fb1f7181b60de01beb",
+      "size": 5168
     },
     {
       "file": "shadowrocket/eastmoney/eastmoney/eastmoney.list",
@@ -24684,10 +24684,10 @@
     {
       "file": "shadowrocket/kuaishou/kuaishou/kuaishou.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 679,
       "scope": "shadowrocket",
-      "sha256": "4cfd4c1d7f7e8262abc3889a32ae10f42829a730097d6c07ed0786ec3d5bdd42",
-      "size": 31
+      "sha256": "7a0e2dcffc07b519f62e5019e22579ef8194f3e2266fe5133e049f7ba442b901",
+      "size": 19234
     },
     {
       "file": "shadowrocket/kuaishou/kuaishou-open/kuaishou-open.list",
@@ -24700,10 +24700,10 @@
     {
       "file": "shadowrocket/kuaishou/kuaishou_aggregate/kuaishou_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 680,
       "scope": "shadowrocket",
-      "sha256": "d970e54ec2fac8ffd2fb8b972b69dcb5b83c9bfe3555ffd602b7fb6704e4150a",
-      "size": 63
+      "sha256": "322ab6f4fcb4e8655551c921276a9ae3d580bf81a0ddf02715a7dcc1afb3cde7",
+      "size": 19266
     },
     {
       "file": "shadowrocket/kugou/kugou/kugou.list",
@@ -25044,18 +25044,18 @@
     {
       "file": "shadowrocket/microsoft/linkedin/linkedin.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 14,
       "scope": "shadowrocket",
-      "sha256": "ca54507c09e2c8ca40466db1e4df54ae347c396b3583aec4cb13e37e307af466",
-      "size": 58
+      "sha256": "82a9e66bd241bfce3ae863f81068ae90d9537a58e80fa2a453ba42b13c3c6678",
+      "size": 397
     },
     {
       "file": "shadowrocket/microsoft/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 1078,
+      "rule_count": 1089,
       "scope": "shadowrocket",
-      "sha256": "8337f37fa92b9333e628fed67eb4dd96a3f3217fc585090fb3cfd8f27000e639",
-      "size": 36245
+      "sha256": "434989c518514b90df1670c07e4e88d6eee8400615a0453ba2c7836c529d2134",
+      "size": 36557
     },
     {
       "file": "shadowrocket/microsoft/microsoftedge/microsoftedge.list",
@@ -25348,18 +25348,18 @@
     {
       "file": "shadowrocket/nintendo/nintendo/nintendo.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 128,
       "scope": "shadowrocket",
-      "sha256": "aff23e896010633149a8704bf9df723b0fbaf63f926ff7fb2bc5f47633f808b0",
-      "size": 58
+      "sha256": "008198ec914c57e6e772fde7a13594b16aabc82f1c19e5342079e34e49d934f2",
+      "size": 3993
     },
     {
       "file": "shadowrocket/nintendo/nintendo_aggregate/nintendo_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 127,
       "scope": "shadowrocket",
-      "sha256": "aff23e896010633149a8704bf9df723b0fbaf63f926ff7fb2bc5f47633f808b0",
-      "size": 58
+      "sha256": "fc582778f8bfd11307ac7f289d804248fe0ccce96ff828c2fdef8319c12f2660",
+      "size": 3966
     },
     {
       "file": "shadowrocket/nokia/nokia/nokia.list",
@@ -25652,18 +25652,18 @@
     {
       "file": "shadowrocket/pingan/pingan/pingan.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 29,
       "scope": "shadowrocket",
-      "sha256": "09fcce99cc94b2c50488c9f4b664c362d243718e0b4a2a0bd09b1b80105bdc1a",
-      "size": 55
+      "sha256": "9c9d115113961e72c08082cbf078624b4542241aad04c305ce75c858fcde0539",
+      "size": 792
     },
     {
       "file": "shadowrocket/pingan/pingan_aggregate/pingan_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 28,
       "scope": "shadowrocket",
-      "sha256": "57e4f941b68dc4c44d13ddec26b5db1ebc79838041a8f84c52575440bca032f0",
-      "size": 55
+      "sha256": "2f46767a605824628ec8f742c0902cfa82b63f180480111f664fe38c9364a5af",
+      "size": 767
     },
     {
       "file": "shadowrocket/pinterest/pinterest/pinterest.list",
@@ -26508,10 +26508,10 @@
     {
       "file": "shadowrocket/tencent/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 914,
+      "rule_count": 918,
       "scope": "shadowrocket",
-      "sha256": "dbcbeec3e407a0c55cbfebd329a704e243ce900d93e16798ec1473dee59a4c85",
-      "size": 26106
+      "sha256": "c21c218ef4e970fe628154d574446fd4d8cdf709c95174fbc09f899bbb97580b",
+      "size": 26226
     },
     {
       "file": "shadowrocket/tencent/tencentcloud/tencentcloud.list",
@@ -26572,10 +26572,10 @@
     {
       "file": "shadowrocket/tencent/wetv/wetv.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 9,
       "scope": "shadowrocket",
-      "sha256": "236e1d47f4adefc385a352b608c244aa7c8fed718f15f8600dd98d32fa736d2f",
-      "size": 50
+      "sha256": "cd0f4eb3094a5e68c203be8c3df52ee8e93c42f76a3157de4ead93c0ca6432b5",
+      "size": 239
     },
     {
       "file": "shadowrocket/tesla/tesla/tesla.list",
@@ -26628,18 +26628,18 @@
     {
       "file": "shadowrocket/tongcheng/tongcheng/tongcheng.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 10,
       "scope": "shadowrocket",
-      "sha256": "045ff5f5ce04fde4cc9ec5ddadf8e50fc8a6f8abb5caa1ebaab37eec4f1a2a4c",
-      "size": 46
+      "sha256": "3c1026a6e96a0a7ff39cb9e905f207eb2f4be26488246067e163083b16e61970",
+      "size": 239
     },
     {
       "file": "shadowrocket/tongcheng/tongcheng_aggregate/tongcheng_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 9,
       "scope": "shadowrocket",
-      "sha256": "045ff5f5ce04fde4cc9ec5ddadf8e50fc8a6f8abb5caa1ebaab37eec4f1a2a4c",
-      "size": 46
+      "sha256": "9383947d2540feee5c73c09d8b4102fd3a562eaef7cd4e0bea145bf71f015146",
+      "size": 218
     },
     {
       "file": "shadowrocket/tonghuashun/tonghuashun/tonghuashun.list",
@@ -27382,8 +27382,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "a4dce4a8cd996218c8f0bfc3d15fca6eeb29328c33098bd251b917442760b219",
-      "size": 14241
+      "sha256": "b7cf630ff0e31be7a718d301c84395cfa73ca1ff10497d2bb22d379a658d6a7b",
+      "size": 15705
     },
     {
       "file": "singbox/alibaba/alibabacloud/alibabacloud.json",
@@ -27406,16 +27406,16 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "bedbf3e012987bbe9d6d57f8f5795a14537c96f67fcacdb09777fd020b9d7d0d",
-      "size": 129
+      "sha256": "8b938c1a32b1f3af1657f3adb45954504bc21ab20bcdc436bd0b5f7794a652e2",
+      "size": 692
     },
     {
       "file": "singbox/alibaba/amap/amap.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "319775f7b2954f2d1437ea101a7d77184ebbb906ce5bd1365bdd03ad3884b70f",
-      "size": 125
+      "sha256": "6dbd8b5d64f0ef4323a4c2c16d8c1a7846a25ae5d02d571d228eaa1b5292b1b6",
+      "size": 520
     },
     {
       "file": "singbox/alibaba/cainiao/cainiao.json",
@@ -27438,8 +27438,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "3f18de5df33f5e0e17fbbbb9b4d52e642cf14af13072d61c01c8aa6720c80c08",
-      "size": 121
+      "sha256": "09cec36fd8c5174007ee2ffa502a34a63a86eaf4ce73fa8e1ec9a456000fa9ee",
+      "size": 426
     },
     {
       "file": "singbox/alibaba/fliggy/fliggy.json",
@@ -27486,16 +27486,16 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "66b6e8b6e8b019c51c206fc1c84eefa111c1e98083d31dacf0420af35b672176",
-      "size": 131
+      "sha256": "fd32789513e80c67204b25b74d6b68ea799c21dee917e9a20a5ef762b8ceabed",
+      "size": 488
     },
     {
       "file": "singbox/alibaba/youku/youku.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "aa078386e475e5a3a8bc8b6f1a6f0ae95c412cfbd1c2858303f8d8638bd7f2d0",
-      "size": 127
+      "sha256": "115e9d4f7a1328df1daed61dc3f8187a15a262f78adc8fbb295975acc504bd71",
+      "size": 1844
     },
     {
       "file": "singbox/amazon/amazon/amazon.json",
@@ -27838,16 +27838,16 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "41071c5a19473d0d66575435874af06adab69df0cfb8fe6a0082a856faf90e37",
-      "size": 135
+      "sha256": "a84082b1fcb034abf1cc6bebb3f582cc46cdb209d74a31eb70b519b9250ba07f",
+      "size": 476
     },
     {
       "file": "singbox/atlassian/atlassian_aggregate/atlassian_aggregate.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "4a666552c42511f0efdc08e011059c0545e810900ad3c137fc01be82bc556895",
-      "size": 182
+      "sha256": "ca1f31816a3414c6fd3b1d956074e0a473ac3721870d6a49a7554e8abc9750f7",
+      "size": 376
     },
     {
       "file": "singbox/atlassian/trello/trello.json",
@@ -28374,8 +28374,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "e692a36958f8ded800c7d3790c5e63ac1f425cdce56dd52ca6e253ded255d3e3",
-      "size": 3120576
+      "sha256": "0c0b09af53dd9a04f618d1d18120c4d0ac8701ff628b6d808c1dedc8efe18963",
+      "size": 3130861
     },
     {
       "file": "singbox/ccb/ccb/ccb.json",
@@ -28430,8 +28430,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "296b520311727a5691ecc9e191cebe07f4d09841aeb0ce7d017cbe984ad1f476",
-      "size": 2591589
+      "sha256": "9d8018c21c45ebaaf9ccf6deac5b03d1269d8e4be0b79b0b83de71b337204995",
+      "size": 2590696
     },
     {
       "file": "singbox/chinamobile/chinamobile/chinamobile.json",
@@ -28886,16 +28886,16 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "32a7843e6be1f2febf6efd362d29a2516e6b6ff21c0aa318277ca81e224ed34d",
-      "size": 121
+      "sha256": "265148d861ff06f100afa7f5e103563c9fd570d2e68f81f7a20c9690432c863a",
+      "size": 4809
     },
     {
       "file": "singbox/ea/ea_aggregate/ea_aggregate.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "32a7843e6be1f2febf6efd362d29a2516e6b6ff21c0aa318277ca81e224ed34d",
-      "size": 121
+      "sha256": "7fc90bfcd97131f0f5a370851edae352fc5bf9fb1289faeddb3113e629c5c87d",
+      "size": 4791
     },
     {
       "file": "singbox/eastmoney/eastmoney/eastmoney.json",
@@ -29894,8 +29894,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "8a1ed918bf75ebf10cdb68d1d3d7e96ac461e477a048a291ed7f23424120c452",
-      "size": 109
+      "sha256": "08b5df1b2d81bd7a6adc18b0f5fd1be339c47a26277b55496ffc86f1343d4aa7",
+      "size": 17278
     },
     {
       "file": "singbox/kuaishou/kuaishou-open/kuaishou-open.json",
@@ -29910,8 +29910,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "17f34b7f1784c1d4fd68073462d8cc554d70be720730a676fcd89b6b2bbb1017",
-      "size": 138
+      "sha256": "3fb8b428a315bb7031e7dee6aafd8360051ff8c3f440be06e3d7edfdc086b2e4",
+      "size": 17307
     },
     {
       "file": "singbox/kugou/kugou/kugou.json",
@@ -30254,16 +30254,16 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "c569f51cff26f5e445e74b132b7951dc76b03216224d418909bbe3567bbf8d33",
-      "size": 133
+      "sha256": "ed65372c7f59d1e09c55ff1716e82f9bbccf7e969a35e02555df0c9b62c5c02b",
+      "size": 483
     },
     {
       "file": "singbox/microsoft/microsoft/microsoft.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "ed769689867f5fcdac9b88a3d64537eb3310593be04f5172538353b7e4b49bf7",
-      "size": 33951
+      "sha256": "cff8ad6e452b7d232c8ecbbc689d0b15754f73b6bbeced1c45947a035f99c601",
+      "size": 34251
     },
     {
       "file": "singbox/microsoft/microsoftedge/microsoftedge.json",
@@ -30558,16 +30558,16 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "b06e69b765cccbe13e262ee99cf281b526c156001cd5609ae9d181c9605b8609",
-      "size": 133
+      "sha256": "8e6954c7b7191a1ee59788de9d15539b4e82198cfd476d9749aee9cd83481426",
+      "size": 3723
     },
     {
       "file": "singbox/nintendo/nintendo_aggregate/nintendo_aggregate.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "b06e69b765cccbe13e262ee99cf281b526c156001cd5609ae9d181c9605b8609",
-      "size": 133
+      "sha256": "994863a10b4598f94c40379104896571ffb81bb802410c02b30e6838c5e6fdfb",
+      "size": 3699
     },
     {
       "file": "singbox/nokia/nokia/nokia.json",
@@ -30862,16 +30862,16 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "2bdc8d99cbd78598ef9ea402e07106297dbadcac2854aa2bf04d5fef89738f2b",
-      "size": 130
+      "sha256": "e067d82ae389cdd94cf2024e2c6d4beaa0a236d9664ae18103cfd32ea06ac07d",
+      "size": 786
     },
     {
       "file": "singbox/pingan/pingan_aggregate/pingan_aggregate.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "f1732f9d3f7b05f45171a69b12e27ca6d4f108bdcf6a02d99899577a68c74782",
-      "size": 130
+      "sha256": "f0e443f2f2e9f3c19acde3169a093c67de59744e45f6e9359a1af182b96c2082",
+      "size": 764
     },
     {
       "file": "singbox/pinterest/pinterest/pinterest.json",
@@ -31718,8 +31718,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "cdeed8594bf09a18d1267e5387dfe0e56d06170608b3fff1aaa521ca7cebca64",
-      "size": 24551
+      "sha256": "9ac9f8f8b57b803be1ea7f652dd3c0ee3d88f0ef6d9ec1338897172e324d7988",
+      "size": 24665
     },
     {
       "file": "singbox/tencent/tencentcloud/tencentcloud.json",
@@ -31782,8 +31782,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "62717494f49af6108cbb53d2ad4bd913c5282f0d2c1e991428af31c964359ed5",
-      "size": 125
+      "sha256": "51ccab2dc646d28f6896c14cc82fee06fa9a64958de20cd3625cb9bf674e0687",
+      "size": 359
     },
     {
       "file": "singbox/tesla/tesla/tesla.json",
@@ -31838,16 +31838,16 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "4756605dee9070efc99a6b4f41a0cb9ca83626cf66693fe292b9b5e20c4e6c59",
-      "size": 121
+      "sha256": "4c991b8ca11768c3029be3c39ad0049c0db5d32109614c0bad55fdcc488a3bd5",
+      "size": 290
     },
     {
       "file": "singbox/tongcheng/tongcheng_aggregate/tongcheng_aggregate.json",
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "4756605dee9070efc99a6b4f41a0cb9ca83626cf66693fe292b9b5e20c4e6c59",
-      "size": 121
+      "sha256": "97e2d7bcf2b33eb66387961eb40a9f1a930c0080d4be00784808376b2da396eb",
+      "size": 272
     },
     {
       "file": "singbox/tonghuashun/tonghuashun/tonghuashun.json",
@@ -32588,10 +32588,10 @@
     {
       "file": "surge/alibaba/alibaba/alibaba.list",
       "kind": "client_rules",
-      "rule_count": 538,
+      "rule_count": 598,
       "scope": "surge",
-      "sha256": "28b29e47ec7e3f4262190b1779efcc9e15e8c69b8a8bd550c109387167ceda0e",
-      "size": 15394
+      "sha256": "d6762ae7c150caa3b3d6c90cd8acf187dd70705b647c7da5b307311779cda4b3",
+      "size": 17038
     },
     {
       "file": "surge/alibaba/alibabacloud/alibabacloud.list",
@@ -32612,18 +32612,18 @@
     {
       "file": "surge/alibaba/alipay/alipay.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 23,
       "scope": "surge",
-      "sha256": "fc107fbe1619fec3ac11b7204f82e03f3b8f763cdb8c85d9ef54b092143e619a",
-      "size": 54
+      "sha256": "62555ae59f118265e6fb1b91e0401152da971c6964d62dbefa4fb9eeeac0bafb",
+      "size": 647
     },
     {
       "file": "surge/alibaba/amap/amap.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 18,
       "scope": "surge",
-      "sha256": "17f0b486b4fe061686798ae80869f8cfe4836cdd3f58fb4b8e387a19d7a8157a",
-      "size": 50
+      "sha256": "9089ceede387268f5d238ee4188c92973d2bdeddf593cc14fe1208f3c8d6d0c4",
+      "size": 493
     },
     {
       "file": "surge/alibaba/cainiao/cainiao.list",
@@ -32644,10 +32644,10 @@
     {
       "file": "surge/alibaba/eleme/eleme.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 15,
       "scope": "surge",
-      "sha256": "3f8b134a9619bc4a68a789fd25f1baccb1b96ae05d0a254a52c61cc892661aa0",
-      "size": 46
+      "sha256": "2527c499c1861aa79ff5f4469f1283c964e6de19bb7e56de91c3b120204e1217",
+      "size": 390
     },
     {
       "file": "surge/alibaba/fliggy/fliggy.list",
@@ -32692,18 +32692,18 @@
     {
       "file": "surge/alibaba/xianyu/xianyu.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 18,
       "scope": "surge",
-      "sha256": "754f83a293c74803fd741554adc4e225d49f28472da77f0531b91b697ccff5ff",
-      "size": 56
+      "sha256": "e66398d84c18c4164b2cd5fed96988656320b53cb68793567a4dbe67e083e0fc",
+      "size": 461
     },
     {
       "file": "surge/alibaba/youku/youku.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 68,
       "scope": "surge",
-      "sha256": "ef3fa5734730cbe7394c0a37550c67c2ef35ed16b9af897af0a725aa3c7e8134",
-      "size": 52
+      "sha256": "b6f0207713af887659135ea8e5a3ca039073bec0b2832d9874ed650a18c5b118",
+      "size": 1934
     },
     {
       "file": "surge/amazon/amazon/amazon.list",
@@ -33044,18 +33044,18 @@
     {
       "file": "surge/atlassian/atlassian/atlassian.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 16,
       "scope": "surge",
-      "sha256": "467e602a8e7a924302305d6011194e9246e13fb8f522442c39b7d08aa15dac0e",
-      "size": 60
+      "sha256": "766613cee1911e787811fffd56929c740b05176677b7a66af5b5b033c9b2d243",
+      "size": 443
     },
     {
       "file": "surge/atlassian/atlassian_aggregate/atlassian_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 4,
+      "rule_count": 12,
       "scope": "surge",
-      "sha256": "fed45e93445e6e2292628b2bd7d10e1edac678908e1fa98cc1cf27b2a98d0b48",
-      "size": 113
+      "sha256": "083f1062dadca36e318d56dc19a97421e1649360719c5ea9cd5bac2e6627c78a",
+      "size": 331
     },
     {
       "file": "surge/atlassian/trello/trello.list",
@@ -33580,10 +33580,10 @@
     {
       "file": "surge/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128950,
+      "rule_count": 129324,
       "scope": "surge",
-      "sha256": "b453c6189ad77118ee1782730a15595c2f66d318dd9aafe56ab092a06ddffccc",
-      "size": 3490655
+      "sha256": "fd9c60076e3e207c07712a7a52fb281e733ef251d0cd63fe6caac8c3ca29e78f",
+      "size": 3502015
     },
     {
       "file": "surge/ccb/ccb/ccb.list",
@@ -33636,10 +33636,10 @@
     {
       "file": "surge/china/china.list",
       "kind": "client_rules",
-      "rule_count": 109526,
+      "rule_count": 109488,
       "scope": "surge",
-      "sha256": "4f346f6db69ddb5ba26a5a8ba0eea68c3deec643bf083d8ab824bee44576d370",
-      "size": 2920096
+      "sha256": "227768e70eb5595a9ff189f9792a433389b195698e94bae98cde14272ee5f3c0",
+      "size": 2919089
     },
     {
       "file": "surge/chinamobile/chinamobile/chinamobile.list",
@@ -34092,18 +34092,18 @@
     {
       "file": "surge/ea/ea/ea.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 167,
       "scope": "surge",
-      "sha256": "e5c4252fbe44214135b543dedf1e7ef3c0cd9abab0a63887d62137ee3db77caf",
-      "size": 46
+      "sha256": "e13647da16e525df95b45e8184728b5a9141ca79d2828e0df96374bd55b45352",
+      "size": 5189
     },
     {
       "file": "surge/ea/ea_aggregate/ea_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 166,
       "scope": "surge",
-      "sha256": "e5c4252fbe44214135b543dedf1e7ef3c0cd9abab0a63887d62137ee3db77caf",
-      "size": 46
+      "sha256": "63511d9fa185f925f1717399f0cdd6baf0eb0424bf9d08fb1f7181b60de01beb",
+      "size": 5168
     },
     {
       "file": "surge/eastmoney/eastmoney/eastmoney.list",
@@ -35100,10 +35100,10 @@
     {
       "file": "surge/kuaishou/kuaishou/kuaishou.list",
       "kind": "client_rules",
-      "rule_count": 1,
+      "rule_count": 679,
       "scope": "surge",
-      "sha256": "4cfd4c1d7f7e8262abc3889a32ae10f42829a730097d6c07ed0786ec3d5bdd42",
-      "size": 31
+      "sha256": "7a0e2dcffc07b519f62e5019e22579ef8194f3e2266fe5133e049f7ba442b901",
+      "size": 19234
     },
     {
       "file": "surge/kuaishou/kuaishou-open/kuaishou-open.list",
@@ -35116,10 +35116,10 @@
     {
       "file": "surge/kuaishou/kuaishou_aggregate/kuaishou_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 680,
       "scope": "surge",
-      "sha256": "d970e54ec2fac8ffd2fb8b972b69dcb5b83c9bfe3555ffd602b7fb6704e4150a",
-      "size": 63
+      "sha256": "322ab6f4fcb4e8655551c921276a9ae3d580bf81a0ddf02715a7dcc1afb3cde7",
+      "size": 19266
     },
     {
       "file": "surge/kugou/kugou/kugou.list",
@@ -35460,18 +35460,18 @@
     {
       "file": "surge/microsoft/linkedin/linkedin.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 14,
       "scope": "surge",
-      "sha256": "ca54507c09e2c8ca40466db1e4df54ae347c396b3583aec4cb13e37e307af466",
-      "size": 58
+      "sha256": "82a9e66bd241bfce3ae863f81068ae90d9537a58e80fa2a453ba42b13c3c6678",
+      "size": 397
     },
     {
       "file": "surge/microsoft/microsoft/microsoft.list",
       "kind": "client_rules",
-      "rule_count": 1078,
+      "rule_count": 1089,
       "scope": "surge",
-      "sha256": "8337f37fa92b9333e628fed67eb4dd96a3f3217fc585090fb3cfd8f27000e639",
-      "size": 36245
+      "sha256": "434989c518514b90df1670c07e4e88d6eee8400615a0453ba2c7836c529d2134",
+      "size": 36557
     },
     {
       "file": "surge/microsoft/microsoftedge/microsoftedge.list",
@@ -35764,18 +35764,18 @@
     {
       "file": "surge/nintendo/nintendo/nintendo.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 128,
       "scope": "surge",
-      "sha256": "aff23e896010633149a8704bf9df723b0fbaf63f926ff7fb2bc5f47633f808b0",
-      "size": 58
+      "sha256": "008198ec914c57e6e772fde7a13594b16aabc82f1c19e5342079e34e49d934f2",
+      "size": 3993
     },
     {
       "file": "surge/nintendo/nintendo_aggregate/nintendo_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 127,
       "scope": "surge",
-      "sha256": "aff23e896010633149a8704bf9df723b0fbaf63f926ff7fb2bc5f47633f808b0",
-      "size": 58
+      "sha256": "fc582778f8bfd11307ac7f289d804248fe0ccce96ff828c2fdef8319c12f2660",
+      "size": 3966
     },
     {
       "file": "surge/nokia/nokia/nokia.list",
@@ -36068,18 +36068,18 @@
     {
       "file": "surge/pingan/pingan/pingan.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 29,
       "scope": "surge",
-      "sha256": "09fcce99cc94b2c50488c9f4b664c362d243718e0b4a2a0bd09b1b80105bdc1a",
-      "size": 55
+      "sha256": "9c9d115113961e72c08082cbf078624b4542241aad04c305ce75c858fcde0539",
+      "size": 792
     },
     {
       "file": "surge/pingan/pingan_aggregate/pingan_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 28,
       "scope": "surge",
-      "sha256": "57e4f941b68dc4c44d13ddec26b5db1ebc79838041a8f84c52575440bca032f0",
-      "size": 55
+      "sha256": "2f46767a605824628ec8f742c0902cfa82b63f180480111f664fe38c9364a5af",
+      "size": 767
     },
     {
       "file": "surge/pinterest/pinterest/pinterest.list",
@@ -36924,10 +36924,10 @@
     {
       "file": "surge/tencent/tencent/tencent.list",
       "kind": "client_rules",
-      "rule_count": 914,
+      "rule_count": 918,
       "scope": "surge",
-      "sha256": "dbcbeec3e407a0c55cbfebd329a704e243ce900d93e16798ec1473dee59a4c85",
-      "size": 26106
+      "sha256": "c21c218ef4e970fe628154d574446fd4d8cdf709c95174fbc09f899bbb97580b",
+      "size": 26226
     },
     {
       "file": "surge/tencent/tencentcloud/tencentcloud.list",
@@ -36988,10 +36988,10 @@
     {
       "file": "surge/tencent/wetv/wetv.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 9,
       "scope": "surge",
-      "sha256": "236e1d47f4adefc385a352b608c244aa7c8fed718f15f8600dd98d32fa736d2f",
-      "size": 50
+      "sha256": "cd0f4eb3094a5e68c203be8c3df52ee8e93c42f76a3157de4ead93c0ca6432b5",
+      "size": 239
     },
     {
       "file": "surge/tesla/tesla/tesla.list",
@@ -37044,18 +37044,18 @@
     {
       "file": "surge/tongcheng/tongcheng/tongcheng.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 10,
       "scope": "surge",
-      "sha256": "045ff5f5ce04fde4cc9ec5ddadf8e50fc8a6f8abb5caa1ebaab37eec4f1a2a4c",
-      "size": 46
+      "sha256": "3c1026a6e96a0a7ff39cb9e905f207eb2f4be26488246067e163083b16e61970",
+      "size": 239
     },
     {
       "file": "surge/tongcheng/tongcheng_aggregate/tongcheng_aggregate.list",
       "kind": "client_rules",
-      "rule_count": 2,
+      "rule_count": 9,
       "scope": "surge",
-      "sha256": "045ff5f5ce04fde4cc9ec5ddadf8e50fc8a6f8abb5caa1ebaab37eec4f1a2a4c",
-      "size": 46
+      "sha256": "9383947d2540feee5c73c09d8b4102fd3a562eaef7cd4e0bea145bf71f015146",
+      "size": 218
     },
     {
       "file": "surge/tonghuashun/tonghuashun/tonghuashun.list",
@@ -37666,7 +37666,7 @@
       "size": 54
     }
   ],
-  "generated_at": "2026-10-02T11:59:25.749836+00:00",
+  "generated_at": "2026-10-03T01:19:29.000994+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "layout_schema": "directory_layout_v2",
   "network_dataset_directories": [
