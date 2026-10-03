@@ -36,28 +36,24 @@
 | `docs.yml` | NON-PRODUCTION | NO | No | Soft docs layer |
 | `audit.yml` | NON-PRODUCTION | NO | No | Diagnostic |
 | `rule-mapping-release.yml` | NON-PRODUCTION / special | NO | No | Mapping release path |
+| `ecosystem-status.yml` | NON-PRODUCTION | NO | No | Cross-repo read model |
+| `published-raw-e2e.yml` | NON-PRODUCTION | NO | No | Consumer raw check |
 
 ---
 
-## Required-check guidance (G1b)
+## Required-check guidance
 
-### Do **not** treat as production authority
-
-- Runs stuck in `action_required` with **zero jobs**
-- Soft / secondary workflows (`docs.yml`, pure status refresh)
-- Historical or one-off audit workflows
+See **[`docs/BRANCH_PROTECTION.md`](BRANCH_PROTECTION.md)** for Settings UI steps.
 
 ### Default merge path (PR into `main`)
 
-Prefer these status names when configuring branch protection / mental model:
-
 ```text
-Validate (or Unit Tests)
+Unit Tests
 Directory Gate
 Engine v3 Independent Kernel
 ```
 
-Handoff / binding PRs additionally need:
+Handoff / binding PRs additionally:
 
 ```text
 Source Upstream Gate
@@ -68,8 +64,6 @@ Source Upstream Gate
 ```text
 Build Client Rules  →  Publish Release Candidate
 ```
-
-User-facing GitHub Release zips are **never** auto-created by Build/Publish.
 
 ### Operator rule
 
@@ -84,6 +78,7 @@ User-facing GitHub Release zips are **never** auto-created by Build/Publish.
 
 ## Related
 
+- `docs/BRANCH_PROTECTION.md`
 - `docs/RELEASE_RUNBOOK.md`
 - `docs/ACTIONS_SHA_PIN.md`
 - `docs/SOURCE_COLLECTION_FUNNEL.md`
