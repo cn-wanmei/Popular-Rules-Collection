@@ -15,15 +15,15 @@
 | 类型 | provider_aggregate |
 | Provider | `ea` |
 | 规则浏览路径 | `rule/ea/ea_aggregate/ea_aggregate.yaml` |
-| 规则数量（_index） | **2** |
-| SHA-256 | `7a97f0ef44ae7eb7f2e5327d3413d05633fdecf657a31026da8a6e316dd8cae3` |
+| 规则数量（_index） | **166** |
+| SHA-256 | `ea11c401723b73a98294ab41c1c48d506edadc937c27ea9c5acb422f1f327a4d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T151413174192Z-run` |
-| IR digest | `eb088441cc29028a282f1c6adb7b34cbfe0d84a6ccff68d82a7d46e26da9a7dd` |
+| Run ID | `20261003T162130328182Z-run` |
+| IR digest | `75188ee4f899cf8a4fb698e52479e3498c6034bd688b9ef2bd37d26ebb2c52bb` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -64,13 +64,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/ea/ea_aggregate/ea_aggregate.yaml` |
-| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/ea/ea_aggregate/ea_aggregate.list` |
-| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/ea/ea_aggregate/ea_aggregate.yaml` |
-| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/ea/ea_aggregate/ea_aggregate.list` |
-| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/ea/ea_aggregate/ea_aggregate.list` |
+| egern | 166 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/ea/ea_aggregate/ea_aggregate.yaml` |
+| loon | 166 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/ea/ea_aggregate/ea_aggregate.list` |
+| mihomo | 166 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/ea/ea_aggregate/ea_aggregate.yaml` |
+| quantumultx | 166 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/ea/ea_aggregate/ea_aggregate.list` |
+| shadowrocket | 166 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/ea/ea_aggregate/ea_aggregate.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/ea/ea_aggregate/ea_aggregate.json` |
-| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/ea/ea_aggregate/ea_aggregate.list` |
+| surge | 166 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/ea/ea_aggregate/ea_aggregate.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

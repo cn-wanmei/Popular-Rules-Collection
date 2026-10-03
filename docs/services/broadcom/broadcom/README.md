@@ -16,14 +16,14 @@
 | Provider | `broadcom` |
 | 规则浏览路径 | `rule/broadcom/broadcom/broadcom.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `c03b2a3ed0450fda9207161054b4ff14cc935f7a89ef42e4395054c632c48f9b` |
+| SHA-256 | `92d54fac75a7a77fc698ab69eb0543f33c4b154cd5bbbf963defc70a6d4dad20` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T151413174192Z-run` |
-| IR digest | `eb088441cc29028a282f1c6adb7b34cbfe0d84a6ccff68d82a7d46e26da9a7dd` |
+| Run ID | `20261003T162130328182Z-run` |
+| IR digest | `75188ee4f899cf8a4fb698e52479e3498c6034bd688b9ef2bd37d26ebb2c52bb` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

@@ -15,15 +15,15 @@
 | 类型 | provider_aggregate |
 | Provider | `kuaishou` |
 | 规则浏览路径 | `rule/kuaishou/kuaishou_aggregate/kuaishou_aggregate.yaml` |
-| 规则数量（_index） | **2** |
-| SHA-256 | `34edc5ed2218a1d5d7182805fbadc81c58dc4d52064dbca99e33cd37f04f19a5` |
+| 规则数量（_index） | **680** |
+| SHA-256 | `9f99868bfe14a9ecc647f258c1a190abcf6b6ca818c2c516db5b3910d9e9f021` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T151413174192Z-run` |
-| IR digest | `eb088441cc29028a282f1c6adb7b34cbfe0d84a6ccff68d82a7d46e26da9a7dd` |
+| Run ID | `20261003T162130328182Z-run` |
+| IR digest | `75188ee4f899cf8a4fb698e52479e3498c6034bd688b9ef2bd37d26ebb2c52bb` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -64,13 +64,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/kuaishou/kuaishou_aggregate/kuaishou_aggregate.yaml` |
-| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/kuaishou/kuaishou_aggregate/kuaishou_aggregate.list` |
-| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/kuaishou/kuaishou_aggregate/kuaishou_aggregate.yaml` |
-| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/kuaishou/kuaishou_aggregate/kuaishou_aggregate.list` |
-| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/kuaishou/kuaishou_aggregate/kuaishou_aggregate.list` |
+| egern | 680 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/kuaishou/kuaishou_aggregate/kuaishou_aggregate.yaml` |
+| loon | 680 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/kuaishou/kuaishou_aggregate/kuaishou_aggregate.list` |
+| mihomo | 680 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/kuaishou/kuaishou_aggregate/kuaishou_aggregate.yaml` |
+| quantumultx | 680 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/kuaishou/kuaishou_aggregate/kuaishou_aggregate.list` |
+| shadowrocket | 680 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/kuaishou/kuaishou_aggregate/kuaishou_aggregate.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/kuaishou/kuaishou_aggregate/kuaishou_aggregate.json` |
-| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/kuaishou/kuaishou_aggregate/kuaishou_aggregate.list` |
+| surge | 680 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/kuaishou/kuaishou_aggregate/kuaishou_aggregate.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

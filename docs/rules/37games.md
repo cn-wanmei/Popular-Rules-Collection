@@ -16,14 +16,14 @@
 | Provider | `37games` |
 | 规则浏览路径 | `rule/37games/37games/37games.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `2f4588ffce115af94cd304cfe6536c263c9c130638c9b319f0d90430e33456fb` |
+| SHA-256 | `364c5e3b7e0787116ea057d4aa3d02c89f82d571e9143a2a6969c7e1bf494111` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T151413174192Z-run` |
-| IR digest | `eb088441cc29028a282f1c6adb7b34cbfe0d84a6ccff68d82a7d46e26da9a7dd` |
+| Run ID | `20261003T162130328182Z-run` |
+| IR digest | `75188ee4f899cf8a4fb698e52479e3498c6034bd688b9ef2bd37d26ebb2c52bb` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

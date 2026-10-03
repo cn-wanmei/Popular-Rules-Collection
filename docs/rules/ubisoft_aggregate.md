@@ -16,14 +16,14 @@
 | Provider | `ubisoft` |
 | 规则浏览路径 | `rule/ubisoft/ubisoft_aggregate/ubisoft_aggregate.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `16283570dd599a192edbd328dcf6dbd4786c9119e1537555cfc5cef97ceff87f` |
+| SHA-256 | `5db3cb216d3aff4e4228e040820bc3039458df2992fa35046cc71a92d037488f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T151413174192Z-run` |
-| IR digest | `eb088441cc29028a282f1c6adb7b34cbfe0d84a6ccff68d82a7d46e26da9a7dd` |
+| Run ID | `20261003T162130328182Z-run` |
+| IR digest | `75188ee4f899cf8a4fb698e52479e3498c6034bd688b9ef2bd37d26ebb2c52bb` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

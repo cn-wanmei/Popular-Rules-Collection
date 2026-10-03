@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `atlassian` |
 | 规则浏览路径 | `rule/atlassian/atlassian/atlassian.yaml` |
-| 规则数量（_index） | **2** |
-| SHA-256 | `74ff6ca5dd28070e077df949a600bae6faa80e0fc0fdbca1cf081b4792ee2170` |
+| 规则数量（_index） | **12** |
+| SHA-256 | `85bf5a1d1b4fa3eca5de503aa26421eab4e863b20ee0b9de761cae25da9103ab` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T151413174192Z-run` |
-| IR digest | `eb088441cc29028a282f1c6adb7b34cbfe0d84a6ccff68d82a7d46e26da9a7dd` |
+| Run ID | `20261003T162130328182Z-run` |
+| IR digest | `75188ee4f899cf8a4fb698e52479e3498c6034bd688b9ef2bd37d26ebb2c52bb` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/atlassian/atlassian/atlassian.yaml` |
-| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/atlassian/atlassian/atlassian.list` |
-| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/atlassian/atlassian/atlassian.yaml` |
-| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/atlassian/atlassian/atlassian.list` |
-| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/atlassian/atlassian/atlassian.list` |
+| egern | 16 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/atlassian/atlassian/atlassian.yaml` |
+| loon | 16 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/atlassian/atlassian/atlassian.list` |
+| mihomo | 16 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/atlassian/atlassian/atlassian.yaml` |
+| quantumultx | 16 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/atlassian/atlassian/atlassian.list` |
+| shadowrocket | 16 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/atlassian/atlassian/atlassian.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/atlassian/atlassian/atlassian.json` |
-| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/atlassian/atlassian/atlassian.list` |
+| surge | 16 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/atlassian/atlassian/atlassian.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

@@ -16,14 +16,14 @@
 | Provider | `xiaomi` |
 | 规则浏览路径 | `rule/xiaomi/mi-cloud/mi-cloud.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `020032653f3603bb19a3f58be8c0e8459f2fe4f6250e95fdcb8a6d2decfc4c68` |
+| SHA-256 | `54d9f2e672600b2f8da973b4e6d76a6dc7422de5496791071d3387950d99524c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T151413174192Z-run` |
-| IR digest | `eb088441cc29028a282f1c6adb7b34cbfe0d84a6ccff68d82a7d46e26da9a7dd` |
+| Run ID | `20261003T162130328182Z-run` |
+| IR digest | `75188ee4f899cf8a4fb698e52479e3498c6034bd688b9ef2bd37d26ebb2c52bb` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

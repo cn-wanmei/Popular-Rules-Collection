@@ -16,14 +16,14 @@
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/quanmin-k-ge/quanmin-k-ge.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `c19263f738abd40503a5b1a065ee94ced471f72db79ba23bd5bc492974209295` |
+| SHA-256 | `6249fae6f5c83b99bffee0edce73360e995e8272e4451a4a995cf7badb0e92e3` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T151413174192Z-run` |
-| IR digest | `eb088441cc29028a282f1c6adb7b34cbfe0d84a6ccff68d82a7d46e26da9a7dd` |
+| Run ID | `20261003T162130328182Z-run` |
+| IR digest | `75188ee4f899cf8a4fb698e52479e3498c6034bd688b9ef2bd37d26ebb2c52bb` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

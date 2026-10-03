@@ -16,14 +16,14 @@
 | Provider | `baichuan` |
 | 规则浏览路径 | `rule/baichuan/baichuan/baichuan.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `fb425dbb6a696c37e79819ce47b747cc447fe6b792efed42d1f758a9c6ee9f03` |
+| SHA-256 | `8b6d77d3afdf5f02d3e7113f5d448a670d75ad7f2a022d23e584fd1f7102b7c3` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T151413174192Z-run` |
-| IR digest | `eb088441cc29028a282f1c6adb7b34cbfe0d84a6ccff68d82a7d46e26da9a7dd` |
+| Run ID | `20261003T162130328182Z-run` |
+| IR digest | `75188ee4f899cf8a4fb698e52479e3498c6034bd688b9ef2bd37d26ebb2c52bb` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

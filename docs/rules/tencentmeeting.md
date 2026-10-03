@@ -16,14 +16,14 @@
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/tencentmeeting/tencentmeeting.yaml` |
 | 规则数量（_index） | **3** |
-| SHA-256 | `758ec5fb901bef82b549e8e693de6bdb59a678ec64dc2a9c11f3f853368f2b54` |
+| SHA-256 | `e471758fda8e062e73fc8a1b4e5f6211bf3e64c7797ec4cda532b800d1312fe3` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T151413174192Z-run` |
-| IR digest | `eb088441cc29028a282f1c6adb7b34cbfe0d84a6ccff68d82a7d46e26da9a7dd` |
+| Run ID | `20261003T162130328182Z-run` |
+| IR digest | `75188ee4f899cf8a4fb698e52479e3498c6034bd688b9ef2bd37d26ebb2c52bb` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

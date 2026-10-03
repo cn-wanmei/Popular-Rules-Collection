@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `tongcheng` |
 | 规则浏览路径 | `rule/tongcheng/tongcheng/tongcheng.yaml` |
-| 规则数量（_index） | **2** |
-| SHA-256 | `c350c416d06cb36863b7d6021e34b811926efbaf09e9c2c70f24089507480dbb` |
+| 规则数量（_index） | **9** |
+| SHA-256 | `b6201c9f1607f2ba25129428704f17a810e182300320ddef1ae78d77a440b81f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T151413174192Z-run` |
-| IR digest | `eb088441cc29028a282f1c6adb7b34cbfe0d84a6ccff68d82a7d46e26da9a7dd` |
+| Run ID | `20261003T162130328182Z-run` |
+| IR digest | `75188ee4f899cf8a4fb698e52479e3498c6034bd688b9ef2bd37d26ebb2c52bb` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/tongcheng/tongcheng/tongcheng.yaml` |
-| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/tongcheng/tongcheng/tongcheng.list` |
-| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/tongcheng/tongcheng/tongcheng.yaml` |
-| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/tongcheng/tongcheng/tongcheng.list` |
-| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/tongcheng/tongcheng/tongcheng.list` |
+| egern | 10 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/tongcheng/tongcheng/tongcheng.yaml` |
+| loon | 10 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/tongcheng/tongcheng/tongcheng.list` |
+| mihomo | 10 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/tongcheng/tongcheng/tongcheng.yaml` |
+| quantumultx | 10 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/tongcheng/tongcheng/tongcheng.list` |
+| shadowrocket | 10 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/tongcheng/tongcheng/tongcheng.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/tongcheng/tongcheng/tongcheng.json` |
-| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/tongcheng/tongcheng/tongcheng.list` |
+| surge | 10 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/tongcheng/tongcheng/tongcheng.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

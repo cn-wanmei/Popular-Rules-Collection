@@ -16,14 +16,14 @@
 | Provider | `wuba` |
 | 规则浏览路径 | `rule/wuba/wuba_aggregate/wuba_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `5b850c4eb39b178316996bc8ed2f9166b3a36b687d5064c1d507b60c7c0f95e1` |
+| SHA-256 | `1b5ea4781d504002279324ff75bacb444b75f1bfaa1f8baf0744883f9bcf3e46` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T151413174192Z-run` |
-| IR digest | `eb088441cc29028a282f1c6adb7b34cbfe0d84a6ccff68d82a7d46e26da9a7dd` |
+| Run ID | `20261003T162130328182Z-run` |
+| IR digest | `75188ee4f899cf8a4fb698e52479e3498c6034bd688b9ef2bd37d26ebb2c52bb` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

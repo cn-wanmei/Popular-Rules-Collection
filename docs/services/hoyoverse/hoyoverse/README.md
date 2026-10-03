@@ -14,14 +14,14 @@
 | Provider | `hoyoverse` |
 | 规则浏览路径 | `rule/hoyoverse/hoyoverse/hoyoverse.yaml` |
 | 规则数量（_index） | **15** |
-| SHA-256 | `d1078a4111b4daf2e4aa97dd1656ffc5d67a28217a4e98f8cf86a1e257b4c48e` |
+| SHA-256 | `6bf2babe0d8399637573753a0fe3a0c84cce0a6ffb65b179e63f23d6a86753f3` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T151413174192Z-run` |
-| IR digest | `eb088441cc29028a282f1c6adb7b34cbfe0d84a6ccff68d82a7d46e26da9a7dd` |
+| Run ID | `20261003T162130328182Z-run` |
+| IR digest | `75188ee4f899cf8a4fb698e52479e3498c6034bd688b9ef2bd37d26ebb2c52bb` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

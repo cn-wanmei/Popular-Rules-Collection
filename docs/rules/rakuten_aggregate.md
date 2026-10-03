@@ -16,14 +16,14 @@
 | Provider | `rakuten` |
 | 规则浏览路径 | `rule/rakuten/rakuten_aggregate/rakuten_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `d3554a675aebe07a43a06b3fee87665207c81e16416aed007aaf36295e7d9aff` |
+| SHA-256 | `0f99386b6a3ba53e468a6ece3c872b5725ddd36a261f85e68191bbd6bc23cd4a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T151413174192Z-run` |
-| IR digest | `eb088441cc29028a282f1c6adb7b34cbfe0d84a6ccff68d82a7d46e26da9a7dd` |
+| Run ID | `20261003T162130328182Z-run` |
+| IR digest | `75188ee4f899cf8a4fb698e52479e3498c6034bd688b9ef2bd37d26ebb2c52bb` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

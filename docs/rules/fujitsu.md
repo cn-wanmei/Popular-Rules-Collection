@@ -16,14 +16,14 @@
 | Provider | `fujitsu` |
 | 规则浏览路径 | `rule/fujitsu/fujitsu/fujitsu.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `6f87c6f7bf7e4207d17546a977a87059629f24380bd013af28c393364d4fd04c` |
+| SHA-256 | `54042be141d94cd7f8511b6846fb472b292a8547a3d67ad7d398dc88a03778c7` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T151413174192Z-run` |
-| IR digest | `eb088441cc29028a282f1c6adb7b34cbfe0d84a6ccff68d82a7d46e26da9a7dd` |
+| Run ID | `20261003T162130328182Z-run` |
+| IR digest | `75188ee4f899cf8a4fb698e52479e3498c6034bd688b9ef2bd37d26ebb2c52bb` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

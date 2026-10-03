@@ -16,14 +16,14 @@
 | Provider | `vercel` |
 | 规则浏览路径 | `rule/vercel/vercel_aggregate/vercel_aggregate.yaml` |
 | 规则数量（_index） | **27** |
-| SHA-256 | `cce37026a037b1e025d073f86d3c6b5f6b87381f0e0c36b6d4e7856e5e9d8af1` |
+| SHA-256 | `7a6f53b33d6033d2c45b676d7dad3cca7ab9f907d6eb6eeaa3959ad2f3fe0fb8` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T151413174192Z-run` |
-| IR digest | `eb088441cc29028a282f1c6adb7b34cbfe0d84a6ccff68d82a7d46e26da9a7dd` |
+| Run ID | `20261003T162130328182Z-run` |
+| IR digest | `75188ee4f899cf8a4fb698e52479e3498c6034bd688b9ef2bd37d26ebb2c52bb` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
