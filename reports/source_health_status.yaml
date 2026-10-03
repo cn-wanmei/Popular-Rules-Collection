@@ -1,95 +1,95 @@
 schema: source_health_status_v1
-generated_at: '2026-10-03T16:55:20.361222Z'
+generated_at: '2026-10-03T18:14:13.128758Z'
 policy: config/health_policy.yaml
 lifecycle_registry: sources/lifecycle.yaml
 sources:
   anti-ad:
     lifecycle: active
     status: degraded
-    reason: last success 61h ago
+    reason: last success 62h ago
     last_success: '2026-10-01T03:40:37.083461+00:00'
     last_attempt: '2026-10-01T03:40:37.083461+00:00'
     failure_count: 0
-    age_hours: 61
+    age_hours: 62
     rules_declared: 3
   blackmatrix7:
     lifecycle: active
     status: healthy
-    reason: last success 0h ago
+    reason: last success 1h ago
     last_success: '2026-10-03T16:51:02.930760+00:00'
     last_attempt: '2026-10-03T16:51:02.930741+00:00'
     failure_count: 0
-    age_hours: 0
+    age_hours: 1
     rules_declared: 154
   dler:
     lifecycle: active
     status: healthy
-    reason: last success 0h ago
+    reason: last success 1h ago
     last_success: '2026-10-03T16:51:03.017810+00:00'
     last_attempt: '2026-10-03T16:51:03.017795+00:00'
     failure_count: 0
-    age_hours: 0
+    age_hours: 1
     rules_declared: 20
   hagezi:
     lifecycle: active
     status: degraded
-    reason: last success 61h ago
+    reason: last success 62h ago
     last_success: '2026-10-01T03:40:37.083461+00:00'
     last_attempt: '2026-10-01T03:40:37.083461+00:00'
     failure_count: 0
-    age_hours: 61
+    age_hours: 62
     rules_declared: 3
   lm-firefly:
     lifecycle: active
     status: healthy
-    reason: last success 0h ago
+    reason: last success 1h ago
     last_success: '2026-10-03T16:51:03.019104+00:00'
     last_attempt: '2026-10-03T16:51:03.019096+00:00'
     failure_count: 0
-    age_hours: 0
+    age_hours: 1
     rules_declared: 1
   loyalsoldier:
     lifecycle: active
     status: degraded
-    reason: last success 61h ago
+    reason: last success 62h ago
     last_success: '2026-10-01T03:40:37.083461+00:00'
     last_attempt: '2026-10-01T03:40:37.083461+00:00'
     failure_count: 0
-    age_hours: 61
+    age_hours: 62
     rules_declared: 14
   metacubex:
     lifecycle: active
     status: healthy
-    reason: last success 0h ago
+    reason: last success 1h ago
     last_success: '2026-10-03T16:51:02.979886+00:00'
     last_attempt: '2026-10-03T16:51:02.979866+00:00'
     failure_count: 0
-    age_hours: 0
+    age_hours: 1
     rules_declared: 76
   popular-rules-source:
     lifecycle: active
     status: healthy
-    reason: last success 0h ago
+    reason: last success 1h ago
     last_success: '2026-10-03T16:51:02.288961+00:00'
     last_attempt: '2026-10-03T16:51:02.288956+00:00'
     failure_count: 0
-    age_hours: 0
+    age_hours: 1
     rules_declared: 281
   sukkaw:
     lifecycle: active
     status: degraded
-    reason: last success 61h ago
+    reason: last success 62h ago
     last_success: '2026-10-01T03:40:37.083461+00:00'
     last_attempt: '2026-10-01T03:40:37.083461+00:00'
     failure_count: 0
-    age_hours: 61
+    age_hours: 62
     rules_declared: 8
   v2fly:
     lifecycle: active
     status: healthy
-    reason: last success 0h ago
+    reason: last success 1h ago
     last_success: '2026-10-03T16:51:03.006281+00:00'
     last_attempt: '2026-10-03T16:51:03.006264+00:00'
     failure_count: 0
-    age_hours: 0
+    age_hours: 1
     rules_declared: 56
