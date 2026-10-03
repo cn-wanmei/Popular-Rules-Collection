@@ -1,0 +1,75 @@
+name: Recovery Drill
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: recovery-drill
+  cancel-in-progress: true
+
+jobs:
+  drill:
+    name: Probe recovery surfaces (read-only)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Probe critical public signals
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/drill
+          report=/tmp/drill/recovery_drill.json
+
+          probe() {
+            local name="$1" url="$2"
+            local code body
+            code=$(curl -sS -o /tmp/drill/body -w "%{http_code}" "$url" || echo "000")
+            body_bytes=$(wc -c </tmp/drill/body | tr -d ' ')
+            echo "$name HTTP $code bytes $body_bytes"
+            if [ "$code" != "200" ] || [ "${body_bytes:-0}" -lt 1 ]; then
+              echo "FAIL $name"
+              echo "{\"name\":\"$name\",\"ok\":false,\"http\":$code}" >> /tmp/drill/lines.jsonl
+              return 1
+            fi
+            echo "{\"name\":\"$name\",\"ok\":true,\"http\":$code,\"bytes\":$body_bytes}" >> /tmp/drill/lines.jsonl
+            return 0
+          }
+
+          : > /tmp/drill/lines.jsonl
+          rc=0
+          probe collection_index "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/rule/_index.yaml" || rc=1
+          probe collection_publish_status "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/PUBLISH_STATUS.md" || rc=1
+          probe source_durable "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/reports/durable-bridge/latest.json" || rc=1
+          probe icon_snapshot "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/main/config/collection_identity_snapshot.json" || rc=1
+          probe icon_pointers "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/main/config/release-pointers.yaml" || rc=1
+
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from datetime import datetime, timezone
+          lines = Path("/tmp/drill/lines.jsonl").read_text(encoding="utf-8").strip().splitlines()
+          probes = [json.loads(x) for x in lines if x.strip()]
+          out = {
+            "schema": "recovery_drill_v1",
+            "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "note": "Read-only probes. Does not mutate SSOT. See docs/DISASTER_RECOVERY.md.",
+            "probes": probes,
+            "all_ok": all(p.get("ok") for p in probes),
+          }
+          Path("/tmp/drill/recovery_drill.json").write_text(json.dumps(out, indent=2) + "\n", encoding="utf-8")
+          print(json.dumps(out, indent=2))
+          if not out["all_ok"]:
+              raise SystemExit("Recovery Drill: one or more surfaces unavailable")
+          print("Recovery Drill: PASS")
+          PY
+
+          exit "$rc"
+
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        if: always()
+        with:
+          name: recovery-drill-report
+          path: /tmp/drill/recovery_drill.json
+          if-no-files-found: warn
