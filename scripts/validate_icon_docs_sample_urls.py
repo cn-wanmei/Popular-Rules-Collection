@@ -5,10 +5,12 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+# Sample per-service Documentation Layer pages (must contain V6 dist <img>).
+# Provider-level README indexes are not Doc-Layer pages and must not be sampled.
 SAMPLES = [
     "docs/services/alibaba/taobao/README.md",
-    "docs/services/apple/README.md",
-    "docs/services/microsoft/README.md",
+    "docs/services/apple/appstore/README.md",
+    "docs/services/microsoft/onedrive/README.md",
 ]
 IMG_RE = re.compile(
     r'<img\s+src="(https://raw\.githubusercontent\.com/cn-wanmei/Popular-Rules-Icon/dist/v/[^"]+)"'
@@ -32,6 +34,9 @@ def main() -> int:
     checked = 0
     for rel in SAMPLES:
         path = ROOT / rel
+        if not path.is_file():
+            errors.append(f"{rel}: missing file")
+            continue
         text = path.read_text(encoding="utf-8")
         m = IMG_RE.search(text)
         if not m:
