@@ -9,30 +9,25 @@ Audit basis: 2026-10-03 cross-repo audit (Architecture ready → Governance focu
 
 | ID | Item | Where |
 |----|------|--------|
-| G1a | Workflow classification index | `docs/WORKFLOWS.md` |
-| G1b | Full inventory + required-check guidance | `docs/WORKFLOWS.md` |
-| G2a | Source `download-artifact` SHA pin | Source durable-source-bridge |
-| G2b | `requirements.lock` + SECURITY contract | Source |
-| G2c | CI installs use lock; remaining artifact pins | Source workflows |
-| G3a | Identity freshness workflow (weekly) | Icon `identity-freshness.yml` |
-| G3b | Drift → regenerate snapshot + open PR | Icon `identity-freshness.yml` |
-| G4a | `PIPELINE_AND_PUBLISH` aligned with Architecture | Collection |
-| G4b | Identity Boundary final (Clean V6) | Icon |
-| G4c | Historical doc index | Icon `docs/HISTORICAL.md` |
-| G5a | Durable Bridge selective matrix + policy file | Source |
-| G6 | Cross-repo read model (generated-only) | `scripts/generate_ecosystem_release_status.py` + `ecosystem-status.yml` |
-| G7 | Lifecycle × Freshness × Health × Lineage | `docs/STATE_MODEL.md` |
-| G | Root `SECURITY.md` | Collection + Icon |
+| G1a/b | Workflow classification + inventory | `docs/WORKFLOWS.md` |
+| G2 | Source security contract / lock / SHA pins | Source |
+| G3a/b | Identity freshness + drift PR path | Icon |
+| G3fix | Parse Collection `entries[]` (false drift) | Icon `identity-freshness.yml` + sync script |
+| G4a–c | Pipeline docs / Identity Final / historical index | Collection + Icon |
+| G5a | Durable selective matrix + policy | Source |
+| G6 | Cross-repo read model | `ecosystem-status.yml` |
+| G7 | Four-dimension state model | `docs/STATE_MODEL.md` |
+| G8 | Published Raw E2E | `published-raw-e2e.yml` |
+| G | Root SECURITY.md | Collection + Icon |
 
-## Remaining
+## Remaining (optional / settings)
 
 | ID | Item | Notes |
 |----|------|--------|
-| G4d | Move RISK/R14 into `docs/archive/` | Index exists; physical move optional |
-| G8 | Published Raw E2E | Consumer-side verify after publish |
-| G1c | Branch-protection required-check alignment | Repo settings (UI); docs already list recommended checks |
+| G4d | Physical `docs/archive/` move for RISK/R14 | Index already marks historical |
+| G1c | Branch-protection required-check UI alignment | Docs list recommended checks |
 
-## Non-goals (explicit)
+## Non-goals
 
 - No additional authoritative status databases
 - No new gate workflows without retiring duplicates
