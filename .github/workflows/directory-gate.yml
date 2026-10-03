@@ -2,8 +2,26 @@ name: Directory Gate
 
 on:
   pull_request:
+    paths:
+      - "rule/**"
+      - "generated/**"
+      - "scripts/directory_gate.py"
+      - "scripts/rule_mapping_gate.py"
+      - "scripts/docs_ssot_gate.py"
+      - "config/**"
+      - "docs/**"
+      - ".github/workflows/directory-gate.yml"
   push:
     branches: [main]
+    paths:
+      - "rule/**"
+      - "generated/**"
+      - "scripts/directory_gate.py"
+      - "scripts/rule_mapping_gate.py"
+      - "scripts/docs_ssot_gate.py"
+      - "config/**"
+      - "docs/**"
+      - ".github/workflows/directory-gate.yml"
 
 jobs:
   directory-gate:
@@ -12,9 +30,9 @@ jobs:
       contents: read
     steps:
       - name: Checkout
-        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
       - name: Setup Python
-        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: "3.12.14"
       - name: Install YAML parser
