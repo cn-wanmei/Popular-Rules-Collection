@@ -1,1 +1,134 @@
-PLACEHOLDER_WILL_FAIL
+name: Client GitHub Release Packages
+
+# Manual-only packaging of 7 client rule zips + GitHub Release.
+# NEVER triggered by push / build / publish / schedule.
+# Run from Actions → Client GitHub Release Packages → Run workflow
+# after a successful Publish Release Candidate when you want user-facing zips.
+
+on:
+  workflow_dispatch:
+    inputs:
+      stamp:
+        description: "Optional stamp override (safe form preferred: 2026-10-2-13-25-31)"
+        required: false
+        type: string
+        default: ""
+      dry_run:
+        description: "Package only; do not create GitHub Release"
+        required: false
+        type: boolean
+        default: false
+
+concurrency:
+  group: client-github-release
+  cancel-in-progress: false
+
+jobs:
+  package-and-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12.14"
+
+      - name: Package 7 client zips
+        id: pkg
+        run: |
+          set -euo pipefail
+          # Closed-loop changelog baseline (H):
+          # 1) previous rules-* tag index (preferred)
+          # 2) else HEAD~1 rule/_index.yaml
+          PREV_ARGS=()
+          git fetch --tags --force origin 2>/dev/null || true
+          PREV_TAG=$(git tag -l 'rules-*' --sort=-creatordate | head -n1 || true)
+          if [ -n "$PREV_TAG" ]; then
+            if git show "${PREV_TAG}:rule/_index.yaml" > /tmp/prev_index.yaml 2>/dev/null; then
+              PREV_ARGS+=(--prev-index /tmp/prev_index.yaml)
+              echo "Using tag ${PREV_TAG} rule/_index.yaml for changelog diff"
+            fi
+          fi
+          if [ ${#PREV_ARGS[@]} -eq 0 ] && git rev-parse HEAD~1 >/dev/null 2>&1; then
+            if git show HEAD~1:rule/_index.yaml > /tmp/prev_index.yaml 2>/dev/null; then
+              PREV_ARGS+=(--prev-index /tmp/prev_index.yaml)
+              echo "Using HEAD~1 rule/_index.yaml for changelog diff"
+            fi
+          fi
+          if [ -n "${{ inputs.stamp }}" ]; then
+            python scripts/package_client_releases.py \
+              --generated-root generated \
+              --out-dir release-packages \
+              --stamp "${{ inputs.stamp }}" \
+              "${PREV_ARGS[@]}"
+          else
+            python scripts/package_client_releases.py \
+              --generated-root generated \
+              --out-dir release-packages \
+              "${PREV_ARGS[@]}"
+          fi
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          meta = json.loads(Path("release-packages/release-meta.json").read_text(encoding="utf-8"))
+          stamp_safe = meta["stamp_safe"]
+          stamp_human = meta.get("stamp_human") or stamp_safe
+          zips = list(Path("release-packages").glob("*.zip"))
+          assert len(zips) == 7, f"expected 7 zips, got {len(zips)}"
+          for z in zips:
+              assert ":" not in z.name and "[" not in z.name, z.name
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+              f.write(f"stamp_safe={stamp_safe}\n")
+              f.write(f"stamp_human={stamp_human}\n")
+          print(f"stamp_safe={stamp_safe} stamp_human={stamp_human} zips={len(zips)}")
+          PY
+          ls -la release-packages/
+
+      - name: Upload package artifacts
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        with:
+          name: client-release-packages-${{ steps.pkg.outputs.stamp_safe }}
+          path: release-packages/
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Create GitHub Release
+        if: ${{ inputs.dry_run != true }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          set -f   # disable pathname expansion
+          STAMP_SAFE="${{ steps.pkg.outputs.stamp_safe }}"
+          STAMP_HUMAN="${{ steps.pkg.outputs.stamp_human }}"
+          SAFE_TAG="rules-${STAMP_SAFE}"
+          BODY_FILE=release-packages/RELEASE_NOTES.md
+
+          if gh release view "$SAFE_TAG" >/dev/null 2>&1; then
+            gh release delete "$SAFE_TAG" --yes || true
+            git push origin ":refs/tags/$SAFE_TAG" || true
+          fi
+
+          ASSET_ARGS=()
+          while IFS= read -r -d '' f; do
+            ASSET_ARGS+=("$f")
+          done < <(find release-packages -maxdepth 1 -type f \
+            \( -name '*.zip' -o -name 'RELEASE_NOTES.md' -o -name 'SHA256SUMS.txt' -o -name 'release-meta.json' \) \
+            -print0 | sort -z)
+
+          test "${#ASSET_ARGS[@]}" -ge 8
+
+          gh release create "$SAFE_TAG" \
+            --title "Rules Collection — ${STAMP_HUMAN}" \
+            --notes-file "$BODY_FILE" \
+            "${ASSET_ARGS[@]}"
+
+          echo "Created release: $SAFE_TAG"
+          gh release view "$SAFE_TAG" --json assets --jq '.assets[].name'
