@@ -2,11 +2,11 @@
   "id": "dat-geoip-lite",
   "kind": "binary",
   "scope": "artifact",
-  "backup": "backup/2026-10-02/datasets/dat-geoip-lite.bin",
+  "backup": "backup/2026-10-03/datasets/dat-geoip-lite.bin",
   "artifact": "generated/mmdb/geoip-lite.dat",
   "sha256": "49c629ec4518a0d2e103813fdfa17f245928e4b8dab5d9f3526408d779889344",
   "bytes": 207733,
-  "fetched_at": "2026-10-02T11:42:42.159283+00:00",
+  "fetched_at": "2026-10-03T01:04:17.816751+00:00",
   "source": {
     "owner": null,
     "repo": null,
