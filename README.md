@@ -16,6 +16,20 @@
 
 </small>
 
+## 下载发行包（用户入口）
+
+> **状态数字不要手写**：一律以机器生成文件为准。
+
+| 产物 | 入口 |
+|---|---|
+| **7 客户端规则 zip** | [Releases · rules-*](https://github.com/cn-wanmei/Popular-Rules-Collection/releases)（手动发布；命名 `{client}-{YYYY}-{M}-{D}-{HH}-{MM}-{SS}.zip`） |
+| **8 风格图标 zip** | [Popular-Rules-Icon Releases](https://github.com/cn-wanmei/Popular-Rules-Icon/releases) |
+| **在线 Raw / 目录树** | [`generated/`](generated/) · [`rule/`](rule/) |
+| **权威发行状态** | [`PUBLISH_STATUS.md`](PUBLISH_STATUS.md)（CI 自动刷新） |
+| **Icon 生产指针** | [Icon `config/release-pointers.yaml`](https://github.com/cn-wanmei/Popular-Rules-Icon/blob/main/config/release-pointers.yaml) |
+
+发布节奏：规则/图标 **不会**在 Build 或 Publish 时自动打 GitHub Release；需要时在 Actions 中手动运行 `Client GitHub Release Packages` / `Icon Style GitHub Release Packages`。
+
 ## 图标体系
 
 [Icon System 6.0](https://github.com/cn-wanmei/Popular-Rules-Icon) · [V6 切换状态](docs/ICON_V6_CUTOVER.md) · V5 已从运行时与物理资产中完全退休
@@ -108,6 +122,8 @@ Gates → Immutable Release Candidate → Publish
 - [Icon System 6.0（外部）](https://github.com/cn-wanmei/Popular-Rules-Icon)
 - [V6 切换状态](docs/ICON_V6_CUTOVER.md)
 - [历史激活档案](docs/archive/activation/README.md)
+- [Release 命名约定](docs/RELEASE_NAMING.md)
+- [Source → Collection 晋升漏斗](docs/SOURCE_COLLECTION_FUNNEL.md)
 
 > `rule/` 与 `generated/` 都是派生发行物。不要手工修补规则数字、Raw URL、SHA-256 或图标路径。
 
