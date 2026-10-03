@@ -48,12 +48,12 @@
       "source": "backup/2026-10-03/datasets/dat-geoip.bin"
     },
     {
-      "bytes": 4253442,
+      "bytes": 4253533,
       "file": "mmdb/geosite.dat",
       "id": "dat-geosite",
       "kind": "binary",
       "scope": "mmdb",
-      "sha256": "d8b751e6af6063bbacf0cbc23385fd37caac1c0e04e05292b5e97213a98ef5fc",
+      "sha256": "1fcaf9622d0fd5fb1dc0d1f9b81ff15abe1b284622ff6510a2809f5585721c7a",
       "source": "backup/2026-10-03/datasets/dat-geosite.bin"
     },
     {
@@ -389,7 +389,7 @@
       "kind": "provider",
       "lines": 11484,
       "scope": "provider",
-      "sha256": "be27c28102a1606c38d87633b450c5a45cb5c2440b05897842182eb950d1932b",
+      "sha256": "2663242b1f2114e5aca2db43df12dd13561685586afc0e78e524ca3d32511a4a",
       "source": "database/provider/aws.txt"
     },
     {
@@ -399,7 +399,7 @@
       "kind": "provider",
       "lines": 1163,
       "scope": "provider",
-      "sha256": "eaba7f125f8a660d79b18d2083449a5861927b535f7babe494dd6cf53adee1e8",
+      "sha256": "b75abe17de73ff8bece89baa30ddacb80fdf28505af61978af036cfdf6000a02",
       "source": "database/provider/googlecloud.txt"
     },
     {
@@ -409,7 +409,7 @@
       "kind": "provider",
       "lines": 152,
       "scope": "provider",
-      "sha256": "e3e0c65a5ee37a64f5579e10b05e17d241b17304adc67cd7d0c9bc007e14dc51",
+      "sha256": "357b12aef39c37628ff84682742af8c007fb286f893c0d5b5333b012495f6a29",
       "source": "database/provider/goog.txt"
     },
     {
@@ -803,7 +803,7 @@
       "source": "database/ips/zhihu.txt"
     }
   ],
-  "generated_at": "2026-10-03T01:19:28.965284+00:00",
+  "generated_at": "2026-10-03T04:17:44.601489+00:00",
   "missing_optional": [],
   "runtime_contract": "network_dataset_distribution_v2",
   "schema": "network_publication_v2",
@@ -815,5 +815,5 @@
     "provider_cidrs_are_not_service_ownership": true,
     "service_rules": "generated/<client>/..."
   },
-  "source_commit": "d0c4c331579e7d7904cf3a06cc83e9e4be242bb3"
+  "source_commit": "3854aec2b8507dbd311aedae73be4b6b23ed5d5d"
 }
