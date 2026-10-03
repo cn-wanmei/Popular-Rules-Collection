@@ -184,13 +184,21 @@ services:
       source_release: releases/tencentcloud/snap-tencentcloud-e55bc8c508e839813ae20cd0/release.json
       snapshot_id: snap-tencentcloud-e55bc8c508e839813ae20cd0
       content_digest: 073c3031c90820457209336550d39bbd4976b9f91c1486be5b0795a2c302057f
-      production_activation_record: TENCENTCLOUD_PRODUCTION_ACTIVATION_2026-10-01.md
+      production_activation_record: docs/archive/activation/TENCENTCLOUD_PRODUCTION_ACTIVATION_2026-10-01.md
       reconciliation_run_id: reconcile-tencentcloud-operator-2026-10-01
       v3_run_id: canary-tencentcloud-operator-2026-10-01
       semantic_run_id: canary-tencentcloud-operator-2026-10-01
       rollback_run_id: rollback-tencentcloud-operator-2026-10-01
       observation_started_at: '2026-10-01T00:00:00+00:00'
       observation_run_id: observe-tencentcloud-operator-2026-10-01
+      production_unlock_run_id: 'operator-2026-10-01'
+      reconciliation_pass: true
+      seven_client_semantic_pass: true
+      rollback_pass: true
+      observation_pass: true
+      source_official_evidence_only: true
+      seed_only_count: 0
+      conflict_count: 0
   tmall:
     state: production
     enabled: true
@@ -213,10 +221,13 @@ services:
       rollback_run_id: rollback-tmall-d73fa2383e63c8ae
       observation_run_id: observe-tmall-b6fb082f4121797c
       production_unlock_run_id: '36802753035'
-      production_activation_record: TMALL_PRODUCTION_ACTIVATION_2026-10-01.md
+      production_activation_record: docs/archive/activation/TMALL_PRODUCTION_ACTIVATION_2026-10-01.md
       reconciliation_pass: true
       seven_client_semantic_pass: true
       rollback_pass: true
       observation_pass: true
       production_unlock_qualification: PASS
+      source_official_evidence_only: true
+      seed_only_count: 0
+      conflict_count: 0
       observation_started_at: '2026-10-01T00:00:00+00:00'
