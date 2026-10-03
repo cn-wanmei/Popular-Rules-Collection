@@ -33,7 +33,7 @@ jobs:
       - name: Checkout main
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
-          fetch-depth: 1
+          fetch-depth: 2
 
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
@@ -43,15 +43,25 @@ jobs:
         id: pkg
         run: |
           set -euo pipefail
+          # Closed-loop changelog: previous index from git history when available
+          PREV_ARGS=()
+          if git rev-parse HEAD~1 >/dev/null 2>&1; then
+            if git show HEAD~1:rule/_index.yaml > /tmp/prev_index.yaml 2>/dev/null; then
+              PREV_ARGS+=(--prev-index /tmp/prev_index.yaml)
+              echo "Using HEAD~1 rule/_index.yaml for changelog diff"
+            fi
+          fi
           if [ -n "${{ inputs.stamp }}" ]; then
             python scripts/package_client_releases.py \
               --generated-root generated \
               --out-dir release-packages \
-              --stamp "${{ inputs.stamp }}"
+              --stamp "${{ inputs.stamp }}" \
+              "${PREV_ARGS[@]}"
           else
             python scripts/package_client_releases.py \
               --generated-root generated \
-              --out-dir release-packages
+              --out-dir release-packages \
+              "${PREV_ARGS[@]}"
           fi
           python - <<'PY'
           import json
