@@ -399,7 +399,7 @@
       "kind": "provider",
       "lines": 1163,
       "scope": "provider",
-      "sha256": "4d1272b1ed7330f32a0718a93e0aa7afd46cc81b1e567202536bd4064d9fd477",
+      "sha256": "2f3ee2ab68f17b4200bd1bdb73203aaafd83c53a3db5cf4ba0dd988bab0b69c0",
       "source": "database/provider/googlecloud.txt"
     },
     {
@@ -409,7 +409,7 @@
       "kind": "provider",
       "lines": 152,
       "scope": "provider",
-      "sha256": "d5d8d84078c2f34aa438d54e6c9cf66401921646469e16c8f0c41197b21139dc",
+      "sha256": "f7272ca921d70f76e78556e6ea7dc77e5e7631cd746fb45474716c247eebecf9",
       "source": "database/provider/goog.txt"
     },
     {
@@ -803,7 +803,7 @@
       "source": "database/ips/zhihu.txt"
     }
   ],
-  "generated_at": "2026-10-03T15:22:43.716646+00:00",
+  "generated_at": "2026-10-03T16:29:46.100478+00:00",
   "missing_optional": [],
   "runtime_contract": "network_dataset_distribution_v2",
   "schema": "network_publication_v2",
@@ -815,5 +815,5 @@
     "provider_cidrs_are_not_service_ownership": true,
     "service_rules": "generated/<client>/..."
   },
-  "source_commit": "57e28e153993b0fbd92cebd913eb48ef000d0160"
+  "source_commit": "f57deaadbabb1126acce4f58a2b6efb5af1f5280"
 }
