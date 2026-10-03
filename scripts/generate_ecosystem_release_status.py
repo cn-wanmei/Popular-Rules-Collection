@@ -1,26 +1,31 @@
 #!/usr/bin/env python3
-"""generate_ecosystem_release_status.py
-
-Cross-repo **read model** (not a new SSOT).
-"""
+"""generate_ecosystem_release_status.py — cross-repo read model (not SSOT)."""
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-UA = {"User-Agent": "popular-rules-ecosystem-status/1.1"}
+UA = {"User-Agent": "popular-rules-ecosystem-status/1.2"}
 
 
-def fetch_text(url: str, timeout: int = 45) -> tuple[str | None, str | None]:
+def fetch_bytes(url: str, timeout: int = 60) -> tuple[bytes | None, str | None]:
     try:
         req = urllib.request.Request(url, headers=UA)
         with urllib.request.urlopen(req, timeout=timeout) as resp:
-            return resp.read().decode("utf-8", errors="replace"), None
+            return resp.read(), None
     except Exception as exc:  # noqa: BLE001
         return None, f"{type(exc).__name__}: {exc}"
+
+
+def fetch_text(url: str, timeout: int = 60) -> tuple[str | None, str | None]:
+    raw, err = fetch_bytes(url, timeout=timeout)
+    if err:
+        return None, err
+    return (raw or b"").decode("utf-8", errors="replace"), None
 
 
 def fetch_json(url: str) -> tuple[dict | list | None, str | None]:
@@ -33,23 +38,49 @@ def fetch_json(url: str) -> tuple[dict | list | None, str | None]:
         return None, f"JSONDecodeError: {exc}"
 
 
+def age_seconds(iso: str | None, now: datetime) -> int | None:
+    if not iso:
+        return None
+    try:
+        t = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+        if t.tzinfo is None:
+            t = t.replace(tzinfo=timezone.utc)
+        return max(0, int((now - t).total_seconds()))
+    except Exception:
+        return None
+
+
+def freshness_label(age: int | None, soft: int, hard: int) -> str:
+    if age is None:
+        return "unknown"
+    if age <= soft:
+        return "fresh"
+    if age <= hard:
+        return "aging"
+    return "stale"
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", type=Path, default=Path("reports/ecosystem_release_status.json"))
     args = ap.parse_args()
 
-    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    now = datetime.now(timezone.utc)
+    now_s = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+
     sources = {
         "collection_publish_status": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/PUBLISH_STATUS.md",
         "collection_main_sha": "https://api.github.com/repos/cn-wanmei/Popular-Rules-Collection/commits/main",
+        "collection_index": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/rule/_index.yaml",
         "source_durable_bridge": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/reports/durable-bridge/latest.json",
         "icon_identity_snapshot": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/main/config/collection_identity_snapshot.json",
         "icon_release_pointers": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/main/config/release-pointers.yaml",
     }
 
     report: dict = {
-        "schema": "ecosystem_release_status_v2",
-        "generated_at": now,
+        "schema": "ecosystem_release_status_v3",
+        "generated_at": now_s,
+        "observed_at": now_s,
         "authority_note": (
             "READ MODEL ONLY. Does not replace Collection/Source/Icon SSOT. "
             "See docs/STATE_MODEL.md."
@@ -70,39 +101,53 @@ def main() -> int:
         "ok": err is None,
         "error": err,
         "bytes": len(text or ""),
-        "preview": (text or "")[:400],
     }
 
     data, err = fetch_json(sources["collection_main_sha"])
-    sha = data.get("sha") if isinstance(data, dict) else None
+    collection_sha = data.get("sha") if isinstance(data, dict) else None
     report["signals"]["collection_main"] = {
         "url": sources["collection_main_sha"],
-        "readability": "ok" if err is None and bool(sha) else "error",
-        "ok": err is None and bool(sha),
+        "readability": "ok" if err is None and bool(collection_sha) else "error",
+        "ok": err is None and bool(collection_sha),
         "error": err,
-        "sha": sha,
-        "message": (data.get("commit") or {}).get("message") if isinstance(data, dict) else None,
+        "sha": collection_sha,
+    }
+
+    index_raw, index_err = fetch_bytes(sources["collection_index"])
+    live_file_sha = hashlib.sha256(index_raw).hexdigest() if index_raw else None
+    report["signals"]["collection_index"] = {
+        "url": sources["collection_index"],
+        "readability": "ok" if index_err is None and index_raw else "error",
+        "ok": index_err is None and bool(index_raw),
+        "error": index_err,
+        "file_sha": live_file_sha,
+        "bytes": len(index_raw or b""),
     }
 
     data, err = fetch_json(sources["source_durable_bridge"])
     persisted = 0
     incomplete: list = []
     batch_status = "unknown"
+    run_comp = seal_comp = None
+    created_at = None
     if isinstance(data, dict):
         services = data.get("services") or {}
         if isinstance(services, dict):
             persisted = sum(1 for v in services.values() if isinstance(v, dict) and v.get("status") == "PERSISTED")
         incomplete = list(data.get("incomplete") or [])
-        if persisted <= 0:
-            batch_status = "FAILED"
-        elif incomplete:
-            batch_status = "PARTIAL"
-        else:
-            batch_status = "COMPLETE"
-        # Prefer explicit field if bridge starts emitting it
-        if data.get("batch_completeness") in ("COMPLETE", "PARTIAL", "FAILED"):
-            batch_status = str(data["batch_completeness"])
+        created_at = data.get("created_at")
+        run_comp = data.get("run_completeness")
+        seal_comp = data.get("seal_completeness") or data.get("batch_completeness")
+        if seal_comp not in ("COMPLETE", "PARTIAL", "FAILED"):
+            if persisted <= 0:
+                seal_comp = "FAILED"
+            elif incomplete:
+                seal_comp = "PARTIAL"
+            else:
+                seal_comp = "COMPLETE"
+        batch_status = str(seal_comp)
 
+    durable_age = age_seconds(created_at, now) if isinstance(created_at, str) else None
     report["signals"]["source_durable_bridge"] = {
         "url": sources["source_durable_bridge"],
         "readability": "ok" if err is None and isinstance(data, dict) else "error",
@@ -110,12 +155,16 @@ def main() -> int:
         "error": err,
         "persisted_count": persisted,
         "incomplete_count": len(incomplete) if isinstance(incomplete, list) else None,
+        "run_completeness": run_comp,
+        "seal_completeness": seal_comp,
         "batch_completeness": batch_status,
         "semantic_consistency": (
-            "ok" if batch_status == "COMPLETE" else ("warning" if batch_status == "PARTIAL" else "error")
+            "ok" if seal_comp == "COMPLETE" else ("warning" if seal_comp == "PARTIAL" else "error")
         ),
+        "created_at": created_at,
+        "age_seconds": durable_age,
+        "freshness": freshness_label(durable_age, 86400, 604800),
         "persistence_commit": data.get("persistence_commit") if isinstance(data, dict) else None,
-        "created_at": data.get("created_at") if isinstance(data, dict) else None,
     }
 
     data, err = fetch_json(sources["icon_identity_snapshot"])
@@ -127,14 +176,23 @@ def main() -> int:
         if isinstance(src, dict):
             src_ref = src.get("ref")
             file_sha = src.get("file_sha")
-        elif isinstance(src, str):
-            src_ref = src
+
     icon_sem = "ok"
-    if isinstance(src_ref, str) and src_ref in ("main", ""):
-        icon_sem = "warning"  # not exact-commit pinned
+    reasons = []
+    if not src_ref or src_ref == "main":
+        icon_sem = "warning"
+        reasons.append("ref_not_exact_or_missing")
+    if collection_sha and src_ref and src_ref not in (collection_sha, "main") and src_ref != collection_sha:
+        icon_sem = "error"
+        reasons.append("ref_ne_collection_main")
+    if live_file_sha and file_sha and file_sha != live_file_sha:
+        icon_sem = "error"
+        reasons.append("file_sha_mismatch")
     if not file_sha:
         icon_sem = "warning" if icon_sem == "ok" else icon_sem
+        reasons.append("file_sha_missing")
 
+    icon_age = age_seconds(gen_at if isinstance(gen_at, str) else None, now)
     report["signals"]["icon_identity_snapshot"] = {
         "url": sources["icon_identity_snapshot"],
         "readability": "ok" if err is None and isinstance(data, dict) else "error",
@@ -144,7 +202,12 @@ def main() -> int:
         "generated_at": gen_at,
         "source_ref": src_ref,
         "file_sha": file_sha,
+        "collection_main_sha": collection_sha,
+        "collection_index_file_sha": live_file_sha,
         "semantic_consistency": icon_sem,
+        "semantic_reasons": reasons,
+        "age_seconds": icon_age,
+        "freshness": freshness_label(icon_age, 86400, 604800),
     }
 
     text, err = fetch_text(sources["icon_release_pointers"])
@@ -154,12 +217,11 @@ def main() -> int:
         "ok": err is None,
         "error": err,
         "bytes": len(text or ""),
-        "preview": (text or "")[:500],
     }
 
     readability_ok = all(
         report["signals"][k].get("readability") == "ok"
-        for k in ("collection_main", "source_durable_bridge", "icon_identity_snapshot")
+        for k in ("collection_main", "collection_index", "source_durable_bridge", "icon_identity_snapshot")
     )
     sem_vals = [
         report["signals"]["source_durable_bridge"].get("semantic_consistency"),
@@ -172,15 +234,22 @@ def main() -> int:
     else:
         overall_sem = "ok"
 
+    # Read model self age is 0 at generation; consumers compare observed_at
     report["summary"] = {
-        "collection_head": report["signals"]["collection_main"].get("sha"),
+        "collection_head": collection_sha,
+        "collection_index_file_sha": live_file_sha,
         "source_durable_persisted": persisted,
-        "source_batch_completeness": batch_status,
+        "source_seal_completeness": seal_comp,
+        "source_run_completeness": run_comp,
         "icon_snapshot_services": svc_count,
-        "icon_snapshot_generated_at": gen_at,
+        "icon_snapshot_ref": src_ref,
+        "icon_snapshot_file_sha": file_sha,
+        "icon_vs_collection": icon_sem,
         "all_core_signals_ok": readability_ok,
         "readability": "ok" if readability_ok else "error",
         "semantic_consistency": overall_sem,
+        "observation_watermark": now_s,
+        "freshness_sla_note": "icon/source soft=24h hard=7d (read-model labels only)",
     }
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
