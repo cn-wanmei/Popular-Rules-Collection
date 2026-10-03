@@ -1,20 +1,17 @@
 #!/usr/bin/env python3
 """package_client_releases.py — Build 7 client rule zip artifacts + release notes.
 
-Filesystem-safe naming (required by shell / gh / Actions / architecture_gate):
+Filesystem-safe naming (shell / gh / Actions / architecture_gate):
   {client}-{YYYY}-{M}-{D}-{HH}-{MM}-{SS}.zip
   e.g. egern-2026-10-2-13-25-31.zip
 
-Human-readable stamp (for notes/title only):
-  {YYYY}-{M}-{D}-{H}[{MM}:{SS}]  e.g. 2026-10-2-13[25:31]
+Human stamp (notes/title only):
+  {YYYY}-{M}-{D}-{H}[{MM}:{SS}]
 
-Outputs under --out-dir:
-  - 7 client zips
-  - RELEASE_NOTES.md
-  - SHA256SUMS.txt
-  - release-meta.json
+Changelog (closed loop when --prev-index provided):
+  compares rule/_index.yaml service ids + rule_count vs previous index.
 
-Trigger: manual workflow_dispatch only (never on build/publish).
+Trigger: manual workflow_dispatch only.
 """
 
 from __future__ import annotations
@@ -38,7 +35,6 @@ CLIENTS = (
     "surge",
 )
 
-# Characters that break shell glob, Actions artifacts, or gh path matching
 _UNSAFE = re.compile(r"[\[\]:*?\"<>|\\/]")
 
 
@@ -47,17 +43,14 @@ def _now() -> datetime:
 
 
 def _format_stamp_human(dt: datetime) -> str:
-    """Display-only stamp matching product language."""
     return f"{dt.year}-{dt.month}-{dt.day}-{dt.hour}[{dt.minute:02d}:{dt.second:02d}]"
 
 
 def _format_stamp_safe(dt: datetime) -> str:
-    """Filename/tag-safe stamp: no colon, brackets, or spaces."""
     return f"{dt.year}-{dt.month}-{dt.day}-{dt.hour:02d}-{dt.minute:02d}-{dt.second:02d}"
 
 
 def _sanitize_stamp(stamp: str) -> str:
-    """Convert any user-provided stamp into a safe filename fragment."""
     s = stamp.strip()
     s = s.replace("[", "-").replace("]", "").replace(":", "-")
     s = _UNSAFE.sub("-", s)
@@ -113,6 +106,50 @@ def _load_json(path: Path) -> dict[str, Any] | None:
         return None
 
 
+def _parse_index_services(path: Path) -> dict[str, int]:
+    """Parse rule/_index.yaml → {service_id: rule_count}."""
+    services: dict[str, int] = {}
+    if not path.is_file():
+        return services
+    try:
+        text = path.read_text(encoding="utf-8")
+    except OSError:
+        return services
+    current_id: str | None = None
+    for line in text.splitlines():
+        stripped = line.strip()
+        if stripped.startswith("- id:") or (stripped.startswith("id:") and current_id is None):
+            # new service entry
+            raw = stripped.split(":", 1)[1].strip().strip("'\"")
+            if raw:
+                current_id = raw
+                services.setdefault(current_id, 0)
+        elif current_id and ("rule_count" in stripped or stripped.startswith("rules:")):
+            m = re.search(r":\s*(\d+)", stripped)
+            if m:
+                services[current_id] = int(m.group(1))
+        elif stripped.startswith("- id:"):
+            raw = stripped.split(":", 1)[1].strip().strip("'\"")
+            current_id = raw or current_id
+            if current_id:
+                services.setdefault(current_id, 0)
+    return services
+
+
+def _diff_services(
+    prev: dict[str, int], cur: dict[str, int]
+) -> tuple[list[str], list[str], list[str], int, int]:
+    prev_ids, cur_ids = set(prev), set(cur)
+    added = sorted(cur_ids - prev_ids)
+    removed = sorted(prev_ids - cur_ids)
+    changed = sorted(
+        s for s in (prev_ids & cur_ids) if prev.get(s, 0) != cur.get(s, 0)
+    )
+    added_rules = sum(cur[s] for s in added)
+    removed_rules = sum(prev[s] for s in removed)
+    return added, removed, changed, added_rules, removed_rules
+
+
 def build_notes(
     *,
     stamp_human: str,
@@ -123,6 +160,7 @@ def build_notes(
     total_rules: int,
     latest: dict[str, Any] | None,
     index_services: int | None,
+    changelog: dict[str, Any] | None,
 ) -> str:
     lines: list[str] = []
     lines.append(f"# Popular-Rules-Collection Release Notes — {stamp_human}")
@@ -140,6 +178,29 @@ def build_notes(
     if index_services is not None:
         lines.append(f"- **Canonical services (rule/_index)**: **{index_services}**")
     lines.append(f"- **全客户端规则条目合计（估算）**: **{total_rules}**")
+    if changelog and changelog.get("available"):
+        lines.append(f"- **对比基线**: `{changelog.get('baseline', 'previous index')}`")
+        lines.append(f"- **新增服务**: **{changelog['added_count']}**（规则条目 +{changelog['added_rules']}）")
+        if changelog.get("added"):
+            for s in changelog["added"][:40]:
+                lines.append(f"  - `{s}`")
+            if changelog["added_count"] > 40:
+                lines.append(f"  - … 另有 {changelog['added_count'] - 40} 项")
+        lines.append(f"- **删除 / 失效服务**: **{changelog['removed_count']}**（规则条目 -{changelog['removed_rules']}）")
+        if changelog.get("removed"):
+            for s in changelog["removed"][:40]:
+                lines.append(f"  - `{s}`")
+            if changelog["removed_count"] > 40:
+                lines.append(f"  - … 另有 {changelog['removed_count'] - 40} 项")
+        lines.append(f"- **规则数变更的服务**: **{changelog['changed_count']}**")
+        if changelog.get("changed"):
+            for s in changelog["changed"][:20]:
+                lines.append(f"  - `{s}`")
+            if changelog["changed_count"] > 20:
+                lines.append(f"  - … 另有 {changelog['changed_count'] - 20} 项")
+    else:
+        reason = (changelog or {}).get("reason") or "未提供 --prev-index，无法自动 diff"
+        lines.append(f"- **变更 diff**: {reason}")
     lines.append("")
     lines.append("## 七客户端发行包")
     lines.append("")
@@ -154,16 +215,6 @@ def build_notes(
     lines.append("## 本次变更说明")
     lines.append("")
     lines.append("> 权威数字以 `reports/latest_release.json` 与 `data/runs/<run_id>/release/manifest.json` 为准。")
-    lines.append("")
-    lines.append("### 新增服务 / 规则")
-    lines.append("")
-    lines.append("- 新增服务数：见本次 Collection 相对上一 snapshot 的 `reports/v1/` 与 dataset_diff 输出。")
-    lines.append("- 新增规则条目：由各客户端 builder 增量体现；完整 diff 在 immutable evidence 中。")
-    lines.append("")
-    lines.append("### 失效 / 过期 / 删除")
-    lines.append("")
-    lines.append("- 失效或删除的服务与规则：由 Source health + intentional_unmaterialized + 上一 baseline 对比产生。")
-    lines.append("- 详细列表位于 `reports/` 与对应 run 的 release evidence。")
     lines.append("")
     lines.append("### 使用方式")
     lines.append("")
@@ -184,6 +235,13 @@ def main() -> int:
     parser.add_argument("--stamp", default="", help="Override stamp (human or safe form)")
     parser.add_argument("--run-id", default="")
     parser.add_argument("--collection-id", default="")
+    parser.add_argument(
+        "--prev-index",
+        type=Path,
+        default=None,
+        help="Previous rule/_index.yaml for closed-loop changelog",
+    )
+    parser.add_argument("--index", type=Path, default=Path("rule/_index.yaml"))
     args = parser.parse_args()
 
     gen = args.generated_root
@@ -205,18 +263,32 @@ def main() -> int:
     run_id = args.run_id or (latest.get("run_id") if latest else "") or ""
     collection_id = args.collection_id or ""
 
-    index_services: int | None = None
-    index_path = Path("rule/_index.yaml")
-    if index_path.is_file():
-        try:
-            text = index_path.read_text(encoding="utf-8")
-            index_services = sum(
-                1
-                for line in text.splitlines()
-                if line.strip().startswith("- id:") or line.strip().startswith("id:")
-            )
-        except OSError:
-            pass
+    cur_services = _parse_index_services(args.index)
+    index_services = len(cur_services) if cur_services else None
+
+    changelog: dict[str, Any] | None = None
+    if args.prev_index and args.prev_index.is_file():
+        prev_services = _parse_index_services(args.prev_index)
+        added, removed, changed, added_rules, removed_rules = _diff_services(
+            prev_services, cur_services
+        )
+        changelog = {
+            "available": True,
+            "baseline": str(args.prev_index),
+            "added": added,
+            "removed": removed,
+            "changed": changed,
+            "added_count": len(added),
+            "removed_count": len(removed),
+            "changed_count": len(changed),
+            "added_rules": added_rules,
+            "removed_rules": removed_rules,
+        }
+    else:
+        changelog = {
+            "available": False,
+            "reason": "未提供 --prev-index 或文件不存在，无法自动 diff",
+        }
 
     client_stats: dict[str, dict[str, Any]] = {}
     total_rules = 0
@@ -250,6 +322,7 @@ def main() -> int:
         total_rules=total_rules,
         latest=latest,
         index_services=index_services,
+        changelog=changelog,
     )
     notes_path = out / "RELEASE_NOTES.md"
     notes_path.write_text(notes, encoding="utf-8")
@@ -270,15 +343,25 @@ def main() -> int:
         "collection_id": collection_id,
         "clients": client_stats,
         "total_rules_estimate": total_rules,
+        "service_count": index_services,
+        "changelog": changelog,
         "zip_count": len(zips),
         "trigger": "manual_workflow_dispatch_only",
+        "naming_contract": {
+            "safe_filename": "{client}-{YYYY}-{M}-{D}-{HH}-{MM}-{SS}.zip",
+            "human_stamp": "{YYYY}-{M}-{D}-{H}[{MM}:{SS}]",
+            "forbidden_in_filenames": [":", "[", "]", "*", "?", "\"", "<", ">", "|", "\\", "/"],
+        },
     }
     (out / "release-meta.json").write_text(
         json.dumps(meta, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
 
     print(f"[package] wrote {len(zips)} zips + notes (safe_stamp={stamp_safe})")
-    print(f"[package] total rules estimate: {total_rules}")
+    if changelog and changelog.get("available"):
+        print(
+            f"[package] changelog +{changelog['added_count']} / -{changelog['removed_count']} / ~{changelog['changed_count']}"
+        )
     return 0
 
 
