@@ -16,14 +16,14 @@
 | Provider | `samsung` |
 | 规则浏览路径 | `rule/samsung/samsung/samsung.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `86ccb9d4129a8da50c8abac8e1ce43924dc01a2c40a1e59c9e07e1434f8bcbc0` |
+| SHA-256 | `b089f0ade4a8daecd5485229a32e68a7dd8b4fbe950c92e8b21643fb4c5c6dc6` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T041233042796Z-run` |
-| IR digest | `c02eaa0bee56e1b5e0174d451d1d0f65cca045162bd91af7f3aa029ac4e4a19b` |
+| Run ID | `20261003T151413174192Z-run` |
+| IR digest | `eb088441cc29028a282f1c6adb7b34cbfe0d84a6ccff68d82a7d46e26da9a7dd` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

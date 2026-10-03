@@ -1,7 +1,7 @@
 {
   "documentation_contract_version": "1.0",
-  "run_id": "20261003T041233042796Z-run",
-  "ir_digest": "c02eaa0bee56e1b5e0174d451d1d0f65cca045162bd91af7f3aa029ac4e4a19b",
+  "run_id": "20261003T151413174192Z-run",
+  "ir_digest": "eb088441cc29028a282f1c6adb7b34cbfe0d84a6ccff68d82a7d46e26da9a7dd",
   "icon_release_id": "icon-2026.09.30.clean1",
   "service_count": 651,
   "services": [
@@ -317,7 +317,7 @@
       "provider": "alibaba",
       "entity": "provider_aggregate",
       "path": "alibaba/alibaba/alibaba.yaml",
-      "rule_count": 599,
+      "rule_count": 539,
       "clients": [
         "egern",
         "loon",
@@ -335,7 +335,7 @@
       "provider": "alibaba",
       "entity": "service",
       "path": "alibaba/alibabacloud/alibabacloud.yaml",
-      "rule_count": 12,
+      "rule_count": 100,
       "clients": [
         "egern",
         "loon",
@@ -371,7 +371,7 @@
       "provider": "alibaba",
       "entity": "service",
       "path": "alibaba/alipay/alipay.yaml",
-      "rule_count": 22,
+      "rule_count": 2,
       "clients": [
         "egern",
         "loon",
@@ -389,7 +389,7 @@
       "provider": "alibaba",
       "entity": "service",
       "path": "alibaba/amap/amap.yaml",
-      "rule_count": 17,
+      "rule_count": 2,
       "clients": [
         "egern",
         "loon",
@@ -443,7 +443,7 @@
       "provider": "alibaba",
       "entity": "service",
       "path": "alibaba/eleme/eleme.yaml",
-      "rule_count": 14,
+      "rule_count": 2,
       "clients": [
         "egern",
         "loon",
@@ -551,7 +551,7 @@
       "provider": "alibaba",
       "entity": "service",
       "path": "alibaba/xianyu/xianyu.yaml",
-      "rule_count": 18,
+      "rule_count": 2,
       "clients": [
         "egern",
         "loon",
@@ -569,7 +569,7 @@
       "provider": "alibaba",
       "entity": "service",
       "path": "alibaba/youku/youku.yaml",
-      "rule_count": 61,
+      "rule_count": 2,
       "clients": [
         "egern",
         "loon",
@@ -857,7 +857,7 @@
       "provider": "anthropic",
       "entity": "service",
       "path": "anthropic/anthropic/anthropic.yaml",
-      "rule_count": 9,
+      "rule_count": 10,
       "clients": [
         "egern",
         "loon",
@@ -875,7 +875,7 @@
       "provider": "anthropic",
       "entity": "provider_aggregate",
       "path": "anthropic/anthropic_aggregate/anthropic_aggregate.yaml",
-      "rule_count": 11,
+      "rule_count": 13,
       "clients": [
         "egern",
         "loon",
@@ -893,7 +893,7 @@
       "provider": "anthropic",
       "entity": "service",
       "path": "anthropic/claude/claude.yaml",
-      "rule_count": 3,
+      "rule_count": 4,
       "clients": [
         "egern",
         "loon",
@@ -911,7 +911,7 @@
       "provider": "apple",
       "entity": "provider_aggregate",
       "path": "apple/apple/apple.yaml",
-      "rule_count": 2040,
+      "rule_count": 2067,
       "clients": [
         "egern",
         "loon",
@@ -947,7 +947,7 @@
       "provider": "apple",
       "entity": "service",
       "path": "apple/appledev/appledev.yaml",
-      "rule_count": 38,
+      "rule_count": 40,
       "clients": [
         "egern",
         "loon",
@@ -1055,7 +1055,7 @@
       "provider": "apple",
       "entity": "service",
       "path": "apple/applemusic/applemusic.yaml",
-      "rule_count": 9,
+      "rule_count": 16,
       "clients": [
         "egern",
         "loon",
@@ -1109,7 +1109,7 @@
       "provider": "apple",
       "entity": "service",
       "path": "apple/appletv/appletv.yaml",
-      "rule_count": 7,
+      "rule_count": 14,
       "clients": [
         "egern",
         "loon",
@@ -1127,7 +1127,7 @@
       "provider": "apple",
       "entity": "service",
       "path": "apple/appstore/appstore.yaml",
-      "rule_count": 2,
+      "rule_count": 6,
       "clients": [
         "egern",
         "loon",
@@ -1145,7 +1145,7 @@
       "provider": "apple",
       "entity": "service",
       "path": "apple/findmy/findmy.yaml",
-      "rule_count": 3,
+      "rule_count": 9,
       "clients": [
         "egern",
         "loon",
@@ -1163,7 +1163,7 @@
       "provider": "apple",
       "entity": "service",
       "path": "apple/icloud/icloud.yaml",
-      "rule_count": 58,
+      "rule_count": 62,
       "clients": [
         "egern",
         "loon",
@@ -1217,7 +1217,7 @@
       "provider": "apple",
       "entity": "service",
       "path": "apple/testflight/testflight.yaml",
-      "rule_count": 2,
+      "rule_count": 8,
       "clients": [
         "egern",
         "loon",
@@ -1343,7 +1343,7 @@
       "provider": "atlassian",
       "entity": "service",
       "path": "atlassian/atlassian/atlassian.yaml",
-      "rule_count": 12,
+      "rule_count": 2,
       "clients": [
         "egern",
         "loon",
@@ -1361,7 +1361,7 @@
       "provider": "atlassian",
       "entity": "provider_aggregate",
       "path": "atlassian/atlassian_aggregate/atlassian_aggregate.yaml",
-      "rule_count": 12,
+      "rule_count": 4,
       "clients": [
         "egern",
         "loon",
@@ -1595,7 +1595,7 @@
       "provider": "baidu",
       "entity": "provider_aggregate",
       "path": "baidu/baidu/baidu.yaml",
-      "rule_count": 288,
+      "rule_count": 354,
       "clients": [
         "egern",
         "loon",
@@ -2189,7 +2189,7 @@
       "provider": "bytedance",
       "entity": "provider_aggregate",
       "path": "bytedance/bytedance/bytedance.yaml",
-      "rule_count": 1105,
+      "rule_count": 1112,
       "clients": [
         "egern",
         "loon",
@@ -2225,7 +2225,7 @@
       "provider": "bytedance",
       "entity": "service",
       "path": "bytedance/doubao/doubao.yaml",
-      "rule_count": 4,
+      "rule_count": 36,
       "clients": [
         "egern",
         "loon",
@@ -2243,7 +2243,7 @@
       "provider": "bytedance",
       "entity": "service",
       "path": "bytedance/douyin/douyin.yaml",
-      "rule_count": 13,
+      "rule_count": 80,
       "clients": [
         "egern",
         "loon",
@@ -2315,7 +2315,7 @@
       "provider": "bytedance",
       "entity": "service",
       "path": "bytedance/tiktok/tiktok.yaml",
-      "rule_count": 29,
+      "rule_count": 66,
       "clients": [
         "egern",
         "loon",
@@ -2531,7 +2531,7 @@
       "provider": "",
       "entity": "category",
       "path": "category/developer/developer.yaml",
-      "rule_count": 285,
+      "rule_count": 376,
       "clients": [
         "egern",
         "loon",
@@ -3405,7 +3405,7 @@
       "provider": "discord",
       "entity": "service",
       "path": "discord/discord/discord.yaml",
-      "rule_count": 28,
+      "rule_count": 31,
       "clients": [
         "egern",
         "loon",
@@ -3423,7 +3423,7 @@
       "provider": "discord",
       "entity": "provider_aggregate",
       "path": "discord/discord_aggregate/discord_aggregate.yaml",
-      "rule_count": 28,
+      "rule_count": 31,
       "clients": [
         "egern",
         "loon",
@@ -3675,7 +3675,7 @@
       "provider": "ea",
       "entity": "service",
       "path": "ea/ea/ea.yaml",
-      "rule_count": 166,
+      "rule_count": 2,
       "clients": [
         "egern",
         "loon",
@@ -3693,7 +3693,7 @@
       "provider": "ea",
       "entity": "provider_aggregate",
       "path": "ea/ea_aggregate/ea_aggregate.yaml",
-      "rule_count": 166,
+      "rule_count": 2,
       "clients": [
         "egern",
         "loon",
@@ -4215,7 +4215,7 @@
       "provider": "google",
       "entity": "service",
       "path": "google/firebase/firebase.yaml",
-      "rule_count": 2,
+      "rule_count": 24,
       "clients": [
         "egern",
         "loon",
@@ -4233,7 +4233,7 @@
       "provider": "google",
       "entity": "service",
       "path": "google/gemini/gemini.yaml",
-      "rule_count": 9,
+      "rule_count": 16,
       "clients": [
         "egern",
         "loon",
@@ -4611,7 +4611,7 @@
       "provider": "google",
       "entity": "provider_aggregate",
       "path": "google/google/google.yaml",
-      "rule_count": 1504,
+      "rule_count": 1558,
       "clients": [
         "egern",
         "loon",
@@ -4683,7 +4683,7 @@
       "provider": "google",
       "entity": "service",
       "path": "google/googlefcm/googlefcm.yaml",
-      "rule_count": 13,
+      "rule_count": 54,
       "clients": [
         "egern",
         "loon",
@@ -4737,7 +4737,7 @@
       "provider": "google",
       "entity": "service",
       "path": "google/youtube/youtube.yaml",
-      "rule_count": 175,
+      "rule_count": 189,
       "clients": [
         "egern",
         "loon",
@@ -4755,7 +4755,7 @@
       "provider": "google",
       "entity": "service",
       "path": "google/youtubemusic/youtubemusic.yaml",
-      "rule_count": 1,
+      "rule_count": 3,
       "clients": [
         "egern",
         "loon",
@@ -5961,7 +5961,7 @@
       "provider": "kuaishou",
       "entity": "service",
       "path": "kuaishou/kuaishou/kuaishou.yaml",
-      "rule_count": 679,
+      "rule_count": 1,
       "clients": [
         "egern",
         "loon",
@@ -5979,7 +5979,7 @@
       "provider": "kuaishou",
       "entity": "provider_aggregate",
       "path": "kuaishou/kuaishou_aggregate/kuaishou_aggregate.yaml",
-      "rule_count": 680,
+      "rule_count": 2,
       "clients": [
         "egern",
         "loon",
@@ -5997,7 +5997,7 @@
       "provider": "kugou",
       "entity": "service",
       "path": "kugou/kugou/kugou.yaml",
-      "rule_count": 1,
+      "rule_count": 20,
       "clients": [
         "egern",
         "loon",
@@ -6015,7 +6015,7 @@
       "provider": "kugou",
       "entity": "provider_aggregate",
       "path": "kugou/kugou_aggregate/kugou_aggregate.yaml",
-      "rule_count": 1,
+      "rule_count": 20,
       "clients": [
         "egern",
         "loon",
@@ -6069,7 +6069,7 @@
       "provider": "kuwo",
       "entity": "service",
       "path": "kuwo/kuwo/kuwo.yaml",
-      "rule_count": 1,
+      "rule_count": 4,
       "clients": [
         "egern",
         "loon",
@@ -6087,7 +6087,7 @@
       "provider": "kuwo",
       "entity": "provider_aggregate",
       "path": "kuwo/kuwo_aggregate/kuwo_aggregate.yaml",
-      "rule_count": 1,
+      "rule_count": 4,
       "clients": [
         "egern",
         "loon",
@@ -6681,7 +6681,7 @@
       "provider": "microsoft",
       "entity": "service",
       "path": "microsoft/azure/azure.yaml",
-      "rule_count": 149,
+      "rule_count": 151,
       "clients": [
         "egern",
         "loon",
@@ -6717,7 +6717,7 @@
       "provider": "microsoft",
       "entity": "service",
       "path": "microsoft/copilot/copilot.yaml",
-      "rule_count": 45,
+      "rule_count": 69,
       "clients": [
         "egern",
         "loon",
@@ -6735,7 +6735,7 @@
       "provider": "microsoft",
       "entity": "service",
       "path": "microsoft/github/github.yaml",
-      "rule_count": 29,
+      "rule_count": 96,
       "clients": [
         "egern",
         "loon",
@@ -6753,7 +6753,7 @@
       "provider": "microsoft",
       "entity": "service",
       "path": "microsoft/linkedin/linkedin.yaml",
-      "rule_count": 13,
+      "rule_count": 2,
       "clients": [
         "egern",
         "loon",
@@ -6771,7 +6771,7 @@
       "provider": "microsoft",
       "entity": "provider_aggregate",
       "path": "microsoft/microsoft/microsoft.yaml",
-      "rule_count": 1062,
+      "rule_count": 1080,
       "clients": [
         "egern",
         "loon",
@@ -6969,7 +6969,7 @@
       "provider": "microsoft",
       "entity": "service",
       "path": "microsoft/onedrive/onedrive.yaml",
-      "rule_count": 13,
+      "rule_count": 18,
       "clients": [
         "egern",
         "loon",
@@ -7041,7 +7041,7 @@
       "provider": "microsoft",
       "entity": "service",
       "path": "microsoft/teams/teams.yaml",
-      "rule_count": 4,
+      "rule_count": 5,
       "clients": [
         "egern",
         "loon",
@@ -7059,7 +7059,7 @@
       "provider": "microsoft",
       "entity": "service",
       "path": "microsoft/xbox/xbox.yaml",
-      "rule_count": 42,
+      "rule_count": 46,
       "clients": [
         "egern",
         "loon",
@@ -7365,7 +7365,7 @@
       "provider": "netflix",
       "entity": "service",
       "path": "netflix/netflix/netflix.yaml",
-      "rule_count": 31,
+      "rule_count": 44,
       "clients": [
         "egern",
         "loon",
@@ -7383,7 +7383,7 @@
       "provider": "netflix",
       "entity": "provider_aggregate",
       "path": "netflix/netflix_aggregate/netflix_aggregate.yaml",
-      "rule_count": 31,
+      "rule_count": 44,
       "clients": [
         "egern",
         "loon",
@@ -7437,7 +7437,7 @@
       "provider": "nintendo",
       "entity": "service",
       "path": "nintendo/nintendo/nintendo.yaml",
-      "rule_count": 127,
+      "rule_count": 2,
       "clients": [
         "egern",
         "loon",
@@ -7455,7 +7455,7 @@
       "provider": "nintendo",
       "entity": "provider_aggregate",
       "path": "nintendo/nintendo_aggregate/nintendo_aggregate.yaml",
-      "rule_count": 127,
+      "rule_count": 2,
       "clients": [
         "egern",
         "loon",
@@ -7743,7 +7743,7 @@
       "provider": "openai",
       "entity": "service",
       "path": "openai/openai/openai.yaml",
-      "rule_count": 31,
+      "rule_count": 56,
       "clients": [
         "egern",
         "loon",
@@ -7761,7 +7761,7 @@
       "provider": "openai",
       "entity": "provider_aggregate",
       "path": "openai/openai_aggregate/openai_aggregate.yaml",
-      "rule_count": 33,
+      "rule_count": 58,
       "clients": [
         "egern",
         "loon",
@@ -8049,7 +8049,7 @@
       "provider": "perplexity",
       "entity": "service",
       "path": "perplexity/perplexity/perplexity.yaml",
-      "rule_count": 4,
+      "rule_count": 7,
       "clients": [
         "egern",
         "loon",
@@ -8067,7 +8067,7 @@
       "provider": "perplexity",
       "entity": "provider_aggregate",
       "path": "perplexity/perplexity_aggregate/perplexity_aggregate.yaml",
-      "rule_count": 4,
+      "rule_count": 7,
       "clients": [
         "egern",
         "loon",
@@ -8121,7 +8121,7 @@
       "provider": "pingan",
       "entity": "service",
       "path": "pingan/pingan/pingan.yaml",
-      "rule_count": 28,
+      "rule_count": 2,
       "clients": [
         "egern",
         "loon",
@@ -8139,7 +8139,7 @@
       "provider": "pingan",
       "entity": "provider_aggregate",
       "path": "pingan/pingan_aggregate/pingan_aggregate.yaml",
-      "rule_count": 28,
+      "rule_count": 2,
       "clients": [
         "egern",
         "loon",
@@ -8517,7 +8517,7 @@
       "provider": "roblox",
       "entity": "service",
       "path": "roblox/roblox/roblox.yaml",
-      "rule_count": 47,
+      "rule_count": 52,
       "clients": [
         "egern",
         "loon",
@@ -8535,7 +8535,7 @@
       "provider": "roblox",
       "entity": "provider_aggregate",
       "path": "roblox/roblox_aggregate/roblox_aggregate.yaml",
-      "rule_count": 47,
+      "rule_count": 52,
       "clients": [
         "egern",
         "loon",
@@ -9417,7 +9417,7 @@
       "provider": "special",
       "entity": "service",
       "path": "special/ai/ai.yaml",
-      "rule_count": 187,
+      "rule_count": 188,
       "clients": [
         "egern",
         "loon",
@@ -9435,7 +9435,7 @@
       "provider": "special",
       "entity": "service",
       "path": "special/aisuite/aisuite.yaml",
-      "rule_count": 117,
+      "rule_count": 146,
       "clients": [
         "egern",
         "loon",
@@ -9489,7 +9489,7 @@
       "provider": "special",
       "entity": "provider_aggregate",
       "path": "special/special/special.yaml",
-      "rule_count": 7523,
+      "rule_count": 7551,
       "clients": [
         "egern",
         "loon",
@@ -9831,7 +9831,7 @@
       "provider": "telegram",
       "entity": "service",
       "path": "telegram/telegram/telegram.yaml",
-      "rule_count": 24,
+      "rule_count": 59,
       "clients": [
         "egern",
         "loon",
@@ -9849,7 +9849,7 @@
       "provider": "telegram",
       "entity": "provider_aggregate",
       "path": "telegram/telegram_aggregate/telegram_aggregate.yaml",
-      "rule_count": 24,
+      "rule_count": 59,
       "clients": [
         "egern",
         "loon",
@@ -10047,7 +10047,7 @@
       "provider": "tencent",
       "entity": "provider_aggregate",
       "path": "tencent/tencent/tencent.yaml",
-      "rule_count": 864,
+      "rule_count": 811,
       "clients": [
         "egern",
         "loon",
@@ -10065,7 +10065,7 @@
       "provider": "tencent",
       "entity": "service",
       "path": "tencent/tencentcloud/tencentcloud.yaml",
-      "rule_count": 105,
+      "rule_count": 1,
       "clients": [
         "egern",
         "loon",
@@ -10119,7 +10119,7 @@
       "provider": "tencent",
       "entity": "service",
       "path": "tencent/tencentvideo/tencentvideo.yaml",
-      "rule_count": 17,
+      "rule_count": 64,
       "clients": [
         "egern",
         "loon",
@@ -10137,7 +10137,7 @@
       "provider": "tencent",
       "entity": "service",
       "path": "tencent/wechat/wechat.yaml",
-      "rule_count": 28,
+      "rule_count": 38,
       "clients": [
         "egern",
         "loon",
@@ -10191,7 +10191,7 @@
       "provider": "tencent",
       "entity": "service",
       "path": "tencent/wetv/wetv.yaml",
-      "rule_count": 10,
+      "rule_count": 2,
       "clients": [
         "egern",
         "loon",
@@ -10317,7 +10317,7 @@
       "provider": "tongcheng",
       "entity": "service",
       "path": "tongcheng/tongcheng/tongcheng.yaml",
-      "rule_count": 9,
+      "rule_count": 2,
       "clients": [
         "egern",
         "loon",
@@ -10335,7 +10335,7 @@
       "provider": "tongcheng",
       "entity": "provider_aggregate",
       "path": "tongcheng/tongcheng_aggregate/tongcheng_aggregate.yaml",
-      "rule_count": 9,
+      "rule_count": 2,
       "clients": [
         "egern",
         "loon",
