@@ -389,7 +389,7 @@
       "kind": "provider",
       "lines": 11484,
       "scope": "provider",
-      "sha256": "2663242b1f2114e5aca2db43df12dd13561685586afc0e78e524ca3d32511a4a",
+      "sha256": "2385c7d119670138fabfec3e19530dacba861766869cc02124293077b294f57b",
       "source": "database/provider/aws.txt"
     },
     {
@@ -399,7 +399,7 @@
       "kind": "provider",
       "lines": 1163,
       "scope": "provider",
-      "sha256": "b75abe17de73ff8bece89baa30ddacb80fdf28505af61978af036cfdf6000a02",
+      "sha256": "4d1272b1ed7330f32a0718a93e0aa7afd46cc81b1e567202536bd4064d9fd477",
       "source": "database/provider/googlecloud.txt"
     },
     {
@@ -409,7 +409,7 @@
       "kind": "provider",
       "lines": 152,
       "scope": "provider",
-      "sha256": "357b12aef39c37628ff84682742af8c007fb286f893c0d5b5333b012495f6a29",
+      "sha256": "d5d8d84078c2f34aa438d54e6c9cf66401921646469e16c8f0c41197b21139dc",
       "source": "database/provider/goog.txt"
     },
     {
@@ -493,13 +493,13 @@
       "source": "database/ips/bytedance.txt"
     },
     {
-      "bytes": 154907,
+      "bytes": 154922,
       "file": "ip/china.txt",
       "id": "china",
       "kind": "service_ip",
-      "lines": 9718,
+      "lines": 9719,
       "scope": "ip",
-      "sha256": "942d01556dfce55df93b964c068bd4cb0aabba6d5f9d9cd2daef458bc1ae86d3",
+      "sha256": "38f3155ecc13e7b4a9f0d603b78ea18135f506f2afb67c63cde184a3da3ef463",
       "source": "database/ips/china.txt"
     },
     {
@@ -803,7 +803,7 @@
       "source": "database/ips/zhihu.txt"
     }
   ],
-  "generated_at": "2026-10-03T04:17:44.601489+00:00",
+  "generated_at": "2026-10-03T15:22:43.716646+00:00",
   "missing_optional": [],
   "runtime_contract": "network_dataset_distribution_v2",
   "schema": "network_publication_v2",
@@ -815,5 +815,5 @@
     "provider_cidrs_are_not_service_ownership": true,
     "service_rules": "generated/<client>/..."
   },
-  "source_commit": "3854aec2b8507dbd311aedae73be4b6b23ed5d5d"
+  "source_commit": "57e28e153993b0fbd92cebd913eb48ef000d0160"
 }
