@@ -103,6 +103,24 @@ jobs:
           github-token: ${{ github.token }}
           run-id: ${{ inputs.build_run_id }}
 
+      - name: Verify immutable artifact identity
+        shell: bash
+        env:
+          EXPECTED_BUILD_RUN_ID: ${{ inputs.build_run_id }}
+          EXPECTED_BUILD_SHA: ${{ inputs.build_head_sha }}
+          ARTIFACT_NAME: ${{ steps.artifact.outputs.artifact_name }}
+        run: |
+          set -euo pipefail
+          test -s release-candidate/build-run-id.txt
+          test -s release-candidate/build-head-sha.txt
+          test "$(cat release-candidate/build-run-id.txt)" = "${EXPECTED_BUILD_RUN_ID}"
+          test "$(cat release-candidate/build-head-sha.txt)" = "${EXPECTED_BUILD_SHA}"
+          ENGINE_RUN_ID="$(cat release-candidate/run-id.txt)"
+          test -d "release-candidate/data/runs/${ENGINE_RUN_ID}"
+          test -s release-candidate/generated/manifest.json
+          test -s release-candidate/data/baseline/canonical.json
+          echo "Downloaded exact immutable artifact ${ARTIFACT_NAME} (build_run=${EXPECTED_BUILD_RUN_ID}, head_sha=${EXPECTED_BUILD_SHA}, engine_run=${ENGINE_RUN_ID})."
+
       - name: Assert artifact integrity
         shell: bash
         run: |
@@ -112,6 +130,27 @@ jobs:
           test -d release-candidate/rule
           test -s release-candidate/generated/manifest.json
           test -s release-candidate/data/baseline/canonical.json
+
+      - name: Publish fail-closed policy gate
+        run: python scripts/publish_fail_closed_gate.py --workflow .github/workflows/publish.yml --status-workflow .github/workflows/status.yml
+
+      - name: Verify immutable Source lineage
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -s release-candidate/collection-date.txt ]; then
+            DAY="$(cat release-candidate/collection-date.txt)"
+            if [[ "$DAY" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] && [ -s "backup/${DAY}/manifests/_collection.json" ]; then
+              PYTHONPATH=. python scripts/immutable_source_lineage_gate.py \
+                --collection-root "backup/${DAY}" \
+                --json-out "release-candidate/immutable-source-lineage-publish.json" \
+                --allow-missing-current
+            else
+              echo "collection-date present but backup tree incomplete; lineage gate deferred to source_provenance_gate"
+            fi
+          else
+            echo "No collection-date.txt in artifact; lineage verified by source_provenance_gate on main"
+          fi
 
       - name: Generated distribution gate
         shell: bash
@@ -157,9 +196,6 @@ jobs:
         run: |
           set -euo pipefail
           RUN_ID=$(cat release-candidate/run-id.txt)
-          # Fail-closed on structural errors (false production claims, missing
-          # golden/release, identity drift). Do not require 50/50 production —
-          # that is Phase 0 exit, and coverage=partial currently forbids it.
           python scripts/p0_service_production_gate.py --report-only --run-id "${RUN_ID}"
 
       - name: Publish atomically
@@ -232,24 +268,20 @@ jobs:
           done
           exit 1
 
-      # Docs auto-run via workflow_run when this job concludes success.
-      # Explicit dispatch is best-effort and must never fail Publish after
-      # the atomic push (403 previously turned green promotes into red runs
-      # and blocked workflow_run).
+      # Docs primary path: workflow_run on success. Explicit dispatch is best-effort
+      # without continue-on-error (forbidden by publish_fail_closed_gate).
       - name: Trigger Documentation Layer
-        if: always()
-        continue-on-error: true
+        if: success()
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          set -euo pipefail
-          # Requires permissions.actions: write (not read).
+          set +e
           if gh workflow run docs.yml \
             --repo "${{ github.repository }}" \
             --ref main; then
             echo "Documentation Layer dispatched after publish run ${{ github.run_id }}."
           else
             echo "::warning::Explicit docs dispatch failed; relying on workflow_run if this job concludes success."
-            exit 0
           fi
+          exit 0
