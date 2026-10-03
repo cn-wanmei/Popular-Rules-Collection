@@ -1,36 +1,42 @@
-# Source → Collection 晋升漏斗
+# Source → Collection 晋升漏斗（运营 SSOT）
 
-> 可视化 Source lifecycle 与 Collection 生产绑定的差距。数据以 Source README 生成表与 Collection `rule/_index.yaml` 为准。
+> **Source lifecycle ≠ Collection production。**  
+> 用户可见服务身份以 Collection `rule/_index.yaml` + `PUBLISH_STATUS.md` 为准。  
+> 本文件只约束证据侧晋升节奏与阻塞处理。
 
-## 阶段定义
+## 状态机
 
-| 阶段 | 含义 | 责任仓 |
+`review → verified → canary → production`（另有 `blocked`）
+
+| 阶段 | 含义 | 禁止 |
 |---|---|---|
-| REVIEW | 证据候选，未达 Source release 门槛 | Source |
-| VERIFIED | 证据完整，可候选 Collection canary | Source |
-| PRODUCTION (Source) | Source 侧 durable release / seal | Source |
-| Collection canary | Collection 绑定试运行 | Collection |
-| Collection production | 进入 canonical + 客户端发行 | Collection |
+| REVIEW | 证据候选 | 不得宣称 Collection production |
+| VERIFIED | 证据完整，可候选 canary | 不得跳级到 production |
+| CANARY | Source 试运行 / 可 handoff | 无 Collection canary 证据不得标 production |
+| PRODUCTION | Source durable + Collection 绑定 | 必须有 immutable binding 证据 |
+| BLOCKED | 证据断流 / domains=0 / 策略禁止 | 不得自动晋升 |
 
-## 使用
+## 周度配额（A）
+
+- **目标**：每周从 **VERIFIED** 晋升 ≥ **8** 个服务到 Source **canary**（再经 Collection Auto Handoff → Collection canary）。
+- **禁止跳级**：VERIFIED 不得直接改 production。
+- **本周批次（2026-10-03）**：`appledev` `appstore` `icloud` `applemusic` `applemedia` `azure` `openai` `claude` → Source canary（`reason: weekly_funnel_quota_2026-10-03`）。
+
+## 阻塞看板（B）
+
+Source 仓生成：
 
 ```bash
-# 在 Source 仓
-python -m source_engine health
-python -m source_engine qualify
-
-# 在 Collection 仓对照
-# rule/_index.yaml 中 entity=service 数量 = 当前用户可见服务身份
+python scripts/source_blocked_board.py
+# docs/BLOCKED_BOARD.md + reports/blocked_board.json
 ```
 
-## 运营建议
+优先级：`BLOCKED` → `domains=0` → Collection Source health failed → 长期 REVIEW。
 
-1. **每周目标**：从 VERIFIED 晋升 ≥ N 个服务到 Collection canary（N 按人力设定，建议 5–10）。
-2. **阻塞看板**：Source 中 `BLOCKED` / domains=0 的服务单独列表，优先修 adapter。
-3. **禁止跳级**：无 Collection production 证据不得标 PRODUCTION。
-4. **单一事实源**：生命周期表由 Source CI 生成嵌入 README；勿手写覆盖。
+## 与 Collection 交接
 
-## 当前已知结构问题
-
-- Source 侧大量服务停在 REVIEW/CANDIDATE，与 Collection 394 canonical 不对齐 → 证据产能未充分转化为用户规则。
-- Collection source health 仍可能出现 stale/failed → Publish 前以 `PUBLISH_STATUS.md` 与 immutable lineage gate 为准。
+```text
+Source canary/production seal
+  → Collection Auto Handoff PR
+  → Source Gate → Collection canary → production
+```
