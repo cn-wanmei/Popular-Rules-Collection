@@ -16,14 +16,14 @@
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/teams/teams.yaml` |
 | 规则数量（_index） | **5** |
-| SHA-256 | `2b2834eedb31f3c28d301e5c9f207531feb553121961b920c4c81f8d5abb19d4` |
+| SHA-256 | `98ff1c6a6561dff4b5e0ca379e271381038ecce6c6d7001ef7f4c8d75d4daa84` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T162130328182Z-run` |
-| IR digest | `75188ee4f899cf8a4fb698e52479e3498c6034bd688b9ef2bd37d26ebb2c52bb` |
+| Run ID | `20261003T195636292574Z-run` |
+| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

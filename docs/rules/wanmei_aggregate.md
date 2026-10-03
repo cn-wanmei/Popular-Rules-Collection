@@ -16,14 +16,14 @@
 | Provider | `wanmei` |
 | 规则浏览路径 | `rule/wanmei/wanmei_aggregate/wanmei_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `2df047508a1b50713f45c61b024814016536d6b9580e0e5c21179edd0226faf3` |
+| SHA-256 | `90b117c495c5dd1f654cc39bf834138dba8746f63a20392350e50e597275f751` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T162130328182Z-run` |
-| IR digest | `75188ee4f899cf8a4fb698e52479e3498c6034bd688b9ef2bd37d26ebb2c52bb` |
+| Run ID | `20261003T195636292574Z-run` |
+| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
