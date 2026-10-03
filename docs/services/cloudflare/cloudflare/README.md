@@ -14,14 +14,14 @@
 | Provider | `cloudflare` |
 | 规则浏览路径 | `rule/cloudflare/cloudflare/cloudflare.yaml` |
 | 规则数量（_index） | **98** |
-| SHA-256 | `7d906954bf756aace6d2da174c5316984e8ef49af7c4b85cee73eee5be6073c2` |
+| SHA-256 | `2376772eed095633813752ba82a455e9d939b0c4b87afe75738f8e1615f5914c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261002T115057087712Z-run` |
-| IR digest | `1d51d73ebbfad3d3359e68ab1aee81f2826155b35de6dafdb56f990e5b354b4b` |
+| Run ID | `20261003T041233042796Z-run` |
+| IR digest | `c02eaa0bee56e1b5e0174d451d1d0f65cca045162bd91af7f3aa029ac4e4a19b` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

@@ -1,0 +1,10 @@
+<!-- PATH_LINKS_GENERATED_START -->
+# Prime Video · `shadowrocket`
+
+- **Service ID:** `primevideo`
+- **本文件 Raw:** `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/amazon/primevideo/primevideo.list`
+- **说明文档:** [docs/rules/primevideo.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/rules/primevideo.md)
+- **浏览用规则:** `rule/amazon/primevideo/primevideo.yaml`（非运行时输入）
+
+本目录其它文件为客户端规则正文；本 README 为自动生成的快速链接（Path Links G3）。
+<!-- PATH_LINKS_GENERATED_END -->
