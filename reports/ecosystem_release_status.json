@@ -1,0 +1,57 @@
+{
+  "schema": "ecosystem_release_status_v1",
+  "generated_at": "2026-10-03T18:01:28Z",
+  "authority_note": "READ MODEL ONLY. Does not replace Collection/Source/Icon SSOT. See docs/STATE_MODEL.md.",
+  "repos": {
+    "collection": "cn-wanmei/Popular-Rules-Collection",
+    "source": "cn-wanmei/Popular-Rules-Source",
+    "icon": "cn-wanmei/Popular-Rules-Icon"
+  },
+  "signals": {
+    "collection_publish_status": {
+      "url": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/PUBLISH_STATUS.md",
+      "ok": true,
+      "error": null,
+      "bytes": 1183,
+      "preview": "# Publish & CI status\n\nRepository: https://github.com/cn-wanmei/Popular-Rules-Collection\n\n**Release lock:** [`docs/RELEASE_AND_QC.md`](docs/RELEASE_AND_QC.md)  \n**Status:** 当前发布链路按 V3 Engine 运行；Collection、Build、Publish 均受 CI Gate 控制。机器生成区由 CI 自动刷新，人工备注仅保留于文末。\n<!-- AUTO-GENERATED:BEGIN -->\n## Automated status\n\nGenerated at: `2026-10-03T16:55:20.430978Z`\n\n### Collection\n- Latest snapshot date: `2026"
+    },
+    "collection_main": {
+      "url": "https://api.github.com/repos/cn-wanmei/Popular-Rules-Collection/commits/main",
+      "ok": true,
+      "error": null,
+      "sha": "8295d801dea226154a3f930bc22517b5f3060e92",
+      "message": "fix(ci): architecture_gate — job-level contents:read for Published Raw E2E"
+    },
+    "source_durable_bridge": {
+      "url": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/reports/durable-bridge/latest.json",
+      "ok": true,
+      "error": null,
+      "persisted_count": 281,
+      "incomplete_count": 0,
+      "persistence_commit": "a8789af22f72908da22f94930cc0c692b7f0bf47",
+      "created_at": "2026-10-03T16:21:24.699121+00:00"
+    },
+    "icon_identity_snapshot": {
+      "url": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/main/config/collection_identity_snapshot.json",
+      "ok": true,
+      "error": null,
+      "service_count": 394,
+      "generated_at": "2026-09-30T19:45:00+08:00",
+      "source_ref": "094fbf44c54584f4563a4eb4ce3cc72fb2802206"
+    },
+    "icon_release_pointers": {
+      "url": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/main/config/release-pointers.yaml",
+      "ok": true,
+      "error": null,
+      "bytes": 544,
+      "preview": "production: icon-2026.09.30.clean1\nrollback: icon-2026.09.30.clean1-rb1\nrollback_note: \"Independent immutable V6 rollback manifest; reuses only the clean1 content-addressed physical objects and does not depend on Collection V5 assets.\"\nupdated_at: \"2026-09-30T19:46:00+08:00\"\nfrozen: true\nfreeze_id: icon-2026.09.30.clean1\nstyles: 8\nregistry_entries: 394\ncanonical_collection_services: 394\ncanonical_services_present: 394\ncanonical_services_missing: 0\norphan_entries: 0\ncollection_coverage: \"100% (39"
+    }
+  },
+  "summary": {
+    "collection_head": "8295d801dea226154a3f930bc22517b5f3060e92",
+    "source_durable_persisted": 281,
+    "icon_snapshot_services": 394,
+    "icon_snapshot_generated_at": "2026-09-30T19:45:00+08:00",
+    "all_core_signals_ok": true
+  }
+}
