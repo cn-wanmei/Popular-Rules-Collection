@@ -33,9 +33,9 @@ Policy example (operators may tighten):
 
 | Label | Example rule of thumb |
 |-------|------------------------|
-| fresh | verified against authority within SLA (e.g. ≤ 7d) |
-| aging | within 2× SLA |
-| stale | beyond 2× SLA or explicit drift detected |
+| fresh | verified against authority within SLA (e.g. ≤ 24h soft / 7d hard for read-model labels) |
+| aging | within 2× soft SLA |
+| stale | beyond hard SLA or explicit content drift |
 | unknown | no last_verified_at |
 
 ### Health
@@ -63,8 +63,25 @@ valid | incomplete | broken | unknown
 
 - Encoding freshness into the lifecycle field
 - Treating “service count match” as freshness proof (Icon snapshot)
+- Treating Collection HEAD move alone as identity drift when `rule/_index.yaml` file_sha is unchanged
 - Creating a fifth authoritative status file that re-owns lifecycle
 
 ## Cross-repo read model
 
-Generated aggregate (non-authoritative): `reports/ecosystem_release_status.json` (schema `ecosystem_release_status_v1`).
+Generated aggregate (non-authoritative):
+
+```text
+reports/ecosystem_release_status.json
+schema: ecosystem_release_status_v3
+```
+
+Fields of note:
+
+| Field | Meaning |
+|-------|--------|
+| `observed_at` / `observation_watermark` | When the observation was taken |
+| `readability` | Signals could be fetched |
+| `semantic_consistency` | Cross-repo content checks (e.g. Collection index file_sha vs Icon pin) |
+| `freshness` | Age labels on individual signals |
+
+Historical schema names (`v1`, `v2`) are superseded; do not treat them as current contract.
