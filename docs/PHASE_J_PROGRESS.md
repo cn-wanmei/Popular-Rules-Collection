@@ -1,32 +1,32 @@
-# Phase J — Third-round audit (语义精修)
+# Phase J — Third-round audit remediation
 
-> Tracker only. Audit date 2026-10-04. P0 count in audit: **0**.
+> Tracker only. P0 in audit: **0**.
 
-## CI (main tip)
+## Durable Bridge #77
 
-| Repo | Status |
-|------|--------|
-| Collection | green (Build/Publish/Raw E2E/Recovery) |
-| Source | CI #511 green; #512 `action_required` is PR approval noise (0 jobs) |
-| Icon | Identity Freshness #7 green after snapshot merge |
+| Run | Result | Cause |
+|-----|--------|-------|
+| #77 | failure | selective `services=12306` — **unknown service** (not in Source registry) |
+| #78 | success | `services=netflix` (valid batch id) |
+| follow-up | fixed empty `executed_services` (pre-merge run snapshot) |
 
-## Completed this cycle
+**Not a residual syntax bug.** Selective input must use real Source service ids.
 
-| ID | Item |
-|----|------|
-| P1-01 | Identity drift = content (`file_sha` / ids / fields); HEAD-only move ≠ drift |
-| P1-02/03 | Durable `planned_services` + `missing_from_execution`; plan uses `requirements.lock` |
-| P1-02 runtime | Selective Durable dispatch (`services=12306`) for new workflow evidence |
-| P2-01 | STATE_MODEL → `ecosystem_release_status_v3` |
-| P2-02 | Raw E2E manifest sha256/size vs body |
-| P2-04 | Plan job lock discipline |
-
-## Deferred
+## Completed
 
 | ID | Item |
 |----|------|
-| P1-04 | Unified handoff_state in Read Model (COMPLETE / MANUAL_ACTION_REQUIRED) |
-| P1-05 | Stronger STALE OBSERVATION UI in status MD |
-| P2-03 | Recovery Sandbox Drill |
-| P2-05 | Icon freeze TTL |
-| P2-06 | README vs manifest role further split |
+| P1-01 | Content-based identity drift |
+| P1-02/03 | planned/executed + lock; run snapshot fix |
+| P1-04 | `handoff_state` in Read Model |
+| P1-05 | `observation_status` + status markdown STALE markers |
+| P2-01 | STATE_MODEL schema alignment |
+| P2-02 | Raw E2E sha256/size |
+| P2-03 | Recovery Sandbox LKG digest job |
+| P2-04 | Plan requirements.lock |
+| P2-05 | Icon freeze TTL fields |
+
+## Operator notes
+
+- Durable selective: ids from `config/durable_release_policy.yaml` / Source registry only.
+- Freeze expiry is policy metadata; promotion still requires human review.
