@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Clients-7-0d9488?style=for-the-badge" alt="7 clients" />
   <img src="https://img.shields.io/badge/SSOT-rule%2F_index.yaml-1e293b?style=for-the-badge" alt="SSOT" />
-  <img src="https://img.shields.io/badge/Release-manual%20only-64748b?style=for-the-badge" alt="Manual release" />
+  <img src="https://img.shields.io/badge/GitHub%20Release%20Packages-Manual-64748b?style=for-the-badge" alt="GitHub Release Packages Manual" />
   <img src="https://img.shields.io/badge/Icon-V6-6366f1?style=for-the-badge" alt="Icon V6" />
 </p>
 
