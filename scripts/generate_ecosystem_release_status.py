@@ -9,7 +9,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-UA = {"User-Agent": "popular-rules-ecosystem-status/1.2"}
+UA = {"User-Agent": "popular-rules-ecosystem-status/1.3"}
 
 
 def fetch_bytes(url: str, timeout: int = 60) -> tuple[bytes | None, str | None]:
@@ -63,6 +63,12 @@ def freshness_label(age: int | None, soft: int, hard: int) -> str:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", type=Path, default=Path("reports/ecosystem_release_status.json"))
+    ap.add_argument(
+        "--md-out",
+        type=Path,
+        default=Path("reports/ecosystem_release_status.md"),
+        help="Human status page with explicit STALE OBSERVATION markers",
+    )
     args = ap.parse_args()
 
     now = datetime.now(timezone.utc)
@@ -78,7 +84,7 @@ def main() -> int:
     }
 
     report: dict = {
-        "schema": "ecosystem_release_status_v3",
+        "schema": "ecosystem_release_status_v4",
         "generated_at": now_s,
         "observed_at": now_s,
         "authority_note": (
@@ -177,20 +183,18 @@ def main() -> int:
             src_ref = src.get("ref")
             file_sha = src.get("file_sha")
 
+    # Content-based: file_sha mismatch = error; HEAD-only lag without file_sha mismatch = ok/info
     icon_sem = "ok"
     reasons = []
-    if not src_ref or src_ref == "main":
+    if not file_sha:
         icon_sem = "warning"
-        reasons.append("ref_not_exact_or_missing")
-    if collection_sha and src_ref and src_ref not in (collection_sha, "main") and src_ref != collection_sha:
-        icon_sem = "error"
-        reasons.append("ref_ne_collection_main")
+        reasons.append("file_sha_missing")
     if live_file_sha and file_sha and file_sha != live_file_sha:
         icon_sem = "error"
         reasons.append("file_sha_mismatch")
-    if not file_sha:
-        icon_sem = "warning" if icon_sem == "ok" else icon_sem
-        reasons.append("file_sha_missing")
+    head_lag = bool(collection_sha and src_ref and src_ref not in (collection_sha, "main"))
+    if head_lag and icon_sem == "ok":
+        reasons.append("collection_head_ahead_content_ok")
 
     icon_age = age_seconds(gen_at if isinstance(gen_at, str) else None, now)
     report["signals"]["icon_identity_snapshot"] = {
@@ -211,13 +215,48 @@ def main() -> int:
     }
 
     text, err = fetch_text(sources["icon_release_pointers"])
+    freeze_age = None
+    freeze_label = "unknown"
+    frozen = False
+    if text and err is None:
+        for line in text.splitlines():
+            if line.strip().startswith("frozen:"):
+                frozen = "true" in line.lower()
+            if line.strip().startswith("updated_at:"):
+                ts = line.split(":", 1)[1].strip().strip('"').strip("'")
+                freeze_age = age_seconds(ts, now)
+                freeze_label = freshness_label(freeze_age, 86400 * 14, 86400 * 45)
     report["signals"]["icon_release_pointers"] = {
         "url": sources["icon_release_pointers"],
         "readability": "ok" if err is None else "error",
         "ok": err is None,
         "error": err,
         "bytes": len(text or ""),
+        "frozen": frozen,
+        "freeze_age_seconds": freeze_age,
+        "freeze_freshness": freeze_label,
     }
+
+    # P1-04 handoff_state: derive from durable run + seal (read-model interpretation)
+    if run_comp == "COMPLETE" and seal_comp == "COMPLETE":
+        handoff_state = "COMPLETE"
+    elif run_comp in ("PARTIAL", "FAILED") or seal_comp in ("PARTIAL", "FAILED"):
+        handoff_state = "FAILED" if run_comp == "FAILED" and seal_comp == "FAILED" else "MANUAL_ACTION_REQUIRED"
+    else:
+        handoff_state = "UNKNOWN"
+
+    # P1-05 observation freshness vs live Collection HEAD noted in this same run
+    # (observation is instantaneous; "stale" refers to underlying signal ages)
+    signal_freshness = [
+        report["signals"]["source_durable_bridge"].get("freshness"),
+        report["signals"]["icon_identity_snapshot"].get("freshness"),
+    ]
+    if "stale" in signal_freshness:
+        observation_status = "STALE OBSERVATION"
+    elif "aging" in signal_freshness or "unknown" in signal_freshness:
+        observation_status = "AGING OBSERVATION"
+    else:
+        observation_status = "FRESH OBSERVATION"
 
     readability_ok = all(
         report["signals"][k].get("readability") == "ok"
@@ -234,28 +273,60 @@ def main() -> int:
     else:
         overall_sem = "ok"
 
-    # Read model self age is 0 at generation; consumers compare observed_at
     report["summary"] = {
         "collection_head": collection_sha,
         "collection_index_file_sha": live_file_sha,
         "source_durable_persisted": persisted,
         "source_seal_completeness": seal_comp,
         "source_run_completeness": run_comp,
+        "handoff_state": handoff_state,
         "icon_snapshot_services": svc_count,
         "icon_snapshot_ref": src_ref,
         "icon_snapshot_file_sha": file_sha,
         "icon_vs_collection": icon_sem,
+        "icon_production_frozen": frozen,
+        "icon_freeze_freshness": freeze_label,
         "all_core_signals_ok": readability_ok,
         "readability": "ok" if readability_ok else "error",
         "semantic_consistency": overall_sem,
+        "observation_status": observation_status,
         "observation_watermark": now_s,
-        "freshness_sla_note": "icon/source soft=24h hard=7d (read-model labels only)",
+        "freshness_sla_note": "icon/source soft=24h hard=7d; freeze soft=14d hard=45d (read-model labels only)",
     }
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    # Human status page
+    md = []
+    md.append("# Ecosystem Release Status (Read Model)\n")
+    md.append(f"> **{observation_status}** — observed_at `{now_s}`  \n")
+    md.append("> Not SSOT. See `docs/STATE_MODEL.md`.\n")
+    md.append("\n## Summary\n")
+    md.append(f"| Field | Value |")
+    md.append(f"|-------|-------|")
+    md.append(f"| observation_status | **{observation_status}** |")
+    md.append(f"| handoff_state | `{handoff_state}` |")
+    md.append(f"| collection_head | `{collection_sha}` |")
+    md.append(f"| source run / seal | `{run_comp}` / `{seal_comp}` |")
+    md.append(f"| icon semantic | `{icon_sem}` |")
+    md.append(f"| icon freeze | frozen={frozen} freshness=`{freeze_label}` |")
+    md.append(f"| readability | `{report['summary']['readability']}` |")
+    md.append(f"| semantic_consistency | `{overall_sem}` |")
+    md.append("\n## Signal freshness\n")
+    md.append("| Signal | freshness | age_seconds |")
+    md.append("|--------|-----------|-------------|")
+    for key in ("source_durable_bridge", "icon_identity_snapshot"):
+        sig = report["signals"][key]
+        md.append(f"| {key} | {sig.get('freshness')} | {sig.get('age_seconds')} |")
+    if observation_status == "STALE OBSERVATION":
+        md.append("\n> ⚠️ **STALE OBSERVATION**: one or more underlying signals exceed hard SLA. "
+                  "Re-run Durable Bridge / Identity Freshness / Publish as appropriate.\n")
+    args.md_out.write_text("\n".join(md) + "\n", encoding="utf-8")
+
     print(json.dumps(report["summary"], ensure_ascii=False, indent=2))
     print(f"wrote {args.out}")
+    print(f"wrote {args.md_out}")
     return 0
 
 
