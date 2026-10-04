@@ -1,5 +1,5 @@
 {
-  "collection_date": "2026-10-03",
+  "collection_date": "2026-10-04",
   "file_count": 81,
   "files": [
     {
@@ -18,7 +18,7 @@
       "kind": "binary",
       "scope": "mmdb",
       "sha256": "b13f10cdb414b8db78a64c432d6cd511668415760ee0fb2d17ac9f42de5aba08",
-      "source": "backup/2026-10-03/datasets/mmdb-country.bin"
+      "source": "backup/2026-10-04/datasets/mmdb-country.bin"
     },
     {
       "bytes": 12077323,
@@ -27,7 +27,7 @@
       "kind": "binary",
       "scope": "mmdb",
       "sha256": "796ef6f9a0bc9b95ed463bbd267b435e99e944f883bffd7b603bff8e409dca41",
-      "source": "backup/2026-10-03/datasets/mmdb-asn.bin"
+      "source": "backup/2026-10-04/datasets/mmdb-asn.bin"
     },
     {
       "bytes": 207733,
@@ -36,7 +36,7 @@
       "kind": "binary",
       "scope": "mmdb",
       "sha256": "49c629ec4518a0d2e103813fdfa17f245928e4b8dab5d9f3526408d779889344",
-      "source": "backup/2026-10-03/datasets/dat-geoip-lite.bin"
+      "source": "backup/2026-10-04/datasets/dat-geoip-lite.bin"
     },
     {
       "bytes": 16515432,
@@ -45,7 +45,7 @@
       "kind": "binary",
       "scope": "mmdb",
       "sha256": "391b522361c52804e486a98b53d97f3d9c1d3e4e4217bb34954774a0b456b9fd",
-      "source": "backup/2026-10-03/datasets/dat-geoip.bin"
+      "source": "backup/2026-10-04/datasets/dat-geoip.bin"
     },
     {
       "bytes": 4253533,
@@ -54,7 +54,7 @@
       "kind": "binary",
       "scope": "mmdb",
       "sha256": "1fcaf9622d0fd5fb1dc0d1f9b81ff15abe1b284622ff6510a2809f5585721c7a",
-      "source": "backup/2026-10-03/datasets/dat-geosite.bin"
+      "source": "backup/2026-10-04/datasets/dat-geosite.bin"
     },
     {
       "bytes": 153749,
@@ -223,7 +223,7 @@
       "kind": "geoip",
       "scope": "mmdb",
       "sha256": "b13f10cdb414b8db78a64c432d6cd511668415760ee0fb2d17ac9f42de5aba08",
-      "source": "backup/2026-10-03/datasets/geoip-mmdb.bin"
+      "source": "backup/2026-10-04/datasets/geoip-mmdb.bin"
     },
     {
       "bytes": 1412572,
@@ -246,13 +246,13 @@
       "source": "database/geosite/proxy.txt"
     },
     {
-      "bytes": 3883961,
+      "bytes": 3890309,
       "file": "geosite/reject.txt",
       "id": "geosite-reject",
       "kind": "geosite",
-      "lines": 186771,
+      "lines": 187102,
       "scope": "geosite",
-      "sha256": "5c9dd66372ad64694930b07a7169333759f36bd8a66a66b9e6b7154be966fa28",
+      "sha256": "9a11687e0e66a5651ca8c73328c4b3c2dfb64bfdfd023bf490aed677e12e6b55",
       "source": "database/geosite/reject.txt"
     },
     {
@@ -383,13 +383,13 @@
       "source": "database/provider/cloudflare6.txt"
     },
     {
-      "bytes": 387977,
+      "bytes": 387947,
       "file": "provider/aws.txt",
       "id": "provider-aws",
       "kind": "provider",
-      "lines": 11485,
+      "lines": 11484,
       "scope": "provider",
-      "sha256": "7ee8f277e965be0d55079006d16abcef39396b06783a5c45659e56a066e7054b",
+      "sha256": "25aa2a6d8fc651fbc01b22d6cd4ea0be5905dd8b7bfdb8a7502e7cf501969ec2",
       "source": "database/provider/aws.txt"
     },
     {
@@ -399,7 +399,7 @@
       "kind": "provider",
       "lines": 1163,
       "scope": "provider",
-      "sha256": "2f3ee2ab68f17b4200bd1bdb73203aaafd83c53a3db5cf4ba0dd988bab0b69c0",
+      "sha256": "07a2fdf0ab5d20c982667590ba1634b42a8dddb0782fb1deb789777f90740db8",
       "source": "database/provider/googlecloud.txt"
     },
     {
@@ -409,7 +409,7 @@
       "kind": "provider",
       "lines": 152,
       "scope": "provider",
-      "sha256": "f7272ca921d70f76e78556e6ea7dc77e5e7631cd746fb45474716c247eebecf9",
+      "sha256": "a5ea750e265a3d52dba3b8e15d7a66e348ed119881a7ea1755ac6f0bce599c7c",
       "source": "database/provider/goog.txt"
     },
     {
@@ -803,7 +803,7 @@
       "source": "database/ips/zhihu.txt"
     }
   ],
-  "generated_at": "2026-10-03T20:05:11.009595+00:00",
+  "generated_at": "2026-10-04T00:45:47.444159+00:00",
   "missing_optional": [],
   "runtime_contract": "network_dataset_distribution_v2",
   "schema": "network_publication_v2",
@@ -815,5 +815,5 @@
     "provider_cidrs_are_not_service_ownership": true,
     "service_rules": "generated/<client>/..."
   },
-  "source_commit": "a972140cdb55e62bf734b985541552193567294e"
+  "source_commit": "51e65f9716c3045e68033115f6f90137e0b745c7"
 }

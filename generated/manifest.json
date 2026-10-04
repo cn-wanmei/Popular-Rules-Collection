@@ -8,21 +8,21 @@
     "singbox",
     "surge"
   ],
-  "collection_date": "2026-10-03",
+  "collection_date": "2026-10-04",
   "file_count": 4707,
   "files": [
     {
-      "file": "_promotion/20261003T195636292574Z-run.json",
+      "file": "_promotion/20261004T003708162399Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "5f421d6bfffaac413b1ec0b177cb26dbe8cb06353793bc11e5b4ce6b31f1ee85",
+      "sha256": "e8682031213e8242770fc2ccd8bac180c1316cc7a8563c70128fa2ebd1a05ffd",
       "size": 542960
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "5f421d6bfffaac413b1ec0b177cb26dbe8cb06353793bc11e5b4ce6b31f1ee85",
+      "sha256": "e8682031213e8242770fc2ccd8bac180c1316cc7a8563c70128fa2ebd1a05ffd",
       "size": 542960
     },
     {
@@ -5838,16 +5838,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geosite",
-      "sha256": "5c9dd66372ad64694930b07a7169333759f36bd8a66a66b9e6b7154be966fa28",
-      "size": 3883961
+      "sha256": "9a11687e0e66a5651ca8c73328c4b3c2dfb64bfdfd023bf490aed677e12e6b55",
+      "size": 3890309
     },
     {
       "file": "geosite/reject_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 186771,
+      "rule_count": 187102,
       "scope": "geosite",
-      "sha256": "86deef7271811b21c0ecb7d9bd9f2eda581bd250fc0618221996d77583a01470",
-      "size": 6498755
+      "sha256": "f23f9cd101b0b995a740bcb6a74721860b869fef7713848e56cfa49adb5db900",
+      "size": 6509737
     },
     {
       "file": "ip/adblock.txt",
@@ -16742,16 +16742,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "7ee8f277e965be0d55079006d16abcef39396b06783a5c45659e56a066e7054b",
-      "size": 387977
+      "sha256": "25aa2a6d8fc651fbc01b22d6cd4ea0be5905dd8b7bfdb8a7502e7cf501969ec2",
+      "size": 387947
     },
     {
       "file": "provider/aws_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 11282,
+      "rule_count": 11281,
       "scope": "provider",
-      "sha256": "45ebcfa89d5b3c7a44b09015118bb38d598fd38eba0d8fb409ea1fbe4b38e3fd",
-      "size": 482204
+      "sha256": "bb46758c2bd52e7d2ccf26e8b008144dfd25dbc3f1495428651b1d45a81e8842",
+      "size": 482165
     },
     {
       "file": "provider/cloudflare.txt",
@@ -16790,7 +16790,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "f7272ca921d70f76e78556e6ea7dc77e5e7631cd746fb45474716c247eebecf9",
+      "sha256": "a5ea750e265a3d52dba3b8e15d7a66e348ed119881a7ea1755ac6f0bce599c7c",
       "size": 4595
     },
     {
@@ -16806,7 +16806,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "2f3ee2ab68f17b4200bd1bdb73203aaafd83c53a3db5cf4ba0dd988bab0b69c0",
+      "sha256": "07a2fdf0ab5d20c982667590ba1634b42a8dddb0782fb1deb789777f90740db8",
       "size": 37103
     },
     {
@@ -37666,7 +37666,7 @@
       "size": 54
     }
   ],
-  "generated_at": "2026-10-03T20:05:11.051997+00:00",
+  "generated_at": "2026-10-04T00:45:47.486280+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "layout_schema": "directory_layout_v2",
   "network_dataset_directories": [
