@@ -39,7 +39,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           mkdir -p reports
-          git add reports/ecosystem_release_status.json
+          git add reports/ecosystem_release_status.json reports/ecosystem_release_status.md || git add reports/ecosystem_release_status.json
           if git diff --cached --quiet; then
             echo "No ecosystem status change"
           else
@@ -51,5 +51,7 @@ jobs:
         if: always()
         with:
           name: ecosystem-release-status
-          path: reports/ecosystem_release_status.json
+          path: |
+            reports/ecosystem_release_status.json
+            reports/ecosystem_release_status.md
           if-no-files-found: warn
