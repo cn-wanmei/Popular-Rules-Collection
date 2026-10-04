@@ -1,3 +1,7 @@
+> ⚠️ **用法说明有效；文中日期/数量可能过期**  
+> 权威数字与服务集合以 [`rule/_index.yaml`](../rule/_index.yaml)、[SERVICE_CATALOG.generated.md](SERVICE_CATALOG.generated.md)、[`generated/manifest.json`](../generated/manifest.json) 为准。  
+> Icon 当前为 **System 6.0**（`release-pointers.yaml`），非 V4 `release-pointer.json`。
+
 # Popular-Rules-Collection 规则完整使用说明
 
 > 当前基线：2026-09-24 Release · Run `20260924T043120249584Z-run` · IR `f39d8eb0fd3bf922caafbad6d67ba140a004fa131751fc99221d268deaa6cca7`
@@ -9,7 +13,7 @@
 
 ## 2. 服务 / 子服务 / 服务集
 
-完整入口：[SERVICE_CATALOG.md](SERVICE_CATALOG.md)。当前规则索引有 **262** 条记录、**116** 个顶级服务集。每条记录都有独立说明页。
+完整入口：[SERVICE_CATALOG.generated.md](SERVICE_CATALOG.generated.md)（当前） / [历史 SERVICE_CATALOG.md](SERVICE_CATALOG.md)。当前规则索引有 **262** 条记录、**116** 个顶级服务集。每条记录都有独立说明页。
 
 **服务集**：用于较宽覆盖面的统一引用。
 
