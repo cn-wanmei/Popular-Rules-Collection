@@ -26,6 +26,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
@@ -36,16 +38,33 @@ jobs:
 
       - name: Commit if changed
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           mkdir -p reports
-          git add reports/ecosystem_release_status.json reports/ecosystem_release_status.md || git add reports/ecosystem_release_status.json
+          # md may be new; stage whatever exists
+          git add reports/ecosystem_release_status.json
+          if [ -f reports/ecosystem_release_status.md ]; then
+            git add reports/ecosystem_release_status.md
+          fi
           if git diff --cached --quiet; then
             echo "No ecosystem status change"
-          else
-            git commit -m "chore(status): refresh ecosystem_release_status read model [skip ci]"
-            git push origin HEAD:main
+            exit 0
           fi
+          git commit -m "chore(status): refresh ecosystem_release_status read model [skip ci]"
+          # Race-safe push: main receives many concurrent bot commits
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git pull --rebase origin main
+            if git push origin HEAD:main; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "push rejected (attempt $attempt); retrying"
+            sleep $((attempt * 2))
+          done
+          echo "::error::Failed to push ecosystem status after retries"
+          exit 1
 
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         if: always()
