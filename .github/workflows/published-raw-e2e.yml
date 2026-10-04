@@ -44,15 +44,13 @@ jobs:
             fi
           }
 
-          # Authority surfaces
           fetch_ok "rule/_index.yaml" "/tmp/raw-e2e/_index.yaml"
           fetch_ok "PUBLISH_STATUS.md" "/tmp/raw-e2e/PUBLISH_STATUS.md"
-
-          # Machine-consumed distribution manifest (not human README)
           fetch_ok "generated/manifest.json" "/tmp/raw-e2e/manifest.json"
 
           python - <<'PY'
           from pathlib import Path
+          import hashlib
           import json
           import re
           import urllib.request
@@ -73,19 +71,21 @@ jobs:
           missing_dirs = [c for c in CLIENTS if c not in dirs]
           if missing_dirs:
               raise SystemExit(f"manifest missing client dirs: {missing_dirs}; have={dirs}")
-          print(f"manifest_ok clients={dirs} file_count={manifest.get('file_count')}")
 
           files = manifest.get("files") or []
-          by_client: dict[str, str] = {}
+          by_client = {}
+          meta_by_path = {}
           for entry in files:
               if not isinstance(entry, dict):
                   continue
+              path = entry.get("file") or ""
+              if path:
+                  meta_by_path[path] = entry
               if entry.get("kind") != "client_rules":
                   continue
-              path = entry.get("file") or ""
               scope = entry.get("scope") or (path.split("/")[0] if path else "")
               if scope in CLIENTS and scope not in by_client:
-                  by_client[scope] = path
+                  by_client[scope] = entry
 
           missing_leaf = [c for c in CLIENTS if c not in by_client]
           if missing_leaf:
@@ -101,29 +101,19 @@ jobs:
               return body
 
           for client in CLIENTS:
-              rel = by_client[client]
+              entry = by_client[client]
+              rel = entry["file"]
               body = fetch(rel)
-              text = body.decode("utf-8", errors="replace")
-              if len(text.strip()) < 8:
+              digest = hashlib.sha256(body).hexdigest()
+              exp_sha = entry.get("sha256")
+              exp_size = entry.get("size")
+              if exp_sha and digest != exp_sha:
+                  raise SystemExit(f"sha256 mismatch client={client} path={rel} got={digest} want={exp_sha}")
+              if exp_size is not None and int(exp_size) != len(body):
+                  raise SystemExit(f"size mismatch client={client} path={rel} got={len(body)} want={exp_size}")
+              if len(body) < 8:
                   raise SystemExit(f"leaf too thin: {rel}")
-              print(f"client_leaf_ok client={client} path=generated/{rel} bytes={len(body)}")
+              print(f"client_leaf_ok client={client} path=generated/{rel} bytes={len(body)} sha256=ok")
 
-          # A few rule-tree leaves from human index (optional depth)
-          paths = []
-          for m in re.finditer(r"(?m)^\s*- path:\s*(\S+)\s*$", index_text):
-              p = m.group(1).strip().strip("'\"")
-              if p.endswith((".yaml", ".yml")):
-                  paths.append(p if p.startswith("rule/") else f"rule/{p}")
-              if len(paths) >= 3:
-                  break
-          for path in paths:
-              url = f"{BASE}/{path}"
-              req = urllib.request.Request(url, headers={"User-Agent": "published-raw-e2e"})
-              with urllib.request.urlopen(req, timeout=45) as resp:
-                  body = resp.read()
-              if not body:
-                  raise SystemExit(f"rule leaf empty: {path}")
-              print(f"rule_leaf_ok path={path} bytes={len(body)}")
-
-          print("Published Raw E2E: PASS (manifest + 7 client leaves + index)")
+          print("Published Raw E2E: PASS (manifest + 7 client leaves + sha256/size)")
           PY
