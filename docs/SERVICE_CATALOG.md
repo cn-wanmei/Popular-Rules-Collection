@@ -1,3 +1,7 @@
+> ⚠️ **HISTORICAL / NON-AUTHORITATIVE**  
+> 本页含日期快照与手写统计，**不是当前权威目录**。  
+> **当前目录请使用：** [SERVICE_CATALOG.generated.md](SERVICE_CATALOG.generated.md) · Identity SSOT：[`rule/_index.yaml`](../rule/_index.yaml)
+
 > **机器目录表**已迁移至 [SERVICE_CATALOG.generated.md](SERVICE_CATALOG.generated.md)（Documentation Layer v1，与 `rule/_index.yaml` 同步）。
 
 # 服务规则目录
