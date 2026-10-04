@@ -16,13 +16,13 @@
 | Provider | `netapp` |
 | 规则浏览路径 | `rule/netapp/netapp/netapp.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `275e974717adeb766ab1d8dc4a38a01e0883b967a10612a572ad0f57d5da65e7` |
+| SHA-256 | `44f3900b7490e7b72c4880bc484371a6ec9528cce628225e2e40668f01ab90a7` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

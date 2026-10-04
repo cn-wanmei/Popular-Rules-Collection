@@ -16,13 +16,13 @@
 | Provider | `autohome` |
 | 规则浏览路径 | `rule/autohome/autohome/autohome.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `ec58e2acae50395e6b7c7f98628eb9cbb2514c2831ca96bf9b9cddfc954fce85` |
+| SHA-256 | `7285195c49a38b20093b24f2ba434baa816361078c4c394acaeccc8f7f2f761c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

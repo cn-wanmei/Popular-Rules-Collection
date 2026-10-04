@@ -16,13 +16,13 @@
 | Provider | `mercadolibre` |
 | 规则浏览路径 | `rule/mercadolibre/mercadolibre/mercadolibre.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `01fcf95478ebe6bea82719af073fa8cde32d73c03aefb5f88ff9ef863cca52e8` |
+| SHA-256 | `edd52e3ee8296d8033d5a98bce64a9b877f2569df25f99ec1b0b2ddd3adf99c0` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

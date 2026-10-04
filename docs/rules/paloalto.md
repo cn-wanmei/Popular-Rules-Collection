@@ -16,13 +16,13 @@
 | Provider | `paloalto` |
 | 规则浏览路径 | `rule/paloalto/paloalto/paloalto.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `77804eaf00139fbf4bc16ffef6cbd069d9c4eb89b766442906fc55dcb81b5ecb` |
+| SHA-256 | `a1f57028679bd5de546794fad60bbb3ddde3b9d49d16b63903d16d5787dcc32c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

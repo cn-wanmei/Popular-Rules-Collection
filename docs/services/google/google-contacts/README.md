@@ -16,13 +16,13 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google-contacts/google-contacts.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `1df2009de37decb8a3c4c5ad07844eb15279f3fb4c07fd974e73d8f8809c2b2d` |
+| SHA-256 | `4b31e3e6135b5b01790a7a445b7bbd41c14c2cf775c4d16610e02164abfd61ce` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

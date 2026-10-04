@@ -16,13 +16,13 @@
 | Provider | `tesla` |
 | 规则浏览路径 | `rule/tesla/tesla_aggregate/tesla_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `180c1d22cb63eb62050c4482a273e935cc55df461f5fd2057fa3980a6cdf4c91` |
+| SHA-256 | `0c3c06209424a2cb5a723176969925a6bbb2696564ec22483e2e30527180d867` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

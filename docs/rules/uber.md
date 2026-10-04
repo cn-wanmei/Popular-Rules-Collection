@@ -16,13 +16,13 @@
 | Provider | `uber` |
 | 规则浏览路径 | `rule/uber/uber/uber.yaml` |
 | 规则数量（_index） | **3** |
-| SHA-256 | `133ca27f0ded22d5deb0e7d13a59031a22d69f8d6dd48325966aa5a4d9d1d027` |
+| SHA-256 | `ec81a9ca664135ea987ae275ff292a141899fbcc9d0910678a3775c70ff96a34` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

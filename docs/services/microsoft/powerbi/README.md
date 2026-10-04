@@ -16,13 +16,13 @@
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/powerbi/powerbi.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `22fe5b92a96fbed72841bf67beaafcd6f1118f341c48d9b8cfd2d18bc4c967dc` |
+| SHA-256 | `25d429a0ea45bcbba9d59298df57995d3754c960a5a295f084d5c7d636a1e4ae` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `qihoo360` |
 | 规则浏览路径 | `rule/qihoo360/qihoo360_aggregate/qihoo360_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `377a9409135f98eb8a0627cea812bb84b95d702ed96d03d40ff00a3c02ed5c8f` |
+| SHA-256 | `48b4c8c0ba3aee5bd51471a87d3c4dcb39a6c68aaba773bde2ba4e9915519381` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

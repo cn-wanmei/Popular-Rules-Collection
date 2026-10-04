@@ -16,13 +16,13 @@
 | Provider | `meta` |
 | 规则浏览路径 | `rule/meta/whatsapp/whatsapp.yaml` |
 | 规则数量（_index） | **28** |
-| SHA-256 | `98c4f9e178ba885c800b94d1ac21e1be59a6f639e11b6e48c1a59d6791d0558b` |
+| SHA-256 | `8bd652edb0feaa4074e578bb6df81140f03d2068ecfaadbee5fc307d76d5482f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

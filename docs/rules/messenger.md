@@ -16,13 +16,13 @@
 | Provider | `meta` |
 | 规则浏览路径 | `rule/meta/messenger/messenger.yaml` |
 | 规则数量（_index） | **4** |
-| SHA-256 | `2e917b55ba7848fb2377575a920a68064b6162f812bb81b3357dd23556307433` |
+| SHA-256 | `510e4f2415124d60ee5d66bdcb74c56a721132a2bbfe08d0f28760e076fbdf7d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

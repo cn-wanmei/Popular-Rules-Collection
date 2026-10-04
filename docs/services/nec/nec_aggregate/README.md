@@ -16,13 +16,13 @@
 | Provider | `nec` |
 | 规则浏览路径 | `rule/nec/nec_aggregate/nec_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `b04c781a8e3fb99d25adf3312f84ebd9980e3fe814b29228a072a7c34e286dd5` |
+| SHA-256 | `62fb597d2ca034b9062da8885cb7606c63bf417e1447b1b86c0c028bdd13c259` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

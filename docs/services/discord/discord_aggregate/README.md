@@ -16,13 +16,13 @@
 | Provider | `discord` |
 | 规则浏览路径 | `rule/discord/discord_aggregate/discord_aggregate.yaml` |
 | 规则数量（_index） | **31** |
-| SHA-256 | `c49322c34ad512a9a23357a7ea98041804663da0864ea2db0af263414c9b8ef8` |
+| SHA-256 | `ccffa05d49f558824f2e1dbfa5432777bac2a217e6bf27a644070077f332043f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

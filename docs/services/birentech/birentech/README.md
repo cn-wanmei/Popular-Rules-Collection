@@ -16,13 +16,13 @@
 | Provider | `birentech` |
 | 规则浏览路径 | `rule/birentech/birentech/birentech.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `0dd601b4062899c3f1183f236956b77ececc2fa2c920fe636db3de3e4a766f55` |
+| SHA-256 | `e0b45036c3ff712756d02c12e83a4e0a9b6478d2b180b9865dc4e9920b4f0b31` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

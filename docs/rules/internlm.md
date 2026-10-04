@@ -16,13 +16,13 @@
 | Provider | `internlm` |
 | 规则浏览路径 | `rule/internlm/internlm/internlm.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `5d498dd8a9fc75a1f894588c3d8d8389b6bdc02ec0bd50432e19f23535064b09` |
+| SHA-256 | `4fdcbbcbf0ebce9fda0bb3eea84fc17da1337390153f591b946fc1b15a61893b` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

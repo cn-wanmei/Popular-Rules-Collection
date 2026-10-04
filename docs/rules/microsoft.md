@@ -16,13 +16,13 @@
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/microsoft/microsoft.yaml` |
 | 规则数量（_index） | **1091** |
-| SHA-256 | `0448b16492d13f8ab0761443c0326690a969449d902c3c0c7e0644e3d2dcde0d` |
+| SHA-256 | `dc11d6d0f16348856d24eeebf3b01f1176ccd7a83dae6c30fce5ec52347a7c9c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

@@ -16,13 +16,13 @@
 | Provider | `haier` |
 | 规则浏览路径 | `rule/haier/haier_aggregate/haier_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `f418799cbc5122706301ac1a49031abd6c9fe8e15c0485b901f0d325c136913c` |
+| SHA-256 | `4f789942206ae88bf622033af99de3442891d9bfab7255811e0a2b3b2d2eb703` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

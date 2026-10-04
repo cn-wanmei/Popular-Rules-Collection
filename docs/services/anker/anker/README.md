@@ -16,13 +16,13 @@
 | Provider | `anker` |
 | 规则浏览路径 | `rule/anker/anker/anker.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `0d91a27191a5450603da32fb3b55b3f186a8aa76f46fb1e9c18a684dc80bc56d` |
+| SHA-256 | `9ab176ea8f83b3c4cdc43087c2eb92a7af8b52969565d6803314558e79e55396` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

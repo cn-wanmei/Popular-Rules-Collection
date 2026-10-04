@@ -16,13 +16,13 @@
 | Provider | `riotgames` |
 | 规则浏览路径 | `rule/riotgames/riotgames_aggregate/riotgames_aggregate.yaml` |
 | 规则数量（_index） | **55** |
-| SHA-256 | `c97e53793a5a78d1974c734882d77facb4ec4103c03172d468c0cd9e529f8cc9` |
+| SHA-256 | `79a23024c0fa36ce29da023336ee00d337bfe5882bf29b4c96f80d183592f8ac` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

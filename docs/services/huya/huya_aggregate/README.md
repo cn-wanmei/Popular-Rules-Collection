@@ -16,13 +16,13 @@
 | Provider | `huya` |
 | 规则浏览路径 | `rule/huya/huya_aggregate/huya_aggregate.yaml` |
 | 规则数量（_index） | **5** |
-| SHA-256 | `49d310efb7891806260d0c5d8a5a05f5ece22884209079b8ef27675bdcc52618` |
+| SHA-256 | `b09c0c35cc227db68eae0b633bf0bb3399df15545c6e444e55da5ef5089616ae` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

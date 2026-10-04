@@ -16,13 +16,13 @@
 | Provider | `coupang` |
 | 规则浏览路径 | `rule/coupang/coupang/coupang.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `e0d135ce9e9e2f79a989ff0c5414443bc93dc623d8647100ca5e27fcc0f4f5aa` |
+| SHA-256 | `d5394add4eb8f3d62d320807aeb94ec510f7028a012270e1aa6ce063ad49bc70` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

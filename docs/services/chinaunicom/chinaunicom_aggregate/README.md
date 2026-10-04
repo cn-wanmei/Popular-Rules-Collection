@@ -16,13 +16,13 @@
 | Provider | `chinaunicom` |
 | 规则浏览路径 | `rule/chinaunicom/chinaunicom_aggregate/chinaunicom_aggregate.yaml` |
 | 规则数量（_index） | **34** |
-| SHA-256 | `b6b4eb858a1bcb6f72f9db96e34cf39deef0b0c6c776cd018b185082d0ade903` |
+| SHA-256 | `b68379c843d5be205fdf4115dc88dfa984f9ccd8c62b245caf4ae46d0dfc18f6` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

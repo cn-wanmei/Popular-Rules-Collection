@@ -16,13 +16,13 @@
 | Provider | `docker` |
 | 规则浏览路径 | `rule/docker/docker_aggregate/docker_aggregate.yaml` |
 | 规则数量（_index） | **12** |
-| SHA-256 | `e2830872768810287949b46e8a919a07e825b4b343bd8620d7677065f51a79c6` |
+| SHA-256 | `4768653efdae14e7c01e31522851a12da5c833ad7a4d122551da4dbe0117c922` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

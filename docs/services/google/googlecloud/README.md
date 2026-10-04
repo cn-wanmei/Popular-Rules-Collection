@@ -16,13 +16,13 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/googlecloud/googlecloud.yaml` |
 | 规则数量（_index） | **5** |
-| SHA-256 | `4e8a06e8e88113f4dd257dddf72ea5c323be6160e4e3dfca4617337e1e16e06d` |
+| SHA-256 | `44f7952955967eb6b29aecce77d3bb5ffac3e4492ca8981259d21880f81eab4d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

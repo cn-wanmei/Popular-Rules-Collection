@@ -16,13 +16,13 @@
 | Provider | `perfectworld` |
 | 规则浏览路径 | `rule/perfectworld/perfectworld/perfectworld.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `4bcba8632644bac2dc7e3673c1a2ac1e60e502f39b9ab2195c473244c960aae1` |
+| SHA-256 | `7fd9383294e5271a8f99448b036f23c756e72e91d57411a7fc4796fb8199c7e0` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

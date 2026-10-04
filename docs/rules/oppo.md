@@ -16,13 +16,13 @@
 | Provider | `oppo` |
 | 规则浏览路径 | `rule/oppo/oppo/oppo.yaml` |
 | 规则数量（_index） | **56** |
-| SHA-256 | `bddf4888479ba9378da3a8df8c2d234099c4c5a52b08e2cbcff8de35fcd2b3c0` |
+| SHA-256 | `c1d2d382b24c491c41a6f98315a78bb7f5d3cbc48199b11c682f8bcf0f48715b` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

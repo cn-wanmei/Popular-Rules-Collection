@@ -16,13 +16,13 @@
 | Provider | `dewu` |
 | 规则浏览路径 | `rule/dewu/dewu_aggregate/dewu_aggregate.yaml` |
 | 规则数量（_index） | **45** |
-| SHA-256 | `64143e18ec688b21fa5a51e373658aaeb477324af8dd64e7af64699ecddc6f81` |
+| SHA-256 | `e9385641cbe51e818b3b775c0e9176bb4e88d3acd6041263b0855b0b752dc3cf` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

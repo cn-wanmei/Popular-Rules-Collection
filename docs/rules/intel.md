@@ -16,13 +16,13 @@
 | Provider | `intel` |
 | 规则浏览路径 | `rule/intel/intel/intel.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `ea0871ce9f18ebfc4e7f14716a568f9b9fba00a8b6211f786e595c485cabc5b4` |
+| SHA-256 | `a0973cf38a3305caceef09442ac23d28413dc4097e0f7d56d32628e0ee87224a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

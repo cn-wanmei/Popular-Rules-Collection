@@ -16,13 +16,13 @@
 | Provider | `figma` |
 | 规则浏览路径 | `rule/figma/figma/figma.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `91b17a7be228bec725aa34417e1e8f2eed8110aabcfe44e66beb4709c599afde` |
+| SHA-256 | `d3a66c5fc80ffbcfd8198612403d9efda8863ce37a0fcd886321447c34ac5b61` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 

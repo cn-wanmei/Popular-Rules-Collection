@@ -16,13 +16,13 @@
 | Provider | `netease` |
 | 规则浏览路径 | `rule/netease/neteasemail/neteasemail.yaml` |
 | 规则数量（_index） | **3** |
-| SHA-256 | `79e8863ace3bb919789c2c55c8e2b216225d26f1beada6c7be5ccb17ff0b1bc5` |
+| SHA-256 | `7162d3775645afd7000481b77bd30d82efb9380948db5b085216ac72ae9a0977` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261003T195636292574Z-run` |
+| Run ID | `20261004T003708162399Z-run` |
 | IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
 | IR schema | `semantic_ir_v2` |
 
