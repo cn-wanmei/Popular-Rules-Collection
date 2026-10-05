@@ -16,14 +16,14 @@
 | Provider | `unity` |
 | 规则浏览路径 | `rule/unity/unity_aggregate/unity_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `af7f187f217690d25215c0e43d426939e332e298c3202cb94cfd86e183a625c7` |
+| SHA-256 | `7aad8ef534790e8c77137939c883d13544160aa213ad2fd2c6ac47d7def81644` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

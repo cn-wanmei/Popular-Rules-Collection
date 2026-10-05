@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `alibaba` |
 | 规则浏览路径 | `rule/alibaba/alipay/alipay.yaml` |
-| 规则数量（_index） | **22** |
-| SHA-256 | `fa8ff441f8f4f2d441e2df303eb712f3f95986862d38cfe2fea7ea1fd57684d1` |
+| 规则数量（_index） | **2** |
+| SHA-256 | `d9f30bff7f187f60e629d97fce745807e1e72196e6183990d2cf6d20c2601171` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 23 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/alibaba/alipay/alipay.yaml` |
-| loon | 23 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/alibaba/alipay/alipay.list` |
-| mihomo | 23 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/alibaba/alipay/alipay.yaml` |
-| quantumultx | 23 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/alibaba/alipay/alipay.list` |
-| shadowrocket | 23 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/alibaba/alipay/alipay.list` |
+| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/alibaba/alipay/alipay.yaml` |
+| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/alibaba/alipay/alipay.list` |
+| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/alibaba/alipay/alipay.yaml` |
+| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/alibaba/alipay/alipay.list` |
+| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/alibaba/alipay/alipay.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/alibaba/alipay/alipay.json` |
-| surge | 23 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/alibaba/alipay/alipay.list` |
+| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/alibaba/alipay/alipay.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

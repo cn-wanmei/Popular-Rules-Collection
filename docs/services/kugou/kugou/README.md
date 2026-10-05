@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `kugou` |
 | 规则浏览路径 | `rule/kugou/kugou/kugou.yaml` |
-| 规则数量（_index） | **20** |
-| SHA-256 | `74d8bdd949b2cf83319facc0d0f22abf855d1348427c2508706538b67c1edfcf` |
+| 规则数量（_index） | **1** |
+| SHA-256 | `dda9e2f567684d6c5c9eea55360c6de45066fd06fe7c30788a6678ee0f151584` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 20 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/kugou/kugou/kugou.yaml` |
-| loon | 20 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/kugou/kugou/kugou.list` |
-| mihomo | 20 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/kugou/kugou/kugou.yaml` |
-| quantumultx | 20 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/kugou/kugou/kugou.list` |
-| shadowrocket | 20 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/kugou/kugou/kugou.list` |
+| egern | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/kugou/kugou/kugou.yaml` |
+| loon | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/kugou/kugou/kugou.list` |
+| mihomo | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/kugou/kugou/kugou.yaml` |
+| quantumultx | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/kugou/kugou/kugou.list` |
+| shadowrocket | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/kugou/kugou/kugou.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/kugou/kugou/kugou.json` |
-| surge | 20 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/kugou/kugou/kugou.list` |
+| surge | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/kugou/kugou/kugou.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

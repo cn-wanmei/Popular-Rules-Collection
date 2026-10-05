@@ -16,14 +16,14 @@
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/applebooks/applebooks.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `62d89018ea4cb3c9005176348d348d2681c068dd223a72579f4e76797a82f2aa` |
+| SHA-256 | `f5f2980efa4f9389c4f9a8690bb39803076a22004a0ddfa7d5978754dae1db52` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

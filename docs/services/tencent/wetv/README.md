@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/wetv/wetv.yaml` |
-| 规则数量（_index） | **10** |
-| SHA-256 | `de50fda5111dcebf5a59b723c7b7cfa4a29c2c1e8a735a5c385e84fd95db4a4c` |
+| 规则数量（_index） | **2** |
+| SHA-256 | `e23eaf47b714614b6ce4bbf16347ff500c311587016480b46ffbfcdb1b153a94` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 9 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/tencent/wetv/wetv.yaml` |
-| loon | 9 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/tencent/wetv/wetv.list` |
-| mihomo | 9 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/tencent/wetv/wetv.yaml` |
-| quantumultx | 9 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/tencent/wetv/wetv.list` |
-| shadowrocket | 9 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/tencent/wetv/wetv.list` |
+| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/tencent/wetv/wetv.yaml` |
+| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/tencent/wetv/wetv.list` |
+| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/tencent/wetv/wetv.yaml` |
+| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/tencent/wetv/wetv.list` |
+| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/tencent/wetv/wetv.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/tencent/wetv/wetv.json` |
-| surge | 9 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/tencent/wetv/wetv.list` |
+| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/tencent/wetv/wetv.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

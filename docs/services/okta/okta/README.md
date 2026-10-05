@@ -16,14 +16,14 @@
 | Provider | `okta` |
 | 规则浏览路径 | `rule/okta/okta/okta.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `87a59f43f351516c9e688de0aa73b5e3a8a05dcfe5b56361f778f554397cf7f8` |
+| SHA-256 | `f9a1e5d2804347dedd8553741bb5a5c70a5ba16f711c92acc219b89943990dbb` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

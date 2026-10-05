@@ -16,14 +16,14 @@
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/ms365-loop/ms365-loop.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `84dd67d444330fa74a78ec846d5aff84c60b7737498e704dddb236104adfe9b6` |
+| SHA-256 | `4939a96e65c7a1370c60e1ff22f32cada1117333a50da726596b1986f551359d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

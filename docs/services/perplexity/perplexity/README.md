@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `perplexity` |
 | 规则浏览路径 | `rule/perplexity/perplexity/perplexity.yaml` |
-| 规则数量（_index） | **7** |
-| SHA-256 | `e0e4ffa300223e814b4414df61c80211a548b160fb51254205b7f04e4c9617c8` |
+| 规则数量（_index） | **4** |
+| SHA-256 | `8cbcc1e68ed4a2fefeae4b0da637076ecc1159cce4b56915cc588591715a0fd3` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 14 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/perplexity/perplexity/perplexity.yaml` |
-| loon | 14 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/perplexity/perplexity/perplexity.list` |
-| mihomo | 14 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/perplexity/perplexity/perplexity.yaml` |
-| quantumultx | 14 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/perplexity/perplexity/perplexity.list` |
-| shadowrocket | 14 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/perplexity/perplexity/perplexity.list` |
+| egern | 4 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/perplexity/perplexity/perplexity.yaml` |
+| loon | 4 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/perplexity/perplexity/perplexity.list` |
+| mihomo | 4 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/perplexity/perplexity/perplexity.yaml` |
+| quantumultx | 4 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/perplexity/perplexity/perplexity.list` |
+| shadowrocket | 4 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/perplexity/perplexity/perplexity.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/perplexity/perplexity/perplexity.json` |
-| surge | 14 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/perplexity/perplexity/perplexity.list` |
+| surge | 4 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/perplexity/perplexity/perplexity.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

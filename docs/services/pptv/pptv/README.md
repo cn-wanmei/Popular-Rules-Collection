@@ -16,14 +16,14 @@
 | Provider | `pptv` |
 | 规则浏览路径 | `rule/pptv/pptv/pptv.yaml` |
 | 规则数量（_index） | **19** |
-| SHA-256 | `3c0b16cb29251451ea9c94b484bcae5a9ade9108a9835d043425f23fae3e8af0` |
+| SHA-256 | `e129f6de7b30d4183480fc100499ed491dc5ba0d7f0e4586af89030c5c7a56b3` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

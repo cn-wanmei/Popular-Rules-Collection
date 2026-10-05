@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/xbox/xbox.yaml` |
-| 规则数量（_index） | **46** |
-| SHA-256 | `475d8a3aa2a27b1d65d62bf20b784aab181e6e21133534bc80c9c4c2015f859f` |
+| 规则数量（_index） | **42** |
+| SHA-256 | `c3268e24d6ebddf76911b458efb4312933dea4326e9661301dc66f9f0023d6fd` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 84 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/microsoft/xbox/xbox.yaml` |
-| loon | 84 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/microsoft/xbox/xbox.list` |
-| mihomo | 84 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/microsoft/xbox/xbox.yaml` |
-| quantumultx | 84 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/microsoft/xbox/xbox.list` |
-| shadowrocket | 84 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/microsoft/xbox/xbox.list` |
+| egern | 42 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/microsoft/xbox/xbox.yaml` |
+| loon | 42 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/microsoft/xbox/xbox.list` |
+| mihomo | 42 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/microsoft/xbox/xbox.yaml` |
+| quantumultx | 42 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/microsoft/xbox/xbox.list` |
+| shadowrocket | 42 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/microsoft/xbox/xbox.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/microsoft/xbox/xbox.json` |
-| surge | 84 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/microsoft/xbox/xbox.list` |
+| surge | 42 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/microsoft/xbox/xbox.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

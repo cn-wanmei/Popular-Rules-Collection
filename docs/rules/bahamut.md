@@ -16,14 +16,14 @@
 | Provider | `bahamut` |
 | 规则浏览路径 | `rule/bahamut/bahamut/bahamut.yaml` |
 | 规则数量（_index） | **7** |
-| SHA-256 | `e1c0d8cd605904881f0b12001da4b6ca2bbefe41b95c1b1c4dc3ebf56a46535e` |
+| SHA-256 | `0e548c5b7e9e4f60984e7bbb1ef6a258ef2151fab37adbc680ca3925f5fa1354` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

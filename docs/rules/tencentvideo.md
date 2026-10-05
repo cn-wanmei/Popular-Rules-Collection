@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/tencentvideo/tencentvideo.yaml` |
-| 规则数量（_index） | **64** |
-| SHA-256 | `0aad589a331620fa4047ff2b871fd343824c17ffc58fddae7d666134f11794ac` |
+| 规则数量（_index） | **17** |
+| SHA-256 | `e00e71f1aada5731626fa7423ea419d98e10136d76a8b66badabcf9d558b3bab` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 68 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/tencent/tencentvideo/tencentvideo.yaml` |
-| loon | 68 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/tencent/tencentvideo/tencentvideo.list` |
-| mihomo | 68 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/tencent/tencentvideo/tencentvideo.yaml` |
-| quantumultx | 68 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/tencent/tencentvideo/tencentvideo.list` |
-| shadowrocket | 68 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/tencent/tencentvideo/tencentvideo.list` |
+| egern | 17 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/tencent/tencentvideo/tencentvideo.yaml` |
+| loon | 17 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/tencent/tencentvideo/tencentvideo.list` |
+| mihomo | 17 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/tencent/tencentvideo/tencentvideo.yaml` |
+| quantumultx | 17 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/tencent/tencentvideo/tencentvideo.list` |
+| shadowrocket | 17 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/tencent/tencentvideo/tencentvideo.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/tencent/tencentvideo/tencentvideo.json` |
-| surge | 68 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/tencent/tencentvideo/tencentvideo.list` |
+| surge | 17 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/tencent/tencentvideo/tencentvideo.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

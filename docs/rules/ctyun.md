@@ -16,14 +16,14 @@
 | Provider | `ctyun` |
 | 规则浏览路径 | `rule/ctyun/ctyun/ctyun.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `da37be7f8035da26c3a5cc0f70a839e10b8dd7481ae086f447ab02fdbc351e07` |
+| SHA-256 | `ca2637b9620e2591a061197f54c2f2f6e234f31440808ce24e0eba255eed9c05` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

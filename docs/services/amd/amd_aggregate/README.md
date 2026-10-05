@@ -16,14 +16,14 @@
 | Provider | `amd` |
 | 规则浏览路径 | `rule/amd/amd_aggregate/amd_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `eeb7635f1d0c5dbd0112515e8e08320a65e732909c3f1ae94a1ffc420c0a248e` |
+| SHA-256 | `79c37858ea8a3e79b736dc435baa8d20eb025dd6fa94da92f48d755a3ed626dd` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

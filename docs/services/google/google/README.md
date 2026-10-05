@@ -15,15 +15,15 @@
 | 类型 | provider_aggregate |
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google/google.yaml` |
-| 规则数量（_index） | **1558** |
-| SHA-256 | `5bf00f49f46bee55b503eb931b54892ca4517e06e766d5bf27de11acc6083ce6` |
+| 规则数量（_index） | **1500** |
+| SHA-256 | `f41753c4a0fccf09d9675ae7b0efc63c77a95af1fdfba129ce5208323be84044` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -64,13 +64,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 1548 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/google/google/google.yaml` |
-| loon | 1548 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/google/google/google.list` |
-| mihomo | 1548 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/google/google/google.yaml` |
-| quantumultx | 1548 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/google/google/google.list` |
-| shadowrocket | 1548 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/google/google/google.list` |
+| egern | 1494 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/google/google/google.yaml` |
+| loon | 1494 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/google/google/google.list` |
+| mihomo | 1494 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/google/google/google.yaml` |
+| quantumultx | 1494 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/google/google/google.list` |
+| shadowrocket | 1494 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/google/google/google.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/google/google/google.json` |
-| surge | 1548 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/google/google/google.list` |
+| surge | 1494 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/google/google/google.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

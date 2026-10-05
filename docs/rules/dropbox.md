@@ -16,14 +16,14 @@
 | Provider | `dropbox` |
 | 规则浏览路径 | `rule/dropbox/dropbox/dropbox.yaml` |
 | 规则数量（_index） | **17** |
-| SHA-256 | `f3a847fdd6cc7dce60ab3ec1f50009f60493c013816d2ef2752b6d9121d01a13` |
+| SHA-256 | `aed732cc87bf1ce4a7d653037ea53fcd2c2f596842db95690ce03024596edb9d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

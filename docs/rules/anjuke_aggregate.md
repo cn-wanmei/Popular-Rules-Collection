@@ -16,14 +16,14 @@
 | Provider | `anjuke` |
 | 规则浏览路径 | `rule/anjuke/anjuke_aggregate/anjuke_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `896ef4530bc36b4427ba93d8769640ccb23fd84b2461711f3a4c0a799433f459` |
+| SHA-256 | `d3130f415f92f333438c70530daab97ddd99738cf28495bcb128201d2205e297` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

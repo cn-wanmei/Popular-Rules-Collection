@@ -16,14 +16,14 @@
 | Provider | `garena` |
 | 规则浏览路径 | `rule/garena/garena_aggregate/garena_aggregate.yaml` |
 | 规则数量（_index） | **15** |
-| SHA-256 | `c6adea376650c84e1c44787281ecbd61c4c4df985ca1c0633c0be7d28203fe4b` |
+| SHA-256 | `559e3b19f70aebdec7f190fc0d3c28f8226e8e71976884583fa5bea3b6bd7a4d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

@@ -16,14 +16,14 @@
 | Provider | `kla` |
 | 规则浏览路径 | `rule/kla/kla/kla.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `ea5dc61f555a3c312eab05d7542f564147d356476b69ca53c526c4b5549fed25` |
+| SHA-256 | `e60e3c0aab47144fb117fd8e506fd1f9cab48859f0ee432cd4d0d93de6e2f73d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

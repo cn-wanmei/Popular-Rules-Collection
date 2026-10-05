@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/findmy/findmy.yaml` |
-| 规则数量（_index） | **9** |
-| SHA-256 | `faa88768b484519a0aab4eabe700b48732086e025a48c57d724e3c66d3163bc5` |
+| 规则数量（_index） | **3** |
+| SHA-256 | `e7cd2ba3b4b8b9623e3452b4d6712237cf191e8134dae5f59a4d330c49c0394d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 6 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/apple/findmy/findmy.yaml` |
-| loon | 6 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/apple/findmy/findmy.list` |
-| mihomo | 6 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/apple/findmy/findmy.yaml` |
-| quantumultx | 6 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/apple/findmy/findmy.list` |
-| shadowrocket | 6 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/apple/findmy/findmy.list` |
+| egern | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/apple/findmy/findmy.yaml` |
+| loon | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/apple/findmy/findmy.list` |
+| mihomo | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/apple/findmy/findmy.yaml` |
+| quantumultx | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/apple/findmy/findmy.list` |
+| shadowrocket | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/apple/findmy/findmy.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/apple/findmy/findmy.json` |
-| surge | 6 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/apple/findmy/findmy.list` |
+| surge | 3 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/apple/findmy/findmy.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

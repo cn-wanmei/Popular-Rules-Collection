@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `netflix` |
 | 规则浏览路径 | `rule/netflix/netflix/netflix.yaml` |
-| 规则数量（_index） | **44** |
-| SHA-256 | `1971e94a9053945357c13f7085af82abecf4d4c46c013f8e1edabf4a5ebd537d` |
+| 规则数量（_index） | **31** |
+| SHA-256 | `e06f47acafb0c7589b344b7dc8265bc486a863ceafe3e6608f9ccd9b47dbdc05` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 127 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/netflix/netflix/netflix.yaml` |
-| loon | 123 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/netflix/netflix/netflix.list` |
-| mihomo | 127 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/netflix/netflix/netflix.yaml` |
-| quantumultx | 123 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/netflix/netflix/netflix.list` |
-| shadowrocket | 123 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/netflix/netflix/netflix.list` |
+| egern | 31 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/netflix/netflix/netflix.yaml` |
+| loon | 31 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/netflix/netflix/netflix.list` |
+| mihomo | 31 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/netflix/netflix/netflix.yaml` |
+| quantumultx | 31 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/netflix/netflix/netflix.list` |
+| shadowrocket | 31 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/netflix/netflix/netflix.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/netflix/netflix/netflix.json` |
-| surge | 123 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/netflix/netflix/netflix.list` |
+| surge | 31 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/netflix/netflix/netflix.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

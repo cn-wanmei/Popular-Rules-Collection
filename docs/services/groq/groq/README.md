@@ -16,14 +16,14 @@
 | Provider | `groq` |
 | 规则浏览路径 | `rule/groq/groq/groq.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `1b551a7e99529c3e53073fe35f519f004a81105bd1e854cb485357da72f41ea5` |
+| SHA-256 | `d0cd74457d90a3b61ae5fd5f92a23f181eea19404610d20c8c320bf7cea9a491` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/groq/groq/groq.yaml` |
-| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/groq/groq/groq.list` |
-| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/groq/groq/groq.yaml` |
-| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/groq/groq/groq.list` |
-| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/groq/groq/groq.list` |
+| egern | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/groq/groq/groq.yaml` |
+| loon | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/groq/groq/groq.list` |
+| mihomo | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/groq/groq/groq.yaml` |
+| quantumultx | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/groq/groq/groq.list` |
+| shadowrocket | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/groq/groq/groq.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/groq/groq/groq.json` |
-| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/groq/groq/groq.list` |
+| surge | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/groq/groq/groq.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

@@ -16,14 +16,14 @@
 | Provider | `canva` |
 | 规则浏览路径 | `rule/canva/canva_aggregate/canva_aggregate.yaml` |
 | 规则数量（_index） | **6** |
-| SHA-256 | `3570763b2fe7a6563ace38094aa4919ba4646ce3d353d20c073bf4858b5ddb2a` |
+| SHA-256 | `a30be7625be50e91b4079f70b0cf52f22b1705cb7d10fff3a90b3e77ae301347` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

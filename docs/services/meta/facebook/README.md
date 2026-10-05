@@ -16,14 +16,14 @@
 | Provider | `meta` |
 | 规则浏览路径 | `rule/meta/facebook/facebook.yaml` |
 | 规则数量（_index） | **576** |
-| SHA-256 | `d0e89b9bc50ae1ebaaf5c4200db2f014e39460223a4d1634f4f0b1e04322721d` |
+| SHA-256 | `7d7559c638491a062eedc4e92a4a95eca1ae92b8a9717643b2a4d50fcc8c0b9a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

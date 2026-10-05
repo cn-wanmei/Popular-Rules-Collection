@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `kuwo` |
 | 规则浏览路径 | `rule/kuwo/kuwo/kuwo.yaml` |
-| 规则数量（_index） | **4** |
-| SHA-256 | `a1537be887110d40f70fee449ae8afcf0d75ca3c73b8c20e0ddd731be9d63a9d` |
+| 规则数量（_index） | **1** |
+| SHA-256 | `582dfeb1843b90c4c51713e9745a5940b127a7aa2a3ad3fa86de550e50ea7025` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 4 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/kuwo/kuwo/kuwo.yaml` |
-| loon | 4 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/kuwo/kuwo/kuwo.list` |
-| mihomo | 4 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/kuwo/kuwo/kuwo.yaml` |
-| quantumultx | 4 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/kuwo/kuwo/kuwo.list` |
-| shadowrocket | 4 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/kuwo/kuwo/kuwo.list` |
+| egern | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/kuwo/kuwo/kuwo.yaml` |
+| loon | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/kuwo/kuwo/kuwo.list` |
+| mihomo | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/kuwo/kuwo/kuwo.yaml` |
+| quantumultx | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/kuwo/kuwo/kuwo.list` |
+| shadowrocket | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/kuwo/kuwo/kuwo.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/kuwo/kuwo/kuwo.json` |
-| surge | 4 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/kuwo/kuwo/kuwo.list` |
+| surge | 1 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/kuwo/kuwo/kuwo.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

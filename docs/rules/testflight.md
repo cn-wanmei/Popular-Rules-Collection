@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/testflight/testflight.yaml` |
-| 规则数量（_index） | **8** |
-| SHA-256 | `692d386ef79b244ae04033752013662050db876881c2c4e7f1baa7c3a1a3f5ce` |
+| 规则数量（_index） | **2** |
+| SHA-256 | `3ea244a0c47148247423320f7ed4dc8e6ef4dd921eb53b49d5e55d81a592ed7a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 5 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/apple/testflight/testflight.yaml` |
-| loon | 5 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/apple/testflight/testflight.list` |
-| mihomo | 5 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/apple/testflight/testflight.yaml` |
-| quantumultx | 5 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/apple/testflight/testflight.list` |
-| shadowrocket | 5 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/apple/testflight/testflight.list` |
+| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/apple/testflight/testflight.yaml` |
+| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/apple/testflight/testflight.list` |
+| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/apple/testflight/testflight.yaml` |
+| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/apple/testflight/testflight.list` |
+| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/apple/testflight/testflight.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/apple/testflight/testflight.json` |
-| surge | 5 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/apple/testflight/testflight.list` |
+| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/apple/testflight/testflight.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

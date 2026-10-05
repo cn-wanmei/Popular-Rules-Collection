@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `nintendo` |
 | 规则浏览路径 | `rule/nintendo/nintendo/nintendo.yaml` |
-| 规则数量（_index） | **127** |
-| SHA-256 | `beaa23696d3f4f8e401e2dc2a96e4beac7f14b5551f77daf1d0af477ade6710e` |
+| 规则数量（_index） | **2** |
+| SHA-256 | `7a63390fac19a1a82417b9d0f3d2592f36cb13cbefc7ba2f7df82728579f9503` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 128 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/nintendo/nintendo/nintendo.yaml` |
-| loon | 128 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/nintendo/nintendo/nintendo.list` |
-| mihomo | 128 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/nintendo/nintendo/nintendo.yaml` |
-| quantumultx | 128 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/nintendo/nintendo/nintendo.list` |
-| shadowrocket | 128 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/nintendo/nintendo/nintendo.list` |
+| egern | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/nintendo/nintendo/nintendo.yaml` |
+| loon | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/nintendo/nintendo/nintendo.list` |
+| mihomo | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/nintendo/nintendo/nintendo.yaml` |
+| quantumultx | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/nintendo/nintendo/nintendo.list` |
+| shadowrocket | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/nintendo/nintendo/nintendo.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/nintendo/nintendo/nintendo.json` |
-| surge | 128 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/nintendo/nintendo/nintendo.list` |
+| surge | 2 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/nintendo/nintendo/nintendo.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

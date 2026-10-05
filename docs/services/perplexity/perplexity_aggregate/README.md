@@ -15,15 +15,15 @@
 | 类型 | provider_aggregate |
 | Provider | `perplexity` |
 | 规则浏览路径 | `rule/perplexity/perplexity_aggregate/perplexity_aggregate.yaml` |
-| 规则数量（_index） | **7** |
-| SHA-256 | `490c7e80fd881b0ab2af7fc087b0d9478674e801f6a3450f2b612af8bc5a9b8b` |
+| 规则数量（_index） | **4** |
+| SHA-256 | `76345b55631283cc3e8687694072ef9542c00c73f9937f58fa17754e26758034` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -64,13 +64,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 7 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/perplexity/perplexity_aggregate/perplexity_aggregate.yaml` |
-| loon | 7 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/perplexity/perplexity_aggregate/perplexity_aggregate.list` |
-| mihomo | 7 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/perplexity/perplexity_aggregate/perplexity_aggregate.yaml` |
-| quantumultx | 7 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/perplexity/perplexity_aggregate/perplexity_aggregate.list` |
-| shadowrocket | 7 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/perplexity/perplexity_aggregate/perplexity_aggregate.list` |
+| egern | 4 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/perplexity/perplexity_aggregate/perplexity_aggregate.yaml` |
+| loon | 4 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/perplexity/perplexity_aggregate/perplexity_aggregate.list` |
+| mihomo | 4 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/perplexity/perplexity_aggregate/perplexity_aggregate.yaml` |
+| quantumultx | 4 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/perplexity/perplexity_aggregate/perplexity_aggregate.list` |
+| shadowrocket | 4 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/perplexity/perplexity_aggregate/perplexity_aggregate.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/perplexity/perplexity_aggregate/perplexity_aggregate.json` |
-| surge | 7 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/perplexity/perplexity_aggregate/perplexity_aggregate.list` |
+| surge | 4 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/perplexity/perplexity_aggregate/perplexity_aggregate.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

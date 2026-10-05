@@ -16,14 +16,14 @@
 | Provider | `disney` |
 | 规则浏览路径 | `rule/disney/hulu/hulu.yaml` |
 | 规则数量（_index） | **59** |
-| SHA-256 | `f75c34dc6423277f64979e1c9d7d03d572076f68588934da74182474ebc3972f` |
+| SHA-256 | `4811710625a09eda8ac0366590450b29bd92ca3e2dd54d338e095d22ad231341` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

@@ -16,14 +16,14 @@
 | Provider | `emby` |
 | 规则浏览路径 | `rule/emby/emby/emby.yaml` |
 | 规则数量（_index） | **52** |
-| SHA-256 | `9c821be191e251bdc6c75639db6effedb860ef29335f2a8c348ad2328c365edf` |
+| SHA-256 | `5c97a19b6552666cc4a01cce26dc1093a4f00048a3f203cc4a8208a8ee25bc24` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

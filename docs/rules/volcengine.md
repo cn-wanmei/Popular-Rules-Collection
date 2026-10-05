@@ -16,14 +16,14 @@
 | Provider | `bytedance` |
 | 规则浏览路径 | `rule/bytedance/volcengine/volcengine.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `d91e75ceba4a648a49edc4db88c5b536441172bbf98b692c91093f0d84158f98` |
+| SHA-256 | `f51bb21f959387486ab206c42b1e5485afacafac2646c1afd6853747cc15b1b7` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

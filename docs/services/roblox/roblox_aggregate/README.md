@@ -15,15 +15,15 @@
 | 类型 | provider_aggregate |
 | Provider | `roblox` |
 | 规则浏览路径 | `rule/roblox/roblox_aggregate/roblox_aggregate.yaml` |
-| 规则数量（_index） | **52** |
-| SHA-256 | `10603266414e0b66bfb8dee16459363f5929092dac12e4d036e12934ba58899f` |
+| 规则数量（_index） | **47** |
+| SHA-256 | `e324fcc61d935c35e762a7bee8bd4d8f7b7199bab1032e28abd6cf81c185001d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -64,13 +64,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 52 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/roblox/roblox_aggregate/roblox_aggregate.yaml` |
-| loon | 52 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/roblox/roblox_aggregate/roblox_aggregate.list` |
-| mihomo | 52 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/roblox/roblox_aggregate/roblox_aggregate.yaml` |
-| quantumultx | 52 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/roblox/roblox_aggregate/roblox_aggregate.list` |
-| shadowrocket | 52 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/roblox/roblox_aggregate/roblox_aggregate.list` |
+| egern | 47 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/roblox/roblox_aggregate/roblox_aggregate.yaml` |
+| loon | 47 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/roblox/roblox_aggregate/roblox_aggregate.list` |
+| mihomo | 47 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/roblox/roblox_aggregate/roblox_aggregate.yaml` |
+| quantumultx | 47 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/roblox/roblox_aggregate/roblox_aggregate.list` |
+| shadowrocket | 47 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/roblox/roblox_aggregate/roblox_aggregate.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/roblox/roblox_aggregate/roblox_aggregate.json` |
-| surge | 52 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/roblox/roblox_aggregate/roblox_aggregate.list` |
+| surge | 47 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/roblox/roblox_aggregate/roblox_aggregate.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

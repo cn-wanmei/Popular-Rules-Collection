@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `bytedance` |
 | 规则浏览路径 | `rule/bytedance/tiktok/tiktok.yaml` |
-| 规则数量（_index） | **66** |
-| SHA-256 | `4798ac00da5c703cc640170b4b8b879996ac1ea0dd0b801efee7b8c4dc405e20` |
+| 规则数量（_index） | **29** |
+| SHA-256 | `7691a26036b84f67c65052b7c75dbc5385cd3db6a6bba92d05ba44e56b99f622` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 146 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/bytedance/tiktok/tiktok.yaml` |
-| loon | 146 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/bytedance/tiktok/tiktok.list` |
-| mihomo | 146 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/bytedance/tiktok/tiktok.yaml` |
-| quantumultx | 146 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/bytedance/tiktok/tiktok.list` |
-| shadowrocket | 146 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/bytedance/tiktok/tiktok.list` |
+| egern | 29 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/bytedance/tiktok/tiktok.yaml` |
+| loon | 29 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/bytedance/tiktok/tiktok.list` |
+| mihomo | 29 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/bytedance/tiktok/tiktok.yaml` |
+| quantumultx | 29 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/bytedance/tiktok/tiktok.list` |
+| shadowrocket | 29 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/bytedance/tiktok/tiktok.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/bytedance/tiktok/tiktok.json` |
-| surge | 146 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/bytedance/tiktok/tiktok.list` |
+| surge | 29 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/bytedance/tiktok/tiktok.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

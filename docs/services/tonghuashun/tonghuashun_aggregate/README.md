@@ -16,14 +16,14 @@
 | Provider | `tonghuashun` |
 | 规则浏览路径 | `rule/tonghuashun/tonghuashun_aggregate/tonghuashun_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `d10dfd00a92d64cb43412a4ccec028de400328b8f0efe24c7bd35116569e572b` |
+| SHA-256 | `67f814505268e43f84290a309961a21315460d0155a9772d11bc1ffaea13a8a9` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

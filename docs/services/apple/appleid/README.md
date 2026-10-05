@@ -16,14 +16,14 @@
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/appleid/appleid.yaml` |
 | 规则数量（_index） | **4** |
-| SHA-256 | `c68a045b1de49f8d4420ef6e76b84578e7d16d60c74941d17a7983a92cc8f046` |
+| SHA-256 | `ff8752a73f162d42b5585f980b4d3273e93e4c650b5a0e8b8119485d7a3d0b06` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261004T003708162399Z-run` |
-| IR digest | `d54f85015a463b072c98744dc27b58fef29b5b2bb153425a327f30959c4335a9` |
+| Run ID | `20261005T005107059664Z-run` |
+| IR digest | `07d405e4d2afdadc2a30251cecef3192bcdc1fcb5e17dff9119b2bf5cdcbe174` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
