@@ -42,7 +42,7 @@
 |-------|--------|
 | 浏览服务规则 | [`rule/`](rule/) |
 | 客户端直接使用 | [`generated/`](generated/) |
-| 查服务目录 | [`docs/SERVICE_CATALOG.md`](docs/SERVICE_CATALOG.md) |
+| 查服务目录 | [`docs/SERVICE_CATALOG.generated.md`](docs/SERVICE_CATALOG.generated.md) |
 | 看服务独立说明 | [`docs/services/`](docs/services/) |
 | 查看权威发布状态 | [`PUBLISH_STATUS.md`](PUBLISH_STATUS.md) |
 | 查看 Source → Collection 漏斗 | [`docs/SOURCE_COLLECTION_FUNNEL.md`](docs/SOURCE_COLLECTION_FUNNEL.md) |
@@ -141,7 +141,7 @@ REVIEW → VERIFIED → CANARY → PRODUCTION
 | `rule/` | 人类浏览 / 搜索 / 选择 |
 | `generated/<client>/` | 客户端规则 |
 | `docs/services/` | 服务 / 子服务说明 |
-| `docs/SERVICE_CATALOG.md` | 全量服务目录 |
+| `docs/SERVICE_CATALOG.generated.md` | 全量服务目录 |
 | `sources/` | Source immutable binding / lineage |
 
 `rule/` 与 `generated/` 都属于**派生发行层**。不要手工修补规则数量、SHA-256、Raw URL 或图标路径。
@@ -172,7 +172,7 @@ Collection 的 **Build / Publish** 与 **用户 GitHub Release** 分离：
 | [`docs/PRODUCTION_RULE_CHAIN.md`](docs/PRODUCTION_RULE_CHAIN.md) | 生产规则链 |
 | [`docs/GENERATED_OUTPUTS.md`](docs/GENERATED_OUTPUTS.md) | Generated Outputs |
 | [`docs/NETWORK_DATASETS.md`](docs/NETWORK_DATASETS.md) | Network Dataset |
-| [`docs/SERVICE_CATALOG.md`](docs/SERVICE_CATALOG.md) | 服务目录 |
+| [`docs/SERVICE_CATALOG.generated.md`](docs/SERVICE_CATALOG.generated.md) | 服务目录 |
 | [`docs/SOURCE_COLLECTION_FUNNEL.md`](docs/SOURCE_COLLECTION_FUNNEL.md) | Source → Collection 晋升漏斗 |
 | [`docs/RELEASE_RUNBOOK.md`](docs/RELEASE_RUNBOOK.md) | 发布 Runbook |
 | [`docs/RELEASE_NAMING.md`](docs/RELEASE_NAMING.md) | Release 命名 |
