@@ -1,6 +1,6 @@
 # Ecosystem Release Status (Read Model)
 
-> **AGING OBSERVATION** — observed_at `2026-10-05T15:24:29Z`  
+> **FRESH OBSERVATION** — observed_at `2026-10-06T12:11:50Z`  
 
 > Not SSOT. See `docs/STATE_MODEL.md`.
 
@@ -9,9 +9,9 @@
 
 | Field | Value |
 |-------|-------|
-| observation_status | **AGING OBSERVATION** |
+| observation_status | **FRESH OBSERVATION** |
 | handoff_state | `COMPLETE` |
-| collection_head | `64169c51acfed420b8b02690714c58f4af728b29` |
+| collection_head | `2a4a4014fbbd0382dacb4ba573f7c43ddeb228e4` |
 | source run / seal | `COMPLETE` / `COMPLETE` |
 | icon semantic | `error` |
 | icon freeze | frozen=True freshness=`fresh` |
@@ -22,5 +22,5 @@
 
 | Signal | freshness | age_seconds |
 |--------|-----------|-------------|
-| source_durable_bridge | aging | 105906 |
-| icon_identity_snapshot | aging | 108501 |
+| source_durable_bridge | fresh | 3182 |
+| icon_identity_snapshot | fresh | 83045 |
