@@ -1,43 +1,42 @@
-# Process artifact archive inventory (P1)
+# Process artifact archive inventory
 
-Generated 2026-10-07 as part of P0–P2 audit remediation.
+Updated **2026-10-07** after dependency scan of `build.yml` / `publish.yml` / scripts.
 
 ## Rule
 
-- **Do not delete** any path still referenced by `.github/workflows/*` or active `scripts/` without updating callers in the same PR.
-- Prefer move to `docs/archive/phases/config/` only after `rg` + CI green.
+Do **not** delete or relocate any path still referenced by workflows or production scripts without updating callers in the **same** PR.
 
-## CI-held (must keep on config/ or scripts/ for now)
+## CI-held — KEEP
 
-| Path / script | Referenced by |
-|---------------|---------------|
+| Asset | Consumer |
+|-------|----------|
 | `scripts/phase_j_p0_service_evidence.py` | `build.yml` |
+| `config/p0_materialization.yaml` | phase_j evidence script |
+| `config/p0_service_identity.yaml` | phase_j evidence script |
 | `scripts/p0_batch01_semantic_overlap_audit.py` | `publish.yml` |
-| Related `config/p0_batch01_*` | likely same scripts |
+| `config/p0_batch01_semantic_audit.yaml` | batch01 audit |
+| `config/p0_batch01_overlap_audit.yaml` | batch01 audit |
+| `config/p0_batch01_snapshots/**` | paths in batch01 semantic yaml |
+| `scripts/legacy_*.py` | until `docs/LEGACY_STATUS.md` Phase 8 PASS |
+| `database/` | until Phase 8 PASS |
 
-## Archive candidates (no workflow hit in spot-check; still verify before move)
+## Archive candidates (verify with rg before move)
 
-### Config (process / batch)
+- `config/phase_i_*` … `phase_o_*`, `phase_j_p0_batch_plan.yaml`
+- `config/v1_final_migration_gate.yaml`, `canonical_root_migration.yaml`
+- `config/p0_batch02_*` … `p0_batch04_*` (+ snapshot dirs)
+- `config/p0_geosite_*`, `config/p0_source_*` (except any still imported)
 
-- `canonical_root_migration.yaml`
-- `phase_i_gate_closure.yaml` … `phase_o_r_operational_closure.yaml`
-- `v1_final_migration_gate.yaml`
-- `p0_batch02_*` … `p0_batch04_*` (except any still imported by active scripts)
-- `p0_geosite_*`, `p0_source_bridge_*`, `p0_materialization.yaml`, bridges
-- Snapshot dirs: `p0_batch01_snapshots/`, `p0_batch04_snapshots/`, `p0_geosite_snapshots/`, `p0_source_snapshots/`
+Target: `docs/archive/phases/config/` and `docs/archive/phases/snapshots/`.
 
-### Scripts
+## Completed
 
-List with `ls scripts | rg 'phase_|p0_|legacy_'` before moving. Keep `legacy_*.py` until `docs/LEGACY_STATUS.md` PASS.
-
-## Recommended sequence
-
-1. `rg 'p0_batch|phase_[j-o]|p0_geosite' -g '*.yml' -g '*.py'` on main
-2. Move unreferenced yaml → `docs/archive/phases/config/`
-3. Move snapshot trees → `docs/archive/phases/snapshots/` (or git-rm if pure historical blobs)
-4. CI: build + publish dry paths still pass
-5. Update this file with completion date
+- [x] Root freeze stubs removed (#294)
+- [x] KEEP map locked (this file)
+- [x] Retention weekly dry-run workflow on main
+- [x] entity_coverage_report.py on main
+- [ ] Physical move of archive-candidate trees (optional; large snapshots)
 
 ## Status
 
-- 2026-10-07: inventory only; **no mass move** in this remediation branch (fail-safe).
+2026-10-07: dependency map locked; retention + entity report landed on main.

@@ -1,0 +1,48 @@
+name: Retention
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "If true, run destructive --apply (use with care)"
+        type: boolean
+        default: false
+
+concurrency:
+  group: retention
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: "3.12"
+      - name: Install PyYAML
+        run: python -m pip install --disable-pip-version-check "PyYAML==6.0.2"
+      - name: Retention dry-run
+        if: ${{ github.event_name == 'schedule' || inputs.apply != true }}
+        run: |
+          set -euo pipefail
+          mkdir -p reports
+          python scripts/retention.py --dry-run | tee reports/retention_plan.txt
+      - name: Retention apply
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.apply == true }}
+        run: |
+          set -euo pipefail
+          mkdir -p reports
+          python scripts/retention.py --apply | tee reports/retention_apply.txt
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        if: always()
+        with:
+          name: retention-report
+          path: reports/retention_*.txt
+          if-no-files-found: warn
