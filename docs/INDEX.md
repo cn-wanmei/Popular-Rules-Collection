@@ -27,6 +27,8 @@
 - [SSOT_NUMBERS.md](SSOT_NUMBERS.md) — where numbers live (README must not invent them)
 - [FUNNEL_OPS.md](FUNNEL_OPS.md) — Source health degraded + weekly canary quota
 - [LEGACY_STATUS.md](LEGACY_STATUS.md) — `database/` deletion gate status
+- [RELEASE_PACKAGE_TIMING.md](RELEASE_PACKAGE_TIMING.md) — user GitHub Release packages vs promote
+- [RETENTION_ENFORCEMENT.md](RETENTION_ENFORCEMENT.md) — retention hard schedule checklist
 
 ## Documentation Layer
 - [Schema / contract](schema/DOCUMENTATION_SPEC.yaml)
@@ -41,7 +43,8 @@
 ## Historical / archive
 - [SERVICE_CATALOG.md](SERVICE_CATALOG.md) — **historical snapshot entry** (prefer `.generated.md`)
 - [archive/activation/](archive/activation/)
-- [archive/ROOT_STUBS.md](archive/ROOT_STUBS.md) — root freeze stubs (safe to delete)
+- [archive/ROOT_STUBS.md](archive/ROOT_STUBS.md) — root freeze stubs (removed on this branch)
+- [archive/ARCHIVE_INVENTORY.md](archive/ARCHIVE_INVENTORY.md) — phase/p0 config move inventory
 - [archive/icon-v5/](archive/icon-v5/)
 - [archive/phases/](archive/phases/)
 - [schemas/archive/icon-v5/](../schemas/archive/icon-v5/)
