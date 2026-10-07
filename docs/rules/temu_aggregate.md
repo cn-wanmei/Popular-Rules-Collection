@@ -16,14 +16,14 @@
 | Provider | `temu` |
 | 规则浏览路径 | `rule/temu/temu_aggregate/temu_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `15cc1a799719b7619bbfa26460ff3badee871477937bc46e7236f6d9b1f7094e` |
+| SHA-256 | `e8f163473b36a7ac4ef4110e2ac40e218c7d9bda595f9a9c8afcee7900028477` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261006T022243751086Z-run` |
-| IR digest | `a42640604a1a0556af497d730d7bbf6d9f010743b82086faa56283d2d9f830f6` |
+| Run ID | `20261007T013332647310Z-run` |
+| IR digest | `e18d5456bdfd7e2469f1eea9ca0a046e514a709af67abe54f703b3f0a452e572` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

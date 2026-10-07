@@ -16,14 +16,14 @@
 | Provider | `spacex` |
 | 规则浏览路径 | `rule/spacex/spacex_aggregate/spacex_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `7a577607abebc055ebf7ec12df0ea5eb1c400af13401c9e82919a9ffaed157aa` |
+| SHA-256 | `13a67d08d973e39ef969c539576bdce04c49c0241219855659dbed81b073dbca` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261006T022243751086Z-run` |
-| IR digest | `a42640604a1a0556af497d730d7bbf6d9f010743b82086faa56283d2d9f830f6` |
+| Run ID | `20261007T013332647310Z-run` |
+| IR digest | `e18d5456bdfd7e2469f1eea9ca0a046e514a709af67abe54f703b3f0a452e572` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
