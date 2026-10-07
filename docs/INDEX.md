@@ -26,9 +26,10 @@
 - [BRANCH_PROTECTION.md](BRANCH_PROTECTION.md)
 - [SSOT_NUMBERS.md](SSOT_NUMBERS.md) — where numbers live (README must not invent them)
 - [FUNNEL_OPS.md](FUNNEL_OPS.md) — Source health degraded + weekly canary quota
+- [FUNNEL_DASHBOARD.md](FUNNEL_DASHBOARD.md) — weekly signals checklist
 - [LEGACY_STATUS.md](LEGACY_STATUS.md) — `database/` deletion gate status
 - [RELEASE_PACKAGE_TIMING.md](RELEASE_PACKAGE_TIMING.md) — user GitHub Release packages vs promote
-- [RETENTION_ENFORCEMENT.md](RETENTION_ENFORCEMENT.md) — retention hard schedule checklist
+- [RETENTION_ENFORCEMENT.md](RETENTION_ENFORCEMENT.md) — retention schedule
 
 ## Documentation Layer
 - [Schema / contract](schema/DOCUMENTATION_SPEC.yaml)
@@ -43,10 +44,10 @@
 ## Historical / archive
 - [SERVICE_CATALOG.md](SERVICE_CATALOG.md) — **historical snapshot entry** (prefer `.generated.md`)
 - [archive/activation/](archive/activation/)
-- [archive/ROOT_STUBS.md](archive/ROOT_STUBS.md) — root freeze stubs (removed on this branch)
-- [archive/ARCHIVE_INVENTORY.md](archive/ARCHIVE_INVENTORY.md) — phase/p0 config move inventory
+- [archive/ROOT_STUBS.md](archive/ROOT_STUBS.md) — root freeze stubs removed
+- [archive/ARCHIVE_INVENTORY.md](archive/ARCHIVE_INVENTORY.md) — phase/p0 KEEP vs archive
 - [archive/icon-v5/](archive/icon-v5/)
 - [archive/phases/](archive/phases/)
 - [schemas/archive/icon-v5/](../schemas/archive/icon-v5/)
 
-> Phase / date-stamped planning docs not listed here are historical. Prefer SSOT configs and CI status over narrative status tables.
+> Prefer SSOT configs and CI status over narrative status tables.
