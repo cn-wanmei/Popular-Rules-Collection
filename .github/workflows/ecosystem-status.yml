@@ -14,8 +14,6 @@ concurrency:
   group: ecosystem-status-read-model
   cancel-in-progress: true
 
-permissions:
-  contents: read
 
 jobs:
   generate:
