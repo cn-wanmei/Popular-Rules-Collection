@@ -1,8 +1,8 @@
 {
   "schema": "popular_rules_ecosystem_release_lock_v1",
-  "generated_at": "2026-10-08T10:12:09.028030+00:00",
+  "generated_at": "2026-10-08T11:53:49.362253+00:00",
   "collection": {
-    "commit": "1a081013a1bbd51ea9487f91a37c8bc4a0c1e7eb",
+    "commit": "6d74cd6901c8e8f9316ae97041c7506b07d03181",
     "index_sha256": "f0c64ed367295c17504a0e1f28a3a3bfb5d2a227bd6a93a46d2f8a18474eb2c8",
     "run_id": null
   },
@@ -19,7 +19,7 @@
     "release_id": "icon-2026.10.06.full1",
     "rollback_id": "icon-2026.09.30.clean1",
     "frozen": true,
-    "collection_identity_ref": "bd44d8edb8950867daf296dd4cc72283e45abc2e",
+    "collection_identity_ref": "6d74cd6901c8e8f9316ae97041c7506b07d03181",
     "collection_identity_sha256": "f0c64ed367295c17504a0e1f28a3a3bfb5d2a227bd6a93a46d2f8a18474eb2c8",
     "identity_matches_index": true
   },
