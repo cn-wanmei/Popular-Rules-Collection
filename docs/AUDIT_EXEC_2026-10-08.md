@@ -25,3 +25,17 @@ Verified against live main: SHAs, protection API, size_gate semantics, durable P
 - Full ecosystem-release-lock generation in publish DAG
 - `baidu` Collection identity accept
 - Permissions split read-only vs publish jobs
+
+
+## Wave 2 (continued)
+
+| ID | Action |
+|----|--------|
+| Ecosystem Lock | `scripts/write_ecosystem_release_lock.py` + `publish.yml` step `--require-icon-identity` |
+| Publish Size Gate | Size Gate before fail-closed policy gate |
+| Durable PARTIAL | diagnostic branch `automation/durable-partial/<run_id>` + main only COMPLETE |
+| company_targets | Source = SSOT_AUTHORITY; Collection = SSOT_MIRROR |
+| Identity notify | `notify-icon-identity.yml` (needs `ICON_DISPATCH_TOKEN` for cross-repo) |
+| Icon freeze doc | `docs/FREEZE_VS_IDENTITY.md` |
+
+Still deferred: git volume offload (`data/`/`backup/`), required status checks + mandatory PR, full permissions split, baidu identity accept, auto lock client digests.
