@@ -1,4 +1,4 @@
-"createDate": "2026-10-07-21-57-06",
+"createDate": "2026-10-08-03-17-06",
 "ip_prefix": "1.178.1.0/24",
 "ip_prefix": "1.178.10.0/24",
 "ip_prefix": "1.178.100.0/24",
@@ -32,6 +32,7 @@
 "ip_prefix": "1.178.7.0/24",
 "ip_prefix": "1.178.72.0/21",
 "ip_prefix": "1.178.8.0/24",
+"ip_prefix": "1.178.86.0/24",
 "ip_prefix": "1.178.88.0/24",
 "ip_prefix": "1.178.89.0/24",
 "ip_prefix": "1.178.9.0/24",
@@ -11509,7 +11510,7 @@
 "service": "ROUTE53_RESOLVER",
 "service": "S3",
 "service": "WORKSPACES_GATEWAYS",
-"syncToken": "1791410226",
+"syncToken": "1791429426",
 ]
 ],
 {
