@@ -29,10 +29,10 @@
           "type": "string"
         },
         "run_id": {
-          "type": "string"
-        },
-        "generated_manifest_sha256": {
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         }
       }
     },
@@ -42,12 +42,10 @@
         "repository": {
           "type": "string"
         },
-        "persistence_commit": {
-          "type": "string"
-        },
-        "services": {
-          "type": "object"
-        }
+        "persistence_commit": {},
+        "run_completeness": {},
+        "seal_completeness": {},
+        "persisted_count": {}
       }
     },
     "icon": {
@@ -59,17 +57,13 @@
         "branch": {
           "type": "string"
         },
-        "release_id": {
-          "type": "string"
-        },
-        "manifest_sha256": {
-          "type": "string"
-        },
-        "collection_identity_ref": {
-          "type": "string"
-        },
-        "collection_identity_sha256": {
-          "type": "string"
+        "release_id": {},
+        "rollback_id": {},
+        "frozen": {},
+        "collection_identity_ref": {},
+        "collection_identity_sha256": {},
+        "identity_matches_index": {
+          "type": "boolean"
         }
       }
     },
