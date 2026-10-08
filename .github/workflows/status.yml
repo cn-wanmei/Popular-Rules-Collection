@@ -10,6 +10,9 @@ concurrency:
   group: generated-status
   cancel-in-progress: false
 
+permissions:
+  contents: read
+
 jobs:
   status:
     runs-on: ubuntu-latest
