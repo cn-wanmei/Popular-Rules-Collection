@@ -1,0 +1,27 @@
+{
+  "schema": "popular_rules_ecosystem_release_lock_v1",
+  "generated_at": "2026-10-08T09:46:42.730266+00:00",
+  "collection": {
+    "commit": "unknown",
+    "index_sha256": "f0c64ed367295c17504a0e1f28a3a3bfb5d2a227bd6a93a46d2f8a18474eb2c8",
+    "run_id": null
+  },
+  "source": {
+    "repository": "cn-wanmei/Popular-Rules-Source",
+    "persistence_commit": "a86bf3244101f7f919fd4741bf86dccfcdcf83a2",
+    "run_completeness": "COMPLETE",
+    "seal_completeness": "COMPLETE",
+    "persisted_count": 281
+  },
+  "icon": {
+    "repository": "cn-wanmei/Popular-Rules-Icon",
+    "branch": "dist",
+    "release_id": "icon-2026.10.06.full1",
+    "rollback_id": "icon-2026.09.30.clean1",
+    "frozen": true,
+    "collection_identity_ref": "bd44d8edb8950867daf296dd4cc72283e45abc2e",
+    "collection_identity_sha256": "f0c64ed367295c17504a0e1f28a3a3bfb5d2a227bd6a93a46d2f8a18474eb2c8",
+    "identity_matches_index": true
+  },
+  "clients": {}
+}
