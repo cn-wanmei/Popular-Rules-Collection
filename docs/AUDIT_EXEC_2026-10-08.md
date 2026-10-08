@@ -52,3 +52,18 @@ Still deferred: git volume offload (`data/`/`backup/`), required status checks +
 | Artifact Store migration doc | done |
 | baidu Identity Accept checklist (no entity flip) | done |
 | Retention dry-run dispatch | operator |
+
+
+## Wave 4
+
+| Item | Status |
+|------|--------|
+| Least-privilege: status/docs/ecosystem-status (Collection) | done |
+| Least-privilege: Source status/restore-canary | done |
+| Least-privilege: Icon repair/github-release | done |
+| `verify_ecosystem_release_lock.py` + Validate | done |
+| Scheduled `ecosystem-release-lock.yml` | done |
+| `ICON_DISPATCH_TOKEN.md` setup guide | done |
+| Rulesets (prior wave) | active |
+
+Remaining: human required-PR policy, Artifact Store implementation, baidu product Accept, set ICON_DISPATCH_TOKEN secret in UI.
