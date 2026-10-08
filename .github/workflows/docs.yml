@@ -27,8 +27,6 @@ concurrency:
   group: documentation-layer
   cancel-in-progress: false
 
-permissions:
-  contents: read
 
 jobs:
   docs:
