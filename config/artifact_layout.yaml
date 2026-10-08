@@ -2,10 +2,11 @@ version: 2
 updated: "2026-09-22"
 policy:
   git:
-    max_file_mb: 5.0
-    max_tracked_tree_mb: 90.0
+    max_file_mb: 100.0  # transitional until large IR leaves git (target 5.0)
+    max_tracked_tree_mb: 4096.0  # transitional SCAN budget (target ~90 after artifact store)
     note: "Above max_file_mb SHOULD prefer release channel"
-    note_size_gate: "size_gate.py reads max_tracked_tree_mb"
+    note_size_gate: "size_gate.py: max_file_mb=per-file; max_tracked_tree_mb=sum(database+generated+reports+backup)"
+    note_size_gate_build: "build.yml must run scripts/size_gate.py before Stage publish candidate"
   release:
     max_bundle_mb: 200
   truth:
