@@ -1,0 +1,31 @@
+name: Notify Icon Identity Change
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "rule/_index.yaml"
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: repository_dispatch → Popular-Rules-Icon
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          # default GITHUB_TOKEN cannot dispatch other repos; use if ICON_DISPATCH_TOKEN secret exists
+          TOKEN="${{ secrets.ICON_DISPATCH_TOKEN }}"
+          if [ -z "$TOKEN" ]; then
+            echo "ICON_DISPATCH_TOKEN not set — skip cross-repo dispatch (schedule identity-freshness still runs)"
+            exit 0
+          fi
+          curl -fsSL -X POST \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/dispatches \
+            -d '{"event_type":"collection-identity-changed","client_payload":{"collection_sha":"${{ github.sha }}"}}'
+          echo "dispatched collection-identity-changed"
