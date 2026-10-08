@@ -9,17 +9,18 @@
 | `config/p0_service_identity.yaml` | phase_j |
 | `scripts/p0_batch01_semantic_overlap_audit.py` | `publish.yml` |
 | `config/p0_batch01_*` + snapshots | batch01 |
+| **`config/p0_batch02_*`** (membership/semantic/overlap/source_evidence) | repository tests / evidence gate |
+| **`config/p0_batch03_*`** (membership/semantic/overlap/source_evidence) | repository tests / evidence gate (28 services) |
 | **`config/v1_final_migration_gate.yaml`** | `tests/engine/test_v1_final_migration_gate.py` + Phase 8 |
 | `scripts/legacy_*.py` / `database/` | until Phase 8 PASS |
 
-## Removed from config/ (2026-10-08)
+## Incident 2026-10-08
 
-See [phases/ARCHIVED_2026-10-08.md](phases/ARCHIVED_2026-10-08.md). Recover via git history.
+Premature archive of `v1_final_migration_gate` + batch02/03 caused Unit Tests + Engine failures.
+Restored on main: `921a6535` (gate), `bc29c93a` (overlap), `77e77de9` (membership/semantic/source_evidence).
 
-**Mistake corrected:** `v1_final_migration_gate.yaml` was briefly deleted; **restored** on main (`921a6535`).
+## Optional later
 
-## Still optional
-
-- Remaining `p0_batch03_*` / `p0_batch04_*` / `p0_geosite_*` yaml if present and not referenced by tests
-- Snapshot trees under `config/p0_*_snapshots/` (except batch01)
+- batch04 / geosite process yaml only after confirming no test/script readers
+- Snapshot trees except batch01
 - Delete stale remote branches `chore/p0-p2-*`
