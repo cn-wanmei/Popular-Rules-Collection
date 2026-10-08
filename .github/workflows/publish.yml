@@ -23,6 +23,7 @@ jobs:
     permissions:
       contents: write
       actions: write
+      # publish job is mutation path; validation workflows stay contents:read
     steps:
       - name: Checkout build commit
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
@@ -130,6 +131,9 @@ jobs:
           test -d release-candidate/rule
           test -s release-candidate/generated/manifest.json
           test -s release-candidate/data/baseline/canonical.json
+
+      - name: Size Gate
+        run: python scripts/size_gate.py
 
       - name: Publish fail-closed policy gate
         run: python scripts/publish_fail_closed_gate.py --workflow .github/workflows/publish.yml --status-workflow .github/workflows/status.yml
@@ -270,6 +274,24 @@ jobs:
 
       # Docs primary path: workflow_run on success. Explicit dispatch is best-effort
       # without continue-on-error (forbidden by publish_fail_closed_gate).
+      - name: Write ecosystem release lock
+        shell: bash
+        run: |
+          set -euo pipefail
+          RUN_ID=$(cat release-candidate/run-id.txt 2>/dev/null || true)
+          PYTHONPATH=. python scripts/write_ecosystem_release_lock.py \
+            --run-id "${RUN_ID:-}" \
+            --require-icon-identity
+          git add -f reports/ecosystem-release-lock.json || true
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "chore(lock): ecosystem-release-lock for run ${RUN_ID:-unknown}"
+            # publish job may already have pushed; best-effort second commit
+            git pull --rebase origin HEAD || true
+            git push origin HEAD || echo "WARN: lock commit push deferred"
+          fi
+
       - name: Trigger Documentation Layer
         if: success()
         shell: bash
