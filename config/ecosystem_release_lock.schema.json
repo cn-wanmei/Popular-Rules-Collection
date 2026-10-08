@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "popular_rules_ecosystem_release_lock_v1",
+  "type": "object",
+  "required": [
+    "schema",
+    "collection",
+    "source",
+    "icon"
+  ],
+  "properties": {
+    "schema": {
+      "const": "popular_rules_ecosystem_release_lock_v1"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "collection": {
+      "type": "object",
+      "required": [
+        "commit",
+        "index_sha256"
+      ],
+      "properties": {
+        "commit": {
+          "type": "string"
+        },
+        "index_sha256": {
+          "type": "string"
+        },
+        "run_id": {
+          "type": "string"
+        },
+        "generated_manifest_sha256": {
+          "type": "string"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "repository": {
+          "type": "string"
+        },
+        "persistence_commit": {
+          "type": "string"
+        },
+        "services": {
+          "type": "object"
+        }
+      }
+    },
+    "icon": {
+      "type": "object",
+      "properties": {
+        "repository": {
+          "type": "string"
+        },
+        "branch": {
+          "type": "string"
+        },
+        "release_id": {
+          "type": "string"
+        },
+        "manifest_sha256": {
+          "type": "string"
+        },
+        "collection_identity_ref": {
+          "type": "string"
+        },
+        "collection_identity_sha256": {
+          "type": "string"
+        }
+      }
+    },
+    "clients": {
+      "type": "object"
+    }
+  }
+}
