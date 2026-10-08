@@ -1,3 +1,7 @@
+# NOTE (2026-10-08 audit): prs.enabled/canary.enabled below are LEGACY Collection-side
+# switch fields and do NOT reflect live Source lifecycle (canary/production counts live
+# in Popular-Rules-Source config/source_canary_state.yaml). Treat this file as promotion
+# *requirements checklist* only; do not infer "canary off" from enabled:false.
 version: 2
 project: phase2-source-canary
 
