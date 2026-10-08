@@ -8,8 +8,6 @@ on:
 
 jobs:
   refresh:
-    permissions:
-      contents: write
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -36,5 +34,5 @@ jobs:
             exit 0
           fi
           git commit -m "chore(lock): refresh ecosystem-release-lock [skip ci]"
-          git pull --rebase origin main || true
+          git pull --rebase origin main
           git push origin HEAD:main
