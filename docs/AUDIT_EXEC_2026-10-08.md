@@ -39,3 +39,16 @@ Verified against live main: SHAs, protection API, size_gate semantics, durable P
 | Icon freeze doc | `docs/FREEZE_VS_IDENTITY.md` |
 
 Still deferred: git volume offload (`data/`/`backup/`), required status checks + mandatory PR, full permissions split, baidu identity accept, auto lock client digests.
+
+
+## Wave 3
+
+| Item | Status |
+|------|--------|
+| Lock enrichment (Source durable + Icon freeze) | done |
+| Seed `reports/ecosystem-release-lock.json` | done |
+| `company_targets_parity_gate` + Validate | done |
+| Source generate.yml least-privilege | done |
+| Artifact Store migration doc | done |
+| baidu Identity Accept checklist (no entity flip) | done |
+| Retention dry-run dispatch | operator |
