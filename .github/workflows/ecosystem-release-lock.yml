@@ -5,11 +5,11 @@ on:
     - cron: "30 7 * * *"
   workflow_dispatch:
 
-permissions:
-  contents: read
 
 jobs:
   refresh:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     permissions:
       contents: write
