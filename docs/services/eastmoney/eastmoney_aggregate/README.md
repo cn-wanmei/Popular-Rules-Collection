@@ -16,14 +16,14 @@
 | Provider | `eastmoney` |
 | 规则浏览路径 | `rule/eastmoney/eastmoney_aggregate/eastmoney_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `fbc25ef715adf4c32cadd017d895513afc9cd6f3811ae79a4292f715d42f49d0` |
+| SHA-256 | `01268592537d44c967843e9cd25e330c8bd46c20df84cc33622a750b4436ee2a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261007T013332647310Z-run` |
-| IR digest | `e18d5456bdfd7e2469f1eea9ca0a046e514a709af67abe54f703b3f0a452e572` |
+| Run ID | `20261008T015648215159Z-run` |
+| IR digest | `966ab1ab2b4379e2bcfbf31470ecd770c4469d698be4bfaaa709ac490f428e24` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

@@ -16,14 +16,14 @@
 | Provider | `twitter` |
 | 规则浏览路径 | `rule/twitter/twitter_aggregate/twitter_aggregate.yaml` |
 | 规则数量（_index） | **34** |
-| SHA-256 | `baec8a8fccf9efe26744eff5c6690c2a13040b13b5d60bac2f9a0a81113e8f14` |
+| SHA-256 | `b84189c0d6630675f7e74a47aa01d43498b1e2b26ae3d8eef1b6dc7f777ae2b5` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261007T013332647310Z-run` |
-| IR digest | `e18d5456bdfd7e2469f1eea9ca0a046e514a709af67abe54f703b3f0a452e572` |
+| Run ID | `20261008T015648215159Z-run` |
+| IR digest | `966ab1ab2b4379e2bcfbf31470ecd770c4469d698be4bfaaa709ac490f428e24` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

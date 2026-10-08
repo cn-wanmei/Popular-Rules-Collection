@@ -14,14 +14,14 @@
 | Provider | `ookla` |
 | 规则浏览路径 | `rule/ookla/ookla_aggregate/ookla_aggregate.yaml` |
 | 规则数量（_index） | **8** |
-| SHA-256 | `f8252806bf5f8df42f3abed03ebea838256f540cfc347963ab9245a2aba37272` |
+| SHA-256 | `bcf1205cb776605eacc0f38b0387c2f5cc38b26e71d68688c8a5061d68cdc9ea` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261007T013332647310Z-run` |
-| IR digest | `e18d5456bdfd7e2469f1eea9ca0a046e514a709af67abe54f703b3f0a452e572` |
+| Run ID | `20261008T015648215159Z-run` |
+| IR digest | `966ab1ab2b4379e2bcfbf31470ecd770c4469d698be4bfaaa709ac490f428e24` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

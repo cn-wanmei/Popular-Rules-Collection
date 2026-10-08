@@ -16,14 +16,14 @@
 | Provider | `take2` |
 | 规则浏览路径 | `rule/take2/take2/take2.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `ae0027003b925e42a7de231602e9ed06aa8441c1e26ce45f32aa2c641bcf998d` |
+| SHA-256 | `21f52882cb511962a20f51240e4d690b6b3f9b3ea85a6e9f1834f51f5b886fc8` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261007T013332647310Z-run` |
-| IR digest | `e18d5456bdfd7e2469f1eea9ca0a046e514a709af67abe54f703b3f0a452e572` |
+| Run ID | `20261008T015648215159Z-run` |
+| IR digest | `966ab1ab2b4379e2bcfbf31470ecd770c4469d698be4bfaaa709ac490f428e24` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

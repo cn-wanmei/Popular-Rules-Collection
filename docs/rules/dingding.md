@@ -16,14 +16,14 @@
 | Provider | `alibaba` |
 | 规则浏览路径 | `rule/alibaba/dingding/dingding.yaml` |
 | 规则数量（_index） | **3** |
-| SHA-256 | `a1200387f2152915949989eb944a2c95a95ee3e6d14807d935ac24011288e3c6` |
+| SHA-256 | `669c1e42a2f4e60d1498e7acede74cf996ff1e7c2733430ccff2205560be45f3` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261007T013332647310Z-run` |
-| IR digest | `e18d5456bdfd7e2469f1eea9ca0a046e514a709af67abe54f703b3f0a452e572` |
+| Run ID | `20261008T015648215159Z-run` |
+| IR digest | `966ab1ab2b4379e2bcfbf31470ecd770c4469d698be4bfaaa709ac490f428e24` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

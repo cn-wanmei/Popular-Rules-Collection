@@ -16,14 +16,14 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google-forms/google-forms.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `39b004ec1ff7fb5b765b7d1480803d07f662e5fa1a654edde511becc37292a4b` |
+| SHA-256 | `3b3ab8bf8f4413dac0e12721ab009d94e535172be47527c119ff66b4e890a0ae` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261007T013332647310Z-run` |
-| IR digest | `e18d5456bdfd7e2469f1eea9ca0a046e514a709af67abe54f703b3f0a452e572` |
+| Run ID | `20261008T015648215159Z-run` |
+| IR digest | `966ab1ab2b4379e2bcfbf31470ecd770c4469d698be4bfaaa709ac490f428e24` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

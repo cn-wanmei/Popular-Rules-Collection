@@ -16,14 +16,14 @@
 | Provider | `lamresearch` |
 | 规则浏览路径 | `rule/lamresearch/lamresearch_aggregate/lamresearch_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `096a74faf6e985c640694010d106446f48f0eb9c97e74869e458f2b04a84dcd8` |
+| SHA-256 | `8c61a86d82849e27b5020bc21835ab3d26a529082f4a3cddcfd832311c3886f5` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261007T013332647310Z-run` |
-| IR digest | `e18d5456bdfd7e2469f1eea9ca0a046e514a709af67abe54f703b3f0a452e572` |
+| Run ID | `20261008T015648215159Z-run` |
+| IR digest | `966ab1ab2b4379e2bcfbf31470ecd770c4469d698be4bfaaa709ac490f428e24` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

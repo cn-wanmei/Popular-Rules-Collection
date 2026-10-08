@@ -16,14 +16,14 @@
 | Provider | `schneider` |
 | 规则浏览路径 | `rule/schneider/schneider/schneider.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `0b5e15ebec1c7646c973f5bedde3290b2768d55ad3e5f8f62d6883ad846dd587` |
+| SHA-256 | `fe01dab2399ce800d3719a8c3424213c6336d090bcc7fbe863defafed20d5484` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261007T013332647310Z-run` |
-| IR digest | `e18d5456bdfd7e2469f1eea9ca0a046e514a709af67abe54f703b3f0a452e572` |
+| Run ID | `20261008T015648215159Z-run` |
+| IR digest | `966ab1ab2b4379e2bcfbf31470ecd770c4469d698be4bfaaa709ac490f428e24` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

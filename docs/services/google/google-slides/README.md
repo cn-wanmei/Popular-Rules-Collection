@@ -16,14 +16,14 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/google-slides/google-slides.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `8f7d1771aff1d20c9be1954f644ff1352521644ce4ff339c5ce511aa6998d675` |
+| SHA-256 | `84e075ed227096c9030f285376d5d57e894a3690482f139c9ce4caeca8145a9d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261007T013332647310Z-run` |
-| IR digest | `e18d5456bdfd7e2469f1eea9ca0a046e514a709af67abe54f703b3f0a452e572` |
+| Run ID | `20261008T015648215159Z-run` |
+| IR digest | `966ab1ab2b4379e2bcfbf31470ecd770c4469d698be4bfaaa709ac490f428e24` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
