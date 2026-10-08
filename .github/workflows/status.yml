@@ -13,8 +13,6 @@ concurrency:
 
 jobs:
   status:
-    permissions:
-      contents: write
     runs-on: ubuntu-latest
     permissions:
       contents: write
