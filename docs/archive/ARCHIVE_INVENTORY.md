@@ -1,6 +1,6 @@
 # Process artifact archive inventory
 
-## CI-held — KEEP (do not move)
+## CI-held — KEEP
 
 | Asset | Consumer |
 |-------|----------|
@@ -8,23 +8,15 @@
 | `config/p0_materialization.yaml` | phase_j |
 | `config/p0_service_identity.yaml` | phase_j |
 | `scripts/p0_batch01_semantic_overlap_audit.py` | `publish.yml` |
-| `config/p0_batch01_semantic_audit.yaml` | batch01 |
-| `config/p0_batch01_overlap_audit.yaml` | batch01 |
-| `config/p0_batch01_snapshots/**` | batch01 |
+| `config/p0_batch01_*` + snapshots | batch01 |
 | `scripts/legacy_*.py` / `database/` | until Phase 8 PASS |
 
-## Optional physical move
+## Removed from config/ (2026-10-08)
 
-```bash
-bash scripts/archive_phase_candidates.sh
-# then: verify, commit, push
-```
+See [phases/ARCHIVED_2026-10-08.md](phases/ARCHIVED_2026-10-08.md). Recover via git history.
 
-## Landed on main (2026-10-07)
+## Still optional
 
-- [x] Root stubs removed (#294)
-- [x] KEEP map + inventory
-- [x] `retention.yml` weekly dry-run
-- [x] `entity_coverage_report.py`
-- [x] `FUNNEL_DASHBOARD.md`
-- [x] Optional archive runner script
+- Remaining `p0_batch03_*` / `p0_batch04_*` / `p0_geosite_*` yaml if still present
+- Snapshot trees under `config/p0_*_snapshots/` (except batch01)
+- Delete stale remote branches `chore/p0-p2-*`
