@@ -9,18 +9,27 @@
 | `config/p0_service_identity.yaml` | phase_j |
 | `scripts/p0_batch01_semantic_overlap_audit.py` | `publish.yml` |
 | `config/p0_batch01_*` + snapshots | batch01 |
-| **`config/p0_batch02_*`** (membership/semantic/overlap/source_evidence) | repository tests / evidence gate |
-| **`config/p0_batch03_*`** (membership/semantic/overlap/source_evidence) | repository tests / evidence gate (28 services) |
-| **`config/v1_final_migration_gate.yaml`** | `tests/engine/test_v1_final_migration_gate.py` + Phase 8 |
+| **`config/p0_batch02_*`** | repository tests / evidence gate |
+| **`config/p0_batch03_*`** | repository tests / evidence gate (28 services) |
+| **`config/v1_final_migration_gate.yaml`** | Phase 8 + unit tests |
 | `scripts/legacy_*.py` / `database/` | until Phase 8 PASS |
 
-## Incident 2026-10-08
+## Deferred (do not delete until local `pytest` + `rg` pass)
 
-Premature archive of `v1_final_migration_gate` + batch02/03 caused Unit Tests + Engine failures.
-Restored on main: `921a6535` (gate), `bc29c93a` (overlap), `77e77de9` (membership/semantic/source_evidence).
+| Asset | Reason |
+|-------|--------|
+| `config/p0_batch04_*` + `p0_batch04_snapshots/` | Process batch; no hard CI path found in phase_j/batch01 scripts, but **do not archive without full-repo grep + Unit Tests green** (2026-10-08 incident) |
+| `config/p0_geosite_*` + snapshots | Large process artifacts; same gate |
+| `config/p0_source_bridge_*` | Bridge process |
+| `config/p0_source_snapshots/` (non-batch01) | Shared by batch evidence paths — treat as KEEP until proven unused |
 
-## Optional later
+## Ops 2026-10-08
 
-- batch04 / geosite process yaml only after confirming no test/script readers
-- Snapshot trees except batch01
-- Delete stale remote branches `chore/p0-p2-*`
+- CI restored: Unit Tests + Engine v3 **success** @ `77e77de9`
+- Stale branches `chore/p0-p2-*` deleted
+- Collect Upstream dispatched (refresh degraded health)
+- Retention workflow dispatched (dry-run schedule path)
+
+## Incident note
+
+Premature archive of CI-held configs caused multi-run failures. Prefer soft-move only after KEEP table update + CI green.
