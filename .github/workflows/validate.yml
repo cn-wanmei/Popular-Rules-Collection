@@ -35,6 +35,9 @@ jobs:
       - name: Architecture Gate
         run: python scripts/architecture_gate.py
 
+      - name: Company targets parity (Source SSOT)
+        run: python scripts/company_targets_parity_gate.py
+
       - name: Naming gate
         run: PYTHONPATH=. python -m src.engine.cli naming_gate
 
