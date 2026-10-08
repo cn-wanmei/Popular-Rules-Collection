@@ -16,6 +16,8 @@ Generated at: `2026-10-07T01:32:58.114497Z`
 - Root: `backup/2026-10-07`
 
 ### Source health
+- Scope: Collection `sources/health.yaml` telemetry (subset); **not** full Source repo lifecycle count
+- Details: `reports/source_health_status.yaml` · triage: `docs/FUNNEL_TRIAGE.md`
 - `degraded`: 4
 - `healthy`: 6
 
@@ -28,11 +30,11 @@ Generated at: `2026-10-07T01:32:58.114497Z`
 - singbox: `generated/singbox`
 - surge: `generated/surge`
 
-
 ### Retention
 - Policy: `config/retention.yaml`
 - Backup keep_days: `30`
 - Release evidence keep_days: `180`
+- Workflow: `.github/workflows/retention.yml` (weekly dry-run)
 
 <!-- AUTO-GENERATED:END -->
 ## Human Notes
@@ -42,3 +44,11 @@ Generated at: `2026-10-07T01:32:58.114497Z`
 ### Operational note
 
 不要以单次 CI 失败直接判断已发布规则失效。当前生产状态应以 GitHub Actions、最近成功的 Collection/Build/Publish 及其 immutable evidence 为准。
+
+### Source health scope
+
+`degraded` / `healthy` 计数来自 **本仓** `sources/health.yaml`（Collect telemetry），不是 Source 仓全量 lifecycle（见 Source README 摘要与 `reports/generated/lifecycle.json`）。分诊：[`docs/FUNNEL_TRIAGE.md`](docs/FUNNEL_TRIAGE.md)。
+
+### Icon pointer
+
+Collection pins must match Icon `release-pointers.yaml`. Gate: `python scripts/check_icon_pointers.py`. Sync runbook: [`docs/ICON_POINTER_SYNC.md`](docs/ICON_POINTER_SYNC.md).

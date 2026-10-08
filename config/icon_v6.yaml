@@ -1,17 +1,17 @@
-# Final V5 retirement gate: runtime removed
-# Icon System 6.0 — Collection provider
+# Icon System 6.0 — Collection provider (consumer of Icon release-pointers)
 schema: icon_system_v6_provider
-version: "1.3.0"
-updated: "2026-09-30"
+version: "1.3.1"
+updated: "2026-10-07"
 
 provider: v6
 
 v6:
   repo: cn-wanmei/Popular-Rules-Icon
   branch: dist
-  release_id: icon-2026.09.30.clean1
+  # MUST match Icon config/release-pointers.yaml production (enforced by check_icon_pointers.py)
+  release_id: icon-2026.10.06.full1
   path_template: "v/{variant_hash}.png"
-  manifest_path: manifests/icon-2026.09.30.clean1.json
+  manifest_path: manifests/icon-2026.10.06.full1.json
   mirrors:
     raw: "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/{path}"
     jsdelivr: "https://cdn.jsdelivr.net/gh/cn-wanmei/Popular-Rules-Icon@dist/{path}"
@@ -20,6 +20,7 @@ v6:
   canonical_collection:
     repository: cn-wanmei/Popular-Rules-Collection
     path: rule/_index.yaml
+    # informational; authoritative count is rule/_index entity:service + entity_coverage_report.py
     service_count: 394
   current_dist:
     manifest_entries: 394
@@ -32,13 +33,13 @@ rollback:
   provider: v6
   repo: cn-wanmei/Popular-Rules-Icon
   branch: dist
-  release_id: icon-2026.09.30.clean1-rb1
-  manifest_path: manifests/icon-2026.09.30.clean1-rb1.json
+  # MUST match Icon config/release-pointers.yaml rollback
+  release_id: icon-2026.09.30.clean1
+  manifest_path: manifests/icon-2026.09.30.clean1.json
   dependency: "Popular-Rules-Icon immutable V6 release only"
 
 notes: |
   V6 is the sole production icon provider.
   Collection owns canonical service identity; Icon Registry consumes it.
-  Production: icon-2026.09.30.clean1.
-  Rollback: icon-2026.09.30.clean1-rb1.
-  V5 fallback is disabled and the Collection V5 physical asset tree has been deleted after the retirement gate.
+  Production/rollback IDs are mirrored from Icon release-pointers.yaml.
+  V5 fallback is disabled.

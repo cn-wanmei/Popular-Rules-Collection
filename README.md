@@ -56,9 +56,10 @@
 |------|----------|------|
 | Canonical service identity | [`rule/_index.yaml`](rule/_index.yaml) | `service_id` / 服务目录身份 |
 | Collection 发布状态 | [`PUBLISH_STATUS.md`](PUBLISH_STATUS.md) | CI 生成 |
-| Source lifecycle | [`config/source_canary_state.yaml`](config/source_canary_state.yaml) | Source 侧状态，**不等同于** Collection Production |
+| Source lifecycle | [Source `config/source_canary_state.yaml`](https://github.com/cn-wanmei/Popular-Rules-Source/blob/main/config/source_canary_state.yaml) | **在 Source 仓**；≠ Collection Production |
 | Immutable Source binding | [`sources/immutable_registry.yaml`](sources/immutable_registry.yaml) | Source → Collection 精确绑定 |
 | Icon production | [Icon `config/release-pointers.yaml`](https://github.com/cn-wanmei/Popular-Rules-Icon/blob/main/config/release-pointers.yaml) | Icon V6 production / rollback |
+| Collection Icon 消费钉扎 | [`config/icon_v6.yaml`](config/icon_v6.yaml) | 须与 Icon production 一致（`check_icon_pointers`） |
 | 客户端生成物 | [`generated/`](generated/) | 派生发行物 |
 
 > **Source lifecycle ≠ Collection Production**  
@@ -92,15 +93,7 @@ Publish
 generated/
 ```
 
-### 状态语义
-
-```text
-REVIEW → VERIFIED → CANARY → PRODUCTION
-                    ↘
-                     BLOCKED
-```
-
-完整规则见 [`docs/SOURCE_COLLECTION_FUNNEL.md`](docs/SOURCE_COLLECTION_FUNNEL.md)。
+完整规则见 [`docs/SOURCE_COLLECTION_FUNNEL.md`](docs/SOURCE_COLLECTION_FUNNEL.md)。运维分诊见 [`docs/FUNNEL_TRIAGE.md`](docs/FUNNEL_TRIAGE.md)。
 
 ---
 
@@ -111,10 +104,10 @@ REVIEW → VERIFIED → CANARY → PRODUCTION
 | 状态域 | 权威入口 |
 |--------|----------|
 | Collection snapshot | [`PUBLISH_STATUS.md`](PUBLISH_STATUS.md) |
-| Source health | [`PUBLISH_STATUS.md`](PUBLISH_STATUS.md) |
+| Source health（本仓 telemetry 子集） | [`PUBLISH_STATUS.md`](PUBLISH_STATUS.md) · [`docs/FUNNEL_TRIAGE.md`](docs/FUNNEL_TRIAGE.md) |
 | Active Source bindings | [`sources/immutable_registry.yaml`](sources/immutable_registry.yaml) |
 | Canonical services | [`rule/_index.yaml`](rule/_index.yaml) |
-| Icon V6 pointer | [Icon `config/release-pointers.yaml`](https://github.com/cn-wanmei/Popular-Rules-Icon/blob/main/config/release-pointers.yaml) |
+| Icon V6 pointer | [Icon `release-pointers`](https://github.com/cn-wanmei/Popular-Rules-Icon/blob/main/config/release-pointers.yaml) · 同步手册 [`docs/ICON_POINTER_SYNC.md`](docs/ICON_POINTER_SYNC.md) |
 | 发布操作手册 | [`docs/RELEASE_RUNBOOK.md`](docs/RELEASE_RUNBOOK.md) |
 
 ---
@@ -168,15 +161,11 @@ Collection 的 **Build / Publish** 与 **用户 GitHub Release** 分离：
 | 文档 | 用途 |
 |------|------|
 | [`docs/INDEX.md`](docs/INDEX.md) | 文档索引 |
-| [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) | 架构说明 |
-| [`docs/PRODUCTION_RULE_CHAIN.md`](docs/PRODUCTION_RULE_CHAIN.md) | 生产规则链 |
-| [`docs/GENERATED_OUTPUTS.md`](docs/GENERATED_OUTPUTS.md) | Generated Outputs |
-| [`docs/NETWORK_DATASETS.md`](docs/NETWORK_DATASETS.md) | Network Dataset |
-| [`docs/SERVICE_CATALOG.generated.md`](docs/SERVICE_CATALOG.generated.md) | 服务目录 |
-| [`docs/SOURCE_COLLECTION_FUNNEL.md`](docs/SOURCE_COLLECTION_FUNNEL.md) | Source → Collection 晋升漏斗 |
+| [`docs/SSOT_NUMBERS.md`](docs/SSOT_NUMBERS.md) | 数字口径 |
+| [`docs/ICON_POINTER_SYNC.md`](docs/ICON_POINTER_SYNC.md) | Icon 指针同步 |
+| [`docs/FUNNEL_TRIAGE.md`](docs/FUNNEL_TRIAGE.md) | degraded / REVIEW 分诊 |
+| [`docs/SOURCE_COLLECTION_FUNNEL.md`](docs/SOURCE_COLLECTION_FUNNEL.md) | Source → Collection 漏斗 |
 | [`docs/RELEASE_RUNBOOK.md`](docs/RELEASE_RUNBOOK.md) | 发布 Runbook |
-| [`docs/RELEASE_NAMING.md`](docs/RELEASE_NAMING.md) | Release 命名 |
-| [`docs/ACTIONS_SHA_PIN.md`](docs/ACTIONS_SHA_PIN.md) | Actions SHA 钉扎合同 |
 
 ---
 
@@ -189,11 +178,9 @@ Collection 的 **Build / Publish** 与 **用户 GitHub Release** 分离：
 
 ```text
 Popular-Rules-Source
-        │
         │ Durable Seal / Handoff
         ▼
 Popular-Rules-Collection
-        │
         │ Canonical Identity
         ▼
 Popular-Rules-Icon

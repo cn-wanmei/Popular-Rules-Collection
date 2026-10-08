@@ -63,6 +63,7 @@ def render() -> str:
     for item in health_sources.values():
         status = str(item.get("status", "unknown"))
         counts[status] = counts.get(status, 0) + 1
+    tracked = sum(counts.values())
 
     clients = formats.get("clients", {}) if isinstance(formats, dict) else {}
     outputs: list[str] = []
@@ -86,6 +87,8 @@ def render() -> str:
         f"- Root: `{collection.get('root', 'unknown')}`",
         "",
         "### Source health",
+        f"- Scope: Collection `sources/health.yaml` telemetry ({tracked} sources); **not** full Source repo lifecycle count",
+        f"- Details: `reports/source_health_status.yaml` · triage: `docs/FUNNEL_TRIAGE.md`",
     ]
     for key in sorted(counts):
         lines.append(f"- `{key}`: {counts[key]}")
@@ -99,6 +102,7 @@ def render() -> str:
         f"- Policy: `{RETENTION.relative_to(ROOT)}`",
         f"- Backup keep_days: `{retention.get('backup', {}).get('keep_days', 'unknown') if isinstance(retention, dict) else 'unknown'}`",
         f"- Release evidence keep_days: `{retention.get('release_evidence', {}).get('keep_days', 'unknown') if isinstance(retention, dict) else 'unknown'}`",
+        f"- Workflow: `.github/workflows/retention.yml` (weekly dry-run)",
         "",
         END,
     ]
