@@ -3,7 +3,7 @@
 
 # Apple Podcasts — 分流规则说明
 
-> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.10.06.full1`。
 > `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
 
 ## 1. 服务基本信息
@@ -29,7 +29,7 @@
 ## 3. 图标（Icon System 6.0）
 
 - Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
-- Release：`icon-2026.09.30.clean1`
+- Release：`icon-2026.10.06.full1`
 - 默认：`source_original` @ 256px
 - Object：`v/abd4ab880f99fd6752737e2cb047287bb32b06b1c4596a38c74226d870e79967.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/abd4ab880f99fd6752737e2cb047287bb32b06b1c4596a38c74226d870e79967.png`

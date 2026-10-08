@@ -3,7 +3,7 @@
 
 # Toutiao — 分流规则说明
 
-> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.10.06.full1`。
 > `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
 
 ## 1. 服务基本信息
@@ -29,7 +29,7 @@
 ## 3. 图标（Icon System 6.0）
 
 - Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
-- Release：`icon-2026.09.30.clean1`
+- Release：`icon-2026.10.06.full1`
 - 默认：`source_original` @ 256px
 - Object：`v/567b2b5bc2278ba8702d1e30d1241c1baefaccf2bf4ed655b6af78d2acb38d49.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/567b2b5bc2278ba8702d1e30d1241c1baefaccf2bf4ed655b6af78d2acb38d49.png`

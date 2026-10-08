@@ -3,7 +3,7 @@
 Run: `20261007T013332647310Z-run`  
 IR: `e18d5456bdfd7e2469f1eea9ca0a046e514a709af67abe54f703b3f0a452e572`  
 Services: **651**  
-Icon release: `icon-2026.09.30.clean1`
+Icon release: `icon-2026.10.06.full1`
 
 Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 

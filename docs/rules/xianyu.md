@@ -3,7 +3,7 @@
 
 # Xianyu — 分流规则说明
 
-> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.09.30.clean1`。
+> 由 Documentation Layer v1 生成。真源：`rule/_index.yaml` + `generated/manifest.json` + Icon V6 `icon-2026.10.06.full1`。
 > `rule/` 仅供浏览；客户端请使用 `generated/` Raw。
 
 ## 1. 服务基本信息
@@ -29,7 +29,7 @@
 ## 3. 图标（Icon System 6.0）
 
 - Provider：`cn-wanmei/Popular-Rules-Icon`（branch `dist`）
-- Release：`icon-2026.09.30.clean1`
+- Release：`icon-2026.10.06.full1`
 - 默认：`source_original` @ 256px
 - Object：`v/dc32c93555f632f59784651c2e4ece7b4c7520f58343a52cc4ef7cd48692bcb5.png`
 - Raw：`https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/dist/v/dc32c93555f632f59784651c2e4ece7b4c7520f58343a52cc4ef7cd48692bcb5.png`
