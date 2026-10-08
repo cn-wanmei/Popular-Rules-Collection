@@ -38,6 +38,9 @@ jobs:
       - name: Company targets parity (Source SSOT)
         run: python scripts/company_targets_parity_gate.py
 
+      - name: Ecosystem release lock verify
+        run: python scripts/verify_ecosystem_release_lock.py
+
       - name: Naming gate
         run: PYTHONPATH=. python -m src.engine.cli naming_gate
 
