@@ -278,19 +278,25 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          RUN_ID=$(cat release-candidate/run-id.txt 2>/dev/null || true)
-          PYTHONPATH=. python scripts/write_ecosystem_release_lock.py \
-            --run-id "${RUN_ID:-}" \
-            --require-icon-identity
-          git add -f reports/ecosystem-release-lock.json || true
-          if ! git diff --cached --quiet; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -m "chore(lock): ecosystem-release-lock for run ${RUN_ID:-unknown}"
-            # publish job may already have pushed; best-effort second commit
-            git pull --rebase origin HEAD || true
-            git push origin HEAD || echo "WARN: lock commit push deferred"
+          if [ -f release-candidate/run-id.txt ]; then
+            RUN_ID=$(cat release-candidate/run-id.txt)
+          else
+            RUN_ID=""
           fi
+          PYTHONPATH=. python scripts/write_ecosystem_release_lock.py \
+            --run-id "${RUN_ID}" \
+            --require-icon-identity
+          git add -f reports/ecosystem-release-lock.json
+          if git diff --cached --quiet; then
+            echo "ecosystem-release-lock unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(lock): ecosystem-release-lock for run ${RUN_ID:-unknown}"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
 
       - name: Trigger Documentation Layer
         if: success()
