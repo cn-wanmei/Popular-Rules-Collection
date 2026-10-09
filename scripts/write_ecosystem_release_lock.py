@@ -75,7 +75,15 @@ def main() -> int:
             print("FAIL: Icon identity snapshot missing file_sha256")
             return 1
         if icon_sha != index_sha:
-            print(f"FAIL: Icon identity sha256 {icon_sha} != Collection index {index_sha}")
+            print(
+                f"FAIL: Icon identity sha256 {icon_sha} != Collection index {index_sha}\n"
+                f"  Icon snapshot ref={icon_ref!r}\n"
+                "  Recovery:\n"
+                "    1) Run Popular-Rules-Icon workflow Identity Freshness\n"
+                "    2) Merge the chore(icon) identity snapshot PR\n"
+                "    3) Re-run this Publish Release Candidate workflow\n"
+                "  Publish is fail-closed until Icon tracks the same rule/_index.yaml bytes."
+            )
             return 1
 
     pointers: dict = {}
