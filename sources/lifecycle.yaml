@@ -1,4 +1,9 @@
 # Source lifecycle registry. This is intentionally independent from raw health telemetry.
+# Contract (audit P1-03 / 2026-10-09):
+# - lifecycle: active  → must also exist in sources/registry.yaml and be scheduled for collect
+# - lifecycle: retired → no longer collected; health reports must not treat as stale-active
+# - Sources verified reachable but not in active collect registry should be retired or
+#   explicitly re-added to registry with a schedule, not left as perpetual active+stale.
 version: 1
 sources:
   blackmatrix7: {lifecycle: active}
@@ -6,8 +11,18 @@ sources:
   v2fly: {lifecycle: active}
   dler: {lifecycle: active}
   lm-firefly: {lifecycle: active}
-  # Re-verified 2026-10-01: upstream HTTP 200 probe OK (not in active collect registry)
-  sukkaw: {lifecycle: active, note: reverified_http_200_2026-10-01}
-  loyalsoldier: {lifecycle: active, note: reverified_http_200_2026-10-01}
-  anti-ad: {lifecycle: active, note: reverified_http_200_2026-10-01}
-  hagezi: {lifecycle: active, note: reverified_http_200_2026-10-01}
+  # Previously marked active after HTTP 200 probe (2026-10-01) but never present in
+  # sources/registry.yaml → no collect attempts since ~2026-10-01. Retire to stop
+  # perpetual stale-active noise. Re-add to registry + schedule if collection is desired.
+  sukkaw:
+    lifecycle: retired
+    note: "retired_2026-10-09: not in active collect registry; was HTTP-200 probed only"
+  loyalsoldier:
+    lifecycle: retired
+    note: "retired_2026-10-09: not in active collect registry; was HTTP-200 probed only"
+  anti-ad:
+    lifecycle: retired
+    note: "retired_2026-10-09: not in active collect registry; was HTTP-200 probed only"
+  hagezi:
+    lifecycle: retired
+    note: "retired_2026-10-09: not in active collect registry; was HTTP-200 probed only"
