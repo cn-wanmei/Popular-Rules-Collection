@@ -4,6 +4,9 @@ name: Client GitHub Release Packages
 # NEVER triggered by push / build / publish / schedule.
 # Run from Actions → Client GitHub Release Packages → Run workflow
 # after a successful Publish Release Candidate when you want user-facing zips.
+#
+# P1-04 (audit 2026-10-09): User release tags are IMMUTABLE.
+# Existing same-tag Release must cause the job to fail; never delete/overwrite.
 
 on:
   workflow_dispatch:
@@ -99,6 +102,24 @@ jobs:
           if-no-files-found: error
           retention-days: 30
 
+      - name: Fail if same-tag Release already exists (immutable)
+        if: ${{ inputs.dry_run != true }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          STAMP_SAFE="${{ steps.pkg.outputs.stamp_safe }}"
+          SAFE_TAG="rules-${STAMP_SAFE}"
+          if gh release view "$SAFE_TAG" >/dev/null 2>&1; then
+            echo "::error::Release tag $SAFE_TAG already exists. User releases are immutable (P1-04). Create a new unique stamp/version instead of overwriting."
+            exit 1
+          fi
+          if git ls-remote --tags origin "refs/tags/$SAFE_TAG" | grep -q "$SAFE_TAG"; then
+            echo "::error::Git tag $SAFE_TAG already exists on origin. User releases are immutable (P1-04)."
+            exit 1
+          fi
+          echo "Tag $SAFE_TAG is free; proceeding to create immutable release."
+
       - name: Create GitHub Release
         if: ${{ inputs.dry_run != true }}
         env:
@@ -110,11 +131,6 @@ jobs:
           STAMP_HUMAN="${{ steps.pkg.outputs.stamp_human }}"
           SAFE_TAG="rules-${STAMP_SAFE}"
           BODY_FILE=release-packages/RELEASE_NOTES.md
-
-          if gh release view "$SAFE_TAG" >/dev/null 2>&1; then
-            gh release delete "$SAFE_TAG" --yes || true
-            git push origin ":refs/tags/$SAFE_TAG" || true
-          fi
 
           ASSET_ARGS=()
           while IFS= read -r -d '' f; do
@@ -130,5 +146,5 @@ jobs:
             --notes-file "$BODY_FILE" \
             "${ASSET_ARGS[@]}"
 
-          echo "Created release: $SAFE_TAG"
+          echo "Created immutable release: $SAFE_TAG"
           gh release view "$SAFE_TAG" --json assets --jq '.assets[].name'
