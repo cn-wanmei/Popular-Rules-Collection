@@ -18,3 +18,9 @@
 
 ## Legacy (**KEEP** until Phase 8 PASS)
 - `legacy_*.py`
+
+
+## Archive / historical (2026-10-09)
+
+Phase-completion and v1 migration tools live under [`scripts/archive/historical/`](archive/historical/).
+They are not CI entrypoints. Full scan: [`reports/dead_code_scan.md`](../reports/dead_code_scan.md).
