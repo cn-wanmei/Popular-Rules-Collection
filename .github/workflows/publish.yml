@@ -40,6 +40,15 @@ jobs:
       - name: Install locked dependencies
         run: python -m pip install -r requirements.lock
 
+      - name: Preflight Icon identity match (fail fast)
+        run: |
+          set -euo pipefail
+          PYTHONPATH=. python scripts/write_ecosystem_release_lock.py \
+            --run-id "preflight" \
+            --require-icon-identity \
+            --out /tmp/ecosystem-release-lock.preflight.json
+          echo "Preflight OK: Icon identity matches Collection rule/_index.yaml"
+
       - name: Resolve immutable build artifact via Actions API
         id: artifact
         shell: bash
