@@ -16,14 +16,14 @@
 | Provider | `crowdstrike` |
 | 规则浏览路径 | `rule/crowdstrike/crowdstrike_aggregate/crowdstrike_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `19479369cc67f92c7f35d029008b3c6fb6a664571ef23ea391c04944e95958d5` |
+| SHA-256 | `85efca3125a1afa7530d25082ad9739a721512ff35fc900a9cff30bb43c37ddb` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261008T053601691732Z-run` |
-| IR digest | `c95207226ff584f8a7a7b672358a81b65c0a999c3ca8586c174c4c07747c12cd` |
+| Run ID | `20261009T164233828494Z-run` |
+| IR digest | `68c0f00d8ebc053a38404db7e25ffe44f52eb42cb25d31e9a20bfbbc09f02172` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

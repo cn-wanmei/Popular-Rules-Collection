@@ -16,14 +16,14 @@
 | Provider | `nintendo` |
 | 规则浏览路径 | `rule/nintendo/nintendo/nintendo.yaml` |
 | 规则数量（_index） | **127** |
-| SHA-256 | `ff1ee7c06842ba25b54f3e0279a8ff2dc9352ac28fba81fb3f4f5a2b674d4660` |
+| SHA-256 | `43e2f51a4b84ed92906a9f5e23b6279507a2f8984778b391d92dc02ca297fb52` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261008T053601691732Z-run` |
-| IR digest | `c95207226ff584f8a7a7b672358a81b65c0a999c3ca8586c174c4c07747c12cd` |
+| Run ID | `20261009T164233828494Z-run` |
+| IR digest | `68c0f00d8ebc053a38404db7e25ffe44f52eb42cb25d31e9a20bfbbc09f02172` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

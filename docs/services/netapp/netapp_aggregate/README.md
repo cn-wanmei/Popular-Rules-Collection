@@ -16,14 +16,14 @@
 | Provider | `netapp` |
 | 规则浏览路径 | `rule/netapp/netapp_aggregate/netapp_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `7faef5402ff80ac4fdc63d217023d8ab7b65f39e02d00f06169cbc92eaa1342e` |
+| SHA-256 | `a0e1c6c785c44f5d377f5bd3bd93c52979d860bd367f53d03fd5b5f79116f2b1` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261008T053601691732Z-run` |
-| IR digest | `c95207226ff584f8a7a7b672358a81b65c0a999c3ca8586c174c4c07747c12cd` |
+| Run ID | `20261009T164233828494Z-run` |
+| IR digest | `68c0f00d8ebc053a38404db7e25ffe44f52eb42cb25d31e9a20bfbbc09f02172` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

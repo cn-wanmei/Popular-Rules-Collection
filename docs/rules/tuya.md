@@ -16,14 +16,14 @@
 | Provider | `tuya` |
 | 规则浏览路径 | `rule/tuya/tuya/tuya.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `e5136dd369164791865f2e965f4b76e9d1cb8492743f17c28e55876d771677dc` |
+| SHA-256 | `7c8ffde46398a4c73d96a15ba8334d5c05c81e5edf0582829546e7fcad357cdf` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261008T053601691732Z-run` |
-| IR digest | `c95207226ff584f8a7a7b672358a81b65c0a999c3ca8586c174c4c07747c12cd` |
+| Run ID | `20261009T164233828494Z-run` |
+| IR digest | `68c0f00d8ebc053a38404db7e25ffe44f52eb42cb25d31e9a20bfbbc09f02172` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

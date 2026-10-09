@@ -14,14 +14,14 @@
 | Provider | `netease` |
 | 规则浏览路径 | `rule/netease/netease/netease.yaml` |
 | 规则数量（_index） | **100** |
-| SHA-256 | `748e8055c8919665a49c220a830f0ebaedf541b1da80f6f423b80f9a7a199b8e` |
+| SHA-256 | `f649665e955ed92222a27ee9ace8d321aad5e2f670e1dd6de8e9429591eed6d3` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261008T053601691732Z-run` |
-| IR digest | `c95207226ff584f8a7a7b672358a81b65c0a999c3ca8586c174c4c07747c12cd` |
+| Run ID | `20261009T164233828494Z-run` |
+| IR digest | `68c0f00d8ebc053a38404db7e25ffe44f52eb42cb25d31e9a20bfbbc09f02172` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

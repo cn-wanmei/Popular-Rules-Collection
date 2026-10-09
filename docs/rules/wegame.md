@@ -16,14 +16,14 @@
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/wegame/wegame.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `28751b53368181125bd8e0241b00e51cb274153cd5bfedddd7ab072cdac1da55` |
+| SHA-256 | `a60280bf6bdfda6cc85c16ecc2537edfe8baa715b8c23aed279a6a10b5861e8c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261008T053601691732Z-run` |
-| IR digest | `c95207226ff584f8a7a7b672358a81b65c0a999c3ca8586c174c4c07747c12cd` |
+| Run ID | `20261009T164233828494Z-run` |
+| IR digest | `68c0f00d8ebc053a38404db7e25ffe44f52eb42cb25d31e9a20bfbbc09f02172` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
