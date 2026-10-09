@@ -46,3 +46,44 @@ These appear unused by workflows but may be invoked by engine builders, local op
 ## Case-path note
 
 `docs/architecture.md` is a compatibility stub; canonical doc is `docs/ARCHITECTURE.md`.
+
+
+## Round 2 — src/engine import graph (2026-10-09)
+
+Scanned `src/`, `scripts/`, `tests/`, `config/`, `docs/`, `.github/workflows/` (1998 files).
+
+### Classification of prior 39 candidates
+
+| Class | Count | Action |
+|-------|------:|--------|
+| Referenced by `src/engine`, workflows, or `config/ci_gates.yaml` | 17 | **Keep** in `scripts/` |
+| Referenced by tests or peer scripts only | 9 | **Keep** (test/ops graph) |
+| Docs-only mentions | 4 | **Archive** this round |
+| No external references | 8 | **Archive** this round |
+
+### Keep (engine / CI / config) — 17
+
+`builder_validate.py`, `collect_datasets.py`, `collect_ip.py`, `collect_providers.py`, `generate_links.py`, `growth_anomaly.py`, `ip_cidr.py`, `pack_release_artifacts.py`, `profile_validate.py`, `promote_baseline.py`, `release_snapshot.py`, `routing_emit.py`, `semantic_dedup.py`, `service_score.py`, `source_quarantine.py`, `validate_dataset_registry.py`, `validate_registry.py`
+
+Notable: `ip_cidr.py` is imported across `src/engine` (adapters, ingest, validation). Collect helpers are used from `src/engine/collection/run.py`.
+
+### Keep (tests / peer scripts) — 9
+
+`build_network_datasets.py`, `gate_failure_injection.py`, `hierarchy_coverage.py`, `hierarchy_golden.py`, `hierarchy_validate.py`, `icon_resolver_v6.py`, `resolve_hierarchy.py`, `rule_count_drift.py`, `source_snapshot.py`
+
+### Archived this round — 12
+
+Moved to `scripts/archive/historical/`:
+
+**No external refs (8):**
+`build_artifact_manifest.py`, `build_resolution_fragment.py`, `build_routing_policies.py`, `diff_report.py`, `generate_readme.py`, `git_skip_release_paths.py`, `ip_quality_audit.py`, `run_gated.py`
+
+**Docs-only (4):**
+`attach_artifact_provenance.py`, `build_network_lan.py`, `build_provider_datasets.py`, `routing_resolve.py`
+
+### Totals after round 2
+
+- Round 1 archived: 21
+- Round 2 archived: 12
+- **Total archived: 33**
+- Remaining active-ish under `scripts/` root: ~87 (CI + engine + tests graph)

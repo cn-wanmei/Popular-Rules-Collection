@@ -24,3 +24,7 @@
 
 Phase-completion and v1 migration tools live under [`scripts/archive/historical/`](archive/historical/).
 They are not CI entrypoints. Full scan: [`reports/dead_code_scan.md`](../reports/dead_code_scan.md).
+
+### Round 2 import graph
+
+12 more scripts archived (no engine/CI refs or docs-only). Details: [`reports/dead_code_scan.md`](../reports/dead_code_scan.md).
