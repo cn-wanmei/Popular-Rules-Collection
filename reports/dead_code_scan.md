@@ -80,3 +80,21 @@ Scanned `src/`, `scripts/`, `tests/`, `config/`, `docs/`, `.github/workflows/` (
 - Round 1 archived: 21
 - Round 2 archived: 12
 - **Total archived: 33**
+
+
+## CI fix (2026-10-09) — restore scripts required by tests
+
+Root cause of Unit Tests / Engine v3 failures after Round 1 archive:
+
+`tests/engine/test_v1_final_migration_gate.py` imports `scripts.v1_final_migration_gate`.
+`tests/ops/*` imports `scripts.p0_batch01_semantic_overlap_report` and `scripts.phase_o_r_operational_closure`.
+`architecture_gate` allowlists `scripts/legacy_delete.py`.
+
+**Restored to `scripts/`** (copies remain under `scripts/archive/historical/` for history):
+
+- `v1_final_migration_gate.py`
+- `legacy_delete.py`
+- `p0_batch01_semantic_overlap_report.py`
+- `phase_o_r_operational_closure.py`
+
+These are **test-coupled** tools, not dead code.
