@@ -9,7 +9,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-UA = {"User-Agent": "popular-rules-ecosystem-status/1.3"}
+UA = {"User-Agent": "popular-rules-ecosystem-status/1.4"}
 
 
 def fetch_bytes(url: str, timeout: int = 60) -> tuple[bytes | None, str | None]:
@@ -84,7 +84,7 @@ def main() -> int:
     }
 
     report: dict = {
-        "schema": "ecosystem_release_status_v4",
+        "schema": "ecosystem_release_status_v5",
         "generated_at": now_s,
         "observed_at": now_s,
         "authority_note": (
@@ -120,13 +120,13 @@ def main() -> int:
     }
 
     index_raw, index_err = fetch_bytes(sources["collection_index"])
-    live_file_sha = hashlib.sha256(index_raw).hexdigest() if index_raw else None
+    live_file_sha256 = hashlib.sha256(index_raw).hexdigest() if index_raw else None
     report["signals"]["collection_index"] = {
         "url": sources["collection_index"],
         "readability": "ok" if index_err is None and index_raw else "error",
         "ok": index_err is None and bool(index_raw),
         "error": index_err,
-        "file_sha": live_file_sha,
+        "file_sha256": live_file_sha256,
         "bytes": len(index_raw or b""),
     }
 
@@ -174,24 +174,23 @@ def main() -> int:
     }
 
     data, err = fetch_json(sources["icon_identity_snapshot"])
-    svc_count = gen_at = src_ref = file_sha = None
+    svc_count = gen_at = src_ref = file_sha256 = None
     if isinstance(data, dict):
         svc_count = data.get("service_count")
         gen_at = data.get("generated_at")
         src = data.get("source")
         if isinstance(src, dict):
             src_ref = src.get("ref")
-            file_sha = src.get("file_sha")
+            file_sha256 = src.get("file_sha256") or src.get("file_sha")
 
-    # Content-based: file_sha mismatch = error; HEAD-only lag without file_sha mismatch = ok/info
     icon_sem = "ok"
     reasons = []
-    if not file_sha:
+    if not file_sha256:
         icon_sem = "warning"
-        reasons.append("file_sha_missing")
-    if live_file_sha and file_sha and file_sha != live_file_sha:
+        reasons.append("file_sha256_missing")
+    if live_file_sha256 and file_sha256 and file_sha256 != live_file_sha256:
         icon_sem = "error"
-        reasons.append("file_sha_mismatch")
+        reasons.append("file_sha256_mismatch")
     head_lag = bool(collection_sha and src_ref and src_ref not in (collection_sha, "main"))
     if head_lag and icon_sem == "ok":
         reasons.append("collection_head_ahead_content_ok")
@@ -205,9 +204,9 @@ def main() -> int:
         "service_count": svc_count,
         "generated_at": gen_at,
         "source_ref": src_ref,
-        "file_sha": file_sha,
+        "file_sha256": file_sha256,
         "collection_main_sha": collection_sha,
-        "collection_index_file_sha": live_file_sha,
+        "collection_index_file_sha256": live_file_sha256,
         "semantic_consistency": icon_sem,
         "semantic_reasons": reasons,
         "age_seconds": icon_age,
@@ -237,7 +236,6 @@ def main() -> int:
         "freeze_freshness": freeze_label,
     }
 
-    # P1-04 handoff_state: derive from durable run + seal (read-model interpretation)
     if run_comp == "COMPLETE" and seal_comp == "COMPLETE":
         handoff_state = "COMPLETE"
     elif run_comp in ("PARTIAL", "FAILED") or seal_comp in ("PARTIAL", "FAILED"):
@@ -245,8 +243,6 @@ def main() -> int:
     else:
         handoff_state = "UNKNOWN"
 
-    # P1-05 observation freshness vs live Collection HEAD noted in this same run
-    # (observation is instantaneous; "stale" refers to underlying signal ages)
     signal_freshness = [
         report["signals"]["source_durable_bridge"].get("freshness"),
         report["signals"]["icon_identity_snapshot"].get("freshness"),
@@ -275,14 +271,14 @@ def main() -> int:
 
     report["summary"] = {
         "collection_head": collection_sha,
-        "collection_index_file_sha": live_file_sha,
+        "collection_index_file_sha256": live_file_sha256,
         "source_durable_persisted": persisted,
         "source_seal_completeness": seal_comp,
         "source_run_completeness": run_comp,
         "handoff_state": handoff_state,
         "icon_snapshot_services": svc_count,
         "icon_snapshot_ref": src_ref,
-        "icon_snapshot_file_sha": file_sha,
+        "icon_snapshot_file_sha256": file_sha256,
         "icon_vs_collection": icon_sem,
         "icon_production_frozen": frozen,
         "icon_freeze_freshness": freeze_label,
@@ -297,7 +293,6 @@ def main() -> int:
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    # Human status page
     md = []
     md.append("# Ecosystem Release Status (Read Model)\n")
     md.append(f"> **{observation_status}** — observed_at `{now_s}`  \n")
