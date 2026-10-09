@@ -47,7 +47,7 @@ jobs:
             --run-id "preflight" \
             --require-icon-identity \
             --out /tmp/ecosystem-release-lock.preflight.json
-          echo "Preflight OK: Icon identity matches Collection rule/_index.yaml"
+          echo "Preflight OK: Icon identity matches *build commit* rule/_index.yaml (final lock does not re-require after promote)"
 
       - name: Resolve immutable build artifact via Actions API
         id: artifact
@@ -292,9 +292,13 @@ jobs:
           else
             RUN_ID=""
           fi
+          # Preflight already enforced Icon vs *build commit* index.
+          # After promote, rule/_index.yaml may change (artifact + relocate +
+          # rebase onto main). Requiring Icon match here is a circular fail:
+          # Icon cannot track the new index until after this publish lands.
+          # Record lock without --require-icon-identity; refresh Icon next.
           PYTHONPATH=. python scripts/write_ecosystem_release_lock.py \
-            --run-id "${RUN_ID}" \
-            --require-icon-identity
+            --run-id "${RUN_ID}"
           git add -f reports/ecosystem-release-lock.json
           if git diff --cached --quiet; then
             echo "ecosystem-release-lock unchanged"
@@ -306,6 +310,24 @@ jobs:
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
+
+      - name: Refresh Icon identity after promote
+        if: success()
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set +e
+          # Best-effort: Icon Identity Freshness tracks new Collection index.
+          # Uses workflow_dispatch on Icon repo when token allows; otherwise
+          # operators re-run Identity Freshness manually.
+          if gh workflow run identity-freshness.yml \
+            --repo cn-wanmei/Popular-Rules-Icon \
+            --ref main; then
+            echo "Icon Identity Freshness dispatched after publish."
+          else
+            echo "::warning::Could not dispatch Icon Identity Freshness; run it manually so Icon tracks the new index."
+          fi
 
       - name: Trigger Documentation Layer
         if: success()
