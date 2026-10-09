@@ -383,13 +383,13 @@
       "source": "database/provider/cloudflare6.txt"
     },
     {
-      "bytes": 389562,
+      "bytes": 389661,
       "file": "provider/aws.txt",
       "id": "provider-aws",
       "kind": "provider",
-      "lines": 11533,
+      "lines": 11536,
       "scope": "provider",
-      "sha256": "2bc33ac42bd07876a7c241d9e52a59192676a8fb4159f9fd4fac8fe526bf4e05",
+      "sha256": "15fd64bbfd483ddc235274d2e1d495f4b9d2905aca44705f25932ff21a39aa3e",
       "source": "database/provider/aws.txt"
     },
     {
@@ -803,7 +803,7 @@
       "source": "database/ips/zhihu.txt"
     }
   ],
-  "generated_at": "2026-10-09T11:06:34.247286+00:00",
+  "generated_at": "2026-10-09T15:39:17.484985+00:00",
   "missing_optional": [],
   "runtime_contract": "network_dataset_distribution_v2",
   "schema": "network_publication_v2",
@@ -815,5 +815,5 @@
     "provider_cidrs_are_not_service_ownership": true,
     "service_rules": "generated/<client>/..."
   },
-  "source_commit": "12896724498f62e1d08492b717d3bf082c9024bc"
+  "source_commit": "a7d92a1d4420e945d28123f8fb9ea86163838a00"
 }
