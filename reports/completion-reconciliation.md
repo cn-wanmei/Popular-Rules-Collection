@@ -1,5 +1,10 @@
 # Completion Reconciliation Report
 
+> **HISTORICAL / NON-AUTHORITATIVE (generated 2026-09-28).**  
+> Claim "Active missing from index: baidu" is **obsolete** — `baidu` is present in current `rule/_index.yaml`.  
+> Re-run the reconciliation generator for a current report; do not act on this snapshot.
+
+
 Generated: `2026-09-28T06:21:57.780848+00:00`
 
 ## Snapshot
