@@ -1,5 +1,9 @@
 # HOT_MISSING_SERVICES (2026-09-01)
 
+> **HISTORICAL / NON-AUTHORITATIVE (dated 2026-09-01).**  
+> Do not use as current missing-coverage input. Regenerate via completion tooling or consult `rule/_index.yaml` + `config/intentional_unmaterialized.yaml`.
+
+
 Reason codes: `MATERIALIZED` / `NO_UPSTREAM` / `COVERED_BY_AGGREGATE` / `MAPS_TO` / `UNEXPECTED_MISSING` / `NORMALIZED_EMPTY` / `NOT_REGISTERED` / …
 
 ## Hot watchlist

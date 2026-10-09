@@ -1,5 +1,12 @@
 # Funnel triage (Source degraded + REVIEW pool)
 
+> **Historical observation snapshot (P1-02 / docs cleanup 2026-10-09).**  
+> Live Source health counts: [`reports/source_health_status.yaml`](../reports/source_health_status.yaml)  
+> Live publish status: [`PUBLISH_STATUS.md`](../PUBLISH_STATUS.md)  
+> Live ecosystem read-model: [`reports/ecosystem_release_status.json`](../reports/ecosystem_release_status.json)  
+> Do not treat embedded tables below as current production health.
+
+
 Companion to `FUNNEL_OPS.md` and Source `FUNNEL_ACCELERATION.md`.
 
 ## Collection Source health counts
