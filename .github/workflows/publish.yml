@@ -164,7 +164,8 @@ jobs:
           git fetch origin main --depth=1
           git show origin/main:.github/workflows/publish.yml > /tmp/publish.main.yml
           git show origin/main:.github/workflows/status.yml > /tmp/status.main.yml
-          python scripts/publish_fail_closed_gate.py \
+          git show origin/main:scripts/publish_fail_closed_gate.py > /tmp/publish_fail_closed_gate.py
+          python /tmp/publish_fail_closed_gate.py \
             --workflow /tmp/publish.main.yml \
             --status-workflow /tmp/status.main.yml
 
