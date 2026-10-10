@@ -5,34 +5,68 @@ on:
     - cron: "30 7 * * *"
   workflow_dispatch:
 
+concurrency:
+  group: ecosystem-release-lock-main
+  cancel-in-progress: false
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 35
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          fetch-depth: 1
+
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: "3.12.14"
+
       - name: Install PyYAML
         run: python -m pip install --disable-pip-version-check "PyYAML==6.0.2"
-      - name: Write lock
-        run: |
-          set -euo pipefail
-          PYTHONPATH=. python scripts/write_ecosystem_release_lock.py --require-icon-identity
-          PYTHONPATH=. python scripts/verify_ecosystem_release_lock.py
-      - name: Commit if changed
+
+      - name: Reconcile Icon identity and refresh lock
+        env:
+          ICON_DISPATCH_TOKEN: ${{ secrets.ICON_DISPATCH_TOKEN }}
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f reports/ecosystem-release-lock.json
-          if git diff --cached --quiet; then
-            echo "lock unchanged"
-            exit 0
-          fi
-          git commit -m "chore(lock): refresh ecosystem-release-lock [skip ci]"
-          git pull --rebase origin main
-          git push origin HEAD:main
+
+          # The collection tree is large. Never rebase this maintenance commit:
+          # re-fetch main, reconcile the exact current index, re-materialize lock,
+          # verify it, then make a normal fast-forward push.
+          for attempt in 1 2 3 4 5; do
+            echo "Ecosystem lock refresh attempt ${attempt}/5"
+            git fetch --prune origin main --depth=1
+            git reset --hard origin/main
+
+            PYTHONPATH=. python scripts/ensure_icon_identity.py \
+              --index-path rule/_index.yaml \
+              --source ecosystem-release-lock \
+              --timeout-seconds 900 \
+              --poll-interval-seconds 10
+
+            PYTHONPATH=. python scripts/write_ecosystem_release_lock.py --require-icon-identity
+            PYTHONPATH=. python scripts/verify_ecosystem_release_lock.py
+
+            git add -f reports/ecosystem-release-lock.json
+            if git diff --cached --quiet; then
+              echo "ecosystem-release-lock is already current."
+              exit 0
+            fi
+
+            git commit -m "chore(lock): refresh ecosystem-release-lock [skip ci]"
+            if git push origin HEAD:main; then
+              echo "Ecosystem release lock promoted successfully on attempt ${attempt}."
+              exit 0
+            fi
+
+            echo "::warning::main advanced or push was rejected on attempt ${attempt}; retrying from latest main."
+            sleep $((attempt * 3))
+          done
+
+          echo "::error::Could not promote ecosystem release lock after 5 attempts."
+          exit 1
