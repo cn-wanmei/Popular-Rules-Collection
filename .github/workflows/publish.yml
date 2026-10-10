@@ -53,6 +53,7 @@ jobs:
           python /tmp/ensure_icon_identity.py \
             --index-path rule/_index.yaml \
             --source publish-preflight \
+            --require-current-main-index \
             --timeout-seconds 900 \
             --poll-interval-seconds 10
           PYTHONPATH=. python scripts/write_ecosystem_release_lock.py \
