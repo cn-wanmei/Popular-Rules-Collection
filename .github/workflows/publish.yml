@@ -335,6 +335,7 @@ jobs:
             PYTHONPATH=. python scripts/ensure_icon_identity.py \
               --index-path rule/_index.yaml \
               --source publish-post-promote \
+              --require-current-main-index \
               --timeout-seconds 900 \
               --poll-interval-seconds 10
 
