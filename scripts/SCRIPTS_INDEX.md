@@ -4,6 +4,7 @@
 - `architecture_gate.py`, `quality_validate.py`, `identity_validate.py`
 - `check_icon_pointers.py`, `entity_coverage_report.py`
 - `publish_fail_closed_gate.py`, `immutable_source_lineage_gate.py`
+- `ensure_icon_identity.py` — coordinates exact Collection index SHA-256 with Icon; dispatches reconciliation and waits boundedly before lock/publish.
 
 ## Build / collect
 - `collect.py`, `build_*.py`, `build_universal_ir.py`
