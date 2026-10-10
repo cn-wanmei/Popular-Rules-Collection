@@ -54,6 +54,7 @@ jobs:
             PYTHONPATH=. python scripts/ensure_icon_identity.py \
               --index-path rule/_index.yaml \
               --source ecosystem-release-lock \
+              --require-current-main-index \
               --timeout-seconds 900 \
               --poll-interval-seconds 10
 
