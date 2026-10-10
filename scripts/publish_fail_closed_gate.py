@@ -42,6 +42,26 @@ def main() -> int:
     if "evidence_consistency_gate.py --run-id" in workflow and "--require-latest" not in workflow:
         errors.append("evidence consistency gate is present without --require-latest")
 
+    # The post-promotion lock must reconcile Icon against the newly promoted
+    # index before the strict writer runs. Checking only for both snippets is
+    # insufficient: the order is the consistency contract.
+    lock_step = workflow.find("- name: Reconcile Icon identity then write ecosystem release lock")
+    if lock_step < 0:
+        errors.append("publish.yml is missing the post-promotion identity→lock transaction")
+    else:
+        identity_step = workflow.find("scripts/ensure_icon_identity.py", lock_step)
+        writer_step = workflow.find("scripts/write_ecosystem_release_lock.py", lock_step)
+        strict_gate = workflow.find("--require-icon-identity", writer_step if writer_step >= 0 else lock_step)
+        if identity_step < lock_step or writer_step < identity_step:
+            errors.append("post-promotion lock must reconcile Icon identity before writing the lock")
+        if strict_gate < writer_step or strict_gate < 0:
+            errors.append("post-promotion lock writer must require Icon identity match")
+        if "scripts/verify_ecosystem_release_lock.py" not in workflow[lock_step:]:
+            errors.append("post-promotion lock must run verify_ecosystem_release_lock.py")
+
+    if re.search(r"^\\s*git\\s+(?:pull\\s+--rebase|rebase\\s+--autostash)\\b", workflow, re.M):
+        errors.append("publish.yml must not rebase large generated-tree commits")
+
     print("Publish Fail-Closed Gate:", "PASS" if not errors else "FAIL")
     for error in errors:
         print(f" - {error}")
