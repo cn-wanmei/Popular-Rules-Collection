@@ -13,15 +13,15 @@
 | 类型 | domestic_aggregate |
 | Provider | `` |
 | 规则浏览路径 | `rule/china/china.yaml` |
-| 规则数量（_index） | **111523** |
-| SHA-256 | `2dbc055ceda1e3845868eec9149b1161c8f3afe8831544ea6d631a63efec35c1` |
+| 规则数量（_index） | **111894** |
+| SHA-256 | `11b6393b522da826cf74c0c5f9680a6fdc07b53b4276515f820dd4d8f0caba25` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261009T164233828494Z-run` |
-| IR digest | `68c0f00d8ebc053a38404db7e25ffe44f52eb42cb25d31e9a20bfbbc09f02172` |
+| Run ID | `20261010T102103338087Z-run` |
+| IR digest | `8ef4ca4cdaf8d3566058281bbb0842a4f5afac7d18b6472bebf5de9632524bed` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
