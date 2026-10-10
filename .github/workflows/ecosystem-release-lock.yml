@@ -3,6 +3,14 @@ name: Ecosystem Release Lock Refresh
 on:
   schedule:
     - cron: "30 7 * * *"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/ecosystem-release-lock.yml"
+      - "scripts/ensure_icon_identity.py"
+      - "scripts/write_ecosystem_release_lock.py"
+      - "scripts/verify_ecosystem_release_lock.py"
+      - "rule/_index.yaml"
   workflow_dispatch:
 
 concurrency:
