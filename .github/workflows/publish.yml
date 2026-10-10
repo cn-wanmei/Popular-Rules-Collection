@@ -65,7 +65,11 @@ jobs:
               -H "Authorization: Bearer $TOKEN" \
               -H "Accept: application/vnd.github+json" \
               https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/dispatches \
-              -d '{"event_type":"collection-identity-changed","client_payload":{"source":"publish-preflight","run_id":"${{ github.run_id }}"}}' || true
+              -d '{"event_type":"collection-identity-changed","client_payload":{"source":"publish-preflight","run_id":"${{ github.run_id }}"}}'
+              DISPATCH_RC=$?
+              if [ "$DISPATCH_RC" -ne 0 ]; then
+                echo "Icon repository_dispatch returned non-zero; will re-check identity without waiting."
+              fi
             echo "Dispatched Icon refresh; waiting 90s for auto-merge path…"
             sleep 90
             set +e
