@@ -311,70 +311,68 @@ jobs:
 
       # Docs primary path: workflow_run on success. Explicit dispatch is best-effort
       # without continue-on-error (forbidden by publish_fail_closed_gate).
-      - name: Write ecosystem release lock
+      - name: Reconcile Icon identity then write ecosystem release lock
         shell: bash
+        env:
+          ICON_DISPATCH_TOKEN: ${{ secrets.ICON_DISPATCH_TOKEN }}
         run: |
           set -euo pipefail
-          if [ -f release-candidate/run-id.txt ]; then
+          if [ -s release-candidate/run-id.txt ]; then
             RUN_ID=$(cat release-candidate/run-id.txt)
           else
             RUN_ID=""
           fi
-          # Preflight already enforced Icon vs *build commit* index.
-          # After promote, rule/_index.yaml may change (artifact + relocation).
-          # Requiring Icon match here is circular: Icon can only track the new
-          # index after this publish lands. Record the lock without that check.
-          # The repository has a large index; retry from current main rather than
-          # rebasing even this small status commit.
+
+          # Publish atomically has already promoted the candidate to main. Re-read
+          # that exact current main index, reconcile Icon, then write a STRICT lock.
+          # The former order wrote identity_matches_index=false and only dispatched
+          # Icon afterwards, leaving a stale lock indefinitely.
           for attempt in 1 2 3; do
-            git fetch --prune origin main
+            git fetch --prune origin main --depth=1
             git reset --hard origin/main
+
+            PYTHONPATH=. python scripts/ensure_icon_identity.py \
+              --index-path rule/_index.yaml \
+              --source publish-post-promote \
+              --timeout-seconds 900 \
+              --poll-interval-seconds 10
+
             PYTHONPATH=. python scripts/write_ecosystem_release_lock.py \
-              --run-id "${RUN_ID}"
+              --run-id "${RUN_ID}" \
+              --require-icon-identity
+            PYTHONPATH=. python scripts/verify_ecosystem_release_lock.py
+
             git add -f reports/ecosystem-release-lock.json
             if git diff --staged --quiet; then
-              echo "ecosystem-release-lock unchanged"
+              echo "ecosystem-release-lock is already current and verified."
               exit 0
             fi
+
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git commit -m "chore(lock): ecosystem-release-lock for run ${RUN_ID:-unknown}"
             if git push origin HEAD:main; then
-              echo "Wrote ecosystem release lock on attempt ${attempt}."
+              echo "Strict ecosystem release lock promoted successfully on attempt ${attempt}."
               exit 0
             fi
-            echo "::warning::main advanced or lock push was rejected on attempt ${attempt}; retrying."
+
+            echo "::warning::main advanced or lock push was rejected on attempt ${attempt}; retrying from latest main."
             sleep $((attempt * 2))
           done
+          echo "::error::Could not promote a strict ecosystem release lock after 3 attempts."
           exit 1
 
-      - name: Refresh Icon identity after promote
+      - name: Verify Icon identity remains synchronized after lock promotion
         if: success()
         shell: bash
-        env:
-          GH_TOKEN: ${{ github.token }}
         run: |
-          set +e
-          # Cross-repo dispatch requires Collection secret ICON_DISPATCH_TOKEN
-          # (see docs/ICON_DISPATCH_TOKEN.md). GITHUB_TOKEN cannot trigger Icon.
-          TOKEN="${{ secrets.ICON_DISPATCH_TOKEN }}"
-          if [ -n "$TOKEN" ]; then
-            if curl -fsSL -X POST \
-              -H "Authorization: Bearer $TOKEN" \
-              -H "Accept: application/vnd.github+json" \
-              https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/dispatches \
-              -d '{"event_type":"collection-identity-changed","client_payload":{"source":"publish","run_id":"${{ github.run_id }}"}}'; then
-              echo "Icon collection-identity-changed dispatched (ICON_DISPATCH_TOKEN)."
-              exit 0
-            fi
-          fi
-          if gh workflow run identity-freshness.yml \
-            --repo cn-wanmei/Popular-Rules-Icon \
-            --ref main; then
-            echo "Icon Identity Freshness dispatched via gh."
-          else
-            echo "::warning::Could not dispatch Icon Identity Freshness. Set ICON_DISPATCH_TOKEN on Collection or merge Icon identity PR manually before next Publish."
-          fi
+          set -euo pipefail
+          git fetch --prune origin main --depth=1
+          git reset --hard origin/main
+          PYTHONPATH=. python scripts/write_ecosystem_release_lock.py \
+            --require-icon-identity \
+            --out /tmp/ecosystem-release-lock.post-promote.json
+          PYTHONPATH=. python scripts/verify_ecosystem_release_lock.py
 
       - name: Trigger Documentation Layer
         if: success()
