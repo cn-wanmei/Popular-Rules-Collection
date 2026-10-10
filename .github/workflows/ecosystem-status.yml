@@ -8,6 +8,7 @@ on:
     workflows:
       - "Publish Release Candidate"
       - "Published Raw E2E"
+      - "Ecosystem Release Lock Refresh"
     types: [completed]
 
 concurrency:
@@ -28,43 +29,44 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          fetch-depth: 0
+          fetch-depth: 1
 
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.12"
 
-      - name: Generate read model
-        run: python scripts/generate_ecosystem_release_status.py
-
-      - name: Commit if changed
+      - name: Regenerate and commit against current main (no rebase)
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          mkdir -p reports
-          # md may be new; stage whatever exists
-          git add reports/ecosystem_release_status.json
-          if [ -f reports/ecosystem_release_status.md ]; then
-            git add reports/ecosystem_release_status.md
-          fi
-          if git diff --cached --quiet; then
-            echo "No ecosystem status change"
-            exit 0
-          fi
-          git commit -m "chore(status): refresh ecosystem_release_status read model [skip ci]"
-          # Race-safe push: main receives many concurrent bot commits
+
+          # This repository has a very large generated tree. Regenerate the small
+          # read model on the newest main tip instead of rebasing a maintenance
+          # commit through the full tree.
           for attempt in 1 2 3 4 5; do
-            git fetch origin main
-            git pull --rebase origin main
-            if git push origin HEAD:main; then
-              echo "pushed on attempt $attempt"
+            git fetch --prune origin main --depth=1
+            git reset --hard origin/main
+            python scripts/generate_ecosystem_release_status.py
+
+            git add reports/ecosystem_release_status.json
+            if [ -f reports/ecosystem_release_status.md ]; then
+              git add reports/ecosystem_release_status.md
+            fi
+            if git diff --cached --quiet; then
+              echo "No ecosystem status change"
               exit 0
             fi
-            echo "push rejected (attempt $attempt); retrying"
+
+            git commit -m "chore(status): refresh ecosystem_release_status read model [skip ci]"
+            if git push origin HEAD:main; then
+              echo "Ecosystem status published on attempt ${attempt}."
+              exit 0
+            fi
+            echo "::warning::main advanced or push was rejected on attempt ${attempt}; retrying from latest main."
             sleep $((attempt * 2))
           done
-          echo "::error::Failed to push ecosystem status after retries"
+          echo "::error::Failed to publish ecosystem status after retries."
           exit 1
 
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
