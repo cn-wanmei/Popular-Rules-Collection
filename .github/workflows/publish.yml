@@ -42,52 +42,23 @@ jobs:
 
       - name: Preflight Icon identity match (fail fast)
         env:
-          GH_TOKEN: ${{ github.token }}
+          ICON_DISPATCH_TOKEN: ${{ secrets.ICON_DISPATCH_TOKEN }}
         run: |
           set -euo pipefail
-          set +e
+          # Publish checks out the exact build commit, which may predate the
+          # orchestration helper. Always take that helper from the current main
+          # SSOT while comparing against the immutable build's exact index bytes.
+          git fetch --prune origin main --depth=1
+          git show origin/main:scripts/ensure_icon_identity.py > /tmp/ensure_icon_identity.py
+          python /tmp/ensure_icon_identity.py \
+            --index-path rule/_index.yaml \
+            --source publish-preflight \
+            --timeout-seconds 900 \
+            --poll-interval-seconds 10
           PYTHONPATH=. python scripts/write_ecosystem_release_lock.py \
             --run-id "preflight" \
             --require-icon-identity \
             --out /tmp/ecosystem-release-lock.preflight.json
-          RC=$?
-          set -e
-          if [ "$RC" -eq 0 ]; then
-            echo "Preflight OK: Icon identity matches *build commit* rule/_index.yaml"
-            exit 0
-          fi
-          # Icon lag is the common daily-automation failure mode. Try cross-repo
-          # refresh (needs ICON_DISPATCH_TOKEN), then re-check once.
-          TOKEN="${{ secrets.ICON_DISPATCH_TOKEN }}"
-          if [ -n "$TOKEN" ]; then
-            echo "Icon mismatch — dispatching collection-identity-changed…"
-            curl -fsSL -X POST \
-              -H "Authorization: Bearer $TOKEN" \
-              -H "Accept: application/vnd.github+json" \
-              https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/dispatches \
-              -d '{"event_type":"collection-identity-changed","client_payload":{"source":"publish-preflight","run_id":"${{ github.run_id }}"}}'
-              DISPATCH_RC=$?
-              if [ "$DISPATCH_RC" -ne 0 ]; then
-                echo "Icon repository_dispatch returned non-zero; will re-check identity without waiting."
-              fi
-            echo "Dispatched Icon refresh; waiting 90s for auto-merge path…"
-            sleep 90
-            set +e
-            PYTHONPATH=. python scripts/write_ecosystem_release_lock.py \
-              --run-id "preflight-retry" \
-              --require-icon-identity \
-              --out /tmp/ecosystem-release-lock.preflight.json
-            RC2=$?
-            set -e
-            if [ "$RC2" -eq 0 ]; then
-              echo "Preflight OK after Icon refresh."
-              exit 0
-            fi
-          else
-            echo "::warning::ICON_DISPATCH_TOKEN not set on Collection — cannot auto-refresh Icon from this job."
-          fi
-          echo "::error::Icon identity still mismatches build commit index. Merge Icon identity snapshot PR (or set ICON_DISPATCH_TOKEN) then re-run Publish."
-          exit 1
 
       - name: Resolve immutable build artifact via Actions API
         id: artifact
