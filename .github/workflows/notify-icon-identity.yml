@@ -20,8 +20,8 @@ jobs:
           # default GITHUB_TOKEN cannot dispatch other repos; use if ICON_DISPATCH_TOKEN secret exists
           TOKEN="${{ secrets.ICON_DISPATCH_TOKEN }}"
           if [ -z "$TOKEN" ]; then
-            echo "ICON_DISPATCH_TOKEN not set — skip cross-repo dispatch (schedule identity-freshness still runs)"
-            exit 0
+            echo "::error::ICON_DISPATCH_TOKEN is required when rule/_index.yaml changes. Cross-repository Icon identity synchronization cannot be silently skipped."
+            exit 1
           fi
           curl -fsSL -X POST \
             -H "Authorization: Bearer $TOKEN" \
