@@ -293,6 +293,18 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
+          # Nudge Icon to track current Collection index before Publish preflight
+          TOKEN="${{ secrets.ICON_DISPATCH_TOKEN }}"
+          if [ -n "$TOKEN" ]; then
+            curl -fsSL -X POST \
+              -H "Authorization: Bearer $TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/dispatches \
+              -d '{"event_type":"collection-identity-changed","client_payload":{"source":"build-before-publish","sha":"${{ github.sha }}"}}' \
+              && echo "Icon identity refresh dispatched before Publish" \
+              || echo "::warning::Icon dispatch failed"
+            sleep 30
+          fi
           gh workflow run publish.yml \
             --repo "${{ github.repository }}" \
             --ref main \
