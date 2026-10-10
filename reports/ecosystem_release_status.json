@@ -1,7 +1,7 @@
 {
   "schema": "ecosystem_release_status_v5",
-  "generated_at": "2026-10-10T13:10:25Z",
-  "observed_at": "2026-10-10T13:10:25Z",
+  "generated_at": "2026-10-10T14:39:26Z",
+  "observed_at": "2026-10-10T14:39:26Z",
   "authority_note": "READ MODEL ONLY. Does not replace Collection/Source/Icon SSOT. See docs/STATE_MODEL.md.",
   "repos": {
     "collection": "cn-wanmei/Popular-Rules-Collection",
@@ -21,7 +21,7 @@
       "readability": "ok",
       "ok": true,
       "error": null,
-      "sha": "b3f1c042f749c695168ec61ac8373a35b2e6219a"
+      "sha": "a732222355bd33897e04780266007cd8311de35f"
     },
     "collection_index": {
       "url": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/rule/_index.yaml",
@@ -43,7 +43,7 @@
       "batch_completeness": "COMPLETE",
       "semantic_consistency": "ok",
       "created_at": "2026-10-10T10:00:07.336418+00:00",
-      "age_seconds": 11418,
+      "age_seconds": 16759,
       "freshness": "fresh",
       "persistence_commit": "48cf04bbf32065a53a507ca84cc85caec727cef0"
     },
@@ -53,16 +53,16 @@
       "ok": true,
       "error": null,
       "service_count": 394,
-      "generated_at": "2026-10-10T07:47:39Z",
-      "source_ref": "23a244a958702785c11a1411b6ae8e52e74bb975",
-      "file_sha256": "d115b378161cf54c85044b153d80776d480542521d5074204dbee19a81dec111",
-      "collection_main_sha": "b3f1c042f749c695168ec61ac8373a35b2e6219a",
+      "generated_at": "2026-10-10T14:07:56Z",
+      "source_ref": "e32ab88e3391ea4a2d010d2f4d269f405acf4bc4",
+      "file_sha256": "9c91c400dbac671b8b7001dde9cac2b7dadebc503f60bd67d1f7a01c7daa0c37",
+      "collection_main_sha": "a732222355bd33897e04780266007cd8311de35f",
       "collection_index_file_sha256": "9c91c400dbac671b8b7001dde9cac2b7dadebc503f60bd67d1f7a01c7daa0c37",
-      "semantic_consistency": "error",
+      "semantic_consistency": "ok",
       "semantic_reasons": [
-        "file_sha256_mismatch"
+        "collection_head_ahead_content_ok"
       ],
-      "age_seconds": 19366,
+      "age_seconds": 1890,
       "freshness": "fresh"
     },
     "icon_release_pointers": {
@@ -72,28 +72,28 @@
       "error": null,
       "bytes": 739,
       "frozen": true,
-      "freeze_age_seconds": 352165,
+      "freeze_age_seconds": 357506,
       "freeze_freshness": "fresh"
     }
   },
   "summary": {
-    "collection_head": "b3f1c042f749c695168ec61ac8373a35b2e6219a",
+    "collection_head": "a732222355bd33897e04780266007cd8311de35f",
     "collection_index_file_sha256": "9c91c400dbac671b8b7001dde9cac2b7dadebc503f60bd67d1f7a01c7daa0c37",
     "source_durable_persisted": 281,
     "source_seal_completeness": "COMPLETE",
     "source_run_completeness": "COMPLETE",
     "handoff_state": "COMPLETE",
     "icon_snapshot_services": 394,
-    "icon_snapshot_ref": "23a244a958702785c11a1411b6ae8e52e74bb975",
-    "icon_snapshot_file_sha256": "d115b378161cf54c85044b153d80776d480542521d5074204dbee19a81dec111",
-    "icon_vs_collection": "error",
+    "icon_snapshot_ref": "e32ab88e3391ea4a2d010d2f4d269f405acf4bc4",
+    "icon_snapshot_file_sha256": "9c91c400dbac671b8b7001dde9cac2b7dadebc503f60bd67d1f7a01c7daa0c37",
+    "icon_vs_collection": "ok",
     "icon_production_frozen": true,
     "icon_freeze_freshness": "fresh",
     "all_core_signals_ok": true,
     "readability": "ok",
-    "semantic_consistency": "error",
+    "semantic_consistency": "ok",
     "observation_status": "FRESH OBSERVATION",
-    "observation_watermark": "2026-10-10T13:10:25Z",
+    "observation_watermark": "2026-10-10T14:39:26Z",
     "freshness_sla_note": "icon/source soft=24h hard=7d; freeze soft=14d hard=45d (read-model labels only)"
   }
 }
