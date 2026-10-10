@@ -22,6 +22,10 @@ ICON_SNAPSHOT_URL = (
     "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/main/"
     "config/collection_identity_snapshot.json"
 )
+COLLECTION_INDEX_URL = (
+    "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/"
+    "rule/_index.yaml"
+)
 ICON_DISPATCH_URL = "https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/dispatches"
 
 
@@ -41,6 +45,20 @@ def fetch_snapshot(timeout: int = 20) -> dict:
     if not isinstance(data, dict):
         raise ValueError("Icon identity snapshot root is not an object")
     return data
+
+
+def fetch_current_collection_index(timeout: int = 30) -> bytes:
+    # Cache-bust so stale build artifacts are never allowed to drive Icon backwards.
+    url = f"{COLLECTION_INDEX_URL}?v={time.time_ns()}"
+    req = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": "Popular-Rules-Collection-identity-coordinator",
+            "Cache-Control": "no-cache",
+        },
+    )
+    with urllib.request.urlopen(req, timeout=timeout) as response:
+        return response.read()
 
 
 def pinned_sha(snapshot: dict) -> str:
@@ -105,6 +123,11 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--index-path", type=Path, default=Path("rule/_index.yaml"))
     parser.add_argument("--source", default="ecosystem-release-lock")
+    parser.add_argument(
+        "--require-current-main-index",
+        action="store_true",
+        help="refuse to synchronize Icon to a build index that differs from current Collection main",
+    )
     parser.add_argument("--timeout-seconds", type=int, default=900)
     parser.add_argument("--poll-interval-seconds", type=int, default=10)
     args = parser.parse_args()
@@ -121,6 +144,18 @@ def main() -> int:
         f"collection_ref={collection_sha}; source={args.source}",
         flush=True,
     )
+
+    if args.require_current_main_index:
+        try:
+            main_index_sha = hashlib.sha256(fetch_current_collection_index()).hexdigest()
+        except Exception as exc:
+            raise SystemExit(f"Cannot read current Collection main index; refusing stale-build sync: {exc}") from None
+        if main_index_sha != expected_sha:
+            raise SystemExit(
+                "Build index is stale relative to current Collection main; refusing to synchronize Icon "
+                f"backward or publish stale rules (build_sha256={expected_sha}, "
+                f"main_sha256={main_index_sha}). Rebuild from current main and retry Publish."
+            )
 
     try:
         snapshot = fetch_snapshot()
