@@ -349,23 +349,32 @@ jobs:
             RUN_ID=""
           fi
           # Preflight already enforced Icon vs *build commit* index.
-          # After promote, rule/_index.yaml may change (artifact + relocate +
-          # rebase onto main). Requiring Icon match here is a circular fail:
-          # Icon cannot track the new index until after this publish lands.
-          # Record lock without --require-icon-identity; refresh Icon next.
-          PYTHONPATH=. python scripts/write_ecosystem_release_lock.py \
-            --run-id "${RUN_ID}"
-          git add -f reports/ecosystem-release-lock.json
-          if git diff --cached --quiet; then
-            echo "ecosystem-release-lock unchanged"
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore(lock): ecosystem-release-lock for run ${RUN_ID:-unknown}"
-          git fetch origin main
-          git rebase origin/main
-          git push origin HEAD:main
+          # After promote, rule/_index.yaml may change (artifact + relocation).
+          # Requiring Icon match here is circular: Icon can only track the new
+          # index after this publish lands. Record the lock without that check.
+          # The repository has a large index; retry from current main rather than
+          # rebasing even this small status commit.
+          for attempt in 1 2 3; do
+            git fetch --prune origin main
+            git reset --hard origin/main
+            PYTHONPATH=. python scripts/write_ecosystem_release_lock.py \
+              --run-id "${RUN_ID}"
+            git add -f reports/ecosystem-release-lock.json
+            if git diff --staged --quiet; then
+              echo "ecosystem-release-lock unchanged"
+              exit 0
+            fi
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "chore(lock): ecosystem-release-lock for run ${RUN_ID:-unknown}"
+            if git push origin HEAD:main; then
+              echo "Wrote ecosystem release lock on attempt ${attempt}."
+              exit 0
+            fi
+            echo "::warning::main advanced or lock push was rejected on attempt ${attempt}; retrying."
+            sleep $((attempt * 2))
+          done
+          exit 1
 
       - name: Refresh Icon identity after promote
         if: success()
