@@ -298,7 +298,7 @@ jobs:
 
             # Preserve release-candidate/ (downloaded immutable input), but reset
             # every published path before re-materializing so retries are idempotent.
-            rm -rf generated rule "data/runs/${RUN_ID}" reports/latest_release.json
+            rm -rf generated rule "data/runs/${RUN_ID}" reports/latest_release.json reports/v1
             mkdir -p data/runs data/baseline
             cp -a release-candidate/rule rule
             cp -a release-candidate/generated generated
