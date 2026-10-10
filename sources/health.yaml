@@ -8,8 +8,8 @@ sources:
     empty_blocked: 0
     rules_declared: 8
   blackmatrix7:
-    last_attempt: '2026-10-09T15:25:47.768145+00:00'
-    last_success: '2026-10-09T15:25:47.768166+00:00'
+    last_attempt: '2026-10-10T01:44:40.091069+00:00'
+    last_success: '2026-10-10T01:44:40.091084+00:00'
     failure_count: 0
     files_ok: 0
     files_failed: 3
@@ -47,12 +47,12 @@ sources:
     empty_blocked: 0
     rules_declared: 3
   metacubex:
-    last_attempt: '2026-10-09T15:25:47.840685+00:00'
+    last_attempt: '2026-10-10T01:44:40.151767+00:00'
     files_ok: 0
     files_failed: 0
     empty_blocked: 0
     rules_declared: 76
-    last_success: '2026-10-09T15:25:47.840705+00:00'
+    last_success: '2026-10-10T01:44:40.151783+00:00'
     failure_count: 0
     files_not_modified: 0
     files_skipped: 76
@@ -62,12 +62,12 @@ sources:
     cas_objects: 76
     status: healthy
   v2fly:
-    last_attempt: '2026-10-09T15:25:47.890100+00:00'
+    last_attempt: '2026-10-10T01:44:40.192667+00:00'
     files_ok: 0
     files_failed: 0
     empty_blocked: 0
     rules_declared: 56
-    last_success: '2026-10-09T15:25:47.890116+00:00'
+    last_success: '2026-10-10T01:44:40.192678+00:00'
     failure_count: 0
     files_not_modified: 0
     files_skipped: 56
@@ -77,12 +77,12 @@ sources:
     cas_objects: 56
     status: healthy
   dler:
-    last_attempt: '2026-10-09T15:25:47.909805+00:00'
+    last_attempt: '2026-10-10T01:44:40.209449+00:00'
     files_ok: 0
     files_failed: 0
     empty_blocked: 0
     rules_declared: 20
-    last_success: '2026-10-09T15:25:47.909819+00:00'
+    last_success: '2026-10-10T01:44:40.209461+00:00'
     failure_count: 0
     files_not_modified: 0
     files_skipped: 20
@@ -92,7 +92,7 @@ sources:
     cas_objects: 20
     status: healthy
   lm-firefly:
-    last_attempt: '2026-10-09T15:25:47.911481+00:00'
+    last_attempt: '2026-10-10T01:44:40.215682+00:00'
     files_ok: 0
     files_not_modified: 0
     files_skipped: 1
@@ -103,13 +103,13 @@ sources:
     scheduler_skips: 1
     fetch_workers: 1
     cas_objects: 1
-    last_success: '2026-10-09T15:25:47.911494+00:00'
+    last_success: '2026-10-10T01:44:40.215692+00:00'
     failure_count: 0
     status: healthy
     last_failure: '2026-10-09T02:04:24.982021+00:00'
     reason: all fetches failed
   popular-rules-source:
-    last_attempt: '2026-10-09T15:25:46.594999+00:00'
+    last_attempt: '2026-10-10T01:44:38.984790+00:00'
     files_ok: 281
     files_not_modified: 0
     files_skipped: 0
@@ -120,7 +120,7 @@ sources:
     scheduler_skips: 0
     fetch_workers: 12
     cas_objects: 281
-    last_success: '2026-10-09T15:25:46.595007+00:00'
+    last_success: '2026-10-10T01:44:38.984797+00:00'
     failure_count: 0
     status: healthy
-updated_at: '2026-10-09T15:25:47.934846+00:00'
+updated_at: '2026-10-10T01:44:40.239368+00:00'
