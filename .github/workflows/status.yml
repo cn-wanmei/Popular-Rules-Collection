@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
-          fetch-depth: 0
+          fetch-depth: 1
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: '3.11'
@@ -29,49 +29,37 @@ jobs:
         run: python scripts/classify_health.py
       - name: Generate publish status
         run: python scripts/generate_publish_status.py
-      - name: Commit generated state
+      - name: Reconcile generated status against current main (no rebase)
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
-          publish_status() {
-            if git diff --quiet; then
-              echo 'No generated status changes.'
-              return 0
-            fi
+          # Rebase across the complete generated rule tree can exhaust Git's mmap
+          # allowance. Recreate only the derived status files from the latest main
+          # tip on every retry, then make a normal fast-forward push.
+          for attempt in 1 2 3 4 5; do
+            git fetch --prune origin main --depth=1
+            git reset --hard origin/main
+            python scripts/classify_health.py
+            python scripts/generate_publish_status.py
+
             git add reports/source_health_status.yaml PUBLISH_STATUS.md
-            # Allow empty-ish situations after concurrent updates
             if git diff --cached --quiet; then
-              echo 'No staged status changes after concurrent update.'
-              return 0
+              echo 'No generated status changes.'
+              exit 0
             fi
+
             git commit -m 'chore(status): refresh generated release state'
-          }
-
-          publish_status
-
-          for attempt in 1 2 3; do
-            git fetch --prune origin main
-
-            if git rebase --autostash origin/main; then
-              if git push origin HEAD:main; then
-                echo "Generated status published on attempt ${attempt}."
-                exit 0
-              fi
-              echo "Push rejected on attempt ${attempt}; retrying after refresh."
-            else
-              echo "Status rebase conflict on attempt ${attempt}; regenerating on latest main."
-              git rebase --abort
-              git reset --hard origin/main
-              python scripts/classify_health.py
-              python scripts/generate_publish_status.py
-              publish_status
+            if git push origin HEAD:main; then
+              echo "Generated status published on attempt ${attempt}."
+              exit 0
             fi
 
+            echo "::warning::main advanced or push was rejected on attempt ${attempt}; retrying from latest main."
             sleep $((attempt * 2))
           done
 
-          echo 'Failed to publish generated status after 3 attempts.'
+          echo 'Failed to publish generated status after 5 attempts.'
           exit 1
