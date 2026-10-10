@@ -41,13 +41,49 @@ jobs:
         run: python -m pip install -r requirements.lock
 
       - name: Preflight Icon identity match (fail fast)
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
+          set +e
           PYTHONPATH=. python scripts/write_ecosystem_release_lock.py \
             --run-id "preflight" \
             --require-icon-identity \
             --out /tmp/ecosystem-release-lock.preflight.json
-          echo "Preflight OK: Icon identity matches *build commit* rule/_index.yaml (final lock does not re-require after promote)"
+          RC=$?
+          set -e
+          if [ "$RC" -eq 0 ]; then
+            echo "Preflight OK: Icon identity matches *build commit* rule/_index.yaml"
+            exit 0
+          fi
+          # Icon lag is the common daily-automation failure mode. Try cross-repo
+          # refresh (needs ICON_DISPATCH_TOKEN), then re-check once.
+          TOKEN="${{ secrets.ICON_DISPATCH_TOKEN }}"
+          if [ -n "$TOKEN" ]; then
+            echo "Icon mismatch — dispatching collection-identity-changed…"
+            curl -fsSL -X POST \
+              -H "Authorization: Bearer $TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/dispatches \
+              -d '{"event_type":"collection-identity-changed","client_payload":{"source":"publish-preflight","run_id":"${{ github.run_id }}"}}' || true
+            echo "Dispatched Icon refresh; waiting 90s for auto-merge path…"
+            sleep 90
+            set +e
+            PYTHONPATH=. python scripts/write_ecosystem_release_lock.py \
+              --run-id "preflight-retry" \
+              --require-icon-identity \
+              --out /tmp/ecosystem-release-lock.preflight.json
+            RC2=$?
+            set -e
+            if [ "$RC2" -eq 0 ]; then
+              echo "Preflight OK after Icon refresh."
+              exit 0
+            fi
+          else
+            echo "::warning::ICON_DISPATCH_TOKEN not set on Collection — cannot auto-refresh Icon from this job."
+          fi
+          echo "::error::Icon identity still mismatches build commit index. Merge Icon identity snapshot PR (or set ICON_DISPATCH_TOKEN) then re-run Publish."
+          exit 1
 
       - name: Resolve immutable build artifact via Actions API
         id: artifact
@@ -318,15 +354,25 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set +e
-          # Best-effort: Icon Identity Freshness tracks new Collection index.
-          # Uses workflow_dispatch on Icon repo when token allows; otherwise
-          # operators re-run Identity Freshness manually.
+          # Cross-repo dispatch requires Collection secret ICON_DISPATCH_TOKEN
+          # (see docs/ICON_DISPATCH_TOKEN.md). GITHUB_TOKEN cannot trigger Icon.
+          TOKEN="${{ secrets.ICON_DISPATCH_TOKEN }}"
+          if [ -n "$TOKEN" ]; then
+            if curl -fsSL -X POST \
+              -H "Authorization: Bearer $TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/dispatches \
+              -d '{"event_type":"collection-identity-changed","client_payload":{"source":"publish","run_id":"${{ github.run_id }}"}}'; then
+              echo "Icon collection-identity-changed dispatched (ICON_DISPATCH_TOKEN)."
+              exit 0
+            fi
+          fi
           if gh workflow run identity-freshness.yml \
             --repo cn-wanmei/Popular-Rules-Icon \
             --ref main; then
-            echo "Icon Identity Freshness dispatched after publish."
+            echo "Icon Identity Freshness dispatched via gh."
           else
-            echo "::warning::Could not dispatch Icon Identity Freshness; run it manually so Icon tracks the new index."
+            echo "::warning::Could not dispatch Icon Identity Freshness. Set ICON_DISPATCH_TOKEN on Collection or merge Icon identity PR manually before next Publish."
           fi
 
       - name: Trigger Documentation Layer
