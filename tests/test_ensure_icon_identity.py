@@ -101,3 +101,25 @@ def test_pinned_sha_supports_transition_alias():
     assert identity.pinned_sha({"source": {"file_sha": "abc"}}) == "abc"
     assert identity.pinned_sha({"source": {"file_sha256": "def", "file_sha": "abc"}}) == "def"
     assert identity.pinned_sha({}) == ""
+
+
+def test_publish_preflight_refuses_build_index_older_than_main(tmp_path, monkeypatch):
+    index_path = tmp_path / "_index.yaml"
+    index_path.write_bytes(b"stale build index")
+    monkeypatch.setattr(identity, "fetch_current_collection_index", lambda: b"newer main index")
+    monkeypatch.setattr(identity, "fetch_snapshot", lambda: snapshot_with_sha("0" * 64))
+    monkeypatch.setattr(identity, "current_git_sha", lambda: "a" * 40)
+    monkeypatch.setenv("ICON_DISPATCH_TOKEN", "test-token")
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "ensure_icon_identity.py",
+            "--index-path",
+            str(index_path),
+            "--require-current-main-index",
+        ],
+    )
+
+    with pytest.raises(SystemExit, match="Build index is stale relative to current Collection main"):
+        identity.main()
