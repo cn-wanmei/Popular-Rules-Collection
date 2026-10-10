@@ -1,5 +1,5 @@
 schema: source_health_status_v1
-generated_at: '2026-10-10T01:48:51.686744Z'
+generated_at: '2026-10-10T07:57:38.364911Z'
 policy: config/health_policy.yaml
 lifecycle_registry: sources/lifecycle.yaml
 sources:
@@ -15,20 +15,20 @@ sources:
   blackmatrix7:
     lifecycle: active
     status: healthy
-    reason: last success 0h ago
+    reason: last success 6h ago
     last_success: '2026-10-10T01:44:40.091084+00:00'
     last_attempt: '2026-10-10T01:44:40.091069+00:00'
     failure_count: 0
-    age_hours: 0
+    age_hours: 6
     rules_declared: 154
   dler:
     lifecycle: active
     status: healthy
-    reason: last success 0h ago
+    reason: last success 6h ago
     last_success: '2026-10-10T01:44:40.209461+00:00'
     last_attempt: '2026-10-10T01:44:40.209449+00:00'
     failure_count: 0
-    age_hours: 0
+    age_hours: 6
     rules_declared: 20
   hagezi:
     lifecycle: retired
@@ -42,11 +42,11 @@ sources:
   lm-firefly:
     lifecycle: active
     status: healthy
-    reason: last success 0h ago
+    reason: last success 6h ago
     last_success: '2026-10-10T01:44:40.215692+00:00'
     last_attempt: '2026-10-10T01:44:40.215682+00:00'
     failure_count: 0
-    age_hours: 0
+    age_hours: 6
     rules_declared: 1
   loyalsoldier:
     lifecycle: retired
@@ -60,20 +60,20 @@ sources:
   metacubex:
     lifecycle: active
     status: healthy
-    reason: last success 0h ago
+    reason: last success 6h ago
     last_success: '2026-10-10T01:44:40.151783+00:00'
     last_attempt: '2026-10-10T01:44:40.151767+00:00'
     failure_count: 0
-    age_hours: 0
+    age_hours: 6
     rules_declared: 76
   popular-rules-source:
     lifecycle: active
     status: healthy
-    reason: last success 0h ago
+    reason: last success 6h ago
     last_success: '2026-10-10T01:44:38.984797+00:00'
     last_attempt: '2026-10-10T01:44:38.984790+00:00'
     failure_count: 0
-    age_hours: 0
+    age_hours: 6
     rules_declared: 281
   sukkaw:
     lifecycle: retired
@@ -87,9 +87,9 @@ sources:
   v2fly:
     lifecycle: active
     status: healthy
-    reason: last success 0h ago
+    reason: last success 6h ago
     last_success: '2026-10-10T01:44:40.192678+00:00'
     last_attempt: '2026-10-10T01:44:40.192667+00:00'
     failure_count: 0
-    age_hours: 0
+    age_hours: 6
     rules_declared: 56
