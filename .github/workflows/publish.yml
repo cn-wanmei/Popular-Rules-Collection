@@ -185,7 +185,16 @@ jobs:
         run: python scripts/size_gate.py
 
       - name: Publish fail-closed policy gate
-        run: python scripts/publish_fail_closed_gate.py --workflow .github/workflows/publish.yml --status-workflow .github/workflows/status.yml
+        run: |
+          set -euo pipefail
+          # Workflow file under test must be the *running* definition on main,
+          # not the historical build commit tree (checkout is build_head_sha).
+          git fetch origin main --depth=1
+          git show origin/main:.github/workflows/publish.yml > /tmp/publish.main.yml
+          git show origin/main:.github/workflows/status.yml > /tmp/status.main.yml
+          python scripts/publish_fail_closed_gate.py \
+            --workflow /tmp/publish.main.yml \
+            --status-workflow /tmp/status.main.yml --workflow .github/workflows/publish.yml --status-workflow .github/workflows/status.yml
 
       - name: Verify immutable Source lineage
         shell: bash
@@ -266,6 +275,10 @@ jobs:
           cp -a release-candidate/reports/v1/*.json reports/v1/
           PYTHONPATH=. python scripts/derive_service_production_evidence.py --run-id "${RUN_ID}"
           python scripts/refresh_latest_release_from_promotion.py --run-id "${RUN_ID}"
+          # Use main read-model for Icon/Source consistency (not build-commit tree)
+          git fetch origin main --depth=1
+          mkdir -p reports
+          git show origin/main:reports/ecosystem_release_status.json > reports/ecosystem_release_status.json
           python scripts/status_consistency_gate.py
           python scripts/evidence_consistency_gate.py \
             --run-id "${RUN_ID}" \
@@ -305,6 +318,10 @@ jobs:
             cp -a release-candidate/reports/v1/*.json reports/v1/
             PYTHONPATH=. python scripts/derive_service_production_evidence.py --run-id "${RUN_ID}"
             python scripts/refresh_latest_release_from_promotion.py --run-id "${RUN_ID}"
+            # Use main read-model for Icon/Source consistency (not build-commit tree)
+            git fetch origin main --depth=1
+            mkdir -p reports
+            git show origin/main:reports/ecosystem_release_status.json > reports/ecosystem_release_status.json
             python scripts/status_consistency_gate.py
             python scripts/evidence_consistency_gate.py \
               --run-id "${RUN_ID}" \
