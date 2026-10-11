@@ -22,9 +22,12 @@ ICON_SNAPSHOT_URL = (
     "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/main/"
     "config/collection_identity_snapshot.json"
 )
-COLLECTION_INDEX_URL = (
-    "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/"
-    "rule/_index.yaml"
+# Read the live branch through GitHub's Contents API, not raw.githubusercontent.com.
+# The raw branch URL can remain stale after a successful push even with a cache-buster,
+# causing a just-promoted immutable artifact to be misclassified as an old build.
+COLLECTION_INDEX_API_URL = (
+    "https://api.github.com/repos/cn-wanmei/Popular-Rules-Collection/"
+    "contents/rule/_index.yaml"
 )
 ICON_DISPATCH_URL = "https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/dispatches"
 
@@ -48,17 +51,33 @@ def fetch_snapshot(timeout: int = 20) -> dict:
 
 
 def fetch_current_collection_index(timeout: int = 30) -> bytes:
-    # Cache-bust so stale build artifacts are never allowed to drive Icon backwards.
-    url = f"{COLLECTION_INDEX_URL}?v={time.time_ns()}"
+    # The Contents API resolves ref=main at GitHub's current branch tip. Do not use
+    # raw.githubusercontent.com/.../main here: the raw CDN may serve the previous
+    # index after Publish has already pushed a new commit, even with query cache-busting.
+    url = f"{COLLECTION_INDEX_API_URL}?ref=main&v={time.time_ns()}"
     req = urllib.request.Request(
         url,
         headers={
             "User-Agent": "Popular-Rules-Collection-identity-coordinator",
+            "Accept": "application/vnd.github.raw+json",
+            "X-GitHub-Api-Version": "2022-11-28",
             "Cache-Control": "no-cache",
+            "Pragma": "no-cache",
         },
     )
     with urllib.request.urlopen(req, timeout=timeout) as response:
-        return response.read()
+        raw = response.read()
+        content_type = response.headers.get("Content-Type", "").lower()
+    # GitHub normally returns raw bytes for the requested media type. Retain a
+    # defensive fallback for deployments/proxies that return the JSON envelope.
+    if "json" in content_type and raw.lstrip().startswith(b"{"):
+        envelope = json.loads(raw.decode("utf-8"))
+        encoded = envelope.get("content")
+        if not isinstance(encoded, str):
+            raise ValueError("GitHub Contents API returned no file content")
+        import base64
+        return base64.b64decode(encoded)
+    return raw
 
 
 def pinned_sha(snapshot: dict) -> str:
