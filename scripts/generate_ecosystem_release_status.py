@@ -3,20 +3,56 @@
 from __future__ import annotations
 
 import argparse
+import base64
 import hashlib
 import json
+import os
+import time
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-UA = {"User-Agent": "popular-rules-ecosystem-status/1.4"}
+UA = {"User-Agent": "popular-rules-ecosystem-status/1.5"}
 
 
 def fetch_bytes(url: str, timeout: int = 60) -> tuple[bytes | None, str | None]:
     try:
-        req = urllib.request.Request(url, headers=UA)
+        headers = dict(UA)
+        headers.update({
+            "Cache-Control": "no-cache",
+            "Pragma": "no-cache",
+            "X-GitHub-Api-Version": "2022-11-28",
+        })
+        is_contents_api = "api.github.com/repos/" in url and "/contents/" in url
+        if is_contents_api:
+            separator = "&" if "?" in url else "?"
+            url = f"{url}{separator}v={time.time_ns()}"
+            headers["Accept"] = "application/vnd.github.raw+json"
+        else:
+            headers["Accept"] = "application/vnd.github+json"
+        token = (os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or "").strip()
+        if token:
+            headers["Authorization"] = f"Bearer {token}"
+
+        req = urllib.request.Request(url, headers=headers)
         with urllib.request.urlopen(req, timeout=timeout) as resp:
-            return resp.read(), None
+            raw = resp.read()
+
+        # Normally the raw media type returns file bytes. Some frontends/proxies
+        # still return the Contents API JSON envelope; decode only an explicitly
+        # Base64-encoded envelope so ordinary JSON files remain intact.
+        if is_contents_api and raw.lstrip().startswith(b"{"):
+            try:
+                envelope = json.loads(raw.decode("utf-8"))
+            except (UnicodeDecodeError, json.JSONDecodeError):
+                envelope = None
+            if (
+                isinstance(envelope, dict)
+                and envelope.get("encoding") == "base64"
+                and isinstance(envelope.get("content"), str)
+            ):
+                raw = base64.b64decode(envelope["content"])
+        return raw, None
     except Exception as exc:  # noqa: BLE001
         return None, f"{type(exc).__name__}: {exc}"
 
@@ -75,12 +111,12 @@ def main() -> int:
     now_s = now.strftime("%Y-%m-%dT%H:%M:%SZ")
 
     sources = {
-        "collection_publish_status": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/PUBLISH_STATUS.md",
+        "collection_publish_status": "https://api.github.com/repos/cn-wanmei/Popular-Rules-Collection/contents/PUBLISH_STATUS.md?ref=main",
         "collection_main_sha": "https://api.github.com/repos/cn-wanmei/Popular-Rules-Collection/commits/main",
-        "collection_index": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/rule/_index.yaml",
-        "source_durable_bridge": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/reports/durable-bridge/latest.json",
-        "icon_identity_snapshot": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/main/config/collection_identity_snapshot.json",
-        "icon_release_pointers": "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/main/config/release-pointers.yaml",
+        "collection_index": "https://api.github.com/repos/cn-wanmei/Popular-Rules-Collection/contents/rule/_index.yaml?ref=main",
+        "source_durable_bridge": "https://api.github.com/repos/cn-wanmei/Popular-Rules-Source/contents/reports/durable-bridge/latest.json?ref=main",
+        "icon_identity_snapshot": "https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/contents/config/collection_identity_snapshot.json?ref=main",
+        "icon_release_pointers": "https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/contents/config/release-pointers.yaml?ref=main",
     }
 
     report: dict = {
