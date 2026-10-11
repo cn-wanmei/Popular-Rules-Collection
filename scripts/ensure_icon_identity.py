@@ -8,6 +8,7 @@ helper only: the release-lock writer and Icon CI remain authoritative gates.
 from __future__ import annotations
 
 import argparse
+import base64
 import hashlib
 import json
 import os
@@ -18,9 +19,9 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-ICON_SNAPSHOT_URL = (
-    "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/main/"
-    "config/collection_identity_snapshot.json"
+ICON_SNAPSHOT_API_URL = (
+    "https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/"
+    "contents/config/collection_identity_snapshot.json"
 )
 # Read the live branch through GitHub's Contents API, not raw.githubusercontent.com.
 # The raw branch URL can remain stale after a successful push even with a cache-buster,
@@ -33,28 +34,19 @@ ICON_DISPATCH_URL = "https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/d
 
 
 def fetch_snapshot(timeout: int = 20) -> dict:
-    # Cache-bust the raw URL: the caller must observe a newly merged pin promptly.
-    url = f"{ICON_SNAPSHOT_URL}?v={time.time_ns()}"
-    req = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": "Popular-Rules-Collection-identity-coordinator",
-            "Accept": "application/vnd.github+json",
-            "Cache-Control": "no-cache",
-        },
-    )
-    with urllib.request.urlopen(req, timeout=timeout) as response:
-        data = json.loads(response.read().decode("utf-8"))
+    # Contents API reads the current branch object directly and avoids stale
+    # raw.githubusercontent.com branch-cache responses after the snapshot PR merges.
+    raw = fetch_contents_api_bytes(ICON_SNAPSHOT_API_URL, timeout=timeout)
+    data = json.loads(raw.decode("utf-8"))
     if not isinstance(data, dict):
         raise ValueError("Icon identity snapshot root is not an object")
     return data
 
 
-def fetch_current_collection_index(timeout: int = 30) -> bytes:
-    # The Contents API resolves ref=main at GitHub's current branch tip. Do not use
-    # raw.githubusercontent.com/.../main here: the raw CDN may serve the previous
-    # index after Publish has already pushed a new commit, even with query cache-busting.
-    url = f"{COLLECTION_INDEX_API_URL}?ref=main&v={time.time_ns()}"
+def fetch_contents_api_bytes(api_file_url: str, timeout: int = 30) -> bytes:
+    # GitHub's Contents API resolves ref=main without relying on the raw-file CDN.
+    # A cache-busting query and no-cache headers avoid intermediary reuse.
+    url = f"{api_file_url}?ref=main&v={time.time_ns()}"
     req = urllib.request.Request(
         url,
         headers={
@@ -67,17 +59,25 @@ def fetch_current_collection_index(timeout: int = 30) -> bytes:
     )
     with urllib.request.urlopen(req, timeout=timeout) as response:
         raw = response.read()
-        content_type = response.headers.get("Content-Type", "").lower()
-    # GitHub normally returns raw bytes for the requested media type. Retain a
-    # defensive fallback for deployments/proxies that return the JSON envelope.
-    if "json" in content_type and raw.lstrip().startswith(b"{"):
-        envelope = json.loads(raw.decode("utf-8"))
-        encoded = envelope.get("content")
-        if not isinstance(encoded, str):
-            raise ValueError("GitHub Contents API returned no file content")
-        import base64
-        return base64.b64decode(encoded)
+    # Some API frontends return the JSON envelope despite the raw media type.
+    # Only decode that envelope when its Base64 encoding marker is present; a
+    # real JSON file (such as the Icon snapshot) must remain untouched.
+    if raw.lstrip().startswith(b"{"):
+        try:
+            envelope = json.loads(raw.decode("utf-8"))
+        except (UnicodeDecodeError, json.JSONDecodeError):
+            envelope = None
+        if (
+            isinstance(envelope, dict)
+            and envelope.get("encoding") == "base64"
+            and isinstance(envelope.get("content"), str)
+        ):
+            return base64.b64decode(envelope["content"])
     return raw
+
+
+def fetch_current_collection_index(timeout: int = 30) -> bytes:
+    return fetch_contents_api_bytes(COLLECTION_INDEX_API_URL, timeout=timeout)
 
 
 def pinned_sha(snapshot: dict) -> str:
