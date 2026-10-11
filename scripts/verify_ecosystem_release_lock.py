@@ -6,6 +6,7 @@ stale or unreadable Icon snapshot must fail closed rather than emit a warning.
 """
 from __future__ import annotations
 
+import base64
 import hashlib
 import json
 import time
@@ -16,9 +17,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 LOCK = ROOT / "reports" / "ecosystem-release-lock.json"
 INDEX = ROOT / "rule" / "_index.yaml"
-ICON_SNAPSHOT_URL = (
-    "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/main/"
-    "config/collection_identity_snapshot.json"
+ICON_SNAPSHOT_API_URL = (
+    "https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/"
+    "contents/config/collection_identity_snapshot.json"
 )
 
 
@@ -28,18 +29,33 @@ def fail(message: str) -> int:
 
 
 def read_live_icon_snapshot() -> dict:
-    # Cache-bust the raw URL so verification does not depend on a stale CDN copy.
-    url = f"{ICON_SNAPSHOT_URL}?v={time.time_ns()}"
+    # Read the exact current Icon branch file through the Contents API, rather
+    # than a raw branch URL that can lag immediately after an identity PR merges.
+    url = f"{ICON_SNAPSHOT_API_URL}?ref=main&v={time.time_ns()}"
     req = urllib.request.Request(
         url,
         headers={
             "User-Agent": "Popular-Rules-Collection-release-lock-verifier",
+            "Accept": "application/vnd.github.raw+json",
+            "X-GitHub-Api-Version": "2022-11-28",
             "Cache-Control": "no-cache",
-            "Accept": "application/json",
+            "Pragma": "no-cache",
         },
     )
     with urllib.request.urlopen(req, timeout=60) as response:
-        snapshot = json.loads(response.read().decode("utf-8"))
+        raw = response.read()
+    if raw.lstrip().startswith(b"{"):
+        try:
+            envelope = json.loads(raw.decode("utf-8"))
+        except (UnicodeDecodeError, json.JSONDecodeError):
+            envelope = None
+        if (
+            isinstance(envelope, dict)
+            and envelope.get("encoding") == "base64"
+            and isinstance(envelope.get("content"), str)
+        ):
+            raw = base64.b64decode(envelope["content"])
+    snapshot = json.loads(raw.decode("utf-8"))
     if not isinstance(snapshot, dict):
         raise ValueError("Icon snapshot root is not an object")
     return snapshot
