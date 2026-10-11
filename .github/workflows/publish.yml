@@ -233,6 +233,60 @@ jobs:
           RUN_ID=$(cat release-candidate/run-id.txt)
           python scripts/p0_service_production_gate.py --report-only --run-id "${RUN_ID}"
 
+      - name: Verify cross-repository Icon dispatch credentials
+        shell: bash
+        env:
+          ICON_DISPATCH_TOKEN: ${{ secrets.ICON_DISPATCH_TOKEN }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          if [ -z "${ICON_DISPATCH_TOKEN:-}" ]; then
+            echo "::error::Missing ICON_DISPATCH_TOKEN; refusing to promote before Icon dispatch credentials are verified."
+            exit 1
+          fi
+          # This uses a dedicated event type that no workflow handles. It verifies
+          # repository_dispatch permission (Contents: write) without mutating either
+          # repository's files or triggering the identity refresh workflow.
+          python - <<'PY'
+          import json
+          import os
+          import urllib.error
+          import urllib.request
+
+          url = "https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/dispatches"
+          payload = {
+              "event_type": "collection-token-smoke-test",
+              "client_payload": {
+                  "source": "publish-pre-promotion",
+                  "run_id": os.environ["RUN_ID"],
+              },
+          }
+          req = urllib.request.Request(
+              url,
+              data=json.dumps(payload).encode("utf-8"),
+              method="POST",
+              headers={
+                  "Authorization": f"Bearer {os.environ['ICON_DISPATCH_TOKEN']}",
+                  "Accept": "application/vnd.github+json",
+                  "X-GitHub-Api-Version": "2022-11-28",
+                  "Content-Type": "application/json",
+              },
+          )
+          try:
+              with urllib.request.urlopen(req, timeout=30) as response:
+                  if response.status != 204:
+                      raise SystemExit(
+                          f"Icon repository_dispatch preflight returned HTTP {response.status}"
+                      )
+          except urllib.error.HTTPError as exc:
+              detail = exc.read(500).decode("utf-8", errors="replace")
+              raise SystemExit(
+                  f"Icon repository_dispatch preflight rejected before promotion: "
+                  f"HTTP {exc.code}: {detail}"
+              ) from exc
+          print("Icon repository_dispatch credentials verified; no files were changed.")
+          PY
+
       - name: Publish atomically
         shell: bash
         run: |
