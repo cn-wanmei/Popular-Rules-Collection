@@ -3,6 +3,11 @@ name: Ecosystem Status (Read Model)
 on:
   schedule:
     - cron: "30 5 * * *"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/ecosystem-status.yml"
+      - "scripts/generate_ecosystem_release_status.py"
   workflow_dispatch:
   workflow_run:
     workflows:
