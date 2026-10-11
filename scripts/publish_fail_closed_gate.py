@@ -42,6 +42,22 @@ def main() -> int:
     if "evidence_consistency_gate.py --run-id" in workflow and "--require-latest" not in workflow:
         errors.append("evidence consistency gate is present without --require-latest")
 
+    # Cross-repository dispatch credentials must be proven usable before any
+    # publication side effect; the smoke event is intentionally not handled by
+    # the Icon identity workflow.
+    dispatch_step = workflow.find("- name: Verify cross-repository Icon dispatch credentials")
+    promotion_step = workflow.find("- name: Publish atomically")
+    if dispatch_step < 0:
+        errors.append("publish.yml is missing pre-promotion Icon dispatch credential verification")
+    elif promotion_step < 0 or dispatch_step > promotion_step:
+        errors.append("Icon dispatch credentials must be verified before Publish atomically")
+    else:
+        dispatch_block = workflow[dispatch_step:promotion_step]
+        if "ICON_DISPATCH_TOKEN" not in dispatch_block:
+            errors.append("pre-promotion Icon dispatch credential check must use ICON_DISPATCH_TOKEN")
+        if "collection-token-smoke-test" not in dispatch_block:
+            errors.append("pre-promotion Icon dispatch credential check must use an unhandled smoke event")
+
     # The post-promotion lock must reconcile Icon against the newly promoted
     # index before the strict writer runs. Checking only for both snippets is
     # insufficient: the order is the consistency contract.
