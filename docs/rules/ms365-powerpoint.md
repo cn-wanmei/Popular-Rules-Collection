@@ -16,14 +16,14 @@
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/ms365-powerpoint/ms365-powerpoint.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `f865f4e3dfbb3bf8dce3b732d5e956b57c7259ee02ca58abb611b7a964ac7d0e` |
+| SHA-256 | `c46119ad43ea12bca50d0fd42064b0157f9d891b233d62d48d7afbd9e5a3ddc5` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261010T102103338087Z-run` |
-| IR digest | `8ef4ca4cdaf8d3566058281bbb0842a4f5afac7d18b6472bebf5de9632524bed` |
+| Run ID | `20261011T030457497160Z-run` |
+| IR digest | `68940ef5750699d309d2a03acf1c082b52d5de1de7e39af08471773d2e8a9fbe` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

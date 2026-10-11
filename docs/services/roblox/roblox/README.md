@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `roblox` |
 | 规则浏览路径 | `rule/roblox/roblox/roblox.yaml` |
-| 规则数量（_index） | **47** |
-| SHA-256 | `b98c5c72e53e2bc2e5634667ce2983af9004989ebd7d3395a84eb6ed14997537` |
+| 规则数量（_index） | **52** |
+| SHA-256 | `96eb7e9812c926d33b2122167057dc691c3b00129f6dfe52a1107b40e2c8c6f4` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261010T102103338087Z-run` |
-| IR digest | `8ef4ca4cdaf8d3566058281bbb0842a4f5afac7d18b6472bebf5de9632524bed` |
+| Run ID | `20261011T030457497160Z-run` |
+| IR digest | `68940ef5750699d309d2a03acf1c082b52d5de1de7e39af08471773d2e8a9fbe` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 47 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/roblox/roblox/roblox.yaml` |
-| loon | 47 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/roblox/roblox/roblox.list` |
-| mihomo | 47 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/roblox/roblox/roblox.yaml` |
-| quantumultx | 47 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/roblox/roblox/roblox.list` |
-| shadowrocket | 47 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/roblox/roblox/roblox.list` |
+| egern | 143 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/roblox/roblox/roblox.yaml` |
+| loon | 143 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/roblox/roblox/roblox.list` |
+| mihomo | 143 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/roblox/roblox/roblox.yaml` |
+| quantumultx | 143 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/roblox/roblox/roblox.list` |
+| shadowrocket | 143 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/roblox/roblox/roblox.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/roblox/roblox/roblox.json` |
-| surge | 47 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/roblox/roblox/roblox.list` |
+| surge | 143 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/roblox/roblox/roblox.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

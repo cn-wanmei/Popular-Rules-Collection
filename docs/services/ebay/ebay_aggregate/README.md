@@ -16,14 +16,14 @@
 | Provider | `ebay` |
 | 规则浏览路径 | `rule/ebay/ebay_aggregate/ebay_aggregate.yaml` |
 | 规则数量（_index） | **370** |
-| SHA-256 | `304939ac9fd513d9b5390c2c862572c3f33c381a0f2da862ee300e4d9b60593a` |
+| SHA-256 | `643c0d149b23fd7f2d1d8d49d93193726f38d90da86118230061e5d33a83820d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261010T102103338087Z-run` |
-| IR digest | `8ef4ca4cdaf8d3566058281bbb0842a4f5afac7d18b6472bebf5de9632524bed` |
+| Run ID | `20261011T030457497160Z-run` |
+| IR digest | `68940ef5750699d309d2a03acf1c082b52d5de1de7e39af08471773d2e8a9fbe` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

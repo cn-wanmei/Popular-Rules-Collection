@@ -1,0 +1,10 @@
+<!-- PATH_LINKS_GENERATED_START -->
+# Meta · `loon`
+
+- **Service ID:** `meta`
+- **本文件 Raw:** `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/meta/meta/meta.list`
+- **说明文档:** [docs/rules/meta.md](https://github.com/cn-wanmei/Popular-Rules-Collection/blob/main/docs/rules/meta.md)
+- **浏览用规则:** `rule/meta/meta/meta.yaml`（非运行时输入）
+
+本目录其它文件为客户端规则正文；本 README 为自动生成的快速链接（Path Links G3）。
+<!-- PATH_LINKS_GENERATED_END -->
