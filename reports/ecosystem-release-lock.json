@@ -1,9 +1,9 @@
 {
   "schema": "popular_rules_ecosystem_release_lock_v1",
-  "generated_at": "2026-10-10T14:40:05.946599+00:00",
+  "generated_at": "2026-10-11T02:23:16.868938+00:00",
   "collection": {
-    "commit": "ddeffc55d18c2897a441a50915a72a0db79c4d89",
-    "index_sha256": "9c91c400dbac671b8b7001dde9cac2b7dadebc503f60bd67d1f7a01c7daa0c37",
+    "commit": "a4b9150ea54ce9915e8249b394490e22a917ab43",
+    "index_sha256": "0af031a7080f91804977192694ab32f47c5e842fc51e5ec3b2169bbe71efcee5",
     "run_id": null
   },
   "source": {
@@ -19,8 +19,8 @@
     "release_id": "icon-2026.10.06.full1",
     "rollback_id": "icon-2026.09.30.clean1",
     "frozen": true,
-    "collection_identity_ref": "e32ab88e3391ea4a2d010d2f4d269f405acf4bc4",
-    "collection_identity_sha256": "9c91c400dbac671b8b7001dde9cac2b7dadebc503f60bd67d1f7a01c7daa0c37",
+    "collection_identity_ref": "1376fd6d4c9170b08e3b7554db0c63e38ecfc28d",
+    "collection_identity_sha256": "0af031a7080f91804977192694ab32f47c5e842fc51e5ec3b2169bbe71efcee5",
     "identity_matches_index": true
   },
   "clients": {}
