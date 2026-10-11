@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import time
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
@@ -33,8 +34,22 @@ def git_head() -> str:
 
 
 def fetch_bytes(url: str, timeout: int = 60) -> bytes:
-    with urllib.request.urlopen(url, timeout=timeout) as r:
-        return r.read()
+    # Raw GitHub URLs can lag immediately after a branch promotion. Add a cache
+    # buster and explicit no-cache headers so the lock reads the same live
+    # identity that the coordinator just verified.
+    separator = "&" if "?" in url else "?"
+    fresh_url = f"{url}{separator}v={time.time_ns()}"
+    req = urllib.request.Request(
+        fresh_url,
+        headers={
+            "User-Agent": "Popular-Rules-Collection-release-lock-writer",
+            "Accept": "application/json, application/yaml, text/plain, */*",
+            "Cache-Control": "no-cache",
+            "Pragma": "no-cache",
+        },
+    )
+    with urllib.request.urlopen(req, timeout=timeout) as response:
+        return response.read()
 
 
 def fetch_json(url: str) -> dict:
@@ -67,7 +82,7 @@ def main() -> int:
     icon_ref = None
     src = icon_snap.get("source") if isinstance(icon_snap, dict) else None
     if isinstance(src, dict):
-        icon_sha = src.get("file_sha256")
+        icon_sha = src.get("file_sha256") or src.get("file_sha")
         icon_ref = src.get("ref")
 
     if args.require_icon_identity:
