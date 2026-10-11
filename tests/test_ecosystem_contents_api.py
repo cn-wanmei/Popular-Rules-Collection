@@ -5,6 +5,7 @@ import json
 from scripts import ensure_icon_identity as identity
 from scripts import verify_ecosystem_release_lock as verifier
 from scripts import write_ecosystem_release_lock as writer
+from scripts import generate_ecosystem_release_status as status
 
 
 class FakeResponse:
@@ -92,3 +93,31 @@ def test_strict_verifier_reads_live_icon_snapshot_via_contents_api(monkeypatch):
     assert "ref=main" in observed["url"]
     assert observed["accept"] == "application/vnd.github.raw+json"
     assert "raw.githubusercontent.com" not in observed["url"]
+
+
+
+def test_status_read_model_uses_authenticated_uncached_contents_api(monkeypatch):
+    expected = {
+        "schema": "collection_icon_identity_snapshot_v1",
+        "source": {"file_sha256": "f" * 64, "ref": "a" * 40},
+    }
+    raw = json.dumps(expected).encode("utf-8")
+    monkeypatch.setenv("GITHUB_TOKEN", "read-model-test-token")
+    observed = install_api_response(monkeypatch, status, raw)
+
+    result, error = status.fetch_bytes(
+        "https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/"
+        "contents/config/collection_identity_snapshot.json?ref=main"
+    )
+
+    assert error is None
+    assert result == raw  # Real JSON content is not mistaken for an API envelope.
+    assert observed["url"].startswith(
+        "https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/contents/"
+    )
+    assert "ref=main" in observed["url"]
+    assert "v=" in observed["url"]
+    assert "raw.githubusercontent.com" not in observed["url"]
+    assert observed["accept"] == "application/vnd.github.raw+json"
+    assert observed["authorization"] == "Bearer read-model-test-token"
+    assert observed["cache_control"] == "no-cache"
