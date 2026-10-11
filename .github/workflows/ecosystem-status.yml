@@ -36,6 +36,8 @@ jobs:
           python-version: "3.12"
 
       - name: Regenerate and commit against current main (no rebase)
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
