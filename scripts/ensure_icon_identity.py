@@ -36,27 +36,33 @@ ICON_DISPATCH_URL = "https://api.github.com/repos/cn-wanmei/Popular-Rules-Icon/d
 def fetch_snapshot(timeout: int = 20) -> dict:
     # Contents API reads the current branch object directly and avoids stale
     # raw.githubusercontent.com branch-cache responses after the snapshot PR merges.
-    raw = fetch_contents_api_bytes(ICON_SNAPSHOT_API_URL, timeout=timeout)
+    raw = fetch_contents_api_bytes(
+        ICON_SNAPSHOT_API_URL,
+        timeout=timeout,
+        token=os.environ.get("ICON_DISPATCH_TOKEN", "").strip() or None,
+    )
     data = json.loads(raw.decode("utf-8"))
     if not isinstance(data, dict):
         raise ValueError("Icon identity snapshot root is not an object")
     return data
 
 
-def fetch_contents_api_bytes(api_file_url: str, timeout: int = 30) -> bytes:
+def fetch_contents_api_bytes(
+    api_file_url: str, timeout: int = 30, *, token: str | None = None
+) -> bytes:
     # GitHub's Contents API resolves ref=main without relying on the raw-file CDN.
     # A cache-busting query and no-cache headers avoid intermediary reuse.
     url = f"{api_file_url}?ref=main&v={time.time_ns()}"
-    req = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": "Popular-Rules-Collection-identity-coordinator",
-            "Accept": "application/vnd.github.raw+json",
-            "X-GitHub-Api-Version": "2022-11-28",
-            "Cache-Control": "no-cache",
-            "Pragma": "no-cache",
-        },
-    )
+    headers = {
+        "User-Agent": "Popular-Rules-Collection-identity-coordinator",
+        "Accept": "application/vnd.github.raw+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+    }
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req, timeout=timeout) as response:
         raw = response.read()
     # Some API frontends return the JSON envelope despite the raw media type.
