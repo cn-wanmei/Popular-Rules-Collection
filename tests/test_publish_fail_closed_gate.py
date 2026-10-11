@@ -37,3 +37,28 @@ def test_publish_fail_closed_gate_rejects_ignored_status_failure(tmp_path: Path)
     )
     assert result.returncode == 1, result.stdout + result.stderr
     assert "status.yml contains forbidden fail-open construct: ignore_failure" in result.stdout
+
+
+
+def test_publish_fail_closed_gate_requires_dispatch_preflight_before_promotion(tmp_path: Path) -> None:
+    original = (ROOT / ".github" / "workflows" / "publish.yml").read_text(encoding="utf-8")
+    mutated = original.replace(
+        "      - name: Verify cross-repository Icon dispatch credentials\n",
+        "      - name: Removed dispatch preflight\n",
+        1,
+    )
+    workflow = tmp_path / "publish.yml"
+    workflow.write_text(mutated, encoding="utf-8")
+
+    result = subprocess.run(
+        [sys.executable, str(GATE), "--workflow", str(workflow)],
+        cwd=ROOT,
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    assert result.returncode == 1, result.stdout + result.stderr
+    assert (
+        "publish.yml is missing pre-promotion Icon dispatch credential verification"
+        in result.stdout
+    )
