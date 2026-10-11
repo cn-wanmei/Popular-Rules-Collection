@@ -4,14 +4,27 @@ entity: service
 id: xbox
 display_name: Xbox
 generated_from:
-  run_id: 20261010T102103338087Z-run
+  run_id: 20261011T005908166456Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 8ef4ca4cdaf8d3566058281bbb0842a4f5afac7d18b6472bebf5de9632524bed
+  ir_digest: 68940ef5750699d309d2a03acf1c082b52d5de1de7e39af08471773d2e8a9fbe
 stats:
-  total: 42
+  total: 46
   by_type:
+    DOMAIN: 4
     DOMAIN_SUFFIX: 42
 rules:
+- id: 2fff0b1dc5ff761ed96660592364174e0efe91b1dbcf4f1a236fd098305f7ab5
+  type: DOMAIN
+  value: img-prod-cms-rt-microsoft-com.akamaized.net
+- id: 8bae6a0b905b7b1cfd2309f0c7f890a4d62224b5d5db61c2bb8b912a3642762d
+  type: DOMAIN
+  value: login.live.com
+- id: 7d7a577f4b4e483f125dcf68eb540641c617df891bd9329064b41e4040ad36b0
+  type: DOMAIN
+  value: logincdn.msauth.net
+- id: 39156290c26ac6d2eeb1f7b758ed9816136ad8efab1a30d6759e05cfac3f81a1
+  type: DOMAIN
+  value: store-images.s-microsoft.com
 - id: 0b91644055601c5e5f9747bf3cd7fc49ddaa0dab79c1c2c94d08b2137c9d3f93
   type: DOMAIN_SUFFIX
   value: beth.games

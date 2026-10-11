@@ -4,14 +4,14 @@ entity: provider_aggregate
 id: alibaba
 display_name: Alibaba
 generated_from:
-  run_id: 20261010T102103338087Z-run
+  run_id: 20261011T005908166456Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 8ef4ca4cdaf8d3566058281bbb0842a4f5afac7d18b6472bebf5de9632524bed
+  ir_digest: 68940ef5750699d309d2a03acf1c082b52d5de1de7e39af08471773d2e8a9fbe
 stats:
-  total: 539
+  total: 599
   by_type:
     DOMAIN-KEYWORD: 4
-    DOMAIN_SUFFIX: 480
+    DOMAIN_SUFFIX: 540
     IP_CIDR: 53
     IP_CIDR6: 1
     PROCESS_NAME: 1
@@ -28,6 +28,9 @@ rules:
 - id: 595cd36891df3f0df7bafc1aaad78a84a67efffb44ba20b41eac0b0c67338530
   type: DOMAIN-KEYWORD
   value: tmall
+- id: 36797a8b2196eeaad88b436b0ede2e68033d8354e3cbb3061653a046d1ba39f9
+  type: DOMAIN_SUFFIX
+  value: 0co3geye.cn
 - id: 754f71f3239441058481c194e09323c9600072d11b1cc8bd6629b0b4cdd1e7c3
   type: DOMAIN_SUFFIX
   value: 11222.cn
@@ -37,6 +40,15 @@ rules:
 - id: 29ef61c82622835fb2e777efa6ff234addb48960ffaaef6d85d906cf8e2508d7
   type: DOMAIN_SUFFIX
   value: 25pp.com
+- id: 0d9335d163a92a569bedfa2310e087cfbc81cc5657954a5e479ce547e2644fc2
+  type: DOMAIN_SUFFIX
+  value: 2isbbess.cn
+- id: 21b0f52f0c8517046e3e5e2bec49e754af4d665f57df72e89b6628b78196ff07
+  type: DOMAIN_SUFFIX
+  value: 33lwhaoinc.cn
+- id: a0cdbeeacd2223082cfa39062f3ea0a1c0152b9097d2a4a1a9757e879b0c1b12
+  type: DOMAIN_SUFFIX
+  value: 52mtkvideo.cn
 - id: 85a206ca24bc3bb41b86462a178808db25bcd9b6a2be7e451d5c3eee9e09f6cc
   type: DOMAIN_SUFFIX
   value: 56che.com
@@ -322,9 +334,18 @@ rules:
 - id: 58ec4ef04884b6b3c02da3611305b555f70c821e0b31ab000f67e796fc2c54f0
   type: DOMAIN_SUFFIX
   value: alipan.com
+- id: 07089b406bd528626fa435215668065a92736eb5ea9c36888f0b4a6ab2f0a82f
+  type: DOMAIN_SUFFIX
+  value: alipay-corp.com
 - id: 5e0380111fba12ac2543e46ba79d94db454b103a6b1d0a60a895c2aa1c0f5ffa
   type: DOMAIN_SUFFIX
   value: alipay-eco.com
+- id: 5dde87d2f1c14f2cc32d60dd635c5c7a9f98dd3eed440050c89c629ec7314e0a
+  type: DOMAIN_SUFFIX
+  value: alipay-inc.com
+- id: 7eee8bcdae44bcc6efa37d0f2653624787a676251bc9e70f405afed24a7fb977
+  type: DOMAIN_SUFFIX
+  value: alipay-traffic.com
 - id: bd007c955068123c20b8cebc0cd2aa077857299bedf3c4cdc3bc18bf31eadf46
   type: DOMAIN_SUFFIX
   value: alipay.cn
@@ -337,9 +358,21 @@ rules:
 - id: 6f1edc3596bb7c1ad785c7846d8cd6589d445e1603dc0fb68fe3ba2d90e569aa
   type: DOMAIN_SUFFIX
   value: alipay.hk
+- id: d5e19e2b892aaf55f89d6c431dac03479ed6a98776d028c9c4384cd6ee9b4ecf
+  type: DOMAIN_SUFFIX
+  value: alipay.net
+- id: 4ec0229b037537b40cc1fe8e924fc9d780ddef442b9c6d8d0d70d7b3ed16a8ec
+  type: DOMAIN_SUFFIX
+  value: alipaydesign.com
+- id: 1b834e0689d8160aaba48fe401dba887065a99fc526d59371116f5d475105d0f
+  type: DOMAIN_SUFFIX
+  value: alipaydev.com
 - id: 0c7a75890de1eb68ce4e57d25af6c17854f6cb635b2b9ff7f0be7b2cfe23d2e1
   type: DOMAIN_SUFFIX
   value: alipaydns.com
+- id: 7bf9c6aa844619d45341e290e0674a93a96fbfdba37a60ab11813b8c225d8d77
+  type: DOMAIN_SUFFIX
+  value: alipayeshop.com
 - id: 7c5faa875040f6511379103d1e837c4d07c5c4c6636fa2dd318bd3cc4f610ca5
   type: DOMAIN_SUFFIX
   value: alipaylog.com
@@ -508,6 +541,9 @@ rules:
 - id: 62037c3e56a4e5cc40c49626feb7948a597377e04f46566cc5974b0918108971
   type: DOMAIN_SUFFIX
   value: b2byao.com
+- id: 67e0dd2eac883b6f0e6fd732c68358d78060ad645ae9793870befc61f7157d18
+  type: DOMAIN_SUFFIX
+  value: b82yxres.cn
 - id: 9f6c51760b70374a856e9bb4379c1754531353c26a8e84bf2bf0035e4b1a7850
   type: DOMAIN_SUFFIX
   value: baichuan-sdk.alicdn.com
@@ -655,6 +691,9 @@ rules:
 - id: 40728790214d60c99cb64fe0880f6d7af6bf23f8c39d58187375c63f3e147a52
   type: DOMAIN_SUFFIX
   value: e.stat.ykimg.com
+- id: cd13d99a7ffa5c6af1e18cc28be44a6ccaddf788bef7e8b5ece7ae08e79bc495
+  type: DOMAIN_SUFFIX
+  value: e8h2ty.tdum.alibaba.com
 - id: bf9046ed6beacb55114909b9112a00b5156c305fd084e212f87be1c14393e833
   type: DOMAIN_SUFFIX
   value: ele.me
@@ -664,6 +703,9 @@ rules:
 - id: 60f08652239282b54fd00a99fdf9d9f25e2b5c25b8c6251abe3dcf1ea576331d
   type: DOMAIN_SUFFIX
   value: eleme.cn
+- id: 333994f75d4db2d6bee1f89ee07249a15b54c2f4b9d3842fc6c51084d93515c3
+  type: DOMAIN_SUFFIX
+  value: eleme.com.cn
 - id: 16aeeb6a3479cec88b5436c1b11f3da1108729ada1402eb2c50af64a5f54ab43
   type: DOMAIN_SUFFIX
   value: eleme.io
@@ -685,6 +727,9 @@ rules:
 - id: c33450dbb4a58d8c53142eda57dd241620fcf93831fedd4e901606bb911f1e83
   type: DOMAIN_SUFFIX
   value: etao.com
+- id: 75e3b107d440958d2f018af02f95bbe2116c70fc69f2916201aabcdd93dae5cc
+  type: DOMAIN_SUFFIX
+  value: ewqcxz.com
 - id: 2be435b6e82b6b4818b8e6fa119ffbaff14fe9a35a5120aa4d7c7210e4055863
   type: DOMAIN_SUFFIX
   value: fcapp.run
@@ -697,6 +742,12 @@ rules:
 - id: c43332e3d214a9eaa705a4630efa3477d86381e445effae06a82a2d5d1763a4c
   type: DOMAIN_SUFFIX
   value: fengniaojipei.net
+- id: 4c2fbbeab53d04f0953e5718e700a77a7754d0923985d5bb5d749aa86893d366
+  type: DOMAIN_SUFFIX
+  value: fengniaopaotui.cn
+- id: 694eb47e920fee6edc5710c9416a12f816f3319a33bb060c69afeee2f6b5ee3e
+  type: DOMAIN_SUFFIX
+  value: fengniaozhongbao.cn
 - id: ab98dae3566d4eef32764b8fd3205fee26e05e859ad2ced3653f69d715065523
   type: DOMAIN_SUFFIX
   value: fliggy.com
@@ -721,6 +772,9 @@ rules:
 - id: f90809ab749e771fe097152bcef0563e7da400c57c5ac10c67205bf5428129c7
   type: DOMAIN_SUFFIX
   value: g.click.taobao.com
+- id: f1cf2025f40c7f68bf98388555dd0ecd658f50dc5a11a0874e5f534a616b5d16
+  type: DOMAIN_SUFFIX
+  value: gamenow.club
 - id: d043c037d04e88f4957c89e965c963ef96a0ceb8fb76448475a00402088fd460
   type: DOMAIN_SUFFIX
   value: gaode.com
@@ -763,6 +817,9 @@ rules:
 - id: e73f005f525aff565f2e5552108cf5181603d7bd3dd46a1fd8146063d1175e50
   type: DOMAIN_SUFFIX
   value: hichina.com
+- id: 3ce06604c1171020ad778b8e67cc995d219ebc50b22253efac3a4b550b473549
+  type: DOMAIN_SUFFIX
+  value: hjkhjkl.com
 - id: 8e5ff15cee00f227e60a4b9e0f9191e8bff3bc28bf1b98ff34dedf65ab01ba0f
   type: DOMAIN_SUFFIX
   value: hotfix-api.aliyuncs.com
@@ -787,9 +844,15 @@ rules:
 - id: b0ec3849d7f0d5021120ac4ce61bd0d579ffbfe969219365864ba9a6ff60e873
   type: DOMAIN_SUFFIX
   value: ics.design
+- id: 8e394f72d881d2c778b7adb412275d070e131d5eccea09b7bba8f06a01f3e1ab
+  type: DOMAIN_SUFFIX
+  value: ifaa.org.cn
 - id: 6aed7040aa16f490619ace757991a68fe4521740df13f650162c54ac1cffdf69
   type: DOMAIN_SUFFIX
   value: imgcook.com
+- id: 1a1e9cd891be7917dd7952e812b25b161379a8c5b117a0e0278f35262b933028
+  type: DOMAIN_SUFFIX
+  value: iopiopl.com
 - id: 162d3d433e10676696f07726694377309afd8fc6924af2146d6e9db7c2fe8036
   type: DOMAIN_SUFFIX
   value: ishuqi.com
@@ -829,6 +892,9 @@ rules:
 - id: f3adde90a6a6cf4aada1b34d12a64d69ff6c38321f00fc82453c6279ead97606
   type: DOMAIN_SUFFIX
   value: kumiao.com
+- id: 61dd864b46a8d5d9ba331b4d6a377d28dd1540370c00b889d3042da3a9da93a3
+  type: DOMAIN_SUFFIX
+  value: kumiao.tv
 - id: 2e38220435aa40e05a2662596f826272cc40ca42d6912a1cae41b8311da0af68
   type: DOMAIN_SUFFIX
   value: kunlunaq.com
@@ -889,6 +955,18 @@ rules:
 - id: d3c039e9ac30ccfb977f4a9233641873cc94579ad181d0feb12a0393304bb5f6
   type: DOMAIN_SUFFIX
   value: kunlunwe.com
+- id: a72cd340ad884a263636afaed10388f976281084750b0d1c8ad9e27fc13d9e8e
+  type: DOMAIN_SUFFIX
+  value: kuxiaomiao.cn
+- id: 4af4fae48ee82b79d50e4f39a4cbf4e91fd557df1e7f42d1befc384983526fdb
+  type: DOMAIN_SUFFIX
+  value: kuxiaomiao.com
+- id: dd438c0f99d9a1de34f97170fc8ea05e986b6d9167b05d1296ac89d22213b74f
+  type: DOMAIN_SUFFIX
+  value: kuxiaomiao.com.cn
+- id: 4602173017b52393b18f405c953c7d88cc08f48629c276c89e911e9e404b7dd9
+  type: DOMAIN_SUFFIX
+  value: kuxiaomiao.net
 - id: 911619103716a564c1afdbb2c6bdda6ee504b240b642397128af7bf7b035bf38
   type: DOMAIN_SUFFIX
   value: laiwang.com
@@ -904,6 +982,9 @@ rules:
 - id: 700be6c20873f98214f84b3b9cacae85a0489db6117c65f1e2e3822585672068
   type: DOMAIN_SUFFIX
   value: lingxigames.com
+- id: 8efdbcba1d6fba26fd42b4fdcc4305571fd10fff65849c5afffb758b54c576bf
+  type: DOMAIN_SUFFIX
+  value: lkjujm.com
 - id: de2b73571354879899e5f5e41cae1e86096ff2d43b3c0bd2672535ba279788cb
   type: DOMAIN_SUFFIX
   value: log-global.aliyuncs.com
@@ -916,6 +997,9 @@ rules:
 - id: 6a9cb523bcecc996babb464c90a384388ed67e35febbec61e0cc99d149aff500
   type: DOMAIN_SUFFIX
   value: lstat.youku.com
+- id: 0cbd21f8e027101d73a0ede011481bc1c963ca33c4c8ca5c005728bc59bda9ce
+  type: DOMAIN_SUFFIX
+  value: luohanacademy.com
 - id: b3086cccf42f00a0e88ca9edd4406940259ffe0f2ec4ca2494e5c7e4a42ae227
   type: DOMAIN_SUFFIX
   value: lwurl.to
@@ -973,6 +1057,9 @@ rules:
 - id: 6dbfaa7abddf6eca9d7fae705d17aca3247b9a6f044f51eac6083ed96cdaa9f1
   type: DOMAIN_SUFFIX
   value: mmstat.com
+- id: 4892c228b37e2cc00d391a2d830060afa573fe4fb2c77ce1b87ce67c9b7ef068
+  type: DOMAIN_SUFFIX
+  value: mnbvdfg.com
 - id: ed4e85f679ad9c71c8abe552425f18aca038ab04df8479a3de13963651debd8e
   type: DOMAIN_SUFFIX
   value: mobilemsg.youku.com
@@ -1009,12 +1096,18 @@ rules:
 - id: ddabc51f011623fbee1acf2e854f7de94c00f5bc5e77f8592bd14e2dfdb0d4e4
   type: DOMAIN_SUFFIX
   value: newstjk.com
+- id: effcfcc91b89b3a915ae7fa3b86f31118dc577ba596d9386c8ecb7fa9eccf703
+  type: DOMAIN_SUFFIX
+  value: nfmrtfv.com
 - id: d3b295e55aec1a2c120f4818d46758bf0984dee2e5800063fde046e4cee4d91d
   type: DOMAIN_SUFFIX
   value: nic.xin
 - id: b79beb01e0b6600b969cc079be1fe7c0cde79b7c6503ce614cc124b761d4053e
   type: DOMAIN_SUFFIX
   value: npmmirror.com
+- id: 1a1e0eb0148009b998a66756767a2b29d3813a66962cdaf759f605c01de7a920
+  type: DOMAIN_SUFFIX
+  value: ns6mitkxo.cn
 - id: a3aee321c22552376cf9fb5f055e953dbf49b6cb8dfe2a01a7b3445ab043bc84
   type: DOMAIN_SUFFIX
   value: oc.umeng.com
@@ -1135,18 +1228,27 @@ rules:
 - id: 042f354850ad7d8ef16ea03b129ce1f3a164ff7dac87c3a409065ba7241c89f4
   type: DOMAIN_SUFFIX
   value: plbslog.umeng.com
+- id: 2385f741021c6b87e333a2f246558358d2949486e50f54c142b1692221d727ef
+  type: DOMAIN_SUFFIX
+  value: poiuytw.com
 - id: c4d96cc51ee01f8af6712d7ca1f3f869aaf3cefb67fa08b1046430dc0f673c19
   type: DOMAIN_SUFFIX
   value: pp.cn
 - id: a60d1f69dbadf25d0f93126e24d38d5e109f19157c83633385d20f9e587c2186
   type: DOMAIN_SUFFIX
   value: puata.info
+- id: dd85e4f77d922d3fe986c6c39d803e42bf3af0b8f9ffe6b3662b6bc38f467d51
+  type: DOMAIN_SUFFIX
+  value: qazasd.com
 - id: 3245f079c1a1d62d7e32c1afdd131d4d4a6a4a5d4cf556110bef20ce256b9844
   type: DOMAIN_SUFFIX
   value: qingtingtrip.com
 - id: 517dd8e318a73b62a66ec1a64cceeef9d3694d5874dcff5bc00a9c9cb5a66ccf
   type: DOMAIN_SUFFIX
   value: quark.cn
+- id: 9a653ab6312d98839e995152350439949acfca7644ab47cbf7d09834423f5de9
+  type: DOMAIN_SUFFIX
+  value: redfcv.com
 - id: 150c821d6986f40437f82a1ce90cbdf4d9a4f0b9cd3adfe61ddb15b929291156
   type: DOMAIN_SUFFIX
   value: registry.aliyuncs.com
@@ -1192,9 +1294,18 @@ rules:
 - id: df22be763f0f935bc5b1bc11cece6c2e2856aabe594056b53d2d6bab52f824c3
   type: DOMAIN_SUFFIX
   value: shyhhema.com
+- id: f52a497a37a749c8cfa1472a07a065ff6492e1159c96df84971cb72ab3f9e453
+  type: DOMAIN_SUFFIX
+  value: sinopayment.com.cn
+- id: c4862f44bbedf1f56038ca6f178a37698c0023886bab5fadb582640679453b7e
+  type: DOMAIN_SUFFIX
+  value: sk2cdsnw.cn
 - id: 967f85a88220f52d3f7afab591352fe2c2e7ae9b8b7df80ae69ae760dc911ab6
   type: DOMAIN_SUFFIX
   value: sm.cn
+- id: 41259cf693ba3d065af6ec59bc69c600e08dc1795f20d140a9370d679b0f63c2
+  type: DOMAIN_SUFFIX
+  value: sogoodtech1.cn
 - id: 560e5f88bec17b2a6c3ee7ce1ce8a85fdbbd935a9ca3389fcaa52dea4e8b9c4c
   type: DOMAIN_SUFFIX
   value: soku.com
@@ -1216,6 +1327,9 @@ rules:
 - id: 2e8483225c28a36a050c574e977862ac285f35fe7a68aa3e7fe9a2295613e66b
   type: DOMAIN_SUFFIX
   value: supet.com
+- id: 361df2d2e26c1b9242a9b6895b02c58b4665161be14bb14c1e65c1f75e0bcd54
+  type: DOMAIN_SUFFIX
+  value: svfrrg.com
 - id: e7fdcc7c52363f3cd27ff9376ad61f315ad151a8c2b91ece0a28709c4374b3f9
   type: DOMAIN_SUFFIX
   value: table.dingtalk.com
@@ -1267,6 +1381,9 @@ rules:
 - id: 43e9cb53b45f31d246a9b48b3999b3b861226c5812e923486a9ece4e8e8d26d7
   type: DOMAIN_SUFFIX
   value: teambitionapis.com
+- id: 669f41d718fea42507a9736bae202914b5c253086de0f67fc701e54d0d1aa983
+  type: DOMAIN_SUFFIX
+  value: tfgvb.com
 - id: 6943f24cf6388b2261a95e16f4e2d9e146df4d1bfe8378c350d0dd95a79cd354
   type: DOMAIN_SUFFIX
   value: tmall.com
@@ -1312,6 +1429,9 @@ rules:
 - id: b674a12658514a51722659354a53323738c45ad889414f4e5da7834d372f86be
   type: DOMAIN_SUFFIX
   value: uczzd.cn
+- id: 1b990ba13cefc0b95f4d82f57a41b2193cfbb7f742ebc1d1c8ec81cedd0b540f
+  type: DOMAIN_SUFFIX
+  value: ukoo.com.cn
 - id: 467483f645d6172fafacc75cf7e74da5ac9df582ed9b229ceef6a0f1f621d3cd
   type: DOMAIN_SUFFIX
   value: ulogs.umeng.com
@@ -1333,6 +1453,9 @@ rules:
 - id: 2369de97f87a667ccc7bf15652c3891f3b6fcf390f1a7365a46040babb4144ab
   type: DOMAIN_SUFFIX
   value: utoken.umeng.com
+- id: 6375dc948db289abdd851d0ee9b9e1e5476201d7c00740b1dda65046bd440eb9
+  type: DOMAIN_SUFFIX
+  value: uyhjnm.com
 - id: 0efc1c5f4934fb29a52c9e599a35fce8aa612c8e8dbe814e223e966198e85378
   type: DOMAIN_SUFFIX
   value: uyunad.com
@@ -1351,6 +1474,9 @@ rules:
 - id: c6aa3dc6cbbfcf98454e993650ff333970d292a3914a05331ad88714daf3e70d
   type: DOMAIN_SUFFIX
   value: v6-adashx.ut.youku.com
+- id: 4a6f0b429db0caa0a7f9cd589b9e63520ad3428ea98bd033ede0721bdfcb9fa6
+  type: DOMAIN_SUFFIX
+  value: vbmnmy.com
 - id: 3afe6ffe9004d9b270067125b1965f3c5f110fd45a590f7032bac2bac47159b5
   type: DOMAIN_SUFFIX
   value: w.cnzz.com
@@ -1360,9 +1486,21 @@ rules:
 - id: 5d67f43fc19861d4f825d10c8f05018002fc5d7f7274e363658cfe8961c9bc1d
   type: DOMAIN_SUFFIX
   value: wdjimg.com
+- id: 0e28ced718aeb1bf96c5a6909cd5b8b1fa338d03ab7461a119db16aea0f15bdb
+  type: DOMAIN_SUFFIX
+  value: wenyupages.com
 - id: 33c1405ea78c968624da0f51a8c878b70b9094169b4ef257e30d53982c4ef647
   type: DOMAIN_SUFFIX
   value: whalecloud.com
+- id: ad9e7fd71ea2fa9889a0bd9f64d9d7912b240d0153df207e9c7a3244ad2ce20b
+  type: DOMAIN_SUFFIX
+  value: wingsmobiletek.cn
+- id: a4be506f3cb1f07da139bcea7a6b33b18144ffc77f44ac3494e38e6bfd17d894
+  type: DOMAIN_SUFFIX
+  value: wsxsdf.com
+- id: bd951ff253b5c2daf2bc7b68e907a00ffe580501665edb0aa359145369e028cc
+  type: DOMAIN_SUFFIX
+  value: wwc.alicdn.com
 - id: 4de5a0293c52df2a0b758f3c981a67f19f8747033497bf9241b5cc60924c2a87
   type: DOMAIN_SUFFIX
   value: www.1688.com
@@ -1396,6 +1534,9 @@ rules:
 - id: 29db2779cdfc5d179903843094838046e21fff52f76e516df63e1f3d09018dbc
   type: DOMAIN_SUFFIX
   value: www.youku.com
+- id: 18f9c376169ff0845edf75dc4e40da62cc795626377f2328e5218e63c1190dbf
+  type: DOMAIN_SUFFIX
+  value: xcbbtf.com
 - id: 81bb6ae19f4960e3960d8b74a722e341bfeb36b5260ed4c786c709779151de62
   type: DOMAIN_SUFFIX
   value: xiami.com
@@ -1405,15 +1546,24 @@ rules:
 - id: 73923ec4f648f3439a01a76cc88bf83df63772c93fc41af0c20b0bd6343e8109
   type: DOMAIN_SUFFIX
   value: xiami.net
+- id: 899a83fcc2eddf110bbf2233249c409e67c0027f8782bf6a35a33ff2164d3da4
+  type: DOMAIN_SUFFIX
+  value: xianyu.mobi
 - id: 527136fd3fbfe812f0cdc82cc4c1f3e112013e9071ccef85a929b598aaee5c08
   type: DOMAIN_SUFFIX
   value: xin.xin
+- id: a079d551ce5c4a2bfe4f7602d71fbfb79f29d8771b84fc9fb597856ea610dc32
+  type: DOMAIN_SUFFIX
+  value: xingxuanwaimai.com
 - id: bcf585bbde558495ee5d9e4eedabfe0356039abcde175572a5925d41bccdc125
   type: DOMAIN_SUFFIX
   value: xinlingshou.cn
 - id: 45e77cdef1b9802997488d0f13fa2a2f1d9261fd34a09f1851751c6fd363e5af
   type: DOMAIN_SUFFIX
   value: xixikf.cn
+- id: 339dcd244e80deb8380d63d7443379c6d868f3789e621ddd1b9d407f9220adf6
+  type: DOMAIN_SUFFIX
+  value: xyzele.com
 - id: 8f8472a7f7d9d6a594898cdfb468489fd637c5cb74c6f352abf5b25195abcc25
   type: DOMAIN_SUFFIX
   value: yisou.com
@@ -1429,9 +1579,36 @@ rules:
 - id: 847686ed86c4c0152ded7e190a94c58d83c67cc63cd5e5b99ce0e0ca28a52551
   type: DOMAIN_SUFFIX
   value: ykimg.com
+- id: 2ed34e42adfe051523515daea0c6d8228acfb1cb19be368cc7548d4542f5ad76
+  type: DOMAIN_SUFFIX
+  value: yodou.com
+- id: e03b7107d56ea8f42dbb02c9698bd9a7eef0a2d8175e312723f288a0a28ad0ff
+  type: DOMAIN_SUFFIX
+  value: yoku.net.cn
+- id: e6c0ac9320c27951a74a0f6dad4daa4f67abc5e15281ea4d6b417faac5085800
+  type: DOMAIN_SUFFIX
+  value: yoqoo.com
+- id: 142de412772bc5658058b1e5682579286f51330b3c84840cb5ef0c15ee8b1878
+  type: DOMAIN_SUFFIX
+  value: yoqoo.net
+- id: 12549492e79d4843e3fb5ae353cfd06414d6857a3c7cf02ac38e959a25297481
+  type: DOMAIN_SUFFIX
+  value: yoqoo.net.cn
+- id: 1af1578822eb87b307d24ef92338be239685fd72e11da8e01dcdaa644e196b69
+  type: DOMAIN_SUFFIX
+  value: yoqoo.tv
+- id: 5ac742b518760690ae2262671b66b60f385f465bb17377e64ddb3462100fe45d
+  type: DOMAIN_SUFFIX
+  value: youcaishop.cn
 - id: 9c9d35bb16a60426ba256a4a19d97a65264a491db8de5dd4a737ec935c821f7a
   type: DOMAIN_SUFFIX
   value: youku.com
+- id: 1fce2cf138158643beb0799a8c13e1c84bef18f737c9ccd3beb876db8767370f
+  type: DOMAIN_SUFFIX
+  value: youku.com.cn
+- id: c1163048503b7e9ad8c7b20df1e0367e6c7d87825510109196c5eeb43396d8fd
+  type: DOMAIN_SUFFIX
+  value: youku.org
 - id: 254a36bcf06fbf849d2693d84ac6d2445ad84673c76d34cd83599b29ba04f94a
   type: DOMAIN_SUFFIX
   value: youku.tv
@@ -1441,6 +1618,9 @@ rules:
 - id: e0fa9edf8cb938bceadfb6cfc4f88b5c0a5ac405042c4641a4ef05b19a42233c
   type: DOMAIN_SUFFIX
   value: youkuplay.com
+- id: 31adefd8342985cfaf2369a610197ec53538492e00ddd7e98e61e6ad3f60ead3
+  type: DOMAIN_SUFFIX
+  value: youqoo.net
 - id: 16fcc034f587d0e5239e0584539fca4deee304db6c097c00648585895480f699
   type: DOMAIN_SUFFIX
   value: yowhale.com

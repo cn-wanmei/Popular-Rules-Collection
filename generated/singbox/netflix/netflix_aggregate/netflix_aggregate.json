@@ -19,6 +19,7 @@
         "netflixdnstest10.com",
         "netflixdnstest3.com",
         "netflixdnstest5.com",
+        "us-west-2.amazonaws.com",
         "netflixstudios.com",
         "cookielaw.org",
         "netflix.com.edgesuite.net",
@@ -34,6 +35,23 @@
         "flxvpn.net",
         "netflix.net",
         "netflixdnstest0.com"
+      ],
+      "domain": [
+        "e13252.dscg.akamaiedge.net",
+        "h-netflix.online-metrix.net",
+        "netflix.com.edgesuite.net"
+      ],
+      "domain_regex": [
+        "(^|\\.)apiproxy-device-prod-nlb-.+\\.amazonaws\\.com$",
+        "(^|\\.)dualstack\\.apiproxy-.+\\.amazonaws\\.com$",
+        "(^|\\.)apiproxy-website-nlb-prod-.+\\.amazonaws\\.com$",
+        "(^|\\.)dualstack\\.ichnaea-web-.+\\.amazonaws\\.com$"
+      ],
+      "domain_keyword": [
+        "dualstack.ichnaea-web-",
+        "dualstack.apiproxy-",
+        "apiproxy-device-prod-nlb-",
+        "netflixdnstest"
       ]
     }
   ]
