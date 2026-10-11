@@ -7,6 +7,7 @@ Optional --require-icon-identity fails closed on SHA mismatch.
 from __future__ import annotations
 
 import argparse
+import base64
 import hashlib
 import json
 import time
@@ -33,27 +34,47 @@ def git_head() -> str:
     return ref
 
 
-def fetch_bytes(url: str, timeout: int = 60) -> bytes:
-    # Raw GitHub URLs can lag immediately after a branch promotion. Add a cache
-    # buster and explicit no-cache headers so the lock reads the same live
-    # identity that the coordinator just verified.
-    separator = "&" if "?" in url else "?"
-    fresh_url = f"{url}{separator}v={time.time_ns()}"
+def fetch_repo_file_bytes(
+    repository_full_name: str, path: str, ref: str = "main", timeout: int = 60
+) -> bytes:
+    # Use the Contents API for live branch files: raw.githubusercontent.com/main
+    # may return pre-promotion content while the GitHub branch already advanced.
+    url = (
+        f"https://api.github.com/repos/{repository_full_name}/contents/{path}"
+        f"?ref={ref}&v={time.time_ns()}"
+    )
     req = urllib.request.Request(
-        fresh_url,
+        url,
         headers={
             "User-Agent": "Popular-Rules-Collection-release-lock-writer",
-            "Accept": "application/json, application/yaml, text/plain, */*",
+            "Accept": "application/vnd.github.raw+json",
+            "X-GitHub-Api-Version": "2022-11-28",
             "Cache-Control": "no-cache",
             "Pragma": "no-cache",
         },
     )
     with urllib.request.urlopen(req, timeout=timeout) as response:
-        return response.read()
+        raw = response.read()
+    # Decode an API JSON envelope only when it explicitly contains base64 file data.
+    if raw.lstrip().startswith(b"{"):
+        try:
+            envelope = json.loads(raw.decode("utf-8"))
+        except (UnicodeDecodeError, json.JSONDecodeError):
+            envelope = None
+        if (
+            isinstance(envelope, dict)
+            and envelope.get("encoding") == "base64"
+            and isinstance(envelope.get("content"), str)
+        ):
+            return base64.b64decode(envelope["content"])
+    return raw
 
 
-def fetch_json(url: str) -> dict:
-    return json.loads(fetch_bytes(url).decode())
+def fetch_repo_json(repository_full_name: str, path: str, ref: str = "main") -> dict:
+    data = json.loads(fetch_repo_file_bytes(repository_full_name, path, ref=ref).decode("utf-8"))
+    if not isinstance(data, dict):
+        raise ValueError(f"expected JSON object from {repository_full_name}/{path}")
+    return data
 
 
 def main() -> int:
@@ -72,8 +93,8 @@ def main() -> int:
 
     icon_snap = {}
     try:
-        icon_snap = fetch_json(
-            "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/main/config/collection_identity_snapshot.json"
+        icon_snap = fetch_repo_json(
+            "cn-wanmei/Popular-Rules-Icon", "config/collection_identity_snapshot.json"
         )
     except Exception as e:
         print(f"WARN: Icon snapshot: {e}")
@@ -106,17 +127,15 @@ def main() -> int:
         import yaml
 
         pointers = yaml.safe_load(
-            fetch_bytes(
-                "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Icon/main/config/release-pointers.yaml"
-            )
+            fetch_repo_file_bytes("cn-wanmei/Popular-Rules-Icon", "config/release-pointers.yaml")
         ) or {}
     except Exception as e:
         print(f"WARN: Icon release-pointers: {e}")
 
     durable: dict = {}
     try:
-        durable = fetch_json(
-            "https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Source/main/reports/durable-bridge/latest.json"
+        durable = fetch_repo_json(
+            "cn-wanmei/Popular-Rules-Source", "reports/durable-bridge/latest.json"
         )
     except Exception as e:
         print(f"WARN: Source durable-bridge: {e}")
