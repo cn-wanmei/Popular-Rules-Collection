@@ -123,3 +123,38 @@ def test_publish_preflight_refuses_build_index_older_than_main(tmp_path, monkeyp
 
     with pytest.raises(SystemExit, match="Build index is stale relative to current Collection main"):
         identity.main()
+
+
+
+def test_current_main_index_uses_contents_api_not_stale_raw_branch_cdn(monkeypatch):
+    expected = b"entries:\\n  - id: current\\n    entity: service\\n"
+    observed = {}
+
+    class FakeResponse:
+        headers = {"Content-Type": "application/octet-stream"}
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args):
+            return False
+
+        def read(self):
+            return expected
+
+    def fake_urlopen(request, timeout=30):
+        observed["url"] = request.full_url
+        observed["accept"] = request.get_header("Accept")
+        observed["cache_control"] = request.get_header("Cache-control")
+        return FakeResponse()
+
+    monkeypatch.setattr(identity.urllib.request, "urlopen", fake_urlopen)
+
+    assert identity.fetch_current_collection_index() == expected
+    assert observed["url"].startswith(
+        "https://api.github.com/repos/cn-wanmei/Popular-Rules-Collection/contents/rule/_index.yaml"
+    )
+    assert "ref=main" in observed["url"]
+    assert "raw.githubusercontent.com" not in observed["url"]
+    assert observed["accept"] == "application/vnd.github.raw+json"
+    assert observed["cache_control"] == "no-cache"
