@@ -1,0 +1,18 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: mihome
+display_name: 米家
+generated_from:
+  run_id: 20261011T030457497160Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 68940ef5750699d309d2a03acf1c082b52d5de1de7e39af08471773d2e8a9fbe
+stats:
+  total: 1
+  by_type:
+    DOMAIN_SUFFIX: 1
+rules:
+- id: 2d2271f6b9cccb4ff9d29dc269f2b4e56a8d9d1ddafeb1122eb666343a24a4e0
+  type: DOMAIN_SUFFIX
+  value: home.mi.com
+provider: xiaomi

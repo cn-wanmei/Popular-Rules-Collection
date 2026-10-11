@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: micron
+display_name: Micron
+generated_from:
+  run_id: 20261011T030457497160Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 68940ef5750699d309d2a03acf1c082b52d5de1de7e39af08471773d2e8a9fbe
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: d5d5aa26ffa0871538af771575b556caf91d06806376cdba6eef8050411fa07e
+  type: DOMAIN_SUFFIX
+  value: micron.com
+- id: e216b8b60255448993b2fe9992c633ddb63b277c9a66d647a5dadbefabc1453f
+  type: DOMAIN_SUFFIX
+  value: www.micron.com
+provider: micron
