@@ -4,25 +4,14 @@ entity: service
 id: findmy
 display_name: Find My
 generated_from:
-  run_id: 20261011T030457497160Z-run
+  run_id: 20261012T012130933364Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 68940ef5750699d309d2a03acf1c082b52d5de1de7e39af08471773d2e8a9fbe
+  ir_digest: aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723
 stats:
-  total: 9
+  total: 3
   by_type:
-    DOMAIN: 3
     DOMAIN_SUFFIX: 3
-    HOST: 3
 rules:
-- id: 238fc705dbd23f3d81043eff29370966f985e19d1cce4734246211f314507577
-  type: DOMAIN
-  value: fmfmobile.icloud.com
-- id: 11c357ed4a9affae18bb368b5278e6111281a29871113dafd2c9117265d36c2d
-  type: DOMAIN
-  value: fmipmobile.icloud.com
-- id: c2b25ce8bd8805855beae5012d275a7d396ee11df505f88d5093107290bcfccc
-  type: DOMAIN
-  value: statici.icloud.com
 - id: 45d7fef26ebaaf1cb990de1ea93c2893991a5b0141de09aba7d6aa93553fc313
   type: DOMAIN_SUFFIX
   value: fmfmobile.icloud.com
@@ -31,14 +20,5 @@ rules:
   value: fmipmobile.icloud.com
 - id: adb59598c475424425c08a2a0fd98588962e9bb5f7e2eba83247a0904d1ee913
   type: DOMAIN_SUFFIX
-  value: statici.icloud.com
-- id: bbee2289375b61228ae998c53b5e2bbc0bcfdf38b7af0080fb4bf3ed1596823c
-  type: HOST
-  value: fmfmobile.icloud.com
-- id: 7bad046356cd41303dc4cc5eb51350128f0fbb2ae391a55880d43975610d3048
-  type: HOST
-  value: fmipmobile.icloud.com
-- id: 4a275803a2fac4b56be8a1106f42b0d148c85e8282dcb48b8f4cb5864f1f23c5
-  type: HOST
   value: statici.icloud.com
 provider: apple

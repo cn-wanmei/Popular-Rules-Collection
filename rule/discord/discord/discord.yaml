@@ -4,21 +4,14 @@ entity: service
 id: discord
 display_name: Discord
 generated_from:
-  run_id: 20261011T030457497160Z-run
+  run_id: 20261012T012130933364Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 68940ef5750699d309d2a03acf1c082b52d5de1de7e39af08471773d2e8a9fbe
+  ir_digest: aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723
 stats:
-  total: 31
+  total: 28
   by_type:
-    DOMAIN: 2
-    DOMAIN_SUFFIX: 29
+    DOMAIN_SUFFIX: 28
 rules:
-- id: 1f1cf8240ad30b4d6fb3d14ac50b68cfd6d11b868ce5560cf3fe13e3a8b0a9ad
-  type: DOMAIN
-  value: discord-attachments-uploads-prd.storage.googleapis.com
-- id: c11602c06a5782def447be316dd3541fa75932162276b280e4d1c1c46c391162
-  type: DOMAIN
-  value: hammerandchisel.ssl.zendesk.com
 - id: 1e8f0ab3edc74f7a692ac6fa0bb1b3946dd2a37c720a93fb57c14cf277f920b4
   type: DOMAIN_SUFFIX
   value: airhorn.solutions
@@ -34,9 +27,6 @@ rules:
 - id: 2a830b8230880a50530b224e4b5a83fd095a98bc521db6840a3e07fb4acf1076
   type: DOMAIN_SUFFIX
   value: discord-activities.com
-- id: 8e0318f542b8e436c8c270690de319f36865146b59e12683a0478685fb18384e
-  type: DOMAIN_SUFFIX
-  value: discord-attachments-uploads-prd.storage.googleapis.com
 - id: e59ccd91538fc095bfdb3c93360afaad0058b0ed9cc3bfbadbc32262b14c2f2b
   type: DOMAIN_SUFFIX
   value: discord.co

@@ -4,27 +4,14 @@ entity: provider_aggregate
 id: roblox_aggregate
 display_name: Roblox
 generated_from:
-  run_id: 20261011T030457497160Z-run
+  run_id: 20261012T012130933364Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 68940ef5750699d309d2a03acf1c082b52d5de1de7e39af08471773d2e8a9fbe
+  ir_digest: aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723
 stats:
-  total: 52
+  total: 47
   by_type:
-    DOMAIN: 4
-    DOMAIN_SUFFIX: 48
+    DOMAIN_SUFFIX: 47
 rules:
-- id: e8c996dc5d9374f901dea41403278028dadeff9ae768bde4983d7ad5b50cac89
-  type: DOMAIN
-  value: d1unuk07s6td74.cloudfront.net
-- id: f759c8141e1488594a597a91860fa541de00f54257236cf0dbdf1143ff6922ab
-  type: DOMAIN
-  value: roblox-load-generator-configuration.s3.us-east-2.amazonaws.com
-- id: 9b5b7b841054ed382e9c31f8d3a85aa4551b28ead784003e69d6825d75f17e58
-  type: DOMAIN
-  value: roblox-poc.global.ssl.fastly.net
-- id: 1d3a804e79e46646f210d63a46234c75c80543d741f16bf5b2643f31a263f958
-  type: DOMAIN
-  value: robloxcorp.s.llnwi.net
 - id: e62c4e6acd99d88d3bcecec1225ffac46cc0d88dc3d4acc7c840d474c959e2cf
   type: DOMAIN_SUFFIX
   value: blox.com
@@ -79,9 +66,6 @@ rules:
 - id: e741be3d05bb47f7e083372097f0f4e63923809149ad844be1e825cea592afae
   type: DOMAIN_SUFFIX
   value: roblox-api.arkoselabs.com
-- id: 8c86327ce3c23424fa2634701a55d644037e2ba3ef9d16d19e03ef7d89d0caff
-  type: DOMAIN_SUFFIX
-  value: roblox-load-generator-configuration.s3.us-east-2.amazonaws.com
 - id: ea9ca92485ef1698f13b0ba186be70a29769e7d06cebd50aa0577761d7ed49e1
   type: DOMAIN_SUFFIX
   value: roblox-poc.global.ssl.fastly.net

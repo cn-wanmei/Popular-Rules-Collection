@@ -4,27 +4,17 @@ entity: provider_aggregate
 id: microsoft
 display_name: Microsoft
 generated_from:
-  run_id: 20261011T030457497160Z-run
+  run_id: 20261012T012130933364Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 68940ef5750699d309d2a03acf1c082b52d5de1de7e39af08471773d2e8a9fbe
+  ir_digest: aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723
 stats:
-  total: 1092
+  total: 1025
   by_type:
-    DOMAIN: 114
-    DOMAIN_KEYWORD: 6
-    DOMAIN_SUFFIX: 968
-    IP_CIDR: 2
+    DOMAIN: 60
+    DOMAIN_KEYWORD: 4
+    DOMAIN_SUFFIX: 959
     PROCESS_NAME: 2
 rules:
-- id: b81cfe6a30e3bc6023af44d45cc1217247812b4c094456d2d77b51e64b272839
-  type: DOMAIN
-  value: api.msn.com
-- id: 00de4b08ef2fdab85151e36f15efab37a9fcb013de08ed4d9f49c8fb960d8be2
-  type: DOMAIN
-  value: api.statsig.com
-- id: 5ac58feea4055052e5e557a20c80448653d7ba190bcdeab2d5a4bd2c8fb70a1b
-  type: DOMAIN
-  value: assets.msn.com
 - id: 573f224fc5b31e1171ef2fd80e088d4c85baed568501a5aa1e4a5143a9d8affe
   type: DOMAIN
   value: azuremigrate.download.prss.microsoft.com
@@ -40,15 +30,9 @@ rules:
 - id: eb77142c1f1a2f2a113d9a9f0bbe12a40ebbe29c68f8b56aa657c465f3f76242
   type: DOMAIN
   value: b.c2r.ts.cdn.office.net
-- id: cad5352c40a4cb9a277f95b88c261de691e6f84d38bc175e767275e30e11bb00
-  type: DOMAIN
-  value: browser-intake-datadoghq.com
 - id: 9cd0404d400c438b7fe2a4fc0eb85e57048c2da1430c49805464d262672240af
   type: DOMAIN
   value: cbdstest.download.prss.microsoft.com
-- id: 744fea6ea2595a8039b35efd86f9eeafee6c20d33b0900cffaf084205b304464
-  type: DOMAIN
-  value: chat.openai.com.cdn.cloudflare.net
 - id: cab10d2149a025f90e2f6c7653d85a6829c570dbf19764c99353c704bf07831a
   type: DOMAIN
   value: cn.windowssearch.com
@@ -58,9 +42,6 @@ rules:
 - id: c8217161cbc0d1c554db3596802cac995bb5c828dc2512439343a71e31593a96
   type: DOMAIN
   value: collaborateppe.download.prss.microsoft.com
-- id: 890b295eaa4a5b21a260267baf59f4ac3bee82680386aa83c8e7521e7f9dc0b7
-  type: DOMAIN
-  value: copilot.microsoft.com
 - id: 07cbbee9858ab467c8b01c3cf5f7d3941bcadb3b86c306b87cb44cd90b8bf2bf
   type: DOMAIN
   value: ctldl.windowsupdate.com
@@ -76,9 +57,6 @@ rules:
 - id: f8cbe76cc7e5a4f7335507eafb9d98ec22e563c0a52c5ffc44897079eefdcaa4
   type: DOMAIN
   value: dreamsparkuat.download.prss.microsoft.com
-- id: c04d763df9ddc01920a017f4e64b3e1f484837071b4eda3082f36b3071e336d8
-  type: DOMAIN
-  value: e122475.dscg.akamaiedge.net
 - id: 1f519ae9ccb6fd217b137cc44384773641d6370333e38379d746115a6ac4e0b0
   type: DOMAIN
   value: edge.activity.windows.com
@@ -88,33 +66,6 @@ rules:
 - id: c9676e107acd7de1cf9bf34278325becda6c3eef99902e72b89263b0f38e65da
   type: DOMAIN
   value: f.c2r.ts.cdn.office.net
-- id: e178b8912ac862026de7b5228308902da6a7bde0fa567a932b3db3c0d14df659
-  type: DOMAIN
-  value: gateway.bingviz.microsoft.net
-- id: 28f33da7a848d9f5904bbd4e9bc64117ce4d35b9a6afd90f235861c09364cfce
-  type: DOMAIN
-  value: gateway.bingviz.microsoftapp.net
-- id: 56666f9b4901a1b2cfc4832a32e9a826c9e4d7d6c014c3455683fc383e85caf2
-  type: DOMAIN
-  value: github-api.arkoselabs.com
-- id: ccc092c8625764d4430edb5876c7c6d15c8045a5edacbcac934191c7aee17ff0
-  type: DOMAIN
-  value: github-cloud.s3.amazonaws.com
-- id: 0203373ab05c189d9f1c2861a6a9d2c11f105e143725bb87a2a62a8af52b2082
-  type: DOMAIN
-  value: github-production-release-asset-2e65be.s3.amazonaws.com
-- id: e600d5eeeb50cb6150d8c2c4e7211af92deb3112c5ab4103c3229e12ca9a6796
-  type: DOMAIN
-  value: github-production-repository-file-5c1aeb.s3.amazonaws.com
-- id: c78cc3503c3d4d2fe56bb35b6f10c1c0890b8dc9f9d3a73869c0cb01d3fd6f36
-  type: DOMAIN
-  value: github-production-repository-image-32fea6.s3.amazonaws.com
-- id: b607a774a204cd1950acc9c7c5569e7851fff5a6b73cecee73c76d50f3f9871a
-  type: DOMAIN
-  value: github-production-upload-manifest-file-7fdce7.s3.amazonaws.com
-- id: 3486f4a36296e8e3da3767a05a8e7fbcaf33b44d51764f1c1580fdb93eecd4e1
-  type: DOMAIN
-  value: github-production-user-asset-6210df.s3.amazonaws.com
 - id: fca1983ad8bde57279b3aa7e1759c388e8c70552b0d8c7d46e61ac2659168c95
   type: DOMAIN
   value: iecvlist.microsoft.com
@@ -124,9 +75,6 @@ rules:
 - id: 04a059cf5da74646c46a4b688bffe5432fb5620d80c34739a8f5a7623349e228
   type: DOMAIN
   value: img-s-msn-com.akamaized.net
-- id: bde2f934e9f2cfb8d446e97b9c1c60278f7b331d304ed1bc2349326bc5a525ec
-  type: DOMAIN
-  value: in.appcenter.ms
 - id: 3f4dd9b7c1a8bfadeecf03130d2b0ace0fae8dc5e6c4b5021fa227ee92e17b0f
   type: DOMAIN
   value: itacademy.download.prss.microsoft.com
@@ -139,21 +87,6 @@ rules:
 - id: e8b16feae76661c4089cc90568e0c7d29ece07f29bdc7171e2497b4f0566ff93
   type: DOMAIN
   value: lexuat.download.prss.microsoft.com
-- id: 52274e19c67ff422a3744dbcf091ed594caf104f10481ef4318d82d57aed4018
-  type: DOMAIN
-  value: licdn.cn.cdn20.com
-- id: 838c019ec19f289d0f2211ed5abfc380d965bbc5aa58ec2a66bb0f787a4408af
-  type: DOMAIN
-  value: linkedin.sc.omtrdc.net
-- id: 56078024c4e8fe97cae555fccdc1d492e677040a2b15b956417ae426d8ecb02d
-  type: DOMAIN
-  value: location.microsoft.com
-- id: 8bae6a0b905b7b1cfd2309f0c7f890a4d62224b5d5db61c2bb8b912a3642762d
-  type: DOMAIN
-  value: login.live.com
-- id: 7d7a577f4b4e483f125dcf68eb540641c617df891bd9329064b41e4040ad36b0
-  type: DOMAIN
-  value: logincdn.msauth.net
 - id: 81616a70abccadd4359f3cb63757b3e7b0078b3bc4f3de2d89e625b76f9f446e
   type: DOMAIN
   value: mbs.download.prss.microsoft.com
@@ -184,9 +117,6 @@ rules:
 - id: 0012dd86652cee9e8517b9ff2f67c9bb4b11b7032fdfbf149710b001acdacce7
   type: DOMAIN
   value: myvs.download.prss.microsoft.com
-- id: 52cc226faf45a146e7b001dff6a5a55ed5d0b7a756a09cc43d16e7d0ad0e92d9
-  type: DOMAIN
-  value: odc.officeapps.live.com
 - id: 1f2e727172d1bcce868162e6a08b6ab148bf2884021796fc7d56c3c0fbe49ba2
   type: DOMAIN
   value: oemsoc.download.prss.microsoft.com
@@ -205,102 +135,21 @@ rules:
 - id: 855346926f2537c9c87a25f0fbb5a2f8fde64a0878f0457d08f743bfdc36ed04
   type: DOMAIN
   value: officemktuat.download.prss.microsoft.com
-- id: a876a5d94cb01c3cf877120bafa6b673feeb6f6c5f1af76df04573c227faedca
-  type: DOMAIN
-  value: openai-api.arkoselabs.com
-- id: 6dfc152f19564091ca5b895b7fd4be8c0ac0d1bd39e11c4ba7a03be007f3988f
-  type: DOMAIN
-  value: openaicomproductionae4b.blob.core.windows.net
 - id: d1764bd13fcd9b0d83df7f45ce3fbc2c26e76c2e34865533e1c2565324d527f9
   type: DOMAIN
   value: osrelease.download.prss.microsoft.com
-- id: 51d4627aeaa4b1092647bf6918034731d289cac6ee78089c7525fda2f1e44446
-  type: DOMAIN
-  value: production-openaicom-storage.azureedge.net
-- id: 913541507a3b9525684be2cf4d50f345c9ae668a64315f45441bb880d7c1f92a
-  type: DOMAIN
-  value: productionresultssa0.blob.core.windows.net
-- id: fc7c0b60678b5d1835b06dd8636e63b486cde019a07217919bbea1aba7e17b87
-  type: DOMAIN
-  value: productionresultssa1.blob.core.windows.net
-- id: 3f0361fd4211cc448e36e7bd44abcc5cc0e59ed63db0e6852c84b1066d030230
-  type: DOMAIN
-  value: productionresultssa10.blob.core.windows.net
-- id: db63e4ad75826e2a5c6e9b609ee26fa850c144cb7062b974861bf1e0c8a896ba
-  type: DOMAIN
-  value: productionresultssa11.blob.core.windows.net
-- id: 6065703e38a8fdd043c568442841da9817a6a6ec5279eff9e996d279737d1b19
-  type: DOMAIN
-  value: productionresultssa12.blob.core.windows.net
-- id: 195cd3b47bd3294c202f40915803624a56fc3c19dc350ed14d9771962f5c979f
-  type: DOMAIN
-  value: productionresultssa13.blob.core.windows.net
-- id: 95944a9e7d7245dbaba1c023b04f428c4357b58e573edb1e8cc9bc62f2391b3b
-  type: DOMAIN
-  value: productionresultssa14.blob.core.windows.net
-- id: 9ca427c9ca7617836083e86a2c6a8f46af2f91441368746067bc2cb36e2d03b9
-  type: DOMAIN
-  value: productionresultssa15.blob.core.windows.net
-- id: 2998e39fdd61f0c85921fb97c218be7410603afaf3981ccf2e2cd95c7f58e44b
-  type: DOMAIN
-  value: productionresultssa16.blob.core.windows.net
-- id: 502d9a7d2cb5f4250a279bc4a9813061ec2e7b5eaed51eb63e56b84ac79b42a4
-  type: DOMAIN
-  value: productionresultssa17.blob.core.windows.net
-- id: 206ddd02be0f82c92d599c4e14ffe65e78cb5a98b62f8aaf1687036573c0b740
-  type: DOMAIN
-  value: productionresultssa18.blob.core.windows.net
-- id: 0bd95ed6663bcd05eab4a6e968981e1eda18ed2484425fc846b9c848f2278a1b
-  type: DOMAIN
-  value: productionresultssa19.blob.core.windows.net
-- id: 7264d8d93e8140dd7c7eb3c27d881418cdf6757d6912bfb1fedcf5306cdf2006
-  type: DOMAIN
-  value: productionresultssa2.blob.core.windows.net
-- id: c4e0ff1c04bf6805a45750c3f524731b34e6e63c59645376093004034ac2008c
-  type: DOMAIN
-  value: productionresultssa3.blob.core.windows.net
-- id: 88534eaada583fbbd1570e186d8af24060ca5fbbb9b358acf9a5c242b4678d42
-  type: DOMAIN
-  value: productionresultssa4.blob.core.windows.net
-- id: 12c53e5619861502e5b9f4fbc9c6a54cfa2e4a4d587fa84932d83760537d8419
-  type: DOMAIN
-  value: productionresultssa5.blob.core.windows.net
-- id: bf4940c756c47772856dcb2035d9476a58d4540f740202692e7e5f8e8a2948c7
-  type: DOMAIN
-  value: productionresultssa6.blob.core.windows.net
-- id: 9e24b5c445dd5662fd99ba8fee2f5ce89159903ca1dd3f9505b01632490b92f1
-  type: DOMAIN
-  value: productionresultssa7.blob.core.windows.net
-- id: 220515748d47b41b4854a23903cae583ea7db2d572227b24de465583a7fd5c9b
-  type: DOMAIN
-  value: productionresultssa8.blob.core.windows.net
-- id: 41ae6cc86818ab7b1dc6a47b2a4f8af7139137e2780bc0b957630d17ce9fe3ea
-  type: DOMAIN
-  value: productionresultssa9.blob.core.windows.net
-- id: 530b4a02183a07b537097f7762fc69d420facdb906d42916f75b0ade9b5455df
-  type: DOMAIN
-  value: r.bing.com
 - id: 15c8c004af1f8c596e3e57d39140bac5da506b3d4438091b113f43e0406b3dde
   type: DOMAIN
   value: rsm.download.prss.microsoft.com
 - id: dbf8cbad0f4032e3849aac98d3360c3ea363895e617db7b2f413a8801ed6400b
   type: DOMAIN
   value: sdx.microsoft.com
-- id: e2c229f32bb67b74829ef53921784ef54b79c1e6bda8136eb6d88cdfd724e19b
-  type: DOMAIN
-  value: self.events.data.microsoft.com
-- id: 73cb34c013e7805c0f51f9cae92f60934341e2d53565b66bec83970638014a23
-  type: DOMAIN
-  value: services.bingapis.com
 - id: b9eb1bd3cb87f328f1f512117c8f8c34bf4470452697d08a46de1d97bc2e050f
   type: DOMAIN
   value: shell.cdn.office.net
 - id: 3bbcb643a4e4057b79c7581bb3bce850ddb20bfcd277e9cdd7ce4144a018eb0f
   type: DOMAIN
   value: software.download.prss.microsoft.com
-- id: 9b10dce0ddd17b72b65b82dab5dc7875c182c6258611c29c4214b4a85fbe0f5a
-  type: DOMAIN
-  value: static.cloudflareinsights.com
 - id: 4d95117e80998a7a6a397ef29d5ffa938895f991f2fdaa88b8e574403a6f3294
   type: DOMAIN
   value: statics-marketingsites-eas-ms-com.akamaized.net
@@ -313,9 +162,6 @@ rules:
 - id: 91f947890b17e90d4eb63317e717675bdb0957bb8cec5722124d1f888195a805
   type: DOMAIN
   value: statics.teams.cdn.office.net
-- id: 39156290c26ac6d2eeb1f7b758ed9816136ad8efab1a30d6759e05cfac3f81a1
-  type: DOMAIN
-  value: store-images.s-microsoft.com
 - id: c37485b87a31c188f6a31d850a21381f0d20c91c539164f7c6f3ad029de60700
   type: DOMAIN
   value: storecorefulfillment.download.prss.microsoft.com
@@ -331,12 +177,6 @@ rules:
 - id: fd167d7749bf1233cad846e3d9eb1e89498414aae3b4e30402bad3280f911290
   type: DOMAIN
   value: surface.downloads.prss.microsoft.com
-- id: 3a777bbeb50aea2549f023f438cf2e034c2a8d0fbbdb071b2410623ec067859c
-  type: DOMAIN
-  value: sydney.bing.com
-- id: 3765378a2fc3dc6a612e1f124e76577148eae19151bc2e076deed11eaa1f0e72
-  type: DOMAIN
-  value: teams.events.data.microsoft.com
 - id: b7792a609772020f9247cb264ca7a44a830032dda74bce654265787474f3ffa9
   type: DOMAIN
   value: vlportal.download.prss.microsoft.com
@@ -355,24 +195,15 @@ rules:
 - id: 76779c073c9d60346f33243434a3e72f9cec4abbbbccb6d7e68a5cea57ffddf7
   type: DOMAIN
   value: windbg.download.prss.microsoft.com
-- id: edab6ff04639347b95946984f431e9db41950434ef7a724f5705d1cc0065d051
-  type: DOMAIN
-  value: www.bing.com
 - id: 7298e188100e8ac23d197f70e1485885473271387c45f15c80c5421e9b3293d3
   type: DOMAIN_KEYWORD
   value: 1drv
-- id: c6708c191f876d6f429782b55d059e36d42b6164a0e35f47e5850a0fcdb1464f
-  type: DOMAIN_KEYWORD
-  value: github
 - id: fa6aa3306d79732a2beac1871745746ea10ec3c24e3a2715b6dc391262b6717c
   type: DOMAIN_KEYWORD
   value: microsoft
 - id: f11cbc4285345042217453f78420a35d5d17af34747588773c7498c69c72682e
   type: DOMAIN_KEYWORD
   value: onedrive
-- id: 28d68013f347a0f9e8564bcc61dfee0b2b47bc37527af7bf4900d2bba22a6e6c
-  type: DOMAIN_KEYWORD
-  value: openaicom-api
 - id: 4c113367ea63f18d210d164693d3e026a60de7cc7328090ef214b168779ff198
   type: DOMAIN_KEYWORD
   value: skydrive
@@ -931,9 +762,6 @@ rules:
 - id: e31849e3f1c5c2ed433cb76291a3a901ceff41c59856c4a0618b56294b8cfbdb
   type: DOMAIN_SUFFIX
   value: biying.com.cn
-- id: 16443d8a697281e4619666abdbd862e6cede1e1bb64d6c69bc79cd9f298199e4
-  type: DOMAIN_SUFFIX
-  value: bizographics.com
 - id: 9532084b778c8b2d4ced01a5d8fb39536d62f29b701352a9b4e92d6c2696bf85
   type: DOMAIN_SUFFIX
   value: bj1.api.bing.com
@@ -994,9 +822,6 @@ rules:
 - id: 9d3f23f0b35cbe8a823eaadb870c8de0a59363dfb82aed87076af202ed8ee71b
   type: DOMAIN_SUFFIX
   value: ch9.ms
-- id: 3b56ea91bb18a36c570c4d74ffa365860fecfe0b9451f1c27b6bdd3a75f790d5
-  type: DOMAIN_SUFFIX
-  value: challenges.cloudflare.com
 - id: da2787ab2a1d22bf2c12016c65069ab7a2101a2ecb817beafe918c82f7d774cf
   type: DOMAIN_SUFFIX
   value: charticulator.com
@@ -1516,12 +1341,6 @@ rules:
 - id: a0eeb38454e4c59396de59f3f7728539b81058b460dd8a4ac8b49c005bd4195d
   type: DOMAIN_SUFFIX
   value: kumo.com
-- id: 660e3691d7b4ab402fd085d36ea91d15c7db952a0017cb1820333a7a68327b51
-  type: DOMAIN_SUFFIX
-  value: l-0005.dc-msedge.net
-- id: 1338dfd9784022ce334f52f674d807ac78f23b5a11a3bec7252978224f5118ba
-  type: DOMAIN_SUFFIX
-  value: l-0005.l-msedge.net
 - id: 373775ba66d7d870169e17349232dd0950a464f5dccbd2b2713015255ce2e7a1
   type: DOMAIN_SUFFIX
   value: l-msedge.net
@@ -1537,18 +1356,6 @@ rules:
 - id: 590e5d540ab1d2736e072161b45bfc626824c4b613e20124bf937dfcd99d0565
   type: DOMAIN_SUFFIX
   value: lexuat.download.prss.microsoft.com
-- id: 312522083679b1d8d7bddf73235930219b984782e675a864698c3645afbb68e7
-  type: DOMAIN_SUFFIX
-  value: licdn.cn
-- id: bf2dd11e2eb74a8d579e1cbfe4a4fed22671a066386a94032f0a70bc600f56b0
-  type: DOMAIN_SUFFIX
-  value: licdn.com
-- id: 7bd460122a8170e71eef2bff34bb79fbd1a33b5a7d7c3dc3df5271b7d82a0e47
-  type: DOMAIN_SUFFIX
-  value: linkedin.at
-- id: 26d7fa1fe024e34da1e42abb6758280378e9c9c37c7f4e12f87fa0a3c5b0963d
-  type: DOMAIN_SUFFIX
-  value: linkedin.cn
 - id: f6ca8aec2fa84dcce8129970a08c50f03b24f9aa05ae82e0654ed5f23b97ea3a
   type: DOMAIN_SUFFIX
   value: linkedin.com
@@ -1579,9 +1386,6 @@ rules:
 - id: a72a1de5e309a91dc465f9772cbfe6bbd2730a9454ebb624791ea01619ef9cb7
   type: DOMAIN_SUFFIX
   value: livingyourambition.com
-- id: de749ed837abf78e8034e6a7dc350f7a67afc1e38fde1591dd4d4ceee4456b8e
-  type: DOMAIN_SUFFIX
-  value: lnkd.in
 - id: 86bf5548747bed6ffb50a04ff0b74d32685be194067a581574b9acb5632da21a
   type: DOMAIN_SUFFIX
   value: localytics.com
@@ -3280,12 +3084,6 @@ rules:
 - id: 1ee47eda3aa799e5a43d90960a901b3e64cb5b98e61457d838d6fdc0bff7e0b2
   type: DOMAIN_SUFFIX
   value: yammerusercontent.com
-- id: 7023399e735bf603be66a37832c23ad1d5741f3968ba2a7f7fba7166ffa1319b
-  type: IP_CIDR
-  value: 24.199.123.28/32
-- id: 931439ec9afb71e6eeab546e8fd0485124954d4cf5ad74b6ff60e690464c3da7
-  type: IP_CIDR
-  value: 64.23.132.171/32
 - id: 1f9c4b5530550f020332c38ac3af8c5692986f0000f4324059a9e47eab0fbd45
   type: PROCESS_NAME
   value: OneDrive

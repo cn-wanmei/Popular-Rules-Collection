@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "console.firebase.google.com",
+        "firebase.google.com"
+      ]
+    }
+  ]
+}

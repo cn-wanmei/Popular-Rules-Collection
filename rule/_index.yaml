@@ -1,9 +1,9 @@
 schema: human_rule_distribution_index_v1
 schema_version: 2
 status: ready
-run_id: 20261011T030457497160Z-run
+run_id: 20261012T012130933364Z-run
 ir_schema: semantic_ir_v2
-ir_digest: 68940ef5750699d309d2a03acf1c082b52d5de1de7e39af08471773d2e8a9fbe
+ir_digest: aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723
 layout_schema: directory_layout_v2
 validation:
   duplicate_paths: 0
@@ -17,4554 +17,4554 @@ entries:
   display_name: '12306'
   provider: '12306'
   rule_count: 15
-  sha256: d83d59ecd79e1287316de7afdf8e075d12689811118952f005f3ee6d799999b6
+  sha256: 2c3d448985ceded8d4703aee6b73cc7df2faa706e22e6a0609b4272f1ae3f1df
 - path: 12306/12306_aggregate/12306_aggregate.yaml
   entity: provider_aggregate
   id: 12306_aggregate
   display_name: '12306'
   provider: '12306'
   rule_count: 15
-  sha256: 79aa58a1d67f2e8fddc765478a6943dc27a1d4c005ce6bfd48b8ed297369bc78
+  sha256: ccd8724dea16316463328fc0c68eb114d5eb14fda25051c7f8f71a6d5f29055e
 - path: 1688/1688/1688.yaml
   entity: provider_aggregate
   id: '1688'
   display_name: '1688'
   provider: '1688'
   rule_count: 2
-  sha256: f0050e9f66bcaf26812229a085b97068421b1d25d7d15601c3c2c0a6ad37fbfe
+  sha256: e986506c1da87b47bfa04a9c0561973f4001b6c7e2bb0244c3a5b56a1849243b
 - path: 37games/37games/37games.yaml
   entity: service
   id: 37games
   display_name: 三七互娱
   provider: 37games
   rule_count: 2
-  sha256: f4d85bcb0436652fbea67ab6aadb3da3c9cd69457a56542428ef23de3ac55e36
+  sha256: 48bb9f1166ae91d04cb77051593fb71175c0998728913910224207e802c259e8
 - path: 37games/37games_aggregate/37games_aggregate.yaml
   entity: provider_aggregate
   id: 37games_aggregate
   display_name: 三七互娱
   provider: 37games
   rule_count: 2
-  sha256: 9026ed81be67b4b950812a45e286d5a339c8917976dafe26dd77e94864c6b4a5
+  sha256: 605a4610678851d76ff84b6db688882eb0ea200dc1f00b41dc28da1c5ba85e93
 - path: abc/abc/abc.yaml
   entity: service
   id: abc
   display_name: Agricultural Bank of China
   provider: abc
   rule_count: 6
-  sha256: a382fcfee1d19aa823a203dc147893fd9730b06765627250322dc923f75b7ef0
+  sha256: 24446ab26ef708523b72671a0f926daa6f3d22f745a6f5a98b82d16fcaec8cd2
 - path: abc/abc_aggregate/abc_aggregate.yaml
   entity: provider_aggregate
   id: abc_aggregate
   display_name: Agricultural Bank of China
   provider: abc
   rule_count: 6
-  sha256: c3985d308132e0229436c79ee043cab9fe77e76a70f8b88e6bc4b720ed266b51
+  sha256: a1e69f05b743407852c2aadf5d6ba95d0d73866fef0240f025759b1104bee175
 - path: acfun/acfun/acfun.yaml
   entity: service
   id: acfun
   display_name: AcFun
   provider: acfun
   rule_count: 10
-  sha256: eb87e1c16ce51ac6d0566e9ba2648fdb1bf10d69921f28fe6d1bed2487afd8b7
+  sha256: dc9d65eeecd87761c1fd853766c8444e834d55f2fa08b198b6c879ea1a86cea3
 - path: acfun/acfun_aggregate/acfun_aggregate.yaml
   entity: provider_aggregate
   id: acfun_aggregate
   display_name: AcFun
   provider: acfun
   rule_count: 10
-  sha256: 8c5966937edc95bbbdd25cd53436f07a2ddd73592ff61e4990fa9ae9e268843d
+  sha256: 71151bcce3de18dc060d423744ae93a725c783f02bd5d897c19e9c7d9b65b13c
 - path: adobe/adobe-firefly/adobe-firefly.yaml
   entity: service
   id: adobe-firefly
   display_name: Adobe Firefly
   provider: adobe
   rule_count: 1
-  sha256: 1d539966ff7b9c59432361a432ee537b5c050f2977c344974316b1587462f916
+  sha256: ccbe4d644a6cf5721c5762a9c9555659e37ea95ae8a73d31b34655e3b548a778
 - path: adobe/adobe-fonts/adobe-fonts.yaml
   entity: service
   id: adobe-fonts
   display_name: Adobe Fonts
   provider: adobe
   rule_count: 1
-  sha256: 0dab68bf06a66893656dd4526651ba9b33987b76160723cf35f7f80c3c66114c
+  sha256: 30aaaf90e73baefdb5b53dc324c251a6b33f06acd758f959c40bfe338c578ddd
 - path: adobe/adobe-stock/adobe-stock.yaml
   entity: service
   id: adobe-stock
   display_name: Adobe Stock
   provider: adobe
   rule_count: 1
-  sha256: ea1033ff7d6c97688b75f432c7557b07dac59014889c7e0e83cacb1caaec9c7e
+  sha256: 6a49a48536e8c757fc3bdfff0ca4c691ab6fa33405ae6d0882abc933d4dc1895
 - path: adobe/adobe/adobe.yaml
   entity: provider_aggregate
   id: adobe
   display_name: Adobe
   provider: adobe
   rule_count: 143
-  sha256: 31f08f65070e6d08e88926ea801c0a8a2879cc99fab5c58a96dd4f649853da3f
+  sha256: 7a53dd8e39facbdf6d52085fc0759f6cc12efa013a2ee57e0627652e22472f56
 - path: aggregate/developer/developer.yaml
   entity: aggregate
   id: developer
   display_name: developer
   provider: null
   rule_count: 685
-  sha256: 49c02ccfde890aa09c4a161e1e611a46248d9a9cd1b604ddffaacbe03f8e0e9f
+  sha256: 3e4cbb5b3e4a70a4c9657ede0056010f179fcf9b6b7cc6ea2b272d8393197bea
 - path: airbnb/airbnb/airbnb.yaml
   entity: service
   id: airbnb
   display_name: Airbnb
   provider: airbnb
   rule_count: 83
-  sha256: 82f31a4989f51af74c773e9ab26fe20bf287db35c296f9162e670fd76b61a277
+  sha256: 03b173a0c9eee43377e98c6034cdacb75ec97741f9830991a07a54f2bd69cd8a
 - path: airbnb/airbnb_aggregate/airbnb_aggregate.yaml
   entity: provider_aggregate
   id: airbnb_aggregate
   display_name: Airbnb
   provider: airbnb
   rule_count: 83
-  sha256: 409b5e835961ec2f9d1e83e08ff0c52e241b943f4518bad27858d8997e695c4e
+  sha256: 0162c5d81e9d6adbc8e6930a21a788cb3c72ff881f93cde65df86847be9f0f72
 - path: alibaba/1688/1688.yaml
   entity: service
   id: '1688'
   display_name: '1688'
   provider: alibaba
   rule_count: 2
-  sha256: 37214ba6e15e40f8a358d7660a01bd368ee2f22bf8f80fffc9209458261ee8fb
+  sha256: a3b319595d10068b203539cbcf732ad20deeaafdcb13ffacfff9e972cadbbdaa
 - path: alibaba/alibaba/alibaba.yaml
   entity: provider_aggregate
   id: alibaba
   display_name: Alibaba
   provider: alibaba
-  rule_count: 599
-  sha256: 2c0d432a6aed8177695a4ec155afd76f0fe32cac1d6b0f776629e153c113ae03
+  rule_count: 539
+  sha256: a37d365fba7f09e516650e96862594a2492b609097ea65553e291fb485331451
 - path: alibaba/alibabacloud/alibabacloud.yaml
   entity: service
   id: alibabacloud
   display_name: Alibaba Cloud
   provider: alibaba
-  rule_count: 100
-  sha256: 68976464cde45be776bef64c9bc2138fa1c8e584fe63cc4a964e89fd52ee0a32
+  rule_count: 12
+  sha256: ffbd3e976fb7c8034cde4726c79db33768540bdd29c27b0b0d4517d9e9e38fbf
 - path: alibaba/aliexpress/aliexpress.yaml
   entity: service
   id: aliexpress
   display_name: AliExpress
   provider: alibaba
   rule_count: 2
-  sha256: 8289f18f48dc20bdccb99befa20a88195fb79c94636f35e31187e8082e18adfd
+  sha256: 8a7ab2b8e61a337b3d89071c4abff4a824031c5f11e4e916b85d98119956d658
 - path: alibaba/alipay/alipay.yaml
   entity: service
   id: alipay
   display_name: Alipay
   provider: alibaba
-  rule_count: 22
-  sha256: 9b0cf2aa325539512e849fc235f7f6b6b117707fb196f9b659528c51a32073f0
+  rule_count: 2
+  sha256: e538e994969fa2999389b9c85b80736e7330363f0b4897a166f61b6010f50f42
 - path: alibaba/amap/amap.yaml
   entity: service
   id: amap
   display_name: AMap
   provider: alibaba
-  rule_count: 17
-  sha256: 52baee73b9bce7ab7ce56ab3616402e499e6a73d79f40cc95df1a10dee3c9219
+  rule_count: 2
+  sha256: f2828f11289b1b1e1dbd2562b35076b583b6544363c3104500b26b5de6658608
 - path: alibaba/cainiao/cainiao.yaml
   entity: service
   id: cainiao
   display_name: Cainiao
   provider: alibaba
   rule_count: 1
-  sha256: 56e88d1f9bb12b920d097861644231a4c83c0223fde2df948948fc9dc267edd3
+  sha256: 7ffc6a61de15b21118190f072ab9207e9ddb12be9e81b5fa18503e8b904c43cc
 - path: alibaba/dingding/dingding.yaml
   entity: service
   id: dingding
   display_name: DingTalk
   provider: alibaba
   rule_count: 3
-  sha256: e56a3d6d33c31d167e7afb7043ebe4720af7663e9d7a50086d0cfe0b43ea278a
+  sha256: eefa811c7f5655f0f336fb1a48381f9da2e3ab311d097cb69a1e8afa26e8b5bc
 - path: alibaba/eleme/eleme.yaml
   entity: service
   id: eleme
   display_name: Ele.me
   provider: alibaba
-  rule_count: 14
-  sha256: 3c73c44ed4c170171ad0c7a8db0b63a7c73771879e523f01b2fe201b14f77d4b
+  rule_count: 2
+  sha256: 915edf7bc3d3c05653009b1ad94743d4156ea491c1ac5d85c4fc4a4a840d50d1
 - path: alibaba/fliggy/fliggy.yaml
   entity: service
   id: fliggy
   display_name: Fliggy
   provider: alibaba
   rule_count: 2
-  sha256: 6c8eb1e129bc1904b728cdcd916c5d9d66e287d42f7d08ec383c4ce4ba1a06f0
+  sha256: 19d1ba121fe85759c955c3f7a78bc46a3ad650fc6c799516d036d1b02988d4a0
 - path: alibaba/gaode/gaode.yaml
   entity: service
   id: gaode
   display_name: Gaode
   provider: alibaba
   rule_count: 9
-  sha256: 9d6951852a54ddb0152f946a59d60737f96cb693add27442016a453c351e9cfc
+  sha256: 6138e7cd38efdaea6db280152983a87ff188f166caa8f8d6ab20ad5b7bce363a
 - path: alibaba/lazada/lazada.yaml
   entity: service
   id: lazada
   display_name: Lazada
   provider: alibaba
   rule_count: 2
-  sha256: d658de8a8770293a33f10136540e2ef8925f74f4d4d554a8d559468718bf9a4e
+  sha256: 27f399c82374dcca0943eefbad66f9943c9b95c7834652be2bb3a772f1d6b022
 - path: alibaba/taobao/taobao.yaml
   entity: service
   id: taobao
   display_name: Taobao
   provider: alibaba
   rule_count: 1
-  sha256: 5e236caf77bb15d32d652654299d5074648b32dde9e0e3ab00553f0869a4ba8b
+  sha256: d627b735e650c63902b7a742b32cd1e3906df230356ad4fa9eccb56daeb9b97a
 - path: alibaba/tmall/tmall.yaml
   entity: service
   id: tmall
   display_name: Tmall
   provider: alibaba
   rule_count: 8
-  sha256: c5c517c7846764dbf75d22bea088c56b69e59f48dc45002defb20ac7f622e1cb
+  sha256: 7956d4759331fb63d169c10732146b1a3bb44a3023a10b43ace5134cc903dc2f
 - path: alibaba/xianyu/xianyu.yaml
   entity: service
   id: xianyu
   display_name: Xianyu
   provider: alibaba
-  rule_count: 18
-  sha256: 9348e20ac0050941f6893c6ae307c74040f174ca3a979d401306f069077a3a5c
+  rule_count: 2
+  sha256: a87893d08f176132367d3afc84d33e987244a5bcb5408eb96726e59db17ba77d
 - path: alibaba/youku/youku.yaml
   entity: service
   id: youku
   display_name: Youku
   provider: alibaba
-  rule_count: 61
-  sha256: a46669d7b0c665f63aac311f27b1de776f386d4b38e600d9623b1249352d05e1
+  rule_count: 2
+  sha256: 4323f7bcb2cbf67e119a86430adf7f3083d3db2b9e4b5c3e8677a6cdb367bd90
 - path: amazon/amazon/amazon.yaml
   entity: provider_aggregate
   id: amazon
   display_name: Amazon
   provider: amazon
   rule_count: 307
-  sha256: 1353f70bb9fc7bdfcabed8488f8ac93c0a6ecc5aeb56d62100fd5a3b88734b5a
+  sha256: 52cae12e45b21bbf4c0e00ccbbde232fb9656a2a5db7684df7e2c8a5d35cd55f
 - path: amazon/amazonmusic/amazonmusic.yaml
   entity: service
   id: amazonmusic
   display_name: Amazon Music
   provider: amazon
   rule_count: 1
-  sha256: f0b079e761addf840330a207041ad679104c837cf0adb7b978a79b610c845aa0
+  sha256: 1327e75bd85b4c96254dfc13708a77846ab90ba158c4e3d2153dabc3813e6160
 - path: amazon/audible/audible.yaml
   entity: service
   id: audible
   display_name: Audible
   provider: amazon
   rule_count: 1
-  sha256: a13f6949d30ddece7abd78d648fe6fb9cd4548839ae0b9bbaf424cbbda728b26
+  sha256: 86204384789f6a30518e42622c9c72b3974928614b3d7bd2d817c33e764f8c67
 - path: amazon/aws/aws.yaml
   entity: service
   id: aws
   display_name: AWS
   provider: amazon
   rule_count: 78
-  sha256: 9b5c7dd8532734775dd5bb06459b9757997c1da441320cc4efe82deed24231e1
+  sha256: 8046bec8d20b590755dcbef5ad8480f2d198bc62183504564f5e9b3950c3ae09
 - path: amazon/goodreads/goodreads.yaml
   entity: service
   id: goodreads
   display_name: Goodreads
   provider: amazon
   rule_count: 1
-  sha256: 28a1a20f7afbb5047efccc01534dea373ecedf6df0a148be1502a51d47955ad8
+  sha256: 0de32673e97c302b059eb60cd69ceb733dc126a1bc7830a48d9e6c30272fc1b2
 - path: amazon/primevideo/primevideo.yaml
   entity: service
   id: primevideo
   display_name: Prime Video
   provider: amazon
   rule_count: 26
-  sha256: 2f8f86d8076954f9236ce11d0f21f5b92813efb8f29686e2e606c2630a1118ea
+  sha256: 18d54147a23465ffd0427496310347ec7442764c5a26a36c2781bd4a61db0ffe
 - path: amazon/twitch/twitch.yaml
   entity: service
   id: twitch
   display_name: Twitch
   provider: amazon
   rule_count: 22
-  sha256: 7ca616f71e5bcfe15a345bd1bcf9f5d18d0e5ceaa227494fc9248f7844a20026
+  sha256: d214314f9e3a371fa8d29c9d942f075240b1a75139cf710eeb8107bede0f0df7
 - path: amd/amd/amd.yaml
   entity: service
   id: amd
   display_name: AMD
   provider: amd
   rule_count: 2
-  sha256: 09c9f8a7ea5c134c22f3626a0d2e892e64b19e06c7b916340bbe8ff1e4514d5f
+  sha256: fb39d9fe163b9d0dbee6688c550950f48c09d1821fd8660c759a42b764173f32
 - path: amd/amd_aggregate/amd_aggregate.yaml
   entity: provider_aggregate
   id: amd_aggregate
   display_name: AMD
   provider: amd
   rule_count: 2
-  sha256: 05b3004c4f7f9ca99677bff11b5eccaf8b6b7ffdfad86d22658a6c6c12252b1d
+  sha256: 0c5e19e4b37bf89908490be08204274ea8dcccdf2806b2d1114514585a0f5fc7
 - path: anjuke/anjuke/anjuke.yaml
   entity: service
   id: anjuke
   display_name: 安居客
   provider: anjuke
   rule_count: 2
-  sha256: 12299575c5ec9fcc0ded0467a2afb0aba9f941f4fdb2a05e7252356ea4951d95
+  sha256: 7ad020a28a9d41c3484a1a92cbf72773d2066f4e2ab0d784fffe06e021f7a67d
 - path: anjuke/anjuke_aggregate/anjuke_aggregate.yaml
   entity: provider_aggregate
   id: anjuke_aggregate
   display_name: 安居客
   provider: anjuke
   rule_count: 2
-  sha256: 69b7a1fec4887bc6c04aff88e6c0893a7ebce891389b76f54028f526938bb220
+  sha256: d13790331ef7086b696e5e7965b023ed34c70f28ca8c04ed3e47ecda8f2db61a
 - path: anker/anker/anker.yaml
   entity: service
   id: anker
   display_name: 安克创新
   provider: anker
   rule_count: 2
-  sha256: a5cefdcb15c4cc119d50e5f2f8d05c45a674db642e573ede42d9f22f8508a007
+  sha256: a2f7a8beedc2abf563071ab47e80b1ea7ef058e139ebd1c6977faf5e159e2da1
 - path: anker/anker_aggregate/anker_aggregate.yaml
   entity: provider_aggregate
   id: anker_aggregate
   display_name: 安克创新
   provider: anker
   rule_count: 2
-  sha256: f83d21c4b2e4ee69f9c662ca113551703c8597d29f4dd7457961f61af7b65721
+  sha256: 97dd302c01e186ffa90a491f4d36e362c700b368bb21109dcb57671c47996876
 - path: anthropic/anthropic-claude/anthropic-claude.yaml
   entity: service
   id: anthropic-claude
   display_name: Claude
   provider: anthropic
   rule_count: 1
-  sha256: 3e51dc8eb65b9c12a2a59e73c06351b8039ba2dbecb1af88295065c7b656d98c
+  sha256: b0e629f74c9f51c18ef3e13abef5fe55d5907ca05e08aaccca5b5cfb858461c5
 - path: anthropic/anthropic-platform/anthropic-platform.yaml
   entity: service
   id: anthropic-platform
   display_name: Anthropic Platform
   provider: anthropic
   rule_count: 1
-  sha256: f86420df622d945e936268a6ae91d2b04d28344edd396083addf22d005436704
+  sha256: bd770e357b10e0993c5b3fbe38d3b923957df2ba8396910cb3211a88227e7bf5
 - path: anthropic/anthropic/anthropic.yaml
   entity: service
   id: anthropic
   display_name: Anthropic
   provider: anthropic
   rule_count: 10
-  sha256: 9cc58c5b090cae86fe5ec581d054f1ec04af08a59d456471c635ad3eb56667d4
+  sha256: 05f7a6917698486acc9e7ef81f7a6619a13dafefecba7eb502fe3bdfc3c94e71
 - path: anthropic/anthropic_aggregate/anthropic_aggregate.yaml
   entity: provider_aggregate
   id: anthropic_aggregate
   display_name: Anthropic
   provider: anthropic
-  rule_count: 13
-  sha256: dfdff1f3e434db31793161086e998bd5da3bb0fc59e42a391083ec09c65d5fe1
+  rule_count: 12
+  sha256: 1904b231bdd7bf77780f0e98b97c49e7ef973efeb44657f73b6c0186bb64db7e
 - path: anthropic/claude/claude.yaml
   entity: service
   id: claude
   display_name: Claude
   provider: anthropic
-  rule_count: 4
-  sha256: 226cb5e02c615b3834a672bd80cb814015808f7cd4a9cbbac84a852d0ef6d004
+  rule_count: 3
+  sha256: 5e84a4d445aa3de0b3b39520e9240ebaab6d802ec08db7e2e6aab1b305da2a0a
 - path: apple/apple/apple.yaml
   entity: provider_aggregate
   id: apple
   display_name: Apple
   provider: apple
-  rule_count: 2067
-  sha256: 0aa5e167208f65614fa1b55697358001d5602e1bb320e0808358cb8425551885
+  rule_count: 2039
+  sha256: a3e12e826fc11f02f4c1e59196de81bbab93d90ff3f070969ecf607d15164b80
 - path: apple/applebooks/applebooks.yaml
   entity: service
   id: applebooks
   display_name: Apple Books
   provider: apple
   rule_count: 1
-  sha256: f328bf09b3bb7d02c50e2b71efe31a9e24ca0804e2a8557a71117b33d8318879
+  sha256: 4f16cdcb7f366f26d4e803d005a5dd59a3a2c2b04371543480a53d439a66aab5
 - path: apple/appledev/appledev.yaml
   entity: service
   id: appledev
   display_name: Apple Developer
   provider: apple
-  rule_count: 40
-  sha256: ce74c5d680e06afca2fe501c278e58af80d7666208526110ea95a30eaa5b4ad8
+  rule_count: 38
+  sha256: 7a3922a21c9de07bbd6e2029fd8cb210b4d9e3c2046ef2cdbd1b05447d13004b
 - path: apple/applefirmware/applefirmware.yaml
   entity: service
   id: applefirmware
   display_name: Apple Firmware
   provider: apple
   rule_count: 175
-  sha256: 70f3200a517ededb80ae1091a178655964f7a876841101c5da35f4cdc4a9ea57
+  sha256: b289b30e87167583b1cfd5facef9870a67a442837d3134bbef0f6ebe488b30a1
 - path: apple/appleid/appleid.yaml
   entity: service
   id: appleid
   display_name: Apple ID
   provider: apple
   rule_count: 4
-  sha256: 159c4cbe58088db9350b68a94f29b842dacef9eb776c730c717e721c221f1a48
+  sha256: 8e5c08bfd5bc18476255eb91b5bfb33651d2b8b0031b2f41e80508de5fd0fc59
 - path: apple/applemail/applemail.yaml
   entity: service
   id: applemail
   display_name: Apple Mail
   provider: apple
   rule_count: 2
-  sha256: c8dfd95b10283d0c538a9cabeacbf6168c966a80852a71a98927ad60d37a5bbd
+  sha256: 8edb255775edb96e5551f8f2e1f90d940424e390ed07a0ea4923abd3657d3044
 - path: apple/applemaps/applemaps.yaml
   entity: service
   id: applemaps
   display_name: Apple Maps
   provider: apple
   rule_count: 1
-  sha256: 28ef425c107db4de768b554daece97552a8cff69e979e12209ff59f538aca416
+  sha256: c9d53aa37aca53fb2afae2986728523d5cd31333150d217115e3caa6031e87ea
 - path: apple/applemedia/applemedia.yaml
   entity: service
   id: applemedia
   display_name: Apple Media
   provider: apple
   rule_count: 52
-  sha256: dcbd4b0921fc20273f4a9902b7e76c2c9d0dca9512dd3c089d2fdd31d874bc9f
+  sha256: 3d81af7f078517afb5fcba06147ccc358e2a9787ba82a96fa1ed3b5de4bebd01
 - path: apple/applemusic/applemusic.yaml
   entity: service
   id: applemusic
   display_name: Apple Music
   provider: apple
-  rule_count: 16
-  sha256: 0c645e58940d130f255b71867ebc4cffed0d5894e05ccf5259271fc14476c260
+  rule_count: 9
+  sha256: 18c88086713a0362fe037ecd5885fd226bcd0b52828d570722bdadf80fc044f6
 - path: apple/applenews/applenews.yaml
   entity: service
   id: applenews
   display_name: Apple News
   provider: apple
   rule_count: 2
-  sha256: 01902b24ac899d2dbe56091f730575a7f50165099ec93f8645fbe7a0a932bb12
+  sha256: 680505140a07d934bdc30086a4ac0251377cd0106885845281412eadb398d522
 - path: apple/applepodcasts/applepodcasts.yaml
   entity: service
   id: applepodcasts
   display_name: Apple Podcasts
   provider: apple
   rule_count: 1
-  sha256: 5cc14d69b6a2a241571eec6535b2a3a0cffc6339fb67f30f172a826a3c168b84
+  sha256: 097f7a84982e8c2e9b82e82fb00b491f5074ae564b9dda9533e9e56bac0c246d
 - path: apple/appletv/appletv.yaml
   entity: service
   id: appletv
   display_name: Apple TV
   provider: apple
-  rule_count: 14
-  sha256: 770ff5619d86a957e1cd297acc91596236895782c65a0c3f343d6ee1fe18dbfa
+  rule_count: 7
+  sha256: 03a2e660e0e7c9b8656002ebfa44013a61de064aeac246f254b33afa25012682
 - path: apple/appstore/appstore.yaml
   entity: service
   id: appstore
   display_name: App Store
   provider: apple
-  rule_count: 6
-  sha256: c879e01eb6ac37f554aaa7024ba4914cd9844b6cfb04446aac3f9a65852c0bc8
+  rule_count: 2
+  sha256: 8b9feee4f7d0c85bf52881bd9e6369fbdef44d99e20faf9c57ca2cb8cd62dfcc
 - path: apple/findmy/findmy.yaml
   entity: service
   id: findmy
   display_name: Find My
   provider: apple
-  rule_count: 9
-  sha256: 925d5caf7f1a8c34d01df79290d996a3f556398531f45b02aba12c95eb7ff1d7
+  rule_count: 3
+  sha256: 15643cc4d11cd574b08c98613f29c09f234ed896daef19f3dffa94b3a7bfa484
 - path: apple/icloud/icloud.yaml
   entity: service
   id: icloud
   display_name: iCloud
   provider: apple
-  rule_count: 62
-  sha256: 278eacfee21901fd0440d1293d081a17abc546c3467f95f44a1d33044ec1d534
+  rule_count: 58
+  sha256: 078999147a78616d48597150d96e47a561ac2355e6222d5899589c871513be60
 - path: apple/icloudprivaterelay/icloudprivaterelay.yaml
   entity: service
   id: icloudprivaterelay
   display_name: iCloud Private Relay
   provider: apple
   rule_count: 6
-  sha256: 75f855bec41c8c020473fddfc63d407da3d064e933955306c8b08b0625b89af2
+  sha256: fe99a50bf7d84ccf8cdff78942e25ca241a13a2db0da6244585f326053419576
 - path: apple/siri/siri.yaml
   entity: service
   id: siri
   display_name: Siri
   provider: apple
   rule_count: 1
-  sha256: b294133c4a7c464c76b5ea08881db1cae2d21abf9cc87f206ee0ad07089df992
+  sha256: b52eceb29c14d1a82f0ed7057b711342992a31b5affea5f7f9a9fe03bb1d568d
 - path: apple/testflight/testflight.yaml
   entity: service
   id: testflight
   display_name: TestFlight
   provider: apple
-  rule_count: 8
-  sha256: 5aa4d9b0b70dbce1d425e8ce74b7b2ea40151f97c3835a46c4af46d10f96e675
+  rule_count: 2
+  sha256: 6a88896b63a222af47a52f6aa7cb7c9e739a632b3b0e4f9c265fbfd62549c192
 - path: arista/arista/arista.yaml
   entity: service
   id: arista
   display_name: Arista
   provider: arista
   rule_count: 2
-  sha256: c1e2d43e84a877b278a02cdcbe7d86ed18c4d629abd8107ba80077ec0d07fdea
+  sha256: d12b25a18d6e8010c3763ea50a251c830d6ad308d2660e40cb786fe11a526953
 - path: arista/arista_aggregate/arista_aggregate.yaml
   entity: provider_aggregate
   id: arista_aggregate
   display_name: Arista Networks
   provider: arista
   rule_count: 2
-  sha256: 64da1c64d034587eff92b5f724183b767ec3547eb85055e252a8de5f79a3ce0a
+  sha256: 7368c38301b46395c58e2a7a5822ac44d2932701b15a25440ae188478899a64a
 - path: arm/arm/arm.yaml
   entity: service
   id: arm
   display_name: Arm
   provider: arm
   rule_count: 2
-  sha256: 93cdf12616a3371fea124f6c0efbef94bf4cde33e6b9d2b1e752fb1f76f87dc7
+  sha256: da8287f7a23482d6acd9497efd57b61f64571027b73d20cf2d2facfd52902490
 - path: arm/arm_aggregate/arm_aggregate.yaml
   entity: provider_aggregate
   id: arm_aggregate
   display_name: Arm
   provider: arm
   rule_count: 2
-  sha256: 5a500f28fad0b265133efa59e4b7e027d7a87263679dfe6ae29fc5e6d92cdc6c
+  sha256: b0ac85ed27702c72cb84dd0ee90096a1e050801514b985b97742c3ec7806239b
 - path: asml/asml/asml.yaml
   entity: service
   id: asml
   display_name: ASML
   provider: asml
   rule_count: 2
-  sha256: 0bfc01c06ffde88eda607f5213bb5953639493c77ed2f61d60ee81a203cd3d6e
+  sha256: f0c19daf94987a1813a076f48cbf9962a0bc02445ae9598c32156d68edbfd093
 - path: asml/asml_aggregate/asml_aggregate.yaml
   entity: provider_aggregate
   id: asml_aggregate
   display_name: ASML
   provider: asml
   rule_count: 2
-  sha256: 573b01da322448277a4054bc11eb5db18fbff5cf6c525a841c873b8da606ee56
+  sha256: e3f74cdbc5c5bce0ae2d7de32fb55130b8afb6aa3432c50bdb96db814d0755cc
 - path: atlassian/atlassian/atlassian.yaml
   entity: service
   id: atlassian
   display_name: Atlassian
   provider: atlassian
-  rule_count: 12
-  sha256: 354c59a723d2e80aa66151b30b0f28c2ca8ff5111787420fb596ee1e8e21b375
+  rule_count: 2
+  sha256: cdd74915318cb3561c28c6d36ab310cf2be65c3e3f486041f1c123b5172ea7bc
 - path: atlassian/atlassian_aggregate/atlassian_aggregate.yaml
   entity: provider_aggregate
   id: atlassian_aggregate
   display_name: Atlassian
   provider: atlassian
-  rule_count: 12
-  sha256: 1a0488dac80d2247243c2c1641592b432397287a225862ffbd4caf236af111df
+  rule_count: 4
+  sha256: 16685ea3113107492c1965272a888ec0059b0fcd132eb2f2e844d84a8e1aaf6f
 - path: atlassian/trello/trello.yaml
   entity: service
   id: trello
   display_name: Trello
   provider: atlassian
   rule_count: 2
-  sha256: 4555371378de1a7ed73ca5a0a0b62bff728d96adca0fb2a55e7bd10a8cbab677
+  sha256: d4ff2cf08102fd8dbb095c3e0331a996c8d9e6a8095d912755c1c097025928f5
 - path: atour/atour/atour.yaml
   entity: service
   id: atour
   display_name: 亚朵
   provider: atour
   rule_count: 2
-  sha256: 73714f1fc700a88d672640d27ebab22bc2fcf6187b2840fb806b9accc40f809f
+  sha256: af0eb79bfadda178f5044c03c3ec5ecbaa413a1ecf3e4634d2e6fab05e0f89a7
 - path: atour/atour_aggregate/atour_aggregate.yaml
   entity: provider_aggregate
   id: atour_aggregate
   display_name: 亚朵
   provider: atour
   rule_count: 2
-  sha256: d8f23b5d197bec8069cb354e36b44f0a87c8400e674f90600344db6fe22349c3
+  sha256: 947a71eeb0734a5e6a89eae9f0be887750ab830de395bef7cb33050e1227fe3d
 - path: autodesk/autodesk/autodesk.yaml
   entity: service
   id: autodesk
   display_name: Autodesk
   provider: autodesk
   rule_count: 2
-  sha256: 57f2a837443099d5cafb3c885c2139092aa78abb1c640e365671b02c7ba48dec
+  sha256: 9626ee8d93955c871ab46f76ab7717a34bba8e6c56545bf218d235b30bdc41d3
 - path: autodesk/autodesk_aggregate/autodesk_aggregate.yaml
   entity: provider_aggregate
   id: autodesk_aggregate
   display_name: Autodesk
   provider: autodesk
   rule_count: 2
-  sha256: aa5ef40fe87225005fc1b164b8796cd65645f4a6141f3c319e32d966596d15af
+  sha256: 3148071bbb1b7d5e24ba0c2cf9b720466378bac610d2d4f09924f4e88f872d69
 - path: autohome/autohome/autohome.yaml
   entity: service
   id: autohome
   display_name: 汽车之家
   provider: autohome
   rule_count: 2
-  sha256: bf9676a03b272f23acb119e592edc5e2ce312948f2fc0461337ba4137afb7d4b
+  sha256: 06b3796151e43517479ff607786b3328efa3744acf231888f4804df0f9eaa532
 - path: autohome/autohome_aggregate/autohome_aggregate.yaml
   entity: provider_aggregate
   id: autohome_aggregate
   display_name: 汽车之家
   provider: autohome
   rule_count: 2
-  sha256: 793027a0c2e6e038a32247be88b55517256532b734187c06d1af30dfe7812def
+  sha256: 033cd1952cbeca3f9a04a83b249ac3e5450be322300b42bd244d0892b74c6f49
 - path: bahamut/bahamut/bahamut.yaml
   entity: service
   id: bahamut
   display_name: Bahamut
   provider: bahamut
   rule_count: 7
-  sha256: 4c56fc283221ca8f5a3ebba69df3b5569e0e5df4196d2c0ffc82b0f83567bf85
+  sha256: 0998ac5666a141c020973fd522475ea4142af64819418fd296d50b544c80a2b9
 - path: bahamut/bahamut_aggregate/bahamut_aggregate.yaml
   entity: provider_aggregate
   id: bahamut_aggregate
   display_name: Bahamut
   provider: bahamut
   rule_count: 7
-  sha256: 3bb2d42465912c92ab61cf8622f321d0221906184c2d188639f6af22995e2a23
+  sha256: 22d8481f11b2c8a0b6b918b2d335961691285e524f95b36454ad0253741d5840
 - path: baichuan/baichuan/baichuan.yaml
   entity: service
   id: baichuan
   display_name: 百川智能
   provider: baichuan
   rule_count: 2
-  sha256: 233e202acef82c5f929dfd2036069d8144fee9707e0ad5de6741842c0e0f9db2
+  sha256: 92125946b86ece6378226536d67a2568366b55119879002771e940edbf7ad694
 - path: baichuan/baichuan_aggregate/baichuan_aggregate.yaml
   entity: provider_aggregate
   id: baichuan_aggregate
   display_name: 百川智能
   provider: baichuan
   rule_count: 2
-  sha256: c5df927d33fc05433c702641cf5c71abb9d8b526e1b2da5e408b90ad5e5f8f82
+  sha256: d6b7ee00a6f3f87d3dc863e186c0944d276ba4b5f85efb6c88104239d0f793d5
 - path: baidu/baidu-zhidao/baidu-zhidao.yaml
   entity: service
   id: baidu-zhidao
   display_name: 百度知道
   provider: baidu
   rule_count: 1
-  sha256: c1c7c245c6b811539b11cc1ad135c77320ad67fa0cadc4e24858b6e7ac5a90e5
+  sha256: 9f9bf9e220cf53465a40ec5cd4704b7837649dd59be1a2ae6e7f2be877777137
 - path: baidu/baidu/baidu.yaml
   entity: provider_aggregate
   id: baidu
   display_name: Baidu
   provider: baidu
-  rule_count: 354
-  sha256: ccdb9b917246049a82e9a540b46daab87f4c8a4d47177151f367ca603fa39b51
+  rule_count: 288
+  sha256: abc10a3b3ea3df366a490f0a2379d293ab4b49427331ba20d22e7ebdc9cc2dbe
 - path: baidu/baidumaps/baidumaps.yaml
   entity: service
   id: baidumaps
   display_name: Baidu Maps
   provider: baidu
   rule_count: 1
-  sha256: c3f1584e598e2c60af56b5cd52605c1c75f92c0d4c37eb55f3480f2cb21ae17c
+  sha256: a727b5c2f3a28d149b64fc0f6574636ab041c51765f7a5ce02d2a92792d92167
 - path: baidu/baidunetdisk/baidunetdisk.yaml
   entity: service
   id: baidunetdisk
   display_name: Baidu Netdisk
   provider: baidu
   rule_count: 2
-  sha256: 75444aa95a3e50c2893c66422ca12024260b0420953c5f0a0ba3beaacae80302
+  sha256: 7d3aa63385a301887776c8de890f5096b1404cab8a10510f1a89ed33f8c90eab
 - path: baidu/baidutieba/baidutieba.yaml
   entity: service
   id: baidutieba
   display_name: Baidu Tieba
   provider: baidu
   rule_count: 32
-  sha256: 01a787bb72450ab1889ee902f501a48186791b4ac280435c0fd8f04db00c259b
+  sha256: 0030f9857a300378c66f30c1b9a9392c445fc247cab176365eab1ac2d1727fb8
 - path: baidu/baiduwenku/baiduwenku.yaml
   entity: service
   id: baiduwenku
   display_name: 百度文库
   provider: baidu
   rule_count: 1
-  sha256: 41a75053ff5e64981636c1f997dafbb0cf33080b3553767d6ba9bd93ecb86eee
+  sha256: a5dc7df830e9803d006bf78cd8672276bd9465a92c976eca750b0cd378d37714
 - path: bbc/bbc/bbc.yaml
   entity: service
   id: bbc
   display_name: BBC
   provider: bbc
   rule_count: 34
-  sha256: 37b43bc26cc1aeda6ceedc3df64cafddd72c4c2cac338622f1c42a2c8ef8125f
+  sha256: d164e85120410afad7f92eb65d8bef1e48870c2588bc12d78f18b19b1a37eab5
 - path: bbc/bbc_aggregate/bbc_aggregate.yaml
   entity: provider_aggregate
   id: bbc_aggregate
   display_name: BBC
   provider: bbc
   rule_count: 34
-  sha256: 814c12ab3a2435e3f79aead6366e0719952f839e764aeb1fab6751c2baa4e2ee
+  sha256: 531ca26cdd363105706c666ac0c214b045dfe3e2acbaa77d02bc5a06d10601a8
 - path: beike/beike/beike.yaml
   entity: service
   id: beike
   display_name: 贝壳
   provider: beike
   rule_count: 2
-  sha256: 647029aa54f5d85017a1a0f319fa4851efa77626b282d33029abd032cb8c8230
+  sha256: 8869d231efbc1eceb889adbc306b677a3a35cdac3a2d8e94779df4f89772fdfe
 - path: beike/beike_aggregate/beike_aggregate.yaml
   entity: provider_aggregate
   id: beike_aggregate
   display_name: 贝壳
   provider: beike
   rule_count: 2
-  sha256: 32f20195601a00d1bb25eb656c93aa0f354640fb881b0909fccbcf99274878e0
+  sha256: 88884f8fb3c20faa3b0dada4c0e082332608cc506725ad66b639324ecf33f4d9
 - path: bilibili/bilibili/bilibili.yaml
   entity: service
   id: bilibili
   display_name: Bilibili
   provider: bilibili
   rule_count: 135
-  sha256: 7ba005ecadce0741bb9d16f329b064c666a96f1aff38e5a5eacd9b3ff54be812
+  sha256: 8828d0e89afe312013286d99463924cf7fd1e9f6978f905c5dabad93a026cd72
 - path: bilibili/bilibili_aggregate/bilibili_aggregate.yaml
   entity: provider_aggregate
   id: bilibili_aggregate
   display_name: Bilibili
   provider: bilibili
   rule_count: 135
-  sha256: c9ba99920fc19168eaa60c9fa908a50a3f2bf47ffa3ced4beef7c0dec5fed3e8
+  sha256: e10ff30d03704894e5a18537cd41a83518355cd0b86b9b3731049b19d74e3691
 - path: binance/binance/binance.yaml
   entity: service
   id: binance
   display_name: Binance
   provider: binance
   rule_count: 12
-  sha256: ddc1865dfddd3c51709008ff2aeb29f70f54278c3836c1438b0b988d3c0e17ce
+  sha256: 0d4f4818f5b9afde0b5454ed1211e08aa2785865ec9b9b67b7d0681d697b5dc4
 - path: binance/binance_aggregate/binance_aggregate.yaml
   entity: provider_aggregate
   id: binance_aggregate
   display_name: Binance
   provider: binance
   rule_count: 12
-  sha256: e6a0c70047d4ca3901a52c39956271ac99893b09f8b401a7abfed7ecc9e85a6e
+  sha256: 01f23e7a2c9fd7fe6975edfa3a301d14ef78aaaa36b48965518f68867996424b
 - path: birentech/birentech/birentech.yaml
   entity: service
   id: birentech
   display_name: 壁仞科技
   provider: birentech
   rule_count: 2
-  sha256: f40f77da11c74695c93b2ca2f7a4364d4df3eea09258961736ce0c4990495362
+  sha256: 3b78f60a544f806d20df764b564f1ee3d54f6e8ef320737cd3a0abc701279545
 - path: birentech/birentech_aggregate/birentech_aggregate.yaml
   entity: provider_aggregate
   id: birentech_aggregate
   display_name: 壁仞科技
   provider: birentech
   rule_count: 2
-  sha256: f515e802c1d381348c484d4a0938daec6f1e0ff082612680f5f795e3722e53c6
+  sha256: 73f879735cac3ce75aeb10f9a2341ac33282fa7b14dcd4ffa57d7d6d11e0d77a
 - path: blizzard/battlenet/battlenet.yaml
   entity: service
   id: battlenet
   display_name: Battle.net
   provider: blizzard
   rule_count: 62
-  sha256: 4fc3c2751734469f7a67ce2c2a9497f2b5e8f41245f60f63bcf523efe9aba121
+  sha256: f4dcb2d743457cc7a05b0d2e6f37cb190054bd3309587aa80295b3d12be6434e
 - path: blizzard/blizzard_aggregate/blizzard_aggregate.yaml
   entity: provider_aggregate
   id: blizzard_aggregate
   display_name: Blizzard Entertainment
   provider: blizzard
   rule_count: 62
-  sha256: 6b5b6572f1adaea92ec26277b7281d60281ca86f450899dbde67beefd44b3e81
+  sha256: 9b6d294b1820f0a13114963bea344ff2f4be480ddecf4b0aa17a4beed2332e37
 - path: block/block/block.yaml
   entity: service
   id: block
   display_name: Block
   provider: block
   rule_count: 2
-  sha256: c10ce4e536f250aa3e6447d266331c9c6dd9f946ecdb94dc0ecd3a59acfa850f
+  sha256: d97fb42626d2bed8e5c7c8cd8852e334d3c24b0fe0eca1ca453edc4dc43fc142
 - path: block/block_aggregate/block_aggregate.yaml
   entity: provider_aggregate
   id: block_aggregate
   display_name: Block
   provider: block
   rule_count: 2
-  sha256: 0298bf570816691db16fcebec6ff3d3cc3ddf8c5fa3efa75396a969a54f15f11
+  sha256: 00a1c439aa72ff6aace0413f55e46b07b941ea1a5ae4a5c33e7832e0ff144169
 - path: bluesky/bluesky/bluesky.yaml
   entity: service
   id: bluesky
   display_name: Bluesky
   provider: bluesky
   rule_count: 3
-  sha256: 9157edabf6c1903f2d4ad97a9f4e1e06f7234acc7ac7a2f5ccee3978b7e779ff
+  sha256: 0b5678d689eb2a3628a93a06417df727f5217f3186066e7a3f1bf5ee0be5a3c1
 - path: bluesky/bluesky_aggregate/bluesky_aggregate.yaml
   entity: provider_aggregate
   id: bluesky_aggregate
   display_name: Bluesky
   provider: bluesky
   rule_count: 3
-  sha256: 4129d5405f6d48cced56507381338ac49fcf760b5c8ba214d82d17b1e1be1b66
+  sha256: 4679237c2dc7b40fe64b020d3572ee7e0feedef13c1c470bea7330357fe6ff25
 - path: boc/boc/boc.yaml
   entity: service
   id: boc
   display_name: Bank of China
   provider: boc
   rule_count: 22
-  sha256: 3864c7bc2d55aed101d5e12395e0ba6f9e91f6ae04b4c1f2bda3a087b6225fc3
+  sha256: cda0b61d79e1dfdcad9249c3a93c482431c2b9a2d1344c655ec9eb8c14e407f7
 - path: boc/boc_aggregate/boc_aggregate.yaml
   entity: provider_aggregate
   id: boc_aggregate
   display_name: Bank of China
   provider: boc
   rule_count: 22
-  sha256: f12c5e661ad89d4d01f32faa9fa6151a1011ef992af58f3493340aabcb200b46
+  sha256: 2deee82dbd2b5a5a69a9324682ee96089b0558cd5737e51ad4f5f6c67a223560
 - path: bocom/bocom/bocom.yaml
   entity: service
   id: bocom
   display_name: Bank of Communications
   provider: bocom
   rule_count: 6
-  sha256: d1c8380aa241c638388a1812c1fceeb44a2d97f55eba7c04f8f177658a58b39a
+  sha256: 7d7a0c82cdcad2f744522c3b03978f603f8bd52424f8a6783f6fb6a0cbd7675b
 - path: bocom/bocom_aggregate/bocom_aggregate.yaml
   entity: provider_aggregate
   id: bocom_aggregate
   display_name: Bank of Communications
   provider: bocom
   rule_count: 6
-  sha256: c0234e0fab9d7e1723667d7999023c6fce9cb9bca04331bd84bbef4e872dcd40
+  sha256: c90ef5202e84d7a609b693773967873d36237c2dacf40566805c49d7a16a1b85
 - path: booking/booking/booking.yaml
   entity: service
   id: booking
   display_name: Booking.com
   provider: booking
   rule_count: 3
-  sha256: df1fb0021ef2e29ae930302ccbbdc43422cd39a1e13c2f9e4f1b22bd844f330e
+  sha256: 70e9fc5f23ddb4716fb16db1da08c4b10973846c989f1cf38d1322f8e0bd906e
 - path: booking/booking_aggregate/booking_aggregate.yaml
   entity: provider_aggregate
   id: booking_aggregate
   display_name: Booking.com
   provider: booking
   rule_count: 3
-  sha256: d65c0493208e1ff9b6045ee0ba9f228049557f9a210a1493eeddaddbe9987bf3
+  sha256: e4e7109c31c239472e17a6572ecbd118d38d1ffe6071f4f489209af15091e14c
 - path: boss/boss/boss.yaml
   entity: service
   id: boss
   display_name: BOSS直聘
   provider: boss
   rule_count: 2
-  sha256: 61e952375b707435719aacfa9bf85049bcacce9205dca73f54d47aee631ef278
+  sha256: 60cb6fd653fb8d6091eedbe70ede0723746bec8246e07424a3483de66126af16
 - path: boss/boss_aggregate/boss_aggregate.yaml
   entity: provider_aggregate
   id: boss_aggregate
   display_name: BOSS直聘
   provider: boss
   rule_count: 2
-  sha256: 7e8d054fb6aec2c13d2c59d01a445da5c7dacc8014e33e045c74a7aa965a7402
+  sha256: c1beaae28a99c34288c9bf5e83721878e9d7bf80bb48382b6cb44c3793bd035e
 - path: broadcom/broadcom/broadcom.yaml
   entity: service
   id: broadcom
   display_name: Broadcom
   provider: broadcom
   rule_count: 2
-  sha256: 0e8444b9f41809d149c08e25d770f1f97ede41cc3034518b00536439a67c4243
+  sha256: d4b325f686d5100f6986355eeeeeab04ac6c7576f7c086ccf1f4ab7d11ddf305
 - path: broadcom/broadcom_aggregate/broadcom_aggregate.yaml
   entity: provider_aggregate
   id: broadcom_aggregate
   display_name: Broadcom
   provider: broadcom
   rule_count: 2
-  sha256: b0ca9c509fe4004f385219f4a1ab28a80ada0e7296eb4a1f57bffd32d37b7e21
+  sha256: bc6d282b717b216418a181399de8c3d1c619b410e135c7d67351eb66cdf9cc1e
 - path: byd/byd/byd.yaml
   entity: service
   id: byd
   display_name: BYD
   provider: byd
   rule_count: 2
-  sha256: 934814171e7212d385dc25ef050b3b71a1d9507b867a10abf2bb7a1c75fa5437
+  sha256: f05d1b0f21086c739736ca6f74f948975cbb3801d7cb23503042b475047226c9
 - path: byd/byd_aggregate/byd_aggregate.yaml
   entity: provider_aggregate
   id: byd_aggregate
   display_name: BYD
   provider: byd
   rule_count: 2
-  sha256: 1efe2179738b81e3a596d2462f75851586ae52d7f0c0993119df7de13b602690
+  sha256: 20fcda291266fdb960d5de6442be30c4c86ae25fa1df6a9ba9bbedc109f456bd
 - path: bytedance/bytedance/bytedance.yaml
   entity: provider_aggregate
   id: bytedance
   display_name: ByteDance
   provider: bytedance
-  rule_count: 1112
-  sha256: f5789bd95eb2d3949b9b5817412b87f26948e0c8746c2232232d941d6711c2d4
+  rule_count: 1099
+  sha256: d06fe26976a8bddc1e48c9f6cf3cde9fd4d84983f59069e4f9e7a7261ab271e3
 - path: bytedance/capcut/capcut.yaml
   entity: service
   id: capcut
   display_name: 剪映/CapCut
   provider: bytedance
   rule_count: 2
-  sha256: 7a16c3dc783e21f61c493e0e05ecd7683ba7c876f024a3a52396664a5649fbfc
+  sha256: d0227dc992f1b4ac2e415afa38302afb02e8399b70bfdce2149e74399ae034b3
 - path: bytedance/doubao/doubao.yaml
   entity: service
   id: doubao
   display_name: Doubao
   provider: bytedance
-  rule_count: 36
-  sha256: 01dba627e2b706dd01a47b4f567b390a9b6ca311c4bbbde3c46b365092f8d6e1
+  rule_count: 4
+  sha256: 6d9043300a467798d44399c2d06d54dfc2673ed44100d8e631ee63dbf8ed9d39
 - path: bytedance/douyin/douyin.yaml
   entity: service
   id: douyin
   display_name: Douyin
   provider: bytedance
-  rule_count: 80
-  sha256: 7d9f4c8180a8e9cc0504c73463459676ce5453e1ac62b58d9584abdcb9ef1bba
+  rule_count: 13
+  sha256: 7bd61d57f6eca2bdd14cb44eab423479d89d7203ad90b393640111c99659f3db
 - path: bytedance/feishu/feishu.yaml
   entity: service
   id: feishu
   display_name: Feishu
   provider: bytedance
   rule_count: 43
-  sha256: 8adce064abd5c13930bad7101d84bc58282a0ffc5d14a89448782cb897c72590
+  sha256: 8e81e53fc4ea51568f52c68dc705536afe38c718378cfa4f0bbba869c2d1da94
 - path: bytedance/jianying/jianying.yaml
   entity: service
   id: jianying
   display_name: Jianying
   provider: bytedance
   rule_count: 2
-  sha256: 134517fedb470b085da8b2736736a8c0ee0c5390b4d4146986679e3b88f80728
+  sha256: b483107afece3c5ccc9332079e1054e8c4232cc403da3636084e02ff15fa28f9
 - path: bytedance/lark/lark.yaml
   entity: service
   id: lark
   display_name: Lark
   provider: bytedance
   rule_count: 2
-  sha256: 849c2ef6cbaca9e631ddf74b39ddc1161f385c0362b20f7720888a9dea9d7ec4
+  sha256: 2ee3cae4dbe4bab7c4fdecd0cbb3deb6ead1b65e56ad96daedde7e063a4d073d
 - path: bytedance/tiktok/tiktok.yaml
   entity: service
   id: tiktok
   display_name: TikTok
   provider: bytedance
-  rule_count: 66
-  sha256: 92b3326dbad04e582ffb38fd97128f9368d13e1793f72374fcd4d13142d35a12
+  rule_count: 29
+  sha256: 2374d0b438be1d8a615c3045e0d884af6a8bd497c7120eefdf853045ca738a47
 - path: bytedance/toutiao/toutiao.yaml
   entity: service
   id: toutiao
   display_name: Toutiao
   provider: bytedance
   rule_count: 2
-  sha256: 633e02ba189f0d6db8b5e32f2f9ead33637245c5c7012d5557ca1d1ed38d8cde
+  sha256: 1db41946e46515bcb3e176449fd8c2b7ad092b323119b68117a1acbfca1a7a1e
 - path: bytedance/volcengine/volcengine.yaml
   entity: service
   id: volcengine
   display_name: 火山引擎
   provider: bytedance
   rule_count: 2
-  sha256: 86f9c751142058c16050da49156b8bebcc586b49aaa4537e6730c914a07a86a3
+  sha256: 05a26b67047418e4feadc9a4a447ccc857013a28a49bc4bc40356521da33d112
 - path: bytedance/xigua/xigua.yaml
   entity: service
   id: xigua
   display_name: Xigua Video
   provider: bytedance
   rule_count: 2
-  sha256: aef9d404029452bf1de4a2ca414c08c9040eafccc0ecb1c86c63860fd599abd1
+  sha256: 6c3e19469a0418593011a352e247b6a6f1c57d864018d3d881d5603bbf75aec1
 - path: cadence/cadence/cadence.yaml
   entity: service
   id: cadence
   display_name: Cadence
   provider: cadence
   rule_count: 2
-  sha256: 59c249e80e4477f5067be324ae2b7a490883d006a22a354aa79e2b8fb4d6743b
+  sha256: c92c2d2bc36065ebff0448dd2d3b67ca6a9f91b5da4e886fedcc645f4088ec64
 - path: cadence/cadence_aggregate/cadence_aggregate.yaml
   entity: provider_aggregate
   id: cadence_aggregate
   display_name: Cadence
   provider: cadence
   rule_count: 2
-  sha256: 4f2a09d7570918f214f254067473eae7da39b9e39cee2a8dbebd99616afb09c1
+  sha256: 0853b3ca3717f6ce3d4c16f728724deeebe1c7249bdc131fa518800a175f12f2
 - path: cambricon/cambricon/cambricon.yaml
   entity: service
   id: cambricon
   display_name: 寒武纪
   provider: cambricon
   rule_count: 2
-  sha256: 07624bfcac1221bf0c09d8f070c4cdacb527398674ae5035a043aa4d0d7bed05
+  sha256: 46ab193c7af93c674ff94aefec73fc571fae2bce9f6a2b77cced85e4ee4655dc
 - path: cambricon/cambricon_aggregate/cambricon_aggregate.yaml
   entity: provider_aggregate
   id: cambricon_aggregate
   display_name: 寒武纪
   provider: cambricon
   rule_count: 2
-  sha256: f9f64dd4057b530d10df77537befb9f365152e379ef00ff680573c2187a9103e
+  sha256: 29f0b6a1af507593a2506a7bc083265ff49845b925f6b14cc84a9619e235a8db
 - path: canva/canva/canva.yaml
   entity: service
   id: canva
   display_name: Canva
   provider: canva
   rule_count: 6
-  sha256: ac48319e0dbc811c657a71e0288e87fae8d06d9b251593f7d8660866d455ddda
+  sha256: 8968fb04d3d39b004d1b9e964748d708e744937781f85f969c609d6b90fd9b58
 - path: canva/canva_aggregate/canva_aggregate.yaml
   entity: provider_aggregate
   id: canva_aggregate
   display_name: Canva
   provider: canva
   rule_count: 6
-  sha256: 29b903e539280b9b0e97da51b6e5bd7410d878373214d7fb6158f2816e8d7881
+  sha256: f888698df3b006db80c2e32820930b871def9981b6ac4c22a4be35e99197050f
 - path: caocao/caocao/caocao.yaml
   entity: service
   id: caocao
   display_name: 曹操出行
   provider: caocao
   rule_count: 2
-  sha256: e0dadc09d8022ccbc7abab31413846988d4d4fd3448015ae5a67bd10e1285303
+  sha256: 761c3a934508ce8c133b708639065601c0833f740d0e3bec7f66da0e51fffeda
 - path: caocao/caocao_aggregate/caocao_aggregate.yaml
   entity: provider_aggregate
   id: caocao_aggregate
   display_name: 曹操出行
   provider: caocao
   rule_count: 2
-  sha256: d5d8af4d360c730cb8e9c2dad87e88412320ec36654dcca5ea15f0e3084060cf
+  sha256: dfd782d8080405ad2244add2961c3a43bfb350abbec4224eb9c5f3bd03697280
 - path: category/developer/developer.yaml
   entity: category
   id: developer
   display_name: Developer Ecosystem
   provider: null
-  rule_count: 376
-  sha256: 160d354a5165423e0790772fd5d9efe836a3fed9db2d73efda58ead48f2da6af
+  rule_count: 285
+  sha256: 393021e0fce8be7129904d297ba4f2fae5dbe639a47e397ac94ca8ef1810eff3
 - path: ccb/ccb/ccb.yaml
   entity: service
   id: ccb
   display_name: China Construction Bank
   provider: ccb
   rule_count: 18
-  sha256: 3933cdceb2ab224371e733b3c035465350f754be5f7de766b2e9fa7a89791d1a
+  sha256: e487ae53ce7e2bd65bfe990cb353cf35c6ec04b21710412fa70effb0e8b9382e
 - path: ccb/ccb_aggregate/ccb_aggregate.yaml
   entity: provider_aggregate
   id: ccb_aggregate
   display_name: China Construction Bank
   provider: ccb
   rule_count: 18
-  sha256: 2bbd7804a95e12690c660d4e0d39b362acb8ea3e143196f9cea1f6d60938316a
+  sha256: 73c26e48fd012c03d00c9fb140b89f1f823285cddde7b1100600766c7615a626
 - path: cctv/cctv/cctv.yaml
   entity: service
   id: cctv
   display_name: CCTV
   provider: cctv
   rule_count: 44
-  sha256: b42c8da664ea2dfd46ac5278ab7d0f0bbcd48fd11f2befc357980dc4c6833cdc
+  sha256: d4f89b7c9fe0a60268493be4ca215e3444fe5f9c375686bc90413d1529e2f6e7
 - path: cctv/cctv_aggregate/cctv_aggregate.yaml
   entity: provider_aggregate
   id: cctv_aggregate
   display_name: CCTV
   provider: cctv
   rule_count: 44
-  sha256: 8418e84787100f54d76549a576612a7f2c2d0959a2bac6701b722fce56af6e33
+  sha256: a021ead2a034f8549277b77e0688c3d47227ef4672f725542b894e325cd1d6fa
 - path: ceb/ceb/ceb.yaml
   entity: service
   id: ceb
   display_name: China Everbright Bank
   provider: ceb
   rule_count: 15
-  sha256: 5e482acb4c8b46c4bf6fa2396fe007b1adbb4f6624dbab9bcc8e8a6a42a399fe
+  sha256: d9a18ef50ad883896d90c85106b6c83b4e1c4971dab3e8c234f8dda10543f53e
 - path: ceb/ceb_aggregate/ceb_aggregate.yaml
   entity: provider_aggregate
   id: ceb_aggregate
   display_name: China Everbright Bank
   provider: ceb
   rule_count: 15
-  sha256: c8ae125f37d1970cdc20f1f45cfb1595d8867e98e03fb9192f1933df1b44ceae
+  sha256: eac3f64c61da739b06e1776489a4d461330a0e3cc8945089ca3d2a1fcbca98f5
 - path: china/china.yaml
   entity: domestic_aggregate
   id: china
   display_name: China
   provider: null
   rule_count: 111894
-  sha256: 9b3f26a6280fd50d881105a984511d0e436dbb688d363c93f91318b810e8cbf0
+  sha256: 145e73b62e0286dc49f78a68240fd76987a16ddea46c64c84d9e21dc92aba398
 - path: chinamobile/chinamobile/chinamobile.yaml
   entity: service
   id: chinamobile
   display_name: China Mobile
   provider: chinamobile
   rule_count: 38
-  sha256: 620bee904abefed2f76d8b5b0993dae62bfc58d5f325078fe265587dd822734f
+  sha256: 4c91b4c85605738c4ac20e81cfc3894ad88e5f2433d1232de04904c22047257a
 - path: chinamobile/chinamobile_aggregate/chinamobile_aggregate.yaml
   entity: provider_aggregate
   id: chinamobile_aggregate
   display_name: China Mobile
   provider: chinamobile
   rule_count: 38
-  sha256: b7e237ecdc355ead38e984e64b54b7ab5a88f3d7f8ce83423821c971c627d0f2
+  sha256: af209f0c575c0fd4d1bc89ae2bd571c0d26581ba44cb1c5c4f6a229b40e882e8
 - path: chinatelecom/chinatelecom/chinatelecom.yaml
   entity: service
   id: chinatelecom
   display_name: China Telecom
   provider: chinatelecom
   rule_count: 83
-  sha256: ff4c163e9d1d901ecab09cd0c8b15f6acab8fb68ed1bae0b15150daaad6497d5
+  sha256: 7ff267aa07b33707fe05e4e00b09bf1ed4459b8c0ced7e081cfa1bc27e0a8ac2
 - path: chinatelecom/chinatelecom_aggregate/chinatelecom_aggregate.yaml
   entity: provider_aggregate
   id: chinatelecom_aggregate
   display_name: China Telecom
   provider: chinatelecom
   rule_count: 83
-  sha256: e1137c051f3bf86412510e2d4db5587eeb73c7a874e1f1a42e64cd58b53908ba
+  sha256: 653bb49ae83c93cf8305bde3a1646c7510df12fe78479c1c3748cadd58e784df
 - path: chinaunicom/chinaunicom/chinaunicom.yaml
   entity: service
   id: chinaunicom
   display_name: China Unicom
   provider: chinaunicom
   rule_count: 34
-  sha256: f11b974c65fb39ea7d3b06f2ebaaf0d8af3f63fa0fb72d916dff631d077f03b0
+  sha256: 171abb720d5c8f00deac30a2e0a2ac64afe92fa02e34e605db01b57222bab7c4
 - path: chinaunicom/chinaunicom_aggregate/chinaunicom_aggregate.yaml
   entity: provider_aggregate
   id: chinaunicom_aggregate
   display_name: China Unicom
   provider: chinaunicom
   rule_count: 34
-  sha256: 7d60f99625ff7f6d3d9f1f790c88ef877364791cf13899edca7e3cdce4abc91f
+  sha256: d1ebd61182a7fc8e033e71291270bc486b10ff07149a9db96cb2bc786b892b70
 - path: cisco/cisco/cisco.yaml
   entity: service
   id: cisco
   display_name: Cisco
   provider: cisco
   rule_count: 2
-  sha256: d550bb05ed4fa1c0b7c12e7951e300f31ae6476d7fd8ffe47370918641d8ef64
+  sha256: afa20d5cfd620666aab9a6730ab5bb42184d711d87b662d7b511eca7769f2575
 - path: cisco/cisco_aggregate/cisco_aggregate.yaml
   entity: provider_aggregate
   id: cisco_aggregate
   display_name: Cisco
   provider: cisco
   rule_count: 2
-  sha256: 3c18195009470345dfd03e301f42bf9a06243a3066324a28e0b71917fc597fe5
+  sha256: a9094b44557c35f9ea3bec44e71e067e693df8fec0cc0edac4d0bb58693ebda6
 - path: cloudflare/cloudflare/cloudflare.yaml
   entity: provider_aggregate
   id: cloudflare
   display_name: Cloudflare
   provider: cloudflare
   rule_count: 98
-  sha256: acedb12cd0444aff83b5c5605ef8b361d6fc09210a07edafdb84af69a01580ae
+  sha256: 404bba80f522e48d6832afeec665709ebe4766e6a69cb6197a1384a9b7ffea0d
 - path: cmb/cmb/cmb.yaml
   entity: service
   id: cmb
   display_name: China Merchants Bank
   provider: cmb
   rule_count: 38
-  sha256: 1a1db86294e93c27f7dd75f8fda2940ad4b1f1031b6fe3d7eddd33023c1c7245
+  sha256: 8b5ece2057d053c29db42809d1c0d1574d335216594859a6b01263a3c303c2b6
 - path: cmb/cmb_aggregate/cmb_aggregate.yaml
   entity: provider_aggregate
   id: cmb_aggregate
   display_name: China Merchants Bank
   provider: cmb
   rule_count: 38
-  sha256: e6446044ef7e46be74f2263833d75dee1d5f9162dddfb216837589746a1ada4b
+  sha256: 176d299099f96bf1780eeba3135efa0481d442fcc08019bfbb31b8ffec175b44
 - path: coinbase/coinbase/coinbase.yaml
   entity: service
   id: coinbase
   display_name: Coinbase
   provider: coinbase
   rule_count: 2
-  sha256: c35c821c042bb18751367e22e54a98ae734ebbce4fa4532720dc1628c14483cc
+  sha256: 5cfb55d2b334492158614207b0d9ad463cc08e45c8875dabc160bd4e4827d06e
 - path: coinbase/coinbase_aggregate/coinbase_aggregate.yaml
   entity: provider_aggregate
   id: coinbase_aggregate
   display_name: Coinbase
   provider: coinbase
   rule_count: 2
-  sha256: 15e45d2bb97b2ec66dcad5676e08686f585b8ec4ed55b08a486271b02b040201
+  sha256: b85138089c7649f8d00f667627d4c3a376b73e407392fa8a28646a3db53fe222
 - path: coupang/coupang/coupang.yaml
   entity: service
   id: coupang
   display_name: Coupang
   provider: coupang
   rule_count: 2
-  sha256: 8d032273b9857460554c62d89d59d93c473a7fc086f4580f6765431276b71f83
+  sha256: 74d616e4fc488c898b262e691bf33b4094c9377911763bc85c8a40a5c7a2e631
 - path: coupang/coupang_aggregate/coupang_aggregate.yaml
   entity: provider_aggregate
   id: coupang_aggregate
   display_name: Coupang
   provider: coupang
   rule_count: 2
-  sha256: f0881966adf42e0255ccbcd4cb28738d97fc76a42db45e71b88dc5ed6c1fb209
+  sha256: f1d41c342ba667a47006be781dd27975dc05817e81a08c638464dfb7e3828ea5
 - path: crowdstrike/crowdstrike/crowdstrike.yaml
   entity: service
   id: crowdstrike
   display_name: CrowdStrike
   provider: crowdstrike
   rule_count: 2
-  sha256: 4e0541b00c41120c34fa9c3741f59ef446eb8738d35e7e2920587313fdea4cca
+  sha256: 2006bc80617480cb8caccf6fd0b5ad1e0a3ea1dc9d2739a0b2136e2ae9b30711
 - path: crowdstrike/crowdstrike_aggregate/crowdstrike_aggregate.yaml
   entity: provider_aggregate
   id: crowdstrike_aggregate
   display_name: CrowdStrike
   provider: crowdstrike
   rule_count: 2
-  sha256: 756661f820757e6da10247a9c11c7d29ffcb53b4bedbefd3a05e71dd8fa8a9dc
+  sha256: 1c35711d8e86429a0a540fc960d7afc98154c8bc13f385d3714c6b06b1c864e4
 - path: ctrip/ctrip/ctrip.yaml
   entity: service
   id: ctrip
   display_name: Trip.com
   provider: ctrip
   rule_count: 29
-  sha256: 6a7a44b00714c5ff93e5d53230091d4d8888cdedc2634610c989d1bbb16bfd99
+  sha256: 7b85ce25c304d61beca1a01da2f6813430fd71171afaf3e92093cf5074983a6a
 - path: ctrip/ctrip_aggregate/ctrip_aggregate.yaml
   entity: provider_aggregate
   id: ctrip_aggregate
   display_name: Trip.com
   provider: ctrip
   rule_count: 29
-  sha256: c246e6ed6677cf406a561c226f53666e60790900efae053efc94a10ea31f4b20
+  sha256: ae61ee5376ef330ee69f8f5ea7cb1c7ce3fb381c379a3780f10e061b0c294f57
 - path: ctyun/ctyun/ctyun.yaml
   entity: service
   id: ctyun
   display_name: 天翼云
   provider: ctyun
   rule_count: 2
-  sha256: 5045fb81cfbdfb635d74b1cb045d531497b06b2a737c1526577fa23bee1fa6ca
+  sha256: 72df344a00400e20f249173d46aeaf556098d90bd3695f7053c4ff0370202395
 - path: ctyun/ctyun_aggregate/ctyun_aggregate.yaml
   entity: provider_aggregate
   id: ctyun_aggregate
   display_name: 天翼云
   provider: ctyun
   rule_count: 2
-  sha256: 476fe55f3213f09a689dcbd3f68c0f522406b624da89786308f2489e9e6dd43c
+  sha256: b5ee4a00838839dff0402c1734c9a53a0fb8e3b1add331be86f49bbe875a8561
 - path: cursor/cursor/cursor.yaml
   entity: service
   id: cursor
   display_name: Cursor
   provider: cursor
   rule_count: 4
-  sha256: 4a3343a870e44ef4d0a6fa69efb8d40070a639730fa2175ef38d920f3896f6d6
+  sha256: a2cff8c50d6e8056fa16df1e68af4df4cb5fd75b75fb06e4c03685d6cf5cce9c
 - path: cursor/cursor_aggregate/cursor_aggregate.yaml
   entity: provider_aggregate
   id: cursor_aggregate
   display_name: Cursor
   provider: cursor
   rule_count: 4
-  sha256: 3bf3bc3055d6f5f8c154152954068e85b89aae526d045f3f664eadc5e7ba4942
+  sha256: 025de864468752b70535ba5926d65d0d43cae85124ca6e9928131da8ee2f5321
 - path: dahua/dahua/dahua.yaml
   entity: service
   id: dahua
   display_name: 大华股份
   provider: dahua
   rule_count: 2
-  sha256: 919d90fe2b2f8167a299841882e79d46738bb347bee4934b922ffd16dcd89673
+  sha256: 3b973d1f2436e5b8fb934adefcc816e28c239937e1004f75bd64c49251ccb777
 - path: dahua/dahua_aggregate/dahua_aggregate.yaml
   entity: provider_aggregate
   id: dahua_aggregate
   display_name: 大华股份
   provider: dahua
   rule_count: 2
-  sha256: a4721512fa7e7bba0f93c3719bbe5bc3b7a38fa431a63dc8ebccc7c626e7d797
+  sha256: 4dd4de1b7744faa3fc5b80bb4072ad70ea45c58411c5b4f04ce617ae6aa16f47
 - path: dassault/dassault/dassault.yaml
   entity: service
   id: dassault
   display_name: Dassault Systèmes
   provider: dassault
   rule_count: 2
-  sha256: 13c91c752d4e883e5116f8d24624c79c6325bc3cde552ba8a7df7500e94e15f8
+  sha256: 4a87a3f2676a8fc98874fc0cbfb35cd454bd912af28ac26dc723d5d1cf668d40
 - path: dassault/dassault_aggregate/dassault_aggregate.yaml
   entity: provider_aggregate
   id: dassault_aggregate
   display_name: Dassault Systèmes
   provider: dassault
   rule_count: 2
-  sha256: 4bb512053fbfcfd78ebefa87b1ec1a8c4c0a3265e55a84b277e4119cba8131c1
+  sha256: 4ad5263629f3cd72b29de653f2cd9453382820f0aaad7d7869de97a69d35b3ae
 - path: databricks/databricks/databricks.yaml
   entity: service
   id: databricks
   display_name: Databricks
   provider: databricks
   rule_count: 2
-  sha256: f99cf323bcf0af790b168c363a3cb81279aa4007b810a65fd2892de3d3105eb0
+  sha256: 1a6ebe9477129de53e1ac48dbd521be5eaaacf778abc489fef7b381576535610
 - path: databricks/databricks_aggregate/databricks_aggregate.yaml
   entity: provider_aggregate
   id: databricks_aggregate
   display_name: Databricks
   provider: databricks
   rule_count: 2
-  sha256: 815b4d382d09021b0bce639fa98ed398fe556ba4dd72c5fddafb80d9901fe291
+  sha256: b1739a34f00a45b5e789541133bdc35eac5527f806c1b077ddf0183ea6e063b5
 - path: datadog/datadog/datadog.yaml
   entity: service
   id: datadog
   display_name: Datadog
   provider: datadog
   rule_count: 2
-  sha256: c4088126104649d3b6228c5ef25814eca4c9c2279d3bc945af3c35aa173ece79
+  sha256: 1fc074e1d8d7fe990b5a474ca45e428ced7a91bbfdf948d2a2b8ad83d27c02ff
 - path: datadog/datadog_aggregate/datadog_aggregate.yaml
   entity: provider_aggregate
   id: datadog_aggregate
   display_name: Datadog
   provider: datadog
   rule_count: 2
-  sha256: 61675bae75e7351439984a56eccb9cbeafa48091962c3868ec4903fea04ea068
+  sha256: cf15ca3e7b953bb29988fd81b66f67284df29705fcecfd30976b5e29266facd8
 - path: deepseek/deepseek/deepseek.yaml
   entity: service
   id: deepseek
   display_name: DeepSeek
   provider: deepseek
   rule_count: 2
-  sha256: 134cab0a794bd91b01306c8e382507fd51de549414b04aa782a6fcf6a20f2ba4
+  sha256: 67326350212126c07903b0667dabac58602de64a3fd03a68ffe07f1a07ce9b34
 - path: deepseek/deepseek_aggregate/deepseek_aggregate.yaml
   entity: provider_aggregate
   id: deepseek_aggregate
   display_name: DeepSeek
   provider: deepseek
   rule_count: 2
-  sha256: 8d06233c506234876919b176973bc548406096e7d5a8bf2a2ada71beb75d4c19
+  sha256: 25b92258d623e2158867377867a1b03cfe7f35f294444820a283dcd5e571ecf5
 - path: dell/dell/dell.yaml
   entity: service
   id: dell
   display_name: Dell
   provider: dell
   rule_count: 2
-  sha256: ecb087ef90dd3f0d607eaac0c1a584a6633728f775646fb2c4ee8e95eea1cba0
+  sha256: f723d997740ec91eaf90857cb3b4144ce217a9c07e30995fa4b3f90e570778e5
 - path: dell/dell_aggregate/dell_aggregate.yaml
   entity: provider_aggregate
   id: dell_aggregate
   display_name: Dell
   provider: dell
   rule_count: 2
-  sha256: ab450943040e4a7e02324c45122aee92409c1cb86500535f06335056cd1d5739
+  sha256: b65cc0ce49f35f80eba46c4e0412d2ce4d9550ebea44cc7686e4be29a371fbe4
 - path: dewu/dewu/dewu.yaml
   entity: service
   id: dewu
   display_name: Dewu
   provider: dewu
   rule_count: 45
-  sha256: 5d074ecb3c6bb8a5c468816dbf9aa9c979eee0304536ed2d6424bb6fae7bc760
+  sha256: 52cc4260e7cf8219c660b4ca938de89b25c43b01072cf1a0ff0c3acd48e3737d
 - path: dewu/dewu_aggregate/dewu_aggregate.yaml
   entity: provider_aggregate
   id: dewu_aggregate
   display_name: Dewu
   provider: dewu
   rule_count: 45
-  sha256: 59ab7750aa3f71132879719b700a820a4ce0b5ac02601e3282d42d7f6342cd11
+  sha256: c71a22a0853fe2d2939c99071746d0778bfefb1c320c52000bc51f40ddcfb032
 - path: didi/didi/didi.yaml
   entity: service
   id: didi
   display_name: DiDi
   provider: didi
   rule_count: 25
-  sha256: 042edfcf5f591567bc002c7c058faf84954d86cae0435a252a9dca344bc0e528
+  sha256: 29671dd02fe32048b7659c3ab41db0b96303ab5c1973b0a12db3098fc90a1acc
 - path: didi/didi_aggregate/didi_aggregate.yaml
   entity: provider_aggregate
   id: didi_aggregate
   display_name: DiDi
   provider: didi
   rule_count: 25
-  sha256: b9622eed007afcf3497d652e4b9c1ab3cd574645525a80a5e654016bb045de14
+  sha256: 12f369ab9c3ae63319511d5bc4df40cda0f9f45de92c169204659249142e2c3b
 - path: digitalocean/digitalocean/digitalocean.yaml
   entity: service
   id: digitalocean
   display_name: DigitalOcean
   provider: digitalocean
   rule_count: 6
-  sha256: 3a7bb31322ce00de745a1f66431056de002b3aef6202eb2a8c37abf4375abf97
+  sha256: e8218b002127fb97833870fe7a344f2f20d71982d59f81f51d4d288b360bec16
 - path: digitalocean/digitalocean_aggregate/digitalocean_aggregate.yaml
   entity: provider_aggregate
   id: digitalocean_aggregate
   display_name: DigitalOcean
   provider: digitalocean
   rule_count: 6
-  sha256: 47cc4f150880972d32059a69d1fd888b7fcd654361c852f308947739e87e1405
+  sha256: 3f02e7212eff5753c6db4cb30d195a4f9198a0210f7172bbb8866bb720317daf
 - path: discord/discord/discord.yaml
   entity: service
   id: discord
   display_name: Discord
   provider: discord
-  rule_count: 31
-  sha256: 03be83797b330b264f50cf415e51e475a9f0280b9f2c1168220f9c01b1e48a21
+  rule_count: 28
+  sha256: c96caf42d617ecaacbe4e850c4845f358a252cc1ccb4c14915b038cd1210c3f1
 - path: discord/discord_aggregate/discord_aggregate.yaml
   entity: provider_aggregate
   id: discord_aggregate
   display_name: Discord
   provider: discord
-  rule_count: 31
-  sha256: a73ad711542e205722ad52494128c47b021d845dc0d26984ae5d62a1979a484f
+  rule_count: 28
+  sha256: 49abf6291373884ce92ef5d0502ed355c78a3115e8e540fbf1efe13f1a4a0ad9
 - path: disney/disney/disney.yaml
   entity: service
   id: disney
   display_name: Disney
   provider: disney
   rule_count: 177
-  sha256: 29b77672a75b46bc8241951c8f65fe4de6415c24c889bdd6b09c9106d9d6769e
+  sha256: a8e85c097b85513fc79b3b4efd291e0770d8159c2b5c7a4478613452fc629c23
 - path: disney/disney_aggregate/disney_aggregate.yaml
   entity: provider_aggregate
   id: disney_aggregate
   display_name: Disney
   provider: disney
   rule_count: 236
-  sha256: 3ca8ae671f894c89d308a1dea1af0d1a99b8711f8322ce9906b43c6f83677f2d
+  sha256: ba4fc3c2fd963b0f2b9ad716cd8f7033befed77a1e3988f6afe5dc9a1bc1b019
 - path: disney/hulu/hulu.yaml
   entity: service
   id: hulu
   display_name: Hulu
   provider: disney
   rule_count: 59
-  sha256: 1da497dd947aed0b2d89276b4920e3d82f0e0b64ecec4ef85097225a566b1dfd
+  sha256: 12358032d45d6b742c0a80ee68b4f56e747e727d10c53853ab12302582da32b4
 - path: dji/dji/dji.yaml
   entity: service
   id: dji
   display_name: 大疆
   provider: dji
   rule_count: 2
-  sha256: 4af2eec85593d2c902a1a4e4f983d1497dda5a01a37ee51c4e5453b36de184cf
+  sha256: 14391c4108943ad2c02c545e069a0be709901211fb42e7f16810cdc5aeb5b602
 - path: dji/dji_aggregate/dji_aggregate.yaml
   entity: provider_aggregate
   id: dji_aggregate
   display_name: 大疆
   provider: dji
   rule_count: 2
-  sha256: 1c4714893f6dbf7d4b4c4bf59e29e2948113dd2a5a1a1a342b4d4c34c065e02c
+  sha256: 8d8cbb333fa5b8838191a6a98073eddc5778223bfedcab41e2d77a6ec187adbc
 - path: docker/docker/docker.yaml
   entity: service
   id: docker
   display_name: Docker
   provider: docker
   rule_count: 12
-  sha256: aa789ba0daef46829922e4b138d66017dfd2454cb1298291dcc7d2e384baac86
+  sha256: 479e3d5b5eab27bf480cb3510841299ea38e9e1264764f459199dd17782d8a6f
 - path: docker/docker_aggregate/docker_aggregate.yaml
   entity: provider_aggregate
   id: docker_aggregate
   display_name: Docker
   provider: docker
   rule_count: 12
-  sha256: 3fb3b51216b9c505cf1d393e82da0c5777e8583b46a19b120f58282c737c2328
+  sha256: c892909219304d89d2c039e9522f9734186378548cf077e257166441595ce669
 - path: douyu/douyu/douyu.yaml
   entity: service
   id: douyu
   display_name: DouYu
   provider: douyu
   rule_count: 13
-  sha256: 6862fcb62db62433d4608c99206f927457c7f3474a6304e1d50b7fba0cfaccda
+  sha256: 5f6eaa485d7632fc4d92d777d7be9c9cfb627e466c1eb00ffbfa80bd433a1913
 - path: douyu/douyu_aggregate/douyu_aggregate.yaml
   entity: provider_aggregate
   id: douyu_aggregate
   display_name: DouYu
   provider: douyu
   rule_count: 13
-  sha256: 75ba68d8e2c5be4537059859b850c9816a3ba0de8fdb66c67f1d998b0488349b
+  sha256: d5763d320eaf9ef518c9af9ac34d5c471395e8ccbc16986e8c4e165878d3698f
 - path: dreame/dreame/dreame.yaml
   entity: service
   id: dreame
   display_name: 追觅
   provider: dreame
   rule_count: 2
-  sha256: 157c297872aaa40e10cfab8466bf39aea848fad38d464b514f90b8bbf49fdfd2
+  sha256: d2d2651f0df93f25b4d24e09095b1f2f3b07ff57ffa16837e57edea759557ace
 - path: dreame/dreame_aggregate/dreame_aggregate.yaml
   entity: provider_aggregate
   id: dreame_aggregate
   display_name: 追觅
   provider: dreame
   rule_count: 2
-  sha256: 1b956bbbbb6e120a6a7fdab4a4d5583572a3cd3398d0fdd2948948f6f26ec42c
+  sha256: 0cad626aa61660b32eb9f7117141e3d1fbedb36372e72b6cc5477ebc0ff4ba05
 - path: dropbox/dropbox/dropbox.yaml
   entity: service
   id: dropbox
   display_name: Dropbox
   provider: dropbox
   rule_count: 17
-  sha256: 662849e4d13df414db1d99a185100155f51879d9c73d477f5a9a9cfac66254a2
+  sha256: cb0dc0cb5e25e683627e57325d854ed38a1b46a9027d43ff9fbd011e63a22164
 - path: dropbox/dropbox_aggregate/dropbox_aggregate.yaml
   entity: provider_aggregate
   id: dropbox_aggregate
   display_name: Dropbox
   provider: dropbox
   rule_count: 17
-  sha256: ba83698d2d9924329047092e116dfa6b69743472bc6de3e2eace3e856148be4c
+  sha256: b6528999c9e2d1441aab17d593f3b42448df08b4ee163353b5fa24555e71b41b
 - path: ea/ea/ea.yaml
   entity: service
   id: ea
   display_name: Electronic Arts
   provider: ea
-  rule_count: 166
-  sha256: 8298c1a10722b3c9e4b17b7080aa552d2cb1a71e9cb787b97f2249241b9c4070
+  rule_count: 2
+  sha256: 44666c86d99b863bbe275c07ed9abe86aa5b40cbc635239fb8d9bcd6cca93c80
 - path: ea/ea_aggregate/ea_aggregate.yaml
   entity: provider_aggregate
   id: ea_aggregate
   display_name: Electronic Arts
   provider: ea
-  rule_count: 166
-  sha256: 8d79c6cc543f9fa787ae19c91ce6db0112d6e41770f2bba38fe0211876cf56f6
+  rule_count: 2
+  sha256: a708137fc05eee71379a65992cad4bee6059b0857f17f0e658cb52ec2947389f
 - path: eastmoney/eastmoney/eastmoney.yaml
   entity: service
   id: eastmoney
   display_name: 东方财富
   provider: eastmoney
   rule_count: 2
-  sha256: 42ec90efd2f64622be7e84041b5f4ff9d25619e7c9248388e2c842d24f7da24d
+  sha256: 01ea9b0a9f4580388684c07fa4b0caae85ed33ddbb3748b403683de70c87527e
 - path: eastmoney/eastmoney_aggregate/eastmoney_aggregate.yaml
   entity: provider_aggregate
   id: eastmoney_aggregate
   display_name: 东方财富
   provider: eastmoney
   rule_count: 2
-  sha256: 424acbc1e8efe041713b4f5c0deccd54a954528b27e473b8366d615041d27990
+  sha256: 7dd72b025479cece876619460322bfdb519a6c19da70ff594cca640dc9561d77
 - path: ebay/ebay/ebay.yaml
   entity: service
   id: ebay
   display_name: eBay
   provider: ebay
   rule_count: 370
-  sha256: 4113588a40934615ecce20dcf5099247255ec33c01700368b6d3d96ac9f9e6cc
+  sha256: c264af867f7f0617d0d565ef6e6aa608bd3aa57ae0096d7df63fc65cd4362c7e
 - path: ebay/ebay_aggregate/ebay_aggregate.yaml
   entity: provider_aggregate
   id: ebay_aggregate
   display_name: eBay
   provider: ebay
   rule_count: 370
-  sha256: 643c0d149b23fd7f2d1d8d49d93193726f38d90da86118230061e5d33a83820d
+  sha256: ee26f0e11e3a765002f231557cd21d9c956810e4b6e7afb7864af585f0ba9709
 - path: elevenlabs/elevenlabs/elevenlabs.yaml
   entity: service
   id: elevenlabs
   display_name: ElevenLabs
   provider: elevenlabs
   rule_count: 2
-  sha256: 9d8eaf18c9cf71d4b3525b701ff5b00598280c104451805ecdf97161c232d527
+  sha256: ee2853a567da7c9f39bbe8b5e76759f41816c7d72d2f4e75f1a1a6cb8c66c59f
 - path: elevenlabs/elevenlabs_aggregate/elevenlabs_aggregate.yaml
   entity: provider_aggregate
   id: elevenlabs_aggregate
   display_name: ElevenLabs
   provider: elevenlabs
   rule_count: 2
-  sha256: d97318719f02ba43f81a0173ea0c93db720ae85ce07721ad20848fbf59fdbdc8
+  sha256: 4f71468618dd974b1be109c0fff9ac34a012e2232a588aed1bc61de9465a2537
 - path: emby/emby/emby.yaml
   entity: service
   id: emby
   display_name: Emby
   provider: emby
   rule_count: 52
-  sha256: e156b4e272e8246e2cdcc8bcd5663a0cbe9fbb91d70de9d8300fe22c8b342f4e
+  sha256: b73971b2d5ea27ae93bfea40256ff895fa9b22cc5c038a9e8f70f558c95d66fb
 - path: emby/emby_aggregate/emby_aggregate.yaml
   entity: provider_aggregate
   id: emby_aggregate
   display_name: Emby
   provider: emby
   rule_count: 52
-  sha256: 6549a07c206c93ee5f975efaf33c35202d65290b48c2c07b5dcbf9019d5a4382
+  sha256: 262ea35c77af07e2a446a0bc502a13226a8a8d2799778697dd968740f13e8de8
 - path: epic/epic/epic.yaml
   entity: service
   id: epic
   display_name: Epic Games
   provider: epic
   rule_count: 15
-  sha256: 0fc5faa9c1e59aedc7472ae4832e156d3d851e06c4d11a3b2286b6d2dca40ce2
+  sha256: 64a417198b8ef9ddaad1bf26ac51c640e04ee8a26c052409520051ad4edc4439
 - path: epic/epic_aggregate/epic_aggregate.yaml
   entity: provider_aggregate
   id: epic_aggregate
   display_name: Epic Games
   provider: epic
   rule_count: 15
-  sha256: 3c2d8ad6b06f7837d3923929dd88034b8377e87bb30dd2a637862fe338e96900
+  sha256: cc1750992f08597fcc10ef5f9378a175b0a1e682e290034cc144bc88978ff8dc
 - path: epicgames/epicgames/epicgames.yaml
   entity: service
   id: epicgames
   display_name: Epic Games
   provider: epicgames
   rule_count: 3
-  sha256: 481221907617a44da2fbd406162c87303090c1e4f95b018065d650384d116037
+  sha256: c2cfb71ef9ca6cb770bd0eddcdd26cabfc619f794fb25555ee978de09f153b2c
 - path: epicgames/epicgames_aggregate/epicgames_aggregate.yaml
   entity: provider_aggregate
   id: epicgames_aggregate
   display_name: Epic Games
   provider: epicgames
   rule_count: 3
-  sha256: 5d1c8f61f88c30ed132045bf26871d6082433bec1bccf5b852bf6f50e66e5f3f
+  sha256: 7d25412d220317d4c95d0649e686d833cab4b02da3a7e1e5fbb9d4984a24ea72
 - path: equinix/equinix/equinix.yaml
   entity: service
   id: equinix
   display_name: Equinix
   provider: equinix
   rule_count: 2
-  sha256: b56e880a22579d618c2a3169ff2455c22d6d149ead65f9cba1f330bc5fa90655
+  sha256: ba03c3215c0ace2b192921d4ac6d3c8cb4f442dc435b2bbe1e7ea02690c98d8c
 - path: equinix/equinix_aggregate/equinix_aggregate.yaml
   entity: provider_aggregate
   id: equinix_aggregate
   display_name: Equinix
   provider: equinix
   rule_count: 2
-  sha256: 358cdfa22c2bd4c9ae9f7344c45e1ed86e16976a08958f0fd16b02549a59626e
+  sha256: d406acc6d03c78f1b906f76b597dad7362df8d81d3152aae7af0ff6d38a4253b
 - path: ericsson/ericsson/ericsson.yaml
   entity: service
   id: ericsson
   display_name: Ericsson
   provider: ericsson
   rule_count: 2
-  sha256: 28dc8c6819c35cb34f2522b215a816a0a083b8a745d2484286e5eff06cea0268
+  sha256: 688112f8e148b443f1213f5fae539aa3ca131a2a3eed35d1d6090b9f8ead6e24
 - path: ericsson/ericsson_aggregate/ericsson_aggregate.yaml
   entity: provider_aggregate
   id: ericsson_aggregate
   display_name: Ericsson
   provider: ericsson
   rule_count: 2
-  sha256: e2a4d57c0da53b1d8c6f4216ddee4fef5c1a5ebe29a076240ae42edf21b5d119
+  sha256: c121a7657076fa5f69efb1c63d9f6afdf69d0a54a606f0cbdef77ab7bcc44a5e
 - path: figma/figma/figma.yaml
   entity: service
   id: figma
   display_name: Figma
   provider: figma
   rule_count: 1
-  sha256: 8de653690cc2dc5b0a78285bc9a364b0a8abeeb91779909a9e37bee09faa55d6
+  sha256: 2a3158cde4d69bf19ac6d49107daba4ab2a9dae003bfb6598bef2cd4e9024749
 - path: figma/figma_aggregate/figma_aggregate.yaml
   entity: provider_aggregate
   id: figma_aggregate
   display_name: Figma
   provider: figma
   rule_count: 1
-  sha256: 7c1dd927e3f8318bbe46383f1f663b076afe64956881361a680aab9c4652fc60
+  sha256: 7ca4f56d024dd4875c3cace898be9c5f9fd199d1f43d753060a850d392d18ca7
 - path: fortinet/fortinet/fortinet.yaml
   entity: service
   id: fortinet
   display_name: Fortinet
   provider: fortinet
   rule_count: 2
-  sha256: 6f9b1d0e50140e590ad738729536941ddf3c0999d68e9d933cd4c87dfa5e102e
+  sha256: f64ea28fd3f6bf46ea1154cfb9abdabeb3c5651a478d56393accaa3168316a32
 - path: fortinet/fortinet_aggregate/fortinet_aggregate.yaml
   entity: provider_aggregate
   id: fortinet_aggregate
   display_name: Fortinet
   provider: fortinet
   rule_count: 2
-  sha256: cd1044121e42a40490f5095dbb3feaa87e831ca53d978891ab8ec4af855304be
+  sha256: e7ba1bb8cb811d55a936ee878564302d9f6d52f6cbeb2b5b56d92bdb79f76522
 - path: fujitsu/fujitsu/fujitsu.yaml
   entity: service
   id: fujitsu
   display_name: Fujitsu
   provider: fujitsu
   rule_count: 2
-  sha256: 0445cdb4c12e7d4e54af1935efdf048aeb994038b0de0ef4fd4e6526d029400f
+  sha256: 3dd2aff9a5edcd616e9df8f49a7a46de65b162b481d68989cf353aecb34a9af0
 - path: fujitsu/fujitsu_aggregate/fujitsu_aggregate.yaml
   entity: provider_aggregate
   id: fujitsu_aggregate
   display_name: Fujitsu
   provider: fujitsu
   rule_count: 2
-  sha256: 6c474909eeb2ace3f22e864d7a09fa88128f9fcc0dd7ad2ee5b47907cadf8196
+  sha256: 51b0060f128dbae9b3abfb885188680aaaeb4cc26354656299d936ce4f48a0e0
 - path: garena/garena/garena.yaml
   entity: service
   id: garena
   display_name: Garena
   provider: garena
   rule_count: 15
-  sha256: 72d540376d79e31d7e610d711722d76f078396d19194c6f2c7a11d3990ccb484
+  sha256: 080fdff40b2dcd58f401ef4a2ad0c75b893145399a27f728b3c4efd140bd273d
 - path: garena/garena_aggregate/garena_aggregate.yaml
   entity: provider_aggregate
   id: garena_aggregate
   display_name: Garena
   provider: garena
   rule_count: 15
-  sha256: c7348d0b1219b68e78c2c07ef8fcc72ba102a99ef09cad37a41daeb19011fbc7
+  sha256: 388fa32dd6b34cc6cb43394e4373e3ac872530c18a81f0f2d73c3616f20e8b18
 - path: gitlab/gitlab/gitlab.yaml
   entity: service
   id: gitlab
   display_name: GitLab
   provider: gitlab
   rule_count: 6
-  sha256: 1ddc2e418b599fae29e3cb44fbf0c22e862a92f23d4a5ffa12a470705234bfb7
+  sha256: 3f7699d969ec325baa06c579ad4533b7b5eabae8cbc4c630f4c294e1a882b861
 - path: gitlab/gitlab_aggregate/gitlab_aggregate.yaml
   entity: provider_aggregate
   id: gitlab_aggregate
   display_name: GitLab
   provider: gitlab
   rule_count: 6
-  sha256: 2f099bc2b3a7d9187b41cdd98194b15f71b677a12befcd4cd944c3a209cab20f
+  sha256: ab3004b8aa36e1d7966d7e725b7541050b5f7fc7d56ce3a7faff659e26a40898
 - path: globalfoundries/globalfoundries/globalfoundries.yaml
   entity: service
   id: globalfoundries
   display_name: GlobalFoundries
   provider: globalfoundries
   rule_count: 2
-  sha256: 9f488d250be6e99f0d418994b9b327ca8af0101ac4839c3e3e919d8dcb379c67
+  sha256: 88c7e03c0ed076430f71bfef179e12465a14c59ac4d6bf350738f6f280e62dd3
 - path: globalfoundries/globalfoundries_aggregate/globalfoundries_aggregate.yaml
   entity: provider_aggregate
   id: globalfoundries_aggregate
   display_name: GlobalFoundries
   provider: globalfoundries
   rule_count: 2
-  sha256: df4b94c3e1df264b7ad99e9b7c7ad6ddc75124d0f960cb3a00014d787d3660f6
+  sha256: 2d157322440d18317fb5a15b4d6547407163b8e1138208254fc5a78617c939be
 - path: google/firebase/firebase.yaml
   entity: service
   id: firebase
   display_name: Firebase
   provider: google
-  rule_count: 24
-  sha256: 7855c5d376c9d4a5047c3ea8d87c5bbc0eed9f96fb026d67edf762a04c4563fd
+  rule_count: 2
+  sha256: e842ea0be080e50f8f47f5d9cfa39a2ef5d09ab168c9070fc38373527345bf51
 - path: google/gemini/gemini.yaml
   entity: service
   id: gemini
   display_name: Gemini
   provider: google
-  rule_count: 16
-  sha256: 696a56fc0b59097ddf2a8cb619824a9a20acac1f42f54097e8444626fd8a49a4
+  rule_count: 9
+  sha256: ca908dbf2215fe7aa0be14d53b592ac0c5a874651bf86b99aed7e9b01e6a4c9d
 - path: google/gmail/gmail.yaml
   entity: service
   id: gmail
   display_name: Gmail
   provider: google
   rule_count: 1
-  sha256: e792e4a8f7cb7e8bce7ae2ef05c1eec6c52dd56b365bf469e1902bfbc36bb570
+  sha256: cb0028949099d42531515c27ec98b2e01ba4baf81232d62bfc976a2b409ef626
 - path: google/google-calendar/google-calendar.yaml
   entity: service
   id: google-calendar
   display_name: Google Calendar
   provider: google
   rule_count: 1
-  sha256: b862846efaa15b319628e390d03238766a25a2c262107657fa79f8b9599d8e8a
+  sha256: a2203abbc94e51017e3a043057a3f03e0ac783a2efc7083eded6af0ac4293a9f
 - path: google/google-chat/google-chat.yaml
   entity: service
   id: google-chat
   display_name: Google Chat
   provider: google
   rule_count: 1
-  sha256: 28abaccf3868872733ea6358922adac06f29ab62bbb4bcacf46edbc57f7b3f20
+  sha256: c7700c13ef6a701cfffb647c47a08a58c2113a9e60f0f8d9bb8e02b5d839b83d
 - path: google/google-contacts/google-contacts.yaml
   entity: service
   id: google-contacts
   display_name: Google Contacts
   provider: google
   rule_count: 1
-  sha256: d5ebdabdbe18d3487875abc2ba73f6db91616227c0c117cc13396e70e4f6f334
+  sha256: ac6bcecfa2413fec34255450af83f188702ccb3c09d6358f4b357c10dcc1031c
 - path: google/google-docs/google-docs.yaml
   entity: service
   id: google-docs
   display_name: Google Docs
   provider: google
   rule_count: 1
-  sha256: 08612f34ab875e3088cee329d732b818354e5665eaaa06e490a850f021c070db
+  sha256: 959d1b1db460b8113cff7b261276ccc1b1586e3eb86170103e9360dd26f6c8ca
 - path: google/google-earth/google-earth.yaml
   entity: service
   id: google-earth
   display_name: Google Earth
   provider: google
   rule_count: 1
-  sha256: 72f3f17613c6e6fa2916c5eda3f264a8591d36c85ecc4ffb55961e1da75c131f
+  sha256: 10a4597f391117ab22184f5cde2fa3fe2ced1d94c6e4e4b9fa8bf8a6b1adf706
 - path: google/google-forms/google-forms.yaml
   entity: service
   id: google-forms
   display_name: Google Forms
   provider: google
   rule_count: 1
-  sha256: 8ebec13f7b45b87a48ed3cd234e6241ec07f030af424baa550882bc69ea5e9c4
+  sha256: 9418049dcd5d1bc412a98190a208d35f4de5c7a3cd6ad721d792b2a5c5db6f5a
 - path: google/google-groups/google-groups.yaml
   entity: service
   id: google-groups
   display_name: Google Groups
   provider: google
   rule_count: 1
-  sha256: e3c791b7480e8b75407ce523551af9f54b32c12224f8e2f10698322b41b0d85d
+  sha256: 68c6c862a271e0cb925442ba3ed41269ded72094383a62a64d0b7ba79ebb5b4a
 - path: google/google-maps/google-maps.yaml
   entity: service
   id: google-maps
   display_name: Google Maps
   provider: google
   rule_count: 1
-  sha256: 94961565f031c6a4962cd44a01c7ac17e1c819445d3be6419ffd0f703790d5da
+  sha256: 735e02e1d687486fdd7b1aa05c312f60753aa685c16a837b29a57d14e80fcea2
 - path: google/google-meet/google-meet.yaml
   entity: service
   id: google-meet
   display_name: Google Meet
   provider: google
   rule_count: 1
-  sha256: 995dcbd1d8837646bf197acfaa8e28f25c1ec5cad1171f1c7bbbc6ff97564bec
+  sha256: dffcf267b3b600e526f940a3c44458159cb3a0d29555b35e822f6ebd8b310791
 - path: google/google-news/google-news.yaml
   entity: service
   id: google-news
   display_name: Google News
   provider: google
   rule_count: 1
-  sha256: a369bcf1365e811298f579172978f79fbdd16011771ef6ccb616d527a58e97cb
+  sha256: a8efd76d415369ed93931b60f3ef24ed7792d68cd8eb6010ccc4d5d0d47c91a1
 - path: google/google-photos/google-photos.yaml
   entity: service
   id: google-photos
   display_name: Google Photos
   provider: google
   rule_count: 1
-  sha256: 791ab271a2dff4ca80bd375ec272f1ea7f5dd83184f33d4003a681f5c0a2a972
+  sha256: 813e96927554d0075e16e3d7f70a74d8437c424005ba4d289745dbcabcea460f
 - path: google/google-play/google-play.yaml
   entity: service
   id: google-play
   display_name: Google Play
   provider: google
   rule_count: 1
-  sha256: ef708ef2006608eaa99f21d69002af695fee567fa90e2c4b41d94373c4f054ef
+  sha256: d0c5c8a3b06178a296bdcfd72a21f23e1ec4ec125a16c3a62c157bbb9b3605f7
 - path: google/google-search/google-search.yaml
   entity: service
   id: google-search
   display_name: Google Search
   provider: google
   rule_count: 1
-  sha256: f6679816930754c8d7195d78261eedbc93e350c8888eda8150ea571f9011a217
+  sha256: 988c34de996e3730b1de783ac538b8cc8e994ead1da0cb0750c127f985e18675
 - path: google/google-sheets/google-sheets.yaml
   entity: service
   id: google-sheets
   display_name: Google Sheets
   provider: google
   rule_count: 1
-  sha256: 4c66706ef30ce311b1e5b9f1622fd8db2c71b0899bd00e4de4fc8a0bda8b4820
+  sha256: e8b0d7ce44b418957973da4290c86843f22ddf5aa4a0bfa24ba427899d61754d
 - path: google/google-sites/google-sites.yaml
   entity: service
   id: google-sites
   display_name: Google Sites
   provider: google
   rule_count: 1
-  sha256: eefbbe407bb4e80a81a36b3dd0cf290d4aaed527279ffa9e357dad2cf8b13500
+  sha256: 8fde7292d21e9abce7eb504e792197a497414e07cf354ecc165f89ce14600ce6
 - path: google/google-slides/google-slides.yaml
   entity: service
   id: google-slides
   display_name: Google Slides
   provider: google
   rule_count: 1
-  sha256: 7eaa3fa01a6cc40a5190979392eea59209dd5571bdbe91e72d4ca56df2fb66f1
+  sha256: b763a1b17d75d0c801c39ddaf45e4e3decee557604f4996a2d02ee03cc43b7b8
 - path: google/google-vids/google-vids.yaml
   entity: service
   id: google-vids
   display_name: Google Vids
   provider: google
   rule_count: 1
-  sha256: cb98d2ef111fd36027f22f329c15e74a10f381f63b79191493322e8e82828ebf
+  sha256: 874736bf94c81d217c1b318c7110fcade381634c5c7b14dac304abf625b7cab8
 - path: google/google-voice/google-voice.yaml
   entity: service
   id: google-voice
   display_name: Google Voice
   provider: google
   rule_count: 1
-  sha256: ae8078fc33edc36ae49347d5aa31330fedfeb21b32c33ec15e251d2f79cb71cb
+  sha256: cf04db373c8b8a50dab4013fb7b9945701968d3f859ec2a0ea367552bc71b221
 - path: google/google-workspace-studio/google-workspace-studio.yaml
   entity: service
   id: google-workspace-studio
   display_name: Google Workspace Studio
   provider: google
   rule_count: 1
-  sha256: f95b07998e6d9aa1252ede92fe37fb4097335c5e1c6c03aea9791a2824bf63d6
+  sha256: 8c9bb4f75410c2e226ae45f367f73793c1352844b06c2492ec6439a00ebaf467
 - path: google/google/google.yaml
   entity: provider_aggregate
   id: google
   display_name: Google
   provider: google
-  rule_count: 1558
-  sha256: 05ebb31b856c99c5d8e95db8f7f9e35433f3949caa8476df8b5f0e3845c9f028
+  rule_count: 1500
+  sha256: 08d9562af429305ac66e8ab42bef5537494b75cab03261bc4ca4b09df961fe17
 - path: google/googlecloud/googlecloud.yaml
   entity: service
   id: googlecloud
   display_name: Google Cloud
   provider: google
   rule_count: 5
-  sha256: 5f520a75979d62307f0d96c03939ea1f1218dbc062d46ae99b01eb6ec44f3bae
+  sha256: 04c86a2086645bef7a496d86bfa957ec6b19d29be19c54d22bdd1ab517d72798
 - path: google/googledrive/googledrive.yaml
   entity: service
   id: googledrive
   display_name: Google Drive
   provider: google
   rule_count: 4
-  sha256: 6e9f7643c7518ed4696df66e516b38fbcaf0401b93a27a366f91105e46f960a1
+  sha256: 646f153e8d0b716ba8fed072b54c483326d19da9160dc95ca209533949610171
 - path: google/googleearth/googleearth.yaml
   entity: service
   id: googleearth
   display_name: Google Earth
   provider: google
   rule_count: 16
-  sha256: 4e63f7950b16749fc8a30344692a224bba37ea3f9fa766f8172e8d08406d3270
+  sha256: c658122763d7e65e8f60b0ee29a626d3c3dc2de5c0870ef9119d02cae472613f
 - path: google/googlefcm/googlefcm.yaml
   entity: service
   id: googlefcm
   display_name: Google FCM
   provider: google
-  rule_count: 54
-  sha256: 8c102781ee5f66f678edb131b5a189ffea3cfe11258c31f5a5b7694c8cbc2b9c
+  rule_count: 13
+  sha256: 4990a9804c49197b8c9498dd001723daf7d84604da0e90c332392614cef96eda
 - path: google/googlevoice/googlevoice.yaml
   entity: service
   id: googlevoice
   display_name: Google Voice
   provider: google
   rule_count: 1
-  sha256: 7d4e86ffc6717af656fd4306a221e22d134ad3dc948ffe341566ad095f1d1a3d
+  sha256: 158ed5ef299548f298c4fa9a0ccba8467a3d092473dee2eb247919f97d5b8130
 - path: google/scholar/scholar.yaml
   entity: service
   id: scholar
   display_name: Google Scholar
   provider: google
   rule_count: 231
-  sha256: b2c2fdba1fd61f6880bd8fc6d7775b9a933a7010f114baccef8a526189826d78
+  sha256: 407fcaa61a1791dcb4abd7c07af333a29e2be2f587a271988e96cb00aeea9c26
 - path: google/youtube/youtube.yaml
   entity: service
   id: youtube
   display_name: YouTube
   provider: google
-  rule_count: 189
-  sha256: 67659721d05227392b512af4f3f136dc55b607c3b5edab447551151e11a882a7
+  rule_count: 175
+  sha256: a638d4f4faab34ff2ea986e35c0c77ec0f6e6506e8d3d06dad96eccb2ebc17df
 - path: google/youtubemusic/youtubemusic.yaml
   entity: service
   id: youtubemusic
   display_name: YouTube Music
   provider: google
-  rule_count: 3
-  sha256: 47a933e3bcdf8d6664c85e9aa07b5b6582f63bccfd45d83100664fd92979cf55
+  rule_count: 1
+  sha256: 932aeb47e1ca842ce80ade5d744f5be71612d51ef1c5edea6377f4fcd67eb3dc
 - path: grab/grab/grab.yaml
   entity: service
   id: grab
   display_name: Grab
   provider: grab
   rule_count: 2
-  sha256: db2fb9ac6d18c759020e8ea4e0c72bd23c8ad46e00dbe7ffdd627d969c9200b3
+  sha256: 2015d5ae267adfaed69dd6ccbe9b59ece1a3461a694dd3099a7711ca49e60925
 - path: grab/grab_aggregate/grab_aggregate.yaml
   entity: provider_aggregate
   id: grab_aggregate
   display_name: Grab
   provider: grab
   rule_count: 2
-  sha256: c3d258051a4aefa1c940e3b534d422fdd7570edc397ab138f729e40fc4e5c272
+  sha256: 2c250af4ded242a1008d356c57915a13014ba4d140ba8a001389e5706e2f6047
 - path: groq/groq/groq.yaml
   entity: service
   id: groq
   display_name: Groq
   provider: groq
   rule_count: 1
-  sha256: 7cdd1fd2a3c7684593037616701276fa916ecb4e2c97bedd2e81f659982efd57
+  sha256: a8abd785987b61339806ed0a080aa9e0458ef5fa03fcd2d23073e33f69999b8e
 - path: groq/groq_aggregate/groq_aggregate.yaml
   entity: provider_aggregate
   id: groq_aggregate
   display_name: Groq
   provider: groq
   rule_count: 1
-  sha256: ce8e9d04e3a518a41ed11d79c8b12fde62df6dfc69055684520b2c099ab9fee1
+  sha256: dfa35b8ebeb3c7199b78b2ce8aeaa80d713fffd749a6857f2f62e008e8c375f8
 - path: haier/haier/haier.yaml
   entity: service
   id: haier
   display_name: 海尔智家
   provider: haier
   rule_count: 2
-  sha256: 9d2249339001bd54f59367f2e3bf5ec975006ba13f6a428a0d7ec98ebc09d4a7
+  sha256: 5bdb2fc7f233706ea9ebc7b3b3bfd05a4ead7e56d541cff22042508a9fd896db
 - path: haier/haier_aggregate/haier_aggregate.yaml
   entity: provider_aggregate
   id: haier_aggregate
   display_name: 海尔智家
   provider: haier
   rule_count: 2
-  sha256: 5a51a1da4cee1485ef80aabce66f57f44ac6f088569f0dc787d8cc9439990363
+  sha256: 40c4c3b480054ecee018c57eb9b1604e218fdbd14c93e4606e72f47be75fdb49
 - path: hbo/hbo/hbo.yaml
   entity: service
   id: hbo
   display_name: HBO
   provider: hbo
   rule_count: 48
-  sha256: 176fcac993cb6ffd81a2523367b9aa6654cbdffb946bfee341202a1c2f777cbc
+  sha256: 4e04be4b3bb36142f175a1dad3da44076d23d4aed0ac187edd992e115c9b87a2
 - path: hbo/hbo_aggregate/hbo_aggregate.yaml
   entity: provider_aggregate
   id: hbo_aggregate
   display_name: HBO
   provider: hbo
   rule_count: 48
-  sha256: b9aa633fe4c025477f1903a50cd7b631be3ea1a72e52041563d74b01bcd70e1a
+  sha256: 39dc49ec2bba2ee36fedaf5ba0b33a1d9fd1699ac7d0074e419f46b1e8155801
 - path: hellobike/hellobike/hellobike.yaml
   entity: service
   id: hellobike
   display_name: 哈啰
   provider: hellobike
   rule_count: 2
-  sha256: 88b805cce6b3a98fa4f296b5f1a3257d214bcb8f8b87e75a172749b7683b76f7
+  sha256: d6784f36e148c6531a9c722e99574137901912495c44aba37e53249a27cfd001
 - path: hellobike/hellobike_aggregate/hellobike_aggregate.yaml
   entity: provider_aggregate
   id: hellobike_aggregate
   display_name: 哈啰
   provider: hellobike
   rule_count: 2
-  sha256: 80152470faa8cdaa3f6e37370ca5202808c121c35ec9c7add5c5cd1c2ddb04b6
+  sha256: 50cb7c5cf54e8f973ba31d892dd8349eb4f6ffe14f12a6dc3260b36abbade298
 - path: heytap/heytap/heytap.yaml
   entity: service
   id: heytap
   display_name: HeyTap
   provider: heytap
   rule_count: 2
-  sha256: aa33ad035c4053f1a96ffdda8e7ad4ff17ecbbd06b48e5b876b253eb892bfce0
+  sha256: a12393d920b258f49efa5f09a8ab6f3964b5c2d88d8cd92139b17619dd353a84
 - path: heytap/heytap_aggregate/heytap_aggregate.yaml
   entity: provider_aggregate
   id: heytap_aggregate
   display_name: HeyTap
   provider: heytap
   rule_count: 2
-  sha256: 908c98d1715ebd74e828020900c5762cf18c962c779ec432300e5ff3f20da753
+  sha256: 7ecca3da0576def65590325943c6f3e26f171bab9520dc78fb1c95329d8973d1
 - path: hikvision/hikvision/hikvision.yaml
   entity: service
   id: hikvision
   display_name: 海康威视
   provider: hikvision
   rule_count: 2
-  sha256: c5ae7f7dc5d813d1ec7112c3152f30669190e6014eeda445356fd436675f89cc
+  sha256: 53ec0a0d57485ce58ea18ef0abc7594f5b9d4a15246c63202a54865ce92a1c70
 - path: hikvision/hikvision_aggregate/hikvision_aggregate.yaml
   entity: provider_aggregate
   id: hikvision_aggregate
   display_name: 海康威视
   provider: hikvision
   rule_count: 2
-  sha256: 7b87f7071809bb53457089e01839c0be2454ee48a77e2d706facc152f44e7c2e
+  sha256: 8cc829b70b1edc138c6081e444e60e4d675c48429ead47650641eb7cea2a522b
 - path: himalaya/himalaya/himalaya.yaml
   entity: service
   id: himalaya
   display_name: Himalaya
   provider: himalaya
   rule_count: 17
-  sha256: 882516e31d6e09662d19ec4216fc41fbe505e6078ff884a7f88ccb2195feea61
+  sha256: e7e0c859320657a29e32ebb6b66f7cf8217de18b82c60c564d909319c0f9a46c
 - path: himalaya/himalaya_aggregate/himalaya_aggregate.yaml
   entity: provider_aggregate
   id: himalaya_aggregate
   display_name: Himalaya
   provider: himalaya
   rule_count: 17
-  sha256: 4cf2004647a2a7cf5808a80f273af094b4c3f28adaebaa6bdc53957628d48d51
+  sha256: b9769d16d68d6adde0a7129c69917cc4f99702c0f6853107cd2298053f2cbfe0
 - path: hitachi/hitachi/hitachi.yaml
   entity: service
   id: hitachi
   display_name: Hitachi
   provider: hitachi
   rule_count: 2
-  sha256: fe46f3051ad461602007d8cd5e57321ee69c4acdbcbd993839681bf67b025131
+  sha256: f13c73c1b13c86b90be619510c96ff6718020033d7a82d799257fd8212eb1c61
 - path: hitachi/hitachi_aggregate/hitachi_aggregate.yaml
   entity: provider_aggregate
   id: hitachi_aggregate
   display_name: Hitachi
   provider: hitachi
   rule_count: 2
-  sha256: 8649c4e6b2fafc9c243d28bca8ea516e74310e21a06353df93a65ff8ec2a3220
+  sha256: 42a83bfdf3d06b8614a420e991e1978c818b69585648d392e69974d8785ec797
 - path: honor/honor/honor.yaml
   entity: service
   id: honor
   display_name: Honor
   provider: honor
   rule_count: 2
-  sha256: a03f39354921aa6e58eaca16938a4177cf9ab9f84b605b1e0f877e084729dcfd
+  sha256: c9c03a4fbdfdd292be9f3fee3a781cf4a08f79de948ce2f0fdead05dce088dbf
 - path: honor/honor_aggregate/honor_aggregate.yaml
   entity: provider_aggregate
   id: honor_aggregate
   display_name: Honor
   provider: honor
   rule_count: 2
-  sha256: 5d91523eabea00968e509cafa1606525fcebb89d7c05bdbaeba6d2afa84bb6bc
+  sha256: 4666be49b47f1d9a6a1fc7874e4ff48cd3c206b48d194e6dbca4b102a9c155a0
 - path: hoyoverse/hoyoverse/hoyoverse.yaml
   entity: provider_aggregate
   id: hoyoverse
   display_name: HoYoverse
   provider: hoyoverse
   rule_count: 15
-  sha256: c08b209bd273d11ca38b0d784d18dbf07241b191dc54daa1410b8ad32e496f3b
+  sha256: 5d5a0fb37924e915e822013511bdc15552e7ddac1ed9cb4a53c0ccb265a67f66
 - path: hpe/hpe/hpe.yaml
   entity: service
   id: hpe
   display_name: HPE
   provider: hpe
   rule_count: 2
-  sha256: 262acce32eeec9a15dc73d6c7bfee355e173214bdc9b53fa9651e83ca696e333
+  sha256: c854b0f53cc3f5bdf81ab4171e5f57f574e47d54e5db05cac9b55985f407ba68
 - path: hpe/hpe_aggregate/hpe_aggregate.yaml
   entity: provider_aggregate
   id: hpe_aggregate
   display_name: HPE
   provider: hpe
   rule_count: 2
-  sha256: 698523a2352a48a6c1843cec27f52d89078bd769e9dd64629582a41144290add
+  sha256: 6ec56a94b3a0170ee165d81fe8dc564a4f4ad0dd25d289bbcb0ee6c06ca5a874
 - path: huawei/huawei-appgallery/huawei-appgallery.yaml
   entity: service
   id: huawei-appgallery
   display_name: 华为应用市场
   provider: huawei
   rule_count: 1
-  sha256: 9be072d5ba401b8758a05b7f54fabd0dcd6569ea6d0a9094af46d55896df9c84
+  sha256: 36384df18c0f93f9769bbb04af202c206b280117948a77e0981bd195610b679d
 - path: huawei/huawei-cloud/huawei-cloud.yaml
   entity: service
   id: huawei-cloud
   display_name: Huawei Cloud
   provider: huawei
   rule_count: 1
-  sha256: 118630fda8a950d3779107a6c7940c5e73b12a691a2f2a4179bdc5fc946a8cb1
+  sha256: 1ee382a6637febd955665c396460da6ffc9334b50e44ca9dd9b760e72de78c62
 - path: huawei/huawei/huawei.yaml
   entity: provider_aggregate
   id: huawei
   display_name: Huawei
   provider: huawei
   rule_count: 404
-  sha256: f3e9a359f7b40eb52d6f8e24159d1f82a6de812bc78b2391e695912664dbb13b
+  sha256: 3eedd4bf4b08012ebb8114aa17888a17636d7a349e75305b23d56c49e8248a03
 - path: hubspot/hubspot/hubspot.yaml
   entity: service
   id: hubspot
   display_name: HubSpot
   provider: hubspot
   rule_count: 2
-  sha256: c804b1331c35dc73c0f9315af3ceeda80f5cf46746c3a8d7a5f215624ba870d3
+  sha256: d59484968a0b1d9adfe41ae10789026698b5c4bbb259f9844e76059f5128c7e7
 - path: hubspot/hubspot_aggregate/hubspot_aggregate.yaml
   entity: provider_aggregate
   id: hubspot_aggregate
   display_name: HubSpot
   provider: hubspot
   rule_count: 2
-  sha256: 85e37309ed6bcb9cb36a6eac1113a683155d82d1a58dc423f19c880522fd3274
+  sha256: 9f72617adbbed169519618f7c6bbbdc379d53cb4eb4e3927140fff2e396d0660
 - path: huggingface/huggingface/huggingface.yaml
   entity: service
   id: huggingface
   display_name: Hugging Face
   provider: huggingface
   rule_count: 3
-  sha256: 6a1fa82c09a3f534dac50293563a20747f3d41c8e69b336580b57c4c70255805
+  sha256: 4c04bddffbe1f8fa6c1bc2a2db16211168771dbeeac6c539d0a9c79bb419350c
 - path: huggingface/huggingface_aggregate/huggingface_aggregate.yaml
   entity: provider_aggregate
   id: huggingface_aggregate
   display_name: Hugging Face
   provider: huggingface
   rule_count: 3
-  sha256: f3215cf9a64834c2f9e22dde92220e17828bfa4e59a356a54fff684d0287aafa
+  sha256: 7508e862f95782ccd91b027cd8ae6d34addda2fbd663fedc04052551c02f64f2
 - path: huolala/huolala/huolala.yaml
   entity: service
   id: huolala
   display_name: 货拉拉
   provider: huolala
   rule_count: 2
-  sha256: 1e3c6b054566d173c983eef4689693ae2722942937afe7414e5d84452a9ca9e1
+  sha256: 2306947255279f36e33f50a81f61e832a6208bd374689bfa60cb615b3e877a3a
 - path: huolala/huolala_aggregate/huolala_aggregate.yaml
   entity: provider_aggregate
   id: huolala_aggregate
   display_name: 货拉拉
   provider: huolala
   rule_count: 2
-  sha256: 8df9edf30163a6a0522d6d6552813b4e435d3d824d5b2c420fb7de009fe1977d
+  sha256: a6327f33a5a482d3a6bc215207b6637b98b21f7d51cff98c9ed6e44a7e62eea7
 - path: huya/huya/huya.yaml
   entity: service
   id: huya
   display_name: Huya
   provider: huya
   rule_count: 5
-  sha256: e74de610ea14608f467c3e97579ed95bba23525f8d06c6ebcd2fdccb3018d5a7
+  sha256: 167ee4ae97da5f89925e1abdc9c2cbdf999f14fbf4149a3a12528c007d611386
 - path: huya/huya_aggregate/huya_aggregate.yaml
   entity: provider_aggregate
   id: huya_aggregate
   display_name: Huya
   provider: huya
   rule_count: 5
-  sha256: e6968fb5f65204a9b4a348eadab07b9f7834b74c2af86e68835805077c4fb932
+  sha256: 362b7990b75bf0248f73c1c586363be1af0769f2b75357d2d85f9da3acc38050
 - path: ibm/hashicorp/hashicorp.yaml
   entity: service
   id: hashicorp
   display_name: HashiCorp
   provider: ibm
   rule_count: 8
-  sha256: f9f320f0f3811585088695de82c84963f399ae5be4a3c553eab12f304c65df8a
+  sha256: 5bcfe0d860a38fce90b1780fb5cdff6cebb9d8369061ff26334e91ede34643a3
 - path: ibm/ibm/ibm.yaml
   entity: service
   id: ibm
   display_name: IBM
   provider: ibm
   rule_count: 2
-  sha256: 56015f4f7e254d7363dea399ec72b31f6526b2abafdda3f51c75b1b49482a793
+  sha256: 81243aa8d1d3bf9b4594105c4e2c82751b5b3cab618032c35d8d3e39f28bc3b2
 - path: ibm/ibm_aggregate/ibm_aggregate.yaml
   entity: provider_aggregate
   id: ibm_aggregate
   display_name: IBM
   provider: ibm
   rule_count: 10
-  sha256: da94529652ff23dc72d227be557ac4ca9f6841a99115b72d80381cc74e6c8b29
+  sha256: 8d085d74e127eda2e618b97d91dc74f615493224c4733d1bcdfe310c139d59c9
 - path: icbc/icbc/icbc.yaml
   entity: service
   id: icbc
   display_name: Industrial and Commercial Bank of China
   provider: icbc
   rule_count: 58
-  sha256: 27a16d5018f6326f77bdbd60c26fc38336b6d77d184cbd24606e101be421c66e
+  sha256: 9bd193522a1dd93c43d8478ba90bd3b1dccf4363bf111e2b12d0e029010d3250
 - path: icbc/icbc_aggregate/icbc_aggregate.yaml
   entity: provider_aggregate
   id: icbc_aggregate
   display_name: Industrial and Commercial Bank of China
   provider: icbc
   rule_count: 58
-  sha256: c9e59167c52a88fdc07f669036d2fcadb1289ceec39b3bd4467c372de2c7e395
+  sha256: adb63e6f506b6e917651b067a6c953e8ed7125a3646fc6a510eb0e841c17c4c2
 - path: iflytek/iflytek/iflytek.yaml
   entity: service
   id: iflytek
   display_name: 科大讯飞
   provider: iflytek
   rule_count: 2
-  sha256: 26bf627b8ec1a839379020962201fd0b11602a26be580536d6bb031af3eb2b75
+  sha256: 14e5eb936f66680d5b969ce6375eac8c6617aead8405b0aa9bbdb21813d76e18
 - path: iflytek/iflytek_aggregate/iflytek_aggregate.yaml
   entity: provider_aggregate
   id: iflytek_aggregate
   display_name: 科大讯飞
   provider: iflytek
   rule_count: 2
-  sha256: 7b880209358df31142c93f853cbb29984c2dd6453ef15f422bb4fdc54c764b5c
+  sha256: 5860fb09c5e866c2978fb6f6412e7decb27cb291e8876e0fc0d7c0a477d21c82
 - path: intel/intel/intel.yaml
   entity: service
   id: intel
   display_name: Intel
   provider: intel
   rule_count: 2
-  sha256: de41c5ca2128d48476d5918862ed5a8f36161326f9fc0bc2e51139c96663d18b
+  sha256: 4178c496533045aadf65fd0058069da956c2b75815e4dffbe25e466432a70d06
 - path: intel/intel_aggregate/intel_aggregate.yaml
   entity: provider_aggregate
   id: intel_aggregate
   display_name: Intel
   provider: intel
   rule_count: 2
-  sha256: 397494d5a8bbbb3f10cb93ac7369de69d857b8594d035a8c3063c0dadbce7fe8
+  sha256: bbaf1143a3fedbe17722190199364ffe707d11832093a086681bd04045532560
 - path: internlm/internlm/internlm.yaml
   entity: service
   id: internlm
   display_name: 书生InternLM
   provider: internlm
   rule_count: 1
-  sha256: 27ad933731e5ed47149271279a4f2379375097ae130cbc789caae79b60e30303
+  sha256: d8e3d19a850adb44690cd595a9da4e42e1720d5ec07f023c1271e33496a10c3a
 - path: internlm/internlm_aggregate/internlm_aggregate.yaml
   entity: provider_aggregate
   id: internlm_aggregate
   display_name: 书生InternLM
   provider: internlm
   rule_count: 1
-  sha256: a23f5f15caf32ea0e5ca5774abff4bcb10aab1755ee65cc1b786ed00945ff70d
+  sha256: e5fbd122ef1402b3509b4ecbcc3e8724abb879921b495499e88e81ed9de2c388
 - path: intuit/intuit/intuit.yaml
   entity: service
   id: intuit
   display_name: Intuit
   provider: intuit
   rule_count: 2
-  sha256: 5883781d17d3ed79cb4eac5f3769a0f171021ce9ceb40420d3c3d66ea8ce2b96
+  sha256: 1777e5d72e9bf6a28c2c81b44c98b96a4516a9541ef1a544c3fce0a4dc101faf
 - path: intuit/intuit_aggregate/intuit_aggregate.yaml
   entity: provider_aggregate
   id: intuit_aggregate
   display_name: Intuit
   provider: intuit
   rule_count: 2
-  sha256: 468b38624d9d8b4c3e726e87251fa66509a9b32056fecff3aa5cb5de9091d809
+  sha256: 6ea9758a4660b602b83ec1ea5aef75dc7753950f43581f91a7dabb72b93a5243
 - path: iqiyi/iqiyi/iqiyi.yaml
   entity: service
   id: iqiyi
   display_name: iQIYI
   provider: iqiyi
   rule_count: 67
-  sha256: 9fbdfd59210ac30a550e654af251cce4ee954ca3db6b807d78c346c0139bb1ba
+  sha256: b13682d44953ae65a2500aa8cc29c23b4b358a61551f43918387c2b72d18ec23
 - path: iqiyi/iqiyi_aggregate/iqiyi_aggregate.yaml
   entity: provider_aggregate
   id: iqiyi_aggregate
   display_name: iQIYI
   provider: iqiyi
   rule_count: 67
-  sha256: 5a4b654f980b32285328262f1ff4ed33ee3ace764708742de56891b7d730c70d
+  sha256: 8894ce02d80c0ac088556f7e442f5f8ed45feea01749e05740deabe67e749a91
 - path: jetbrains/jetbrains/jetbrains.yaml
   entity: service
   id: jetbrains
   display_name: JetBrains
   provider: jetbrains
   rule_count: 25
-  sha256: 7c354f996e6b6c8deaeba5090867419937ba17a1b2c3d1302005b187cd42569a
+  sha256: 97010b9829b514c07166181c50c340ab49662a8d4cf2fa0e4232241b2a1fbf97
 - path: jetbrains/jetbrains_aggregate/jetbrains_aggregate.yaml
   entity: provider_aggregate
   id: jetbrains_aggregate
   display_name: JetBrains
   provider: jetbrains
   rule_count: 25
-  sha256: daca63f2ca9e327c2cf764437f38aa10841bb64100c5dfb1ffb6097bd15b1edc
+  sha256: 4d5c6c6f10e60591975a46f74df45e445331899dc70a7fb703d7ee7872f991ce
 - path: jingdong/jd-cloud/jd-cloud.yaml
   entity: service
   id: jd-cloud
   display_name: JD Cloud
   provider: jingdong
   rule_count: 1
-  sha256: 12ba79851de0b56c128f97a595c7d532cc7bdc256e9039afdd780ef267f34003
+  sha256: 9284debc07a3c2840132d7ece37eee916803280a7a08dde0ded30d5b328a6c20
 - path: jingdong/jdcloud/jdcloud.yaml
   entity: service
   id: jdcloud
   display_name: 京东云
   provider: jingdong
   rule_count: 2
-  sha256: 77571074e64281c1a9592cb5c70752de7a1b71004567b85a751b0e156b312d1b
+  sha256: 41e19adbaa51b53e8b3d8911412b77186909909c8f73ccd4aa095ff7a7e8d09b
 - path: jingdong/jingdong/jingdong.yaml
   entity: service
   id: jingdong
   display_name: JingDong
   provider: jingdong
   rule_count: 277
-  sha256: f0e7655e4ef52cd7d0268f0ef02dd70ad9e89317c79f6e5596b77d6f6899db09
+  sha256: eb6cec1b0195f09f7b31479d71a2f68d1bff4fa6bcd1a338b674403c5f1cce28
 - path: jingdong/jingdong_aggregate/jingdong_aggregate.yaml
   entity: provider_aggregate
   id: jingdong_aggregate
   display_name: JingDong
   provider: jingdong
   rule_count: 278
-  sha256: 5d88b138cf665513b2147643717cc453fa71d49e917226fd73abe68fbaaafab1
+  sha256: ccec93a41f88816b47080c1bfabb99ffa43539c250bab0b1ac59c03b9a4b58fd
 - path: kakao/kakao/kakao.yaml
   entity: service
   id: kakao
   display_name: Kakao
   provider: kakao
   rule_count: 2
-  sha256: dbd6285e0af95e2453394f109012d1dca674784487df5451e0e6c912294466f6
+  sha256: 1a6269131cbf79511e458f9d5727ec57c906fdf06508d5737ffb624b3e65fd9e
 - path: kakao/kakao_aggregate/kakao_aggregate.yaml
   entity: provider_aggregate
   id: kakao_aggregate
   display_name: Kakao
   provider: kakao
   rule_count: 2
-  sha256: a3382f1185da912fdbf943205a33218b3f72143d7552687528404028842960fd
+  sha256: 08410a89320a6c9dbe35520af9982e25b301a343b4f06fe82ececac6ffc2236a
 - path: kakaotalk/kakaotalk/kakaotalk.yaml
   entity: service
   id: kakaotalk
   display_name: KakaoTalk
   provider: kakaotalk
   rule_count: 15
-  sha256: eff0fbc7b8f255c264bf1f5df93cc368a858e1fc985ffd69e993d22a7755fb08
+  sha256: 51650ff9eadd6d402dc5d7d6cbb97af1ba832fc33bc23f24fcce1d33188db6b7
 - path: kakaotalk/kakaotalk_aggregate/kakaotalk_aggregate.yaml
   entity: provider_aggregate
   id: kakaotalk_aggregate
   display_name: KakaoTalk
   provider: kakaotalk
   rule_count: 15
-  sha256: 4996d53a61f74921d2e4965e4466c6500eaa8cbf6bda60b044a8d9a279239a71
+  sha256: 6174f5dcda3a645106793a5452afd3a949e4f8f96d1e5112f510f994d044583d
 - path: kingdee/kingdee/kingdee.yaml
   entity: service
   id: kingdee
   display_name: 金蝶
   provider: kingdee
   rule_count: 2
-  sha256: 9f864488c580edac404123963bf21b9c3f9ebddcfdd16d9d8af532d258ffacc7
+  sha256: 526fecc9b7b66fdfa3341cc52f0baeeb3d3c432cdd5698e30d16538e880509fe
 - path: kingdee/kingdee_aggregate/kingdee_aggregate.yaml
   entity: provider_aggregate
   id: kingdee_aggregate
   display_name: 金蝶
   provider: kingdee
   rule_count: 2
-  sha256: 7b4b0c51ae94c87255fd82a77f7e0e5674f9f00ac6e2287c0ea93ef45dba2531
+  sha256: d1fdacffd7575366f8436237ad476c8d24878c04c5af304fa769f9cf7e316cc6
 - path: kingsoft/kingsoft_aggregate/kingsoft_aggregate.yaml
   entity: provider_aggregate
   id: kingsoft_aggregate
   display_name: Kingsoft
   provider: kingsoft
   rule_count: 2
-  sha256: 3825219b3cbf2a5bb85fda8d9dc920e4a4f72476078e8c8339bc3a49bc8fb4b8
+  sha256: 397e4367265d72ecf8a1aed34bd2a592044acfdcdd7c592382ec47df8a501d68
 - path: kingsoft/wps/wps.yaml
   entity: service
   id: wps
   display_name: WPS
   provider: kingsoft
   rule_count: 2
-  sha256: e6cf4bb2b88f1d4a52bdec035c944eca6d300ec4fc260ee8a99d925112e63530
+  sha256: 69e69a1975fd07a9c351478ebb1673cb99d6741111241bff2209833fb742d114
 - path: kla/kla/kla.yaml
   entity: service
   id: kla
   display_name: KLA
   provider: kla
   rule_count: 2
-  sha256: b5c49a7bb4ad2a67fef512358e27c31228f30f2bf482ce9b399028cfdc871f71
+  sha256: 1d7e38cd580497c83db16f65fb8c1dca15003e11322092934569d8b2828bd0a8
 - path: kla/kla_aggregate/kla_aggregate.yaml
   entity: provider_aggregate
   id: kla_aggregate
   display_name: KLA
   provider: kla
   rule_count: 2
-  sha256: c38d0b2810b0f9345fe307a42fdffbec640a206e2b4d097ceef16c017a33707f
+  sha256: cf350753bf464694d5303adffe31a22c7d1d706824bd5f5442ed8469f676960b
 - path: kuaishou/kuaishou-open/kuaishou-open.yaml
   entity: service
   id: kuaishou-open
   display_name: 快手开放平台
   provider: kuaishou
   rule_count: 1
-  sha256: 74d8530666e10e11af829cd983fba4f60e0534a6d0f29935af7d670be7af1547
+  sha256: d823e6c614ff162cf3d96099ea8755ccfa189f43a4a412108b4c8f58c9021a92
 - path: kuaishou/kuaishou/kuaishou.yaml
   entity: service
   id: kuaishou
   display_name: Kuaishou
   provider: kuaishou
-  rule_count: 679
-  sha256: ae19243a193deba22104024cbf4a341ff73395039906289ce702e83a3cae3310
+  rule_count: 1
+  sha256: 8b979407bb424439e68809aaf85ca440ed0b9c455a90e1eb0fb45293a8b535d9
 - path: kuaishou/kuaishou_aggregate/kuaishou_aggregate.yaml
   entity: provider_aggregate
   id: kuaishou_aggregate
   display_name: Kuaishou
   provider: kuaishou
-  rule_count: 680
-  sha256: 0a2cefb99463814985a9ea780962186668f383a778d5e6e49fabdef5807e8b98
+  rule_count: 2
+  sha256: 0a9a03fd22745a1ea3e9c1ad89f59ac10a4b376d91b8036f8c157de54d674b1d
 - path: kugou/kugou/kugou.yaml
   entity: service
   id: kugou
   display_name: KuGou
   provider: kugou
-  rule_count: 20
-  sha256: cab651ac618eb19af29a2ae47bb38975b9086d5b5ed8afe4794b23691ac91d77
+  rule_count: 1
+  sha256: b9edc3dd2ffabd7c8618fbb5b7098a0ced06591e7b818991d60acdf7178911c2
 - path: kugou/kugou_aggregate/kugou_aggregate.yaml
   entity: provider_aggregate
   id: kugou_aggregate
   display_name: KuGou
   provider: kugou
-  rule_count: 20
-  sha256: a1b5aeb2647c54a4567b651e1da43cc74b6cf1d86d376235acf0f70e0dc90bf1
+  rule_count: 1
+  sha256: e70691271b06060e5ab13fe5f0e0afc0e7c9787573dcaae0492dfb1cf4473b94
 - path: kunlunxin/kunlunxin/kunlunxin.yaml
   entity: service
   id: kunlunxin
   display_name: 昆仑芯
   provider: kunlunxin
   rule_count: 2
-  sha256: 72df22e9fe8343e9a08f285b90f5e4712986b062f0e903fb3073a6fd8a897de4
+  sha256: d0e6b132a9b5f6ee4661e4e7cb7d09e567ab7b0c55c5c22fba5a1aa4027d845e
 - path: kunlunxin/kunlunxin_aggregate/kunlunxin_aggregate.yaml
   entity: provider_aggregate
   id: kunlunxin_aggregate
   display_name: 昆仑芯
   provider: kunlunxin
   rule_count: 2
-  sha256: 676dc1234e83a746c33f89551ab9bf0115ed394c6b208403aefe73fc3141682c
+  sha256: 5b5413cd5bcc37c85458fb888e7dc3c535ac94bb1fd9aa35aa11b2f98ac4e800
 - path: kuwo/kuwo/kuwo.yaml
   entity: service
   id: kuwo
   display_name: Kuwo
   provider: kuwo
-  rule_count: 4
-  sha256: 24b0b901f711cf8c9c74d79c463b621a5b3f2d717c76d4a850ac4f8d2b2f30d9
+  rule_count: 1
+  sha256: bf4b351193cdf71776df7cf5b5fc9ccc4f245806aa7b6011a9885eb94a3a6da2
 - path: kuwo/kuwo_aggregate/kuwo_aggregate.yaml
   entity: provider_aggregate
   id: kuwo_aggregate
   display_name: Kuwo
   provider: kuwo
-  rule_count: 4
-  sha256: 5cf79be467cc34551a62185e616181e234db6c3017a9a6af7763b9c17b6548d3
+  rule_count: 1
+  sha256: 3941a78d17ef80075fa7177421b6f44754f00ba6987c23ee50a58392c93698b0
 - path: lamresearch/lamresearch/lamresearch.yaml
   entity: service
   id: lamresearch
   display_name: Lam Research
   provider: lamresearch
   rule_count: 2
-  sha256: 995b47074b795fbf7826a12c4e0092d0bf0c165384e1681d21537bb910f1a298
+  sha256: bc09acbba8473c8f537c64d1f49213fe4acc600b9dde577e4f14bf72ccab8d97
 - path: lamresearch/lamresearch_aggregate/lamresearch_aggregate.yaml
   entity: provider_aggregate
   id: lamresearch_aggregate
   display_name: Lam Research
   provider: lamresearch
   rule_count: 2
-  sha256: 9b549c3f7e8d8fb867f0d14b97eea81868235dad80d3d4c8a2439c5406442bfc
+  sha256: e3732968e07212cdab5c807ebec43bc2118d66aa840a977f1b1ab274d1e169a1
 - path: lenovo/lenovo/lenovo.yaml
   entity: service
   id: lenovo
   display_name: Lenovo
   provider: lenovo
   rule_count: 2
-  sha256: 38f6a9c0100cb112b24f7be7db973d769409fc999ae40857c9ad5f1faf0b859b
+  sha256: 7d9e0aaee7d9543617a9a0f5de3586b4a713c1900402e00e9bc2d065f7d2d5c4
 - path: lenovo/lenovo_aggregate/lenovo_aggregate.yaml
   entity: provider_aggregate
   id: lenovo_aggregate
   display_name: Lenovo
   provider: lenovo
   rule_count: 2
-  sha256: fa93f7ad31374ae9d79fd9f89c9b526f365c48195a07fe25469ee368fdf673c8
+  sha256: 6ade2a9c36d8204f4d650831a412d5b9262368ee88f9f9cd5a6af3d2423730f0
 - path: letv/letv/letv.yaml
   entity: service
   id: letv
   display_name: LeTV
   provider: letv
   rule_count: 13
-  sha256: b9c8d9ed84da3ed590c8918cbb0b131b7347728abc914b94fc5bd5c912465097
+  sha256: 188b7b512075c56a10209b4f6ab364ff04aae75339c7450d63a438b3a32ae42d
 - path: letv/letv_aggregate/letv_aggregate.yaml
   entity: provider_aggregate
   id: letv_aggregate
   display_name: LeTV
   provider: letv
   rule_count: 13
-  sha256: 1c8d8cab60053c0458bf17443e7a1f8c75abdbc062ebd4723cc8236f4d4cdd99
+  sha256: d1c2c4b2059f256ec687f21c0b442965ac844babe8d5d283b967f8d52f75df67
 - path: lg/lg/lg.yaml
   entity: service
   id: lg
   display_name: LG
   provider: lg
   rule_count: 2
-  sha256: abcc4713d302f2cf0e5881e5ecbe6844d26d71f2ef225685aab50062108b7410
+  sha256: 80cce70076220b0a6a6b7284dd77ad65e650929b8c17bdc7aabdac6c967fa500
 - path: lg/lg_aggregate/lg_aggregate.yaml
   entity: provider_aggregate
   id: lg_aggregate
   display_name: LG
   provider: lg
   rule_count: 2
-  sha256: d561bda42f24a8be19b0e8e4a47df6132fea310a11e2496a30896b833d19aac7
+  sha256: 2d0108ce262a6a67b0373fb72ad4bb42375789135f87a6b15c2b457324971661
 - path: line/line/line.yaml
   entity: service
   id: line
   display_name: LINE
   provider: line
   rule_count: 37
-  sha256: 06fe090fed3670d918d11e06bd003180843c6bf692e4688eb2262a1e52835786
+  sha256: f0590f515f29532088a830b1284d2f6b0945e44a199771a487cfb13c949e70c5
 - path: line/line_aggregate/line_aggregate.yaml
   entity: provider_aggregate
   id: line_aggregate
   display_name: LINE
   provider: line
   rule_count: 37
-  sha256: 4decda1c19661d755af0a8f5d34b058f5346707e3acf5fbb01e94a0d5d51f83a
+  sha256: 27449f67615560e57f4b5a17f52bbf79c6d47a363c9f26f12878e68c962e9ddf
 - path: linecorp/linecorp/linecorp.yaml
   entity: service
   id: linecorp
   display_name: LINE
   provider: linecorp
   rule_count: 2
-  sha256: 5b824c5bc0c5ef55e24e42b8cda1d420f95fc3e5fe59f2e262c44886af85af7f
+  sha256: fc28342dab8c04f56a7ba2d1a2c90390a88718c1dd4bb3c0111fb0eb4155b05e
 - path: linecorp/linecorp_aggregate/linecorp_aggregate.yaml
   entity: provider_aggregate
   id: linecorp_aggregate
   display_name: LINE
   provider: linecorp
   rule_count: 2
-  sha256: ad80e4650f3fc18475e7cae4426e82cf680ded47be0e71e3b6ca52bd01cdb154
+  sha256: 262458ed59f84ae0cb456d3117135ae234c76c22f33f9ece1a689a8e44523ba3
 - path: lufax/lufax/lufax.yaml
   entity: service
   id: lufax
   display_name: 陆金所
   provider: lufax
   rule_count: 2
-  sha256: d9f26e5ed712c600875efcf167ae74658cc2573fd59dd62bd3be8295dd49f0f0
+  sha256: 9adb0a6b1a9392633f0c57600f8fc42d2edb8a3f36d5893749a5100365dcaa06
 - path: lufax/lufax_aggregate/lufax_aggregate.yaml
   entity: provider_aggregate
   id: lufax_aggregate
   display_name: 陆金所
   provider: lufax
   rule_count: 2
-  sha256: ec14bd022e7d788fcb5283eb34543dddd9a507fb00ac579c5a11b430fa9e7524
+  sha256: 954885487b737d646d4a073174b23c12bde2937706486be5478606073f83ca70
 - path: manbang/manbang/manbang.yaml
   entity: service
   id: manbang
   display_name: 满帮
   provider: manbang
   rule_count: 2
-  sha256: c70f6d8ed48f814e2c6ae5a50110b18b057d1c3627e344ebcbacd968f4db0935
+  sha256: 69eeb07020ef1f6579a9744243a614f55ec1cf539a0e935e49a9c1c6e1563fa4
 - path: manbang/manbang_aggregate/manbang_aggregate.yaml
   entity: provider_aggregate
   id: manbang_aggregate
   display_name: 满帮
   provider: manbang
   rule_count: 2
-  sha256: 0e3f316acc18ad405630c89f9580b42c4b02f1d181e8d3e97879bf19ad15dc5c
+  sha256: afd0d10b709f45f252acc9f6f3e5e333aa8572a04d76a4c4d8cda1b856a154c8
 - path: mediatek/mediatek/mediatek.yaml
   entity: service
   id: mediatek
   display_name: MediaTek
   provider: mediatek
   rule_count: 2
-  sha256: 02198eba98d1298f48e1b0061fdffa52ec37bf07aa575070499d262599e3b28c
+  sha256: 2791a44b65ffbe8f84895ea01193439ca4a8bc48161a3f4dd9d1839adde2c349
 - path: mediatek/mediatek_aggregate/mediatek_aggregate.yaml
   entity: provider_aggregate
   id: mediatek_aggregate
   display_name: MediaTek
   provider: mediatek
   rule_count: 2
-  sha256: 0d520ae406d053db65f6c6f13fc469cb4f77bebef397868b741b9634108bb5c3
+  sha256: e45311399671af2949702d9b5ecf0af688bcda4bb825dbd303fa5e29fda35155
 - path: meituan/meituan/meituan.yaml
   entity: service
   id: meituan
   display_name: Meituan
   provider: meituan
   rule_count: 7
-  sha256: 840a68c2df941b5920730682c1af86d348bada21d9cb73fecee79e3da2b92101
+  sha256: deb3a28e286d4f7507e51f2d182d4b66310068ef35d04051190981657b4f1b4f
 - path: meituan/meituan_aggregate/meituan_aggregate.yaml
   entity: provider_aggregate
   id: meituan_aggregate
   display_name: Meituan
   provider: meituan
   rule_count: 7
-  sha256: f77fafee880b1288bad2f7eb73e904966273f49d3cbf2063126a619d14368e56
+  sha256: eca034914e5e7a95f088ee9ede650f8bef917d04b2f921aa0d128887387b0b57
 - path: mercadolibre/mercadolibre/mercadolibre.yaml
   entity: service
   id: mercadolibre
   display_name: Mercado Libre
   provider: mercadolibre
   rule_count: 2
-  sha256: e7677bf7e87e6510c34be1b9a7fcfd356df76ecec2e6f39ae726bf22c99a9b1e
+  sha256: 1d2a62b5f0aea1f131138fdd2694d5012aa83c4c1d3446a9185183f2eefb9db7
 - path: mercadolibre/mercadolibre_aggregate/mercadolibre_aggregate.yaml
   entity: provider_aggregate
   id: mercadolibre_aggregate
   display_name: Mercado Libre
   provider: mercadolibre
   rule_count: 2
-  sha256: 6a77adc1ac2a406de2cae761d72dd7828852c22989e3e133a42d4bcbe748971e
+  sha256: 8de970a5ad0e35ccc23c9088f218e9c22a2aa4a70c6579ffc24ba5a17389503c
 - path: meta/facebook/facebook.yaml
   entity: service
   id: facebook
   display_name: Facebook
   provider: meta
   rule_count: 576
-  sha256: 317f7afa35021dfc75e5def7c550be466445e70cf5b5340ea85fb98d506ded37
+  sha256: 1cba06dd9f3168db3ef9d22861dc84d11b462faf7b7e7389b8c8403f8b07236f
 - path: meta/instagram/instagram.yaml
   entity: service
   id: instagram
   display_name: Instagram
   provider: meta
   rule_count: 76
-  sha256: 4e4fb4d664e6564718779b214db0828238a893396bee79ba78c5b8a0435cd4e2
+  sha256: e102b84723d39e5416d5f7d54caf8d0fdc63a5f589401eadd01a067686e6bced
 - path: meta/messenger/messenger.yaml
   entity: service
   id: messenger
   display_name: Messenger
   provider: meta
   rule_count: 4
-  sha256: ae42d3c690f0da1da7d1c2c4f620d04d6777cdb1e28cba3bd8c8e477ccd32867
+  sha256: 710c1bd8e2767e765b7bef0c8716025e4df856fb588c1e842e8d228714c4ec65
 - path: meta/meta/meta.yaml
   entity: provider_aggregate
   id: meta
   display_name: Meta
   provider: meta
   rule_count: 594
-  sha256: dce3ce3f810052f6ed3e25476dc1d2b4ae9eb4c6463a0e54008001e1f4cda18c
+  sha256: 5c3f8f88b6fce021edc6a708cec759dae46411bb871d10786282adf84e73fe7c
 - path: meta/threads/threads.yaml
   entity: service
   id: threads
   display_name: Threads
   provider: meta
   rule_count: 1
-  sha256: 6eab8cba75d22062a2d2c3441f1d9b2615ab77923625ef55f3010944e9f8632f
+  sha256: 96b2d0a729dba0f43639681172b2273722bb72a0a2585452b011270bcf3b2056
 - path: meta/whatsapp/whatsapp.yaml
   entity: service
   id: whatsapp
   display_name: WhatsApp
   provider: meta
   rule_count: 26
-  sha256: 271fdcd97cf76c10010e2df0f69cc3836a2152bdab00e2b226bfadbc8d34b7ac
+  sha256: 288978038e1ebb17785b89304da5c3aaaca66acb64a67680273bc57e2c1a137a
 - path: mgtv/mgtv/mgtv.yaml
   entity: service
   id: mgtv
   display_name: 芒果TV
   provider: mgtv
   rule_count: 2
-  sha256: 6198365b5055185a2e50fad16026d8a1054e32b33e6af8b7d1788c230d98a536
+  sha256: d759bf7d373609677afb385f7a8876fdea2a598ee9f458e6325ee00e17b8ed3e
 - path: mgtv/mgtv_aggregate/mgtv_aggregate.yaml
   entity: provider_aggregate
   id: mgtv_aggregate
   display_name: 芒果TV
   provider: mgtv
   rule_count: 2
-  sha256: f8af5758f89da22adb42641c38ae56810c0afd67290e69a62428098eb07ad311
+  sha256: ce7296740038dcf8af7f608e9bade086e040eed08659d1a3843840004f3c75db
 - path: micron/micron/micron.yaml
   entity: service
   id: micron
   display_name: Micron
   provider: micron
   rule_count: 2
-  sha256: 34609108f96830076632f854245ebb3b767d196d2c6efad4ad9c363431f0744b
+  sha256: a828b96414f00bf81ec66bacfd0071abfd2b52cf900144bffa8eb7c6a5de0378
 - path: micron/micron_aggregate/micron_aggregate.yaml
   entity: provider_aggregate
   id: micron_aggregate
   display_name: Micron
   provider: micron
   rule_count: 2
-  sha256: 85efa6ca422294a691b21f63a7c4ff39ef44fc7454b4f857beea2d968a2f484d
+  sha256: 677fb66654e3863b68c5d09affea3772623830ca8e0333de4d96772687d124ae
 - path: microsoft/azure/azure.yaml
   entity: service
   id: azure
   display_name: Microsoft Azure
   provider: microsoft
-  rule_count: 151
-  sha256: 6a5550bb0760c8a4b188703b762d72c51181621c0f6e68e4cb626d9236cfb121
+  rule_count: 149
+  sha256: b8185f71a3563435a7d8349c25c00f27fbded5ecda0988a33425bd93493696fd
 - path: microsoft/bing/bing.yaml
   entity: service
   id: bing
   display_name: Bing
   provider: microsoft
   rule_count: 9
-  sha256: 2ccfc2ecf929b62dfc95c6162a571f7d3bb092a1f892485af52c9e007d551e47
+  sha256: 5cdb81b9ce75329bbf7d8b38cdfdd81b6949d5f35b6c7b77e5df8be7d5b20420
 - path: microsoft/copilot/copilot.yaml
   entity: service
   id: copilot
   display_name: Microsoft Copilot
   provider: microsoft
-  rule_count: 69
-  sha256: a64cd92336775b68643a4686e9c9ec1fc636d232d109a104b3f92afde9f9c107
+  rule_count: 45
+  sha256: 547ea1054194bf587756b1022406507864836dfe7c5c7c473419e499bd81b92d
 - path: microsoft/github/github.yaml
   entity: service
   id: github
   display_name: GitHub
   provider: microsoft
-  rule_count: 96
-  sha256: f4441ba573b4677e7df46bff320a7483aa5641a881959d430041e260d378a596
+  rule_count: 29
+  sha256: d3349400e422a4c09bc7f398208eea6a2eef7f2bd150e8ca2e719dfe2a641bb7
 - path: microsoft/linkedin/linkedin.yaml
   entity: service
   id: linkedin
   display_name: LinkedIn
   provider: microsoft
-  rule_count: 13
-  sha256: 322a98be5ea7be4db2e4433fc12f31caea1c260204ad25f27d60a37e27313445
+  rule_count: 2
+  sha256: b3c707e79714cbd7a6fbb5d741ac11389956abb5fffdd9f54963a05400d00654
 - path: microsoft/microsoft/microsoft.yaml
   entity: provider_aggregate
   id: microsoft
   display_name: Microsoft
   provider: microsoft
-  rule_count: 1092
-  sha256: 6ae633cf9462844cde62bc16bbb29b4f50f42c007e7ef0e050ad7b4fb105aac5
+  rule_count: 1025
+  sha256: c97122a80ad4708ff9718f9fc25e64a23c85020a68a7042b11e620bb56841a67
 - path: microsoft/microsoftedge/microsoftedge.yaml
   entity: service
   id: microsoftedge
   display_name: Microsoft Edge
   provider: microsoft
   rule_count: 4
-  sha256: 928edf0d60fe558d409564c96025f55ae2108df465c9bbb79bab826f3730a956
+  sha256: 92d893404f30a86fce275147ed96cfa2cdbbde6e074b7c923859ff502b2f3c14
 - path: microsoft/minecraft/minecraft.yaml
   entity: service
   id: minecraft
   display_name: Minecraft
   provider: microsoft
   rule_count: 6
-  sha256: 31d5e8d6722096a2380d77a83d99d56023e1a28b1192bc527284229316b1269f
+  sha256: 18d14a7885932cea2f08e982fdb1772997f00258b2c12a489738a5163da79799
 - path: microsoft/ms365-excel/ms365-excel.yaml
   entity: service
   id: ms365-excel
   display_name: Excel
   provider: microsoft
   rule_count: 1
-  sha256: 7da101eaa42fe14d1490dbdef92ae49492b736b7f7cd12a204d29550098867c1
+  sha256: f7d21c5c46709858f253677e121a34d4ed473425c77c988f3c8a59d49b325b98
 - path: microsoft/ms365-loop/ms365-loop.yaml
   entity: service
   id: ms365-loop
   display_name: Loop
   provider: microsoft
   rule_count: 1
-  sha256: a81ca1da5e331fc46ca06b4db6f1f8e1919287923ca7905e504c83ae6804a8e6
+  sha256: 3e90162bc728a3c787bed50cf5608d166f50e40da22ea453e863568520833bf6
 - path: microsoft/ms365-mesh/ms365-mesh.yaml
   entity: service
   id: ms365-mesh
   display_name: Mesh
   provider: microsoft
   rule_count: 1
-  sha256: eb43d9f77b513950c70ecc648d5305e2e6f5f404515f8aad1eed9405d786fa6d
+  sha256: 1c6905433108602b6460141fb0b4dc529ef66ca01a95a356d14b6b21f8cfb057
 - path: microsoft/ms365-onenote/ms365-onenote.yaml
   entity: service
   id: ms365-onenote
   display_name: OneNote
   provider: microsoft
   rule_count: 1
-  sha256: 7917770a45235fca24359082b593db4a62eca6302d5d6b2d7337f1df97a521dd
+  sha256: 725b12ca689c1e96dc1804b8c68e5c9775d94a4bf6264b0e18b5e6cc049a6d37
 - path: microsoft/ms365-planner/ms365-planner.yaml
   entity: service
   id: ms365-planner
   display_name: Planner
   provider: microsoft
   rule_count: 1
-  sha256: 8c1eb92bd40ad191fbac4a8475cfbec144e49a088ea85335e617c4a2991a8c70
+  sha256: 40f9260a9c51b218f488c7eada8a9e9d84892eec9169e5562f195fd406c6db2e
 - path: microsoft/ms365-powerpoint/ms365-powerpoint.yaml
   entity: service
   id: ms365-powerpoint
   display_name: PowerPoint
   provider: microsoft
   rule_count: 1
-  sha256: c46119ad43ea12bca50d0fd42064b0157f9d891b233d62d48d7afbd9e5a3ddc5
+  sha256: a7370b447674a280bf52eaa30ebe27d6a154ad7ce438039ea0c4650608a38574
 - path: microsoft/ms365-word/ms365-word.yaml
   entity: service
   id: ms365-word
   display_name: Word
   provider: microsoft
   rule_count: 1
-  sha256: a35deae1b24034da02dfd29af2c997298f8889a5c86d8bf36bb13080604ada2d
+  sha256: 5652eb09d79b885f7ab15dea90e5dbc413035ae872e88de60f530c95cf117223
 - path: microsoft/office/office.yaml
   entity: service
   id: office
   display_name: Microsoft Office
   provider: microsoft
   rule_count: 2
-  sha256: 721f411280e9522135368563fc8452fb11e16f3b042a349eb2dedba18a51afd2
+  sha256: 99daee0d7b6bfb5daaa87b2a793421cd83ac206d7452af99c8baf0b1412657f3
 - path: microsoft/onedrive/onedrive.yaml
   entity: service
   id: onedrive
   display_name: OneDrive
   provider: microsoft
-  rule_count: 18
-  sha256: 7467d9409ecc7c6d5dcbf5183403c0513fdd36a9ab3f474fb0866466ed9916a2
+  rule_count: 13
+  sha256: 0de9a8af9d28b8b9e45820a95053d0dce2b65dd37cf4e5792c81bd62082affb1
 - path: microsoft/outlook/outlook.yaml
   entity: service
   id: outlook
   display_name: Microsoft Outlook
   provider: microsoft
   rule_count: 4
-  sha256: 83ffb5fff7bb40cda548eed428d43d29c1dbaffcd6ca0dbe1c0283f1846d6e5d
+  sha256: 86066de09cf1a926d00f31d05bbdb676f00431823eaa2819c8ec921350869706
 - path: microsoft/powerbi/powerbi.yaml
   entity: service
   id: powerbi
   display_name: Power BI
   provider: microsoft
   rule_count: 2
-  sha256: b3c9d5e7481ae17bdff768f71d381a3ec9f5763a7fa8bf800b1720e8f0541a17
+  sha256: bc51eec99c1a71dc4c704a372b933f7fb6ea8f52b27d7c41eed07abd127f0379
 - path: microsoft/sharepoint/sharepoint.yaml
   entity: service
   id: sharepoint
   display_name: SharePoint
   provider: microsoft
   rule_count: 2
-  sha256: 8ed8b6db4be2201d8ec72aeb6bb2caa852bdfef2a2f139ed75c014390775d1a3
+  sha256: 247e8788170b5203e716ad0fb8723233298ed66aeeba0e1ae448ebb9585e6515
 - path: microsoft/teams/teams.yaml
   entity: service
   id: teams
   display_name: Microsoft Teams
   provider: microsoft
-  rule_count: 5
-  sha256: e8a2505248487fb9d4d7c0f1c49d89ed15590ee9f38730f2e0426ad92fdde369
+  rule_count: 4
+  sha256: 22a912ccc1309f5f5aef8cf5018a49fd41ac08584db7c945f2513ceeb51d016d
 - path: microsoft/xbox/xbox.yaml
   entity: service
   id: xbox
   display_name: Xbox
   provider: microsoft
-  rule_count: 46
-  sha256: fad41b2a010ae68f91b044b468783175c44bf2ed368df83daa75be27f099de40
+  rule_count: 42
+  sha256: 243f37baae106a74e150f2c1319f6407abeb3992a8a1cb3c5111450f3583132c
 - path: migu/migu/migu.yaml
   entity: service
   id: migu
   display_name: 咪咕
   provider: migu
   rule_count: 2
-  sha256: 62abfecdf989eb6b553d14cde6fe2f39f34470f8e4edd543d40c4d67cbaaa159
+  sha256: 739283ae1bc1275751221d773698ff313d7f54a333be507015e1496d6e1b8387
 - path: migu/migu_aggregate/migu_aggregate.yaml
   entity: provider_aggregate
   id: migu_aggregate
   display_name: 咪咕
   provider: migu
   rule_count: 2
-  sha256: 3db9ffddfef7a7d936783b73252eb9c3cfc0ea935bbed514efa261385d4597cf
+  sha256: d14164b8b37749ea3c15a36a43b7541f218ef959a128f2b73e3d3c39a0f25b53
 - path: minimax/minimax/minimax.yaml
   entity: service
   id: minimax
   display_name: MiniMax
   provider: minimax
   rule_count: 2
-  sha256: 6923407e3ab05ef1ff0bfbaa26d22ad5a2f285e9a9d438504d60890d1d5ac41e
+  sha256: fffb44b283fa7f38363179158df922e1adc5aee9c38b9d36ce2593747dd02e1a
 - path: minimax/minimax_aggregate/minimax_aggregate.yaml
   entity: provider_aggregate
   id: minimax_aggregate
   display_name: MiniMax
   provider: minimax
   rule_count: 2
-  sha256: ca6566c7cc499da85273d4e559977ae6da79e866d42147744916a26b4d6da1bc
+  sha256: 70eeddc5c30544a68c1d82e568251dcc1ecc6861c462713c16a5d2a6d5714b00
 - path: mongodb/mongodb/mongodb.yaml
   entity: service
   id: mongodb
   display_name: MongoDB
   provider: mongodb
   rule_count: 2
-  sha256: b07716778aad517ab58c42d617f886d5c1bff96d1859377f2e443c9587b04bd8
+  sha256: c1229ec5c05b9f2862a1b3c4bef846932f25eead6711eaae61593d90a2582908
 - path: mongodb/mongodb_aggregate/mongodb_aggregate.yaml
   entity: provider_aggregate
   id: mongodb_aggregate
   display_name: MongoDB
   provider: mongodb
   rule_count: 2
-  sha256: 0cd71aebb0af0daa625430e3fdae084dea78ce2e6e473212604bcb9e30798b31
+  sha256: 255c86d12d9d2bfb941dd33152caddb7ae68379b22ec55daa9bbe6078d1ae5cb
 - path: moonshot/moonshot/moonshot.yaml
   entity: service
   id: moonshot
   display_name: 月之暗面
   provider: moonshot
   rule_count: 2
-  sha256: f844cd8c9eb2a9bb86b742450b4078c9c8ba0c35ac9153c00c8d3efbc99d49be
+  sha256: 3d53a0268cd2b6f790faad47dea8e17771b75415e2c58cc180dfdbc4c05061a1
 - path: moonshot/moonshot_aggregate/moonshot_aggregate.yaml
   entity: provider_aggregate
   id: moonshot_aggregate
   display_name: 月之暗面
   provider: moonshot
   rule_count: 2
-  sha256: 90a4bd75b82cc2232728cfc7b1b1e657b92a93876c86052c3f4ca59547656581
+  sha256: 5835f65c8815bfcfc665c0a5232dee552c27decb8fea4d78ccc45c7a3b841e8f
 - path: nec/nec/nec.yaml
   entity: service
   id: nec
   display_name: NEC
   provider: nec
   rule_count: 2
-  sha256: a51597a7ae1f961813ee102f21ad73d842093c24100914f104a5638da7dbd882
+  sha256: cebda201bb04f00579db441cc4da8bff54ac98af8b687c8ba38dc5396f92833c
 - path: nec/nec_aggregate/nec_aggregate.yaml
   entity: provider_aggregate
   id: nec_aggregate
   display_name: NEC
   provider: nec
   rule_count: 2
-  sha256: cf8d3e26e5d72a72586fe265446878da7e0d7c86e059befbc6d029be291e5296
+  sha256: b7205c29b95f3fa0b5980abe9653885189259a15c79a2ca4c6037832eb15608f
 - path: netapp/netapp/netapp.yaml
   entity: service
   id: netapp
   display_name: NetApp
   provider: netapp
   rule_count: 2
-  sha256: 03d2c9cfd27f18eefdb7258158a22150b5588f455cf9751e3b55701b0d630f19
+  sha256: b2caf052545f33399bb282610779f0fdd10502af98defd1bb00779c31f3c1c4b
 - path: netapp/netapp_aggregate/netapp_aggregate.yaml
   entity: provider_aggregate
   id: netapp_aggregate
   display_name: NetApp
   provider: netapp
   rule_count: 2
-  sha256: b9e602dd8f1fb668a56370cfaaa7418036f55fda615a1857d28e045b4b220262
+  sha256: 68198fb2ce6accc0604933a7e8b859be226cf80cce1a3a1805a51acf83ae18cc
 - path: netease/netease/netease.yaml
   entity: provider_aggregate
   id: netease
   display_name: NetEase
   provider: netease
   rule_count: 100
-  sha256: 6527a7dddfb545a26c68181744e20c693598a930e413ce7d7d5f8486335d9615
+  sha256: f8c04f60d367bd406b98006beeb5215ca466fbb518a17aae4a47679850674dce
 - path: netease/neteasemail/neteasemail.yaml
   entity: service
   id: neteasemail
   display_name: NetEase Mail
   provider: netease
   rule_count: 3
-  sha256: 746bbe773d51892252edfb1d9dcbfab44eb3be45f8bfd36132a1f26089e79ed5
+  sha256: 363f5e46b347aa29cbe9f5e6993608698a47f9fcc0cc32a2a74f3bbf06aeb186
 - path: netease/neteasemusic/neteasemusic.yaml
   entity: service
   id: neteasemusic
   display_name: NetEase Cloud Music
   provider: netease
   rule_count: 10
-  sha256: 725b919a4a3e2a44c8b0e93c6c2517ba36a096d01c06fe4152eabfc7ed6b7a21
+  sha256: 52f7a8c5637488dc1aba4892a9b5240e7207f63cceb57805edab5922d0c60e1a
 - path: netease/youdao/youdao.yaml
   entity: service
   id: youdao
   display_name: Youdao
   provider: netease
   rule_count: 15
-  sha256: 0644a98f54a8daaa036e484a092137e9fc67b5da85ea4d86557d381c9aece08b
+  sha256: 9feecd4e89edddaf23b0089a4fb7de85805642c0ce097f5cfe9008aca440ac25
 - path: netflix/netflix/netflix.yaml
   entity: service
   id: netflix
   display_name: Netflix
   provider: netflix
-  rule_count: 44
-  sha256: e686f325ac699766d19ac302e24326a5fcba372883a3e95123d9454c63a75427
+  rule_count: 31
+  sha256: f6e3710cd010eab9ce2b79831a85da1f8acb742a36d96435776f4c9f7b7676cb
 - path: netflix/netflix_aggregate/netflix_aggregate.yaml
   entity: provider_aggregate
   id: netflix_aggregate
   display_name: Netflix
   provider: netflix
-  rule_count: 44
-  sha256: c88f8cf7e5b9db608db95f07d8ca538d9999fcd41c62c3d98c089fdda8e5234d
+  rule_count: 31
+  sha256: d720669435b29639f0999d0e5df05a6e6b4e44a6df5011140a4b899aac68f355
 - path: netlify/netlify/netlify.yaml
   entity: service
   id: netlify
   display_name: Netlify
   provider: netlify
   rule_count: 10
-  sha256: b2e670268ff038422f7516297f87d42688599becbd5a06be7e9731dd13df041e
+  sha256: 812fca92507ce2916470414ba81ba94985a10fcb7a13bb88fb8ec46e4a239b44
 - path: netlify/netlify_aggregate/netlify_aggregate.yaml
   entity: provider_aggregate
   id: netlify_aggregate
   display_name: Netlify
   provider: netlify
   rule_count: 10
-  sha256: 02f9464b70ecdf83ada3eb5cb8bf4ea568aabc8f61b2d7aa590e44e90c2cbeb1
+  sha256: 082f300f1542f1fa14a469757bef5a7496d34aa38ad71ab5ad23ead2b40aa88b
 - path: nintendo/nintendo/nintendo.yaml
   entity: service
   id: nintendo
   display_name: Nintendo
   provider: nintendo
-  rule_count: 127
-  sha256: 9aac7598e3274d2f1087f138a6bb24af486109a068e61bfa9cae900fbf0a0e49
+  rule_count: 2
+  sha256: 72c19b88fc37f5f4d8a56da2e2ad2c71c10d4f2b9103a32c28aad6c790dd5e51
 - path: nintendo/nintendo_aggregate/nintendo_aggregate.yaml
   entity: provider_aggregate
   id: nintendo_aggregate
   display_name: Nintendo
   provider: nintendo
-  rule_count: 127
-  sha256: 0df0a0c3e671cb7845713f1704f90fe02c3268a0a748c14c7cf64b55afc49b80
+  rule_count: 2
+  sha256: ce64daa159ae7e29e8894ba7b76f4224effce82bb9b0b4fa8d2d5230ce052e14
 - path: nokia/nokia/nokia.yaml
   entity: service
   id: nokia
   display_name: Nokia
   provider: nokia
   rule_count: 2
-  sha256: 1a847722139fb8c065c0a61fa92e294f27e68ba4d1992c7b1031f0af619b7aab
+  sha256: 43616abfc1643438ec8663c92210479f5a0fefe49616a1f371131f48198c7e34
 - path: nokia/nokia_aggregate/nokia_aggregate.yaml
   entity: provider_aggregate
   id: nokia_aggregate
   display_name: Nokia
   provider: nokia
   rule_count: 2
-  sha256: d896e53bd1a9623b41035e2acb08cdb77d585d64f629a5efbd270155641baf84
+  sha256: 42896f35ddda58cde25b13b738864927cb36c0ce56d5b0130c44a5dc1f3fe2ac
 - path: notion/notion/notion.yaml
   entity: service
   id: notion
   display_name: Notion
   provider: notion
   rule_count: 8
-  sha256: 2d066b2f816162daff598775f2e568ff25069a17d05c2fe54223adc600add603
+  sha256: 8da9ea538a2a4976bfd9f3ae629a85ae6263c47a827c538524b6ca32d7677f0c
 - path: notion/notion_aggregate/notion_aggregate.yaml
   entity: provider_aggregate
   id: notion_aggregate
   display_name: Notion
   provider: notion
   rule_count: 8
-  sha256: 61e450b3a5e2f9028acaf9218c17102b50f90917a0d5f7767126922a39ae3091
+  sha256: 6f87abbda677f39621f5c9fc10f87dd22c2e29f525a85cee1dcc18929c32d60c
 - path: nvidia/nvidia/nvidia.yaml
   entity: service
   id: nvidia
   display_name: NVIDIA
   provider: nvidia
   rule_count: 3
-  sha256: fd15ea0e014630eb2957a375576fcedc241b9cdd27287cfe0d4d6ceadc41a4e7
+  sha256: e3d664a56c2347bbd51e14507fdd3541a26e2d46ad5f6d79906232627a3ae542
 - path: nvidia/nvidia_aggregate/nvidia_aggregate.yaml
   entity: provider_aggregate
   id: nvidia_aggregate
   display_name: NVIDIA
   provider: nvidia
   rule_count: 3
-  sha256: 83bfec4cd7635b33d8c0f549dcd84e03037f76e8fbac38a5f0758c806d1c52d5
+  sha256: 7f9b43244f4881490b3fdac1e8282ea0ce5038b0f063d913ee8c548bde34bbb5
 - path: okta/okta/okta.yaml
   entity: service
   id: okta
   display_name: Okta
   provider: okta
   rule_count: 2
-  sha256: 9150bc729cf2af91afbe623f3bd59cb34a64958f54cdecbe0a3b44f6ef5c4d17
+  sha256: 53ce81e0ea651cf79215b1917ccb5be2d83af507a68bd4e1bf143b64807e7a89
 - path: okta/okta_aggregate/okta_aggregate.yaml
   entity: provider_aggregate
   id: okta_aggregate
   display_name: Okta
   provider: okta
   rule_count: 2
-  sha256: 9143c9e4ac9da6d5fc8ccb0dbd899bea2b31fc66288cc7bdf3139a2a5cb374f7
+  sha256: cb0b040f8ddfd70d5103e3e6ac1b2ec2e09754a22846d2219b73963216d9e5ee
 - path: okx/okx/okx.yaml
   entity: service
   id: okx
   display_name: OKX
   provider: okx
   rule_count: 3
-  sha256: 50b887b7f336ad759ce4b7accc19dff8113248915f571efa185bbe2b1cdb16c9
+  sha256: 93ea5edc4ed94734a986a69c03a09d7da9da5922617b3e663e50822c7eb27ced
 - path: okx/okx_aggregate/okx_aggregate.yaml
   entity: provider_aggregate
   id: okx_aggregate
   display_name: OKX
   provider: okx
   rule_count: 3
-  sha256: ec04b68feb44ce9426c66d7c7ba1d5e7d181ae1ef4bc03c30591937ed782ef6e
+  sha256: 6132685284c2fcf53259b46d82f992dade22010b38273e7c7be746445e6b639d
 - path: ookla/ookla_aggregate/ookla_aggregate.yaml
   entity: provider_aggregate
   id: ookla_aggregate
   display_name: Ookla
   provider: ookla
   rule_count: 8
-  sha256: a3e066e4ddecab0d9027ef3b4ffd10ee269021a0facbb2c50b2b4b07c7232fdb
+  sha256: 5704aedb217a2cb5f95bb69edea4b451ced3c604b027c992787d47fd5fddbdca
 - path: ookla/speedtest/speedtest.yaml
   entity: service
   id: speedtest
   display_name: Speedtest
   provider: ookla
   rule_count: 8
-  sha256: 183dd7e98be82b22674188fbd8827c90fb436b26908bbfe4eb67fd9e003f76b8
+  sha256: 722458ccfb8c240d3bc377938ca50a3c05d650689b854b64f53132733e5c7a9e
 - path: openai/chatgpt/chatgpt.yaml
   entity: service
   id: chatgpt
   display_name: ChatGPT
   provider: openai
   rule_count: 1
-  sha256: bd8aff19d35b6cbf8eb101e0c36d86ee86a298fa9e1e6a36666b5651fbe4c60e
+  sha256: 557aa5804e03542b261dc9d9464b2b8270f4d0117ccb0dba577a2983c2b4a153
 - path: openai/openai-api/openai-api.yaml
   entity: service
   id: openai-api
   display_name: OpenAI API
   provider: openai
   rule_count: 1
-  sha256: 8f354c0d4341f8378604a31008f9a7a140783f69b91973c7d46bbb711618f1fd
+  sha256: 784d7bc5d5eca8af535b4066d6d31ab01d27ac12e6deca856ad53e10da67abf7
 - path: openai/openai-platform/openai-platform.yaml
   entity: service
   id: openai-platform
   display_name: OpenAI Platform
   provider: openai
   rule_count: 1
-  sha256: 5402908c27e0b53463970d5d6b9a775c5c629d0ce9f17a647080c6296800cede
+  sha256: b7e7ff68396d0b78f0509338f11f5594c94dc6cc92f7cc6a950eacdd7964f185
 - path: openai/openai/openai.yaml
   entity: service
   id: openai
   display_name: OpenAI
   provider: openai
-  rule_count: 56
-  sha256: 8deed256162134593af2d5ccd21cf1ab20f792303557f9554e8e6a0bceb30d05
+  rule_count: 31
+  sha256: 09cea8d58c7fbc0f0595c63ad9c02bf282762dc08b521a213beedff420848a76
 - path: openai/openai_aggregate/openai_aggregate.yaml
   entity: provider_aggregate
   id: openai_aggregate
   display_name: OpenAI
   provider: openai
-  rule_count: 58
-  sha256: ee06315bd11b0cc71dd356c9f0572bc33a0c708321d4a56ddde3779ddde377f0
+  rule_count: 33
+  sha256: 2e00f2506bdf3f3aac0688df93b27eb8b2313cb561cc0f01f7fbeb9ef3c2f28f
 - path: oppo/oppo/oppo.yaml
   entity: service
   id: oppo
   display_name: OPPO
   provider: oppo
   rule_count: 56
-  sha256: 6eccc33a34d5c87ac8905eaa5db2eb459ab1cfceb8f81540c749cb8461b76a1a
+  sha256: b63abd028f47de50071b4763b9e7a4a48ba8ae040c9c9f20367caa48648b4cb4
 - path: oppo/oppo_aggregate/oppo_aggregate.yaml
   entity: provider_aggregate
   id: oppo_aggregate
   display_name: OPPO
   provider: oppo
   rule_count: 56
-  sha256: f047e2c1d58ea96c13442b5357b970174966900ca1165a92bfe440a9140f6b9d
+  sha256: 17f013b42648223ac794cd43b67c656f96883a1825485146c6f4146a2c4330a1
 - path: oracle/oracle/oracle.yaml
   entity: service
   id: oracle
   display_name: Oracle
   provider: oracle
   rule_count: 27
-  sha256: 6893953091d60df5f0caa2a565f4e4c88c1db1dce6f272a44bb10c1f5d2c5c83
+  sha256: 63bf9b657041162e7b155ed9fb9e4b12b3dbc2c58601018db0a1b3ab11418b4b
 - path: oracle/oracle_aggregate/oracle_aggregate.yaml
   entity: provider_aggregate
   id: oracle_aggregate
   display_name: Oracle
   provider: oracle
   rule_count: 27
-  sha256: 4f28ed2bba30bba35d1f3fd76c22b472135fc32ce50513d2418c1841e576ae32
+  sha256: 6d024a306b9c90f07d3c27ee404460b185d8a6222503036e2ea1dffe4fd176ff
 - path: palantir/palantir/palantir.yaml
   entity: service
   id: palantir
   display_name: Palantir
   provider: palantir
   rule_count: 2
-  sha256: 4ca92b7341fa7905abb418e718a770c385eb2b2fdd23878d7ad25236f36034a8
+  sha256: e432750c12bc766efd88b5a1dda1bad5b15934388f5d09ddfcfbacbaeae1d41e
 - path: palantir/palantir_aggregate/palantir_aggregate.yaml
   entity: provider_aggregate
   id: palantir_aggregate
   display_name: Palantir
   provider: palantir
   rule_count: 2
-  sha256: 2bbd29bc6233e765027fca6dee669ce18e0894f6adb1cee88a9b0f70abbf4b69
+  sha256: e132e11fe3b3145070cd2a968d148a02e83bb305e577563509fe3aaee68e5c11
 - path: paloalto/paloalto/paloalto.yaml
   entity: service
   id: paloalto
   display_name: Palo Alto Networks
   provider: paloalto
   rule_count: 2
-  sha256: 96962cdce51570fe8c963bb73199d22a3da82081ce0c1e081d06dd9dd7d60095
+  sha256: 440456db128dbf6ceb24040c903574147f58d379456701732dc8492dee0bb304
 - path: paloalto/paloalto_aggregate/paloalto_aggregate.yaml
   entity: provider_aggregate
   id: paloalto_aggregate
   display_name: Palo Alto Networks
   provider: paloalto
   rule_count: 2
-  sha256: 7ec2eeceb36c21303e671c40423a5a72fa46dabeb6067adeef42fcf13b995c9d
+  sha256: dfec055c0956d35d5337e8e7d0974499cadea92ef9f707e45ca6a7343cd6ae8f
 - path: panasonic/panasonic/panasonic.yaml
   entity: service
   id: panasonic
   display_name: Panasonic
   provider: panasonic
   rule_count: 2
-  sha256: 9f1516cfe971564c43c0e2ed10ae0ae0e4b34a08b47b108c3403becd4f1264bf
+  sha256: e20e7ea9866d9a1bab2af8137c6b3aa93308dc431ad064b6331f3f183ffc4f09
 - path: panasonic/panasonic_aggregate/panasonic_aggregate.yaml
   entity: provider_aggregate
   id: panasonic_aggregate
   display_name: Panasonic
   provider: panasonic
   rule_count: 2
-  sha256: 988e1c32279d23f90a4925a5fab956751074abb30d05d2295873ae2325666689
+  sha256: 5019bb646ff4705edc3acdcbbdb3ab45cd4ae7b5d3f185adcf58978be38ebc4d
 - path: paypal/paypal/paypal.yaml
   entity: service
   id: paypal
   display_name: PayPal
   provider: paypal
   rule_count: 247
-  sha256: 7ab503f2adbd72431ab2fa9277e35a714d8992726beab2e8470eabd93697356d
+  sha256: 3eafa0b01616c3cc9c47362a7f01ccaf07ac78c1ae1e7b900d61337dc1f6b078
 - path: paypal/paypal_aggregate/paypal_aggregate.yaml
   entity: provider_aggregate
   id: paypal_aggregate
   display_name: PayPal
   provider: paypal
   rule_count: 247
-  sha256: 8df354398cf252d58eefa30ba1dded164c7d022fc10831f6fc9c0eea85b2a907
+  sha256: 5d68d5c246bb062dfebacf794e97908e377aa2e994dd8744cae997164a138293
 - path: paypal/venmo/venmo.yaml
   entity: service
   id: venmo
   display_name: Venmo
   provider: paypal
   rule_count: 1
-  sha256: 491a8a0bd5560c765aeab7e9a5757d1be8fa39551c14ec3ee4dcbafbd60f1dc2
+  sha256: c9297c4ce3d8c3dcd22d57272efa4b97707b2d1c5120108246a4192d46363945
 - path: perfectworld/perfectworld/perfectworld.yaml
   entity: service
   id: perfectworld
   display_name: 完美世界
   provider: perfectworld
   rule_count: 2
-  sha256: 048b36d21052ce9883442a1a644a19e5025e1870d343f4dd1351658164f2a874
+  sha256: d1422f2e6db4f409a13208642ee3210ccb78dc9ac34a9ee81f4259e7b20828b0
 - path: perfectworld/perfectworld_aggregate/perfectworld_aggregate.yaml
   entity: provider_aggregate
   id: perfectworld_aggregate
   display_name: 完美世界
   provider: perfectworld
   rule_count: 2
-  sha256: b19ef396b3404b11eaa907de22a5a48c3ce03341a32a59f33f0627308245f67d
+  sha256: 757de483ea724bae85e2bf9d52e26be25fdace60c2956c887c7824f16b6b321a
 - path: perplexity/perplexity/perplexity.yaml
   entity: service
   id: perplexity
   display_name: Perplexity
   provider: perplexity
-  rule_count: 7
-  sha256: 989448c076bc88fbb4e4f8b497f7699fc26bacd36321caa442b2efc53eb75637
+  rule_count: 4
+  sha256: c2715c7352fb16a8431c688ad8dcb4a4028101d7c294b04b808dc50718b2de4e
 - path: perplexity/perplexity_aggregate/perplexity_aggregate.yaml
   entity: provider_aggregate
   id: perplexity_aggregate
   display_name: Perplexity
   provider: perplexity
-  rule_count: 7
-  sha256: 35a6f8610d19d0b1ff5c249481f86686ab9b3ea1c67406641a600682a88f43b9
+  rule_count: 4
+  sha256: b38b6932a569941812c9dcb35202e7a474d5e89f533a60154bcb65fa69f908d7
 - path: pinduoduo/pinduoduo/pinduoduo.yaml
   entity: service
   id: pinduoduo
   display_name: Pinduoduo
   provider: pinduoduo
   rule_count: 3
-  sha256: b102b96618cb2588020874db6f72065da5cfc8de9d3f66f5aef5c8b0f35b27e9
+  sha256: 6495da18cc06a248eedb64cc3c9e088349f39c51c7787abfa059856a3c6806e3
 - path: pinduoduo/pinduoduo_aggregate/pinduoduo_aggregate.yaml
   entity: provider_aggregate
   id: pinduoduo_aggregate
   display_name: Pinduoduo
   provider: pinduoduo
   rule_count: 3
-  sha256: 284fba30566353c485843bed241bd595e38834113a65ccc97257514bec123f92
+  sha256: 2da8c7c3ef3bf035e862b44bb73d974be805a311515ad925260685c72e6261e3
 - path: pingan/pingan/pingan.yaml
   entity: service
   id: pingan
   display_name: 平安科技
   provider: pingan
-  rule_count: 28
-  sha256: dfd48adb5c9523f710647517eee59f24ae226a24427d3996f6ebde0b3356c7b4
+  rule_count: 2
+  sha256: 94dae25f1679bffe64b7db2a5c3206ff37d873292eaabaa336baa221d1f16837
 - path: pingan/pingan_aggregate/pingan_aggregate.yaml
   entity: provider_aggregate
   id: pingan_aggregate
   display_name: Ping An
   provider: pingan
-  rule_count: 28
-  sha256: 4d299335b8ca95be93fd053c212a82d2e793f7d66911b0d94c0c57b982473d70
+  rule_count: 2
+  sha256: d3277c303255120c37b4784066ec07da0e5f1b23bb6aa339d1c936f758900bde
 - path: pinterest/pinterest/pinterest.yaml
   entity: service
   id: pinterest
   display_name: Pinterest
   provider: pinterest
   rule_count: 23
-  sha256: 0ae10b41cf71e9f1afe8dfa14c2602afd078061c67e551242a8dac5105cf0f43
+  sha256: 91fc9081499c2d0235fbb48cbdca0546014130d1f9df330cf2bc2a2c7ad6c0fc
 - path: pinterest/pinterest_aggregate/pinterest_aggregate.yaml
   entity: provider_aggregate
   id: pinterest_aggregate
   display_name: Pinterest
   provider: pinterest
   rule_count: 23
-  sha256: 8ed4c6709d76d0f35466a78074a9f44632ba9b055328fc2c26cc4a77c7612b17
+  sha256: 3a06cf51cd46227e6ea62c00a44a020238c2248ebd7a53cc1931c445f398eaf6
 - path: playstation/playstation/playstation.yaml
   entity: service
   id: playstation
   display_name: PlayStation
   provider: playstation
   rule_count: 4
-  sha256: f6c48f53e6283b075d258db68a7040dd0e5d5f0facf66d3507e5e47a0b73666a
+  sha256: af4215b5e2cb12d9da9c73e423bb7f73b449808520795b022329c8cea8b5e601
 - path: playstation/playstation_aggregate/playstation_aggregate.yaml
   entity: provider_aggregate
   id: playstation_aggregate
   display_name: PlayStation
   provider: playstation
   rule_count: 4
-  sha256: e2623eaf4f279a18c4d5e25f0736075f6561030d27995ebc55c53306c9aaaad6
+  sha256: e435d2cdb39e9072c0e83573b1ff4c4fd26ccee24598de23587feb60afa11361
 - path: pptv/pptv/pptv.yaml
   entity: service
   id: pptv
   display_name: PPTV
   provider: pptv
   rule_count: 19
-  sha256: d49816adc4eadda90900c71d8c37aa3ea73e93c5148c46590bb29f99c3000cb4
+  sha256: 71c5cb14e04f5bd820b60ef8f4e2a07241b7f233cc2185f8d24d2135ea9ee074
 - path: pptv/pptv_aggregate/pptv_aggregate.yaml
   entity: provider_aggregate
   id: pptv_aggregate
   display_name: PPTV
   provider: pptv
   rule_count: 19
-  sha256: 3806f78de8e9f13612ea9f153a4d6bbd3094bec23e22dba220fa33a7974805f4
+  sha256: e716a392471435210d50b5a04122c322a349d7b4eed33eb97250ba585351d7b9
 - path: psbc/psbc/psbc.yaml
   entity: service
   id: psbc
   display_name: Postal Savings Bank of China
   provider: psbc
   rule_count: 3
-  sha256: 418bd8064101b300ebdc97c1e453023bd9eafb8c6d301e699fffbbddacf4059b
+  sha256: c46f1fad080b5808d0bc141f0d4282f65f505da13216fff9d67299c166963e88
 - path: psbc/psbc_aggregate/psbc_aggregate.yaml
   entity: provider_aggregate
   id: psbc_aggregate
   display_name: Postal Savings Bank of China
   provider: psbc
   rule_count: 3
-  sha256: 8d64bb2a0fce5b8d789e965fdcbce3b9e453f02025b8bd8d7670e7f962fd80ec
+  sha256: d56e0034604cc048302b01b4cc99eef827a422eb37b526e7dadca3df65cf3aa8
 - path: qihoo360/qihoo360/qihoo360.yaml
   entity: service
   id: qihoo360
   display_name: '360'
   provider: qihoo360
   rule_count: 2
-  sha256: 42acdf7e072742a33b96fa3fecef841c111e389c1b2e6a45a4ada1b35b08238c
+  sha256: 7dd91ed11d950d58a3a39967d2531e2bb05e575b39eec074ea8f7085ac4a8b03
 - path: qihoo360/qihoo360_aggregate/qihoo360_aggregate.yaml
   entity: provider_aggregate
   id: qihoo360_aggregate
   display_name: '360'
   provider: qihoo360
   rule_count: 2
-  sha256: 8f357477eddfba7f3be3993ddd07396f16bb5b10a7e148726cd0084432225644
+  sha256: b1439996de305ce93f04b5430d8e314fa7761d836b5a658c9418449ea7b33ab2
 - path: qualcomm/qualcomm/qualcomm.yaml
   entity: service
   id: qualcomm
   display_name: Qualcomm
   provider: qualcomm
   rule_count: 2
-  sha256: 0f40bde99ad0d781b4893b1051ec7cc32e61ced9935f0d8747f8bcc33b308832
+  sha256: 7561eaf14724aa185eb3c334bf67f6557adacfcb93d5ae2d767f0fa281dde53a
 - path: qualcomm/qualcomm_aggregate/qualcomm_aggregate.yaml
   entity: provider_aggregate
   id: qualcomm_aggregate
   display_name: Qualcomm
   provider: qualcomm
   rule_count: 2
-  sha256: 2d0b92b2ffdd2e73c65740e85468661807d95db4c5799545f1549cacf921ac79
+  sha256: b6c5b9a0d4721e6c89bf801d9f4b3bee54658a32a4a9798a1fdcfe9974c270ab
 - path: qunar/qunar/qunar.yaml
   entity: service
   id: qunar
   display_name: 去哪儿
   provider: qunar
   rule_count: 2
-  sha256: 53eeaa09dd3de7f53c6bb39d94e1dbd04b092207a2f8ed686236d8aa19e6fc9c
+  sha256: ffa0f9afe976d5bce1e566a857782bac47dbea48c1e4f21a6085048a6f23e9f3
 - path: qunar/qunar_aggregate/qunar_aggregate.yaml
   entity: provider_aggregate
   id: qunar_aggregate
   display_name: 去哪儿
   provider: qunar
   rule_count: 2
-  sha256: 83028f16453883dc898720cfcce274739c0097c9ac3db15dcb297bc6fb370153
+  sha256: bd481f578fddd17ce193d3ad19794a2e4351058b2098954434c6d3252bcc83a1
 - path: rakuten/rakuten/rakuten.yaml
   entity: service
   id: rakuten
   display_name: Rakuten
   provider: rakuten
   rule_count: 2
-  sha256: 086961c50c97a3095a1e546433533b32d186bb165926dfd704d515e9876b0509
+  sha256: 0ffc68564b67dac8434a7bffc8e347642cd855d5e53ecaae6479df3b9fad3d1a
 - path: rakuten/rakuten_aggregate/rakuten_aggregate.yaml
   entity: provider_aggregate
   id: rakuten_aggregate
   display_name: Rakuten
   provider: rakuten
   rule_count: 2
-  sha256: 26262cbd413680757cab2ab806a515eabce97658999d5ac5067f0a72ccf349d1
+  sha256: 2475a0fe151fc8602de4164affb3ef798813a742a3db3a7cb29dbec648d3bc80
 - path: reddit/reddit/reddit.yaml
   entity: service
   id: reddit
   display_name: Reddit
   provider: reddit
   rule_count: 15
-  sha256: afd31107f96818be84cdde385633cf380d7247801ddb48ae3362d89a74be47ff
+  sha256: 02d8a4e04888419afed67134404f6eada118d92c80429e2c5eb14b8794260521
 - path: reddit/reddit_aggregate/reddit_aggregate.yaml
   entity: provider_aggregate
   id: reddit_aggregate
   display_name: Reddit
   provider: reddit
   rule_count: 15
-  sha256: 551d158a360073c2cdd9d6532b4c6c54e8cb3659e3065f06c95635fff4106772
+  sha256: 2f5fb3dd3bab05b8c2104081a9f3549a12a5d29f68969fd0443c6d17dd98af68
 - path: riotgames/riotgames/riotgames.yaml
   entity: service
   id: riotgames
   display_name: Riot Games
   provider: riotgames
   rule_count: 55
-  sha256: 8336f848cee206e2bcfd7b3fe03ef8766177bbff892ffa5f634225f5999eb16a
+  sha256: f33fb149d90444106282ad1bd14a2978b5b27275a4aa5444fd97666ad1055794
 - path: riotgames/riotgames_aggregate/riotgames_aggregate.yaml
   entity: provider_aggregate
   id: riotgames_aggregate
   display_name: Riot Games
   provider: riotgames
   rule_count: 55
-  sha256: 7c5f0094eec5c820183773d3be3eb144914d32d42f1991b96fe4316ac3db0141
+  sha256: ac7b0a8a1d46f91a98e9f65a6503a1ac9e8d509f6f27663b019a55b41843dd7f
 - path: roblox/roblox/roblox.yaml
   entity: service
   id: roblox
   display_name: Roblox
   provider: roblox
-  rule_count: 52
-  sha256: 96eb7e9812c926d33b2122167057dc691c3b00129f6dfe52a1107b40e2c8c6f4
+  rule_count: 47
+  sha256: 6a5802f3400d4d55bdb46f1f28625c75ff3641033c0bec04775da2d5f5a009bd
 - path: roblox/roblox_aggregate/roblox_aggregate.yaml
   entity: provider_aggregate
   id: roblox_aggregate
   display_name: Roblox
   provider: roblox
-  rule_count: 52
-  sha256: 19215e0998e930ec36c4a386c885d9567f6d46edbde9696712a1141ccfe4bfef
+  rule_count: 47
+  sha256: 17ac57201c196e4a276036436a1e3f9bc0d66069d6849b3c3cacdd223dcb68e9
 - path: roborock/roborock/roborock.yaml
   entity: service
   id: roborock
   display_name: 石头科技
   provider: roborock
   rule_count: 2
-  sha256: 760b5fcf8d3debb55249d38c8018d7903ae3a25804cca6e16df99b14d2b3c67f
+  sha256: b88b18f1decd8bb31acdbd4451aa28af7d1f7d8620413db89890639aeffb6085
 - path: roborock/roborock_aggregate/roborock_aggregate.yaml
   entity: provider_aggregate
   id: roborock_aggregate
   display_name: 石头科技
   provider: roborock
   rule_count: 2
-  sha256: 27531e7e63d6bd516f8f7ac93d7294f1e93e359a84a0cc3b3f81c237a36d293c
+  sha256: 6645e92e113dd583233d60997cce701942f5f80d6b019859b09a2fc2719f622f
 - path: rockstar/rockstar/rockstar.yaml
   entity: service
   id: rockstar
   display_name: Rockstar Games
   provider: rockstar
   rule_count: 5
-  sha256: 17167a489eb20831d483c598da39d9dc708dd281431d3122faeffb01a1a3b835
+  sha256: 5a1a8e79f34403df8fe0e53774b26a2848fcff4a4a727f36ef1b07feecff0004
 - path: rockstar/rockstar_aggregate/rockstar_aggregate.yaml
   entity: provider_aggregate
   id: rockstar_aggregate
   display_name: Rockstar Games
   provider: rockstar
   rule_count: 5
-  sha256: f8c2755cd1c2b5ba3564ce36c191a9dad4e3435e067ffe4108b441a91045c453
+  sha256: 1f08c39f7616d7d431bd3994921cf717c4f754dac424e995389dc877dcdfb037
 - path: salesforce/heroku/heroku.yaml
   entity: service
   id: heroku
   display_name: Heroku
   provider: salesforce
   rule_count: 12
-  sha256: 789e7ac32d33b2b2769e558c1caebb5b3281d8db651b90674f0c8d8b6f62a9d8
+  sha256: 904cd2239cc3ed7b604ab646090827d2c8c44ca85047b08035cb0565c91b0136
 - path: salesforce/salesforce/salesforce.yaml
   entity: service
   id: salesforce
   display_name: Salesforce
   provider: salesforce
   rule_count: 2
-  sha256: a4ff4ee821c6b38333bbd7f10d506f3b50c368bcced44c5a425827045ae7a10a
+  sha256: e2c7c55bfc87a370a0bd10f4284d8f34fd55f7069ad6116a016d527e5b8a78ea
 - path: salesforce/salesforce_aggregate/salesforce_aggregate.yaml
   entity: provider_aggregate
   id: salesforce_aggregate
   display_name: Salesforce
   provider: salesforce
   rule_count: 25
-  sha256: 3c9f9f4118c5ebb1bc46822b9d3cee40719cd30afc322411ea0164185204d50f
+  sha256: 3d812cf378a0b1e38d524eff532adaab585a5a619ab5d746f8404ead1e6c85dc
 - path: salesforce/slack/slack.yaml
   entity: service
   id: slack
   display_name: Slack
   provider: salesforce
   rule_count: 11
-  sha256: 2c804c44fe2564e59a9a89a8262984d912c7377b4b77f7cb75e3073c243566c4
+  sha256: 1a7795352f10847e91b4c6b95dba61c1b91e89531f51e9e7dfd45a9fc42f332f
 - path: samsung/samsung/samsung.yaml
   entity: service
   id: samsung
   display_name: Samsung
   provider: samsung
   rule_count: 2
-  sha256: 870f87501a76b12492e033a3f792e2504fd6a4409c735be835b1005e92d7f3f5
+  sha256: 16b2dabe9c76f67f811685aee2d1da7ccbb4b63f238cb68436ae2c5b8a6303be
 - path: samsung/samsung_aggregate/samsung_aggregate.yaml
   entity: provider_aggregate
   id: samsung_aggregate
   display_name: Samsung
   provider: samsung
   rule_count: 2
-  sha256: aac9fef3546b857ca6a0cecbed1432f3a39ddea78fbc69e0f316fd58cc15f5b8
+  sha256: 06fd15151e24c1cd1e3c4e0aa52d53b52d07f671681095863f4b14b857f21a31
 - path: sangfor/sangfor/sangfor.yaml
   entity: service
   id: sangfor
   display_name: 深信服
   provider: sangfor
   rule_count: 2
-  sha256: 9746e46478132fd8769cad4d44e7aec3dbbf0f6e0529c77bb797a56e623dda41
+  sha256: 07717d5f018744c0abf1517e6e7eb96086f77c2cbd29c9486819fdc8a3f3cd38
 - path: sangfor/sangfor_aggregate/sangfor_aggregate.yaml
   entity: provider_aggregate
   id: sangfor_aggregate
   display_name: 深信服
   provider: sangfor
   rule_count: 2
-  sha256: 0838e74401fe940673bc1fb43026a30fd850d32460d5e90183375833faa9a0e4
+  sha256: 5b0669a90a751d6ab3c5e4e064932171777d13fa1655506f2c05a7bcc49e89b7
 - path: sap/sap/sap.yaml
   entity: service
   id: sap
   display_name: SAP
   provider: sap
   rule_count: 2
-  sha256: db691f23d6a308d0da3a03df0006bf11a8bf670f625e33dad0604e21ab96a0d1
+  sha256: 6188774324502ce8366d2e542da5a1558b094ecffbc00734a095d220ed17544c
 - path: sap/sap_aggregate/sap_aggregate.yaml
   entity: provider_aggregate
   id: sap_aggregate
   display_name: SAP
   provider: sap
   rule_count: 2
-  sha256: e7721501f9d7912cbc4771b3068fc0ce0c5ecb414825410d7a647f298555dc9d
+  sha256: 0fa4a0012bf10e21cddb01179c8cf0a4ea5fc18028902ed0f1428cfedcfba9e0
 - path: schneider/schneider/schneider.yaml
   entity: service
   id: schneider
   display_name: Schneider Electric
   provider: schneider
   rule_count: 2
-  sha256: 2d7c00d512d6a1f17e1f05af47b5b54d83c6ca7dc4edd5442468d794f3a53326
+  sha256: 5caa0a8384c8370d3c2214acf9b907d810bb91ae9cbb146277cfa9b92187c6af
 - path: schneider/schneider_aggregate/schneider_aggregate.yaml
   entity: provider_aggregate
   id: schneider_aggregate
   display_name: Schneider Electric
   provider: schneider
   rule_count: 2
-  sha256: 25c77a8cc471bce566e684fb38ec2a51df5967471f87e0a17efe8315ee86e13d
+  sha256: ed90eaf6645c727382dc1211b80f06f4c695a3bc45c7c920870e66131105f40a
 - path: sensetime/sensetime/sensetime.yaml
   entity: service
   id: sensetime
   display_name: 商汤科技
   provider: sensetime
   rule_count: 2
-  sha256: c4f1481d0db2c2f728c9d48711660498610e5c2a54cc500b483cd412c4848770
+  sha256: bfcc8d17a58ca1a4161deea9dd46b08561db4aa332ebdc9567044b7a4d021b80
 - path: sensetime/sensetime_aggregate/sensetime_aggregate.yaml
   entity: provider_aggregate
   id: sensetime_aggregate
   display_name: 商汤科技
   provider: sensetime
   rule_count: 2
-  sha256: 68530dcc9e04a7c36939018a5af5011199a6f60784ea2fd406cdf4148517b4cd
+  sha256: 928d6301fa129fdf4b949ac8e6db0b3d20eb54b84343056344369670f431e82e
 - path: servicenow/servicenow/servicenow.yaml
   entity: service
   id: servicenow
   display_name: ServiceNow
   provider: servicenow
   rule_count: 2
-  sha256: 4620b86c7b1bf808bc2c7a5c8a2f119cdb294837af3653b1c4f17015f228cf94
+  sha256: 331be5ccc20809caeeb4f4a4b34d25e55f0c49643781ea4fe902fe0913a0de3e
 - path: servicenow/servicenow_aggregate/servicenow_aggregate.yaml
   entity: provider_aggregate
   id: servicenow_aggregate
   display_name: ServiceNow
   provider: servicenow
   rule_count: 2
-  sha256: e05879780ae72d482764d054da93a060d3cfd288feeb0706b446e1c30711aff9
+  sha256: 085428b77d2ecf0f343d28f67f6a8e6daf8029ab6a61be65ad92f52a64a68d2e
 - path: sfexpress/sfexpress/sfexpress.yaml
   entity: service
   id: sfexpress
   display_name: 顺丰
   provider: sfexpress
   rule_count: 2
-  sha256: bd6d01cdd162693900efb5e7f7404602e85b6a1e3dfee9c6e126ec5cc77503ce
+  sha256: f719b57c9122cdab28d878b16e54852a8af8152d65fa136d1aaf596ce3b2f499
 - path: sfexpress/sfexpress_aggregate/sfexpress_aggregate.yaml
   entity: provider_aggregate
   id: sfexpress_aggregate
   display_name: 顺丰
   provider: sfexpress
   rule_count: 2
-  sha256: 9b505d8a02ee5cd79c46f05e70d226f983a79f488c11b0bdc1855ab53c121dd3
+  sha256: 80f7fac56c7f34580904222b9d5ff28ef8aa1a0db50e31396cc263fa6556fb1c
 - path: shiji/shiji/shiji.yaml
   entity: service
   id: shiji
   display_name: 世纪华通
   provider: shiji
   rule_count: 2
-  sha256: e2327ed7c63d139ba894393363b8836cf7e4229fd7c0b8b45048f60c12a6b40b
+  sha256: fcd33da73ab2ab00ea507f6ec4a55a92db46d272c583bc56e040238caa354537
 - path: shiji/shiji_aggregate/shiji_aggregate.yaml
   entity: provider_aggregate
   id: shiji_aggregate
   display_name: 世纪华通
   provider: shiji
   rule_count: 2
-  sha256: fcc6cdb2f2484d1e41dfc5a6baf93439d7ba4bc8066d93743a7acf58a468cc26
+  sha256: 0d78f3abad521345c477ebebcaa03d883b2e81c5c42fa8ac521414bff0315853
 - path: shimo/shimo/shimo.yaml
   entity: service
   id: shimo
   display_name: 石墨文档
   provider: shimo
   rule_count: 1
-  sha256: e761ba3e39fc128719f808305ed414011b4701cae09a08d05267319ced00eeb4
+  sha256: 671a11fbf7e08ccee836fd0846f1e68259bd88ed07a798ce5aef4cf615d4e975
 - path: shimo/shimo_aggregate/shimo_aggregate.yaml
   entity: provider_aggregate
   id: shimo_aggregate
   display_name: 石墨文档
   provider: shimo
   rule_count: 1
-  sha256: 01cca576212ca7e5dbb4c4cd6ebf6894be4a3c99e059f9d0507825dd176d3c58
+  sha256: f3fdd732393d12d01b588dc9d26dbb78ec5bcc0dccae4290953f330501a56e6e
 - path: shopee/shopee/shopee.yaml
   entity: service
   id: shopee
   display_name: Shopee
   provider: shopee
   rule_count: 2
-  sha256: 6073bf82d8354964c0277ee75f8d1abd06c6ecbbde6d1fa29173fcc65a8936c7
+  sha256: 41ec355156c8f2eb115c4a7ebd55f4776861207989ddef8b2a23fea69d9ffaa7
 - path: shopee/shopee_aggregate/shopee_aggregate.yaml
   entity: provider_aggregate
   id: shopee_aggregate
   display_name: Shopee
   provider: shopee
   rule_count: 2
-  sha256: 7c37d0ce56ca51e8f060711778203e79446ddb290044755e3a2c9743decd1a93
+  sha256: 8e8e10d352db9bbf7dc58a2326a68d68b658c8b4ec4ebc90cc424eb6349fc988
 - path: shopify/shopify/shopify.yaml
   entity: service
   id: shopify
   display_name: Shopify
   provider: shopify
   rule_count: 8
-  sha256: 7c79a4ef4381e5b2fbf2a8b5a0d076b17381c9705fe866463c7c3bb845188e1a
+  sha256: 31f8030940a3b0e18342d26d8bb4be21a5169c7714d080992ca35e1f1253e877
 - path: shopify/shopify_aggregate/shopify_aggregate.yaml
   entity: provider_aggregate
   id: shopify_aggregate
   display_name: Shopify
   provider: shopify
   rule_count: 8
-  sha256: ba8311c30800be60897582b7ec5e607748786626982eea4b86593d40eccb3c95
+  sha256: 67c3f967c41be71e11cb4ab4c2faf1cde749aaf558a996925961222025995d0a
 - path: siemens/siemens/siemens.yaml
   entity: service
   id: siemens
   display_name: Siemens
   provider: siemens
   rule_count: 2
-  sha256: 9d75bd8d374d3cb2e0e32332b568090104c8ea7554600a7e077dc96b228c1644
+  sha256: 96a8e3480bba95eddde3c54d6cd314bd8d14b906dacee97fcb0a34e8c245602e
 - path: siemens/siemens_aggregate/siemens_aggregate.yaml
   entity: provider_aggregate
   id: siemens_aggregate
   display_name: Siemens
   provider: siemens
   rule_count: 2
-  sha256: fa972df12c1810bd3ba44606abe74709a24dcf157bb1eae49242b800f07761f7
+  sha256: 1869c35c47170f19dfea0ee66b9056cec0720523ddec0598cf48b33656cd4b64
 - path: signal/signal/signal.yaml
   entity: service
   id: signal
   display_name: Signal
   provider: signal
   rule_count: 8
-  sha256: 753b7040c41ba436d9a01ad02f95833f3c4aa3967f44c58afdab534dfe5ab569
+  sha256: 4a3f553378fb741ec4dabe644406c1a39d5ff4401df2f07ab56205de4848ceeb
 - path: signal/signal_aggregate/signal_aggregate.yaml
   entity: provider_aggregate
   id: signal_aggregate
   display_name: Signal
   provider: signal
   rule_count: 8
-  sha256: d3970378cb717fd33bee87c8a082d78fe392ee2fd2f0e83e2b890299f4f27e36
+  sha256: 84bcffe630cff18ce854598b696f65cbb2c57c13b789a7baf3ab9c9782559102
 - path: skhynix/skhynix/skhynix.yaml
   entity: service
   id: skhynix
   display_name: SK hynix
   provider: skhynix
   rule_count: 2
-  sha256: 51e2b1a870bd49e107f1044fa42041d0302634a74560cc6434ae4db70d2ecb6e
+  sha256: c2ce6e2e45917438091d1a990d7e4c658954c889c7f96d5bfd8adb7ae576eb11
 - path: skhynix/skhynix_aggregate/skhynix_aggregate.yaml
   entity: provider_aggregate
   id: skhynix_aggregate
   display_name: SK hynix
   provider: skhynix
   rule_count: 2
-  sha256: 7eb46950bdcf5154643406d23d047e9de005b561d85cf01e2bf114682a3da6e6
+  sha256: fa81368289f26c92a745860ff5bc4fa59e1f0aa2271066d2621d9e832c896018
 - path: snap/snap/snap.yaml
   entity: provider_aggregate
   id: snap
   display_name: Snap
   provider: snap
   rule_count: 9
-  sha256: 483b1dcd76b0c1bd6d7446f3dce5587a53091de8b34e86b0d3af0977cfe96580
+  sha256: 8b53a0a1b0fb74a3d4a186a273e176d8ff238afbbc148f6f994dd55944c26fda
 - path: snap/snapchat/snapchat.yaml
   entity: service
   id: snapchat
   display_name: Snapchat
   provider: snap
   rule_count: 9
-  sha256: c887b5f57023c3bcee9ee2244b7ca016e495d858cc8dba7a1e302e6965a4889d
+  sha256: 4dbf3c917b8b508076c08186b2396d67735e12c0d634384106463dd8b53a4d39
 - path: snowflake/snowflake/snowflake.yaml
   entity: service
   id: snowflake
   display_name: Snowflake
   provider: snowflake
   rule_count: 2
-  sha256: f7912242c72e44e7f7bef5ffe8817ab6839ff3c9041cadcc91c22daa20f1c091
+  sha256: e5c40a70ec4091ecbd7b6509523b2a71120621ec34172cf10ce8b31d29376bef
 - path: snowflake/snowflake_aggregate/snowflake_aggregate.yaml
   entity: provider_aggregate
   id: snowflake_aggregate
   display_name: Snowflake
   provider: snowflake
   rule_count: 2
-  sha256: c68ad5f8b1be38daccf64714988252eafbf1ef779f17a96c0c36a7fb9c507484
+  sha256: 1f3a767381944c333db312f70cf3ffce8d7fc4bcf3285ba29e9eb667276d395c
 - path: sohu/sohu/sohu.yaml
   entity: service
   id: sohu
   display_name: Sohu
   provider: sohu
   rule_count: 53
-  sha256: ed2dabc2f9a94828722d72f1050a045cc305e5f99b60b0a8f9b25454df8cb667
+  sha256: 7998a41daf10f7f3976ddf8177edf7e5067e3b45664e7edc502f836f99c7906d
 - path: sohu/sohu_aggregate/sohu_aggregate.yaml
   entity: provider_aggregate
   id: sohu_aggregate
   display_name: Sohu
   provider: sohu
   rule_count: 53
-  sha256: 6b97e3e35ad83cf210393f9f369023509631cd4c8ab4d855624c42a1bbc01cca
+  sha256: 677c6b3651b0e9c4f86605789dc9f01455c6c51464f026dd240a0225cba80f12
 - path: sony/sony/sony.yaml
   entity: service
   id: sony
   display_name: Sony
   provider: sony
   rule_count: 2
-  sha256: 967eae27893698ccef4e61ece457b885ccb217223545fcbb72728e7bb2b22cd7
+  sha256: 858c7972542b1d2d9c6aa4122e21cd1aa12ff8fc02dade7744fed084415f8f7a
 - path: sony/sony_aggregate/sony_aggregate.yaml
   entity: provider_aggregate
   id: sony_aggregate
   display_name: Sony
   provider: sony
   rule_count: 2
-  sha256: 6829c5c9e3f71393bb937514d0da8baff39cb8517345e65bb0f563634b2d635c
+  sha256: 8484940418e39dbc914eb91f381e5375ce41a4b4d7bd4b83ed7efe2e019ccee0
 - path: soundcloud/soundcloud/soundcloud.yaml
   entity: service
   id: soundcloud
   display_name: SoundCloud
   provider: soundcloud
   rule_count: 5
-  sha256: 2822a676780bdfe0dd66afa8ba726b1a8d08370d4a8a7fa1d4b1d2cf7df8c469
+  sha256: d9dbb9aedcce858ac35bc5764958c5591d49d4f1030e28ea607afe6e1d3a61a2
 - path: soundcloud/soundcloud_aggregate/soundcloud_aggregate.yaml
   entity: provider_aggregate
   id: soundcloud_aggregate
   display_name: SoundCloud
   provider: soundcloud
   rule_count: 5
-  sha256: 6fedc0be183f993337d73d42071354a80e0bc23b90611c456ed48ac50f611237
+  sha256: eff3dc19e0d1ba8aab37df335438bf1cc70bc73ee9805616ea70d35f523dec0b
 - path: spacex/spacex/spacex.yaml
   entity: service
   id: spacex
   display_name: SpaceX
   provider: spacex
   rule_count: 2
-  sha256: 4a4e1d3e89a2c73e813dd5c489c4221c5cffe93b40f33f7a6dd7236495ab92cf
+  sha256: 5565e488012c24bd0271895d8370120104132d79163b9fe93fdd0eba718e2308
 - path: spacex/spacex_aggregate/spacex_aggregate.yaml
   entity: provider_aggregate
   id: spacex_aggregate
   display_name: SpaceX
   provider: spacex
   rule_count: 2
-  sha256: 6e0a106bbdf7813059e4e2dcb09cb65b02ebcec9c2747e2f29675ee39087658c
+  sha256: 09f67f3091a7bf63a9f90d9b000ca237c5877aeb871f80dd8e11487544c1234d
 - path: special/ai/ai.yaml
   entity: service
   id: ai
   display_name: AI
   provider: special
   rule_count: 189
-  sha256: 2ad567e1786db89a506120e6e5d471b6eac2d25e91e3a8c91fa21085e89f12c5
+  sha256: d0823fad9c705d997d1d3bbb35e23488b808855ad1e30e555b1ce1eee3f5713a
 - path: special/aisuite/aisuite.yaml
   entity: service
   id: aisuite
   display_name: AI Suite
   provider: special
   rule_count: 146
-  sha256: 4b1380f147bc41f786784b6a2524675d4622e123f513594931a20b01eff6145b
+  sha256: a875da0cfd2cd7a186bb20942dddc909cca7fb55a81bdd13459afadc1bf725ec
 - path: special/private/private.yaml
   entity: service
   id: private
   display_name: Private
   provider: special
   rule_count: 248
-  sha256: f126915be76a31a82c0dafb507d6812d238d6460358b0d95b8e3eefbc53aa869
+  sha256: c0ba067a376ebbfbce38eb81316174b4ab91952074efc464ff1cd66dc0c56239
 - path: special/restricted/restricted.yaml
   entity: service
   id: restricted
   display_name: Restricted
   provider: special
   rule_count: 6662
-  sha256: d7aacdf634b06c9a75fa1ae0f0358ade1f7331e0e004c6ca002d77370fa03a32
+  sha256: 77d39976e56833f7878daa4e829905884f35b46dd7c5394b41a5eed4759063ec
 - path: special/special/special.yaml
   entity: provider_aggregate
   id: special
   display_name: Special / Generic
   provider: special
   rule_count: 7552
-  sha256: bbc650e3f00a85a51542c4ee4a1c15881513b78b0ae606c63fc7a5ea01229bdf
+  sha256: f1a28e89cf1cebc07a92235f7f8acd308070cda2aabdc7156be4a7168187d558
 - path: special/stun/stun.yaml
   entity: service
   id: stun
   display_name: STUN
   provider: special
   rule_count: 366
-  sha256: b5cd24254caa2c125480420a0f17e37c5b3c0244470d09e8236055b9d5def81a
+  sha256: f1f8dbdbd1e5b4731058d1f24422a301dc866a089229387c82fbe0288edb85ff
 - path: spotify/spotify/spotify.yaml
   entity: service
   id: spotify
   display_name: Spotify
   provider: spotify
   rule_count: 38
-  sha256: 9711a51a5a034f08fe9371effdb77a7594520e9ac6584f7e3184367fbbc15074
+  sha256: 11b5b0c3f71ae64ec14d0db9bb6c7f9c21e4018d12d151aae1b523a82b0627b5
 - path: spotify/spotify_aggregate/spotify_aggregate.yaml
   entity: provider_aggregate
   id: spotify_aggregate
   display_name: Spotify
   provider: spotify
   rule_count: 38
-  sha256: 7b7d2998d5ecf25df0978a1c1047c1a8f0de3cb19a0ba47c0c458617876bfe99
+  sha256: 5f44971b56c42312243edcf3658f122a6b1861304603448284b0b3eedf01f85a
 - path: starlink/starlink/starlink.yaml
   entity: service
   id: starlink
   display_name: Starlink
   provider: starlink
   rule_count: 2
-  sha256: 3a4f07ad07d70aa0a8870d24e799a13a2cb63b937269e719cb90e2639d58902e
+  sha256: ecce79af0ebe32e9947e65ba50e47ceb2c42ae835b3544a2bd2ad5f4ab251c3a
 - path: starlink/starlink_aggregate/starlink_aggregate.yaml
   entity: provider_aggregate
   id: starlink_aggregate
   display_name: Starlink
   provider: starlink
   rule_count: 2
-  sha256: 30cc733ef906f632bcae5ac48286912c351556281e9dde7f94374eda38437bcd
+  sha256: e6cee7d9af8361d7afa485847621bed4f13b2144b10938ab654a9d08c3b77f6a
 - path: steam/steam/steam.yaml
   entity: service
   id: steam
   display_name: Steam
   provider: steam
   rule_count: 84
-  sha256: 3c8f0c69b99307f913e348e5f9b8858175040f0c313fe0d3aab2c7763e5e75fe
+  sha256: fd75cb4b1d767e583b2f9c24e477896f60790f444762b872afdc4f8e429bc180
 - path: steam/steam_aggregate/steam_aggregate.yaml
   entity: provider_aggregate
   id: steam_aggregate
   display_name: Steam
   provider: steam
   rule_count: 84
-  sha256: 62c1847c8963faf7b1b3a5551d5d9caa8caffab29a104667eb55a66e5bae4f2b
+  sha256: d88db35be64df9665a4d1ceddbe9e935adc0a08ae953dbcacce98df12d9f7d11
 - path: stripe/stripe-dashboard/stripe-dashboard.yaml
   entity: service
   id: stripe-dashboard
   display_name: Stripe Dashboard
   provider: stripe
   rule_count: 1
-  sha256: 1c88b87700285f9bd086a5dbd05574a4c2c6523d0f1f987bf4ada2ef4a83b27a
+  sha256: 91e40894086955ad19db04e490b1e1919d8b262d9b71382914937a909482cb86
 - path: stripe/stripe/stripe.yaml
   entity: service
   id: stripe
   display_name: Stripe
   provider: stripe
   rule_count: 1
-  sha256: b127e80ae840f0cd29568becb15dd5362d821a0854295b4e6cc7320f256db16a
+  sha256: cc183ba6fc568e4f4e10024538c41adcc48cd1635db519f5863aa2afd60d7852
 - path: stripe/stripe_aggregate/stripe_aggregate.yaml
   entity: provider_aggregate
   id: stripe_aggregate
   display_name: Stripe
   provider: stripe
   rule_count: 2
-  sha256: aa709646c55d344e94e276e0200636869a713dce828ffa821828f368e5fae6d7
+  sha256: 2ebd47d03bb6c8a0793412bf53862b6d8b688b8edbc548b74fa03a9840c4a2d9
 - path: supermicro/supermicro/supermicro.yaml
   entity: service
   id: supermicro
   display_name: Supermicro
   provider: supermicro
   rule_count: 2
-  sha256: c5287899fb20d03d5b843ee1d2a08991b4b2d27e49c5d2dd5d3cc3a97792e9cf
+  sha256: 0596d573c5f7cf4d6152feaf8d28b7b388e3fc7e49d82124d65f79e6716cbb77
 - path: supermicro/supermicro_aggregate/supermicro_aggregate.yaml
   entity: provider_aggregate
   id: supermicro_aggregate
   display_name: Supermicro
   provider: supermicro
   rule_count: 2
-  sha256: c81040637fa10e03c0b6318b39319aeb1c34ca05804eb785b04635c686b14080
+  sha256: d27d0be33c7d2f27653df6b77bd89d72d518d27f5051d063e95e12feea08eda4
 - path: synopsys/synopsys/synopsys.yaml
   entity: service
   id: synopsys
   display_name: Synopsys
   provider: synopsys
   rule_count: 2
-  sha256: da5e5b88be957ea52c7b6335233528bde11d27bc9229b077536269562d950a69
+  sha256: 15294fd41f7f42479a31c8aca15f3a5e0154f0c6936a537c13e241983bf36626
 - path: synopsys/synopsys_aggregate/synopsys_aggregate.yaml
   entity: provider_aggregate
   id: synopsys_aggregate
   display_name: Synopsys
   provider: synopsys
   rule_count: 2
-  sha256: 0aeee1020981144717223b121e64a5f371aed6d2c2b35720827c4cd55ae1912d
+  sha256: 1d16f052f20fa49636cc8a5482efa56010b9317455ff45c426ac9615b2264655
 - path: t3go/t3go/t3go.yaml
   entity: service
   id: t3go
   display_name: T3出行
   provider: t3go
   rule_count: 2
-  sha256: 50d3e7194f16d13b4e37c459503db4f745e31bcc7a3037ef788eff76916e3f0b
+  sha256: c972da76776049e16cee096fa0436eedb224e42c3099c17c890073822969d5fa
 - path: t3go/t3go_aggregate/t3go_aggregate.yaml
   entity: provider_aggregate
   id: t3go_aggregate
   display_name: T3出行
   provider: t3go
   rule_count: 2
-  sha256: ebc4118949d8c233103d3e09482536bcc4ff8e24d2b60f8549e40e38cf24309b
+  sha256: 3b08240747b57ff7cbcbb2031286047a2854597ae3a43e444a7223454c21e8be
 - path: take2/take2/take2.yaml
   entity: service
   id: take2
   display_name: Take-Two
   provider: take2
   rule_count: 2
-  sha256: 72d9de422d1688dd2befaac2a746bb0628912d6c4dfee7d41d4984ff713c5ffd
+  sha256: 46e11403d6fa8ece2abd3cdf3b3cad8906a5cd58c0827df7f5eb609aed307489
 - path: take2/take2_aggregate/take2_aggregate.yaml
   entity: provider_aggregate
   id: take2_aggregate
   display_name: Take-Two
   provider: take2
   rule_count: 2
-  sha256: 6cab430a7673883aad9c5368b0df657b7f4d7b16d68167f0b5373f75c1217e72
+  sha256: c3eefb7f266c8fea29359fc8931797c659bb86d2d9e45cc8480e02a29b6eaf1f
 - path: telegram/telegram/telegram.yaml
   entity: service
   id: telegram
   display_name: Telegram
   provider: telegram
-  rule_count: 59
-  sha256: 69abea15d885c699af26485dad884a488b80fbcb545604524f8209ead1d59ba7
+  rule_count: 24
+  sha256: a825d5de7de1b0ed2bb7dac8c044b0540b6c370932ace08a78d2dec6f19d7764
 - path: telegram/telegram_aggregate/telegram_aggregate.yaml
   entity: provider_aggregate
   id: telegram_aggregate
   display_name: Telegram
   provider: telegram
-  rule_count: 59
-  sha256: 80c5453e40c104b2ae670e20002b13559beaeb4cb21e0de29395ba9299866e47
+  rule_count: 24
+  sha256: 46dade4238e3f525aa8f0e6fb00d39a98e4657db6124e4163f777cf0d5357a63
 - path: temu/temu/temu.yaml
   entity: service
   id: temu
   display_name: Temu
   provider: temu
   rule_count: 2
-  sha256: 7281a909032fb174907a45eb69b54a1a3419b4d8731aa23401a99dd895276dfe
+  sha256: bb5285dcebe8ab377941201fb7e41fefa9d819c2d12a621fe7b7da6a11204f9f
 - path: temu/temu_aggregate/temu_aggregate.yaml
   entity: provider_aggregate
   id: temu_aggregate
   display_name: Temu
   provider: temu
   rule_count: 2
-  sha256: 75d165017a49bfbe2d3117c7fb4d03562cd6c6a534909b6e3dc58a722802735b
+  sha256: e6e5b0e0f4f5cfd0c8abf17e43b1d7b758db434cc915e6f97d06b0fe4ddaf483
 - path: tencent/honorofkings_cn/honorofkings_cn.yaml
   entity: service
   id: honorofkings_cn
   display_name: 王者荣耀（国服）
   provider: tencent
   rule_count: 1
-  sha256: 8a4b270afa04624c9dc9e282f2ca4154a3c3b9d8ce68f34e565b51e58d62aa20
+  sha256: 053db3c1df54bf2b611146e08fbe82f7032bfb3b82815e91456b849707b5bbce
 - path: tencent/honorofkings_global/honorofkings_global.yaml
   entity: service
   id: honorofkings_global
   display_name: Honor of Kings Global
   provider: tencent
   rule_count: 2
-  sha256: cd46e3a9aa5c4c0f7be65f4ff7f683c057b0dbdcb019b15e7facedc0eebccecc
+  sha256: 1063d256692ee5130633ac7e97e6c9e5437562495f8c45331afcc8616d3511d7
 - path: tencent/qq/qq.yaml
   entity: service
   id: qq
   display_name: QQ
   provider: tencent
   rule_count: 1
-  sha256: 6b3af3766bbe7f39823f12538c769381c13996d4b6121568529bad70b0d5e2b0
+  sha256: 7a5d03b1c231ba85b187ef6efeb97479a10a890bdc6c13bc77069c96642f32ca
 - path: tencent/qqbrowser/qqbrowser.yaml
   entity: service
   id: qqbrowser
   display_name: QQ Browser
   provider: tencent
   rule_count: 1
-  sha256: 0cb3af0ebf474399039b39fa64e576d4c018e12a93d4f15f3e7aa3023bafaa48
+  sha256: fc4f9f47e2f9baa3c9de3a53c4ea069e94d446059a636c1db62b2e4bb99b8697
 - path: tencent/qqdoc/qqdoc.yaml
   entity: service
   id: qqdoc
   display_name: 腾讯文档
   provider: tencent
   rule_count: 1
-  sha256: 6a3cd11a9d7c5b35825af28acc1ead9b7da87b04c7cdc0ebf3378df8cb9011e9
+  sha256: 873438fecb40011ba36e917fb181db59cd2d976cb1bb8d8e4698d5ef64248cc6
 - path: tencent/qqmail/qqmail.yaml
   entity: service
   id: qqmail
   display_name: QQ Mail
   provider: tencent
   rule_count: 1
-  sha256: 4ba3bffa02006ae72cc0232889e077345dd291f8282b7e2c640ea8fa9187c69b
+  sha256: 74b11430fe4e504d26bcada9d44b723a46ac9e1048da05a3c3fe506b6c57ba66
 - path: tencent/qqmusic/qqmusic.yaml
   entity: service
   id: qqmusic
   display_name: QQ Music
   provider: tencent
   rule_count: 1
-  sha256: 980e7bedd8157dc873ef0b7003911e73586be1b756eab789c61c1ab4f376258f
+  sha256: 4fa5ef1aff5c38bd6ae72316e441ad72c555583c8c57ba41013789cd3ca9b8a7
 - path: tencent/quanmin-k-ge/quanmin-k-ge.yaml
   entity: service
   id: quanmin-k-ge
   display_name: 全民K歌
   provider: tencent
   rule_count: 1
-  sha256: b2852c558456f31babbfb561f28aab4479294d09598ca594fc34606d559e0df2
+  sha256: 89d8e9c3da4953f330a4bc89eff67744582c4db20c9f60b534ea375638d263f2
 - path: tencent/tencent/tencent.yaml
   entity: provider_aggregate
   id: tencent
   display_name: Tencent
   provider: tencent
-  rule_count: 920
-  sha256: ec659a152b8a545c753c78c1d69cb9413e38f6e665dff377cad2ea0b130a5bf1
+  rule_count: 755
+  sha256: 3326762be4f3bafb9712560a31d97dcfc1957804d9e7b71f3c578ae728dc31a7
 - path: tencent/tencentcloud/tencentcloud.yaml
   entity: service
   id: tencentcloud
   display_name: Tencent Cloud
   provider: tencent
-  rule_count: 105
-  sha256: 743308b007aac7583256b647ed7347f0aeff894228a17b682dff156acddc0065
+  rule_count: 1
+  sha256: 2f4feaa46c7c95937bf4df85e7675cfe71fa30e92f0fa933e74d298ab0c4943d
 - path: tencent/tencentdocs/tencentdocs.yaml
   entity: service
   id: tencentdocs
   display_name: Tencent Docs
   provider: tencent
   rule_count: 1
-  sha256: 7754a4cba3bf33d16767810b2819daf448c3d90c81108b10f10a80eb00e1d776
+  sha256: 7e2b4fc22cbfea06ea40eb06f54c7b80e1f2d01704499fe9d249fdc64cf2b96b
 - path: tencent/tencentmeeting/tencentmeeting.yaml
   entity: service
   id: tencentmeeting
   display_name: Tencent Meeting
   provider: tencent
   rule_count: 3
-  sha256: 335f5bc37015ec99b45cfa138f6ca5264754266b6999a3f58ef420bfbb89ce17
+  sha256: 3ad5ad51507018888b3cf33e9921da74fddac316df296d7dabcb875d83b9673c
 - path: tencent/tencentvideo/tencentvideo.yaml
   entity: service
   id: tencentvideo
   display_name: Tencent Video
   provider: tencent
-  rule_count: 64
-  sha256: 9dd97f1053a7f9b167739c133321ac77cf85ac8467bb523c44a77eb0b34ea86c
+  rule_count: 17
+  sha256: 0d665d1e0db27c3b561dcd23b94ec3c3a61d6d8e2c98dd8389a9826b7eceb571
 - path: tencent/wechat/wechat.yaml
   entity: service
   id: wechat
   display_name: WeChat
   provider: tencent
-  rule_count: 38
-  sha256: 90556a1adbdaeeb9bfbef35f21e06c1f1ba6b801cc53925cd5906085f4507e58
+  rule_count: 28
+  sha256: 3def6a2162c380110d6511eceafe5d89500c5035ad8f9ff9a155d7730b1ae156
 - path: tencent/wecom/wecom.yaml
   entity: service
   id: wecom
   display_name: WeCom
   provider: tencent
   rule_count: 3
-  sha256: ea53ac1070e570767962895e6995c2632bccb079a371b7529043ba1133ea0d02
+  sha256: 2a01de9a87ead375966b35ff5240a4240576e7893c6441ec671e0730fa1c6ac9
 - path: tencent/wegame/wegame.yaml
   entity: service
   id: wegame
   display_name: WeGame
   provider: tencent
   rule_count: 2
-  sha256: 928fda1753cdde029cc8f7115fdcab7043fa09771106f78bac895bd1405caaaf
+  sha256: fedbbb92f0cd6ec66bf4e125d260b366fe9e6f5e00736403edc4c1b4e6aef129
 - path: tencent/wetv/wetv.yaml
   entity: service
   id: wetv
   display_name: WeTV
   provider: tencent
-  rule_count: 10
-  sha256: f2f16dfbed1acd7971ad00c246023cfa320d6795236d9b0f72840216655760d6
+  rule_count: 2
+  sha256: 0bba086c83f5a79c1f300903a2816f8c503c5ba3948af9bae50a38cecc9f47d7
 - path: tesla/tesla/tesla.yaml
   entity: service
   id: tesla
   display_name: Tesla
   provider: tesla
   rule_count: 2
-  sha256: d0ea76491d3ac870d533261c74906c47b3544d0314a2d0222ff3e71a1ed0ca8c
+  sha256: cfabab6d312fb9b937ff5071e66bf5d09631dc4a9a952f0b975556f3fe858c49
 - path: tesla/tesla_aggregate/tesla_aggregate.yaml
   entity: provider_aggregate
   id: tesla_aggregate
   display_name: Tesla
   provider: tesla
   rule_count: 2
-  sha256: f17bcc1e25e5c78eb66ee253639d6f90cce48506d7cd49656f8f8201c932f449
+  sha256: 94bbc6ee94d5d7c498539072bd70606fe575343c1d9017e46ac8481041d0aaf9
 - path: ti/ti/ti.yaml
   entity: service
   id: ti
   display_name: Texas Instruments
   provider: ti
   rule_count: 2
-  sha256: 7f5497a5744b87f3f5087212915b4d77320a96fd6fc675da90b29dbe79c9a9cf
+  sha256: 3ff8344787cdb7cecf51ddb3db1cf788000a5bd7f05912aaf714febc2b0af65a
 - path: ti/ti_aggregate/ti_aggregate.yaml
   entity: provider_aggregate
   id: ti_aggregate
   display_name: Texas Instruments
   provider: ti
   rule_count: 2
-  sha256: f2d6d574c3c4c51486f8f9ebc5aa643431cf35392c2dc5f34d568a63e44a0138
+  sha256: 724615b6a9fbfa218ba8166d1b0deeb4cc451644e7f588a7e347d4e246591615
 - path: tidal/tidal/tidal.yaml
   entity: service
   id: tidal
   display_name: TIDAL
   provider: tidal
   rule_count: 3
-  sha256: 2c6e502a158f29174e9895a4a21019550dfbff8bab729ea5cef18656dcf28b6d
+  sha256: 5e6cec4ebfef97870f69b5a4917ae617e1480ddf02cbfd29f439926ae1fda7ff
 - path: tidal/tidal_aggregate/tidal_aggregate.yaml
   entity: provider_aggregate
   id: tidal_aggregate
   display_name: TIDAL
   provider: tidal
   rule_count: 3
-  sha256: b7dd7d258b3b7d5781ad40aced643bf9829666e3df05d9311ab5cf7f253402e4
+  sha256: ddcca0778668af489718cffa2b4ce25fcc72d0e2dc66e799823edfcc3422e360
 - path: tongcheng/tongcheng/tongcheng.yaml
   entity: service
   id: tongcheng
   display_name: Tongcheng
   provider: tongcheng
-  rule_count: 9
-  sha256: 014ae2519624f4c796f38508865674cae3084ca37ff9de0bc369200199edbc30
+  rule_count: 2
+  sha256: fd71593de57c480b4cfcda52ab71ed4d4e1c11aba0db49d325a86067742f1ef5
 - path: tongcheng/tongcheng_aggregate/tongcheng_aggregate.yaml
   entity: provider_aggregate
   id: tongcheng_aggregate
   display_name: Tongcheng
   provider: tongcheng
-  rule_count: 9
-  sha256: c91c48017c4853ea3932b4fc6caf8e05041fb174a3261b21eb61df2303c6d9fc
+  rule_count: 2
+  sha256: 11cedd2799885e750e4ab4303907fe3c5e721a420541defac9fd67bf5d5b060a
 - path: tonghuashun/tonghuashun/tonghuashun.yaml
   entity: service
   id: tonghuashun
   display_name: 同花顺
   provider: tonghuashun
   rule_count: 2
-  sha256: 0774c2b984bd7fb0d4834b2995a686dbddbd3d7e56a6b069a0918534f05151cb
+  sha256: 66156ad25ad6424985bf31c148b105126f14747407525ee5625a1791e27681d6
 - path: tonghuashun/tonghuashun_aggregate/tonghuashun_aggregate.yaml
   entity: provider_aggregate
   id: tonghuashun_aggregate
   display_name: 同花顺
   provider: tonghuashun
   rule_count: 2
-  sha256: 7aab2993c4c3b20e990bd39dd54acfe647bad1a13c375186d5f5b27e9634de59
+  sha256: 3660995219b2f3213d58b2e381db28250ceaa67f0e21770d6ae8285e31bd615a
 - path: transsion/transsion/transsion.yaml
   entity: service
   id: transsion
   display_name: 传音
   provider: transsion
   rule_count: 2
-  sha256: 006ab735ac77c38b1f455245684ded08a317310a32b3c9e58fb2c002add5c0c7
+  sha256: 8a2d51940c0d459d1a48403a5e5d8965a6d8cf53c28310abadecaa584343a755
 - path: transsion/transsion_aggregate/transsion_aggregate.yaml
   entity: provider_aggregate
   id: transsion_aggregate
   display_name: 传音
   provider: transsion
   rule_count: 2
-  sha256: 081ac32cb427d2a4bf5d898a0e00175b9fa2cb059a88fec26f8e08b7596449b6
+  sha256: a2d893ef7574700a2cc1eae0f26c7469e38620c10656e70f62fb0dc077b31ef6
 - path: tsmc/tsmc/tsmc.yaml
   entity: service
   id: tsmc
   display_name: TSMC
   provider: tsmc
   rule_count: 2
-  sha256: 2810e925c47918329e142471051b9d09f4e7c7b7688ce43163c29813fd298753
+  sha256: a1f9a2d6a61fe64f025f2dbd0573e96484a1f4dac8fee99711d1ba97b3b5f237
 - path: tsmc/tsmc_aggregate/tsmc_aggregate.yaml
   entity: provider_aggregate
   id: tsmc_aggregate
   display_name: TSMC
   provider: tsmc
   rule_count: 2
-  sha256: c0f5646af4dc175f1905fb0cbd6bc6af537ee132cd3e4f1b6584c4bcefef1ac7
+  sha256: ca6ee2100b9468ab582d07032a7f1cd51cd1e0da45bc5e8f867c41df6dfa87b6
 - path: tuya/tuya/tuya.yaml
   entity: service
   id: tuya
   display_name: 涂鸦智能
   provider: tuya
   rule_count: 2
-  sha256: 82cd12f4a93be3b77437f0c7e5fa44f46d3c3feb85622b7fe2da023cc0c4f0cc
+  sha256: 75efbd22eb7b23e3fa3a980d4cc9eff00ca1afa5f4f59e60b957fef13a99adfc
 - path: tuya/tuya_aggregate/tuya_aggregate.yaml
   entity: provider_aggregate
   id: tuya_aggregate
   display_name: 涂鸦智能
   provider: tuya
   rule_count: 2
-  sha256: 2fb426a200ea6b0c17429740c1dc202624a6a751efc369cbe989c3b45f2da1fa
+  sha256: da4f2812c01c7ab92f4273a2ad60092677954f585fe5d970e3a53505b818eb19
 - path: twilio/twilio/twilio.yaml
   entity: service
   id: twilio
   display_name: Twilio
   provider: twilio
   rule_count: 2
-  sha256: 45fa844a26c1c9d8be1d6710b84d1d427a088ee011881901ebdeaf7d5c19bfd9
+  sha256: 4cc8373bfe47f4c45c8f2b259ea9601d8b09f2c93537170977d6c2dccfd9fb09
 - path: twilio/twilio_aggregate/twilio_aggregate.yaml
   entity: provider_aggregate
   id: twilio_aggregate
   display_name: Twilio
   provider: twilio
   rule_count: 2
-  sha256: 43fd512bc1da8ade32e5b095963ed4f555b973161886080a23f8da0bd2cac75c
+  sha256: 231edbbb868f6ccecf78e4c8bf6e1488270cca4a96ab0f94ee0019b71176ff9b
 - path: twitter/twitter/twitter.yaml
   entity: service
   id: twitter
   display_name: Twitter
   provider: twitter
   rule_count: 34
-  sha256: 9e3f19223847967f78a2f021a87fa2eb813eb2b1e28a2f8f9e461e2808c4b360
+  sha256: 4e08e8f753b1d38bda56d51ef738cc92a59e293635b7663fe9e502e461a0f527
 - path: twitter/twitter_aggregate/twitter_aggregate.yaml
   entity: provider_aggregate
   id: twitter_aggregate
   display_name: Twitter
   provider: twitter
   rule_count: 34
-  sha256: dd3ccc46226b5a954889af5ff92ace6665312c1af82a2e5bf4bd7f77175d2545
+  sha256: 440ec18bae7e983315d36018c152db5ec40e518330222920a1cfed0bbf28642f
 - path: uber/uber/uber.yaml
   entity: service
   id: uber
   display_name: Uber
   provider: uber
   rule_count: 3
-  sha256: bcfe33fa1169afd5e328154d45e9328483a629778d609050b082ee2156b29fd0
+  sha256: 82ff3c05516c782a5359ca77b0660e0cf76fefead752edbf8159943cbd535b07
 - path: uber/uber_aggregate/uber_aggregate.yaml
   entity: provider_aggregate
   id: uber_aggregate
   display_name: Uber
   provider: uber
   rule_count: 3
-  sha256: 7fcedc16c08e3d030bcf2e934a4b34e8e1be8c0ff5c82a55d055ba740b34deef
+  sha256: 694770f02801559f666ab6d7e5a1973cf118d2c7af82a56fd84fedc625de882c
 - path: ubisoft/ubisoft/ubisoft.yaml
   entity: service
   id: ubisoft
   display_name: Ubisoft
   provider: ubisoft
   rule_count: 1
-  sha256: 3f7c1a1c563fe1808670d221e23c8f278ecadf0f71d1fb139a0157acaa342f86
+  sha256: f75b6dde9535a2425ed1ff39b465d0ec113c95607d2234bfb2f69b4e6a5b8032
 - path: ubisoft/ubisoft_aggregate/ubisoft_aggregate.yaml
   entity: provider_aggregate
   id: ubisoft_aggregate
   display_name: Ubisoft
   provider: ubisoft
   rule_count: 1
-  sha256: 8970f623fcd05239589dc62a13335bc9f6dac03c4a4beb7179f5dddac15a8163
+  sha256: 5e4a7cc4f98a3f7f76e06c4a24599dea016aa552ab230a923cf9e49d158c6120
 - path: umc/umc/umc.yaml
   entity: service
   id: umc
   display_name: UMC
   provider: umc
   rule_count: 2
-  sha256: ba2afa98f8196f30f9a049032200e3b3165780a1f15d119a2c7942be6166c560
+  sha256: c40b0bde09dfabfd25442f9f0e958c6c7e3d7de30d5538a6343aa29b2bb10c1f
 - path: umc/umc_aggregate/umc_aggregate.yaml
   entity: provider_aggregate
   id: umc_aggregate
   display_name: UMC
   provider: umc
   rule_count: 2
-  sha256: ae9b79f16c3afc1e7add0b7a7675c5c4ceeb2d5fbabab2e2128d1a589d28799b
+  sha256: f77fcea36b085095fa8a86004ddc52426c4b35bf817c0cf23388d5d330bbedba
 - path: unionpay/unionpay/unionpay.yaml
   entity: service
   id: unionpay
   display_name: UnionPay
   provider: unionpay
   rule_count: 16
-  sha256: 680f6d0fcde8d210abbc206042bc277033042804de8404f4f348a8b8fc5b86b1
+  sha256: a43661fecf7476f08fe9629ff5c7fef1a75e844c099a3d0c27f686f697b9700c
 - path: unionpay/unionpay_aggregate/unionpay_aggregate.yaml
   entity: provider_aggregate
   id: unionpay_aggregate
   display_name: UnionPay
   provider: unionpay
   rule_count: 16
-  sha256: 801429c8fe6f7585d6fdb834f6d2c2bd8937fa2a14ea79f52775d2908fdd0d6d
+  sha256: a95e1bad94665333750236eb8404e4b6caed43a731cea4760c03f01c685c8307
 - path: unity/unity/unity.yaml
   entity: service
   id: unity
   display_name: Unity
   provider: unity
   rule_count: 2
-  sha256: 8ee1b37c86bf6e75e277f4c53a011257a9bb3cc36600a81a46c7ca50bd18e6a9
+  sha256: 732f5613d7f1104c60041fcaab10ab21d87d74155ec11178fa7f85fc11be4e20
 - path: unity/unity_aggregate/unity_aggregate.yaml
   entity: provider_aggregate
   id: unity_aggregate
   display_name: Unity
   provider: unity
   rule_count: 2
-  sha256: 04ca3d883eb4f2243283e5b4adef3962720aa0053bd60b207b134f07b8706ad4
+  sha256: c012c3ac905ec7fbe12d5fe3e30f19a985e8f5355da27bd41fc042af259ee973
 - path: vercel/vercel/vercel.yaml
   entity: service
   id: vercel
   display_name: Vercel
   provider: vercel
   rule_count: 27
-  sha256: e944fac17973cfba1d77288d0d0ecd333528008c82b3d629a0833550e3696a8f
+  sha256: 1225f3d042f939e54d3009d8dce974551377851b66ad7557fe415640772960dd
 - path: vercel/vercel_aggregate/vercel_aggregate.yaml
   entity: provider_aggregate
   id: vercel_aggregate
   display_name: Vercel
   provider: vercel
   rule_count: 27
-  sha256: 1f3959006cc3d5c2b22a5feac9cbe2bd2b6c9daf4f78ba4d3c564d4bcb49bb5e
+  sha256: 3835a2b729b7f1ad888b8a1ce69e72e4e465c681e65acb1c8f64ade30130400f
 - path: vipshop/vipshop/vipshop.yaml
   entity: service
   id: vipshop
   display_name: 唯品会
   provider: vipshop
   rule_count: 2
-  sha256: 731444788155b8710399b52207169663f1660568613a2a3e5883adcbb2676eb1
+  sha256: a630410fa5f40b0f017a9e91c4f2d9c4366e5c5601481c691106e606191c7885
 - path: vipshop/vipshop_aggregate/vipshop_aggregate.yaml
   entity: provider_aggregate
   id: vipshop_aggregate
   display_name: 唯品会
   provider: vipshop
   rule_count: 2
-  sha256: 1e00b7a82efd3a26ea7148cfa9bfb7e410acc3fd7a526d17a098def711e4a719
+  sha256: 3dbb0b0020b70fa105cdbd7442e6b06f9a1f6d4243e78462e5898b8eacd3bc59
 - path: vivo/vivo/vivo.yaml
   entity: service
   id: vivo
   display_name: vivo
   provider: vivo
   rule_count: 14
-  sha256: 0e793f86deba2eb1ef2bcf33ff23cebaed0acf0fc7f94990b5a709e266e5d327
+  sha256: 820694715f5890155a4447348f4a49206ec89b6d4cdb7fd1a36a57ee82e70b4a
 - path: vivo/vivo_aggregate/vivo_aggregate.yaml
   entity: provider_aggregate
   id: vivo_aggregate
   display_name: vivo
   provider: vivo
   rule_count: 14
-  sha256: c9e19488ae20c33dcbaab38ded121aa6e9c5d92915d1b93d58cfe9607a94b733
+  sha256: 473a99ed7347124b04c9b2152c190cc9eda22d8b6494a36b1921c033a4e61c0e
 - path: walmart/walmart/walmart.yaml
   entity: service
   id: walmart
   display_name: Walmart
   provider: walmart
   rule_count: 10
-  sha256: a26ff35a6b6eed2201017472ee714144eaf017b382db1e2645d111bb589f9bea
+  sha256: 1e89d7afcf99cdc98be962e055443382e45933fc36fbd176ccaeb006ee6ddea5
 - path: walmart/walmart_aggregate/walmart_aggregate.yaml
   entity: provider_aggregate
   id: walmart_aggregate
   display_name: Walmart
   provider: walmart
   rule_count: 10
-  sha256: db4f999aa4c18cac4b5a33918d1ba76e15c5bb569cab1124a081aeee998630e7
+  sha256: 85bb402a1dc9ac6d7d424c7232830955f3be06b37753b34398eccf859b8207c8
 - path: wangsu/wangsu/wangsu.yaml
   entity: service
   id: wangsu
   display_name: 网宿科技
   provider: wangsu
   rule_count: 2
-  sha256: 5f6064e57e0796de4116a41ddf6e961982a23d789a4005acc67c25a7f11657ac
+  sha256: 787e532b8bc83ce14e5a18da71a26f653fd0b1cb294d6e8e937b9981747e1a4f
 - path: wangsu/wangsu_aggregate/wangsu_aggregate.yaml
   entity: provider_aggregate
   id: wangsu_aggregate
   display_name: 网宿科技
   provider: wangsu
   rule_count: 2
-  sha256: 1a7bf1cc5ac38fed9ffdf3674f33be7f7db0295d29a3e933986dc7d35fae0afd
+  sha256: e2581af53258d4b820c99607c27eff742529cd77f72d53dcd33afa23b33140b4
 - path: wanmei/wanmei/wanmei.yaml
   entity: service
   id: wanmei
   display_name: 完美世界
   provider: wanmei
   rule_count: 2
-  sha256: 6999c5b62191cc315b24aef0435378ff83282375c20199f2269543197681f1d1
+  sha256: b7835b7ad1724ce76dedfc4d285c3ce27d4833631d4d2e29cfa2db78f9dc268a
 - path: wanmei/wanmei_aggregate/wanmei_aggregate.yaml
   entity: provider_aggregate
   id: wanmei_aggregate
   display_name: 完美世界
   provider: wanmei
   rule_count: 2
-  sha256: 931f31c3ff618f9717804085ff2508a3116795da2da0140a50228e2d991641a3
+  sha256: e53f8d5581fbf4d282e3ec170e53039c02c87b71f181fdd8cd4b5b27ebe27f98
 - path: weibo/weibo/weibo.yaml
   entity: service
   id: weibo
   display_name: Weibo
   provider: weibo
   rule_count: 4
-  sha256: d9bde8f83d84bf09aa134b7588ef4072a1fe71a5ddbb798af5033db7d33591eb
+  sha256: 002a13d79b9236cf4560ca290b51fea1003e95718fc977b4baf23ced04afb44f
 - path: weibo/weibo_aggregate/weibo_aggregate.yaml
   entity: provider_aggregate
   id: weibo_aggregate
   display_name: Weibo
   provider: weibo
   rule_count: 4
-  sha256: e0ef5ae49f74338107586e3082416a4651b0382c429f8036a6b41139712237fd
+  sha256: 2ed326aeb3ead493630f274998fbfb47023f06849ca72e771cb051ac2e27d0e3
 - path: wikimedia/wikimedia_aggregate/wikimedia_aggregate.yaml
   entity: provider_aggregate
   id: wikimedia_aggregate
   display_name: Wikimedia
   provider: wikimedia
   rule_count: 12
-  sha256: 28a8dd1373445cb2f43c7a887c8c95824b9555a2a8d00cc4602ebf19bacd2cbc
+  sha256: 2bb2bcfb6388250d6636455bd748640ad7560f82723f70077323da23bdbeb664
 - path: wikimedia/wikipedia/wikipedia.yaml
   entity: service
   id: wikipedia
   display_name: Wikipedia
   provider: wikimedia
   rule_count: 12
-  sha256: 0f359a96b069b019abce0e3aa53fa4f3fec9e1e9f63c91b404f0add476e63f6f
+  sha256: 3a87ee7808439b709f6e0be71c1e7fb5f0c64e69e5a3935667a58cb5974320f8
 - path: wise/wise/wise.yaml
   entity: service
   id: wise
   display_name: Wise
   provider: wise
   rule_count: 2
-  sha256: 6153eaa3efa58672a3ead154a0fb958531435fc753bee03cf2b0d92d1c6048c8
+  sha256: 2e33432f52349408bef204c01af61fa558beea1e10d1f1f19335e14a9dc5e971
 - path: wise/wise_aggregate/wise_aggregate.yaml
   entity: provider_aggregate
   id: wise_aggregate
   display_name: Wise
   provider: wise
   rule_count: 2
-  sha256: 87dd0b673dc6678fb9a202671c4b3162a2d848feb56c5a2b9015bd79e1cf7742
+  sha256: 9406ca5d3c6ee1325e04324deb5ac907afd4f3d9880cf29dc338cd8ce3b82af5
 - path: workday/workday/workday.yaml
   entity: service
   id: workday
   display_name: Workday
   provider: workday
   rule_count: 2
-  sha256: 47268b58b726dc861e510ac7980b11878512e9e265547d4013f22400a857088c
+  sha256: f1fef6abdd372969478da6bae8c6c7cabcad9f48c1af403fb138808ccabaad29
 - path: workday/workday_aggregate/workday_aggregate.yaml
   entity: provider_aggregate
   id: workday_aggregate
   display_name: Workday
   provider: workday
   rule_count: 2
-  sha256: 4ee2efa99058be50a35d411f55e7c549e77a7f99734e947ef00afc35ad0f64f8
+  sha256: 70dec536becb44bd50047e4b830be9c4248030e2ccba01b8eb25703e3f6e7bcd
 - path: woyun/woyun/woyun.yaml
   entity: service
   id: woyun
   display_name: 联通云
   provider: woyun
   rule_count: 2
-  sha256: f8cbda7afd9baf2245a51d5847b9f2d24017fac71cdb6160feb09f08ec66fbad
+  sha256: 7993cd83fb4064a6c69a28a7ef7bf01280bd4d8fc48ca4693cb15e3a988d916c
 - path: woyun/woyun_aggregate/woyun_aggregate.yaml
   entity: provider_aggregate
   id: woyun_aggregate
   display_name: 联通云
   provider: woyun
   rule_count: 2
-  sha256: 3fca578a6b75ad03fe03ad5ef431c55fe572ad6c1498eda7d993207a799d690a
+  sha256: df38e333ac0ec9ee8dc5e3ed42fbe358939194f2b7610b65d2149cd6034ba5a7
 - path: wuba/wuba/wuba.yaml
   entity: service
   id: wuba
   display_name: 58同城
   provider: wuba
   rule_count: 2
-  sha256: bc1cb05daec8aebe26c844be10f6000a080f55ae4bbb29be973df4db9a6d6e5c
+  sha256: 88b4f318807f2e47ecd6ee27aa185ac0ad6d3d8d52c6e25951d65c3c094b7410
 - path: wuba/wuba_aggregate/wuba_aggregate.yaml
   entity: provider_aggregate
   id: wuba_aggregate
   display_name: 58同城
   provider: wuba
   rule_count: 2
-  sha256: 639601c374d65c3a8bfadbf976c0175dbe22d3a1c77a552405b8d9574c2b6e19
+  sha256: 877652f7f5d22e7b73f113499a9a5a1add64a0adb8491580019ef7620b05ece2
 - path: xai/xai-grok/xai-grok.yaml
   entity: service
   id: xai-grok
   display_name: Grok
   provider: xai
   rule_count: 1
-  sha256: 452c304228a20bc90db2496bf6925a0d676e5ca108efa14179eee5e7a34e3866
+  sha256: ca82d2e292c232c10e6810a1f1021cc4b268571c545e5040f788c7855c7d880c
 - path: xai/xai/xai.yaml
   entity: provider_aggregate
   id: xai
   display_name: xAI
   provider: xai
   rule_count: 4
-  sha256: 8e938b46e984f7d3eeb7f185e74deca75c9e7b14ab3b1addcc2704faac8f3e04
+  sha256: 3225b917ca35e09cf9c63b35c101b91de0d2291718653064bc0778e3f33ebb13
 - path: xgimi/xgimi/xgimi.yaml
   entity: service
   id: xgimi
   display_name: 极米
   provider: xgimi
   rule_count: 2
-  sha256: 88d7a741afe93d10194d800e1691d055c0437608ff6f2f3b69fb85a991ec61cf
+  sha256: a90bbea5a9c56f3ff02c37fad8c33102562970b3e98cc9dc04a7c70b626a1c9c
 - path: xgimi/xgimi_aggregate/xgimi_aggregate.yaml
   entity: provider_aggregate
   id: xgimi_aggregate
   display_name: 极米
   provider: xgimi
   rule_count: 2
-  sha256: 2436c432ffe13b2f1bd4f1ac348e8c51b1c9b2b34b2255c9467b28f69ad749f1
+  sha256: 73397a45dcd73f71f81d2e39136c581dfbb97a7e77f6b69584a97846f90b57d0
 - path: xiaohongshu/xiaohongshu/xiaohongshu.yaml
   entity: service
   id: xiaohongshu
   display_name: Xiaohongshu
   provider: xiaohongshu
   rule_count: 4
-  sha256: 9c65f10c92d52b8953c2aed74e0a1de97f4967f0381a9a190ebe2fe3f997930b
+  sha256: 0e0f57b439080b2edce7a145c4b0961646caaa049e6a789c64aa67f61747708d
 - path: xiaohongshu/xiaohongshu_aggregate/xiaohongshu_aggregate.yaml
   entity: provider_aggregate
   id: xiaohongshu_aggregate
   display_name: Xiaohongshu
   provider: xiaohongshu
   rule_count: 4
-  sha256: 91ef6e9ee1f82024f07ef9d91ece3f446301e538bb1340b36b82fe7cbaccc2a5
+  sha256: ba4cb1310e64b226db0287bd8ff7300d9bc2a8084ff3e54cd250085bbe4fe76e
 - path: xiaomi/getapps/getapps.yaml
   entity: service
   id: getapps
   display_name: GetApps
   provider: xiaomi
   rule_count: 1
-  sha256: 5a57d9a2c7cd88888e064b3897e58d2510ec80c1ee433cc980a2b86c63b05b06
+  sha256: a79c8e1a64429847aa03429fd81e12c14ea0a13fb0e762dc7c1746306b681625
 - path: xiaomi/mi-cloud/mi-cloud.yaml
   entity: service
   id: mi-cloud
   display_name: Mi Cloud
   provider: xiaomi
   rule_count: 1
-  sha256: 9cc5bda83ede06d1e6c2770b3e5d84529345f992249b214a5e70f86aa9f11b85
+  sha256: 3d6a2066457bd98300ed8dc5de42e03af65a7791f7d476ec94d0b9c01f45a497
 - path: xiaomi/mihome/mihome.yaml
   entity: service
   id: mihome
   display_name: 米家
   provider: xiaomi
   rule_count: 1
-  sha256: 496410921d65a3832ac536ac11cadc643afb8bd787556267b0f1f897968a8862
+  sha256: cde6006eeb0ae22ebcb22185277a6c4beedeabd578978aa7fdf42b0e8710acea
 - path: xiaomi/xiaomi/xiaomi.yaml
   entity: provider_aggregate
   id: xiaomi
   display_name: Xiaomi
   provider: xiaomi
   rule_count: 162
-  sha256: caf3523b65f89600904e76244bc071af905edddc1ddbe59a156a5bdecc41947e
+  sha256: 26d50526ab373f20ad66e13f927b22441b554e726ee815dc19353debb1e6a15f
 - path: ximalaya/ximalaya/ximalaya.yaml
   entity: service
   id: ximalaya
   display_name: Ximalaya
   provider: ximalaya
   rule_count: 5
-  sha256: b6a47fadde971ebd5113d867918893fa8f7817b66dfd567d02760e987a5cf38d
+  sha256: 03888cbaa3cca6e27a94ebf627aff7b72130bdd5132f18fdf55a1b0b0d53897c
 - path: ximalaya/ximalaya_aggregate/ximalaya_aggregate.yaml
   entity: provider_aggregate
   id: ximalaya_aggregate
   display_name: Ximalaya
   provider: ximalaya
   rule_count: 5
-  sha256: bf7c89a4e0eb18d522c54dcf3d0e172c5691e85694c278dc2f93e624d4a39e05
+  sha256: 1c9b3fd5a041011443561f85722e44496d007b8131aa5e7581231fc826302873
 - path: xunlei/xunlei/xunlei.yaml
   entity: service
   id: xunlei
   display_name: 迅雷
   provider: xunlei
   rule_count: 2
-  sha256: eeb980ab7f1fa2814c54671e1c84b3f0b7514894d2437d40d9d7a5f53a244fb3
+  sha256: cc079952f7434bac70e91857751cc88433f305c88bc0efcddb2862431781dfd8
 - path: xunlei/xunlei_aggregate/xunlei_aggregate.yaml
   entity: provider_aggregate
   id: xunlei_aggregate
   display_name: 迅雷
   provider: xunlei
   rule_count: 2
-  sha256: 8414bb096ee1706dc7cb430ad2beac006a0f73edde1c328382940f90f0598778
+  sha256: 0931478108fe2d49b136503f20326cb741cf6794fe49fc863cd2b0ff4ef3ace3
 - path: yi/yi/yi.yaml
   entity: service
   id: yi
   display_name: 零一万物
   provider: yi
   rule_count: 2
-  sha256: 6552c63103b24a01b1b14c47de4a01acba27447cd95fd4cc36ebec4bdea4c069
+  sha256: 7f20f092dbefe49a401aa37b9028d8cf11e56fca46a3c5444de7f8ed867dbe88
 - path: yi/yi_aggregate/yi_aggregate.yaml
   entity: provider_aggregate
   id: yi_aggregate
   display_name: 零一万物
   provider: yi
   rule_count: 2
-  sha256: 04692bfccfa573dacec81dbdda3d57c6acfea18e4e329e62123559504d3f4f4c
+  sha256: e4a3e1af5aa77b42df8242e75ab105fcd90a10751774b5fd9e00bca1f8c52cdf
 - path: yonyou/yonyou/yonyou.yaml
   entity: service
   id: yonyou
   display_name: 用友
   provider: yonyou
   rule_count: 2
-  sha256: d39bf9bf2215aef846ce78eb66015b8193f603991aa68a249405d3ae6e1cde7e
+  sha256: 2cb3038900a0ab935048d61d9f29575e9c37305c032aa42cbfa57daad4b645bb
 - path: yonyou/yonyou_aggregate/yonyou_aggregate.yaml
   entity: provider_aggregate
   id: yonyou_aggregate
   display_name: 用友
   provider: yonyou
   rule_count: 2
-  sha256: 190d8a93fa36a493a30d6251f2e876ce3200184649c113d29335e7610bd89372
+  sha256: 7dec4736cdf9c3e710795eeee4164fce4bd5d8af31b46319844ffa90b425a32a
 - path: zhaopin/zhaopin/zhaopin.yaml
   entity: service
   id: zhaopin
   display_name: 智联招聘
   provider: zhaopin
   rule_count: 2
-  sha256: fa46c7e1c46a50dd0d60034330966db46d7506fd1dfceca380aa2890265d3573
+  sha256: f3ed990a93ea3ba0699f63fb90ff33a978cd725271427f977b7a059ba8b61820
 - path: zhaopin/zhaopin_aggregate/zhaopin_aggregate.yaml
   entity: provider_aggregate
   id: zhaopin_aggregate
   display_name: 智联招聘
   provider: zhaopin
   rule_count: 2
-  sha256: b1cb6666b88b651bbb715380979a466ebe89f6eac83e252efafdfa5678f3c4a8
+  sha256: 06fb64095d44a7b630618078ec819ca24a642a2fb251ab663f31ef0b5584fc59
 - path: zhihu/zhihu/zhihu.yaml
   entity: service
   id: zhihu
   display_name: Zhihu
   provider: zhihu
   rule_count: 7
-  sha256: bba3f6161894edb00896828cfeb517034930f712846b32ce43ce269d22f7826d
+  sha256: 2a323dae62b3f6a64a243f47c4cf1be5e625415307daa96acec0d00549408531
 - path: zhihu/zhihu_aggregate/zhihu_aggregate.yaml
   entity: provider_aggregate
   id: zhihu_aggregate
   display_name: Zhihu
   provider: zhihu
   rule_count: 7
-  sha256: eebbc6474ac88adfe3fa53a44ee30dbf9d1a23a3b36ba2a612ddeb88d8b934bf
+  sha256: 9f2b5e1a8e7eb4165578938abb88c4e625d386f3742d2aae86c8d21c10f4bf6a
 - path: zhipin/zhipin/zhipin.yaml
   entity: service
   id: zhipin
   display_name: BOSS直聘
   provider: zhipin
   rule_count: 2
-  sha256: f9352f147dc6289bf4d31afbc19551af9ca81680741819633d6decac4a97de90
+  sha256: 6720176710551a371214d5cbbdd194d805ab010c8fddb1d22789080a37b7011c
 - path: zhipin/zhipin_aggregate/zhipin_aggregate.yaml
   entity: provider_aggregate
   id: zhipin_aggregate
   display_name: BOSS直聘
   provider: zhipin
   rule_count: 2
-  sha256: 5a06ecbb85165f59f6fcd6aa0e010a4fc81f8e344b71ba4f5bc78e3fc0ef9fb9
+  sha256: 7642c4ca371121ec48a7e9f9902da3b8c9ff27fe7a03dc3ca7c4582f91605340
 - path: zhipu/zhipu/zhipu.yaml
   entity: service
   id: zhipu
   display_name: 智谱AI
   provider: zhipu
   rule_count: 3
-  sha256: da7c19504b46dbf96f7c50556da601e7fec19d66a4ace4ff45eb7f5a213656f8
+  sha256: cab9abbbbe1d7c26b0b998ef2fe31f06ee068fffe5175877f3f8ab480865e97e
 - path: zhipu/zhipu_aggregate/zhipu_aggregate.yaml
   entity: provider_aggregate
   id: zhipu_aggregate
   display_name: 智谱AI
   provider: zhipu
   rule_count: 3
-  sha256: 283537d3361789ef61b85f01f96e1b8eb2d037e6f1b9495f754c9224ccfd539d
+  sha256: d334b9958cacd96eceeb1f2a26e1b7303bd56dbcfe83edee8c3172eea1a23d28
 - path: zoom/zoom/zoom.yaml
   entity: service
   id: zoom
   display_name: Zoom
   provider: zoom
   rule_count: 3
-  sha256: f0028b1066571e368c0fc6e3edafa467d261c73d359e4c20c25cddcb46138daf
+  sha256: 3d5960831689bb1c28320926bd7d4a87873812999a4203bb4c84990f0d7ba020
 - path: zoom/zoom_aggregate/zoom_aggregate.yaml
   entity: provider_aggregate
   id: zoom_aggregate
   display_name: Zoom
   provider: zoom
   rule_count: 3
-  sha256: a0561ffc2cc4b4a58031c1f0b9b83e091a5a501c8212e462234ec3391555c202
+  sha256: 84791826cb972f6261a61d981f843c50d70b4353bf79a4bf7a68c4a894e8ead4
 - path: zte/zte/zte.yaml
   entity: service
   id: zte
   display_name: ZTE
   provider: zte
   rule_count: 2
-  sha256: 079725d9ba1461743dd3a5d83792018a471b8482d895ecc4f2a757cd3fe7b1e5
+  sha256: eb29debf3493d9eb04f100252ff756fde4ff79b6e3bb67383d728b43873b01a7
 - path: zte/zte_aggregate/zte_aggregate.yaml
   entity: provider_aggregate
   id: zte_aggregate
   display_name: ZTE
   provider: zte
   rule_count: 2
-  sha256: 7ea28b3ce50bceeb99b4ed06a8e080907fb6d7daea512388f7eed3299cb71937
+  sha256: cecd67ff32c388ee5c07704ef1cb425fbcc77deb2b2f510d0851455eab8249fa

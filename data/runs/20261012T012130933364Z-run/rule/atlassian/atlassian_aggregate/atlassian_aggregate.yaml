@@ -1,0 +1,27 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: provider_aggregate
+id: atlassian_aggregate
+display_name: Atlassian
+generated_from:
+  run_id: 20261012T012130933364Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723
+stats:
+  total: 4
+  by_type:
+    DOMAIN_SUFFIX: 4
+rules:
+- id: 922f92cdd0865e8f6512adc8ffade9fba9bec8bc553a81a8974281173481444e
+  type: DOMAIN_SUFFIX
+  value: atlassian.com
+- id: 25b27d9d5aa2aefcfce47b7dc9f82d3c366d18a8f4772f42c908cc434d11d44f
+  type: DOMAIN_SUFFIX
+  value: trello.com
+- id: 3ddea93fcf6cf2fb5bf42668350dd1151b674264630ee5994fc06d68558562d9
+  type: DOMAIN_SUFFIX
+  value: trellocdn.com
+- id: 253b148291ee0d0e761b6cb7b7d19562437fff5399b648926786f3b7d8b60cf0
+  type: DOMAIN_SUFFIX
+  value: www.atlassian.com
+provider: atlassian

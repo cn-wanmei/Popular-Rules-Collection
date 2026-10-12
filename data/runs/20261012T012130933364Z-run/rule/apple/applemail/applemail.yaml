@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: applemail
+display_name: Apple Mail
+generated_from:
+  run_id: 20261012T012130933364Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 039fc1e4acb06475e6ca4551c654d76387402541ff80825d0a454a0a77badc43
+  type: DOMAIN_SUFFIX
+  value: mail.icloud.com.cn
+- id: 5555f63597757ecc70de019fe273d165a9643045d419b9bce7cd9b11adade094
+  type: DOMAIN_SUFFIX
+  value: mail.me.com
+provider: apple

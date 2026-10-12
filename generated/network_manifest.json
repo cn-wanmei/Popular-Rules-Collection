@@ -1,5 +1,5 @@
 {
-  "collection_date": "2026-10-11",
+  "collection_date": "2026-10-12",
   "file_count": 81,
   "files": [
     {
@@ -18,7 +18,7 @@
       "kind": "binary",
       "scope": "mmdb",
       "sha256": "ad2a3b90848bccd2065545e295de53b324931f710e0077a1a0fae2b89fddc5e5",
-      "source": "backup/2026-10-11/datasets/mmdb-country.bin"
+      "source": "backup/2026-10-12/datasets/mmdb-country.bin"
     },
     {
       "bytes": 8969559,
@@ -27,7 +27,7 @@
       "kind": "binary",
       "scope": "mmdb",
       "sha256": "d82d2f39ea82a175a3d63484c8b4723040d134ba1edf4b27d6819c2f96c14a9b",
-      "source": "backup/2026-10-11/datasets/mmdb-asn.bin"
+      "source": "backup/2026-10-12/datasets/mmdb-asn.bin"
     },
     {
       "bytes": 209335,
@@ -36,7 +36,7 @@
       "kind": "binary",
       "scope": "mmdb",
       "sha256": "d6f1d196a7e601f521abdd112767ca13087158deed1ef0684a293babea3f75b8",
-      "source": "backup/2026-10-11/datasets/dat-geoip-lite.bin"
+      "source": "backup/2026-10-12/datasets/dat-geoip-lite.bin"
     },
     {
       "bytes": 16583067,
@@ -45,7 +45,7 @@
       "kind": "binary",
       "scope": "mmdb",
       "sha256": "116cc0f03d48991962f7f9cdbbcf53d45d89777f9c3cd1a663210853e5df6093",
-      "source": "backup/2026-10-11/datasets/dat-geoip.bin"
+      "source": "backup/2026-10-12/datasets/dat-geoip.bin"
     },
     {
       "bytes": 4290986,
@@ -53,8 +53,8 @@
       "id": "dat-geosite",
       "kind": "binary",
       "scope": "mmdb",
-      "sha256": "e0ad83c50ba6bf79d5b872432af581a6ce785d24af61a3ffb00fd9085aadea59",
-      "source": "backup/2026-10-11/datasets/dat-geosite.bin"
+      "sha256": "5800301b7bb0a04607c660b5d456aeca2c2262849fb77e6c7962174829a6b0f4",
+      "source": "backup/2026-10-12/datasets/dat-geosite.bin"
     },
     {
       "bytes": 153162,
@@ -223,16 +223,16 @@
       "kind": "geoip",
       "scope": "mmdb",
       "sha256": "ad2a3b90848bccd2065545e295de53b324931f710e0077a1a0fae2b89fddc5e5",
-      "source": "backup/2026-10-11/datasets/geoip-mmdb.bin"
+      "source": "backup/2026-10-12/datasets/geoip-mmdb.bin"
     },
     {
-      "bytes": 1417232,
+      "bytes": 1406344,
       "file": "geosite/direct.txt",
       "id": "geosite-direct",
       "kind": "geosite",
-      "lines": 111683,
+      "lines": 110883,
       "scope": "geosite",
-      "sha256": "c2db2428f36635feb072b44f5ef64647a169e57e3c9c1ab21ceadadf00723ce5",
+      "sha256": "3cc247d5b3fec9f3b0d6b6507b6caacdb36dd380d3cb0409280e051f0c43d319",
       "source": "database/geosite/direct.txt"
     },
     {
@@ -246,23 +246,23 @@
       "source": "database/geosite/proxy.txt"
     },
     {
-      "bytes": 3967195,
+      "bytes": 3973141,
       "file": "geosite/reject.txt",
       "id": "geosite-reject",
       "kind": "geosite",
-      "lines": 190942,
+      "lines": 191252,
       "scope": "geosite",
-      "sha256": "6fa544a52b963f64157de4631eb99f74b04309e6360075ac2610419b9a93f4ce",
+      "sha256": "f0b670c4192dea981f7fe1ae7b3b8f1b688b06ac1d7f1aaad8e3ed4beb8c042f",
       "source": "database/geosite/reject.txt"
     },
     {
-      "bytes": 1406413,
+      "bytes": 1395431,
       "file": "geosite/china.txt",
       "id": "geosite-china",
       "kind": "geosite",
-      "lines": 111011,
+      "lines": 110205,
       "scope": "geosite",
-      "sha256": "b2a7464155917ffdded917609f978474eb9f010d7797ddeccdc20c4919d50da7",
+      "sha256": "d0e4f57d5185660b62c0a7d1cb1cfb9fdd47e0646b32c1edf8c4c38164941824",
       "source": "database/geosite/china.txt"
     },
     {
@@ -389,7 +389,7 @@
       "kind": "provider",
       "lines": 11535,
       "scope": "provider",
-      "sha256": "54dceb3af541de1d7357f4ea639b8b735d0d9af2616dd207b434306a56a77e4b",
+      "sha256": "376f6d5f29f13e99d83126418fe88c8c468158ba5ca34a4069511d58d28c13e8",
       "source": "database/provider/aws.txt"
     },
     {
@@ -399,7 +399,7 @@
       "kind": "provider",
       "lines": 1183,
       "scope": "provider",
-      "sha256": "0c4cd431e29bb21fcc792220e6c22c43f198397b24fa876a6ff962a315df9514",
+      "sha256": "59972699eb22a1d2e3cc237e0898d6d52974f8fc86394d68c15b58e7206fe549",
       "source": "database/provider/googlecloud.txt"
     },
     {
@@ -409,7 +409,7 @@
       "kind": "provider",
       "lines": 152,
       "scope": "provider",
-      "sha256": "00c1b945231d570346f41408ed57572390e7660c8e05522c9edd5559f9b3ba49",
+      "sha256": "be9327355d99040478d2515e3a4593629dcfebc1c16c513ca72ebe19a604a9f3",
       "source": "database/provider/goog.txt"
     },
     {
@@ -493,13 +493,13 @@
       "source": "database/ips/bytedance.txt"
     },
     {
-      "bytes": 160146,
+      "bytes": 160160,
       "file": "ip/china.txt",
       "id": "china",
       "kind": "service_ip",
-      "lines": 10071,
+      "lines": 10072,
       "scope": "ip",
-      "sha256": "1634891ffa48a9c773518ce172d246750489cd425acb18ba50db874cb2700a01",
+      "sha256": "74fadbf524d0c05a2bd43980ddbca16f65c59138b306a1ce1490fee8f970884d",
       "source": "database/ips/china.txt"
     },
     {
@@ -803,7 +803,7 @@
       "source": "database/ips/zhihu.txt"
     }
   ],
-  "generated_at": "2026-10-11T03:11:53.514561+00:00",
+  "generated_at": "2026-10-12T01:26:39.242983+00:00",
   "missing_optional": [],
   "runtime_contract": "network_dataset_distribution_v2",
   "schema": "network_publication_v2",
@@ -815,5 +815,5 @@
     "provider_cidrs_are_not_service_ownership": true,
     "service_rules": "generated/<client>/..."
   },
-  "source_commit": "eced043e7e0db4988f2c77585dc37435c746ffd6"
+  "source_commit": "6f2fd40eb93d5b7475f87b2afd54c0751c77e9fb"
 }
