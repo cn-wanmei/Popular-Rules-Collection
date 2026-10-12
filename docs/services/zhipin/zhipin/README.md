@@ -16,14 +16,14 @@
 | Provider | `zhipin` |
 | 规则浏览路径 | `rule/zhipin/zhipin/zhipin.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `f9352f147dc6289bf4d31afbc19551af9ca81680741819633d6decac4a97de90` |
+| SHA-256 | `6720176710551a371214d5cbbdd194d805ab010c8fddb1d22789080a37b7011c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261011T030457497160Z-run` |
-| IR digest | `68940ef5750699d309d2a03acf1c082b52d5de1de7e39af08471773d2e8a9fbe` |
+| Run ID | `20261012T012130933364Z-run` |
+| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

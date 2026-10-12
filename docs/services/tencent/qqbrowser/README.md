@@ -16,14 +16,14 @@
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/qqbrowser/qqbrowser.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `0cb3af0ebf474399039b39fa64e576d4c018e12a93d4f15f3e7aa3023bafaa48` |
+| SHA-256 | `fc4f9f47e2f9baa3c9de3a53c4ea069e94d446059a636c1db62b2e4bb99b8697` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261011T030457497160Z-run` |
-| IR digest | `68940ef5750699d309d2a03acf1c082b52d5de1de7e39af08471773d2e8a9fbe` |
+| Run ID | `20261012T012130933364Z-run` |
+| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

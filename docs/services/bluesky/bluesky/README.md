@@ -16,14 +16,14 @@
 | Provider | `bluesky` |
 | 规则浏览路径 | `rule/bluesky/bluesky/bluesky.yaml` |
 | 规则数量（_index） | **3** |
-| SHA-256 | `9157edabf6c1903f2d4ad97a9f4e1e06f7234acc7ac7a2f5ccee3978b7e779ff` |
+| SHA-256 | `0b5678d689eb2a3628a93a06417df727f5217f3186066e7a3f1bf5ee0be5a3c1` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261011T030457497160Z-run` |
-| IR digest | `68940ef5750699d309d2a03acf1c082b52d5de1de7e39af08471773d2e8a9fbe` |
+| Run ID | `20261012T012130933364Z-run` |
+| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

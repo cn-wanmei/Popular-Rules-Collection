@@ -16,14 +16,14 @@
 | Provider | `blizzard` |
 | 规则浏览路径 | `rule/blizzard/battlenet/battlenet.yaml` |
 | 规则数量（_index） | **62** |
-| SHA-256 | `4fc3c2751734469f7a67ce2c2a9497f2b5e8f41245f60f63bcf523efe9aba121` |
+| SHA-256 | `f4dcb2d743457cc7a05b0d2e6f37cb190054bd3309587aa80295b3d12be6434e` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261011T030457497160Z-run` |
-| IR digest | `68940ef5750699d309d2a03acf1c082b52d5de1de7e39af08471773d2e8a9fbe` |
+| Run ID | `20261012T012130933364Z-run` |
+| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

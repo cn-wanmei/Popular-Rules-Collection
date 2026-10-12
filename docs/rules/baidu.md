@@ -13,15 +13,15 @@
 | 类型 | provider_aggregate |
 | Provider | `baidu` |
 | 规则浏览路径 | `rule/baidu/baidu/baidu.yaml` |
-| 规则数量（_index） | **354** |
-| SHA-256 | `ccdb9b917246049a82e9a540b46daab87f4c8a4d47177151f367ca603fa39b51` |
+| 规则数量（_index） | **288** |
+| SHA-256 | `abc10a3b3ea3df366a490f0a2379d293ab4b49427331ba20d22e7ebdc9cc2dbe` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261011T030457497160Z-run` |
-| IR digest | `68940ef5750699d309d2a03acf1c082b52d5de1de7e39af08471773d2e8a9fbe` |
+| Run ID | `20261012T012130933364Z-run` |
+| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -46,13 +46,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 354 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/baidu/baidu/baidu.yaml` |
-| loon | 354 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/baidu/baidu/baidu.list` |
-| mihomo | 354 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/baidu/baidu/baidu.yaml` |
-| quantumultx | 354 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/baidu/baidu/baidu.list` |
-| shadowrocket | 354 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/baidu/baidu/baidu.list` |
+| egern | 288 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/baidu/baidu/baidu.yaml` |
+| loon | 288 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/baidu/baidu/baidu.list` |
+| mihomo | 288 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/baidu/baidu/baidu.yaml` |
+| quantumultx | 288 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/baidu/baidu/baidu.list` |
+| shadowrocket | 288 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/baidu/baidu/baidu.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/baidu/baidu/baidu.json` |
-| surge | 354 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/baidu/baidu/baidu.list` |
+| surge | 288 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/baidu/baidu/baidu.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 
