@@ -1,7 +1,7 @@
 {
   "schema": "ecosystem_release_status_v5",
-  "generated_at": "2026-10-12T13:26:12Z",
-  "observed_at": "2026-10-12T13:26:12Z",
+  "generated_at": "2026-10-12T16:15:25Z",
+  "observed_at": "2026-10-12T16:15:25Z",
   "authority_note": "READ MODEL ONLY. Does not replace Collection/Source/Icon SSOT. See docs/STATE_MODEL.md.",
   "repos": {
     "collection": "cn-wanmei/Popular-Rules-Collection",
@@ -21,7 +21,7 @@
       "readability": "ok",
       "ok": true,
       "error": null,
-      "sha": "f81956f26ec034dd97a74dc31ca32040e34ee866"
+      "sha": "529817763ee9235e7f18b927efb7e268f5dc78e3"
     },
     "collection_index": {
       "url": "https://api.github.com/repos/cn-wanmei/Popular-Rules-Collection/contents/rule/_index.yaml?ref=main",
@@ -43,7 +43,7 @@
       "batch_completeness": "COMPLETE",
       "semantic_consistency": "ok",
       "created_at": "2026-10-10T10:00:07.336418+00:00",
-      "age_seconds": 185165,
+      "age_seconds": 195317,
       "freshness": "aging",
       "persistence_commit": "48cf04bbf32065a53a507ca84cc85caec727cef0"
     },
@@ -56,13 +56,13 @@
       "generated_at": "2026-10-12T01:33:30Z",
       "source_ref": "00f93c6097e2b307610ce6869419a93a7ccea1d0",
       "file_sha256": "2dda0528ca009b727b4f63a2caa53a4665bd0bf3ee08597145268ff563d6dc7d",
-      "collection_main_sha": "f81956f26ec034dd97a74dc31ca32040e34ee866",
+      "collection_main_sha": "529817763ee9235e7f18b927efb7e268f5dc78e3",
       "collection_index_file_sha256": "2dda0528ca009b727b4f63a2caa53a4665bd0bf3ee08597145268ff563d6dc7d",
       "semantic_consistency": "ok",
       "semantic_reasons": [
         "collection_head_ahead_content_ok"
       ],
-      "age_seconds": 42762,
+      "age_seconds": 52915,
       "freshness": "fresh"
     },
     "icon_release_pointers": {
@@ -72,12 +72,12 @@
       "error": null,
       "bytes": 739,
       "frozen": true,
-      "freeze_age_seconds": 525912,
+      "freeze_age_seconds": 536065,
       "freeze_freshness": "fresh"
     }
   },
   "summary": {
-    "collection_head": "f81956f26ec034dd97a74dc31ca32040e34ee866",
+    "collection_head": "529817763ee9235e7f18b927efb7e268f5dc78e3",
     "collection_index_file_sha256": "2dda0528ca009b727b4f63a2caa53a4665bd0bf3ee08597145268ff563d6dc7d",
     "source_durable_persisted": 281,
     "source_seal_completeness": "COMPLETE",
@@ -93,7 +93,7 @@
     "readability": "ok",
     "semantic_consistency": "ok",
     "observation_status": "AGING OBSERVATION",
-    "observation_watermark": "2026-10-12T13:26:12Z",
+    "observation_watermark": "2026-10-12T16:15:25Z",
     "freshness_sla_note": "icon/source soft=24h hard=7d; freeze soft=14d hard=45d (read-model labels only)"
   }
 }
