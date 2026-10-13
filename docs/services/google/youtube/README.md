@@ -16,14 +16,14 @@
 | Provider | `google` |
 | 规则浏览路径 | `rule/google/youtube/youtube.yaml` |
 | 规则数量（_index） | **175** |
-| SHA-256 | `a638d4f4faab34ff2ea986e35c0c77ec0f6e6506e8d3d06dad96eccb2ebc17df` |
+| SHA-256 | `7cf131a6cf8459860ba47d488b7958364bcee57218fd02cd6f73fd0b95eadeae` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

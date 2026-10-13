@@ -14,14 +14,14 @@
 | Provider | `wikimedia` |
 | 规则浏览路径 | `rule/wikimedia/wikimedia_aggregate/wikimedia_aggregate.yaml` |
 | 规则数量（_index） | **12** |
-| SHA-256 | `2bb2bcfb6388250d6636455bd748640ad7560f82723f70077323da23bdbeb664` |
+| SHA-256 | `acc084eb0cd0241600360746ee0bd80d61c5a7e0b4c332b54aa44ed48e896d31` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

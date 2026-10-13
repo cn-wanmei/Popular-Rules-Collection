@@ -16,14 +16,14 @@
 | Provider | `apple` |
 | 规则浏览路径 | `rule/apple/siri/siri.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `b52eceb29c14d1a82f0ed7057b711342992a31b5affea5f7f9a9fe03bb1d568d` |
+| SHA-256 | `603694e0384424929ce4d467f0d5a5d5406cf31ac8f2f58f3787e6fa0e441651` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

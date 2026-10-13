@@ -16,14 +16,14 @@
 | Provider | `mercadolibre` |
 | 规则浏览路径 | `rule/mercadolibre/mercadolibre_aggregate/mercadolibre_aggregate.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `8de970a5ad0e35ccc23c9088f218e9c22a2aa4a70c6579ffc24ba5a17389503c` |
+| SHA-256 | `fd3d2e1b8023a2fb2db87da6383b9e6e8bbaa6ff106d16811d4eda9423bdfe9f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

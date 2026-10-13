@@ -16,14 +16,14 @@
 | Provider | `equinix` |
 | 规则浏览路径 | `rule/equinix/equinix/equinix.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `ba03c3215c0ace2b192921d4ac6d3c8cb4f442dc435b2bbe1e7ea02690c98d8c` |
+| SHA-256 | `c397522ebb537b2bfcbe2ae6a8cb2e4e34db802e33715ba3b6697065100c4660` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

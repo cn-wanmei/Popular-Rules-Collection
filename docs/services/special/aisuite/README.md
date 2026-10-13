@@ -15,15 +15,15 @@
 | 类型 | service |
 | Provider | `special` |
 | 规则浏览路径 | `rule/special/aisuite/aisuite.yaml` |
-| 规则数量（_index） | **146** |
-| SHA-256 | `a875da0cfd2cd7a186bb20942dddc909cca7fb55a81bdd13459afadc1bf725ec` |
+| 规则数量（_index） | **159** |
+| SHA-256 | `8f54b734f4818d011fb90240623b6df76b6eb84dfccb9f469f0e1f7d2a7bfbf1` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
@@ -63,13 +63,13 @@
 
 | 客户端 | Manifest rule_count | Raw URL |
 |---|---:|---|
-| egern | 146 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/special/aisuite/aisuite.yaml` |
-| loon | 146 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/special/aisuite/aisuite.list` |
-| mihomo | 146 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/special/aisuite/aisuite.yaml` |
-| quantumultx | 146 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/special/aisuite/aisuite.list` |
-| shadowrocket | 146 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/special/aisuite/aisuite.list` |
+| egern | 159 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/egern/special/aisuite/aisuite.yaml` |
+| loon | 159 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/loon/special/aisuite/aisuite.list` |
+| mihomo | 159 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/mihomo/special/aisuite/aisuite.yaml` |
+| quantumultx | 159 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/quantumultx/special/aisuite/aisuite.list` |
+| shadowrocket | 159 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/shadowrocket/special/aisuite/aisuite.list` |
 | singbox | 0 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/singbox/special/aisuite/aisuite.json` |
-| surge | 146 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/special/aisuite/aisuite.list` |
+| surge | 159 | `https://raw.githubusercontent.com/cn-wanmei/Popular-Rules-Collection/main/generated/surge/special/aisuite/aisuite.list` |
 
 > **说明：** `singbox` 的 Manifest `rule_count=0` **不代表无规则**；sing-box 使用 JSON rule-set，统计口径与 classical list/yaml 不同。以文件存在与 `_index` 的 rule_count 为准。
 

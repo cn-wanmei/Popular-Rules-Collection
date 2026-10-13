@@ -16,14 +16,14 @@
 | Provider | `roblox` |
 | 规则浏览路径 | `rule/roblox/roblox/roblox.yaml` |
 | 规则数量（_index） | **47** |
-| SHA-256 | `6a5802f3400d4d55bdb46f1f28625c75ff3641033c0bec04775da2d5f5a009bd` |
+| SHA-256 | `ff0a71622131839b828b2faf4ebea8eb3e67f5daf53552d64e705b1635d8a490` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

@@ -16,14 +16,14 @@
 | Provider | `bytedance` |
 | 规则浏览路径 | `rule/bytedance/toutiao/toutiao.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `1db41946e46515bcb3e176449fd8c2b7ad092b323119b68117a1acbfca1a7a1e` |
+| SHA-256 | `f2895f6f1b8eb791577b4c5779b677237404ad30a3fc7b4f7268f12945b54d36` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

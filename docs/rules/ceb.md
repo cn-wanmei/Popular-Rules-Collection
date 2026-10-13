@@ -16,14 +16,14 @@
 | Provider | `ceb` |
 | 规则浏览路径 | `rule/ceb/ceb/ceb.yaml` |
 | 规则数量（_index） | **15** |
-| SHA-256 | `d9a18ef50ad883896d90c85106b6c83b4e1c4971dab3e8c234f8dda10543f53e` |
+| SHA-256 | `684211abb40c7cef9a75261a16bd557b78294d5536f354680b516a4f049a234f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

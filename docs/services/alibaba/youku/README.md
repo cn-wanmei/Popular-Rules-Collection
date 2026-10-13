@@ -16,14 +16,14 @@
 | Provider | `alibaba` |
 | 规则浏览路径 | `rule/alibaba/youku/youku.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `4323f7bcb2cbf67e119a86430adf7f3083d3db2b9e4b5c3e8677a6cdb367bd90` |
+| SHA-256 | `247521db745bdca2f619551c86b72140150c1afdf45b1a82fc6f9a6a46471f4a` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

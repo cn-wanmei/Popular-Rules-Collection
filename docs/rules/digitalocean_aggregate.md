@@ -16,14 +16,14 @@
 | Provider | `digitalocean` |
 | 规则浏览路径 | `rule/digitalocean/digitalocean_aggregate/digitalocean_aggregate.yaml` |
 | 规则数量（_index） | **6** |
-| SHA-256 | `3f02e7212eff5753c6db4cb30d195a4f9198a0210f7172bbb8866bb720317daf` |
+| SHA-256 | `3c5d0ec6cfcb9d43a282691031e4833dfb3bdad0af01442a7de711c97039ff2f` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

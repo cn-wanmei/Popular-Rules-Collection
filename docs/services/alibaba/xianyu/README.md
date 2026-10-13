@@ -16,14 +16,14 @@
 | Provider | `alibaba` |
 | 规则浏览路径 | `rule/alibaba/xianyu/xianyu.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `a87893d08f176132367d3afc84d33e987244a5bcb5408eb96726e59db17ba77d` |
+| SHA-256 | `99b23d48328ac5677d86140cd3c0bffac9f08692471e911152adfe91a8d8f405` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

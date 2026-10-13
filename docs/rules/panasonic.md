@@ -16,14 +16,14 @@
 | Provider | `panasonic` |
 | 规则浏览路径 | `rule/panasonic/panasonic/panasonic.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `e20e7ea9866d9a1bab2af8137c6b3aa93308dc431ad064b6331f3f183ffc4f09` |
+| SHA-256 | `32ac7cdf597f3807c1da7f4efec7bc6b38b13237a80529568d6fefe7b5cdc992` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

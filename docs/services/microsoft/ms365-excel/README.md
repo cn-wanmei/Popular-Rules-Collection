@@ -16,14 +16,14 @@
 | Provider | `microsoft` |
 | 规则浏览路径 | `rule/microsoft/ms365-excel/ms365-excel.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `f7d21c5c46709858f253677e121a34d4ed473425c77c988f3c8a59d49b325b98` |
+| SHA-256 | `f1dcc27c46ca2900b43d98e0c79df9aec3dfd437770d81cce5a9d1c35fd4b65c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

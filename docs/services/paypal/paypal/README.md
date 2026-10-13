@@ -16,14 +16,14 @@
 | Provider | `paypal` |
 | 规则浏览路径 | `rule/paypal/paypal/paypal.yaml` |
 | 规则数量（_index） | **247** |
-| SHA-256 | `3eafa0b01616c3cc9c47362a7f01ccaf07ac78c1ae1e7b900d61337dc1f6b078` |
+| SHA-256 | `59d51ab522a200dd0dcdd10fe34c8b8eb67088b02331ede5886ebd4d3e12a77c` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

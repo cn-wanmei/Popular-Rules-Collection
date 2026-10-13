@@ -16,14 +16,14 @@
 | Provider | `cctv` |
 | 规则浏览路径 | `rule/cctv/cctv/cctv.yaml` |
 | 规则数量（_index） | **44** |
-| SHA-256 | `d4f89b7c9fe0a60268493be4ca215e3444fe5f9c375686bc90413d1529e2f6e7` |
+| SHA-256 | `bc7ee07634acd1fa98adc74ffa39d63d81d774d7223f67d55e823f119a957c84` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

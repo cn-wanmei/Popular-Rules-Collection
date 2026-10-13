@@ -16,14 +16,14 @@
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/qqmail/qqmail.yaml` |
 | 规则数量（_index） | **1** |
-| SHA-256 | `74b11430fe4e504d26bcada9d44b723a46ac9e1048da05a3c3fe506b6c57ba66` |
+| SHA-256 | `20b260460cb88f22a63d490eca59330a5d4fb2ed80e07c9d236b38a74de18fb0` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

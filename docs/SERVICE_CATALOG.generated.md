@@ -1,7 +1,7 @@
 # Service Catalog (generated)
 
-Run: `20261012T012130933364Z-run`  
-IR: `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723`  
+Run: `20261013T031003624306Z-run`  
+IR: `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03`  
 Services: **651**  
 Icon release: `icon-2026.10.06.full1`
 
@@ -26,7 +26,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `ai` | AI | `special` | service | 189 | 7 | [ai](rules/ai.md) |
 | `airbnb` | Airbnb | `airbnb` | service | 83 | 7 | [airbnb](rules/airbnb.md) |
 | `airbnb_aggregate` | Airbnb | `airbnb` | provider_aggregate | 83 | 7 | [airbnb_aggregate](rules/airbnb_aggregate.md) |
-| `aisuite` | AI Suite | `special` | service | 146 | 7 | [aisuite](rules/aisuite.md) |
+| `aisuite` | AI Suite | `special` | service | 159 | 7 | [aisuite](rules/aisuite.md) |
 | `alibaba` | Alibaba | `alibaba` | provider_aggregate | 539 | 7 | [alibaba](rules/alibaba.md) |
 | `alibabacloud` | Alibaba Cloud | `alibaba` | service | 12 | 7 | [alibabacloud](rules/alibabacloud.md) |
 | `aliexpress` | AliExpress | `alibaba` | service | 2 | 7 | [aliexpress](rules/aliexpress.md) |
@@ -526,7 +526,7 @@ Do not hand-edit. Source: `rule/_index.yaml` + `generated/manifest.json`.
 | `soundcloud_aggregate` | SoundCloud | `soundcloud` | provider_aggregate | 5 | 7 | [soundcloud_aggregate](rules/soundcloud_aggregate.md) |
 | `spacex` | SpaceX | `spacex` | service | 2 | 7 | [spacex](rules/spacex.md) |
 | `spacex_aggregate` | SpaceX | `spacex` | provider_aggregate | 2 | 7 | [spacex_aggregate](rules/spacex_aggregate.md) |
-| `special` | Special / Generic | `special` | provider_aggregate | 7552 | 7 | [special](rules/special.md) |
+| `special` | Special / Generic | `special` | provider_aggregate | 7561 | 7 | [special](rules/special.md) |
 | `speedtest` | Speedtest | `ookla` | service | 8 | 7 | [speedtest](rules/speedtest.md) |
 | `spotify` | Spotify | `spotify` | service | 38 | 7 | [spotify](rules/spotify.md) |
 | `spotify_aggregate` | Spotify | `spotify` | provider_aggregate | 38 | 7 | [spotify_aggregate](rules/spotify_aggregate.md) |

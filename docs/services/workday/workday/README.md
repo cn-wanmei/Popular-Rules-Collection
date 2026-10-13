@@ -16,14 +16,14 @@
 | Provider | `workday` |
 | 规则浏览路径 | `rule/workday/workday/workday.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `f1fef6abdd372969478da6bae8c6c7cabcad9f48c1af403fb138808ccabaad29` |
+| SHA-256 | `a0ea228e02eaefa3b1f2095b51746e756a3ab58d164fc118d92e77fd47d9945d` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

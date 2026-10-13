@@ -16,14 +16,14 @@
 | Provider | `notion` |
 | 规则浏览路径 | `rule/notion/notion/notion.yaml` |
 | 规则数量（_index） | **8** |
-| SHA-256 | `8da9ea538a2a4976bfd9f3ae629a85ae6263c47a827c538524b6ca32d7677f0c` |
+| SHA-256 | `ccc0369aebc0adae69f095db4f16f0ce7ae8fde96c3de35f508d328067539caa` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

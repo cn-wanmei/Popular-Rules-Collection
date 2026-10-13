@@ -16,14 +16,14 @@
 | Provider | `zoom` |
 | 规则浏览路径 | `rule/zoom/zoom_aggregate/zoom_aggregate.yaml` |
 | 规则数量（_index） | **3** |
-| SHA-256 | `84791826cb972f6261a61d981f843c50d70b4353bf79a4bf7a68c4a894e8ead4` |
+| SHA-256 | `e4c1a5b5f797dccbcaf25ee843b8bbff72048a202419bc457e04d3bf23f2b6a2` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）

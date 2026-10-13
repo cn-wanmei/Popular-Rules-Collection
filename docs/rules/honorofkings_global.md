@@ -16,14 +16,14 @@
 | Provider | `tencent` |
 | 规则浏览路径 | `rule/tencent/honorofkings_global/honorofkings_global.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `1063d256692ee5130633ac7e97e6c9e5437562495f8c45331afcc8616d3511d7` |
+| SHA-256 | `04729377f95b63b5664ed1cfd8a70d15d4be4162782bd68d2147541b021b9818` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261012T012130933364Z-run` |
-| IR digest | `aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723` |
+| Run ID | `20261013T031003624306Z-run` |
+| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
