@@ -8,21 +8,21 @@
     "singbox",
     "surge"
   ],
-  "collection_date": "2026-10-12",
+  "collection_date": "2026-10-13",
   "file_count": 4707,
   "files": [
     {
-      "file": "_promotion/20261012T012130933364Z-run.json",
+      "file": "_promotion/20261013T031003624306Z-run.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "06c4e7ae7757c58f6a8cb124ceafb1d5a465d3a58765f4619e0ce484be5a4f95",
+      "sha256": "282f1845a954f85b3cc0520caebaaea4e2e89a0ab4072042d3b8c755e3842ad1",
       "size": 542960
     },
     {
       "file": "_promotion/latest.json",
       "kind": "promotion_metadata",
       "scope": "_promotion",
-      "sha256": "06c4e7ae7757c58f6a8cb124ceafb1d5a465d3a58765f4619e0ce484be5a4f95",
+      "sha256": "282f1845a954f85b3cc0520caebaaea4e2e89a0ab4072042d3b8c755e3842ad1",
       "size": 542960
     },
     {
@@ -1156,10 +1156,10 @@
     {
       "file": "egern/categories/other/other.yaml",
       "kind": "client_rules",
-      "rule_count": 129094,
+      "rule_count": 129103,
       "scope": "egern",
-      "sha256": "748b87c9ebf0735b8dff691d4af7028a2fea7bdbfdc4cda0838b085f5d4c1c73",
-      "size": 2471402
+      "sha256": "e1ab1317615a448fda8cff7afbcc2d74f3d97f5c8a6719f0264ca55604b2faa2",
+      "size": 2471678
     },
     {
       "file": "egern/ccb/ccb/ccb.yaml",
@@ -4222,16 +4222,16 @@
       "kind": "client_rules",
       "rule_count": 189,
       "scope": "egern",
-      "sha256": "c636f9c3b4f63fc773f7135256db354f8e5f969a9e1c824c6d152d35ae122b84",
+      "sha256": "9fb5249aa20c55e67f4d489b511076ad3fb15e9060ae8efe997f183d3e40a10c",
       "size": 4464
     },
     {
       "file": "egern/special/aisuite/aisuite.yaml",
       "kind": "client_rules",
-      "rule_count": 146,
+      "rule_count": 159,
       "scope": "egern",
-      "sha256": "e6bf33e44bcae2270c881d991a45e958f845aacb5b60fc9453051da9fb39319d",
-      "size": 3746
+      "sha256": "9b12998263229738dc4a5f790d26f44930f59199c4c0f1f342ae7393d372ae3f",
+      "size": 4084
     },
     {
       "file": "egern/special/private/private.yaml",
@@ -4246,16 +4246,16 @@
       "kind": "client_rules",
       "rule_count": 12685,
       "scope": "egern",
-      "sha256": "d4a069d757aead375e241ca582bd49d734f9ba01530d04960ac16abdf5b83ee0",
+      "sha256": "ea756b0a7ddc0d7ce6891f27f9c2893953e8d7d33421dc035f5b76998e7168f1",
       "size": 261800
     },
     {
       "file": "egern/special/special/special.yaml",
       "kind": "client_rules",
-      "rule_count": 7552,
+      "rule_count": 7561,
       "scope": "egern",
-      "sha256": "ac698bf9c8be8a267d8e3ec96d9087314a0fb4ad9219ce17bb82b968d9c27f9e",
-      "size": 159569
+      "sha256": "5fe28367b0b7b63a29da4bbf3d85880d802a92d8aba28bd712f3a35995a13258",
+      "size": 159845
     },
     {
       "file": "egern/special/stun/stun.yaml",
@@ -5838,16 +5838,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "geosite",
-      "sha256": "f0b670c4192dea981f7fe1ae7b3b8f1b688b06ac1d7f1aaad8e3ed4beb8c042f",
-      "size": 3973141
+      "sha256": "b31121074571ee7e1bb70b8cbe5b890afdc40d4971600d91273f219332f542a5",
+      "size": 4020790
     },
     {
       "file": "geosite/reject_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 191252,
+      "rule_count": 193298,
       "scope": "geosite",
-      "sha256": "1e2f48d933324a38ba2b4e5dbaf4e445f0f1aaaddfcfa7faed616ab2177d2b34",
-      "size": 6650669
+      "sha256": "989a91be956110ff498f04f85a0df7ad27243b3f1e709a5ed5b3372070c76170",
+      "size": 6726962
     },
     {
       "file": "ip/adblock.txt",
@@ -5910,8 +5910,8 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "ip",
-      "sha256": "74fadbf524d0c05a2bd43980ddbca16f65c59138b306a1ce1490fee8f970884d",
-      "size": 160160
+      "sha256": "b56ba766d000198caa4370fe21ffb45e4a755c136b096c8f898399c6bc284508",
+      "size": 160176
     },
     {
       "file": "ip/chinamobile.txt",
@@ -5926,8 +5926,8 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "ip",
-      "sha256": "27622562548cfc9758b0ff8102311f60697fea5da5a06ce9e5b150f153dacf62",
-      "size": 61283
+      "sha256": "f46d181f159dc6561281a2984ff3233c7e405b01b0a8a54e25dca9b0763d8f2c",
+      "size": 61297
     },
     {
       "file": "ip/cloudflare.txt",
@@ -7276,10 +7276,10 @@
     {
       "file": "loon/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128956,
+      "rule_count": 128965,
       "scope": "loon",
-      "sha256": "f874f15a55ced4a5006571069ea8f52030af8aa5a36194fe66979a71d9302856",
-      "size": 3489232
+      "sha256": "71de5c66971f08160df93cb0c22c299c3570494c8308bfe4836e5c64698127c1",
+      "size": 3489524
     },
     {
       "file": "loon/ccb/ccb/ccb.list",
@@ -10342,16 +10342,16 @@
       "kind": "client_rules",
       "rule_count": 189,
       "scope": "loon",
-      "sha256": "ac403c767c846f480e70e851bf811e707e13553397457f6df0b37f40a8d6200f",
+      "sha256": "5ffe3343b4c8f22caf6d4735b98e74c3ea866872f10d6375dd7e066fb1dd3bf7",
       "size": 5957
     },
     {
       "file": "loon/special/aisuite/aisuite.list",
       "kind": "client_rules",
-      "rule_count": 146,
+      "rule_count": 159,
       "scope": "loon",
-      "sha256": "7f4e08e630641291114d1682801a6f822c79221d5774b4c04e31ab421cb23b66",
-      "size": 4375
+      "sha256": "a5bb94337c5495b2491a55dbf94b0edd2b033a4fff026de0f8820b9a190bb9ec",
+      "size": 4761
     },
     {
       "file": "loon/special/private/private.list",
@@ -10366,16 +10366,16 @@
       "kind": "client_rules",
       "rule_count": 12548,
       "scope": "loon",
-      "sha256": "4effd2c10d7c9c7e065014f4d6066b786fd33081f8727d31eb27f2b60c9392fb",
+      "sha256": "38f1bcea943b332669972152dc61f23b752cbdaa884287c5ec68c174e6ab10fc",
       "size": 357191
     },
     {
       "file": "loon/special/special/special.list",
       "kind": "client_rules",
-      "rule_count": 7415,
+      "rule_count": 7424,
       "scope": "loon",
-      "sha256": "b73fb06f170af07dcbbc2109280eea3888b977c6f6c8219666efad5314ff16e9",
-      "size": 210004
+      "sha256": "d6e694df93bbc7231c928bf27d509d32d06fb40aed587b9b5062e9cdacbf5e2f",
+      "size": 210296
     },
     {
       "file": "loon/special/stun/stun.list",
@@ -12484,10 +12484,10 @@
     {
       "file": "mihomo/categories/other/other.yaml",
       "kind": "client_rules",
-      "rule_count": 129094,
+      "rule_count": 129103,
       "scope": "mihomo",
-      "sha256": "684677ff54cb7de43ed091496da5549d0e920ad6bcc7969e00ac8453c7f444ed",
-      "size": 4011280
+      "sha256": "0dbf8c596dbfdff7a709fbac73c53335a1eecc6ccf2283b7c4a38f04a051b8bf",
+      "size": 4011608
     },
     {
       "file": "mihomo/ccb/ccb/ccb.yaml",
@@ -15550,16 +15550,16 @@
       "kind": "client_rules",
       "rule_count": 189,
       "scope": "mihomo",
-      "sha256": "52acf40c174101f53f2b878975d7d7b52c5119b5bdeb0dcd8d415174cc5d2ffc",
+      "sha256": "c6b2c7b31e752c7991085785cbc54d81d0c8bf7ef1300d541dbe6d5119cc56bc",
       "size": 6722
     },
     {
       "file": "mihomo/special/aisuite/aisuite.yaml",
       "kind": "client_rules",
-      "rule_count": 146,
+      "rule_count": 159,
       "scope": "mihomo",
-      "sha256": "94f0bed722cc040113232849b0b9f205529a0dad70bbb58226b2a09485271b8b",
-      "size": 4968
+      "sha256": "acb435c2bcfde3b74e1e5596cf31116366ea0d208df26a006971008ddc63c866",
+      "size": 5406
     },
     {
       "file": "mihomo/special/private/private.yaml",
@@ -15574,16 +15574,16 @@
       "kind": "client_rules",
       "rule_count": 12685,
       "scope": "mihomo",
-      "sha256": "75fddf715fba0938ab42673077a2626e5a808302b8de9cd390847a569e5888ca",
+      "sha256": "b1a635c034cbc72c7a1bd7614615a2f9fbeb4511f0704059f6ad470734f3387b",
       "size": 413545
     },
     {
       "file": "mihomo/special/special/special.yaml",
       "kind": "client_rules",
-      "rule_count": 7552,
+      "rule_count": 7561,
       "scope": "mihomo",
-      "sha256": "f3692bf6ca9de59b35844e3a7f94be9360253948cd0be93261c2f48768ea515e",
-      "size": 245826
+      "sha256": "9650f43805212cbc6f14b20033bcf2496fca4406787171a434ee4bfa4ccc1292",
+      "size": 246154
     },
     {
       "file": "mihomo/special/stun/stun.yaml",
@@ -16606,7 +16606,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "mmdb",
-      "sha256": "5800301b7bb0a04607c660b5d456aeca2c2262849fb77e6c7962174829a6b0f4",
+      "sha256": "c951c1afc331ea82a46f568785d73d5bd1bcc99626739639ae9dfaa3f6aa6e71",
       "size": 4290986
     },
     {
@@ -16742,16 +16742,16 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "376f6d5f29f13e99d83126418fe88c8c468158ba5ca34a4069511d58d28c13e8",
-      "size": 389631
+      "sha256": "a1ceeb301dbae05f497524c5c49e69bb16073a82cb2648ae7d973925f77e170d",
+      "size": 389695
     },
     {
       "file": "provider/aws_mihomo.list",
       "kind": "network_dataset",
-      "rule_count": 11332,
+      "rule_count": 11334,
       "scope": "provider",
-      "sha256": "dc07dc2bf6f9ddfab1c0f9dd52e9bc1715dc01c46b6ff59841e106d0fe70367b",
-      "size": 484308
+      "sha256": "1900936f49f527a605b2641099ff4cc6c903820fded73892f86bcb75169ea94d",
+      "size": 484390
     },
     {
       "file": "provider/cloudflare.txt",
@@ -16790,7 +16790,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "be9327355d99040478d2515e3a4593629dcfebc1c16c513ca72ebe19a604a9f3",
+      "sha256": "1a7463f1c36ca1917f3269ae778b3347593867b818f31831ab7bd82ff1fc8b4c",
       "size": 4595
     },
     {
@@ -16806,7 +16806,7 @@
       "kind": "network_dataset",
       "rule_count": 0,
       "scope": "provider",
-      "sha256": "59972699eb22a1d2e3cc237e0898d6d52974f8fc86394d68c15b58e7206fe549",
+      "sha256": "bf6c755aa4bf08fc84d0ef2007184a66814b827414c641af378c873b638abc2d",
       "size": 37761
     },
     {
@@ -17956,10 +17956,10 @@
     {
       "file": "quantumultx/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128956,
+      "rule_count": 128965,
       "scope": "quantumultx",
-      "sha256": "314386acb1bd20e4d5e7eaa6ab2d69e2d04d789f8cdf092d8e18b8dd00d72a0e",
-      "size": 4263632
+      "sha256": "e53f75928e2a9a285c0e953056cab8556b0507beb08c0232ad46d0fb50c75776",
+      "size": 4263978
     },
     {
       "file": "quantumultx/ccb/ccb/ccb.list",
@@ -21022,16 +21022,16 @@
       "kind": "client_rules",
       "rule_count": 189,
       "scope": "quantumultx",
-      "sha256": "2cc42db41fa9fd63cdec55ed9c46a4ec1b09f015d413ba442ce7ca18264d7adf",
+      "sha256": "d60e14025263defc58a04c380d644a6a013e10cc8e74783b5c92f53ad1f98317",
       "size": 7091
     },
     {
       "file": "quantumultx/special/aisuite/aisuite.list",
       "kind": "client_rules",
-      "rule_count": 146,
+      "rule_count": 159,
       "scope": "quantumultx",
-      "sha256": "85f90c8cd782c2543ad8c2809c52725219b7ec8e20b51b7fb5a13d8ef733becf",
-      "size": 5297
+      "sha256": "5c62a991301d5624a77ad49088a3bc4acd1c63191d0396a3cffd152f4f26e76a",
+      "size": 5761
     },
     {
       "file": "quantumultx/special/private/private.list",
@@ -21046,16 +21046,16 @@
       "kind": "client_rules",
       "rule_count": 12548,
       "scope": "quantumultx",
-      "sha256": "f40c522b72b0f7fc66290052c7e13d5538166ce8b16af522c7a3aab3f6d1718b",
+      "sha256": "8bde2c8e5dafa577726873248d8a9bdc7fa3a6c5ea3def14081a052faf810f3e",
       "size": 432479
     },
     {
       "file": "quantumultx/special/special/special.list",
       "kind": "client_rules",
-      "rule_count": 7415,
+      "rule_count": 7424,
       "scope": "quantumultx",
-      "sha256": "489ca0f31f15e846b4d13d6a4417794217c029d4a4994bbda34cbbdef551f634",
-      "size": 254578
+      "sha256": "b833fc3b069151ed383b5d9ce35ba9d294f3f617098d7153471be0724f87887a",
+      "size": 254924
     },
     {
       "file": "quantumultx/special/stun/stun.list",
@@ -23164,10 +23164,10 @@
     {
       "file": "shadowrocket/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128956,
+      "rule_count": 128965,
       "scope": "shadowrocket",
-      "sha256": "f874f15a55ced4a5006571069ea8f52030af8aa5a36194fe66979a71d9302856",
-      "size": 3489232
+      "sha256": "71de5c66971f08160df93cb0c22c299c3570494c8308bfe4836e5c64698127c1",
+      "size": 3489524
     },
     {
       "file": "shadowrocket/ccb/ccb/ccb.list",
@@ -26230,16 +26230,16 @@
       "kind": "client_rules",
       "rule_count": 189,
       "scope": "shadowrocket",
-      "sha256": "ac403c767c846f480e70e851bf811e707e13553397457f6df0b37f40a8d6200f",
+      "sha256": "5ffe3343b4c8f22caf6d4735b98e74c3ea866872f10d6375dd7e066fb1dd3bf7",
       "size": 5957
     },
     {
       "file": "shadowrocket/special/aisuite/aisuite.list",
       "kind": "client_rules",
-      "rule_count": 146,
+      "rule_count": 159,
       "scope": "shadowrocket",
-      "sha256": "7f4e08e630641291114d1682801a6f822c79221d5774b4c04e31ab421cb23b66",
-      "size": 4375
+      "sha256": "a5bb94337c5495b2491a55dbf94b0edd2b033a4fff026de0f8820b9a190bb9ec",
+      "size": 4761
     },
     {
       "file": "shadowrocket/special/private/private.list",
@@ -26254,16 +26254,16 @@
       "kind": "client_rules",
       "rule_count": 12548,
       "scope": "shadowrocket",
-      "sha256": "4effd2c10d7c9c7e065014f4d6066b786fd33081f8727d31eb27f2b60c9392fb",
+      "sha256": "38f1bcea943b332669972152dc61f23b752cbdaa884287c5ec68c174e6ab10fc",
       "size": 357191
     },
     {
       "file": "shadowrocket/special/special/special.list",
       "kind": "client_rules",
-      "rule_count": 7415,
+      "rule_count": 7424,
       "scope": "shadowrocket",
-      "sha256": "b73fb06f170af07dcbbc2109280eea3888b977c6f6c8219666efad5314ff16e9",
-      "size": 210004
+      "sha256": "d6e694df93bbc7231c928bf27d509d32d06fb40aed587b9b5062e9cdacbf5e2f",
+      "size": 210296
     },
     {
       "file": "shadowrocket/special/stun/stun.list",
@@ -28374,8 +28374,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "6a3b5b1cf527554dcdf5a8c6484e7856cdfec1103c3d83644a7903a3511fb592",
-      "size": 3116976
+      "sha256": "7e54946865db6e4df2c16ddf5544642a7eb8ebb99b314efe12243a3eecdf8978",
+      "size": 3117297
     },
     {
       "file": "singbox/ccb/ccb/ccb.json",
@@ -31438,7 +31438,7 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "9714aa40b8dceba871e5f5e13e84baf4ba4dcbd435958e26dc911d6308fa3655",
+      "sha256": "d2b74569b2fe183b8c60c77c85f18321e84a8f4a312715c881b516aac42a2030",
       "size": 5471
     },
     {
@@ -31446,8 +31446,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "5b771b8e21ef062f051fdcec324d3a3b1676824cbbb615b53bbdd272aed4a22c",
-      "size": 4566
+      "sha256": "70d903404e5858d6cb99b1395262a8c203390a2d05131a89a06883082b435f25",
+      "size": 4969
     },
     {
       "file": "singbox/special/private/private.json",
@@ -31462,7 +31462,7 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "048b9a1bf0897b3928db0d8c427d73347c6ea9147ec2d70d457656e85967fa1d",
+      "sha256": "f12500c94338c0b758b18bda8b72fbf0aab06a7ab530d1e06239ef5a90aa4d28",
       "size": 325329
     },
     {
@@ -31470,8 +31470,8 @@
       "kind": "client_rules",
       "rule_count": 0,
       "scope": "singbox",
-      "sha256": "807816a5be597135f674a57850e2c9a2671d665ef5b65a24bc17ec69400724f5",
-      "size": 197433
+      "sha256": "85b5aadf8c2a527662256b33efcab842765806c6fd0430e968548c60b1351359",
+      "size": 197754
     },
     {
       "file": "singbox/special/stun/stun.json",
@@ -33580,10 +33580,10 @@
     {
       "file": "surge/categories/other/other.list",
       "kind": "client_rules",
-      "rule_count": 128956,
+      "rule_count": 128965,
       "scope": "surge",
-      "sha256": "f874f15a55ced4a5006571069ea8f52030af8aa5a36194fe66979a71d9302856",
-      "size": 3489232
+      "sha256": "71de5c66971f08160df93cb0c22c299c3570494c8308bfe4836e5c64698127c1",
+      "size": 3489524
     },
     {
       "file": "surge/ccb/ccb/ccb.list",
@@ -36646,16 +36646,16 @@
       "kind": "client_rules",
       "rule_count": 189,
       "scope": "surge",
-      "sha256": "ac403c767c846f480e70e851bf811e707e13553397457f6df0b37f40a8d6200f",
+      "sha256": "5ffe3343b4c8f22caf6d4735b98e74c3ea866872f10d6375dd7e066fb1dd3bf7",
       "size": 5957
     },
     {
       "file": "surge/special/aisuite/aisuite.list",
       "kind": "client_rules",
-      "rule_count": 146,
+      "rule_count": 159,
       "scope": "surge",
-      "sha256": "7f4e08e630641291114d1682801a6f822c79221d5774b4c04e31ab421cb23b66",
-      "size": 4375
+      "sha256": "a5bb94337c5495b2491a55dbf94b0edd2b033a4fff026de0f8820b9a190bb9ec",
+      "size": 4761
     },
     {
       "file": "surge/special/private/private.list",
@@ -36670,16 +36670,16 @@
       "kind": "client_rules",
       "rule_count": 12548,
       "scope": "surge",
-      "sha256": "4effd2c10d7c9c7e065014f4d6066b786fd33081f8727d31eb27f2b60c9392fb",
+      "sha256": "38f1bcea943b332669972152dc61f23b752cbdaa884287c5ec68c174e6ab10fc",
       "size": 357191
     },
     {
       "file": "surge/special/special/special.list",
       "kind": "client_rules",
-      "rule_count": 7415,
+      "rule_count": 7424,
       "scope": "surge",
-      "sha256": "b73fb06f170af07dcbbc2109280eea3888b977c6f6c8219666efad5314ff16e9",
-      "size": 210004
+      "sha256": "d6e694df93bbc7231c928bf27d509d32d06fb40aed587b9b5062e9cdacbf5e2f",
+      "size": 210296
     },
     {
       "file": "surge/special/stun/stun.list",
@@ -37666,7 +37666,7 @@
       "size": 54
     }
   ],
-  "generated_at": "2026-10-12T01:26:39.273146+00:00",
+  "generated_at": "2026-10-13T03:18:35.120409+00:00",
   "generated_root": "/home/runner/work/Popular-Rules-Collection/Popular-Rules-Collection/release-candidate/generated",
   "layout_schema": "directory_layout_v2",
   "network_dataset_directories": [

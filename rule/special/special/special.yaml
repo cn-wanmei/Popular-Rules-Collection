@@ -4,16 +4,16 @@ entity: provider_aggregate
 id: special
 display_name: Special / Generic
 generated_from:
-  run_id: 20261012T012130933364Z-run
+  run_id: 20261013T031003624306Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: aba7e9071c54d1b69803d37824f6ec54211d9c8f163872af3af50c5789e9e723
+  ir_digest: 88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03
 stats:
-  total: 7552
+  total: 7561
   by_type:
-    DOMAIN: 520
+    DOMAIN: 528
     DOMAIN_KEYWORD: 4
     DOMAIN_REGEX: 137
-    DOMAIN_SUFFIX: 6849
+    DOMAIN_SUFFIX: 6850
     IP_CIDR: 26
     IP_CIDR6: 16
 rules:
@@ -47,6 +47,9 @@ rules:
 - id: a3ee44c74a767bee76123f9a2c17d078a2bebda0c356b21cf52b4fd1ad6ba27e
   type: DOMAIN
   value: ai.google.dev
+- id: 22c780380d30ea48715a791a641bad21db387dd6d4da00d42eac15600f92906d
+  type: DOMAIN
+  value: aida.googleapis.com
 - id: 9e3565151aaa620663152adcbb22f3c8740e68efa35cb531e93dfa2fa9ff2d55
   type: DOMAIN
   value: alkalicore-pa.clients6.google.com
@@ -155,6 +158,12 @@ rules:
 - id: 0046543ecce13c67290f8d73d148f09da45463b3dd452c533c0f838efbe46c8e
   type: DOMAIN
   value: cp4.cloudflare.com
+- id: 330e81dfdac8816925353b2e062b591bb4445273466cd8e26c20e687460fed8a
+  type: DOMAIN
+  value: daily-cloudcode-pa.googleapis.com
+- id: 5e2335c668bdb32666396fe1e26c174eaec66da80756dd96835c651d9ae8c42e
+  type: DOMAIN
+  value: daily-cloudcode-pa.sandbox.googleapis.com
 - id: 904c864d3c88d88b0e5d8b438fe61c78b262c0463c3768ff3d59cf18cc496637
   type: DOMAIN
   value: default.exp-tas.com
@@ -191,6 +200,9 @@ rules:
 - id: b639f4b4f2ed7438b057c44568a388d9e56a28c84c5a7256202273e699f803d5
   type: DOMAIN
   value: jules.googleapis.com
+- id: 7cdfe30ea9b95a45a5346d8c0aa3ee52869bc1ec5e134e5ba2d14999207be04b
+  type: DOMAIN
+  value: labs.google
 - id: 061998cfcb53b369108c2aa9a9d039a68b74494fbf9ae547acf248da81f6cf09
   type: DOMAIN
   value: leet-tracker.moe
@@ -263,6 +275,12 @@ rules:
 - id: a8f112f6f8d4ddbb4ae13b1a5da7d6baf7a3ec52e248e9907d2430a9ab53ed29
   type: DOMAIN
   value: pybittrack.retiolus.net
+- id: 885efb1a5775581e19a46e93053a84df57878008e4d66883cd4859a83a75e486
+  type: DOMAIN
+  value: q.eu-central-1.amazonaws.com
+- id: 4dac1b6c32189fb1737860e84a52c35fca1dd2ea6b4d7e883c2b7698228e29bf
+  type: DOMAIN
+  value: q.us-east-1.amazonaws.com
 - id: ca39e235837791bddc05a4a1578523e4608a20f508d4f810e7bd232aae676069
   type: DOMAIN
   value: rekcart.duckdns.org
@@ -1550,6 +1568,12 @@ rules:
 - id: 1927315dbccd6ca813608c3d4f6445cf9c7ee5a68f9e6dcafa8469409db28be4
   type: DOMAIN
   value: tracker4.itzmx.com
+- id: c402a80ecdf6c98ccede4e73dd37aa0f33a1e00c56d30ce471652b7f44bd9d52
+  type: DOMAIN
+  value: trae-api-sg.mchost.guru
+- id: f39551e914d58d7e5a799918dfe7ea6f0807d12228e7216457f59e59442cc162
+  type: DOMAIN
+  value: trae-api-us.mchost.guru
 - id: 83f8472f14aa10b58def1125706df6c5a0eb460ba9facc9646cd6d9aff1d123c
   type: DOMAIN
   value: uabits.today
@@ -19559,6 +19583,9 @@ rules:
 - id: 263ea90312bb8ad413312644b883b20519884335860318266a7cb774415f8301
   type: DOMAIN_SUFFIX
   value: trae.ai
+- id: 1ffce978eee963b577e11b66116d31169a11427ea13e75355966626b100c1958
+  type: DOMAIN_SUFFIX
+  value: traeapi.us
 - id: ec86a00a41e5a7c3cbbf080aef7d6fb73b3753dd93526b6824ff8bc4b21a5814
   type: DOMAIN_SUFFIX
   value: tranny.one

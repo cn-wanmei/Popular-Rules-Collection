@@ -64,6 +64,8 @@ payload:
   - DOMAIN-SUFFIX,claude.com
   - DOMAIN-SUFFIX,claudeusercontent.com
   - DOMAIN,gateway.ai.cloudflare.com
+  - DOMAIN-SUFFIX,cohere.ai
+  - DOMAIN-SUFFIX,cohere.com
   - DOMAIN,anysphere-binaries.s3.us-east-1.amazonaws.com
   - DOMAIN-SUFFIX,cursor-cdn.com
   - DOMAIN-SUFFIX,cursor.com
@@ -97,6 +99,9 @@ payload:
   - DOMAIN-SUFFIX,antigravity.google
   - DOMAIN-SUFFIX,antigravity.google.com
   - DOMAIN,cloudcode-pa.googleapis.com
+  - DOMAIN,daily-cloudcode-pa.googleapis.com
+  - DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
+  - DOMAIN,aida.googleapis.com
   - DOMAIN-SUFFIX,deepmind.com
   - DOMAIN-SUFFIX,deepmind.google
   - DOMAIN-SUFFIX,aisandbox-pa.googleapis.com
@@ -116,6 +121,7 @@ payload:
   - DOMAIN-SUFFIX,jules.google
   - DOMAIN-SUFFIX,jules.google.com
   - DOMAIN,jules.googleapis.com
+  - DOMAIN,labs.google
   - DOMAIN,appcatalyst.pa.googleapis.com
   - DOMAIN-SUFFIX,opal.goog
   - DOMAIN-SUFFIX,opal.google
@@ -129,6 +135,9 @@ payload:
   - DOMAIN-SUFFIX,jetbrains.ai
   - DOMAIN,account.jetbrains.com
   - DOMAIN,oauth.account.jetbrains.com
+  - DOMAIN-SUFFIX,kiro.dev
+  - DOMAIN,q.eu-central-1.amazonaws.com
+  - DOMAIN,q.us-east-1.amazonaws.com
   - DOMAIN-SUFFIX,meta.ai
   - DOMAIN-SUFFIX,copilot.cloud.microsoft
   - DOMAIN-SUFFIX,copilot.com
@@ -141,6 +150,10 @@ payload:
   - DOMAIN-SUFFIX,perplexity.ai
   - DOMAIN-SUFFIX,pplx.ai
   - DOMAIN-SUFFIX,sora.com
+  - DOMAIN-SUFFIX,trae.ai
+  - DOMAIN-SUFFIX,traeapi.us
+  - DOMAIN,trae-api-sg.mchost.guru
+  - DOMAIN,trae-api-us.mchost.guru
   - DOMAIN-SUFFIX,codeium.com
   - DOMAIN-SUFFIX,codeiumdata.com
   - DOMAIN-SUFFIX,windsurf.com

@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: xianyu
+display_name: Xianyu
+generated_from:
+  run_id: 20261013T031003624306Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: fc6ae9d1e01836cd9ed008f13c307066be82690cc439952b9e08fb870aa998e6
+  type: DOMAIN_SUFFIX
+  value: goofish.com
+- id: 69e971490c60a8a24166073e2d9b3fe2c427f62163d42974fad042629caf93b7
+  type: DOMAIN_SUFFIX
+  value: www.goofish.com
+provider: alibaba

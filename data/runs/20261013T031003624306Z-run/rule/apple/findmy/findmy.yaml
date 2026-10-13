@@ -1,0 +1,24 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: findmy
+display_name: Find My
+generated_from:
+  run_id: 20261013T031003624306Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03
+stats:
+  total: 3
+  by_type:
+    DOMAIN_SUFFIX: 3
+rules:
+- id: 45d7fef26ebaaf1cb990de1ea93c2893991a5b0141de09aba7d6aa93553fc313
+  type: DOMAIN_SUFFIX
+  value: fmfmobile.icloud.com
+- id: 937dfe8b677dd8435f38a45ee02d8e7b0416cf07af76b6a685863e37b6091a69
+  type: DOMAIN_SUFFIX
+  value: fmipmobile.icloud.com
+- id: adb59598c475424425c08a2a0fd98588962e9bb5f7e2eba83247a0904d1ee913
+  type: DOMAIN_SUFFIX
+  value: statici.icloud.com
+provider: apple

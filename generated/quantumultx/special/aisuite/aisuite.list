@@ -63,6 +63,8 @@ host-suffix, claude.ai, proxy
 host-suffix, claude.com, proxy
 host-suffix, claudeusercontent.com, proxy
 host, gateway.ai.cloudflare.com, proxy
+host-suffix, cohere.ai, proxy
+host-suffix, cohere.com, proxy
 host, anysphere-binaries.s3.us-east-1.amazonaws.com, proxy
 host-suffix, cursor-cdn.com, proxy
 host-suffix, cursor.com, proxy
@@ -96,6 +98,9 @@ host, waa-pa.clients6.google.com, proxy
 host-suffix, antigravity.google, proxy
 host-suffix, antigravity.google.com, proxy
 host, cloudcode-pa.googleapis.com, proxy
+host, daily-cloudcode-pa.googleapis.com, proxy
+host, daily-cloudcode-pa.sandbox.googleapis.com, proxy
+host, aida.googleapis.com, proxy
 host-suffix, deepmind.com, proxy
 host-suffix, deepmind.google, proxy
 host-suffix, aisandbox-pa.googleapis.com, proxy
@@ -115,6 +120,7 @@ host-suffix, proactivebackend-pa.googleapis.com, proxy
 host-suffix, jules.google, proxy
 host-suffix, jules.google.com, proxy
 host, jules.googleapis.com, proxy
+host, labs.google, proxy
 host, appcatalyst.pa.googleapis.com, proxy
 host-suffix, opal.goog, proxy
 host-suffix, opal.google, proxy
@@ -128,6 +134,9 @@ host, api.jetbrains.cloud, proxy
 host-suffix, jetbrains.ai, proxy
 host, account.jetbrains.com, proxy
 host, oauth.account.jetbrains.com, proxy
+host-suffix, kiro.dev, proxy
+host, q.eu-central-1.amazonaws.com, proxy
+host, q.us-east-1.amazonaws.com, proxy
 host-suffix, meta.ai, proxy
 host-suffix, copilot.cloud.microsoft, proxy
 host-suffix, copilot.com, proxy
@@ -140,6 +149,10 @@ host-suffix, openrouter.ai, proxy
 host-suffix, perplexity.ai, proxy
 host-suffix, pplx.ai, proxy
 host-suffix, sora.com, proxy
+host-suffix, trae.ai, proxy
+host-suffix, traeapi.us, proxy
+host, trae-api-sg.mchost.guru, proxy
+host, trae-api-us.mchost.guru, proxy
 host-suffix, codeium.com, proxy
 host-suffix, codeiumdata.com, proxy
 host-suffix, windsurf.com, proxy

@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: testflight
+display_name: TestFlight
+generated_from:
+  run_id: 20261013T031003624306Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: b28836678358061c5bf4fb0053605738cf6eb7f574b1b3f349284b0b7b690d9f
+  type: DOMAIN_SUFFIX
+  value: beta.apple.com
+- id: a9929274737df52842bc8ef23545df6284b0486c07e5aad7fa1858d0e14ca8ac
+  type: DOMAIN_SUFFIX
+  value: testflight.apple.com
+provider: apple

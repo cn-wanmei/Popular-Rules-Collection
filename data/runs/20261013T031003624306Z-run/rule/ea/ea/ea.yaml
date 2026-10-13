@@ -1,0 +1,21 @@
+schema: human_rule_distribution_v1
+version: 1
+entity: service
+id: ea
+display_name: Electronic Arts
+generated_from:
+  run_id: 20261013T031003624306Z-run
+  ir_schema: semantic_ir_v2
+  ir_digest: 88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03
+stats:
+  total: 2
+  by_type:
+    DOMAIN_SUFFIX: 2
+rules:
+- id: 5e86f0c295f2f5f06498827fc40901f8bd0640aee8d04e5c312c44ed252dfebd
+  type: DOMAIN_SUFFIX
+  value: ea.com
+- id: 75b16dfee458d447babbf52ddc478636e9b1f57ff226aef43ba74c6f24e41e8a
+  type: DOMAIN_SUFFIX
+  value: www.ea.com
+provider: ea
