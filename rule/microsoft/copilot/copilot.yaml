@@ -4,14 +4,80 @@ entity: service
 id: copilot
 display_name: Microsoft Copilot
 generated_from:
-  run_id: 20261013T031003624306Z-run
+  run_id: 20261014T011336499479Z-run
   ir_schema: semantic_ir_v2
-  ir_digest: 88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03
+  ir_digest: a3dd9746b1692c3838b7a1c8a9f3a23d765aa1db36576b4f661e02dbc9a07896
 stats:
-  total: 45
+  total: 69
   by_type:
-    DOMAIN_SUFFIX: 45
+    DOMAIN: 20
+    DOMAIN_KEYWORD: 1
+    DOMAIN_SUFFIX: 46
+    IP_CIDR: 2
 rules:
+- id: b81cfe6a30e3bc6023af44d45cc1217247812b4c094456d2d77b51e64b272839
+  type: DOMAIN
+  value: api.msn.com
+- id: 00de4b08ef2fdab85151e36f15efab37a9fcb013de08ed4d9f49c8fb960d8be2
+  type: DOMAIN
+  value: api.statsig.com
+- id: 5ac58feea4055052e5e557a20c80448653d7ba190bcdeab2d5a4bd2c8fb70a1b
+  type: DOMAIN
+  value: assets.msn.com
+- id: cad5352c40a4cb9a277f95b88c261de691e6f84d38bc175e767275e30e11bb00
+  type: DOMAIN
+  value: browser-intake-datadoghq.com
+- id: 744fea6ea2595a8039b35efd86f9eeafee6c20d33b0900cffaf084205b304464
+  type: DOMAIN
+  value: chat.openai.com.cdn.cloudflare.net
+- id: 890b295eaa4a5b21a260267baf59f4ac3bee82680386aa83c8e7521e7f9dc0b7
+  type: DOMAIN
+  value: copilot.microsoft.com
+- id: e178b8912ac862026de7b5228308902da6a7bde0fa567a932b3db3c0d14df659
+  type: DOMAIN
+  value: gateway.bingviz.microsoft.net
+- id: 28f33da7a848d9f5904bbd4e9bc64117ce4d35b9a6afd90f235861c09364cfce
+  type: DOMAIN
+  value: gateway.bingviz.microsoftapp.net
+- id: bde2f934e9f2cfb8d446e97b9c1c60278f7b331d304ed1bc2349326bc5a525ec
+  type: DOMAIN
+  value: in.appcenter.ms
+- id: 56078024c4e8fe97cae555fccdc1d492e677040a2b15b956417ae426d8ecb02d
+  type: DOMAIN
+  value: location.microsoft.com
+- id: 52cc226faf45a146e7b001dff6a5a55ed5d0b7a756a09cc43d16e7d0ad0e92d9
+  type: DOMAIN
+  value: odc.officeapps.live.com
+- id: a876a5d94cb01c3cf877120bafa6b673feeb6f6c5f1af76df04573c227faedca
+  type: DOMAIN
+  value: openai-api.arkoselabs.com
+- id: 6dfc152f19564091ca5b895b7fd4be8c0ac0d1bd39e11c4ba7a03be007f3988f
+  type: DOMAIN
+  value: openaicomproductionae4b.blob.core.windows.net
+- id: 51d4627aeaa4b1092647bf6918034731d289cac6ee78089c7525fda2f1e44446
+  type: DOMAIN
+  value: production-openaicom-storage.azureedge.net
+- id: 530b4a02183a07b537097f7762fc69d420facdb906d42916f75b0ade9b5455df
+  type: DOMAIN
+  value: r.bing.com
+- id: e2c229f32bb67b74829ef53921784ef54b79c1e6bda8136eb6d88cdfd724e19b
+  type: DOMAIN
+  value: self.events.data.microsoft.com
+- id: 73cb34c013e7805c0f51f9cae92f60934341e2d53565b66bec83970638014a23
+  type: DOMAIN
+  value: services.bingapis.com
+- id: 9b10dce0ddd17b72b65b82dab5dc7875c182c6258611c29c4214b4a85fbe0f5a
+  type: DOMAIN
+  value: static.cloudflareinsights.com
+- id: 3a777bbeb50aea2549f023f438cf2e034c2a8d0fbbdb071b2410623ec067859c
+  type: DOMAIN
+  value: sydney.bing.com
+- id: edab6ff04639347b95946984f431e9db41950434ef7a724f5705d1cc0065d051
+  type: DOMAIN
+  value: www.bing.com
+- id: 28d68013f347a0f9e8564bcc61dfee0b2b47bc37527af7bf4900d2bba22a6e6c
+  type: DOMAIN_KEYWORD
+  value: openaicom-api
 - id: 1d1c152fe9bf024881ebf96eddd46e8145e2bae1e164df9a4d3fa80211341f96
   type: DOMAIN_SUFFIX
   value: algolia.net
@@ -36,6 +102,9 @@ rules:
 - id: 0360e9da323937d38292deca4e312c38d047b2f171eb7c59104b35daabd1151d
   type: DOMAIN_SUFFIX
   value: browser-intake-datadoghq.com
+- id: 3b56ea91bb18a36c570c4d74ffa365860fecfe0b9451f1c27b6bdd3a75f790d5
+  type: DOMAIN_SUFFIX
+  value: challenges.cloudflare.com
 - id: a9b11fbe1b013e7747873502196c7ebfbe89914915c638baca30d473b2976162
   type: DOMAIN_SUFFIX
   value: chat.openai.com.cdn.cloudflare.net
@@ -147,4 +216,10 @@ rules:
 - id: 0bced8cf1cf852e07a58160a5e3be6c1f3e09de1e7dfbf3bb251246e9a42f3a9
   type: DOMAIN_SUFFIX
   value: www.bing.com
+- id: 7023399e735bf603be66a37832c23ad1d5741f3968ba2a7f7fba7166ffa1319b
+  type: IP_CIDR
+  value: 24.199.123.28/32
+- id: 931439ec9afb71e6eeab546e8fd0485124954d4cf5ad74b6ff60e690464c3da7
+  type: IP_CIDR
+  value: 64.23.132.171/32
 provider: microsoft
