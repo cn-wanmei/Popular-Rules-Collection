@@ -16,14 +16,14 @@
 | Provider | `alibaba` |
 | 规则浏览路径 | `rule/alibaba/fliggy/fliggy.yaml` |
 | 规则数量（_index） | **2** |
-| SHA-256 | `b5e4db4999e7b7637f86826b914e5711b1e84052a31f3cc7da1103f47a835a6c` |
+| SHA-256 | `4cb96d32160a97d3470f640a8b08b8657e2c4367074f4ece2a6660c613e94942` |
 
 ## 2. 构建指纹
 
 | 项目 | 当前值 |
 |---|---|
-| Run ID | `20261013T031003624306Z-run` |
-| IR digest | `88569695683d2d63eb4edaf2b41de88538f5e3474250a1ad8f9dbb446d8d7f03` |
+| Run ID | `20261014T011336499479Z-run` |
+| IR digest | `a3dd9746b1692c3838b7a1c8a9f3a23d765aa1db36576b4f661e02dbc9a07896` |
 | IR schema | `semantic_ir_v2` |
 
 ## 3. 图标（Icon System 6.0）
